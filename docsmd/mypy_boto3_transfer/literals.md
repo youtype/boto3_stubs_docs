@@ -1,698 +1,755 @@
-<a id="literals-for-boto3-transfer-module"></a>
-
-# Literals for boto3 Transfer module
+# Literals
 
 > [Index](../README.md) > [Transfer](./README.md) > Literals
 
-Auto-generated documentation for
-[Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
-type annotations stubs module
-[mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
+!!! note ""
 
-- [Literals for boto3 Transfer module](#literals-for-boto3-transfer-module)
-  - [CustomStepStatusType](#customstepstatustype)
-  - [DomainType](#domaintype)
-  - [EndpointTypeType](#endpointtypetype)
-  - [ExecutionErrorTypeType](#executionerrortypetype)
-  - [ExecutionStatusType](#executionstatustype)
-  - [HomeDirectoryTypeType](#homedirectorytypetype)
-  - [IdentityProviderTypeType](#identityprovidertypetype)
-  - [ListAccessesPaginatorName](#listaccessespaginatorname)
-  - [ListExecutionsPaginatorName](#listexecutionspaginatorname)
-  - [ListSecurityPoliciesPaginatorName](#listsecuritypoliciespaginatorname)
-  - [ListServersPaginatorName](#listserverspaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [ListWorkflowsPaginatorName](#listworkflowspaginatorname)
-  - [OverwriteExistingType](#overwriteexistingtype)
-  - [ProtocolType](#protocoltype)
-  - [ServerOfflineWaiterName](#serverofflinewaitername)
-  - [ServerOnlineWaiterName](#serveronlinewaitername)
-  - [StateType](#statetype)
-  - [TlsSessionResumptionModeType](#tlssessionresumptionmodetype)
-  - [WorkflowStepTypeType](#workflowsteptypetype)
-  - [TransferServiceName](#transferservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="customstepstatustype"></a>
+    Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+    type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 ## CustomStepStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import CustomStepStatusType
+
+def get_value() -> CustomStepStatusType:
+    return "FAILURE"
 ```
 
-Values:
-
-- `FAILURE`
-- `SUCCESS`
-
-<a id="domaintype"></a>
-
+```python title="Definition"
+CustomStepStatusType = Literal[
+    "FAILURE",
+    "SUCCESS",
+]
+```
 ## DomainType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import DomainType
+
+def get_value() -> DomainType:
+    return "EFS"
 ```
 
-Values:
-
-- `EFS`
-- `S3`
-
-<a id="endpointtypetype"></a>
-
+```python title="Definition"
+DomainType = Literal[
+    "EFS",
+    "S3",
+]
+```
 ## EndpointTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import EndpointTypeType
+
+def get_value() -> EndpointTypeType:
+    return "PUBLIC"
 ```
 
-Values:
-
-- `PUBLIC`
-- `VPC`
-- `VPC_ENDPOINT`
-
-<a id="executionerrortypetype"></a>
-
+```python title="Definition"
+EndpointTypeType = Literal[
+    "PUBLIC",
+    "VPC",
+    "VPC_ENDPOINT",
+]
+```
 ## ExecutionErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ExecutionErrorTypeType
+
+def get_value() -> ExecutionErrorTypeType:
+    return "ALREADY_EXISTS"
 ```
 
-Values:
-
-- `ALREADY_EXISTS`
-- `BAD_REQUEST`
-- `CUSTOM_STEP_FAILED`
-- `INTERNAL_SERVER_ERROR`
-- `NOT_FOUND`
-- `PERMISSION_DENIED`
-- `THROTTLED`
-- `TIMEOUT`
-
-<a id="executionstatustype"></a>
-
+```python title="Definition"
+ExecutionErrorTypeType = Literal[
+    "ALREADY_EXISTS",
+    "BAD_REQUEST",
+    "CUSTOM_STEP_FAILED",
+    "INTERNAL_SERVER_ERROR",
+    "NOT_FOUND",
+    "PERMISSION_DENIED",
+    "THROTTLED",
+    "TIMEOUT",
+]
+```
 ## ExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ExecutionStatusType
+
+def get_value() -> ExecutionStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `EXCEPTION`
-- `HANDLING_EXCEPTION`
-- `IN_PROGRESS`
-
-<a id="homedirectorytypetype"></a>
-
+```python title="Definition"
+ExecutionStatusType = Literal[
+    "COMPLETED",
+    "EXCEPTION",
+    "HANDLING_EXCEPTION",
+    "IN_PROGRESS",
+]
+```
 ## HomeDirectoryTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import HomeDirectoryTypeType
+
+def get_value() -> HomeDirectoryTypeType:
+    return "LOGICAL"
 ```
 
-Values:
-
-- `LOGICAL`
-- `PATH`
-
-<a id="identityprovidertypetype"></a>
-
+```python title="Definition"
+HomeDirectoryTypeType = Literal[
+    "LOGICAL",
+    "PATH",
+]
+```
 ## IdentityProviderTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import IdentityProviderTypeType
+
+def get_value() -> IdentityProviderTypeType:
+    return "API_GATEWAY"
 ```
 
-Values:
-
-- `API_GATEWAY`
-- `AWS_DIRECTORY_SERVICE`
-- `AWS_LAMBDA`
-- `SERVICE_MANAGED`
-
-<a id="listaccessespaginatorname"></a>
-
+```python title="Definition"
+IdentityProviderTypeType = Literal[
+    "API_GATEWAY",
+    "AWS_DIRECTORY_SERVICE",
+    "AWS_LAMBDA",
+    "SERVICE_MANAGED",
+]
+```
 ## ListAccessesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListAccessesPaginatorName
+
+def get_value() -> ListAccessesPaginatorName:
+    return "list_accesses"
 ```
 
-Values:
-
-- `list_accesses`
-
-<a id="listexecutionspaginatorname"></a>
-
+```python title="Definition"
+ListAccessesPaginatorName = Literal[
+    "list_accesses",
+]
+```
 ## ListExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListExecutionsPaginatorName
+
+def get_value() -> ListExecutionsPaginatorName:
+    return "list_executions"
 ```
 
-Values:
-
-- `list_executions`
-
-<a id="listsecuritypoliciespaginatorname"></a>
-
+```python title="Definition"
+ListExecutionsPaginatorName = Literal[
+    "list_executions",
+]
+```
 ## ListSecurityPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListSecurityPoliciesPaginatorName
+
+def get_value() -> ListSecurityPoliciesPaginatorName:
+    return "list_security_policies"
 ```
 
-Values:
-
-- `list_security_policies`
-
-<a id="listserverspaginatorname"></a>
-
+```python title="Definition"
+ListSecurityPoliciesPaginatorName = Literal[
+    "list_security_policies",
+]
+```
 ## ListServersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListServersPaginatorName
+
+def get_value() -> ListServersPaginatorName:
+    return "list_servers"
 ```
 
-Values:
-
-- `list_servers`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListServersPaginatorName = Literal[
+    "list_servers",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="listworkflowspaginatorname"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## ListWorkflowsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ListWorkflowsPaginatorName
+
+def get_value() -> ListWorkflowsPaginatorName:
+    return "list_workflows"
 ```
 
-Values:
-
-- `list_workflows`
-
-<a id="overwriteexistingtype"></a>
-
+```python title="Definition"
+ListWorkflowsPaginatorName = Literal[
+    "list_workflows",
+]
+```
 ## OverwriteExistingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import OverwriteExistingType
+
+def get_value() -> OverwriteExistingType:
+    return "FALSE"
 ```
 
-Values:
-
-- `FALSE`
-- `TRUE`
-
-<a id="protocoltype"></a>
-
+```python title="Definition"
+OverwriteExistingType = Literal[
+    "FALSE",
+    "TRUE",
+]
+```
 ## ProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "FTP"
 ```
 
-Values:
-
-- `FTP`
-- `FTPS`
-- `SFTP`
-
-<a id="serverofflinewaitername"></a>
-
+```python title="Definition"
+ProtocolType = Literal[
+    "FTP",
+    "FTPS",
+    "SFTP",
+]
+```
 ## ServerOfflineWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ServerOfflineWaiterName
+
+def get_value() -> ServerOfflineWaiterName:
+    return "server_offline"
 ```
 
-Values:
-
-- `server_offline`
-
-<a id="serveronlinewaitername"></a>
-
+```python title="Definition"
+ServerOfflineWaiterName = Literal[
+    "server_offline",
+]
+```
 ## ServerOnlineWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ServerOnlineWaiterName
+
+def get_value() -> ServerOnlineWaiterName:
+    return "server_online"
 ```
 
-Values:
-
-- `server_online`
-
-<a id="statetype"></a>
-
+```python title="Definition"
+ServerOnlineWaiterName = Literal[
+    "server_online",
+]
+```
 ## StateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import StateType
+
+def get_value() -> StateType:
+    return "OFFLINE"
 ```
 
-Values:
-
-- `OFFLINE`
-- `ONLINE`
-- `START_FAILED`
-- `STARTING`
-- `STOP_FAILED`
-- `STOPPING`
-
-<a id="tlssessionresumptionmodetype"></a>
-
+```python title="Definition"
+StateType = Literal[
+    "OFFLINE",
+    "ONLINE",
+    "START_FAILED",
+    "STARTING",
+    "STOP_FAILED",
+    "STOPPING",
+]
+```
 ## TlsSessionResumptionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import TlsSessionResumptionModeType
+
+def get_value() -> TlsSessionResumptionModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `ENFORCED`
-
-<a id="workflowsteptypetype"></a>
-
+```python title="Definition"
+TlsSessionResumptionModeType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "ENFORCED",
+]
+```
 ## WorkflowStepTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import WorkflowStepTypeType
+
+def get_value() -> WorkflowStepTypeType:
+    return "COPY"
 ```
 
-Values:
-
-- `COPY`
-- `CUSTOM`
-- `DELETE`
-- `TAG`
-
-<a id="transferservicename"></a>
-
+```python title="Definition"
+WorkflowStepTypeType = Literal[
+    "COPY",
+    "CUSTOM",
+    "DELETE",
+    "TAG",
+]
+```
 ## TransferServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import TransferServiceName
+
+def get_value() -> TransferServiceName:
+    return "transfer"
 ```
 
-Values:
-
-- `transfer`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+TransferServiceName = Literal[
+    "transfer",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_accesses"
 ```
 
-Values:
-
-- `list_accesses`
-- `list_executions`
-- `list_security_policies`
-- `list_servers`
-- `list_tags_for_resource`
-- `list_users`
-- `list_workflows`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_accesses",
+    "list_executions",
+    "list_security_policies",
+    "list_servers",
+    "list_tags_for_resource",
+    "list_users",
+    "list_workflows",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transfer.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "server_offline"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "server_offline",
+    "server_online",
+]
+```
+## RegionName
 
-- `server_offline`
-- `server_online`
+```python title="Usage Example"
+from mypy_boto3_transfer.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

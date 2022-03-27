@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-chimesdkmessaging-module"></a>
-
-# Type annotations for boto3 ChimeSDKMessaging module
+#  ChimeSDKMessaging module
 
 > [Index](../README.md) > ChimeSDKMessaging
 
-Auto-generated documentation for
-[ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
-type annotations stubs module
-[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
+!!! note ""
 
-- [Type annotations for boto3 ChimeSDKMessaging module](#type-annotations-for-boto3-chimesdkmessaging-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ChimeSDKMessagingClient](#chimesdkmessagingclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
+    type annotations stubs module [mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ChimeSDKMessaging`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[chime-sdk-messaging]'
 python -m pip install mypy-boto3-chime-sdk-messaging
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,105 +42,41 @@ python -m pip install mypy-boto3-chime-sdk-messaging
 python -m pip uninstall -y mypy-boto3-chime-sdk-messaging
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="chimesdkmessagingclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ChimeSDKMessagingClient
 
-Type annotations for `boto3.client("chime-sdk-messaging")` as
-[ChimeSDKMessagingClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("chime-sdk-messaging")` as [ChimeSDKMessagingClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
+
+def get_client() -> ChimeSDKMessagingClient:
+    return Session().cleint("chime-sdk-messaging")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_channel_flow](./client.md#associate_channel_flow)
-- [batch_create_channel_membership](./client.md#batch_create_channel_membership)
-- [can_paginate](./client.md#can_paginate)
-- [channel_flow_callback](./client.md#channel_flow_callback)
-- [create_channel](./client.md#create_channel)
-- [create_channel_ban](./client.md#create_channel_ban)
-- [create_channel_flow](./client.md#create_channel_flow)
-- [create_channel_membership](./client.md#create_channel_membership)
-- [create_channel_moderator](./client.md#create_channel_moderator)
-- [delete_channel](./client.md#delete_channel)
-- [delete_channel_ban](./client.md#delete_channel_ban)
-- [delete_channel_flow](./client.md#delete_channel_flow)
-- [delete_channel_membership](./client.md#delete_channel_membership)
-- [delete_channel_message](./client.md#delete_channel_message)
-- [delete_channel_moderator](./client.md#delete_channel_moderator)
-- [describe_channel](./client.md#describe_channel)
-- [describe_channel_ban](./client.md#describe_channel_ban)
-- [describe_channel_flow](./client.md#describe_channel_flow)
-- [describe_channel_membership](./client.md#describe_channel_membership)
-- [describe_channel_membership_for_app_instance_user](./client.md#describe_channel_membership_for_app_instance_user)
-- [describe_channel_moderated_by_app_instance_user](./client.md#describe_channel_moderated_by_app_instance_user)
-- [describe_channel_moderator](./client.md#describe_channel_moderator)
-- [disassociate_channel_flow](./client.md#disassociate_channel_flow)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_channel_membership_preferences](./client.md#get_channel_membership_preferences)
-- [get_channel_message](./client.md#get_channel_message)
-- [get_channel_message_status](./client.md#get_channel_message_status)
-- [get_messaging_session_endpoint](./client.md#get_messaging_session_endpoint)
-- [list_channel_bans](./client.md#list_channel_bans)
-- [list_channel_flows](./client.md#list_channel_flows)
-- [list_channel_memberships](./client.md#list_channel_memberships)
-- [list_channel_memberships_for_app_instance_user](./client.md#list_channel_memberships_for_app_instance_user)
-- [list_channel_messages](./client.md#list_channel_messages)
-- [list_channel_moderators](./client.md#list_channel_moderators)
-- [list_channels](./client.md#list_channels)
-- [list_channels_associated_with_channel_flow](./client.md#list_channels_associated_with_channel_flow)
-- [list_channels_moderated_by_app_instance_user](./client.md#list_channels_moderated_by_app_instance_user)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_channel_membership_preferences](./client.md#put_channel_membership_preferences)
-- [redact_channel_message](./client.md#redact_channel_message)
-- [send_channel_message](./client.md#send_channel_message)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_channel](./client.md#update_channel)
-- [update_channel_flow](./client.md#update_channel_flow)
-- [update_channel_message](./client.md#update_channel_message)
-- [update_channel_read_marker](./client.md#update_channel_read_marker)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ChimeSDKMessagingClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- NotFoundException
-- ResourceLimitExceededException
-- ServiceFailureException
-- ServiceUnavailableException
-- ThrottledClientException
-- UnauthorizedClientException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType
 
-```python
-from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType, ...
+def get_value() -> AllowNotificationsType:
+    return "ALL"
 ```
 
 - [AllowNotificationsType](./literals.md#allownotificationstype)
@@ -179,18 +94,22 @@ from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType, ...
 - [ChimeSDKMessagingServiceName](./literals.md#chimesdkmessagingservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSummaryTypeDef
 
-```python
-from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSummaryTypeDef, ...
+def get_value() -> AppInstanceUserMembershipSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
 - [AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef)
@@ -303,3 +222,4 @@ from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSu
 - [UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef)
 - [UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef)
 - [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef)
+

@@ -1,56 +1,18 @@
-<a id="chimesdkidentityclient-for-boto3-chimesdkidentity-module"></a>
+# ChimeSDKIdentityClient
 
-# ChimeSDKIdentityClient for boto3 ChimeSDKIdentity module
+> [Index](../README.md) > [ChimeSDKIdentity](./README.md) > ChimeSDKIdentityClient
 
-> [Index](../README.md) > [ChimeSDKIdentity](./README.md) >
-> ChimeSDKIdentityClient
+!!! note ""
 
-Auto-generated documentation for
-[ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
-type annotations stubs module
-[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
-
-- [ChimeSDKIdentityClient for boto3 ChimeSDKIdentity module](#chimesdkidentityclient-for-boto3-chimesdkidentity-module)
-  - [ChimeSDKIdentityClient](#chimesdkidentityclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_app_instance](#create_app_instance)
-    - [create_app_instance_admin](#create_app_instance_admin)
-    - [create_app_instance_user](#create_app_instance_user)
-    - [delete_app_instance](#delete_app_instance)
-    - [delete_app_instance_admin](#delete_app_instance_admin)
-    - [delete_app_instance_user](#delete_app_instance_user)
-    - [deregister_app_instance_user_endpoint](#deregister_app_instance_user_endpoint)
-    - [describe_app_instance](#describe_app_instance)
-    - [describe_app_instance_admin](#describe_app_instance_admin)
-    - [describe_app_instance_user](#describe_app_instance_user)
-    - [describe_app_instance_user_endpoint](#describe_app_instance_user_endpoint)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_app_instance_retention_settings](#get_app_instance_retention_settings)
-    - [list_app_instance_admins](#list_app_instance_admins)
-    - [list_app_instance_user_endpoints](#list_app_instance_user_endpoints)
-    - [list_app_instance_users](#list_app_instance_users)
-    - [list_app_instances](#list_app_instances)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_app_instance_retention_settings](#put_app_instance_retention_settings)
-    - [register_app_instance_user_endpoint](#register_app_instance_user_endpoint)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_app_instance](#update_app_instance)
-    - [update_app_instance_user](#update_app_instance_user)
-    - [update_app_instance_user_endpoint](#update_app_instance_user_endpoint)
-
-<a id="chimesdkidentityclient"></a>
+    Auto-generated documentation for [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
+    type annotations stubs module [mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 ## ChimeSDKIdentityClient
 
-Type annotations for `boto3.client("chime-sdk-identity")`
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
 
@@ -58,644 +20,834 @@ def get_chime-sdk-identity_client() -> ChimeSDKIdentityClient:
     return Session().client("chime-sdk-identity")
 ```
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("chime-sdk-identity").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("chime-sdk-identity")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.ResourceLimitExceededException,
+    client.ServiceFailureException,
+    client.ServiceUnavailableException,
+    client.ThrottledClientException,
+    client.UnauthorizedClientException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_chime_sdk_identity.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ServiceFailureException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottledClientException`
-- `Exceptions.UnauthorizedClientException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ChimeSDKIdentityClient exceptions.
-
-Type annotations for `boto3.client("chime-sdk-identity").exceptions` method.
-
-Boto3 documentation:
-[ChimeSDKIdentity.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("chime-sdk-identity").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.can_paginate)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_app\_instance"></a>
-
-### create_app_instance
+### create\_app\_instance
 
 Creates an Amazon Chime SDK messaging `AppInstance` under an AWS account.
 
-Type annotations for `boto3.client("chime-sdk-identity").create_app_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").create_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.create_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance)
+```python title="Method definition"
+def create_app_instance(
+    self,
+    *,
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAppInstanceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceRequestRequestTypeDef](./type_defs.md#createappinstancerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
+parent.create_app_instance(**kwargs)
+```
 
-<a id="create\_app\_instance\_admin"></a>
+1. See [:material-code-braces: CreateAppInstanceRequestRequestTypeDef](./type_defs.md#createappinstancerequestrequesttypedef) 
 
-### create_app_instance_admin
+### create\_app\_instance\_admin
 
 Promotes an `AppInstanceUser` to an `AppInstanceAdmin`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").create_app_instance_admin` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").create_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance_admin)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.create_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance_admin)
+```python title="Method definition"
+def create_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> CreateAppInstanceAdminResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceAdminRequestRequestTypeDef](./type_defs.md#createappinstanceadminrequestrequesttypedef).
+1. See [:material-code-braces: CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-Returns
-[CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
+parent.create_app_instance_admin(**kwargs)
+```
 
-<a id="create\_app\_instance\_user"></a>
+1. See [:material-code-braces: CreateAppInstanceAdminRequestRequestTypeDef](./type_defs.md#createappinstanceadminrequestrequesttypedef) 
 
-### create_app_instance_user
+### create\_app\_instance\_user
 
 Creates a user under an Amazon Chime `AppInstance`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").create_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").create_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.create_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.create_app_instance_user)
+```python title="Method definition"
+def create_app_instance_user(
+    self,
+    *,
+    AppInstanceArn: str,
+    AppInstanceUserId: str,
+    Name: str,
+    ClientRequestToken: str,
+    Metadata: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAppInstanceUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppInstanceUserRequestRequestTypeDef](./type_defs.md#createappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `AppInstanceUserId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "AppInstanceUserId": ...,
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
+parent.create_app_instance_user(**kwargs)
+```
 
-<a id="delete\_app\_instance"></a>
+1. See [:material-code-braces: CreateAppInstanceUserRequestRequestTypeDef](./type_defs.md#createappinstanceuserrequestrequesttypedef) 
 
-### delete_app_instance
+### delete\_app\_instance
 
 Deletes an `AppInstance` and all associated data asynchronously.
 
-Type annotations for `boto3.client("chime-sdk-identity").delete_app_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").delete_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.delete_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance)
+```python title="Method definition"
+def delete_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceRequestRequestTypeDef](./type_defs.md#deleteappinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-<a id="delete\_app\_instance\_admin"></a>
+parent.delete_app_instance(**kwargs)
+```
 
-### delete_app_instance_admin
+1. See [:material-code-braces: DeleteAppInstanceRequestRequestTypeDef](./type_defs.md#deleteappinstancerequestrequesttypedef) 
+
+### delete\_app\_instance\_admin
 
 Demotes an `AppInstanceAdmin` to an `AppInstanceUser`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").delete_app_instance_admin` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").delete_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance_admin)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.delete_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance_admin)
+```python title="Method definition"
+def delete_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceAdminRequestRequestTypeDef](./type_defs.md#deleteappinstanceadminrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-<a id="delete\_app\_instance\_user"></a>
+parent.delete_app_instance_admin(**kwargs)
+```
 
-### delete_app_instance_user
+1. See [:material-code-braces: DeleteAppInstanceAdminRequestRequestTypeDef](./type_defs.md#deleteappinstanceadminrequestrequesttypedef) 
+
+### delete\_app\_instance\_user
 
 Deletes an `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").delete_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").delete_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.delete_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.delete_app_instance_user)
+```python title="Method definition"
+def delete_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppInstanceUserRequestRequestTypeDef](./type_defs.md#deleteappinstanceuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-<a id="deregister\_app\_instance\_user\_endpoint"></a>
+parent.delete_app_instance_user(**kwargs)
+```
 
-### deregister_app_instance_user_endpoint
+1. See [:material-code-braces: DeleteAppInstanceUserRequestRequestTypeDef](./type_defs.md#deleteappinstanceuserrequestrequesttypedef) 
+
+### deregister\_app\_instance\_user\_endpoint
 
 Deregisters an `AppInstanceUserEndpoint` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").deregister_app_instance_user_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").deregister_app_instance_user_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.deregister_app_instance_user_endpoint)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.deregister_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.deregister_app_instance_user_endpoint)
+```python title="Method definition"
+def deregister_app_instance_user_endpoint(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    EndpointId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#deregisterappinstanceuserendpointrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterAppInstanceUserEndpointRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "EndpointId": ...,
+}
 
-<a id="describe\_app\_instance"></a>
+parent.deregister_app_instance_user_endpoint(**kwargs)
+```
 
-### describe_app_instance
+1. See [:material-code-braces: DeregisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#deregisterappinstanceuserendpointrequestrequesttypedef) 
+
+### describe\_app\_instance
 
 Returns the full details of an `AppInstance` .
 
-Type annotations for `boto3.client("chime-sdk-identity").describe_app_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").describe_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.describe_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance)
+```python title="Method definition"
+def describe_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> DescribeAppInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceRequestRequestTypeDef](./type_defs.md#describeappinstancerequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
+parent.describe_app_instance(**kwargs)
+```
 
-<a id="describe\_app\_instance\_admin"></a>
+1. See [:material-code-braces: DescribeAppInstanceRequestRequestTypeDef](./type_defs.md#describeappinstancerequestrequesttypedef) 
 
-### describe_app_instance_admin
+### describe\_app\_instance\_admin
 
 Returns the full details of an `AppInstanceAdmin` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").describe_app_instance_admin` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").describe_app_instance_admin` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_admin)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.describe_app_instance_admin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_admin)
+```python title="Method definition"
+def describe_app_instance_admin(
+    self,
+    *,
+    AppInstanceAdminArn: str,
+    AppInstanceArn: str,
+) -> DescribeAppInstanceAdminResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceAdminRequestRequestTypeDef](./type_defs.md#describeappinstanceadminrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceAdminArn`: `str` *(required)*
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceAdminRequestRequestTypeDef = {  # (1)
+    "AppInstanceAdminArn": ...,
+    "AppInstanceArn": ...,
+}
 
-Returns
-[DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
+parent.describe_app_instance_admin(**kwargs)
+```
 
-<a id="describe\_app\_instance\_user"></a>
+1. See [:material-code-braces: DescribeAppInstanceAdminRequestRequestTypeDef](./type_defs.md#describeappinstanceadminrequestrequesttypedef) 
 
-### describe_app_instance_user
+### describe\_app\_instance\_user
 
 Returns the full details of an `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").describe_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").describe_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.describe_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_user)
+```python title="Method definition"
+def describe_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+) -> DescribeAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceUserRequestRequestTypeDef](./type_defs.md#describeappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+parent.describe_app_instance_user(**kwargs)
+```
 
-<a id="describe\_app\_instance\_user\_endpoint"></a>
+1. See [:material-code-braces: DescribeAppInstanceUserRequestRequestTypeDef](./type_defs.md#describeappinstanceuserrequestrequesttypedef) 
 
-### describe_app_instance_user_endpoint
+### describe\_app\_instance\_user\_endpoint
 
 Returns the full details of an `AppInstanceUserEndpoint` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").describe_app_instance_user_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").describe_app_instance_user_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_user_endpoint)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.describe_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.describe_app_instance_user_endpoint)
+```python title="Method definition"
+def describe_app_instance_user_endpoint(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    EndpointId: str,
+) -> DescribeAppInstanceUserEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#describeappinstanceuserendpointrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAppInstanceUserEndpointResponseTypeDef](./type_defs.md#describeappinstanceuserendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAppInstanceUserEndpointRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "EndpointId": ...,
+}
 
-Returns
-[DescribeAppInstanceUserEndpointResponseTypeDef](./type_defs.md#describeappinstanceuserendpointresponsetypedef).
+parent.describe_app_instance_user_endpoint(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#describeappinstanceuserendpointrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_app\_instance\_retention\_settings"></a>
-
-### get_app_instance_retention_settings
+### get\_app\_instance\_retention\_settings
 
 Gets the retention settings for an `AppInstance` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").get_app_instance_retention_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").get_app_instance_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.get_app_instance_retention_settings)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.get_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.get_app_instance_retention_settings)
+```python title="Method definition"
+def get_app_instance_retention_settings(
+    self,
+    *,
+    AppInstanceArn: str,
+) -> GetAppInstanceRetentionSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppInstanceRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
+parent.get_app_instance_retention_settings(**kwargs)
+```
 
-<a id="list\_app\_instance\_admins"></a>
+1. See [:material-code-braces: GetAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#getappinstanceretentionsettingsrequestrequesttypedef) 
 
-### list_app_instance_admins
+### list\_app\_instance\_admins
 
 Returns a list of the administrators in the `AppInstance` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").list_app_instance_admins` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").list_app_instance_admins` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_admins)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.list_app_instance_admins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_admins)
+```python title="Method definition"
+def list_app_instance_admins(
+    self,
+    *,
+    AppInstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstanceAdminsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstanceAdminsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
+parent.list_app_instance_admins(**kwargs)
+```
 
-<a id="list\_app\_instance\_user\_endpoints"></a>
+1. See [:material-code-braces: ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef) 
 
-### list_app_instance_user_endpoints
+### list\_app\_instance\_user\_endpoints
 
 Lists all the `AppInstanceUserEndpoints` created under a single
 `AppInstanceUser` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").list_app_instance_user_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").list_app_instance_user_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_user_endpoints)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.list_app_instance_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_user_endpoints)
+```python title="Method definition"
+def list_app_instance_user_endpoints(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstanceUserEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstanceUserEndpointsRequestRequestTypeDef](./type_defs.md#listappinstanceuserendpointsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstanceUserEndpointsResponseTypeDef](./type_defs.md#listappinstanceuserendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstanceUserEndpointsRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+}
 
-Returns
-[ListAppInstanceUserEndpointsResponseTypeDef](./type_defs.md#listappinstanceuserendpointsresponsetypedef).
+parent.list_app_instance_user_endpoints(**kwargs)
+```
 
-<a id="list\_app\_instance\_users"></a>
+1. See [:material-code-braces: ListAppInstanceUserEndpointsRequestRequestTypeDef](./type_defs.md#listappinstanceuserendpointsrequestrequesttypedef) 
 
-### list_app_instance_users
+### list\_app\_instance\_users
 
 List all `AppInstanceUsers` created under a single `AppInstance` .
 
-Type annotations for
-`boto3.client("chime-sdk-identity").list_app_instance_users` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").list_app_instance_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_users)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.list_app_instance_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instance_users)
+```python title="Method definition"
+def list_app_instance_users(
+    self,
+    *,
+    AppInstanceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstanceUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstanceUsersRequestRequestTypeDef](./type_defs.md#listappinstanceusersrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstanceUsersRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+}
 
-Returns
-[ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
+parent.list_app_instance_users(**kwargs)
+```
 
-<a id="list\_app\_instances"></a>
+1. See [:material-code-braces: ListAppInstanceUsersRequestRequestTypeDef](./type_defs.md#listappinstanceusersrequestrequesttypedef) 
 
-### list_app_instances
+### list\_app\_instances
 
 Lists all Amazon Chime `AppInstance` s created under a single AWS account.
 
-Type annotations for `boto3.client("chime-sdk-identity").list_app_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").list_app_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instances)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.list_app_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_app_instances)
+```python title="Method definition"
+def list_app_instances(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppInstancesRequestRequestTypeDef](./type_defs.md#listappinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppInstancesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
+parent.list_app_instances(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListAppInstancesRequestRequestTypeDef](./type_defs.md#listappinstancesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags applied to an Amazon Chime SDK identity resource.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_app\_instance\_retention\_settings"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_app_instance_retention_settings
+### put\_app\_instance\_retention\_settings
 
 Sets the amount of time in days that a given `AppInstance` retains data.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").put_app_instance_retention_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").put_app_instance_retention_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.put_app_instance_retention_settings)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.put_app_instance_retention_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.put_app_instance_retention_settings)
+```python title="Method definition"
+def put_app_instance_retention_settings(
+    self,
+    *,
+    AppInstanceArn: str,
+    AppInstanceRetentionSettings: AppInstanceRetentionSettingsTypeDef,  # (1)
+) -> PutAppInstanceRetentionSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequestrequesttypedef).
+1. See [:material-code-braces: AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef) 
+2. See [:material-code-braces: PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `AppInstanceRetentionSettings`:
-  [AppInstanceRetentionSettingsTypeDef](./type_defs.md#appinstanceretentionsettingstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAppInstanceRetentionSettingsRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "AppInstanceRetentionSettings": ...,
+}
 
-Returns
-[PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
+parent.put_app_instance_retention_settings(**kwargs)
+```
 
-<a id="register\_app\_instance\_user\_endpoint"></a>
+1. See [:material-code-braces: PutAppInstanceRetentionSettingsRequestRequestTypeDef](./type_defs.md#putappinstanceretentionsettingsrequestrequesttypedef) 
 
-### register_app_instance_user_endpoint
+### register\_app\_instance\_user\_endpoint
 
 Registers an endpoint under an Amazon Chime `AppInstanceUser`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").register_app_instance_user_endpoint`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").register_app_instance_user_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.register_app_instance_user_endpoint)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.register_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.register_app_instance_user_endpoint)
+```python title="Method definition"
+def register_app_instance_user_endpoint(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    Type: AppInstanceUserEndpointTypeType,  # (1)
+    ResourceArn: str,
+    EndpointAttributes: EndpointAttributesTypeDef,  # (2)
+    ClientRequestToken: str,
+    Name: str = ...,
+    AllowMessages: AllowMessagesType = ...,  # (3)
+) -> RegisterAppInstanceUserEndpointResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[RegisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#registerappinstanceuserendpointrequestrequesttypedef).
+1. See [:material-code-brackets: AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype) 
+2. See [:material-code-braces: EndpointAttributesTypeDef](./type_defs.md#endpointattributestypedef) 
+3. See [:material-code-brackets: AllowMessagesType](./literals.md#allowmessagestype) 
+4. See [:material-code-braces: RegisterAppInstanceUserEndpointResponseTypeDef](./type_defs.md#registerappinstanceuserendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `Type`:
-  [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
-  *(required)*
-- `ResourceArn`: `str` *(required)*
-- `EndpointAttributes`:
-  [EndpointAttributesTypeDef](./type_defs.md#endpointattributestypedef)
-  *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Name`: `str`
-- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+```python title="Usage example with kwargs"
+kwargs: RegisterAppInstanceUserEndpointRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "Type": ...,
+    "ResourceArn": ...,
+    "EndpointAttributes": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[RegisterAppInstanceUserEndpointResponseTypeDef](./type_defs.md#registerappinstanceuserendpointresponsetypedef).
+parent.register_app_instance_user_endpoint(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RegisterAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#registerappinstanceuserendpointrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies the specified tags to the specified Amazon Chime SDK identity resource.
 
-Type annotations for `boto3.client("chime-sdk-identity").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.tag_resource)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes the specified tags from the specified Amazon Chime SDK identity
 resource.
 
-Type annotations for `boto3.client("chime-sdk-identity").untag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.untag_resource)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_app\_instance"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_app_instance
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_app\_instance
 
 Updates `AppInstance` metadata.
 
-Type annotations for `boto3.client("chime-sdk-identity").update_app_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").update_app_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.update_app_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance)
+```python title="Method definition"
+def update_app_instance(
+    self,
+    *,
+    AppInstanceArn: str,
+    Name: str,
+    Metadata: str,
+) -> UpdateAppInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppInstanceRequestRequestTypeDef](./type_defs.md#updateappinstancerequestrequesttypedef).
+1. See [:material-code-braces: UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Metadata`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAppInstanceRequestRequestTypeDef = {  # (1)
+    "AppInstanceArn": ...,
+    "Name": ...,
+    "Metadata": ...,
+}
 
-Returns
-[UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
+parent.update_app_instance(**kwargs)
+```
 
-<a id="update\_app\_instance\_user"></a>
+1. See [:material-code-braces: UpdateAppInstanceRequestRequestTypeDef](./type_defs.md#updateappinstancerequestrequesttypedef) 
 
-### update_app_instance_user
+### update\_app\_instance\_user
 
 Updates the details of an `AppInstanceUser`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").update_app_instance_user` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").update_app_instance_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance_user)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.update_app_instance_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance_user)
+```python title="Method definition"
+def update_app_instance_user(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    Name: str,
+    Metadata: str,
+) -> UpdateAppInstanceUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Metadata`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAppInstanceUserRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "Name": ...,
+    "Metadata": ...,
+}
 
-Returns
-[UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
+parent.update_app_instance_user(**kwargs)
+```
 
-<a id="update\_app\_instance\_user\_endpoint"></a>
+1. See [:material-code-braces: UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef) 
 
-### update_app_instance_user_endpoint
+### update\_app\_instance\_user\_endpoint
 
 Updates the details of an `AppInstanceUserEndpoint`.
 
-Type annotations for
-`boto3.client("chime-sdk-identity").update_app_instance_user_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("chime-sdk-identity").update_app_instance_user_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance_user_endpoint)
 
-Boto3 documentation:
-[ChimeSDKIdentity.Client.update_app_instance_user_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client.update_app_instance_user_endpoint)
+```python title="Method definition"
+def update_app_instance_user_endpoint(
+    self,
+    *,
+    AppInstanceUserArn: str,
+    EndpointId: str,
+    Name: str = ...,
+    AllowMessages: AllowMessagesType = ...,  # (1)
+) -> UpdateAppInstanceUserEndpointResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#updateappinstanceuserendpointrequestrequesttypedef).
+1. See [:material-code-brackets: AllowMessagesType](./literals.md#allowmessagestype) 
+2. See [:material-code-braces: UpdateAppInstanceUserEndpointResponseTypeDef](./type_defs.md#updateappinstanceuserendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppInstanceUserArn`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
-- `Name`: `str`
-- `AllowMessages`: [AllowMessagesType](./literals.md#allowmessagestype)
+```python title="Usage example with kwargs"
+kwargs: UpdateAppInstanceUserEndpointRequestRequestTypeDef = {  # (1)
+    "AppInstanceUserArn": ...,
+    "EndpointId": ...,
+}
 
-Returns
-[UpdateAppInstanceUserEndpointResponseTypeDef](./type_defs.md#updateappinstanceuserendpointresponsetypedef).
+parent.update_app_instance_user_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAppInstanceUserEndpointRequestRequestTypeDef](./type_defs.md#updateappinstanceuserendpointrequestrequesttypedef) 
+
+
+
+

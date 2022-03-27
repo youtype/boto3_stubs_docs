@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-dax-module"></a>
-
-# Examples for boto3 DAX module
+# Examples
 
 > [Index](../README.md) > [DAX](./README.md) > Examples
 
-- [Examples for boto3 DAX module](#examples-for-boto3-dax-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+    type annotations stubs module [mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[dax]` package installed.
 
-Write your `DAX` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `DAX` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type DAXClient
-# and provides type checking and code completion
-client = session.client("dax")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type DescribeClustersPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_clusters")
-for item in paginator.paginate(...):
-    # item has type DescribeClustersResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("dax")  # (1)
+    result = client.create_cluster()  # (2)
+    ```
+
+    1. client: [DAXClient](./client.md)
+    2. result: [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("dax")  # (1)
+
+    paginator = client.get_paginator("describe_clusters")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [DAXClient](./client.md)
+    2. paginator: [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
+    3. item: [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[dax]` or a standalone `mypy_boto3_dax` package, you have
-to explicitly specify `client: DAXClient` type annotation.
+With `boto3-stubs-lite[dax]`
+or a standalone `mypy_boto3_dax` package, you have to explicitly specify `client: DAXClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_dax.client import DAXClient
-from mypy_boto3_dax.paginator import DescribeClustersPaginator
-
-from mypy_boto3_dax.literals import PaginatorName
-
-from mypy_boto3_dax.type_defs import bool
-from mypy_boto3_dax.type_defs import DescribeClustersResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: DAXClient = session.client("dax")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_dax.client import DAXClient
+    from mypy_boto3_dax.type_defs import CreateClusterResponseTypeDef
+    from mypy_boto3_dax.type_defs import CreateClusterRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_clusters"
-paginator: DescribeClustersPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeClustersResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: DAXClient = session.client("dax")
+
+    kwargs: CreateClusterRequestRequestTypeDef = {...}
+    result: CreateClusterResponseTypeDef = client.create_cluster(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_dax.client import DAXClient
+    from mypy_boto3_dax.paginator import DescribeClustersPaginator
+    from mypy_boto3_dax.type_defs import DescribeClustersResponseTypeDef
+
+
+    session = Session()
+    client: DAXClient = session.client("dax")
+
+    paginator: DescribeClustersPaginator = client.get_paginator("describe_clusters")
+    for item in paginator.paginate(...):
+        item: DescribeClustersResponseTypeDef
+        print(item)
+    ```
+
+
+
+

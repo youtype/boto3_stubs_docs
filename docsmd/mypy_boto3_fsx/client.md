@@ -1,69 +1,18 @@
-<a id="fsxclient-for-boto3-fsx-module"></a>
-
-# FSxClient for boto3 FSx module
+# FSxClient
 
 > [Index](../README.md) > [FSx](./README.md) > FSxClient
 
-Auto-generated documentation for
-[FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
-type annotations stubs module
-[mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
+!!! note ""
 
-- [FSxClient for boto3 FSx module](#fsxclient-for-boto3-fsx-module)
-  - [FSxClient](#fsxclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_file_system_aliases](#associate_file_system_aliases)
-    - [can_paginate](#can_paginate)
-    - [cancel_data_repository_task](#cancel_data_repository_task)
-    - [copy_backup](#copy_backup)
-    - [create_backup](#create_backup)
-    - [create_data_repository_association](#create_data_repository_association)
-    - [create_data_repository_task](#create_data_repository_task)
-    - [create_file_system](#create_file_system)
-    - [create_file_system_from_backup](#create_file_system_from_backup)
-    - [create_snapshot](#create_snapshot)
-    - [create_storage_virtual_machine](#create_storage_virtual_machine)
-    - [create_volume](#create_volume)
-    - [create_volume_from_backup](#create_volume_from_backup)
-    - [delete_backup](#delete_backup)
-    - [delete_data_repository_association](#delete_data_repository_association)
-    - [delete_file_system](#delete_file_system)
-    - [delete_snapshot](#delete_snapshot)
-    - [delete_storage_virtual_machine](#delete_storage_virtual_machine)
-    - [delete_volume](#delete_volume)
-    - [describe_backups](#describe_backups)
-    - [describe_data_repository_associations](#describe_data_repository_associations)
-    - [describe_data_repository_tasks](#describe_data_repository_tasks)
-    - [describe_file_system_aliases](#describe_file_system_aliases)
-    - [describe_file_systems](#describe_file_systems)
-    - [describe_snapshots](#describe_snapshots)
-    - [describe_storage_virtual_machines](#describe_storage_virtual_machines)
-    - [describe_volumes](#describe_volumes)
-    - [disassociate_file_system_aliases](#disassociate_file_system_aliases)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [release_file_system_nfs_v3_locks](#release_file_system_nfs_v3_locks)
-    - [restore_volume_from_snapshot](#restore_volume_from_snapshot)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_data_repository_association](#update_data_repository_association)
-    - [update_file_system](#update_file_system)
-    - [update_snapshot](#update_snapshot)
-    - [update_storage_virtual_machine](#update_storage_virtual_machine)
-    - [update_volume](#update_volume)
-    - [get_paginator](#get_paginator)
-
-<a id="fsxclient"></a>
+    Auto-generated documentation for [FSx](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx)
+    type annotations stubs module [mypy-boto3-fsx](https://pypi.org/project/mypy-boto3-fsx/).
 
 ## FSxClient
 
-Type annotations for `boto3.client("fsx")`
+Type annotations and code completion for `#!python boto3.client("fsx")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_fsx.client import FSxClient
 
@@ -71,1095 +20,1399 @@ def get_fsx_client() -> FSxClient:
     return Session().client("fsx")
 ```
 
-Boto3 documentation:
-[FSx.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("fsx").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("fsx")
+
+try:
+    do_something(client)
+except (
+    client.ActiveDirectoryError,
+    client.BackupBeingCopied,
+    client.BackupInProgress,
+    client.BackupNotFound,
+    client.BackupRestoring,
+    client.BadRequest,
+    client.ClientError,
+    client.DataRepositoryAssociationNotFound,
+    client.DataRepositoryTaskEnded,
+    client.DataRepositoryTaskExecuting,
+    client.DataRepositoryTaskNotFound,
+    client.FileSystemNotFound,
+    client.IncompatibleParameterError,
+    client.IncompatibleRegionForMultiAZ,
+    client.InternalServerError,
+    client.InvalidDataRepositoryType,
+    client.InvalidDestinationKmsKey,
+    client.InvalidExportPath,
+    client.InvalidImportPath,
+    client.InvalidNetworkSettings,
+    client.InvalidPerUnitStorageThroughput,
+    client.InvalidRegion,
+    client.InvalidSourceKmsKey,
+    client.MissingFileSystemConfiguration,
+    client.MissingVolumeConfiguration,
+    client.NotServiceResourceError,
+    client.ResourceDoesNotSupportTagging,
+    client.ResourceNotFound,
+    client.ServiceLimitExceeded,
+    client.SnapshotNotFound,
+    client.SourceBackupUnavailable,
+    client.StorageVirtualMachineNotFound,
+    client.UnsupportedOperation,
+    client.VolumeNotFound,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_fsx.client import Exceptions
 
 def handle_error(exc: Exceptions.ActiveDirectoryError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ActiveDirectoryError`
-- `Exceptions.BackupBeingCopied`
-- `Exceptions.BackupInProgress`
-- `Exceptions.BackupNotFound`
-- `Exceptions.BackupRestoring`
-- `Exceptions.BadRequest`
-- `Exceptions.ClientError`
-- `Exceptions.DataRepositoryAssociationNotFound`
-- `Exceptions.DataRepositoryTaskEnded`
-- `Exceptions.DataRepositoryTaskExecuting`
-- `Exceptions.DataRepositoryTaskNotFound`
-- `Exceptions.FileSystemNotFound`
-- `Exceptions.IncompatibleParameterError`
-- `Exceptions.IncompatibleRegionForMultiAZ`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidDataRepositoryType`
-- `Exceptions.InvalidDestinationKmsKey`
-- `Exceptions.InvalidExportPath`
-- `Exceptions.InvalidImportPath`
-- `Exceptions.InvalidNetworkSettings`
-- `Exceptions.InvalidPerUnitStorageThroughput`
-- `Exceptions.InvalidRegion`
-- `Exceptions.InvalidSourceKmsKey`
-- `Exceptions.MissingFileSystemConfiguration`
-- `Exceptions.MissingVolumeConfiguration`
-- `Exceptions.NotServiceResourceError`
-- `Exceptions.ResourceDoesNotSupportTagging`
-- `Exceptions.ResourceNotFound`
-- `Exceptions.ServiceLimitExceeded`
-- `Exceptions.SnapshotNotFound`
-- `Exceptions.SourceBackupUnavailable`
-- `Exceptions.StorageVirtualMachineNotFound`
-- `Exceptions.UnsupportedOperation`
-- `Exceptions.VolumeNotFound`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-FSxClient exceptions.
-
-Type annotations for `boto3.client("fsx").exceptions` method.
-
-Boto3 documentation:
-[FSx.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_file\_system\_aliases"></a>
-
-### associate_file_system_aliases
+### associate\_file\_system\_aliases
 
 Use this action to associate one or more Domain Name Server (DNS) aliases with
 an existing Amazon FSx for Windows File Server file system.
 
-Type annotations for `boto3.client("fsx").associate_file_system_aliases`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").associate_file_system_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
 
-Boto3 documentation:
-[FSx.Client.associate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.associate_file_system_aliases)
+```python title="Method definition"
+def associate_file_system_aliases(
+    self,
+    *,
+    FileSystemId: str,
+    Aliases: Sequence[str],
+    ClientRequestToken: str = ...,
+) -> AssociateFileSystemAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#associatefilesystemaliasesrequestrequesttypedef).
+1. See [:material-code-braces: AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `Aliases`: `Sequence`\[`str`\] *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateFileSystemAliasesRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "Aliases": ...,
+}
 
-Returns
-[AssociateFileSystemAliasesResponseTypeDef](./type_defs.md#associatefilesystemaliasesresponsetypedef).
+parent.associate_file_system_aliases(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#associatefilesystemaliasesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("fsx").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("fsx").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.can_paginate)
 
-Boto3 documentation:
-[FSx.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_data\_repository\_task"></a>
-
-### cancel_data_repository_task
+### cancel\_data\_repository\_task
 
 Cancels an existing Amazon FSx for Lustre data repository task if that task is
 in either the `PENDING` or `EXECUTING` state.
 
-Type annotations for `boto3.client("fsx").cancel_data_repository_task` method.
+Type annotations and code completion for `#!python boto3.client("fsx").cancel_data_repository_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
 
-Boto3 documentation:
-[FSx.Client.cancel_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.cancel_data_repository_task)
+```python title="Method definition"
+def cancel_data_repository_task(
+    self,
+    *,
+    TaskId: str,
+) -> CancelDataRepositoryTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequestrequesttypedef).
+1. See [:material-code-braces: CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelDataRepositoryTaskRequestRequestTypeDef = {  # (1)
+    "TaskId": ...,
+}
 
-Returns
-[CancelDataRepositoryTaskResponseTypeDef](./type_defs.md#canceldatarepositorytaskresponsetypedef).
+parent.cancel_data_repository_task(**kwargs)
+```
 
-<a id="copy\_backup"></a>
+1. See [:material-code-braces: CancelDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#canceldatarepositorytaskrequestrequesttypedef) 
 
-### copy_backup
+### copy\_backup
 
-Copies an existing backup within the same Amazon Web Services account to
-another Amazon Web Services Region (cross-Region copy) or within the same
-Amazon Web Services Region (in-Region copy).
+Copies an existing backup within the same Amazon Web Services account to another
+Amazon Web Services Region (cross-Region copy) or within the same Amazon Web
+Services Region (in-Region copy).
 
-Type annotations for `boto3.client("fsx").copy_backup` method.
+Type annotations and code completion for `#!python boto3.client("fsx").copy_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
 
-Boto3 documentation:
-[FSx.Client.copy_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.copy_backup)
+```python title="Method definition"
+def copy_backup(
+    self,
+    *,
+    SourceBackupId: str,
+    ClientRequestToken: str = ...,
+    SourceRegion: str = ...,
+    KmsKeyId: str = ...,
+    CopyTags: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopyBackupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyBackupRequestRequestTypeDef](./type_defs.md#copybackuprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceBackupId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `SourceRegion`: `str`
-- `KmsKeyId`: `str`
-- `CopyTags`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopyBackupRequestRequestTypeDef = {  # (1)
+    "SourceBackupId": ...,
+}
 
-Returns [CopyBackupResponseTypeDef](./type_defs.md#copybackupresponsetypedef).
+parent.copy_backup(**kwargs)
+```
 
-<a id="create\_backup"></a>
+1. See [:material-code-braces: CopyBackupRequestRequestTypeDef](./type_defs.md#copybackuprequestrequesttypedef) 
 
-### create_backup
+### create\_backup
 
 Creates a backup of an existing Amazon FSx for Windows File Server file system,
-Amazon FSx for Lustre file system, Amazon FSx for NetApp ONTAP volume, or
-Amazon FSx for OpenZFS file system.
+Amazon FSx for Lustre file system, Amazon FSx for NetApp ONTAP volume, or Amazon
+FSx for OpenZFS file system.
 
-Type annotations for `boto3.client("fsx").create_backup` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
 
-Boto3 documentation:
-[FSx.Client.create_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_backup)
+```python title="Method definition"
+def create_backup(
+    self,
+    *,
+    FileSystemId: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    VolumeId: str = ...,
+) -> CreateBackupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackupRequestRequestTypeDef](./type_defs.md#createbackuprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VolumeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackupRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[CreateBackupResponseTypeDef](./type_defs.md#createbackupresponsetypedef).
+parent.create_backup(**kwargs)
+```
 
-<a id="create\_data\_repository\_association"></a>
+1. See [:material-code-braces: CreateBackupRequestRequestTypeDef](./type_defs.md#createbackuprequestrequesttypedef) 
 
-### create_data_repository_association
+### create\_data\_repository\_association
 
 Creates an Amazon FSx for Lustre data repository association (DRA).
 
-Type annotations for `boto3.client("fsx").create_data_repository_association`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_data_repository_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_association)
 
-Boto3 documentation:
-[FSx.Client.create_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_association)
+```python title="Method definition"
+def create_data_repository_association(
+    self,
+    *,
+    FileSystemId: str,
+    FileSystemPath: str,
+    DataRepositoryPath: str,
+    BatchImportMetaDataOnCreate: bool = ...,
+    ImportedFileChunkSize: int = ...,
+    S3: S3DataRepositoryConfigurationTypeDef = ...,  # (1)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDataRepositoryAssociationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#createdatarepositoryassociationrequestrequesttypedef).
+1. See [:material-code-braces: S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDataRepositoryAssociationResponseTypeDef](./type_defs.md#createdatarepositoryassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `FileSystemPath`: `str` *(required)*
-- `DataRepositoryPath`: `str` *(required)*
-- `BatchImportMetaDataOnCreate`: `bool`
-- `ImportedFileChunkSize`: `int`
-- `S3`:
-  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataRepositoryAssociationRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "FileSystemPath": ...,
+    "DataRepositoryPath": ...,
+}
 
-Returns
-[CreateDataRepositoryAssociationResponseTypeDef](./type_defs.md#createdatarepositoryassociationresponsetypedef).
+parent.create_data_repository_association(**kwargs)
+```
 
-<a id="create\_data\_repository\_task"></a>
+1. See [:material-code-braces: CreateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#createdatarepositoryassociationrequestrequesttypedef) 
 
-### create_data_repository_task
+### create\_data\_repository\_task
 
 Creates an Amazon FSx for Lustre data repository task.
 
-Type annotations for `boto3.client("fsx").create_data_repository_task` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_data_repository_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
 
-Boto3 documentation:
-[FSx.Client.create_data_repository_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_data_repository_task)
+```python title="Method definition"
+def create_data_repository_task(
+    self,
+    *,
+    Type: DataRepositoryTaskTypeType,  # (1)
+    FileSystemId: str,
+    Report: CompletionReportTypeDef,  # (2)
+    Paths: Sequence[str] = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDataRepositoryTaskResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#createdatarepositorytaskrequestrequesttypedef).
+1. See [:material-code-brackets: DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype) 
+2. See [:material-code-braces: CompletionReportTypeDef](./type_defs.md#completionreporttypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`:
-  [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
-  *(required)*
-- `FileSystemId`: `str` *(required)*
-- `Report`: [CompletionReportTypeDef](./type_defs.md#completionreporttypedef)
-  *(required)*
-- `Paths`: `Sequence`\[`str`\]
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataRepositoryTaskRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+    "FileSystemId": ...,
+    "Report": ...,
+}
 
-Returns
-[CreateDataRepositoryTaskResponseTypeDef](./type_defs.md#createdatarepositorytaskresponsetypedef).
+parent.create_data_repository_task(**kwargs)
+```
 
-<a id="create\_file\_system"></a>
+1. See [:material-code-braces: CreateDataRepositoryTaskRequestRequestTypeDef](./type_defs.md#createdatarepositorytaskrequestrequesttypedef) 
 
-### create_file_system
+### create\_file\_system
 
 Creates a new, empty Amazon FSx file system.
 
-Type annotations for `boto3.client("fsx").create_file_system` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
 
-Boto3 documentation:
-[FSx.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system)
+```python title="Method definition"
+def create_file_system(
+    self,
+    *,
+    FileSystemType: FileSystemTypeType,  # (1)
+    StorageCapacity: int,
+    SubnetIds: Sequence[str],
+    ClientRequestToken: str = ...,
+    StorageType: StorageTypeType = ...,  # (2)
+    SecurityGroupIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    KmsKeyId: str = ...,
+    WindowsConfiguration: CreateFileSystemWindowsConfigurationTypeDef = ...,  # (4)
+    LustreConfiguration: CreateFileSystemLustreConfigurationTypeDef = ...,  # (5)
+    OntapConfiguration: CreateFileSystemOntapConfigurationTypeDef = ...,  # (6)
+    FileSystemTypeVersion: str = ...,
+    OpenZFSConfiguration: CreateFileSystemOpenZFSConfigurationTypeDef = ...,  # (7)
+) -> CreateFileSystemResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef).
+1. See [:material-code-brackets: FileSystemTypeType](./literals.md#filesystemtypetype) 
+2. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef) 
+5. See [:material-code-braces: CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef) 
+6. See [:material-code-braces: CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef) 
+7. See [:material-code-braces: CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef) 
+8. See [:material-code-braces: CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemType`: [FileSystemTypeType](./literals.md#filesystemtypetype)
-  *(required)*
-- `StorageCapacity`: `int` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `ClientRequestToken`: `str`
-- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `WindowsConfiguration`:
-  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
-- `LustreConfiguration`:
-  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
-- `OntapConfiguration`:
-  [CreateFileSystemOntapConfigurationTypeDef](./type_defs.md#createfilesystemontapconfigurationtypedef)
-- `FileSystemTypeVersion`: `str`
-- `OpenZFSConfiguration`:
-  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateFileSystemRequestRequestTypeDef = {  # (1)
+    "FileSystemType": ...,
+    "StorageCapacity": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateFileSystemResponseTypeDef](./type_defs.md#createfilesystemresponsetypedef).
+parent.create_file_system(**kwargs)
+```
 
-<a id="create\_file\_system\_from\_backup"></a>
+1. See [:material-code-braces: CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef) 
 
-### create_file_system_from_backup
+### create\_file\_system\_from\_backup
 
 Creates a new Amazon FSx for Lustre, Amazon FSx for Windows File Server, or
 Amazon FSx for OpenZFS file system from an existing Amazon FSx backup.
 
-Type annotations for `boto3.client("fsx").create_file_system_from_backup`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_file_system_from_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
 
-Boto3 documentation:
-[FSx.Client.create_file_system_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_file_system_from_backup)
+```python title="Method definition"
+def create_file_system_from_backup(
+    self,
+    *,
+    BackupId: str,
+    SubnetIds: Sequence[str],
+    ClientRequestToken: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    WindowsConfiguration: CreateFileSystemWindowsConfigurationTypeDef = ...,  # (2)
+    LustreConfiguration: CreateFileSystemLustreConfigurationTypeDef = ...,  # (3)
+    StorageType: StorageTypeType = ...,  # (4)
+    KmsKeyId: str = ...,
+    FileSystemTypeVersion: str = ...,
+    OpenZFSConfiguration: CreateFileSystemOpenZFSConfigurationTypeDef = ...,  # (5)
+) -> CreateFileSystemFromBackupResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateFileSystemFromBackupRequestRequestTypeDef](./type_defs.md#createfilesystemfrombackuprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef) 
+3. See [:material-code-braces: CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef) 
+4. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+5. See [:material-code-braces: CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef) 
+6. See [:material-code-braces: CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BackupId`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `ClientRequestToken`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `WindowsConfiguration`:
-  [CreateFileSystemWindowsConfigurationTypeDef](./type_defs.md#createfilesystemwindowsconfigurationtypedef)
-- `LustreConfiguration`:
-  [CreateFileSystemLustreConfigurationTypeDef](./type_defs.md#createfilesystemlustreconfigurationtypedef)
-- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-- `KmsKeyId`: `str`
-- `FileSystemTypeVersion`: `str`
-- `OpenZFSConfiguration`:
-  [CreateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#createfilesystemopenzfsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateFileSystemFromBackupRequestRequestTypeDef = {  # (1)
+    "BackupId": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateFileSystemFromBackupResponseTypeDef](./type_defs.md#createfilesystemfrombackupresponsetypedef).
+parent.create_file_system_from_backup(**kwargs)
+```
 
-<a id="create\_snapshot"></a>
+1. See [:material-code-braces: CreateFileSystemFromBackupRequestRequestTypeDef](./type_defs.md#createfilesystemfrombackuprequestrequesttypedef) 
 
-### create_snapshot
+### create\_snapshot
 
 Creates a snapshot of an existing Amazon FSx for OpenZFS volume.
 
-Type annotations for `boto3.client("fsx").create_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_snapshot)
 
-Boto3 documentation:
-[FSx.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_snapshot)
+```python title="Method definition"
+def create_snapshot(
+    self,
+    *,
+    Name: str,
+    VolumeId: str,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSnapshotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `VolumeId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "VolumeId": ...,
+}
 
-Returns
-[CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
+parent.create_snapshot(**kwargs)
+```
 
-<a id="create\_storage\_virtual\_machine"></a>
+1. See [:material-code-braces: CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef) 
 
-### create_storage_virtual_machine
+### create\_storage\_virtual\_machine
 
-Creates a storage virtual machine (SVM) for an Amazon FSx for ONTAP file
-system.
+Creates a storage virtual machine (SVM) for an Amazon FSx for ONTAP file system.
 
-Type annotations for `boto3.client("fsx").create_storage_virtual_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_storage_virtual_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_storage_virtual_machine)
 
-Boto3 documentation:
-[FSx.Client.create_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_storage_virtual_machine)
+```python title="Method definition"
+def create_storage_virtual_machine(
+    self,
+    *,
+    FileSystemId: str,
+    Name: str,
+    ActiveDirectoryConfiguration: CreateSvmActiveDirectoryConfigurationTypeDef = ...,  # (1)
+    ClientRequestToken: str = ...,
+    SvmAdminPassword: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    RootVolumeSecurityStyle: StorageVirtualMachineRootVolumeSecurityStyleType = ...,  # (3)
+) -> CreateStorageVirtualMachineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#createstoragevirtualmachinerequestrequesttypedef).
+1. See [:material-code-braces: CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype) 
+4. See [:material-code-braces: CreateStorageVirtualMachineResponseTypeDef](./type_defs.md#createstoragevirtualmachineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ActiveDirectoryConfiguration`:
-  [CreateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#createsvmactivedirectoryconfigurationtypedef)
-- `ClientRequestToken`: `str`
-- `SvmAdminPassword`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RootVolumeSecurityStyle`:
-  [StorageVirtualMachineRootVolumeSecurityStyleType](./literals.md#storagevirtualmachinerootvolumesecuritystyletype)
+```python title="Usage example with kwargs"
+kwargs: CreateStorageVirtualMachineRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateStorageVirtualMachineResponseTypeDef](./type_defs.md#createstoragevirtualmachineresponsetypedef).
+parent.create_storage_virtual_machine(**kwargs)
+```
 
-<a id="create\_volume"></a>
+1. See [:material-code-braces: CreateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#createstoragevirtualmachinerequestrequesttypedef) 
 
-### create_volume
+### create\_volume
 
 Creates an FSx for ONTAP or Amazon FSx for OpenZFS storage volume.
 
-Type annotations for `boto3.client("fsx").create_volume` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume)
 
-Boto3 documentation:
-[FSx.Client.create_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume)
+```python title="Method definition"
+def create_volume(
+    self,
+    *,
+    VolumeType: VolumeTypeType,  # (1)
+    Name: str,
+    ClientRequestToken: str = ...,
+    OntapConfiguration: CreateOntapVolumeConfigurationTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    OpenZFSConfiguration: CreateOpenZFSVolumeConfigurationTypeDef = ...,  # (4)
+) -> CreateVolumeResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateVolumeRequestRequestTypeDef](./type_defs.md#createvolumerequestrequesttypedef).
+1. See [:material-code-brackets: VolumeTypeType](./literals.md#volumetypetype) 
+2. See [:material-code-braces: CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#createopenzfsvolumeconfigurationtypedef) 
+5. See [:material-code-braces: CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeType`: [VolumeTypeType](./literals.md#volumetypetype) *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `OntapConfiguration`:
-  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OpenZFSConfiguration`:
-  [CreateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#createopenzfsvolumeconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateVolumeRequestRequestTypeDef = {  # (1)
+    "VolumeType": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateVolumeResponseTypeDef](./type_defs.md#createvolumeresponsetypedef).
+parent.create_volume(**kwargs)
+```
 
-<a id="create\_volume\_from\_backup"></a>
+1. See [:material-code-braces: CreateVolumeRequestRequestTypeDef](./type_defs.md#createvolumerequestrequesttypedef) 
 
-### create_volume_from_backup
+### create\_volume\_from\_backup
 
 Creates a new Amazon FSx for NetApp ONTAP volume from an existing Amazon FSx
 volume backup.
 
-Type annotations for `boto3.client("fsx").create_volume_from_backup` method.
+Type annotations and code completion for `#!python boto3.client("fsx").create_volume_from_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume_from_backup)
 
-Boto3 documentation:
-[FSx.Client.create_volume_from_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.create_volume_from_backup)
+```python title="Method definition"
+def create_volume_from_backup(
+    self,
+    *,
+    BackupId: str,
+    Name: str,
+    ClientRequestToken: str = ...,
+    OntapConfiguration: CreateOntapVolumeConfigurationTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateVolumeFromBackupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVolumeFromBackupRequestRequestTypeDef](./type_defs.md#createvolumefrombackuprequestrequesttypedef).
+1. See [:material-code-braces: CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateVolumeFromBackupResponseTypeDef](./type_defs.md#createvolumefrombackupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BackupId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `OntapConfiguration`:
-  [CreateOntapVolumeConfigurationTypeDef](./type_defs.md#createontapvolumeconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVolumeFromBackupRequestRequestTypeDef = {  # (1)
+    "BackupId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateVolumeFromBackupResponseTypeDef](./type_defs.md#createvolumefrombackupresponsetypedef).
+parent.create_volume_from_backup(**kwargs)
+```
 
-<a id="delete\_backup"></a>
+1. See [:material-code-braces: CreateVolumeFromBackupRequestRequestTypeDef](./type_defs.md#createvolumefrombackuprequestrequesttypedef) 
 
-### delete_backup
+### delete\_backup
 
 Deletes an Amazon FSx backup.
 
-Type annotations for `boto3.client("fsx").delete_backup` method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_backup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
 
-Boto3 documentation:
-[FSx.Client.delete_backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_backup)
+```python title="Method definition"
+def delete_backup(
+    self,
+    *,
+    BackupId: str,
+    ClientRequestToken: str = ...,
+) -> DeleteBackupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef).
+1. See [:material-code-braces: DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BackupId`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteBackupRequestRequestTypeDef = {  # (1)
+    "BackupId": ...,
+}
 
-Returns
-[DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
+parent.delete_backup(**kwargs)
+```
 
-<a id="delete\_data\_repository\_association"></a>
+1. See [:material-code-braces: DeleteBackupRequestRequestTypeDef](./type_defs.md#deletebackuprequestrequesttypedef) 
 
-### delete_data_repository_association
+### delete\_data\_repository\_association
 
 Deletes a data repository association on an Amazon FSx for Lustre file system.
 
-Type annotations for `boto3.client("fsx").delete_data_repository_association`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_data_repository_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_data_repository_association)
 
-Boto3 documentation:
-[FSx.Client.delete_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_data_repository_association)
+```python title="Method definition"
+def delete_data_repository_association(
+    self,
+    *,
+    AssociationId: str,
+    DeleteDataInFileSystem: bool,
+    ClientRequestToken: str = ...,
+) -> DeleteDataRepositoryAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#deletedatarepositoryassociationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDataRepositoryAssociationResponseTypeDef](./type_defs.md#deletedatarepositoryassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssociationId`: `str` *(required)*
-- `DeleteDataInFileSystem`: `bool` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDataRepositoryAssociationRequestRequestTypeDef = {  # (1)
+    "AssociationId": ...,
+    "DeleteDataInFileSystem": ...,
+}
 
-Returns
-[DeleteDataRepositoryAssociationResponseTypeDef](./type_defs.md#deletedatarepositoryassociationresponsetypedef).
+parent.delete_data_repository_association(**kwargs)
+```
 
-<a id="delete\_file\_system"></a>
+1. See [:material-code-braces: DeleteDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#deletedatarepositoryassociationrequestrequesttypedef) 
 
-### delete_file_system
+### delete\_file\_system
 
 Deletes a file system.
 
-Type annotations for `boto3.client("fsx").delete_file_system` method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
 
-Boto3 documentation:
-[FSx.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_file_system)
+```python title="Method definition"
+def delete_file_system(
+    self,
+    *,
+    FileSystemId: str,
+    ClientRequestToken: str = ...,
+    WindowsConfiguration: DeleteFileSystemWindowsConfigurationTypeDef = ...,  # (1)
+    LustreConfiguration: DeleteFileSystemLustreConfigurationTypeDef = ...,  # (2)
+    OpenZFSConfiguration: DeleteFileSystemOpenZFSConfigurationTypeDef = ...,  # (3)
+) -> DeleteFileSystemResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef) 
+2. See [:material-code-braces: DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef) 
+3. See [:material-code-braces: DeleteFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#deletefilesystemopenzfsconfigurationtypedef) 
+4. See [:material-code-braces: DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `WindowsConfiguration`:
-  [DeleteFileSystemWindowsConfigurationTypeDef](./type_defs.md#deletefilesystemwindowsconfigurationtypedef)
-- `LustreConfiguration`:
-  [DeleteFileSystemLustreConfigurationTypeDef](./type_defs.md#deletefilesystemlustreconfigurationtypedef)
-- `OpenZFSConfiguration`:
-  [DeleteFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#deletefilesystemopenzfsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteFileSystemRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[DeleteFileSystemResponseTypeDef](./type_defs.md#deletefilesystemresponsetypedef).
+parent.delete_file_system(**kwargs)
+```
 
-<a id="delete\_snapshot"></a>
+1. See [:material-code-braces: DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef) 
 
-### delete_snapshot
+### delete\_snapshot
 
 Deletes an Amazon FSx for OpenZFS snapshot.
 
-Type annotations for `boto3.client("fsx").delete_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_snapshot)
 
-Boto3 documentation:
-[FSx.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_snapshot)
+```python title="Method definition"
+def delete_snapshot(
+    self,
+    *,
+    SnapshotId: str,
+    ClientRequestToken: str = ...,
+) -> DeleteSnapshotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSnapshotRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+}
 
-Returns
-[DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef).
+parent.delete_snapshot(**kwargs)
+```
 
-<a id="delete\_storage\_virtual\_machine"></a>
+1. See [:material-code-braces: DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef) 
 
-### delete_storage_virtual_machine
+### delete\_storage\_virtual\_machine
 
 Deletes an existing Amazon FSx for ONTAP storage virtual machine (SVM).
 
-Type annotations for `boto3.client("fsx").delete_storage_virtual_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_storage_virtual_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_storage_virtual_machine)
 
-Boto3 documentation:
-[FSx.Client.delete_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_storage_virtual_machine)
+```python title="Method definition"
+def delete_storage_virtual_machine(
+    self,
+    *,
+    StorageVirtualMachineId: str,
+    ClientRequestToken: str = ...,
+) -> DeleteStorageVirtualMachineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#deletestoragevirtualmachinerequestrequesttypedef).
+1. See [:material-code-braces: DeleteStorageVirtualMachineResponseTypeDef](./type_defs.md#deletestoragevirtualmachineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StorageVirtualMachineId`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStorageVirtualMachineRequestRequestTypeDef = {  # (1)
+    "StorageVirtualMachineId": ...,
+}
 
-Returns
-[DeleteStorageVirtualMachineResponseTypeDef](./type_defs.md#deletestoragevirtualmachineresponsetypedef).
+parent.delete_storage_virtual_machine(**kwargs)
+```
 
-<a id="delete\_volume"></a>
+1. See [:material-code-braces: DeleteStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#deletestoragevirtualmachinerequestrequesttypedef) 
 
-### delete_volume
+### delete\_volume
 
 Deletes an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS volume.
 
-Type annotations for `boto3.client("fsx").delete_volume` method.
+Type annotations and code completion for `#!python boto3.client("fsx").delete_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_volume)
 
-Boto3 documentation:
-[FSx.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.delete_volume)
+```python title="Method definition"
+def delete_volume(
+    self,
+    *,
+    VolumeId: str,
+    ClientRequestToken: str = ...,
+    OntapConfiguration: DeleteVolumeOntapConfigurationTypeDef = ...,  # (1)
+    OpenZFSConfiguration: DeleteVolumeOpenZFSConfigurationTypeDef = ...,  # (2)
+) -> DeleteVolumeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVolumeRequestRequestTypeDef](./type_defs.md#deletevolumerequestrequesttypedef).
+1. See [:material-code-braces: DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef) 
+2. See [:material-code-braces: DeleteVolumeOpenZFSConfigurationTypeDef](./type_defs.md#deletevolumeopenzfsconfigurationtypedef) 
+3. See [:material-code-braces: DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `OntapConfiguration`:
-  [DeleteVolumeOntapConfigurationTypeDef](./type_defs.md#deletevolumeontapconfigurationtypedef)
-- `OpenZFSConfiguration`:
-  [DeleteVolumeOpenZFSConfigurationTypeDef](./type_defs.md#deletevolumeopenzfsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteVolumeRequestRequestTypeDef = {  # (1)
+    "VolumeId": ...,
+}
 
-Returns
-[DeleteVolumeResponseTypeDef](./type_defs.md#deletevolumeresponsetypedef).
+parent.delete_volume(**kwargs)
+```
 
-<a id="describe\_backups"></a>
+1. See [:material-code-braces: DeleteVolumeRequestRequestTypeDef](./type_defs.md#deletevolumerequestrequesttypedef) 
 
-### describe_backups
+### describe\_backups
 
 Returns the description of a specific Amazon FSx backup, if a `BackupIds` value
 is provided for that backup.
 
-Type annotations for `boto3.client("fsx").describe_backups` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_backups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
 
-Boto3 documentation:
-[FSx.Client.describe_backups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_backups)
+```python title="Method definition"
+def describe_backups(
+    self,
+    *,
+    BackupIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeBackupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BackupIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeBackupsRequestRequestTypeDef = {  # (1)
+    "BackupIds": ...,
+}
 
-Returns
-[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
+parent.describe_backups(**kwargs)
+```
 
-<a id="describe\_data\_repository\_associations"></a>
+1. See [:material-code-braces: DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef) 
 
-### describe_data_repository_associations
+### describe\_data\_repository\_associations
 
 Returns the description of specific Amazon FSx for Lustre data repository
 associations, if one or more `AssociationIds` values are provided in the
 request, or if filters are used in the request.
 
-Type annotations for
-`boto3.client("fsx").describe_data_repository_associations` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_data_repository_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_associations)
 
-Boto3 documentation:
-[FSx.Client.describe_data_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_associations)
+```python title="Method definition"
+def describe_data_repository_associations(
+    self,
+    *,
+    AssociationIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDataRepositoryAssociationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#describedatarepositoryassociationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeDataRepositoryAssociationsResponseTypeDef](./type_defs.md#describedatarepositoryassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssociationIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDataRepositoryAssociationsRequestRequestTypeDef = {  # (1)
+    "AssociationIds": ...,
+}
 
-Returns
-[DescribeDataRepositoryAssociationsResponseTypeDef](./type_defs.md#describedatarepositoryassociationsresponsetypedef).
+parent.describe_data_repository_associations(**kwargs)
+```
 
-<a id="describe\_data\_repository\_tasks"></a>
+1. See [:material-code-braces: DescribeDataRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#describedatarepositoryassociationsrequestrequesttypedef) 
 
-### describe_data_repository_tasks
+### describe\_data\_repository\_tasks
 
-Returns the description of specific Amazon FSx for Lustre data repository
-tasks, if one or more `TaskIds` values are provided in the request, or if
-filters are used in the request.
+Returns the description of specific Amazon FSx for Lustre data repository tasks,
+if one or more `TaskIds` values are provided in the request, or if filters are
+used in the request.
 
-Type annotations for `boto3.client("fsx").describe_data_repository_tasks`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_data_repository_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
 
-Boto3 documentation:
-[FSx.Client.describe_data_repository_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_data_repository_tasks)
+```python title="Method definition"
+def describe_data_repository_tasks(
+    self,
+    *,
+    TaskIds: Sequence[str] = ...,
+    Filters: Sequence[DataRepositoryTaskFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDataRepositoryTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataRepositoryTasksRequestRequestTypeDef](./type_defs.md#describedatarepositorytasksrequestrequesttypedef).
+1. See [:material-code-braces: DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef) 
+2. See [:material-code-braces: DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskIds`: `Sequence`\[`str`\]
-- `Filters`:
-  `Sequence`\[[DataRepositoryTaskFilterTypeDef](./type_defs.md#datarepositorytaskfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDataRepositoryTasksRequestRequestTypeDef = {  # (1)
+    "TaskIds": ...,
+}
 
-Returns
-[DescribeDataRepositoryTasksResponseTypeDef](./type_defs.md#describedatarepositorytasksresponsetypedef).
+parent.describe_data_repository_tasks(**kwargs)
+```
 
-<a id="describe\_file\_system\_aliases"></a>
+1. See [:material-code-braces: DescribeDataRepositoryTasksRequestRequestTypeDef](./type_defs.md#describedatarepositorytasksrequestrequesttypedef) 
 
-### describe_file_system_aliases
+### describe\_file\_system\_aliases
 
 Returns the DNS aliases that are associated with the specified Amazon FSx for
 Windows File Server file system.
 
-Type annotations for `boto3.client("fsx").describe_file_system_aliases` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_file_system_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
 
-Boto3 documentation:
-[FSx.Client.describe_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_system_aliases)
+```python title="Method definition"
+def describe_file_system_aliases(
+    self,
+    *,
+    FileSystemId: str,
+    ClientRequestToken: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeFileSystemAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFileSystemAliasesRequestRequestTypeDef](./type_defs.md#describefilesystemaliasesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFileSystemAliasesRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[DescribeFileSystemAliasesResponseTypeDef](./type_defs.md#describefilesystemaliasesresponsetypedef).
+parent.describe_file_system_aliases(**kwargs)
+```
 
-<a id="describe\_file\_systems"></a>
+1. See [:material-code-braces: DescribeFileSystemAliasesRequestRequestTypeDef](./type_defs.md#describefilesystemaliasesrequestrequesttypedef) 
 
-### describe_file_systems
+### describe\_file\_systems
 
 Returns the description of specific Amazon FSx file systems, if a
 `FileSystemIds` value is provided for that file system.
 
-Type annotations for `boto3.client("fsx").describe_file_systems` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_file_systems` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
 
-Boto3 documentation:
-[FSx.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_file_systems)
+```python title="Method definition"
+def describe_file_systems(
+    self,
+    *,
+    FileSystemIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeFileSystemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFileSystemsRequestRequestTypeDef = {  # (1)
+    "FileSystemIds": ...,
+}
 
-Returns
-[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+parent.describe_file_systems(**kwargs)
+```
 
-<a id="describe\_snapshots"></a>
+1. See [:material-code-braces: DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef) 
 
-### describe_snapshots
+### describe\_snapshots
 
 Returns the description of specific Amazon FSx for OpenZFS snapshots, if a
 `SnapshotIds` value is provided.
 
-Type annotations for `boto3.client("fsx").describe_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_snapshots)
 
-Boto3 documentation:
-[FSx.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_snapshots)
+```python title="Method definition"
+def describe_snapshots(
+    self,
+    *,
+    SnapshotIds: Sequence[str] = ...,
+    Filters: Sequence[SnapshotFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeSnapshotsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: SnapshotFilterTypeDef](./type_defs.md#snapshotfiltertypedef) 
+2. See [:material-code-braces: DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotIds`: `Sequence`\[`str`\]
-- `Filters`:
-  `Sequence`\[[SnapshotFilterTypeDef](./type_defs.md#snapshotfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsRequestRequestTypeDef = {  # (1)
+    "SnapshotIds": ...,
+}
 
-Returns
-[DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef).
+parent.describe_snapshots(**kwargs)
+```
 
-<a id="describe\_storage\_virtual\_machines"></a>
+1. See [:material-code-braces: DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef) 
 
-### describe_storage_virtual_machines
+### describe\_storage\_virtual\_machines
 
 Describes one or more Amazon FSx for NetApp ONTAP storage virtual machines
 (SVMs).
 
-Type annotations for `boto3.client("fsx").describe_storage_virtual_machines`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_storage_virtual_machines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_storage_virtual_machines)
 
-Boto3 documentation:
-[FSx.Client.describe_storage_virtual_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_storage_virtual_machines)
+```python title="Method definition"
+def describe_storage_virtual_machines(
+    self,
+    *,
+    StorageVirtualMachineIds: Sequence[str] = ...,
+    Filters: Sequence[StorageVirtualMachineFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeStorageVirtualMachinesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStorageVirtualMachinesRequestRequestTypeDef](./type_defs.md#describestoragevirtualmachinesrequestrequesttypedef).
+1. See [:material-code-braces: StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef) 
+2. See [:material-code-braces: DescribeStorageVirtualMachinesResponseTypeDef](./type_defs.md#describestoragevirtualmachinesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StorageVirtualMachineIds`: `Sequence`\[`str`\]
-- `Filters`:
-  `Sequence`\[[StorageVirtualMachineFilterTypeDef](./type_defs.md#storagevirtualmachinefiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeStorageVirtualMachinesRequestRequestTypeDef = {  # (1)
+    "StorageVirtualMachineIds": ...,
+}
 
-Returns
-[DescribeStorageVirtualMachinesResponseTypeDef](./type_defs.md#describestoragevirtualmachinesresponsetypedef).
+parent.describe_storage_virtual_machines(**kwargs)
+```
 
-<a id="describe\_volumes"></a>
+1. See [:material-code-braces: DescribeStorageVirtualMachinesRequestRequestTypeDef](./type_defs.md#describestoragevirtualmachinesrequestrequesttypedef) 
 
-### describe_volumes
+### describe\_volumes
 
 Describes one or more Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS
 volumes.
 
-Type annotations for `boto3.client("fsx").describe_volumes` method.
+Type annotations and code completion for `#!python boto3.client("fsx").describe_volumes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_volumes)
 
-Boto3 documentation:
-[FSx.Client.describe_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.describe_volumes)
+```python title="Method definition"
+def describe_volumes(
+    self,
+    *,
+    VolumeIds: Sequence[str] = ...,
+    Filters: Sequence[VolumeFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeVolumesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef).
+1. See [:material-code-braces: VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef) 
+2. See [:material-code-braces: DescribeVolumesResponseTypeDef](./type_defs.md#describevolumesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeIds`: `Sequence`\[`str`\]
-- `Filters`:
-  `Sequence`\[[VolumeFilterTypeDef](./type_defs.md#volumefiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVolumesRequestRequestTypeDef = {  # (1)
+    "VolumeIds": ...,
+}
 
-Returns
-[DescribeVolumesResponseTypeDef](./type_defs.md#describevolumesresponsetypedef).
+parent.describe_volumes(**kwargs)
+```
 
-<a id="disassociate\_file\_system\_aliases"></a>
+1. See [:material-code-braces: DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef) 
 
-### disassociate_file_system_aliases
+### disassociate\_file\_system\_aliases
 
 Use this action to disassociate, or remove, one or more Domain Name Service
 (DNS) aliases from an Amazon FSx for Windows File Server file system.
 
-Type annotations for `boto3.client("fsx").disassociate_file_system_aliases`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").disassociate_file_system_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
 
-Boto3 documentation:
-[FSx.Client.disassociate_file_system_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.disassociate_file_system_aliases)
+```python title="Method definition"
+def disassociate_file_system_aliases(
+    self,
+    *,
+    FileSystemId: str,
+    Aliases: Sequence[str],
+    ClientRequestToken: str = ...,
+) -> DisassociateFileSystemAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `Aliases`: `Sequence`\[`str`\] *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateFileSystemAliasesRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+    "Aliases": ...,
+}
 
-Returns
-[DisassociateFileSystemAliasesResponseTypeDef](./type_defs.md#disassociatefilesystemaliasesresponsetypedef).
+parent.disassociate_file_system_aliases(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateFileSystemAliasesRequestRequestTypeDef](./type_defs.md#disassociatefilesystemaliasesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("fsx").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("fsx").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.generate_presigned_url)
 
-Boto3 documentation:
-[FSx.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists tags for an Amazon FSx file systems and backups in the case of Amazon FSx
 for Windows File Server.
 
-Type annotations for `boto3.client("fsx").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("fsx").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[FSx.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="release\_file\_system\_nfs\_v3\_locks"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### release_file_system_nfs_v3_locks
+### release\_file\_system\_nfs\_v3\_locks
 
 Releases the file system lock from an Amazon FSx for OpenZFS file system.
 
-Type annotations for `boto3.client("fsx").release_file_system_nfs_v3_locks`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").release_file_system_nfs_v3_locks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.release_file_system_nfs_v3_locks)
 
-Boto3 documentation:
-[FSx.Client.release_file_system_nfs_v3_locks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.release_file_system_nfs_v3_locks)
+```python title="Method definition"
+def release_file_system_nfs_v3_locks(
+    self,
+    *,
+    FileSystemId: str,
+    ClientRequestToken: str = ...,
+) -> ReleaseFileSystemNfsV3LocksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReleaseFileSystemNfsV3LocksRequestRequestTypeDef](./type_defs.md#releasefilesystemnfsv3locksrequestrequesttypedef).
+1. See [:material-code-braces: ReleaseFileSystemNfsV3LocksResponseTypeDef](./type_defs.md#releasefilesystemnfsv3locksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ReleaseFileSystemNfsV3LocksRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[ReleaseFileSystemNfsV3LocksResponseTypeDef](./type_defs.md#releasefilesystemnfsv3locksresponsetypedef).
+parent.release_file_system_nfs_v3_locks(**kwargs)
+```
 
-<a id="restore\_volume\_from\_snapshot"></a>
+1. See [:material-code-braces: ReleaseFileSystemNfsV3LocksRequestRequestTypeDef](./type_defs.md#releasefilesystemnfsv3locksrequestrequesttypedef) 
 
-### restore_volume_from_snapshot
+### restore\_volume\_from\_snapshot
 
 Returns an Amazon FSx for OpenZFS volume to the state saved by the specified
 snapshot.
 
-Type annotations for `boto3.client("fsx").restore_volume_from_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("fsx").restore_volume_from_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.restore_volume_from_snapshot)
 
-Boto3 documentation:
-[FSx.Client.restore_volume_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.restore_volume_from_snapshot)
+```python title="Method definition"
+def restore_volume_from_snapshot(
+    self,
+    *,
+    VolumeId: str,
+    SnapshotId: str,
+    ClientRequestToken: str = ...,
+    Options: Sequence[RestoreOpenZFSVolumeOptionType] = ...,  # (1)
+) -> RestoreVolumeFromSnapshotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RestoreVolumeFromSnapshotRequestRequestTypeDef](./type_defs.md#restorevolumefromsnapshotrequestrequesttypedef).
+1. See [:material-code-brackets: RestoreOpenZFSVolumeOptionType](./literals.md#restoreopenzfsvolumeoptiontype) 
+2. See [:material-code-braces: RestoreVolumeFromSnapshotResponseTypeDef](./type_defs.md#restorevolumefromsnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeId`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `Options`:
-  `Sequence`\[[RestoreOpenZFSVolumeOptionType](./literals.md#restoreopenzfsvolumeoptiontype)\]
+```python title="Usage example with kwargs"
+kwargs: RestoreVolumeFromSnapshotRequestRequestTypeDef = {  # (1)
+    "VolumeId": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[RestoreVolumeFromSnapshotResponseTypeDef](./type_defs.md#restorevolumefromsnapshotresponsetypedef).
+parent.restore_volume_from_snapshot(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RestoreVolumeFromSnapshotRequestRequestTypeDef](./type_defs.md#restorevolumefromsnapshotrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags an Amazon FSx resource.
 
-Type annotations for `boto3.client("fsx").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fsx").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
 
-Boto3 documentation:
-[FSx.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 This action removes a tag from an Amazon FSx resource.
 
-Type annotations for `boto3.client("fsx").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("fsx").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
 
-Boto3 documentation:
-[FSx.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_data\_repository\_association"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_data_repository_association
+### update\_data\_repository\_association
 
 Updates the configuration of an existing data repository association on an
 Amazon FSx for Lustre file system.
 
-Type annotations for `boto3.client("fsx").update_data_repository_association`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").update_data_repository_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_data_repository_association)
 
-Boto3 documentation:
-[FSx.Client.update_data_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_data_repository_association)
+```python title="Method definition"
+def update_data_repository_association(
+    self,
+    *,
+    AssociationId: str,
+    ClientRequestToken: str = ...,
+    ImportedFileChunkSize: int = ...,
+    S3: S3DataRepositoryConfigurationTypeDef = ...,  # (1)
+) -> UpdateDataRepositoryAssociationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#updatedatarepositoryassociationrequestrequesttypedef).
+1. See [:material-code-braces: S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef) 
+2. See [:material-code-braces: UpdateDataRepositoryAssociationResponseTypeDef](./type_defs.md#updatedatarepositoryassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssociationId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `ImportedFileChunkSize`: `int`
-- `S3`:
-  [S3DataRepositoryConfigurationTypeDef](./type_defs.md#s3datarepositoryconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDataRepositoryAssociationRequestRequestTypeDef = {  # (1)
+    "AssociationId": ...,
+}
 
-Returns
-[UpdateDataRepositoryAssociationResponseTypeDef](./type_defs.md#updatedatarepositoryassociationresponsetypedef).
+parent.update_data_repository_association(**kwargs)
+```
 
-<a id="update\_file\_system"></a>
+1. See [:material-code-braces: UpdateDataRepositoryAssociationRequestRequestTypeDef](./type_defs.md#updatedatarepositoryassociationrequestrequesttypedef) 
 
-### update_file_system
+### update\_file\_system
 
 Use this operation to update the configuration of an existing Amazon FSx file
 system.
 
-Type annotations for `boto3.client("fsx").update_file_system` method.
+Type annotations and code completion for `#!python boto3.client("fsx").update_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
 
-Boto3 documentation:
-[FSx.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_file_system)
+```python title="Method definition"
+def update_file_system(
+    self,
+    *,
+    FileSystemId: str,
+    ClientRequestToken: str = ...,
+    StorageCapacity: int = ...,
+    WindowsConfiguration: UpdateFileSystemWindowsConfigurationTypeDef = ...,  # (1)
+    LustreConfiguration: UpdateFileSystemLustreConfigurationTypeDef = ...,  # (2)
+    OntapConfiguration: UpdateFileSystemOntapConfigurationTypeDef = ...,  # (3)
+    OpenZFSConfiguration: UpdateFileSystemOpenZFSConfigurationTypeDef = ...,  # (4)
+) -> UpdateFileSystemResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef).
+1. See [:material-code-braces: UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef) 
+2. See [:material-code-braces: UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef) 
+3. See [:material-code-braces: UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef) 
+4. See [:material-code-braces: UpdateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#updatefilesystemopenzfsconfigurationtypedef) 
+5. See [:material-code-braces: UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `StorageCapacity`: `int`
-- `WindowsConfiguration`:
-  [UpdateFileSystemWindowsConfigurationTypeDef](./type_defs.md#updatefilesystemwindowsconfigurationtypedef)
-- `LustreConfiguration`:
-  [UpdateFileSystemLustreConfigurationTypeDef](./type_defs.md#updatefilesystemlustreconfigurationtypedef)
-- `OntapConfiguration`:
-  [UpdateFileSystemOntapConfigurationTypeDef](./type_defs.md#updatefilesystemontapconfigurationtypedef)
-- `OpenZFSConfiguration`:
-  [UpdateFileSystemOpenZFSConfigurationTypeDef](./type_defs.md#updatefilesystemopenzfsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFileSystemRequestRequestTypeDef = {  # (1)
+    "FileSystemId": ...,
+}
 
-Returns
-[UpdateFileSystemResponseTypeDef](./type_defs.md#updatefilesystemresponsetypedef).
+parent.update_file_system(**kwargs)
+```
 
-<a id="update\_snapshot"></a>
+1. See [:material-code-braces: UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef) 
 
-### update_snapshot
+### update\_snapshot
 
 Updates the name of an Amazon FSx for OpenZFS snapshot.
 
-Type annotations for `boto3.client("fsx").update_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("fsx").update_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_snapshot)
 
-Boto3 documentation:
-[FSx.Client.update_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_snapshot)
+```python title="Method definition"
+def update_snapshot(
+    self,
+    *,
+    Name: str,
+    SnapshotId: str,
+    ClientRequestToken: str = ...,
+) -> UpdateSnapshotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSnapshotRequestRequestTypeDef](./type_defs.md#updatesnapshotrequestrequesttypedef).
+1. See [:material-code-braces: UpdateSnapshotResponseTypeDef](./type_defs.md#updatesnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSnapshotRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[UpdateSnapshotResponseTypeDef](./type_defs.md#updatesnapshotresponsetypedef).
+parent.update_snapshot(**kwargs)
+```
 
-<a id="update\_storage\_virtual\_machine"></a>
+1. See [:material-code-braces: UpdateSnapshotRequestRequestTypeDef](./type_defs.md#updatesnapshotrequestrequesttypedef) 
 
-### update_storage_virtual_machine
+### update\_storage\_virtual\_machine
 
 Updates an Amazon FSx for ONTAP storage virtual machine (SVM).
 
-Type annotations for `boto3.client("fsx").update_storage_virtual_machine`
-method.
+Type annotations and code completion for `#!python boto3.client("fsx").update_storage_virtual_machine` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_storage_virtual_machine)
 
-Boto3 documentation:
-[FSx.Client.update_storage_virtual_machine](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_storage_virtual_machine)
+```python title="Method definition"
+def update_storage_virtual_machine(
+    self,
+    *,
+    StorageVirtualMachineId: str,
+    ActiveDirectoryConfiguration: UpdateSvmActiveDirectoryConfigurationTypeDef = ...,  # (1)
+    ClientRequestToken: str = ...,
+    SvmAdminPassword: str = ...,
+) -> UpdateStorageVirtualMachineResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#updatestoragevirtualmachinerequestrequesttypedef).
+1. See [:material-code-braces: UpdateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#updatesvmactivedirectoryconfigurationtypedef) 
+2. See [:material-code-braces: UpdateStorageVirtualMachineResponseTypeDef](./type_defs.md#updatestoragevirtualmachineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `StorageVirtualMachineId`: `str` *(required)*
-- `ActiveDirectoryConfiguration`:
-  [UpdateSvmActiveDirectoryConfigurationTypeDef](./type_defs.md#updatesvmactivedirectoryconfigurationtypedef)
-- `ClientRequestToken`: `str`
-- `SvmAdminPassword`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStorageVirtualMachineRequestRequestTypeDef = {  # (1)
+    "StorageVirtualMachineId": ...,
+}
 
-Returns
-[UpdateStorageVirtualMachineResponseTypeDef](./type_defs.md#updatestoragevirtualmachineresponsetypedef).
+parent.update_storage_virtual_machine(**kwargs)
+```
 
-<a id="update\_volume"></a>
+1. See [:material-code-braces: UpdateStorageVirtualMachineRequestRequestTypeDef](./type_defs.md#updatestoragevirtualmachinerequestrequesttypedef) 
 
-### update_volume
+### update\_volume
 
 Updates the configuration of an Amazon FSx for NetApp ONTAP or Amazon FSx for
 OpenZFS volume.
 
-Type annotations for `boto3.client("fsx").update_volume` method.
+Type annotations and code completion for `#!python boto3.client("fsx").update_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_volume)
 
-Boto3 documentation:
-[FSx.Client.update_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fsx.html#FSx.Client.update_volume)
+```python title="Method definition"
+def update_volume(
+    self,
+    *,
+    VolumeId: str,
+    ClientRequestToken: str = ...,
+    OntapConfiguration: UpdateOntapVolumeConfigurationTypeDef = ...,  # (1)
+    Name: str = ...,
+    OpenZFSConfiguration: UpdateOpenZFSVolumeConfigurationTypeDef = ...,  # (2)
+) -> UpdateVolumeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVolumeRequestRequestTypeDef](./type_defs.md#updatevolumerequestrequesttypedef).
+1. See [:material-code-braces: UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef) 
+2. See [:material-code-braces: UpdateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#updateopenzfsvolumeconfigurationtypedef) 
+3. See [:material-code-braces: UpdateVolumeResponseTypeDef](./type_defs.md#updatevolumeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VolumeId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `OntapConfiguration`:
-  [UpdateOntapVolumeConfigurationTypeDef](./type_defs.md#updateontapvolumeconfigurationtypedef)
-- `Name`: `str`
-- `OpenZFSConfiguration`:
-  [UpdateOpenZFSVolumeConfigurationTypeDef](./type_defs.md#updateopenzfsvolumeconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateVolumeRequestRequestTypeDef = {  # (1)
+    "VolumeId": ...,
+}
 
-Returns
-[UpdateVolumeResponseTypeDef](./type_defs.md#updatevolumeresponsetypedef).
+parent.update_volume(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVolumeRequestRequestTypeDef](./type_defs.md#updatevolumerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("fsx").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("fsx").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_backups")` ->
-  [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
-- `client.get_paginator("describe_file_systems")` ->
-  [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("describe_backups")` -> [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
+- `client.get_paginator("describe_file_systems")` -> [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+
+

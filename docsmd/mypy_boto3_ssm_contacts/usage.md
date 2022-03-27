@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-ssmcontacts-module"></a>
-
-# Examples for boto3 SSMContacts module
+# Examples
 
 > [Index](../README.md) > [SSMContacts](./README.md) > Examples
 
-- [Examples for boto3 SSMContacts module](#examples-for-boto3-ssmcontacts-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
+    type annotations stubs module [mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[ssm-contacts]` package installed.
 
-Write your `SSMContacts` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `SSMContacts` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSMContactsClient
-# and provides type checking and code completion
-client = session.client("ssm-contacts")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_page()
 
-# paginator has type ListContactChannelsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_contact_channels")
-for item in paginator.paginate(...):
-    # item has type ListContactChannelsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("ssm-contacts")  # (1)
+    result = client.create_contact()  # (2)
+    ```
+
+    1. client: [SSMContactsClient](./client.md)
+    2. result: [:material-code-braces: CreateContactResultTypeDef](./type_defs.md#createcontactresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ssm-contacts")  # (1)
+
+    paginator = client.get_paginator("list_contact_channels")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SSMContactsClient](./client.md)
+    2. paginator: [ListContactChannelsPaginator](./paginators.md#listcontactchannelspaginator)
+    3. item: [:material-code-braces: ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[ssm-contacts]` or a standalone `mypy_boto3_ssm_contacts`
-package, you have to explicitly specify `client: SSMContactsClient` type
-annotation.
+With `boto3-stubs-lite[ssm-contacts]`
+or a standalone `mypy_boto3_ssm_contacts` package, you have to explicitly specify `client: SSMContactsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_ssm_contacts.client import SSMContactsClient
-from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator
-
-from mypy_boto3_ssm_contacts.literals import PaginatorName
-
-from mypy_boto3_ssm_contacts.type_defs import Dict[str, Any]
-from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SSMContactsClient = session.client("ssm-contacts")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.accept_page()
+    from mypy_boto3_ssm_contacts.client import SSMContactsClient
+    from mypy_boto3_ssm_contacts.type_defs import CreateContactResultTypeDef
+    from mypy_boto3_ssm_contacts.type_defs import CreateContactRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_contact_channels"
-paginator: ListContactChannelsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListContactChannelsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: SSMContactsClient = session.client("ssm-contacts")
+
+    kwargs: CreateContactRequestRequestTypeDef = {...}
+    result: CreateContactResultTypeDef = client.create_contact(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ssm_contacts.client import SSMContactsClient
+    from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator
+    from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsResultTypeDef
+
+
+    session = Session()
+    client: SSMContactsClient = session.client("ssm-contacts")
+
+    paginator: ListContactChannelsPaginator = client.get_paginator("list_contact_channels")
+    for item in paginator.paginate(...):
+        item: ListContactChannelsResultTypeDef
+        print(item)
+    ```
+
+
+
+

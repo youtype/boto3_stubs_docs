@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-finspace-module"></a>
-
-# Examples for boto3 finspace module
+# Examples
 
 > [Index](../README.md) > [finspace](./README.md) > Examples
 
-- [Examples for boto3 finspace module](#examples-for-boto3-finspace-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
+    type annotations stubs module [mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[finspace]` package installed.
 
-Write your `finspace` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `finspace` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type finspaceClient
-# and provides type checking and code completion
-client = session.client("finspace")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("finspace")  # (1)
+    result = client.create_environment()  # (2)
+    ```
+
+    1. client: [finspaceClient](./client.md)
+    2. result: [:material-code-braces: CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[finspace]` or a standalone `mypy_boto3_finspace`
-package, you have to explicitly specify `client: finspaceClient` type
-annotation.
+With `boto3-stubs-lite[finspace]`
+or a standalone `mypy_boto3_finspace` package, you have to explicitly specify `client: finspaceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_finspace.client import finspaceClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_finspace.client import finspaceClient
+    from mypy_boto3_finspace.type_defs import CreateEnvironmentResponseTypeDef
+    from mypy_boto3_finspace.type_defs import CreateEnvironmentRequestRequestTypeDef
 
 
-from mypy_boto3_finspace.type_defs import bool
+    session = Session()
+
+    client: finspaceClient = session.client("finspace")
+
+    kwargs: CreateEnvironmentRequestRequestTypeDef = {...}
+    result: CreateEnvironmentResponseTypeDef = client.create_environment(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: finspaceClient = session.client("finspace")
 
-result: bool = client.can_paginate()
-```
+

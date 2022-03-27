@@ -1,67 +1,18 @@
-<a id="athenaclient-for-boto3-athena-module"></a>
-
-# AthenaClient for boto3 Athena module
+# AthenaClient
 
 > [Index](../README.md) > [Athena](./README.md) > AthenaClient
 
-Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
-type annotations stubs module
-[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
+!!! note ""
 
-- [AthenaClient for boto3 Athena module](#athenaclient-for-boto3-athena-module)
-  - [AthenaClient](#athenaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_get_named_query](#batch_get_named_query)
-    - [batch_get_query_execution](#batch_get_query_execution)
-    - [can_paginate](#can_paginate)
-    - [create_data_catalog](#create_data_catalog)
-    - [create_named_query](#create_named_query)
-    - [create_prepared_statement](#create_prepared_statement)
-    - [create_work_group](#create_work_group)
-    - [delete_data_catalog](#delete_data_catalog)
-    - [delete_named_query](#delete_named_query)
-    - [delete_prepared_statement](#delete_prepared_statement)
-    - [delete_work_group](#delete_work_group)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_data_catalog](#get_data_catalog)
-    - [get_database](#get_database)
-    - [get_named_query](#get_named_query)
-    - [get_prepared_statement](#get_prepared_statement)
-    - [get_query_execution](#get_query_execution)
-    - [get_query_results](#get_query_results)
-    - [get_table_metadata](#get_table_metadata)
-    - [get_work_group](#get_work_group)
-    - [list_data_catalogs](#list_data_catalogs)
-    - [list_databases](#list_databases)
-    - [list_engine_versions](#list_engine_versions)
-    - [list_named_queries](#list_named_queries)
-    - [list_prepared_statements](#list_prepared_statements)
-    - [list_query_executions](#list_query_executions)
-    - [list_table_metadata](#list_table_metadata)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_work_groups](#list_work_groups)
-    - [start_query_execution](#start_query_execution)
-    - [stop_query_execution](#stop_query_execution)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_data_catalog](#update_data_catalog)
-    - [update_named_query](#update_named_query)
-    - [update_prepared_statement](#update_prepared_statement)
-    - [update_work_group](#update_work_group)
-    - [get_paginator](#get_paginator)
-
-<a id="athenaclient"></a>
+    Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+    type annotations stubs module [mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 ## AthenaClient
 
-Type annotations for `boto3.client("athena")`
+Type annotations and code completion for `#!python boto3.client("athena")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_athena.client import AthenaClient
 
@@ -69,895 +20,1184 @@ def get_athena_client() -> AthenaClient:
     return Session().client("athena")
 ```
 
-Boto3 documentation:
-[Athena.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("athena").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("athena")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.InvalidRequestException,
+    client.MetadataException,
+    client.ResourceNotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_athena.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.MetadataException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### batch\_get\_named\_query
 
-AthenaClient exceptions.
+Returns the details of a single named query or a list of up to 50 queries, which
+you provide as an array of query ID strings.
 
-Type annotations for `boto3.client("athena").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("athena").batch_get_named_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
 
-Boto3 documentation:
-[Athena.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.exceptions)
+```python title="Method definition"
+def batch_get_named_query(
+    self,
+    *,
+    NamedQueryIds: Sequence[str],
+) -> BatchGetNamedQueryOutputTypeDef:  # (1)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef) 
 
-<a id="batch\_get\_named\_query"></a>
 
-### batch_get_named_query
+```python title="Usage example with kwargs"
+kwargs: BatchGetNamedQueryInputRequestTypeDef = {  # (1)
+    "NamedQueryIds": ...,
+}
 
-Returns the details of a single named query or a list of up to 50 queries,
-which you provide as an array of query ID strings.
+parent.batch_get_named_query(**kwargs)
+```
 
-Type annotations for `boto3.client("athena").batch_get_named_query` method.
+1. See [:material-code-braces: BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef) 
 
-Boto3 documentation:
-[Athena.Client.batch_get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_named_query)
-
-Arguments mapping described in
-[BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `NamedQueryIds`: `Sequence`\[`str`\] *(required)*
-
-Returns
-[BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
-
-<a id="batch\_get\_query\_execution"></a>
-
-### batch_get_query_execution
+### batch\_get\_query\_execution
 
 Returns the details of a single query execution or a list of up to 50 query
 executions, which you provide as an array of query execution ID strings.
 
-Type annotations for `boto3.client("athena").batch_get_query_execution` method.
+Type annotations and code completion for `#!python boto3.client("athena").batch_get_query_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
 
-Boto3 documentation:
-[Athena.Client.batch_get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.batch_get_query_execution)
+```python title="Method definition"
+def batch_get_query_execution(
+    self,
+    *,
+    QueryExecutionIds: Sequence[str],
+) -> BatchGetQueryExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetQueryExecutionInputRequestTypeDef](./type_defs.md#batchgetqueryexecutioninputrequesttypedef).
+1. See [:material-code-braces: BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `QueryExecutionIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetQueryExecutionInputRequestTypeDef = {  # (1)
+    "QueryExecutionIds": ...,
+}
 
-Returns
-[BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
+parent.batch_get_query_execution(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchGetQueryExecutionInputRequestTypeDef](./type_defs.md#batchgetqueryexecutioninputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("athena").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("athena").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate)
 
-Boto3 documentation:
-[Athena.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_data\_catalog"></a>
-
-### create_data_catalog
+### create\_data\_catalog
 
 Creates (registers) a data catalog with the specified name and properties.
 
-Type annotations for `boto3.client("athena").create_data_catalog` method.
+Type annotations and code completion for `#!python boto3.client("athena").create_data_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
 
-Boto3 documentation:
-[Athena.Client.create_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_data_catalog)
+```python title="Method definition"
+def create_data_catalog(
+    self,
+    *,
+    Name: str,
+    Type: DataCatalogTypeType,  # (1)
+    Description: str = ...,
+    Parameters: Mapping[str, str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateDataCatalogInputRequestTypeDef](./type_defs.md#createdatacataloginputrequesttypedef).
+1. See [:material-code-brackets: DataCatalogTypeType](./literals.md#datacatalogtypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
-- `Description`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataCatalogInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_data_catalog(**kwargs)
+```
 
-<a id="create\_named\_query"></a>
+1. See [:material-code-braces: CreateDataCatalogInputRequestTypeDef](./type_defs.md#createdatacataloginputrequesttypedef) 
 
-### create_named_query
+### create\_named\_query
 
 Creates a named query in the specified workgroup.
 
-Type annotations for `boto3.client("athena").create_named_query` method.
+Type annotations and code completion for `#!python boto3.client("athena").create_named_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
 
-Boto3 documentation:
-[Athena.Client.create_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_named_query)
+```python title="Method definition"
+def create_named_query(
+    self,
+    *,
+    Name: str,
+    Database: str,
+    QueryString: str,
+    Description: str = ...,
+    ClientRequestToken: str = ...,
+    WorkGroup: str = ...,
+) -> CreateNamedQueryOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateNamedQueryInputRequestTypeDef](./type_defs.md#createnamedqueryinputrequesttypedef).
+1. See [:material-code-braces: CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Database`: `str` *(required)*
-- `QueryString`: `str` *(required)*
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `WorkGroup`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateNamedQueryInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Database": ...,
+    "QueryString": ...,
+}
 
-Returns
-[CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef).
+parent.create_named_query(**kwargs)
+```
 
-<a id="create\_prepared\_statement"></a>
+1. See [:material-code-braces: CreateNamedQueryInputRequestTypeDef](./type_defs.md#createnamedqueryinputrequesttypedef) 
 
-### create_prepared_statement
+### create\_prepared\_statement
 
 Creates a prepared statement for use with SQL queries in Athena.
 
-Type annotations for `boto3.client("athena").create_prepared_statement` method.
+Type annotations and code completion for `#!python boto3.client("athena").create_prepared_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
 
-Boto3 documentation:
-[Athena.Client.create_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_prepared_statement)
+```python title="Method definition"
+def create_prepared_statement(
+    self,
+    *,
+    StatementName: str,
+    WorkGroup: str,
+    QueryStatement: str,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreatePreparedStatementInputRequestTypeDef](./type_defs.md#createpreparedstatementinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StatementName`: `str` *(required)*
-- `WorkGroup`: `str` *(required)*
-- `QueryStatement`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePreparedStatementInputRequestTypeDef = {  # (1)
+    "StatementName": ...,
+    "WorkGroup": ...,
+    "QueryStatement": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_prepared_statement(**kwargs)
+```
 
-<a id="create\_work\_group"></a>
+1. See [:material-code-braces: CreatePreparedStatementInputRequestTypeDef](./type_defs.md#createpreparedstatementinputrequesttypedef) 
 
-### create_work_group
+### create\_work\_group
 
 Creates a workgroup with the specified name.
 
-Type annotations for `boto3.client("athena").create_work_group` method.
+Type annotations and code completion for `#!python boto3.client("athena").create_work_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
 
-Boto3 documentation:
-[Athena.Client.create_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.create_work_group)
+```python title="Method definition"
+def create_work_group(
+    self,
+    *,
+    Name: str,
+    Configuration: WorkGroupConfigurationTypeDef = ...,  # (1)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkGroupInputRequestTypeDef](./type_defs.md#createworkgroupinputrequesttypedef).
+1. See [:material-code-braces: WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Configuration`:
-  [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkGroupInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_work_group(**kwargs)
+```
 
-<a id="delete\_data\_catalog"></a>
+1. See [:material-code-braces: CreateWorkGroupInputRequestTypeDef](./type_defs.md#createworkgroupinputrequesttypedef) 
 
-### delete_data_catalog
+### delete\_data\_catalog
 
 Deletes a data catalog.
 
-Type annotations for `boto3.client("athena").delete_data_catalog` method.
+Type annotations and code completion for `#!python boto3.client("athena").delete_data_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
 
-Boto3 documentation:
-[Athena.Client.delete_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_data_catalog)
+```python title="Method definition"
+def delete_data_catalog(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataCatalogInputRequestTypeDef](./type_defs.md#deletedatacataloginputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataCatalogInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_data_catalog(**kwargs)
+```
 
-<a id="delete\_named\_query"></a>
+1. See [:material-code-braces: DeleteDataCatalogInputRequestTypeDef](./type_defs.md#deletedatacataloginputrequesttypedef) 
 
-### delete_named_query
+### delete\_named\_query
 
 Deletes the named query if you have access to the workgroup in which the query
 was saved.
 
-Type annotations for `boto3.client("athena").delete_named_query` method.
+Type annotations and code completion for `#!python boto3.client("athena").delete_named_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
 
-Boto3 documentation:
-[Athena.Client.delete_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_named_query)
+```python title="Method definition"
+def delete_named_query(
+    self,
+    *,
+    NamedQueryId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNamedQueryInputRequestTypeDef](./type_defs.md#deletenamedqueryinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `NamedQueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNamedQueryInputRequestTypeDef = {  # (1)
+    "NamedQueryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_named_query(**kwargs)
+```
 
-<a id="delete\_prepared\_statement"></a>
+1. See [:material-code-braces: DeleteNamedQueryInputRequestTypeDef](./type_defs.md#deletenamedqueryinputrequesttypedef) 
 
-### delete_prepared_statement
+### delete\_prepared\_statement
 
 Deletes the prepared statement with the specified name from the specified
 workgroup.
 
-Type annotations for `boto3.client("athena").delete_prepared_statement` method.
+Type annotations and code completion for `#!python boto3.client("athena").delete_prepared_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
 
-Boto3 documentation:
-[Athena.Client.delete_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_prepared_statement)
+```python title="Method definition"
+def delete_prepared_statement(
+    self,
+    *,
+    StatementName: str,
+    WorkGroup: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePreparedStatementInputRequestTypeDef](./type_defs.md#deletepreparedstatementinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StatementName`: `str` *(required)*
-- `WorkGroup`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePreparedStatementInputRequestTypeDef = {  # (1)
+    "StatementName": ...,
+    "WorkGroup": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_prepared_statement(**kwargs)
+```
 
-<a id="delete\_work\_group"></a>
+1. See [:material-code-braces: DeletePreparedStatementInputRequestTypeDef](./type_defs.md#deletepreparedstatementinputrequesttypedef) 
 
-### delete_work_group
+### delete\_work\_group
 
 Deletes the workgroup with the specified name.
 
-Type annotations for `boto3.client("athena").delete_work_group` method.
+Type annotations and code completion for `#!python boto3.client("athena").delete_work_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
 
-Boto3 documentation:
-[Athena.Client.delete_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.delete_work_group)
+```python title="Method definition"
+def delete_work_group(
+    self,
+    *,
+    WorkGroup: str,
+    RecursiveDeleteOption: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkGroupInputRequestTypeDef](./type_defs.md#deleteworkgroupinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkGroup`: `str` *(required)*
-- `RecursiveDeleteOption`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkGroupInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_work_group(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteWorkGroupInputRequestTypeDef](./type_defs.md#deleteworkgroupinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("athena").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("athena").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Athena.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_data\_catalog"></a>
-
-### get_data_catalog
+### get\_data\_catalog
 
 Returns the specified data catalog.
 
-Type annotations for `boto3.client("athena").get_data_catalog` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_data_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
 
-Boto3 documentation:
-[Athena.Client.get_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_data_catalog)
+```python title="Method definition"
+def get_data_catalog(
+    self,
+    *,
+    Name: str,
+) -> GetDataCatalogOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataCatalogInputRequestTypeDef](./type_defs.md#getdatacataloginputrequesttypedef).
+1. See [:material-code-braces: GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataCatalogInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef).
+parent.get_data_catalog(**kwargs)
+```
 
-<a id="get\_database"></a>
+1. See [:material-code-braces: GetDataCatalogInputRequestTypeDef](./type_defs.md#getdatacataloginputrequesttypedef) 
 
-### get_database
+### get\_database
 
 Returns a database object for the specified database and data catalog.
 
-Type annotations for `boto3.client("athena").get_database` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
 
-Boto3 documentation:
-[Athena.Client.get_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_database)
+```python title="Method definition"
+def get_database(
+    self,
+    *,
+    CatalogName: str,
+    DatabaseName: str,
+) -> GetDatabaseOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDatabaseInputRequestTypeDef](./type_defs.md#getdatabaseinputrequesttypedef).
+1. See [:material-code-braces: GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CatalogName`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDatabaseInputRequestTypeDef = {  # (1)
+    "CatalogName": ...,
+    "DatabaseName": ...,
+}
 
-Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
+parent.get_database(**kwargs)
+```
 
-<a id="get\_named\_query"></a>
+1. See [:material-code-braces: GetDatabaseInputRequestTypeDef](./type_defs.md#getdatabaseinputrequesttypedef) 
 
-### get_named_query
+### get\_named\_query
 
 Returns information about a single query.
 
-Type annotations for `boto3.client("athena").get_named_query` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_named_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
 
-Boto3 documentation:
-[Athena.Client.get_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_named_query)
+```python title="Method definition"
+def get_named_query(
+    self,
+    *,
+    NamedQueryId: str,
+) -> GetNamedQueryOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNamedQueryInputRequestTypeDef](./type_defs.md#getnamedqueryinputrequesttypedef).
+1. See [:material-code-braces: GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NamedQueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNamedQueryInputRequestTypeDef = {  # (1)
+    "NamedQueryId": ...,
+}
 
-Returns
-[GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef).
+parent.get_named_query(**kwargs)
+```
 
-<a id="get\_prepared\_statement"></a>
+1. See [:material-code-braces: GetNamedQueryInputRequestTypeDef](./type_defs.md#getnamedqueryinputrequesttypedef) 
 
-### get_prepared_statement
+### get\_prepared\_statement
 
 Retrieves the prepared statement with the specified name from the specified
 workgroup.
 
-Type annotations for `boto3.client("athena").get_prepared_statement` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_prepared_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
 
-Boto3 documentation:
-[Athena.Client.get_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_prepared_statement)
+```python title="Method definition"
+def get_prepared_statement(
+    self,
+    *,
+    StatementName: str,
+    WorkGroup: str,
+) -> GetPreparedStatementOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPreparedStatementInputRequestTypeDef](./type_defs.md#getpreparedstatementinputrequesttypedef).
+1. See [:material-code-braces: GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StatementName`: `str` *(required)*
-- `WorkGroup`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPreparedStatementInputRequestTypeDef = {  # (1)
+    "StatementName": ...,
+    "WorkGroup": ...,
+}
 
-Returns
-[GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef).
+parent.get_prepared_statement(**kwargs)
+```
 
-<a id="get\_query\_execution"></a>
+1. See [:material-code-braces: GetPreparedStatementInputRequestTypeDef](./type_defs.md#getpreparedstatementinputrequesttypedef) 
 
-### get_query_execution
+### get\_query\_execution
 
 Returns information about a single execution of a query if you have access to
 the workgroup in which the query ran.
 
-Type annotations for `boto3.client("athena").get_query_execution` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_query_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
 
-Boto3 documentation:
-[Athena.Client.get_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_execution)
+```python title="Method definition"
+def get_query_execution(
+    self,
+    *,
+    QueryExecutionId: str,
+) -> GetQueryExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryExecutionInputRequestTypeDef](./type_defs.md#getqueryexecutioninputrequesttypedef).
+1. See [:material-code-braces: GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `QueryExecutionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueryExecutionInputRequestTypeDef = {  # (1)
+    "QueryExecutionId": ...,
+}
 
-Returns
-[GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef).
+parent.get_query_execution(**kwargs)
+```
 
-<a id="get\_query\_results"></a>
+1. See [:material-code-braces: GetQueryExecutionInputRequestTypeDef](./type_defs.md#getqueryexecutioninputrequesttypedef) 
 
-### get_query_results
+### get\_query\_results
 
 Streams the results of a single query execution specified by `QueryExecutionId`
 from the Athena query results location in Amazon S3.
 
-Type annotations for `boto3.client("athena").get_query_results` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_query_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
 
-Boto3 documentation:
-[Athena.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_query_results)
+```python title="Method definition"
+def get_query_results(
+    self,
+    *,
+    QueryExecutionId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetQueryResultsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryResultsInputRequestTypeDef](./type_defs.md#getqueryresultsinputrequesttypedef).
+1. See [:material-code-braces: GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `QueryExecutionId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetQueryResultsInputRequestTypeDef = {  # (1)
+    "QueryExecutionId": ...,
+}
 
-Returns
-[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef).
+parent.get_query_results(**kwargs)
+```
 
-<a id="get\_table\_metadata"></a>
+1. See [:material-code-braces: GetQueryResultsInputRequestTypeDef](./type_defs.md#getqueryresultsinputrequesttypedef) 
 
-### get_table_metadata
+### get\_table\_metadata
 
 Returns table metadata for the specified catalog, database, and table.
 
-Type annotations for `boto3.client("athena").get_table_metadata` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_table_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
 
-Boto3 documentation:
-[Athena.Client.get_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_table_metadata)
+```python title="Method definition"
+def get_table_metadata(
+    self,
+    *,
+    CatalogName: str,
+    DatabaseName: str,
+    TableName: str,
+) -> GetTableMetadataOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTableMetadataInputRequestTypeDef](./type_defs.md#gettablemetadatainputrequesttypedef).
+1. See [:material-code-braces: GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CatalogName`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTableMetadataInputRequestTypeDef = {  # (1)
+    "CatalogName": ...,
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef).
+parent.get_table_metadata(**kwargs)
+```
 
-<a id="get\_work\_group"></a>
+1. See [:material-code-braces: GetTableMetadataInputRequestTypeDef](./type_defs.md#gettablemetadatainputrequesttypedef) 
 
-### get_work_group
+### get\_work\_group
 
 Returns information about the workgroup with the specified name.
 
-Type annotations for `boto3.client("athena").get_work_group` method.
+Type annotations and code completion for `#!python boto3.client("athena").get_work_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
 
-Boto3 documentation:
-[Athena.Client.get_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.get_work_group)
+```python title="Method definition"
+def get_work_group(
+    self,
+    *,
+    WorkGroup: str,
+) -> GetWorkGroupOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkGroupInputRequestTypeDef](./type_defs.md#getworkgroupinputrequesttypedef).
+1. See [:material-code-braces: GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkGroup`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWorkGroupInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
 
-Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
+parent.get_work_group(**kwargs)
+```
 
-<a id="list\_data\_catalogs"></a>
+1. See [:material-code-braces: GetWorkGroupInputRequestTypeDef](./type_defs.md#getworkgroupinputrequesttypedef) 
 
-### list_data_catalogs
+### list\_data\_catalogs
 
 Lists the data catalogs in the current Amazon Web Services account.
 
-Type annotations for `boto3.client("athena").list_data_catalogs` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_data_catalogs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
 
-Boto3 documentation:
-[Athena.Client.list_data_catalogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_data_catalogs)
+```python title="Method definition"
+def list_data_catalogs(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataCatalogsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataCatalogsInputRequestTypeDef](./type_defs.md#listdatacatalogsinputrequesttypedef).
+1. See [:material-code-braces: ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataCatalogsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef).
+parent.list_data_catalogs(**kwargs)
+```
 
-<a id="list\_databases"></a>
+1. See [:material-code-braces: ListDataCatalogsInputRequestTypeDef](./type_defs.md#listdatacatalogsinputrequesttypedef) 
 
-### list_databases
+### list\_databases
 
 Lists the databases in the specified data catalog.
 
-Type annotations for `boto3.client("athena").list_databases` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_databases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
 
-Boto3 documentation:
-[Athena.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_databases)
+```python title="Method definition"
+def list_databases(
+    self,
+    *,
+    CatalogName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatabasesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatabasesInputRequestTypeDef](./type_defs.md#listdatabasesinputrequesttypedef).
+1. See [:material-code-braces: ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CatalogName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatabasesInputRequestTypeDef = {  # (1)
+    "CatalogName": ...,
+}
 
-Returns
-[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef).
+parent.list_databases(**kwargs)
+```
 
-<a id="list\_engine\_versions"></a>
+1. See [:material-code-braces: ListDatabasesInputRequestTypeDef](./type_defs.md#listdatabasesinputrequesttypedef) 
 
-### list_engine_versions
+### list\_engine\_versions
 
 Returns a list of engine versions that are available to choose from, including
 the Auto option.
 
-Type annotations for `boto3.client("athena").list_engine_versions` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_engine_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
 
-Boto3 documentation:
-[Athena.Client.list_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_engine_versions)
+```python title="Method definition"
+def list_engine_versions(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEngineVersionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEngineVersionsInputRequestTypeDef](./type_defs.md#listengineversionsinputrequesttypedef).
+1. See [:material-code-braces: ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEngineVersionsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef).
+parent.list_engine_versions(**kwargs)
+```
 
-<a id="list\_named\_queries"></a>
+1. See [:material-code-braces: ListEngineVersionsInputRequestTypeDef](./type_defs.md#listengineversionsinputrequesttypedef) 
 
-### list_named_queries
+### list\_named\_queries
 
 Provides a list of available query IDs only for queries saved in the specified
 workgroup.
 
-Type annotations for `boto3.client("athena").list_named_queries` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_named_queries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
 
-Boto3 documentation:
-[Athena.Client.list_named_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_named_queries)
+```python title="Method definition"
+def list_named_queries(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WorkGroup: str = ...,
+) -> ListNamedQueriesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNamedQueriesInputRequestTypeDef](./type_defs.md#listnamedqueriesinputrequesttypedef).
+1. See [:material-code-braces: ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WorkGroup`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNamedQueriesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef).
+parent.list_named_queries(**kwargs)
+```
 
-<a id="list\_prepared\_statements"></a>
+1. See [:material-code-braces: ListNamedQueriesInputRequestTypeDef](./type_defs.md#listnamedqueriesinputrequesttypedef) 
 
-### list_prepared_statements
+### list\_prepared\_statements
 
 Lists the prepared statements in the specfied workgroup.
 
-Type annotations for `boto3.client("athena").list_prepared_statements` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_prepared_statements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
 
-Boto3 documentation:
-[Athena.Client.list_prepared_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_prepared_statements)
+```python title="Method definition"
+def list_prepared_statements(
+    self,
+    *,
+    WorkGroup: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPreparedStatementsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPreparedStatementsInputRequestTypeDef](./type_defs.md#listpreparedstatementsinputrequesttypedef).
+1. See [:material-code-braces: ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkGroup`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPreparedStatementsInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
 
-Returns
-[ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef).
+parent.list_prepared_statements(**kwargs)
+```
 
-<a id="list\_query\_executions"></a>
+1. See [:material-code-braces: ListPreparedStatementsInputRequestTypeDef](./type_defs.md#listpreparedstatementsinputrequesttypedef) 
 
-### list_query_executions
+### list\_query\_executions
 
 Provides a list of available query execution IDs for the queries in the
 specified workgroup.
 
-Type annotations for `boto3.client("athena").list_query_executions` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_query_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
 
-Boto3 documentation:
-[Athena.Client.list_query_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_query_executions)
+```python title="Method definition"
+def list_query_executions(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    WorkGroup: str = ...,
+) -> ListQueryExecutionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQueryExecutionsInputRequestTypeDef](./type_defs.md#listqueryexecutionsinputrequesttypedef).
+1. See [:material-code-braces: ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WorkGroup`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListQueryExecutionsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef).
+parent.list_query_executions(**kwargs)
+```
 
-<a id="list\_table\_metadata"></a>
+1. See [:material-code-braces: ListQueryExecutionsInputRequestTypeDef](./type_defs.md#listqueryexecutionsinputrequesttypedef) 
 
-### list_table_metadata
+### list\_table\_metadata
 
 Lists the metadata for the tables in the specified data catalog database.
 
-Type annotations for `boto3.client("athena").list_table_metadata` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_table_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
 
-Boto3 documentation:
-[Athena.Client.list_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_table_metadata)
+```python title="Method definition"
+def list_table_metadata(
+    self,
+    *,
+    CatalogName: str,
+    DatabaseName: str,
+    Expression: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTableMetadataOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTableMetadataInputRequestTypeDef](./type_defs.md#listtablemetadatainputrequesttypedef).
+1. See [:material-code-braces: ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CatalogName`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `Expression`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTableMetadataInputRequestTypeDef = {  # (1)
+    "CatalogName": ...,
+    "DatabaseName": ...,
+}
 
-Returns
-[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef).
+parent.list_table_metadata(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListTableMetadataInputRequestTypeDef](./type_defs.md#listtablemetadatainputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags associated with an Athena workgroup or data catalog resource.
 
-Type annotations for `boto3.client("athena").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Athena.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_work\_groups"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_work_groups
+### list\_work\_groups
 
 Lists available workgroups for the account.
 
-Type annotations for `boto3.client("athena").list_work_groups` method.
+Type annotations and code completion for `#!python boto3.client("athena").list_work_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
 
-Boto3 documentation:
-[Athena.Client.list_work_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.list_work_groups)
+```python title="Method definition"
+def list_work_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkGroupsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkGroupsInputRequestTypeDef](./type_defs.md#listworkgroupsinputrequesttypedef).
+1. See [:material-code-braces: ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkGroupsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef).
+parent.list_work_groups(**kwargs)
+```
 
-<a id="start\_query\_execution"></a>
+1. See [:material-code-braces: ListWorkGroupsInputRequestTypeDef](./type_defs.md#listworkgroupsinputrequesttypedef) 
 
-### start_query_execution
+### start\_query\_execution
 
 Runs the SQL query statements contained in the `Query`.
 
-Type annotations for `boto3.client("athena").start_query_execution` method.
+Type annotations and code completion for `#!python boto3.client("athena").start_query_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
 
-Boto3 documentation:
-[Athena.Client.start_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.start_query_execution)
+```python title="Method definition"
+def start_query_execution(
+    self,
+    *,
+    QueryString: str,
+    ClientRequestToken: str = ...,
+    QueryExecutionContext: QueryExecutionContextTypeDef = ...,  # (1)
+    ResultConfiguration: ResultConfigurationTypeDef = ...,  # (2)
+    WorkGroup: str = ...,
+) -> StartQueryExecutionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartQueryExecutionInputRequestTypeDef](./type_defs.md#startqueryexecutioninputrequesttypedef).
+1. See [:material-code-braces: QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef) 
+2. See [:material-code-braces: ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef) 
+3. See [:material-code-braces: StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `QueryString`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `QueryExecutionContext`:
-  [QueryExecutionContextTypeDef](./type_defs.md#queryexecutioncontexttypedef)
-- `ResultConfiguration`:
-  [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
-- `WorkGroup`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartQueryExecutionInputRequestTypeDef = {  # (1)
+    "QueryString": ...,
+}
 
-Returns
-[StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef).
+parent.start_query_execution(**kwargs)
+```
 
-<a id="stop\_query\_execution"></a>
+1. See [:material-code-braces: StartQueryExecutionInputRequestTypeDef](./type_defs.md#startqueryexecutioninputrequesttypedef) 
 
-### stop_query_execution
+### stop\_query\_execution
 
 Stops a query execution.
 
-Type annotations for `boto3.client("athena").stop_query_execution` method.
+Type annotations and code completion for `#!python boto3.client("athena").stop_query_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
 
-Boto3 documentation:
-[Athena.Client.stop_query_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.stop_query_execution)
+```python title="Method definition"
+def stop_query_execution(
+    self,
+    *,
+    QueryExecutionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopQueryExecutionInputRequestTypeDef](./type_defs.md#stopqueryexecutioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `QueryExecutionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopQueryExecutionInputRequestTypeDef = {  # (1)
+    "QueryExecutionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_query_execution(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopQueryExecutionInputRequestTypeDef](./type_defs.md#stopqueryexecutioninputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to an Athena resource.
 
-Type annotations for `boto3.client("athena").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("athena").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
 
-Boto3 documentation:
-[Athena.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a data catalog or workgroup resource.
 
-Type annotations for `boto3.client("athena").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("athena").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
 
-Boto3 documentation:
-[Athena.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_data\_catalog"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_data_catalog
+### update\_data\_catalog
 
 Updates the data catalog that has the specified name.
 
-Type annotations for `boto3.client("athena").update_data_catalog` method.
+Type annotations and code completion for `#!python boto3.client("athena").update_data_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
 
-Boto3 documentation:
-[Athena.Client.update_data_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_data_catalog)
+```python title="Method definition"
+def update_data_catalog(
+    self,
+    *,
+    Name: str,
+    Type: DataCatalogTypeType,  # (1)
+    Description: str = ...,
+    Parameters: Mapping[str, str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataCatalogInputRequestTypeDef](./type_defs.md#updatedatacataloginputrequesttypedef).
+1. See [:material-code-brackets: DataCatalogTypeType](./literals.md#datacatalogtypetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
-- `Description`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateDataCatalogInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_data_catalog(**kwargs)
+```
 
-<a id="update\_named\_query"></a>
+1. See [:material-code-braces: UpdateDataCatalogInputRequestTypeDef](./type_defs.md#updatedatacataloginputrequesttypedef) 
 
-### update_named_query
+### update\_named\_query
 
-Updates a NamedQuery object.
+Updates a  NamedQuery object.
 
-Type annotations for `boto3.client("athena").update_named_query` method.
+Type annotations and code completion for `#!python boto3.client("athena").update_named_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_named_query)
 
-Boto3 documentation:
-[Athena.Client.update_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_named_query)
+```python title="Method definition"
+def update_named_query(
+    self,
+    *,
+    NamedQueryId: str,
+    Name: str,
+    QueryString: str,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `NamedQueryId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `QueryString`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateNamedQueryInputRequestTypeDef = {  # (1)
+    "NamedQueryId": ...,
+    "Name": ...,
+    "QueryString": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_named_query(**kwargs)
+```
 
-<a id="update\_prepared\_statement"></a>
+1. See [:material-code-braces: UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef) 
 
-### update_prepared_statement
+### update\_prepared\_statement
 
 Updates a prepared statement.
 
-Type annotations for `boto3.client("athena").update_prepared_statement` method.
+Type annotations and code completion for `#!python boto3.client("athena").update_prepared_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
 
-Boto3 documentation:
-[Athena.Client.update_prepared_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_prepared_statement)
+```python title="Method definition"
+def update_prepared_statement(
+    self,
+    *,
+    StatementName: str,
+    WorkGroup: str,
+    QueryStatement: str,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePreparedStatementInputRequestTypeDef](./type_defs.md#updatepreparedstatementinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StatementName`: `str` *(required)*
-- `WorkGroup`: `str` *(required)*
-- `QueryStatement`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePreparedStatementInputRequestTypeDef = {  # (1)
+    "StatementName": ...,
+    "WorkGroup": ...,
+    "QueryStatement": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_prepared_statement(**kwargs)
+```
 
-<a id="update\_work\_group"></a>
+1. See [:material-code-braces: UpdatePreparedStatementInputRequestTypeDef](./type_defs.md#updatepreparedstatementinputrequesttypedef) 
 
-### update_work_group
+### update\_work\_group
 
 Updates the workgroup with the specified name.
 
-Type annotations for `boto3.client("athena").update_work_group` method.
+Type annotations and code completion for `#!python boto3.client("athena").update_work_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
 
-Boto3 documentation:
-[Athena.Client.update_work_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_work_group)
+```python title="Method definition"
+def update_work_group(
+    self,
+    *,
+    WorkGroup: str,
+    Description: str = ...,
+    ConfigurationUpdates: WorkGroupConfigurationUpdatesTypeDef = ...,  # (1)
+    State: WorkGroupStateType = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkGroupInputRequestTypeDef](./type_defs.md#updateworkgroupinputrequesttypedef).
+1. See [:material-code-braces: WorkGroupConfigurationUpdatesTypeDef](./type_defs.md#workgroupconfigurationupdatestypedef) 
+2. See [:material-code-brackets: WorkGroupStateType](./literals.md#workgroupstatetype) 
 
-Keyword-only arguments:
 
-- `WorkGroup`: `str` *(required)*
-- `Description`: `str`
-- `ConfigurationUpdates`:
-  [WorkGroupConfigurationUpdatesTypeDef](./type_defs.md#workgroupconfigurationupdatestypedef)
-- `State`: [WorkGroupStateType](./literals.md#workgroupstatetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkGroupInputRequestTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_work_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateWorkGroupInputRequestTypeDef](./type_defs.md#updateworkgroupinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("athena").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator` method with overloads.
 
-- `client.get_paginator("get_query_results")` ->
-  [GetQueryResultsPaginator](./paginators.md#getqueryresultspaginator)
-- `client.get_paginator("list_data_catalogs")` ->
-  [ListDataCatalogsPaginator](./paginators.md#listdatacatalogspaginator)
-- `client.get_paginator("list_databases")` ->
-  [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
-- `client.get_paginator("list_named_queries")` ->
-  [ListNamedQueriesPaginator](./paginators.md#listnamedqueriespaginator)
-- `client.get_paginator("list_query_executions")` ->
-  [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
-- `client.get_paginator("list_table_metadata")` ->
-  [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("get_query_results")` -> [GetQueryResultsPaginator](./paginators.md#getqueryresultspaginator)
+- `client.get_paginator("list_data_catalogs")` -> [ListDataCatalogsPaginator](./paginators.md#listdatacatalogspaginator)
+- `client.get_paginator("list_databases")` -> [ListDatabasesPaginator](./paginators.md#listdatabasespaginator)
+- `client.get_paginator("list_named_queries")` -> [ListNamedQueriesPaginator](./paginators.md#listnamedqueriespaginator)
+- `client.get_paginator("list_query_executions")` -> [ListQueryExecutionsPaginator](./paginators.md#listqueryexecutionspaginator)
+- `client.get_paginator("list_table_metadata")` -> [ListTableMetadataPaginator](./paginators.md#listtablemetadatapaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+
+

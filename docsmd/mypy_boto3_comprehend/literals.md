@@ -1,837 +1,891 @@
-<a id="literals-for-boto3-comprehend-module"></a>
-
-# Literals for boto3 Comprehend module
+# Literals
 
 > [Index](../README.md) > [Comprehend](./README.md) > Literals
 
-Auto-generated documentation for
-[Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
-type annotations stubs module
-[mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+!!! note ""
 
-- [Literals for boto3 Comprehend module](#literals-for-boto3-comprehend-module)
-  - [AugmentedManifestsDocumentTypeFormatType](#augmentedmanifestsdocumenttypeformattype)
-  - [DocumentClassifierDataFormatType](#documentclassifierdataformattype)
-  - [DocumentClassifierModeType](#documentclassifiermodetype)
-  - [DocumentReadActionType](#documentreadactiontype)
-  - [DocumentReadFeatureTypesType](#documentreadfeaturetypestype)
-  - [DocumentReadModeType](#documentreadmodetype)
-  - [EndpointStatusType](#endpointstatustype)
-  - [EntityRecognizerDataFormatType](#entityrecognizerdataformattype)
-  - [EntityTypeType](#entitytypetype)
-  - [InputFormatType](#inputformattype)
-  - [JobStatusType](#jobstatustype)
-  - [LanguageCodeType](#languagecodetype)
-  - [ListDocumentClassificationJobsPaginatorName](#listdocumentclassificationjobspaginatorname)
-  - [ListDocumentClassifiersPaginatorName](#listdocumentclassifierspaginatorname)
-  - [ListDominantLanguageDetectionJobsPaginatorName](#listdominantlanguagedetectionjobspaginatorname)
-  - [ListEntitiesDetectionJobsPaginatorName](#listentitiesdetectionjobspaginatorname)
-  - [ListEntityRecognizersPaginatorName](#listentityrecognizerspaginatorname)
-  - [ListKeyPhrasesDetectionJobsPaginatorName](#listkeyphrasesdetectionjobspaginatorname)
-  - [ListSentimentDetectionJobsPaginatorName](#listsentimentdetectionjobspaginatorname)
-  - [ListTopicsDetectionJobsPaginatorName](#listtopicsdetectionjobspaginatorname)
-  - [ModelStatusType](#modelstatustype)
-  - [PartOfSpeechTagTypeType](#partofspeechtagtypetype)
-  - [PiiEntitiesDetectionMaskModeType](#piientitiesdetectionmaskmodetype)
-  - [PiiEntitiesDetectionModeType](#piientitiesdetectionmodetype)
-  - [PiiEntityTypeType](#piientitytypetype)
-  - [SentimentTypeType](#sentimenttypetype)
-  - [SplitType](#splittype)
-  - [SyntaxLanguageCodeType](#syntaxlanguagecodetype)
-  - [ComprehendServiceName](#comprehendservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="augmentedmanifestsdocumenttypeformattype"></a>
+    Auto-generated documentation for [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
+    type annotations stubs module [mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 ## AugmentedManifestsDocumentTypeFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatType
+
+def get_value() -> AugmentedManifestsDocumentTypeFormatType:
+    return "PLAIN_TEXT_DOCUMENT"
 ```
 
-Values:
-
-- `PLAIN_TEXT_DOCUMENT`
-- `SEMI_STRUCTURED_DOCUMENT`
-
-<a id="documentclassifierdataformattype"></a>
-
+```python title="Definition"
+AugmentedManifestsDocumentTypeFormatType = Literal[
+    "PLAIN_TEXT_DOCUMENT",
+    "SEMI_STRUCTURED_DOCUMENT",
+]
+```
 ## DocumentClassifierDataFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import DocumentClassifierDataFormatType
+
+def get_value() -> DocumentClassifierDataFormatType:
+    return "AUGMENTED_MANIFEST"
 ```
 
-Values:
-
-- `AUGMENTED_MANIFEST`
-- `COMPREHEND_CSV`
-
-<a id="documentclassifiermodetype"></a>
-
+```python title="Definition"
+DocumentClassifierDataFormatType = Literal[
+    "AUGMENTED_MANIFEST",
+    "COMPREHEND_CSV",
+]
+```
 ## DocumentClassifierModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import DocumentClassifierModeType
+
+def get_value() -> DocumentClassifierModeType:
+    return "MULTI_CLASS"
 ```
 
-Values:
-
-- `MULTI_CLASS`
-- `MULTI_LABEL`
-
-<a id="documentreadactiontype"></a>
-
+```python title="Definition"
+DocumentClassifierModeType = Literal[
+    "MULTI_CLASS",
+    "MULTI_LABEL",
+]
+```
 ## DocumentReadActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import DocumentReadActionType
+
+def get_value() -> DocumentReadActionType:
+    return "TEXTRACT_ANALYZE_DOCUMENT"
 ```
 
-Values:
-
-- `TEXTRACT_ANALYZE_DOCUMENT`
-- `TEXTRACT_DETECT_DOCUMENT_TEXT`
-
-<a id="documentreadfeaturetypestype"></a>
-
+```python title="Definition"
+DocumentReadActionType = Literal[
+    "TEXTRACT_ANALYZE_DOCUMENT",
+    "TEXTRACT_DETECT_DOCUMENT_TEXT",
+]
+```
 ## DocumentReadFeatureTypesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import DocumentReadFeatureTypesType
+
+def get_value() -> DocumentReadFeatureTypesType:
+    return "FORMS"
 ```
 
-Values:
-
-- `FORMS`
-- `TABLES`
-
-<a id="documentreadmodetype"></a>
-
+```python title="Definition"
+DocumentReadFeatureTypesType = Literal[
+    "FORMS",
+    "TABLES",
+]
+```
 ## DocumentReadModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import DocumentReadModeType
+
+def get_value() -> DocumentReadModeType:
+    return "FORCE_DOCUMENT_READ_ACTION"
 ```
 
-Values:
-
-- `FORCE_DOCUMENT_READ_ACTION`
-- `SERVICE_DEFAULT`
-
-<a id="endpointstatustype"></a>
-
+```python title="Definition"
+DocumentReadModeType = Literal[
+    "FORCE_DOCUMENT_READ_ACTION",
+    "SERVICE_DEFAULT",
+]
+```
 ## EndpointStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import EndpointStatusType
+
+def get_value() -> EndpointStatusType:
+    return "CREATING"
 ```
 
-Values:
-
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `IN_SERVICE`
-- `UPDATING`
-
-<a id="entityrecognizerdataformattype"></a>
-
+```python title="Definition"
+EndpointStatusType = Literal[
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "IN_SERVICE",
+    "UPDATING",
+]
+```
 ## EntityRecognizerDataFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import EntityRecognizerDataFormatType
+
+def get_value() -> EntityRecognizerDataFormatType:
+    return "AUGMENTED_MANIFEST"
 ```
 
-Values:
-
-- `AUGMENTED_MANIFEST`
-- `COMPREHEND_CSV`
-
-<a id="entitytypetype"></a>
-
+```python title="Definition"
+EntityRecognizerDataFormatType = Literal[
+    "AUGMENTED_MANIFEST",
+    "COMPREHEND_CSV",
+]
+```
 ## EntityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import EntityTypeType
+
+def get_value() -> EntityTypeType:
+    return "COMMERCIAL_ITEM"
 ```
 
-Values:
-
-- `COMMERCIAL_ITEM`
-- `DATE`
-- `EVENT`
-- `LOCATION`
-- `ORGANIZATION`
-- `OTHER`
-- `PERSON`
-- `QUANTITY`
-- `TITLE`
-
-<a id="inputformattype"></a>
-
+```python title="Definition"
+EntityTypeType = Literal[
+    "COMMERCIAL_ITEM",
+    "DATE",
+    "EVENT",
+    "LOCATION",
+    "ORGANIZATION",
+    "OTHER",
+    "PERSON",
+    "QUANTITY",
+    "TITLE",
+]
+```
 ## InputFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import InputFormatType
+
+def get_value() -> InputFormatType:
+    return "ONE_DOC_PER_FILE"
 ```
 
-Values:
-
-- `ONE_DOC_PER_FILE`
-- `ONE_DOC_PER_LINE`
-
-<a id="jobstatustype"></a>
-
+```python title="Definition"
+InputFormatType = Literal[
+    "ONE_DOC_PER_FILE",
+    "ONE_DOC_PER_LINE",
+]
+```
 ## JobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-- `STOP_REQUESTED`
-- `STOPPED`
-- `SUBMITTED`
-
-<a id="languagecodetype"></a>
-
+```python title="Definition"
+JobStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+    "STOP_REQUESTED",
+    "STOPPED",
+    "SUBMITTED",
+]
+```
 ## LanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import LanguageCodeType
+
+def get_value() -> LanguageCodeType:
+    return "ar"
 ```
 
-Values:
-
-- `ar`
-- `de`
-- `en`
-- `es`
-- `fr`
-- `hi`
-- `it`
-- `ja`
-- `ko`
-- `pt`
-- `zh`
-- `zh-TW`
-
-<a id="listdocumentclassificationjobspaginatorname"></a>
-
+```python title="Definition"
+LanguageCodeType = Literal[
+    "ar",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "pt",
+    "zh",
+    "zh-TW",
+]
+```
 ## ListDocumentClassificationJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListDocumentClassificationJobsPaginatorName
+
+def get_value() -> ListDocumentClassificationJobsPaginatorName:
+    return "list_document_classification_jobs"
 ```
 
-Values:
-
-- `list_document_classification_jobs`
-
-<a id="listdocumentclassifierspaginatorname"></a>
-
+```python title="Definition"
+ListDocumentClassificationJobsPaginatorName = Literal[
+    "list_document_classification_jobs",
+]
+```
 ## ListDocumentClassifiersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListDocumentClassifiersPaginatorName
+
+def get_value() -> ListDocumentClassifiersPaginatorName:
+    return "list_document_classifiers"
 ```
 
-Values:
-
-- `list_document_classifiers`
-
-<a id="listdominantlanguagedetectionjobspaginatorname"></a>
-
+```python title="Definition"
+ListDocumentClassifiersPaginatorName = Literal[
+    "list_document_classifiers",
+]
+```
 ## ListDominantLanguageDetectionJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListDominantLanguageDetectionJobsPaginatorName
+
+def get_value() -> ListDominantLanguageDetectionJobsPaginatorName:
+    return "list_dominant_language_detection_jobs"
 ```
 
-Values:
-
-- `list_dominant_language_detection_jobs`
-
-<a id="listentitiesdetectionjobspaginatorname"></a>
-
+```python title="Definition"
+ListDominantLanguageDetectionJobsPaginatorName = Literal[
+    "list_dominant_language_detection_jobs",
+]
+```
 ## ListEntitiesDetectionJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListEntitiesDetectionJobsPaginatorName
+
+def get_value() -> ListEntitiesDetectionJobsPaginatorName:
+    return "list_entities_detection_jobs"
 ```
 
-Values:
-
-- `list_entities_detection_jobs`
-
-<a id="listentityrecognizerspaginatorname"></a>
-
+```python title="Definition"
+ListEntitiesDetectionJobsPaginatorName = Literal[
+    "list_entities_detection_jobs",
+]
+```
 ## ListEntityRecognizersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListEntityRecognizersPaginatorName
+
+def get_value() -> ListEntityRecognizersPaginatorName:
+    return "list_entity_recognizers"
 ```
 
-Values:
-
-- `list_entity_recognizers`
-
-<a id="listkeyphrasesdetectionjobspaginatorname"></a>
-
+```python title="Definition"
+ListEntityRecognizersPaginatorName = Literal[
+    "list_entity_recognizers",
+]
+```
 ## ListKeyPhrasesDetectionJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListKeyPhrasesDetectionJobsPaginatorName
+
+def get_value() -> ListKeyPhrasesDetectionJobsPaginatorName:
+    return "list_key_phrases_detection_jobs"
 ```
 
-Values:
-
-- `list_key_phrases_detection_jobs`
-
-<a id="listsentimentdetectionjobspaginatorname"></a>
-
+```python title="Definition"
+ListKeyPhrasesDetectionJobsPaginatorName = Literal[
+    "list_key_phrases_detection_jobs",
+]
+```
 ## ListSentimentDetectionJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListSentimentDetectionJobsPaginatorName
+
+def get_value() -> ListSentimentDetectionJobsPaginatorName:
+    return "list_sentiment_detection_jobs"
 ```
 
-Values:
-
-- `list_sentiment_detection_jobs`
-
-<a id="listtopicsdetectionjobspaginatorname"></a>
-
+```python title="Definition"
+ListSentimentDetectionJobsPaginatorName = Literal[
+    "list_sentiment_detection_jobs",
+]
+```
 ## ListTopicsDetectionJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ListTopicsDetectionJobsPaginatorName
+
+def get_value() -> ListTopicsDetectionJobsPaginatorName:
+    return "list_topics_detection_jobs"
 ```
 
-Values:
-
-- `list_topics_detection_jobs`
-
-<a id="modelstatustype"></a>
-
+```python title="Definition"
+ListTopicsDetectionJobsPaginatorName = Literal[
+    "list_topics_detection_jobs",
+]
+```
 ## ModelStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ModelStatusType
+
+def get_value() -> ModelStatusType:
+    return "DELETING"
 ```
 
-Values:
-
-- `DELETING`
-- `IN_ERROR`
-- `STOP_REQUESTED`
-- `STOPPED`
-- `SUBMITTED`
-- `TRAINED`
-- `TRAINING`
-
-<a id="partofspeechtagtypetype"></a>
-
+```python title="Definition"
+ModelStatusType = Literal[
+    "DELETING",
+    "IN_ERROR",
+    "STOP_REQUESTED",
+    "STOPPED",
+    "SUBMITTED",
+    "TRAINED",
+    "TRAINING",
+]
+```
 ## PartOfSpeechTagTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import PartOfSpeechTagTypeType
+
+def get_value() -> PartOfSpeechTagTypeType:
+    return "ADJ"
 ```
 
-Values:
-
-- `ADJ`
-- `ADP`
-- `ADV`
-- `AUX`
-- `CCONJ`
-- `CONJ`
-- `DET`
-- `INTJ`
-- `NOUN`
-- `NUM`
-- `O`
-- `PART`
-- `PRON`
-- `PROPN`
-- `PUNCT`
-- `SCONJ`
-- `SYM`
-- `VERB`
-
-<a id="piientitiesdetectionmaskmodetype"></a>
-
+```python title="Definition"
+PartOfSpeechTagTypeType = Literal[
+    "ADJ",
+    "ADP",
+    "ADV",
+    "AUX",
+    "CCONJ",
+    "CONJ",
+    "DET",
+    "INTJ",
+    "NOUN",
+    "NUM",
+    "O",
+    "PART",
+    "PRON",
+    "PROPN",
+    "PUNCT",
+    "SCONJ",
+    "SYM",
+    "VERB",
+]
+```
 ## PiiEntitiesDetectionMaskModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import PiiEntitiesDetectionMaskModeType
+
+def get_value() -> PiiEntitiesDetectionMaskModeType:
+    return "MASK"
 ```
 
-Values:
-
-- `MASK`
-- `REPLACE_WITH_PII_ENTITY_TYPE`
-
-<a id="piientitiesdetectionmodetype"></a>
-
+```python title="Definition"
+PiiEntitiesDetectionMaskModeType = Literal[
+    "MASK",
+    "REPLACE_WITH_PII_ENTITY_TYPE",
+]
+```
 ## PiiEntitiesDetectionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import PiiEntitiesDetectionModeType
+
+def get_value() -> PiiEntitiesDetectionModeType:
+    return "ONLY_OFFSETS"
 ```
 
-Values:
-
-- `ONLY_OFFSETS`
-- `ONLY_REDACTION`
-
-<a id="piientitytypetype"></a>
-
+```python title="Definition"
+PiiEntitiesDetectionModeType = Literal[
+    "ONLY_OFFSETS",
+    "ONLY_REDACTION",
+]
+```
 ## PiiEntityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import PiiEntityTypeType
+
+def get_value() -> PiiEntityTypeType:
+    return "ADDRESS"
 ```
 
-Values:
-
-- `ADDRESS`
-- `AGE`
-- `ALL`
-- `AWS_ACCESS_KEY`
-- `AWS_SECRET_KEY`
-- `BANK_ACCOUNT_NUMBER`
-- `BANK_ROUTING`
-- `CREDIT_DEBIT_CVV`
-- `CREDIT_DEBIT_EXPIRY`
-- `CREDIT_DEBIT_NUMBER`
-- `DATE_TIME`
-- `DRIVER_ID`
-- `EMAIL`
-- `IP_ADDRESS`
-- `MAC_ADDRESS`
-- `NAME`
-- `PASSPORT_NUMBER`
-- `PASSWORD`
-- `PHONE`
-- `PIN`
-- `SSN`
-- `URL`
-- `USERNAME`
-
-<a id="sentimenttypetype"></a>
-
+```python title="Definition"
+PiiEntityTypeType = Literal[
+    "ADDRESS",
+    "AGE",
+    "ALL",
+    "AWS_ACCESS_KEY",
+    "AWS_SECRET_KEY",
+    "BANK_ACCOUNT_NUMBER",
+    "BANK_ROUTING",
+    "CREDIT_DEBIT_CVV",
+    "CREDIT_DEBIT_EXPIRY",
+    "CREDIT_DEBIT_NUMBER",
+    "DATE_TIME",
+    "DRIVER_ID",
+    "EMAIL",
+    "IP_ADDRESS",
+    "MAC_ADDRESS",
+    "NAME",
+    "PASSPORT_NUMBER",
+    "PASSWORD",
+    "PHONE",
+    "PIN",
+    "SSN",
+    "URL",
+    "USERNAME",
+]
+```
 ## SentimentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import SentimentTypeType
+
+def get_value() -> SentimentTypeType:
+    return "MIXED"
 ```
 
-Values:
-
-- `MIXED`
-- `NEGATIVE`
-- `NEUTRAL`
-- `POSITIVE`
-
-<a id="splittype"></a>
-
+```python title="Definition"
+SentimentTypeType = Literal[
+    "MIXED",
+    "NEGATIVE",
+    "NEUTRAL",
+    "POSITIVE",
+]
+```
 ## SplitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import SplitType
+
+def get_value() -> SplitType:
+    return "TEST"
 ```
 
-Values:
-
-- `TEST`
-- `TRAIN`
-
-<a id="syntaxlanguagecodetype"></a>
-
+```python title="Definition"
+SplitType = Literal[
+    "TEST",
+    "TRAIN",
+]
+```
 ## SyntaxLanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import SyntaxLanguageCodeType
+
+def get_value() -> SyntaxLanguageCodeType:
+    return "de"
 ```
 
-Values:
-
-- `de`
-- `en`
-- `es`
-- `fr`
-- `it`
-- `pt`
-
-<a id="comprehendservicename"></a>
-
+```python title="Definition"
+SyntaxLanguageCodeType = Literal[
+    "de",
+    "en",
+    "es",
+    "fr",
+    "it",
+    "pt",
+]
+```
 ## ComprehendServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ComprehendServiceName
+
+def get_value() -> ComprehendServiceName:
+    return "comprehend"
 ```
 
-Values:
-
-- `comprehend`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ComprehendServiceName = Literal[
+    "comprehend",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_comprehend.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_document_classification_jobs"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_document_classification_jobs",
+    "list_document_classifiers",
+    "list_dominant_language_detection_jobs",
+    "list_entities_detection_jobs",
+    "list_entity_recognizers",
+    "list_key_phrases_detection_jobs",
+    "list_sentiment_detection_jobs",
+    "list_topics_detection_jobs",
+]
+```
+## RegionName
 
-- `list_document_classification_jobs`
-- `list_document_classifiers`
-- `list_dominant_language_detection_jobs`
-- `list_entities_detection_jobs`
-- `list_entity_recognizers`
-- `list_key_phrases_detection_jobs`
-- `list_sentiment_detection_jobs`
-- `list_topics_detection_jobs`
+```python title="Usage Example"
+from mypy_boto3_comprehend.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

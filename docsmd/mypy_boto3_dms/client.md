@@ -1,89 +1,18 @@
-<a id="databasemigrationserviceclient-for-boto3-databasemigrationservice-module"></a>
+# DatabaseMigrationServiceClient
 
-# DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module
+> [Index](../README.md) > [DatabaseMigrationService](./README.md) > DatabaseMigrationServiceClient
 
-> [Index](../README.md) > [DatabaseMigrationService](./README.md) >
-> DatabaseMigrationServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module
-[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
-
-- [DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module](#databasemigrationserviceclient-for-boto3-databasemigrationservice-module)
-  - [DatabaseMigrationServiceClient](#databasemigrationserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags_to_resource](#add_tags_to_resource)
-    - [apply_pending_maintenance_action](#apply_pending_maintenance_action)
-    - [can_paginate](#can_paginate)
-    - [cancel_replication_task_assessment_run](#cancel_replication_task_assessment_run)
-    - [create_endpoint](#create_endpoint)
-    - [create_event_subscription](#create_event_subscription)
-    - [create_replication_instance](#create_replication_instance)
-    - [create_replication_subnet_group](#create_replication_subnet_group)
-    - [create_replication_task](#create_replication_task)
-    - [delete_certificate](#delete_certificate)
-    - [delete_connection](#delete_connection)
-    - [delete_endpoint](#delete_endpoint)
-    - [delete_event_subscription](#delete_event_subscription)
-    - [delete_replication_instance](#delete_replication_instance)
-    - [delete_replication_subnet_group](#delete_replication_subnet_group)
-    - [delete_replication_task](#delete_replication_task)
-    - [delete_replication_task_assessment_run](#delete_replication_task_assessment_run)
-    - [describe_account_attributes](#describe_account_attributes)
-    - [describe_applicable_individual_assessments](#describe_applicable_individual_assessments)
-    - [describe_certificates](#describe_certificates)
-    - [describe_connections](#describe_connections)
-    - [describe_endpoint_settings](#describe_endpoint_settings)
-    - [describe_endpoint_types](#describe_endpoint_types)
-    - [describe_endpoints](#describe_endpoints)
-    - [describe_event_categories](#describe_event_categories)
-    - [describe_event_subscriptions](#describe_event_subscriptions)
-    - [describe_events](#describe_events)
-    - [describe_orderable_replication_instances](#describe_orderable_replication_instances)
-    - [describe_pending_maintenance_actions](#describe_pending_maintenance_actions)
-    - [describe_refresh_schemas_status](#describe_refresh_schemas_status)
-    - [describe_replication_instance_task_logs](#describe_replication_instance_task_logs)
-    - [describe_replication_instances](#describe_replication_instances)
-    - [describe_replication_subnet_groups](#describe_replication_subnet_groups)
-    - [describe_replication_task_assessment_results](#describe_replication_task_assessment_results)
-    - [describe_replication_task_assessment_runs](#describe_replication_task_assessment_runs)
-    - [describe_replication_task_individual_assessments](#describe_replication_task_individual_assessments)
-    - [describe_replication_tasks](#describe_replication_tasks)
-    - [describe_schemas](#describe_schemas)
-    - [describe_table_statistics](#describe_table_statistics)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_certificate](#import_certificate)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [modify_endpoint](#modify_endpoint)
-    - [modify_event_subscription](#modify_event_subscription)
-    - [modify_replication_instance](#modify_replication_instance)
-    - [modify_replication_subnet_group](#modify_replication_subnet_group)
-    - [modify_replication_task](#modify_replication_task)
-    - [move_replication_task](#move_replication_task)
-    - [reboot_replication_instance](#reboot_replication_instance)
-    - [refresh_schemas](#refresh_schemas)
-    - [reload_tables](#reload_tables)
-    - [remove_tags_from_resource](#remove_tags_from_resource)
-    - [start_replication_task](#start_replication_task)
-    - [start_replication_task_assessment](#start_replication_task_assessment)
-    - [start_replication_task_assessment_run](#start_replication_task_assessment_run)
-    - [stop_replication_task](#stop_replication_task)
-    - [test_connection](#test_connection)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="databasemigrationserviceclient"></a>
+    Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+    type annotations stubs module [mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ## DatabaseMigrationServiceClient
 
-Type annotations for `boto3.client("dms")`
+Type annotations and code completion for `#!python boto3.client("dms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 
@@ -91,1571 +20,2012 @@ def get_dms_client() -> DatabaseMigrationServiceClient:
     return Session().client("dms")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("dms").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("dms")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedFault,
+    client.ClientError,
+    client.InsufficientResourceCapacityFault,
+    client.InvalidCertificateFault,
+    client.InvalidResourceStateFault,
+    client.InvalidSubnet,
+    client.KMSAccessDeniedFault,
+    client.KMSDisabledFault,
+    client.KMSFault,
+    client.KMSInvalidStateFault,
+    client.KMSKeyNotAccessibleFault,
+    client.KMSNotFoundFault,
+    client.KMSThrottlingFault,
+    client.ReplicationSubnetGroupDoesNotCoverEnoughAZs,
+    client.ResourceAlreadyExistsFault,
+    client.ResourceNotFoundFault,
+    client.ResourceQuotaExceededFault,
+    client.S3AccessDeniedFault,
+    client.S3ResourceNotFoundFault,
+    client.SNSInvalidTopicFault,
+    client.SNSNoAuthorizationFault,
+    client.StorageQuotaExceededFault,
+    client.SubnetAlreadyInUse,
+    client.UpgradeDependencyFailureFault,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_dms.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedFault) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedFault`
-- `Exceptions.ClientError`
-- `Exceptions.InsufficientResourceCapacityFault`
-- `Exceptions.InvalidCertificateFault`
-- `Exceptions.InvalidResourceStateFault`
-- `Exceptions.InvalidSubnet`
-- `Exceptions.KMSAccessDeniedFault`
-- `Exceptions.KMSDisabledFault`
-- `Exceptions.KMSFault`
-- `Exceptions.KMSInvalidStateFault`
-- `Exceptions.KMSKeyNotAccessibleFault`
-- `Exceptions.KMSNotFoundFault`
-- `Exceptions.KMSThrottlingFault`
-- `Exceptions.ReplicationSubnetGroupDoesNotCoverEnoughAZs`
-- `Exceptions.ResourceAlreadyExistsFault`
-- `Exceptions.ResourceNotFoundFault`
-- `Exceptions.ResourceQuotaExceededFault`
-- `Exceptions.S3AccessDeniedFault`
-- `Exceptions.S3ResourceNotFoundFault`
-- `Exceptions.SNSInvalidTopicFault`
-- `Exceptions.SNSNoAuthorizationFault`
-- `Exceptions.StorageQuotaExceededFault`
-- `Exceptions.SubnetAlreadyInUse`
-- `Exceptions.UpgradeDependencyFailureFault`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DatabaseMigrationServiceClient exceptions.
-
-Type annotations for `boto3.client("dms").exceptions` method.
-
-Boto3 documentation:
-[DatabaseMigrationService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags\_to\_resource"></a>
-
-### add_tags_to_resource
+### add\_tags\_to\_resource
 
 .
 
-Type annotations for `boto3.client("dms").add_tags_to_resource` method.
+Type annotations and code completion for `#!python boto3.client("dms").add_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.add_tags_to_resource)
+```python title="Method definition"
+def add_tags_to_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToResourceMessageRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags_to_resource(**kwargs)
+```
 
-<a id="apply\_pending\_maintenance\_action"></a>
+1. See [:material-code-braces: AddTagsToResourceMessageRequestTypeDef](./type_defs.md#addtagstoresourcemessagerequesttypedef) 
 
-### apply_pending_maintenance_action
+### apply\_pending\_maintenance\_action
 
 Applies a pending maintenance action to a resource (for example, to a
 replication instance).
 
-Type annotations for `boto3.client("dms").apply_pending_maintenance_action`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").apply_pending_maintenance_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.apply_pending_maintenance_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.apply_pending_maintenance_action)
+```python title="Method definition"
+def apply_pending_maintenance_action(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+    ApplyAction: str,
+    OptInType: str,
+) -> ApplyPendingMaintenanceActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef).
+1. See [:material-code-braces: ApplyPendingMaintenanceActionResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
-- `ApplyAction`: `str` *(required)*
-- `OptInType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ApplyPendingMaintenanceActionMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+    "ApplyAction": ...,
+    "OptInType": ...,
+}
 
-Returns
-[ApplyPendingMaintenanceActionResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresponsetypedef).
+parent.apply_pending_maintenance_action(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: ApplyPendingMaintenanceActionMessageRequestTypeDef](./type_defs.md#applypendingmaintenanceactionmessagerequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("dms").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("dms").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_replication\_task\_assessment\_run"></a>
-
-### cancel_replication_task_assessment_run
+### cancel\_replication\_task\_assessment\_run
 
 Cancels a single premigration assessment run.
 
-Type annotations for
-`boto3.client("dms").cancel_replication_task_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("dms").cancel_replication_task_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.cancel_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.cancel_replication_task_assessment_run)
+```python title="Method definition"
+def cancel_replication_task_assessment_run(
+    self,
+    *,
+    ReplicationTaskAssessmentRunArn: str,
+) -> CancelReplicationTaskAssessmentRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunmessagerequesttypedef).
+1. See [:material-code-braces: CancelReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskAssessmentRunArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelReplicationTaskAssessmentRunMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskAssessmentRunArn": ...,
+}
 
-Returns
-[CancelReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunresponsetypedef).
+parent.cancel_replication_task_assessment_run(**kwargs)
+```
 
-<a id="create\_endpoint"></a>
+1. See [:material-code-braces: CancelReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunmessagerequesttypedef) 
 
-### create_endpoint
+### create\_endpoint
 
 .
 
-Type annotations for `boto3.client("dms").create_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("dms").create_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_endpoint)
+```python title="Method definition"
+def create_endpoint(
+    self,
+    *,
+    EndpointIdentifier: str,
+    EndpointType: ReplicationEndpointTypeValueType,  # (1)
+    EngineName: str,
+    Username: str = ...,
+    Password: str = ...,
+    ServerName: str = ...,
+    Port: int = ...,
+    DatabaseName: str = ...,
+    ExtraConnectionAttributes: str = ...,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    CertificateArn: str = ...,
+    SslMode: DmsSslModeValueType = ...,  # (3)
+    ServiceAccessRoleArn: str = ...,
+    ExternalTableDefinition: str = ...,
+    DynamoDbSettings: DynamoDbSettingsTypeDef = ...,  # (4)
+    S3Settings: S3SettingsTypeDef = ...,  # (5)
+    DmsTransferSettings: DmsTransferSettingsTypeDef = ...,  # (6)
+    MongoDbSettings: MongoDbSettingsTypeDef = ...,  # (7)
+    KinesisSettings: KinesisSettingsTypeDef = ...,  # (8)
+    KafkaSettings: KafkaSettingsTypeDef = ...,  # (9)
+    ElasticsearchSettings: ElasticsearchSettingsTypeDef = ...,  # (10)
+    NeptuneSettings: NeptuneSettingsTypeDef = ...,  # (11)
+    RedshiftSettings: RedshiftSettingsTypeDef = ...,  # (12)
+    PostgreSQLSettings: PostgreSQLSettingsTypeDef = ...,  # (13)
+    MySQLSettings: MySQLSettingsTypeDef = ...,  # (14)
+    OracleSettings: OracleSettingsTypeDef = ...,  # (15)
+    SybaseSettings: SybaseSettingsTypeDef = ...,  # (16)
+    MicrosoftSQLServerSettings: MicrosoftSQLServerSettingsTypeDef = ...,  # (17)
+    IBMDb2Settings: IBMDb2SettingsTypeDef = ...,  # (18)
+    ResourceIdentifier: str = ...,
+    DocDbSettings: DocDbSettingsTypeDef = ...,  # (19)
+    RedisSettings: RedisSettingsTypeDef = ...,  # (20)
+    GcpMySQLSettings: GcpMySQLSettingsTypeDef = ...,  # (21)
+) -> CreateEndpointResponseTypeDef:  # (22)
+    ...
+```
 
-Arguments mapping described in
-[CreateEndpointMessageRequestTypeDef](./type_defs.md#createendpointmessagerequesttypedef).
+1. See [:material-code-brackets: ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: DmsSslModeValueType](./literals.md#dmssslmodevaluetype) 
+4. See [:material-code-braces: DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef) 
+5. See [:material-code-braces: S3SettingsTypeDef](./type_defs.md#s3settingstypedef) 
+6. See [:material-code-braces: DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef) 
+7. See [:material-code-braces: MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef) 
+8. See [:material-code-braces: KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef) 
+9. See [:material-code-braces: KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef) 
+10. See [:material-code-braces: ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef) 
+11. See [:material-code-braces: NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef) 
+12. See [:material-code-braces: RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef) 
+13. See [:material-code-braces: PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef) 
+14. See [:material-code-braces: MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef) 
+15. See [:material-code-braces: OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef) 
+16. See [:material-code-braces: SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef) 
+17. See [:material-code-braces: MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef) 
+18. See [:material-code-braces: IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef) 
+19. See [:material-code-braces: DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef) 
+20. See [:material-code-braces: RedisSettingsTypeDef](./type_defs.md#redissettingstypedef) 
+21. See [:material-code-braces: GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef) 
+22. See [:material-code-braces: CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointIdentifier`: `str` *(required)*
-- `EndpointType`:
-  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
-  *(required)*
-- `EngineName`: `str` *(required)*
-- `Username`: `str`
-- `Password`: `str`
-- `ServerName`: `str`
-- `Port`: `int`
-- `DatabaseName`: `str`
-- `ExtraConnectionAttributes`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CertificateArn`: `str`
-- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
-- `ServiceAccessRoleArn`: `str`
-- `ExternalTableDefinition`: `str`
-- `DynamoDbSettings`:
-  [DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef)
-- `S3Settings`: [S3SettingsTypeDef](./type_defs.md#s3settingstypedef)
-- `DmsTransferSettings`:
-  [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
-- `MongoDbSettings`:
-  [MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef)
-- `KinesisSettings`:
-  [KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef)
-- `KafkaSettings`: [KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef)
-- `ElasticsearchSettings`:
-  [ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef)
-- `NeptuneSettings`:
-  [NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef)
-- `RedshiftSettings`:
-  [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
-- `PostgreSQLSettings`:
-  [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
-- `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
-- `OracleSettings`:
-  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
-- `SybaseSettings`:
-  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
-- `MicrosoftSQLServerSettings`:
-  [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`:
-  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
-- `ResourceIdentifier`: `str`
-- `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
-- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
-- `GcpMySQLSettings`:
-  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateEndpointMessageRequestTypeDef = {  # (1)
+    "EndpointIdentifier": ...,
+    "EndpointType": ...,
+    "EngineName": ...,
+}
 
-Returns
-[CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
+parent.create_endpoint(**kwargs)
+```
 
-<a id="create\_event\_subscription"></a>
+1. See [:material-code-braces: CreateEndpointMessageRequestTypeDef](./type_defs.md#createendpointmessagerequesttypedef) 
 
-### create_event_subscription
+### create\_event\_subscription
 
 Creates an DMS event notification subscription.
 
-Type annotations for `boto3.client("dms").create_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("dms").create_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.create_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_event_subscription)
+```python title="Method definition"
+def create_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SnsTopicArn: str,
+    SourceType: str = ...,
+    EventCategories: Sequence[str] = ...,
+    SourceIds: Sequence[str] = ...,
+    Enabled: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateEventSubscriptionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateEventSubscriptionResponseTypeDef](./type_defs.md#createeventsubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SnsTopicArn`: `str` *(required)*
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `SourceIds`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+    "SnsTopicArn": ...,
+}
 
-Returns
-[CreateEventSubscriptionResponseTypeDef](./type_defs.md#createeventsubscriptionresponsetypedef).
+parent.create_event_subscription(**kwargs)
+```
 
-<a id="create\_replication\_instance"></a>
+1. See [:material-code-braces: CreateEventSubscriptionMessageRequestTypeDef](./type_defs.md#createeventsubscriptionmessagerequesttypedef) 
 
-### create_replication_instance
+### create\_replication\_instance
 
 Creates the replication instance using the specified parameters.
 
-Type annotations for `boto3.client("dms").create_replication_instance` method.
+Type annotations and code completion for `#!python boto3.client("dms").create_replication_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_instance)
+```python title="Method definition"
+def create_replication_instance(
+    self,
+    *,
+    ReplicationInstanceIdentifier: str,
+    ReplicationInstanceClass: str,
+    AllocatedStorage: int = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    AvailabilityZone: str = ...,
+    ReplicationSubnetGroupIdentifier: str = ...,
+    PreferredMaintenanceWindow: str = ...,
+    MultiAZ: bool = ...,
+    EngineVersion: str = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    KmsKeyId: str = ...,
+    PubliclyAccessible: bool = ...,
+    DnsNameServers: str = ...,
+    ResourceIdentifier: str = ...,
+) -> CreateReplicationInstanceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationInstanceMessageRequestTypeDef](./type_defs.md#createreplicationinstancemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateReplicationInstanceResponseTypeDef](./type_defs.md#createreplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceIdentifier`: `str` *(required)*
-- `ReplicationInstanceClass`: `str` *(required)*
-- `AllocatedStorage`: `int`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `AvailabilityZone`: `str`
-- `ReplicationSubnetGroupIdentifier`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-- `PubliclyAccessible`: `bool`
-- `DnsNameServers`: `str`
-- `ResourceIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationInstanceMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceIdentifier": ...,
+    "ReplicationInstanceClass": ...,
+}
 
-Returns
-[CreateReplicationInstanceResponseTypeDef](./type_defs.md#createreplicationinstanceresponsetypedef).
+parent.create_replication_instance(**kwargs)
+```
 
-<a id="create\_replication\_subnet\_group"></a>
+1. See [:material-code-braces: CreateReplicationInstanceMessageRequestTypeDef](./type_defs.md#createreplicationinstancemessagerequesttypedef) 
 
-### create_replication_subnet_group
+### create\_replication\_subnet\_group
 
 Creates a replication subnet group given a list of the subnet IDs in a VPC.
 
-Type annotations for `boto3.client("dms").create_replication_subnet_group`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").create_replication_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_subnet_group)
+```python title="Method definition"
+def create_replication_subnet_group(
+    self,
+    *,
+    ReplicationSubnetGroupIdentifier: str,
+    ReplicationSubnetGroupDescription: str,
+    SubnetIds: Sequence[str],
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateReplicationSubnetGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#createreplicationsubnetgroupmessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateReplicationSubnetGroupResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
-- `ReplicationSubnetGroupDescription`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationSubnetGroupMessageRequestTypeDef = {  # (1)
+    "ReplicationSubnetGroupIdentifier": ...,
+    "ReplicationSubnetGroupDescription": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateReplicationSubnetGroupResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponsetypedef).
+parent.create_replication_subnet_group(**kwargs)
+```
 
-<a id="create\_replication\_task"></a>
+1. See [:material-code-braces: CreateReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#createreplicationsubnetgroupmessagerequesttypedef) 
 
-### create_replication_task
+### create\_replication\_task
 
 .
 
-Type annotations for `boto3.client("dms").create_replication_task` method.
+Type annotations and code completion for `#!python boto3.client("dms").create_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.create_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.create_replication_task)
+```python title="Method definition"
+def create_replication_task(
+    self,
+    *,
+    ReplicationTaskIdentifier: str,
+    SourceEndpointArn: str,
+    TargetEndpointArn: str,
+    ReplicationInstanceArn: str,
+    MigrationType: MigrationTypeValueType,  # (1)
+    TableMappings: str,
+    ReplicationTaskSettings: str = ...,
+    CdcStartTime: Union[datetime, str] = ...,
+    CdcStartPosition: str = ...,
+    CdcStopPosition: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    TaskData: str = ...,
+    ResourceIdentifier: str = ...,
+) -> CreateReplicationTaskResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationTaskMessageRequestTypeDef](./type_defs.md#createreplicationtaskmessagerequesttypedef).
+1. See [:material-code-brackets: MigrationTypeValueType](./literals.md#migrationtypevaluetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateReplicationTaskResponseTypeDef](./type_defs.md#createreplicationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskIdentifier`: `str` *(required)*
-- `SourceEndpointArn`: `str` *(required)*
-- `TargetEndpointArn`: `str` *(required)*
-- `ReplicationInstanceArn`: `str` *(required)*
-- `MigrationType`:
-  [MigrationTypeValueType](./literals.md#migrationtypevaluetype) *(required)*
-- `TableMappings`: `str` *(required)*
-- `ReplicationTaskSettings`: `str`
-- `CdcStartTime`: `Union`\[`datetime`, `str`\]
-- `CdcStartPosition`: `str`
-- `CdcStopPosition`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TaskData`: `str`
-- `ResourceIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskIdentifier": ...,
+    "SourceEndpointArn": ...,
+    "TargetEndpointArn": ...,
+    "ReplicationInstanceArn": ...,
+    "MigrationType": ...,
+    "TableMappings": ...,
+}
 
-Returns
-[CreateReplicationTaskResponseTypeDef](./type_defs.md#createreplicationtaskresponsetypedef).
+parent.create_replication_task(**kwargs)
+```
 
-<a id="delete\_certificate"></a>
+1. See [:material-code-braces: CreateReplicationTaskMessageRequestTypeDef](./type_defs.md#createreplicationtaskmessagerequesttypedef) 
 
-### delete_certificate
+### delete\_certificate
 
 Deletes the specified certificate.
 
-Type annotations for `boto3.client("dms").delete_certificate` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_certificate)
+```python title="Method definition"
+def delete_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> DeleteCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCertificateMessageRequestTypeDef](./type_defs.md#deletecertificatemessagerequesttypedef).
+1. See [:material-code-braces: DeleteCertificateResponseTypeDef](./type_defs.md#deletecertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCertificateMessageRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-Returns
-[DeleteCertificateResponseTypeDef](./type_defs.md#deletecertificateresponsetypedef).
+parent.delete_certificate(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: DeleteCertificateMessageRequestTypeDef](./type_defs.md#deletecertificatemessagerequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 Deletes the connection between a replication instance and an endpoint.
 
-Type annotations for `boto3.client("dms").delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    EndpointArn: str,
+    ReplicationInstanceArn: str,
+) -> DeleteConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionMessageRequestTypeDef](./type_defs.md#deleteconnectionmessagerequesttypedef).
+1. See [:material-code-braces: DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
-- `ReplicationInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_endpoint"></a>
+1. See [:material-code-braces: DeleteConnectionMessageRequestTypeDef](./type_defs.md#deleteconnectionmessagerequesttypedef) 
 
-### delete_endpoint
+### delete\_endpoint
 
 .
 
-Type annotations for `boto3.client("dms").delete_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_endpoint)
+```python title="Method definition"
+def delete_endpoint(
+    self,
+    *,
+    EndpointArn: str,
+) -> DeleteEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEndpointMessageRequestTypeDef](./type_defs.md#deleteendpointmessagerequesttypedef).
+1. See [:material-code-braces: DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
 
-Returns
-[DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
+parent.delete_endpoint(**kwargs)
+```
 
-<a id="delete\_event\_subscription"></a>
+1. See [:material-code-braces: DeleteEndpointMessageRequestTypeDef](./type_defs.md#deleteendpointmessagerequesttypedef) 
 
-### delete_event_subscription
+### delete\_event\_subscription
 
 Deletes an DMS event subscription.
 
-Type annotations for `boto3.client("dms").delete_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_event_subscription)
+```python title="Method definition"
+def delete_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+) -> DeleteEventSubscriptionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: DeleteEventSubscriptionResponseTypeDef](./type_defs.md#deleteeventsubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[DeleteEventSubscriptionResponseTypeDef](./type_defs.md#deleteeventsubscriptionresponsetypedef).
+parent.delete_event_subscription(**kwargs)
+```
 
-<a id="delete\_replication\_instance"></a>
+1. See [:material-code-braces: DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef) 
 
-### delete_replication_instance
+### delete\_replication\_instance
 
 Deletes the specified replication instance.
 
-Type annotations for `boto3.client("dms").delete_replication_instance` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_replication_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_instance)
+```python title="Method definition"
+def delete_replication_instance(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+) -> DeleteReplicationInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationInstanceMessageRequestTypeDef](./type_defs.md#deletereplicationinstancemessagerequesttypedef).
+1. See [:material-code-braces: DeleteReplicationInstanceResponseTypeDef](./type_defs.md#deletereplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationInstanceMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[DeleteReplicationInstanceResponseTypeDef](./type_defs.md#deletereplicationinstanceresponsetypedef).
+parent.delete_replication_instance(**kwargs)
+```
 
-<a id="delete\_replication\_subnet\_group"></a>
+1. See [:material-code-braces: DeleteReplicationInstanceMessageRequestTypeDef](./type_defs.md#deletereplicationinstancemessagerequesttypedef) 
 
-### delete_replication_subnet_group
+### delete\_replication\_subnet\_group
 
 Deletes a subnet group.
 
-Type annotations for `boto3.client("dms").delete_replication_subnet_group`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_replication_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_subnet_group)
+```python title="Method definition"
+def delete_replication_subnet_group(
+    self,
+    *,
+    ReplicationSubnetGroupIdentifier: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#deletereplicationsubnetgroupmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationSubnetGroupMessageRequestTypeDef = {  # (1)
+    "ReplicationSubnetGroupIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_replication_subnet_group(**kwargs)
+```
 
-<a id="delete\_replication\_task"></a>
+1. See [:material-code-braces: DeleteReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#deletereplicationsubnetgroupmessagerequesttypedef) 
 
-### delete_replication_task
+### delete\_replication\_task
 
 .
 
-Type annotations for `boto3.client("dms").delete_replication_task` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task)
+```python title="Method definition"
+def delete_replication_task(
+    self,
+    *,
+    ReplicationTaskArn: str,
+) -> DeleteReplicationTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationTaskMessageRequestTypeDef](./type_defs.md#deletereplicationtaskmessagerequesttypedef).
+1. See [:material-code-braces: DeleteReplicationTaskResponseTypeDef](./type_defs.md#deletereplicationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[DeleteReplicationTaskResponseTypeDef](./type_defs.md#deletereplicationtaskresponsetypedef).
+parent.delete_replication_task(**kwargs)
+```
 
-<a id="delete\_replication\_task\_assessment\_run"></a>
+1. See [:material-code-braces: DeleteReplicationTaskMessageRequestTypeDef](./type_defs.md#deletereplicationtaskmessagerequesttypedef) 
 
-### delete_replication_task_assessment_run
+### delete\_replication\_task\_assessment\_run
 
 Deletes the record of a single premigration assessment run.
 
-Type annotations for
-`boto3.client("dms").delete_replication_task_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("dms").delete_replication_task_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.delete_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.delete_replication_task_assessment_run)
+```python title="Method definition"
+def delete_replication_task_assessment_run(
+    self,
+    *,
+    ReplicationTaskAssessmentRunArn: str,
+) -> DeleteReplicationTaskAssessmentRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#deletereplicationtaskassessmentrunmessagerequesttypedef).
+1. See [:material-code-braces: DeleteReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#deletereplicationtaskassessmentrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskAssessmentRunArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationTaskAssessmentRunMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskAssessmentRunArn": ...,
+}
 
-Returns
-[DeleteReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#deletereplicationtaskassessmentrunresponsetypedef).
+parent.delete_replication_task_assessment_run(**kwargs)
+```
 
-<a id="describe\_account\_attributes"></a>
+1. See [:material-code-braces: DeleteReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#deletereplicationtaskassessmentrunmessagerequesttypedef) 
 
-### describe_account_attributes
+### describe\_account\_attributes
 
 Lists all of the DMS attributes for a customer account.
 
-Type annotations for `boto3.client("dms").describe_account_attributes` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_account_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_account_attributes)
+```python title="Method definition"
+def describe_account_attributes(
+    self,
+) -> DescribeAccountAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
+1. See [:material-code-braces: DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef) 
 
-<a id="describe\_applicable\_individual\_assessments"></a>
-
-### describe_applicable_individual_assessments
+### describe\_applicable\_individual\_assessments
 
 Provides a list of individual assessments that you can specify for a new
 premigration assessment run, given one or more parameters.
 
-Type annotations for
-`boto3.client("dms").describe_applicable_individual_assessments` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_applicable_individual_assessments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_applicable_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_applicable_individual_assessments)
+```python title="Method definition"
+def describe_applicable_individual_assessments(
+    self,
+    *,
+    ReplicationTaskArn: str = ...,
+    ReplicationInstanceArn: str = ...,
+    SourceEngineName: str = ...,
+    TargetEngineName: str = ...,
+    MigrationType: MigrationTypeValueType = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeApplicableIndividualAssessmentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicableIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describeapplicableindividualassessmentsmessagerequesttypedef).
+1. See [:material-code-brackets: MigrationTypeValueType](./literals.md#migrationtypevaluetype) 
+2. See [:material-code-braces: DescribeApplicableIndividualAssessmentsResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str`
-- `ReplicationInstanceArn`: `str`
-- `SourceEngineName`: `str`
-- `TargetEngineName`: `str`
-- `MigrationType`:
-  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicableIndividualAssessmentsMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[DescribeApplicableIndividualAssessmentsResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponsetypedef).
+parent.describe_applicable_individual_assessments(**kwargs)
+```
 
-<a id="describe\_certificates"></a>
+1. See [:material-code-braces: DescribeApplicableIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describeapplicableindividualassessmentsmessagerequesttypedef) 
 
-### describe_certificates
+### describe\_certificates
 
 Provides a description of the certificate.
 
-Type annotations for `boto3.client("dms").describe_certificates` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_certificates)
+```python title="Method definition"
+def describe_certificates(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeCertificatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificatesMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef).
+parent.describe_certificates(**kwargs)
+```
 
-<a id="describe\_connections"></a>
+1. See [:material-code-braces: DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef) 
 
-### describe_connections
+### describe\_connections
 
 Describes the status of the connections that have been made between the
 replication instance and an endpoint.
 
-Type annotations for `boto3.client("dms").describe_connections` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_connections)
+```python title="Method definition"
+def describe_connections(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectionsMessageRequestTypeDef](./type_defs.md#describeconnectionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionsMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef).
+parent.describe_connections(**kwargs)
+```
 
-<a id="describe\_endpoint\_settings"></a>
+1. See [:material-code-braces: DescribeConnectionsMessageRequestTypeDef](./type_defs.md#describeconnectionsmessagerequesttypedef) 
 
-### describe_endpoint_settings
+### describe\_endpoint\_settings
 
 Returns information about the possible endpoint settings available when you
 create an endpoint for a specific database engine.
 
-Type annotations for `boto3.client("dms").describe_endpoint_settings` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_endpoint_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoint_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_settings)
+```python title="Method definition"
+def describe_endpoint_settings(
+    self,
+    *,
+    EngineName: str,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEndpointSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndpointSettingsMessageRequestTypeDef](./type_defs.md#describeendpointsettingsmessagerequesttypedef).
+1. See [:material-code-braces: DescribeEndpointSettingsResponseTypeDef](./type_defs.md#describeendpointsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineName`: `str` *(required)*
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointSettingsMessageRequestTypeDef = {  # (1)
+    "EngineName": ...,
+}
 
-Returns
-[DescribeEndpointSettingsResponseTypeDef](./type_defs.md#describeendpointsettingsresponsetypedef).
+parent.describe_endpoint_settings(**kwargs)
+```
 
-<a id="describe\_endpoint\_types"></a>
+1. See [:material-code-braces: DescribeEndpointSettingsMessageRequestTypeDef](./type_defs.md#describeendpointsettingsmessagerequesttypedef) 
 
-### describe_endpoint_types
+### describe\_endpoint\_types
 
 Returns information about the type of endpoints available.
 
-Type annotations for `boto3.client("dms").describe_endpoint_types` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_endpoint_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoint_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoint_types)
+```python title="Method definition"
+def describe_endpoint_types(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEndpointTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndpointTypesMessageRequestTypeDef](./type_defs.md#describeendpointtypesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointTypesMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef).
+parent.describe_endpoint_types(**kwargs)
+```
 
-<a id="describe\_endpoints"></a>
+1. See [:material-code-braces: DescribeEndpointTypesMessageRequestTypeDef](./type_defs.md#describeendpointtypesmessagerequesttypedef) 
 
-### describe_endpoints
-
-.
-
-Type annotations for `boto3.client("dms").describe_endpoints` method.
-
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
-
-Arguments mapping described in
-[DescribeEndpointsMessageRequestTypeDef](./type_defs.md#describeendpointsmessagerequesttypedef).
-
-Keyword-only arguments:
-
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-
-Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
-
-<a id="describe\_event\_categories"></a>
-
-### describe_event_categories
+### describe\_endpoints
 
 .
 
-Type annotations for `boto3.client("dms").describe_event_categories` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_endpoints)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_event_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
+```python title="Method definition"
+def describe_endpoints(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointsMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef).
+parent.describe_endpoints(**kwargs)
+```
 
-<a id="describe\_event\_subscriptions"></a>
+1. See [:material-code-braces: DescribeEndpointsMessageRequestTypeDef](./type_defs.md#describeendpointsmessagerequesttypedef) 
 
-### describe_event_subscriptions
+### describe\_event\_categories
+
+.
+
+Type annotations and code completion for `#!python boto3.client("dms").describe_event_categories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_categories)
+
+```python title="Method definition"
+def describe_event_categories(
+    self,
+    *,
+    SourceType: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> DescribeEventCategoriesResponseTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventCategoriesMessageRequestTypeDef = {  # (1)
+    "SourceType": ...,
+}
+
+parent.describe_event_categories(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef) 
+
+### describe\_event\_subscriptions
 
 Lists all the event subscriptions for a customer account.
 
-Type annotations for `boto3.client("dms").describe_event_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_event_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_event_subscriptions)
+```python title="Method definition"
+def describe_event_subscriptions(
+    self,
+    *,
+    SubscriptionName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEventSubscriptionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSubscriptionsMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef).
+parent.describe_event_subscriptions(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Lists events for a given source identifier and source type.
 
-Type annotations for `boto3.client("dms").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    EventCategories: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeEventsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceIdentifier`: `str`
-- `SourceType`: `Literal['replication-instance']` (see
-  [SourceTypeType](./literals.md#sourcetypetype))
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageRequestTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
 
-Returns
-[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_orderable\_replication\_instances"></a>
+1. See [:material-code-braces: DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef) 
 
-### describe_orderable_replication_instances
+### describe\_orderable\_replication\_instances
 
 Returns information about the replication instance types that can be created in
 the specified region.
 
-Type annotations for
-`boto3.client("dms").describe_orderable_replication_instances` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_orderable_replication_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_orderable_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_orderable_replication_instances)
+```python title="Method definition"
+def describe_orderable_replication_instances(
+    self,
+    *,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeOrderableReplicationInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrderableReplicationInstancesMessageRequestTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagerequesttypedef).
+1. See [:material-code-braces: DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOrderableReplicationInstancesMessageRequestTypeDef = {  # (1)
+    "MaxRecords": ...,
+}
 
-Returns
-[DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef).
+parent.describe_orderable_replication_instances(**kwargs)
+```
 
-<a id="describe\_pending\_maintenance\_actions"></a>
+1. See [:material-code-braces: DescribeOrderableReplicationInstancesMessageRequestTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagerequesttypedef) 
 
-### describe_pending_maintenance_actions
+### describe\_pending\_maintenance\_actions
 
-For internal use only See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/dms-2016-01-01/DescribePendingMaintenanceActions).
+For internal use only See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/dms-2016-01-01/DescribePendingMaintenanceActions).
 
-Type annotations for `boto3.client("dms").describe_pending_maintenance_actions`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_pending_maintenance_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_pending_maintenance_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_pending_maintenance_actions)
+```python title="Method definition"
+def describe_pending_maintenance_actions(
+    self,
+    *,
+    ReplicationInstanceArn: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    Marker: str = ...,
+    MaxRecords: int = ...,
+) -> DescribePendingMaintenanceActionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribePendingMaintenanceActionsResponseTypeDef](./type_defs.md#describependingmaintenanceactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Marker`: `str`
-- `MaxRecords`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribePendingMaintenanceActionsMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[DescribePendingMaintenanceActionsResponseTypeDef](./type_defs.md#describependingmaintenanceactionsresponsetypedef).
+parent.describe_pending_maintenance_actions(**kwargs)
+```
 
-<a id="describe\_refresh\_schemas\_status"></a>
+1. See [:material-code-braces: DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef) 
 
-### describe_refresh_schemas_status
+### describe\_refresh\_schemas\_status
 
 Returns the status of the RefreshSchemas operation.
 
-Type annotations for `boto3.client("dms").describe_refresh_schemas_status`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_refresh_schemas_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_refresh_schemas_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_refresh_schemas_status)
+```python title="Method definition"
+def describe_refresh_schemas_status(
+    self,
+    *,
+    EndpointArn: str,
+) -> DescribeRefreshSchemasStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRefreshSchemasStatusMessageRequestTypeDef](./type_defs.md#describerefreshschemasstatusmessagerequesttypedef).
+1. See [:material-code-braces: DescribeRefreshSchemasStatusResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRefreshSchemasStatusMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
 
-Returns
-[DescribeRefreshSchemasStatusResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponsetypedef).
+parent.describe_refresh_schemas_status(**kwargs)
+```
 
-<a id="describe\_replication\_instance\_task\_logs"></a>
+1. See [:material-code-braces: DescribeRefreshSchemasStatusMessageRequestTypeDef](./type_defs.md#describerefreshschemasstatusmessagerequesttypedef) 
 
-### describe_replication_instance_task_logs
+### describe\_replication\_instance\_task\_logs
 
 Returns information about the task logs for the specified task.
 
-Type annotations for
-`boto3.client("dms").describe_replication_instance_task_logs` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_instance_task_logs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_instance_task_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instance_task_logs)
+```python title="Method definition"
+def describe_replication_instance_task_logs(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationInstanceTaskLogsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationInstanceTaskLogsMessageRequestTypeDef](./type_defs.md#describereplicationinstancetasklogsmessagerequesttypedef).
+1. See [:material-code-braces: DescribeReplicationInstanceTaskLogsResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationInstanceTaskLogsMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[DescribeReplicationInstanceTaskLogsResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponsetypedef).
+parent.describe_replication_instance_task_logs(**kwargs)
+```
 
-<a id="describe\_replication\_instances"></a>
+1. See [:material-code-braces: DescribeReplicationInstanceTaskLogsMessageRequestTypeDef](./type_defs.md#describereplicationinstancetasklogsmessagerequesttypedef) 
 
-### describe_replication_instances
+### describe\_replication\_instances
 
 Returns information about replication instances for your account in the current
 region.
 
-Type annotations for `boto3.client("dms").describe_replication_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_instances)
+```python title="Method definition"
+def describe_replication_instances(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationInstancesMessageRequestTypeDef](./type_defs.md#describereplicationinstancesmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationInstancesMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef).
+parent.describe_replication_instances(**kwargs)
+```
 
-<a id="describe\_replication\_subnet\_groups"></a>
+1. See [:material-code-braces: DescribeReplicationInstancesMessageRequestTypeDef](./type_defs.md#describereplicationinstancesmessagerequesttypedef) 
 
-### describe_replication_subnet_groups
+### describe\_replication\_subnet\_groups
 
 Returns information about the replication subnet groups.
 
-Type annotations for `boto3.client("dms").describe_replication_subnet_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_subnet_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_subnet_groups)
+```python title="Method definition"
+def describe_replication_subnet_groups(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationSubnetGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationSubnetGroupsMessageRequestTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationSubnetGroupsMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef).
+parent.describe_replication_subnet_groups(**kwargs)
+```
 
-<a id="describe\_replication\_task\_assessment\_results"></a>
+1. See [:material-code-braces: DescribeReplicationSubnetGroupsMessageRequestTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagerequesttypedef) 
 
-### describe_replication_task_assessment_results
+### describe\_replication\_task\_assessment\_results
 
 Returns the task assessment results from the Amazon S3 bucket that DMS creates
 in your Amazon Web Services account.
 
-Type annotations for
-`boto3.client("dms").describe_replication_task_assessment_results` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_task_assessment_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_assessment_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_results)
+```python title="Method definition"
+def describe_replication_task_assessment_results(
+    self,
+    *,
+    ReplicationTaskArn: str = ...,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationTaskAssessmentResultsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagerequesttypedef).
+1. See [:material-code-braces: DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str`
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef).
+parent.describe_replication_task_assessment_results(**kwargs)
+```
 
-<a id="describe\_replication\_task\_assessment\_runs"></a>
+1. See [:material-code-braces: DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagerequesttypedef) 
 
-### describe_replication_task_assessment_runs
+### describe\_replication\_task\_assessment\_runs
 
 Returns a paginated list of premigration assessment runs based on filter
 settings.
 
-Type annotations for
-`boto3.client("dms").describe_replication_task_assessment_runs` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_task_assessment_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_assessment_runs)
+```python title="Method definition"
+def describe_replication_task_assessment_runs(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationTaskAssessmentRunsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentrunsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeReplicationTaskAssessmentRunsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeReplicationTaskAssessmentRunsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponsetypedef).
+parent.describe_replication_task_assessment_runs(**kwargs)
+```
 
-<a id="describe\_replication\_task\_individual\_assessments"></a>
+1. See [:material-code-braces: DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentrunsmessagerequesttypedef) 
 
-### describe_replication_task_individual_assessments
+### describe\_replication\_task\_individual\_assessments
 
 Returns a paginated list of individual assessments based on filter settings.
 
-Type annotations for
-`boto3.client("dms").describe_replication_task_individual_assessments` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_task_individual_assessments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_task_individual_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_task_individual_assessments)
+```python title="Method definition"
+def describe_replication_task_individual_assessments(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeReplicationTaskIndividualAssessmentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponsetypedef).
+parent.describe_replication_task_individual_assessments(**kwargs)
+```
 
-<a id="describe\_replication\_tasks"></a>
+1. See [:material-code-braces: DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsmessagerequesttypedef) 
 
-### describe_replication_tasks
+### describe\_replication\_tasks
 
 .
 
-Type annotations for `boto3.client("dms").describe_replication_tasks` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_replication_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_replication_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_replication_tasks)
+```python title="Method definition"
+def describe_replication_tasks(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WithoutSettings: bool = ...,
+) -> DescribeReplicationTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReplicationTasksMessageRequestTypeDef](./type_defs.md#describereplicationtasksmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WithoutSettings`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef).
+parent.describe_replication_tasks(**kwargs)
+```
 
-<a id="describe\_schemas"></a>
+1. See [:material-code-braces: DescribeReplicationTasksMessageRequestTypeDef](./type_defs.md#describereplicationtasksmessagerequesttypedef) 
 
-### describe_schemas
+### describe\_schemas
 
 Returns information about the schema for the specified endpoint.
 
-Type annotations for `boto3.client("dms").describe_schemas` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_schemas)
+```python title="Method definition"
+def describe_schemas(
+    self,
+    *,
+    EndpointArn: str,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+) -> DescribeSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSchemasMessageRequestTypeDef](./type_defs.md#describeschemasmessagerequesttypedef).
+1. See [:material-code-braces: DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
-- `MaxRecords`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSchemasMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
 
-Returns
-[DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef).
+parent.describe_schemas(**kwargs)
+```
 
-<a id="describe\_table\_statistics"></a>
+1. See [:material-code-braces: DescribeSchemasMessageRequestTypeDef](./type_defs.md#describeschemasmessagerequesttypedef) 
 
-### describe_table_statistics
+### describe\_table\_statistics
 
 Returns table statistics on the database migration task, including table name,
 rows inserted, rows updated, and rows deleted.
 
-Type annotations for `boto3.client("dms").describe_table_statistics` method.
+Type annotations and code completion for `#!python boto3.client("dms").describe_table_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.describe_table_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.describe_table_statistics)
+```python title="Method definition"
+def describe_table_statistics(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> DescribeTableStatisticsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTableStatisticsMessageRequestTypeDef](./type_defs.md#describetablestatisticsmessagerequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeTableStatisticsMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef).
+parent.describe_table_statistics(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTableStatisticsMessageRequestTypeDef](./type_defs.md#describetablestatisticsmessagerequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("dms").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("dms").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_certificate"></a>
-
-### import_certificate
+### import\_certificate
 
 Uploads the specified certificate.
 
-Type annotations for `boto3.client("dms").import_certificate` method.
+Type annotations and code completion for `#!python boto3.client("dms").import_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.import_certificate)
+```python title="Method definition"
+def import_certificate(
+    self,
+    *,
+    CertificateIdentifier: str,
+    CertificatePem: str = ...,
+    CertificateWallet: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> ImportCertificateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportCertificateMessageRequestTypeDef](./type_defs.md#importcertificatemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateIdentifier`: `str` *(required)*
-- `CertificatePem`: `str`
-- `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ImportCertificateMessageRequestTypeDef = {  # (1)
+    "CertificateIdentifier": ...,
+}
 
-Returns
-[ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
+parent.import_certificate(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ImportCertificateMessageRequestTypeDef](./type_defs.md#importcertificatemessagerequesttypedef) 
 
-### list_tags_for_resource
-
-.
-
-Type annotations for `boto3.client("dms").list_tags_for_resource` method.
-
-Boto3 documentation:
-[DatabaseMigrationService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
-
-Arguments mapping described in
-[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceArn`: `str`
-- `ResourceArnList`: `Sequence`\[`str`\]
-
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
-
-<a id="modify\_endpoint"></a>
-
-### modify_endpoint
+### list\_tags\_for\_resource
 
 .
 
-Type annotations for `boto3.client("dms").modify_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("dms").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.modify_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str = ...,
+    ResourceArnList: Sequence[str] = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyEndpointMessageRequestTypeDef](./type_defs.md#modifyendpointmessagerequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
-- `EndpointIdentifier`: `str`
-- `EndpointType`:
-  [ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype)
-- `EngineName`: `str`
-- `Username`: `str`
-- `Password`: `str`
-- `ServerName`: `str`
-- `Port`: `int`
-- `DatabaseName`: `str`
-- `ExtraConnectionAttributes`: `str`
-- `CertificateArn`: `str`
-- `SslMode`: [DmsSslModeValueType](./literals.md#dmssslmodevaluetype)
-- `ServiceAccessRoleArn`: `str`
-- `ExternalTableDefinition`: `str`
-- `DynamoDbSettings`:
-  [DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef)
-- `S3Settings`: [S3SettingsTypeDef](./type_defs.md#s3settingstypedef)
-- `DmsTransferSettings`:
-  [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
-- `MongoDbSettings`:
-  [MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef)
-- `KinesisSettings`:
-  [KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef)
-- `KafkaSettings`: [KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef)
-- `ElasticsearchSettings`:
-  [ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef)
-- `NeptuneSettings`:
-  [NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef)
-- `RedshiftSettings`:
-  [RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef)
-- `PostgreSQLSettings`:
-  [PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef)
-- `MySQLSettings`: [MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef)
-- `OracleSettings`:
-  [OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef)
-- `SybaseSettings`:
-  [SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef)
-- `MicrosoftSQLServerSettings`:
-  [MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef)
-- `IBMDb2Settings`:
-  [IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef)
-- `DocDbSettings`: [DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef)
-- `RedisSettings`: [RedisSettingsTypeDef](./type_defs.md#redissettingstypedef)
-- `ExactSettings`: `bool`
-- `GcpMySQLSettings`:
-  [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceMessageRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="modify\_event\_subscription"></a>
+1. See [:material-code-braces: ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef) 
 
-### modify_event_subscription
+### modify\_endpoint
+
+.
+
+Type annotations and code completion for `#!python boto3.client("dms").modify_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_endpoint)
+
+```python title="Method definition"
+def modify_endpoint(
+    self,
+    *,
+    EndpointArn: str,
+    EndpointIdentifier: str = ...,
+    EndpointType: ReplicationEndpointTypeValueType = ...,  # (1)
+    EngineName: str = ...,
+    Username: str = ...,
+    Password: str = ...,
+    ServerName: str = ...,
+    Port: int = ...,
+    DatabaseName: str = ...,
+    ExtraConnectionAttributes: str = ...,
+    CertificateArn: str = ...,
+    SslMode: DmsSslModeValueType = ...,  # (2)
+    ServiceAccessRoleArn: str = ...,
+    ExternalTableDefinition: str = ...,
+    DynamoDbSettings: DynamoDbSettingsTypeDef = ...,  # (3)
+    S3Settings: S3SettingsTypeDef = ...,  # (4)
+    DmsTransferSettings: DmsTransferSettingsTypeDef = ...,  # (5)
+    MongoDbSettings: MongoDbSettingsTypeDef = ...,  # (6)
+    KinesisSettings: KinesisSettingsTypeDef = ...,  # (7)
+    KafkaSettings: KafkaSettingsTypeDef = ...,  # (8)
+    ElasticsearchSettings: ElasticsearchSettingsTypeDef = ...,  # (9)
+    NeptuneSettings: NeptuneSettingsTypeDef = ...,  # (10)
+    RedshiftSettings: RedshiftSettingsTypeDef = ...,  # (11)
+    PostgreSQLSettings: PostgreSQLSettingsTypeDef = ...,  # (12)
+    MySQLSettings: MySQLSettingsTypeDef = ...,  # (13)
+    OracleSettings: OracleSettingsTypeDef = ...,  # (14)
+    SybaseSettings: SybaseSettingsTypeDef = ...,  # (15)
+    MicrosoftSQLServerSettings: MicrosoftSQLServerSettingsTypeDef = ...,  # (16)
+    IBMDb2Settings: IBMDb2SettingsTypeDef = ...,  # (17)
+    DocDbSettings: DocDbSettingsTypeDef = ...,  # (18)
+    RedisSettings: RedisSettingsTypeDef = ...,  # (19)
+    ExactSettings: bool = ...,
+    GcpMySQLSettings: GcpMySQLSettingsTypeDef = ...,  # (20)
+) -> ModifyEndpointResponseTypeDef:  # (21)
+    ...
+```
+
+1. See [:material-code-brackets: ReplicationEndpointTypeValueType](./literals.md#replicationendpointtypevaluetype) 
+2. See [:material-code-brackets: DmsSslModeValueType](./literals.md#dmssslmodevaluetype) 
+3. See [:material-code-braces: DynamoDbSettingsTypeDef](./type_defs.md#dynamodbsettingstypedef) 
+4. See [:material-code-braces: S3SettingsTypeDef](./type_defs.md#s3settingstypedef) 
+5. See [:material-code-braces: DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef) 
+6. See [:material-code-braces: MongoDbSettingsTypeDef](./type_defs.md#mongodbsettingstypedef) 
+7. See [:material-code-braces: KinesisSettingsTypeDef](./type_defs.md#kinesissettingstypedef) 
+8. See [:material-code-braces: KafkaSettingsTypeDef](./type_defs.md#kafkasettingstypedef) 
+9. See [:material-code-braces: ElasticsearchSettingsTypeDef](./type_defs.md#elasticsearchsettingstypedef) 
+10. See [:material-code-braces: NeptuneSettingsTypeDef](./type_defs.md#neptunesettingstypedef) 
+11. See [:material-code-braces: RedshiftSettingsTypeDef](./type_defs.md#redshiftsettingstypedef) 
+12. See [:material-code-braces: PostgreSQLSettingsTypeDef](./type_defs.md#postgresqlsettingstypedef) 
+13. See [:material-code-braces: MySQLSettingsTypeDef](./type_defs.md#mysqlsettingstypedef) 
+14. See [:material-code-braces: OracleSettingsTypeDef](./type_defs.md#oraclesettingstypedef) 
+15. See [:material-code-braces: SybaseSettingsTypeDef](./type_defs.md#sybasesettingstypedef) 
+16. See [:material-code-braces: MicrosoftSQLServerSettingsTypeDef](./type_defs.md#microsoftsqlserversettingstypedef) 
+17. See [:material-code-braces: IBMDb2SettingsTypeDef](./type_defs.md#ibmdb2settingstypedef) 
+18. See [:material-code-braces: DocDbSettingsTypeDef](./type_defs.md#docdbsettingstypedef) 
+19. See [:material-code-braces: RedisSettingsTypeDef](./type_defs.md#redissettingstypedef) 
+20. See [:material-code-braces: GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef) 
+21. See [:material-code-braces: ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ModifyEndpointMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
+
+parent.modify_endpoint(**kwargs)
+```
+
+1. See [:material-code-braces: ModifyEndpointMessageRequestTypeDef](./type_defs.md#modifyendpointmessagerequesttypedef) 
+
+### modify\_event\_subscription
 
 Modifies an existing DMS event notification subscription.
 
-Type annotations for `boto3.client("dms").modify_event_subscription` method.
+Type annotations and code completion for `#!python boto3.client("dms").modify_event_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.modify_event_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_event_subscription)
+```python title="Method definition"
+def modify_event_subscription(
+    self,
+    *,
+    SubscriptionName: str,
+    SnsTopicArn: str = ...,
+    SourceType: str = ...,
+    EventCategories: Sequence[str] = ...,
+    Enabled: bool = ...,
+) -> ModifyEventSubscriptionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef).
+1. See [:material-code-braces: ModifyEventSubscriptionResponseTypeDef](./type_defs.md#modifyeventsubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionName`: `str` *(required)*
-- `SnsTopicArn`: `str`
-- `SourceType`: `str`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ModifyEventSubscriptionMessageRequestTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
 
-Returns
-[ModifyEventSubscriptionResponseTypeDef](./type_defs.md#modifyeventsubscriptionresponsetypedef).
+parent.modify_event_subscription(**kwargs)
+```
 
-<a id="modify\_replication\_instance"></a>
+1. See [:material-code-braces: ModifyEventSubscriptionMessageRequestTypeDef](./type_defs.md#modifyeventsubscriptionmessagerequesttypedef) 
 
-### modify_replication_instance
+### modify\_replication\_instance
 
 Modifies the replication instance to apply new settings.
 
-Type annotations for `boto3.client("dms").modify_replication_instance` method.
+Type annotations and code completion for `#!python boto3.client("dms").modify_replication_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_instance)
+```python title="Method definition"
+def modify_replication_instance(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+    AllocatedStorage: int = ...,
+    ApplyImmediately: bool = ...,
+    ReplicationInstanceClass: str = ...,
+    VpcSecurityGroupIds: Sequence[str] = ...,
+    PreferredMaintenanceWindow: str = ...,
+    MultiAZ: bool = ...,
+    EngineVersion: str = ...,
+    AllowMajorVersionUpgrade: bool = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+    ReplicationInstanceIdentifier: str = ...,
+) -> ModifyReplicationInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyReplicationInstanceMessageRequestTypeDef](./type_defs.md#modifyreplicationinstancemessagerequesttypedef).
+1. See [:material-code-braces: ModifyReplicationInstanceResponseTypeDef](./type_defs.md#modifyreplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
-- `AllocatedStorage`: `int`
-- `ApplyImmediately`: `bool`
-- `ReplicationInstanceClass`: `str`
-- `VpcSecurityGroupIds`: `Sequence`\[`str`\]
-- `PreferredMaintenanceWindow`: `str`
-- `MultiAZ`: `bool`
-- `EngineVersion`: `str`
-- `AllowMajorVersionUpgrade`: `bool`
-- `AutoMinorVersionUpgrade`: `bool`
-- `ReplicationInstanceIdentifier`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyReplicationInstanceMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[ModifyReplicationInstanceResponseTypeDef](./type_defs.md#modifyreplicationinstanceresponsetypedef).
+parent.modify_replication_instance(**kwargs)
+```
 
-<a id="modify\_replication\_subnet\_group"></a>
+1. See [:material-code-braces: ModifyReplicationInstanceMessageRequestTypeDef](./type_defs.md#modifyreplicationinstancemessagerequesttypedef) 
 
-### modify_replication_subnet_group
+### modify\_replication\_subnet\_group
 
 Modifies the settings for the specified replication subnet group.
 
-Type annotations for `boto3.client("dms").modify_replication_subnet_group`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").modify_replication_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_subnet_group)
+```python title="Method definition"
+def modify_replication_subnet_group(
+    self,
+    *,
+    ReplicationSubnetGroupIdentifier: str,
+    SubnetIds: Sequence[str],
+    ReplicationSubnetGroupDescription: str = ...,
+) -> ModifyReplicationSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#modifyreplicationsubnetgroupmessagerequesttypedef).
+1. See [:material-code-braces: ModifyReplicationSubnetGroupResponseTypeDef](./type_defs.md#modifyreplicationsubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationSubnetGroupIdentifier`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `ReplicationSubnetGroupDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyReplicationSubnetGroupMessageRequestTypeDef = {  # (1)
+    "ReplicationSubnetGroupIdentifier": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[ModifyReplicationSubnetGroupResponseTypeDef](./type_defs.md#modifyreplicationsubnetgroupresponsetypedef).
+parent.modify_replication_subnet_group(**kwargs)
+```
 
-<a id="modify\_replication\_task"></a>
+1. See [:material-code-braces: ModifyReplicationSubnetGroupMessageRequestTypeDef](./type_defs.md#modifyreplicationsubnetgroupmessagerequesttypedef) 
 
-### modify_replication_task
-
-.
-
-Type annotations for `boto3.client("dms").modify_replication_task` method.
-
-Boto3 documentation:
-[DatabaseMigrationService.Client.modify_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
-
-Arguments mapping described in
-[ModifyReplicationTaskMessageRequestTypeDef](./type_defs.md#modifyreplicationtaskmessagerequesttypedef).
-
-Keyword-only arguments:
-
-- `ReplicationTaskArn`: `str` *(required)*
-- `ReplicationTaskIdentifier`: `str`
-- `MigrationType`:
-  [MigrationTypeValueType](./literals.md#migrationtypevaluetype)
-- `TableMappings`: `str`
-- `ReplicationTaskSettings`: `str`
-- `CdcStartTime`: `Union`\[`datetime`, `str`\]
-- `CdcStartPosition`: `str`
-- `CdcStopPosition`: `str`
-- `TaskData`: `str`
-
-Returns
-[ModifyReplicationTaskResponseTypeDef](./type_defs.md#modifyreplicationtaskresponsetypedef).
-
-<a id="move\_replication\_task"></a>
-
-### move_replication_task
+### modify\_replication\_task
 
 .
 
-Type annotations for `boto3.client("dms").move_replication_task` method.
+Type annotations and code completion for `#!python boto3.client("dms").modify_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.modify_replication_task)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.move_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
+```python title="Method definition"
+def modify_replication_task(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    ReplicationTaskIdentifier: str = ...,
+    MigrationType: MigrationTypeValueType = ...,  # (1)
+    TableMappings: str = ...,
+    ReplicationTaskSettings: str = ...,
+    CdcStartTime: Union[datetime, str] = ...,
+    CdcStartPosition: str = ...,
+    CdcStopPosition: str = ...,
+    TaskData: str = ...,
+) -> ModifyReplicationTaskResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[MoveReplicationTaskMessageRequestTypeDef](./type_defs.md#movereplicationtaskmessagerequesttypedef).
+1. See [:material-code-brackets: MigrationTypeValueType](./literals.md#migrationtypevaluetype) 
+2. See [:material-code-braces: ModifyReplicationTaskResponseTypeDef](./type_defs.md#modifyreplicationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `TargetReplicationInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[MoveReplicationTaskResponseTypeDef](./type_defs.md#movereplicationtaskresponsetypedef).
+parent.modify_replication_task(**kwargs)
+```
 
-<a id="reboot\_replication\_instance"></a>
+1. See [:material-code-braces: ModifyReplicationTaskMessageRequestTypeDef](./type_defs.md#modifyreplicationtaskmessagerequesttypedef) 
 
-### reboot_replication_instance
+### move\_replication\_task
+
+.
+
+Type annotations and code completion for `#!python boto3.client("dms").move_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.move_replication_task)
+
+```python title="Method definition"
+def move_replication_task(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    TargetReplicationInstanceArn: str,
+) -> MoveReplicationTaskResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: MoveReplicationTaskResponseTypeDef](./type_defs.md#movereplicationtaskresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: MoveReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+    "TargetReplicationInstanceArn": ...,
+}
+
+parent.move_replication_task(**kwargs)
+```
+
+1. See [:material-code-braces: MoveReplicationTaskMessageRequestTypeDef](./type_defs.md#movereplicationtaskmessagerequesttypedef) 
+
+### reboot\_replication\_instance
 
 Reboots a replication instance.
 
-Type annotations for `boto3.client("dms").reboot_replication_instance` method.
+Type annotations and code completion for `#!python boto3.client("dms").reboot_replication_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.reboot_replication_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reboot_replication_instance)
+```python title="Method definition"
+def reboot_replication_instance(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+    ForceFailover: bool = ...,
+    ForcePlannedFailover: bool = ...,
+) -> RebootReplicationInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RebootReplicationInstanceMessageRequestTypeDef](./type_defs.md#rebootreplicationinstancemessagerequesttypedef).
+1. See [:material-code-braces: RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
-- `ForceFailover`: `bool`
-- `ForcePlannedFailover`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RebootReplicationInstanceMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef).
+parent.reboot_replication_instance(**kwargs)
+```
 
-<a id="refresh\_schemas"></a>
+1. See [:material-code-braces: RebootReplicationInstanceMessageRequestTypeDef](./type_defs.md#rebootreplicationinstancemessagerequesttypedef) 
 
-### refresh_schemas
+### refresh\_schemas
 
 Populates the schema for the specified endpoint.
 
-Type annotations for `boto3.client("dms").refresh_schemas` method.
+Type annotations and code completion for `#!python boto3.client("dms").refresh_schemas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.refresh_schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.refresh_schemas)
+```python title="Method definition"
+def refresh_schemas(
+    self,
+    *,
+    EndpointArn: str,
+    ReplicationInstanceArn: str,
+) -> RefreshSchemasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RefreshSchemasMessageRequestTypeDef](./type_defs.md#refreshschemasmessagerequesttypedef).
+1. See [:material-code-braces: RefreshSchemasResponseTypeDef](./type_defs.md#refreshschemasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointArn`: `str` *(required)*
-- `ReplicationInstanceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RefreshSchemasMessageRequestTypeDef = {  # (1)
+    "EndpointArn": ...,
+    "ReplicationInstanceArn": ...,
+}
 
-Returns
-[RefreshSchemasResponseTypeDef](./type_defs.md#refreshschemasresponsetypedef).
+parent.refresh_schemas(**kwargs)
+```
 
-<a id="reload\_tables"></a>
+1. See [:material-code-braces: RefreshSchemasMessageRequestTypeDef](./type_defs.md#refreshschemasmessagerequesttypedef) 
 
-### reload_tables
+### reload\_tables
 
 Reloads the target database table with the source data.
 
-Type annotations for `boto3.client("dms").reload_tables` method.
+Type annotations and code completion for `#!python boto3.client("dms").reload_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.reload_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.reload_tables)
+```python title="Method definition"
+def reload_tables(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    TablesToReload: Sequence[TableToReloadTypeDef],  # (1)
+    ReloadOption: ReloadOptionValueType = ...,  # (2)
+) -> ReloadTablesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ReloadTablesMessageRequestTypeDef](./type_defs.md#reloadtablesmessagerequesttypedef).
+1. See [:material-code-braces: TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef) 
+2. See [:material-code-brackets: ReloadOptionValueType](./literals.md#reloadoptionvaluetype) 
+3. See [:material-code-braces: ReloadTablesResponseTypeDef](./type_defs.md#reloadtablesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `TablesToReload`:
-  `Sequence`\[[TableToReloadTypeDef](./type_defs.md#tabletoreloadtypedef)\]
-  *(required)*
-- `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
+```python title="Usage example with kwargs"
+kwargs: ReloadTablesMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+    "TablesToReload": ...,
+}
 
-Returns
-[ReloadTablesResponseTypeDef](./type_defs.md#reloadtablesresponsetypedef).
+parent.reload_tables(**kwargs)
+```
 
-<a id="remove\_tags\_from\_resource"></a>
+1. See [:material-code-braces: ReloadTablesMessageRequestTypeDef](./type_defs.md#reloadtablesmessagerequesttypedef) 
 
-### remove_tags_from_resource
-
-.
-
-Type annotations for `boto3.client("dms").remove_tags_from_resource` method.
-
-Boto3 documentation:
-[DatabaseMigrationService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
-
-Arguments mapping described in
-[RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="start\_replication\_task"></a>
-
-### start_replication_task
+### remove\_tags\_from\_resource
 
 .
 
-Type annotations for `boto3.client("dms").start_replication_task` method.
+Type annotations and code completion for `#!python boto3.client("dms").remove_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.remove_tags_from_resource)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
+```python title="Method definition"
+def remove_tags_from_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartReplicationTaskMessageRequestTypeDef](./type_defs.md#startreplicationtaskmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `StartReplicationTaskType`:
-  [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
-  *(required)*
-- `CdcStartTime`: `Union`\[`datetime`, `str`\]
-- `CdcStartPosition`: `str`
-- `CdcStopPosition`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromResourceMessageRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[StartReplicationTaskResponseTypeDef](./type_defs.md#startreplicationtaskresponsetypedef).
+parent.remove_tags_from_resource(**kwargs)
+```
 
-<a id="start\_replication\_task\_assessment"></a>
+1. See [:material-code-braces: RemoveTagsFromResourceMessageRequestTypeDef](./type_defs.md#removetagsfromresourcemessagerequesttypedef) 
 
-### start_replication_task_assessment
+### start\_replication\_task
 
 .
 
-Type annotations for `boto3.client("dms").start_replication_task_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("dms").start_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
+```python title="Method definition"
+def start_replication_task(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    StartReplicationTaskType: StartReplicationTaskTypeValueType,  # (1)
+    CdcStartTime: Union[datetime, str] = ...,
+    CdcStartPosition: str = ...,
+    CdcStopPosition: str = ...,
+) -> StartReplicationTaskResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartReplicationTaskAssessmentMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentmessagerequesttypedef).
+1. See [:material-code-brackets: StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype) 
+2. See [:material-code-braces: StartReplicationTaskResponseTypeDef](./type_defs.md#startreplicationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+    "StartReplicationTaskType": ...,
+}
 
-Returns
-[StartReplicationTaskAssessmentResponseTypeDef](./type_defs.md#startreplicationtaskassessmentresponsetypedef).
+parent.start_replication_task(**kwargs)
+```
 
-<a id="start\_replication\_task\_assessment\_run"></a>
+1. See [:material-code-braces: StartReplicationTaskMessageRequestTypeDef](./type_defs.md#startreplicationtaskmessagerequesttypedef) 
 
-### start_replication_task_assessment_run
+### start\_replication\_task\_assessment
+
+.
+
+Type annotations and code completion for `#!python boto3.client("dms").start_replication_task_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment)
+
+```python title="Method definition"
+def start_replication_task_assessment(
+    self,
+    *,
+    ReplicationTaskArn: str,
+) -> StartReplicationTaskAssessmentResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: StartReplicationTaskAssessmentResponseTypeDef](./type_defs.md#startreplicationtaskassessmentresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: StartReplicationTaskAssessmentMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
+
+parent.start_replication_task_assessment(**kwargs)
+```
+
+1. See [:material-code-braces: StartReplicationTaskAssessmentMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentmessagerequesttypedef) 
+
+### start\_replication\_task\_assessment\_run
 
 Starts a new premigration assessment run for one or more individual assessments
 of a migration task.
 
-Type annotations for
-`boto3.client("dms").start_replication_task_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("dms").start_replication_task_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.start_replication_task_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.start_replication_task_assessment_run)
+```python title="Method definition"
+def start_replication_task_assessment_run(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    ServiceAccessRoleArn: str,
+    ResultLocationBucket: str,
+    AssessmentRunName: str,
+    ResultLocationFolder: str = ...,
+    ResultEncryptionMode: str = ...,
+    ResultKmsKeyArn: str = ...,
+    IncludeOnly: Sequence[str] = ...,
+    Exclude: Sequence[str] = ...,
+) -> StartReplicationTaskAssessmentRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentrunmessagerequesttypedef).
+1. See [:material-code-braces: StartReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `ServiceAccessRoleArn`: `str` *(required)*
-- `ResultLocationBucket`: `str` *(required)*
-- `AssessmentRunName`: `str` *(required)*
-- `ResultLocationFolder`: `str`
-- `ResultEncryptionMode`: `str`
-- `ResultKmsKeyArn`: `str`
-- `IncludeOnly`: `Sequence`\[`str`\]
-- `Exclude`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: StartReplicationTaskAssessmentRunMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+    "ServiceAccessRoleArn": ...,
+    "ResultLocationBucket": ...,
+    "AssessmentRunName": ...,
+}
 
-Returns
-[StartReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponsetypedef).
+parent.start_replication_task_assessment_run(**kwargs)
+```
 
-<a id="stop\_replication\_task"></a>
+1. See [:material-code-braces: StartReplicationTaskAssessmentRunMessageRequestTypeDef](./type_defs.md#startreplicationtaskassessmentrunmessagerequesttypedef) 
 
-### stop_replication_task
+### stop\_replication\_task
 
 .
 
-Type annotations for `boto3.client("dms").stop_replication_task` method.
+Type annotations and code completion for `#!python boto3.client("dms").stop_replication_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.stop_replication_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.stop_replication_task)
+```python title="Method definition"
+def stop_replication_task(
+    self,
+    *,
+    ReplicationTaskArn: str,
+) -> StopReplicationTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopReplicationTaskMessageRequestTypeDef](./type_defs.md#stopreplicationtaskmessagerequesttypedef).
+1. See [:material-code-braces: StopReplicationTaskResponseTypeDef](./type_defs.md#stopreplicationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationTaskArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopReplicationTaskMessageRequestTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
 
-Returns
-[StopReplicationTaskResponseTypeDef](./type_defs.md#stopreplicationtaskresponsetypedef).
+parent.stop_replication_task(**kwargs)
+```
 
-<a id="test\_connection"></a>
+1. See [:material-code-braces: StopReplicationTaskMessageRequestTypeDef](./type_defs.md#stopreplicationtaskmessagerequesttypedef) 
 
-### test_connection
+### test\_connection
 
 Tests the connection between the replication instance and the endpoint.
 
-Type annotations for `boto3.client("dms").test_connection` method.
+Type annotations and code completion for `#!python boto3.client("dms").test_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
 
-Boto3 documentation:
-[DatabaseMigrationService.Client.test_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.test_connection)
+```python title="Method definition"
+def test_connection(
+    self,
+    *,
+    ReplicationInstanceArn: str,
+    EndpointArn: str,
+) -> TestConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestConnectionMessageRequestTypeDef](./type_defs.md#testconnectionmessagerequesttypedef).
+1. See [:material-code-braces: TestConnectionResponseTypeDef](./type_defs.md#testconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReplicationInstanceArn`: `str` *(required)*
-- `EndpointArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: TestConnectionMessageRequestTypeDef = {  # (1)
+    "ReplicationInstanceArn": ...,
+    "EndpointArn": ...,
+}
 
-Returns
-[TestConnectionResponseTypeDef](./type_defs.md#testconnectionresponsetypedef).
+parent.test_connection(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: TestConnectionMessageRequestTypeDef](./type_defs.md#testconnectionmessagerequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("dms").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_certificates")` ->
-  [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
-- `client.get_paginator("describe_connections")` ->
-  [DescribeConnectionsPaginator](./paginators.md#describeconnectionspaginator)
-- `client.get_paginator("describe_endpoint_types")` ->
-  [DescribeEndpointTypesPaginator](./paginators.md#describeendpointtypespaginator)
-- `client.get_paginator("describe_endpoints")` ->
-  [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
-- `client.get_paginator("describe_event_subscriptions")` ->
-  [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
-- `client.get_paginator("describe_events")` ->
-  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("describe_orderable_replication_instances")` ->
-  [DescribeOrderableReplicationInstancesPaginator](./paginators.md#describeorderablereplicationinstancespaginator)
-- `client.get_paginator("describe_replication_instances")` ->
-  [DescribeReplicationInstancesPaginator](./paginators.md#describereplicationinstancespaginator)
-- `client.get_paginator("describe_replication_subnet_groups")` ->
-  [DescribeReplicationSubnetGroupsPaginator](./paginators.md#describereplicationsubnetgroupspaginator)
-- `client.get_paginator("describe_replication_task_assessment_results")` ->
-  [DescribeReplicationTaskAssessmentResultsPaginator](./paginators.md#describereplicationtaskassessmentresultspaginator)
-- `client.get_paginator("describe_replication_tasks")` ->
-  [DescribeReplicationTasksPaginator](./paginators.md#describereplicationtaskspaginator)
-- `client.get_paginator("describe_schemas")` ->
-  [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
-- `client.get_paginator("describe_table_statistics")` ->
-  [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
+- `client.get_paginator("describe_certificates")` -> [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
+- `client.get_paginator("describe_connections")` -> [DescribeConnectionsPaginator](./paginators.md#describeconnectionspaginator)
+- `client.get_paginator("describe_endpoint_types")` -> [DescribeEndpointTypesPaginator](./paginators.md#describeendpointtypespaginator)
+- `client.get_paginator("describe_endpoints")` -> [DescribeEndpointsPaginator](./paginators.md#describeendpointspaginator)
+- `client.get_paginator("describe_event_subscriptions")` -> [DescribeEventSubscriptionsPaginator](./paginators.md#describeeventsubscriptionspaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("describe_orderable_replication_instances")` -> [DescribeOrderableReplicationInstancesPaginator](./paginators.md#describeorderablereplicationinstancespaginator)
+- `client.get_paginator("describe_replication_instances")` -> [DescribeReplicationInstancesPaginator](./paginators.md#describereplicationinstancespaginator)
+- `client.get_paginator("describe_replication_subnet_groups")` -> [DescribeReplicationSubnetGroupsPaginator](./paginators.md#describereplicationsubnetgroupspaginator)
+- `client.get_paginator("describe_replication_task_assessment_results")` -> [DescribeReplicationTaskAssessmentResultsPaginator](./paginators.md#describereplicationtaskassessmentresultspaginator)
+- `client.get_paginator("describe_replication_tasks")` -> [DescribeReplicationTasksPaginator](./paginators.md#describereplicationtaskspaginator)
+- `client.get_paginator("describe_schemas")` -> [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
+- `client.get_paginator("describe_table_statistics")` -> [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("dms").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("dms").get_waiter` method with overloads.
 
-- `client.get_waiter("endpoint_deleted")` ->
-  [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
-- `client.get_waiter("replication_instance_available")` ->
-  [ReplicationInstanceAvailableWaiter](./waiters.md#replicationinstanceavailablewaiter)
-- `client.get_waiter("replication_instance_deleted")` ->
-  [ReplicationInstanceDeletedWaiter](./waiters.md#replicationinstancedeletedwaiter)
-- `client.get_waiter("replication_task_deleted")` ->
-  [ReplicationTaskDeletedWaiter](./waiters.md#replicationtaskdeletedwaiter)
-- `client.get_waiter("replication_task_ready")` ->
-  [ReplicationTaskReadyWaiter](./waiters.md#replicationtaskreadywaiter)
-- `client.get_waiter("replication_task_running")` ->
-  [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
-- `client.get_waiter("replication_task_stopped")` ->
-  [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
-- `client.get_waiter("test_connection_succeeds")` ->
-  [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
+- `client.get_waiter("endpoint_deleted")` -> [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
+- `client.get_waiter("replication_instance_available")` -> [ReplicationInstanceAvailableWaiter](./waiters.md#replicationinstanceavailablewaiter)
+- `client.get_waiter("replication_instance_deleted")` -> [ReplicationInstanceDeletedWaiter](./waiters.md#replicationinstancedeletedwaiter)
+- `client.get_waiter("replication_task_deleted")` -> [ReplicationTaskDeletedWaiter](./waiters.md#replicationtaskdeletedwaiter)
+- `client.get_waiter("replication_task_ready")` -> [ReplicationTaskReadyWaiter](./waiters.md#replicationtaskreadywaiter)
+- `client.get_waiter("replication_task_running")` -> [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
+- `client.get_waiter("replication_task_stopped")` -> [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
+- `client.get_waiter("test_connection_succeeds")` -> [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
+

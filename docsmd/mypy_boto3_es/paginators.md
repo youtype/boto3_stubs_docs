@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-elasticsearchservice-module"></a>
-
-# Paginators for boto3 ElasticsearchService module
+# Paginators
 
 > [Index](../README.md) > [ElasticsearchService](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
-type annotations stubs module
-[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
+!!! note ""
 
-- [Paginators for boto3 ElasticsearchService module](#paginators-for-boto3-elasticsearchservice-module)
-  - [DescribeReservedElasticsearchInstanceOfferingsPaginator](#describereservedelasticsearchinstanceofferingspaginator)
-  - [DescribeReservedElasticsearchInstancesPaginator](#describereservedelasticsearchinstancespaginator)
-  - [GetUpgradeHistoryPaginator](#getupgradehistorypaginator)
-  - [ListElasticsearchInstanceTypesPaginator](#listelasticsearchinstancetypespaginator)
-  - [ListElasticsearchVersionsPaginator](#listelasticsearchversionspaginator)
-
-<a id="describereservedelasticsearchinstanceofferingspaginator"></a>
+    Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+    type annotations stubs module [mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 ## DescribeReservedElasticsearchInstanceOfferingsPaginator
 
-Type annotations for
-`boto3.client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")`.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstanceOfferingsPaginator
@@ -34,29 +21,40 @@ def get_describe_reserved_elasticsearch_instance_offerings_paginator() -> Descri
     return Session().client("es").get_paginator("describe_reserved_elasticsearch_instance_offerings")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstanceOfferings)
 
-Arguments for
-`DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` method:
+### paginate
 
-- `ReservedElasticsearchInstanceOfferingId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` method.
 
-`DescribeReservedElasticsearchInstanceOfferingsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedElasticsearchInstanceOfferingId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservedelasticsearchinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedElasticsearchInstanceOfferingsRequestDescribeReservedElasticsearchInstanceOfferingsPaginateTypeDef = {  # (1)
+    "ReservedElasticsearchInstanceOfferingId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsRequestDescribeReservedElasticsearchInstanceOfferingsPaginateTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequestdescribereservedelasticsearchinstanceofferingspaginatetypedef) 
 ## DescribeReservedElasticsearchInstancesPaginator
 
-Type annotations for
-`boto3.client("es").get_paginator("describe_reserved_elasticsearch_instances")`.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator("describe_reserved_elasticsearch_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_es.paginator import DescribeReservedElasticsearchInstancesPaginator
@@ -65,28 +63,40 @@ def get_describe_reserved_elasticsearch_instances_paginator() -> DescribeReserve
     return Session().client("es").get_paginator("describe_reserved_elasticsearch_instances")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.DescribeReservedElasticsearchInstances)
 
-Arguments for `DescribeReservedElasticsearchInstancesPaginator.paginate`
-method:
+### paginate
 
-- `ReservedElasticsearchInstanceId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedElasticsearchInstancesPaginator.paginate` method.
 
-`DescribeReservedElasticsearchInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedElasticsearchInstanceId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeReservedElasticsearchInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getupgradehistorypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedElasticsearchInstancesRequestDescribeReservedElasticsearchInstancesPaginateTypeDef = {  # (1)
+    "ReservedElasticsearchInstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedElasticsearchInstancesRequestDescribeReservedElasticsearchInstancesPaginateTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestdescribereservedelasticsearchinstancespaginatetypedef) 
 ## GetUpgradeHistoryPaginator
 
-Type annotations for `boto3.client("es").get_paginator("get_upgrade_history")`.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator("get_upgrade_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_es.paginator import GetUpgradeHistoryPaginator
@@ -95,28 +105,40 @@ def get_get_upgrade_history_paginator() -> GetUpgradeHistoryPaginator:
     return Session().client("es").get_paginator("get_upgrade_history")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Paginator.GetUpgradeHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.GetUpgradeHistory)
 
-Arguments for `GetUpgradeHistoryPaginator.paginate` method:
+### paginate
 
-- `DomainName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetUpgradeHistoryPaginator.paginate` method.
 
-`GetUpgradeHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DomainName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetUpgradeHistoryResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listelasticsearchinstancetypespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetUpgradeHistoryRequestGetUpgradeHistoryPaginateTypeDef = {  # (1)
+    "DomainName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetUpgradeHistoryRequestGetUpgradeHistoryPaginateTypeDef](./type_defs.md#getupgradehistoryrequestgetupgradehistorypaginatetypedef) 
 ## ListElasticsearchInstanceTypesPaginator
 
-Type annotations for
-`boto3.client("es").get_paginator("list_elasticsearch_instance_types")`.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator("list_elasticsearch_instance_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_es.paginator import ListElasticsearchInstanceTypesPaginator
@@ -125,29 +147,41 @@ def get_list_elasticsearch_instance_types_paginator() -> ListElasticsearchInstan
     return Session().client("es").get_paginator("list_elasticsearch_instance_types")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Paginator.ListElasticsearchInstanceTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchInstanceTypes)
 
-Arguments for `ListElasticsearchInstanceTypesPaginator.paginate` method:
+### paginate
 
-- `ElasticsearchVersion`: `str` *(required)*
-- `DomainName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListElasticsearchInstanceTypesPaginator.paginate` method.
 
-`ListElasticsearchInstanceTypesPaginator.paginate` returns
-`_PageIterator`\[[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ElasticsearchVersion: str,
+    DomainName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListElasticsearchInstanceTypesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listelasticsearchversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListElasticsearchInstanceTypesRequestListElasticsearchInstanceTypesPaginateTypeDef = {  # (1)
+    "ElasticsearchVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListElasticsearchInstanceTypesRequestListElasticsearchInstanceTypesPaginateTypeDef](./type_defs.md#listelasticsearchinstancetypesrequestlistelasticsearchinstancetypespaginatetypedef) 
 ## ListElasticsearchVersionsPaginator
 
-Type annotations for
-`boto3.client("es").get_paginator("list_elasticsearch_versions")`.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator("list_elasticsearch_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_es.paginator import ListElasticsearchVersionsPaginator
@@ -156,13 +190,30 @@ def get_list_elasticsearch_versions_paginator() -> ListElasticsearchVersionsPagi
     return Session().client("es").get_paginator("list_elasticsearch_versions")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Paginator.ListElasticsearchVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Paginator.ListElasticsearchVersions)
 
-Arguments for `ListElasticsearchVersionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListElasticsearchVersionsPaginator.paginate` method.
 
-`ListElasticsearchVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListElasticsearchVersionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListElasticsearchVersionsRequestListElasticsearchVersionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListElasticsearchVersionsRequestListElasticsearchVersionsPaginateTypeDef](./type_defs.md#listelasticsearchversionsrequestlistelasticsearchversionspaginatetypedef) 

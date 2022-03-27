@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-ssoadmin-module"></a>
-
-# Examples for boto3 SSOAdmin module
+# Examples
 
 > [Index](../README.md) > [SSOAdmin](./README.md) > Examples
 
-- [Examples for boto3 SSOAdmin module](#examples-for-boto3-ssoadmin-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
+    type annotations stubs module [mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sso-admin]` package installed.
 
-Write your `SSOAdmin` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `SSOAdmin` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSOAdminClient
-# and provides type checking and code completion
-client = session.client("sso-admin")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.attach_managed_policy_to_permission_set()
 
-# paginator has type ListAccountAssignmentCreationStatusPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_account_assignment_creation_status")
-for item in paginator.paginate(...):
-    # item has type ListAccountAssignmentCreationStatusResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("sso-admin")  # (1)
+    result = client.create_account_assignment()  # (2)
+    ```
+
+    1. client: [SSOAdminClient](./client.md)
+    2. result: [:material-code-braces: CreateAccountAssignmentResponseTypeDef](./type_defs.md#createaccountassignmentresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("sso-admin")  # (1)
+
+    paginator = client.get_paginator("list_account_assignment_creation_status")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SSOAdminClient](./client.md)
+    2. paginator: [ListAccountAssignmentCreationStatusPaginator](./paginators.md#listaccountassignmentcreationstatuspaginator)
+    3. item: [:material-code-braces: ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sso-admin]` or a standalone `mypy_boto3_sso_admin`
-package, you have to explicitly specify `client: SSOAdminClient` type
-annotation.
+With `boto3-stubs-lite[sso-admin]`
+or a standalone `mypy_boto3_sso_admin` package, you have to explicitly specify `client: SSOAdminClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sso_admin.client import SSOAdminClient
-from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
-
-from mypy_boto3_sso_admin.literals import PaginatorName
-
-from mypy_boto3_sso_admin.type_defs import Dict[str, Any]
-from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SSOAdminClient = session.client("sso-admin")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.attach_managed_policy_to_permission_set()
+    from mypy_boto3_sso_admin.client import SSOAdminClient
+    from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentResponseTypeDef
+    from mypy_boto3_sso_admin.type_defs import CreateAccountAssignmentRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_account_assignment_creation_status"
-paginator: ListAccountAssignmentCreationStatusPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccountAssignmentCreationStatusResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: SSOAdminClient = session.client("sso-admin")
+
+    kwargs: CreateAccountAssignmentRequestRequestTypeDef = {...}
+    result: CreateAccountAssignmentResponseTypeDef = client.create_account_assignment(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sso_admin.client import SSOAdminClient
+    from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
+    from mypy_boto3_sso_admin.type_defs import ListAccountAssignmentCreationStatusResponseTypeDef
+
+
+    session = Session()
+    client: SSOAdminClient = session.client("sso-admin")
+
+    paginator: ListAccountAssignmentCreationStatusPaginator = client.get_paginator("list_account_assignment_creation_status")
+    for item in paginator.paginate(...):
+        item: ListAccountAssignmentCreationStatusResponseTypeDef
+        print(item)
+    ```
+
+
+
+

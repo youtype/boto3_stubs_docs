@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-kinesisvideoarchivedmedia-module"></a>
-
-# Type annotations for boto3 KinesisVideoArchivedMedia module
+#  KinesisVideoArchivedMedia module
 
 > [Index](../README.md) > KinesisVideoArchivedMedia
 
-Auto-generated documentation for
-[KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
-type annotations stubs module
-[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+!!! note ""
 
-- [Type annotations for boto3 KinesisVideoArchivedMedia module](#type-annotations-for-boto3-kinesisvideoarchivedmedia-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KinesisVideoArchivedMediaClient](#kinesisvideoarchivedmediaclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
+    type annotations stubs module [mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `KinesisVideoArchivedMedia`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kinesis-video-archived-media]'
 python -m pip install mypy-boto3-kinesis-video-archived-media
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,81 +42,58 @@ python -m pip install mypy-boto3-kinesis-video-archived-media
 python -m pip uninstall -y mypy-boto3-kinesis-video-archived-media
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kinesisvideoarchivedmediaclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KinesisVideoArchivedMediaClient
 
-Type annotations for `boto3.client("kinesis-video-archived-media")` as
-[KinesisVideoArchivedMediaClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kinesis-video-archived-media")` as [KinesisVideoArchivedMediaClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
+
+def get_client() -> KinesisVideoArchivedMediaClient:
+    return Session().cleint("kinesis-video-archived-media")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_clip](./client.md#get_clip)
-- [get_dash_streaming_session_url](./client.md#get_dash_streaming_session_url)
-- [get_hls_streaming_session_url](./client.md#get_hls_streaming_session_url)
-- [get_media_for_fragment_list](./client.md#get_media_for_fragment_list)
-- [get_paginator](./client.md#get_paginator)
-- [list_fragments](./client.md#list_fragments)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KinesisVideoArchivedMediaClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ClientLimitExceededException
-- InvalidArgumentException
-- InvalidCodecPrivateDataException
-- InvalidMediaFrameException
-- MissingCodecPrivateDataException
-- NoDataRetentionException
-- NotAuthorizedException
-- ResourceNotFoundException
-- UnsupportedStreamMediaTypeException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kinesis-video-archived-media").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kinesis-video-archived-media").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPaginator, ...
+from mypy_boto3_kinesis_video_archived_media.paginator import ListFragmentsPaginator
+
+def get_list_fragments_paginator() -> ListFragmentsPaginator:
+    return Session().client("kinesis-video-archived-media").get_paginator("list_fragments"))
 ```
 
 - [ListFragmentsPaginator](./paginators.md#listfragmentspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorTypeType
 
-```python
-from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelectorTypeType, ...
+def get_value() -> ClipFragmentSelectorTypeType:
+    return "PRODUCER_TIMESTAMP"
 ```
 
 - [ClipFragmentSelectorTypeType](./literals.md#clipfragmentselectortypetype)
@@ -157,18 +112,23 @@ from mypy_boto3_kinesis_video_archived_media.literals import ClipFragmentSelecto
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelectorTypeDef
 
-```python
-from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelectorTypeDef, ...
+def get_value() -> ClipFragmentSelectorTypeDef:
+    return {
+        "FragmentSelectorType": ...,
+        "TimestampRange": ...,
+    }
 ```
 
 - [ClipFragmentSelectorTypeDef](./type_defs.md#clipfragmentselectortypedef)
@@ -187,8 +147,10 @@ from mypy_boto3_kinesis_video_archived_media.type_defs import ClipFragmentSelect
 - [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef)
 - [HLSFragmentSelectorTypeDef](./type_defs.md#hlsfragmentselectortypedef)
 - [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
+- [ListFragmentsInputListFragmentsPaginateTypeDef](./type_defs.md#listfragmentsinputlistfragmentspaginatetypedef)
 - [ListFragmentsInputRequestTypeDef](./type_defs.md#listfragmentsinputrequesttypedef)
 - [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
+

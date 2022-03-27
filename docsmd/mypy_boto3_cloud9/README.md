@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloud9-module"></a>
-
-# Type annotations for boto3 Cloud9 module
+#  Cloud9 module
 
 > [Index](../README.md) > Cloud9
 
-Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module
-[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+!!! note ""
 
-- [Type annotations for boto3 Cloud9 module](#type-annotations-for-boto3-cloud9-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Cloud9Client](#cloud9client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+    type annotations stubs module [mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Cloud9`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloud9]'
 python -m pip install mypy-boto3-cloud9
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,88 +42,59 @@ python -m pip install mypy-boto3-cloud9
 python -m pip uninstall -y mypy-boto3-cloud9
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloud9client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Cloud9Client
 
-Type annotations for `boto3.client("cloud9")` as [Cloud9Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloud9")` as [Cloud9Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloud9.client import Cloud9Client
+
+def get_client() -> Cloud9Client:
+    return Session().cleint("cloud9")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_environment_ec2](./client.md#create_environment_ec2)
-- [create_environment_membership](./client.md#create_environment_membership)
-- [delete_environment](./client.md#delete_environment)
-- [delete_environment_membership](./client.md#delete_environment_membership)
-- [describe_environment_memberships](./client.md#describe_environment_memberships)
-- [describe_environment_status](./client.md#describe_environment_status)
-- [describe_environments](./client.md#describe_environments)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_environments](./client.md#list_environments)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_environment](./client.md#update_environment)
-- [update_environment_membership](./client.md#update_environment_membership)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Cloud9Client [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConcurrentAccessException
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- LimitExceededException
-- NotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloud9").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloud9").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator, ...
+from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator
+
+def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembershipsPaginator:
+    return Session().client("cloud9").get_paginator("describe_environment_memberships"))
 ```
 
 - [DescribeEnvironmentMembershipsPaginator](./paginators.md#describeenvironmentmembershipspaginator)
 - [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloud9.literals import ConnectionTypeType
 
-```python
-from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
+def get_value() -> ConnectionTypeType:
+    return "CONNECT_SSH"
 ```
 
 - [ConnectionTypeType](./literals.md#connectiontypetype)
@@ -162,18 +111,23 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDef
 
-```python
-from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDef, ...
+def get_value() -> CreateEnvironmentEC2RequestRequestTypeDef:
+    return {
+        "name": ...,
+        "instanceType": ...,
+    }
 ```
 
 - [CreateEnvironmentEC2RequestRequestTypeDef](./type_defs.md#createenvironmentec2requestrequesttypedef)
@@ -182,6 +136,7 @@ from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDe
 - [CreateEnvironmentMembershipResultTypeDef](./type_defs.md#createenvironmentmembershipresulttypedef)
 - [DeleteEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#deleteenvironmentmembershiprequestrequesttypedef)
 - [DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef)
+- [DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef](./type_defs.md#describeenvironmentmembershipsrequestdescribeenvironmentmembershipspaginatetypedef)
 - [DescribeEnvironmentMembershipsRequestRequestTypeDef](./type_defs.md#describeenvironmentmembershipsrequestrequesttypedef)
 - [DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)
 - [DescribeEnvironmentStatusRequestRequestTypeDef](./type_defs.md#describeenvironmentstatusrequestrequesttypedef)
@@ -191,6 +146,7 @@ from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDe
 - [EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef)
 - [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- [ListEnvironmentsRequestListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsrequestlistenvironmentspaginatetypedef)
 - [ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef)
 - [ListEnvironmentsResultTypeDef](./type_defs.md#listenvironmentsresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -203,3 +159,4 @@ from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDe
 - [UpdateEnvironmentMembershipRequestRequestTypeDef](./type_defs.md#updateenvironmentmembershiprequestrequesttypedef)
 - [UpdateEnvironmentMembershipResultTypeDef](./type_defs.md#updateenvironmentmembershipresulttypedef)
 - [UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef)
+

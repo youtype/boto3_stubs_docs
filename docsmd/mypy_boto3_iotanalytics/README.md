@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-iotanalytics-module"></a>
-
-# Type annotations for boto3 IoTAnalytics module
+#  IoTAnalytics module
 
 > [Index](../README.md) > IoTAnalytics
 
-Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
-type annotations stubs module
-[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+!!! note ""
 
-- [Type annotations for boto3 IoTAnalytics module](#type-annotations-for-boto3-iotanalytics-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTAnalyticsClient](#iotanalyticsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+    type annotations stubs module [mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTAnalytics`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iotanalytics]'
 python -m pip install mypy-boto3-iotanalytics
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,94 +42,37 @@ python -m pip install mypy-boto3-iotanalytics
 python -m pip uninstall -y mypy-boto3-iotanalytics
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotanalyticsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTAnalyticsClient
 
-Type annotations for `boto3.client("iotanalytics")` as
-[IoTAnalyticsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iotanalytics")` as [IoTAnalyticsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
+
+def get_client() -> IoTAnalyticsClient:
+    return Session().cleint("iotanalytics")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_put_message](./client.md#batch_put_message)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_pipeline_reprocessing](./client.md#cancel_pipeline_reprocessing)
-- [create_channel](./client.md#create_channel)
-- [create_dataset](./client.md#create_dataset)
-- [create_dataset_content](./client.md#create_dataset_content)
-- [create_datastore](./client.md#create_datastore)
-- [create_pipeline](./client.md#create_pipeline)
-- [delete_channel](./client.md#delete_channel)
-- [delete_dataset](./client.md#delete_dataset)
-- [delete_dataset_content](./client.md#delete_dataset_content)
-- [delete_datastore](./client.md#delete_datastore)
-- [delete_pipeline](./client.md#delete_pipeline)
-- [describe_channel](./client.md#describe_channel)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_datastore](./client.md#describe_datastore)
-- [describe_logging_options](./client.md#describe_logging_options)
-- [describe_pipeline](./client.md#describe_pipeline)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_dataset_content](./client.md#get_dataset_content)
-- [get_paginator](./client.md#get_paginator)
-- [list_channels](./client.md#list_channels)
-- [list_dataset_contents](./client.md#list_dataset_contents)
-- [list_datasets](./client.md#list_datasets)
-- [list_datastores](./client.md#list_datastores)
-- [list_pipelines](./client.md#list_pipelines)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_logging_options](./client.md#put_logging_options)
-- [run_pipeline_activity](./client.md#run_pipeline_activity)
-- [sample_channel_data](./client.md#sample_channel_data)
-- [start_pipeline_reprocessing](./client.md#start_pipeline_reprocessing)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_channel](./client.md#update_channel)
-- [update_dataset](./client.md#update_dataset)
-- [update_datastore](./client.md#update_datastore)
-- [update_pipeline](./client.md#update_pipeline)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoTAnalyticsClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalFailureException
-- InvalidRequestException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- ThrottlingException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iotanalytics").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iotanalytics").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator, ...
+from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
+
+def get_list_channels_paginator() -> ListChannelsPaginator:
+    return Session().client("iotanalytics").get_paginator("list_channels"))
 ```
 
 - [ListChannelsPaginator](./paginators.md#listchannelspaginator)
@@ -160,16 +81,23 @@ from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator, ...
 - [ListDatastoresPaginator](./paginators.md#listdatastorespaginator)
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotanalytics.literals import ChannelStatusType
 
-```python
-from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
+def get_value() -> ChannelStatusType:
+    return "ACTIVE"
 ```
 
 - [ChannelStatusType](./literals.md#channelstatustype)
@@ -190,18 +118,23 @@ from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef
 
-```python
-from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef, ...
+def get_value() -> AddAttributesActivityTypeDef:
+    return {
+        "name": ...,
+        "attributes": ...,
+    }
 ```
 
 - [AddAttributesActivityTypeDef](./type_defs.md#addattributesactivitytypedef)
@@ -283,14 +216,19 @@ from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef, ...
 - [LambdaActivityTypeDef](./type_defs.md#lambdaactivitytypedef)
 - [LateDataRuleConfigurationTypeDef](./type_defs.md#latedataruleconfigurationtypedef)
 - [LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)
+- [ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
+- [ListDatasetContentsRequestListDatasetContentsPaginateTypeDef](./type_defs.md#listdatasetcontentsrequestlistdatasetcontentspaginatetypedef)
 - [ListDatasetContentsRequestRequestTypeDef](./type_defs.md#listdatasetcontentsrequestrequesttypedef)
 - [ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef)
+- [ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListDatastoresRequestListDatastoresPaginateTypeDef](./type_defs.md#listdatastoresrequestlistdatastorespaginatetypedef)
 - [ListDatastoresRequestRequestTypeDef](./type_defs.md#listdatastoresrequestrequesttypedef)
 - [ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef)
+- [ListPipelinesRequestListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesrequestlistpipelinespaginatetypedef)
 - [ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef)
 - [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -334,3 +272,4 @@ from mypy_boto3_iotanalytics.type_defs import AddAttributesActivityTypeDef, ...
 - [UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef)
 - [VariableTypeDef](./type_defs.md#variabletypedef)
 - [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
+

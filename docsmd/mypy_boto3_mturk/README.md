@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-mturk-module"></a>
-
-# Type annotations for boto3 MTurk module
+#  MTurk module
 
 > [Index](../README.md) > MTurk
 
-Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module
-[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
+!!! note ""
 
-- [Type annotations for boto3 MTurk module](#type-annotations-for-boto3-mturk-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MTurkClient](#mturkclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MTurk`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mturk]'
 python -m pip install mypy-boto3-mturk
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,93 +42,37 @@ python -m pip install mypy-boto3-mturk
 python -m pip uninstall -y mypy-boto3-mturk
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="mturkclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MTurkClient
 
-Type annotations for `boto3.client("mturk")` as [MTurkClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mturk")` as [MTurkClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mturk.client import MTurkClient
+
+def get_client() -> MTurkClient:
+    return Session().cleint("mturk")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_qualification_request](./client.md#accept_qualification_request)
-- [approve_assignment](./client.md#approve_assignment)
-- [associate_qualification_with_worker](./client.md#associate_qualification_with_worker)
-- [can_paginate](./client.md#can_paginate)
-- [create_additional_assignments_for_hit](./client.md#create_additional_assignments_for_hit)
-- [create_hit](./client.md#create_hit)
-- [create_hit_type](./client.md#create_hit_type)
-- [create_hit_with_hit_type](./client.md#create_hit_with_hit_type)
-- [create_qualification_type](./client.md#create_qualification_type)
-- [create_worker_block](./client.md#create_worker_block)
-- [delete_hit](./client.md#delete_hit)
-- [delete_qualification_type](./client.md#delete_qualification_type)
-- [delete_worker_block](./client.md#delete_worker_block)
-- [disassociate_qualification_from_worker](./client.md#disassociate_qualification_from_worker)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_balance](./client.md#get_account_balance)
-- [get_assignment](./client.md#get_assignment)
-- [get_file_upload_url](./client.md#get_file_upload_url)
-- [get_hit](./client.md#get_hit)
-- [get_paginator](./client.md#get_paginator)
-- [get_qualification_score](./client.md#get_qualification_score)
-- [get_qualification_type](./client.md#get_qualification_type)
-- [list_assignments_for_hit](./client.md#list_assignments_for_hit)
-- [list_bonus_payments](./client.md#list_bonus_payments)
-- [list_hits](./client.md#list_hits)
-- [list_hits_for_qualification_type](./client.md#list_hits_for_qualification_type)
-- [list_qualification_requests](./client.md#list_qualification_requests)
-- [list_qualification_types](./client.md#list_qualification_types)
-- [list_review_policy_results_for_hit](./client.md#list_review_policy_results_for_hit)
-- [list_reviewable_hits](./client.md#list_reviewable_hits)
-- [list_worker_blocks](./client.md#list_worker_blocks)
-- [list_workers_with_qualification_type](./client.md#list_workers_with_qualification_type)
-- [notify_workers](./client.md#notify_workers)
-- [reject_assignment](./client.md#reject_assignment)
-- [reject_qualification_request](./client.md#reject_qualification_request)
-- [send_bonus](./client.md#send_bonus)
-- [send_test_event_notification](./client.md#send_test_event_notification)
-- [update_expiration_for_hit](./client.md#update_expiration_for_hit)
-- [update_hit_review_status](./client.md#update_hit_review_status)
-- [update_hit_type_of_hit](./client.md#update_hit_type_of_hit)
-- [update_notification_settings](./client.md#update_notification_settings)
-- [update_qualification_type](./client.md#update_qualification_type)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MTurkClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- RequestError
-- ServiceFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mturk").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mturk").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator, ...
+from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
+
+def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
+    return Session().client("mturk").get_paginator("list_assignments_for_hit"))
 ```
 
 - [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
@@ -163,16 +85,23 @@ from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator, ...
 - [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
 - [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mturk.literals import AssignmentStatusType
 
-```python
-from mypy_boto3_mturk.literals import AssignmentStatusType, ...
+def get_value() -> AssignmentStatusType:
+    return "Approved"
 ```
 
 - [AssignmentStatusType](./literals.md#assignmentstatustype)
@@ -201,18 +130,22 @@ from mypy_boto3_mturk.literals import AssignmentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestRequestTypeDef
 
-```python
-from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestRequestTypeDef, ...
+def get_value() -> AcceptQualificationRequestRequestRequestTypeDef:
+    return {
+        "QualificationRequestId": ...,
+    }
 ```
 
 - [AcceptQualificationRequestRequestRequestTypeDef](./type_defs.md#acceptqualificationrequestrequestrequesttypedef)
@@ -247,24 +180,33 @@ from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestRequestT
 - [GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef)
 - [HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)
 - [HITTypeDef](./type_defs.md#hittypedef)
+- [ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef](./type_defs.md#listassignmentsforhitrequestlistassignmentsforhitpaginatetypedef)
 - [ListAssignmentsForHITRequestRequestTypeDef](./type_defs.md#listassignmentsforhitrequestrequesttypedef)
 - [ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef)
+- [ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef](./type_defs.md#listbonuspaymentsrequestlistbonuspaymentspaginatetypedef)
 - [ListBonusPaymentsRequestRequestTypeDef](./type_defs.md#listbonuspaymentsrequestrequesttypedef)
 - [ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef)
+- [ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef](./type_defs.md#listhitsforqualificationtyperequestlisthitsforqualificationtypepaginatetypedef)
 - [ListHITsForQualificationTypeRequestRequestTypeDef](./type_defs.md#listhitsforqualificationtyperequestrequesttypedef)
 - [ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef)
+- [ListHITsRequestListHITsPaginateTypeDef](./type_defs.md#listhitsrequestlisthitspaginatetypedef)
 - [ListHITsRequestRequestTypeDef](./type_defs.md#listhitsrequestrequesttypedef)
 - [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef)
+- [ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef](./type_defs.md#listqualificationrequestsrequestlistqualificationrequestspaginatetypedef)
 - [ListQualificationRequestsRequestRequestTypeDef](./type_defs.md#listqualificationrequestsrequestrequesttypedef)
 - [ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef)
+- [ListQualificationTypesRequestListQualificationTypesPaginateTypeDef](./type_defs.md#listqualificationtypesrequestlistqualificationtypespaginatetypedef)
 - [ListQualificationTypesRequestRequestTypeDef](./type_defs.md#listqualificationtypesrequestrequesttypedef)
 - [ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef)
 - [ListReviewPolicyResultsForHITRequestRequestTypeDef](./type_defs.md#listreviewpolicyresultsforhitrequestrequesttypedef)
 - [ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef)
+- [ListReviewableHITsRequestListReviewableHITsPaginateTypeDef](./type_defs.md#listreviewablehitsrequestlistreviewablehitspaginatetypedef)
 - [ListReviewableHITsRequestRequestTypeDef](./type_defs.md#listreviewablehitsrequestrequesttypedef)
 - [ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef)
+- [ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef](./type_defs.md#listworkerblocksrequestlistworkerblockspaginatetypedef)
 - [ListWorkerBlocksRequestRequestTypeDef](./type_defs.md#listworkerblocksrequestrequesttypedef)
 - [ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef)
+- [ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef](./type_defs.md#listworkerswithqualificationtyperequestlistworkerswithqualificationtypepaginatetypedef)
 - [ListWorkersWithQualificationTypeRequestRequestTypeDef](./type_defs.md#listworkerswithqualificationtyperequestrequesttypedef)
 - [ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef)
 - [LocaleTypeDef](./type_defs.md#localetypedef)
@@ -295,3 +237,4 @@ from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestRequestT
 - [UpdateQualificationTypeRequestRequestTypeDef](./type_defs.md#updatequalificationtyperequestrequesttypedef)
 - [UpdateQualificationTypeResponseTypeDef](./type_defs.md#updatequalificationtyperesponsetypedef)
 - [WorkerBlockTypeDef](./type_defs.md#workerblocktypedef)
+

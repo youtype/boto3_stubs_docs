@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-ssm-module"></a>
-
-# Type annotations for boto3 SSM module
+#  SSM module
 
 > [Index](../README.md) > SSM
 
-Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module
-[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
+!!! note ""
 
-- [Type annotations for boto3 SSM module](#type-annotations-for-boto3-ssm-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SSMClient](#ssmclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+    type annotations stubs module [mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SSM`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ssm]'
 python -m pip install mypy-boto3-ssm
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,310 +42,37 @@ python -m pip install mypy-boto3-ssm
 python -m pip uninstall -y mypy-boto3-ssm
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ssmclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SSMClient
 
-Type annotations for `boto3.client("ssm")` as [SSMClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ssm")` as [SSMClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ssm.client import SSMClient
+
+def get_client() -> SSMClient:
+    return Session().cleint("ssm")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [associate_ops_item_related_item](./client.md#associate_ops_item_related_item)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_command](./client.md#cancel_command)
-- [cancel_maintenance_window_execution](./client.md#cancel_maintenance_window_execution)
-- [create_activation](./client.md#create_activation)
-- [create_association](./client.md#create_association)
-- [create_association_batch](./client.md#create_association_batch)
-- [create_document](./client.md#create_document)
-- [create_maintenance_window](./client.md#create_maintenance_window)
-- [create_ops_item](./client.md#create_ops_item)
-- [create_ops_metadata](./client.md#create_ops_metadata)
-- [create_patch_baseline](./client.md#create_patch_baseline)
-- [create_resource_data_sync](./client.md#create_resource_data_sync)
-- [delete_activation](./client.md#delete_activation)
-- [delete_association](./client.md#delete_association)
-- [delete_document](./client.md#delete_document)
-- [delete_inventory](./client.md#delete_inventory)
-- [delete_maintenance_window](./client.md#delete_maintenance_window)
-- [delete_ops_metadata](./client.md#delete_ops_metadata)
-- [delete_parameter](./client.md#delete_parameter)
-- [delete_parameters](./client.md#delete_parameters)
-- [delete_patch_baseline](./client.md#delete_patch_baseline)
-- [delete_resource_data_sync](./client.md#delete_resource_data_sync)
-- [deregister_managed_instance](./client.md#deregister_managed_instance)
-- [deregister_patch_baseline_for_patch_group](./client.md#deregister_patch_baseline_for_patch_group)
-- [deregister_target_from_maintenance_window](./client.md#deregister_target_from_maintenance_window)
-- [deregister_task_from_maintenance_window](./client.md#deregister_task_from_maintenance_window)
-- [describe_activations](./client.md#describe_activations)
-- [describe_association](./client.md#describe_association)
-- [describe_association_execution_targets](./client.md#describe_association_execution_targets)
-- [describe_association_executions](./client.md#describe_association_executions)
-- [describe_automation_executions](./client.md#describe_automation_executions)
-- [describe_automation_step_executions](./client.md#describe_automation_step_executions)
-- [describe_available_patches](./client.md#describe_available_patches)
-- [describe_document](./client.md#describe_document)
-- [describe_document_permission](./client.md#describe_document_permission)
-- [describe_effective_instance_associations](./client.md#describe_effective_instance_associations)
-- [describe_effective_patches_for_patch_baseline](./client.md#describe_effective_patches_for_patch_baseline)
-- [describe_instance_associations_status](./client.md#describe_instance_associations_status)
-- [describe_instance_information](./client.md#describe_instance_information)
-- [describe_instance_patch_states](./client.md#describe_instance_patch_states)
-- [describe_instance_patch_states_for_patch_group](./client.md#describe_instance_patch_states_for_patch_group)
-- [describe_instance_patches](./client.md#describe_instance_patches)
-- [describe_inventory_deletions](./client.md#describe_inventory_deletions)
-- [describe_maintenance_window_execution_task_invocations](./client.md#describe_maintenance_window_execution_task_invocations)
-- [describe_maintenance_window_execution_tasks](./client.md#describe_maintenance_window_execution_tasks)
-- [describe_maintenance_window_executions](./client.md#describe_maintenance_window_executions)
-- [describe_maintenance_window_schedule](./client.md#describe_maintenance_window_schedule)
-- [describe_maintenance_window_targets](./client.md#describe_maintenance_window_targets)
-- [describe_maintenance_window_tasks](./client.md#describe_maintenance_window_tasks)
-- [describe_maintenance_windows](./client.md#describe_maintenance_windows)
-- [describe_maintenance_windows_for_target](./client.md#describe_maintenance_windows_for_target)
-- [describe_ops_items](./client.md#describe_ops_items)
-- [describe_parameters](./client.md#describe_parameters)
-- [describe_patch_baselines](./client.md#describe_patch_baselines)
-- [describe_patch_group_state](./client.md#describe_patch_group_state)
-- [describe_patch_groups](./client.md#describe_patch_groups)
-- [describe_patch_properties](./client.md#describe_patch_properties)
-- [describe_sessions](./client.md#describe_sessions)
-- [disassociate_ops_item_related_item](./client.md#disassociate_ops_item_related_item)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_automation_execution](./client.md#get_automation_execution)
-- [get_calendar_state](./client.md#get_calendar_state)
-- [get_command_invocation](./client.md#get_command_invocation)
-- [get_connection_status](./client.md#get_connection_status)
-- [get_default_patch_baseline](./client.md#get_default_patch_baseline)
-- [get_deployable_patch_snapshot_for_instance](./client.md#get_deployable_patch_snapshot_for_instance)
-- [get_document](./client.md#get_document)
-- [get_inventory](./client.md#get_inventory)
-- [get_inventory_schema](./client.md#get_inventory_schema)
-- [get_maintenance_window](./client.md#get_maintenance_window)
-- [get_maintenance_window_execution](./client.md#get_maintenance_window_execution)
-- [get_maintenance_window_execution_task](./client.md#get_maintenance_window_execution_task)
-- [get_maintenance_window_execution_task_invocation](./client.md#get_maintenance_window_execution_task_invocation)
-- [get_maintenance_window_task](./client.md#get_maintenance_window_task)
-- [get_ops_item](./client.md#get_ops_item)
-- [get_ops_metadata](./client.md#get_ops_metadata)
-- [get_ops_summary](./client.md#get_ops_summary)
-- [get_paginator](./client.md#get_paginator)
-- [get_parameter](./client.md#get_parameter)
-- [get_parameter_history](./client.md#get_parameter_history)
-- [get_parameters](./client.md#get_parameters)
-- [get_parameters_by_path](./client.md#get_parameters_by_path)
-- [get_patch_baseline](./client.md#get_patch_baseline)
-- [get_patch_baseline_for_patch_group](./client.md#get_patch_baseline_for_patch_group)
-- [get_service_setting](./client.md#get_service_setting)
-- [get_waiter](./client.md#get_waiter)
-- [label_parameter_version](./client.md#label_parameter_version)
-- [list_association_versions](./client.md#list_association_versions)
-- [list_associations](./client.md#list_associations)
-- [list_command_invocations](./client.md#list_command_invocations)
-- [list_commands](./client.md#list_commands)
-- [list_compliance_items](./client.md#list_compliance_items)
-- [list_compliance_summaries](./client.md#list_compliance_summaries)
-- [list_document_metadata_history](./client.md#list_document_metadata_history)
-- [list_document_versions](./client.md#list_document_versions)
-- [list_documents](./client.md#list_documents)
-- [list_inventory_entries](./client.md#list_inventory_entries)
-- [list_ops_item_events](./client.md#list_ops_item_events)
-- [list_ops_item_related_items](./client.md#list_ops_item_related_items)
-- [list_ops_metadata](./client.md#list_ops_metadata)
-- [list_resource_compliance_summaries](./client.md#list_resource_compliance_summaries)
-- [list_resource_data_sync](./client.md#list_resource_data_sync)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [modify_document_permission](./client.md#modify_document_permission)
-- [put_compliance_items](./client.md#put_compliance_items)
-- [put_inventory](./client.md#put_inventory)
-- [put_parameter](./client.md#put_parameter)
-- [register_default_patch_baseline](./client.md#register_default_patch_baseline)
-- [register_patch_baseline_for_patch_group](./client.md#register_patch_baseline_for_patch_group)
-- [register_target_with_maintenance_window](./client.md#register_target_with_maintenance_window)
-- [register_task_with_maintenance_window](./client.md#register_task_with_maintenance_window)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_service_setting](./client.md#reset_service_setting)
-- [resume_session](./client.md#resume_session)
-- [send_automation_signal](./client.md#send_automation_signal)
-- [send_command](./client.md#send_command)
-- [start_associations_once](./client.md#start_associations_once)
-- [start_automation_execution](./client.md#start_automation_execution)
-- [start_change_request_execution](./client.md#start_change_request_execution)
-- [start_session](./client.md#start_session)
-- [stop_automation_execution](./client.md#stop_automation_execution)
-- [terminate_session](./client.md#terminate_session)
-- [unlabel_parameter_version](./client.md#unlabel_parameter_version)
-- [update_association](./client.md#update_association)
-- [update_association_status](./client.md#update_association_status)
-- [update_document](./client.md#update_document)
-- [update_document_default_version](./client.md#update_document_default_version)
-- [update_document_metadata](./client.md#update_document_metadata)
-- [update_maintenance_window](./client.md#update_maintenance_window)
-- [update_maintenance_window_target](./client.md#update_maintenance_window_target)
-- [update_maintenance_window_task](./client.md#update_maintenance_window_task)
-- [update_managed_instance_role](./client.md#update_managed_instance_role)
-- [update_ops_item](./client.md#update_ops_item)
-- [update_ops_metadata](./client.md#update_ops_metadata)
-- [update_patch_baseline](./client.md#update_patch_baseline)
-- [update_resource_data_sync](./client.md#update_resource_data_sync)
-- [update_service_setting](./client.md#update_service_setting)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SSMClient [exceptions](./client.md#exceptions)
-
-- AlreadyExistsException
-- AssociatedInstances
-- AssociationAlreadyExists
-- AssociationDoesNotExist
-- AssociationExecutionDoesNotExist
-- AssociationLimitExceeded
-- AssociationVersionLimitExceeded
-- AutomationDefinitionNotApprovedException
-- AutomationDefinitionNotFoundException
-- AutomationDefinitionVersionNotFoundException
-- AutomationExecutionLimitExceededException
-- AutomationExecutionNotFoundException
-- AutomationStepNotFoundException
-- ClientError
-- ComplianceTypeCountLimitExceededException
-- CustomSchemaCountLimitExceededException
-- DocumentAlreadyExists
-- DocumentLimitExceeded
-- DocumentPermissionLimit
-- DocumentVersionLimitExceeded
-- DoesNotExistException
-- DuplicateDocumentContent
-- DuplicateDocumentVersionName
-- DuplicateInstanceId
-- FeatureNotAvailableException
-- HierarchyLevelLimitExceededException
-- HierarchyTypeMismatchException
-- IdempotentParameterMismatch
-- IncompatiblePolicyException
-- InternalServerError
-- InvalidActivation
-- InvalidActivationId
-- InvalidAggregatorException
-- InvalidAllowedPatternException
-- InvalidAssociation
-- InvalidAssociationVersion
-- InvalidAutomationExecutionParametersException
-- InvalidAutomationSignalException
-- InvalidAutomationStatusUpdateException
-- InvalidCommandId
-- InvalidDeleteInventoryParametersException
-- InvalidDeletionIdException
-- InvalidDocument
-- InvalidDocumentContent
-- InvalidDocumentOperation
-- InvalidDocumentSchemaVersion
-- InvalidDocumentType
-- InvalidDocumentVersion
-- InvalidFilter
-- InvalidFilterKey
-- InvalidFilterOption
-- InvalidFilterValue
-- InvalidInstanceId
-- InvalidInstanceInformationFilterValue
-- InvalidInventoryGroupException
-- InvalidInventoryItemContextException
-- InvalidInventoryRequestException
-- InvalidItemContentException
-- InvalidKeyId
-- InvalidNextToken
-- InvalidNotificationConfig
-- InvalidOptionException
-- InvalidOutputFolder
-- InvalidOutputLocation
-- InvalidParameters
-- InvalidPermissionType
-- InvalidPluginName
-- InvalidPolicyAttributeException
-- InvalidPolicyTypeException
-- InvalidResourceId
-- InvalidResourceType
-- InvalidResultAttributeException
-- InvalidRole
-- InvalidSchedule
-- InvalidTarget
-- InvalidTypeNameException
-- InvalidUpdate
-- InvocationDoesNotExist
-- ItemContentMismatchException
-- ItemSizeLimitExceededException
-- MaxDocumentSizeExceeded
-- OpsItemAlreadyExistsException
-- OpsItemInvalidParameterException
-- OpsItemLimitExceededException
-- OpsItemNotFoundException
-- OpsItemRelatedItemAlreadyExistsException
-- OpsItemRelatedItemAssociationNotFoundException
-- OpsMetadataAlreadyExistsException
-- OpsMetadataInvalidArgumentException
-- OpsMetadataKeyLimitExceededException
-- OpsMetadataLimitExceededException
-- OpsMetadataNotFoundException
-- OpsMetadataTooManyUpdatesException
-- ParameterAlreadyExists
-- ParameterLimitExceeded
-- ParameterMaxVersionLimitExceeded
-- ParameterNotFound
-- ParameterPatternMismatchException
-- ParameterVersionLabelLimitExceeded
-- ParameterVersionNotFound
-- PoliciesLimitExceededException
-- ResourceDataSyncAlreadyExistsException
-- ResourceDataSyncConflictException
-- ResourceDataSyncCountExceededException
-- ResourceDataSyncInvalidConfigurationException
-- ResourceDataSyncNotFoundException
-- ResourceInUseException
-- ResourceLimitExceededException
-- ServiceSettingNotFound
-- StatusUnchanged
-- SubTypeCountLimitExceededException
-- TargetInUseException
-- TargetNotConnected
-- TooManyTagsError
-- TooManyUpdates
-- TotalSizeLimitExceededException
-- UnsupportedCalendarException
-- UnsupportedFeatureRequiredException
-- UnsupportedInventoryItemContextException
-- UnsupportedInventorySchemaVersionException
-- UnsupportedOperatingSystem
-- UnsupportedParameterType
-- UnsupportedPlatformType
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ssm").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ssm").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ssm.paginator import DescribeActivationsPaginator, ...
+from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
+
+def get_describe_activations_paginator() -> DescribeActivationsPaginator:
+    return Session().client("ssm").get_paginator("describe_activations"))
 ```
 
 - [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
@@ -418,31 +122,40 @@ from mypy_boto3_ssm.paginator import DescribeActivationsPaginator, ...
 - [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
 - [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("ssm").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("ssm").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ssm.waiter import CommandExecutedWaiter, ...
+from mypy_boto3_ssm.waiter import CommandExecutedWaiter
+
+def get_command_executed_waiter() -> CommandExecutedWaiter:
+    return Session().client("ssm").get_waiter("command_executed")
 ```
 
 - [CommandExecutedWaiter](./waiters.md#commandexecutedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm.literals import AssociationComplianceSeverityType
 
-```python
-from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
+def get_value() -> AssociationComplianceSeverityType:
+    return "CRITICAL"
 ```
 
 - [AssociationComplianceSeverityType](./literals.md#associationcomplianceseveritytype)
@@ -581,18 +294,22 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef
 
-```python
-from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
+def get_value() -> AccountSharingInfoTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
 - [AccountSharingInfoTypeDef](./type_defs.md#accountsharinginfotypedef)
@@ -671,68 +388,96 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef](./type_defs.md#deregistertaskfrommaintenancewindowrequestrequesttypedef)
 - [DeregisterTaskFromMaintenanceWindowResultTypeDef](./type_defs.md#deregistertaskfrommaintenancewindowresulttypedef)
 - [DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)
+- [DescribeActivationsRequestDescribeActivationsPaginateTypeDef](./type_defs.md#describeactivationsrequestdescribeactivationspaginatetypedef)
 - [DescribeActivationsRequestRequestTypeDef](./type_defs.md#describeactivationsrequestrequesttypedef)
 - [DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef)
+- [DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef](./type_defs.md#describeassociationexecutiontargetsrequestdescribeassociationexecutiontargetspaginatetypedef)
 - [DescribeAssociationExecutionTargetsRequestRequestTypeDef](./type_defs.md#describeassociationexecutiontargetsrequestrequesttypedef)
 - [DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef)
+- [DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef](./type_defs.md#describeassociationexecutionsrequestdescribeassociationexecutionspaginatetypedef)
 - [DescribeAssociationExecutionsRequestRequestTypeDef](./type_defs.md#describeassociationexecutionsrequestrequesttypedef)
 - [DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef)
 - [DescribeAssociationRequestRequestTypeDef](./type_defs.md#describeassociationrequestrequesttypedef)
 - [DescribeAssociationResultTypeDef](./type_defs.md#describeassociationresulttypedef)
+- [DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef](./type_defs.md#describeautomationexecutionsrequestdescribeautomationexecutionspaginatetypedef)
 - [DescribeAutomationExecutionsRequestRequestTypeDef](./type_defs.md#describeautomationexecutionsrequestrequesttypedef)
 - [DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef)
+- [DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef](./type_defs.md#describeautomationstepexecutionsrequestdescribeautomationstepexecutionspaginatetypedef)
 - [DescribeAutomationStepExecutionsRequestRequestTypeDef](./type_defs.md#describeautomationstepexecutionsrequestrequesttypedef)
 - [DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef)
+- [DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef](./type_defs.md#describeavailablepatchesrequestdescribeavailablepatchespaginatetypedef)
 - [DescribeAvailablePatchesRequestRequestTypeDef](./type_defs.md#describeavailablepatchesrequestrequesttypedef)
 - [DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef)
 - [DescribeDocumentPermissionRequestRequestTypeDef](./type_defs.md#describedocumentpermissionrequestrequesttypedef)
 - [DescribeDocumentPermissionResponseTypeDef](./type_defs.md#describedocumentpermissionresponsetypedef)
 - [DescribeDocumentRequestRequestTypeDef](./type_defs.md#describedocumentrequestrequesttypedef)
 - [DescribeDocumentResultTypeDef](./type_defs.md#describedocumentresulttypedef)
+- [DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef](./type_defs.md#describeeffectiveinstanceassociationsrequestdescribeeffectiveinstanceassociationspaginatetypedef)
 - [DescribeEffectiveInstanceAssociationsRequestRequestTypeDef](./type_defs.md#describeeffectiveinstanceassociationsrequestrequesttypedef)
 - [DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef)
+- [DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselinerequestdescribeeffectivepatchesforpatchbaselinepaginatetypedef)
 - [DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselinerequestrequesttypedef)
 - [DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef)
+- [DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef](./type_defs.md#describeinstanceassociationsstatusrequestdescribeinstanceassociationsstatuspaginatetypedef)
 - [DescribeInstanceAssociationsStatusRequestRequestTypeDef](./type_defs.md#describeinstanceassociationsstatusrequestrequesttypedef)
 - [DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef)
+- [DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef](./type_defs.md#describeinstanceinformationrequestdescribeinstanceinformationpaginatetypedef)
 - [DescribeInstanceInformationRequestRequestTypeDef](./type_defs.md#describeinstanceinformationrequestrequesttypedef)
 - [DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef)
+- [DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgrouprequestdescribeinstancepatchstatesforpatchgrouppaginatetypedef)
 - [DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgrouprequestrequesttypedef)
 - [DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef)
+- [DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef](./type_defs.md#describeinstancepatchstatesrequestdescribeinstancepatchstatespaginatetypedef)
 - [DescribeInstancePatchStatesRequestRequestTypeDef](./type_defs.md#describeinstancepatchstatesrequestrequesttypedef)
 - [DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef)
+- [DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef](./type_defs.md#describeinstancepatchesrequestdescribeinstancepatchespaginatetypedef)
 - [DescribeInstancePatchesRequestRequestTypeDef](./type_defs.md#describeinstancepatchesrequestrequesttypedef)
 - [DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef)
+- [DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef](./type_defs.md#describeinventorydeletionsrequestdescribeinventorydeletionspaginatetypedef)
 - [DescribeInventoryDeletionsRequestRequestTypeDef](./type_defs.md#describeinventorydeletionsrequestrequesttypedef)
 - [DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef)
+- [DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsrequestdescribemaintenancewindowexecutiontaskinvocationspaginatetypedef)
 - [DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsrequestrequesttypedef)
 - [DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef)
+- [DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksrequestdescribemaintenancewindowexecutiontaskspaginatetypedef)
 - [DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksrequestrequesttypedef)
 - [DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef)
+- [DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutionsrequestdescribemaintenancewindowexecutionspaginatetypedef)
 - [DescribeMaintenanceWindowExecutionsRequestRequestTypeDef](./type_defs.md#describemaintenancewindowexecutionsrequestrequesttypedef)
 - [DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef)
+- [DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef](./type_defs.md#describemaintenancewindowschedulerequestdescribemaintenancewindowschedulepaginatetypedef)
 - [DescribeMaintenanceWindowScheduleRequestRequestTypeDef](./type_defs.md#describemaintenancewindowschedulerequestrequesttypedef)
 - [DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef)
+- [DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef](./type_defs.md#describemaintenancewindowtargetsrequestdescribemaintenancewindowtargetspaginatetypedef)
 - [DescribeMaintenanceWindowTargetsRequestRequestTypeDef](./type_defs.md#describemaintenancewindowtargetsrequestrequesttypedef)
 - [DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef)
+- [DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef](./type_defs.md#describemaintenancewindowtasksrequestdescribemaintenancewindowtaskspaginatetypedef)
 - [DescribeMaintenanceWindowTasksRequestRequestTypeDef](./type_defs.md#describemaintenancewindowtasksrequestrequesttypedef)
 - [DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef)
+- [DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef](./type_defs.md#describemaintenancewindowsfortargetrequestdescribemaintenancewindowsfortargetpaginatetypedef)
 - [DescribeMaintenanceWindowsForTargetRequestRequestTypeDef](./type_defs.md#describemaintenancewindowsfortargetrequestrequesttypedef)
 - [DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef)
+- [DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef](./type_defs.md#describemaintenancewindowsrequestdescribemaintenancewindowspaginatetypedef)
 - [DescribeMaintenanceWindowsRequestRequestTypeDef](./type_defs.md#describemaintenancewindowsrequestrequesttypedef)
 - [DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef)
+- [DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef](./type_defs.md#describeopsitemsrequestdescribeopsitemspaginatetypedef)
 - [DescribeOpsItemsRequestRequestTypeDef](./type_defs.md#describeopsitemsrequestrequesttypedef)
 - [DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef)
+- [DescribeParametersRequestDescribeParametersPaginateTypeDef](./type_defs.md#describeparametersrequestdescribeparameterspaginatetypedef)
 - [DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef)
 - [DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef)
+- [DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef](./type_defs.md#describepatchbaselinesrequestdescribepatchbaselinespaginatetypedef)
 - [DescribePatchBaselinesRequestRequestTypeDef](./type_defs.md#describepatchbaselinesrequestrequesttypedef)
 - [DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef)
 - [DescribePatchGroupStateRequestRequestTypeDef](./type_defs.md#describepatchgroupstaterequestrequesttypedef)
 - [DescribePatchGroupStateResultTypeDef](./type_defs.md#describepatchgroupstateresulttypedef)
+- [DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef](./type_defs.md#describepatchgroupsrequestdescribepatchgroupspaginatetypedef)
 - [DescribePatchGroupsRequestRequestTypeDef](./type_defs.md#describepatchgroupsrequestrequesttypedef)
 - [DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef)
+- [DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef](./type_defs.md#describepatchpropertiesrequestdescribepatchpropertiespaginatetypedef)
 - [DescribePatchPropertiesRequestRequestTypeDef](./type_defs.md#describepatchpropertiesrequestrequesttypedef)
 - [DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef)
+- [DescribeSessionsRequestDescribeSessionsPaginateTypeDef](./type_defs.md#describesessionsrequestdescribesessionspaginatetypedef)
 - [DescribeSessionsRequestRequestTypeDef](./type_defs.md#describesessionsrequestrequesttypedef)
 - [DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef)
 - [DisassociateOpsItemRelatedItemRequestRequestTypeDef](./type_defs.md#disassociateopsitemrelateditemrequestrequesttypedef)
@@ -755,6 +500,7 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [GetAutomationExecutionResultTypeDef](./type_defs.md#getautomationexecutionresulttypedef)
 - [GetCalendarStateRequestRequestTypeDef](./type_defs.md#getcalendarstaterequestrequesttypedef)
 - [GetCalendarStateResponseTypeDef](./type_defs.md#getcalendarstateresponsetypedef)
+- [GetCommandInvocationRequestCommandExecutedWaitTypeDef](./type_defs.md#getcommandinvocationrequestcommandexecutedwaittypedef)
 - [GetCommandInvocationRequestRequestTypeDef](./type_defs.md#getcommandinvocationrequestrequesttypedef)
 - [GetCommandInvocationResultTypeDef](./type_defs.md#getcommandinvocationresulttypedef)
 - [GetConnectionStatusRequestRequestTypeDef](./type_defs.md#getconnectionstatusrequestrequesttypedef)
@@ -765,8 +511,10 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [GetDeployablePatchSnapshotForInstanceResultTypeDef](./type_defs.md#getdeployablepatchsnapshotforinstanceresulttypedef)
 - [GetDocumentRequestRequestTypeDef](./type_defs.md#getdocumentrequestrequesttypedef)
 - [GetDocumentResultTypeDef](./type_defs.md#getdocumentresulttypedef)
+- [GetInventoryRequestGetInventoryPaginateTypeDef](./type_defs.md#getinventoryrequestgetinventorypaginatetypedef)
 - [GetInventoryRequestRequestTypeDef](./type_defs.md#getinventoryrequestrequesttypedef)
 - [GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef)
+- [GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef](./type_defs.md#getinventoryschemarequestgetinventoryschemapaginatetypedef)
 - [GetInventorySchemaRequestRequestTypeDef](./type_defs.md#getinventoryschemarequestrequesttypedef)
 - [GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef)
 - [GetMaintenanceWindowExecutionRequestRequestTypeDef](./type_defs.md#getmaintenancewindowexecutionrequestrequesttypedef)
@@ -783,12 +531,15 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [GetOpsItemResponseTypeDef](./type_defs.md#getopsitemresponsetypedef)
 - [GetOpsMetadataRequestRequestTypeDef](./type_defs.md#getopsmetadatarequestrequesttypedef)
 - [GetOpsMetadataResultTypeDef](./type_defs.md#getopsmetadataresulttypedef)
+- [GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef](./type_defs.md#getopssummaryrequestgetopssummarypaginatetypedef)
 - [GetOpsSummaryRequestRequestTypeDef](./type_defs.md#getopssummaryrequestrequesttypedef)
 - [GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef)
+- [GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef](./type_defs.md#getparameterhistoryrequestgetparameterhistorypaginatetypedef)
 - [GetParameterHistoryRequestRequestTypeDef](./type_defs.md#getparameterhistoryrequestrequesttypedef)
 - [GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef)
 - [GetParameterRequestRequestTypeDef](./type_defs.md#getparameterrequestrequesttypedef)
 - [GetParameterResultTypeDef](./type_defs.md#getparameterresulttypedef)
+- [GetParametersByPathRequestGetParametersByPathPaginateTypeDef](./type_defs.md#getparametersbypathrequestgetparametersbypathpaginatetypedef)
 - [GetParametersByPathRequestRequestTypeDef](./type_defs.md#getparametersbypathrequestrequesttypedef)
 - [GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef)
 - [GetParametersRequestRequestTypeDef](./type_defs.md#getparametersrequestrequesttypedef)
@@ -822,34 +573,47 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [InventoryResultItemTypeDef](./type_defs.md#inventoryresultitemtypedef)
 - [LabelParameterVersionRequestRequestTypeDef](./type_defs.md#labelparameterversionrequestrequesttypedef)
 - [LabelParameterVersionResultTypeDef](./type_defs.md#labelparameterversionresulttypedef)
+- [ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef](./type_defs.md#listassociationversionsrequestlistassociationversionspaginatetypedef)
 - [ListAssociationVersionsRequestRequestTypeDef](./type_defs.md#listassociationversionsrequestrequesttypedef)
 - [ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef)
+- [ListAssociationsRequestListAssociationsPaginateTypeDef](./type_defs.md#listassociationsrequestlistassociationspaginatetypedef)
 - [ListAssociationsRequestRequestTypeDef](./type_defs.md#listassociationsrequestrequesttypedef)
 - [ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef)
+- [ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef](./type_defs.md#listcommandinvocationsrequestlistcommandinvocationspaginatetypedef)
 - [ListCommandInvocationsRequestRequestTypeDef](./type_defs.md#listcommandinvocationsrequestrequesttypedef)
 - [ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef)
+- [ListCommandsRequestListCommandsPaginateTypeDef](./type_defs.md#listcommandsrequestlistcommandspaginatetypedef)
 - [ListCommandsRequestRequestTypeDef](./type_defs.md#listcommandsrequestrequesttypedef)
 - [ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef)
+- [ListComplianceItemsRequestListComplianceItemsPaginateTypeDef](./type_defs.md#listcomplianceitemsrequestlistcomplianceitemspaginatetypedef)
 - [ListComplianceItemsRequestRequestTypeDef](./type_defs.md#listcomplianceitemsrequestrequesttypedef)
 - [ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef)
+- [ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef](./type_defs.md#listcompliancesummariesrequestlistcompliancesummariespaginatetypedef)
 - [ListComplianceSummariesRequestRequestTypeDef](./type_defs.md#listcompliancesummariesrequestrequesttypedef)
 - [ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef)
 - [ListDocumentMetadataHistoryRequestRequestTypeDef](./type_defs.md#listdocumentmetadatahistoryrequestrequesttypedef)
 - [ListDocumentMetadataHistoryResponseTypeDef](./type_defs.md#listdocumentmetadatahistoryresponsetypedef)
+- [ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef](./type_defs.md#listdocumentversionsrequestlistdocumentversionspaginatetypedef)
 - [ListDocumentVersionsRequestRequestTypeDef](./type_defs.md#listdocumentversionsrequestrequesttypedef)
 - [ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef)
+- [ListDocumentsRequestListDocumentsPaginateTypeDef](./type_defs.md#listdocumentsrequestlistdocumentspaginatetypedef)
 - [ListDocumentsRequestRequestTypeDef](./type_defs.md#listdocumentsrequestrequesttypedef)
 - [ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef)
 - [ListInventoryEntriesRequestRequestTypeDef](./type_defs.md#listinventoryentriesrequestrequesttypedef)
 - [ListInventoryEntriesResultTypeDef](./type_defs.md#listinventoryentriesresulttypedef)
+- [ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef](./type_defs.md#listopsitemeventsrequestlistopsitemeventspaginatetypedef)
 - [ListOpsItemEventsRequestRequestTypeDef](./type_defs.md#listopsitemeventsrequestrequesttypedef)
 - [ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef)
+- [ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef](./type_defs.md#listopsitemrelateditemsrequestlistopsitemrelateditemspaginatetypedef)
 - [ListOpsItemRelatedItemsRequestRequestTypeDef](./type_defs.md#listopsitemrelateditemsrequestrequesttypedef)
 - [ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef)
+- [ListOpsMetadataRequestListOpsMetadataPaginateTypeDef](./type_defs.md#listopsmetadatarequestlistopsmetadatapaginatetypedef)
 - [ListOpsMetadataRequestRequestTypeDef](./type_defs.md#listopsmetadatarequestrequesttypedef)
 - [ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef)
+- [ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef](./type_defs.md#listresourcecompliancesummariesrequestlistresourcecompliancesummariespaginatetypedef)
 - [ListResourceComplianceSummariesRequestRequestTypeDef](./type_defs.md#listresourcecompliancesummariesrequestrequesttypedef)
 - [ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef)
+- [ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef](./type_defs.md#listresourcedatasyncrequestlistresourcedatasyncpaginatetypedef)
 - [ListResourceDataSyncRequestRequestTypeDef](./type_defs.md#listresourcedatasyncrequestrequesttypedef)
 - [ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -995,3 +759,4 @@ from mypy_boto3_ssm.type_defs import AccountSharingInfoTypeDef, ...
 - [UpdateResourceDataSyncRequestRequestTypeDef](./type_defs.md#updateresourcedatasyncrequestrequesttypedef)
 - [UpdateServiceSettingRequestRequestTypeDef](./type_defs.md#updateservicesettingrequestrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

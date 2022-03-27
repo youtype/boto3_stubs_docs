@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-route53recoveryreadiness-module"></a>
-
-# Type annotations for boto3 Route53RecoveryReadiness module
+#  Route53RecoveryReadiness module
 
 > [Index](../README.md) > Route53RecoveryReadiness
 
-Auto-generated documentation for
-[Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
-type annotations stubs module
-[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+!!! note ""
 
-- [Type annotations for boto3 Route53RecoveryReadiness module](#type-annotations-for-boto3-route53recoveryreadiness-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Route53RecoveryReadinessClient](#route53recoveryreadinessclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
+    type annotations stubs module [mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Route53RecoveryReadiness`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[route53-recovery-readiness]'
 python -m pip install mypy-boto3-route53-recovery-readiness
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,37 @@ python -m pip install mypy-boto3-route53-recovery-readiness
 python -m pip uninstall -y mypy-boto3-route53-recovery-readiness
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="route53recoveryreadinessclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Route53RecoveryReadinessClient
 
-Type annotations for `boto3.client("route53-recovery-readiness")` as
-[Route53RecoveryReadinessClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("route53-recovery-readiness")` as [Route53RecoveryReadinessClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadinessClient
+
+def get_client() -> Route53RecoveryReadinessClient:
+    return Session().cleint("route53-recovery-readiness")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_cell](./client.md#create_cell)
-- [create_cross_account_authorization](./client.md#create_cross_account_authorization)
-- [create_readiness_check](./client.md#create_readiness_check)
-- [create_recovery_group](./client.md#create_recovery_group)
-- [create_resource_set](./client.md#create_resource_set)
-- [delete_cell](./client.md#delete_cell)
-- [delete_cross_account_authorization](./client.md#delete_cross_account_authorization)
-- [delete_readiness_check](./client.md#delete_readiness_check)
-- [delete_recovery_group](./client.md#delete_recovery_group)
-- [delete_resource_set](./client.md#delete_resource_set)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_architecture_recommendations](./client.md#get_architecture_recommendations)
-- [get_cell](./client.md#get_cell)
-- [get_cell_readiness_summary](./client.md#get_cell_readiness_summary)
-- [get_paginator](./client.md#get_paginator)
-- [get_readiness_check](./client.md#get_readiness_check)
-- [get_readiness_check_resource_status](./client.md#get_readiness_check_resource_status)
-- [get_readiness_check_status](./client.md#get_readiness_check_status)
-- [get_recovery_group](./client.md#get_recovery_group)
-- [get_recovery_group_readiness_summary](./client.md#get_recovery_group_readiness_summary)
-- [get_resource_set](./client.md#get_resource_set)
-- [list_cells](./client.md#list_cells)
-- [list_cross_account_authorizations](./client.md#list_cross_account_authorizations)
-- [list_readiness_checks](./client.md#list_readiness_checks)
-- [list_recovery_groups](./client.md#list_recovery_groups)
-- [list_resource_sets](./client.md#list_resource_sets)
-- [list_rules](./client.md#list_rules)
-- [list_tags_for_resources](./client.md#list_tags_for_resources)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_cell](./client.md#update_cell)
-- [update_readiness_check](./client.md#update_readiness_check)
-- [update_recovery_group](./client.md#update_recovery_group)
-- [update_resource_set](./client.md#update_resource_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Route53RecoveryReadinessClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("route53-recovery-readiness").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53-recovery-readiness").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSummaryPaginator, ...
+from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSummaryPaginator
+
+def get_get_cell_readiness_summary_paginator() -> GetCellReadinessSummaryPaginator:
+    return Session().client("route53-recovery-readiness").get_paginator("get_cell_readiness_summary"))
 ```
 
 - [GetCellReadinessSummaryPaginator](./paginators.md#getcellreadinesssummarypaginator)
@@ -162,16 +86,23 @@ from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSumm
 - [ListResourceSetsPaginator](./paginators.md#listresourcesetspaginator)
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSummaryPaginatorName
 
-```python
-from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSummaryPaginatorName, ...
+def get_value() -> GetCellReadinessSummaryPaginatorName:
+    return "get_cell_readiness_summary"
 ```
 
 - [GetCellReadinessSummaryPaginatorName](./literals.md#getcellreadinesssummarypaginatorname)
@@ -190,17 +121,23 @@ from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSumma
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53_recovery_readiness.type_defs import CellOutputTypeDef
 
-```python
-from mypy_boto3_route53_recovery_readiness.type_defs import CellOutputTypeDef, ...
+def get_value() -> CellOutputTypeDef:
+    return {
+        "CellArn": ...,
+        "CellName": ...,
+        "Cells": ...,
+        "ParentReadinessScopes": ...,
+    }
 ```
 
 - [CellOutputTypeDef](./type_defs.md#celloutputtypedef)
@@ -222,33 +159,43 @@ from mypy_boto3_route53_recovery_readiness.type_defs import CellOutputTypeDef, .
 - [DeleteResourceSetRequestRequestTypeDef](./type_defs.md#deleteresourcesetrequestrequesttypedef)
 - [GetArchitectureRecommendationsRequestRequestTypeDef](./type_defs.md#getarchitecturerecommendationsrequestrequesttypedef)
 - [GetArchitectureRecommendationsResponseTypeDef](./type_defs.md#getarchitecturerecommendationsresponsetypedef)
+- [GetCellReadinessSummaryRequestGetCellReadinessSummaryPaginateTypeDef](./type_defs.md#getcellreadinesssummaryrequestgetcellreadinesssummarypaginatetypedef)
 - [GetCellReadinessSummaryRequestRequestTypeDef](./type_defs.md#getcellreadinesssummaryrequestrequesttypedef)
 - [GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef)
 - [GetCellRequestRequestTypeDef](./type_defs.md#getcellrequestrequesttypedef)
 - [GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef)
 - [GetReadinessCheckRequestRequestTypeDef](./type_defs.md#getreadinesscheckrequestrequesttypedef)
+- [GetReadinessCheckResourceStatusRequestGetReadinessCheckResourceStatusPaginateTypeDef](./type_defs.md#getreadinesscheckresourcestatusrequestgetreadinesscheckresourcestatuspaginatetypedef)
 - [GetReadinessCheckResourceStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckresourcestatusrequestrequesttypedef)
 - [GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef)
 - [GetReadinessCheckResponseTypeDef](./type_defs.md#getreadinesscheckresponsetypedef)
+- [GetReadinessCheckStatusRequestGetReadinessCheckStatusPaginateTypeDef](./type_defs.md#getreadinesscheckstatusrequestgetreadinesscheckstatuspaginatetypedef)
 - [GetReadinessCheckStatusRequestRequestTypeDef](./type_defs.md#getreadinesscheckstatusrequestrequesttypedef)
 - [GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef)
+- [GetRecoveryGroupReadinessSummaryRequestGetRecoveryGroupReadinessSummaryPaginateTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryrequestgetrecoverygroupreadinesssummarypaginatetypedef)
 - [GetRecoveryGroupReadinessSummaryRequestRequestTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryrequestrequesttypedef)
 - [GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef)
 - [GetRecoveryGroupRequestRequestTypeDef](./type_defs.md#getrecoverygrouprequestrequesttypedef)
 - [GetRecoveryGroupResponseTypeDef](./type_defs.md#getrecoverygroupresponsetypedef)
 - [GetResourceSetRequestRequestTypeDef](./type_defs.md#getresourcesetrequestrequesttypedef)
 - [GetResourceSetResponseTypeDef](./type_defs.md#getresourcesetresponsetypedef)
+- [ListCellsRequestListCellsPaginateTypeDef](./type_defs.md#listcellsrequestlistcellspaginatetypedef)
 - [ListCellsRequestRequestTypeDef](./type_defs.md#listcellsrequestrequesttypedef)
 - [ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef)
+- [ListCrossAccountAuthorizationsRequestListCrossAccountAuthorizationsPaginateTypeDef](./type_defs.md#listcrossaccountauthorizationsrequestlistcrossaccountauthorizationspaginatetypedef)
 - [ListCrossAccountAuthorizationsRequestRequestTypeDef](./type_defs.md#listcrossaccountauthorizationsrequestrequesttypedef)
 - [ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef)
+- [ListReadinessChecksRequestListReadinessChecksPaginateTypeDef](./type_defs.md#listreadinesschecksrequestlistreadinesscheckspaginatetypedef)
 - [ListReadinessChecksRequestRequestTypeDef](./type_defs.md#listreadinesschecksrequestrequesttypedef)
 - [ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef)
+- [ListRecoveryGroupsRequestListRecoveryGroupsPaginateTypeDef](./type_defs.md#listrecoverygroupsrequestlistrecoverygroupspaginatetypedef)
 - [ListRecoveryGroupsRequestRequestTypeDef](./type_defs.md#listrecoverygroupsrequestrequesttypedef)
 - [ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef)
+- [ListResourceSetsRequestListResourceSetsPaginateTypeDef](./type_defs.md#listresourcesetsrequestlistresourcesetspaginatetypedef)
 - [ListResourceSetsRequestRequestTypeDef](./type_defs.md#listresourcesetsrequestrequesttypedef)
 - [ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef)
 - [ListRulesOutputTypeDef](./type_defs.md#listrulesoutputtypedef)
+- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
 - [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
 - [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
 - [ListTagsForResourcesRequestRequestTypeDef](./type_defs.md#listtagsforresourcesrequestrequesttypedef)
@@ -277,3 +224,4 @@ from mypy_boto3_route53_recovery_readiness.type_defs import CellOutputTypeDef, .
 - [UpdateRecoveryGroupResponseTypeDef](./type_defs.md#updaterecoverygroupresponsetypedef)
 - [UpdateResourceSetRequestRequestTypeDef](./type_defs.md#updateresourcesetrequestrequesttypedef)
 - [UpdateResourceSetResponseTypeDef](./type_defs.md#updateresourcesetresponsetypedef)
+

@@ -1,85 +1,18 @@
-<a id="ecsclient-for-boto3-ecs-module"></a>
-
-# ECSClient for boto3 ECS module
+# ECSClient
 
 > [Index](../README.md) > [ECS](./README.md) > ECSClient
 
-Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module
-[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
+!!! note ""
 
-- [ECSClient for boto3 ECS module](#ecsclient-for-boto3-ecs-module)
-  - [ECSClient](#ecsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_capacity_provider](#create_capacity_provider)
-    - [create_cluster](#create_cluster)
-    - [create_service](#create_service)
-    - [create_task_set](#create_task_set)
-    - [delete_account_setting](#delete_account_setting)
-    - [delete_attributes](#delete_attributes)
-    - [delete_capacity_provider](#delete_capacity_provider)
-    - [delete_cluster](#delete_cluster)
-    - [delete_service](#delete_service)
-    - [delete_task_set](#delete_task_set)
-    - [deregister_container_instance](#deregister_container_instance)
-    - [deregister_task_definition](#deregister_task_definition)
-    - [describe_capacity_providers](#describe_capacity_providers)
-    - [describe_clusters](#describe_clusters)
-    - [describe_container_instances](#describe_container_instances)
-    - [describe_services](#describe_services)
-    - [describe_task_definition](#describe_task_definition)
-    - [describe_task_sets](#describe_task_sets)
-    - [describe_tasks](#describe_tasks)
-    - [discover_poll_endpoint](#discover_poll_endpoint)
-    - [execute_command](#execute_command)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_account_settings](#list_account_settings)
-    - [list_attributes](#list_attributes)
-    - [list_clusters](#list_clusters)
-    - [list_container_instances](#list_container_instances)
-    - [list_services](#list_services)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_task_definition_families](#list_task_definition_families)
-    - [list_task_definitions](#list_task_definitions)
-    - [list_tasks](#list_tasks)
-    - [put_account_setting](#put_account_setting)
-    - [put_account_setting_default](#put_account_setting_default)
-    - [put_attributes](#put_attributes)
-    - [put_cluster_capacity_providers](#put_cluster_capacity_providers)
-    - [register_container_instance](#register_container_instance)
-    - [register_task_definition](#register_task_definition)
-    - [run_task](#run_task)
-    - [start_task](#start_task)
-    - [stop_task](#stop_task)
-    - [submit_attachment_state_changes](#submit_attachment_state_changes)
-    - [submit_container_state_change](#submit_container_state_change)
-    - [submit_task_state_change](#submit_task_state_change)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_capacity_provider](#update_capacity_provider)
-    - [update_cluster](#update_cluster)
-    - [update_cluster_settings](#update_cluster_settings)
-    - [update_container_agent](#update_container_agent)
-    - [update_container_instances_state](#update_container_instances_state)
-    - [update_service](#update_service)
-    - [update_service_primary_task_set](#update_service_primary_task_set)
-    - [update_task_set](#update_task_set)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="ecsclient"></a>
+    Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+    type annotations stubs module [mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ## ECSClient
 
-Type annotations for `boto3.client("ecs")`
+Type annotations and code completion for `#!python boto3.client("ecs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ecs.client import ECSClient
 
@@ -87,1518 +20,1959 @@ def get_ecs_client() -> ECSClient:
     return Session().client("ecs")
 ```
 
-Boto3 documentation:
-[ECS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ecs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ecs")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AttributeLimitExceededException,
+    client.BlockedException,
+    client.ClientError,
+    client.ClientException,
+    client.ClusterContainsContainerInstancesException,
+    client.ClusterContainsServicesException,
+    client.ClusterContainsTasksException,
+    client.ClusterNotFoundException,
+    client.InvalidParameterException,
+    client.LimitExceededException,
+    client.MissingVersionException,
+    client.NoUpdateAvailableException,
+    client.PlatformTaskDefinitionIncompatibilityException,
+    client.PlatformUnknownException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ServerException,
+    client.ServiceNotActiveException,
+    client.ServiceNotFoundException,
+    client.TargetNotConnectedException,
+    client.TargetNotFoundException,
+    client.TaskSetNotFoundException,
+    client.UnsupportedFeatureException,
+    client.UpdateInProgressException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ecs.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AttributeLimitExceededException`
-- `Exceptions.BlockedException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientException`
-- `Exceptions.ClusterContainsContainerInstancesException`
-- `Exceptions.ClusterContainsServicesException`
-- `Exceptions.ClusterContainsTasksException`
-- `Exceptions.ClusterNotFoundException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MissingVersionException`
-- `Exceptions.NoUpdateAvailableException`
-- `Exceptions.PlatformTaskDefinitionIncompatibilityException`
-- `Exceptions.PlatformUnknownException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServerException`
-- `Exceptions.ServiceNotActiveException`
-- `Exceptions.ServiceNotFoundException`
-- `Exceptions.TargetNotConnectedException`
-- `Exceptions.TargetNotFoundException`
-- `Exceptions.TaskSetNotFoundException`
-- `Exceptions.UnsupportedFeatureException`
-- `Exceptions.UpdateInProgressException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ECSClient exceptions.
-
-Type annotations for `boto3.client("ecs").exceptions` method.
-
-Boto3 documentation:
-[ECS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ecs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ecs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate)
 
-Boto3 documentation:
-[ECS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_capacity\_provider"></a>
-
-### create_capacity_provider
+### create\_capacity\_provider
 
 Creates a new capacity provider.
 
-Type annotations for `boto3.client("ecs").create_capacity_provider` method.
+Type annotations and code completion for `#!python boto3.client("ecs").create_capacity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
 
-Boto3 documentation:
-[ECS.Client.create_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_capacity_provider)
+```python title="Method definition"
+def create_capacity_provider(
+    self,
+    *,
+    name: str,
+    autoScalingGroupProvider: AutoScalingGroupProviderTypeDef,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateCapacityProviderResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCapacityProviderRequestRequestTypeDef](./type_defs.md#createcapacityproviderrequestrequesttypedef).
+1. See [:material-code-braces: AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateCapacityProviderResponseTypeDef](./type_defs.md#createcapacityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `autoScalingGroupProvider`:
-  [AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCapacityProviderRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "autoScalingGroupProvider": ...,
+}
 
-Returns
-[CreateCapacityProviderResponseTypeDef](./type_defs.md#createcapacityproviderresponsetypedef).
+parent.create_capacity_provider(**kwargs)
+```
 
-<a id="create\_cluster"></a>
+1. See [:material-code-braces: CreateCapacityProviderRequestRequestTypeDef](./type_defs.md#createcapacityproviderrequestrequesttypedef) 
 
-### create_cluster
+### create\_cluster
 
 Creates a new Amazon ECS cluster.
 
-Type annotations for `boto3.client("ecs").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("ecs").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
 
-Boto3 documentation:
-[ECS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    clusterName: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+    settings: Sequence[ClusterSettingTypeDef] = ...,  # (2)
+    configuration: ClusterConfigurationTypeDef = ...,  # (3)
+    capacityProviders: Sequence[str] = ...,
+    defaultCapacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (4)
+) -> CreateClusterResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+3. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
+4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+5. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-- `configuration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-- `capacityProviders`: `Sequence`\[`str`\]
-- `defaultCapacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+}
 
-Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_service"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_service
+### create\_service
 
 Runs and maintains your desired number of tasks from a specified task
 definition.
 
-Type annotations for `boto3.client("ecs").create_service` method.
+Type annotations and code completion for `#!python boto3.client("ecs").create_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
 
-Boto3 documentation:
-[ECS.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_service)
+```python title="Method definition"
+def create_service(
+    self,
+    *,
+    serviceName: str,
+    cluster: str = ...,
+    taskDefinition: str = ...,
+    loadBalancers: Sequence[LoadBalancerTypeDef] = ...,  # (1)
+    serviceRegistries: Sequence[ServiceRegistryTypeDef] = ...,  # (2)
+    desiredCount: int = ...,
+    clientToken: str = ...,
+    launchType: LaunchTypeType = ...,  # (3)
+    capacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (4)
+    platformVersion: str = ...,
+    role: str = ...,
+    deploymentConfiguration: DeploymentConfigurationTypeDef = ...,  # (5)
+    placementConstraints: Sequence[PlacementConstraintTypeDef] = ...,  # (6)
+    placementStrategy: Sequence[PlacementStrategyTypeDef] = ...,  # (7)
+    networkConfiguration: NetworkConfigurationTypeDef = ...,  # (8)
+    healthCheckGracePeriodSeconds: int = ...,
+    schedulingStrategy: SchedulingStrategyType = ...,  # (9)
+    deploymentController: DeploymentControllerTypeDef = ...,  # (10)
+    tags: Sequence[TagTypeDef] = ...,  # (11)
+    enableECSManagedTags: bool = ...,
+    propagateTags: PropagateTagsType = ...,  # (12)
+    enableExecuteCommand: bool = ...,
+) -> CreateServiceResponseTypeDef:  # (13)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
+1. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+2. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+3. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+5. See [:material-code-braces: DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef) 
+6. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+7. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+8. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+9. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+10. See [:material-code-braces: DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+13. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `serviceName`: `str` *(required)*
-- `cluster`: `str`
-- `taskDefinition`: `str`
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `desiredCount`: `int`
-- `clientToken`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `role`: `str`
-- `deploymentConfiguration`:
-  [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `healthCheckGracePeriodSeconds`: `int`
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
-- `deploymentController`:
-  [DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `enableECSManagedTags`: `bool`
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `enableExecuteCommand`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateServiceRequestRequestTypeDef = {  # (1)
+    "serviceName": ...,
+}
 
-Returns
-[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
+parent.create_service(**kwargs)
+```
 
-<a id="create\_task\_set"></a>
+1. See [:material-code-braces: CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef) 
 
-### create_task_set
+### create\_task\_set
 
 Create a task set in the specified cluster and service.
 
-Type annotations for `boto3.client("ecs").create_task_set` method.
+Type annotations and code completion for `#!python boto3.client("ecs").create_task_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
 
-Boto3 documentation:
-[ECS.Client.create_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.create_task_set)
+```python title="Method definition"
+def create_task_set(
+    self,
+    *,
+    service: str,
+    cluster: str,
+    taskDefinition: str,
+    externalId: str = ...,
+    networkConfiguration: NetworkConfigurationTypeDef = ...,  # (1)
+    loadBalancers: Sequence[LoadBalancerTypeDef] = ...,  # (2)
+    serviceRegistries: Sequence[ServiceRegistryTypeDef] = ...,  # (3)
+    launchType: LaunchTypeType = ...,  # (4)
+    capacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (5)
+    platformVersion: str = ...,
+    scale: ScaleTypeDef = ...,  # (6)
+    clientToken: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (7)
+) -> CreateTaskSetResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateTaskSetRequestRequestTypeDef](./type_defs.md#createtasksetrequestrequesttypedef).
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+3. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+4. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+5. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+6. See [:material-code-braces: ScaleTypeDef](./type_defs.md#scaletypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: CreateTaskSetResponseTypeDef](./type_defs.md#createtasksetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `service`: `str` *(required)*
-- `cluster`: `str` *(required)*
-- `taskDefinition`: `str` *(required)*
-- `externalId`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTaskSetRequestRequestTypeDef = {  # (1)
+    "service": ...,
+    "cluster": ...,
+    "taskDefinition": ...,
+}
 
-Returns
-[CreateTaskSetResponseTypeDef](./type_defs.md#createtasksetresponsetypedef).
+parent.create_task_set(**kwargs)
+```
 
-<a id="delete\_account\_setting"></a>
+1. See [:material-code-braces: CreateTaskSetRequestRequestTypeDef](./type_defs.md#createtasksetrequestrequesttypedef) 
 
-### delete_account_setting
+### delete\_account\_setting
 
-Disables an account setting for a specified IAM user, IAM role, or the root
-user for an account.
+Disables an account setting for a specified IAM user, IAM role, or the root user
+for an account.
 
-Type annotations for `boto3.client("ecs").delete_account_setting` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_account_setting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
 
-Boto3 documentation:
-[ECS.Client.delete_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_account_setting)
+```python title="Method definition"
+def delete_account_setting(
+    self,
+    *,
+    name: SettingNameType,  # (1)
+    principalArn: str = ...,
+) -> DeleteAccountSettingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountSettingRequestRequestTypeDef](./type_defs.md#deleteaccountsettingrequestrequesttypedef).
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: DeleteAccountSettingResponseTypeDef](./type_defs.md#deleteaccountsettingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: [SettingNameType](./literals.md#settingnametype) *(required)*
-- `principalArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountSettingRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteAccountSettingResponseTypeDef](./type_defs.md#deleteaccountsettingresponsetypedef).
+parent.delete_account_setting(**kwargs)
+```
 
-<a id="delete\_attributes"></a>
+1. See [:material-code-braces: DeleteAccountSettingRequestRequestTypeDef](./type_defs.md#deleteaccountsettingrequestrequesttypedef) 
 
-### delete_attributes
+### delete\_attributes
 
 Deletes one or more custom attributes from an Amazon ECS resource.
 
-Type annotations for `boto3.client("ecs").delete_attributes` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
 
-Boto3 documentation:
-[ECS.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_attributes)
+```python title="Method definition"
+def delete_attributes(
+    self,
+    *,
+    attributes: Sequence[AttributeTypeDef],  # (1)
+    cluster: str = ...,
+) -> DeleteAttributesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: DeleteAttributesResponseTypeDef](./type_defs.md#deleteattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-  *(required)*
-- `cluster`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAttributesRequestRequestTypeDef = {  # (1)
+    "attributes": ...,
+}
 
-Returns
-[DeleteAttributesResponseTypeDef](./type_defs.md#deleteattributesresponsetypedef).
+parent.delete_attributes(**kwargs)
+```
 
-<a id="delete\_capacity\_provider"></a>
+1. See [:material-code-braces: DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef) 
 
-### delete_capacity_provider
+### delete\_capacity\_provider
 
 Deletes the specified capacity provider.
 
-Type annotations for `boto3.client("ecs").delete_capacity_provider` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_capacity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
 
-Boto3 documentation:
-[ECS.Client.delete_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_capacity_provider)
+```python title="Method definition"
+def delete_capacity_provider(
+    self,
+    *,
+    capacityProvider: str,
+) -> DeleteCapacityProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCapacityProviderRequestRequestTypeDef](./type_defs.md#deletecapacityproviderrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCapacityProviderResponseTypeDef](./type_defs.md#deletecapacityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `capacityProvider`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCapacityProviderRequestRequestTypeDef = {  # (1)
+    "capacityProvider": ...,
+}
 
-Returns
-[DeleteCapacityProviderResponseTypeDef](./type_defs.md#deletecapacityproviderresponsetypedef).
+parent.delete_capacity_provider(**kwargs)
+```
 
-<a id="delete\_cluster"></a>
+1. See [:material-code-braces: DeleteCapacityProviderRequestRequestTypeDef](./type_defs.md#deletecapacityproviderrequestrequesttypedef) 
 
-### delete_cluster
+### delete\_cluster
 
 Deletes the specified cluster.
 
-Type annotations for `boto3.client("ecs").delete_cluster` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
 
-Boto3 documentation:
-[ECS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_cluster)
+```python title="Method definition"
+def delete_cluster(
+    self,
+    *,
+    cluster: str,
+) -> DeleteClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteClusterRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+parent.delete_cluster(**kwargs)
+```
 
-<a id="delete\_service"></a>
+1. See [:material-code-braces: DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef) 
 
-### delete_service
+### delete\_service
 
 Deletes a specified service within a cluster.
 
-Type annotations for `boto3.client("ecs").delete_service` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
 
-Boto3 documentation:
-[ECS.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_service)
+```python title="Method definition"
+def delete_service(
+    self,
+    *,
+    service: str,
+    cluster: str = ...,
+    force: bool = ...,
+) -> DeleteServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
+1. See [:material-code-braces: DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `service`: `str` *(required)*
-- `cluster`: `str`
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceRequestRequestTypeDef = {  # (1)
+    "service": ...,
+}
 
-Returns
-[DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+parent.delete_service(**kwargs)
+```
 
-<a id="delete\_task\_set"></a>
+1. See [:material-code-braces: DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef) 
 
-### delete_task_set
+### delete\_task\_set
 
 Deletes a specified task set within a service.
 
-Type annotations for `boto3.client("ecs").delete_task_set` method.
+Type annotations and code completion for `#!python boto3.client("ecs").delete_task_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
 
-Boto3 documentation:
-[ECS.Client.delete_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.delete_task_set)
+```python title="Method definition"
+def delete_task_set(
+    self,
+    *,
+    cluster: str,
+    service: str,
+    taskSet: str,
+    force: bool = ...,
+) -> DeleteTaskSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTaskSetRequestRequestTypeDef](./type_defs.md#deletetasksetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteTaskSetResponseTypeDef](./type_defs.md#deletetasksetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `service`: `str` *(required)*
-- `taskSet`: `str` *(required)*
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteTaskSetRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "service": ...,
+    "taskSet": ...,
+}
 
-Returns
-[DeleteTaskSetResponseTypeDef](./type_defs.md#deletetasksetresponsetypedef).
+parent.delete_task_set(**kwargs)
+```
 
-<a id="deregister\_container\_instance"></a>
+1. See [:material-code-braces: DeleteTaskSetRequestRequestTypeDef](./type_defs.md#deletetasksetrequestrequesttypedef) 
 
-### deregister_container_instance
+### deregister\_container\_instance
 
 Deregisters an Amazon ECS container instance from the specified cluster.
 
-Type annotations for `boto3.client("ecs").deregister_container_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").deregister_container_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
 
-Boto3 documentation:
-[ECS.Client.deregister_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_container_instance)
+```python title="Method definition"
+def deregister_container_instance(
+    self,
+    *,
+    containerInstance: str,
+    cluster: str = ...,
+    force: bool = ...,
+) -> DeregisterContainerInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterContainerInstanceRequestRequestTypeDef](./type_defs.md#deregistercontainerinstancerequestrequesttypedef).
+1. See [:material-code-braces: DeregisterContainerInstanceResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstance`: `str` *(required)*
-- `cluster`: `str`
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeregisterContainerInstanceRequestRequestTypeDef = {  # (1)
+    "containerInstance": ...,
+}
 
-Returns
-[DeregisterContainerInstanceResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponsetypedef).
+parent.deregister_container_instance(**kwargs)
+```
 
-<a id="deregister\_task\_definition"></a>
+1. See [:material-code-braces: DeregisterContainerInstanceRequestRequestTypeDef](./type_defs.md#deregistercontainerinstancerequestrequesttypedef) 
 
-### deregister_task_definition
+### deregister\_task\_definition
 
 Deregisters the specified task definition by family and revision.
 
-Type annotations for `boto3.client("ecs").deregister_task_definition` method.
+Type annotations and code completion for `#!python boto3.client("ecs").deregister_task_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
 
-Boto3 documentation:
-[ECS.Client.deregister_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.deregister_task_definition)
+```python title="Method definition"
+def deregister_task_definition(
+    self,
+    *,
+    taskDefinition: str,
+) -> DeregisterTaskDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#deregistertaskdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeregisterTaskDefinitionResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskDefinition`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterTaskDefinitionRequestRequestTypeDef = {  # (1)
+    "taskDefinition": ...,
+}
 
-Returns
-[DeregisterTaskDefinitionResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponsetypedef).
+parent.deregister_task_definition(**kwargs)
+```
 
-<a id="describe\_capacity\_providers"></a>
+1. See [:material-code-braces: DeregisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#deregistertaskdefinitionrequestrequesttypedef) 
 
-### describe_capacity_providers
+### describe\_capacity\_providers
 
 Describes one or more of your capacity providers.
 
-Type annotations for `boto3.client("ecs").describe_capacity_providers` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_capacity_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
 
-Boto3 documentation:
-[ECS.Client.describe_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_capacity_providers)
+```python title="Method definition"
+def describe_capacity_providers(
+    self,
+    *,
+    capacityProviders: Sequence[str] = ...,
+    include: Sequence[CapacityProviderFieldType] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeCapacityProvidersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCapacityProvidersRequestRequestTypeDef](./type_defs.md#describecapacityprovidersrequestrequesttypedef).
+1. See [:material-code-brackets: CapacityProviderFieldType](./literals.md#capacityproviderfieldtype) 
+2. See [:material-code-braces: DescribeCapacityProvidersResponseTypeDef](./type_defs.md#describecapacityprovidersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `capacityProviders`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [CapacityProviderFieldType](./literals.md#capacityproviderfieldtype))\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCapacityProvidersRequestRequestTypeDef = {  # (1)
+    "capacityProviders": ...,
+}
 
-Returns
-[DescribeCapacityProvidersResponseTypeDef](./type_defs.md#describecapacityprovidersresponsetypedef).
+parent.describe_capacity_providers(**kwargs)
+```
 
-<a id="describe\_clusters"></a>
+1. See [:material-code-braces: DescribeCapacityProvidersRequestRequestTypeDef](./type_defs.md#describecapacityprovidersrequestrequesttypedef) 
 
-### describe_clusters
+### describe\_clusters
 
 Describes one or more of your clusters.
 
-Type annotations for `boto3.client("ecs").describe_clusters` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
 
-Boto3 documentation:
-[ECS.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_clusters)
+```python title="Method definition"
+def describe_clusters(
+    self,
+    *,
+    clusters: Sequence[str] = ...,
+    include: Sequence[ClusterFieldType] = ...,  # (1)
+) -> DescribeClustersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
+1. See [:material-code-brackets: ClusterFieldType](./literals.md#clusterfieldtype) 
+2. See [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusters`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersRequestRequestTypeDef = {  # (1)
+    "clusters": ...,
+}
 
-Returns
-[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+parent.describe_clusters(**kwargs)
+```
 
-<a id="describe\_container\_instances"></a>
+1. See [:material-code-braces: DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef) 
 
-### describe_container_instances
+### describe\_container\_instances
 
 Describes one or more container instances.
 
-Type annotations for `boto3.client("ecs").describe_container_instances` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_container_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
 
-Boto3 documentation:
-[ECS.Client.describe_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_container_instances)
+```python title="Method definition"
+def describe_container_instances(
+    self,
+    *,
+    containerInstances: Sequence[str],
+    cluster: str = ...,
+    include: Sequence[ContainerInstanceFieldType] = ...,  # (1)
+) -> DescribeContainerInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContainerInstancesRequestRequestTypeDef](./type_defs.md#describecontainerinstancesrequestrequesttypedef).
+1. See [:material-code-brackets: ContainerInstanceFieldType](./literals.md#containerinstancefieldtype) 
+2. See [:material-code-braces: DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstances`: `Sequence`\[`str`\] *(required)*
-- `cluster`: `str`
-- `include`:
-  `Sequence`\[[ContainerInstanceFieldType](./literals.md#containerinstancefieldtype)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeContainerInstancesRequestRequestTypeDef = {  # (1)
+    "containerInstances": ...,
+}
 
-Returns
-[DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef).
+parent.describe_container_instances(**kwargs)
+```
 
-<a id="describe\_services"></a>
+1. See [:material-code-braces: DescribeContainerInstancesRequestRequestTypeDef](./type_defs.md#describecontainerinstancesrequestrequesttypedef) 
 
-### describe_services
+### describe\_services
 
 Describes the specified services running in your cluster.
 
-Type annotations for `boto3.client("ecs").describe_services` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
 
-Boto3 documentation:
-[ECS.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_services)
+```python title="Method definition"
+def describe_services(
+    self,
+    *,
+    services: Sequence[str],
+    cluster: str = ...,
+    include: Sequence[ServiceFieldType] = ...,  # (1)
+) -> DescribeServicesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceFieldType](./literals.md#servicefieldtype) 
+2. See [:material-code-braces: DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `services`: `Sequence`\[`str`\] *(required)*
-- `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [ServiceFieldType](./literals.md#servicefieldtype))\]
+```python title="Usage example with kwargs"
+kwargs: DescribeServicesRequestRequestTypeDef = {  # (1)
+    "services": ...,
+}
 
-Returns
-[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
+parent.describe_services(**kwargs)
+```
 
-<a id="describe\_task\_definition"></a>
+1. See [:material-code-braces: DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef) 
 
-### describe_task_definition
+### describe\_task\_definition
 
 Describes a task definition.
 
-Type annotations for `boto3.client("ecs").describe_task_definition` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_task_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
 
-Boto3 documentation:
-[ECS.Client.describe_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_definition)
+```python title="Method definition"
+def describe_task_definition(
+    self,
+    *,
+    taskDefinition: str,
+    include: Sequence[TaskDefinitionFieldType] = ...,  # (1)
+) -> DescribeTaskDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTaskDefinitionRequestRequestTypeDef](./type_defs.md#describetaskdefinitionrequestrequesttypedef).
+1. See [:material-code-brackets: TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype) 
+2. See [:material-code-braces: DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskDefinition`: `str` *(required)*
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
+```python title="Usage example with kwargs"
+kwargs: DescribeTaskDefinitionRequestRequestTypeDef = {  # (1)
+    "taskDefinition": ...,
+}
 
-Returns
-[DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef).
+parent.describe_task_definition(**kwargs)
+```
 
-<a id="describe\_task\_sets"></a>
+1. See [:material-code-braces: DescribeTaskDefinitionRequestRequestTypeDef](./type_defs.md#describetaskdefinitionrequestrequesttypedef) 
 
-### describe_task_sets
+### describe\_task\_sets
 
 Describes the task sets in the specified cluster and service.
 
-Type annotations for `boto3.client("ecs").describe_task_sets` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_task_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
 
-Boto3 documentation:
-[ECS.Client.describe_task_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_task_sets)
+```python title="Method definition"
+def describe_task_sets(
+    self,
+    *,
+    cluster: str,
+    service: str,
+    taskSets: Sequence[str] = ...,
+    include: Sequence[TaskSetFieldType] = ...,  # (1)
+) -> DescribeTaskSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTaskSetsRequestRequestTypeDef](./type_defs.md#describetasksetsrequestrequesttypedef).
+1. See [:material-code-brackets: TaskSetFieldType](./literals.md#tasksetfieldtype) 
+2. See [:material-code-braces: DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `service`: `str` *(required)*
-- `taskSets`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
+```python title="Usage example with kwargs"
+kwargs: DescribeTaskSetsRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "service": ...,
+}
 
-Returns
-[DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef).
+parent.describe_task_sets(**kwargs)
+```
 
-<a id="describe\_tasks"></a>
+1. See [:material-code-braces: DescribeTaskSetsRequestRequestTypeDef](./type_defs.md#describetasksetsrequestrequesttypedef) 
 
-### describe_tasks
+### describe\_tasks
 
 Describes a specified task or tasks.
 
-Type annotations for `boto3.client("ecs").describe_tasks` method.
+Type annotations and code completion for `#!python boto3.client("ecs").describe_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
 
-Boto3 documentation:
-[ECS.Client.describe_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.describe_tasks)
+```python title="Method definition"
+def describe_tasks(
+    self,
+    *,
+    tasks: Sequence[str],
+    cluster: str = ...,
+    include: Sequence[TaskFieldType] = ...,  # (1)
+) -> DescribeTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTasksRequestRequestTypeDef](./type_defs.md#describetasksrequestrequesttypedef).
+1. See [:material-code-brackets: TaskFieldType](./literals.md#taskfieldtype) 
+2. See [:material-code-braces: DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `tasks`: `Sequence`\[`str`\] *(required)*
-- `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskFieldType](./literals.md#taskfieldtype))\]
+```python title="Usage example with kwargs"
+kwargs: DescribeTasksRequestRequestTypeDef = {  # (1)
+    "tasks": ...,
+}
 
-Returns
-[DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef).
+parent.describe_tasks(**kwargs)
+```
 
-<a id="discover\_poll\_endpoint"></a>
+1. See [:material-code-braces: DescribeTasksRequestRequestTypeDef](./type_defs.md#describetasksrequestrequesttypedef) 
 
-### discover_poll_endpoint
+### discover\_poll\_endpoint
 
 .
 
-Type annotations for `boto3.client("ecs").discover_poll_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("ecs").discover_poll_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
 
-Boto3 documentation:
-[ECS.Client.discover_poll_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.discover_poll_endpoint)
+```python title="Method definition"
+def discover_poll_endpoint(
+    self,
+    *,
+    containerInstance: str = ...,
+    cluster: str = ...,
+) -> DiscoverPollEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DiscoverPollEndpointRequestRequestTypeDef](./type_defs.md#discoverpollendpointrequestrequesttypedef).
+1. See [:material-code-braces: DiscoverPollEndpointResponseTypeDef](./type_defs.md#discoverpollendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstance`: `str`
-- `cluster`: `str`
+```python title="Usage example with kwargs"
+kwargs: DiscoverPollEndpointRequestRequestTypeDef = {  # (1)
+    "containerInstance": ...,
+}
 
-Returns
-[DiscoverPollEndpointResponseTypeDef](./type_defs.md#discoverpollendpointresponsetypedef).
+parent.discover_poll_endpoint(**kwargs)
+```
 
-<a id="execute\_command"></a>
+1. See [:material-code-braces: DiscoverPollEndpointRequestRequestTypeDef](./type_defs.md#discoverpollendpointrequestrequesttypedef) 
 
-### execute_command
+### execute\_command
 
 Runs a command remotely on a container within a task.
 
-Type annotations for `boto3.client("ecs").execute_command` method.
+Type annotations and code completion for `#!python boto3.client("ecs").execute_command` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
 
-Boto3 documentation:
-[ECS.Client.execute_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.execute_command)
+```python title="Method definition"
+def execute_command(
+    self,
+    *,
+    command: str,
+    interactive: bool,
+    task: str,
+    cluster: str = ...,
+    container: str = ...,
+) -> ExecuteCommandResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExecuteCommandRequestRequestTypeDef](./type_defs.md#executecommandrequestrequesttypedef).
+1. See [:material-code-braces: ExecuteCommandResponseTypeDef](./type_defs.md#executecommandresponsetypedef) 
 
-Keyword-only arguments:
 
-- `command`: `str` *(required)*
-- `interactive`: `bool` *(required)*
-- `task`: `str` *(required)*
-- `cluster`: `str`
-- `container`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExecuteCommandRequestRequestTypeDef = {  # (1)
+    "command": ...,
+    "interactive": ...,
+    "task": ...,
+}
 
-Returns
-[ExecuteCommandResponseTypeDef](./type_defs.md#executecommandresponsetypedef).
+parent.execute_command(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteCommandRequestRequestTypeDef](./type_defs.md#executecommandrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ecs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("ecs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ECS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_account\_settings"></a>
-
-### list_account_settings
+### list\_account\_settings
 
 Lists the account settings for a specified principal.
 
-Type annotations for `boto3.client("ecs").list_account_settings` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_account_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
 
-Boto3 documentation:
-[ECS.Client.list_account_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_account_settings)
+```python title="Method definition"
+def list_account_settings(
+    self,
+    *,
+    name: SettingNameType = ...,  # (1)
+    value: str = ...,
+    principalArn: str = ...,
+    effectiveSettings: bool = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAccountSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountSettingsRequestRequestTypeDef](./type_defs.md#listaccountsettingsrequestrequesttypedef).
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-- `principalArn`: `str`
-- `effectiveSettings`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountSettingsRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef).
+parent.list_account_settings(**kwargs)
+```
 
-<a id="list\_attributes"></a>
+1. See [:material-code-braces: ListAccountSettingsRequestRequestTypeDef](./type_defs.md#listaccountsettingsrequestrequesttypedef) 
 
-### list_attributes
+### list\_attributes
 
-Lists the attributes for Amazon ECS resources within a specified target type
-and cluster.
+Lists the attributes for Amazon ECS resources within a specified target type and
+cluster.
 
-Type annotations for `boto3.client("ecs").list_attributes` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
 
-Boto3 documentation:
-[ECS.Client.list_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_attributes)
+```python title="Method definition"
+def list_attributes(
+    self,
+    *,
+    targetType: TargetTypeType,  # (1)
+    cluster: str = ...,
+    attributeName: str = ...,
+    attributeValue: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAttributesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAttributesRequestRequestTypeDef](./type_defs.md#listattributesrequestrequesttypedef).
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-braces: ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targetType`: `Literal['container-instance']` (see
-  [TargetTypeType](./literals.md#targettypetype)) *(required)*
-- `cluster`: `str`
-- `attributeName`: `str`
-- `attributeValue`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttributesRequestRequestTypeDef = {  # (1)
+    "targetType": ...,
+}
 
-Returns
-[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef).
+parent.list_attributes(**kwargs)
+```
 
-<a id="list\_clusters"></a>
+1. See [:material-code-braces: ListAttributesRequestRequestTypeDef](./type_defs.md#listattributesrequestrequesttypedef) 
 
-### list_clusters
+### list\_clusters
 
 Returns a list of existing clusters.
 
-Type annotations for `boto3.client("ecs").list_clusters` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
 
-Boto3 documentation:
-[ECS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_clusters)
+```python title="Method definition"
+def list_clusters(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListClustersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
+1. See [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListClustersRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+parent.list_clusters(**kwargs)
+```
 
-<a id="list\_container\_instances"></a>
+1. See [:material-code-braces: ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef) 
 
-### list_container_instances
+### list\_container\_instances
 
 Returns a list of container instances in a specified cluster.
 
-Type annotations for `boto3.client("ecs").list_container_instances` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_container_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
 
-Boto3 documentation:
-[ECS.Client.list_container_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_container_instances)
+```python title="Method definition"
+def list_container_instances(
+    self,
+    *,
+    cluster: str = ...,
+    filter: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    status: ContainerInstanceStatusType = ...,  # (1)
+) -> ListContainerInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContainerInstancesRequestRequestTypeDef](./type_defs.md#listcontainerinstancesrequestrequesttypedef).
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
+2. See [:material-code-braces: ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `filter`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `status`:
-  [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
+```python title="Usage example with kwargs"
+kwargs: ListContainerInstancesRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef).
+parent.list_container_instances(**kwargs)
+```
 
-<a id="list\_services"></a>
+1. See [:material-code-braces: ListContainerInstancesRequestRequestTypeDef](./type_defs.md#listcontainerinstancesrequestrequesttypedef) 
 
-### list_services
+### list\_services
 
 Returns a list of services.
 
-Type annotations for `boto3.client("ecs").list_services` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
 
-Boto3 documentation:
-[ECS.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_services)
+```python title="Method definition"
+def list_services(
+    self,
+    *,
+    cluster: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    launchType: LaunchTypeType = ...,  # (1)
+    schedulingStrategy: SchedulingStrategyType = ...,  # (2)
+) -> ListServicesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+3. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
+parent.list_services(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for an Amazon ECS resource.
 
-Type annotations for `boto3.client("ecs").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ECS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_task\_definition\_families"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_task_definition_families
+### list\_task\_definition\_families
 
 Returns a list of task definition families that are registered to your account.
 
-Type annotations for `boto3.client("ecs").list_task_definition_families`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_task_definition_families` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
 
-Boto3 documentation:
-[ECS.Client.list_task_definition_families](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definition_families)
+```python title="Method definition"
+def list_task_definition_families(
+    self,
+    *,
+    familyPrefix: str = ...,
+    status: TaskDefinitionFamilyStatusType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTaskDefinitionFamiliesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTaskDefinitionFamiliesRequestRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestrequesttypedef).
+1. See [:material-code-brackets: TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype) 
+2. See [:material-code-braces: ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `familyPrefix`: `str`
-- `status`:
-  [TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTaskDefinitionFamiliesRequestRequestTypeDef = {  # (1)
+    "familyPrefix": ...,
+}
 
-Returns
-[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef).
+parent.list_task_definition_families(**kwargs)
+```
 
-<a id="list\_task\_definitions"></a>
+1. See [:material-code-braces: ListTaskDefinitionFamiliesRequestRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestrequesttypedef) 
 
-### list_task_definitions
+### list\_task\_definitions
 
 Returns a list of task definitions that are registered to your account.
 
-Type annotations for `boto3.client("ecs").list_task_definitions` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_task_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
 
-Boto3 documentation:
-[ECS.Client.list_task_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_task_definitions)
+```python title="Method definition"
+def list_task_definitions(
+    self,
+    *,
+    familyPrefix: str = ...,
+    status: TaskDefinitionStatusType = ...,  # (1)
+    sort: SortOrderType = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTaskDefinitionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListTaskDefinitionsRequestRequestTypeDef](./type_defs.md#listtaskdefinitionsrequestrequesttypedef).
+1. See [:material-code-brackets: TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `familyPrefix`: `str`
-- `status`: [TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype)
-- `sort`: [SortOrderType](./literals.md#sortordertype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTaskDefinitionsRequestRequestTypeDef = {  # (1)
+    "familyPrefix": ...,
+}
 
-Returns
-[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef).
+parent.list_task_definitions(**kwargs)
+```
 
-<a id="list\_tasks"></a>
+1. See [:material-code-braces: ListTaskDefinitionsRequestRequestTypeDef](./type_defs.md#listtaskdefinitionsrequestrequesttypedef) 
 
-### list_tasks
+### list\_tasks
 
 Returns a list of tasks.
 
-Type annotations for `boto3.client("ecs").list_tasks` method.
+Type annotations and code completion for `#!python boto3.client("ecs").list_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
 
-Boto3 documentation:
-[ECS.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.list_tasks)
+```python title="Method definition"
+def list_tasks(
+    self,
+    *,
+    cluster: str = ...,
+    containerInstance: str = ...,
+    family: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    startedBy: str = ...,
+    serviceName: str = ...,
+    desiredStatus: DesiredStatusType = ...,  # (1)
+    launchType: LaunchTypeType = ...,  # (2)
+) -> ListTasksResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef).
+1. See [:material-code-brackets: DesiredStatusType](./literals.md#desiredstatustype) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `containerInstance`: `str`
-- `family`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `startedBy`: `str`
-- `serviceName`: `str`
-- `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
+```python title="Usage example with kwargs"
+kwargs: ListTasksRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
+parent.list_tasks(**kwargs)
+```
 
-<a id="put\_account\_setting"></a>
+1. See [:material-code-braces: ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef) 
 
-### put_account_setting
+### put\_account\_setting
 
 Modifies an account setting.
 
-Type annotations for `boto3.client("ecs").put_account_setting` method.
+Type annotations and code completion for `#!python boto3.client("ecs").put_account_setting` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
 
-Boto3 documentation:
-[ECS.Client.put_account_setting](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting)
+```python title="Method definition"
+def put_account_setting(
+    self,
+    *,
+    name: SettingNameType,  # (1)
+    value: str,
+    principalArn: str = ...,
+) -> PutAccountSettingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAccountSettingRequestRequestTypeDef](./type_defs.md#putaccountsettingrequestrequesttypedef).
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: PutAccountSettingResponseTypeDef](./type_defs.md#putaccountsettingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: [SettingNameType](./literals.md#settingnametype) *(required)*
-- `value`: `str` *(required)*
-- `principalArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutAccountSettingRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "value": ...,
+}
 
-Returns
-[PutAccountSettingResponseTypeDef](./type_defs.md#putaccountsettingresponsetypedef).
+parent.put_account_setting(**kwargs)
+```
 
-<a id="put\_account\_setting\_default"></a>
+1. See [:material-code-braces: PutAccountSettingRequestRequestTypeDef](./type_defs.md#putaccountsettingrequestrequesttypedef) 
 
-### put_account_setting_default
+### put\_account\_setting\_default
 
 Modifies an account setting for all IAM users on an account for whom no
 individual account setting has been specified.
 
-Type annotations for `boto3.client("ecs").put_account_setting_default` method.
+Type annotations and code completion for `#!python boto3.client("ecs").put_account_setting_default` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
 
-Boto3 documentation:
-[ECS.Client.put_account_setting_default](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_account_setting_default)
+```python title="Method definition"
+def put_account_setting_default(
+    self,
+    *,
+    name: SettingNameType,  # (1)
+    value: str,
+) -> PutAccountSettingDefaultResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAccountSettingDefaultRequestRequestTypeDef](./type_defs.md#putaccountsettingdefaultrequestrequesttypedef).
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: PutAccountSettingDefaultResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: [SettingNameType](./literals.md#settingnametype) *(required)*
-- `value`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutAccountSettingDefaultRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "value": ...,
+}
 
-Returns
-[PutAccountSettingDefaultResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponsetypedef).
+parent.put_account_setting_default(**kwargs)
+```
 
-<a id="put\_attributes"></a>
+1. See [:material-code-braces: PutAccountSettingDefaultRequestRequestTypeDef](./type_defs.md#putaccountsettingdefaultrequestrequesttypedef) 
 
-### put_attributes
+### put\_attributes
 
 Create or update an attribute on an Amazon ECS resource.
 
-Type annotations for `boto3.client("ecs").put_attributes` method.
+Type annotations and code completion for `#!python boto3.client("ecs").put_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
 
-Boto3 documentation:
-[ECS.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_attributes)
+```python title="Method definition"
+def put_attributes(
+    self,
+    *,
+    attributes: Sequence[AttributeTypeDef],  # (1)
+    cluster: str = ...,
+) -> PutAttributesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutAttributesRequestRequestTypeDef](./type_defs.md#putattributesrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: PutAttributesResponseTypeDef](./type_defs.md#putattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-  *(required)*
-- `cluster`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutAttributesRequestRequestTypeDef = {  # (1)
+    "attributes": ...,
+}
 
-Returns
-[PutAttributesResponseTypeDef](./type_defs.md#putattributesresponsetypedef).
+parent.put_attributes(**kwargs)
+```
 
-<a id="put\_cluster\_capacity\_providers"></a>
+1. See [:material-code-braces: PutAttributesRequestRequestTypeDef](./type_defs.md#putattributesrequestrequesttypedef) 
 
-### put_cluster_capacity_providers
+### put\_cluster\_capacity\_providers
 
 Modifies the available capacity providers and the default capacity provider
 strategy for a cluster.
 
-Type annotations for `boto3.client("ecs").put_cluster_capacity_providers`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").put_cluster_capacity_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
 
-Boto3 documentation:
-[ECS.Client.put_cluster_capacity_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.put_cluster_capacity_providers)
+```python title="Method definition"
+def put_cluster_capacity_providers(
+    self,
+    *,
+    cluster: str,
+    capacityProviders: Sequence[str],
+    defaultCapacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef],  # (1)
+) -> PutClusterCapacityProvidersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutClusterCapacityProvidersRequestRequestTypeDef](./type_defs.md#putclustercapacityprovidersrequestrequesttypedef).
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-braces: PutClusterCapacityProvidersResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `capacityProviders`: `Sequence`\[`str`\] *(required)*
-- `defaultCapacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutClusterCapacityProvidersRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "capacityProviders": ...,
+    "defaultCapacityProviderStrategy": ...,
+}
 
-Returns
-[PutClusterCapacityProvidersResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponsetypedef).
+parent.put_cluster_capacity_providers(**kwargs)
+```
 
-<a id="register\_container\_instance"></a>
+1. See [:material-code-braces: PutClusterCapacityProvidersRequestRequestTypeDef](./type_defs.md#putclustercapacityprovidersrequestrequesttypedef) 
 
-### register_container_instance
+### register\_container\_instance
 
 .
 
-Type annotations for `boto3.client("ecs").register_container_instance` method.
+Type annotations and code completion for `#!python boto3.client("ecs").register_container_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
 
-Boto3 documentation:
-[ECS.Client.register_container_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_container_instance)
+```python title="Method definition"
+def register_container_instance(
+    self,
+    *,
+    cluster: str = ...,
+    instanceIdentityDocument: str = ...,
+    instanceIdentityDocumentSignature: str = ...,
+    totalResources: Sequence[ResourceTypeDef] = ...,  # (1)
+    versionInfo: VersionInfoTypeDef = ...,  # (2)
+    containerInstanceArn: str = ...,
+    attributes: Sequence[AttributeTypeDef] = ...,  # (3)
+    platformDevices: Sequence[PlatformDeviceTypeDef] = ...,  # (4)
+    tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> RegisterContainerInstanceResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[RegisterContainerInstanceRequestRequestTypeDef](./type_defs.md#registercontainerinstancerequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: VersionInfoTypeDef](./type_defs.md#versioninfotypedef) 
+3. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+4. See [:material-code-braces: PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: RegisterContainerInstanceResponseTypeDef](./type_defs.md#registercontainerinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `instanceIdentityDocument`: `str`
-- `instanceIdentityDocumentSignature`: `str`
-- `totalResources`:
-  `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `versionInfo`: [VersionInfoTypeDef](./type_defs.md#versioninfotypedef)
-- `containerInstanceArn`: `str`
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `platformDevices`:
-  `Sequence`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RegisterContainerInstanceRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[RegisterContainerInstanceResponseTypeDef](./type_defs.md#registercontainerinstanceresponsetypedef).
+parent.register_container_instance(**kwargs)
+```
 
-<a id="register\_task\_definition"></a>
+1. See [:material-code-braces: RegisterContainerInstanceRequestRequestTypeDef](./type_defs.md#registercontainerinstancerequestrequesttypedef) 
 
-### register_task_definition
+### register\_task\_definition
 
 Registers a new task definition from the supplied `family` and
 `containerDefinitions`.
 
-Type annotations for `boto3.client("ecs").register_task_definition` method.
+Type annotations and code completion for `#!python boto3.client("ecs").register_task_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
 
-Boto3 documentation:
-[ECS.Client.register_task_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.register_task_definition)
+```python title="Method definition"
+def register_task_definition(
+    self,
+    *,
+    family: str,
+    containerDefinitions: Sequence[ContainerDefinitionTypeDef],  # (1)
+    taskRoleArn: str = ...,
+    executionRoleArn: str = ...,
+    networkMode: NetworkModeType = ...,  # (2)
+    volumes: Sequence[VolumeTypeDef] = ...,  # (3)
+    placementConstraints: Sequence[TaskDefinitionPlacementConstraintTypeDef] = ...,  # (4)
+    requiresCompatibilities: Sequence[CompatibilityType] = ...,  # (5)
+    cpu: str = ...,
+    memory: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (6)
+    pidMode: PidModeType = ...,  # (7)
+    ipcMode: IpcModeType = ...,  # (8)
+    proxyConfiguration: ProxyConfigurationTypeDef = ...,  # (9)
+    inferenceAccelerators: Sequence[InferenceAcceleratorTypeDef] = ...,  # (10)
+    ephemeralStorage: EphemeralStorageTypeDef = ...,  # (11)
+    runtimePlatform: RuntimePlatformTypeDef = ...,  # (12)
+) -> RegisterTaskDefinitionResponseTypeDef:  # (13)
+    ...
+```
 
-Arguments mapping described in
-[RegisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#registertaskdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef) 
+2. See [:material-code-brackets: NetworkModeType](./literals.md#networkmodetype) 
+3. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
+4. See [:material-code-braces: TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef) 
+5. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-brackets: PidModeType](./literals.md#pidmodetype) 
+8. See [:material-code-brackets: IpcModeType](./literals.md#ipcmodetype) 
+9. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
+10. See [:material-code-braces: InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef) 
+11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+12. See [:material-code-braces: RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef) 
+13. See [:material-code-braces: RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `family`: `str` *(required)*
-- `containerDefinitions`:
-  `Sequence`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
-  *(required)*
-- `taskRoleArn`: `str`
-- `executionRoleArn`: `str`
-- `networkMode`: [NetworkModeType](./literals.md#networkmodetype)
-- `volumes`: `Sequence`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
-- `placementConstraints`:
-  `Sequence`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
-- `requiresCompatibilities`:
-  `Sequence`\[[CompatibilityType](./literals.md#compatibilitytype)\]
-- `cpu`: `str`
-- `memory`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `pidMode`: [PidModeType](./literals.md#pidmodetype)
-- `ipcMode`: [IpcModeType](./literals.md#ipcmodetype)
-- `proxyConfiguration`:
-  [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
-- `inferenceAccelerators`:
-  `Sequence`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
-- `ephemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-- `runtimePlatform`:
-  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
+```python title="Usage example with kwargs"
+kwargs: RegisterTaskDefinitionRequestRequestTypeDef = {  # (1)
+    "family": ...,
+    "containerDefinitions": ...,
+}
 
-Returns
-[RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef).
+parent.register_task_definition(**kwargs)
+```
 
-<a id="run\_task"></a>
+1. See [:material-code-braces: RegisterTaskDefinitionRequestRequestTypeDef](./type_defs.md#registertaskdefinitionrequestrequesttypedef) 
 
-### run_task
+### run\_task
 
 Starts a new task using the specified task definition.
 
-Type annotations for `boto3.client("ecs").run_task` method.
+Type annotations and code completion for `#!python boto3.client("ecs").run_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
 
-Boto3 documentation:
-[ECS.Client.run_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.run_task)
+```python title="Method definition"
+def run_task(
+    self,
+    *,
+    taskDefinition: str,
+    capacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (1)
+    cluster: str = ...,
+    count: int = ...,
+    enableECSManagedTags: bool = ...,
+    enableExecuteCommand: bool = ...,
+    group: str = ...,
+    launchType: LaunchTypeType = ...,  # (2)
+    networkConfiguration: NetworkConfigurationTypeDef = ...,  # (3)
+    overrides: TaskOverrideTypeDef = ...,  # (4)
+    placementConstraints: Sequence[PlacementConstraintTypeDef] = ...,  # (5)
+    placementStrategy: Sequence[PlacementStrategyTypeDef] = ...,  # (6)
+    platformVersion: str = ...,
+    propagateTags: PropagateTagsType = ...,  # (7)
+    referenceId: str = ...,
+    startedBy: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (8)
+) -> RunTaskResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[RunTaskRequestRequestTypeDef](./type_defs.md#runtaskrequestrequesttypedef).
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-braces: TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef) 
+5. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+6. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+7. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskDefinition`: `str` *(required)*
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `cluster`: `str`
-- `count`: `int`
-- `enableECSManagedTags`: `bool`
-- `enableExecuteCommand`: `bool`
-- `group`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `platformVersion`: `str`
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `referenceId`: `str`
-- `startedBy`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RunTaskRequestRequestTypeDef = {  # (1)
+    "taskDefinition": ...,
+}
 
-Returns [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef).
+parent.run_task(**kwargs)
+```
 
-<a id="start\_task"></a>
+1. See [:material-code-braces: RunTaskRequestRequestTypeDef](./type_defs.md#runtaskrequestrequesttypedef) 
 
-### start_task
+### start\_task
 
 Starts a new task from the specified task definition on the specified container
 instance or instances.
 
-Type annotations for `boto3.client("ecs").start_task` method.
+Type annotations and code completion for `#!python boto3.client("ecs").start_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
 
-Boto3 documentation:
-[ECS.Client.start_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.start_task)
+```python title="Method definition"
+def start_task(
+    self,
+    *,
+    containerInstances: Sequence[str],
+    taskDefinition: str,
+    cluster: str = ...,
+    enableECSManagedTags: bool = ...,
+    enableExecuteCommand: bool = ...,
+    group: str = ...,
+    networkConfiguration: NetworkConfigurationTypeDef = ...,  # (1)
+    overrides: TaskOverrideTypeDef = ...,  # (2)
+    propagateTags: PropagateTagsType = ...,  # (3)
+    referenceId: str = ...,
+    startedBy: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> StartTaskResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[StartTaskRequestRequestTypeDef](./type_defs.md#starttaskrequestrequesttypedef).
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef) 
+3. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstances`: `Sequence`\[`str`\] *(required)*
-- `taskDefinition`: `str` *(required)*
-- `cluster`: `str`
-- `enableECSManagedTags`: `bool`
-- `enableExecuteCommand`: `bool`
-- `group`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `referenceId`: `str`
-- `startedBy`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartTaskRequestRequestTypeDef = {  # (1)
+    "containerInstances": ...,
+    "taskDefinition": ...,
+}
 
-Returns [StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef).
+parent.start_task(**kwargs)
+```
 
-<a id="stop\_task"></a>
+1. See [:material-code-braces: StartTaskRequestRequestTypeDef](./type_defs.md#starttaskrequestrequesttypedef) 
 
-### stop_task
+### stop\_task
 
 Stops a running task.
 
-Type annotations for `boto3.client("ecs").stop_task` method.
+Type annotations and code completion for `#!python boto3.client("ecs").stop_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
 
-Boto3 documentation:
-[ECS.Client.stop_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.stop_task)
+```python title="Method definition"
+def stop_task(
+    self,
+    *,
+    task: str,
+    cluster: str = ...,
+    reason: str = ...,
+) -> StopTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopTaskRequestRequestTypeDef](./type_defs.md#stoptaskrequestrequesttypedef).
+1. See [:material-code-braces: StopTaskResponseTypeDef](./type_defs.md#stoptaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `task`: `str` *(required)*
-- `cluster`: `str`
-- `reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopTaskRequestRequestTypeDef = {  # (1)
+    "task": ...,
+}
 
-Returns [StopTaskResponseTypeDef](./type_defs.md#stoptaskresponsetypedef).
+parent.stop_task(**kwargs)
+```
 
-<a id="submit\_attachment\_state\_changes"></a>
+1. See [:material-code-braces: StopTaskRequestRequestTypeDef](./type_defs.md#stoptaskrequestrequesttypedef) 
 
-### submit_attachment_state_changes
-
-.
-
-Type annotations for `boto3.client("ecs").submit_attachment_state_changes`
-method.
-
-Boto3 documentation:
-[ECS.Client.submit_attachment_state_changes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
-
-Arguments mapping described in
-[SubmitAttachmentStateChangesRequestRequestTypeDef](./type_defs.md#submitattachmentstatechangesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `attachments`:
-  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
-  *(required)*
-- `cluster`: `str`
-
-Returns
-[SubmitAttachmentStateChangesResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponsetypedef).
-
-<a id="submit\_container\_state\_change"></a>
-
-### submit_container_state_change
+### submit\_attachment\_state\_changes
 
 .
 
-Type annotations for `boto3.client("ecs").submit_container_state_change`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").submit_attachment_state_changes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_attachment_state_changes)
 
-Boto3 documentation:
-[ECS.Client.submit_container_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
+```python title="Method definition"
+def submit_attachment_state_changes(
+    self,
+    *,
+    attachments: Sequence[AttachmentStateChangeTypeDef],  # (1)
+    cluster: str = ...,
+) -> SubmitAttachmentStateChangesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SubmitContainerStateChangeRequestRequestTypeDef](./type_defs.md#submitcontainerstatechangerequestrequesttypedef).
+1. See [:material-code-braces: AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef) 
+2. See [:material-code-braces: SubmitAttachmentStateChangesResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `task`: `str`
-- `containerName`: `str`
-- `runtimeId`: `str`
-- `status`: `str`
-- `exitCode`: `int`
-- `reason`: `str`
-- `networkBindings`:
-  `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SubmitAttachmentStateChangesRequestRequestTypeDef = {  # (1)
+    "attachments": ...,
+}
 
-Returns
-[SubmitContainerStateChangeResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponsetypedef).
+parent.submit_attachment_state_changes(**kwargs)
+```
 
-<a id="submit\_task\_state\_change"></a>
+1. See [:material-code-braces: SubmitAttachmentStateChangesRequestRequestTypeDef](./type_defs.md#submitattachmentstatechangesrequestrequesttypedef) 
 
-### submit_task_state_change
+### submit\_container\_state\_change
 
 .
 
-Type annotations for `boto3.client("ecs").submit_task_state_change` method.
+Type annotations and code completion for `#!python boto3.client("ecs").submit_container_state_change` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_container_state_change)
 
-Boto3 documentation:
-[ECS.Client.submit_task_state_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
+```python title="Method definition"
+def submit_container_state_change(
+    self,
+    *,
+    cluster: str = ...,
+    task: str = ...,
+    containerName: str = ...,
+    runtimeId: str = ...,
+    status: str = ...,
+    exitCode: int = ...,
+    reason: str = ...,
+    networkBindings: Sequence[NetworkBindingTypeDef] = ...,  # (1)
+) -> SubmitContainerStateChangeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SubmitTaskStateChangeRequestRequestTypeDef](./type_defs.md#submittaskstatechangerequestrequesttypedef).
+1. See [:material-code-braces: NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef) 
+2. See [:material-code-braces: SubmitContainerStateChangeResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str`
-- `task`: `str`
-- `status`: `str`
-- `reason`: `str`
-- `containers`:
-  `Sequence`\[[ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef)\]
-- `attachments`:
-  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
-- `managedAgents`:
-  `Sequence`\[[ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef)\]
-- `pullStartedAt`: `Union`\[`datetime`, `str`\]
-- `pullStoppedAt`: `Union`\[`datetime`, `str`\]
-- `executionStoppedAt`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: SubmitContainerStateChangeRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[SubmitTaskStateChangeResponseTypeDef](./type_defs.md#submittaskstatechangeresponsetypedef).
+parent.submit_container_state_change(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SubmitContainerStateChangeRequestRequestTypeDef](./type_defs.md#submitcontainerstatechangerequestrequesttypedef) 
 
-### tag_resource
+### submit\_task\_state\_change
+
+.
+
+Type annotations and code completion for `#!python boto3.client("ecs").submit_task_state_change` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.submit_task_state_change)
+
+```python title="Method definition"
+def submit_task_state_change(
+    self,
+    *,
+    cluster: str = ...,
+    task: str = ...,
+    status: str = ...,
+    reason: str = ...,
+    containers: Sequence[ContainerStateChangeTypeDef] = ...,  # (1)
+    attachments: Sequence[AttachmentStateChangeTypeDef] = ...,  # (2)
+    managedAgents: Sequence[ManagedAgentStateChangeTypeDef] = ...,  # (3)
+    pullStartedAt: Union[datetime, str] = ...,
+    pullStoppedAt: Union[datetime, str] = ...,
+    executionStoppedAt: Union[datetime, str] = ...,
+) -> SubmitTaskStateChangeResponseTypeDef:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef) 
+2. See [:material-code-braces: AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef) 
+3. See [:material-code-braces: ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef) 
+4. See [:material-code-braces: SubmitTaskStateChangeResponseTypeDef](./type_defs.md#submittaskstatechangeresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SubmitTaskStateChangeRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
+
+parent.submit_task_state_change(**kwargs)
+```
+
+1. See [:material-code-braces: SubmitTaskStateChangeRequestRequestTypeDef](./type_defs.md#submittaskstatechangerequestrequesttypedef) 
+
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("ecs").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ecs").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
 
-Boto3 documentation:
-[ECS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("ecs").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ecs").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
 
-Boto3 documentation:
-[ECS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_capacity\_provider"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_capacity_provider
+### update\_capacity\_provider
 
 Modifies the parameters for a capacity provider.
 
-Type annotations for `boto3.client("ecs").update_capacity_provider` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_capacity_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
 
-Boto3 documentation:
-[ECS.Client.update_capacity_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_capacity_provider)
+```python title="Method definition"
+def update_capacity_provider(
+    self,
+    *,
+    name: str,
+    autoScalingGroupProvider: AutoScalingGroupProviderUpdateTypeDef,  # (1)
+) -> UpdateCapacityProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCapacityProviderRequestRequestTypeDef](./type_defs.md#updatecapacityproviderrequestrequesttypedef).
+1. See [:material-code-braces: AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef) 
+2. See [:material-code-braces: UpdateCapacityProviderResponseTypeDef](./type_defs.md#updatecapacityproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `autoScalingGroupProvider`:
-  [AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCapacityProviderRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "autoScalingGroupProvider": ...,
+}
 
-Returns
-[UpdateCapacityProviderResponseTypeDef](./type_defs.md#updatecapacityproviderresponsetypedef).
+parent.update_capacity_provider(**kwargs)
+```
 
-<a id="update\_cluster"></a>
+1. See [:material-code-braces: UpdateCapacityProviderRequestRequestTypeDef](./type_defs.md#updatecapacityproviderrequestrequesttypedef) 
 
-### update_cluster
+### update\_cluster
 
 Updates the cluster.
 
-Type annotations for `boto3.client("ecs").update_cluster` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
 
-Boto3 documentation:
-[ECS.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster)
+```python title="Method definition"
+def update_cluster(
+    self,
+    *,
+    cluster: str,
+    settings: Sequence[ClusterSettingTypeDef] = ...,  # (1)
+    configuration: ClusterConfigurationTypeDef = ...,  # (2)
+) -> UpdateClusterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
+1. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+2. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
+3. See [:material-code-braces: UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-- `configuration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+}
 
-Returns
-[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
+parent.update_cluster(**kwargs)
+```
 
-<a id="update\_cluster\_settings"></a>
+1. See [:material-code-braces: UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef) 
 
-### update_cluster_settings
+### update\_cluster\_settings
 
 Modifies the settings to use for a cluster.
 
-Type annotations for `boto3.client("ecs").update_cluster_settings` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_cluster_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
 
-Boto3 documentation:
-[ECS.Client.update_cluster_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_cluster_settings)
+```python title="Method definition"
+def update_cluster_settings(
+    self,
+    *,
+    cluster: str,
+    settings: Sequence[ClusterSettingTypeDef],  # (1)
+) -> UpdateClusterSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterSettingsRequestRequestTypeDef](./type_defs.md#updateclustersettingsrequestrequesttypedef).
+1. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+2. See [:material-code-braces: UpdateClusterSettingsResponseTypeDef](./type_defs.md#updateclustersettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterSettingsRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "settings": ...,
+}
 
-Returns
-[UpdateClusterSettingsResponseTypeDef](./type_defs.md#updateclustersettingsresponsetypedef).
+parent.update_cluster_settings(**kwargs)
+```
 
-<a id="update\_container\_agent"></a>
+1. See [:material-code-braces: UpdateClusterSettingsRequestRequestTypeDef](./type_defs.md#updateclustersettingsrequestrequesttypedef) 
 
-### update_container_agent
+### update\_container\_agent
 
 Updates the Amazon ECS container agent on a specified container instance.
 
-Type annotations for `boto3.client("ecs").update_container_agent` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_container_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
 
-Boto3 documentation:
-[ECS.Client.update_container_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_agent)
+```python title="Method definition"
+def update_container_agent(
+    self,
+    *,
+    containerInstance: str,
+    cluster: str = ...,
+) -> UpdateContainerAgentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateContainerAgentRequestRequestTypeDef](./type_defs.md#updatecontaineragentrequestrequesttypedef).
+1. See [:material-code-braces: UpdateContainerAgentResponseTypeDef](./type_defs.md#updatecontaineragentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstance`: `str` *(required)*
-- `cluster`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContainerAgentRequestRequestTypeDef = {  # (1)
+    "containerInstance": ...,
+}
 
-Returns
-[UpdateContainerAgentResponseTypeDef](./type_defs.md#updatecontaineragentresponsetypedef).
+parent.update_container_agent(**kwargs)
+```
 
-<a id="update\_container\_instances\_state"></a>
+1. See [:material-code-braces: UpdateContainerAgentRequestRequestTypeDef](./type_defs.md#updatecontaineragentrequestrequesttypedef) 
 
-### update_container_instances_state
+### update\_container\_instances\_state
 
 Modifies the status of an Amazon ECS container instance.
 
-Type annotations for `boto3.client("ecs").update_container_instances_state`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_container_instances_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
 
-Boto3 documentation:
-[ECS.Client.update_container_instances_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_container_instances_state)
+```python title="Method definition"
+def update_container_instances_state(
+    self,
+    *,
+    containerInstances: Sequence[str],
+    status: ContainerInstanceStatusType,  # (1)
+    cluster: str = ...,
+) -> UpdateContainerInstancesStateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateContainerInstancesStateRequestRequestTypeDef](./type_defs.md#updatecontainerinstancesstaterequestrequesttypedef).
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
+2. See [:material-code-braces: UpdateContainerInstancesStateResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `containerInstances`: `Sequence`\[`str`\] *(required)*
-- `status`:
-  [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
-  *(required)*
-- `cluster`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContainerInstancesStateRequestRequestTypeDef = {  # (1)
+    "containerInstances": ...,
+    "status": ...,
+}
 
-Returns
-[UpdateContainerInstancesStateResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponsetypedef).
+parent.update_container_instances_state(**kwargs)
+```
 
-<a id="update\_service"></a>
+1. See [:material-code-braces: UpdateContainerInstancesStateRequestRequestTypeDef](./type_defs.md#updatecontainerinstancesstaterequestrequesttypedef) 
 
-### update_service
+### update\_service
 
 .
 
-Type annotations for `boto3.client("ecs").update_service` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
 
-Boto3 documentation:
-[ECS.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service)
+```python title="Method definition"
+def update_service(
+    self,
+    *,
+    service: str,
+    cluster: str = ...,
+    desiredCount: int = ...,
+    taskDefinition: str = ...,
+    capacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef] = ...,  # (1)
+    deploymentConfiguration: DeploymentConfigurationTypeDef = ...,  # (2)
+    networkConfiguration: NetworkConfigurationTypeDef = ...,  # (3)
+    placementConstraints: Sequence[PlacementConstraintTypeDef] = ...,  # (4)
+    placementStrategy: Sequence[PlacementStrategyTypeDef] = ...,  # (5)
+    platformVersion: str = ...,
+    forceNewDeployment: bool = ...,
+    healthCheckGracePeriodSeconds: int = ...,
+    enableExecuteCommand: bool = ...,
+    enableECSManagedTags: bool = ...,
+    loadBalancers: Sequence[LoadBalancerTypeDef] = ...,  # (6)
+    propagateTags: PropagateTagsType = ...,  # (7)
+    serviceRegistries: Sequence[ServiceRegistryTypeDef] = ...,  # (8)
+) -> UpdateServiceResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-braces: DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+5. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+6. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+7. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+8. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+9. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `service`: `str` *(required)*
-- `cluster`: `str`
-- `desiredCount`: `int`
-- `taskDefinition`: `str`
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `deploymentConfiguration`:
-  [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `platformVersion`: `str`
-- `forceNewDeployment`: `bool`
-- `healthCheckGracePeriodSeconds`: `int`
-- `enableExecuteCommand`: `bool`
-- `enableECSManagedTags`: `bool`
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceRequestRequestTypeDef = {  # (1)
+    "service": ...,
+}
 
-Returns
-[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
+parent.update_service(**kwargs)
+```
 
-<a id="update\_service\_primary\_task\_set"></a>
+1. See [:material-code-braces: UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef) 
 
-### update_service_primary_task_set
+### update\_service\_primary\_task\_set
 
 Modifies which task set in a service is the primary task set.
 
-Type annotations for `boto3.client("ecs").update_service_primary_task_set`
-method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_service_primary_task_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
 
-Boto3 documentation:
-[ECS.Client.update_service_primary_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_service_primary_task_set)
+```python title="Method definition"
+def update_service_primary_task_set(
+    self,
+    *,
+    cluster: str,
+    service: str,
+    primaryTaskSet: str,
+) -> UpdateServicePrimaryTaskSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServicePrimaryTaskSetRequestRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequestrequesttypedef).
+1. See [:material-code-braces: UpdateServicePrimaryTaskSetResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `service`: `str` *(required)*
-- `primaryTaskSet`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateServicePrimaryTaskSetRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "service": ...,
+    "primaryTaskSet": ...,
+}
 
-Returns
-[UpdateServicePrimaryTaskSetResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponsetypedef).
+parent.update_service_primary_task_set(**kwargs)
+```
 
-<a id="update\_task\_set"></a>
+1. See [:material-code-braces: UpdateServicePrimaryTaskSetRequestRequestTypeDef](./type_defs.md#updateserviceprimarytasksetrequestrequesttypedef) 
 
-### update_task_set
+### update\_task\_set
 
 Modifies a task set.
 
-Type annotations for `boto3.client("ecs").update_task_set` method.
+Type annotations and code completion for `#!python boto3.client("ecs").update_task_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
 
-Boto3 documentation:
-[ECS.Client.update_task_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.update_task_set)
+```python title="Method definition"
+def update_task_set(
+    self,
+    *,
+    cluster: str,
+    service: str,
+    taskSet: str,
+    scale: ScaleTypeDef,  # (1)
+) -> UpdateTaskSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTaskSetRequestRequestTypeDef](./type_defs.md#updatetasksetrequestrequesttypedef).
+1. See [:material-code-braces: ScaleTypeDef](./type_defs.md#scaletypedef) 
+2. See [:material-code-braces: UpdateTaskSetResponseTypeDef](./type_defs.md#updatetasksetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `cluster`: `str` *(required)*
-- `service`: `str` *(required)*
-- `taskSet`: `str` *(required)*
-- `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTaskSetRequestRequestTypeDef = {  # (1)
+    "cluster": ...,
+    "service": ...,
+    "taskSet": ...,
+    "scale": ...,
+}
 
-Returns
-[UpdateTaskSetResponseTypeDef](./type_defs.md#updatetasksetresponsetypedef).
+parent.update_task_set(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTaskSetRequestRequestTypeDef](./type_defs.md#updatetasksetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("ecs").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_settings")` ->
-  [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
-- `client.get_paginator("list_attributes")` ->
-  [ListAttributesPaginator](./paginators.md#listattributespaginator)
-- `client.get_paginator("list_clusters")` ->
-  [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_container_instances")` ->
-  [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
-- `client.get_paginator("list_services")` ->
-  [ListServicesPaginator](./paginators.md#listservicespaginator)
-- `client.get_paginator("list_task_definition_families")` ->
-  [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
-- `client.get_paginator("list_task_definitions")` ->
-  [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
-- `client.get_paginator("list_tasks")` ->
-  [ListTasksPaginator](./paginators.md#listtaskspaginator)
+- `client.get_paginator("list_account_settings")` -> [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
+- `client.get_paginator("list_attributes")` -> [ListAttributesPaginator](./paginators.md#listattributespaginator)
+- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_container_instances")` -> [ListContainerInstancesPaginator](./paginators.md#listcontainerinstancespaginator)
+- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_task_definition_families")` -> [ListTaskDefinitionFamiliesPaginator](./paginators.md#listtaskdefinitionfamiliespaginator)
+- `client.get_paginator("list_task_definitions")` -> [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
+- `client.get_paginator("list_tasks")` -> [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("ecs").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("ecs").get_waiter` method with overloads.
 
-- `client.get_waiter("services_inactive")` ->
-  [ServicesInactiveWaiter](./waiters.md#servicesinactivewaiter)
-- `client.get_waiter("services_stable")` ->
-  [ServicesStableWaiter](./waiters.md#servicesstablewaiter)
-- `client.get_waiter("tasks_running")` ->
-  [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
-- `client.get_waiter("tasks_stopped")` ->
-  [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)
+- `client.get_waiter("services_inactive")` -> [ServicesInactiveWaiter](./waiters.md#servicesinactivewaiter)
+- `client.get_waiter("services_stable")` -> [ServicesStableWaiter](./waiters.md#servicesstablewaiter)
+- `client.get_waiter("tasks_running")` -> [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
+- `client.get_waiter("tasks_stopped")` -> [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)
+

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-iotwireless-module"></a>
-
-# Type annotations for boto3 IoTWireless module
+#  IoTWireless module
 
 > [Index](../README.md) > IoTWireless
 
-Auto-generated documentation for
-[IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
-type annotations stubs module
-[mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
+!!! note ""
 
-- [Type annotations for boto3 IoTWireless module](#type-annotations-for-boto3-iotwireless-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTWirelessClient](#iotwirelessclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTWireless](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless)
+    type annotations stubs module [mypy-boto3-iotwireless](https://pypi.org/project/mypy-boto3-iotwireless/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTWireless`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iotwireless]'
 python -m pip install mypy-boto3-iotwireless
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,145 +42,41 @@ python -m pip install mypy-boto3-iotwireless
 python -m pip uninstall -y mypy-boto3-iotwireless
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotwirelessclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTWirelessClient
 
-Type annotations for `boto3.client("iotwireless")` as
-[IoTWirelessClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iotwireless")` as [IoTWirelessClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotwireless.html#IoTWireless.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iotwireless.client import IoTWirelessClient
+
+def get_client() -> IoTWirelessClient:
+    return Session().cleint("iotwireless")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_aws_account_with_partner_account](./client.md#associate_aws_account_with_partner_account)
-- [associate_multicast_group_with_fuota_task](./client.md#associate_multicast_group_with_fuota_task)
-- [associate_wireless_device_with_fuota_task](./client.md#associate_wireless_device_with_fuota_task)
-- [associate_wireless_device_with_multicast_group](./client.md#associate_wireless_device_with_multicast_group)
-- [associate_wireless_device_with_thing](./client.md#associate_wireless_device_with_thing)
-- [associate_wireless_gateway_with_certificate](./client.md#associate_wireless_gateway_with_certificate)
-- [associate_wireless_gateway_with_thing](./client.md#associate_wireless_gateway_with_thing)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_multicast_group_session](./client.md#cancel_multicast_group_session)
-- [create_destination](./client.md#create_destination)
-- [create_device_profile](./client.md#create_device_profile)
-- [create_fuota_task](./client.md#create_fuota_task)
-- [create_multicast_group](./client.md#create_multicast_group)
-- [create_service_profile](./client.md#create_service_profile)
-- [create_wireless_device](./client.md#create_wireless_device)
-- [create_wireless_gateway](./client.md#create_wireless_gateway)
-- [create_wireless_gateway_task](./client.md#create_wireless_gateway_task)
-- [create_wireless_gateway_task_definition](./client.md#create_wireless_gateway_task_definition)
-- [delete_destination](./client.md#delete_destination)
-- [delete_device_profile](./client.md#delete_device_profile)
-- [delete_fuota_task](./client.md#delete_fuota_task)
-- [delete_multicast_group](./client.md#delete_multicast_group)
-- [delete_queued_messages](./client.md#delete_queued_messages)
-- [delete_service_profile](./client.md#delete_service_profile)
-- [delete_wireless_device](./client.md#delete_wireless_device)
-- [delete_wireless_gateway](./client.md#delete_wireless_gateway)
-- [delete_wireless_gateway_task](./client.md#delete_wireless_gateway_task)
-- [delete_wireless_gateway_task_definition](./client.md#delete_wireless_gateway_task_definition)
-- [disassociate_aws_account_from_partner_account](./client.md#disassociate_aws_account_from_partner_account)
-- [disassociate_multicast_group_from_fuota_task](./client.md#disassociate_multicast_group_from_fuota_task)
-- [disassociate_wireless_device_from_fuota_task](./client.md#disassociate_wireless_device_from_fuota_task)
-- [disassociate_wireless_device_from_multicast_group](./client.md#disassociate_wireless_device_from_multicast_group)
-- [disassociate_wireless_device_from_thing](./client.md#disassociate_wireless_device_from_thing)
-- [disassociate_wireless_gateway_from_certificate](./client.md#disassociate_wireless_gateway_from_certificate)
-- [disassociate_wireless_gateway_from_thing](./client.md#disassociate_wireless_gateway_from_thing)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_destination](./client.md#get_destination)
-- [get_device_profile](./client.md#get_device_profile)
-- [get_fuota_task](./client.md#get_fuota_task)
-- [get_log_levels_by_resource_types](./client.md#get_log_levels_by_resource_types)
-- [get_multicast_group](./client.md#get_multicast_group)
-- [get_multicast_group_session](./client.md#get_multicast_group_session)
-- [get_network_analyzer_configuration](./client.md#get_network_analyzer_configuration)
-- [get_partner_account](./client.md#get_partner_account)
-- [get_resource_event_configuration](./client.md#get_resource_event_configuration)
-- [get_resource_log_level](./client.md#get_resource_log_level)
-- [get_service_endpoint](./client.md#get_service_endpoint)
-- [get_service_profile](./client.md#get_service_profile)
-- [get_wireless_device](./client.md#get_wireless_device)
-- [get_wireless_device_statistics](./client.md#get_wireless_device_statistics)
-- [get_wireless_gateway](./client.md#get_wireless_gateway)
-- [get_wireless_gateway_certificate](./client.md#get_wireless_gateway_certificate)
-- [get_wireless_gateway_firmware_information](./client.md#get_wireless_gateway_firmware_information)
-- [get_wireless_gateway_statistics](./client.md#get_wireless_gateway_statistics)
-- [get_wireless_gateway_task](./client.md#get_wireless_gateway_task)
-- [get_wireless_gateway_task_definition](./client.md#get_wireless_gateway_task_definition)
-- [list_destinations](./client.md#list_destinations)
-- [list_device_profiles](./client.md#list_device_profiles)
-- [list_fuota_tasks](./client.md#list_fuota_tasks)
-- [list_multicast_groups](./client.md#list_multicast_groups)
-- [list_multicast_groups_by_fuota_task](./client.md#list_multicast_groups_by_fuota_task)
-- [list_partner_accounts](./client.md#list_partner_accounts)
-- [list_queued_messages](./client.md#list_queued_messages)
-- [list_service_profiles](./client.md#list_service_profiles)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_wireless_devices](./client.md#list_wireless_devices)
-- [list_wireless_gateway_task_definitions](./client.md#list_wireless_gateway_task_definitions)
-- [list_wireless_gateways](./client.md#list_wireless_gateways)
-- [put_resource_log_level](./client.md#put_resource_log_level)
-- [reset_all_resource_log_levels](./client.md#reset_all_resource_log_levels)
-- [reset_resource_log_level](./client.md#reset_resource_log_level)
-- [send_data_to_multicast_group](./client.md#send_data_to_multicast_group)
-- [send_data_to_wireless_device](./client.md#send_data_to_wireless_device)
-- [start_bulk_associate_wireless_device_with_multicast_group](./client.md#start_bulk_associate_wireless_device_with_multicast_group)
-- [start_bulk_disassociate_wireless_device_from_multicast_group](./client.md#start_bulk_disassociate_wireless_device_from_multicast_group)
-- [start_fuota_task](./client.md#start_fuota_task)
-- [start_multicast_group_session](./client.md#start_multicast_group_session)
-- [tag_resource](./client.md#tag_resource)
-- [test_wireless_device](./client.md#test_wireless_device)
-- [untag_resource](./client.md#untag_resource)
-- [update_destination](./client.md#update_destination)
-- [update_fuota_task](./client.md#update_fuota_task)
-- [update_log_levels_by_resource_types](./client.md#update_log_levels_by_resource_types)
-- [update_multicast_group](./client.md#update_multicast_group)
-- [update_network_analyzer_configuration](./client.md#update_network_analyzer_configuration)
-- [update_partner_account](./client.md#update_partner_account)
-- [update_resource_event_configuration](./client.md#update_resource_event_configuration)
-- [update_wireless_device](./client.md#update_wireless_device)
-- [update_wireless_gateway](./client.md#update_wireless_gateway)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-IoTWirelessClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ThrottlingException
-- TooManyTagsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotwireless.literals import BatteryLevelType
 
-```python
-from mypy_boto3_iotwireless.literals import BatteryLevelType, ...
+def get_value() -> BatteryLevelType:
+    return "critical"
 ```
 
 - [BatteryLevelType](./literals.md#batteryleveltype)
@@ -233,18 +108,22 @@ from mypy_boto3_iotwireless.literals import BatteryLevelType, ...
 - [IoTWirelessServiceName](./literals.md#iotwirelessservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iotwireless.type_defs import AbpV1_0_xTypeDef
 
-```python
-from mypy_boto3_iotwireless.type_defs import AbpV1_0_xTypeDef, ...
+def get_value() -> AbpV1_0_xTypeDef:
+    return {
+        "DevAddr": ...,
+    }
 ```
 
 - [AbpV1_0_xTypeDef](./type_defs.md#abpv1_0_xtypedef)
@@ -437,3 +316,4 @@ from mypy_boto3_iotwireless.type_defs import AbpV1_0_xTypeDef, ...
 - [WirelessGatewayLogOptionTypeDef](./type_defs.md#wirelessgatewaylogoptiontypedef)
 - [WirelessGatewayStatisticsTypeDef](./type_defs.md#wirelessgatewaystatisticstypedef)
 - [WirelessMetadataTypeDef](./type_defs.md#wirelessmetadatatypedef)
+

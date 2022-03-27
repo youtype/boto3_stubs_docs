@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-iotanalytics-module"></a>
-
-# Examples for boto3 IoTAnalytics module
+# Examples
 
 > [Index](../README.md) > [IoTAnalytics](./README.md) > Examples
 
-- [Examples for boto3 IoTAnalytics module](#examples-for-boto3-iotanalytics-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+    type annotations stubs module [mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iotanalytics]` package installed.
 
-Write your `IoTAnalytics` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `IoTAnalytics` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTAnalyticsClient
-# and provides type checking and code completion
-client = session.client("iotanalytics")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchPutMessageResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_put_message()
 
-# paginator has type ListChannelsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_channels")
-for item in paginator.paginate(...):
-    # item has type ListChannelsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("iotanalytics")  # (1)
+    result = client.batch_put_message()  # (2)
+    ```
+
+    1. client: [IoTAnalyticsClient](./client.md)
+    2. result: [:material-code-braces: BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("iotanalytics")  # (1)
+
+    paginator = client.get_paginator("list_channels")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [IoTAnalyticsClient](./client.md)
+    2. paginator: [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+    3. item: [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iotanalytics]` or a standalone `mypy_boto3_iotanalytics`
-package, you have to explicitly specify `client: IoTAnalyticsClient` type
-annotation.
+With `boto3-stubs-lite[iotanalytics]`
+or a standalone `mypy_boto3_iotanalytics` package, you have to explicitly specify `client: IoTAnalyticsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
-from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
-
-from mypy_boto3_iotanalytics.literals import PaginatorName
-
-from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
-from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: IoTAnalyticsClient = session.client("iotanalytics")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: BatchPutMessageResponseTypeDef = client.batch_put_message()
+    from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
+    from mypy_boto3_iotanalytics.type_defs import BatchPutMessageResponseTypeDef
+    from mypy_boto3_iotanalytics.type_defs import BatchPutMessageRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_channels"
-paginator: ListChannelsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListChannelsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: IoTAnalyticsClient = session.client("iotanalytics")
+
+    kwargs: BatchPutMessageRequestRequestTypeDef = {...}
+    result: BatchPutMessageResponseTypeDef = client.batch_put_message(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
+    from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
+    from mypy_boto3_iotanalytics.type_defs import ListChannelsResponseTypeDef
+
+
+    session = Session()
+    client: IoTAnalyticsClient = session.client("iotanalytics")
+
+    paginator: ListChannelsPaginator = client.get_paginator("list_channels")
+    for item in paginator.paginate(...):
+        item: ListChannelsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

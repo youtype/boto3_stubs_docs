@@ -1,1331 +1,1723 @@
-<a id="typed-dictionaries-for-boto3-sms-module"></a>
-
-# Typed dictionaries for boto3 SMS module
+# Typed dictionaries
 
 > [Index](../README.md) > [SMS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module
-[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SMS module](#typed-dictionaries-for-boto3-sms-module)
-  - [AppSummaryTypeDef](#appsummarytypedef)
-  - [AppValidationConfigurationTypeDef](#appvalidationconfigurationtypedef)
-  - [AppValidationOutputTypeDef](#appvalidationoutputtypedef)
-  - [ConnectorTypeDef](#connectortypedef)
-  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
-  - [CreateAppResponseTypeDef](#createappresponsetypedef)
-  - [CreateReplicationJobRequestRequestTypeDef](#createreplicationjobrequestrequesttypedef)
-  - [CreateReplicationJobResponseTypeDef](#createreplicationjobresponsetypedef)
-  - [DeleteAppLaunchConfigurationRequestRequestTypeDef](#deleteapplaunchconfigurationrequestrequesttypedef)
-  - [DeleteAppReplicationConfigurationRequestRequestTypeDef](#deleteappreplicationconfigurationrequestrequesttypedef)
-  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
-  - [DeleteAppValidationConfigurationRequestRequestTypeDef](#deleteappvalidationconfigurationrequestrequesttypedef)
-  - [DeleteReplicationJobRequestRequestTypeDef](#deletereplicationjobrequestrequesttypedef)
-  - [DisassociateConnectorRequestRequestTypeDef](#disassociateconnectorrequestrequesttypedef)
-  - [GenerateChangeSetRequestRequestTypeDef](#generatechangesetrequestrequesttypedef)
-  - [GenerateChangeSetResponseTypeDef](#generatechangesetresponsetypedef)
-  - [GenerateTemplateRequestRequestTypeDef](#generatetemplaterequestrequesttypedef)
-  - [GenerateTemplateResponseTypeDef](#generatetemplateresponsetypedef)
-  - [GetAppLaunchConfigurationRequestRequestTypeDef](#getapplaunchconfigurationrequestrequesttypedef)
-  - [GetAppLaunchConfigurationResponseTypeDef](#getapplaunchconfigurationresponsetypedef)
-  - [GetAppReplicationConfigurationRequestRequestTypeDef](#getappreplicationconfigurationrequestrequesttypedef)
-  - [GetAppReplicationConfigurationResponseTypeDef](#getappreplicationconfigurationresponsetypedef)
-  - [GetAppRequestRequestTypeDef](#getapprequestrequesttypedef)
-  - [GetAppResponseTypeDef](#getappresponsetypedef)
-  - [GetAppValidationConfigurationRequestRequestTypeDef](#getappvalidationconfigurationrequestrequesttypedef)
-  - [GetAppValidationConfigurationResponseTypeDef](#getappvalidationconfigurationresponsetypedef)
-  - [GetAppValidationOutputRequestRequestTypeDef](#getappvalidationoutputrequestrequesttypedef)
-  - [GetAppValidationOutputResponseTypeDef](#getappvalidationoutputresponsetypedef)
-  - [GetConnectorsRequestRequestTypeDef](#getconnectorsrequestrequesttypedef)
-  - [GetConnectorsResponseTypeDef](#getconnectorsresponsetypedef)
-  - [GetReplicationJobsRequestRequestTypeDef](#getreplicationjobsrequestrequesttypedef)
-  - [GetReplicationJobsResponseTypeDef](#getreplicationjobsresponsetypedef)
-  - [GetReplicationRunsRequestRequestTypeDef](#getreplicationrunsrequestrequesttypedef)
-  - [GetReplicationRunsResponseTypeDef](#getreplicationrunsresponsetypedef)
-  - [GetServersRequestRequestTypeDef](#getserversrequestrequesttypedef)
-  - [GetServersResponseTypeDef](#getserversresponsetypedef)
-  - [ImportAppCatalogRequestRequestTypeDef](#importappcatalogrequestrequesttypedef)
-  - [LaunchAppRequestRequestTypeDef](#launchapprequestrequesttypedef)
-  - [LaunchDetailsTypeDef](#launchdetailstypedef)
-  - [ListAppsRequestRequestTypeDef](#listappsrequestrequesttypedef)
-  - [ListAppsResponseTypeDef](#listappsresponsetypedef)
-  - [NotificationContextTypeDef](#notificationcontexttypedef)
-  - [NotifyAppValidationOutputRequestRequestTypeDef](#notifyappvalidationoutputrequestrequesttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutAppLaunchConfigurationRequestRequestTypeDef](#putapplaunchconfigurationrequestrequesttypedef)
-  - [PutAppReplicationConfigurationRequestRequestTypeDef](#putappreplicationconfigurationrequestrequesttypedef)
-  - [PutAppValidationConfigurationRequestRequestTypeDef](#putappvalidationconfigurationrequestrequesttypedef)
-  - [ReplicationJobTypeDef](#replicationjobtypedef)
-  - [ReplicationRunStageDetailsTypeDef](#replicationrunstagedetailstypedef)
-  - [ReplicationRunTypeDef](#replicationruntypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SSMOutputTypeDef](#ssmoutputtypedef)
-  - [SSMValidationParametersTypeDef](#ssmvalidationparameterstypedef)
-  - [ServerGroupLaunchConfigurationTypeDef](#servergrouplaunchconfigurationtypedef)
-  - [ServerGroupReplicationConfigurationTypeDef](#servergroupreplicationconfigurationtypedef)
-  - [ServerGroupTypeDef](#servergrouptypedef)
-  - [ServerGroupValidationConfigurationTypeDef](#servergroupvalidationconfigurationtypedef)
-  - [ServerLaunchConfigurationTypeDef](#serverlaunchconfigurationtypedef)
-  - [ServerReplicationConfigurationTypeDef](#serverreplicationconfigurationtypedef)
-  - [ServerReplicationParametersTypeDef](#serverreplicationparameterstypedef)
-  - [ServerTypeDef](#servertypedef)
-  - [ServerValidationConfigurationTypeDef](#servervalidationconfigurationtypedef)
-  - [ServerValidationOutputTypeDef](#servervalidationoutputtypedef)
-  - [SourceTypeDef](#sourcetypedef)
-  - [StartAppReplicationRequestRequestTypeDef](#startappreplicationrequestrequesttypedef)
-  - [StartOnDemandAppReplicationRequestRequestTypeDef](#startondemandappreplicationrequestrequesttypedef)
-  - [StartOnDemandReplicationRunRequestRequestTypeDef](#startondemandreplicationrunrequestrequesttypedef)
-  - [StartOnDemandReplicationRunResponseTypeDef](#startondemandreplicationrunresponsetypedef)
-  - [StopAppReplicationRequestRequestTypeDef](#stopappreplicationrequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TerminateAppRequestRequestTypeDef](#terminateapprequestrequesttypedef)
-  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
-  - [UpdateAppResponseTypeDef](#updateappresponsetypedef)
-  - [UpdateReplicationJobRequestRequestTypeDef](#updatereplicationjobrequestrequesttypedef)
-  - [UserDataTypeDef](#userdatatypedef)
-  - [UserDataValidationParametersTypeDef](#userdatavalidationparameterstypedef)
-  - [ValidationOutputTypeDef](#validationoutputtypedef)
-  - [VmServerAddressTypeDef](#vmserveraddresstypedef)
-  - [VmServerTypeDef](#vmservertypedef)
-
-<a id="appsummarytypedef"></a>
+    Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+    type annotations stubs module [mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ## AppSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import AppSummaryTypeDef
+
+def get_value() -> AppSummaryTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppSummaryTypeDef(TypedDict):
+    appId: NotRequired[str],
+    importedAppId: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    status: NotRequired[AppStatusType],  # (1)
+    statusMessage: NotRequired[str],
+    replicationConfigurationStatus: NotRequired[AppReplicationConfigurationStatusType],  # (2)
+    replicationStatus: NotRequired[AppReplicationStatusType],  # (3)
+    replicationStatusMessage: NotRequired[str],
+    latestReplicationTime: NotRequired[datetime],
+    launchConfigurationStatus: NotRequired[AppLaunchConfigurationStatusType],  # (4)
+    launchStatus: NotRequired[AppLaunchStatusType],  # (5)
+    launchStatusMessage: NotRequired[str],
+    launchDetails: NotRequired[LaunchDetailsTypeDef],  # (6)
+    creationTime: NotRequired[datetime],
+    lastModified: NotRequired[datetime],
+    roleName: NotRequired[str],
+    totalServerGroups: NotRequired[int],
+    totalServers: NotRequired[int],
+```
 
-- `appId`: `str`
-- `importedAppId`: `str`
-- `name`: `str`
-- `description`: `str`
-- `status`: [AppStatusType](./literals.md#appstatustype)
-- `statusMessage`: `str`
-- `replicationConfigurationStatus`:
-  [AppReplicationConfigurationStatusType](./literals.md#appreplicationconfigurationstatustype)
-- `replicationStatus`:
-  [AppReplicationStatusType](./literals.md#appreplicationstatustype)
-- `replicationStatusMessage`: `str`
-- `latestReplicationTime`: `datetime`
-- `launchConfigurationStatus`:
-  [AppLaunchConfigurationStatusType](./literals.md#applaunchconfigurationstatustype)
-- `launchStatus`: [AppLaunchStatusType](./literals.md#applaunchstatustype)
-- `launchStatusMessage`: `str`
-- `launchDetails`: [LaunchDetailsTypeDef](./type_defs.md#launchdetailstypedef)
-- `creationTime`: `datetime`
-- `lastModified`: `datetime`
-- `roleName`: `str`
-- `totalServerGroups`: `int`
-- `totalServers`: `int`
-
-<a id="appvalidationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: AppStatusType](./literals.md#appstatustype) 
+2. See [:material-code-brackets: AppReplicationConfigurationStatusType](./literals.md#appreplicationconfigurationstatustype) 
+3. See [:material-code-brackets: AppReplicationStatusType](./literals.md#appreplicationstatustype) 
+4. See [:material-code-brackets: AppLaunchConfigurationStatusType](./literals.md#applaunchconfigurationstatustype) 
+5. See [:material-code-brackets: AppLaunchStatusType](./literals.md#applaunchstatustype) 
+6. See [:material-code-braces: LaunchDetailsTypeDef](./type_defs.md#launchdetailstypedef) 
 ## AppValidationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import AppValidationConfigurationTypeDef
+
+def get_value() -> AppValidationConfigurationTypeDef:
+    return {
+        "validationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppValidationConfigurationTypeDef(TypedDict):
+    validationId: NotRequired[str],
+    name: NotRequired[str],
+    appValidationStrategy: NotRequired[AppValidationStrategyType],  # (1)
+    ssmValidationParameters: NotRequired[SSMValidationParametersTypeDef],  # (2)
+```
 
-- `validationId`: `str`
-- `name`: `str`
-- `appValidationStrategy`: `Literal['SSM']` (see
-  [AppValidationStrategyType](./literals.md#appvalidationstrategytype))
-- `ssmValidationParameters`:
-  [SSMValidationParametersTypeDef](./type_defs.md#ssmvalidationparameterstypedef)
-
-<a id="appvalidationoutputtypedef"></a>
-
+1. See [:material-code-brackets: AppValidationStrategyType](./literals.md#appvalidationstrategytype) 
+2. See [:material-code-braces: SSMValidationParametersTypeDef](./type_defs.md#ssmvalidationparameterstypedef) 
 ## AppValidationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import AppValidationOutputTypeDef
+
+def get_value() -> AppValidationOutputTypeDef:
+    return {
+        "ssmOutput": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppValidationOutputTypeDef(TypedDict):
+    ssmOutput: NotRequired[SSMOutputTypeDef],  # (1)
+```
 
-- `ssmOutput`: [SSMOutputTypeDef](./type_defs.md#ssmoutputtypedef)
-
-<a id="connectortypedef"></a>
-
+1. See [:material-code-braces: SSMOutputTypeDef](./type_defs.md#ssmoutputtypedef) 
 ## ConnectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ConnectorTypeDef
+
+def get_value() -> ConnectorTypeDef:
+    return {
+        "connectorId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectorTypeDef(TypedDict):
+    connectorId: NotRequired[str],
+    version: NotRequired[str],
+    status: NotRequired[ConnectorStatusType],  # (1)
+    capabilityList: NotRequired[List[ConnectorCapabilityType]],  # (2)
+    vmManagerName: NotRequired[str],
+    vmManagerType: NotRequired[VmManagerTypeType],  # (3)
+    vmManagerId: NotRequired[str],
+    ipAddress: NotRequired[str],
+    macAddress: NotRequired[str],
+    associatedOn: NotRequired[datetime],
+```
 
-- `connectorId`: `str`
-- `version`: `str`
-- `status`: [ConnectorStatusType](./literals.md#connectorstatustype)
-- `capabilityList`:
-  `List`\[[ConnectorCapabilityType](./literals.md#connectorcapabilitytype)\]
-- `vmManagerName`: `str`
-- `vmManagerType`: [VmManagerTypeType](./literals.md#vmmanagertypetype)
-- `vmManagerId`: `str`
-- `ipAddress`: `str`
-- `macAddress`: `str`
-- `associatedOn`: `datetime`
-
-<a id="createapprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectorStatusType](./literals.md#connectorstatustype) 
+2. See [:material-code-brackets: ConnectorCapabilityType](./literals.md#connectorcapabilitytype) 
+3. See [:material-code-brackets: VmManagerTypeType](./literals.md#vmmanagertypetype) 
 ## CreateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import CreateAppRequestRequestTypeDef
+
+def get_value() -> CreateAppRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateAppRequestRequestTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    roleName: NotRequired[str],
+    clientToken: NotRequired[str],
+    serverGroups: NotRequired[Sequence[ServerGroupTypeDef]],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `name`: `str`
-- `description`: `str`
-- `roleName`: `str`
-- `clientToken`: `str`
-- `serverGroups`:
-  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createappresponsetypedef"></a>
-
+1. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import CreateAppResponseTypeDef
+
+def get_value() -> CreateAppResponseTypeDef:
+    return {
+        "appSummary": ...,
+        "serverGroups": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppResponseTypeDef(TypedDict):
+    appSummary: AppSummaryTypeDef,  # (1)
+    serverGroups: List[ServerGroupTypeDef],  # (2)
+    tags: List[TagTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `appSummary`: [AppSummaryTypeDef](./type_defs.md#appsummarytypedef)
-- `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreplicationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppSummaryTypeDef](./type_defs.md#appsummarytypedef) 
+2. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReplicationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import CreateReplicationJobRequestRequestTypeDef
+
+def get_value() -> CreateReplicationJobRequestRequestTypeDef:
+    return {
+        "serverId": ...,
+        "seedReplicationTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReplicationJobRequestRequestTypeDef(TypedDict):
+    serverId: str,
+    seedReplicationTime: Union[datetime, str],
+    frequency: NotRequired[int],
+    runOnce: NotRequired[bool],
+    licenseType: NotRequired[LicenseTypeType],  # (1)
+    roleName: NotRequired[str],
+    description: NotRequired[str],
+    numberOfRecentAmisToKeep: NotRequired[int],
+    encrypted: NotRequired[bool],
+    kmsKeyId: NotRequired[str],
+```
 
-- `serverId`: `str`
-- `seedReplicationTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `frequency`: `int`
-- `runOnce`: `bool`
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `roleName`: `str`
-- `description`: `str`
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
-
-<a id="createreplicationjobresponsetypedef"></a>
-
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
 ## CreateReplicationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import CreateReplicationJobResponseTypeDef
+
+def get_value() -> CreateReplicationJobResponseTypeDef:
+    return {
+        "replicationJobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReplicationJobResponseTypeDef(TypedDict):
+    replicationJobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `replicationJobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplaunchconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAppLaunchConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DeleteAppLaunchConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAppLaunchConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="deleteappreplicationconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppLaunchConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## DeleteAppReplicationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DeleteAppReplicationConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAppReplicationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="deleteapprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppReplicationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## DeleteAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DeleteAppRequestRequestTypeDef
+
+def get_value() -> DeleteAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-- `forceStopAppReplication`: `bool`
-- `forceTerminateApp`: `bool`
-
-<a id="deleteappvalidationconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    forceStopAppReplication: NotRequired[bool],
+    forceTerminateApp: NotRequired[bool],
+```
 
 ## DeleteAppValidationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DeleteAppValidationConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAppValidationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-<a id="deletereplicationjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppValidationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: str,
+```
 
 ## DeleteReplicationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DeleteReplicationJobRequestRequestTypeDef
+
+def get_value() -> DeleteReplicationJobRequestRequestTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `replicationJobId`: `str`
-
-<a id="disassociateconnectorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteReplicationJobRequestRequestTypeDef(TypedDict):
+    replicationJobId: str,
+```
 
 ## DisassociateConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import DisassociateConnectorRequestRequestTypeDef
+
+def get_value() -> DisassociateConnectorRequestRequestTypeDef:
+    return {
+        "connectorId": ...,
+    }
 ```
 
-Required fields:
-
-- `connectorId`: `str`
-
-<a id="generatechangesetrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateConnectorRequestRequestTypeDef(TypedDict):
+    connectorId: str,
+```
 
 ## GenerateChangeSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GenerateChangeSetRequestRequestTypeDef
+
+def get_value() -> GenerateChangeSetRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GenerateChangeSetRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    changesetFormat: NotRequired[OutputFormatType],  # (1)
+```
 
-- `appId`: `str`
-- `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
-
-<a id="generatechangesetresponsetypedef"></a>
-
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
 ## GenerateChangeSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GenerateChangeSetResponseTypeDef
+
+def get_value() -> GenerateChangeSetResponseTypeDef:
+    return {
+        "s3Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateChangeSetResponseTypeDef(TypedDict):
+    s3Location: S3LocationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="generatetemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GenerateTemplateRequestRequestTypeDef
+
+def get_value() -> GenerateTemplateRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GenerateTemplateRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    templateFormat: NotRequired[OutputFormatType],  # (1)
+```
 
-- `appId`: `str`
-- `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
-
-<a id="generatetemplateresponsetypedef"></a>
-
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
 ## GenerateTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GenerateTemplateResponseTypeDef
+
+def get_value() -> GenerateTemplateResponseTypeDef:
+    return {
+        "s3Location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateTemplateResponseTypeDef(TypedDict):
+    s3Location: S3LocationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapplaunchconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppLaunchConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationRequestRequestTypeDef
+
+def get_value() -> GetAppLaunchConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="getapplaunchconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetAppLaunchConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## GetAppLaunchConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppLaunchConfigurationResponseTypeDef
+
+def get_value() -> GetAppLaunchConfigurationResponseTypeDef:
+    return {
+        "appId": ...,
+        "roleName": ...,
+        "autoLaunch": ...,
+        "serverGroupLaunchConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppLaunchConfigurationResponseTypeDef(TypedDict):
+    appId: str,
+    roleName: str,
+    autoLaunch: bool,
+    serverGroupLaunchConfigurations: List[ServerGroupLaunchConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appId`: `str`
-- `roleName`: `str`
-- `autoLaunch`: `bool`
-- `serverGroupLaunchConfigurations`:
-  `List`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getappreplicationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppReplicationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationRequestRequestTypeDef
+
+def get_value() -> GetAppReplicationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="getappreplicationconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetAppReplicationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## GetAppReplicationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppReplicationConfigurationResponseTypeDef
+
+def get_value() -> GetAppReplicationConfigurationResponseTypeDef:
+    return {
+        "serverGroupReplicationConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppReplicationConfigurationResponseTypeDef(TypedDict):
+    serverGroupReplicationConfigurations: List[ServerGroupReplicationConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `serverGroupReplicationConfigurations`:
-  `List`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppRequestRequestTypeDef
+
+def get_value() -> GetAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="getappresponsetypedef"></a>
+```python title="Definition"
+class GetAppRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## GetAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppResponseTypeDef
+
+def get_value() -> GetAppResponseTypeDef:
+    return {
+        "appSummary": ...,
+        "serverGroups": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppResponseTypeDef(TypedDict):
+    appSummary: AppSummaryTypeDef,  # (1)
+    serverGroups: List[ServerGroupTypeDef],  # (2)
+    tags: List[TagTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `appSummary`: [AppSummaryTypeDef](./type_defs.md#appsummarytypedef)
-- `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getappvalidationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppSummaryTypeDef](./type_defs.md#appsummarytypedef) 
+2. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppValidationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppValidationConfigurationRequestRequestTypeDef
+
+def get_value() -> GetAppValidationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-<a id="getappvalidationconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetAppValidationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: str,
+```
 
 ## GetAppValidationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppValidationConfigurationResponseTypeDef
+
+def get_value() -> GetAppValidationConfigurationResponseTypeDef:
+    return {
+        "appValidationConfigurations": ...,
+        "serverGroupValidationConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppValidationConfigurationResponseTypeDef(TypedDict):
+    appValidationConfigurations: List[AppValidationConfigurationTypeDef],  # (1)
+    serverGroupValidationConfigurations: List[ServerGroupValidationConfigurationTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `appValidationConfigurations`:
-  `List`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
-- `serverGroupValidationConfigurations`:
-  `List`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getappvalidationoutputrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef) 
+2. See [:material-code-braces: ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppValidationOutputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppValidationOutputRequestRequestTypeDef
+
+def get_value() -> GetAppValidationOutputRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-<a id="getappvalidationoutputresponsetypedef"></a>
+```python title="Definition"
+class GetAppValidationOutputRequestRequestTypeDef(TypedDict):
+    appId: str,
+```
 
 ## GetAppValidationOutputResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetAppValidationOutputResponseTypeDef
+
+def get_value() -> GetAppValidationOutputResponseTypeDef:
+    return {
+        "validationOutputList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppValidationOutputResponseTypeDef(TypedDict):
+    validationOutputList: List[ValidationOutputTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `validationOutputList`:
-  `List`\[[ValidationOutputTypeDef](./type_defs.md#validationoutputtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ValidationOutputTypeDef](./type_defs.md#validationoutputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConnectorsRequestGetConnectorsPaginateTypeDef
 
-<a id="getconnectorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sms.type_defs import GetConnectorsRequestGetConnectorsPaginateTypeDef
 
+def get_value() -> GetConnectorsRequestGetConnectorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetConnectorsRequestGetConnectorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetConnectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetConnectorsRequestRequestTypeDef
+
+def get_value() -> GetConnectorsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getconnectorsresponsetypedef"></a>
+```python title="Definition"
+class GetConnectorsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetConnectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetConnectorsResponseTypeDef
+
+def get_value() -> GetConnectorsResponseTypeDef:
+    return {
+        "connectorList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectorsResponseTypeDef(TypedDict):
+    connectorList: List[ConnectorTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectorList`:
-  `List`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConnectorTypeDef](./type_defs.md#connectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef
 
-<a id="getreplicationjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sms.type_defs import GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef
 
+def get_value() -> GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef(TypedDict):
+    replicationJobId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetReplicationJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetReplicationJobsRequestRequestTypeDef
+
+def get_value() -> GetReplicationJobsRequestRequestTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Optional fields:
-
-- `replicationJobId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getreplicationjobsresponsetypedef"></a>
+```python title="Definition"
+class GetReplicationJobsRequestRequestTypeDef(TypedDict):
+    replicationJobId: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetReplicationJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetReplicationJobsResponseTypeDef
+
+def get_value() -> GetReplicationJobsResponseTypeDef:
+    return {
+        "replicationJobList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReplicationJobsResponseTypeDef(TypedDict):
+    replicationJobList: List[ReplicationJobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `replicationJobList`:
-  `List`\[[ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef
 
-<a id="getreplicationrunsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sms.type_defs import GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef
 
+def get_value() -> GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
+```
+
+```python title="Definition"
+class GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef(TypedDict):
+    replicationJobId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetReplicationRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetReplicationRunsRequestRequestTypeDef
+
+def get_value() -> GetReplicationRunsRequestRequestTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `replicationJobId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="getreplicationrunsresponsetypedef"></a>
+```python title="Definition"
+class GetReplicationRunsRequestRequestTypeDef(TypedDict):
+    replicationJobId: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## GetReplicationRunsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetReplicationRunsResponseTypeDef
+
+def get_value() -> GetReplicationRunsResponseTypeDef:
+    return {
+        "replicationJob": ...,
+        "replicationRunList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReplicationRunsResponseTypeDef(TypedDict):
+    replicationJob: ReplicationJobTypeDef,  # (1)
+    replicationRunList: List[ReplicationRunTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `replicationJob`:
-  [ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef)
-- `replicationRunList`:
-  `List`\[[ReplicationRunTypeDef](./type_defs.md#replicationruntypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReplicationJobTypeDef](./type_defs.md#replicationjobtypedef) 
+2. See [:material-code-braces: ReplicationRunTypeDef](./type_defs.md#replicationruntypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetServersRequestGetServersPaginateTypeDef
 
-<a id="getserversrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sms.type_defs import GetServersRequestGetServersPaginateTypeDef
 
+def get_value() -> GetServersRequestGetServersPaginateTypeDef:
+    return {
+        "vmServerAddressList": ...,
+    }
+```
+
+```python title="Definition"
+class GetServersRequestGetServersPaginateTypeDef(TypedDict):
+    vmServerAddressList: NotRequired[Sequence[VmServerAddressTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetServersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetServersRequestRequestTypeDef
+
+def get_value() -> GetServersRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetServersRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    vmServerAddressList: NotRequired[Sequence[VmServerAddressTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `vmServerAddressList`:
-  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
-
-<a id="getserversresponsetypedef"></a>
-
+1. See [:material-code-braces: VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef) 
 ## GetServersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import GetServersResponseTypeDef
+
+def get_value() -> GetServersResponseTypeDef:
+    return {
+        "lastModifiedOn": ...,
+        "serverCatalogStatus": ...,
+        "serverList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServersResponseTypeDef(TypedDict):
+    lastModifiedOn: datetime,
+    serverCatalogStatus: ServerCatalogStatusType,  # (1)
+    serverList: List[ServerTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `lastModifiedOn`: `datetime`
-- `serverCatalogStatus`:
-  [ServerCatalogStatusType](./literals.md#servercatalogstatustype)
-- `serverList`: `List`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importappcatalogrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServerCatalogStatusType](./literals.md#servercatalogstatustype) 
+2. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportAppCatalogRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ImportAppCatalogRequestRequestTypeDef
+
+def get_value() -> ImportAppCatalogRequestRequestTypeDef:
+    return {
+        "roleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `roleName`: `str`
-
-<a id="launchapprequestrequesttypedef"></a>
+```python title="Definition"
+class ImportAppCatalogRequestRequestTypeDef(TypedDict):
+    roleName: NotRequired[str],
+```
 
 ## LaunchAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import LaunchAppRequestRequestTypeDef
+
+def get_value() -> LaunchAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="launchdetailstypedef"></a>
+```python title="Definition"
+class LaunchAppRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## LaunchDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import LaunchDetailsTypeDef
+
+def get_value() -> LaunchDetailsTypeDef:
+    return {
+        "latestLaunchTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LaunchDetailsTypeDef(TypedDict):
+    latestLaunchTime: NotRequired[datetime],
+    stackName: NotRequired[str],
+    stackId: NotRequired[str],
+```
 
-- `latestLaunchTime`: `datetime`
-- `stackName`: `str`
-- `stackId`: `str`
+## ListAppsRequestListAppsPaginateTypeDef
 
-<a id="listappsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_sms.type_defs import ListAppsRequestListAppsPaginateTypeDef
 
+def get_value() -> ListAppsRequestListAppsPaginateTypeDef:
+    return {
+        "appIds": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppsRequestListAppsPaginateTypeDef(TypedDict):
+    appIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAppsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ListAppsRequestRequestTypeDef
+
+def get_value() -> ListAppsRequestRequestTypeDef:
+    return {
+        "appIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `appIds`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listappsresponsetypedef"></a>
+```python title="Definition"
+class ListAppsRequestRequestTypeDef(TypedDict):
+    appIds: NotRequired[Sequence[str]],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListAppsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ListAppsResponseTypeDef
+
+def get_value() -> ListAppsResponseTypeDef:
+    return {
+        "apps": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppsResponseTypeDef(TypedDict):
+    apps: List[AppSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `apps`: `List`\[[AppSummaryTypeDef](./type_defs.md#appsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationcontexttypedef"></a>
-
+1. See [:material-code-braces: AppSummaryTypeDef](./type_defs.md#appsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import NotificationContextTypeDef
+
+def get_value() -> NotificationContextTypeDef:
+    return {
+        "validationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationContextTypeDef(TypedDict):
+    validationId: NotRequired[str],
+    status: NotRequired[ValidationStatusType],  # (1)
+    statusMessage: NotRequired[str],
+```
 
-- `validationId`: `str`
-- `status`: [ValidationStatusType](./literals.md#validationstatustype)
-- `statusMessage`: `str`
-
-<a id="notifyappvalidationoutputrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ValidationStatusType](./literals.md#validationstatustype) 
 ## NotifyAppValidationOutputRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import NotifyAppValidationOutputRequestRequestTypeDef
+
+def get_value() -> NotifyAppValidationOutputRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyAppValidationOutputRequestRequestTypeDef(TypedDict):
+    appId: str,
+    notificationContext: NotRequired[NotificationContextTypeDef],  # (1)
+```
 
-- `appId`: `str`
-
-Optional fields:
-
-- `notificationContext`:
-  [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putapplaunchconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutAppLaunchConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import PutAppLaunchConfigurationRequestRequestTypeDef
+
+def get_value() -> PutAppLaunchConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutAppLaunchConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    roleName: NotRequired[str],
+    autoLaunch: NotRequired[bool],
+    serverGroupLaunchConfigurations: NotRequired[Sequence[ServerGroupLaunchConfigurationTypeDef]],  # (1)
+```
 
-- `appId`: `str`
-- `roleName`: `str`
-- `autoLaunch`: `bool`
-- `serverGroupLaunchConfigurations`:
-  `Sequence`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
-
-<a id="putappreplicationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef) 
 ## PutAppReplicationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import PutAppReplicationConfigurationRequestRequestTypeDef
+
+def get_value() -> PutAppReplicationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutAppReplicationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    serverGroupReplicationConfigurations: NotRequired[Sequence[ServerGroupReplicationConfigurationTypeDef]],  # (1)
+```
 
-- `appId`: `str`
-- `serverGroupReplicationConfigurations`:
-  `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
-
-<a id="putappvalidationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef) 
 ## PutAppValidationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import PutAppValidationConfigurationRequestRequestTypeDef
+
+def get_value() -> PutAppValidationConfigurationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAppValidationConfigurationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    appValidationConfigurations: NotRequired[Sequence[AppValidationConfigurationTypeDef]],  # (1)
+    serverGroupValidationConfigurations: NotRequired[Sequence[ServerGroupValidationConfigurationTypeDef]],  # (2)
+```
 
-- `appId`: `str`
-
-Optional fields:
-
-- `appValidationConfigurations`:
-  `Sequence`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
-- `serverGroupValidationConfigurations`:
-  `Sequence`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
-
-<a id="replicationjobtypedef"></a>
-
+1. See [:material-code-braces: AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef) 
+2. See [:material-code-braces: ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef) 
 ## ReplicationJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ReplicationJobTypeDef
+
+def get_value() -> ReplicationJobTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationJobTypeDef(TypedDict):
+    replicationJobId: NotRequired[str],
+    serverId: NotRequired[str],
+    serverType: NotRequired[ServerTypeType],  # (1)
+    vmServer: NotRequired[VmServerTypeDef],  # (2)
+    seedReplicationTime: NotRequired[datetime],
+    frequency: NotRequired[int],
+    runOnce: NotRequired[bool],
+    nextReplicationRunStartTime: NotRequired[datetime],
+    licenseType: NotRequired[LicenseTypeType],  # (3)
+    roleName: NotRequired[str],
+    latestAmiId: NotRequired[str],
+    state: NotRequired[ReplicationJobStateType],  # (4)
+    statusMessage: NotRequired[str],
+    description: NotRequired[str],
+    numberOfRecentAmisToKeep: NotRequired[int],
+    encrypted: NotRequired[bool],
+    kmsKeyId: NotRequired[str],
+    replicationRunList: NotRequired[List[ReplicationRunTypeDef]],  # (5)
+```
 
-- `replicationJobId`: `str`
-- `serverId`: `str`
-- `serverType`: `Literal['VIRTUAL_MACHINE']` (see
-  [ServerTypeType](./literals.md#servertypetype))
-- `vmServer`: [VmServerTypeDef](./type_defs.md#vmservertypedef)
-- `seedReplicationTime`: `datetime`
-- `frequency`: `int`
-- `runOnce`: `bool`
-- `nextReplicationRunStartTime`: `datetime`
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `roleName`: `str`
-- `latestAmiId`: `str`
-- `state`: [ReplicationJobStateType](./literals.md#replicationjobstatetype)
-- `statusMessage`: `str`
-- `description`: `str`
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
-- `replicationRunList`:
-  `List`\[[ReplicationRunTypeDef](./type_defs.md#replicationruntypedef)\]
-
-<a id="replicationrunstagedetailstypedef"></a>
-
+1. See [:material-code-brackets: ServerTypeType](./literals.md#servertypetype) 
+2. See [:material-code-braces: VmServerTypeDef](./type_defs.md#vmservertypedef) 
+3. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
+4. See [:material-code-brackets: ReplicationJobStateType](./literals.md#replicationjobstatetype) 
+5. See [:material-code-braces: ReplicationRunTypeDef](./type_defs.md#replicationruntypedef) 
 ## ReplicationRunStageDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ReplicationRunStageDetailsTypeDef
+
+def get_value() -> ReplicationRunStageDetailsTypeDef:
+    return {
+        "stage": ...,
+    }
 ```
 
-Optional fields:
-
-- `stage`: `str`
-- `stageProgress`: `str`
-
-<a id="replicationruntypedef"></a>
+```python title="Definition"
+class ReplicationRunStageDetailsTypeDef(TypedDict):
+    stage: NotRequired[str],
+    stageProgress: NotRequired[str],
+```
 
 ## ReplicationRunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ReplicationRunTypeDef
+
+def get_value() -> ReplicationRunTypeDef:
+    return {
+        "replicationRunId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationRunTypeDef(TypedDict):
+    replicationRunId: NotRequired[str],
+    state: NotRequired[ReplicationRunStateType],  # (1)
+    type: NotRequired[ReplicationRunTypeType],  # (2)
+    stageDetails: NotRequired[ReplicationRunStageDetailsTypeDef],  # (3)
+    statusMessage: NotRequired[str],
+    amiId: NotRequired[str],
+    scheduledStartTime: NotRequired[datetime],
+    completedTime: NotRequired[datetime],
+    description: NotRequired[str],
+    encrypted: NotRequired[bool],
+    kmsKeyId: NotRequired[str],
+```
 
-- `replicationRunId`: `str`
-- `state`: [ReplicationRunStateType](./literals.md#replicationrunstatetype)
-- `type`: [ReplicationRunTypeType](./literals.md#replicationruntypetype)
-- `stageDetails`:
-  [ReplicationRunStageDetailsTypeDef](./type_defs.md#replicationrunstagedetailstypedef)
-- `statusMessage`: `str`
-- `amiId`: `str`
-- `scheduledStartTime`: `datetime`
-- `completedTime`: `datetime`
-- `description`: `str`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ReplicationRunStateType](./literals.md#replicationrunstatetype) 
+2. See [:material-code-brackets: ReplicationRunTypeType](./literals.md#replicationruntypetype) 
+3. See [:material-code-braces: ReplicationRunStageDetailsTypeDef](./type_defs.md#replicationrunstagedetailstypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `key`: `str`
-
-<a id="ssmoutputtypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    key: NotRequired[str],
+```
 
 ## SSMOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import SSMOutputTypeDef
+
+def get_value() -> SSMOutputTypeDef:
+    return {
+        "s3Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SSMOutputTypeDef(TypedDict):
+    s3Location: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="ssmvalidationparameterstypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## SSMValidationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import SSMValidationParametersTypeDef
+
+def get_value() -> SSMValidationParametersTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SSMValidationParametersTypeDef(TypedDict):
+    source: NotRequired[SourceTypeDef],  # (1)
+    instanceId: NotRequired[str],
+    scriptType: NotRequired[ScriptTypeType],  # (2)
+    command: NotRequired[str],
+    executionTimeoutSeconds: NotRequired[int],
+    outputS3BucketName: NotRequired[str],
+```
 
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `instanceId`: `str`
-- `scriptType`: [ScriptTypeType](./literals.md#scripttypetype)
-- `command`: `str`
-- `executionTimeoutSeconds`: `int`
-- `outputS3BucketName`: `str`
-
-<a id="servergrouplaunchconfigurationtypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-brackets: ScriptTypeType](./literals.md#scripttypetype) 
 ## ServerGroupLaunchConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerGroupLaunchConfigurationTypeDef
+
+def get_value() -> ServerGroupLaunchConfigurationTypeDef:
+    return {
+        "serverGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerGroupLaunchConfigurationTypeDef(TypedDict):
+    serverGroupId: NotRequired[str],
+    launchOrder: NotRequired[int],
+    serverLaunchConfigurations: NotRequired[List[ServerLaunchConfigurationTypeDef]],  # (1)
+```
 
-- `serverGroupId`: `str`
-- `launchOrder`: `int`
-- `serverLaunchConfigurations`:
-  `List`\[[ServerLaunchConfigurationTypeDef](./type_defs.md#serverlaunchconfigurationtypedef)\]
-
-<a id="servergroupreplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ServerLaunchConfigurationTypeDef](./type_defs.md#serverlaunchconfigurationtypedef) 
 ## ServerGroupReplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerGroupReplicationConfigurationTypeDef
+
+def get_value() -> ServerGroupReplicationConfigurationTypeDef:
+    return {
+        "serverGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerGroupReplicationConfigurationTypeDef(TypedDict):
+    serverGroupId: NotRequired[str],
+    serverReplicationConfigurations: NotRequired[List[ServerReplicationConfigurationTypeDef]],  # (1)
+```
 
-- `serverGroupId`: `str`
-- `serverReplicationConfigurations`:
-  `List`\[[ServerReplicationConfigurationTypeDef](./type_defs.md#serverreplicationconfigurationtypedef)\]
-
-<a id="servergrouptypedef"></a>
-
+1. See [:material-code-braces: ServerReplicationConfigurationTypeDef](./type_defs.md#serverreplicationconfigurationtypedef) 
 ## ServerGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerGroupTypeDef
+
+def get_value() -> ServerGroupTypeDef:
+    return {
+        "serverGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerGroupTypeDef(TypedDict):
+    serverGroupId: NotRequired[str],
+    name: NotRequired[str],
+    serverList: NotRequired[Sequence[ServerTypeDef]],  # (1)
+```
 
-- `serverGroupId`: `str`
-- `name`: `str`
-- `serverList`: `Sequence`\[[ServerTypeDef](./type_defs.md#servertypedef)\]
-
-<a id="servergroupvalidationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
 ## ServerGroupValidationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerGroupValidationConfigurationTypeDef
+
+def get_value() -> ServerGroupValidationConfigurationTypeDef:
+    return {
+        "serverGroupId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerGroupValidationConfigurationTypeDef(TypedDict):
+    serverGroupId: NotRequired[str],
+    serverValidationConfigurations: NotRequired[List[ServerValidationConfigurationTypeDef]],  # (1)
+```
 
-- `serverGroupId`: `str`
-- `serverValidationConfigurations`:
-  `List`\[[ServerValidationConfigurationTypeDef](./type_defs.md#servervalidationconfigurationtypedef)\]
-
-<a id="serverlaunchconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ServerValidationConfigurationTypeDef](./type_defs.md#servervalidationconfigurationtypedef) 
 ## ServerLaunchConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerLaunchConfigurationTypeDef
+
+def get_value() -> ServerLaunchConfigurationTypeDef:
+    return {
+        "server": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerLaunchConfigurationTypeDef(TypedDict):
+    server: NotRequired[ServerTypeDef],  # (1)
+    logicalId: NotRequired[str],
+    vpc: NotRequired[str],
+    subnet: NotRequired[str],
+    securityGroup: NotRequired[str],
+    ec2KeyName: NotRequired[str],
+    userData: NotRequired[UserDataTypeDef],  # (2)
+    instanceType: NotRequired[str],
+    associatePublicIpAddress: NotRequired[bool],
+    iamInstanceProfileName: NotRequired[str],
+    configureScript: NotRequired[S3LocationTypeDef],  # (3)
+    configureScriptType: NotRequired[ScriptTypeType],  # (4)
+```
 
-- `server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `logicalId`: `str`
-- `vpc`: `str`
-- `subnet`: `str`
-- `securityGroup`: `str`
-- `ec2KeyName`: `str`
-- `userData`: [UserDataTypeDef](./type_defs.md#userdatatypedef)
-- `instanceType`: `str`
-- `associatePublicIpAddress`: `bool`
-- `iamInstanceProfileName`: `str`
-- `configureScript`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `configureScriptType`: [ScriptTypeType](./literals.md#scripttypetype)
-
-<a id="serverreplicationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: UserDataTypeDef](./type_defs.md#userdatatypedef) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+4. See [:material-code-brackets: ScriptTypeType](./literals.md#scripttypetype) 
 ## ServerReplicationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerReplicationConfigurationTypeDef
+
+def get_value() -> ServerReplicationConfigurationTypeDef:
+    return {
+        "server": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerReplicationConfigurationTypeDef(TypedDict):
+    server: NotRequired[ServerTypeDef],  # (1)
+    serverReplicationParameters: NotRequired[ServerReplicationParametersTypeDef],  # (2)
+```
 
-- `server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `serverReplicationParameters`:
-  [ServerReplicationParametersTypeDef](./type_defs.md#serverreplicationparameterstypedef)
-
-<a id="serverreplicationparameterstypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-braces: ServerReplicationParametersTypeDef](./type_defs.md#serverreplicationparameterstypedef) 
 ## ServerReplicationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerReplicationParametersTypeDef
+
+def get_value() -> ServerReplicationParametersTypeDef:
+    return {
+        "seedTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerReplicationParametersTypeDef(TypedDict):
+    seedTime: NotRequired[datetime],
+    frequency: NotRequired[int],
+    runOnce: NotRequired[bool],
+    licenseType: NotRequired[LicenseTypeType],  # (1)
+    numberOfRecentAmisToKeep: NotRequired[int],
+    encrypted: NotRequired[bool],
+    kmsKeyId: NotRequired[str],
+```
 
-- `seedTime`: `datetime`
-- `frequency`: `int`
-- `runOnce`: `bool`
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
-
-<a id="servertypedef"></a>
-
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
 ## ServerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerTypeDef
+
+def get_value() -> ServerTypeDef:
+    return {
+        "serverId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerTypeDef(TypedDict):
+    serverId: NotRequired[str],
+    serverType: NotRequired[ServerTypeType],  # (1)
+    vmServer: NotRequired[VmServerTypeDef],  # (2)
+    replicationJobId: NotRequired[str],
+    replicationJobTerminated: NotRequired[bool],
+```
 
-- `serverId`: `str`
-- `serverType`: `Literal['VIRTUAL_MACHINE']` (see
-  [ServerTypeType](./literals.md#servertypetype))
-- `vmServer`: [VmServerTypeDef](./type_defs.md#vmservertypedef)
-- `replicationJobId`: `str`
-- `replicationJobTerminated`: `bool`
-
-<a id="servervalidationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ServerTypeType](./literals.md#servertypetype) 
+2. See [:material-code-braces: VmServerTypeDef](./type_defs.md#vmservertypedef) 
 ## ServerValidationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerValidationConfigurationTypeDef
+
+def get_value() -> ServerValidationConfigurationTypeDef:
+    return {
+        "server": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerValidationConfigurationTypeDef(TypedDict):
+    server: NotRequired[ServerTypeDef],  # (1)
+    validationId: NotRequired[str],
+    name: NotRequired[str],
+    serverValidationStrategy: NotRequired[ServerValidationStrategyType],  # (2)
+    userDataValidationParameters: NotRequired[UserDataValidationParametersTypeDef],  # (3)
+```
 
-- `server`: [ServerTypeDef](./type_defs.md#servertypedef)
-- `validationId`: `str`
-- `name`: `str`
-- `serverValidationStrategy`: `Literal['USERDATA']` (see
-  [ServerValidationStrategyType](./literals.md#servervalidationstrategytype))
-- `userDataValidationParameters`:
-  [UserDataValidationParametersTypeDef](./type_defs.md#userdatavalidationparameterstypedef)
-
-<a id="servervalidationoutputtypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
+2. See [:material-code-brackets: ServerValidationStrategyType](./literals.md#servervalidationstrategytype) 
+3. See [:material-code-braces: UserDataValidationParametersTypeDef](./type_defs.md#userdatavalidationparameterstypedef) 
 ## ServerValidationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ServerValidationOutputTypeDef
+
+def get_value() -> ServerValidationOutputTypeDef:
+    return {
+        "server": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServerValidationOutputTypeDef(TypedDict):
+    server: NotRequired[ServerTypeDef],  # (1)
+```
 
-- `server`: [ServerTypeDef](./type_defs.md#servertypedef)
-
-<a id="sourcetypedef"></a>
-
+1. See [:material-code-braces: ServerTypeDef](./type_defs.md#servertypedef) 
 ## SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "s3Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    s3Location: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="startappreplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## StartAppReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import StartAppReplicationRequestRequestTypeDef
+
+def get_value() -> StartAppReplicationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="startondemandappreplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class StartAppReplicationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## StartOnDemandAppReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import StartOnDemandAppReplicationRequestRequestTypeDef
+
+def get_value() -> StartOnDemandAppReplicationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="startondemandreplicationrunrequestrequesttypedef"></a>
+```python title="Definition"
+class StartOnDemandAppReplicationRequestRequestTypeDef(TypedDict):
+    appId: str,
+    description: NotRequired[str],
+```
 
 ## StartOnDemandReplicationRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunRequestRequestTypeDef
+
+def get_value() -> StartOnDemandReplicationRunRequestRequestTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Required fields:
-
-- `replicationJobId`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="startondemandreplicationrunresponsetypedef"></a>
+```python title="Definition"
+class StartOnDemandReplicationRunRequestRequestTypeDef(TypedDict):
+    replicationJobId: str,
+    description: NotRequired[str],
+```
 
 ## StartOnDemandReplicationRunResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import StartOnDemandReplicationRunResponseTypeDef
+
+def get_value() -> StartOnDemandReplicationRunResponseTypeDef:
+    return {
+        "replicationRunId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartOnDemandReplicationRunResponseTypeDef(TypedDict):
+    replicationRunId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `replicationRunId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopappreplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopAppReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import StopAppReplicationRequestRequestTypeDef
+
+def get_value() -> StopAppReplicationRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class StopAppReplicationRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="terminateapprequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TerminateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import TerminateAppRequestRequestTypeDef
+
+def get_value() -> TerminateAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
-
-- `appId`: `str`
-
-<a id="updateapprequestrequesttypedef"></a>
+```python title="Definition"
+class TerminateAppRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+```
 
 ## UpdateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import UpdateAppRequestRequestTypeDef
+
+def get_value() -> UpdateAppRequestRequestTypeDef:
+    return {
+        "appId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAppRequestRequestTypeDef(TypedDict):
+    appId: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    roleName: NotRequired[str],
+    serverGroups: NotRequired[Sequence[ServerGroupTypeDef]],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `appId`: `str`
-- `name`: `str`
-- `description`: `str`
-- `roleName`: `str`
-- `serverGroups`:
-  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="updateappresponsetypedef"></a>
-
+1. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import UpdateAppResponseTypeDef
+
+def get_value() -> UpdateAppResponseTypeDef:
+    return {
+        "appSummary": ...,
+        "serverGroups": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAppResponseTypeDef(TypedDict):
+    appSummary: AppSummaryTypeDef,  # (1)
+    serverGroups: List[ServerGroupTypeDef],  # (2)
+    tags: List[TagTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `appSummary`: [AppSummaryTypeDef](./type_defs.md#appsummarytypedef)
-- `serverGroups`:
-  `List`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatereplicationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppSummaryTypeDef](./type_defs.md#appsummarytypedef) 
+2. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateReplicationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import UpdateReplicationJobRequestRequestTypeDef
+
+def get_value() -> UpdateReplicationJobRequestRequestTypeDef:
+    return {
+        "replicationJobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReplicationJobRequestRequestTypeDef(TypedDict):
+    replicationJobId: str,
+    frequency: NotRequired[int],
+    nextReplicationRunStartTime: NotRequired[Union[datetime, str]],
+    licenseType: NotRequired[LicenseTypeType],  # (1)
+    roleName: NotRequired[str],
+    description: NotRequired[str],
+    numberOfRecentAmisToKeep: NotRequired[int],
+    encrypted: NotRequired[bool],
+    kmsKeyId: NotRequired[str],
+```
 
-- `replicationJobId`: `str`
-
-Optional fields:
-
-- `frequency`: `int`
-- `nextReplicationRunStartTime`: `Union`\[`datetime`, `str`\]
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `roleName`: `str`
-- `description`: `str`
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
-
-<a id="userdatatypedef"></a>
-
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
 ## UserDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import UserDataTypeDef
+
+def get_value() -> UserDataTypeDef:
+    return {
+        "s3Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDataTypeDef(TypedDict):
+    s3Location: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="userdatavalidationparameterstypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## UserDataValidationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import UserDataValidationParametersTypeDef
+
+def get_value() -> UserDataValidationParametersTypeDef:
+    return {
+        "source": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDataValidationParametersTypeDef(TypedDict):
+    source: NotRequired[SourceTypeDef],  # (1)
+    scriptType: NotRequired[ScriptTypeType],  # (2)
+```
 
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-- `scriptType`: [ScriptTypeType](./literals.md#scripttypetype)
-
-<a id="validationoutputtypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-brackets: ScriptTypeType](./literals.md#scripttypetype) 
 ## ValidationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import ValidationOutputTypeDef
+
+def get_value() -> ValidationOutputTypeDef:
+    return {
+        "validationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValidationOutputTypeDef(TypedDict):
+    validationId: NotRequired[str],
+    name: NotRequired[str],
+    status: NotRequired[ValidationStatusType],  # (1)
+    statusMessage: NotRequired[str],
+    latestValidationTime: NotRequired[datetime],
+    appValidationOutput: NotRequired[AppValidationOutputTypeDef],  # (2)
+    serverValidationOutput: NotRequired[ServerValidationOutputTypeDef],  # (3)
+```
 
-- `validationId`: `str`
-- `name`: `str`
-- `status`: [ValidationStatusType](./literals.md#validationstatustype)
-- `statusMessage`: `str`
-- `latestValidationTime`: `datetime`
-- `appValidationOutput`:
-  [AppValidationOutputTypeDef](./type_defs.md#appvalidationoutputtypedef)
-- `serverValidationOutput`:
-  [ServerValidationOutputTypeDef](./type_defs.md#servervalidationoutputtypedef)
-
-<a id="vmserveraddresstypedef"></a>
-
+1. See [:material-code-brackets: ValidationStatusType](./literals.md#validationstatustype) 
+2. See [:material-code-braces: AppValidationOutputTypeDef](./type_defs.md#appvalidationoutputtypedef) 
+3. See [:material-code-braces: ServerValidationOutputTypeDef](./type_defs.md#servervalidationoutputtypedef) 
 ## VmServerAddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import VmServerAddressTypeDef
+
+def get_value() -> VmServerAddressTypeDef:
+    return {
+        "vmManagerId": ...,
+    }
 ```
 
-Optional fields:
-
-- `vmManagerId`: `str`
-- `vmId`: `str`
-
-<a id="vmservertypedef"></a>
+```python title="Definition"
+class VmServerAddressTypeDef(TypedDict):
+    vmManagerId: NotRequired[str],
+    vmId: NotRequired[str],
+```
 
 ## VmServerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sms.type_defs import VmServerTypeDef
+
+def get_value() -> VmServerTypeDef:
+    return {
+        "vmServerAddress": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VmServerTypeDef(TypedDict):
+    vmServerAddress: NotRequired[VmServerAddressTypeDef],  # (1)
+    vmName: NotRequired[str],
+    vmManagerName: NotRequired[str],
+    vmManagerType: NotRequired[VmManagerTypeType],  # (2)
+    vmPath: NotRequired[str],
+```
 
-- `vmServerAddress`:
-  [VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)
-- `vmName`: `str`
-- `vmManagerName`: `str`
-- `vmManagerType`: [VmManagerTypeType](./literals.md#vmmanagertypetype)
-- `vmPath`: `str`
+1. See [:material-code-braces: VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef) 
+2. See [:material-code-brackets: VmManagerTypeType](./literals.md#vmmanagertypetype) 

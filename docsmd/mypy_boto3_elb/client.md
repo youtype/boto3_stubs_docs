@@ -1,63 +1,18 @@
-<a id="elasticloadbalancingclient-for-boto3-elasticloadbalancing-module"></a>
+# ElasticLoadBalancingClient
 
-# ElasticLoadBalancingClient for boto3 ElasticLoadBalancing module
+> [Index](../README.md) > [ElasticLoadBalancing](./README.md) > ElasticLoadBalancingClient
 
-> [Index](../README.md) > [ElasticLoadBalancing](./README.md) >
-> ElasticLoadBalancingClient
+!!! note ""
 
-Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module
-[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
-
-- [ElasticLoadBalancingClient for boto3 ElasticLoadBalancing module](#elasticloadbalancingclient-for-boto3-elasticloadbalancing-module)
-  - [ElasticLoadBalancingClient](#elasticloadbalancingclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags](#add_tags)
-    - [apply_security_groups_to_load_balancer](#apply_security_groups_to_load_balancer)
-    - [attach_load_balancer_to_subnets](#attach_load_balancer_to_subnets)
-    - [can_paginate](#can_paginate)
-    - [configure_health_check](#configure_health_check)
-    - [create_app_cookie_stickiness_policy](#create_app_cookie_stickiness_policy)
-    - [create_lb_cookie_stickiness_policy](#create_lb_cookie_stickiness_policy)
-    - [create_load_balancer](#create_load_balancer)
-    - [create_load_balancer_listeners](#create_load_balancer_listeners)
-    - [create_load_balancer_policy](#create_load_balancer_policy)
-    - [delete_load_balancer](#delete_load_balancer)
-    - [delete_load_balancer_listeners](#delete_load_balancer_listeners)
-    - [delete_load_balancer_policy](#delete_load_balancer_policy)
-    - [deregister_instances_from_load_balancer](#deregister_instances_from_load_balancer)
-    - [describe_account_limits](#describe_account_limits)
-    - [describe_instance_health](#describe_instance_health)
-    - [describe_load_balancer_attributes](#describe_load_balancer_attributes)
-    - [describe_load_balancer_policies](#describe_load_balancer_policies)
-    - [describe_load_balancer_policy_types](#describe_load_balancer_policy_types)
-    - [describe_load_balancers](#describe_load_balancers)
-    - [describe_tags](#describe_tags)
-    - [detach_load_balancer_from_subnets](#detach_load_balancer_from_subnets)
-    - [disable_availability_zones_for_load_balancer](#disable_availability_zones_for_load_balancer)
-    - [enable_availability_zones_for_load_balancer](#enable_availability_zones_for_load_balancer)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [modify_load_balancer_attributes](#modify_load_balancer_attributes)
-    - [register_instances_with_load_balancer](#register_instances_with_load_balancer)
-    - [remove_tags](#remove_tags)
-    - [set_load_balancer_listener_ssl_certificate](#set_load_balancer_listener_ssl_certificate)
-    - [set_load_balancer_policies_for_backend_server](#set_load_balancer_policies_for_backend_server)
-    - [set_load_balancer_policies_of_listener](#set_load_balancer_policies_of_listener)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="elasticloadbalancingclient"></a>
+    Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+    type annotations stubs module [mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 ## ElasticLoadBalancingClient
 
-Type annotations for `boto3.client("elb")`
+Type annotations and code completion for `#!python boto3.client("elb")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_elb.client import ElasticLoadBalancingClient
 
@@ -65,797 +20,1025 @@ def get_elb_client() -> ElasticLoadBalancingClient:
     return Session().client("elb")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("elb").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("elb")
+
+try:
+    do_something(client)
+except (
+    client.AccessPointNotFoundException,
+    client.CertificateNotFoundException,
+    client.ClientError,
+    client.DependencyThrottleException,
+    client.DuplicateAccessPointNameException,
+    client.DuplicateListenerException,
+    client.DuplicatePolicyNameException,
+    client.DuplicateTagKeysException,
+    client.InvalidConfigurationRequestException,
+    client.InvalidEndPointException,
+    client.InvalidSchemeException,
+    client.InvalidSecurityGroupException,
+    client.InvalidSubnetException,
+    client.ListenerNotFoundException,
+    client.LoadBalancerAttributeNotFoundException,
+    client.OperationNotPermittedException,
+    client.PolicyNotFoundException,
+    client.PolicyTypeNotFoundException,
+    client.SubnetNotFoundException,
+    client.TooManyAccessPointsException,
+    client.TooManyPoliciesException,
+    client.TooManyTagsException,
+    client.UnsupportedProtocolException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_elb.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessPointNotFoundException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessPointNotFoundException`
-- `Exceptions.CertificateNotFoundException`
-- `Exceptions.ClientError`
-- `Exceptions.DependencyThrottleException`
-- `Exceptions.DuplicateAccessPointNameException`
-- `Exceptions.DuplicateListenerException`
-- `Exceptions.DuplicatePolicyNameException`
-- `Exceptions.DuplicateTagKeysException`
-- `Exceptions.InvalidConfigurationRequestException`
-- `Exceptions.InvalidEndPointException`
-- `Exceptions.InvalidSchemeException`
-- `Exceptions.InvalidSecurityGroupException`
-- `Exceptions.InvalidSubnetException`
-- `Exceptions.ListenerNotFoundException`
-- `Exceptions.LoadBalancerAttributeNotFoundException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.PolicyNotFoundException`
-- `Exceptions.PolicyTypeNotFoundException`
-- `Exceptions.SubnetNotFoundException`
-- `Exceptions.TooManyAccessPointsException`
-- `Exceptions.TooManyPoliciesException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnsupportedProtocolException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticLoadBalancingClient exceptions.
-
-Type annotations for `boto3.client("elb").exceptions` method.
-
-Boto3 documentation:
-[ElasticLoadBalancing.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags"></a>
-
-### add_tags
+### add\_tags
 
 Adds the specified tags to the specified load balancer.
 
-Type annotations for `boto3.client("elb").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("elb").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    LoadBalancerNames: Sequence[str],
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsInputRequestTypeDef = {  # (1)
+    "LoadBalancerNames": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags(**kwargs)
+```
 
-<a id="apply\_security\_groups\_to\_load\_balancer"></a>
+1. See [:material-code-braces: AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef) 
 
-### apply_security_groups_to_load_balancer
+### apply\_security\_groups\_to\_load\_balancer
 
 Associates one or more security groups with your load balancer in a virtual
 private cloud (VPC).
 
-Type annotations for
-`boto3.client("elb").apply_security_groups_to_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").apply_security_groups_to_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.apply_security_groups_to_load_balancer)
+```python title="Method definition"
+def apply_security_groups_to_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    SecurityGroups: Sequence[str],
+) -> ApplySecurityGroupsToLoadBalancerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ApplySecurityGroupsToLoadBalancerInputRequestTypeDef](./type_defs.md#applysecuritygroupstoloadbalancerinputrequesttypedef).
+1. See [:material-code-braces: ApplySecurityGroupsToLoadBalancerOutputTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `SecurityGroups`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ApplySecurityGroupsToLoadBalancerInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "SecurityGroups": ...,
+}
 
-Returns
-[ApplySecurityGroupsToLoadBalancerOutputTypeDef](./type_defs.md#applysecuritygroupstoloadbalanceroutputtypedef).
+parent.apply_security_groups_to_load_balancer(**kwargs)
+```
 
-<a id="attach\_load\_balancer\_to\_subnets"></a>
+1. See [:material-code-braces: ApplySecurityGroupsToLoadBalancerInputRequestTypeDef](./type_defs.md#applysecuritygroupstoloadbalancerinputrequesttypedef) 
 
-### attach_load_balancer_to_subnets
+### attach\_load\_balancer\_to\_subnets
 
-Adds one or more subnets to the set of configured subnets for the specified
-load balancer.
+Adds one or more subnets to the set of configured subnets for the specified load
+balancer.
 
-Type annotations for `boto3.client("elb").attach_load_balancer_to_subnets`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").attach_load_balancer_to_subnets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.attach_load_balancer_to_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.attach_load_balancer_to_subnets)
+```python title="Method definition"
+def attach_load_balancer_to_subnets(
+    self,
+    *,
+    LoadBalancerName: str,
+    Subnets: Sequence[str],
+) -> AttachLoadBalancerToSubnetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AttachLoadBalancerToSubnetsInputRequestTypeDef](./type_defs.md#attachloadbalancertosubnetsinputrequesttypedef).
+1. See [:material-code-braces: AttachLoadBalancerToSubnetsOutputTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Subnets`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachLoadBalancerToSubnetsInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Subnets": ...,
+}
 
-Returns
-[AttachLoadBalancerToSubnetsOutputTypeDef](./type_defs.md#attachloadbalancertosubnetsoutputtypedef).
+parent.attach_load_balancer_to_subnets(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AttachLoadBalancerToSubnetsInputRequestTypeDef](./type_defs.md#attachloadbalancertosubnetsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("elb").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("elb").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="configure\_health\_check"></a>
-
-### configure_health_check
+### configure\_health\_check
 
 Specifies the health check settings to use when evaluating the health state of
 your EC2 instances.
 
-Type annotations for `boto3.client("elb").configure_health_check` method.
+Type annotations and code completion for `#!python boto3.client("elb").configure_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.configure_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.configure_health_check)
+```python title="Method definition"
+def configure_health_check(
+    self,
+    *,
+    LoadBalancerName: str,
+    HealthCheck: HealthCheckTypeDef,  # (1)
+) -> ConfigureHealthCheckOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ConfigureHealthCheckInputRequestTypeDef](./type_defs.md#configurehealthcheckinputrequesttypedef).
+1. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+2. See [:material-code-braces: ConfigureHealthCheckOutputTypeDef](./type_defs.md#configurehealthcheckoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ConfigureHealthCheckInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "HealthCheck": ...,
+}
 
-Returns
-[ConfigureHealthCheckOutputTypeDef](./type_defs.md#configurehealthcheckoutputtypedef).
+parent.configure_health_check(**kwargs)
+```
 
-<a id="create\_app\_cookie\_stickiness\_policy"></a>
+1. See [:material-code-braces: ConfigureHealthCheckInputRequestTypeDef](./type_defs.md#configurehealthcheckinputrequesttypedef) 
 
-### create_app_cookie_stickiness_policy
+### create\_app\_cookie\_stickiness\_policy
 
 Generates a stickiness policy with sticky session lifetimes that follow that of
 an application-generated cookie.
 
-Type annotations for `boto3.client("elb").create_app_cookie_stickiness_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").create_app_cookie_stickiness_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_app_cookie_stickiness_policy)
+```python title="Method definition"
+def create_app_cookie_stickiness_policy(
+    self,
+    *,
+    LoadBalancerName: str,
+    PolicyName: str,
+    CookieName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateAppCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createappcookiestickinesspolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `CookieName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAppCookieStickinessPolicyInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "PolicyName": ...,
+    "CookieName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_app_cookie_stickiness_policy(**kwargs)
+```
 
-<a id="create\_lb\_cookie\_stickiness\_policy"></a>
+1. See [:material-code-braces: CreateAppCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createappcookiestickinesspolicyinputrequesttypedef) 
 
-### create_lb_cookie_stickiness_policy
+### create\_lb\_cookie\_stickiness\_policy
 
 Generates a stickiness policy with sticky session lifetimes controlled by the
 lifetime of the browser (user-agent) or a specified expiration period.
 
-Type annotations for `boto3.client("elb").create_lb_cookie_stickiness_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").create_lb_cookie_stickiness_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_lb_cookie_stickiness_policy)
+```python title="Method definition"
+def create_lb_cookie_stickiness_policy(
+    self,
+    *,
+    LoadBalancerName: str,
+    PolicyName: str,
+    CookieExpirationPeriod: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLBCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createlbcookiestickinesspolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `CookieExpirationPeriod`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateLBCookieStickinessPolicyInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "PolicyName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_lb_cookie_stickiness_policy(**kwargs)
+```
 
-<a id="create\_load\_balancer"></a>
+1. See [:material-code-braces: CreateLBCookieStickinessPolicyInputRequestTypeDef](./type_defs.md#createlbcookiestickinesspolicyinputrequesttypedef) 
 
-### create_load_balancer
+### create\_load\_balancer
 
 Creates a Classic Load Balancer.
 
-Type annotations for `boto3.client("elb").create_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").create_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.create_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer)
+```python title="Method definition"
+def create_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    Listeners: Sequence[ListenerTypeDef],  # (1)
+    AvailabilityZones: Sequence[str] = ...,
+    Subnets: Sequence[str] = ...,
+    SecurityGroups: Sequence[str] = ...,
+    Scheme: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAccessPointOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAccessPointInputRequestTypeDef](./type_defs.md#createaccesspointinputrequesttypedef).
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAccessPointOutputTypeDef](./type_defs.md#createaccesspointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
-  *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `Subnets`: `Sequence`\[`str`\]
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `Scheme`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAccessPointInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Listeners": ...,
+}
 
-Returns
-[CreateAccessPointOutputTypeDef](./type_defs.md#createaccesspointoutputtypedef).
+parent.create_load_balancer(**kwargs)
+```
 
-<a id="create\_load\_balancer\_listeners"></a>
+1. See [:material-code-braces: CreateAccessPointInputRequestTypeDef](./type_defs.md#createaccesspointinputrequesttypedef) 
 
-### create_load_balancer_listeners
+### create\_load\_balancer\_listeners
 
 Creates one or more listeners for the specified load balancer.
 
-Type annotations for `boto3.client("elb").create_load_balancer_listeners`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").create_load_balancer_listeners` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.create_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_listeners)
+```python title="Method definition"
+def create_load_balancer_listeners(
+    self,
+    *,
+    LoadBalancerName: str,
+    Listeners: Sequence[ListenerTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLoadBalancerListenerInputRequestTypeDef](./type_defs.md#createloadbalancerlistenerinputrequesttypedef).
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLoadBalancerListenerInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Listeners": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_load_balancer_listeners(**kwargs)
+```
 
-<a id="create\_load\_balancer\_policy"></a>
+1. See [:material-code-braces: CreateLoadBalancerListenerInputRequestTypeDef](./type_defs.md#createloadbalancerlistenerinputrequesttypedef) 
 
-### create_load_balancer_policy
+### create\_load\_balancer\_policy
 
 Creates a policy with the specified attributes for the specified load balancer.
 
-Type annotations for `boto3.client("elb").create_load_balancer_policy` method.
+Type annotations and code completion for `#!python boto3.client("elb").create_load_balancer_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.create_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.create_load_balancer_policy)
+```python title="Method definition"
+def create_load_balancer_policy(
+    self,
+    *,
+    LoadBalancerName: str,
+    PolicyName: str,
+    PolicyTypeName: str,
+    PolicyAttributes: Sequence[PolicyAttributeTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#createloadbalancerpolicyinputrequesttypedef).
+1. See [:material-code-braces: PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `PolicyTypeName`: `str` *(required)*
-- `PolicyAttributes`:
-  `Sequence`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLoadBalancerPolicyInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "PolicyName": ...,
+    "PolicyTypeName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_load_balancer_policy(**kwargs)
+```
 
-<a id="delete\_load\_balancer"></a>
+1. See [:material-code-braces: CreateLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#createloadbalancerpolicyinputrequesttypedef) 
 
-### delete_load_balancer
+### delete\_load\_balancer
 
 Deletes the specified load balancer.
 
-Type annotations for `boto3.client("elb").delete_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").delete_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.delete_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer)
+```python title="Method definition"
+def delete_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessPointInputRequestTypeDef](./type_defs.md#deleteaccesspointinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessPointInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_load_balancer(**kwargs)
+```
 
-<a id="delete\_load\_balancer\_listeners"></a>
+1. See [:material-code-braces: DeleteAccessPointInputRequestTypeDef](./type_defs.md#deleteaccesspointinputrequesttypedef) 
 
-### delete_load_balancer_listeners
+### delete\_load\_balancer\_listeners
 
 Deletes the specified listeners from the specified load balancer.
 
-Type annotations for `boto3.client("elb").delete_load_balancer_listeners`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").delete_load_balancer_listeners` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.delete_load_balancer_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_listeners)
+```python title="Method definition"
+def delete_load_balancer_listeners(
+    self,
+    *,
+    LoadBalancerName: str,
+    LoadBalancerPorts: Sequence[int],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoadBalancerListenerInputRequestTypeDef](./type_defs.md#deleteloadbalancerlistenerinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `LoadBalancerPorts`: `Sequence`\[`int`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoadBalancerListenerInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "LoadBalancerPorts": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_load_balancer_listeners(**kwargs)
+```
 
-<a id="delete\_load\_balancer\_policy"></a>
+1. See [:material-code-braces: DeleteLoadBalancerListenerInputRequestTypeDef](./type_defs.md#deleteloadbalancerlistenerinputrequesttypedef) 
 
-### delete_load_balancer_policy
+### delete\_load\_balancer\_policy
 
 Deletes the specified policy from the specified load balancer.
 
-Type annotations for `boto3.client("elb").delete_load_balancer_policy` method.
+Type annotations and code completion for `#!python boto3.client("elb").delete_load_balancer_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.delete_load_balancer_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.delete_load_balancer_policy)
+```python title="Method definition"
+def delete_load_balancer_policy(
+    self,
+    *,
+    LoadBalancerName: str,
+    PolicyName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#deleteloadbalancerpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoadBalancerPolicyInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "PolicyName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_load_balancer_policy(**kwargs)
+```
 
-<a id="deregister\_instances\_from\_load\_balancer"></a>
+1. See [:material-code-braces: DeleteLoadBalancerPolicyInputRequestTypeDef](./type_defs.md#deleteloadbalancerpolicyinputrequesttypedef) 
 
-### deregister_instances_from_load_balancer
+### deregister\_instances\_from\_load\_balancer
 
 Deregisters the specified instances from the specified load balancer.
 
-Type annotations for
-`boto3.client("elb").deregister_instances_from_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").deregister_instances_from_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.deregister_instances_from_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.deregister_instances_from_load_balancer)
+```python title="Method definition"
+def deregister_instances_from_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef],  # (1)
+) -> DeregisterEndPointsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterEndPointsInputRequestTypeDef](./type_defs.md#deregisterendpointsinputrequesttypedef).
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: DeregisterEndPointsOutputTypeDef](./type_defs.md#deregisterendpointsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterEndPointsInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Instances": ...,
+}
 
-Returns
-[DeregisterEndPointsOutputTypeDef](./type_defs.md#deregisterendpointsoutputtypedef).
+parent.deregister_instances_from_load_balancer(**kwargs)
+```
 
-<a id="describe\_account\_limits"></a>
+1. See [:material-code-braces: DeregisterEndPointsInputRequestTypeDef](./type_defs.md#deregisterendpointsinputrequesttypedef) 
 
-### describe_account_limits
+### describe\_account\_limits
 
 Describes the current Elastic Load Balancing resource limits for your AWS
 account.
 
-Type annotations for `boto3.client("elb").describe_account_limits` method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_account_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_account_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_account_limits)
+```python title="Method definition"
+def describe_account_limits(
+    self,
+    *,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeAccountLimitsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef).
+1. See [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountLimitsInputRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
+parent.describe_account_limits(**kwargs)
+```
 
-<a id="describe\_instance\_health"></a>
+1. See [:material-code-braces: DescribeAccountLimitsInputRequestTypeDef](./type_defs.md#describeaccountlimitsinputrequesttypedef) 
 
-### describe_instance_health
+### describe\_instance\_health
 
 Describes the state of the specified instances with respect to the specified
 load balancer.
 
-Type annotations for `boto3.client("elb").describe_instance_health` method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_instance_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_instance_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_instance_health)
+```python title="Method definition"
+def describe_instance_health(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef] = ...,  # (1)
+) -> DescribeEndPointStateOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndPointStateInputRequestTypeDef](./type_defs.md#describeendpointstateinputrequesttypedef).
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: DescribeEndPointStateOutputTypeDef](./type_defs.md#describeendpointstateoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEndPointStateInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
 
-Returns
-[DescribeEndPointStateOutputTypeDef](./type_defs.md#describeendpointstateoutputtypedef).
+parent.describe_instance_health(**kwargs)
+```
 
-<a id="describe\_load\_balancer\_attributes"></a>
+1. See [:material-code-braces: DescribeEndPointStateInputRequestTypeDef](./type_defs.md#describeendpointstateinputrequesttypedef) 
 
-### describe_load_balancer_attributes
+### describe\_load\_balancer\_attributes
 
 Describes the attributes for the specified load balancer.
 
-Type annotations for `boto3.client("elb").describe_load_balancer_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_load_balancer_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_attributes)
+```python title="Method definition"
+def describe_load_balancer_attributes(
+    self,
+    *,
+    LoadBalancerName: str,
+) -> DescribeLoadBalancerAttributesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancerAttributesInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
 
-Returns
-[DescribeLoadBalancerAttributesOutputTypeDef](./type_defs.md#describeloadbalancerattributesoutputtypedef).
+parent.describe_load_balancer_attributes(**kwargs)
+```
 
-<a id="describe\_load\_balancer\_policies"></a>
+1. See [:material-code-braces: DescribeLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#describeloadbalancerattributesinputrequesttypedef) 
 
-### describe_load_balancer_policies
+### describe\_load\_balancer\_policies
 
 Describes the specified policies.
 
-Type annotations for `boto3.client("elb").describe_load_balancer_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_load_balancer_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_load_balancer_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policies)
+```python title="Method definition"
+def describe_load_balancer_policies(
+    self,
+    *,
+    LoadBalancerName: str = ...,
+    PolicyNames: Sequence[str] = ...,
+) -> DescribeLoadBalancerPoliciesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancerPoliciesInputRequestTypeDef](./type_defs.md#describeloadbalancerpoliciesinputrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancerPoliciesOutputTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str`
-- `PolicyNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancerPoliciesInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
 
-Returns
-[DescribeLoadBalancerPoliciesOutputTypeDef](./type_defs.md#describeloadbalancerpoliciesoutputtypedef).
+parent.describe_load_balancer_policies(**kwargs)
+```
 
-<a id="describe\_load\_balancer\_policy\_types"></a>
+1. See [:material-code-braces: DescribeLoadBalancerPoliciesInputRequestTypeDef](./type_defs.md#describeloadbalancerpoliciesinputrequesttypedef) 
 
-### describe_load_balancer_policy_types
+### describe\_load\_balancer\_policy\_types
 
 Describes the specified load balancer policy types or all load balancer policy
 types.
 
-Type annotations for `boto3.client("elb").describe_load_balancer_policy_types`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_load_balancer_policy_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_load_balancer_policy_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancer_policy_types)
+```python title="Method definition"
+def describe_load_balancer_policy_types(
+    self,
+    *,
+    PolicyTypeNames: Sequence[str] = ...,
+) -> DescribeLoadBalancerPolicyTypesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLoadBalancerPolicyTypesInputRequestTypeDef](./type_defs.md#describeloadbalancerpolicytypesinputrequesttypedef).
+1. See [:material-code-braces: DescribeLoadBalancerPolicyTypesOutputTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PolicyTypeNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancerPolicyTypesInputRequestTypeDef = {  # (1)
+    "PolicyTypeNames": ...,
+}
 
-Returns
-[DescribeLoadBalancerPolicyTypesOutputTypeDef](./type_defs.md#describeloadbalancerpolicytypesoutputtypedef).
+parent.describe_load_balancer_policy_types(**kwargs)
+```
 
-<a id="describe\_load\_balancers"></a>
+1. See [:material-code-braces: DescribeLoadBalancerPolicyTypesInputRequestTypeDef](./type_defs.md#describeloadbalancerpolicytypesinputrequesttypedef) 
 
-### describe_load_balancers
+### describe\_load\_balancers
 
 Describes the specified the load balancers.
 
-Type annotations for `boto3.client("elb").describe_load_balancers` method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_load_balancers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_load_balancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_load_balancers)
+```python title="Method definition"
+def describe_load_balancers(
+    self,
+    *,
+    LoadBalancerNames: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+) -> DescribeAccessPointsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAccessPointsInputRequestTypeDef](./type_defs.md#describeaccesspointsinputrequesttypedef).
+1. See [:material-code-braces: DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerNames`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeAccessPointsInputRequestTypeDef = {  # (1)
+    "LoadBalancerNames": ...,
+}
 
-Returns
-[DescribeAccessPointsOutputTypeDef](./type_defs.md#describeaccesspointsoutputtypedef).
+parent.describe_load_balancers(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeAccessPointsInputRequestTypeDef](./type_defs.md#describeaccesspointsinputrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Describes the tags associated with the specified load balancers.
 
-Type annotations for `boto3.client("elb").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("elb").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    LoadBalancerNames: Sequence[str],
+) -> DescribeTagsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef).
+1. See [:material-code-braces: DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsInputRequestTypeDef = {  # (1)
+    "LoadBalancerNames": ...,
+}
 
-Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="detach\_load\_balancer\_from\_subnets"></a>
+1. See [:material-code-braces: DescribeTagsInputRequestTypeDef](./type_defs.md#describetagsinputrequesttypedef) 
 
-### detach_load_balancer_from_subnets
+### detach\_load\_balancer\_from\_subnets
 
 Removes the specified subnets from the set of configured subnets for the load
 balancer.
 
-Type annotations for `boto3.client("elb").detach_load_balancer_from_subnets`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").detach_load_balancer_from_subnets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.detach_load_balancer_from_subnets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.detach_load_balancer_from_subnets)
+```python title="Method definition"
+def detach_load_balancer_from_subnets(
+    self,
+    *,
+    LoadBalancerName: str,
+    Subnets: Sequence[str],
+) -> DetachLoadBalancerFromSubnetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetachLoadBalancerFromSubnetsInputRequestTypeDef](./type_defs.md#detachloadbalancerfromsubnetsinputrequesttypedef).
+1. See [:material-code-braces: DetachLoadBalancerFromSubnetsOutputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Subnets`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachLoadBalancerFromSubnetsInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Subnets": ...,
+}
 
-Returns
-[DetachLoadBalancerFromSubnetsOutputTypeDef](./type_defs.md#detachloadbalancerfromsubnetsoutputtypedef).
+parent.detach_load_balancer_from_subnets(**kwargs)
+```
 
-<a id="disable\_availability\_zones\_for\_load\_balancer"></a>
+1. See [:material-code-braces: DetachLoadBalancerFromSubnetsInputRequestTypeDef](./type_defs.md#detachloadbalancerfromsubnetsinputrequesttypedef) 
 
-### disable_availability_zones_for_load_balancer
+### disable\_availability\_zones\_for\_load\_balancer
 
 Removes the specified Availability Zones from the set of Availability Zones for
 the specified load balancer in EC2-Classic or a default VPC.
 
-Type annotations for
-`boto3.client("elb").disable_availability_zones_for_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").disable_availability_zones_for_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.disable_availability_zones_for_load_balancer)
+```python title="Method definition"
+def disable_availability_zones_for_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    AvailabilityZones: Sequence[str],
+) -> RemoveAvailabilityZonesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveAvailabilityZonesInputRequestTypeDef](./type_defs.md#removeavailabilityzonesinputrequesttypedef).
+1. See [:material-code-braces: RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAvailabilityZonesInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "AvailabilityZones": ...,
+}
 
-Returns
-[RemoveAvailabilityZonesOutputTypeDef](./type_defs.md#removeavailabilityzonesoutputtypedef).
+parent.disable_availability_zones_for_load_balancer(**kwargs)
+```
 
-<a id="enable\_availability\_zones\_for\_load\_balancer"></a>
+1. See [:material-code-braces: RemoveAvailabilityZonesInputRequestTypeDef](./type_defs.md#removeavailabilityzonesinputrequesttypedef) 
 
-### enable_availability_zones_for_load_balancer
+### enable\_availability\_zones\_for\_load\_balancer
 
 Adds the specified Availability Zones to the set of Availability Zones for the
 specified load balancer in EC2-Classic or a default VPC.
 
-Type annotations for
-`boto3.client("elb").enable_availability_zones_for_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").enable_availability_zones_for_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.enable_availability_zones_for_load_balancer)
+```python title="Method definition"
+def enable_availability_zones_for_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    AvailabilityZones: Sequence[str],
+) -> AddAvailabilityZonesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddAvailabilityZonesInputRequestTypeDef](./type_defs.md#addavailabilityzonesinputrequesttypedef).
+1. See [:material-code-braces: AddAvailabilityZonesOutputTypeDef](./type_defs.md#addavailabilityzonesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddAvailabilityZonesInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "AvailabilityZones": ...,
+}
 
-Returns
-[AddAvailabilityZonesOutputTypeDef](./type_defs.md#addavailabilityzonesoutputtypedef).
+parent.enable_availability_zones_for_load_balancer(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: AddAvailabilityZonesInputRequestTypeDef](./type_defs.md#addavailabilityzonesinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("elb").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("elb").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="modify\_load\_balancer\_attributes"></a>
-
-### modify_load_balancer_attributes
+### modify\_load\_balancer\_attributes
 
 Modifies the attributes of the specified load balancer.
 
-Type annotations for `boto3.client("elb").modify_load_balancer_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("elb").modify_load_balancer_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.modify_load_balancer_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.modify_load_balancer_attributes)
+```python title="Method definition"
+def modify_load_balancer_attributes(
+    self,
+    *,
+    LoadBalancerName: str,
+    LoadBalancerAttributes: LoadBalancerAttributesTypeDef,  # (1)
+) -> ModifyLoadBalancerAttributesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef).
+1. See [:material-code-braces: LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef) 
+2. See [:material-code-braces: ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `LoadBalancerAttributes`:
-  [LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyLoadBalancerAttributesInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "LoadBalancerAttributes": ...,
+}
 
-Returns
-[ModifyLoadBalancerAttributesOutputTypeDef](./type_defs.md#modifyloadbalancerattributesoutputtypedef).
+parent.modify_load_balancer_attributes(**kwargs)
+```
 
-<a id="register\_instances\_with\_load\_balancer"></a>
+1. See [:material-code-braces: ModifyLoadBalancerAttributesInputRequestTypeDef](./type_defs.md#modifyloadbalancerattributesinputrequesttypedef) 
 
-### register_instances_with_load_balancer
+### register\_instances\_with\_load\_balancer
 
 Adds the specified instances to the specified load balancer.
 
-Type annotations for
-`boto3.client("elb").register_instances_with_load_balancer` method.
+Type annotations and code completion for `#!python boto3.client("elb").register_instances_with_load_balancer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.register_instances_with_load_balancer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.register_instances_with_load_balancer)
+```python title="Method definition"
+def register_instances_with_load_balancer(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef],  # (1)
+) -> RegisterEndPointsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterEndPointsInputRequestTypeDef](./type_defs.md#registerendpointsinputrequesttypedef).
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: RegisterEndPointsOutputTypeDef](./type_defs.md#registerendpointsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterEndPointsInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "Instances": ...,
+}
 
-Returns
-[RegisterEndPointsOutputTypeDef](./type_defs.md#registerendpointsoutputtypedef).
+parent.register_instances_with_load_balancer(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: RegisterEndPointsInputRequestTypeDef](./type_defs.md#registerendpointsinputrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes one or more tags from the specified load balancer.
 
-Type annotations for `boto3.client("elb").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("elb").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    LoadBalancerNames: Sequence[str],
+    Tags: Sequence[TagKeyOnlyTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
+1. See [:material-code-braces: TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef) 
 
-Keyword-only arguments:
 
-- `LoadBalancerNames`: `Sequence`\[`str`\] *(required)*
-- `Tags`: `Sequence`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsInputRequestTypeDef = {  # (1)
+    "LoadBalancerNames": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags(**kwargs)
+```
 
-<a id="set\_load\_balancer\_listener\_ssl\_certificate"></a>
+1. See [:material-code-braces: RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef) 
 
-### set_load_balancer_listener_ssl_certificate
+### set\_load\_balancer\_listener\_ssl\_certificate
 
 Sets the certificate that terminates the specified listener's SSL connections.
 
-Type annotations for
-`boto3.client("elb").set_load_balancer_listener_ssl_certificate` method.
+Type annotations and code completion for `#!python boto3.client("elb").set_load_balancer_listener_ssl_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_listener_ssl_certificate)
+```python title="Method definition"
+def set_load_balancer_listener_ssl_certificate(
+    self,
+    *,
+    LoadBalancerName: str,
+    LoadBalancerPort: int,
+    SSLCertificateId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetLoadBalancerListenerSSLCertificateInputRequestTypeDef](./type_defs.md#setloadbalancerlistenersslcertificateinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `LoadBalancerPort`: `int` *(required)*
-- `SSLCertificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetLoadBalancerListenerSSLCertificateInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "LoadBalancerPort": ...,
+    "SSLCertificateId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_load_balancer_listener_ssl_certificate(**kwargs)
+```
 
-<a id="set\_load\_balancer\_policies\_for\_backend\_server"></a>
+1. See [:material-code-braces: SetLoadBalancerListenerSSLCertificateInputRequestTypeDef](./type_defs.md#setloadbalancerlistenersslcertificateinputrequesttypedef) 
 
-### set_load_balancer_policies_for_backend_server
+### set\_load\_balancer\_policies\_for\_backend\_server
 
-Replaces the set of policies associated with the specified port on which the
-EC2 instance is listening with a new set of policies.
+Replaces the set of policies associated with the specified port on which the EC2
+instance is listening with a new set of policies.
 
-Type annotations for
-`boto3.client("elb").set_load_balancer_policies_for_backend_server` method.
+Type annotations and code completion for `#!python boto3.client("elb").set_load_balancer_policies_for_backend_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_for_backend_server)
+```python title="Method definition"
+def set_load_balancer_policies_for_backend_server(
+    self,
+    *,
+    LoadBalancerName: str,
+    InstancePort: int,
+    PolicyNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesforbackendserverinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `InstancePort`: `int` *(required)*
-- `PolicyNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "InstancePort": ...,
+    "PolicyNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_load_balancer_policies_for_backend_server(**kwargs)
+```
 
-<a id="set\_load\_balancer\_policies\_of\_listener"></a>
+1. See [:material-code-braces: SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesforbackendserverinputrequesttypedef) 
 
-### set_load_balancer_policies_of_listener
+### set\_load\_balancer\_policies\_of\_listener
 
 Replaces the current set of policies for the specified load balancer port with
 the specified set of policies.
 
-Type annotations for
-`boto3.client("elb").set_load_balancer_policies_of_listener` method.
+Type annotations and code completion for `#!python boto3.client("elb").set_load_balancer_policies_of_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener)
 
-Boto3 documentation:
-[ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Client.set_load_balancer_policies_of_listener)
+```python title="Method definition"
+def set_load_balancer_policies_of_listener(
+    self,
+    *,
+    LoadBalancerName: str,
+    LoadBalancerPort: int,
+    PolicyNames: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SetLoadBalancerPoliciesOfListenerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesoflistenerinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoadBalancerName`: `str` *(required)*
-- `LoadBalancerPort`: `int` *(required)*
-- `PolicyNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetLoadBalancerPoliciesOfListenerInputRequestTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+    "LoadBalancerPort": ...,
+    "PolicyNames": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.set_load_balancer_policies_of_listener(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: SetLoadBalancerPoliciesOfListenerInputRequestTypeDef](./type_defs.md#setloadbalancerpoliciesoflistenerinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("elb").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("elb").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_account_limits")` ->
-  [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
-- `client.get_paginator("describe_load_balancers")` ->
-  [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
+- `client.get_paginator("describe_account_limits")` -> [DescribeAccountLimitsPaginator](./paginators.md#describeaccountlimitspaginator)
+- `client.get_paginator("describe_load_balancers")` -> [DescribeLoadBalancersPaginator](./paginators.md#describeloadbalancerspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("elb").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("elb").get_waiter` method with overloads.
 
-- `client.get_waiter("any_instance_in_service")` ->
-  [AnyInstanceInServiceWaiter](./waiters.md#anyinstanceinservicewaiter)
-- `client.get_waiter("instance_deregistered")` ->
-  [InstanceDeregisteredWaiter](./waiters.md#instancederegisteredwaiter)
-- `client.get_waiter("instance_in_service")` ->
-  [InstanceInServiceWaiter](./waiters.md#instanceinservicewaiter)
+- `client.get_waiter("any_instance_in_service")` -> [AnyInstanceInServiceWaiter](./waiters.md#anyinstanceinservicewaiter)
+- `client.get_waiter("instance_deregistered")` -> [InstanceDeregisteredWaiter](./waiters.md#instancederegisteredwaiter)
+- `client.get_waiter("instance_in_service")` -> [InstanceInServiceWaiter](./waiters.md#instanceinservicewaiter)
+

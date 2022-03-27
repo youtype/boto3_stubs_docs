@@ -1,38 +1,18 @@
-<a id="paginators-for-boto3-codebuild-module"></a>
-
-# Paginators for boto3 CodeBuild module
+# Paginators
 
 > [Index](../README.md) > [CodeBuild](./README.md) > Paginators
 
-Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
-type annotations stubs module
-[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+!!! note ""
 
-- [Paginators for boto3 CodeBuild module](#paginators-for-boto3-codebuild-module)
-  - [DescribeCodeCoveragesPaginator](#describecodecoveragespaginator)
-  - [DescribeTestCasesPaginator](#describetestcasespaginator)
-  - [ListBuildBatchesPaginator](#listbuildbatchespaginator)
-  - [ListBuildBatchesForProjectPaginator](#listbuildbatchesforprojectpaginator)
-  - [ListBuildsPaginator](#listbuildspaginator)
-  - [ListBuildsForProjectPaginator](#listbuildsforprojectpaginator)
-  - [ListProjectsPaginator](#listprojectspaginator)
-  - [ListReportGroupsPaginator](#listreportgroupspaginator)
-  - [ListReportsPaginator](#listreportspaginator)
-  - [ListReportsForReportGroupPaginator](#listreportsforreportgrouppaginator)
-  - [ListSharedProjectsPaginator](#listsharedprojectspaginator)
-  - [ListSharedReportGroupsPaginator](#listsharedreportgroupspaginator)
-
-<a id="describecodecoveragespaginator"></a>
+    Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+    type annotations stubs module [mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ## DescribeCodeCoveragesPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("describe_code_coverages")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("describe_code_coverages")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
@@ -41,33 +21,46 @@ def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
     return Session().client("codebuild").get_paginator("describe_code_coverages")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.DescribeCodeCoverages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeCodeCoverages)
 
-Arguments for `DescribeCodeCoveragesPaginator.paginate` method:
+### paginate
 
-- `reportArn`: `str` *(required)*
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype)
-- `minLineCoveragePercentage`: `float`
-- `maxLineCoveragePercentage`: `float`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCodeCoveragesPaginator.paginate` method.
 
-`DescribeCodeCoveragesPaginator.paginate` returns
-`_PageIterator`\[[DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    reportArn: str,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    sortBy: ReportCodeCoverageSortByTypeType = ...,  # (2)
+    minLineCoveragePercentage: float = ...,
+    maxLineCoveragePercentage: float = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeCodeCoveragesOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="describetestcasespaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef = {  # (1)
+    "reportArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef](./type_defs.md#describecodecoveragesinputdescribecodecoveragespaginatetypedef) 
 ## DescribeTestCasesPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("describe_test_cases")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("describe_test_cases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import DescribeTestCasesPaginator
@@ -76,29 +69,42 @@ def get_describe_test_cases_paginator() -> DescribeTestCasesPaginator:
     return Session().client("codebuild").get_paginator("describe_test_cases")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.DescribeTestCases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.DescribeTestCases)
 
-Arguments for `DescribeTestCasesPaginator.paginate` method:
+### paginate
 
-- `reportArn`: `str` *(required)*
-- `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTestCasesPaginator.paginate` method.
 
-`DescribeTestCasesPaginator.paginate` returns
-`_PageIterator`\[[DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    reportArn: str,
+    filter: TestCaseFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTestCasesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbuildbatchespaginator"></a>
+1. See [:material-code-braces: TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTestCasesInputDescribeTestCasesPaginateTypeDef = {  # (1)
+    "reportArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTestCasesInputDescribeTestCasesPaginateTypeDef](./type_defs.md#describetestcasesinputdescribetestcasespaginatetypedef) 
 ## ListBuildBatchesPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_build_batches")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_build_batches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListBuildBatchesPaginator
@@ -107,29 +113,43 @@ def get_list_build_batches_paginator() -> ListBuildBatchesPaginator:
     return Session().client("codebuild").get_paginator("list_build_batches")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListBuildBatches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatches)
 
-Arguments for `ListBuildBatchesPaginator.paginate` method:
+### paginate
 
-- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBuildBatchesPaginator.paginate` method.
 
-`ListBuildBatchesPaginator.paginate` returns
-`_PageIterator`\[[ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: BuildBatchFilterTypeDef = ...,  # (1)
+    sortOrder: SortOrderTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListBuildBatchesOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listbuildbatchesforprojectpaginator"></a>
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBuildBatchesInputListBuildBatchesPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBuildBatchesInputListBuildBatchesPaginateTypeDef](./type_defs.md#listbuildbatchesinputlistbuildbatchespaginatetypedef) 
 ## ListBuildBatchesForProjectPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_build_batches_for_project")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_build_batches_for_project")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListBuildBatchesForProjectPaginator
@@ -138,29 +158,44 @@ def get_list_build_batches_for_project_paginator() -> ListBuildBatchesForProject
     return Session().client("codebuild").get_paginator("list_build_batches_for_project")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListBuildBatchesForProject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildBatchesForProject)
 
-Arguments for `ListBuildBatchesForProjectPaginator.paginate` method:
+### paginate
 
-- `projectName`: `str`
-- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBuildBatchesForProjectPaginator.paginate` method.
 
-`ListBuildBatchesForProjectPaginator.paginate` returns
-`_PageIterator`\[[ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    projectName: str = ...,
+    filter: BuildBatchFilterTypeDef = ...,  # (1)
+    sortOrder: SortOrderTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListBuildBatchesForProjectOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listbuildspaginator"></a>
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef = {  # (1)
+    "projectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef](./type_defs.md#listbuildbatchesforprojectinputlistbuildbatchesforprojectpaginatetypedef) 
 ## ListBuildsPaginator
 
-Type annotations for `boto3.client("codebuild").get_paginator("list_builds")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_builds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListBuildsPaginator
@@ -169,28 +204,41 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return Session().client("codebuild").get_paginator("list_builds")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuilds)
 
-Arguments for `ListBuildsPaginator.paginate` method:
+### paginate
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBuildsPaginator.paginate` method.
 
-`ListBuildsPaginator.paginate` returns
-`_PageIterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBuildsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbuildsforprojectpaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBuildsInputListBuildsPaginateTypeDef = {  # (1)
+    "sortOrder": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBuildsInputListBuildsPaginateTypeDef](./type_defs.md#listbuildsinputlistbuildspaginatetypedef) 
 ## ListBuildsForProjectPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_builds_for_project")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_builds_for_project")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListBuildsForProjectPaginator
@@ -199,29 +247,42 @@ def get_list_builds_for_project_paginator() -> ListBuildsForProjectPaginator:
     return Session().client("codebuild").get_paginator("list_builds_for_project")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListBuildsForProject](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListBuildsForProject)
 
-Arguments for `ListBuildsForProjectPaginator.paginate` method:
+### paginate
 
-- `projectName`: `str` *(required)*
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBuildsForProjectPaginator.paginate` method.
 
-`ListBuildsForProjectPaginator.paginate` returns
-`_PageIterator`\[[ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    projectName: str,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBuildsForProjectOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listprojectspaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef = {  # (1)
+    "projectName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef](./type_defs.md#listbuildsforprojectinputlistbuildsforprojectpaginatetypedef) 
 ## ListProjectsPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListProjectsPaginator
@@ -230,29 +291,43 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("codebuild").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortBy: ProjectSortByTypeType = ...,  # (1)
+    sortOrder: SortOrderTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListProjectsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listreportgroupspaginator"></a>
+1. See [:material-code-brackets: ProjectSortByTypeType](./literals.md#projectsortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsInputListProjectsPaginateTypeDef = {  # (1)
+    "sortBy": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsInputListProjectsPaginateTypeDef](./type_defs.md#listprojectsinputlistprojectspaginatetypedef) 
 ## ListReportGroupsPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_report_groups")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_report_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListReportGroupsPaginator
@@ -261,29 +336,43 @@ def get_list_report_groups_paginator() -> ListReportGroupsPaginator:
     return Session().client("codebuild").get_paginator("list_report_groups")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListReportGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportGroups)
 
-Arguments for `ListReportGroupsPaginator.paginate` method:
+### paginate
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListReportGroupsPaginator.paginate` method.
 
-`ListReportGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    sortBy: ReportGroupSortByTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListReportGroupsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listreportspaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListReportGroupsInputListReportGroupsPaginateTypeDef = {  # (1)
+    "sortOrder": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListReportGroupsInputListReportGroupsPaginateTypeDef](./type_defs.md#listreportgroupsinputlistreportgroupspaginatetypedef) 
 ## ListReportsPaginator
 
-Type annotations for `boto3.client("codebuild").get_paginator("list_reports")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_reports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListReportsPaginator
@@ -292,29 +381,43 @@ def get_list_reports_paginator() -> ListReportsPaginator:
     return Session().client("codebuild").get_paginator("list_reports")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReports)
 
-Arguments for `ListReportsPaginator.paginate` method:
+### paginate
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListReportsPaginator.paginate` method.
 
-`ListReportsPaginator.paginate` returns
-`_PageIterator`\[[ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    filter: ReportFilterTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListReportsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listreportsforreportgrouppaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListReportsInputListReportsPaginateTypeDef = {  # (1)
+    "sortOrder": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListReportsInputListReportsPaginateTypeDef](./type_defs.md#listreportsinputlistreportspaginatetypedef) 
 ## ListReportsForReportGroupPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_reports_for_report_group")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_reports_for_report_group")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListReportsForReportGroupPaginator
@@ -323,30 +426,44 @@ def get_list_reports_for_report_group_paginator() -> ListReportsForReportGroupPa
     return Session().client("codebuild").get_paginator("list_reports_for_report_group")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListReportsForReportGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListReportsForReportGroup)
 
-Arguments for `ListReportsForReportGroupPaginator.paginate` method:
+### paginate
 
-- `reportGroupArn`: `str` *(required)*
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListReportsForReportGroupPaginator.paginate` method.
 
-`ListReportsForReportGroupPaginator.paginate` returns
-`_PageIterator`\[[ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    reportGroupArn: str,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    filter: ReportFilterTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListReportsForReportGroupOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listsharedprojectspaginator"></a>
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef = {  # (1)
+    "reportGroupArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef](./type_defs.md#listreportsforreportgroupinputlistreportsforreportgrouppaginatetypedef) 
 ## ListSharedProjectsPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_shared_projects")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_shared_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListSharedProjectsPaginator
@@ -355,30 +472,43 @@ def get_list_shared_projects_paginator() -> ListSharedProjectsPaginator:
     return Session().client("codebuild").get_paginator("list_shared_projects")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListSharedProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedProjects)
 
-Arguments for `ListSharedProjectsPaginator.paginate` method:
+### paginate
 
-- `sortBy`:
-  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSharedProjectsPaginator.paginate` method.
 
-`ListSharedProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortBy: SharedResourceSortByTypeType = ...,  # (1)
+    sortOrder: SortOrderTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListSharedProjectsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listsharedreportgroupspaginator"></a>
+1. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSharedProjectsInputListSharedProjectsPaginateTypeDef = {  # (1)
+    "sortBy": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSharedProjectsInputListSharedProjectsPaginateTypeDef](./type_defs.md#listsharedprojectsinputlistsharedprojectspaginatetypedef) 
 ## ListSharedReportGroupsPaginator
 
-Type annotations for
-`boto3.client("codebuild").get_paginator("list_shared_report_groups")`.
+Type annotations and code completion for `#!python boto3.client("codebuild").get_paginator("list_shared_report_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codebuild.paginator import ListSharedReportGroupsPaginator
@@ -387,16 +517,34 @@ def get_list_shared_report_groups_paginator() -> ListSharedReportGroupsPaginator
     return Session().client("codebuild").get_paginator("list_shared_report_groups")
 ```
 
-Boto3 documentation:
-[CodeBuild.Paginator.ListSharedReportGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Paginator.ListSharedReportGroups)
 
-Arguments for `ListSharedReportGroupsPaginator.paginate` method:
+### paginate
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSharedReportGroupsPaginator.paginate` method.
 
-`ListSharedReportGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    sortOrder: SortOrderTypeType = ...,  # (1)
+    sortBy: SharedResourceSortByTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListSharedReportGroupsOutputTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef = {  # (1)
+    "sortOrder": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef](./type_defs.md#listsharedreportgroupsinputlistsharedreportgroupspaginatetypedef) 

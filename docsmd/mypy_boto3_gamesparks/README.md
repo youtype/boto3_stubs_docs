@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-gamesparks-module"></a>
-
-# Type annotations for boto3 GameSparks module
+#  GameSparks module
 
 > [Index](../README.md) > GameSparks
 
-Auto-generated documentation for
-[GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
-type annotations stubs module
-[mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
+!!! note ""
 
-- [Type annotations for boto3 GameSparks module](#type-annotations-for-boto3-gamesparks-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GameSparksClient](#gamesparksclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
+    type annotations stubs module [mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GameSparks`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[gamesparks]'
 python -m pip install mypy-boto3-gamesparks
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,93 +42,37 @@ python -m pip install mypy-boto3-gamesparks
 python -m pip uninstall -y mypy-boto3-gamesparks
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="gamesparksclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GameSparksClient
 
-Type annotations for `boto3.client("gamesparks")` as
-[GameSparksClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("gamesparks")` as [GameSparksClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_gamesparks.client import GameSparksClient
+
+def get_client() -> GameSparksClient:
+    return Session().cleint("gamesparks")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_game](./client.md#create_game)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_stage](./client.md#create_stage)
-- [delete_game](./client.md#delete_game)
-- [delete_stage](./client.md#delete_stage)
-- [disconnect_player](./client.md#disconnect_player)
-- [exceptions](./client.md#exceptions)
-- [export_snapshot](./client.md#export_snapshot)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_extension](./client.md#get_extension)
-- [get_extension_version](./client.md#get_extension_version)
-- [get_game](./client.md#get_game)
-- [get_game_configuration](./client.md#get_game_configuration)
-- [get_generated_code_job](./client.md#get_generated_code_job)
-- [get_paginator](./client.md#get_paginator)
-- [get_player_connection_status](./client.md#get_player_connection_status)
-- [get_snapshot](./client.md#get_snapshot)
-- [get_stage](./client.md#get_stage)
-- [get_stage_deployment](./client.md#get_stage_deployment)
-- [import_game_configuration](./client.md#import_game_configuration)
-- [list_extension_versions](./client.md#list_extension_versions)
-- [list_extensions](./client.md#list_extensions)
-- [list_games](./client.md#list_games)
-- [list_generated_code_jobs](./client.md#list_generated_code_jobs)
-- [list_snapshots](./client.md#list_snapshots)
-- [list_stage_deployments](./client.md#list_stage_deployments)
-- [list_stages](./client.md#list_stages)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_generated_code_job](./client.md#start_generated_code_job)
-- [start_stage_deployment](./client.md#start_stage_deployment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_game](./client.md#update_game)
-- [update_game_configuration](./client.md#update_game_configuration)
-- [update_snapshot](./client.md#update_snapshot)
-- [update_stage](./client.md#update_stage)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GameSparksClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("gamesparks").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("gamesparks").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator, ...
+from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator
+
+def get_list_extension_versions_paginator() -> ListExtensionVersionsPaginator:
+    return Session().client("gamesparks").get_paginator("list_extension_versions"))
 ```
 
 - [ListExtensionVersionsPaginator](./paginators.md#listextensionversionspaginator)
@@ -161,16 +83,23 @@ from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator, ...
 - [ListStageDeploymentsPaginator](./paginators.md#liststagedeploymentspaginator)
 - [ListStagesPaginator](./paginators.md#liststagespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_gamesparks.literals import DeploymentActionType
 
-```python
-from mypy_boto3_gamesparks.literals import DeploymentActionType, ...
+def get_value() -> DeploymentActionType:
+    return "DEPLOY"
 ```
 
 - [DeploymentActionType](./literals.md#deploymentactiontype)
@@ -190,18 +119,22 @@ from mypy_boto3_gamesparks.literals import DeploymentActionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_gamesparks.type_defs import ConnectionTypeDef
 
-```python
-from mypy_boto3_gamesparks.type_defs import ConnectionTypeDef, ...
+def get_value() -> ConnectionTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
 - [ConnectionTypeDef](./type_defs.md#connectiontypedef)
@@ -245,18 +178,25 @@ from mypy_boto3_gamesparks.type_defs import ConnectionTypeDef, ...
 - [ImportGameConfigurationRequestRequestTypeDef](./type_defs.md#importgameconfigurationrequestrequesttypedef)
 - [ImportGameConfigurationResultTypeDef](./type_defs.md#importgameconfigurationresulttypedef)
 - [ImportGameConfigurationSourceTypeDef](./type_defs.md#importgameconfigurationsourcetypedef)
+- [ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef](./type_defs.md#listextensionversionsrequestlistextensionversionspaginatetypedef)
 - [ListExtensionVersionsRequestRequestTypeDef](./type_defs.md#listextensionversionsrequestrequesttypedef)
 - [ListExtensionVersionsResultTypeDef](./type_defs.md#listextensionversionsresulttypedef)
+- [ListExtensionsRequestListExtensionsPaginateTypeDef](./type_defs.md#listextensionsrequestlistextensionspaginatetypedef)
 - [ListExtensionsRequestRequestTypeDef](./type_defs.md#listextensionsrequestrequesttypedef)
 - [ListExtensionsResultTypeDef](./type_defs.md#listextensionsresulttypedef)
+- [ListGamesRequestListGamesPaginateTypeDef](./type_defs.md#listgamesrequestlistgamespaginatetypedef)
 - [ListGamesRequestRequestTypeDef](./type_defs.md#listgamesrequestrequesttypedef)
 - [ListGamesResultTypeDef](./type_defs.md#listgamesresulttypedef)
+- [ListGeneratedCodeJobsRequestListGeneratedCodeJobsPaginateTypeDef](./type_defs.md#listgeneratedcodejobsrequestlistgeneratedcodejobspaginatetypedef)
 - [ListGeneratedCodeJobsRequestRequestTypeDef](./type_defs.md#listgeneratedcodejobsrequestrequesttypedef)
 - [ListGeneratedCodeJobsResultTypeDef](./type_defs.md#listgeneratedcodejobsresulttypedef)
+- [ListSnapshotsRequestListSnapshotsPaginateTypeDef](./type_defs.md#listsnapshotsrequestlistsnapshotspaginatetypedef)
 - [ListSnapshotsRequestRequestTypeDef](./type_defs.md#listsnapshotsrequestrequesttypedef)
 - [ListSnapshotsResultTypeDef](./type_defs.md#listsnapshotsresulttypedef)
+- [ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef](./type_defs.md#liststagedeploymentsrequestliststagedeploymentspaginatetypedef)
 - [ListStageDeploymentsRequestRequestTypeDef](./type_defs.md#liststagedeploymentsrequestrequesttypedef)
 - [ListStageDeploymentsResultTypeDef](./type_defs.md#liststagedeploymentsresulttypedef)
+- [ListStagesRequestListStagesPaginateTypeDef](./type_defs.md#liststagesrequestliststagespaginatetypedef)
 - [ListStagesRequestRequestTypeDef](./type_defs.md#liststagesrequestrequesttypedef)
 - [ListStagesResultTypeDef](./type_defs.md#liststagesresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -285,3 +225,4 @@ from mypy_boto3_gamesparks.type_defs import ConnectionTypeDef, ...
 - [UpdateSnapshotResultTypeDef](./type_defs.md#updatesnapshotresulttypedef)
 - [UpdateStageRequestRequestTypeDef](./type_defs.md#updatestagerequestrequesttypedef)
 - [UpdateStageResultTypeDef](./type_defs.md#updatestageresulttypedef)
+

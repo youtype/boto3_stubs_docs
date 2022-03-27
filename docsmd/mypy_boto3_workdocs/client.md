@@ -1,73 +1,18 @@
-<a id="workdocsclient-for-boto3-workdocs-module"></a>
-
-# WorkDocsClient for boto3 WorkDocs module
+# WorkDocsClient
 
 > [Index](../README.md) > [WorkDocs](./README.md) > WorkDocsClient
 
-Auto-generated documentation for
-[WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
-type annotations stubs module
-[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+!!! note ""
 
-- [WorkDocsClient for boto3 WorkDocs module](#workdocsclient-for-boto3-workdocs-module)
-  - [WorkDocsClient](#workdocsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [abort_document_version_upload](#abort_document_version_upload)
-    - [activate_user](#activate_user)
-    - [add_resource_permissions](#add_resource_permissions)
-    - [can_paginate](#can_paginate)
-    - [create_comment](#create_comment)
-    - [create_custom_metadata](#create_custom_metadata)
-    - [create_folder](#create_folder)
-    - [create_labels](#create_labels)
-    - [create_notification_subscription](#create_notification_subscription)
-    - [create_user](#create_user)
-    - [deactivate_user](#deactivate_user)
-    - [delete_comment](#delete_comment)
-    - [delete_custom_metadata](#delete_custom_metadata)
-    - [delete_document](#delete_document)
-    - [delete_folder](#delete_folder)
-    - [delete_folder_contents](#delete_folder_contents)
-    - [delete_labels](#delete_labels)
-    - [delete_notification_subscription](#delete_notification_subscription)
-    - [delete_user](#delete_user)
-    - [describe_activities](#describe_activities)
-    - [describe_comments](#describe_comments)
-    - [describe_document_versions](#describe_document_versions)
-    - [describe_folder_contents](#describe_folder_contents)
-    - [describe_groups](#describe_groups)
-    - [describe_notification_subscriptions](#describe_notification_subscriptions)
-    - [describe_resource_permissions](#describe_resource_permissions)
-    - [describe_root_folders](#describe_root_folders)
-    - [describe_users](#describe_users)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_current_user](#get_current_user)
-    - [get_document](#get_document)
-    - [get_document_path](#get_document_path)
-    - [get_document_version](#get_document_version)
-    - [get_folder](#get_folder)
-    - [get_folder_path](#get_folder_path)
-    - [get_resources](#get_resources)
-    - [initiate_document_version_upload](#initiate_document_version_upload)
-    - [remove_all_resource_permissions](#remove_all_resource_permissions)
-    - [remove_resource_permission](#remove_resource_permission)
-    - [update_document](#update_document)
-    - [update_document_version](#update_document_version)
-    - [update_folder](#update_folder)
-    - [update_user](#update_user)
-    - [get_paginator](#get_paginator)
-
-<a id="workdocsclient"></a>
+    Auto-generated documentation for [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
+    type annotations stubs module [mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 ## WorkDocsClient
 
-Type annotations for `boto3.client("workdocs")`
+Type annotations and code completion for `#!python boto3.client("workdocs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_workdocs.client import WorkDocsClient
 
@@ -75,1120 +20,1475 @@ def get_workdocs_client() -> WorkDocsClient:
     return Session().client("workdocs")
 ```
 
-Boto3 documentation:
-[WorkDocs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("workdocs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("workdocs")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConflictingOperationException,
+    client.CustomMetadataLimitExceededException,
+    client.DeactivatingLastSystemUserException,
+    client.DocumentLockedForCommentsException,
+    client.DraftUploadOutOfSyncException,
+    client.EntityAlreadyExistsException,
+    client.EntityNotExistsException,
+    client.FailedDependencyException,
+    client.IllegalUserStateException,
+    client.InvalidArgumentException,
+    client.InvalidCommentOperationException,
+    client.InvalidOperationException,
+    client.InvalidPasswordException,
+    client.LimitExceededException,
+    client.ProhibitedStateException,
+    client.RequestedEntityTooLargeException,
+    client.ResourceAlreadyCheckedOutException,
+    client.ServiceUnavailableException,
+    client.StorageLimitExceededException,
+    client.StorageLimitWillExceedException,
+    client.TooManyLabelsException,
+    client.TooManySubscriptionsException,
+    client.UnauthorizedOperationException,
+    client.UnauthorizedResourceAccessException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_workdocs.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConflictingOperationException`
-- `Exceptions.CustomMetadataLimitExceededException`
-- `Exceptions.DeactivatingLastSystemUserException`
-- `Exceptions.DocumentLockedForCommentsException`
-- `Exceptions.DraftUploadOutOfSyncException`
-- `Exceptions.EntityAlreadyExistsException`
-- `Exceptions.EntityNotExistsException`
-- `Exceptions.FailedDependencyException`
-- `Exceptions.IllegalUserStateException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.InvalidCommentOperationException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.InvalidPasswordException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ProhibitedStateException`
-- `Exceptions.RequestedEntityTooLargeException`
-- `Exceptions.ResourceAlreadyCheckedOutException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.StorageLimitExceededException`
-- `Exceptions.StorageLimitWillExceedException`
-- `Exceptions.TooManyLabelsException`
-- `Exceptions.TooManySubscriptionsException`
-- `Exceptions.UnauthorizedOperationException`
-- `Exceptions.UnauthorizedResourceAccessException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WorkDocsClient exceptions.
-
-Type annotations for `boto3.client("workdocs").exceptions` method.
-
-Boto3 documentation:
-[WorkDocs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="abort\_document\_version\_upload"></a>
-
-### abort_document_version_upload
+### abort\_document\_version\_upload
 
 Aborts the upload of the specified document version that was previously
-initiated by InitiateDocumentVersionUpload.
+initiated by  InitiateDocumentVersionUpload.
 
-Type annotations for `boto3.client("workdocs").abort_document_version_upload`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").abort_document_version_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
 
-Boto3 documentation:
-[WorkDocs.Client.abort_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.abort_document_version_upload)
+```python title="Method definition"
+def abort_document_version_upload(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AbortDocumentVersionUploadRequestRequestTypeDef](./type_defs.md#abortdocumentversionuploadrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AbortDocumentVersionUploadRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+}
 
-<a id="activate\_user"></a>
+parent.abort_document_version_upload(**kwargs)
+```
 
-### activate_user
+1. See [:material-code-braces: AbortDocumentVersionUploadRequestRequestTypeDef](./type_defs.md#abortdocumentversionuploadrequestrequesttypedef) 
+
+### activate\_user
 
 Activates the specified user.
 
-Type annotations for `boto3.client("workdocs").activate_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").activate_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
 
-Boto3 documentation:
-[WorkDocs.Client.activate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.activate_user)
+```python title="Method definition"
+def activate_user(
+    self,
+    *,
+    UserId: str,
+    AuthenticationToken: str = ...,
+) -> ActivateUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ActivateUserRequestRequestTypeDef](./type_defs.md#activateuserrequestrequesttypedef).
+1. See [:material-code-braces: ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ActivateUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+}
 
-Returns
-[ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef).
+parent.activate_user(**kwargs)
+```
 
-<a id="add\_resource\_permissions"></a>
+1. See [:material-code-braces: ActivateUserRequestRequestTypeDef](./type_defs.md#activateuserrequestrequesttypedef) 
 
-### add_resource_permissions
+### add\_resource\_permissions
 
 Creates a set of permissions for the specified folder or document.
 
-Type annotations for `boto3.client("workdocs").add_resource_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").add_resource_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
 
-Boto3 documentation:
-[WorkDocs.Client.add_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.add_resource_permissions)
+```python title="Method definition"
+def add_resource_permissions(
+    self,
+    *,
+    ResourceId: str,
+    Principals: Sequence[SharePrincipalTypeDef],  # (1)
+    AuthenticationToken: str = ...,
+    NotificationOptions: NotificationOptionsTypeDef = ...,  # (2)
+) -> AddResourcePermissionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AddResourcePermissionsRequestRequestTypeDef](./type_defs.md#addresourcepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef) 
+2. See [:material-code-braces: NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef) 
+3. See [:material-code-braces: AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Principals`:
-  `Sequence`\[[SharePrincipalTypeDef](./type_defs.md#shareprincipaltypedef)\]
-  *(required)*
-- `AuthenticationToken`: `str`
-- `NotificationOptions`:
-  [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: AddResourcePermissionsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Principals": ...,
+}
 
-Returns
-[AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef).
+parent.add_resource_permissions(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddResourcePermissionsRequestRequestTypeDef](./type_defs.md#addresourcepermissionsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("workdocs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
 
-Boto3 documentation:
-[WorkDocs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_comment"></a>
-
-### create_comment
+### create\_comment
 
 Adds a new comment to the specified document version.
 
-Type annotations for `boto3.client("workdocs").create_comment` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_comment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
 
-Boto3 documentation:
-[WorkDocs.Client.create_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_comment)
+```python title="Method definition"
+def create_comment(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    Text: str,
+    AuthenticationToken: str = ...,
+    ParentId: str = ...,
+    ThreadId: str = ...,
+    Visibility: CommentVisibilityTypeType = ...,  # (1)
+    NotifyCollaborators: bool = ...,
+) -> CreateCommentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCommentRequestRequestTypeDef](./type_defs.md#createcommentrequestrequesttypedef).
+1. See [:material-code-brackets: CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype) 
+2. See [:material-code-braces: CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `Text`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `ParentId`: `str`
-- `ThreadId`: `str`
-- `Visibility`:
-  [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
-- `NotifyCollaborators`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateCommentRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+    "Text": ...,
+}
 
-Returns
-[CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef).
+parent.create_comment(**kwargs)
+```
 
-<a id="create\_custom\_metadata"></a>
+1. See [:material-code-braces: CreateCommentRequestRequestTypeDef](./type_defs.md#createcommentrequestrequesttypedef) 
 
-### create_custom_metadata
+### create\_custom\_metadata
 
 Adds one or more custom properties to the specified resource (a folder,
 document, or version).
 
-Type annotations for `boto3.client("workdocs").create_custom_metadata` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_custom_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
 
-Boto3 documentation:
-[WorkDocs.Client.create_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_custom_metadata)
+```python title="Method definition"
+def create_custom_metadata(
+    self,
+    *,
+    ResourceId: str,
+    CustomMetadata: Mapping[str, str],
+    AuthenticationToken: str = ...,
+    VersionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomMetadataRequestRequestTypeDef](./type_defs.md#createcustommetadatarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `CustomMetadata`: `Mapping`\[`str`, `str`\] *(required)*
-- `AuthenticationToken`: `str`
-- `VersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCustomMetadataRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "CustomMetadata": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_custom_metadata(**kwargs)
+```
 
-<a id="create\_folder"></a>
+1. See [:material-code-braces: CreateCustomMetadataRequestRequestTypeDef](./type_defs.md#createcustommetadatarequestrequesttypedef) 
 
-### create_folder
+### create\_folder
 
 Creates a folder with the specified name and parent folder.
 
-Type annotations for `boto3.client("workdocs").create_folder` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
 
-Boto3 documentation:
-[WorkDocs.Client.create_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_folder)
+```python title="Method definition"
+def create_folder(
+    self,
+    *,
+    ParentFolderId: str,
+    AuthenticationToken: str = ...,
+    Name: str = ...,
+) -> CreateFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateFolderRequestRequestTypeDef](./type_defs.md#createfolderrequestrequesttypedef).
+1. See [:material-code-braces: CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentFolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateFolderRequestRequestTypeDef = {  # (1)
+    "ParentFolderId": ...,
+}
 
-Returns
-[CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+parent.create_folder(**kwargs)
+```
 
-<a id="create\_labels"></a>
+1. See [:material-code-braces: CreateFolderRequestRequestTypeDef](./type_defs.md#createfolderrequestrequesttypedef) 
 
-### create_labels
+### create\_labels
 
 Adds the specified list of labels to the given resource (a document or folder)
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/workdocs-2016-05-01/CreateLabels).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/workdocs-2016-05-01/CreateLabels).
 
-Type annotations for `boto3.client("workdocs").create_labels` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
 
-Boto3 documentation:
-[WorkDocs.Client.create_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_labels)
+```python title="Method definition"
+def create_labels(
+    self,
+    *,
+    ResourceId: str,
+    Labels: Sequence[str],
+    AuthenticationToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLabelsRequestRequestTypeDef](./type_defs.md#createlabelsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Labels`: `Sequence`\[`str`\] *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLabelsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Labels": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_labels(**kwargs)
+```
 
-<a id="create\_notification\_subscription"></a>
+1. See [:material-code-braces: CreateLabelsRequestRequestTypeDef](./type_defs.md#createlabelsrequestrequesttypedef) 
 
-### create_notification_subscription
+### create\_notification\_subscription
 
 Configure Amazon WorkDocs to use Amazon SNS notifications.
 
-Type annotations for
-`boto3.client("workdocs").create_notification_subscription` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_notification_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
 
-Boto3 documentation:
-[WorkDocs.Client.create_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_notification_subscription)
+```python title="Method definition"
+def create_notification_subscription(
+    self,
+    *,
+    OrganizationId: str,
+    Endpoint: str,
+    Protocol: SubscriptionProtocolTypeType,  # (1)
+    SubscriptionType: SubscriptionTypeType,  # (2)
+) -> CreateNotificationSubscriptionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateNotificationSubscriptionRequestRequestTypeDef](./type_defs.md#createnotificationsubscriptionrequestrequesttypedef).
+1. See [:material-code-brackets: SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype) 
+2. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
+3. See [:material-code-braces: CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Endpoint`: `str` *(required)*
-- `Protocol`: `Literal['HTTPS']` (see
-  [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
-  *(required)*
-- `SubscriptionType`: `Literal['ALL']` (see
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateNotificationSubscriptionRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Endpoint": ...,
+    "Protocol": ...,
+    "SubscriptionType": ...,
+}
 
-Returns
-[CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef).
+parent.create_notification_subscription(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateNotificationSubscriptionRequestRequestTypeDef](./type_defs.md#createnotificationsubscriptionrequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user in a Simple AD or Microsoft AD directory.
 
-Type annotations for `boto3.client("workdocs").create_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
 
-Boto3 documentation:
-[WorkDocs.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    Username: str,
+    GivenName: str,
+    Surname: str,
+    Password: str,
+    OrganizationId: str = ...,
+    EmailAddress: str = ...,
+    TimeZoneId: str = ...,
+    StorageRule: StorageRuleTypeTypeDef = ...,  # (1)
+    AuthenticationToken: str = ...,
+) -> CreateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef) 
+2. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Username`: `str` *(required)*
-- `GivenName`: `str` *(required)*
-- `Surname`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `OrganizationId`: `str`
-- `EmailAddress`: `str`
-- `TimeZoneId`: `str`
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "Username": ...,
+    "GivenName": ...,
+    "Surname": ...,
+    "Password": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="deactivate\_user"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### deactivate_user
+### deactivate\_user
 
 Deactivates the specified user, which revokes the user's access to Amazon
 WorkDocs.
 
-Type annotations for `boto3.client("workdocs").deactivate_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").deactivate_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
 
-Boto3 documentation:
-[WorkDocs.Client.deactivate_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.deactivate_user)
+```python title="Method definition"
+def deactivate_user(
+    self,
+    *,
+    UserId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeactivateUserRequestRequestTypeDef](./type_defs.md#deactivateuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeactivateUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+}
 
-<a id="delete\_comment"></a>
+parent.deactivate_user(**kwargs)
+```
 
-### delete_comment
+1. See [:material-code-braces: DeactivateUserRequestRequestTypeDef](./type_defs.md#deactivateuserrequestrequesttypedef) 
+
+### delete\_comment
 
 Deletes the specified comment from the document version.
 
-Type annotations for `boto3.client("workdocs").delete_comment` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_comment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_comment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_comment)
+```python title="Method definition"
+def delete_comment(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    CommentId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCommentRequestRequestTypeDef](./type_defs.md#deletecommentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `CommentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteCommentRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+    "CommentId": ...,
+}
 
-<a id="delete\_custom\_metadata"></a>
+parent.delete_comment(**kwargs)
+```
 
-### delete_custom_metadata
+1. See [:material-code-braces: DeleteCommentRequestRequestTypeDef](./type_defs.md#deletecommentrequestrequesttypedef) 
+
+### delete\_custom\_metadata
 
 Deletes custom metadata from the specified resource.
 
-Type annotations for `boto3.client("workdocs").delete_custom_metadata` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_custom_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_custom_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_custom_metadata)
+```python title="Method definition"
+def delete_custom_metadata(
+    self,
+    *,
+    ResourceId: str,
+    AuthenticationToken: str = ...,
+    VersionId: str = ...,
+    Keys: Sequence[str] = ...,
+    DeleteAll: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomMetadataRequestRequestTypeDef](./type_defs.md#deletecustommetadatarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `VersionId`: `str`
-- `Keys`: `Sequence`\[`str`\]
-- `DeleteAll`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomMetadataRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_custom_metadata(**kwargs)
+```
 
-<a id="delete\_document"></a>
+1. See [:material-code-braces: DeleteCustomMetadataRequestRequestTypeDef](./type_defs.md#deletecustommetadatarequestrequesttypedef) 
 
-### delete_document
+### delete\_document
 
 Permanently deletes the specified document and its associated metadata.
 
-Type annotations for `boto3.client("workdocs").delete_document` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_document)
+```python title="Method definition"
+def delete_document(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDocumentRequestRequestTypeDef](./type_defs.md#deletedocumentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDocumentRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
 
-<a id="delete\_folder"></a>
+parent.delete_document(**kwargs)
+```
 
-### delete_folder
+1. See [:material-code-braces: DeleteDocumentRequestRequestTypeDef](./type_defs.md#deletedocumentrequestrequesttypedef) 
+
+### delete\_folder
 
 Permanently deletes the specified folder and its contents.
 
-Type annotations for `boto3.client("workdocs").delete_folder` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder)
+```python title="Method definition"
+def delete_folder(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFolderRequestRequestTypeDef](./type_defs.md#deletefolderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFolderRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-<a id="delete\_folder\_contents"></a>
+parent.delete_folder(**kwargs)
+```
 
-### delete_folder_contents
+1. See [:material-code-braces: DeleteFolderRequestRequestTypeDef](./type_defs.md#deletefolderrequestrequesttypedef) 
+
+### delete\_folder\_contents
 
 Deletes the contents of the specified folder.
 
-Type annotations for `boto3.client("workdocs").delete_folder_contents` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_folder_contents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_folder_contents)
+```python title="Method definition"
+def delete_folder_contents(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFolderContentsRequestRequestTypeDef](./type_defs.md#deletefoldercontentsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFolderContentsRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-<a id="delete\_labels"></a>
+parent.delete_folder_contents(**kwargs)
+```
 
-### delete_labels
+1. See [:material-code-braces: DeleteFolderContentsRequestRequestTypeDef](./type_defs.md#deletefoldercontentsrequestrequesttypedef) 
+
+### delete\_labels
 
 Deletes the specified list of labels from a resource.
 
-Type annotations for `boto3.client("workdocs").delete_labels` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_labels)
+```python title="Method definition"
+def delete_labels(
+    self,
+    *,
+    ResourceId: str,
+    AuthenticationToken: str = ...,
+    Labels: Sequence[str] = ...,
+    DeleteAll: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLabelsRequestRequestTypeDef](./type_defs.md#deletelabelsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `DeleteAll`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteLabelsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_labels(**kwargs)
+```
 
-<a id="delete\_notification\_subscription"></a>
+1. See [:material-code-braces: DeleteLabelsRequestRequestTypeDef](./type_defs.md#deletelabelsrequestrequesttypedef) 
 
-### delete_notification_subscription
+### delete\_notification\_subscription
 
 Deletes the specified subscription from the specified organization.
 
-Type annotations for
-`boto3.client("workdocs").delete_notification_subscription` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_notification_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_notification_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_notification_subscription)
+```python title="Method definition"
+def delete_notification_subscription(
+    self,
+    *,
+    SubscriptionId: str,
+    OrganizationId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNotificationSubscriptionRequestRequestTypeDef](./type_defs.md#deletenotificationsubscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionId`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNotificationSubscriptionRequestRequestTypeDef = {  # (1)
+    "SubscriptionId": ...,
+    "OrganizationId": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_notification_subscription(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteNotificationSubscriptionRequestRequestTypeDef](./type_defs.md#deletenotificationsubscriptionrequestrequesttypedef) 
+
+### delete\_user
 
 Deletes the specified user from a Simple AD or Microsoft AD directory.
 
-Type annotations for `boto3.client("workdocs").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
 
-Boto3 documentation:
-[WorkDocs.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    UserId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+}
 
-<a id="describe\_activities"></a>
+parent.delete_user(**kwargs)
+```
 
-### describe_activities
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
+### describe\_activities
 
 Describes the user activities in a specified time period.
 
-Type annotations for `boto3.client("workdocs").describe_activities` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_activities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_activities)
+```python title="Method definition"
+def describe_activities(
+    self,
+    *,
+    AuthenticationToken: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    OrganizationId: str = ...,
+    ActivityTypes: str = ...,
+    ResourceId: str = ...,
+    UserId: str = ...,
+    IncludeIndirectActivities: bool = ...,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> DescribeActivitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeActivitiesRequestRequestTypeDef](./type_defs.md#describeactivitiesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationToken`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `OrganizationId`: `str`
-- `ActivityTypes`: `str`
-- `ResourceId`: `str`
-- `UserId`: `str`
-- `IncludeIndirectActivities`: `bool`
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeActivitiesRequestRequestTypeDef = {  # (1)
+    "AuthenticationToken": ...,
+}
 
-Returns
-[DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef).
+parent.describe_activities(**kwargs)
+```
 
-<a id="describe\_comments"></a>
+1. See [:material-code-braces: DescribeActivitiesRequestRequestTypeDef](./type_defs.md#describeactivitiesrequestrequesttypedef) 
 
-### describe_comments
+### describe\_comments
 
 List all the comments for the specified document version.
 
-Type annotations for `boto3.client("workdocs").describe_comments` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_comments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_comments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_comments)
+```python title="Method definition"
+def describe_comments(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: str = ...,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> DescribeCommentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCommentsRequestRequestTypeDef](./type_defs.md#describecommentsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeCommentsRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+}
 
-Returns
-[DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef).
+parent.describe_comments(**kwargs)
+```
 
-<a id="describe\_document\_versions"></a>
+1. See [:material-code-braces: DescribeCommentsRequestRequestTypeDef](./type_defs.md#describecommentsrequestrequesttypedef) 
 
-### describe_document_versions
+### describe\_document\_versions
 
 Retrieves the document versions for the specified document.
 
-Type annotations for `boto3.client("workdocs").describe_document_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_document_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_document_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_document_versions)
+```python title="Method definition"
+def describe_document_versions(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+    Include: str = ...,
+    Fields: str = ...,
+) -> DescribeDocumentVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDocumentVersionsRequestRequestTypeDef](./type_defs.md#describedocumentversionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
-- `Include`: `str`
-- `Fields`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDocumentVersionsRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
 
-Returns
-[DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef).
+parent.describe_document_versions(**kwargs)
+```
 
-<a id="describe\_folder\_contents"></a>
+1. See [:material-code-braces: DescribeDocumentVersionsRequestRequestTypeDef](./type_defs.md#describedocumentversionsrequestrequesttypedef) 
 
-### describe_folder_contents
+### describe\_folder\_contents
 
 Describes the contents of the specified folder, including its documents and
 subfolders.
 
-Type annotations for `boto3.client("workdocs").describe_folder_contents`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_folder_contents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_folder_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_folder_contents)
+```python title="Method definition"
+def describe_folder_contents(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+    Sort: ResourceSortTypeType = ...,  # (1)
+    Order: OrderTypeType = ...,  # (2)
+    Limit: int = ...,
+    Marker: str = ...,
+    Type: FolderContentTypeType = ...,  # (3)
+    Include: str = ...,
+) -> DescribeFolderContentsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFolderContentsRequestRequestTypeDef](./type_defs.md#describefoldercontentsrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceSortTypeType](./literals.md#resourcesorttypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: FolderContentTypeType](./literals.md#foldercontenttypetype) 
+4. See [:material-code-braces: DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Sort`: [ResourceSortTypeType](./literals.md#resourcesorttypetype)
-- `Order`: [OrderTypeType](./literals.md#ordertypetype)
-- `Limit`: `int`
-- `Marker`: `str`
-- `Type`: [FolderContentTypeType](./literals.md#foldercontenttypetype)
-- `Include`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFolderContentsRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-Returns
-[DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef).
+parent.describe_folder_contents(**kwargs)
+```
 
-<a id="describe\_groups"></a>
+1. See [:material-code-braces: DescribeFolderContentsRequestRequestTypeDef](./type_defs.md#describefoldercontentsrequestrequesttypedef) 
 
-### describe_groups
+### describe\_groups
 
 Describes the groups specified by the query.
 
-Type annotations for `boto3.client("workdocs").describe_groups` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_groups)
+```python title="Method definition"
+def describe_groups(
+    self,
+    *,
+    SearchQuery: str,
+    AuthenticationToken: str = ...,
+    OrganizationId: str = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGroupsRequestRequestTypeDef](./type_defs.md#describegroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SearchQuery`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `OrganizationId`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupsRequestRequestTypeDef = {  # (1)
+    "SearchQuery": ...,
+}
 
-Returns
-[DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef).
+parent.describe_groups(**kwargs)
+```
 
-<a id="describe\_notification\_subscriptions"></a>
+1. See [:material-code-braces: DescribeGroupsRequestRequestTypeDef](./type_defs.md#describegroupsrequestrequesttypedef) 
 
-### describe_notification_subscriptions
+### describe\_notification\_subscriptions
 
 Lists the specified notification subscriptions.
 
-Type annotations for
-`boto3.client("workdocs").describe_notification_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_notification_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_notification_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_notification_subscriptions)
+```python title="Method definition"
+def describe_notification_subscriptions(
+    self,
+    *,
+    OrganizationId: str,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeNotificationSubscriptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNotificationSubscriptionsRequestRequestTypeDef](./type_defs.md#describenotificationsubscriptionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationSubscriptionsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef).
+parent.describe_notification_subscriptions(**kwargs)
+```
 
-<a id="describe\_resource\_permissions"></a>
+1. See [:material-code-braces: DescribeNotificationSubscriptionsRequestRequestTypeDef](./type_defs.md#describenotificationsubscriptionsrequestrequesttypedef) 
 
-### describe_resource_permissions
+### describe\_resource\_permissions
 
 Describes the permissions of a specified resource.
 
-Type annotations for `boto3.client("workdocs").describe_resource_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_resource_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_resource_permissions)
+```python title="Method definition"
+def describe_resource_permissions(
+    self,
+    *,
+    ResourceId: str,
+    AuthenticationToken: str = ...,
+    PrincipalId: str = ...,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> DescribeResourcePermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourcePermissionsRequestRequestTypeDef](./type_defs.md#describeresourcepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `PrincipalId`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeResourcePermissionsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef).
+parent.describe_resource_permissions(**kwargs)
+```
 
-<a id="describe\_root\_folders"></a>
+1. See [:material-code-braces: DescribeResourcePermissionsRequestRequestTypeDef](./type_defs.md#describeresourcepermissionsrequestrequesttypedef) 
 
-### describe_root_folders
+### describe\_root\_folders
 
 Describes the current user's special folders; the `RootFolder` and the
 `RecycleBin`.
 
-Type annotations for `boto3.client("workdocs").describe_root_folders` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_root_folders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_root_folders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_root_folders)
+```python title="Method definition"
+def describe_root_folders(
+    self,
+    *,
+    AuthenticationToken: str,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> DescribeRootFoldersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRootFoldersRequestRequestTypeDef](./type_defs.md#describerootfoldersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationToken`: `str` *(required)*
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRootFoldersRequestRequestTypeDef = {  # (1)
+    "AuthenticationToken": ...,
+}
 
-Returns
-[DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef).
+parent.describe_root_folders(**kwargs)
+```
 
-<a id="describe\_users"></a>
+1. See [:material-code-braces: DescribeRootFoldersRequestRequestTypeDef](./type_defs.md#describerootfoldersrequestrequesttypedef) 
 
-### describe_users
+### describe\_users
 
 Describes the specified users.
 
-Type annotations for `boto3.client("workdocs").describe_users` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").describe_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
 
-Boto3 documentation:
-[WorkDocs.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.describe_users)
+```python title="Method definition"
+def describe_users(
+    self,
+    *,
+    AuthenticationToken: str = ...,
+    OrganizationId: str = ...,
+    UserIds: str = ...,
+    Query: str = ...,
+    Include: UserFilterTypeType = ...,  # (1)
+    Order: OrderTypeType = ...,  # (2)
+    Sort: UserSortTypeType = ...,  # (3)
+    Marker: str = ...,
+    Limit: int = ...,
+    Fields: str = ...,
+) -> DescribeUsersResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef).
+1. See [:material-code-brackets: UserFilterTypeType](./literals.md#userfiltertypetype) 
+2. See [:material-code-brackets: OrderTypeType](./literals.md#ordertypetype) 
+3. See [:material-code-brackets: UserSortTypeType](./literals.md#usersorttypetype) 
+4. See [:material-code-braces: DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationToken`: `str`
-- `OrganizationId`: `str`
-- `UserIds`: `str`
-- `Query`: `str`
-- `Include`: [UserFilterTypeType](./literals.md#userfiltertypetype)
-- `Order`: [OrderTypeType](./literals.md#ordertypetype)
-- `Sort`: [UserSortTypeType](./literals.md#usersorttypetype)
-- `Marker`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUsersRequestRequestTypeDef = {  # (1)
+    "AuthenticationToken": ...,
+}
 
-Returns
-[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
+parent.describe_users(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("workdocs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WorkDocs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_current\_user"></a>
-
-### get_current_user
+### get\_current\_user
 
 Retrieves details of the current user for whom the authentication token was
 generated.
 
-Type annotations for `boto3.client("workdocs").get_current_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_current_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
 
-Boto3 documentation:
-[WorkDocs.Client.get_current_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_current_user)
+```python title="Method definition"
+def get_current_user(
+    self,
+    *,
+    AuthenticationToken: str,
+) -> GetCurrentUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCurrentUserRequestRequestTypeDef](./type_defs.md#getcurrentuserrequestrequesttypedef).
+1. See [:material-code-braces: GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCurrentUserRequestRequestTypeDef = {  # (1)
+    "AuthenticationToken": ...,
+}
 
-Returns
-[GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef).
+parent.get_current_user(**kwargs)
+```
 
-<a id="get\_document"></a>
+1. See [:material-code-braces: GetCurrentUserRequestRequestTypeDef](./type_defs.md#getcurrentuserrequestrequesttypedef) 
 
-### get_document
+### get\_document
 
 Retrieves details of a document.
 
-Type annotations for `boto3.client("workdocs").get_document` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
 
-Boto3 documentation:
-[WorkDocs.Client.get_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document)
+```python title="Method definition"
+def get_document(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+    IncludeCustomMetadata: bool = ...,
+) -> GetDocumentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDocumentRequestRequestTypeDef](./type_defs.md#getdocumentrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `IncludeCustomMetadata`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetDocumentRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
 
-Returns
-[GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef).
+parent.get_document(**kwargs)
+```
 
-<a id="get\_document\_path"></a>
+1. See [:material-code-braces: GetDocumentRequestRequestTypeDef](./type_defs.md#getdocumentrequestrequesttypedef) 
 
-### get_document_path
+### get\_document\_path
 
 Retrieves the path information (the hierarchy from the root folder) for the
 requested document.
 
-Type annotations for `boto3.client("workdocs").get_document_path` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_document_path` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
 
-Boto3 documentation:
-[WorkDocs.Client.get_document_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_path)
+```python title="Method definition"
+def get_document_path(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+    Limit: int = ...,
+    Fields: str = ...,
+    Marker: str = ...,
+) -> GetDocumentPathResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDocumentPathRequestRequestTypeDef](./type_defs.md#getdocumentpathrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDocumentPathRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
 
-Returns
-[GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef).
+parent.get_document_path(**kwargs)
+```
 
-<a id="get\_document\_version"></a>
+1. See [:material-code-braces: GetDocumentPathRequestRequestTypeDef](./type_defs.md#getdocumentpathrequestrequesttypedef) 
 
-### get_document_version
+### get\_document\_version
 
 Retrieves version metadata for the specified document.
 
-Type annotations for `boto3.client("workdocs").get_document_version` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_document_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
 
-Boto3 documentation:
-[WorkDocs.Client.get_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_document_version)
+```python title="Method definition"
+def get_document_version(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: str = ...,
+    Fields: str = ...,
+    IncludeCustomMetadata: bool = ...,
+) -> GetDocumentVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDocumentVersionRequestRequestTypeDef](./type_defs.md#getdocumentversionrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Fields`: `str`
-- `IncludeCustomMetadata`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetDocumentVersionRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+}
 
-Returns
-[GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef).
+parent.get_document_version(**kwargs)
+```
 
-<a id="get\_folder"></a>
+1. See [:material-code-braces: GetDocumentVersionRequestRequestTypeDef](./type_defs.md#getdocumentversionrequestrequesttypedef) 
 
-### get_folder
+### get\_folder
 
 Retrieves the metadata of the specified folder.
 
-Type annotations for `boto3.client("workdocs").get_folder` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
 
-Boto3 documentation:
-[WorkDocs.Client.get_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder)
+```python title="Method definition"
+def get_folder(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+    IncludeCustomMetadata: bool = ...,
+) -> GetFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFolderRequestRequestTypeDef](./type_defs.md#getfolderrequestrequesttypedef).
+1. See [:material-code-braces: GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `IncludeCustomMetadata`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetFolderRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
+parent.get_folder(**kwargs)
+```
 
-<a id="get\_folder\_path"></a>
+1. See [:material-code-braces: GetFolderRequestRequestTypeDef](./type_defs.md#getfolderrequestrequesttypedef) 
 
-### get_folder_path
+### get\_folder\_path
 
 Retrieves the path information (the hierarchy from the root folder) for the
 specified folder.
 
-Type annotations for `boto3.client("workdocs").get_folder_path` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_folder_path` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
 
-Boto3 documentation:
-[WorkDocs.Client.get_folder_path](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_folder_path)
+```python title="Method definition"
+def get_folder_path(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+    Limit: int = ...,
+    Fields: str = ...,
+    Marker: str = ...,
+) -> GetFolderPathResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFolderPathRequestRequestTypeDef](./type_defs.md#getfolderpathrequestrequesttypedef).
+1. See [:material-code-braces: GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Limit`: `int`
-- `Fields`: `str`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFolderPathRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-Returns
-[GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef).
+parent.get_folder_path(**kwargs)
+```
 
-<a id="get\_resources"></a>
+1. See [:material-code-braces: GetFolderPathRequestRequestTypeDef](./type_defs.md#getfolderpathrequestrequesttypedef) 
 
-### get_resources
+### get\_resources
 
 Retrieves a collection of resources, including folders and documents.
 
-Type annotations for `boto3.client("workdocs").get_resources` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
 
-Boto3 documentation:
-[WorkDocs.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.get_resources)
+```python title="Method definition"
+def get_resources(
+    self,
+    *,
+    AuthenticationToken: str = ...,
+    UserId: str = ...,
+    CollectionType: ResourceCollectionTypeType = ...,  # (1)
+    Limit: int = ...,
+    Marker: str = ...,
+) -> GetResourcesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcesRequestRequestTypeDef](./type_defs.md#getresourcesrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
+2. See [:material-code-braces: GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AuthenticationToken`: `str`
-- `UserId`: `str`
-- `CollectionType`: `Literal['SHARED_WITH_ME']` (see
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype))
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetResourcesRequestRequestTypeDef = {  # (1)
+    "AuthenticationToken": ...,
+}
 
-Returns
-[GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef).
+parent.get_resources(**kwargs)
+```
 
-<a id="initiate\_document\_version\_upload"></a>
+1. See [:material-code-braces: GetResourcesRequestRequestTypeDef](./type_defs.md#getresourcesrequestrequesttypedef) 
 
-### initiate_document_version_upload
+### initiate\_document\_version\_upload
 
 Creates a new document object and version object.
 
-Type annotations for
-`boto3.client("workdocs").initiate_document_version_upload` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").initiate_document_version_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
 
-Boto3 documentation:
-[WorkDocs.Client.initiate_document_version_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.initiate_document_version_upload)
+```python title="Method definition"
+def initiate_document_version_upload(
+    self,
+    *,
+    ParentFolderId: str,
+    AuthenticationToken: str = ...,
+    Id: str = ...,
+    Name: str = ...,
+    ContentCreatedTimestamp: Union[datetime, str] = ...,
+    ContentModifiedTimestamp: Union[datetime, str] = ...,
+    ContentType: str = ...,
+    DocumentSizeInBytes: int = ...,
+) -> InitiateDocumentVersionUploadResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InitiateDocumentVersionUploadRequestRequestTypeDef](./type_defs.md#initiatedocumentversionuploadrequestrequesttypedef).
+1. See [:material-code-braces: InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParentFolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `ContentCreatedTimestamp`: `Union`\[`datetime`, `str`\]
-- `ContentModifiedTimestamp`: `Union`\[`datetime`, `str`\]
-- `ContentType`: `str`
-- `DocumentSizeInBytes`: `int`
+```python title="Usage example with kwargs"
+kwargs: InitiateDocumentVersionUploadRequestRequestTypeDef = {  # (1)
+    "ParentFolderId": ...,
+}
 
-Returns
-[InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef).
+parent.initiate_document_version_upload(**kwargs)
+```
 
-<a id="remove\_all\_resource\_permissions"></a>
+1. See [:material-code-braces: InitiateDocumentVersionUploadRequestRequestTypeDef](./type_defs.md#initiatedocumentversionuploadrequestrequesttypedef) 
 
-### remove_all_resource_permissions
+### remove\_all\_resource\_permissions
 
 Removes all the permissions from the specified resource.
 
-Type annotations for `boto3.client("workdocs").remove_all_resource_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").remove_all_resource_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
 
-Boto3 documentation:
-[WorkDocs.Client.remove_all_resource_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_all_resource_permissions)
+```python title="Method definition"
+def remove_all_resource_permissions(
+    self,
+    *,
+    ResourceId: str,
+    AuthenticationToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveAllResourcePermissionsRequestRequestTypeDef](./type_defs.md#removeallresourcepermissionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `AuthenticationToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveAllResourcePermissionsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-<a id="remove\_resource\_permission"></a>
+parent.remove_all_resource_permissions(**kwargs)
+```
 
-### remove_resource_permission
+1. See [:material-code-braces: RemoveAllResourcePermissionsRequestRequestTypeDef](./type_defs.md#removeallresourcepermissionsrequestrequesttypedef) 
+
+### remove\_resource\_permission
 
 Removes the permission for the specified principal from the specified resource.
 
-Type annotations for `boto3.client("workdocs").remove_resource_permission`
-method.
+Type annotations and code completion for `#!python boto3.client("workdocs").remove_resource_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
 
-Boto3 documentation:
-[WorkDocs.Client.remove_resource_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.remove_resource_permission)
+```python title="Method definition"
+def remove_resource_permission(
+    self,
+    *,
+    ResourceId: str,
+    PrincipalId: str,
+    AuthenticationToken: str = ...,
+    PrincipalType: PrincipalTypeType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveResourcePermissionRequestRequestTypeDef](./type_defs.md#removeresourcepermissionrequestrequesttypedef).
+1. See [:material-code-brackets: PrincipalTypeType](./literals.md#principaltypetype) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `PrincipalId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
+```python title="Usage example with kwargs"
+kwargs: RemoveResourcePermissionRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "PrincipalId": ...,
+}
 
-<a id="update\_document"></a>
+parent.remove_resource_permission(**kwargs)
+```
 
-### update_document
+1. See [:material-code-braces: RemoveResourcePermissionRequestRequestTypeDef](./type_defs.md#removeresourcepermissionrequestrequesttypedef) 
+
+### update\_document
 
 Updates the specified attributes of a document.
 
-Type annotations for `boto3.client("workdocs").update_document` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").update_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
 
-Boto3 documentation:
-[WorkDocs.Client.update_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document)
+```python title="Method definition"
+def update_document(
+    self,
+    *,
+    DocumentId: str,
+    AuthenticationToken: str = ...,
+    Name: str = ...,
+    ParentFolderId: str = ...,
+    ResourceState: ResourceStateTypeType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDocumentRequestRequestTypeDef](./type_defs.md#updatedocumentrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Name`: `str`
-- `ParentFolderId`: `str`
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateDocumentRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+}
 
-<a id="update\_document\_version"></a>
+parent.update_document(**kwargs)
+```
 
-### update_document_version
+1. See [:material-code-braces: UpdateDocumentRequestRequestTypeDef](./type_defs.md#updatedocumentrequestrequesttypedef) 
+
+### update\_document\_version
 
 Changes the status of the document version to ACTIVE.
 
-Type annotations for `boto3.client("workdocs").update_document_version` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").update_document_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
 
-Boto3 documentation:
-[WorkDocs.Client.update_document_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_document_version)
+```python title="Method definition"
+def update_document_version(
+    self,
+    *,
+    DocumentId: str,
+    VersionId: str,
+    AuthenticationToken: str = ...,
+    VersionStatus: DocumentVersionStatusType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDocumentVersionRequestRequestTypeDef](./type_defs.md#updatedocumentversionrequestrequesttypedef).
+1. See [:material-code-brackets: DocumentVersionStatusType](./literals.md#documentversionstatustype) 
 
-Keyword-only arguments:
 
-- `DocumentId`: `str` *(required)*
-- `VersionId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `VersionStatus`: `Literal['ACTIVE']` (see
-  [DocumentVersionStatusType](./literals.md#documentversionstatustype))
+```python title="Usage example with kwargs"
+kwargs: UpdateDocumentVersionRequestRequestTypeDef = {  # (1)
+    "DocumentId": ...,
+    "VersionId": ...,
+}
 
-<a id="update\_folder"></a>
+parent.update_document_version(**kwargs)
+```
 
-### update_folder
+1. See [:material-code-braces: UpdateDocumentVersionRequestRequestTypeDef](./type_defs.md#updatedocumentversionrequestrequesttypedef) 
+
+### update\_folder
 
 Updates the specified attributes of the specified folder.
 
-Type annotations for `boto3.client("workdocs").update_folder` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").update_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
 
-Boto3 documentation:
-[WorkDocs.Client.update_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_folder)
+```python title="Method definition"
+def update_folder(
+    self,
+    *,
+    FolderId: str,
+    AuthenticationToken: str = ...,
+    Name: str = ...,
+    ParentFolderId: str = ...,
+    ResourceState: ResourceStateTypeType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFolderRequestRequestTypeDef](./type_defs.md#updatefolderrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceStateTypeType](./literals.md#resourcestatetypetype) 
 
-Keyword-only arguments:
 
-- `FolderId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `Name`: `str`
-- `ParentFolderId`: `str`
-- `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateFolderRequestRequestTypeDef = {  # (1)
+    "FolderId": ...,
+}
 
-<a id="update\_user"></a>
+parent.update_folder(**kwargs)
+```
 
-### update_user
+1. See [:material-code-braces: UpdateFolderRequestRequestTypeDef](./type_defs.md#updatefolderrequestrequesttypedef) 
+
+### update\_user
 
 Updates the specified attributes of the specified user, and grants or revokes
 administrative privileges to the Amazon WorkDocs site.
 
-Type annotations for `boto3.client("workdocs").update_user` method.
+Type annotations and code completion for `#!python boto3.client("workdocs").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
 
-Boto3 documentation:
-[WorkDocs.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    UserId: str,
+    AuthenticationToken: str = ...,
+    GivenName: str = ...,
+    Surname: str = ...,
+    Type: UserTypeType = ...,  # (1)
+    StorageRule: StorageRuleTypeTypeDef = ...,  # (2)
+    TimeZoneId: str = ...,
+    Locale: LocaleTypeType = ...,  # (3)
+    GrantPoweruserPrivileges: BooleanEnumTypeType = ...,  # (4)
+) -> UpdateUserResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-brackets: UserTypeType](./literals.md#usertypetype) 
+2. See [:material-code-braces: StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef) 
+3. See [:material-code-brackets: LocaleTypeType](./literals.md#localetypetype) 
+4. See [:material-code-brackets: BooleanEnumTypeType](./literals.md#booleanenumtypetype) 
+5. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `AuthenticationToken`: `str`
-- `GivenName`: `str`
-- `Surname`: `str`
-- `Type`: [UserTypeType](./literals.md#usertypetype)
-- `StorageRule`:
-  [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
-- `TimeZoneId`: `str`
-- `Locale`: [LocaleTypeType](./literals.md#localetypetype)
-- `GrantPoweruserPrivileges`:
-  [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("workdocs").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("workdocs").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_activities")` ->
-  [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
-- `client.get_paginator("describe_comments")` ->
-  [DescribeCommentsPaginator](./paginators.md#describecommentspaginator)
-- `client.get_paginator("describe_document_versions")` ->
-  [DescribeDocumentVersionsPaginator](./paginators.md#describedocumentversionspaginator)
-- `client.get_paginator("describe_folder_contents")` ->
-  [DescribeFolderContentsPaginator](./paginators.md#describefoldercontentspaginator)
-- `client.get_paginator("describe_groups")` ->
-  [DescribeGroupsPaginator](./paginators.md#describegroupspaginator)
-- `client.get_paginator("describe_notification_subscriptions")` ->
-  [DescribeNotificationSubscriptionsPaginator](./paginators.md#describenotificationsubscriptionspaginator)
-- `client.get_paginator("describe_resource_permissions")` ->
-  [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
-- `client.get_paginator("describe_root_folders")` ->
-  [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
-- `client.get_paginator("describe_users")` ->
-  [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+- `client.get_paginator("describe_activities")` -> [DescribeActivitiesPaginator](./paginators.md#describeactivitiespaginator)
+- `client.get_paginator("describe_comments")` -> [DescribeCommentsPaginator](./paginators.md#describecommentspaginator)
+- `client.get_paginator("describe_document_versions")` -> [DescribeDocumentVersionsPaginator](./paginators.md#describedocumentversionspaginator)
+- `client.get_paginator("describe_folder_contents")` -> [DescribeFolderContentsPaginator](./paginators.md#describefoldercontentspaginator)
+- `client.get_paginator("describe_groups")` -> [DescribeGroupsPaginator](./paginators.md#describegroupspaginator)
+- `client.get_paginator("describe_notification_subscriptions")` -> [DescribeNotificationSubscriptionsPaginator](./paginators.md#describenotificationsubscriptionspaginator)
+- `client.get_paginator("describe_resource_permissions")` -> [DescribeResourcePermissionsPaginator](./paginators.md#describeresourcepermissionspaginator)
+- `client.get_paginator("describe_root_folders")` -> [DescribeRootFoldersPaginator](./paginators.md#describerootfolderspaginator)
+- `client.get_paginator("describe_users")` -> [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+
+
+

@@ -1,1962 +1,2433 @@
-<a id="typed-dictionaries-for-boto3-lakeformation-module"></a>
-
-# Typed dictionaries for boto3 LakeFormation module
+# Typed dictionaries
 
 > [Index](../README.md) > [LakeFormation](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
-type annotations stubs module
-[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LakeFormation module](#typed-dictionaries-for-boto3-lakeformation-module)
-  - [AddLFTagsToResourceRequestRequestTypeDef](#addlftagstoresourcerequestrequesttypedef)
-  - [AddLFTagsToResourceResponseTypeDef](#addlftagstoresourceresponsetypedef)
-  - [AddObjectInputTypeDef](#addobjectinputtypedef)
-  - [AuditContextTypeDef](#auditcontexttypedef)
-  - [BatchGrantPermissionsRequestRequestTypeDef](#batchgrantpermissionsrequestrequesttypedef)
-  - [BatchGrantPermissionsResponseTypeDef](#batchgrantpermissionsresponsetypedef)
-  - [BatchPermissionsFailureEntryTypeDef](#batchpermissionsfailureentrytypedef)
-  - [BatchPermissionsRequestEntryTypeDef](#batchpermissionsrequestentrytypedef)
-  - [BatchRevokePermissionsRequestRequestTypeDef](#batchrevokepermissionsrequestrequesttypedef)
-  - [BatchRevokePermissionsResponseTypeDef](#batchrevokepermissionsresponsetypedef)
-  - [CancelTransactionRequestRequestTypeDef](#canceltransactionrequestrequesttypedef)
-  - [ColumnLFTagTypeDef](#columnlftagtypedef)
-  - [ColumnWildcardTypeDef](#columnwildcardtypedef)
-  - [CommitTransactionRequestRequestTypeDef](#committransactionrequestrequesttypedef)
-  - [CommitTransactionResponseTypeDef](#committransactionresponsetypedef)
-  - [CreateDataCellsFilterRequestRequestTypeDef](#createdatacellsfilterrequestrequesttypedef)
-  - [CreateLFTagRequestRequestTypeDef](#createlftagrequestrequesttypedef)
-  - [DataCellsFilterResourceTypeDef](#datacellsfilterresourcetypedef)
-  - [DataCellsFilterTypeDef](#datacellsfiltertypedef)
-  - [DataLakePrincipalTypeDef](#datalakeprincipaltypedef)
-  - [DataLakeSettingsTypeDef](#datalakesettingstypedef)
-  - [DataLocationResourceTypeDef](#datalocationresourcetypedef)
-  - [DatabaseResourceTypeDef](#databaseresourcetypedef)
-  - [DeleteDataCellsFilterRequestRequestTypeDef](#deletedatacellsfilterrequestrequesttypedef)
-  - [DeleteLFTagRequestRequestTypeDef](#deletelftagrequestrequesttypedef)
-  - [DeleteObjectInputTypeDef](#deleteobjectinputtypedef)
-  - [DeleteObjectsOnCancelRequestRequestTypeDef](#deleteobjectsoncancelrequestrequesttypedef)
-  - [DeregisterResourceRequestRequestTypeDef](#deregisterresourcerequestrequesttypedef)
-  - [DescribeResourceRequestRequestTypeDef](#describeresourcerequestrequesttypedef)
-  - [DescribeResourceResponseTypeDef](#describeresourceresponsetypedef)
-  - [DescribeTransactionRequestRequestTypeDef](#describetransactionrequestrequesttypedef)
-  - [DescribeTransactionResponseTypeDef](#describetransactionresponsetypedef)
-  - [DetailsMapTypeDef](#detailsmaptypedef)
-  - [ErrorDetailTypeDef](#errordetailtypedef)
-  - [ExecutionStatisticsTypeDef](#executionstatisticstypedef)
-  - [ExtendTransactionRequestRequestTypeDef](#extendtransactionrequestrequesttypedef)
-  - [FilterConditionTypeDef](#filterconditiontypedef)
-  - [GetDataLakeSettingsRequestRequestTypeDef](#getdatalakesettingsrequestrequesttypedef)
-  - [GetDataLakeSettingsResponseTypeDef](#getdatalakesettingsresponsetypedef)
-  - [GetEffectivePermissionsForPathRequestRequestTypeDef](#geteffectivepermissionsforpathrequestrequesttypedef)
-  - [GetEffectivePermissionsForPathResponseTypeDef](#geteffectivepermissionsforpathresponsetypedef)
-  - [GetLFTagRequestRequestTypeDef](#getlftagrequestrequesttypedef)
-  - [GetLFTagResponseTypeDef](#getlftagresponsetypedef)
-  - [GetQueryStateRequestRequestTypeDef](#getquerystaterequestrequesttypedef)
-  - [GetQueryStateResponseTypeDef](#getquerystateresponsetypedef)
-  - [GetQueryStatisticsRequestRequestTypeDef](#getquerystatisticsrequestrequesttypedef)
-  - [GetQueryStatisticsResponseTypeDef](#getquerystatisticsresponsetypedef)
-  - [GetResourceLFTagsRequestRequestTypeDef](#getresourcelftagsrequestrequesttypedef)
-  - [GetResourceLFTagsResponseTypeDef](#getresourcelftagsresponsetypedef)
-  - [GetTableObjectsRequestRequestTypeDef](#gettableobjectsrequestrequesttypedef)
-  - [GetTableObjectsResponseTypeDef](#gettableobjectsresponsetypedef)
-  - [GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](#gettemporarygluepartitioncredentialsrequestrequesttypedef)
-  - [GetTemporaryGluePartitionCredentialsResponseTypeDef](#gettemporarygluepartitioncredentialsresponsetypedef)
-  - [GetTemporaryGlueTableCredentialsRequestRequestTypeDef](#gettemporarygluetablecredentialsrequestrequesttypedef)
-  - [GetTemporaryGlueTableCredentialsResponseTypeDef](#gettemporarygluetablecredentialsresponsetypedef)
-  - [GetWorkUnitResultsRequestRequestTypeDef](#getworkunitresultsrequestrequesttypedef)
-  - [GetWorkUnitResultsResponseTypeDef](#getworkunitresultsresponsetypedef)
-  - [GetWorkUnitsRequestRequestTypeDef](#getworkunitsrequestrequesttypedef)
-  - [GetWorkUnitsResponseTypeDef](#getworkunitsresponsetypedef)
-  - [GrantPermissionsRequestRequestTypeDef](#grantpermissionsrequestrequesttypedef)
-  - [LFTagErrorTypeDef](#lftagerrortypedef)
-  - [LFTagKeyResourceTypeDef](#lftagkeyresourcetypedef)
-  - [LFTagPairTypeDef](#lftagpairtypedef)
-  - [LFTagPolicyResourceTypeDef](#lftagpolicyresourcetypedef)
-  - [LFTagTypeDef](#lftagtypedef)
-  - [ListDataCellsFilterRequestRequestTypeDef](#listdatacellsfilterrequestrequesttypedef)
-  - [ListDataCellsFilterResponseTypeDef](#listdatacellsfilterresponsetypedef)
-  - [ListLFTagsRequestRequestTypeDef](#listlftagsrequestrequesttypedef)
-  - [ListLFTagsResponseTypeDef](#listlftagsresponsetypedef)
-  - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
-  - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
-  - [ListResourcesRequestRequestTypeDef](#listresourcesrequestrequesttypedef)
-  - [ListResourcesResponseTypeDef](#listresourcesresponsetypedef)
-  - [ListTableStorageOptimizersRequestRequestTypeDef](#listtablestorageoptimizersrequestrequesttypedef)
-  - [ListTableStorageOptimizersResponseTypeDef](#listtablestorageoptimizersresponsetypedef)
-  - [ListTransactionsRequestRequestTypeDef](#listtransactionsrequestrequesttypedef)
-  - [ListTransactionsResponseTypeDef](#listtransactionsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartitionObjectsTypeDef](#partitionobjectstypedef)
-  - [PartitionValueListTypeDef](#partitionvaluelisttypedef)
-  - [PlanningStatisticsTypeDef](#planningstatisticstypedef)
-  - [PrincipalPermissionsTypeDef](#principalpermissionstypedef)
-  - [PrincipalResourcePermissionsTypeDef](#principalresourcepermissionstypedef)
-  - [PutDataLakeSettingsRequestRequestTypeDef](#putdatalakesettingsrequestrequesttypedef)
-  - [QueryPlanningContextTypeDef](#queryplanningcontexttypedef)
-  - [RegisterResourceRequestRequestTypeDef](#registerresourcerequestrequesttypedef)
-  - [RemoveLFTagsFromResourceRequestRequestTypeDef](#removelftagsfromresourcerequestrequesttypedef)
-  - [RemoveLFTagsFromResourceResponseTypeDef](#removelftagsfromresourceresponsetypedef)
-  - [ResourceInfoTypeDef](#resourceinfotypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevokePermissionsRequestRequestTypeDef](#revokepermissionsrequestrequesttypedef)
-  - [RowFilterTypeDef](#rowfiltertypedef)
-  - [SearchDatabasesByLFTagsRequestRequestTypeDef](#searchdatabasesbylftagsrequestrequesttypedef)
-  - [SearchDatabasesByLFTagsResponseTypeDef](#searchdatabasesbylftagsresponsetypedef)
-  - [SearchTablesByLFTagsRequestRequestTypeDef](#searchtablesbylftagsrequestrequesttypedef)
-  - [SearchTablesByLFTagsResponseTypeDef](#searchtablesbylftagsresponsetypedef)
-  - [StartQueryPlanningRequestRequestTypeDef](#startqueryplanningrequestrequesttypedef)
-  - [StartQueryPlanningResponseTypeDef](#startqueryplanningresponsetypedef)
-  - [StartTransactionRequestRequestTypeDef](#starttransactionrequestrequesttypedef)
-  - [StartTransactionResponseTypeDef](#starttransactionresponsetypedef)
-  - [StorageOptimizerTypeDef](#storageoptimizertypedef)
-  - [TableObjectTypeDef](#tableobjecttypedef)
-  - [TableResourceTypeDef](#tableresourcetypedef)
-  - [TableWithColumnsResourceTypeDef](#tablewithcolumnsresourcetypedef)
-  - [TaggedDatabaseTypeDef](#taggeddatabasetypedef)
-  - [TaggedTableTypeDef](#taggedtabletypedef)
-  - [TransactionDescriptionTypeDef](#transactiondescriptiontypedef)
-  - [UpdateLFTagRequestRequestTypeDef](#updatelftagrequestrequesttypedef)
-  - [UpdateResourceRequestRequestTypeDef](#updateresourcerequestrequesttypedef)
-  - [UpdateTableObjectsRequestRequestTypeDef](#updatetableobjectsrequestrequesttypedef)
-  - [UpdateTableStorageOptimizerRequestRequestTypeDef](#updatetablestorageoptimizerrequestrequesttypedef)
-  - [UpdateTableStorageOptimizerResponseTypeDef](#updatetablestorageoptimizerresponsetypedef)
-  - [VirtualObjectTypeDef](#virtualobjecttypedef)
-  - [WorkUnitRangeTypeDef](#workunitrangetypedef)
-  - [WriteOperationTypeDef](#writeoperationtypedef)
-
-<a id="addlftagstoresourcerequestrequesttypedef"></a>
+    Auto-generated documentation for [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
+    type annotations stubs module [mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 ## AddLFTagsToResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequestTypeDef
+
+def get_value() -> AddLFTagsToResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "LFTags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddLFTagsToResourceRequestRequestTypeDef(TypedDict):
+    Resource: ResourceTypeDef,  # (1)
+    LFTags: Sequence[LFTagPairTypeDef],  # (2)
+    CatalogId: NotRequired[str],
+```
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="addlftagstoresourceresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
 ## AddLFTagsToResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceResponseTypeDef
+
+def get_value() -> AddLFTagsToResourceResponseTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddLFTagsToResourceResponseTypeDef(TypedDict):
+    Failures: List[LFTagErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addobjectinputtypedef"></a>
-
+1. See [:material-code-braces: LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddObjectInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import AddObjectInputTypeDef
+
+def get_value() -> AddObjectInputTypeDef:
+    return {
+        "Uri": ...,
+        "ETag": ...,
+        "Size": ...,
+    }
 ```
 
-Required fields:
-
-- `Uri`: `str`
-- `ETag`: `str`
-- `Size`: `int`
-
-Optional fields:
-
-- `PartitionValues`: `Sequence`\[`str`\]
-
-<a id="auditcontexttypedef"></a>
+```python title="Definition"
+class AddObjectInputTypeDef(TypedDict):
+    Uri: str,
+    ETag: str,
+    Size: int,
+    PartitionValues: NotRequired[Sequence[str]],
+```
 
 ## AuditContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import AuditContextTypeDef
+
+def get_value() -> AuditContextTypeDef:
+    return {
+        "AdditionalAuditContext": ...,
+    }
 ```
 
-Optional fields:
-
-- `AdditionalAuditContext`: `str`
-
-<a id="batchgrantpermissionsrequestrequesttypedef"></a>
+```python title="Definition"
+class AuditContextTypeDef(TypedDict):
+    AdditionalAuditContext: NotRequired[str],
+```
 
 ## BatchGrantPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsRequestRequestTypeDef
+
+def get_value() -> BatchGrantPermissionsRequestRequestTypeDef:
+    return {
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGrantPermissionsRequestRequestTypeDef(TypedDict):
+    Entries: Sequence[BatchPermissionsRequestEntryTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `Entries`:
-  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchgrantpermissionsresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef) 
 ## BatchGrantPermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchGrantPermissionsResponseTypeDef
+
+def get_value() -> BatchGrantPermissionsResponseTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGrantPermissionsResponseTypeDef(TypedDict):
+    Failures: List[BatchPermissionsFailureEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Failures`:
-  `List`\[[BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchpermissionsfailureentrytypedef"></a>
-
+1. See [:material-code-braces: BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchPermissionsFailureEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchPermissionsFailureEntryTypeDef
+
+def get_value() -> BatchPermissionsFailureEntryTypeDef:
+    return {
+        "RequestEntry": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchPermissionsFailureEntryTypeDef(TypedDict):
+    RequestEntry: NotRequired[BatchPermissionsRequestEntryTypeDef],  # (1)
+    Error: NotRequired[ErrorDetailTypeDef],  # (2)
+```
 
-- `RequestEntry`:
-  [BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)
-- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="batchpermissionsrequestentrytypedef"></a>
-
+1. See [:material-code-braces: BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef) 
+2. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## BatchPermissionsRequestEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchPermissionsRequestEntryTypeDef
+
+def get_value() -> BatchPermissionsRequestEntryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPermissionsRequestEntryTypeDef(TypedDict):
+    Id: str,
+    Principal: NotRequired[DataLakePrincipalTypeDef],  # (1)
+    Resource: NotRequired[ResourceTypeDef],  # (2)
+    Permissions: NotRequired[Sequence[PermissionType]],  # (3)
+    PermissionsWithGrantOption: NotRequired[Sequence[PermissionType]],  # (3)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-- `PermissionsWithGrantOption`:
-  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-<a id="batchrevokepermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## BatchRevokePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsRequestRequestTypeDef
+
+def get_value() -> BatchRevokePermissionsRequestRequestTypeDef:
+    return {
+        "Entries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchRevokePermissionsRequestRequestTypeDef(TypedDict):
+    Entries: Sequence[BatchPermissionsRequestEntryTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `Entries`:
-  `Sequence`\[[BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="batchrevokepermissionsresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef) 
 ## BatchRevokePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import BatchRevokePermissionsResponseTypeDef
+
+def get_value() -> BatchRevokePermissionsResponseTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchRevokePermissionsResponseTypeDef(TypedDict):
+    Failures: List[BatchPermissionsFailureEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Failures`:
-  `List`\[[BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="canceltransactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelTransactionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import CancelTransactionRequestRequestTypeDef
+
+def get_value() -> CancelTransactionRequestRequestTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransactionId`: `str`
-
-<a id="columnlftagtypedef"></a>
+```python title="Definition"
+class CancelTransactionRequestRequestTypeDef(TypedDict):
+    TransactionId: str,
+```
 
 ## ColumnLFTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ColumnLFTagTypeDef
+
+def get_value() -> ColumnLFTagTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ColumnLFTagTypeDef(TypedDict):
+    Name: NotRequired[str],
+    LFTags: NotRequired[List[LFTagPairTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-
-<a id="columnwildcardtypedef"></a>
-
+1. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
 ## ColumnWildcardTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ColumnWildcardTypeDef
+
+def get_value() -> ColumnWildcardTypeDef:
+    return {
+        "ExcludedColumnNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExcludedColumnNames`: `Sequence`\[`str`\]
-
-<a id="committransactionrequestrequesttypedef"></a>
+```python title="Definition"
+class ColumnWildcardTypeDef(TypedDict):
+    ExcludedColumnNames: NotRequired[Sequence[str]],
+```
 
 ## CommitTransactionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import CommitTransactionRequestRequestTypeDef
+
+def get_value() -> CommitTransactionRequestRequestTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransactionId`: `str`
-
-<a id="committransactionresponsetypedef"></a>
+```python title="Definition"
+class CommitTransactionRequestRequestTypeDef(TypedDict):
+    TransactionId: str,
+```
 
 ## CommitTransactionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import CommitTransactionResponseTypeDef
+
+def get_value() -> CommitTransactionResponseTypeDef:
+    return {
+        "TransactionStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CommitTransactionResponseTypeDef(TypedDict):
+    TransactionStatus: TransactionStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TransactionStatus`:
-  [TransactionStatusType](./literals.md#transactionstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatacellsfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TransactionStatusType](./literals.md#transactionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDataCellsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import CreateDataCellsFilterRequestRequestTypeDef
+
+def get_value() -> CreateDataCellsFilterRequestRequestTypeDef:
+    return {
+        "TableData": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataCellsFilterRequestRequestTypeDef(TypedDict):
+    TableData: DataCellsFilterTypeDef,  # (1)
+```
 
-- `TableData`: [DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)
-
-<a id="createlftagrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
 ## CreateLFTagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import CreateLFTagRequestRequestTypeDef
+
+def get_value() -> CreateLFTagRequestRequestTypeDef:
+    return {
+        "TagKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-- `TagValues`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="datacellsfilterresourcetypedef"></a>
+```python title="Definition"
+class CreateLFTagRequestRequestTypeDef(TypedDict):
+    TagKey: str,
+    TagValues: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## DataCellsFilterResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DataCellsFilterResourceTypeDef
+
+def get_value() -> DataCellsFilterResourceTypeDef:
+    return {
+        "TableCatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TableCatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Name`: `str`
-
-<a id="datacellsfiltertypedef"></a>
+```python title="Definition"
+class DataCellsFilterResourceTypeDef(TypedDict):
+    TableCatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## DataCellsFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DataCellsFilterTypeDef
+
+def get_value() -> DataCellsFilterTypeDef:
+    return {
+        "TableCatalogId": ...,
+        "DatabaseName": ...,
+        "TableName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataCellsFilterTypeDef(TypedDict):
+    TableCatalogId: str,
+    DatabaseName: str,
+    TableName: str,
+    Name: str,
+    RowFilter: NotRequired[RowFilterTypeDef],  # (1)
+    ColumnNames: NotRequired[Sequence[str]],
+    ColumnWildcard: NotRequired[ColumnWildcardTypeDef],  # (2)
+```
 
-- `TableCatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `RowFilter`: [RowFilterTypeDef](./type_defs.md#rowfiltertypedef)
-- `ColumnNames`: `Sequence`\[`str`\]
-- `ColumnWildcard`:
-  [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
-
-<a id="datalakeprincipaltypedef"></a>
-
+1. See [:material-code-braces: RowFilterTypeDef](./type_defs.md#rowfiltertypedef) 
+2. See [:material-code-braces: ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef) 
 ## DataLakePrincipalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DataLakePrincipalTypeDef
+
+def get_value() -> DataLakePrincipalTypeDef:
+    return {
+        "DataLakePrincipalIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `DataLakePrincipalIdentifier`: `str`
-
-<a id="datalakesettingstypedef"></a>
+```python title="Definition"
+class DataLakePrincipalTypeDef(TypedDict):
+    DataLakePrincipalIdentifier: NotRequired[str],
+```
 
 ## DataLakeSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DataLakeSettingsTypeDef
+
+def get_value() -> DataLakeSettingsTypeDef:
+    return {
+        "DataLakeAdmins": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataLakeSettingsTypeDef(TypedDict):
+    DataLakeAdmins: NotRequired[List[DataLakePrincipalTypeDef]],  # (1)
+    CreateDatabaseDefaultPermissions: NotRequired[List[PrincipalPermissionsTypeDef]],  # (2)
+    CreateTableDefaultPermissions: NotRequired[List[PrincipalPermissionsTypeDef]],  # (2)
+    TrustedResourceOwners: NotRequired[List[str]],
+    AllowExternalDataFiltering: NotRequired[bool],
+    ExternalDataFilteringAllowList: NotRequired[List[DataLakePrincipalTypeDef]],  # (1)
+    AuthorizedSessionTagValueList: NotRequired[List[str]],
+```
 
-- `DataLakeAdmins`:
-  `List`\[[DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)\]
-- `CreateDatabaseDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
-- `CreateTableDefaultPermissions`:
-  `List`\[[PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)\]
-- `TrustedResourceOwners`: `List`\[`str`\]
-- `AllowExternalDataFiltering`: `bool`
-- `ExternalDataFilteringAllowList`:
-  `List`\[[DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)\]
-- `AuthorizedSessionTagValueList`: `List`\[`str`\]
-
-<a id="datalocationresourcetypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef) 
+3. See [:material-code-braces: PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef) 
+4. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
 ## DataLocationResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DataLocationResourceTypeDef
+
+def get_value() -> DataLocationResourceTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="databaseresourcetypedef"></a>
+```python title="Definition"
+class DataLocationResourceTypeDef(TypedDict):
+    ResourceArn: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DatabaseResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DatabaseResourceTypeDef
+
+def get_value() -> DatabaseResourceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deletedatacellsfilterrequestrequesttypedef"></a>
+```python title="Definition"
+class DatabaseResourceTypeDef(TypedDict):
+    Name: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteDataCellsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DeleteDataCellsFilterRequestRequestTypeDef
+
+def get_value() -> DeleteDataCellsFilterRequestRequestTypeDef:
+    return {
+        "TableCatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TableCatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Name`: `str`
-
-<a id="deletelftagrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDataCellsFilterRequestRequestTypeDef(TypedDict):
+    TableCatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## DeleteLFTagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DeleteLFTagRequestRequestTypeDef
+
+def get_value() -> DeleteLFTagRequestRequestTypeDef:
+    return {
+        "TagKey": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deleteobjectinputtypedef"></a>
+```python title="Definition"
+class DeleteLFTagRequestRequestTypeDef(TypedDict):
+    TagKey: str,
+    CatalogId: NotRequired[str],
+```
 
 ## DeleteObjectInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DeleteObjectInputTypeDef
+
+def get_value() -> DeleteObjectInputTypeDef:
+    return {
+        "Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `Uri`: `str`
-
-Optional fields:
-
-- `ETag`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-
-<a id="deleteobjectsoncancelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteObjectInputTypeDef(TypedDict):
+    Uri: str,
+    ETag: NotRequired[str],
+    PartitionValues: NotRequired[Sequence[str]],
+```
 
 ## DeleteObjectsOnCancelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DeleteObjectsOnCancelRequestRequestTypeDef
+
+def get_value() -> DeleteObjectsOnCancelRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "TransactionId": ...,
+        "Objects": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteObjectsOnCancelRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    TransactionId: str,
+    Objects: Sequence[VirtualObjectTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `TransactionId`: `str`
-- `Objects`:
-  `Sequence`\[[VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="deregisterresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualObjectTypeDef](./type_defs.md#virtualobjecttypedef) 
 ## DeregisterResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DeregisterResourceRequestRequestTypeDef
+
+def get_value() -> DeregisterResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="describeresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DescribeResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DescribeResourceRequestRequestTypeDef
+
+def get_value() -> DescribeResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="describeresourceresponsetypedef"></a>
+```python title="Definition"
+class DescribeResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DescribeResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DescribeResourceResponseTypeDef
+
+def get_value() -> DescribeResourceResponseTypeDef:
+    return {
+        "ResourceInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourceResponseTypeDef(TypedDict):
+    ResourceInfo: ResourceInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceInfo`: [ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetransactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTransactionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DescribeTransactionRequestRequestTypeDef
+
+def get_value() -> DescribeTransactionRequestRequestTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Required fields:
-
-- `TransactionId`: `str`
-
-<a id="describetransactionresponsetypedef"></a>
+```python title="Definition"
+class DescribeTransactionRequestRequestTypeDef(TypedDict):
+    TransactionId: str,
+```
 
 ## DescribeTransactionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DescribeTransactionResponseTypeDef
+
+def get_value() -> DescribeTransactionResponseTypeDef:
+    return {
+        "TransactionDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTransactionResponseTypeDef(TypedDict):
+    TransactionDescription: TransactionDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TransactionDescription`:
-  [TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detailsmaptypedef"></a>
-
+1. See [:material-code-braces: TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetailsMapTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import DetailsMapTypeDef
+
+def get_value() -> DetailsMapTypeDef:
+    return {
+        "ResourceShare": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceShare`: `List`\[`str`\]
-
-<a id="errordetailtypedef"></a>
+```python title="Definition"
+class DetailsMapTypeDef(TypedDict):
+    ResourceShare: NotRequired[List[str]],
+```
 
 ## ErrorDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ErrorDetailTypeDef
+
+def get_value() -> ErrorDetailTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="executionstatisticstypedef"></a>
+```python title="Definition"
+class ErrorDetailTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## ExecutionStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ExecutionStatisticsTypeDef
+
+def get_value() -> ExecutionStatisticsTypeDef:
+    return {
+        "AverageExecutionTimeMillis": ...,
+    }
 ```
 
-Optional fields:
-
-- `AverageExecutionTimeMillis`: `int`
-- `DataScannedBytes`: `int`
-- `WorkUnitsExecutedCount`: `int`
-
-<a id="extendtransactionrequestrequesttypedef"></a>
+```python title="Definition"
+class ExecutionStatisticsTypeDef(TypedDict):
+    AverageExecutionTimeMillis: NotRequired[int],
+    DataScannedBytes: NotRequired[int],
+    WorkUnitsExecutedCount: NotRequired[int],
+```
 
 ## ExtendTransactionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ExtendTransactionRequestRequestTypeDef
+
+def get_value() -> ExtendTransactionRequestRequestTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TransactionId`: `str`
-
-<a id="filterconditiontypedef"></a>
+```python title="Definition"
+class ExtendTransactionRequestRequestTypeDef(TypedDict):
+    TransactionId: NotRequired[str],
+```
 
 ## FilterConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import FilterConditionTypeDef
+
+def get_value() -> FilterConditionTypeDef:
+    return {
+        "Field": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FilterConditionTypeDef(TypedDict):
+    Field: NotRequired[FieldNameStringType],  # (1)
+    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (2)
+    StringValueList: NotRequired[Sequence[str]],
+```
 
-- `Field`: [FieldNameStringType](./literals.md#fieldnamestringtype)
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `StringValueList`: `Sequence`\[`str`\]
-
-<a id="getdatalakesettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FieldNameStringType](./literals.md#fieldnamestringtype) 
+2. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## GetDataLakeSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsRequestRequestTypeDef
+
+def get_value() -> GetDataLakeSettingsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getdatalakesettingsresponsetypedef"></a>
+```python title="Definition"
+class GetDataLakeSettingsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+```
 
 ## GetDataLakeSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsResponseTypeDef
+
+def get_value() -> GetDataLakeSettingsResponseTypeDef:
+    return {
+        "DataLakeSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataLakeSettingsResponseTypeDef(TypedDict):
+    DataLakeSettings: DataLakeSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="geteffectivepermissionsforpathrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEffectivePermissionsForPathRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathRequestRequestTypeDef
+
+def get_value() -> GetEffectivePermissionsForPathRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="geteffectivepermissionsforpathresponsetypedef"></a>
+```python title="Definition"
+class GetEffectivePermissionsForPathRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    CatalogId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetEffectivePermissionsForPathResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetEffectivePermissionsForPathResponseTypeDef
+
+def get_value() -> GetEffectivePermissionsForPathResponseTypeDef:
+    return {
+        "Permissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEffectivePermissionsForPathResponseTypeDef(TypedDict):
+    Permissions: List[PrincipalResourcePermissionsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Permissions`:
-  `List`\[[PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlftagrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLFTagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetLFTagRequestRequestTypeDef
+
+def get_value() -> GetLFTagRequestRequestTypeDef:
+    return {
+        "TagKey": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="getlftagresponsetypedef"></a>
+```python title="Definition"
+class GetLFTagRequestRequestTypeDef(TypedDict):
+    TagKey: str,
+    CatalogId: NotRequired[str],
+```
 
 ## GetLFTagResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetLFTagResponseTypeDef
+
+def get_value() -> GetLFTagResponseTypeDef:
+    return {
+        "CatalogId": ...,
+        "TagKey": ...,
+        "TagValues": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLFTagResponseTypeDef(TypedDict):
+    CatalogId: str,
+    TagKey: str,
+    TagValues: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CatalogId`: `str`
-- `TagKey`: `str`
-- `TagValues`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getquerystaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetQueryStateRequestRequestTypeDef
+
+def get_value() -> GetQueryStateRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-
-<a id="getquerystateresponsetypedef"></a>
+```python title="Definition"
+class GetQueryStateRequestRequestTypeDef(TypedDict):
+    QueryId: str,
+```
 
 ## GetQueryStateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetQueryStateResponseTypeDef
+
+def get_value() -> GetQueryStateResponseTypeDef:
+    return {
+        "Error": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQueryStateResponseTypeDef(TypedDict):
+    Error: str,
+    State: QueryStateStringType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Error`: `str`
-- `State`: [QueryStateStringType](./literals.md#querystatestringtype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getquerystatisticsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueryStateStringType](./literals.md#querystatestringtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQueryStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetQueryStatisticsRequestRequestTypeDef
+
+def get_value() -> GetQueryStatisticsRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-
-<a id="getquerystatisticsresponsetypedef"></a>
+```python title="Definition"
+class GetQueryStatisticsRequestRequestTypeDef(TypedDict):
+    QueryId: str,
+```
 
 ## GetQueryStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetQueryStatisticsResponseTypeDef
+
+def get_value() -> GetQueryStatisticsResponseTypeDef:
+    return {
+        "ExecutionStatistics": ...,
+        "PlanningStatistics": ...,
+        "QuerySubmissionTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQueryStatisticsResponseTypeDef(TypedDict):
+    ExecutionStatistics: ExecutionStatisticsTypeDef,  # (1)
+    PlanningStatistics: PlanningStatisticsTypeDef,  # (2)
+    QuerySubmissionTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ExecutionStatistics`:
-  [ExecutionStatisticsTypeDef](./type_defs.md#executionstatisticstypedef)
-- `PlanningStatistics`:
-  [PlanningStatisticsTypeDef](./type_defs.md#planningstatisticstypedef)
-- `QuerySubmissionTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcelftagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExecutionStatisticsTypeDef](./type_defs.md#executionstatisticstypedef) 
+2. See [:material-code-braces: PlanningStatisticsTypeDef](./type_defs.md#planningstatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceLFTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsRequestRequestTypeDef
+
+def get_value() -> GetResourceLFTagsRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceLFTagsRequestRequestTypeDef(TypedDict):
+    Resource: ResourceTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+    ShowAssignedLFTags: NotRequired[bool],
+```
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `ShowAssignedLFTags`: `bool`
-
-<a id="getresourcelftagsresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 ## GetResourceLFTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetResourceLFTagsResponseTypeDef
+
+def get_value() -> GetResourceLFTagsResponseTypeDef:
+    return {
+        "LFTagOnDatabase": ...,
+        "LFTagsOnTable": ...,
+        "LFTagsOnColumns": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceLFTagsResponseTypeDef(TypedDict):
+    LFTagOnDatabase: List[LFTagPairTypeDef],  # (1)
+    LFTagsOnTable: List[LFTagPairTypeDef],  # (1)
+    LFTagsOnColumns: List[ColumnLFTagTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `LFTagOnDatabase`:
-  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnTable`:
-  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnColumns`:
-  `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettableobjectsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+3. See [:material-code-braces: ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTableObjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTableObjectsRequestRequestTypeDef
+
+def get_value() -> GetTableObjectsRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-- `PartitionPredicate`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="gettableobjectsresponsetypedef"></a>
+```python title="Definition"
+class GetTableObjectsRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    TransactionId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+    PartitionPredicate: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetTableObjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTableObjectsResponseTypeDef
+
+def get_value() -> GetTableObjectsResponseTypeDef:
+    return {
+        "Objects": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTableObjectsResponseTypeDef(TypedDict):
+    Objects: List[PartitionObjectsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Objects`:
-  `List`\[[PartitionObjectsTypeDef](./type_defs.md#partitionobjectstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemporarygluepartitioncredentialsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PartitionObjectsTypeDef](./type_defs.md#partitionobjectstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemporaryGluePartitionCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTemporaryGluePartitionCredentialsRequestRequestTypeDef
+
+def get_value() -> GetTemporaryGluePartitionCredentialsRequestRequestTypeDef:
+    return {
+        "TableArn": ...,
+        "Partition": ...,
+        "SupportedPermissionTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemporaryGluePartitionCredentialsRequestRequestTypeDef(TypedDict):
+    TableArn: str,
+    Partition: PartitionValueListTypeDef,  # (1)
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (2)
+    Permissions: NotRequired[Sequence[PermissionType]],  # (3)
+    DurationSeconds: NotRequired[int],
+    AuditContext: NotRequired[AuditContextTypeDef],  # (4)
+```
 
-- `TableArn`: `str`
-- `Partition`:
-  [PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-- `DurationSeconds`: `int`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="gettemporarygluepartitioncredentialsresponsetypedef"></a>
-
+1. See [:material-code-braces: PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef) 
+2. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
 ## GetTemporaryGluePartitionCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTemporaryGluePartitionCredentialsResponseTypeDef
+
+def get_value() -> GetTemporaryGluePartitionCredentialsResponseTypeDef:
+    return {
+        "AccessKeyId": ...,
+        "SecretAccessKey": ...,
+        "SessionToken": ...,
+        "Expiration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemporaryGluePartitionCredentialsResponseTypeDef(TypedDict):
+    AccessKeyId: str,
+    SecretAccessKey: str,
+    SessionToken: str,
+    Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccessKeyId`: `str`
-- `SecretAccessKey`: `str`
-- `SessionToken`: `str`
-- `Expiration`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettemporarygluetablecredentialsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTemporaryGlueTableCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTemporaryGlueTableCredentialsRequestRequestTypeDef
+
+def get_value() -> GetTemporaryGlueTableCredentialsRequestRequestTypeDef:
+    return {
+        "TableArn": ...,
+        "SupportedPermissionTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemporaryGlueTableCredentialsRequestRequestTypeDef(TypedDict):
+    TableArn: str,
+    SupportedPermissionTypes: Sequence[PermissionTypeType],  # (1)
+    Permissions: NotRequired[Sequence[PermissionType]],  # (2)
+    DurationSeconds: NotRequired[int],
+    AuditContext: NotRequired[AuditContextTypeDef],  # (3)
+```
 
-- `TableArn`: `str`
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-- `DurationSeconds`: `int`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="gettemporarygluetablecredentialsresponsetypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+3. See [:material-code-braces: AuditContextTypeDef](./type_defs.md#auditcontexttypedef) 
 ## GetTemporaryGlueTableCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetTemporaryGlueTableCredentialsResponseTypeDef
+
+def get_value() -> GetTemporaryGlueTableCredentialsResponseTypeDef:
+    return {
+        "AccessKeyId": ...,
+        "SecretAccessKey": ...,
+        "SessionToken": ...,
+        "Expiration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTemporaryGlueTableCredentialsResponseTypeDef(TypedDict):
+    AccessKeyId: str,
+    SecretAccessKey: str,
+    SessionToken: str,
+    Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccessKeyId`: `str`
-- `SecretAccessKey`: `str`
-- `SessionToken`: `str`
-- `Expiration`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkunitresultsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkUnitResultsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetWorkUnitResultsRequestRequestTypeDef
+
+def get_value() -> GetWorkUnitResultsRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+        "WorkUnitId": ...,
+        "WorkUnitToken": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-- `WorkUnitId`: `int`
-- `WorkUnitToken`: `str`
-
-<a id="getworkunitresultsresponsetypedef"></a>
+```python title="Definition"
+class GetWorkUnitResultsRequestRequestTypeDef(TypedDict):
+    QueryId: str,
+    WorkUnitId: int,
+    WorkUnitToken: str,
+```
 
 ## GetWorkUnitResultsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetWorkUnitResultsResponseTypeDef
+
+def get_value() -> GetWorkUnitResultsResponseTypeDef:
+    return {
+        "ResultStream": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkUnitResultsResponseTypeDef(TypedDict):
+    ResultStream: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResultStream`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef
 
-<a id="getworkunitsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef
 
+def get_value() -> GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef:
+    return {
+        "QueryId": ...,
+    }
+```
+
+```python title="Definition"
+class GetWorkUnitsRequestGetWorkUnitsPaginateTypeDef(TypedDict):
+    QueryId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetWorkUnitsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetWorkUnitsRequestRequestTypeDef
+
+def get_value() -> GetWorkUnitsRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `PageSize`: `int`
-
-<a id="getworkunitsresponsetypedef"></a>
+```python title="Definition"
+class GetWorkUnitsRequestRequestTypeDef(TypedDict):
+    QueryId: str,
+    NextToken: NotRequired[str],
+    PageSize: NotRequired[int],
+```
 
 ## GetWorkUnitsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GetWorkUnitsResponseTypeDef
+
+def get_value() -> GetWorkUnitsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "QueryId": ...,
+        "WorkUnitRanges": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkUnitsResponseTypeDef(TypedDict):
+    NextToken: str,
+    QueryId: str,
+    WorkUnitRanges: List[WorkUnitRangeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `QueryId`: `str`
-- `WorkUnitRanges`:
-  `List`\[[WorkUnitRangeTypeDef](./type_defs.md#workunitrangetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="grantpermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkUnitRangeTypeDef](./type_defs.md#workunitrangetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GrantPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import GrantPermissionsRequestRequestTypeDef
+
+def get_value() -> GrantPermissionsRequestRequestTypeDef:
+    return {
+        "Principal": ...,
+        "Resource": ...,
+        "Permissions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrantPermissionsRequestRequestTypeDef(TypedDict):
+    Principal: DataLakePrincipalTypeDef,  # (1)
+    Resource: ResourceTypeDef,  # (2)
+    Permissions: Sequence[PermissionType],  # (3)
+    CatalogId: NotRequired[str],
+    PermissionsWithGrantOption: NotRequired[Sequence[PermissionType]],  # (3)
+```
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-<a id="lftagerrortypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## LFTagErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import LFTagErrorTypeDef
+
+def get_value() -> LFTagErrorTypeDef:
+    return {
+        "LFTag": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LFTagErrorTypeDef(TypedDict):
+    LFTag: NotRequired[LFTagPairTypeDef],  # (1)
+    Error: NotRequired[ErrorDetailTypeDef],  # (2)
+```
 
-- `LFTag`: [LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)
-- `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
-
-<a id="lftagkeyresourcetypedef"></a>
-
+1. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+2. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## LFTagKeyResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import LFTagKeyResourceTypeDef
+
+def get_value() -> LFTagKeyResourceTypeDef:
+    return {
+        "TagKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-- `TagValues`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="lftagpairtypedef"></a>
+```python title="Definition"
+class LFTagKeyResourceTypeDef(TypedDict):
+    TagKey: str,
+    TagValues: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## LFTagPairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import LFTagPairTypeDef
+
+def get_value() -> LFTagPairTypeDef:
+    return {
+        "TagKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-- `TagValues`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="lftagpolicyresourcetypedef"></a>
+```python title="Definition"
+class LFTagPairTypeDef(TypedDict):
+    TagKey: str,
+    TagValues: Sequence[str],
+    CatalogId: NotRequired[str],
+```
 
 ## LFTagPolicyResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import LFTagPolicyResourceTypeDef
+
+def get_value() -> LFTagPolicyResourceTypeDef:
+    return {
+        "ResourceType": ...,
+        "Expression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LFTagPolicyResourceTypeDef(TypedDict):
+    ResourceType: ResourceTypeType,  # (1)
+    Expression: Sequence[LFTagTypeDef],  # (2)
+    CatalogId: NotRequired[str],
+```
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="lftagtypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
 ## LFTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import LFTagTypeDef
+
+def get_value() -> LFTagTypeDef:
+    return {
+        "TagKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LFTagTypeDef(TypedDict):
+    TagKey: str,
+    TagValues: Sequence[str],
+```
 
-- `TagKey`: `str`
-- `TagValues`: `Sequence`\[`str`\]
+## ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef
 
-<a id="listdatacellsfilterrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef
 
+def get_value() -> ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef:
+    return {
+        "Table": ...,
+    }
+```
+
+```python title="Definition"
+class ListDataCellsFilterRequestListDataCellsFilterPaginateTypeDef(TypedDict):
+    Table: NotRequired[TableResourceTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TableResourceTypeDef](./type_defs.md#tableresourcetypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDataCellsFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListDataCellsFilterRequestRequestTypeDef
+
+def get_value() -> ListDataCellsFilterRequestRequestTypeDef:
+    return {
+        "Table": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDataCellsFilterRequestRequestTypeDef(TypedDict):
+    Table: NotRequired[TableResourceTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatacellsfilterresponsetypedef"></a>
-
+1. See [:material-code-braces: TableResourceTypeDef](./type_defs.md#tableresourcetypedef) 
 ## ListDataCellsFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListDataCellsFilterResponseTypeDef
+
+def get_value() -> ListDataCellsFilterResponseTypeDef:
+    return {
+        "DataCellsFilters": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDataCellsFilterResponseTypeDef(TypedDict):
+    DataCellsFilters: List[DataCellsFilterTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataCellsFilters`:
-  `List`\[[DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLFTagsRequestListLFTagsPaginateTypeDef
 
-<a id="listlftagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import ListLFTagsRequestListLFTagsPaginateTypeDef
 
+def get_value() -> ListLFTagsRequestListLFTagsPaginateTypeDef:
+    return {
+        "CatalogId": ...,
+    }
+```
+
+```python title="Definition"
+class ListLFTagsRequestListLFTagsPaginateTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    ResourceShareType: NotRequired[ResourceShareTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLFTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListLFTagsRequestRequestTypeDef
+
+def get_value() -> ListLFTagsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListLFTagsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    ResourceShareType: NotRequired[ResourceShareTypeType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `CatalogId`: `str`
-- `ResourceShareType`:
-  [ResourceShareTypeType](./literals.md#resourcesharetypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listlftagsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceShareTypeType](./literals.md#resourcesharetypetype) 
 ## ListLFTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListLFTagsResponseTypeDef
+
+def get_value() -> ListLFTagsResponseTypeDef:
+    return {
+        "LFTags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLFTagsResponseTypeDef(TypedDict):
+    LFTags: List[LFTagPairTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpermissionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListPermissionsRequestRequestTypeDef
+
+def get_value() -> ListPermissionsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPermissionsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    Principal: NotRequired[DataLakePrincipalTypeDef],  # (1)
+    ResourceType: NotRequired[DataLakeResourceTypeType],  # (2)
+    Resource: NotRequired[ResourceTypeDef],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    IncludeRelated: NotRequired[str],
+```
 
-- `CatalogId`: `str`
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `ResourceType`:
-  [DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncludeRelated`: `str`
-
-<a id="listpermissionsresponsetypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-brackets: DataLakeResourceTypeType](./literals.md#datalakeresourcetypetype) 
+3. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
 ## ListPermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListPermissionsResponseTypeDef
+
+def get_value() -> ListPermissionsResponseTypeDef:
+    return {
+        "PrincipalResourcePermissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPermissionsResponseTypeDef(TypedDict):
+    PrincipalResourcePermissions: List[PrincipalResourcePermissionsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PrincipalResourcePermissions`:
-  `List`\[[PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListResourcesRequestRequestTypeDef
+
+def get_value() -> ListResourcesRequestRequestTypeDef:
+    return {
+        "FilterConditionList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListResourcesRequestRequestTypeDef(TypedDict):
+    FilterConditionList: NotRequired[Sequence[FilterConditionTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `FilterConditionList`:
-  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listresourcesresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
 ## ListResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListResourcesResponseTypeDef
+
+def get_value() -> ListResourcesResponseTypeDef:
+    return {
+        "ResourceInfoList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResourcesResponseTypeDef(TypedDict):
+    ResourceInfoList: List[ResourceInfoTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceInfoList`:
-  `List`\[[ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtablestorageoptimizersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceInfoTypeDef](./type_defs.md#resourceinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTableStorageOptimizersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListTableStorageOptimizersRequestRequestTypeDef
+
+def get_value() -> ListTableStorageOptimizersRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTableStorageOptimizersRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    CatalogId: NotRequired[str],
+    StorageOptimizerType: NotRequired[OptimizerTypeType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `StorageOptimizerType`: [OptimizerTypeType](./literals.md#optimizertypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtablestorageoptimizersresponsetypedef"></a>
-
+1. See [:material-code-brackets: OptimizerTypeType](./literals.md#optimizertypetype) 
 ## ListTableStorageOptimizersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListTableStorageOptimizersResponseTypeDef
+
+def get_value() -> ListTableStorageOptimizersResponseTypeDef:
+    return {
+        "StorageOptimizerList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTableStorageOptimizersResponseTypeDef(TypedDict):
+    StorageOptimizerList: List[StorageOptimizerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StorageOptimizerList`:
-  `List`\[[StorageOptimizerTypeDef](./type_defs.md#storageoptimizertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtransactionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StorageOptimizerTypeDef](./type_defs.md#storageoptimizertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTransactionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListTransactionsRequestRequestTypeDef
+
+def get_value() -> ListTransactionsRequestRequestTypeDef:
+    return {
+        "CatalogId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTransactionsRequestRequestTypeDef(TypedDict):
+    CatalogId: NotRequired[str],
+    StatusFilter: NotRequired[TransactionStatusFilterType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `CatalogId`: `str`
-- `StatusFilter`:
-  [TransactionStatusFilterType](./literals.md#transactionstatusfiltertype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtransactionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TransactionStatusFilterType](./literals.md#transactionstatusfiltertype) 
 ## ListTransactionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ListTransactionsResponseTypeDef
+
+def get_value() -> ListTransactionsResponseTypeDef:
+    return {
+        "Transactions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTransactionsResponseTypeDef(TypedDict):
+    Transactions: List[TransactionDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Transactions`:
-  `List`\[[TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TransactionDescriptionTypeDef](./type_defs.md#transactiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partitionobjectstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartitionObjectsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PartitionObjectsTypeDef
+
+def get_value() -> PartitionObjectsTypeDef:
+    return {
+        "PartitionValues": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PartitionObjectsTypeDef(TypedDict):
+    PartitionValues: NotRequired[List[str]],
+    Objects: NotRequired[List[TableObjectTypeDef]],  # (1)
+```
 
-- `PartitionValues`: `List`\[`str`\]
-- `Objects`: `List`\[[TableObjectTypeDef](./type_defs.md#tableobjecttypedef)\]
-
-<a id="partitionvaluelisttypedef"></a>
-
+1. See [:material-code-braces: TableObjectTypeDef](./type_defs.md#tableobjecttypedef) 
 ## PartitionValueListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PartitionValueListTypeDef
+
+def get_value() -> PartitionValueListTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Values`: `Sequence`\[`str`\]
-
-<a id="planningstatisticstypedef"></a>
+```python title="Definition"
+class PartitionValueListTypeDef(TypedDict):
+    Values: Sequence[str],
+```
 
 ## PlanningStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PlanningStatisticsTypeDef
+
+def get_value() -> PlanningStatisticsTypeDef:
+    return {
+        "EstimatedDataToScanBytes": ...,
+    }
 ```
 
-Optional fields:
-
-- `EstimatedDataToScanBytes`: `int`
-- `PlanningTimeMillis`: `int`
-- `QueueTimeMillis`: `int`
-- `WorkUnitsGeneratedCount`: `int`
-
-<a id="principalpermissionstypedef"></a>
+```python title="Definition"
+class PlanningStatisticsTypeDef(TypedDict):
+    EstimatedDataToScanBytes: NotRequired[int],
+    PlanningTimeMillis: NotRequired[int],
+    QueueTimeMillis: NotRequired[int],
+    WorkUnitsGeneratedCount: NotRequired[int],
+```
 
 ## PrincipalPermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PrincipalPermissionsTypeDef
+
+def get_value() -> PrincipalPermissionsTypeDef:
+    return {
+        "Principal": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrincipalPermissionsTypeDef(TypedDict):
+    Principal: NotRequired[DataLakePrincipalTypeDef],  # (1)
+    Permissions: NotRequired[List[PermissionType]],  # (2)
+```
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
-
-<a id="principalresourcepermissionstypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## PrincipalResourcePermissionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PrincipalResourcePermissionsTypeDef
+
+def get_value() -> PrincipalResourcePermissionsTypeDef:
+    return {
+        "Principal": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PrincipalResourcePermissionsTypeDef(TypedDict):
+    Principal: NotRequired[DataLakePrincipalTypeDef],  # (1)
+    Resource: NotRequired[ResourceTypeDef],  # (2)
+    Permissions: NotRequired[List[PermissionType]],  # (3)
+    PermissionsWithGrantOption: NotRequired[List[PermissionType]],  # (3)
+    AdditionalDetails: NotRequired[DetailsMapTypeDef],  # (5)
+```
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
-- `PermissionsWithGrantOption`:
-  `List`\[[PermissionType](./literals.md#permissiontype)\]
-- `AdditionalDetails`: [DetailsMapTypeDef](./type_defs.md#detailsmaptypedef)
-
-<a id="putdatalakesettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+5. See [:material-code-braces: DetailsMapTypeDef](./type_defs.md#detailsmaptypedef) 
 ## PutDataLakeSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import PutDataLakeSettingsRequestRequestTypeDef
+
+def get_value() -> PutDataLakeSettingsRequestRequestTypeDef:
+    return {
+        "DataLakeSettings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDataLakeSettingsRequestRequestTypeDef(TypedDict):
+    DataLakeSettings: DataLakeSettingsTypeDef,  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DataLakeSettings`:
-  [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="queryplanningcontexttypedef"></a>
-
+1. See [:material-code-braces: DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef) 
 ## QueryPlanningContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import QueryPlanningContextTypeDef
+
+def get_value() -> QueryPlanningContextTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `QueryAsOfTime`: `Union`\[`datetime`, `str`\]
-- `QueryParameters`: `Mapping`\[`str`, `str`\]
-- `TransactionId`: `str`
-
-<a id="registerresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class QueryPlanningContextTypeDef(TypedDict):
+    DatabaseName: str,
+    CatalogId: NotRequired[str],
+    QueryAsOfTime: NotRequired[Union[datetime, str]],
+    QueryParameters: NotRequired[Mapping[str, str]],
+    TransactionId: NotRequired[str],
+```
 
 ## RegisterResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import RegisterResourceRequestRequestTypeDef
+
+def get_value() -> RegisterResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `UseServiceLinkedRole`: `bool`
-- `RoleArn`: `str`
-
-<a id="removelftagsfromresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class RegisterResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    UseServiceLinkedRole: NotRequired[bool],
+    RoleArn: NotRequired[str],
+```
 
 ## RemoveLFTagsFromResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceRequestRequestTypeDef
+
+def get_value() -> RemoveLFTagsFromResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "LFTags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveLFTagsFromResourceRequestRequestTypeDef(TypedDict):
+    Resource: ResourceTypeDef,  # (1)
+    LFTags: Sequence[LFTagPairTypeDef],  # (2)
+    CatalogId: NotRequired[str],
+```
 
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `LFTags`: `Sequence`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="removelftagsfromresourceresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
 ## RemoveLFTagsFromResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import RemoveLFTagsFromResourceResponseTypeDef
+
+def get_value() -> RemoveLFTagsFromResourceResponseTypeDef:
+    return {
+        "Failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveLFTagsFromResourceResponseTypeDef(TypedDict):
+    Failures: List[LFTagErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourceinfotypedef"></a>
-
+1. See [:material-code-braces: LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ResourceInfoTypeDef
+
+def get_value() -> ResourceInfoTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-- `RoleArn`: `str`
-- `LastModified`: `datetime`
-
-<a id="resourcetypedef"></a>
+```python title="Definition"
+class ResourceInfoTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+    RoleArn: NotRequired[str],
+    LastModified: NotRequired[datetime],
+```
 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "Catalog": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    Catalog: NotRequired[Mapping[str, Any]],
+    Database: NotRequired[DatabaseResourceTypeDef],  # (1)
+    Table: NotRequired[TableResourceTypeDef],  # (2)
+    TableWithColumns: NotRequired[TableWithColumnsResourceTypeDef],  # (3)
+    DataLocation: NotRequired[DataLocationResourceTypeDef],  # (4)
+    DataCellsFilter: NotRequired[DataCellsFilterResourceTypeDef],  # (5)
+    LFTag: NotRequired[LFTagKeyResourceTypeDef],  # (6)
+    LFTagPolicy: NotRequired[LFTagPolicyResourceTypeDef],  # (7)
+```
 
-- `Catalog`: `Mapping`\[`str`, `Any`\]
-- `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
-- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
-- `TableWithColumns`:
-  [TableWithColumnsResourceTypeDef](./type_defs.md#tablewithcolumnsresourcetypedef)
-- `DataLocation`:
-  [DataLocationResourceTypeDef](./type_defs.md#datalocationresourcetypedef)
-- `DataCellsFilter`:
-  [DataCellsFilterResourceTypeDef](./type_defs.md#datacellsfilterresourcetypedef)
-- `LFTag`: [LFTagKeyResourceTypeDef](./type_defs.md#lftagkeyresourcetypedef)
-- `LFTagPolicy`:
-  [LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef) 
+2. See [:material-code-braces: TableResourceTypeDef](./type_defs.md#tableresourcetypedef) 
+3. See [:material-code-braces: TableWithColumnsResourceTypeDef](./type_defs.md#tablewithcolumnsresourcetypedef) 
+4. See [:material-code-braces: DataLocationResourceTypeDef](./type_defs.md#datalocationresourcetypedef) 
+5. See [:material-code-braces: DataCellsFilterResourceTypeDef](./type_defs.md#datacellsfilterresourcetypedef) 
+6. See [:material-code-braces: LFTagKeyResourceTypeDef](./type_defs.md#lftagkeyresourcetypedef) 
+7. See [:material-code-braces: LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revokepermissionsrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevokePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import RevokePermissionsRequestRequestTypeDef
+
+def get_value() -> RevokePermissionsRequestRequestTypeDef:
+    return {
+        "Principal": ...,
+        "Resource": ...,
+        "Permissions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RevokePermissionsRequestRequestTypeDef(TypedDict):
+    Principal: DataLakePrincipalTypeDef,  # (1)
+    Resource: ResourceTypeDef,  # (2)
+    Permissions: Sequence[PermissionType],  # (3)
+    CatalogId: NotRequired[str],
+    PermissionsWithGrantOption: NotRequired[Sequence[PermissionType]],  # (3)
+```
 
-- `Principal`:
-  [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
-- `Resource`: [ResourceTypeDef](./type_defs.md#resourcetypedef)
-- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `PermissionsWithGrantOption`:
-  `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
-
-<a id="rowfiltertypedef"></a>
-
+1. See [:material-code-braces: DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
+4. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## RowFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import RowFilterTypeDef
+
+def get_value() -> RowFilterTypeDef:
+    return {
+        "FilterExpression": ...,
+    }
 ```
 
-Optional fields:
-
-- `FilterExpression`: `str`
-- `AllRowsWildcard`: `Mapping`\[`str`, `Any`\]
-
-<a id="searchdatabasesbylftagsrequestrequesttypedef"></a>
+```python title="Definition"
+class RowFilterTypeDef(TypedDict):
+    FilterExpression: NotRequired[str],
+    AllRowsWildcard: NotRequired[Mapping[str, Any]],
+```
 
 ## SearchDatabasesByLFTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsRequestRequestTypeDef
+
+def get_value() -> SearchDatabasesByLFTagsRequestRequestTypeDef:
+    return {
+        "Expression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchDatabasesByLFTagsRequestRequestTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CatalogId: NotRequired[str],
+```
 
-- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+## SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CatalogId`: `str`
+def get_value() -> SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
 
-<a id="searchdatabasesbylftagsresponsetypedef"></a>
+```python title="Definition"
+class SearchDatabasesByLFTagsRequestSearchDatabasesByLFTagsPaginateTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchDatabasesByLFTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import SearchDatabasesByLFTagsResponseTypeDef
+
+def get_value() -> SearchDatabasesByLFTagsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "DatabaseList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchDatabasesByLFTagsResponseTypeDef(TypedDict):
+    NextToken: str,
+    DatabaseList: List[TaggedDatabaseTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DatabaseList`:
-  `List`\[[TaggedDatabaseTypeDef](./type_defs.md#taggeddatabasetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchtablesbylftagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaggedDatabaseTypeDef](./type_defs.md#taggeddatabasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchTablesByLFTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsRequestRequestTypeDef
+
+def get_value() -> SearchTablesByLFTagsRequestRequestTypeDef:
+    return {
+        "Expression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchTablesByLFTagsRequestRequestTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    CatalogId: NotRequired[str],
+```
 
-- `Expression`: `Sequence`\[[LFTagTypeDef](./type_defs.md#lftagtypedef)\]
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+## SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `CatalogId`: `str`
+def get_value() -> SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
 
-<a id="searchtablesbylftagsresponsetypedef"></a>
+```python title="Definition"
+class SearchTablesByLFTagsRequestSearchTablesByLFTagsPaginateTypeDef(TypedDict):
+    Expression: Sequence[LFTagTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: LFTagTypeDef](./type_defs.md#lftagtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchTablesByLFTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import SearchTablesByLFTagsResponseTypeDef
+
+def get_value() -> SearchTablesByLFTagsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "TableList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchTablesByLFTagsResponseTypeDef(TypedDict):
+    NextToken: str,
+    TableList: List[TaggedTableTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `TableList`:
-  `List`\[[TaggedTableTypeDef](./type_defs.md#taggedtabletypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startqueryplanningrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaggedTableTypeDef](./type_defs.md#taggedtabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartQueryPlanningRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import StartQueryPlanningRequestRequestTypeDef
+
+def get_value() -> StartQueryPlanningRequestRequestTypeDef:
+    return {
+        "QueryPlanningContext": ...,
+        "QueryString": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartQueryPlanningRequestRequestTypeDef(TypedDict):
+    QueryPlanningContext: QueryPlanningContextTypeDef,  # (1)
+    QueryString: str,
+```
 
-- `QueryPlanningContext`:
-  [QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef)
-- `QueryString`: `str`
-
-<a id="startqueryplanningresponsetypedef"></a>
-
+1. See [:material-code-braces: QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef) 
 ## StartQueryPlanningResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import StartQueryPlanningResponseTypeDef
+
+def get_value() -> StartQueryPlanningResponseTypeDef:
+    return {
+        "QueryId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartQueryPlanningResponseTypeDef(TypedDict):
+    QueryId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `QueryId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="starttransactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTransactionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import StartTransactionRequestRequestTypeDef
+
+def get_value() -> StartTransactionRequestRequestTypeDef:
+    return {
+        "TransactionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartTransactionRequestRequestTypeDef(TypedDict):
+    TransactionType: NotRequired[TransactionTypeType],  # (1)
+```
 
-- `TransactionType`: [TransactionTypeType](./literals.md#transactiontypetype)
-
-<a id="starttransactionresponsetypedef"></a>
-
+1. See [:material-code-brackets: TransactionTypeType](./literals.md#transactiontypetype) 
 ## StartTransactionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import StartTransactionResponseTypeDef
+
+def get_value() -> StartTransactionResponseTypeDef:
+    return {
+        "TransactionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTransactionResponseTypeDef(TypedDict):
+    TransactionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TransactionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="storageoptimizertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StorageOptimizerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import StorageOptimizerTypeDef
+
+def get_value() -> StorageOptimizerTypeDef:
+    return {
+        "StorageOptimizerType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StorageOptimizerTypeDef(TypedDict):
+    StorageOptimizerType: NotRequired[OptimizerTypeType],  # (1)
+    Config: NotRequired[Dict[str, str]],
+    ErrorMessage: NotRequired[str],
+    Warnings: NotRequired[str],
+    LastRunDetails: NotRequired[str],
+```
 
-- `StorageOptimizerType`: [OptimizerTypeType](./literals.md#optimizertypetype)
-- `Config`: `Dict`\[`str`, `str`\]
-- `ErrorMessage`: `str`
-- `Warnings`: `str`
-- `LastRunDetails`: `str`
-
-<a id="tableobjecttypedef"></a>
-
+1. See [:material-code-brackets: OptimizerTypeType](./literals.md#optimizertypetype) 
 ## TableObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TableObjectTypeDef
+
+def get_value() -> TableObjectTypeDef:
+    return {
+        "Uri": ...,
+    }
 ```
 
-Optional fields:
-
-- `Uri`: `str`
-- `ETag`: `str`
-- `Size`: `int`
-
-<a id="tableresourcetypedef"></a>
+```python title="Definition"
+class TableObjectTypeDef(TypedDict):
+    Uri: NotRequired[str],
+    ETag: NotRequired[str],
+    Size: NotRequired[int],
+```
 
 ## TableResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TableResourceTypeDef
+
+def get_value() -> TableResourceTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `Name`: `str`
-- `TableWildcard`: `Mapping`\[`str`, `Any`\]
-
-<a id="tablewithcolumnsresourcetypedef"></a>
+```python title="Definition"
+class TableResourceTypeDef(TypedDict):
+    DatabaseName: str,
+    CatalogId: NotRequired[str],
+    Name: NotRequired[str],
+    TableWildcard: NotRequired[Mapping[str, Any]],
+```
 
 ## TableWithColumnsResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TableWithColumnsResourceTypeDef
+
+def get_value() -> TableWithColumnsResourceTypeDef:
+    return {
+        "DatabaseName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableWithColumnsResourceTypeDef(TypedDict):
+    DatabaseName: str,
+    Name: str,
+    CatalogId: NotRequired[str],
+    ColumnNames: NotRequired[Sequence[str]],
+    ColumnWildcard: NotRequired[ColumnWildcardTypeDef],  # (1)
+```
 
-- `DatabaseName`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `ColumnNames`: `Sequence`\[`str`\]
-- `ColumnWildcard`:
-  [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
-
-<a id="taggeddatabasetypedef"></a>
-
+1. See [:material-code-braces: ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef) 
 ## TaggedDatabaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TaggedDatabaseTypeDef
+
+def get_value() -> TaggedDatabaseTypeDef:
+    return {
+        "Database": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaggedDatabaseTypeDef(TypedDict):
+    Database: NotRequired[DatabaseResourceTypeDef],  # (1)
+    LFTags: NotRequired[List[LFTagPairTypeDef]],  # (2)
+```
 
-- `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
-- `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-
-<a id="taggedtabletypedef"></a>
-
+1. See [:material-code-braces: DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
 ## TaggedTableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TaggedTableTypeDef
+
+def get_value() -> TaggedTableTypeDef:
+    return {
+        "Table": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaggedTableTypeDef(TypedDict):
+    Table: NotRequired[TableResourceTypeDef],  # (1)
+    LFTagOnDatabase: NotRequired[List[LFTagPairTypeDef]],  # (2)
+    LFTagsOnTable: NotRequired[List[LFTagPairTypeDef]],  # (2)
+    LFTagsOnColumns: NotRequired[List[ColumnLFTagTypeDef]],  # (4)
+```
 
-- `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
-- `LFTagOnDatabase`:
-  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnTable`:
-  `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
-- `LFTagsOnColumns`:
-  `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
-
-<a id="transactiondescriptiontypedef"></a>
-
+1. See [:material-code-braces: TableResourceTypeDef](./type_defs.md#tableresourcetypedef) 
+2. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+3. See [:material-code-braces: LFTagPairTypeDef](./type_defs.md#lftagpairtypedef) 
+4. See [:material-code-braces: ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef) 
 ## TransactionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import TransactionDescriptionTypeDef
+
+def get_value() -> TransactionDescriptionTypeDef:
+    return {
+        "TransactionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TransactionDescriptionTypeDef(TypedDict):
+    TransactionId: NotRequired[str],
+    TransactionStatus: NotRequired[TransactionStatusType],  # (1)
+    TransactionStartTime: NotRequired[datetime],
+    TransactionEndTime: NotRequired[datetime],
+```
 
-- `TransactionId`: `str`
-- `TransactionStatus`:
-  [TransactionStatusType](./literals.md#transactionstatustype)
-- `TransactionStartTime`: `datetime`
-- `TransactionEndTime`: `datetime`
-
-<a id="updatelftagrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TransactionStatusType](./literals.md#transactionstatustype) 
 ## UpdateLFTagRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import UpdateLFTagRequestRequestTypeDef
+
+def get_value() -> UpdateLFTagRequestRequestTypeDef:
+    return {
+        "TagKey": ...,
+    }
 ```
 
-Required fields:
-
-- `TagKey`: `str`
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TagValuesToDelete`: `Sequence`\[`str`\]
-- `TagValuesToAdd`: `Sequence`\[`str`\]
-
-<a id="updateresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateLFTagRequestRequestTypeDef(TypedDict):
+    TagKey: str,
+    CatalogId: NotRequired[str],
+    TagValuesToDelete: NotRequired[Sequence[str]],
+    TagValuesToAdd: NotRequired[Sequence[str]],
+```
 
 ## UpdateResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import UpdateResourceRequestRequestTypeDef
+
+def get_value() -> UpdateResourceRequestRequestTypeDef:
+    return {
+        "RoleArn": ...,
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-- `ResourceArn`: `str`
-
-<a id="updatetableobjectsrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateResourceRequestRequestTypeDef(TypedDict):
+    RoleArn: str,
+    ResourceArn: str,
+```
 
 ## UpdateTableObjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import UpdateTableObjectsRequestRequestTypeDef
+
+def get_value() -> UpdateTableObjectsRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "WriteOperations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableObjectsRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    WriteOperations: Sequence[WriteOperationTypeDef],  # (1)
+    CatalogId: NotRequired[str],
+    TransactionId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `WriteOperations`:
-  `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-- `TransactionId`: `str`
-
-<a id="updatetablestorageoptimizerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: WriteOperationTypeDef](./type_defs.md#writeoperationtypedef) 
 ## UpdateTableStorageOptimizerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import UpdateTableStorageOptimizerRequestRequestTypeDef
+
+def get_value() -> UpdateTableStorageOptimizerRequestRequestTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "StorageOptimizerConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableStorageOptimizerRequestRequestTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    StorageOptimizerConfig: Mapping[OptimizerTypeType, Mapping[str, str]],  # (1)
+    CatalogId: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `StorageOptimizerConfig`:
-  `Mapping`\[[OptimizerTypeType](./literals.md#optimizertypetype),
-  `Mapping`\[`str`, `str`\]\]
-
-Optional fields:
-
-- `CatalogId`: `str`
-
-<a id="updatetablestorageoptimizerresponsetypedef"></a>
-
+1. See [:material-code-brackets: OptimizerTypeType](./literals.md#optimizertypetype) 
 ## UpdateTableStorageOptimizerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import UpdateTableStorageOptimizerResponseTypeDef
+
+def get_value() -> UpdateTableStorageOptimizerResponseTypeDef:
+    return {
+        "Result": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableStorageOptimizerResponseTypeDef(TypedDict):
+    Result: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Result`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="virtualobjecttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VirtualObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import VirtualObjectTypeDef
+
+def get_value() -> VirtualObjectTypeDef:
+    return {
+        "Uri": ...,
+    }
 ```
 
-Required fields:
-
-- `Uri`: `str`
-
-Optional fields:
-
-- `ETag`: `str`
-
-<a id="workunitrangetypedef"></a>
+```python title="Definition"
+class VirtualObjectTypeDef(TypedDict):
+    Uri: str,
+    ETag: NotRequired[str],
+```
 
 ## WorkUnitRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import WorkUnitRangeTypeDef
+
+def get_value() -> WorkUnitRangeTypeDef:
+    return {
+        "WorkUnitIdMax": ...,
+        "WorkUnitIdMin": ...,
+        "WorkUnitToken": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkUnitIdMax`: `int`
-- `WorkUnitIdMin`: `int`
-- `WorkUnitToken`: `str`
-
-<a id="writeoperationtypedef"></a>
+```python title="Definition"
+class WorkUnitRangeTypeDef(TypedDict):
+    WorkUnitIdMax: int,
+    WorkUnitIdMin: int,
+    WorkUnitToken: str,
+```
 
 ## WriteOperationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lakeformation.type_defs import WriteOperationTypeDef
+
+def get_value() -> WriteOperationTypeDef:
+    return {
+        "AddObject": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WriteOperationTypeDef(TypedDict):
+    AddObject: NotRequired[AddObjectInputTypeDef],  # (1)
+    DeleteObject: NotRequired[DeleteObjectInputTypeDef],  # (2)
+```
 
-- `AddObject`: [AddObjectInputTypeDef](./type_defs.md#addobjectinputtypedef)
-- `DeleteObject`:
-  [DeleteObjectInputTypeDef](./type_defs.md#deleteobjectinputtypedef)
+1. See [:material-code-braces: AddObjectInputTypeDef](./type_defs.md#addobjectinputtypedef) 
+2. See [:material-code-braces: DeleteObjectInputTypeDef](./type_defs.md#deleteobjectinputtypedef) 

@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-wafregional-module"></a>
-
-# Examples for boto3 WAFRegional module
+# Examples
 
 > [Index](../README.md) > [WAFRegional](./README.md) > Examples
 
-- [Examples for boto3 WAFRegional module](#examples-for-boto3-wafregional-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
+    type annotations stubs module [mypy-boto3-waf-regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[waf-regional]` package installed.
 
-Write your `WAFRegional` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `WAFRegional` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WAFRegionalClient
-# and provides type checking and code completion
-client = session.client("waf-regional")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_web_acl()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("waf-regional")  # (1)
+    result = client.create_byte_match_set()  # (2)
+    ```
+
+    1. client: [WAFRegionalClient](./client.md)
+    2. result: [:material-code-braces: CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[waf-regional]` or a standalone `mypy_boto3_waf_regional`
-package, you have to explicitly specify `client: WAFRegionalClient` type
-annotation.
+With `boto3-stubs-lite[waf-regional]`
+or a standalone `mypy_boto3_waf_regional` package, you have to explicitly specify `client: WAFRegionalClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_waf_regional.client import WAFRegionalClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_waf_regional.client import WAFRegionalClient
+    from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetResponseTypeDef
+    from mypy_boto3_waf_regional.type_defs import CreateByteMatchSetRequestRequestTypeDef
 
 
-from mypy_boto3_waf_regional.type_defs import Dict[str, Any]
+    session = Session()
+
+    client: WAFRegionalClient = session.client("waf-regional")
+
+    kwargs: CreateByteMatchSetRequestRequestTypeDef = {...}
+    result: CreateByteMatchSetResponseTypeDef = client.create_byte_match_set(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: WAFRegionalClient = session.client("waf-regional")
 
-result: Dict[str, Any] = client.associate_web_acl()
-```
+

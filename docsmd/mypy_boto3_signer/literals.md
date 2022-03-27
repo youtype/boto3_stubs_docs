@@ -1,542 +1,555 @@
-<a id="literals-for-boto3-signer-module"></a>
-
-# Literals for boto3 signer module
+# Literals
 
 > [Index](../README.md) > [signer](./README.md) > Literals
 
-Auto-generated documentation for
-[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
-type annotations stubs module
-[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
+!!! note ""
 
-- [Literals for boto3 signer module](#literals-for-boto3-signer-module)
-  - [CategoryType](#categorytype)
-  - [EncryptionAlgorithmType](#encryptionalgorithmtype)
-  - [HashAlgorithmType](#hashalgorithmtype)
-  - [ImageFormatType](#imageformattype)
-  - [ListSigningJobsPaginatorName](#listsigningjobspaginatorname)
-  - [ListSigningPlatformsPaginatorName](#listsigningplatformspaginatorname)
-  - [ListSigningProfilesPaginatorName](#listsigningprofilespaginatorname)
-  - [SigningProfileStatusType](#signingprofilestatustype)
-  - [SigningStatusType](#signingstatustype)
-  - [SuccessfulSigningJobWaiterName](#successfulsigningjobwaitername)
-  - [ValidityTypeType](#validitytypetype)
-  - [signerServiceName](#signerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="categorytype"></a>
+    Auto-generated documentation for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
+    type annotations stubs module [mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ## CategoryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import CategoryType
+
+def get_value() -> CategoryType:
+    return "AWSIoT"
 ```
 
-Values:
-
-- `AWSIoT`
-
-<a id="encryptionalgorithmtype"></a>
-
+```python title="Definition"
+CategoryType = Literal[
+    "AWSIoT",
+]
+```
 ## EncryptionAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import EncryptionAlgorithmType
+
+def get_value() -> EncryptionAlgorithmType:
+    return "ECDSA"
 ```
 
-Values:
-
-- `ECDSA`
-- `RSA`
-
-<a id="hashalgorithmtype"></a>
-
+```python title="Definition"
+EncryptionAlgorithmType = Literal[
+    "ECDSA",
+    "RSA",
+]
+```
 ## HashAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import HashAlgorithmType
+
+def get_value() -> HashAlgorithmType:
+    return "SHA1"
 ```
 
-Values:
-
-- `SHA1`
-- `SHA256`
-
-<a id="imageformattype"></a>
-
+```python title="Definition"
+HashAlgorithmType = Literal[
+    "SHA1",
+    "SHA256",
+]
+```
 ## ImageFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ImageFormatType
+
+def get_value() -> ImageFormatType:
+    return "JSON"
 ```
 
-Values:
-
-- `JSON`
-- `JSONDetached`
-- `JSONEmbedded`
-
-<a id="listsigningjobspaginatorname"></a>
-
+```python title="Definition"
+ImageFormatType = Literal[
+    "JSON",
+    "JSONDetached",
+    "JSONEmbedded",
+]
+```
 ## ListSigningJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ListSigningJobsPaginatorName
+
+def get_value() -> ListSigningJobsPaginatorName:
+    return "list_signing_jobs"
 ```
 
-Values:
-
-- `list_signing_jobs`
-
-<a id="listsigningplatformspaginatorname"></a>
-
+```python title="Definition"
+ListSigningJobsPaginatorName = Literal[
+    "list_signing_jobs",
+]
+```
 ## ListSigningPlatformsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ListSigningPlatformsPaginatorName
+
+def get_value() -> ListSigningPlatformsPaginatorName:
+    return "list_signing_platforms"
 ```
 
-Values:
-
-- `list_signing_platforms`
-
-<a id="listsigningprofilespaginatorname"></a>
-
+```python title="Definition"
+ListSigningPlatformsPaginatorName = Literal[
+    "list_signing_platforms",
+]
+```
 ## ListSigningProfilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ListSigningProfilesPaginatorName
+
+def get_value() -> ListSigningProfilesPaginatorName:
+    return "list_signing_profiles"
 ```
 
-Values:
-
-- `list_signing_profiles`
-
-<a id="signingprofilestatustype"></a>
-
+```python title="Definition"
+ListSigningProfilesPaginatorName = Literal[
+    "list_signing_profiles",
+]
+```
 ## SigningProfileStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import SigningProfileStatusType
+
+def get_value() -> SigningProfileStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Canceled`
-- `Revoked`
-
-<a id="signingstatustype"></a>
-
+```python title="Definition"
+SigningProfileStatusType = Literal[
+    "Active",
+    "Canceled",
+    "Revoked",
+]
+```
 ## SigningStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import SigningStatusType
+
+def get_value() -> SigningStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Succeeded`
-
-<a id="successfulsigningjobwaitername"></a>
-
+```python title="Definition"
+SigningStatusType = Literal[
+    "Failed",
+    "InProgress",
+    "Succeeded",
+]
+```
 ## SuccessfulSigningJobWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import SuccessfulSigningJobWaiterName
+
+def get_value() -> SuccessfulSigningJobWaiterName:
+    return "successful_signing_job"
 ```
 
-Values:
-
-- `successful_signing_job`
-
-<a id="validitytypetype"></a>
-
+```python title="Definition"
+SuccessfulSigningJobWaiterName = Literal[
+    "successful_signing_job",
+]
+```
 ## ValidityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ValidityTypeType
+
+def get_value() -> ValidityTypeType:
+    return "DAYS"
 ```
 
-Values:
-
-- `DAYS`
-- `MONTHS`
-- `YEARS`
-
-<a id="signerservicename"></a>
-
+```python title="Definition"
+ValidityTypeType = Literal[
+    "DAYS",
+    "MONTHS",
+    "YEARS",
+]
+```
 ## signerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import signerServiceName
+
+def get_value() -> signerServiceName:
+    return "signer"
 ```
 
-Values:
-
-- `signer`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+signerServiceName = Literal[
+    "signer",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_signing_jobs"
 ```
 
-Values:
-
-- `list_signing_jobs`
-- `list_signing_platforms`
-- `list_signing_profiles`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_signing_jobs",
+    "list_signing_platforms",
+    "list_signing_profiles",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_signer.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "successful_signing_job"
 ```
 
-Values:
-
-- `successful_signing_job`
+```python title="Definition"
+WaiterName = Literal[
+    "successful_signing_job",
+]
+```

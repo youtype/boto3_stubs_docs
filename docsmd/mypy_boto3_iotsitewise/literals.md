@@ -1,1126 +1,1201 @@
-<a id="literals-for-boto3-iotsitewise-module"></a>
-
-# Literals for boto3 IoTSiteWise module
+# Literals
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Literals
 
-Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module
-[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+!!! note ""
 
-- [Literals for boto3 IoTSiteWise module](#literals-for-boto3-iotsitewise-module)
-  - [AggregateTypeType](#aggregatetypetype)
-  - [AssetActiveWaiterName](#assetactivewaitername)
-  - [AssetErrorCodeType](#asseterrorcodetype)
-  - [AssetModelActiveWaiterName](#assetmodelactivewaitername)
-  - [AssetModelNotExistsWaiterName](#assetmodelnotexistswaitername)
-  - [AssetModelStateType](#assetmodelstatetype)
-  - [AssetNotExistsWaiterName](#assetnotexistswaitername)
-  - [AssetRelationshipTypeType](#assetrelationshiptypetype)
-  - [AssetStateType](#assetstatetype)
-  - [AuthModeType](#authmodetype)
-  - [BatchPutAssetPropertyValueErrorCodeType](#batchputassetpropertyvalueerrorcodetype)
-  - [CapabilitySyncStatusType](#capabilitysyncstatustype)
-  - [ComputeLocationType](#computelocationtype)
-  - [ConfigurationStateType](#configurationstatetype)
-  - [DetailedErrorCodeType](#detailederrorcodetype)
-  - [DisassociatedDataStorageStateType](#disassociateddatastoragestatetype)
-  - [EncryptionTypeType](#encryptiontypetype)
-  - [ErrorCodeType](#errorcodetype)
-  - [ForwardingConfigStateType](#forwardingconfigstatetype)
-  - [GetAssetPropertyAggregatesPaginatorName](#getassetpropertyaggregatespaginatorname)
-  - [GetAssetPropertyValueHistoryPaginatorName](#getassetpropertyvaluehistorypaginatorname)
-  - [GetInterpolatedAssetPropertyValuesPaginatorName](#getinterpolatedassetpropertyvaluespaginatorname)
-  - [IdentityTypeType](#identitytypetype)
-  - [ImageFileTypeType](#imagefiletypetype)
-  - [ListAccessPoliciesPaginatorName](#listaccesspoliciespaginatorname)
-  - [ListAssetModelsPaginatorName](#listassetmodelspaginatorname)
-  - [ListAssetRelationshipsPaginatorName](#listassetrelationshipspaginatorname)
-  - [ListAssetsFilterType](#listassetsfiltertype)
-  - [ListAssetsPaginatorName](#listassetspaginatorname)
-  - [ListAssociatedAssetsPaginatorName](#listassociatedassetspaginatorname)
-  - [ListDashboardsPaginatorName](#listdashboardspaginatorname)
-  - [ListGatewaysPaginatorName](#listgatewayspaginatorname)
-  - [ListPortalsPaginatorName](#listportalspaginatorname)
-  - [ListProjectAssetsPaginatorName](#listprojectassetspaginatorname)
-  - [ListProjectsPaginatorName](#listprojectspaginatorname)
-  - [ListTimeSeriesPaginatorName](#listtimeseriespaginatorname)
-  - [ListTimeSeriesTypeType](#listtimeseriestypetype)
-  - [LoggingLevelType](#loggingleveltype)
-  - [MonitorErrorCodeType](#monitorerrorcodetype)
-  - [PermissionType](#permissiontype)
-  - [PortalActiveWaiterName](#portalactivewaitername)
-  - [PortalNotExistsWaiterName](#portalnotexistswaitername)
-  - [PortalStateType](#portalstatetype)
-  - [PropertyDataTypeType](#propertydatatypetype)
-  - [PropertyNotificationStateType](#propertynotificationstatetype)
-  - [QualityType](#qualitytype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [StorageTypeType](#storagetypetype)
-  - [TimeOrderingType](#timeorderingtype)
-  - [TraversalDirectionType](#traversaldirectiontype)
-  - [TraversalTypeType](#traversaltypetype)
-  - [IoTSiteWiseServiceName](#iotsitewiseservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="aggregatetypetype"></a>
+    Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+    type annotations stubs module [mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ## AggregateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AggregateTypeType
+
+def get_value() -> AggregateTypeType:
+    return "AVERAGE"
 ```
 
-Values:
-
-- `AVERAGE`
-- `COUNT`
-- `MAXIMUM`
-- `MINIMUM`
-- `STANDARD_DEVIATION`
-- `SUM`
-
-<a id="assetactivewaitername"></a>
-
+```python title="Definition"
+AggregateTypeType = Literal[
+    "AVERAGE",
+    "COUNT",
+    "MAXIMUM",
+    "MINIMUM",
+    "STANDARD_DEVIATION",
+    "SUM",
+]
+```
 ## AssetActiveWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetActiveWaiterName
+
+def get_value() -> AssetActiveWaiterName:
+    return "asset_active"
 ```
 
-Values:
-
-- `asset_active`
-
-<a id="asseterrorcodetype"></a>
-
+```python title="Definition"
+AssetActiveWaiterName = Literal[
+    "asset_active",
+]
+```
 ## AssetErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetErrorCodeType
+
+def get_value() -> AssetErrorCodeType:
+    return "INTERNAL_FAILURE"
 ```
 
-Values:
-
-- `INTERNAL_FAILURE`
-
-<a id="assetmodelactivewaitername"></a>
-
+```python title="Definition"
+AssetErrorCodeType = Literal[
+    "INTERNAL_FAILURE",
+]
+```
 ## AssetModelActiveWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetModelActiveWaiterName
+
+def get_value() -> AssetModelActiveWaiterName:
+    return "asset_model_active"
 ```
 
-Values:
-
-- `asset_model_active`
-
-<a id="assetmodelnotexistswaitername"></a>
-
+```python title="Definition"
+AssetModelActiveWaiterName = Literal[
+    "asset_model_active",
+]
+```
 ## AssetModelNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetModelNotExistsWaiterName
+
+def get_value() -> AssetModelNotExistsWaiterName:
+    return "asset_model_not_exists"
 ```
 
-Values:
-
-- `asset_model_not_exists`
-
-<a id="assetmodelstatetype"></a>
-
+```python title="Definition"
+AssetModelNotExistsWaiterName = Literal[
+    "asset_model_not_exists",
+]
+```
 ## AssetModelStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetModelStateType
+
+def get_value() -> AssetModelStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `PROPAGATING`
-- `UPDATING`
-
-<a id="assetnotexistswaitername"></a>
-
+```python title="Definition"
+AssetModelStateType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "PROPAGATING",
+    "UPDATING",
+]
+```
 ## AssetNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetNotExistsWaiterName
+
+def get_value() -> AssetNotExistsWaiterName:
+    return "asset_not_exists"
 ```
 
-Values:
-
-- `asset_not_exists`
-
-<a id="assetrelationshiptypetype"></a>
-
+```python title="Definition"
+AssetNotExistsWaiterName = Literal[
+    "asset_not_exists",
+]
+```
 ## AssetRelationshipTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetRelationshipTypeType
+
+def get_value() -> AssetRelationshipTypeType:
+    return "HIERARCHY"
 ```
 
-Values:
-
-- `HIERARCHY`
-
-<a id="assetstatetype"></a>
-
+```python title="Definition"
+AssetRelationshipTypeType = Literal[
+    "HIERARCHY",
+]
+```
 ## AssetStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AssetStateType
+
+def get_value() -> AssetStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="authmodetype"></a>
-
+```python title="Definition"
+AssetStateType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## AuthModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import AuthModeType
+
+def get_value() -> AuthModeType:
+    return "IAM"
 ```
 
-Values:
-
-- `IAM`
-- `SSO`
-
-<a id="batchputassetpropertyvalueerrorcodetype"></a>
-
+```python title="Definition"
+AuthModeType = Literal[
+    "IAM",
+    "SSO",
+]
+```
 ## BatchPutAssetPropertyValueErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import BatchPutAssetPropertyValueErrorCodeType
+
+def get_value() -> BatchPutAssetPropertyValueErrorCodeType:
+    return "AccessDeniedException"
 ```
 
-Values:
-
-- `AccessDeniedException`
-- `ConflictingOperationException`
-- `InternalFailureException`
-- `InvalidRequestException`
-- `LimitExceededException`
-- `ResourceNotFoundException`
-- `ServiceUnavailableException`
-- `ThrottlingException`
-- `TimestampOutOfRangeException`
-
-<a id="capabilitysyncstatustype"></a>
-
+```python title="Definition"
+BatchPutAssetPropertyValueErrorCodeType = Literal[
+    "AccessDeniedException",
+    "ConflictingOperationException",
+    "InternalFailureException",
+    "InvalidRequestException",
+    "LimitExceededException",
+    "ResourceNotFoundException",
+    "ServiceUnavailableException",
+    "ThrottlingException",
+    "TimestampOutOfRangeException",
+]
+```
 ## CapabilitySyncStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import CapabilitySyncStatusType
+
+def get_value() -> CapabilitySyncStatusType:
+    return "IN_SYNC"
 ```
 
-Values:
-
-- `IN_SYNC`
-- `OUT_OF_SYNC`
-- `SYNC_FAILED`
-- `UNKNOWN`
-
-<a id="computelocationtype"></a>
-
+```python title="Definition"
+CapabilitySyncStatusType = Literal[
+    "IN_SYNC",
+    "OUT_OF_SYNC",
+    "SYNC_FAILED",
+    "UNKNOWN",
+]
+```
 ## ComputeLocationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ComputeLocationType
+
+def get_value() -> ComputeLocationType:
+    return "CLOUD"
 ```
 
-Values:
-
-- `CLOUD`
-- `EDGE`
-
-<a id="configurationstatetype"></a>
-
+```python title="Definition"
+ComputeLocationType = Literal[
+    "CLOUD",
+    "EDGE",
+]
+```
 ## ConfigurationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ConfigurationStateType
+
+def get_value() -> ConfigurationStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-
-<a id="detailederrorcodetype"></a>
-
+```python title="Definition"
+ConfigurationStateType = Literal[
+    "ACTIVE",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+]
+```
 ## DetailedErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import DetailedErrorCodeType
+
+def get_value() -> DetailedErrorCodeType:
+    return "INCOMPATIBLE_COMPUTE_LOCATION"
 ```
 
-Values:
-
-- `INCOMPATIBLE_COMPUTE_LOCATION`
-- `INCOMPATIBLE_FORWARDING_CONFIGURATION`
-
-<a id="disassociateddatastoragestatetype"></a>
-
+```python title="Definition"
+DetailedErrorCodeType = Literal[
+    "INCOMPATIBLE_COMPUTE_LOCATION",
+    "INCOMPATIBLE_FORWARDING_CONFIGURATION",
+]
+```
 ## DisassociatedDataStorageStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import DisassociatedDataStorageStateType
+
+def get_value() -> DisassociatedDataStorageStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="encryptiontypetype"></a>
-
+```python title="Definition"
+DisassociatedDataStorageStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## EncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "KMS_BASED_ENCRYPTION"
 ```
 
-Values:
-
-- `KMS_BASED_ENCRYPTION`
-- `SITEWISE_DEFAULT_ENCRYPTION`
-
-<a id="errorcodetype"></a>
-
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "KMS_BASED_ENCRYPTION",
+    "SITEWISE_DEFAULT_ENCRYPTION",
+]
+```
 ## ErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "INTERNAL_FAILURE"
 ```
 
-Values:
-
-- `INTERNAL_FAILURE`
-- `VALIDATION_ERROR`
-
-<a id="forwardingconfigstatetype"></a>
-
+```python title="Definition"
+ErrorCodeType = Literal[
+    "INTERNAL_FAILURE",
+    "VALIDATION_ERROR",
+]
+```
 ## ForwardingConfigStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ForwardingConfigStateType
+
+def get_value() -> ForwardingConfigStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="getassetpropertyaggregatespaginatorname"></a>
-
+```python title="Definition"
+ForwardingConfigStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## GetAssetPropertyAggregatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import GetAssetPropertyAggregatesPaginatorName
+
+def get_value() -> GetAssetPropertyAggregatesPaginatorName:
+    return "get_asset_property_aggregates"
 ```
 
-Values:
-
-- `get_asset_property_aggregates`
-
-<a id="getassetpropertyvaluehistorypaginatorname"></a>
-
+```python title="Definition"
+GetAssetPropertyAggregatesPaginatorName = Literal[
+    "get_asset_property_aggregates",
+]
+```
 ## GetAssetPropertyValueHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import GetAssetPropertyValueHistoryPaginatorName
+
+def get_value() -> GetAssetPropertyValueHistoryPaginatorName:
+    return "get_asset_property_value_history"
 ```
 
-Values:
-
-- `get_asset_property_value_history`
-
-<a id="getinterpolatedassetpropertyvaluespaginatorname"></a>
-
+```python title="Definition"
+GetAssetPropertyValueHistoryPaginatorName = Literal[
+    "get_asset_property_value_history",
+]
+```
 ## GetInterpolatedAssetPropertyValuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import GetInterpolatedAssetPropertyValuesPaginatorName
+
+def get_value() -> GetInterpolatedAssetPropertyValuesPaginatorName:
+    return "get_interpolated_asset_property_values"
 ```
 
-Values:
-
-- `get_interpolated_asset_property_values`
-
-<a id="identitytypetype"></a>
-
+```python title="Definition"
+GetInterpolatedAssetPropertyValuesPaginatorName = Literal[
+    "get_interpolated_asset_property_values",
+]
+```
 ## IdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import IdentityTypeType
+
+def get_value() -> IdentityTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `IAM`
-- `USER`
-
-<a id="imagefiletypetype"></a>
-
+```python title="Definition"
+IdentityTypeType = Literal[
+    "GROUP",
+    "IAM",
+    "USER",
+]
+```
 ## ImageFileTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ImageFileTypeType
+
+def get_value() -> ImageFileTypeType:
+    return "PNG"
 ```
 
-Values:
-
-- `PNG`
-
-<a id="listaccesspoliciespaginatorname"></a>
-
+```python title="Definition"
+ImageFileTypeType = Literal[
+    "PNG",
+]
+```
 ## ListAccessPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAccessPoliciesPaginatorName
+
+def get_value() -> ListAccessPoliciesPaginatorName:
+    return "list_access_policies"
 ```
 
-Values:
-
-- `list_access_policies`
-
-<a id="listassetmodelspaginatorname"></a>
-
+```python title="Definition"
+ListAccessPoliciesPaginatorName = Literal[
+    "list_access_policies",
+]
+```
 ## ListAssetModelsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAssetModelsPaginatorName
+
+def get_value() -> ListAssetModelsPaginatorName:
+    return "list_asset_models"
 ```
 
-Values:
-
-- `list_asset_models`
-
-<a id="listassetrelationshipspaginatorname"></a>
-
+```python title="Definition"
+ListAssetModelsPaginatorName = Literal[
+    "list_asset_models",
+]
+```
 ## ListAssetRelationshipsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAssetRelationshipsPaginatorName
+
+def get_value() -> ListAssetRelationshipsPaginatorName:
+    return "list_asset_relationships"
 ```
 
-Values:
-
-- `list_asset_relationships`
-
-<a id="listassetsfiltertype"></a>
-
+```python title="Definition"
+ListAssetRelationshipsPaginatorName = Literal[
+    "list_asset_relationships",
+]
+```
 ## ListAssetsFilterType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAssetsFilterType
+
+def get_value() -> ListAssetsFilterType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `TOP_LEVEL`
-
-<a id="listassetspaginatorname"></a>
-
+```python title="Definition"
+ListAssetsFilterType = Literal[
+    "ALL",
+    "TOP_LEVEL",
+]
+```
 ## ListAssetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAssetsPaginatorName
+
+def get_value() -> ListAssetsPaginatorName:
+    return "list_assets"
 ```
 
-Values:
-
-- `list_assets`
-
-<a id="listassociatedassetspaginatorname"></a>
-
+```python title="Definition"
+ListAssetsPaginatorName = Literal[
+    "list_assets",
+]
+```
 ## ListAssociatedAssetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListAssociatedAssetsPaginatorName
+
+def get_value() -> ListAssociatedAssetsPaginatorName:
+    return "list_associated_assets"
 ```
 
-Values:
-
-- `list_associated_assets`
-
-<a id="listdashboardspaginatorname"></a>
-
+```python title="Definition"
+ListAssociatedAssetsPaginatorName = Literal[
+    "list_associated_assets",
+]
+```
 ## ListDashboardsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListDashboardsPaginatorName
+
+def get_value() -> ListDashboardsPaginatorName:
+    return "list_dashboards"
 ```
 
-Values:
-
-- `list_dashboards`
-
-<a id="listgatewayspaginatorname"></a>
-
+```python title="Definition"
+ListDashboardsPaginatorName = Literal[
+    "list_dashboards",
+]
+```
 ## ListGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListGatewaysPaginatorName
+
+def get_value() -> ListGatewaysPaginatorName:
+    return "list_gateways"
 ```
 
-Values:
-
-- `list_gateways`
-
-<a id="listportalspaginatorname"></a>
-
+```python title="Definition"
+ListGatewaysPaginatorName = Literal[
+    "list_gateways",
+]
+```
 ## ListPortalsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListPortalsPaginatorName
+
+def get_value() -> ListPortalsPaginatorName:
+    return "list_portals"
 ```
 
-Values:
-
-- `list_portals`
-
-<a id="listprojectassetspaginatorname"></a>
-
+```python title="Definition"
+ListPortalsPaginatorName = Literal[
+    "list_portals",
+]
+```
 ## ListProjectAssetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListProjectAssetsPaginatorName
+
+def get_value() -> ListProjectAssetsPaginatorName:
+    return "list_project_assets"
 ```
 
-Values:
-
-- `list_project_assets`
-
-<a id="listprojectspaginatorname"></a>
-
+```python title="Definition"
+ListProjectAssetsPaginatorName = Literal[
+    "list_project_assets",
+]
+```
 ## ListProjectsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListProjectsPaginatorName
+
+def get_value() -> ListProjectsPaginatorName:
+    return "list_projects"
 ```
 
-Values:
-
-- `list_projects`
-
-<a id="listtimeseriespaginatorname"></a>
-
+```python title="Definition"
+ListProjectsPaginatorName = Literal[
+    "list_projects",
+]
+```
 ## ListTimeSeriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListTimeSeriesPaginatorName
+
+def get_value() -> ListTimeSeriesPaginatorName:
+    return "list_time_series"
 ```
 
-Values:
-
-- `list_time_series`
-
-<a id="listtimeseriestypetype"></a>
-
+```python title="Definition"
+ListTimeSeriesPaginatorName = Literal[
+    "list_time_series",
+]
+```
 ## ListTimeSeriesTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ListTimeSeriesTypeType
+
+def get_value() -> ListTimeSeriesTypeType:
+    return "ASSOCIATED"
 ```
 
-Values:
-
-- `ASSOCIATED`
-- `DISASSOCIATED`
-
-<a id="loggingleveltype"></a>
-
+```python title="Definition"
+ListTimeSeriesTypeType = Literal[
+    "ASSOCIATED",
+    "DISASSOCIATED",
+]
+```
 ## LoggingLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import LoggingLevelType
+
+def get_value() -> LoggingLevelType:
+    return "ERROR"
 ```
 
-Values:
-
-- `ERROR`
-- `INFO`
-- `OFF`
-
-<a id="monitorerrorcodetype"></a>
-
+```python title="Definition"
+LoggingLevelType = Literal[
+    "ERROR",
+    "INFO",
+    "OFF",
+]
+```
 ## MonitorErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import MonitorErrorCodeType
+
+def get_value() -> MonitorErrorCodeType:
+    return "INTERNAL_FAILURE"
 ```
 
-Values:
-
-- `INTERNAL_FAILURE`
-- `LIMIT_EXCEEDED`
-- `VALIDATION_ERROR`
-
-<a id="permissiontype"></a>
-
+```python title="Definition"
+MonitorErrorCodeType = Literal[
+    "INTERNAL_FAILURE",
+    "LIMIT_EXCEEDED",
+    "VALIDATION_ERROR",
+]
+```
 ## PermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PermissionType
+
+def get_value() -> PermissionType:
+    return "ADMINISTRATOR"
 ```
 
-Values:
-
-- `ADMINISTRATOR`
-- `VIEWER`
-
-<a id="portalactivewaitername"></a>
-
+```python title="Definition"
+PermissionType = Literal[
+    "ADMINISTRATOR",
+    "VIEWER",
+]
+```
 ## PortalActiveWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PortalActiveWaiterName
+
+def get_value() -> PortalActiveWaiterName:
+    return "portal_active"
 ```
 
-Values:
-
-- `portal_active`
-
-<a id="portalnotexistswaitername"></a>
-
+```python title="Definition"
+PortalActiveWaiterName = Literal[
+    "portal_active",
+]
+```
 ## PortalNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PortalNotExistsWaiterName
+
+def get_value() -> PortalNotExistsWaiterName:
+    return "portal_not_exists"
 ```
 
-Values:
-
-- `portal_not_exists`
-
-<a id="portalstatetype"></a>
-
+```python title="Definition"
+PortalNotExistsWaiterName = Literal[
+    "portal_not_exists",
+]
+```
 ## PortalStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PortalStateType
+
+def get_value() -> PortalStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="propertydatatypetype"></a>
-
+```python title="Definition"
+PortalStateType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## PropertyDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PropertyDataTypeType
+
+def get_value() -> PropertyDataTypeType:
+    return "BOOLEAN"
 ```
 
-Values:
-
-- `BOOLEAN`
-- `DOUBLE`
-- `INTEGER`
-- `STRING`
-- `STRUCT`
-
-<a id="propertynotificationstatetype"></a>
-
+```python title="Definition"
+PropertyDataTypeType = Literal[
+    "BOOLEAN",
+    "DOUBLE",
+    "INTEGER",
+    "STRING",
+    "STRUCT",
+]
+```
 ## PropertyNotificationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PropertyNotificationStateType
+
+def get_value() -> PropertyNotificationStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="qualitytype"></a>
-
+```python title="Definition"
+PropertyNotificationStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## QualityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import QualityType
+
+def get_value() -> QualityType:
+    return "BAD"
 ```
 
-Values:
-
-- `BAD`
-- `GOOD`
-- `UNCERTAIN`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+QualityType = Literal[
+    "BAD",
+    "GOOD",
+    "UNCERTAIN",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "PORTAL"
 ```
 
-Values:
-
-- `PORTAL`
-- `PROJECT`
-
-<a id="storagetypetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "PORTAL",
+    "PROJECT",
+]
+```
 ## StorageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import StorageTypeType
+
+def get_value() -> StorageTypeType:
+    return "MULTI_LAYER_STORAGE"
 ```
 
-Values:
-
-- `MULTI_LAYER_STORAGE`
-- `SITEWISE_DEFAULT_STORAGE`
-
-<a id="timeorderingtype"></a>
-
+```python title="Definition"
+StorageTypeType = Literal[
+    "MULTI_LAYER_STORAGE",
+    "SITEWISE_DEFAULT_STORAGE",
+]
+```
 ## TimeOrderingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import TimeOrderingType
+
+def get_value() -> TimeOrderingType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="traversaldirectiontype"></a>
-
+```python title="Definition"
+TimeOrderingType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## TraversalDirectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import TraversalDirectionType
+
+def get_value() -> TraversalDirectionType:
+    return "CHILD"
 ```
 
-Values:
-
-- `CHILD`
-- `PARENT`
-
-<a id="traversaltypetype"></a>
-
+```python title="Definition"
+TraversalDirectionType = Literal[
+    "CHILD",
+    "PARENT",
+]
+```
 ## TraversalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import TraversalTypeType
+
+def get_value() -> TraversalTypeType:
+    return "PATH_TO_ROOT"
 ```
 
-Values:
-
-- `PATH_TO_ROOT`
-
-<a id="iotsitewiseservicename"></a>
-
+```python title="Definition"
+TraversalTypeType = Literal[
+    "PATH_TO_ROOT",
+]
+```
 ## IoTSiteWiseServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import IoTSiteWiseServiceName
+
+def get_value() -> IoTSiteWiseServiceName:
+    return "iotsitewise"
 ```
 
-Values:
-
-- `iotsitewise`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+IoTSiteWiseServiceName = Literal[
+    "iotsitewise",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_asset_property_aggregates"
 ```
 
-Values:
-
-- `get_asset_property_aggregates`
-- `get_asset_property_value_history`
-- `get_interpolated_asset_property_values`
-- `list_access_policies`
-- `list_asset_models`
-- `list_asset_relationships`
-- `list_assets`
-- `list_associated_assets`
-- `list_dashboards`
-- `list_gateways`
-- `list_portals`
-- `list_project_assets`
-- `list_projects`
-- `list_time_series`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "get_asset_property_aggregates",
+    "get_asset_property_value_history",
+    "get_interpolated_asset_property_values",
+    "list_access_policies",
+    "list_asset_models",
+    "list_asset_relationships",
+    "list_assets",
+    "list_associated_assets",
+    "list_dashboards",
+    "list_gateways",
+    "list_portals",
+    "list_project_assets",
+    "list_projects",
+    "list_time_series",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsitewise.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "asset_active"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "asset_active",
+    "asset_model_active",
+    "asset_model_not_exists",
+    "asset_not_exists",
+    "portal_active",
+    "portal_not_exists",
+]
+```
+## RegionName
 
-- `asset_active`
-- `asset_model_active`
-- `asset_model_not_exists`
-- `asset_not_exists`
-- `portal_active`
-- `portal_not_exists`
+```python title="Usage Example"
+from mypy_boto3_iotsitewise.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-west-2",
+]
+```

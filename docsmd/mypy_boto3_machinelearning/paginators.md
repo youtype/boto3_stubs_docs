@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-machinelearning-module"></a>
-
-# Paginators for boto3 MachineLearning module
+# Paginators
 
 > [Index](../README.md) > [MachineLearning](./README.md) > Paginators
 
-Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module
-[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+!!! note ""
 
-- [Paginators for boto3 MachineLearning module](#paginators-for-boto3-machinelearning-module)
-  - [DescribeBatchPredictionsPaginator](#describebatchpredictionspaginator)
-  - [DescribeDataSourcesPaginator](#describedatasourcespaginator)
-  - [DescribeEvaluationsPaginator](#describeevaluationspaginator)
-  - [DescribeMLModelsPaginator](#describemlmodelspaginator)
-
-<a id="describebatchpredictionspaginator"></a>
+    Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+    type annotations stubs module [mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ## DescribeBatchPredictionsPaginator
 
-Type annotations for
-`boto3.client("machinelearning").get_paginator("describe_batch_predictions")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_paginator("describe_batch_predictions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator
@@ -33,37 +21,50 @@ def get_describe_batch_predictions_paginator() -> DescribeBatchPredictionsPagina
     return Session().client("machinelearning").get_paginator("describe_batch_predictions")
 ```
 
-Boto3 documentation:
-[MachineLearning.Paginator.DescribeBatchPredictions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeBatchPredictions)
 
-Arguments for `DescribeBatchPredictionsPaginator.paginate` method:
+### paginate
 
-- `FilterVariable`:
-  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBatchPredictionsPaginator.paginate` method.
 
-`DescribeBatchPredictionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FilterVariable: BatchPredictionFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeBatchPredictionsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="describedatasourcespaginator"></a>
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef](./type_defs.md#describebatchpredictionsinputdescribebatchpredictionspaginatetypedef) 
 ## DescribeDataSourcesPaginator
 
-Type annotations for
-`boto3.client("machinelearning").get_paginator("describe_data_sources")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_paginator("describe_data_sources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.paginator import DescribeDataSourcesPaginator
@@ -72,37 +73,50 @@ def get_describe_data_sources_paginator() -> DescribeDataSourcesPaginator:
     return Session().client("machinelearning").get_paginator("describe_data_sources")
 ```
 
-Boto3 documentation:
-[MachineLearning.Paginator.DescribeDataSources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeDataSources)
 
-Arguments for `DescribeDataSourcesPaginator.paginate` method:
+### paginate
 
-- `FilterVariable`:
-  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDataSourcesPaginator.paginate` method.
 
-`DescribeDataSourcesPaginator.paginate` returns
-`_PageIterator`\[[DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FilterVariable: DataSourceFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeDataSourcesOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeevaluationspaginator"></a>
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef](./type_defs.md#describedatasourcesinputdescribedatasourcespaginatetypedef) 
 ## DescribeEvaluationsPaginator
 
-Type annotations for
-`boto3.client("machinelearning").get_paginator("describe_evaluations")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_paginator("describe_evaluations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.paginator import DescribeEvaluationsPaginator
@@ -111,37 +125,50 @@ def get_describe_evaluations_paginator() -> DescribeEvaluationsPaginator:
     return Session().client("machinelearning").get_paginator("describe_evaluations")
 ```
 
-Boto3 documentation:
-[MachineLearning.Paginator.DescribeEvaluations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeEvaluations)
 
-Arguments for `DescribeEvaluationsPaginator.paginate` method:
+### paginate
 
-- `FilterVariable`:
-  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEvaluationsPaginator.paginate` method.
 
-`DescribeEvaluationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FilterVariable: EvaluationFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeEvaluationsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="describemlmodelspaginator"></a>
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef](./type_defs.md#describeevaluationsinputdescribeevaluationspaginatetypedef) 
 ## DescribeMLModelsPaginator
 
-Type annotations for
-`boto3.client("machinelearning").get_paginator("describe_ml_models")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_paginator("describe_ml_models")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.paginator import DescribeMLModelsPaginator
@@ -150,23 +177,41 @@ def get_describe_ml_models_paginator() -> DescribeMLModelsPaginator:
     return Session().client("machinelearning").get_paginator("describe_ml_models")
 ```
 
-Boto3 documentation:
-[MachineLearning.Paginator.DescribeMLModels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Paginator.DescribeMLModels)
 
-Arguments for `DescribeMLModelsPaginator.paginate` method:
+### paginate
 
-- `FilterVariable`:
-  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMLModelsPaginator.paginate` method.
 
-`DescribeMLModelsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FilterVariable: MLModelFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeMLModelsOutputTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMLModelsInputDescribeMLModelsPaginateTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMLModelsInputDescribeMLModelsPaginateTypeDef](./type_defs.md#describemlmodelsinputdescribemlmodelspaginatetypedef) 

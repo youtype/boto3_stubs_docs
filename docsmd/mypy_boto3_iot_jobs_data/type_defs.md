@@ -1,224 +1,266 @@
-<a id="typed-dictionaries-for-boto3-iotjobsdataplane-module"></a>
-
-# Typed dictionaries for boto3 IoTJobsDataPlane module
+# Typed dictionaries
 
 > [Index](../README.md) > [IoTJobsDataPlane](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module
-[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IoTJobsDataPlane module](#typed-dictionaries-for-boto3-iotjobsdataplane-module)
-  - [DescribeJobExecutionRequestRequestTypeDef](#describejobexecutionrequestrequesttypedef)
-  - [DescribeJobExecutionResponseTypeDef](#describejobexecutionresponsetypedef)
-  - [GetPendingJobExecutionsRequestRequestTypeDef](#getpendingjobexecutionsrequestrequesttypedef)
-  - [GetPendingJobExecutionsResponseTypeDef](#getpendingjobexecutionsresponsetypedef)
-  - [JobExecutionStateTypeDef](#jobexecutionstatetypedef)
-  - [JobExecutionSummaryTypeDef](#jobexecutionsummarytypedef)
-  - [JobExecutionTypeDef](#jobexecutiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartNextPendingJobExecutionRequestRequestTypeDef](#startnextpendingjobexecutionrequestrequesttypedef)
-  - [StartNextPendingJobExecutionResponseTypeDef](#startnextpendingjobexecutionresponsetypedef)
-  - [UpdateJobExecutionRequestRequestTypeDef](#updatejobexecutionrequestrequesttypedef)
-  - [UpdateJobExecutionResponseTypeDef](#updatejobexecutionresponsetypedef)
-
-<a id="describejobexecutionrequestrequesttypedef"></a>
+    Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+    type annotations stubs module [mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ## DescribeJobExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef
+
+def get_value() -> DescribeJobExecutionRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-- `thingName`: `str`
-
-Optional fields:
-
-- `includeJobDocument`: `bool`
-- `executionNumber`: `int`
-
-<a id="describejobexecutionresponsetypedef"></a>
+```python title="Definition"
+class DescribeJobExecutionRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    thingName: str,
+    includeJobDocument: NotRequired[bool],
+    executionNumber: NotRequired[int],
+```
 
 ## DescribeJobExecutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionResponseTypeDef
+
+def get_value() -> DescribeJobExecutionResponseTypeDef:
+    return {
+        "execution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeJobExecutionResponseTypeDef(TypedDict):
+    execution: JobExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpendingjobexecutionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPendingJobExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsRequestRequestTypeDef
+
+def get_value() -> GetPendingJobExecutionsRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-<a id="getpendingjobexecutionsresponsetypedef"></a>
+```python title="Definition"
+class GetPendingJobExecutionsRequestRequestTypeDef(TypedDict):
+    thingName: str,
+```
 
 ## GetPendingJobExecutionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsResponseTypeDef
+
+def get_value() -> GetPendingJobExecutionsResponseTypeDef:
+    return {
+        "inProgressJobs": ...,
+        "queuedJobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPendingJobExecutionsResponseTypeDef(TypedDict):
+    inProgressJobs: List[JobExecutionSummaryTypeDef],  # (1)
+    queuedJobs: List[JobExecutionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `inProgressJobs`:
-  `List`\[[JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)\]
-- `queuedJobs`:
-  `List`\[[JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="jobexecutionstatetypedef"></a>
-
+1. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
+2. See [:material-code-braces: JobExecutionSummaryTypeDef](./type_defs.md#jobexecutionsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobExecutionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionStateTypeDef
+
+def get_value() -> JobExecutionStateTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobExecutionStateTypeDef(TypedDict):
+    status: NotRequired[JobExecutionStatusType],  # (1)
+    statusDetails: NotRequired[Dict[str, str]],
+    versionNumber: NotRequired[int],
+```
 
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-- `statusDetails`: `Dict`\[`str`, `str`\]
-- `versionNumber`: `int`
-
-<a id="jobexecutionsummarytypedef"></a>
-
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
 ## JobExecutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionSummaryTypeDef
+
+def get_value() -> JobExecutionSummaryTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Optional fields:
-
-- `jobId`: `str`
-- `queuedAt`: `int`
-- `startedAt`: `int`
-- `lastUpdatedAt`: `int`
-- `versionNumber`: `int`
-- `executionNumber`: `int`
-
-<a id="jobexecutiontypedef"></a>
+```python title="Definition"
+class JobExecutionSummaryTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    queuedAt: NotRequired[int],
+    startedAt: NotRequired[int],
+    lastUpdatedAt: NotRequired[int],
+    versionNumber: NotRequired[int],
+    executionNumber: NotRequired[int],
+```
 
 ## JobExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import JobExecutionTypeDef
+
+def get_value() -> JobExecutionTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobExecutionTypeDef(TypedDict):
+    jobId: NotRequired[str],
+    thingName: NotRequired[str],
+    status: NotRequired[JobExecutionStatusType],  # (1)
+    statusDetails: NotRequired[Dict[str, str]],
+    queuedAt: NotRequired[int],
+    startedAt: NotRequired[int],
+    lastUpdatedAt: NotRequired[int],
+    approximateSecondsBeforeTimedOut: NotRequired[int],
+    versionNumber: NotRequired[int],
+    executionNumber: NotRequired[int],
+    jobDocument: NotRequired[str],
+```
 
-- `jobId`: `str`
-- `thingName`: `str`
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-- `statusDetails`: `Dict`\[`str`, `str`\]
-- `queuedAt`: `int`
-- `startedAt`: `int`
-- `lastUpdatedAt`: `int`
-- `approximateSecondsBeforeTimedOut`: `int`
-- `versionNumber`: `int`
-- `executionNumber`: `int`
-- `jobDocument`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startnextpendingjobexecutionrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartNextPendingJobExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionRequestRequestTypeDef
+
+def get_value() -> StartNextPendingJobExecutionRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-Optional fields:
-
-- `statusDetails`: `Mapping`\[`str`, `str`\]
-- `stepTimeoutInMinutes`: `int`
-
-<a id="startnextpendingjobexecutionresponsetypedef"></a>
+```python title="Definition"
+class StartNextPendingJobExecutionRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    statusDetails: NotRequired[Mapping[str, str]],
+    stepTimeoutInMinutes: NotRequired[int],
+```
 
 ## StartNextPendingJobExecutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import StartNextPendingJobExecutionResponseTypeDef
+
+def get_value() -> StartNextPendingJobExecutionResponseTypeDef:
+    return {
+        "execution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartNextPendingJobExecutionResponseTypeDef(TypedDict):
+    execution: JobExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatejobexecutionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateJobExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionRequestRequestTypeDef
+
+def get_value() -> UpdateJobExecutionRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "thingName": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobExecutionRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    thingName: str,
+    status: JobExecutionStatusType,  # (1)
+    statusDetails: NotRequired[Mapping[str, str]],
+    stepTimeoutInMinutes: NotRequired[int],
+    expectedVersion: NotRequired[int],
+    includeJobExecutionState: NotRequired[bool],
+    includeJobDocument: NotRequired[bool],
+    executionNumber: NotRequired[int],
+```
 
-- `jobId`: `str`
-- `thingName`: `str`
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-
-Optional fields:
-
-- `statusDetails`: `Mapping`\[`str`, `str`\]
-- `stepTimeoutInMinutes`: `int`
-- `expectedVersion`: `int`
-- `includeJobExecutionState`: `bool`
-- `includeJobDocument`: `bool`
-- `executionNumber`: `int`
-
-<a id="updatejobexecutionresponsetypedef"></a>
-
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
 ## UpdateJobExecutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iot_jobs_data.type_defs import UpdateJobExecutionResponseTypeDef
+
+def get_value() -> UpdateJobExecutionResponseTypeDef:
+    return {
+        "executionState": ...,
+        "jobDocument": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobExecutionResponseTypeDef(TypedDict):
+    executionState: JobExecutionStateTypeDef,  # (1)
+    jobDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `executionState`:
-  [JobExecutionStateTypeDef](./type_defs.md#jobexecutionstatetypedef)
-- `jobDocument`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobExecutionStateTypeDef](./type_defs.md#jobexecutionstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

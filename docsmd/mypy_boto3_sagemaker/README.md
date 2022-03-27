@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-sagemaker-module"></a>
-
-# Type annotations for boto3 SageMaker module
+#  SageMaker module
 
 > [Index](../README.md) > SageMaker
 
-Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
-type annotations stubs module
-[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+!!! note ""
 
-- [Type annotations for boto3 SageMaker module](#type-annotations-for-boto3-sagemaker-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SageMakerClient](#sagemakerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+    type annotations stubs module [mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SageMaker`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sagemaker]'
 python -m pip install mypy-boto3-sagemaker
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,309 +42,37 @@ python -m pip install mypy-boto3-sagemaker
 python -m pip uninstall -y mypy-boto3-sagemaker
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="sagemakerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SageMakerClient
 
-Type annotations for `boto3.client("sagemaker")` as
-[SageMakerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sagemaker")` as [SageMakerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sagemaker.client import SageMakerClient
+
+def get_client() -> SageMakerClient:
+    return Session().cleint("sagemaker")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_association](./client.md#add_association)
-- [add_tags](./client.md#add_tags)
-- [associate_trial_component](./client.md#associate_trial_component)
-- [batch_describe_model_package](./client.md#batch_describe_model_package)
-- [can_paginate](./client.md#can_paginate)
-- [create_action](./client.md#create_action)
-- [create_algorithm](./client.md#create_algorithm)
-- [create_app](./client.md#create_app)
-- [create_app_image_config](./client.md#create_app_image_config)
-- [create_artifact](./client.md#create_artifact)
-- [create_auto_ml_job](./client.md#create_auto_ml_job)
-- [create_code_repository](./client.md#create_code_repository)
-- [create_compilation_job](./client.md#create_compilation_job)
-- [create_context](./client.md#create_context)
-- [create_data_quality_job_definition](./client.md#create_data_quality_job_definition)
-- [create_device_fleet](./client.md#create_device_fleet)
-- [create_domain](./client.md#create_domain)
-- [create_edge_packaging_job](./client.md#create_edge_packaging_job)
-- [create_endpoint](./client.md#create_endpoint)
-- [create_endpoint_config](./client.md#create_endpoint_config)
-- [create_experiment](./client.md#create_experiment)
-- [create_feature_group](./client.md#create_feature_group)
-- [create_flow_definition](./client.md#create_flow_definition)
-- [create_human_task_ui](./client.md#create_human_task_ui)
-- [create_hyper_parameter_tuning_job](./client.md#create_hyper_parameter_tuning_job)
-- [create_image](./client.md#create_image)
-- [create_image_version](./client.md#create_image_version)
-- [create_inference_recommendations_job](./client.md#create_inference_recommendations_job)
-- [create_labeling_job](./client.md#create_labeling_job)
-- [create_model](./client.md#create_model)
-- [create_model_bias_job_definition](./client.md#create_model_bias_job_definition)
-- [create_model_explainability_job_definition](./client.md#create_model_explainability_job_definition)
-- [create_model_package](./client.md#create_model_package)
-- [create_model_package_group](./client.md#create_model_package_group)
-- [create_model_quality_job_definition](./client.md#create_model_quality_job_definition)
-- [create_monitoring_schedule](./client.md#create_monitoring_schedule)
-- [create_notebook_instance](./client.md#create_notebook_instance)
-- [create_notebook_instance_lifecycle_config](./client.md#create_notebook_instance_lifecycle_config)
-- [create_pipeline](./client.md#create_pipeline)
-- [create_presigned_domain_url](./client.md#create_presigned_domain_url)
-- [create_presigned_notebook_instance_url](./client.md#create_presigned_notebook_instance_url)
-- [create_processing_job](./client.md#create_processing_job)
-- [create_project](./client.md#create_project)
-- [create_studio_lifecycle_config](./client.md#create_studio_lifecycle_config)
-- [create_training_job](./client.md#create_training_job)
-- [create_transform_job](./client.md#create_transform_job)
-- [create_trial](./client.md#create_trial)
-- [create_trial_component](./client.md#create_trial_component)
-- [create_user_profile](./client.md#create_user_profile)
-- [create_workforce](./client.md#create_workforce)
-- [create_workteam](./client.md#create_workteam)
-- [delete_action](./client.md#delete_action)
-- [delete_algorithm](./client.md#delete_algorithm)
-- [delete_app](./client.md#delete_app)
-- [delete_app_image_config](./client.md#delete_app_image_config)
-- [delete_artifact](./client.md#delete_artifact)
-- [delete_association](./client.md#delete_association)
-- [delete_code_repository](./client.md#delete_code_repository)
-- [delete_context](./client.md#delete_context)
-- [delete_data_quality_job_definition](./client.md#delete_data_quality_job_definition)
-- [delete_device_fleet](./client.md#delete_device_fleet)
-- [delete_domain](./client.md#delete_domain)
-- [delete_endpoint](./client.md#delete_endpoint)
-- [delete_endpoint_config](./client.md#delete_endpoint_config)
-- [delete_experiment](./client.md#delete_experiment)
-- [delete_feature_group](./client.md#delete_feature_group)
-- [delete_flow_definition](./client.md#delete_flow_definition)
-- [delete_human_task_ui](./client.md#delete_human_task_ui)
-- [delete_image](./client.md#delete_image)
-- [delete_image_version](./client.md#delete_image_version)
-- [delete_model](./client.md#delete_model)
-- [delete_model_bias_job_definition](./client.md#delete_model_bias_job_definition)
-- [delete_model_explainability_job_definition](./client.md#delete_model_explainability_job_definition)
-- [delete_model_package](./client.md#delete_model_package)
-- [delete_model_package_group](./client.md#delete_model_package_group)
-- [delete_model_package_group_policy](./client.md#delete_model_package_group_policy)
-- [delete_model_quality_job_definition](./client.md#delete_model_quality_job_definition)
-- [delete_monitoring_schedule](./client.md#delete_monitoring_schedule)
-- [delete_notebook_instance](./client.md#delete_notebook_instance)
-- [delete_notebook_instance_lifecycle_config](./client.md#delete_notebook_instance_lifecycle_config)
-- [delete_pipeline](./client.md#delete_pipeline)
-- [delete_project](./client.md#delete_project)
-- [delete_studio_lifecycle_config](./client.md#delete_studio_lifecycle_config)
-- [delete_tags](./client.md#delete_tags)
-- [delete_trial](./client.md#delete_trial)
-- [delete_trial_component](./client.md#delete_trial_component)
-- [delete_user_profile](./client.md#delete_user_profile)
-- [delete_workforce](./client.md#delete_workforce)
-- [delete_workteam](./client.md#delete_workteam)
-- [deregister_devices](./client.md#deregister_devices)
-- [describe_action](./client.md#describe_action)
-- [describe_algorithm](./client.md#describe_algorithm)
-- [describe_app](./client.md#describe_app)
-- [describe_app_image_config](./client.md#describe_app_image_config)
-- [describe_artifact](./client.md#describe_artifact)
-- [describe_auto_ml_job](./client.md#describe_auto_ml_job)
-- [describe_code_repository](./client.md#describe_code_repository)
-- [describe_compilation_job](./client.md#describe_compilation_job)
-- [describe_context](./client.md#describe_context)
-- [describe_data_quality_job_definition](./client.md#describe_data_quality_job_definition)
-- [describe_device](./client.md#describe_device)
-- [describe_device_fleet](./client.md#describe_device_fleet)
-- [describe_domain](./client.md#describe_domain)
-- [describe_edge_packaging_job](./client.md#describe_edge_packaging_job)
-- [describe_endpoint](./client.md#describe_endpoint)
-- [describe_endpoint_config](./client.md#describe_endpoint_config)
-- [describe_experiment](./client.md#describe_experiment)
-- [describe_feature_group](./client.md#describe_feature_group)
-- [describe_flow_definition](./client.md#describe_flow_definition)
-- [describe_human_task_ui](./client.md#describe_human_task_ui)
-- [describe_hyper_parameter_tuning_job](./client.md#describe_hyper_parameter_tuning_job)
-- [describe_image](./client.md#describe_image)
-- [describe_image_version](./client.md#describe_image_version)
-- [describe_inference_recommendations_job](./client.md#describe_inference_recommendations_job)
-- [describe_labeling_job](./client.md#describe_labeling_job)
-- [describe_lineage_group](./client.md#describe_lineage_group)
-- [describe_model](./client.md#describe_model)
-- [describe_model_bias_job_definition](./client.md#describe_model_bias_job_definition)
-- [describe_model_explainability_job_definition](./client.md#describe_model_explainability_job_definition)
-- [describe_model_package](./client.md#describe_model_package)
-- [describe_model_package_group](./client.md#describe_model_package_group)
-- [describe_model_quality_job_definition](./client.md#describe_model_quality_job_definition)
-- [describe_monitoring_schedule](./client.md#describe_monitoring_schedule)
-- [describe_notebook_instance](./client.md#describe_notebook_instance)
-- [describe_notebook_instance_lifecycle_config](./client.md#describe_notebook_instance_lifecycle_config)
-- [describe_pipeline](./client.md#describe_pipeline)
-- [describe_pipeline_definition_for_execution](./client.md#describe_pipeline_definition_for_execution)
-- [describe_pipeline_execution](./client.md#describe_pipeline_execution)
-- [describe_processing_job](./client.md#describe_processing_job)
-- [describe_project](./client.md#describe_project)
-- [describe_studio_lifecycle_config](./client.md#describe_studio_lifecycle_config)
-- [describe_subscribed_workteam](./client.md#describe_subscribed_workteam)
-- [describe_training_job](./client.md#describe_training_job)
-- [describe_transform_job](./client.md#describe_transform_job)
-- [describe_trial](./client.md#describe_trial)
-- [describe_trial_component](./client.md#describe_trial_component)
-- [describe_user_profile](./client.md#describe_user_profile)
-- [describe_workforce](./client.md#describe_workforce)
-- [describe_workteam](./client.md#describe_workteam)
-- [disable_sagemaker_servicecatalog_portfolio](./client.md#disable_sagemaker_servicecatalog_portfolio)
-- [disassociate_trial_component](./client.md#disassociate_trial_component)
-- [enable_sagemaker_servicecatalog_portfolio](./client.md#enable_sagemaker_servicecatalog_portfolio)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_device_fleet_report](./client.md#get_device_fleet_report)
-- [get_lineage_group_policy](./client.md#get_lineage_group_policy)
-- [get_model_package_group_policy](./client.md#get_model_package_group_policy)
-- [get_paginator](./client.md#get_paginator)
-- [get_sagemaker_servicecatalog_portfolio_status](./client.md#get_sagemaker_servicecatalog_portfolio_status)
-- [get_search_suggestions](./client.md#get_search_suggestions)
-- [get_waiter](./client.md#get_waiter)
-- [list_actions](./client.md#list_actions)
-- [list_algorithms](./client.md#list_algorithms)
-- [list_app_image_configs](./client.md#list_app_image_configs)
-- [list_apps](./client.md#list_apps)
-- [list_artifacts](./client.md#list_artifacts)
-- [list_associations](./client.md#list_associations)
-- [list_auto_ml_jobs](./client.md#list_auto_ml_jobs)
-- [list_candidates_for_auto_ml_job](./client.md#list_candidates_for_auto_ml_job)
-- [list_code_repositories](./client.md#list_code_repositories)
-- [list_compilation_jobs](./client.md#list_compilation_jobs)
-- [list_contexts](./client.md#list_contexts)
-- [list_data_quality_job_definitions](./client.md#list_data_quality_job_definitions)
-- [list_device_fleets](./client.md#list_device_fleets)
-- [list_devices](./client.md#list_devices)
-- [list_domains](./client.md#list_domains)
-- [list_edge_packaging_jobs](./client.md#list_edge_packaging_jobs)
-- [list_endpoint_configs](./client.md#list_endpoint_configs)
-- [list_endpoints](./client.md#list_endpoints)
-- [list_experiments](./client.md#list_experiments)
-- [list_feature_groups](./client.md#list_feature_groups)
-- [list_flow_definitions](./client.md#list_flow_definitions)
-- [list_human_task_uis](./client.md#list_human_task_uis)
-- [list_hyper_parameter_tuning_jobs](./client.md#list_hyper_parameter_tuning_jobs)
-- [list_image_versions](./client.md#list_image_versions)
-- [list_images](./client.md#list_images)
-- [list_inference_recommendations_jobs](./client.md#list_inference_recommendations_jobs)
-- [list_labeling_jobs](./client.md#list_labeling_jobs)
-- [list_labeling_jobs_for_workteam](./client.md#list_labeling_jobs_for_workteam)
-- [list_lineage_groups](./client.md#list_lineage_groups)
-- [list_model_bias_job_definitions](./client.md#list_model_bias_job_definitions)
-- [list_model_explainability_job_definitions](./client.md#list_model_explainability_job_definitions)
-- [list_model_metadata](./client.md#list_model_metadata)
-- [list_model_package_groups](./client.md#list_model_package_groups)
-- [list_model_packages](./client.md#list_model_packages)
-- [list_model_quality_job_definitions](./client.md#list_model_quality_job_definitions)
-- [list_models](./client.md#list_models)
-- [list_monitoring_executions](./client.md#list_monitoring_executions)
-- [list_monitoring_schedules](./client.md#list_monitoring_schedules)
-- [list_notebook_instance_lifecycle_configs](./client.md#list_notebook_instance_lifecycle_configs)
-- [list_notebook_instances](./client.md#list_notebook_instances)
-- [list_pipeline_execution_steps](./client.md#list_pipeline_execution_steps)
-- [list_pipeline_executions](./client.md#list_pipeline_executions)
-- [list_pipeline_parameters_for_execution](./client.md#list_pipeline_parameters_for_execution)
-- [list_pipelines](./client.md#list_pipelines)
-- [list_processing_jobs](./client.md#list_processing_jobs)
-- [list_projects](./client.md#list_projects)
-- [list_studio_lifecycle_configs](./client.md#list_studio_lifecycle_configs)
-- [list_subscribed_workteams](./client.md#list_subscribed_workteams)
-- [list_tags](./client.md#list_tags)
-- [list_training_jobs](./client.md#list_training_jobs)
-- [list_training_jobs_for_hyper_parameter_tuning_job](./client.md#list_training_jobs_for_hyper_parameter_tuning_job)
-- [list_transform_jobs](./client.md#list_transform_jobs)
-- [list_trial_components](./client.md#list_trial_components)
-- [list_trials](./client.md#list_trials)
-- [list_user_profiles](./client.md#list_user_profiles)
-- [list_workforces](./client.md#list_workforces)
-- [list_workteams](./client.md#list_workteams)
-- [put_model_package_group_policy](./client.md#put_model_package_group_policy)
-- [query_lineage](./client.md#query_lineage)
-- [register_devices](./client.md#register_devices)
-- [render_ui_template](./client.md#render_ui_template)
-- [retry_pipeline_execution](./client.md#retry_pipeline_execution)
-- [search](./client.md#search)
-- [send_pipeline_execution_step_failure](./client.md#send_pipeline_execution_step_failure)
-- [send_pipeline_execution_step_success](./client.md#send_pipeline_execution_step_success)
-- [start_monitoring_schedule](./client.md#start_monitoring_schedule)
-- [start_notebook_instance](./client.md#start_notebook_instance)
-- [start_pipeline_execution](./client.md#start_pipeline_execution)
-- [stop_auto_ml_job](./client.md#stop_auto_ml_job)
-- [stop_compilation_job](./client.md#stop_compilation_job)
-- [stop_edge_packaging_job](./client.md#stop_edge_packaging_job)
-- [stop_hyper_parameter_tuning_job](./client.md#stop_hyper_parameter_tuning_job)
-- [stop_inference_recommendations_job](./client.md#stop_inference_recommendations_job)
-- [stop_labeling_job](./client.md#stop_labeling_job)
-- [stop_monitoring_schedule](./client.md#stop_monitoring_schedule)
-- [stop_notebook_instance](./client.md#stop_notebook_instance)
-- [stop_pipeline_execution](./client.md#stop_pipeline_execution)
-- [stop_processing_job](./client.md#stop_processing_job)
-- [stop_training_job](./client.md#stop_training_job)
-- [stop_transform_job](./client.md#stop_transform_job)
-- [update_action](./client.md#update_action)
-- [update_app_image_config](./client.md#update_app_image_config)
-- [update_artifact](./client.md#update_artifact)
-- [update_code_repository](./client.md#update_code_repository)
-- [update_context](./client.md#update_context)
-- [update_device_fleet](./client.md#update_device_fleet)
-- [update_devices](./client.md#update_devices)
-- [update_domain](./client.md#update_domain)
-- [update_endpoint](./client.md#update_endpoint)
-- [update_endpoint_weights_and_capacities](./client.md#update_endpoint_weights_and_capacities)
-- [update_experiment](./client.md#update_experiment)
-- [update_image](./client.md#update_image)
-- [update_model_package](./client.md#update_model_package)
-- [update_monitoring_schedule](./client.md#update_monitoring_schedule)
-- [update_notebook_instance](./client.md#update_notebook_instance)
-- [update_notebook_instance_lifecycle_config](./client.md#update_notebook_instance_lifecycle_config)
-- [update_pipeline](./client.md#update_pipeline)
-- [update_pipeline_execution](./client.md#update_pipeline_execution)
-- [update_project](./client.md#update_project)
-- [update_training_job](./client.md#update_training_job)
-- [update_trial](./client.md#update_trial)
-- [update_trial_component](./client.md#update_trial_component)
-- [update_user_profile](./client.md#update_user_profile)
-- [update_workforce](./client.md#update_workforce)
-- [update_workteam](./client.md#update_workteam)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SageMakerClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictException
-- ResourceInUse
-- ResourceLimitExceeded
-- ResourceNotFound
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("sagemaker").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("sagemaker").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sagemaker.paginator import ListActionsPaginator, ...
+from mypy_boto3_sagemaker.paginator import ListActionsPaginator
+
+def get_list_actions_paginator() -> ListActionsPaginator:
+    return Session().client("sagemaker").get_paginator("list_actions"))
 ```
 
 - [ListActionsPaginator](./paginators.md#listactionspaginator)
@@ -428,17 +133,21 @@ from mypy_boto3_sagemaker.paginator import ListActionsPaginator, ...
 - [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
 - [SearchPaginator](./paginators.md#searchpaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("sagemaker").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("sagemaker").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter, ...
+from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter
+
+def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
+    return Session().client("sagemaker").get_waiter("endpoint_deleted")
 ```
 
 - [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
@@ -455,16 +164,21 @@ from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter, ...
 - [TrainingJobCompletedOrStoppedWaiter](./waiters.md#trainingjobcompletedorstoppedwaiter)
 - [TransformJobCompletedOrStoppedWaiter](./waiters.md#transformjobcompletedorstoppedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sagemaker.literals import ActionStatusType
 
-```python
-from mypy_boto3_sagemaker.literals import ActionStatusType, ...
+def get_value() -> ActionStatusType:
+    return "Completed"
 ```
 
 - [ActionStatusType](./literals.md#actionstatustype)
@@ -723,18 +437,22 @@ from mypy_boto3_sagemaker.literals import ActionStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef
 
-```python
-from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
+def get_value() -> ActionSourceTypeDef:
+    return {
+        "SourceUri": ...,
+    }
 ```
 
 - [ActionSourceTypeDef](./type_defs.md#actionsourcetypedef)
@@ -996,6 +714,8 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [DescribeEdgePackagingJobResponseTypeDef](./type_defs.md#describeedgepackagingjobresponsetypedef)
 - [DescribeEndpointConfigInputRequestTypeDef](./type_defs.md#describeendpointconfiginputrequesttypedef)
 - [DescribeEndpointConfigOutputTypeDef](./type_defs.md#describeendpointconfigoutputtypedef)
+- [DescribeEndpointInputEndpointDeletedWaitTypeDef](./type_defs.md#describeendpointinputendpointdeletedwaittypedef)
+- [DescribeEndpointInputEndpointInServiceWaitTypeDef](./type_defs.md#describeendpointinputendpointinservicewaittypedef)
 - [DescribeEndpointInputRequestTypeDef](./type_defs.md#describeendpointinputrequesttypedef)
 - [DescribeEndpointOutputTypeDef](./type_defs.md#describeendpointoutputtypedef)
 - [DescribeExperimentRequestRequestTypeDef](./type_defs.md#describeexperimentrequestrequesttypedef)
@@ -1008,8 +728,13 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [DescribeHumanTaskUiResponseTypeDef](./type_defs.md#describehumantaskuiresponsetypedef)
 - [DescribeHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#describehyperparametertuningjobrequestrequesttypedef)
 - [DescribeHyperParameterTuningJobResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponsetypedef)
+- [DescribeImageRequestImageCreatedWaitTypeDef](./type_defs.md#describeimagerequestimagecreatedwaittypedef)
+- [DescribeImageRequestImageDeletedWaitTypeDef](./type_defs.md#describeimagerequestimagedeletedwaittypedef)
+- [DescribeImageRequestImageUpdatedWaitTypeDef](./type_defs.md#describeimagerequestimageupdatedwaittypedef)
 - [DescribeImageRequestRequestTypeDef](./type_defs.md#describeimagerequestrequesttypedef)
 - [DescribeImageResponseTypeDef](./type_defs.md#describeimageresponsetypedef)
+- [DescribeImageVersionRequestImageVersionCreatedWaitTypeDef](./type_defs.md#describeimageversionrequestimageversioncreatedwaittypedef)
+- [DescribeImageVersionRequestImageVersionDeletedWaitTypeDef](./type_defs.md#describeimageversionrequestimageversiondeletedwaittypedef)
 - [DescribeImageVersionRequestRequestTypeDef](./type_defs.md#describeimageversionrequestrequesttypedef)
 - [DescribeImageVersionResponseTypeDef](./type_defs.md#describeimageversionresponsetypedef)
 - [DescribeInferenceRecommendationsJobRequestRequestTypeDef](./type_defs.md#describeinferencerecommendationsjobrequestrequesttypedef)
@@ -1032,6 +757,9 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [DescribeModelQualityJobDefinitionResponseTypeDef](./type_defs.md#describemodelqualityjobdefinitionresponsetypedef)
 - [DescribeMonitoringScheduleRequestRequestTypeDef](./type_defs.md#describemonitoringschedulerequestrequesttypedef)
 - [DescribeMonitoringScheduleResponseTypeDef](./type_defs.md#describemonitoringscheduleresponsetypedef)
+- [DescribeNotebookInstanceInputNotebookInstanceDeletedWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstancedeletedwaittypedef)
+- [DescribeNotebookInstanceInputNotebookInstanceInServiceWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstanceinservicewaittypedef)
+- [DescribeNotebookInstanceInputNotebookInstanceStoppedWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstancestoppedwaittypedef)
 - [DescribeNotebookInstanceInputRequestTypeDef](./type_defs.md#describenotebookinstanceinputrequesttypedef)
 - [DescribeNotebookInstanceLifecycleConfigInputRequestTypeDef](./type_defs.md#describenotebookinstancelifecycleconfiginputrequesttypedef)
 - [DescribeNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#describenotebookinstancelifecycleconfigoutputtypedef)
@@ -1042,6 +770,7 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [DescribePipelineExecutionResponseTypeDef](./type_defs.md#describepipelineexecutionresponsetypedef)
 - [DescribePipelineRequestRequestTypeDef](./type_defs.md#describepipelinerequestrequesttypedef)
 - [DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef)
+- [DescribeProcessingJobRequestProcessingJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describeprocessingjobrequestprocessingjobcompletedorstoppedwaittypedef)
 - [DescribeProcessingJobRequestRequestTypeDef](./type_defs.md#describeprocessingjobrequestrequesttypedef)
 - [DescribeProcessingJobResponseTypeDef](./type_defs.md#describeprocessingjobresponsetypedef)
 - [DescribeProjectInputRequestTypeDef](./type_defs.md#describeprojectinputrequesttypedef)
@@ -1051,8 +780,10 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [DescribeSubscribedWorkteamRequestRequestTypeDef](./type_defs.md#describesubscribedworkteamrequestrequesttypedef)
 - [DescribeSubscribedWorkteamResponseTypeDef](./type_defs.md#describesubscribedworkteamresponsetypedef)
 - [DescribeTrainingJobRequestRequestTypeDef](./type_defs.md#describetrainingjobrequestrequesttypedef)
+- [DescribeTrainingJobRequestTrainingJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describetrainingjobrequesttrainingjobcompletedorstoppedwaittypedef)
 - [DescribeTrainingJobResponseTypeDef](./type_defs.md#describetrainingjobresponsetypedef)
 - [DescribeTransformJobRequestRequestTypeDef](./type_defs.md#describetransformjobrequestrequesttypedef)
+- [DescribeTransformJobRequestTransformJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describetransformjobrequesttransformjobcompletedorstoppedwaittypedef)
 - [DescribeTransformJobResponseTypeDef](./type_defs.md#describetransformjobresponsetypedef)
 - [DescribeTrialComponentRequestRequestTypeDef](./type_defs.md#describetrialcomponentrequestrequesttypedef)
 - [DescribeTrialComponentResponseTypeDef](./type_defs.md#describetrialcomponentresponsetypedef)
@@ -1167,118 +898,174 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [LabelingJobSummaryTypeDef](./type_defs.md#labelingjobsummarytypedef)
 - [LambdaStepMetadataTypeDef](./type_defs.md#lambdastepmetadatatypedef)
 - [LineageGroupSummaryTypeDef](./type_defs.md#lineagegroupsummarytypedef)
+- [ListActionsRequestListActionsPaginateTypeDef](./type_defs.md#listactionsrequestlistactionspaginatetypedef)
 - [ListActionsRequestRequestTypeDef](./type_defs.md#listactionsrequestrequesttypedef)
 - [ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef)
+- [ListAlgorithmsInputListAlgorithmsPaginateTypeDef](./type_defs.md#listalgorithmsinputlistalgorithmspaginatetypedef)
 - [ListAlgorithmsInputRequestTypeDef](./type_defs.md#listalgorithmsinputrequesttypedef)
 - [ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef)
+- [ListAppImageConfigsRequestListAppImageConfigsPaginateTypeDef](./type_defs.md#listappimageconfigsrequestlistappimageconfigspaginatetypedef)
 - [ListAppImageConfigsRequestRequestTypeDef](./type_defs.md#listappimageconfigsrequestrequesttypedef)
 - [ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef)
+- [ListAppsRequestListAppsPaginateTypeDef](./type_defs.md#listappsrequestlistappspaginatetypedef)
 - [ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef)
 - [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)
+- [ListArtifactsRequestListArtifactsPaginateTypeDef](./type_defs.md#listartifactsrequestlistartifactspaginatetypedef)
 - [ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef)
 - [ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef)
+- [ListAssociationsRequestListAssociationsPaginateTypeDef](./type_defs.md#listassociationsrequestlistassociationspaginatetypedef)
 - [ListAssociationsRequestRequestTypeDef](./type_defs.md#listassociationsrequestrequesttypedef)
 - [ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef)
+- [ListAutoMLJobsRequestListAutoMLJobsPaginateTypeDef](./type_defs.md#listautomljobsrequestlistautomljobspaginatetypedef)
 - [ListAutoMLJobsRequestRequestTypeDef](./type_defs.md#listautomljobsrequestrequesttypedef)
 - [ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef)
+- [ListCandidatesForAutoMLJobRequestListCandidatesForAutoMLJobPaginateTypeDef](./type_defs.md#listcandidatesforautomljobrequestlistcandidatesforautomljobpaginatetypedef)
 - [ListCandidatesForAutoMLJobRequestRequestTypeDef](./type_defs.md#listcandidatesforautomljobrequestrequesttypedef)
 - [ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef)
+- [ListCodeRepositoriesInputListCodeRepositoriesPaginateTypeDef](./type_defs.md#listcoderepositoriesinputlistcoderepositoriespaginatetypedef)
 - [ListCodeRepositoriesInputRequestTypeDef](./type_defs.md#listcoderepositoriesinputrequesttypedef)
 - [ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef)
+- [ListCompilationJobsRequestListCompilationJobsPaginateTypeDef](./type_defs.md#listcompilationjobsrequestlistcompilationjobspaginatetypedef)
 - [ListCompilationJobsRequestRequestTypeDef](./type_defs.md#listcompilationjobsrequestrequesttypedef)
 - [ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef)
+- [ListContextsRequestListContextsPaginateTypeDef](./type_defs.md#listcontextsrequestlistcontextspaginatetypedef)
 - [ListContextsRequestRequestTypeDef](./type_defs.md#listcontextsrequestrequesttypedef)
 - [ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef)
+- [ListDataQualityJobDefinitionsRequestListDataQualityJobDefinitionsPaginateTypeDef](./type_defs.md#listdataqualityjobdefinitionsrequestlistdataqualityjobdefinitionspaginatetypedef)
 - [ListDataQualityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listdataqualityjobdefinitionsrequestrequesttypedef)
 - [ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef)
+- [ListDeviceFleetsRequestListDeviceFleetsPaginateTypeDef](./type_defs.md#listdevicefleetsrequestlistdevicefleetspaginatetypedef)
 - [ListDeviceFleetsRequestRequestTypeDef](./type_defs.md#listdevicefleetsrequestrequesttypedef)
 - [ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef)
+- [ListDevicesRequestListDevicesPaginateTypeDef](./type_defs.md#listdevicesrequestlistdevicespaginatetypedef)
 - [ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef)
 - [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)
+- [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)
 - [ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef)
 - [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)
+- [ListEdgePackagingJobsRequestListEdgePackagingJobsPaginateTypeDef](./type_defs.md#listedgepackagingjobsrequestlistedgepackagingjobspaginatetypedef)
 - [ListEdgePackagingJobsRequestRequestTypeDef](./type_defs.md#listedgepackagingjobsrequestrequesttypedef)
 - [ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef)
+- [ListEndpointConfigsInputListEndpointConfigsPaginateTypeDef](./type_defs.md#listendpointconfigsinputlistendpointconfigspaginatetypedef)
 - [ListEndpointConfigsInputRequestTypeDef](./type_defs.md#listendpointconfigsinputrequesttypedef)
 - [ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef)
+- [ListEndpointsInputListEndpointsPaginateTypeDef](./type_defs.md#listendpointsinputlistendpointspaginatetypedef)
 - [ListEndpointsInputRequestTypeDef](./type_defs.md#listendpointsinputrequesttypedef)
 - [ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef)
+- [ListExperimentsRequestListExperimentsPaginateTypeDef](./type_defs.md#listexperimentsrequestlistexperimentspaginatetypedef)
 - [ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef)
 - [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef)
+- [ListFeatureGroupsRequestListFeatureGroupsPaginateTypeDef](./type_defs.md#listfeaturegroupsrequestlistfeaturegroupspaginatetypedef)
 - [ListFeatureGroupsRequestRequestTypeDef](./type_defs.md#listfeaturegroupsrequestrequesttypedef)
 - [ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef)
+- [ListFlowDefinitionsRequestListFlowDefinitionsPaginateTypeDef](./type_defs.md#listflowdefinitionsrequestlistflowdefinitionspaginatetypedef)
 - [ListFlowDefinitionsRequestRequestTypeDef](./type_defs.md#listflowdefinitionsrequestrequesttypedef)
 - [ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef)
+- [ListHumanTaskUisRequestListHumanTaskUisPaginateTypeDef](./type_defs.md#listhumantaskuisrequestlisthumantaskuispaginatetypedef)
 - [ListHumanTaskUisRequestRequestTypeDef](./type_defs.md#listhumantaskuisrequestrequesttypedef)
 - [ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef)
+- [ListHyperParameterTuningJobsRequestListHyperParameterTuningJobsPaginateTypeDef](./type_defs.md#listhyperparametertuningjobsrequestlisthyperparametertuningjobspaginatetypedef)
 - [ListHyperParameterTuningJobsRequestRequestTypeDef](./type_defs.md#listhyperparametertuningjobsrequestrequesttypedef)
 - [ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef)
+- [ListImageVersionsRequestListImageVersionsPaginateTypeDef](./type_defs.md#listimageversionsrequestlistimageversionspaginatetypedef)
 - [ListImageVersionsRequestRequestTypeDef](./type_defs.md#listimageversionsrequestrequesttypedef)
 - [ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef)
+- [ListImagesRequestListImagesPaginateTypeDef](./type_defs.md#listimagesrequestlistimagespaginatetypedef)
 - [ListImagesRequestRequestTypeDef](./type_defs.md#listimagesrequestrequesttypedef)
 - [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef)
+- [ListInferenceRecommendationsJobsRequestListInferenceRecommendationsJobsPaginateTypeDef](./type_defs.md#listinferencerecommendationsjobsrequestlistinferencerecommendationsjobspaginatetypedef)
 - [ListInferenceRecommendationsJobsRequestRequestTypeDef](./type_defs.md#listinferencerecommendationsjobsrequestrequesttypedef)
 - [ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef)
+- [ListLabelingJobsForWorkteamRequestListLabelingJobsForWorkteamPaginateTypeDef](./type_defs.md#listlabelingjobsforworkteamrequestlistlabelingjobsforworkteampaginatetypedef)
 - [ListLabelingJobsForWorkteamRequestRequestTypeDef](./type_defs.md#listlabelingjobsforworkteamrequestrequesttypedef)
 - [ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef)
+- [ListLabelingJobsRequestListLabelingJobsPaginateTypeDef](./type_defs.md#listlabelingjobsrequestlistlabelingjobspaginatetypedef)
 - [ListLabelingJobsRequestRequestTypeDef](./type_defs.md#listlabelingjobsrequestrequesttypedef)
 - [ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef)
+- [ListLineageGroupsRequestListLineageGroupsPaginateTypeDef](./type_defs.md#listlineagegroupsrequestlistlineagegroupspaginatetypedef)
 - [ListLineageGroupsRequestRequestTypeDef](./type_defs.md#listlineagegroupsrequestrequesttypedef)
 - [ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef)
+- [ListModelBiasJobDefinitionsRequestListModelBiasJobDefinitionsPaginateTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequestlistmodelbiasjobdefinitionspaginatetypedef)
 - [ListModelBiasJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelbiasjobdefinitionsrequestrequesttypedef)
 - [ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef)
+- [ListModelExplainabilityJobDefinitionsRequestListModelExplainabilityJobDefinitionsPaginateTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsrequestlistmodelexplainabilityjobdefinitionspaginatetypedef)
 - [ListModelExplainabilityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsrequestrequesttypedef)
 - [ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef)
+- [ListModelMetadataRequestListModelMetadataPaginateTypeDef](./type_defs.md#listmodelmetadatarequestlistmodelmetadatapaginatetypedef)
 - [ListModelMetadataRequestRequestTypeDef](./type_defs.md#listmodelmetadatarequestrequesttypedef)
 - [ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef)
+- [ListModelPackageGroupsInputListModelPackageGroupsPaginateTypeDef](./type_defs.md#listmodelpackagegroupsinputlistmodelpackagegroupspaginatetypedef)
 - [ListModelPackageGroupsInputRequestTypeDef](./type_defs.md#listmodelpackagegroupsinputrequesttypedef)
 - [ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef)
+- [ListModelPackagesInputListModelPackagesPaginateTypeDef](./type_defs.md#listmodelpackagesinputlistmodelpackagespaginatetypedef)
 - [ListModelPackagesInputRequestTypeDef](./type_defs.md#listmodelpackagesinputrequesttypedef)
 - [ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef)
+- [ListModelQualityJobDefinitionsRequestListModelQualityJobDefinitionsPaginateTypeDef](./type_defs.md#listmodelqualityjobdefinitionsrequestlistmodelqualityjobdefinitionspaginatetypedef)
 - [ListModelQualityJobDefinitionsRequestRequestTypeDef](./type_defs.md#listmodelqualityjobdefinitionsrequestrequesttypedef)
 - [ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef)
+- [ListModelsInputListModelsPaginateTypeDef](./type_defs.md#listmodelsinputlistmodelspaginatetypedef)
 - [ListModelsInputRequestTypeDef](./type_defs.md#listmodelsinputrequesttypedef)
 - [ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef)
+- [ListMonitoringExecutionsRequestListMonitoringExecutionsPaginateTypeDef](./type_defs.md#listmonitoringexecutionsrequestlistmonitoringexecutionspaginatetypedef)
 - [ListMonitoringExecutionsRequestRequestTypeDef](./type_defs.md#listmonitoringexecutionsrequestrequesttypedef)
 - [ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef)
+- [ListMonitoringSchedulesRequestListMonitoringSchedulesPaginateTypeDef](./type_defs.md#listmonitoringschedulesrequestlistmonitoringschedulespaginatetypedef)
 - [ListMonitoringSchedulesRequestRequestTypeDef](./type_defs.md#listmonitoringschedulesrequestrequesttypedef)
 - [ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef)
+- [ListNotebookInstanceLifecycleConfigsInputListNotebookInstanceLifecycleConfigsPaginateTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsinputlistnotebookinstancelifecycleconfigspaginatetypedef)
 - [ListNotebookInstanceLifecycleConfigsInputRequestTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsinputrequesttypedef)
 - [ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef)
+- [ListNotebookInstancesInputListNotebookInstancesPaginateTypeDef](./type_defs.md#listnotebookinstancesinputlistnotebookinstancespaginatetypedef)
 - [ListNotebookInstancesInputRequestTypeDef](./type_defs.md#listnotebookinstancesinputrequesttypedef)
 - [ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef)
+- [ListPipelineExecutionStepsRequestListPipelineExecutionStepsPaginateTypeDef](./type_defs.md#listpipelineexecutionstepsrequestlistpipelineexecutionstepspaginatetypedef)
 - [ListPipelineExecutionStepsRequestRequestTypeDef](./type_defs.md#listpipelineexecutionstepsrequestrequesttypedef)
 - [ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef)
+- [ListPipelineExecutionsRequestListPipelineExecutionsPaginateTypeDef](./type_defs.md#listpipelineexecutionsrequestlistpipelineexecutionspaginatetypedef)
 - [ListPipelineExecutionsRequestRequestTypeDef](./type_defs.md#listpipelineexecutionsrequestrequesttypedef)
 - [ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef)
+- [ListPipelineParametersForExecutionRequestListPipelineParametersForExecutionPaginateTypeDef](./type_defs.md#listpipelineparametersforexecutionrequestlistpipelineparametersforexecutionpaginatetypedef)
 - [ListPipelineParametersForExecutionRequestRequestTypeDef](./type_defs.md#listpipelineparametersforexecutionrequestrequesttypedef)
 - [ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef)
+- [ListPipelinesRequestListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesrequestlistpipelinespaginatetypedef)
 - [ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef)
 - [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)
+- [ListProcessingJobsRequestListProcessingJobsPaginateTypeDef](./type_defs.md#listprocessingjobsrequestlistprocessingjobspaginatetypedef)
 - [ListProcessingJobsRequestRequestTypeDef](./type_defs.md#listprocessingjobsrequestrequesttypedef)
 - [ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef)
 - [ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef)
 - [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef)
+- [ListStudioLifecycleConfigsRequestListStudioLifecycleConfigsPaginateTypeDef](./type_defs.md#liststudiolifecycleconfigsrequestliststudiolifecycleconfigspaginatetypedef)
 - [ListStudioLifecycleConfigsRequestRequestTypeDef](./type_defs.md#liststudiolifecycleconfigsrequestrequesttypedef)
 - [ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef)
+- [ListSubscribedWorkteamsRequestListSubscribedWorkteamsPaginateTypeDef](./type_defs.md#listsubscribedworkteamsrequestlistsubscribedworkteamspaginatetypedef)
 - [ListSubscribedWorkteamsRequestRequestTypeDef](./type_defs.md#listsubscribedworkteamsrequestrequesttypedef)
 - [ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef)
+- [ListTagsInputListTagsPaginateTypeDef](./type_defs.md#listtagsinputlisttagspaginatetypedef)
 - [ListTagsInputRequestTypeDef](./type_defs.md#listtagsinputrequesttypedef)
 - [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef)
+- [ListTrainingJobsForHyperParameterTuningJobRequestListTrainingJobsForHyperParameterTuningJobPaginateTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobrequestlisttrainingjobsforhyperparametertuningjobpaginatetypedef)
 - [ListTrainingJobsForHyperParameterTuningJobRequestRequestTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobrequestrequesttypedef)
 - [ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef)
+- [ListTrainingJobsRequestListTrainingJobsPaginateTypeDef](./type_defs.md#listtrainingjobsrequestlisttrainingjobspaginatetypedef)
 - [ListTrainingJobsRequestRequestTypeDef](./type_defs.md#listtrainingjobsrequestrequesttypedef)
 - [ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef)
+- [ListTransformJobsRequestListTransformJobsPaginateTypeDef](./type_defs.md#listtransformjobsrequestlisttransformjobspaginatetypedef)
 - [ListTransformJobsRequestRequestTypeDef](./type_defs.md#listtransformjobsrequestrequesttypedef)
 - [ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef)
+- [ListTrialComponentsRequestListTrialComponentsPaginateTypeDef](./type_defs.md#listtrialcomponentsrequestlisttrialcomponentspaginatetypedef)
 - [ListTrialComponentsRequestRequestTypeDef](./type_defs.md#listtrialcomponentsrequestrequesttypedef)
 - [ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef)
+- [ListTrialsRequestListTrialsPaginateTypeDef](./type_defs.md#listtrialsrequestlisttrialspaginatetypedef)
 - [ListTrialsRequestRequestTypeDef](./type_defs.md#listtrialsrequestrequesttypedef)
 - [ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef)
+- [ListUserProfilesRequestListUserProfilesPaginateTypeDef](./type_defs.md#listuserprofilesrequestlistuserprofilespaginatetypedef)
 - [ListUserProfilesRequestRequestTypeDef](./type_defs.md#listuserprofilesrequestrequesttypedef)
 - [ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef)
+- [ListWorkforcesRequestListWorkforcesPaginateTypeDef](./type_defs.md#listworkforcesrequestlistworkforcespaginatetypedef)
 - [ListWorkforcesRequestRequestTypeDef](./type_defs.md#listworkforcesrequestrequesttypedef)
 - [ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef)
+- [ListWorkteamsRequestListWorkteamsPaginateTypeDef](./type_defs.md#listworkteamsrequestlistworkteamspaginatetypedef)
 - [ListWorkteamsRequestRequestTypeDef](./type_defs.md#listworkteamsrequestrequesttypedef)
 - [ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef)
 - [MemberDefinitionTypeDef](./type_defs.md#memberdefinitiontypedef)
@@ -1440,6 +1227,7 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
 - [SearchRecordTypeDef](./type_defs.md#searchrecordtypedef)
 - [SearchRequestRequestTypeDef](./type_defs.md#searchrequestrequesttypedef)
+- [SearchRequestSearchPaginateTypeDef](./type_defs.md#searchrequestsearchpaginatetypedef)
 - [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef)
 - [SecondaryStatusTransitionTypeDef](./type_defs.md#secondarystatustransitiontypedef)
 - [SendPipelineExecutionStepFailureRequestRequestTypeDef](./type_defs.md#sendpipelineexecutionstepfailurerequestrequesttypedef)
@@ -1569,3 +1357,4 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WorkforceTypeDef](./type_defs.md#workforcetypedef)
 - [WorkteamTypeDef](./type_defs.md#workteamtypedef)
+

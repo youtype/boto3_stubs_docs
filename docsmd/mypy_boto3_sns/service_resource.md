@@ -1,890 +1,1029 @@
-<a id="snsserviceresource-for-boto3-sns-module"></a>
-
-# SNSServiceResource for boto3 SNS module
+# SNSServiceResource
 
 > [Index](../README.md) > [SNS](./README.md) > SNSServiceResource
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [SNSServiceResource for boto3 SNS module](#snsserviceresource-for-boto3-sns-module)
-  - [SNSServiceResource](#snsserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
-    - [ServiceResourceSubscriptionsCollection](#serviceresourcesubscriptionscollection)
-    - [ServiceResourceTopicsCollection](#serviceresourcetopicscollection)
-  - [Methods](#methods)
-    - [SNSServiceResource.PlatformApplication method](#snsserviceresourceplatformapplication-method)
-    - [SNSServiceResource.PlatformEndpoint method](#snsserviceresourceplatformendpoint-method)
-    - [SNSServiceResource.Subscription method](#snsserviceresourcesubscription-method)
-    - [SNSServiceResource.Topic method](#snsserviceresourcetopic-method)
-    - [SNSServiceResource.create_platform_application method](#snsserviceresourcecreate_platform_application-method)
-    - [SNSServiceResource.create_topic method](#snsserviceresourcecreate_topic-method)
-    - [SNSServiceResource.get_available_subresources method](#snsserviceresourceget_available_subresources-method)
-  - [PlatformApplication](#platformapplication)
-    - [PlatformApplication attributes](#platformapplication-attributes)
-    - [PlatformApplication collections](#platformapplication-collections)
-    - [PlatformApplication methods](#platformapplication-methods)
-  - [PlatformEndpoint](#platformendpoint)
-    - [PlatformEndpoint attributes](#platformendpoint-attributes)
-    - [PlatformEndpoint methods](#platformendpoint-methods)
-  - [Subscription](#subscription)
-    - [Subscription attributes](#subscription-attributes)
-    - [Subscription methods](#subscription-methods)
-  - [Topic](#topic)
-    - [Topic attributes](#topic-attributes)
-    - [Topic collections](#topic-collections)
-    - [Topic methods](#topic-methods)
-
-<a id="snsserviceresource"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## SNSServiceResource
 
-Type annotations for `boto3.resource("sns")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("sns")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_sns.service_resource import SNSServiceResource
 
 def get_sns_resource() -> SNSServiceResource:
     return boto3.resource("sns")
 ```
 
-Boto3 documentation:
-[SNS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
 
+
 - `meta`: [SNSResourceMeta](#snsresourcemeta)
 
-- `platform_applications`:
-  [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
+- `platform_applications`: [ServiceResourcePlatformApplicationsCollection](#serviceresourceplatformapplicationscollection)
 
-- `subscriptions`:
-  [ServiceResourceSubscriptionsCollection](#serviceresourcesubscriptionscollection)
+- `subscriptions`: [ServiceResourceSubscriptionsCollection](#serviceresourcesubscriptionscollection)
 
 - `topics`: [ServiceResourceTopicsCollection](#serviceresourcetopicscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourceplatformapplicationscollection"></a>
-
 ### ServiceResourcePlatformApplicationsCollection
 
-Type annotations for `boto3.resource("sns").platform_applications` collection.
+Provides access to [PlatformApplication](#platformapplication) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("sns").platform_applications` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.platform_applications)
 
-```python
-from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection,
+```python title="Usage example"
+from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsCollection
 
 def get_collection() -> ServiceResourcePlatformApplicationsCollection:
     return boto3.resource("sns").platform_applications
 ```
 
-Provides access to [PlatformApplication](#platformapplication) resource.
-
-Boto3 documentation:
-[SNS.ServiceResource.platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.platform_applications)
-
-<a id="serviceresourcesubscriptionscollection"></a>
 
 ### ServiceResourceSubscriptionsCollection
 
-Type annotations for `boto3.resource("sns").subscriptions` collection.
+Provides access to [Subscription](#subscription) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("sns").subscriptions` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.subscriptions)
 
-```python
-from mypy_boto3_sns.service_resource import ServiceResourceSubscriptionsCollection,
+```python title="Usage example"
+from mypy_boto3_sns.service_resource import ServiceResourceSubscriptionsCollection
 
 def get_collection() -> ServiceResourceSubscriptionsCollection:
     return boto3.resource("sns").subscriptions
 ```
 
-Provides access to [Subscription](#subscription) resource.
-
-Boto3 documentation:
-[SNS.ServiceResource.subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.subscriptions)
-
-<a id="serviceresourcetopicscollection"></a>
 
 ### ServiceResourceTopicsCollection
 
-Type annotations for `boto3.resource("sns").topics` collection.
+Provides access to [Topic](#topic) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("sns").topics` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.topics)
 
-```python
-from mypy_boto3_sns.service_resource import ServiceResourceTopicsCollection,
+```python title="Usage example"
+from mypy_boto3_sns.service_resource import ServiceResourceTopicsCollection
 
 def get_collection() -> ServiceResourceTopicsCollection:
     return boto3.resource("sns").topics
 ```
 
-Provides access to [Topic](#topic) resource.
 
-Boto3 documentation:
-[SNS.ServiceResource.topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.topics)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="snsserviceresourceplatformapplication-method"></a>
 
 ### SNSServiceResource.PlatformApplication method
 
 Creates a PlatformApplication resource.
 
-Type annotations for `boto3.resource("sns").PlatformApplication` method.
+Type annotations and code completion for `#!python boto3.resource("sns").PlatformApplication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
 
-Boto3 documentation:
-[SNS.ServiceResource.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
+```python title="Method definition"
+def PlatformApplication(
+    self,
+    arn: str,
+) -> PlatformApplication:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourcePlatformApplicationRequestTypeDef](./type_defs.md#serviceresourceplatformapplicationrequesttypedef).
 
-Arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourcePlatformApplicationRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [PlatformApplication](#platformapplication).
+parent.PlatformApplication(**kwargs)
+```
 
-<a id="snsserviceresourceplatformendpoint-method"></a>
+1. See [:material-code-braces: ServiceResourcePlatformApplicationRequestTypeDef](./type_defs.md#serviceresourceplatformapplicationrequesttypedef) 
 
 ### SNSServiceResource.PlatformEndpoint method
 
 Creates a PlatformEndpoint resource.
 
-Type annotations for `boto3.resource("sns").PlatformEndpoint` method.
+Type annotations and code completion for `#!python boto3.resource("sns").PlatformEndpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
 
-Boto3 documentation:
-[SNS.ServiceResource.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
+```python title="Method definition"
+def PlatformEndpoint(
+    self,
+    arn: str,
+) -> PlatformEndpoint:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourcePlatformEndpointRequestTypeDef](./type_defs.md#serviceresourceplatformendpointrequesttypedef).
 
-Arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourcePlatformEndpointRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [PlatformEndpoint](#platformendpoint).
+parent.PlatformEndpoint(**kwargs)
+```
 
-<a id="snsserviceresourcesubscription-method"></a>
+1. See [:material-code-braces: ServiceResourcePlatformEndpointRequestTypeDef](./type_defs.md#serviceresourceplatformendpointrequesttypedef) 
 
 ### SNSServiceResource.Subscription method
 
 Creates a Subscription resource.
 
-Type annotations for `boto3.resource("sns").Subscription` method.
+Type annotations and code completion for `#!python boto3.resource("sns").Subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
 
-Boto3 documentation:
-[SNS.ServiceResource.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
+```python title="Method definition"
+def Subscription(
+    self,
+    arn: str,
+) -> Subscription:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceSubscriptionRequestTypeDef](./type_defs.md#serviceresourcesubscriptionrequesttypedef).
 
-Arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceSubscriptionRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [Subscription](#subscription).
+parent.Subscription(**kwargs)
+```
 
-<a id="snsserviceresourcetopic-method"></a>
+1. See [:material-code-braces: ServiceResourceSubscriptionRequestTypeDef](./type_defs.md#serviceresourcesubscriptionrequesttypedef) 
 
 ### SNSServiceResource.Topic method
 
 Creates a Topic resource.
 
-Type annotations for `boto3.resource("sns").Topic` method.
+Type annotations and code completion for `#!python boto3.resource("sns").Topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
 
-Boto3 documentation:
-[SNS.ServiceResource.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
+```python title="Method definition"
+def Topic(
+    self,
+    arn: str,
+) -> Topic:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceTopicRequestTypeDef](./type_defs.md#serviceresourcetopicrequesttypedef).
 
-Arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceTopicRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [Topic](#topic).
+parent.Topic(**kwargs)
+```
 
-<a id="snsserviceresourcecreate\_platform\_application-method"></a>
+1. See [:material-code-braces: ServiceResourceTopicRequestTypeDef](./type_defs.md#serviceresourcetopicrequesttypedef) 
 
-### SNSServiceResource.create_platform_application method
+### SNSServiceResource.create\_platform\_application method
 
-Creates a platform application object for one of the supported push
-notification services, such as APNS and GCM (Firebase Cloud Messaging), to
-which devices and mobile apps may register.
+Creates a platform application object for one of the supported push notification
+services, such as APNS and GCM (Firebase Cloud Messaging), to which devices and
+mobile apps may register.
 
-Type annotations for `boto3.resource("sns").create_platform_application`
-method.
+Type annotations and code completion for `#!python boto3.resource("sns").create_platform_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_platform_application)
 
-Boto3 documentation:
-[SNS.ServiceResource.create_platform_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_platform_application)
+```python title="Method definition"
+def create_platform_application(
+    self,
+    *,
+    Name: str,
+    Platform: str,
+    Attributes: Mapping[str, str],
+) -> PlatformApplication:
+    ...
+```
 
-Arguments mapping described in
-[CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef](./type_defs.md#createplatformapplicationinputserviceresourcecreateplatformapplicationtypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Platform`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef = {  # (1)
+    "Name": ...,
+    "Platform": ...,
+    "Attributes": ...,
+}
 
-Returns [PlatformApplication](#platformapplication).
+parent.create_platform_application(**kwargs)
+```
 
-<a id="snsserviceresourcecreate\_topic-method"></a>
+1. See [:material-code-braces: CreatePlatformApplicationInputServiceResourceCreatePlatformApplicationTypeDef](./type_defs.md#createplatformapplicationinputserviceresourcecreateplatformapplicationtypedef) 
 
-### SNSServiceResource.create_topic method
+### SNSServiceResource.create\_topic method
 
 Creates a topic to which notifications can be published.
 
-Type annotations for `boto3.resource("sns").create_topic` method.
+Type annotations and code completion for `#!python boto3.resource("sns").create_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_topic)
 
-Boto3 documentation:
-[SNS.ServiceResource.create_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.create_topic)
+```python title="Method definition"
+def create_topic(
+    self,
+    *,
+    Name: str,
+    Attributes: Mapping[str, str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> Topic:
+    ...
+```
 
-Arguments mapping described in
-[CreateTopicInputServiceResourceCreateTopicTypeDef](./type_defs.md#createtopicinputserviceresourcecreatetopictypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTopicInputServiceResourceCreateTopicTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [Topic](#topic).
+parent.create_topic(**kwargs)
+```
 
-<a id="snsserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateTopicInputServiceResourceCreateTopicTypeDef](./type_defs.md#createtopicinputserviceresourcecreatetopictypedef) 
 
-### SNSServiceResource.get_available_subresources method
+### SNSServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("sns").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[SNS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="platformapplication"></a>
+
 
 ## PlatformApplication
 
-Type annotations for `boto3.resource("sns").PlatformApplication` class.
+Type annotations and code completion for `#!python boto3.resource("sns").PlatformApplication` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_sns.service_resource import PlatformApplication
 
 def get_resource() -> PlatformApplication:
     return boto3.resource("sns").PlatformApplication(...)
 ```
 
-Boto3 documentation:
-[SNS.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
-
-<a id="platformapplication-attributes"></a>
 
 ### PlatformApplication attributes
 
-- `attributes`: `Dict`\[`str`, `str`\]
-- `arn`: `str`
-- `endpoints`:
-  [PlatformApplicationEndpointsCollection](#platformapplicationendpointscollection)
 
-<a id="platformapplication-collections"></a>
+- `attributes`: `Dict`[`str`, `str`]
+- `arn`: `str`
+- `endpoints`: [PlatformApplicationEndpointsCollection](#platformapplicationendpointscollection)
+
+
 
 ### PlatformApplication collections
 
-<a id="platformapplicationendpoints"></a>
 
 #### PlatformApplication.endpoints
 
-Type annotations for `boto3.resource("sns").PlatformApplication(...).endpoints`
-collection.
+Provides access to [PlatformEndpoint](#platformendpoint) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("sns").PlatformApplication(...).endpoints` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.endpoints)
 
-```python
-from mypy_boto3_sns.service_resource import PlatformApplicationEndpointsCollection,
+```python title="Usage example"
+from mypy_boto3_sns.service_resource import PlatformApplicationEndpointsCollection
 
 def get_collection() -> PlatformApplicationEndpointsCollection:
     resource = boto3.resource("sns").PlatformApplication(...)
     return resource.endpoints
 ```
 
-Provides access to [PlatformEndpoint](#platformendpoint) resource.
 
-Boto3 documentation:
-[SNS.PlatformApplication.PlatformApplicationEndpointsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.endpoints)
 
-<a id="platformapplication-methods"></a>
 
 ### PlatformApplication methods
 
-<a id="platformapplicationcreate\_platform\_endpoint-method"></a>
 
-#### PlatformApplication.create_platform_endpoint method
+#### PlatformApplication.create\_platform\_endpoint method
 
 Creates an endpoint for a device and mobile app on one of the supported push
 notification services, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for `boto3.resource("sns").create_platform_endpoint` method.
+Type annotations and code completion for `#!python boto3.resource("sns").create_platform_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint)
 
-Boto3 documentation:
-[SNS.PlatformApplication.create_platform_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.create_platform_endpoint)
+```python title="Method definition"
+def create_platform_endpoint(
+    self,
+    *,
+    Token: str,
+    CustomUserData: str = ...,
+    Attributes: Mapping[str, str] = ...,
+) -> PlatformEndpoint:
+    ...
+```
 
-Arguments mapping described in
-[CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef](./type_defs.md#createplatformendpointinputplatformapplicationcreateplatformendpointtypedef).
 
-Keyword-only arguments:
 
-- `Token`: `str` *(required)*
-- `CustomUserData`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef = {  # (1)
+    "Token": ...,
+}
 
-Returns [PlatformEndpoint](#platformendpoint).
+parent.create_platform_endpoint(**kwargs)
+```
 
-<a id="platformapplicationdelete-method"></a>
+1. See [:material-code-braces: CreatePlatformEndpointInputPlatformApplicationCreatePlatformEndpointTypeDef](./type_defs.md#createplatformendpointinputplatformapplicationcreateplatformendpointtypedef) 
 
 #### PlatformApplication.delete method
 
-Deletes a platform application object for one of the supported push
-notification services, such as APNS and GCM (Firebase Cloud Messaging).
+Deletes a platform application object for one of the supported push notification
+services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Type annotations for `boto3.resource("sns").delete` method.
+Type annotations and code completion for `#!python boto3.resource("sns").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
 
-Boto3 documentation:
-[SNS.PlatformApplication.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformapplicationget\_available\_subresources-method"></a>
 
-#### PlatformApplication.get_available_subresources method
+#### PlatformApplication.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("sns").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.get_available_subresources)
 
-Boto3 documentation:
-[SNS.PlatformApplication.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="platformapplicationload-method"></a>
 
 #### PlatformApplication.load method
 
 Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
 attributes of the PlatformApplication resource.
 
-Type annotations for `boto3.resource("sns").load` method.
+Type annotations and code completion for `#!python boto3.resource("sns").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load)
 
-Boto3 documentation:
-[SNS.PlatformApplication.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformapplicationreload-method"></a>
 
 #### PlatformApplication.reload method
 
 Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
 attributes of the PlatformApplication resource.
 
-Type annotations for `boto3.resource("sns").reload` method.
+Type annotations and code completion for `#!python boto3.resource("sns").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload)
 
-Boto3 documentation:
-[SNS.PlatformApplication.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformapplicationset\_attributes-method"></a>
 
-#### PlatformApplication.set_attributes method
+#### PlatformApplication.set\_attributes method
 
 Sets the attributes of the platform application object for the supported push
 notification services, such as APNS and GCM (Firebase Cloud Messaging).
 
-Type annotations for `boto3.resource("sns").set_attributes` method.
+Type annotations and code completion for `#!python boto3.resource("sns").set_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes)
 
-Boto3 documentation:
-[SNS.PlatformApplication.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.set_attributes)
+```python title="Method definition"
+def set_attributes(
+    self,
+    *,
+    Attributes: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef](./type_defs.md#setplatformapplicationattributesinputplatformapplicationsetattributestypedef).
 
-Keyword-only arguments:
 
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef = {  # (1)
+    "Attributes": ...,
+}
 
-<a id="platformendpoint"></a>
+parent.set_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: SetPlatformApplicationAttributesInputPlatformApplicationSetAttributesTypeDef](./type_defs.md#setplatformapplicationattributesinputplatformapplicationsetattributestypedef) 
+
+
+
 
 ## PlatformEndpoint
 
-Type annotations for `boto3.resource("sns").PlatformEndpoint` class.
+Type annotations and code completion for `#!python boto3.resource("sns").PlatformEndpoint` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_sns.service_resource import PlatformEndpoint
 
 def get_resource() -> PlatformEndpoint:
     return boto3.resource("sns").PlatformEndpoint(...)
 ```
 
-Boto3 documentation:
-[SNS.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
-
-<a id="platformendpoint-attributes"></a>
 
 ### PlatformEndpoint attributes
 
-- `attributes`: `Dict`\[`str`, `str`\]
+
+- `attributes`: `Dict`[`str`, `str`]
 - `arn`: `str`
 
-<a id="platformendpoint-methods"></a>
+
+
+
 
 ### PlatformEndpoint methods
 
-<a id="platformendpointdelete-method"></a>
 
 #### PlatformEndpoint.delete method
 
 Deletes the endpoint for a device and mobile app from Amazon SNS.
 
-Type annotations for `boto3.resource("sns").delete` method.
+Type annotations and code completion for `#!python boto3.resource("sns").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformendpointget\_available\_subresources-method"></a>
 
-#### PlatformEndpoint.get_available_subresources method
+#### PlatformEndpoint.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("sns").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.get_available_subresources)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="platformendpointload-method"></a>
 
 #### PlatformEndpoint.load method
 
 Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
 the PlatformEndpoint resource.
 
-Type annotations for `boto3.resource("sns").load` method.
+Type annotations and code completion for `#!python boto3.resource("sns").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.load)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformendpointpublish-method"></a>
 
 #### PlatformEndpoint.publish method
 
-Sends a message to an Amazon SNS topic, a text message (SMS message) directly
-to a phone number, or a message to a mobile platform endpoint (when you specify
-the `TargetArn` ).
+Sends a message to an Amazon SNS topic, a text message (SMS message) directly to
+a phone number, or a message to a mobile platform endpoint (when you specify the
+`TargetArn` ).
 
-Type annotations for `boto3.resource("sns").publish` method.
+Type annotations and code completion for `#!python boto3.resource("sns").publish` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.publish)
+```python title="Method definition"
+def publish(
+    self,
+    *,
+    Message: str,
+    TopicArn: str = ...,
+    PhoneNumber: str = ...,
+    Subject: str = ...,
+    MessageStructure: str = ...,
+    MessageAttributes: Mapping[str, MessageAttributeValueTypeDef] = ...,  # (1)
+    MessageDeduplicationId: str = ...,
+    MessageGroupId: str = ...,
+) -> PublishResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PublishInputPlatformEndpointPublishTypeDef](./type_defs.md#publishinputplatformendpointpublishtypedef).
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-braces: PublishResponseTypeDef](./type_defs.md#publishresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Message`: `str` *(required)*
-- `TopicArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishInputPlatformEndpointPublishTypeDef = {  # (1)
+    "Message": ...,
+}
 
-Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+parent.publish(**kwargs)
+```
 
-<a id="platformendpointreload-method"></a>
+1. See [:material-code-braces: PublishInputPlatformEndpointPublishTypeDef](./type_defs.md#publishinputplatformendpointpublishtypedef) 
 
 #### PlatformEndpoint.reload method
 
 Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
 the PlatformEndpoint resource.
 
-Type annotations for `boto3.resource("sns").reload` method.
+Type annotations and code completion for `#!python boto3.resource("sns").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="platformendpointset\_attributes-method"></a>
 
-#### PlatformEndpoint.set_attributes method
+#### PlatformEndpoint.set\_attributes method
 
 Sets the attributes for an endpoint for a device on one of the supported push
 notification services, such as GCM (Firebase Cloud Messaging) and APNS.
 
-Type annotations for `boto3.resource("sns").set_attributes` method.
+Type annotations and code completion for `#!python boto3.resource("sns").set_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes)
 
-Boto3 documentation:
-[SNS.PlatformEndpoint.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.set_attributes)
+```python title="Method definition"
+def set_attributes(
+    self,
+    *,
+    Attributes: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef](./type_defs.md#setendpointattributesinputplatformendpointsetattributestypedef).
 
-Keyword-only arguments:
 
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef = {  # (1)
+    "Attributes": ...,
+}
 
-<a id="subscription"></a>
+parent.set_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: SetEndpointAttributesInputPlatformEndpointSetAttributesTypeDef](./type_defs.md#setendpointattributesinputplatformendpointsetattributestypedef) 
+
+
+
 
 ## Subscription
 
-Type annotations for `boto3.resource("sns").Subscription` class.
+Type annotations and code completion for `#!python boto3.resource("sns").Subscription` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_sns.service_resource import Subscription
 
 def get_resource() -> Subscription:
     return boto3.resource("sns").Subscription(...)
 ```
 
-Boto3 documentation:
-[SNS.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
-
-<a id="subscription-attributes"></a>
 
 ### Subscription attributes
 
-- `attributes`: `Dict`\[`str`, `str`\]
+
+- `attributes`: `Dict`[`str`, `str`]
 - `arn`: `str`
 
-<a id="subscription-methods"></a>
+
+
+
 
 ### Subscription methods
 
-<a id="subscriptiondelete-method"></a>
 
 #### Subscription.delete method
 
 Deletes a subscription.
 
-Type annotations for `boto3.resource("sns").delete` method.
+Type annotations and code completion for `#!python boto3.resource("sns").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
 
-Boto3 documentation:
-[SNS.Subscription.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="subscriptionget\_available\_subresources-method"></a>
 
-#### Subscription.get_available_subresources method
+#### Subscription.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("sns").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.get_available_subresources)
 
-Boto3 documentation:
-[SNS.Subscription.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="subscriptionload-method"></a>
 
 #### Subscription.load method
 
-Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
-attributes of the Subscription resource.
+Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the attributes
+of the Subscription resource.
 
-Type annotations for `boto3.resource("sns").load` method.
+Type annotations and code completion for `#!python boto3.resource("sns").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load)
 
-Boto3 documentation:
-[SNS.Subscription.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="subscriptionreload-method"></a>
 
 #### Subscription.reload method
 
-Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
-attributes of the Subscription resource.
+Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the attributes
+of the Subscription resource.
 
-Type annotations for `boto3.resource("sns").reload` method.
+Type annotations and code completion for `#!python boto3.resource("sns").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload)
 
-Boto3 documentation:
-[SNS.Subscription.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="subscriptionset\_attributes-method"></a>
 
-#### Subscription.set_attributes method
+#### Subscription.set\_attributes method
 
 Allows a subscription owner to set an attribute of the subscription to a new
 value.
 
-Type annotations for `boto3.resource("sns").set_attributes` method.
+Type annotations and code completion for `#!python boto3.resource("sns").set_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes)
 
-Boto3 documentation:
-[SNS.Subscription.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.set_attributes)
+```python title="Method definition"
+def set_attributes(
+    self,
+    *,
+    AttributeName: str,
+    AttributeValue: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef](./type_defs.md#setsubscriptionattributesinputsubscriptionsetattributestypedef).
 
-Keyword-only arguments:
 
-- `AttributeName`: `str` *(required)*
-- `AttributeValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef = {  # (1)
+    "AttributeName": ...,
+}
 
-<a id="topic"></a>
+parent.set_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: SetSubscriptionAttributesInputSubscriptionSetAttributesTypeDef](./type_defs.md#setsubscriptionattributesinputsubscriptionsetattributestypedef) 
+
+
+
 
 ## Topic
 
-Type annotations for `boto3.resource("sns").Topic` class.
+Type annotations and code completion for `#!python boto3.resource("sns").Topic` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_sns.service_resource import Topic
 
 def get_resource() -> Topic:
     return boto3.resource("sns").Topic(...)
 ```
 
-Boto3 documentation:
-[SNS.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
-
-<a id="topic-attributes"></a>
 
 ### Topic attributes
 
-- `attributes`: `Dict`\[`str`, `str`\]
-- `arn`: `str`
-- `subscriptions`:
-  [TopicSubscriptionsCollection](#topicsubscriptionscollection)
 
-<a id="topic-collections"></a>
+- `attributes`: `Dict`[`str`, `str`]
+- `arn`: `str`
+- `subscriptions`: [TopicSubscriptionsCollection](#topicsubscriptionscollection)
+
+
 
 ### Topic collections
 
-<a id="topicsubscriptions"></a>
 
 #### Topic.subscriptions
 
-Type annotations for `boto3.resource("sns").Topic(...).subscriptions`
-collection.
+Provides access to [Subscription](#subscription) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("sns").Topic(...).subscriptions` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscriptions)
 
-```python
-from mypy_boto3_sns.service_resource import TopicSubscriptionsCollection,
+```python title="Usage example"
+from mypy_boto3_sns.service_resource import TopicSubscriptionsCollection
 
 def get_collection() -> TopicSubscriptionsCollection:
     resource = boto3.resource("sns").Topic(...)
     return resource.subscriptions
 ```
 
-Provides access to [Subscription](#subscription) resource.
 
-Boto3 documentation:
-[SNS.Topic.TopicSubscriptionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscriptions)
 
-<a id="topic-methods"></a>
 
 ### Topic methods
 
-<a id="topicadd\_permission-method"></a>
 
-#### Topic.add_permission method
+#### Topic.add\_permission method
 
 Adds a statement to a topic's access control policy, granting access for the
 specified Amazon Web Services accounts to the specified actions.
 
-Type annotations for `boto3.resource("sns").add_permission` method.
+Type annotations and code completion for `#!python boto3.resource("sns").add_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission)
 
-Boto3 documentation:
-[SNS.Topic.add_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.add_permission)
+```python title="Method definition"
+def add_permission(
+    self,
+    *,
+    Label: str,
+    AWSAccountId: Sequence[str],
+    ActionName: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddPermissionInputTopicAddPermissionTypeDef](./type_defs.md#addpermissioninputtopicaddpermissiontypedef).
 
-Keyword-only arguments:
 
-- `Label`: `str` *(required)*
-- `AWSAccountId`: `Sequence`\[`str`\] *(required)*
-- `ActionName`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddPermissionInputTopicAddPermissionTypeDef = {  # (1)
+    "Label": ...,
+    "AWSAccountId": ...,
+    "ActionName": ...,
+}
 
-<a id="topicconfirm\_subscription-method"></a>
+parent.add_permission(**kwargs)
+```
 
-#### Topic.confirm_subscription method
+1. See [:material-code-braces: AddPermissionInputTopicAddPermissionTypeDef](./type_defs.md#addpermissioninputtopicaddpermissiontypedef) 
+
+#### Topic.confirm\_subscription method
 
 Verifies an endpoint owner's intent to receive messages by validating the token
 sent to the endpoint by an earlier `Subscribe` action.
 
-Type annotations for `boto3.resource("sns").confirm_subscription` method.
+Type annotations and code completion for `#!python boto3.resource("sns").confirm_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription)
 
-Boto3 documentation:
-[SNS.Topic.confirm_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.confirm_subscription)
+```python title="Method definition"
+def confirm_subscription(
+    self,
+    *,
+    Token: str,
+    AuthenticateOnUnsubscribe: str = ...,
+) -> Subscription:
+    ...
+```
 
-Arguments mapping described in
-[ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef](./type_defs.md#confirmsubscriptioninputtopicconfirmsubscriptiontypedef).
 
-Keyword-only arguments:
 
-- `Token`: `str` *(required)*
-- `AuthenticateOnUnsubscribe`: `str`
+```python title="Usage example with kwargs"
+kwargs: ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef = {  # (1)
+    "Token": ...,
+}
 
-Returns [Subscription](#subscription).
+parent.confirm_subscription(**kwargs)
+```
 
-<a id="topicdelete-method"></a>
+1. See [:material-code-braces: ConfirmSubscriptionInputTopicConfirmSubscriptionTypeDef](./type_defs.md#confirmsubscriptioninputtopicconfirmsubscriptiontypedef) 
 
 #### Topic.delete method
 
 Deletes a topic and all its subscriptions.
 
-Type annotations for `boto3.resource("sns").delete` method.
+Type annotations and code completion for `#!python boto3.resource("sns").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
 
-Boto3 documentation:
-[SNS.Topic.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="topicget\_available\_subresources-method"></a>
 
-#### Topic.get_available_subresources method
+#### Topic.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("sns").get_available_subresources` method.
+Type annotations and code completion for `#!python boto3.resource("sns").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.get_available_subresources)
 
-Boto3 documentation:
-[SNS.Topic.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="topicload-method"></a>
 
 #### Topic.load method
 
-Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
-the Topic resource.
+Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of the
+Topic resource.
 
-Type annotations for `boto3.resource("sns").load` method.
+Type annotations and code completion for `#!python boto3.resource("sns").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.load)
 
-Boto3 documentation:
-[SNS.Topic.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="topicpublish-method"></a>
 
 #### Topic.publish method
 
-Sends a message to an Amazon SNS topic, a text message (SMS message) directly
-to a phone number, or a message to a mobile platform endpoint (when you specify
-the `TargetArn` ).
+Sends a message to an Amazon SNS topic, a text message (SMS message) directly to
+a phone number, or a message to a mobile platform endpoint (when you specify the
+`TargetArn` ).
 
-Type annotations for `boto3.resource("sns").publish` method.
+Type annotations and code completion for `#!python boto3.resource("sns").publish` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish)
 
-Boto3 documentation:
-[SNS.Topic.publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.publish)
+```python title="Method definition"
+def publish(
+    self,
+    *,
+    Message: str,
+    TargetArn: str = ...,
+    PhoneNumber: str = ...,
+    Subject: str = ...,
+    MessageStructure: str = ...,
+    MessageAttributes: Mapping[str, MessageAttributeValueTypeDef] = ...,  # (1)
+    MessageDeduplicationId: str = ...,
+    MessageGroupId: str = ...,
+) -> PublishResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PublishInputTopicPublishTypeDef](./type_defs.md#publishinputtopicpublishtypedef).
+1. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
+2. See [:material-code-braces: PublishResponseTypeDef](./type_defs.md#publishresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Message`: `str` *(required)*
-- `TargetArn`: `str`
-- `PhoneNumber`: `str`
-- `Subject`: `str`
-- `MessageStructure`: `str`
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-- `MessageDeduplicationId`: `str`
-- `MessageGroupId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PublishInputTopicPublishTypeDef = {  # (1)
+    "Message": ...,
+}
 
-Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
+parent.publish(**kwargs)
+```
 
-<a id="topicreload-method"></a>
+1. See [:material-code-braces: PublishInputTopicPublishTypeDef](./type_defs.md#publishinputtopicpublishtypedef) 
 
 #### Topic.reload method
 
-Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
-the Topic resource.
+Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of the
+Topic resource.
 
-Type annotations for `boto3.resource("sns").reload` method.
+Type annotations and code completion for `#!python boto3.resource("sns").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload)
 
-Boto3 documentation:
-[SNS.Topic.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="topicremove\_permission-method"></a>
 
-#### Topic.remove_permission method
+#### Topic.remove\_permission method
 
 Removes a statement from a topic's access control policy.
 
-Type annotations for `boto3.resource("sns").remove_permission` method.
+Type annotations and code completion for `#!python boto3.resource("sns").remove_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission)
 
-Boto3 documentation:
-[SNS.Topic.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.remove_permission)
+```python title="Method definition"
+def remove_permission(
+    self,
+    *,
+    Label: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemovePermissionInputTopicRemovePermissionTypeDef](./type_defs.md#removepermissioninputtopicremovepermissiontypedef).
 
-Keyword-only arguments:
 
-- `Label`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemovePermissionInputTopicRemovePermissionTypeDef = {  # (1)
+    "Label": ...,
+}
 
-<a id="topicset\_attributes-method"></a>
+parent.remove_permission(**kwargs)
+```
 
-#### Topic.set_attributes method
+1. See [:material-code-braces: RemovePermissionInputTopicRemovePermissionTypeDef](./type_defs.md#removepermissioninputtopicremovepermissiontypedef) 
+
+#### Topic.set\_attributes method
 
 Allows a topic owner to set an attribute of the topic to a new value.
 
-Type annotations for `boto3.resource("sns").set_attributes` method.
+Type annotations and code completion for `#!python boto3.resource("sns").set_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes)
 
-Boto3 documentation:
-[SNS.Topic.set_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.set_attributes)
+```python title="Method definition"
+def set_attributes(
+    self,
+    *,
+    AttributeName: str,
+    AttributeValue: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetTopicAttributesInputTopicSetAttributesTypeDef](./type_defs.md#settopicattributesinputtopicsetattributestypedef).
 
-Keyword-only arguments:
 
-- `AttributeName`: `str` *(required)*
-- `AttributeValue`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetTopicAttributesInputTopicSetAttributesTypeDef = {  # (1)
+    "AttributeName": ...,
+}
 
-<a id="topicsubscribe-method"></a>
+parent.set_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: SetTopicAttributesInputTopicSetAttributesTypeDef](./type_defs.md#settopicattributesinputtopicsetattributestypedef) 
 
 #### Topic.subscribe method
 
 Subscribes an endpoint to an Amazon SNS topic.
 
-Type annotations for `boto3.resource("sns").subscribe` method.
+Type annotations and code completion for `#!python boto3.resource("sns").subscribe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe)
 
-Boto3 documentation:
-[SNS.Topic.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscribe)
+```python title="Method definition"
+def subscribe(
+    self,
+    *,
+    Protocol: str,
+    Endpoint: str = ...,
+    Attributes: Mapping[str, str] = ...,
+    ReturnSubscriptionArn: bool = ...,
+) -> Subscription:
+    ...
+```
 
-Arguments mapping described in
-[SubscribeInputTopicSubscribeTypeDef](./type_defs.md#subscribeinputtopicsubscribetypedef).
 
-Keyword-only arguments:
 
-- `Protocol`: `str` *(required)*
-- `Endpoint`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `ReturnSubscriptionArn`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SubscribeInputTopicSubscribeTypeDef = {  # (1)
+    "Protocol": ...,
+}
 
-Returns [Subscription](#subscription).
+parent.subscribe(**kwargs)
+```
+
+1. See [:material-code-braces: SubscribeInputTopicSubscribeTypeDef](./type_defs.md#subscribeinputtopicsubscribetypedef) 
+
+
+

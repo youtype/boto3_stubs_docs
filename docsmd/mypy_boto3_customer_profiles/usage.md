@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-customerprofiles-module"></a>
-
-# Examples for boto3 CustomerProfiles module
+# Examples
 
 > [Index](../README.md) > [CustomerProfiles](./README.md) > Examples
 
-- [Examples for boto3 CustomerProfiles module](#examples-for-boto3-customerprofiles-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
+    type annotations stubs module [mypy-boto3-customer-profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[customer-profiles]` package installed.
 
-Write your `CustomerProfiles` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CustomerProfiles` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CustomerProfilesClient
-# and provides type checking and code completion
-client = session.client("customer-profiles")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddProfileKeyResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_profile_key()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("customer-profiles")  # (1)
+    result = client.add_profile_key()  # (2)
+    ```
+
+    1. client: [CustomerProfilesClient](./client.md)
+    2. result: [:material-code-braces: AddProfileKeyResponseTypeDef](./type_defs.md#addprofilekeyresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[customer-profiles]` or a standalone
-`mypy_boto3_customer_profiles` package, you have to explicitly specify
-`client: CustomerProfilesClient` type annotation.
+With `boto3-stubs-lite[customer-profiles]`
+or a standalone `mypy_boto3_customer_profiles` package, you have to explicitly specify `client: CustomerProfilesClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_customer_profiles.client import CustomerProfilesClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_customer_profiles.client import CustomerProfilesClient
+    from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseTypeDef
+    from mypy_boto3_customer_profiles.type_defs import AddProfileKeyRequestRequestTypeDef
 
 
-from mypy_boto3_customer_profiles.type_defs import AddProfileKeyResponseTypeDef
+    session = Session()
+
+    client: CustomerProfilesClient = session.client("customer-profiles")
+
+    kwargs: AddProfileKeyRequestRequestTypeDef = {...}
+    result: AddProfileKeyResponseTypeDef = client.add_profile_key(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: CustomerProfilesClient = session.client("customer-profiles")
 
-result: AddProfileKeyResponseTypeDef = client.add_profile_key()
-```
+

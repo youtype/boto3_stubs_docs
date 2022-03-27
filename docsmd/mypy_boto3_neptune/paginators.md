@@ -1,41 +1,18 @@
-<a id="paginators-for-boto3-neptune-module"></a>
-
-# Paginators for boto3 Neptune module
+# Paginators
 
 > [Index](../README.md) > [Neptune](./README.md) > Paginators
 
-Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
-type annotations stubs module
-[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
+!!! note ""
 
-- [Paginators for boto3 Neptune module](#paginators-for-boto3-neptune-module)
-  - [DescribeDBClusterEndpointsPaginator](#describedbclusterendpointspaginator)
-  - [DescribeDBClusterParameterGroupsPaginator](#describedbclusterparametergroupspaginator)
-  - [DescribeDBClusterParametersPaginator](#describedbclusterparameterspaginator)
-  - [DescribeDBClusterSnapshotsPaginator](#describedbclustersnapshotspaginator)
-  - [DescribeDBClustersPaginator](#describedbclusterspaginator)
-  - [DescribeDBEngineVersionsPaginator](#describedbengineversionspaginator)
-  - [DescribeDBInstancesPaginator](#describedbinstancespaginator)
-  - [DescribeDBParameterGroupsPaginator](#describedbparametergroupspaginator)
-  - [DescribeDBParametersPaginator](#describedbparameterspaginator)
-  - [DescribeDBSubnetGroupsPaginator](#describedbsubnetgroupspaginator)
-  - [DescribeEngineDefaultParametersPaginator](#describeenginedefaultparameterspaginator)
-  - [DescribeEventSubscriptionsPaginator](#describeeventsubscriptionspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeOrderableDBInstanceOptionsPaginator](#describeorderabledbinstanceoptionspaginator)
-  - [DescribePendingMaintenanceActionsPaginator](#describependingmaintenanceactionspaginator)
-
-<a id="describedbclusterendpointspaginator"></a>
+    Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+    type annotations stubs module [mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 ## DescribeDBClusterEndpointsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_cluster_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_cluster_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator
@@ -44,30 +21,43 @@ def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsP
     return Session().client("neptune").get_paginator("describe_db_cluster_endpoints")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBClusterEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterEndpoints)
 
-Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
+### paginate
 
-- `DBClusterIdentifier`: `str`
-- `DBClusterEndpointIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBClusterEndpointsPaginator.paginate` method.
 
-`DescribeDBClusterEndpointsPaginator.paginate` returns
-`_PageIterator`\[[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    DBClusterEndpointIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBClusterEndpointMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbclusterparametergroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterEndpointsMessageDescribeDBClusterEndpointsPaginateTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClusterEndpointsMessageDescribeDBClusterEndpointsPaginateTypeDef](./type_defs.md#describedbclusterendpointsmessagedescribedbclusterendpointspaginatetypedef) 
 ## DescribeDBClusterParameterGroupsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_cluster_parameter_groups")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_cluster_parameter_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameterGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBClusterParameterGroupsPaginator
@@ -76,29 +66,42 @@ def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterPar
     return Session().client("neptune").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBClusterParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameterGroups)
 
-Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
+### paginate
 
-- `DBClusterParameterGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBClusterParameterGroupsPaginator.paginate` method.
 
-`DescribeDBClusterParameterGroupsPaginator.paginate` returns
-`_PageIterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBClusterParameterGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBClusterParameterGroupsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbclusterparameterspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef](./type_defs.md#describedbclusterparametergroupsmessagedescribedbclusterparametergroupspaginatetypedef) 
 ## DescribeDBClusterParametersPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_cluster_parameters")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_cluster_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBClusterParametersPaginator
@@ -107,30 +110,43 @@ def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParameter
     return Session().client("neptune").get_paginator("describe_db_cluster_parameters")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBClusterParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterParameters)
 
-Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
+### paginate
 
-- `DBClusterParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBClusterParametersPaginator.paginate` method.
 
-`DescribeDBClusterParametersPaginator.paginate` returns
-`_PageIterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBClusterParameterGroupName: str,
+    Source: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBClusterParameterGroupDetailsTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbclustersnapshotspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef = {  # (1)
+    "DBClusterParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef](./type_defs.md#describedbclusterparametersmessagedescribedbclusterparameterspaginatetypedef) 
 ## DescribeDBClusterSnapshotsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_cluster_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_cluster_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBClusterSnapshotsPaginator
@@ -139,33 +155,46 @@ def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsP
     return Session().client("neptune").get_paginator("describe_db_cluster_snapshots")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBClusterSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusterSnapshots)
 
-Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
+### paginate
 
-- `DBClusterIdentifier`: `str`
-- `DBClusterSnapshotIdentifier`: `str`
-- `SnapshotType`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `IncludeShared`: `bool`
-- `IncludePublic`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBClusterSnapshotsPaginator.paginate` method.
 
-`DescribeDBClusterSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    DBClusterSnapshotIdentifier: str = ...,
+    SnapshotType: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    IncludeShared: bool = ...,
+    IncludePublic: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBClusterSnapshotMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbclusterspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef](./type_defs.md#describedbclustersnapshotsmessagedescribedbclustersnapshotspaginatetypedef) 
 ## DescribeDBClustersPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_clusters")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBClustersPaginator
@@ -174,29 +203,42 @@ def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
     return Session().client("neptune").get_paginator("describe_db_clusters")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBClusters)
 
-Arguments for `DescribeDBClustersPaginator.paginate` method:
+### paginate
 
-- `DBClusterIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBClustersPaginator.paginate` method.
 
-`DescribeDBClustersPaginator.paginate` returns
-`_PageIterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBClusterIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBClusterMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbengineversionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef = {  # (1)
+    "DBClusterIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef](./type_defs.md#describedbclustersmessagedescribedbclusterspaginatetypedef) 
 ## DescribeDBEngineVersionsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_engine_versions")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_engine_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBEngineVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBEngineVersionsPaginator
@@ -205,34 +247,47 @@ def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPagin
     return Session().client("neptune").get_paginator("describe_db_engine_versions")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBEngineVersions)
 
-Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
+### paginate
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `DBParameterGroupFamily`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DefaultOnly`: `bool`
-- `ListSupportedCharacterSets`: `bool`
-- `ListSupportedTimezones`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBEngineVersionsPaginator.paginate` method.
 
-`DescribeDBEngineVersionsPaginator.paginate` returns
-`_PageIterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Engine: str = ...,
+    EngineVersion: str = ...,
+    DBParameterGroupFamily: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    DefaultOnly: bool = ...,
+    ListSupportedCharacterSets: bool = ...,
+    ListSupportedTimezones: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBEngineVersionMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbinstancespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef = {  # (1)
+    "Engine": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef](./type_defs.md#describedbengineversionsmessagedescribedbengineversionspaginatetypedef) 
 ## DescribeDBInstancesPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_instances")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBInstancesPaginator
@@ -241,29 +296,42 @@ def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
     return Session().client("neptune").get_paginator("describe_db_instances")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBInstances)
 
-Arguments for `DescribeDBInstancesPaginator.paginate` method:
+### paginate
 
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBInstancesPaginator.paginate` method.
 
-`DescribeDBInstancesPaginator.paginate` returns
-`_PageIterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBInstanceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBInstanceMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbparametergroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef](./type_defs.md#describedbinstancesmessagedescribedbinstancespaginatetypedef) 
 ## DescribeDBParameterGroupsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_parameter_groups")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_parameter_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameterGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBParameterGroupsPaginator
@@ -272,29 +340,42 @@ def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPag
     return Session().client("neptune").get_paginator("describe_db_parameter_groups")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameterGroups)
 
-Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
+### paginate
 
-- `DBParameterGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBParameterGroupsPaginator.paginate` method.
 
-`DescribeDBParameterGroupsPaginator.paginate` returns
-`_PageIterator`\[[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBParameterGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBParameterGroupsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbparameterspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBParameterGroupsMessageDescribeDBParameterGroupsPaginateTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBParameterGroupsMessageDescribeDBParameterGroupsPaginateTypeDef](./type_defs.md#describedbparametergroupsmessagedescribedbparametergroupspaginatetypedef) 
 ## DescribeDBParametersPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_parameters")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBParametersPaginator
@@ -303,30 +384,43 @@ def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
     return Session().client("neptune").get_paginator("describe_db_parameters")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBParameters)
 
-Arguments for `DescribeDBParametersPaginator.paginate` method:
+### paginate
 
-- `DBParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBParametersPaginator.paginate` method.
 
-`DescribeDBParametersPaginator.paginate` returns
-`_PageIterator`\[[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBParameterGroupName: str,
+    Source: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBParameterGroupDetailsTypeDef]:  # (3)
+    ...
+```
 
-<a id="describedbsubnetgroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBParametersMessageDescribeDBParametersPaginateTypeDef = {  # (1)
+    "DBParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBParametersMessageDescribeDBParametersPaginateTypeDef](./type_defs.md#describedbparametersmessagedescribedbparameterspaginatetypedef) 
 ## DescribeDBSubnetGroupsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_db_subnet_groups")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_db_subnet_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBSubnetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeDBSubnetGroupsPaginator
@@ -335,29 +429,42 @@ def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator
     return Session().client("neptune").get_paginator("describe_db_subnet_groups")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeDBSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeDBSubnetGroups)
 
-Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
+### paginate
 
-- `DBSubnetGroupName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDBSubnetGroupsPaginator.paginate` method.
 
-`DescribeDBSubnetGroupsPaginator.paginate` returns
-`_PageIterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBSubnetGroupName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DBSubnetGroupMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeenginedefaultparameterspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef = {  # (1)
+    "DBSubnetGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef](./type_defs.md#describedbsubnetgroupsmessagedescribedbsubnetgroupspaginatetypedef) 
 ## DescribeEngineDefaultParametersPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_engine_default_parameters")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_engine_default_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEngineDefaultParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeEngineDefaultParametersPaginator
@@ -366,29 +473,42 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
     return Session().client("neptune").get_paginator("describe_engine_default_parameters")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEngineDefaultParameters)
 
-Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
+### paginate
 
-- `DBParameterGroupFamily`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEngineDefaultParametersPaginator.paginate` method.
 
-`DescribeEngineDefaultParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DBParameterGroupFamily: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEngineDefaultParametersResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventsubscriptionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef = {  # (1)
+    "DBParameterGroupFamily": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef](./type_defs.md#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef) 
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_event_subscriptions")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_event_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEventSubscriptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeEventSubscriptionsPaginator
@@ -397,29 +517,42 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("neptune").get_paginator("describe_event_subscriptions")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEventSubscriptions)
 
-Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+### paginate
 
-- `SubscriptionName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventSubscriptionsPaginator.paginate` method.
 
-`DescribeEventSubscriptionsPaginator.paginate` returns
-`_PageIterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubscriptionName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[EventSubscriptionsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeEventsPaginator
@@ -428,34 +561,48 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("neptune").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    EventCategories: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[EventsMessageTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeorderabledbinstanceoptionspaginator"></a>
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageDescribeEventsPaginateTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef) 
 ## DescribeOrderableDBInstanceOptionsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_orderable_db_instance_options")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_orderable_db_instance_options")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeOrderableDBInstanceOptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribeOrderableDBInstanceOptionsPaginator
@@ -464,33 +611,46 @@ def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableD
     return Session().client("neptune").get_paginator("describe_orderable_db_instance_options")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribeOrderableDBInstanceOptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribeOrderableDBInstanceOptions)
 
-Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
+### paginate
 
-- `Engine`: `str` *(required)*
-- `EngineVersion`: `str`
-- `DBInstanceClass`: `str`
-- `LicenseModel`: `str`
-- `Vpc`: `bool`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrderableDBInstanceOptionsPaginator.paginate` method.
 
-`DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
-`_PageIterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Engine: str,
+    EngineVersion: str = ...,
+    DBInstanceClass: str = ...,
+    LicenseModel: str = ...,
+    Vpc: bool = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[OrderableDBInstanceOptionsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describependingmaintenanceactionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef = {  # (1)
+    "Engine": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagedescribeorderabledbinstanceoptionspaginatetypedef) 
 ## DescribePendingMaintenanceActionsPaginator
 
-Type annotations for
-`boto3.client("neptune").get_paginator("describe_pending_maintenance_actions")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_paginator("describe_pending_maintenance_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribePendingMaintenanceActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.paginator import DescribePendingMaintenanceActionsPaginator
@@ -499,15 +659,33 @@ def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaint
     return Session().client("neptune").get_paginator("describe_pending_maintenance_actions")
 ```
 
-Boto3 documentation:
-[Neptune.Paginator.DescribePendingMaintenanceActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Paginator.DescribePendingMaintenanceActions)
 
-Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
+### paginate
 
-- `ResourceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePendingMaintenanceActionsPaginator.paginate` method.
 
-`DescribePendingMaintenanceActionsPaginator.paginate` returns
-`_PageIterator`\[[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[PendingMaintenanceActionsMessageTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef = {  # (1)
+    "ResourceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef](./type_defs.md#describependingmaintenanceactionsmessagedescribependingmaintenanceactionspaginatetypedef) 

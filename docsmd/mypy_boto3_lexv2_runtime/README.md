@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-lexruntimev2-module"></a>
-
-# Type annotations for boto3 LexRuntimeV2 module
+#  LexRuntimeV2 module
 
 > [Index](../README.md) > LexRuntimeV2
 
-Auto-generated documentation for
-[LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
-type annotations stubs module
-[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+!!! note ""
 
-- [Type annotations for boto3 LexRuntimeV2 module](#type-annotations-for-boto3-lexruntimev2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LexRuntimeV2Client](#lexruntimev2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
+    type annotations stubs module [mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LexRuntimeV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lexv2-runtime]'
 python -m pip install mypy-boto3-lexv2-runtime
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,64 +42,41 @@ python -m pip install mypy-boto3-lexv2-runtime
 python -m pip uninstall -y mypy-boto3-lexv2-runtime
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lexruntimev2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LexRuntimeV2Client
 
-Type annotations for `boto3.client("lexv2-runtime")` as
-[LexRuntimeV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lexv2-runtime")` as [LexRuntimeV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
+
+def get_client() -> LexRuntimeV2Client:
+    return Session().cleint("lexv2-runtime")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [delete_session](./client.md#delete_session)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_session](./client.md#get_session)
-- [put_session](./client.md#put_session)
-- [recognize_text](./client.md#recognize_text)
-- [recognize_utterance](./client.md#recognize_utterance)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-LexRuntimeV2Client [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- BadGatewayException
-- ClientError
-- ConflictException
-- DependencyFailedException
-- InternalServerException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType
 
-```python
-from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
+def get_value() -> ConfirmationStateType:
+    return "Confirmed"
 ```
 
 - [ConfirmationStateType](./literals.md#confirmationstatetype)
@@ -133,18 +89,23 @@ from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
 - [LexRuntimeV2ServiceName](./literals.md#lexruntimev2servicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lexv2_runtime.type_defs import ActiveContextTimeToLiveTypeDef
 
-```python
-from mypy_boto3_lexv2_runtime.type_defs import ActiveContextTimeToLiveTypeDef, ...
+def get_value() -> ActiveContextTimeToLiveTypeDef:
+    return {
+        "timeToLiveInSeconds": ...,
+        "turnsToLive": ...,
+    }
 ```
 
 - [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
@@ -175,3 +136,4 @@ from mypy_boto3_lexv2_runtime.type_defs import ActiveContextTimeToLiveTypeDef, .
 - [SessionStateTypeDef](./type_defs.md#sessionstatetypedef)
 - [SlotTypeDef](./type_defs.md#slottypedef)
 - [ValueTypeDef](./type_defs.md#valuetypedef)
+

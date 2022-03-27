@@ -1,56 +1,18 @@
-<a id="acmpcaclient-for-boto3-acmpca-module"></a>
-
-# ACMPCAClient for boto3 ACMPCA module
+# ACMPCAClient
 
 > [Index](../README.md) > [ACMPCA](./README.md) > ACMPCAClient
 
-Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module
-[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+!!! note ""
 
-- [ACMPCAClient for boto3 ACMPCA module](#acmpcaclient-for-boto3-acmpca-module)
-  - [ACMPCAClient](#acmpcaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_certificate_authority](#create_certificate_authority)
-    - [create_certificate_authority_audit_report](#create_certificate_authority_audit_report)
-    - [create_permission](#create_permission)
-    - [delete_certificate_authority](#delete_certificate_authority)
-    - [delete_permission](#delete_permission)
-    - [delete_policy](#delete_policy)
-    - [describe_certificate_authority](#describe_certificate_authority)
-    - [describe_certificate_authority_audit_report](#describe_certificate_authority_audit_report)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_certificate](#get_certificate)
-    - [get_certificate_authority_certificate](#get_certificate_authority_certificate)
-    - [get_certificate_authority_csr](#get_certificate_authority_csr)
-    - [get_policy](#get_policy)
-    - [import_certificate_authority_certificate](#import_certificate_authority_certificate)
-    - [issue_certificate](#issue_certificate)
-    - [list_certificate_authorities](#list_certificate_authorities)
-    - [list_permissions](#list_permissions)
-    - [list_tags](#list_tags)
-    - [put_policy](#put_policy)
-    - [restore_certificate_authority](#restore_certificate_authority)
-    - [revoke_certificate](#revoke_certificate)
-    - [tag_certificate_authority](#tag_certificate_authority)
-    - [untag_certificate_authority](#untag_certificate_authority)
-    - [update_certificate_authority](#update_certificate_authority)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="acmpcaclient"></a>
+    Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+    type annotations stubs module [mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ## ACMPCAClient
 
-Type annotations for `boto3.client("acm-pca")`
+Type annotations and code completion for `#!python boto3.client("acm-pca")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_acm_pca.client import ACMPCAClient
 
@@ -58,651 +20,846 @@ def get_acm-pca_client() -> ACMPCAClient:
     return Session().client("acm-pca")
 ```
 
-Boto3 documentation:
-[ACMPCA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("acm-pca").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("acm-pca")
+
+try:
+    do_something(client)
+except (
+    client.CertificateMismatchException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.InvalidArgsException,
+    client.InvalidArnException,
+    client.InvalidNextTokenException,
+    client.InvalidPolicyException,
+    client.InvalidRequestException,
+    client.InvalidStateException,
+    client.InvalidTagException,
+    client.LimitExceededException,
+    client.LockoutPreventedException,
+    client.MalformedCSRException,
+    client.MalformedCertificateException,
+    client.PermissionAlreadyExistsException,
+    client.RequestAlreadyProcessedException,
+    client.RequestFailedException,
+    client.RequestInProgressException,
+    client.ResourceNotFoundException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_acm_pca.client import Exceptions
 
 def handle_error(exc: Exceptions.CertificateMismatchException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.CertificateMismatchException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.InvalidArgsException`
-- `Exceptions.InvalidArnException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidPolicyException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.InvalidTagException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.LockoutPreventedException`
-- `Exceptions.MalformedCSRException`
-- `Exceptions.MalformedCertificateException`
-- `Exceptions.PermissionAlreadyExistsException`
-- `Exceptions.RequestAlreadyProcessedException`
-- `Exceptions.RequestFailedException`
-- `Exceptions.RequestInProgressException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ACMPCAClient exceptions.
-
-Type annotations for `boto3.client("acm-pca").exceptions` method.
-
-Boto3 documentation:
-[ACMPCA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("acm-pca").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate)
 
-Boto3 documentation:
-[ACMPCA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_certificate\_authority"></a>
-
-### create_certificate_authority
+### create\_certificate\_authority
 
 Creates a root or subordinate private certificate authority (CA).
 
-Type annotations for `boto3.client("acm-pca").create_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").create_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.create_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority)
+```python title="Method definition"
+def create_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityConfiguration: CertificateAuthorityConfigurationTypeDef,  # (1)
+    CertificateAuthorityType: CertificateAuthorityTypeType,  # (2)
+    RevocationConfiguration: RevocationConfigurationTypeDef = ...,  # (3)
+    IdempotencyToken: str = ...,
+    KeyStorageSecurityStandard: KeyStorageSecurityStandardType = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateCertificateAuthorityResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#createcertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef) 
+2. See [:material-code-brackets: CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype) 
+3. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
+4. See [:material-code-brackets: KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityConfiguration`:
-  [CertificateAuthorityConfigurationTypeDef](./type_defs.md#certificateauthorityconfigurationtypedef)
-  *(required)*
-- `CertificateAuthorityType`:
-  [CertificateAuthorityTypeType](./literals.md#certificateauthoritytypetype)
-  *(required)*
-- `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
-- `IdempotencyToken`: `str`
-- `KeyStorageSecurityStandard`:
-  [KeyStorageSecurityStandardType](./literals.md#keystoragesecuritystandardtype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityConfiguration": ...,
+    "CertificateAuthorityType": ...,
+}
 
-Returns
-[CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
+parent.create_certificate_authority(**kwargs)
+```
 
-<a id="create\_certificate\_authority\_audit\_report"></a>
+1. See [:material-code-braces: CreateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#createcertificateauthorityrequestrequesttypedef) 
 
-### create_certificate_authority_audit_report
+### create\_certificate\_authority\_audit\_report
 
 Creates an audit report that lists every time that your CA private key is used.
 
-Type annotations for
-`boto3.client("acm-pca").create_certificate_authority_audit_report` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").create_certificate_authority_audit_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
 
-Boto3 documentation:
-[ACMPCA.Client.create_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_certificate_authority_audit_report)
+```python title="Method definition"
+def create_certificate_authority_audit_report(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    S3BucketName: str,
+    AuditReportResponseFormat: AuditReportResponseFormatType,  # (1)
+) -> CreateCertificateAuthorityAuditReportResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#createcertificateauthorityauditreportrequestrequesttypedef).
+1. See [:material-code-brackets: AuditReportResponseFormatType](./literals.md#auditreportresponseformattype) 
+2. See [:material-code-braces: CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `AuditReportResponseFormat`:
-  [AuditReportResponseFormatType](./literals.md#auditreportresponseformattype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCertificateAuthorityAuditReportRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "S3BucketName": ...,
+    "AuditReportResponseFormat": ...,
+}
 
-Returns
-[CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef).
+parent.create_certificate_authority_audit_report(**kwargs)
+```
 
-<a id="create\_permission"></a>
+1. See [:material-code-braces: CreateCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#createcertificateauthorityauditreportrequestrequesttypedef) 
 
-### create_permission
+### create\_permission
 
 Grants one or more permissions on a private CA to the Certificate Manager (ACM)
 service principal (`acm.amazonaws.com` ).
 
-Type annotations for `boto3.client("acm-pca").create_permission` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").create_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
 
-Boto3 documentation:
-[ACMPCA.Client.create_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.create_permission)
+```python title="Method definition"
+def create_permission(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Principal: str,
+    Actions: Sequence[ActionTypeType],  # (1)
+    SourceAccount: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreatePermissionRequestRequestTypeDef](./type_defs.md#createpermissionrequestrequesttypedef).
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Principal`: `str` *(required)*
-- `Actions`: `Sequence`\[[ActionTypeType](./literals.md#actiontypetype)\]
-  *(required)*
-- `SourceAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePermissionRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Principal": ...,
+    "Actions": ...,
+}
 
-<a id="delete\_certificate\_authority"></a>
+parent.create_permission(**kwargs)
+```
 
-### delete_certificate_authority
+1. See [:material-code-braces: CreatePermissionRequestRequestTypeDef](./type_defs.md#createpermissionrequestrequesttypedef) 
+
+### delete\_certificate\_authority
 
 Deletes a private certificate authority (CA).
 
-Type annotations for `boto3.client("acm-pca").delete_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").delete_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.delete_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_certificate_authority)
+```python title="Method definition"
+def delete_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    PermanentDeletionTimeInDays: int = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#deletecertificateauthorityrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `PermanentDeletionTimeInDays`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-<a id="delete\_permission"></a>
+parent.delete_certificate_authority(**kwargs)
+```
 
-### delete_permission
+1. See [:material-code-braces: DeleteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#deletecertificateauthorityrequestrequesttypedef) 
+
+### delete\_permission
 
 Revokes permissions on a private CA granted to the Certificate Manager (ACM)
 service principal (acm.amazonaws.com).
 
-Type annotations for `boto3.client("acm-pca").delete_permission` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").delete_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
 
-Boto3 documentation:
-[ACMPCA.Client.delete_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_permission)
+```python title="Method definition"
+def delete_permission(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Principal: str,
+    SourceAccount: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePermissionRequestRequestTypeDef](./type_defs.md#deletepermissionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Principal`: `str` *(required)*
-- `SourceAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Principal": ...,
+}
 
-<a id="delete\_policy"></a>
+parent.delete_permission(**kwargs)
+```
 
-### delete_policy
+1. See [:material-code-braces: DeletePermissionRequestRequestTypeDef](./type_defs.md#deletepermissionrequestrequesttypedef) 
+
+### delete\_policy
 
 Deletes the resource-based policy attached to a private CA.
 
-Type annotations for `boto3.client("acm-pca").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
 
-Boto3 documentation:
-[ACMPCA.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="describe\_certificate\_authority"></a>
+parent.delete_policy(**kwargs)
+```
 
-### describe_certificate_authority
+1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
+
+### describe\_certificate\_authority
 
 Lists information about your private certificate authority (CA) or one that has
 been shared with you.
 
-Type annotations for `boto3.client("acm-pca").describe_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").describe_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.describe_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority)
+```python title="Method definition"
+def describe_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+) -> DescribeCertificateAuthorityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificateAuthorityRequestRequestTypeDef](./type_defs.md#describecertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-Returns
-[DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef).
+parent.describe_certificate_authority(**kwargs)
+```
 
-<a id="describe\_certificate\_authority\_audit\_report"></a>
+1. See [:material-code-braces: DescribeCertificateAuthorityRequestRequestTypeDef](./type_defs.md#describecertificateauthorityrequestrequesttypedef) 
 
-### describe_certificate_authority_audit_report
+### describe\_certificate\_authority\_audit\_report
 
 Lists information about a specific audit report created by calling the
-\[CreateCertificateAuthorityAuditReport\](https://docs.aws.amazon.com/acm-
-pca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html)\_
-action.
+[CreateCertificateAuthorityAuditReport](https://docs.aws.amazon.com/acm-
+pca/latest/APIReference/API_CreateCertificateAuthorityAuditReport.html)_ action.
 
-Type annotations for
-`boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").describe_certificate_authority_audit_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
 
-Boto3 documentation:
-[ACMPCA.Client.describe_certificate_authority_audit_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.describe_certificate_authority_audit_report)
+```python title="Method definition"
+def describe_certificate_authority_audit_report(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    AuditReportId: str,
+) -> DescribeCertificateAuthorityAuditReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#describecertificateauthorityauditreportrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `AuditReportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateAuthorityAuditReportRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "AuditReportId": ...,
+}
 
-Returns
-[DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef).
+parent.describe_certificate_authority_audit_report(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeCertificateAuthorityAuditReportRequestRequestTypeDef](./type_defs.md#describecertificateauthorityauditreportrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("acm-pca").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ACMPCA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_certificate"></a>
-
-### get_certificate
+### get\_certificate
 
 Retrieves a certificate from your private CA or one that has been shared with
 you.
 
-Type annotations for `boto3.client("acm-pca").get_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
 
-Boto3 documentation:
-[ACMPCA.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate)
+```python title="Method definition"
+def get_certificate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    CertificateArn: str,
+) -> GetCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "CertificateArn": ...,
+}
 
-Returns
-[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
+parent.get_certificate(**kwargs)
+```
 
-<a id="get\_certificate\_authority\_certificate"></a>
+1. See [:material-code-braces: GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef) 
 
-### get_certificate_authority_certificate
+### get\_certificate\_authority\_certificate
 
 Retrieves the certificate and certificate chain for your private certificate
 authority (CA) or one that has been shared with you.
 
-Type annotations for
-`boto3.client("acm-pca").get_certificate_authority_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_certificate_authority_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
 
-Boto3 documentation:
-[ACMPCA.Client.get_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_certificate)
+```python title="Method definition"
+def get_certificate_authority_certificate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+) -> GetCertificateAuthorityCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCertificateAuthorityCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-Returns
-[GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef).
+parent.get_certificate_authority_certificate(**kwargs)
+```
 
-<a id="get\_certificate\_authority\_csr"></a>
+1. See [:material-code-braces: GetCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycertificaterequestrequesttypedef) 
 
-### get_certificate_authority_csr
+### get\_certificate\_authority\_csr
 
 Retrieves the certificate signing request (CSR) for your private certificate
 authority (CA).
 
-Type annotations for `boto3.client("acm-pca").get_certificate_authority_csr`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_certificate_authority_csr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
 
-Boto3 documentation:
-[ACMPCA.Client.get_certificate_authority_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_certificate_authority_csr)
+```python title="Method definition"
+def get_certificate_authority_csr(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+) -> GetCertificateAuthorityCsrResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCertificateAuthorityCsrRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycsrrequestrequesttypedef).
+1. See [:material-code-braces: GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCertificateAuthorityCsrRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-Returns
-[GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef).
+parent.get_certificate_authority_csr(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetCertificateAuthorityCsrRequestRequestTypeDef](./type_defs.md#getcertificateauthoritycsrrequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
 Retrieves the resource-based policy attached to a private CA.
 
-Type annotations for `boto3.client("acm-pca").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
 
-Boto3 documentation:
-[ACMPCA.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="import\_certificate\_authority\_certificate"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### import_certificate_authority_certificate
+### import\_certificate\_authority\_certificate
 
 Imports a signed private CA certificate into Amazon Web Services Private CA.
 
-Type annotations for
-`boto3.client("acm-pca").import_certificate_authority_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").import_certificate_authority_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
 
-Boto3 documentation:
-[ACMPCA.Client.import_certificate_authority_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.import_certificate_authority_certificate)
+```python title="Method definition"
+def import_certificate_authority_certificate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Certificate: Union[bytes, IO[bytes], StreamingBody],
+    CertificateChain: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ImportCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#importcertificateauthoritycertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: ImportCertificateAuthorityCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Certificate": ...,
+}
 
-<a id="issue\_certificate"></a>
+parent.import_certificate_authority_certificate(**kwargs)
+```
 
-### issue_certificate
+1. See [:material-code-braces: ImportCertificateAuthorityCertificateRequestRequestTypeDef](./type_defs.md#importcertificateauthoritycertificaterequestrequesttypedef) 
+
+### issue\_certificate
 
 Uses your private certificate authority (CA), or one that has been shared with
 you, to issue a client certificate.
 
-Type annotations for `boto3.client("acm-pca").issue_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").issue_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
 
-Boto3 documentation:
-[ACMPCA.Client.issue_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.issue_certificate)
+```python title="Method definition"
+def issue_certificate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Csr: Union[bytes, IO[bytes], StreamingBody],
+    SigningAlgorithm: SigningAlgorithmType,  # (1)
+    Validity: ValidityTypeDef,  # (2)
+    ApiPassthrough: ApiPassthroughTypeDef = ...,  # (3)
+    TemplateArn: str = ...,
+    ValidityNotBefore: ValidityTypeDef = ...,  # (2)
+    IdempotencyToken: str = ...,
+) -> IssueCertificateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[IssueCertificateRequestRequestTypeDef](./type_defs.md#issuecertificaterequestrequesttypedef).
+1. See [:material-code-brackets: SigningAlgorithmType](./literals.md#signingalgorithmtype) 
+2. See [:material-code-braces: ValidityTypeDef](./type_defs.md#validitytypedef) 
+3. See [:material-code-braces: ApiPassthroughTypeDef](./type_defs.md#apipassthroughtypedef) 
+4. See [:material-code-braces: ValidityTypeDef](./type_defs.md#validitytypedef) 
+5. See [:material-code-braces: IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Csr`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `SigningAlgorithm`:
-  [SigningAlgorithmType](./literals.md#signingalgorithmtype) *(required)*
-- `Validity`: [ValidityTypeDef](./type_defs.md#validitytypedef) *(required)*
-- `ApiPassthrough`:
-  [ApiPassthroughTypeDef](./type_defs.md#apipassthroughtypedef)
-- `TemplateArn`: `str`
-- `ValidityNotBefore`: [ValidityTypeDef](./type_defs.md#validitytypedef)
-- `IdempotencyToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: IssueCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Csr": ...,
+    "SigningAlgorithm": ...,
+    "Validity": ...,
+}
 
-Returns
-[IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef).
+parent.issue_certificate(**kwargs)
+```
 
-<a id="list\_certificate\_authorities"></a>
+1. See [:material-code-braces: IssueCertificateRequestRequestTypeDef](./type_defs.md#issuecertificaterequestrequesttypedef) 
 
-### list_certificate_authorities
+### list\_certificate\_authorities
 
 Lists the private certificate authorities that you created by using the
-\[CreateCertificateAuthority\](https://docs.aws.amazon.com/acm-
-pca/latest/APIReference/API_CreateCertificateAuthority.html)\_ action.
+[CreateCertificateAuthority](https://docs.aws.amazon.com/acm-
+pca/latest/APIReference/API_CreateCertificateAuthority.html)_ action.
 
-Type annotations for `boto3.client("acm-pca").list_certificate_authorities`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").list_certificate_authorities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
 
-Boto3 documentation:
-[ACMPCA.Client.list_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_certificate_authorities)
+```python title="Method definition"
+def list_certificate_authorities(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ResourceOwner: ResourceOwnerType = ...,  # (1)
+) -> ListCertificateAuthoritiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listcertificateauthoritiesrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-braces: ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
+```python title="Usage example with kwargs"
+kwargs: ListCertificateAuthoritiesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef).
+parent.list_certificate_authorities(**kwargs)
+```
 
-<a id="list\_permissions"></a>
+1. See [:material-code-braces: ListCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listcertificateauthoritiesrequestrequesttypedef) 
 
-### list_permissions
+### list\_permissions
 
-List all permissions on a private CA, if any, granted to the Certificate
-Manager (ACM) service principal (acm.amazonaws.com).
+List all permissions on a private CA, if any, granted to the Certificate Manager
+(ACM) service principal (acm.amazonaws.com).
 
-Type annotations for `boto3.client("acm-pca").list_permissions` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").list_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
 
-Boto3 documentation:
-[ACMPCA.Client.list_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_permissions)
+```python title="Method definition"
+def list_permissions(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPermissionsRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-Returns
-[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
+parent.list_permissions(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListPermissionsRequestRequestTypeDef](./type_defs.md#listpermissionsrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
-Lists the tags, if any, that are associated with your private CA or one that
-has been shared with you.
+Lists the tags, if any, that are associated with your private CA or one that has
+been shared with you.
 
-Type annotations for `boto3.client("acm-pca").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
 
-Boto3 documentation:
-[ACMPCA.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="put\_policy"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### put_policy
+### put\_policy
 
 Attaches a resource-based policy to a private CA.
 
-Type annotations for `boto3.client("acm-pca").put_policy` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").put_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
 
-Boto3 documentation:
-[ACMPCA.Client.put_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.put_policy)
+```python title="Method definition"
+def put_policy(
+    self,
+    *,
+    ResourceArn: str,
+    Policy: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Policy": ...,
+}
 
-<a id="restore\_certificate\_authority"></a>
+parent.put_policy(**kwargs)
+```
 
-### restore_certificate_authority
+1. See [:material-code-braces: PutPolicyRequestRequestTypeDef](./type_defs.md#putpolicyrequestrequesttypedef) 
+
+### restore\_certificate\_authority
 
 Restores a certificate authority (CA) that is in the `DELETED` state.
 
-Type annotations for `boto3.client("acm-pca").restore_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").restore_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.restore_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.restore_certificate_authority)
+```python title="Method definition"
+def restore_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RestoreCertificateAuthorityRequestRequestTypeDef](./type_defs.md#restorecertificateauthorityrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-<a id="revoke\_certificate"></a>
+parent.restore_certificate_authority(**kwargs)
+```
 
-### revoke_certificate
+1. See [:material-code-braces: RestoreCertificateAuthorityRequestRequestTypeDef](./type_defs.md#restorecertificateauthorityrequestrequesttypedef) 
+
+### revoke\_certificate
 
 Revokes a certificate that was issued inside Amazon Web Services Private CA.
 
-Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").revoke_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
 
-Boto3 documentation:
-[ACMPCA.Client.revoke_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.revoke_certificate)
+```python title="Method definition"
+def revoke_certificate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    CertificateSerial: str,
+    RevocationReason: RevocationReasonType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RevokeCertificateRequestRequestTypeDef](./type_defs.md#revokecertificaterequestrequesttypedef).
+1. See [:material-code-brackets: RevocationReasonType](./literals.md#revocationreasontype) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `CertificateSerial`: `str` *(required)*
-- `RevocationReason`:
-  [RevocationReasonType](./literals.md#revocationreasontype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: RevokeCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "CertificateSerial": ...,
+    "RevocationReason": ...,
+}
 
-<a id="tag\_certificate\_authority"></a>
+parent.revoke_certificate(**kwargs)
+```
 
-### tag_certificate_authority
+1. See [:material-code-braces: RevokeCertificateRequestRequestTypeDef](./type_defs.md#revokecertificaterequestrequesttypedef) 
+
+### tag\_certificate\_authority
 
 Adds one or more tags to your private CA.
 
-Type annotations for `boto3.client("acm-pca").tag_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").tag_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.tag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.tag_certificate_authority)
+```python title="Method definition"
+def tag_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#tagcertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_certificate\_authority"></a>
+parent.tag_certificate_authority(**kwargs)
+```
 
-### untag_certificate_authority
+1. See [:material-code-braces: TagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#tagcertificateauthorityrequestrequesttypedef) 
+
+### untag\_certificate\_authority
 
 Remove one or more tags from your private CA.
 
-Type annotations for `boto3.client("acm-pca").untag_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").untag_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.untag_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.untag_certificate_authority)
+```python title="Method definition"
+def untag_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#untagcertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "Tags": ...,
+}
 
-<a id="update\_certificate\_authority"></a>
+parent.untag_certificate_authority(**kwargs)
+```
 
-### update_certificate_authority
+1. See [:material-code-braces: UntagCertificateAuthorityRequestRequestTypeDef](./type_defs.md#untagcertificateauthorityrequestrequesttypedef) 
+
+### update\_certificate\_authority
 
 Updates the status or configuration of a private certificate authority (CA).
 
-Type annotations for `boto3.client("acm-pca").update_certificate_authority`
-method.
+Type annotations and code completion for `#!python boto3.client("acm-pca").update_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
 
-Boto3 documentation:
-[ACMPCA.Client.update_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.update_certificate_authority)
+```python title="Method definition"
+def update_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    RevocationConfiguration: RevocationConfigurationTypeDef = ...,  # (1)
+    Status: CertificateAuthorityStatusType = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#updatecertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef) 
+2. See [:material-code-brackets: CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `RevocationConfiguration`:
-  [RevocationConfigurationTypeDef](./type_defs.md#revocationconfigurationtypedef)
-- `Status`:
-  [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_certificate_authority(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCertificateAuthorityRequestRequestTypeDef](./type_defs.md#updatecertificateauthorityrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("acm-pca").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_paginator` method with overloads.
 
-- `client.get_paginator("list_certificate_authorities")` ->
-  [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
-- `client.get_paginator("list_permissions")` ->
-  [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
-- `client.get_paginator("list_tags")` ->
-  [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("list_certificate_authorities")` -> [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
+- `client.get_paginator("list_permissions")` -> [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("acm-pca").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_waiter` method with overloads.
 
-- `client.get_waiter("audit_report_created")` ->
-  [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
-- `client.get_waiter("certificate_authority_csr_created")` ->
-  [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
-- `client.get_waiter("certificate_issued")` ->
-  [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)
+- `client.get_waiter("audit_report_created")` -> [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
+- `client.get_waiter("certificate_authority_csr_created")` -> [CertificateAuthorityCSRCreatedWaiter](./waiters.md#certificateauthoritycsrcreatedwaiter)
+- `client.get_waiter("certificate_issued")` -> [CertificateIssuedWaiter](./waiters.md#certificateissuedwaiter)
+

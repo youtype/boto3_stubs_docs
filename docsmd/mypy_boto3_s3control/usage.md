@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-s3control-module"></a>
-
-# Examples for boto3 S3Control module
+# Examples
 
 > [Index](../README.md) > [S3Control](./README.md) > Examples
 
-- [Examples for boto3 S3Control module](#examples-for-boto3-s3control-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+    type annotations stubs module [mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[s3control]` package installed.
 
-Write your `S3Control` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `S3Control` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type S3ControlClient
-# and provides type checking and code completion
-client = session.client("s3control")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListAccessPointsForObjectLambdaPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_access_points_for_object_lambda")
-for item in paginator.paginate(...):
-    # item has type ListAccessPointsForObjectLambdaResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("s3control")  # (1)
+    result = client.create_access_point()  # (2)
+    ```
+
+    1. client: [S3ControlClient](./client.md)
+    2. result: [:material-code-braces: CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("s3control")  # (1)
+
+    paginator = client.get_paginator("list_access_points_for_object_lambda")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [S3ControlClient](./client.md)
+    2. paginator: [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
+    3. item: [:material-code-braces: ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[s3control]` or a standalone `mypy_boto3_s3control`
-package, you have to explicitly specify `client: S3ControlClient` type
-annotation.
+With `boto3-stubs-lite[s3control]`
+or a standalone `mypy_boto3_s3control` package, you have to explicitly specify `client: S3ControlClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_s3control.client import S3ControlClient
-from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator
-
-from mypy_boto3_s3control.literals import PaginatorName
-
-from mypy_boto3_s3control.type_defs import bool
-from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: S3ControlClient = session.client("s3control")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_s3control.client import S3ControlClient
+    from mypy_boto3_s3control.type_defs import CreateAccessPointResultTypeDef
+    from mypy_boto3_s3control.type_defs import CreateAccessPointRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_access_points_for_object_lambda"
-paginator: ListAccessPointsForObjectLambdaPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccessPointsForObjectLambdaResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: S3ControlClient = session.client("s3control")
+
+    kwargs: CreateAccessPointRequestRequestTypeDef = {...}
+    result: CreateAccessPointResultTypeDef = client.create_access_point(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_s3control.client import S3ControlClient
+    from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator
+    from mypy_boto3_s3control.type_defs import ListAccessPointsForObjectLambdaResultTypeDef
+
+
+    session = Session()
+    client: S3ControlClient = session.client("s3control")
+
+    paginator: ListAccessPointsForObjectLambdaPaginator = client.get_paginator("list_access_points_for_object_lambda")
+    for item in paginator.paginate(...):
+        item: ListAccessPointsForObjectLambdaResultTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,191 +1,18 @@
-<a id="iamclient-for-boto3-iam-module"></a>
-
-# IAMClient for boto3 IAM module
+# IAMClient
 
 > [Index](../README.md) > [IAM](./README.md) > IAMClient
 
-Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module
-[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
+!!! note ""
 
-- [IAMClient for boto3 IAM module](#iamclient-for-boto3-iam-module)
-  - [IAMClient](#iamclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_client_id_to_open_id_connect_provider](#add_client_id_to_open_id_connect_provider)
-    - [add_role_to_instance_profile](#add_role_to_instance_profile)
-    - [add_user_to_group](#add_user_to_group)
-    - [attach_group_policy](#attach_group_policy)
-    - [attach_role_policy](#attach_role_policy)
-    - [attach_user_policy](#attach_user_policy)
-    - [can_paginate](#can_paginate)
-    - [change_password](#change_password)
-    - [create_access_key](#create_access_key)
-    - [create_account_alias](#create_account_alias)
-    - [create_group](#create_group)
-    - [create_instance_profile](#create_instance_profile)
-    - [create_login_profile](#create_login_profile)
-    - [create_open_id_connect_provider](#create_open_id_connect_provider)
-    - [create_policy](#create_policy)
-    - [create_policy_version](#create_policy_version)
-    - [create_role](#create_role)
-    - [create_saml_provider](#create_saml_provider)
-    - [create_service_linked_role](#create_service_linked_role)
-    - [create_service_specific_credential](#create_service_specific_credential)
-    - [create_user](#create_user)
-    - [create_virtual_mfa_device](#create_virtual_mfa_device)
-    - [deactivate_mfa_device](#deactivate_mfa_device)
-    - [delete_access_key](#delete_access_key)
-    - [delete_account_alias](#delete_account_alias)
-    - [delete_account_password_policy](#delete_account_password_policy)
-    - [delete_group](#delete_group)
-    - [delete_group_policy](#delete_group_policy)
-    - [delete_instance_profile](#delete_instance_profile)
-    - [delete_login_profile](#delete_login_profile)
-    - [delete_open_id_connect_provider](#delete_open_id_connect_provider)
-    - [delete_policy](#delete_policy)
-    - [delete_policy_version](#delete_policy_version)
-    - [delete_role](#delete_role)
-    - [delete_role_permissions_boundary](#delete_role_permissions_boundary)
-    - [delete_role_policy](#delete_role_policy)
-    - [delete_saml_provider](#delete_saml_provider)
-    - [delete_server_certificate](#delete_server_certificate)
-    - [delete_service_linked_role](#delete_service_linked_role)
-    - [delete_service_specific_credential](#delete_service_specific_credential)
-    - [delete_signing_certificate](#delete_signing_certificate)
-    - [delete_ssh_public_key](#delete_ssh_public_key)
-    - [delete_user](#delete_user)
-    - [delete_user_permissions_boundary](#delete_user_permissions_boundary)
-    - [delete_user_policy](#delete_user_policy)
-    - [delete_virtual_mfa_device](#delete_virtual_mfa_device)
-    - [detach_group_policy](#detach_group_policy)
-    - [detach_role_policy](#detach_role_policy)
-    - [detach_user_policy](#detach_user_policy)
-    - [enable_mfa_device](#enable_mfa_device)
-    - [generate_credential_report](#generate_credential_report)
-    - [generate_organizations_access_report](#generate_organizations_access_report)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [generate_service_last_accessed_details](#generate_service_last_accessed_details)
-    - [get_access_key_last_used](#get_access_key_last_used)
-    - [get_account_authorization_details](#get_account_authorization_details)
-    - [get_account_password_policy](#get_account_password_policy)
-    - [get_account_summary](#get_account_summary)
-    - [get_context_keys_for_custom_policy](#get_context_keys_for_custom_policy)
-    - [get_context_keys_for_principal_policy](#get_context_keys_for_principal_policy)
-    - [get_credential_report](#get_credential_report)
-    - [get_group](#get_group)
-    - [get_group_policy](#get_group_policy)
-    - [get_instance_profile](#get_instance_profile)
-    - [get_login_profile](#get_login_profile)
-    - [get_open_id_connect_provider](#get_open_id_connect_provider)
-    - [get_organizations_access_report](#get_organizations_access_report)
-    - [get_policy](#get_policy)
-    - [get_policy_version](#get_policy_version)
-    - [get_role](#get_role)
-    - [get_role_policy](#get_role_policy)
-    - [get_saml_provider](#get_saml_provider)
-    - [get_server_certificate](#get_server_certificate)
-    - [get_service_last_accessed_details](#get_service_last_accessed_details)
-    - [get_service_last_accessed_details_with_entities](#get_service_last_accessed_details_with_entities)
-    - [get_service_linked_role_deletion_status](#get_service_linked_role_deletion_status)
-    - [get_ssh_public_key](#get_ssh_public_key)
-    - [get_user](#get_user)
-    - [get_user_policy](#get_user_policy)
-    - [list_access_keys](#list_access_keys)
-    - [list_account_aliases](#list_account_aliases)
-    - [list_attached_group_policies](#list_attached_group_policies)
-    - [list_attached_role_policies](#list_attached_role_policies)
-    - [list_attached_user_policies](#list_attached_user_policies)
-    - [list_entities_for_policy](#list_entities_for_policy)
-    - [list_group_policies](#list_group_policies)
-    - [list_groups](#list_groups)
-    - [list_groups_for_user](#list_groups_for_user)
-    - [list_instance_profile_tags](#list_instance_profile_tags)
-    - [list_instance_profiles](#list_instance_profiles)
-    - [list_instance_profiles_for_role](#list_instance_profiles_for_role)
-    - [list_mfa_device_tags](#list_mfa_device_tags)
-    - [list_mfa_devices](#list_mfa_devices)
-    - [list_open_id_connect_provider_tags](#list_open_id_connect_provider_tags)
-    - [list_open_id_connect_providers](#list_open_id_connect_providers)
-    - [list_policies](#list_policies)
-    - [list_policies_granting_service_access](#list_policies_granting_service_access)
-    - [list_policy_tags](#list_policy_tags)
-    - [list_policy_versions](#list_policy_versions)
-    - [list_role_policies](#list_role_policies)
-    - [list_role_tags](#list_role_tags)
-    - [list_roles](#list_roles)
-    - [list_saml_provider_tags](#list_saml_provider_tags)
-    - [list_saml_providers](#list_saml_providers)
-    - [list_server_certificate_tags](#list_server_certificate_tags)
-    - [list_server_certificates](#list_server_certificates)
-    - [list_service_specific_credentials](#list_service_specific_credentials)
-    - [list_signing_certificates](#list_signing_certificates)
-    - [list_ssh_public_keys](#list_ssh_public_keys)
-    - [list_user_policies](#list_user_policies)
-    - [list_user_tags](#list_user_tags)
-    - [list_users](#list_users)
-    - [list_virtual_mfa_devices](#list_virtual_mfa_devices)
-    - [put_group_policy](#put_group_policy)
-    - [put_role_permissions_boundary](#put_role_permissions_boundary)
-    - [put_role_policy](#put_role_policy)
-    - [put_user_permissions_boundary](#put_user_permissions_boundary)
-    - [put_user_policy](#put_user_policy)
-    - [remove_client_id_from_open_id_connect_provider](#remove_client_id_from_open_id_connect_provider)
-    - [remove_role_from_instance_profile](#remove_role_from_instance_profile)
-    - [remove_user_from_group](#remove_user_from_group)
-    - [reset_service_specific_credential](#reset_service_specific_credential)
-    - [resync_mfa_device](#resync_mfa_device)
-    - [set_default_policy_version](#set_default_policy_version)
-    - [set_security_token_service_preferences](#set_security_token_service_preferences)
-    - [simulate_custom_policy](#simulate_custom_policy)
-    - [simulate_principal_policy](#simulate_principal_policy)
-    - [tag_instance_profile](#tag_instance_profile)
-    - [tag_mfa_device](#tag_mfa_device)
-    - [tag_open_id_connect_provider](#tag_open_id_connect_provider)
-    - [tag_policy](#tag_policy)
-    - [tag_role](#tag_role)
-    - [tag_saml_provider](#tag_saml_provider)
-    - [tag_server_certificate](#tag_server_certificate)
-    - [tag_user](#tag_user)
-    - [untag_instance_profile](#untag_instance_profile)
-    - [untag_mfa_device](#untag_mfa_device)
-    - [untag_open_id_connect_provider](#untag_open_id_connect_provider)
-    - [untag_policy](#untag_policy)
-    - [untag_role](#untag_role)
-    - [untag_saml_provider](#untag_saml_provider)
-    - [untag_server_certificate](#untag_server_certificate)
-    - [untag_user](#untag_user)
-    - [update_access_key](#update_access_key)
-    - [update_account_password_policy](#update_account_password_policy)
-    - [update_assume_role_policy](#update_assume_role_policy)
-    - [update_group](#update_group)
-    - [update_login_profile](#update_login_profile)
-    - [update_open_id_connect_provider_thumbprint](#update_open_id_connect_provider_thumbprint)
-    - [update_role](#update_role)
-    - [update_role_description](#update_role_description)
-    - [update_saml_provider](#update_saml_provider)
-    - [update_server_certificate](#update_server_certificate)
-    - [update_service_specific_credential](#update_service_specific_credential)
-    - [update_signing_certificate](#update_signing_certificate)
-    - [update_ssh_public_key](#update_ssh_public_key)
-    - [update_user](#update_user)
-    - [upload_server_certificate](#upload_server_certificate)
-    - [upload_signing_certificate](#upload_signing_certificate)
-    - [upload_ssh_public_key](#upload_ssh_public_key)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="iamclient"></a>
+    Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+    type annotations stubs module [mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ## IAMClient
 
-Type annotations for `boto3.client("iam")`
+Type annotations and code completion for `#!python boto3.client("iam")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iam.client import IAMClient
 
@@ -193,3565 +20,4971 @@ def get_iam_client() -> IAMClient:
     return Session().client("iam")
 ```
 
-Boto3 documentation:
-[IAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iam").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iam")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.CredentialReportExpiredException,
+    client.CredentialReportNotPresentException,
+    client.CredentialReportNotReadyException,
+    client.DeleteConflictException,
+    client.DuplicateCertificateException,
+    client.DuplicateSSHPublicKeyException,
+    client.EntityAlreadyExistsException,
+    client.EntityTemporarilyUnmodifiableException,
+    client.InvalidAuthenticationCodeException,
+    client.InvalidCertificateException,
+    client.InvalidInputException,
+    client.InvalidPublicKeyException,
+    client.InvalidUserTypeException,
+    client.KeyPairMismatchException,
+    client.LimitExceededException,
+    client.MalformedCertificateException,
+    client.MalformedPolicyDocumentException,
+    client.NoSuchEntityException,
+    client.PasswordPolicyViolationException,
+    client.PolicyEvaluationException,
+    client.PolicyNotAttachableException,
+    client.ReportGenerationLimitExceededException,
+    client.ServiceFailureException,
+    client.ServiceNotSupportedException,
+    client.UnmodifiableEntityException,
+    client.UnrecognizedPublicKeyEncodingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iam.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.CredentialReportExpiredException`
-- `Exceptions.CredentialReportNotPresentException`
-- `Exceptions.CredentialReportNotReadyException`
-- `Exceptions.DeleteConflictException`
-- `Exceptions.DuplicateCertificateException`
-- `Exceptions.DuplicateSSHPublicKeyException`
-- `Exceptions.EntityAlreadyExistsException`
-- `Exceptions.EntityTemporarilyUnmodifiableException`
-- `Exceptions.InvalidAuthenticationCodeException`
-- `Exceptions.InvalidCertificateException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.InvalidPublicKeyException`
-- `Exceptions.InvalidUserTypeException`
-- `Exceptions.KeyPairMismatchException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MalformedCertificateException`
-- `Exceptions.MalformedPolicyDocumentException`
-- `Exceptions.NoSuchEntityException`
-- `Exceptions.PasswordPolicyViolationException`
-- `Exceptions.PolicyEvaluationException`
-- `Exceptions.PolicyNotAttachableException`
-- `Exceptions.ReportGenerationLimitExceededException`
-- `Exceptions.ServiceFailureException`
-- `Exceptions.ServiceNotSupportedException`
-- `Exceptions.UnmodifiableEntityException`
-- `Exceptions.UnrecognizedPublicKeyEncodingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IAMClient exceptions.
-
-Type annotations for `boto3.client("iam").exceptions` method.
-
-Boto3 documentation:
-[IAM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_client\_id\_to\_open\_id\_connect\_provider"></a>
-
-### add_client_id_to_open_id_connect_provider
+### add\_client\_id\_to\_open\_id\_connect\_provider
 
 Adds a new client ID (also known as audience) to the list of client IDs already
 registered for the specified IAM OpenID Connect (OIDC) provider resource.
 
-Type annotations for
-`boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").add_client_id_to_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.add_client_id_to_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_client_id_to_open_id_connect_provider)
+```python title="Method definition"
+def add_client_id_to_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    ClientID: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddClientIDToOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#addclientidtoopenidconnectproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `ClientID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddClientIDToOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+    "ClientID": ...,
+}
 
-<a id="add\_role\_to\_instance\_profile"></a>
+parent.add_client_id_to_open_id_connect_provider(**kwargs)
+```
 
-### add_role_to_instance_profile
+1. See [:material-code-braces: AddClientIDToOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#addclientidtoopenidconnectproviderrequestrequesttypedef) 
+
+### add\_role\_to\_instance\_profile
 
 Adds the specified IAM role to the specified instance profile.
 
-Type annotations for `boto3.client("iam").add_role_to_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").add_role_to_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.add_role_to_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_role_to_instance_profile)
+```python title="Method definition"
+def add_role_to_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+    RoleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddRoleToInstanceProfileRequestRequestTypeDef](./type_defs.md#addroletoinstanceprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddRoleToInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+    "RoleName": ...,
+}
 
-<a id="add\_user\_to\_group"></a>
+parent.add_role_to_instance_profile(**kwargs)
+```
 
-### add_user_to_group
+1. See [:material-code-braces: AddRoleToInstanceProfileRequestRequestTypeDef](./type_defs.md#addroletoinstanceprofilerequestrequesttypedef) 
+
+### add\_user\_to\_group
 
 Adds the specified user to the specified group.
 
-Type annotations for `boto3.client("iam").add_user_to_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").add_user_to_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
 
-Boto3 documentation:
-[IAM.Client.add_user_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.add_user_to_group)
+```python title="Method definition"
+def add_user_to_group(
+    self,
+    *,
+    GroupName: str,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddUserToGroupRequestRequestTypeDef](./type_defs.md#addusertogrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddUserToGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserName": ...,
+}
 
-<a id="attach\_group\_policy"></a>
+parent.add_user_to_group(**kwargs)
+```
 
-### attach_group_policy
+1. See [:material-code-braces: AddUserToGroupRequestRequestTypeDef](./type_defs.md#addusertogrouprequestrequesttypedef) 
+
+### attach\_group\_policy
 
 Attaches the specified managed policy to the specified IAM group.
 
-Type annotations for `boto3.client("iam").attach_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").attach_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
 
-Boto3 documentation:
-[IAM.Client.attach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_group_policy)
+```python title="Method definition"
+def attach_group_policy(
+    self,
+    *,
+    GroupName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachGroupPolicyRequestRequestTypeDef](./type_defs.md#attachgrouppolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachGroupPolicyRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="attach\_role\_policy"></a>
+parent.attach_group_policy(**kwargs)
+```
 
-### attach_role_policy
+1. See [:material-code-braces: AttachGroupPolicyRequestRequestTypeDef](./type_defs.md#attachgrouppolicyrequestrequesttypedef) 
+
+### attach\_role\_policy
 
 Attaches the specified managed policy to the specified IAM role.
 
-Type annotations for `boto3.client("iam").attach_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").attach_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
 
-Boto3 documentation:
-[IAM.Client.attach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_role_policy)
+```python title="Method definition"
+def attach_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachRolePolicyRequestRequestTypeDef](./type_defs.md#attachrolepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="attach\_user\_policy"></a>
+parent.attach_role_policy(**kwargs)
+```
 
-### attach_user_policy
+1. See [:material-code-braces: AttachRolePolicyRequestRequestTypeDef](./type_defs.md#attachrolepolicyrequestrequesttypedef) 
+
+### attach\_user\_policy
 
 Attaches the specified managed policy to the specified user.
 
-Type annotations for `boto3.client("iam").attach_user_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").attach_user_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
 
-Boto3 documentation:
-[IAM.Client.attach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.attach_user_policy)
+```python title="Method definition"
+def attach_user_policy(
+    self,
+    *,
+    UserName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachUserPolicyRequestRequestTypeDef](./type_defs.md#attachuserpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachUserPolicyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.attach_user_policy(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AttachUserPolicyRequestRequestTypeDef](./type_defs.md#attachuserpolicyrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iam").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iam").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate)
 
-Boto3 documentation:
-[IAM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="change\_password"></a>
-
-### change_password
+### change\_password
 
 Changes the password of the IAM user who is calling this operation.
 
-Type annotations for `boto3.client("iam").change_password` method.
+Type annotations and code completion for `#!python boto3.client("iam").change_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
 
-Boto3 documentation:
-[IAM.Client.change_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.change_password)
+```python title="Method definition"
+def change_password(
+    self,
+    *,
+    OldPassword: str,
+    NewPassword: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OldPassword`: `str` *(required)*
-- `NewPassword`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ChangePasswordRequestRequestTypeDef = {  # (1)
+    "OldPassword": ...,
+    "NewPassword": ...,
+}
 
-<a id="create\_access\_key"></a>
+parent.change_password(**kwargs)
+```
 
-### create_access_key
+1. See [:material-code-braces: ChangePasswordRequestRequestTypeDef](./type_defs.md#changepasswordrequestrequesttypedef) 
 
-Creates a new Amazon Web Services secret access key and corresponding Amazon
-Web Services access key ID for the specified user.
+### create\_access\_key
 
-Type annotations for `boto3.client("iam").create_access_key` method.
+Creates a new Amazon Web Services secret access key and corresponding Amazon Web
+Services access key ID for the specified user.
 
-Boto3 documentation:
-[IAM.Client.create_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
+Type annotations and code completion for `#!python boto3.client("iam").create_access_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_access_key)
 
-Arguments mapping described in
-[CreateAccessKeyRequestRequestTypeDef](./type_defs.md#createaccesskeyrequestrequesttypedef).
+```python title="Method definition"
+def create_access_key(
+    self,
+    *,
+    UserName: str = ...,
+) -> CreateAccessKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef) 
 
-- `UserName`: `str`
 
-Returns
-[CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: CreateAccessKeyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="create\_account\_alias"></a>
+parent.create_access_key(**kwargs)
+```
 
-### create_account_alias
+1. See [:material-code-braces: CreateAccessKeyRequestRequestTypeDef](./type_defs.md#createaccesskeyrequestrequesttypedef) 
+
+### create\_account\_alias
 
 Creates an alias for your Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").create_account_alias` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_account_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
 
-Boto3 documentation:
-[IAM.Client.create_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_account_alias)
+```python title="Method definition"
+def create_account_alias(
+    self,
+    *,
+    AccountAlias: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateAccountAliasRequestRequestTypeDef](./type_defs.md#createaccountaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAccountAliasRequestRequestTypeDef = {  # (1)
+    "AccountAlias": ...,
+}
 
-<a id="create\_group"></a>
+parent.create_account_alias(**kwargs)
+```
 
-### create_group
+1. See [:material-code-braces: CreateAccountAliasRequestRequestTypeDef](./type_defs.md#createaccountaliasrequestrequesttypedef) 
+
+### create\_group
 
 Creates a new group.
 
-Type annotations for `boto3.client("iam").create_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
 
-Boto3 documentation:
-[IAM.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    GroupName: str,
+    Path: str = ...,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `Path`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_instance\_profile"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_instance_profile
+### create\_instance\_profile
 
 Creates a new instance profile.
 
-Type annotations for `boto3.client("iam").create_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.create_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_instance_profile)
+```python title="Method definition"
+def create_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+    Path: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateInstanceProfileResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+}
 
-Returns
-[CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef).
+parent.create_instance_profile(**kwargs)
+```
 
-<a id="create\_login\_profile"></a>
+1. See [:material-code-braces: CreateInstanceProfileRequestRequestTypeDef](./type_defs.md#createinstanceprofilerequestrequesttypedef) 
 
-### create_login_profile
+### create\_login\_profile
 
 Creates a password for the specified IAM user.
 
-Type annotations for `boto3.client("iam").create_login_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_login_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
 
-Boto3 documentation:
-[IAM.Client.create_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_login_profile)
+```python title="Method definition"
+def create_login_profile(
+    self,
+    *,
+    UserName: str,
+    Password: str,
+    PasswordResetRequired: bool = ...,
+) -> CreateLoginProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateLoginProfileRequestRequestTypeDef](./type_defs.md#createloginprofilerequestrequesttypedef).
+1. See [:material-code-braces: CreateLoginProfileResponseTypeDef](./type_defs.md#createloginprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `PasswordResetRequired`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateLoginProfileRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "Password": ...,
+}
 
-Returns
-[CreateLoginProfileResponseTypeDef](./type_defs.md#createloginprofileresponsetypedef).
+parent.create_login_profile(**kwargs)
+```
 
-<a id="create\_open\_id\_connect\_provider"></a>
+1. See [:material-code-braces: CreateLoginProfileRequestRequestTypeDef](./type_defs.md#createloginprofilerequestrequesttypedef) 
 
-### create_open_id_connect_provider
+### create\_open\_id\_connect\_provider
 
 Creates an IAM entity to describe an identity provider (IdP) that supports
-`OpenID Connect (OIDC) <http://openid.net/connect/>`\_\_ .
+`OpenID Connect (OIDC) <http://openid.net/connect/>`__ .
 
-Type annotations for `boto3.client("iam").create_open_id_connect_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").create_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.create_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_open_id_connect_provider)
+```python title="Method definition"
+def create_open_id_connect_provider(
+    self,
+    *,
+    Url: str,
+    ThumbprintList: Sequence[str],
+    ClientIDList: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateOpenIDConnectProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#createopenidconnectproviderrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Url`: `str` *(required)*
-- `ThumbprintList`: `Sequence`\[`str`\] *(required)*
-- `ClientIDList`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "Url": ...,
+    "ThumbprintList": ...,
+}
 
-Returns
-[CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef).
+parent.create_open_id_connect_provider(**kwargs)
+```
 
-<a id="create\_policy"></a>
+1. See [:material-code-braces: CreateOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#createopenidconnectproviderrequestrequesttypedef) 
 
-### create_policy
+### create\_policy
 
 Creates a new managed policy for your Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").create_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
 
-Boto3 documentation:
-[IAM.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy)
+```python title="Method definition"
+def create_policy(
+    self,
+    *,
+    PolicyName: str,
+    PolicyDocument: str,
+    Path: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyName`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
-- `Path`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
 
-Returns
-[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+parent.create_policy(**kwargs)
+```
 
-<a id="create\_policy\_version"></a>
+1. See [:material-code-braces: CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef) 
 
-### create_policy_version
+### create\_policy\_version
 
 Creates a new version of the specified managed policy.
 
-Type annotations for `boto3.client("iam").create_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
 
-Boto3 documentation:
-[IAM.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_policy_version)
+```python title="Method definition"
+def create_policy_version(
+    self,
+    *,
+    PolicyArn: str,
+    PolicyDocument: str,
+    SetAsDefault: bool = ...,
+) -> CreatePolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePolicyVersionRequestRequestTypeDef](./type_defs.md#createpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
-- `SetAsDefault`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreatePolicyVersionRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "PolicyDocument": ...,
+}
 
-Returns
-[CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
+parent.create_policy_version(**kwargs)
+```
 
-<a id="create\_role"></a>
+1. See [:material-code-braces: CreatePolicyVersionRequestRequestTypeDef](./type_defs.md#createpolicyversionrequestrequesttypedef) 
 
-### create_role
+### create\_role
 
 Creates a new role for your Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").create_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
 
-Boto3 documentation:
-[IAM.Client.create_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_role)
+```python title="Method definition"
+def create_role(
+    self,
+    *,
+    RoleName: str,
+    AssumeRolePolicyDocument: str,
+    Path: str = ...,
+    Description: str = ...,
+    MaxSessionDuration: int = ...,
+    PermissionsBoundary: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateRoleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoleRequestRequestTypeDef](./type_defs.md#createrolerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `AssumeRolePolicyDocument`: `str` *(required)*
-- `Path`: `str`
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "AssumeRolePolicyDocument": ...,
+}
 
-Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
+parent.create_role(**kwargs)
+```
 
-<a id="create\_saml\_provider"></a>
+1. See [:material-code-braces: CreateRoleRequestRequestTypeDef](./type_defs.md#createrolerequestrequesttypedef) 
 
-### create_saml_provider
+### create\_saml\_provider
 
 Creates an IAM resource that describes an identity provider (IdP) that supports
 SAML 2.0.
 
-Type annotations for `boto3.client("iam").create_saml_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
 
-Boto3 documentation:
-[IAM.Client.create_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_saml_provider)
+```python title="Method definition"
+def create_saml_provider(
+    self,
+    *,
+    SAMLMetadataDocument: str,
+    Name: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSAMLProviderResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSAMLProviderRequestRequestTypeDef](./type_defs.md#createsamlproviderrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SAMLMetadataDocument`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLMetadataDocument": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef).
+parent.create_saml_provider(**kwargs)
+```
 
-<a id="create\_service\_linked\_role"></a>
+1. See [:material-code-braces: CreateSAMLProviderRequestRequestTypeDef](./type_defs.md#createsamlproviderrequestrequesttypedef) 
 
-### create_service_linked_role
+### create\_service\_linked\_role
 
 Creates an IAM role that is linked to a specific Amazon Web Services service.
 
-Type annotations for `boto3.client("iam").create_service_linked_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_service_linked_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
 
-Boto3 documentation:
-[IAM.Client.create_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_linked_role)
+```python title="Method definition"
+def create_service_linked_role(
+    self,
+    *,
+    AWSServiceName: str,
+    Description: str = ...,
+    CustomSuffix: str = ...,
+) -> CreateServiceLinkedRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#createservicelinkedrolerequestrequesttypedef).
+1. See [:material-code-braces: CreateServiceLinkedRoleResponseTypeDef](./type_defs.md#createservicelinkedroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AWSServiceName`: `str` *(required)*
-- `Description`: `str`
-- `CustomSuffix`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateServiceLinkedRoleRequestRequestTypeDef = {  # (1)
+    "AWSServiceName": ...,
+}
 
-Returns
-[CreateServiceLinkedRoleResponseTypeDef](./type_defs.md#createservicelinkedroleresponsetypedef).
+parent.create_service_linked_role(**kwargs)
+```
 
-<a id="create\_service\_specific\_credential"></a>
+1. See [:material-code-braces: CreateServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#createservicelinkedrolerequestrequesttypedef) 
 
-### create_service_specific_credential
+### create\_service\_specific\_credential
 
 Generates a set of credentials consisting of a user name and password that can
 be used to access the service specified in the request.
 
-Type annotations for `boto3.client("iam").create_service_specific_credential`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").create_service_specific_credential` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
 
-Boto3 documentation:
-[IAM.Client.create_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_service_specific_credential)
+```python title="Method definition"
+def create_service_specific_credential(
+    self,
+    *,
+    UserName: str,
+    ServiceName: str,
+) -> CreateServiceSpecificCredentialResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#createservicespecificcredentialrequestrequesttypedef).
+1. See [:material-code-braces: CreateServiceSpecificCredentialResponseTypeDef](./type_defs.md#createservicespecificcredentialresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `ServiceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateServiceSpecificCredentialRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "ServiceName": ...,
+}
 
-Returns
-[CreateServiceSpecificCredentialResponseTypeDef](./type_defs.md#createservicespecificcredentialresponsetypedef).
+parent.create_service_specific_credential(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#createservicespecificcredentialrequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a new IAM user for your Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").create_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
 
-Boto3 documentation:
-[IAM.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    UserName: str,
+    Path: str = ...,
+    PermissionsBoundary: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Path`: `str`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="create\_virtual\_mfa\_device"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### create_virtual_mfa_device
+### create\_virtual\_mfa\_device
 
 Creates a new virtual MFA device for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").create_virtual_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").create_virtual_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.create_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.create_virtual_mfa_device)
+```python title="Method definition"
+def create_virtual_mfa_device(
+    self,
+    *,
+    VirtualMFADeviceName: str,
+    Path: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateVirtualMFADeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#createvirtualmfadevicerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VirtualMFADeviceName`: `str` *(required)*
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateVirtualMFADeviceRequestRequestTypeDef = {  # (1)
+    "VirtualMFADeviceName": ...,
+}
 
-Returns
-[CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef).
+parent.create_virtual_mfa_device(**kwargs)
+```
 
-<a id="deactivate\_mfa\_device"></a>
+1. See [:material-code-braces: CreateVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#createvirtualmfadevicerequestrequesttypedef) 
 
-### deactivate_mfa_device
+### deactivate\_mfa\_device
 
 Deactivates the specified MFA device and removes it from association with the
 user name for which it was originally enabled.
 
-Type annotations for `boto3.client("iam").deactivate_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").deactivate_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.deactivate_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.deactivate_mfa_device)
+```python title="Method definition"
+def deactivate_mfa_device(
+    self,
+    *,
+    UserName: str,
+    SerialNumber: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeactivateMFADeviceRequestRequestTypeDef](./type_defs.md#deactivatemfadevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SerialNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeactivateMFADeviceRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SerialNumber": ...,
+}
 
-<a id="delete\_access\_key"></a>
+parent.deactivate_mfa_device(**kwargs)
+```
 
-### delete_access_key
+1. See [:material-code-braces: DeactivateMFADeviceRequestRequestTypeDef](./type_defs.md#deactivatemfadevicerequestrequesttypedef) 
+
+### delete\_access\_key
 
 Deletes the access key pair associated with the specified IAM user.
 
-Type annotations for `boto3.client("iam").delete_access_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_access_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
 
-Boto3 documentation:
-[IAM.Client.delete_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_access_key)
+```python title="Method definition"
+def delete_access_key(
+    self,
+    *,
+    AccessKeyId: str,
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessKeyRequestRequestTypeDef](./type_defs.md#deleteaccesskeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccessKeyId`: `str` *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessKeyRequestRequestTypeDef = {  # (1)
+    "AccessKeyId": ...,
+}
 
-<a id="delete\_account\_alias"></a>
+parent.delete_access_key(**kwargs)
+```
 
-### delete_account_alias
+1. See [:material-code-braces: DeleteAccessKeyRequestRequestTypeDef](./type_defs.md#deleteaccesskeyrequestrequesttypedef) 
+
+### delete\_account\_alias
 
 Deletes the specified Amazon Web Services account alias.
 
-Type annotations for `boto3.client("iam").delete_account_alias` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_account_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
 
-Boto3 documentation:
-[IAM.Client.delete_account_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_alias)
+```python title="Method definition"
+def delete_account_alias(
+    self,
+    *,
+    AccountAlias: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountAliasRequestRequestTypeDef](./type_defs.md#deleteaccountaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AccountAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountAliasRequestRequestTypeDef = {  # (1)
+    "AccountAlias": ...,
+}
 
-<a id="delete\_account\_password\_policy"></a>
+parent.delete_account_alias(**kwargs)
+```
 
-### delete_account_password_policy
+1. See [:material-code-braces: DeleteAccountAliasRequestRequestTypeDef](./type_defs.md#deleteaccountaliasrequestrequesttypedef) 
+
+### delete\_account\_password\_policy
 
 Deletes the password policy for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").delete_account_password_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_account_password_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy)
 
-Boto3 documentation:
-[IAM.Client.delete_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy)
+```python title="Method definition"
+def delete_account_password_policy(
+    self,
+) -> None:
+    ...
+```
 
-<a id="delete\_group"></a>
 
-### delete_group
+### delete\_group
 
 Deletes the specified IAM group.
 
-Type annotations for `boto3.client("iam").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
 
-Boto3 documentation:
-[IAM.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-<a id="delete\_group\_policy"></a>
+parent.delete_group(**kwargs)
+```
 
-### delete_group_policy
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
-Deletes the specified inline policy that is embedded in the specified IAM
-group.
+### delete\_group\_policy
 
-Type annotations for `boto3.client("iam").delete_group_policy` method.
+Deletes the specified inline policy that is embedded in the specified IAM group.
 
-Boto3 documentation:
-[IAM.Client.delete_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
+Type annotations and code completion for `#!python boto3.client("iam").delete_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_group_policy)
 
-Arguments mapping described in
-[DeleteGroupPolicyRequestRequestTypeDef](./type_defs.md#deletegrouppolicyrequestrequesttypedef).
+```python title="Method definition"
+def delete_group_policy(
+    self,
+    *,
+    GroupName: str,
+    PolicyName: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
 
-<a id="delete\_instance\_profile"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupPolicyRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "PolicyName": ...,
+}
 
-### delete_instance_profile
+parent.delete_group_policy(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteGroupPolicyRequestRequestTypeDef](./type_defs.md#deletegrouppolicyrequestrequesttypedef) 
+
+### delete\_instance\_profile
 
 Deletes the specified instance profile.
 
-Type annotations for `boto3.client("iam").delete_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.delete_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_instance_profile)
+```python title="Method definition"
+def delete_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+}
 
-<a id="delete\_login\_profile"></a>
+parent.delete_instance_profile(**kwargs)
+```
 
-### delete_login_profile
+1. See [:material-code-braces: DeleteInstanceProfileRequestRequestTypeDef](./type_defs.md#deleteinstanceprofilerequestrequesttypedef) 
+
+### delete\_login\_profile
 
 Deletes the password for the specified IAM user, which terminates the user's
 ability to access Amazon Web Services services through the Amazon Web Services
 Management Console.
 
-Type annotations for `boto3.client("iam").delete_login_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_login_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
 
-Boto3 documentation:
-[IAM.Client.delete_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_login_profile)
+```python title="Method definition"
+def delete_login_profile(
+    self,
+    *,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoginProfileRequestRequestTypeDef](./type_defs.md#deleteloginprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoginProfileRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="delete\_open\_id\_connect\_provider"></a>
+parent.delete_login_profile(**kwargs)
+```
 
-### delete_open_id_connect_provider
+1. See [:material-code-braces: DeleteLoginProfileRequestRequestTypeDef](./type_defs.md#deleteloginprofilerequestrequesttypedef) 
+
+### delete\_open\_id\_connect\_provider
 
 Deletes an OpenID Connect identity provider (IdP) resource object in IAM.
 
-Type annotations for `boto3.client("iam").delete_open_id_connect_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.delete_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_open_id_connect_provider)
+```python title="Method definition"
+def delete_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#deleteopenidconnectproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+}
 
-<a id="delete\_policy"></a>
+parent.delete_open_id_connect_provider(**kwargs)
+```
 
-### delete_policy
+1. See [:material-code-braces: DeleteOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#deleteopenidconnectproviderrequestrequesttypedef) 
+
+### delete\_policy
 
 Deletes the specified managed policy.
 
-Type annotations for `boto3.client("iam").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
 
-Boto3 documentation:
-[IAM.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+}
 
-<a id="delete\_policy\_version"></a>
+parent.delete_policy(**kwargs)
+```
 
-### delete_policy_version
+1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
+
+### delete\_policy\_version
 
 Deletes the specified version from the specified managed policy.
 
-Type annotations for `boto3.client("iam").delete_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
 
-Boto3 documentation:
-[IAM.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_policy_version)
+```python title="Method definition"
+def delete_policy_version(
+    self,
+    *,
+    PolicyArn: str,
+    VersionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyVersionRequestRequestTypeDef](./type_defs.md#deletepolicyversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `VersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyVersionRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "VersionId": ...,
+}
 
-<a id="delete\_role"></a>
+parent.delete_policy_version(**kwargs)
+```
 
-### delete_role
+1. See [:material-code-braces: DeletePolicyVersionRequestRequestTypeDef](./type_defs.md#deletepolicyversionrequestrequesttypedef) 
+
+### delete\_role
 
 Deletes the specified role.
 
-Type annotations for `boto3.client("iam").delete_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
 
-Boto3 documentation:
-[IAM.Client.delete_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role)
+```python title="Method definition"
+def delete_role(
+    self,
+    *,
+    RoleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoleRequestRequestTypeDef](./type_defs.md#deleterolerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-<a id="delete\_role\_permissions\_boundary"></a>
+parent.delete_role(**kwargs)
+```
 
-### delete_role_permissions_boundary
+1. See [:material-code-braces: DeleteRoleRequestRequestTypeDef](./type_defs.md#deleterolerequestrequesttypedef) 
+
+### delete\_role\_permissions\_boundary
 
 Deletes the permissions boundary for the specified IAM role.
 
-Type annotations for `boto3.client("iam").delete_role_permissions_boundary`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_role_permissions_boundary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
 
-Boto3 documentation:
-[IAM.Client.delete_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_permissions_boundary)
+```python title="Method definition"
+def delete_role_permissions_boundary(
+    self,
+    *,
+    RoleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleterolepermissionsboundaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRolePermissionsBoundaryRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-<a id="delete\_role\_policy"></a>
+parent.delete_role_permissions_boundary(**kwargs)
+```
 
-### delete_role_policy
+1. See [:material-code-braces: DeleteRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleterolepermissionsboundaryrequestrequesttypedef) 
+
+### delete\_role\_policy
 
 Deletes the specified inline policy that is embedded in the specified IAM role.
 
-Type annotations for `boto3.client("iam").delete_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
 
-Boto3 documentation:
-[IAM.Client.delete_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_role_policy)
+```python title="Method definition"
+def delete_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRolePolicyRequestRequestTypeDef](./type_defs.md#deleterolepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyName": ...,
+}
 
-<a id="delete\_saml\_provider"></a>
+parent.delete_role_policy(**kwargs)
+```
 
-### delete_saml_provider
+1. See [:material-code-braces: DeleteRolePolicyRequestRequestTypeDef](./type_defs.md#deleterolepolicyrequestrequesttypedef) 
+
+### delete\_saml\_provider
 
 Deletes a SAML provider resource in IAM.
 
-Type annotations for `boto3.client("iam").delete_saml_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
 
-Boto3 documentation:
-[IAM.Client.delete_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_saml_provider)
+```python title="Method definition"
+def delete_saml_provider(
+    self,
+    *,
+    SAMLProviderArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSAMLProviderRequestRequestTypeDef](./type_defs.md#deletesamlproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SAMLProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLProviderArn": ...,
+}
 
-<a id="delete\_server\_certificate"></a>
+parent.delete_saml_provider(**kwargs)
+```
 
-### delete_server_certificate
+1. See [:material-code-braces: DeleteSAMLProviderRequestRequestTypeDef](./type_defs.md#deletesamlproviderrequestrequesttypedef) 
+
+### delete\_server\_certificate
 
 Deletes the specified server certificate.
 
-Type annotations for `boto3.client("iam").delete_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.delete_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_server_certificate)
+```python title="Method definition"
+def delete_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServerCertificateRequestRequestTypeDef](./type_defs.md#deleteservercertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+}
 
-<a id="delete\_service\_linked\_role"></a>
+parent.delete_server_certificate(**kwargs)
+```
 
-### delete_service_linked_role
+1. See [:material-code-braces: DeleteServerCertificateRequestRequestTypeDef](./type_defs.md#deleteservercertificaterequestrequesttypedef) 
+
+### delete\_service\_linked\_role
 
 Submits a service-linked role deletion request and returns a `DeletionTaskId` ,
 which you can use to check the status of the deletion.
 
-Type annotations for `boto3.client("iam").delete_service_linked_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_service_linked_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
 
-Boto3 documentation:
-[IAM.Client.delete_service_linked_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_linked_role)
+```python title="Method definition"
+def delete_service_linked_role(
+    self,
+    *,
+    RoleName: str,
+) -> DeleteServiceLinkedRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#deleteservicelinkedrolerequestrequesttypedef).
+1. See [:material-code-braces: DeleteServiceLinkedRoleResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceLinkedRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns
-[DeleteServiceLinkedRoleResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponsetypedef).
+parent.delete_service_linked_role(**kwargs)
+```
 
-<a id="delete\_service\_specific\_credential"></a>
+1. See [:material-code-braces: DeleteServiceLinkedRoleRequestRequestTypeDef](./type_defs.md#deleteservicelinkedrolerequestrequesttypedef) 
 
-### delete_service_specific_credential
+### delete\_service\_specific\_credential
 
 Deletes the specified service-specific credential.
 
-Type annotations for `boto3.client("iam").delete_service_specific_credential`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_service_specific_credential` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
 
-Boto3 documentation:
-[IAM.Client.delete_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_service_specific_credential)
+```python title="Method definition"
+def delete_service_specific_credential(
+    self,
+    *,
+    ServiceSpecificCredentialId: str,
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#deleteservicespecificcredentialrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServiceSpecificCredentialId`: `str` *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceSpecificCredentialRequestRequestTypeDef = {  # (1)
+    "ServiceSpecificCredentialId": ...,
+}
 
-<a id="delete\_signing\_certificate"></a>
+parent.delete_service_specific_credential(**kwargs)
+```
 
-### delete_signing_certificate
+1. See [:material-code-braces: DeleteServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#deleteservicespecificcredentialrequestrequesttypedef) 
+
+### delete\_signing\_certificate
 
 Deletes a signing certificate associated with the specified IAM user.
 
-Type annotations for `boto3.client("iam").delete_signing_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_signing_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
 
-Boto3 documentation:
-[IAM.Client.delete_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_signing_certificate)
+```python title="Method definition"
+def delete_signing_certificate(
+    self,
+    *,
+    CertificateId: str,
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSigningCertificateRequestRequestTypeDef](./type_defs.md#deletesigningcertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateId`: `str` *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSigningCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateId": ...,
+}
 
-<a id="delete\_ssh\_public\_key"></a>
+parent.delete_signing_certificate(**kwargs)
+```
 
-### delete_ssh_public_key
+1. See [:material-code-braces: DeleteSigningCertificateRequestRequestTypeDef](./type_defs.md#deletesigningcertificaterequestrequesttypedef) 
+
+### delete\_ssh\_public\_key
 
 Deletes the specified SSH public key.
 
-Type annotations for `boto3.client("iam").delete_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
 
-Boto3 documentation:
-[IAM.Client.delete_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_ssh_public_key)
+```python title="Method definition"
+def delete_ssh_public_key(
+    self,
+    *,
+    UserName: str,
+    SSHPublicKeyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSSHPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SSHPublicKeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSSHPublicKeyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SSHPublicKeyId": ...,
+}
 
-<a id="delete\_user"></a>
+parent.delete_ssh_public_key(**kwargs)
+```
 
-### delete_user
+1. See [:material-code-braces: DeleteSSHPublicKeyRequestRequestTypeDef](./type_defs.md#deletesshpublickeyrequestrequesttypedef) 
+
+### delete\_user
 
 Deletes the specified IAM user.
 
-Type annotations for `boto3.client("iam").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
 
-Boto3 documentation:
-[IAM.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="delete\_user\_permissions\_boundary"></a>
+parent.delete_user(**kwargs)
+```
 
-### delete_user_permissions_boundary
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
+
+### delete\_user\_permissions\_boundary
 
 Deletes the permissions boundary for the specified IAM user.
 
-Type annotations for `boto3.client("iam").delete_user_permissions_boundary`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_user_permissions_boundary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
 
-Boto3 documentation:
-[IAM.Client.delete_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_permissions_boundary)
+```python title="Method definition"
+def delete_user_permissions_boundary(
+    self,
+    *,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleteuserpermissionsboundaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserPermissionsBoundaryRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="delete\_user\_policy"></a>
+parent.delete_user_permissions_boundary(**kwargs)
+```
 
-### delete_user_policy
+1. See [:material-code-braces: DeleteUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#deleteuserpermissionsboundaryrequestrequesttypedef) 
+
+### delete\_user\_policy
 
 Deletes the specified inline policy that is embedded in the specified IAM user.
 
-Type annotations for `boto3.client("iam").delete_user_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_user_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
 
-Boto3 documentation:
-[IAM.Client.delete_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_user_policy)
+```python title="Method definition"
+def delete_user_policy(
+    self,
+    *,
+    UserName: str,
+    PolicyName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserPolicyRequestRequestTypeDef](./type_defs.md#deleteuserpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserPolicyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PolicyName": ...,
+}
 
-<a id="delete\_virtual\_mfa\_device"></a>
+parent.delete_user_policy(**kwargs)
+```
 
-### delete_virtual_mfa_device
+1. See [:material-code-braces: DeleteUserPolicyRequestRequestTypeDef](./type_defs.md#deleteuserpolicyrequestrequesttypedef) 
+
+### delete\_virtual\_mfa\_device
 
 Deletes a virtual MFA device.
 
-Type annotations for `boto3.client("iam").delete_virtual_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").delete_virtual_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.delete_virtual_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_virtual_mfa_device)
+```python title="Method definition"
+def delete_virtual_mfa_device(
+    self,
+    *,
+    SerialNumber: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#deletevirtualmfadevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SerialNumber`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVirtualMFADeviceRequestRequestTypeDef = {  # (1)
+    "SerialNumber": ...,
+}
 
-<a id="detach\_group\_policy"></a>
+parent.delete_virtual_mfa_device(**kwargs)
+```
 
-### detach_group_policy
+1. See [:material-code-braces: DeleteVirtualMFADeviceRequestRequestTypeDef](./type_defs.md#deletevirtualmfadevicerequestrequesttypedef) 
+
+### detach\_group\_policy
 
 Removes the specified managed policy from the specified IAM group.
 
-Type annotations for `boto3.client("iam").detach_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").detach_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
 
-Boto3 documentation:
-[IAM.Client.detach_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_group_policy)
+```python title="Method definition"
+def detach_group_policy(
+    self,
+    *,
+    GroupName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachGroupPolicyRequestRequestTypeDef](./type_defs.md#detachgrouppolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachGroupPolicyRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="detach\_role\_policy"></a>
+parent.detach_group_policy(**kwargs)
+```
 
-### detach_role_policy
+1. See [:material-code-braces: DetachGroupPolicyRequestRequestTypeDef](./type_defs.md#detachgrouppolicyrequestrequesttypedef) 
+
+### detach\_role\_policy
 
 Removes the specified managed policy from the specified role.
 
-Type annotations for `boto3.client("iam").detach_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").detach_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
 
-Boto3 documentation:
-[IAM.Client.detach_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_role_policy)
+```python title="Method definition"
+def detach_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachRolePolicyRequestRequestTypeDef](./type_defs.md#detachrolepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="detach\_user\_policy"></a>
+parent.detach_role_policy(**kwargs)
+```
 
-### detach_user_policy
+1. See [:material-code-braces: DetachRolePolicyRequestRequestTypeDef](./type_defs.md#detachrolepolicyrequestrequesttypedef) 
+
+### detach\_user\_policy
 
 Removes the specified managed policy from the specified user.
 
-Type annotations for `boto3.client("iam").detach_user_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").detach_user_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
 
-Boto3 documentation:
-[IAM.Client.detach_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.detach_user_policy)
+```python title="Method definition"
+def detach_user_policy(
+    self,
+    *,
+    UserName: str,
+    PolicyArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachUserPolicyRequestRequestTypeDef](./type_defs.md#detachuserpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachUserPolicyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PolicyArn": ...,
+}
 
-<a id="enable\_mfa\_device"></a>
+parent.detach_user_policy(**kwargs)
+```
 
-### enable_mfa_device
+1. See [:material-code-braces: DetachUserPolicyRequestRequestTypeDef](./type_defs.md#detachuserpolicyrequestrequesttypedef) 
+
+### enable\_mfa\_device
 
 Enables the specified MFA device and associates it with the specified IAM user.
 
-Type annotations for `boto3.client("iam").enable_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").enable_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.enable_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.enable_mfa_device)
+```python title="Method definition"
+def enable_mfa_device(
+    self,
+    *,
+    UserName: str,
+    SerialNumber: str,
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableMFADeviceRequestRequestTypeDef](./type_defs.md#enablemfadevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SerialNumber`: `str` *(required)*
-- `AuthenticationCode1`: `str` *(required)*
-- `AuthenticationCode2`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableMFADeviceRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SerialNumber": ...,
+    "AuthenticationCode1": ...,
+    "AuthenticationCode2": ...,
+}
 
-<a id="generate\_credential\_report"></a>
+parent.enable_mfa_device(**kwargs)
+```
 
-### generate_credential_report
+1. See [:material-code-braces: EnableMFADeviceRequestRequestTypeDef](./type_defs.md#enablemfadevicerequestrequesttypedef) 
+
+### generate\_credential\_report
 
 Generates a credential report for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").generate_credential_report` method.
+Type annotations and code completion for `#!python boto3.client("iam").generate_credential_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
 
-Boto3 documentation:
-[IAM.Client.generate_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_credential_report)
+```python title="Method definition"
+def generate_credential_report(
+    self,
+) -> GenerateCredentialReportResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef).
+1. See [:material-code-braces: GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef) 
 
-<a id="generate\_organizations\_access\_report"></a>
-
-### generate_organizations_access_report
+### generate\_organizations\_access\_report
 
 Generates a report for service last accessed data for Organizations.
 
-Type annotations for `boto3.client("iam").generate_organizations_access_report`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").generate_organizations_access_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
 
-Boto3 documentation:
-[IAM.Client.generate_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_organizations_access_report)
+```python title="Method definition"
+def generate_organizations_access_report(
+    self,
+    *,
+    EntityPath: str,
+    OrganizationsPolicyId: str = ...,
+) -> GenerateOrganizationsAccessReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GenerateOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#generateorganizationsaccessreportrequestrequesttypedef).
+1. See [:material-code-braces: GenerateOrganizationsAccessReportResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EntityPath`: `str` *(required)*
-- `OrganizationsPolicyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GenerateOrganizationsAccessReportRequestRequestTypeDef = {  # (1)
+    "EntityPath": ...,
+}
 
-Returns
-[GenerateOrganizationsAccessReportResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponsetypedef).
+parent.generate_organizations_access_report(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#generateorganizationsaccessreportrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iam").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("iam").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IAM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="generate\_service\_last\_accessed\_details"></a>
-
-### generate_service_last_accessed_details
+### generate\_service\_last\_accessed\_details
 
 Generates a report that includes details about when an IAM resource (user,
 group, role, or policy) was last used in an attempt to access Amazon Web
 Services services.
 
-Type annotations for
-`boto3.client("iam").generate_service_last_accessed_details` method.
+Type annotations and code completion for `#!python boto3.client("iam").generate_service_last_accessed_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
 
-Boto3 documentation:
-[IAM.Client.generate_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.generate_service_last_accessed_details)
+```python title="Method definition"
+def generate_service_last_accessed_details(
+    self,
+    *,
+    Arn: str,
+    Granularity: AccessAdvisorUsageGranularityTypeType = ...,  # (1)
+) -> GenerateServiceLastAccessedDetailsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#generateservicelastaccesseddetailsrequestrequesttypedef).
+1. See [:material-code-brackets: AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype) 
+2. See [:material-code-braces: GenerateServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Granularity`:
-  [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
+```python title="Usage example with kwargs"
+kwargs: GenerateServiceLastAccessedDetailsRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[GenerateServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponsetypedef).
+parent.generate_service_last_accessed_details(**kwargs)
+```
 
-<a id="get\_access\_key\_last\_used"></a>
+1. See [:material-code-braces: GenerateServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#generateservicelastaccesseddetailsrequestrequesttypedef) 
 
-### get_access_key_last_used
+### get\_access\_key\_last\_used
 
 Retrieves information about when the specified access key was last used.
 
-Type annotations for `boto3.client("iam").get_access_key_last_used` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_access_key_last_used` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
 
-Boto3 documentation:
-[IAM.Client.get_access_key_last_used](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_access_key_last_used)
+```python title="Method definition"
+def get_access_key_last_used(
+    self,
+    *,
+    AccessKeyId: str,
+) -> GetAccessKeyLastUsedResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessKeyLastUsedRequestRequestTypeDef](./type_defs.md#getaccesskeylastusedrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessKeyLastUsedResponseTypeDef](./type_defs.md#getaccesskeylastusedresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccessKeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessKeyLastUsedRequestRequestTypeDef = {  # (1)
+    "AccessKeyId": ...,
+}
 
-Returns
-[GetAccessKeyLastUsedResponseTypeDef](./type_defs.md#getaccesskeylastusedresponsetypedef).
+parent.get_access_key_last_used(**kwargs)
+```
 
-<a id="get\_account\_authorization\_details"></a>
+1. See [:material-code-braces: GetAccessKeyLastUsedRequestRequestTypeDef](./type_defs.md#getaccesskeylastusedrequestrequesttypedef) 
 
-### get_account_authorization_details
+### get\_account\_authorization\_details
 
 Retrieves information about all IAM users, groups, roles, and policies in your
 Amazon Web Services account, including their relationships to one another.
 
-Type annotations for `boto3.client("iam").get_account_authorization_details`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").get_account_authorization_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
 
-Boto3 documentation:
-[IAM.Client.get_account_authorization_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_authorization_details)
+```python title="Method definition"
+def get_account_authorization_details(
+    self,
+    *,
+    Filter: Sequence[EntityTypeType] = ...,  # (1)
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> GetAccountAuthorizationDetailsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetAccountAuthorizationDetailsRequestRequestTypeDef](./type_defs.md#getaccountauthorizationdetailsrequestrequesttypedef).
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAccountAuthorizationDetailsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef).
+parent.get_account_authorization_details(**kwargs)
+```
 
-<a id="get\_account\_password\_policy"></a>
+1. See [:material-code-braces: GetAccountAuthorizationDetailsRequestRequestTypeDef](./type_defs.md#getaccountauthorizationdetailsrequestrequesttypedef) 
 
-### get_account_password_policy
+### get\_account\_password\_policy
 
 Retrieves the password policy for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").get_account_password_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_account_password_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
 
-Boto3 documentation:
-[IAM.Client.get_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_password_policy)
+```python title="Method definition"
+def get_account_password_policy(
+    self,
+) -> GetAccountPasswordPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef).
+1. See [:material-code-braces: GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef) 
 
-<a id="get\_account\_summary"></a>
-
-### get_account_summary
+### get\_account\_summary
 
 Retrieves information about IAM entity usage and IAM quotas in the Amazon Web
 Services account.
 
-Type annotations for `boto3.client("iam").get_account_summary` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_account_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
 
-Boto3 documentation:
-[IAM.Client.get_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_account_summary)
+```python title="Method definition"
+def get_account_summary(
+    self,
+) -> GetAccountSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef).
+1. See [:material-code-braces: GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef) 
 
-<a id="get\_context\_keys\_for\_custom\_policy"></a>
-
-### get_context_keys_for_custom_policy
+### get\_context\_keys\_for\_custom\_policy
 
 Gets a list of all of the context keys referenced in the input policies.
 
-Type annotations for `boto3.client("iam").get_context_keys_for_custom_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").get_context_keys_for_custom_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
 
-Boto3 documentation:
-[IAM.Client.get_context_keys_for_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_custom_policy)
+```python title="Method definition"
+def get_context_keys_for_custom_policy(
+    self,
+    *,
+    PolicyInputList: Sequence[str],
+) -> GetContextKeysForPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContextKeysForCustomPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforcustompolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyInputList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContextKeysForCustomPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyInputList": ...,
+}
 
-Returns
-[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
+parent.get_context_keys_for_custom_policy(**kwargs)
+```
 
-<a id="get\_context\_keys\_for\_principal\_policy"></a>
+1. See [:material-code-braces: GetContextKeysForCustomPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforcustompolicyrequestrequesttypedef) 
 
-### get_context_keys_for_principal_policy
+### get\_context\_keys\_for\_principal\_policy
 
 Gets a list of all of the context keys referenced in all the IAM policies that
 are attached to the specified IAM entity.
 
-Type annotations for
-`boto3.client("iam").get_context_keys_for_principal_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_context_keys_for_principal_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
 
-Boto3 documentation:
-[IAM.Client.get_context_keys_for_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_context_keys_for_principal_policy)
+```python title="Method definition"
+def get_context_keys_for_principal_policy(
+    self,
+    *,
+    PolicySourceArn: str,
+    PolicyInputList: Sequence[str] = ...,
+) -> GetContextKeysForPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContextKeysForPrincipalPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforprincipalpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicySourceArn`: `str` *(required)*
-- `PolicyInputList`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetContextKeysForPrincipalPolicyRequestRequestTypeDef = {  # (1)
+    "PolicySourceArn": ...,
+}
 
-Returns
-[GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
+parent.get_context_keys_for_principal_policy(**kwargs)
+```
 
-<a id="get\_credential\_report"></a>
+1. See [:material-code-braces: GetContextKeysForPrincipalPolicyRequestRequestTypeDef](./type_defs.md#getcontextkeysforprincipalpolicyrequestrequesttypedef) 
 
-### get_credential_report
+### get\_credential\_report
 
 Retrieves a credential report for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").get_credential_report` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_credential_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
 
-Boto3 documentation:
-[IAM.Client.get_credential_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_credential_report)
+```python title="Method definition"
+def get_credential_report(
+    self,
+) -> GetCredentialReportResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef).
+1. See [:material-code-braces: GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef) 
 
-<a id="get\_group"></a>
-
-### get_group
+### get\_group
 
 Returns a list of IAM users that are in the specified IAM group.
 
-Type annotations for `boto3.client("iam").get_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
 
-Boto3 documentation:
-[IAM.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group)
+```python title="Method definition"
+def get_group(
+    self,
+    *,
+    GroupName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> GetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+parent.get_group(**kwargs)
+```
 
-<a id="get\_group\_policy"></a>
+1. See [:material-code-braces: GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef) 
 
-### get_group_policy
+### get\_group\_policy
 
-Retrieves the specified inline policy document that is embedded in the
-specified IAM group.
+Retrieves the specified inline policy document that is embedded in the specified
+IAM group.
 
-Type annotations for `boto3.client("iam").get_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
 
-Boto3 documentation:
-[IAM.Client.get_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_group_policy)
+```python title="Method definition"
+def get_group_policy(
+    self,
+    *,
+    GroupName: str,
+    PolicyName: str,
+) -> GetGroupPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupPolicyRequestRequestTypeDef](./type_defs.md#getgrouppolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetGroupPolicyResponseTypeDef](./type_defs.md#getgrouppolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupPolicyRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "PolicyName": ...,
+}
 
-Returns
-[GetGroupPolicyResponseTypeDef](./type_defs.md#getgrouppolicyresponsetypedef).
+parent.get_group_policy(**kwargs)
+```
 
-<a id="get\_instance\_profile"></a>
+1. See [:material-code-braces: GetGroupPolicyRequestRequestTypeDef](./type_defs.md#getgrouppolicyrequestrequesttypedef) 
 
-### get_instance_profile
+### get\_instance\_profile
 
 Retrieves information about the specified instance profile, including the
 instance profile's path, GUID, ARN, and role.
 
-Type annotations for `boto3.client("iam").get_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.get_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_instance_profile)
+```python title="Method definition"
+def get_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+) -> GetInstanceProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetInstanceProfileResponseTypeDef](./type_defs.md#getinstanceprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+}
 
-Returns
-[GetInstanceProfileResponseTypeDef](./type_defs.md#getinstanceprofileresponsetypedef).
+parent.get_instance_profile(**kwargs)
+```
 
-<a id="get\_login\_profile"></a>
+1. See [:material-code-braces: GetInstanceProfileRequestRequestTypeDef](./type_defs.md#getinstanceprofilerequestrequesttypedef) 
 
-### get_login_profile
+### get\_login\_profile
 
 Retrieves the user name for the specified IAM user.
 
-Type annotations for `boto3.client("iam").get_login_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_login_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
 
-Boto3 documentation:
-[IAM.Client.get_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_login_profile)
+```python title="Method definition"
+def get_login_profile(
+    self,
+    *,
+    UserName: str,
+) -> GetLoginProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLoginProfileRequestRequestTypeDef](./type_defs.md#getloginprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetLoginProfileResponseTypeDef](./type_defs.md#getloginprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLoginProfileRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[GetLoginProfileResponseTypeDef](./type_defs.md#getloginprofileresponsetypedef).
+parent.get_login_profile(**kwargs)
+```
 
-<a id="get\_open\_id\_connect\_provider"></a>
+1. See [:material-code-braces: GetLoginProfileRequestRequestTypeDef](./type_defs.md#getloginprofilerequestrequesttypedef) 
 
-### get_open_id_connect_provider
+### get\_open\_id\_connect\_provider
 
 Returns information about the specified OpenID Connect (OIDC) provider resource
 object in IAM.
 
-Type annotations for `boto3.client("iam").get_open_id_connect_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.get_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_open_id_connect_provider)
+```python title="Method definition"
+def get_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+) -> GetOpenIDConnectProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#getopenidconnectproviderrequestrequesttypedef).
+1. See [:material-code-braces: GetOpenIDConnectProviderResponseTypeDef](./type_defs.md#getopenidconnectproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+}
 
-Returns
-[GetOpenIDConnectProviderResponseTypeDef](./type_defs.md#getopenidconnectproviderresponsetypedef).
+parent.get_open_id_connect_provider(**kwargs)
+```
 
-<a id="get\_organizations\_access\_report"></a>
+1. See [:material-code-braces: GetOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#getopenidconnectproviderrequestrequesttypedef) 
 
-### get_organizations_access_report
+### get\_organizations\_access\_report
 
 Retrieves the service last accessed data report for Organizations that was
-previously generated using the ` GenerateOrganizationsAccessReport` operation.
+previously generated using the `  GenerateOrganizationsAccessReport ` operation.
 
-Type annotations for `boto3.client("iam").get_organizations_access_report`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").get_organizations_access_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
 
-Boto3 documentation:
-[IAM.Client.get_organizations_access_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_organizations_access_report)
+```python title="Method definition"
+def get_organizations_access_report(
+    self,
+    *,
+    JobId: str,
+    MaxItems: int = ...,
+    Marker: str = ...,
+    SortKey: sortKeyTypeType = ...,  # (1)
+) -> GetOrganizationsAccessReportResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#getorganizationsaccessreportrequestrequesttypedef).
+1. See [:material-code-brackets: sortKeyTypeType](./literals.md#sortkeytypetype) 
+2. See [:material-code-braces: GetOrganizationsAccessReportResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxItems`: `int`
-- `Marker`: `str`
-- `SortKey`: [sortKeyTypeType](./literals.md#sortkeytypetype)
+```python title="Usage example with kwargs"
+kwargs: GetOrganizationsAccessReportRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetOrganizationsAccessReportResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponsetypedef).
+parent.get_organizations_access_report(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetOrganizationsAccessReportRequestRequestTypeDef](./type_defs.md#getorganizationsaccessreportrequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
-Retrieves information about the specified managed policy, including the
-policy's default version and the total number of IAM users, groups, and roles
-to which the policy is attached.
+Retrieves information about the specified managed policy, including the policy's
+default version and the total number of IAM users, groups, and roles to which
+the policy is attached.
 
-Type annotations for `boto3.client("iam").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
 
-Boto3 documentation:
-[IAM.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    PolicyArn: str,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="get\_policy\_version"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### get_policy_version
+### get\_policy\_version
 
 Retrieves information about the specified version of the specified managed
 policy, including the policy document.
 
-Type annotations for `boto3.client("iam").get_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
 
-Boto3 documentation:
-[IAM.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_policy_version)
+```python title="Method definition"
+def get_policy_version(
+    self,
+    *,
+    PolicyArn: str,
+    VersionId: str,
+) -> GetPolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyVersionRequestRequestTypeDef](./type_defs.md#getpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `VersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyVersionRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "VersionId": ...,
+}
 
-Returns
-[GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
+parent.get_policy_version(**kwargs)
+```
 
-<a id="get\_role"></a>
+1. See [:material-code-braces: GetPolicyVersionRequestRequestTypeDef](./type_defs.md#getpolicyversionrequestrequesttypedef) 
 
-### get_role
+### get\_role
 
-Retrieves information about the specified role, including the role's path,
-GUID, ARN, and the role's trust policy that grants permission to assume the
-role.
+Retrieves information about the specified role, including the role's path, GUID,
+ARN, and the role's trust policy that grants permission to assume the role.
 
-Type annotations for `boto3.client("iam").get_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
 
-Boto3 documentation:
-[IAM.Client.get_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role)
+```python title="Method definition"
+def get_role(
+    self,
+    *,
+    RoleName: str,
+) -> GetRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRoleRequestRequestTypeDef](./type_defs.md#getrolerequestrequesttypedef).
+1. See [:material-code-braces: GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns [GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef).
+parent.get_role(**kwargs)
+```
 
-<a id="get\_role\_policy"></a>
+1. See [:material-code-braces: GetRoleRequestRequestTypeDef](./type_defs.md#getrolerequestrequesttypedef) 
 
-### get_role_policy
+### get\_role\_policy
 
 Retrieves the specified inline policy document that is embedded with the
 specified IAM role.
 
-Type annotations for `boto3.client("iam").get_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
 
-Boto3 documentation:
-[IAM.Client.get_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_role_policy)
+```python title="Method definition"
+def get_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyName: str,
+) -> GetRolePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRolePolicyRequestRequestTypeDef](./type_defs.md#getrolepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetRolePolicyResponseTypeDef](./type_defs.md#getrolepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyName": ...,
+}
 
-Returns
-[GetRolePolicyResponseTypeDef](./type_defs.md#getrolepolicyresponsetypedef).
+parent.get_role_policy(**kwargs)
+```
 
-<a id="get\_saml\_provider"></a>
+1. See [:material-code-braces: GetRolePolicyRequestRequestTypeDef](./type_defs.md#getrolepolicyrequestrequesttypedef) 
 
-### get_saml_provider
+### get\_saml\_provider
 
 Returns the SAML provider metadocument that was uploaded when the IAM SAML
 provider resource object was created or updated.
 
-Type annotations for `boto3.client("iam").get_saml_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
 
-Boto3 documentation:
-[IAM.Client.get_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_saml_provider)
+```python title="Method definition"
+def get_saml_provider(
+    self,
+    *,
+    SAMLProviderArn: str,
+) -> GetSAMLProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSAMLProviderRequestRequestTypeDef](./type_defs.md#getsamlproviderrequestrequesttypedef).
+1. See [:material-code-braces: GetSAMLProviderResponseTypeDef](./type_defs.md#getsamlproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SAMLProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLProviderArn": ...,
+}
 
-Returns
-[GetSAMLProviderResponseTypeDef](./type_defs.md#getsamlproviderresponsetypedef).
+parent.get_saml_provider(**kwargs)
+```
 
-<a id="get\_server\_certificate"></a>
+1. See [:material-code-braces: GetSAMLProviderRequestRequestTypeDef](./type_defs.md#getsamlproviderrequestrequesttypedef) 
 
-### get_server_certificate
+### get\_server\_certificate
 
 Retrieves information about the specified server certificate stored in IAM.
 
-Type annotations for `boto3.client("iam").get_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.get_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_server_certificate)
+```python title="Method definition"
+def get_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+) -> GetServerCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServerCertificateRequestRequestTypeDef](./type_defs.md#getservercertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetServerCertificateResponseTypeDef](./type_defs.md#getservercertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+}
 
-Returns
-[GetServerCertificateResponseTypeDef](./type_defs.md#getservercertificateresponsetypedef).
+parent.get_server_certificate(**kwargs)
+```
 
-<a id="get\_service\_last\_accessed\_details"></a>
+1. See [:material-code-braces: GetServerCertificateRequestRequestTypeDef](./type_defs.md#getservercertificaterequestrequesttypedef) 
 
-### get_service_last_accessed_details
+### get\_service\_last\_accessed\_details
 
 Retrieves a service last accessed report that was created using the
 `GenerateServiceLastAccessedDetails` operation.
 
-Type annotations for `boto3.client("iam").get_service_last_accessed_details`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").get_service_last_accessed_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
 
-Boto3 documentation:
-[IAM.Client.get_service_last_accessed_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details)
+```python title="Method definition"
+def get_service_last_accessed_details(
+    self,
+    *,
+    JobId: str,
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> GetServiceLastAccessedDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetServiceLastAccessedDetailsRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponsetypedef).
+parent.get_service_last_accessed_details(**kwargs)
+```
 
-<a id="get\_service\_last\_accessed\_details\_with\_entities"></a>
+1. See [:material-code-braces: GetServiceLastAccessedDetailsRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailsrequestrequesttypedef) 
 
-### get_service_last_accessed_details_with_entities
+### get\_service\_last\_accessed\_details\_with\_entities
 
 After you generate a group or policy report using the
 `GenerateServiceLastAccessedDetails` operation, you can use the `JobId`
 parameter in `GetServiceLastAccessedDetailsWithEntities`.
 
-Type annotations for
-`boto3.client("iam").get_service_last_accessed_details_with_entities` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_service_last_accessed_details_with_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
 
-Boto3 documentation:
-[IAM.Client.get_service_last_accessed_details_with_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_last_accessed_details_with_entities)
+```python title="Method definition"
+def get_service_last_accessed_details_with_entities(
+    self,
+    *,
+    JobId: str,
+    ServiceNamespace: str,
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesrequestrequesttypedef).
+1. See [:material-code-braces: GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `ServiceNamespace`: `str` *(required)*
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+    "ServiceNamespace": ...,
+}
 
-Returns
-[GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponsetypedef).
+parent.get_service_last_accessed_details_with_entities(**kwargs)
+```
 
-<a id="get\_service\_linked\_role\_deletion\_status"></a>
+1. See [:material-code-braces: GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesrequestrequesttypedef) 
 
-### get_service_linked_role_deletion_status
+### get\_service\_linked\_role\_deletion\_status
 
 Retrieves the status of your service-linked role deletion.
 
-Type annotations for
-`boto3.client("iam").get_service_linked_role_deletion_status` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_service_linked_role_deletion_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
 
-Boto3 documentation:
-[IAM.Client.get_service_linked_role_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_service_linked_role_deletion_status)
+```python title="Method definition"
+def get_service_linked_role_deletion_status(
+    self,
+    *,
+    DeletionTaskId: str,
+) -> GetServiceLinkedRoleDeletionStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef](./type_defs.md#getservicelinkedroledeletionstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetServiceLinkedRoleDeletionStatusResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeletionTaskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef = {  # (1)
+    "DeletionTaskId": ...,
+}
 
-Returns
-[GetServiceLinkedRoleDeletionStatusResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponsetypedef).
+parent.get_service_linked_role_deletion_status(**kwargs)
+```
 
-<a id="get\_ssh\_public\_key"></a>
+1. See [:material-code-braces: GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef](./type_defs.md#getservicelinkedroledeletionstatusrequestrequesttypedef) 
 
-### get_ssh_public_key
+### get\_ssh\_public\_key
 
 Retrieves the specified SSH public key, including metadata about the key.
 
-Type annotations for `boto3.client("iam").get_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
 
-Boto3 documentation:
-[IAM.Client.get_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_ssh_public_key)
+```python title="Method definition"
+def get_ssh_public_key(
+    self,
+    *,
+    UserName: str,
+    SSHPublicKeyId: str,
+    Encoding: encodingTypeType,  # (1)
+) -> GetSSHPublicKeyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSSHPublicKeyRequestRequestTypeDef](./type_defs.md#getsshpublickeyrequestrequesttypedef).
+1. See [:material-code-brackets: encodingTypeType](./literals.md#encodingtypetype) 
+2. See [:material-code-braces: GetSSHPublicKeyResponseTypeDef](./type_defs.md#getsshpublickeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SSHPublicKeyId`: `str` *(required)*
-- `Encoding`: [encodingTypeType](./literals.md#encodingtypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSSHPublicKeyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SSHPublicKeyId": ...,
+    "Encoding": ...,
+}
 
-Returns
-[GetSSHPublicKeyResponseTypeDef](./type_defs.md#getsshpublickeyresponsetypedef).
+parent.get_ssh_public_key(**kwargs)
+```
 
-<a id="get\_user"></a>
+1. See [:material-code-braces: GetSSHPublicKeyRequestRequestTypeDef](./type_defs.md#getsshpublickeyrequestrequesttypedef) 
 
-### get_user
+### get\_user
 
 Retrieves information about the specified IAM user, including the user's
 creation date, path, unique ID, and ARN.
 
-Type annotations for `boto3.client("iam").get_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
 
-Boto3 documentation:
-[IAM.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user)
+```python title="Method definition"
+def get_user(
+    self,
+    *,
+    UserName: str = ...,
+) -> GetUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
+1. See [:material-code-braces: GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+parent.get_user(**kwargs)
+```
 
-<a id="get\_user\_policy"></a>
+1. See [:material-code-braces: GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef) 
 
-### get_user_policy
+### get\_user\_policy
 
-Retrieves the specified inline policy document that is embedded in the
-specified IAM user.
+Retrieves the specified inline policy document that is embedded in the specified
+IAM user.
 
-Type annotations for `boto3.client("iam").get_user_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").get_user_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
 
-Boto3 documentation:
-[IAM.Client.get_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.get_user_policy)
+```python title="Method definition"
+def get_user_policy(
+    self,
+    *,
+    UserName: str,
+    PolicyName: str,
+) -> GetUserPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserPolicyRequestRequestTypeDef](./type_defs.md#getuserpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetUserPolicyResponseTypeDef](./type_defs.md#getuserpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserPolicyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PolicyName": ...,
+}
 
-Returns
-[GetUserPolicyResponseTypeDef](./type_defs.md#getuserpolicyresponsetypedef).
+parent.get_user_policy(**kwargs)
+```
 
-<a id="list\_access\_keys"></a>
+1. See [:material-code-braces: GetUserPolicyRequestRequestTypeDef](./type_defs.md#getuserpolicyrequestrequesttypedef) 
 
-### list_access_keys
+### list\_access\_keys
 
 Returns information about the access key IDs associated with the specified IAM
 user.
 
-Type annotations for `boto3.client("iam").list_access_keys` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_access_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
 
-Boto3 documentation:
-[IAM.Client.list_access_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_access_keys)
+```python title="Method definition"
+def list_access_keys(
+    self,
+    *,
+    UserName: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAccessKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessKeysRequestRequestTypeDef](./type_defs.md#listaccesskeysrequestrequesttypedef).
+1. See [:material-code-braces: ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccessKeysRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef).
+parent.list_access_keys(**kwargs)
+```
 
-<a id="list\_account\_aliases"></a>
+1. See [:material-code-braces: ListAccessKeysRequestRequestTypeDef](./type_defs.md#listaccesskeysrequestrequesttypedef) 
 
-### list_account_aliases
+### list\_account\_aliases
 
 Lists the account alias associated with the Amazon Web Services account (Note:
 you can have only one).
 
-Type annotations for `boto3.client("iam").list_account_aliases` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_account_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
 
-Boto3 documentation:
-[IAM.Client.list_account_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_account_aliases)
+```python title="Method definition"
+def list_account_aliases(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAccountAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountAliasesRequestRequestTypeDef](./type_defs.md#listaccountaliasesrequestrequesttypedef).
+1. See [:material-code-braces: ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAccountAliasesRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef).
+parent.list_account_aliases(**kwargs)
+```
 
-<a id="list\_attached\_group\_policies"></a>
+1. See [:material-code-braces: ListAccountAliasesRequestRequestTypeDef](./type_defs.md#listaccountaliasesrequestrequesttypedef) 
 
-### list_attached_group_policies
+### list\_attached\_group\_policies
 
 Lists all managed policies that are attached to the specified IAM group.
 
-Type annotations for `boto3.client("iam").list_attached_group_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_attached_group_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
 
-Boto3 documentation:
-[IAM.Client.list_attached_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_group_policies)
+```python title="Method definition"
+def list_attached_group_policies(
+    self,
+    *,
+    GroupName: str,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAttachedGroupPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachedGroupPoliciesRequestRequestTypeDef](./type_defs.md#listattachedgrouppoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttachedGroupPoliciesRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns
-[ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef).
+parent.list_attached_group_policies(**kwargs)
+```
 
-<a id="list\_attached\_role\_policies"></a>
+1. See [:material-code-braces: ListAttachedGroupPoliciesRequestRequestTypeDef](./type_defs.md#listattachedgrouppoliciesrequestrequesttypedef) 
 
-### list_attached_role_policies
+### list\_attached\_role\_policies
 
 Lists all managed policies that are attached to the specified IAM role.
 
-Type annotations for `boto3.client("iam").list_attached_role_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_attached_role_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
 
-Boto3 documentation:
-[IAM.Client.list_attached_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_role_policies)
+```python title="Method definition"
+def list_attached_role_policies(
+    self,
+    *,
+    RoleName: str,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAttachedRolePoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachedRolePoliciesRequestRequestTypeDef](./type_defs.md#listattachedrolepoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttachedRolePoliciesRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns
-[ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef).
+parent.list_attached_role_policies(**kwargs)
+```
 
-<a id="list\_attached\_user\_policies"></a>
+1. See [:material-code-braces: ListAttachedRolePoliciesRequestRequestTypeDef](./type_defs.md#listattachedrolepoliciesrequestrequesttypedef) 
 
-### list_attached_user_policies
+### list\_attached\_user\_policies
 
 Lists all managed policies that are attached to the specified IAM user.
 
-Type annotations for `boto3.client("iam").list_attached_user_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_attached_user_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
 
-Boto3 documentation:
-[IAM.Client.list_attached_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_attached_user_policies)
+```python title="Method definition"
+def list_attached_user_policies(
+    self,
+    *,
+    UserName: str,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListAttachedUserPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachedUserPoliciesRequestRequestTypeDef](./type_defs.md#listattacheduserpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttachedUserPoliciesRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef).
+parent.list_attached_user_policies(**kwargs)
+```
 
-<a id="list\_entities\_for\_policy"></a>
+1. See [:material-code-braces: ListAttachedUserPoliciesRequestRequestTypeDef](./type_defs.md#listattacheduserpoliciesrequestrequesttypedef) 
 
-### list_entities_for_policy
+### list\_entities\_for\_policy
 
 Lists all IAM users, groups, and roles that the specified managed policy is
 attached to.
 
-Type annotations for `boto3.client("iam").list_entities_for_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_entities_for_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
 
-Boto3 documentation:
-[IAM.Client.list_entities_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_entities_for_policy)
+```python title="Method definition"
+def list_entities_for_policy(
+    self,
+    *,
+    PolicyArn: str,
+    EntityFilter: EntityTypeType = ...,  # (1)
+    PathPrefix: str = ...,
+    PolicyUsageFilter: PolicyUsageTypeType = ...,  # (2)
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListEntitiesForPolicyResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitiesForPolicyRequestRequestTypeDef](./type_defs.md#listentitiesforpolicyrequestrequesttypedef).
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
+3. See [:material-code-braces: ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `EntityFilter`: [EntityTypeType](./literals.md#entitytypetype)
-- `PathPrefix`: `str`
-- `PolicyUsageFilter`: [PolicyUsageTypeType](./literals.md#policyusagetypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEntitiesForPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+}
 
-Returns
-[ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef).
+parent.list_entities_for_policy(**kwargs)
+```
 
-<a id="list\_group\_policies"></a>
+1. See [:material-code-braces: ListEntitiesForPolicyRequestRequestTypeDef](./type_defs.md#listentitiesforpolicyrequestrequesttypedef) 
 
-### list_group_policies
+### list\_group\_policies
 
 Lists the names of the inline policies that are embedded in the specified IAM
 group.
 
-Type annotations for `boto3.client("iam").list_group_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_group_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
 
-Boto3 documentation:
-[IAM.Client.list_group_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_group_policies)
+```python title="Method definition"
+def list_group_policies(
+    self,
+    *,
+    GroupName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListGroupPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupPoliciesRequestRequestTypeDef](./type_defs.md#listgrouppoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupPoliciesRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns
-[ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef).
+parent.list_group_policies(**kwargs)
+```
 
-<a id="list\_groups"></a>
+1. See [:material-code-braces: ListGroupPoliciesRequestRequestTypeDef](./type_defs.md#listgrouppoliciesrequestrequesttypedef) 
 
-### list_groups
+### list\_groups
 
 Lists the IAM groups that have the specified path prefix.
 
-Type annotations for `boto3.client("iam").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
 
-Boto3 documentation:
-[IAM.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "PathPrefix": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_groups\_for\_user"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_groups_for_user
+### list\_groups\_for\_user
 
 Lists the IAM groups that the specified IAM user belongs to.
 
-Type annotations for `boto3.client("iam").list_groups_for_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_groups_for_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
 
-Boto3 documentation:
-[IAM.Client.list_groups_for_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_groups_for_user)
+```python title="Method definition"
+def list_groups_for_user(
+    self,
+    *,
+    UserName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListGroupsForUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsForUserRequestRequestTypeDef](./type_defs.md#listgroupsforuserrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsForUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef).
+parent.list_groups_for_user(**kwargs)
+```
 
-<a id="list\_instance\_profile\_tags"></a>
+1. See [:material-code-braces: ListGroupsForUserRequestRequestTypeDef](./type_defs.md#listgroupsforuserrequestrequesttypedef) 
 
-### list_instance_profile_tags
+### list\_instance\_profile\_tags
 
 Lists the tags that are attached to the specified IAM instance profile.
 
-Type annotations for `boto3.client("iam").list_instance_profile_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_instance_profile_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
 
-Boto3 documentation:
-[IAM.Client.list_instance_profile_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profile_tags)
+```python title="Method definition"
+def list_instance_profile_tags(
+    self,
+    *,
+    InstanceProfileName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListInstanceProfileTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceProfileTagsRequestRequestTypeDef](./type_defs.md#listinstanceprofiletagsrequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceProfileTagsResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceProfileTagsRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+}
 
-Returns
-[ListInstanceProfileTagsResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponsetypedef).
+parent.list_instance_profile_tags(**kwargs)
+```
 
-<a id="list\_instance\_profiles"></a>
+1. See [:material-code-braces: ListInstanceProfileTagsRequestRequestTypeDef](./type_defs.md#listinstanceprofiletagsrequestrequesttypedef) 
 
-### list_instance_profiles
+### list\_instance\_profiles
 
 Lists the instance profiles that have the specified path prefix.
 
-Type annotations for `boto3.client("iam").list_instance_profiles` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_instance_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
 
-Boto3 documentation:
-[IAM.Client.list_instance_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles)
+```python title="Method definition"
+def list_instance_profiles(
+    self,
+    *,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListInstanceProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceProfilesRequestRequestTypeDef = {  # (1)
+    "PathPrefix": ...,
+}
 
-Returns
-[ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef).
+parent.list_instance_profiles(**kwargs)
+```
 
-<a id="list\_instance\_profiles\_for\_role"></a>
+1. See [:material-code-braces: ListInstanceProfilesRequestRequestTypeDef](./type_defs.md#listinstanceprofilesrequestrequesttypedef) 
 
-### list_instance_profiles_for_role
+### list\_instance\_profiles\_for\_role
 
 Lists the instance profiles that have the specified associated IAM role.
 
-Type annotations for `boto3.client("iam").list_instance_profiles_for_role`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").list_instance_profiles_for_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
 
-Boto3 documentation:
-[IAM.Client.list_instance_profiles_for_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_instance_profiles_for_role)
+```python title="Method definition"
+def list_instance_profiles_for_role(
+    self,
+    *,
+    RoleName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListInstanceProfilesForRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceProfilesForRoleRequestRequestTypeDef](./type_defs.md#listinstanceprofilesforrolerequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceProfilesForRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns
-[ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef).
+parent.list_instance_profiles_for_role(**kwargs)
+```
 
-<a id="list\_mfa\_device\_tags"></a>
+1. See [:material-code-braces: ListInstanceProfilesForRoleRequestRequestTypeDef](./type_defs.md#listinstanceprofilesforrolerequestrequesttypedef) 
 
-### list_mfa_device_tags
+### list\_mfa\_device\_tags
 
 Lists the tags that are attached to the specified IAM virtual multi-factor
 authentication (MFA) device.
 
-Type annotations for `boto3.client("iam").list_mfa_device_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_mfa_device_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
 
-Boto3 documentation:
-[IAM.Client.list_mfa_device_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_device_tags)
+```python title="Method definition"
+def list_mfa_device_tags(
+    self,
+    *,
+    SerialNumber: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListMFADeviceTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMFADeviceTagsRequestRequestTypeDef](./type_defs.md#listmfadevicetagsrequestrequesttypedef).
+1. See [:material-code-braces: ListMFADeviceTagsResponseTypeDef](./type_defs.md#listmfadevicetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SerialNumber`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMFADeviceTagsRequestRequestTypeDef = {  # (1)
+    "SerialNumber": ...,
+}
 
-Returns
-[ListMFADeviceTagsResponseTypeDef](./type_defs.md#listmfadevicetagsresponsetypedef).
+parent.list_mfa_device_tags(**kwargs)
+```
 
-<a id="list\_mfa\_devices"></a>
+1. See [:material-code-braces: ListMFADeviceTagsRequestRequestTypeDef](./type_defs.md#listmfadevicetagsrequestrequesttypedef) 
 
-### list_mfa_devices
+### list\_mfa\_devices
 
 Lists the MFA devices for an IAM user.
 
-Type annotations for `boto3.client("iam").list_mfa_devices` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_mfa_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
 
-Boto3 documentation:
-[IAM.Client.list_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_mfa_devices)
+```python title="Method definition"
+def list_mfa_devices(
+    self,
+    *,
+    UserName: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListMFADevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMFADevicesRequestRequestTypeDef](./type_defs.md#listmfadevicesrequestrequesttypedef).
+1. See [:material-code-braces: ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMFADevicesRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef).
+parent.list_mfa_devices(**kwargs)
+```
 
-<a id="list\_open\_id\_connect\_provider\_tags"></a>
+1. See [:material-code-braces: ListMFADevicesRequestRequestTypeDef](./type_defs.md#listmfadevicesrequestrequesttypedef) 
 
-### list_open_id_connect_provider_tags
+### list\_open\_id\_connect\_provider\_tags
 
 Lists the tags that are attached to the specified OpenID Connect
 (OIDC)-compatible identity provider.
 
-Type annotations for `boto3.client("iam").list_open_id_connect_provider_tags`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").list_open_id_connect_provider_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
 
-Boto3 documentation:
-[IAM.Client.list_open_id_connect_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_provider_tags)
+```python title="Method definition"
+def list_open_id_connect_provider_tags(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListOpenIDConnectProviderTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOpenIDConnectProviderTagsRequestRequestTypeDef](./type_defs.md#listopenidconnectprovidertagsrequestrequesttypedef).
+1. See [:material-code-braces: ListOpenIDConnectProviderTagsResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOpenIDConnectProviderTagsRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+}
 
-Returns
-[ListOpenIDConnectProviderTagsResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponsetypedef).
+parent.list_open_id_connect_provider_tags(**kwargs)
+```
 
-<a id="list\_open\_id\_connect\_providers"></a>
+1. See [:material-code-braces: ListOpenIDConnectProviderTagsRequestRequestTypeDef](./type_defs.md#listopenidconnectprovidertagsrequestrequesttypedef) 
 
-### list_open_id_connect_providers
+### list\_open\_id\_connect\_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
 defined in the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").list_open_id_connect_providers`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").list_open_id_connect_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
 
-Boto3 documentation:
-[IAM.Client.list_open_id_connect_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_open_id_connect_providers)
+```python title="Method definition"
+def list_open_id_connect_providers(
+    self,
+) -> ListOpenIDConnectProvidersResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef).
+1. See [:material-code-braces: ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef) 
 
-<a id="list\_policies"></a>
-
-### list_policies
+### list\_policies
 
 Lists all the managed policies that are available in your Amazon Web Services
-account, including your own customer-defined managed policies and all Amazon
-Web Services managed policies.
+account, including your own customer-defined managed policies and all Amazon Web
+Services managed policies.
 
-Type annotations for `boto3.client("iam").list_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
 
-Boto3 documentation:
-[IAM.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies)
+```python title="Method definition"
+def list_policies(
+    self,
+    *,
+    Scope: policyScopeTypeType = ...,  # (1)
+    OnlyAttached: bool = ...,
+    PathPrefix: str = ...,
+    PolicyUsageFilter: PolicyUsageTypeType = ...,  # (2)
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListPoliciesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: policyScopeTypeType](./literals.md#policyscopetypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
+3. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [policyScopeTypeType](./literals.md#policyscopetypetype)
-- `OnlyAttached`: `bool`
-- `PathPrefix`: `str`
-- `PolicyUsageFilter`: [PolicyUsageTypeType](./literals.md#policyusagetypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+parent.list_policies(**kwargs)
+```
 
-<a id="list\_policies\_granting\_service\_access"></a>
+1. See [:material-code-braces: ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef) 
 
-### list_policies_granting_service_access
+### list\_policies\_granting\_service\_access
 
 Retrieves a list of policies that the IAM identity (user, group, or role) can
 use to access each specified service.
 
-Type annotations for
-`boto3.client("iam").list_policies_granting_service_access` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_policies_granting_service_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
 
-Boto3 documentation:
-[IAM.Client.list_policies_granting_service_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policies_granting_service_access)
+```python title="Method definition"
+def list_policies_granting_service_access(
+    self,
+    *,
+    Arn: str,
+    ServiceNamespaces: Sequence[str],
+    Marker: str = ...,
+) -> ListPoliciesGrantingServiceAccessResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesGrantingServiceAccessRequestRequestTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessrequestrequesttypedef).
+1. See [:material-code-braces: ListPoliciesGrantingServiceAccessResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `ServiceNamespaces`: `Sequence`\[`str`\] *(required)*
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesGrantingServiceAccessRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "ServiceNamespaces": ...,
+}
 
-Returns
-[ListPoliciesGrantingServiceAccessResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponsetypedef).
+parent.list_policies_granting_service_access(**kwargs)
+```
 
-<a id="list\_policy\_tags"></a>
+1. See [:material-code-braces: ListPoliciesGrantingServiceAccessRequestRequestTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessrequestrequesttypedef) 
 
-### list_policy_tags
+### list\_policy\_tags
 
 Lists the tags that are attached to the specified IAM customer managed policy.
 
-Type annotations for `boto3.client("iam").list_policy_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_policy_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
 
-Boto3 documentation:
-[IAM.Client.list_policy_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_tags)
+```python title="Method definition"
+def list_policy_tags(
+    self,
+    *,
+    PolicyArn: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListPolicyTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPolicyTagsRequestRequestTypeDef](./type_defs.md#listpolicytagsrequestrequesttypedef).
+1. See [:material-code-braces: ListPolicyTagsResponseTypeDef](./type_defs.md#listpolicytagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPolicyTagsRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+}
 
-Returns
-[ListPolicyTagsResponseTypeDef](./type_defs.md#listpolicytagsresponsetypedef).
+parent.list_policy_tags(**kwargs)
+```
 
-<a id="list\_policy\_versions"></a>
+1. See [:material-code-braces: ListPolicyTagsRequestRequestTypeDef](./type_defs.md#listpolicytagsrequestrequesttypedef) 
 
-### list_policy_versions
+### list\_policy\_versions
 
 Lists information about the versions of the specified managed policy, including
 the version that is currently set as the policy's default version.
 
-Type annotations for `boto3.client("iam").list_policy_versions` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_policy_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
 
-Boto3 documentation:
-[IAM.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_policy_versions)
+```python title="Method definition"
+def list_policy_versions(
+    self,
+    *,
+    PolicyArn: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListPolicyVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPolicyVersionsRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+}
 
-Returns
-[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
+parent.list_policy_versions(**kwargs)
+```
 
-<a id="list\_role\_policies"></a>
+1. See [:material-code-braces: ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef) 
 
-### list_role_policies
+### list\_role\_policies
 
 Lists the names of the inline policies that are embedded in the specified IAM
 role.
 
-Type annotations for `boto3.client("iam").list_role_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_role_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
 
-Boto3 documentation:
-[IAM.Client.list_role_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_policies)
+```python title="Method definition"
+def list_role_policies(
+    self,
+    *,
+    RoleName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListRolePoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRolePoliciesRequestRequestTypeDef](./type_defs.md#listrolepoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRolePoliciesRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns
-[ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef).
+parent.list_role_policies(**kwargs)
+```
 
-<a id="list\_role\_tags"></a>
+1. See [:material-code-braces: ListRolePoliciesRequestRequestTypeDef](./type_defs.md#listrolepoliciesrequestrequesttypedef) 
 
-### list_role_tags
+### list\_role\_tags
 
 Lists the tags that are attached to the specified role.
 
-Type annotations for `boto3.client("iam").list_role_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_role_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
 
-Boto3 documentation:
-[IAM.Client.list_role_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_role_tags)
+```python title="Method definition"
+def list_role_tags(
+    self,
+    *,
+    RoleName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListRoleTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoleTagsRequestRequestTypeDef](./type_defs.md#listroletagsrequestrequesttypedef).
+1. See [:material-code-braces: ListRoleTagsResponseTypeDef](./type_defs.md#listroletagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRoleTagsRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns
-[ListRoleTagsResponseTypeDef](./type_defs.md#listroletagsresponsetypedef).
+parent.list_role_tags(**kwargs)
+```
 
-<a id="list\_roles"></a>
+1. See [:material-code-braces: ListRoleTagsRequestRequestTypeDef](./type_defs.md#listroletagsrequestrequesttypedef) 
 
-### list_roles
+### list\_roles
 
 Lists the IAM roles that have the specified path prefix.
 
-Type annotations for `boto3.client("iam").list_roles` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_roles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
 
-Boto3 documentation:
-[IAM.Client.list_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_roles)
+```python title="Method definition"
+def list_roles(
+    self,
+    *,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListRolesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRolesRequestRequestTypeDef](./type_defs.md#listrolesrequestrequesttypedef).
+1. See [:material-code-braces: ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRolesRequestRequestTypeDef = {  # (1)
+    "PathPrefix": ...,
+}
 
-Returns [ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef).
+parent.list_roles(**kwargs)
+```
 
-<a id="list\_saml\_provider\_tags"></a>
+1. See [:material-code-braces: ListRolesRequestRequestTypeDef](./type_defs.md#listrolesrequestrequesttypedef) 
 
-### list_saml_provider_tags
+### list\_saml\_provider\_tags
 
 Lists the tags that are attached to the specified Security Assertion Markup
 Language (SAML) identity provider.
 
-Type annotations for `boto3.client("iam").list_saml_provider_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_saml_provider_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
 
-Boto3 documentation:
-[IAM.Client.list_saml_provider_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_provider_tags)
+```python title="Method definition"
+def list_saml_provider_tags(
+    self,
+    *,
+    SAMLProviderArn: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListSAMLProviderTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSAMLProviderTagsRequestRequestTypeDef](./type_defs.md#listsamlprovidertagsrequestrequesttypedef).
+1. See [:material-code-braces: ListSAMLProviderTagsResponseTypeDef](./type_defs.md#listsamlprovidertagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SAMLProviderArn`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSAMLProviderTagsRequestRequestTypeDef = {  # (1)
+    "SAMLProviderArn": ...,
+}
 
-Returns
-[ListSAMLProviderTagsResponseTypeDef](./type_defs.md#listsamlprovidertagsresponsetypedef).
+parent.list_saml_provider_tags(**kwargs)
+```
 
-<a id="list\_saml\_providers"></a>
+1. See [:material-code-braces: ListSAMLProviderTagsRequestRequestTypeDef](./type_defs.md#listsamlprovidertagsrequestrequesttypedef) 
 
-### list_saml_providers
+### list\_saml\_providers
 
 Lists the SAML provider resource objects defined in IAM in the account.
 
-Type annotations for `boto3.client("iam").list_saml_providers` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_saml_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
 
-Boto3 documentation:
-[IAM.Client.list_saml_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_saml_providers)
+```python title="Method definition"
+def list_saml_providers(
+    self,
+) -> ListSAMLProvidersResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef).
+1. See [:material-code-braces: ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef) 
 
-<a id="list\_server\_certificate\_tags"></a>
-
-### list_server_certificate_tags
+### list\_server\_certificate\_tags
 
 Lists the tags that are attached to the specified IAM server certificate.
 
-Type annotations for `boto3.client("iam").list_server_certificate_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_server_certificate_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
 
-Boto3 documentation:
-[IAM.Client.list_server_certificate_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificate_tags)
+```python title="Method definition"
+def list_server_certificate_tags(
+    self,
+    *,
+    ServerCertificateName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListServerCertificateTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServerCertificateTagsRequestRequestTypeDef](./type_defs.md#listservercertificatetagsrequestrequesttypedef).
+1. See [:material-code-braces: ListServerCertificateTagsResponseTypeDef](./type_defs.md#listservercertificatetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServerCertificateTagsRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+}
 
-Returns
-[ListServerCertificateTagsResponseTypeDef](./type_defs.md#listservercertificatetagsresponsetypedef).
+parent.list_server_certificate_tags(**kwargs)
+```
 
-<a id="list\_server\_certificates"></a>
+1. See [:material-code-braces: ListServerCertificateTagsRequestRequestTypeDef](./type_defs.md#listservercertificatetagsrequestrequesttypedef) 
 
-### list_server_certificates
+### list\_server\_certificates
 
-Lists the server certificates stored in IAM that have the specified path
-prefix.
+Lists the server certificates stored in IAM that have the specified path prefix.
 
-Type annotations for `boto3.client("iam").list_server_certificates` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_server_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
 
-Boto3 documentation:
-[IAM.Client.list_server_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_server_certificates)
+```python title="Method definition"
+def list_server_certificates(
+    self,
+    *,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListServerCertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServerCertificatesRequestRequestTypeDef](./type_defs.md#listservercertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServerCertificatesRequestRequestTypeDef = {  # (1)
+    "PathPrefix": ...,
+}
 
-Returns
-[ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef).
+parent.list_server_certificates(**kwargs)
+```
 
-<a id="list\_service\_specific\_credentials"></a>
+1. See [:material-code-braces: ListServerCertificatesRequestRequestTypeDef](./type_defs.md#listservercertificatesrequestrequesttypedef) 
 
-### list_service_specific_credentials
+### list\_service\_specific\_credentials
 
 Returns information about the service-specific credentials associated with the
 specified IAM user.
 
-Type annotations for `boto3.client("iam").list_service_specific_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").list_service_specific_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
 
-Boto3 documentation:
-[IAM.Client.list_service_specific_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_service_specific_credentials)
+```python title="Method definition"
+def list_service_specific_credentials(
+    self,
+    *,
+    UserName: str = ...,
+    ServiceName: str = ...,
+) -> ListServiceSpecificCredentialsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceSpecificCredentialsRequestRequestTypeDef](./type_defs.md#listservicespecificcredentialsrequestrequesttypedef).
+1. See [:material-code-braces: ListServiceSpecificCredentialsResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `ServiceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServiceSpecificCredentialsRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListServiceSpecificCredentialsResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponsetypedef).
+parent.list_service_specific_credentials(**kwargs)
+```
 
-<a id="list\_signing\_certificates"></a>
+1. See [:material-code-braces: ListServiceSpecificCredentialsRequestRequestTypeDef](./type_defs.md#listservicespecificcredentialsrequestrequesttypedef) 
 
-### list_signing_certificates
+### list\_signing\_certificates
 
-Returns information about the signing certificates associated with the
-specified IAM user.
+Returns information about the signing certificates associated with the specified
+IAM user.
 
-Type annotations for `boto3.client("iam").list_signing_certificates` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_signing_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
 
-Boto3 documentation:
-[IAM.Client.list_signing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_signing_certificates)
+```python title="Method definition"
+def list_signing_certificates(
+    self,
+    *,
+    UserName: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListSigningCertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSigningCertificatesRequestRequestTypeDef](./type_defs.md#listsigningcertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSigningCertificatesRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef).
+parent.list_signing_certificates(**kwargs)
+```
 
-<a id="list\_ssh\_public\_keys"></a>
+1. See [:material-code-braces: ListSigningCertificatesRequestRequestTypeDef](./type_defs.md#listsigningcertificatesrequestrequesttypedef) 
 
-### list_ssh_public_keys
+### list\_ssh\_public\_keys
 
 Returns information about the SSH public keys associated with the specified IAM
 user.
 
-Type annotations for `boto3.client("iam").list_ssh_public_keys` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_ssh_public_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
 
-Boto3 documentation:
-[IAM.Client.list_ssh_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_ssh_public_keys)
+```python title="Method definition"
+def list_ssh_public_keys(
+    self,
+    *,
+    UserName: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListSSHPublicKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSSHPublicKeysRequestRequestTypeDef](./type_defs.md#listsshpublickeysrequestrequesttypedef).
+1. See [:material-code-braces: ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSSHPublicKeysRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef).
+parent.list_ssh_public_keys(**kwargs)
+```
 
-<a id="list\_user\_policies"></a>
+1. See [:material-code-braces: ListSSHPublicKeysRequestRequestTypeDef](./type_defs.md#listsshpublickeysrequestrequesttypedef) 
 
-### list_user_policies
+### list\_user\_policies
 
 Lists the names of the inline policies embedded in the specified IAM user.
 
-Type annotations for `boto3.client("iam").list_user_policies` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_user_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
 
-Boto3 documentation:
-[IAM.Client.list_user_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_policies)
+```python title="Method definition"
+def list_user_policies(
+    self,
+    *,
+    UserName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListUserPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserPoliciesRequestRequestTypeDef](./type_defs.md#listuserpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUserPoliciesRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef).
+parent.list_user_policies(**kwargs)
+```
 
-<a id="list\_user\_tags"></a>
+1. See [:material-code-braces: ListUserPoliciesRequestRequestTypeDef](./type_defs.md#listuserpoliciesrequestrequesttypedef) 
 
-### list_user_tags
+### list\_user\_tags
 
 Lists the tags that are attached to the specified IAM user.
 
-Type annotations for `boto3.client("iam").list_user_tags` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_user_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
 
-Boto3 documentation:
-[IAM.Client.list_user_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_user_tags)
+```python title="Method definition"
+def list_user_tags(
+    self,
+    *,
+    UserName: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListUserTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserTagsRequestRequestTypeDef](./type_defs.md#listusertagsrequestrequesttypedef).
+1. See [:material-code-braces: ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUserTagsRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef).
+parent.list_user_tags(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListUserTagsRequestRequestTypeDef](./type_defs.md#listusertagsrequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Lists the IAM users that have the specified path prefix.
 
-Type annotations for `boto3.client("iam").list_users` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
 
-Boto3 documentation:
-[IAM.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    PathPrefix: str = ...,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "PathPrefix": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="list\_virtual\_mfa\_devices"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### list_virtual_mfa_devices
+### list\_virtual\_mfa\_devices
 
 Lists the virtual MFA devices defined in the Amazon Web Services account by
 assignment status.
 
-Type annotations for `boto3.client("iam").list_virtual_mfa_devices` method.
+Type annotations and code completion for `#!python boto3.client("iam").list_virtual_mfa_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
 
-Boto3 documentation:
-[IAM.Client.list_virtual_mfa_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.list_virtual_mfa_devices)
+```python title="Method definition"
+def list_virtual_mfa_devices(
+    self,
+    *,
+    AssignmentStatus: assignmentStatusTypeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListVirtualMFADevicesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualMFADevicesRequestRequestTypeDef](./type_defs.md#listvirtualmfadevicesrequestrequesttypedef).
+1. See [:material-code-brackets: assignmentStatusTypeType](./literals.md#assignmentstatustypetype) 
+2. See [:material-code-braces: ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssignmentStatus`:
-  [assignmentStatusTypeType](./literals.md#assignmentstatustypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualMFADevicesRequestRequestTypeDef = {  # (1)
+    "AssignmentStatus": ...,
+}
 
-Returns
-[ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef).
+parent.list_virtual_mfa_devices(**kwargs)
+```
 
-<a id="put\_group\_policy"></a>
+1. See [:material-code-braces: ListVirtualMFADevicesRequestRequestTypeDef](./type_defs.md#listvirtualmfadevicesrequestrequesttypedef) 
 
-### put_group_policy
+### put\_group\_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
 group.
 
-Type annotations for `boto3.client("iam").put_group_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").put_group_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
 
-Boto3 documentation:
-[IAM.Client.put_group_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_group_policy)
+```python title="Method definition"
+def put_group_policy(
+    self,
+    *,
+    GroupName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutGroupPolicyRequestRequestTypeDef](./type_defs.md#putgrouppolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutGroupPolicyRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
 
-<a id="put\_role\_permissions\_boundary"></a>
+parent.put_group_policy(**kwargs)
+```
 
-### put_role_permissions_boundary
+1. See [:material-code-braces: PutGroupPolicyRequestRequestTypeDef](./type_defs.md#putgrouppolicyrequestrequesttypedef) 
+
+### put\_role\_permissions\_boundary
 
 Adds or updates the policy that is specified as the IAM role's permissions
 boundary.
 
-Type annotations for `boto3.client("iam").put_role_permissions_boundary`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").put_role_permissions_boundary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
 
-Boto3 documentation:
-[IAM.Client.put_role_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_permissions_boundary)
+```python title="Method definition"
+def put_role_permissions_boundary(
+    self,
+    *,
+    RoleName: str,
+    PermissionsBoundary: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putrolepermissionsboundaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PermissionsBoundary`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRolePermissionsBoundaryRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PermissionsBoundary": ...,
+}
 
-<a id="put\_role\_policy"></a>
+parent.put_role_permissions_boundary(**kwargs)
+```
 
-### put_role_policy
+1. See [:material-code-braces: PutRolePermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putrolepermissionsboundaryrequestrequesttypedef) 
+
+### put\_role\_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
 role.
 
-Type annotations for `boto3.client("iam").put_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").put_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
 
-Boto3 documentation:
-[IAM.Client.put_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_role_policy)
+```python title="Method definition"
+def put_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutRolePolicyRequestRequestTypeDef](./type_defs.md#putrolepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
 
-<a id="put\_user\_permissions\_boundary"></a>
+parent.put_role_policy(**kwargs)
+```
 
-### put_user_permissions_boundary
+1. See [:material-code-braces: PutRolePolicyRequestRequestTypeDef](./type_defs.md#putrolepolicyrequestrequesttypedef) 
+
+### put\_user\_permissions\_boundary
 
 Adds or updates the policy that is specified as the IAM user's permissions
 boundary.
 
-Type annotations for `boto3.client("iam").put_user_permissions_boundary`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").put_user_permissions_boundary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
 
-Boto3 documentation:
-[IAM.Client.put_user_permissions_boundary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_permissions_boundary)
+```python title="Method definition"
+def put_user_permissions_boundary(
+    self,
+    *,
+    UserName: str,
+    PermissionsBoundary: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putuserpermissionsboundaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PermissionsBoundary`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutUserPermissionsBoundaryRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PermissionsBoundary": ...,
+}
 
-<a id="put\_user\_policy"></a>
+parent.put_user_permissions_boundary(**kwargs)
+```
 
-### put_user_policy
+1. See [:material-code-braces: PutUserPermissionsBoundaryRequestRequestTypeDef](./type_defs.md#putuserpermissionsboundaryrequestrequesttypedef) 
+
+### put\_user\_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
 user.
 
-Type annotations for `boto3.client("iam").put_user_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").put_user_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
 
-Boto3 documentation:
-[IAM.Client.put_user_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.put_user_policy)
+```python title="Method definition"
+def put_user_policy(
+    self,
+    *,
+    UserName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutUserPolicyRequestRequestTypeDef](./type_defs.md#putuserpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `PolicyName`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutUserPolicyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "PolicyName": ...,
+    "PolicyDocument": ...,
+}
 
-<a id="remove\_client\_id\_from\_open\_id\_connect\_provider"></a>
+parent.put_user_policy(**kwargs)
+```
 
-### remove_client_id_from_open_id_connect_provider
+1. See [:material-code-braces: PutUserPolicyRequestRequestTypeDef](./type_defs.md#putuserpolicyrequestrequesttypedef) 
 
-Removes the specified client ID (also known as audience) from the list of
-client IDs registered for the specified IAM OpenID Connect (OIDC) provider
-resource object.
+### remove\_client\_id\_from\_open\_id\_connect\_provider
 
-Type annotations for
-`boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
+Removes the specified client ID (also known as audience) from the list of client
+IDs registered for the specified IAM OpenID Connect (OIDC) provider resource
+object.
 
-Boto3 documentation:
-[IAM.Client.remove_client_id_from_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
+Type annotations and code completion for `#!python boto3.client("iam").remove_client_id_from_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_client_id_from_open_id_connect_provider)
 
-Arguments mapping described in
-[RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#removeclientidfromopenidconnectproviderrequestrequesttypedef).
+```python title="Method definition"
+def remove_client_id_from_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    ClientID: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `ClientID`: `str` *(required)*
 
-<a id="remove\_role\_from\_instance\_profile"></a>
+```python title="Usage example with kwargs"
+kwargs: RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+    "ClientID": ...,
+}
 
-### remove_role_from_instance_profile
+parent.remove_client_id_from_open_id_connect_provider(**kwargs)
+```
+
+1. See [:material-code-braces: RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#removeclientidfromopenidconnectproviderrequestrequesttypedef) 
+
+### remove\_role\_from\_instance\_profile
 
 Removes the specified IAM role from the specified EC2 instance profile.
 
-Type annotations for `boto3.client("iam").remove_role_from_instance_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").remove_role_from_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.remove_role_from_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_role_from_instance_profile)
+```python title="Method definition"
+def remove_role_from_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+    RoleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveRoleFromInstanceProfileRequestRequestTypeDef](./type_defs.md#removerolefrominstanceprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `RoleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveRoleFromInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+    "RoleName": ...,
+}
 
-<a id="remove\_user\_from\_group"></a>
+parent.remove_role_from_instance_profile(**kwargs)
+```
 
-### remove_user_from_group
+1. See [:material-code-braces: RemoveRoleFromInstanceProfileRequestRequestTypeDef](./type_defs.md#removerolefrominstanceprofilerequestrequesttypedef) 
+
+### remove\_user\_from\_group
 
 Removes the specified user from the specified group.
 
-Type annotations for `boto3.client("iam").remove_user_from_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").remove_user_from_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
 
-Boto3 documentation:
-[IAM.Client.remove_user_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.remove_user_from_group)
+```python title="Method definition"
+def remove_user_from_group(
+    self,
+    *,
+    GroupName: str,
+    UserName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#removeuserfromgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveUserFromGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+    "UserName": ...,
+}
 
-<a id="reset\_service\_specific\_credential"></a>
+parent.remove_user_from_group(**kwargs)
+```
 
-### reset_service_specific_credential
+1. See [:material-code-braces: RemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#removeuserfromgrouprequestrequesttypedef) 
+
+### reset\_service\_specific\_credential
 
 Resets the password for a service-specific credential.
 
-Type annotations for `boto3.client("iam").reset_service_specific_credential`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").reset_service_specific_credential` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
 
-Boto3 documentation:
-[IAM.Client.reset_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.reset_service_specific_credential)
+```python title="Method definition"
+def reset_service_specific_credential(
+    self,
+    *,
+    ServiceSpecificCredentialId: str,
+    UserName: str = ...,
+) -> ResetServiceSpecificCredentialResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#resetservicespecificcredentialrequestrequesttypedef).
+1. See [:material-code-braces: ResetServiceSpecificCredentialResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceSpecificCredentialId`: `str` *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ResetServiceSpecificCredentialRequestRequestTypeDef = {  # (1)
+    "ServiceSpecificCredentialId": ...,
+}
 
-Returns
-[ResetServiceSpecificCredentialResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponsetypedef).
+parent.reset_service_specific_credential(**kwargs)
+```
 
-<a id="resync\_mfa\_device"></a>
+1. See [:material-code-braces: ResetServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#resetservicespecificcredentialrequestrequesttypedef) 
 
-### resync_mfa_device
+### resync\_mfa\_device
 
-Synchronizes the specified MFA device with its IAM resource object on the
-Amazon Web Services servers.
+Synchronizes the specified MFA device with its IAM resource object on the Amazon
+Web Services servers.
 
-Type annotations for `boto3.client("iam").resync_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").resync_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.resync_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.resync_mfa_device)
+```python title="Method definition"
+def resync_mfa_device(
+    self,
+    *,
+    UserName: str,
+    SerialNumber: str,
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ResyncMFADeviceRequestRequestTypeDef](./type_defs.md#resyncmfadevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SerialNumber`: `str` *(required)*
-- `AuthenticationCode1`: `str` *(required)*
-- `AuthenticationCode2`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResyncMFADeviceRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SerialNumber": ...,
+    "AuthenticationCode1": ...,
+    "AuthenticationCode2": ...,
+}
 
-<a id="set\_default\_policy\_version"></a>
+parent.resync_mfa_device(**kwargs)
+```
 
-### set_default_policy_version
+1. See [:material-code-braces: ResyncMFADeviceRequestRequestTypeDef](./type_defs.md#resyncmfadevicerequestrequesttypedef) 
+
+### set\_default\_policy\_version
 
 Sets the specified version of the specified policy as the policy's default
 (operative) version.
 
-Type annotations for `boto3.client("iam").set_default_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iam").set_default_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
 
-Boto3 documentation:
-[IAM.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_default_policy_version)
+```python title="Method definition"
+def set_default_policy_version(
+    self,
+    *,
+    PolicyArn: str,
+    VersionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetDefaultPolicyVersionRequestRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `VersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetDefaultPolicyVersionRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "VersionId": ...,
+}
 
-<a id="set\_security\_token\_service\_preferences"></a>
+parent.set_default_policy_version(**kwargs)
+```
 
-### set_security_token_service_preferences
+1. See [:material-code-braces: SetDefaultPolicyVersionRequestRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequestrequesttypedef) 
+
+### set\_security\_token\_service\_preferences
 
 Sets the specified version of the global endpoint token as the token version
 used for the Amazon Web Services account.
 
-Type annotations for
-`boto3.client("iam").set_security_token_service_preferences` method.
+Type annotations and code completion for `#!python boto3.client("iam").set_security_token_service_preferences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
 
-Boto3 documentation:
-[IAM.Client.set_security_token_service_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.set_security_token_service_preferences)
+```python title="Method definition"
+def set_security_token_service_preferences(
+    self,
+    *,
+    GlobalEndpointTokenVersion: globalEndpointTokenVersionType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetSecurityTokenServicePreferencesRequestRequestTypeDef](./type_defs.md#setsecuritytokenservicepreferencesrequestrequesttypedef).
+1. See [:material-code-brackets: globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype) 
 
-Keyword-only arguments:
 
-- `GlobalEndpointTokenVersion`:
-  [globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetSecurityTokenServicePreferencesRequestRequestTypeDef = {  # (1)
+    "GlobalEndpointTokenVersion": ...,
+}
 
-<a id="simulate\_custom\_policy"></a>
+parent.set_security_token_service_preferences(**kwargs)
+```
 
-### simulate_custom_policy
+1. See [:material-code-braces: SetSecurityTokenServicePreferencesRequestRequestTypeDef](./type_defs.md#setsecuritytokenservicepreferencesrequestrequesttypedef) 
+
+### simulate\_custom\_policy
 
 Simulate how a set of IAM policies and optionally a resource-based policy works
-with a list of API operations and Amazon Web Services resources to determine
-the policies' effective permissions.
+with a list of API operations and Amazon Web Services resources to determine the
+policies' effective permissions.
 
-Type annotations for `boto3.client("iam").simulate_custom_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").simulate_custom_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
 
-Boto3 documentation:
-[IAM.Client.simulate_custom_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_custom_policy)
+```python title="Method definition"
+def simulate_custom_policy(
+    self,
+    *,
+    PolicyInputList: Sequence[str],
+    ActionNames: Sequence[str],
+    PermissionsBoundaryPolicyInputList: Sequence[str] = ...,
+    ResourceArns: Sequence[str] = ...,
+    ResourcePolicy: str = ...,
+    ResourceOwner: str = ...,
+    CallerArn: str = ...,
+    ContextEntries: Sequence[ContextEntryTypeDef] = ...,  # (1)
+    ResourceHandlingOption: str = ...,
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> SimulatePolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SimulateCustomPolicyRequestRequestTypeDef](./type_defs.md#simulatecustompolicyrequestrequesttypedef).
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+2. See [:material-code-braces: SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicyInputList`: `Sequence`\[`str`\] *(required)*
-- `ActionNames`: `Sequence`\[`str`\] *(required)*
-- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
-- `ResourceArns`: `Sequence`\[`str`\]
-- `ResourcePolicy`: `str`
-- `ResourceOwner`: `str`
-- `CallerArn`: `str`
-- `ContextEntries`:
-  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
-- `ResourceHandlingOption`: `str`
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: SimulateCustomPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyInputList": ...,
+    "ActionNames": ...,
+}
 
-Returns
-[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
+parent.simulate_custom_policy(**kwargs)
+```
 
-<a id="simulate\_principal\_policy"></a>
+1. See [:material-code-braces: SimulateCustomPolicyRequestRequestTypeDef](./type_defs.md#simulatecustompolicyrequestrequesttypedef) 
 
-### simulate_principal_policy
+### simulate\_principal\_policy
 
 Simulate how a set of IAM policies attached to an IAM entity works with a list
 of API operations and Amazon Web Services resources to determine the policies'
 effective permissions.
 
-Type annotations for `boto3.client("iam").simulate_principal_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").simulate_principal_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
 
-Boto3 documentation:
-[IAM.Client.simulate_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.simulate_principal_policy)
+```python title="Method definition"
+def simulate_principal_policy(
+    self,
+    *,
+    PolicySourceArn: str,
+    ActionNames: Sequence[str],
+    PolicyInputList: Sequence[str] = ...,
+    PermissionsBoundaryPolicyInputList: Sequence[str] = ...,
+    ResourceArns: Sequence[str] = ...,
+    ResourcePolicy: str = ...,
+    ResourceOwner: str = ...,
+    CallerArn: str = ...,
+    ContextEntries: Sequence[ContextEntryTypeDef] = ...,  # (1)
+    ResourceHandlingOption: str = ...,
+    MaxItems: int = ...,
+    Marker: str = ...,
+) -> SimulatePolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SimulatePrincipalPolicyRequestRequestTypeDef](./type_defs.md#simulateprincipalpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+2. See [:material-code-braces: SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PolicySourceArn`: `str` *(required)*
-- `ActionNames`: `Sequence`\[`str`\] *(required)*
-- `PolicyInputList`: `Sequence`\[`str`\]
-- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
-- `ResourceArns`: `Sequence`\[`str`\]
-- `ResourcePolicy`: `str`
-- `ResourceOwner`: `str`
-- `CallerArn`: `str`
-- `ContextEntries`:
-  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
-- `ResourceHandlingOption`: `str`
-- `MaxItems`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: SimulatePrincipalPolicyRequestRequestTypeDef = {  # (1)
+    "PolicySourceArn": ...,
+    "ActionNames": ...,
+}
 
-Returns
-[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
+parent.simulate_principal_policy(**kwargs)
+```
 
-<a id="tag\_instance\_profile"></a>
+1. See [:material-code-braces: SimulatePrincipalPolicyRequestRequestTypeDef](./type_defs.md#simulateprincipalpolicyrequestrequesttypedef) 
 
-### tag_instance_profile
+### tag\_instance\_profile
 
 Adds one or more tags to an IAM instance profile.
 
-Type annotations for `boto3.client("iam").tag_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.tag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_instance_profile)
+```python title="Method definition"
+def tag_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagInstanceProfileRequestRequestTypeDef](./type_defs.md#taginstanceprofilerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_mfa\_device"></a>
+parent.tag_instance_profile(**kwargs)
+```
 
-### tag_mfa_device
+1. See [:material-code-braces: TagInstanceProfileRequestRequestTypeDef](./type_defs.md#taginstanceprofilerequestrequesttypedef) 
+
+### tag\_mfa\_device
 
 Adds one or more tags to an IAM virtual multi-factor authentication (MFA)
 device.
 
-Type annotations for `boto3.client("iam").tag_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.tag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_mfa_device)
+```python title="Method definition"
+def tag_mfa_device(
+    self,
+    *,
+    SerialNumber: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagMFADeviceRequestRequestTypeDef](./type_defs.md#tagmfadevicerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `SerialNumber`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagMFADeviceRequestRequestTypeDef = {  # (1)
+    "SerialNumber": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_open\_id\_connect\_provider"></a>
+parent.tag_mfa_device(**kwargs)
+```
 
-### tag_open_id_connect_provider
+1. See [:material-code-braces: TagMFADeviceRequestRequestTypeDef](./type_defs.md#tagmfadevicerequestrequesttypedef) 
+
+### tag\_open\_id\_connect\_provider
 
 Adds one or more tags to an OpenID Connect (OIDC)-compatible identity provider.
 
-Type annotations for `boto3.client("iam").tag_open_id_connect_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.tag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_open_id_connect_provider)
+```python title="Method definition"
+def tag_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#tagopenidconnectproviderrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_policy"></a>
+parent.tag_open_id_connect_provider(**kwargs)
+```
 
-### tag_policy
+1. See [:material-code-braces: TagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#tagopenidconnectproviderrequestrequesttypedef) 
+
+### tag\_policy
 
 Adds one or more tags to an IAM customer managed policy.
 
-Type annotations for `boto3.client("iam").tag_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
 
-Boto3 documentation:
-[IAM.Client.tag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_policy)
+```python title="Method definition"
+def tag_policy(
+    self,
+    *,
+    PolicyArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagPolicyRequestRequestTypeDef](./type_defs.md#tagpolicyrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_role"></a>
+parent.tag_policy(**kwargs)
+```
 
-### tag_role
+1. See [:material-code-braces: TagPolicyRequestRequestTypeDef](./type_defs.md#tagpolicyrequestrequesttypedef) 
+
+### tag\_role
 
 Adds one or more tags to an IAM role.
 
-Type annotations for `boto3.client("iam").tag_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
 
-Boto3 documentation:
-[IAM.Client.tag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_role)
+```python title="Method definition"
+def tag_role(
+    self,
+    *,
+    RoleName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagRoleRequestRequestTypeDef](./type_defs.md#tagrolerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_saml\_provider"></a>
+parent.tag_role(**kwargs)
+```
 
-### tag_saml_provider
+1. See [:material-code-braces: TagRoleRequestRequestTypeDef](./type_defs.md#tagrolerequestrequesttypedef) 
+
+### tag\_saml\_provider
 
 Adds one or more tags to a Security Assertion Markup Language (SAML) identity
 provider.
 
-Type annotations for `boto3.client("iam").tag_saml_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
 
-Boto3 documentation:
-[IAM.Client.tag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_saml_provider)
+```python title="Method definition"
+def tag_saml_provider(
+    self,
+    *,
+    SAMLProviderArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagSAMLProviderRequestRequestTypeDef](./type_defs.md#tagsamlproviderrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `SAMLProviderArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLProviderArn": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_server\_certificate"></a>
+parent.tag_saml_provider(**kwargs)
+```
 
-### tag_server_certificate
+1. See [:material-code-braces: TagSAMLProviderRequestRequestTypeDef](./type_defs.md#tagsamlproviderrequestrequesttypedef) 
+
+### tag\_server\_certificate
 
 Adds one or more tags to an IAM server certificate.
 
-Type annotations for `boto3.client("iam").tag_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.tag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_server_certificate)
+```python title="Method definition"
+def tag_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagServerCertificateRequestRequestTypeDef](./type_defs.md#tagservercertificaterequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+    "Tags": ...,
+}
 
-<a id="tag\_user"></a>
+parent.tag_server_certificate(**kwargs)
+```
 
-### tag_user
+1. See [:material-code-braces: TagServerCertificateRequestRequestTypeDef](./type_defs.md#tagservercertificaterequestrequesttypedef) 
+
+### tag\_user
 
 Adds one or more tags to an IAM user.
 
-Type annotations for `boto3.client("iam").tag_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").tag_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
 
-Boto3 documentation:
-[IAM.Client.tag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.tag_user)
+```python title="Method definition"
+def tag_user(
+    self,
+    *,
+    UserName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagUserRequestRequestTypeDef](./type_defs.md#taguserrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_instance\_profile"></a>
+parent.tag_user(**kwargs)
+```
 
-### untag_instance_profile
+1. See [:material-code-braces: TagUserRequestRequestTypeDef](./type_defs.md#taguserrequestrequesttypedef) 
+
+### untag\_instance\_profile
 
 Removes the specified tags from the IAM instance profile.
 
-Type annotations for `boto3.client("iam").untag_instance_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_instance_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
 
-Boto3 documentation:
-[IAM.Client.untag_instance_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_instance_profile)
+```python title="Method definition"
+def untag_instance_profile(
+    self,
+    *,
+    InstanceProfileName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagInstanceProfileRequestRequestTypeDef](./type_defs.md#untaginstanceprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InstanceProfileName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagInstanceProfileRequestRequestTypeDef = {  # (1)
+    "InstanceProfileName": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_mfa\_device"></a>
+parent.untag_instance_profile(**kwargs)
+```
 
-### untag_mfa_device
+1. See [:material-code-braces: UntagInstanceProfileRequestRequestTypeDef](./type_defs.md#untaginstanceprofilerequestrequesttypedef) 
+
+### untag\_mfa\_device
 
 Removes the specified tags from the IAM virtual multi-factor authentication
 (MFA) device.
 
-Type annotations for `boto3.client("iam").untag_mfa_device` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_mfa_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
 
-Boto3 documentation:
-[IAM.Client.untag_mfa_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_mfa_device)
+```python title="Method definition"
+def untag_mfa_device(
+    self,
+    *,
+    SerialNumber: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagMFADeviceRequestRequestTypeDef](./type_defs.md#untagmfadevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SerialNumber`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagMFADeviceRequestRequestTypeDef = {  # (1)
+    "SerialNumber": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_open\_id\_connect\_provider"></a>
+parent.untag_mfa_device(**kwargs)
+```
 
-### untag_open_id_connect_provider
+1. See [:material-code-braces: UntagMFADeviceRequestRequestTypeDef](./type_defs.md#untagmfadevicerequestrequesttypedef) 
+
+### untag\_open\_id\_connect\_provider
 
 Removes the specified tags from the specified OpenID Connect (OIDC)-compatible
 identity provider in IAM.
 
-Type annotations for `boto3.client("iam").untag_open_id_connect_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_open_id_connect_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
 
-Boto3 documentation:
-[IAM.Client.untag_open_id_connect_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_open_id_connect_provider)
+```python title="Method definition"
+def untag_open_id_connect_provider(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#untagopenidconnectproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagOpenIDConnectProviderRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_policy"></a>
+parent.untag_open_id_connect_provider(**kwargs)
+```
 
-### untag_policy
+1. See [:material-code-braces: UntagOpenIDConnectProviderRequestRequestTypeDef](./type_defs.md#untagopenidconnectproviderrequestrequesttypedef) 
+
+### untag\_policy
 
 Removes the specified tags from the customer managed policy.
 
-Type annotations for `boto3.client("iam").untag_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
 
-Boto3 documentation:
-[IAM.Client.untag_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_policy)
+```python title="Method definition"
+def untag_policy(
+    self,
+    *,
+    PolicyArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagPolicyRequestRequestTypeDef](./type_defs.md#untagpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagPolicyRequestRequestTypeDef = {  # (1)
+    "PolicyArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_role"></a>
+parent.untag_policy(**kwargs)
+```
 
-### untag_role
+1. See [:material-code-braces: UntagPolicyRequestRequestTypeDef](./type_defs.md#untagpolicyrequestrequesttypedef) 
+
+### untag\_role
 
 Removes the specified tags from the role.
 
-Type annotations for `boto3.client("iam").untag_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
 
-Boto3 documentation:
-[IAM.Client.untag_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_role)
+```python title="Method definition"
+def untag_role(
+    self,
+    *,
+    RoleName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagRoleRequestRequestTypeDef](./type_defs.md#untagrolerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_saml\_provider"></a>
+parent.untag_role(**kwargs)
+```
 
-### untag_saml_provider
+1. See [:material-code-braces: UntagRoleRequestRequestTypeDef](./type_defs.md#untagrolerequestrequesttypedef) 
 
-Removes the specified tags from the specified Security Assertion Markup
-Language (SAML) identity provider in IAM.
+### untag\_saml\_provider
 
-Type annotations for `boto3.client("iam").untag_saml_provider` method.
+Removes the specified tags from the specified Security Assertion Markup Language
+(SAML) identity provider in IAM.
 
-Boto3 documentation:
-[IAM.Client.untag_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
+Type annotations and code completion for `#!python boto3.client("iam").untag_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_saml_provider)
 
-Arguments mapping described in
-[UntagSAMLProviderRequestRequestTypeDef](./type_defs.md#untagsamlproviderrequestrequesttypedef).
+```python title="Method definition"
+def untag_saml_provider(
+    self,
+    *,
+    SAMLProviderArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `SAMLProviderArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="untag\_server\_certificate"></a>
+```python title="Usage example with kwargs"
+kwargs: UntagSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLProviderArn": ...,
+    "TagKeys": ...,
+}
 
-### untag_server_certificate
+parent.untag_saml_provider(**kwargs)
+```
+
+1. See [:material-code-braces: UntagSAMLProviderRequestRequestTypeDef](./type_defs.md#untagsamlproviderrequestrequesttypedef) 
+
+### untag\_server\_certificate
 
 Removes the specified tags from the IAM server certificate.
 
-Type annotations for `boto3.client("iam").untag_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.untag_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_server_certificate)
+```python title="Method definition"
+def untag_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagServerCertificateRequestRequestTypeDef](./type_defs.md#untagservercertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+    "TagKeys": ...,
+}
 
-<a id="untag\_user"></a>
+parent.untag_server_certificate(**kwargs)
+```
 
-### untag_user
+1. See [:material-code-braces: UntagServerCertificateRequestRequestTypeDef](./type_defs.md#untagservercertificaterequestrequesttypedef) 
+
+### untag\_user
 
 Removes the specified tags from the user.
 
-Type annotations for `boto3.client("iam").untag_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").untag_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
 
-Boto3 documentation:
-[IAM.Client.untag_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.untag_user)
+```python title="Method definition"
+def untag_user(
+    self,
+    *,
+    UserName: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagUserRequestRequestTypeDef](./type_defs.md#untaguserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_access\_key"></a>
+parent.untag_user(**kwargs)
+```
 
-### update_access_key
+1. See [:material-code-braces: UntagUserRequestRequestTypeDef](./type_defs.md#untaguserrequestrequesttypedef) 
+
+### update\_access\_key
 
 Changes the status of the specified access key from Active to Inactive, or vice
 versa.
 
-Type annotations for `boto3.client("iam").update_access_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_access_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
 
-Boto3 documentation:
-[IAM.Client.update_access_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_access_key)
+```python title="Method definition"
+def update_access_key(
+    self,
+    *,
+    AccessKeyId: str,
+    Status: statusTypeType,  # (1)
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccessKeyRequestRequestTypeDef](./type_defs.md#updateaccesskeyrequestrequesttypedef).
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 
-Keyword-only arguments:
 
-- `AccessKeyId`: `str` *(required)*
-- `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccessKeyRequestRequestTypeDef = {  # (1)
+    "AccessKeyId": ...,
+    "Status": ...,
+}
 
-<a id="update\_account\_password\_policy"></a>
+parent.update_access_key(**kwargs)
+```
 
-### update_account_password_policy
+1. See [:material-code-braces: UpdateAccessKeyRequestRequestTypeDef](./type_defs.md#updateaccesskeyrequestrequesttypedef) 
+
+### update\_account\_password\_policy
 
 Updates the password policy settings for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").update_account_password_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").update_account_password_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
 
-Boto3 documentation:
-[IAM.Client.update_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_account_password_policy)
+```python title="Method definition"
+def update_account_password_policy(
+    self,
+    *,
+    MinimumPasswordLength: int = ...,
+    RequireSymbols: bool = ...,
+    RequireNumbers: bool = ...,
+    RequireUppercaseCharacters: bool = ...,
+    RequireLowercaseCharacters: bool = ...,
+    AllowUsersToChangePassword: bool = ...,
+    MaxPasswordAge: int = ...,
+    PasswordReusePrevention: int = ...,
+    HardExpiry: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountPasswordPolicyRequestRequestTypeDef](./type_defs.md#updateaccountpasswordpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountPasswordPolicyRequestRequestTypeDef = {  # (1)
+    "MinimumPasswordLength": ...,
+}
 
-<a id="update\_assume\_role\_policy"></a>
+parent.update_account_password_policy(**kwargs)
+```
 
-### update_assume_role_policy
+1. See [:material-code-braces: UpdateAccountPasswordPolicyRequestRequestTypeDef](./type_defs.md#updateaccountpasswordpolicyrequestrequesttypedef) 
+
+### update\_assume\_role\_policy
 
 Updates the policy that grants an IAM entity permission to assume a role.
 
-Type annotations for `boto3.client("iam").update_assume_role_policy` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_assume_role_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
 
-Boto3 documentation:
-[IAM.Client.update_assume_role_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_assume_role_policy)
+```python title="Method definition"
+def update_assume_role_policy(
+    self,
+    *,
+    RoleName: str,
+    PolicyDocument: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssumeRolePolicyRequestRequestTypeDef](./type_defs.md#updateassumerolepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAssumeRolePolicyRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "PolicyDocument": ...,
+}
 
-<a id="update\_group"></a>
+parent.update_assume_role_policy(**kwargs)
+```
 
-### update_group
+1. See [:material-code-braces: UpdateAssumeRolePolicyRequestRequestTypeDef](./type_defs.md#updateassumerolepolicyrequestrequesttypedef) 
+
+### update\_group
 
 Updates the name and/or the path of the specified IAM group.
 
-Type annotations for `boto3.client("iam").update_group` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
 
-Boto3 documentation:
-[IAM.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_group)
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    GroupName: str,
+    NewPath: str = ...,
+    NewGroupName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `NewPath`: `str`
-- `NewGroupName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-<a id="update\_login\_profile"></a>
+parent.update_group(**kwargs)
+```
 
-### update_login_profile
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
+
+### update\_login\_profile
 
 Changes the password for the specified IAM user.
 
-Type annotations for `boto3.client("iam").update_login_profile` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_login_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
 
-Boto3 documentation:
-[IAM.Client.update_login_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_login_profile)
+```python title="Method definition"
+def update_login_profile(
+    self,
+    *,
+    UserName: str,
+    Password: str = ...,
+    PasswordResetRequired: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLoginProfileRequestRequestTypeDef](./type_defs.md#updateloginprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Password`: `str`
-- `PasswordResetRequired`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateLoginProfileRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="update\_open\_id\_connect\_provider\_thumbprint"></a>
+parent.update_login_profile(**kwargs)
+```
 
-### update_open_id_connect_provider_thumbprint
+1. See [:material-code-braces: UpdateLoginProfileRequestRequestTypeDef](./type_defs.md#updateloginprofilerequestrequesttypedef) 
+
+### update\_open\_id\_connect\_provider\_thumbprint
 
 Replaces the existing list of server certificate thumbprints associated with an
 OpenID Connect (OIDC) provider resource object with a new list of thumbprints.
 
-Type annotations for
-`boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_open_id_connect_provider_thumbprint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
 
-Boto3 documentation:
-[IAM.Client.update_open_id_connect_provider_thumbprint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_open_id_connect_provider_thumbprint)
+```python title="Method definition"
+def update_open_id_connect_provider_thumbprint(
+    self,
+    *,
+    OpenIDConnectProviderArn: str,
+    ThumbprintList: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef](./type_defs.md#updateopenidconnectproviderthumbprintrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OpenIDConnectProviderArn`: `str` *(required)*
-- `ThumbprintList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef = {  # (1)
+    "OpenIDConnectProviderArn": ...,
+    "ThumbprintList": ...,
+}
 
-<a id="update\_role"></a>
+parent.update_open_id_connect_provider_thumbprint(**kwargs)
+```
 
-### update_role
+1. See [:material-code-braces: UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef](./type_defs.md#updateopenidconnectproviderthumbprintrequestrequesttypedef) 
+
+### update\_role
 
 Updates the description or maximum session duration setting of a role.
 
-Type annotations for `boto3.client("iam").update_role` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
 
-Boto3 documentation:
-[IAM.Client.update_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role)
+```python title="Method definition"
+def update_role(
+    self,
+    *,
+    RoleName: str,
+    Description: str = ...,
+    MaxSessionDuration: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoleRequestRequestTypeDef](./type_defs.md#updaterolerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateRoleRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_role(**kwargs)
+```
 
-<a id="update\_role\_description"></a>
+1. See [:material-code-braces: UpdateRoleRequestRequestTypeDef](./type_defs.md#updaterolerequestrequesttypedef) 
 
-### update_role_description
+### update\_role\_description
 
-Use UpdateRole instead.
+Use  UpdateRole instead.
 
-Type annotations for `boto3.client("iam").update_role_description` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_role_description` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
 
-Boto3 documentation:
-[IAM.Client.update_role_description](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_role_description)
+```python title="Method definition"
+def update_role_description(
+    self,
+    *,
+    RoleName: str,
+    Description: str,
+) -> UpdateRoleDescriptionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoleDescriptionRequestRequestTypeDef](./type_defs.md#updateroledescriptionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRoleDescriptionResponseTypeDef](./type_defs.md#updateroledescriptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleName`: `str` *(required)*
-- `Description`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRoleDescriptionRequestRequestTypeDef = {  # (1)
+    "RoleName": ...,
+    "Description": ...,
+}
 
-Returns
-[UpdateRoleDescriptionResponseTypeDef](./type_defs.md#updateroledescriptionresponsetypedef).
+parent.update_role_description(**kwargs)
+```
 
-<a id="update\_saml\_provider"></a>
+1. See [:material-code-braces: UpdateRoleDescriptionRequestRequestTypeDef](./type_defs.md#updateroledescriptionrequestrequesttypedef) 
 
-### update_saml_provider
+### update\_saml\_provider
 
 Updates the metadata document for an existing SAML provider resource object.
 
-Type annotations for `boto3.client("iam").update_saml_provider` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_saml_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
 
-Boto3 documentation:
-[IAM.Client.update_saml_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_saml_provider)
+```python title="Method definition"
+def update_saml_provider(
+    self,
+    *,
+    SAMLMetadataDocument: str,
+    SAMLProviderArn: str,
+) -> UpdateSAMLProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSAMLProviderRequestRequestTypeDef](./type_defs.md#updatesamlproviderrequestrequesttypedef).
+1. See [:material-code-braces: UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SAMLMetadataDocument`: `str` *(required)*
-- `SAMLProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSAMLProviderRequestRequestTypeDef = {  # (1)
+    "SAMLMetadataDocument": ...,
+    "SAMLProviderArn": ...,
+}
 
-Returns
-[UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
+parent.update_saml_provider(**kwargs)
+```
 
-<a id="update\_server\_certificate"></a>
+1. See [:material-code-braces: UpdateSAMLProviderRequestRequestTypeDef](./type_defs.md#updatesamlproviderrequestrequesttypedef) 
 
-### update_server_certificate
+### update\_server\_certificate
 
 Updates the name and/or the path of the specified server certificate stored in
 IAM.
 
-Type annotations for `boto3.client("iam").update_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.update_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_server_certificate)
+```python title="Method definition"
+def update_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+    NewPath: str = ...,
+    NewServerCertificateName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateServerCertificateRequestRequestTypeDef](./type_defs.md#updateservercertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
-- `NewPath`: `str`
-- `NewServerCertificateName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+}
 
-<a id="update\_service\_specific\_credential"></a>
+parent.update_server_certificate(**kwargs)
+```
 
-### update_service_specific_credential
+1. See [:material-code-braces: UpdateServerCertificateRequestRequestTypeDef](./type_defs.md#updateservercertificaterequestrequesttypedef) 
+
+### update\_service\_specific\_credential
 
 Sets the status of a service-specific credential to `Active` or `Inactive`.
 
-Type annotations for `boto3.client("iam").update_service_specific_credential`
-method.
+Type annotations and code completion for `#!python boto3.client("iam").update_service_specific_credential` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
 
-Boto3 documentation:
-[IAM.Client.update_service_specific_credential](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_service_specific_credential)
+```python title="Method definition"
+def update_service_specific_credential(
+    self,
+    *,
+    ServiceSpecificCredentialId: str,
+    Status: statusTypeType,  # (1)
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#updateservicespecificcredentialrequestrequesttypedef).
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 
-Keyword-only arguments:
 
-- `ServiceSpecificCredentialId`: `str` *(required)*
-- `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceSpecificCredentialRequestRequestTypeDef = {  # (1)
+    "ServiceSpecificCredentialId": ...,
+    "Status": ...,
+}
 
-<a id="update\_signing\_certificate"></a>
+parent.update_service_specific_credential(**kwargs)
+```
 
-### update_signing_certificate
+1. See [:material-code-braces: UpdateServiceSpecificCredentialRequestRequestTypeDef](./type_defs.md#updateservicespecificcredentialrequestrequesttypedef) 
+
+### update\_signing\_certificate
 
 Changes the status of the specified user signing certificate from active to
 disabled, or vice versa.
 
-Type annotations for `boto3.client("iam").update_signing_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_signing_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
 
-Boto3 documentation:
-[IAM.Client.update_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_signing_certificate)
+```python title="Method definition"
+def update_signing_certificate(
+    self,
+    *,
+    CertificateId: str,
+    Status: statusTypeType,  # (1)
+    UserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSigningCertificateRequestRequestTypeDef](./type_defs.md#updatesigningcertificaterequestrequesttypedef).
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 
-Keyword-only arguments:
 
-- `CertificateId`: `str` *(required)*
-- `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSigningCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateId": ...,
+    "Status": ...,
+}
 
-<a id="update\_ssh\_public\_key"></a>
+parent.update_signing_certificate(**kwargs)
+```
 
-### update_ssh_public_key
+1. See [:material-code-braces: UpdateSigningCertificateRequestRequestTypeDef](./type_defs.md#updatesigningcertificaterequestrequesttypedef) 
+
+### update\_ssh\_public\_key
 
 Sets the status of an IAM user's SSH public key to active or inactive.
 
-Type annotations for `boto3.client("iam").update_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
 
-Boto3 documentation:
-[IAM.Client.update_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_ssh_public_key)
+```python title="Method definition"
+def update_ssh_public_key(
+    self,
+    *,
+    UserName: str,
+    SSHPublicKeyId: str,
+    Status: statusTypeType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSSHPublicKeyRequestRequestTypeDef](./type_defs.md#updatesshpublickeyrequestrequesttypedef).
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SSHPublicKeyId`: `str` *(required)*
-- `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSSHPublicKeyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SSHPublicKeyId": ...,
+    "Status": ...,
+}
 
-<a id="update\_user"></a>
+parent.update_ssh_public_key(**kwargs)
+```
 
-### update_user
+1. See [:material-code-braces: UpdateSSHPublicKeyRequestRequestTypeDef](./type_defs.md#updatesshpublickeyrequestrequesttypedef) 
+
+### update\_user
 
 Updates the name and/or the path of the specified IAM user.
 
-Type annotations for `boto3.client("iam").update_user` method.
+Type annotations and code completion for `#!python boto3.client("iam").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
 
-Boto3 documentation:
-[IAM.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    UserName: str,
+    NewPath: str = ...,
+    NewUserName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `NewPath`: `str`
-- `NewUserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-<a id="upload\_server\_certificate"></a>
+parent.update_user(**kwargs)
+```
 
-### upload_server_certificate
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+### upload\_server\_certificate
 
 Uploads a server certificate entity for the Amazon Web Services account.
 
-Type annotations for `boto3.client("iam").upload_server_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").upload_server_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
 
-Boto3 documentation:
-[IAM.Client.upload_server_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_server_certificate)
+```python title="Method definition"
+def upload_server_certificate(
+    self,
+    *,
+    ServerCertificateName: str,
+    CertificateBody: str,
+    PrivateKey: str,
+    Path: str = ...,
+    CertificateChain: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> UploadServerCertificateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UploadServerCertificateRequestRequestTypeDef](./type_defs.md#uploadservercertificaterequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerCertificateName`: `str` *(required)*
-- `CertificateBody`: `str` *(required)*
-- `PrivateKey`: `str` *(required)*
-- `Path`: `str`
-- `CertificateChain`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UploadServerCertificateRequestRequestTypeDef = {  # (1)
+    "ServerCertificateName": ...,
+    "CertificateBody": ...,
+    "PrivateKey": ...,
+}
 
-Returns
-[UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef).
+parent.upload_server_certificate(**kwargs)
+```
 
-<a id="upload\_signing\_certificate"></a>
+1. See [:material-code-braces: UploadServerCertificateRequestRequestTypeDef](./type_defs.md#uploadservercertificaterequestrequesttypedef) 
 
-### upload_signing_certificate
+### upload\_signing\_certificate
 
 Uploads an X.509 signing certificate and associates it with the specified IAM
 user.
 
-Type annotations for `boto3.client("iam").upload_signing_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iam").upload_signing_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
 
-Boto3 documentation:
-[IAM.Client.upload_signing_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_signing_certificate)
+```python title="Method definition"
+def upload_signing_certificate(
+    self,
+    *,
+    CertificateBody: str,
+    UserName: str = ...,
+) -> UploadSigningCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UploadSigningCertificateRequestRequestTypeDef](./type_defs.md#uploadsigningcertificaterequestrequesttypedef).
+1. See [:material-code-braces: UploadSigningCertificateResponseTypeDef](./type_defs.md#uploadsigningcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateBody`: `str` *(required)*
-- `UserName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UploadSigningCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateBody": ...,
+}
 
-Returns
-[UploadSigningCertificateResponseTypeDef](./type_defs.md#uploadsigningcertificateresponsetypedef).
+parent.upload_signing_certificate(**kwargs)
+```
 
-<a id="upload\_ssh\_public\_key"></a>
+1. See [:material-code-braces: UploadSigningCertificateRequestRequestTypeDef](./type_defs.md#uploadsigningcertificaterequestrequesttypedef) 
 
-### upload_ssh_public_key
+### upload\_ssh\_public\_key
 
 Uploads an SSH public key and associates it with the specified IAM user.
 
-Type annotations for `boto3.client("iam").upload_ssh_public_key` method.
+Type annotations and code completion for `#!python boto3.client("iam").upload_ssh_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
 
-Boto3 documentation:
-[IAM.Client.upload_ssh_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.upload_ssh_public_key)
+```python title="Method definition"
+def upload_ssh_public_key(
+    self,
+    *,
+    UserName: str,
+    SSHPublicKeyBody: str,
+) -> UploadSSHPublicKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UploadSSHPublicKeyRequestRequestTypeDef](./type_defs.md#uploadsshpublickeyrequestrequesttypedef).
+1. See [:material-code-braces: UploadSSHPublicKeyResponseTypeDef](./type_defs.md#uploadsshpublickeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `SSHPublicKeyBody`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UploadSSHPublicKeyRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "SSHPublicKeyBody": ...,
+}
 
-Returns
-[UploadSSHPublicKeyResponseTypeDef](./type_defs.md#uploadsshpublickeyresponsetypedef).
+parent.upload_ssh_public_key(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UploadSSHPublicKeyRequestRequestTypeDef](./type_defs.md#uploadsshpublickeyrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iam").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("iam").get_paginator` method with overloads.
 
-- `client.get_paginator("get_account_authorization_details")` ->
-  [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
-- `client.get_paginator("get_group")` ->
-  [GetGroupPaginator](./paginators.md#getgrouppaginator)
-- `client.get_paginator("list_access_keys")` ->
-  [ListAccessKeysPaginator](./paginators.md#listaccesskeyspaginator)
-- `client.get_paginator("list_account_aliases")` ->
-  [ListAccountAliasesPaginator](./paginators.md#listaccountaliasespaginator)
-- `client.get_paginator("list_attached_group_policies")` ->
-  [ListAttachedGroupPoliciesPaginator](./paginators.md#listattachedgrouppoliciespaginator)
-- `client.get_paginator("list_attached_role_policies")` ->
-  [ListAttachedRolePoliciesPaginator](./paginators.md#listattachedrolepoliciespaginator)
-- `client.get_paginator("list_attached_user_policies")` ->
-  [ListAttachedUserPoliciesPaginator](./paginators.md#listattacheduserpoliciespaginator)
-- `client.get_paginator("list_entities_for_policy")` ->
-  [ListEntitiesForPolicyPaginator](./paginators.md#listentitiesforpolicypaginator)
-- `client.get_paginator("list_group_policies")` ->
-  [ListGroupPoliciesPaginator](./paginators.md#listgrouppoliciespaginator)
-- `client.get_paginator("list_groups")` ->
-  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_groups_for_user")` ->
-  [ListGroupsForUserPaginator](./paginators.md#listgroupsforuserpaginator)
-- `client.get_paginator("list_instance_profiles")` ->
-  [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
-- `client.get_paginator("list_instance_profiles_for_role")` ->
-  [ListInstanceProfilesForRolePaginator](./paginators.md#listinstanceprofilesforrolepaginator)
-- `client.get_paginator("list_mfa_devices")` ->
-  [ListMFADevicesPaginator](./paginators.md#listmfadevicespaginator)
-- `client.get_paginator("list_policies")` ->
-  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_policy_versions")` ->
-  [ListPolicyVersionsPaginator](./paginators.md#listpolicyversionspaginator)
-- `client.get_paginator("list_role_policies")` ->
-  [ListRolePoliciesPaginator](./paginators.md#listrolepoliciespaginator)
-- `client.get_paginator("list_roles")` ->
-  [ListRolesPaginator](./paginators.md#listrolespaginator)
-- `client.get_paginator("list_ssh_public_keys")` ->
-  [ListSSHPublicKeysPaginator](./paginators.md#listsshpublickeyspaginator)
-- `client.get_paginator("list_server_certificates")` ->
-  [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
-- `client.get_paginator("list_signing_certificates")` ->
-  [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
-- `client.get_paginator("list_user_policies")` ->
-  [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
-- `client.get_paginator("list_user_tags")` ->
-  [ListUserTagsPaginator](./paginators.md#listusertagspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
-- `client.get_paginator("list_virtual_mfa_devices")` ->
-  [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
-- `client.get_paginator("simulate_custom_policy")` ->
-  [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
-- `client.get_paginator("simulate_principal_policy")` ->
-  [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
+- `client.get_paginator("get_account_authorization_details")` -> [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
+- `client.get_paginator("get_group")` -> [GetGroupPaginator](./paginators.md#getgrouppaginator)
+- `client.get_paginator("list_access_keys")` -> [ListAccessKeysPaginator](./paginators.md#listaccesskeyspaginator)
+- `client.get_paginator("list_account_aliases")` -> [ListAccountAliasesPaginator](./paginators.md#listaccountaliasespaginator)
+- `client.get_paginator("list_attached_group_policies")` -> [ListAttachedGroupPoliciesPaginator](./paginators.md#listattachedgrouppoliciespaginator)
+- `client.get_paginator("list_attached_role_policies")` -> [ListAttachedRolePoliciesPaginator](./paginators.md#listattachedrolepoliciespaginator)
+- `client.get_paginator("list_attached_user_policies")` -> [ListAttachedUserPoliciesPaginator](./paginators.md#listattacheduserpoliciespaginator)
+- `client.get_paginator("list_entities_for_policy")` -> [ListEntitiesForPolicyPaginator](./paginators.md#listentitiesforpolicypaginator)
+- `client.get_paginator("list_group_policies")` -> [ListGroupPoliciesPaginator](./paginators.md#listgrouppoliciespaginator)
+- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_groups_for_user")` -> [ListGroupsForUserPaginator](./paginators.md#listgroupsforuserpaginator)
+- `client.get_paginator("list_instance_profiles")` -> [ListInstanceProfilesPaginator](./paginators.md#listinstanceprofilespaginator)
+- `client.get_paginator("list_instance_profiles_for_role")` -> [ListInstanceProfilesForRolePaginator](./paginators.md#listinstanceprofilesforrolepaginator)
+- `client.get_paginator("list_mfa_devices")` -> [ListMFADevicesPaginator](./paginators.md#listmfadevicespaginator)
+- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_policy_versions")` -> [ListPolicyVersionsPaginator](./paginators.md#listpolicyversionspaginator)
+- `client.get_paginator("list_role_policies")` -> [ListRolePoliciesPaginator](./paginators.md#listrolepoliciespaginator)
+- `client.get_paginator("list_roles")` -> [ListRolesPaginator](./paginators.md#listrolespaginator)
+- `client.get_paginator("list_ssh_public_keys")` -> [ListSSHPublicKeysPaginator](./paginators.md#listsshpublickeyspaginator)
+- `client.get_paginator("list_server_certificates")` -> [ListServerCertificatesPaginator](./paginators.md#listservercertificatespaginator)
+- `client.get_paginator("list_signing_certificates")` -> [ListSigningCertificatesPaginator](./paginators.md#listsigningcertificatespaginator)
+- `client.get_paginator("list_user_policies")` -> [ListUserPoliciesPaginator](./paginators.md#listuserpoliciespaginator)
+- `client.get_paginator("list_user_tags")` -> [ListUserTagsPaginator](./paginators.md#listusertagspaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_virtual_mfa_devices")` -> [ListVirtualMFADevicesPaginator](./paginators.md#listvirtualmfadevicespaginator)
+- `client.get_paginator("simulate_custom_policy")` -> [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
+- `client.get_paginator("simulate_principal_policy")` -> [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("iam").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("iam").get_waiter` method with overloads.
 
-- `client.get_waiter("instance_profile_exists")` ->
-  [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
-- `client.get_waiter("policy_exists")` ->
-  [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
-- `client.get_waiter("role_exists")` ->
-  [RoleExistsWaiter](./waiters.md#roleexistswaiter)
-- `client.get_waiter("user_exists")` ->
-  [UserExistsWaiter](./waiters.md#userexistswaiter)
+- `client.get_waiter("instance_profile_exists")` -> [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
+- `client.get_waiter("policy_exists")` -> [PolicyExistsWaiter](./waiters.md#policyexistswaiter)
+- `client.get_waiter("role_exists")` -> [RoleExistsWaiter](./waiters.md#roleexistswaiter)
+- `client.get_waiter("user_exists")` -> [UserExistsWaiter](./waiters.md#userexistswaiter)
+

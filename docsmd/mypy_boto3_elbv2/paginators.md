@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-elasticloadbalancingv2-module"></a>
-
-# Paginators for boto3 ElasticLoadBalancingv2 module
+# Paginators
 
 > [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module
-[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+!!! note ""
 
-- [Paginators for boto3 ElasticLoadBalancingv2 module](#paginators-for-boto3-elasticloadbalancingv2-module)
-  - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
-  - [DescribeListenerCertificatesPaginator](#describelistenercertificatespaginator)
-  - [DescribeListenersPaginator](#describelistenerspaginator)
-  - [DescribeLoadBalancersPaginator](#describeloadbalancerspaginator)
-  - [DescribeRulesPaginator](#describerulespaginator)
-  - [DescribeSSLPoliciesPaginator](#describesslpoliciespaginator)
-  - [DescribeTargetGroupsPaginator](#describetargetgroupspaginator)
-
-<a id="describeaccountlimitspaginator"></a>
+    Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+    type annotations stubs module [mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ## DescribeAccountLimitsPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_account_limits")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_account_limits")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeAccountLimitsPaginator
@@ -36,27 +21,39 @@ def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
     return Session().client("elbv2").get_paginator("describe_account_limits")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeAccountLimits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeAccountLimits)
 
-Arguments for `DescribeAccountLimitsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAccountLimitsPaginator.paginate` method.
 
-`DescribeAccountLimitsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeAccountLimitsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describelistenercertificatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAccountLimitsInputDescribeAccountLimitsPaginateTypeDef](./type_defs.md#describeaccountlimitsinputdescribeaccountlimitspaginatetypedef) 
 ## DescribeListenerCertificatesPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_listener_certificates")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_listener_certificates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeListenerCertificatesPaginator
@@ -65,28 +62,40 @@ def get_describe_listener_certificates_paginator() -> DescribeListenerCertificat
     return Session().client("elbv2").get_paginator("describe_listener_certificates")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListenerCertificates)
 
-Arguments for `DescribeListenerCertificatesPaginator.paginate` method:
+### paginate
 
-- `ListenerArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeListenerCertificatesPaginator.paginate` method.
 
-`DescribeListenerCertificatesPaginator.paginate` returns
-`_PageIterator`\[[DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ListenerArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeListenerCertificatesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describelistenerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeListenerCertificatesOutputTypeDef](./type_defs.md#describelistenercertificatesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeListenerCertificatesInputDescribeListenerCertificatesPaginateTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeListenerCertificatesInputDescribeListenerCertificatesPaginateTypeDef](./type_defs.md#describelistenercertificatesinputdescribelistenercertificatespaginatetypedef) 
 ## DescribeListenersPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_listeners")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_listeners")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeListenersPaginator
@@ -95,29 +104,41 @@ def get_describe_listeners_paginator() -> DescribeListenersPaginator:
     return Session().client("elbv2").get_paginator("describe_listeners")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeListeners)
 
-Arguments for `DescribeListenersPaginator.paginate` method:
+### paginate
 
-- `LoadBalancerArn`: `str`
-- `ListenerArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeListenersPaginator.paginate` method.
 
-`DescribeListenersPaginator.paginate` returns
-`_PageIterator`\[[DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LoadBalancerArn: str = ...,
+    ListenerArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeListenersOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeloadbalancerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeListenersOutputTypeDef](./type_defs.md#describelistenersoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeListenersInputDescribeListenersPaginateTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeListenersInputDescribeListenersPaginateTypeDef](./type_defs.md#describelistenersinputdescribelistenerspaginatetypedef) 
 ## DescribeLoadBalancersPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_load_balancers")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_load_balancers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeLoadBalancersPaginator
@@ -126,28 +147,41 @@ def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
     return Session().client("elbv2").get_paginator("describe_load_balancers")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeLoadBalancers)
 
-Arguments for `DescribeLoadBalancersPaginator.paginate` method:
+### paginate
 
-- `LoadBalancerArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLoadBalancersPaginator.paginate` method.
 
-`DescribeLoadBalancersPaginator.paginate` returns
-`_PageIterator`\[[DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LoadBalancerArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeLoadBalancersOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describerulespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeLoadBalancersOutputTypeDef](./type_defs.md#describeloadbalancersoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersInputDescribeLoadBalancersPaginateTypeDef = {  # (1)
+    "LoadBalancerArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLoadBalancersInputDescribeLoadBalancersPaginateTypeDef](./type_defs.md#describeloadbalancersinputdescribeloadbalancerspaginatetypedef) 
 ## DescribeRulesPaginator
 
-Type annotations for `boto3.client("elbv2").get_paginator("describe_rules")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_rules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeRulesPaginator
@@ -156,29 +190,41 @@ def get_describe_rules_paginator() -> DescribeRulesPaginator:
     return Session().client("elbv2").get_paginator("describe_rules")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeRules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeRules)
 
-Arguments for `DescribeRulesPaginator.paginate` method:
+### paginate
 
-- `ListenerArn`: `str`
-- `RuleArns`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRulesPaginator.paginate` method.
 
-`DescribeRulesPaginator.paginate` returns
-`_PageIterator`\[[DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ListenerArn: str = ...,
+    RuleArns: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeRulesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describesslpoliciespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeRulesOutputTypeDef](./type_defs.md#describerulesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRulesInputDescribeRulesPaginateTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRulesInputDescribeRulesPaginateTypeDef](./type_defs.md#describerulesinputdescriberulespaginatetypedef) 
 ## DescribeSSLPoliciesPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_ssl_policies")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_ssl_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeSSLPoliciesPaginator
@@ -187,30 +233,42 @@ def get_describe_ssl_policies_paginator() -> DescribeSSLPoliciesPaginator:
     return Session().client("elbv2").get_paginator("describe_ssl_policies")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeSSLPolicies)
 
-Arguments for `DescribeSSLPoliciesPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `LoadBalancerType`:
-  [LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSSLPoliciesPaginator.paginate` method.
 
-`DescribeSSLPoliciesPaginator.paginate` returns
-`_PageIterator`\[[DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    LoadBalancerType: LoadBalancerTypeEnumType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSSLPoliciesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="describetargetgroupspaginator"></a>
+1. See [:material-code-brackets: LoadBalancerTypeEnumType](./literals.md#loadbalancertypeenumtype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSSLPoliciesOutputTypeDef](./type_defs.md#describesslpoliciesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSSLPoliciesInputDescribeSSLPoliciesPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSSLPoliciesInputDescribeSSLPoliciesPaginateTypeDef](./type_defs.md#describesslpoliciesinputdescribesslpoliciespaginatetypedef) 
 ## DescribeTargetGroupsPaginator
 
-Type annotations for
-`boto3.client("elbv2").get_paginator("describe_target_groups")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_paginator("describe_target_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.paginator import DescribeTargetGroupsPaginator
@@ -219,16 +277,33 @@ def get_describe_target_groups_paginator() -> DescribeTargetGroupsPaginator:
     return Session().client("elbv2").get_paginator("describe_target_groups")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Paginator.DescribeTargetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Paginator.DescribeTargetGroups)
 
-Arguments for `DescribeTargetGroupsPaginator.paginate` method:
+### paginate
 
-- `LoadBalancerArn`: `str`
-- `TargetGroupArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTargetGroupsPaginator.paginate` method.
 
-`DescribeTargetGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    LoadBalancerArn: str = ...,
+    TargetGroupArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeTargetGroupsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeTargetGroupsOutputTypeDef](./type_defs.md#describetargetgroupsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetGroupsInputDescribeTargetGroupsPaginateTypeDef = {  # (1)
+    "LoadBalancerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTargetGroupsInputDescribeTargetGroupsPaginateTypeDef](./type_defs.md#describetargetgroupsinputdescribetargetgroupspaginatetypedef) 

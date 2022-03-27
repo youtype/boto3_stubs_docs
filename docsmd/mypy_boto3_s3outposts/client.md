@@ -1,36 +1,18 @@
-<a id="s3outpostsclient-for-boto3-s3outposts-module"></a>
-
-# S3OutpostsClient for boto3 S3Outposts module
+# S3OutpostsClient
 
 > [Index](../README.md) > [S3Outposts](./README.md) > S3OutpostsClient
 
-Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
-type annotations stubs module
-[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+!!! note ""
 
-- [S3OutpostsClient for boto3 S3Outposts module](#s3outpostsclient-for-boto3-s3outposts-module)
-  - [S3OutpostsClient](#s3outpostsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_endpoint](#create_endpoint)
-    - [delete_endpoint](#delete_endpoint)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_endpoints](#list_endpoints)
-    - [list_shared_endpoints](#list_shared_endpoints)
-    - [get_paginator](#get_paginator)
-
-<a id="s3outpostsclient"></a>
+    Auto-generated documentation for [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+    type annotations stubs module [mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 ## S3OutpostsClient
 
-Type annotations for `boto3.client("s3outposts")`
+Type annotations and code completion for `#!python boto3.client("s3outposts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 
@@ -38,185 +20,210 @@ def get_s3outposts_client() -> S3OutpostsClient:
     return Session().client("s3outposts")
 ```
 
-Boto3 documentation:
-[S3Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("s3outposts").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("s3outposts")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_s3outposts.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-S3OutpostsClient exceptions.
-
-Type annotations for `boto3.client("s3outposts").exceptions` method.
-
-Boto3 documentation:
-[S3Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("s3outposts").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.can_paginate)
 
-Boto3 documentation:
-[S3Outposts.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_endpoint"></a>
-
-### create_endpoint
+### create\_endpoint
 
 Creates an endpoint and associates it with the specified Outpost.
 
-Type annotations for `boto3.client("s3outposts").create_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").create_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
 
-Boto3 documentation:
-[S3Outposts.Client.create_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.create_endpoint)
+```python title="Method definition"
+def create_endpoint(
+    self,
+    *,
+    OutpostId: str,
+    SubnetId: str,
+    SecurityGroupId: str,
+    AccessType: EndpointAccessTypeType = ...,  # (1)
+    CustomerOwnedIpv4Pool: str = ...,
+) -> CreateEndpointResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef).
+1. See [:material-code-brackets: EndpointAccessTypeType](./literals.md#endpointaccesstypetype) 
+2. See [:material-code-braces: CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef) 
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
-- `SubnetId`: `str` *(required)*
-- `SecurityGroupId`: `str` *(required)*
-- `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
-- `CustomerOwnedIpv4Pool`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEndpointRequestRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+    "SubnetId": ...,
+    "SecurityGroupId": ...,
+}
 
-Returns
-[CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
+parent.create_endpoint(**kwargs)
+```
 
-<a id="delete\_endpoint"></a>
+1. See [:material-code-braces: CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef) 
 
-### delete_endpoint
+### delete\_endpoint
 
 Deletes an endpoint.
 
-Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").delete_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
 
-Boto3 documentation:
-[S3Outposts.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.delete_endpoint)
+```python title="Method definition"
+def delete_endpoint(
+    self,
+    *,
+    EndpointId: str,
+    OutpostId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointId`: `str` *(required)*
-- `OutpostId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointRequestRequestTypeDef = {  # (1)
+    "EndpointId": ...,
+    "OutpostId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_endpoint(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("s3outposts").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url)
 
-Boto3 documentation:
-[S3Outposts.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_endpoints"></a>
-
-### list_endpoints
+### list\_endpoints
 
 Lists endpoints associated with the specified Outpost.
 
-Type annotations for `boto3.client("s3outposts").list_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").list_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
 
-Boto3 documentation:
-[S3Outposts.Client.list_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_endpoints)
+```python title="Method definition"
+def list_endpoints(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEndpointsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef).
+1. See [:material-code-braces: ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef).
+parent.list_endpoints(**kwargs)
+```
 
-<a id="list\_shared\_endpoints"></a>
+1. See [:material-code-braces: ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef) 
 
-### list_shared_endpoints
+### list\_shared\_endpoints
 
 Lists all endpoints associated with an Outpost that has been shared by Amazon
 Web Services Resource Access Manager (RAM).
 
-Type annotations for `boto3.client("s3outposts").list_shared_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("s3outposts").list_shared_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_shared_endpoints)
 
-Boto3 documentation:
-[S3Outposts.Client.list_shared_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_shared_endpoints)
+```python title="Method definition"
+def list_shared_endpoints(
+    self,
+    *,
+    OutpostId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSharedEndpointsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef).
+1. See [:material-code-braces: ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef) 
 
-Keyword-only arguments:
 
-- `OutpostId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSharedEndpointsRequestRequestTypeDef = {  # (1)
+    "OutpostId": ...,
+}
 
-Returns
-[ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef).
+parent.list_shared_endpoints(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("s3outposts").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("s3outposts").get_paginator` method with overloads.
 
-- `client.get_paginator("list_endpoints")` ->
-  [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
-- `client.get_paginator("list_shared_endpoints")` ->
-  [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
+- `client.get_paginator("list_endpoints")` -> [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- `client.get_paginator("list_shared_endpoints")` -> [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
+
+
+

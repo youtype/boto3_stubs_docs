@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-globalaccelerator-module"></a>
-
-# Type annotations for boto3 GlobalAccelerator module
+#  GlobalAccelerator module
 
 > [Index](../README.md) > GlobalAccelerator
 
-Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module
-[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+!!! note ""
 
-- [Type annotations for boto3 GlobalAccelerator module](#type-annotations-for-boto3-globalaccelerator-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GlobalAcceleratorClient](#globalacceleratorclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+    type annotations stubs module [mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `GlobalAccelerator`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[globalaccelerator]'
 python -m pip install mypy-boto3-globalaccelerator
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,118 +42,37 @@ python -m pip install mypy-boto3-globalaccelerator
 python -m pip uninstall -y mypy-boto3-globalaccelerator
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="globalacceleratorclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GlobalAcceleratorClient
 
-Type annotations for `boto3.client("globalaccelerator")` as
-[GlobalAcceleratorClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("globalaccelerator")` as [GlobalAcceleratorClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
+
+def get_client() -> GlobalAcceleratorClient:
+    return Session().cleint("globalaccelerator")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_custom_routing_endpoints](./client.md#add_custom_routing_endpoints)
-- [advertise_byoip_cidr](./client.md#advertise_byoip_cidr)
-- [allow_custom_routing_traffic](./client.md#allow_custom_routing_traffic)
-- [can_paginate](./client.md#can_paginate)
-- [create_accelerator](./client.md#create_accelerator)
-- [create_custom_routing_accelerator](./client.md#create_custom_routing_accelerator)
-- [create_custom_routing_endpoint_group](./client.md#create_custom_routing_endpoint_group)
-- [create_custom_routing_listener](./client.md#create_custom_routing_listener)
-- [create_endpoint_group](./client.md#create_endpoint_group)
-- [create_listener](./client.md#create_listener)
-- [delete_accelerator](./client.md#delete_accelerator)
-- [delete_custom_routing_accelerator](./client.md#delete_custom_routing_accelerator)
-- [delete_custom_routing_endpoint_group](./client.md#delete_custom_routing_endpoint_group)
-- [delete_custom_routing_listener](./client.md#delete_custom_routing_listener)
-- [delete_endpoint_group](./client.md#delete_endpoint_group)
-- [delete_listener](./client.md#delete_listener)
-- [deny_custom_routing_traffic](./client.md#deny_custom_routing_traffic)
-- [deprovision_byoip_cidr](./client.md#deprovision_byoip_cidr)
-- [describe_accelerator](./client.md#describe_accelerator)
-- [describe_accelerator_attributes](./client.md#describe_accelerator_attributes)
-- [describe_custom_routing_accelerator](./client.md#describe_custom_routing_accelerator)
-- [describe_custom_routing_accelerator_attributes](./client.md#describe_custom_routing_accelerator_attributes)
-- [describe_custom_routing_endpoint_group](./client.md#describe_custom_routing_endpoint_group)
-- [describe_custom_routing_listener](./client.md#describe_custom_routing_listener)
-- [describe_endpoint_group](./client.md#describe_endpoint_group)
-- [describe_listener](./client.md#describe_listener)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_accelerators](./client.md#list_accelerators)
-- [list_byoip_cidrs](./client.md#list_byoip_cidrs)
-- [list_custom_routing_accelerators](./client.md#list_custom_routing_accelerators)
-- [list_custom_routing_endpoint_groups](./client.md#list_custom_routing_endpoint_groups)
-- [list_custom_routing_listeners](./client.md#list_custom_routing_listeners)
-- [list_custom_routing_port_mappings](./client.md#list_custom_routing_port_mappings)
-- [list_custom_routing_port_mappings_by_destination](./client.md#list_custom_routing_port_mappings_by_destination)
-- [list_endpoint_groups](./client.md#list_endpoint_groups)
-- [list_listeners](./client.md#list_listeners)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [provision_byoip_cidr](./client.md#provision_byoip_cidr)
-- [remove_custom_routing_endpoints](./client.md#remove_custom_routing_endpoints)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_accelerator](./client.md#update_accelerator)
-- [update_accelerator_attributes](./client.md#update_accelerator_attributes)
-- [update_custom_routing_accelerator](./client.md#update_custom_routing_accelerator)
-- [update_custom_routing_accelerator_attributes](./client.md#update_custom_routing_accelerator_attributes)
-- [update_custom_routing_listener](./client.md#update_custom_routing_listener)
-- [update_endpoint_group](./client.md#update_endpoint_group)
-- [update_listener](./client.md#update_listener)
-- [withdraw_byoip_cidr](./client.md#withdraw_byoip_cidr)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-GlobalAcceleratorClient [exceptions](./client.md#exceptions)
-
-- AcceleratorNotDisabledException
-- AcceleratorNotFoundException
-- AccessDeniedException
-- AssociatedEndpointGroupFoundException
-- AssociatedListenerFoundException
-- ByoipCidrNotFoundException
-- ClientError
-- ConflictException
-- EndpointAlreadyExistsException
-- EndpointGroupAlreadyExistsException
-- EndpointGroupNotFoundException
-- EndpointNotFoundException
-- IncorrectCidrStateException
-- InternalServiceErrorException
-- InvalidArgumentException
-- InvalidNextTokenException
-- InvalidPortRangeException
-- LimitExceededException
-- ListenerNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("globalaccelerator").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("globalaccelerator").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator, ...
+from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator
+
+def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
+    return Session().client("globalaccelerator").get_paginator("list_accelerators"))
 ```
 
 - [ListAcceleratorsPaginator](./paginators.md#listacceleratorspaginator)
@@ -187,16 +84,23 @@ from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator, ..
 - [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
 - [ListListenersPaginator](./paginators.md#listlistenerspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType
 
-```python
-from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType, ...
+def get_value() -> AcceleratorStatusType:
+    return "DEPLOYED"
 ```
 
 - [AcceleratorStatusType](./literals.md#acceleratorstatustype)
@@ -222,17 +126,20 @@ from mypy_boto3_globalaccelerator.literals import AcceleratorStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef
 
-```python
-from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef, ...
+def get_value() -> AcceleratorAttributesTypeDef:
+    return {
+        "FlowLogsEnabled": ...,
+    }
 ```
 
 - [AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef)
@@ -295,22 +202,30 @@ from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef,
 - [EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef)
 - [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
 - [IpSetTypeDef](./type_defs.md#ipsettypedef)
+- [ListAcceleratorsRequestListAcceleratorsPaginateTypeDef](./type_defs.md#listacceleratorsrequestlistacceleratorspaginatetypedef)
 - [ListAcceleratorsRequestRequestTypeDef](./type_defs.md#listacceleratorsrequestrequesttypedef)
 - [ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef)
+- [ListByoipCidrsRequestListByoipCidrsPaginateTypeDef](./type_defs.md#listbyoipcidrsrequestlistbyoipcidrspaginatetypedef)
 - [ListByoipCidrsRequestRequestTypeDef](./type_defs.md#listbyoipcidrsrequestrequesttypedef)
 - [ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef)
+- [ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestlistcustomroutingacceleratorspaginatetypedef)
 - [ListCustomRoutingAcceleratorsRequestRequestTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestrequesttypedef)
 - [ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef)
 - [ListCustomRoutingEndpointGroupsRequestRequestTypeDef](./type_defs.md#listcustomroutingendpointgroupsrequestrequesttypedef)
 - [ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef)
+- [ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef](./type_defs.md#listcustomroutinglistenersrequestlistcustomroutinglistenerspaginatetypedef)
 - [ListCustomRoutingListenersRequestRequestTypeDef](./type_defs.md#listcustomroutinglistenersrequestrequesttypedef)
 - [ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef)
+- [ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestlistcustomroutingportmappingsbydestinationpaginatetypedef)
 - [ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestrequesttypedef)
 - [ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef)
+- [ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef](./type_defs.md#listcustomroutingportmappingsrequestlistcustomroutingportmappingspaginatetypedef)
 - [ListCustomRoutingPortMappingsRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsrequestrequesttypedef)
 - [ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef)
+- [ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef](./type_defs.md#listendpointgroupsrequestlistendpointgroupspaginatetypedef)
 - [ListEndpointGroupsRequestRequestTypeDef](./type_defs.md#listendpointgroupsrequestrequesttypedef)
 - [ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef)
+- [ListListenersRequestListListenersPaginateTypeDef](./type_defs.md#listlistenersrequestlistlistenerspaginatetypedef)
 - [ListListenersRequestRequestTypeDef](./type_defs.md#listlistenersrequestrequesttypedef)
 - [ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -344,3 +259,4 @@ from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef,
 - [UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef)
 - [WithdrawByoipCidrRequestRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequestrequesttypedef)
 - [WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef)
+

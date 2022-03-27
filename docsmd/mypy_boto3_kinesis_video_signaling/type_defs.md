@@ -1,111 +1,131 @@
-<a id="typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 KinesisVideoSignalingChannels module
+> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [KinesisVideoSignalingChannels](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
-type annotations stubs module
-[mypy-boto3-kinesis-video-signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
-
-- [Typed dictionaries for boto3 KinesisVideoSignalingChannels module](#typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module)
-  - [GetIceServerConfigRequestRequestTypeDef](#geticeserverconfigrequestrequesttypedef)
-  - [GetIceServerConfigResponseTypeDef](#geticeserverconfigresponsetypedef)
-  - [IceServerTypeDef](#iceservertypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendAlexaOfferToMasterRequestRequestTypeDef](#sendalexaoffertomasterrequestrequesttypedef)
-  - [SendAlexaOfferToMasterResponseTypeDef](#sendalexaoffertomasterresponsetypedef)
-
-<a id="geticeserverconfigrequestrequesttypedef"></a>
+    Auto-generated documentation for [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
+    type annotations stubs module [mypy-boto3-kinesis-video-signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 ## GetIceServerConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigRequestRequestTypeDef
+
+def get_value() -> GetIceServerConfigRequestRequestTypeDef:
+    return {
+        "ChannelARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIceServerConfigRequestRequestTypeDef(TypedDict):
+    ChannelARN: str,
+    ClientId: NotRequired[str],
+    Service: NotRequired[ServiceType],  # (1)
+    Username: NotRequired[str],
+```
 
-- `ChannelARN`: `str`
-
-Optional fields:
-
-- `ClientId`: `str`
-- `Service`: `Literal['TURN']` (see [ServiceType](./literals.md#servicetype))
-- `Username`: `str`
-
-<a id="geticeserverconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
 ## GetIceServerConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import GetIceServerConfigResponseTypeDef
+
+def get_value() -> GetIceServerConfigResponseTypeDef:
+    return {
+        "IceServerList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetIceServerConfigResponseTypeDef(TypedDict):
+    IceServerList: List[IceServerTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IceServerList`:
-  `List`\[[IceServerTypeDef](./type_defs.md#iceservertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="iceservertypedef"></a>
-
+1. See [:material-code-braces: IceServerTypeDef](./type_defs.md#iceservertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IceServerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import IceServerTypeDef
+
+def get_value() -> IceServerTypeDef:
+    return {
+        "Uris": ...,
+    }
 ```
 
-Optional fields:
-
-- `Uris`: `List`\[`str`\]
-- `Username`: `str`
-- `Password`: `str`
-- `Ttl`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class IceServerTypeDef(TypedDict):
+    Uris: NotRequired[List[str]],
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+    Ttl: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendalexaoffertomasterrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendAlexaOfferToMasterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterRequestRequestTypeDef
+
+def get_value() -> SendAlexaOfferToMasterRequestRequestTypeDef:
+    return {
+        "ChannelARN": ...,
+        "SenderClientId": ...,
+        "MessagePayload": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelARN`: `str`
-- `SenderClientId`: `str`
-- `MessagePayload`: `str`
-
-<a id="sendalexaoffertomasterresponsetypedef"></a>
+```python title="Definition"
+class SendAlexaOfferToMasterRequestRequestTypeDef(TypedDict):
+    ChannelARN: str,
+    SenderClientId: str,
+    MessagePayload: str,
+```
 
 ## SendAlexaOfferToMasterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_signaling.type_defs import SendAlexaOfferToMasterResponseTypeDef
+
+def get_value() -> SendAlexaOfferToMasterResponseTypeDef:
+    return {
+        "Answer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendAlexaOfferToMasterResponseTypeDef(TypedDict):
+    Answer: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Answer`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

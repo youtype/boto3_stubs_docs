@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-mediastoredata-module"></a>
-
-# Paginators for boto3 MediaStoreData module
+# Paginators
 
 > [Index](../README.md) > [MediaStoreData](./README.md) > Paginators
 
-Auto-generated documentation for
-[MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
-type annotations stubs module
-[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+!!! note ""
 
-- [Paginators for boto3 MediaStoreData module](#paginators-for-boto3-mediastoredata-module)
-  - [ListItemsPaginator](#listitemspaginator)
-
-<a id="listitemspaginator"></a>
+    Auto-generated documentation for [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
+    type annotations stubs module [mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 ## ListItemsPaginator
 
-Type annotations for
-`boto3.client("mediastore-data").get_paginator("list_items")`.
+Type annotations and code completion for `#!python boto3.client("mediastore-data").get_paginator("list_items")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediastore_data.paginator import ListItemsPaginator
@@ -30,14 +21,31 @@ def get_list_items_paginator() -> ListItemsPaginator:
     return Session().client("mediastore-data").get_paginator("list_items")
 ```
 
-Boto3 documentation:
-[MediaStoreData.Paginator.ListItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Paginator.ListItems)
 
-Arguments for `ListItemsPaginator.paginate` method:
+### paginate
 
-- `Path`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListItemsPaginator.paginate` method.
 
-`ListItemsPaginator.paginate` returns
-`_PageIterator`\[[ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Path: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListItemsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListItemsRequestListItemsPaginateTypeDef = {  # (1)
+    "Path": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListItemsRequestListItemsPaginateTypeDef](./type_defs.md#listitemsrequestlistitemspaginatetypedef) 

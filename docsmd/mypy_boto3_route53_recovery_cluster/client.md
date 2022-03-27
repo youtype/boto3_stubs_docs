@@ -1,35 +1,18 @@
-<a id="route53recoveryclusterclient-for-boto3-route53recoverycluster-module"></a>
+# Route53RecoveryClusterClient
 
-# Route53RecoveryClusterClient for boto3 Route53RecoveryCluster module
+> [Index](../README.md) > [Route53RecoveryCluster](./README.md) > Route53RecoveryClusterClient
 
-> [Index](../README.md) > [Route53RecoveryCluster](./README.md) >
-> Route53RecoveryClusterClient
+!!! note ""
 
-Auto-generated documentation for
-[Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
-type annotations stubs module
-[mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
-
-- [Route53RecoveryClusterClient for boto3 Route53RecoveryCluster module](#route53recoveryclusterclient-for-boto3-route53recoverycluster-module)
-  - [Route53RecoveryClusterClient](#route53recoveryclusterclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_routing_control_state](#get_routing_control_state)
-    - [update_routing_control_state](#update_routing_control_state)
-    - [update_routing_control_states](#update_routing_control_states)
-
-<a id="route53recoveryclusterclient"></a>
+    Auto-generated documentation for [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
+    type annotations stubs module [mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 ## Route53RecoveryClusterClient
 
-Type annotations for `boto3.client("route53-recovery-cluster")`
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
 
@@ -37,158 +20,167 @@ def get_route53-recovery-cluster_client() -> Route53RecoveryClusterClient:
     return Session().client("route53-recovery-cluster")
 ```
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("route53-recovery-cluster").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("route53-recovery-cluster")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.EndpointTemporarilyUnavailableException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_route53_recovery_cluster.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.EndpointTemporarilyUnavailableException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Route53RecoveryClusterClient exceptions.
-
-Type annotations for `boto3.client("route53-recovery-cluster").exceptions`
-method.
-
-Boto3 documentation:
-[Route53RecoveryCluster.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("route53-recovery-cluster").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.can_paginate)
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("route53-recovery-cluster").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_routing\_control\_state"></a>
-
-### get_routing_control_state
+### get\_routing\_control\_state
 
 Get the state for a routing control.
 
-Type annotations for
-`boto3.client("route53-recovery-cluster").get_routing_control_state` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster").get_routing_control_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.get_routing_control_state)
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client.get_routing_control_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.get_routing_control_state)
+```python title="Method definition"
+def get_routing_control_state(
+    self,
+    *,
+    RoutingControlArn: str,
+) -> GetRoutingControlStateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRoutingControlStateRequestRequestTypeDef](./type_defs.md#getroutingcontrolstaterequestrequesttypedef).
+1. See [:material-code-braces: GetRoutingControlStateResponseTypeDef](./type_defs.md#getroutingcontrolstateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoutingControlArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRoutingControlStateRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+}
 
-Returns
-[GetRoutingControlStateResponseTypeDef](./type_defs.md#getroutingcontrolstateresponsetypedef).
+parent.get_routing_control_state(**kwargs)
+```
 
-<a id="update\_routing\_control\_state"></a>
+1. See [:material-code-braces: GetRoutingControlStateRequestRequestTypeDef](./type_defs.md#getroutingcontrolstaterequestrequesttypedef) 
 
-### update_routing_control_state
+### update\_routing\_control\_state
 
 Set the state of the routing control to reroute traffic.
 
-Type annotations for
-`boto3.client("route53-recovery-cluster").update_routing_control_state` method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster").update_routing_control_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.update_routing_control_state)
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client.update_routing_control_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.update_routing_control_state)
+```python title="Method definition"
+def update_routing_control_state(
+    self,
+    *,
+    RoutingControlArn: str,
+    RoutingControlState: RoutingControlStateType,  # (1)
+    SafetyRulesToOverride: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingControlStateRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstaterequestrequesttypedef).
+1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
 
-Keyword-only arguments:
 
-- `RoutingControlArn`: `str` *(required)*
-- `RoutingControlState`:
-  [RoutingControlStateType](./literals.md#routingcontrolstatetype) *(required)*
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingControlStateRequestRequestTypeDef = {  # (1)
+    "RoutingControlArn": ...,
+    "RoutingControlState": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_routing_control_state(**kwargs)
+```
 
-<a id="update\_routing\_control\_states"></a>
+1. See [:material-code-braces: UpdateRoutingControlStateRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstaterequestrequesttypedef) 
 
-### update_routing_control_states
+### update\_routing\_control\_states
 
 Set multiple routing control states.
 
-Type annotations for
-`boto3.client("route53-recovery-cluster").update_routing_control_states`
-method.
+Type annotations and code completion for `#!python boto3.client("route53-recovery-cluster").update_routing_control_states` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.update_routing_control_states)
 
-Boto3 documentation:
-[Route53RecoveryCluster.Client.update_routing_control_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client.update_routing_control_states)
+```python title="Method definition"
+def update_routing_control_states(
+    self,
+    *,
+    UpdateRoutingControlStateEntries: Sequence[UpdateRoutingControlStateEntryTypeDef],  # (1)
+    SafetyRulesToOverride: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoutingControlStatesRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstatesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef) 
 
-Keyword-only arguments:
 
-- `UpdateRoutingControlStateEntries`:
-  `Sequence`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]
-  *(required)*
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRoutingControlStatesRequestRequestTypeDef = {  # (1)
+    "UpdateRoutingControlStateEntries": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_routing_control_states(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRoutingControlStatesRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstatesrequestrequesttypedef) 
+
+
+
+

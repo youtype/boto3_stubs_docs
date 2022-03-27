@@ -1,92 +1,18 @@
-<a id="auditmanagerclient-for-boto3-auditmanager-module"></a>
-
-# AuditManagerClient for boto3 AuditManager module
+# AuditManagerClient
 
 > [Index](../README.md) > [AuditManager](./README.md) > AuditManagerClient
 
-Auto-generated documentation for
-[AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
-type annotations stubs module
-[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+!!! note ""
 
-- [AuditManagerClient for boto3 AuditManager module](#auditmanagerclient-for-boto3-auditmanager-module)
-  - [AuditManagerClient](#auditmanagerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_assessment_report_evidence_folder](#associate_assessment_report_evidence_folder)
-    - [batch_associate_assessment_report_evidence](#batch_associate_assessment_report_evidence)
-    - [batch_create_delegation_by_assessment](#batch_create_delegation_by_assessment)
-    - [batch_delete_delegation_by_assessment](#batch_delete_delegation_by_assessment)
-    - [batch_disassociate_assessment_report_evidence](#batch_disassociate_assessment_report_evidence)
-    - [batch_import_evidence_to_assessment_control](#batch_import_evidence_to_assessment_control)
-    - [can_paginate](#can_paginate)
-    - [create_assessment](#create_assessment)
-    - [create_assessment_framework](#create_assessment_framework)
-    - [create_assessment_report](#create_assessment_report)
-    - [create_control](#create_control)
-    - [delete_assessment](#delete_assessment)
-    - [delete_assessment_framework](#delete_assessment_framework)
-    - [delete_assessment_framework_share](#delete_assessment_framework_share)
-    - [delete_assessment_report](#delete_assessment_report)
-    - [delete_control](#delete_control)
-    - [deregister_account](#deregister_account)
-    - [deregister_organization_admin_account](#deregister_organization_admin_account)
-    - [disassociate_assessment_report_evidence_folder](#disassociate_assessment_report_evidence_folder)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_status](#get_account_status)
-    - [get_assessment](#get_assessment)
-    - [get_assessment_framework](#get_assessment_framework)
-    - [get_assessment_report_url](#get_assessment_report_url)
-    - [get_change_logs](#get_change_logs)
-    - [get_control](#get_control)
-    - [get_delegations](#get_delegations)
-    - [get_evidence](#get_evidence)
-    - [get_evidence_by_evidence_folder](#get_evidence_by_evidence_folder)
-    - [get_evidence_folder](#get_evidence_folder)
-    - [get_evidence_folders_by_assessment](#get_evidence_folders_by_assessment)
-    - [get_evidence_folders_by_assessment_control](#get_evidence_folders_by_assessment_control)
-    - [get_insights](#get_insights)
-    - [get_insights_by_assessment](#get_insights_by_assessment)
-    - [get_organization_admin_account](#get_organization_admin_account)
-    - [get_services_in_scope](#get_services_in_scope)
-    - [get_settings](#get_settings)
-    - [list_assessment_control_insights_by_control_domain](#list_assessment_control_insights_by_control_domain)
-    - [list_assessment_framework_share_requests](#list_assessment_framework_share_requests)
-    - [list_assessment_frameworks](#list_assessment_frameworks)
-    - [list_assessment_reports](#list_assessment_reports)
-    - [list_assessments](#list_assessments)
-    - [list_control_domain_insights](#list_control_domain_insights)
-    - [list_control_domain_insights_by_assessment](#list_control_domain_insights_by_assessment)
-    - [list_control_insights_by_control_domain](#list_control_insights_by_control_domain)
-    - [list_controls](#list_controls)
-    - [list_keywords_for_data_source](#list_keywords_for_data_source)
-    - [list_notifications](#list_notifications)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_account](#register_account)
-    - [register_organization_admin_account](#register_organization_admin_account)
-    - [start_assessment_framework_share](#start_assessment_framework_share)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_assessment](#update_assessment)
-    - [update_assessment_control](#update_assessment_control)
-    - [update_assessment_control_set_status](#update_assessment_control_set_status)
-    - [update_assessment_framework](#update_assessment_framework)
-    - [update_assessment_framework_share](#update_assessment_framework_share)
-    - [update_assessment_status](#update_assessment_status)
-    - [update_control](#update_control)
-    - [update_settings](#update_settings)
-    - [validate_assessment_report_integrity](#validate_assessment_report_integrity)
-
-<a id="auditmanagerclient"></a>
+    Auto-generated documentation for [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
+    type annotations stubs module [mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 ## AuditManagerClient
 
-Type annotations for `boto3.client("auditmanager")`
+Type annotations and code completion for `#!python boto3.client("auditmanager")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_auditmanager.client import AuditManagerClient
 
@@ -94,1509 +20,1962 @@ def get_auditmanager_client() -> AuditManagerClient:
     return Session().client("auditmanager")
 ```
 
-Boto3 documentation:
-[AuditManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("auditmanager").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("auditmanager")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_auditmanager.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AuditManagerClient exceptions.
-
-Type annotations for `boto3.client("auditmanager").exceptions` method.
-
-Boto3 documentation:
-[AuditManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_assessment\_report\_evidence\_folder"></a>
-
-### associate_assessment_report_evidence_folder
+### associate\_assessment\_report\_evidence\_folder
 
 Associates an evidence folder to an assessment report in a Audit Manager
 assessment.
 
-Type annotations for
-`boto3.client("auditmanager").associate_assessment_report_evidence_folder`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").associate_assessment_report_evidence_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
 
-Boto3 documentation:
-[AuditManager.Client.associate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.associate_assessment_report_evidence_folder)
+```python title="Method definition"
+def associate_assessment_report_evidence_folder(
+    self,
+    *,
+    assessmentId: str,
+    evidenceFolderId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef](./type_defs.md#associateassessmentreportevidencefolderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "evidenceFolderId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_assessment_report_evidence_folder(**kwargs)
+```
 
-<a id="batch\_associate\_assessment\_report\_evidence"></a>
+1. See [:material-code-braces: AssociateAssessmentReportEvidenceFolderRequestRequestTypeDef](./type_defs.md#associateassessmentreportevidencefolderrequestrequesttypedef) 
 
-### batch_associate_assessment_report_evidence
+### batch\_associate\_assessment\_report\_evidence
 
 Associates a list of evidence to an assessment report in an Audit Manager
 assessment.
 
-Type annotations for
-`boto3.client("auditmanager").batch_associate_assessment_report_evidence`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").batch_associate_assessment_report_evidence` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
 
-Boto3 documentation:
-[AuditManager.Client.batch_associate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_associate_assessment_report_evidence)
+```python title="Method definition"
+def batch_associate_assessment_report_evidence(
+    self,
+    *,
+    assessmentId: str,
+    evidenceFolderId: str,
+    evidenceIds: Sequence[str],
+) -> BatchAssociateAssessmentReportEvidenceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef](./type_defs.md#batchassociateassessmentreportevidencerequestrequesttypedef).
+1. See [:material-code-braces: BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "evidenceFolderId": ...,
+    "evidenceIds": ...,
+}
 
-Returns
-[BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
+parent.batch_associate_assessment_report_evidence(**kwargs)
+```
 
-<a id="batch\_create\_delegation\_by\_assessment"></a>
+1. See [:material-code-braces: BatchAssociateAssessmentReportEvidenceRequestRequestTypeDef](./type_defs.md#batchassociateassessmentreportevidencerequestrequesttypedef) 
 
-### batch_create_delegation_by_assessment
+### batch\_create\_delegation\_by\_assessment
 
 Creates a batch of delegations for an assessment in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").batch_create_delegation_by_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.batch_create_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_create_delegation_by_assessment)
+```python title="Method definition"
+def batch_create_delegation_by_assessment(
+    self,
+    *,
+    createDelegationRequests: Sequence[CreateDelegationRequestTypeDef],  # (1)
+    assessmentId: str,
+) -> BatchCreateDelegationByAssessmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchCreateDelegationByAssessmentRequestRequestTypeDef](./type_defs.md#batchcreatedelegationbyassessmentrequestrequesttypedef).
+1. See [:material-code-braces: CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef) 
+2. See [:material-code-braces: BatchCreateDelegationByAssessmentResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `createDelegationRequests`:
-  `Sequence`\[[CreateDelegationRequestTypeDef](./type_defs.md#createdelegationrequesttypedef)\]
-  *(required)*
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchCreateDelegationByAssessmentRequestRequestTypeDef = {  # (1)
+    "createDelegationRequests": ...,
+    "assessmentId": ...,
+}
 
-Returns
-[BatchCreateDelegationByAssessmentResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponsetypedef).
+parent.batch_create_delegation_by_assessment(**kwargs)
+```
 
-<a id="batch\_delete\_delegation\_by\_assessment"></a>
+1. See [:material-code-braces: BatchCreateDelegationByAssessmentRequestRequestTypeDef](./type_defs.md#batchcreatedelegationbyassessmentrequestrequesttypedef) 
 
-### batch_delete_delegation_by_assessment
+### batch\_delete\_delegation\_by\_assessment
 
 Deletes a batch of delegations for an assessment in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").batch_delete_delegation_by_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.batch_delete_delegation_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_delete_delegation_by_assessment)
+```python title="Method definition"
+def batch_delete_delegation_by_assessment(
+    self,
+    *,
+    delegationIds: Sequence[str],
+    assessmentId: str,
+) -> BatchDeleteDelegationByAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteDelegationByAssessmentRequestRequestTypeDef](./type_defs.md#batchdeletedelegationbyassessmentrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteDelegationByAssessmentResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `delegationIds`: `Sequence`\[`str`\] *(required)*
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteDelegationByAssessmentRequestRequestTypeDef = {  # (1)
+    "delegationIds": ...,
+    "assessmentId": ...,
+}
 
-Returns
-[BatchDeleteDelegationByAssessmentResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponsetypedef).
+parent.batch_delete_delegation_by_assessment(**kwargs)
+```
 
-<a id="batch\_disassociate\_assessment\_report\_evidence"></a>
+1. See [:material-code-braces: BatchDeleteDelegationByAssessmentRequestRequestTypeDef](./type_defs.md#batchdeletedelegationbyassessmentrequestrequesttypedef) 
 
-### batch_disassociate_assessment_report_evidence
+### batch\_disassociate\_assessment\_report\_evidence
 
 Disassociates a list of evidence from an assessment report in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").batch_disassociate_assessment_report_evidence`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").batch_disassociate_assessment_report_evidence` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
 
-Boto3 documentation:
-[AuditManager.Client.batch_disassociate_assessment_report_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_disassociate_assessment_report_evidence)
+```python title="Method definition"
+def batch_disassociate_assessment_report_evidence(
+    self,
+    *,
+    assessmentId: str,
+    evidenceFolderId: str,
+    evidenceIds: Sequence[str],
+) -> BatchDisassociateAssessmentReportEvidenceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef](./type_defs.md#batchdisassociateassessmentreportevidencerequestrequesttypedef).
+1. See [:material-code-braces: BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
-- `evidenceIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "evidenceFolderId": ...,
+    "evidenceIds": ...,
+}
 
-Returns
-[BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
+parent.batch_disassociate_assessment_report_evidence(**kwargs)
+```
 
-<a id="batch\_import\_evidence\_to\_assessment\_control"></a>
+1. See [:material-code-braces: BatchDisassociateAssessmentReportEvidenceRequestRequestTypeDef](./type_defs.md#batchdisassociateassessmentreportevidencerequestrequesttypedef) 
 
-### batch_import_evidence_to_assessment_control
+### batch\_import\_evidence\_to\_assessment\_control
 
 Uploads one or more pieces of evidence to a control in an Audit Manager
 assessment.
 
-Type annotations for
-`boto3.client("auditmanager").batch_import_evidence_to_assessment_control`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").batch_import_evidence_to_assessment_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
 
-Boto3 documentation:
-[AuditManager.Client.batch_import_evidence_to_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.batch_import_evidence_to_assessment_control)
+```python title="Method definition"
+def batch_import_evidence_to_assessment_control(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    manualEvidence: Sequence[ManualEvidenceTypeDef],  # (1)
+) -> BatchImportEvidenceToAssessmentControlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchImportEvidenceToAssessmentControlRequestRequestTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolrequestrequesttypedef).
+1. See [:material-code-braces: ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef) 
+2. See [:material-code-braces: BatchImportEvidenceToAssessmentControlResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `controlId`: `str` *(required)*
-- `manualEvidence`:
-  `Sequence`\[[ManualEvidenceTypeDef](./type_defs.md#manualevidencetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchImportEvidenceToAssessmentControlRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "controlId": ...,
+    "manualEvidence": ...,
+}
 
-Returns
-[BatchImportEvidenceToAssessmentControlResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponsetypedef).
+parent.batch_import_evidence_to_assessment_control(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchImportEvidenceToAssessmentControlRequestRequestTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("auditmanager").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate)
 
-Boto3 documentation:
-[AuditManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_assessment"></a>
-
-### create_assessment
+### create\_assessment
 
 Creates an assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").create_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").create_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.create_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment)
+```python title="Method definition"
+def create_assessment(
+    self,
+    *,
+    name: str,
+    assessmentReportsDestination: AssessmentReportsDestinationTypeDef,  # (1)
+    scope: ScopeTypeDef,  # (2)
+    roles: Sequence[RoleTypeDef],  # (3)
+    frameworkId: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAssessmentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssessmentRequestRequestTypeDef](./type_defs.md#createassessmentrequestrequesttypedef).
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+3. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+4. See [:material-code-braces: CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-  *(required)*
-- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
-- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\] *(required)*
-- `frameworkId`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssessmentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "assessmentReportsDestination": ...,
+    "scope": ...,
+    "roles": ...,
+    "frameworkId": ...,
+}
 
-Returns
-[CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
+parent.create_assessment(**kwargs)
+```
 
-<a id="create\_assessment\_framework"></a>
+1. See [:material-code-braces: CreateAssessmentRequestRequestTypeDef](./type_defs.md#createassessmentrequestrequesttypedef) 
 
-### create_assessment_framework
+### create\_assessment\_framework
 
 Creates a custom framework in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").create_assessment_framework`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").create_assessment_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
 
-Boto3 documentation:
-[AuditManager.Client.create_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_framework)
+```python title="Method definition"
+def create_assessment_framework(
+    self,
+    *,
+    name: str,
+    controlSets: Sequence[CreateAssessmentFrameworkControlSetTypeDef],  # (1)
+    description: str = ...,
+    complianceType: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAssessmentFrameworkResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#createassessmentframeworkrequestrequesttypedef).
+1. See [:material-code-braces: CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef) 
+2. See [:material-code-braces: CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `controlSets`:
-  `Sequence`\[[CreateAssessmentFrameworkControlSetTypeDef](./type_defs.md#createassessmentframeworkcontrolsettypedef)\]
-  *(required)*
-- `description`: `str`
-- `complianceType`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssessmentFrameworkRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "controlSets": ...,
+}
 
-Returns
-[CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
+parent.create_assessment_framework(**kwargs)
+```
 
-<a id="create\_assessment\_report"></a>
+1. See [:material-code-braces: CreateAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#createassessmentframeworkrequestrequesttypedef) 
 
-### create_assessment_report
+### create\_assessment\_report
 
 Creates an assessment report for the specified assessment.
 
-Type annotations for `boto3.client("auditmanager").create_assessment_report`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").create_assessment_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
 
-Boto3 documentation:
-[AuditManager.Client.create_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_assessment_report)
+```python title="Method definition"
+def create_assessment_report(
+    self,
+    *,
+    name: str,
+    assessmentId: str,
+    description: str = ...,
+) -> CreateAssessmentReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssessmentReportRequestRequestTypeDef](./type_defs.md#createassessmentreportrequestrequesttypedef).
+1. See [:material-code-braces: CreateAssessmentReportResponseTypeDef](./type_defs.md#createassessmentreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `assessmentId`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAssessmentReportRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "assessmentId": ...,
+}
 
-Returns
-[CreateAssessmentReportResponseTypeDef](./type_defs.md#createassessmentreportresponsetypedef).
+parent.create_assessment_report(**kwargs)
+```
 
-<a id="create\_control"></a>
+1. See [:material-code-braces: CreateAssessmentReportRequestRequestTypeDef](./type_defs.md#createassessmentreportrequestrequesttypedef) 
 
-### create_control
+### create\_control
 
 Creates a new custom control in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").create_control` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").create_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control)
 
-Boto3 documentation:
-[AuditManager.Client.create_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.create_control)
+```python title="Method definition"
+def create_control(
+    self,
+    *,
+    name: str,
+    controlMappingSources: Sequence[CreateControlMappingSourceTypeDef],  # (1)
+    description: str = ...,
+    testingInformation: str = ...,
+    actionPlanTitle: str = ...,
+    actionPlanInstructions: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateControlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateControlRequestRequestTypeDef](./type_defs.md#createcontrolrequestrequesttypedef).
+1. See [:material-code-braces: CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef) 
+2. See [:material-code-braces: CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `controlMappingSources`:
-  `Sequence`\[[CreateControlMappingSourceTypeDef](./type_defs.md#createcontrolmappingsourcetypedef)\]
-  *(required)*
-- `description`: `str`
-- `testingInformation`: `str`
-- `actionPlanTitle`: `str`
-- `actionPlanInstructions`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateControlRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "controlMappingSources": ...,
+}
 
-Returns
-[CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
+parent.create_control(**kwargs)
+```
 
-<a id="delete\_assessment"></a>
+1. See [:material-code-braces: CreateControlRequestRequestTypeDef](./type_defs.md#createcontrolrequestrequesttypedef) 
 
-### delete_assessment
+### delete\_assessment
 
 Deletes an assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").delete_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").delete_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.delete_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment)
+```python title="Method definition"
+def delete_assessment(
+    self,
+    *,
+    assessmentId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentRequestRequestTypeDef](./type_defs.md#deleteassessmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assessment(**kwargs)
+```
 
-<a id="delete\_assessment\_framework"></a>
+1. See [:material-code-braces: DeleteAssessmentRequestRequestTypeDef](./type_defs.md#deleteassessmentrequestrequesttypedef) 
 
-### delete_assessment_framework
+### delete\_assessment\_framework
 
 Deletes a custom framework in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").delete_assessment_framework`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").delete_assessment_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
 
-Boto3 documentation:
-[AuditManager.Client.delete_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework)
+```python title="Method definition"
+def delete_assessment_framework(
+    self,
+    *,
+    frameworkId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#deleteassessmentframeworkrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `frameworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentFrameworkRequestRequestTypeDef = {  # (1)
+    "frameworkId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assessment_framework(**kwargs)
+```
 
-<a id="delete\_assessment\_framework\_share"></a>
+1. See [:material-code-braces: DeleteAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#deleteassessmentframeworkrequestrequesttypedef) 
 
-### delete_assessment_framework_share
+### delete\_assessment\_framework\_share
 
 Deletes a share request for a custom framework in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").delete_assessment_framework_share` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").delete_assessment_framework_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework_share)
 
-Boto3 documentation:
-[AuditManager.Client.delete_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_framework_share)
+```python title="Method definition"
+def delete_assessment_framework_share(
+    self,
+    *,
+    requestId: str,
+    requestType: ShareRequestTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#deleteassessmentframeworksharerequestrequesttypedef).
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
 
-Keyword-only arguments:
 
-- `requestId`: `str` *(required)*
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentFrameworkShareRequestRequestTypeDef = {  # (1)
+    "requestId": ...,
+    "requestType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assessment_framework_share(**kwargs)
+```
 
-<a id="delete\_assessment\_report"></a>
+1. See [:material-code-braces: DeleteAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#deleteassessmentframeworksharerequestrequesttypedef) 
 
-### delete_assessment_report
+### delete\_assessment\_report
 
 Deletes an assessment report from an assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").delete_assessment_report`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").delete_assessment_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
 
-Boto3 documentation:
-[AuditManager.Client.delete_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_assessment_report)
+```python title="Method definition"
+def delete_assessment_report(
+    self,
+    *,
+    assessmentId: str,
+    assessmentReportId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentReportRequestRequestTypeDef](./type_defs.md#deleteassessmentreportrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `assessmentReportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentReportRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "assessmentReportId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assessment_report(**kwargs)
+```
 
-<a id="delete\_control"></a>
+1. See [:material-code-braces: DeleteAssessmentReportRequestRequestTypeDef](./type_defs.md#deleteassessmentreportrequestrequesttypedef) 
 
-### delete_control
+### delete\_control
 
 Deletes a custom control in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").delete_control` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").delete_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control)
 
-Boto3 documentation:
-[AuditManager.Client.delete_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.delete_control)
+```python title="Method definition"
+def delete_control(
+    self,
+    *,
+    controlId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteControlRequestRequestTypeDef](./type_defs.md#deletecontrolrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `controlId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteControlRequestRequestTypeDef = {  # (1)
+    "controlId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_control(**kwargs)
+```
 
-<a id="deregister\_account"></a>
+1. See [:material-code-braces: DeleteControlRequestRequestTypeDef](./type_defs.md#deletecontrolrequestrequesttypedef) 
 
-### deregister_account
+### deregister\_account
 
 Deregisters an account in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").deregister_account` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").deregister_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
 
-Boto3 documentation:
-[AuditManager.Client.deregister_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_account)
+```python title="Method definition"
+def deregister_account(
+    self,
+) -> DeregisterAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef).
+1. See [:material-code-braces: DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef) 
 
-<a id="deregister\_organization\_admin\_account"></a>
-
-### deregister_organization_admin_account
+### deregister\_organization\_admin\_account
 
 Removes the specified member Amazon Web Services account as a delegated
 administrator for Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").deregister_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").deregister_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
 
-Boto3 documentation:
-[AuditManager.Client.deregister_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.deregister_organization_admin_account)
+```python title="Method definition"
+def deregister_organization_admin_account(
+    self,
+    *,
+    adminAccountId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#deregisterorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `adminAccountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeregisterOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "adminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_organization_admin_account(**kwargs)
+```
 
-<a id="disassociate\_assessment\_report\_evidence\_folder"></a>
+1. See [:material-code-braces: DeregisterOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#deregisterorganizationadminaccountrequestrequesttypedef) 
 
-### disassociate_assessment_report_evidence_folder
+### disassociate\_assessment\_report\_evidence\_folder
 
 Disassociates an evidence folder from the specified assessment report in Audit
 Manager.
 
-Type annotations for
-`boto3.client("auditmanager").disassociate_assessment_report_evidence_folder`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").disassociate_assessment_report_evidence_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
 
-Boto3 documentation:
-[AuditManager.Client.disassociate_assessment_report_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.disassociate_assessment_report_evidence_folder)
+```python title="Method definition"
+def disassociate_assessment_report_evidence_folder(
+    self,
+    *,
+    assessmentId: str,
+    evidenceFolderId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef](./type_defs.md#disassociateassessmentreportevidencefolderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "evidenceFolderId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_assessment_report_evidence_folder(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateAssessmentReportEvidenceFolderRequestRequestTypeDef](./type_defs.md#disassociateassessmentreportevidencefolderrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("auditmanager").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AuditManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_account\_status"></a>
-
-### get_account_status
+### get\_account\_status
 
 Returns the registration status of an account in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_account_status` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_account_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
 
-Boto3 documentation:
-[AuditManager.Client.get_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_account_status)
+```python title="Method definition"
+def get_account_status(
+    self,
+) -> GetAccountStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef).
+1. See [:material-code-braces: GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef) 
 
-<a id="get\_assessment"></a>
-
-### get_assessment
+### get\_assessment
 
 Returns an assessment from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.get_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment)
+```python title="Method definition"
+def get_assessment(
+    self,
+    *,
+    assessmentId: str,
+) -> GetAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssessmentRequestRequestTypeDef](./type_defs.md#getassessmentrequestrequesttypedef).
+1. See [:material-code-braces: GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns
-[GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
+parent.get_assessment(**kwargs)
+```
 
-<a id="get\_assessment\_framework"></a>
+1. See [:material-code-braces: GetAssessmentRequestRequestTypeDef](./type_defs.md#getassessmentrequestrequesttypedef) 
 
-### get_assessment_framework
+### get\_assessment\_framework
 
 Returns a framework from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_assessment_framework`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_assessment_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
 
-Boto3 documentation:
-[AuditManager.Client.get_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_framework)
+```python title="Method definition"
+def get_assessment_framework(
+    self,
+    *,
+    frameworkId: str,
+) -> GetAssessmentFrameworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#getassessmentframeworkrequestrequesttypedef).
+1. See [:material-code-braces: GetAssessmentFrameworkResponseTypeDef](./type_defs.md#getassessmentframeworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `frameworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssessmentFrameworkRequestRequestTypeDef = {  # (1)
+    "frameworkId": ...,
+}
 
-Returns
-[GetAssessmentFrameworkResponseTypeDef](./type_defs.md#getassessmentframeworkresponsetypedef).
+parent.get_assessment_framework(**kwargs)
+```
 
-<a id="get\_assessment\_report\_url"></a>
+1. See [:material-code-braces: GetAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#getassessmentframeworkrequestrequesttypedef) 
 
-### get_assessment_report_url
+### get\_assessment\_report\_url
 
 Returns the URL of an assessment report in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_assessment_report_url`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_assessment_report_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
 
-Boto3 documentation:
-[AuditManager.Client.get_assessment_report_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_assessment_report_url)
+```python title="Method definition"
+def get_assessment_report_url(
+    self,
+    *,
+    assessmentReportId: str,
+    assessmentId: str,
+) -> GetAssessmentReportUrlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssessmentReportUrlRequestRequestTypeDef](./type_defs.md#getassessmentreporturlrequestrequesttypedef).
+1. See [:material-code-braces: GetAssessmentReportUrlResponseTypeDef](./type_defs.md#getassessmentreporturlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentReportId`: `str` *(required)*
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssessmentReportUrlRequestRequestTypeDef = {  # (1)
+    "assessmentReportId": ...,
+    "assessmentId": ...,
+}
 
-Returns
-[GetAssessmentReportUrlResponseTypeDef](./type_defs.md#getassessmentreporturlresponsetypedef).
+parent.get_assessment_report_url(**kwargs)
+```
 
-<a id="get\_change\_logs"></a>
+1. See [:material-code-braces: GetAssessmentReportUrlRequestRequestTypeDef](./type_defs.md#getassessmentreporturlrequestrequesttypedef) 
 
-### get_change_logs
+### get\_change\_logs
 
 Returns a list of changelogs from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_change_logs` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_change_logs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
 
-Boto3 documentation:
-[AuditManager.Client.get_change_logs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_change_logs)
+```python title="Method definition"
+def get_change_logs(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str = ...,
+    controlId: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetChangeLogsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChangeLogsRequestRequestTypeDef](./type_defs.md#getchangelogsrequestrequesttypedef).
+1. See [:material-code-braces: GetChangeLogsResponseTypeDef](./type_defs.md#getchangelogsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str`
-- `controlId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetChangeLogsRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns
-[GetChangeLogsResponseTypeDef](./type_defs.md#getchangelogsresponsetypedef).
+parent.get_change_logs(**kwargs)
+```
 
-<a id="get\_control"></a>
+1. See [:material-code-braces: GetChangeLogsRequestRequestTypeDef](./type_defs.md#getchangelogsrequestrequesttypedef) 
 
-### get_control
+### get\_control
 
 Returns a control from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_control` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control)
 
-Boto3 documentation:
-[AuditManager.Client.get_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_control)
+```python title="Method definition"
+def get_control(
+    self,
+    *,
+    controlId: str,
+) -> GetControlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetControlRequestRequestTypeDef](./type_defs.md#getcontrolrequestrequesttypedef).
+1. See [:material-code-braces: GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `controlId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetControlRequestRequestTypeDef = {  # (1)
+    "controlId": ...,
+}
 
-Returns [GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef).
+parent.get_control(**kwargs)
+```
 
-<a id="get\_delegations"></a>
+1. See [:material-code-braces: GetControlRequestRequestTypeDef](./type_defs.md#getcontrolrequestrequesttypedef) 
 
-### get_delegations
+### get\_delegations
 
 Returns a list of delegations from an audit owner to a delegate.
 
-Type annotations for `boto3.client("auditmanager").get_delegations` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_delegations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
 
-Boto3 documentation:
-[AuditManager.Client.get_delegations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_delegations)
+```python title="Method definition"
+def get_delegations(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetDelegationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDelegationsRequestRequestTypeDef](./type_defs.md#getdelegationsrequestrequesttypedef).
+1. See [:material-code-braces: GetDelegationsResponseTypeDef](./type_defs.md#getdelegationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetDelegationsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[GetDelegationsResponseTypeDef](./type_defs.md#getdelegationsresponsetypedef).
+parent.get_delegations(**kwargs)
+```
 
-<a id="get\_evidence"></a>
+1. See [:material-code-braces: GetDelegationsRequestRequestTypeDef](./type_defs.md#getdelegationsrequestrequesttypedef) 
 
-### get_evidence
+### get\_evidence
 
 Returns evidence from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_evidence` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
 
-Boto3 documentation:
-[AuditManager.Client.get_evidence](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence)
+```python title="Method definition"
+def get_evidence(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+    evidenceId: str,
+) -> GetEvidenceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvidenceRequestRequestTypeDef](./type_defs.md#getevidencerequestrequesttypedef).
+1. See [:material-code-braces: GetEvidenceResponseTypeDef](./type_defs.md#getevidenceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
-- `evidenceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEvidenceRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "evidenceFolderId": ...,
+    "evidenceId": ...,
+}
 
-Returns
-[GetEvidenceResponseTypeDef](./type_defs.md#getevidenceresponsetypedef).
+parent.get_evidence(**kwargs)
+```
 
-<a id="get\_evidence\_by\_evidence\_folder"></a>
+1. See [:material-code-braces: GetEvidenceRequestRequestTypeDef](./type_defs.md#getevidencerequestrequesttypedef) 
 
-### get_evidence_by_evidence_folder
+### get\_evidence\_by\_evidence\_folder
 
 Returns all evidence from a specified evidence folder in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence_by_evidence_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
 
-Boto3 documentation:
-[AuditManager.Client.get_evidence_by_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_by_evidence_folder)
+```python title="Method definition"
+def get_evidence_by_evidence_folder(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetEvidenceByEvidenceFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvidenceByEvidenceFolderRequestRequestTypeDef](./type_defs.md#getevidencebyevidencefolderrequestrequesttypedef).
+1. See [:material-code-braces: GetEvidenceByEvidenceFolderResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEvidenceByEvidenceFolderRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "evidenceFolderId": ...,
+}
 
-Returns
-[GetEvidenceByEvidenceFolderResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponsetypedef).
+parent.get_evidence_by_evidence_folder(**kwargs)
+```
 
-<a id="get\_evidence\_folder"></a>
+1. See [:material-code-braces: GetEvidenceByEvidenceFolderRequestRequestTypeDef](./type_defs.md#getevidencebyevidencefolderrequestrequesttypedef) 
 
-### get_evidence_folder
+### get\_evidence\_folder
 
 Returns an evidence folder from the specified assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").get_evidence_folder` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence_folder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
 
-Boto3 documentation:
-[AuditManager.Client.get_evidence_folder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folder)
+```python title="Method definition"
+def get_evidence_folder(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    evidenceFolderId: str,
+) -> GetEvidenceFolderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvidenceFolderRequestRequestTypeDef](./type_defs.md#getevidencefolderrequestrequesttypedef).
+1. See [:material-code-braces: GetEvidenceFolderResponseTypeDef](./type_defs.md#getevidencefolderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `evidenceFolderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEvidenceFolderRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "evidenceFolderId": ...,
+}
 
-Returns
-[GetEvidenceFolderResponseTypeDef](./type_defs.md#getevidencefolderresponsetypedef).
+parent.get_evidence_folder(**kwargs)
+```
 
-<a id="get\_evidence\_folders\_by\_assessment"></a>
+1. See [:material-code-braces: GetEvidenceFolderRequestRequestTypeDef](./type_defs.md#getevidencefolderrequestrequesttypedef) 
 
-### get_evidence_folders_by_assessment
+### get\_evidence\_folders\_by\_assessment
 
 Returns the evidence folders from a specified assessment in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence_folders_by_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.get_evidence_folders_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment)
+```python title="Method definition"
+def get_evidence_folders_by_assessment(
+    self,
+    *,
+    assessmentId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetEvidenceFoldersByAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvidenceFoldersByAssessmentRequestRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentrequestrequesttypedef).
+1. See [:material-code-braces: GetEvidenceFoldersByAssessmentResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEvidenceFoldersByAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns
-[GetEvidenceFoldersByAssessmentResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponsetypedef).
+parent.get_evidence_folders_by_assessment(**kwargs)
+```
 
-<a id="get\_evidence\_folders\_by\_assessment\_control"></a>
+1. See [:material-code-braces: GetEvidenceFoldersByAssessmentRequestRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentrequestrequesttypedef) 
 
-### get_evidence_folders_by_assessment_control
+### get\_evidence\_folders\_by\_assessment\_control
 
 Returns a list of evidence folders that are associated with a specified control
 of an assessment in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").get_evidence_folders_by_assessment_control`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_evidence_folders_by_assessment_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
 
-Boto3 documentation:
-[AuditManager.Client.get_evidence_folders_by_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_evidence_folders_by_assessment_control)
+```python title="Method definition"
+def get_evidence_folders_by_assessment_control(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetEvidenceFoldersByAssessmentControlResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolrequestrequesttypedef).
+1. See [:material-code-braces: GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `controlId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "controlId": ...,
+}
 
-Returns
-[GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef).
+parent.get_evidence_folders_by_assessment_control(**kwargs)
+```
 
-<a id="get\_insights"></a>
+1. See [:material-code-braces: GetEvidenceFoldersByAssessmentControlRequestRequestTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolrequestrequesttypedef) 
 
-### get_insights
+### get\_insights
 
 Gets the latest analytics data for all your current active assessments.
 
-Type annotations for `boto3.client("auditmanager").get_insights` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_insights` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights)
 
-Boto3 documentation:
-[AuditManager.Client.get_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights)
+```python title="Method definition"
+def get_insights(
+    self,
+) -> GetInsightsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
+1. See [:material-code-braces: GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef) 
 
-<a id="get\_insights\_by\_assessment"></a>
-
-### get_insights_by_assessment
+### get\_insights\_by\_assessment
 
 Gets the latest analytics data for a specific active assessment.
 
-Type annotations for `boto3.client("auditmanager").get_insights_by_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_insights_by_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights_by_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.get_insights_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_insights_by_assessment)
+```python title="Method definition"
+def get_insights_by_assessment(
+    self,
+    *,
+    assessmentId: str,
+) -> GetInsightsByAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#getinsightsbyassessmentrequestrequesttypedef).
+1. See [:material-code-braces: GetInsightsByAssessmentResponseTypeDef](./type_defs.md#getinsightsbyassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInsightsByAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns
-[GetInsightsByAssessmentResponseTypeDef](./type_defs.md#getinsightsbyassessmentresponsetypedef).
+parent.get_insights_by_assessment(**kwargs)
+```
 
-<a id="get\_organization\_admin\_account"></a>
+1. See [:material-code-braces: GetInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#getinsightsbyassessmentrequestrequesttypedef) 
 
-### get_organization_admin_account
+### get\_organization\_admin\_account
 
 Returns the name of the delegated Amazon Web Services administrator account for
 the organization.
 
-Type annotations for
-`boto3.client("auditmanager").get_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
 
-Boto3 documentation:
-[AuditManager.Client.get_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_organization_admin_account)
+```python title="Method definition"
+def get_organization_admin_account(
+    self,
+) -> GetOrganizationAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef).
+1. See [:material-code-braces: GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef) 
 
-<a id="get\_services\_in\_scope"></a>
-
-### get_services_in_scope
+### get\_services\_in\_scope
 
 Returns a list of the in-scope Amazon Web Services services for the specified
 assessment.
 
-Type annotations for `boto3.client("auditmanager").get_services_in_scope`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_services_in_scope` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
 
-Boto3 documentation:
-[AuditManager.Client.get_services_in_scope](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_services_in_scope)
+```python title="Method definition"
+def get_services_in_scope(
+    self,
+) -> GetServicesInScopeResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef).
+1. See [:material-code-braces: GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef) 
 
-<a id="get\_settings"></a>
-
-### get_settings
+### get\_settings
 
 Returns the settings for the specified Amazon Web Services account.
 
-Type annotations for `boto3.client("auditmanager").get_settings` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").get_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings)
 
-Boto3 documentation:
-[AuditManager.Client.get_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.get_settings)
+```python title="Method definition"
+def get_settings(
+    self,
+    *,
+    attribute: SettingAttributeType,  # (1)
+) -> GetSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetSettingsRequestRequestTypeDef](./type_defs.md#getsettingsrequestrequesttypedef).
+1. See [:material-code-brackets: SettingAttributeType](./literals.md#settingattributetype) 
+2. See [:material-code-braces: GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attribute`: [SettingAttributeType](./literals.md#settingattributetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSettingsRequestRequestTypeDef = {  # (1)
+    "attribute": ...,
+}
 
-Returns
-[GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
+parent.get_settings(**kwargs)
+```
 
-<a id="list\_assessment\_control\_insights\_by\_control\_domain"></a>
+1. See [:material-code-braces: GetSettingsRequestRequestTypeDef](./type_defs.md#getsettingsrequestrequesttypedef) 
 
-### list_assessment_control_insights_by_control_domain
+### list\_assessment\_control\_insights\_by\_control\_domain
 
 Lists the latest analytics data for controls within a specific control domain
 and a specific active assessment.
 
-Type annotations for
-`boto3.client("auditmanager").list_assessment_control_insights_by_control_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_assessment_control_insights_by_control_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_control_insights_by_control_domain)
 
-Boto3 documentation:
-[AuditManager.Client.list_assessment_control_insights_by_control_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_control_insights_by_control_domain)
+```python title="Method definition"
+def list_assessment_control_insights_by_control_domain(
+    self,
+    *,
+    controlDomainId: str,
+    assessmentId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentControlInsightsByControlDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef).
+1. See [:material-code-braces: ListAssessmentControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `controlDomainId`: `str` *(required)*
-- `assessmentId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef = {  # (1)
+    "controlDomainId": ...,
+    "assessmentId": ...,
+}
 
-Returns
-[ListAssessmentControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainresponsetypedef).
+parent.list_assessment_control_insights_by_control_domain(**kwargs)
+```
 
-<a id="list\_assessment\_framework\_share\_requests"></a>
+1. See [:material-code-braces: ListAssessmentControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainrequestrequesttypedef) 
 
-### list_assessment_framework_share_requests
+### list\_assessment\_framework\_share\_requests
 
-Returns a list of sent or received share requests for custom frameworks in
-Audit Manager.
+Returns a list of sent or received share requests for custom frameworks in Audit
+Manager.
 
-Type annotations for
-`boto3.client("auditmanager").list_assessment_framework_share_requests` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_assessment_framework_share_requests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_framework_share_requests)
 
-Boto3 documentation:
-[AuditManager.Client.list_assessment_framework_share_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_framework_share_requests)
+```python title="Method definition"
+def list_assessment_framework_share_requests(
+    self,
+    *,
+    requestType: ShareRequestTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentFrameworkShareRequestsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](./type_defs.md#listassessmentframeworksharerequestsrequestrequesttypedef).
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
+2. See [:material-code-braces: ListAssessmentFrameworkShareRequestsResponseTypeDef](./type_defs.md#listassessmentframeworksharerequestsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-  *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentFrameworkShareRequestsRequestRequestTypeDef = {  # (1)
+    "requestType": ...,
+}
 
-Returns
-[ListAssessmentFrameworkShareRequestsResponseTypeDef](./type_defs.md#listassessmentframeworksharerequestsresponsetypedef).
+parent.list_assessment_framework_share_requests(**kwargs)
+```
 
-<a id="list\_assessment\_frameworks"></a>
+1. See [:material-code-braces: ListAssessmentFrameworkShareRequestsRequestRequestTypeDef](./type_defs.md#listassessmentframeworksharerequestsrequestrequesttypedef) 
 
-### list_assessment_frameworks
+### list\_assessment\_frameworks
 
 Returns a list of the frameworks that are available in the Audit Manager
 framework library.
 
-Type annotations for `boto3.client("auditmanager").list_assessment_frameworks`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_assessment_frameworks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
 
-Boto3 documentation:
-[AuditManager.Client.list_assessment_frameworks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_frameworks)
+```python title="Method definition"
+def list_assessment_frameworks(
+    self,
+    *,
+    frameworkType: FrameworkTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentFrameworksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentFrameworksRequestRequestTypeDef](./type_defs.md#listassessmentframeworksrequestrequesttypedef).
+1. See [:material-code-brackets: FrameworkTypeType](./literals.md#frameworktypetype) 
+2. See [:material-code-braces: ListAssessmentFrameworksResponseTypeDef](./type_defs.md#listassessmentframeworksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `frameworkType`: [FrameworkTypeType](./literals.md#frameworktypetype)
-  *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentFrameworksRequestRequestTypeDef = {  # (1)
+    "frameworkType": ...,
+}
 
-Returns
-[ListAssessmentFrameworksResponseTypeDef](./type_defs.md#listassessmentframeworksresponsetypedef).
+parent.list_assessment_frameworks(**kwargs)
+```
 
-<a id="list\_assessment\_reports"></a>
+1. See [:material-code-braces: ListAssessmentFrameworksRequestRequestTypeDef](./type_defs.md#listassessmentframeworksrequestrequesttypedef) 
 
-### list_assessment_reports
+### list\_assessment\_reports
 
 Returns a list of assessment reports created in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").list_assessment_reports`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_assessment_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
 
-Boto3 documentation:
-[AuditManager.Client.list_assessment_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessment_reports)
+```python title="Method definition"
+def list_assessment_reports(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentReportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentReportsRequestRequestTypeDef](./type_defs.md#listassessmentreportsrequestrequesttypedef).
+1. See [:material-code-braces: ListAssessmentReportsResponseTypeDef](./type_defs.md#listassessmentreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentReportsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListAssessmentReportsResponseTypeDef](./type_defs.md#listassessmentreportsresponsetypedef).
+parent.list_assessment_reports(**kwargs)
+```
 
-<a id="list\_assessments"></a>
+1. See [:material-code-braces: ListAssessmentReportsRequestRequestTypeDef](./type_defs.md#listassessmentreportsrequestrequesttypedef) 
 
-### list_assessments
+### list\_assessments
 
 Returns a list of current and past assessments from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").list_assessments` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_assessments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
 
-Boto3 documentation:
-[AuditManager.Client.list_assessments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_assessments)
+```python title="Method definition"
+def list_assessments(
+    self,
+    *,
+    status: AssessmentStatusType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentsRequestRequestTypeDef](./type_defs.md#listassessmentsrequestrequesttypedef).
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-braces: ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentsRequestRequestTypeDef = {  # (1)
+    "status": ...,
+}
 
-Returns
-[ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef).
+parent.list_assessments(**kwargs)
+```
 
-<a id="list\_control\_domain\_insights"></a>
+1. See [:material-code-braces: ListAssessmentsRequestRequestTypeDef](./type_defs.md#listassessmentsrequestrequesttypedef) 
 
-### list_control_domain_insights
+### list\_control\_domain\_insights
 
 Lists the latest analytics data for control domains across all of your active
 assessments.
 
-Type annotations for
-`boto3.client("auditmanager").list_control_domain_insights` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_control_domain_insights` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights)
 
-Boto3 documentation:
-[AuditManager.Client.list_control_domain_insights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights)
+```python title="Method definition"
+def list_control_domain_insights(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListControlDomainInsightsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListControlDomainInsightsRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsrequestrequesttypedef).
+1. See [:material-code-braces: ListControlDomainInsightsResponseTypeDef](./type_defs.md#listcontroldomaininsightsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListControlDomainInsightsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListControlDomainInsightsResponseTypeDef](./type_defs.md#listcontroldomaininsightsresponsetypedef).
+parent.list_control_domain_insights(**kwargs)
+```
 
-<a id="list\_control\_domain\_insights\_by\_assessment"></a>
+1. See [:material-code-braces: ListControlDomainInsightsRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsrequestrequesttypedef) 
 
-### list_control_domain_insights_by_assessment
+### list\_control\_domain\_insights\_by\_assessment
 
 Lists analytics data for control domains within a specified active assessment.
 
-Type annotations for
-`boto3.client("auditmanager").list_control_domain_insights_by_assessment`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_control_domain_insights_by_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights_by_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.list_control_domain_insights_by_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_domain_insights_by_assessment)
+```python title="Method definition"
+def list_control_domain_insights_by_assessment(
+    self,
+    *,
+    assessmentId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListControlDomainInsightsByAssessmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListControlDomainInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentrequestrequesttypedef).
+1. See [:material-code-braces: ListControlDomainInsightsByAssessmentResponseTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListControlDomainInsightsByAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+}
 
-Returns
-[ListControlDomainInsightsByAssessmentResponseTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentresponsetypedef).
+parent.list_control_domain_insights_by_assessment(**kwargs)
+```
 
-<a id="list\_control\_insights\_by\_control\_domain"></a>
+1. See [:material-code-braces: ListControlDomainInsightsByAssessmentRequestRequestTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentrequestrequesttypedef) 
 
-### list_control_insights_by_control_domain
+### list\_control\_insights\_by\_control\_domain
 
 Lists the latest analytics data for controls within a specific control domain
 across all active assessments.
 
-Type annotations for
-`boto3.client("auditmanager").list_control_insights_by_control_domain` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_control_insights_by_control_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_insights_by_control_domain)
 
-Boto3 documentation:
-[AuditManager.Client.list_control_insights_by_control_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_control_insights_by_control_domain)
+```python title="Method definition"
+def list_control_insights_by_control_domain(
+    self,
+    *,
+    controlDomainId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListControlInsightsByControlDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainrequestrequesttypedef).
+1. See [:material-code-braces: ListControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `controlDomainId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListControlInsightsByControlDomainRequestRequestTypeDef = {  # (1)
+    "controlDomainId": ...,
+}
 
-Returns
-[ListControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainresponsetypedef).
+parent.list_control_insights_by_control_domain(**kwargs)
+```
 
-<a id="list\_controls"></a>
+1. See [:material-code-braces: ListControlInsightsByControlDomainRequestRequestTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainrequestrequesttypedef) 
 
-### list_controls
+### list\_controls
 
 Returns a list of controls from Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").list_controls` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_controls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls)
 
-Boto3 documentation:
-[AuditManager.Client.list_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_controls)
+```python title="Method definition"
+def list_controls(
+    self,
+    *,
+    controlType: ControlTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListControlsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListControlsRequestRequestTypeDef](./type_defs.md#listcontrolsrequestrequesttypedef).
+1. See [:material-code-brackets: ControlTypeType](./literals.md#controltypetype) 
+2. See [:material-code-braces: ListControlsResponseTypeDef](./type_defs.md#listcontrolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `controlType`: [ControlTypeType](./literals.md#controltypetype) *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListControlsRequestRequestTypeDef = {  # (1)
+    "controlType": ...,
+}
 
-Returns
-[ListControlsResponseTypeDef](./type_defs.md#listcontrolsresponsetypedef).
+parent.list_controls(**kwargs)
+```
 
-<a id="list\_keywords\_for\_data\_source"></a>
+1. See [:material-code-braces: ListControlsRequestRequestTypeDef](./type_defs.md#listcontrolsrequestrequesttypedef) 
 
-### list_keywords_for_data_source
+### list\_keywords\_for\_data\_source
 
 Returns a list of keywords that are pre-mapped to the specified control data
 source.
 
-Type annotations for
-`boto3.client("auditmanager").list_keywords_for_data_source` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_keywords_for_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
 
-Boto3 documentation:
-[AuditManager.Client.list_keywords_for_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_keywords_for_data_source)
+```python title="Method definition"
+def list_keywords_for_data_source(
+    self,
+    *,
+    source: SourceTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListKeywordsForDataSourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListKeywordsForDataSourceRequestRequestTypeDef](./type_defs.md#listkeywordsfordatasourcerequestrequesttypedef).
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: ListKeywordsForDataSourceResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `source`: [SourceTypeType](./literals.md#sourcetypetype) *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListKeywordsForDataSourceRequestRequestTypeDef = {  # (1)
+    "source": ...,
+}
 
-Returns
-[ListKeywordsForDataSourceResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponsetypedef).
+parent.list_keywords_for_data_source(**kwargs)
+```
 
-<a id="list\_notifications"></a>
+1. See [:material-code-braces: ListKeywordsForDataSourceRequestRequestTypeDef](./type_defs.md#listkeywordsfordatasourcerequestrequesttypedef) 
 
-### list_notifications
+### list\_notifications
 
 Returns a list of all Audit Manager notifications.
 
-Type annotations for `boto3.client("auditmanager").list_notifications` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
 
-Boto3 documentation:
-[AuditManager.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_notifications)
+```python title="Method definition"
+def list_notifications(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListNotificationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNotificationsRequestRequestTypeDef](./type_defs.md#listnotificationsrequestrequesttypedef).
+1. See [:material-code-braces: ListNotificationsResponseTypeDef](./type_defs.md#listnotificationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListNotificationsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListNotificationsResponseTypeDef](./type_defs.md#listnotificationsresponsetypedef).
+parent.list_notifications(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListNotificationsRequestRequestTypeDef](./type_defs.md#listnotificationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags for the specified resource in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AuditManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="register\_account"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### register_account
+### register\_account
 
 Enables Audit Manager for the specified Amazon Web Services account.
 
-Type annotations for `boto3.client("auditmanager").register_account` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").register_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account)
 
-Boto3 documentation:
-[AuditManager.Client.register_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_account)
+```python title="Method definition"
+def register_account(
+    self,
+    *,
+    kmsKey: str = ...,
+    delegatedAdminAccount: str = ...,
+) -> RegisterAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterAccountRequestRequestTypeDef](./type_defs.md#registeraccountrequestrequesttypedef).
+1. See [:material-code-braces: RegisterAccountResponseTypeDef](./type_defs.md#registeraccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `kmsKey`: `str`
-- `delegatedAdminAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterAccountRequestRequestTypeDef = {  # (1)
+    "kmsKey": ...,
+}
 
-Returns
-[RegisterAccountResponseTypeDef](./type_defs.md#registeraccountresponsetypedef).
+parent.register_account(**kwargs)
+```
 
-<a id="register\_organization\_admin\_account"></a>
+1. See [:material-code-braces: RegisterAccountRequestRequestTypeDef](./type_defs.md#registeraccountrequestrequesttypedef) 
 
-### register_organization_admin_account
+### register\_organization\_admin\_account
 
 Enables an Amazon Web Services account within the organization as the delegated
 administrator for Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").register_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").register_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
 
-Boto3 documentation:
-[AuditManager.Client.register_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.register_organization_admin_account)
+```python title="Method definition"
+def register_organization_admin_account(
+    self,
+    *,
+    adminAccountId: str,
+) -> RegisterOrganizationAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#registerorganizationadminaccountrequestrequesttypedef).
+1. See [:material-code-braces: RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `adminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "adminAccountId": ...,
+}
 
-Returns
-[RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef).
+parent.register_organization_admin_account(**kwargs)
+```
 
-<a id="start\_assessment\_framework\_share"></a>
+1. See [:material-code-braces: RegisterOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#registerorganizationadminaccountrequestrequesttypedef) 
 
-### start_assessment_framework_share
+### start\_assessment\_framework\_share
 
 Creates a share request for a custom framework in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").start_assessment_framework_share` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").start_assessment_framework_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.start_assessment_framework_share)
 
-Boto3 documentation:
-[AuditManager.Client.start_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.start_assessment_framework_share)
+```python title="Method definition"
+def start_assessment_framework_share(
+    self,
+    *,
+    frameworkId: str,
+    destinationAccount: str,
+    destinationRegion: str,
+    comment: str = ...,
+) -> StartAssessmentFrameworkShareResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#startassessmentframeworksharerequestrequesttypedef).
+1. See [:material-code-braces: StartAssessmentFrameworkShareResponseTypeDef](./type_defs.md#startassessmentframeworkshareresponsetypedef) 
 
-Keyword-only arguments:
 
-- `frameworkId`: `str` *(required)*
-- `destinationAccount`: `str` *(required)*
-- `destinationRegion`: `str` *(required)*
-- `comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartAssessmentFrameworkShareRequestRequestTypeDef = {  # (1)
+    "frameworkId": ...,
+    "destinationAccount": ...,
+    "destinationRegion": ...,
+}
 
-Returns
-[StartAssessmentFrameworkShareResponseTypeDef](./type_defs.md#startassessmentframeworkshareresponsetypedef).
+parent.start_assessment_framework_share(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#startassessmentframeworksharerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags the specified resource in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
 
-Boto3 documentation:
-[AuditManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from a resource in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
 
-Boto3 documentation:
-[AuditManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_assessment"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_assessment
+### update\_assessment
 
 Edits an Audit Manager assessment.
 
-Type annotations for `boto3.client("auditmanager").update_assessment` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment)
+```python title="Method definition"
+def update_assessment(
+    self,
+    *,
+    assessmentId: str,
+    scope: ScopeTypeDef,  # (1)
+    assessmentName: str = ...,
+    assessmentDescription: str = ...,
+    assessmentReportsDestination: AssessmentReportsDestinationTypeDef = ...,  # (2)
+    roles: Sequence[RoleTypeDef] = ...,  # (3)
+) -> UpdateAssessmentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentRequestRequestTypeDef](./type_defs.md#updateassessmentrequestrequesttypedef).
+1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+2. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+3. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+4. See [:material-code-braces: UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef) *(required)*
-- `assessmentName`: `str`
-- `assessmentDescription`: `str`
-- `assessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `roles`: `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "scope": ...,
+}
 
-Returns
-[UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
+parent.update_assessment(**kwargs)
+```
 
-<a id="update\_assessment\_control"></a>
+1. See [:material-code-braces: UpdateAssessmentRequestRequestTypeDef](./type_defs.md#updateassessmentrequestrequesttypedef) 
 
-### update_assessment_control
+### update\_assessment\_control
 
 Updates a control within an assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").update_assessment_control`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control)
+```python title="Method definition"
+def update_assessment_control(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    controlId: str,
+    controlStatus: ControlStatusType = ...,  # (1)
+    commentBody: str = ...,
+) -> UpdateAssessmentControlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentControlRequestRequestTypeDef](./type_defs.md#updateassessmentcontrolrequestrequesttypedef).
+1. See [:material-code-brackets: ControlStatusType](./literals.md#controlstatustype) 
+2. See [:material-code-braces: UpdateAssessmentControlResponseTypeDef](./type_defs.md#updateassessmentcontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `controlId`: `str` *(required)*
-- `controlStatus`: [ControlStatusType](./literals.md#controlstatustype)
-- `commentBody`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentControlRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "controlId": ...,
+}
 
-Returns
-[UpdateAssessmentControlResponseTypeDef](./type_defs.md#updateassessmentcontrolresponsetypedef).
+parent.update_assessment_control(**kwargs)
+```
 
-<a id="update\_assessment\_control\_set\_status"></a>
+1. See [:material-code-braces: UpdateAssessmentControlRequestRequestTypeDef](./type_defs.md#updateassessmentcontrolrequestrequesttypedef) 
 
-### update_assessment_control_set_status
+### update\_assessment\_control\_set\_status
 
 Updates the status of a control set in an Audit Manager assessment.
 
-Type annotations for
-`boto3.client("auditmanager").update_assessment_control_set_status` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment_control_set_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment_control_set_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_control_set_status)
+```python title="Method definition"
+def update_assessment_control_set_status(
+    self,
+    *,
+    assessmentId: str,
+    controlSetId: str,
+    status: ControlSetStatusType,  # (1)
+    comment: str,
+) -> UpdateAssessmentControlSetStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentControlSetStatusRequestRequestTypeDef](./type_defs.md#updateassessmentcontrolsetstatusrequestrequesttypedef).
+1. See [:material-code-brackets: ControlSetStatusType](./literals.md#controlsetstatustype) 
+2. See [:material-code-braces: UpdateAssessmentControlSetStatusResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `controlSetId`: `str` *(required)*
-- `status`: [ControlSetStatusType](./literals.md#controlsetstatustype)
-  *(required)*
-- `comment`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentControlSetStatusRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "controlSetId": ...,
+    "status": ...,
+    "comment": ...,
+}
 
-Returns
-[UpdateAssessmentControlSetStatusResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponsetypedef).
+parent.update_assessment_control_set_status(**kwargs)
+```
 
-<a id="update\_assessment\_framework"></a>
+1. See [:material-code-braces: UpdateAssessmentControlSetStatusRequestRequestTypeDef](./type_defs.md#updateassessmentcontrolsetstatusrequestrequesttypedef) 
 
-### update_assessment_framework
+### update\_assessment\_framework
 
 Updates a custom framework in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").update_assessment_framework`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment_framework` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment_framework](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework)
+```python title="Method definition"
+def update_assessment_framework(
+    self,
+    *,
+    frameworkId: str,
+    name: str,
+    controlSets: Sequence[UpdateAssessmentFrameworkControlSetTypeDef],  # (1)
+    description: str = ...,
+    complianceType: str = ...,
+) -> UpdateAssessmentFrameworkResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#updateassessmentframeworkrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef) 
+2. See [:material-code-braces: UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `frameworkId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `controlSets`:
-  `Sequence`\[[UpdateAssessmentFrameworkControlSetTypeDef](./type_defs.md#updateassessmentframeworkcontrolsettypedef)\]
-  *(required)*
-- `description`: `str`
-- `complianceType`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentFrameworkRequestRequestTypeDef = {  # (1)
+    "frameworkId": ...,
+    "name": ...,
+    "controlSets": ...,
+}
 
-Returns
-[UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef).
+parent.update_assessment_framework(**kwargs)
+```
 
-<a id="update\_assessment\_framework\_share"></a>
+1. See [:material-code-braces: UpdateAssessmentFrameworkRequestRequestTypeDef](./type_defs.md#updateassessmentframeworkrequestrequesttypedef) 
 
-### update_assessment_framework_share
+### update\_assessment\_framework\_share
 
 Updates a share request for a custom framework in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").update_assessment_framework_share` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment_framework_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework_share)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment_framework_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_framework_share)
+```python title="Method definition"
+def update_assessment_framework_share(
+    self,
+    *,
+    requestId: str,
+    requestType: ShareRequestTypeType,  # (1)
+    action: ShareRequestActionType,  # (2)
+) -> UpdateAssessmentFrameworkShareResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#updateassessmentframeworksharerequestrequesttypedef).
+1. See [:material-code-brackets: ShareRequestTypeType](./literals.md#sharerequesttypetype) 
+2. See [:material-code-brackets: ShareRequestActionType](./literals.md#sharerequestactiontype) 
+3. See [:material-code-braces: UpdateAssessmentFrameworkShareResponseTypeDef](./type_defs.md#updateassessmentframeworkshareresponsetypedef) 
 
-Keyword-only arguments:
 
-- `requestId`: `str` *(required)*
-- `requestType`: [ShareRequestTypeType](./literals.md#sharerequesttypetype)
-  *(required)*
-- `action`: [ShareRequestActionType](./literals.md#sharerequestactiontype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentFrameworkShareRequestRequestTypeDef = {  # (1)
+    "requestId": ...,
+    "requestType": ...,
+    "action": ...,
+}
 
-Returns
-[UpdateAssessmentFrameworkShareResponseTypeDef](./type_defs.md#updateassessmentframeworkshareresponsetypedef).
+parent.update_assessment_framework_share(**kwargs)
+```
 
-<a id="update\_assessment\_status"></a>
+1. See [:material-code-braces: UpdateAssessmentFrameworkShareRequestRequestTypeDef](./type_defs.md#updateassessmentframeworksharerequestrequesttypedef) 
 
-### update_assessment_status
+### update\_assessment\_status
 
 Updates the status of an assessment in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").update_assessment_status`
-method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_assessment_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
 
-Boto3 documentation:
-[AuditManager.Client.update_assessment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_assessment_status)
+```python title="Method definition"
+def update_assessment_status(
+    self,
+    *,
+    assessmentId: str,
+    status: AssessmentStatusType,  # (1)
+) -> UpdateAssessmentStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentStatusRequestRequestTypeDef](./type_defs.md#updateassessmentstatusrequestrequesttypedef).
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-braces: UpdateAssessmentStatusResponseTypeDef](./type_defs.md#updateassessmentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentId`: `str` *(required)*
-- `status`: [AssessmentStatusType](./literals.md#assessmentstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentStatusRequestRequestTypeDef = {  # (1)
+    "assessmentId": ...,
+    "status": ...,
+}
 
-Returns
-[UpdateAssessmentStatusResponseTypeDef](./type_defs.md#updateassessmentstatusresponsetypedef).
+parent.update_assessment_status(**kwargs)
+```
 
-<a id="update\_control"></a>
+1. See [:material-code-braces: UpdateAssessmentStatusRequestRequestTypeDef](./type_defs.md#updateassessmentstatusrequestrequesttypedef) 
 
-### update_control
+### update\_control
 
 Updates a custom control in Audit Manager.
 
-Type annotations for `boto3.client("auditmanager").update_control` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control)
 
-Boto3 documentation:
-[AuditManager.Client.update_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_control)
+```python title="Method definition"
+def update_control(
+    self,
+    *,
+    controlId: str,
+    name: str,
+    controlMappingSources: Sequence[ControlMappingSourceTypeDef],  # (1)
+    description: str = ...,
+    testingInformation: str = ...,
+    actionPlanTitle: str = ...,
+    actionPlanInstructions: str = ...,
+) -> UpdateControlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateControlRequestRequestTypeDef](./type_defs.md#updatecontrolrequestrequesttypedef).
+1. See [:material-code-braces: ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef) 
+2. See [:material-code-braces: UpdateControlResponseTypeDef](./type_defs.md#updatecontrolresponsetypedef) 
 
-Keyword-only arguments:
 
-- `controlId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `controlMappingSources`:
-  `Sequence`\[[ControlMappingSourceTypeDef](./type_defs.md#controlmappingsourcetypedef)\]
-  *(required)*
-- `description`: `str`
-- `testingInformation`: `str`
-- `actionPlanTitle`: `str`
-- `actionPlanInstructions`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateControlRequestRequestTypeDef = {  # (1)
+    "controlId": ...,
+    "name": ...,
+    "controlMappingSources": ...,
+}
 
-Returns
-[UpdateControlResponseTypeDef](./type_defs.md#updatecontrolresponsetypedef).
+parent.update_control(**kwargs)
+```
 
-<a id="update\_settings"></a>
+1. See [:material-code-braces: UpdateControlRequestRequestTypeDef](./type_defs.md#updatecontrolrequestrequesttypedef) 
 
-### update_settings
+### update\_settings
 
 Updates Audit Manager settings for the current user account.
 
-Type annotations for `boto3.client("auditmanager").update_settings` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").update_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
 
-Boto3 documentation:
-[AuditManager.Client.update_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.update_settings)
+```python title="Method definition"
+def update_settings(
+    self,
+    *,
+    snsTopic: str = ...,
+    defaultAssessmentReportsDestination: AssessmentReportsDestinationTypeDef = ...,  # (1)
+    defaultProcessOwners: Sequence[RoleTypeDef] = ...,  # (2)
+    kmsKey: str = ...,
+) -> UpdateSettingsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSettingsRequestRequestTypeDef](./type_defs.md#updatesettingsrequestrequesttypedef).
+1. See [:material-code-braces: AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef) 
+2. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+3. See [:material-code-braces: UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `snsTopic`: `str`
-- `defaultAssessmentReportsDestination`:
-  [AssessmentReportsDestinationTypeDef](./type_defs.md#assessmentreportsdestinationtypedef)
-- `defaultProcessOwners`:
-  `Sequence`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `kmsKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSettingsRequestRequestTypeDef = {  # (1)
+    "snsTopic": ...,
+}
 
-Returns
-[UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef).
+parent.update_settings(**kwargs)
+```
 
-<a id="validate\_assessment\_report\_integrity"></a>
+1. See [:material-code-braces: UpdateSettingsRequestRequestTypeDef](./type_defs.md#updatesettingsrequestrequesttypedef) 
 
-### validate_assessment_report_integrity
+### validate\_assessment\_report\_integrity
 
 Validates the integrity of an assessment report in Audit Manager.
 
-Type annotations for
-`boto3.client("auditmanager").validate_assessment_report_integrity` method.
+Type annotations and code completion for `#!python boto3.client("auditmanager").validate_assessment_report_integrity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
 
-Boto3 documentation:
-[AuditManager.Client.validate_assessment_report_integrity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.validate_assessment_report_integrity)
+```python title="Method definition"
+def validate_assessment_report_integrity(
+    self,
+    *,
+    s3RelativePath: str,
+) -> ValidateAssessmentReportIntegrityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ValidateAssessmentReportIntegrityRequestRequestTypeDef](./type_defs.md#validateassessmentreportintegrityrequestrequesttypedef).
+1. See [:material-code-braces: ValidateAssessmentReportIntegrityResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `s3RelativePath`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ValidateAssessmentReportIntegrityRequestRequestTypeDef = {  # (1)
+    "s3RelativePath": ...,
+}
 
-Returns
-[ValidateAssessmentReportIntegrityResponseTypeDef](./type_defs.md#validateassessmentreportintegrityresponsetypedef).
+parent.validate_assessment_report_integrity(**kwargs)
+```
+
+1. See [:material-code-braces: ValidateAssessmentReportIntegrityRequestRequestTypeDef](./type_defs.md#validateassessmentreportintegrityrequestrequesttypedef) 
+
+
+
+

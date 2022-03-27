@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-cloudsearch-module"></a>
-
-# Examples for boto3 CloudSearch module
+# Examples
 
 > [Index](../README.md) > [CloudSearch](./README.md) > Examples
 
-- [Examples for boto3 CloudSearch module](#examples-for-boto3-cloudsearch-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+    type annotations stubs module [mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cloudsearch]` package installed.
 
-Write your `CloudSearch` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CloudSearch` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudSearchClient
-# and provides type checking and code completion
-client = session.client("cloudsearch")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BuildSuggestersResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.build_suggesters()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("cloudsearch")  # (1)
+    result = client.build_suggesters()  # (2)
+    ```
+
+    1. client: [CloudSearchClient](./client.md)
+    2. result: [:material-code-braces: BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cloudsearch]` or a standalone `mypy_boto3_cloudsearch`
-package, you have to explicitly specify `client: CloudSearchClient` type
-annotation.
+With `boto3-stubs-lite[cloudsearch]`
+or a standalone `mypy_boto3_cloudsearch` package, you have to explicitly specify `client: CloudSearchClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cloudsearch.client import CloudSearchClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cloudsearch.client import CloudSearchClient
+    from mypy_boto3_cloudsearch.type_defs import BuildSuggestersResponseTypeDef
+    from mypy_boto3_cloudsearch.type_defs import BuildSuggestersRequestRequestTypeDef
 
 
-from mypy_boto3_cloudsearch.type_defs import BuildSuggestersResponseTypeDef
+    session = Session()
+
+    client: CloudSearchClient = session.client("cloudsearch")
+
+    kwargs: BuildSuggestersRequestRequestTypeDef = {...}
+    result: BuildSuggestersResponseTypeDef = client.build_suggesters(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: CloudSearchClient = session.client("cloudsearch")
 
-result: BuildSuggestersResponseTypeDef = client.build_suggesters()
-```
+

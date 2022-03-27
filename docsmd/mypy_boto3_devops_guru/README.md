@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-devopsguru-module"></a>
-
-# Type annotations for boto3 DevOpsGuru module
+#  DevOpsGuru module
 
 > [Index](../README.md) > DevOpsGuru
 
-Auto-generated documentation for
-[DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
-type annotations stubs module
-[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+!!! note ""
 
-- [Type annotations for boto3 DevOpsGuru module](#type-annotations-for-boto3-devopsguru-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DevOpsGuruClient](#devopsguruclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
+    type annotations stubs module [mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DevOpsGuru`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[devops-guru]'
 python -m pip install mypy-boto3-devops-guru
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,88 +42,37 @@ python -m pip install mypy-boto3-devops-guru
 python -m pip uninstall -y mypy-boto3-devops-guru
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="devopsguruclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DevOpsGuruClient
 
-Type annotations for `boto3.client("devops-guru")` as
-[DevOpsGuruClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("devops-guru")` as [DevOpsGuruClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_devops_guru.client import DevOpsGuruClient
+
+def get_client() -> DevOpsGuruClient:
+    return Session().cleint("devops-guru")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_notification_channel](./client.md#add_notification_channel)
-- [can_paginate](./client.md#can_paginate)
-- [describe_account_health](./client.md#describe_account_health)
-- [describe_account_overview](./client.md#describe_account_overview)
-- [describe_anomaly](./client.md#describe_anomaly)
-- [describe_event_sources_config](./client.md#describe_event_sources_config)
-- [describe_feedback](./client.md#describe_feedback)
-- [describe_insight](./client.md#describe_insight)
-- [describe_organization_health](./client.md#describe_organization_health)
-- [describe_organization_overview](./client.md#describe_organization_overview)
-- [describe_organization_resource_collection_health](./client.md#describe_organization_resource_collection_health)
-- [describe_resource_collection_health](./client.md#describe_resource_collection_health)
-- [describe_service_integration](./client.md#describe_service_integration)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_cost_estimation](./client.md#get_cost_estimation)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_collection](./client.md#get_resource_collection)
-- [list_anomalies_for_insight](./client.md#list_anomalies_for_insight)
-- [list_events](./client.md#list_events)
-- [list_insights](./client.md#list_insights)
-- [list_notification_channels](./client.md#list_notification_channels)
-- [list_organization_insights](./client.md#list_organization_insights)
-- [list_recommendations](./client.md#list_recommendations)
-- [put_feedback](./client.md#put_feedback)
-- [remove_notification_channel](./client.md#remove_notification_channel)
-- [search_insights](./client.md#search_insights)
-- [search_organization_insights](./client.md#search_organization_insights)
-- [start_cost_estimation](./client.md#start_cost_estimation)
-- [update_event_sources_config](./client.md#update_event_sources_config)
-- [update_resource_collection](./client.md#update_resource_collection)
-- [update_service_integration](./client.md#update_service_integration)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DevOpsGuruClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("devops-guru").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("devops-guru").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator, ...
+from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator
+
+def get_describe_organization_resource_collection_health_paginator() -> DescribeOrganizationResourceCollectionHealthPaginator:
+    return Session().client("devops-guru").get_paginator("describe_organization_resource_collection_health"))
 ```
 
 - [DescribeOrganizationResourceCollectionHealthPaginator](./paginators.md#describeorganizationresourcecollectionhealthpaginator)
@@ -161,16 +88,23 @@ from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollect
 - [SearchInsightsPaginator](./paginators.md#searchinsightspaginator)
 - [SearchOrganizationInsightsPaginator](./paginators.md#searchorganizationinsightspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_devops_guru.literals import AnomalySeverityType
 
-```python
-from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
+def get_value() -> AnomalySeverityType:
+    return "HIGH"
 ```
 
 - [AnomalySeverityType](./literals.md#anomalyseveritytype)
@@ -210,17 +144,20 @@ from mypy_boto3_devops_guru.literals import AnomalySeverityType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef
 
-```python
-from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
+def get_value() -> AccountHealthTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
 - [AccountHealthTypeDef](./type_defs.md#accounthealthtypedef)
@@ -256,8 +193,10 @@ from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
 - [DescribeOrganizationHealthResponseTypeDef](./type_defs.md#describeorganizationhealthresponsetypedef)
 - [DescribeOrganizationOverviewRequestRequestTypeDef](./type_defs.md#describeorganizationoverviewrequestrequesttypedef)
 - [DescribeOrganizationOverviewResponseTypeDef](./type_defs.md#describeorganizationoverviewresponsetypedef)
+- [DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthrequestdescribeorganizationresourcecollectionhealthpaginatetypedef)
 - [DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthrequestrequesttypedef)
 - [DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef)
+- [DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef](./type_defs.md#describeresourcecollectionhealthrequestdescriberesourcecollectionhealthpaginatetypedef)
 - [DescribeResourceCollectionHealthRequestRequestTypeDef](./type_defs.md#describeresourcecollectionhealthrequestrequesttypedef)
 - [DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)
 - [DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef)
@@ -266,28 +205,36 @@ from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
 - [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
 - [EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef)
 - [EventTypeDef](./type_defs.md#eventtypedef)
+- [GetCostEstimationRequestGetCostEstimationPaginateTypeDef](./type_defs.md#getcostestimationrequestgetcostestimationpaginatetypedef)
 - [GetCostEstimationRequestRequestTypeDef](./type_defs.md#getcostestimationrequestrequesttypedef)
 - [GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef)
+- [GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef](./type_defs.md#getresourcecollectionrequestgetresourcecollectionpaginatetypedef)
 - [GetResourceCollectionRequestRequestTypeDef](./type_defs.md#getresourcecollectionrequestrequesttypedef)
 - [GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef)
 - [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
 - [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
 - [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
+- [ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef](./type_defs.md#listanomaliesforinsightrequestlistanomaliesforinsightpaginatetypedef)
 - [ListAnomaliesForInsightRequestRequestTypeDef](./type_defs.md#listanomaliesforinsightrequestrequesttypedef)
 - [ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef)
 - [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
+- [ListEventsRequestListEventsPaginateTypeDef](./type_defs.md#listeventsrequestlisteventspaginatetypedef)
 - [ListEventsRequestRequestTypeDef](./type_defs.md#listeventsrequestrequesttypedef)
 - [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef)
 - [ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef)
 - [ListInsightsClosedStatusFilterTypeDef](./type_defs.md#listinsightsclosedstatusfiltertypedef)
 - [ListInsightsOngoingStatusFilterTypeDef](./type_defs.md#listinsightsongoingstatusfiltertypedef)
+- [ListInsightsRequestListInsightsPaginateTypeDef](./type_defs.md#listinsightsrequestlistinsightspaginatetypedef)
 - [ListInsightsRequestRequestTypeDef](./type_defs.md#listinsightsrequestrequesttypedef)
 - [ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef)
 - [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
+- [ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef](./type_defs.md#listnotificationchannelsrequestlistnotificationchannelspaginatetypedef)
 - [ListNotificationChannelsRequestRequestTypeDef](./type_defs.md#listnotificationchannelsrequestrequesttypedef)
 - [ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)
+- [ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef](./type_defs.md#listorganizationinsightsrequestlistorganizationinsightspaginatetypedef)
 - [ListOrganizationInsightsRequestRequestTypeDef](./type_defs.md#listorganizationinsightsrequestrequesttypedef)
 - [ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef)
+- [ListRecommendationsRequestListRecommendationsPaginateTypeDef](./type_defs.md#listrecommendationsrequestlistrecommendationspaginatetypedef)
 - [ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef)
 - [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)
 - [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
@@ -328,9 +275,11 @@ from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
 - [SearchInsightsRequestRequestTypeDef](./type_defs.md#searchinsightsrequestrequesttypedef)
+- [SearchInsightsRequestSearchInsightsPaginateTypeDef](./type_defs.md#searchinsightsrequestsearchinsightspaginatetypedef)
 - [SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)
 - [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
 - [SearchOrganizationInsightsRequestRequestTypeDef](./type_defs.md#searchorganizationinsightsrequestrequesttypedef)
+- [SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef](./type_defs.md#searchorganizationinsightsrequestsearchorganizationinsightspaginatetypedef)
 - [SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef)
 - [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
 - [ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)
@@ -352,3 +301,4 @@ from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef, ...
 - [UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef)
 - [UpdateServiceIntegrationRequestRequestTypeDef](./type_defs.md#updateserviceintegrationrequestrequesttypedef)
 - [UpdateTagCollectionFilterTypeDef](./type_defs.md#updatetagcollectionfiltertypedef)
+

@@ -1,599 +1,647 @@
-<a id="literals-for-boto3-applicationautoscaling-module"></a>
-
-# Literals for boto3 ApplicationAutoScaling module
+# Literals
 
 > [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Literals
 
-Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module
-[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+!!! note ""
 
-- [Literals for boto3 ApplicationAutoScaling module](#literals-for-boto3-applicationautoscaling-module)
-  - [AdjustmentTypeType](#adjustmenttypetype)
-  - [DescribeScalableTargetsPaginatorName](#describescalabletargetspaginatorname)
-  - [DescribeScalingActivitiesPaginatorName](#describescalingactivitiespaginatorname)
-  - [DescribeScalingPoliciesPaginatorName](#describescalingpoliciespaginatorname)
-  - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
-  - [MetricAggregationTypeType](#metricaggregationtypetype)
-  - [MetricStatisticType](#metricstatistictype)
-  - [MetricTypeType](#metrictypetype)
-  - [PolicyTypeType](#policytypetype)
-  - [ScalableDimensionType](#scalabledimensiontype)
-  - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
-  - [ServiceNamespaceType](#servicenamespacetype)
-  - [ApplicationAutoScalingServiceName](#applicationautoscalingservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="adjustmenttypetype"></a>
+    Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+    type annotations stubs module [mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ## AdjustmentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType
+
+def get_value() -> AdjustmentTypeType:
+    return "ChangeInCapacity"
 ```
 
-Values:
-
-- `ChangeInCapacity`
-- `ExactCapacity`
-- `PercentChangeInCapacity`
-
-<a id="describescalabletargetspaginatorname"></a>
-
+```python title="Definition"
+AdjustmentTypeType = Literal[
+    "ChangeInCapacity",
+    "ExactCapacity",
+    "PercentChangeInCapacity",
+]
+```
 ## DescribeScalableTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import DescribeScalableTargetsPaginatorName
+
+def get_value() -> DescribeScalableTargetsPaginatorName:
+    return "describe_scalable_targets"
 ```
 
-Values:
-
-- `describe_scalable_targets`
-
-<a id="describescalingactivitiespaginatorname"></a>
-
+```python title="Definition"
+DescribeScalableTargetsPaginatorName = Literal[
+    "describe_scalable_targets",
+]
+```
 ## DescribeScalingActivitiesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import DescribeScalingActivitiesPaginatorName
+
+def get_value() -> DescribeScalingActivitiesPaginatorName:
+    return "describe_scaling_activities"
 ```
 
-Values:
-
-- `describe_scaling_activities`
-
-<a id="describescalingpoliciespaginatorname"></a>
-
+```python title="Definition"
+DescribeScalingActivitiesPaginatorName = Literal[
+    "describe_scaling_activities",
+]
+```
 ## DescribeScalingPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import DescribeScalingPoliciesPaginatorName
+
+def get_value() -> DescribeScalingPoliciesPaginatorName:
+    return "describe_scaling_policies"
 ```
 
-Values:
-
-- `describe_scaling_policies`
-
-<a id="describescheduledactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeScalingPoliciesPaginatorName = Literal[
+    "describe_scaling_policies",
+]
+```
 ## DescribeScheduledActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import DescribeScheduledActionsPaginatorName
+
+def get_value() -> DescribeScheduledActionsPaginatorName:
+    return "describe_scheduled_actions"
 ```
 
-Values:
-
-- `describe_scheduled_actions`
-
-<a id="metricaggregationtypetype"></a>
-
+```python title="Definition"
+DescribeScheduledActionsPaginatorName = Literal[
+    "describe_scheduled_actions",
+]
+```
 ## MetricAggregationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import MetricAggregationTypeType
+
+def get_value() -> MetricAggregationTypeType:
+    return "Average"
 ```
 
-Values:
-
-- `Average`
-- `Maximum`
-- `Minimum`
-
-<a id="metricstatistictype"></a>
-
+```python title="Definition"
+MetricAggregationTypeType = Literal[
+    "Average",
+    "Maximum",
+    "Minimum",
+]
+```
 ## MetricStatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import MetricStatisticType
+
+def get_value() -> MetricStatisticType:
+    return "Average"
 ```
 
-Values:
-
-- `Average`
-- `Maximum`
-- `Minimum`
-- `SampleCount`
-- `Sum`
-
-<a id="metrictypetype"></a>
-
+```python title="Definition"
+MetricStatisticType = Literal[
+    "Average",
+    "Maximum",
+    "Minimum",
+    "SampleCount",
+    "Sum",
+]
+```
 ## MetricTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import MetricTypeType
+
+def get_value() -> MetricTypeType:
+    return "ALBRequestCountPerTarget"
 ```
 
-Values:
-
-- `ALBRequestCountPerTarget`
-- `AppStreamAverageCapacityUtilization`
-- `CassandraReadCapacityUtilization`
-- `CassandraWriteCapacityUtilization`
-- `ComprehendInferenceUtilization`
-- `DynamoDBReadCapacityUtilization`
-- `DynamoDBWriteCapacityUtilization`
-- `EC2SpotFleetRequestAverageCPUUtilization`
-- `EC2SpotFleetRequestAverageNetworkIn`
-- `EC2SpotFleetRequestAverageNetworkOut`
-- `ECSServiceAverageCPUUtilization`
-- `ECSServiceAverageMemoryUtilization`
-- `ElastiCacheDatabaseMemoryUsageCountedForEvictPercentage`
-- `ElastiCachePrimaryEngineCPUUtilization`
-- `ElastiCacheReplicaEngineCPUUtilization`
-- `KafkaBrokerStorageUtilization`
-- `LambdaProvisionedConcurrencyUtilization`
-- `NeptuneReaderAverageCPUUtilization`
-- `RDSReaderAverageCPUUtilization`
-- `RDSReaderAverageDatabaseConnections`
-- `SageMakerVariantInvocationsPerInstance`
-
-<a id="policytypetype"></a>
-
+```python title="Definition"
+MetricTypeType = Literal[
+    "ALBRequestCountPerTarget",
+    "AppStreamAverageCapacityUtilization",
+    "CassandraReadCapacityUtilization",
+    "CassandraWriteCapacityUtilization",
+    "ComprehendInferenceUtilization",
+    "DynamoDBReadCapacityUtilization",
+    "DynamoDBWriteCapacityUtilization",
+    "EC2SpotFleetRequestAverageCPUUtilization",
+    "EC2SpotFleetRequestAverageNetworkIn",
+    "EC2SpotFleetRequestAverageNetworkOut",
+    "ECSServiceAverageCPUUtilization",
+    "ECSServiceAverageMemoryUtilization",
+    "ElastiCacheDatabaseMemoryUsageCountedForEvictPercentage",
+    "ElastiCachePrimaryEngineCPUUtilization",
+    "ElastiCacheReplicaEngineCPUUtilization",
+    "KafkaBrokerStorageUtilization",
+    "LambdaProvisionedConcurrencyUtilization",
+    "NeptuneReaderAverageCPUUtilization",
+    "RDSReaderAverageCPUUtilization",
+    "RDSReaderAverageDatabaseConnections",
+    "SageMakerVariantInvocationsPerInstance",
+]
+```
 ## PolicyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import PolicyTypeType
+
+def get_value() -> PolicyTypeType:
+    return "StepScaling"
 ```
 
-Values:
-
-- `StepScaling`
-- `TargetTrackingScaling`
-
-<a id="scalabledimensiontype"></a>
-
+```python title="Definition"
+PolicyTypeType = Literal[
+    "StepScaling",
+    "TargetTrackingScaling",
+]
+```
 ## ScalableDimensionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ScalableDimensionType
+
+def get_value() -> ScalableDimensionType:
+    return "appstream:fleet:DesiredCapacity"
 ```
 
-Values:
-
-- `appstream:fleet:DesiredCapacity`
-- `cassandra:table:ReadCapacityUnits`
-- `cassandra:table:WriteCapacityUnits`
-- `comprehend:document-classifier-endpoint:DesiredInferenceUnits`
-- `comprehend:entity-recognizer-endpoint:DesiredInferenceUnits`
-- `custom-resource:ResourceType:Property`
-- `dynamodb:index:ReadCapacityUnits`
-- `dynamodb:index:WriteCapacityUnits`
-- `dynamodb:table:ReadCapacityUnits`
-- `dynamodb:table:WriteCapacityUnits`
-- `ec2:spot-fleet-request:TargetCapacity`
-- `ecs:service:DesiredCount`
-- `elasticache:replication-group:NodeGroups`
-- `elasticache:replication-group:Replicas`
-- `elasticmapreduce:instancegroup:InstanceCount`
-- `kafka:broker-storage:VolumeSize`
-- `lambda:function:ProvisionedConcurrency`
-- `neptune:cluster:ReadReplicaCount`
-- `rds:cluster:ReadReplicaCount`
-- `sagemaker:variant:DesiredInstanceCount`
-
-<a id="scalingactivitystatuscodetype"></a>
-
+```python title="Definition"
+ScalableDimensionType = Literal[
+    "appstream:fleet:DesiredCapacity",
+    "cassandra:table:ReadCapacityUnits",
+    "cassandra:table:WriteCapacityUnits",
+    "comprehend:document-classifier-endpoint:DesiredInferenceUnits",
+    "comprehend:entity-recognizer-endpoint:DesiredInferenceUnits",
+    "custom-resource:ResourceType:Property",
+    "dynamodb:index:ReadCapacityUnits",
+    "dynamodb:index:WriteCapacityUnits",
+    "dynamodb:table:ReadCapacityUnits",
+    "dynamodb:table:WriteCapacityUnits",
+    "ec2:spot-fleet-request:TargetCapacity",
+    "ecs:service:DesiredCount",
+    "elasticache:replication-group:NodeGroups",
+    "elasticache:replication-group:Replicas",
+    "elasticmapreduce:instancegroup:InstanceCount",
+    "kafka:broker-storage:VolumeSize",
+    "lambda:function:ProvisionedConcurrency",
+    "neptune:cluster:ReadReplicaCount",
+    "rds:cluster:ReadReplicaCount",
+    "sagemaker:variant:DesiredInstanceCount",
+]
+```
 ## ScalingActivityStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ScalingActivityStatusCodeType
+
+def get_value() -> ScalingActivityStatusCodeType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Overridden`
-- `Pending`
-- `Successful`
-- `Unfulfilled`
-
-<a id="servicenamespacetype"></a>
-
+```python title="Definition"
+ScalingActivityStatusCodeType = Literal[
+    "Failed",
+    "InProgress",
+    "Overridden",
+    "Pending",
+    "Successful",
+    "Unfulfilled",
+]
+```
 ## ServiceNamespaceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ServiceNamespaceType
+
+def get_value() -> ServiceNamespaceType:
+    return "appstream"
 ```
 
-Values:
-
-- `appstream`
-- `cassandra`
-- `comprehend`
-- `custom-resource`
-- `dynamodb`
-- `ec2`
-- `ecs`
-- `elasticache`
-- `elasticmapreduce`
-- `kafka`
-- `lambda`
-- `neptune`
-- `rds`
-- `sagemaker`
-
-<a id="applicationautoscalingservicename"></a>
-
+```python title="Definition"
+ServiceNamespaceType = Literal[
+    "appstream",
+    "cassandra",
+    "comprehend",
+    "custom-resource",
+    "dynamodb",
+    "ec2",
+    "ecs",
+    "elasticache",
+    "elasticmapreduce",
+    "kafka",
+    "lambda",
+    "neptune",
+    "rds",
+    "sagemaker",
+]
+```
 ## ApplicationAutoScalingServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ApplicationAutoScalingServiceName
+
+def get_value() -> ApplicationAutoScalingServiceName:
+    return "application-autoscaling"
 ```
 
-Values:
-
-- `application-autoscaling`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ApplicationAutoScalingServiceName = Literal[
+    "application-autoscaling",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_scalable_targets"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_scalable_targets",
+    "describe_scaling_activities",
+    "describe_scaling_policies",
+    "describe_scheduled_actions",
+]
+```
+## RegionName
 
-- `describe_scalable_targets`
-- `describe_scaling_activities`
-- `describe_scaling_policies`
-- `describe_scheduled_actions`
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

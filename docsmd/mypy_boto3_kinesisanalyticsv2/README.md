@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-kinesisanalyticsv2-module"></a>
-
-# Type annotations for boto3 KinesisAnalyticsV2 module
+#  KinesisAnalyticsV2 module
 
 > [Index](../README.md) > KinesisAnalyticsV2
 
-Auto-generated documentation for
-[KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
-type annotations stubs module
-[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+!!! note ""
 
-- [Type annotations for boto3 KinesisAnalyticsV2 module](#type-annotations-for-boto3-kinesisanalyticsv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KinesisAnalyticsV2Client](#kinesisanalyticsv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+    type annotations stubs module [mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `KinesisAnalyticsV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kinesisanalyticsv2]'
 python -m pip install mypy-boto3-kinesisanalyticsv2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,112 +42,59 @@ python -m pip install mypy-boto3-kinesisanalyticsv2
 python -m pip uninstall -y mypy-boto3-kinesisanalyticsv2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kinesisanalyticsv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KinesisAnalyticsV2Client
 
-Type annotations for `boto3.client("kinesisanalyticsv2")` as
-[KinesisAnalyticsV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kinesisanalyticsv2")` as [KinesisAnalyticsV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
+
+def get_client() -> KinesisAnalyticsV2Client:
+    return Session().cleint("kinesisanalyticsv2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_application_cloud_watch_logging_option](./client.md#add_application_cloud_watch_logging_option)
-- [add_application_input](./client.md#add_application_input)
-- [add_application_input_processing_configuration](./client.md#add_application_input_processing_configuration)
-- [add_application_output](./client.md#add_application_output)
-- [add_application_reference_data_source](./client.md#add_application_reference_data_source)
-- [add_application_vpc_configuration](./client.md#add_application_vpc_configuration)
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_application_presigned_url](./client.md#create_application_presigned_url)
-- [create_application_snapshot](./client.md#create_application_snapshot)
-- [delete_application](./client.md#delete_application)
-- [delete_application_cloud_watch_logging_option](./client.md#delete_application_cloud_watch_logging_option)
-- [delete_application_input_processing_configuration](./client.md#delete_application_input_processing_configuration)
-- [delete_application_output](./client.md#delete_application_output)
-- [delete_application_reference_data_source](./client.md#delete_application_reference_data_source)
-- [delete_application_snapshot](./client.md#delete_application_snapshot)
-- [delete_application_vpc_configuration](./client.md#delete_application_vpc_configuration)
-- [describe_application](./client.md#describe_application)
-- [describe_application_snapshot](./client.md#describe_application_snapshot)
-- [describe_application_version](./client.md#describe_application_version)
-- [discover_input_schema](./client.md#discover_input_schema)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_application_snapshots](./client.md#list_application_snapshots)
-- [list_application_versions](./client.md#list_application_versions)
-- [list_applications](./client.md#list_applications)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [rollback_application](./client.md#rollback_application)
-- [start_application](./client.md#start_application)
-- [stop_application](./client.md#stop_application)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_application_maintenance_configuration](./client.md#update_application_maintenance_configuration)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
-
-- ClientError
-- CodeValidationException
-- ConcurrentModificationException
-- InvalidApplicationConfigurationException
-- InvalidArgumentException
-- InvalidRequestException
-- LimitExceededException
-- ResourceInUseException
-- ResourceNotFoundException
-- ResourceProvisionedThroughputExceededException
-- ServiceUnavailableException
-- TooManyTagsException
-- UnableToDetectSchemaException
-- UnsupportedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kinesisanalyticsv2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kinesisanalyticsv2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator, ...
+from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator
+
+def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPaginator:
+    return Session().client("kinesisanalyticsv2").get_paginator("list_application_snapshots"))
 ```
 
 - [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType
 
-```python
-from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
+def get_value() -> ApplicationModeType:
+    return "INTERACTIVE"
 ```
 
 - [ApplicationModeType](./literals.md#applicationmodetype)
@@ -191,18 +116,23 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
-```python
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef, ...
+def get_value() -> AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "CloudWatchLoggingOption": ...,
+    }
 ```
 
 - [AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionrequestrequesttypedef)
@@ -315,10 +245,12 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [LambdaOutputDescriptionTypeDef](./type_defs.md#lambdaoutputdescriptiontypedef)
 - [LambdaOutputTypeDef](./type_defs.md#lambdaoutputtypedef)
 - [LambdaOutputUpdateTypeDef](./type_defs.md#lambdaoutputupdatetypedef)
+- [ListApplicationSnapshotsRequestListApplicationSnapshotsPaginateTypeDef](./type_defs.md#listapplicationsnapshotsrequestlistapplicationsnapshotspaginatetypedef)
 - [ListApplicationSnapshotsRequestRequestTypeDef](./type_defs.md#listapplicationsnapshotsrequestrequesttypedef)
 - [ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef)
 - [ListApplicationVersionsRequestRequestTypeDef](./type_defs.md#listapplicationversionsrequestrequesttypedef)
 - [ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef)
+- [ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef)
 - [ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef)
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -381,3 +313,4 @@ from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLogg
 - [ZeppelinMonitoringConfigurationDescriptionTypeDef](./type_defs.md#zeppelinmonitoringconfigurationdescriptiontypedef)
 - [ZeppelinMonitoringConfigurationTypeDef](./type_defs.md#zeppelinmonitoringconfigurationtypedef)
 - [ZeppelinMonitoringConfigurationUpdateTypeDef](./type_defs.md#zeppelinmonitoringconfigurationupdatetypedef)
+

@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-route53domains-module"></a>
-
-# Paginators for boto3 Route53Domains module
+# Paginators
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Paginators
 
-Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module
-[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+!!! note ""
 
-- [Paginators for boto3 Route53Domains module](#paginators-for-boto3-route53domains-module)
-  - [ListDomainsPaginator](#listdomainspaginator)
-  - [ListOperationsPaginator](#listoperationspaginator)
-  - [ListPricesPaginator](#listpricespaginator)
-  - [ViewBillingPaginator](#viewbillingpaginator)
-
-<a id="listdomainspaginator"></a>
+    Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+    type annotations stubs module [mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 ## ListDomainsPaginator
 
-Type annotations for
-`boto3.client("route53domains").get_paginator("list_domains")`.
+Type annotations and code completion for `#!python boto3.client("route53domains").get_paginator("list_domains")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53domains.paginator import ListDomainsPaginator
@@ -33,30 +21,43 @@ def get_list_domains_paginator() -> ListDomainsPaginator:
     return Session().client("route53domains").get_paginator("list_domains")
 ```
 
-Boto3 documentation:
-[Route53Domains.Paginator.ListDomains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListDomains)
 
-Arguments for `ListDomainsPaginator.paginate` method:
+### paginate
 
-- `FilterConditions`:
-  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
-- `SortCondition`: [SortConditionTypeDef](./type_defs.md#sortconditiontypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDomainsPaginator.paginate` method.
 
-`ListDomainsPaginator.paginate` returns
-`_PageIterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FilterConditions: Sequence[FilterConditionTypeDef] = ...,  # (1)
+    SortCondition: SortConditionTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListDomainsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listoperationspaginator"></a>
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+2. See [:material-code-braces: SortConditionTypeDef](./type_defs.md#sortconditiontypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestListDomainsPaginateTypeDef = {  # (1)
+    "FilterConditions": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef) 
 ## ListOperationsPaginator
 
-Type annotations for
-`boto3.client("route53domains").get_paginator("list_operations")`.
+Type annotations and code completion for `#!python boto3.client("route53domains").get_paginator("list_operations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53domains.paginator import ListOperationsPaginator
@@ -65,28 +66,40 @@ def get_list_operations_paginator() -> ListOperationsPaginator:
     return Session().client("route53domains").get_paginator("list_operations")
 ```
 
-Boto3 documentation:
-[Route53Domains.Paginator.ListOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListOperations)
 
-Arguments for `ListOperationsPaginator.paginate` method:
+### paginate
 
-- `SubmittedSince`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOperationsPaginator.paginate` method.
 
-`ListOperationsPaginator.paginate` returns
-`_PageIterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubmittedSince: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOperationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpricespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOperationsRequestListOperationsPaginateTypeDef = {  # (1)
+    "SubmittedSince": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOperationsRequestListOperationsPaginateTypeDef](./type_defs.md#listoperationsrequestlistoperationspaginatetypedef) 
 ## ListPricesPaginator
 
-Type annotations for
-`boto3.client("route53domains").get_paginator("list_prices")`.
+Type annotations and code completion for `#!python boto3.client("route53domains").get_paginator("list_prices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListPrices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53domains.paginator import ListPricesPaginator
@@ -95,28 +108,40 @@ def get_list_prices_paginator() -> ListPricesPaginator:
     return Session().client("route53domains").get_paginator("list_prices")
 ```
 
-Boto3 documentation:
-[Route53Domains.Paginator.ListPrices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ListPrices)
 
-Arguments for `ListPricesPaginator.paginate` method:
+### paginate
 
-- `Tld`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPricesPaginator.paginate` method.
 
-`ListPricesPaginator.paginate` returns
-`_PageIterator`\[[ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Tld: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPricesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="viewbillingpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPricesRequestListPricesPaginateTypeDef = {  # (1)
+    "Tld": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPricesRequestListPricesPaginateTypeDef](./type_defs.md#listpricesrequestlistpricespaginatetypedef) 
 ## ViewBillingPaginator
 
-Type annotations for
-`boto3.client("route53domains").get_paginator("view_billing")`.
+Type annotations and code completion for `#!python boto3.client("route53domains").get_paginator("view_billing")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53domains.paginator import ViewBillingPaginator
@@ -125,15 +150,32 @@ def get_view_billing_paginator() -> ViewBillingPaginator:
     return Session().client("route53domains").get_paginator("view_billing")
 ```
 
-Boto3 documentation:
-[Route53Domains.Paginator.ViewBilling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Paginator.ViewBilling)
 
-Arguments for `ViewBillingPaginator.paginate` method:
+### paginate
 
-- `Start`: `Union`\[`datetime`, `str`\]
-- `End`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ViewBillingPaginator.paginate` method.
 
-`ViewBillingPaginator.paginate` returns
-`_PageIterator`\[[ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Start: Union[datetime, str] = ...,
+    End: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ViewBillingResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ViewBillingRequestViewBillingPaginateTypeDef = {  # (1)
+    "Start": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ViewBillingRequestViewBillingPaginateTypeDef](./type_defs.md#viewbillingrequestviewbillingpaginatetypedef) 

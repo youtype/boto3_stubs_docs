@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-kms-module"></a>
-
-# Paginators for boto3 KMS module
+# Paginators
 
 > [Index](../README.md) > [KMS](./README.md) > Paginators
 
-Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module
-[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
+!!! note ""
 
-- [Paginators for boto3 KMS module](#paginators-for-boto3-kms-module)
-  - [ListAliasesPaginator](#listaliasespaginator)
-  - [ListGrantsPaginator](#listgrantspaginator)
-  - [ListKeyPoliciesPaginator](#listkeypoliciespaginator)
-  - [ListKeysPaginator](#listkeyspaginator)
-
-<a id="listaliasespaginator"></a>
+    Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+    type annotations stubs module [mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 ## ListAliasesPaginator
 
-Type annotations for `boto3.client("kms").get_paginator("list_aliases")`.
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_aliases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kms.paginator import ListAliasesPaginator
@@ -32,27 +21,40 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("kms").get_paginator("list_aliases")
 ```
 
-Boto3 documentation:
-[KMS.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListAliases)
 
-Arguments for `ListAliasesPaginator.paginate` method:
+### paginate
 
-- `KeyId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAliasesPaginator.paginate` method.
 
-`ListAliasesPaginator.paginate` returns
-`_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    KeyId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAliasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgrantspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestListAliasesPaginateTypeDef = {  # (1)
+    "KeyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef) 
 ## ListGrantsPaginator
 
-Type annotations for `boto3.client("kms").get_paginator("list_grants")`.
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_grants")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kms.paginator import ListGrantsPaginator
@@ -61,29 +63,42 @@ def get_list_grants_paginator() -> ListGrantsPaginator:
     return Session().client("kms").get_paginator("list_grants")
 ```
 
-Boto3 documentation:
-[KMS.Paginator.ListGrants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListGrants)
 
-Arguments for `ListGrantsPaginator.paginate` method:
+### paginate
 
-- `KeyId`: `str` *(required)*
-- `GrantId`: `str`
-- `GranteePrincipal`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGrantsPaginator.paginate` method.
 
-`ListGrantsPaginator.paginate` returns
-`_PageIterator`\[[ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    KeyId: str,
+    GrantId: str = ...,
+    GranteePrincipal: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGrantsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listkeypoliciespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGrantsRequestListGrantsPaginateTypeDef = {  # (1)
+    "KeyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGrantsRequestListGrantsPaginateTypeDef](./type_defs.md#listgrantsrequestlistgrantspaginatetypedef) 
 ## ListKeyPoliciesPaginator
 
-Type annotations for `boto3.client("kms").get_paginator("list_key_policies")`.
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_key_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kms.paginator import ListKeyPoliciesPaginator
@@ -92,27 +107,40 @@ def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
     return Session().client("kms").get_paginator("list_key_policies")
 ```
 
-Boto3 documentation:
-[KMS.Paginator.ListKeyPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeyPolicies)
 
-Arguments for `ListKeyPoliciesPaginator.paginate` method:
+### paginate
 
-- `KeyId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListKeyPoliciesPaginator.paginate` method.
 
-`ListKeyPoliciesPaginator.paginate` returns
-`_PageIterator`\[[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    KeyId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListKeyPoliciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listkeyspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef = {  # (1)
+    "KeyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef](./type_defs.md#listkeypoliciesrequestlistkeypoliciespaginatetypedef) 
 ## ListKeysPaginator
 
-Type annotations for `boto3.client("kms").get_paginator("list_keys")`.
+Type annotations and code completion for `#!python boto3.client("kms").get_paginator("list_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_kms.paginator import ListKeysPaginator
@@ -121,13 +149,30 @@ def get_list_keys_paginator() -> ListKeysPaginator:
     return Session().client("kms").get_paginator("list_keys")
 ```
 
-Boto3 documentation:
-[KMS.Paginator.ListKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Paginator.ListKeys)
 
-Arguments for `ListKeysPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListKeysPaginator.paginate` method.
 
-`ListKeysPaginator.paginate` returns
-`_PageIterator`\[[ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListKeysResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListKeysRequestListKeysPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListKeysRequestListKeysPaginateTypeDef](./type_defs.md#listkeysrequestlistkeyspaginatetypedef) 

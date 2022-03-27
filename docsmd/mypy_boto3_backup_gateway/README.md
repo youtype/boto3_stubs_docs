@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-backupgateway-module"></a>
-
-# Type annotations for boto3 BackupGateway module
+#  BackupGateway module
 
 > [Index](../README.md) > BackupGateway
 
-Auto-generated documentation for
-[BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
-type annotations stubs module
-[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+!!! note ""
 
-- [Type annotations for boto3 BackupGateway module](#type-annotations-for-boto3-backupgateway-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [BackupGatewayClient](#backupgatewayclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
+    type annotations stubs module [mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `BackupGateway`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[backup-gateway]'
 python -m pip install mypy-boto3-backup-gateway
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,90 +42,60 @@ python -m pip install mypy-boto3-backup-gateway
 python -m pip uninstall -y mypy-boto3-backup-gateway
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="backupgatewayclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## BackupGatewayClient
 
-Type annotations for `boto3.client("backup-gateway")` as
-[BackupGatewayClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("backup-gateway")` as [BackupGatewayClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_backup_gateway.client import BackupGatewayClient
+
+def get_client() -> BackupGatewayClient:
+    return Session().cleint("backup-gateway")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_gateway_to_server](./client.md#associate_gateway_to_server)
-- [can_paginate](./client.md#can_paginate)
-- [create_gateway](./client.md#create_gateway)
-- [delete_gateway](./client.md#delete_gateway)
-- [delete_hypervisor](./client.md#delete_hypervisor)
-- [disassociate_gateway_from_server](./client.md#disassociate_gateway_from_server)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [import_hypervisor_configuration](./client.md#import_hypervisor_configuration)
-- [list_gateways](./client.md#list_gateways)
-- [list_hypervisors](./client.md#list_hypervisors)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_virtual_machines](./client.md#list_virtual_machines)
-- [put_maintenance_start_time](./client.md#put_maintenance_start_time)
-- [tag_resource](./client.md#tag_resource)
-- [test_hypervisor_configuration](./client.md#test_hypervisor_configuration)
-- [untag_resource](./client.md#untag_resource)
-- [update_gateway_information](./client.md#update_gateway_information)
-- [update_hypervisor](./client.md#update_hypervisor)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-BackupGatewayClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("backup-gateway").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("backup-gateway").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_backup_gateway.paginator import ListGatewaysPaginator, ...
+from mypy_boto3_backup_gateway.paginator import ListGatewaysPaginator
+
+def get_list_gateways_paginator() -> ListGatewaysPaginator:
+    return Session().client("backup-gateway").get_paginator("list_gateways"))
 ```
 
 - [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
 - [ListHypervisorsPaginator](./paginators.md#listhypervisorspaginator)
 - [ListVirtualMachinesPaginator](./paginators.md#listvirtualmachinespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_backup_gateway.literals import GatewayTypeType
 
-```python
-from mypy_boto3_backup_gateway.literals import GatewayTypeType, ...
+def get_value() -> GatewayTypeType:
+    return "BACKUP_VM"
 ```
 
 - [GatewayTypeType](./literals.md#gatewaytypetype)
@@ -160,17 +108,21 @@ from mypy_boto3_backup_gateway.literals import GatewayTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerInputRequestTypeDef
 
-```python
-from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerInputRequestTypeDef, ...
+def get_value() -> AssociateGatewayToServerInputRequestTypeDef:
+    return {
+        "GatewayArn": ...,
+        "ServerArn": ...,
+    }
 ```
 
 - [AssociateGatewayToServerInputRequestTypeDef](./type_defs.md#associategatewaytoserverinputrequesttypedef)
@@ -187,12 +139,15 @@ from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerInputReq
 - [HypervisorTypeDef](./type_defs.md#hypervisortypedef)
 - [ImportHypervisorConfigurationInputRequestTypeDef](./type_defs.md#importhypervisorconfigurationinputrequesttypedef)
 - [ImportHypervisorConfigurationOutputTypeDef](./type_defs.md#importhypervisorconfigurationoutputtypedef)
+- [ListGatewaysInputListGatewaysPaginateTypeDef](./type_defs.md#listgatewaysinputlistgatewayspaginatetypedef)
 - [ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef)
 - [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)
+- [ListHypervisorsInputListHypervisorsPaginateTypeDef](./type_defs.md#listhypervisorsinputlisthypervisorspaginatetypedef)
 - [ListHypervisorsInputRequestTypeDef](./type_defs.md#listhypervisorsinputrequesttypedef)
 - [ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
+- [ListVirtualMachinesInputListVirtualMachinesPaginateTypeDef](./type_defs.md#listvirtualmachinesinputlistvirtualmachinespaginatetypedef)
 - [ListVirtualMachinesInputRequestTypeDef](./type_defs.md#listvirtualmachinesinputrequesttypedef)
 - [ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -210,3 +165,4 @@ from mypy_boto3_backup_gateway.type_defs import AssociateGatewayToServerInputReq
 - [UpdateHypervisorInputRequestTypeDef](./type_defs.md#updatehypervisorinputrequesttypedef)
 - [UpdateHypervisorOutputTypeDef](./type_defs.md#updatehypervisoroutputtypedef)
 - [VirtualMachineTypeDef](./type_defs.md#virtualmachinetypedef)
+

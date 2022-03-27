@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-lexmodelsv2-module"></a>
-
-# Type annotations for boto3 LexModelsV2 module
+#  LexModelsV2 module
 
 > [Index](../README.md) > LexModelsV2
 
-Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module
-[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+!!! note ""
 
-- [Type annotations for boto3 LexModelsV2 module](#type-annotations-for-boto3-lexmodelsv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LexModelsV2Client](#lexmodelsv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+    type annotations stubs module [mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LexModelsV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lexv2-models]'
 python -m pip install mypy-boto3-lexv2-models
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,126 +42,39 @@ python -m pip install mypy-boto3-lexv2-models
 python -m pip uninstall -y mypy-boto3-lexv2-models
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lexmodelsv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LexModelsV2Client
 
-Type annotations for `boto3.client("lexv2-models")` as
-[LexModelsV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lexv2-models")` as [LexModelsV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
+
+def get_client() -> LexModelsV2Client:
+    return Session().cleint("lexv2-models")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [build_bot_locale](./client.md#build_bot_locale)
-- [can_paginate](./client.md#can_paginate)
-- [create_bot](./client.md#create_bot)
-- [create_bot_alias](./client.md#create_bot_alias)
-- [create_bot_locale](./client.md#create_bot_locale)
-- [create_bot_version](./client.md#create_bot_version)
-- [create_export](./client.md#create_export)
-- [create_intent](./client.md#create_intent)
-- [create_resource_policy](./client.md#create_resource_policy)
-- [create_resource_policy_statement](./client.md#create_resource_policy_statement)
-- [create_slot](./client.md#create_slot)
-- [create_slot_type](./client.md#create_slot_type)
-- [create_upload_url](./client.md#create_upload_url)
-- [delete_bot](./client.md#delete_bot)
-- [delete_bot_alias](./client.md#delete_bot_alias)
-- [delete_bot_locale](./client.md#delete_bot_locale)
-- [delete_bot_version](./client.md#delete_bot_version)
-- [delete_custom_vocabulary](./client.md#delete_custom_vocabulary)
-- [delete_export](./client.md#delete_export)
-- [delete_import](./client.md#delete_import)
-- [delete_intent](./client.md#delete_intent)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_resource_policy_statement](./client.md#delete_resource_policy_statement)
-- [delete_slot](./client.md#delete_slot)
-- [delete_slot_type](./client.md#delete_slot_type)
-- [delete_utterances](./client.md#delete_utterances)
-- [describe_bot](./client.md#describe_bot)
-- [describe_bot_alias](./client.md#describe_bot_alias)
-- [describe_bot_locale](./client.md#describe_bot_locale)
-- [describe_bot_recommendation](./client.md#describe_bot_recommendation)
-- [describe_bot_version](./client.md#describe_bot_version)
-- [describe_custom_vocabulary_metadata](./client.md#describe_custom_vocabulary_metadata)
-- [describe_export](./client.md#describe_export)
-- [describe_import](./client.md#describe_import)
-- [describe_intent](./client.md#describe_intent)
-- [describe_resource_policy](./client.md#describe_resource_policy)
-- [describe_slot](./client.md#describe_slot)
-- [describe_slot_type](./client.md#describe_slot_type)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_waiter](./client.md#get_waiter)
-- [list_aggregated_utterances](./client.md#list_aggregated_utterances)
-- [list_bot_aliases](./client.md#list_bot_aliases)
-- [list_bot_locales](./client.md#list_bot_locales)
-- [list_bot_recommendations](./client.md#list_bot_recommendations)
-- [list_bot_versions](./client.md#list_bot_versions)
-- [list_bots](./client.md#list_bots)
-- [list_built_in_intents](./client.md#list_built_in_intents)
-- [list_built_in_slot_types](./client.md#list_built_in_slot_types)
-- [list_exports](./client.md#list_exports)
-- [list_imports](./client.md#list_imports)
-- [list_intents](./client.md#list_intents)
-- [list_recommended_intents](./client.md#list_recommended_intents)
-- [list_slot_types](./client.md#list_slot_types)
-- [list_slots](./client.md#list_slots)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [search_associated_transcripts](./client.md#search_associated_transcripts)
-- [start_bot_recommendation](./client.md#start_bot_recommendation)
-- [start_import](./client.md#start_import)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_bot](./client.md#update_bot)
-- [update_bot_alias](./client.md#update_bot_alias)
-- [update_bot_locale](./client.md#update_bot_locale)
-- [update_bot_recommendation](./client.md#update_bot_recommendation)
-- [update_export](./client.md#update_export)
-- [update_intent](./client.md#update_intent)
-- [update_resource_policy](./client.md#update_resource_policy)
-- [update_slot](./client.md#update_slot)
-- [update_slot_type](./client.md#update_slot_type)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LexModelsV2Client [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictException
-- InternalServerException
-- PreconditionFailedException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="waiters"></a>
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("lexv2-models").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("lexv2-models").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter, ...
+from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
+
+def get_bot_alias_available_waiter() -> BotAliasAvailableWaiter:
+    return Session().client("lexv2-models").get_waiter("bot_alias_available")
 ```
 
 - [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
@@ -195,16 +86,21 @@ from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter, ...
 - [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
 - [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType
 
-```python
-from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType, ...
+def get_value() -> AggregatedUtterancesFilterNameType:
+    return "Utterance"
 ```
 
 - [AggregatedUtterancesFilterNameType](./literals.md#aggregatedutterancesfilternametype)
@@ -268,18 +164,22 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef
 
-```python
-from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef, ...
+def get_value() -> AdvancedRecognitionSettingTypeDef:
+    return {
+        "audioRecognitionStrategy": ...,
+    }
 ```
 
 - [AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef)
@@ -368,20 +268,28 @@ from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef,
 - [DeleteSlotRequestRequestTypeDef](./type_defs.md#deleteslotrequestrequesttypedef)
 - [DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef)
 - [DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef)
+- [DescribeBotAliasRequestBotAliasAvailableWaitTypeDef](./type_defs.md#describebotaliasrequestbotaliasavailablewaittypedef)
 - [DescribeBotAliasRequestRequestTypeDef](./type_defs.md#describebotaliasrequestrequesttypedef)
 - [DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef)
+- [DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocalebuiltwaittypedef)
+- [DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocalecreatedwaittypedef)
+- [DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocaleexpresstestingavailablewaittypedef)
 - [DescribeBotLocaleRequestRequestTypeDef](./type_defs.md#describebotlocalerequestrequesttypedef)
 - [DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef)
 - [DescribeBotRecommendationRequestRequestTypeDef](./type_defs.md#describebotrecommendationrequestrequesttypedef)
 - [DescribeBotRecommendationResponseTypeDef](./type_defs.md#describebotrecommendationresponsetypedef)
+- [DescribeBotRequestBotAvailableWaitTypeDef](./type_defs.md#describebotrequestbotavailablewaittypedef)
 - [DescribeBotRequestRequestTypeDef](./type_defs.md#describebotrequestrequesttypedef)
 - [DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef)
+- [DescribeBotVersionRequestBotVersionAvailableWaitTypeDef](./type_defs.md#describebotversionrequestbotversionavailablewaittypedef)
 - [DescribeBotVersionRequestRequestTypeDef](./type_defs.md#describebotversionrequestrequesttypedef)
 - [DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef)
 - [DescribeCustomVocabularyMetadataRequestRequestTypeDef](./type_defs.md#describecustomvocabularymetadatarequestrequesttypedef)
 - [DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef)
+- [DescribeExportRequestBotExportCompletedWaitTypeDef](./type_defs.md#describeexportrequestbotexportcompletedwaittypedef)
 - [DescribeExportRequestRequestTypeDef](./type_defs.md#describeexportrequestrequesttypedef)
 - [DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef)
+- [DescribeImportRequestBotImportCompletedWaitTypeDef](./type_defs.md#describeimportrequestbotimportcompletedwaittypedef)
 - [DescribeImportRequestRequestTypeDef](./type_defs.md#describeimportrequestrequesttypedef)
 - [DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef)
 - [DescribeIntentRequestRequestTypeDef](./type_defs.md#describeintentrequestrequesttypedef)
@@ -519,3 +427,4 @@ from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef,
 - [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
 - [WaitAndContinueSpecificationTypeDef](./type_defs.md#waitandcontinuespecificationtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

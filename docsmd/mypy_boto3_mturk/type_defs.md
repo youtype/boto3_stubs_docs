@@ -1,1418 +1,1861 @@
-<a id="typed-dictionaries-for-boto3-mturk-module"></a>
-
-# Typed dictionaries for boto3 MTurk module
+# Typed dictionaries
 
 > [Index](../README.md) > [MTurk](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module
-[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MTurk module](#typed-dictionaries-for-boto3-mturk-module)
-  - [AcceptQualificationRequestRequestRequestTypeDef](#acceptqualificationrequestrequestrequesttypedef)
-  - [ApproveAssignmentRequestRequestTypeDef](#approveassignmentrequestrequesttypedef)
-  - [AssignmentTypeDef](#assignmenttypedef)
-  - [AssociateQualificationWithWorkerRequestRequestTypeDef](#associatequalificationwithworkerrequestrequesttypedef)
-  - [BonusPaymentTypeDef](#bonuspaymenttypedef)
-  - [CreateAdditionalAssignmentsForHITRequestRequestTypeDef](#createadditionalassignmentsforhitrequestrequesttypedef)
-  - [CreateHITRequestRequestTypeDef](#createhitrequestrequesttypedef)
-  - [CreateHITResponseTypeDef](#createhitresponsetypedef)
-  - [CreateHITTypeRequestRequestTypeDef](#createhittyperequestrequesttypedef)
-  - [CreateHITTypeResponseTypeDef](#createhittyperesponsetypedef)
-  - [CreateHITWithHITTypeRequestRequestTypeDef](#createhitwithhittyperequestrequesttypedef)
-  - [CreateHITWithHITTypeResponseTypeDef](#createhitwithhittyperesponsetypedef)
-  - [CreateQualificationTypeRequestRequestTypeDef](#createqualificationtyperequestrequesttypedef)
-  - [CreateQualificationTypeResponseTypeDef](#createqualificationtyperesponsetypedef)
-  - [CreateWorkerBlockRequestRequestTypeDef](#createworkerblockrequestrequesttypedef)
-  - [DeleteHITRequestRequestTypeDef](#deletehitrequestrequesttypedef)
-  - [DeleteQualificationTypeRequestRequestTypeDef](#deletequalificationtyperequestrequesttypedef)
-  - [DeleteWorkerBlockRequestRequestTypeDef](#deleteworkerblockrequestrequesttypedef)
-  - [DisassociateQualificationFromWorkerRequestRequestTypeDef](#disassociatequalificationfromworkerrequestrequesttypedef)
-  - [GetAccountBalanceResponseTypeDef](#getaccountbalanceresponsetypedef)
-  - [GetAssignmentRequestRequestTypeDef](#getassignmentrequestrequesttypedef)
-  - [GetAssignmentResponseTypeDef](#getassignmentresponsetypedef)
-  - [GetFileUploadURLRequestRequestTypeDef](#getfileuploadurlrequestrequesttypedef)
-  - [GetFileUploadURLResponseTypeDef](#getfileuploadurlresponsetypedef)
-  - [GetHITRequestRequestTypeDef](#gethitrequestrequesttypedef)
-  - [GetHITResponseTypeDef](#gethitresponsetypedef)
-  - [GetQualificationScoreRequestRequestTypeDef](#getqualificationscorerequestrequesttypedef)
-  - [GetQualificationScoreResponseTypeDef](#getqualificationscoreresponsetypedef)
-  - [GetQualificationTypeRequestRequestTypeDef](#getqualificationtyperequestrequesttypedef)
-  - [GetQualificationTypeResponseTypeDef](#getqualificationtyperesponsetypedef)
-  - [HITLayoutParameterTypeDef](#hitlayoutparametertypedef)
-  - [HITTypeDef](#hittypedef)
-  - [ListAssignmentsForHITRequestRequestTypeDef](#listassignmentsforhitrequestrequesttypedef)
-  - [ListAssignmentsForHITResponseTypeDef](#listassignmentsforhitresponsetypedef)
-  - [ListBonusPaymentsRequestRequestTypeDef](#listbonuspaymentsrequestrequesttypedef)
-  - [ListBonusPaymentsResponseTypeDef](#listbonuspaymentsresponsetypedef)
-  - [ListHITsForQualificationTypeRequestRequestTypeDef](#listhitsforqualificationtyperequestrequesttypedef)
-  - [ListHITsForQualificationTypeResponseTypeDef](#listhitsforqualificationtyperesponsetypedef)
-  - [ListHITsRequestRequestTypeDef](#listhitsrequestrequesttypedef)
-  - [ListHITsResponseTypeDef](#listhitsresponsetypedef)
-  - [ListQualificationRequestsRequestRequestTypeDef](#listqualificationrequestsrequestrequesttypedef)
-  - [ListQualificationRequestsResponseTypeDef](#listqualificationrequestsresponsetypedef)
-  - [ListQualificationTypesRequestRequestTypeDef](#listqualificationtypesrequestrequesttypedef)
-  - [ListQualificationTypesResponseTypeDef](#listqualificationtypesresponsetypedef)
-  - [ListReviewPolicyResultsForHITRequestRequestTypeDef](#listreviewpolicyresultsforhitrequestrequesttypedef)
-  - [ListReviewPolicyResultsForHITResponseTypeDef](#listreviewpolicyresultsforhitresponsetypedef)
-  - [ListReviewableHITsRequestRequestTypeDef](#listreviewablehitsrequestrequesttypedef)
-  - [ListReviewableHITsResponseTypeDef](#listreviewablehitsresponsetypedef)
-  - [ListWorkerBlocksRequestRequestTypeDef](#listworkerblocksrequestrequesttypedef)
-  - [ListWorkerBlocksResponseTypeDef](#listworkerblocksresponsetypedef)
-  - [ListWorkersWithQualificationTypeRequestRequestTypeDef](#listworkerswithqualificationtyperequestrequesttypedef)
-  - [ListWorkersWithQualificationTypeResponseTypeDef](#listworkerswithqualificationtyperesponsetypedef)
-  - [LocaleTypeDef](#localetypedef)
-  - [NotificationSpecificationTypeDef](#notificationspecificationtypedef)
-  - [NotifyWorkersFailureStatusTypeDef](#notifyworkersfailurestatustypedef)
-  - [NotifyWorkersRequestRequestTypeDef](#notifyworkersrequestrequesttypedef)
-  - [NotifyWorkersResponseTypeDef](#notifyworkersresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterMapEntryTypeDef](#parametermapentrytypedef)
-  - [PolicyParameterTypeDef](#policyparametertypedef)
-  - [QualificationRequestTypeDef](#qualificationrequesttypedef)
-  - [QualificationRequirementTypeDef](#qualificationrequirementtypedef)
-  - [QualificationTypeDef](#qualificationtypedef)
-  - [QualificationTypeTypeDef](#qualificationtypetypedef)
-  - [RejectAssignmentRequestRequestTypeDef](#rejectassignmentrequestrequesttypedef)
-  - [RejectQualificationRequestRequestRequestTypeDef](#rejectqualificationrequestrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ReviewActionDetailTypeDef](#reviewactiondetailtypedef)
-  - [ReviewPolicyTypeDef](#reviewpolicytypedef)
-  - [ReviewReportTypeDef](#reviewreporttypedef)
-  - [ReviewResultDetailTypeDef](#reviewresultdetailtypedef)
-  - [SendBonusRequestRequestTypeDef](#sendbonusrequestrequesttypedef)
-  - [SendTestEventNotificationRequestRequestTypeDef](#sendtesteventnotificationrequestrequesttypedef)
-  - [UpdateExpirationForHITRequestRequestTypeDef](#updateexpirationforhitrequestrequesttypedef)
-  - [UpdateHITReviewStatusRequestRequestTypeDef](#updatehitreviewstatusrequestrequesttypedef)
-  - [UpdateHITTypeOfHITRequestRequestTypeDef](#updatehittypeofhitrequestrequesttypedef)
-  - [UpdateNotificationSettingsRequestRequestTypeDef](#updatenotificationsettingsrequestrequesttypedef)
-  - [UpdateQualificationTypeRequestRequestTypeDef](#updatequalificationtyperequestrequesttypedef)
-  - [UpdateQualificationTypeResponseTypeDef](#updatequalificationtyperesponsetypedef)
-  - [WorkerBlockTypeDef](#workerblocktypedef)
-
-<a id="acceptqualificationrequestrequestrequesttypedef"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## AcceptQualificationRequestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import AcceptQualificationRequestRequestRequestTypeDef
+
+def get_value() -> AcceptQualificationRequestRequestRequestTypeDef:
+    return {
+        "QualificationRequestId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationRequestId`: `str`
-
-Optional fields:
-
-- `IntegerValue`: `int`
-
-<a id="approveassignmentrequestrequesttypedef"></a>
+```python title="Definition"
+class AcceptQualificationRequestRequestRequestTypeDef(TypedDict):
+    QualificationRequestId: str,
+    IntegerValue: NotRequired[int],
+```
 
 ## ApproveAssignmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ApproveAssignmentRequestRequestTypeDef
+
+def get_value() -> ApproveAssignmentRequestRequestTypeDef:
+    return {
+        "AssignmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `AssignmentId`: `str`
-
-Optional fields:
-
-- `RequesterFeedback`: `str`
-- `OverrideRejection`: `bool`
-
-<a id="assignmenttypedef"></a>
+```python title="Definition"
+class ApproveAssignmentRequestRequestTypeDef(TypedDict):
+    AssignmentId: str,
+    RequesterFeedback: NotRequired[str],
+    OverrideRejection: NotRequired[bool],
+```
 
 ## AssignmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import AssignmentTypeDef
+
+def get_value() -> AssignmentTypeDef:
+    return {
+        "AssignmentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AssignmentTypeDef(TypedDict):
+    AssignmentId: NotRequired[str],
+    WorkerId: NotRequired[str],
+    HITId: NotRequired[str],
+    AssignmentStatus: NotRequired[AssignmentStatusType],  # (1)
+    AutoApprovalTime: NotRequired[datetime],
+    AcceptTime: NotRequired[datetime],
+    SubmitTime: NotRequired[datetime],
+    ApprovalTime: NotRequired[datetime],
+    RejectionTime: NotRequired[datetime],
+    Deadline: NotRequired[datetime],
+    Answer: NotRequired[str],
+    RequesterFeedback: NotRequired[str],
+```
 
-- `AssignmentId`: `str`
-- `WorkerId`: `str`
-- `HITId`: `str`
-- `AssignmentStatus`:
-  [AssignmentStatusType](./literals.md#assignmentstatustype)
-- `AutoApprovalTime`: `datetime`
-- `AcceptTime`: `datetime`
-- `SubmitTime`: `datetime`
-- `ApprovalTime`: `datetime`
-- `RejectionTime`: `datetime`
-- `Deadline`: `datetime`
-- `Answer`: `str`
-- `RequesterFeedback`: `str`
-
-<a id="associatequalificationwithworkerrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
 ## AssociateQualificationWithWorkerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import AssociateQualificationWithWorkerRequestRequestTypeDef
+
+def get_value() -> AssociateQualificationWithWorkerRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+        "WorkerId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationTypeId`: `str`
-- `WorkerId`: `str`
-
-Optional fields:
-
-- `IntegerValue`: `int`
-- `SendNotification`: `bool`
-
-<a id="bonuspaymenttypedef"></a>
+```python title="Definition"
+class AssociateQualificationWithWorkerRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+    WorkerId: str,
+    IntegerValue: NotRequired[int],
+    SendNotification: NotRequired[bool],
+```
 
 ## BonusPaymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import BonusPaymentTypeDef
+
+def get_value() -> BonusPaymentTypeDef:
+    return {
+        "WorkerId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkerId`: `str`
-- `BonusAmount`: `str`
-- `AssignmentId`: `str`
-- `Reason`: `str`
-- `GrantTime`: `datetime`
-
-<a id="createadditionalassignmentsforhitrequestrequesttypedef"></a>
+```python title="Definition"
+class BonusPaymentTypeDef(TypedDict):
+    WorkerId: NotRequired[str],
+    BonusAmount: NotRequired[str],
+    AssignmentId: NotRequired[str],
+    Reason: NotRequired[str],
+    GrantTime: NotRequired[datetime],
+```
 
 ## CreateAdditionalAssignmentsForHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateAdditionalAssignmentsForHITRequestRequestTypeDef
+
+def get_value() -> CreateAdditionalAssignmentsForHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+        "NumberOfAdditionalAssignments": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-- `NumberOfAdditionalAssignments`: `int`
-
-Optional fields:
-
-- `UniqueRequestToken`: `str`
-
-<a id="createhitrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateAdditionalAssignmentsForHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    NumberOfAdditionalAssignments: int,
+    UniqueRequestToken: NotRequired[str],
+```
 
 ## CreateHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITRequestRequestTypeDef
+
+def get_value() -> CreateHITRequestRequestTypeDef:
+    return {
+        "LifetimeInSeconds": ...,
+        "AssignmentDurationInSeconds": ...,
+        "Reward": ...,
+        "Title": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITRequestRequestTypeDef(TypedDict):
+    LifetimeInSeconds: int,
+    AssignmentDurationInSeconds: int,
+    Reward: str,
+    Title: str,
+    Description: str,
+    MaxAssignments: NotRequired[int],
+    AutoApprovalDelayInSeconds: NotRequired[int],
+    Keywords: NotRequired[str],
+    Question: NotRequired[str],
+    RequesterAnnotation: NotRequired[str],
+    QualificationRequirements: NotRequired[Sequence[QualificationRequirementTypeDef]],  # (1)
+    UniqueRequestToken: NotRequired[str],
+    AssignmentReviewPolicy: NotRequired[ReviewPolicyTypeDef],  # (2)
+    HITReviewPolicy: NotRequired[ReviewPolicyTypeDef],  # (2)
+    HITLayoutId: NotRequired[str],
+    HITLayoutParameters: NotRequired[Sequence[HITLayoutParameterTypeDef]],  # (4)
+```
 
-- `LifetimeInSeconds`: `int`
-- `AssignmentDurationInSeconds`: `int`
-- `Reward`: `str`
-- `Title`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `MaxAssignments`: `int`
-- `AutoApprovalDelayInSeconds`: `int`
-- `Keywords`: `str`
-- `Question`: `str`
-- `RequesterAnnotation`: `str`
-- `QualificationRequirements`:
-  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
-- `UniqueRequestToken`: `str`
-- `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITLayoutId`: `str`
-- `HITLayoutParameters`:
-  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
-
-<a id="createhitresponsetypedef"></a>
-
+1. See [:material-code-braces: QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef) 
+2. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+3. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+4. See [:material-code-braces: HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef) 
 ## CreateHITResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITResponseTypeDef
+
+def get_value() -> CreateHITResponseTypeDef:
+    return {
+        "HIT": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITResponseTypeDef(TypedDict):
+    HIT: HITTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhittyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHITTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITTypeRequestRequestTypeDef
+
+def get_value() -> CreateHITTypeRequestRequestTypeDef:
+    return {
+        "AssignmentDurationInSeconds": ...,
+        "Reward": ...,
+        "Title": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITTypeRequestRequestTypeDef(TypedDict):
+    AssignmentDurationInSeconds: int,
+    Reward: str,
+    Title: str,
+    Description: str,
+    AutoApprovalDelayInSeconds: NotRequired[int],
+    Keywords: NotRequired[str],
+    QualificationRequirements: NotRequired[Sequence[QualificationRequirementTypeDef]],  # (1)
+```
 
-- `AssignmentDurationInSeconds`: `int`
-- `Reward`: `str`
-- `Title`: `str`
-- `Description`: `str`
-
-Optional fields:
-
-- `AutoApprovalDelayInSeconds`: `int`
-- `Keywords`: `str`
-- `QualificationRequirements`:
-  `Sequence`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
-
-<a id="createhittyperesponsetypedef"></a>
-
+1. See [:material-code-braces: QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef) 
 ## CreateHITTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITTypeResponseTypeDef
+
+def get_value() -> CreateHITTypeResponseTypeDef:
+    return {
+        "HITTypeId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITTypeResponseTypeDef(TypedDict):
+    HITTypeId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HITTypeId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhitwithhittyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHITWithHITTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITWithHITTypeRequestRequestTypeDef
+
+def get_value() -> CreateHITWithHITTypeRequestRequestTypeDef:
+    return {
+        "HITTypeId": ...,
+        "LifetimeInSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITWithHITTypeRequestRequestTypeDef(TypedDict):
+    HITTypeId: str,
+    LifetimeInSeconds: int,
+    MaxAssignments: NotRequired[int],
+    Question: NotRequired[str],
+    RequesterAnnotation: NotRequired[str],
+    UniqueRequestToken: NotRequired[str],
+    AssignmentReviewPolicy: NotRequired[ReviewPolicyTypeDef],  # (1)
+    HITReviewPolicy: NotRequired[ReviewPolicyTypeDef],  # (1)
+    HITLayoutId: NotRequired[str],
+    HITLayoutParameters: NotRequired[Sequence[HITLayoutParameterTypeDef]],  # (3)
+```
 
-- `HITTypeId`: `str`
-- `LifetimeInSeconds`: `int`
-
-Optional fields:
-
-- `MaxAssignments`: `int`
-- `Question`: `str`
-- `RequesterAnnotation`: `str`
-- `UniqueRequestToken`: `str`
-- `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITLayoutId`: `str`
-- `HITLayoutParameters`:
-  `Sequence`\[[HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef)\]
-
-<a id="createhitwithhittyperesponsetypedef"></a>
-
+1. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+2. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+3. See [:material-code-braces: HITLayoutParameterTypeDef](./type_defs.md#hitlayoutparametertypedef) 
 ## CreateHITWithHITTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateHITWithHITTypeResponseTypeDef
+
+def get_value() -> CreateHITWithHITTypeResponseTypeDef:
+    return {
+        "HIT": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHITWithHITTypeResponseTypeDef(TypedDict):
+    HIT: HITTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createqualificationtyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateQualificationTypeRequestRequestTypeDef
+
+def get_value() -> CreateQualificationTypeRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "QualificationTypeStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQualificationTypeRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    QualificationTypeStatus: QualificationTypeStatusType,  # (1)
+    Keywords: NotRequired[str],
+    RetryDelayInSeconds: NotRequired[int],
+    Test: NotRequired[str],
+    AnswerKey: NotRequired[str],
+    TestDurationInSeconds: NotRequired[int],
+    AutoGranted: NotRequired[bool],
+    AutoGrantedValue: NotRequired[int],
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `QualificationTypeStatus`:
-  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
-
-Optional fields:
-
-- `Keywords`: `str`
-- `RetryDelayInSeconds`: `int`
-- `Test`: `str`
-- `AnswerKey`: `str`
-- `TestDurationInSeconds`: `int`
-- `AutoGranted`: `bool`
-- `AutoGrantedValue`: `int`
-
-<a id="createqualificationtyperesponsetypedef"></a>
-
+1. See [:material-code-brackets: QualificationTypeStatusType](./literals.md#qualificationtypestatustype) 
 ## CreateQualificationTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateQualificationTypeResponseTypeDef
+
+def get_value() -> CreateQualificationTypeResponseTypeDef:
+    return {
+        "QualificationType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQualificationTypeResponseTypeDef(TypedDict):
+    QualificationType: QualificationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QualificationType`:
-  [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkerblockrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkerBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import CreateWorkerBlockRequestRequestTypeDef
+
+def get_value() -> CreateWorkerBlockRequestRequestTypeDef:
+    return {
+        "WorkerId": ...,
+        "Reason": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkerId`: `str`
-- `Reason`: `str`
-
-<a id="deletehitrequestrequesttypedef"></a>
+```python title="Definition"
+class CreateWorkerBlockRequestRequestTypeDef(TypedDict):
+    WorkerId: str,
+    Reason: str,
+```
 
 ## DeleteHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import DeleteHITRequestRequestTypeDef
+
+def get_value() -> DeleteHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-
-<a id="deletequalificationtyperequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+```
 
 ## DeleteQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import DeleteQualificationTypeRequestRequestTypeDef
+
+def get_value() -> DeleteQualificationTypeRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationTypeId`: `str`
-
-<a id="deleteworkerblockrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteQualificationTypeRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+```
 
 ## DeleteWorkerBlockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import DeleteWorkerBlockRequestRequestTypeDef
+
+def get_value() -> DeleteWorkerBlockRequestRequestTypeDef:
+    return {
+        "WorkerId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkerId`: `str`
-
-Optional fields:
-
-- `Reason`: `str`
-
-<a id="disassociatequalificationfromworkerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteWorkerBlockRequestRequestTypeDef(TypedDict):
+    WorkerId: str,
+    Reason: NotRequired[str],
+```
 
 ## DisassociateQualificationFromWorkerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import DisassociateQualificationFromWorkerRequestRequestTypeDef
+
+def get_value() -> DisassociateQualificationFromWorkerRequestRequestTypeDef:
+    return {
+        "WorkerId": ...,
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkerId`: `str`
-- `QualificationTypeId`: `str`
-
-Optional fields:
-
-- `Reason`: `str`
-
-<a id="getaccountbalanceresponsetypedef"></a>
+```python title="Definition"
+class DisassociateQualificationFromWorkerRequestRequestTypeDef(TypedDict):
+    WorkerId: str,
+    QualificationTypeId: str,
+    Reason: NotRequired[str],
+```
 
 ## GetAccountBalanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetAccountBalanceResponseTypeDef
+
+def get_value() -> GetAccountBalanceResponseTypeDef:
+    return {
+        "AvailableBalance": ...,
+        "OnHoldBalance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountBalanceResponseTypeDef(TypedDict):
+    AvailableBalance: str,
+    OnHoldBalance: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AvailableBalance`: `str`
-- `OnHoldBalance`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getassignmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAssignmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetAssignmentRequestRequestTypeDef
+
+def get_value() -> GetAssignmentRequestRequestTypeDef:
+    return {
+        "AssignmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `AssignmentId`: `str`
-
-<a id="getassignmentresponsetypedef"></a>
+```python title="Definition"
+class GetAssignmentRequestRequestTypeDef(TypedDict):
+    AssignmentId: str,
+```
 
 ## GetAssignmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetAssignmentResponseTypeDef
+
+def get_value() -> GetAssignmentResponseTypeDef:
+    return {
+        "Assignment": ...,
+        "HIT": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAssignmentResponseTypeDef(TypedDict):
+    Assignment: AssignmentTypeDef,  # (1)
+    HIT: HITTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Assignment`: [AssignmentTypeDef](./type_defs.md#assignmenttypedef)
-- `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfileuploadurlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssignmentTypeDef](./type_defs.md#assignmenttypedef) 
+2. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFileUploadURLRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetFileUploadURLRequestRequestTypeDef
+
+def get_value() -> GetFileUploadURLRequestRequestTypeDef:
+    return {
+        "AssignmentId": ...,
+        "QuestionIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `AssignmentId`: `str`
-- `QuestionIdentifier`: `str`
-
-<a id="getfileuploadurlresponsetypedef"></a>
+```python title="Definition"
+class GetFileUploadURLRequestRequestTypeDef(TypedDict):
+    AssignmentId: str,
+    QuestionIdentifier: str,
+```
 
 ## GetFileUploadURLResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetFileUploadURLResponseTypeDef
+
+def get_value() -> GetFileUploadURLResponseTypeDef:
+    return {
+        "FileUploadURL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFileUploadURLResponseTypeDef(TypedDict):
+    FileUploadURL: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileUploadURL`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethitrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetHITRequestRequestTypeDef
+
+def get_value() -> GetHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-
-<a id="gethitresponsetypedef"></a>
+```python title="Definition"
+class GetHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+```
 
 ## GetHITResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetHITResponseTypeDef
+
+def get_value() -> GetHITResponseTypeDef:
+    return {
+        "HIT": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHITResponseTypeDef(TypedDict):
+    HIT: HITTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HIT`: [HITTypeDef](./type_defs.md#hittypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getqualificationscorerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQualificationScoreRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetQualificationScoreRequestRequestTypeDef
+
+def get_value() -> GetQualificationScoreRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+        "WorkerId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationTypeId`: `str`
-- `WorkerId`: `str`
-
-<a id="getqualificationscoreresponsetypedef"></a>
+```python title="Definition"
+class GetQualificationScoreRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+    WorkerId: str,
+```
 
 ## GetQualificationScoreResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetQualificationScoreResponseTypeDef
+
+def get_value() -> GetQualificationScoreResponseTypeDef:
+    return {
+        "Qualification": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQualificationScoreResponseTypeDef(TypedDict):
+    Qualification: QualificationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Qualification`: [QualificationTypeDef](./type_defs.md#qualificationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getqualificationtyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeDef](./type_defs.md#qualificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetQualificationTypeRequestRequestTypeDef
+
+def get_value() -> GetQualificationTypeRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationTypeId`: `str`
-
-<a id="getqualificationtyperesponsetypedef"></a>
+```python title="Definition"
+class GetQualificationTypeRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+```
 
 ## GetQualificationTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import GetQualificationTypeResponseTypeDef
+
+def get_value() -> GetQualificationTypeResponseTypeDef:
+    return {
+        "QualificationType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetQualificationTypeResponseTypeDef(TypedDict):
+    QualificationType: QualificationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QualificationType`:
-  [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hitlayoutparametertypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HITLayoutParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import HITLayoutParameterTypeDef
+
+def get_value() -> HITLayoutParameterTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="hittypedef"></a>
+```python title="Definition"
+class HITLayoutParameterTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## HITTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import HITTypeDef
+
+def get_value() -> HITTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HITTypeDef(TypedDict):
+    HITId: NotRequired[str],
+    HITTypeId: NotRequired[str],
+    HITGroupId: NotRequired[str],
+    HITLayoutId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    Title: NotRequired[str],
+    Description: NotRequired[str],
+    Question: NotRequired[str],
+    Keywords: NotRequired[str],
+    HITStatus: NotRequired[HITStatusType],  # (1)
+    MaxAssignments: NotRequired[int],
+    Reward: NotRequired[str],
+    AutoApprovalDelayInSeconds: NotRequired[int],
+    Expiration: NotRequired[datetime],
+    AssignmentDurationInSeconds: NotRequired[int],
+    RequesterAnnotation: NotRequired[str],
+    QualificationRequirements: NotRequired[List[QualificationRequirementTypeDef]],  # (2)
+    HITReviewStatus: NotRequired[HITReviewStatusType],  # (3)
+    NumberOfAssignmentsPending: NotRequired[int],
+    NumberOfAssignmentsAvailable: NotRequired[int],
+    NumberOfAssignmentsCompleted: NotRequired[int],
+```
 
-- `HITId`: `str`
-- `HITTypeId`: `str`
-- `HITGroupId`: `str`
-- `HITLayoutId`: `str`
-- `CreationTime`: `datetime`
-- `Title`: `str`
-- `Description`: `str`
-- `Question`: `str`
-- `Keywords`: `str`
-- `HITStatus`: [HITStatusType](./literals.md#hitstatustype)
-- `MaxAssignments`: `int`
-- `Reward`: `str`
-- `AutoApprovalDelayInSeconds`: `int`
-- `Expiration`: `datetime`
-- `AssignmentDurationInSeconds`: `int`
-- `RequesterAnnotation`: `str`
-- `QualificationRequirements`:
-  `List`\[[QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef)\]
-- `HITReviewStatus`: [HITReviewStatusType](./literals.md#hitreviewstatustype)
-- `NumberOfAssignmentsPending`: `int`
-- `NumberOfAssignmentsAvailable`: `int`
-- `NumberOfAssignmentsCompleted`: `int`
+1. See [:material-code-brackets: HITStatusType](./literals.md#hitstatustype) 
+2. See [:material-code-braces: QualificationRequirementTypeDef](./type_defs.md#qualificationrequirementtypedef) 
+3. See [:material-code-brackets: HITReviewStatusType](./literals.md#hitreviewstatustype) 
+## ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef
 
-<a id="listassignmentsforhitrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef
 
+def get_value() -> ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef:
+    return {
+        "HITId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef(TypedDict):
+    HITId: str,
+    AssignmentStatuses: NotRequired[Sequence[AssignmentStatusType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAssignmentsForHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListAssignmentsForHITRequestRequestTypeDef
+
+def get_value() -> ListAssignmentsForHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssignmentsForHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    AssignmentStatuses: NotRequired[Sequence[AssignmentStatusType]],  # (1)
+```
 
-- `HITId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `AssignmentStatuses`:
-  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
-
-<a id="listassignmentsforhitresponsetypedef"></a>
-
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
 ## ListAssignmentsForHITResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListAssignmentsForHITResponseTypeDef
+
+def get_value() -> ListAssignmentsForHITResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "Assignments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAssignmentsForHITResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    Assignments: List[AssignmentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `Assignments`:
-  `List`\[[AssignmentTypeDef](./type_defs.md#assignmenttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssignmentTypeDef](./type_defs.md#assignmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef
 
-<a id="listbonuspaymentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef
 
+def get_value() -> ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef:
+    return {
+        "HITId": ...,
+    }
+```
+
+```python title="Definition"
+class ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef(TypedDict):
+    HITId: NotRequired[str],
+    AssignmentId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBonusPaymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListBonusPaymentsRequestRequestTypeDef
+
+def get_value() -> ListBonusPaymentsRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Optional fields:
-
-- `HITId`: `str`
-- `AssignmentId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbonuspaymentsresponsetypedef"></a>
+```python title="Definition"
+class ListBonusPaymentsRequestRequestTypeDef(TypedDict):
+    HITId: NotRequired[str],
+    AssignmentId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListBonusPaymentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListBonusPaymentsResponseTypeDef
+
+def get_value() -> ListBonusPaymentsResponseTypeDef:
+    return {
+        "NumResults": ...,
+        "NextToken": ...,
+        "BonusPayments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBonusPaymentsResponseTypeDef(TypedDict):
+    NumResults: int,
+    NextToken: str,
+    BonusPayments: List[BonusPaymentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NumResults`: `int`
-- `NextToken`: `str`
-- `BonusPayments`:
-  `List`\[[BonusPaymentTypeDef](./type_defs.md#bonuspaymenttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BonusPaymentTypeDef](./type_defs.md#bonuspaymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef
 
-<a id="listhitsforqualificationtyperequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef
 
+def get_value() -> ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
+```
+
+```python title="Definition"
+class ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef(TypedDict):
+    QualificationTypeId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHITsForQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeRequestRequestTypeDef
+
+def get_value() -> ListHITsForQualificationTypeRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationTypeId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listhitsforqualificationtyperesponsetypedef"></a>
+```python title="Definition"
+class ListHITsForQualificationTypeRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListHITsForQualificationTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListHITsForQualificationTypeResponseTypeDef
+
+def get_value() -> ListHITsForQualificationTypeResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "HITs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHITsForQualificationTypeResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    HITs: List[HITTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHITsRequestListHITsPaginateTypeDef
 
-<a id="listhitsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListHITsRequestListHITsPaginateTypeDef
 
+def get_value() -> ListHITsRequestListHITsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListHITsRequestListHITsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHITsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListHITsRequestRequestTypeDef
+
+def get_value() -> ListHITsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listhitsresponsetypedef"></a>
+```python title="Definition"
+class ListHITsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListHITsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListHITsResponseTypeDef
+
+def get_value() -> ListHITsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "HITs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHITsResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    HITs: List[HITTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef
 
-<a id="listqualificationrequestsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef
 
+def get_value() -> ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
+```
+
+```python title="Definition"
+class ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef(TypedDict):
+    QualificationTypeId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQualificationRequestsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListQualificationRequestsRequestRequestTypeDef
+
+def get_value() -> ListQualificationRequestsRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Optional fields:
-
-- `QualificationTypeId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listqualificationrequestsresponsetypedef"></a>
+```python title="Definition"
+class ListQualificationRequestsRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListQualificationRequestsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListQualificationRequestsResponseTypeDef
+
+def get_value() -> ListQualificationRequestsResponseTypeDef:
+    return {
+        "NumResults": ...,
+        "NextToken": ...,
+        "QualificationRequests": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQualificationRequestsResponseTypeDef(TypedDict):
+    NumResults: int,
+    NextToken: str,
+    QualificationRequests: List[QualificationRequestTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NumResults`: `int`
-- `NextToken`: `str`
-- `QualificationRequests`:
-  `List`\[[QualificationRequestTypeDef](./type_defs.md#qualificationrequesttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QualificationRequestTypeDef](./type_defs.md#qualificationrequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQualificationTypesRequestListQualificationTypesPaginateTypeDef
 
-<a id="listqualificationtypesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListQualificationTypesRequestListQualificationTypesPaginateTypeDef
 
+def get_value() -> ListQualificationTypesRequestListQualificationTypesPaginateTypeDef:
+    return {
+        "MustBeRequestable": ...,
+    }
+```
+
+```python title="Definition"
+class ListQualificationTypesRequestListQualificationTypesPaginateTypeDef(TypedDict):
+    MustBeRequestable: bool,
+    Query: NotRequired[str],
+    MustBeOwnedByCaller: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQualificationTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListQualificationTypesRequestRequestTypeDef
+
+def get_value() -> ListQualificationTypesRequestRequestTypeDef:
+    return {
+        "MustBeRequestable": ...,
+    }
 ```
 
-Required fields:
-
-- `MustBeRequestable`: `bool`
-
-Optional fields:
-
-- `Query`: `str`
-- `MustBeOwnedByCaller`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listqualificationtypesresponsetypedef"></a>
+```python title="Definition"
+class ListQualificationTypesRequestRequestTypeDef(TypedDict):
+    MustBeRequestable: bool,
+    Query: NotRequired[str],
+    MustBeOwnedByCaller: NotRequired[bool],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListQualificationTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListQualificationTypesResponseTypeDef
+
+def get_value() -> ListQualificationTypesResponseTypeDef:
+    return {
+        "NumResults": ...,
+        "NextToken": ...,
+        "QualificationTypes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQualificationTypesResponseTypeDef(TypedDict):
+    NumResults: int,
+    NextToken: str,
+    QualificationTypes: List[QualificationTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NumResults`: `int`
-- `NextToken`: `str`
-- `QualificationTypes`:
-  `List`\[[QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreviewpolicyresultsforhitrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReviewPolicyResultsForHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListReviewPolicyResultsForHITRequestRequestTypeDef
+
+def get_value() -> ListReviewPolicyResultsForHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReviewPolicyResultsForHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    PolicyLevels: NotRequired[Sequence[ReviewPolicyLevelType]],  # (1)
+    RetrieveActions: NotRequired[bool],
+    RetrieveResults: NotRequired[bool],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `HITId`: `str`
-
-Optional fields:
-
-- `PolicyLevels`:
-  `Sequence`\[[ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)\]
-- `RetrieveActions`: `bool`
-- `RetrieveResults`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listreviewpolicyresultsforhitresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype) 
 ## ListReviewPolicyResultsForHITResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListReviewPolicyResultsForHITResponseTypeDef
+
+def get_value() -> ListReviewPolicyResultsForHITResponseTypeDef:
+    return {
+        "HITId": ...,
+        "AssignmentReviewPolicy": ...,
+        "HITReviewPolicy": ...,
+        "AssignmentReviewReport": ...,
+        "HITReviewReport": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReviewPolicyResultsForHITResponseTypeDef(TypedDict):
+    HITId: str,
+    AssignmentReviewPolicy: ReviewPolicyTypeDef,  # (1)
+    HITReviewPolicy: ReviewPolicyTypeDef,  # (1)
+    AssignmentReviewReport: ReviewReportTypeDef,  # (3)
+    HITReviewReport: ReviewReportTypeDef,  # (3)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `HITId`: `str`
-- `AssignmentReviewPolicy`:
-  [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `HITReviewPolicy`: [ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef)
-- `AssignmentReviewReport`:
-  [ReviewReportTypeDef](./type_defs.md#reviewreporttypedef)
-- `HITReviewReport`: [ReviewReportTypeDef](./type_defs.md#reviewreporttypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+2. See [:material-code-braces: ReviewPolicyTypeDef](./type_defs.md#reviewpolicytypedef) 
+3. See [:material-code-braces: ReviewReportTypeDef](./type_defs.md#reviewreporttypedef) 
+4. See [:material-code-braces: ReviewReportTypeDef](./type_defs.md#reviewreporttypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReviewableHITsRequestListReviewableHITsPaginateTypeDef
 
-<a id="listreviewablehitsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListReviewableHITsRequestListReviewableHITsPaginateTypeDef
 
+def get_value() -> ListReviewableHITsRequestListReviewableHITsPaginateTypeDef:
+    return {
+        "HITTypeId": ...,
+    }
+```
+
+```python title="Definition"
+class ListReviewableHITsRequestListReviewableHITsPaginateTypeDef(TypedDict):
+    HITTypeId: NotRequired[str],
+    Status: NotRequired[ReviewableHITStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ReviewableHITStatusType](./literals.md#reviewablehitstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReviewableHITsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListReviewableHITsRequestRequestTypeDef
+
+def get_value() -> ListReviewableHITsRequestRequestTypeDef:
+    return {
+        "HITTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListReviewableHITsRequestRequestTypeDef(TypedDict):
+    HITTypeId: NotRequired[str],
+    Status: NotRequired[ReviewableHITStatusType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `HITTypeId`: `str`
-- `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listreviewablehitsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReviewableHITStatusType](./literals.md#reviewablehitstatustype) 
 ## ListReviewableHITsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListReviewableHITsResponseTypeDef
+
+def get_value() -> ListReviewableHITsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "HITs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReviewableHITsResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    HITs: List[HITTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `HITs`: `List`\[[HITTypeDef](./type_defs.md#hittypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HITTypeDef](./type_defs.md#hittypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef
 
-<a id="listworkerblocksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef
 
+def get_value() -> ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorkerBlocksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListWorkerBlocksRequestRequestTypeDef
+
+def get_value() -> ListWorkerBlocksRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkerblocksresponsetypedef"></a>
+```python title="Definition"
+class ListWorkerBlocksRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWorkerBlocksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListWorkerBlocksResponseTypeDef
+
+def get_value() -> ListWorkerBlocksResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "WorkerBlocks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkerBlocksResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    WorkerBlocks: List[WorkerBlockTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `WorkerBlocks`:
-  `List`\[[WorkerBlockTypeDef](./type_defs.md#workerblocktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WorkerBlockTypeDef](./type_defs.md#workerblocktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef
 
-<a id="listworkerswithqualificationtyperequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef
 
+def get_value() -> ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef(TypedDict):
+    QualificationTypeId: str,
+    Status: NotRequired[QualificationStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: QualificationStatusType](./literals.md#qualificationstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorkersWithQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeRequestRequestTypeDef
+
+def get_value() -> ListWorkersWithQualificationTypeRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkersWithQualificationTypeRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+    Status: NotRequired[QualificationStatusType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `QualificationTypeId`: `str`
-
-Optional fields:
-
-- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkerswithqualificationtyperesponsetypedef"></a>
-
+1. See [:material-code-brackets: QualificationStatusType](./literals.md#qualificationstatustype) 
 ## ListWorkersWithQualificationTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ListWorkersWithQualificationTypeResponseTypeDef
+
+def get_value() -> ListWorkersWithQualificationTypeResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NumResults": ...,
+        "Qualifications": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkersWithQualificationTypeResponseTypeDef(TypedDict):
+    NextToken: str,
+    NumResults: int,
+    Qualifications: List[QualificationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NumResults`: `int`
-- `Qualifications`:
-  `List`\[[QualificationTypeDef](./type_defs.md#qualificationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="localetypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeDef](./type_defs.md#qualificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LocaleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import LocaleTypeDef
+
+def get_value() -> LocaleTypeDef:
+    return {
+        "Country": ...,
+    }
 ```
 
-Required fields:
-
-- `Country`: `str`
-
-Optional fields:
-
-- `Subdivision`: `str`
-
-<a id="notificationspecificationtypedef"></a>
+```python title="Definition"
+class LocaleTypeDef(TypedDict):
+    Country: str,
+    Subdivision: NotRequired[str],
+```
 
 ## NotificationSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import NotificationSpecificationTypeDef
+
+def get_value() -> NotificationSpecificationTypeDef:
+    return {
+        "Destination": ...,
+        "Transport": ...,
+        "Version": ...,
+        "EventTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationSpecificationTypeDef(TypedDict):
+    Destination: str,
+    Transport: NotificationTransportType,  # (1)
+    Version: str,
+    EventTypes: Sequence[EventTypeType],  # (2)
+```
 
-- `Destination`: `str`
-- `Transport`:
-  [NotificationTransportType](./literals.md#notificationtransporttype)
-- `Version`: `str`
-- `EventTypes`: `Sequence`\[[EventTypeType](./literals.md#eventtypetype)\]
-
-<a id="notifyworkersfailurestatustypedef"></a>
-
+1. See [:material-code-brackets: NotificationTransportType](./literals.md#notificationtransporttype) 
+2. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 ## NotifyWorkersFailureStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import NotifyWorkersFailureStatusTypeDef
+
+def get_value() -> NotifyWorkersFailureStatusTypeDef:
+    return {
+        "NotifyWorkersFailureCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotifyWorkersFailureStatusTypeDef(TypedDict):
+    NotifyWorkersFailureCode: NotRequired[NotifyWorkersFailureCodeType],  # (1)
+    NotifyWorkersFailureMessage: NotRequired[str],
+    WorkerId: NotRequired[str],
+```
 
-- `NotifyWorkersFailureCode`:
-  [NotifyWorkersFailureCodeType](./literals.md#notifyworkersfailurecodetype)
-- `NotifyWorkersFailureMessage`: `str`
-- `WorkerId`: `str`
-
-<a id="notifyworkersrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: NotifyWorkersFailureCodeType](./literals.md#notifyworkersfailurecodetype) 
 ## NotifyWorkersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import NotifyWorkersRequestRequestTypeDef
+
+def get_value() -> NotifyWorkersRequestRequestTypeDef:
+    return {
+        "Subject": ...,
+        "MessageText": ...,
+        "WorkerIds": ...,
+    }
 ```
 
-Required fields:
-
-- `Subject`: `str`
-- `MessageText`: `str`
-- `WorkerIds`: `Sequence`\[`str`\]
-
-<a id="notifyworkersresponsetypedef"></a>
+```python title="Definition"
+class NotifyWorkersRequestRequestTypeDef(TypedDict):
+    Subject: str,
+    MessageText: str,
+    WorkerIds: Sequence[str],
+```
 
 ## NotifyWorkersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import NotifyWorkersResponseTypeDef
+
+def get_value() -> NotifyWorkersResponseTypeDef:
+    return {
+        "NotifyWorkersFailureStatuses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyWorkersResponseTypeDef(TypedDict):
+    NotifyWorkersFailureStatuses: List[NotifyWorkersFailureStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NotifyWorkersFailureStatuses`:
-  `List`\[[NotifyWorkersFailureStatusTypeDef](./type_defs.md#notifyworkersfailurestatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: NotifyWorkersFailureStatusTypeDef](./type_defs.md#notifyworkersfailurestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametermapentrytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterMapEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ParameterMapEntryTypeDef
+
+def get_value() -> ParameterMapEntryTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="policyparametertypedef"></a>
+```python title="Definition"
+class ParameterMapEntryTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## PolicyParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import PolicyParameterTypeDef
+
+def get_value() -> PolicyParameterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyParameterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+    MapEntries: NotRequired[Sequence[ParameterMapEntryTypeDef]],  # (1)
+```
 
-- `Key`: `str`
-- `Values`: `Sequence`\[`str`\]
-- `MapEntries`:
-  `Sequence`\[[ParameterMapEntryTypeDef](./type_defs.md#parametermapentrytypedef)\]
-
-<a id="qualificationrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterMapEntryTypeDef](./type_defs.md#parametermapentrytypedef) 
 ## QualificationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import QualificationRequestTypeDef
+
+def get_value() -> QualificationRequestTypeDef:
+    return {
+        "QualificationRequestId": ...,
+    }
 ```
 
-Optional fields:
-
-- `QualificationRequestId`: `str`
-- `QualificationTypeId`: `str`
-- `WorkerId`: `str`
-- `Test`: `str`
-- `Answer`: `str`
-- `SubmitTime`: `datetime`
-
-<a id="qualificationrequirementtypedef"></a>
+```python title="Definition"
+class QualificationRequestTypeDef(TypedDict):
+    QualificationRequestId: NotRequired[str],
+    QualificationTypeId: NotRequired[str],
+    WorkerId: NotRequired[str],
+    Test: NotRequired[str],
+    Answer: NotRequired[str],
+    SubmitTime: NotRequired[datetime],
+```
 
 ## QualificationRequirementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import QualificationRequirementTypeDef
+
+def get_value() -> QualificationRequirementTypeDef:
+    return {
+        "QualificationTypeId": ...,
+        "Comparator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QualificationRequirementTypeDef(TypedDict):
+    QualificationTypeId: str,
+    Comparator: ComparatorType,  # (1)
+    IntegerValues: NotRequired[Sequence[int]],
+    LocaleValues: NotRequired[Sequence[LocaleTypeDef]],  # (2)
+    RequiredToPreview: NotRequired[bool],
+    ActionsGuarded: NotRequired[HITAccessActionsType],  # (3)
+```
 
-- `QualificationTypeId`: `str`
-- `Comparator`: [ComparatorType](./literals.md#comparatortype)
-
-Optional fields:
-
-- `IntegerValues`: `Sequence`\[`int`\]
-- `LocaleValues`: `Sequence`\[[LocaleTypeDef](./type_defs.md#localetypedef)\]
-- `RequiredToPreview`: `bool`
-- `ActionsGuarded`: [HITAccessActionsType](./literals.md#hitaccessactionstype)
-
-<a id="qualificationtypedef"></a>
-
+1. See [:material-code-brackets: ComparatorType](./literals.md#comparatortype) 
+2. See [:material-code-braces: LocaleTypeDef](./type_defs.md#localetypedef) 
+3. See [:material-code-brackets: HITAccessActionsType](./literals.md#hitaccessactionstype) 
 ## QualificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import QualificationTypeDef
+
+def get_value() -> QualificationTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QualificationTypeDef(TypedDict):
+    QualificationTypeId: NotRequired[str],
+    WorkerId: NotRequired[str],
+    GrantTime: NotRequired[datetime],
+    IntegerValue: NotRequired[int],
+    LocaleValue: NotRequired[LocaleTypeDef],  # (1)
+    Status: NotRequired[QualificationStatusType],  # (2)
+```
 
-- `QualificationTypeId`: `str`
-- `WorkerId`: `str`
-- `GrantTime`: `datetime`
-- `IntegerValue`: `int`
-- `LocaleValue`: [LocaleTypeDef](./type_defs.md#localetypedef)
-- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
-
-<a id="qualificationtypetypedef"></a>
-
+1. See [:material-code-braces: LocaleTypeDef](./type_defs.md#localetypedef) 
+2. See [:material-code-brackets: QualificationStatusType](./literals.md#qualificationstatustype) 
 ## QualificationTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import QualificationTypeTypeDef
+
+def get_value() -> QualificationTypeTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QualificationTypeTypeDef(TypedDict):
+    QualificationTypeId: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Keywords: NotRequired[str],
+    QualificationTypeStatus: NotRequired[QualificationTypeStatusType],  # (1)
+    Test: NotRequired[str],
+    TestDurationInSeconds: NotRequired[int],
+    AnswerKey: NotRequired[str],
+    RetryDelayInSeconds: NotRequired[int],
+    IsRequestable: NotRequired[bool],
+    AutoGranted: NotRequired[bool],
+    AutoGrantedValue: NotRequired[int],
+```
 
-- `QualificationTypeId`: `str`
-- `CreationTime`: `datetime`
-- `Name`: `str`
-- `Description`: `str`
-- `Keywords`: `str`
-- `QualificationTypeStatus`:
-  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
-- `Test`: `str`
-- `TestDurationInSeconds`: `int`
-- `AnswerKey`: `str`
-- `RetryDelayInSeconds`: `int`
-- `IsRequestable`: `bool`
-- `AutoGranted`: `bool`
-- `AutoGrantedValue`: `int`
-
-<a id="rejectassignmentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QualificationTypeStatusType](./literals.md#qualificationtypestatustype) 
 ## RejectAssignmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import RejectAssignmentRequestRequestTypeDef
+
+def get_value() -> RejectAssignmentRequestRequestTypeDef:
+    return {
+        "AssignmentId": ...,
+        "RequesterFeedback": ...,
+    }
 ```
 
-Required fields:
-
-- `AssignmentId`: `str`
-- `RequesterFeedback`: `str`
-
-<a id="rejectqualificationrequestrequestrequesttypedef"></a>
+```python title="Definition"
+class RejectAssignmentRequestRequestTypeDef(TypedDict):
+    AssignmentId: str,
+    RequesterFeedback: str,
+```
 
 ## RejectQualificationRequestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import RejectQualificationRequestRequestRequestTypeDef
+
+def get_value() -> RejectQualificationRequestRequestRequestTypeDef:
+    return {
+        "QualificationRequestId": ...,
+    }
 ```
 
-Required fields:
-
-- `QualificationRequestId`: `str`
-
-Optional fields:
-
-- `Reason`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RejectQualificationRequestRequestRequestTypeDef(TypedDict):
+    QualificationRequestId: str,
+    Reason: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="reviewactiondetailtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ReviewActionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ReviewActionDetailTypeDef
+
+def get_value() -> ReviewActionDetailTypeDef:
+    return {
+        "ActionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReviewActionDetailTypeDef(TypedDict):
+    ActionId: NotRequired[str],
+    ActionName: NotRequired[str],
+    TargetId: NotRequired[str],
+    TargetType: NotRequired[str],
+    Status: NotRequired[ReviewActionStatusType],  # (1)
+    CompleteTime: NotRequired[datetime],
+    Result: NotRequired[str],
+    ErrorCode: NotRequired[str],
+```
 
-- `ActionId`: `str`
-- `ActionName`: `str`
-- `TargetId`: `str`
-- `TargetType`: `str`
-- `Status`: [ReviewActionStatusType](./literals.md#reviewactionstatustype)
-- `CompleteTime`: `datetime`
-- `Result`: `str`
-- `ErrorCode`: `str`
-
-<a id="reviewpolicytypedef"></a>
-
+1. See [:material-code-brackets: ReviewActionStatusType](./literals.md#reviewactionstatustype) 
 ## ReviewPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ReviewPolicyTypeDef
+
+def get_value() -> ReviewPolicyTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReviewPolicyTypeDef(TypedDict):
+    PolicyName: str,
+    Parameters: NotRequired[Sequence[PolicyParameterTypeDef]],  # (1)
+```
 
-- `PolicyName`: `str`
-
-Optional fields:
-
-- `Parameters`:
-  `Sequence`\[[PolicyParameterTypeDef](./type_defs.md#policyparametertypedef)\]
-
-<a id="reviewreporttypedef"></a>
-
+1. See [:material-code-braces: PolicyParameterTypeDef](./type_defs.md#policyparametertypedef) 
 ## ReviewReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ReviewReportTypeDef
+
+def get_value() -> ReviewReportTypeDef:
+    return {
+        "ReviewResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReviewReportTypeDef(TypedDict):
+    ReviewResults: NotRequired[List[ReviewResultDetailTypeDef]],  # (1)
+    ReviewActions: NotRequired[List[ReviewActionDetailTypeDef]],  # (2)
+```
 
-- `ReviewResults`:
-  `List`\[[ReviewResultDetailTypeDef](./type_defs.md#reviewresultdetailtypedef)\]
-- `ReviewActions`:
-  `List`\[[ReviewActionDetailTypeDef](./type_defs.md#reviewactiondetailtypedef)\]
-
-<a id="reviewresultdetailtypedef"></a>
-
+1. See [:material-code-braces: ReviewResultDetailTypeDef](./type_defs.md#reviewresultdetailtypedef) 
+2. See [:material-code-braces: ReviewActionDetailTypeDef](./type_defs.md#reviewactiondetailtypedef) 
 ## ReviewResultDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import ReviewResultDetailTypeDef
+
+def get_value() -> ReviewResultDetailTypeDef:
+    return {
+        "ActionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ActionId`: `str`
-- `SubjectId`: `str`
-- `SubjectType`: `str`
-- `QuestionId`: `str`
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="sendbonusrequestrequesttypedef"></a>
+```python title="Definition"
+class ReviewResultDetailTypeDef(TypedDict):
+    ActionId: NotRequired[str],
+    SubjectId: NotRequired[str],
+    SubjectType: NotRequired[str],
+    QuestionId: NotRequired[str],
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## SendBonusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import SendBonusRequestRequestTypeDef
+
+def get_value() -> SendBonusRequestRequestTypeDef:
+    return {
+        "WorkerId": ...,
+        "BonusAmount": ...,
+        "AssignmentId": ...,
+        "Reason": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkerId`: `str`
-- `BonusAmount`: `str`
-- `AssignmentId`: `str`
-- `Reason`: `str`
-
-Optional fields:
-
-- `UniqueRequestToken`: `str`
-
-<a id="sendtesteventnotificationrequestrequesttypedef"></a>
+```python title="Definition"
+class SendBonusRequestRequestTypeDef(TypedDict):
+    WorkerId: str,
+    BonusAmount: str,
+    AssignmentId: str,
+    Reason: str,
+    UniqueRequestToken: NotRequired[str],
+```
 
 ## SendTestEventNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import SendTestEventNotificationRequestRequestTypeDef
+
+def get_value() -> SendTestEventNotificationRequestRequestTypeDef:
+    return {
+        "Notification": ...,
+        "TestEventType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendTestEventNotificationRequestRequestTypeDef(TypedDict):
+    Notification: NotificationSpecificationTypeDef,  # (1)
+    TestEventType: EventTypeType,  # (2)
+```
 
-- `Notification`:
-  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
-- `TestEventType`: [EventTypeType](./literals.md#eventtypetype)
-
-<a id="updateexpirationforhitrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef) 
+2. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
 ## UpdateExpirationForHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateExpirationForHITRequestRequestTypeDef
+
+def get_value() -> UpdateExpirationForHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+        "ExpireAt": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-- `ExpireAt`: `Union`\[`datetime`, `str`\]
-
-<a id="updatehitreviewstatusrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateExpirationForHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    ExpireAt: Union[datetime, str],
+```
 
 ## UpdateHITReviewStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateHITReviewStatusRequestRequestTypeDef
+
+def get_value() -> UpdateHITReviewStatusRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-
-Optional fields:
-
-- `Revert`: `bool`
-
-<a id="updatehittypeofhitrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateHITReviewStatusRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    Revert: NotRequired[bool],
+```
 
 ## UpdateHITTypeOfHITRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateHITTypeOfHITRequestRequestTypeDef
+
+def get_value() -> UpdateHITTypeOfHITRequestRequestTypeDef:
+    return {
+        "HITId": ...,
+        "HITTypeId": ...,
+    }
 ```
 
-Required fields:
-
-- `HITId`: `str`
-- `HITTypeId`: `str`
-
-<a id="updatenotificationsettingsrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateHITTypeOfHITRequestRequestTypeDef(TypedDict):
+    HITId: str,
+    HITTypeId: str,
+```
 
 ## UpdateNotificationSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateNotificationSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateNotificationSettingsRequestRequestTypeDef:
+    return {
+        "HITTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNotificationSettingsRequestRequestTypeDef(TypedDict):
+    HITTypeId: str,
+    Notification: NotRequired[NotificationSpecificationTypeDef],  # (1)
+    Active: NotRequired[bool],
+```
 
-- `HITTypeId`: `str`
-
-Optional fields:
-
-- `Notification`:
-  [NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef)
-- `Active`: `bool`
-
-<a id="updatequalificationtyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationSpecificationTypeDef](./type_defs.md#notificationspecificationtypedef) 
 ## UpdateQualificationTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateQualificationTypeRequestRequestTypeDef
+
+def get_value() -> UpdateQualificationTypeRequestRequestTypeDef:
+    return {
+        "QualificationTypeId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQualificationTypeRequestRequestTypeDef(TypedDict):
+    QualificationTypeId: str,
+    Description: NotRequired[str],
+    QualificationTypeStatus: NotRequired[QualificationTypeStatusType],  # (1)
+    Test: NotRequired[str],
+    AnswerKey: NotRequired[str],
+    TestDurationInSeconds: NotRequired[int],
+    RetryDelayInSeconds: NotRequired[int],
+    AutoGranted: NotRequired[bool],
+    AutoGrantedValue: NotRequired[int],
+```
 
-- `QualificationTypeId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `QualificationTypeStatus`:
-  [QualificationTypeStatusType](./literals.md#qualificationtypestatustype)
-- `Test`: `str`
-- `AnswerKey`: `str`
-- `TestDurationInSeconds`: `int`
-- `RetryDelayInSeconds`: `int`
-- `AutoGranted`: `bool`
-- `AutoGrantedValue`: `int`
-
-<a id="updatequalificationtyperesponsetypedef"></a>
-
+1. See [:material-code-brackets: QualificationTypeStatusType](./literals.md#qualificationtypestatustype) 
 ## UpdateQualificationTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import UpdateQualificationTypeResponseTypeDef
+
+def get_value() -> UpdateQualificationTypeResponseTypeDef:
+    return {
+        "QualificationType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQualificationTypeResponseTypeDef(TypedDict):
+    QualificationType: QualificationTypeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QualificationType`:
-  [QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="workerblocktypedef"></a>
-
+1. See [:material-code-braces: QualificationTypeTypeDef](./type_defs.md#qualificationtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WorkerBlockTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mturk.type_defs import WorkerBlockTypeDef
+
+def get_value() -> WorkerBlockTypeDef:
+    return {
+        "WorkerId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkerBlockTypeDef(TypedDict):
+    WorkerId: NotRequired[str],
+    Reason: NotRequired[str],
+```
 
-- `WorkerId`: `str`
-- `Reason`: `str`

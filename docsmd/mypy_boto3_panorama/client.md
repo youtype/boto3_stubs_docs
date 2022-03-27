@@ -1,64 +1,18 @@
-<a id="panoramaclient-for-boto3-panorama-module"></a>
-
-# PanoramaClient for boto3 Panorama module
+# PanoramaClient
 
 > [Index](../README.md) > [Panorama](./README.md) > PanoramaClient
 
-Auto-generated documentation for
-[Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
-type annotations stubs module
-[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
+!!! note ""
 
-- [PanoramaClient for boto3 Panorama module](#panoramaclient-for-boto3-panorama-module)
-  - [PanoramaClient](#panoramaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_application_instance](#create_application_instance)
-    - [create_job_for_devices](#create_job_for_devices)
-    - [create_node_from_template_job](#create_node_from_template_job)
-    - [create_package](#create_package)
-    - [create_package_import_job](#create_package_import_job)
-    - [delete_device](#delete_device)
-    - [delete_package](#delete_package)
-    - [deregister_package_version](#deregister_package_version)
-    - [describe_application_instance](#describe_application_instance)
-    - [describe_application_instance_details](#describe_application_instance_details)
-    - [describe_device](#describe_device)
-    - [describe_device_job](#describe_device_job)
-    - [describe_node](#describe_node)
-    - [describe_node_from_template_job](#describe_node_from_template_job)
-    - [describe_package](#describe_package)
-    - [describe_package_import_job](#describe_package_import_job)
-    - [describe_package_version](#describe_package_version)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_application_instance_dependencies](#list_application_instance_dependencies)
-    - [list_application_instance_node_instances](#list_application_instance_node_instances)
-    - [list_application_instances](#list_application_instances)
-    - [list_devices](#list_devices)
-    - [list_devices_jobs](#list_devices_jobs)
-    - [list_node_from_template_jobs](#list_node_from_template_jobs)
-    - [list_nodes](#list_nodes)
-    - [list_package_import_jobs](#list_package_import_jobs)
-    - [list_packages](#list_packages)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [provision_device](#provision_device)
-    - [register_package_version](#register_package_version)
-    - [remove_application_instance](#remove_application_instance)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_device_metadata](#update_device_metadata)
-
-<a id="panoramaclient"></a>
+    Auto-generated documentation for [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
+    type annotations stubs module [mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 ## PanoramaClient
 
-Type annotations for `boto3.client("panorama")`
+Type annotations and code completion for `#!python boto3.client("panorama")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_panorama.client import PanoramaClient
 
@@ -66,856 +20,1114 @@ def get_panorama_client() -> PanoramaClient:
     return Session().client("panorama")
 ```
 
-Boto3 documentation:
-[Panorama.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("panorama").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("panorama")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_panorama.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PanoramaClient exceptions.
-
-Type annotations for `boto3.client("panorama").exceptions` method.
-
-Boto3 documentation:
-[Panorama.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("panorama").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("panorama").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.can_paginate)
 
-Boto3 documentation:
-[Panorama.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_application\_instance"></a>
-
-### create_application_instance
+### create\_application\_instance
 
 Creates an application instance and deploys it to a device.
 
-Type annotations for `boto3.client("panorama").create_application_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").create_application_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_application_instance)
 
-Boto3 documentation:
-[Panorama.Client.create_application_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_application_instance)
+```python title="Method definition"
+def create_application_instance(
+    self,
+    *,
+    DefaultRuntimeContextDevice: str,
+    ManifestPayload: ManifestPayloadTypeDef,  # (1)
+    ApplicationInstanceIdToReplace: str = ...,
+    Description: str = ...,
+    ManifestOverridesPayload: ManifestOverridesPayloadTypeDef = ...,  # (2)
+    Name: str = ...,
+    RuntimeRoleArn: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateApplicationInstanceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationInstanceRequestRequestTypeDef](./type_defs.md#createapplicationinstancerequestrequesttypedef).
+1. See [:material-code-braces: ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef) 
+2. See [:material-code-braces: ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef) 
+3. See [:material-code-braces: CreateApplicationInstanceResponseTypeDef](./type_defs.md#createapplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DefaultRuntimeContextDevice`: `str` *(required)*
-- `ManifestPayload`:
-  [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef) *(required)*
-- `ApplicationInstanceIdToReplace`: `str`
-- `Description`: `str`
-- `ManifestOverridesPayload`:
-  [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
-- `Name`: `str`
-- `RuntimeRoleArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationInstanceRequestRequestTypeDef = {  # (1)
+    "DefaultRuntimeContextDevice": ...,
+    "ManifestPayload": ...,
+}
 
-Returns
-[CreateApplicationInstanceResponseTypeDef](./type_defs.md#createapplicationinstanceresponsetypedef).
+parent.create_application_instance(**kwargs)
+```
 
-<a id="create\_job\_for\_devices"></a>
+1. See [:material-code-braces: CreateApplicationInstanceRequestRequestTypeDef](./type_defs.md#createapplicationinstancerequestrequesttypedef) 
 
-### create_job_for_devices
+### create\_job\_for\_devices
 
 Creates a job to run on one or more devices.
 
-Type annotations for `boto3.client("panorama").create_job_for_devices` method.
+Type annotations and code completion for `#!python boto3.client("panorama").create_job_for_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_job_for_devices)
 
-Boto3 documentation:
-[Panorama.Client.create_job_for_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_job_for_devices)
+```python title="Method definition"
+def create_job_for_devices(
+    self,
+    *,
+    DeviceIds: Sequence[str],
+    DeviceJobConfig: DeviceJobConfigTypeDef,  # (1)
+    JobType: JobTypeType,  # (2)
+) -> CreateJobForDevicesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobForDevicesRequestRequestTypeDef](./type_defs.md#createjobfordevicesrequestrequesttypedef).
+1. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+3. See [:material-code-braces: CreateJobForDevicesResponseTypeDef](./type_defs.md#createjobfordevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceIds`: `Sequence`\[`str`\] *(required)*
-- `DeviceJobConfig`:
-  [DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) *(required)*
-- `JobType`: `Literal['OTA']` (see [JobTypeType](./literals.md#jobtypetype))
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateJobForDevicesRequestRequestTypeDef = {  # (1)
+    "DeviceIds": ...,
+    "DeviceJobConfig": ...,
+    "JobType": ...,
+}
 
-Returns
-[CreateJobForDevicesResponseTypeDef](./type_defs.md#createjobfordevicesresponsetypedef).
+parent.create_job_for_devices(**kwargs)
+```
 
-<a id="create\_node\_from\_template\_job"></a>
+1. See [:material-code-braces: CreateJobForDevicesRequestRequestTypeDef](./type_defs.md#createjobfordevicesrequestrequesttypedef) 
 
-### create_node_from_template_job
+### create\_node\_from\_template\_job
 
 Creates a camera stream node.
 
-Type annotations for `boto3.client("panorama").create_node_from_template_job`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").create_node_from_template_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_node_from_template_job)
 
-Boto3 documentation:
-[Panorama.Client.create_node_from_template_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_node_from_template_job)
+```python title="Method definition"
+def create_node_from_template_job(
+    self,
+    *,
+    NodeName: str,
+    OutputPackageName: str,
+    OutputPackageVersion: str,
+    TemplateParameters: Mapping[str, str],
+    TemplateType: TemplateTypeType,  # (1)
+    JobTags: Sequence[JobResourceTagsTypeDef] = ...,  # (2)
+    NodeDescription: str = ...,
+) -> CreateNodeFromTemplateJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateNodeFromTemplateJobRequestRequestTypeDef](./type_defs.md#createnodefromtemplatejobrequestrequesttypedef).
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+2. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
+3. See [:material-code-braces: CreateNodeFromTemplateJobResponseTypeDef](./type_defs.md#createnodefromtemplatejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NodeName`: `str` *(required)*
-- `OutputPackageName`: `str` *(required)*
-- `OutputPackageVersion`: `str` *(required)*
-- `TemplateParameters`: `Mapping`\[`str`, `str`\] *(required)*
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype)) *(required)*
-- `JobTags`:
-  `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `NodeDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateNodeFromTemplateJobRequestRequestTypeDef = {  # (1)
+    "NodeName": ...,
+    "OutputPackageName": ...,
+    "OutputPackageVersion": ...,
+    "TemplateParameters": ...,
+    "TemplateType": ...,
+}
 
-Returns
-[CreateNodeFromTemplateJobResponseTypeDef](./type_defs.md#createnodefromtemplatejobresponsetypedef).
+parent.create_node_from_template_job(**kwargs)
+```
 
-<a id="create\_package"></a>
+1. See [:material-code-braces: CreateNodeFromTemplateJobRequestRequestTypeDef](./type_defs.md#createnodefromtemplatejobrequestrequesttypedef) 
 
-### create_package
+### create\_package
 
 Creates a package and storage location in an Amazon S3 access point.
 
-Type annotations for `boto3.client("panorama").create_package` method.
+Type annotations and code completion for `#!python boto3.client("panorama").create_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_package)
 
-Boto3 documentation:
-[Panorama.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_package)
+```python title="Method definition"
+def create_package(
+    self,
+    *,
+    PackageName: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreatePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef).
+1. See [:material-code-braces: CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageName`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePackageRequestRequestTypeDef = {  # (1)
+    "PackageName": ...,
+}
 
-Returns
-[CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
+parent.create_package(**kwargs)
+```
 
-<a id="create\_package\_import\_job"></a>
+1. See [:material-code-braces: CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef) 
 
-### create_package_import_job
+### create\_package\_import\_job
 
 Imports a node package.
 
-Type annotations for `boto3.client("panorama").create_package_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").create_package_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_package_import_job)
 
-Boto3 documentation:
-[Panorama.Client.create_package_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.create_package_import_job)
+```python title="Method definition"
+def create_package_import_job(
+    self,
+    *,
+    ClientToken: str,
+    InputConfig: PackageImportJobInputConfigTypeDef,  # (1)
+    JobType: PackageImportJobTypeType,  # (2)
+    OutputConfig: PackageImportJobOutputConfigTypeDef,  # (3)
+    JobTags: Sequence[JobResourceTagsTypeDef] = ...,  # (4)
+) -> CreatePackageImportJobResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreatePackageImportJobRequestRequestTypeDef](./type_defs.md#createpackageimportjobrequestrequesttypedef).
+1. See [:material-code-braces: PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef) 
+2. See [:material-code-brackets: PackageImportJobTypeType](./literals.md#packageimportjobtypetype) 
+3. See [:material-code-braces: PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef) 
+4. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
+5. See [:material-code-braces: CreatePackageImportJobResponseTypeDef](./type_defs.md#createpackageimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `InputConfig`:
-  [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
-  *(required)*
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-  *(required)*
-- `OutputConfig`:
-  [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
-  *(required)*
-- `JobTags`:
-  `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePackageImportJobRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "InputConfig": ...,
+    "JobType": ...,
+    "OutputConfig": ...,
+}
 
-Returns
-[CreatePackageImportJobResponseTypeDef](./type_defs.md#createpackageimportjobresponsetypedef).
+parent.create_package_import_job(**kwargs)
+```
 
-<a id="delete\_device"></a>
+1. See [:material-code-braces: CreatePackageImportJobRequestRequestTypeDef](./type_defs.md#createpackageimportjobrequestrequesttypedef) 
 
-### delete_device
+### delete\_device
 
 Deletes a device.
 
-Type annotations for `boto3.client("panorama").delete_device` method.
+Type annotations and code completion for `#!python boto3.client("panorama").delete_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.delete_device)
 
-Boto3 documentation:
-[Panorama.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.delete_device)
+```python title="Method definition"
+def delete_device(
+    self,
+    *,
+    DeviceId: str,
+) -> DeleteDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef).
+1. See [:material-code-braces: DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef).
+parent.delete_device(**kwargs)
+```
 
-<a id="delete\_package"></a>
+1. See [:material-code-braces: DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef) 
 
-### delete_package
+### delete\_package
 
 Deletes a package.
 
-Type annotations for `boto3.client("panorama").delete_package` method.
+Type annotations and code completion for `#!python boto3.client("panorama").delete_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.delete_package)
 
-Boto3 documentation:
-[Panorama.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.delete_package)
+```python title="Method definition"
+def delete_package(
+    self,
+    *,
+    PackageId: str,
+    ForceDelete: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PackageId`: `str` *(required)*
-- `ForceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeletePackageRequestRequestTypeDef = {  # (1)
+    "PackageId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_package(**kwargs)
+```
 
-<a id="deregister\_package\_version"></a>
+1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
 
-### deregister_package_version
+### deregister\_package\_version
 
 Deregisters a package version.
 
-Type annotations for `boto3.client("panorama").deregister_package_version`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").deregister_package_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.deregister_package_version)
 
-Boto3 documentation:
-[Panorama.Client.deregister_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.deregister_package_version)
+```python title="Method definition"
+def deregister_package_version(
+    self,
+    *,
+    PackageId: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    OwnerAccount: str = ...,
+    UpdatedLatestPatchVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterPackageVersionRequestRequestTypeDef](./type_defs.md#deregisterpackageversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PackageId`: `str` *(required)*
-- `PackageVersion`: `str` *(required)*
-- `PatchVersion`: `str` *(required)*
-- `OwnerAccount`: `str`
-- `UpdatedLatestPatchVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeregisterPackageVersionRequestRequestTypeDef = {  # (1)
+    "PackageId": ...,
+    "PackageVersion": ...,
+    "PatchVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_package_version(**kwargs)
+```
 
-<a id="describe\_application\_instance"></a>
+1. See [:material-code-braces: DeregisterPackageVersionRequestRequestTypeDef](./type_defs.md#deregisterpackageversionrequestrequesttypedef) 
 
-### describe_application_instance
+### describe\_application\_instance
 
 Returns information about an application instance on a device.
 
-Type annotations for `boto3.client("panorama").describe_application_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_application_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_application_instance)
 
-Boto3 documentation:
-[Panorama.Client.describe_application_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_application_instance)
+```python title="Method definition"
+def describe_application_instance(
+    self,
+    *,
+    ApplicationInstanceId: str,
+) -> DescribeApplicationInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationInstanceRequestRequestTypeDef](./type_defs.md#describeapplicationinstancerequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationInstanceResponseTypeDef](./type_defs.md#describeapplicationinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationInstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationInstanceRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+}
 
-Returns
-[DescribeApplicationInstanceResponseTypeDef](./type_defs.md#describeapplicationinstanceresponsetypedef).
+parent.describe_application_instance(**kwargs)
+```
 
-<a id="describe\_application\_instance\_details"></a>
+1. See [:material-code-braces: DescribeApplicationInstanceRequestRequestTypeDef](./type_defs.md#describeapplicationinstancerequestrequesttypedef) 
 
-### describe_application_instance_details
+### describe\_application\_instance\_details
 
 Returns information about an application instance's configuration manifest.
 
-Type annotations for
-`boto3.client("panorama").describe_application_instance_details` method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_application_instance_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_application_instance_details)
 
-Boto3 documentation:
-[Panorama.Client.describe_application_instance_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_application_instance_details)
+```python title="Method definition"
+def describe_application_instance_details(
+    self,
+    *,
+    ApplicationInstanceId: str,
+) -> DescribeApplicationInstanceDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationInstanceDetailsRequestRequestTypeDef](./type_defs.md#describeapplicationinstancedetailsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationInstanceDetailsResponseTypeDef](./type_defs.md#describeapplicationinstancedetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationInstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationInstanceDetailsRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+}
 
-Returns
-[DescribeApplicationInstanceDetailsResponseTypeDef](./type_defs.md#describeapplicationinstancedetailsresponsetypedef).
+parent.describe_application_instance_details(**kwargs)
+```
 
-<a id="describe\_device"></a>
+1. See [:material-code-braces: DescribeApplicationInstanceDetailsRequestRequestTypeDef](./type_defs.md#describeapplicationinstancedetailsrequestrequesttypedef) 
 
-### describe_device
+### describe\_device
 
 Returns information about a device.
 
-Type annotations for `boto3.client("panorama").describe_device` method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_device)
 
-Boto3 documentation:
-[Panorama.Client.describe_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_device)
+```python title="Method definition"
+def describe_device(
+    self,
+    *,
+    DeviceId: str,
+) -> DescribeDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef).
+1. See [:material-code-braces: DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
+parent.describe_device(**kwargs)
+```
 
-<a id="describe\_device\_job"></a>
+1. See [:material-code-braces: DescribeDeviceRequestRequestTypeDef](./type_defs.md#describedevicerequestrequesttypedef) 
 
-### describe_device_job
+### describe\_device\_job
 
 Returns information about a device job.
 
-Type annotations for `boto3.client("panorama").describe_device_job` method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_device_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_device_job)
 
-Boto3 documentation:
-[Panorama.Client.describe_device_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_device_job)
+```python title="Method definition"
+def describe_device_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeDeviceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDeviceJobRequestRequestTypeDef](./type_defs.md#describedevicejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDeviceJobResponseTypeDef](./type_defs.md#describedevicejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDeviceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeDeviceJobResponseTypeDef](./type_defs.md#describedevicejobresponsetypedef).
+parent.describe_device_job(**kwargs)
+```
 
-<a id="describe\_node"></a>
+1. See [:material-code-braces: DescribeDeviceJobRequestRequestTypeDef](./type_defs.md#describedevicejobrequestrequesttypedef) 
 
-### describe_node
+### describe\_node
 
 Returns information about a node.
 
-Type annotations for `boto3.client("panorama").describe_node` method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_node)
 
-Boto3 documentation:
-[Panorama.Client.describe_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_node)
+```python title="Method definition"
+def describe_node(
+    self,
+    *,
+    NodeId: str,
+    OwnerAccount: str = ...,
+) -> DescribeNodeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNodeRequestRequestTypeDef](./type_defs.md#describenoderequestrequesttypedef).
+1. See [:material-code-braces: DescribeNodeResponseTypeDef](./type_defs.md#describenoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `NodeId`: `str` *(required)*
-- `OwnerAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeNodeRequestRequestTypeDef = {  # (1)
+    "NodeId": ...,
+}
 
-Returns
-[DescribeNodeResponseTypeDef](./type_defs.md#describenoderesponsetypedef).
+parent.describe_node(**kwargs)
+```
 
-<a id="describe\_node\_from\_template\_job"></a>
+1. See [:material-code-braces: DescribeNodeRequestRequestTypeDef](./type_defs.md#describenoderequestrequesttypedef) 
 
-### describe_node_from_template_job
+### describe\_node\_from\_template\_job
 
 Returns information about a job to create a camera stream node.
 
-Type annotations for `boto3.client("panorama").describe_node_from_template_job`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_node_from_template_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_node_from_template_job)
 
-Boto3 documentation:
-[Panorama.Client.describe_node_from_template_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_node_from_template_job)
+```python title="Method definition"
+def describe_node_from_template_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeNodeFromTemplateJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNodeFromTemplateJobRequestRequestTypeDef](./type_defs.md#describenodefromtemplatejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeNodeFromTemplateJobResponseTypeDef](./type_defs.md#describenodefromtemplatejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNodeFromTemplateJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeNodeFromTemplateJobResponseTypeDef](./type_defs.md#describenodefromtemplatejobresponsetypedef).
+parent.describe_node_from_template_job(**kwargs)
+```
 
-<a id="describe\_package"></a>
+1. See [:material-code-braces: DescribeNodeFromTemplateJobRequestRequestTypeDef](./type_defs.md#describenodefromtemplatejobrequestrequesttypedef) 
 
-### describe_package
+### describe\_package
 
 Returns information about a package.
 
-Type annotations for `boto3.client("panorama").describe_package` method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package)
 
-Boto3 documentation:
-[Panorama.Client.describe_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package)
+```python title="Method definition"
+def describe_package(
+    self,
+    *,
+    PackageId: str,
+) -> DescribePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackageRequestRequestTypeDef](./type_defs.md#describepackagerequestrequesttypedef).
+1. See [:material-code-braces: DescribePackageResponseTypeDef](./type_defs.md#describepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePackageRequestRequestTypeDef = {  # (1)
+    "PackageId": ...,
+}
 
-Returns
-[DescribePackageResponseTypeDef](./type_defs.md#describepackageresponsetypedef).
+parent.describe_package(**kwargs)
+```
 
-<a id="describe\_package\_import\_job"></a>
+1. See [:material-code-braces: DescribePackageRequestRequestTypeDef](./type_defs.md#describepackagerequestrequesttypedef) 
 
-### describe_package_import_job
+### describe\_package\_import\_job
 
 Returns information about a package import job.
 
-Type annotations for `boto3.client("panorama").describe_package_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_package_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package_import_job)
 
-Boto3 documentation:
-[Panorama.Client.describe_package_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package_import_job)
+```python title="Method definition"
+def describe_package_import_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribePackageImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackageImportJobRequestRequestTypeDef](./type_defs.md#describepackageimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribePackageImportJobResponseTypeDef](./type_defs.md#describepackageimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePackageImportJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribePackageImportJobResponseTypeDef](./type_defs.md#describepackageimportjobresponsetypedef).
+parent.describe_package_import_job(**kwargs)
+```
 
-<a id="describe\_package\_version"></a>
+1. See [:material-code-braces: DescribePackageImportJobRequestRequestTypeDef](./type_defs.md#describepackageimportjobrequestrequesttypedef) 
 
-### describe_package_version
+### describe\_package\_version
 
 Returns information about a package version.
 
-Type annotations for `boto3.client("panorama").describe_package_version`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").describe_package_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package_version)
 
-Boto3 documentation:
-[Panorama.Client.describe_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.describe_package_version)
+```python title="Method definition"
+def describe_package_version(
+    self,
+    *,
+    PackageId: str,
+    PackageVersion: str,
+    OwnerAccount: str = ...,
+    PatchVersion: str = ...,
+) -> DescribePackageVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef).
+1. See [:material-code-braces: DescribePackageVersionResponseTypeDef](./type_defs.md#describepackageversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageId`: `str` *(required)*
-- `PackageVersion`: `str` *(required)*
-- `OwnerAccount`: `str`
-- `PatchVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePackageVersionRequestRequestTypeDef = {  # (1)
+    "PackageId": ...,
+    "PackageVersion": ...,
+}
 
-Returns
-[DescribePackageVersionResponseTypeDef](./type_defs.md#describepackageversionresponsetypedef).
+parent.describe_package_version(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribePackageVersionRequestRequestTypeDef](./type_defs.md#describepackageversionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("panorama").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("panorama").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Panorama.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_application\_instance\_dependencies"></a>
-
-### list_application_instance_dependencies
+### list\_application\_instance\_dependencies
 
 Returns a list of application instance dependencies.
 
-Type annotations for
-`boto3.client("panorama").list_application_instance_dependencies` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_application_instance_dependencies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instance_dependencies)
 
-Boto3 documentation:
-[Panorama.Client.list_application_instance_dependencies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instance_dependencies)
+```python title="Method definition"
+def list_application_instance_dependencies(
+    self,
+    *,
+    ApplicationInstanceId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationInstanceDependenciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationInstanceDependenciesRequestRequestTypeDef](./type_defs.md#listapplicationinstancedependenciesrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationInstanceDependenciesResponseTypeDef](./type_defs.md#listapplicationinstancedependenciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationInstanceId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationInstanceDependenciesRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+}
 
-Returns
-[ListApplicationInstanceDependenciesResponseTypeDef](./type_defs.md#listapplicationinstancedependenciesresponsetypedef).
+parent.list_application_instance_dependencies(**kwargs)
+```
 
-<a id="list\_application\_instance\_node\_instances"></a>
+1. See [:material-code-braces: ListApplicationInstanceDependenciesRequestRequestTypeDef](./type_defs.md#listapplicationinstancedependenciesrequestrequesttypedef) 
 
-### list_application_instance_node_instances
+### list\_application\_instance\_node\_instances
 
 Returns a list of application node instances.
 
-Type annotations for
-`boto3.client("panorama").list_application_instance_node_instances` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_application_instance_node_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instance_node_instances)
 
-Boto3 documentation:
-[Panorama.Client.list_application_instance_node_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instance_node_instances)
+```python title="Method definition"
+def list_application_instance_node_instances(
+    self,
+    *,
+    ApplicationInstanceId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationInstanceNodeInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationInstanceNodeInstancesRequestRequestTypeDef](./type_defs.md#listapplicationinstancenodeinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationInstanceNodeInstancesResponseTypeDef](./type_defs.md#listapplicationinstancenodeinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationInstanceId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationInstanceNodeInstancesRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+}
 
-Returns
-[ListApplicationInstanceNodeInstancesResponseTypeDef](./type_defs.md#listapplicationinstancenodeinstancesresponsetypedef).
+parent.list_application_instance_node_instances(**kwargs)
+```
 
-<a id="list\_application\_instances"></a>
+1. See [:material-code-braces: ListApplicationInstanceNodeInstancesRequestRequestTypeDef](./type_defs.md#listapplicationinstancenodeinstancesrequestrequesttypedef) 
 
-### list_application_instances
+### list\_application\_instances
 
 Returns a list of application instances.
 
-Type annotations for `boto3.client("panorama").list_application_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_application_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instances)
 
-Boto3 documentation:
-[Panorama.Client.list_application_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_application_instances)
+```python title="Method definition"
+def list_application_instances(
+    self,
+    *,
+    DeviceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    StatusFilter: StatusFilterType = ...,  # (1)
+) -> ListApplicationInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationInstancesRequestRequestTypeDef](./type_defs.md#listapplicationinstancesrequestrequesttypedef).
+1. See [:material-code-brackets: StatusFilterType](./literals.md#statusfiltertype) 
+2. See [:material-code-braces: ListApplicationInstancesResponseTypeDef](./type_defs.md#listapplicationinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
+```python title="Usage example with kwargs"
+kwargs: ListApplicationInstancesRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[ListApplicationInstancesResponseTypeDef](./type_defs.md#listapplicationinstancesresponsetypedef).
+parent.list_application_instances(**kwargs)
+```
 
-<a id="list\_devices"></a>
+1. See [:material-code-braces: ListApplicationInstancesRequestRequestTypeDef](./type_defs.md#listapplicationinstancesrequestrequesttypedef) 
 
-### list_devices
+### list\_devices
 
 Returns a list of devices.
 
-Type annotations for `boto3.client("panorama").list_devices` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_devices)
 
-Boto3 documentation:
-[Panorama.Client.list_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_devices)
+```python title="Method definition"
+def list_devices(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef).
+1. See [:material-code-braces: ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
+parent.list_devices(**kwargs)
+```
 
-<a id="list\_devices\_jobs"></a>
+1. See [:material-code-braces: ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef) 
 
-### list_devices_jobs
+### list\_devices\_jobs
 
 Returns a list of jobs.
 
-Type annotations for `boto3.client("panorama").list_devices_jobs` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_devices_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_devices_jobs)
 
-Boto3 documentation:
-[Panorama.Client.list_devices_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_devices_jobs)
+```python title="Method definition"
+def list_devices_jobs(
+    self,
+    *,
+    DeviceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDevicesJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDevicesJobsRequestRequestTypeDef](./type_defs.md#listdevicesjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListDevicesJobsResponseTypeDef](./type_defs.md#listdevicesjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDevicesJobsRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[ListDevicesJobsResponseTypeDef](./type_defs.md#listdevicesjobsresponsetypedef).
+parent.list_devices_jobs(**kwargs)
+```
 
-<a id="list\_node\_from\_template\_jobs"></a>
+1. See [:material-code-braces: ListDevicesJobsRequestRequestTypeDef](./type_defs.md#listdevicesjobsrequestrequesttypedef) 
 
-### list_node_from_template_jobs
+### list\_node\_from\_template\_jobs
 
 Returns a list of camera stream node jobs.
 
-Type annotations for `boto3.client("panorama").list_node_from_template_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_node_from_template_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_node_from_template_jobs)
 
-Boto3 documentation:
-[Panorama.Client.list_node_from_template_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_node_from_template_jobs)
+```python title="Method definition"
+def list_node_from_template_jobs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListNodeFromTemplateJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNodeFromTemplateJobsRequestRequestTypeDef](./type_defs.md#listnodefromtemplatejobsrequestrequesttypedef).
+1. See [:material-code-braces: ListNodeFromTemplateJobsResponseTypeDef](./type_defs.md#listnodefromtemplatejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNodeFromTemplateJobsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListNodeFromTemplateJobsResponseTypeDef](./type_defs.md#listnodefromtemplatejobsresponsetypedef).
+parent.list_node_from_template_jobs(**kwargs)
+```
 
-<a id="list\_nodes"></a>
+1. See [:material-code-braces: ListNodeFromTemplateJobsRequestRequestTypeDef](./type_defs.md#listnodefromtemplatejobsrequestrequesttypedef) 
 
-### list_nodes
+### list\_nodes
 
 Returns a list of nodes.
 
-Type annotations for `boto3.client("panorama").list_nodes` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_nodes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_nodes)
 
-Boto3 documentation:
-[Panorama.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_nodes)
+```python title="Method definition"
+def list_nodes(
+    self,
+    *,
+    Category: NodeCategoryType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    OwnerAccount: str = ...,
+    PackageName: str = ...,
+    PackageVersion: str = ...,
+    PatchVersion: str = ...,
+) -> ListNodesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNodesRequestRequestTypeDef](./type_defs.md#listnodesrequestrequesttypedef).
+1. See [:material-code-brackets: NodeCategoryType](./literals.md#nodecategorytype) 
+2. See [:material-code-braces: ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `OwnerAccount`: `str`
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNodesRequestRequestTypeDef = {  # (1)
+    "Category": ...,
+}
 
-Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
+parent.list_nodes(**kwargs)
+```
 
-<a id="list\_package\_import\_jobs"></a>
+1. See [:material-code-braces: ListNodesRequestRequestTypeDef](./type_defs.md#listnodesrequestrequesttypedef) 
 
-### list_package_import_jobs
+### list\_package\_import\_jobs
 
 Returns a list of package import jobs.
 
-Type annotations for `boto3.client("panorama").list_package_import_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_package_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_package_import_jobs)
 
-Boto3 documentation:
-[Panorama.Client.list_package_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_package_import_jobs)
+```python title="Method definition"
+def list_package_import_jobs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPackageImportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPackageImportJobsRequestRequestTypeDef](./type_defs.md#listpackageimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListPackageImportJobsResponseTypeDef](./type_defs.md#listpackageimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackageImportJobsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListPackageImportJobsResponseTypeDef](./type_defs.md#listpackageimportjobsresponsetypedef).
+parent.list_package_import_jobs(**kwargs)
+```
 
-<a id="list\_packages"></a>
+1. See [:material-code-braces: ListPackageImportJobsRequestRequestTypeDef](./type_defs.md#listpackageimportjobsrequestrequesttypedef) 
 
-### list_packages
+### list\_packages
 
 Returns a list of packages.
 
-Type annotations for `boto3.client("panorama").list_packages` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_packages)
 
-Boto3 documentation:
-[Panorama.Client.list_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_packages)
+```python title="Method definition"
+def list_packages(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPackagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef).
+1. See [:material-code-braces: ListPackagesResponseTypeDef](./type_defs.md#listpackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackagesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListPackagesResponseTypeDef](./type_defs.md#listpackagesresponsetypedef).
+parent.list_packages(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPackagesRequestRequestTypeDef](./type_defs.md#listpackagesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags for a resource.
 
-Type annotations for `boto3.client("panorama").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("panorama").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Panorama.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="provision\_device"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### provision_device
+### provision\_device
 
 Creates a device and returns a configuration archive.
 
-Type annotations for `boto3.client("panorama").provision_device` method.
+Type annotations and code completion for `#!python boto3.client("panorama").provision_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.provision_device)
 
-Boto3 documentation:
-[Panorama.Client.provision_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.provision_device)
+```python title="Method definition"
+def provision_device(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    NetworkingConfiguration: NetworkPayloadTypeDef = ...,  # (1)
+    Tags: Mapping[str, str] = ...,
+) -> ProvisionDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ProvisionDeviceRequestRequestTypeDef](./type_defs.md#provisiondevicerequestrequesttypedef).
+1. See [:material-code-braces: NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef) 
+2. See [:material-code-braces: ProvisionDeviceResponseTypeDef](./type_defs.md#provisiondeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `NetworkingConfiguration`:
-  [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ProvisionDeviceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ProvisionDeviceResponseTypeDef](./type_defs.md#provisiondeviceresponsetypedef).
+parent.provision_device(**kwargs)
+```
 
-<a id="register\_package\_version"></a>
+1. See [:material-code-braces: ProvisionDeviceRequestRequestTypeDef](./type_defs.md#provisiondevicerequestrequesttypedef) 
 
-### register_package_version
+### register\_package\_version
 
 Registers a package version.
 
-Type annotations for `boto3.client("panorama").register_package_version`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").register_package_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.register_package_version)
 
-Boto3 documentation:
-[Panorama.Client.register_package_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.register_package_version)
+```python title="Method definition"
+def register_package_version(
+    self,
+    *,
+    PackageId: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    MarkLatest: bool = ...,
+    OwnerAccount: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterPackageVersionRequestRequestTypeDef](./type_defs.md#registerpackageversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PackageId`: `str` *(required)*
-- `PackageVersion`: `str` *(required)*
-- `PatchVersion`: `str` *(required)*
-- `MarkLatest`: `bool`
-- `OwnerAccount`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterPackageVersionRequestRequestTypeDef = {  # (1)
+    "PackageId": ...,
+    "PackageVersion": ...,
+    "PatchVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_package_version(**kwargs)
+```
 
-<a id="remove\_application\_instance"></a>
+1. See [:material-code-braces: RegisterPackageVersionRequestRequestTypeDef](./type_defs.md#registerpackageversionrequestrequesttypedef) 
 
-### remove_application_instance
+### remove\_application\_instance
 
 Removes an application instance.
 
-Type annotations for `boto3.client("panorama").remove_application_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("panorama").remove_application_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.remove_application_instance)
 
-Boto3 documentation:
-[Panorama.Client.remove_application_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.remove_application_instance)
+```python title="Method definition"
+def remove_application_instance(
+    self,
+    *,
+    ApplicationInstanceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveApplicationInstanceRequestRequestTypeDef](./type_defs.md#removeapplicationinstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationInstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveApplicationInstanceRequestRequestTypeDef = {  # (1)
+    "ApplicationInstanceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_application_instance(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RemoveApplicationInstanceRequestRequestTypeDef](./type_defs.md#removeapplicationinstancerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags a resource.
 
-Type annotations for `boto3.client("panorama").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("panorama").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.tag_resource)
 
-Boto3 documentation:
-[Panorama.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("panorama").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("panorama").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.untag_resource)
 
-Boto3 documentation:
-[Panorama.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_device\_metadata"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_device_metadata
+### update\_device\_metadata
 
 Updates a device's metadata.
 
-Type annotations for `boto3.client("panorama").update_device_metadata` method.
+Type annotations and code completion for `#!python boto3.client("panorama").update_device_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.update_device_metadata)
 
-Boto3 documentation:
-[Panorama.Client.update_device_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client.update_device_metadata)
+```python title="Method definition"
+def update_device_metadata(
+    self,
+    *,
+    DeviceId: str,
+    Description: str = ...,
+) -> UpdateDeviceMetadataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceMetadataRequestRequestTypeDef](./type_defs.md#updatedevicemetadatarequestrequesttypedef).
+1. See [:material-code-braces: UpdateDeviceMetadataResponseTypeDef](./type_defs.md#updatedevicemetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceId`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceMetadataRequestRequestTypeDef = {  # (1)
+    "DeviceId": ...,
+}
 
-Returns
-[UpdateDeviceMetadataResponseTypeDef](./type_defs.md#updatedevicemetadataresponsetypedef).
+parent.update_device_metadata(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateDeviceMetadataRequestRequestTypeDef](./type_defs.md#updatedevicemetadatarequestrequesttypedef) 
+
+
+
+

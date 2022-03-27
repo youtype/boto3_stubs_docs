@@ -1,42 +1,18 @@
-<a id="paginators-for-boto3-organizations-module"></a>
-
-# Paginators for boto3 Organizations module
+# Paginators
 
 > [Index](../README.md) > [Organizations](./README.md) > Paginators
 
-Auto-generated documentation for
-[Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
-type annotations stubs module
-[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
+!!! note ""
 
-- [Paginators for boto3 Organizations module](#paginators-for-boto3-organizations-module)
-  - [ListAWSServiceAccessForOrganizationPaginator](#listawsserviceaccessfororganizationpaginator)
-  - [ListAccountsPaginator](#listaccountspaginator)
-  - [ListAccountsForParentPaginator](#listaccountsforparentpaginator)
-  - [ListChildrenPaginator](#listchildrenpaginator)
-  - [ListCreateAccountStatusPaginator](#listcreateaccountstatuspaginator)
-  - [ListDelegatedAdministratorsPaginator](#listdelegatedadministratorspaginator)
-  - [ListDelegatedServicesForAccountPaginator](#listdelegatedservicesforaccountpaginator)
-  - [ListHandshakesForAccountPaginator](#listhandshakesforaccountpaginator)
-  - [ListHandshakesForOrganizationPaginator](#listhandshakesfororganizationpaginator)
-  - [ListOrganizationalUnitsForParentPaginator](#listorganizationalunitsforparentpaginator)
-  - [ListParentsPaginator](#listparentspaginator)
-  - [ListPoliciesPaginator](#listpoliciespaginator)
-  - [ListPoliciesForTargetPaginator](#listpoliciesfortargetpaginator)
-  - [ListRootsPaginator](#listrootspaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [ListTargetsForPolicyPaginator](#listtargetsforpolicypaginator)
-
-<a id="listawsserviceaccessfororganizationpaginator"></a>
+    Auto-generated documentation for [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
+    type annotations stubs module [mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 ## ListAWSServiceAccessForOrganizationPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListAWSServiceAccessForOrganizationPaginator
@@ -45,27 +21,39 @@ def get_list_aws_service_access_for_organization_paginator() -> ListAWSServiceAc
     return Session().client("organizations").get_paginator("list_aws_service_access_for_organization")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListAWSServiceAccessForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAWSServiceAccessForOrganization)
 
-Arguments for `ListAWSServiceAccessForOrganizationPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAWSServiceAccessForOrganizationPaginator.paginate` method.
 
-`ListAWSServiceAccessForOrganizationPaginator.paginate` returns
-`_PageIterator`\[[ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAWSServiceAccessForOrganizationResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listaccountspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAWSServiceAccessForOrganizationRequestListAWSServiceAccessForOrganizationPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAWSServiceAccessForOrganizationRequestListAWSServiceAccessForOrganizationPaginateTypeDef](./type_defs.md#listawsserviceaccessfororganizationrequestlistawsserviceaccessfororganizationpaginatetypedef) 
 ## ListAccountsPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_accounts")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListAccountsPaginator
@@ -74,27 +62,39 @@ def get_list_accounts_paginator() -> ListAccountsPaginator:
     return Session().client("organizations").get_paginator("list_accounts")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccounts)
 
-Arguments for `ListAccountsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountsPaginator.paginate` method.
 
-`ListAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listaccountsforparentpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountsRequestListAccountsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountsRequestListAccountsPaginateTypeDef](./type_defs.md#listaccountsrequestlistaccountspaginatetypedef) 
 ## ListAccountsForParentPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_accounts_for_parent")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_accounts_for_parent")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListAccountsForParentPaginator
@@ -103,28 +103,40 @@ def get_list_accounts_for_parent_paginator() -> ListAccountsForParentPaginator:
     return Session().client("organizations").get_paginator("list_accounts_for_parent")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListAccountsForParent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListAccountsForParent)
 
-Arguments for `ListAccountsForParentPaginator.paginate` method:
+### paginate
 
-- `ParentId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountsForParentPaginator.paginate` method.
 
-`ListAccountsForParentPaginator.paginate` returns
-`_PageIterator`\[[ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParentId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAccountsForParentResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listchildrenpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountsForParentRequestListAccountsForParentPaginateTypeDef = {  # (1)
+    "ParentId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountsForParentRequestListAccountsForParentPaginateTypeDef](./type_defs.md#listaccountsforparentrequestlistaccountsforparentpaginatetypedef) 
 ## ListChildrenPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_children")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_children")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListChildrenPaginator
@@ -133,29 +145,43 @@ def get_list_children_paginator() -> ListChildrenPaginator:
     return Session().client("organizations").get_paginator("list_children")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListChildren](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListChildren)
 
-Arguments for `ListChildrenPaginator.paginate` method:
+### paginate
 
-- `ParentId`: `str` *(required)*
-- `ChildType`: [ChildTypeType](./literals.md#childtypetype) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListChildrenPaginator.paginate` method.
 
-`ListChildrenPaginator.paginate` returns
-`_PageIterator`\[[ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParentId: str,
+    ChildType: ChildTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListChildrenResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcreateaccountstatuspaginator"></a>
+1. See [:material-code-brackets: ChildTypeType](./literals.md#childtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListChildrenRequestListChildrenPaginateTypeDef = {  # (1)
+    "ParentId": ...,
+    "ChildType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListChildrenRequestListChildrenPaginateTypeDef](./type_defs.md#listchildrenrequestlistchildrenpaginatetypedef) 
 ## ListCreateAccountStatusPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_create_account_status")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_create_account_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListCreateAccountStatusPaginator
@@ -164,29 +190,41 @@ def get_list_create_account_status_paginator() -> ListCreateAccountStatusPaginat
     return Session().client("organizations").get_paginator("list_create_account_status")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListCreateAccountStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListCreateAccountStatus)
 
-Arguments for `ListCreateAccountStatusPaginator.paginate` method:
+### paginate
 
-- `States`:
-  `Sequence`\[[CreateAccountStateType](./literals.md#createaccountstatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCreateAccountStatusPaginator.paginate` method.
 
-`ListCreateAccountStatusPaginator.paginate` returns
-`_PageIterator`\[[ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    States: Sequence[CreateAccountStateType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCreateAccountStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdelegatedadministratorspaginator"></a>
+1. See [:material-code-brackets: CreateAccountStateType](./literals.md#createaccountstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCreateAccountStatusRequestListCreateAccountStatusPaginateTypeDef = {  # (1)
+    "States": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCreateAccountStatusRequestListCreateAccountStatusPaginateTypeDef](./type_defs.md#listcreateaccountstatusrequestlistcreateaccountstatuspaginatetypedef) 
 ## ListDelegatedAdministratorsPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_delegated_administrators")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_delegated_administrators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListDelegatedAdministratorsPaginator
@@ -195,28 +233,40 @@ def get_list_delegated_administrators_paginator() -> ListDelegatedAdministrators
     return Session().client("organizations").get_paginator("list_delegated_administrators")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListDelegatedAdministrators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedAdministrators)
 
-Arguments for `ListDelegatedAdministratorsPaginator.paginate` method:
+### paginate
 
-- `ServicePrincipal`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDelegatedAdministratorsPaginator.paginate` method.
 
-`ListDelegatedAdministratorsPaginator.paginate` returns
-`_PageIterator`\[[ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServicePrincipal: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDelegatedAdministratorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdelegatedservicesforaccountpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedAdministratorsRequestListDelegatedAdministratorsPaginateTypeDef = {  # (1)
+    "ServicePrincipal": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDelegatedAdministratorsRequestListDelegatedAdministratorsPaginateTypeDef](./type_defs.md#listdelegatedadministratorsrequestlistdelegatedadministratorspaginatetypedef) 
 ## ListDelegatedServicesForAccountPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_delegated_services_for_account")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_delegated_services_for_account")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListDelegatedServicesForAccountPaginator
@@ -225,28 +275,40 @@ def get_list_delegated_services_for_account_paginator() -> ListDelegatedServices
     return Session().client("organizations").get_paginator("list_delegated_services_for_account")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListDelegatedServicesForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListDelegatedServicesForAccount)
 
-Arguments for `ListDelegatedServicesForAccountPaginator.paginate` method:
+### paginate
 
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDelegatedServicesForAccountPaginator.paginate` method.
 
-`ListDelegatedServicesForAccountPaginator.paginate` returns
-`_PageIterator`\[[ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDelegatedServicesForAccountResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listhandshakesforaccountpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedServicesForAccountRequestListDelegatedServicesForAccountPaginateTypeDef = {  # (1)
+    "AccountId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDelegatedServicesForAccountRequestListDelegatedServicesForAccountPaginateTypeDef](./type_defs.md#listdelegatedservicesforaccountrequestlistdelegatedservicesforaccountpaginatetypedef) 
 ## ListHandshakesForAccountPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_handshakes_for_account")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_handshakes_for_account")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListHandshakesForAccountPaginator
@@ -255,28 +317,41 @@ def get_list_handshakes_for_account_paginator() -> ListHandshakesForAccountPagin
     return Session().client("organizations").get_paginator("list_handshakes_for_account")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListHandshakesForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForAccount)
 
-Arguments for `ListHandshakesForAccountPaginator.paginate` method:
+### paginate
 
-- `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHandshakesForAccountPaginator.paginate` method.
 
-`ListHandshakesForAccountPaginator.paginate` returns
-`_PageIterator`\[[ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: HandshakeFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListHandshakesForAccountResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listhandshakesfororganizationpaginator"></a>
+1. See [:material-code-braces: HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHandshakesForAccountRequestListHandshakesForAccountPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHandshakesForAccountRequestListHandshakesForAccountPaginateTypeDef](./type_defs.md#listhandshakesforaccountrequestlisthandshakesforaccountpaginatetypedef) 
 ## ListHandshakesForOrganizationPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_handshakes_for_organization")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_handshakes_for_organization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListHandshakesForOrganizationPaginator
@@ -285,28 +360,41 @@ def get_list_handshakes_for_organization_paginator() -> ListHandshakesForOrganiz
     return Session().client("organizations").get_paginator("list_handshakes_for_organization")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListHandshakesForOrganization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListHandshakesForOrganization)
 
-Arguments for `ListHandshakesForOrganizationPaginator.paginate` method:
+### paginate
 
-- `Filter`: [HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHandshakesForOrganizationPaginator.paginate` method.
 
-`ListHandshakesForOrganizationPaginator.paginate` returns
-`_PageIterator`\[[ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: HandshakeFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListHandshakesForOrganizationResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listorganizationalunitsforparentpaginator"></a>
+1. See [:material-code-braces: HandshakeFilterTypeDef](./type_defs.md#handshakefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHandshakesForOrganizationRequestListHandshakesForOrganizationPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHandshakesForOrganizationRequestListHandshakesForOrganizationPaginateTypeDef](./type_defs.md#listhandshakesfororganizationrequestlisthandshakesfororganizationpaginatetypedef) 
 ## ListOrganizationalUnitsForParentPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_organizational_units_for_parent")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_organizational_units_for_parent")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListOrganizationalUnitsForParentPaginator
@@ -315,28 +403,40 @@ def get_list_organizational_units_for_parent_paginator() -> ListOrganizationalUn
     return Session().client("organizations").get_paginator("list_organizational_units_for_parent")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListOrganizationalUnitsForParent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListOrganizationalUnitsForParent)
 
-Arguments for `ListOrganizationalUnitsForParentPaginator.paginate` method:
+### paginate
 
-- `ParentId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOrganizationalUnitsForParentPaginator.paginate` method.
 
-`ListOrganizationalUnitsForParentPaginator.paginate` returns
-`_PageIterator`\[[ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParentId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOrganizationalUnitsForParentResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listparentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationalUnitsForParentRequestListOrganizationalUnitsForParentPaginateTypeDef = {  # (1)
+    "ParentId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationalUnitsForParentRequestListOrganizationalUnitsForParentPaginateTypeDef](./type_defs.md#listorganizationalunitsforparentrequestlistorganizationalunitsforparentpaginatetypedef) 
 ## ListParentsPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_parents")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_parents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListParentsPaginator
@@ -345,28 +445,40 @@ def get_list_parents_paginator() -> ListParentsPaginator:
     return Session().client("organizations").get_paginator("list_parents")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListParents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListParents)
 
-Arguments for `ListParentsPaginator.paginate` method:
+### paginate
 
-- `ChildId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListParentsPaginator.paginate` method.
 
-`ListParentsPaginator.paginate` returns
-`_PageIterator`\[[ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ChildId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListParentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpoliciespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListParentsRequestListParentsPaginateTypeDef = {  # (1)
+    "ChildId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListParentsRequestListParentsPaginateTypeDef](./type_defs.md#listparentsrequestlistparentspaginatetypedef) 
 ## ListPoliciesPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_policies")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListPoliciesPaginator
@@ -375,28 +487,41 @@ def get_list_policies_paginator() -> ListPoliciesPaginator:
     return Session().client("organizations").get_paginator("list_policies")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPolicies)
 
-Arguments for `ListPoliciesPaginator.paginate` method:
+### paginate
 
-- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPoliciesPaginator.paginate` method.
 
-`ListPoliciesPaginator.paginate` returns
-`_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filter: PolicyTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPoliciesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpoliciesfortargetpaginator"></a>
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestListPoliciesPaginateTypeDef = {  # (1)
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPoliciesRequestListPoliciesPaginateTypeDef](./type_defs.md#listpoliciesrequestlistpoliciespaginatetypedef) 
 ## ListPoliciesForTargetPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_policies_for_target")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_policies_for_target")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListPoliciesForTargetPaginator
@@ -405,29 +530,43 @@ def get_list_policies_for_target_paginator() -> ListPoliciesForTargetPaginator:
     return Session().client("organizations").get_paginator("list_policies_for_target")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListPoliciesForTarget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListPoliciesForTarget)
 
-Arguments for `ListPoliciesForTargetPaginator.paginate` method:
+### paginate
 
-- `TargetId`: `str` *(required)*
-- `Filter`: [PolicyTypeType](./literals.md#policytypetype) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPoliciesForTargetPaginator.paginate` method.
 
-`ListPoliciesForTargetPaginator.paginate` returns
-`_PageIterator`\[[ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TargetId: str,
+    Filter: PolicyTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListPoliciesForTargetResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrootspaginator"></a>
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesForTargetRequestListPoliciesForTargetPaginateTypeDef = {  # (1)
+    "TargetId": ...,
+    "Filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPoliciesForTargetRequestListPoliciesForTargetPaginateTypeDef](./type_defs.md#listpoliciesfortargetrequestlistpoliciesfortargetpaginatetypedef) 
 ## ListRootsPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_roots")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_roots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListRootsPaginator
@@ -436,27 +575,39 @@ def get_list_roots_paginator() -> ListRootsPaginator:
     return Session().client("organizations").get_paginator("list_roots")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListRoots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListRoots)
 
-Arguments for `ListRootsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRootsPaginator.paginate` method.
 
-`ListRootsPaginator.paginate` returns
-`_PageIterator`\[[ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRootsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRootsRequestListRootsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRootsRequestListRootsPaginateTypeDef](./type_defs.md#listrootsrequestlistrootspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListTagsForResourcePaginator
@@ -465,28 +616,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("organizations").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtargetsforpolicypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 
 ## ListTargetsForPolicyPaginator
 
-Type annotations for
-`boto3.client("organizations").get_paginator("list_targets_for_policy")`.
+Type annotations and code completion for `#!python boto3.client("organizations").get_paginator("list_targets_for_policy")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_organizations.paginator import ListTargetsForPolicyPaginator
@@ -495,14 +658,31 @@ def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
     return Session().client("organizations").get_paginator("list_targets_for_policy")
 ```
 
-Boto3 documentation:
-[Organizations.Paginator.ListTargetsForPolicy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Paginator.ListTargetsForPolicy)
 
-Arguments for `ListTargetsForPolicyPaginator.paginate` method:
+### paginate
 
-- `PolicyId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTargetsForPolicyPaginator.paginate` method.
 
-`ListTargetsForPolicyPaginator.paginate` returns
-`_PageIterator`\[[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PolicyId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTargetsForPolicyResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef = {  # (1)
+    "PolicyId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTargetsForPolicyRequestListTargetsForPolicyPaginateTypeDef](./type_defs.md#listtargetsforpolicyrequestlisttargetsforpolicypaginatetypedef) 

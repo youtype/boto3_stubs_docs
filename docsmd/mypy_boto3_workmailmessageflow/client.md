@@ -1,34 +1,18 @@
-<a id="workmailmessageflowclient-for-boto3-workmailmessageflow-module"></a>
+# WorkMailMessageFlowClient
 
-# WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module
+> [Index](../README.md) > [WorkMailMessageFlow](./README.md) > WorkMailMessageFlowClient
 
-> [Index](../README.md) > [WorkMailMessageFlow](./README.md) >
-> WorkMailMessageFlowClient
+!!! note ""
 
-Auto-generated documentation for
-[WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
-type annotations stubs module
-[mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
-
-- [WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module](#workmailmessageflowclient-for-boto3-workmailmessageflow-module)
-  - [WorkMailMessageFlowClient](#workmailmessageflowclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_raw_message_content](#get_raw_message_content)
-    - [put_raw_message_content](#put_raw_message_content)
-
-<a id="workmailmessageflowclient"></a>
+    Auto-generated documentation for [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+    type annotations stubs module [mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 ## WorkMailMessageFlowClient
 
-Type annotations for `boto3.client("workmailmessageflow")`
+Type annotations and code completion for `#!python boto3.client("workmailmessageflow")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 
@@ -36,128 +20,133 @@ def get_workmailmessageflow_client() -> WorkMailMessageFlowClient:
     return Session().client("workmailmessageflow")
 ```
 
-Boto3 documentation:
-[WorkMailMessageFlow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("workmailmessageflow").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("workmailmessageflow")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidContentLocation,
+    client.MessageFrozen,
+    client.MessageRejected,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_workmailmessageflow.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidContentLocation`
-- `Exceptions.MessageFrozen`
-- `Exceptions.MessageRejected`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WorkMailMessageFlowClient exceptions.
-
-Type annotations for `boto3.client("workmailmessageflow").exceptions` method.
-
-Boto3 documentation:
-[WorkMailMessageFlow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("workmailmessageflow").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("workmailmessageflow").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.can_paginate)
 
-Boto3 documentation:
-[WorkMailMessageFlow.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("workmailmessageflow").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("workmailmessageflow").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WorkMailMessageFlow.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_raw\_message\_content"></a>
-
-### get_raw_message_content
+### get\_raw\_message\_content
 
 Retrieves the raw content of an in-transit email message, in MIME format.
 
-Type annotations for
-`boto3.client("workmailmessageflow").get_raw_message_content` method.
+Type annotations and code completion for `#!python boto3.client("workmailmessageflow").get_raw_message_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
 
-Boto3 documentation:
-[WorkMailMessageFlow.Client.get_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.get_raw_message_content)
+```python title="Method definition"
+def get_raw_message_content(
+    self,
+    *,
+    messageId: str,
+) -> GetRawMessageContentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRawMessageContentRequestRequestTypeDef](./type_defs.md#getrawmessagecontentrequestrequesttypedef).
+1. See [:material-code-braces: GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `messageId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRawMessageContentRequestRequestTypeDef = {  # (1)
+    "messageId": ...,
+}
 
-Returns
-[GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef).
+parent.get_raw_message_content(**kwargs)
+```
 
-<a id="put\_raw\_message\_content"></a>
+1. See [:material-code-braces: GetRawMessageContentRequestRequestTypeDef](./type_defs.md#getrawmessagecontentrequestrequesttypedef) 
 
-### put_raw_message_content
+### put\_raw\_message\_content
 
 Updates the raw content of an in-transit email message, in MIME format.
 
-Type annotations for
-`boto3.client("workmailmessageflow").put_raw_message_content` method.
+Type annotations and code completion for `#!python boto3.client("workmailmessageflow").put_raw_message_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
 
-Boto3 documentation:
-[WorkMailMessageFlow.Client.put_raw_message_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.put_raw_message_content)
+```python title="Method definition"
+def put_raw_message_content(
+    self,
+    *,
+    messageId: str,
+    content: RawMessageContentTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef).
+1. See [:material-code-braces: RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef) 
 
-Keyword-only arguments:
 
-- `messageId`: `str` *(required)*
-- `content`:
-  [RawMessageContentTypeDef](./type_defs.md#rawmessagecontenttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRawMessageContentRequestRequestTypeDef = {  # (1)
+    "messageId": ...,
+    "content": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_raw_message_content(**kwargs)
+```
+
+1. See [:material-code-braces: PutRawMessageContentRequestRequestTypeDef](./type_defs.md#putrawmessagecontentrequestrequesttypedef) 
+
+
+
+

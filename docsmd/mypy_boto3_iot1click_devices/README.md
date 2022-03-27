@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-iot1clickdevicesservice-module"></a>
-
-# Type annotations for boto3 IoT1ClickDevicesService module
+#  IoT1ClickDevicesService module
 
 > [Index](../README.md) > IoT1ClickDevicesService
 
-Auto-generated documentation for
-[IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
-type annotations stubs module
-[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+!!! note ""
 
-- [Type annotations for boto3 IoT1ClickDevicesService module](#type-annotations-for-boto3-iot1clickdevicesservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoT1ClickDevicesServiceClient](#iot1clickdevicesserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
+    type annotations stubs module [mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoT1ClickDevicesService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iot1click-devices]'
 python -m pip install mypy-boto3-iot1click-devices
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,88 +42,59 @@ python -m pip install mypy-boto3-iot1click-devices
 python -m pip uninstall -y mypy-boto3-iot1click-devices
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iot1clickdevicesserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoT1ClickDevicesServiceClient
 
-Type annotations for `boto3.client("iot1click-devices")` as
-[IoT1ClickDevicesServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iot1click-devices")` as [IoT1ClickDevicesServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
+
+def get_client() -> IoT1ClickDevicesServiceClient:
+    return Session().cleint("iot1click-devices")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [claim_devices_by_claim_code](./client.md#claim_devices_by_claim_code)
-- [describe_device](./client.md#describe_device)
-- [exceptions](./client.md#exceptions)
-- [finalize_device_claim](./client.md#finalize_device_claim)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_device_methods](./client.md#get_device_methods)
-- [get_paginator](./client.md#get_paginator)
-- [initiate_device_claim](./client.md#initiate_device_claim)
-- [invoke_device_method](./client.md#invoke_device_method)
-- [list_device_events](./client.md#list_device_events)
-- [list_devices](./client.md#list_devices)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [unclaim_device](./client.md#unclaim_device)
-- [untag_resource](./client.md#untag_resource)
-- [update_device_state](./client.md#update_device_state)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoT1ClickDevicesServiceClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ForbiddenException
-- InternalFailureException
-- InvalidRequestException
-- PreconditionFailedException
-- RangeNotSatisfiableException
-- ResourceConflictException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iot1click-devices").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iot1click-devices").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator, ...
+from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
+
+def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
+    return Session().client("iot1click-devices").get_paginator("list_device_events"))
 ```
 
 - [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
 - [ListDevicesPaginator](./paginators.md#listdevicespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName
 
-```python
-from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName, ...
+def get_value() -> ListDeviceEventsPaginatorName:
+    return "list_device_events"
 ```
 
 - [ListDeviceEventsPaginatorName](./literals.md#listdeviceeventspaginatorname)
@@ -155,17 +104,20 @@ from mypy_boto3_iot1click_devices.literals import ListDeviceEventsPaginatorName,
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestRequestTypeDef
 
-```python
-from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeRequestRequestTypeDef, ...
+def get_value() -> ClaimDevicesByClaimCodeRequestRequestTypeDef:
+    return {
+        "ClaimCode": ...,
+    }
 ```
 
 - [ClaimDevicesByClaimCodeRequestRequestTypeDef](./type_defs.md#claimdevicesbyclaimcoderequestrequesttypedef)
@@ -184,8 +136,10 @@ from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeReques
 - [InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef)
 - [InvokeDeviceMethodRequestRequestTypeDef](./type_defs.md#invokedevicemethodrequestrequesttypedef)
 - [InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef)
+- [ListDeviceEventsRequestListDeviceEventsPaginateTypeDef](./type_defs.md#listdeviceeventsrequestlistdeviceeventspaginatetypedef)
 - [ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef)
 - [ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)
+- [ListDevicesRequestListDevicesPaginateTypeDef](./type_defs.md#listdevicesrequestlistdevicespaginatetypedef)
 - [ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef)
 - [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -197,3 +151,4 @@ from mypy_boto3_iot1click_devices.type_defs import ClaimDevicesByClaimCodeReques
 - [UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDeviceStateRequestRequestTypeDef](./type_defs.md#updatedevicestaterequestrequesttypedef)
+

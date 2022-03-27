@@ -1,46 +1,18 @@
-<a id="paginators-for-boto3-devicefarm-module"></a>
-
-# Paginators for boto3 DeviceFarm module
+# Paginators
 
 > [Index](../README.md) > [DeviceFarm](./README.md) > Paginators
 
-Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
-type annotations stubs module
-[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+!!! note ""
 
-- [Paginators for boto3 DeviceFarm module](#paginators-for-boto3-devicefarm-module)
-  - [GetOfferingStatusPaginator](#getofferingstatuspaginator)
-  - [ListArtifactsPaginator](#listartifactspaginator)
-  - [ListDeviceInstancesPaginator](#listdeviceinstancespaginator)
-  - [ListDevicePoolsPaginator](#listdevicepoolspaginator)
-  - [ListDevicesPaginator](#listdevicespaginator)
-  - [ListInstanceProfilesPaginator](#listinstanceprofilespaginator)
-  - [ListJobsPaginator](#listjobspaginator)
-  - [ListNetworkProfilesPaginator](#listnetworkprofilespaginator)
-  - [ListOfferingPromotionsPaginator](#listofferingpromotionspaginator)
-  - [ListOfferingTransactionsPaginator](#listofferingtransactionspaginator)
-  - [ListOfferingsPaginator](#listofferingspaginator)
-  - [ListProjectsPaginator](#listprojectspaginator)
-  - [ListRemoteAccessSessionsPaginator](#listremoteaccesssessionspaginator)
-  - [ListRunsPaginator](#listrunspaginator)
-  - [ListSamplesPaginator](#listsamplespaginator)
-  - [ListSuitesPaginator](#listsuitespaginator)
-  - [ListTestsPaginator](#listtestspaginator)
-  - [ListUniqueProblemsPaginator](#listuniqueproblemspaginator)
-  - [ListUploadsPaginator](#listuploadspaginator)
-  - [ListVPCEConfigurationsPaginator](#listvpceconfigurationspaginator)
-
-<a id="getofferingstatuspaginator"></a>
+    Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+    type annotations stubs module [mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ## GetOfferingStatusPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("get_offering_status")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("get_offering_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator
@@ -49,27 +21,39 @@ def get_get_offering_status_paginator() -> GetOfferingStatusPaginator:
     return Session().client("devicefarm").get_paginator("get_offering_status")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.GetOfferingStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.GetOfferingStatus)
 
-Arguments for `GetOfferingStatusPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetOfferingStatusPaginator.paginate` method.
 
-`GetOfferingStatusPaginator.paginate` returns
-`_PageIterator`\[[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetOfferingStatusResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listartifactspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef](./type_defs.md#getofferingstatusrequestgetofferingstatuspaginatetypedef) 
 ## ListArtifactsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_artifacts")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_artifacts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListArtifactsPaginator
@@ -78,30 +62,43 @@ def get_list_artifacts_paginator() -> ListArtifactsPaginator:
     return Session().client("devicefarm").get_paginator("list_artifacts")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListArtifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListArtifacts)
 
-Arguments for `ListArtifactsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `type`: [ArtifactCategoryType](./literals.md#artifactcategorytype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListArtifactsPaginator.paginate` method.
 
-`ListArtifactsPaginator.paginate` returns
-`_PageIterator`\[[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    type: ArtifactCategoryType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListArtifactsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdeviceinstancespaginator"></a>
+1. See [:material-code-brackets: ArtifactCategoryType](./literals.md#artifactcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListArtifactsRequestListArtifactsPaginateTypeDef = {  # (1)
+    "arn": ...,
+    "type": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListArtifactsRequestListArtifactsPaginateTypeDef](./type_defs.md#listartifactsrequestlistartifactspaginatetypedef) 
 ## ListDeviceInstancesPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_device_instances")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_device_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListDeviceInstancesPaginator
@@ -110,27 +107,39 @@ def get_list_device_instances_paginator() -> ListDeviceInstancesPaginator:
     return Session().client("devicefarm").get_paginator("list_device_instances")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListDeviceInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDeviceInstances)
 
-Arguments for `ListDeviceInstancesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeviceInstancesPaginator.paginate` method.
 
-`ListDeviceInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeviceInstancesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicepoolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef](./type_defs.md#listdeviceinstancesrequestlistdeviceinstancespaginatetypedef) 
 ## ListDevicePoolsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_device_pools")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_device_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListDevicePoolsPaginator
@@ -139,29 +148,42 @@ def get_list_device_pools_paginator() -> ListDevicePoolsPaginator:
     return Session().client("devicefarm").get_paginator("list_device_pools")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListDevicePools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevicePools)
 
-Arguments for `ListDevicePoolsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDevicePoolsPaginator.paginate` method.
 
-`ListDevicePoolsPaginator.paginate` returns
-`_PageIterator`\[[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    type: DevicePoolTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDevicePoolsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdevicespaginator"></a>
+1. See [:material-code-brackets: DevicePoolTypeType](./literals.md#devicepooltypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDevicePoolsRequestListDevicePoolsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevicePoolsRequestListDevicePoolsPaginateTypeDef](./type_defs.md#listdevicepoolsrequestlistdevicepoolspaginatetypedef) 
 ## ListDevicesPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_devices")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListDevicesPaginator
@@ -170,30 +192,42 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("devicefarm").get_paginator("list_devices")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListDevices)
 
-Arguments for `ListDevicesPaginator.paginate` method:
+### paginate
 
-- `arn`: `str`
-- `filters`:
-  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDevicesPaginator.paginate` method.
 
-`ListDevicesPaginator.paginate` returns
-`_PageIterator`\[[ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str = ...,
+    filters: Sequence[DeviceFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDevicesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listinstanceprofilespaginator"></a>
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDevicesRequestListDevicesPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevicesRequestListDevicesPaginateTypeDef](./type_defs.md#listdevicesrequestlistdevicespaginatetypedef) 
 ## ListInstanceProfilesPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_instance_profiles")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_instance_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListInstanceProfilesPaginator
@@ -202,26 +236,39 @@ def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
     return Session().client("devicefarm").get_paginator("list_instance_profiles")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListInstanceProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListInstanceProfiles)
 
-Arguments for `ListInstanceProfilesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstanceProfilesPaginator.paginate` method.
 
-`ListInstanceProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstanceProfilesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef](./type_defs.md#listinstanceprofilesrequestlistinstanceprofilespaginatetypedef) 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("devicefarm").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListJobsPaginator
@@ -230,28 +277,40 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("devicefarm").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listnetworkprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestListJobsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef) 
 ## ListNetworkProfilesPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_network_profiles")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_network_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListNetworkProfilesPaginator
@@ -260,29 +319,42 @@ def get_list_network_profiles_paginator() -> ListNetworkProfilesPaginator:
     return Session().client("devicefarm").get_paginator("list_network_profiles")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListNetworkProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListNetworkProfiles)
 
-Arguments for `ListNetworkProfilesPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListNetworkProfilesPaginator.paginate` method.
 
-`ListNetworkProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    type: NetworkProfileTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListNetworkProfilesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listofferingpromotionspaginator"></a>
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef](./type_defs.md#listnetworkprofilesrequestlistnetworkprofilespaginatetypedef) 
 ## ListOfferingPromotionsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_offering_promotions")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_offering_promotions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListOfferingPromotionsPaginator
@@ -291,27 +363,39 @@ def get_list_offering_promotions_paginator() -> ListOfferingPromotionsPaginator:
     return Session().client("devicefarm").get_paginator("list_offering_promotions")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferingPromotions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingPromotions)
 
-Arguments for `ListOfferingPromotionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOfferingPromotionsPaginator.paginate` method.
 
-`ListOfferingPromotionsPaginator.paginate` returns
-`_PageIterator`\[[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOfferingPromotionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listofferingtransactionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef](./type_defs.md#listofferingpromotionsrequestlistofferingpromotionspaginatetypedef) 
 ## ListOfferingTransactionsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_offering_transactions")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_offering_transactions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListOfferingTransactionsPaginator
@@ -320,27 +404,39 @@ def get_list_offering_transactions_paginator() -> ListOfferingTransactionsPagina
     return Session().client("devicefarm").get_paginator("list_offering_transactions")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferingTransactions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferingTransactions)
 
-Arguments for `ListOfferingTransactionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOfferingTransactionsPaginator.paginate` method.
 
-`ListOfferingTransactionsPaginator.paginate` returns
-`_PageIterator`\[[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOfferingTransactionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listofferingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef](./type_defs.md#listofferingtransactionsrequestlistofferingtransactionspaginatetypedef) 
 ## ListOfferingsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_offerings")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListOfferingsPaginator
@@ -349,27 +445,39 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return Session().client("devicefarm").get_paginator("list_offerings")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListOfferings)
 
-Arguments for `ListOfferingsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOfferingsPaginator.paginate` method.
 
-`ListOfferingsPaginator.paginate` returns
-`_PageIterator`\[[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOfferingsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listprojectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOfferingsRequestListOfferingsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOfferingsRequestListOfferingsPaginateTypeDef](./type_defs.md#listofferingsrequestlistofferingspaginatetypedef) 
 ## ListProjectsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_projects")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_projects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListProjectsPaginator
@@ -378,28 +486,40 @@ def get_list_projects_paginator() -> ListProjectsPaginator:
     return Session().client("devicefarm").get_paginator("list_projects")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListProjects)
 
-Arguments for `ListProjectsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProjectsPaginator.paginate` method.
 
-`ListProjectsPaginator.paginate` returns
-`_PageIterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProjectsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listremoteaccesssessionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestListProjectsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef) 
 ## ListRemoteAccessSessionsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_remote_access_sessions")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_remote_access_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListRemoteAccessSessionsPaginator
@@ -408,27 +528,40 @@ def get_list_remote_access_sessions_paginator() -> ListRemoteAccessSessionsPagin
     return Session().client("devicefarm").get_paginator("list_remote_access_sessions")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListRemoteAccessSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRemoteAccessSessions)
 
-Arguments for `ListRemoteAccessSessionsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRemoteAccessSessionsPaginator.paginate` method.
 
-`ListRemoteAccessSessionsPaginator.paginate` returns
-`_PageIterator`\[[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRemoteAccessSessionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrunspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef](./type_defs.md#listremoteaccesssessionsrequestlistremoteaccesssessionspaginatetypedef) 
 ## ListRunsPaginator
 
-Type annotations for `boto3.client("devicefarm").get_paginator("list_runs")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListRunsPaginator
@@ -437,28 +570,40 @@ def get_list_runs_paginator() -> ListRunsPaginator:
     return Session().client("devicefarm").get_paginator("list_runs")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListRuns)
 
-Arguments for `ListRunsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRunsPaginator.paginate` method.
 
-`ListRunsPaginator.paginate` returns
-`_PageIterator`\[[ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRunsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsamplespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRunsRequestListRunsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRunsRequestListRunsPaginateTypeDef](./type_defs.md#listrunsrequestlistrunspaginatetypedef) 
 ## ListSamplesPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_samples")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_samples")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListSamplesPaginator
@@ -467,27 +612,40 @@ def get_list_samples_paginator() -> ListSamplesPaginator:
     return Session().client("devicefarm").get_paginator("list_samples")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListSamples](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSamples)
 
-Arguments for `ListSamplesPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSamplesPaginator.paginate` method.
 
-`ListSamplesPaginator.paginate` returns
-`_PageIterator`\[[ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSamplesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsuitespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSamplesRequestListSamplesPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSamplesRequestListSamplesPaginateTypeDef](./type_defs.md#listsamplesrequestlistsamplespaginatetypedef) 
 ## ListSuitesPaginator
 
-Type annotations for `boto3.client("devicefarm").get_paginator("list_suites")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_suites")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListSuitesPaginator
@@ -496,27 +654,40 @@ def get_list_suites_paginator() -> ListSuitesPaginator:
     return Session().client("devicefarm").get_paginator("list_suites")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListSuites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListSuites)
 
-Arguments for `ListSuitesPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSuitesPaginator.paginate` method.
 
-`ListSuitesPaginator.paginate` returns
-`_PageIterator`\[[ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSuitesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtestspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSuitesRequestListSuitesPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSuitesRequestListSuitesPaginateTypeDef](./type_defs.md#listsuitesrequestlistsuitespaginatetypedef) 
 ## ListTestsPaginator
 
-Type annotations for `boto3.client("devicefarm").get_paginator("list_tests")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_tests")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListTestsPaginator
@@ -525,28 +696,40 @@ def get_list_tests_paginator() -> ListTestsPaginator:
     return Session().client("devicefarm").get_paginator("list_tests")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListTests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListTests)
 
-Arguments for `ListTestsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTestsPaginator.paginate` method.
 
-`ListTestsPaginator.paginate` returns
-`_PageIterator`\[[ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTestsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuniqueproblemspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTestsRequestListTestsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTestsRequestListTestsPaginateTypeDef](./type_defs.md#listtestsrequestlisttestspaginatetypedef) 
 ## ListUniqueProblemsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_unique_problems")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_unique_problems")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListUniqueProblemsPaginator
@@ -555,28 +738,40 @@ def get_list_unique_problems_paginator() -> ListUniqueProblemsPaginator:
     return Session().client("devicefarm").get_paginator("list_unique_problems")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListUniqueProblems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUniqueProblems)
 
-Arguments for `ListUniqueProblemsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUniqueProblemsPaginator.paginate` method.
 
-`ListUniqueProblemsPaginator.paginate` returns
-`_PageIterator`\[[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUniqueProblemsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuploadspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef](./type_defs.md#listuniqueproblemsrequestlistuniqueproblemspaginatetypedef) 
 ## ListUploadsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_uploads")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_uploads")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListUploadsPaginator
@@ -585,29 +780,42 @@ def get_list_uploads_paginator() -> ListUploadsPaginator:
     return Session().client("devicefarm").get_paginator("list_uploads")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListUploads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListUploads)
 
-Arguments for `ListUploadsPaginator.paginate` method:
+### paginate
 
-- `arn`: `str` *(required)*
-- `type`: [UploadTypeType](./literals.md#uploadtypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUploadsPaginator.paginate` method.
 
-`ListUploadsPaginator.paginate` returns
-`_PageIterator`\[[ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    arn: str,
+    type: UploadTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListUploadsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listvpceconfigurationspaginator"></a>
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUploadsRequestListUploadsPaginateTypeDef = {  # (1)
+    "arn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUploadsRequestListUploadsPaginateTypeDef](./type_defs.md#listuploadsrequestlistuploadspaginatetypedef) 
 ## ListVPCEConfigurationsPaginator
 
-Type annotations for
-`boto3.client("devicefarm").get_paginator("list_vpce_configurations")`.
+Type annotations and code completion for `#!python boto3.client("devicefarm").get_paginator("list_vpce_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devicefarm.paginator import ListVPCEConfigurationsPaginator
@@ -616,13 +824,30 @@ def get_list_vpce_configurations_paginator() -> ListVPCEConfigurationsPaginator:
     return Session().client("devicefarm").get_paginator("list_vpce_configurations")
 ```
 
-Boto3 documentation:
-[DeviceFarm.Paginator.ListVPCEConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm.Paginator.ListVPCEConfigurations)
 
-Arguments for `ListVPCEConfigurationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVPCEConfigurationsPaginator.paginate` method.
 
-`ListVPCEConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVPCEConfigurationsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVPCEConfigurationsResultTypeDef](./type_defs.md#listvpceconfigurationsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef](./type_defs.md#listvpceconfigurationsrequestlistvpceconfigurationspaginatetypedef) 

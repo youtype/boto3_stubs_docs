@@ -1,1704 +1,1978 @@
-<a id="typed-dictionaries-for-boto3-firehose-module"></a>
-
-# Typed dictionaries for boto3 Firehose module
+# Typed dictionaries
 
 > [Index](../README.md) > [Firehose](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
-type annotations stubs module
-[mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Firehose module](#typed-dictionaries-for-boto3-firehose-module)
-  - [AmazonopensearchserviceBufferingHintsTypeDef](#amazonopensearchservicebufferinghintstypedef)
-  - [AmazonopensearchserviceDestinationConfigurationTypeDef](#amazonopensearchservicedestinationconfigurationtypedef)
-  - [AmazonopensearchserviceDestinationDescriptionTypeDef](#amazonopensearchservicedestinationdescriptiontypedef)
-  - [AmazonopensearchserviceDestinationUpdateTypeDef](#amazonopensearchservicedestinationupdatetypedef)
-  - [AmazonopensearchserviceRetryOptionsTypeDef](#amazonopensearchserviceretryoptionstypedef)
-  - [BufferingHintsTypeDef](#bufferinghintstypedef)
-  - [CloudWatchLoggingOptionsTypeDef](#cloudwatchloggingoptionstypedef)
-  - [CopyCommandTypeDef](#copycommandtypedef)
-  - [CreateDeliveryStreamInputRequestTypeDef](#createdeliverystreaminputrequesttypedef)
-  - [CreateDeliveryStreamOutputTypeDef](#createdeliverystreamoutputtypedef)
-  - [DataFormatConversionConfigurationTypeDef](#dataformatconversionconfigurationtypedef)
-  - [DeleteDeliveryStreamInputRequestTypeDef](#deletedeliverystreaminputrequesttypedef)
-  - [DeliveryStreamDescriptionTypeDef](#deliverystreamdescriptiontypedef)
-  - [DeliveryStreamEncryptionConfigurationInputTypeDef](#deliverystreamencryptionconfigurationinputtypedef)
-  - [DeliveryStreamEncryptionConfigurationTypeDef](#deliverystreamencryptionconfigurationtypedef)
-  - [DescribeDeliveryStreamInputRequestTypeDef](#describedeliverystreaminputrequesttypedef)
-  - [DescribeDeliveryStreamOutputTypeDef](#describedeliverystreamoutputtypedef)
-  - [DeserializerTypeDef](#deserializertypedef)
-  - [DestinationDescriptionTypeDef](#destinationdescriptiontypedef)
-  - [DynamicPartitioningConfigurationTypeDef](#dynamicpartitioningconfigurationtypedef)
-  - [ElasticsearchBufferingHintsTypeDef](#elasticsearchbufferinghintstypedef)
-  - [ElasticsearchDestinationConfigurationTypeDef](#elasticsearchdestinationconfigurationtypedef)
-  - [ElasticsearchDestinationDescriptionTypeDef](#elasticsearchdestinationdescriptiontypedef)
-  - [ElasticsearchDestinationUpdateTypeDef](#elasticsearchdestinationupdatetypedef)
-  - [ElasticsearchRetryOptionsTypeDef](#elasticsearchretryoptionstypedef)
-  - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
-  - [ExtendedS3DestinationConfigurationTypeDef](#extendeds3destinationconfigurationtypedef)
-  - [ExtendedS3DestinationDescriptionTypeDef](#extendeds3destinationdescriptiontypedef)
-  - [ExtendedS3DestinationUpdateTypeDef](#extendeds3destinationupdatetypedef)
-  - [FailureDescriptionTypeDef](#failuredescriptiontypedef)
-  - [HiveJsonSerDeTypeDef](#hivejsonserdetypedef)
-  - [HttpEndpointBufferingHintsTypeDef](#httpendpointbufferinghintstypedef)
-  - [HttpEndpointCommonAttributeTypeDef](#httpendpointcommonattributetypedef)
-  - [HttpEndpointConfigurationTypeDef](#httpendpointconfigurationtypedef)
-  - [HttpEndpointDescriptionTypeDef](#httpendpointdescriptiontypedef)
-  - [HttpEndpointDestinationConfigurationTypeDef](#httpendpointdestinationconfigurationtypedef)
-  - [HttpEndpointDestinationDescriptionTypeDef](#httpendpointdestinationdescriptiontypedef)
-  - [HttpEndpointDestinationUpdateTypeDef](#httpendpointdestinationupdatetypedef)
-  - [HttpEndpointRequestConfigurationTypeDef](#httpendpointrequestconfigurationtypedef)
-  - [HttpEndpointRetryOptionsTypeDef](#httpendpointretryoptionstypedef)
-  - [InputFormatConfigurationTypeDef](#inputformatconfigurationtypedef)
-  - [KMSEncryptionConfigTypeDef](#kmsencryptionconfigtypedef)
-  - [KinesisStreamSourceConfigurationTypeDef](#kinesisstreamsourceconfigurationtypedef)
-  - [KinesisStreamSourceDescriptionTypeDef](#kinesisstreamsourcedescriptiontypedef)
-  - [ListDeliveryStreamsInputRequestTypeDef](#listdeliverystreamsinputrequesttypedef)
-  - [ListDeliveryStreamsOutputTypeDef](#listdeliverystreamsoutputtypedef)
-  - [ListTagsForDeliveryStreamInputRequestTypeDef](#listtagsfordeliverystreaminputrequesttypedef)
-  - [ListTagsForDeliveryStreamOutputTypeDef](#listtagsfordeliverystreamoutputtypedef)
-  - [OpenXJsonSerDeTypeDef](#openxjsonserdetypedef)
-  - [OrcSerDeTypeDef](#orcserdetypedef)
-  - [OutputFormatConfigurationTypeDef](#outputformatconfigurationtypedef)
-  - [ParquetSerDeTypeDef](#parquetserdetypedef)
-  - [ProcessingConfigurationTypeDef](#processingconfigurationtypedef)
-  - [ProcessorParameterTypeDef](#processorparametertypedef)
-  - [ProcessorTypeDef](#processortypedef)
-  - [PutRecordBatchInputRequestTypeDef](#putrecordbatchinputrequesttypedef)
-  - [PutRecordBatchOutputTypeDef](#putrecordbatchoutputtypedef)
-  - [PutRecordBatchResponseEntryTypeDef](#putrecordbatchresponseentrytypedef)
-  - [PutRecordInputRequestTypeDef](#putrecordinputrequesttypedef)
-  - [PutRecordOutputTypeDef](#putrecordoutputtypedef)
-  - [RecordTypeDef](#recordtypedef)
-  - [RedshiftDestinationConfigurationTypeDef](#redshiftdestinationconfigurationtypedef)
-  - [RedshiftDestinationDescriptionTypeDef](#redshiftdestinationdescriptiontypedef)
-  - [RedshiftDestinationUpdateTypeDef](#redshiftdestinationupdatetypedef)
-  - [RedshiftRetryOptionsTypeDef](#redshiftretryoptionstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryOptionsTypeDef](#retryoptionstypedef)
-  - [S3DestinationConfigurationTypeDef](#s3destinationconfigurationtypedef)
-  - [S3DestinationDescriptionTypeDef](#s3destinationdescriptiontypedef)
-  - [S3DestinationUpdateTypeDef](#s3destinationupdatetypedef)
-  - [SchemaConfigurationTypeDef](#schemaconfigurationtypedef)
-  - [SerializerTypeDef](#serializertypedef)
-  - [SourceDescriptionTypeDef](#sourcedescriptiontypedef)
-  - [SplunkDestinationConfigurationTypeDef](#splunkdestinationconfigurationtypedef)
-  - [SplunkDestinationDescriptionTypeDef](#splunkdestinationdescriptiontypedef)
-  - [SplunkDestinationUpdateTypeDef](#splunkdestinationupdatetypedef)
-  - [SplunkRetryOptionsTypeDef](#splunkretryoptionstypedef)
-  - [StartDeliveryStreamEncryptionInputRequestTypeDef](#startdeliverystreamencryptioninputrequesttypedef)
-  - [StopDeliveryStreamEncryptionInputRequestTypeDef](#stopdeliverystreamencryptioninputrequesttypedef)
-  - [TagDeliveryStreamInputRequestTypeDef](#tagdeliverystreaminputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagDeliveryStreamInputRequestTypeDef](#untagdeliverystreaminputrequesttypedef)
-  - [UpdateDestinationInputRequestTypeDef](#updatedestinationinputrequesttypedef)
-  - [VpcConfigurationDescriptionTypeDef](#vpcconfigurationdescriptiontypedef)
-  - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
-
-<a id="amazonopensearchservicebufferinghintstypedef"></a>
+    Auto-generated documentation for [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
+    type annotations stubs module [mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 ## AmazonopensearchserviceBufferingHintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import AmazonopensearchserviceBufferingHintsTypeDef
+
+def get_value() -> AmazonopensearchserviceBufferingHintsTypeDef:
+    return {
+        "IntervalInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `IntervalInSeconds`: `int`
-- `SizeInMBs`: `int`
-
-<a id="amazonopensearchservicedestinationconfigurationtypedef"></a>
+```python title="Definition"
+class AmazonopensearchserviceBufferingHintsTypeDef(TypedDict):
+    IntervalInSeconds: NotRequired[int],
+    SizeInMBs: NotRequired[int],
+```
 
 ## AmazonopensearchserviceDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationConfigurationTypeDef
+
+def get_value() -> AmazonopensearchserviceDestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "IndexName": ...,
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AmazonopensearchserviceDestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    IndexName: str,
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (5)
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[AmazonopensearchserviceIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[AmazonopensearchserviceBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[AmazonopensearchserviceRetryOptionsTypeDef],  # (3)
+    S3BackupMode: NotRequired[AmazonopensearchserviceS3BackupModeType],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (6)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (8)
+```
 
-- `RoleARN`: `str`
-- `IndexName`: `str`
-- `S3Configuration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-
-Optional fields:
-
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
-- `BufferingHints`:
-  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
-- `RetryOptions`:
-  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
-- `S3BackupMode`:
-  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="amazonopensearchservicedestinationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype) 
+2. See [:material-code-braces: AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef) 
+3. See [:material-code-braces: AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef) 
+4. See [:material-code-brackets: AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype) 
+5. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+6. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+8. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## AmazonopensearchserviceDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationDescriptionTypeDef
+
+def get_value() -> AmazonopensearchserviceDestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AmazonopensearchserviceDestinationDescriptionTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[AmazonopensearchserviceIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[AmazonopensearchserviceBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[AmazonopensearchserviceRetryOptionsTypeDef],  # (3)
+    S3BackupMode: NotRequired[AmazonopensearchserviceS3BackupModeType],  # (4)
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (5)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (6)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+    VpcConfigurationDescription: NotRequired[VpcConfigurationDescriptionTypeDef],  # (8)
+```
 
-- `RoleARN`: `str`
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `IndexName`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
-- `BufferingHints`:
-  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
-- `RetryOptions`:
-  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
-- `S3BackupMode`:
-  [AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype)
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `VpcConfigurationDescription`:
-  [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
-
-<a id="amazonopensearchservicedestinationupdatetypedef"></a>
-
+1. See [:material-code-brackets: AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype) 
+2. See [:material-code-braces: AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef) 
+3. See [:material-code-braces: AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef) 
+4. See [:material-code-brackets: AmazonopensearchserviceS3BackupModeType](./literals.md#amazonopensearchservices3backupmodetype) 
+5. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+6. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+8. See [:material-code-braces: VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef) 
 ## AmazonopensearchserviceDestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import AmazonopensearchserviceDestinationUpdateTypeDef
+
+def get_value() -> AmazonopensearchserviceDestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AmazonopensearchserviceDestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[AmazonopensearchserviceIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[AmazonopensearchserviceBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[AmazonopensearchserviceRetryOptionsTypeDef],  # (3)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+```
 
-- `RoleARN`: `str`
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `IndexName`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype)
-- `BufferingHints`:
-  [AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef)
-- `RetryOptions`:
-  [AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef)
-- `S3Update`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="amazonopensearchserviceretryoptionstypedef"></a>
-
+1. See [:material-code-brackets: AmazonopensearchserviceIndexRotationPeriodType](./literals.md#amazonopensearchserviceindexrotationperiodtype) 
+2. See [:material-code-braces: AmazonopensearchserviceBufferingHintsTypeDef](./type_defs.md#amazonopensearchservicebufferinghintstypedef) 
+3. See [:material-code-braces: AmazonopensearchserviceRetryOptionsTypeDef](./type_defs.md#amazonopensearchserviceretryoptionstypedef) 
+4. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## AmazonopensearchserviceRetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import AmazonopensearchserviceRetryOptionsTypeDef
+
+def get_value() -> AmazonopensearchserviceRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="bufferinghintstypedef"></a>
+```python title="Definition"
+class AmazonopensearchserviceRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## BufferingHintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import BufferingHintsTypeDef
+
+def get_value() -> BufferingHintsTypeDef:
+    return {
+        "SizeInMBs": ...,
+    }
 ```
 
-Optional fields:
-
-- `SizeInMBs`: `int`
-- `IntervalInSeconds`: `int`
-
-<a id="cloudwatchloggingoptionstypedef"></a>
+```python title="Definition"
+class BufferingHintsTypeDef(TypedDict):
+    SizeInMBs: NotRequired[int],
+    IntervalInSeconds: NotRequired[int],
+```
 
 ## CloudWatchLoggingOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import CloudWatchLoggingOptionsTypeDef
+
+def get_value() -> CloudWatchLoggingOptionsTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-- `LogGroupName`: `str`
-- `LogStreamName`: `str`
-
-<a id="copycommandtypedef"></a>
+```python title="Definition"
+class CloudWatchLoggingOptionsTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    LogGroupName: NotRequired[str],
+    LogStreamName: NotRequired[str],
+```
 
 ## CopyCommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import CopyCommandTypeDef
+
+def get_value() -> CopyCommandTypeDef:
+    return {
+        "DataTableName": ...,
+    }
 ```
 
-Required fields:
-
-- `DataTableName`: `str`
-
-Optional fields:
-
-- `DataTableColumns`: `str`
-- `CopyOptions`: `str`
-
-<a id="createdeliverystreaminputrequesttypedef"></a>
+```python title="Definition"
+class CopyCommandTypeDef(TypedDict):
+    DataTableName: str,
+    DataTableColumns: NotRequired[str],
+    CopyOptions: NotRequired[str],
+```
 
 ## CreateDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import CreateDeliveryStreamInputRequestTypeDef
+
+def get_value() -> CreateDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    DeliveryStreamType: NotRequired[DeliveryStreamTypeType],  # (1)
+    KinesisStreamSourceConfiguration: NotRequired[KinesisStreamSourceConfigurationTypeDef],  # (2)
+    DeliveryStreamEncryptionConfigurationInput: NotRequired[DeliveryStreamEncryptionConfigurationInputTypeDef],  # (3)
+    S3DestinationConfiguration: NotRequired[S3DestinationConfigurationTypeDef],  # (4)
+    ExtendedS3DestinationConfiguration: NotRequired[ExtendedS3DestinationConfigurationTypeDef],  # (5)
+    RedshiftDestinationConfiguration: NotRequired[RedshiftDestinationConfigurationTypeDef],  # (6)
+    ElasticsearchDestinationConfiguration: NotRequired[ElasticsearchDestinationConfigurationTypeDef],  # (7)
+    AmazonopensearchserviceDestinationConfiguration: NotRequired[AmazonopensearchserviceDestinationConfigurationTypeDef],  # (8)
+    SplunkDestinationConfiguration: NotRequired[SplunkDestinationConfigurationTypeDef],  # (9)
+    HttpEndpointDestinationConfiguration: NotRequired[HttpEndpointDestinationConfigurationTypeDef],  # (10)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (11)
+```
 
-- `DeliveryStreamName`: `str`
-
-Optional fields:
-
-- `DeliveryStreamType`:
-  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
-- `KinesisStreamSourceConfiguration`:
-  [KinesisStreamSourceConfigurationTypeDef](./type_defs.md#kinesisstreamsourceconfigurationtypedef)
-- `DeliveryStreamEncryptionConfigurationInput`:
-  [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
-- `S3DestinationConfiguration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-- `ExtendedS3DestinationConfiguration`:
-  [ExtendedS3DestinationConfigurationTypeDef](./type_defs.md#extendeds3destinationconfigurationtypedef)
-- `RedshiftDestinationConfiguration`:
-  [RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef)
-- `ElasticsearchDestinationConfiguration`:
-  [ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef)
-- `AmazonopensearchserviceDestinationConfiguration`:
-  [AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef)
-- `SplunkDestinationConfiguration`:
-  [SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef)
-- `HttpEndpointDestinationConfiguration`:
-  [HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdeliverystreamoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStreamTypeType](./literals.md#deliverystreamtypetype) 
+2. See [:material-code-braces: KinesisStreamSourceConfigurationTypeDef](./type_defs.md#kinesisstreamsourceconfigurationtypedef) 
+3. See [:material-code-braces: DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef) 
+4. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+5. See [:material-code-braces: ExtendedS3DestinationConfigurationTypeDef](./type_defs.md#extendeds3destinationconfigurationtypedef) 
+6. See [:material-code-braces: RedshiftDestinationConfigurationTypeDef](./type_defs.md#redshiftdestinationconfigurationtypedef) 
+7. See [:material-code-braces: ElasticsearchDestinationConfigurationTypeDef](./type_defs.md#elasticsearchdestinationconfigurationtypedef) 
+8. See [:material-code-braces: AmazonopensearchserviceDestinationConfigurationTypeDef](./type_defs.md#amazonopensearchservicedestinationconfigurationtypedef) 
+9. See [:material-code-braces: SplunkDestinationConfigurationTypeDef](./type_defs.md#splunkdestinationconfigurationtypedef) 
+10. See [:material-code-braces: HttpEndpointDestinationConfigurationTypeDef](./type_defs.md#httpendpointdestinationconfigurationtypedef) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDeliveryStreamOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import CreateDeliveryStreamOutputTypeDef
+
+def get_value() -> CreateDeliveryStreamOutputTypeDef:
+    return {
+        "DeliveryStreamARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeliveryStreamOutputTypeDef(TypedDict):
+    DeliveryStreamARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeliveryStreamARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataformatconversionconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataFormatConversionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DataFormatConversionConfigurationTypeDef
+
+def get_value() -> DataFormatConversionConfigurationTypeDef:
+    return {
+        "SchemaConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataFormatConversionConfigurationTypeDef(TypedDict):
+    SchemaConfiguration: NotRequired[SchemaConfigurationTypeDef],  # (1)
+    InputFormatConfiguration: NotRequired[InputFormatConfigurationTypeDef],  # (2)
+    OutputFormatConfiguration: NotRequired[OutputFormatConfigurationTypeDef],  # (3)
+    Enabled: NotRequired[bool],
+```
 
-- `SchemaConfiguration`:
-  [SchemaConfigurationTypeDef](./type_defs.md#schemaconfigurationtypedef)
-- `InputFormatConfiguration`:
-  [InputFormatConfigurationTypeDef](./type_defs.md#inputformatconfigurationtypedef)
-- `OutputFormatConfiguration`:
-  [OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef)
-- `Enabled`: `bool`
-
-<a id="deletedeliverystreaminputrequesttypedef"></a>
-
+1. See [:material-code-braces: SchemaConfigurationTypeDef](./type_defs.md#schemaconfigurationtypedef) 
+2. See [:material-code-braces: InputFormatConfigurationTypeDef](./type_defs.md#inputformatconfigurationtypedef) 
+3. See [:material-code-braces: OutputFormatConfigurationTypeDef](./type_defs.md#outputformatconfigurationtypedef) 
 ## DeleteDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DeleteDeliveryStreamInputRequestTypeDef
+
+def get_value() -> DeleteDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryStreamName`: `str`
-
-Optional fields:
-
-- `AllowForceDelete`: `bool`
-
-<a id="deliverystreamdescriptiontypedef"></a>
+```python title="Definition"
+class DeleteDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    AllowForceDelete: NotRequired[bool],
+```
 
 ## DeliveryStreamDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DeliveryStreamDescriptionTypeDef
+
+def get_value() -> DeliveryStreamDescriptionTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "DeliveryStreamARN": ...,
+        "DeliveryStreamStatus": ...,
+        "DeliveryStreamType": ...,
+        "VersionId": ...,
+        "Destinations": ...,
+        "HasMoreDestinations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeliveryStreamDescriptionTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    DeliveryStreamARN: str,
+    DeliveryStreamStatus: DeliveryStreamStatusType,  # (1)
+    DeliveryStreamType: DeliveryStreamTypeType,  # (4)
+    VersionId: str,
+    Destinations: List[DestinationDescriptionTypeDef],  # (6)
+    HasMoreDestinations: bool,
+    FailureDescription: NotRequired[FailureDescriptionTypeDef],  # (2)
+    DeliveryStreamEncryptionConfiguration: NotRequired[DeliveryStreamEncryptionConfigurationTypeDef],  # (3)
+    CreateTimestamp: NotRequired[datetime],
+    LastUpdateTimestamp: NotRequired[datetime],
+    Source: NotRequired[SourceDescriptionTypeDef],  # (5)
+```
 
-- `DeliveryStreamName`: `str`
-- `DeliveryStreamARN`: `str`
-- `DeliveryStreamStatus`:
-  [DeliveryStreamStatusType](./literals.md#deliverystreamstatustype)
-- `DeliveryStreamType`:
-  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
-- `VersionId`: `str`
-- `Destinations`:
-  `List`\[[DestinationDescriptionTypeDef](./type_defs.md#destinationdescriptiontypedef)\]
-- `HasMoreDestinations`: `bool`
-
-Optional fields:
-
-- `FailureDescription`:
-  [FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef)
-- `DeliveryStreamEncryptionConfiguration`:
-  [DeliveryStreamEncryptionConfigurationTypeDef](./type_defs.md#deliverystreamencryptionconfigurationtypedef)
-- `CreateTimestamp`: `datetime`
-- `LastUpdateTimestamp`: `datetime`
-- `Source`: [SourceDescriptionTypeDef](./type_defs.md#sourcedescriptiontypedef)
-
-<a id="deliverystreamencryptionconfigurationinputtypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStreamStatusType](./literals.md#deliverystreamstatustype) 
+2. See [:material-code-braces: FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef) 
+3. See [:material-code-braces: DeliveryStreamEncryptionConfigurationTypeDef](./type_defs.md#deliverystreamencryptionconfigurationtypedef) 
+4. See [:material-code-brackets: DeliveryStreamTypeType](./literals.md#deliverystreamtypetype) 
+5. See [:material-code-braces: SourceDescriptionTypeDef](./type_defs.md#sourcedescriptiontypedef) 
+6. See [:material-code-braces: DestinationDescriptionTypeDef](./type_defs.md#destinationdescriptiontypedef) 
 ## DeliveryStreamEncryptionConfigurationInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationInputTypeDef
+
+def get_value() -> DeliveryStreamEncryptionConfigurationInputTypeDef:
+    return {
+        "KeyType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeliveryStreamEncryptionConfigurationInputTypeDef(TypedDict):
+    KeyType: KeyTypeType,  # (1)
+    KeyARN: NotRequired[str],
+```
 
-- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
-
-Optional fields:
-
-- `KeyARN`: `str`
-
-<a id="deliverystreamencryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 ## DeliveryStreamEncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DeliveryStreamEncryptionConfigurationTypeDef
+
+def get_value() -> DeliveryStreamEncryptionConfigurationTypeDef:
+    return {
+        "KeyARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeliveryStreamEncryptionConfigurationTypeDef(TypedDict):
+    KeyARN: NotRequired[str],
+    KeyType: NotRequired[KeyTypeType],  # (1)
+    Status: NotRequired[DeliveryStreamEncryptionStatusType],  # (2)
+    FailureDescription: NotRequired[FailureDescriptionTypeDef],  # (3)
+```
 
-- `KeyARN`: `str`
-- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
-- `Status`:
-  [DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype)
-- `FailureDescription`:
-  [FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef)
-
-<a id="describedeliverystreaminputrequesttypedef"></a>
-
+1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
+2. See [:material-code-brackets: DeliveryStreamEncryptionStatusType](./literals.md#deliverystreamencryptionstatustype) 
+3. See [:material-code-braces: FailureDescriptionTypeDef](./type_defs.md#failuredescriptiontypedef) 
 ## DescribeDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamInputRequestTypeDef
+
+def get_value() -> DescribeDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryStreamName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `ExclusiveStartDestinationId`: `str`
-
-<a id="describedeliverystreamoutputtypedef"></a>
+```python title="Definition"
+class DescribeDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    Limit: NotRequired[int],
+    ExclusiveStartDestinationId: NotRequired[str],
+```
 
 ## DescribeDeliveryStreamOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DescribeDeliveryStreamOutputTypeDef
+
+def get_value() -> DescribeDeliveryStreamOutputTypeDef:
+    return {
+        "DeliveryStreamDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeliveryStreamOutputTypeDef(TypedDict):
+    DeliveryStreamDescription: DeliveryStreamDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeliveryStreamDescription`:
-  [DeliveryStreamDescriptionTypeDef](./type_defs.md#deliverystreamdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deserializertypedef"></a>
-
+1. See [:material-code-braces: DeliveryStreamDescriptionTypeDef](./type_defs.md#deliverystreamdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeserializerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DeserializerTypeDef
+
+def get_value() -> DeserializerTypeDef:
+    return {
+        "OpenXJsonSerDe": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeserializerTypeDef(TypedDict):
+    OpenXJsonSerDe: NotRequired[OpenXJsonSerDeTypeDef],  # (1)
+    HiveJsonSerDe: NotRequired[HiveJsonSerDeTypeDef],  # (2)
+```
 
-- `OpenXJsonSerDe`:
-  [OpenXJsonSerDeTypeDef](./type_defs.md#openxjsonserdetypedef)
-- `HiveJsonSerDe`: [HiveJsonSerDeTypeDef](./type_defs.md#hivejsonserdetypedef)
-
-<a id="destinationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: OpenXJsonSerDeTypeDef](./type_defs.md#openxjsonserdetypedef) 
+2. See [:material-code-braces: HiveJsonSerDeTypeDef](./type_defs.md#hivejsonserdetypedef) 
 ## DestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DestinationDescriptionTypeDef
+
+def get_value() -> DestinationDescriptionTypeDef:
+    return {
+        "DestinationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DestinationDescriptionTypeDef(TypedDict):
+    DestinationId: str,
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (1)
+    ExtendedS3DestinationDescription: NotRequired[ExtendedS3DestinationDescriptionTypeDef],  # (2)
+    RedshiftDestinationDescription: NotRequired[RedshiftDestinationDescriptionTypeDef],  # (3)
+    ElasticsearchDestinationDescription: NotRequired[ElasticsearchDestinationDescriptionTypeDef],  # (4)
+    AmazonopensearchserviceDestinationDescription: NotRequired[AmazonopensearchserviceDestinationDescriptionTypeDef],  # (5)
+    SplunkDestinationDescription: NotRequired[SplunkDestinationDescriptionTypeDef],  # (6)
+    HttpEndpointDestinationDescription: NotRequired[HttpEndpointDestinationDescriptionTypeDef],  # (7)
+```
 
-- `DestinationId`: `str`
-
-Optional fields:
-
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `ExtendedS3DestinationDescription`:
-  [ExtendedS3DestinationDescriptionTypeDef](./type_defs.md#extendeds3destinationdescriptiontypedef)
-- `RedshiftDestinationDescription`:
-  [RedshiftDestinationDescriptionTypeDef](./type_defs.md#redshiftdestinationdescriptiontypedef)
-- `ElasticsearchDestinationDescription`:
-  [ElasticsearchDestinationDescriptionTypeDef](./type_defs.md#elasticsearchdestinationdescriptiontypedef)
-- `AmazonopensearchserviceDestinationDescription`:
-  [AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef)
-- `SplunkDestinationDescription`:
-  [SplunkDestinationDescriptionTypeDef](./type_defs.md#splunkdestinationdescriptiontypedef)
-- `HttpEndpointDestinationDescription`:
-  [HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef)
-
-<a id="dynamicpartitioningconfigurationtypedef"></a>
-
+1. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+2. See [:material-code-braces: ExtendedS3DestinationDescriptionTypeDef](./type_defs.md#extendeds3destinationdescriptiontypedef) 
+3. See [:material-code-braces: RedshiftDestinationDescriptionTypeDef](./type_defs.md#redshiftdestinationdescriptiontypedef) 
+4. See [:material-code-braces: ElasticsearchDestinationDescriptionTypeDef](./type_defs.md#elasticsearchdestinationdescriptiontypedef) 
+5. See [:material-code-braces: AmazonopensearchserviceDestinationDescriptionTypeDef](./type_defs.md#amazonopensearchservicedestinationdescriptiontypedef) 
+6. See [:material-code-braces: SplunkDestinationDescriptionTypeDef](./type_defs.md#splunkdestinationdescriptiontypedef) 
+7. See [:material-code-braces: HttpEndpointDestinationDescriptionTypeDef](./type_defs.md#httpendpointdestinationdescriptiontypedef) 
 ## DynamicPartitioningConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import DynamicPartitioningConfigurationTypeDef
+
+def get_value() -> DynamicPartitioningConfigurationTypeDef:
+    return {
+        "RetryOptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DynamicPartitioningConfigurationTypeDef(TypedDict):
+    RetryOptions: NotRequired[RetryOptionsTypeDef],  # (1)
+    Enabled: NotRequired[bool],
+```
 
-- `RetryOptions`: [RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef)
-- `Enabled`: `bool`
-
-<a id="elasticsearchbufferinghintstypedef"></a>
-
+1. See [:material-code-braces: RetryOptionsTypeDef](./type_defs.md#retryoptionstypedef) 
 ## ElasticsearchBufferingHintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ElasticsearchBufferingHintsTypeDef
+
+def get_value() -> ElasticsearchBufferingHintsTypeDef:
+    return {
+        "IntervalInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `IntervalInSeconds`: `int`
-- `SizeInMBs`: `int`
-
-<a id="elasticsearchdestinationconfigurationtypedef"></a>
+```python title="Definition"
+class ElasticsearchBufferingHintsTypeDef(TypedDict):
+    IntervalInSeconds: NotRequired[int],
+    SizeInMBs: NotRequired[int],
+```
 
 ## ElasticsearchDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationConfigurationTypeDef
+
+def get_value() -> ElasticsearchDestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "IndexName": ...,
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ElasticsearchDestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    IndexName: str,
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (5)
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[ElasticsearchIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[ElasticsearchBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[ElasticsearchRetryOptionsTypeDef],  # (3)
+    S3BackupMode: NotRequired[ElasticsearchS3BackupModeType],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (6)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (8)
+```
 
-- `RoleARN`: `str`
-- `IndexName`: `str`
-- `S3Configuration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-
-Optional fields:
-
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
-- `BufferingHints`:
-  [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
-- `RetryOptions`:
-  [ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef)
-- `S3BackupMode`:
-  [ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="elasticsearchdestinationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype) 
+2. See [:material-code-braces: ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef) 
+3. See [:material-code-braces: ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef) 
+4. See [:material-code-brackets: ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype) 
+5. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+6. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+8. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## ElasticsearchDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationDescriptionTypeDef
+
+def get_value() -> ElasticsearchDestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ElasticsearchDestinationDescriptionTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[ElasticsearchIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[ElasticsearchBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[ElasticsearchRetryOptionsTypeDef],  # (3)
+    S3BackupMode: NotRequired[ElasticsearchS3BackupModeType],  # (4)
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (5)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (6)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+    VpcConfigurationDescription: NotRequired[VpcConfigurationDescriptionTypeDef],  # (8)
+```
 
-- `RoleARN`: `str`
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `IndexName`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
-- `BufferingHints`:
-  [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
-- `RetryOptions`:
-  [ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef)
-- `S3BackupMode`:
-  [ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype)
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `VpcConfigurationDescription`:
-  [VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef)
-
-<a id="elasticsearchdestinationupdatetypedef"></a>
-
+1. See [:material-code-brackets: ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype) 
+2. See [:material-code-braces: ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef) 
+3. See [:material-code-braces: ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef) 
+4. See [:material-code-brackets: ElasticsearchS3BackupModeType](./literals.md#elasticsearchs3backupmodetype) 
+5. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+6. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+8. See [:material-code-braces: VpcConfigurationDescriptionTypeDef](./type_defs.md#vpcconfigurationdescriptiontypedef) 
 ## ElasticsearchDestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ElasticsearchDestinationUpdateTypeDef
+
+def get_value() -> ElasticsearchDestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ElasticsearchDestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    DomainARN: NotRequired[str],
+    ClusterEndpoint: NotRequired[str],
+    IndexName: NotRequired[str],
+    TypeName: NotRequired[str],
+    IndexRotationPeriod: NotRequired[ElasticsearchIndexRotationPeriodType],  # (1)
+    BufferingHints: NotRequired[ElasticsearchBufferingHintsTypeDef],  # (2)
+    RetryOptions: NotRequired[ElasticsearchRetryOptionsTypeDef],  # (3)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+```
 
-- `RoleARN`: `str`
-- `DomainARN`: `str`
-- `ClusterEndpoint`: `str`
-- `IndexName`: `str`
-- `TypeName`: `str`
-- `IndexRotationPeriod`:
-  [ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype)
-- `BufferingHints`:
-  [ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef)
-- `RetryOptions`:
-  [ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef)
-- `S3Update`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="elasticsearchretryoptionstypedef"></a>
-
+1. See [:material-code-brackets: ElasticsearchIndexRotationPeriodType](./literals.md#elasticsearchindexrotationperiodtype) 
+2. See [:material-code-braces: ElasticsearchBufferingHintsTypeDef](./type_defs.md#elasticsearchbufferinghintstypedef) 
+3. See [:material-code-braces: ElasticsearchRetryOptionsTypeDef](./type_defs.md#elasticsearchretryoptionstypedef) 
+4. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## ElasticsearchRetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ElasticsearchRetryOptionsTypeDef
+
+def get_value() -> ElasticsearchRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="encryptionconfigurationtypedef"></a>
+```python title="Definition"
+class ElasticsearchRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import EncryptionConfigurationTypeDef
+
+def get_value() -> EncryptionConfigurationTypeDef:
+    return {
+        "NoEncryptionConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EncryptionConfigurationTypeDef(TypedDict):
+    NoEncryptionConfig: NotRequired[NoEncryptionConfigType],  # (1)
+    KMSEncryptionConfig: NotRequired[KMSEncryptionConfigTypeDef],  # (2)
+```
 
-- `NoEncryptionConfig`: `Literal['NoEncryption']` (see
-  [NoEncryptionConfigType](./literals.md#noencryptionconfigtype))
-- `KMSEncryptionConfig`:
-  [KMSEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
-
-<a id="extendeds3destinationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: NoEncryptionConfigType](./literals.md#noencryptionconfigtype) 
+2. See [:material-code-braces: KMSEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef) 
 ## ExtendedS3DestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationConfigurationTypeDef
+
+def get_value() -> ExtendedS3DestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "BucketARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExtendedS3DestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    BucketARN: str,
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    BufferingHints: NotRequired[BufferingHintsTypeDef],  # (1)
+    CompressionFormat: NotRequired[CompressionFormatType],  # (2)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    S3BackupMode: NotRequired[S3BackupModeType],  # (6)
+    S3BackupConfiguration: NotRequired[S3DestinationConfigurationTypeDef],  # (7)
+    DataFormatConversionConfiguration: NotRequired[DataFormatConversionConfigurationTypeDef],  # (8)
+    DynamicPartitioningConfiguration: NotRequired[DynamicPartitioningConfigurationTypeDef],  # (9)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
-- `S3BackupConfiguration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-- `DataFormatConversionConfiguration`:
-  [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
-- `DynamicPartitioningConfiguration`:
-  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
-
-<a id="extendeds3destinationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-brackets: S3BackupModeType](./literals.md#s3backupmodetype) 
+7. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+8. See [:material-code-braces: DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef) 
+9. See [:material-code-braces: DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef) 
 ## ExtendedS3DestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationDescriptionTypeDef
+
+def get_value() -> ExtendedS3DestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+        "BucketARN": ...,
+        "BufferingHints": ...,
+        "CompressionFormat": ...,
+        "EncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExtendedS3DestinationDescriptionTypeDef(TypedDict):
+    RoleARN: str,
+    BucketARN: str,
+    BufferingHints: BufferingHintsTypeDef,  # (1)
+    CompressionFormat: CompressionFormatType,  # (2)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef,  # (3)
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    S3BackupMode: NotRequired[S3BackupModeType],  # (6)
+    S3BackupDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (7)
+    DataFormatConversionConfiguration: NotRequired[DataFormatConversionConfigurationTypeDef],  # (8)
+    DynamicPartitioningConfiguration: NotRequired[DynamicPartitioningConfigurationTypeDef],  # (9)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-
-Optional fields:
-
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
-- `S3BackupDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `DataFormatConversionConfiguration`:
-  [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
-- `DynamicPartitioningConfiguration`:
-  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
-
-<a id="extendeds3destinationupdatetypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-brackets: S3BackupModeType](./literals.md#s3backupmodetype) 
+7. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+8. See [:material-code-braces: DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef) 
+9. See [:material-code-braces: DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef) 
 ## ExtendedS3DestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ExtendedS3DestinationUpdateTypeDef
+
+def get_value() -> ExtendedS3DestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExtendedS3DestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    BucketARN: NotRequired[str],
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    BufferingHints: NotRequired[BufferingHintsTypeDef],  # (1)
+    CompressionFormat: NotRequired[CompressionFormatType],  # (2)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    S3BackupMode: NotRequired[S3BackupModeType],  # (6)
+    S3BackupUpdate: NotRequired[S3DestinationUpdateTypeDef],  # (7)
+    DataFormatConversionConfiguration: NotRequired[DataFormatConversionConfigurationTypeDef],  # (8)
+    DynamicPartitioningConfiguration: NotRequired[DynamicPartitioningConfigurationTypeDef],  # (9)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`: [S3BackupModeType](./literals.md#s3backupmodetype)
-- `S3BackupUpdate`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `DataFormatConversionConfiguration`:
-  [DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef)
-- `DynamicPartitioningConfiguration`:
-  [DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef)
-
-<a id="failuredescriptiontypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-brackets: S3BackupModeType](./literals.md#s3backupmodetype) 
+7. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+8. See [:material-code-braces: DataFormatConversionConfigurationTypeDef](./type_defs.md#dataformatconversionconfigurationtypedef) 
+9. See [:material-code-braces: DynamicPartitioningConfigurationTypeDef](./type_defs.md#dynamicpartitioningconfigurationtypedef) 
 ## FailureDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import FailureDescriptionTypeDef
+
+def get_value() -> FailureDescriptionTypeDef:
+    return {
+        "Type": ...,
+        "Details": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FailureDescriptionTypeDef(TypedDict):
+    Type: DeliveryStreamFailureTypeType,  # (1)
+    Details: str,
+```
 
-- `Type`:
-  [DeliveryStreamFailureTypeType](./literals.md#deliverystreamfailuretypetype)
-- `Details`: `str`
-
-<a id="hivejsonserdetypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStreamFailureTypeType](./literals.md#deliverystreamfailuretypetype) 
 ## HiveJsonSerDeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HiveJsonSerDeTypeDef
+
+def get_value() -> HiveJsonSerDeTypeDef:
+    return {
+        "TimestampFormats": ...,
+    }
 ```
 
-Optional fields:
-
-- `TimestampFormats`: `Sequence`\[`str`\]
-
-<a id="httpendpointbufferinghintstypedef"></a>
+```python title="Definition"
+class HiveJsonSerDeTypeDef(TypedDict):
+    TimestampFormats: NotRequired[Sequence[str]],
+```
 
 ## HttpEndpointBufferingHintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointBufferingHintsTypeDef
+
+def get_value() -> HttpEndpointBufferingHintsTypeDef:
+    return {
+        "SizeInMBs": ...,
+    }
 ```
 
-Optional fields:
-
-- `SizeInMBs`: `int`
-- `IntervalInSeconds`: `int`
-
-<a id="httpendpointcommonattributetypedef"></a>
+```python title="Definition"
+class HttpEndpointBufferingHintsTypeDef(TypedDict):
+    SizeInMBs: NotRequired[int],
+    IntervalInSeconds: NotRequired[int],
+```
 
 ## HttpEndpointCommonAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointCommonAttributeTypeDef
+
+def get_value() -> HttpEndpointCommonAttributeTypeDef:
+    return {
+        "AttributeName": ...,
+        "AttributeValue": ...,
+    }
 ```
 
-Required fields:
-
-- `AttributeName`: `str`
-- `AttributeValue`: `str`
-
-<a id="httpendpointconfigurationtypedef"></a>
+```python title="Definition"
+class HttpEndpointCommonAttributeTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeValue: str,
+```
 
 ## HttpEndpointConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointConfigurationTypeDef
+
+def get_value() -> HttpEndpointConfigurationTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Required fields:
-
-- `Url`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `AccessKey`: `str`
-
-<a id="httpendpointdescriptiontypedef"></a>
+```python title="Definition"
+class HttpEndpointConfigurationTypeDef(TypedDict):
+    Url: str,
+    Name: NotRequired[str],
+    AccessKey: NotRequired[str],
+```
 
 ## HttpEndpointDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointDescriptionTypeDef
+
+def get_value() -> HttpEndpointDescriptionTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Optional fields:
-
-- `Url`: `str`
-- `Name`: `str`
-
-<a id="httpendpointdestinationconfigurationtypedef"></a>
+```python title="Definition"
+class HttpEndpointDescriptionTypeDef(TypedDict):
+    Url: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## HttpEndpointDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationConfigurationTypeDef
+
+def get_value() -> HttpEndpointDestinationConfigurationTypeDef:
+    return {
+        "EndpointConfiguration": ...,
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpEndpointDestinationConfigurationTypeDef(TypedDict):
+    EndpointConfiguration: HttpEndpointConfigurationTypeDef,  # (1)
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (8)
+    BufferingHints: NotRequired[HttpEndpointBufferingHintsTypeDef],  # (2)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (3)
+    RequestConfiguration: NotRequired[HttpEndpointRequestConfigurationTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    RoleARN: NotRequired[str],
+    RetryOptions: NotRequired[HttpEndpointRetryOptionsTypeDef],  # (6)
+    S3BackupMode: NotRequired[HttpEndpointS3BackupModeType],  # (7)
+```
 
-- `EndpointConfiguration`:
-  [HttpEndpointConfigurationTypeDef](./type_defs.md#httpendpointconfigurationtypedef)
-- `S3Configuration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-
-Optional fields:
-
-- `BufferingHints`:
-  [HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `RequestConfiguration`:
-  [HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `RoleARN`: `str`
-- `RetryOptions`:
-  [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
-- `S3BackupMode`:
-  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
-
-<a id="httpendpointdestinationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: HttpEndpointConfigurationTypeDef](./type_defs.md#httpendpointconfigurationtypedef) 
+2. See [:material-code-braces: HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+4. See [:material-code-braces: HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef) 
+7. See [:material-code-brackets: HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype) 
+8. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
 ## HttpEndpointDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationDescriptionTypeDef
+
+def get_value() -> HttpEndpointDestinationDescriptionTypeDef:
+    return {
+        "EndpointConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpEndpointDestinationDescriptionTypeDef(TypedDict):
+    EndpointConfiguration: NotRequired[HttpEndpointDescriptionTypeDef],  # (1)
+    BufferingHints: NotRequired[HttpEndpointBufferingHintsTypeDef],  # (2)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (3)
+    RequestConfiguration: NotRequired[HttpEndpointRequestConfigurationTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    RoleARN: NotRequired[str],
+    RetryOptions: NotRequired[HttpEndpointRetryOptionsTypeDef],  # (6)
+    S3BackupMode: NotRequired[HttpEndpointS3BackupModeType],  # (7)
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (8)
+```
 
-- `EndpointConfiguration`:
-  [HttpEndpointDescriptionTypeDef](./type_defs.md#httpendpointdescriptiontypedef)
-- `BufferingHints`:
-  [HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `RequestConfiguration`:
-  [HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `RoleARN`: `str`
-- `RetryOptions`:
-  [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
-- `S3BackupMode`:
-  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-
-<a id="httpendpointdestinationupdatetypedef"></a>
-
+1. See [:material-code-braces: HttpEndpointDescriptionTypeDef](./type_defs.md#httpendpointdescriptiontypedef) 
+2. See [:material-code-braces: HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+4. See [:material-code-braces: HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef) 
+7. See [:material-code-brackets: HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype) 
+8. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
 ## HttpEndpointDestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointDestinationUpdateTypeDef
+
+def get_value() -> HttpEndpointDestinationUpdateTypeDef:
+    return {
+        "EndpointConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpEndpointDestinationUpdateTypeDef(TypedDict):
+    EndpointConfiguration: NotRequired[HttpEndpointConfigurationTypeDef],  # (1)
+    BufferingHints: NotRequired[HttpEndpointBufferingHintsTypeDef],  # (2)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (3)
+    RequestConfiguration: NotRequired[HttpEndpointRequestConfigurationTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    RoleARN: NotRequired[str],
+    RetryOptions: NotRequired[HttpEndpointRetryOptionsTypeDef],  # (6)
+    S3BackupMode: NotRequired[HttpEndpointS3BackupModeType],  # (7)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (8)
+```
 
-- `EndpointConfiguration`:
-  [HttpEndpointConfigurationTypeDef](./type_defs.md#httpendpointconfigurationtypedef)
-- `BufferingHints`:
-  [HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-- `RequestConfiguration`:
-  [HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `RoleARN`: `str`
-- `RetryOptions`:
-  [HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef)
-- `S3BackupMode`:
-  [HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype)
-- `S3Update`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-
-<a id="httpendpointrequestconfigurationtypedef"></a>
-
+1. See [:material-code-braces: HttpEndpointConfigurationTypeDef](./type_defs.md#httpendpointconfigurationtypedef) 
+2. See [:material-code-braces: HttpEndpointBufferingHintsTypeDef](./type_defs.md#httpendpointbufferinghintstypedef) 
+3. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
+4. See [:material-code-braces: HttpEndpointRequestConfigurationTypeDef](./type_defs.md#httpendpointrequestconfigurationtypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: HttpEndpointRetryOptionsTypeDef](./type_defs.md#httpendpointretryoptionstypedef) 
+7. See [:material-code-brackets: HttpEndpointS3BackupModeType](./literals.md#httpendpoints3backupmodetype) 
+8. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
 ## HttpEndpointRequestConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointRequestConfigurationTypeDef
+
+def get_value() -> HttpEndpointRequestConfigurationTypeDef:
+    return {
+        "ContentEncoding": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpEndpointRequestConfigurationTypeDef(TypedDict):
+    ContentEncoding: NotRequired[ContentEncodingType],  # (1)
+    CommonAttributes: NotRequired[Sequence[HttpEndpointCommonAttributeTypeDef]],  # (2)
+```
 
-- `ContentEncoding`: [ContentEncodingType](./literals.md#contentencodingtype)
-- `CommonAttributes`:
-  `Sequence`\[[HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef)\]
-
-<a id="httpendpointretryoptionstypedef"></a>
-
+1. See [:material-code-brackets: ContentEncodingType](./literals.md#contentencodingtype) 
+2. See [:material-code-braces: HttpEndpointCommonAttributeTypeDef](./type_defs.md#httpendpointcommonattributetypedef) 
 ## HttpEndpointRetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import HttpEndpointRetryOptionsTypeDef
+
+def get_value() -> HttpEndpointRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="inputformatconfigurationtypedef"></a>
+```python title="Definition"
+class HttpEndpointRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## InputFormatConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import InputFormatConfigurationTypeDef
+
+def get_value() -> InputFormatConfigurationTypeDef:
+    return {
+        "Deserializer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputFormatConfigurationTypeDef(TypedDict):
+    Deserializer: NotRequired[DeserializerTypeDef],  # (1)
+```
 
-- `Deserializer`: [DeserializerTypeDef](./type_defs.md#deserializertypedef)
-
-<a id="kmsencryptionconfigtypedef"></a>
-
+1. See [:material-code-braces: DeserializerTypeDef](./type_defs.md#deserializertypedef) 
 ## KMSEncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import KMSEncryptionConfigTypeDef
+
+def get_value() -> KMSEncryptionConfigTypeDef:
+    return {
+        "AWSKMSKeyARN": ...,
+    }
 ```
 
-Required fields:
-
-- `AWSKMSKeyARN`: `str`
-
-<a id="kinesisstreamsourceconfigurationtypedef"></a>
+```python title="Definition"
+class KMSEncryptionConfigTypeDef(TypedDict):
+    AWSKMSKeyARN: str,
+```
 
 ## KinesisStreamSourceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import KinesisStreamSourceConfigurationTypeDef
+
+def get_value() -> KinesisStreamSourceConfigurationTypeDef:
+    return {
+        "KinesisStreamARN": ...,
+        "RoleARN": ...,
+    }
 ```
 
-Required fields:
-
-- `KinesisStreamARN`: `str`
-- `RoleARN`: `str`
-
-<a id="kinesisstreamsourcedescriptiontypedef"></a>
+```python title="Definition"
+class KinesisStreamSourceConfigurationTypeDef(TypedDict):
+    KinesisStreamARN: str,
+    RoleARN: str,
+```
 
 ## KinesisStreamSourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import KinesisStreamSourceDescriptionTypeDef
+
+def get_value() -> KinesisStreamSourceDescriptionTypeDef:
+    return {
+        "KinesisStreamARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `KinesisStreamARN`: `str`
-- `RoleARN`: `str`
-- `DeliveryStartTimestamp`: `datetime`
-
-<a id="listdeliverystreamsinputrequesttypedef"></a>
+```python title="Definition"
+class KinesisStreamSourceDescriptionTypeDef(TypedDict):
+    KinesisStreamARN: NotRequired[str],
+    RoleARN: NotRequired[str],
+    DeliveryStartTimestamp: NotRequired[datetime],
+```
 
 ## ListDeliveryStreamsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ListDeliveryStreamsInputRequestTypeDef
+
+def get_value() -> ListDeliveryStreamsInputRequestTypeDef:
+    return {
+        "Limit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDeliveryStreamsInputRequestTypeDef(TypedDict):
+    Limit: NotRequired[int],
+    DeliveryStreamType: NotRequired[DeliveryStreamTypeType],  # (1)
+    ExclusiveStartDeliveryStreamName: NotRequired[str],
+```
 
-- `Limit`: `int`
-- `DeliveryStreamType`:
-  [DeliveryStreamTypeType](./literals.md#deliverystreamtypetype)
-- `ExclusiveStartDeliveryStreamName`: `str`
-
-<a id="listdeliverystreamsoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStreamTypeType](./literals.md#deliverystreamtypetype) 
 ## ListDeliveryStreamsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ListDeliveryStreamsOutputTypeDef
+
+def get_value() -> ListDeliveryStreamsOutputTypeDef:
+    return {
+        "DeliveryStreamNames": ...,
+        "HasMoreDeliveryStreams": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeliveryStreamsOutputTypeDef(TypedDict):
+    DeliveryStreamNames: List[str],
+    HasMoreDeliveryStreams: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeliveryStreamNames`: `List`\[`str`\]
-- `HasMoreDeliveryStreams`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsfordeliverystreaminputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamInputRequestTypeDef
+
+def get_value() -> ListTagsForDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryStreamName`: `str`
-
-Optional fields:
-
-- `ExclusiveStartTagKey`: `str`
-- `Limit`: `int`
-
-<a id="listtagsfordeliverystreamoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    ExclusiveStartTagKey: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTagsForDeliveryStreamOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ListTagsForDeliveryStreamOutputTypeDef
+
+def get_value() -> ListTagsForDeliveryStreamOutputTypeDef:
+    return {
+        "Tags": ...,
+        "HasMoreTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForDeliveryStreamOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    HasMoreTags: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `HasMoreTags`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="openxjsonserdetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OpenXJsonSerDeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import OpenXJsonSerDeTypeDef
+
+def get_value() -> OpenXJsonSerDeTypeDef:
+    return {
+        "ConvertDotsInJsonKeysToUnderscores": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConvertDotsInJsonKeysToUnderscores`: `bool`
-- `CaseInsensitive`: `bool`
-- `ColumnToJsonKeyMappings`: `Mapping`\[`str`, `str`\]
-
-<a id="orcserdetypedef"></a>
+```python title="Definition"
+class OpenXJsonSerDeTypeDef(TypedDict):
+    ConvertDotsInJsonKeysToUnderscores: NotRequired[bool],
+    CaseInsensitive: NotRequired[bool],
+    ColumnToJsonKeyMappings: NotRequired[Mapping[str, str]],
+```
 
 ## OrcSerDeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import OrcSerDeTypeDef
+
+def get_value() -> OrcSerDeTypeDef:
+    return {
+        "StripeSizeBytes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrcSerDeTypeDef(TypedDict):
+    StripeSizeBytes: NotRequired[int],
+    BlockSizeBytes: NotRequired[int],
+    RowIndexStride: NotRequired[int],
+    EnablePadding: NotRequired[bool],
+    PaddingTolerance: NotRequired[float],
+    Compression: NotRequired[OrcCompressionType],  # (1)
+    BloomFilterColumns: NotRequired[Sequence[str]],
+    BloomFilterFalsePositiveProbability: NotRequired[float],
+    DictionaryKeyThreshold: NotRequired[float],
+    FormatVersion: NotRequired[OrcFormatVersionType],  # (2)
+```
 
-- `StripeSizeBytes`: `int`
-- `BlockSizeBytes`: `int`
-- `RowIndexStride`: `int`
-- `EnablePadding`: `bool`
-- `PaddingTolerance`: `float`
-- `Compression`: [OrcCompressionType](./literals.md#orccompressiontype)
-- `BloomFilterColumns`: `Sequence`\[`str`\]
-- `BloomFilterFalsePositiveProbability`: `float`
-- `DictionaryKeyThreshold`: `float`
-- `FormatVersion`: [OrcFormatVersionType](./literals.md#orcformatversiontype)
-
-<a id="outputformatconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: OrcCompressionType](./literals.md#orccompressiontype) 
+2. See [:material-code-brackets: OrcFormatVersionType](./literals.md#orcformatversiontype) 
 ## OutputFormatConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import OutputFormatConfigurationTypeDef
+
+def get_value() -> OutputFormatConfigurationTypeDef:
+    return {
+        "Serializer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputFormatConfigurationTypeDef(TypedDict):
+    Serializer: NotRequired[SerializerTypeDef],  # (1)
+```
 
-- `Serializer`: [SerializerTypeDef](./type_defs.md#serializertypedef)
-
-<a id="parquetserdetypedef"></a>
-
+1. See [:material-code-braces: SerializerTypeDef](./type_defs.md#serializertypedef) 
 ## ParquetSerDeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ParquetSerDeTypeDef
+
+def get_value() -> ParquetSerDeTypeDef:
+    return {
+        "BlockSizeBytes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParquetSerDeTypeDef(TypedDict):
+    BlockSizeBytes: NotRequired[int],
+    PageSizeBytes: NotRequired[int],
+    Compression: NotRequired[ParquetCompressionType],  # (1)
+    EnableDictionaryCompression: NotRequired[bool],
+    MaxPaddingBytes: NotRequired[int],
+    WriterVersion: NotRequired[ParquetWriterVersionType],  # (2)
+```
 
-- `BlockSizeBytes`: `int`
-- `PageSizeBytes`: `int`
-- `Compression`: [ParquetCompressionType](./literals.md#parquetcompressiontype)
-- `EnableDictionaryCompression`: `bool`
-- `MaxPaddingBytes`: `int`
-- `WriterVersion`:
-  [ParquetWriterVersionType](./literals.md#parquetwriterversiontype)
-
-<a id="processingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ParquetCompressionType](./literals.md#parquetcompressiontype) 
+2. See [:material-code-brackets: ParquetWriterVersionType](./literals.md#parquetwriterversiontype) 
 ## ProcessingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ProcessingConfigurationTypeDef
+
+def get_value() -> ProcessingConfigurationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProcessingConfigurationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    Processors: NotRequired[Sequence[ProcessorTypeDef]],  # (1)
+```
 
-- `Enabled`: `bool`
-- `Processors`:
-  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-
-<a id="processorparametertypedef"></a>
-
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
 ## ProcessorParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ProcessorParameterTypeDef
+
+def get_value() -> ProcessorParameterTypeDef:
+    return {
+        "ParameterName": ...,
+        "ParameterValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProcessorParameterTypeDef(TypedDict):
+    ParameterName: ProcessorParameterNameType,  # (1)
+    ParameterValue: str,
+```
 
-- `ParameterName`:
-  [ProcessorParameterNameType](./literals.md#processorparameternametype)
-- `ParameterValue`: `str`
-
-<a id="processortypedef"></a>
-
+1. See [:material-code-brackets: ProcessorParameterNameType](./literals.md#processorparameternametype) 
 ## ProcessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ProcessorTypeDef
+
+def get_value() -> ProcessorTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProcessorTypeDef(TypedDict):
+    Type: ProcessorTypeType,  # (1)
+    Parameters: NotRequired[Sequence[ProcessorParameterTypeDef]],  # (2)
+```
 
-- `Type`: [ProcessorTypeType](./literals.md#processortypetype)
-
-Optional fields:
-
-- `Parameters`:
-  `Sequence`\[[ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef)\]
-
-<a id="putrecordbatchinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProcessorTypeType](./literals.md#processortypetype) 
+2. See [:material-code-braces: ProcessorParameterTypeDef](./type_defs.md#processorparametertypedef) 
 ## PutRecordBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import PutRecordBatchInputRequestTypeDef
+
+def get_value() -> PutRecordBatchInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "Records": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRecordBatchInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    Records: Sequence[RecordTypeDef],  # (1)
+```
 
-- `DeliveryStreamName`: `str`
-- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
-
-<a id="putrecordbatchoutputtypedef"></a>
-
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 ## PutRecordBatchOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import PutRecordBatchOutputTypeDef
+
+def get_value() -> PutRecordBatchOutputTypeDef:
+    return {
+        "FailedPutCount": ...,
+        "Encrypted": ...,
+        "RequestResponses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRecordBatchOutputTypeDef(TypedDict):
+    FailedPutCount: int,
+    Encrypted: bool,
+    RequestResponses: List[PutRecordBatchResponseEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedPutCount`: `int`
-- `Encrypted`: `bool`
-- `RequestResponses`:
-  `List`\[[PutRecordBatchResponseEntryTypeDef](./type_defs.md#putrecordbatchresponseentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putrecordbatchresponseentrytypedef"></a>
-
+1. See [:material-code-braces: PutRecordBatchResponseEntryTypeDef](./type_defs.md#putrecordbatchresponseentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRecordBatchResponseEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import PutRecordBatchResponseEntryTypeDef
+
+def get_value() -> PutRecordBatchResponseEntryTypeDef:
+    return {
+        "RecordId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RecordId`: `str`
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="putrecordinputrequesttypedef"></a>
+```python title="Definition"
+class PutRecordBatchResponseEntryTypeDef(TypedDict):
+    RecordId: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## PutRecordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import PutRecordInputRequestTypeDef
+
+def get_value() -> PutRecordInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "Record": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRecordInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    Record: RecordTypeDef,  # (1)
+```
 
-- `DeliveryStreamName`: `str`
-- `Record`: [RecordTypeDef](./type_defs.md#recordtypedef)
-
-<a id="putrecordoutputtypedef"></a>
-
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
 ## PutRecordOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import PutRecordOutputTypeDef
+
+def get_value() -> PutRecordOutputTypeDef:
+    return {
+        "RecordId": ...,
+        "Encrypted": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRecordOutputTypeDef(TypedDict):
+    RecordId: str,
+    Encrypted: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RecordId`: `str`
-- `Encrypted`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recordtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RecordTypeDef
+
+def get_value() -> RecordTypeDef:
+    return {
+        "Data": ...,
+    }
 ```
 
-Required fields:
-
-- `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="redshiftdestinationconfigurationtypedef"></a>
+```python title="Definition"
+class RecordTypeDef(TypedDict):
+    Data: Union[bytes, IO[bytes], StreamingBody],
+```
 
 ## RedshiftDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RedshiftDestinationConfigurationTypeDef
+
+def get_value() -> RedshiftDestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "ClusterJDBCURL": ...,
+        "CopyCommand": ...,
+        "Username": ...,
+        "Password": ...,
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedshiftDestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    ClusterJDBCURL: str,
+    CopyCommand: CopyCommandTypeDef,  # (1)
+    Username: str,
+    Password: str,
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (3)
+    RetryOptions: NotRequired[RedshiftRetryOptionsTypeDef],  # (2)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (4)
+    S3BackupMode: NotRequired[RedshiftS3BackupModeType],  # (5)
+    S3BackupConfiguration: NotRequired[S3DestinationConfigurationTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+```
 
-- `RoleARN`: `str`
-- `ClusterJDBCURL`: `str`
-- `CopyCommand`: [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)
-- `Username`: `str`
-- `Password`: `str`
-- `S3Configuration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-
-Optional fields:
-
-- `RetryOptions`:
-  [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`:
-  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
-- `S3BackupConfiguration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="redshiftdestinationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: CopyCommandTypeDef](./type_defs.md#copycommandtypedef) 
+2. See [:material-code-braces: RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef) 
+3. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+4. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+5. See [:material-code-brackets: RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype) 
+6. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## RedshiftDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RedshiftDestinationDescriptionTypeDef
+
+def get_value() -> RedshiftDestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+        "ClusterJDBCURL": ...,
+        "CopyCommand": ...,
+        "Username": ...,
+        "S3DestinationDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedshiftDestinationDescriptionTypeDef(TypedDict):
+    RoleARN: str,
+    ClusterJDBCURL: str,
+    CopyCommand: CopyCommandTypeDef,  # (1)
+    Username: str,
+    S3DestinationDescription: S3DestinationDescriptionTypeDef,  # (3)
+    RetryOptions: NotRequired[RedshiftRetryOptionsTypeDef],  # (2)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (4)
+    S3BackupMode: NotRequired[RedshiftS3BackupModeType],  # (5)
+    S3BackupDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+```
 
-- `RoleARN`: `str`
-- `ClusterJDBCURL`: `str`
-- `CopyCommand`: [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)
-- `Username`: `str`
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-
-Optional fields:
-
-- `RetryOptions`:
-  [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`:
-  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
-- `S3BackupDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="redshiftdestinationupdatetypedef"></a>
-
+1. See [:material-code-braces: CopyCommandTypeDef](./type_defs.md#copycommandtypedef) 
+2. See [:material-code-braces: RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef) 
+3. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+4. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+5. See [:material-code-brackets: RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype) 
+6. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## RedshiftDestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RedshiftDestinationUpdateTypeDef
+
+def get_value() -> RedshiftDestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RedshiftDestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    ClusterJDBCURL: NotRequired[str],
+    CopyCommand: NotRequired[CopyCommandTypeDef],  # (1)
+    Username: NotRequired[str],
+    Password: NotRequired[str],
+    RetryOptions: NotRequired[RedshiftRetryOptionsTypeDef],  # (2)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (3)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (4)
+    S3BackupMode: NotRequired[RedshiftS3BackupModeType],  # (5)
+    S3BackupUpdate: NotRequired[S3DestinationUpdateTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (7)
+```
 
-- `RoleARN`: `str`
-- `ClusterJDBCURL`: `str`
-- `CopyCommand`: [CopyCommandTypeDef](./type_defs.md#copycommandtypedef)
-- `Username`: `str`
-- `Password`: `str`
-- `RetryOptions`:
-  [RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef)
-- `S3Update`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `S3BackupMode`:
-  [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
-- `S3BackupUpdate`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="redshiftretryoptionstypedef"></a>
-
+1. See [:material-code-braces: CopyCommandTypeDef](./type_defs.md#copycommandtypedef) 
+2. See [:material-code-braces: RedshiftRetryOptionsTypeDef](./type_defs.md#redshiftretryoptionstypedef) 
+3. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+4. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+5. See [:material-code-brackets: RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype) 
+6. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+7. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## RedshiftRetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RedshiftRetryOptionsTypeDef
+
+def get_value() -> RedshiftRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RedshiftRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retryoptionstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import RetryOptionsTypeDef
+
+def get_value() -> RetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="s3destinationconfigurationtypedef"></a>
+```python title="Definition"
+class RetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## S3DestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import S3DestinationConfigurationTypeDef
+
+def get_value() -> S3DestinationConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+        "BucketARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3DestinationConfigurationTypeDef(TypedDict):
+    RoleARN: str,
+    BucketARN: str,
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    BufferingHints: NotRequired[BufferingHintsTypeDef],  # (1)
+    CompressionFormat: NotRequired[CompressionFormatType],  # (2)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="s3destinationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## S3DestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import S3DestinationDescriptionTypeDef
+
+def get_value() -> S3DestinationDescriptionTypeDef:
+    return {
+        "RoleARN": ...,
+        "BucketARN": ...,
+        "BufferingHints": ...,
+        "CompressionFormat": ...,
+        "EncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3DestinationDescriptionTypeDef(TypedDict):
+    RoleARN: str,
+    BucketARN: str,
+    BufferingHints: BufferingHintsTypeDef,  # (1)
+    CompressionFormat: CompressionFormatType,  # (2)
+    EncryptionConfiguration: EncryptionConfigurationTypeDef,  # (3)
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-
-Optional fields:
-
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="s3destinationupdatetypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## S3DestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import S3DestinationUpdateTypeDef
+
+def get_value() -> S3DestinationUpdateTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3DestinationUpdateTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    BucketARN: NotRequired[str],
+    Prefix: NotRequired[str],
+    ErrorOutputPrefix: NotRequired[str],
+    BufferingHints: NotRequired[BufferingHintsTypeDef],  # (1)
+    CompressionFormat: NotRequired[CompressionFormatType],  # (2)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (3)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (4)
+```
 
-- `RoleARN`: `str`
-- `BucketARN`: `str`
-- `Prefix`: `str`
-- `ErrorOutputPrefix`: `str`
-- `BufferingHints`:
-  [BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef)
-- `CompressionFormat`:
-  [CompressionFormatType](./literals.md#compressionformattype)
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="schemaconfigurationtypedef"></a>
-
+1. See [:material-code-braces: BufferingHintsTypeDef](./type_defs.md#bufferinghintstypedef) 
+2. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+3. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+4. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## SchemaConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SchemaConfigurationTypeDef
+
+def get_value() -> SchemaConfigurationTypeDef:
+    return {
+        "RoleARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoleARN`: `str`
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Region`: `str`
-- `VersionId`: `str`
-
-<a id="serializertypedef"></a>
+```python title="Definition"
+class SchemaConfigurationTypeDef(TypedDict):
+    RoleARN: NotRequired[str],
+    CatalogId: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    Region: NotRequired[str],
+    VersionId: NotRequired[str],
+```
 
 ## SerializerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SerializerTypeDef
+
+def get_value() -> SerializerTypeDef:
+    return {
+        "ParquetSerDe": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SerializerTypeDef(TypedDict):
+    ParquetSerDe: NotRequired[ParquetSerDeTypeDef],  # (1)
+    OrcSerDe: NotRequired[OrcSerDeTypeDef],  # (2)
+```
 
-- `ParquetSerDe`: [ParquetSerDeTypeDef](./type_defs.md#parquetserdetypedef)
-- `OrcSerDe`: [OrcSerDeTypeDef](./type_defs.md#orcserdetypedef)
-
-<a id="sourcedescriptiontypedef"></a>
-
+1. See [:material-code-braces: ParquetSerDeTypeDef](./type_defs.md#parquetserdetypedef) 
+2. See [:material-code-braces: OrcSerDeTypeDef](./type_defs.md#orcserdetypedef) 
 ## SourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SourceDescriptionTypeDef
+
+def get_value() -> SourceDescriptionTypeDef:
+    return {
+        "KinesisStreamSourceDescription": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceDescriptionTypeDef(TypedDict):
+    KinesisStreamSourceDescription: NotRequired[KinesisStreamSourceDescriptionTypeDef],  # (1)
+```
 
-- `KinesisStreamSourceDescription`:
-  [KinesisStreamSourceDescriptionTypeDef](./type_defs.md#kinesisstreamsourcedescriptiontypedef)
-
-<a id="splunkdestinationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: KinesisStreamSourceDescriptionTypeDef](./type_defs.md#kinesisstreamsourcedescriptiontypedef) 
 ## SplunkDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SplunkDestinationConfigurationTypeDef
+
+def get_value() -> SplunkDestinationConfigurationTypeDef:
+    return {
+        "HECEndpoint": ...,
+        "HECEndpointType": ...,
+        "HECToken": ...,
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SplunkDestinationConfigurationTypeDef(TypedDict):
+    HECEndpoint: str,
+    HECEndpointType: HECEndpointTypeType,  # (1)
+    HECToken: str,
+    S3Configuration: S3DestinationConfigurationTypeDef,  # (4)
+    HECAcknowledgmentTimeoutInSeconds: NotRequired[int],
+    RetryOptions: NotRequired[SplunkRetryOptionsTypeDef],  # (2)
+    S3BackupMode: NotRequired[SplunkS3BackupModeType],  # (3)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+```
 
-- `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
-- `HECToken`: `str`
-- `S3Configuration`:
-  [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
-
-Optional fields:
-
-- `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`:
-  [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`:
-  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="splunkdestinationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: HECEndpointTypeType](./literals.md#hecendpointtypetype) 
+2. See [:material-code-braces: SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef) 
+3. See [:material-code-brackets: SplunkS3BackupModeType](./literals.md#splunks3backupmodetype) 
+4. See [:material-code-braces: S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## SplunkDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SplunkDestinationDescriptionTypeDef
+
+def get_value() -> SplunkDestinationDescriptionTypeDef:
+    return {
+        "HECEndpoint": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SplunkDestinationDescriptionTypeDef(TypedDict):
+    HECEndpoint: NotRequired[str],
+    HECEndpointType: NotRequired[HECEndpointTypeType],  # (1)
+    HECToken: NotRequired[str],
+    HECAcknowledgmentTimeoutInSeconds: NotRequired[int],
+    RetryOptions: NotRequired[SplunkRetryOptionsTypeDef],  # (2)
+    S3BackupMode: NotRequired[SplunkS3BackupModeType],  # (3)
+    S3DestinationDescription: NotRequired[S3DestinationDescriptionTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+```
 
-- `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
-- `HECToken`: `str`
-- `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`:
-  [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`:
-  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
-- `S3DestinationDescription`:
-  [S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="splunkdestinationupdatetypedef"></a>
-
+1. See [:material-code-brackets: HECEndpointTypeType](./literals.md#hecendpointtypetype) 
+2. See [:material-code-braces: SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef) 
+3. See [:material-code-brackets: SplunkS3BackupModeType](./literals.md#splunks3backupmodetype) 
+4. See [:material-code-braces: S3DestinationDescriptionTypeDef](./type_defs.md#s3destinationdescriptiontypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## SplunkDestinationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SplunkDestinationUpdateTypeDef
+
+def get_value() -> SplunkDestinationUpdateTypeDef:
+    return {
+        "HECEndpoint": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SplunkDestinationUpdateTypeDef(TypedDict):
+    HECEndpoint: NotRequired[str],
+    HECEndpointType: NotRequired[HECEndpointTypeType],  # (1)
+    HECToken: NotRequired[str],
+    HECAcknowledgmentTimeoutInSeconds: NotRequired[int],
+    RetryOptions: NotRequired[SplunkRetryOptionsTypeDef],  # (2)
+    S3BackupMode: NotRequired[SplunkS3BackupModeType],  # (3)
+    S3Update: NotRequired[S3DestinationUpdateTypeDef],  # (4)
+    ProcessingConfiguration: NotRequired[ProcessingConfigurationTypeDef],  # (5)
+    CloudWatchLoggingOptions: NotRequired[CloudWatchLoggingOptionsTypeDef],  # (6)
+```
 
-- `HECEndpoint`: `str`
-- `HECEndpointType`: [HECEndpointTypeType](./literals.md#hecendpointtypetype)
-- `HECToken`: `str`
-- `HECAcknowledgmentTimeoutInSeconds`: `int`
-- `RetryOptions`:
-  [SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef)
-- `S3BackupMode`:
-  [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
-- `S3Update`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `ProcessingConfiguration`:
-  [ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef)
-- `CloudWatchLoggingOptions`:
-  [CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef)
-
-<a id="splunkretryoptionstypedef"></a>
-
+1. See [:material-code-brackets: HECEndpointTypeType](./literals.md#hecendpointtypetype) 
+2. See [:material-code-braces: SplunkRetryOptionsTypeDef](./type_defs.md#splunkretryoptionstypedef) 
+3. See [:material-code-brackets: SplunkS3BackupModeType](./literals.md#splunks3backupmodetype) 
+4. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+5. See [:material-code-braces: ProcessingConfigurationTypeDef](./type_defs.md#processingconfigurationtypedef) 
+6. See [:material-code-braces: CloudWatchLoggingOptionsTypeDef](./type_defs.md#cloudwatchloggingoptionstypedef) 
 ## SplunkRetryOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import SplunkRetryOptionsTypeDef
+
+def get_value() -> SplunkRetryOptionsTypeDef:
+    return {
+        "DurationInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `DurationInSeconds`: `int`
-
-<a id="startdeliverystreamencryptioninputrequesttypedef"></a>
+```python title="Definition"
+class SplunkRetryOptionsTypeDef(TypedDict):
+    DurationInSeconds: NotRequired[int],
+```
 
 ## StartDeliveryStreamEncryptionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import StartDeliveryStreamEncryptionInputRequestTypeDef
+
+def get_value() -> StartDeliveryStreamEncryptionInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDeliveryStreamEncryptionInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    DeliveryStreamEncryptionConfigurationInput: NotRequired[DeliveryStreamEncryptionConfigurationInputTypeDef],  # (1)
+```
 
-- `DeliveryStreamName`: `str`
-
-Optional fields:
-
-- `DeliveryStreamEncryptionConfigurationInput`:
-  [DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef)
-
-<a id="stopdeliverystreamencryptioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeliveryStreamEncryptionConfigurationInputTypeDef](./type_defs.md#deliverystreamencryptionconfigurationinputtypedef) 
 ## StopDeliveryStreamEncryptionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import StopDeliveryStreamEncryptionInputRequestTypeDef
+
+def get_value() -> StopDeliveryStreamEncryptionInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryStreamName`: `str`
-
-<a id="tagdeliverystreaminputrequesttypedef"></a>
+```python title="Definition"
+class StopDeliveryStreamEncryptionInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+```
 
 ## TagDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import TagDeliveryStreamInputRequestTypeDef
+
+def get_value() -> TagDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `DeliveryStreamName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="untagdeliverystreaminputrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## UntagDeliveryStreamInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import UntagDeliveryStreamInputRequestTypeDef
+
+def get_value() -> UntagDeliveryStreamInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryStreamName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedestinationinputrequesttypedef"></a>
+```python title="Definition"
+class UntagDeliveryStreamInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDestinationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import UpdateDestinationInputRequestTypeDef
+
+def get_value() -> UpdateDestinationInputRequestTypeDef:
+    return {
+        "DeliveryStreamName": ...,
+        "CurrentDeliveryStreamVersionId": ...,
+        "DestinationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDestinationInputRequestTypeDef(TypedDict):
+    DeliveryStreamName: str,
+    CurrentDeliveryStreamVersionId: str,
+    DestinationId: str,
+    S3DestinationUpdate: NotRequired[S3DestinationUpdateTypeDef],  # (1)
+    ExtendedS3DestinationUpdate: NotRequired[ExtendedS3DestinationUpdateTypeDef],  # (2)
+    RedshiftDestinationUpdate: NotRequired[RedshiftDestinationUpdateTypeDef],  # (3)
+    ElasticsearchDestinationUpdate: NotRequired[ElasticsearchDestinationUpdateTypeDef],  # (4)
+    AmazonopensearchserviceDestinationUpdate: NotRequired[AmazonopensearchserviceDestinationUpdateTypeDef],  # (5)
+    SplunkDestinationUpdate: NotRequired[SplunkDestinationUpdateTypeDef],  # (6)
+    HttpEndpointDestinationUpdate: NotRequired[HttpEndpointDestinationUpdateTypeDef],  # (7)
+```
 
-- `DeliveryStreamName`: `str`
-- `CurrentDeliveryStreamVersionId`: `str`
-- `DestinationId`: `str`
-
-Optional fields:
-
-- `S3DestinationUpdate`:
-  [S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef)
-- `ExtendedS3DestinationUpdate`:
-  [ExtendedS3DestinationUpdateTypeDef](./type_defs.md#extendeds3destinationupdatetypedef)
-- `RedshiftDestinationUpdate`:
-  [RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef)
-- `ElasticsearchDestinationUpdate`:
-  [ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef)
-- `AmazonopensearchserviceDestinationUpdate`:
-  [AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef)
-- `SplunkDestinationUpdate`:
-  [SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef)
-- `HttpEndpointDestinationUpdate`:
-  [HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef)
-
-<a id="vpcconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: S3DestinationUpdateTypeDef](./type_defs.md#s3destinationupdatetypedef) 
+2. See [:material-code-braces: ExtendedS3DestinationUpdateTypeDef](./type_defs.md#extendeds3destinationupdatetypedef) 
+3. See [:material-code-braces: RedshiftDestinationUpdateTypeDef](./type_defs.md#redshiftdestinationupdatetypedef) 
+4. See [:material-code-braces: ElasticsearchDestinationUpdateTypeDef](./type_defs.md#elasticsearchdestinationupdatetypedef) 
+5. See [:material-code-braces: AmazonopensearchserviceDestinationUpdateTypeDef](./type_defs.md#amazonopensearchservicedestinationupdatetypedef) 
+6. See [:material-code-braces: SplunkDestinationUpdateTypeDef](./type_defs.md#splunkdestinationupdatetypedef) 
+7. See [:material-code-braces: HttpEndpointDestinationUpdateTypeDef](./type_defs.md#httpendpointdestinationupdatetypedef) 
 ## VpcConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import VpcConfigurationDescriptionTypeDef
+
+def get_value() -> VpcConfigurationDescriptionTypeDef:
+    return {
+        "SubnetIds": ...,
+        "RoleARN": ...,
+        "SecurityGroupIds": ...,
+        "VpcId": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetIds`: `List`\[`str`\]
-- `RoleARN`: `str`
-- `SecurityGroupIds`: `List`\[`str`\]
-- `VpcId`: `str`
-
-<a id="vpcconfigurationtypedef"></a>
+```python title="Definition"
+class VpcConfigurationDescriptionTypeDef(TypedDict):
+    SubnetIds: List[str],
+    RoleARN: str,
+    SecurityGroupIds: List[str],
+    VpcId: str,
+```
 
 ## VpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_firehose.type_defs import VpcConfigurationTypeDef
+
+def get_value() -> VpcConfigurationTypeDef:
+    return {
+        "SubnetIds": ...,
+        "RoleARN": ...,
+        "SecurityGroupIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VpcConfigurationTypeDef(TypedDict):
+    SubnetIds: Sequence[str],
+    RoleARN: str,
+    SecurityGroupIds: Sequence[str],
+```
 
-- `SubnetIds`: `Sequence`\[`str`\]
-- `RoleARN`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]

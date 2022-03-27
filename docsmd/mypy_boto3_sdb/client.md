@@ -1,42 +1,18 @@
-<a id="simpledbclient-for-boto3-simpledb-module"></a>
-
-# SimpleDBClient for boto3 SimpleDB module
+# SimpleDBClient
 
 > [Index](../README.md) > [SimpleDB](./README.md) > SimpleDBClient
 
-Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module
-[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
+!!! note ""
 
-- [SimpleDBClient for boto3 SimpleDB module](#simpledbclient-for-boto3-simpledb-module)
-  - [SimpleDBClient](#simpledbclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_delete_attributes](#batch_delete_attributes)
-    - [batch_put_attributes](#batch_put_attributes)
-    - [can_paginate](#can_paginate)
-    - [create_domain](#create_domain)
-    - [delete_attributes](#delete_attributes)
-    - [delete_domain](#delete_domain)
-    - [domain_metadata](#domain_metadata)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_attributes](#get_attributes)
-    - [list_domains](#list_domains)
-    - [put_attributes](#put_attributes)
-    - [select](#select)
-    - [get_paginator](#get_paginator)
-
-<a id="simpledbclient"></a>
+    Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+    type annotations stubs module [mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ## SimpleDBClient
 
-Type annotations for `boto3.client("sdb")`
+Type annotations and code completion for `#!python boto3.client("sdb")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sdb.client import SimpleDBClient
 
@@ -44,322 +20,409 @@ def get_sdb_client() -> SimpleDBClient:
     return Session().client("sdb")
 ```
 
-Boto3 documentation:
-[SimpleDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sdb").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sdb")
+
+try:
+    do_something(client)
+except (
+    client.AttributeDoesNotExist,
+    client.ClientError,
+    client.DuplicateItemName,
+    client.InvalidNextToken,
+    client.InvalidNumberPredicates,
+    client.InvalidNumberValueTests,
+    client.InvalidParameterValue,
+    client.InvalidQueryExpression,
+    client.MissingParameter,
+    client.NoSuchDomain,
+    client.NumberDomainAttributesExceeded,
+    client.NumberDomainBytesExceeded,
+    client.NumberDomainsExceeded,
+    client.NumberItemAttributesExceeded,
+    client.NumberSubmittedAttributesExceeded,
+    client.NumberSubmittedItemsExceeded,
+    client.RequestTimeout,
+    client.TooManyRequestedAttributes,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sdb.client import Exceptions
 
 def handle_error(exc: Exceptions.AttributeDoesNotExist) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AttributeDoesNotExist`
-- `Exceptions.ClientError`
-- `Exceptions.DuplicateItemName`
-- `Exceptions.InvalidNextToken`
-- `Exceptions.InvalidNumberPredicates`
-- `Exceptions.InvalidNumberValueTests`
-- `Exceptions.InvalidParameterValue`
-- `Exceptions.InvalidQueryExpression`
-- `Exceptions.MissingParameter`
-- `Exceptions.NoSuchDomain`
-- `Exceptions.NumberDomainAttributesExceeded`
-- `Exceptions.NumberDomainBytesExceeded`
-- `Exceptions.NumberDomainsExceeded`
-- `Exceptions.NumberItemAttributesExceeded`
-- `Exceptions.NumberSubmittedAttributesExceeded`
-- `Exceptions.NumberSubmittedItemsExceeded`
-- `Exceptions.RequestTimeout`
-- `Exceptions.TooManyRequestedAttributes`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SimpleDBClient exceptions.
-
-Type annotations for `boto3.client("sdb").exceptions` method.
-
-Boto3 documentation:
-[SimpleDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_delete\_attributes"></a>
-
-### batch_delete_attributes
+### batch\_delete\_attributes
 
 Performs multiple DeleteAttributes operations in a single call, which reduces
 round trips and latencies.
 
-Type annotations for `boto3.client("sdb").batch_delete_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sdb").batch_delete_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
 
-Boto3 documentation:
-[SimpleDB.Client.batch_delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_delete_attributes)
+```python title="Method definition"
+def batch_delete_attributes(
+    self,
+    *,
+    DomainName: str,
+    Items: Sequence[DeletableItemTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteAttributesRequestRequestTypeDef](./type_defs.md#batchdeleteattributesrequestrequesttypedef).
+1. See [:material-code-braces: DeletableItemTypeDef](./type_defs.md#deletableitemtypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Items`:
-  `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteAttributesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Items": ...,
+}
 
-<a id="batch\_put\_attributes"></a>
+parent.batch_delete_attributes(**kwargs)
+```
 
-### batch_put_attributes
+1. See [:material-code-braces: BatchDeleteAttributesRequestRequestTypeDef](./type_defs.md#batchdeleteattributesrequestrequesttypedef) 
+
+### batch\_put\_attributes
 
 The `BatchPutAttributes` operation creates or replaces attributes within one or
 more items.
 
-Type annotations for `boto3.client("sdb").batch_put_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sdb").batch_put_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
 
-Boto3 documentation:
-[SimpleDB.Client.batch_put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.batch_put_attributes)
+```python title="Method definition"
+def batch_put_attributes(
+    self,
+    *,
+    DomainName: str,
+    Items: Sequence[ReplaceableItemTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[BatchPutAttributesRequestRequestTypeDef](./type_defs.md#batchputattributesrequestrequesttypedef).
+1. See [:material-code-braces: ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `Items`:
-  `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchPutAttributesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "Items": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.batch_put_attributes(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: BatchPutAttributesRequestRequestTypeDef](./type_defs.md#batchputattributesrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sdb").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sdb").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate)
 
-Boto3 documentation:
-[SimpleDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_domain"></a>
-
-### create_domain
+### create\_domain
 
 The `CreateDomain` operation creates a new domain.
 
-Type annotations for `boto3.client("sdb").create_domain` method.
+Type annotations and code completion for `#!python boto3.client("sdb").create_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
 
-Boto3 documentation:
-[SimpleDB.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.create_domain)
+```python title="Method definition"
+def create_domain(
+    self,
+    *,
+    DomainName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-<a id="delete\_attributes"></a>
+parent.create_domain(**kwargs)
+```
 
-### delete_attributes
+1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
+
+### delete\_attributes
 
 Deletes one or more attributes associated with an item.
 
-Type annotations for `boto3.client("sdb").delete_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sdb").delete_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
 
-Boto3 documentation:
-[SimpleDB.Client.delete_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_attributes)
+```python title="Method definition"
+def delete_attributes(
+    self,
+    *,
+    DomainName: str,
+    ItemName: str,
+    Attributes: Sequence[AttributeTypeDef] = ...,  # (1)
+    Expected: UpdateConditionTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ItemName`: `str` *(required)*
-- `Attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteAttributesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ItemName": ...,
+}
 
-<a id="delete\_domain"></a>
+parent.delete_attributes(**kwargs)
+```
 
-### delete_domain
+1. See [:material-code-braces: DeleteAttributesRequestRequestTypeDef](./type_defs.md#deleteattributesrequestrequesttypedef) 
+
+### delete\_domain
 
 The `DeleteDomain` operation deletes a domain.
 
-Type annotations for `boto3.client("sdb").delete_domain` method.
+Type annotations and code completion for `#!python boto3.client("sdb").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
 
-Boto3 documentation:
-[SimpleDB.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.delete_domain)
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    DomainName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-<a id="domain\_metadata"></a>
+parent.delete_domain(**kwargs)
+```
 
-### domain_metadata
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
 
-Returns information about the domain, including when the domain was created,
-the number of items and attributes in the domain, and the size of the attribute
+### domain\_metadata
+
+Returns information about the domain, including when the domain was created, the
+number of items and attributes in the domain, and the size of the attribute
 names and values.
 
-Type annotations for `boto3.client("sdb").domain_metadata` method.
+Type annotations and code completion for `#!python boto3.client("sdb").domain_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
 
-Boto3 documentation:
-[SimpleDB.Client.domain_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.domain_metadata)
+```python title="Method definition"
+def domain_metadata(
+    self,
+    *,
+    DomainName: str,
+) -> DomainMetadataResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DomainMetadataRequestRequestTypeDef](./type_defs.md#domainmetadatarequestrequesttypedef).
+1. See [:material-code-braces: DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DomainMetadataRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef).
+parent.domain_metadata(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DomainMetadataRequestRequestTypeDef](./type_defs.md#domainmetadatarequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sdb").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sdb").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SimpleDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_attributes"></a>
-
-### get_attributes
+### get\_attributes
 
 Returns all of the attributes associated with the specified item.
 
-Type annotations for `boto3.client("sdb").get_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sdb").get_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
 
-Boto3 documentation:
-[SimpleDB.Client.get_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.get_attributes)
+```python title="Method definition"
+def get_attributes(
+    self,
+    *,
+    DomainName: str,
+    ItemName: str,
+    AttributeNames: Sequence[str] = ...,
+    ConsistentRead: bool = ...,
+) -> GetAttributesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAttributesRequestRequestTypeDef](./type_defs.md#getattributesrequestrequesttypedef).
+1. See [:material-code-braces: GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ItemName`: `str` *(required)*
-- `AttributeNames`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetAttributesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ItemName": ...,
+}
 
-Returns
-[GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef).
+parent.get_attributes(**kwargs)
+```
 
-<a id="list\_domains"></a>
+1. See [:material-code-braces: GetAttributesRequestRequestTypeDef](./type_defs.md#getattributesrequestrequesttypedef) 
 
-### list_domains
+### list\_domains
 
-The `ListDomains` operation lists all domains associated with the Access Key
-ID.
+The `ListDomains` operation lists all domains associated with the Access Key ID.
 
-Type annotations for `boto3.client("sdb").list_domains` method.
+Type annotations and code completion for `#!python boto3.client("sdb").list_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
 
-Boto3 documentation:
-[SimpleDB.Client.list_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.list_domains)
+```python title="Method definition"
+def list_domains(
+    self,
+    *,
+    MaxNumberOfDomains: int = ...,
+    NextToken: str = ...,
+) -> ListDomainsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef).
+1. See [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxNumberOfDomains`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDomainsRequestRequestTypeDef = {  # (1)
+    "MaxNumberOfDomains": ...,
+}
 
-Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
+parent.list_domains(**kwargs)
+```
 
-<a id="put\_attributes"></a>
+1. See [:material-code-braces: ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef) 
 
-### put_attributes
+### put\_attributes
 
 The PutAttributes operation creates or replaces attributes in an item.
 
-Type annotations for `boto3.client("sdb").put_attributes` method.
+Type annotations and code completion for `#!python boto3.client("sdb").put_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
 
-Boto3 documentation:
-[SimpleDB.Client.put_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.put_attributes)
+```python title="Method definition"
+def put_attributes(
+    self,
+    *,
+    DomainName: str,
+    ItemName: str,
+    Attributes: Sequence[ReplaceableAttributeTypeDef],  # (1)
+    Expected: UpdateConditionTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutAttributesRequestRequestTypeDef](./type_defs.md#putattributesrequestrequesttypedef).
+1. See [:material-code-braces: ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef) 
+2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ItemName`: `str` *(required)*
-- `Attributes`:
-  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
-  *(required)*
-- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
+```python title="Usage example with kwargs"
+kwargs: PutAttributesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "ItemName": ...,
+    "Attributes": ...,
+}
 
-<a id="select"></a>
+parent.put_attributes(**kwargs)
+```
+
+1. See [:material-code-braces: PutAttributesRequestRequestTypeDef](./type_defs.md#putattributesrequestrequesttypedef) 
 
 ### select
 
 The `Select` operation returns a set of attributes for `ItemNames` that match
 the select expression.
 
-Type annotations for `boto3.client("sdb").select` method.
+Type annotations and code completion for `#!python boto3.client("sdb").select` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
 
-Boto3 documentation:
-[SimpleDB.Client.select](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client.select)
+```python title="Method definition"
+def select(
+    self,
+    *,
+    SelectExpression: str,
+    NextToken: str = ...,
+    ConsistentRead: bool = ...,
+) -> SelectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SelectRequestRequestTypeDef](./type_defs.md#selectrequestrequesttypedef).
+1. See [:material-code-braces: SelectResultTypeDef](./type_defs.md#selectresulttypedef) 
 
-Keyword-only arguments:
 
-- `SelectExpression`: `str` *(required)*
-- `NextToken`: `str`
-- `ConsistentRead`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SelectRequestRequestTypeDef = {  # (1)
+    "SelectExpression": ...,
+}
 
-Returns [SelectResultTypeDef](./type_defs.md#selectresulttypedef).
+parent.select(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: SelectRequestRequestTypeDef](./type_defs.md#selectrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sdb").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("sdb").get_paginator` method with overloads.
 
-- `client.get_paginator("list_domains")` ->
-  [ListDomainsPaginator](./paginators.md#listdomainspaginator)
-- `client.get_paginator("select")` ->
-  [SelectPaginator](./paginators.md#selectpaginator)
+- `client.get_paginator("list_domains")` -> [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+- `client.get_paginator("select")` -> [SelectPaginator](./paginators.md#selectpaginator)
+
+
+

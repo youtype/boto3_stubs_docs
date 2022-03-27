@@ -1,300 +1,369 @@
-<a id="typed-dictionaries-for-boto3-iotsecuretunneling-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 IoTSecureTunneling module
+> [Index](../README.md) > [IoTSecureTunneling](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [IoTSecureTunneling](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
-type annotations stubs module
-[mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
-
-- [Typed dictionaries for boto3 IoTSecureTunneling module](#typed-dictionaries-for-boto3-iotsecuretunneling-module)
-  - [CloseTunnelRequestRequestTypeDef](#closetunnelrequestrequesttypedef)
-  - [ConnectionStateTypeDef](#connectionstatetypedef)
-  - [DescribeTunnelRequestRequestTypeDef](#describetunnelrequestrequesttypedef)
-  - [DescribeTunnelResponseTypeDef](#describetunnelresponsetypedef)
-  - [DestinationConfigTypeDef](#destinationconfigtypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTunnelsRequestRequestTypeDef](#listtunnelsrequestrequesttypedef)
-  - [ListTunnelsResponseTypeDef](#listtunnelsresponsetypedef)
-  - [OpenTunnelRequestRequestTypeDef](#opentunnelrequestrequesttypedef)
-  - [OpenTunnelResponseTypeDef](#opentunnelresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TimeoutConfigTypeDef](#timeoutconfigtypedef)
-  - [TunnelSummaryTypeDef](#tunnelsummarytypedef)
-  - [TunnelTypeDef](#tunneltypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-
-<a id="closetunnelrequestrequesttypedef"></a>
+    Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+    type annotations stubs module [mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 ## CloseTunnelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import CloseTunnelRequestRequestTypeDef
+
+def get_value() -> CloseTunnelRequestRequestTypeDef:
+    return {
+        "tunnelId": ...,
+    }
 ```
 
-Required fields:
-
-- `tunnelId`: `str`
-
-Optional fields:
-
-- `delete`: `bool`
-
-<a id="connectionstatetypedef"></a>
+```python title="Definition"
+class CloseTunnelRequestRequestTypeDef(TypedDict):
+    tunnelId: str,
+    delete: NotRequired[bool],
+```
 
 ## ConnectionStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ConnectionStateTypeDef
+
+def get_value() -> ConnectionStateTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionStateTypeDef(TypedDict):
+    status: NotRequired[ConnectionStatusType],  # (1)
+    lastUpdatedAt: NotRequired[datetime],
+```
 
-- `status`: [ConnectionStatusType](./literals.md#connectionstatustype)
-- `lastUpdatedAt`: `datetime`
-
-<a id="describetunnelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
 ## DescribeTunnelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelRequestRequestTypeDef
+
+def get_value() -> DescribeTunnelRequestRequestTypeDef:
+    return {
+        "tunnelId": ...,
+    }
 ```
 
-Required fields:
-
-- `tunnelId`: `str`
-
-<a id="describetunnelresponsetypedef"></a>
+```python title="Definition"
+class DescribeTunnelRequestRequestTypeDef(TypedDict):
+    tunnelId: str,
+```
 
 ## DescribeTunnelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelResponseTypeDef
+
+def get_value() -> DescribeTunnelResponseTypeDef:
+    return {
+        "tunnel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTunnelResponseTypeDef(TypedDict):
+    tunnel: TunnelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tunnel`: [TunnelTypeDef](./type_defs.md#tunneltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationconfigtypedef"></a>
-
+1. See [:material-code-braces: TunnelTypeDef](./type_defs.md#tunneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import DestinationConfigTypeDef
+
+def get_value() -> DestinationConfigTypeDef:
+    return {
+        "services": ...,
+    }
 ```
 
-Required fields:
-
-- `services`: `List`\[`str`\]
-
-Optional fields:
-
-- `thingName`: `str`
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class DestinationConfigTypeDef(TypedDict):
+    services: List[str],
+    thingName: NotRequired[str],
+```
 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtunnelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTunnelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsRequestRequestTypeDef
+
+def get_value() -> ListTunnelsRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingName`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtunnelsresponsetypedef"></a>
+```python title="Definition"
+class ListTunnelsRequestRequestTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTunnelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ListTunnelsResponseTypeDef
+
+def get_value() -> ListTunnelsResponseTypeDef:
+    return {
+        "tunnelSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTunnelsResponseTypeDef(TypedDict):
+    tunnelSummaries: List[TunnelSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tunnelSummaries`:
-  `List`\[[TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="opentunnelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TunnelSummaryTypeDef](./type_defs.md#tunnelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OpenTunnelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelRequestRequestTypeDef
+
+def get_value() -> OpenTunnelRequestRequestTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpenTunnelRequestRequestTypeDef(TypedDict):
+    description: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    destinationConfig: NotRequired[DestinationConfigTypeDef],  # (2)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (3)
+```
 
-- `description`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `destinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-
-<a id="opentunnelresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+3. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
 ## OpenTunnelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import OpenTunnelResponseTypeDef
+
+def get_value() -> OpenTunnelResponseTypeDef:
+    return {
+        "tunnelId": ...,
+        "tunnelArn": ...,
+        "sourceAccessToken": ...,
+        "destinationAccessToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OpenTunnelResponseTypeDef(TypedDict):
+    tunnelId: str,
+    tunnelArn: str,
+    sourceAccessToken: str,
+    destinationAccessToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tunnelId`: `str`
-- `tunnelArn`: `str`
-- `sourceAccessToken`: `str`
-- `destinationAccessToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="timeoutconfigtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## TimeoutConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import TimeoutConfigTypeDef
+
+def get_value() -> TimeoutConfigTypeDef:
+    return {
+        "maxLifetimeTimeoutMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxLifetimeTimeoutMinutes`: `int`
-
-<a id="tunnelsummarytypedef"></a>
+```python title="Definition"
+class TimeoutConfigTypeDef(TypedDict):
+    maxLifetimeTimeoutMinutes: NotRequired[int],
+```
 
 ## TunnelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import TunnelSummaryTypeDef
+
+def get_value() -> TunnelSummaryTypeDef:
+    return {
+        "tunnelId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TunnelSummaryTypeDef(TypedDict):
+    tunnelId: NotRequired[str],
+    tunnelArn: NotRequired[str],
+    status: NotRequired[TunnelStatusType],  # (1)
+    description: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+```
 
-- `tunnelId`: `str`
-- `tunnelArn`: `str`
-- `status`: [TunnelStatusType](./literals.md#tunnelstatustype)
-- `description`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-
-<a id="tunneltypedef"></a>
-
+1. See [:material-code-brackets: TunnelStatusType](./literals.md#tunnelstatustype) 
 ## TunnelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import TunnelTypeDef
+
+def get_value() -> TunnelTypeDef:
+    return {
+        "tunnelId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TunnelTypeDef(TypedDict):
+    tunnelId: NotRequired[str],
+    tunnelArn: NotRequired[str],
+    status: NotRequired[TunnelStatusType],  # (1)
+    sourceConnectionState: NotRequired[ConnectionStateTypeDef],  # (2)
+    destinationConnectionState: NotRequired[ConnectionStateTypeDef],  # (2)
+    description: NotRequired[str],
+    destinationConfig: NotRequired[DestinationConfigTypeDef],  # (4)
+    timeoutConfig: NotRequired[TimeoutConfigTypeDef],  # (5)
+    tags: NotRequired[List[TagTypeDef]],  # (6)
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+```
 
-- `tunnelId`: `str`
-- `tunnelArn`: `str`
-- `status`: [TunnelStatusType](./literals.md#tunnelstatustype)
-- `sourceConnectionState`:
-  [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
-- `destinationConnectionState`:
-  [ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef)
-- `description`: `str`
-- `destinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TunnelStatusType](./literals.md#tunnelstatustype) 
+2. See [:material-code-braces: ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef) 
+3. See [:material-code-braces: ConnectionStateTypeDef](./type_defs.md#connectionstatetypedef) 
+4. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iotsecuretunneling.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]

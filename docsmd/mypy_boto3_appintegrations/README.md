@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-appintegrationsservice-module"></a>
-
-# Type annotations for boto3 AppIntegrationsService module
+#  AppIntegrationsService module
 
 > [Index](../README.md) > AppIntegrationsService
 
-Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
-type annotations stubs module
-[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+!!! note ""
 
-- [Type annotations for boto3 AppIntegrationsService module](#type-annotations-for-boto3-appintegrationsservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppIntegrationsServiceClient](#appintegrationsserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+    type annotations stubs module [mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppIntegrationsService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[appintegrations]'
 python -m pip install mypy-boto3-appintegrations
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,90 +42,62 @@ python -m pip install mypy-boto3-appintegrations
 python -m pip uninstall -y mypy-boto3-appintegrations
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="appintegrationsserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppIntegrationsServiceClient
 
-Type annotations for `boto3.client("appintegrations")` as
-[AppIntegrationsServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("appintegrations")` as [AppIntegrationsServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_appintegrations.client import AppIntegrationsServiceClient
+
+def get_client() -> AppIntegrationsServiceClient:
+    return Session().cleint("appintegrations")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_data_integration](./client.md#create_data_integration)
-- [create_event_integration](./client.md#create_event_integration)
-- [delete_data_integration](./client.md#delete_data_integration)
-- [delete_event_integration](./client.md#delete_event_integration)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_data_integration](./client.md#get_data_integration)
-- [get_event_integration](./client.md#get_event_integration)
-- [list_data_integration_associations](./client.md#list_data_integration_associations)
-- [list_data_integrations](./client.md#list_data_integrations)
-- [list_event_integration_associations](./client.md#list_event_integration_associations)
-- [list_event_integrations](./client.md#list_event_integrations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_data_integration](./client.md#update_data_integration)
-- [update_event_integration](./client.md#update_event_integration)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-AppIntegrationsServiceClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- DuplicateResourceException
-- InternalServiceError
-- InvalidRequestException
-- ResourceNotFoundException
-- ResourceQuotaExceededException
-- ThrottlingException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appintegrations.literals import AppIntegrationsServiceServiceName
 
-```python
-from mypy_boto3_appintegrations.literals import AppIntegrationsServiceServiceName, ...
+def get_value() -> AppIntegrationsServiceServiceName:
+    return "appintegrations"
 ```
 
 - [AppIntegrationsServiceServiceName](./literals.md#appintegrationsserviceservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestRequestTypeDef
 
-```python
-from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestRequestTypeDef, ...
+def get_value() -> CreateDataIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [CreateDataIntegrationRequestRequestTypeDef](./type_defs.md#createdataintegrationrequestrequesttypedef)
@@ -180,3 +131,4 @@ from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestReq
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDataIntegrationRequestRequestTypeDef](./type_defs.md#updatedataintegrationrequestrequesttypedef)
 - [UpdateEventIntegrationRequestRequestTypeDef](./type_defs.md#updateeventintegrationrequestrequesttypedef)
+

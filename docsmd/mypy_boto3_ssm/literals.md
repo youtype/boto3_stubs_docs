@@ -1,2441 +1,2609 @@
-<a id="literals-for-boto3-ssm-module"></a>
-
-# Literals for boto3 SSM module
+# Literals
 
 > [Index](../README.md) > [SSM](./README.md) > Literals
 
-Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module
-[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
+!!! note ""
 
-- [Literals for boto3 SSM module](#literals-for-boto3-ssm-module)
-  - [AssociationComplianceSeverityType](#associationcomplianceseveritytype)
-  - [AssociationExecutionFilterKeyType](#associationexecutionfilterkeytype)
-  - [AssociationExecutionTargetsFilterKeyType](#associationexecutiontargetsfilterkeytype)
-  - [AssociationFilterKeyType](#associationfilterkeytype)
-  - [AssociationFilterOperatorTypeType](#associationfilteroperatortypetype)
-  - [AssociationStatusNameType](#associationstatusnametype)
-  - [AssociationSyncComplianceType](#associationsynccompliancetype)
-  - [AttachmentHashTypeType](#attachmenthashtypetype)
-  - [AttachmentsSourceKeyType](#attachmentssourcekeytype)
-  - [AutomationExecutionFilterKeyType](#automationexecutionfilterkeytype)
-  - [AutomationExecutionStatusType](#automationexecutionstatustype)
-  - [AutomationSubtypeType](#automationsubtypetype)
-  - [AutomationTypeType](#automationtypetype)
-  - [CalendarStateType](#calendarstatetype)
-  - [CommandExecutedWaiterName](#commandexecutedwaitername)
-  - [CommandFilterKeyType](#commandfilterkeytype)
-  - [CommandInvocationStatusType](#commandinvocationstatustype)
-  - [CommandPluginStatusType](#commandpluginstatustype)
-  - [CommandStatusType](#commandstatustype)
-  - [ComplianceQueryOperatorTypeType](#compliancequeryoperatortypetype)
-  - [ComplianceSeverityType](#complianceseveritytype)
-  - [ComplianceStatusType](#compliancestatustype)
-  - [ComplianceUploadTypeType](#complianceuploadtypetype)
-  - [ConnectionStatusType](#connectionstatustype)
-  - [DescribeActivationsFilterKeysType](#describeactivationsfilterkeystype)
-  - [DescribeActivationsPaginatorName](#describeactivationspaginatorname)
-  - [DescribeAssociationExecutionTargetsPaginatorName](#describeassociationexecutiontargetspaginatorname)
-  - [DescribeAssociationExecutionsPaginatorName](#describeassociationexecutionspaginatorname)
-  - [DescribeAutomationExecutionsPaginatorName](#describeautomationexecutionspaginatorname)
-  - [DescribeAutomationStepExecutionsPaginatorName](#describeautomationstepexecutionspaginatorname)
-  - [DescribeAvailablePatchesPaginatorName](#describeavailablepatchespaginatorname)
-  - [DescribeEffectiveInstanceAssociationsPaginatorName](#describeeffectiveinstanceassociationspaginatorname)
-  - [DescribeEffectivePatchesForPatchBaselinePaginatorName](#describeeffectivepatchesforpatchbaselinepaginatorname)
-  - [DescribeInstanceAssociationsStatusPaginatorName](#describeinstanceassociationsstatuspaginatorname)
-  - [DescribeInstanceInformationPaginatorName](#describeinstanceinformationpaginatorname)
-  - [DescribeInstancePatchStatesForPatchGroupPaginatorName](#describeinstancepatchstatesforpatchgrouppaginatorname)
-  - [DescribeInstancePatchStatesPaginatorName](#describeinstancepatchstatespaginatorname)
-  - [DescribeInstancePatchesPaginatorName](#describeinstancepatchespaginatorname)
-  - [DescribeInventoryDeletionsPaginatorName](#describeinventorydeletionspaginatorname)
-  - [DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName](#describemaintenancewindowexecutiontaskinvocationspaginatorname)
-  - [DescribeMaintenanceWindowExecutionTasksPaginatorName](#describemaintenancewindowexecutiontaskspaginatorname)
-  - [DescribeMaintenanceWindowExecutionsPaginatorName](#describemaintenancewindowexecutionspaginatorname)
-  - [DescribeMaintenanceWindowSchedulePaginatorName](#describemaintenancewindowschedulepaginatorname)
-  - [DescribeMaintenanceWindowTargetsPaginatorName](#describemaintenancewindowtargetspaginatorname)
-  - [DescribeMaintenanceWindowTasksPaginatorName](#describemaintenancewindowtaskspaginatorname)
-  - [DescribeMaintenanceWindowsForTargetPaginatorName](#describemaintenancewindowsfortargetpaginatorname)
-  - [DescribeMaintenanceWindowsPaginatorName](#describemaintenancewindowspaginatorname)
-  - [DescribeOpsItemsPaginatorName](#describeopsitemspaginatorname)
-  - [DescribeParametersPaginatorName](#describeparameterspaginatorname)
-  - [DescribePatchBaselinesPaginatorName](#describepatchbaselinespaginatorname)
-  - [DescribePatchGroupsPaginatorName](#describepatchgroupspaginatorname)
-  - [DescribePatchPropertiesPaginatorName](#describepatchpropertiespaginatorname)
-  - [DescribeSessionsPaginatorName](#describesessionspaginatorname)
-  - [DocumentFilterKeyType](#documentfilterkeytype)
-  - [DocumentFormatType](#documentformattype)
-  - [DocumentHashTypeType](#documenthashtypetype)
-  - [DocumentMetadataEnumType](#documentmetadataenumtype)
-  - [DocumentParameterTypeType](#documentparametertypetype)
-  - [DocumentPermissionTypeType](#documentpermissiontypetype)
-  - [DocumentReviewActionType](#documentreviewactiontype)
-  - [DocumentReviewCommentTypeType](#documentreviewcommenttypetype)
-  - [DocumentStatusType](#documentstatustype)
-  - [DocumentTypeType](#documenttypetype)
-  - [ExecutionModeType](#executionmodetype)
-  - [FaultType](#faulttype)
-  - [GetInventoryPaginatorName](#getinventorypaginatorname)
-  - [GetInventorySchemaPaginatorName](#getinventoryschemapaginatorname)
-  - [GetOpsSummaryPaginatorName](#getopssummarypaginatorname)
-  - [GetParameterHistoryPaginatorName](#getparameterhistorypaginatorname)
-  - [GetParametersByPathPaginatorName](#getparametersbypathpaginatorname)
-  - [InstanceInformationFilterKeyType](#instanceinformationfilterkeytype)
-  - [InstancePatchStateOperatorTypeType](#instancepatchstateoperatortypetype)
-  - [InventoryAttributeDataTypeType](#inventoryattributedatatypetype)
-  - [InventoryDeletionStatusType](#inventorydeletionstatustype)
-  - [InventoryQueryOperatorTypeType](#inventoryqueryoperatortypetype)
-  - [InventorySchemaDeleteOptionType](#inventoryschemadeleteoptiontype)
-  - [LastResourceDataSyncStatusType](#lastresourcedatasyncstatustype)
-  - [ListAssociationVersionsPaginatorName](#listassociationversionspaginatorname)
-  - [ListAssociationsPaginatorName](#listassociationspaginatorname)
-  - [ListCommandInvocationsPaginatorName](#listcommandinvocationspaginatorname)
-  - [ListCommandsPaginatorName](#listcommandspaginatorname)
-  - [ListComplianceItemsPaginatorName](#listcomplianceitemspaginatorname)
-  - [ListComplianceSummariesPaginatorName](#listcompliancesummariespaginatorname)
-  - [ListDocumentVersionsPaginatorName](#listdocumentversionspaginatorname)
-  - [ListDocumentsPaginatorName](#listdocumentspaginatorname)
-  - [ListOpsItemEventsPaginatorName](#listopsitemeventspaginatorname)
-  - [ListOpsItemRelatedItemsPaginatorName](#listopsitemrelateditemspaginatorname)
-  - [ListOpsMetadataPaginatorName](#listopsmetadatapaginatorname)
-  - [ListResourceComplianceSummariesPaginatorName](#listresourcecompliancesummariespaginatorname)
-  - [ListResourceDataSyncPaginatorName](#listresourcedatasyncpaginatorname)
-  - [MaintenanceWindowExecutionStatusType](#maintenancewindowexecutionstatustype)
-  - [MaintenanceWindowResourceTypeType](#maintenancewindowresourcetypetype)
-  - [MaintenanceWindowTaskCutoffBehaviorType](#maintenancewindowtaskcutoffbehaviortype)
-  - [MaintenanceWindowTaskTypeType](#maintenancewindowtasktypetype)
-  - [NotificationEventType](#notificationeventtype)
-  - [NotificationTypeType](#notificationtypetype)
-  - [OperatingSystemType](#operatingsystemtype)
-  - [OpsFilterOperatorTypeType](#opsfilteroperatortypetype)
-  - [OpsItemDataTypeType](#opsitemdatatypetype)
-  - [OpsItemEventFilterKeyType](#opsitemeventfilterkeytype)
-  - [OpsItemEventFilterOperatorType](#opsitemeventfilteroperatortype)
-  - [OpsItemFilterKeyType](#opsitemfilterkeytype)
-  - [OpsItemFilterOperatorType](#opsitemfilteroperatortype)
-  - [OpsItemRelatedItemsFilterKeyType](#opsitemrelateditemsfilterkeytype)
-  - [OpsItemRelatedItemsFilterOperatorType](#opsitemrelateditemsfilteroperatortype)
-  - [OpsItemStatusType](#opsitemstatustype)
-  - [ParameterTierType](#parametertiertype)
-  - [ParameterTypeType](#parametertypetype)
-  - [ParametersFilterKeyType](#parametersfilterkeytype)
-  - [PatchActionType](#patchactiontype)
-  - [PatchComplianceDataStateType](#patchcompliancedatastatetype)
-  - [PatchComplianceLevelType](#patchcomplianceleveltype)
-  - [PatchDeploymentStatusType](#patchdeploymentstatustype)
-  - [PatchFilterKeyType](#patchfilterkeytype)
-  - [PatchOperationTypeType](#patchoperationtypetype)
-  - [PatchPropertyType](#patchpropertytype)
-  - [PatchSetType](#patchsettype)
-  - [PingStatusType](#pingstatustype)
-  - [PlatformTypeType](#platformtypetype)
-  - [RebootOptionType](#rebootoptiontype)
-  - [ResourceDataSyncS3FormatType](#resourcedatasyncs3formattype)
-  - [ResourceTypeForTaggingType](#resourcetypefortaggingtype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ReviewStatusType](#reviewstatustype)
-  - [SessionFilterKeyType](#sessionfilterkeytype)
-  - [SessionStateType](#sessionstatetype)
-  - [SessionStatusType](#sessionstatustype)
-  - [SignalTypeType](#signaltypetype)
-  - [SourceTypeType](#sourcetypetype)
-  - [StepExecutionFilterKeyType](#stepexecutionfilterkeytype)
-  - [StopTypeType](#stoptypetype)
-  - [SSMServiceName](#ssmservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="associationcomplianceseveritytype"></a>
+    Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+    type annotations stubs module [mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ## AssociationComplianceSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationComplianceSeverityType
+
+def get_value() -> AssociationComplianceSeverityType:
+    return "CRITICAL"
 ```
 
-Values:
-
-- `CRITICAL`
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-- `UNSPECIFIED`
-
-<a id="associationexecutionfilterkeytype"></a>
-
+```python title="Definition"
+AssociationComplianceSeverityType = Literal[
+    "CRITICAL",
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "UNSPECIFIED",
+]
+```
 ## AssociationExecutionFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationExecutionFilterKeyType
+
+def get_value() -> AssociationExecutionFilterKeyType:
+    return "CreatedTime"
 ```
 
-Values:
-
-- `CreatedTime`
-- `ExecutionId`
-- `Status`
-
-<a id="associationexecutiontargetsfilterkeytype"></a>
-
+```python title="Definition"
+AssociationExecutionFilterKeyType = Literal[
+    "CreatedTime",
+    "ExecutionId",
+    "Status",
+]
+```
 ## AssociationExecutionTargetsFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationExecutionTargetsFilterKeyType
+
+def get_value() -> AssociationExecutionTargetsFilterKeyType:
+    return "ResourceId"
 ```
 
-Values:
-
-- `ResourceId`
-- `ResourceType`
-- `Status`
-
-<a id="associationfilterkeytype"></a>
-
+```python title="Definition"
+AssociationExecutionTargetsFilterKeyType = Literal[
+    "ResourceId",
+    "ResourceType",
+    "Status",
+]
+```
 ## AssociationFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationFilterKeyType
+
+def get_value() -> AssociationFilterKeyType:
+    return "AssociationId"
 ```
 
-Values:
-
-- `AssociationId`
-- `AssociationName`
-- `AssociationStatusName`
-- `InstanceId`
-- `LastExecutedAfter`
-- `LastExecutedBefore`
-- `Name`
-- `ResourceGroupName`
-
-<a id="associationfilteroperatortypetype"></a>
-
+```python title="Definition"
+AssociationFilterKeyType = Literal[
+    "AssociationId",
+    "AssociationName",
+    "AssociationStatusName",
+    "InstanceId",
+    "LastExecutedAfter",
+    "LastExecutedBefore",
+    "Name",
+    "ResourceGroupName",
+]
+```
 ## AssociationFilterOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationFilterOperatorTypeType
+
+def get_value() -> AssociationFilterOperatorTypeType:
+    return "EQUAL"
 ```
 
-Values:
-
-- `EQUAL`
-- `GREATER_THAN`
-- `LESS_THAN`
-
-<a id="associationstatusnametype"></a>
-
+```python title="Definition"
+AssociationFilterOperatorTypeType = Literal[
+    "EQUAL",
+    "GREATER_THAN",
+    "LESS_THAN",
+]
+```
 ## AssociationStatusNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationStatusNameType
+
+def get_value() -> AssociationStatusNameType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `Pending`
-- `Success`
-
-<a id="associationsynccompliancetype"></a>
-
+```python title="Definition"
+AssociationStatusNameType = Literal[
+    "Failed",
+    "Pending",
+    "Success",
+]
+```
 ## AssociationSyncComplianceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AssociationSyncComplianceType
+
+def get_value() -> AssociationSyncComplianceType:
+    return "AUTO"
 ```
 
-Values:
-
-- `AUTO`
-- `MANUAL`
-
-<a id="attachmenthashtypetype"></a>
-
+```python title="Definition"
+AssociationSyncComplianceType = Literal[
+    "AUTO",
+    "MANUAL",
+]
+```
 ## AttachmentHashTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AttachmentHashTypeType
+
+def get_value() -> AttachmentHashTypeType:
+    return "Sha256"
 ```
 
-Values:
-
-- `Sha256`
-
-<a id="attachmentssourcekeytype"></a>
-
+```python title="Definition"
+AttachmentHashTypeType = Literal[
+    "Sha256",
+]
+```
 ## AttachmentsSourceKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AttachmentsSourceKeyType
+
+def get_value() -> AttachmentsSourceKeyType:
+    return "AttachmentReference"
 ```
 
-Values:
-
-- `AttachmentReference`
-- `S3FileUrl`
-- `SourceUrl`
-
-<a id="automationexecutionfilterkeytype"></a>
-
+```python title="Definition"
+AttachmentsSourceKeyType = Literal[
+    "AttachmentReference",
+    "S3FileUrl",
+    "SourceUrl",
+]
+```
 ## AutomationExecutionFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AutomationExecutionFilterKeyType
+
+def get_value() -> AutomationExecutionFilterKeyType:
+    return "AutomationSubtype"
 ```
 
-Values:
-
-- `AutomationSubtype`
-- `AutomationType`
-- `CurrentAction`
-- `DocumentNamePrefix`
-- `ExecutionId`
-- `ExecutionStatus`
-- `OpsItemId`
-- `ParentExecutionId`
-- `StartTimeAfter`
-- `StartTimeBefore`
-- `TagKey`
-- `TargetResourceGroup`
-
-<a id="automationexecutionstatustype"></a>
-
+```python title="Definition"
+AutomationExecutionFilterKeyType = Literal[
+    "AutomationSubtype",
+    "AutomationType",
+    "CurrentAction",
+    "DocumentNamePrefix",
+    "ExecutionId",
+    "ExecutionStatus",
+    "OpsItemId",
+    "ParentExecutionId",
+    "StartTimeAfter",
+    "StartTimeBefore",
+    "TagKey",
+    "TargetResourceGroup",
+]
+```
 ## AutomationExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AutomationExecutionStatusType
+
+def get_value() -> AutomationExecutionStatusType:
+    return "Approved"
 ```
 
-Values:
-
-- `Approved`
-- `Cancelled`
-- `Cancelling`
-- `ChangeCalendarOverrideApproved`
-- `ChangeCalendarOverrideRejected`
-- `CompletedWithFailure`
-- `CompletedWithSuccess`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `PendingApproval`
-- `PendingChangeCalendarOverride`
-- `Rejected`
-- `RunbookInProgress`
-- `Scheduled`
-- `Success`
-- `TimedOut`
-- `Waiting`
-
-<a id="automationsubtypetype"></a>
-
+```python title="Definition"
+AutomationExecutionStatusType = Literal[
+    "Approved",
+    "Cancelled",
+    "Cancelling",
+    "ChangeCalendarOverrideApproved",
+    "ChangeCalendarOverrideRejected",
+    "CompletedWithFailure",
+    "CompletedWithSuccess",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "PendingApproval",
+    "PendingChangeCalendarOverride",
+    "Rejected",
+    "RunbookInProgress",
+    "Scheduled",
+    "Success",
+    "TimedOut",
+    "Waiting",
+]
+```
 ## AutomationSubtypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AutomationSubtypeType
+
+def get_value() -> AutomationSubtypeType:
+    return "ChangeRequest"
 ```
 
-Values:
-
-- `ChangeRequest`
-
-<a id="automationtypetype"></a>
-
+```python title="Definition"
+AutomationSubtypeType = Literal[
+    "ChangeRequest",
+]
+```
 ## AutomationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import AutomationTypeType
+
+def get_value() -> AutomationTypeType:
+    return "CrossAccount"
 ```
 
-Values:
-
-- `CrossAccount`
-- `Local`
-
-<a id="calendarstatetype"></a>
-
+```python title="Definition"
+AutomationTypeType = Literal[
+    "CrossAccount",
+    "Local",
+]
+```
 ## CalendarStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CalendarStateType
+
+def get_value() -> CalendarStateType:
+    return "CLOSED"
 ```
 
-Values:
-
-- `CLOSED`
-- `OPEN`
-
-<a id="commandexecutedwaitername"></a>
-
+```python title="Definition"
+CalendarStateType = Literal[
+    "CLOSED",
+    "OPEN",
+]
+```
 ## CommandExecutedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CommandExecutedWaiterName
+
+def get_value() -> CommandExecutedWaiterName:
+    return "command_executed"
 ```
 
-Values:
-
-- `command_executed`
-
-<a id="commandfilterkeytype"></a>
-
+```python title="Definition"
+CommandExecutedWaiterName = Literal[
+    "command_executed",
+]
+```
 ## CommandFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CommandFilterKeyType
+
+def get_value() -> CommandFilterKeyType:
+    return "DocumentName"
 ```
 
-Values:
-
-- `DocumentName`
-- `ExecutionStage`
-- `InvokedAfter`
-- `InvokedBefore`
-- `Status`
-
-<a id="commandinvocationstatustype"></a>
-
+```python title="Definition"
+CommandFilterKeyType = Literal[
+    "DocumentName",
+    "ExecutionStage",
+    "InvokedAfter",
+    "InvokedBefore",
+    "Status",
+]
+```
 ## CommandInvocationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CommandInvocationStatusType
+
+def get_value() -> CommandInvocationStatusType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Cancelling`
-- `Delayed`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-- `TimedOut`
-
-<a id="commandpluginstatustype"></a>
-
+```python title="Definition"
+CommandInvocationStatusType = Literal[
+    "Cancelled",
+    "Cancelling",
+    "Delayed",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+    "TimedOut",
+]
+```
 ## CommandPluginStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CommandPluginStatusType
+
+def get_value() -> CommandPluginStatusType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-- `TimedOut`
-
-<a id="commandstatustype"></a>
-
+```python title="Definition"
+CommandPluginStatusType = Literal[
+    "Cancelled",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+    "TimedOut",
+]
+```
 ## CommandStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import CommandStatusType
+
+def get_value() -> CommandStatusType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Cancelling`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Success`
-- `TimedOut`
-
-<a id="compliancequeryoperatortypetype"></a>
-
+```python title="Definition"
+CommandStatusType = Literal[
+    "Cancelled",
+    "Cancelling",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Success",
+    "TimedOut",
+]
+```
 ## ComplianceQueryOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ComplianceQueryOperatorTypeType
+
+def get_value() -> ComplianceQueryOperatorTypeType:
+    return "BEGIN_WITH"
 ```
 
-Values:
-
-- `BEGIN_WITH`
-- `EQUAL`
-- `GREATER_THAN`
-- `LESS_THAN`
-- `NOT_EQUAL`
-
-<a id="complianceseveritytype"></a>
-
+```python title="Definition"
+ComplianceQueryOperatorTypeType = Literal[
+    "BEGIN_WITH",
+    "EQUAL",
+    "GREATER_THAN",
+    "LESS_THAN",
+    "NOT_EQUAL",
+]
+```
 ## ComplianceSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ComplianceSeverityType
+
+def get_value() -> ComplianceSeverityType:
+    return "CRITICAL"
 ```
 
-Values:
-
-- `CRITICAL`
-- `HIGH`
-- `INFORMATIONAL`
-- `LOW`
-- `MEDIUM`
-- `UNSPECIFIED`
-
-<a id="compliancestatustype"></a>
-
+```python title="Definition"
+ComplianceSeverityType = Literal[
+    "CRITICAL",
+    "HIGH",
+    "INFORMATIONAL",
+    "LOW",
+    "MEDIUM",
+    "UNSPECIFIED",
+]
+```
 ## ComplianceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ComplianceStatusType
+
+def get_value() -> ComplianceStatusType:
+    return "COMPLIANT"
 ```
 
-Values:
-
-- `COMPLIANT`
-- `NON_COMPLIANT`
-
-<a id="complianceuploadtypetype"></a>
-
+```python title="Definition"
+ComplianceStatusType = Literal[
+    "COMPLIANT",
+    "NON_COMPLIANT",
+]
+```
 ## ComplianceUploadTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ComplianceUploadTypeType
+
+def get_value() -> ComplianceUploadTypeType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `PARTIAL`
-
-<a id="connectionstatustype"></a>
-
+```python title="Definition"
+ComplianceUploadTypeType = Literal[
+    "COMPLETE",
+    "PARTIAL",
+]
+```
 ## ConnectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ConnectionStatusType
+
+def get_value() -> ConnectionStatusType:
+    return "Connected"
 ```
 
-Values:
-
-- `Connected`
-- `NotConnected`
-
-<a id="describeactivationsfilterkeystype"></a>
-
+```python title="Definition"
+ConnectionStatusType = Literal[
+    "Connected",
+    "NotConnected",
+]
+```
 ## DescribeActivationsFilterKeysType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeActivationsFilterKeysType
+
+def get_value() -> DescribeActivationsFilterKeysType:
+    return "ActivationIds"
 ```
 
-Values:
-
-- `ActivationIds`
-- `DefaultInstanceName`
-- `IamRole`
-
-<a id="describeactivationspaginatorname"></a>
-
+```python title="Definition"
+DescribeActivationsFilterKeysType = Literal[
+    "ActivationIds",
+    "DefaultInstanceName",
+    "IamRole",
+]
+```
 ## DescribeActivationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeActivationsPaginatorName
+
+def get_value() -> DescribeActivationsPaginatorName:
+    return "describe_activations"
 ```
 
-Values:
-
-- `describe_activations`
-
-<a id="describeassociationexecutiontargetspaginatorname"></a>
-
+```python title="Definition"
+DescribeActivationsPaginatorName = Literal[
+    "describe_activations",
+]
+```
 ## DescribeAssociationExecutionTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeAssociationExecutionTargetsPaginatorName
+
+def get_value() -> DescribeAssociationExecutionTargetsPaginatorName:
+    return "describe_association_execution_targets"
 ```
 
-Values:
-
-- `describe_association_execution_targets`
-
-<a id="describeassociationexecutionspaginatorname"></a>
-
+```python title="Definition"
+DescribeAssociationExecutionTargetsPaginatorName = Literal[
+    "describe_association_execution_targets",
+]
+```
 ## DescribeAssociationExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeAssociationExecutionsPaginatorName
+
+def get_value() -> DescribeAssociationExecutionsPaginatorName:
+    return "describe_association_executions"
 ```
 
-Values:
-
-- `describe_association_executions`
-
-<a id="describeautomationexecutionspaginatorname"></a>
-
+```python title="Definition"
+DescribeAssociationExecutionsPaginatorName = Literal[
+    "describe_association_executions",
+]
+```
 ## DescribeAutomationExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeAutomationExecutionsPaginatorName
+
+def get_value() -> DescribeAutomationExecutionsPaginatorName:
+    return "describe_automation_executions"
 ```
 
-Values:
-
-- `describe_automation_executions`
-
-<a id="describeautomationstepexecutionspaginatorname"></a>
-
+```python title="Definition"
+DescribeAutomationExecutionsPaginatorName = Literal[
+    "describe_automation_executions",
+]
+```
 ## DescribeAutomationStepExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeAutomationStepExecutionsPaginatorName
+
+def get_value() -> DescribeAutomationStepExecutionsPaginatorName:
+    return "describe_automation_step_executions"
 ```
 
-Values:
-
-- `describe_automation_step_executions`
-
-<a id="describeavailablepatchespaginatorname"></a>
-
+```python title="Definition"
+DescribeAutomationStepExecutionsPaginatorName = Literal[
+    "describe_automation_step_executions",
+]
+```
 ## DescribeAvailablePatchesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeAvailablePatchesPaginatorName
+
+def get_value() -> DescribeAvailablePatchesPaginatorName:
+    return "describe_available_patches"
 ```
 
-Values:
-
-- `describe_available_patches`
-
-<a id="describeeffectiveinstanceassociationspaginatorname"></a>
-
+```python title="Definition"
+DescribeAvailablePatchesPaginatorName = Literal[
+    "describe_available_patches",
+]
+```
 ## DescribeEffectiveInstanceAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeEffectiveInstanceAssociationsPaginatorName
+
+def get_value() -> DescribeEffectiveInstanceAssociationsPaginatorName:
+    return "describe_effective_instance_associations"
 ```
 
-Values:
-
-- `describe_effective_instance_associations`
-
-<a id="describeeffectivepatchesforpatchbaselinepaginatorname"></a>
-
+```python title="Definition"
+DescribeEffectiveInstanceAssociationsPaginatorName = Literal[
+    "describe_effective_instance_associations",
+]
+```
 ## DescribeEffectivePatchesForPatchBaselinePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeEffectivePatchesForPatchBaselinePaginatorName
+
+def get_value() -> DescribeEffectivePatchesForPatchBaselinePaginatorName:
+    return "describe_effective_patches_for_patch_baseline"
 ```
 
-Values:
-
-- `describe_effective_patches_for_patch_baseline`
-
-<a id="describeinstanceassociationsstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeEffectivePatchesForPatchBaselinePaginatorName = Literal[
+    "describe_effective_patches_for_patch_baseline",
+]
+```
 ## DescribeInstanceAssociationsStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInstanceAssociationsStatusPaginatorName
+
+def get_value() -> DescribeInstanceAssociationsStatusPaginatorName:
+    return "describe_instance_associations_status"
 ```
 
-Values:
-
-- `describe_instance_associations_status`
-
-<a id="describeinstanceinformationpaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceAssociationsStatusPaginatorName = Literal[
+    "describe_instance_associations_status",
+]
+```
 ## DescribeInstanceInformationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInstanceInformationPaginatorName
+
+def get_value() -> DescribeInstanceInformationPaginatorName:
+    return "describe_instance_information"
 ```
 
-Values:
-
-- `describe_instance_information`
-
-<a id="describeinstancepatchstatesforpatchgrouppaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceInformationPaginatorName = Literal[
+    "describe_instance_information",
+]
+```
 ## DescribeInstancePatchStatesForPatchGroupPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInstancePatchStatesForPatchGroupPaginatorName
+
+def get_value() -> DescribeInstancePatchStatesForPatchGroupPaginatorName:
+    return "describe_instance_patch_states_for_patch_group"
 ```
 
-Values:
-
-- `describe_instance_patch_states_for_patch_group`
-
-<a id="describeinstancepatchstatespaginatorname"></a>
-
+```python title="Definition"
+DescribeInstancePatchStatesForPatchGroupPaginatorName = Literal[
+    "describe_instance_patch_states_for_patch_group",
+]
+```
 ## DescribeInstancePatchStatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInstancePatchStatesPaginatorName
+
+def get_value() -> DescribeInstancePatchStatesPaginatorName:
+    return "describe_instance_patch_states"
 ```
 
-Values:
-
-- `describe_instance_patch_states`
-
-<a id="describeinstancepatchespaginatorname"></a>
-
+```python title="Definition"
+DescribeInstancePatchStatesPaginatorName = Literal[
+    "describe_instance_patch_states",
+]
+```
 ## DescribeInstancePatchesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInstancePatchesPaginatorName
+
+def get_value() -> DescribeInstancePatchesPaginatorName:
+    return "describe_instance_patches"
 ```
 
-Values:
-
-- `describe_instance_patches`
-
-<a id="describeinventorydeletionspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstancePatchesPaginatorName = Literal[
+    "describe_instance_patches",
+]
+```
 ## DescribeInventoryDeletionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeInventoryDeletionsPaginatorName
+
+def get_value() -> DescribeInventoryDeletionsPaginatorName:
+    return "describe_inventory_deletions"
 ```
 
-Values:
-
-- `describe_inventory_deletions`
-
-<a id="describemaintenancewindowexecutiontaskinvocationspaginatorname"></a>
-
+```python title="Definition"
+DescribeInventoryDeletionsPaginatorName = Literal[
+    "describe_inventory_deletions",
+]
+```
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName:
+    return "describe_maintenance_window_execution_task_invocations"
 ```
 
-Values:
-
-- `describe_maintenance_window_execution_task_invocations`
-
-<a id="describemaintenancewindowexecutiontaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName = Literal[
+    "describe_maintenance_window_execution_task_invocations",
+]
+```
 ## DescribeMaintenanceWindowExecutionTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowExecutionTasksPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowExecutionTasksPaginatorName:
+    return "describe_maintenance_window_execution_tasks"
 ```
 
-Values:
-
-- `describe_maintenance_window_execution_tasks`
-
-<a id="describemaintenancewindowexecutionspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowExecutionTasksPaginatorName = Literal[
+    "describe_maintenance_window_execution_tasks",
+]
+```
 ## DescribeMaintenanceWindowExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowExecutionsPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowExecutionsPaginatorName:
+    return "describe_maintenance_window_executions"
 ```
 
-Values:
-
-- `describe_maintenance_window_executions`
-
-<a id="describemaintenancewindowschedulepaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowExecutionsPaginatorName = Literal[
+    "describe_maintenance_window_executions",
+]
+```
 ## DescribeMaintenanceWindowSchedulePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowSchedulePaginatorName
+
+def get_value() -> DescribeMaintenanceWindowSchedulePaginatorName:
+    return "describe_maintenance_window_schedule"
 ```
 
-Values:
-
-- `describe_maintenance_window_schedule`
-
-<a id="describemaintenancewindowtargetspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowSchedulePaginatorName = Literal[
+    "describe_maintenance_window_schedule",
+]
+```
 ## DescribeMaintenanceWindowTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowTargetsPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowTargetsPaginatorName:
+    return "describe_maintenance_window_targets"
 ```
 
-Values:
-
-- `describe_maintenance_window_targets`
-
-<a id="describemaintenancewindowtaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowTargetsPaginatorName = Literal[
+    "describe_maintenance_window_targets",
+]
+```
 ## DescribeMaintenanceWindowTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowTasksPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowTasksPaginatorName:
+    return "describe_maintenance_window_tasks"
 ```
 
-Values:
-
-- `describe_maintenance_window_tasks`
-
-<a id="describemaintenancewindowsfortargetpaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowTasksPaginatorName = Literal[
+    "describe_maintenance_window_tasks",
+]
+```
 ## DescribeMaintenanceWindowsForTargetPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowsForTargetPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowsForTargetPaginatorName:
+    return "describe_maintenance_windows_for_target"
 ```
 
-Values:
-
-- `describe_maintenance_windows_for_target`
-
-<a id="describemaintenancewindowspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowsForTargetPaginatorName = Literal[
+    "describe_maintenance_windows_for_target",
+]
+```
 ## DescribeMaintenanceWindowsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeMaintenanceWindowsPaginatorName
+
+def get_value() -> DescribeMaintenanceWindowsPaginatorName:
+    return "describe_maintenance_windows"
 ```
 
-Values:
-
-- `describe_maintenance_windows`
-
-<a id="describeopsitemspaginatorname"></a>
-
+```python title="Definition"
+DescribeMaintenanceWindowsPaginatorName = Literal[
+    "describe_maintenance_windows",
+]
+```
 ## DescribeOpsItemsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeOpsItemsPaginatorName
+
+def get_value() -> DescribeOpsItemsPaginatorName:
+    return "describe_ops_items"
 ```
 
-Values:
-
-- `describe_ops_items`
-
-<a id="describeparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeOpsItemsPaginatorName = Literal[
+    "describe_ops_items",
+]
+```
 ## DescribeParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeParametersPaginatorName
+
+def get_value() -> DescribeParametersPaginatorName:
+    return "describe_parameters"
 ```
 
-Values:
-
-- `describe_parameters`
-
-<a id="describepatchbaselinespaginatorname"></a>
-
+```python title="Definition"
+DescribeParametersPaginatorName = Literal[
+    "describe_parameters",
+]
+```
 ## DescribePatchBaselinesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribePatchBaselinesPaginatorName
+
+def get_value() -> DescribePatchBaselinesPaginatorName:
+    return "describe_patch_baselines"
 ```
 
-Values:
-
-- `describe_patch_baselines`
-
-<a id="describepatchgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribePatchBaselinesPaginatorName = Literal[
+    "describe_patch_baselines",
+]
+```
 ## DescribePatchGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribePatchGroupsPaginatorName
+
+def get_value() -> DescribePatchGroupsPaginatorName:
+    return "describe_patch_groups"
 ```
 
-Values:
-
-- `describe_patch_groups`
-
-<a id="describepatchpropertiespaginatorname"></a>
-
+```python title="Definition"
+DescribePatchGroupsPaginatorName = Literal[
+    "describe_patch_groups",
+]
+```
 ## DescribePatchPropertiesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribePatchPropertiesPaginatorName
+
+def get_value() -> DescribePatchPropertiesPaginatorName:
+    return "describe_patch_properties"
 ```
 
-Values:
-
-- `describe_patch_properties`
-
-<a id="describesessionspaginatorname"></a>
-
+```python title="Definition"
+DescribePatchPropertiesPaginatorName = Literal[
+    "describe_patch_properties",
+]
+```
 ## DescribeSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DescribeSessionsPaginatorName
+
+def get_value() -> DescribeSessionsPaginatorName:
+    return "describe_sessions"
 ```
 
-Values:
-
-- `describe_sessions`
-
-<a id="documentfilterkeytype"></a>
-
+```python title="Definition"
+DescribeSessionsPaginatorName = Literal[
+    "describe_sessions",
+]
+```
 ## DocumentFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentFilterKeyType
+
+def get_value() -> DocumentFilterKeyType:
+    return "DocumentType"
 ```
 
-Values:
-
-- `DocumentType`
-- `Name`
-- `Owner`
-- `PlatformTypes`
-
-<a id="documentformattype"></a>
-
+```python title="Definition"
+DocumentFilterKeyType = Literal[
+    "DocumentType",
+    "Name",
+    "Owner",
+    "PlatformTypes",
+]
+```
 ## DocumentFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentFormatType
+
+def get_value() -> DocumentFormatType:
+    return "JSON"
 ```
 
-Values:
-
-- `JSON`
-- `TEXT`
-- `YAML`
-
-<a id="documenthashtypetype"></a>
-
+```python title="Definition"
+DocumentFormatType = Literal[
+    "JSON",
+    "TEXT",
+    "YAML",
+]
+```
 ## DocumentHashTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentHashTypeType
+
+def get_value() -> DocumentHashTypeType:
+    return "Sha1"
 ```
 
-Values:
-
-- `Sha1`
-- `Sha256`
-
-<a id="documentmetadataenumtype"></a>
-
+```python title="Definition"
+DocumentHashTypeType = Literal[
+    "Sha1",
+    "Sha256",
+]
+```
 ## DocumentMetadataEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentMetadataEnumType
+
+def get_value() -> DocumentMetadataEnumType:
+    return "DocumentReviews"
 ```
 
-Values:
-
-- `DocumentReviews`
-
-<a id="documentparametertypetype"></a>
-
+```python title="Definition"
+DocumentMetadataEnumType = Literal[
+    "DocumentReviews",
+]
+```
 ## DocumentParameterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentParameterTypeType
+
+def get_value() -> DocumentParameterTypeType:
+    return "String"
 ```
 
-Values:
-
-- `String`
-- `StringList`
-
-<a id="documentpermissiontypetype"></a>
-
+```python title="Definition"
+DocumentParameterTypeType = Literal[
+    "String",
+    "StringList",
+]
+```
 ## DocumentPermissionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentPermissionTypeType
+
+def get_value() -> DocumentPermissionTypeType:
+    return "Share"
 ```
 
-Values:
-
-- `Share`
-
-<a id="documentreviewactiontype"></a>
-
+```python title="Definition"
+DocumentPermissionTypeType = Literal[
+    "Share",
+]
+```
 ## DocumentReviewActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentReviewActionType
+
+def get_value() -> DocumentReviewActionType:
+    return "Approve"
 ```
 
-Values:
-
-- `Approve`
-- `Reject`
-- `SendForReview`
-- `UpdateReview`
-
-<a id="documentreviewcommenttypetype"></a>
-
+```python title="Definition"
+DocumentReviewActionType = Literal[
+    "Approve",
+    "Reject",
+    "SendForReview",
+    "UpdateReview",
+]
+```
 ## DocumentReviewCommentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentReviewCommentTypeType
+
+def get_value() -> DocumentReviewCommentTypeType:
+    return "Comment"
 ```
 
-Values:
-
-- `Comment`
-
-<a id="documentstatustype"></a>
-
+```python title="Definition"
+DocumentReviewCommentTypeType = Literal[
+    "Comment",
+]
+```
 ## DocumentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentStatusType
+
+def get_value() -> DocumentStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Creating`
-- `Deleting`
-- `Failed`
-- `Updating`
-
-<a id="documenttypetype"></a>
-
+```python title="Definition"
+DocumentStatusType = Literal[
+    "Active",
+    "Creating",
+    "Deleting",
+    "Failed",
+    "Updating",
+]
+```
 ## DocumentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import DocumentTypeType
+
+def get_value() -> DocumentTypeType:
+    return "ApplicationConfiguration"
 ```
 
-Values:
-
-- `ApplicationConfiguration`
-- `ApplicationConfigurationSchema`
-- `Automation`
-- `Automation.ChangeTemplate`
-- `ChangeCalendar`
-- `Command`
-- `DeploymentStrategy`
-- `Package`
-- `Policy`
-- `ProblemAnalysis`
-- `ProblemAnalysisTemplate`
-- `Session`
-
-<a id="executionmodetype"></a>
-
+```python title="Definition"
+DocumentTypeType = Literal[
+    "ApplicationConfiguration",
+    "ApplicationConfigurationSchema",
+    "Automation",
+    "Automation.ChangeTemplate",
+    "ChangeCalendar",
+    "Command",
+    "DeploymentStrategy",
+    "Package",
+    "Policy",
+    "ProblemAnalysis",
+    "ProblemAnalysisTemplate",
+    "Session",
+]
+```
 ## ExecutionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ExecutionModeType
+
+def get_value() -> ExecutionModeType:
+    return "Auto"
 ```
 
-Values:
-
-- `Auto`
-- `Interactive`
-
-<a id="faulttype"></a>
-
+```python title="Definition"
+ExecutionModeType = Literal[
+    "Auto",
+    "Interactive",
+]
+```
 ## FaultType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import FaultType
+
+def get_value() -> FaultType:
+    return "Client"
 ```
 
-Values:
-
-- `Client`
-- `Server`
-- `Unknown`
-
-<a id="getinventorypaginatorname"></a>
-
+```python title="Definition"
+FaultType = Literal[
+    "Client",
+    "Server",
+    "Unknown",
+]
+```
 ## GetInventoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import GetInventoryPaginatorName
+
+def get_value() -> GetInventoryPaginatorName:
+    return "get_inventory"
 ```
 
-Values:
-
-- `get_inventory`
-
-<a id="getinventoryschemapaginatorname"></a>
-
+```python title="Definition"
+GetInventoryPaginatorName = Literal[
+    "get_inventory",
+]
+```
 ## GetInventorySchemaPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import GetInventorySchemaPaginatorName
+
+def get_value() -> GetInventorySchemaPaginatorName:
+    return "get_inventory_schema"
 ```
 
-Values:
-
-- `get_inventory_schema`
-
-<a id="getopssummarypaginatorname"></a>
-
+```python title="Definition"
+GetInventorySchemaPaginatorName = Literal[
+    "get_inventory_schema",
+]
+```
 ## GetOpsSummaryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import GetOpsSummaryPaginatorName
+
+def get_value() -> GetOpsSummaryPaginatorName:
+    return "get_ops_summary"
 ```
 
-Values:
-
-- `get_ops_summary`
-
-<a id="getparameterhistorypaginatorname"></a>
-
+```python title="Definition"
+GetOpsSummaryPaginatorName = Literal[
+    "get_ops_summary",
+]
+```
 ## GetParameterHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import GetParameterHistoryPaginatorName
+
+def get_value() -> GetParameterHistoryPaginatorName:
+    return "get_parameter_history"
 ```
 
-Values:
-
-- `get_parameter_history`
-
-<a id="getparametersbypathpaginatorname"></a>
-
+```python title="Definition"
+GetParameterHistoryPaginatorName = Literal[
+    "get_parameter_history",
+]
+```
 ## GetParametersByPathPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import GetParametersByPathPaginatorName
+
+def get_value() -> GetParametersByPathPaginatorName:
+    return "get_parameters_by_path"
 ```
 
-Values:
-
-- `get_parameters_by_path`
-
-<a id="instanceinformationfilterkeytype"></a>
-
+```python title="Definition"
+GetParametersByPathPaginatorName = Literal[
+    "get_parameters_by_path",
+]
+```
 ## InstanceInformationFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InstanceInformationFilterKeyType
+
+def get_value() -> InstanceInformationFilterKeyType:
+    return "ActivationIds"
 ```
 
-Values:
-
-- `ActivationIds`
-- `AgentVersion`
-- `AssociationStatus`
-- `IamRole`
-- `InstanceIds`
-- `PingStatus`
-- `PlatformTypes`
-- `ResourceType`
-
-<a id="instancepatchstateoperatortypetype"></a>
-
+```python title="Definition"
+InstanceInformationFilterKeyType = Literal[
+    "ActivationIds",
+    "AgentVersion",
+    "AssociationStatus",
+    "IamRole",
+    "InstanceIds",
+    "PingStatus",
+    "PlatformTypes",
+    "ResourceType",
+]
+```
 ## InstancePatchStateOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InstancePatchStateOperatorTypeType
+
+def get_value() -> InstancePatchStateOperatorTypeType:
+    return "Equal"
 ```
 
-Values:
-
-- `Equal`
-- `GreaterThan`
-- `LessThan`
-- `NotEqual`
-
-<a id="inventoryattributedatatypetype"></a>
-
+```python title="Definition"
+InstancePatchStateOperatorTypeType = Literal[
+    "Equal",
+    "GreaterThan",
+    "LessThan",
+    "NotEqual",
+]
+```
 ## InventoryAttributeDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InventoryAttributeDataTypeType
+
+def get_value() -> InventoryAttributeDataTypeType:
+    return "number"
 ```
 
-Values:
-
-- `number`
-- `string`
-
-<a id="inventorydeletionstatustype"></a>
-
+```python title="Definition"
+InventoryAttributeDataTypeType = Literal[
+    "number",
+    "string",
+]
+```
 ## InventoryDeletionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InventoryDeletionStatusType
+
+def get_value() -> InventoryDeletionStatusType:
+    return "Complete"
 ```
 
-Values:
-
-- `Complete`
-- `InProgress`
-
-<a id="inventoryqueryoperatortypetype"></a>
-
+```python title="Definition"
+InventoryDeletionStatusType = Literal[
+    "Complete",
+    "InProgress",
+]
+```
 ## InventoryQueryOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InventoryQueryOperatorTypeType
+
+def get_value() -> InventoryQueryOperatorTypeType:
+    return "BeginWith"
 ```
 
-Values:
-
-- `BeginWith`
-- `Equal`
-- `Exists`
-- `GreaterThan`
-- `LessThan`
-- `NotEqual`
-
-<a id="inventoryschemadeleteoptiontype"></a>
-
+```python title="Definition"
+InventoryQueryOperatorTypeType = Literal[
+    "BeginWith",
+    "Equal",
+    "Exists",
+    "GreaterThan",
+    "LessThan",
+    "NotEqual",
+]
+```
 ## InventorySchemaDeleteOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import InventorySchemaDeleteOptionType
+
+def get_value() -> InventorySchemaDeleteOptionType:
+    return "DeleteSchema"
 ```
 
-Values:
-
-- `DeleteSchema`
-- `DisableSchema`
-
-<a id="lastresourcedatasyncstatustype"></a>
-
+```python title="Definition"
+InventorySchemaDeleteOptionType = Literal[
+    "DeleteSchema",
+    "DisableSchema",
+]
+```
 ## LastResourceDataSyncStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import LastResourceDataSyncStatusType
+
+def get_value() -> LastResourceDataSyncStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Successful`
-
-<a id="listassociationversionspaginatorname"></a>
-
+```python title="Definition"
+LastResourceDataSyncStatusType = Literal[
+    "Failed",
+    "InProgress",
+    "Successful",
+]
+```
 ## ListAssociationVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListAssociationVersionsPaginatorName
+
+def get_value() -> ListAssociationVersionsPaginatorName:
+    return "list_association_versions"
 ```
 
-Values:
-
-- `list_association_versions`
-
-<a id="listassociationspaginatorname"></a>
-
+```python title="Definition"
+ListAssociationVersionsPaginatorName = Literal[
+    "list_association_versions",
+]
+```
 ## ListAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListAssociationsPaginatorName
+
+def get_value() -> ListAssociationsPaginatorName:
+    return "list_associations"
 ```
 
-Values:
-
-- `list_associations`
-
-<a id="listcommandinvocationspaginatorname"></a>
-
+```python title="Definition"
+ListAssociationsPaginatorName = Literal[
+    "list_associations",
+]
+```
 ## ListCommandInvocationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListCommandInvocationsPaginatorName
+
+def get_value() -> ListCommandInvocationsPaginatorName:
+    return "list_command_invocations"
 ```
 
-Values:
-
-- `list_command_invocations`
-
-<a id="listcommandspaginatorname"></a>
-
+```python title="Definition"
+ListCommandInvocationsPaginatorName = Literal[
+    "list_command_invocations",
+]
+```
 ## ListCommandsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListCommandsPaginatorName
+
+def get_value() -> ListCommandsPaginatorName:
+    return "list_commands"
 ```
 
-Values:
-
-- `list_commands`
-
-<a id="listcomplianceitemspaginatorname"></a>
-
+```python title="Definition"
+ListCommandsPaginatorName = Literal[
+    "list_commands",
+]
+```
 ## ListComplianceItemsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListComplianceItemsPaginatorName
+
+def get_value() -> ListComplianceItemsPaginatorName:
+    return "list_compliance_items"
 ```
 
-Values:
-
-- `list_compliance_items`
-
-<a id="listcompliancesummariespaginatorname"></a>
-
+```python title="Definition"
+ListComplianceItemsPaginatorName = Literal[
+    "list_compliance_items",
+]
+```
 ## ListComplianceSummariesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListComplianceSummariesPaginatorName
+
+def get_value() -> ListComplianceSummariesPaginatorName:
+    return "list_compliance_summaries"
 ```
 
-Values:
-
-- `list_compliance_summaries`
-
-<a id="listdocumentversionspaginatorname"></a>
-
+```python title="Definition"
+ListComplianceSummariesPaginatorName = Literal[
+    "list_compliance_summaries",
+]
+```
 ## ListDocumentVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListDocumentVersionsPaginatorName
+
+def get_value() -> ListDocumentVersionsPaginatorName:
+    return "list_document_versions"
 ```
 
-Values:
-
-- `list_document_versions`
-
-<a id="listdocumentspaginatorname"></a>
-
+```python title="Definition"
+ListDocumentVersionsPaginatorName = Literal[
+    "list_document_versions",
+]
+```
 ## ListDocumentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListDocumentsPaginatorName
+
+def get_value() -> ListDocumentsPaginatorName:
+    return "list_documents"
 ```
 
-Values:
-
-- `list_documents`
-
-<a id="listopsitemeventspaginatorname"></a>
-
+```python title="Definition"
+ListDocumentsPaginatorName = Literal[
+    "list_documents",
+]
+```
 ## ListOpsItemEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListOpsItemEventsPaginatorName
+
+def get_value() -> ListOpsItemEventsPaginatorName:
+    return "list_ops_item_events"
 ```
 
-Values:
-
-- `list_ops_item_events`
-
-<a id="listopsitemrelateditemspaginatorname"></a>
-
+```python title="Definition"
+ListOpsItemEventsPaginatorName = Literal[
+    "list_ops_item_events",
+]
+```
 ## ListOpsItemRelatedItemsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListOpsItemRelatedItemsPaginatorName
+
+def get_value() -> ListOpsItemRelatedItemsPaginatorName:
+    return "list_ops_item_related_items"
 ```
 
-Values:
-
-- `list_ops_item_related_items`
-
-<a id="listopsmetadatapaginatorname"></a>
-
+```python title="Definition"
+ListOpsItemRelatedItemsPaginatorName = Literal[
+    "list_ops_item_related_items",
+]
+```
 ## ListOpsMetadataPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListOpsMetadataPaginatorName
+
+def get_value() -> ListOpsMetadataPaginatorName:
+    return "list_ops_metadata"
 ```
 
-Values:
-
-- `list_ops_metadata`
-
-<a id="listresourcecompliancesummariespaginatorname"></a>
-
+```python title="Definition"
+ListOpsMetadataPaginatorName = Literal[
+    "list_ops_metadata",
+]
+```
 ## ListResourceComplianceSummariesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListResourceComplianceSummariesPaginatorName
+
+def get_value() -> ListResourceComplianceSummariesPaginatorName:
+    return "list_resource_compliance_summaries"
 ```
 
-Values:
-
-- `list_resource_compliance_summaries`
-
-<a id="listresourcedatasyncpaginatorname"></a>
-
+```python title="Definition"
+ListResourceComplianceSummariesPaginatorName = Literal[
+    "list_resource_compliance_summaries",
+]
+```
 ## ListResourceDataSyncPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ListResourceDataSyncPaginatorName
+
+def get_value() -> ListResourceDataSyncPaginatorName:
+    return "list_resource_data_sync"
 ```
 
-Values:
-
-- `list_resource_data_sync`
-
-<a id="maintenancewindowexecutionstatustype"></a>
-
+```python title="Definition"
+ListResourceDataSyncPaginatorName = Literal[
+    "list_resource_data_sync",
+]
+```
 ## MaintenanceWindowExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import MaintenanceWindowExecutionStatusType
+
+def get_value() -> MaintenanceWindowExecutionStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `CANCELLING`
-- `FAILED`
-- `IN_PROGRESS`
-- `PENDING`
-- `SKIPPED_OVERLAPPING`
-- `SUCCESS`
-- `TIMED_OUT`
-
-<a id="maintenancewindowresourcetypetype"></a>
-
+```python title="Definition"
+MaintenanceWindowExecutionStatusType = Literal[
+    "CANCELLED",
+    "CANCELLING",
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING",
+    "SKIPPED_OVERLAPPING",
+    "SUCCESS",
+    "TIMED_OUT",
+]
+```
 ## MaintenanceWindowResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import MaintenanceWindowResourceTypeType
+
+def get_value() -> MaintenanceWindowResourceTypeType:
+    return "INSTANCE"
 ```
 
-Values:
-
-- `INSTANCE`
-- `RESOURCE_GROUP`
-
-<a id="maintenancewindowtaskcutoffbehaviortype"></a>
-
+```python title="Definition"
+MaintenanceWindowResourceTypeType = Literal[
+    "INSTANCE",
+    "RESOURCE_GROUP",
+]
+```
 ## MaintenanceWindowTaskCutoffBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import MaintenanceWindowTaskCutoffBehaviorType
+
+def get_value() -> MaintenanceWindowTaskCutoffBehaviorType:
+    return "CANCEL_TASK"
 ```
 
-Values:
-
-- `CANCEL_TASK`
-- `CONTINUE_TASK`
-
-<a id="maintenancewindowtasktypetype"></a>
-
+```python title="Definition"
+MaintenanceWindowTaskCutoffBehaviorType = Literal[
+    "CANCEL_TASK",
+    "CONTINUE_TASK",
+]
+```
 ## MaintenanceWindowTaskTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import MaintenanceWindowTaskTypeType
+
+def get_value() -> MaintenanceWindowTaskTypeType:
+    return "AUTOMATION"
 ```
 
-Values:
-
-- `AUTOMATION`
-- `LAMBDA`
-- `RUN_COMMAND`
-- `STEP_FUNCTIONS`
-
-<a id="notificationeventtype"></a>
-
+```python title="Definition"
+MaintenanceWindowTaskTypeType = Literal[
+    "AUTOMATION",
+    "LAMBDA",
+    "RUN_COMMAND",
+    "STEP_FUNCTIONS",
+]
+```
 ## NotificationEventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import NotificationEventType
+
+def get_value() -> NotificationEventType:
+    return "All"
 ```
 
-Values:
-
-- `All`
-- `Cancelled`
-- `Failed`
-- `InProgress`
-- `Success`
-- `TimedOut`
-
-<a id="notificationtypetype"></a>
-
+```python title="Definition"
+NotificationEventType = Literal[
+    "All",
+    "Cancelled",
+    "Failed",
+    "InProgress",
+    "Success",
+    "TimedOut",
+]
+```
 ## NotificationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import NotificationTypeType
+
+def get_value() -> NotificationTypeType:
+    return "Command"
 ```
 
-Values:
-
-- `Command`
-- `Invocation`
-
-<a id="operatingsystemtype"></a>
-
+```python title="Definition"
+NotificationTypeType = Literal[
+    "Command",
+    "Invocation",
+]
+```
 ## OperatingSystemType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OperatingSystemType
+
+def get_value() -> OperatingSystemType:
+    return "AMAZON_LINUX"
 ```
 
-Values:
-
-- `AMAZON_LINUX`
-- `AMAZON_LINUX_2`
-- `CENTOS`
-- `DEBIAN`
-- `MACOS`
-- `ORACLE_LINUX`
-- `RASPBIAN`
-- `REDHAT_ENTERPRISE_LINUX`
-- `ROCKY_LINUX`
-- `SUSE`
-- `UBUNTU`
-- `WINDOWS`
-
-<a id="opsfilteroperatortypetype"></a>
-
+```python title="Definition"
+OperatingSystemType = Literal[
+    "AMAZON_LINUX",
+    "AMAZON_LINUX_2",
+    "CENTOS",
+    "DEBIAN",
+    "MACOS",
+    "ORACLE_LINUX",
+    "RASPBIAN",
+    "REDHAT_ENTERPRISE_LINUX",
+    "ROCKY_LINUX",
+    "SUSE",
+    "UBUNTU",
+    "WINDOWS",
+]
+```
 ## OpsFilterOperatorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsFilterOperatorTypeType
+
+def get_value() -> OpsFilterOperatorTypeType:
+    return "BeginWith"
 ```
 
-Values:
-
-- `BeginWith`
-- `Equal`
-- `Exists`
-- `GreaterThan`
-- `LessThan`
-- `NotEqual`
-
-<a id="opsitemdatatypetype"></a>
-
+```python title="Definition"
+OpsFilterOperatorTypeType = Literal[
+    "BeginWith",
+    "Equal",
+    "Exists",
+    "GreaterThan",
+    "LessThan",
+    "NotEqual",
+]
+```
 ## OpsItemDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemDataTypeType
+
+def get_value() -> OpsItemDataTypeType:
+    return "SearchableString"
 ```
 
-Values:
-
-- `SearchableString`
-- `String`
-
-<a id="opsitemeventfilterkeytype"></a>
-
+```python title="Definition"
+OpsItemDataTypeType = Literal[
+    "SearchableString",
+    "String",
+]
+```
 ## OpsItemEventFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemEventFilterKeyType
+
+def get_value() -> OpsItemEventFilterKeyType:
+    return "OpsItemId"
 ```
 
-Values:
-
-- `OpsItemId`
-
-<a id="opsitemeventfilteroperatortype"></a>
-
+```python title="Definition"
+OpsItemEventFilterKeyType = Literal[
+    "OpsItemId",
+]
+```
 ## OpsItemEventFilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemEventFilterOperatorType
+
+def get_value() -> OpsItemEventFilterOperatorType:
+    return "Equal"
 ```
 
-Values:
-
-- `Equal`
-
-<a id="opsitemfilterkeytype"></a>
-
+```python title="Definition"
+OpsItemEventFilterOperatorType = Literal[
+    "Equal",
+]
+```
 ## OpsItemFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemFilterKeyType
+
+def get_value() -> OpsItemFilterKeyType:
+    return "ActualEndTime"
 ```
 
-Values:
-
-- `ActualEndTime`
-- `ActualStartTime`
-- `AutomationId`
-- `Category`
-- `ChangeRequestByApproverArn`
-- `ChangeRequestByApproverName`
-- `ChangeRequestByRequesterArn`
-- `ChangeRequestByRequesterName`
-- `ChangeRequestByTargetsResourceGroup`
-- `ChangeRequestByTemplate`
-- `CreatedBy`
-- `CreatedTime`
-- `InsightByType`
-- `LastModifiedTime`
-- `OperationalData`
-- `OperationalDataKey`
-- `OperationalDataValue`
-- `OpsItemId`
-- `OpsItemType`
-- `PlannedEndTime`
-- `PlannedStartTime`
-- `Priority`
-- `ResourceId`
-- `Severity`
-- `Source`
-- `Status`
-- `Title`
-
-<a id="opsitemfilteroperatortype"></a>
-
+```python title="Definition"
+OpsItemFilterKeyType = Literal[
+    "ActualEndTime",
+    "ActualStartTime",
+    "AutomationId",
+    "Category",
+    "ChangeRequestByApproverArn",
+    "ChangeRequestByApproverName",
+    "ChangeRequestByRequesterArn",
+    "ChangeRequestByRequesterName",
+    "ChangeRequestByTargetsResourceGroup",
+    "ChangeRequestByTemplate",
+    "CreatedBy",
+    "CreatedTime",
+    "InsightByType",
+    "LastModifiedTime",
+    "OperationalData",
+    "OperationalDataKey",
+    "OperationalDataValue",
+    "OpsItemId",
+    "OpsItemType",
+    "PlannedEndTime",
+    "PlannedStartTime",
+    "Priority",
+    "ResourceId",
+    "Severity",
+    "Source",
+    "Status",
+    "Title",
+]
+```
 ## OpsItemFilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemFilterOperatorType
+
+def get_value() -> OpsItemFilterOperatorType:
+    return "Contains"
 ```
 
-Values:
-
-- `Contains`
-- `Equal`
-- `GreaterThan`
-- `LessThan`
-
-<a id="opsitemrelateditemsfilterkeytype"></a>
-
+```python title="Definition"
+OpsItemFilterOperatorType = Literal[
+    "Contains",
+    "Equal",
+    "GreaterThan",
+    "LessThan",
+]
+```
 ## OpsItemRelatedItemsFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterKeyType
+
+def get_value() -> OpsItemRelatedItemsFilterKeyType:
+    return "AssociationId"
 ```
 
-Values:
-
-- `AssociationId`
-- `ResourceType`
-- `ResourceUri`
-
-<a id="opsitemrelateditemsfilteroperatortype"></a>
-
+```python title="Definition"
+OpsItemRelatedItemsFilterKeyType = Literal[
+    "AssociationId",
+    "ResourceType",
+    "ResourceUri",
+]
+```
 ## OpsItemRelatedItemsFilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterOperatorType
+
+def get_value() -> OpsItemRelatedItemsFilterOperatorType:
+    return "Equal"
 ```
 
-Values:
-
-- `Equal`
-
-<a id="opsitemstatustype"></a>
-
+```python title="Definition"
+OpsItemRelatedItemsFilterOperatorType = Literal[
+    "Equal",
+]
+```
 ## OpsItemStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import OpsItemStatusType
+
+def get_value() -> OpsItemStatusType:
+    return "Approved"
 ```
 
-Values:
-
-- `Approved`
-- `Cancelled`
-- `Cancelling`
-- `ChangeCalendarOverrideApproved`
-- `ChangeCalendarOverrideRejected`
-- `Closed`
-- `CompletedWithFailure`
-- `CompletedWithSuccess`
-- `Failed`
-- `InProgress`
-- `Open`
-- `Pending`
-- `PendingApproval`
-- `PendingChangeCalendarOverride`
-- `Rejected`
-- `Resolved`
-- `RunbookInProgress`
-- `Scheduled`
-- `TimedOut`
-
-<a id="parametertiertype"></a>
-
+```python title="Definition"
+OpsItemStatusType = Literal[
+    "Approved",
+    "Cancelled",
+    "Cancelling",
+    "ChangeCalendarOverrideApproved",
+    "ChangeCalendarOverrideRejected",
+    "Closed",
+    "CompletedWithFailure",
+    "CompletedWithSuccess",
+    "Failed",
+    "InProgress",
+    "Open",
+    "Pending",
+    "PendingApproval",
+    "PendingChangeCalendarOverride",
+    "Rejected",
+    "Resolved",
+    "RunbookInProgress",
+    "Scheduled",
+    "TimedOut",
+]
+```
 ## ParameterTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ParameterTierType
+
+def get_value() -> ParameterTierType:
+    return "Advanced"
 ```
 
-Values:
-
-- `Advanced`
-- `Intelligent-Tiering`
-- `Standard`
-
-<a id="parametertypetype"></a>
-
+```python title="Definition"
+ParameterTierType = Literal[
+    "Advanced",
+    "Intelligent-Tiering",
+    "Standard",
+]
+```
 ## ParameterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ParameterTypeType
+
+def get_value() -> ParameterTypeType:
+    return "SecureString"
 ```
 
-Values:
-
-- `SecureString`
-- `String`
-- `StringList`
-
-<a id="parametersfilterkeytype"></a>
-
+```python title="Definition"
+ParameterTypeType = Literal[
+    "SecureString",
+    "String",
+    "StringList",
+]
+```
 ## ParametersFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ParametersFilterKeyType
+
+def get_value() -> ParametersFilterKeyType:
+    return "KeyId"
 ```
 
-Values:
-
-- `KeyId`
-- `Name`
-- `Type`
-
-<a id="patchactiontype"></a>
-
+```python title="Definition"
+ParametersFilterKeyType = Literal[
+    "KeyId",
+    "Name",
+    "Type",
+]
+```
 ## PatchActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchActionType
+
+def get_value() -> PatchActionType:
+    return "ALLOW_AS_DEPENDENCY"
 ```
 
-Values:
-
-- `ALLOW_AS_DEPENDENCY`
-- `BLOCK`
-
-<a id="patchcompliancedatastatetype"></a>
-
+```python title="Definition"
+PatchActionType = Literal[
+    "ALLOW_AS_DEPENDENCY",
+    "BLOCK",
+]
+```
 ## PatchComplianceDataStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchComplianceDataStateType
+
+def get_value() -> PatchComplianceDataStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `INSTALLED`
-- `INSTALLED_OTHER`
-- `INSTALLED_PENDING_REBOOT`
-- `INSTALLED_REJECTED`
-- `MISSING`
-- `NOT_APPLICABLE`
-
-<a id="patchcomplianceleveltype"></a>
-
+```python title="Definition"
+PatchComplianceDataStateType = Literal[
+    "FAILED",
+    "INSTALLED",
+    "INSTALLED_OTHER",
+    "INSTALLED_PENDING_REBOOT",
+    "INSTALLED_REJECTED",
+    "MISSING",
+    "NOT_APPLICABLE",
+]
+```
 ## PatchComplianceLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchComplianceLevelType
+
+def get_value() -> PatchComplianceLevelType:
+    return "CRITICAL"
 ```
 
-Values:
-
-- `CRITICAL`
-- `HIGH`
-- `INFORMATIONAL`
-- `LOW`
-- `MEDIUM`
-- `UNSPECIFIED`
-
-<a id="patchdeploymentstatustype"></a>
-
+```python title="Definition"
+PatchComplianceLevelType = Literal[
+    "CRITICAL",
+    "HIGH",
+    "INFORMATIONAL",
+    "LOW",
+    "MEDIUM",
+    "UNSPECIFIED",
+]
+```
 ## PatchDeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchDeploymentStatusType
+
+def get_value() -> PatchDeploymentStatusType:
+    return "APPROVED"
 ```
 
-Values:
-
-- `APPROVED`
-- `EXPLICIT_APPROVED`
-- `EXPLICIT_REJECTED`
-- `PENDING_APPROVAL`
-
-<a id="patchfilterkeytype"></a>
-
+```python title="Definition"
+PatchDeploymentStatusType = Literal[
+    "APPROVED",
+    "EXPLICIT_APPROVED",
+    "EXPLICIT_REJECTED",
+    "PENDING_APPROVAL",
+]
+```
 ## PatchFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchFilterKeyType
+
+def get_value() -> PatchFilterKeyType:
+    return "ADVISORY_ID"
 ```
 
-Values:
-
-- `ADVISORY_ID`
-- `ARCH`
-- `BUGZILLA_ID`
-- `CLASSIFICATION`
-- `CVE_ID`
-- `EPOCH`
-- `MSRC_SEVERITY`
-- `NAME`
-- `PATCH_ID`
-- `PATCH_SET`
-- `PRIORITY`
-- `PRODUCT`
-- `PRODUCT_FAMILY`
-- `RELEASE`
-- `REPOSITORY`
-- `SECTION`
-- `SECURITY`
-- `SEVERITY`
-- `VERSION`
-
-<a id="patchoperationtypetype"></a>
-
+```python title="Definition"
+PatchFilterKeyType = Literal[
+    "ADVISORY_ID",
+    "ARCH",
+    "BUGZILLA_ID",
+    "CLASSIFICATION",
+    "CVE_ID",
+    "EPOCH",
+    "MSRC_SEVERITY",
+    "NAME",
+    "PATCH_ID",
+    "PATCH_SET",
+    "PRIORITY",
+    "PRODUCT",
+    "PRODUCT_FAMILY",
+    "RELEASE",
+    "REPOSITORY",
+    "SECTION",
+    "SECURITY",
+    "SEVERITY",
+    "VERSION",
+]
+```
 ## PatchOperationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchOperationTypeType
+
+def get_value() -> PatchOperationTypeType:
+    return "Install"
 ```
 
-Values:
-
-- `Install`
-- `Scan`
-
-<a id="patchpropertytype"></a>
-
+```python title="Definition"
+PatchOperationTypeType = Literal[
+    "Install",
+    "Scan",
+]
+```
 ## PatchPropertyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchPropertyType
+
+def get_value() -> PatchPropertyType:
+    return "CLASSIFICATION"
 ```
 
-Values:
-
-- `CLASSIFICATION`
-- `MSRC_SEVERITY`
-- `PRIORITY`
-- `PRODUCT`
-- `PRODUCT_FAMILY`
-- `SEVERITY`
-
-<a id="patchsettype"></a>
-
+```python title="Definition"
+PatchPropertyType = Literal[
+    "CLASSIFICATION",
+    "MSRC_SEVERITY",
+    "PRIORITY",
+    "PRODUCT",
+    "PRODUCT_FAMILY",
+    "SEVERITY",
+]
+```
 ## PatchSetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PatchSetType
+
+def get_value() -> PatchSetType:
+    return "APPLICATION"
 ```
 
-Values:
-
-- `APPLICATION`
-- `OS`
-
-<a id="pingstatustype"></a>
-
+```python title="Definition"
+PatchSetType = Literal[
+    "APPLICATION",
+    "OS",
+]
+```
 ## PingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PingStatusType
+
+def get_value() -> PingStatusType:
+    return "ConnectionLost"
 ```
 
-Values:
-
-- `ConnectionLost`
-- `Inactive`
-- `Online`
-
-<a id="platformtypetype"></a>
-
+```python title="Definition"
+PingStatusType = Literal[
+    "ConnectionLost",
+    "Inactive",
+    "Online",
+]
+```
 ## PlatformTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PlatformTypeType
+
+def get_value() -> PlatformTypeType:
+    return "Linux"
 ```
 
-Values:
-
-- `Linux`
-- `MacOS`
-- `Windows`
-
-<a id="rebootoptiontype"></a>
-
+```python title="Definition"
+PlatformTypeType = Literal[
+    "Linux",
+    "MacOS",
+    "Windows",
+]
+```
 ## RebootOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import RebootOptionType
+
+def get_value() -> RebootOptionType:
+    return "NoReboot"
 ```
 
-Values:
-
-- `NoReboot`
-- `RebootIfNeeded`
-
-<a id="resourcedatasyncs3formattype"></a>
-
+```python title="Definition"
+RebootOptionType = Literal[
+    "NoReboot",
+    "RebootIfNeeded",
+]
+```
 ## ResourceDataSyncS3FormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ResourceDataSyncS3FormatType
+
+def get_value() -> ResourceDataSyncS3FormatType:
+    return "JsonSerDe"
 ```
 
-Values:
-
-- `JsonSerDe`
-
-<a id="resourcetypefortaggingtype"></a>
-
+```python title="Definition"
+ResourceDataSyncS3FormatType = Literal[
+    "JsonSerDe",
+]
+```
 ## ResourceTypeForTaggingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ResourceTypeForTaggingType
+
+def get_value() -> ResourceTypeForTaggingType:
+    return "Automation"
 ```
 
-Values:
-
-- `Automation`
-- `Document`
-- `MaintenanceWindow`
-- `ManagedInstance`
-- `OpsItem`
-- `OpsMetadata`
-- `Parameter`
-- `PatchBaseline`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ResourceTypeForTaggingType = Literal[
+    "Automation",
+    "Document",
+    "MaintenanceWindow",
+    "ManagedInstance",
+    "OpsItem",
+    "OpsMetadata",
+    "Parameter",
+    "PatchBaseline",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "Document"
 ```
 
-Values:
-
-- `Document`
-- `EC2Instance`
-- `ManagedInstance`
-
-<a id="reviewstatustype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "Document",
+    "EC2Instance",
+    "ManagedInstance",
+]
+```
 ## ReviewStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ReviewStatusType
+
+def get_value() -> ReviewStatusType:
+    return "APPROVED"
 ```
 
-Values:
-
-- `APPROVED`
-- `NOT_REVIEWED`
-- `PENDING`
-- `REJECTED`
-
-<a id="sessionfilterkeytype"></a>
-
+```python title="Definition"
+ReviewStatusType = Literal[
+    "APPROVED",
+    "NOT_REVIEWED",
+    "PENDING",
+    "REJECTED",
+]
+```
 ## SessionFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SessionFilterKeyType
+
+def get_value() -> SessionFilterKeyType:
+    return "InvokedAfter"
 ```
 
-Values:
-
-- `InvokedAfter`
-- `InvokedBefore`
-- `Owner`
-- `SessionId`
-- `Status`
-- `Target`
-
-<a id="sessionstatetype"></a>
-
+```python title="Definition"
+SessionFilterKeyType = Literal[
+    "InvokedAfter",
+    "InvokedBefore",
+    "Owner",
+    "SessionId",
+    "Status",
+    "Target",
+]
+```
 ## SessionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SessionStateType
+
+def get_value() -> SessionStateType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `History`
-
-<a id="sessionstatustype"></a>
-
+```python title="Definition"
+SessionStateType = Literal[
+    "Active",
+    "History",
+]
+```
 ## SessionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SessionStatusType
+
+def get_value() -> SessionStatusType:
+    return "Connected"
 ```
 
-Values:
-
-- `Connected`
-- `Connecting`
-- `Disconnected`
-- `Failed`
-- `Terminated`
-- `Terminating`
-
-<a id="signaltypetype"></a>
-
+```python title="Definition"
+SessionStatusType = Literal[
+    "Connected",
+    "Connecting",
+    "Disconnected",
+    "Failed",
+    "Terminated",
+    "Terminating",
+]
+```
 ## SignalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SignalTypeType
+
+def get_value() -> SignalTypeType:
+    return "Approve"
 ```
 
-Values:
-
-- `Approve`
-- `Reject`
-- `Resume`
-- `StartStep`
-- `StopStep`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+SignalTypeType = Literal[
+    "Approve",
+    "Reject",
+    "Resume",
+    "StartStep",
+    "StopStep",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "AWS::EC2::Instance"
 ```
 
-Values:
-
-- `AWS::EC2::Instance`
-- `AWS::IoT::Thing`
-- `AWS::SSM::ManagedInstance`
-
-<a id="stepexecutionfilterkeytype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "AWS::EC2::Instance",
+    "AWS::IoT::Thing",
+    "AWS::SSM::ManagedInstance",
+]
+```
 ## StepExecutionFilterKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import StepExecutionFilterKeyType
+
+def get_value() -> StepExecutionFilterKeyType:
+    return "Action"
 ```
 
-Values:
-
-- `Action`
-- `StartTimeAfter`
-- `StartTimeBefore`
-- `StepExecutionId`
-- `StepExecutionStatus`
-- `StepName`
-
-<a id="stoptypetype"></a>
-
+```python title="Definition"
+StepExecutionFilterKeyType = Literal[
+    "Action",
+    "StartTimeAfter",
+    "StartTimeBefore",
+    "StepExecutionId",
+    "StepExecutionStatus",
+    "StepName",
+]
+```
 ## StopTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import StopTypeType
+
+def get_value() -> StopTypeType:
+    return "Cancel"
 ```
 
-Values:
-
-- `Cancel`
-- `Complete`
-
-<a id="ssmservicename"></a>
-
+```python title="Definition"
+StopTypeType = Literal[
+    "Cancel",
+    "Complete",
+]
+```
 ## SSMServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import SSMServiceName
+
+def get_value() -> SSMServiceName:
+    return "ssm"
 ```
 
-Values:
-
-- `ssm`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+SSMServiceName = Literal[
+    "ssm",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_activations"
 ```
 
-Values:
-
-- `describe_activations`
-- `describe_association_execution_targets`
-- `describe_association_executions`
-- `describe_automation_executions`
-- `describe_automation_step_executions`
-- `describe_available_patches`
-- `describe_effective_instance_associations`
-- `describe_effective_patches_for_patch_baseline`
-- `describe_instance_associations_status`
-- `describe_instance_information`
-- `describe_instance_patch_states`
-- `describe_instance_patch_states_for_patch_group`
-- `describe_instance_patches`
-- `describe_inventory_deletions`
-- `describe_maintenance_window_execution_task_invocations`
-- `describe_maintenance_window_execution_tasks`
-- `describe_maintenance_window_executions`
-- `describe_maintenance_window_schedule`
-- `describe_maintenance_window_targets`
-- `describe_maintenance_window_tasks`
-- `describe_maintenance_windows`
-- `describe_maintenance_windows_for_target`
-- `describe_ops_items`
-- `describe_parameters`
-- `describe_patch_baselines`
-- `describe_patch_groups`
-- `describe_patch_properties`
-- `describe_sessions`
-- `get_inventory`
-- `get_inventory_schema`
-- `get_ops_summary`
-- `get_parameter_history`
-- `get_parameters_by_path`
-- `list_association_versions`
-- `list_associations`
-- `list_command_invocations`
-- `list_commands`
-- `list_compliance_items`
-- `list_compliance_summaries`
-- `list_document_versions`
-- `list_documents`
-- `list_ops_item_events`
-- `list_ops_item_related_items`
-- `list_ops_metadata`
-- `list_resource_compliance_summaries`
-- `list_resource_data_sync`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_activations",
+    "describe_association_execution_targets",
+    "describe_association_executions",
+    "describe_automation_executions",
+    "describe_automation_step_executions",
+    "describe_available_patches",
+    "describe_effective_instance_associations",
+    "describe_effective_patches_for_patch_baseline",
+    "describe_instance_associations_status",
+    "describe_instance_information",
+    "describe_instance_patch_states",
+    "describe_instance_patch_states_for_patch_group",
+    "describe_instance_patches",
+    "describe_inventory_deletions",
+    "describe_maintenance_window_execution_task_invocations",
+    "describe_maintenance_window_execution_tasks",
+    "describe_maintenance_window_executions",
+    "describe_maintenance_window_schedule",
+    "describe_maintenance_window_targets",
+    "describe_maintenance_window_tasks",
+    "describe_maintenance_windows",
+    "describe_maintenance_windows_for_target",
+    "describe_ops_items",
+    "describe_parameters",
+    "describe_patch_baselines",
+    "describe_patch_groups",
+    "describe_patch_properties",
+    "describe_sessions",
+    "get_inventory",
+    "get_inventory_schema",
+    "get_ops_summary",
+    "get_parameter_history",
+    "get_parameters_by_path",
+    "list_association_versions",
+    "list_associations",
+    "list_command_invocations",
+    "list_commands",
+    "list_compliance_items",
+    "list_compliance_summaries",
+    "list_document_versions",
+    "list_documents",
+    "list_ops_item_events",
+    "list_ops_item_related_items",
+    "list_ops_metadata",
+    "list_resource_compliance_summaries",
+    "list_resource_data_sync",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "command_executed"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "command_executed",
+]
+```
+## RegionName
 
-- `command_executed`
+```python title="Usage Example"
+from mypy_boto3_ssm.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

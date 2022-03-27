@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-dataexchange-module"></a>
-
-# Examples for boto3 DataExchange module
+# Examples
 
 > [Index](../README.md) > [DataExchange](./README.md) > Examples
 
-- [Examples for boto3 DataExchange module](#examples-for-boto3-dataexchange-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+    type annotations stubs module [mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[dataexchange]` package installed.
 
-Write your `DataExchange` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `DataExchange` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type DataExchangeClient
-# and provides type checking and code completion
-client = session.client("dataexchange")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListDataSetRevisionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_data_set_revisions")
-for item in paginator.paginate(...):
-    # item has type ListDataSetRevisionsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("dataexchange")  # (1)
+    result = client.create_data_set()  # (2)
+    ```
+
+    1. client: [DataExchangeClient](./client.md)
+    2. result: [:material-code-braces: CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("dataexchange")  # (1)
+
+    paginator = client.get_paginator("list_data_set_revisions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [DataExchangeClient](./client.md)
+    2. paginator: [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
+    3. item: [:material-code-braces: ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[dataexchange]` or a standalone `mypy_boto3_dataexchange`
-package, you have to explicitly specify `client: DataExchangeClient` type
-annotation.
+With `boto3-stubs-lite[dataexchange]`
+or a standalone `mypy_boto3_dataexchange` package, you have to explicitly specify `client: DataExchangeClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_dataexchange.client import DataExchangeClient
-from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
-
-from mypy_boto3_dataexchange.literals import PaginatorName
-
-from mypy_boto3_dataexchange.type_defs import bool
-from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: DataExchangeClient = session.client("dataexchange")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_dataexchange.client import DataExchangeClient
+    from mypy_boto3_dataexchange.type_defs import CreateDataSetResponseTypeDef
+    from mypy_boto3_dataexchange.type_defs import CreateDataSetRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_data_set_revisions"
-paginator: ListDataSetRevisionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDataSetRevisionsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: DataExchangeClient = session.client("dataexchange")
+
+    kwargs: CreateDataSetRequestRequestTypeDef = {...}
+    result: CreateDataSetResponseTypeDef = client.create_data_set(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_dataexchange.client import DataExchangeClient
+    from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
+    from mypy_boto3_dataexchange.type_defs import ListDataSetRevisionsResponseTypeDef
+
+
+    session = Session()
+    client: DataExchangeClient = session.client("dataexchange")
+
+    paginator: ListDataSetRevisionsPaginator = client.get_paginator("list_data_set_revisions")
+    for item in paginator.paginate(...):
+        item: ListDataSetRevisionsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

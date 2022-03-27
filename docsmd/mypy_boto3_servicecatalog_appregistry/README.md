@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-appregistry-module"></a>
-
-# Type annotations for boto3 AppRegistry module
+#  AppRegistry module
 
 > [Index](../README.md) > AppRegistry
 
-Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
-type annotations stubs module
-[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+!!! note ""
 
-- [Type annotations for boto3 AppRegistry module](#type-annotations-for-boto3-appregistry-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppRegistryClient](#appregistryclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+    type annotations stubs module [mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppRegistry`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[servicecatalog-appregistry]'
 python -m pip install mypy-boto3-servicecatalog-appregistry
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,79 +42,37 @@ python -m pip install mypy-boto3-servicecatalog-appregistry
 python -m pip uninstall -y mypy-boto3-servicecatalog-appregistry
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="appregistryclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppRegistryClient
 
-Type annotations for `boto3.client("servicecatalog-appregistry")` as
-[AppRegistryClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("servicecatalog-appregistry")` as [AppRegistryClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
+
+def get_client() -> AppRegistryClient:
+    return Session().cleint("servicecatalog-appregistry")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_attribute_group](./client.md#associate_attribute_group)
-- [associate_resource](./client.md#associate_resource)
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_attribute_group](./client.md#create_attribute_group)
-- [delete_application](./client.md#delete_application)
-- [delete_attribute_group](./client.md#delete_attribute_group)
-- [disassociate_attribute_group](./client.md#disassociate_attribute_group)
-- [disassociate_resource](./client.md#disassociate_resource)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application](./client.md#get_application)
-- [get_associated_resource](./client.md#get_associated_resource)
-- [get_attribute_group](./client.md#get_attribute_group)
-- [get_paginator](./client.md#get_paginator)
-- [list_applications](./client.md#list_applications)
-- [list_associated_attribute_groups](./client.md#list_associated_attribute_groups)
-- [list_associated_resources](./client.md#list_associated_resources)
-- [list_attribute_groups](./client.md#list_attribute_groups)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [sync_resource](./client.md#sync_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_attribute_group](./client.md#update_attribute_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AppRegistryClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("servicecatalog-appregistry").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("servicecatalog-appregistry").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator, ...
+from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator
+
+def get_list_applications_paginator() -> ListApplicationsPaginator:
+    return Session().client("servicecatalog-appregistry").get_paginator("list_applications"))
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
@@ -144,16 +80,23 @@ from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPagi
 - [ListAssociatedResourcesPaginator](./paginators.md#listassociatedresourcespaginator)
 - [ListAttributeGroupsPaginator](./paginators.md#listattributegroupspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPaginatorName
 
-```python
-from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPaginatorName, ...
+def get_value() -> ListApplicationsPaginatorName:
+    return "list_applications"
 ```
 
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
@@ -167,18 +110,22 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTypeDef
 
-```python
-from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTypeDef, ...
+def get_value() -> ApplicationSummaryTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
 - [ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)
@@ -208,12 +155,16 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTy
 - [GetAttributeGroupRequestRequestTypeDef](./type_defs.md#getattributegrouprequestrequesttypedef)
 - [GetAttributeGroupResponseTypeDef](./type_defs.md#getattributegroupresponsetypedef)
 - [IntegrationsTypeDef](./type_defs.md#integrationstypedef)
+- [ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef)
 - [ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef)
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
+- [ListAssociatedAttributeGroupsRequestListAssociatedAttributeGroupsPaginateTypeDef](./type_defs.md#listassociatedattributegroupsrequestlistassociatedattributegroupspaginatetypedef)
 - [ListAssociatedAttributeGroupsRequestRequestTypeDef](./type_defs.md#listassociatedattributegroupsrequestrequesttypedef)
 - [ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)
+- [ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef](./type_defs.md#listassociatedresourcesrequestlistassociatedresourcespaginatetypedef)
 - [ListAssociatedResourcesRequestRequestTypeDef](./type_defs.md#listassociatedresourcesrequestrequesttypedef)
 - [ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)
+- [ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef](./type_defs.md#listattributegroupsrequestlistattributegroupspaginatetypedef)
 - [ListAttributeGroupsRequestRequestTypeDef](./type_defs.md#listattributegroupsrequestrequesttypedef)
 - [ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -232,3 +183,4 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ApplicationSummaryTy
 - [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef)
 - [UpdateAttributeGroupRequestRequestTypeDef](./type_defs.md#updateattributegrouprequestrequesttypedef)
 - [UpdateAttributeGroupResponseTypeDef](./type_defs.md#updateattributegroupresponsetypedef)
+

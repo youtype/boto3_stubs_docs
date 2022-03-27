@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-polly-module"></a>
-
-# Type annotations for boto3 Polly module
+#  Polly module
 
 > [Index](../README.md) > Polly
 
-Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
-type annotations stubs module
-[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
+!!! note ""
 
-- [Type annotations for boto3 Polly module](#type-annotations-for-boto3-polly-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PollyClient](#pollyclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+    type annotations stubs module [mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Polly`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[polly]'
 python -m pip install mypy-boto3-polly
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,98 +42,60 @@ python -m pip install mypy-boto3-polly
 python -m pip uninstall -y mypy-boto3-polly
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="pollyclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PollyClient
 
-Type annotations for `boto3.client("polly")` as [PollyClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("polly")` as [PollyClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_polly.client import PollyClient
+
+def get_client() -> PollyClient:
+    return Session().cleint("polly")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [delete_lexicon](./client.md#delete_lexicon)
-- [describe_voices](./client.md#describe_voices)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_lexicon](./client.md#get_lexicon)
-- [get_paginator](./client.md#get_paginator)
-- [get_speech_synthesis_task](./client.md#get_speech_synthesis_task)
-- [list_lexicons](./client.md#list_lexicons)
-- [list_speech_synthesis_tasks](./client.md#list_speech_synthesis_tasks)
-- [put_lexicon](./client.md#put_lexicon)
-- [start_speech_synthesis_task](./client.md#start_speech_synthesis_task)
-- [synthesize_speech](./client.md#synthesize_speech)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-PollyClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- EngineNotSupportedException
-- InvalidLexiconException
-- InvalidNextTokenException
-- InvalidS3BucketException
-- InvalidS3KeyException
-- InvalidSampleRateException
-- InvalidSnsTopicArnException
-- InvalidSsmlException
-- InvalidTaskIdException
-- LanguageNotSupportedException
-- LexiconNotFoundException
-- LexiconSizeExceededException
-- MarksNotSupportedForFormatException
-- MaxLexemeLengthExceededException
-- MaxLexiconsNumberExceededException
-- ServiceFailureException
-- SsmlMarksNotSupportedForTextTypeException
-- SynthesisTaskNotFoundException
-- TextLengthExceededException
-- UnsupportedPlsAlphabetException
-- UnsupportedPlsLanguageException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("polly").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("polly").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_polly.paginator import DescribeVoicesPaginator, ...
+from mypy_boto3_polly.paginator import DescribeVoicesPaginator
+
+def get_describe_voices_paginator() -> DescribeVoicesPaginator:
+    return Session().client("polly").get_paginator("describe_voices"))
 ```
 
 - [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
 - [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
 - [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_polly.literals import DescribeVoicesPaginatorName
 
-```python
-from mypy_boto3_polly.literals import DescribeVoicesPaginatorName, ...
+def get_value() -> DescribeVoicesPaginatorName:
+    return "describe_voices"
 ```
 
 - [DescribeVoicesPaginatorName](./literals.md#describevoicespaginatorname)
@@ -173,21 +113,26 @@ from mypy_boto3_polly.literals import DescribeVoicesPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef
 
-```python
-from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef, ...
+def get_value() -> DeleteLexiconInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [DeleteLexiconInputRequestTypeDef](./type_defs.md#deletelexiconinputrequesttypedef)
+- [DescribeVoicesInputDescribeVoicesPaginateTypeDef](./type_defs.md#describevoicesinputdescribevoicespaginatetypedef)
 - [DescribeVoicesInputRequestTypeDef](./type_defs.md#describevoicesinputrequesttypedef)
 - [DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef)
 - [GetLexiconInputRequestTypeDef](./type_defs.md#getlexiconinputrequesttypedef)
@@ -197,8 +142,10 @@ from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef, ...
 - [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
 - [LexiconDescriptionTypeDef](./type_defs.md#lexicondescriptiontypedef)
 - [LexiconTypeDef](./type_defs.md#lexicontypedef)
+- [ListLexiconsInputListLexiconsPaginateTypeDef](./type_defs.md#listlexiconsinputlistlexiconspaginatetypedef)
 - [ListLexiconsInputRequestTypeDef](./type_defs.md#listlexiconsinputrequesttypedef)
 - [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef)
+- [ListSpeechSynthesisTasksInputListSpeechSynthesisTasksPaginateTypeDef](./type_defs.md#listspeechsynthesistasksinputlistspeechsynthesistaskspaginatetypedef)
 - [ListSpeechSynthesisTasksInputRequestTypeDef](./type_defs.md#listspeechsynthesistasksinputrequesttypedef)
 - [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -210,3 +157,4 @@ from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef, ...
 - [SynthesizeSpeechInputRequestTypeDef](./type_defs.md#synthesizespeechinputrequesttypedef)
 - [SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef)
 - [VoiceTypeDef](./type_defs.md#voicetypedef)
+

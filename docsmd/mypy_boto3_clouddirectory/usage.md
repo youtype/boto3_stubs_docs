@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-clouddirectory-module"></a>
-
-# Examples for boto3 CloudDirectory module
+# Examples
 
 > [Index](../README.md) > [CloudDirectory](./README.md) > Examples
 
-- [Examples for boto3 CloudDirectory module](#examples-for-boto3-clouddirectory-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+    type annotations stubs module [mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[clouddirectory]` package installed.
 
-Write your `CloudDirectory` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CloudDirectory` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CloudDirectoryClient
-# and provides type checking and code completion
-client = session.client("clouddirectory")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_facet_to_object()
 
-# paginator has type ListAppliedSchemaArnsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_applied_schema_arns")
-for item in paginator.paginate(...):
-    # item has type ListAppliedSchemaArnsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("clouddirectory")  # (1)
+    result = client.apply_schema()  # (2)
+    ```
+
+    1. client: [CloudDirectoryClient](./client.md)
+    2. result: [:material-code-braces: ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("clouddirectory")  # (1)
+
+    paginator = client.get_paginator("list_applied_schema_arns")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CloudDirectoryClient](./client.md)
+    2. paginator: [ListAppliedSchemaArnsPaginator](./paginators.md#listappliedschemaarnspaginator)
+    3. item: [:material-code-braces: ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[clouddirectory]` or a standalone
-`mypy_boto3_clouddirectory` package, you have to explicitly specify
-`client: CloudDirectoryClient` type annotation.
+With `boto3-stubs-lite[clouddirectory]`
+or a standalone `mypy_boto3_clouddirectory` package, you have to explicitly specify `client: CloudDirectoryClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_clouddirectory.client import CloudDirectoryClient
-from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator
-
-from mypy_boto3_clouddirectory.literals import PaginatorName
-
-from mypy_boto3_clouddirectory.type_defs import Dict[str, Any]
-from mypy_boto3_clouddirectory.type_defs import ListAppliedSchemaArnsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CloudDirectoryClient = session.client("clouddirectory")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.add_facet_to_object()
+    from mypy_boto3_clouddirectory.client import CloudDirectoryClient
+    from mypy_boto3_clouddirectory.type_defs import ApplySchemaResponseTypeDef
+    from mypy_boto3_clouddirectory.type_defs import ApplySchemaRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_applied_schema_arns"
-paginator: ListAppliedSchemaArnsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAppliedSchemaArnsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CloudDirectoryClient = session.client("clouddirectory")
+
+    kwargs: ApplySchemaRequestRequestTypeDef = {...}
+    result: ApplySchemaResponseTypeDef = client.apply_schema(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_clouddirectory.client import CloudDirectoryClient
+    from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator
+    from mypy_boto3_clouddirectory.type_defs import ListAppliedSchemaArnsResponseTypeDef
+
+
+    session = Session()
+    client: CloudDirectoryClient = session.client("clouddirectory")
+
+    paginator: ListAppliedSchemaArnsPaginator = client.get_paginator("list_applied_schema_arns")
+    for item in paginator.paginate(...):
+        item: ListAppliedSchemaArnsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

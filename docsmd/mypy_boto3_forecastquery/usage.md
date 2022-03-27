@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-forecastqueryservice-module"></a>
-
-# Examples for boto3 ForecastQueryService module
+# Examples
 
 > [Index](../README.md) > [ForecastQueryService](./README.md) > Examples
 
-- [Examples for boto3 ForecastQueryService module](#examples-for-boto3-forecastqueryservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
+    type annotations stubs module [mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[forecastquery]` package installed.
 
-Write your `ForecastQueryService` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ForecastQueryService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ForecastQueryServiceClient
-# and provides type checking and code completion
-client = session.client("forecastquery")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("forecastquery")  # (1)
+    result = client.query_forecast()  # (2)
+    ```
+
+    1. client: [ForecastQueryServiceClient](./client.md)
+    2. result: [:material-code-braces: QueryForecastResponseTypeDef](./type_defs.md#queryforecastresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[forecastquery]` or a standalone
-`mypy_boto3_forecastquery` package, you have to explicitly specify
-`client: ForecastQueryServiceClient` type annotation.
+With `boto3-stubs-lite[forecastquery]`
+or a standalone `mypy_boto3_forecastquery` package, you have to explicitly specify `client: ForecastQueryServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
+    from mypy_boto3_forecastquery.type_defs import QueryForecastResponseTypeDef
+    from mypy_boto3_forecastquery.type_defs import QueryForecastRequestRequestTypeDef
 
 
-from mypy_boto3_forecastquery.type_defs import bool
+    session = Session()
+
+    client: ForecastQueryServiceClient = session.client("forecastquery")
+
+    kwargs: QueryForecastRequestRequestTypeDef = {...}
+    result: QueryForecastResponseTypeDef = client.query_forecast(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ForecastQueryServiceClient = session.client("forecastquery")
 
-result: bool = client.can_paginate()
-```
+

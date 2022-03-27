@@ -1,175 +1,214 @@
-<a id="typed-dictionaries-for-boto3-connectcontactlens-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ConnectContactLens module
+> [Index](../README.md) > [ConnectContactLens](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ConnectContactLens](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
-type annotations stubs module
-[mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
-
-- [Typed dictionaries for boto3 ConnectContactLens module](#typed-dictionaries-for-boto3-connectcontactlens-module)
-  - [CategoriesTypeDef](#categoriestypedef)
-  - [CategoryDetailsTypeDef](#categorydetailstypedef)
-  - [CharacterOffsetsTypeDef](#characteroffsetstypedef)
-  - [IssueDetectedTypeDef](#issuedetectedtypedef)
-  - [ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef](#listrealtimecontactanalysissegmentsrequestrequesttypedef)
-  - [ListRealtimeContactAnalysisSegmentsResponseTypeDef](#listrealtimecontactanalysissegmentsresponsetypedef)
-  - [PointOfInterestTypeDef](#pointofinteresttypedef)
-  - [RealtimeContactAnalysisSegmentTypeDef](#realtimecontactanalysissegmenttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TranscriptTypeDef](#transcripttypedef)
-
-<a id="categoriestypedef"></a>
+    Auto-generated documentation for [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
+    type annotations stubs module [mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 ## CategoriesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import CategoriesTypeDef
+
+def get_value() -> CategoriesTypeDef:
+    return {
+        "MatchedCategories": ...,
+        "MatchedDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CategoriesTypeDef(TypedDict):
+    MatchedCategories: List[str],
+    MatchedDetails: Dict[str, CategoryDetailsTypeDef],  # (1)
+```
 
-- `MatchedCategories`: `List`\[`str`\]
-- `MatchedDetails`: `Dict`\[`str`,
-  [CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef)\]
-
-<a id="categorydetailstypedef"></a>
-
+1. See [:material-code-braces: CategoryDetailsTypeDef](./type_defs.md#categorydetailstypedef) 
 ## CategoryDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import CategoryDetailsTypeDef
+
+def get_value() -> CategoryDetailsTypeDef:
+    return {
+        "PointsOfInterest": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CategoryDetailsTypeDef(TypedDict):
+    PointsOfInterest: List[PointOfInterestTypeDef],  # (1)
+```
 
-- `PointsOfInterest`:
-  `List`\[[PointOfInterestTypeDef](./type_defs.md#pointofinteresttypedef)\]
-
-<a id="characteroffsetstypedef"></a>
-
+1. See [:material-code-braces: PointOfInterestTypeDef](./type_defs.md#pointofinteresttypedef) 
 ## CharacterOffsetsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import CharacterOffsetsTypeDef
+
+def get_value() -> CharacterOffsetsTypeDef:
+    return {
+        "BeginOffsetChar": ...,
+        "EndOffsetChar": ...,
+    }
 ```
 
-Required fields:
-
-- `BeginOffsetChar`: `int`
-- `EndOffsetChar`: `int`
-
-<a id="issuedetectedtypedef"></a>
+```python title="Definition"
+class CharacterOffsetsTypeDef(TypedDict):
+    BeginOffsetChar: int,
+    EndOffsetChar: int,
+```
 
 ## IssueDetectedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import IssueDetectedTypeDef
+
+def get_value() -> IssueDetectedTypeDef:
+    return {
+        "CharacterOffsets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IssueDetectedTypeDef(TypedDict):
+    CharacterOffsets: CharacterOffsetsTypeDef,  # (1)
+```
 
-- `CharacterOffsets`:
-  [CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef)
-
-<a id="listrealtimecontactanalysissegmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CharacterOffsetsTypeDef](./type_defs.md#characteroffsetstypedef) 
 ## ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef
+
+def get_value() -> ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listrealtimecontactanalysissegmentsresponsetypedef"></a>
+```python title="Definition"
+class ListRealtimeContactAnalysisSegmentsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListRealtimeContactAnalysisSegmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import ListRealtimeContactAnalysisSegmentsResponseTypeDef
+
+def get_value() -> ListRealtimeContactAnalysisSegmentsResponseTypeDef:
+    return {
+        "Segments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRealtimeContactAnalysisSegmentsResponseTypeDef(TypedDict):
+    Segments: List[RealtimeContactAnalysisSegmentTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Segments`:
-  `List`\[[RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pointofinteresttypedef"></a>
-
+1. See [:material-code-braces: RealtimeContactAnalysisSegmentTypeDef](./type_defs.md#realtimecontactanalysissegmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PointOfInterestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import PointOfInterestTypeDef
+
+def get_value() -> PointOfInterestTypeDef:
+    return {
+        "BeginOffsetMillis": ...,
+        "EndOffsetMillis": ...,
+    }
 ```
 
-Required fields:
-
-- `BeginOffsetMillis`: `int`
-- `EndOffsetMillis`: `int`
-
-<a id="realtimecontactanalysissegmenttypedef"></a>
+```python title="Definition"
+class PointOfInterestTypeDef(TypedDict):
+    BeginOffsetMillis: int,
+    EndOffsetMillis: int,
+```
 
 ## RealtimeContactAnalysisSegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import RealtimeContactAnalysisSegmentTypeDef
+
+def get_value() -> RealtimeContactAnalysisSegmentTypeDef:
+    return {
+        "Transcript": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RealtimeContactAnalysisSegmentTypeDef(TypedDict):
+    Transcript: NotRequired[TranscriptTypeDef],  # (1)
+    Categories: NotRequired[CategoriesTypeDef],  # (2)
+```
 
-- `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
-- `Categories`: [CategoriesTypeDef](./type_defs.md#categoriestypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TranscriptTypeDef](./type_defs.md#transcripttypedef) 
+2. See [:material-code-braces: CategoriesTypeDef](./type_defs.md#categoriestypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="transcripttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TranscriptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect_contact_lens.type_defs import TranscriptTypeDef
+
+def get_value() -> TranscriptTypeDef:
+    return {
+        "Id": ...,
+        "ParticipantId": ...,
+        "ParticipantRole": ...,
+        "Content": ...,
+        "BeginOffsetMillis": ...,
+        "EndOffsetMillis": ...,
+        "Sentiment": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TranscriptTypeDef(TypedDict):
+    Id: str,
+    ParticipantId: str,
+    ParticipantRole: str,
+    Content: str,
+    BeginOffsetMillis: int,
+    EndOffsetMillis: int,
+    Sentiment: SentimentValueType,  # (1)
+    IssuesDetected: NotRequired[List[IssueDetectedTypeDef]],  # (2)
+```
 
-- `Id`: `str`
-- `ParticipantId`: `str`
-- `ParticipantRole`: `str`
-- `Content`: `str`
-- `BeginOffsetMillis`: `int`
-- `EndOffsetMillis`: `int`
-- `Sentiment`: [SentimentValueType](./literals.md#sentimentvaluetype)
-
-Optional fields:
-
-- `IssuesDetected`:
-  `List`\[[IssueDetectedTypeDef](./type_defs.md#issuedetectedtypedef)\]
+1. See [:material-code-brackets: SentimentValueType](./literals.md#sentimentvaluetype) 
+2. See [:material-code-braces: IssueDetectedTypeDef](./type_defs.md#issuedetectedtypedef) 

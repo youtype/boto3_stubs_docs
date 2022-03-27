@@ -1,776 +1,834 @@
-<a id="literals-for-boto3-licensemanager-module"></a>
-
-# Literals for boto3 LicenseManager module
+# Literals
 
 > [Index](../README.md) > [LicenseManager](./README.md) > Literals
 
-Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
-type annotations stubs module
-[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
+!!! note ""
 
-- [Literals for boto3 LicenseManager module](#literals-for-boto3-licensemanager-module)
-  - [AllowedOperationType](#allowedoperationtype)
-  - [CheckoutTypeType](#checkouttypetype)
-  - [DigitalSignatureMethodType](#digitalsignaturemethodtype)
-  - [EntitlementDataUnitType](#entitlementdataunittype)
-  - [EntitlementUnitType](#entitlementunittype)
-  - [GrantStatusType](#grantstatustype)
-  - [InventoryFilterConditionType](#inventoryfilterconditiontype)
-  - [LicenseConfigurationStatusType](#licenseconfigurationstatustype)
-  - [LicenseConversionTaskStatusType](#licenseconversiontaskstatustype)
-  - [LicenseCountingTypeType](#licensecountingtypetype)
-  - [LicenseDeletionStatusType](#licensedeletionstatustype)
-  - [LicenseStatusType](#licensestatustype)
-  - [ListAssociationsForLicenseConfigurationPaginatorName](#listassociationsforlicenseconfigurationpaginatorname)
-  - [ListLicenseConfigurationsPaginatorName](#listlicenseconfigurationspaginatorname)
-  - [ListLicenseSpecificationsForResourcePaginatorName](#listlicensespecificationsforresourcepaginatorname)
-  - [ListResourceInventoryPaginatorName](#listresourceinventorypaginatorname)
-  - [ListUsageForLicenseConfigurationPaginatorName](#listusageforlicenseconfigurationpaginatorname)
-  - [ReceivedStatusType](#receivedstatustype)
-  - [RenewTypeType](#renewtypetype)
-  - [ReportFrequencyTypeType](#reportfrequencytypetype)
-  - [ReportTypeType](#reporttypetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [TokenTypeType](#tokentypetype)
-  - [LicenseManagerServiceName](#licensemanagerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="allowedoperationtype"></a>
+    Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+    type annotations stubs module [mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 ## AllowedOperationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import AllowedOperationType
+
+def get_value() -> AllowedOperationType:
+    return "CheckInLicense"
 ```
 
-Values:
-
-- `CheckInLicense`
-- `CheckoutBorrowLicense`
-- `CheckoutLicense`
-- `CreateGrant`
-- `CreateToken`
-- `ExtendConsumptionLicense`
-- `ListPurchasedLicenses`
-
-<a id="checkouttypetype"></a>
-
+```python title="Definition"
+AllowedOperationType = Literal[
+    "CheckInLicense",
+    "CheckoutBorrowLicense",
+    "CheckoutLicense",
+    "CreateGrant",
+    "CreateToken",
+    "ExtendConsumptionLicense",
+    "ListPurchasedLicenses",
+]
+```
 ## CheckoutTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import CheckoutTypeType
+
+def get_value() -> CheckoutTypeType:
+    return "PERPETUAL"
 ```
 
-Values:
-
-- `PERPETUAL`
-- `PROVISIONAL`
-
-<a id="digitalsignaturemethodtype"></a>
-
+```python title="Definition"
+CheckoutTypeType = Literal[
+    "PERPETUAL",
+    "PROVISIONAL",
+]
+```
 ## DigitalSignatureMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import DigitalSignatureMethodType
+
+def get_value() -> DigitalSignatureMethodType:
+    return "JWT_PS384"
 ```
 
-Values:
-
-- `JWT_PS384`
-
-<a id="entitlementdataunittype"></a>
-
+```python title="Definition"
+DigitalSignatureMethodType = Literal[
+    "JWT_PS384",
+]
+```
 ## EntitlementDataUnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import EntitlementDataUnitType
+
+def get_value() -> EntitlementDataUnitType:
+    return "Bits"
 ```
 
-Values:
-
-- `Bits`
-- `Bits/Second`
-- `Bytes`
-- `Bytes/Second`
-- `Count`
-- `Count/Second`
-- `Gigabits`
-- `Gigabits/Second`
-- `Gigabytes`
-- `Gigabytes/Second`
-- `Kilobits`
-- `Kilobits/Second`
-- `Kilobytes`
-- `Kilobytes/Second`
-- `Megabits`
-- `Megabits/Second`
-- `Megabytes`
-- `Megabytes/Second`
-- `Microseconds`
-- `Milliseconds`
-- `None`
-- `Percent`
-- `Seconds`
-- `Terabits`
-- `Terabits/Second`
-- `Terabytes`
-- `Terabytes/Second`
-
-<a id="entitlementunittype"></a>
-
+```python title="Definition"
+EntitlementDataUnitType = Literal[
+    "Bits",
+    "Bits/Second",
+    "Bytes",
+    "Bytes/Second",
+    "Count",
+    "Count/Second",
+    "Gigabits",
+    "Gigabits/Second",
+    "Gigabytes",
+    "Gigabytes/Second",
+    "Kilobits",
+    "Kilobits/Second",
+    "Kilobytes",
+    "Kilobytes/Second",
+    "Megabits",
+    "Megabits/Second",
+    "Megabytes",
+    "Megabytes/Second",
+    "Microseconds",
+    "Milliseconds",
+    "None",
+    "Percent",
+    "Seconds",
+    "Terabits",
+    "Terabits/Second",
+    "Terabytes",
+    "Terabytes/Second",
+]
+```
 ## EntitlementUnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import EntitlementUnitType
+
+def get_value() -> EntitlementUnitType:
+    return "Bits"
 ```
 
-Values:
-
-- `Bits`
-- `Bits/Second`
-- `Bytes`
-- `Bytes/Second`
-- `Count`
-- `Count/Second`
-- `Gigabits`
-- `Gigabits/Second`
-- `Gigabytes`
-- `Gigabytes/Second`
-- `Kilobits`
-- `Kilobits/Second`
-- `Kilobytes`
-- `Kilobytes/Second`
-- `Megabits`
-- `Megabits/Second`
-- `Megabytes`
-- `Megabytes/Second`
-- `Microseconds`
-- `Milliseconds`
-- `None`
-- `Percent`
-- `Seconds`
-- `Terabits`
-- `Terabits/Second`
-- `Terabytes`
-- `Terabytes/Second`
-
-<a id="grantstatustype"></a>
-
+```python title="Definition"
+EntitlementUnitType = Literal[
+    "Bits",
+    "Bits/Second",
+    "Bytes",
+    "Bytes/Second",
+    "Count",
+    "Count/Second",
+    "Gigabits",
+    "Gigabits/Second",
+    "Gigabytes",
+    "Gigabytes/Second",
+    "Kilobits",
+    "Kilobits/Second",
+    "Kilobytes",
+    "Kilobytes/Second",
+    "Megabits",
+    "Megabits/Second",
+    "Megabytes",
+    "Megabytes/Second",
+    "Microseconds",
+    "Milliseconds",
+    "None",
+    "Percent",
+    "Seconds",
+    "Terabits",
+    "Terabits/Second",
+    "Terabytes",
+    "Terabytes/Second",
+]
+```
 ## GrantStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import GrantStatusType
+
+def get_value() -> GrantStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETED`
-- `DISABLED`
-- `FAILED_WORKFLOW`
-- `PENDING_ACCEPT`
-- `PENDING_DELETE`
-- `PENDING_WORKFLOW`
-- `REJECTED`
-- `WORKFLOW_COMPLETED`
-
-<a id="inventoryfilterconditiontype"></a>
-
+```python title="Definition"
+GrantStatusType = Literal[
+    "ACTIVE",
+    "DELETED",
+    "DISABLED",
+    "FAILED_WORKFLOW",
+    "PENDING_ACCEPT",
+    "PENDING_DELETE",
+    "PENDING_WORKFLOW",
+    "REJECTED",
+    "WORKFLOW_COMPLETED",
+]
+```
 ## InventoryFilterConditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import InventoryFilterConditionType
+
+def get_value() -> InventoryFilterConditionType:
+    return "BEGINS_WITH"
 ```
 
-Values:
-
-- `BEGINS_WITH`
-- `CONTAINS`
-- `EQUALS`
-- `NOT_EQUALS`
-
-<a id="licenseconfigurationstatustype"></a>
-
+```python title="Definition"
+InventoryFilterConditionType = Literal[
+    "BEGINS_WITH",
+    "CONTAINS",
+    "EQUALS",
+    "NOT_EQUALS",
+]
+```
 ## LicenseConfigurationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseConfigurationStatusType
+
+def get_value() -> LicenseConfigurationStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DISABLED`
-
-<a id="licenseconversiontaskstatustype"></a>
-
+```python title="Definition"
+LicenseConfigurationStatusType = Literal[
+    "AVAILABLE",
+    "DISABLED",
+]
+```
 ## LicenseConversionTaskStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseConversionTaskStatusType
+
+def get_value() -> LicenseConversionTaskStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="licensecountingtypetype"></a>
-
+```python title="Definition"
+LicenseConversionTaskStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## LicenseCountingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseCountingTypeType
+
+def get_value() -> LicenseCountingTypeType:
+    return "Core"
 ```
 
-Values:
-
-- `Core`
-- `Instance`
-- `Socket`
-- `vCPU`
-
-<a id="licensedeletionstatustype"></a>
-
+```python title="Definition"
+LicenseCountingTypeType = Literal[
+    "Core",
+    "Instance",
+    "Socket",
+    "vCPU",
+]
+```
 ## LicenseDeletionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseDeletionStatusType
+
+def get_value() -> LicenseDeletionStatusType:
+    return "DELETED"
 ```
 
-Values:
-
-- `DELETED`
-- `PENDING_DELETE`
-
-<a id="licensestatustype"></a>
-
+```python title="Definition"
+LicenseDeletionStatusType = Literal[
+    "DELETED",
+    "PENDING_DELETE",
+]
+```
 ## LicenseStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseStatusType
+
+def get_value() -> LicenseStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DEACTIVATED`
-- `DELETED`
-- `EXPIRED`
-- `PENDING_AVAILABLE`
-- `PENDING_DELETE`
-- `SUSPENDED`
-
-<a id="listassociationsforlicenseconfigurationpaginatorname"></a>
-
+```python title="Definition"
+LicenseStatusType = Literal[
+    "AVAILABLE",
+    "DEACTIVATED",
+    "DELETED",
+    "EXPIRED",
+    "PENDING_AVAILABLE",
+    "PENDING_DELETE",
+    "SUSPENDED",
+]
+```
 ## ListAssociationsForLicenseConfigurationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ListAssociationsForLicenseConfigurationPaginatorName
+
+def get_value() -> ListAssociationsForLicenseConfigurationPaginatorName:
+    return "list_associations_for_license_configuration"
 ```
 
-Values:
-
-- `list_associations_for_license_configuration`
-
-<a id="listlicenseconfigurationspaginatorname"></a>
-
+```python title="Definition"
+ListAssociationsForLicenseConfigurationPaginatorName = Literal[
+    "list_associations_for_license_configuration",
+]
+```
 ## ListLicenseConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ListLicenseConfigurationsPaginatorName
+
+def get_value() -> ListLicenseConfigurationsPaginatorName:
+    return "list_license_configurations"
 ```
 
-Values:
-
-- `list_license_configurations`
-
-<a id="listlicensespecificationsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListLicenseConfigurationsPaginatorName = Literal[
+    "list_license_configurations",
+]
+```
 ## ListLicenseSpecificationsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ListLicenseSpecificationsForResourcePaginatorName
+
+def get_value() -> ListLicenseSpecificationsForResourcePaginatorName:
+    return "list_license_specifications_for_resource"
 ```
 
-Values:
-
-- `list_license_specifications_for_resource`
-
-<a id="listresourceinventorypaginatorname"></a>
-
+```python title="Definition"
+ListLicenseSpecificationsForResourcePaginatorName = Literal[
+    "list_license_specifications_for_resource",
+]
+```
 ## ListResourceInventoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ListResourceInventoryPaginatorName
+
+def get_value() -> ListResourceInventoryPaginatorName:
+    return "list_resource_inventory"
 ```
 
-Values:
-
-- `list_resource_inventory`
-
-<a id="listusageforlicenseconfigurationpaginatorname"></a>
-
+```python title="Definition"
+ListResourceInventoryPaginatorName = Literal[
+    "list_resource_inventory",
+]
+```
 ## ListUsageForLicenseConfigurationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ListUsageForLicenseConfigurationPaginatorName
+
+def get_value() -> ListUsageForLicenseConfigurationPaginatorName:
+    return "list_usage_for_license_configuration"
 ```
 
-Values:
-
-- `list_usage_for_license_configuration`
-
-<a id="receivedstatustype"></a>
-
+```python title="Definition"
+ListUsageForLicenseConfigurationPaginatorName = Literal[
+    "list_usage_for_license_configuration",
+]
+```
 ## ReceivedStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ReceivedStatusType
+
+def get_value() -> ReceivedStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETED`
-- `DISABLED`
-- `FAILED_WORKFLOW`
-- `PENDING_ACCEPT`
-- `PENDING_WORKFLOW`
-- `REJECTED`
-- `WORKFLOW_COMPLETED`
-
-<a id="renewtypetype"></a>
-
+```python title="Definition"
+ReceivedStatusType = Literal[
+    "ACTIVE",
+    "DELETED",
+    "DISABLED",
+    "FAILED_WORKFLOW",
+    "PENDING_ACCEPT",
+    "PENDING_WORKFLOW",
+    "REJECTED",
+    "WORKFLOW_COMPLETED",
+]
+```
 ## RenewTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import RenewTypeType
+
+def get_value() -> RenewTypeType:
+    return "Monthly"
 ```
 
-Values:
-
-- `Monthly`
-- `None`
-- `Weekly`
-
-<a id="reportfrequencytypetype"></a>
-
+```python title="Definition"
+RenewTypeType = Literal[
+    "Monthly",
+    "None",
+    "Weekly",
+]
+```
 ## ReportFrequencyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ReportFrequencyTypeType
+
+def get_value() -> ReportFrequencyTypeType:
+    return "DAY"
 ```
 
-Values:
-
-- `DAY`
-- `MONTH`
-- `WEEK`
-
-<a id="reporttypetype"></a>
-
+```python title="Definition"
+ReportFrequencyTypeType = Literal[
+    "DAY",
+    "MONTH",
+    "WEEK",
+]
+```
 ## ReportTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ReportTypeType
+
+def get_value() -> ReportTypeType:
+    return "LicenseConfigurationSummaryReport"
 ```
 
-Values:
-
-- `LicenseConfigurationSummaryReport`
-- `LicenseConfigurationUsageReport`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ReportTypeType = Literal[
+    "LicenseConfigurationSummaryReport",
+    "LicenseConfigurationUsageReport",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "EC2_AMI"
 ```
 
-Values:
-
-- `EC2_AMI`
-- `EC2_HOST`
-- `EC2_INSTANCE`
-- `RDS`
-- `SYSTEMS_MANAGER_MANAGED_INSTANCE`
-
-<a id="tokentypetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "EC2_AMI",
+    "EC2_HOST",
+    "EC2_INSTANCE",
+    "RDS",
+    "SYSTEMS_MANAGER_MANAGED_INSTANCE",
+]
+```
 ## TokenTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import TokenTypeType
+
+def get_value() -> TokenTypeType:
+    return "REFRESH_TOKEN"
 ```
 
-Values:
-
-- `REFRESH_TOKEN`
-
-<a id="licensemanagerservicename"></a>
-
+```python title="Definition"
+TokenTypeType = Literal[
+    "REFRESH_TOKEN",
+]
+```
 ## LicenseManagerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import LicenseManagerServiceName
+
+def get_value() -> LicenseManagerServiceName:
+    return "license-manager"
 ```
 
-Values:
-
-- `license-manager`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+LicenseManagerServiceName = Literal[
+    "license-manager",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_license_manager.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_associations_for_license_configuration"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_associations_for_license_configuration",
+    "list_license_configurations",
+    "list_license_specifications_for_resource",
+    "list_resource_inventory",
+    "list_usage_for_license_configuration",
+]
+```
+## RegionName
 
-- `list_associations_for_license_configuration`
-- `list_license_configurations`
-- `list_license_specifications_for_resource`
-- `list_resource_inventory`
-- `list_usage_for_license_configuration`
+```python title="Usage Example"
+from mypy_boto3_license_manager.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

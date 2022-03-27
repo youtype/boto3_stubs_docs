@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-s3control-module"></a>
-
-# Type annotations for boto3 S3Control module
+#  S3Control module
 
 > [Index](../README.md) > S3Control
 
-Auto-generated documentation for
-[S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
-type annotations stubs module
-[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
+!!! note ""
 
-- [Type annotations for boto3 S3Control module](#type-annotations-for-boto3-s3control-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [S3ControlClient](#s3controlclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
+    type annotations stubs module [mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `S3Control`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[s3control]'
 python -m pip install mypy-boto3-s3control
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,136 +42,58 @@ python -m pip install mypy-boto3-s3control
 python -m pip uninstall -y mypy-boto3-s3control
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="s3controlclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## S3ControlClient
 
-Type annotations for `boto3.client("s3control")` as
-[S3ControlClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("s3control")` as [S3ControlClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_s3control.client import S3ControlClient
+
+def get_client() -> S3ControlClient:
+    return Session().cleint("s3control")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_access_point](./client.md#create_access_point)
-- [create_access_point_for_object_lambda](./client.md#create_access_point_for_object_lambda)
-- [create_bucket](./client.md#create_bucket)
-- [create_job](./client.md#create_job)
-- [create_multi_region_access_point](./client.md#create_multi_region_access_point)
-- [delete_access_point](./client.md#delete_access_point)
-- [delete_access_point_for_object_lambda](./client.md#delete_access_point_for_object_lambda)
-- [delete_access_point_policy](./client.md#delete_access_point_policy)
-- [delete_access_point_policy_for_object_lambda](./client.md#delete_access_point_policy_for_object_lambda)
-- [delete_bucket](./client.md#delete_bucket)
-- [delete_bucket_lifecycle_configuration](./client.md#delete_bucket_lifecycle_configuration)
-- [delete_bucket_policy](./client.md#delete_bucket_policy)
-- [delete_bucket_tagging](./client.md#delete_bucket_tagging)
-- [delete_job_tagging](./client.md#delete_job_tagging)
-- [delete_multi_region_access_point](./client.md#delete_multi_region_access_point)
-- [delete_public_access_block](./client.md#delete_public_access_block)
-- [delete_storage_lens_configuration](./client.md#delete_storage_lens_configuration)
-- [delete_storage_lens_configuration_tagging](./client.md#delete_storage_lens_configuration_tagging)
-- [describe_job](./client.md#describe_job)
-- [describe_multi_region_access_point_operation](./client.md#describe_multi_region_access_point_operation)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_access_point](./client.md#get_access_point)
-- [get_access_point_configuration_for_object_lambda](./client.md#get_access_point_configuration_for_object_lambda)
-- [get_access_point_for_object_lambda](./client.md#get_access_point_for_object_lambda)
-- [get_access_point_policy](./client.md#get_access_point_policy)
-- [get_access_point_policy_for_object_lambda](./client.md#get_access_point_policy_for_object_lambda)
-- [get_access_point_policy_status](./client.md#get_access_point_policy_status)
-- [get_access_point_policy_status_for_object_lambda](./client.md#get_access_point_policy_status_for_object_lambda)
-- [get_bucket](./client.md#get_bucket)
-- [get_bucket_lifecycle_configuration](./client.md#get_bucket_lifecycle_configuration)
-- [get_bucket_policy](./client.md#get_bucket_policy)
-- [get_bucket_tagging](./client.md#get_bucket_tagging)
-- [get_job_tagging](./client.md#get_job_tagging)
-- [get_multi_region_access_point](./client.md#get_multi_region_access_point)
-- [get_multi_region_access_point_policy](./client.md#get_multi_region_access_point_policy)
-- [get_multi_region_access_point_policy_status](./client.md#get_multi_region_access_point_policy_status)
-- [get_paginator](./client.md#get_paginator)
-- [get_public_access_block](./client.md#get_public_access_block)
-- [get_storage_lens_configuration](./client.md#get_storage_lens_configuration)
-- [get_storage_lens_configuration_tagging](./client.md#get_storage_lens_configuration_tagging)
-- [list_access_points](./client.md#list_access_points)
-- [list_access_points_for_object_lambda](./client.md#list_access_points_for_object_lambda)
-- [list_jobs](./client.md#list_jobs)
-- [list_multi_region_access_points](./client.md#list_multi_region_access_points)
-- [list_regional_buckets](./client.md#list_regional_buckets)
-- [list_storage_lens_configurations](./client.md#list_storage_lens_configurations)
-- [put_access_point_configuration_for_object_lambda](./client.md#put_access_point_configuration_for_object_lambda)
-- [put_access_point_policy](./client.md#put_access_point_policy)
-- [put_access_point_policy_for_object_lambda](./client.md#put_access_point_policy_for_object_lambda)
-- [put_bucket_lifecycle_configuration](./client.md#put_bucket_lifecycle_configuration)
-- [put_bucket_policy](./client.md#put_bucket_policy)
-- [put_bucket_tagging](./client.md#put_bucket_tagging)
-- [put_job_tagging](./client.md#put_job_tagging)
-- [put_multi_region_access_point_policy](./client.md#put_multi_region_access_point_policy)
-- [put_public_access_block](./client.md#put_public_access_block)
-- [put_storage_lens_configuration](./client.md#put_storage_lens_configuration)
-- [put_storage_lens_configuration_tagging](./client.md#put_storage_lens_configuration_tagging)
-- [update_job_priority](./client.md#update_job_priority)
-- [update_job_status](./client.md#update_job_status)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-S3ControlClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- BucketAlreadyExists
-- BucketAlreadyOwnedByYou
-- ClientError
-- IdempotencyException
-- InternalServiceException
-- InvalidNextTokenException
-- InvalidRequestException
-- JobStatusException
-- NoSuchPublicAccessBlockConfiguration
-- NotFoundException
-- TooManyRequestsException
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("s3control").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("s3control").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator, ...
+from mypy_boto3_s3control.paginator import ListAccessPointsForObjectLambdaPaginator
+
+def get_list_access_points_for_object_lambda_paginator() -> ListAccessPointsForObjectLambdaPaginator:
+    return Session().client("s3control").get_paginator("list_access_points_for_object_lambda"))
 ```
 
 - [ListAccessPointsForObjectLambdaPaginator](./paginators.md#listaccesspointsforobjectlambdapaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3control.literals import AsyncOperationNameType
 
-```python
-from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
+def get_value() -> AsyncOperationNameType:
+    return "CreateMultiRegionAccessPoint"
 ```
 
 - [AsyncOperationNameType](./literals.md#asyncoperationnametype)
@@ -232,18 +132,22 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 
-```python
-from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
+def get_value() -> AbortIncompleteMultipartUploadTypeDef:
+    return {
+        "DaysAfterInitiation": ...,
+    }
 ```
 
 - [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
@@ -346,6 +250,7 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
 - [LifecycleRuleFilterTypeDef](./type_defs.md#lifecyclerulefiltertypedef)
 - [LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)
+- [ListAccessPointsForObjectLambdaRequestListAccessPointsForObjectLambdaPaginateTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestlistaccesspointsforobjectlambdapaginatetypedef)
 - [ListAccessPointsForObjectLambdaRequestRequestTypeDef](./type_defs.md#listaccesspointsforobjectlambdarequestrequesttypedef)
 - [ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef)
 - [ListAccessPointsRequestRequestTypeDef](./type_defs.md#listaccesspointsrequestrequesttypedef)
@@ -426,3 +331,4 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [UpdateJobStatusRequestRequestTypeDef](./type_defs.md#updatejobstatusrequestrequesttypedef)
 - [UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+

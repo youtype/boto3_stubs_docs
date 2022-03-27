@@ -1,37 +1,18 @@
-<a id="paginators-for-boto3-robomaker-module"></a>
-
-# Paginators for boto3 RoboMaker module
+# Paginators
 
 > [Index](../README.md) > [RoboMaker](./README.md) > Paginators
 
-Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module
-[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+!!! note ""
 
-- [Paginators for boto3 RoboMaker module](#paginators-for-boto3-robomaker-module)
-  - [ListDeploymentJobsPaginator](#listdeploymentjobspaginator)
-  - [ListFleetsPaginator](#listfleetspaginator)
-  - [ListRobotApplicationsPaginator](#listrobotapplicationspaginator)
-  - [ListRobotsPaginator](#listrobotspaginator)
-  - [ListSimulationApplicationsPaginator](#listsimulationapplicationspaginator)
-  - [ListSimulationJobBatchesPaginator](#listsimulationjobbatchespaginator)
-  - [ListSimulationJobsPaginator](#listsimulationjobspaginator)
-  - [ListWorldExportJobsPaginator](#listworldexportjobspaginator)
-  - [ListWorldGenerationJobsPaginator](#listworldgenerationjobspaginator)
-  - [ListWorldTemplatesPaginator](#listworldtemplatespaginator)
-  - [ListWorldsPaginator](#listworldspaginator)
-
-<a id="listdeploymentjobspaginator"></a>
+    Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+    type annotations stubs module [mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ## ListDeploymentJobsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_deployment_jobs")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_deployment_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListDeploymentJobsPaginator
@@ -40,27 +21,41 @@ def get_list_deployment_jobs_paginator() -> ListDeploymentJobsPaginator:
     return Session().client("robomaker").get_paginator("list_deployment_jobs")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListDeploymentJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListDeploymentJobs)
 
-Arguments for `ListDeploymentJobsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeploymentJobsPaginator.paginate` method.
 
-`ListDeploymentJobsPaginator.paginate` returns
-`_PageIterator`\[[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDeploymentJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listfleetspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef](./type_defs.md#listdeploymentjobsrequestlistdeploymentjobspaginatetypedef) 
 ## ListFleetsPaginator
 
-Type annotations for `boto3.client("robomaker").get_paginator("list_fleets")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListFleetsPaginator
@@ -69,28 +64,41 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
     return Session().client("robomaker").get_paginator("list_fleets")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListFleets)
 
-Arguments for `ListFleetsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFleetsPaginator.paginate` method.
 
-`ListFleetsPaginator.paginate` returns
-`_PageIterator`\[[ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListFleetsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrobotapplicationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFleetsRequestListFleetsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFleetsRequestListFleetsPaginateTypeDef](./type_defs.md#listfleetsrequestlistfleetspaginatetypedef) 
 ## ListRobotApplicationsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_robot_applications")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_robot_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListRobotApplicationsPaginator
@@ -99,28 +107,42 @@ def get_list_robot_applications_paginator() -> ListRobotApplicationsPaginator:
     return Session().client("robomaker").get_paginator("list_robot_applications")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListRobotApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobotApplications)
 
-Arguments for `ListRobotApplicationsPaginator.paginate` method:
+### paginate
 
-- `versionQualifier`: `str`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRobotApplicationsPaginator.paginate` method.
 
-`ListRobotApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    versionQualifier: str = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRobotApplicationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrobotspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef = {  # (1)
+    "versionQualifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef](./type_defs.md#listrobotapplicationsrequestlistrobotapplicationspaginatetypedef) 
 ## ListRobotsPaginator
 
-Type annotations for `boto3.client("robomaker").get_paginator("list_robots")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_robots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListRobotsPaginator
@@ -129,28 +151,41 @@ def get_list_robots_paginator() -> ListRobotsPaginator:
     return Session().client("robomaker").get_paginator("list_robots")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListRobots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListRobots)
 
-Arguments for `ListRobotsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRobotsPaginator.paginate` method.
 
-`ListRobotsPaginator.paginate` returns
-`_PageIterator`\[[ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRobotsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listsimulationapplicationspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRobotsRequestListRobotsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRobotsRequestListRobotsPaginateTypeDef](./type_defs.md#listrobotsrequestlistrobotspaginatetypedef) 
 ## ListSimulationApplicationsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_simulation_applications")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_simulation_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListSimulationApplicationsPaginator
@@ -159,29 +194,42 @@ def get_list_simulation_applications_paginator() -> ListSimulationApplicationsPa
     return Session().client("robomaker").get_paginator("list_simulation_applications")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationApplications)
 
-Arguments for `ListSimulationApplicationsPaginator.paginate` method:
+### paginate
 
-- `versionQualifier`: `str`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSimulationApplicationsPaginator.paginate` method.
 
-`ListSimulationApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    versionQualifier: str = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSimulationApplicationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listsimulationjobbatchespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef = {  # (1)
+    "versionQualifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef](./type_defs.md#listsimulationapplicationsrequestlistsimulationapplicationspaginatetypedef) 
 ## ListSimulationJobBatchesPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_simulation_job_batches")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_simulation_job_batches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListSimulationJobBatchesPaginator
@@ -190,28 +238,41 @@ def get_list_simulation_job_batches_paginator() -> ListSimulationJobBatchesPagin
     return Session().client("robomaker").get_paginator("list_simulation_job_batches")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationJobBatches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobBatches)
 
-Arguments for `ListSimulationJobBatchesPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSimulationJobBatchesPaginator.paginate` method.
 
-`ListSimulationJobBatchesPaginator.paginate` returns
-`_PageIterator`\[[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSimulationJobBatchesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listsimulationjobspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef](./type_defs.md#listsimulationjobbatchesrequestlistsimulationjobbatchespaginatetypedef) 
 ## ListSimulationJobsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_simulation_jobs")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_simulation_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListSimulationJobsPaginator
@@ -220,28 +281,41 @@ def get_list_simulation_jobs_paginator() -> ListSimulationJobsPaginator:
     return Session().client("robomaker").get_paginator("list_simulation_jobs")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListSimulationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListSimulationJobs)
 
-Arguments for `ListSimulationJobsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSimulationJobsPaginator.paginate` method.
 
-`ListSimulationJobsPaginator.paginate` returns
-`_PageIterator`\[[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSimulationJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listworldexportjobspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSimulationJobsRequestListSimulationJobsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSimulationJobsRequestListSimulationJobsPaginateTypeDef](./type_defs.md#listsimulationjobsrequestlistsimulationjobspaginatetypedef) 
 ## ListWorldExportJobsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_world_export_jobs")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_world_export_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListWorldExportJobsPaginator
@@ -250,28 +324,41 @@ def get_list_world_export_jobs_paginator() -> ListWorldExportJobsPaginator:
     return Session().client("robomaker").get_paginator("list_world_export_jobs")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListWorldExportJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldExportJobs)
 
-Arguments for `ListWorldExportJobsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorldExportJobsPaginator.paginate` method.
 
-`ListWorldExportJobsPaginator.paginate` returns
-`_PageIterator`\[[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWorldExportJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listworldgenerationjobspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef](./type_defs.md#listworldexportjobsrequestlistworldexportjobspaginatetypedef) 
 ## ListWorldGenerationJobsPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_world_generation_jobs")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_world_generation_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListWorldGenerationJobsPaginator
@@ -280,28 +367,41 @@ def get_list_world_generation_jobs_paginator() -> ListWorldGenerationJobsPaginat
     return Session().client("robomaker").get_paginator("list_world_generation_jobs")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListWorldGenerationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldGenerationJobs)
 
-Arguments for `ListWorldGenerationJobsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorldGenerationJobsPaginator.paginate` method.
 
-`ListWorldGenerationJobsPaginator.paginate` returns
-`_PageIterator`\[[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWorldGenerationJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listworldtemplatespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef](./type_defs.md#listworldgenerationjobsrequestlistworldgenerationjobspaginatetypedef) 
 ## ListWorldTemplatesPaginator
 
-Type annotations for
-`boto3.client("robomaker").get_paginator("list_world_templates")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_world_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListWorldTemplatesPaginator
@@ -310,26 +410,39 @@ def get_list_world_templates_paginator() -> ListWorldTemplatesPaginator:
     return Session().client("robomaker").get_paginator("list_world_templates")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListWorldTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorldTemplates)
 
-Arguments for `ListWorldTemplatesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorldTemplatesPaginator.paginate` method.
 
-`ListWorldTemplatesPaginator.paginate` returns
-`_PageIterator`\[[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListWorldTemplatesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listworldspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef](./type_defs.md#listworldtemplatesrequestlistworldtemplatespaginatetypedef) 
 ## ListWorldsPaginator
 
-Type annotations for `boto3.client("robomaker").get_paginator("list_worlds")`.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator("list_worlds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_robomaker.paginator import ListWorldsPaginator
@@ -338,14 +451,32 @@ def get_list_worlds_paginator() -> ListWorldsPaginator:
     return Session().client("robomaker").get_paginator("list_worlds")
 ```
 
-Boto3 documentation:
-[RoboMaker.Paginator.ListWorlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Paginator.ListWorlds)
 
-Arguments for `ListWorldsPaginator.paginate` method:
+### paginate
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorldsPaginator.paginate` method.
 
-`ListWorldsPaginator.paginate` returns
-`_PageIterator`\[[ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWorldsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWorldsRequestListWorldsPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorldsRequestListWorldsPaginateTypeDef](./type_defs.md#listworldsrequestlistworldspaginatetypedef) 

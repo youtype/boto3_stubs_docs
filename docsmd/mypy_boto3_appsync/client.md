@@ -1,81 +1,18 @@
-<a id="appsyncclient-for-boto3-appsync-module"></a>
-
-# AppSyncClient for boto3 AppSync module
+# AppSyncClient
 
 > [Index](../README.md) > [AppSync](./README.md) > AppSyncClient
 
-Auto-generated documentation for
-[AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
-type annotations stubs module
-[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
+!!! note ""
 
-- [AppSyncClient for boto3 AppSync module](#appsyncclient-for-boto3-appsync-module)
-  - [AppSyncClient](#appsyncclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_api](#associate_api)
-    - [can_paginate](#can_paginate)
-    - [create_api_cache](#create_api_cache)
-    - [create_api_key](#create_api_key)
-    - [create_data_source](#create_data_source)
-    - [create_domain_name](#create_domain_name)
-    - [create_function](#create_function)
-    - [create_graphql_api](#create_graphql_api)
-    - [create_resolver](#create_resolver)
-    - [create_type](#create_type)
-    - [delete_api_cache](#delete_api_cache)
-    - [delete_api_key](#delete_api_key)
-    - [delete_data_source](#delete_data_source)
-    - [delete_domain_name](#delete_domain_name)
-    - [delete_function](#delete_function)
-    - [delete_graphql_api](#delete_graphql_api)
-    - [delete_resolver](#delete_resolver)
-    - [delete_type](#delete_type)
-    - [disassociate_api](#disassociate_api)
-    - [flush_api_cache](#flush_api_cache)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_api_association](#get_api_association)
-    - [get_api_cache](#get_api_cache)
-    - [get_data_source](#get_data_source)
-    - [get_domain_name](#get_domain_name)
-    - [get_function](#get_function)
-    - [get_graphql_api](#get_graphql_api)
-    - [get_introspection_schema](#get_introspection_schema)
-    - [get_resolver](#get_resolver)
-    - [get_schema_creation_status](#get_schema_creation_status)
-    - [get_type](#get_type)
-    - [list_api_keys](#list_api_keys)
-    - [list_data_sources](#list_data_sources)
-    - [list_domain_names](#list_domain_names)
-    - [list_functions](#list_functions)
-    - [list_graphql_apis](#list_graphql_apis)
-    - [list_resolvers](#list_resolvers)
-    - [list_resolvers_by_function](#list_resolvers_by_function)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_types](#list_types)
-    - [start_schema_creation](#start_schema_creation)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_api_cache](#update_api_cache)
-    - [update_api_key](#update_api_key)
-    - [update_data_source](#update_data_source)
-    - [update_domain_name](#update_domain_name)
-    - [update_function](#update_function)
-    - [update_graphql_api](#update_graphql_api)
-    - [update_resolver](#update_resolver)
-    - [update_type](#update_type)
-    - [get_paginator](#get_paginator)
-
-<a id="appsyncclient"></a>
+    Auto-generated documentation for [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
+    type annotations stubs module [mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 ## AppSyncClient
 
-Type annotations for `boto3.client("appsync")`
+Type annotations and code completion for `#!python boto3.client("appsync")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_appsync.client import AppSyncClient
 
@@ -83,1285 +20,1725 @@ def get_appsync_client() -> AppSyncClient:
     return Session().client("appsync")
 ```
 
-Boto3 documentation:
-[AppSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("appsync").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("appsync")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ApiKeyLimitExceededException,
+    client.ApiKeyValidityOutOfBoundsException,
+    client.ApiLimitExceededException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.GraphQLSchemaException,
+    client.InternalFailureException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_appsync.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ApiKeyLimitExceededException`
-- `Exceptions.ApiKeyValidityOutOfBoundsException`
-- `Exceptions.ApiLimitExceededException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.GraphQLSchemaException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AppSyncClient exceptions.
-
-Type annotations for `boto3.client("appsync").exceptions` method.
-
-Boto3 documentation:
-[AppSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_api"></a>
-
-### associate_api
+### associate\_api
 
 Maps an endpoint to your custom domain.
 
-Type annotations for `boto3.client("appsync").associate_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").associate_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.associate_api)
 
-Boto3 documentation:
-[AppSync.Client.associate_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.associate_api)
+```python title="Method definition"
+def associate_api(
+    self,
+    *,
+    domainName: str,
+    apiId: str,
+) -> AssociateApiResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateApiRequestRequestTypeDef](./type_defs.md#associateapirequestrequesttypedef).
+1. See [:material-code-braces: AssociateApiResponseTypeDef](./type_defs.md#associateapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateApiRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "apiId": ...,
+}
 
-Returns
-[AssociateApiResponseTypeDef](./type_defs.md#associateapiresponsetypedef).
+parent.associate_api(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateApiRequestRequestTypeDef](./type_defs.md#associateapirequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("appsync").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("appsync").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate)
 
-Boto3 documentation:
-[AppSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_api\_cache"></a>
-
-### create_api_cache
+### create\_api\_cache
 
 Creates a cache for the GraphQL API.
 
-Type annotations for `boto3.client("appsync").create_api_cache` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_api_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
 
-Boto3 documentation:
-[AppSync.Client.create_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_cache)
+```python title="Method definition"
+def create_api_cache(
+    self,
+    *,
+    apiId: str,
+    ttl: int,
+    apiCachingBehavior: ApiCachingBehaviorType,  # (1)
+    type: ApiCacheTypeType,  # (2)
+    transitEncryptionEnabled: bool = ...,
+    atRestEncryptionEnabled: bool = ...,
+) -> CreateApiCacheResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateApiCacheRequestRequestTypeDef](./type_defs.md#createapicacherequestrequesttypedef).
+1. See [:material-code-brackets: ApiCachingBehaviorType](./literals.md#apicachingbehaviortype) 
+2. See [:material-code-brackets: ApiCacheTypeType](./literals.md#apicachetypetype) 
+3. See [:material-code-braces: CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `ttl`: `int` *(required)*
-- `apiCachingBehavior`:
-  [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype) *(required)*
-- `type`: [ApiCacheTypeType](./literals.md#apicachetypetype) *(required)*
-- `transitEncryptionEnabled`: `bool`
-- `atRestEncryptionEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateApiCacheRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "ttl": ...,
+    "apiCachingBehavior": ...,
+    "type": ...,
+}
 
-Returns
-[CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef).
+parent.create_api_cache(**kwargs)
+```
 
-<a id="create\_api\_key"></a>
+1. See [:material-code-braces: CreateApiCacheRequestRequestTypeDef](./type_defs.md#createapicacherequestrequesttypedef) 
 
-### create_api_key
+### create\_api\_key
 
 Creates a unique key that you can distribute to clients who invoke your API.
 
-Type annotations for `boto3.client("appsync").create_api_key` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
 
-Boto3 documentation:
-[AppSync.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_api_key)
+```python title="Method definition"
+def create_api_key(
+    self,
+    *,
+    apiId: str,
+    description: str = ...,
+    expires: int = ...,
+) -> CreateApiKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateApiKeyRequestRequestTypeDef](./type_defs.md#createapikeyrequestrequesttypedef).
+1. See [:material-code-braces: CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `description`: `str`
-- `expires`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateApiKeyRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef).
+parent.create_api_key(**kwargs)
+```
 
-<a id="create\_data\_source"></a>
+1. See [:material-code-braces: CreateApiKeyRequestRequestTypeDef](./type_defs.md#createapikeyrequestrequesttypedef) 
 
-### create_data_source
+### create\_data\_source
 
 Creates a `DataSource` object.
 
-Type annotations for `boto3.client("appsync").create_data_source` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
 
-Boto3 documentation:
-[AppSync.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_data_source)
+```python title="Method definition"
+def create_data_source(
+    self,
+    *,
+    apiId: str,
+    name: str,
+    type: DataSourceTypeType,  # (1)
+    description: str = ...,
+    serviceRoleArn: str = ...,
+    dynamodbConfig: DynamodbDataSourceConfigTypeDef = ...,  # (2)
+    lambdaConfig: LambdaDataSourceConfigTypeDef = ...,  # (3)
+    elasticsearchConfig: ElasticsearchDataSourceConfigTypeDef = ...,  # (4)
+    openSearchServiceConfig: OpenSearchServiceDataSourceConfigTypeDef = ...,  # (5)
+    httpConfig: HttpDataSourceConfigTypeDef = ...,  # (6)
+    relationalDatabaseConfig: RelationalDatabaseDataSourceConfigTypeDef = ...,  # (7)
+) -> CreateDataSourceResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef).
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef) 
+3. See [:material-code-braces: LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef) 
+4. See [:material-code-braces: ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef) 
+5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
+6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
+7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+8. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype) *(required)*
-- `description`: `str`
-- `serviceRoleArn`: `str`
-- `dynamodbConfig`:
-  [DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef)
-- `lambdaConfig`:
-  [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
-- `elasticsearchConfig`:
-  [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
-- `openSearchServiceConfig`:
-  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
-- `httpConfig`:
-  [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
-- `relationalDatabaseConfig`:
-  [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+    "type": ...,
+}
 
-Returns
-[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+parent.create_data_source(**kwargs)
+```
 
-<a id="create\_domain\_name"></a>
+1. See [:material-code-braces: CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef) 
 
-### create_domain_name
+### create\_domain\_name
 
 Creates a custom `DomainName` object.
 
-Type annotations for `boto3.client("appsync").create_domain_name` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_domain_name)
 
-Boto3 documentation:
-[AppSync.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_domain_name)
+```python title="Method definition"
+def create_domain_name(
+    self,
+    *,
+    domainName: str,
+    certificateArn: str,
+    description: str = ...,
+) -> CreateDomainNameResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainNameRequestRequestTypeDef](./type_defs.md#createdomainnamerequestrequesttypedef).
+1. See [:material-code-braces: CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
-- `certificateArn`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "certificateArn": ...,
+}
 
-Returns
-[CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
+parent.create_domain_name(**kwargs)
+```
 
-<a id="create\_function"></a>
+1. See [:material-code-braces: CreateDomainNameRequestRequestTypeDef](./type_defs.md#createdomainnamerequestrequesttypedef) 
 
-### create_function
+### create\_function
 
 Creates a `Function` object.
 
-Type annotations for `boto3.client("appsync").create_function` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
 
-Boto3 documentation:
-[AppSync.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_function)
+```python title="Method definition"
+def create_function(
+    self,
+    *,
+    apiId: str,
+    name: str,
+    dataSourceName: str,
+    functionVersion: str,
+    description: str = ...,
+    requestMappingTemplate: str = ...,
+    responseMappingTemplate: str = ...,
+    syncConfig: SyncConfigTypeDef = ...,  # (1)
+    maxBatchSize: int = ...,
+) -> CreateFunctionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef).
+1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+2. See [:material-code-braces: CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `dataSourceName`: `str` *(required)*
-- `functionVersion`: `str` *(required)*
-- `description`: `str`
-- `requestMappingTemplate`: `str`
-- `responseMappingTemplate`: `str`
-- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `maxBatchSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+    "dataSourceName": ...,
+    "functionVersion": ...,
+}
 
-Returns
-[CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
+parent.create_function(**kwargs)
+```
 
-<a id="create\_graphql\_api"></a>
+1. See [:material-code-braces: CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef) 
 
-### create_graphql_api
+### create\_graphql\_api
 
 Creates a `GraphqlApi` object.
 
-Type annotations for `boto3.client("appsync").create_graphql_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_graphql_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
 
-Boto3 documentation:
-[AppSync.Client.create_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_graphql_api)
+```python title="Method definition"
+def create_graphql_api(
+    self,
+    *,
+    name: str,
+    authenticationType: AuthenticationTypeType,  # (1)
+    logConfig: LogConfigTypeDef = ...,  # (2)
+    userPoolConfig: UserPoolConfigTypeDef = ...,  # (3)
+    openIDConnectConfig: OpenIDConnectConfigTypeDef = ...,  # (4)
+    tags: Mapping[str, str] = ...,
+    additionalAuthenticationProviders: Sequence[AdditionalAuthenticationProviderTypeDef] = ...,  # (5)
+    xrayEnabled: bool = ...,
+    lambdaAuthorizerConfig: LambdaAuthorizerConfigTypeDef = ...,  # (6)
+) -> CreateGraphqlApiResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateGraphqlApiRequestRequestTypeDef](./type_defs.md#creategraphqlapirequestrequesttypedef).
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: LogConfigTypeDef](./type_defs.md#logconfigtypedef) 
+3. See [:material-code-braces: UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef) 
+4. See [:material-code-braces: OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef) 
+5. See [:material-code-braces: AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef) 
+6. See [:material-code-braces: LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef) 
+7. See [:material-code-braces: CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `authenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
-- `logConfig`: [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
-- `userPoolConfig`:
-  [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
-- `openIDConnectConfig`:
-  [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `additionalAuthenticationProviders`:
-  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
-- `xrayEnabled`: `bool`
-- `lambdaAuthorizerConfig`:
-  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateGraphqlApiRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "authenticationType": ...,
+}
 
-Returns
-[CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
+parent.create_graphql_api(**kwargs)
+```
 
-<a id="create\_resolver"></a>
+1. See [:material-code-braces: CreateGraphqlApiRequestRequestTypeDef](./type_defs.md#creategraphqlapirequestrequesttypedef) 
 
-### create_resolver
+### create\_resolver
 
 Creates a `Resolver` object.
 
-Type annotations for `boto3.client("appsync").create_resolver` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_resolver` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
 
-Boto3 documentation:
-[AppSync.Client.create_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_resolver)
+```python title="Method definition"
+def create_resolver(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    fieldName: str,
+    dataSourceName: str = ...,
+    requestMappingTemplate: str = ...,
+    responseMappingTemplate: str = ...,
+    kind: ResolverKindType = ...,  # (1)
+    pipelineConfig: PipelineConfigTypeDef = ...,  # (2)
+    syncConfig: SyncConfigTypeDef = ...,  # (3)
+    cachingConfig: CachingConfigTypeDef = ...,  # (4)
+    maxBatchSize: int = ...,
+) -> CreateResolverResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateResolverRequestRequestTypeDef](./type_defs.md#createresolverrequestrequesttypedef).
+1. See [:material-code-brackets: ResolverKindType](./literals.md#resolverkindtype) 
+2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
+3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
+5. See [:material-code-braces: CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `fieldName`: `str` *(required)*
-- `dataSourceName`: `str`
-- `requestMappingTemplate`: `str`
-- `responseMappingTemplate`: `str`
-- `kind`: [ResolverKindType](./literals.md#resolverkindtype)
-- `pipelineConfig`:
-  [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
-- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
-- `maxBatchSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateResolverRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "fieldName": ...,
+}
 
-Returns
-[CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
+parent.create_resolver(**kwargs)
+```
 
-<a id="create\_type"></a>
+1. See [:material-code-braces: CreateResolverRequestRequestTypeDef](./type_defs.md#createresolverrequestrequesttypedef) 
 
-### create_type
+### create\_type
 
 Creates a `Type` object.
 
-Type annotations for `boto3.client("appsync").create_type` method.
+Type annotations and code completion for `#!python boto3.client("appsync").create_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
 
-Boto3 documentation:
-[AppSync.Client.create_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.create_type)
+```python title="Method definition"
+def create_type(
+    self,
+    *,
+    apiId: str,
+    definition: str,
+    format: TypeDefinitionFormatType,  # (1)
+) -> CreateTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTypeRequestRequestTypeDef](./type_defs.md#createtyperequestrequesttypedef).
+1. See [:material-code-brackets: TypeDefinitionFormatType](./literals.md#typedefinitionformattype) 
+2. See [:material-code-braces: CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `definition`: `str` *(required)*
-- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTypeRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "definition": ...,
+    "format": ...,
+}
 
-Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
+parent.create_type(**kwargs)
+```
 
-<a id="delete\_api\_cache"></a>
+1. See [:material-code-braces: CreateTypeRequestRequestTypeDef](./type_defs.md#createtyperequestrequesttypedef) 
 
-### delete_api_cache
+### delete\_api\_cache
 
 Deletes an `ApiCache` object.
 
-Type annotations for `boto3.client("appsync").delete_api_cache` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_api_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
 
-Boto3 documentation:
-[AppSync.Client.delete_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_cache)
+```python title="Method definition"
+def delete_api_cache(
+    self,
+    *,
+    apiId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApiCacheRequestRequestTypeDef](./type_defs.md#deleteapicacherequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApiCacheRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_api_cache(**kwargs)
+```
 
-<a id="delete\_api\_key"></a>
+1. See [:material-code-braces: DeleteApiCacheRequestRequestTypeDef](./type_defs.md#deleteapicacherequestrequesttypedef) 
 
-### delete_api_key
+### delete\_api\_key
 
 Deletes an API key.
 
-Type annotations for `boto3.client("appsync").delete_api_key` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
 
-Boto3 documentation:
-[AppSync.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_api_key)
+```python title="Method definition"
+def delete_api_key(
+    self,
+    *,
+    apiId: str,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApiKeyRequestRequestTypeDef](./type_defs.md#deleteapikeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApiKeyRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_api_key(**kwargs)
+```
 
-<a id="delete\_data\_source"></a>
+1. See [:material-code-braces: DeleteApiKeyRequestRequestTypeDef](./type_defs.md#deleteapikeyrequestrequesttypedef) 
 
-### delete_data_source
+### delete\_data\_source
 
 Deletes a `DataSource` object.
 
-Type annotations for `boto3.client("appsync").delete_data_source` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
 
-Boto3 documentation:
-[AppSync.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_data_source)
+```python title="Method definition"
+def delete_data_source(
+    self,
+    *,
+    apiId: str,
+    name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSourceRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_data_source(**kwargs)
+```
 
-<a id="delete\_domain\_name"></a>
+1. See [:material-code-braces: DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef) 
 
-### delete_domain_name
+### delete\_domain\_name
 
 Deletes a custom `DomainName` object.
 
-Type annotations for `boto3.client("appsync").delete_domain_name` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_domain_name)
 
-Boto3 documentation:
-[AppSync.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_domain_name)
+```python title="Method definition"
+def delete_domain_name(
+    self,
+    *,
+    domainName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainNameRequestRequestTypeDef](./type_defs.md#deletedomainnamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_domain_name(**kwargs)
+```
 
-<a id="delete\_function"></a>
+1. See [:material-code-braces: DeleteDomainNameRequestRequestTypeDef](./type_defs.md#deletedomainnamerequestrequesttypedef) 
 
-### delete_function
+### delete\_function
 
 Deletes a `Function` .
 
-Type annotations for `boto3.client("appsync").delete_function` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
 
-Boto3 documentation:
-[AppSync.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_function)
+```python title="Method definition"
+def delete_function(
+    self,
+    *,
+    apiId: str,
+    functionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `functionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "functionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_function(**kwargs)
+```
 
-<a id="delete\_graphql\_api"></a>
+1. See [:material-code-braces: DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef) 
 
-### delete_graphql_api
+### delete\_graphql\_api
 
 Deletes a `GraphqlApi` object.
 
-Type annotations for `boto3.client("appsync").delete_graphql_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_graphql_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
 
-Boto3 documentation:
-[AppSync.Client.delete_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_graphql_api)
+```python title="Method definition"
+def delete_graphql_api(
+    self,
+    *,
+    apiId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGraphqlApiRequestRequestTypeDef](./type_defs.md#deletegraphqlapirequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGraphqlApiRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_graphql_api(**kwargs)
+```
 
-<a id="delete\_resolver"></a>
+1. See [:material-code-braces: DeleteGraphqlApiRequestRequestTypeDef](./type_defs.md#deletegraphqlapirequestrequesttypedef) 
 
-### delete_resolver
+### delete\_resolver
 
 Deletes a `Resolver` object.
 
-Type annotations for `boto3.client("appsync").delete_resolver` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_resolver` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
 
-Boto3 documentation:
-[AppSync.Client.delete_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_resolver)
+```python title="Method definition"
+def delete_resolver(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    fieldName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResolverRequestRequestTypeDef](./type_defs.md#deleteresolverrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `fieldName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResolverRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "fieldName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_resolver(**kwargs)
+```
 
-<a id="delete\_type"></a>
+1. See [:material-code-braces: DeleteResolverRequestRequestTypeDef](./type_defs.md#deleteresolverrequestrequesttypedef) 
 
-### delete_type
+### delete\_type
 
 Deletes a `Type` object.
 
-Type annotations for `boto3.client("appsync").delete_type` method.
+Type annotations and code completion for `#!python boto3.client("appsync").delete_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
 
-Boto3 documentation:
-[AppSync.Client.delete_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.delete_type)
+```python title="Method definition"
+def delete_type(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTypeRequestRequestTypeDef](./type_defs.md#deletetyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTypeRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_type(**kwargs)
+```
 
-<a id="disassociate\_api"></a>
+1. See [:material-code-braces: DeleteTypeRequestRequestTypeDef](./type_defs.md#deletetyperequestrequesttypedef) 
 
-### disassociate_api
+### disassociate\_api
 
 Removes an `ApiAssociation` object from a custom domain.
 
-Type annotations for `boto3.client("appsync").disassociate_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").disassociate_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.disassociate_api)
 
-Boto3 documentation:
-[AppSync.Client.disassociate_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.disassociate_api)
+```python title="Method definition"
+def disassociate_api(
+    self,
+    *,
+    domainName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateApiRequestRequestTypeDef](./type_defs.md#disassociateapirequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateApiRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_api(**kwargs)
+```
 
-<a id="flush\_api\_cache"></a>
+1. See [:material-code-braces: DisassociateApiRequestRequestTypeDef](./type_defs.md#disassociateapirequestrequesttypedef) 
 
-### flush_api_cache
+### flush\_api\_cache
 
 Flushes an `ApiCache` object.
 
-Type annotations for `boto3.client("appsync").flush_api_cache` method.
+Type annotations and code completion for `#!python boto3.client("appsync").flush_api_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
 
-Boto3 documentation:
-[AppSync.Client.flush_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.flush_api_cache)
+```python title="Method definition"
+def flush_api_cache(
+    self,
+    *,
+    apiId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[FlushApiCacheRequestRequestTypeDef](./type_defs.md#flushapicacherequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FlushApiCacheRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.flush_api_cache(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: FlushApiCacheRequestRequestTypeDef](./type_defs.md#flushapicacherequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("appsync").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("appsync").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AppSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_api\_association"></a>
-
-### get_api_association
+### get\_api\_association
 
 Retrieves an `ApiAssociation` object.
 
-Type annotations for `boto3.client("appsync").get_api_association` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_api_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_association)
 
-Boto3 documentation:
-[AppSync.Client.get_api_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_association)
+```python title="Method definition"
+def get_api_association(
+    self,
+    *,
+    domainName: str,
+) -> GetApiAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApiAssociationRequestRequestTypeDef](./type_defs.md#getapiassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetApiAssociationResponseTypeDef](./type_defs.md#getapiassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApiAssociationRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns
-[GetApiAssociationResponseTypeDef](./type_defs.md#getapiassociationresponsetypedef).
+parent.get_api_association(**kwargs)
+```
 
-<a id="get\_api\_cache"></a>
+1. See [:material-code-braces: GetApiAssociationRequestRequestTypeDef](./type_defs.md#getapiassociationrequestrequesttypedef) 
 
-### get_api_cache
+### get\_api\_cache
 
 Retrieves an `ApiCache` object.
 
-Type annotations for `boto3.client("appsync").get_api_cache` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_api_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
 
-Boto3 documentation:
-[AppSync.Client.get_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_api_cache)
+```python title="Method definition"
+def get_api_cache(
+    self,
+    *,
+    apiId: str,
+) -> GetApiCacheResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApiCacheRequestRequestTypeDef](./type_defs.md#getapicacherequestrequesttypedef).
+1. See [:material-code-braces: GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApiCacheRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef).
+parent.get_api_cache(**kwargs)
+```
 
-<a id="get\_data\_source"></a>
+1. See [:material-code-braces: GetApiCacheRequestRequestTypeDef](./type_defs.md#getapicacherequestrequesttypedef) 
 
-### get_data_source
+### get\_data\_source
 
 Retrieves a `DataSource` object.
 
-Type annotations for `boto3.client("appsync").get_data_source` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
 
-Boto3 documentation:
-[AppSync.Client.get_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_data_source)
+```python title="Method definition"
+def get_data_source(
+    self,
+    *,
+    apiId: str,
+    name: str,
+) -> GetDataSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataSourceRequestRequestTypeDef](./type_defs.md#getdatasourcerequestrequesttypedef).
+1. See [:material-code-braces: GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataSourceRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+}
 
-Returns
-[GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
+parent.get_data_source(**kwargs)
+```
 
-<a id="get\_domain\_name"></a>
+1. See [:material-code-braces: GetDataSourceRequestRequestTypeDef](./type_defs.md#getdatasourcerequestrequesttypedef) 
 
-### get_domain_name
+### get\_domain\_name
 
 Retrieves a custom `DomainName` object.
 
-Type annotations for `boto3.client("appsync").get_domain_name` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_domain_name)
 
-Boto3 documentation:
-[AppSync.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_domain_name)
+```python title="Method definition"
+def get_domain_name(
+    self,
+    *,
+    domainName: str,
+) -> GetDomainNameResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef).
+1. See [:material-code-braces: GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns
-[GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
+parent.get_domain_name(**kwargs)
+```
 
-<a id="get\_function"></a>
+1. See [:material-code-braces: GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef) 
 
-### get_function
+### get\_function
 
 Get a `Function` .
 
-Type annotations for `boto3.client("appsync").get_function` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
 
-Boto3 documentation:
-[AppSync.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_function)
+```python title="Method definition"
+def get_function(
+    self,
+    *,
+    apiId: str,
+    functionId: str,
+) -> GetFunctionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `functionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "functionId": ...,
+}
 
-Returns
-[GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
+parent.get_function(**kwargs)
+```
 
-<a id="get\_graphql\_api"></a>
+1. See [:material-code-braces: GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef) 
 
-### get_graphql_api
+### get\_graphql\_api
 
 Retrieves a `GraphqlApi` object.
 
-Type annotations for `boto3.client("appsync").get_graphql_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_graphql_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
 
-Boto3 documentation:
-[AppSync.Client.get_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_graphql_api)
+```python title="Method definition"
+def get_graphql_api(
+    self,
+    *,
+    apiId: str,
+) -> GetGraphqlApiResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGraphqlApiRequestRequestTypeDef](./type_defs.md#getgraphqlapirequestrequesttypedef).
+1. See [:material-code-braces: GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGraphqlApiRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef).
+parent.get_graphql_api(**kwargs)
+```
 
-<a id="get\_introspection\_schema"></a>
+1. See [:material-code-braces: GetGraphqlApiRequestRequestTypeDef](./type_defs.md#getgraphqlapirequestrequesttypedef) 
 
-### get_introspection_schema
+### get\_introspection\_schema
 
 Retrieves the introspection schema for a GraphQL API.
 
-Type annotations for `boto3.client("appsync").get_introspection_schema` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_introspection_schema` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
 
-Boto3 documentation:
-[AppSync.Client.get_introspection_schema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_introspection_schema)
+```python title="Method definition"
+def get_introspection_schema(
+    self,
+    *,
+    apiId: str,
+    format: OutputTypeType,  # (1)
+    includeDirectives: bool = ...,
+) -> GetIntrospectionSchemaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetIntrospectionSchemaRequestRequestTypeDef](./type_defs.md#getintrospectionschemarequestrequesttypedef).
+1. See [:material-code-brackets: OutputTypeType](./literals.md#outputtypetype) 
+2. See [:material-code-braces: GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `format`: [OutputTypeType](./literals.md#outputtypetype) *(required)*
-- `includeDirectives`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetIntrospectionSchemaRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "format": ...,
+}
 
-Returns
-[GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef).
+parent.get_introspection_schema(**kwargs)
+```
 
-<a id="get\_resolver"></a>
+1. See [:material-code-braces: GetIntrospectionSchemaRequestRequestTypeDef](./type_defs.md#getintrospectionschemarequestrequesttypedef) 
 
-### get_resolver
+### get\_resolver
 
 Retrieves a `Resolver` object.
 
-Type annotations for `boto3.client("appsync").get_resolver` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_resolver` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
 
-Boto3 documentation:
-[AppSync.Client.get_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_resolver)
+```python title="Method definition"
+def get_resolver(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    fieldName: str,
+) -> GetResolverResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResolverRequestRequestTypeDef](./type_defs.md#getresolverrequestrequesttypedef).
+1. See [:material-code-braces: GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `fieldName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResolverRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "fieldName": ...,
+}
 
-Returns
-[GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef).
+parent.get_resolver(**kwargs)
+```
 
-<a id="get\_schema\_creation\_status"></a>
+1. See [:material-code-braces: GetResolverRequestRequestTypeDef](./type_defs.md#getresolverrequestrequesttypedef) 
 
-### get_schema_creation_status
+### get\_schema\_creation\_status
 
 Retrieves the current status of a schema creation operation.
 
-Type annotations for `boto3.client("appsync").get_schema_creation_status`
-method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_schema_creation_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
 
-Boto3 documentation:
-[AppSync.Client.get_schema_creation_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_schema_creation_status)
+```python title="Method definition"
+def get_schema_creation_status(
+    self,
+    *,
+    apiId: str,
+) -> GetSchemaCreationStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSchemaCreationStatusRequestRequestTypeDef](./type_defs.md#getschemacreationstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSchemaCreationStatusRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef).
+parent.get_schema_creation_status(**kwargs)
+```
 
-<a id="get\_type"></a>
+1. See [:material-code-braces: GetSchemaCreationStatusRequestRequestTypeDef](./type_defs.md#getschemacreationstatusrequestrequesttypedef) 
 
-### get_type
+### get\_type
 
 Retrieves a `Type` object.
 
-Type annotations for `boto3.client("appsync").get_type` method.
+Type annotations and code completion for `#!python boto3.client("appsync").get_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
 
-Boto3 documentation:
-[AppSync.Client.get_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.get_type)
+```python title="Method definition"
+def get_type(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    format: TypeDefinitionFormatType,  # (1)
+) -> GetTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetTypeRequestRequestTypeDef](./type_defs.md#gettyperequestrequesttypedef).
+1. See [:material-code-brackets: TypeDefinitionFormatType](./literals.md#typedefinitionformattype) 
+2. See [:material-code-braces: GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTypeRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "format": ...,
+}
 
-Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
+parent.get_type(**kwargs)
+```
 
-<a id="list\_api\_keys"></a>
+1. See [:material-code-braces: GetTypeRequestRequestTypeDef](./type_defs.md#gettyperequestrequesttypedef) 
 
-### list_api_keys
+### list\_api\_keys
 
 Lists the API keys for a given API.
 
-Type annotations for `boto3.client("appsync").list_api_keys` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_api_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
 
-Boto3 documentation:
-[AppSync.Client.list_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_api_keys)
+```python title="Method definition"
+def list_api_keys(
+    self,
+    *,
+    apiId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListApiKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApiKeysRequestRequestTypeDef](./type_defs.md#listapikeysrequestrequesttypedef).
+1. See [:material-code-braces: ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListApiKeysRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef).
+parent.list_api_keys(**kwargs)
+```
 
-<a id="list\_data\_sources"></a>
+1. See [:material-code-braces: ListApiKeysRequestRequestTypeDef](./type_defs.md#listapikeysrequestrequesttypedef) 
 
-### list_data_sources
+### list\_data\_sources
 
 Lists the data sources for a given API.
 
-Type annotations for `boto3.client("appsync").list_data_sources` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_data_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
 
-Boto3 documentation:
-[AppSync.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_data_sources)
+```python title="Method definition"
+def list_data_sources(
+    self,
+    *,
+    apiId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDataSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataSourcesRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+parent.list_data_sources(**kwargs)
+```
 
-<a id="list\_domain\_names"></a>
+1. See [:material-code-braces: ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef) 
 
-### list_domain_names
+### list\_domain\_names
 
 Lists multiple custom domain names.
 
-Type annotations for `boto3.client("appsync").list_domain_names` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_domain_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_domain_names)
 
-Boto3 documentation:
-[AppSync.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_domain_names)
+```python title="Method definition"
+def list_domain_names(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDomainNamesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+1. See [:material-code-braces: ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDomainNamesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+parent.list_domain_names(**kwargs)
+```
 
-<a id="list\_functions"></a>
+1. See [:material-code-braces: ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef) 
 
-### list_functions
+### list\_functions
 
 List multiple functions.
 
-Type annotations for `boto3.client("appsync").list_functions` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_functions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
 
-Boto3 documentation:
-[AppSync.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_functions)
+```python title="Method definition"
+def list_functions(
+    self,
+    *,
+    apiId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListFunctionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef).
+1. See [:material-code-braces: ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionsRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+}
 
-Returns
-[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
+parent.list_functions(**kwargs)
+```
 
-<a id="list\_graphql\_apis"></a>
+1. See [:material-code-braces: ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef) 
 
-### list_graphql_apis
+### list\_graphql\_apis
 
 Lists your GraphQL APIs.
 
-Type annotations for `boto3.client("appsync").list_graphql_apis` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_graphql_apis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
 
-Boto3 documentation:
-[AppSync.Client.list_graphql_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_graphql_apis)
+```python title="Method definition"
+def list_graphql_apis(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListGraphqlApisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGraphqlApisRequestRequestTypeDef](./type_defs.md#listgraphqlapisrequestrequesttypedef).
+1. See [:material-code-braces: ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGraphqlApisRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef).
+parent.list_graphql_apis(**kwargs)
+```
 
-<a id="list\_resolvers"></a>
+1. See [:material-code-braces: ListGraphqlApisRequestRequestTypeDef](./type_defs.md#listgraphqlapisrequestrequesttypedef) 
 
-### list_resolvers
+### list\_resolvers
 
 Lists the resolvers for a given API and type.
 
-Type annotations for `boto3.client("appsync").list_resolvers` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_resolvers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
 
-Boto3 documentation:
-[AppSync.Client.list_resolvers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers)
+```python title="Method definition"
+def list_resolvers(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListResolversResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResolversRequestRequestTypeDef](./type_defs.md#listresolversrequestrequesttypedef).
+1. See [:material-code-braces: ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResolversRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+}
 
-Returns
-[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef).
+parent.list_resolvers(**kwargs)
+```
 
-<a id="list\_resolvers\_by\_function"></a>
+1. See [:material-code-braces: ListResolversRequestRequestTypeDef](./type_defs.md#listresolversrequestrequesttypedef) 
 
-### list_resolvers_by_function
+### list\_resolvers\_by\_function
 
 List the resolvers that are associated with a specific function.
 
-Type annotations for `boto3.client("appsync").list_resolvers_by_function`
-method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_resolvers_by_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
 
-Boto3 documentation:
-[AppSync.Client.list_resolvers_by_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_resolvers_by_function)
+```python title="Method definition"
+def list_resolvers_by_function(
+    self,
+    *,
+    apiId: str,
+    functionId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListResolversByFunctionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResolversByFunctionRequestRequestTypeDef](./type_defs.md#listresolversbyfunctionrequestrequesttypedef).
+1. See [:material-code-braces: ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `functionId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResolversByFunctionRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "functionId": ...,
+}
 
-Returns
-[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef).
+parent.list_resolvers_by_function(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResolversByFunctionRequestRequestTypeDef](./type_defs.md#listresolversbyfunctionrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for a resource.
 
-Type annotations for `boto3.client("appsync").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[AppSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_types"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_types
+### list\_types
 
 Lists the types for a given API.
 
-Type annotations for `boto3.client("appsync").list_types` method.
+Type annotations and code completion for `#!python boto3.client("appsync").list_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
 
-Boto3 documentation:
-[AppSync.Client.list_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.list_types)
+```python title="Method definition"
+def list_types(
+    self,
+    *,
+    apiId: str,
+    format: TypeDefinitionFormatType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTypesRequestRequestTypeDef](./type_defs.md#listtypesrequestrequesttypedef).
+1. See [:material-code-brackets: TypeDefinitionFormatType](./literals.md#typedefinitionformattype) 
+2. See [:material-code-braces: ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
-  *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTypesRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "format": ...,
+}
 
-Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
+parent.list_types(**kwargs)
+```
 
-<a id="start\_schema\_creation"></a>
+1. See [:material-code-braces: ListTypesRequestRequestTypeDef](./type_defs.md#listtypesrequestrequesttypedef) 
 
-### start_schema_creation
+### start\_schema\_creation
 
 Adds a new schema to your GraphQL API.
 
-Type annotations for `boto3.client("appsync").start_schema_creation` method.
+Type annotations and code completion for `#!python boto3.client("appsync").start_schema_creation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
 
-Boto3 documentation:
-[AppSync.Client.start_schema_creation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.start_schema_creation)
+```python title="Method definition"
+def start_schema_creation(
+    self,
+    *,
+    apiId: str,
+    definition: Union[bytes, IO[bytes], StreamingBody],
+) -> StartSchemaCreationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartSchemaCreationRequestRequestTypeDef](./type_defs.md#startschemacreationrequestrequesttypedef).
+1. See [:material-code-braces: StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `definition`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartSchemaCreationRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "definition": ...,
+}
 
-Returns
-[StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).
+parent.start_schema_creation(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartSchemaCreationRequestRequestTypeDef](./type_defs.md#startschemacreationrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags a resource with user-supplied tags.
 
-Type annotations for `boto3.client("appsync").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appsync").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
 
-Boto3 documentation:
-[AppSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Untags a resource.
 
-Type annotations for `boto3.client("appsync").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("appsync").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
 
-Boto3 documentation:
-[AppSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_api\_cache"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_api_cache
+### update\_api\_cache
 
 Updates the cache for the GraphQL API.
 
-Type annotations for `boto3.client("appsync").update_api_cache` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_api_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
 
-Boto3 documentation:
-[AppSync.Client.update_api_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_cache)
+```python title="Method definition"
+def update_api_cache(
+    self,
+    *,
+    apiId: str,
+    ttl: int,
+    apiCachingBehavior: ApiCachingBehaviorType,  # (1)
+    type: ApiCacheTypeType,  # (2)
+) -> UpdateApiCacheResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApiCacheRequestRequestTypeDef](./type_defs.md#updateapicacherequestrequesttypedef).
+1. See [:material-code-brackets: ApiCachingBehaviorType](./literals.md#apicachingbehaviortype) 
+2. See [:material-code-brackets: ApiCacheTypeType](./literals.md#apicachetypetype) 
+3. See [:material-code-braces: UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `ttl`: `int` *(required)*
-- `apiCachingBehavior`:
-  [ApiCachingBehaviorType](./literals.md#apicachingbehaviortype) *(required)*
-- `type`: [ApiCacheTypeType](./literals.md#apicachetypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApiCacheRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "ttl": ...,
+    "apiCachingBehavior": ...,
+    "type": ...,
+}
 
-Returns
-[UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef).
+parent.update_api_cache(**kwargs)
+```
 
-<a id="update\_api\_key"></a>
+1. See [:material-code-braces: UpdateApiCacheRequestRequestTypeDef](./type_defs.md#updateapicacherequestrequesttypedef) 
 
-### update_api_key
+### update\_api\_key
 
 Updates an API key.
 
-Type annotations for `boto3.client("appsync").update_api_key` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
 
-Boto3 documentation:
-[AppSync.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_api_key)
+```python title="Method definition"
+def update_api_key(
+    self,
+    *,
+    apiId: str,
+    id: str,
+    description: str = ...,
+    expires: int = ...,
+) -> UpdateApiKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApiKeyRequestRequestTypeDef](./type_defs.md#updateapikeyrequestrequesttypedef).
+1. See [:material-code-braces: UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `id`: `str` *(required)*
-- `description`: `str`
-- `expires`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateApiKeyRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "id": ...,
+}
 
-Returns
-[UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef).
+parent.update_api_key(**kwargs)
+```
 
-<a id="update\_data\_source"></a>
+1. See [:material-code-braces: UpdateApiKeyRequestRequestTypeDef](./type_defs.md#updateapikeyrequestrequesttypedef) 
 
-### update_data_source
+### update\_data\_source
 
 Updates a `DataSource` object.
 
-Type annotations for `boto3.client("appsync").update_data_source` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
 
-Boto3 documentation:
-[AppSync.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_data_source)
+```python title="Method definition"
+def update_data_source(
+    self,
+    *,
+    apiId: str,
+    name: str,
+    type: DataSourceTypeType,  # (1)
+    description: str = ...,
+    serviceRoleArn: str = ...,
+    dynamodbConfig: DynamodbDataSourceConfigTypeDef = ...,  # (2)
+    lambdaConfig: LambdaDataSourceConfigTypeDef = ...,  # (3)
+    elasticsearchConfig: ElasticsearchDataSourceConfigTypeDef = ...,  # (4)
+    openSearchServiceConfig: OpenSearchServiceDataSourceConfigTypeDef = ...,  # (5)
+    httpConfig: HttpDataSourceConfigTypeDef = ...,  # (6)
+    relationalDatabaseConfig: RelationalDatabaseDataSourceConfigTypeDef = ...,  # (7)
+) -> UpdateDataSourceResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef).
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef) 
+3. See [:material-code-braces: LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef) 
+4. See [:material-code-braces: ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef) 
+5. See [:material-code-braces: OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef) 
+6. See [:material-code-braces: HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef) 
+7. See [:material-code-braces: RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef) 
+8. See [:material-code-braces: UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype) *(required)*
-- `description`: `str`
-- `serviceRoleArn`: `str`
-- `dynamodbConfig`:
-  [DynamodbDataSourceConfigTypeDef](./type_defs.md#dynamodbdatasourceconfigtypedef)
-- `lambdaConfig`:
-  [LambdaDataSourceConfigTypeDef](./type_defs.md#lambdadatasourceconfigtypedef)
-- `elasticsearchConfig`:
-  [ElasticsearchDataSourceConfigTypeDef](./type_defs.md#elasticsearchdatasourceconfigtypedef)
-- `openSearchServiceConfig`:
-  [OpenSearchServiceDataSourceConfigTypeDef](./type_defs.md#opensearchservicedatasourceconfigtypedef)
-- `httpConfig`:
-  [HttpDataSourceConfigTypeDef](./type_defs.md#httpdatasourceconfigtypedef)
-- `relationalDatabaseConfig`:
-  [RelationalDatabaseDataSourceConfigTypeDef](./type_defs.md#relationaldatabasedatasourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSourceRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+    "type": ...,
+}
 
-Returns
-[UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
+parent.update_data_source(**kwargs)
+```
 
-<a id="update\_domain\_name"></a>
+1. See [:material-code-braces: UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef) 
 
-### update_domain_name
+### update\_domain\_name
 
 Updates a custom `DomainName` object.
 
-Type annotations for `boto3.client("appsync").update_domain_name` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_domain_name)
 
-Boto3 documentation:
-[AppSync.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_domain_name)
+```python title="Method definition"
+def update_domain_name(
+    self,
+    *,
+    domainName: str,
+    description: str = ...,
+) -> UpdateDomainNameResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDomainNameRequestRequestTypeDef](./type_defs.md#updatedomainnamerequestrequesttypedef).
+1. See [:material-code-braces: UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns
-[UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
+parent.update_domain_name(**kwargs)
+```
 
-<a id="update\_function"></a>
+1. See [:material-code-braces: UpdateDomainNameRequestRequestTypeDef](./type_defs.md#updatedomainnamerequestrequesttypedef) 
 
-### update_function
+### update\_function
 
 Updates a `Function` object.
 
-Type annotations for `boto3.client("appsync").update_function` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
 
-Boto3 documentation:
-[AppSync.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_function)
+```python title="Method definition"
+def update_function(
+    self,
+    *,
+    apiId: str,
+    name: str,
+    functionId: str,
+    dataSourceName: str,
+    functionVersion: str,
+    description: str = ...,
+    requestMappingTemplate: str = ...,
+    responseMappingTemplate: str = ...,
+    syncConfig: SyncConfigTypeDef = ...,  # (1)
+    maxBatchSize: int = ...,
+) -> UpdateFunctionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionRequestRequestTypeDef](./type_defs.md#updatefunctionrequestrequesttypedef).
+1. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+2. See [:material-code-braces: UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `functionId`: `str` *(required)*
-- `dataSourceName`: `str` *(required)*
-- `functionVersion`: `str` *(required)*
-- `description`: `str`
-- `requestMappingTemplate`: `str`
-- `responseMappingTemplate`: `str`
-- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `maxBatchSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+    "functionId": ...,
+    "dataSourceName": ...,
+    "functionVersion": ...,
+}
 
-Returns
-[UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
+parent.update_function(**kwargs)
+```
 
-<a id="update\_graphql\_api"></a>
+1. See [:material-code-braces: UpdateFunctionRequestRequestTypeDef](./type_defs.md#updatefunctionrequestrequesttypedef) 
 
-### update_graphql_api
+### update\_graphql\_api
 
 Updates a `GraphqlApi` object.
 
-Type annotations for `boto3.client("appsync").update_graphql_api` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_graphql_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
 
-Boto3 documentation:
-[AppSync.Client.update_graphql_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_graphql_api)
+```python title="Method definition"
+def update_graphql_api(
+    self,
+    *,
+    apiId: str,
+    name: str,
+    logConfig: LogConfigTypeDef = ...,  # (1)
+    authenticationType: AuthenticationTypeType = ...,  # (2)
+    userPoolConfig: UserPoolConfigTypeDef = ...,  # (3)
+    openIDConnectConfig: OpenIDConnectConfigTypeDef = ...,  # (4)
+    additionalAuthenticationProviders: Sequence[AdditionalAuthenticationProviderTypeDef] = ...,  # (5)
+    xrayEnabled: bool = ...,
+    lambdaAuthorizerConfig: LambdaAuthorizerConfigTypeDef = ...,  # (6)
+) -> UpdateGraphqlApiResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGraphqlApiRequestRequestTypeDef](./type_defs.md#updategraphqlapirequestrequesttypedef).
+1. See [:material-code-braces: LogConfigTypeDef](./type_defs.md#logconfigtypedef) 
+2. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+3. See [:material-code-braces: UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef) 
+4. See [:material-code-braces: OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef) 
+5. See [:material-code-braces: AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef) 
+6. See [:material-code-braces: LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef) 
+7. See [:material-code-braces: UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `logConfig`: [LogConfigTypeDef](./type_defs.md#logconfigtypedef)
-- `authenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
-- `userPoolConfig`:
-  [UserPoolConfigTypeDef](./type_defs.md#userpoolconfigtypedef)
-- `openIDConnectConfig`:
-  [OpenIDConnectConfigTypeDef](./type_defs.md#openidconnectconfigtypedef)
-- `additionalAuthenticationProviders`:
-  `Sequence`\[[AdditionalAuthenticationProviderTypeDef](./type_defs.md#additionalauthenticationprovidertypedef)\]
-- `xrayEnabled`: `bool`
-- `lambdaAuthorizerConfig`:
-  [LambdaAuthorizerConfigTypeDef](./type_defs.md#lambdaauthorizerconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateGraphqlApiRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "name": ...,
+}
 
-Returns
-[UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).
+parent.update_graphql_api(**kwargs)
+```
 
-<a id="update\_resolver"></a>
+1. See [:material-code-braces: UpdateGraphqlApiRequestRequestTypeDef](./type_defs.md#updategraphqlapirequestrequesttypedef) 
 
-### update_resolver
+### update\_resolver
 
 Updates a `Resolver` object.
 
-Type annotations for `boto3.client("appsync").update_resolver` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_resolver` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
 
-Boto3 documentation:
-[AppSync.Client.update_resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_resolver)
+```python title="Method definition"
+def update_resolver(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    fieldName: str,
+    dataSourceName: str = ...,
+    requestMappingTemplate: str = ...,
+    responseMappingTemplate: str = ...,
+    kind: ResolverKindType = ...,  # (1)
+    pipelineConfig: PipelineConfigTypeDef = ...,  # (2)
+    syncConfig: SyncConfigTypeDef = ...,  # (3)
+    cachingConfig: CachingConfigTypeDef = ...,  # (4)
+    maxBatchSize: int = ...,
+) -> UpdateResolverResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResolverRequestRequestTypeDef](./type_defs.md#updateresolverrequestrequesttypedef).
+1. See [:material-code-brackets: ResolverKindType](./literals.md#resolverkindtype) 
+2. See [:material-code-braces: PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef) 
+3. See [:material-code-braces: SyncConfigTypeDef](./type_defs.md#syncconfigtypedef) 
+4. See [:material-code-braces: CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef) 
+5. See [:material-code-braces: UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `fieldName`: `str` *(required)*
-- `dataSourceName`: `str`
-- `requestMappingTemplate`: `str`
-- `responseMappingTemplate`: `str`
-- `kind`: [ResolverKindType](./literals.md#resolverkindtype)
-- `pipelineConfig`:
-  [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
-- `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
-- `maxBatchSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateResolverRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "fieldName": ...,
+}
 
-Returns
-[UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).
+parent.update_resolver(**kwargs)
+```
 
-<a id="update\_type"></a>
+1. See [:material-code-braces: UpdateResolverRequestRequestTypeDef](./type_defs.md#updateresolverrequestrequesttypedef) 
 
-### update_type
+### update\_type
 
 Updates a `Type` object.
 
-Type annotations for `boto3.client("appsync").update_type` method.
+Type annotations and code completion for `#!python boto3.client("appsync").update_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
 
-Boto3 documentation:
-[AppSync.Client.update_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync.Client.update_type)
+```python title="Method definition"
+def update_type(
+    self,
+    *,
+    apiId: str,
+    typeName: str,
+    format: TypeDefinitionFormatType,  # (1)
+    definition: str = ...,
+) -> UpdateTypeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTypeRequestRequestTypeDef](./type_defs.md#updatetyperequestrequesttypedef).
+1. See [:material-code-brackets: TypeDefinitionFormatType](./literals.md#typedefinitionformattype) 
+2. See [:material-code-braces: UpdateTypeResponseTypeDef](./type_defs.md#updatetyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `apiId`: `str` *(required)*
-- `typeName`: `str` *(required)*
-- `format`: [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
-  *(required)*
-- `definition`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateTypeRequestRequestTypeDef = {  # (1)
+    "apiId": ...,
+    "typeName": ...,
+    "format": ...,
+}
 
-Returns [UpdateTypeResponseTypeDef](./type_defs.md#updatetyperesponsetypedef).
+parent.update_type(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTypeRequestRequestTypeDef](./type_defs.md#updatetyperequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("appsync").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("appsync").get_paginator` method with overloads.
 
-- `client.get_paginator("list_api_keys")` ->
-  [ListApiKeysPaginator](./paginators.md#listapikeyspaginator)
-- `client.get_paginator("list_data_sources")` ->
-  [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
-- `client.get_paginator("list_functions")` ->
-  [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
-- `client.get_paginator("list_graphql_apis")` ->
-  [ListGraphqlApisPaginator](./paginators.md#listgraphqlapispaginator)
-- `client.get_paginator("list_resolvers")` ->
-  [ListResolversPaginator](./paginators.md#listresolverspaginator)
-- `client.get_paginator("list_resolvers_by_function")` ->
-  [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
-- `client.get_paginator("list_types")` ->
-  [ListTypesPaginator](./paginators.md#listtypespaginator)
+- `client.get_paginator("list_api_keys")` -> [ListApiKeysPaginator](./paginators.md#listapikeyspaginator)
+- `client.get_paginator("list_data_sources")` -> [ListDataSourcesPaginator](./paginators.md#listdatasourcespaginator)
+- `client.get_paginator("list_functions")` -> [ListFunctionsPaginator](./paginators.md#listfunctionspaginator)
+- `client.get_paginator("list_graphql_apis")` -> [ListGraphqlApisPaginator](./paginators.md#listgraphqlapispaginator)
+- `client.get_paginator("list_resolvers")` -> [ListResolversPaginator](./paginators.md#listresolverspaginator)
+- `client.get_paginator("list_resolvers_by_function")` -> [ListResolversByFunctionPaginator](./paginators.md#listresolversbyfunctionpaginator)
+- `client.get_paginator("list_types")` -> [ListTypesPaginator](./paginators.md#listtypespaginator)
+
+
+

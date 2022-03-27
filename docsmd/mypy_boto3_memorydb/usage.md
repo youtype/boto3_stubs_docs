@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-memorydb-module"></a>
-
-# Examples for boto3 MemoryDB module
+# Examples
 
 > [Index](../README.md) > [MemoryDB](./README.md) > Examples
 
-- [Examples for boto3 MemoryDB module](#examples-for-boto3-memorydb-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
+    type annotations stubs module [mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[memorydb]` package installed.
 
-Write your `MemoryDB` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `MemoryDB` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MemoryDBClient
-# and provides type checking and code completion
-client = session.client("memorydb")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchUpdateClusterResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_update_cluster()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("memorydb")  # (1)
+    result = client.batch_update_cluster()  # (2)
+    ```
+
+    1. client: [MemoryDBClient](./client.md)
+    2. result: [:material-code-braces: BatchUpdateClusterResponseTypeDef](./type_defs.md#batchupdateclusterresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[memorydb]` or a standalone `mypy_boto3_memorydb`
-package, you have to explicitly specify `client: MemoryDBClient` type
-annotation.
+With `boto3-stubs-lite[memorydb]`
+or a standalone `mypy_boto3_memorydb` package, you have to explicitly specify `client: MemoryDBClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_memorydb.client import MemoryDBClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_memorydb.client import MemoryDBClient
+    from mypy_boto3_memorydb.type_defs import BatchUpdateClusterResponseTypeDef
+    from mypy_boto3_memorydb.type_defs import BatchUpdateClusterRequestRequestTypeDef
 
 
-from mypy_boto3_memorydb.type_defs import BatchUpdateClusterResponseTypeDef
+    session = Session()
+
+    client: MemoryDBClient = session.client("memorydb")
+
+    kwargs: BatchUpdateClusterRequestRequestTypeDef = {...}
+    result: BatchUpdateClusterResponseTypeDef = client.batch_update_cluster(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: MemoryDBClient = session.client("memorydb")
 
-result: BatchUpdateClusterResponseTypeDef = client.batch_update_cluster()
-```
+

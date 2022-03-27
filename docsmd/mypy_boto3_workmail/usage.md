@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-workmail-module"></a>
-
-# Examples for boto3 WorkMail module
+# Examples
 
 > [Index](../README.md) > [WorkMail](./README.md) > Examples
 
-- [Examples for boto3 WorkMail module](#examples-for-boto3-workmail-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+    type annotations stubs module [mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[workmail]` package installed.
 
-Write your `WorkMail` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `WorkMail` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WorkMailClient
-# and provides type checking and code completion
-client = session.client("workmail")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_delegate_to_resource()
 
-# paginator has type ListAliasesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_aliases")
-for item in paginator.paginate(...):
-    # item has type ListAliasesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("workmail")  # (1)
+    result = client.create_group()  # (2)
+    ```
+
+    1. client: [WorkMailClient](./client.md)
+    2. result: [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("workmail")  # (1)
+
+    paginator = client.get_paginator("list_aliases")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [WorkMailClient](./client.md)
+    2. paginator: [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+    3. item: [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[workmail]` or a standalone `mypy_boto3_workmail`
-package, you have to explicitly specify `client: WorkMailClient` type
-annotation.
+With `boto3-stubs-lite[workmail]`
+or a standalone `mypy_boto3_workmail` package, you have to explicitly specify `client: WorkMailClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_workmail.client import WorkMailClient
-from mypy_boto3_workmail.paginator import ListAliasesPaginator
-
-from mypy_boto3_workmail.literals import PaginatorName
-
-from mypy_boto3_workmail.type_defs import Dict[str, Any]
-from mypy_boto3_workmail.type_defs import ListAliasesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: WorkMailClient = session.client("workmail")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.associate_delegate_to_resource()
+    from mypy_boto3_workmail.client import WorkMailClient
+    from mypy_boto3_workmail.type_defs import CreateGroupResponseTypeDef
+    from mypy_boto3_workmail.type_defs import CreateGroupRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_aliases"
-paginator: ListAliasesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAliasesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: WorkMailClient = session.client("workmail")
+
+    kwargs: CreateGroupRequestRequestTypeDef = {...}
+    result: CreateGroupResponseTypeDef = client.create_group(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_workmail.client import WorkMailClient
+    from mypy_boto3_workmail.paginator import ListAliasesPaginator
+    from mypy_boto3_workmail.type_defs import ListAliasesResponseTypeDef
+
+
+    session = Session()
+    client: WorkMailClient = session.client("workmail")
+
+    paginator: ListAliasesPaginator = client.get_paginator("list_aliases")
+    for item in paginator.paginate(...):
+        item: ListAliasesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-cloudwatchlogs-module"></a>
-
-# Paginators for boto3 CloudWatchLogs module
+# Paginators
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > Paginators
 
-Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module
-[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
+!!! note ""
 
-- [Paginators for boto3 CloudWatchLogs module](#paginators-for-boto3-cloudwatchlogs-module)
-  - [DescribeDestinationsPaginator](#describedestinationspaginator)
-  - [DescribeExportTasksPaginator](#describeexporttaskspaginator)
-  - [DescribeLogGroupsPaginator](#describeloggroupspaginator)
-  - [DescribeLogStreamsPaginator](#describelogstreamspaginator)
-  - [DescribeMetricFiltersPaginator](#describemetricfilterspaginator)
-  - [DescribeQueriesPaginator](#describequeriespaginator)
-  - [DescribeResourcePoliciesPaginator](#describeresourcepoliciespaginator)
-  - [DescribeSubscriptionFiltersPaginator](#describesubscriptionfilterspaginator)
-  - [FilterLogEventsPaginator](#filterlogeventspaginator)
-
-<a id="describedestinationspaginator"></a>
+    Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+    type annotations stubs module [mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ## DescribeDestinationsPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_destinations")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_destinations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeDestinations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeDestinationsPaginator
@@ -38,28 +21,40 @@ def get_describe_destinations_paginator() -> DescribeDestinationsPaginator:
     return Session().client("logs").get_paginator("describe_destinations")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeDestinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeDestinations)
 
-Arguments for `DescribeDestinationsPaginator.paginate` method:
+### paginate
 
-- `DestinationNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDestinationsPaginator.paginate` method.
 
-`DescribeDestinationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DestinationNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDestinationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeexporttaskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef = {  # (1)
+    "DestinationNamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDestinationsRequestDescribeDestinationsPaginateTypeDef](./type_defs.md#describedestinationsrequestdescribedestinationspaginatetypedef) 
 ## DescribeExportTasksPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_export_tasks")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_export_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeExportTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeExportTasksPaginator
@@ -68,30 +63,42 @@ def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
     return Session().client("logs").get_paginator("describe_export_tasks")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeExportTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeExportTasks)
 
-Arguments for `DescribeExportTasksPaginator.paginate` method:
+### paginate
 
-- `taskId`: `str`
-- `statusCode`:
-  [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeExportTasksPaginator.paginate` method.
 
-`DescribeExportTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    taskId: str = ...,
+    statusCode: ExportTaskStatusCodeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeExportTasksResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeloggroupspaginator"></a>
+1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef = {  # (1)
+    "taskId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef](./type_defs.md#describeexporttasksrequestdescribeexporttaskspaginatetypedef) 
 ## DescribeLogGroupsPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_log_groups")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_log_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeLogGroupsPaginator
@@ -100,28 +107,40 @@ def get_describe_log_groups_paginator() -> DescribeLogGroupsPaginator:
     return Session().client("logs").get_paginator("describe_log_groups")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeLogGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogGroups)
 
-Arguments for `DescribeLogGroupsPaginator.paginate` method:
+### paginate
 
-- `logGroupNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLogGroupsPaginator.paginate` method.
 
-`DescribeLogGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeLogGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describelogstreamspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef = {  # (1)
+    "logGroupNamePrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLogGroupsRequestDescribeLogGroupsPaginateTypeDef](./type_defs.md#describeloggroupsrequestdescribeloggroupspaginatetypedef) 
 ## DescribeLogStreamsPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_log_streams")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_log_streams")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogStreams)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeLogStreamsPaginator
@@ -130,31 +149,44 @@ def get_describe_log_streams_paginator() -> DescribeLogStreamsPaginator:
     return Session().client("logs").get_paginator("describe_log_streams")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeLogStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeLogStreams)
 
-Arguments for `DescribeLogStreamsPaginator.paginate` method:
+### paginate
 
-- `logGroupName`: `str` *(required)*
-- `logStreamNamePrefix`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-- `descending`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeLogStreamsPaginator.paginate` method.
 
-`DescribeLogStreamsPaginator.paginate` returns
-`_PageIterator`\[[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupName: str,
+    logStreamNamePrefix: str = ...,
+    orderBy: OrderByType = ...,  # (1)
+    descending: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeLogStreamsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemetricfilterspaginator"></a>
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef = {  # (1)
+    "logGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLogStreamsRequestDescribeLogStreamsPaginateTypeDef](./type_defs.md#describelogstreamsrequestdescribelogstreamspaginatetypedef) 
 ## DescribeMetricFiltersPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_metric_filters")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_metric_filters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeMetricFilters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeMetricFiltersPaginator
@@ -163,30 +195,43 @@ def get_describe_metric_filters_paginator() -> DescribeMetricFiltersPaginator:
     return Session().client("logs").get_paginator("describe_metric_filters")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeMetricFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeMetricFilters)
 
-Arguments for `DescribeMetricFiltersPaginator.paginate` method:
+### paginate
 
-- `logGroupName`: `str`
-- `filterNamePrefix`: `str`
-- `metricName`: `str`
-- `metricNamespace`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMetricFiltersPaginator.paginate` method.
 
-`DescribeMetricFiltersPaginator.paginate` returns
-`_PageIterator`\[[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupName: str = ...,
+    filterNamePrefix: str = ...,
+    metricName: str = ...,
+    metricNamespace: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeMetricFiltersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describequeriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef = {  # (1)
+    "logGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMetricFiltersRequestDescribeMetricFiltersPaginateTypeDef](./type_defs.md#describemetricfiltersrequestdescribemetricfilterspaginatetypedef) 
 ## DescribeQueriesPaginator
 
-Type annotations for `boto3.client("logs").get_paginator("describe_queries")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_queries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeQueries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeQueriesPaginator
@@ -195,29 +240,42 @@ def get_describe_queries_paginator() -> DescribeQueriesPaginator:
     return Session().client("logs").get_paginator("describe_queries")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeQueries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeQueries)
 
-Arguments for `DescribeQueriesPaginator.paginate` method:
+### paginate
 
-- `logGroupName`: `str`
-- `status`: [QueryStatusType](./literals.md#querystatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeQueriesPaginator.paginate` method.
 
-`DescribeQueriesPaginator.paginate` returns
-`_PageIterator`\[[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupName: str = ...,
+    status: QueryStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeQueriesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeresourcepoliciespaginator"></a>
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeQueriesRequestDescribeQueriesPaginateTypeDef = {  # (1)
+    "logGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeQueriesRequestDescribeQueriesPaginateTypeDef](./type_defs.md#describequeriesrequestdescribequeriespaginatetypedef) 
 ## DescribeResourcePoliciesPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_resource_policies")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_resource_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeResourcePolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeResourcePoliciesPaginator
@@ -226,27 +284,39 @@ def get_describe_resource_policies_paginator() -> DescribeResourcePoliciesPagina
     return Session().client("logs").get_paginator("describe_resource_policies")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeResourcePolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeResourcePolicies)
 
-Arguments for `DescribeResourcePoliciesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeResourcePoliciesPaginator.paginate` method.
 
-`DescribeResourcePoliciesPaginator.paginate` returns
-`_PageIterator`\[[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeResourcePoliciesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describesubscriptionfilterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeResourcePoliciesRequestDescribeResourcePoliciesPaginateTypeDef](./type_defs.md#describeresourcepoliciesrequestdescriberesourcepoliciespaginatetypedef) 
 ## DescribeSubscriptionFiltersPaginator
 
-Type annotations for
-`boto3.client("logs").get_paginator("describe_subscription_filters")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("describe_subscription_filters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeSubscriptionFilters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import DescribeSubscriptionFiltersPaginator
@@ -255,28 +325,41 @@ def get_describe_subscription_filters_paginator() -> DescribeSubscriptionFilters
     return Session().client("logs").get_paginator("describe_subscription_filters")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.DescribeSubscriptionFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.DescribeSubscriptionFilters)
 
-Arguments for `DescribeSubscriptionFiltersPaginator.paginate` method:
+### paginate
 
-- `logGroupName`: `str` *(required)*
-- `filterNamePrefix`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSubscriptionFiltersPaginator.paginate` method.
 
-`DescribeSubscriptionFiltersPaginator.paginate` returns
-`_PageIterator`\[[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupName: str,
+    filterNamePrefix: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSubscriptionFiltersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="filterlogeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef = {  # (1)
+    "logGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSubscriptionFiltersRequestDescribeSubscriptionFiltersPaginateTypeDef](./type_defs.md#describesubscriptionfiltersrequestdescribesubscriptionfilterspaginatetypedef) 
 ## FilterLogEventsPaginator
 
-Type annotations for `boto3.client("logs").get_paginator("filter_log_events")`.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator("filter_log_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.FilterLogEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_logs.paginator import FilterLogEventsPaginator
@@ -285,20 +368,37 @@ def get_filter_log_events_paginator() -> FilterLogEventsPaginator:
     return Session().client("logs").get_paginator("filter_log_events")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Paginator.FilterLogEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Paginator.FilterLogEvents)
 
-Arguments for `FilterLogEventsPaginator.paginate` method:
+### paginate
 
-- `logGroupName`: `str` *(required)*
-- `logStreamNames`: `Sequence`\[`str`\]
-- `logStreamNamePrefix`: `str`
-- `startTime`: `int`
-- `endTime`: `int`
-- `filterPattern`: `str`
-- `interleaved`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python FilterLogEventsPaginator.paginate` method.
 
-`FilterLogEventsPaginator.paginate` returns
-`_PageIterator`\[[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    logGroupName: str,
+    logStreamNames: Sequence[str] = ...,
+    logStreamNamePrefix: str = ...,
+    startTime: int = ...,
+    endTime: int = ...,
+    filterPattern: str = ...,
+    interleaved: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[FilterLogEventsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: FilterLogEventsRequestFilterLogEventsPaginateTypeDef = {  # (1)
+    "logGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: FilterLogEventsRequestFilterLogEventsPaginateTypeDef](./type_defs.md#filterlogeventsrequestfilterlogeventspaginatetypedef) 

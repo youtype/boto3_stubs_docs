@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-codepipeline-module"></a>
-
-# Type annotations for boto3 CodePipeline module
+#  CodePipeline module
 
 > [Index](../README.md) > CodePipeline
 
-Auto-generated documentation for
-[CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
-type annotations stubs module
-[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+!!! note ""
 
-- [Type annotations for boto3 CodePipeline module](#type-annotations-for-boto3-codepipeline-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CodePipelineClient](#codepipelineclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
+    type annotations stubs module [mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CodePipeline`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[codepipeline]'
 python -m pip install mypy-boto3-codepipeline
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,129 +42,37 @@ python -m pip install mypy-boto3-codepipeline
 python -m pip uninstall -y mypy-boto3-codepipeline
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="codepipelineclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CodePipelineClient
 
-Type annotations for `boto3.client("codepipeline")` as
-[CodePipelineClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("codepipeline")` as [CodePipelineClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_codepipeline.client import CodePipelineClient
+
+def get_client() -> CodePipelineClient:
+    return Session().cleint("codepipeline")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [acknowledge_job](./client.md#acknowledge_job)
-- [acknowledge_third_party_job](./client.md#acknowledge_third_party_job)
-- [can_paginate](./client.md#can_paginate)
-- [create_custom_action_type](./client.md#create_custom_action_type)
-- [create_pipeline](./client.md#create_pipeline)
-- [delete_custom_action_type](./client.md#delete_custom_action_type)
-- [delete_pipeline](./client.md#delete_pipeline)
-- [delete_webhook](./client.md#delete_webhook)
-- [deregister_webhook_with_third_party](./client.md#deregister_webhook_with_third_party)
-- [disable_stage_transition](./client.md#disable_stage_transition)
-- [enable_stage_transition](./client.md#enable_stage_transition)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_action_type](./client.md#get_action_type)
-- [get_job_details](./client.md#get_job_details)
-- [get_paginator](./client.md#get_paginator)
-- [get_pipeline](./client.md#get_pipeline)
-- [get_pipeline_execution](./client.md#get_pipeline_execution)
-- [get_pipeline_state](./client.md#get_pipeline_state)
-- [get_third_party_job_details](./client.md#get_third_party_job_details)
-- [list_action_executions](./client.md#list_action_executions)
-- [list_action_types](./client.md#list_action_types)
-- [list_pipeline_executions](./client.md#list_pipeline_executions)
-- [list_pipelines](./client.md#list_pipelines)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_webhooks](./client.md#list_webhooks)
-- [poll_for_jobs](./client.md#poll_for_jobs)
-- [poll_for_third_party_jobs](./client.md#poll_for_third_party_jobs)
-- [put_action_revision](./client.md#put_action_revision)
-- [put_approval_result](./client.md#put_approval_result)
-- [put_job_failure_result](./client.md#put_job_failure_result)
-- [put_job_success_result](./client.md#put_job_success_result)
-- [put_third_party_job_failure_result](./client.md#put_third_party_job_failure_result)
-- [put_third_party_job_success_result](./client.md#put_third_party_job_success_result)
-- [put_webhook](./client.md#put_webhook)
-- [register_webhook_with_third_party](./client.md#register_webhook_with_third_party)
-- [retry_stage_execution](./client.md#retry_stage_execution)
-- [start_pipeline_execution](./client.md#start_pipeline_execution)
-- [stop_pipeline_execution](./client.md#stop_pipeline_execution)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_action_type](./client.md#update_action_type)
-- [update_pipeline](./client.md#update_pipeline)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CodePipelineClient [exceptions](./client.md#exceptions)
-
-- ActionNotFoundException
-- ActionTypeAlreadyExistsException
-- ActionTypeNotFoundException
-- ApprovalAlreadyCompletedException
-- ClientError
-- ConcurrentModificationException
-- ConflictException
-- DuplicatedStopRequestException
-- InvalidActionDeclarationException
-- InvalidApprovalTokenException
-- InvalidArnException
-- InvalidBlockerDeclarationException
-- InvalidClientTokenException
-- InvalidJobException
-- InvalidJobStateException
-- InvalidNextTokenException
-- InvalidNonceException
-- InvalidStageDeclarationException
-- InvalidStructureException
-- InvalidTagsException
-- InvalidWebhookAuthenticationParametersException
-- InvalidWebhookFilterPatternException
-- JobNotFoundException
-- LimitExceededException
-- NotLatestPipelineExecutionException
-- OutputVariablesSizeExceededException
-- PipelineExecutionNotFoundException
-- PipelineExecutionNotStoppableException
-- PipelineNameInUseException
-- PipelineNotFoundException
-- PipelineVersionNotFoundException
-- RequestFailedException
-- ResourceNotFoundException
-- StageNotFoundException
-- StageNotRetryableException
-- TooManyTagsException
-- ValidationException
-- WebhookNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("codepipeline").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("codepipeline").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codepipeline.paginator import ListActionExecutionsPaginator, ...
+from mypy_boto3_codepipeline.paginator import ListActionExecutionsPaginator
+
+def get_list_action_executions_paginator() -> ListActionExecutionsPaginator:
+    return Session().client("codepipeline").get_paginator("list_action_executions"))
 ```
 
 - [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
@@ -196,16 +82,23 @@ from mypy_boto3_codepipeline.paginator import ListActionExecutionsPaginator, ...
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codepipeline.literals import ActionCategoryType
 
-```python
-from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
+def get_value() -> ActionCategoryType:
+    return "Approval"
 ```
 
 - [ActionCategoryType](./literals.md#actioncategorytype)
@@ -236,18 +129,24 @@ from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef
 
-```python
-from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef, ...
+def get_value() -> AWSSessionCredentialsTypeDef:
+    return {
+        "accessKeyId": ...,
+        "secretAccessKey": ...,
+        "sessionToken": ...,
+    }
 ```
 
 - [AWSSessionCredentialsTypeDef](./type_defs.md#awssessioncredentialstypedef)
@@ -320,17 +219,23 @@ from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef, ...
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [JobWorkerExecutorConfigurationTypeDef](./type_defs.md#jobworkerexecutorconfigurationtypedef)
 - [LambdaExecutorConfigurationTypeDef](./type_defs.md#lambdaexecutorconfigurationtypedef)
+- [ListActionExecutionsInputListActionExecutionsPaginateTypeDef](./type_defs.md#listactionexecutionsinputlistactionexecutionspaginatetypedef)
 - [ListActionExecutionsInputRequestTypeDef](./type_defs.md#listactionexecutionsinputrequesttypedef)
 - [ListActionExecutionsOutputTypeDef](./type_defs.md#listactionexecutionsoutputtypedef)
+- [ListActionTypesInputListActionTypesPaginateTypeDef](./type_defs.md#listactiontypesinputlistactiontypespaginatetypedef)
 - [ListActionTypesInputRequestTypeDef](./type_defs.md#listactiontypesinputrequesttypedef)
 - [ListActionTypesOutputTypeDef](./type_defs.md#listactiontypesoutputtypedef)
+- [ListPipelineExecutionsInputListPipelineExecutionsPaginateTypeDef](./type_defs.md#listpipelineexecutionsinputlistpipelineexecutionspaginatetypedef)
 - [ListPipelineExecutionsInputRequestTypeDef](./type_defs.md#listpipelineexecutionsinputrequesttypedef)
 - [ListPipelineExecutionsOutputTypeDef](./type_defs.md#listpipelineexecutionsoutputtypedef)
+- [ListPipelinesInputListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesinputlistpipelinespaginatetypedef)
 - [ListPipelinesInputRequestTypeDef](./type_defs.md#listpipelinesinputrequesttypedef)
 - [ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)
+- [ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
 - [ListWebhookItemTypeDef](./type_defs.md#listwebhookitemtypedef)
+- [ListWebhooksInputListWebhooksPaginateTypeDef](./type_defs.md#listwebhooksinputlistwebhookspaginatetypedef)
 - [ListWebhooksInputRequestTypeDef](./type_defs.md#listwebhooksinputrequesttypedef)
 - [ListWebhooksOutputTypeDef](./type_defs.md#listwebhooksoutputtypedef)
 - [OutputArtifactTypeDef](./type_defs.md#outputartifacttypedef)
@@ -384,3 +289,4 @@ from mypy_boto3_codepipeline.type_defs import AWSSessionCredentialsTypeDef, ...
 - [WebhookAuthConfigurationTypeDef](./type_defs.md#webhookauthconfigurationtypedef)
 - [WebhookDefinitionTypeDef](./type_defs.md#webhookdefinitiontypedef)
 - [WebhookFilterRuleTypeDef](./type_defs.md#webhookfilterruletypedef)
+

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-frauddetector-module"></a>
-
-# Type annotations for boto3 FraudDetector module
+#  FraudDetector module
 
 > [Index](../README.md) > FraudDetector
 
-Auto-generated documentation for
-[FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
-type annotations stubs module
-[mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+!!! note ""
 
-- [Type annotations for boto3 FraudDetector module](#type-annotations-for-boto3-frauddetector-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [FraudDetectorClient](#frauddetectorclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
+    type annotations stubs module [mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `FraudDetector`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[frauddetector]'
 python -m pip install mypy-boto3-frauddetector
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,126 +42,41 @@ python -m pip install mypy-boto3-frauddetector
 python -m pip uninstall -y mypy-boto3-frauddetector
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="frauddetectorclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## FraudDetectorClient
 
-Type annotations for `boto3.client("frauddetector")` as
-[FraudDetectorClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("frauddetector")` as [FraudDetectorClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_frauddetector.client import FraudDetectorClient
+
+def get_client() -> FraudDetectorClient:
+    return Session().cleint("frauddetector")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [batch_create_variable](./client.md#batch_create_variable)
-- [batch_get_variable](./client.md#batch_get_variable)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_batch_import_job](./client.md#cancel_batch_import_job)
-- [cancel_batch_prediction_job](./client.md#cancel_batch_prediction_job)
-- [create_batch_import_job](./client.md#create_batch_import_job)
-- [create_batch_prediction_job](./client.md#create_batch_prediction_job)
-- [create_detector_version](./client.md#create_detector_version)
-- [create_model](./client.md#create_model)
-- [create_model_version](./client.md#create_model_version)
-- [create_rule](./client.md#create_rule)
-- [create_variable](./client.md#create_variable)
-- [delete_batch_import_job](./client.md#delete_batch_import_job)
-- [delete_batch_prediction_job](./client.md#delete_batch_prediction_job)
-- [delete_detector](./client.md#delete_detector)
-- [delete_detector_version](./client.md#delete_detector_version)
-- [delete_entity_type](./client.md#delete_entity_type)
-- [delete_event](./client.md#delete_event)
-- [delete_event_type](./client.md#delete_event_type)
-- [delete_events_by_event_type](./client.md#delete_events_by_event_type)
-- [delete_external_model](./client.md#delete_external_model)
-- [delete_label](./client.md#delete_label)
-- [delete_model](./client.md#delete_model)
-- [delete_model_version](./client.md#delete_model_version)
-- [delete_outcome](./client.md#delete_outcome)
-- [delete_rule](./client.md#delete_rule)
-- [delete_variable](./client.md#delete_variable)
-- [describe_detector](./client.md#describe_detector)
-- [describe_model_versions](./client.md#describe_model_versions)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_batch_import_jobs](./client.md#get_batch_import_jobs)
-- [get_batch_prediction_jobs](./client.md#get_batch_prediction_jobs)
-- [get_delete_events_by_event_type_status](./client.md#get_delete_events_by_event_type_status)
-- [get_detector_version](./client.md#get_detector_version)
-- [get_detectors](./client.md#get_detectors)
-- [get_entity_types](./client.md#get_entity_types)
-- [get_event](./client.md#get_event)
-- [get_event_prediction](./client.md#get_event_prediction)
-- [get_event_prediction_metadata](./client.md#get_event_prediction_metadata)
-- [get_event_types](./client.md#get_event_types)
-- [get_external_models](./client.md#get_external_models)
-- [get_kms_encryption_key](./client.md#get_kms_encryption_key)
-- [get_labels](./client.md#get_labels)
-- [get_model_version](./client.md#get_model_version)
-- [get_models](./client.md#get_models)
-- [get_outcomes](./client.md#get_outcomes)
-- [get_rules](./client.md#get_rules)
-- [get_variables](./client.md#get_variables)
-- [list_event_predictions](./client.md#list_event_predictions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_detector](./client.md#put_detector)
-- [put_entity_type](./client.md#put_entity_type)
-- [put_event_type](./client.md#put_event_type)
-- [put_external_model](./client.md#put_external_model)
-- [put_kms_encryption_key](./client.md#put_kms_encryption_key)
-- [put_label](./client.md#put_label)
-- [put_outcome](./client.md#put_outcome)
-- [send_event](./client.md#send_event)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_detector_version](./client.md#update_detector_version)
-- [update_detector_version_metadata](./client.md#update_detector_version_metadata)
-- [update_detector_version_status](./client.md#update_detector_version_status)
-- [update_event_label](./client.md#update_event_label)
-- [update_model](./client.md#update_model)
-- [update_model_version](./client.md#update_model_version)
-- [update_model_version_status](./client.md#update_model_version_status)
-- [update_rule_metadata](./client.md#update_rule_metadata)
-- [update_rule_version](./client.md#update_rule_version)
-- [update_variable](./client.md#update_variable)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-FraudDetectorClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ResourceUnavailableException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_frauddetector.literals import AsyncJobStatusType
 
-```python
-from mypy_boto3_frauddetector.literals import AsyncJobStatusType, ...
+def get_value() -> AsyncJobStatusType:
+    return "CANCELED"
 ```
 
 - [AsyncJobStatusType](./literals.md#asyncjobstatustype)
@@ -203,18 +97,22 @@ from mypy_boto3_frauddetector.literals import AsyncJobStatusType, ...
 - [FraudDetectorServiceName](./literals.md#frauddetectorservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef
 
-```python
-from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, ...
+def get_value() -> BatchCreateVariableErrorTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
 - [BatchCreateVariableErrorTypeDef](./type_defs.md#batchcreatevariableerrortypedef)
@@ -368,3 +266,4 @@ from mypy_boto3_frauddetector.type_defs import BatchCreateVariableErrorTypeDef, 
 - [VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef)
 - [VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef)
 - [VariableTypeDef](./type_defs.md#variabletypedef)
+

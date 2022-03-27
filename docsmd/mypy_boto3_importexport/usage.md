@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-importexport-module"></a>
-
-# Examples for boto3 ImportExport module
+# Examples
 
 > [Index](../README.md) > [ImportExport](./README.md) > Examples
 
-- [Examples for boto3 ImportExport module](#examples-for-boto3-importexport-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+    type annotations stubs module [mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[importexport]` package installed.
 
-Write your `ImportExport` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ImportExport` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ImportExportClient
-# and provides type checking and code completion
-client = session.client("importexport")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListJobsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_jobs")
-for item in paginator.paginate(...):
-    # item has type ListJobsOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("importexport")  # (1)
+    result = client.cancel_job()  # (2)
+    ```
+
+    1. client: [ImportExportClient](./client.md)
+    2. result: [:material-code-braces: CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("importexport")  # (1)
+
+    paginator = client.get_paginator("list_jobs")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ImportExportClient](./client.md)
+    2. paginator: [ListJobsPaginator](./paginators.md#listjobspaginator)
+    3. item: [:material-code-braces: ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[importexport]` or a standalone `mypy_boto3_importexport`
-package, you have to explicitly specify `client: ImportExportClient` type
-annotation.
+With `boto3-stubs-lite[importexport]`
+or a standalone `mypy_boto3_importexport` package, you have to explicitly specify `client: ImportExportClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_importexport.client import ImportExportClient
-from mypy_boto3_importexport.paginator import ListJobsPaginator
-
-from mypy_boto3_importexport.literals import PaginatorName
-
-from mypy_boto3_importexport.type_defs import bool
-from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ImportExportClient = session.client("importexport")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_importexport.client import ImportExportClient
+    from mypy_boto3_importexport.type_defs import CancelJobOutputTypeDef
+    from mypy_boto3_importexport.type_defs import CancelJobInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_jobs"
-paginator: ListJobsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListJobsOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ImportExportClient = session.client("importexport")
+
+    kwargs: CancelJobInputRequestTypeDef = {...}
+    result: CancelJobOutputTypeDef = client.cancel_job(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_importexport.client import ImportExportClient
+    from mypy_boto3_importexport.paginator import ListJobsPaginator
+    from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
+
+
+    session = Session()
+    client: ImportExportClient = session.client("importexport")
+
+    paginator: ListJobsPaginator = client.get_paginator("list_jobs")
+    for item in paginator.paginate(...):
+        item: ListJobsOutputTypeDef
+        print(item)
+    ```
+
+
+
+

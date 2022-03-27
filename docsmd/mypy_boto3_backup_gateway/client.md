@@ -1,48 +1,18 @@
-<a id="backupgatewayclient-for-boto3-backupgateway-module"></a>
-
-# BackupGatewayClient for boto3 BackupGateway module
+# BackupGatewayClient
 
 > [Index](../README.md) > [BackupGateway](./README.md) > BackupGatewayClient
 
-Auto-generated documentation for
-[BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
-type annotations stubs module
-[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+!!! note ""
 
-- [BackupGatewayClient for boto3 BackupGateway module](#backupgatewayclient-for-boto3-backupgateway-module)
-  - [BackupGatewayClient](#backupgatewayclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_gateway_to_server](#associate_gateway_to_server)
-    - [can_paginate](#can_paginate)
-    - [create_gateway](#create_gateway)
-    - [delete_gateway](#delete_gateway)
-    - [delete_hypervisor](#delete_hypervisor)
-    - [disassociate_gateway_from_server](#disassociate_gateway_from_server)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_hypervisor_configuration](#import_hypervisor_configuration)
-    - [list_gateways](#list_gateways)
-    - [list_hypervisors](#list_hypervisors)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_virtual_machines](#list_virtual_machines)
-    - [put_maintenance_start_time](#put_maintenance_start_time)
-    - [tag_resource](#tag_resource)
-    - [test_hypervisor_configuration](#test_hypervisor_configuration)
-    - [untag_resource](#untag_resource)
-    - [update_gateway_information](#update_gateway_information)
-    - [update_hypervisor](#update_hypervisor)
-    - [get_paginator](#get_paginator)
-
-<a id="backupgatewayclient"></a>
+    Auto-generated documentation for [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
+    type annotations stubs module [mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 ## BackupGatewayClient
 
-Type annotations for `boto3.client("backup-gateway")`
+Type annotations and code completion for `#!python boto3.client("backup-gateway")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_backup_gateway.client import BackupGatewayClient
 
@@ -50,467 +20,587 @@ def get_backup-gateway_client() -> BackupGatewayClient:
     return Session().client("backup-gateway")
 ```
 
-Boto3 documentation:
-[BackupGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("backup-gateway").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("backup-gateway")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_backup_gateway.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-BackupGatewayClient exceptions.
-
-Type annotations for `boto3.client("backup-gateway").exceptions` method.
-
-Boto3 documentation:
-[BackupGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_gateway\_to\_server"></a>
-
-### associate_gateway_to_server
+### associate\_gateway\_to\_server
 
 Associates a backup gateway with your server.
 
-Type annotations for
-`boto3.client("backup-gateway").associate_gateway_to_server` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").associate_gateway_to_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.associate_gateway_to_server)
 
-Boto3 documentation:
-[BackupGateway.Client.associate_gateway_to_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.associate_gateway_to_server)
+```python title="Method definition"
+def associate_gateway_to_server(
+    self,
+    *,
+    GatewayArn: str,
+    ServerArn: str,
+) -> AssociateGatewayToServerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateGatewayToServerInputRequestTypeDef](./type_defs.md#associategatewaytoserverinputrequesttypedef).
+1. See [:material-code-braces: AssociateGatewayToServerOutputTypeDef](./type_defs.md#associategatewaytoserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
-- `ServerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateGatewayToServerInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+    "ServerArn": ...,
+}
 
-Returns
-[AssociateGatewayToServerOutputTypeDef](./type_defs.md#associategatewaytoserveroutputtypedef).
+parent.associate_gateway_to_server(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateGatewayToServerInputRequestTypeDef](./type_defs.md#associategatewaytoserverinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("backup-gateway").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.can_paginate)
 
-Boto3 documentation:
-[BackupGateway.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_gateway"></a>
-
-### create_gateway
+### create\_gateway
 
 Creates a backup gateway.
 
-Type annotations for `boto3.client("backup-gateway").create_gateway` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").create_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.create_gateway)
 
-Boto3 documentation:
-[BackupGateway.Client.create_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.create_gateway)
+```python title="Method definition"
+def create_gateway(
+    self,
+    *,
+    ActivationKey: str,
+    GatewayDisplayName: str,
+    GatewayType: GatewayTypeType,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateGatewayOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateGatewayInputRequestTypeDef](./type_defs.md#creategatewayinputrequesttypedef).
+1. See [:material-code-brackets: GatewayTypeType](./literals.md#gatewaytypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateGatewayOutputTypeDef](./type_defs.md#creategatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ActivationKey`: `str` *(required)*
-- `GatewayDisplayName`: `str` *(required)*
-- `GatewayType`: `Literal['BACKUP_VM']` (see
-  [GatewayTypeType](./literals.md#gatewaytypetype)) *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGatewayInputRequestTypeDef = {  # (1)
+    "ActivationKey": ...,
+    "GatewayDisplayName": ...,
+    "GatewayType": ...,
+}
 
-Returns
-[CreateGatewayOutputTypeDef](./type_defs.md#creategatewayoutputtypedef).
+parent.create_gateway(**kwargs)
+```
 
-<a id="delete\_gateway"></a>
+1. See [:material-code-braces: CreateGatewayInputRequestTypeDef](./type_defs.md#creategatewayinputrequesttypedef) 
 
-### delete_gateway
+### delete\_gateway
 
 Deletes a backup gateway.
 
-Type annotations for `boto3.client("backup-gateway").delete_gateway` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").delete_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.delete_gateway)
 
-Boto3 documentation:
-[BackupGateway.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.delete_gateway)
+```python title="Method definition"
+def delete_gateway(
+    self,
+    *,
+    GatewayArn: str,
+) -> DeleteGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGatewayInputRequestTypeDef](./type_defs.md#deletegatewayinputrequesttypedef).
+1. See [:material-code-braces: DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
 
-Returns
-[DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
+parent.delete_gateway(**kwargs)
+```
 
-<a id="delete\_hypervisor"></a>
+1. See [:material-code-braces: DeleteGatewayInputRequestTypeDef](./type_defs.md#deletegatewayinputrequesttypedef) 
 
-### delete_hypervisor
+### delete\_hypervisor
 
 Deletes a hypervisor.
 
-Type annotations for `boto3.client("backup-gateway").delete_hypervisor` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").delete_hypervisor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.delete_hypervisor)
 
-Boto3 documentation:
-[BackupGateway.Client.delete_hypervisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.delete_hypervisor)
+```python title="Method definition"
+def delete_hypervisor(
+    self,
+    *,
+    HypervisorArn: str,
+) -> DeleteHypervisorOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteHypervisorInputRequestTypeDef](./type_defs.md#deletehypervisorinputrequesttypedef).
+1. See [:material-code-braces: DeleteHypervisorOutputTypeDef](./type_defs.md#deletehypervisoroutputtypedef) 
 
-Keyword-only arguments:
 
-- `HypervisorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteHypervisorInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+}
 
-Returns
-[DeleteHypervisorOutputTypeDef](./type_defs.md#deletehypervisoroutputtypedef).
+parent.delete_hypervisor(**kwargs)
+```
 
-<a id="disassociate\_gateway\_from\_server"></a>
+1. See [:material-code-braces: DeleteHypervisorInputRequestTypeDef](./type_defs.md#deletehypervisorinputrequesttypedef) 
 
-### disassociate_gateway_from_server
+### disassociate\_gateway\_from\_server
 
 Disassociates a backup gateway from the specified server.
 
-Type annotations for
-`boto3.client("backup-gateway").disassociate_gateway_from_server` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").disassociate_gateway_from_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.disassociate_gateway_from_server)
 
-Boto3 documentation:
-[BackupGateway.Client.disassociate_gateway_from_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.disassociate_gateway_from_server)
+```python title="Method definition"
+def disassociate_gateway_from_server(
+    self,
+    *,
+    GatewayArn: str,
+) -> DisassociateGatewayFromServerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateGatewayFromServerInputRequestTypeDef](./type_defs.md#disassociategatewayfromserverinputrequesttypedef).
+1. See [:material-code-braces: DisassociateGatewayFromServerOutputTypeDef](./type_defs.md#disassociategatewayfromserveroutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateGatewayFromServerInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
 
-Returns
-[DisassociateGatewayFromServerOutputTypeDef](./type_defs.md#disassociategatewayfromserveroutputtypedef).
+parent.disassociate_gateway_from_server(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateGatewayFromServerInputRequestTypeDef](./type_defs.md#disassociategatewayfromserverinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("backup-gateway").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.generate_presigned_url)
 
-Boto3 documentation:
-[BackupGateway.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_hypervisor\_configuration"></a>
-
-### import_hypervisor_configuration
+### import\_hypervisor\_configuration
 
 Connect to a hypervisor by importing its configuration.
 
-Type annotations for
-`boto3.client("backup-gateway").import_hypervisor_configuration` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").import_hypervisor_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.import_hypervisor_configuration)
 
-Boto3 documentation:
-[BackupGateway.Client.import_hypervisor_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.import_hypervisor_configuration)
+```python title="Method definition"
+def import_hypervisor_configuration(
+    self,
+    *,
+    Host: str,
+    Name: str,
+    KmsKeyArn: str = ...,
+    Password: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    Username: str = ...,
+) -> ImportHypervisorConfigurationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportHypervisorConfigurationInputRequestTypeDef](./type_defs.md#importhypervisorconfigurationinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ImportHypervisorConfigurationOutputTypeDef](./type_defs.md#importhypervisorconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Host`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `KmsKeyArn`: `str`
-- `Password`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Username`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportHypervisorConfigurationInputRequestTypeDef = {  # (1)
+    "Host": ...,
+    "Name": ...,
+}
 
-Returns
-[ImportHypervisorConfigurationOutputTypeDef](./type_defs.md#importhypervisorconfigurationoutputtypedef).
+parent.import_hypervisor_configuration(**kwargs)
+```
 
-<a id="list\_gateways"></a>
+1. See [:material-code-braces: ImportHypervisorConfigurationInputRequestTypeDef](./type_defs.md#importhypervisorconfigurationinputrequesttypedef) 
 
-### list_gateways
+### list\_gateways
 
 Lists backup gateways owned by an Amazon Web Services account in an Amazon Web
 Services Region.
 
-Type annotations for `boto3.client("backup-gateway").list_gateways` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").list_gateways` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_gateways)
 
-Boto3 documentation:
-[BackupGateway.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_gateways)
+```python title="Method definition"
+def list_gateways(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListGatewaysOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef).
+1. See [:material-code-braces: ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGatewaysInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
+parent.list_gateways(**kwargs)
+```
 
-<a id="list\_hypervisors"></a>
+1. See [:material-code-braces: ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef) 
 
-### list_hypervisors
+### list\_hypervisors
 
 Lists your hypervisors.
 
-Type annotations for `boto3.client("backup-gateway").list_hypervisors` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").list_hypervisors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_hypervisors)
 
-Boto3 documentation:
-[BackupGateway.Client.list_hypervisors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_hypervisors)
+```python title="Method definition"
+def list_hypervisors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListHypervisorsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListHypervisorsInputRequestTypeDef](./type_defs.md#listhypervisorsinputrequesttypedef).
+1. See [:material-code-braces: ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListHypervisorsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef).
+parent.list_hypervisors(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListHypervisorsInputRequestTypeDef](./type_defs.md#listhypervisorsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags applied to the resource identified by its Amazon Resource Name
 (ARN).
 
-Type annotations for `boto3.client("backup-gateway").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[BackupGateway.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_virtual\_machines"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_virtual_machines
+### list\_virtual\_machines
 
 Lists your virtual machines.
 
-Type annotations for `boto3.client("backup-gateway").list_virtual_machines`
-method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").list_virtual_machines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_virtual_machines)
 
-Boto3 documentation:
-[BackupGateway.Client.list_virtual_machines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.list_virtual_machines)
+```python title="Method definition"
+def list_virtual_machines(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListVirtualMachinesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVirtualMachinesInputRequestTypeDef](./type_defs.md#listvirtualmachinesinputrequesttypedef).
+1. See [:material-code-braces: ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVirtualMachinesInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef).
+parent.list_virtual_machines(**kwargs)
+```
 
-<a id="put\_maintenance\_start\_time"></a>
+1. See [:material-code-braces: ListVirtualMachinesInputRequestTypeDef](./type_defs.md#listvirtualmachinesinputrequesttypedef) 
 
-### put_maintenance_start_time
+### put\_maintenance\_start\_time
 
 Set the maintenance start time for a gateway.
 
-Type annotations for
-`boto3.client("backup-gateway").put_maintenance_start_time` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").put_maintenance_start_time` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.put_maintenance_start_time)
 
-Boto3 documentation:
-[BackupGateway.Client.put_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.put_maintenance_start_time)
+```python title="Method definition"
+def put_maintenance_start_time(
+    self,
+    *,
+    GatewayArn: str,
+    HourOfDay: int,
+    MinuteOfHour: int,
+    DayOfMonth: int = ...,
+    DayOfWeek: int = ...,
+) -> PutMaintenanceStartTimeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#putmaintenancestarttimeinputrequesttypedef).
+1. See [:material-code-braces: PutMaintenanceStartTimeOutputTypeDef](./type_defs.md#putmaintenancestarttimeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
-- `HourOfDay`: `int` *(required)*
-- `MinuteOfHour`: `int` *(required)*
-- `DayOfMonth`: `int`
-- `DayOfWeek`: `int`
+```python title="Usage example with kwargs"
+kwargs: PutMaintenanceStartTimeInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+    "HourOfDay": ...,
+    "MinuteOfHour": ...,
+}
 
-Returns
-[PutMaintenanceStartTimeOutputTypeDef](./type_defs.md#putmaintenancestarttimeoutputtypedef).
+parent.put_maintenance_start_time(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#putmaintenancestarttimeinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tag the resource.
 
-Type annotations for `boto3.client("backup-gateway").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.tag_resource)
 
-Boto3 documentation:
-[BackupGateway.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> TagResourceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagResourceOutputTypeDef](./type_defs.md#tagresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns [TagResourceOutputTypeDef](./type_defs.md#tagresourceoutputtypedef).
+parent.tag_resource(**kwargs)
+```
 
-<a id="test\_hypervisor\_configuration"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### test_hypervisor_configuration
+### test\_hypervisor\_configuration
 
 Tests your hypervisor configuration to validate that backup gateway can connect
 with the hypervisor and its resources.
 
-Type annotations for
-`boto3.client("backup-gateway").test_hypervisor_configuration` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").test_hypervisor_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.test_hypervisor_configuration)
 
-Boto3 documentation:
-[BackupGateway.Client.test_hypervisor_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.test_hypervisor_configuration)
+```python title="Method definition"
+def test_hypervisor_configuration(
+    self,
+    *,
+    GatewayArn: str,
+    Host: str,
+    Password: str = ...,
+    Username: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TestHypervisorConfigurationInputRequestTypeDef](./type_defs.md#testhypervisorconfigurationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
-- `Host`: `str` *(required)*
-- `Password`: `str`
-- `Username`: `str`
+```python title="Usage example with kwargs"
+kwargs: TestHypervisorConfigurationInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+    "Host": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.test_hypervisor_configuration(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestHypervisorConfigurationInputRequestTypeDef](./type_defs.md#testhypervisorconfigurationinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from the resource.
 
-Type annotations for `boto3.client("backup-gateway").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.untag_resource)
 
-Boto3 documentation:
-[BackupGateway.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> UntagResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
+1. See [:material-code-braces: UntagResourceOutputTypeDef](./type_defs.md#untagresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[UntagResourceOutputTypeDef](./type_defs.md#untagresourceoutputtypedef).
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_gateway\_information"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_gateway_information
+### update\_gateway\_information
 
 Updates a gateway's name.
 
-Type annotations for
-`boto3.client("backup-gateway").update_gateway_information` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").update_gateway_information` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.update_gateway_information)
 
-Boto3 documentation:
-[BackupGateway.Client.update_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.update_gateway_information)
+```python title="Method definition"
+def update_gateway_information(
+    self,
+    *,
+    GatewayArn: str,
+    GatewayDisplayName: str = ...,
+) -> UpdateGatewayInformationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayInformationInputRequestTypeDef](./type_defs.md#updategatewayinformationinputrequesttypedef).
+1. See [:material-code-braces: UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
-- `GatewayDisplayName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayInformationInputRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
 
-Returns
-[UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
+parent.update_gateway_information(**kwargs)
+```
 
-<a id="update\_hypervisor"></a>
+1. See [:material-code-braces: UpdateGatewayInformationInputRequestTypeDef](./type_defs.md#updategatewayinformationinputrequesttypedef) 
 
-### update_hypervisor
+### update\_hypervisor
 
 Updates a hypervisor metadata, including its host, username, and password.
 
-Type annotations for `boto3.client("backup-gateway").update_hypervisor` method.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").update_hypervisor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.update_hypervisor)
 
-Boto3 documentation:
-[BackupGateway.Client.update_hypervisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway.Client.update_hypervisor)
+```python title="Method definition"
+def update_hypervisor(
+    self,
+    *,
+    HypervisorArn: str,
+    Host: str = ...,
+    Password: str = ...,
+    Username: str = ...,
+) -> UpdateHypervisorOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateHypervisorInputRequestTypeDef](./type_defs.md#updatehypervisorinputrequesttypedef).
+1. See [:material-code-braces: UpdateHypervisorOutputTypeDef](./type_defs.md#updatehypervisoroutputtypedef) 
 
-Keyword-only arguments:
 
-- `HypervisorArn`: `str` *(required)*
-- `Host`: `str`
-- `Password`: `str`
-- `Username`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateHypervisorInputRequestTypeDef = {  # (1)
+    "HypervisorArn": ...,
+}
 
-Returns
-[UpdateHypervisorOutputTypeDef](./type_defs.md#updatehypervisoroutputtypedef).
+parent.update_hypervisor(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateHypervisorInputRequestTypeDef](./type_defs.md#updatehypervisorinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("backup-gateway").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("backup-gateway").get_paginator` method with overloads.
 
-- `client.get_paginator("list_gateways")` ->
-  [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
-- `client.get_paginator("list_hypervisors")` ->
-  [ListHypervisorsPaginator](./paginators.md#listhypervisorspaginator)
-- `client.get_paginator("list_virtual_machines")` ->
-  [ListVirtualMachinesPaginator](./paginators.md#listvirtualmachinespaginator)
+- `client.get_paginator("list_gateways")` -> [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+- `client.get_paginator("list_hypervisors")` -> [ListHypervisorsPaginator](./paginators.md#listhypervisorspaginator)
+- `client.get_paginator("list_virtual_machines")` -> [ListVirtualMachinesPaginator](./paginators.md#listvirtualmachinespaginator)
+
+
+

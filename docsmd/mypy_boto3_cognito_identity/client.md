@@ -1,56 +1,18 @@
-<a id="cognitoidentityclient-for-boto3-cognitoidentity-module"></a>
+# CognitoIdentityClient
 
-# CognitoIdentityClient for boto3 CognitoIdentity module
+> [Index](../README.md) > [CognitoIdentity](./README.md) > CognitoIdentityClient
 
-> [Index](../README.md) > [CognitoIdentity](./README.md) >
-> CognitoIdentityClient
+!!! note ""
 
-Auto-generated documentation for
-[CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
-type annotations stubs module
-[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
-
-- [CognitoIdentityClient for boto3 CognitoIdentity module](#cognitoidentityclient-for-boto3-cognitoidentity-module)
-  - [CognitoIdentityClient](#cognitoidentityclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_identity_pool](#create_identity_pool)
-    - [delete_identities](#delete_identities)
-    - [delete_identity_pool](#delete_identity_pool)
-    - [describe_identity](#describe_identity)
-    - [describe_identity_pool](#describe_identity_pool)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_credentials_for_identity](#get_credentials_for_identity)
-    - [get_id](#get_id)
-    - [get_identity_pool_roles](#get_identity_pool_roles)
-    - [get_open_id_token](#get_open_id_token)
-    - [get_open_id_token_for_developer_identity](#get_open_id_token_for_developer_identity)
-    - [get_principal_tag_attribute_map](#get_principal_tag_attribute_map)
-    - [list_identities](#list_identities)
-    - [list_identity_pools](#list_identity_pools)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [lookup_developer_identity](#lookup_developer_identity)
-    - [merge_developer_identities](#merge_developer_identities)
-    - [set_identity_pool_roles](#set_identity_pool_roles)
-    - [set_principal_tag_attribute_map](#set_principal_tag_attribute_map)
-    - [tag_resource](#tag_resource)
-    - [unlink_developer_identity](#unlink_developer_identity)
-    - [unlink_identity](#unlink_identity)
-    - [untag_resource](#untag_resource)
-    - [update_identity_pool](#update_identity_pool)
-    - [get_paginator](#get_paginator)
-
-<a id="cognitoidentityclient"></a>
+    Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+    type annotations stubs module [mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 ## CognitoIdentityClient
 
-Type annotations for `boto3.client("cognito-identity")`
+Type annotations and code completion for `#!python boto3.client("cognito-identity")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 
@@ -58,644 +20,827 @@ def get_cognito-identity_client() -> CognitoIdentityClient:
     return Session().client("cognito-identity")
 ```
 
-Boto3 documentation:
-[CognitoIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cognito-identity").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cognito-identity")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.DeveloperUserAlreadyRegisteredException,
+    client.ExternalServiceException,
+    client.InternalErrorException,
+    client.InvalidIdentityPoolConfigurationException,
+    client.InvalidParameterException,
+    client.LimitExceededException,
+    client.NotAuthorizedException,
+    client.ResourceConflictException,
+    client.ResourceNotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cognito_identity.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.DeveloperUserAlreadyRegisteredException`
-- `Exceptions.ExternalServiceException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidIdentityPoolConfigurationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CognitoIdentityClient exceptions.
-
-Type annotations for `boto3.client("cognito-identity").exceptions` method.
-
-Boto3 documentation:
-[CognitoIdentity.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cognito-identity").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
 
-Boto3 documentation:
-[CognitoIdentity.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_identity\_pool"></a>
-
-### create_identity_pool
+### create\_identity\_pool
 
 Creates a new identity pool.
 
-Type annotations for `boto3.client("cognito-identity").create_identity_pool`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").create_identity_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
 
-Boto3 documentation:
-[CognitoIdentity.Client.create_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.create_identity_pool)
+```python title="Method definition"
+def create_identity_pool(
+    self,
+    *,
+    IdentityPoolName: str,
+    AllowUnauthenticatedIdentities: bool,
+    AllowClassicFlow: bool = ...,
+    SupportedLoginProviders: Mapping[str, str] = ...,
+    DeveloperProviderName: str = ...,
+    OpenIdConnectProviderARNs: Sequence[str] = ...,
+    CognitoIdentityProviders: Sequence[CognitoIdentityProviderTypeDef] = ...,  # (1)
+    SamlProviderARNs: Sequence[str] = ...,
+    IdentityPoolTags: Mapping[str, str] = ...,
+) -> IdentityPoolTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIdentityPoolInputRequestTypeDef](./type_defs.md#createidentitypoolinputrequesttypedef).
+1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
+2. See [:material-code-braces: IdentityPoolTypeDef](./type_defs.md#identitypooltypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolName`: `str` *(required)*
-- `AllowUnauthenticatedIdentities`: `bool` *(required)*
-- `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
-- `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
-- `CognitoIdentityProviders`:
-  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `Sequence`\[`str`\]
-- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateIdentityPoolInputRequestTypeDef = {  # (1)
+    "IdentityPoolName": ...,
+    "AllowUnauthenticatedIdentities": ...,
+}
 
-Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
+parent.create_identity_pool(**kwargs)
+```
 
-<a id="delete\_identities"></a>
+1. See [:material-code-braces: CreateIdentityPoolInputRequestTypeDef](./type_defs.md#createidentitypoolinputrequesttypedef) 
 
-### delete_identities
+### delete\_identities
 
 Deletes identities from an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").delete_identities`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").delete_identities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
 
-Boto3 documentation:
-[CognitoIdentity.Client.delete_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identities)
+```python title="Method definition"
+def delete_identities(
+    self,
+    *,
+    IdentityIdsToDelete: Sequence[str],
+) -> DeleteIdentitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteIdentitiesInputRequestTypeDef](./type_defs.md#deleteidentitiesinputrequesttypedef).
+1. See [:material-code-braces: DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityIdsToDelete`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIdentitiesInputRequestTypeDef = {  # (1)
+    "IdentityIdsToDelete": ...,
+}
 
-Returns
-[DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
+parent.delete_identities(**kwargs)
+```
 
-<a id="delete\_identity\_pool"></a>
+1. See [:material-code-braces: DeleteIdentitiesInputRequestTypeDef](./type_defs.md#deleteidentitiesinputrequesttypedef) 
 
-### delete_identity_pool
+### delete\_identity\_pool
 
 Deletes an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").delete_identity_pool`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").delete_identity_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
 
-Boto3 documentation:
-[CognitoIdentity.Client.delete_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.delete_identity_pool)
+```python title="Method definition"
+def delete_identity_pool(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIdentityPoolInputRequestTypeDef](./type_defs.md#deleteidentitypoolinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIdentityPoolInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-<a id="describe\_identity"></a>
+parent.delete_identity_pool(**kwargs)
+```
 
-### describe_identity
+1. See [:material-code-braces: DeleteIdentityPoolInputRequestTypeDef](./type_defs.md#deleteidentitypoolinputrequesttypedef) 
+
+### describe\_identity
 
 Returns metadata related to the given identity, including when the identity was
 created and any associated linked logins.
 
-Type annotations for `boto3.client("cognito-identity").describe_identity`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").describe_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.describe_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity)
+```python title="Method definition"
+def describe_identity(
+    self,
+    *,
+    IdentityId: str,
+) -> IdentityDescriptionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityInputRequestTypeDef](./type_defs.md#describeidentityinputrequesttypedef).
+1. See [:material-code-braces: IdentityDescriptionResponseMetadataTypeDef](./type_defs.md#identitydescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `IdentityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityInputRequestTypeDef = {  # (1)
+    "IdentityId": ...,
+}
 
-Returns
-[IdentityDescriptionResponseMetadataTypeDef](./type_defs.md#identitydescriptionresponsemetadatatypedef).
+parent.describe_identity(**kwargs)
+```
 
-<a id="describe\_identity\_pool"></a>
+1. See [:material-code-braces: DescribeIdentityInputRequestTypeDef](./type_defs.md#describeidentityinputrequesttypedef) 
 
-### describe_identity_pool
+### describe\_identity\_pool
 
 Gets details about a particular identity pool, including the pool name, ID
 description, creation date, and current number of users.
 
-Type annotations for `boto3.client("cognito-identity").describe_identity_pool`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").describe_identity_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
 
-Boto3 documentation:
-[CognitoIdentity.Client.describe_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.describe_identity_pool)
+```python title="Method definition"
+def describe_identity_pool(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> IdentityPoolTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityPoolInputRequestTypeDef](./type_defs.md#describeidentitypoolinputrequesttypedef).
+1. See [:material-code-braces: IdentityPoolTypeDef](./type_defs.md#identitypooltypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityPoolInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
+parent.describe_identity_pool(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeIdentityPoolInputRequestTypeDef](./type_defs.md#describeidentitypoolinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cognito-identity").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CognitoIdentity.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_credentials\_for\_identity"></a>
-
-### get_credentials_for_identity
+### get\_credentials\_for\_identity
 
 Returns credentials for the provided identity ID.
 
-Type annotations for
-`boto3.client("cognito-identity").get_credentials_for_identity` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_credentials_for_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_credentials_for_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_credentials_for_identity)
+```python title="Method definition"
+def get_credentials_for_identity(
+    self,
+    *,
+    IdentityId: str,
+    Logins: Mapping[str, str] = ...,
+    CustomRoleArn: str = ...,
+) -> GetCredentialsForIdentityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCredentialsForIdentityInputRequestTypeDef](./type_defs.md#getcredentialsforidentityinputrequesttypedef).
+1. See [:material-code-braces: GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityId`: `str` *(required)*
-- `Logins`: `Mapping`\[`str`, `str`\]
-- `CustomRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCredentialsForIdentityInputRequestTypeDef = {  # (1)
+    "IdentityId": ...,
+}
 
-Returns
-[GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef).
+parent.get_credentials_for_identity(**kwargs)
+```
 
-<a id="get\_id"></a>
+1. See [:material-code-braces: GetCredentialsForIdentityInputRequestTypeDef](./type_defs.md#getcredentialsforidentityinputrequesttypedef) 
 
-### get_id
+### get\_id
 
 Generates (or retrieves) a Cognito ID.
 
-Type annotations for `boto3.client("cognito-identity").get_id` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_id)
+```python title="Method definition"
+def get_id(
+    self,
+    *,
+    IdentityPoolId: str,
+    AccountId: str = ...,
+    Logins: Mapping[str, str] = ...,
+) -> GetIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIdInputRequestTypeDef](./type_defs.md#getidinputrequesttypedef).
+1. See [:material-code-braces: GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `AccountId`: `str`
-- `Logins`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetIdInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
+parent.get_id(**kwargs)
+```
 
-<a id="get\_identity\_pool\_roles"></a>
+1. See [:material-code-braces: GetIdInputRequestTypeDef](./type_defs.md#getidinputrequesttypedef) 
 
-### get_identity_pool_roles
+### get\_identity\_pool\_roles
 
 Gets the roles for an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").get_identity_pool_roles`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_identity_pool_roles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_identity_pool_roles)
+```python title="Method definition"
+def get_identity_pool_roles(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> GetIdentityPoolRolesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#getidentitypoolrolesinputrequesttypedef).
+1. See [:material-code-braces: GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIdentityPoolRolesInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef).
+parent.get_identity_pool_roles(**kwargs)
+```
 
-<a id="get\_open\_id\_token"></a>
+1. See [:material-code-braces: GetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#getidentitypoolrolesinputrequesttypedef) 
 
-### get_open_id_token
+### get\_open\_id\_token
 
 Gets an OpenID token, using a known Cognito ID.
 
-Type annotations for `boto3.client("cognito-identity").get_open_id_token`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_open_id_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_open_id_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token)
+```python title="Method definition"
+def get_open_id_token(
+    self,
+    *,
+    IdentityId: str,
+    Logins: Mapping[str, str] = ...,
+) -> GetOpenIdTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOpenIdTokenInputRequestTypeDef](./type_defs.md#getopenidtokeninputrequesttypedef).
+1. See [:material-code-braces: GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityId`: `str` *(required)*
-- `Logins`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetOpenIdTokenInputRequestTypeDef = {  # (1)
+    "IdentityId": ...,
+}
 
-Returns
-[GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
+parent.get_open_id_token(**kwargs)
+```
 
-<a id="get\_open\_id\_token\_for\_developer\_identity"></a>
+1. See [:material-code-braces: GetOpenIdTokenInputRequestTypeDef](./type_defs.md#getopenidtokeninputrequesttypedef) 
 
-### get_open_id_token_for_developer_identity
+### get\_open\_id\_token\_for\_developer\_identity
 
 Registers (or retrieves) a Cognito `IdentityId` and an OpenID Connect token for
 a user authenticated by your backend authentication process.
 
-Type annotations for
-`boto3.client("cognito-identity").get_open_id_token_for_developer_identity`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_open_id_token_for_developer_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_open_id_token_for_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_open_id_token_for_developer_identity)
+```python title="Method definition"
+def get_open_id_token_for_developer_identity(
+    self,
+    *,
+    IdentityPoolId: str,
+    Logins: Mapping[str, str],
+    IdentityId: str = ...,
+    PrincipalTags: Mapping[str, str] = ...,
+    TokenDuration: int = ...,
+) -> GetOpenIdTokenForDeveloperIdentityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityinputrequesttypedef).
+1. See [:material-code-braces: GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `Logins`: `Mapping`\[`str`, `str`\] *(required)*
-- `IdentityId`: `str`
-- `PrincipalTags`: `Mapping`\[`str`, `str`\]
-- `TokenDuration`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "Logins": ...,
+}
 
-Returns
-[GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef).
+parent.get_open_id_token_for_developer_identity(**kwargs)
+```
 
-<a id="get\_principal\_tag\_attribute\_map"></a>
+1. See [:material-code-braces: GetOpenIdTokenForDeveloperIdentityInputRequestTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityinputrequesttypedef) 
 
-### get_principal_tag_attribute_map
+### get\_principal\_tag\_attribute\_map
 
 Use `GetPrincipalTagAttributeMap` to list all mappings between `PrincipalTags`
 and user attributes.
 
-Type annotations for
-`boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_principal_tag_attribute_map` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
 
-Boto3 documentation:
-[CognitoIdentity.Client.get_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.get_principal_tag_attribute_map)
+```python title="Method definition"
+def get_principal_tag_attribute_map(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityProviderName: str,
+) -> GetPrincipalTagAttributeMapResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#getprincipaltagattributemapinputrequesttypedef).
+1. See [:material-code-braces: GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityProviderName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPrincipalTagAttributeMapInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityProviderName": ...,
+}
 
-Returns
-[GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef).
+parent.get_principal_tag_attribute_map(**kwargs)
+```
 
-<a id="list\_identities"></a>
+1. See [:material-code-braces: GetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#getprincipaltagattributemapinputrequesttypedef) 
 
-### list_identities
+### list\_identities
 
 Lists the identities in an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").list_identities` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").list_identities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
 
-Boto3 documentation:
-[CognitoIdentity.Client.list_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identities)
+```python title="Method definition"
+def list_identities(
+    self,
+    *,
+    IdentityPoolId: str,
+    MaxResults: int,
+    NextToken: str = ...,
+    HideDisabled: bool = ...,
+) -> ListIdentitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentitiesInputRequestTypeDef](./type_defs.md#listidentitiesinputrequesttypedef).
+1. See [:material-code-braces: ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `MaxResults`: `int` *(required)*
-- `NextToken`: `str`
-- `HideDisabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListIdentitiesInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "MaxResults": ...,
+}
 
-Returns
-[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
+parent.list_identities(**kwargs)
+```
 
-<a id="list\_identity\_pools"></a>
+1. See [:material-code-braces: ListIdentitiesInputRequestTypeDef](./type_defs.md#listidentitiesinputrequesttypedef) 
 
-### list_identity_pools
+### list\_identity\_pools
 
 Lists all of the Cognito identity pools registered for your account.
 
-Type annotations for `boto3.client("cognito-identity").list_identity_pools`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").list_identity_pools` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
 
-Boto3 documentation:
-[CognitoIdentity.Client.list_identity_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_identity_pools)
+```python title="Method definition"
+def list_identity_pools(
+    self,
+    *,
+    MaxResults: int,
+    NextToken: str = ...,
+) -> ListIdentityPoolsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentityPoolsInputRequestTypeDef](./type_defs.md#listidentitypoolsinputrequesttypedef).
+1. See [:material-code-braces: ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIdentityPoolsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef).
+parent.list_identity_pools(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListIdentityPoolsInputRequestTypeDef](./type_defs.md#listidentitypoolsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags that are assigned to an Amazon Cognito identity pool.
 
-Type annotations for `boto3.client("cognito-identity").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CognitoIdentity.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="lookup\_developer\_identity"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### lookup_developer_identity
+### lookup\_developer\_identity
 
 Retrieves the `IdentityID` associated with a `DeveloperUserIdentifier` or the
 list of `DeveloperUserIdentifier` values associated with an `IdentityId` for an
 existing identity.
 
-Type annotations for
-`boto3.client("cognito-identity").lookup_developer_identity` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").lookup_developer_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.lookup_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.lookup_developer_identity)
+```python title="Method definition"
+def lookup_developer_identity(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str = ...,
+    DeveloperUserIdentifier: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> LookupDeveloperIdentityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[LookupDeveloperIdentityInputRequestTypeDef](./type_defs.md#lookupdeveloperidentityinputrequesttypedef).
+1. See [:material-code-braces: LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str`
-- `DeveloperUserIdentifier`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: LookupDeveloperIdentityInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef).
+parent.lookup_developer_identity(**kwargs)
+```
 
-<a id="merge\_developer\_identities"></a>
+1. See [:material-code-braces: LookupDeveloperIdentityInputRequestTypeDef](./type_defs.md#lookupdeveloperidentityinputrequesttypedef) 
 
-### merge_developer_identities
+### merge\_developer\_identities
 
 Merges two users having different `IdentityId` s, existing in the same identity
 pool, and identified by the same developer provider.
 
-Type annotations for
-`boto3.client("cognito-identity").merge_developer_identities` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").merge_developer_identities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
 
-Boto3 documentation:
-[CognitoIdentity.Client.merge_developer_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.merge_developer_identities)
+```python title="Method definition"
+def merge_developer_identities(
+    self,
+    *,
+    SourceUserIdentifier: str,
+    DestinationUserIdentifier: str,
+    DeveloperProviderName: str,
+    IdentityPoolId: str,
+) -> MergeDeveloperIdentitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[MergeDeveloperIdentitiesInputRequestTypeDef](./type_defs.md#mergedeveloperidentitiesinputrequesttypedef).
+1. See [:material-code-braces: MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceUserIdentifier`: `str` *(required)*
-- `DestinationUserIdentifier`: `str` *(required)*
-- `DeveloperProviderName`: `str` *(required)*
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MergeDeveloperIdentitiesInputRequestTypeDef = {  # (1)
+    "SourceUserIdentifier": ...,
+    "DestinationUserIdentifier": ...,
+    "DeveloperProviderName": ...,
+    "IdentityPoolId": ...,
+}
 
-Returns
-[MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef).
+parent.merge_developer_identities(**kwargs)
+```
 
-<a id="set\_identity\_pool\_roles"></a>
+1. See [:material-code-braces: MergeDeveloperIdentitiesInputRequestTypeDef](./type_defs.md#mergedeveloperidentitiesinputrequesttypedef) 
 
-### set_identity_pool_roles
+### set\_identity\_pool\_roles
 
 Sets the roles for an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").set_identity_pool_roles`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").set_identity_pool_roles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
 
-Boto3 documentation:
-[CognitoIdentity.Client.set_identity_pool_roles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_identity_pool_roles)
+```python title="Method definition"
+def set_identity_pool_roles(
+    self,
+    *,
+    IdentityPoolId: str,
+    Roles: Mapping[str, str],
+    RoleMappings: Mapping[str, RoleMappingTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#setidentitypoolrolesinputrequesttypedef).
+1. See [:material-code-braces: RoleMappingTypeDef](./type_defs.md#rolemappingtypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `Roles`: `Mapping`\[`str`, `str`\] *(required)*
-- `RoleMappings`: `Mapping`\[`str`,
-  [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SetIdentityPoolRolesInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "Roles": ...,
+}
 
-<a id="set\_principal\_tag\_attribute\_map"></a>
+parent.set_identity_pool_roles(**kwargs)
+```
 
-### set_principal_tag_attribute_map
+1. See [:material-code-braces: SetIdentityPoolRolesInputRequestTypeDef](./type_defs.md#setidentitypoolrolesinputrequesttypedef) 
+
+### set\_principal\_tag\_attribute\_map
 
 You can use this operation to use default (username and clientID) attribute or
 custom attribute mappings.
 
-Type annotations for
-`boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").set_principal_tag_attribute_map` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
 
-Boto3 documentation:
-[CognitoIdentity.Client.set_principal_tag_attribute_map](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.set_principal_tag_attribute_map)
+```python title="Method definition"
+def set_principal_tag_attribute_map(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityProviderName: str,
+    UseDefaults: bool = ...,
+    PrincipalTags: Mapping[str, str] = ...,
+) -> SetPrincipalTagAttributeMapResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#setprincipaltagattributemapinputrequesttypedef).
+1. See [:material-code-braces: SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityProviderName`: `str` *(required)*
-- `UseDefaults`: `bool`
-- `PrincipalTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: SetPrincipalTagAttributeMapInputRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityProviderName": ...,
+}
 
-Returns
-[SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
+parent.set_principal_tag_attribute_map(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SetPrincipalTagAttributeMapInputRequestTypeDef](./type_defs.md#setprincipaltagattributemapinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns a set of tags to the specified Amazon Cognito identity pool.
 
-Type annotations for `boto3.client("cognito-identity").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
 
-Boto3 documentation:
-[CognitoIdentity.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="unlink\_developer\_identity"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### unlink_developer_identity
+### unlink\_developer\_identity
 
 Unlinks a `DeveloperUserIdentifier` from an existing identity.
 
-Type annotations for
-`boto3.client("cognito-identity").unlink_developer_identity` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").unlink_developer_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.unlink_developer_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_developer_identity)
+```python title="Method definition"
+def unlink_developer_identity(
+    self,
+    *,
+    IdentityId: str,
+    IdentityPoolId: str,
+    DeveloperProviderName: str,
+    DeveloperUserIdentifier: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UnlinkDeveloperIdentityInputRequestTypeDef](./type_defs.md#unlinkdeveloperidentityinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityId`: `str` *(required)*
-- `IdentityPoolId`: `str` *(required)*
-- `DeveloperProviderName`: `str` *(required)*
-- `DeveloperUserIdentifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnlinkDeveloperIdentityInputRequestTypeDef = {  # (1)
+    "IdentityId": ...,
+    "IdentityPoolId": ...,
+    "DeveloperProviderName": ...,
+    "DeveloperUserIdentifier": ...,
+}
 
-<a id="unlink\_identity"></a>
+parent.unlink_developer_identity(**kwargs)
+```
 
-### unlink_identity
+1. See [:material-code-braces: UnlinkDeveloperIdentityInputRequestTypeDef](./type_defs.md#unlinkdeveloperidentityinputrequesttypedef) 
+
+### unlink\_identity
 
 Unlinks a federated identity from an existing account.
 
-Type annotations for `boto3.client("cognito-identity").unlink_identity` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").unlink_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
 
-Boto3 documentation:
-[CognitoIdentity.Client.unlink_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.unlink_identity)
+```python title="Method definition"
+def unlink_identity(
+    self,
+    *,
+    IdentityId: str,
+    Logins: Mapping[str, str],
+    LoginsToRemove: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UnlinkIdentityInputRequestTypeDef](./type_defs.md#unlinkidentityinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityId`: `str` *(required)*
-- `Logins`: `Mapping`\[`str`, `str`\] *(required)*
-- `LoginsToRemove`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnlinkIdentityInputRequestTypeDef = {  # (1)
+    "IdentityId": ...,
+    "Logins": ...,
+    "LoginsToRemove": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.unlink_identity(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: UnlinkIdentityInputRequestTypeDef](./type_defs.md#unlinkidentityinputrequesttypedef) 
+
+### untag\_resource
 
 Removes the specified tags from the specified Amazon Cognito identity pool.
 
-Type annotations for `boto3.client("cognito-identity").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
 
-Boto3 documentation:
-[CognitoIdentity.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_identity\_pool"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_identity_pool
+### update\_identity\_pool
 
 Updates an identity pool.
 
-Type annotations for `boto3.client("cognito-identity").update_identity_pool`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").update_identity_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
 
-Boto3 documentation:
-[CognitoIdentity.Client.update_identity_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.update_identity_pool)
+```python title="Method definition"
+def update_identity_pool(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityPoolName: str,
+    AllowUnauthenticatedIdentities: bool,
+    AllowClassicFlow: bool = ...,
+    SupportedLoginProviders: Mapping[str, str] = ...,
+    DeveloperProviderName: str = ...,
+    OpenIdConnectProviderARNs: Sequence[str] = ...,
+    CognitoIdentityProviders: Sequence[CognitoIdentityProviderTypeDef] = ...,  # (1)
+    SamlProviderARNs: Sequence[str] = ...,
+    IdentityPoolTags: Mapping[str, str] = ...,
+) -> IdentityPoolTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[IdentityPoolRequestTypeDef](./type_defs.md#identitypoolrequesttypedef).
+1. See [:material-code-braces: CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef) 
+2. See [:material-code-braces: IdentityPoolTypeDef](./type_defs.md#identitypooltypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityPoolName`: `str` *(required)*
-- `AllowUnauthenticatedIdentities`: `bool` *(required)*
-- `AllowClassicFlow`: `bool`
-- `SupportedLoginProviders`: `Mapping`\[`str`, `str`\]
-- `DeveloperProviderName`: `str`
-- `OpenIdConnectProviderARNs`: `Sequence`\[`str`\]
-- `CognitoIdentityProviders`:
-  `Sequence`\[[CognitoIdentityProviderTypeDef](./type_defs.md#cognitoidentityprovidertypedef)\]
-- `SamlProviderARNs`: `Sequence`\[`str`\]
-- `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: IdentityPoolRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityPoolName": ...,
+    "AllowUnauthenticatedIdentities": ...,
+}
 
-Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
+parent.update_identity_pool(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: IdentityPoolRequestTypeDef](./type_defs.md#identitypoolrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cognito-identity").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("cognito-identity").get_paginator` method with overloads.
 
-- `client.get_paginator("list_identity_pools")` ->
-  [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
+- `client.get_paginator("list_identity_pools")` -> [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
+
+
+

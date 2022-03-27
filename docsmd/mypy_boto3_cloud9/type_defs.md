@@ -1,448 +1,592 @@
-<a id="typed-dictionaries-for-boto3-cloud9-module"></a>
-
-# Typed dictionaries for boto3 Cloud9 module
+# Typed dictionaries
 
 > [Index](../README.md) > [Cloud9](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module
-[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Cloud9 module](#typed-dictionaries-for-boto3-cloud9-module)
-  - [CreateEnvironmentEC2RequestRequestTypeDef](#createenvironmentec2requestrequesttypedef)
-  - [CreateEnvironmentEC2ResultTypeDef](#createenvironmentec2resulttypedef)
-  - [CreateEnvironmentMembershipRequestRequestTypeDef](#createenvironmentmembershiprequestrequesttypedef)
-  - [CreateEnvironmentMembershipResultTypeDef](#createenvironmentmembershipresulttypedef)
-  - [DeleteEnvironmentMembershipRequestRequestTypeDef](#deleteenvironmentmembershiprequestrequesttypedef)
-  - [DeleteEnvironmentRequestRequestTypeDef](#deleteenvironmentrequestrequesttypedef)
-  - [DescribeEnvironmentMembershipsRequestRequestTypeDef](#describeenvironmentmembershipsrequestrequesttypedef)
-  - [DescribeEnvironmentMembershipsResultTypeDef](#describeenvironmentmembershipsresulttypedef)
-  - [DescribeEnvironmentStatusRequestRequestTypeDef](#describeenvironmentstatusrequestrequesttypedef)
-  - [DescribeEnvironmentStatusResultTypeDef](#describeenvironmentstatusresulttypedef)
-  - [DescribeEnvironmentsRequestRequestTypeDef](#describeenvironmentsrequestrequesttypedef)
-  - [DescribeEnvironmentsResultTypeDef](#describeenvironmentsresulttypedef)
-  - [EnvironmentLifecycleTypeDef](#environmentlifecycletypedef)
-  - [EnvironmentMemberTypeDef](#environmentmembertypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [ListEnvironmentsRequestRequestTypeDef](#listenvironmentsrequestrequesttypedef)
-  - [ListEnvironmentsResultTypeDef](#listenvironmentsresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateEnvironmentMembershipRequestRequestTypeDef](#updateenvironmentmembershiprequestrequesttypedef)
-  - [UpdateEnvironmentMembershipResultTypeDef](#updateenvironmentmembershipresulttypedef)
-  - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
-
-<a id="createenvironmentec2requestrequesttypedef"></a>
+    Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+    type annotations stubs module [mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ## CreateEnvironmentEC2RequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2RequestRequestTypeDef
+
+def get_value() -> CreateEnvironmentEC2RequestRequestTypeDef:
+    return {
+        "name": ...,
+        "instanceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentEC2RequestRequestTypeDef(TypedDict):
+    name: str,
+    instanceType: str,
+    description: NotRequired[str],
+    clientRequestToken: NotRequired[str],
+    subnetId: NotRequired[str],
+    imageId: NotRequired[str],
+    automaticStopTimeMinutes: NotRequired[int],
+    ownerArn: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    connectionType: NotRequired[ConnectionTypeType],  # (2)
+    dryRun: NotRequired[bool],
+```
 
-- `name`: `str`
-- `instanceType`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `clientRequestToken`: `str`
-- `subnetId`: `str`
-- `imageId`: `str`
-- `automaticStopTimeMinutes`: `int`
-- `ownerArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `dryRun`: `bool`
-
-<a id="createenvironmentec2resulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
 ## CreateEnvironmentEC2ResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import CreateEnvironmentEC2ResultTypeDef
+
+def get_value() -> CreateEnvironmentEC2ResultTypeDef:
+    return {
+        "environmentId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentEC2ResultTypeDef(TypedDict):
+    environmentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `environmentId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createenvironmentmembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEnvironmentMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipRequestRequestTypeDef
+
+def get_value() -> CreateEnvironmentMembershipRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+        "userArn": ...,
+        "permissions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentMembershipRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+    userArn: str,
+    permissions: MemberPermissionsType,  # (1)
+```
 
-- `environmentId`: `str`
-- `userArn`: `str`
-- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
-
-<a id="createenvironmentmembershipresulttypedef"></a>
-
+1. See [:material-code-brackets: MemberPermissionsType](./literals.md#memberpermissionstype) 
 ## CreateEnvironmentMembershipResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import CreateEnvironmentMembershipResultTypeDef
+
+def get_value() -> CreateEnvironmentMembershipResultTypeDef:
+    return {
+        "membership": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentMembershipResultTypeDef(TypedDict):
+    membership: EnvironmentMemberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `membership`:
-  [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmentmembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DeleteEnvironmentMembershipRequestRequestTypeDef
+
+def get_value() -> DeleteEnvironmentMembershipRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+        "userArn": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentId`: `str`
-- `userArn`: `str`
-
-<a id="deleteenvironmentrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentMembershipRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+    userArn: str,
+```
 
 ## DeleteEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DeleteEnvironmentRequestRequestTypeDef
+
+def get_value() -> DeleteEnvironmentRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+```
 
-- `environmentId`: `str`
+## DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef
 
-<a id="describeenvironmentmembershipsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef
 
+def get_value() -> DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef:
+    return {
+        "userArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentMembershipsRequestDescribeEnvironmentMembershipsPaginateTypeDef(TypedDict):
+    userArn: NotRequired[str],
+    environmentId: NotRequired[str],
+    permissions: NotRequired[Sequence[PermissionsType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: PermissionsType](./literals.md#permissionstype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEnvironmentMembershipsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentMembershipsRequestRequestTypeDef:
+    return {
+        "userArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEnvironmentMembershipsRequestRequestTypeDef(TypedDict):
+    userArn: NotRequired[str],
+    environmentId: NotRequired[str],
+    permissions: NotRequired[Sequence[PermissionsType]],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `userArn`: `str`
-- `environmentId`: `str`
-- `permissions`: `Sequence`\[[PermissionsType](./literals.md#permissionstype)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describeenvironmentmembershipsresulttypedef"></a>
-
+1. See [:material-code-brackets: PermissionsType](./literals.md#permissionstype) 
 ## DescribeEnvironmentMembershipsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentMembershipsResultTypeDef
+
+def get_value() -> DescribeEnvironmentMembershipsResultTypeDef:
+    return {
+        "memberships": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentMembershipsResultTypeDef(TypedDict):
+    memberships: List[EnvironmentMemberTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `memberships`:
-  `List`\[[EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeenvironmentstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEnvironmentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentStatusRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentId`: `str`
-
-<a id="describeenvironmentstatusresulttypedef"></a>
+```python title="Definition"
+class DescribeEnvironmentStatusRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+```
 
 ## DescribeEnvironmentStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusResultTypeDef
+
+def get_value() -> DescribeEnvironmentStatusResultTypeDef:
+    return {
+        "status": ...,
+        "message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentStatusResultTypeDef(TypedDict):
+    status: EnvironmentStatusType,  # (1)
+    message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
-- `message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeenvironmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentsRequestRequestTypeDef:
+    return {
+        "environmentIds": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentIds`: `Sequence`\[`str`\]
-
-<a id="describeenvironmentsresulttypedef"></a>
+```python title="Definition"
+class DescribeEnvironmentsRequestRequestTypeDef(TypedDict):
+    environmentIds: Sequence[str],
+```
 
 ## DescribeEnvironmentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsResultTypeDef
+
+def get_value() -> DescribeEnvironmentsResultTypeDef:
+    return {
+        "environments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentsResultTypeDef(TypedDict):
+    environments: List[EnvironmentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environments`:
-  `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentlifecycletypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentLifecycleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import EnvironmentLifecycleTypeDef
+
+def get_value() -> EnvironmentLifecycleTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentLifecycleTypeDef(TypedDict):
+    status: NotRequired[EnvironmentLifecycleStatusType],  # (1)
+    reason: NotRequired[str],
+    failureResource: NotRequired[str],
+```
 
-- `status`:
-  [EnvironmentLifecycleStatusType](./literals.md#environmentlifecyclestatustype)
-- `reason`: `str`
-- `failureResource`: `str`
-
-<a id="environmentmembertypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentLifecycleStatusType](./literals.md#environmentlifecyclestatustype) 
 ## EnvironmentMemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import EnvironmentMemberTypeDef
+
+def get_value() -> EnvironmentMemberTypeDef:
+    return {
+        "permissions": ...,
+        "userId": ...,
+        "userArn": ...,
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentMemberTypeDef(TypedDict):
+    permissions: PermissionsType,  # (1)
+    userId: str,
+    userArn: str,
+    environmentId: str,
+    lastAccess: NotRequired[datetime],
+```
 
-- `permissions`: [PermissionsType](./literals.md#permissionstype)
-- `userId`: `str`
-- `userArn`: `str`
-- `environmentId`: `str`
-
-Optional fields:
-
-- `lastAccess`: `datetime`
-
-<a id="environmenttypedef"></a>
-
+1. See [:material-code-brackets: PermissionsType](./literals.md#permissionstype) 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "type": ...,
+        "arn": ...,
+        "ownerArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    type: EnvironmentTypeType,  # (1)
+    arn: str,
+    ownerArn: str,
+    id: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    connectionType: NotRequired[ConnectionTypeType],  # (2)
+    lifecycle: NotRequired[EnvironmentLifecycleTypeDef],  # (3)
+    managedCredentialsStatus: NotRequired[ManagedCredentialsStatusType],  # (4)
+```
 
-- `type`: [EnvironmentTypeType](./literals.md#environmenttypetype)
-- `arn`: `str`
-- `ownerArn`: `str`
+1. See [:material-code-brackets: EnvironmentTypeType](./literals.md#environmenttypetype) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-braces: EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef) 
+4. See [:material-code-brackets: ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype) 
+## ListEnvironmentsRequestListEnvironmentsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_cloud9.type_defs import ListEnvironmentsRequestListEnvironmentsPaginateTypeDef
 
-- `id`: `str`
-- `name`: `str`
-- `description`: `str`
-- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `lifecycle`:
-  [EnvironmentLifecycleTypeDef](./type_defs.md#environmentlifecycletypedef)
-- `managedCredentialsStatus`:
-  [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
+def get_value() -> ListEnvironmentsRequestListEnvironmentsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
 
-<a id="listenvironmentsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListEnvironmentsRequestListEnvironmentsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import ListEnvironmentsRequestRequestTypeDef
+
+def get_value() -> ListEnvironmentsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listenvironmentsresulttypedef"></a>
+```python title="Definition"
+class ListEnvironmentsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListEnvironmentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import ListEnvironmentsResultTypeDef
+
+def get_value() -> ListEnvironmentsResultTypeDef:
+    return {
+        "nextToken": ...,
+        "environmentIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentsResultTypeDef(TypedDict):
+    nextToken: str,
+    environmentIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `environmentIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateenvironmentmembershiprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateEnvironmentMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipRequestRequestTypeDef
+
+def get_value() -> UpdateEnvironmentMembershipRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+        "userArn": ...,
+        "permissions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentMembershipRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+    userArn: str,
+    permissions: MemberPermissionsType,  # (1)
+```
 
-- `environmentId`: `str`
-- `userArn`: `str`
-- `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
-
-<a id="updateenvironmentmembershipresulttypedef"></a>
-
+1. See [:material-code-brackets: MemberPermissionsType](./literals.md#memberpermissionstype) 
 ## UpdateEnvironmentMembershipResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import UpdateEnvironmentMembershipResultTypeDef
+
+def get_value() -> UpdateEnvironmentMembershipResultTypeDef:
+    return {
+        "membership": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentMembershipResultTypeDef(TypedDict):
+    membership: EnvironmentMemberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `membership`:
-  [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.type_defs import UpdateEnvironmentRequestRequestTypeDef
+
+def get_value() -> UpdateEnvironmentRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    managedCredentialsAction: NotRequired[ManagedCredentialsActionType],  # (1)
+```
 
-- `environmentId`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `managedCredentialsAction`:
-  [ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype)
+1. See [:material-code-brackets: ManagedCredentialsActionType](./literals.md#managedcredentialsactiontype) 

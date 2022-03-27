@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-gamelift-module"></a>
-
-# Examples for boto3 GameLift module
+# Examples
 
 > [Index](../README.md) > [GameLift](./README.md) > Examples
 
-- [Examples for boto3 GameLift module](#examples-for-boto3-gamelift-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+    type annotations stubs module [mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[gamelift]` package installed.
 
-Write your `GameLift` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `GameLift` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type GameLiftClient
-# and provides type checking and code completion
-client = session.client("gamelift")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_match()
 
-# paginator has type DescribeFleetAttributesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_fleet_attributes")
-for item in paginator.paginate(...):
-    # item has type DescribeFleetAttributesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("gamelift")  # (1)
+    result = client.claim_game_server()  # (2)
+    ```
+
+    1. client: [GameLiftClient](./client.md)
+    2. result: [:material-code-braces: ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("gamelift")  # (1)
+
+    paginator = client.get_paginator("describe_fleet_attributes")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [GameLiftClient](./client.md)
+    2. paginator: [DescribeFleetAttributesPaginator](./paginators.md#describefleetattributespaginator)
+    3. item: [:material-code-braces: DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[gamelift]` or a standalone `mypy_boto3_gamelift`
-package, you have to explicitly specify `client: GameLiftClient` type
-annotation.
+With `boto3-stubs-lite[gamelift]`
+or a standalone `mypy_boto3_gamelift` package, you have to explicitly specify `client: GameLiftClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_gamelift.client import GameLiftClient
-from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator
-
-from mypy_boto3_gamelift.literals import PaginatorName
-
-from mypy_boto3_gamelift.type_defs import Dict[str, Any]
-from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: GameLiftClient = session.client("gamelift")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.accept_match()
+    from mypy_boto3_gamelift.client import GameLiftClient
+    from mypy_boto3_gamelift.type_defs import ClaimGameServerOutputTypeDef
+    from mypy_boto3_gamelift.type_defs import ClaimGameServerInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_fleet_attributes"
-paginator: DescribeFleetAttributesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeFleetAttributesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: GameLiftClient = session.client("gamelift")
+
+    kwargs: ClaimGameServerInputRequestTypeDef = {...}
+    result: ClaimGameServerOutputTypeDef = client.claim_game_server(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_gamelift.client import GameLiftClient
+    from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator
+    from mypy_boto3_gamelift.type_defs import DescribeFleetAttributesOutputTypeDef
+
+
+    session = Session()
+    client: GameLiftClient = session.client("gamelift")
+
+    paginator: DescribeFleetAttributesPaginator = client.get_paginator("describe_fleet_attributes")
+    for item in paginator.paginate(...):
+        item: DescribeFleetAttributesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

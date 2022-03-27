@@ -1,869 +1,1098 @@
-<a id="typed-dictionaries-for-boto3-timestreamquery-module"></a>
-
-# Typed dictionaries for boto3 TimestreamQuery module
+# Typed dictionaries
 
 > [Index](../README.md) > [TimestreamQuery](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
-type annotations stubs module
-[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
+!!! note ""
 
-- [Typed dictionaries for boto3 TimestreamQuery module](#typed-dictionaries-for-boto3-timestreamquery-module)
-  - [CancelQueryRequestRequestTypeDef](#cancelqueryrequestrequesttypedef)
-  - [CancelQueryResponseTypeDef](#cancelqueryresponsetypedef)
-  - [ColumnInfoTypeDef](#columninfotypedef)
-  - [CreateScheduledQueryRequestRequestTypeDef](#createscheduledqueryrequestrequesttypedef)
-  - [CreateScheduledQueryResponseTypeDef](#createscheduledqueryresponsetypedef)
-  - [DatumTypeDef](#datumtypedef)
-  - [DeleteScheduledQueryRequestRequestTypeDef](#deletescheduledqueryrequestrequesttypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DescribeScheduledQueryRequestRequestTypeDef](#describescheduledqueryrequestrequesttypedef)
-  - [DescribeScheduledQueryResponseTypeDef](#describescheduledqueryresponsetypedef)
-  - [DimensionMappingTypeDef](#dimensionmappingtypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [ErrorReportConfigurationTypeDef](#errorreportconfigurationtypedef)
-  - [ErrorReportLocationTypeDef](#errorreportlocationtypedef)
-  - [ExecuteScheduledQueryRequestRequestTypeDef](#executescheduledqueryrequestrequesttypedef)
-  - [ExecutionStatsTypeDef](#executionstatstypedef)
-  - [ListScheduledQueriesRequestRequestTypeDef](#listscheduledqueriesrequestrequesttypedef)
-  - [ListScheduledQueriesResponseTypeDef](#listscheduledqueriesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MixedMeasureMappingTypeDef](#mixedmeasuremappingtypedef)
-  - [MultiMeasureAttributeMappingTypeDef](#multimeasureattributemappingtypedef)
-  - [MultiMeasureMappingsTypeDef](#multimeasuremappingstypedef)
-  - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterMappingTypeDef](#parametermappingtypedef)
-  - [PrepareQueryRequestRequestTypeDef](#preparequeryrequestrequesttypedef)
-  - [PrepareQueryResponseTypeDef](#preparequeryresponsetypedef)
-  - [QueryRequestRequestTypeDef](#queryrequestrequesttypedef)
-  - [QueryResponseTypeDef](#queryresponsetypedef)
-  - [QueryStatusTypeDef](#querystatustypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RowTypeDef](#rowtypedef)
-  - [S3ConfigurationTypeDef](#s3configurationtypedef)
-  - [S3ReportLocationTypeDef](#s3reportlocationtypedef)
-  - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
-  - [ScheduledQueryDescriptionTypeDef](#scheduledquerydescriptiontypedef)
-  - [ScheduledQueryRunSummaryTypeDef](#scheduledqueryrunsummarytypedef)
-  - [ScheduledQueryTypeDef](#scheduledquerytypedef)
-  - [SelectColumnTypeDef](#selectcolumntypedef)
-  - [SnsConfigurationTypeDef](#snsconfigurationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetConfigurationTypeDef](#targetconfigurationtypedef)
-  - [TargetDestinationTypeDef](#targetdestinationtypedef)
-  - [TimeSeriesDataPointTypeDef](#timeseriesdatapointtypedef)
-  - [TimestreamConfigurationTypeDef](#timestreamconfigurationtypedef)
-  - [TimestreamDestinationTypeDef](#timestreamdestinationtypedef)
-  - [TypeTypeDef](#typetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateScheduledQueryRequestRequestTypeDef](#updatescheduledqueryrequestrequesttypedef)
-
-<a id="cancelqueryrequestrequesttypedef"></a>
+    Auto-generated documentation for [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+    type annotations stubs module [mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 ## CancelQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeDef
+
+def get_value() -> CancelQueryRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-
-<a id="cancelqueryresponsetypedef"></a>
+```python title="Definition"
+class CancelQueryRequestRequestTypeDef(TypedDict):
+    QueryId: str,
+```
 
 ## CancelQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import CancelQueryResponseTypeDef
+
+def get_value() -> CancelQueryResponseTypeDef:
+    return {
+        "CancellationMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelQueryResponseTypeDef(TypedDict):
+    CancellationMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CancellationMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="columninfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ColumnInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ColumnInfoTypeDef
+
+def get_value() -> ColumnInfoTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ColumnInfoTypeDef(TypedDict):
+    Type: TypeTypeDef,  # (1)
+    Name: NotRequired[str],
+```
 
-- `Type`: [TypeTypeDef](./type_defs.md#typetypedef)
-
-Optional fields:
-
-- `Name`: `str`
-
-<a id="createscheduledqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TypeTypeDef](./type_defs.md#typetypedef) 
 ## CreateScheduledQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import CreateScheduledQueryRequestRequestTypeDef
+
+def get_value() -> CreateScheduledQueryRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "QueryString": ...,
+        "ScheduleConfiguration": ...,
+        "NotificationConfiguration": ...,
+        "ScheduledQueryExecutionRoleArn": ...,
+        "ErrorReportConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateScheduledQueryRequestRequestTypeDef(TypedDict):
+    Name: str,
+    QueryString: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (2)
+    ScheduledQueryExecutionRoleArn: str,
+    ErrorReportConfiguration: ErrorReportConfigurationTypeDef,  # (3)
+    TargetConfiguration: NotRequired[TargetConfigurationTypeDef],  # (4)
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+    KmsKeyId: NotRequired[str],
+```
 
-- `Name`: `str`
-- `QueryString`: `str`
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-- `ScheduledQueryExecutionRoleArn`: `str`
-- `ErrorReportConfiguration`:
-  [ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef)
-
-Optional fields:
-
-- `TargetConfiguration`:
-  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
-
-<a id="createscheduledqueryresponsetypedef"></a>
-
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+3. See [:material-code-braces: ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef) 
+4. See [:material-code-braces: TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateScheduledQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import CreateScheduledQueryResponseTypeDef
+
+def get_value() -> CreateScheduledQueryResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateScheduledQueryResponseTypeDef(TypedDict):
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datumtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DatumTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DatumTypeDef
+
+def get_value() -> DatumTypeDef:
+    return {
+        "ScalarValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatumTypeDef(TypedDict):
+    ScalarValue: NotRequired[str],
+    TimeSeriesValue: NotRequired[List[TimeSeriesDataPointTypeDef]],  # (1)
+    ArrayValue: NotRequired[List[DatumTypeDef]],  # (2)
+    RowValue: NotRequired[RowTypeDef],  # (3)
+    NullValue: NotRequired[bool],
+```
 
-- `ScalarValue`: `str`
-- `TimeSeriesValue`:
-  `List`\[[TimeSeriesDataPointTypeDef](./type_defs.md#timeseriesdatapointtypedef)\]
-- `ArrayValue`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
-- `RowValue`: [RowTypeDef](./type_defs.md#rowtypedef)
-- `NullValue`: `bool`
-
-<a id="deletescheduledqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TimeSeriesDataPointTypeDef](./type_defs.md#timeseriesdatapointtypedef) 
+2. See [:material-code-braces: DatumTypeDef](./type_defs.md#datumtypedef) 
+3. See [:material-code-braces: RowTypeDef](./type_defs.md#rowtypedef) 
 ## DeleteScheduledQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DeleteScheduledQueryRequestRequestTypeDef
+
+def get_value() -> DeleteScheduledQueryRequestRequestTypeDef:
+    return {
+        "ScheduledQueryArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduledQueryArn`: `str`
-
-<a id="describeendpointsresponsetypedef"></a>
+```python title="Definition"
+class DeleteScheduledQueryRequestRequestTypeDef(TypedDict):
+    ScheduledQueryArn: str,
+```
 
 ## DescribeEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DescribeEndpointsResponseTypeDef
+
+def get_value() -> DescribeEndpointsResponseTypeDef:
+    return {
+        "Endpoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEndpointsResponseTypeDef(TypedDict):
+    Endpoints: List[EndpointTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describescheduledqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScheduledQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DescribeScheduledQueryRequestRequestTypeDef
+
+def get_value() -> DescribeScheduledQueryRequestRequestTypeDef:
+    return {
+        "ScheduledQueryArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduledQueryArn`: `str`
-
-<a id="describescheduledqueryresponsetypedef"></a>
+```python title="Definition"
+class DescribeScheduledQueryRequestRequestTypeDef(TypedDict):
+    ScheduledQueryArn: str,
+```
 
 ## DescribeScheduledQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DescribeScheduledQueryResponseTypeDef
+
+def get_value() -> DescribeScheduledQueryResponseTypeDef:
+    return {
+        "ScheduledQuery": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScheduledQueryResponseTypeDef(TypedDict):
+    ScheduledQuery: ScheduledQueryDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScheduledQuery`:
-  [ScheduledQueryDescriptionTypeDef](./type_defs.md#scheduledquerydescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensionmappingtypedef"></a>
-
+1. See [:material-code-braces: ScheduledQueryDescriptionTypeDef](./type_defs.md#scheduledquerydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import DimensionMappingTypeDef
+
+def get_value() -> DimensionMappingTypeDef:
+    return {
+        "Name": ...,
+        "DimensionValueType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DimensionMappingTypeDef(TypedDict):
+    Name: str,
+    DimensionValueType: DimensionValueTypeType,  # (1)
+```
 
-- `Name`: `str`
-- `DimensionValueType`: `Literal['VARCHAR']` (see
-  [DimensionValueTypeType](./literals.md#dimensionvaluetypetype))
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-brackets: DimensionValueTypeType](./literals.md#dimensionvaluetypetype) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+        "CachePeriodInMinutes": ...,
+    }
 ```
 
-Required fields:
-
-- `Address`: `str`
-- `CachePeriodInMinutes`: `int`
-
-<a id="errorreportconfigurationtypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: str,
+    CachePeriodInMinutes: int,
+```
 
 ## ErrorReportConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ErrorReportConfigurationTypeDef
+
+def get_value() -> ErrorReportConfigurationTypeDef:
+    return {
+        "S3Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ErrorReportConfigurationTypeDef(TypedDict):
+    S3Configuration: S3ConfigurationTypeDef,  # (1)
+```
 
-- `S3Configuration`:
-  [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
-
-<a id="errorreportlocationtypedef"></a>
-
+1. See [:material-code-braces: S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef) 
 ## ErrorReportLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ErrorReportLocationTypeDef
+
+def get_value() -> ErrorReportLocationTypeDef:
+    return {
+        "S3ReportLocation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorReportLocationTypeDef(TypedDict):
+    S3ReportLocation: NotRequired[S3ReportLocationTypeDef],  # (1)
+```
 
-- `S3ReportLocation`:
-  [S3ReportLocationTypeDef](./type_defs.md#s3reportlocationtypedef)
-
-<a id="executescheduledqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3ReportLocationTypeDef](./type_defs.md#s3reportlocationtypedef) 
 ## ExecuteScheduledQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ExecuteScheduledQueryRequestRequestTypeDef
+
+def get_value() -> ExecuteScheduledQueryRequestRequestTypeDef:
+    return {
+        "ScheduledQueryArn": ...,
+        "InvocationTime": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduledQueryArn`: `str`
-- `InvocationTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="executionstatstypedef"></a>
+```python title="Definition"
+class ExecuteScheduledQueryRequestRequestTypeDef(TypedDict):
+    ScheduledQueryArn: str,
+    InvocationTime: Union[datetime, str],
+    ClientToken: NotRequired[str],
+```
 
 ## ExecutionStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ExecutionStatsTypeDef
+
+def get_value() -> ExecutionStatsTypeDef:
+    return {
+        "ExecutionTimeInMillis": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionStatsTypeDef(TypedDict):
+    ExecutionTimeInMillis: NotRequired[int],
+    DataWrites: NotRequired[int],
+    BytesMetered: NotRequired[int],
+    RecordsIngested: NotRequired[int],
+    QueryResultRows: NotRequired[int],
+```
 
-- `ExecutionTimeInMillis`: `int`
-- `DataWrites`: `int`
-- `BytesMetered`: `int`
-- `RecordsIngested`: `int`
-- `QueryResultRows`: `int`
+## ListScheduledQueriesRequestListScheduledQueriesPaginateTypeDef
 
-<a id="listscheduledqueriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_timestream_query.type_defs import ListScheduledQueriesRequestListScheduledQueriesPaginateTypeDef
 
+def get_value() -> ListScheduledQueriesRequestListScheduledQueriesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListScheduledQueriesRequestListScheduledQueriesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListScheduledQueriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ListScheduledQueriesRequestRequestTypeDef
+
+def get_value() -> ListScheduledQueriesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listscheduledqueriesresponsetypedef"></a>
+```python title="Definition"
+class ListScheduledQueriesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListScheduledQueriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ListScheduledQueriesResponseTypeDef
+
+def get_value() -> ListScheduledQueriesResponseTypeDef:
+    return {
+        "ScheduledQueries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListScheduledQueriesResponseTypeDef(TypedDict):
+    ScheduledQueries: List[ScheduledQueryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScheduledQueries`:
-  `List`\[[ScheduledQueryTypeDef](./type_defs.md#scheduledquerytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ScheduledQueryTypeDef](./type_defs.md#scheduledquerytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_timestream_query.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceARN: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mixedmeasuremappingtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MixedMeasureMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import MixedMeasureMappingTypeDef
+
+def get_value() -> MixedMeasureMappingTypeDef:
+    return {
+        "MeasureValueType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MixedMeasureMappingTypeDef(TypedDict):
+    MeasureValueType: MeasureValueTypeType,  # (1)
+    MeasureName: NotRequired[str],
+    SourceColumn: NotRequired[str],
+    TargetMeasureName: NotRequired[str],
+    MultiMeasureAttributeMappings: NotRequired[Sequence[MultiMeasureAttributeMappingTypeDef]],  # (2)
+```
 
-- `MeasureValueType`:
-  [MeasureValueTypeType](./literals.md#measurevaluetypetype)
-
-Optional fields:
-
-- `MeasureName`: `str`
-- `SourceColumn`: `str`
-- `TargetMeasureName`: `str`
-- `MultiMeasureAttributeMappings`:
-  `Sequence`\[[MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef)\]
-
-<a id="multimeasureattributemappingtypedef"></a>
-
+1. See [:material-code-brackets: MeasureValueTypeType](./literals.md#measurevaluetypetype) 
+2. See [:material-code-braces: MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef) 
 ## MultiMeasureAttributeMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import MultiMeasureAttributeMappingTypeDef
+
+def get_value() -> MultiMeasureAttributeMappingTypeDef:
+    return {
+        "SourceColumn": ...,
+        "MeasureValueType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MultiMeasureAttributeMappingTypeDef(TypedDict):
+    SourceColumn: str,
+    MeasureValueType: ScalarMeasureValueTypeType,  # (1)
+    TargetMultiMeasureAttributeName: NotRequired[str],
+```
 
-- `SourceColumn`: `str`
-- `MeasureValueType`:
-  [ScalarMeasureValueTypeType](./literals.md#scalarmeasurevaluetypetype)
-
-Optional fields:
-
-- `TargetMultiMeasureAttributeName`: `str`
-
-<a id="multimeasuremappingstypedef"></a>
-
+1. See [:material-code-brackets: ScalarMeasureValueTypeType](./literals.md#scalarmeasurevaluetypetype) 
 ## MultiMeasureMappingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import MultiMeasureMappingsTypeDef
+
+def get_value() -> MultiMeasureMappingsTypeDef:
+    return {
+        "MultiMeasureAttributeMappings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MultiMeasureMappingsTypeDef(TypedDict):
+    MultiMeasureAttributeMappings: Sequence[MultiMeasureAttributeMappingTypeDef],  # (1)
+    TargetMultiMeasureName: NotRequired[str],
+```
 
-- `MultiMeasureAttributeMappings`:
-  `Sequence`\[[MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef)\]
-
-Optional fields:
-
-- `TargetMultiMeasureName`: `str`
-
-<a id="notificationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef) 
 ## NotificationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import NotificationConfigurationTypeDef
+
+def get_value() -> NotificationConfigurationTypeDef:
+    return {
+        "SnsConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationConfigurationTypeDef(TypedDict):
+    SnsConfiguration: SnsConfigurationTypeDef,  # (1)
+```
 
-- `SnsConfiguration`:
-  [SnsConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: SnsConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametermappingtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ParameterMappingTypeDef
+
+def get_value() -> ParameterMappingTypeDef:
+    return {
+        "Name": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ParameterMappingTypeDef(TypedDict):
+    Name: str,
+    Type: TypeTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `Type`: [TypeTypeDef](./type_defs.md#typetypedef)
-
-<a id="preparequeryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TypeTypeDef](./type_defs.md#typetypedef) 
 ## PrepareQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import PrepareQueryRequestRequestTypeDef
+
+def get_value() -> PrepareQueryRequestRequestTypeDef:
+    return {
+        "QueryString": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryString`: `str`
-
-Optional fields:
-
-- `ValidateOnly`: `bool`
-
-<a id="preparequeryresponsetypedef"></a>
+```python title="Definition"
+class PrepareQueryRequestRequestTypeDef(TypedDict):
+    QueryString: str,
+    ValidateOnly: NotRequired[bool],
+```
 
 ## PrepareQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import PrepareQueryResponseTypeDef
+
+def get_value() -> PrepareQueryResponseTypeDef:
+    return {
+        "QueryString": ...,
+        "Columns": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrepareQueryResponseTypeDef(TypedDict):
+    QueryString: str,
+    Columns: List[SelectColumnTypeDef],  # (1)
+    Parameters: List[ParameterMappingTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `QueryString`: `str`
-- `Columns`:
-  `List`\[[SelectColumnTypeDef](./type_defs.md#selectcolumntypedef)\]
-- `Parameters`:
-  `List`\[[ParameterMappingTypeDef](./type_defs.md#parametermappingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SelectColumnTypeDef](./type_defs.md#selectcolumntypedef) 
+2. See [:material-code-braces: ParameterMappingTypeDef](./type_defs.md#parametermappingtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## QueryRequestQueryPaginateTypeDef
 
-<a id="queryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_timestream_query.type_defs import QueryRequestQueryPaginateTypeDef
 
+def get_value() -> QueryRequestQueryPaginateTypeDef:
+    return {
+        "QueryString": ...,
+    }
+```
+
+```python title="Definition"
+class QueryRequestQueryPaginateTypeDef(TypedDict):
+    QueryString: str,
+    ClientToken: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## QueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import QueryRequestRequestTypeDef
+
+def get_value() -> QueryRequestRequestTypeDef:
+    return {
+        "QueryString": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryString`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `NextToken`: `str`
-- `MaxRows`: `int`
-
-<a id="queryresponsetypedef"></a>
+```python title="Definition"
+class QueryRequestRequestTypeDef(TypedDict):
+    QueryString: str,
+    ClientToken: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxRows: NotRequired[int],
+```
 
 ## QueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import QueryResponseTypeDef
+
+def get_value() -> QueryResponseTypeDef:
+    return {
+        "QueryId": ...,
+        "NextToken": ...,
+        "Rows": ...,
+        "ColumnInfo": ...,
+        "QueryStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryResponseTypeDef(TypedDict):
+    QueryId: str,
+    NextToken: str,
+    Rows: List[RowTypeDef],  # (1)
+    ColumnInfo: List[ColumnInfoTypeDef],  # (2)
+    QueryStatus: QueryStatusTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `QueryId`: `str`
-- `NextToken`: `str`
-- `Rows`: `List`\[[RowTypeDef](./type_defs.md#rowtypedef)\]
-- `ColumnInfo`: `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
-- `QueryStatus`: [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="querystatustypedef"></a>
-
+1. See [:material-code-braces: RowTypeDef](./type_defs.md#rowtypedef) 
+2. See [:material-code-braces: ColumnInfoTypeDef](./type_defs.md#columninfotypedef) 
+3. See [:material-code-braces: QueryStatusTypeDef](./type_defs.md#querystatustypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueryStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import QueryStatusTypeDef
+
+def get_value() -> QueryStatusTypeDef:
+    return {
+        "ProgressPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProgressPercentage`: `float`
-- `CumulativeBytesScanned`: `int`
-- `CumulativeBytesMetered`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class QueryStatusTypeDef(TypedDict):
+    ProgressPercentage: NotRequired[float],
+    CumulativeBytesScanned: NotRequired[int],
+    CumulativeBytesMetered: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rowtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import RowTypeDef
+
+def get_value() -> RowTypeDef:
+    return {
+        "Data": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RowTypeDef(TypedDict):
+    Data: List[DatumTypeDef],  # (1)
+```
 
-- `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
-
-<a id="s3configurationtypedef"></a>
-
+1. See [:material-code-braces: DatumTypeDef](./type_defs.md#datumtypedef) 
 ## S3ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import S3ConfigurationTypeDef
+
+def get_value() -> S3ConfigurationTypeDef:
+    return {
+        "BucketName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ConfigurationTypeDef(TypedDict):
+    BucketName: str,
+    ObjectKeyPrefix: NotRequired[str],
+    EncryptionOption: NotRequired[S3EncryptionOptionType],  # (1)
+```
 
-- `BucketName`: `str`
-
-Optional fields:
-
-- `ObjectKeyPrefix`: `str`
-- `EncryptionOption`:
-  [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
-
-<a id="s3reportlocationtypedef"></a>
-
+1. See [:material-code-brackets: S3EncryptionOptionType](./literals.md#s3encryptionoptiontype) 
 ## S3ReportLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import S3ReportLocationTypeDef
+
+def get_value() -> S3ReportLocationTypeDef:
+    return {
+        "BucketName": ...,
+    }
 ```
 
-Optional fields:
-
-- `BucketName`: `str`
-- `ObjectKey`: `str`
-
-<a id="scheduleconfigurationtypedef"></a>
+```python title="Definition"
+class S3ReportLocationTypeDef(TypedDict):
+    BucketName: NotRequired[str],
+    ObjectKey: NotRequired[str],
+```
 
 ## ScheduleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ScheduleConfigurationTypeDef
+
+def get_value() -> ScheduleConfigurationTypeDef:
+    return {
+        "ScheduleExpression": ...,
+    }
 ```
 
-Required fields:
-
-- `ScheduleExpression`: `str`
-
-<a id="scheduledquerydescriptiontypedef"></a>
+```python title="Definition"
+class ScheduleConfigurationTypeDef(TypedDict):
+    ScheduleExpression: str,
+```
 
 ## ScheduledQueryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ScheduledQueryDescriptionTypeDef
+
+def get_value() -> ScheduledQueryDescriptionTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "QueryString": ...,
+        "State": ...,
+        "ScheduleConfiguration": ...,
+        "NotificationConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledQueryDescriptionTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    QueryString: str,
+    State: ScheduledQueryStateType,  # (1)
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (2)
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (3)
+    CreationTime: NotRequired[datetime],
+    PreviousInvocationTime: NotRequired[datetime],
+    NextInvocationTime: NotRequired[datetime],
+    TargetConfiguration: NotRequired[TargetConfigurationTypeDef],  # (4)
+    ScheduledQueryExecutionRoleArn: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    ErrorReportConfiguration: NotRequired[ErrorReportConfigurationTypeDef],  # (5)
+    LastRunSummary: NotRequired[ScheduledQueryRunSummaryTypeDef],  # (6)
+    RecentlyFailedRuns: NotRequired[List[ScheduledQueryRunSummaryTypeDef]],  # (7)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `QueryString`: `str`
-- `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `PreviousInvocationTime`: `datetime`
-- `NextInvocationTime`: `datetime`
-- `TargetConfiguration`:
-  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
-- `ScheduledQueryExecutionRoleArn`: `str`
-- `KmsKeyId`: `str`
-- `ErrorReportConfiguration`:
-  [ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef)
-- `LastRunSummary`:
-  [ScheduledQueryRunSummaryTypeDef](./type_defs.md#scheduledqueryrunsummarytypedef)
-- `RecentlyFailedRuns`:
-  `List`\[[ScheduledQueryRunSummaryTypeDef](./type_defs.md#scheduledqueryrunsummarytypedef)\]
-
-<a id="scheduledqueryrunsummarytypedef"></a>
-
+1. See [:material-code-brackets: ScheduledQueryStateType](./literals.md#scheduledquerystatetype) 
+2. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+3. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+4. See [:material-code-braces: TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef) 
+5. See [:material-code-braces: ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef) 
+6. See [:material-code-braces: ScheduledQueryRunSummaryTypeDef](./type_defs.md#scheduledqueryrunsummarytypedef) 
+7. See [:material-code-braces: ScheduledQueryRunSummaryTypeDef](./type_defs.md#scheduledqueryrunsummarytypedef) 
 ## ScheduledQueryRunSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ScheduledQueryRunSummaryTypeDef
+
+def get_value() -> ScheduledQueryRunSummaryTypeDef:
+    return {
+        "InvocationTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduledQueryRunSummaryTypeDef(TypedDict):
+    InvocationTime: NotRequired[datetime],
+    TriggerTime: NotRequired[datetime],
+    RunStatus: NotRequired[ScheduledQueryRunStatusType],  # (1)
+    ExecutionStats: NotRequired[ExecutionStatsTypeDef],  # (2)
+    ErrorReportLocation: NotRequired[ErrorReportLocationTypeDef],  # (3)
+    FailureReason: NotRequired[str],
+```
 
-- `InvocationTime`: `datetime`
-- `TriggerTime`: `datetime`
-- `RunStatus`:
-  [ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype)
-- `ExecutionStats`:
-  [ExecutionStatsTypeDef](./type_defs.md#executionstatstypedef)
-- `ErrorReportLocation`:
-  [ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef)
-- `FailureReason`: `str`
-
-<a id="scheduledquerytypedef"></a>
-
+1. See [:material-code-brackets: ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype) 
+2. See [:material-code-braces: ExecutionStatsTypeDef](./type_defs.md#executionstatstypedef) 
+3. See [:material-code-braces: ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef) 
 ## ScheduledQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import ScheduledQueryTypeDef
+
+def get_value() -> ScheduledQueryTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "State": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledQueryTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    State: ScheduledQueryStateType,  # (1)
+    CreationTime: NotRequired[datetime],
+    PreviousInvocationTime: NotRequired[datetime],
+    NextInvocationTime: NotRequired[datetime],
+    ErrorReportConfiguration: NotRequired[ErrorReportConfigurationTypeDef],  # (2)
+    TargetDestination: NotRequired[TargetDestinationTypeDef],  # (3)
+    LastRunStatus: NotRequired[ScheduledQueryRunStatusType],  # (4)
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `PreviousInvocationTime`: `datetime`
-- `NextInvocationTime`: `datetime`
-- `ErrorReportConfiguration`:
-  [ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef)
-- `TargetDestination`:
-  [TargetDestinationTypeDef](./type_defs.md#targetdestinationtypedef)
-- `LastRunStatus`:
-  [ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype)
-
-<a id="selectcolumntypedef"></a>
-
+1. See [:material-code-brackets: ScheduledQueryStateType](./literals.md#scheduledquerystatetype) 
+2. See [:material-code-braces: ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef) 
+3. See [:material-code-braces: TargetDestinationTypeDef](./type_defs.md#targetdestinationtypedef) 
+4. See [:material-code-brackets: ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype) 
 ## SelectColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import SelectColumnTypeDef
+
+def get_value() -> SelectColumnTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SelectColumnTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[TypeTypeDef],  # (1)
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    Aliased: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Type`: [TypeTypeDef](./type_defs.md#typetypedef)
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `Aliased`: `bool`
-
-<a id="snsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TypeTypeDef](./type_defs.md#typetypedef) 
 ## SnsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import SnsConfigurationTypeDef
+
+def get_value() -> SnsConfigurationTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TopicArn`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SnsConfigurationTypeDef(TypedDict):
+    TopicArn: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targetconfigurationtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TargetConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TargetConfigurationTypeDef
+
+def get_value() -> TargetConfigurationTypeDef:
+    return {
+        "TimestreamConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TargetConfigurationTypeDef(TypedDict):
+    TimestreamConfiguration: TimestreamConfigurationTypeDef,  # (1)
+```
 
-- `TimestreamConfiguration`:
-  [TimestreamConfigurationTypeDef](./type_defs.md#timestreamconfigurationtypedef)
-
-<a id="targetdestinationtypedef"></a>
-
+1. See [:material-code-braces: TimestreamConfigurationTypeDef](./type_defs.md#timestreamconfigurationtypedef) 
 ## TargetDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TargetDestinationTypeDef
+
+def get_value() -> TargetDestinationTypeDef:
+    return {
+        "TimestreamDestination": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetDestinationTypeDef(TypedDict):
+    TimestreamDestination: NotRequired[TimestreamDestinationTypeDef],  # (1)
+```
 
-- `TimestreamDestination`:
-  [TimestreamDestinationTypeDef](./type_defs.md#timestreamdestinationtypedef)
-
-<a id="timeseriesdatapointtypedef"></a>
-
+1. See [:material-code-braces: TimestreamDestinationTypeDef](./type_defs.md#timestreamdestinationtypedef) 
 ## TimeSeriesDataPointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TimeSeriesDataPointTypeDef
+
+def get_value() -> TimeSeriesDataPointTypeDef:
+    return {
+        "Time": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TimeSeriesDataPointTypeDef(TypedDict):
+    Time: str,
+    Value: DatumTypeDef,  # (1)
+```
 
-- `Time`: `str`
-- `Value`: [DatumTypeDef](./type_defs.md#datumtypedef)
-
-<a id="timestreamconfigurationtypedef"></a>
-
+1. See [:material-code-braces: DatumTypeDef](./type_defs.md#datumtypedef) 
 ## TimestreamConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TimestreamConfigurationTypeDef
+
+def get_value() -> TimestreamConfigurationTypeDef:
+    return {
+        "DatabaseName": ...,
+        "TableName": ...,
+        "TimeColumn": ...,
+        "DimensionMappings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TimestreamConfigurationTypeDef(TypedDict):
+    DatabaseName: str,
+    TableName: str,
+    TimeColumn: str,
+    DimensionMappings: Sequence[DimensionMappingTypeDef],  # (1)
+    MultiMeasureMappings: NotRequired[MultiMeasureMappingsTypeDef],  # (2)
+    MixedMeasureMappings: NotRequired[Sequence[MixedMeasureMappingTypeDef]],  # (3)
+    MeasureNameColumn: NotRequired[str],
+```
 
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `TimeColumn`: `str`
-- `DimensionMappings`:
-  `Sequence`\[[DimensionMappingTypeDef](./type_defs.md#dimensionmappingtypedef)\]
-
-Optional fields:
-
-- `MultiMeasureMappings`:
-  [MultiMeasureMappingsTypeDef](./type_defs.md#multimeasuremappingstypedef)
-- `MixedMeasureMappings`:
-  `Sequence`\[[MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef)\]
-- `MeasureNameColumn`: `str`
-
-<a id="timestreamdestinationtypedef"></a>
-
+1. See [:material-code-braces: DimensionMappingTypeDef](./type_defs.md#dimensionmappingtypedef) 
+2. See [:material-code-braces: MultiMeasureMappingsTypeDef](./type_defs.md#multimeasuremappingstypedef) 
+3. See [:material-code-braces: MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef) 
 ## TimestreamDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TimestreamDestinationTypeDef
+
+def get_value() -> TimestreamDestinationTypeDef:
+    return {
+        "DatabaseName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DatabaseName`: `str`
-- `TableName`: `str`
-
-<a id="typetypedef"></a>
+```python title="Definition"
+class TimestreamDestinationTypeDef(TypedDict):
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+```
 
 ## TypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import TypeTypeDef
+
+def get_value() -> TypeTypeDef:
+    return {
+        "ScalarType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TypeTypeDef(TypedDict):
+    ScalarType: NotRequired[ScalarTypeType],  # (1)
+    ArrayColumnInfo: NotRequired[ColumnInfoTypeDef],  # (2)
+    TimeSeriesMeasureValueColumnInfo: NotRequired[ColumnInfoTypeDef],  # (2)
+    RowColumnInfo: NotRequired[List[ColumnInfoTypeDef]],  # (4)
+```
 
-- `ScalarType`: [ScalarTypeType](./literals.md#scalartypetype)
-- `ArrayColumnInfo`: [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
-- `TimeSeriesMeasureValueColumnInfo`:
-  [ColumnInfoTypeDef](./type_defs.md#columninfotypedef)
-- `RowColumnInfo`:
-  `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ScalarTypeType](./literals.md#scalartypetype) 
+2. See [:material-code-braces: ColumnInfoTypeDef](./type_defs.md#columninfotypedef) 
+3. See [:material-code-braces: ColumnInfoTypeDef](./type_defs.md#columninfotypedef) 
+4. See [:material-code-braces: ColumnInfoTypeDef](./type_defs.md#columninfotypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatescheduledqueryrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateScheduledQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_timestream_query.type_defs import UpdateScheduledQueryRequestRequestTypeDef
+
+def get_value() -> UpdateScheduledQueryRequestRequestTypeDef:
+    return {
+        "ScheduledQueryArn": ...,
+        "State": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateScheduledQueryRequestRequestTypeDef(TypedDict):
+    ScheduledQueryArn: str,
+    State: ScheduledQueryStateType,  # (1)
+```
 
-- `ScheduledQueryArn`: `str`
-- `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
+1. See [:material-code-brackets: ScheduledQueryStateType](./literals.md#scheduledquerystatetype) 

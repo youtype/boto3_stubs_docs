@@ -1,880 +1,912 @@
-<a id="literals-for-boto3-costexplorer-module"></a>
-
-# Literals for boto3 CostExplorer module
+# Literals
 
 > [Index](../README.md) > [CostExplorer](./README.md) > Literals
 
-Auto-generated documentation for
-[CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
-type annotations stubs module
-[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
+!!! note ""
 
-- [Literals for boto3 CostExplorer module](#literals-for-boto3-costexplorer-module)
-  - [AccountScopeType](#accountscopetype)
-  - [AnomalyFeedbackTypeType](#anomalyfeedbacktypetype)
-  - [AnomalySubscriptionFrequencyType](#anomalysubscriptionfrequencytype)
-  - [ContextType](#contexttype)
-  - [CostCategoryInheritedValueDimensionNameType](#costcategoryinheritedvaluedimensionnametype)
-  - [CostCategoryRuleTypeType](#costcategoryruletypetype)
-  - [CostCategoryRuleVersionType](#costcategoryruleversiontype)
-  - [CostCategorySplitChargeMethodType](#costcategorysplitchargemethodtype)
-  - [CostCategorySplitChargeRuleParameterTypeType](#costcategorysplitchargeruleparametertypetype)
-  - [CostCategoryStatusComponentType](#costcategorystatuscomponenttype)
-  - [CostCategoryStatusType](#costcategorystatustype)
-  - [DimensionType](#dimensiontype)
-  - [FindingReasonCodeType](#findingreasoncodetype)
-  - [GranularityType](#granularitytype)
-  - [GroupDefinitionTypeType](#groupdefinitiontypetype)
-  - [LookbackPeriodInDaysType](#lookbackperiodindaystype)
-  - [MatchOptionType](#matchoptiontype)
-  - [MetricType](#metrictype)
-  - [MonitorDimensionType](#monitordimensiontype)
-  - [MonitorTypeType](#monitortypetype)
-  - [NumericOperatorType](#numericoperatortype)
-  - [OfferingClassType](#offeringclasstype)
-  - [PaymentOptionType](#paymentoptiontype)
-  - [PlatformDifferenceType](#platformdifferencetype)
-  - [RecommendationTargetType](#recommendationtargettype)
-  - [RightsizingTypeType](#rightsizingtypetype)
-  - [SavingsPlansDataTypeType](#savingsplansdatatypetype)
-  - [SortOrderType](#sortordertype)
-  - [SubscriberStatusType](#subscriberstatustype)
-  - [SubscriberTypeType](#subscribertypetype)
-  - [SupportedSavingsPlansTypeType](#supportedsavingsplanstypetype)
-  - [TermInYearsType](#terminyearstype)
-  - [CostExplorerServiceName](#costexplorerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="accountscopetype"></a>
+    Auto-generated documentation for [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
+    type annotations stubs module [mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 ## AccountScopeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import AccountScopeType
+
+def get_value() -> AccountScopeType:
+    return "LINKED"
 ```
 
-Values:
-
-- `LINKED`
-- `PAYER`
-
-<a id="anomalyfeedbacktypetype"></a>
-
+```python title="Definition"
+AccountScopeType = Literal[
+    "LINKED",
+    "PAYER",
+]
+```
 ## AnomalyFeedbackTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import AnomalyFeedbackTypeType
+
+def get_value() -> AnomalyFeedbackTypeType:
+    return "NO"
 ```
 
-Values:
-
-- `NO`
-- `PLANNED_ACTIVITY`
-- `YES`
-
-<a id="anomalysubscriptionfrequencytype"></a>
-
+```python title="Definition"
+AnomalyFeedbackTypeType = Literal[
+    "NO",
+    "PLANNED_ACTIVITY",
+    "YES",
+]
+```
 ## AnomalySubscriptionFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import AnomalySubscriptionFrequencyType
+
+def get_value() -> AnomalySubscriptionFrequencyType:
+    return "DAILY"
 ```
 
-Values:
-
-- `DAILY`
-- `IMMEDIATE`
-- `WEEKLY`
-
-<a id="contexttype"></a>
-
+```python title="Definition"
+AnomalySubscriptionFrequencyType = Literal[
+    "DAILY",
+    "IMMEDIATE",
+    "WEEKLY",
+]
+```
 ## ContextType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import ContextType
+
+def get_value() -> ContextType:
+    return "COST_AND_USAGE"
 ```
 
-Values:
-
-- `COST_AND_USAGE`
-- `RESERVATIONS`
-- `SAVINGS_PLANS`
-
-<a id="costcategoryinheritedvaluedimensionnametype"></a>
-
+```python title="Definition"
+ContextType = Literal[
+    "COST_AND_USAGE",
+    "RESERVATIONS",
+    "SAVINGS_PLANS",
+]
+```
 ## CostCategoryInheritedValueDimensionNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategoryInheritedValueDimensionNameType
+
+def get_value() -> CostCategoryInheritedValueDimensionNameType:
+    return "LINKED_ACCOUNT_NAME"
 ```
 
-Values:
-
-- `LINKED_ACCOUNT_NAME`
-- `TAG`
-
-<a id="costcategoryruletypetype"></a>
-
+```python title="Definition"
+CostCategoryInheritedValueDimensionNameType = Literal[
+    "LINKED_ACCOUNT_NAME",
+    "TAG",
+]
+```
 ## CostCategoryRuleTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategoryRuleTypeType
+
+def get_value() -> CostCategoryRuleTypeType:
+    return "INHERITED_VALUE"
 ```
 
-Values:
-
-- `INHERITED_VALUE`
-- `REGULAR`
-
-<a id="costcategoryruleversiontype"></a>
-
+```python title="Definition"
+CostCategoryRuleTypeType = Literal[
+    "INHERITED_VALUE",
+    "REGULAR",
+]
+```
 ## CostCategoryRuleVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategoryRuleVersionType
+
+def get_value() -> CostCategoryRuleVersionType:
+    return "CostCategoryExpression.v1"
 ```
 
-Values:
-
-- `CostCategoryExpression.v1`
-
-<a id="costcategorysplitchargemethodtype"></a>
-
+```python title="Definition"
+CostCategoryRuleVersionType = Literal[
+    "CostCategoryExpression.v1",
+]
+```
 ## CostCategorySplitChargeMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategorySplitChargeMethodType
+
+def get_value() -> CostCategorySplitChargeMethodType:
+    return "EVEN"
 ```
 
-Values:
-
-- `EVEN`
-- `FIXED`
-- `PROPORTIONAL`
-
-<a id="costcategorysplitchargeruleparametertypetype"></a>
-
+```python title="Definition"
+CostCategorySplitChargeMethodType = Literal[
+    "EVEN",
+    "FIXED",
+    "PROPORTIONAL",
+]
+```
 ## CostCategorySplitChargeRuleParameterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategorySplitChargeRuleParameterTypeType
+
+def get_value() -> CostCategorySplitChargeRuleParameterTypeType:
+    return "ALLOCATION_PERCENTAGES"
 ```
 
-Values:
-
-- `ALLOCATION_PERCENTAGES`
-
-<a id="costcategorystatuscomponenttype"></a>
-
+```python title="Definition"
+CostCategorySplitChargeRuleParameterTypeType = Literal[
+    "ALLOCATION_PERCENTAGES",
+]
+```
 ## CostCategoryStatusComponentType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategoryStatusComponentType
+
+def get_value() -> CostCategoryStatusComponentType:
+    return "COST_EXPLORER"
 ```
 
-Values:
-
-- `COST_EXPLORER`
-
-<a id="costcategorystatustype"></a>
-
+```python title="Definition"
+CostCategoryStatusComponentType = Literal[
+    "COST_EXPLORER",
+]
+```
 ## CostCategoryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostCategoryStatusType
+
+def get_value() -> CostCategoryStatusType:
+    return "APPLIED"
 ```
 
-Values:
-
-- `APPLIED`
-- `PROCESSING`
-
-<a id="dimensiontype"></a>
-
+```python title="Definition"
+CostCategoryStatusType = Literal[
+    "APPLIED",
+    "PROCESSING",
+]
+```
 ## DimensionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import DimensionType
+
+def get_value() -> DimensionType:
+    return "AGREEMENT_END_DATE_TIME_AFTER"
 ```
 
-Values:
-
-- `AGREEMENT_END_DATE_TIME_AFTER`
-- `AGREEMENT_END_DATE_TIME_BEFORE`
-- `AZ`
-- `BILLING_ENTITY`
-- `CACHE_ENGINE`
-- `DATABASE_ENGINE`
-- `DEPLOYMENT_OPTION`
-- `INSTANCE_TYPE`
-- `INSTANCE_TYPE_FAMILY`
-- `INVOICING_ENTITY`
-- `LEGAL_ENTITY_NAME`
-- `LINKED_ACCOUNT`
-- `LINKED_ACCOUNT_NAME`
-- `OPERATING_SYSTEM`
-- `OPERATION`
-- `PAYMENT_OPTION`
-- `PLATFORM`
-- `PURCHASE_TYPE`
-- `RECORD_TYPE`
-- `REGION`
-- `RESERVATION_ID`
-- `RESOURCE_ID`
-- `RIGHTSIZING_TYPE`
-- `SAVINGS_PLAN_ARN`
-- `SAVINGS_PLANS_TYPE`
-- `SCOPE`
-- `SERVICE`
-- `SERVICE_CODE`
-- `SUBSCRIPTION_ID`
-- `TENANCY`
-- `USAGE_TYPE`
-- `USAGE_TYPE_GROUP`
-
-<a id="findingreasoncodetype"></a>
-
+```python title="Definition"
+DimensionType = Literal[
+    "AGREEMENT_END_DATE_TIME_AFTER",
+    "AGREEMENT_END_DATE_TIME_BEFORE",
+    "AZ",
+    "BILLING_ENTITY",
+    "CACHE_ENGINE",
+    "DATABASE_ENGINE",
+    "DEPLOYMENT_OPTION",
+    "INSTANCE_TYPE",
+    "INSTANCE_TYPE_FAMILY",
+    "INVOICING_ENTITY",
+    "LEGAL_ENTITY_NAME",
+    "LINKED_ACCOUNT",
+    "LINKED_ACCOUNT_NAME",
+    "OPERATING_SYSTEM",
+    "OPERATION",
+    "PAYMENT_OPTION",
+    "PLATFORM",
+    "PURCHASE_TYPE",
+    "RECORD_TYPE",
+    "REGION",
+    "RESERVATION_ID",
+    "RESOURCE_ID",
+    "RIGHTSIZING_TYPE",
+    "SAVINGS_PLAN_ARN",
+    "SAVINGS_PLANS_TYPE",
+    "SCOPE",
+    "SERVICE",
+    "SERVICE_CODE",
+    "SUBSCRIPTION_ID",
+    "TENANCY",
+    "USAGE_TYPE",
+    "USAGE_TYPE_GROUP",
+]
+```
 ## FindingReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import FindingReasonCodeType
+
+def get_value() -> FindingReasonCodeType:
+    return "CPU_OVER_PROVISIONED"
 ```
 
-Values:
-
-- `CPU_OVER_PROVISIONED`
-- `CPU_UNDER_PROVISIONED`
-- `DISK_IOPS_OVER_PROVISIONED`
-- `DISK_IOPS_UNDER_PROVISIONED`
-- `DISK_THROUGHPUT_OVER_PROVISIONED`
-- `DISK_THROUGHPUT_UNDER_PROVISIONED`
-- `EBS_IOPS_OVER_PROVISIONED`
-- `EBS_IOPS_UNDER_PROVISIONED`
-- `EBS_THROUGHPUT_OVER_PROVISIONED`
-- `EBS_THROUGHPUT_UNDER_PROVISIONED`
-- `MEMORY_OVER_PROVISIONED`
-- `MEMORY_UNDER_PROVISIONED`
-- `NETWORK_BANDWIDTH_OVER_PROVISIONED`
-- `NETWORK_BANDWIDTH_UNDER_PROVISIONED`
-- `NETWORK_PPS_OVER_PROVISIONED`
-- `NETWORK_PPS_UNDER_PROVISIONED`
-
-<a id="granularitytype"></a>
-
+```python title="Definition"
+FindingReasonCodeType = Literal[
+    "CPU_OVER_PROVISIONED",
+    "CPU_UNDER_PROVISIONED",
+    "DISK_IOPS_OVER_PROVISIONED",
+    "DISK_IOPS_UNDER_PROVISIONED",
+    "DISK_THROUGHPUT_OVER_PROVISIONED",
+    "DISK_THROUGHPUT_UNDER_PROVISIONED",
+    "EBS_IOPS_OVER_PROVISIONED",
+    "EBS_IOPS_UNDER_PROVISIONED",
+    "EBS_THROUGHPUT_OVER_PROVISIONED",
+    "EBS_THROUGHPUT_UNDER_PROVISIONED",
+    "MEMORY_OVER_PROVISIONED",
+    "MEMORY_UNDER_PROVISIONED",
+    "NETWORK_BANDWIDTH_OVER_PROVISIONED",
+    "NETWORK_BANDWIDTH_UNDER_PROVISIONED",
+    "NETWORK_PPS_OVER_PROVISIONED",
+    "NETWORK_PPS_UNDER_PROVISIONED",
+]
+```
 ## GranularityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import GranularityType
+
+def get_value() -> GranularityType:
+    return "DAILY"
 ```
 
-Values:
-
-- `DAILY`
-- `HOURLY`
-- `MONTHLY`
-
-<a id="groupdefinitiontypetype"></a>
-
+```python title="Definition"
+GranularityType = Literal[
+    "DAILY",
+    "HOURLY",
+    "MONTHLY",
+]
+```
 ## GroupDefinitionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import GroupDefinitionTypeType
+
+def get_value() -> GroupDefinitionTypeType:
+    return "COST_CATEGORY"
 ```
 
-Values:
-
-- `COST_CATEGORY`
-- `DIMENSION`
-- `TAG`
-
-<a id="lookbackperiodindaystype"></a>
-
+```python title="Definition"
+GroupDefinitionTypeType = Literal[
+    "COST_CATEGORY",
+    "DIMENSION",
+    "TAG",
+]
+```
 ## LookbackPeriodInDaysType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import LookbackPeriodInDaysType
+
+def get_value() -> LookbackPeriodInDaysType:
+    return "SEVEN_DAYS"
 ```
 
-Values:
-
-- `SEVEN_DAYS`
-- `SIXTY_DAYS`
-- `THIRTY_DAYS`
-
-<a id="matchoptiontype"></a>
-
+```python title="Definition"
+LookbackPeriodInDaysType = Literal[
+    "SEVEN_DAYS",
+    "SIXTY_DAYS",
+    "THIRTY_DAYS",
+]
+```
 ## MatchOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import MatchOptionType
+
+def get_value() -> MatchOptionType:
+    return "ABSENT"
 ```
 
-Values:
-
-- `ABSENT`
-- `CASE_INSENSITIVE`
-- `CASE_SENSITIVE`
-- `CONTAINS`
-- `ENDS_WITH`
-- `EQUALS`
-- `STARTS_WITH`
-
-<a id="metrictype"></a>
-
+```python title="Definition"
+MatchOptionType = Literal[
+    "ABSENT",
+    "CASE_INSENSITIVE",
+    "CASE_SENSITIVE",
+    "CONTAINS",
+    "ENDS_WITH",
+    "EQUALS",
+    "STARTS_WITH",
+]
+```
 ## MetricType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import MetricType
+
+def get_value() -> MetricType:
+    return "AMORTIZED_COST"
 ```
 
-Values:
-
-- `AMORTIZED_COST`
-- `BLENDED_COST`
-- `NET_AMORTIZED_COST`
-- `NET_UNBLENDED_COST`
-- `NORMALIZED_USAGE_AMOUNT`
-- `UNBLENDED_COST`
-- `USAGE_QUANTITY`
-
-<a id="monitordimensiontype"></a>
-
+```python title="Definition"
+MetricType = Literal[
+    "AMORTIZED_COST",
+    "BLENDED_COST",
+    "NET_AMORTIZED_COST",
+    "NET_UNBLENDED_COST",
+    "NORMALIZED_USAGE_AMOUNT",
+    "UNBLENDED_COST",
+    "USAGE_QUANTITY",
+]
+```
 ## MonitorDimensionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import MonitorDimensionType
+
+def get_value() -> MonitorDimensionType:
+    return "SERVICE"
 ```
 
-Values:
-
-- `SERVICE`
-
-<a id="monitortypetype"></a>
-
+```python title="Definition"
+MonitorDimensionType = Literal[
+    "SERVICE",
+]
+```
 ## MonitorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import MonitorTypeType
+
+def get_value() -> MonitorTypeType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `DIMENSIONAL`
-
-<a id="numericoperatortype"></a>
-
+```python title="Definition"
+MonitorTypeType = Literal[
+    "CUSTOM",
+    "DIMENSIONAL",
+]
+```
 ## NumericOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import NumericOperatorType
+
+def get_value() -> NumericOperatorType:
+    return "BETWEEN"
 ```
 
-Values:
-
-- `BETWEEN`
-- `EQUAL`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL`
-
-<a id="offeringclasstype"></a>
-
+```python title="Definition"
+NumericOperatorType = Literal[
+    "BETWEEN",
+    "EQUAL",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL",
+]
+```
 ## OfferingClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import OfferingClassType
+
+def get_value() -> OfferingClassType:
+    return "CONVERTIBLE"
 ```
 
-Values:
-
-- `CONVERTIBLE`
-- `STANDARD`
-
-<a id="paymentoptiontype"></a>
-
+```python title="Definition"
+OfferingClassType = Literal[
+    "CONVERTIBLE",
+    "STANDARD",
+]
+```
 ## PaymentOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import PaymentOptionType
+
+def get_value() -> PaymentOptionType:
+    return "ALL_UPFRONT"
 ```
 
-Values:
-
-- `ALL_UPFRONT`
-- `HEAVY_UTILIZATION`
-- `LIGHT_UTILIZATION`
-- `MEDIUM_UTILIZATION`
-- `NO_UPFRONT`
-- `PARTIAL_UPFRONT`
-
-<a id="platformdifferencetype"></a>
-
+```python title="Definition"
+PaymentOptionType = Literal[
+    "ALL_UPFRONT",
+    "HEAVY_UTILIZATION",
+    "LIGHT_UTILIZATION",
+    "MEDIUM_UTILIZATION",
+    "NO_UPFRONT",
+    "PARTIAL_UPFRONT",
+]
+```
 ## PlatformDifferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import PlatformDifferenceType
+
+def get_value() -> PlatformDifferenceType:
+    return "HYPERVISOR"
 ```
 
-Values:
-
-- `HYPERVISOR`
-- `INSTANCE_STORE_AVAILABILITY`
-- `NETWORK_INTERFACE`
-- `STORAGE_INTERFACE`
-- `VIRTUALIZATION_TYPE`
-
-<a id="recommendationtargettype"></a>
-
+```python title="Definition"
+PlatformDifferenceType = Literal[
+    "HYPERVISOR",
+    "INSTANCE_STORE_AVAILABILITY",
+    "NETWORK_INTERFACE",
+    "STORAGE_INTERFACE",
+    "VIRTUALIZATION_TYPE",
+]
+```
 ## RecommendationTargetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import RecommendationTargetType
+
+def get_value() -> RecommendationTargetType:
+    return "CROSS_INSTANCE_FAMILY"
 ```
 
-Values:
-
-- `CROSS_INSTANCE_FAMILY`
-- `SAME_INSTANCE_FAMILY`
-
-<a id="rightsizingtypetype"></a>
-
+```python title="Definition"
+RecommendationTargetType = Literal[
+    "CROSS_INSTANCE_FAMILY",
+    "SAME_INSTANCE_FAMILY",
+]
+```
 ## RightsizingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import RightsizingTypeType
+
+def get_value() -> RightsizingTypeType:
+    return "MODIFY"
 ```
 
-Values:
-
-- `MODIFY`
-- `TERMINATE`
-
-<a id="savingsplansdatatypetype"></a>
-
+```python title="Definition"
+RightsizingTypeType = Literal[
+    "MODIFY",
+    "TERMINATE",
+]
+```
 ## SavingsPlansDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import SavingsPlansDataTypeType
+
+def get_value() -> SavingsPlansDataTypeType:
+    return "AMORTIZED_COMMITMENT"
 ```
 
-Values:
-
-- `AMORTIZED_COMMITMENT`
-- `ATTRIBUTES`
-- `SAVINGS`
-- `UTILIZATION`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SavingsPlansDataTypeType = Literal[
+    "AMORTIZED_COMMITMENT",
+    "ATTRIBUTES",
+    "SAVINGS",
+    "UTILIZATION",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="subscriberstatustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## SubscriberStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import SubscriberStatusType
+
+def get_value() -> SubscriberStatusType:
+    return "CONFIRMED"
 ```
 
-Values:
-
-- `CONFIRMED`
-- `DECLINED`
-
-<a id="subscribertypetype"></a>
-
+```python title="Definition"
+SubscriberStatusType = Literal[
+    "CONFIRMED",
+    "DECLINED",
+]
+```
 ## SubscriberTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import SubscriberTypeType
+
+def get_value() -> SubscriberTypeType:
+    return "EMAIL"
 ```
 
-Values:
-
-- `EMAIL`
-- `SNS`
-
-<a id="supportedsavingsplanstypetype"></a>
-
+```python title="Definition"
+SubscriberTypeType = Literal[
+    "EMAIL",
+    "SNS",
+]
+```
 ## SupportedSavingsPlansTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import SupportedSavingsPlansTypeType
+
+def get_value() -> SupportedSavingsPlansTypeType:
+    return "COMPUTE_SP"
 ```
 
-Values:
-
-- `COMPUTE_SP`
-- `EC2_INSTANCE_SP`
-- `SAGEMAKER_SP`
-
-<a id="terminyearstype"></a>
-
+```python title="Definition"
+SupportedSavingsPlansTypeType = Literal[
+    "COMPUTE_SP",
+    "EC2_INSTANCE_SP",
+    "SAGEMAKER_SP",
+]
+```
 ## TermInYearsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import TermInYearsType
+
+def get_value() -> TermInYearsType:
+    return "ONE_YEAR"
 ```
 
-Values:
-
-- `ONE_YEAR`
-- `THREE_YEARS`
-
-<a id="costexplorerservicename"></a>
-
+```python title="Definition"
+TermInYearsType = Literal[
+    "ONE_YEAR",
+    "THREE_YEARS",
+]
+```
 ## CostExplorerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import CostExplorerServiceName
+
+def get_value() -> CostExplorerServiceName:
+    return "ce"
 ```
 
-Values:
-
-- `ce`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+CostExplorerServiceName = Literal[
+    "ce",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ce.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```

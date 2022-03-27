@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-schemas-module"></a>
-
-# Type annotations for boto3 Schemas module
+#  Schemas module
 
 > [Index](../README.md) > Schemas
 
-Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module
-[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
+!!! note ""
 
-- [Type annotations for boto3 Schemas module](#type-annotations-for-boto3-schemas-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SchemasClient](#schemasclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Schemas`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[schemas]'
 python -m pip install mypy-boto3-schemas
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,94 +42,37 @@ python -m pip install mypy-boto3-schemas
 python -m pip uninstall -y mypy-boto3-schemas
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="schemasclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SchemasClient
 
-Type annotations for `boto3.client("schemas")` as [SchemasClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("schemas")` as [SchemasClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_schemas.client import SchemasClient
+
+def get_client() -> SchemasClient:
+    return Session().cleint("schemas")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_discoverer](./client.md#create_discoverer)
-- [create_registry](./client.md#create_registry)
-- [create_schema](./client.md#create_schema)
-- [delete_discoverer](./client.md#delete_discoverer)
-- [delete_registry](./client.md#delete_registry)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_schema](./client.md#delete_schema)
-- [delete_schema_version](./client.md#delete_schema_version)
-- [describe_code_binding](./client.md#describe_code_binding)
-- [describe_discoverer](./client.md#describe_discoverer)
-- [describe_registry](./client.md#describe_registry)
-- [describe_schema](./client.md#describe_schema)
-- [exceptions](./client.md#exceptions)
-- [export_schema](./client.md#export_schema)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_code_binding_source](./client.md#get_code_binding_source)
-- [get_discovered_schema](./client.md#get_discovered_schema)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_policy](./client.md#get_resource_policy)
-- [get_waiter](./client.md#get_waiter)
-- [list_discoverers](./client.md#list_discoverers)
-- [list_registries](./client.md#list_registries)
-- [list_schema_versions](./client.md#list_schema_versions)
-- [list_schemas](./client.md#list_schemas)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_code_binding](./client.md#put_code_binding)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [search_schemas](./client.md#search_schemas)
-- [start_discoverer](./client.md#start_discoverer)
-- [stop_discoverer](./client.md#stop_discoverer)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_discoverer](./client.md#update_discoverer)
-- [update_registry](./client.md#update_registry)
-- [update_schema](./client.md#update_schema)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SchemasClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- GoneException
-- InternalServerErrorException
-- NotFoundException
-- PreconditionFailedException
-- ServiceUnavailableException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("schemas").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("schemas").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_schemas.paginator import ListDiscoverersPaginator, ...
+from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
+
+def get_list_discoverers_paginator() -> ListDiscoverersPaginator:
+    return Session().client("schemas").get_paginator("list_discoverers"))
 ```
 
 - [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
@@ -161,31 +81,40 @@ from mypy_boto3_schemas.paginator import ListDiscoverersPaginator, ...
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("schemas").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("schemas").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter, ...
+from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
+
+def get_code_binding_exists_waiter() -> CodeBindingExistsWaiter:
+    return Session().client("schemas").get_waiter("code_binding_exists")
 ```
 
 - [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName
 
-```python
-from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
+def get_value() -> CodeBindingExistsWaiterName:
+    return "code_binding_exists"
 ```
 
 - [CodeBindingExistsWaiterName](./literals.md#codebindingexistswaitername)
@@ -202,18 +131,22 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef
 
-```python
-from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef, ...
+def get_value() -> CreateDiscovererRequestRequestTypeDef:
+    return {
+        "SourceArn": ...,
+    }
 ```
 
 - [CreateDiscovererRequestRequestTypeDef](./type_defs.md#creatediscovererrequestrequesttypedef)
@@ -227,6 +160,7 @@ from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef, 
 - [DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef)
 - [DeleteSchemaRequestRequestTypeDef](./type_defs.md#deleteschemarequestrequesttypedef)
 - [DeleteSchemaVersionRequestRequestTypeDef](./type_defs.md#deleteschemaversionrequestrequesttypedef)
+- [DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef](./type_defs.md#describecodebindingrequestcodebindingexistswaittypedef)
 - [DescribeCodeBindingRequestRequestTypeDef](./type_defs.md#describecodebindingrequestrequesttypedef)
 - [DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef)
 - [DescribeDiscovererRequestRequestTypeDef](./type_defs.md#describediscovererrequestrequesttypedef)
@@ -244,12 +178,16 @@ from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef, 
 - [GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef)
 - [GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef)
 - [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef)
+- [ListDiscoverersRequestListDiscoverersPaginateTypeDef](./type_defs.md#listdiscoverersrequestlistdiscovererspaginatetypedef)
 - [ListDiscoverersRequestRequestTypeDef](./type_defs.md#listdiscoverersrequestrequesttypedef)
 - [ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef)
+- [ListRegistriesRequestListRegistriesPaginateTypeDef](./type_defs.md#listregistriesrequestlistregistriespaginatetypedef)
 - [ListRegistriesRequestRequestTypeDef](./type_defs.md#listregistriesrequestrequesttypedef)
 - [ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef)
+- [ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef](./type_defs.md#listschemaversionsrequestlistschemaversionspaginatetypedef)
 - [ListSchemaVersionsRequestRequestTypeDef](./type_defs.md#listschemaversionsrequestrequesttypedef)
 - [ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef)
+- [ListSchemasRequestListSchemasPaginateTypeDef](./type_defs.md#listschemasrequestlistschemaspaginatetypedef)
 - [ListSchemasRequestRequestTypeDef](./type_defs.md#listschemasrequestrequesttypedef)
 - [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -266,6 +204,7 @@ from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef, 
 - [SearchSchemaSummaryTypeDef](./type_defs.md#searchschemasummarytypedef)
 - [SearchSchemaVersionSummaryTypeDef](./type_defs.md#searchschemaversionsummarytypedef)
 - [SearchSchemasRequestRequestTypeDef](./type_defs.md#searchschemasrequestrequesttypedef)
+- [SearchSchemasRequestSearchSchemasPaginateTypeDef](./type_defs.md#searchschemasrequestsearchschemaspaginatetypedef)
 - [SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef)
 - [StartDiscovererRequestRequestTypeDef](./type_defs.md#startdiscovererrequestrequesttypedef)
 - [StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef)
@@ -280,3 +219,4 @@ from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef, 
 - [UpdateSchemaRequestRequestTypeDef](./type_defs.md#updateschemarequestrequesttypedef)
 - [UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

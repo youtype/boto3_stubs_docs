@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-fms-module"></a>
-
-# Examples for boto3 FMS module
+# Examples
 
 > [Index](../README.md) > [FMS](./README.md) > Examples
 
-- [Examples for boto3 FMS module](#examples-for-boto3-fms-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+    type annotations stubs module [mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[fms]` package installed.
 
-Write your `FMS` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `FMS` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type FMSClient
-# and provides type checking and code completion
-client = session.client("fms")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_admin_account()
 
-# paginator has type ListAppsListsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_apps_lists")
-for item in paginator.paginate(...):
-    # item has type ListAppsListsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("fms")  # (1)
+    result = client.get_apps_list()  # (2)
+    ```
+
+    1. client: [FMSClient](./client.md)
+    2. result: [:material-code-braces: GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("fms")  # (1)
+
+    paginator = client.get_paginator("list_apps_lists")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [FMSClient](./client.md)
+    2. paginator: [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
+    3. item: [:material-code-braces: ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[fms]` or a standalone `mypy_boto3_fms` package, you have
-to explicitly specify `client: FMSClient` type annotation.
+With `boto3-stubs-lite[fms]`
+or a standalone `mypy_boto3_fms` package, you have to explicitly specify `client: FMSClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_fms.client import FMSClient
-from mypy_boto3_fms.paginator import ListAppsListsPaginator
-
-from mypy_boto3_fms.literals import PaginatorName
-
-from mypy_boto3_fms.type_defs import None
-from mypy_boto3_fms.type_defs import ListAppsListsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: FMSClient = session.client("fms")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.associate_admin_account()
+    from mypy_boto3_fms.client import FMSClient
+    from mypy_boto3_fms.type_defs import GetAppsListResponseTypeDef
+    from mypy_boto3_fms.type_defs import GetAppsListRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_apps_lists"
-paginator: ListAppsListsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAppsListsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: FMSClient = session.client("fms")
+
+    kwargs: GetAppsListRequestRequestTypeDef = {...}
+    result: GetAppsListResponseTypeDef = client.get_apps_list(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_fms.client import FMSClient
+    from mypy_boto3_fms.paginator import ListAppsListsPaginator
+    from mypy_boto3_fms.type_defs import ListAppsListsResponseTypeDef
+
+
+    session = Session()
+    client: FMSClient = session.client("fms")
+
+    paginator: ListAppsListsPaginator = client.get_paginator("list_apps_lists")
+    for item in paginator.paginate(...):
+        item: ListAppsListsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

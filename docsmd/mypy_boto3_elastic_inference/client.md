@@ -1,39 +1,18 @@
-<a id="elasticinferenceclient-for-boto3-elasticinference-module"></a>
+# ElasticInferenceClient
 
-# ElasticInferenceClient for boto3 ElasticInference module
+> [Index](../README.md) > [ElasticInference](./README.md) > ElasticInferenceClient
 
-> [Index](../README.md) > [ElasticInference](./README.md) >
-> ElasticInferenceClient
+!!! note ""
 
-Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
-type annotations stubs module
-[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
-
-- [ElasticInferenceClient for boto3 ElasticInference module](#elasticinferenceclient-for-boto3-elasticinference-module)
-  - [ElasticInferenceClient](#elasticinferenceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_accelerator_offerings](#describe_accelerator_offerings)
-    - [describe_accelerator_types](#describe_accelerator_types)
-    - [describe_accelerators](#describe_accelerators)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="elasticinferenceclient"></a>
+    Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+    type annotations stubs module [mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 ## ElasticInferenceClient
 
-Type annotations for `boto3.client("elastic-inference")`
+Type annotations and code completion for `#!python boto3.client("elastic-inference")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
 
@@ -41,222 +20,251 @@ def get_elastic-inference_client() -> ElasticInferenceClient:
     return Session().client("elastic-inference")
 ```
 
-Boto3 documentation:
-[ElasticInference.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("elastic-inference").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("elastic-inference")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_elastic_inference.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticInferenceClient exceptions.
-
-Type annotations for `boto3.client("elastic-inference").exceptions` method.
-
-Boto3 documentation:
-[ElasticInference.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("elastic-inference").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticInference.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_accelerator\_offerings"></a>
-
-### describe_accelerator_offerings
+### describe\_accelerator\_offerings
 
 Describes the locations in which a given accelerator type or set of types is
 present in a given region.
 
-Type annotations for
-`boto3.client("elastic-inference").describe_accelerator_offerings` method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").describe_accelerator_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
 
-Boto3 documentation:
-[ElasticInference.Client.describe_accelerator_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_offerings)
+```python title="Method definition"
+def describe_accelerator_offerings(
+    self,
+    *,
+    locationType: LocationTypeType,  # (1)
+    acceleratorTypes: Sequence[str] = ...,
+) -> DescribeAcceleratorOfferingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAcceleratorOfferingsRequestRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequestrequesttypedef).
+1. See [:material-code-brackets: LocationTypeType](./literals.md#locationtypetype) 
+2. See [:material-code-braces: DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `locationType`: [LocationTypeType](./literals.md#locationtypetype)
-  *(required)*
-- `acceleratorTypes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeAcceleratorOfferingsRequestRequestTypeDef = {  # (1)
+    "locationType": ...,
+}
 
-Returns
-[DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
+parent.describe_accelerator_offerings(**kwargs)
+```
 
-<a id="describe\_accelerator\_types"></a>
+1. See [:material-code-braces: DescribeAcceleratorOfferingsRequestRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequestrequesttypedef) 
 
-### describe_accelerator_types
+### describe\_accelerator\_types
 
 Describes the accelerator types available in a given region, as well as their
 characteristics, such as memory and throughput.
 
-Type annotations for
-`boto3.client("elastic-inference").describe_accelerator_types` method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").describe_accelerator_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
 
-Boto3 documentation:
-[ElasticInference.Client.describe_accelerator_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerator_types)
+```python title="Method definition"
+def describe_accelerator_types(
+    self,
+) -> DescribeAcceleratorTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
+1. See [:material-code-braces: DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef) 
 
-<a id="describe\_accelerators"></a>
-
-### describe_accelerators
+### describe\_accelerators
 
 Describes information over a provided set of accelerators belonging to an
 account.
 
-Type annotations for `boto3.client("elastic-inference").describe_accelerators`
-method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").describe_accelerators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
 
-Boto3 documentation:
-[ElasticInference.Client.describe_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.describe_accelerators)
+```python title="Method definition"
+def describe_accelerators(
+    self,
+    *,
+    acceleratorIds: Sequence[str] = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeAcceleratorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAcceleratorsRequestRequestTypeDef](./type_defs.md#describeacceleratorsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `acceleratorIds`: `Sequence`\[`str`\]
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAcceleratorsRequestRequestTypeDef = {  # (1)
+    "acceleratorIds": ...,
+}
 
-Returns
-[DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
+parent.describe_accelerators(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeAcceleratorsRequestRequestTypeDef](./type_defs.md#describeacceleratorsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("elastic-inference").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticInference.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns all tags of an Elastic Inference Accelerator.
 
-Type annotations for `boto3.client("elastic-inference").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ElasticInference.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to an Elastic Inference Accelerator.
 
-Type annotations for `boto3.client("elastic-inference").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
 
-Boto3 documentation:
-[ElasticInference.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from an Elastic Inference Accelerator.
 
-Type annotations for `boto3.client("elastic-inference").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
 
-Boto3 documentation:
-[ElasticInference.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("elastic-inference").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("elastic-inference").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_accelerators")` ->
-  [DescribeAcceleratorsPaginator](./paginators.md#describeacceleratorspaginator)
+- `client.get_paginator("describe_accelerators")` -> [DescribeAcceleratorsPaginator](./paginators.md#describeacceleratorspaginator)
+
+
+

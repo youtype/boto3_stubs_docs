@@ -1,1413 +1,1517 @@
-<a id="literals-for-boto3-s3-module"></a>
-
-# Literals for boto3 S3 module
+# Literals
 
 > [Index](../README.md) > [S3](./README.md) > Literals
 
-Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module
-[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
+!!! note ""
 
-- [Literals for boto3 S3 module](#literals-for-boto3-s3-module)
-  - [AnalyticsS3ExportFileFormatType](#analyticss3exportfileformattype)
-  - [ArchiveStatusType](#archivestatustype)
-  - [BucketAccelerateStatusType](#bucketacceleratestatustype)
-  - [BucketCannedACLType](#bucketcannedacltype)
-  - [BucketExistsWaiterName](#bucketexistswaitername)
-  - [BucketLocationConstraintType](#bucketlocationconstrainttype)
-  - [BucketLogsPermissionType](#bucketlogspermissiontype)
-  - [BucketNotExistsWaiterName](#bucketnotexistswaitername)
-  - [BucketVersioningStatusType](#bucketversioningstatustype)
-  - [ChecksumAlgorithmType](#checksumalgorithmtype)
-  - [ChecksumModeType](#checksummodetype)
-  - [CompressionTypeType](#compressiontypetype)
-  - [DeleteMarkerReplicationStatusType](#deletemarkerreplicationstatustype)
-  - [EncodingTypeType](#encodingtypetype)
-  - [EventType](#eventtype)
-  - [ExistingObjectReplicationStatusType](#existingobjectreplicationstatustype)
-  - [ExpirationStatusType](#expirationstatustype)
-  - [ExpressionTypeType](#expressiontypetype)
-  - [FileHeaderInfoType](#fileheaderinfotype)
-  - [FilterRuleNameType](#filterrulenametype)
-  - [IntelligentTieringAccessTierType](#intelligenttieringaccesstiertype)
-  - [IntelligentTieringStatusType](#intelligenttieringstatustype)
-  - [InventoryFormatType](#inventoryformattype)
-  - [InventoryFrequencyType](#inventoryfrequencytype)
-  - [InventoryIncludedObjectVersionsType](#inventoryincludedobjectversionstype)
-  - [InventoryOptionalFieldType](#inventoryoptionalfieldtype)
-  - [JSONTypeType](#jsontypetype)
-  - [ListMultipartUploadsPaginatorName](#listmultipartuploadspaginatorname)
-  - [ListObjectVersionsPaginatorName](#listobjectversionspaginatorname)
-  - [ListObjectsPaginatorName](#listobjectspaginatorname)
-  - [ListObjectsV2PaginatorName](#listobjectsv2paginatorname)
-  - [ListPartsPaginatorName](#listpartspaginatorname)
-  - [MFADeleteStatusType](#mfadeletestatustype)
-  - [MFADeleteType](#mfadeletetype)
-  - [MetadataDirectiveType](#metadatadirectivetype)
-  - [MetricsStatusType](#metricsstatustype)
-  - [ObjectAttributesType](#objectattributestype)
-  - [ObjectCannedACLType](#objectcannedacltype)
-  - [ObjectExistsWaiterName](#objectexistswaitername)
-  - [ObjectLockEnabledType](#objectlockenabledtype)
-  - [ObjectLockLegalHoldStatusType](#objectlocklegalholdstatustype)
-  - [ObjectLockModeType](#objectlockmodetype)
-  - [ObjectLockRetentionModeType](#objectlockretentionmodetype)
-  - [ObjectNotExistsWaiterName](#objectnotexistswaitername)
-  - [ObjectOwnershipType](#objectownershiptype)
-  - [ObjectStorageClassType](#objectstorageclasstype)
-  - [ObjectVersionStorageClassType](#objectversionstorageclasstype)
-  - [OwnerOverrideType](#owneroverridetype)
-  - [PayerType](#payertype)
-  - [PermissionType](#permissiontype)
-  - [ProtocolType](#protocoltype)
-  - [QuoteFieldsType](#quotefieldstype)
-  - [ReplicaModificationsStatusType](#replicamodificationsstatustype)
-  - [ReplicationRuleStatusType](#replicationrulestatustype)
-  - [ReplicationStatusType](#replicationstatustype)
-  - [ReplicationTimeStatusType](#replicationtimestatustype)
-  - [RequestChargedType](#requestchargedtype)
-  - [RequestPayerType](#requestpayertype)
-  - [RestoreRequestTypeType](#restorerequesttypetype)
-  - [ServerSideEncryptionType](#serversideencryptiontype)
-  - [SseKmsEncryptedObjectsStatusType](#ssekmsencryptedobjectsstatustype)
-  - [StorageClassAnalysisSchemaVersionType](#storageclassanalysisschemaversiontype)
-  - [StorageClassType](#storageclasstype)
-  - [TaggingDirectiveType](#taggingdirectivetype)
-  - [TierType](#tiertype)
-  - [TransitionStorageClassType](#transitionstorageclasstype)
-  - [TypeType](#typetype)
-  - [S3ServiceName](#s3servicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="analyticss3exportfileformattype"></a>
+    Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+    type annotations stubs module [mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 ## AnalyticsS3ExportFileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType
+
+def get_value() -> AnalyticsS3ExportFileFormatType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-
-<a id="archivestatustype"></a>
-
+```python title="Definition"
+AnalyticsS3ExportFileFormatType = Literal[
+    "CSV",
+]
+```
 ## ArchiveStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ArchiveStatusType
+
+def get_value() -> ArchiveStatusType:
+    return "ARCHIVE_ACCESS"
 ```
 
-Values:
-
-- `ARCHIVE_ACCESS`
-- `DEEP_ARCHIVE_ACCESS`
-
-<a id="bucketacceleratestatustype"></a>
-
+```python title="Definition"
+ArchiveStatusType = Literal[
+    "ARCHIVE_ACCESS",
+    "DEEP_ARCHIVE_ACCESS",
+]
+```
 ## BucketAccelerateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketAccelerateStatusType
+
+def get_value() -> BucketAccelerateStatusType:
+    return "Enabled"
 ```
 
-Values:
-
-- `Enabled`
-- `Suspended`
-
-<a id="bucketcannedacltype"></a>
-
+```python title="Definition"
+BucketAccelerateStatusType = Literal[
+    "Enabled",
+    "Suspended",
+]
+```
 ## BucketCannedACLType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketCannedACLType
+
+def get_value() -> BucketCannedACLType:
+    return "authenticated-read"
 ```
 
-Values:
-
-- `authenticated-read`
-- `private`
-- `public-read`
-- `public-read-write`
-
-<a id="bucketexistswaitername"></a>
-
+```python title="Definition"
+BucketCannedACLType = Literal[
+    "authenticated-read",
+    "private",
+    "public-read",
+    "public-read-write",
+]
+```
 ## BucketExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketExistsWaiterName
+
+def get_value() -> BucketExistsWaiterName:
+    return "bucket_exists"
 ```
 
-Values:
-
-- `bucket_exists`
-
-<a id="bucketlocationconstrainttype"></a>
-
+```python title="Definition"
+BucketExistsWaiterName = Literal[
+    "bucket_exists",
+]
+```
 ## BucketLocationConstraintType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketLocationConstraintType
+
+def get_value() -> BucketLocationConstraintType:
+    return "EU"
 ```
 
-Values:
-
-- `af-south-1`
-- `ap-east-1`
-- `ap-northeast-1`
-- `ap-northeast-2`
-- `ap-northeast-3`
-- `ap-south-1`
-- `ap-southeast-1`
-- `ap-southeast-2`
-- `ca-central-1`
-- `cn-north-1`
-- `cn-northwest-1`
-- `EU`
-- `eu-central-1`
-- `eu-north-1`
-- `eu-south-1`
-- `eu-west-1`
-- `eu-west-2`
-- `eu-west-3`
-- `me-south-1`
-- `sa-east-1`
-- `us-east-2`
-- `us-gov-east-1`
-- `us-gov-west-1`
-- `us-west-1`
-- `us-west-2`
-
-<a id="bucketlogspermissiontype"></a>
-
+```python title="Definition"
+BucketLocationConstraintType = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "cn-north-1",
+    "cn-northwest-1",
+    "EU",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-2",
+    "us-gov-east-1",
+    "us-gov-west-1",
+    "us-west-1",
+    "us-west-2",
+]
+```
 ## BucketLogsPermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketLogsPermissionType
+
+def get_value() -> BucketLogsPermissionType:
+    return "FULL_CONTROL"
 ```
 
-Values:
-
-- `FULL_CONTROL`
-- `READ`
-- `WRITE`
-
-<a id="bucketnotexistswaitername"></a>
-
+```python title="Definition"
+BucketLogsPermissionType = Literal[
+    "FULL_CONTROL",
+    "READ",
+    "WRITE",
+]
+```
 ## BucketNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketNotExistsWaiterName
+
+def get_value() -> BucketNotExistsWaiterName:
+    return "bucket_not_exists"
 ```
 
-Values:
-
-- `bucket_not_exists`
-
-<a id="bucketversioningstatustype"></a>
-
+```python title="Definition"
+BucketNotExistsWaiterName = Literal[
+    "bucket_not_exists",
+]
+```
 ## BucketVersioningStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import BucketVersioningStatusType
+
+def get_value() -> BucketVersioningStatusType:
+    return "Enabled"
 ```
 
-Values:
-
-- `Enabled`
-- `Suspended`
-
-<a id="checksumalgorithmtype"></a>
-
+```python title="Definition"
+BucketVersioningStatusType = Literal[
+    "Enabled",
+    "Suspended",
+]
+```
 ## ChecksumAlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ChecksumAlgorithmType
+
+def get_value() -> ChecksumAlgorithmType:
+    return "CRC32"
 ```
 
-Values:
-
-- `CRC32`
-- `CRC32C`
-- `SHA1`
-- `SHA256`
-
-<a id="checksummodetype"></a>
-
+```python title="Definition"
+ChecksumAlgorithmType = Literal[
+    "CRC32",
+    "CRC32C",
+    "SHA1",
+    "SHA256",
+]
+```
 ## ChecksumModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ChecksumModeType
+
+def get_value() -> ChecksumModeType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-
-<a id="compressiontypetype"></a>
-
+```python title="Definition"
+ChecksumModeType = Literal[
+    "ENABLED",
+]
+```
 ## CompressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import CompressionTypeType
+
+def get_value() -> CompressionTypeType:
+    return "BZIP2"
 ```
 
-Values:
-
-- `BZIP2`
-- `GZIP`
-- `NONE`
-
-<a id="deletemarkerreplicationstatustype"></a>
-
+```python title="Definition"
+CompressionTypeType = Literal[
+    "BZIP2",
+    "GZIP",
+    "NONE",
+]
+```
 ## DeleteMarkerReplicationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import DeleteMarkerReplicationStatusType
+
+def get_value() -> DeleteMarkerReplicationStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="encodingtypetype"></a>
-
+```python title="Definition"
+DeleteMarkerReplicationStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## EncodingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import EncodingTypeType
+
+def get_value() -> EncodingTypeType:
+    return "url"
 ```
 
-Values:
-
-- `url`
-
-<a id="eventtype"></a>
-
+```python title="Definition"
+EncodingTypeType = Literal[
+    "url",
+]
+```
 ## EventType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import EventType
+
+def get_value() -> EventType:
+    return "s3:IntelligentTiering"
 ```
 
-Values:
-
-- `s3:IntelligentTiering`
-- `s3:LifecycleExpiration:*`
-- `s3:LifecycleExpiration:Delete`
-- `s3:LifecycleExpiration:DeleteMarkerCreated`
-- `s3:LifecycleTransition`
-- `s3:ObjectAcl:Put`
-- `s3:ObjectCreated:*`
-- `s3:ObjectCreated:CompleteMultipartUpload`
-- `s3:ObjectCreated:Copy`
-- `s3:ObjectCreated:Post`
-- `s3:ObjectCreated:Put`
-- `s3:ObjectRemoved:*`
-- `s3:ObjectRemoved:Delete`
-- `s3:ObjectRemoved:DeleteMarkerCreated`
-- `s3:ObjectRestore:*`
-- `s3:ObjectRestore:Completed`
-- `s3:ObjectRestore:Delete`
-- `s3:ObjectRestore:Post`
-- `s3:ObjectTagging:*`
-- `s3:ObjectTagging:Delete`
-- `s3:ObjectTagging:Put`
-- `s3:ReducedRedundancyLostObject`
-- `s3:Replication:*`
-- `s3:Replication:OperationFailedReplication`
-- `s3:Replication:OperationMissedThreshold`
-- `s3:Replication:OperationNotTracked`
-- `s3:Replication:OperationReplicatedAfterThreshold`
-
-<a id="existingobjectreplicationstatustype"></a>
-
+```python title="Definition"
+EventType = Literal[
+    "s3:IntelligentTiering",
+    "s3:LifecycleExpiration:*",
+    "s3:LifecycleExpiration:Delete",
+    "s3:LifecycleExpiration:DeleteMarkerCreated",
+    "s3:LifecycleTransition",
+    "s3:ObjectAcl:Put",
+    "s3:ObjectCreated:*",
+    "s3:ObjectCreated:CompleteMultipartUpload",
+    "s3:ObjectCreated:Copy",
+    "s3:ObjectCreated:Post",
+    "s3:ObjectCreated:Put",
+    "s3:ObjectRemoved:*",
+    "s3:ObjectRemoved:Delete",
+    "s3:ObjectRemoved:DeleteMarkerCreated",
+    "s3:ObjectRestore:*",
+    "s3:ObjectRestore:Completed",
+    "s3:ObjectRestore:Delete",
+    "s3:ObjectRestore:Post",
+    "s3:ObjectTagging:*",
+    "s3:ObjectTagging:Delete",
+    "s3:ObjectTagging:Put",
+    "s3:ReducedRedundancyLostObject",
+    "s3:Replication:*",
+    "s3:Replication:OperationFailedReplication",
+    "s3:Replication:OperationMissedThreshold",
+    "s3:Replication:OperationNotTracked",
+    "s3:Replication:OperationReplicatedAfterThreshold",
+]
+```
 ## ExistingObjectReplicationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ExistingObjectReplicationStatusType
+
+def get_value() -> ExistingObjectReplicationStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="expirationstatustype"></a>
-
+```python title="Definition"
+ExistingObjectReplicationStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ExpirationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ExpirationStatusType
+
+def get_value() -> ExpirationStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="expressiontypetype"></a>
-
+```python title="Definition"
+ExpirationStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ExpressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ExpressionTypeType
+
+def get_value() -> ExpressionTypeType:
+    return "SQL"
 ```
 
-Values:
-
-- `SQL`
-
-<a id="fileheaderinfotype"></a>
-
+```python title="Definition"
+ExpressionTypeType = Literal[
+    "SQL",
+]
+```
 ## FileHeaderInfoType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import FileHeaderInfoType
+
+def get_value() -> FileHeaderInfoType:
+    return "IGNORE"
 ```
 
-Values:
-
-- `IGNORE`
-- `NONE`
-- `USE`
-
-<a id="filterrulenametype"></a>
-
+```python title="Definition"
+FileHeaderInfoType = Literal[
+    "IGNORE",
+    "NONE",
+    "USE",
+]
+```
 ## FilterRuleNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import FilterRuleNameType
+
+def get_value() -> FilterRuleNameType:
+    return "prefix"
 ```
 
-Values:
-
-- `prefix`
-- `suffix`
-
-<a id="intelligenttieringaccesstiertype"></a>
-
+```python title="Definition"
+FilterRuleNameType = Literal[
+    "prefix",
+    "suffix",
+]
+```
 ## IntelligentTieringAccessTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import IntelligentTieringAccessTierType
+
+def get_value() -> IntelligentTieringAccessTierType:
+    return "ARCHIVE_ACCESS"
 ```
 
-Values:
-
-- `ARCHIVE_ACCESS`
-- `DEEP_ARCHIVE_ACCESS`
-
-<a id="intelligenttieringstatustype"></a>
-
+```python title="Definition"
+IntelligentTieringAccessTierType = Literal[
+    "ARCHIVE_ACCESS",
+    "DEEP_ARCHIVE_ACCESS",
+]
+```
 ## IntelligentTieringStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import IntelligentTieringStatusType
+
+def get_value() -> IntelligentTieringStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="inventoryformattype"></a>
-
+```python title="Definition"
+IntelligentTieringStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## InventoryFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import InventoryFormatType
+
+def get_value() -> InventoryFormatType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `ORC`
-- `Parquet`
-
-<a id="inventoryfrequencytype"></a>
-
+```python title="Definition"
+InventoryFormatType = Literal[
+    "CSV",
+    "ORC",
+    "Parquet",
+]
+```
 ## InventoryFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import InventoryFrequencyType
+
+def get_value() -> InventoryFrequencyType:
+    return "Daily"
 ```
 
-Values:
-
-- `Daily`
-- `Weekly`
-
-<a id="inventoryincludedobjectversionstype"></a>
-
+```python title="Definition"
+InventoryFrequencyType = Literal[
+    "Daily",
+    "Weekly",
+]
+```
 ## InventoryIncludedObjectVersionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import InventoryIncludedObjectVersionsType
+
+def get_value() -> InventoryIncludedObjectVersionsType:
+    return "All"
 ```
 
-Values:
-
-- `All`
-- `Current`
-
-<a id="inventoryoptionalfieldtype"></a>
-
+```python title="Definition"
+InventoryIncludedObjectVersionsType = Literal[
+    "All",
+    "Current",
+]
+```
 ## InventoryOptionalFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import InventoryOptionalFieldType
+
+def get_value() -> InventoryOptionalFieldType:
+    return "BucketKeyStatus"
 ```
 
-Values:
-
-- `BucketKeyStatus`
-- `ChecksumAlgorithm`
-- `EncryptionStatus`
-- `ETag`
-- `IntelligentTieringAccessTier`
-- `IsMultipartUploaded`
-- `LastModifiedDate`
-- `ObjectLockLegalHoldStatus`
-- `ObjectLockMode`
-- `ObjectLockRetainUntilDate`
-- `ReplicationStatus`
-- `Size`
-- `StorageClass`
-
-<a id="jsontypetype"></a>
-
+```python title="Definition"
+InventoryOptionalFieldType = Literal[
+    "BucketKeyStatus",
+    "ChecksumAlgorithm",
+    "EncryptionStatus",
+    "ETag",
+    "IntelligentTieringAccessTier",
+    "IsMultipartUploaded",
+    "LastModifiedDate",
+    "ObjectLockLegalHoldStatus",
+    "ObjectLockMode",
+    "ObjectLockRetainUntilDate",
+    "ReplicationStatus",
+    "Size",
+    "StorageClass",
+]
+```
 ## JSONTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import JSONTypeType
+
+def get_value() -> JSONTypeType:
+    return "DOCUMENT"
 ```
 
-Values:
-
-- `DOCUMENT`
-- `LINES`
-
-<a id="listmultipartuploadspaginatorname"></a>
-
+```python title="Definition"
+JSONTypeType = Literal[
+    "DOCUMENT",
+    "LINES",
+]
+```
 ## ListMultipartUploadsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ListMultipartUploadsPaginatorName
+
+def get_value() -> ListMultipartUploadsPaginatorName:
+    return "list_multipart_uploads"
 ```
 
-Values:
-
-- `list_multipart_uploads`
-
-<a id="listobjectversionspaginatorname"></a>
-
+```python title="Definition"
+ListMultipartUploadsPaginatorName = Literal[
+    "list_multipart_uploads",
+]
+```
 ## ListObjectVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ListObjectVersionsPaginatorName
+
+def get_value() -> ListObjectVersionsPaginatorName:
+    return "list_object_versions"
 ```
 
-Values:
-
-- `list_object_versions`
-
-<a id="listobjectspaginatorname"></a>
-
+```python title="Definition"
+ListObjectVersionsPaginatorName = Literal[
+    "list_object_versions",
+]
+```
 ## ListObjectsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ListObjectsPaginatorName
+
+def get_value() -> ListObjectsPaginatorName:
+    return "list_objects"
 ```
 
-Values:
-
-- `list_objects`
-
-<a id="listobjectsv2paginatorname"></a>
-
+```python title="Definition"
+ListObjectsPaginatorName = Literal[
+    "list_objects",
+]
+```
 ## ListObjectsV2PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ListObjectsV2PaginatorName
+
+def get_value() -> ListObjectsV2PaginatorName:
+    return "list_objects_v2"
 ```
 
-Values:
-
-- `list_objects_v2`
-
-<a id="listpartspaginatorname"></a>
-
+```python title="Definition"
+ListObjectsV2PaginatorName = Literal[
+    "list_objects_v2",
+]
+```
 ## ListPartsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ListPartsPaginatorName
+
+def get_value() -> ListPartsPaginatorName:
+    return "list_parts"
 ```
 
-Values:
-
-- `list_parts`
-
-<a id="mfadeletestatustype"></a>
-
+```python title="Definition"
+ListPartsPaginatorName = Literal[
+    "list_parts",
+]
+```
 ## MFADeleteStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import MFADeleteStatusType
+
+def get_value() -> MFADeleteStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="mfadeletetype"></a>
-
+```python title="Definition"
+MFADeleteStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## MFADeleteType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import MFADeleteType
+
+def get_value() -> MFADeleteType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="metadatadirectivetype"></a>
-
+```python title="Definition"
+MFADeleteType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## MetadataDirectiveType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import MetadataDirectiveType
+
+def get_value() -> MetadataDirectiveType:
+    return "COPY"
 ```
 
-Values:
-
-- `COPY`
-- `REPLACE`
-
-<a id="metricsstatustype"></a>
-
+```python title="Definition"
+MetadataDirectiveType = Literal[
+    "COPY",
+    "REPLACE",
+]
+```
 ## MetricsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import MetricsStatusType
+
+def get_value() -> MetricsStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="objectattributestype"></a>
-
+```python title="Definition"
+MetricsStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ObjectAttributesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectAttributesType
+
+def get_value() -> ObjectAttributesType:
+    return "Checksum"
 ```
 
-Values:
-
-- `Checksum`
-- `ETag`
-- `ObjectParts`
-- `ObjectSize`
-- `StorageClass`
-
-<a id="objectcannedacltype"></a>
-
+```python title="Definition"
+ObjectAttributesType = Literal[
+    "Checksum",
+    "ETag",
+    "ObjectParts",
+    "ObjectSize",
+    "StorageClass",
+]
+```
 ## ObjectCannedACLType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectCannedACLType
+
+def get_value() -> ObjectCannedACLType:
+    return "authenticated-read"
 ```
 
-Values:
-
-- `authenticated-read`
-- `aws-exec-read`
-- `bucket-owner-full-control`
-- `bucket-owner-read`
-- `private`
-- `public-read`
-- `public-read-write`
-
-<a id="objectexistswaitername"></a>
-
+```python title="Definition"
+ObjectCannedACLType = Literal[
+    "authenticated-read",
+    "aws-exec-read",
+    "bucket-owner-full-control",
+    "bucket-owner-read",
+    "private",
+    "public-read",
+    "public-read-write",
+]
+```
 ## ObjectExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectExistsWaiterName
+
+def get_value() -> ObjectExistsWaiterName:
+    return "object_exists"
 ```
 
-Values:
-
-- `object_exists`
-
-<a id="objectlockenabledtype"></a>
-
+```python title="Definition"
+ObjectExistsWaiterName = Literal[
+    "object_exists",
+]
+```
 ## ObjectLockEnabledType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectLockEnabledType
+
+def get_value() -> ObjectLockEnabledType:
+    return "Enabled"
 ```
 
-Values:
-
-- `Enabled`
-
-<a id="objectlocklegalholdstatustype"></a>
-
+```python title="Definition"
+ObjectLockEnabledType = Literal[
+    "Enabled",
+]
+```
 ## ObjectLockLegalHoldStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectLockLegalHoldStatusType
+
+def get_value() -> ObjectLockLegalHoldStatusType:
+    return "OFF"
 ```
 
-Values:
-
-- `OFF`
-- `ON`
-
-<a id="objectlockmodetype"></a>
-
+```python title="Definition"
+ObjectLockLegalHoldStatusType = Literal[
+    "OFF",
+    "ON",
+]
+```
 ## ObjectLockModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectLockModeType
+
+def get_value() -> ObjectLockModeType:
+    return "COMPLIANCE"
 ```
 
-Values:
-
-- `COMPLIANCE`
-- `GOVERNANCE`
-
-<a id="objectlockretentionmodetype"></a>
-
+```python title="Definition"
+ObjectLockModeType = Literal[
+    "COMPLIANCE",
+    "GOVERNANCE",
+]
+```
 ## ObjectLockRetentionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectLockRetentionModeType
+
+def get_value() -> ObjectLockRetentionModeType:
+    return "COMPLIANCE"
 ```
 
-Values:
-
-- `COMPLIANCE`
-- `GOVERNANCE`
-
-<a id="objectnotexistswaitername"></a>
-
+```python title="Definition"
+ObjectLockRetentionModeType = Literal[
+    "COMPLIANCE",
+    "GOVERNANCE",
+]
+```
 ## ObjectNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectNotExistsWaiterName
+
+def get_value() -> ObjectNotExistsWaiterName:
+    return "object_not_exists"
 ```
 
-Values:
-
-- `object_not_exists`
-
-<a id="objectownershiptype"></a>
-
+```python title="Definition"
+ObjectNotExistsWaiterName = Literal[
+    "object_not_exists",
+]
+```
 ## ObjectOwnershipType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectOwnershipType
+
+def get_value() -> ObjectOwnershipType:
+    return "BucketOwnerEnforced"
 ```
 
-Values:
-
-- `BucketOwnerEnforced`
-- `BucketOwnerPreferred`
-- `ObjectWriter`
-
-<a id="objectstorageclasstype"></a>
-
+```python title="Definition"
+ObjectOwnershipType = Literal[
+    "BucketOwnerEnforced",
+    "BucketOwnerPreferred",
+    "ObjectWriter",
+]
+```
 ## ObjectStorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectStorageClassType
+
+def get_value() -> ObjectStorageClassType:
+    return "DEEP_ARCHIVE"
 ```
 
-Values:
-
-- `DEEP_ARCHIVE`
-- `GLACIER`
-- `GLACIER_IR`
-- `INTELLIGENT_TIERING`
-- `ONEZONE_IA`
-- `OUTPOSTS`
-- `REDUCED_REDUNDANCY`
-- `STANDARD`
-- `STANDARD_IA`
-
-<a id="objectversionstorageclasstype"></a>
-
+```python title="Definition"
+ObjectStorageClassType = Literal[
+    "DEEP_ARCHIVE",
+    "GLACIER",
+    "GLACIER_IR",
+    "INTELLIGENT_TIERING",
+    "ONEZONE_IA",
+    "OUTPOSTS",
+    "REDUCED_REDUNDANCY",
+    "STANDARD",
+    "STANDARD_IA",
+]
+```
 ## ObjectVersionStorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ObjectVersionStorageClassType
+
+def get_value() -> ObjectVersionStorageClassType:
+    return "STANDARD"
 ```
 
-Values:
-
-- `STANDARD`
-
-<a id="owneroverridetype"></a>
-
+```python title="Definition"
+ObjectVersionStorageClassType = Literal[
+    "STANDARD",
+]
+```
 ## OwnerOverrideType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import OwnerOverrideType
+
+def get_value() -> OwnerOverrideType:
+    return "Destination"
 ```
 
-Values:
-
-- `Destination`
-
-<a id="payertype"></a>
-
+```python title="Definition"
+OwnerOverrideType = Literal[
+    "Destination",
+]
+```
 ## PayerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import PayerType
+
+def get_value() -> PayerType:
+    return "BucketOwner"
 ```
 
-Values:
-
-- `BucketOwner`
-- `Requester`
-
-<a id="permissiontype"></a>
-
+```python title="Definition"
+PayerType = Literal[
+    "BucketOwner",
+    "Requester",
+]
+```
 ## PermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import PermissionType
+
+def get_value() -> PermissionType:
+    return "FULL_CONTROL"
 ```
 
-Values:
-
-- `FULL_CONTROL`
-- `READ`
-- `READ_ACP`
-- `WRITE`
-- `WRITE_ACP`
-
-<a id="protocoltype"></a>
-
+```python title="Definition"
+PermissionType = Literal[
+    "FULL_CONTROL",
+    "READ",
+    "READ_ACP",
+    "WRITE",
+    "WRITE_ACP",
+]
+```
 ## ProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "http"
 ```
 
-Values:
-
-- `http`
-- `https`
-
-<a id="quotefieldstype"></a>
-
+```python title="Definition"
+ProtocolType = Literal[
+    "http",
+    "https",
+]
+```
 ## QuoteFieldsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import QuoteFieldsType
+
+def get_value() -> QuoteFieldsType:
+    return "ALWAYS"
 ```
 
-Values:
-
-- `ALWAYS`
-- `ASNEEDED`
-
-<a id="replicamodificationsstatustype"></a>
-
+```python title="Definition"
+QuoteFieldsType = Literal[
+    "ALWAYS",
+    "ASNEEDED",
+]
+```
 ## ReplicaModificationsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ReplicaModificationsStatusType
+
+def get_value() -> ReplicaModificationsStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="replicationrulestatustype"></a>
-
+```python title="Definition"
+ReplicaModificationsStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ReplicationRuleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ReplicationRuleStatusType
+
+def get_value() -> ReplicationRuleStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="replicationstatustype"></a>
-
+```python title="Definition"
+ReplicationRuleStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ReplicationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ReplicationStatusType
+
+def get_value() -> ReplicationStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `FAILED`
-- `PENDING`
-- `REPLICA`
-
-<a id="replicationtimestatustype"></a>
-
+```python title="Definition"
+ReplicationStatusType = Literal[
+    "COMPLETE",
+    "FAILED",
+    "PENDING",
+    "REPLICA",
+]
+```
 ## ReplicationTimeStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ReplicationTimeStatusType
+
+def get_value() -> ReplicationTimeStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="requestchargedtype"></a>
-
+```python title="Definition"
+ReplicationTimeStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## RequestChargedType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import RequestChargedType
+
+def get_value() -> RequestChargedType:
+    return "requester"
 ```
 
-Values:
-
-- `requester`
-
-<a id="requestpayertype"></a>
-
+```python title="Definition"
+RequestChargedType = Literal[
+    "requester",
+]
+```
 ## RequestPayerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import RequestPayerType
+
+def get_value() -> RequestPayerType:
+    return "requester"
 ```
 
-Values:
-
-- `requester`
-
-<a id="restorerequesttypetype"></a>
-
+```python title="Definition"
+RequestPayerType = Literal[
+    "requester",
+]
+```
 ## RestoreRequestTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import RestoreRequestTypeType
+
+def get_value() -> RestoreRequestTypeType:
+    return "SELECT"
 ```
 
-Values:
-
-- `SELECT`
-
-<a id="serversideencryptiontype"></a>
-
+```python title="Definition"
+RestoreRequestTypeType = Literal[
+    "SELECT",
+]
+```
 ## ServerSideEncryptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ServerSideEncryptionType
+
+def get_value() -> ServerSideEncryptionType:
+    return "AES256"
 ```
 
-Values:
-
-- `AES256`
-- `aws:kms`
-
-<a id="ssekmsencryptedobjectsstatustype"></a>
-
+```python title="Definition"
+ServerSideEncryptionType = Literal[
+    "AES256",
+    "aws:kms",
+]
+```
 ## SseKmsEncryptedObjectsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import SseKmsEncryptedObjectsStatusType
+
+def get_value() -> SseKmsEncryptedObjectsStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="storageclassanalysisschemaversiontype"></a>
-
+```python title="Definition"
+SseKmsEncryptedObjectsStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## StorageClassAnalysisSchemaVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import StorageClassAnalysisSchemaVersionType
+
+def get_value() -> StorageClassAnalysisSchemaVersionType:
+    return "V_1"
 ```
 
-Values:
-
-- `V_1`
-
-<a id="storageclasstype"></a>
-
+```python title="Definition"
+StorageClassAnalysisSchemaVersionType = Literal[
+    "V_1",
+]
+```
 ## StorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import StorageClassType
+
+def get_value() -> StorageClassType:
+    return "DEEP_ARCHIVE"
 ```
 
-Values:
-
-- `DEEP_ARCHIVE`
-- `GLACIER`
-- `GLACIER_IR`
-- `INTELLIGENT_TIERING`
-- `ONEZONE_IA`
-- `OUTPOSTS`
-- `REDUCED_REDUNDANCY`
-- `STANDARD`
-- `STANDARD_IA`
-
-<a id="taggingdirectivetype"></a>
-
+```python title="Definition"
+StorageClassType = Literal[
+    "DEEP_ARCHIVE",
+    "GLACIER",
+    "GLACIER_IR",
+    "INTELLIGENT_TIERING",
+    "ONEZONE_IA",
+    "OUTPOSTS",
+    "REDUCED_REDUNDANCY",
+    "STANDARD",
+    "STANDARD_IA",
+]
+```
 ## TaggingDirectiveType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import TaggingDirectiveType
+
+def get_value() -> TaggingDirectiveType:
+    return "COPY"
 ```
 
-Values:
-
-- `COPY`
-- `REPLACE`
-
-<a id="tiertype"></a>
-
+```python title="Definition"
+TaggingDirectiveType = Literal[
+    "COPY",
+    "REPLACE",
+]
+```
 ## TierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import TierType
+
+def get_value() -> TierType:
+    return "Bulk"
 ```
 
-Values:
-
-- `Bulk`
-- `Expedited`
-- `Standard`
-
-<a id="transitionstorageclasstype"></a>
-
+```python title="Definition"
+TierType = Literal[
+    "Bulk",
+    "Expedited",
+    "Standard",
+]
+```
 ## TransitionStorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import TransitionStorageClassType
+
+def get_value() -> TransitionStorageClassType:
+    return "DEEP_ARCHIVE"
 ```
 
-Values:
-
-- `DEEP_ARCHIVE`
-- `GLACIER`
-- `GLACIER_IR`
-- `INTELLIGENT_TIERING`
-- `ONEZONE_IA`
-- `STANDARD_IA`
-
-<a id="typetype"></a>
-
+```python title="Definition"
+TransitionStorageClassType = Literal[
+    "DEEP_ARCHIVE",
+    "GLACIER",
+    "GLACIER_IR",
+    "INTELLIGENT_TIERING",
+    "ONEZONE_IA",
+    "STANDARD_IA",
+]
+```
 ## TypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import TypeType
+
+def get_value() -> TypeType:
+    return "AmazonCustomerByEmail"
 ```
 
-Values:
-
-- `AmazonCustomerByEmail`
-- `CanonicalUser`
-- `Group`
-
-<a id="s3servicename"></a>
-
+```python title="Definition"
+TypeType = Literal[
+    "AmazonCustomerByEmail",
+    "CanonicalUser",
+    "Group",
+]
+```
 ## S3ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import S3ServiceName
+
+def get_value() -> S3ServiceName:
+    return "s3"
 ```
 
-Values:
-
-- `s3`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+S3ServiceName = Literal[
+    "s3",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_multipart_uploads"
 ```
 
-Values:
-
-- `list_multipart_uploads`
-- `list_object_versions`
-- `list_objects`
-- `list_objects_v2`
-- `list_parts`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_multipart_uploads",
+    "list_object_versions",
+    "list_objects",
+    "list_objects_v2",
+    "list_parts",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_s3.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "bucket_exists"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "bucket_exists",
+    "bucket_not_exists",
+    "object_exists",
+    "object_not_exists",
+]
+```
+## RegionName
 
-- `bucket_exists`
-- `bucket_not_exists`
-- `object_exists`
-- `object_not_exists`
+```python title="Usage Example"
+from mypy_boto3_s3.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

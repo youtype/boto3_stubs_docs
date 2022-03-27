@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-storagegateway-module"></a>
-
-# Examples for boto3 StorageGateway module
+# Examples
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Examples
 
-- [Examples for boto3 StorageGateway module](#examples-for-boto3-storagegateway-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+    type annotations stubs module [mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[storagegateway]` package installed.
 
-Write your `StorageGateway` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `StorageGateway` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type StorageGatewayClient
-# and provides type checking and code completion
-client = session.client("storagegateway")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type ActivateGatewayOutputTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.activate_gateway()
 
-# paginator has type DescribeTapeArchivesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_tape_archives")
-for item in paginator.paginate(...):
-    # item has type DescribeTapeArchivesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("storagegateway")  # (1)
+    result = client.activate_gateway()  # (2)
+    ```
+
+    1. client: [StorageGatewayClient](./client.md)
+    2. result: [:material-code-braces: ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("storagegateway")  # (1)
+
+    paginator = client.get_paginator("describe_tape_archives")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [StorageGatewayClient](./client.md)
+    2. paginator: [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
+    3. item: [:material-code-braces: DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[storagegateway]` or a standalone
-`mypy_boto3_storagegateway` package, you have to explicitly specify
-`client: StorageGatewayClient` type annotation.
+With `boto3-stubs-lite[storagegateway]`
+or a standalone `mypy_boto3_storagegateway` package, you have to explicitly specify `client: StorageGatewayClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_storagegateway.client import StorageGatewayClient
-from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
-
-from mypy_boto3_storagegateway.literals import PaginatorName
-
-from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
-from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: StorageGatewayClient = session.client("storagegateway")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: ActivateGatewayOutputTypeDef = client.activate_gateway()
+    from mypy_boto3_storagegateway.client import StorageGatewayClient
+    from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
+    from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_tape_archives"
-paginator: DescribeTapeArchivesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeTapeArchivesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: StorageGatewayClient = session.client("storagegateway")
+
+    kwargs: ActivateGatewayInputRequestTypeDef = {...}
+    result: ActivateGatewayOutputTypeDef = client.activate_gateway(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_storagegateway.client import StorageGatewayClient
+    from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
+    from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDef
+
+
+    session = Session()
+    client: StorageGatewayClient = session.client("storagegateway")
+
+    paginator: DescribeTapeArchivesPaginator = client.get_paginator("describe_tape_archives")
+    for item in paginator.paginate(...):
+        item: DescribeTapeArchivesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

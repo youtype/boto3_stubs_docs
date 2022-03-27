@@ -1,591 +1,782 @@
-<a id="typed-dictionaries-for-boto3-migrationhub-module"></a>
-
-# Typed dictionaries for boto3 MigrationHub module
+# Typed dictionaries
 
 > [Index](../README.md) > [MigrationHub](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module
-[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MigrationHub module](#typed-dictionaries-for-boto3-migrationhub-module)
-  - [ApplicationStateTypeDef](#applicationstatetypedef)
-  - [AssociateCreatedArtifactRequestRequestTypeDef](#associatecreatedartifactrequestrequesttypedef)
-  - [AssociateDiscoveredResourceRequestRequestTypeDef](#associatediscoveredresourcerequestrequesttypedef)
-  - [CreateProgressUpdateStreamRequestRequestTypeDef](#createprogressupdatestreamrequestrequesttypedef)
-  - [CreatedArtifactTypeDef](#createdartifacttypedef)
-  - [DeleteProgressUpdateStreamRequestRequestTypeDef](#deleteprogressupdatestreamrequestrequesttypedef)
-  - [DescribeApplicationStateRequestRequestTypeDef](#describeapplicationstaterequestrequesttypedef)
-  - [DescribeApplicationStateResultTypeDef](#describeapplicationstateresulttypedef)
-  - [DescribeMigrationTaskRequestRequestTypeDef](#describemigrationtaskrequestrequesttypedef)
-  - [DescribeMigrationTaskResultTypeDef](#describemigrationtaskresulttypedef)
-  - [DisassociateCreatedArtifactRequestRequestTypeDef](#disassociatecreatedartifactrequestrequesttypedef)
-  - [DisassociateDiscoveredResourceRequestRequestTypeDef](#disassociatediscoveredresourcerequestrequesttypedef)
-  - [DiscoveredResourceTypeDef](#discoveredresourcetypedef)
-  - [ImportMigrationTaskRequestRequestTypeDef](#importmigrationtaskrequestrequesttypedef)
-  - [ListApplicationStatesRequestRequestTypeDef](#listapplicationstatesrequestrequesttypedef)
-  - [ListApplicationStatesResultTypeDef](#listapplicationstatesresulttypedef)
-  - [ListCreatedArtifactsRequestRequestTypeDef](#listcreatedartifactsrequestrequesttypedef)
-  - [ListCreatedArtifactsResultTypeDef](#listcreatedartifactsresulttypedef)
-  - [ListDiscoveredResourcesRequestRequestTypeDef](#listdiscoveredresourcesrequestrequesttypedef)
-  - [ListDiscoveredResourcesResultTypeDef](#listdiscoveredresourcesresulttypedef)
-  - [ListMigrationTasksRequestRequestTypeDef](#listmigrationtasksrequestrequesttypedef)
-  - [ListMigrationTasksResultTypeDef](#listmigrationtasksresulttypedef)
-  - [ListProgressUpdateStreamsRequestRequestTypeDef](#listprogressupdatestreamsrequestrequesttypedef)
-  - [ListProgressUpdateStreamsResultTypeDef](#listprogressupdatestreamsresulttypedef)
-  - [MigrationTaskSummaryTypeDef](#migrationtasksummarytypedef)
-  - [MigrationTaskTypeDef](#migrationtasktypedef)
-  - [NotifyApplicationStateRequestRequestTypeDef](#notifyapplicationstaterequestrequesttypedef)
-  - [NotifyMigrationTaskStateRequestRequestTypeDef](#notifymigrationtaskstaterequestrequesttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProgressUpdateStreamSummaryTypeDef](#progressupdatestreamsummarytypedef)
-  - [PutResourceAttributesRequestRequestTypeDef](#putresourceattributesrequestrequesttypedef)
-  - [ResourceAttributeTypeDef](#resourceattributetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TaskTypeDef](#tasktypedef)
-
-<a id="applicationstatetypedef"></a>
+    Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+    type annotations stubs module [mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ## ApplicationStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ApplicationStateTypeDef
+
+def get_value() -> ApplicationStateTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationStateTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    ApplicationStatus: NotRequired[ApplicationStatusType],  # (1)
+    LastUpdatedTime: NotRequired[datetime],
+```
 
-- `ApplicationId`: `str`
-- `ApplicationStatus`:
-  [ApplicationStatusType](./literals.md#applicationstatustype)
-- `LastUpdatedTime`: `datetime`
-
-<a id="associatecreatedartifactrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
 ## AssociateCreatedArtifactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import AssociateCreatedArtifactRequestRequestTypeDef
+
+def get_value() -> AssociateCreatedArtifactRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "CreatedArtifact": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateCreatedArtifactRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    CreatedArtifact: CreatedArtifactTypeDef,  # (1)
+    DryRun: NotRequired[bool],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `CreatedArtifact`:
-  [CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef)
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="associatediscoveredresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef) 
 ## AssociateDiscoveredResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import AssociateDiscoveredResourceRequestRequestTypeDef
+
+def get_value() -> AssociateDiscoveredResourceRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "DiscoveredResource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateDiscoveredResourceRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    DiscoveredResource: DiscoveredResourceTypeDef,  # (1)
+    DryRun: NotRequired[bool],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `DiscoveredResource`:
-  [DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="createprogressupdatestreamrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef) 
 ## CreateProgressUpdateStreamRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import CreateProgressUpdateStreamRequestRequestTypeDef
+
+def get_value() -> CreateProgressUpdateStreamRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStreamName`: `str`
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="createdartifacttypedef"></a>
+```python title="Definition"
+class CreateProgressUpdateStreamRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStreamName: str,
+    DryRun: NotRequired[bool],
+```
 
 ## CreatedArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import CreatedArtifactTypeDef
+
+def get_value() -> CreatedArtifactTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="deleteprogressupdatestreamrequestrequesttypedef"></a>
+```python title="Definition"
+class CreatedArtifactTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+```
 
 ## DeleteProgressUpdateStreamRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DeleteProgressUpdateStreamRequestRequestTypeDef
+
+def get_value() -> DeleteProgressUpdateStreamRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStreamName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStreamName`: `str`
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="describeapplicationstaterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProgressUpdateStreamRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStreamName: str,
+    DryRun: NotRequired[bool],
+```
 
 ## DescribeApplicationStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DescribeApplicationStateRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationStateRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-<a id="describeapplicationstateresulttypedef"></a>
+```python title="Definition"
+class DescribeApplicationStateRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+```
 
 ## DescribeApplicationStateResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DescribeApplicationStateResultTypeDef
+
+def get_value() -> DescribeApplicationStateResultTypeDef:
+    return {
+        "ApplicationStatus": ...,
+        "LastUpdatedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationStateResultTypeDef(TypedDict):
+    ApplicationStatus: ApplicationStatusType,  # (1)
+    LastUpdatedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationStatus`:
-  [ApplicationStatusType](./literals.md#applicationstatustype)
-- `LastUpdatedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemigrationtaskrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMigrationTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DescribeMigrationTaskRequestRequestTypeDef
+
+def get_value() -> DescribeMigrationTaskRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-
-<a id="describemigrationtaskresulttypedef"></a>
+```python title="Definition"
+class DescribeMigrationTaskRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+```
 
 ## DescribeMigrationTaskResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DescribeMigrationTaskResultTypeDef
+
+def get_value() -> DescribeMigrationTaskResultTypeDef:
+    return {
+        "MigrationTask": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMigrationTaskResultTypeDef(TypedDict):
+    MigrationTask: MigrationTaskTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MigrationTask`: [MigrationTaskTypeDef](./type_defs.md#migrationtasktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatecreatedartifactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MigrationTaskTypeDef](./type_defs.md#migrationtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateCreatedArtifactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DisassociateCreatedArtifactRequestRequestTypeDef
+
+def get_value() -> DisassociateCreatedArtifactRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "CreatedArtifactName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `CreatedArtifactName`: `str`
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="disassociatediscoveredresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateCreatedArtifactRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    CreatedArtifactName: str,
+    DryRun: NotRequired[bool],
+```
 
 ## DisassociateDiscoveredResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DisassociateDiscoveredResourceRequestRequestTypeDef
+
+def get_value() -> DisassociateDiscoveredResourceRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "ConfigurationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `ConfigurationId`: `str`
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="discoveredresourcetypedef"></a>
+```python title="Definition"
+class DisassociateDiscoveredResourceRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    ConfigurationId: str,
+    DryRun: NotRequired[bool],
+```
 
 ## DiscoveredResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import DiscoveredResourceTypeDef
+
+def get_value() -> DiscoveredResourceTypeDef:
+    return {
+        "ConfigurationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="importmigrationtaskrequestrequesttypedef"></a>
+```python title="Definition"
+class DiscoveredResourceTypeDef(TypedDict):
+    ConfigurationId: str,
+    Description: NotRequired[str],
+```
 
 ## ImportMigrationTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ImportMigrationTaskRequestRequestTypeDef
+
+def get_value() -> ImportMigrationTaskRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportMigrationTaskRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    DryRun: NotRequired[bool],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
+## ListApplicationStatesRequestListApplicationStatesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_mgh.type_defs import ListApplicationStatesRequestListApplicationStatesPaginateTypeDef
 
-- `DryRun`: `bool`
+def get_value() -> ListApplicationStatesRequestListApplicationStatesPaginateTypeDef:
+    return {
+        "ApplicationIds": ...,
+    }
+```
 
-<a id="listapplicationstatesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListApplicationStatesRequestListApplicationStatesPaginateTypeDef(TypedDict):
+    ApplicationIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationStatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListApplicationStatesRequestRequestTypeDef
+
+def get_value() -> ListApplicationStatesRequestRequestTypeDef:
+    return {
+        "ApplicationIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listapplicationstatesresulttypedef"></a>
+```python title="Definition"
+class ListApplicationStatesRequestRequestTypeDef(TypedDict):
+    ApplicationIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListApplicationStatesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListApplicationStatesResultTypeDef
+
+def get_value() -> ListApplicationStatesResultTypeDef:
+    return {
+        "ApplicationStateList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationStatesResultTypeDef(TypedDict):
+    ApplicationStateList: List[ApplicationStateTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationStateList`:
-  `List`\[[ApplicationStateTypeDef](./type_defs.md#applicationstatetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ApplicationStateTypeDef](./type_defs.md#applicationstatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef
 
-<a id="listcreatedartifactsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mgh.type_defs import ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef
 
+def get_value() -> ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
+```
+
+```python title="Definition"
+class ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCreatedArtifactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListCreatedArtifactsRequestRequestTypeDef
+
+def get_value() -> ListCreatedArtifactsRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcreatedartifactsresulttypedef"></a>
+```python title="Definition"
+class ListCreatedArtifactsRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListCreatedArtifactsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListCreatedArtifactsResultTypeDef
+
+def get_value() -> ListCreatedArtifactsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "CreatedArtifactList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCreatedArtifactsResultTypeDef(TypedDict):
+    NextToken: str,
+    CreatedArtifactList: List[CreatedArtifactTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `CreatedArtifactList`:
-  `List`\[[CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef
 
-<a id="listdiscoveredresourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef
 
+def get_value() -> ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
+```
+
+```python title="Definition"
+class ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDiscoveredResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesRequestRequestTypeDef
+
+def get_value() -> ListDiscoveredResourcesRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdiscoveredresourcesresulttypedef"></a>
+```python title="Definition"
+class ListDiscoveredResourcesRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDiscoveredResourcesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListDiscoveredResourcesResultTypeDef
+
+def get_value() -> ListDiscoveredResourcesResultTypeDef:
+    return {
+        "NextToken": ...,
+        "DiscoveredResourceList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDiscoveredResourcesResultTypeDef(TypedDict):
+    NextToken: str,
+    DiscoveredResourceList: List[DiscoveredResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `DiscoveredResourceList`:
-  `List`\[[DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMigrationTasksRequestListMigrationTasksPaginateTypeDef
 
-<a id="listmigrationtasksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mgh.type_defs import ListMigrationTasksRequestListMigrationTasksPaginateTypeDef
 
+def get_value() -> ListMigrationTasksRequestListMigrationTasksPaginateTypeDef:
+    return {
+        "ResourceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMigrationTasksRequestListMigrationTasksPaginateTypeDef(TypedDict):
+    ResourceName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMigrationTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListMigrationTasksRequestRequestTypeDef
+
+def get_value() -> ListMigrationTasksRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceName`: `str`
-
-<a id="listmigrationtasksresulttypedef"></a>
+```python title="Definition"
+class ListMigrationTasksRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ResourceName: NotRequired[str],
+```
 
 ## ListMigrationTasksResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListMigrationTasksResultTypeDef
+
+def get_value() -> ListMigrationTasksResultTypeDef:
+    return {
+        "NextToken": ...,
+        "MigrationTaskSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMigrationTasksResultTypeDef(TypedDict):
+    NextToken: str,
+    MigrationTaskSummaryList: List[MigrationTaskSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MigrationTaskSummaryList`:
-  `List`\[[MigrationTaskSummaryTypeDef](./type_defs.md#migrationtasksummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MigrationTaskSummaryTypeDef](./type_defs.md#migrationtasksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef
 
-<a id="listprogressupdatestreamsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef
 
+def get_value() -> ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProgressUpdateStreamsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsRequestRequestTypeDef
+
+def get_value() -> ListProgressUpdateStreamsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprogressupdatestreamsresulttypedef"></a>
+```python title="Definition"
+class ListProgressUpdateStreamsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProgressUpdateStreamsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ListProgressUpdateStreamsResultTypeDef
+
+def get_value() -> ListProgressUpdateStreamsResultTypeDef:
+    return {
+        "ProgressUpdateStreamSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProgressUpdateStreamsResultTypeDef(TypedDict):
+    ProgressUpdateStreamSummaryList: List[ProgressUpdateStreamSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProgressUpdateStreamSummaryList`:
-  `List`\[[ProgressUpdateStreamSummaryTypeDef](./type_defs.md#progressupdatestreamsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="migrationtasksummarytypedef"></a>
-
+1. See [:material-code-braces: ProgressUpdateStreamSummaryTypeDef](./type_defs.md#progressupdatestreamsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MigrationTaskSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import MigrationTaskSummaryTypeDef
+
+def get_value() -> MigrationTaskSummaryTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MigrationTaskSummaryTypeDef(TypedDict):
+    ProgressUpdateStream: NotRequired[str],
+    MigrationTaskName: NotRequired[str],
+    Status: NotRequired[StatusType],  # (1)
+    ProgressPercent: NotRequired[int],
+    StatusDetail: NotRequired[str],
+    UpdateDateTime: NotRequired[datetime],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `ProgressPercent`: `int`
-- `StatusDetail`: `str`
-- `UpdateDateTime`: `datetime`
-
-<a id="migrationtasktypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## MigrationTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import MigrationTaskTypeDef
+
+def get_value() -> MigrationTaskTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MigrationTaskTypeDef(TypedDict):
+    ProgressUpdateStream: NotRequired[str],
+    MigrationTaskName: NotRequired[str],
+    Task: NotRequired[TaskTypeDef],  # (1)
+    UpdateDateTime: NotRequired[datetime],
+    ResourceAttributeList: NotRequired[List[ResourceAttributeTypeDef]],  # (2)
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `Task`: [TaskTypeDef](./type_defs.md#tasktypedef)
-- `UpdateDateTime`: `datetime`
-- `ResourceAttributeList`:
-  `List`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
-
-<a id="notifyapplicationstaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+2. See [:material-code-braces: ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef) 
 ## NotifyApplicationStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import NotifyApplicationStateRequestRequestTypeDef
+
+def get_value() -> NotifyApplicationStateRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyApplicationStateRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Status: ApplicationStatusType,  # (1)
+    UpdateDateTime: NotRequired[Union[datetime, str]],
+    DryRun: NotRequired[bool],
+```
 
-- `ApplicationId`: `str`
-- `Status`: [ApplicationStatusType](./literals.md#applicationstatustype)
-
-Optional fields:
-
-- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
-- `DryRun`: `bool`
-
-<a id="notifymigrationtaskstaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
 ## NotifyMigrationTaskStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import NotifyMigrationTaskStateRequestRequestTypeDef
+
+def get_value() -> NotifyMigrationTaskStateRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "Task": ...,
+        "UpdateDateTime": ...,
+        "NextUpdateSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyMigrationTaskStateRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    Task: TaskTypeDef,  # (1)
+    UpdateDateTime: Union[datetime, str],
+    NextUpdateSeconds: int,
+    DryRun: NotRequired[bool],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `Task`: [TaskTypeDef](./type_defs.md#tasktypedef)
-- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
-- `NextUpdateSeconds`: `int`
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="progressupdatestreamsummarytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProgressUpdateStreamSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ProgressUpdateStreamSummaryTypeDef
+
+def get_value() -> ProgressUpdateStreamSummaryTypeDef:
+    return {
+        "ProgressUpdateStreamName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProgressUpdateStreamName`: `str`
-
-<a id="putresourceattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class ProgressUpdateStreamSummaryTypeDef(TypedDict):
+    ProgressUpdateStreamName: NotRequired[str],
+```
 
 ## PutResourceAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import PutResourceAttributesRequestRequestTypeDef
+
+def get_value() -> PutResourceAttributesRequestRequestTypeDef:
+    return {
+        "ProgressUpdateStream": ...,
+        "MigrationTaskName": ...,
+        "ResourceAttributeList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourceAttributesRequestRequestTypeDef(TypedDict):
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    ResourceAttributeList: Sequence[ResourceAttributeTypeDef],  # (1)
+    DryRun: NotRequired[bool],
+```
 
-- `ProgressUpdateStream`: `str`
-- `MigrationTaskName`: `str`
-- `ResourceAttributeList`:
-  `Sequence`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="resourceattributetypedef"></a>
-
+1. See [:material-code-braces: ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef) 
 ## ResourceAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ResourceAttributeTypeDef
+
+def get_value() -> ResourceAttributeTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceAttributeTypeDef(TypedDict):
+    Type: ResourceAttributeTypeType,  # (1)
+    Value: str,
+```
 
-- `Type`: [ResourceAttributeTypeType](./literals.md#resourceattributetypetype)
-- `Value`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceAttributeTypeType](./literals.md#resourceattributetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tasktypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mgh.type_defs import TaskTypeDef
+
+def get_value() -> TaskTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TaskTypeDef(TypedDict):
+    Status: StatusType,  # (1)
+    StatusDetail: NotRequired[str],
+    ProgressPercent: NotRequired[int],
+```
 
-- `Status`: [StatusType](./literals.md#statustype)
-
-Optional fields:
-
-- `StatusDetail`: `str`
-- `ProgressPercent`: `int`
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 

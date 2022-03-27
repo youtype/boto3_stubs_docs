@@ -1,31 +1,18 @@
-<a id="waiters-for-boto3-elasticloadbalancingv2-module"></a>
-
-# Waiters for boto3 ElasticLoadBalancingv2 module
+# Waiters
 
 > [Index](../README.md) > [ElasticLoadBalancingv2](./README.md) > Waiters
 
-Auto-generated documentation for
-[ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
-type annotations stubs module
-[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+!!! note ""
 
-- [Waiters for boto3 ElasticLoadBalancingv2 module](#waiters-for-boto3-elasticloadbalancingv2-module)
-  - [LoadBalancerAvailableWaiter](#loadbalanceravailablewaiter)
-  - [LoadBalancerExistsWaiter](#loadbalancerexistswaiter)
-  - [LoadBalancersDeletedWaiter](#loadbalancersdeletedwaiter)
-  - [TargetDeregisteredWaiter](#targetderegisteredwaiter)
-  - [TargetInServiceWaiter](#targetinservicewaiter)
-
-<a id="loadbalanceravailablewaiter"></a>
+    Auto-generated documentation for [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
+    type annotations stubs module [mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 ## LoadBalancerAvailableWaiter
 
-Type annotations for
-`boto3.client("elbv2").get_waiter("load_balancer_available")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter("load_balancer_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.waiter import LoadBalancerAvailableWaiter
@@ -34,27 +21,42 @@ def get_load_balancer_available_waiter() -> LoadBalancerAvailableWaiter:
     return Session().client("elbv2").get_waiter("load_balancer_available")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancer_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerAvailable)
 
-Arguments for `LoadBalancerAvailableWaiter.wait` method:
+### wait
 
-- `LoadBalancerArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LoadBalancerAvailableWaiter.wait` method.
 
-<a id="loadbalancerexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersInputLoadBalancerAvailableWaitTypeDef = {  # (1)
+    "LoadBalancerArns": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLoadBalancersInputLoadBalancerAvailableWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalanceravailablewaittypedef) 
 ## LoadBalancerExistsWaiter
 
-Type annotations for
-`boto3.client("elbv2").get_waiter("load_balancer_exists")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter("load_balancer_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.waiter import LoadBalancerExistsWaiter
@@ -63,27 +65,42 @@ def get_load_balancer_exists_waiter() -> LoadBalancerExistsWaiter:
     return Session().client("elbv2").get_waiter("load_balancer_exists")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancer_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancerExists)
 
-Arguments for `LoadBalancerExistsWaiter.wait` method:
+### wait
 
-- `LoadBalancerArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LoadBalancerExistsWaiter.wait` method.
 
-<a id="loadbalancersdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersInputLoadBalancerExistsWaitTypeDef = {  # (1)
+    "LoadBalancerArns": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLoadBalancersInputLoadBalancerExistsWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalancerexistswaittypedef) 
 ## LoadBalancersDeletedWaiter
 
-Type annotations for
-`boto3.client("elbv2").get_waiter("load_balancers_deleted")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter("load_balancers_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancersDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.waiter import LoadBalancersDeletedWaiter
@@ -92,26 +109,42 @@ def get_load_balancers_deleted_waiter() -> LoadBalancersDeletedWaiter:
     return Session().client("elbv2").get_waiter("load_balancers_deleted")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.load_balancers_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.LoadBalancersDeleted)
 
-Arguments for `LoadBalancersDeletedWaiter.wait` method:
+### wait
 
-- `LoadBalancerArns`: `Sequence`\[`str`\]
-- `Names`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `PageSize`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LoadBalancersDeletedWaiter.wait` method.
 
-<a id="targetderegisteredwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerArns: Sequence[str] = ...,
+    Names: Sequence[str] = ...,
+    Marker: str = ...,
+    PageSize: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeLoadBalancersInputLoadBalancersDeletedWaitTypeDef = {  # (1)
+    "LoadBalancerArns": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeLoadBalancersInputLoadBalancersDeletedWaitTypeDef](./type_defs.md#describeloadbalancersinputloadbalancersdeletedwaittypedef) 
 ## TargetDeregisteredWaiter
 
-Type annotations for `boto3.client("elbv2").get_waiter("target_deregistered")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter("target_deregistered")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetDeregistered)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.waiter import TargetDeregisteredWaiter
@@ -120,25 +153,41 @@ def get_target_deregistered_waiter() -> TargetDeregisteredWaiter:
     return Session().client("elbv2").get_waiter("target_deregistered")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.target_deregistered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetDeregistered)
 
-Arguments for `TargetDeregisteredWaiter.wait` method:
+### wait
 
-- `TargetGroupArn`: `str` *(required)*
-- `Targets`:
-  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TargetDeregisteredWaiter.wait` method.
 
-<a id="targetinservicewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    TargetGroupArn: str,
+    Targets: Sequence[TargetDescriptionTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetHealthInputTargetDeregisteredWaitTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTargetHealthInputTargetDeregisteredWaitTypeDef](./type_defs.md#describetargethealthinputtargetderegisteredwaittypedef) 
 ## TargetInServiceWaiter
 
-Type annotations for `boto3.client("elbv2").get_waiter("target_in_service")`.
+Type annotations and code completion for `#!python boto3.client("elbv2").get_waiter("target_in_service")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetInService)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elbv2.waiter import TargetInServiceWaiter
@@ -147,12 +196,32 @@ def get_target_in_service_waiter() -> TargetInServiceWaiter:
     return Session().client("elbv2").get_waiter("target_in_service")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancingv2.Waiter.target_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2.Waiter.TargetInService)
 
-Arguments for `TargetInServiceWaiter.wait` method:
+### wait
 
-- `TargetGroupArn`: `str` *(required)*
-- `Targets`:
-  `Sequence`\[[TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TargetInServiceWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    TargetGroupArn: str,
+    Targets: Sequence[TargetDescriptionTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: TargetDescriptionTypeDef](./type_defs.md#targetdescriptiontypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTargetHealthInputTargetInServiceWaitTypeDef = {  # (1)
+    "TargetGroupArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTargetHealthInputTargetInServiceWaitTypeDef](./type_defs.md#describetargethealthinputtargetinservicewaittypedef) 

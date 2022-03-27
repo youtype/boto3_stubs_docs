@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-cognitosync-module"></a>
-
-# Type annotations for boto3 CognitoSync module
+#  CognitoSync module
 
 > [Index](../README.md) > CognitoSync
 
-Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
-type annotations stubs module
-[mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+!!! note ""
 
-- [Type annotations for boto3 CognitoSync module](#type-annotations-for-boto3-cognitosync-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CognitoSyncClient](#cognitosyncclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+    type annotations stubs module [mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CognitoSync`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cognito-sync]'
 python -m pip install mypy-boto3-cognito-sync
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,81 +42,41 @@ python -m pip install mypy-boto3-cognito-sync
 python -m pip uninstall -y mypy-boto3-cognito-sync
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cognitosyncclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CognitoSyncClient
 
-Type annotations for `boto3.client("cognito-sync")` as
-[CognitoSyncClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cognito-sync")` as [CognitoSyncClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
+
+def get_client() -> CognitoSyncClient:
+    return Session().cleint("cognito-sync")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [bulk_publish](./client.md#bulk_publish)
-- [can_paginate](./client.md#can_paginate)
-- [delete_dataset](./client.md#delete_dataset)
-- [describe_dataset](./client.md#describe_dataset)
-- [describe_identity_pool_usage](./client.md#describe_identity_pool_usage)
-- [describe_identity_usage](./client.md#describe_identity_usage)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_bulk_publish_details](./client.md#get_bulk_publish_details)
-- [get_cognito_events](./client.md#get_cognito_events)
-- [get_identity_pool_configuration](./client.md#get_identity_pool_configuration)
-- [list_datasets](./client.md#list_datasets)
-- [list_identity_pool_usage](./client.md#list_identity_pool_usage)
-- [list_records](./client.md#list_records)
-- [register_device](./client.md#register_device)
-- [set_cognito_events](./client.md#set_cognito_events)
-- [set_identity_pool_configuration](./client.md#set_identity_pool_configuration)
-- [subscribe_to_dataset](./client.md#subscribe_to_dataset)
-- [unsubscribe_from_dataset](./client.md#unsubscribe_from_dataset)
-- [update_records](./client.md#update_records)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-CognitoSyncClient [exceptions](./client.md#exceptions)
 
-- AlreadyStreamedException
-- ClientError
-- ConcurrentModificationException
-- DuplicateRequestException
-- InternalErrorException
-- InvalidConfigurationException
-- InvalidLambdaFunctionOutputException
-- InvalidParameterException
-- LambdaThrottledException
-- LimitExceededException
-- NotAuthorizedException
-- ResourceConflictException
-- ResourceNotFoundException
-- TooManyRequestsException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_sync.literals import BulkPublishStatusType
 
-```python
-from mypy_boto3_cognito_sync.literals import BulkPublishStatusType, ...
+def get_value() -> BulkPublishStatusType:
+    return "FAILED"
 ```
 
 - [BulkPublishStatusType](./literals.md#bulkpublishstatustype)
@@ -147,18 +86,22 @@ from mypy_boto3_cognito_sync.literals import BulkPublishStatusType, ...
 - [CognitoSyncServiceName](./literals.md#cognitosyncservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_sync.type_defs import BulkPublishRequestRequestTypeDef
 
-```python
-from mypy_boto3_cognito_sync.type_defs import BulkPublishRequestRequestTypeDef, ...
+def get_value() -> BulkPublishRequestRequestTypeDef:
+    return {
+        "IdentityPoolId": ...,
+    }
 ```
 
 - [BulkPublishRequestRequestTypeDef](./type_defs.md#bulkpublishrequestrequesttypedef)
@@ -200,3 +143,4 @@ from mypy_boto3_cognito_sync.type_defs import BulkPublishRequestRequestTypeDef, 
 - [UnsubscribeFromDatasetRequestRequestTypeDef](./type_defs.md#unsubscribefromdatasetrequestrequesttypedef)
 - [UpdateRecordsRequestRequestTypeDef](./type_defs.md#updaterecordsrequestrequesttypedef)
 - [UpdateRecordsResponseTypeDef](./type_defs.md#updaterecordsresponsetypedef)
+

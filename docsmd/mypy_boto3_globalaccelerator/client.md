@@ -1,80 +1,18 @@
-<a id="globalacceleratorclient-for-boto3-globalaccelerator-module"></a>
+# GlobalAcceleratorClient
 
-# GlobalAcceleratorClient for boto3 GlobalAccelerator module
+> [Index](../README.md) > [GlobalAccelerator](./README.md) > GlobalAcceleratorClient
 
-> [Index](../README.md) > [GlobalAccelerator](./README.md) >
-> GlobalAcceleratorClient
+!!! note ""
 
-Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module
-[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
-
-- [GlobalAcceleratorClient for boto3 GlobalAccelerator module](#globalacceleratorclient-for-boto3-globalaccelerator-module)
-  - [GlobalAcceleratorClient](#globalacceleratorclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_custom_routing_endpoints](#add_custom_routing_endpoints)
-    - [advertise_byoip_cidr](#advertise_byoip_cidr)
-    - [allow_custom_routing_traffic](#allow_custom_routing_traffic)
-    - [can_paginate](#can_paginate)
-    - [create_accelerator](#create_accelerator)
-    - [create_custom_routing_accelerator](#create_custom_routing_accelerator)
-    - [create_custom_routing_endpoint_group](#create_custom_routing_endpoint_group)
-    - [create_custom_routing_listener](#create_custom_routing_listener)
-    - [create_endpoint_group](#create_endpoint_group)
-    - [create_listener](#create_listener)
-    - [delete_accelerator](#delete_accelerator)
-    - [delete_custom_routing_accelerator](#delete_custom_routing_accelerator)
-    - [delete_custom_routing_endpoint_group](#delete_custom_routing_endpoint_group)
-    - [delete_custom_routing_listener](#delete_custom_routing_listener)
-    - [delete_endpoint_group](#delete_endpoint_group)
-    - [delete_listener](#delete_listener)
-    - [deny_custom_routing_traffic](#deny_custom_routing_traffic)
-    - [deprovision_byoip_cidr](#deprovision_byoip_cidr)
-    - [describe_accelerator](#describe_accelerator)
-    - [describe_accelerator_attributes](#describe_accelerator_attributes)
-    - [describe_custom_routing_accelerator](#describe_custom_routing_accelerator)
-    - [describe_custom_routing_accelerator_attributes](#describe_custom_routing_accelerator_attributes)
-    - [describe_custom_routing_endpoint_group](#describe_custom_routing_endpoint_group)
-    - [describe_custom_routing_listener](#describe_custom_routing_listener)
-    - [describe_endpoint_group](#describe_endpoint_group)
-    - [describe_listener](#describe_listener)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_accelerators](#list_accelerators)
-    - [list_byoip_cidrs](#list_byoip_cidrs)
-    - [list_custom_routing_accelerators](#list_custom_routing_accelerators)
-    - [list_custom_routing_endpoint_groups](#list_custom_routing_endpoint_groups)
-    - [list_custom_routing_listeners](#list_custom_routing_listeners)
-    - [list_custom_routing_port_mappings](#list_custom_routing_port_mappings)
-    - [list_custom_routing_port_mappings_by_destination](#list_custom_routing_port_mappings_by_destination)
-    - [list_endpoint_groups](#list_endpoint_groups)
-    - [list_listeners](#list_listeners)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [provision_byoip_cidr](#provision_byoip_cidr)
-    - [remove_custom_routing_endpoints](#remove_custom_routing_endpoints)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_accelerator](#update_accelerator)
-    - [update_accelerator_attributes](#update_accelerator_attributes)
-    - [update_custom_routing_accelerator](#update_custom_routing_accelerator)
-    - [update_custom_routing_accelerator_attributes](#update_custom_routing_accelerator_attributes)
-    - [update_custom_routing_listener](#update_custom_routing_listener)
-    - [update_endpoint_group](#update_endpoint_group)
-    - [update_listener](#update_listener)
-    - [withdraw_byoip_cidr](#withdraw_byoip_cidr)
-    - [get_paginator](#get_paginator)
-
-<a id="globalacceleratorclient"></a>
+    Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+    type annotations stubs module [mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ## GlobalAcceleratorClient
 
-Type annotations for `boto3.client("globalaccelerator")`
+Type annotations and code completion for `#!python boto3.client("globalaccelerator")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_globalaccelerator.client import GlobalAcceleratorClient
 
@@ -82,1251 +20,1597 @@ def get_globalaccelerator_client() -> GlobalAcceleratorClient:
     return Session().client("globalaccelerator")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("globalaccelerator").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("globalaccelerator")
+
+try:
+    do_something(client)
+except (
+    client.AcceleratorNotDisabledException,
+    client.AcceleratorNotFoundException,
+    client.AccessDeniedException,
+    client.AssociatedEndpointGroupFoundException,
+    client.AssociatedListenerFoundException,
+    client.ByoipCidrNotFoundException,
+    client.ClientError,
+    client.ConflictException,
+    client.EndpointAlreadyExistsException,
+    client.EndpointGroupAlreadyExistsException,
+    client.EndpointGroupNotFoundException,
+    client.EndpointNotFoundException,
+    client.IncorrectCidrStateException,
+    client.InternalServiceErrorException,
+    client.InvalidArgumentException,
+    client.InvalidNextTokenException,
+    client.InvalidPortRangeException,
+    client.LimitExceededException,
+    client.ListenerNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_globalaccelerator.client import Exceptions
 
 def handle_error(exc: Exceptions.AcceleratorNotDisabledException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AcceleratorNotDisabledException`
-- `Exceptions.AcceleratorNotFoundException`
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AssociatedEndpointGroupFoundException`
-- `Exceptions.AssociatedListenerFoundException`
-- `Exceptions.ByoipCidrNotFoundException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.EndpointAlreadyExistsException`
-- `Exceptions.EndpointGroupAlreadyExistsException`
-- `Exceptions.EndpointGroupNotFoundException`
-- `Exceptions.EndpointNotFoundException`
-- `Exceptions.IncorrectCidrStateException`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.InvalidArgumentException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidPortRangeException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ListenerNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### add\_custom\_routing\_endpoints
 
-GlobalAcceleratorClient exceptions.
+Associate a virtual private cloud (VPC) subnet endpoint with your custom routing
+accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").add_custom_routing_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.exceptions)
+```python title="Method definition"
+def add_custom_routing_endpoints(
+    self,
+    *,
+    EndpointConfigurations: Sequence[CustomRoutingEndpointConfigurationTypeDef],  # (1)
+    EndpointGroupArn: str,
+) -> AddCustomRoutingEndpointsResponseTypeDef:  # (2)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef) 
+2. See [:material-code-braces: AddCustomRoutingEndpointsResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponsetypedef) 
 
-<a id="add\_custom\_routing\_endpoints"></a>
 
-### add_custom_routing_endpoints
+```python title="Usage example with kwargs"
+kwargs: AddCustomRoutingEndpointsRequestRequestTypeDef = {  # (1)
+    "EndpointConfigurations": ...,
+    "EndpointGroupArn": ...,
+}
 
-Associate a virtual private cloud (VPC) subnet endpoint with your custom
-routing accelerator.
+parent.add_custom_routing_endpoints(**kwargs)
+```
 
-Type annotations for
-`boto3.client("globalaccelerator").add_custom_routing_endpoints` method.
+1. See [:material-code-braces: AddCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#addcustomroutingendpointsrequestrequesttypedef) 
 
-Boto3 documentation:
-[GlobalAccelerator.Client.add_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.add_custom_routing_endpoints)
-
-Arguments mapping described in
-[AddCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#addcustomroutingendpointsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `EndpointConfigurations`:
-  `Sequence`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
-  *(required)*
-- `EndpointGroupArn`: `str` *(required)*
-
-Returns
-[AddCustomRoutingEndpointsResponseTypeDef](./type_defs.md#addcustomroutingendpointsresponsetypedef).
-
-<a id="advertise\_byoip\_cidr"></a>
-
-### advertise_byoip_cidr
+### advertise\_byoip\_cidr
 
 Advertises an IPv4 address range that is provisioned for use with your AWS
 resources through bring your own IP addresses (BYOIP).
 
-Type annotations for `boto3.client("globalaccelerator").advertise_byoip_cidr`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").advertise_byoip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.advertise_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.advertise_byoip_cidr)
+```python title="Method definition"
+def advertise_byoip_cidr(
+    self,
+    *,
+    Cidr: str,
+) -> AdvertiseByoipCidrResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AdvertiseByoipCidrRequestRequestTypeDef](./type_defs.md#advertisebyoipcidrrequestrequesttypedef).
+1. See [:material-code-braces: AdvertiseByoipCidrResponseTypeDef](./type_defs.md#advertisebyoipcidrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Cidr`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AdvertiseByoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+}
 
-Returns
-[AdvertiseByoipCidrResponseTypeDef](./type_defs.md#advertisebyoipcidrresponsetypedef).
+parent.advertise_byoip_cidr(**kwargs)
+```
 
-<a id="allow\_custom\_routing\_traffic"></a>
+1. See [:material-code-braces: AdvertiseByoipCidrRequestRequestTypeDef](./type_defs.md#advertisebyoipcidrrequestrequesttypedef) 
 
-### allow_custom_routing_traffic
+### allow\_custom\_routing\_traffic
 
 Specify the Amazon EC2 instance (destination) IP addresses and ports for a VPC
 subnet endpoint that can receive traffic for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").allow_custom_routing_traffic` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").allow_custom_routing_traffic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.allow_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.allow_custom_routing_traffic)
+```python title="Method definition"
+def allow_custom_routing_traffic(
+    self,
+    *,
+    EndpointGroupArn: str,
+    EndpointId: str,
+    DestinationAddresses: Sequence[str] = ...,
+    DestinationPorts: Sequence[int] = ...,
+    AllowAllTrafficToEndpoint: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AllowCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#allowcustomroutingtrafficrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
-- `DestinationAddresses`: `Sequence`\[`str`\]
-- `DestinationPorts`: `Sequence`\[`int`\]
-- `AllowAllTrafficToEndpoint`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AllowCustomRoutingTrafficRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+    "EndpointId": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.allow_custom_routing_traffic(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AllowCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#allowcustomroutingtrafficrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("globalaccelerator").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_accelerator"></a>
-
-### create_accelerator
+### create\_accelerator
 
 Create an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").create_accelerator`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_accelerator)
+```python title="Method definition"
+def create_accelerator(
+    self,
+    *,
+    Name: str,
+    IdempotencyToken: str,
+    IpAddressType: IpAddressTypeType = ...,  # (1)
+    IpAddresses: Sequence[str] = ...,
+    Enabled: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAcceleratorResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAcceleratorRequestRequestTypeDef](./type_defs.md#createacceleratorrequestrequesttypedef).
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAcceleratorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateAcceleratorResponseTypeDef](./type_defs.md#createacceleratorresponsetypedef).
+parent.create_accelerator(**kwargs)
+```
 
-<a id="create\_custom\_routing\_accelerator"></a>
+1. See [:material-code-braces: CreateAcceleratorRequestRequestTypeDef](./type_defs.md#createacceleratorrequestrequesttypedef) 
 
-### create_custom_routing_accelerator
+### create\_custom\_routing\_accelerator
 
 Create a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").create_custom_routing_accelerator` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_custom_routing_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_accelerator)
+```python title="Method definition"
+def create_custom_routing_accelerator(
+    self,
+    *,
+    Name: str,
+    IdempotencyToken: str,
+    IpAddressType: IpAddressTypeType = ...,  # (1)
+    IpAddresses: Sequence[str] = ...,
+    Enabled: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateCustomRoutingAcceleratorResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#createcustomroutingacceleratorrequestrequesttypedef).
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomRoutingAcceleratorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#createcustomroutingacceleratorresponsetypedef).
+parent.create_custom_routing_accelerator(**kwargs)
+```
 
-<a id="create\_custom\_routing\_endpoint\_group"></a>
+1. See [:material-code-braces: CreateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#createcustomroutingacceleratorrequestrequesttypedef) 
 
-### create_custom_routing_endpoint_group
+### create\_custom\_routing\_endpoint\_group
 
 Create an endpoint group for the specified listener for a custom routing
 accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").create_custom_routing_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_custom_routing_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_endpoint_group)
+```python title="Method definition"
+def create_custom_routing_endpoint_group(
+    self,
+    *,
+    ListenerArn: str,
+    EndpointGroupRegion: str,
+    DestinationConfigurations: Sequence[CustomRoutingDestinationConfigurationTypeDef],  # (1)
+    IdempotencyToken: str,
+) -> CreateCustomRoutingEndpointGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#createcustomroutingendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef) 
+2. See [:material-code-braces: CreateCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `EndpointGroupRegion`: `str` *(required)*
-- `DestinationConfigurations`:
-  `Sequence`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
-  *(required)*
-- `IdempotencyToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCustomRoutingEndpointGroupRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "EndpointGroupRegion": ...,
+    "DestinationConfigurations": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#createcustomroutingendpointgroupresponsetypedef).
+parent.create_custom_routing_endpoint_group(**kwargs)
+```
 
-<a id="create\_custom\_routing\_listener"></a>
+1. See [:material-code-braces: CreateCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#createcustomroutingendpointgrouprequestrequesttypedef) 
 
-### create_custom_routing_listener
+### create\_custom\_routing\_listener
 
 Create a listener to process inbound connections from clients to a custom
 routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").create_custom_routing_listener` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_custom_routing_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_custom_routing_listener)
+```python title="Method definition"
+def create_custom_routing_listener(
+    self,
+    *,
+    AcceleratorArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+    IdempotencyToken: str,
+) -> CreateCustomRoutingListenerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#createcustomroutinglistenerrequestrequesttypedef).
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-braces: CreateCustomRoutingListenerResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-  *(required)*
-- `IdempotencyToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCustomRoutingListenerRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+    "PortRanges": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateCustomRoutingListenerResponseTypeDef](./type_defs.md#createcustomroutinglistenerresponsetypedef).
+parent.create_custom_routing_listener(**kwargs)
+```
 
-<a id="create\_endpoint\_group"></a>
+1. See [:material-code-braces: CreateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#createcustomroutinglistenerrequestrequesttypedef) 
 
-### create_endpoint_group
+### create\_endpoint\_group
 
 Create an endpoint group for the specified listener.
 
-Type annotations for `boto3.client("globalaccelerator").create_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_endpoint_group)
+```python title="Method definition"
+def create_endpoint_group(
+    self,
+    *,
+    ListenerArn: str,
+    EndpointGroupRegion: str,
+    IdempotencyToken: str,
+    EndpointConfigurations: Sequence[EndpointConfigurationTypeDef] = ...,  # (1)
+    TrafficDialPercentage: float = ...,
+    HealthCheckPort: int = ...,
+    HealthCheckProtocol: HealthCheckProtocolType = ...,  # (2)
+    HealthCheckPath: str = ...,
+    HealthCheckIntervalSeconds: int = ...,
+    ThresholdCount: int = ...,
+    PortOverrides: Sequence[PortOverrideTypeDef] = ...,  # (3)
+) -> CreateEndpointGroupResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateEndpointGroupRequestRequestTypeDef](./type_defs.md#createendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
+4. See [:material-code-braces: CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `EndpointGroupRegion`: `str` *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `EndpointConfigurations`:
-  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
-- `TrafficDialPercentage`: `float`
-- `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `ThresholdCount`: `int`
-- `PortOverrides`:
-  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateEndpointGroupRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "EndpointGroupRegion": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateEndpointGroupResponseTypeDef](./type_defs.md#createendpointgroupresponsetypedef).
+parent.create_endpoint_group(**kwargs)
+```
 
-<a id="create\_listener"></a>
+1. See [:material-code-braces: CreateEndpointGroupRequestRequestTypeDef](./type_defs.md#createendpointgrouprequestrequesttypedef) 
 
-### create_listener
+### create\_listener
 
-Create a listener to process inbound connections from clients to an
-accelerator.
+Create a listener to process inbound connections from clients to an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").create_listener`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").create_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.create_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.create_listener)
+```python title="Method definition"
+def create_listener(
+    self,
+    *,
+    AcceleratorArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+    Protocol: ProtocolType,  # (2)
+    IdempotencyToken: str,
+    ClientAffinity: ClientAffinityType = ...,  # (3)
+) -> CreateListenerResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateListenerRequestRequestTypeDef](./type_defs.md#createlistenerrequestrequesttypedef).
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: ClientAffinityType](./literals.md#clientaffinitytype) 
+4. See [:material-code-braces: CreateListenerResponseTypeDef](./type_defs.md#createlistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-  *(required)*
-- `Protocol`: [ProtocolType](./literals.md#protocoltype) *(required)*
-- `IdempotencyToken`: `str` *(required)*
-- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
+```python title="Usage example with kwargs"
+kwargs: CreateListenerRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+    "PortRanges": ...,
+    "Protocol": ...,
+    "IdempotencyToken": ...,
+}
 
-Returns
-[CreateListenerResponseTypeDef](./type_defs.md#createlistenerresponsetypedef).
+parent.create_listener(**kwargs)
+```
 
-<a id="delete\_accelerator"></a>
+1. See [:material-code-braces: CreateListenerRequestRequestTypeDef](./type_defs.md#createlistenerrequestrequesttypedef) 
 
-### delete_accelerator
+### delete\_accelerator
 
 Delete an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").delete_accelerator`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_accelerator)
+```python title="Method definition"
+def delete_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAcceleratorRequestRequestTypeDef](./type_defs.md#deleteacceleratorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-<a id="delete\_custom\_routing\_accelerator"></a>
+parent.delete_accelerator(**kwargs)
+```
 
-### delete_custom_routing_accelerator
+1. See [:material-code-braces: DeleteAcceleratorRequestRequestTypeDef](./type_defs.md#deleteacceleratorrequestrequesttypedef) 
+
+### delete\_custom\_routing\_accelerator
 
 Delete a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").delete_custom_routing_accelerator` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_custom_routing_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_accelerator)
+```python title="Method definition"
+def delete_custom_routing_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#deletecustomroutingacceleratorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomRoutingAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-<a id="delete\_custom\_routing\_endpoint\_group"></a>
+parent.delete_custom_routing_accelerator(**kwargs)
+```
 
-### delete_custom_routing_endpoint_group
+1. See [:material-code-braces: DeleteCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#deletecustomroutingacceleratorrequestrequesttypedef) 
+
+### delete\_custom\_routing\_endpoint\_group
 
 Delete an endpoint group from a listener for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").delete_custom_routing_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_custom_routing_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_endpoint_group)
+```python title="Method definition"
+def delete_custom_routing_endpoint_group(
+    self,
+    *,
+    EndpointGroupArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#deletecustomroutingendpointgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomRoutingEndpointGroupRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+}
 
-<a id="delete\_custom\_routing\_listener"></a>
+parent.delete_custom_routing_endpoint_group(**kwargs)
+```
 
-### delete_custom_routing_listener
+1. See [:material-code-braces: DeleteCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#deletecustomroutingendpointgrouprequestrequesttypedef) 
+
+### delete\_custom\_routing\_listener
 
 Delete a listener for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").delete_custom_routing_listener` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_custom_routing_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_custom_routing_listener)
+```python title="Method definition"
+def delete_custom_routing_listener(
+    self,
+    *,
+    ListenerArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#deletecustomroutinglistenerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomRoutingListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-<a id="delete\_endpoint\_group"></a>
+parent.delete_custom_routing_listener(**kwargs)
+```
 
-### delete_endpoint_group
+1. See [:material-code-braces: DeleteCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#deletecustomroutinglistenerrequestrequesttypedef) 
+
+### delete\_endpoint\_group
 
 Delete an endpoint group from a listener.
 
-Type annotations for `boto3.client("globalaccelerator").delete_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_endpoint_group)
+```python title="Method definition"
+def delete_endpoint_group(
+    self,
+    *,
+    EndpointGroupArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEndpointGroupRequestRequestTypeDef](./type_defs.md#deleteendpointgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointGroupRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+}
 
-<a id="delete\_listener"></a>
+parent.delete_endpoint_group(**kwargs)
+```
 
-### delete_listener
+1. See [:material-code-braces: DeleteEndpointGroupRequestRequestTypeDef](./type_defs.md#deleteendpointgrouprequestrequesttypedef) 
+
+### delete\_listener
 
 Delete a listener from an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").delete_listener`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").delete_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.delete_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.delete_listener)
+```python title="Method definition"
+def delete_listener(
+    self,
+    *,
+    ListenerArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteListenerRequestRequestTypeDef](./type_defs.md#deletelistenerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-<a id="deny\_custom\_routing\_traffic"></a>
+parent.delete_listener(**kwargs)
+```
 
-### deny_custom_routing_traffic
+1. See [:material-code-braces: DeleteListenerRequestRequestTypeDef](./type_defs.md#deletelistenerrequestrequesttypedef) 
+
+### deny\_custom\_routing\_traffic
 
 Specify the Amazon EC2 instance (destination) IP addresses and ports for a VPC
 subnet endpoint that cannot receive traffic for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").deny_custom_routing_traffic` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").deny_custom_routing_traffic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.deny_custom_routing_traffic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deny_custom_routing_traffic)
+```python title="Method definition"
+def deny_custom_routing_traffic(
+    self,
+    *,
+    EndpointGroupArn: str,
+    EndpointId: str,
+    DestinationAddresses: Sequence[str] = ...,
+    DestinationPorts: Sequence[int] = ...,
+    DenyAllTrafficToEndpoint: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DenyCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#denycustomroutingtrafficrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
-- `DestinationAddresses`: `Sequence`\[`str`\]
-- `DestinationPorts`: `Sequence`\[`int`\]
-- `DenyAllTrafficToEndpoint`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DenyCustomRoutingTrafficRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+    "EndpointId": ...,
+}
 
-<a id="deprovision\_byoip\_cidr"></a>
+parent.deny_custom_routing_traffic(**kwargs)
+```
 
-### deprovision_byoip_cidr
+1. See [:material-code-braces: DenyCustomRoutingTrafficRequestRequestTypeDef](./type_defs.md#denycustomroutingtrafficrequestrequesttypedef) 
+
+### deprovision\_byoip\_cidr
 
 Releases the specified address range that you provisioned to use with your AWS
 resources through bring your own IP addresses (BYOIP) and deletes the
 corresponding address pool.
 
-Type annotations for `boto3.client("globalaccelerator").deprovision_byoip_cidr`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").deprovision_byoip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.deprovision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.deprovision_byoip_cidr)
+```python title="Method definition"
+def deprovision_byoip_cidr(
+    self,
+    *,
+    Cidr: str,
+) -> DeprovisionByoipCidrResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeprovisionByoipCidrRequestRequestTypeDef](./type_defs.md#deprovisionbyoipcidrrequestrequesttypedef).
+1. See [:material-code-braces: DeprovisionByoipCidrResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Cidr`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeprovisionByoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+}
 
-Returns
-[DeprovisionByoipCidrResponseTypeDef](./type_defs.md#deprovisionbyoipcidrresponsetypedef).
+parent.deprovision_byoip_cidr(**kwargs)
+```
 
-<a id="describe\_accelerator"></a>
+1. See [:material-code-braces: DeprovisionByoipCidrRequestRequestTypeDef](./type_defs.md#deprovisionbyoipcidrrequestrequesttypedef) 
 
-### describe_accelerator
+### describe\_accelerator
 
 Describe an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").describe_accelerator`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator)
+```python title="Method definition"
+def describe_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> DescribeAcceleratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAcceleratorRequestRequestTypeDef](./type_defs.md#describeacceleratorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAcceleratorResponseTypeDef](./type_defs.md#describeacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[DescribeAcceleratorResponseTypeDef](./type_defs.md#describeacceleratorresponsetypedef).
+parent.describe_accelerator(**kwargs)
+```
 
-<a id="describe\_accelerator\_attributes"></a>
+1. See [:material-code-braces: DescribeAcceleratorRequestRequestTypeDef](./type_defs.md#describeacceleratorrequestrequesttypedef) 
 
-### describe_accelerator_attributes
+### describe\_accelerator\_attributes
 
 Describe the attributes of an accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_accelerator_attributes` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_accelerator_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_accelerator_attributes)
+```python title="Method definition"
+def describe_accelerator_attributes(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> DescribeAcceleratorAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describeacceleratorattributesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAcceleratorAttributesResponseTypeDef](./type_defs.md#describeacceleratorattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAcceleratorAttributesRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[DescribeAcceleratorAttributesResponseTypeDef](./type_defs.md#describeacceleratorattributesresponsetypedef).
+parent.describe_accelerator_attributes(**kwargs)
+```
 
-<a id="describe\_custom\_routing\_accelerator"></a>
+1. See [:material-code-braces: DescribeAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describeacceleratorattributesrequestrequesttypedef) 
 
-### describe_custom_routing_accelerator
+### describe\_custom\_routing\_accelerator
 
 Describe a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_custom_routing_accelerator` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_custom_routing_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator)
+```python title="Method definition"
+def describe_custom_routing_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> DescribeCustomRoutingAcceleratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomRoutingAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[DescribeCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#describecustomroutingacceleratorresponsetypedef).
+parent.describe_custom_routing_accelerator(**kwargs)
+```
 
-<a id="describe\_custom\_routing\_accelerator\_attributes"></a>
+1. See [:material-code-braces: DescribeCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorrequestrequesttypedef) 
 
-### describe_custom_routing_accelerator_attributes
+### describe\_custom\_routing\_accelerator\_attributes
 
 Describe the attributes of a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_custom_routing_accelerator_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_custom_routing_accelerator_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_accelerator_attributes)
+```python title="Method definition"
+def describe_custom_routing_accelerator_attributes(
+    self,
+    *,
+    AcceleratorArn: str,
+) -> DescribeCustomRoutingAcceleratorAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorattributesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#describecustomroutingacceleratorattributesresponsetypedef).
+parent.describe_custom_routing_accelerator_attributes(**kwargs)
+```
 
-<a id="describe\_custom\_routing\_endpoint\_group"></a>
+1. See [:material-code-braces: DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#describecustomroutingacceleratorattributesrequestrequesttypedef) 
 
-### describe_custom_routing_endpoint_group
+### describe\_custom\_routing\_endpoint\_group
 
 Describe an endpoint group for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_custom_routing_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_custom_routing_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_endpoint_group)
+```python title="Method definition"
+def describe_custom_routing_endpoint_group(
+    self,
+    *,
+    EndpointGroupArn: str,
+) -> DescribeCustomRoutingEndpointGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#describecustomroutingendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomRoutingEndpointGroupRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+}
 
-Returns
-[DescribeCustomRoutingEndpointGroupResponseTypeDef](./type_defs.md#describecustomroutingendpointgroupresponsetypedef).
+parent.describe_custom_routing_endpoint_group(**kwargs)
+```
 
-<a id="describe\_custom\_routing\_listener"></a>
+1. See [:material-code-braces: DescribeCustomRoutingEndpointGroupRequestRequestTypeDef](./type_defs.md#describecustomroutingendpointgrouprequestrequesttypedef) 
 
-### describe_custom_routing_listener
+### describe\_custom\_routing\_listener
 
 The description of a listener for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_custom_routing_listener` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_custom_routing_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_custom_routing_listener)
+```python title="Method definition"
+def describe_custom_routing_listener(
+    self,
+    *,
+    ListenerArn: str,
+) -> DescribeCustomRoutingListenerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#describecustomroutinglistenerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomRoutingListenerResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomRoutingListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[DescribeCustomRoutingListenerResponseTypeDef](./type_defs.md#describecustomroutinglistenerresponsetypedef).
+parent.describe_custom_routing_listener(**kwargs)
+```
 
-<a id="describe\_endpoint\_group"></a>
+1. See [:material-code-braces: DescribeCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#describecustomroutinglistenerrequestrequesttypedef) 
 
-### describe_endpoint_group
+### describe\_endpoint\_group
 
 Describe an endpoint group.
 
-Type annotations for
-`boto3.client("globalaccelerator").describe_endpoint_group` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_endpoint_group)
+```python title="Method definition"
+def describe_endpoint_group(
+    self,
+    *,
+    EndpointGroupArn: str,
+) -> DescribeEndpointGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndpointGroupRequestRequestTypeDef](./type_defs.md#describeendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeEndpointGroupResponseTypeDef](./type_defs.md#describeendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointGroupRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+}
 
-Returns
-[DescribeEndpointGroupResponseTypeDef](./type_defs.md#describeendpointgroupresponsetypedef).
+parent.describe_endpoint_group(**kwargs)
+```
 
-<a id="describe\_listener"></a>
+1. See [:material-code-braces: DescribeEndpointGroupRequestRequestTypeDef](./type_defs.md#describeendpointgrouprequestrequesttypedef) 
 
-### describe_listener
+### describe\_listener
 
 Describe a listener.
 
-Type annotations for `boto3.client("globalaccelerator").describe_listener`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").describe_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.describe_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.describe_listener)
+```python title="Method definition"
+def describe_listener(
+    self,
+    *,
+    ListenerArn: str,
+) -> DescribeListenerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeListenerRequestRequestTypeDef](./type_defs.md#describelistenerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeListenerResponseTypeDef](./type_defs.md#describelistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[DescribeListenerResponseTypeDef](./type_defs.md#describelistenerresponsetypedef).
+parent.describe_listener(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeListenerRequestRequestTypeDef](./type_defs.md#describelistenerrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("globalaccelerator").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_accelerators"></a>
-
-### list_accelerators
+### list\_accelerators
 
 List the accelerators for an AWS account.
 
-Type annotations for `boto3.client("globalaccelerator").list_accelerators`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_accelerators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_accelerators)
+```python title="Method definition"
+def list_accelerators(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAcceleratorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAcceleratorsRequestRequestTypeDef](./type_defs.md#listacceleratorsrequestrequesttypedef).
+1. See [:material-code-braces: ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAcceleratorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef).
+parent.list_accelerators(**kwargs)
+```
 
-<a id="list\_byoip\_cidrs"></a>
+1. See [:material-code-braces: ListAcceleratorsRequestRequestTypeDef](./type_defs.md#listacceleratorsrequestrequesttypedef) 
 
-### list_byoip_cidrs
+### list\_byoip\_cidrs
 
 Lists the IP address ranges that were specified in calls to
-\[ProvisionByoipCidr\](https://docs.aws.amazon.com/global-
-accelerator/latest/api/ProvisionByoipCidr.html)\_ , including the current state
+[ProvisionByoipCidr](https://docs.aws.amazon.com/global-
+accelerator/latest/api/ProvisionByoipCidr.html)_ , including the current state
 and a history of state changes.
 
-Type annotations for `boto3.client("globalaccelerator").list_byoip_cidrs`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_byoip_cidrs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_byoip_cidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_byoip_cidrs)
+```python title="Method definition"
+def list_byoip_cidrs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListByoipCidrsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListByoipCidrsRequestRequestTypeDef](./type_defs.md#listbyoipcidrsrequestrequesttypedef).
+1. See [:material-code-braces: ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListByoipCidrsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef).
+parent.list_byoip_cidrs(**kwargs)
+```
 
-<a id="list\_custom\_routing\_accelerators"></a>
+1. See [:material-code-braces: ListByoipCidrsRequestRequestTypeDef](./type_defs.md#listbyoipcidrsrequestrequesttypedef) 
 
-### list_custom_routing_accelerators
+### list\_custom\_routing\_accelerators
 
 List the custom routing accelerators for an AWS account.
 
-Type annotations for
-`boto3.client("globalaccelerator").list_custom_routing_accelerators` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_accelerators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_accelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_accelerators)
+```python title="Method definition"
+def list_custom_routing_accelerators(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomRoutingAcceleratorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomRoutingAcceleratorsRequestRequestTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingAcceleratorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef).
+parent.list_custom_routing_accelerators(**kwargs)
+```
 
-<a id="list\_custom\_routing\_endpoint\_groups"></a>
+1. See [:material-code-braces: ListCustomRoutingAcceleratorsRequestRequestTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestrequesttypedef) 
 
-### list_custom_routing_endpoint_groups
+### list\_custom\_routing\_endpoint\_groups
 
 List the endpoint groups that are associated with a listener for a custom
 routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").list_custom_routing_endpoint_groups` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_endpoint_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_endpoint_groups)
+```python title="Method definition"
+def list_custom_routing_endpoint_groups(
+    self,
+    *,
+    ListenerArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomRoutingEndpointGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomRoutingEndpointGroupsRequestRequestTypeDef](./type_defs.md#listcustomroutingendpointgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingEndpointGroupsRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[ListCustomRoutingEndpointGroupsResponseTypeDef](./type_defs.md#listcustomroutingendpointgroupsresponsetypedef).
+parent.list_custom_routing_endpoint_groups(**kwargs)
+```
 
-<a id="list\_custom\_routing\_listeners"></a>
+1. See [:material-code-braces: ListCustomRoutingEndpointGroupsRequestRequestTypeDef](./type_defs.md#listcustomroutingendpointgroupsrequestrequesttypedef) 
 
-### list_custom_routing_listeners
+### list\_custom\_routing\_listeners
 
 List the listeners for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").list_custom_routing_listeners` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_listeners` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_listeners)
+```python title="Method definition"
+def list_custom_routing_listeners(
+    self,
+    *,
+    AcceleratorArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomRoutingListenersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomRoutingListenersRequestRequestTypeDef](./type_defs.md#listcustomroutinglistenersrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingListenersRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef).
+parent.list_custom_routing_listeners(**kwargs)
+```
 
-<a id="list\_custom\_routing\_port\_mappings"></a>
+1. See [:material-code-braces: ListCustomRoutingListenersRequestRequestTypeDef](./type_defs.md#listcustomroutinglistenersrequestrequesttypedef) 
 
-### list_custom_routing_port_mappings
+### list\_custom\_routing\_port\_mappings
 
 Provides a complete mapping from the public accelerator IP address and port to
 destination EC2 instance IP addresses and ports in the virtual public cloud
 (VPC) subnet endpoint for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").list_custom_routing_port_mappings` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_port_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_port_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings)
+```python title="Method definition"
+def list_custom_routing_port_mappings(
+    self,
+    *,
+    AcceleratorArn: str,
+    EndpointGroupArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomRoutingPortMappingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomRoutingPortMappingsRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `EndpointGroupArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingPortMappingsRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef).
+parent.list_custom_routing_port_mappings(**kwargs)
+```
 
-<a id="list\_custom\_routing\_port\_mappings\_by\_destination"></a>
+1. See [:material-code-braces: ListCustomRoutingPortMappingsRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsrequestrequesttypedef) 
 
-### list_custom_routing_port_mappings_by_destination
+### list\_custom\_routing\_port\_mappings\_by\_destination
 
-List the port mappings for a specific EC2 instance (destination) in a VPC
-subnet endpoint.
+List the port mappings for a specific EC2 instance (destination) in a VPC subnet
+endpoint.
 
-Type annotations for
-`boto3.client("globalaccelerator").list_custom_routing_port_mappings_by_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_custom_routing_port_mappings_by_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_custom_routing_port_mappings_by_destination)
+```python title="Method definition"
+def list_custom_routing_port_mappings_by_destination(
+    self,
+    *,
+    EndpointId: str,
+    DestinationAddress: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCustomRoutingPortMappingsByDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointId`: `str` *(required)*
-- `DestinationAddress`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef = {  # (1)
+    "EndpointId": ...,
+    "DestinationAddress": ...,
+}
 
-Returns
-[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef).
+parent.list_custom_routing_port_mappings_by_destination(**kwargs)
+```
 
-<a id="list\_endpoint\_groups"></a>
+1. See [:material-code-braces: ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestrequesttypedef) 
 
-### list_endpoint_groups
+### list\_endpoint\_groups
 
 List the endpoint groups that are associated with a listener.
 
-Type annotations for `boto3.client("globalaccelerator").list_endpoint_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_endpoint_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_endpoint_groups)
+```python title="Method definition"
+def list_endpoint_groups(
+    self,
+    *,
+    ListenerArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListEndpointGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEndpointGroupsRequestRequestTypeDef](./type_defs.md#listendpointgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEndpointGroupsRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef).
+parent.list_endpoint_groups(**kwargs)
+```
 
-<a id="list\_listeners"></a>
+1. See [:material-code-braces: ListEndpointGroupsRequestRequestTypeDef](./type_defs.md#listendpointgroupsrequestrequesttypedef) 
 
-### list_listeners
+### list\_listeners
 
 List the listeners for an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").list_listeners` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_listeners` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_listeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_listeners)
+```python title="Method definition"
+def list_listeners(
+    self,
+    *,
+    AcceleratorArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListListenersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListListenersRequestRequestTypeDef](./type_defs.md#listlistenersrequestrequesttypedef).
+1. See [:material-code-braces: ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListListenersRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef).
+parent.list_listeners(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListListenersRequestRequestTypeDef](./type_defs.md#listlistenersrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags for an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="provision\_byoip\_cidr"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### provision_byoip_cidr
+### provision\_byoip\_cidr
 
-Provisions an IP address range to use with your AWS resources through bring
-your own IP addresses (BYOIP) and creates a corresponding address pool.
+Provisions an IP address range to use with your AWS resources through bring your
+own IP addresses (BYOIP) and creates a corresponding address pool.
 
-Type annotations for `boto3.client("globalaccelerator").provision_byoip_cidr`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").provision_byoip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.provision_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.provision_byoip_cidr)
+```python title="Method definition"
+def provision_byoip_cidr(
+    self,
+    *,
+    Cidr: str,
+    CidrAuthorizationContext: CidrAuthorizationContextTypeDef,  # (1)
+) -> ProvisionByoipCidrResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ProvisionByoipCidrRequestRequestTypeDef](./type_defs.md#provisionbyoipcidrrequestrequesttypedef).
+1. See [:material-code-braces: CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef) 
+2. See [:material-code-braces: ProvisionByoipCidrResponseTypeDef](./type_defs.md#provisionbyoipcidrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Cidr`: `str` *(required)*
-- `CidrAuthorizationContext`:
-  [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ProvisionByoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+    "CidrAuthorizationContext": ...,
+}
 
-Returns
-[ProvisionByoipCidrResponseTypeDef](./type_defs.md#provisionbyoipcidrresponsetypedef).
+parent.provision_byoip_cidr(**kwargs)
+```
 
-<a id="remove\_custom\_routing\_endpoints"></a>
+1. See [:material-code-braces: ProvisionByoipCidrRequestRequestTypeDef](./type_defs.md#provisionbyoipcidrrequestrequesttypedef) 
 
-### remove_custom_routing_endpoints
+### remove\_custom\_routing\_endpoints
 
 Remove endpoints from a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").remove_custom_routing_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").remove_custom_routing_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.remove_custom_routing_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.remove_custom_routing_endpoints)
+```python title="Method definition"
+def remove_custom_routing_endpoints(
+    self,
+    *,
+    EndpointIds: Sequence[str],
+    EndpointGroupArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#removecustomroutingendpointsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EndpointIds`: `Sequence`\[`str`\] *(required)*
-- `EndpointGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveCustomRoutingEndpointsRequestRequestTypeDef = {  # (1)
+    "EndpointIds": ...,
+    "EndpointGroupArn": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.remove_custom_routing_endpoints(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: RemoveCustomRoutingEndpointsRequestRequestTypeDef](./type_defs.md#removecustomroutingendpointsrequestrequesttypedef) 
+
+### tag\_resource
 
 Add tags to an accelerator resource.
 
-Type annotations for `boto3.client("globalaccelerator").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove tags from a Global Accelerator resource.
 
-Type annotations for `boto3.client("globalaccelerator").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_accelerator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_accelerator
+### update\_accelerator
 
 Update an accelerator.
 
-Type annotations for `boto3.client("globalaccelerator").update_accelerator`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator)
+```python title="Method definition"
+def update_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+    Name: str = ...,
+    IpAddressType: IpAddressTypeType = ...,  # (1)
+    Enabled: bool = ...,
+) -> UpdateAcceleratorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAcceleratorRequestRequestTypeDef](./type_defs.md#updateacceleratorrequestrequesttypedef).
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: UpdateAcceleratorResponseTypeDef](./type_defs.md#updateacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[UpdateAcceleratorResponseTypeDef](./type_defs.md#updateacceleratorresponsetypedef).
+parent.update_accelerator(**kwargs)
+```
 
-<a id="update\_accelerator\_attributes"></a>
+1. See [:material-code-braces: UpdateAcceleratorRequestRequestTypeDef](./type_defs.md#updateacceleratorrequestrequesttypedef) 
 
-### update_accelerator_attributes
+### update\_accelerator\_attributes
 
 Update the attributes for an accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").update_accelerator_attributes` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_accelerator_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_accelerator_attributes)
+```python title="Method definition"
+def update_accelerator_attributes(
+    self,
+    *,
+    AcceleratorArn: str,
+    FlowLogsEnabled: bool = ...,
+    FlowLogsS3Bucket: str = ...,
+    FlowLogsS3Prefix: str = ...,
+) -> UpdateAcceleratorAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updateacceleratorattributesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAcceleratorAttributesResponseTypeDef](./type_defs.md#updateacceleratorattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAcceleratorAttributesRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[UpdateAcceleratorAttributesResponseTypeDef](./type_defs.md#updateacceleratorattributesresponsetypedef).
+parent.update_accelerator_attributes(**kwargs)
+```
 
-<a id="update\_custom\_routing\_accelerator"></a>
+1. See [:material-code-braces: UpdateAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updateacceleratorattributesrequestrequesttypedef) 
 
-### update_custom_routing_accelerator
+### update\_custom\_routing\_accelerator
 
 Update a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").update_custom_routing_accelerator` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_custom_routing_accelerator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_accelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator)
+```python title="Method definition"
+def update_custom_routing_accelerator(
+    self,
+    *,
+    AcceleratorArn: str,
+    Name: str = ...,
+    IpAddressType: IpAddressTypeType = ...,  # (1)
+    Enabled: bool = ...,
+) -> UpdateCustomRoutingAcceleratorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorrequestrequesttypedef).
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: UpdateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomRoutingAcceleratorRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[UpdateCustomRoutingAcceleratorResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorresponsetypedef).
+parent.update_custom_routing_accelerator(**kwargs)
+```
 
-<a id="update\_custom\_routing\_accelerator\_attributes"></a>
+1. See [:material-code-braces: UpdateCustomRoutingAcceleratorRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorrequestrequesttypedef) 
 
-### update_custom_routing_accelerator_attributes
+### update\_custom\_routing\_accelerator\_attributes
 
 Update the attributes for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").update_custom_routing_accelerator_attributes`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_custom_routing_accelerator_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_accelerator_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_accelerator_attributes)
+```python title="Method definition"
+def update_custom_routing_accelerator_attributes(
+    self,
+    *,
+    AcceleratorArn: str,
+    FlowLogsEnabled: bool = ...,
+    FlowLogsS3Bucket: str = ...,
+    FlowLogsS3Prefix: str = ...,
+) -> UpdateCustomRoutingAcceleratorAttributesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AcceleratorArn`: `str` *(required)*
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
 
-Returns
-[UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesresponsetypedef).
+parent.update_custom_routing_accelerator_attributes(**kwargs)
+```
 
-<a id="update\_custom\_routing\_listener"></a>
+1. See [:material-code-braces: UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef](./type_defs.md#updatecustomroutingacceleratorattributesrequestrequesttypedef) 
 
-### update_custom_routing_listener
+### update\_custom\_routing\_listener
 
 Update a listener for a custom routing accelerator.
 
-Type annotations for
-`boto3.client("globalaccelerator").update_custom_routing_listener` method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_custom_routing_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_custom_routing_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_custom_routing_listener)
+```python title="Method definition"
+def update_custom_routing_listener(
+    self,
+    *,
+    ListenerArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+) -> UpdateCustomRoutingListenerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#updatecustomroutinglistenerrequestrequesttypedef).
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-braces: UpdateCustomRoutingListenerResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomRoutingListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+    "PortRanges": ...,
+}
 
-Returns
-[UpdateCustomRoutingListenerResponseTypeDef](./type_defs.md#updatecustomroutinglistenerresponsetypedef).
+parent.update_custom_routing_listener(**kwargs)
+```
 
-<a id="update\_endpoint\_group"></a>
+1. See [:material-code-braces: UpdateCustomRoutingListenerRequestRequestTypeDef](./type_defs.md#updatecustomroutinglistenerrequestrequesttypedef) 
 
-### update_endpoint_group
+### update\_endpoint\_group
 
 Update an endpoint group.
 
-Type annotations for `boto3.client("globalaccelerator").update_endpoint_group`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_endpoint_group)
+```python title="Method definition"
+def update_endpoint_group(
+    self,
+    *,
+    EndpointGroupArn: str,
+    EndpointConfigurations: Sequence[EndpointConfigurationTypeDef] = ...,  # (1)
+    TrafficDialPercentage: float = ...,
+    HealthCheckPort: int = ...,
+    HealthCheckProtocol: HealthCheckProtocolType = ...,  # (2)
+    HealthCheckPath: str = ...,
+    HealthCheckIntervalSeconds: int = ...,
+    ThresholdCount: int = ...,
+    PortOverrides: Sequence[PortOverrideTypeDef] = ...,  # (3)
+) -> UpdateEndpointGroupResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEndpointGroupRequestRequestTypeDef](./type_defs.md#updateendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
+4. See [:material-code-braces: UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EndpointGroupArn`: `str` *(required)*
-- `EndpointConfigurations`:
-  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
-- `TrafficDialPercentage`: `float`
-- `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `ThresholdCount`: `int`
-- `PortOverrides`:
-  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEndpointGroupRequestRequestTypeDef = {  # (1)
+    "EndpointGroupArn": ...,
+}
 
-Returns
-[UpdateEndpointGroupResponseTypeDef](./type_defs.md#updateendpointgroupresponsetypedef).
+parent.update_endpoint_group(**kwargs)
+```
 
-<a id="update\_listener"></a>
+1. See [:material-code-braces: UpdateEndpointGroupRequestRequestTypeDef](./type_defs.md#updateendpointgrouprequestrequesttypedef) 
 
-### update_listener
+### update\_listener
 
 Update a listener.
 
-Type annotations for `boto3.client("globalaccelerator").update_listener`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").update_listener` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.update_listener](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.update_listener)
+```python title="Method definition"
+def update_listener(
+    self,
+    *,
+    ListenerArn: str,
+    PortRanges: Sequence[PortRangeTypeDef] = ...,  # (1)
+    Protocol: ProtocolType = ...,  # (2)
+    ClientAffinity: ClientAffinityType = ...,  # (3)
+) -> UpdateListenerResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateListenerRequestRequestTypeDef](./type_defs.md#updatelistenerrequestrequesttypedef).
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: ClientAffinityType](./literals.md#clientaffinitytype) 
+4. See [:material-code-braces: UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ListenerArn`: `str` *(required)*
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
+```python title="Usage example with kwargs"
+kwargs: UpdateListenerRequestRequestTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
 
-Returns
-[UpdateListenerResponseTypeDef](./type_defs.md#updatelistenerresponsetypedef).
+parent.update_listener(**kwargs)
+```
 
-<a id="withdraw\_byoip\_cidr"></a>
+1. See [:material-code-braces: UpdateListenerRequestRequestTypeDef](./type_defs.md#updatelistenerrequestrequesttypedef) 
 
-### withdraw_byoip_cidr
+### withdraw\_byoip\_cidr
 
 Stops advertising an address range that is provisioned as an address pool.
 
-Type annotations for `boto3.client("globalaccelerator").withdraw_byoip_cidr`
-method.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").withdraw_byoip_cidr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
 
-Boto3 documentation:
-[GlobalAccelerator.Client.withdraw_byoip_cidr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Client.withdraw_byoip_cidr)
+```python title="Method definition"
+def withdraw_byoip_cidr(
+    self,
+    *,
+    Cidr: str,
+) -> WithdrawByoipCidrResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[WithdrawByoipCidrRequestRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequestrequesttypedef).
+1. See [:material-code-braces: WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Cidr`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: WithdrawByoipCidrRequestRequestTypeDef = {  # (1)
+    "Cidr": ...,
+}
 
-Returns
-[WithdrawByoipCidrResponseTypeDef](./type_defs.md#withdrawbyoipcidrresponsetypedef).
+parent.withdraw_byoip_cidr(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: WithdrawByoipCidrRequestRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("globalaccelerator").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator` method with overloads.
 
-- `client.get_paginator("list_accelerators")` ->
-  [ListAcceleratorsPaginator](./paginators.md#listacceleratorspaginator)
-- `client.get_paginator("list_byoip_cidrs")` ->
-  [ListByoipCidrsPaginator](./paginators.md#listbyoipcidrspaginator)
-- `client.get_paginator("list_custom_routing_accelerators")` ->
-  [ListCustomRoutingAcceleratorsPaginator](./paginators.md#listcustomroutingacceleratorspaginator)
-- `client.get_paginator("list_custom_routing_listeners")` ->
-  [ListCustomRoutingListenersPaginator](./paginators.md#listcustomroutinglistenerspaginator)
-- `client.get_paginator("list_custom_routing_port_mappings")` ->
-  [ListCustomRoutingPortMappingsPaginator](./paginators.md#listcustomroutingportmappingspaginator)
-- `client.get_paginator("list_custom_routing_port_mappings_by_destination")` ->
-  [ListCustomRoutingPortMappingsByDestinationPaginator](./paginators.md#listcustomroutingportmappingsbydestinationpaginator)
-- `client.get_paginator("list_endpoint_groups")` ->
-  [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
-- `client.get_paginator("list_listeners")` ->
-  [ListListenersPaginator](./paginators.md#listlistenerspaginator)
+- `client.get_paginator("list_accelerators")` -> [ListAcceleratorsPaginator](./paginators.md#listacceleratorspaginator)
+- `client.get_paginator("list_byoip_cidrs")` -> [ListByoipCidrsPaginator](./paginators.md#listbyoipcidrspaginator)
+- `client.get_paginator("list_custom_routing_accelerators")` -> [ListCustomRoutingAcceleratorsPaginator](./paginators.md#listcustomroutingacceleratorspaginator)
+- `client.get_paginator("list_custom_routing_listeners")` -> [ListCustomRoutingListenersPaginator](./paginators.md#listcustomroutinglistenerspaginator)
+- `client.get_paginator("list_custom_routing_port_mappings")` -> [ListCustomRoutingPortMappingsPaginator](./paginators.md#listcustomroutingportmappingspaginator)
+- `client.get_paginator("list_custom_routing_port_mappings_by_destination")` -> [ListCustomRoutingPortMappingsByDestinationPaginator](./paginators.md#listcustomroutingportmappingsbydestinationpaginator)
+- `client.get_paginator("list_endpoint_groups")` -> [ListEndpointGroupsPaginator](./paginators.md#listendpointgroupspaginator)
+- `client.get_paginator("list_listeners")` -> [ListListenersPaginator](./paginators.md#listlistenerspaginator)
+
+
+

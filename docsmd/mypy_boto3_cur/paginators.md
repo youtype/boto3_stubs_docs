@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-costandusagereportservice-module"></a>
-
-# Paginators for boto3 CostandUsageReportService module
+# Paginators
 
 > [Index](../README.md) > [CostandUsageReportService](./README.md) > Paginators
 
-Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module
-[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
+!!! note ""
 
-- [Paginators for boto3 CostandUsageReportService module](#paginators-for-boto3-costandusagereportservice-module)
-  - [DescribeReportDefinitionsPaginator](#describereportdefinitionspaginator)
-
-<a id="describereportdefinitionspaginator"></a>
+    Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+    type annotations stubs module [mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 ## DescribeReportDefinitionsPaginator
 
-Type annotations for
-`boto3.client("cur").get_paginator("describe_report_definitions")`.
+Type annotations and code completion for `#!python boto3.client("cur").get_paginator("describe_report_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_cur.paginator import DescribeReportDefinitionsPaginator
@@ -30,13 +21,30 @@ def get_describe_report_definitions_paginator() -> DescribeReportDefinitionsPagi
     return Session().client("cur").get_paginator("describe_report_definitions")
 ```
 
-Boto3 documentation:
-[CostandUsageReportService.Paginator.DescribeReportDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Paginator.DescribeReportDefinitions)
 
-Arguments for `DescribeReportDefinitionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReportDefinitionsPaginator.paginate` method.
 
-`DescribeReportDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeReportDefinitionsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef](./type_defs.md#describereportdefinitionsrequestdescribereportdefinitionspaginatetypedef) 

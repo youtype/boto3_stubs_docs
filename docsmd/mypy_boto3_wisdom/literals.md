@@ -1,607 +1,643 @@
-<a id="literals-for-boto3-connectwisdomservice-module"></a>
-
-# Literals for boto3 ConnectWisdomService module
+# Literals
 
 > [Index](../README.md) > [ConnectWisdomService](./README.md) > Literals
 
-Auto-generated documentation for
-[ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
-type annotations stubs module
-[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+!!! note ""
 
-- [Literals for boto3 ConnectWisdomService module](#literals-for-boto3-connectwisdomservice-module)
-  - [AssistantStatusType](#assistantstatustype)
-  - [AssistantTypeType](#assistanttypetype)
-  - [AssociationTypeType](#associationtypetype)
-  - [ContentStatusType](#contentstatustype)
-  - [FilterFieldType](#filterfieldtype)
-  - [FilterOperatorType](#filteroperatortype)
-  - [KnowledgeBaseStatusType](#knowledgebasestatustype)
-  - [KnowledgeBaseTypeType](#knowledgebasetypetype)
-  - [ListAssistantAssociationsPaginatorName](#listassistantassociationspaginatorname)
-  - [ListAssistantsPaginatorName](#listassistantspaginatorname)
-  - [ListContentsPaginatorName](#listcontentspaginatorname)
-  - [ListKnowledgeBasesPaginatorName](#listknowledgebasespaginatorname)
-  - [QueryAssistantPaginatorName](#queryassistantpaginatorname)
-  - [RelevanceLevelType](#relevanceleveltype)
-  - [SearchContentPaginatorName](#searchcontentpaginatorname)
-  - [SearchSessionsPaginatorName](#searchsessionspaginatorname)
-  - [ConnectWisdomServiceServiceName](#connectwisdomserviceservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="assistantstatustype"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## AssistantStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import AssistantStatusType
+
+def get_value() -> AssistantStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETED`
-
-<a id="assistanttypetype"></a>
-
+```python title="Definition"
+AssistantStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETED",
+]
+```
 ## AssistantTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import AssistantTypeType
+
+def get_value() -> AssistantTypeType:
+    return "AGENT"
 ```
 
-Values:
-
-- `AGENT`
-
-<a id="associationtypetype"></a>
-
+```python title="Definition"
+AssistantTypeType = Literal[
+    "AGENT",
+]
+```
 ## AssociationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import AssociationTypeType
+
+def get_value() -> AssociationTypeType:
+    return "KNOWLEDGE_BASE"
 ```
 
-Values:
-
-- `KNOWLEDGE_BASE`
-
-<a id="contentstatustype"></a>
-
+```python title="Definition"
+AssociationTypeType = Literal[
+    "KNOWLEDGE_BASE",
+]
+```
 ## ContentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ContentStatusType
+
+def get_value() -> ContentStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETED`
-- `UPDATE_FAILED`
-
-<a id="filterfieldtype"></a>
-
+```python title="Definition"
+ContentStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETED",
+    "UPDATE_FAILED",
+]
+```
 ## FilterFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import FilterFieldType
+
+def get_value() -> FilterFieldType:
+    return "NAME"
 ```
 
-Values:
-
-- `NAME`
-
-<a id="filteroperatortype"></a>
-
+```python title="Definition"
+FilterFieldType = Literal[
+    "NAME",
+]
+```
 ## FilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import FilterOperatorType
+
+def get_value() -> FilterOperatorType:
+    return "EQUALS"
 ```
 
-Values:
-
-- `EQUALS`
-
-<a id="knowledgebasestatustype"></a>
-
+```python title="Definition"
+FilterOperatorType = Literal[
+    "EQUALS",
+]
+```
 ## KnowledgeBaseStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import KnowledgeBaseStatusType
+
+def get_value() -> KnowledgeBaseStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETED`
-
-<a id="knowledgebasetypetype"></a>
-
+```python title="Definition"
+KnowledgeBaseStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETED",
+]
+```
 ## KnowledgeBaseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import KnowledgeBaseTypeType
+
+def get_value() -> KnowledgeBaseTypeType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `EXTERNAL`
-
-<a id="listassistantassociationspaginatorname"></a>
-
+```python title="Definition"
+KnowledgeBaseTypeType = Literal[
+    "CUSTOM",
+    "EXTERNAL",
+]
+```
 ## ListAssistantAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ListAssistantAssociationsPaginatorName
+
+def get_value() -> ListAssistantAssociationsPaginatorName:
+    return "list_assistant_associations"
 ```
 
-Values:
-
-- `list_assistant_associations`
-
-<a id="listassistantspaginatorname"></a>
-
+```python title="Definition"
+ListAssistantAssociationsPaginatorName = Literal[
+    "list_assistant_associations",
+]
+```
 ## ListAssistantsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ListAssistantsPaginatorName
+
+def get_value() -> ListAssistantsPaginatorName:
+    return "list_assistants"
 ```
 
-Values:
-
-- `list_assistants`
-
-<a id="listcontentspaginatorname"></a>
-
+```python title="Definition"
+ListAssistantsPaginatorName = Literal[
+    "list_assistants",
+]
+```
 ## ListContentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ListContentsPaginatorName
+
+def get_value() -> ListContentsPaginatorName:
+    return "list_contents"
 ```
 
-Values:
-
-- `list_contents`
-
-<a id="listknowledgebasespaginatorname"></a>
-
+```python title="Definition"
+ListContentsPaginatorName = Literal[
+    "list_contents",
+]
+```
 ## ListKnowledgeBasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ListKnowledgeBasesPaginatorName
+
+def get_value() -> ListKnowledgeBasesPaginatorName:
+    return "list_knowledge_bases"
 ```
 
-Values:
-
-- `list_knowledge_bases`
-
-<a id="queryassistantpaginatorname"></a>
-
+```python title="Definition"
+ListKnowledgeBasesPaginatorName = Literal[
+    "list_knowledge_bases",
+]
+```
 ## QueryAssistantPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import QueryAssistantPaginatorName
+
+def get_value() -> QueryAssistantPaginatorName:
+    return "query_assistant"
 ```
 
-Values:
-
-- `query_assistant`
-
-<a id="relevanceleveltype"></a>
-
+```python title="Definition"
+QueryAssistantPaginatorName = Literal[
+    "query_assistant",
+]
+```
 ## RelevanceLevelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import RelevanceLevelType
+
+def get_value() -> RelevanceLevelType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-
-<a id="searchcontentpaginatorname"></a>
-
+```python title="Definition"
+RelevanceLevelType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+]
+```
 ## SearchContentPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import SearchContentPaginatorName
+
+def get_value() -> SearchContentPaginatorName:
+    return "search_content"
 ```
 
-Values:
-
-- `search_content`
-
-<a id="searchsessionspaginatorname"></a>
-
+```python title="Definition"
+SearchContentPaginatorName = Literal[
+    "search_content",
+]
+```
 ## SearchSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import SearchSessionsPaginatorName
+
+def get_value() -> SearchSessionsPaginatorName:
+    return "search_sessions"
 ```
 
-Values:
-
-- `search_sessions`
-
-<a id="connectwisdomserviceservicename"></a>
-
+```python title="Definition"
+SearchSessionsPaginatorName = Literal[
+    "search_sessions",
+]
+```
 ## ConnectWisdomServiceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ConnectWisdomServiceServiceName
+
+def get_value() -> ConnectWisdomServiceServiceName:
+    return "wisdom"
 ```
 
-Values:
-
-- `wisdom`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ConnectWisdomServiceServiceName = Literal[
+    "wisdom",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wisdom.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_assistant_associations"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_assistant_associations",
+    "list_assistants",
+    "list_contents",
+    "list_knowledge_bases",
+    "query_assistant",
+    "search_content",
+    "search_sessions",
+]
+```
+## RegionName
 
-- `list_assistant_associations`
-- `list_assistants`
-- `list_contents`
-- `list_knowledge_bases`
-- `query_assistant`
-- `search_content`
-- `search_sessions`
+```python title="Usage Example"
+from mypy_boto3_wisdom.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-west-2",
+]
+```

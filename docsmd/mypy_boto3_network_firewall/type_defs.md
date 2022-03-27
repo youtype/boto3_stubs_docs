@@ -1,1663 +1,2110 @@
-<a id="typed-dictionaries-for-boto3-networkfirewall-module"></a>
-
-# Typed dictionaries for boto3 NetworkFirewall module
+# Typed dictionaries
 
 > [Index](../README.md) > [NetworkFirewall](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
-type annotations stubs module
-[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+!!! note ""
 
-- [Typed dictionaries for boto3 NetworkFirewall module](#typed-dictionaries-for-boto3-networkfirewall-module)
-  - [ActionDefinitionTypeDef](#actiondefinitiontypedef)
-  - [AddressTypeDef](#addresstypedef)
-  - [AssociateFirewallPolicyRequestRequestTypeDef](#associatefirewallpolicyrequestrequesttypedef)
-  - [AssociateFirewallPolicyResponseTypeDef](#associatefirewallpolicyresponsetypedef)
-  - [AssociateSubnetsRequestRequestTypeDef](#associatesubnetsrequestrequesttypedef)
-  - [AssociateSubnetsResponseTypeDef](#associatesubnetsresponsetypedef)
-  - [AttachmentTypeDef](#attachmenttypedef)
-  - [CreateFirewallPolicyRequestRequestTypeDef](#createfirewallpolicyrequestrequesttypedef)
-  - [CreateFirewallPolicyResponseTypeDef](#createfirewallpolicyresponsetypedef)
-  - [CreateFirewallRequestRequestTypeDef](#createfirewallrequestrequesttypedef)
-  - [CreateFirewallResponseTypeDef](#createfirewallresponsetypedef)
-  - [CreateRuleGroupRequestRequestTypeDef](#createrulegrouprequestrequesttypedef)
-  - [CreateRuleGroupResponseTypeDef](#createrulegroupresponsetypedef)
-  - [CustomActionTypeDef](#customactiontypedef)
-  - [DeleteFirewallPolicyRequestRequestTypeDef](#deletefirewallpolicyrequestrequesttypedef)
-  - [DeleteFirewallPolicyResponseTypeDef](#deletefirewallpolicyresponsetypedef)
-  - [DeleteFirewallRequestRequestTypeDef](#deletefirewallrequestrequesttypedef)
-  - [DeleteFirewallResponseTypeDef](#deletefirewallresponsetypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteRuleGroupRequestRequestTypeDef](#deleterulegrouprequestrequesttypedef)
-  - [DeleteRuleGroupResponseTypeDef](#deleterulegroupresponsetypedef)
-  - [DescribeFirewallPolicyRequestRequestTypeDef](#describefirewallpolicyrequestrequesttypedef)
-  - [DescribeFirewallPolicyResponseTypeDef](#describefirewallpolicyresponsetypedef)
-  - [DescribeFirewallRequestRequestTypeDef](#describefirewallrequestrequesttypedef)
-  - [DescribeFirewallResponseTypeDef](#describefirewallresponsetypedef)
-  - [DescribeLoggingConfigurationRequestRequestTypeDef](#describeloggingconfigurationrequestrequesttypedef)
-  - [DescribeLoggingConfigurationResponseTypeDef](#describeloggingconfigurationresponsetypedef)
-  - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
-  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
-  - [DescribeRuleGroupMetadataRequestRequestTypeDef](#describerulegroupmetadatarequestrequesttypedef)
-  - [DescribeRuleGroupMetadataResponseTypeDef](#describerulegroupmetadataresponsetypedef)
-  - [DescribeRuleGroupRequestRequestTypeDef](#describerulegrouprequestrequesttypedef)
-  - [DescribeRuleGroupResponseTypeDef](#describerulegroupresponsetypedef)
-  - [DimensionTypeDef](#dimensiontypedef)
-  - [DisassociateSubnetsRequestRequestTypeDef](#disassociatesubnetsrequestrequesttypedef)
-  - [DisassociateSubnetsResponseTypeDef](#disassociatesubnetsresponsetypedef)
-  - [FirewallMetadataTypeDef](#firewallmetadatatypedef)
-  - [FirewallPolicyMetadataTypeDef](#firewallpolicymetadatatypedef)
-  - [FirewallPolicyResponseTypeDef](#firewallpolicyresponsetypedef)
-  - [FirewallPolicyTypeDef](#firewallpolicytypedef)
-  - [FirewallStatusTypeDef](#firewallstatustypedef)
-  - [FirewallTypeDef](#firewalltypedef)
-  - [HeaderTypeDef](#headertypedef)
-  - [IPSetTypeDef](#ipsettypedef)
-  - [ListFirewallPoliciesRequestRequestTypeDef](#listfirewallpoliciesrequestrequesttypedef)
-  - [ListFirewallPoliciesResponseTypeDef](#listfirewallpoliciesresponsetypedef)
-  - [ListFirewallsRequestRequestTypeDef](#listfirewallsrequestrequesttypedef)
-  - [ListFirewallsResponseTypeDef](#listfirewallsresponsetypedef)
-  - [ListRuleGroupsRequestRequestTypeDef](#listrulegroupsrequestrequesttypedef)
-  - [ListRuleGroupsResponseTypeDef](#listrulegroupsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [LogDestinationConfigTypeDef](#logdestinationconfigtypedef)
-  - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
-  - [MatchAttributesTypeDef](#matchattributestypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PerObjectStatusTypeDef](#perobjectstatustypedef)
-  - [PortRangeTypeDef](#portrangetypedef)
-  - [PortSetTypeDef](#portsettypedef)
-  - [PublishMetricActionTypeDef](#publishmetricactiontypedef)
-  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuleDefinitionTypeDef](#ruledefinitiontypedef)
-  - [RuleGroupMetadataTypeDef](#rulegroupmetadatatypedef)
-  - [RuleGroupResponseTypeDef](#rulegroupresponsetypedef)
-  - [RuleGroupTypeDef](#rulegrouptypedef)
-  - [RuleOptionTypeDef](#ruleoptiontypedef)
-  - [RuleVariablesTypeDef](#rulevariablestypedef)
-  - [RulesSourceListTypeDef](#rulessourcelisttypedef)
-  - [RulesSourceTypeDef](#rulessourcetypedef)
-  - [StatefulEngineOptionsTypeDef](#statefulengineoptionstypedef)
-  - [StatefulRuleGroupOverrideTypeDef](#statefulrulegroupoverridetypedef)
-  - [StatefulRuleGroupReferenceTypeDef](#statefulrulegroupreferencetypedef)
-  - [StatefulRuleOptionsTypeDef](#statefulruleoptionstypedef)
-  - [StatefulRuleTypeDef](#statefulruletypedef)
-  - [StatelessRuleGroupReferenceTypeDef](#statelessrulegroupreferencetypedef)
-  - [StatelessRuleTypeDef](#statelessruletypedef)
-  - [StatelessRulesAndCustomActionsTypeDef](#statelessrulesandcustomactionstypedef)
-  - [SubnetMappingTypeDef](#subnetmappingtypedef)
-  - [SyncStateTypeDef](#syncstatetypedef)
-  - [TCPFlagFieldTypeDef](#tcpflagfieldtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateFirewallDeleteProtectionRequestRequestTypeDef](#updatefirewalldeleteprotectionrequestrequesttypedef)
-  - [UpdateFirewallDeleteProtectionResponseTypeDef](#updatefirewalldeleteprotectionresponsetypedef)
-  - [UpdateFirewallDescriptionRequestRequestTypeDef](#updatefirewalldescriptionrequestrequesttypedef)
-  - [UpdateFirewallDescriptionResponseTypeDef](#updatefirewalldescriptionresponsetypedef)
-  - [UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef](#updatefirewallpolicychangeprotectionrequestrequesttypedef)
-  - [UpdateFirewallPolicyChangeProtectionResponseTypeDef](#updatefirewallpolicychangeprotectionresponsetypedef)
-  - [UpdateFirewallPolicyRequestRequestTypeDef](#updatefirewallpolicyrequestrequesttypedef)
-  - [UpdateFirewallPolicyResponseTypeDef](#updatefirewallpolicyresponsetypedef)
-  - [UpdateLoggingConfigurationRequestRequestTypeDef](#updateloggingconfigurationrequestrequesttypedef)
-  - [UpdateLoggingConfigurationResponseTypeDef](#updateloggingconfigurationresponsetypedef)
-  - [UpdateRuleGroupRequestRequestTypeDef](#updaterulegrouprequestrequesttypedef)
-  - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
-  - [UpdateSubnetChangeProtectionRequestRequestTypeDef](#updatesubnetchangeprotectionrequestrequesttypedef)
-  - [UpdateSubnetChangeProtectionResponseTypeDef](#updatesubnetchangeprotectionresponsetypedef)
-
-<a id="actiondefinitiontypedef"></a>
+    Auto-generated documentation for [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
+    type annotations stubs module [mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 ## ActionDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ActionDefinitionTypeDef
+
+def get_value() -> ActionDefinitionTypeDef:
+    return {
+        "PublishMetricAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionDefinitionTypeDef(TypedDict):
+    PublishMetricAction: NotRequired[PublishMetricActionTypeDef],  # (1)
+```
 
-- `PublishMetricAction`:
-  [PublishMetricActionTypeDef](./type_defs.md#publishmetricactiontypedef)
-
-<a id="addresstypedef"></a>
-
+1. See [:material-code-braces: PublishMetricActionTypeDef](./type_defs.md#publishmetricactiontypedef) 
 ## AddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AddressTypeDef
+
+def get_value() -> AddressTypeDef:
+    return {
+        "AddressDefinition": ...,
+    }
 ```
 
-Required fields:
-
-- `AddressDefinition`: `str`
-
-<a id="associatefirewallpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class AddressTypeDef(TypedDict):
+    AddressDefinition: str,
+```
 
 ## AssociateFirewallPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AssociateFirewallPolicyRequestRequestTypeDef
+
+def get_value() -> AssociateFirewallPolicyRequestRequestTypeDef:
+    return {
+        "FirewallPolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `FirewallPolicyArn`: `str`
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="associatefirewallpolicyresponsetypedef"></a>
+```python title="Definition"
+class AssociateFirewallPolicyRequestRequestTypeDef(TypedDict):
+    FirewallPolicyArn: str,
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## AssociateFirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AssociateFirewallPolicyResponseTypeDef
+
+def get_value() -> AssociateFirewallPolicyResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "FirewallPolicyArn": ...,
+        "UpdateToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateFirewallPolicyResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    FirewallPolicyArn: str,
+    UpdateToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `FirewallPolicyArn`: `str`
-- `UpdateToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatesubnetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateSubnetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AssociateSubnetsRequestRequestTypeDef
+
+def get_value() -> AssociateSubnetsRequestRequestTypeDef:
+    return {
+        "SubnetMappings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateSubnetsRequestRequestTypeDef(TypedDict):
+    SubnetMappings: Sequence[SubnetMappingTypeDef],  # (1)
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
-- `SubnetMappings`:
-  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="associatesubnetsresponsetypedef"></a>
-
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
 ## AssociateSubnetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AssociateSubnetsResponseTypeDef
+
+def get_value() -> AssociateSubnetsResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "SubnetMappings": ...,
+        "UpdateToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateSubnetsResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    SubnetMappings: List[SubnetMappingTypeDef],  # (1)
+    UpdateToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `UpdateToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attachmenttypedef"></a>
-
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import AttachmentTypeDef
+
+def get_value() -> AttachmentTypeDef:
+    return {
+        "SubnetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachmentTypeDef(TypedDict):
+    SubnetId: NotRequired[str],
+    EndpointId: NotRequired[str],
+    Status: NotRequired[AttachmentStatusType],  # (1)
+```
 
-- `SubnetId`: `str`
-- `EndpointId`: `str`
-- `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
-
-<a id="createfirewallpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AttachmentStatusType](./literals.md#attachmentstatustype) 
 ## CreateFirewallPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateFirewallPolicyRequestRequestTypeDef
+
+def get_value() -> CreateFirewallPolicyRequestRequestTypeDef:
+    return {
+        "FirewallPolicyName": ...,
+        "FirewallPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFirewallPolicyRequestRequestTypeDef(TypedDict):
+    FirewallPolicyName: str,
+    FirewallPolicy: FirewallPolicyTypeDef,  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    DryRun: NotRequired[bool],
+```
 
-- `FirewallPolicyName`: `str`
-- `FirewallPolicy`:
-  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DryRun`: `bool`
-
-<a id="createfirewallpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateFirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateFirewallPolicyResponseTypeDef
+
+def get_value() -> CreateFirewallPolicyResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallPolicyResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFirewallPolicyResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallPolicyResponse: FirewallPolicyResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UpdateToken`: `str`
-- `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfirewallrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFirewallRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateFirewallRequestRequestTypeDef
+
+def get_value() -> CreateFirewallRequestRequestTypeDef:
+    return {
+        "FirewallName": ...,
+        "FirewallPolicyArn": ...,
+        "VpcId": ...,
+        "SubnetMappings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFirewallRequestRequestTypeDef(TypedDict):
+    FirewallName: str,
+    FirewallPolicyArn: str,
+    VpcId: str,
+    SubnetMappings: Sequence[SubnetMappingTypeDef],  # (1)
+    DeleteProtection: NotRequired[bool],
+    SubnetChangeProtection: NotRequired[bool],
+    FirewallPolicyChangeProtection: NotRequired[bool],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `FirewallName`: `str`
-- `FirewallPolicyArn`: `str`
-- `VpcId`: `str`
-- `SubnetMappings`:
-  `Sequence`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-
-Optional fields:
-
-- `DeleteProtection`: `bool`
-- `SubnetChangeProtection`: `bool`
-- `FirewallPolicyChangeProtection`: `bool`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createfirewallresponsetypedef"></a>
-
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateFirewallResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateFirewallResponseTypeDef
+
+def get_value() -> CreateFirewallResponseTypeDef:
+    return {
+        "Firewall": ...,
+        "FirewallStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFirewallResponseTypeDef(TypedDict):
+    Firewall: FirewallTypeDef,  # (1)
+    FirewallStatus: FirewallStatusTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallTypeDef](./type_defs.md#firewalltypedef) 
+2. See [:material-code-braces: FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateRuleGroupRequestRequestTypeDef
+
+def get_value() -> CreateRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupName": ...,
+        "Type": ...,
+        "Capacity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupName: str,
+    Type: RuleGroupTypeType,  # (1)
+    Capacity: int,
+    RuleGroup: NotRequired[RuleGroupTypeDef],  # (2)
+    Rules: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    DryRun: NotRequired[bool],
+```
 
-- `RuleGroupName`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-- `Capacity`: `int`
-
-Optional fields:
-
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
-- `Rules`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DryRun`: `bool`
-
-<a id="createrulegroupresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
+2. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CreateRuleGroupResponseTypeDef
+
+def get_value() -> CreateRuleGroupResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "RuleGroupResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRuleGroupResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    RuleGroupResponse: RuleGroupResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UpdateToken`: `str`
-- `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customactiontypedef"></a>
-
+1. See [:material-code-braces: RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import CustomActionTypeDef
+
+def get_value() -> CustomActionTypeDef:
+    return {
+        "ActionName": ...,
+        "ActionDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomActionTypeDef(TypedDict):
+    ActionName: str,
+    ActionDefinition: ActionDefinitionTypeDef,  # (1)
+```
 
-- `ActionName`: `str`
-- `ActionDefinition`:
-  [ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef)
-
-<a id="deletefirewallpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef) 
 ## DeleteFirewallPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteFirewallPolicyRequestRequestTypeDef:
+    return {
+        "FirewallPolicyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallPolicyName`: `str`
-- `FirewallPolicyArn`: `str`
-
-<a id="deletefirewallpolicyresponsetypedef"></a>
+```python title="Definition"
+class DeleteFirewallPolicyRequestRequestTypeDef(TypedDict):
+    FirewallPolicyName: NotRequired[str],
+    FirewallPolicyArn: NotRequired[str],
+```
 
 ## DeleteFirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteFirewallPolicyResponseTypeDef
+
+def get_value() -> DeleteFirewallPolicyResponseTypeDef:
+    return {
+        "FirewallPolicyResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFirewallPolicyResponseTypeDef(TypedDict):
+    FirewallPolicyResponse: FirewallPolicyResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletefirewallrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFirewallRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteFirewallRequestRequestTypeDef
+
+def get_value() -> DeleteFirewallRequestRequestTypeDef:
+    return {
+        "FirewallName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallName`: `str`
-- `FirewallArn`: `str`
-
-<a id="deletefirewallresponsetypedef"></a>
+```python title="Definition"
+class DeleteFirewallRequestRequestTypeDef(TypedDict):
+    FirewallName: NotRequired[str],
+    FirewallArn: NotRequired[str],
+```
 
 ## DeleteFirewallResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteFirewallResponseTypeDef
+
+def get_value() -> DeleteFirewallResponseTypeDef:
+    return {
+        "Firewall": ...,
+        "FirewallStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFirewallResponseTypeDef(TypedDict):
+    Firewall: FirewallTypeDef,  # (1)
+    FirewallStatus: FirewallStatusTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallTypeDef](./type_defs.md#firewalltypedef) 
+2. See [:material-code-braces: FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="deleterulegrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DeleteRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupRequestRequestTypeDef
+
+def get_value() -> DeleteRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeleteRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    RuleGroupArn: NotRequired[str],
+    Type: NotRequired[RuleGroupTypeType],  # (1)
+```
 
-- `RuleGroupName`: `str`
-- `RuleGroupArn`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-
-<a id="deleterulegroupresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 ## DeleteRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DeleteRuleGroupResponseTypeDef
+
+def get_value() -> DeleteRuleGroupResponseTypeDef:
+    return {
+        "RuleGroupResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRuleGroupResponseTypeDef(TypedDict):
+    RuleGroupResponse: RuleGroupResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefirewallpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFirewallPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeFirewallPolicyRequestRequestTypeDef
+
+def get_value() -> DescribeFirewallPolicyRequestRequestTypeDef:
+    return {
+        "FirewallPolicyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallPolicyName`: `str`
-- `FirewallPolicyArn`: `str`
-
-<a id="describefirewallpolicyresponsetypedef"></a>
+```python title="Definition"
+class DescribeFirewallPolicyRequestRequestTypeDef(TypedDict):
+    FirewallPolicyName: NotRequired[str],
+    FirewallPolicyArn: NotRequired[str],
+```
 
 ## DescribeFirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeFirewallPolicyResponseTypeDef
+
+def get_value() -> DescribeFirewallPolicyResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallPolicyResponse": ...,
+        "FirewallPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFirewallPolicyResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallPolicyResponse: FirewallPolicyResponseTypeDef,  # (1)
+    FirewallPolicy: FirewallPolicyTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `UpdateToken`: `str`
-- `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
-- `FirewallPolicy`:
-  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefirewallrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef) 
+2. See [:material-code-braces: FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFirewallRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeFirewallRequestRequestTypeDef
+
+def get_value() -> DescribeFirewallRequestRequestTypeDef:
+    return {
+        "FirewallName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallName`: `str`
-- `FirewallArn`: `str`
-
-<a id="describefirewallresponsetypedef"></a>
+```python title="Definition"
+class DescribeFirewallRequestRequestTypeDef(TypedDict):
+    FirewallName: NotRequired[str],
+    FirewallArn: NotRequired[str],
+```
 
 ## DescribeFirewallResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeFirewallResponseTypeDef
+
+def get_value() -> DescribeFirewallResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "Firewall": ...,
+        "FirewallStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFirewallResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    Firewall: FirewallTypeDef,  # (1)
+    FirewallStatus: FirewallStatusTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `UpdateToken`: `str`
-- `Firewall`: [FirewallTypeDef](./type_defs.md#firewalltypedef)
-- `FirewallStatus`:
-  [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeloggingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallTypeDef](./type_defs.md#firewalltypedef) 
+2. See [:material-code-braces: FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLoggingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "FirewallArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="describeloggingconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## DescribeLoggingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeLoggingConfigurationResponseTypeDef
+
+def get_value() -> DescribeLoggingConfigurationResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLoggingConfigurationResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FirewallArn`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DescribeResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="describeresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class DescribeResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DescribeResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyResponseTypeDef
+
+def get_value() -> DescribeResourcePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourcePolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerulegroupmetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuleGroupMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupMetadataRequestRequestTypeDef
+
+def get_value() -> DescribeRuleGroupMetadataRequestRequestTypeDef:
+    return {
+        "RuleGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeRuleGroupMetadataRequestRequestTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    RuleGroupArn: NotRequired[str],
+    Type: NotRequired[RuleGroupTypeType],  # (1)
+```
 
-- `RuleGroupName`: `str`
-- `RuleGroupArn`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-
-<a id="describerulegroupmetadataresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 ## DescribeRuleGroupMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupMetadataResponseTypeDef
+
+def get_value() -> DescribeRuleGroupMetadataResponseTypeDef:
+    return {
+        "RuleGroupArn": ...,
+        "RuleGroupName": ...,
+        "Description": ...,
+        "Type": ...,
+        "Capacity": ...,
+        "StatefulRuleOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRuleGroupMetadataResponseTypeDef(TypedDict):
+    RuleGroupArn: str,
+    RuleGroupName: str,
+    Description: str,
+    Type: RuleGroupTypeType,  # (1)
+    Capacity: int,
+    StatefulRuleOptions: StatefulRuleOptionsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `RuleGroupArn`: `str`
-- `RuleGroupName`: `str`
-- `Description`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-- `Capacity`: `int`
-- `StatefulRuleOptions`:
-  [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
+2. See [:material-code-braces: StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupRequestRequestTypeDef
+
+def get_value() -> DescribeRuleGroupRequestRequestTypeDef:
+    return {
+        "RuleGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeRuleGroupRequestRequestTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    RuleGroupArn: NotRequired[str],
+    Type: NotRequired[RuleGroupTypeType],  # (1)
+```
 
-- `RuleGroupName`: `str`
-- `RuleGroupArn`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-
-<a id="describerulegroupresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 ## DescribeRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DescribeRuleGroupResponseTypeDef
+
+def get_value() -> DescribeRuleGroupResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "RuleGroup": ...,
+        "RuleGroupResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRuleGroupResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    RuleGroup: RuleGroupTypeDef,  # (1)
+    RuleGroupResponse: RuleGroupResponseTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `UpdateToken`: `str`
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
-- `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensiontypedef"></a>
-
+1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+2. See [:material-code-braces: RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DimensionTypeDef
+
+def get_value() -> DimensionTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Value`: `str`
-
-<a id="disassociatesubnetsrequestrequesttypedef"></a>
+```python title="Definition"
+class DimensionTypeDef(TypedDict):
+    Value: str,
+```
 
 ## DisassociateSubnetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsRequestRequestTypeDef
+
+def get_value() -> DisassociateSubnetsRequestRequestTypeDef:
+    return {
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="disassociatesubnetsresponsetypedef"></a>
+```python title="Definition"
+class DisassociateSubnetsRequestRequestTypeDef(TypedDict):
+    SubnetIds: Sequence[str],
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## DisassociateSubnetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import DisassociateSubnetsResponseTypeDef
+
+def get_value() -> DisassociateSubnetsResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "SubnetMappings": ...,
+        "UpdateToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateSubnetsResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    SubnetMappings: List[SubnetMappingTypeDef],  # (1)
+    UpdateToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `UpdateToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="firewallmetadatatypedef"></a>
-
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FirewallMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallMetadataTypeDef
+
+def get_value() -> FirewallMetadataTypeDef:
+    return {
+        "FirewallName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallName`: `str`
-- `FirewallArn`: `str`
-
-<a id="firewallpolicymetadatatypedef"></a>
+```python title="Definition"
+class FirewallMetadataTypeDef(TypedDict):
+    FirewallName: NotRequired[str],
+    FirewallArn: NotRequired[str],
+```
 
 ## FirewallPolicyMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallPolicyMetadataTypeDef
+
+def get_value() -> FirewallPolicyMetadataTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Arn`: `str`
-
-<a id="firewallpolicyresponsetypedef"></a>
+```python title="Definition"
+class FirewallPolicyMetadataTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## FirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallPolicyResponseTypeDef
+
+def get_value() -> FirewallPolicyResponseTypeDef:
+    return {
+        "FirewallPolicyName": ...,
+        "FirewallPolicyArn": ...,
+        "FirewallPolicyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirewallPolicyResponseTypeDef(TypedDict):
+    FirewallPolicyName: str,
+    FirewallPolicyArn: str,
+    FirewallPolicyId: str,
+    Description: NotRequired[str],
+    FirewallPolicyStatus: NotRequired[ResourceStatusType],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    ConsumedStatelessRuleCapacity: NotRequired[int],
+    ConsumedStatefulRuleCapacity: NotRequired[int],
+    NumberOfAssociations: NotRequired[int],
+```
 
-- `FirewallPolicyName`: `str`
-- `FirewallPolicyArn`: `str`
-- `FirewallPolicyId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `FirewallPolicyStatus`:
-  [ResourceStatusType](./literals.md#resourcestatustype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ConsumedStatelessRuleCapacity`: `int`
-- `ConsumedStatefulRuleCapacity`: `int`
-- `NumberOfAssociations`: `int`
-
-<a id="firewallpolicytypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## FirewallPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallPolicyTypeDef
+
+def get_value() -> FirewallPolicyTypeDef:
+    return {
+        "StatelessDefaultActions": ...,
+        "StatelessFragmentDefaultActions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirewallPolicyTypeDef(TypedDict):
+    StatelessDefaultActions: Sequence[str],
+    StatelessFragmentDefaultActions: Sequence[str],
+    StatelessRuleGroupReferences: NotRequired[Sequence[StatelessRuleGroupReferenceTypeDef]],  # (1)
+    StatelessCustomActions: NotRequired[Sequence[CustomActionTypeDef]],  # (2)
+    StatefulRuleGroupReferences: NotRequired[Sequence[StatefulRuleGroupReferenceTypeDef]],  # (3)
+    StatefulDefaultActions: NotRequired[Sequence[str]],
+    StatefulEngineOptions: NotRequired[StatefulEngineOptionsTypeDef],  # (4)
+```
 
-- `StatelessDefaultActions`: `Sequence`\[`str`\]
-- `StatelessFragmentDefaultActions`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `StatelessRuleGroupReferences`:
-  `Sequence`\[[StatelessRuleGroupReferenceTypeDef](./type_defs.md#statelessrulegroupreferencetypedef)\]
-- `StatelessCustomActions`:
-  `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
-- `StatefulRuleGroupReferences`:
-  `Sequence`\[[StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef)\]
-- `StatefulDefaultActions`: `Sequence`\[`str`\]
-- `StatefulEngineOptions`:
-  [StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef)
-
-<a id="firewallstatustypedef"></a>
-
+1. See [:material-code-braces: StatelessRuleGroupReferenceTypeDef](./type_defs.md#statelessrulegroupreferencetypedef) 
+2. See [:material-code-braces: CustomActionTypeDef](./type_defs.md#customactiontypedef) 
+3. See [:material-code-braces: StatefulRuleGroupReferenceTypeDef](./type_defs.md#statefulrulegroupreferencetypedef) 
+4. See [:material-code-braces: StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef) 
 ## FirewallStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallStatusTypeDef
+
+def get_value() -> FirewallStatusTypeDef:
+    return {
+        "Status": ...,
+        "ConfigurationSyncStateSummary": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirewallStatusTypeDef(TypedDict):
+    Status: FirewallStatusValueType,  # (1)
+    ConfigurationSyncStateSummary: ConfigurationSyncStateType,  # (2)
+    SyncStates: NotRequired[Dict[str, SyncStateTypeDef]],  # (3)
+```
 
-- `Status`: [FirewallStatusValueType](./literals.md#firewallstatusvaluetype)
-- `ConfigurationSyncStateSummary`:
-  [ConfigurationSyncStateType](./literals.md#configurationsyncstatetype)
-
-Optional fields:
-
-- `SyncStates`: `Dict`\[`str`,
-  [SyncStateTypeDef](./type_defs.md#syncstatetypedef)\]
-
-<a id="firewalltypedef"></a>
-
+1. See [:material-code-brackets: FirewallStatusValueType](./literals.md#firewallstatusvaluetype) 
+2. See [:material-code-brackets: ConfigurationSyncStateType](./literals.md#configurationsyncstatetype) 
+3. See [:material-code-braces: SyncStateTypeDef](./type_defs.md#syncstatetypedef) 
 ## FirewallTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import FirewallTypeDef
+
+def get_value() -> FirewallTypeDef:
+    return {
+        "FirewallPolicyArn": ...,
+        "VpcId": ...,
+        "SubnetMappings": ...,
+        "FirewallId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirewallTypeDef(TypedDict):
+    FirewallPolicyArn: str,
+    VpcId: str,
+    SubnetMappings: List[SubnetMappingTypeDef],  # (1)
+    FirewallId: str,
+    FirewallName: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    DeleteProtection: NotRequired[bool],
+    SubnetChangeProtection: NotRequired[bool],
+    FirewallPolicyChangeProtection: NotRequired[bool],
+    Description: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `FirewallPolicyArn`: `str`
-- `VpcId`: `str`
-- `SubnetMappings`:
-  `List`\[[SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef)\]
-- `FirewallId`: `str`
-
-Optional fields:
-
-- `FirewallName`: `str`
-- `FirewallArn`: `str`
-- `DeleteProtection`: `bool`
-- `SubnetChangeProtection`: `bool`
-- `FirewallPolicyChangeProtection`: `bool`
-- `Description`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="headertypedef"></a>
-
+1. See [:material-code-braces: SubnetMappingTypeDef](./type_defs.md#subnetmappingtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## HeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import HeaderTypeDef
+
+def get_value() -> HeaderTypeDef:
+    return {
+        "Protocol": ...,
+        "Source": ...,
+        "SourcePort": ...,
+        "Direction": ...,
+        "Destination": ...,
+        "DestinationPort": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HeaderTypeDef(TypedDict):
+    Protocol: StatefulRuleProtocolType,  # (1)
+    Source: str,
+    SourcePort: str,
+    Direction: StatefulRuleDirectionType,  # (2)
+    Destination: str,
+    DestinationPort: str,
+```
 
-- `Protocol`:
-  [StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype)
-- `Source`: `str`
-- `SourcePort`: `str`
-- `Direction`:
-  [StatefulRuleDirectionType](./literals.md#statefulruledirectiontype)
-- `Destination`: `str`
-- `DestinationPort`: `str`
-
-<a id="ipsettypedef"></a>
-
+1. See [:material-code-brackets: StatefulRuleProtocolType](./literals.md#statefulruleprotocoltype) 
+2. See [:material-code-brackets: StatefulRuleDirectionType](./literals.md#statefulruledirectiontype) 
 ## IPSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import IPSetTypeDef
+
+def get_value() -> IPSetTypeDef:
+    return {
+        "Definition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IPSetTypeDef(TypedDict):
+    Definition: Sequence[str],
+```
 
-- `Definition`: `Sequence`\[`str`\]
+## ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef
 
-<a id="listfirewallpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef
 
+def get_value() -> ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallPoliciesRequestListFirewallPoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFirewallPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesRequestRequestTypeDef
+
+def get_value() -> ListFirewallPoliciesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listfirewallpoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListFirewallPoliciesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListFirewallPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListFirewallPoliciesResponseTypeDef
+
+def get_value() -> ListFirewallPoliciesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "FirewallPolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFirewallPoliciesResponseTypeDef(TypedDict):
+    NextToken: str,
+    FirewallPolicies: List[FirewallPolicyMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `FirewallPolicies`:
-  `List`\[[FirewallPolicyMetadataTypeDef](./type_defs.md#firewallpolicymetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FirewallPolicyMetadataTypeDef](./type_defs.md#firewallpolicymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFirewallsRequestListFirewallsPaginateTypeDef
 
-<a id="listfirewallsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import ListFirewallsRequestListFirewallsPaginateTypeDef
 
+def get_value() -> ListFirewallsRequestListFirewallsPaginateTypeDef:
+    return {
+        "VpcIds": ...,
+    }
+```
+
+```python title="Definition"
+class ListFirewallsRequestListFirewallsPaginateTypeDef(TypedDict):
+    VpcIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFirewallsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListFirewallsRequestRequestTypeDef
+
+def get_value() -> ListFirewallsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `VpcIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-
-<a id="listfirewallsresponsetypedef"></a>
+```python title="Definition"
+class ListFirewallsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    VpcIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+```
 
 ## ListFirewallsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListFirewallsResponseTypeDef
+
+def get_value() -> ListFirewallsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Firewalls": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFirewallsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Firewalls: List[FirewallMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Firewalls`:
-  `List`\[[FirewallMetadataTypeDef](./type_defs.md#firewallmetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FirewallMetadataTypeDef](./type_defs.md#firewallmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRuleGroupsRequestListRuleGroupsPaginateTypeDef
 
-<a id="listrulegroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import ListRuleGroupsRequestListRuleGroupsPaginateTypeDef
 
+def get_value() -> ListRuleGroupsRequestListRuleGroupsPaginateTypeDef:
+    return {
+        "Scope": ...,
+    }
+```
+
+```python title="Definition"
+class ListRuleGroupsRequestListRuleGroupsPaginateTypeDef(TypedDict):
+    Scope: NotRequired[ResourceManagedStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceManagedStatusType](./literals.md#resourcemanagedstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRuleGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListRuleGroupsRequestRequestTypeDef
+
+def get_value() -> ListRuleGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListRuleGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Scope: NotRequired[ResourceManagedStatusType],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
-
-<a id="listrulegroupsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceManagedStatusType](./literals.md#resourcemanagedstatustype) 
 ## ListRuleGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListRuleGroupsResponseTypeDef
+
+def get_value() -> ListRuleGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RuleGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRuleGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    RuleGroups: List[RuleGroupMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `RuleGroups`:
-  `List`\[[RuleGroupMetadataTypeDef](./type_defs.md#rulegroupmetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RuleGroupMetadataTypeDef](./type_defs.md#rulegroupmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_network_firewall.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    NextToken: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logdestinationconfigtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogDestinationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import LogDestinationConfigTypeDef
+
+def get_value() -> LogDestinationConfigTypeDef:
+    return {
+        "LogType": ...,
+        "LogDestinationType": ...,
+        "LogDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LogDestinationConfigTypeDef(TypedDict):
+    LogType: LogTypeType,  # (1)
+    LogDestinationType: LogDestinationTypeType,  # (2)
+    LogDestination: Dict[str, str],
+```
 
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
-- `LogDestinationType`:
-  [LogDestinationTypeType](./literals.md#logdestinationtypetype)
-- `LogDestination`: `Dict`\[`str`, `str`\]
-
-<a id="loggingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
+2. See [:material-code-brackets: LogDestinationTypeType](./literals.md#logdestinationtypetype) 
 ## LoggingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import LoggingConfigurationTypeDef
+
+def get_value() -> LoggingConfigurationTypeDef:
+    return {
+        "LogDestinationConfigs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LoggingConfigurationTypeDef(TypedDict):
+    LogDestinationConfigs: List[LogDestinationConfigTypeDef],  # (1)
+```
 
-- `LogDestinationConfigs`:
-  `List`\[[LogDestinationConfigTypeDef](./type_defs.md#logdestinationconfigtypedef)\]
-
-<a id="matchattributestypedef"></a>
-
+1. See [:material-code-braces: LogDestinationConfigTypeDef](./type_defs.md#logdestinationconfigtypedef) 
 ## MatchAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import MatchAttributesTypeDef
+
+def get_value() -> MatchAttributesTypeDef:
+    return {
+        "Sources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MatchAttributesTypeDef(TypedDict):
+    Sources: NotRequired[Sequence[AddressTypeDef]],  # (1)
+    Destinations: NotRequired[Sequence[AddressTypeDef]],  # (1)
+    SourcePorts: NotRequired[Sequence[PortRangeTypeDef]],  # (3)
+    DestinationPorts: NotRequired[Sequence[PortRangeTypeDef]],  # (3)
+    Protocols: NotRequired[Sequence[int]],
+    TCPFlags: NotRequired[Sequence[TCPFlagFieldTypeDef]],  # (5)
+```
 
-- `Sources`: `Sequence`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
-- `Destinations`: `Sequence`\[[AddressTypeDef](./type_defs.md#addresstypedef)\]
-- `SourcePorts`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `DestinationPorts`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocols`: `Sequence`\[`int`\]
-- `TCPFlags`:
-  `Sequence`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+3. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+4. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+5. See [:material-code-braces: TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="perobjectstatustypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PerObjectStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PerObjectStatusTypeDef
+
+def get_value() -> PerObjectStatusTypeDef:
+    return {
+        "SyncStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerObjectStatusTypeDef(TypedDict):
+    SyncStatus: NotRequired[PerObjectSyncStatusType],  # (1)
+    UpdateToken: NotRequired[str],
+```
 
-- `SyncStatus`:
-  [PerObjectSyncStatusType](./literals.md#perobjectsyncstatustype)
-- `UpdateToken`: `str`
-
-<a id="portrangetypedef"></a>
-
+1. See [:material-code-brackets: PerObjectSyncStatusType](./literals.md#perobjectsyncstatustype) 
 ## PortRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PortRangeTypeDef
+
+def get_value() -> PortRangeTypeDef:
+    return {
+        "FromPort": ...,
+        "ToPort": ...,
+    }
 ```
 
-Required fields:
-
-- `FromPort`: `int`
-- `ToPort`: `int`
-
-<a id="portsettypedef"></a>
+```python title="Definition"
+class PortRangeTypeDef(TypedDict):
+    FromPort: int,
+    ToPort: int,
+```
 
 ## PortSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PortSetTypeDef
+
+def get_value() -> PortSetTypeDef:
+    return {
+        "Definition": ...,
+    }
 ```
 
-Optional fields:
-
-- `Definition`: `Sequence`\[`str`\]
-
-<a id="publishmetricactiontypedef"></a>
+```python title="Definition"
+class PortSetTypeDef(TypedDict):
+    Definition: NotRequired[Sequence[str]],
+```
 
 ## PublishMetricActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PublishMetricActionTypeDef
+
+def get_value() -> PublishMetricActionTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishMetricActionTypeDef(TypedDict):
+    Dimensions: Sequence[DimensionTypeDef],  # (1)
+```
 
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-
-<a id="putresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
 ## PutResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Policy`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Policy: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="ruledefinitiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RuleDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleDefinitionTypeDef
+
+def get_value() -> RuleDefinitionTypeDef:
+    return {
+        "MatchAttributes": ...,
+        "Actions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleDefinitionTypeDef(TypedDict):
+    MatchAttributes: MatchAttributesTypeDef,  # (1)
+    Actions: Sequence[str],
+```
 
-- `MatchAttributes`:
-  [MatchAttributesTypeDef](./type_defs.md#matchattributestypedef)
-- `Actions`: `Sequence`\[`str`\]
-
-<a id="rulegroupmetadatatypedef"></a>
-
+1. See [:material-code-braces: MatchAttributesTypeDef](./type_defs.md#matchattributestypedef) 
 ## RuleGroupMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleGroupMetadataTypeDef
+
+def get_value() -> RuleGroupMetadataTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Arn`: `str`
-
-<a id="rulegroupresponsetypedef"></a>
+```python title="Definition"
+class RuleGroupMetadataTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## RuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleGroupResponseTypeDef
+
+def get_value() -> RuleGroupResponseTypeDef:
+    return {
+        "RuleGroupArn": ...,
+        "RuleGroupName": ...,
+        "RuleGroupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleGroupResponseTypeDef(TypedDict):
+    RuleGroupArn: str,
+    RuleGroupName: str,
+    RuleGroupId: str,
+    Description: NotRequired[str],
+    Type: NotRequired[RuleGroupTypeType],  # (1)
+    Capacity: NotRequired[int],
+    RuleGroupStatus: NotRequired[ResourceStatusType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    ConsumedCapacity: NotRequired[int],
+    NumberOfAssociations: NotRequired[int],
+```
 
-- `RuleGroupArn`: `str`
-- `RuleGroupName`: `str`
-- `RuleGroupId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-- `Capacity`: `int`
-- `RuleGroupStatus`: [ResourceStatusType](./literals.md#resourcestatustype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ConsumedCapacity`: `int`
-- `NumberOfAssociations`: `int`
-
-<a id="rulegrouptypedef"></a>
-
+1. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
+2. See [:material-code-brackets: ResourceStatusType](./literals.md#resourcestatustype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RuleGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleGroupTypeDef
+
+def get_value() -> RuleGroupTypeDef:
+    return {
+        "RulesSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RuleGroupTypeDef(TypedDict):
+    RulesSource: RulesSourceTypeDef,  # (2)
+    RuleVariables: NotRequired[RuleVariablesTypeDef],  # (1)
+    StatefulRuleOptions: NotRequired[StatefulRuleOptionsTypeDef],  # (3)
+```
 
-- `RulesSource`: [RulesSourceTypeDef](./type_defs.md#rulessourcetypedef)
-
-Optional fields:
-
-- `RuleVariables`: [RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef)
-- `StatefulRuleOptions`:
-  [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
-
-<a id="ruleoptiontypedef"></a>
-
+1. See [:material-code-braces: RuleVariablesTypeDef](./type_defs.md#rulevariablestypedef) 
+2. See [:material-code-braces: RulesSourceTypeDef](./type_defs.md#rulessourcetypedef) 
+3. See [:material-code-braces: StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef) 
 ## RuleOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleOptionTypeDef
+
+def get_value() -> RuleOptionTypeDef:
+    return {
+        "Keyword": ...,
+    }
 ```
 
-Required fields:
-
-- `Keyword`: `str`
-
-Optional fields:
-
-- `Settings`: `Sequence`\[`str`\]
-
-<a id="rulevariablestypedef"></a>
+```python title="Definition"
+class RuleOptionTypeDef(TypedDict):
+    Keyword: str,
+    Settings: NotRequired[Sequence[str]],
+```
 
 ## RuleVariablesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RuleVariablesTypeDef
+
+def get_value() -> RuleVariablesTypeDef:
+    return {
+        "IPSets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuleVariablesTypeDef(TypedDict):
+    IPSets: NotRequired[Mapping[str, IPSetTypeDef]],  # (1)
+    PortSets: NotRequired[Mapping[str, PortSetTypeDef]],  # (2)
+```
 
-- `IPSets`: `Mapping`\[`str`, [IPSetTypeDef](./type_defs.md#ipsettypedef)\]
-- `PortSets`: `Mapping`\[`str`,
-  [PortSetTypeDef](./type_defs.md#portsettypedef)\]
-
-<a id="rulessourcelisttypedef"></a>
-
+1. See [:material-code-braces: IPSetTypeDef](./type_defs.md#ipsettypedef) 
+2. See [:material-code-braces: PortSetTypeDef](./type_defs.md#portsettypedef) 
 ## RulesSourceListTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RulesSourceListTypeDef
+
+def get_value() -> RulesSourceListTypeDef:
+    return {
+        "Targets": ...,
+        "TargetTypes": ...,
+        "GeneratedRulesType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RulesSourceListTypeDef(TypedDict):
+    Targets: Sequence[str],
+    TargetTypes: Sequence[TargetTypeType],  # (1)
+    GeneratedRulesType: GeneratedRulesTypeType,  # (2)
+```
 
-- `Targets`: `Sequence`\[`str`\]
-- `TargetTypes`: `Sequence`\[[TargetTypeType](./literals.md#targettypetype)\]
-- `GeneratedRulesType`:
-  [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
-
-<a id="rulessourcetypedef"></a>
-
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-brackets: GeneratedRulesTypeType](./literals.md#generatedrulestypetype) 
 ## RulesSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import RulesSourceTypeDef
+
+def get_value() -> RulesSourceTypeDef:
+    return {
+        "RulesString": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RulesSourceTypeDef(TypedDict):
+    RulesString: NotRequired[str],
+    RulesSourceList: NotRequired[RulesSourceListTypeDef],  # (1)
+    StatefulRules: NotRequired[Sequence[StatefulRuleTypeDef]],  # (2)
+    StatelessRulesAndCustomActions: NotRequired[StatelessRulesAndCustomActionsTypeDef],  # (3)
+```
 
-- `RulesString`: `str`
-- `RulesSourceList`:
-  [RulesSourceListTypeDef](./type_defs.md#rulessourcelisttypedef)
-- `StatefulRules`:
-  `Sequence`\[[StatefulRuleTypeDef](./type_defs.md#statefulruletypedef)\]
-- `StatelessRulesAndCustomActions`:
-  [StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef)
-
-<a id="statefulengineoptionstypedef"></a>
-
+1. See [:material-code-braces: RulesSourceListTypeDef](./type_defs.md#rulessourcelisttypedef) 
+2. See [:material-code-braces: StatefulRuleTypeDef](./type_defs.md#statefulruletypedef) 
+3. See [:material-code-braces: StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef) 
 ## StatefulEngineOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatefulEngineOptionsTypeDef
+
+def get_value() -> StatefulEngineOptionsTypeDef:
+    return {
+        "RuleOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatefulEngineOptionsTypeDef(TypedDict):
+    RuleOrder: NotRequired[RuleOrderType],  # (1)
+```
 
-- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
-
-<a id="statefulrulegroupoverridetypedef"></a>
-
+1. See [:material-code-brackets: RuleOrderType](./literals.md#ruleordertype) 
 ## StatefulRuleGroupOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatefulRuleGroupOverrideTypeDef
+
+def get_value() -> StatefulRuleGroupOverrideTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatefulRuleGroupOverrideTypeDef(TypedDict):
+    Action: NotRequired[OverrideActionType],  # (1)
+```
 
-- `Action`: `Literal['DROP_TO_ALERT']` (see
-  [OverrideActionType](./literals.md#overrideactiontype))
-
-<a id="statefulrulegroupreferencetypedef"></a>
-
+1. See [:material-code-brackets: OverrideActionType](./literals.md#overrideactiontype) 
 ## StatefulRuleGroupReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatefulRuleGroupReferenceTypeDef
+
+def get_value() -> StatefulRuleGroupReferenceTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StatefulRuleGroupReferenceTypeDef(TypedDict):
+    ResourceArn: str,
+    Priority: NotRequired[int],
+    Override: NotRequired[StatefulRuleGroupOverrideTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `Priority`: `int`
-- `Override`:
-  [StatefulRuleGroupOverrideTypeDef](./type_defs.md#statefulrulegroupoverridetypedef)
-
-<a id="statefulruleoptionstypedef"></a>
-
+1. See [:material-code-braces: StatefulRuleGroupOverrideTypeDef](./type_defs.md#statefulrulegroupoverridetypedef) 
 ## StatefulRuleOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatefulRuleOptionsTypeDef
+
+def get_value() -> StatefulRuleOptionsTypeDef:
+    return {
+        "RuleOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatefulRuleOptionsTypeDef(TypedDict):
+    RuleOrder: NotRequired[RuleOrderType],  # (1)
+```
 
-- `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
-
-<a id="statefulruletypedef"></a>
-
+1. See [:material-code-brackets: RuleOrderType](./literals.md#ruleordertype) 
 ## StatefulRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatefulRuleTypeDef
+
+def get_value() -> StatefulRuleTypeDef:
+    return {
+        "Action": ...,
+        "Header": ...,
+        "RuleOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StatefulRuleTypeDef(TypedDict):
+    Action: StatefulActionType,  # (1)
+    Header: HeaderTypeDef,  # (2)
+    RuleOptions: Sequence[RuleOptionTypeDef],  # (3)
+```
 
-- `Action`: [StatefulActionType](./literals.md#statefulactiontype)
-- `Header`: [HeaderTypeDef](./type_defs.md#headertypedef)
-- `RuleOptions`:
-  `Sequence`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
-
-<a id="statelessrulegroupreferencetypedef"></a>
-
+1. See [:material-code-brackets: StatefulActionType](./literals.md#statefulactiontype) 
+2. See [:material-code-braces: HeaderTypeDef](./type_defs.md#headertypedef) 
+3. See [:material-code-braces: RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef) 
 ## StatelessRuleGroupReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatelessRuleGroupReferenceTypeDef
+
+def get_value() -> StatelessRuleGroupReferenceTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Priority": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Priority`: `int`
-
-<a id="statelessruletypedef"></a>
+```python title="Definition"
+class StatelessRuleGroupReferenceTypeDef(TypedDict):
+    ResourceArn: str,
+    Priority: int,
+```
 
 ## StatelessRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatelessRuleTypeDef
+
+def get_value() -> StatelessRuleTypeDef:
+    return {
+        "RuleDefinition": ...,
+        "Priority": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StatelessRuleTypeDef(TypedDict):
+    RuleDefinition: RuleDefinitionTypeDef,  # (1)
+    Priority: int,
+```
 
-- `RuleDefinition`:
-  [RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef)
-- `Priority`: `int`
-
-<a id="statelessrulesandcustomactionstypedef"></a>
-
+1. See [:material-code-braces: RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef) 
 ## StatelessRulesAndCustomActionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import StatelessRulesAndCustomActionsTypeDef
+
+def get_value() -> StatelessRulesAndCustomActionsTypeDef:
+    return {
+        "StatelessRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StatelessRulesAndCustomActionsTypeDef(TypedDict):
+    StatelessRules: Sequence[StatelessRuleTypeDef],  # (1)
+    CustomActions: NotRequired[Sequence[CustomActionTypeDef]],  # (2)
+```
 
-- `StatelessRules`:
-  `Sequence`\[[StatelessRuleTypeDef](./type_defs.md#statelessruletypedef)\]
-
-Optional fields:
-
-- `CustomActions`:
-  `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
-
-<a id="subnetmappingtypedef"></a>
-
+1. See [:material-code-braces: StatelessRuleTypeDef](./type_defs.md#statelessruletypedef) 
+2. See [:material-code-braces: CustomActionTypeDef](./type_defs.md#customactiontypedef) 
 ## SubnetMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import SubnetMappingTypeDef
+
+def get_value() -> SubnetMappingTypeDef:
+    return {
+        "SubnetId": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetId`: `str`
-
-<a id="syncstatetypedef"></a>
+```python title="Definition"
+class SubnetMappingTypeDef(TypedDict):
+    SubnetId: str,
+```
 
 ## SyncStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import SyncStateTypeDef
+
+def get_value() -> SyncStateTypeDef:
+    return {
+        "Attachment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SyncStateTypeDef(TypedDict):
+    Attachment: NotRequired[AttachmentTypeDef],  # (1)
+    Config: NotRequired[Dict[str, PerObjectStatusTypeDef]],  # (2)
+```
 
-- `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
-- `Config`: `Dict`\[`str`,
-  [PerObjectStatusTypeDef](./type_defs.md#perobjectstatustypedef)\]
-
-<a id="tcpflagfieldtypedef"></a>
-
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: PerObjectStatusTypeDef](./type_defs.md#perobjectstatustypedef) 
 ## TCPFlagFieldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import TCPFlagFieldTypeDef
+
+def get_value() -> TCPFlagFieldTypeDef:
+    return {
+        "Flags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TCPFlagFieldTypeDef(TypedDict):
+    Flags: Sequence[TCPFlagType],  # (1)
+    Masks: NotRequired[Sequence[TCPFlagType]],  # (1)
+```
 
-- `Flags`: `Sequence`\[[TCPFlagType](./literals.md#tcpflagtype)\]
-
-Optional fields:
-
-- `Masks`: `Sequence`\[[TCPFlagType](./literals.md#tcpflagtype)\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TCPFlagType](./literals.md#tcpflagtype) 
+2. See [:material-code-brackets: TCPFlagType](./literals.md#tcpflagtype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatefirewalldeleteprotectionrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateFirewallDeleteProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallDeleteProtectionRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallDeleteProtectionRequestRequestTypeDef:
+    return {
+        "DeleteProtection": ...,
+    }
 ```
 
-Required fields:
-
-- `DeleteProtection`: `bool`
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="updatefirewalldeleteprotectionresponsetypedef"></a>
+```python title="Definition"
+class UpdateFirewallDeleteProtectionRequestRequestTypeDef(TypedDict):
+    DeleteProtection: bool,
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## UpdateFirewallDeleteProtectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallDeleteProtectionResponseTypeDef
+
+def get_value() -> UpdateFirewallDeleteProtectionResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "DeleteProtection": ...,
+        "UpdateToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFirewallDeleteProtectionResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    DeleteProtection: bool,
+    UpdateToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `DeleteProtection`: `bool`
-- `UpdateToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefirewalldescriptionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFirewallDescriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallDescriptionRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallDescriptionRequestRequestTypeDef:
+    return {
+        "UpdateToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `Description`: `str`
-
-<a id="updatefirewalldescriptionresponsetypedef"></a>
+```python title="Definition"
+class UpdateFirewallDescriptionRequestRequestTypeDef(TypedDict):
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateFirewallDescriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallDescriptionResponseTypeDef
+
+def get_value() -> UpdateFirewallDescriptionResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "Description": ...,
+        "UpdateToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFirewallDescriptionResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    Description: str,
+    UpdateToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `Description`: `str`
-- `UpdateToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefirewallpolicychangeprotectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef:
+    return {
+        "FirewallPolicyChangeProtection": ...,
+    }
 ```
 
-Required fields:
-
-- `FirewallPolicyChangeProtection`: `bool`
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="updatefirewallpolicychangeprotectionresponsetypedef"></a>
+```python title="Definition"
+class UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef(TypedDict):
+    FirewallPolicyChangeProtection: bool,
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## UpdateFirewallPolicyChangeProtectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyChangeProtectionResponseTypeDef
+
+def get_value() -> UpdateFirewallPolicyChangeProtectionResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "FirewallPolicyChangeProtection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFirewallPolicyChangeProtectionResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallArn: str,
+    FirewallName: str,
+    FirewallPolicyChangeProtection: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `FirewallPolicyChangeProtection`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefirewallpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFirewallPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateFirewallPolicyRequestRequestTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFirewallPolicyRequestRequestTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallPolicy: FirewallPolicyTypeDef,  # (1)
+    FirewallPolicyArn: NotRequired[str],
+    FirewallPolicyName: NotRequired[str],
+    Description: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
 
-- `UpdateToken`: `str`
-- `FirewallPolicy`:
-  [FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef)
-
-Optional fields:
-
-- `FirewallPolicyArn`: `str`
-- `FirewallPolicyName`: `str`
-- `Description`: `str`
-- `DryRun`: `bool`
-
-<a id="updatefirewallpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyTypeDef](./type_defs.md#firewallpolicytypedef) 
 ## UpdateFirewallPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateFirewallPolicyResponseTypeDef
+
+def get_value() -> UpdateFirewallPolicyResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallPolicyResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFirewallPolicyResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallPolicyResponse: FirewallPolicyResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UpdateToken`: `str`
-- `FirewallPolicyResponse`:
-  [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateloggingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLoggingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateLoggingConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateLoggingConfigurationRequestRequestTypeDef:
+    return {
+        "FirewallArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateLoggingConfigurationRequestRequestTypeDef(TypedDict):
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+    LoggingConfiguration: NotRequired[LoggingConfigurationTypeDef],  # (1)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-
-<a id="updateloggingconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
 ## UpdateLoggingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateLoggingConfigurationResponseTypeDef
+
+def get_value() -> UpdateLoggingConfigurationResponseTypeDef:
+    return {
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "LoggingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLoggingConfigurationResponseTypeDef(TypedDict):
+    FirewallArn: str,
+    FirewallName: str,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterulegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRuleGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateRuleGroupRequestRequestTypeDef
+
+def get_value() -> UpdateRuleGroupRequestRequestTypeDef:
+    return {
+        "UpdateToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleGroupRequestRequestTypeDef(TypedDict):
+    UpdateToken: str,
+    RuleGroupArn: NotRequired[str],
+    RuleGroupName: NotRequired[str],
+    RuleGroup: NotRequired[RuleGroupTypeDef],  # (1)
+    Rules: NotRequired[str],
+    Type: NotRequired[RuleGroupTypeType],  # (2)
+    Description: NotRequired[str],
+    DryRun: NotRequired[bool],
+```
 
-- `UpdateToken`: `str`
-
-Optional fields:
-
-- `RuleGroupArn`: `str`
-- `RuleGroupName`: `str`
-- `RuleGroup`: [RuleGroupTypeDef](./type_defs.md#rulegrouptypedef)
-- `Rules`: `str`
-- `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
-- `Description`: `str`
-- `DryRun`: `bool`
-
-<a id="updaterulegroupresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleGroupTypeDef](./type_defs.md#rulegrouptypedef) 
+2. See [:material-code-brackets: RuleGroupTypeType](./literals.md#rulegrouptypetype) 
 ## UpdateRuleGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateRuleGroupResponseTypeDef
+
+def get_value() -> UpdateRuleGroupResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "RuleGroupResponse": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRuleGroupResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    RuleGroupResponse: RuleGroupResponseTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UpdateToken`: `str`
-- `RuleGroupResponse`:
-  [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesubnetchangeprotectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSubnetChangeProtectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateSubnetChangeProtectionRequestRequestTypeDef
+
+def get_value() -> UpdateSubnetChangeProtectionRequestRequestTypeDef:
+    return {
+        "SubnetChangeProtection": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetChangeProtection`: `bool`
-
-Optional fields:
-
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-
-<a id="updatesubnetchangeprotectionresponsetypedef"></a>
+```python title="Definition"
+class UpdateSubnetChangeProtectionRequestRequestTypeDef(TypedDict):
+    SubnetChangeProtection: bool,
+    UpdateToken: NotRequired[str],
+    FirewallArn: NotRequired[str],
+    FirewallName: NotRequired[str],
+```
 
 ## UpdateSubnetChangeProtectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_network_firewall.type_defs import UpdateSubnetChangeProtectionResponseTypeDef
+
+def get_value() -> UpdateSubnetChangeProtectionResponseTypeDef:
+    return {
+        "UpdateToken": ...,
+        "FirewallArn": ...,
+        "FirewallName": ...,
+        "SubnetChangeProtection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSubnetChangeProtectionResponseTypeDef(TypedDict):
+    UpdateToken: str,
+    FirewallArn: str,
+    FirewallName: str,
+    SubnetChangeProtection: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UpdateToken`: `str`
-- `FirewallArn`: `str`
-- `FirewallName`: `str`
-- `SubnetChangeProtection`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-apigateway-module"></a>
-
-# Examples for boto3 APIGateway module
+# Examples
 
 > [Index](../README.md) > [APIGateway](./README.md) > Examples
 
-- [Examples for boto3 APIGateway module](#examples-for-boto3-apigateway-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+    type annotations stubs module [mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[apigateway]` package installed.
 
-Write your `APIGateway` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `APIGateway` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type APIGatewayClient
-# and provides type checking and code completion
-client = session.client("apigateway")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetApiKeysPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_api_keys")
-for item in paginator.paginate(...):
-    # item has type ApiKeysTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("apigateway")  # (1)
+    result = client.create_api_key()  # (2)
+    ```
+
+    1. client: [APIGatewayClient](./client.md)
+    2. result: [:material-code-braces: ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("apigateway")  # (1)
+
+    paginator = client.get_paginator("get_api_keys")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [APIGatewayClient](./client.md)
+    2. paginator: [GetApiKeysPaginator](./paginators.md#getapikeyspaginator)
+    3. item: [:material-code-braces: ApiKeysTypeDef](./type_defs.md#apikeystypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[apigateway]` or a standalone `mypy_boto3_apigateway`
-package, you have to explicitly specify `client: APIGatewayClient` type
-annotation.
+With `boto3-stubs-lite[apigateway]`
+or a standalone `mypy_boto3_apigateway` package, you have to explicitly specify `client: APIGatewayClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_apigateway.client import APIGatewayClient
-from mypy_boto3_apigateway.paginator import GetApiKeysPaginator
-
-from mypy_boto3_apigateway.literals import PaginatorName
-
-from mypy_boto3_apigateway.type_defs import bool
-from mypy_boto3_apigateway.type_defs import ApiKeysTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: APIGatewayClient = session.client("apigateway")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_apigateway.client import APIGatewayClient
+    from mypy_boto3_apigateway.type_defs import ApiKeyResponseMetadataTypeDef
+    from mypy_boto3_apigateway.type_defs import CreateApiKeyRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_api_keys"
-paginator: GetApiKeysPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ApiKeysTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: APIGatewayClient = session.client("apigateway")
+
+    kwargs: CreateApiKeyRequestRequestTypeDef = {...}
+    result: ApiKeyResponseMetadataTypeDef = client.create_api_key(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_apigateway.client import APIGatewayClient
+    from mypy_boto3_apigateway.paginator import GetApiKeysPaginator
+    from mypy_boto3_apigateway.type_defs import ApiKeysTypeDef
+
+
+    session = Session()
+    client: APIGatewayClient = session.client("apigateway")
+
+    paginator: GetApiKeysPaginator = client.get_paginator("get_api_keys")
+    for item in paginator.paginate(...):
+        item: ApiKeysTypeDef
+        print(item)
+    ```
+
+
+
+

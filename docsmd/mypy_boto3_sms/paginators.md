@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-sms-module"></a>
-
-# Paginators for boto3 SMS module
+# Paginators
 
 > [Index](../README.md) > [SMS](./README.md) > Paginators
 
-Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module
-[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
+!!! note ""
 
-- [Paginators for boto3 SMS module](#paginators-for-boto3-sms-module)
-  - [GetConnectorsPaginator](#getconnectorspaginator)
-  - [GetReplicationJobsPaginator](#getreplicationjobspaginator)
-  - [GetReplicationRunsPaginator](#getreplicationrunspaginator)
-  - [GetServersPaginator](#getserverspaginator)
-  - [ListAppsPaginator](#listappspaginator)
-
-<a id="getconnectorspaginator"></a>
+    Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+    type annotations stubs module [mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ## GetConnectorsPaginator
 
-Type annotations for `boto3.client("sms").get_paginator("get_connectors")`.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator("get_connectors")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sms.paginator import GetConnectorsPaginator
@@ -33,27 +21,39 @@ def get_get_connectors_paginator() -> GetConnectorsPaginator:
     return Session().client("sms").get_paginator("get_connectors")
 ```
 
-Boto3 documentation:
-[SMS.Paginator.GetConnectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetConnectors)
 
-Arguments for `GetConnectorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetConnectorsPaginator.paginate` method.
 
-`GetConnectorsPaginator.paginate` returns
-`_PageIterator`\[[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetConnectorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getreplicationjobspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetConnectorsRequestGetConnectorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetConnectorsRequestGetConnectorsPaginateTypeDef](./type_defs.md#getconnectorsrequestgetconnectorspaginatetypedef) 
 ## GetReplicationJobsPaginator
 
-Type annotations for
-`boto3.client("sms").get_paginator("get_replication_jobs")`.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator("get_replication_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sms.paginator import GetReplicationJobsPaginator
@@ -62,28 +62,40 @@ def get_get_replication_jobs_paginator() -> GetReplicationJobsPaginator:
     return Session().client("sms").get_paginator("get_replication_jobs")
 ```
 
-Boto3 documentation:
-[SMS.Paginator.GetReplicationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationJobs)
 
-Arguments for `GetReplicationJobsPaginator.paginate` method:
+### paginate
 
-- `replicationJobId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetReplicationJobsPaginator.paginate` method.
 
-`GetReplicationJobsPaginator.paginate` returns
-`_PageIterator`\[[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    replicationJobId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetReplicationJobsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getreplicationrunspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetReplicationJobsRequestGetReplicationJobsPaginateTypeDef](./type_defs.md#getreplicationjobsrequestgetreplicationjobspaginatetypedef) 
 ## GetReplicationRunsPaginator
 
-Type annotations for
-`boto3.client("sms").get_paginator("get_replication_runs")`.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator("get_replication_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sms.paginator import GetReplicationRunsPaginator
@@ -92,27 +104,40 @@ def get_get_replication_runs_paginator() -> GetReplicationRunsPaginator:
     return Session().client("sms").get_paginator("get_replication_runs")
 ```
 
-Boto3 documentation:
-[SMS.Paginator.GetReplicationRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetReplicationRuns)
 
-Arguments for `GetReplicationRunsPaginator.paginate` method:
+### paginate
 
-- `replicationJobId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetReplicationRunsPaginator.paginate` method.
 
-`GetReplicationRunsPaginator.paginate` returns
-`_PageIterator`\[[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    replicationJobId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetReplicationRunsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getserverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetReplicationRunsRequestGetReplicationRunsPaginateTypeDef](./type_defs.md#getreplicationrunsrequestgetreplicationrunspaginatetypedef) 
 ## GetServersPaginator
 
-Type annotations for `boto3.client("sms").get_paginator("get_servers")`.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator("get_servers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sms.paginator import GetServersPaginator
@@ -121,28 +146,41 @@ def get_get_servers_paginator() -> GetServersPaginator:
     return Session().client("sms").get_paginator("get_servers")
 ```
 
-Boto3 documentation:
-[SMS.Paginator.GetServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.GetServers)
 
-Arguments for `GetServersPaginator.paginate` method:
+### paginate
 
-- `vmServerAddressList`:
-  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetServersPaginator.paginate` method.
 
-`GetServersPaginator.paginate` returns
-`_PageIterator`\[[GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    vmServerAddressList: Sequence[VmServerAddressTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetServersResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listappspaginator"></a>
+1. See [:material-code-braces: VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetServersRequestGetServersPaginateTypeDef = {  # (1)
+    "vmServerAddressList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetServersRequestGetServersPaginateTypeDef](./type_defs.md#getserversrequestgetserverspaginatetypedef) 
 ## ListAppsPaginator
 
-Type annotations for `boto3.client("sms").get_paginator("list_apps")`.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator("list_apps")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sms.paginator import ListAppsPaginator
@@ -151,14 +189,31 @@ def get_list_apps_paginator() -> ListAppsPaginator:
     return Session().client("sms").get_paginator("list_apps")
 ```
 
-Boto3 documentation:
-[SMS.Paginator.ListApps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Paginator.ListApps)
 
-Arguments for `ListAppsPaginator.paginate` method:
+### paginate
 
-- `appIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAppsPaginator.paginate` method.
 
-`ListAppsPaginator.paginate` returns
-`_PageIterator`\[[ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    appIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAppsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAppsRequestListAppsPaginateTypeDef = {  # (1)
+    "appIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAppsRequestListAppsPaginateTypeDef](./type_defs.md#listappsrequestlistappspaginatetypedef) 

@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-synthetics-module"></a>
-
-# Examples for boto3 Synthetics module
+# Examples
 
 > [Index](../README.md) > [Synthetics](./README.md) > Examples
 
-- [Examples for boto3 Synthetics module](#examples-for-boto3-synthetics-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+    type annotations stubs module [mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[synthetics]` package installed.
 
-Write your `Synthetics` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Synthetics` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SyntheticsClient
-# and provides type checking and code completion
-client = session.client("synthetics")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("synthetics")  # (1)
+    result = client.create_canary()  # (2)
+    ```
+
+    1. client: [SyntheticsClient](./client.md)
+    2. result: [:material-code-braces: CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[synthetics]` or a standalone `mypy_boto3_synthetics`
-package, you have to explicitly specify `client: SyntheticsClient` type
-annotation.
+With `boto3-stubs-lite[synthetics]`
+or a standalone `mypy_boto3_synthetics` package, you have to explicitly specify `client: SyntheticsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_synthetics.client import SyntheticsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_synthetics.client import SyntheticsClient
+    from mypy_boto3_synthetics.type_defs import CreateCanaryResponseTypeDef
+    from mypy_boto3_synthetics.type_defs import CreateCanaryRequestRequestTypeDef
 
 
-from mypy_boto3_synthetics.type_defs import bool
+    session = Session()
+
+    client: SyntheticsClient = session.client("synthetics")
+
+    kwargs: CreateCanaryRequestRequestTypeDef = {...}
+    result: CreateCanaryResponseTypeDef = client.create_canary(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: SyntheticsClient = session.client("synthetics")
 
-result: bool = client.can_paginate()
-```
+

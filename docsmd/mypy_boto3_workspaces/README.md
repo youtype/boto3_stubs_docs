@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-workspaces-module"></a>
-
-# Type annotations for boto3 WorkSpaces module
+#  WorkSpaces module
 
 > [Index](../README.md) > WorkSpaces
 
-Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module
-[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+!!! note ""
 
-- [Type annotations for boto3 WorkSpaces module](#type-annotations-for-boto3-workspaces-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WorkSpacesClient](#workspacesclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+    type annotations stubs module [mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WorkSpaces`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[workspaces]'
 python -m pip install mypy-boto3-workspaces
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,125 +42,37 @@ python -m pip install mypy-boto3-workspaces
 python -m pip uninstall -y mypy-boto3-workspaces
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="workspacesclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WorkSpacesClient
 
-Type annotations for `boto3.client("workspaces")` as
-[WorkSpacesClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("workspaces")` as [WorkSpacesClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_workspaces.client import WorkSpacesClient
+
+def get_client() -> WorkSpacesClient:
+    return Session().cleint("workspaces")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_connection_alias](./client.md#associate_connection_alias)
-- [associate_ip_groups](./client.md#associate_ip_groups)
-- [authorize_ip_rules](./client.md#authorize_ip_rules)
-- [can_paginate](./client.md#can_paginate)
-- [copy_workspace_image](./client.md#copy_workspace_image)
-- [create_connect_client_add_in](./client.md#create_connect_client_add_in)
-- [create_connection_alias](./client.md#create_connection_alias)
-- [create_ip_group](./client.md#create_ip_group)
-- [create_tags](./client.md#create_tags)
-- [create_updated_workspace_image](./client.md#create_updated_workspace_image)
-- [create_workspace_bundle](./client.md#create_workspace_bundle)
-- [create_workspaces](./client.md#create_workspaces)
-- [delete_connect_client_add_in](./client.md#delete_connect_client_add_in)
-- [delete_connection_alias](./client.md#delete_connection_alias)
-- [delete_ip_group](./client.md#delete_ip_group)
-- [delete_tags](./client.md#delete_tags)
-- [delete_workspace_bundle](./client.md#delete_workspace_bundle)
-- [delete_workspace_image](./client.md#delete_workspace_image)
-- [deregister_workspace_directory](./client.md#deregister_workspace_directory)
-- [describe_account](./client.md#describe_account)
-- [describe_account_modifications](./client.md#describe_account_modifications)
-- [describe_client_properties](./client.md#describe_client_properties)
-- [describe_connect_client_add_ins](./client.md#describe_connect_client_add_ins)
-- [describe_connection_alias_permissions](./client.md#describe_connection_alias_permissions)
-- [describe_connection_aliases](./client.md#describe_connection_aliases)
-- [describe_ip_groups](./client.md#describe_ip_groups)
-- [describe_tags](./client.md#describe_tags)
-- [describe_workspace_bundles](./client.md#describe_workspace_bundles)
-- [describe_workspace_directories](./client.md#describe_workspace_directories)
-- [describe_workspace_image_permissions](./client.md#describe_workspace_image_permissions)
-- [describe_workspace_images](./client.md#describe_workspace_images)
-- [describe_workspace_snapshots](./client.md#describe_workspace_snapshots)
-- [describe_workspaces](./client.md#describe_workspaces)
-- [describe_workspaces_connection_status](./client.md#describe_workspaces_connection_status)
-- [disassociate_connection_alias](./client.md#disassociate_connection_alias)
-- [disassociate_ip_groups](./client.md#disassociate_ip_groups)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [import_workspace_image](./client.md#import_workspace_image)
-- [list_available_management_cidr_ranges](./client.md#list_available_management_cidr_ranges)
-- [migrate_workspace](./client.md#migrate_workspace)
-- [modify_account](./client.md#modify_account)
-- [modify_client_properties](./client.md#modify_client_properties)
-- [modify_selfservice_permissions](./client.md#modify_selfservice_permissions)
-- [modify_workspace_access_properties](./client.md#modify_workspace_access_properties)
-- [modify_workspace_creation_properties](./client.md#modify_workspace_creation_properties)
-- [modify_workspace_properties](./client.md#modify_workspace_properties)
-- [modify_workspace_state](./client.md#modify_workspace_state)
-- [reboot_workspaces](./client.md#reboot_workspaces)
-- [rebuild_workspaces](./client.md#rebuild_workspaces)
-- [register_workspace_directory](./client.md#register_workspace_directory)
-- [restore_workspace](./client.md#restore_workspace)
-- [revoke_ip_rules](./client.md#revoke_ip_rules)
-- [start_workspaces](./client.md#start_workspaces)
-- [stop_workspaces](./client.md#stop_workspaces)
-- [terminate_workspaces](./client.md#terminate_workspaces)
-- [update_connect_client_add_in](./client.md#update_connect_client_add_in)
-- [update_connection_alias_permission](./client.md#update_connection_alias_permission)
-- [update_rules_of_ip_group](./client.md#update_rules_of_ip_group)
-- [update_workspace_bundle](./client.md#update_workspace_bundle)
-- [update_workspace_image_permission](./client.md#update_workspace_image_permission)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-WorkSpacesClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- InvalidParameterValuesException
-- InvalidResourceStateException
-- OperationInProgressException
-- OperationNotSupportedException
-- ResourceAlreadyExistsException
-- ResourceAssociatedException
-- ResourceCreationFailedException
-- ResourceLimitExceededException
-- ResourceNotFoundException
-- ResourceUnavailableException
-- UnsupportedNetworkConfigurationException
-- UnsupportedWorkspaceConfigurationException
-- WorkspacesDefaultRoleNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("workspaces").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("workspaces").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginator, ...
+from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginator
+
+def get_describe_account_modifications_paginator() -> DescribeAccountModificationsPaginator:
+    return Session().client("workspaces").get_paginator("describe_account_modifications"))
 ```
 
 - [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
@@ -194,16 +84,23 @@ from mypy_boto3_workspaces.paginator import DescribeAccountModificationsPaginato
 - [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
 - [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workspaces.literals import AccessPropertyValueType
 
-```python
-from mypy_boto3_workspaces.literals import AccessPropertyValueType, ...
+def get_value() -> AccessPropertyValueType:
+    return "ALLOW"
 ```
 
 - [AccessPropertyValueType](./literals.md#accesspropertyvaluetype)
@@ -241,18 +138,22 @@ from mypy_boto3_workspaces.literals import AccessPropertyValueType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef
 
-```python
-from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef, ...
+def get_value() -> AccountModificationTypeDef:
+    return {
+        "ModificationState": ...,
+    }
 ```
 
 - [AccountModificationTypeDef](./type_defs.md#accountmodificationtypedef)
@@ -290,6 +191,7 @@ from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef, ...
 - [DeleteWorkspaceBundleRequestRequestTypeDef](./type_defs.md#deleteworkspacebundlerequestrequesttypedef)
 - [DeleteWorkspaceImageRequestRequestTypeDef](./type_defs.md#deleteworkspaceimagerequestrequesttypedef)
 - [DeregisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequestrequesttypedef)
+- [DescribeAccountModificationsRequestDescribeAccountModificationsPaginateTypeDef](./type_defs.md#describeaccountmodificationsrequestdescribeaccountmodificationspaginatetypedef)
 - [DescribeAccountModificationsRequestRequestTypeDef](./type_defs.md#describeaccountmodificationsrequestrequesttypedef)
 - [DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef)
 - [DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef)
@@ -301,22 +203,28 @@ from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef, ...
 - [DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef)
 - [DescribeConnectionAliasesRequestRequestTypeDef](./type_defs.md#describeconnectionaliasesrequestrequesttypedef)
 - [DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef)
+- [DescribeIpGroupsRequestDescribeIpGroupsPaginateTypeDef](./type_defs.md#describeipgroupsrequestdescribeipgroupspaginatetypedef)
 - [DescribeIpGroupsRequestRequestTypeDef](./type_defs.md#describeipgroupsrequestrequesttypedef)
 - [DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef)
 - [DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef)
 - [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)
+- [DescribeWorkspaceBundlesRequestDescribeWorkspaceBundlesPaginateTypeDef](./type_defs.md#describeworkspacebundlesrequestdescribeworkspacebundlespaginatetypedef)
 - [DescribeWorkspaceBundlesRequestRequestTypeDef](./type_defs.md#describeworkspacebundlesrequestrequesttypedef)
 - [DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef)
+- [DescribeWorkspaceDirectoriesRequestDescribeWorkspaceDirectoriesPaginateTypeDef](./type_defs.md#describeworkspacedirectoriesrequestdescribeworkspacedirectoriespaginatetypedef)
 - [DescribeWorkspaceDirectoriesRequestRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequestrequesttypedef)
 - [DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef)
 - [DescribeWorkspaceImagePermissionsRequestRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequestrequesttypedef)
 - [DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef)
+- [DescribeWorkspaceImagesRequestDescribeWorkspaceImagesPaginateTypeDef](./type_defs.md#describeworkspaceimagesrequestdescribeworkspaceimagespaginatetypedef)
 - [DescribeWorkspaceImagesRequestRequestTypeDef](./type_defs.md#describeworkspaceimagesrequestrequesttypedef)
 - [DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef)
 - [DescribeWorkspaceSnapshotsRequestRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequestrequesttypedef)
 - [DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef)
+- [DescribeWorkspacesConnectionStatusRequestDescribeWorkspacesConnectionStatusPaginateTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestdescribeworkspacesconnectionstatuspaginatetypedef)
 - [DescribeWorkspacesConnectionStatusRequestRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestrequesttypedef)
 - [DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef)
+- [DescribeWorkspacesRequestDescribeWorkspacesPaginateTypeDef](./type_defs.md#describeworkspacesrequestdescribeworkspacespaginatetypedef)
 - [DescribeWorkspacesRequestRequestTypeDef](./type_defs.md#describeworkspacesrequestrequesttypedef)
 - [DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef)
 - [DisassociateConnectionAliasRequestRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequestrequesttypedef)
@@ -327,6 +235,7 @@ from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef, ...
 - [ImportWorkspaceImageRequestRequestTypeDef](./type_defs.md#importworkspaceimagerequestrequesttypedef)
 - [ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef)
 - [IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)
+- [ListAvailableManagementCidrRangesRequestListAvailableManagementCidrRangesPaginateTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestlistavailablemanagementcidrrangespaginatetypedef)
 - [ListAvailableManagementCidrRangesRequestRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestrequesttypedef)
 - [ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef)
 - [MigrateWorkspaceRequestRequestTypeDef](./type_defs.md#migrateworkspacerequestrequesttypedef)
@@ -381,3 +290,4 @@ from mypy_boto3_workspaces.type_defs import AccountModificationTypeDef, ...
 - [WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)
 - [WorkspaceTypeDef](./type_defs.md#workspacetypedef)
 - [WorkspacesIpGroupTypeDef](./type_defs.md#workspacesipgrouptypedef)
+

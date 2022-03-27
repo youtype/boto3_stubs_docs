@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-kinesisanalyticsv2-module"></a>
-
-# Examples for boto3 KinesisAnalyticsV2 module
+# Examples
 
 > [Index](../README.md) > [KinesisAnalyticsV2](./README.md) > Examples
 
-- [Examples for boto3 KinesisAnalyticsV2 module](#examples-for-boto3-kinesisanalyticsv2-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
+    type annotations stubs module [mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[kinesisanalyticsv2]` package installed.
 
-Write your `KinesisAnalyticsV2` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `KinesisAnalyticsV2` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type KinesisAnalyticsV2Client
-# and provides type checking and code completion
-client = session.client("kinesisanalyticsv2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddApplicationCloudWatchLoggingOptionResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_application_cloud_watch_logging_option()
 
-# paginator has type ListApplicationSnapshotsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_application_snapshots")
-for item in paginator.paginate(...):
-    # item has type ListApplicationSnapshotsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("kinesisanalyticsv2")  # (1)
+    result = client.add_application_cloud_watch_logging_option()  # (2)
+    ```
+
+    1. client: [KinesisAnalyticsV2Client](./client.md)
+    2. result: [:material-code-braces: AddApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("kinesisanalyticsv2")  # (1)
+
+    paginator = client.get_paginator("list_application_snapshots")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [KinesisAnalyticsV2Client](./client.md)
+    2. paginator: [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
+    3. item: [:material-code-braces: ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[kinesisanalyticsv2]` or a standalone
-`mypy_boto3_kinesisanalyticsv2` package, you have to explicitly specify
-`client: KinesisAnalyticsV2Client` type annotation.
+With `boto3-stubs-lite[kinesisanalyticsv2]`
+or a standalone `mypy_boto3_kinesisanalyticsv2` package, you have to explicitly specify `client: KinesisAnalyticsV2Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
-from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator
-
-from mypy_boto3_kinesisanalyticsv2.literals import PaginatorName
-
-from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseTypeDef
-from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: KinesisAnalyticsV2Client = session.client("kinesisanalyticsv2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AddApplicationCloudWatchLoggingOptionResponseTypeDef = client.add_application_cloud_watch_logging_option()
+    from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
+    from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionResponseTypeDef
+    from mypy_boto3_kinesisanalyticsv2.type_defs import AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_application_snapshots"
-paginator: ListApplicationSnapshotsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListApplicationSnapshotsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: KinesisAnalyticsV2Client = session.client("kinesisanalyticsv2")
+
+    kwargs: AddApplicationCloudWatchLoggingOptionRequestRequestTypeDef = {...}
+    result: AddApplicationCloudWatchLoggingOptionResponseTypeDef = client.add_application_cloud_watch_logging_option(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
+    from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator
+    from mypy_boto3_kinesisanalyticsv2.type_defs import ListApplicationSnapshotsResponseTypeDef
+
+
+    session = Session()
+    client: KinesisAnalyticsV2Client = session.client("kinesisanalyticsv2")
+
+    paginator: ListApplicationSnapshotsPaginator = client.get_paginator("list_application_snapshots")
+    for item in paginator.paginate(...):
+        item: ListApplicationSnapshotsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,91 +1,18 @@
-<a id="rekognitionclient-for-boto3-rekognition-module"></a>
-
-# RekognitionClient for boto3 Rekognition module
+# RekognitionClient
 
 > [Index](../README.md) > [Rekognition](./README.md) > RekognitionClient
 
-Auto-generated documentation for
-[Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
-type annotations stubs module
-[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+!!! note ""
 
-- [RekognitionClient for boto3 Rekognition module](#rekognitionclient-for-boto3-rekognition-module)
-  - [RekognitionClient](#rekognitionclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [compare_faces](#compare_faces)
-    - [create_collection](#create_collection)
-    - [create_dataset](#create_dataset)
-    - [create_project](#create_project)
-    - [create_project_version](#create_project_version)
-    - [create_stream_processor](#create_stream_processor)
-    - [delete_collection](#delete_collection)
-    - [delete_dataset](#delete_dataset)
-    - [delete_faces](#delete_faces)
-    - [delete_project](#delete_project)
-    - [delete_project_version](#delete_project_version)
-    - [delete_stream_processor](#delete_stream_processor)
-    - [describe_collection](#describe_collection)
-    - [describe_dataset](#describe_dataset)
-    - [describe_project_versions](#describe_project_versions)
-    - [describe_projects](#describe_projects)
-    - [describe_stream_processor](#describe_stream_processor)
-    - [detect_custom_labels](#detect_custom_labels)
-    - [detect_faces](#detect_faces)
-    - [detect_labels](#detect_labels)
-    - [detect_moderation_labels](#detect_moderation_labels)
-    - [detect_protective_equipment](#detect_protective_equipment)
-    - [detect_text](#detect_text)
-    - [distribute_dataset_entries](#distribute_dataset_entries)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_celebrity_info](#get_celebrity_info)
-    - [get_celebrity_recognition](#get_celebrity_recognition)
-    - [get_content_moderation](#get_content_moderation)
-    - [get_face_detection](#get_face_detection)
-    - [get_face_search](#get_face_search)
-    - [get_label_detection](#get_label_detection)
-    - [get_person_tracking](#get_person_tracking)
-    - [get_segment_detection](#get_segment_detection)
-    - [get_text_detection](#get_text_detection)
-    - [index_faces](#index_faces)
-    - [list_collections](#list_collections)
-    - [list_dataset_entries](#list_dataset_entries)
-    - [list_dataset_labels](#list_dataset_labels)
-    - [list_faces](#list_faces)
-    - [list_stream_processors](#list_stream_processors)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [recognize_celebrities](#recognize_celebrities)
-    - [search_faces](#search_faces)
-    - [search_faces_by_image](#search_faces_by_image)
-    - [start_celebrity_recognition](#start_celebrity_recognition)
-    - [start_content_moderation](#start_content_moderation)
-    - [start_face_detection](#start_face_detection)
-    - [start_face_search](#start_face_search)
-    - [start_label_detection](#start_label_detection)
-    - [start_person_tracking](#start_person_tracking)
-    - [start_project_version](#start_project_version)
-    - [start_segment_detection](#start_segment_detection)
-    - [start_stream_processor](#start_stream_processor)
-    - [start_text_detection](#start_text_detection)
-    - [stop_project_version](#stop_project_version)
-    - [stop_stream_processor](#stop_stream_processor)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_dataset_entries](#update_dataset_entries)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="rekognitionclient"></a>
+    Auto-generated documentation for [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
+    type annotations stubs module [mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 ## RekognitionClient
 
-Type annotations for `boto3.client("rekognition")`
+Type annotations and code completion for `#!python boto3.client("rekognition")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_rekognition.client import RekognitionClient
 
@@ -93,1527 +20,1992 @@ def get_rekognition_client() -> RekognitionClient:
     return Session().client("rekognition")
 ```
 
-Boto3 documentation:
-[Rekognition.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("rekognition").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("rekognition")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.HumanLoopQuotaExceededException,
+    client.IdempotentParameterMismatchException,
+    client.ImageTooLargeException,
+    client.InternalServerError,
+    client.InvalidImageFormatException,
+    client.InvalidPaginationTokenException,
+    client.InvalidParameterException,
+    client.InvalidS3ObjectException,
+    client.LimitExceededException,
+    client.ProvisionedThroughputExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceNotReadyException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.VideoTooLargeException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_rekognition.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.HumanLoopQuotaExceededException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.ImageTooLargeException`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidImageFormatException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidS3ObjectException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ProvisionedThroughputExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceNotReadyException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.VideoTooLargeException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RekognitionClient exceptions.
-
-Type annotations for `boto3.client("rekognition").exceptions` method.
-
-Boto3 documentation:
-[Rekognition.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("rekognition").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate)
 
-Boto3 documentation:
-[Rekognition.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="compare\_faces"></a>
-
-### compare_faces
+### compare\_faces
 
 Compares a face in the *source* input image with each of the 100 largest faces
 detected in the *target* input image.
 
-Type annotations for `boto3.client("rekognition").compare_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").compare_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
 
-Boto3 documentation:
-[Rekognition.Client.compare_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.compare_faces)
+```python title="Method definition"
+def compare_faces(
+    self,
+    *,
+    SourceImage: ImageTypeDef,  # (1)
+    TargetImage: ImageTypeDef,  # (1)
+    SimilarityThreshold: float = ...,
+    QualityFilter: QualityFilterType = ...,  # (3)
+) -> CompareFacesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CompareFacesRequestRequestTypeDef](./type_defs.md#comparefacesrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+3. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
+4. See [:material-code-braces: CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `TargetImage`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `SimilarityThreshold`: `float`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
+```python title="Usage example with kwargs"
+kwargs: CompareFacesRequestRequestTypeDef = {  # (1)
+    "SourceImage": ...,
+    "TargetImage": ...,
+}
 
-Returns
-[CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef).
+parent.compare_faces(**kwargs)
+```
 
-<a id="create\_collection"></a>
+1. See [:material-code-braces: CompareFacesRequestRequestTypeDef](./type_defs.md#comparefacesrequestrequesttypedef) 
 
-### create_collection
+### create\_collection
 
 Creates a collection in an AWS Region.
 
-Type annotations for `boto3.client("rekognition").create_collection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").create_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
 
-Boto3 documentation:
-[Rekognition.Client.create_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_collection)
+```python title="Method definition"
+def create_collection(
+    self,
+    *,
+    CollectionId: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateCollectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCollectionRequestRequestTypeDef](./type_defs.md#createcollectionrequestrequesttypedef).
+1. See [:material-code-braces: CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCollectionRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
 
-Returns
-[CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
+parent.create_collection(**kwargs)
+```
 
-<a id="create\_dataset"></a>
+1. See [:material-code-braces: CreateCollectionRequestRequestTypeDef](./type_defs.md#createcollectionrequestrequesttypedef) 
 
-### create_dataset
+### create\_dataset
 
 Creates a new Amazon Rekognition Custom Labels dataset.
 
-Type annotations for `boto3.client("rekognition").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_dataset)
 
-Boto3 documentation:
-[Rekognition.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    DatasetType: DatasetTypeType,  # (1)
+    ProjectArn: str,
+    DatasetSource: DatasetSourceTypeDef = ...,  # (2)
+) -> CreateDatasetResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-braces: DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef) 
+3. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype) *(required)*
-- `ProjectArn`: `str` *(required)*
-- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetType": ...,
+    "ProjectArn": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates a new Amazon Rekognition Custom Labels project.
 
-Type annotations for `boto3.client("rekognition").create_project` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
 
-Boto3 documentation:
-[Rekognition.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    ProjectName: str,
+) -> CreateProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns
-[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="create\_project\_version"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### create_project_version
+### create\_project\_version
 
 Creates a new version of a model and begins training.
 
-Type annotations for `boto3.client("rekognition").create_project_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").create_project_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
 
-Boto3 documentation:
-[Rekognition.Client.create_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_project_version)
+```python title="Method definition"
+def create_project_version(
+    self,
+    *,
+    ProjectArn: str,
+    VersionName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    TrainingData: TrainingDataTypeDef = ...,  # (2)
+    TestingData: TestingDataTypeDef = ...,  # (3)
+    Tags: Mapping[str, str] = ...,
+    KmsKeyId: str = ...,
+) -> CreateProjectVersionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectVersionRequestRequestTypeDef](./type_defs.md#createprojectversionrequestrequesttypedef).
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+2. See [:material-code-braces: TrainingDataTypeDef](./type_defs.md#trainingdatatypedef) 
+3. See [:material-code-braces: TestingDataTypeDef](./type_defs.md#testingdatatypedef) 
+4. See [:material-code-braces: CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectArn`: `str` *(required)*
-- `VersionName`: `str` *(required)*
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-  *(required)*
-- `TrainingData`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
-- `TestingData`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `KmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateProjectVersionRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+    "VersionName": ...,
+    "OutputConfig": ...,
+}
 
-Returns
-[CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef).
+parent.create_project_version(**kwargs)
+```
 
-<a id="create\_stream\_processor"></a>
+1. See [:material-code-braces: CreateProjectVersionRequestRequestTypeDef](./type_defs.md#createprojectversionrequestrequesttypedef) 
 
-### create_stream_processor
+### create\_stream\_processor
 
 Creates an Amazon Rekognition stream processor that you can use to detect and
 recognize faces in a streaming video.
 
-Type annotations for `boto3.client("rekognition").create_stream_processor`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").create_stream_processor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
 
-Boto3 documentation:
-[Rekognition.Client.create_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.create_stream_processor)
+```python title="Method definition"
+def create_stream_processor(
+    self,
+    *,
+    Input: StreamProcessorInputTypeDef,  # (1)
+    Output: StreamProcessorOutputTypeDef,  # (2)
+    Name: str,
+    Settings: StreamProcessorSettingsTypeDef,  # (3)
+    RoleArn: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateStreamProcessorResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamProcessorRequestRequestTypeDef](./type_defs.md#createstreamprocessorrequestrequesttypedef).
+1. See [:material-code-braces: StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef) 
+2. See [:material-code-braces: StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef) 
+3. See [:material-code-braces: StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef) 
+4. See [:material-code-braces: CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Input`:
-  [StreamProcessorInputTypeDef](./type_defs.md#streamprocessorinputtypedef)
-  *(required)*
-- `Output`:
-  [StreamProcessorOutputTypeDef](./type_defs.md#streamprocessoroutputtypedef)
-  *(required)*
-- `Name`: `str` *(required)*
-- `Settings`:
-  [StreamProcessorSettingsTypeDef](./type_defs.md#streamprocessorsettingstypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamProcessorRequestRequestTypeDef = {  # (1)
+    "Input": ...,
+    "Output": ...,
+    "Name": ...,
+    "Settings": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
+parent.create_stream_processor(**kwargs)
+```
 
-<a id="delete\_collection"></a>
+1. See [:material-code-braces: CreateStreamProcessorRequestRequestTypeDef](./type_defs.md#createstreamprocessorrequestrequesttypedef) 
 
-### delete_collection
+### delete\_collection
 
 Deletes the specified collection.
 
-Type annotations for `boto3.client("rekognition").delete_collection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
 
-Boto3 documentation:
-[Rekognition.Client.delete_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_collection)
+```python title="Method definition"
+def delete_collection(
+    self,
+    *,
+    CollectionId: str,
+) -> DeleteCollectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCollectionRequestRequestTypeDef](./type_defs.md#deletecollectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCollectionRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
 
-Returns
-[DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
+parent.delete_collection(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: DeleteCollectionRequestRequestTypeDef](./type_defs.md#deletecollectionrequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
 Deletes an existing Amazon Rekognition Custom Labels dataset.
 
-Type annotations for `boto3.client("rekognition").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_dataset)
 
-Boto3 documentation:
-[Rekognition.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    DatasetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dataset(**kwargs)
+```
 
-<a id="delete\_faces"></a>
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### delete_faces
+### delete\_faces
 
 Deletes faces from a collection.
 
-Type annotations for `boto3.client("rekognition").delete_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
 
-Boto3 documentation:
-[Rekognition.Client.delete_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_faces)
+```python title="Method definition"
+def delete_faces(
+    self,
+    *,
+    CollectionId: str,
+    FaceIds: Sequence[str],
+) -> DeleteFacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFacesRequestRequestTypeDef](./type_defs.md#deletefacesrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `FaceIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFacesRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+    "FaceIds": ...,
+}
 
-Returns
-[DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
+parent.delete_faces(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeleteFacesRequestRequestTypeDef](./type_defs.md#deletefacesrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes an Amazon Rekognition Custom Labels project.
 
-Type annotations for `boto3.client("rekognition").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
 
-Boto3 documentation:
-[Rekognition.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    ProjectArn: str,
+) -> DeleteProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+}
 
-Returns
-[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+parent.delete_project(**kwargs)
+```
 
-<a id="delete\_project\_version"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### delete_project_version
+### delete\_project\_version
 
 Deletes an Amazon Rekognition Custom Labels model.
 
-Type annotations for `boto3.client("rekognition").delete_project_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_project_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
 
-Boto3 documentation:
-[Rekognition.Client.delete_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_project_version)
+```python title="Method definition"
+def delete_project_version(
+    self,
+    *,
+    ProjectVersionArn: str,
+) -> DeleteProjectVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectVersionRequestRequestTypeDef](./type_defs.md#deleteprojectversionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectVersionRequestRequestTypeDef = {  # (1)
+    "ProjectVersionArn": ...,
+}
 
-Returns
-[DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef).
+parent.delete_project_version(**kwargs)
+```
 
-<a id="delete\_stream\_processor"></a>
+1. See [:material-code-braces: DeleteProjectVersionRequestRequestTypeDef](./type_defs.md#deleteprojectversionrequestrequesttypedef) 
 
-### delete_stream_processor
+### delete\_stream\_processor
 
 Deletes the stream processor identified by `Name`.
 
-Type annotations for `boto3.client("rekognition").delete_stream_processor`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").delete_stream_processor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
 
-Boto3 documentation:
-[Rekognition.Client.delete_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.delete_stream_processor)
+```python title="Method definition"
+def delete_stream_processor(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamProcessorRequestRequestTypeDef](./type_defs.md#deletestreamprocessorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamProcessorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stream_processor(**kwargs)
+```
 
-<a id="describe\_collection"></a>
+1. See [:material-code-braces: DeleteStreamProcessorRequestRequestTypeDef](./type_defs.md#deletestreamprocessorrequestrequesttypedef) 
 
-### describe_collection
+### describe\_collection
 
 Describes the specified collection.
 
-Type annotations for `boto3.client("rekognition").describe_collection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").describe_collection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
 
-Boto3 documentation:
-[Rekognition.Client.describe_collection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_collection)
+```python title="Method definition"
+def describe_collection(
+    self,
+    *,
+    CollectionId: str,
+) -> DescribeCollectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCollectionRequestRequestTypeDef](./type_defs.md#describecollectionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCollectionRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
 
-Returns
-[DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
+parent.describe_collection(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DescribeCollectionRequestRequestTypeDef](./type_defs.md#describecollectionrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Describes an Amazon Rekognition Custom Labels dataset.
 
-Type annotations for `boto3.client("rekognition").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_dataset)
 
-Boto3 documentation:
-[Rekognition.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    DatasetArn: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_project\_versions"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_project_versions
+### describe\_project\_versions
 
 Lists and describes the versions of a model in an Amazon Rekognition Custom
 Labels project.
 
-Type annotations for `boto3.client("rekognition").describe_project_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").describe_project_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
 
-Boto3 documentation:
-[Rekognition.Client.describe_project_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_project_versions)
+```python title="Method definition"
+def describe_project_versions(
+    self,
+    *,
+    ProjectArn: str,
+    VersionNames: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeProjectVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectVersionsRequestRequestTypeDef](./type_defs.md#describeprojectversionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectArn`: `str` *(required)*
-- `VersionNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectVersionsRequestRequestTypeDef = {  # (1)
+    "ProjectArn": ...,
+}
 
-Returns
-[DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef).
+parent.describe_project_versions(**kwargs)
+```
 
-<a id="describe\_projects"></a>
+1. See [:material-code-braces: DescribeProjectVersionsRequestRequestTypeDef](./type_defs.md#describeprojectversionsrequestrequesttypedef) 
 
-### describe_projects
+### describe\_projects
 
 Gets information about your Amazon Rekognition Custom Labels projects.
 
-Type annotations for `boto3.client("rekognition").describe_projects` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").describe_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
 
-Boto3 documentation:
-[Rekognition.Client.describe_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_projects)
+```python title="Method definition"
+def describe_projects(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ProjectNames: Sequence[str] = ...,
+) -> DescribeProjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectsRequestRequestTypeDef](./type_defs.md#describeprojectsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ProjectNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
+parent.describe_projects(**kwargs)
+```
 
-<a id="describe\_stream\_processor"></a>
+1. See [:material-code-braces: DescribeProjectsRequestRequestTypeDef](./type_defs.md#describeprojectsrequestrequesttypedef) 
 
-### describe_stream_processor
+### describe\_stream\_processor
 
-Provides information about a stream processor created by CreateStreamProcessor.
+Provides information about a stream processor created by  CreateStreamProcessor.
 
-Type annotations for `boto3.client("rekognition").describe_stream_processor`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").describe_stream_processor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
 
-Boto3 documentation:
-[Rekognition.Client.describe_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.describe_stream_processor)
+```python title="Method definition"
+def describe_stream_processor(
+    self,
+    *,
+    Name: str,
+) -> DescribeStreamProcessorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamProcessorRequestRequestTypeDef](./type_defs.md#describestreamprocessorrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamProcessorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef).
+parent.describe_stream_processor(**kwargs)
+```
 
-<a id="detect\_custom\_labels"></a>
+1. See [:material-code-braces: DescribeStreamProcessorRequestRequestTypeDef](./type_defs.md#describestreamprocessorrequestrequesttypedef) 
 
-### detect_custom_labels
+### detect\_custom\_labels
 
 Detects custom labels in a supplied image by using an Amazon Rekognition Custom
 Labels model.
 
-Type annotations for `boto3.client("rekognition").detect_custom_labels` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_custom_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
 
-Boto3 documentation:
-[Rekognition.Client.detect_custom_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_custom_labels)
+```python title="Method definition"
+def detect_custom_labels(
+    self,
+    *,
+    ProjectVersionArn: str,
+    Image: ImageTypeDef,  # (1)
+    MaxResults: int = ...,
+    MinConfidence: float = ...,
+) -> DetectCustomLabelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DetectCustomLabelsRequestRequestTypeDef](./type_defs.md#detectcustomlabelsrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectVersionArn`: `str` *(required)*
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `MaxResults`: `int`
-- `MinConfidence`: `float`
+```python title="Usage example with kwargs"
+kwargs: DetectCustomLabelsRequestRequestTypeDef = {  # (1)
+    "ProjectVersionArn": ...,
+    "Image": ...,
+}
 
-Returns
-[DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef).
+parent.detect_custom_labels(**kwargs)
+```
 
-<a id="detect\_faces"></a>
+1. See [:material-code-braces: DetectCustomLabelsRequestRequestTypeDef](./type_defs.md#detectcustomlabelsrequestrequesttypedef) 
 
-### detect_faces
+### detect\_faces
 
 Detects faces within an image that is provided as input.
 
-Type annotations for `boto3.client("rekognition").detect_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
 
-Boto3 documentation:
-[Rekognition.Client.detect_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_faces)
+```python title="Method definition"
+def detect_faces(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+    Attributes: Sequence[AttributeType] = ...,  # (2)
+) -> DetectFacesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetectFacesRequestRequestTypeDef](./type_defs.md#detectfacesrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: AttributeType](./literals.md#attributetype) 
+3. See [:material-code-braces: DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
+```python title="Usage example with kwargs"
+kwargs: DetectFacesRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns
-[DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
+parent.detect_faces(**kwargs)
+```
 
-<a id="detect\_labels"></a>
+1. See [:material-code-braces: DetectFacesRequestRequestTypeDef](./type_defs.md#detectfacesrequestrequesttypedef) 
 
-### detect_labels
+### detect\_labels
 
 Detects instances of real-world entities within an image (JPEG or PNG) provided
 as input.
 
-Type annotations for `boto3.client("rekognition").detect_labels` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
 
-Boto3 documentation:
-[Rekognition.Client.detect_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_labels)
+```python title="Method definition"
+def detect_labels(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+    MaxLabels: int = ...,
+    MinConfidence: float = ...,
+) -> DetectLabelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DetectLabelsRequestRequestTypeDef](./type_defs.md#detectlabelsrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `MaxLabels`: `int`
-- `MinConfidence`: `float`
+```python title="Usage example with kwargs"
+kwargs: DetectLabelsRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns
-[DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef).
+parent.detect_labels(**kwargs)
+```
 
-<a id="detect\_moderation\_labels"></a>
+1. See [:material-code-braces: DetectLabelsRequestRequestTypeDef](./type_defs.md#detectlabelsrequestrequesttypedef) 
 
-### detect_moderation_labels
+### detect\_moderation\_labels
 
 Detects unsafe content in a specified JPEG or PNG format image.
 
-Type annotations for `boto3.client("rekognition").detect_moderation_labels`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_moderation_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
 
-Boto3 documentation:
-[Rekognition.Client.detect_moderation_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_moderation_labels)
+```python title="Method definition"
+def detect_moderation_labels(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+    MinConfidence: float = ...,
+    HumanLoopConfig: HumanLoopConfigTypeDef = ...,  # (2)
+) -> DetectModerationLabelsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetectModerationLabelsRequestRequestTypeDef](./type_defs.md#detectmoderationlabelsrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef) 
+3. See [:material-code-braces: DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `MinConfidence`: `float`
-- `HumanLoopConfig`:
-  [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: DetectModerationLabelsRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns
-[DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef).
+parent.detect_moderation_labels(**kwargs)
+```
 
-<a id="detect\_protective\_equipment"></a>
+1. See [:material-code-braces: DetectModerationLabelsRequestRequestTypeDef](./type_defs.md#detectmoderationlabelsrequestrequesttypedef) 
 
-### detect_protective_equipment
+### detect\_protective\_equipment
 
-Detects Personal Protective Equipment (PPE) worn by people detected in an
-image.
+Detects Personal Protective Equipment (PPE) worn by people detected in an image.
 
-Type annotations for `boto3.client("rekognition").detect_protective_equipment`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_protective_equipment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
 
-Boto3 documentation:
-[Rekognition.Client.detect_protective_equipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_protective_equipment)
+```python title="Method definition"
+def detect_protective_equipment(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+    SummarizationAttributes: ProtectiveEquipmentSummarizationAttributesTypeDef = ...,  # (2)
+) -> DetectProtectiveEquipmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetectProtectiveEquipmentRequestRequestTypeDef](./type_defs.md#detectprotectiveequipmentrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef) 
+3. See [:material-code-braces: DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `SummarizationAttributes`:
-  [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
+```python title="Usage example with kwargs"
+kwargs: DetectProtectiveEquipmentRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns
-[DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef).
+parent.detect_protective_equipment(**kwargs)
+```
 
-<a id="detect\_text"></a>
+1. See [:material-code-braces: DetectProtectiveEquipmentRequestRequestTypeDef](./type_defs.md#detectprotectiveequipmentrequestrequesttypedef) 
 
-### detect_text
+### detect\_text
 
 Detects text in the input image and converts it into machine-readable text.
 
-Type annotations for `boto3.client("rekognition").detect_text` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").detect_text` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
 
-Boto3 documentation:
-[Rekognition.Client.detect_text](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.detect_text)
+```python title="Method definition"
+def detect_text(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+    Filters: DetectTextFiltersTypeDef = ...,  # (2)
+) -> DetectTextResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DetectTextRequestRequestTypeDef](./type_defs.md#detecttextrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef) 
+3. See [:material-code-braces: DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `Filters`:
-  [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
+```python title="Usage example with kwargs"
+kwargs: DetectTextRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
+parent.detect_text(**kwargs)
+```
 
-<a id="distribute\_dataset\_entries"></a>
+1. See [:material-code-braces: DetectTextRequestRequestTypeDef](./type_defs.md#detecttextrequestrequesttypedef) 
 
-### distribute_dataset_entries
+### distribute\_dataset\_entries
 
 Distributes the entries (images) in a training dataset across the training
 dataset and the test dataset for a project.
 
-Type annotations for `boto3.client("rekognition").distribute_dataset_entries`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").distribute_dataset_entries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.distribute_dataset_entries)
 
-Boto3 documentation:
-[Rekognition.Client.distribute_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.distribute_dataset_entries)
+```python title="Method definition"
+def distribute_dataset_entries(
+    self,
+    *,
+    Datasets: Sequence[DistributeDatasetTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DistributeDatasetEntriesRequestRequestTypeDef](./type_defs.md#distributedatasetentriesrequestrequesttypedef).
+1. See [:material-code-braces: DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef) 
 
-Keyword-only arguments:
 
-- `Datasets`:
-  `Sequence`\[[DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DistributeDatasetEntriesRequestRequestTypeDef = {  # (1)
+    "Datasets": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.distribute_dataset_entries(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DistributeDatasetEntriesRequestRequestTypeDef](./type_defs.md#distributedatasetentriesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("rekognition").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Rekognition.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_celebrity\_info
 
-Returns `str`.
+Gets the name and additional information about a celebrity based on their Amazon
+Rekognition ID.
 
-<a id="get\_celebrity\_info"></a>
+Type annotations and code completion for `#!python boto3.client("rekognition").get_celebrity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
 
-### get_celebrity_info
+```python title="Method definition"
+def get_celebrity_info(
+    self,
+    *,
+    Id: str,
+) -> GetCelebrityInfoResponseTypeDef:  # (1)
+    ...
+```
 
-Gets the name and additional information about a celebrity based on their
-Amazon Rekognition ID.
+1. See [:material-code-braces: GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef) 
 
-Type annotations for `boto3.client("rekognition").get_celebrity_info` method.
 
-Boto3 documentation:
-[Rekognition.Client.get_celebrity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_info)
+```python title="Usage example with kwargs"
+kwargs: GetCelebrityInfoRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Arguments mapping described in
-[GetCelebrityInfoRequestRequestTypeDef](./type_defs.md#getcelebrityinforequestrequesttypedef).
+parent.get_celebrity_info(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetCelebrityInfoRequestRequestTypeDef](./type_defs.md#getcelebrityinforequestrequesttypedef) 
 
-- `Id`: `str` *(required)*
-
-Returns
-[GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef).
-
-<a id="get\_celebrity\_recognition"></a>
-
-### get_celebrity_recognition
+### get\_celebrity\_recognition
 
 Gets the celebrity recognition results for a Amazon Rekognition Video analysis
-started by StartCelebrityRecognition .
+started by  StartCelebrityRecognition .
 
-Type annotations for `boto3.client("rekognition").get_celebrity_recognition`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_celebrity_recognition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
 
-Boto3 documentation:
-[Rekognition.Client.get_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_celebrity_recognition)
+```python title="Method definition"
+def get_celebrity_recognition(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SortBy: CelebrityRecognitionSortByType = ...,  # (1)
+) -> GetCelebrityRecognitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#getcelebrityrecognitionrequestrequesttypedef).
+1. See [:material-code-brackets: CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype) 
+2. See [:material-code-braces: GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`:
-  [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
+```python title="Usage example with kwargs"
+kwargs: GetCelebrityRecognitionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef).
+parent.get_celebrity_recognition(**kwargs)
+```
 
-<a id="get\_content\_moderation"></a>
+1. See [:material-code-braces: GetCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#getcelebrityrecognitionrequestrequesttypedef) 
 
-### get_content_moderation
+### get\_content\_moderation
 
 Gets the inappropriate, unwanted, or offensive content analysis results for a
-Amazon Rekognition Video analysis started by StartContentModeration.
+Amazon Rekognition Video analysis started by  StartContentModeration.
 
-Type annotations for `boto3.client("rekognition").get_content_moderation`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_content_moderation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
 
-Boto3 documentation:
-[Rekognition.Client.get_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_content_moderation)
+```python title="Method definition"
+def get_content_moderation(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SortBy: ContentModerationSortByType = ...,  # (1)
+) -> GetContentModerationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetContentModerationRequestRequestTypeDef](./type_defs.md#getcontentmoderationrequestrequesttypedef).
+1. See [:material-code-brackets: ContentModerationSortByType](./literals.md#contentmoderationsortbytype) 
+2. See [:material-code-braces: GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`:
-  [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
+```python title="Usage example with kwargs"
+kwargs: GetContentModerationRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef).
+parent.get_content_moderation(**kwargs)
+```
 
-<a id="get\_face\_detection"></a>
+1. See [:material-code-braces: GetContentModerationRequestRequestTypeDef](./type_defs.md#getcontentmoderationrequestrequesttypedef) 
 
-### get_face_detection
+### get\_face\_detection
 
 Gets face detection results for a Amazon Rekognition Video analysis started by
 StartFaceDetection .
 
-Type annotations for `boto3.client("rekognition").get_face_detection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_face_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
 
-Boto3 documentation:
-[Rekognition.Client.get_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_detection)
+```python title="Method definition"
+def get_face_detection(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetFaceDetectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFaceDetectionRequestRequestTypeDef](./type_defs.md#getfacedetectionrequestrequesttypedef).
+1. See [:material-code-braces: GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFaceDetectionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef).
+parent.get_face_detection(**kwargs)
+```
 
-<a id="get\_face\_search"></a>
+1. See [:material-code-braces: GetFaceDetectionRequestRequestTypeDef](./type_defs.md#getfacedetectionrequestrequesttypedef) 
 
-### get_face_search
+### get\_face\_search
 
-Gets the face search results for Amazon Rekognition Video face search started
-by StartFaceSearch.
+Gets the face search results for Amazon Rekognition Video face search started by
+StartFaceSearch.
 
-Type annotations for `boto3.client("rekognition").get_face_search` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_face_search` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
 
-Boto3 documentation:
-[Rekognition.Client.get_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_face_search)
+```python title="Method definition"
+def get_face_search(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SortBy: FaceSearchSortByType = ...,  # (1)
+) -> GetFaceSearchResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetFaceSearchRequestRequestTypeDef](./type_defs.md#getfacesearchrequestrequesttypedef).
+1. See [:material-code-brackets: FaceSearchSortByType](./literals.md#facesearchsortbytype) 
+2. See [:material-code-braces: GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [FaceSearchSortByType](./literals.md#facesearchsortbytype)
+```python title="Usage example with kwargs"
+kwargs: GetFaceSearchRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef).
+parent.get_face_search(**kwargs)
+```
 
-<a id="get\_label\_detection"></a>
+1. See [:material-code-braces: GetFaceSearchRequestRequestTypeDef](./type_defs.md#getfacesearchrequestrequesttypedef) 
 
-### get_label_detection
+### get\_label\_detection
 
 Gets the label detection results of a Amazon Rekognition Video analysis started
-by StartLabelDetection .
+by  StartLabelDetection .
 
-Type annotations for `boto3.client("rekognition").get_label_detection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_label_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
 
-Boto3 documentation:
-[Rekognition.Client.get_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_label_detection)
+```python title="Method definition"
+def get_label_detection(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SortBy: LabelDetectionSortByType = ...,  # (1)
+) -> GetLabelDetectionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetLabelDetectionRequestRequestTypeDef](./type_defs.md#getlabeldetectionrequestrequesttypedef).
+1. See [:material-code-brackets: LabelDetectionSortByType](./literals.md#labeldetectionsortbytype) 
+2. See [:material-code-braces: GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
+```python title="Usage example with kwargs"
+kwargs: GetLabelDetectionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef).
+parent.get_label_detection(**kwargs)
+```
 
-<a id="get\_person\_tracking"></a>
+1. See [:material-code-braces: GetLabelDetectionRequestRequestTypeDef](./type_defs.md#getlabeldetectionrequestrequesttypedef) 
 
-### get_person_tracking
+### get\_person\_tracking
 
-Gets the path tracking results of a Amazon Rekognition Video analysis started
-by StartPersonTracking .
+Gets the path tracking results of a Amazon Rekognition Video analysis started by
+StartPersonTracking .
 
-Type annotations for `boto3.client("rekognition").get_person_tracking` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_person_tracking` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
 
-Boto3 documentation:
-[Rekognition.Client.get_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_person_tracking)
+```python title="Method definition"
+def get_person_tracking(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    SortBy: PersonTrackingSortByType = ...,  # (1)
+) -> GetPersonTrackingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetPersonTrackingRequestRequestTypeDef](./type_defs.md#getpersontrackingrequestrequesttypedef).
+1. See [:material-code-brackets: PersonTrackingSortByType](./literals.md#persontrackingsortbytype) 
+2. See [:material-code-braces: GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `SortBy`: [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
+```python title="Usage example with kwargs"
+kwargs: GetPersonTrackingRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef).
+parent.get_person_tracking(**kwargs)
+```
 
-<a id="get\_segment\_detection"></a>
+1. See [:material-code-braces: GetPersonTrackingRequestRequestTypeDef](./type_defs.md#getpersontrackingrequestrequesttypedef) 
 
-### get_segment_detection
+### get\_segment\_detection
 
 Gets the segment detection results of a Amazon Rekognition Video analysis
-started by StartSegmentDetection .
+started by  StartSegmentDetection .
 
-Type annotations for `boto3.client("rekognition").get_segment_detection`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_segment_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
 
-Boto3 documentation:
-[Rekognition.Client.get_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_segment_detection)
+```python title="Method definition"
+def get_segment_detection(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetSegmentDetectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentDetectionRequestRequestTypeDef](./type_defs.md#getsegmentdetectionrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSegmentDetectionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef).
+parent.get_segment_detection(**kwargs)
+```
 
-<a id="get\_text\_detection"></a>
+1. See [:material-code-braces: GetSegmentDetectionRequestRequestTypeDef](./type_defs.md#getsegmentdetectionrequestrequesttypedef) 
 
-### get_text_detection
+### get\_text\_detection
 
 Gets the text detection results of a Amazon Rekognition Video analysis started
-by StartTextDetection .
+by  StartTextDetection .
 
-Type annotations for `boto3.client("rekognition").get_text_detection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_text_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
 
-Boto3 documentation:
-[Rekognition.Client.get_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.get_text_detection)
+```python title="Method definition"
+def get_text_detection(
+    self,
+    *,
+    JobId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetTextDetectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTextDetectionRequestRequestTypeDef](./type_defs.md#gettextdetectionrequestrequesttypedef).
+1. See [:material-code-braces: GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTextDetectionRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef).
+parent.get_text_detection(**kwargs)
+```
 
-<a id="index\_faces"></a>
+1. See [:material-code-braces: GetTextDetectionRequestRequestTypeDef](./type_defs.md#gettextdetectionrequestrequesttypedef) 
 
-### index_faces
+### index\_faces
 
 Detects faces in the input image and adds them to the specified collection.
 
-Type annotations for `boto3.client("rekognition").index_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").index_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
 
-Boto3 documentation:
-[Rekognition.Client.index_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.index_faces)
+```python title="Method definition"
+def index_faces(
+    self,
+    *,
+    CollectionId: str,
+    Image: ImageTypeDef,  # (1)
+    ExternalImageId: str = ...,
+    DetectionAttributes: Sequence[AttributeType] = ...,  # (2)
+    MaxFaces: int = ...,
+    QualityFilter: QualityFilterType = ...,  # (3)
+) -> IndexFacesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[IndexFacesRequestRequestTypeDef](./type_defs.md#indexfacesrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: AttributeType](./literals.md#attributetype) 
+3. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
+4. See [:material-code-braces: IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `ExternalImageId`: `str`
-- `DetectionAttributes`:
-  `Sequence`\[[AttributeType](./literals.md#attributetype)\]
-- `MaxFaces`: `int`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
+```python title="Usage example with kwargs"
+kwargs: IndexFacesRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+    "Image": ...,
+}
 
-Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
+parent.index_faces(**kwargs)
+```
 
-<a id="list\_collections"></a>
+1. See [:material-code-braces: IndexFacesRequestRequestTypeDef](./type_defs.md#indexfacesrequestrequesttypedef) 
 
-### list_collections
+### list\_collections
 
 Returns list of collection IDs in your account.
 
-Type annotations for `boto3.client("rekognition").list_collections` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_collections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
 
-Boto3 documentation:
-[Rekognition.Client.list_collections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_collections)
+```python title="Method definition"
+def list_collections(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCollectionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCollectionsRequestRequestTypeDef](./type_defs.md#listcollectionsrequestrequesttypedef).
+1. See [:material-code-braces: ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCollectionsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
+parent.list_collections(**kwargs)
+```
 
-<a id="list\_dataset\_entries"></a>
+1. See [:material-code-braces: ListCollectionsRequestRequestTypeDef](./type_defs.md#listcollectionsrequestrequesttypedef) 
 
-### list_dataset_entries
+### list\_dataset\_entries
 
 Lists the entries (images) within a dataset.
 
-Type annotations for `boto3.client("rekognition").list_dataset_entries` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_dataset_entries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_entries)
 
-Boto3 documentation:
-[Rekognition.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_entries)
+```python title="Method definition"
+def list_dataset_entries(
+    self,
+    *,
+    DatasetArn: str,
+    ContainsLabels: Sequence[str] = ...,
+    Labeled: bool = ...,
+    SourceRefContains: str = ...,
+    HasErrors: bool = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetEntriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
-- `ContainsLabels`: `Sequence`\[`str`\]
-- `Labeled`: `bool`
-- `SourceRefContains`: `str`
-- `HasErrors`: `bool`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetEntriesRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-Returns
-[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
+parent.list_dataset_entries(**kwargs)
+```
 
-<a id="list\_dataset\_labels"></a>
+1. See [:material-code-braces: ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef) 
 
-### list_dataset_labels
+### list\_dataset\_labels
 
 Lists the labels in a dataset.
 
-Type annotations for `boto3.client("rekognition").list_dataset_labels` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_dataset_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_labels)
 
-Boto3 documentation:
-[Rekognition.Client.list_dataset_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_dataset_labels)
+```python title="Method definition"
+def list_dataset_labels(
+    self,
+    *,
+    DatasetArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetLabelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetLabelsRequestRequestTypeDef](./type_defs.md#listdatasetlabelsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetLabelsRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+}
 
-Returns
-[ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef).
+parent.list_dataset_labels(**kwargs)
+```
 
-<a id="list\_faces"></a>
+1. See [:material-code-braces: ListDatasetLabelsRequestRequestTypeDef](./type_defs.md#listdatasetlabelsrequestrequesttypedef) 
 
-### list_faces
+### list\_faces
 
 Returns metadata for faces in the specified collection.
 
-Type annotations for `boto3.client("rekognition").list_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
 
-Boto3 documentation:
-[Rekognition.Client.list_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_faces)
+```python title="Method definition"
+def list_faces(
+    self,
+    *,
+    CollectionId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFacesRequestRequestTypeDef](./type_defs.md#listfacesrequestrequesttypedef).
+1. See [:material-code-braces: ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFacesRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+}
 
-Returns [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef).
+parent.list_faces(**kwargs)
+```
 
-<a id="list\_stream\_processors"></a>
+1. See [:material-code-braces: ListFacesRequestRequestTypeDef](./type_defs.md#listfacesrequestrequesttypedef) 
 
-### list_stream_processors
+### list\_stream\_processors
 
 Gets a list of stream processors that you have created with
 CreateStreamProcessor .
 
-Type annotations for `boto3.client("rekognition").list_stream_processors`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_stream_processors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
 
-Boto3 documentation:
-[Rekognition.Client.list_stream_processors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_stream_processors)
+```python title="Method definition"
+def list_stream_processors(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListStreamProcessorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamProcessorsRequestRequestTypeDef](./type_defs.md#liststreamprocessorsrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListStreamProcessorsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef).
+parent.list_stream_processors(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStreamProcessorsRequestRequestTypeDef](./type_defs.md#liststreamprocessorsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-Returns a list of tags in an Amazon Rekognition collection, stream processor,
-or Custom Labels model.
+Returns a list of tags in an Amazon Rekognition collection, stream processor, or
+Custom Labels model.
 
-Type annotations for `boto3.client("rekognition").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Rekognition.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="recognize\_celebrities"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### recognize_celebrities
+### recognize\_celebrities
 
 Returns an array of celebrities recognized in the input image.
 
-Type annotations for `boto3.client("rekognition").recognize_celebrities`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").recognize_celebrities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
 
-Boto3 documentation:
-[Rekognition.Client.recognize_celebrities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.recognize_celebrities)
+```python title="Method definition"
+def recognize_celebrities(
+    self,
+    *,
+    Image: ImageTypeDef,  # (1)
+) -> RecognizeCelebritiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RecognizeCelebritiesRequestRequestTypeDef](./type_defs.md#recognizecelebritiesrequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-braces: RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: RecognizeCelebritiesRequestRequestTypeDef = {  # (1)
+    "Image": ...,
+}
 
-Returns
-[RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef).
+parent.recognize_celebrities(**kwargs)
+```
 
-<a id="search\_faces"></a>
+1. See [:material-code-braces: RecognizeCelebritiesRequestRequestTypeDef](./type_defs.md#recognizecelebritiesrequestrequesttypedef) 
 
-### search_faces
+### search\_faces
 
 For a given input face ID, searches for matching faces in the collection the
 face belongs to.
 
-Type annotations for `boto3.client("rekognition").search_faces` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").search_faces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
 
-Boto3 documentation:
-[Rekognition.Client.search_faces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces)
+```python title="Method definition"
+def search_faces(
+    self,
+    *,
+    CollectionId: str,
+    FaceId: str,
+    MaxFaces: int = ...,
+    FaceMatchThreshold: float = ...,
+) -> SearchFacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchFacesRequestRequestTypeDef](./type_defs.md#searchfacesrequestrequesttypedef).
+1. See [:material-code-braces: SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `FaceId`: `str` *(required)*
-- `MaxFaces`: `int`
-- `FaceMatchThreshold`: `float`
+```python title="Usage example with kwargs"
+kwargs: SearchFacesRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+    "FaceId": ...,
+}
 
-Returns
-[SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef).
+parent.search_faces(**kwargs)
+```
 
-<a id="search\_faces\_by\_image"></a>
+1. See [:material-code-braces: SearchFacesRequestRequestTypeDef](./type_defs.md#searchfacesrequestrequesttypedef) 
 
-### search_faces_by_image
+### search\_faces\_by\_image
 
 For a given input image, first detects the largest face in the image, and then
 searches the specified collection for matching faces.
 
-Type annotations for `boto3.client("rekognition").search_faces_by_image`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").search_faces_by_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
 
-Boto3 documentation:
-[Rekognition.Client.search_faces_by_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.search_faces_by_image)
+```python title="Method definition"
+def search_faces_by_image(
+    self,
+    *,
+    CollectionId: str,
+    Image: ImageTypeDef,  # (1)
+    MaxFaces: int = ...,
+    FaceMatchThreshold: float = ...,
+    QualityFilter: QualityFilterType = ...,  # (2)
+) -> SearchFacesByImageResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchFacesByImageRequestRequestTypeDef](./type_defs.md#searchfacesbyimagerequestrequesttypedef).
+1. See [:material-code-braces: ImageTypeDef](./type_defs.md#imagetypedef) 
+2. See [:material-code-brackets: QualityFilterType](./literals.md#qualityfiltertype) 
+3. See [:material-code-braces: SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CollectionId`: `str` *(required)*
-- `Image`: [ImageTypeDef](./type_defs.md#imagetypedef) *(required)*
-- `MaxFaces`: `int`
-- `FaceMatchThreshold`: `float`
-- `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
+```python title="Usage example with kwargs"
+kwargs: SearchFacesByImageRequestRequestTypeDef = {  # (1)
+    "CollectionId": ...,
+    "Image": ...,
+}
 
-Returns
-[SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef).
+parent.search_faces_by_image(**kwargs)
+```
 
-<a id="start\_celebrity\_recognition"></a>
+1. See [:material-code-braces: SearchFacesByImageRequestRequestTypeDef](./type_defs.md#searchfacesbyimagerequestrequesttypedef) 
 
-### start_celebrity_recognition
+### start\_celebrity\_recognition
 
 Starts asynchronous recognition of celebrities in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_celebrity_recognition`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_celebrity_recognition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
 
-Boto3 documentation:
-[Rekognition.Client.start_celebrity_recognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_celebrity_recognition)
+```python title="Method definition"
+def start_celebrity_recognition(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+) -> StartCelebrityRecognitionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#startcelebrityrecognitionrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartCelebrityRecognitionRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef).
+parent.start_celebrity_recognition(**kwargs)
+```
 
-<a id="start\_content\_moderation"></a>
+1. See [:material-code-braces: StartCelebrityRecognitionRequestRequestTypeDef](./type_defs.md#startcelebrityrecognitionrequestrequesttypedef) 
 
-### start_content_moderation
+### start\_content\_moderation
 
 Starts asynchronous detection of inappropriate, unwanted, or offensive content
 in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_content_moderation`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_content_moderation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
 
-Boto3 documentation:
-[Rekognition.Client.start_content_moderation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_content_moderation)
+```python title="Method definition"
+def start_content_moderation(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    MinConfidence: float = ...,
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+) -> StartContentModerationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartContentModerationRequestRequestTypeDef](./type_defs.md#startcontentmoderationrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `MinConfidence`: `float`
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartContentModerationRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef).
+parent.start_content_moderation(**kwargs)
+```
 
-<a id="start\_face\_detection"></a>
+1. See [:material-code-braces: StartContentModerationRequestRequestTypeDef](./type_defs.md#startcontentmoderationrequestrequesttypedef) 
 
-### start_face_detection
+### start\_face\_detection
 
 Starts asynchronous detection of faces in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_face_detection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_face_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
 
-Boto3 documentation:
-[Rekognition.Client.start_face_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_detection)
+```python title="Method definition"
+def start_face_detection(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    FaceAttributes: FaceAttributesType = ...,  # (3)
+    JobTag: str = ...,
+) -> StartFaceDetectionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartFaceDetectionRequestRequestTypeDef](./type_defs.md#startfacedetectionrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-brackets: FaceAttributesType](./literals.md#faceattributestype) 
+4. See [:material-code-braces: StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `FaceAttributes`: [FaceAttributesType](./literals.md#faceattributestype)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartFaceDetectionRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef).
+parent.start_face_detection(**kwargs)
+```
 
-<a id="start\_face\_search"></a>
+1. See [:material-code-braces: StartFaceDetectionRequestRequestTypeDef](./type_defs.md#startfacedetectionrequestrequesttypedef) 
 
-### start_face_search
+### start\_face\_search
 
-Starts the asynchronous search for faces in a collection that match the faces
-of persons detected in a stored video.
+Starts the asynchronous search for faces in a collection that match the faces of
+persons detected in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_face_search` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_face_search` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
 
-Boto3 documentation:
-[Rekognition.Client.start_face_search](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_face_search)
+```python title="Method definition"
+def start_face_search(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    CollectionId: str,
+    ClientRequestToken: str = ...,
+    FaceMatchThreshold: float = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+) -> StartFaceSearchResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartFaceSearchRequestRequestTypeDef](./type_defs.md#startfacesearchrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `CollectionId`: `str` *(required)*
-- `ClientRequestToken`: `str`
-- `FaceMatchThreshold`: `float`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartFaceSearchRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+    "CollectionId": ...,
+}
 
-Returns
-[StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef).
+parent.start_face_search(**kwargs)
+```
 
-<a id="start\_label\_detection"></a>
+1. See [:material-code-braces: StartFaceSearchRequestRequestTypeDef](./type_defs.md#startfacesearchrequestrequesttypedef) 
 
-### start_label_detection
+### start\_label\_detection
 
 Starts asynchronous detection of labels in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_label_detection`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_label_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
 
-Boto3 documentation:
-[Rekognition.Client.start_label_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_label_detection)
+```python title="Method definition"
+def start_label_detection(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    MinConfidence: float = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+) -> StartLabelDetectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartLabelDetectionRequestRequestTypeDef](./type_defs.md#startlabeldetectionrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `ClientRequestToken`: `str`
-- `MinConfidence`: `float`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartLabelDetectionRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef).
+parent.start_label_detection(**kwargs)
+```
 
-<a id="start\_person\_tracking"></a>
+1. See [:material-code-braces: StartLabelDetectionRequestRequestTypeDef](./type_defs.md#startlabeldetectionrequestrequesttypedef) 
 
-### start_person_tracking
+### start\_person\_tracking
 
 Starts the asynchronous tracking of a person's path in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_person_tracking`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_person_tracking` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
 
-Boto3 documentation:
-[Rekognition.Client.start_person_tracking](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_person_tracking)
+```python title="Method definition"
+def start_person_tracking(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+) -> StartPersonTrackingResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartPersonTrackingRequestRequestTypeDef](./type_defs.md#startpersontrackingrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartPersonTrackingRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef).
+parent.start_person_tracking(**kwargs)
+```
 
-<a id="start\_project\_version"></a>
+1. See [:material-code-braces: StartPersonTrackingRequestRequestTypeDef](./type_defs.md#startpersontrackingrequestrequesttypedef) 
 
-### start_project_version
+### start\_project\_version
 
 Starts the running of the version of a model.
 
-Type annotations for `boto3.client("rekognition").start_project_version`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_project_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
 
-Boto3 documentation:
-[Rekognition.Client.start_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_project_version)
+```python title="Method definition"
+def start_project_version(
+    self,
+    *,
+    ProjectVersionArn: str,
+    MinInferenceUnits: int,
+) -> StartProjectVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartProjectVersionRequestRequestTypeDef](./type_defs.md#startprojectversionrequestrequesttypedef).
+1. See [:material-code-braces: StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectVersionArn`: `str` *(required)*
-- `MinInferenceUnits`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartProjectVersionRequestRequestTypeDef = {  # (1)
+    "ProjectVersionArn": ...,
+    "MinInferenceUnits": ...,
+}
 
-Returns
-[StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef).
+parent.start_project_version(**kwargs)
+```
 
-<a id="start\_segment\_detection"></a>
+1. See [:material-code-braces: StartProjectVersionRequestRequestTypeDef](./type_defs.md#startprojectversionrequestrequesttypedef) 
 
-### start_segment_detection
+### start\_segment\_detection
 
 Starts asynchronous detection of segment detection in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_segment_detection`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_segment_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
 
-Boto3 documentation:
-[Rekognition.Client.start_segment_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_segment_detection)
+```python title="Method definition"
+def start_segment_detection(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    SegmentTypes: Sequence[SegmentTypeType],  # (2)
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (3)
+    JobTag: str = ...,
+    Filters: StartSegmentDetectionFiltersTypeDef = ...,  # (4)
+) -> StartSegmentDetectionResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[StartSegmentDetectionRequestRequestTypeDef](./type_defs.md#startsegmentdetectionrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-brackets: SegmentTypeType](./literals.md#segmenttypetype) 
+3. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+4. See [:material-code-braces: StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef) 
+5. See [:material-code-braces: StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `SegmentTypes`:
-  `Sequence`\[[SegmentTypeType](./literals.md#segmenttypetype)\] *(required)*
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-- `Filters`:
-  [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
+```python title="Usage example with kwargs"
+kwargs: StartSegmentDetectionRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+    "SegmentTypes": ...,
+}
 
-Returns
-[StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef).
+parent.start_segment_detection(**kwargs)
+```
 
-<a id="start\_stream\_processor"></a>
+1. See [:material-code-braces: StartSegmentDetectionRequestRequestTypeDef](./type_defs.md#startsegmentdetectionrequestrequesttypedef) 
 
-### start_stream_processor
+### start\_stream\_processor
 
 Starts processing a stream processor.
 
-Type annotations for `boto3.client("rekognition").start_stream_processor`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_stream_processor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
 
-Boto3 documentation:
-[Rekognition.Client.start_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_stream_processor)
+```python title="Method definition"
+def start_stream_processor(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartStreamProcessorRequestRequestTypeDef](./type_defs.md#startstreamprocessorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartStreamProcessorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_stream_processor(**kwargs)
+```
 
-<a id="start\_text\_detection"></a>
+1. See [:material-code-braces: StartStreamProcessorRequestRequestTypeDef](./type_defs.md#startstreamprocessorrequestrequesttypedef) 
 
-### start_text_detection
+### start\_text\_detection
 
 Starts asynchronous detection of text in a stored video.
 
-Type annotations for `boto3.client("rekognition").start_text_detection` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").start_text_detection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
 
-Boto3 documentation:
-[Rekognition.Client.start_text_detection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.start_text_detection)
+```python title="Method definition"
+def start_text_detection(
+    self,
+    *,
+    Video: VideoTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    NotificationChannel: NotificationChannelTypeDef = ...,  # (2)
+    JobTag: str = ...,
+    Filters: StartTextDetectionFiltersTypeDef = ...,  # (3)
+) -> StartTextDetectionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartTextDetectionRequestRequestTypeDef](./type_defs.md#starttextdetectionrequestrequesttypedef).
+1. See [:material-code-braces: VideoTypeDef](./type_defs.md#videotypedef) 
+2. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+3. See [:material-code-braces: StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef) 
+4. See [:material-code-braces: StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Video`: [VideoTypeDef](./type_defs.md#videotypedef) *(required)*
-- `ClientRequestToken`: `str`
-- `NotificationChannel`:
-  [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
-- `JobTag`: `str`
-- `Filters`:
-  [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
+```python title="Usage example with kwargs"
+kwargs: StartTextDetectionRequestRequestTypeDef = {  # (1)
+    "Video": ...,
+}
 
-Returns
-[StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef).
+parent.start_text_detection(**kwargs)
+```
 
-<a id="stop\_project\_version"></a>
+1. See [:material-code-braces: StartTextDetectionRequestRequestTypeDef](./type_defs.md#starttextdetectionrequestrequesttypedef) 
 
-### stop_project_version
+### stop\_project\_version
 
 Stops a running model.
 
-Type annotations for `boto3.client("rekognition").stop_project_version` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").stop_project_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
 
-Boto3 documentation:
-[Rekognition.Client.stop_project_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_project_version)
+```python title="Method definition"
+def stop_project_version(
+    self,
+    *,
+    ProjectVersionArn: str,
+) -> StopProjectVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopProjectVersionRequestRequestTypeDef](./type_defs.md#stopprojectversionrequestrequesttypedef).
+1. See [:material-code-braces: StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectVersionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopProjectVersionRequestRequestTypeDef = {  # (1)
+    "ProjectVersionArn": ...,
+}
 
-Returns
-[StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef).
+parent.stop_project_version(**kwargs)
+```
 
-<a id="stop\_stream\_processor"></a>
+1. See [:material-code-braces: StopProjectVersionRequestRequestTypeDef](./type_defs.md#stopprojectversionrequestrequesttypedef) 
 
-### stop_stream_processor
+### stop\_stream\_processor
 
-Stops a running stream processor that was created by CreateStreamProcessor .
+Stops a running stream processor that was created by  CreateStreamProcessor .
 
-Type annotations for `boto3.client("rekognition").stop_stream_processor`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").stop_stream_processor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
 
-Boto3 documentation:
-[Rekognition.Client.stop_stream_processor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.stop_stream_processor)
+```python title="Method definition"
+def stop_stream_processor(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopStreamProcessorRequestRequestTypeDef](./type_defs.md#stopstreamprocessorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopStreamProcessorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_stream_processor(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopStreamProcessorRequestRequestTypeDef](./type_defs.md#stopstreamprocessorrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more key-value tags to an Amazon Rekognition collection, stream
 processor, or Custom Labels model.
 
-Type annotations for `boto3.client("rekognition").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
 
-Boto3 documentation:
-[Rekognition.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from an Amazon Rekognition collection, stream
 processor, or Custom Labels model.
 
-Type annotations for `boto3.client("rekognition").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rekognition").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
 
-Boto3 documentation:
-[Rekognition.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_dataset\_entries"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_dataset_entries
+### update\_dataset\_entries
 
 Adds or updates one or more entries (images) in a dataset.
 
-Type annotations for `boto3.client("rekognition").update_dataset_entries`
-method.
+Type annotations and code completion for `#!python boto3.client("rekognition").update_dataset_entries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.update_dataset_entries)
 
-Boto3 documentation:
-[Rekognition.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition.Client.update_dataset_entries)
+```python title="Method definition"
+def update_dataset_entries(
+    self,
+    *,
+    DatasetArn: str,
+    Changes: DatasetChangesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef).
+1. See [:material-code-braces: DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef) 
 
-Keyword-only arguments:
 
-- `DatasetArn`: `str` *(required)*
-- `Changes`: [DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasetEntriesRequestRequestTypeDef = {  # (1)
+    "DatasetArn": ...,
+    "Changes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_dataset_entries(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("rekognition").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_project_versions")` ->
-  [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
-- `client.get_paginator("describe_projects")` ->
-  [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
-- `client.get_paginator("list_collections")` ->
-  [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
-- `client.get_paginator("list_dataset_entries")` ->
-  [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
-- `client.get_paginator("list_dataset_labels")` ->
-  [ListDatasetLabelsPaginator](./paginators.md#listdatasetlabelspaginator)
-- `client.get_paginator("list_faces")` ->
-  [ListFacesPaginator](./paginators.md#listfacespaginator)
-- `client.get_paginator("list_stream_processors")` ->
-  [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
+- `client.get_paginator("describe_project_versions")` -> [DescribeProjectVersionsPaginator](./paginators.md#describeprojectversionspaginator)
+- `client.get_paginator("describe_projects")` -> [DescribeProjectsPaginator](./paginators.md#describeprojectspaginator)
+- `client.get_paginator("list_collections")` -> [ListCollectionsPaginator](./paginators.md#listcollectionspaginator)
+- `client.get_paginator("list_dataset_entries")` -> [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+- `client.get_paginator("list_dataset_labels")` -> [ListDatasetLabelsPaginator](./paginators.md#listdatasetlabelspaginator)
+- `client.get_paginator("list_faces")` -> [ListFacesPaginator](./paginators.md#listfacespaginator)
+- `client.get_paginator("list_stream_processors")` -> [ListStreamProcessorsPaginator](./paginators.md#liststreamprocessorspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("rekognition").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("rekognition").get_waiter` method with overloads.
 
-- `client.get_waiter("project_version_running")` ->
-  [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
-- `client.get_waiter("project_version_training_completed")` ->
-  [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
+- `client.get_waiter("project_version_running")` -> [ProjectVersionRunningWaiter](./waiters.md#projectversionrunningwaiter)
+- `client.get_waiter("project_version_training_completed")` -> [ProjectVersionTrainingCompletedWaiter](./waiters.md#projectversiontrainingcompletedwaiter)
+

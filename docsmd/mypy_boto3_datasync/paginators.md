@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-datasync-module"></a>
-
-# Paginators for boto3 DataSync module
+# Paginators
 
 > [Index](../README.md) > [DataSync](./README.md) > Paginators
 
-Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module
-[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
+!!! note ""
 
-- [Paginators for boto3 DataSync module](#paginators-for-boto3-datasync-module)
-  - [ListAgentsPaginator](#listagentspaginator)
-  - [ListLocationsPaginator](#listlocationspaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [ListTaskExecutionsPaginator](#listtaskexecutionspaginator)
-  - [ListTasksPaginator](#listtaskspaginator)
-
-<a id="listagentspaginator"></a>
+    Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+    type annotations stubs module [mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 ## ListAgentsPaginator
 
-Type annotations for `boto3.client("datasync").get_paginator("list_agents")`.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator("list_agents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datasync.paginator import ListAgentsPaginator
@@ -33,27 +21,39 @@ def get_list_agents_paginator() -> ListAgentsPaginator:
     return Session().client("datasync").get_paginator("list_agents")
 ```
 
-Boto3 documentation:
-[DataSync.Paginator.ListAgents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListAgents)
 
-Arguments for `ListAgentsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAgentsPaginator.paginate` method.
 
-`ListAgentsPaginator.paginate` returns
-`_PageIterator`\[[ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAgentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlocationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAgentsRequestListAgentsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAgentsRequestListAgentsPaginateTypeDef](./type_defs.md#listagentsrequestlistagentspaginatetypedef) 
 ## ListLocationsPaginator
 
-Type annotations for
-`boto3.client("datasync").get_paginator("list_locations")`.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator("list_locations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datasync.paginator import ListLocationsPaginator
@@ -62,29 +62,41 @@ def get_list_locations_paginator() -> ListLocationsPaginator:
     return Session().client("datasync").get_paginator("list_locations")
 ```
 
-Boto3 documentation:
-[DataSync.Paginator.ListLocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListLocations)
 
-Arguments for `ListLocationsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLocationsPaginator.paginate` method.
 
-`ListLocationsPaginator.paginate` returns
-`_PageIterator`\[[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[LocationFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListLocationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: LocationFilterTypeDef](./type_defs.md#locationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLocationsRequestListLocationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLocationsRequestListLocationsPaginateTypeDef](./type_defs.md#listlocationsrequestlistlocationspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("datasync").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datasync.paginator import ListTagsForResourcePaginator
@@ -93,28 +105,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("datasync").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[DataSync.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtaskexecutionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 
 ## ListTaskExecutionsPaginator
 
-Type annotations for
-`boto3.client("datasync").get_paginator("list_task_executions")`.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator("list_task_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datasync.paginator import ListTaskExecutionsPaginator
@@ -123,27 +147,40 @@ def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
     return Session().client("datasync").get_paginator("list_task_executions")
 ```
 
-Boto3 documentation:
-[DataSync.Paginator.ListTaskExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTaskExecutions)
 
-Arguments for `ListTaskExecutionsPaginator.paginate` method:
+### paginate
 
-- `TaskArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTaskExecutionsPaginator.paginate` method.
 
-`ListTaskExecutionsPaginator.paginate` returns
-`_PageIterator`\[[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TaskArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTaskExecutionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtaskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTaskExecutionsRequestListTaskExecutionsPaginateTypeDef = {  # (1)
+    "TaskArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTaskExecutionsRequestListTaskExecutionsPaginateTypeDef](./type_defs.md#listtaskexecutionsrequestlisttaskexecutionspaginatetypedef) 
 ## ListTasksPaginator
 
-Type annotations for `boto3.client("datasync").get_paginator("list_tasks")`.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator("list_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datasync.paginator import ListTasksPaginator
@@ -152,15 +189,32 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("datasync").get_paginator("list_tasks")
 ```
 
-Boto3 documentation:
-[DataSync.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Paginator.ListTasks)
 
-Arguments for `ListTasksPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTasksPaginator.paginate` method.
 
-`ListTasksPaginator.paginate` returns
-`_PageIterator`\[[ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[TaskFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListTasksResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: TaskFilterTypeDef](./type_defs.md#taskfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTasksRequestListTasksPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTasksRequestListTasksPaginateTypeDef](./type_defs.md#listtasksrequestlisttaskspaginatetypedef) 

@@ -1,1740 +1,2143 @@
-<a id="typed-dictionaries-for-boto3-fms-module"></a>
-
-# Typed dictionaries for boto3 FMS module
+# Typed dictionaries
 
 > [Index](../README.md) > [FMS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
-type annotations stubs module
-[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
+!!! note ""
 
-- [Typed dictionaries for boto3 FMS module](#typed-dictionaries-for-boto3-fms-module)
-  - [ActionTargetTypeDef](#actiontargettypedef)
-  - [AppTypeDef](#apptypedef)
-  - [AppsListDataSummaryTypeDef](#appslistdatasummarytypedef)
-  - [AppsListDataTypeDef](#appslistdatatypedef)
-  - [AssociateAdminAccountRequestRequestTypeDef](#associateadminaccountrequestrequesttypedef)
-  - [AwsEc2InstanceViolationTypeDef](#awsec2instanceviolationtypedef)
-  - [AwsEc2NetworkInterfaceViolationTypeDef](#awsec2networkinterfaceviolationtypedef)
-  - [AwsVPCSecurityGroupViolationTypeDef](#awsvpcsecuritygroupviolationtypedef)
-  - [ComplianceViolatorTypeDef](#complianceviolatortypedef)
-  - [DeleteAppsListRequestRequestTypeDef](#deleteappslistrequestrequesttypedef)
-  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
-  - [DeleteProtocolsListRequestRequestTypeDef](#deleteprotocolslistrequestrequesttypedef)
-  - [DnsDuplicateRuleGroupViolationTypeDef](#dnsduplicaterulegroupviolationtypedef)
-  - [DnsRuleGroupLimitExceededViolationTypeDef](#dnsrulegrouplimitexceededviolationtypedef)
-  - [DnsRuleGroupPriorityConflictViolationTypeDef](#dnsrulegrouppriorityconflictviolationtypedef)
-  - [EC2AssociateRouteTableActionTypeDef](#ec2associateroutetableactiontypedef)
-  - [EC2CopyRouteTableActionTypeDef](#ec2copyroutetableactiontypedef)
-  - [EC2CreateRouteActionTypeDef](#ec2createrouteactiontypedef)
-  - [EC2CreateRouteTableActionTypeDef](#ec2createroutetableactiontypedef)
-  - [EC2DeleteRouteActionTypeDef](#ec2deleterouteactiontypedef)
-  - [EC2ReplaceRouteActionTypeDef](#ec2replacerouteactiontypedef)
-  - [EC2ReplaceRouteTableAssociationActionTypeDef](#ec2replaceroutetableassociationactiontypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [ExpectedRouteTypeDef](#expectedroutetypedef)
-  - [FMSPolicyUpdateFirewallCreationConfigActionTypeDef](#fmspolicyupdatefirewallcreationconfigactiontypedef)
-  - [FirewallSubnetIsOutOfScopeViolationTypeDef](#firewallsubnetisoutofscopeviolationtypedef)
-  - [GetAdminAccountResponseTypeDef](#getadminaccountresponsetypedef)
-  - [GetAppsListRequestRequestTypeDef](#getappslistrequestrequesttypedef)
-  - [GetAppsListResponseTypeDef](#getappslistresponsetypedef)
-  - [GetComplianceDetailRequestRequestTypeDef](#getcompliancedetailrequestrequesttypedef)
-  - [GetComplianceDetailResponseTypeDef](#getcompliancedetailresponsetypedef)
-  - [GetNotificationChannelResponseTypeDef](#getnotificationchannelresponsetypedef)
-  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [GetProtectionStatusRequestRequestTypeDef](#getprotectionstatusrequestrequesttypedef)
-  - [GetProtectionStatusResponseTypeDef](#getprotectionstatusresponsetypedef)
-  - [GetProtocolsListRequestRequestTypeDef](#getprotocolslistrequestrequesttypedef)
-  - [GetProtocolsListResponseTypeDef](#getprotocolslistresponsetypedef)
-  - [GetViolationDetailsRequestRequestTypeDef](#getviolationdetailsrequestrequesttypedef)
-  - [GetViolationDetailsResponseTypeDef](#getviolationdetailsresponsetypedef)
-  - [ListAppsListsRequestRequestTypeDef](#listappslistsrequestrequesttypedef)
-  - [ListAppsListsResponseTypeDef](#listappslistsresponsetypedef)
-  - [ListComplianceStatusRequestRequestTypeDef](#listcompliancestatusrequestrequesttypedef)
-  - [ListComplianceStatusResponseTypeDef](#listcompliancestatusresponsetypedef)
-  - [ListMemberAccountsRequestRequestTypeDef](#listmemberaccountsrequestrequesttypedef)
-  - [ListMemberAccountsResponseTypeDef](#listmemberaccountsresponsetypedef)
-  - [ListPoliciesRequestRequestTypeDef](#listpoliciesrequestrequesttypedef)
-  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
-  - [ListProtocolsListsRequestRequestTypeDef](#listprotocolslistsrequestrequesttypedef)
-  - [ListProtocolsListsResponseTypeDef](#listprotocolslistsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](#networkfirewallblackholeroutedetectedviolationtypedef)
-  - [NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](#networkfirewallinternettrafficnotinspectedviolationtypedef)
-  - [NetworkFirewallInvalidRouteConfigurationViolationTypeDef](#networkfirewallinvalidrouteconfigurationviolationtypedef)
-  - [NetworkFirewallMissingExpectedRTViolationTypeDef](#networkfirewallmissingexpectedrtviolationtypedef)
-  - [NetworkFirewallMissingExpectedRoutesViolationTypeDef](#networkfirewallmissingexpectedroutesviolationtypedef)
-  - [NetworkFirewallMissingFirewallViolationTypeDef](#networkfirewallmissingfirewallviolationtypedef)
-  - [NetworkFirewallMissingSubnetViolationTypeDef](#networkfirewallmissingsubnetviolationtypedef)
-  - [NetworkFirewallPolicyDescriptionTypeDef](#networkfirewallpolicydescriptiontypedef)
-  - [NetworkFirewallPolicyModifiedViolationTypeDef](#networkfirewallpolicymodifiedviolationtypedef)
-  - [NetworkFirewallPolicyTypeDef](#networkfirewallpolicytypedef)
-  - [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](#networkfirewallunexpectedfirewallroutesviolationtypedef)
-  - [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](#networkfirewallunexpectedgatewayroutesviolationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartialMatchTypeDef](#partialmatchtypedef)
-  - [PolicyComplianceDetailTypeDef](#policycompliancedetailtypedef)
-  - [PolicyComplianceStatusTypeDef](#policycompliancestatustypedef)
-  - [PolicyOptionTypeDef](#policyoptiontypedef)
-  - [PolicySummaryTypeDef](#policysummarytypedef)
-  - [PolicyTypeDef](#policytypedef)
-  - [PossibleRemediationActionTypeDef](#possibleremediationactiontypedef)
-  - [PossibleRemediationActionsTypeDef](#possibleremediationactionstypedef)
-  - [ProtocolsListDataSummaryTypeDef](#protocolslistdatasummarytypedef)
-  - [ProtocolsListDataTypeDef](#protocolslistdatatypedef)
-  - [PutAppsListRequestRequestTypeDef](#putappslistrequestrequesttypedef)
-  - [PutAppsListResponseTypeDef](#putappslistresponsetypedef)
-  - [PutNotificationChannelRequestRequestTypeDef](#putnotificationchannelrequestrequesttypedef)
-  - [PutPolicyRequestRequestTypeDef](#putpolicyrequestrequesttypedef)
-  - [PutPolicyResponseTypeDef](#putpolicyresponsetypedef)
-  - [PutProtocolsListRequestRequestTypeDef](#putprotocolslistrequestrequesttypedef)
-  - [PutProtocolsListResponseTypeDef](#putprotocolslistresponsetypedef)
-  - [RemediationActionTypeDef](#remediationactiontypedef)
-  - [RemediationActionWithOrderTypeDef](#remediationactionwithordertypedef)
-  - [ResourceTagTypeDef](#resourcetagtypedef)
-  - [ResourceViolationTypeDef](#resourceviolationtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteHasOutOfScopeEndpointViolationTypeDef](#routehasoutofscopeendpointviolationtypedef)
-  - [RouteTypeDef](#routetypedef)
-  - [SecurityGroupRemediationActionTypeDef](#securitygroupremediationactiontypedef)
-  - [SecurityGroupRuleDescriptionTypeDef](#securitygroupruledescriptiontypedef)
-  - [SecurityServicePolicyDataTypeDef](#securityservicepolicydatatypedef)
-  - [StatefulRuleGroupTypeDef](#statefulrulegrouptypedef)
-  - [StatelessRuleGroupTypeDef](#statelessrulegrouptypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [ViolationDetailTypeDef](#violationdetailtypedef)
-
-<a id="actiontargettypedef"></a>
+    Auto-generated documentation for [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
+    type annotations stubs module [mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ## ActionTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ActionTargetTypeDef
+
+def get_value() -> ActionTargetTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceId`: `str`
-- `Description`: `str`
-
-<a id="apptypedef"></a>
+```python title="Definition"
+class ActionTargetTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## AppTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AppTypeDef
+
+def get_value() -> AppTypeDef:
+    return {
+        "AppName": ...,
+        "Protocol": ...,
+        "Port": ...,
+    }
 ```
 
-Required fields:
-
-- `AppName`: `str`
-- `Protocol`: `str`
-- `Port`: `int`
-
-<a id="appslistdatasummarytypedef"></a>
+```python title="Definition"
+class AppTypeDef(TypedDict):
+    AppName: str,
+    Protocol: str,
+    Port: int,
+```
 
 ## AppsListDataSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AppsListDataSummaryTypeDef
+
+def get_value() -> AppsListDataSummaryTypeDef:
+    return {
+        "ListArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppsListDataSummaryTypeDef(TypedDict):
+    ListArn: NotRequired[str],
+    ListId: NotRequired[str],
+    ListName: NotRequired[str],
+    AppsList: NotRequired[List[AppTypeDef]],  # (1)
+```
 
-- `ListArn`: `str`
-- `ListId`: `str`
-- `ListName`: `str`
-- `AppsList`: `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]
-
-<a id="appslistdatatypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
 ## AppsListDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AppsListDataTypeDef
+
+def get_value() -> AppsListDataTypeDef:
+    return {
+        "ListName": ...,
+        "AppsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppsListDataTypeDef(TypedDict):
+    ListName: str,
+    AppsList: List[AppTypeDef],  # (1)
+    ListId: NotRequired[str],
+    ListUpdateToken: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    LastUpdateTime: NotRequired[datetime],
+    PreviousAppsList: NotRequired[Dict[str, List[AppTypeDef]]],  # (2)
+```
 
-- `ListName`: `str`
-- `AppsList`: `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]
-
-Optional fields:
-
-- `ListId`: `str`
-- `ListUpdateToken`: `str`
-- `CreateTime`: `datetime`
-- `LastUpdateTime`: `datetime`
-- `PreviousAppsList`: `Dict`\[`str`,
-  `List`\[[AppTypeDef](./type_defs.md#apptypedef)\]\]
-
-<a id="associateadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
 ## AssociateAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AssociateAdminAccountRequestRequestTypeDef
+
+def get_value() -> AssociateAdminAccountRequestRequestTypeDef:
+    return {
+        "AdminAccount": ...,
+    }
 ```
 
-Required fields:
-
-- `AdminAccount`: `str`
-
-<a id="awsec2instanceviolationtypedef"></a>
+```python title="Definition"
+class AssociateAdminAccountRequestRequestTypeDef(TypedDict):
+    AdminAccount: str,
+```
 
 ## AwsEc2InstanceViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AwsEc2InstanceViolationTypeDef
+
+def get_value() -> AwsEc2InstanceViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AwsEc2InstanceViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    AwsEc2NetworkInterfaceViolations: NotRequired[List[AwsEc2NetworkInterfaceViolationTypeDef]],  # (1)
+```
 
-- `ViolationTarget`: `str`
-- `AwsEc2NetworkInterfaceViolations`:
-  `List`\[[AwsEc2NetworkInterfaceViolationTypeDef](./type_defs.md#awsec2networkinterfaceviolationtypedef)\]
-
-<a id="awsec2networkinterfaceviolationtypedef"></a>
-
+1. See [:material-code-braces: AwsEc2NetworkInterfaceViolationTypeDef](./type_defs.md#awsec2networkinterfaceviolationtypedef) 
 ## AwsEc2NetworkInterfaceViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AwsEc2NetworkInterfaceViolationTypeDef
+
+def get_value() -> AwsEc2NetworkInterfaceViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `ViolatingSecurityGroups`: `List`\[`str`\]
-
-<a id="awsvpcsecuritygroupviolationtypedef"></a>
+```python title="Definition"
+class AwsEc2NetworkInterfaceViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ViolatingSecurityGroups: NotRequired[List[str]],
+```
 
 ## AwsVPCSecurityGroupViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import AwsVPCSecurityGroupViolationTypeDef
+
+def get_value() -> AwsVPCSecurityGroupViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AwsVPCSecurityGroupViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ViolationTargetDescription: NotRequired[str],
+    PartialMatches: NotRequired[List[PartialMatchTypeDef]],  # (1)
+    PossibleSecurityGroupRemediationActions: NotRequired[List[SecurityGroupRemediationActionTypeDef]],  # (2)
+```
 
-- `ViolationTarget`: `str`
-- `ViolationTargetDescription`: `str`
-- `PartialMatches`:
-  `List`\[[PartialMatchTypeDef](./type_defs.md#partialmatchtypedef)\]
-- `PossibleSecurityGroupRemediationActions`:
-  `List`\[[SecurityGroupRemediationActionTypeDef](./type_defs.md#securitygroupremediationactiontypedef)\]
-
-<a id="complianceviolatortypedef"></a>
-
+1. See [:material-code-braces: PartialMatchTypeDef](./type_defs.md#partialmatchtypedef) 
+2. See [:material-code-braces: SecurityGroupRemediationActionTypeDef](./type_defs.md#securitygroupremediationactiontypedef) 
 ## ComplianceViolatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ComplianceViolatorTypeDef
+
+def get_value() -> ComplianceViolatorTypeDef:
+    return {
+        "ResourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceViolatorTypeDef(TypedDict):
+    ResourceId: NotRequired[str],
+    ViolationReason: NotRequired[ViolationReasonType],  # (1)
+    ResourceType: NotRequired[str],
+    Metadata: NotRequired[Dict[str, str]],
+```
 
-- `ResourceId`: `str`
-- `ViolationReason`: [ViolationReasonType](./literals.md#violationreasontype)
-- `ResourceType`: `str`
-- `Metadata`: `Dict`\[`str`, `str`\]
-
-<a id="deleteappslistrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ViolationReasonType](./literals.md#violationreasontype) 
 ## DeleteAppsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DeleteAppsListRequestRequestTypeDef
+
+def get_value() -> DeleteAppsListRequestRequestTypeDef:
+    return {
+        "ListId": ...,
+    }
 ```
 
-Required fields:
-
-- `ListId`: `str`
-
-<a id="deletepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAppsListRequestRequestTypeDef(TypedDict):
+    ListId: str,
+```
 
 ## DeletePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DeletePolicyRequestRequestTypeDef
+
+def get_value() -> DeletePolicyRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-Optional fields:
-
-- `DeleteAllPolicyResources`: `bool`
-
-<a id="deleteprotocolslistrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePolicyRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    DeleteAllPolicyResources: NotRequired[bool],
+```
 
 ## DeleteProtocolsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DeleteProtocolsListRequestRequestTypeDef
+
+def get_value() -> DeleteProtocolsListRequestRequestTypeDef:
+    return {
+        "ListId": ...,
+    }
 ```
 
-Required fields:
-
-- `ListId`: `str`
-
-<a id="dnsduplicaterulegroupviolationtypedef"></a>
+```python title="Definition"
+class DeleteProtocolsListRequestRequestTypeDef(TypedDict):
+    ListId: str,
+```
 
 ## DnsDuplicateRuleGroupViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DnsDuplicateRuleGroupViolationTypeDef
+
+def get_value() -> DnsDuplicateRuleGroupViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `ViolationTargetDescription`: `str`
-
-<a id="dnsrulegrouplimitexceededviolationtypedef"></a>
+```python title="Definition"
+class DnsDuplicateRuleGroupViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ViolationTargetDescription: NotRequired[str],
+```
 
 ## DnsRuleGroupLimitExceededViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DnsRuleGroupLimitExceededViolationTypeDef
+
+def get_value() -> DnsRuleGroupLimitExceededViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `ViolationTargetDescription`: `str`
-- `NumberOfRuleGroupsAlreadyAssociated`: `int`
-
-<a id="dnsrulegrouppriorityconflictviolationtypedef"></a>
+```python title="Definition"
+class DnsRuleGroupLimitExceededViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ViolationTargetDescription: NotRequired[str],
+    NumberOfRuleGroupsAlreadyAssociated: NotRequired[int],
+```
 
 ## DnsRuleGroupPriorityConflictViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import DnsRuleGroupPriorityConflictViolationTypeDef
+
+def get_value() -> DnsRuleGroupPriorityConflictViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `ViolationTargetDescription`: `str`
-- `ConflictingPriority`: `int`
-- `ConflictingPolicyId`: `str`
-- `UnavailablePriorities`: `List`\[`int`\]
-
-<a id="ec2associateroutetableactiontypedef"></a>
+```python title="Definition"
+class DnsRuleGroupPriorityConflictViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ViolationTargetDescription: NotRequired[str],
+    ConflictingPriority: NotRequired[int],
+    ConflictingPolicyId: NotRequired[str],
+    UnavailablePriorities: NotRequired[List[int]],
+```
 
 ## EC2AssociateRouteTableActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2AssociateRouteTableActionTypeDef
+
+def get_value() -> EC2AssociateRouteTableActionTypeDef:
+    return {
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2AssociateRouteTableActionTypeDef(TypedDict):
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+    SubnetId: NotRequired[ActionTargetTypeDef],  # (1)
+    GatewayId: NotRequired[ActionTargetTypeDef],  # (1)
+```
 
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `SubnetId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-<a id="ec2copyroutetableactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+3. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2CopyRouteTableActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2CopyRouteTableActionTypeDef
+
+def get_value() -> EC2CopyRouteTableActionTypeDef:
+    return {
+        "VpcId": ...,
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2CopyRouteTableActionTypeDef(TypedDict):
+    VpcId: ActionTargetTypeDef,  # (1)
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+```
 
-- `VpcId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="ec2createrouteactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2CreateRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2CreateRouteActionTypeDef
+
+def get_value() -> EC2CreateRouteActionTypeDef:
+    return {
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2CreateRouteActionTypeDef(TypedDict):
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+    DestinationCidrBlock: NotRequired[str],
+    DestinationPrefixListId: NotRequired[str],
+    DestinationIpv6CidrBlock: NotRequired[str],
+    VpcEndpointId: NotRequired[ActionTargetTypeDef],  # (1)
+    GatewayId: NotRequired[ActionTargetTypeDef],  # (1)
+```
 
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `DestinationCidrBlock`: `str`
-- `DestinationPrefixListId`: `str`
-- `DestinationIpv6CidrBlock`: `str`
-- `VpcEndpointId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-<a id="ec2createroutetableactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+3. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2CreateRouteTableActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2CreateRouteTableActionTypeDef
+
+def get_value() -> EC2CreateRouteTableActionTypeDef:
+    return {
+        "VpcId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2CreateRouteTableActionTypeDef(TypedDict):
+    VpcId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+```
 
-- `VpcId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="ec2deleterouteactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2DeleteRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2DeleteRouteActionTypeDef
+
+def get_value() -> EC2DeleteRouteActionTypeDef:
+    return {
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2DeleteRouteActionTypeDef(TypedDict):
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+    DestinationCidrBlock: NotRequired[str],
+    DestinationPrefixListId: NotRequired[str],
+    DestinationIpv6CidrBlock: NotRequired[str],
+```
 
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `DestinationCidrBlock`: `str`
-- `DestinationPrefixListId`: `str`
-- `DestinationIpv6CidrBlock`: `str`
-
-<a id="ec2replacerouteactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2ReplaceRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2ReplaceRouteActionTypeDef
+
+def get_value() -> EC2ReplaceRouteActionTypeDef:
+    return {
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2ReplaceRouteActionTypeDef(TypedDict):
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+    DestinationCidrBlock: NotRequired[str],
+    DestinationPrefixListId: NotRequired[str],
+    DestinationIpv6CidrBlock: NotRequired[str],
+    GatewayId: NotRequired[ActionTargetTypeDef],  # (1)
+```
 
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `DestinationCidrBlock`: `str`
-- `DestinationPrefixListId`: `str`
-- `DestinationIpv6CidrBlock`: `str`
-- `GatewayId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-<a id="ec2replaceroutetableassociationactiontypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EC2ReplaceRouteTableAssociationActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EC2ReplaceRouteTableAssociationActionTypeDef
+
+def get_value() -> EC2ReplaceRouteTableAssociationActionTypeDef:
+    return {
+        "AssociationId": ...,
+        "RouteTableId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EC2ReplaceRouteTableAssociationActionTypeDef(TypedDict):
+    AssociationId: ActionTargetTypeDef,  # (1)
+    RouteTableId: ActionTargetTypeDef,  # (1)
+    Description: NotRequired[str],
+```
 
-- `AssociationId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-- `RouteTableId`: [ActionTargetTypeDef](./type_defs.md#actiontargettypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="evaluationresulttypedef"></a>
-
+1. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
+2. See [:material-code-braces: ActionTargetTypeDef](./type_defs.md#actiontargettypedef) 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "ComplianceStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    ComplianceStatus: NotRequired[PolicyComplianceStatusTypeType],  # (1)
+    ViolatorCount: NotRequired[int],
+    EvaluationLimitExceeded: NotRequired[bool],
+```
 
-- `ComplianceStatus`:
-  [PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype)
-- `ViolatorCount`: `int`
-- `EvaluationLimitExceeded`: `bool`
-
-<a id="expectedroutetypedef"></a>
-
+1. See [:material-code-brackets: PolicyComplianceStatusTypeType](./literals.md#policycompliancestatustypetype) 
 ## ExpectedRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ExpectedRouteTypeDef
+
+def get_value() -> ExpectedRouteTypeDef:
+    return {
+        "IpV4Cidr": ...,
+    }
 ```
 
-Optional fields:
-
-- `IpV4Cidr`: `str`
-- `PrefixListId`: `str`
-- `IpV6Cidr`: `str`
-- `ContributingSubnets`: `List`\[`str`\]
-- `AllowedTargets`: `List`\[`str`\]
-- `RouteTableId`: `str`
-
-<a id="fmspolicyupdatefirewallcreationconfigactiontypedef"></a>
+```python title="Definition"
+class ExpectedRouteTypeDef(TypedDict):
+    IpV4Cidr: NotRequired[str],
+    PrefixListId: NotRequired[str],
+    IpV6Cidr: NotRequired[str],
+    ContributingSubnets: NotRequired[List[str]],
+    AllowedTargets: NotRequired[List[str]],
+    RouteTableId: NotRequired[str],
+```
 
 ## FMSPolicyUpdateFirewallCreationConfigActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import FMSPolicyUpdateFirewallCreationConfigActionTypeDef
+
+def get_value() -> FMSPolicyUpdateFirewallCreationConfigActionTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
-
-- `Description`: `str`
-- `FirewallCreationConfig`: `str`
-
-<a id="firewallsubnetisoutofscopeviolationtypedef"></a>
+```python title="Definition"
+class FMSPolicyUpdateFirewallCreationConfigActionTypeDef(TypedDict):
+    Description: NotRequired[str],
+    FirewallCreationConfig: NotRequired[str],
+```
 
 ## FirewallSubnetIsOutOfScopeViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import FirewallSubnetIsOutOfScopeViolationTypeDef
+
+def get_value() -> FirewallSubnetIsOutOfScopeViolationTypeDef:
+    return {
+        "FirewallSubnetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirewallSubnetId`: `str`
-- `VpcId`: `str`
-- `SubnetAvailabilityZone`: `str`
-- `SubnetAvailabilityZoneId`: `str`
-- `VpcEndpointId`: `str`
-
-<a id="getadminaccountresponsetypedef"></a>
+```python title="Definition"
+class FirewallSubnetIsOutOfScopeViolationTypeDef(TypedDict):
+    FirewallSubnetId: NotRequired[str],
+    VpcId: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[str],
+    SubnetAvailabilityZoneId: NotRequired[str],
+    VpcEndpointId: NotRequired[str],
+```
 
 ## GetAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetAdminAccountResponseTypeDef
+
+def get_value() -> GetAdminAccountResponseTypeDef:
+    return {
+        "AdminAccount": ...,
+        "RoleStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAdminAccountResponseTypeDef(TypedDict):
+    AdminAccount: str,
+    RoleStatus: AccountRoleStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AdminAccount`: `str`
-- `RoleStatus`: [AccountRoleStatusType](./literals.md#accountrolestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getappslistrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AccountRoleStatusType](./literals.md#accountrolestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAppsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetAppsListRequestRequestTypeDef
+
+def get_value() -> GetAppsListRequestRequestTypeDef:
+    return {
+        "ListId": ...,
+    }
 ```
 
-Required fields:
-
-- `ListId`: `str`
-
-Optional fields:
-
-- `DefaultList`: `bool`
-
-<a id="getappslistresponsetypedef"></a>
+```python title="Definition"
+class GetAppsListRequestRequestTypeDef(TypedDict):
+    ListId: str,
+    DefaultList: NotRequired[bool],
+```
 
 ## GetAppsListResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetAppsListResponseTypeDef
+
+def get_value() -> GetAppsListResponseTypeDef:
+    return {
+        "AppsList": ...,
+        "AppsListArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAppsListResponseTypeDef(TypedDict):
+    AppsList: AppsListDataTypeDef,  # (1)
+    AppsListArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
-- `AppsListArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcompliancedetailrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppsListDataTypeDef](./type_defs.md#appslistdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetComplianceDetailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetComplianceDetailRequestRequestTypeDef
+
+def get_value() -> GetComplianceDetailRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+        "MemberAccount": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-- `MemberAccount`: `str`
-
-<a id="getcompliancedetailresponsetypedef"></a>
+```python title="Definition"
+class GetComplianceDetailRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    MemberAccount: str,
+```
 
 ## GetComplianceDetailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetComplianceDetailResponseTypeDef
+
+def get_value() -> GetComplianceDetailResponseTypeDef:
+    return {
+        "PolicyComplianceDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceDetailResponseTypeDef(TypedDict):
+    PolicyComplianceDetail: PolicyComplianceDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyComplianceDetail`:
-  [PolicyComplianceDetailTypeDef](./type_defs.md#policycompliancedetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getnotificationchannelresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyComplianceDetailTypeDef](./type_defs.md#policycompliancedetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNotificationChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetNotificationChannelResponseTypeDef
+
+def get_value() -> GetNotificationChannelResponseTypeDef:
+    return {
+        "SnsTopicArn": ...,
+        "SnsRoleName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetNotificationChannelResponseTypeDef(TypedDict):
+    SnsTopicArn: str,
+    SnsRoleName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SnsTopicArn`: `str`
-- `SnsRoleName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetPolicyRequestRequestTypeDef
+
+def get_value() -> GetPolicyRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-<a id="getpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetPolicyRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+```
 
 ## GetPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "PolicyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    PolicyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `PolicyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprotectionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProtectionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetProtectionStatusRequestRequestTypeDef
+
+def get_value() -> GetProtectionStatusRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-Optional fields:
-
-- `MemberAccountId`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getprotectionstatusresponsetypedef"></a>
+```python title="Definition"
+class GetProtectionStatusRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    MemberAccountId: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## GetProtectionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetProtectionStatusResponseTypeDef
+
+def get_value() -> GetProtectionStatusResponseTypeDef:
+    return {
+        "AdminAccountId": ...,
+        "ServiceType": ...,
+        "Data": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProtectionStatusResponseTypeDef(TypedDict):
+    AdminAccountId: str,
+    ServiceType: SecurityServiceTypeType,  # (1)
+    Data: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AdminAccountId`: `str`
-- `ServiceType`:
-  [SecurityServiceTypeType](./literals.md#securityservicetypetype)
-- `Data`: `str`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprotocolslistrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SecurityServiceTypeType](./literals.md#securityservicetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProtocolsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetProtocolsListRequestRequestTypeDef
+
+def get_value() -> GetProtocolsListRequestRequestTypeDef:
+    return {
+        "ListId": ...,
+    }
 ```
 
-Required fields:
-
-- `ListId`: `str`
-
-Optional fields:
-
-- `DefaultList`: `bool`
-
-<a id="getprotocolslistresponsetypedef"></a>
+```python title="Definition"
+class GetProtocolsListRequestRequestTypeDef(TypedDict):
+    ListId: str,
+    DefaultList: NotRequired[bool],
+```
 
 ## GetProtocolsListResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetProtocolsListResponseTypeDef
+
+def get_value() -> GetProtocolsListResponseTypeDef:
+    return {
+        "ProtocolsList": ...,
+        "ProtocolsListArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProtocolsListResponseTypeDef(TypedDict):
+    ProtocolsList: ProtocolsListDataTypeDef,  # (1)
+    ProtocolsListArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProtocolsList`:
-  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
-- `ProtocolsListArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getviolationdetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetViolationDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetViolationDetailsRequestRequestTypeDef
+
+def get_value() -> GetViolationDetailsRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+        "MemberAccount": ...,
+        "ResourceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-- `MemberAccount`: `str`
-- `ResourceId`: `str`
-- `ResourceType`: `str`
-
-<a id="getviolationdetailsresponsetypedef"></a>
+```python title="Definition"
+class GetViolationDetailsRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    MemberAccount: str,
+    ResourceId: str,
+    ResourceType: str,
+```
 
 ## GetViolationDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import GetViolationDetailsResponseTypeDef
+
+def get_value() -> GetViolationDetailsResponseTypeDef:
+    return {
+        "ViolationDetail": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetViolationDetailsResponseTypeDef(TypedDict):
+    ViolationDetail: ViolationDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ViolationDetail`:
-  [ViolationDetailTypeDef](./type_defs.md#violationdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ViolationDetailTypeDef](./type_defs.md#violationdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAppsListsRequestListAppsListsPaginateTypeDef
 
-<a id="listappslistsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListAppsListsRequestListAppsListsPaginateTypeDef
 
+def get_value() -> ListAppsListsRequestListAppsListsPaginateTypeDef:
+    return {
+        "DefaultLists": ...,
+    }
+```
+
+```python title="Definition"
+class ListAppsListsRequestListAppsListsPaginateTypeDef(TypedDict):
+    DefaultLists: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAppsListsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListAppsListsRequestRequestTypeDef
+
+def get_value() -> ListAppsListsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxResults`: `int`
-
-Optional fields:
-
-- `DefaultLists`: `bool`
-- `NextToken`: `str`
-
-<a id="listappslistsresponsetypedef"></a>
+```python title="Definition"
+class ListAppsListsRequestRequestTypeDef(TypedDict):
+    MaxResults: int,
+    DefaultLists: NotRequired[bool],
+    NextToken: NotRequired[str],
+```
 
 ## ListAppsListsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListAppsListsResponseTypeDef
+
+def get_value() -> ListAppsListsResponseTypeDef:
+    return {
+        "AppsLists": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppsListsResponseTypeDef(TypedDict):
+    AppsLists: List[AppsListDataSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AppsLists`:
-  `List`\[[AppsListDataSummaryTypeDef](./type_defs.md#appslistdatasummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AppsListDataSummaryTypeDef](./type_defs.md#appslistdatasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComplianceStatusRequestListComplianceStatusPaginateTypeDef
 
-<a id="listcompliancestatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListComplianceStatusRequestListComplianceStatusPaginateTypeDef
 
+def get_value() -> ListComplianceStatusRequestListComplianceStatusPaginateTypeDef:
+    return {
+        "PolicyId": ...,
+    }
+```
+
+```python title="Definition"
+class ListComplianceStatusRequestListComplianceStatusPaginateTypeDef(TypedDict):
+    PolicyId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComplianceStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListComplianceStatusRequestRequestTypeDef
+
+def get_value() -> ListComplianceStatusRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcompliancestatusresponsetypedef"></a>
+```python title="Definition"
+class ListComplianceStatusRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListComplianceStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListComplianceStatusResponseTypeDef
+
+def get_value() -> ListComplianceStatusResponseTypeDef:
+    return {
+        "PolicyComplianceStatusList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComplianceStatusResponseTypeDef(TypedDict):
+    PolicyComplianceStatusList: List[PolicyComplianceStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyComplianceStatusList`:
-  `List`\[[PolicyComplianceStatusTypeDef](./type_defs.md#policycompliancestatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PolicyComplianceStatusTypeDef](./type_defs.md#policycompliancestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMemberAccountsRequestListMemberAccountsPaginateTypeDef
 
-<a id="listmemberaccountsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListMemberAccountsRequestListMemberAccountsPaginateTypeDef
 
+def get_value() -> ListMemberAccountsRequestListMemberAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListMemberAccountsRequestListMemberAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMemberAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListMemberAccountsRequestRequestTypeDef
+
+def get_value() -> ListMemberAccountsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmemberaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListMemberAccountsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListMemberAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListMemberAccountsResponseTypeDef
+
+def get_value() -> ListMemberAccountsResponseTypeDef:
+    return {
+        "MemberAccounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMemberAccountsResponseTypeDef(TypedDict):
+    MemberAccounts: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MemberAccounts`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPoliciesRequestListPoliciesPaginateTypeDef
 
-<a id="listpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListPoliciesRequestListPoliciesPaginateTypeDef
 
+def get_value() -> ListPoliciesRequestListPoliciesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPoliciesRequestListPoliciesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListPoliciesRequestRequestTypeDef
+
+def get_value() -> ListPoliciesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListPoliciesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListPoliciesResponseTypeDef
+
+def get_value() -> ListPoliciesResponseTypeDef:
+    return {
+        "PolicyList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPoliciesResponseTypeDef(TypedDict):
+    PolicyList: List[PolicySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyList`:
-  `List`\[[PolicySummaryTypeDef](./type_defs.md#policysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PolicySummaryTypeDef](./type_defs.md#policysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProtocolsListsRequestListProtocolsListsPaginateTypeDef
 
-<a id="listprotocolslistsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_fms.type_defs import ListProtocolsListsRequestListProtocolsListsPaginateTypeDef
 
+def get_value() -> ListProtocolsListsRequestListProtocolsListsPaginateTypeDef:
+    return {
+        "DefaultLists": ...,
+    }
+```
+
+```python title="Definition"
+class ListProtocolsListsRequestListProtocolsListsPaginateTypeDef(TypedDict):
+    DefaultLists: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProtocolsListsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListProtocolsListsRequestRequestTypeDef
+
+def get_value() -> ListProtocolsListsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Required fields:
-
-- `MaxResults`: `int`
-
-Optional fields:
-
-- `DefaultLists`: `bool`
-- `NextToken`: `str`
-
-<a id="listprotocolslistsresponsetypedef"></a>
+```python title="Definition"
+class ListProtocolsListsRequestRequestTypeDef(TypedDict):
+    MaxResults: int,
+    DefaultLists: NotRequired[bool],
+    NextToken: NotRequired[str],
+```
 
 ## ListProtocolsListsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListProtocolsListsResponseTypeDef
+
+def get_value() -> ListProtocolsListsResponseTypeDef:
+    return {
+        "ProtocolsLists": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProtocolsListsResponseTypeDef(TypedDict):
+    ProtocolsLists: List[ProtocolsListDataSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProtocolsLists`:
-  `List`\[[ProtocolsListDataSummaryTypeDef](./type_defs.md#protocolslistdatasummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProtocolsListDataSummaryTypeDef](./type_defs.md#protocolslistdatasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="networkfirewallblackholeroutedetectedviolationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkFirewallBlackHoleRouteDetectedViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallBlackHoleRouteDetectedViolationTypeDef
+
+def get_value() -> NetworkFirewallBlackHoleRouteDetectedViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallBlackHoleRouteDetectedViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    RouteTableId: NotRequired[str],
+    VpcId: NotRequired[str],
+    ViolatingRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+```
 
-- `ViolationTarget`: `str`
-- `RouteTableId`: `str`
-- `VpcId`: `str`
-- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-
-<a id="networkfirewallinternettrafficnotinspectedviolationtypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## NetworkFirewallInternetTrafficNotInspectedViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallInternetTrafficNotInspectedViolationTypeDef
+
+def get_value() -> NetworkFirewallInternetTrafficNotInspectedViolationTypeDef:
+    return {
+        "SubnetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallInternetTrafficNotInspectedViolationTypeDef(TypedDict):
+    SubnetId: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[str],
+    RouteTableId: NotRequired[str],
+    ViolatingRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    IsRouteTableUsedInDifferentAZ: NotRequired[bool],
+    CurrentFirewallSubnetRouteTable: NotRequired[str],
+    ExpectedFirewallEndpoint: NotRequired[str],
+    FirewallSubnetId: NotRequired[str],
+    ExpectedFirewallSubnetRoutes: NotRequired[List[ExpectedRouteTypeDef]],  # (2)
+    ActualFirewallSubnetRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    InternetGatewayId: NotRequired[str],
+    CurrentInternetGatewayRouteTable: NotRequired[str],
+    ExpectedInternetGatewayRoutes: NotRequired[List[ExpectedRouteTypeDef]],  # (2)
+    ActualInternetGatewayRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    VpcId: NotRequired[str],
+```
 
-- `SubnetId`: `str`
-- `SubnetAvailabilityZone`: `str`
-- `RouteTableId`: `str`
-- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `IsRouteTableUsedInDifferentAZ`: `bool`
-- `CurrentFirewallSubnetRouteTable`: `str`
-- `ExpectedFirewallEndpoint`: `str`
-- `FirewallSubnetId`: `str`
-- `ExpectedFirewallSubnetRoutes`:
-  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
-- `ActualFirewallSubnetRoutes`:
-  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `InternetGatewayId`: `str`
-- `CurrentInternetGatewayRouteTable`: `str`
-- `ExpectedInternetGatewayRoutes`:
-  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
-- `ActualInternetGatewayRoutes`:
-  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `VpcId`: `str`
-
-<a id="networkfirewallinvalidrouteconfigurationviolationtypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+2. See [:material-code-braces: ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef) 
+3. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+4. See [:material-code-braces: ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef) 
+5. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## NetworkFirewallInvalidRouteConfigurationViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallInvalidRouteConfigurationViolationTypeDef
+
+def get_value() -> NetworkFirewallInvalidRouteConfigurationViolationTypeDef:
+    return {
+        "AffectedSubnets": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallInvalidRouteConfigurationViolationTypeDef(TypedDict):
+    AffectedSubnets: NotRequired[List[str]],
+    RouteTableId: NotRequired[str],
+    IsRouteTableUsedInDifferentAZ: NotRequired[bool],
+    ViolatingRoute: NotRequired[RouteTypeDef],  # (1)
+    CurrentFirewallSubnetRouteTable: NotRequired[str],
+    ExpectedFirewallEndpoint: NotRequired[str],
+    ActualFirewallEndpoint: NotRequired[str],
+    ExpectedFirewallSubnetId: NotRequired[str],
+    ActualFirewallSubnetId: NotRequired[str],
+    ExpectedFirewallSubnetRoutes: NotRequired[List[ExpectedRouteTypeDef]],  # (2)
+    ActualFirewallSubnetRoutes: NotRequired[List[RouteTypeDef]],  # (3)
+    InternetGatewayId: NotRequired[str],
+    CurrentInternetGatewayRouteTable: NotRequired[str],
+    ExpectedInternetGatewayRoutes: NotRequired[List[ExpectedRouteTypeDef]],  # (2)
+    ActualInternetGatewayRoutes: NotRequired[List[RouteTypeDef]],  # (3)
+    VpcId: NotRequired[str],
+```
 
-- `AffectedSubnets`: `List`\[`str`\]
-- `RouteTableId`: `str`
-- `IsRouteTableUsedInDifferentAZ`: `bool`
-- `ViolatingRoute`: [RouteTypeDef](./type_defs.md#routetypedef)
-- `CurrentFirewallSubnetRouteTable`: `str`
-- `ExpectedFirewallEndpoint`: `str`
-- `ActualFirewallEndpoint`: `str`
-- `ExpectedFirewallSubnetId`: `str`
-- `ActualFirewallSubnetId`: `str`
-- `ExpectedFirewallSubnetRoutes`:
-  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
-- `ActualFirewallSubnetRoutes`:
-  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `InternetGatewayId`: `str`
-- `CurrentInternetGatewayRouteTable`: `str`
-- `ExpectedInternetGatewayRoutes`:
-  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
-- `ActualInternetGatewayRoutes`:
-  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `VpcId`: `str`
-
-<a id="networkfirewallmissingexpectedrtviolationtypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+2. See [:material-code-braces: ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef) 
+3. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+4. See [:material-code-braces: ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef) 
+5. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## NetworkFirewallMissingExpectedRTViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingExpectedRTViolationTypeDef
+
+def get_value() -> NetworkFirewallMissingExpectedRTViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `VPC`: `str`
-- `AvailabilityZone`: `str`
-- `CurrentRouteTable`: `str`
-- `ExpectedRouteTable`: `str`
-
-<a id="networkfirewallmissingexpectedroutesviolationtypedef"></a>
+```python title="Definition"
+class NetworkFirewallMissingExpectedRTViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    VPC: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    CurrentRouteTable: NotRequired[str],
+    ExpectedRouteTable: NotRequired[str],
+```
 
 ## NetworkFirewallMissingExpectedRoutesViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingExpectedRoutesViolationTypeDef
+
+def get_value() -> NetworkFirewallMissingExpectedRoutesViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallMissingExpectedRoutesViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    ExpectedRoutes: NotRequired[List[ExpectedRouteTypeDef]],  # (1)
+    VpcId: NotRequired[str],
+```
 
-- `ViolationTarget`: `str`
-- `ExpectedRoutes`:
-  `List`\[[ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef)\]
-- `VpcId`: `str`
-
-<a id="networkfirewallmissingfirewallviolationtypedef"></a>
-
+1. See [:material-code-braces: ExpectedRouteTypeDef](./type_defs.md#expectedroutetypedef) 
 ## NetworkFirewallMissingFirewallViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingFirewallViolationTypeDef
+
+def get_value() -> NetworkFirewallMissingFirewallViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `VPC`: `str`
-- `AvailabilityZone`: `str`
-- `TargetViolationReason`: `str`
-
-<a id="networkfirewallmissingsubnetviolationtypedef"></a>
+```python title="Definition"
+class NetworkFirewallMissingFirewallViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    VPC: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    TargetViolationReason: NotRequired[str],
+```
 
 ## NetworkFirewallMissingSubnetViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallMissingSubnetViolationTypeDef
+
+def get_value() -> NetworkFirewallMissingSubnetViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
-
-- `ViolationTarget`: `str`
-- `VPC`: `str`
-- `AvailabilityZone`: `str`
-- `TargetViolationReason`: `str`
-
-<a id="networkfirewallpolicydescriptiontypedef"></a>
+```python title="Definition"
+class NetworkFirewallMissingSubnetViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    VPC: NotRequired[str],
+    AvailabilityZone: NotRequired[str],
+    TargetViolationReason: NotRequired[str],
+```
 
 ## NetworkFirewallPolicyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallPolicyDescriptionTypeDef
+
+def get_value() -> NetworkFirewallPolicyDescriptionTypeDef:
+    return {
+        "StatelessRuleGroups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallPolicyDescriptionTypeDef(TypedDict):
+    StatelessRuleGroups: NotRequired[List[StatelessRuleGroupTypeDef]],  # (1)
+    StatelessDefaultActions: NotRequired[List[str]],
+    StatelessFragmentDefaultActions: NotRequired[List[str]],
+    StatelessCustomActions: NotRequired[List[str]],
+    StatefulRuleGroups: NotRequired[List[StatefulRuleGroupTypeDef]],  # (2)
+```
 
-- `StatelessRuleGroups`:
-  `List`\[[StatelessRuleGroupTypeDef](./type_defs.md#statelessrulegrouptypedef)\]
-- `StatelessDefaultActions`: `List`\[`str`\]
-- `StatelessFragmentDefaultActions`: `List`\[`str`\]
-- `StatelessCustomActions`: `List`\[`str`\]
-- `StatefulRuleGroups`:
-  `List`\[[StatefulRuleGroupTypeDef](./type_defs.md#statefulrulegrouptypedef)\]
-
-<a id="networkfirewallpolicymodifiedviolationtypedef"></a>
-
+1. See [:material-code-braces: StatelessRuleGroupTypeDef](./type_defs.md#statelessrulegrouptypedef) 
+2. See [:material-code-braces: StatefulRuleGroupTypeDef](./type_defs.md#statefulrulegrouptypedef) 
 ## NetworkFirewallPolicyModifiedViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallPolicyModifiedViolationTypeDef
+
+def get_value() -> NetworkFirewallPolicyModifiedViolationTypeDef:
+    return {
+        "ViolationTarget": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallPolicyModifiedViolationTypeDef(TypedDict):
+    ViolationTarget: NotRequired[str],
+    CurrentPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
+    ExpectedPolicyDescription: NotRequired[NetworkFirewallPolicyDescriptionTypeDef],  # (1)
+```
 
-- `ViolationTarget`: `str`
-- `CurrentPolicyDescription`:
-  [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
-- `ExpectedPolicyDescription`:
-  [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
-
-<a id="networkfirewallpolicytypedef"></a>
-
+1. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
+2. See [:material-code-braces: NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef) 
 ## NetworkFirewallPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallPolicyTypeDef
+
+def get_value() -> NetworkFirewallPolicyTypeDef:
+    return {
+        "FirewallDeploymentModel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallPolicyTypeDef(TypedDict):
+    FirewallDeploymentModel: NotRequired[FirewallDeploymentModelType],  # (1)
+```
 
-- `FirewallDeploymentModel`: `Literal['CENTRALIZED']` (see
-  [FirewallDeploymentModelType](./literals.md#firewalldeploymentmodeltype))
-
-<a id="networkfirewallunexpectedfirewallroutesviolationtypedef"></a>
-
+1. See [:material-code-brackets: FirewallDeploymentModelType](./literals.md#firewalldeploymentmodeltype) 
 ## NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef
+
+def get_value() -> NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef:
+    return {
+        "FirewallSubnetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef(TypedDict):
+    FirewallSubnetId: NotRequired[str],
+    ViolatingRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    RouteTableId: NotRequired[str],
+    FirewallEndpoint: NotRequired[str],
+    VpcId: NotRequired[str],
+```
 
-- `FirewallSubnetId`: `str`
-- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `RouteTableId`: `str`
-- `FirewallEndpoint`: `str`
-- `VpcId`: `str`
-
-<a id="networkfirewallunexpectedgatewayroutesviolationtypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef
+
+def get_value() -> NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef:
+    return {
+        "GatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef(TypedDict):
+    GatewayId: NotRequired[str],
+    ViolatingRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    RouteTableId: NotRequired[str],
+    VpcId: NotRequired[str],
+```
 
-- `GatewayId`: `str`
-- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `RouteTableId`: `str`
-- `VpcId`: `str`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partialmatchtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartialMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PartialMatchTypeDef
+
+def get_value() -> PartialMatchTypeDef:
+    return {
+        "Reference": ...,
+    }
 ```
 
-Optional fields:
-
-- `Reference`: `str`
-- `TargetViolationReasons`: `List`\[`str`\]
-
-<a id="policycompliancedetailtypedef"></a>
+```python title="Definition"
+class PartialMatchTypeDef(TypedDict):
+    Reference: NotRequired[str],
+    TargetViolationReasons: NotRequired[List[str]],
+```
 
 ## PolicyComplianceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PolicyComplianceDetailTypeDef
+
+def get_value() -> PolicyComplianceDetailTypeDef:
+    return {
+        "PolicyOwner": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyComplianceDetailTypeDef(TypedDict):
+    PolicyOwner: NotRequired[str],
+    PolicyId: NotRequired[str],
+    MemberAccount: NotRequired[str],
+    Violators: NotRequired[List[ComplianceViolatorTypeDef]],  # (1)
+    EvaluationLimitExceeded: NotRequired[bool],
+    ExpiredAt: NotRequired[datetime],
+    IssueInfoMap: NotRequired[Dict[DependentServiceNameType, str]],  # (2)
+```
 
-- `PolicyOwner`: `str`
-- `PolicyId`: `str`
-- `MemberAccount`: `str`
-- `Violators`:
-  `List`\[[ComplianceViolatorTypeDef](./type_defs.md#complianceviolatortypedef)\]
-- `EvaluationLimitExceeded`: `bool`
-- `ExpiredAt`: `datetime`
-- `IssueInfoMap`:
-  `Dict`\[[DependentServiceNameType](./literals.md#dependentservicenametype),
-  `str`\]
-
-<a id="policycompliancestatustypedef"></a>
-
+1. See [:material-code-braces: ComplianceViolatorTypeDef](./type_defs.md#complianceviolatortypedef) 
+2. See [:material-code-brackets: DependentServiceNameType](./literals.md#dependentservicenametype) 
 ## PolicyComplianceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PolicyComplianceStatusTypeDef
+
+def get_value() -> PolicyComplianceStatusTypeDef:
+    return {
+        "PolicyOwner": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyComplianceStatusTypeDef(TypedDict):
+    PolicyOwner: NotRequired[str],
+    PolicyId: NotRequired[str],
+    PolicyName: NotRequired[str],
+    MemberAccount: NotRequired[str],
+    EvaluationResults: NotRequired[List[EvaluationResultTypeDef]],  # (1)
+    LastUpdated: NotRequired[datetime],
+    IssueInfoMap: NotRequired[Dict[DependentServiceNameType, str]],  # (2)
+```
 
-- `PolicyOwner`: `str`
-- `PolicyId`: `str`
-- `PolicyName`: `str`
-- `MemberAccount`: `str`
-- `EvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `LastUpdated`: `datetime`
-- `IssueInfoMap`:
-  `Dict`\[[DependentServiceNameType](./literals.md#dependentservicenametype),
-  `str`\]
-
-<a id="policyoptiontypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-brackets: DependentServiceNameType](./literals.md#dependentservicenametype) 
 ## PolicyOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PolicyOptionTypeDef
+
+def get_value() -> PolicyOptionTypeDef:
+    return {
+        "NetworkFirewallPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyOptionTypeDef(TypedDict):
+    NetworkFirewallPolicy: NotRequired[NetworkFirewallPolicyTypeDef],  # (1)
+```
 
-- `NetworkFirewallPolicy`:
-  [NetworkFirewallPolicyTypeDef](./type_defs.md#networkfirewallpolicytypedef)
-
-<a id="policysummarytypedef"></a>
-
+1. See [:material-code-braces: NetworkFirewallPolicyTypeDef](./type_defs.md#networkfirewallpolicytypedef) 
 ## PolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PolicySummaryTypeDef
+
+def get_value() -> PolicySummaryTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicySummaryTypeDef(TypedDict):
+    PolicyArn: NotRequired[str],
+    PolicyId: NotRequired[str],
+    PolicyName: NotRequired[str],
+    ResourceType: NotRequired[str],
+    SecurityServiceType: NotRequired[SecurityServiceTypeType],  # (1)
+    RemediationEnabled: NotRequired[bool],
+    DeleteUnusedFMManagedResources: NotRequired[bool],
+```
 
-- `PolicyArn`: `str`
-- `PolicyId`: `str`
-- `PolicyName`: `str`
-- `ResourceType`: `str`
-- `SecurityServiceType`:
-  [SecurityServiceTypeType](./literals.md#securityservicetypetype)
-- `RemediationEnabled`: `bool`
-- `DeleteUnusedFMManagedResources`: `bool`
-
-<a id="policytypedef"></a>
-
+1. See [:material-code-brackets: SecurityServiceTypeType](./literals.md#securityservicetypetype) 
 ## PolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PolicyTypeDef
+
+def get_value() -> PolicyTypeDef:
+    return {
+        "PolicyName": ...,
+        "SecurityServicePolicyData": ...,
+        "ResourceType": ...,
+        "ExcludeResourceTags": ...,
+        "RemediationEnabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PolicyTypeDef(TypedDict):
+    PolicyName: str,
+    SecurityServicePolicyData: SecurityServicePolicyDataTypeDef,  # (1)
+    ResourceType: str,
+    ExcludeResourceTags: bool,
+    RemediationEnabled: bool,
+    PolicyId: NotRequired[str],
+    PolicyUpdateToken: NotRequired[str],
+    ResourceTypeList: NotRequired[List[str]],
+    ResourceTags: NotRequired[List[ResourceTagTypeDef]],  # (2)
+    DeleteUnusedFMManagedResources: NotRequired[bool],
+    IncludeMap: NotRequired[Dict[CustomerPolicyScopeIdTypeType, List[str]]],  # (3)
+    ExcludeMap: NotRequired[Dict[CustomerPolicyScopeIdTypeType, List[str]]],  # (3)
+```
 
-- `PolicyName`: `str`
-- `SecurityServicePolicyData`:
-  [SecurityServicePolicyDataTypeDef](./type_defs.md#securityservicepolicydatatypedef)
-- `ResourceType`: `str`
-- `ExcludeResourceTags`: `bool`
-- `RemediationEnabled`: `bool`
-
-Optional fields:
-
-- `PolicyId`: `str`
-- `PolicyUpdateToken`: `str`
-- `ResourceTypeList`: `List`\[`str`\]
-- `ResourceTags`:
-  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
-- `DeleteUnusedFMManagedResources`: `bool`
-- `IncludeMap`:
-  `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
-  `List`\[`str`\]\]
-- `ExcludeMap`:
-  `Dict`\[[CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype),
-  `List`\[`str`\]\]
-
-<a id="possibleremediationactiontypedef"></a>
-
+1. See [:material-code-braces: SecurityServicePolicyDataTypeDef](./type_defs.md#securityservicepolicydatatypedef) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-brackets: CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype) 
+4. See [:material-code-brackets: CustomerPolicyScopeIdTypeType](./literals.md#customerpolicyscopeidtypetype) 
 ## PossibleRemediationActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PossibleRemediationActionTypeDef
+
+def get_value() -> PossibleRemediationActionTypeDef:
+    return {
+        "OrderedRemediationActions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PossibleRemediationActionTypeDef(TypedDict):
+    OrderedRemediationActions: List[RemediationActionWithOrderTypeDef],  # (1)
+    Description: NotRequired[str],
+    IsDefaultAction: NotRequired[bool],
+```
 
-- `OrderedRemediationActions`:
-  `List`\[[RemediationActionWithOrderTypeDef](./type_defs.md#remediationactionwithordertypedef)\]
-
-Optional fields:
-
-- `Description`: `str`
-- `IsDefaultAction`: `bool`
-
-<a id="possibleremediationactionstypedef"></a>
-
+1. See [:material-code-braces: RemediationActionWithOrderTypeDef](./type_defs.md#remediationactionwithordertypedef) 
 ## PossibleRemediationActionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PossibleRemediationActionsTypeDef
+
+def get_value() -> PossibleRemediationActionsTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PossibleRemediationActionsTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Actions: NotRequired[List[PossibleRemediationActionTypeDef]],  # (1)
+```
 
-- `Description`: `str`
-- `Actions`:
-  `List`\[[PossibleRemediationActionTypeDef](./type_defs.md#possibleremediationactiontypedef)\]
-
-<a id="protocolslistdatasummarytypedef"></a>
-
+1. See [:material-code-braces: PossibleRemediationActionTypeDef](./type_defs.md#possibleremediationactiontypedef) 
 ## ProtocolsListDataSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ProtocolsListDataSummaryTypeDef
+
+def get_value() -> ProtocolsListDataSummaryTypeDef:
+    return {
+        "ListArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ListArn`: `str`
-- `ListId`: `str`
-- `ListName`: `str`
-- `ProtocolsList`: `List`\[`str`\]
-
-<a id="protocolslistdatatypedef"></a>
+```python title="Definition"
+class ProtocolsListDataSummaryTypeDef(TypedDict):
+    ListArn: NotRequired[str],
+    ListId: NotRequired[str],
+    ListName: NotRequired[str],
+    ProtocolsList: NotRequired[List[str]],
+```
 
 ## ProtocolsListDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ProtocolsListDataTypeDef
+
+def get_value() -> ProtocolsListDataTypeDef:
+    return {
+        "ListName": ...,
+        "ProtocolsList": ...,
+    }
 ```
 
-Required fields:
-
-- `ListName`: `str`
-- `ProtocolsList`: `List`\[`str`\]
-
-Optional fields:
-
-- `ListId`: `str`
-- `ListUpdateToken`: `str`
-- `CreateTime`: `datetime`
-- `LastUpdateTime`: `datetime`
-- `PreviousProtocolsList`: `Dict`\[`str`, `List`\[`str`\]\]
-
-<a id="putappslistrequestrequesttypedef"></a>
+```python title="Definition"
+class ProtocolsListDataTypeDef(TypedDict):
+    ListName: str,
+    ProtocolsList: List[str],
+    ListId: NotRequired[str],
+    ListUpdateToken: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    LastUpdateTime: NotRequired[datetime],
+    PreviousProtocolsList: NotRequired[Dict[str, List[str]]],
+```
 
 ## PutAppsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutAppsListRequestRequestTypeDef
+
+def get_value() -> PutAppsListRequestRequestTypeDef:
+    return {
+        "AppsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAppsListRequestRequestTypeDef(TypedDict):
+    AppsList: AppsListDataTypeDef,  # (1)
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
-
-Optional fields:
-
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putappslistresponsetypedef"></a>
-
+1. See [:material-code-braces: AppsListDataTypeDef](./type_defs.md#appslistdatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutAppsListResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutAppsListResponseTypeDef
+
+def get_value() -> PutAppsListResponseTypeDef:
+    return {
+        "AppsList": ...,
+        "AppsListArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAppsListResponseTypeDef(TypedDict):
+    AppsList: AppsListDataTypeDef,  # (1)
+    AppsListArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AppsList`: [AppsListDataTypeDef](./type_defs.md#appslistdatatypedef)
-- `AppsListArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putnotificationchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppsListDataTypeDef](./type_defs.md#appslistdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutNotificationChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutNotificationChannelRequestRequestTypeDef
+
+def get_value() -> PutNotificationChannelRequestRequestTypeDef:
+    return {
+        "SnsTopicArn": ...,
+        "SnsRoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `SnsTopicArn`: `str`
-- `SnsRoleName`: `str`
-
-<a id="putpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PutNotificationChannelRequestRequestTypeDef(TypedDict):
+    SnsTopicArn: str,
+    SnsRoleName: str,
+```
 
 ## PutPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutPolicyRequestRequestTypeDef
+
+def get_value() -> PutPolicyRequestRequestTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPolicyRequestRequestTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-
-Optional fields:
-
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutPolicyResponseTypeDef
+
+def get_value() -> PutPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "PolicyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    PolicyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `PolicyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putprotocolslistrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutProtocolsListRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutProtocolsListRequestRequestTypeDef
+
+def get_value() -> PutProtocolsListRequestRequestTypeDef:
+    return {
+        "ProtocolsList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProtocolsListRequestRequestTypeDef(TypedDict):
+    ProtocolsList: ProtocolsListDataTypeDef,  # (1)
+    TagList: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ProtocolsList`:
-  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
-
-Optional fields:
-
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putprotocolslistresponsetypedef"></a>
-
+1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutProtocolsListResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import PutProtocolsListResponseTypeDef
+
+def get_value() -> PutProtocolsListResponseTypeDef:
+    return {
+        "ProtocolsList": ...,
+        "ProtocolsListArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProtocolsListResponseTypeDef(TypedDict):
+    ProtocolsList: ProtocolsListDataTypeDef,  # (1)
+    ProtocolsListArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProtocolsList`:
-  [ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef)
-- `ProtocolsListArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="remediationactiontypedef"></a>
-
+1. See [:material-code-braces: ProtocolsListDataTypeDef](./type_defs.md#protocolslistdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemediationActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import RemediationActionTypeDef
+
+def get_value() -> RemediationActionTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationActionTypeDef(TypedDict):
+    Description: NotRequired[str],
+    EC2CreateRouteAction: NotRequired[EC2CreateRouteActionTypeDef],  # (1)
+    EC2ReplaceRouteAction: NotRequired[EC2ReplaceRouteActionTypeDef],  # (2)
+    EC2DeleteRouteAction: NotRequired[EC2DeleteRouteActionTypeDef],  # (3)
+    EC2CopyRouteTableAction: NotRequired[EC2CopyRouteTableActionTypeDef],  # (4)
+    EC2ReplaceRouteTableAssociationAction: NotRequired[EC2ReplaceRouteTableAssociationActionTypeDef],  # (5)
+    EC2AssociateRouteTableAction: NotRequired[EC2AssociateRouteTableActionTypeDef],  # (6)
+    EC2CreateRouteTableAction: NotRequired[EC2CreateRouteTableActionTypeDef],  # (7)
+    FMSPolicyUpdateFirewallCreationConfigAction: NotRequired[FMSPolicyUpdateFirewallCreationConfigActionTypeDef],  # (8)
+```
 
-- `Description`: `str`
-- `EC2CreateRouteAction`:
-  [EC2CreateRouteActionTypeDef](./type_defs.md#ec2createrouteactiontypedef)
-- `EC2ReplaceRouteAction`:
-  [EC2ReplaceRouteActionTypeDef](./type_defs.md#ec2replacerouteactiontypedef)
-- `EC2DeleteRouteAction`:
-  [EC2DeleteRouteActionTypeDef](./type_defs.md#ec2deleterouteactiontypedef)
-- `EC2CopyRouteTableAction`:
-  [EC2CopyRouteTableActionTypeDef](./type_defs.md#ec2copyroutetableactiontypedef)
-- `EC2ReplaceRouteTableAssociationAction`:
-  [EC2ReplaceRouteTableAssociationActionTypeDef](./type_defs.md#ec2replaceroutetableassociationactiontypedef)
-- `EC2AssociateRouteTableAction`:
-  [EC2AssociateRouteTableActionTypeDef](./type_defs.md#ec2associateroutetableactiontypedef)
-- `EC2CreateRouteTableAction`:
-  [EC2CreateRouteTableActionTypeDef](./type_defs.md#ec2createroutetableactiontypedef)
-- `FMSPolicyUpdateFirewallCreationConfigAction`:
-  [FMSPolicyUpdateFirewallCreationConfigActionTypeDef](./type_defs.md#fmspolicyupdatefirewallcreationconfigactiontypedef)
-
-<a id="remediationactionwithordertypedef"></a>
-
+1. See [:material-code-braces: EC2CreateRouteActionTypeDef](./type_defs.md#ec2createrouteactiontypedef) 
+2. See [:material-code-braces: EC2ReplaceRouteActionTypeDef](./type_defs.md#ec2replacerouteactiontypedef) 
+3. See [:material-code-braces: EC2DeleteRouteActionTypeDef](./type_defs.md#ec2deleterouteactiontypedef) 
+4. See [:material-code-braces: EC2CopyRouteTableActionTypeDef](./type_defs.md#ec2copyroutetableactiontypedef) 
+5. See [:material-code-braces: EC2ReplaceRouteTableAssociationActionTypeDef](./type_defs.md#ec2replaceroutetableassociationactiontypedef) 
+6. See [:material-code-braces: EC2AssociateRouteTableActionTypeDef](./type_defs.md#ec2associateroutetableactiontypedef) 
+7. See [:material-code-braces: EC2CreateRouteTableActionTypeDef](./type_defs.md#ec2createroutetableactiontypedef) 
+8. See [:material-code-braces: FMSPolicyUpdateFirewallCreationConfigActionTypeDef](./type_defs.md#fmspolicyupdatefirewallcreationconfigactiontypedef) 
 ## RemediationActionWithOrderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import RemediationActionWithOrderTypeDef
+
+def get_value() -> RemediationActionWithOrderTypeDef:
+    return {
+        "RemediationAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationActionWithOrderTypeDef(TypedDict):
+    RemediationAction: NotRequired[RemediationActionTypeDef],  # (1)
+    Order: NotRequired[int],
+```
 
-- `RemediationAction`:
-  [RemediationActionTypeDef](./type_defs.md#remediationactiontypedef)
-- `Order`: `int`
-
-<a id="resourcetagtypedef"></a>
-
+1. See [:material-code-braces: RemediationActionTypeDef](./type_defs.md#remediationactiontypedef) 
 ## ResourceTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ResourceTagTypeDef
+
+def get_value() -> ResourceTagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-
-Optional fields:
-
-- `Value`: `str`
-
-<a id="resourceviolationtypedef"></a>
+```python title="Definition"
+class ResourceTagTypeDef(TypedDict):
+    Key: str,
+    Value: NotRequired[str],
+```
 
 ## ResourceViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ResourceViolationTypeDef
+
+def get_value() -> ResourceViolationTypeDef:
+    return {
+        "AwsVPCSecurityGroupViolation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceViolationTypeDef(TypedDict):
+    AwsVPCSecurityGroupViolation: NotRequired[AwsVPCSecurityGroupViolationTypeDef],  # (1)
+    AwsEc2NetworkInterfaceViolation: NotRequired[AwsEc2NetworkInterfaceViolationTypeDef],  # (2)
+    AwsEc2InstanceViolation: NotRequired[AwsEc2InstanceViolationTypeDef],  # (3)
+    NetworkFirewallMissingFirewallViolation: NotRequired[NetworkFirewallMissingFirewallViolationTypeDef],  # (4)
+    NetworkFirewallMissingSubnetViolation: NotRequired[NetworkFirewallMissingSubnetViolationTypeDef],  # (5)
+    NetworkFirewallMissingExpectedRTViolation: NotRequired[NetworkFirewallMissingExpectedRTViolationTypeDef],  # (6)
+    NetworkFirewallPolicyModifiedViolation: NotRequired[NetworkFirewallPolicyModifiedViolationTypeDef],  # (7)
+    NetworkFirewallInternetTrafficNotInspectedViolation: NotRequired[NetworkFirewallInternetTrafficNotInspectedViolationTypeDef],  # (8)
+    NetworkFirewallInvalidRouteConfigurationViolation: NotRequired[NetworkFirewallInvalidRouteConfigurationViolationTypeDef],  # (9)
+    NetworkFirewallBlackHoleRouteDetectedViolation: NotRequired[NetworkFirewallBlackHoleRouteDetectedViolationTypeDef],  # (10)
+    NetworkFirewallUnexpectedFirewallRoutesViolation: NotRequired[NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef],  # (11)
+    NetworkFirewallUnexpectedGatewayRoutesViolation: NotRequired[NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef],  # (12)
+    NetworkFirewallMissingExpectedRoutesViolation: NotRequired[NetworkFirewallMissingExpectedRoutesViolationTypeDef],  # (13)
+    DnsRuleGroupPriorityConflictViolation: NotRequired[DnsRuleGroupPriorityConflictViolationTypeDef],  # (14)
+    DnsDuplicateRuleGroupViolation: NotRequired[DnsDuplicateRuleGroupViolationTypeDef],  # (15)
+    DnsRuleGroupLimitExceededViolation: NotRequired[DnsRuleGroupLimitExceededViolationTypeDef],  # (16)
+    PossibleRemediationActions: NotRequired[PossibleRemediationActionsTypeDef],  # (17)
+    FirewallSubnetIsOutOfScopeViolation: NotRequired[FirewallSubnetIsOutOfScopeViolationTypeDef],  # (18)
+    RouteHasOutOfScopeEndpointViolation: NotRequired[RouteHasOutOfScopeEndpointViolationTypeDef],  # (19)
+```
 
-- `AwsVPCSecurityGroupViolation`:
-  [AwsVPCSecurityGroupViolationTypeDef](./type_defs.md#awsvpcsecuritygroupviolationtypedef)
-- `AwsEc2NetworkInterfaceViolation`:
-  [AwsEc2NetworkInterfaceViolationTypeDef](./type_defs.md#awsec2networkinterfaceviolationtypedef)
-- `AwsEc2InstanceViolation`:
-  [AwsEc2InstanceViolationTypeDef](./type_defs.md#awsec2instanceviolationtypedef)
-- `NetworkFirewallMissingFirewallViolation`:
-  [NetworkFirewallMissingFirewallViolationTypeDef](./type_defs.md#networkfirewallmissingfirewallviolationtypedef)
-- `NetworkFirewallMissingSubnetViolation`:
-  [NetworkFirewallMissingSubnetViolationTypeDef](./type_defs.md#networkfirewallmissingsubnetviolationtypedef)
-- `NetworkFirewallMissingExpectedRTViolation`:
-  [NetworkFirewallMissingExpectedRTViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedrtviolationtypedef)
-- `NetworkFirewallPolicyModifiedViolation`:
-  [NetworkFirewallPolicyModifiedViolationTypeDef](./type_defs.md#networkfirewallpolicymodifiedviolationtypedef)
-- `NetworkFirewallInternetTrafficNotInspectedViolation`:
-  [NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](./type_defs.md#networkfirewallinternettrafficnotinspectedviolationtypedef)
-- `NetworkFirewallInvalidRouteConfigurationViolation`:
-  [NetworkFirewallInvalidRouteConfigurationViolationTypeDef](./type_defs.md#networkfirewallinvalidrouteconfigurationviolationtypedef)
-- `NetworkFirewallBlackHoleRouteDetectedViolation`:
-  [NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](./type_defs.md#networkfirewallblackholeroutedetectedviolationtypedef)
-- `NetworkFirewallUnexpectedFirewallRoutesViolation`:
-  [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedfirewallroutesviolationtypedef)
-- `NetworkFirewallUnexpectedGatewayRoutesViolation`:
-  [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedgatewayroutesviolationtypedef)
-- `NetworkFirewallMissingExpectedRoutesViolation`:
-  [NetworkFirewallMissingExpectedRoutesViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedroutesviolationtypedef)
-- `DnsRuleGroupPriorityConflictViolation`:
-  [DnsRuleGroupPriorityConflictViolationTypeDef](./type_defs.md#dnsrulegrouppriorityconflictviolationtypedef)
-- `DnsDuplicateRuleGroupViolation`:
-  [DnsDuplicateRuleGroupViolationTypeDef](./type_defs.md#dnsduplicaterulegroupviolationtypedef)
-- `DnsRuleGroupLimitExceededViolation`:
-  [DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef)
-- `PossibleRemediationActions`:
-  [PossibleRemediationActionsTypeDef](./type_defs.md#possibleremediationactionstypedef)
-- `FirewallSubnetIsOutOfScopeViolation`:
-  [FirewallSubnetIsOutOfScopeViolationTypeDef](./type_defs.md#firewallsubnetisoutofscopeviolationtypedef)
-- `RouteHasOutOfScopeEndpointViolation`:
-  [RouteHasOutOfScopeEndpointViolationTypeDef](./type_defs.md#routehasoutofscopeendpointviolationtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: AwsVPCSecurityGroupViolationTypeDef](./type_defs.md#awsvpcsecuritygroupviolationtypedef) 
+2. See [:material-code-braces: AwsEc2NetworkInterfaceViolationTypeDef](./type_defs.md#awsec2networkinterfaceviolationtypedef) 
+3. See [:material-code-braces: AwsEc2InstanceViolationTypeDef](./type_defs.md#awsec2instanceviolationtypedef) 
+4. See [:material-code-braces: NetworkFirewallMissingFirewallViolationTypeDef](./type_defs.md#networkfirewallmissingfirewallviolationtypedef) 
+5. See [:material-code-braces: NetworkFirewallMissingSubnetViolationTypeDef](./type_defs.md#networkfirewallmissingsubnetviolationtypedef) 
+6. See [:material-code-braces: NetworkFirewallMissingExpectedRTViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedrtviolationtypedef) 
+7. See [:material-code-braces: NetworkFirewallPolicyModifiedViolationTypeDef](./type_defs.md#networkfirewallpolicymodifiedviolationtypedef) 
+8. See [:material-code-braces: NetworkFirewallInternetTrafficNotInspectedViolationTypeDef](./type_defs.md#networkfirewallinternettrafficnotinspectedviolationtypedef) 
+9. See [:material-code-braces: NetworkFirewallInvalidRouteConfigurationViolationTypeDef](./type_defs.md#networkfirewallinvalidrouteconfigurationviolationtypedef) 
+10. See [:material-code-braces: NetworkFirewallBlackHoleRouteDetectedViolationTypeDef](./type_defs.md#networkfirewallblackholeroutedetectedviolationtypedef) 
+11. See [:material-code-braces: NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedfirewallroutesviolationtypedef) 
+12. See [:material-code-braces: NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](./type_defs.md#networkfirewallunexpectedgatewayroutesviolationtypedef) 
+13. See [:material-code-braces: NetworkFirewallMissingExpectedRoutesViolationTypeDef](./type_defs.md#networkfirewallmissingexpectedroutesviolationtypedef) 
+14. See [:material-code-braces: DnsRuleGroupPriorityConflictViolationTypeDef](./type_defs.md#dnsrulegrouppriorityconflictviolationtypedef) 
+15. See [:material-code-braces: DnsDuplicateRuleGroupViolationTypeDef](./type_defs.md#dnsduplicaterulegroupviolationtypedef) 
+16. See [:material-code-braces: DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef) 
+17. See [:material-code-braces: PossibleRemediationActionsTypeDef](./type_defs.md#possibleremediationactionstypedef) 
+18. See [:material-code-braces: FirewallSubnetIsOutOfScopeViolationTypeDef](./type_defs.md#firewallsubnetisoutofscopeviolationtypedef) 
+19. See [:material-code-braces: RouteHasOutOfScopeEndpointViolationTypeDef](./type_defs.md#routehasoutofscopeendpointviolationtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routehasoutofscopeendpointviolationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RouteHasOutOfScopeEndpointViolationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import RouteHasOutOfScopeEndpointViolationTypeDef
+
+def get_value() -> RouteHasOutOfScopeEndpointViolationTypeDef:
+    return {
+        "SubnetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RouteHasOutOfScopeEndpointViolationTypeDef(TypedDict):
+    SubnetId: NotRequired[str],
+    VpcId: NotRequired[str],
+    RouteTableId: NotRequired[str],
+    ViolatingRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    SubnetAvailabilityZone: NotRequired[str],
+    SubnetAvailabilityZoneId: NotRequired[str],
+    CurrentFirewallSubnetRouteTable: NotRequired[str],
+    FirewallSubnetId: NotRequired[str],
+    FirewallSubnetRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+    InternetGatewayId: NotRequired[str],
+    CurrentInternetGatewayRouteTable: NotRequired[str],
+    InternetGatewayRoutes: NotRequired[List[RouteTypeDef]],  # (1)
+```
 
-- `SubnetId`: `str`
-- `VpcId`: `str`
-- `RouteTableId`: `str`
-- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `SubnetAvailabilityZone`: `str`
-- `SubnetAvailabilityZoneId`: `str`
-- `CurrentFirewallSubnetRouteTable`: `str`
-- `FirewallSubnetId`: `str`
-- `FirewallSubnetRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-- `InternetGatewayId`: `str`
-- `CurrentInternetGatewayRouteTable`: `str`
-- `InternetGatewayRoutes`:
-  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
-
-<a id="routetypedef"></a>
-
+1. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+2. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
+3. See [:material-code-braces: RouteTypeDef](./type_defs.md#routetypedef) 
 ## RouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import RouteTypeDef
+
+def get_value() -> RouteTypeDef:
+    return {
+        "DestinationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RouteTypeDef(TypedDict):
+    DestinationType: NotRequired[DestinationTypeType],  # (1)
+    TargetType: NotRequired[TargetTypeType],  # (2)
+    Destination: NotRequired[str],
+    Target: NotRequired[str],
+```
 
-- `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
-- `TargetType`: [TargetTypeType](./literals.md#targettypetype)
-- `Destination`: `str`
-- `Target`: `str`
-
-<a id="securitygroupremediationactiontypedef"></a>
-
+1. See [:material-code-brackets: DestinationTypeType](./literals.md#destinationtypetype) 
+2. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
 ## SecurityGroupRemediationActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import SecurityGroupRemediationActionTypeDef
+
+def get_value() -> SecurityGroupRemediationActionTypeDef:
+    return {
+        "RemediationActionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SecurityGroupRemediationActionTypeDef(TypedDict):
+    RemediationActionType: NotRequired[RemediationActionTypeType],  # (1)
+    Description: NotRequired[str],
+    RemediationResult: NotRequired[SecurityGroupRuleDescriptionTypeDef],  # (2)
+    IsDefaultAction: NotRequired[bool],
+```
 
-- `RemediationActionType`:
-  [RemediationActionTypeType](./literals.md#remediationactiontypetype)
-- `Description`: `str`
-- `RemediationResult`:
-  [SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef)
-- `IsDefaultAction`: `bool`
-
-<a id="securitygroupruledescriptiontypedef"></a>
-
+1. See [:material-code-brackets: RemediationActionTypeType](./literals.md#remediationactiontypetype) 
+2. See [:material-code-braces: SecurityGroupRuleDescriptionTypeDef](./type_defs.md#securitygroupruledescriptiontypedef) 
 ## SecurityGroupRuleDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import SecurityGroupRuleDescriptionTypeDef
+
+def get_value() -> SecurityGroupRuleDescriptionTypeDef:
+    return {
+        "IPV4Range": ...,
+    }
 ```
 
-Optional fields:
-
-- `IPV4Range`: `str`
-- `IPV6Range`: `str`
-- `PrefixListId`: `str`
-- `Protocol`: `str`
-- `FromPort`: `int`
-- `ToPort`: `int`
-
-<a id="securityservicepolicydatatypedef"></a>
+```python title="Definition"
+class SecurityGroupRuleDescriptionTypeDef(TypedDict):
+    IPV4Range: NotRequired[str],
+    IPV6Range: NotRequired[str],
+    PrefixListId: NotRequired[str],
+    Protocol: NotRequired[str],
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+```
 
 ## SecurityServicePolicyDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import SecurityServicePolicyDataTypeDef
+
+def get_value() -> SecurityServicePolicyDataTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SecurityServicePolicyDataTypeDef(TypedDict):
+    Type: SecurityServiceTypeType,  # (1)
+    ManagedServiceData: NotRequired[str],
+    PolicyOption: NotRequired[PolicyOptionTypeDef],  # (2)
+```
 
-- `Type`: [SecurityServiceTypeType](./literals.md#securityservicetypetype)
-
-Optional fields:
-
-- `ManagedServiceData`: `str`
-- `PolicyOption`: [PolicyOptionTypeDef](./type_defs.md#policyoptiontypedef)
-
-<a id="statefulrulegrouptypedef"></a>
-
+1. See [:material-code-brackets: SecurityServiceTypeType](./literals.md#securityservicetypetype) 
+2. See [:material-code-braces: PolicyOptionTypeDef](./type_defs.md#policyoptiontypedef) 
 ## StatefulRuleGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import StatefulRuleGroupTypeDef
+
+def get_value() -> StatefulRuleGroupTypeDef:
+    return {
+        "RuleGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleGroupName`: `str`
-- `ResourceId`: `str`
-
-<a id="statelessrulegrouptypedef"></a>
+```python title="Definition"
+class StatefulRuleGroupTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    ResourceId: NotRequired[str],
+```
 
 ## StatelessRuleGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import StatelessRuleGroupTypeDef
+
+def get_value() -> StatelessRuleGroupTypeDef:
+    return {
+        "RuleGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleGroupName`: `str`
-- `ResourceId`: `str`
-- `Priority`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StatelessRuleGroupTypeDef(TypedDict):
+    RuleGroupName: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Priority: NotRequired[int],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="violationdetailtypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## ViolationDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_fms.type_defs import ViolationDetailTypeDef
+
+def get_value() -> ViolationDetailTypeDef:
+    return {
+        "PolicyId": ...,
+        "MemberAccount": ...,
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "ResourceViolations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ViolationDetailTypeDef(TypedDict):
+    PolicyId: str,
+    MemberAccount: str,
+    ResourceId: str,
+    ResourceType: str,
+    ResourceViolations: List[ResourceViolationTypeDef],  # (1)
+    ResourceTags: NotRequired[List[TagTypeDef]],  # (2)
+    ResourceDescription: NotRequired[str],
+```
 
-- `PolicyId`: `str`
-- `MemberAccount`: `str`
-- `ResourceId`: `str`
-- `ResourceType`: `str`
-- `ResourceViolations`:
-  `List`\[[ResourceViolationTypeDef](./type_defs.md#resourceviolationtypedef)\]
-
-Optional fields:
-
-- `ResourceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceDescription`: `str`
+1. See [:material-code-braces: ResourceViolationTypeDef](./type_defs.md#resourceviolationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 

@@ -1,126 +1,18 @@
-<a id="alexaforbusinessclient-for-boto3-alexaforbusiness-module"></a>
+# AlexaForBusinessClient
 
-# AlexaForBusinessClient for boto3 AlexaForBusiness module
+> [Index](../README.md) > [AlexaForBusiness](./README.md) > AlexaForBusinessClient
 
-> [Index](../README.md) > [AlexaForBusiness](./README.md) >
-> AlexaForBusinessClient
+!!! note ""
 
-Auto-generated documentation for
-[AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
-type annotations stubs module
-[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
-
-- [AlexaForBusinessClient for boto3 AlexaForBusiness module](#alexaforbusinessclient-for-boto3-alexaforbusiness-module)
-  - [AlexaForBusinessClient](#alexaforbusinessclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [approve_skill](#approve_skill)
-    - [associate_contact_with_address_book](#associate_contact_with_address_book)
-    - [associate_device_with_network_profile](#associate_device_with_network_profile)
-    - [associate_device_with_room](#associate_device_with_room)
-    - [associate_skill_group_with_room](#associate_skill_group_with_room)
-    - [associate_skill_with_skill_group](#associate_skill_with_skill_group)
-    - [associate_skill_with_users](#associate_skill_with_users)
-    - [can_paginate](#can_paginate)
-    - [create_address_book](#create_address_book)
-    - [create_business_report_schedule](#create_business_report_schedule)
-    - [create_conference_provider](#create_conference_provider)
-    - [create_contact](#create_contact)
-    - [create_gateway_group](#create_gateway_group)
-    - [create_network_profile](#create_network_profile)
-    - [create_profile](#create_profile)
-    - [create_room](#create_room)
-    - [create_skill_group](#create_skill_group)
-    - [create_user](#create_user)
-    - [delete_address_book](#delete_address_book)
-    - [delete_business_report_schedule](#delete_business_report_schedule)
-    - [delete_conference_provider](#delete_conference_provider)
-    - [delete_contact](#delete_contact)
-    - [delete_device](#delete_device)
-    - [delete_device_usage_data](#delete_device_usage_data)
-    - [delete_gateway_group](#delete_gateway_group)
-    - [delete_network_profile](#delete_network_profile)
-    - [delete_profile](#delete_profile)
-    - [delete_room](#delete_room)
-    - [delete_room_skill_parameter](#delete_room_skill_parameter)
-    - [delete_skill_authorization](#delete_skill_authorization)
-    - [delete_skill_group](#delete_skill_group)
-    - [delete_user](#delete_user)
-    - [disassociate_contact_from_address_book](#disassociate_contact_from_address_book)
-    - [disassociate_device_from_room](#disassociate_device_from_room)
-    - [disassociate_skill_from_skill_group](#disassociate_skill_from_skill_group)
-    - [disassociate_skill_from_users](#disassociate_skill_from_users)
-    - [disassociate_skill_group_from_room](#disassociate_skill_group_from_room)
-    - [forget_smart_home_appliances](#forget_smart_home_appliances)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_address_book](#get_address_book)
-    - [get_conference_preference](#get_conference_preference)
-    - [get_conference_provider](#get_conference_provider)
-    - [get_contact](#get_contact)
-    - [get_device](#get_device)
-    - [get_gateway](#get_gateway)
-    - [get_gateway_group](#get_gateway_group)
-    - [get_invitation_configuration](#get_invitation_configuration)
-    - [get_network_profile](#get_network_profile)
-    - [get_profile](#get_profile)
-    - [get_room](#get_room)
-    - [get_room_skill_parameter](#get_room_skill_parameter)
-    - [get_skill_group](#get_skill_group)
-    - [list_business_report_schedules](#list_business_report_schedules)
-    - [list_conference_providers](#list_conference_providers)
-    - [list_device_events](#list_device_events)
-    - [list_gateway_groups](#list_gateway_groups)
-    - [list_gateways](#list_gateways)
-    - [list_skills](#list_skills)
-    - [list_skills_store_categories](#list_skills_store_categories)
-    - [list_skills_store_skills_by_category](#list_skills_store_skills_by_category)
-    - [list_smart_home_appliances](#list_smart_home_appliances)
-    - [list_tags](#list_tags)
-    - [put_conference_preference](#put_conference_preference)
-    - [put_invitation_configuration](#put_invitation_configuration)
-    - [put_room_skill_parameter](#put_room_skill_parameter)
-    - [put_skill_authorization](#put_skill_authorization)
-    - [register_avs_device](#register_avs_device)
-    - [reject_skill](#reject_skill)
-    - [resolve_room](#resolve_room)
-    - [revoke_invitation](#revoke_invitation)
-    - [search_address_books](#search_address_books)
-    - [search_contacts](#search_contacts)
-    - [search_devices](#search_devices)
-    - [search_network_profiles](#search_network_profiles)
-    - [search_profiles](#search_profiles)
-    - [search_rooms](#search_rooms)
-    - [search_skill_groups](#search_skill_groups)
-    - [search_users](#search_users)
-    - [send_announcement](#send_announcement)
-    - [send_invitation](#send_invitation)
-    - [start_device_sync](#start_device_sync)
-    - [start_smart_home_appliance_discovery](#start_smart_home_appliance_discovery)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_address_book](#update_address_book)
-    - [update_business_report_schedule](#update_business_report_schedule)
-    - [update_conference_provider](#update_conference_provider)
-    - [update_contact](#update_contact)
-    - [update_device](#update_device)
-    - [update_gateway](#update_gateway)
-    - [update_gateway_group](#update_gateway_group)
-    - [update_network_profile](#update_network_profile)
-    - [update_profile](#update_profile)
-    - [update_room](#update_room)
-    - [update_skill_group](#update_skill_group)
-    - [get_paginator](#get_paginator)
-
-<a id="alexaforbusinessclient"></a>
+    Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+    type annotations stubs module [mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 ## AlexaForBusinessClient
 
-Type annotations for `boto3.client("alexaforbusiness")`
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 
@@ -128,2302 +20,3023 @@ def get_alexaforbusiness_client() -> AlexaForBusinessClient:
     return Session().client("alexaforbusiness")
 ```
 
-Boto3 documentation:
-[AlexaForBusiness.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("alexaforbusiness").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("alexaforbusiness")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyExistsException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.DeviceNotRegisteredException,
+    client.InvalidCertificateAuthorityException,
+    client.InvalidDeviceException,
+    client.InvalidSecretsManagerResourceException,
+    client.InvalidServiceLinkedRoleStateException,
+    client.InvalidUserStatusException,
+    client.LimitExceededException,
+    client.NameInUseException,
+    client.NotFoundException,
+    client.ResourceAssociatedException,
+    client.ResourceInUseException,
+    client.SkillNotLinkedException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_alexaforbusiness.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.DeviceNotRegisteredException`
-- `Exceptions.InvalidCertificateAuthorityException`
-- `Exceptions.InvalidDeviceException`
-- `Exceptions.InvalidSecretsManagerResourceException`
-- `Exceptions.InvalidServiceLinkedRoleStateException`
-- `Exceptions.InvalidUserStatusException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NameInUseException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceAssociatedException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.SkillNotLinkedException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AlexaForBusinessClient exceptions.
-
-Type annotations for `boto3.client("alexaforbusiness").exceptions` method.
-
-Boto3 documentation:
-[AlexaForBusiness.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="approve\_skill"></a>
-
-### approve_skill
+### approve\_skill
 
 Associates a skill with the organization under the customer's AWS account.
 
-Type annotations for `boto3.client("alexaforbusiness").approve_skill` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").approve_skill` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.approve_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.approve_skill)
+```python title="Method definition"
+def approve_skill(
+    self,
+    *,
+    SkillId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ApproveSkillRequestRequestTypeDef](./type_defs.md#approveskillrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ApproveSkillRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.approve_skill(**kwargs)
+```
 
-<a id="associate\_contact\_with\_address\_book"></a>
+1. See [:material-code-braces: ApproveSkillRequestRequestTypeDef](./type_defs.md#approveskillrequestrequesttypedef) 
 
-### associate_contact_with_address_book
+### associate\_contact\_with\_address\_book
 
 Associates a contact with a given address book.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_contact_with_address_book` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_contact_with_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_contact_with_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_contact_with_address_book)
+```python title="Method definition"
+def associate_contact_with_address_book(
+    self,
+    *,
+    ContactArn: str,
+    AddressBookArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateContactWithAddressBookRequestRequestTypeDef](./type_defs.md#associatecontactwithaddressbookrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactArn`: `str` *(required)*
-- `AddressBookArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateContactWithAddressBookRequestRequestTypeDef = {  # (1)
+    "ContactArn": ...,
+    "AddressBookArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_contact_with_address_book(**kwargs)
+```
 
-<a id="associate\_device\_with\_network\_profile"></a>
+1. See [:material-code-braces: AssociateContactWithAddressBookRequestRequestTypeDef](./type_defs.md#associatecontactwithaddressbookrequestrequesttypedef) 
 
-### associate_device_with_network_profile
+### associate\_device\_with\_network\_profile
 
 Associates a device with the specified network profile.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_device_with_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_device_with_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_device_with_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_network_profile)
+```python title="Method definition"
+def associate_device_with_network_profile(
+    self,
+    *,
+    DeviceArn: str,
+    NetworkProfileArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDeviceWithNetworkProfileRequestRequestTypeDef](./type_defs.md#associatedevicewithnetworkprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str` *(required)*
-- `NetworkProfileArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateDeviceWithNetworkProfileRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+    "NetworkProfileArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_device_with_network_profile(**kwargs)
+```
 
-<a id="associate\_device\_with\_room"></a>
+1. See [:material-code-braces: AssociateDeviceWithNetworkProfileRequestRequestTypeDef](./type_defs.md#associatedevicewithnetworkprofilerequestrequesttypedef) 
 
-### associate_device_with_room
+### associate\_device\_with\_room
 
 Associates a device with a given room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_device_with_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_device_with_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_device_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_device_with_room)
+```python title="Method definition"
+def associate_device_with_room(
+    self,
+    *,
+    DeviceArn: str = ...,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDeviceWithRoomRequestRequestTypeDef](./type_defs.md#associatedevicewithroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str`
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateDeviceWithRoomRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_device_with_room(**kwargs)
+```
 
-<a id="associate\_skill\_group\_with\_room"></a>
+1. See [:material-code-braces: AssociateDeviceWithRoomRequestRequestTypeDef](./type_defs.md#associatedevicewithroomrequestrequesttypedef) 
 
-### associate_skill_group_with_room
+### associate\_skill\_group\_with\_room
 
 Associates a skill group with a given room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_skill_group_with_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_skill_group_with_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_group_with_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_group_with_room)
+```python title="Method definition"
+def associate_skill_group_with_room(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateSkillGroupWithRoomRequestRequestTypeDef](./type_defs.md#associateskillgroupwithroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateSkillGroupWithRoomRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_skill_group_with_room(**kwargs)
+```
 
-<a id="associate\_skill\_with\_skill\_group"></a>
+1. See [:material-code-braces: AssociateSkillGroupWithRoomRequestRequestTypeDef](./type_defs.md#associateskillgroupwithroomrequestrequesttypedef) 
 
-### associate_skill_with_skill_group
+### associate\_skill\_with\_skill\_group
 
 Associates a skill with a skill group.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_skill_with_skill_group` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_skill_with_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_with_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_skill_group)
+```python title="Method definition"
+def associate_skill_with_skill_group(
+    self,
+    *,
+    SkillId: str,
+    SkillGroupArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateSkillWithSkillGroupRequestRequestTypeDef](./type_defs.md#associateskillwithskillgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `SkillGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateSkillWithSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_skill_with_skill_group(**kwargs)
+```
 
-<a id="associate\_skill\_with\_users"></a>
+1. See [:material-code-braces: AssociateSkillWithSkillGroupRequestRequestTypeDef](./type_defs.md#associateskillwithskillgrouprequestrequesttypedef) 
 
-### associate_skill_with_users
+### associate\_skill\_with\_users
 
 Makes a private skill available for enrolled users to enable on their devices.
 
-Type annotations for
-`boto3.client("alexaforbusiness").associate_skill_with_users` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").associate_skill_with_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.associate_skill_with_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.associate_skill_with_users)
+```python title="Method definition"
+def associate_skill_with_users(
+    self,
+    *,
+    SkillId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateSkillWithUsersRequestRequestTypeDef](./type_defs.md#associateskillwithusersrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateSkillWithUsersRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_skill_with_users(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateSkillWithUsersRequestRequestTypeDef](./type_defs.md#associateskillwithusersrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("alexaforbusiness").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_address\_book"></a>
-
-### create_address_book
+### create\_address\_book
 
 Creates an address book with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_address_book`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_address_book)
+```python title="Method definition"
+def create_address_book(
+    self,
+    *,
+    Name: str,
+    Description: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateAddressBookResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAddressBookRequestRequestTypeDef](./type_defs.md#createaddressbookrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAddressBookRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef).
+parent.create_address_book(**kwargs)
+```
 
-<a id="create\_business\_report\_schedule"></a>
+1. See [:material-code-braces: CreateAddressBookRequestRequestTypeDef](./type_defs.md#createaddressbookrequestrequesttypedef) 
 
-### create_business_report_schedule
+### create\_business\_report\_schedule
 
 Creates a recurring schedule for usage reports to deliver to the specified S3
 location with a specified daily or weekly interval.
 
-Type annotations for
-`boto3.client("alexaforbusiness").create_business_report_schedule` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_business_report_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_business_report_schedule)
+```python title="Method definition"
+def create_business_report_schedule(
+    self,
+    *,
+    Format: BusinessReportFormatType,  # (1)
+    ContentRange: BusinessReportContentRangeTypeDef,  # (2)
+    ScheduleName: str = ...,
+    S3BucketName: str = ...,
+    S3KeyPrefix: str = ...,
+    Recurrence: BusinessReportRecurrenceTypeDef = ...,  # (3)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateBusinessReportScheduleResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#createbusinessreportschedulerequestrequesttypedef).
+1. See [:material-code-brackets: BusinessReportFormatType](./literals.md#businessreportformattype) 
+2. See [:material-code-braces: BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef) 
+3. See [:material-code-braces: BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
-  *(required)*
-- `ContentRange`:
-  [BusinessReportContentRangeTypeDef](./type_defs.md#businessreportcontentrangetypedef)
-  *(required)*
-- `ScheduleName`: `str`
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateBusinessReportScheduleRequestRequestTypeDef = {  # (1)
+    "Format": ...,
+    "ContentRange": ...,
+}
 
-Returns
-[CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef).
+parent.create_business_report_schedule(**kwargs)
+```
 
-<a id="create\_conference\_provider"></a>
+1. See [:material-code-braces: CreateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#createbusinessreportschedulerequestrequesttypedef) 
 
-### create_conference_provider
+### create\_conference\_provider
 
 Adds a new conference provider under the user's AWS account.
 
-Type annotations for
-`boto3.client("alexaforbusiness").create_conference_provider` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_conference_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_conference_provider)
+```python title="Method definition"
+def create_conference_provider(
+    self,
+    *,
+    ConferenceProviderName: str,
+    ConferenceProviderType: ConferenceProviderTypeType,  # (1)
+    MeetingSetting: MeetingSettingTypeDef,  # (2)
+    IPDialIn: IPDialInTypeDef = ...,  # (3)
+    PSTNDialIn: PSTNDialInTypeDef = ...,  # (4)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateConferenceProviderResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateConferenceProviderRequestRequestTypeDef](./type_defs.md#createconferenceproviderrequestrequesttypedef).
+1. See [:material-code-brackets: ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype) 
+2. See [:material-code-braces: MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) 
+3. See [:material-code-braces: IPDialInTypeDef](./type_defs.md#ipdialintypedef) 
+4. See [:material-code-braces: PSTNDialInTypeDef](./type_defs.md#pstndialintypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConferenceProviderName`: `str` *(required)*
-- `ConferenceProviderType`:
-  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
-  *(required)*
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) *(required)*
-- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
-- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConferenceProviderRequestRequestTypeDef = {  # (1)
+    "ConferenceProviderName": ...,
+    "ConferenceProviderType": ...,
+    "MeetingSetting": ...,
+}
 
-Returns
-[CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef).
+parent.create_conference_provider(**kwargs)
+```
 
-<a id="create\_contact"></a>
+1. See [:material-code-braces: CreateConferenceProviderRequestRequestTypeDef](./type_defs.md#createconferenceproviderrequestrequesttypedef) 
 
-### create_contact
+### create\_contact
 
 Creates a contact with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_contact` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_contact)
+```python title="Method definition"
+def create_contact(
+    self,
+    *,
+    FirstName: str,
+    DisplayName: str = ...,
+    LastName: str = ...,
+    PhoneNumber: str = ...,
+    PhoneNumbers: Sequence[PhoneNumberTypeDef] = ...,  # (1)
+    SipAddresses: Sequence[SipAddressTypeDef] = ...,  # (2)
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateContactResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef).
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FirstName`: `str` *(required)*
-- `DisplayName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateContactRequestRequestTypeDef = {  # (1)
+    "FirstName": ...,
+}
 
-Returns
-[CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef).
+parent.create_contact(**kwargs)
+```
 
-<a id="create\_gateway\_group"></a>
+1. See [:material-code-braces: CreateContactRequestRequestTypeDef](./type_defs.md#createcontactrequestrequesttypedef) 
 
-### create_gateway_group
+### create\_gateway\_group
 
 Creates a gateway group with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_gateway_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_gateway_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_gateway_group)
+```python title="Method definition"
+def create_gateway_group(
+    self,
+    *,
+    Name: str,
+    ClientRequestToken: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateGatewayGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGatewayGroupRequestRequestTypeDef](./type_defs.md#creategatewaygrouprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGatewayGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef).
+parent.create_gateway_group(**kwargs)
+```
 
-<a id="create\_network\_profile"></a>
+1. See [:material-code-braces: CreateGatewayGroupRequestRequestTypeDef](./type_defs.md#creategatewaygrouprequestrequesttypedef) 
 
-### create_network_profile
+### create\_network\_profile
 
 Creates a network profile with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_network_profile)
+```python title="Method definition"
+def create_network_profile(
+    self,
+    *,
+    NetworkProfileName: str,
+    Ssid: str,
+    SecurityType: NetworkSecurityTypeType,  # (1)
+    ClientRequestToken: str,
+    Description: str = ...,
+    EapMethod: NetworkEapMethodType = ...,  # (2)
+    CurrentPassword: str = ...,
+    NextPassword: str = ...,
+    CertificateAuthorityArn: str = ...,
+    TrustAnchors: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateNetworkProfileResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef).
+1. See [:material-code-brackets: NetworkSecurityTypeType](./literals.md#networksecuritytypetype) 
+2. See [:material-code-brackets: NetworkEapMethodType](./literals.md#networkeapmethodtype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NetworkProfileName`: `str` *(required)*
-- `Ssid`: `str` *(required)*
-- `SecurityType`:
-  [NetworkSecurityTypeType](./literals.md#networksecuritytypetype) *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `Description`: `str`
-- `EapMethod`: `Literal['EAP_TLS']` (see
-  [NetworkEapMethodType](./literals.md#networkeapmethodtype))
-- `CurrentPassword`: `str`
-- `NextPassword`: `str`
-- `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateNetworkProfileRequestRequestTypeDef = {  # (1)
+    "NetworkProfileName": ...,
+    "Ssid": ...,
+    "SecurityType": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef).
+parent.create_network_profile(**kwargs)
+```
 
-<a id="create\_profile"></a>
+1. See [:material-code-braces: CreateNetworkProfileRequestRequestTypeDef](./type_defs.md#createnetworkprofilerequestrequesttypedef) 
 
-### create_profile
+### create\_profile
 
 Creates a new room profile with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_profile` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_profile)
+```python title="Method definition"
+def create_profile(
+    self,
+    *,
+    ProfileName: str,
+    Timezone: str,
+    Address: str,
+    DistanceUnit: DistanceUnitType,  # (1)
+    TemperatureUnit: TemperatureUnitType,  # (2)
+    WakeWord: WakeWordType,  # (3)
+    Locale: str = ...,
+    ClientRequestToken: str = ...,
+    SetupModeDisabled: bool = ...,
+    MaxVolumeLimit: int = ...,
+    PSTNEnabled: bool = ...,
+    DataRetentionOptIn: bool = ...,
+    MeetingRoomConfiguration: CreateMeetingRoomConfigurationTypeDef = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+) -> CreateProfileResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateProfileRequestRequestTypeDef](./type_defs.md#createprofilerequestrequesttypedef).
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
+4. See [:material-code-braces: CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProfileName`: `str` *(required)*
-- `Timezone`: `str` *(required)*
-- `Address`: `str` *(required)*
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-  *(required)*
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-  *(required)*
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype) *(required)*
-- `Locale`: `str`
-- `ClientRequestToken`: `str`
-- `SetupModeDisabled`: `bool`
-- `MaxVolumeLimit`: `int`
-- `PSTNEnabled`: `bool`
-- `DataRetentionOptIn`: `bool`
-- `MeetingRoomConfiguration`:
-  [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProfileRequestRequestTypeDef = {  # (1)
+    "ProfileName": ...,
+    "Timezone": ...,
+    "Address": ...,
+    "DistanceUnit": ...,
+    "TemperatureUnit": ...,
+    "WakeWord": ...,
+}
 
-Returns
-[CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
+parent.create_profile(**kwargs)
+```
 
-<a id="create\_room"></a>
+1. See [:material-code-braces: CreateProfileRequestRequestTypeDef](./type_defs.md#createprofilerequestrequesttypedef) 
 
-### create_room
+### create\_room
 
 Creates a room with the specified details.
 
-Type annotations for `boto3.client("alexaforbusiness").create_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_room)
+```python title="Method definition"
+def create_room(
+    self,
+    *,
+    RoomName: str,
+    Description: str = ...,
+    ProfileArn: str = ...,
+    ProviderCalendarId: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateRoomResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoomName`: `str` *(required)*
-- `Description`: `str`
-- `ProfileArn`: `str`
-- `ProviderCalendarId`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRoomRequestRequestTypeDef = {  # (1)
+    "RoomName": ...,
+}
 
-Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
+parent.create_room(**kwargs)
+```
 
-<a id="create\_skill\_group"></a>
+1. See [:material-code-braces: CreateRoomRequestRequestTypeDef](./type_defs.md#createroomrequestrequesttypedef) 
 
-### create_skill_group
+### create\_skill\_group
 
 Creates a skill group with a specified name and description.
 
-Type annotations for `boto3.client("alexaforbusiness").create_skill_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_skill_group)
+```python title="Method definition"
+def create_skill_group(
+    self,
+    *,
+    SkillGroupName: str,
+    Description: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSkillGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSkillGroupRequestRequestTypeDef](./type_defs.md#createskillgrouprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SkillGroupName`: `str` *(required)*
-- `Description`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillGroupName": ...,
+}
 
-Returns
-[CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef).
+parent.create_skill_group(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateSkillGroupRequestRequestTypeDef](./type_defs.md#createskillgrouprequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user.
 
-Type annotations for `boto3.client("alexaforbusiness").create_user` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    UserId: str,
+    FirstName: str = ...,
+    LastName: str = ...,
+    Email: str = ...,
+    ClientRequestToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `FirstName`: `str`
-- `LastName`: `str`
-- `Email`: `str`
-- `ClientRequestToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_address\_book"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_address_book
+### delete\_address\_book
 
 Deletes an address book by the address book ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_address_book`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_address_book)
+```python title="Method definition"
+def delete_address_book(
+    self,
+    *,
+    AddressBookArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAddressBookRequestRequestTypeDef](./type_defs.md#deleteaddressbookrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AddressBookArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAddressBookRequestRequestTypeDef = {  # (1)
+    "AddressBookArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_address_book(**kwargs)
+```
 
-<a id="delete\_business\_report\_schedule"></a>
+1. See [:material-code-braces: DeleteAddressBookRequestRequestTypeDef](./type_defs.md#deleteaddressbookrequestrequesttypedef) 
 
-### delete_business_report_schedule
+### delete\_business\_report\_schedule
 
 Deletes the recurring report delivery schedule with the specified schedule ARN.
 
-Type annotations for
-`boto3.client("alexaforbusiness").delete_business_report_schedule` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_business_report_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_business_report_schedule)
+```python title="Method definition"
+def delete_business_report_schedule(
+    self,
+    *,
+    ScheduleArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#deletebusinessreportschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ScheduleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBusinessReportScheduleRequestRequestTypeDef = {  # (1)
+    "ScheduleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_business_report_schedule(**kwargs)
+```
 
-<a id="delete\_conference\_provider"></a>
+1. See [:material-code-braces: DeleteBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#deletebusinessreportschedulerequestrequesttypedef) 
 
-### delete_conference_provider
+### delete\_conference\_provider
 
 Deletes a conference provider.
 
-Type annotations for
-`boto3.client("alexaforbusiness").delete_conference_provider` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_conference_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_conference_provider)
+```python title="Method definition"
+def delete_conference_provider(
+    self,
+    *,
+    ConferenceProviderArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConferenceProviderRequestRequestTypeDef](./type_defs.md#deleteconferenceproviderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConferenceProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConferenceProviderRequestRequestTypeDef = {  # (1)
+    "ConferenceProviderArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_conference_provider(**kwargs)
+```
 
-<a id="delete\_contact"></a>
+1. See [:material-code-braces: DeleteConferenceProviderRequestRequestTypeDef](./type_defs.md#deleteconferenceproviderrequestrequesttypedef) 
 
-### delete_contact
+### delete\_contact
 
 Deletes a contact by the contact ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_contact` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_contact)
+```python title="Method definition"
+def delete_contact(
+    self,
+    *,
+    ContactArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContactRequestRequestTypeDef = {  # (1)
+    "ContactArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_contact(**kwargs)
+```
 
-<a id="delete\_device"></a>
+1. See [:material-code-braces: DeleteContactRequestRequestTypeDef](./type_defs.md#deletecontactrequestrequesttypedef) 
 
-### delete_device
+### delete\_device
 
 Removes a device from Alexa For Business.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_device` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device)
+```python title="Method definition"
+def delete_device(
+    self,
+    *,
+    DeviceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_device(**kwargs)
+```
 
-<a id="delete\_device\_usage\_data"></a>
+1. See [:material-code-braces: DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef) 
 
-### delete_device_usage_data
+### delete\_device\_usage\_data
 
 When this action is called for a specified shared device, it allows authorized
 users to delete the device's entire previous history of voice input data and
 associated response data.
 
-Type annotations for
-`boto3.client("alexaforbusiness").delete_device_usage_data` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_device_usage_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_device_usage_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_device_usage_data)
+```python title="Method definition"
+def delete_device_usage_data(
+    self,
+    *,
+    DeviceArn: str,
+    DeviceUsageType: DeviceUsageTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeviceUsageDataRequestRequestTypeDef](./type_defs.md#deletedeviceusagedatarequestrequesttypedef).
+1. See [:material-code-brackets: DeviceUsageTypeType](./literals.md#deviceusagetypetype) 
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str` *(required)*
-- `DeviceUsageType`: `Literal['VOICE']` (see
-  [DeviceUsageTypeType](./literals.md#deviceusagetypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeviceUsageDataRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+    "DeviceUsageType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_device_usage_data(**kwargs)
+```
 
-<a id="delete\_gateway\_group"></a>
+1. See [:material-code-braces: DeleteDeviceUsageDataRequestRequestTypeDef](./type_defs.md#deletedeviceusagedatarequestrequesttypedef) 
 
-### delete_gateway_group
+### delete\_gateway\_group
 
 Deletes a gateway group.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_gateway_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_gateway_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_gateway_group)
+```python title="Method definition"
+def delete_gateway_group(
+    self,
+    *,
+    GatewayGroupArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGatewayGroupRequestRequestTypeDef](./type_defs.md#deletegatewaygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GatewayGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayGroupRequestRequestTypeDef = {  # (1)
+    "GatewayGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_gateway_group(**kwargs)
+```
 
-<a id="delete\_network\_profile"></a>
+1. See [:material-code-braces: DeleteGatewayGroupRequestRequestTypeDef](./type_defs.md#deletegatewaygrouprequestrequesttypedef) 
 
-### delete_network_profile
+### delete\_network\_profile
 
 Deletes a network profile by the network profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_network_profile)
+```python title="Method definition"
+def delete_network_profile(
+    self,
+    *,
+    NetworkProfileArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `NetworkProfileArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNetworkProfileRequestRequestTypeDef = {  # (1)
+    "NetworkProfileArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_network_profile(**kwargs)
+```
 
-<a id="delete\_profile"></a>
+1. See [:material-code-braces: DeleteNetworkProfileRequestRequestTypeDef](./type_defs.md#deletenetworkprofilerequestrequesttypedef) 
 
-### delete_profile
+### delete\_profile
 
 Deletes a room profile by the profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_profile` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_profile)
+```python title="Method definition"
+def delete_profile(
+    self,
+    *,
+    ProfileArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProfileRequestRequestTypeDef](./type_defs.md#deleteprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProfileArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteProfileRequestRequestTypeDef = {  # (1)
+    "ProfileArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_profile(**kwargs)
+```
 
-<a id="delete\_room"></a>
+1. See [:material-code-braces: DeleteProfileRequestRequestTypeDef](./type_defs.md#deleteprofilerequestrequesttypedef) 
 
-### delete_room
+### delete\_room
 
 Deletes a room by the room ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room)
+```python title="Method definition"
+def delete_room(
+    self,
+    *,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRoomRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_room(**kwargs)
+```
 
-<a id="delete\_room\_skill\_parameter"></a>
+1. See [:material-code-braces: DeleteRoomRequestRequestTypeDef](./type_defs.md#deleteroomrequestrequesttypedef) 
 
-### delete_room_skill_parameter
+### delete\_room\_skill\_parameter
 
 Deletes room skill parameter details by room, skill, and parameter key ID.
 
-Type annotations for
-`boto3.client("alexaforbusiness").delete_room_skill_parameter` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_room_skill_parameter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_room_skill_parameter)
+```python title="Method definition"
+def delete_room_skill_parameter(
+    self,
+    *,
+    SkillId: str,
+    ParameterKey: str,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoomSkillParameterRequestRequestTypeDef](./type_defs.md#deleteroomskillparameterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `ParameterKey`: `str` *(required)*
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRoomSkillParameterRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+    "ParameterKey": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_room_skill_parameter(**kwargs)
+```
 
-<a id="delete\_skill\_authorization"></a>
+1. See [:material-code-braces: DeleteRoomSkillParameterRequestRequestTypeDef](./type_defs.md#deleteroomskillparameterrequestrequesttypedef) 
 
-### delete_skill_authorization
+### delete\_skill\_authorization
 
 Unlinks a third-party account from a skill.
 
-Type annotations for
-`boto3.client("alexaforbusiness").delete_skill_authorization` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_skill_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_authorization)
+```python title="Method definition"
+def delete_skill_authorization(
+    self,
+    *,
+    SkillId: str,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSkillAuthorizationRequestRequestTypeDef](./type_defs.md#deleteskillauthorizationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSkillAuthorizationRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_skill_authorization(**kwargs)
+```
 
-<a id="delete\_skill\_group"></a>
+1. See [:material-code-braces: DeleteSkillAuthorizationRequestRequestTypeDef](./type_defs.md#deleteskillauthorizationrequestrequesttypedef) 
 
-### delete_skill_group
+### delete\_skill\_group
 
 Deletes a skill group by skill group ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_skill_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_skill_group)
+```python title="Method definition"
+def delete_skill_group(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSkillGroupRequestRequestTypeDef](./type_defs.md#deleteskillgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_skill_group(**kwargs)
+```
 
-<a id="delete\_user"></a>
+1. See [:material-code-braces: DeleteSkillGroupRequestRequestTypeDef](./type_defs.md#deleteskillgrouprequestrequesttypedef) 
 
-### delete_user
+### delete\_user
 
 Deletes a specified user by user ARN and enrollment ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    EnrollmentId: str,
+    UserArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EnrollmentId`: `str` *(required)*
-- `UserArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "EnrollmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user(**kwargs)
+```
 
-<a id="disassociate\_contact\_from\_address\_book"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### disassociate_contact_from_address_book
+### disassociate\_contact\_from\_address\_book
 
 Disassociates a contact from a given address book.
 
-Type annotations for
-`boto3.client("alexaforbusiness").disassociate_contact_from_address_book`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").disassociate_contact_from_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_contact_from_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_contact_from_address_book)
+```python title="Method definition"
+def disassociate_contact_from_address_book(
+    self,
+    *,
+    ContactArn: str,
+    AddressBookArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateContactFromAddressBookRequestRequestTypeDef](./type_defs.md#disassociatecontactfromaddressbookrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ContactArn`: `str` *(required)*
-- `AddressBookArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateContactFromAddressBookRequestRequestTypeDef = {  # (1)
+    "ContactArn": ...,
+    "AddressBookArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_contact_from_address_book(**kwargs)
+```
 
-<a id="disassociate\_device\_from\_room"></a>
+1. See [:material-code-braces: DisassociateContactFromAddressBookRequestRequestTypeDef](./type_defs.md#disassociatecontactfromaddressbookrequestrequesttypedef) 
 
-### disassociate_device_from_room
+### disassociate\_device\_from\_room
 
 Disassociates a device from its current room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").disassociate_device_from_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").disassociate_device_from_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_device_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_device_from_room)
+```python title="Method definition"
+def disassociate_device_from_room(
+    self,
+    *,
+    DeviceArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateDeviceFromRoomRequestRequestTypeDef](./type_defs.md#disassociatedevicefromroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateDeviceFromRoomRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_device_from_room(**kwargs)
+```
 
-<a id="disassociate\_skill\_from\_skill\_group"></a>
+1. See [:material-code-braces: DisassociateDeviceFromRoomRequestRequestTypeDef](./type_defs.md#disassociatedevicefromroomrequestrequesttypedef) 
 
-### disassociate_skill_from_skill_group
+### disassociate\_skill\_from\_skill\_group
 
 Disassociates a skill from a skill group.
 
-Type annotations for
-`boto3.client("alexaforbusiness").disassociate_skill_from_skill_group` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").disassociate_skill_from_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_from_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_skill_group)
+```python title="Method definition"
+def disassociate_skill_from_skill_group(
+    self,
+    *,
+    SkillId: str,
+    SkillGroupArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateSkillFromSkillGroupRequestRequestTypeDef](./type_defs.md#disassociateskillfromskillgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `SkillGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateSkillFromSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_skill_from_skill_group(**kwargs)
+```
 
-<a id="disassociate\_skill\_from\_users"></a>
+1. See [:material-code-braces: DisassociateSkillFromSkillGroupRequestRequestTypeDef](./type_defs.md#disassociateskillfromskillgrouprequestrequesttypedef) 
 
-### disassociate_skill_from_users
+### disassociate\_skill\_from\_users
 
 Makes a private skill unavailable for enrolled users and prevents them from
 enabling it on their devices.
 
-Type annotations for
-`boto3.client("alexaforbusiness").disassociate_skill_from_users` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").disassociate_skill_from_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_from_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_from_users)
+```python title="Method definition"
+def disassociate_skill_from_users(
+    self,
+    *,
+    SkillId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateSkillFromUsersRequestRequestTypeDef](./type_defs.md#disassociateskillfromusersrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateSkillFromUsersRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_skill_from_users(**kwargs)
+```
 
-<a id="disassociate\_skill\_group\_from\_room"></a>
+1. See [:material-code-braces: DisassociateSkillFromUsersRequestRequestTypeDef](./type_defs.md#disassociateskillfromusersrequestrequesttypedef) 
 
-### disassociate_skill_group_from_room
+### disassociate\_skill\_group\_from\_room
 
 Disassociates a skill group from a specified room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").disassociate_skill_group_from_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").disassociate_skill_group_from_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.disassociate_skill_group_from_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.disassociate_skill_group_from_room)
+```python title="Method definition"
+def disassociate_skill_group_from_room(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateSkillGroupFromRoomRequestRequestTypeDef](./type_defs.md#disassociateskillgroupfromroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateSkillGroupFromRoomRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_skill_group_from_room(**kwargs)
+```
 
-<a id="forget\_smart\_home\_appliances"></a>
+1. See [:material-code-braces: DisassociateSkillGroupFromRoomRequestRequestTypeDef](./type_defs.md#disassociateskillgroupfromroomrequestrequesttypedef) 
 
-### forget_smart_home_appliances
+### forget\_smart\_home\_appliances
 
 Forgets smart home appliances associated to a room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").forget_smart_home_appliances` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").forget_smart_home_appliances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.forget_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.forget_smart_home_appliances)
+```python title="Method definition"
+def forget_smart_home_appliances(
+    self,
+    *,
+    RoomArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ForgetSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#forgetsmarthomeappliancesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoomArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ForgetSmartHomeAppliancesRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.forget_smart_home_appliances(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ForgetSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#forgetsmarthomeappliancesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("alexaforbusiness").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_address\_book"></a>
-
-### get_address_book
+### get\_address\_book
 
 Gets address the book details by the address book ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_address_book`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_address_book)
+```python title="Method definition"
+def get_address_book(
+    self,
+    *,
+    AddressBookArn: str,
+) -> GetAddressBookResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAddressBookRequestRequestTypeDef](./type_defs.md#getaddressbookrequestrequesttypedef).
+1. See [:material-code-braces: GetAddressBookResponseTypeDef](./type_defs.md#getaddressbookresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AddressBookArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAddressBookRequestRequestTypeDef = {  # (1)
+    "AddressBookArn": ...,
+}
 
-Returns
-[GetAddressBookResponseTypeDef](./type_defs.md#getaddressbookresponsetypedef).
+parent.get_address_book(**kwargs)
+```
 
-<a id="get\_conference\_preference"></a>
+1. See [:material-code-braces: GetAddressBookRequestRequestTypeDef](./type_defs.md#getaddressbookrequestrequesttypedef) 
 
-### get_conference_preference
+### get\_conference\_preference
 
 Retrieves the existing conference preferences.
 
-Type annotations for
-`boto3.client("alexaforbusiness").get_conference_preference` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_conference_preference` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_preference)
+```python title="Method definition"
+def get_conference_preference(
+    self,
+) -> GetConferencePreferenceResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef).
+1. See [:material-code-braces: GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef) 
 
-<a id="get\_conference\_provider"></a>
-
-### get_conference_provider
+### get\_conference\_provider
 
 Gets details about a specific conference provider.
 
-Type annotations for `boto3.client("alexaforbusiness").get_conference_provider`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_conference_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_conference_provider)
+```python title="Method definition"
+def get_conference_provider(
+    self,
+    *,
+    ConferenceProviderArn: str,
+) -> GetConferenceProviderResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConferenceProviderRequestRequestTypeDef](./type_defs.md#getconferenceproviderrequestrequesttypedef).
+1. See [:material-code-braces: GetConferenceProviderResponseTypeDef](./type_defs.md#getconferenceproviderresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConferenceProviderArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConferenceProviderRequestRequestTypeDef = {  # (1)
+    "ConferenceProviderArn": ...,
+}
 
-Returns
-[GetConferenceProviderResponseTypeDef](./type_defs.md#getconferenceproviderresponsetypedef).
+parent.get_conference_provider(**kwargs)
+```
 
-<a id="get\_contact"></a>
+1. See [:material-code-braces: GetConferenceProviderRequestRequestTypeDef](./type_defs.md#getconferenceproviderrequestrequesttypedef) 
 
-### get_contact
+### get\_contact
 
 Gets the contact details by the contact ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_contact` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_contact)
+```python title="Method definition"
+def get_contact(
+    self,
+    *,
+    ContactArn: str,
+) -> GetContactResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef).
+1. See [:material-code-braces: GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ContactArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContactRequestRequestTypeDef = {  # (1)
+    "ContactArn": ...,
+}
 
-Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
+parent.get_contact(**kwargs)
+```
 
-<a id="get\_device"></a>
+1. See [:material-code-braces: GetContactRequestRequestTypeDef](./type_defs.md#getcontactrequestrequesttypedef) 
 
-### get_device
+### get\_device
 
 Gets the details of a device by device ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_device` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_device)
+```python title="Method definition"
+def get_device(
+    self,
+    *,
+    DeviceArn: str = ...,
+) -> GetDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
+parent.get_device(**kwargs)
+```
 
-<a id="get\_gateway"></a>
+1. See [:material-code-braces: GetDeviceRequestRequestTypeDef](./type_defs.md#getdevicerequestrequesttypedef) 
 
-### get_gateway
+### get\_gateway
 
 Retrieves the details of a gateway.
 
-Type annotations for `boto3.client("alexaforbusiness").get_gateway` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway)
+```python title="Method definition"
+def get_gateway(
+    self,
+    *,
+    GatewayArn: str,
+) -> GetGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGatewayRequestRequestTypeDef](./type_defs.md#getgatewayrequestrequesttypedef).
+1. See [:material-code-braces: GetGatewayResponseTypeDef](./type_defs.md#getgatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGatewayRequestRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
 
-Returns [GetGatewayResponseTypeDef](./type_defs.md#getgatewayresponsetypedef).
+parent.get_gateway(**kwargs)
+```
 
-<a id="get\_gateway\_group"></a>
+1. See [:material-code-braces: GetGatewayRequestRequestTypeDef](./type_defs.md#getgatewayrequestrequesttypedef) 
 
-### get_gateway_group
+### get\_gateway\_group
 
 Retrieves the details of a gateway group.
 
-Type annotations for `boto3.client("alexaforbusiness").get_gateway_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_gateway_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_gateway_group)
+```python title="Method definition"
+def get_gateway_group(
+    self,
+    *,
+    GatewayGroupArn: str,
+) -> GetGatewayGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGatewayGroupRequestRequestTypeDef](./type_defs.md#getgatewaygrouprequestrequesttypedef).
+1. See [:material-code-braces: GetGatewayGroupResponseTypeDef](./type_defs.md#getgatewaygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GatewayGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGatewayGroupRequestRequestTypeDef = {  # (1)
+    "GatewayGroupArn": ...,
+}
 
-Returns
-[GetGatewayGroupResponseTypeDef](./type_defs.md#getgatewaygroupresponsetypedef).
+parent.get_gateway_group(**kwargs)
+```
 
-<a id="get\_invitation\_configuration"></a>
+1. See [:material-code-braces: GetGatewayGroupRequestRequestTypeDef](./type_defs.md#getgatewaygrouprequestrequesttypedef) 
 
-### get_invitation_configuration
+### get\_invitation\_configuration
 
 Retrieves the configured values for the user enrollment invitation email
 template.
 
-Type annotations for
-`boto3.client("alexaforbusiness").get_invitation_configuration` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_invitation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_invitation_configuration)
+```python title="Method definition"
+def get_invitation_configuration(
+    self,
+) -> GetInvitationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef).
+1. See [:material-code-braces: GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef) 
 
-<a id="get\_network\_profile"></a>
-
-### get_network_profile
+### get\_network\_profile
 
 Gets the network profile details by the network profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_network_profile)
+```python title="Method definition"
+def get_network_profile(
+    self,
+    *,
+    NetworkProfileArn: str,
+) -> GetNetworkProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkProfileResponseTypeDef](./type_defs.md#getnetworkprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NetworkProfileArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNetworkProfileRequestRequestTypeDef = {  # (1)
+    "NetworkProfileArn": ...,
+}
 
-Returns
-[GetNetworkProfileResponseTypeDef](./type_defs.md#getnetworkprofileresponsetypedef).
+parent.get_network_profile(**kwargs)
+```
 
-<a id="get\_profile"></a>
+1. See [:material-code-braces: GetNetworkProfileRequestRequestTypeDef](./type_defs.md#getnetworkprofilerequestrequesttypedef) 
 
-### get_profile
+### get\_profile
 
 Gets the details of a room profile by profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_profile` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_profile)
+```python title="Method definition"
+def get_profile(
+    self,
+    *,
+    ProfileArn: str = ...,
+) -> GetProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProfileArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetProfileRequestRequestTypeDef = {  # (1)
+    "ProfileArn": ...,
+}
 
-Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
+parent.get_profile(**kwargs)
+```
 
-<a id="get\_room"></a>
+1. See [:material-code-braces: GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef) 
 
-### get_room
+### get\_room
 
 Gets room details by room ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room)
+```python title="Method definition"
+def get_room(
+    self,
+    *,
+    RoomArn: str = ...,
+) -> GetRoomResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef).
+1. See [:material-code-braces: GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRoomRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
+parent.get_room(**kwargs)
+```
 
-<a id="get\_room\_skill\_parameter"></a>
+1. See [:material-code-braces: GetRoomRequestRequestTypeDef](./type_defs.md#getroomrequestrequesttypedef) 
 
-### get_room_skill_parameter
+### get\_room\_skill\_parameter
 
 Gets room skill parameter details by room, skill, and parameter key ARN.
 
-Type annotations for
-`boto3.client("alexaforbusiness").get_room_skill_parameter` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_room_skill_parameter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_room_skill_parameter)
+```python title="Method definition"
+def get_room_skill_parameter(
+    self,
+    *,
+    SkillId: str,
+    ParameterKey: str,
+    RoomArn: str = ...,
+) -> GetRoomSkillParameterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRoomSkillParameterRequestRequestTypeDef](./type_defs.md#getroomskillparameterrequestrequesttypedef).
+1. See [:material-code-braces: GetRoomSkillParameterResponseTypeDef](./type_defs.md#getroomskillparameterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `ParameterKey`: `str` *(required)*
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRoomSkillParameterRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+    "ParameterKey": ...,
+}
 
-Returns
-[GetRoomSkillParameterResponseTypeDef](./type_defs.md#getroomskillparameterresponsetypedef).
+parent.get_room_skill_parameter(**kwargs)
+```
 
-<a id="get\_skill\_group"></a>
+1. See [:material-code-braces: GetRoomSkillParameterRequestRequestTypeDef](./type_defs.md#getroomskillparameterrequestrequesttypedef) 
 
-### get_skill_group
+### get\_skill\_group
 
 Gets skill group details by skill group ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").get_skill_group` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.get_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.get_skill_group)
+```python title="Method definition"
+def get_skill_group(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+) -> GetSkillGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSkillGroupRequestRequestTypeDef](./type_defs.md#getskillgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetSkillGroupResponseTypeDef](./type_defs.md#getskillgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns
-[GetSkillGroupResponseTypeDef](./type_defs.md#getskillgroupresponsetypedef).
+parent.get_skill_group(**kwargs)
+```
 
-<a id="list\_business\_report\_schedules"></a>
+1. See [:material-code-braces: GetSkillGroupRequestRequestTypeDef](./type_defs.md#getskillgrouprequestrequesttypedef) 
 
-### list_business_report_schedules
+### list\_business\_report\_schedules
 
 Lists the details of the schedules that a user configured.
 
-Type annotations for
-`boto3.client("alexaforbusiness").list_business_report_schedules` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_business_report_schedules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_business_report_schedules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_business_report_schedules)
+```python title="Method definition"
+def list_business_report_schedules(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListBusinessReportSchedulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBusinessReportSchedulesRequestRequestTypeDef](./type_defs.md#listbusinessreportschedulesrequestrequesttypedef).
+1. See [:material-code-braces: ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListBusinessReportSchedulesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef).
+parent.list_business_report_schedules(**kwargs)
+```
 
-<a id="list\_conference\_providers"></a>
+1. See [:material-code-braces: ListBusinessReportSchedulesRequestRequestTypeDef](./type_defs.md#listbusinessreportschedulesrequestrequesttypedef) 
 
-### list_conference_providers
+### list\_conference\_providers
 
 Lists conference providers under a specific AWS account.
 
-Type annotations for
-`boto3.client("alexaforbusiness").list_conference_providers` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_conference_providers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_conference_providers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_conference_providers)
+```python title="Method definition"
+def list_conference_providers(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListConferenceProvidersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConferenceProvidersRequestRequestTypeDef](./type_defs.md#listconferenceprovidersrequestrequesttypedef).
+1. See [:material-code-braces: ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListConferenceProvidersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef).
+parent.list_conference_providers(**kwargs)
+```
 
-<a id="list\_device\_events"></a>
+1. See [:material-code-braces: ListConferenceProvidersRequestRequestTypeDef](./type_defs.md#listconferenceprovidersrequestrequesttypedef) 
 
-### list_device_events
+### list\_device\_events
 
-Lists the device event history, including device connection status, for up to
-30 days.
+Lists the device event history, including device connection status, for up to 30
+days.
 
-Type annotations for `boto3.client("alexaforbusiness").list_device_events`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_device_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_device_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_device_events)
+```python title="Method definition"
+def list_device_events(
+    self,
+    *,
+    DeviceArn: str,
+    EventType: DeviceEventTypeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDeviceEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef).
+1. See [:material-code-brackets: DeviceEventTypeType](./literals.md#deviceeventtypetype) 
+2. See [:material-code-braces: ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str` *(required)*
-- `EventType`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDeviceEventsRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns
-[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
+parent.list_device_events(**kwargs)
+```
 
-<a id="list\_gateway\_groups"></a>
+1. See [:material-code-braces: ListDeviceEventsRequestRequestTypeDef](./type_defs.md#listdeviceeventsrequestrequesttypedef) 
 
-### list_gateway_groups
+### list\_gateway\_groups
 
 Retrieves a list of gateway group summaries.
 
-Type annotations for `boto3.client("alexaforbusiness").list_gateway_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_gateway_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_gateway_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateway_groups)
+```python title="Method definition"
+def list_gateway_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGatewayGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewayGroupsRequestRequestTypeDef](./type_defs.md#listgatewaygroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGatewayGroupsResponseTypeDef](./type_defs.md#listgatewaygroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGatewayGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListGatewayGroupsResponseTypeDef](./type_defs.md#listgatewaygroupsresponsetypedef).
+parent.list_gateway_groups(**kwargs)
+```
 
-<a id="list\_gateways"></a>
+1. See [:material-code-braces: ListGatewayGroupsRequestRequestTypeDef](./type_defs.md#listgatewaygroupsrequestrequesttypedef) 
 
-### list_gateways
+### list\_gateways
 
 Retrieves a list of gateway summaries.
 
-Type annotations for `boto3.client("alexaforbusiness").list_gateways` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_gateways` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_gateways)
+```python title="Method definition"
+def list_gateways(
+    self,
+    *,
+    GatewayGroupArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGatewaysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef).
+1. See [:material-code-braces: ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GatewayGroupArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGatewaysRequestRequestTypeDef = {  # (1)
+    "GatewayGroupArn": ...,
+}
 
-Returns
-[ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
+parent.list_gateways(**kwargs)
+```
 
-<a id="list\_skills"></a>
+1. See [:material-code-braces: ListGatewaysRequestRequestTypeDef](./type_defs.md#listgatewaysrequestrequesttypedef) 
 
-### list_skills
+### list\_skills
 
 Lists all enabled skills in a specific skill group.
 
-Type annotations for `boto3.client("alexaforbusiness").list_skills` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_skills` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_skills](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills)
+```python title="Method definition"
+def list_skills(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+    EnablementType: EnablementTypeFilterType = ...,  # (1)
+    SkillType: SkillTypeFilterType = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSkillsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListSkillsRequestRequestTypeDef](./type_defs.md#listskillsrequestrequesttypedef).
+1. See [:material-code-brackets: EnablementTypeFilterType](./literals.md#enablementtypefiltertype) 
+2. See [:material-code-brackets: SkillTypeFilterType](./literals.md#skilltypefiltertype) 
+3. See [:material-code-braces: ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
-- `EnablementType`:
-  [EnablementTypeFilterType](./literals.md#enablementtypefiltertype)
-- `SkillType`: [SkillTypeFilterType](./literals.md#skilltypefiltertype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSkillsRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns [ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef).
+parent.list_skills(**kwargs)
+```
 
-<a id="list\_skills\_store\_categories"></a>
+1. See [:material-code-braces: ListSkillsRequestRequestTypeDef](./type_defs.md#listskillsrequestrequesttypedef) 
 
-### list_skills_store_categories
+### list\_skills\_store\_categories
 
 Lists all categories in the Alexa skill store.
 
-Type annotations for
-`boto3.client("alexaforbusiness").list_skills_store_categories` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_skills_store_categories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_skills_store_categories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_categories)
+```python title="Method definition"
+def list_skills_store_categories(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSkillsStoreCategoriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSkillsStoreCategoriesRequestRequestTypeDef](./type_defs.md#listskillsstorecategoriesrequestrequesttypedef).
+1. See [:material-code-braces: ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSkillsStoreCategoriesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef).
+parent.list_skills_store_categories(**kwargs)
+```
 
-<a id="list\_skills\_store\_skills\_by\_category"></a>
+1. See [:material-code-braces: ListSkillsStoreCategoriesRequestRequestTypeDef](./type_defs.md#listskillsstorecategoriesrequestrequesttypedef) 
 
-### list_skills_store_skills_by_category
+### list\_skills\_store\_skills\_by\_category
 
 Lists all skills in the Alexa skill store by category.
 
-Type annotations for
-`boto3.client("alexaforbusiness").list_skills_store_skills_by_category` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_skills_store_skills_by_category` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_skills_store_skills_by_category](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_skills_store_skills_by_category)
+```python title="Method definition"
+def list_skills_store_skills_by_category(
+    self,
+    *,
+    CategoryId: int,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSkillsStoreSkillsByCategoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSkillsStoreSkillsByCategoryRequestRequestTypeDef](./type_defs.md#listskillsstoreskillsbycategoryrequestrequesttypedef).
+1. See [:material-code-braces: ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CategoryId`: `int` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSkillsStoreSkillsByCategoryRequestRequestTypeDef = {  # (1)
+    "CategoryId": ...,
+}
 
-Returns
-[ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef).
+parent.list_skills_store_skills_by_category(**kwargs)
+```
 
-<a id="list\_smart\_home\_appliances"></a>
+1. See [:material-code-braces: ListSkillsStoreSkillsByCategoryRequestRequestTypeDef](./type_defs.md#listskillsstoreskillsbycategoryrequestrequesttypedef) 
 
-### list_smart_home_appliances
+### list\_smart\_home\_appliances
 
 Lists all of the smart home appliances associated with a room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").list_smart_home_appliances` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_smart_home_appliances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_smart_home_appliances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_smart_home_appliances)
+```python title="Method definition"
+def list_smart_home_appliances(
+    self,
+    *,
+    RoomArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSmartHomeAppliancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#listsmarthomeappliancesrequestrequesttypedef).
+1. See [:material-code-braces: ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoomArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSmartHomeAppliancesRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns
-[ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef).
+parent.list_smart_home_appliances(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListSmartHomeAppliancesRequestRequestTypeDef](./type_defs.md#listsmarthomeappliancesrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Lists all tags for the specified resource.
 
-Type annotations for `boto3.client("alexaforbusiness").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    Arn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="put\_conference\_preference"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### put_conference_preference
+### put\_conference\_preference
 
-Sets the conference preferences on a specific conference provider at the
-account level.
+Sets the conference preferences on a specific conference provider at the account
+level.
 
-Type annotations for
-`boto3.client("alexaforbusiness").put_conference_preference` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").put_conference_preference` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.put_conference_preference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_conference_preference)
+```python title="Method definition"
+def put_conference_preference(
+    self,
+    *,
+    ConferencePreference: ConferencePreferenceTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutConferencePreferenceRequestRequestTypeDef](./type_defs.md#putconferencepreferencerequestrequesttypedef).
+1. See [:material-code-braces: ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef) 
 
-Keyword-only arguments:
 
-- `ConferencePreference`:
-  [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutConferencePreferenceRequestRequestTypeDef = {  # (1)
+    "ConferencePreference": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_conference_preference(**kwargs)
+```
 
-<a id="put\_invitation\_configuration"></a>
+1. See [:material-code-braces: PutConferencePreferenceRequestRequestTypeDef](./type_defs.md#putconferencepreferencerequestrequesttypedef) 
 
-### put_invitation_configuration
+### put\_invitation\_configuration
 
 Configures the email template for the user enrollment invitation with the
 specified attributes.
 
-Type annotations for
-`boto3.client("alexaforbusiness").put_invitation_configuration` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").put_invitation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.put_invitation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_invitation_configuration)
+```python title="Method definition"
+def put_invitation_configuration(
+    self,
+    *,
+    OrganizationName: str,
+    ContactEmail: str = ...,
+    PrivateSkillIds: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutInvitationConfigurationRequestRequestTypeDef](./type_defs.md#putinvitationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationName`: `str` *(required)*
-- `ContactEmail`: `str`
-- `PrivateSkillIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: PutInvitationConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_invitation_configuration(**kwargs)
+```
 
-<a id="put\_room\_skill\_parameter"></a>
+1. See [:material-code-braces: PutInvitationConfigurationRequestRequestTypeDef](./type_defs.md#putinvitationconfigurationrequestrequesttypedef) 
 
-### put_room_skill_parameter
+### put\_room\_skill\_parameter
 
 Updates room skill parameter details by room, skill, and parameter key ID.
 
-Type annotations for
-`boto3.client("alexaforbusiness").put_room_skill_parameter` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").put_room_skill_parameter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.put_room_skill_parameter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_room_skill_parameter)
+```python title="Method definition"
+def put_room_skill_parameter(
+    self,
+    *,
+    SkillId: str,
+    RoomSkillParameter: RoomSkillParameterTypeDef,  # (1)
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutRoomSkillParameterRequestRequestTypeDef](./type_defs.md#putroomskillparameterrequestrequesttypedef).
+1. See [:material-code-braces: RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef) 
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
-- `RoomSkillParameter`:
-  [RoomSkillParameterTypeDef](./type_defs.md#roomskillparametertypedef)
-  *(required)*
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRoomSkillParameterRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+    "RoomSkillParameter": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_room_skill_parameter(**kwargs)
+```
 
-<a id="put\_skill\_authorization"></a>
+1. See [:material-code-braces: PutRoomSkillParameterRequestRequestTypeDef](./type_defs.md#putroomskillparameterrequestrequesttypedef) 
 
-### put_skill_authorization
+### put\_skill\_authorization
 
 Links a user's account to a third-party skill provider.
 
-Type annotations for `boto3.client("alexaforbusiness").put_skill_authorization`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").put_skill_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.put_skill_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.put_skill_authorization)
+```python title="Method definition"
+def put_skill_authorization(
+    self,
+    *,
+    AuthorizationResult: Mapping[str, str],
+    SkillId: str,
+    RoomArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutSkillAuthorizationRequestRequestTypeDef](./type_defs.md#putskillauthorizationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AuthorizationResult`: `Mapping`\[`str`, `str`\] *(required)*
-- `SkillId`: `str` *(required)*
-- `RoomArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutSkillAuthorizationRequestRequestTypeDef = {  # (1)
+    "AuthorizationResult": ...,
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_skill_authorization(**kwargs)
+```
 
-<a id="register\_avs\_device"></a>
+1. See [:material-code-braces: PutSkillAuthorizationRequestRequestTypeDef](./type_defs.md#putskillauthorizationrequestrequesttypedef) 
 
-### register_avs_device
+### register\_avs\_device
 
 Registers an Alexa-enabled device built by an Original Equipment Manufacturer
 (OEM) using Alexa Voice Service (AVS).
 
-Type annotations for `boto3.client("alexaforbusiness").register_avs_device`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").register_avs_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.register_avs_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.register_avs_device)
+```python title="Method definition"
+def register_avs_device(
+    self,
+    *,
+    ClientId: str,
+    UserCode: str,
+    ProductId: str,
+    AmazonId: str,
+    DeviceSerialNumber: str = ...,
+    RoomArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> RegisterAVSDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterAVSDeviceRequestRequestTypeDef](./type_defs.md#registeravsdevicerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientId`: `str` *(required)*
-- `UserCode`: `str` *(required)*
-- `ProductId`: `str` *(required)*
-- `AmazonId`: `str` *(required)*
-- `DeviceSerialNumber`: `str`
-- `RoomArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RegisterAVSDeviceRequestRequestTypeDef = {  # (1)
+    "ClientId": ...,
+    "UserCode": ...,
+    "ProductId": ...,
+    "AmazonId": ...,
+}
 
-Returns
-[RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef).
+parent.register_avs_device(**kwargs)
+```
 
-<a id="reject\_skill"></a>
+1. See [:material-code-braces: RegisterAVSDeviceRequestRequestTypeDef](./type_defs.md#registeravsdevicerequestrequesttypedef) 
 
-### reject_skill
+### reject\_skill
 
 Disassociates a skill from the organization under a user's AWS account.
 
-Type annotations for `boto3.client("alexaforbusiness").reject_skill` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").reject_skill` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.reject_skill](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.reject_skill)
+```python title="Method definition"
+def reject_skill(
+    self,
+    *,
+    SkillId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectSkillRequestRequestTypeDef](./type_defs.md#rejectskillrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectSkillRequestRequestTypeDef = {  # (1)
+    "SkillId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_skill(**kwargs)
+```
 
-<a id="resolve\_room"></a>
+1. See [:material-code-braces: RejectSkillRequestRequestTypeDef](./type_defs.md#rejectskillrequestrequesttypedef) 
 
-### resolve_room
+### resolve\_room
 
 Determines the details for the room from which a skill request was invoked.
 
-Type annotations for `boto3.client("alexaforbusiness").resolve_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").resolve_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.resolve_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.resolve_room)
+```python title="Method definition"
+def resolve_room(
+    self,
+    *,
+    UserId: str,
+    SkillId: str,
+) -> ResolveRoomResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResolveRoomRequestRequestTypeDef](./type_defs.md#resolveroomrequestrequesttypedef).
+1. See [:material-code-braces: ResolveRoomResponseTypeDef](./type_defs.md#resolveroomresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserId`: `str` *(required)*
-- `SkillId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResolveRoomRequestRequestTypeDef = {  # (1)
+    "UserId": ...,
+    "SkillId": ...,
+}
 
-Returns
-[ResolveRoomResponseTypeDef](./type_defs.md#resolveroomresponsetypedef).
+parent.resolve_room(**kwargs)
+```
 
-<a id="revoke\_invitation"></a>
+1. See [:material-code-braces: ResolveRoomRequestRequestTypeDef](./type_defs.md#resolveroomrequestrequesttypedef) 
 
-### revoke_invitation
+### revoke\_invitation
 
 Revokes an invitation and invalidates the enrollment URL.
 
-Type annotations for `boto3.client("alexaforbusiness").revoke_invitation`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").revoke_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.revoke_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.revoke_invitation)
+```python title="Method definition"
+def revoke_invitation(
+    self,
+    *,
+    UserArn: str = ...,
+    EnrollmentId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RevokeInvitationRequestRequestTypeDef](./type_defs.md#revokeinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserArn`: `str`
-- `EnrollmentId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RevokeInvitationRequestRequestTypeDef = {  # (1)
+    "UserArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.revoke_invitation(**kwargs)
+```
 
-<a id="search\_address\_books"></a>
+1. See [:material-code-braces: RevokeInvitationRequestRequestTypeDef](./type_defs.md#revokeinvitationrequestrequesttypedef) 
 
-### search_address_books
+### search\_address\_books
 
 Searches address books and lists the ones that meet a set of filter and sort
 criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_address_books`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_address_books` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_address_books](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_address_books)
+```python title="Method definition"
+def search_address_books(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchAddressBooksResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchAddressBooksRequestRequestTypeDef](./type_defs.md#searchaddressbooksrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchAddressBooksResponseTypeDef](./type_defs.md#searchaddressbooksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchAddressBooksRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[SearchAddressBooksResponseTypeDef](./type_defs.md#searchaddressbooksresponsetypedef).
+parent.search_address_books(**kwargs)
+```
 
-<a id="search\_contacts"></a>
+1. See [:material-code-braces: SearchAddressBooksRequestRequestTypeDef](./type_defs.md#searchaddressbooksrequestrequesttypedef) 
 
-### search_contacts
+### search\_contacts
 
 Searches contacts and lists the ones that meet a set of filter and sort
 criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_contacts` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_contacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_contacts)
+```python title="Method definition"
+def search_contacts(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> SearchContactsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchContactsRequestRequestTypeDef](./type_defs.md#searchcontactsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchContactsResponseTypeDef](./type_defs.md#searchcontactsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchContactsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[SearchContactsResponseTypeDef](./type_defs.md#searchcontactsresponsetypedef).
+parent.search_contacts(**kwargs)
+```
 
-<a id="search\_devices"></a>
+1. See [:material-code-braces: SearchContactsRequestRequestTypeDef](./type_defs.md#searchcontactsrequestrequesttypedef) 
 
-### search_devices
+### search\_devices
 
 Searches devices and lists the ones that meet a set of filter criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_devices` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_devices)
+```python title="Method definition"
+def search_devices(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchDevicesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchDevicesRequestRequestTypeDef](./type_defs.md#searchdevicesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchDevicesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
+parent.search_devices(**kwargs)
+```
 
-<a id="search\_network\_profiles"></a>
+1. See [:material-code-braces: SearchDevicesRequestRequestTypeDef](./type_defs.md#searchdevicesrequestrequesttypedef) 
 
-### search_network_profiles
+### search\_network\_profiles
 
 Searches network profiles and lists the ones that meet a set of filter and sort
 criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_network_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_network_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_network_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_network_profiles)
+```python title="Method definition"
+def search_network_profiles(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchNetworkProfilesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchNetworkProfilesRequestRequestTypeDef](./type_defs.md#searchnetworkprofilesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchNetworkProfilesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef).
+parent.search_network_profiles(**kwargs)
+```
 
-<a id="search\_profiles"></a>
+1. See [:material-code-braces: SearchNetworkProfilesRequestRequestTypeDef](./type_defs.md#searchnetworkprofilesrequestrequesttypedef) 
 
-### search_profiles
+### search\_profiles
 
 Searches room profiles and lists the ones that meet a set of filter criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_profiles` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_profiles)
+```python title="Method definition"
+def search_profiles(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchProfilesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchProfilesRequestRequestTypeDef](./type_defs.md#searchprofilesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchProfilesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
+parent.search_profiles(**kwargs)
+```
 
-<a id="search\_rooms"></a>
+1. See [:material-code-braces: SearchProfilesRequestRequestTypeDef](./type_defs.md#searchprofilesrequestrequesttypedef) 
 
-### search_rooms
+### search\_rooms
 
 Searches rooms and lists the ones that meet a set of filter and sort criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_rooms` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_rooms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_rooms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_rooms)
+```python title="Method definition"
+def search_rooms(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchRoomsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchRoomsRequestRequestTypeDef](./type_defs.md#searchroomsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchRoomsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef).
+parent.search_rooms(**kwargs)
+```
 
-<a id="search\_skill\_groups"></a>
+1. See [:material-code-braces: SearchRoomsRequestRequestTypeDef](./type_defs.md#searchroomsrequestrequesttypedef) 
 
-### search_skill_groups
+### search\_skill\_groups
 
 Searches skill groups and lists the ones that meet a set of filter and sort
 criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_skill_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_skill_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_skill_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_skill_groups)
+```python title="Method definition"
+def search_skill_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchSkillGroupsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchSkillGroupsRequestRequestTypeDef](./type_defs.md#searchskillgroupsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchSkillGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef).
+parent.search_skill_groups(**kwargs)
+```
 
-<a id="search\_users"></a>
+1. See [:material-code-braces: SearchSkillGroupsRequestRequestTypeDef](./type_defs.md#searchskillgroupsrequestrequesttypedef) 
 
-### search_users
+### search\_users
 
 Searches users and lists the ones that meet a set of filter and sort criteria.
 
-Type annotations for `boto3.client("alexaforbusiness").search_users` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").search_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.search_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.search_users)
+```python title="Method definition"
+def search_users(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortCriteria: Sequence[SortTypeDef] = ...,  # (2)
+) -> SearchUsersResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchUsersRequestRequestTypeDef](./type_defs.md#searchusersrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SearchUsersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef).
+parent.search_users(**kwargs)
+```
 
-<a id="send\_announcement"></a>
+1. See [:material-code-braces: SearchUsersRequestRequestTypeDef](./type_defs.md#searchusersrequestrequesttypedef) 
 
-### send_announcement
+### send\_announcement
 
 Triggers an asynchronous flow to send text, SSML, or audio announcements to
 rooms that are identified by a search or filter.
 
-Type annotations for `boto3.client("alexaforbusiness").send_announcement`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").send_announcement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.send_announcement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_announcement)
+```python title="Method definition"
+def send_announcement(
+    self,
+    *,
+    RoomFilters: Sequence[FilterTypeDef],  # (1)
+    Content: ContentTypeDef,  # (2)
+    ClientRequestToken: str,
+    TimeToLiveInSeconds: int = ...,
+) -> SendAnnouncementResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SendAnnouncementRequestRequestTypeDef](./type_defs.md#sendannouncementrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ContentTypeDef](./type_defs.md#contenttypedef) 
+3. See [:material-code-braces: SendAnnouncementResponseTypeDef](./type_defs.md#sendannouncementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoomFilters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-  *(required)*
-- `Content`: [ContentTypeDef](./type_defs.md#contenttypedef) *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `TimeToLiveInSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: SendAnnouncementRequestRequestTypeDef = {  # (1)
+    "RoomFilters": ...,
+    "Content": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[SendAnnouncementResponseTypeDef](./type_defs.md#sendannouncementresponsetypedef).
+parent.send_announcement(**kwargs)
+```
 
-<a id="send\_invitation"></a>
+1. See [:material-code-braces: SendAnnouncementRequestRequestTypeDef](./type_defs.md#sendannouncementrequestrequesttypedef) 
 
-### send_invitation
+### send\_invitation
 
 Sends an enrollment invitation email with a URL to a user.
 
-Type annotations for `boto3.client("alexaforbusiness").send_invitation` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").send_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.send_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.send_invitation)
+```python title="Method definition"
+def send_invitation(
+    self,
+    *,
+    UserArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SendInvitationRequestRequestTypeDef](./type_defs.md#sendinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `UserArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendInvitationRequestRequestTypeDef = {  # (1)
+    "UserArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.send_invitation(**kwargs)
+```
 
-<a id="start\_device\_sync"></a>
+1. See [:material-code-braces: SendInvitationRequestRequestTypeDef](./type_defs.md#sendinvitationrequestrequesttypedef) 
 
-### start_device_sync
+### start\_device\_sync
 
 Resets a device and its account to the known default settings.
 
-Type annotations for `boto3.client("alexaforbusiness").start_device_sync`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").start_device_sync` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.start_device_sync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_device_sync)
+```python title="Method definition"
+def start_device_sync(
+    self,
+    *,
+    Features: Sequence[FeatureType],  # (1)
+    RoomArn: str = ...,
+    DeviceArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartDeviceSyncRequestRequestTypeDef](./type_defs.md#startdevicesyncrequestrequesttypedef).
+1. See [:material-code-brackets: FeatureType](./literals.md#featuretype) 
 
-Keyword-only arguments:
 
-- `Features`: `Sequence`\[[FeatureType](./literals.md#featuretype)\]
-  *(required)*
-- `RoomArn`: `str`
-- `DeviceArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartDeviceSyncRequestRequestTypeDef = {  # (1)
+    "Features": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_device_sync(**kwargs)
+```
 
-<a id="start\_smart\_home\_appliance\_discovery"></a>
+1. See [:material-code-braces: StartDeviceSyncRequestRequestTypeDef](./type_defs.md#startdevicesyncrequestrequesttypedef) 
 
-### start_smart_home_appliance_discovery
+### start\_smart\_home\_appliance\_discovery
 
 Initiates the discovery of any smart home appliances associated with the room.
 
-Type annotations for
-`boto3.client("alexaforbusiness").start_smart_home_appliance_discovery` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").start_smart_home_appliance_discovery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.start_smart_home_appliance_discovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.start_smart_home_appliance_discovery)
+```python title="Method definition"
+def start_smart_home_appliance_discovery(
+    self,
+    *,
+    RoomArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartSmartHomeApplianceDiscoveryRequestRequestTypeDef](./type_defs.md#startsmarthomeappliancediscoveryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoomArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartSmartHomeApplianceDiscoveryRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_smart_home_appliance_discovery(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartSmartHomeApplianceDiscoveryRequestRequestTypeDef](./type_defs.md#startsmarthomeappliancediscoveryrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds metadata tags to a specified resource.
 
-Type annotations for `boto3.client("alexaforbusiness").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Arn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes metadata tags from a specified resource.
 
-Type annotations for `boto3.client("alexaforbusiness").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Arn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_address\_book"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_address_book
+### update\_address\_book
 
 Updates address book details by the address book ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_address_book`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_address_book` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_address_book](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_address_book)
+```python title="Method definition"
+def update_address_book(
+    self,
+    *,
+    AddressBookArn: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAddressBookRequestRequestTypeDef](./type_defs.md#updateaddressbookrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AddressBookArn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAddressBookRequestRequestTypeDef = {  # (1)
+    "AddressBookArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_address_book(**kwargs)
+```
 
-<a id="update\_business\_report\_schedule"></a>
+1. See [:material-code-braces: UpdateAddressBookRequestRequestTypeDef](./type_defs.md#updateaddressbookrequestrequesttypedef) 
 
-### update_business_report_schedule
+### update\_business\_report\_schedule
 
 Updates the configuration of the report delivery schedule with the specified
 schedule ARN.
 
-Type annotations for
-`boto3.client("alexaforbusiness").update_business_report_schedule` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_business_report_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_business_report_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_business_report_schedule)
+```python title="Method definition"
+def update_business_report_schedule(
+    self,
+    *,
+    ScheduleArn: str,
+    S3BucketName: str = ...,
+    S3KeyPrefix: str = ...,
+    Format: BusinessReportFormatType = ...,  # (1)
+    ScheduleName: str = ...,
+    Recurrence: BusinessReportRecurrenceTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#updatebusinessreportschedulerequestrequesttypedef).
+1. See [:material-code-brackets: BusinessReportFormatType](./literals.md#businessreportformattype) 
+2. See [:material-code-braces: BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef) 
 
-Keyword-only arguments:
 
-- `ScheduleArn`: `str` *(required)*
-- `S3BucketName`: `str`
-- `S3KeyPrefix`: `str`
-- `Format`: [BusinessReportFormatType](./literals.md#businessreportformattype)
-- `ScheduleName`: `str`
-- `Recurrence`:
-  [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateBusinessReportScheduleRequestRequestTypeDef = {  # (1)
+    "ScheduleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_business_report_schedule(**kwargs)
+```
 
-<a id="update\_conference\_provider"></a>
+1. See [:material-code-braces: UpdateBusinessReportScheduleRequestRequestTypeDef](./type_defs.md#updatebusinessreportschedulerequestrequesttypedef) 
 
-### update_conference_provider
+### update\_conference\_provider
 
 Updates an existing conference provider's settings.
 
-Type annotations for
-`boto3.client("alexaforbusiness").update_conference_provider` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_conference_provider` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_conference_provider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_conference_provider)
+```python title="Method definition"
+def update_conference_provider(
+    self,
+    *,
+    ConferenceProviderArn: str,
+    ConferenceProviderType: ConferenceProviderTypeType,  # (1)
+    MeetingSetting: MeetingSettingTypeDef,  # (2)
+    IPDialIn: IPDialInTypeDef = ...,  # (3)
+    PSTNDialIn: PSTNDialInTypeDef = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConferenceProviderRequestRequestTypeDef](./type_defs.md#updateconferenceproviderrequestrequesttypedef).
+1. See [:material-code-brackets: ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype) 
+2. See [:material-code-braces: MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) 
+3. See [:material-code-braces: IPDialInTypeDef](./type_defs.md#ipdialintypedef) 
+4. See [:material-code-braces: PSTNDialInTypeDef](./type_defs.md#pstndialintypedef) 
 
-Keyword-only arguments:
 
-- `ConferenceProviderArn`: `str` *(required)*
-- `ConferenceProviderType`:
-  [ConferenceProviderTypeType](./literals.md#conferenceprovidertypetype)
-  *(required)*
-- `MeetingSetting`:
-  [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef) *(required)*
-- `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
-- `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateConferenceProviderRequestRequestTypeDef = {  # (1)
+    "ConferenceProviderArn": ...,
+    "ConferenceProviderType": ...,
+    "MeetingSetting": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_conference_provider(**kwargs)
+```
 
-<a id="update\_contact"></a>
+1. See [:material-code-braces: UpdateConferenceProviderRequestRequestTypeDef](./type_defs.md#updateconferenceproviderrequestrequesttypedef) 
 
-### update_contact
+### update\_contact
 
 Updates the contact details by the contact ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_contact` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_contact)
+```python title="Method definition"
+def update_contact(
+    self,
+    *,
+    ContactArn: str,
+    DisplayName: str = ...,
+    FirstName: str = ...,
+    LastName: str = ...,
+    PhoneNumber: str = ...,
+    PhoneNumbers: Sequence[PhoneNumberTypeDef] = ...,  # (1)
+    SipAddresses: Sequence[SipAddressTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef).
+1. See [:material-code-braces: PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef) 
+2. See [:material-code-braces: SipAddressTypeDef](./type_defs.md#sipaddresstypedef) 
 
-Keyword-only arguments:
 
-- `ContactArn`: `str` *(required)*
-- `DisplayName`: `str`
-- `FirstName`: `str`
-- `LastName`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumbers`:
-  `Sequence`\[[PhoneNumberTypeDef](./type_defs.md#phonenumbertypedef)\]
-- `SipAddresses`:
-  `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateContactRequestRequestTypeDef = {  # (1)
+    "ContactArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_contact(**kwargs)
+```
 
-<a id="update\_device"></a>
+1. See [:material-code-braces: UpdateContactRequestRequestTypeDef](./type_defs.md#updatecontactrequestrequesttypedef) 
 
-### update_device
+### update\_device
 
 Updates the device name by device ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_device` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_device)
+```python title="Method definition"
+def update_device(
+    self,
+    *,
+    DeviceArn: str = ...,
+    DeviceName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceArn`: `str`
-- `DeviceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceRequestRequestTypeDef = {  # (1)
+    "DeviceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_device(**kwargs)
+```
 
-<a id="update\_gateway"></a>
+1. See [:material-code-braces: UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef) 
 
-### update_gateway
+### update\_gateway
 
 Updates the details of a gateway.
 
-Type annotations for `boto3.client("alexaforbusiness").update_gateway` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway)
+```python title="Method definition"
+def update_gateway(
+    self,
+    *,
+    GatewayArn: str,
+    Name: str = ...,
+    Description: str = ...,
+    SoftwareVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GatewayArn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `SoftwareVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayRequestRequestTypeDef = {  # (1)
+    "GatewayArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_gateway(**kwargs)
+```
 
-<a id="update\_gateway\_group"></a>
+1. See [:material-code-braces: UpdateGatewayRequestRequestTypeDef](./type_defs.md#updategatewayrequestrequesttypedef) 
 
-### update_gateway_group
+### update\_gateway\_group
 
 Updates the details of a gateway group.
 
-Type annotations for `boto3.client("alexaforbusiness").update_gateway_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_gateway_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_gateway_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_gateway_group)
+```python title="Method definition"
+def update_gateway_group(
+    self,
+    *,
+    GatewayGroupArn: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayGroupRequestRequestTypeDef](./type_defs.md#updategatewaygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GatewayGroupArn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayGroupRequestRequestTypeDef = {  # (1)
+    "GatewayGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_gateway_group(**kwargs)
+```
 
-<a id="update\_network\_profile"></a>
+1. See [:material-code-braces: UpdateGatewayGroupRequestRequestTypeDef](./type_defs.md#updategatewaygrouprequestrequesttypedef) 
 
-### update_network_profile
+### update\_network\_profile
 
 Updates a network profile by the network profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_network_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_network_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_network_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_network_profile)
+```python title="Method definition"
+def update_network_profile(
+    self,
+    *,
+    NetworkProfileArn: str,
+    NetworkProfileName: str = ...,
+    Description: str = ...,
+    CurrentPassword: str = ...,
+    NextPassword: str = ...,
+    CertificateAuthorityArn: str = ...,
+    TrustAnchors: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `NetworkProfileArn`: `str` *(required)*
-- `NetworkProfileName`: `str`
-- `Description`: `str`
-- `CurrentPassword`: `str`
-- `NextPassword`: `str`
-- `CertificateAuthorityArn`: `str`
-- `TrustAnchors`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateNetworkProfileRequestRequestTypeDef = {  # (1)
+    "NetworkProfileArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_network_profile(**kwargs)
+```
 
-<a id="update\_profile"></a>
+1. See [:material-code-braces: UpdateNetworkProfileRequestRequestTypeDef](./type_defs.md#updatenetworkprofilerequestrequesttypedef) 
 
-### update_profile
+### update\_profile
 
 Updates an existing room profile by room profile ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_profile` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_profile)
+```python title="Method definition"
+def update_profile(
+    self,
+    *,
+    ProfileArn: str = ...,
+    ProfileName: str = ...,
+    IsDefault: bool = ...,
+    Timezone: str = ...,
+    Address: str = ...,
+    DistanceUnit: DistanceUnitType = ...,  # (1)
+    TemperatureUnit: TemperatureUnitType = ...,  # (2)
+    WakeWord: WakeWordType = ...,  # (3)
+    Locale: str = ...,
+    SetupModeDisabled: bool = ...,
+    MaxVolumeLimit: int = ...,
+    PSTNEnabled: bool = ...,
+    DataRetentionOptIn: bool = ...,
+    MeetingRoomConfiguration: UpdateMeetingRoomConfigurationTypeDef = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateProfileRequestRequestTypeDef](./type_defs.md#updateprofilerequestrequesttypedef).
+1. See [:material-code-brackets: DistanceUnitType](./literals.md#distanceunittype) 
+2. See [:material-code-brackets: TemperatureUnitType](./literals.md#temperatureunittype) 
+3. See [:material-code-brackets: WakeWordType](./literals.md#wakewordtype) 
+4. See [:material-code-braces: UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `ProfileArn`: `str`
-- `ProfileName`: `str`
-- `IsDefault`: `bool`
-- `Timezone`: `str`
-- `Address`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
-- `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
-- `Locale`: `str`
-- `SetupModeDisabled`: `bool`
-- `MaxVolumeLimit`: `int`
-- `PSTNEnabled`: `bool`
-- `DataRetentionOptIn`: `bool`
-- `MeetingRoomConfiguration`:
-  [UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateProfileRequestRequestTypeDef = {  # (1)
+    "ProfileArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_profile(**kwargs)
+```
 
-<a id="update\_room"></a>
+1. See [:material-code-braces: UpdateProfileRequestRequestTypeDef](./type_defs.md#updateprofilerequestrequesttypedef) 
 
-### update_room
+### update\_room
 
 Updates room details by room ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_room` method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_room` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_room](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_room)
+```python title="Method definition"
+def update_room(
+    self,
+    *,
+    RoomArn: str = ...,
+    RoomName: str = ...,
+    Description: str = ...,
+    ProviderCalendarId: str = ...,
+    ProfileArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoomArn`: `str`
-- `RoomName`: `str`
-- `Description`: `str`
-- `ProviderCalendarId`: `str`
-- `ProfileArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRoomRequestRequestTypeDef = {  # (1)
+    "RoomArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_room(**kwargs)
+```
 
-<a id="update\_skill\_group"></a>
+1. See [:material-code-braces: UpdateRoomRequestRequestTypeDef](./type_defs.md#updateroomrequestrequesttypedef) 
 
-### update_skill_group
+### update\_skill\_group
 
 Updates skill group details by skill group ARN.
 
-Type annotations for `boto3.client("alexaforbusiness").update_skill_group`
-method.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").update_skill_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
 
-Boto3 documentation:
-[AlexaForBusiness.Client.update_skill_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.update_skill_group)
+```python title="Method definition"
+def update_skill_group(
+    self,
+    *,
+    SkillGroupArn: str = ...,
+    SkillGroupName: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSkillGroupRequestRequestTypeDef](./type_defs.md#updateskillgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SkillGroupArn`: `str`
-- `SkillGroupName`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSkillGroupRequestRequestTypeDef = {  # (1)
+    "SkillGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_skill_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSkillGroupRequestRequestTypeDef](./type_defs.md#updateskillgrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("alexaforbusiness").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("alexaforbusiness").get_paginator` method with overloads.
 
-- `client.get_paginator("list_business_report_schedules")` ->
-  [ListBusinessReportSchedulesPaginator](./paginators.md#listbusinessreportschedulespaginator)
-- `client.get_paginator("list_conference_providers")` ->
-  [ListConferenceProvidersPaginator](./paginators.md#listconferenceproviderspaginator)
-- `client.get_paginator("list_device_events")` ->
-  [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
-- `client.get_paginator("list_skills")` ->
-  [ListSkillsPaginator](./paginators.md#listskillspaginator)
-- `client.get_paginator("list_skills_store_categories")` ->
-  [ListSkillsStoreCategoriesPaginator](./paginators.md#listskillsstorecategoriespaginator)
-- `client.get_paginator("list_skills_store_skills_by_category")` ->
-  [ListSkillsStoreSkillsByCategoryPaginator](./paginators.md#listskillsstoreskillsbycategorypaginator)
-- `client.get_paginator("list_smart_home_appliances")` ->
-  [ListSmartHomeAppliancesPaginator](./paginators.md#listsmarthomeappliancespaginator)
-- `client.get_paginator("list_tags")` ->
-  [ListTagsPaginator](./paginators.md#listtagspaginator)
-- `client.get_paginator("search_devices")` ->
-  [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
-- `client.get_paginator("search_profiles")` ->
-  [SearchProfilesPaginator](./paginators.md#searchprofilespaginator)
-- `client.get_paginator("search_rooms")` ->
-  [SearchRoomsPaginator](./paginators.md#searchroomspaginator)
-- `client.get_paginator("search_skill_groups")` ->
-  [SearchSkillGroupsPaginator](./paginators.md#searchskillgroupspaginator)
-- `client.get_paginator("search_users")` ->
-  [SearchUsersPaginator](./paginators.md#searchuserspaginator)
+- `client.get_paginator("list_business_report_schedules")` -> [ListBusinessReportSchedulesPaginator](./paginators.md#listbusinessreportschedulespaginator)
+- `client.get_paginator("list_conference_providers")` -> [ListConferenceProvidersPaginator](./paginators.md#listconferenceproviderspaginator)
+- `client.get_paginator("list_device_events")` -> [ListDeviceEventsPaginator](./paginators.md#listdeviceeventspaginator)
+- `client.get_paginator("list_skills")` -> [ListSkillsPaginator](./paginators.md#listskillspaginator)
+- `client.get_paginator("list_skills_store_categories")` -> [ListSkillsStoreCategoriesPaginator](./paginators.md#listskillsstorecategoriespaginator)
+- `client.get_paginator("list_skills_store_skills_by_category")` -> [ListSkillsStoreSkillsByCategoryPaginator](./paginators.md#listskillsstoreskillsbycategorypaginator)
+- `client.get_paginator("list_smart_home_appliances")` -> [ListSmartHomeAppliancesPaginator](./paginators.md#listsmarthomeappliancespaginator)
+- `client.get_paginator("list_tags")` -> [ListTagsPaginator](./paginators.md#listtagspaginator)
+- `client.get_paginator("search_devices")` -> [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
+- `client.get_paginator("search_profiles")` -> [SearchProfilesPaginator](./paginators.md#searchprofilespaginator)
+- `client.get_paginator("search_rooms")` -> [SearchRoomsPaginator](./paginators.md#searchroomspaginator)
+- `client.get_paginator("search_skill_groups")` -> [SearchSkillGroupsPaginator](./paginators.md#searchskillgroupspaginator)
+- `client.get_paginator("search_users")` -> [SearchUsersPaginator](./paginators.md#searchuserspaginator)
+
+
+

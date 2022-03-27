@@ -1,2093 +1,2763 @@
-<a id="typed-dictionaries-for-boto3-forecastservice-module"></a>
-
-# Typed dictionaries for boto3 ForecastService module
+# Typed dictionaries
 
 > [Index](../README.md) > [ForecastService](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module
-[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ForecastService module](#typed-dictionaries-for-boto3-forecastservice-module)
-  - [AdditionalDatasetTypeDef](#additionaldatasettypedef)
-  - [AttributeConfigTypeDef](#attributeconfigtypedef)
-  - [CategoricalParameterRangeTypeDef](#categoricalparameterrangetypedef)
-  - [ContinuousParameterRangeTypeDef](#continuousparameterrangetypedef)
-  - [CreateAutoPredictorRequestRequestTypeDef](#createautopredictorrequestrequesttypedef)
-  - [CreateAutoPredictorResponseTypeDef](#createautopredictorresponsetypedef)
-  - [CreateDatasetGroupRequestRequestTypeDef](#createdatasetgrouprequestrequesttypedef)
-  - [CreateDatasetGroupResponseTypeDef](#createdatasetgroupresponsetypedef)
-  - [CreateDatasetImportJobRequestRequestTypeDef](#createdatasetimportjobrequestrequesttypedef)
-  - [CreateDatasetImportJobResponseTypeDef](#createdatasetimportjobresponsetypedef)
-  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateExplainabilityExportRequestRequestTypeDef](#createexplainabilityexportrequestrequesttypedef)
-  - [CreateExplainabilityExportResponseTypeDef](#createexplainabilityexportresponsetypedef)
-  - [CreateExplainabilityRequestRequestTypeDef](#createexplainabilityrequestrequesttypedef)
-  - [CreateExplainabilityResponseTypeDef](#createexplainabilityresponsetypedef)
-  - [CreateForecastExportJobRequestRequestTypeDef](#createforecastexportjobrequestrequesttypedef)
-  - [CreateForecastExportJobResponseTypeDef](#createforecastexportjobresponsetypedef)
-  - [CreateForecastRequestRequestTypeDef](#createforecastrequestrequesttypedef)
-  - [CreateForecastResponseTypeDef](#createforecastresponsetypedef)
-  - [CreatePredictorBacktestExportJobRequestRequestTypeDef](#createpredictorbacktestexportjobrequestrequesttypedef)
-  - [CreatePredictorBacktestExportJobResponseTypeDef](#createpredictorbacktestexportjobresponsetypedef)
-  - [CreatePredictorRequestRequestTypeDef](#createpredictorrequestrequesttypedef)
-  - [CreatePredictorResponseTypeDef](#createpredictorresponsetypedef)
-  - [DataConfigTypeDef](#dataconfigtypedef)
-  - [DataDestinationTypeDef](#datadestinationtypedef)
-  - [DataSourceTypeDef](#datasourcetypedef)
-  - [DatasetGroupSummaryTypeDef](#datasetgroupsummarytypedef)
-  - [DatasetImportJobSummaryTypeDef](#datasetimportjobsummarytypedef)
-  - [DatasetSummaryTypeDef](#datasetsummarytypedef)
-  - [DeleteDatasetGroupRequestRequestTypeDef](#deletedatasetgrouprequestrequesttypedef)
-  - [DeleteDatasetImportJobRequestRequestTypeDef](#deletedatasetimportjobrequestrequesttypedef)
-  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
-  - [DeleteExplainabilityExportRequestRequestTypeDef](#deleteexplainabilityexportrequestrequesttypedef)
-  - [DeleteExplainabilityRequestRequestTypeDef](#deleteexplainabilityrequestrequesttypedef)
-  - [DeleteForecastExportJobRequestRequestTypeDef](#deleteforecastexportjobrequestrequesttypedef)
-  - [DeleteForecastRequestRequestTypeDef](#deleteforecastrequestrequesttypedef)
-  - [DeletePredictorBacktestExportJobRequestRequestTypeDef](#deletepredictorbacktestexportjobrequestrequesttypedef)
-  - [DeletePredictorRequestRequestTypeDef](#deletepredictorrequestrequesttypedef)
-  - [DeleteResourceTreeRequestRequestTypeDef](#deleteresourcetreerequestrequesttypedef)
-  - [DescribeAutoPredictorRequestRequestTypeDef](#describeautopredictorrequestrequesttypedef)
-  - [DescribeAutoPredictorResponseTypeDef](#describeautopredictorresponsetypedef)
-  - [DescribeDatasetGroupRequestRequestTypeDef](#describedatasetgrouprequestrequesttypedef)
-  - [DescribeDatasetGroupResponseTypeDef](#describedatasetgroupresponsetypedef)
-  - [DescribeDatasetImportJobRequestRequestTypeDef](#describedatasetimportjobrequestrequesttypedef)
-  - [DescribeDatasetImportJobResponseTypeDef](#describedatasetimportjobresponsetypedef)
-  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeExplainabilityExportRequestRequestTypeDef](#describeexplainabilityexportrequestrequesttypedef)
-  - [DescribeExplainabilityExportResponseTypeDef](#describeexplainabilityexportresponsetypedef)
-  - [DescribeExplainabilityRequestRequestTypeDef](#describeexplainabilityrequestrequesttypedef)
-  - [DescribeExplainabilityResponseTypeDef](#describeexplainabilityresponsetypedef)
-  - [DescribeForecastExportJobRequestRequestTypeDef](#describeforecastexportjobrequestrequesttypedef)
-  - [DescribeForecastExportJobResponseTypeDef](#describeforecastexportjobresponsetypedef)
-  - [DescribeForecastRequestRequestTypeDef](#describeforecastrequestrequesttypedef)
-  - [DescribeForecastResponseTypeDef](#describeforecastresponsetypedef)
-  - [DescribePredictorBacktestExportJobRequestRequestTypeDef](#describepredictorbacktestexportjobrequestrequesttypedef)
-  - [DescribePredictorBacktestExportJobResponseTypeDef](#describepredictorbacktestexportjobresponsetypedef)
-  - [DescribePredictorRequestRequestTypeDef](#describepredictorrequestrequesttypedef)
-  - [DescribePredictorResponseTypeDef](#describepredictorresponsetypedef)
-  - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
-  - [ErrorMetricTypeDef](#errormetrictypedef)
-  - [EvaluationParametersTypeDef](#evaluationparameterstypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [ExplainabilityConfigTypeDef](#explainabilityconfigtypedef)
-  - [ExplainabilityExportSummaryTypeDef](#explainabilityexportsummarytypedef)
-  - [ExplainabilityInfoTypeDef](#explainabilityinfotypedef)
-  - [ExplainabilitySummaryTypeDef](#explainabilitysummarytypedef)
-  - [FeaturizationConfigTypeDef](#featurizationconfigtypedef)
-  - [FeaturizationMethodTypeDef](#featurizationmethodtypedef)
-  - [FeaturizationTypeDef](#featurizationtypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [ForecastExportJobSummaryTypeDef](#forecastexportjobsummarytypedef)
-  - [ForecastSummaryTypeDef](#forecastsummarytypedef)
-  - [GetAccuracyMetricsRequestRequestTypeDef](#getaccuracymetricsrequestrequesttypedef)
-  - [GetAccuracyMetricsResponseTypeDef](#getaccuracymetricsresponsetypedef)
-  - [HyperParameterTuningJobConfigTypeDef](#hyperparametertuningjobconfigtypedef)
-  - [InputDataConfigTypeDef](#inputdataconfigtypedef)
-  - [IntegerParameterRangeTypeDef](#integerparameterrangetypedef)
-  - [ListDatasetGroupsRequestRequestTypeDef](#listdatasetgroupsrequestrequesttypedef)
-  - [ListDatasetGroupsResponseTypeDef](#listdatasetgroupsresponsetypedef)
-  - [ListDatasetImportJobsRequestRequestTypeDef](#listdatasetimportjobsrequestrequesttypedef)
-  - [ListDatasetImportJobsResponseTypeDef](#listdatasetimportjobsresponsetypedef)
-  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListExplainabilitiesRequestRequestTypeDef](#listexplainabilitiesrequestrequesttypedef)
-  - [ListExplainabilitiesResponseTypeDef](#listexplainabilitiesresponsetypedef)
-  - [ListExplainabilityExportsRequestRequestTypeDef](#listexplainabilityexportsrequestrequesttypedef)
-  - [ListExplainabilityExportsResponseTypeDef](#listexplainabilityexportsresponsetypedef)
-  - [ListForecastExportJobsRequestRequestTypeDef](#listforecastexportjobsrequestrequesttypedef)
-  - [ListForecastExportJobsResponseTypeDef](#listforecastexportjobsresponsetypedef)
-  - [ListForecastsRequestRequestTypeDef](#listforecastsrequestrequesttypedef)
-  - [ListForecastsResponseTypeDef](#listforecastsresponsetypedef)
-  - [ListPredictorBacktestExportJobsRequestRequestTypeDef](#listpredictorbacktestexportjobsrequestrequesttypedef)
-  - [ListPredictorBacktestExportJobsResponseTypeDef](#listpredictorbacktestexportjobsresponsetypedef)
-  - [ListPredictorsRequestRequestTypeDef](#listpredictorsrequestrequesttypedef)
-  - [ListPredictorsResponseTypeDef](#listpredictorsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MetricsTypeDef](#metricstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterRangesTypeDef](#parameterrangestypedef)
-  - [PredictorBacktestExportJobSummaryTypeDef](#predictorbacktestexportjobsummarytypedef)
-  - [PredictorExecutionDetailsTypeDef](#predictorexecutiondetailstypedef)
-  - [PredictorExecutionTypeDef](#predictorexecutiontypedef)
-  - [PredictorSummaryTypeDef](#predictorsummarytypedef)
-  - [ReferencePredictorSummaryTypeDef](#referencepredictorsummarytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3ConfigTypeDef](#s3configtypedef)
-  - [SchemaAttributeTypeDef](#schemaattributetypedef)
-  - [SchemaTypeDef](#schematypedef)
-  - [StatisticsTypeDef](#statisticstypedef)
-  - [StopResourceRequestRequestTypeDef](#stopresourcerequestrequesttypedef)
-  - [SupplementaryFeatureTypeDef](#supplementaryfeaturetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TestWindowSummaryTypeDef](#testwindowsummarytypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDatasetGroupRequestRequestTypeDef](#updatedatasetgrouprequestrequesttypedef)
-  - [WeightedQuantileLossTypeDef](#weightedquantilelosstypedef)
-  - [WindowSummaryTypeDef](#windowsummarytypedef)
-
-<a id="additionaldatasettypedef"></a>
+    Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+    type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ## AdditionalDatasetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import AdditionalDatasetTypeDef
+
+def get_value() -> AdditionalDatasetTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Configuration`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-
-<a id="attributeconfigtypedef"></a>
+```python title="Definition"
+class AdditionalDatasetTypeDef(TypedDict):
+    Name: str,
+    Configuration: NotRequired[Mapping[str, Sequence[str]]],
+```
 
 ## AttributeConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import AttributeConfigTypeDef
+
+def get_value() -> AttributeConfigTypeDef:
+    return {
+        "AttributeName": ...,
+        "Transformations": ...,
+    }
 ```
 
-Required fields:
-
-- `AttributeName`: `str`
-- `Transformations`: `Mapping`\[`str`, `str`\]
-
-<a id="categoricalparameterrangetypedef"></a>
+```python title="Definition"
+class AttributeConfigTypeDef(TypedDict):
+    AttributeName: str,
+    Transformations: Mapping[str, str],
+```
 
 ## CategoricalParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CategoricalParameterRangeTypeDef
+
+def get_value() -> CategoricalParameterRangeTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="continuousparameterrangetypedef"></a>
+```python title="Definition"
+class CategoricalParameterRangeTypeDef(TypedDict):
+    Name: str,
+    Values: Sequence[str],
+```
 
 ## ContinuousParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ContinuousParameterRangeTypeDef
+
+def get_value() -> ContinuousParameterRangeTypeDef:
+    return {
+        "Name": ...,
+        "MaxValue": ...,
+        "MinValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContinuousParameterRangeTypeDef(TypedDict):
+    Name: str,
+    MaxValue: float,
+    MinValue: float,
+    ScalingType: NotRequired[ScalingTypeType],  # (1)
+```
 
-- `Name`: `str`
-- `MaxValue`: `float`
-- `MinValue`: `float`
-
-Optional fields:
-
-- `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
-
-<a id="createautopredictorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ScalingTypeType](./literals.md#scalingtypetype) 
 ## CreateAutoPredictorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateAutoPredictorRequestRequestTypeDef
+
+def get_value() -> CreateAutoPredictorRequestRequestTypeDef:
+    return {
+        "PredictorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAutoPredictorRequestRequestTypeDef(TypedDict):
+    PredictorName: str,
+    ForecastHorizon: NotRequired[int],
+    ForecastTypes: NotRequired[Sequence[str]],
+    ForecastDimensions: NotRequired[Sequence[str]],
+    ForecastFrequency: NotRequired[str],
+    DataConfig: NotRequired[DataConfigTypeDef],  # (1)
+    EncryptionConfig: NotRequired[EncryptionConfigTypeDef],  # (2)
+    ReferencePredictorArn: NotRequired[str],
+    OptimizationMetric: NotRequired[OptimizationMetricType],  # (3)
+    ExplainPredictor: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `PredictorName`: `str`
-
-Optional fields:
-
-- `ForecastHorizon`: `int`
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `ForecastDimensions`: `Sequence`\[`str`\]
-- `ForecastFrequency`: `str`
-- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `ReferencePredictorArn`: `str`
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-- `ExplainPredictor`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createautopredictorresponsetypedef"></a>
-
+1. See [:material-code-braces: DataConfigTypeDef](./type_defs.md#dataconfigtypedef) 
+2. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAutoPredictorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateAutoPredictorResponseTypeDef
+
+def get_value() -> CreateAutoPredictorResponseTypeDef:
+    return {
+        "PredictorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAutoPredictorResponseTypeDef(TypedDict):
+    PredictorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PredictorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetGroupRequestRequestTypeDef
+
+def get_value() -> CreateDatasetGroupRequestRequestTypeDef:
+    return {
+        "DatasetGroupName": ...,
+        "Domain": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetGroupRequestRequestTypeDef(TypedDict):
+    DatasetGroupName: str,
+    Domain: DomainType,  # (1)
+    DatasetArns: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `DatasetGroupName`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
-
-Optional fields:
-
-- `DatasetArns`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdatasetgroupresponsetypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDatasetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetGroupResponseTypeDef
+
+def get_value() -> CreateDatasetGroupResponseTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetGroupResponseTypeDef(TypedDict):
+    DatasetGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetGroupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetImportJobRequestRequestTypeDef
+
+def get_value() -> CreateDatasetImportJobRequestRequestTypeDef:
+    return {
+        "DatasetImportJobName": ...,
+        "DatasetArn": ...,
+        "DataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
+    DatasetImportJobName: str,
+    DatasetArn: str,
+    DataSource: DataSourceTypeDef,  # (1)
+    TimestampFormat: NotRequired[str],
+    TimeZone: NotRequired[str],
+    UseGeolocationForTimeZone: NotRequired[bool],
+    GeolocationFormat: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `DatasetImportJobName`: `str`
-- `DatasetArn`: `str`
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-
-Optional fields:
-
-- `TimestampFormat`: `str`
-- `TimeZone`: `str`
-- `UseGeolocationForTimeZone`: `bool`
-- `GeolocationFormat`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdatasetimportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDatasetImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetImportJobResponseTypeDef
+
+def get_value() -> CreateDatasetImportJobResponseTypeDef:
+    return {
+        "DatasetImportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetImportJobResponseTypeDef(TypedDict):
+    DatasetImportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetImportJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "DatasetName": ...,
+        "Domain": ...,
+        "DatasetType": ...,
+        "Schema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    DatasetName: str,
+    Domain: DomainType,  # (1)
+    DatasetType: DatasetTypeType,  # (2)
+    Schema: SchemaTypeDef,  # (3)
+    DataFrequency: NotRequired[str],
+    EncryptionConfig: NotRequired[EncryptionConfigTypeDef],  # (4)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `DatasetName`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
-
-Optional fields:
-
-- `DataFrequency`: `str`
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdatasetresponsetypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "DatasetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    DatasetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createexplainabilityexportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateExplainabilityExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateExplainabilityExportRequestRequestTypeDef
+
+def get_value() -> CreateExplainabilityExportRequestRequestTypeDef:
+    return {
+        "ExplainabilityExportName": ...,
+        "ExplainabilityArn": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExplainabilityExportRequestRequestTypeDef(TypedDict):
+    ExplainabilityExportName: str,
+    ExplainabilityArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ExplainabilityExportName`: `str`
-- `ExplainabilityArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createexplainabilityexportresponsetypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateExplainabilityExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateExplainabilityExportResponseTypeDef
+
+def get_value() -> CreateExplainabilityExportResponseTypeDef:
+    return {
+        "ExplainabilityExportArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExplainabilityExportResponseTypeDef(TypedDict):
+    ExplainabilityExportArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ExplainabilityExportArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createexplainabilityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateExplainabilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateExplainabilityRequestRequestTypeDef
+
+def get_value() -> CreateExplainabilityRequestRequestTypeDef:
+    return {
+        "ExplainabilityName": ...,
+        "ResourceArn": ...,
+        "ExplainabilityConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExplainabilityRequestRequestTypeDef(TypedDict):
+    ExplainabilityName: str,
+    ResourceArn: str,
+    ExplainabilityConfig: ExplainabilityConfigTypeDef,  # (1)
+    DataSource: NotRequired[DataSourceTypeDef],  # (2)
+    Schema: NotRequired[SchemaTypeDef],  # (3)
+    EnableVisualization: NotRequired[bool],
+    StartDateTime: NotRequired[str],
+    EndDateTime: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `ExplainabilityName`: `str`
-- `ResourceArn`: `str`
-- `ExplainabilityConfig`:
-  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
-
-Optional fields:
-
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
-- `EnableVisualization`: `bool`
-- `StartDateTime`: `str`
-- `EndDateTime`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createexplainabilityresponsetypedef"></a>
-
+1. See [:material-code-braces: ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateExplainabilityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateExplainabilityResponseTypeDef
+
+def get_value() -> CreateExplainabilityResponseTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateExplainabilityResponseTypeDef(TypedDict):
+    ExplainabilityArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ExplainabilityArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createforecastexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateForecastExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateForecastExportJobRequestRequestTypeDef
+
+def get_value() -> CreateForecastExportJobRequestRequestTypeDef:
+    return {
+        "ForecastExportJobName": ...,
+        "ForecastArn": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateForecastExportJobRequestRequestTypeDef(TypedDict):
+    ForecastExportJobName: str,
+    ForecastArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ForecastExportJobName`: `str`
-- `ForecastArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createforecastexportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateForecastExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateForecastExportJobResponseTypeDef
+
+def get_value() -> CreateForecastExportJobResponseTypeDef:
+    return {
+        "ForecastExportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateForecastExportJobResponseTypeDef(TypedDict):
+    ForecastExportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ForecastExportJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createforecastrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateForecastRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateForecastRequestRequestTypeDef
+
+def get_value() -> CreateForecastRequestRequestTypeDef:
+    return {
+        "ForecastName": ...,
+        "PredictorArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateForecastRequestRequestTypeDef(TypedDict):
+    ForecastName: str,
+    PredictorArn: str,
+    ForecastTypes: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ForecastName`: `str`
-- `PredictorArn`: `str`
-
-Optional fields:
-
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createforecastresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateForecastResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreateForecastResponseTypeDef
+
+def get_value() -> CreateForecastResponseTypeDef:
+    return {
+        "ForecastArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateForecastResponseTypeDef(TypedDict):
+    ForecastArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ForecastArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpredictorbacktestexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePredictorBacktestExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobRequestRequestTypeDef
+
+def get_value() -> CreatePredictorBacktestExportJobRequestRequestTypeDef:
+    return {
+        "PredictorBacktestExportJobName": ...,
+        "PredictorArn": ...,
+        "Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePredictorBacktestExportJobRequestRequestTypeDef(TypedDict):
+    PredictorBacktestExportJobName: str,
+    PredictorArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `PredictorBacktestExportJobName`: `str`
-- `PredictorArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpredictorbacktestexportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePredictorBacktestExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreatePredictorBacktestExportJobResponseTypeDef
+
+def get_value() -> CreatePredictorBacktestExportJobResponseTypeDef:
+    return {
+        "PredictorBacktestExportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePredictorBacktestExportJobResponseTypeDef(TypedDict):
+    PredictorBacktestExportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PredictorBacktestExportJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpredictorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePredictorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreatePredictorRequestRequestTypeDef
+
+def get_value() -> CreatePredictorRequestRequestTypeDef:
+    return {
+        "PredictorName": ...,
+        "ForecastHorizon": ...,
+        "InputDataConfig": ...,
+        "FeaturizationConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePredictorRequestRequestTypeDef(TypedDict):
+    PredictorName: str,
+    ForecastHorizon: int,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    FeaturizationConfig: FeaturizationConfigTypeDef,  # (2)
+    AlgorithmArn: NotRequired[str],
+    ForecastTypes: NotRequired[Sequence[str]],
+    PerformAutoML: NotRequired[bool],
+    AutoMLOverrideStrategy: NotRequired[AutoMLOverrideStrategyType],  # (3)
+    PerformHPO: NotRequired[bool],
+    TrainingParameters: NotRequired[Mapping[str, str]],
+    EvaluationParameters: NotRequired[EvaluationParametersTypeDef],  # (4)
+    HPOConfig: NotRequired[HyperParameterTuningJobConfigTypeDef],  # (5)
+    EncryptionConfig: NotRequired[EncryptionConfigTypeDef],  # (6)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+    OptimizationMetric: NotRequired[OptimizationMetricType],  # (8)
+```
 
-- `PredictorName`: `str`
-- `ForecastHorizon`: `int`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `FeaturizationConfig`:
-  [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
-
-Optional fields:
-
-- `AlgorithmArn`: `str`
-- `ForecastTypes`: `Sequence`\[`str`\]
-- `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`:
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
-- `PerformHPO`: `bool`
-- `TrainingParameters`: `Mapping`\[`str`, `str`\]
-- `EvaluationParameters`:
-  [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
-- `HPOConfig`:
-  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-
-<a id="createpredictorresponsetypedef"></a>
-
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef) 
+3. See [:material-code-brackets: AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype) 
+4. See [:material-code-braces: EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef) 
+5. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
+6. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
 ## CreatePredictorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import CreatePredictorResponseTypeDef
+
+def get_value() -> CreatePredictorResponseTypeDef:
+    return {
+        "PredictorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePredictorResponseTypeDef(TypedDict):
+    PredictorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PredictorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DataConfigTypeDef
+
+def get_value() -> DataConfigTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataConfigTypeDef(TypedDict):
+    DatasetGroupArn: str,
+    AttributeConfigs: NotRequired[Sequence[AttributeConfigTypeDef]],  # (1)
+    AdditionalDatasets: NotRequired[Sequence[AdditionalDatasetTypeDef]],  # (2)
+```
 
-- `DatasetGroupArn`: `str`
-
-Optional fields:
-
-- `AttributeConfigs`:
-  `Sequence`\[[AttributeConfigTypeDef](./type_defs.md#attributeconfigtypedef)\]
-- `AdditionalDatasets`:
-  `Sequence`\[[AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef)\]
-
-<a id="datadestinationtypedef"></a>
-
+1. See [:material-code-braces: AttributeConfigTypeDef](./type_defs.md#attributeconfigtypedef) 
+2. See [:material-code-braces: AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef) 
 ## DataDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DataDestinationTypeDef
+
+def get_value() -> DataDestinationTypeDef:
+    return {
+        "S3Config": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataDestinationTypeDef(TypedDict):
+    S3Config: S3ConfigTypeDef,  # (1)
+```
 
-- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
-
-<a id="datasourcetypedef"></a>
-
+1. See [:material-code-braces: S3ConfigTypeDef](./type_defs.md#s3configtypedef) 
 ## DataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "S3Config": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    S3Config: S3ConfigTypeDef,  # (1)
+```
 
-- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
-
-<a id="datasetgroupsummarytypedef"></a>
-
+1. See [:material-code-braces: S3ConfigTypeDef](./type_defs.md#s3configtypedef) 
 ## DatasetGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DatasetGroupSummaryTypeDef
+
+def get_value() -> DatasetGroupSummaryTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DatasetGroupArn`: `str`
-- `DatasetGroupName`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="datasetimportjobsummarytypedef"></a>
+```python title="Definition"
+class DatasetGroupSummaryTypeDef(TypedDict):
+    DatasetGroupArn: NotRequired[str],
+    DatasetGroupName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
 ## DatasetImportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DatasetImportJobSummaryTypeDef
+
+def get_value() -> DatasetImportJobSummaryTypeDef:
+    return {
+        "DatasetImportJobArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetImportJobSummaryTypeDef(TypedDict):
+    DatasetImportJobArn: NotRequired[str],
+    DatasetImportJobName: NotRequired[str],
+    DataSource: NotRequired[DataSourceTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `DatasetImportJobArn`: `str`
-- `DatasetImportJobName`: `str`
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="datasetsummarytypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 ## DatasetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DatasetSummaryTypeDef
+
+def get_value() -> DatasetSummaryTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSummaryTypeDef(TypedDict):
+    DatasetArn: NotRequired[str],
+    DatasetName: NotRequired[str],
+    DatasetType: NotRequired[DatasetTypeType],  # (1)
+    Domain: NotRequired[DomainType],  # (2)
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `DatasetArn`: `str`
-- `DatasetName`: `str`
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
-- `Domain`: [DomainType](./literals.md#domaintype)
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="deletedatasetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## DeleteDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteDatasetGroupRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetGroupRequestRequestTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetGroupArn`: `str`
-
-<a id="deletedatasetimportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetGroupRequestRequestTypeDef(TypedDict):
+    DatasetGroupArn: str,
+```
 
 ## DeleteDatasetImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteDatasetImportJobRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetImportJobRequestRequestTypeDef:
+    return {
+        "DatasetImportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetImportJobArn`: `str`
-
-<a id="deletedatasetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetImportJobRequestRequestTypeDef(TypedDict):
+    DatasetImportJobArn: str,
+```
 
 ## DeleteDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteDatasetRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-<a id="deleteexplainabilityexportrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+```
 
 ## DeleteExplainabilityExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteExplainabilityExportRequestRequestTypeDef
+
+def get_value() -> DeleteExplainabilityExportRequestRequestTypeDef:
+    return {
+        "ExplainabilityExportArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ExplainabilityExportArn`: `str`
-
-<a id="deleteexplainabilityrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteExplainabilityExportRequestRequestTypeDef(TypedDict):
+    ExplainabilityExportArn: str,
+```
 
 ## DeleteExplainabilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteExplainabilityRequestRequestTypeDef
+
+def get_value() -> DeleteExplainabilityRequestRequestTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ExplainabilityArn`: `str`
-
-<a id="deleteforecastexportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteExplainabilityRequestRequestTypeDef(TypedDict):
+    ExplainabilityArn: str,
+```
 
 ## DeleteForecastExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteForecastExportJobRequestRequestTypeDef
+
+def get_value() -> DeleteForecastExportJobRequestRequestTypeDef:
+    return {
+        "ForecastExportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ForecastExportJobArn`: `str`
-
-<a id="deleteforecastrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteForecastExportJobRequestRequestTypeDef(TypedDict):
+    ForecastExportJobArn: str,
+```
 
 ## DeleteForecastRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteForecastRequestRequestTypeDef
+
+def get_value() -> DeleteForecastRequestRequestTypeDef:
+    return {
+        "ForecastArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ForecastArn`: `str`
-
-<a id="deletepredictorbacktestexportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteForecastRequestRequestTypeDef(TypedDict):
+    ForecastArn: str,
+```
 
 ## DeletePredictorBacktestExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeletePredictorBacktestExportJobRequestRequestTypeDef
+
+def get_value() -> DeletePredictorBacktestExportJobRequestRequestTypeDef:
+    return {
+        "PredictorBacktestExportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorBacktestExportJobArn`: `str`
-
-<a id="deletepredictorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePredictorBacktestExportJobRequestRequestTypeDef(TypedDict):
+    PredictorBacktestExportJobArn: str,
+```
 
 ## DeletePredictorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeletePredictorRequestRequestTypeDef
+
+def get_value() -> DeletePredictorRequestRequestTypeDef:
+    return {
+        "PredictorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorArn`: `str`
-
-<a id="deleteresourcetreerequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePredictorRequestRequestTypeDef(TypedDict):
+    PredictorArn: str,
+```
 
 ## DeleteResourceTreeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DeleteResourceTreeRequestRequestTypeDef
+
+def get_value() -> DeleteResourceTreeRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="describeautopredictorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourceTreeRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## DescribeAutoPredictorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeAutoPredictorRequestRequestTypeDef
+
+def get_value() -> DescribeAutoPredictorRequestRequestTypeDef:
+    return {
+        "PredictorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorArn`: `str`
-
-<a id="describeautopredictorresponsetypedef"></a>
+```python title="Definition"
+class DescribeAutoPredictorRequestRequestTypeDef(TypedDict):
+    PredictorArn: str,
+```
 
 ## DescribeAutoPredictorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeAutoPredictorResponseTypeDef
+
+def get_value() -> DescribeAutoPredictorResponseTypeDef:
+    return {
+        "PredictorArn": ...,
+        "PredictorName": ...,
+        "ForecastHorizon": ...,
+        "ForecastTypes": ...,
+        "ForecastFrequency": ...,
+        "ForecastDimensions": ...,
+        "DatasetImportJobArns": ...,
+        "DataConfig": ...,
+        "EncryptionConfig": ...,
+        "ReferencePredictorSummary": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "OptimizationMetric": ...,
+        "ExplainabilityInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAutoPredictorResponseTypeDef(TypedDict):
+    PredictorArn: str,
+    PredictorName: str,
+    ForecastHorizon: int,
+    ForecastTypes: List[str],
+    ForecastFrequency: str,
+    ForecastDimensions: List[str],
+    DatasetImportJobArns: List[str],
+    DataConfig: DataConfigTypeDef,  # (1)
+    EncryptionConfig: EncryptionConfigTypeDef,  # (2)
+    ReferencePredictorSummary: ReferencePredictorSummaryTypeDef,  # (3)
+    EstimatedTimeRemainingInMinutes: int,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    OptimizationMetric: OptimizationMetricType,  # (4)
+    ExplainabilityInfo: ExplainabilityInfoTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `PredictorArn`: `str`
-- `PredictorName`: `str`
-- `ForecastHorizon`: `int`
-- `ForecastTypes`: `List`\[`str`\]
-- `ForecastFrequency`: `str`
-- `ForecastDimensions`: `List`\[`str`\]
-- `DatasetImportJobArns`: `List`\[`str`\]
-- `DataConfig`: [DataConfigTypeDef](./type_defs.md#dataconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `ReferencePredictorSummary`:
-  [ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef)
-- `EstimatedTimeRemainingInMinutes`: `int`
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-- `ExplainabilityInfo`:
-  [ExplainabilityInfoTypeDef](./type_defs.md#explainabilityinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataConfigTypeDef](./type_defs.md#dataconfigtypedef) 
+2. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+3. See [:material-code-braces: ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef) 
+4. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+5. See [:material-code-braces: ExplainabilityInfoTypeDef](./type_defs.md#explainabilityinfotypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetGroupRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetGroupRequestRequestTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetGroupArn`: `str`
-
-<a id="describedatasetgroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetGroupRequestRequestTypeDef(TypedDict):
+    DatasetGroupArn: str,
+```
 
 ## DescribeDatasetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetGroupResponseTypeDef
+
+def get_value() -> DescribeDatasetGroupResponseTypeDef:
+    return {
+        "DatasetGroupName": ...,
+        "DatasetGroupArn": ...,
+        "DatasetArns": ...,
+        "Domain": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetGroupResponseTypeDef(TypedDict):
+    DatasetGroupName: str,
+    DatasetGroupArn: str,
+    DatasetArns: List[str],
+    Domain: DomainType,  # (1)
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetGroupName`: `str`
-- `DatasetGroupArn`: `str`
-- `DatasetArns`: `List`\[`str`\]
-- `Domain`: [DomainType](./literals.md#domaintype)
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetImportJobRequestRequestTypeDef:
+    return {
+        "DatasetImportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetImportJobArn`: `str`
-
-<a id="describedatasetimportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetImportJobRequestRequestTypeDef(TypedDict):
+    DatasetImportJobArn: str,
+```
 
 ## DescribeDatasetImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobResponseTypeDef
+
+def get_value() -> DescribeDatasetImportJobResponseTypeDef:
+    return {
+        "DatasetImportJobName": ...,
+        "DatasetImportJobArn": ...,
+        "DatasetArn": ...,
+        "TimestampFormat": ...,
+        "TimeZone": ...,
+        "UseGeolocationForTimeZone": ...,
+        "GeolocationFormat": ...,
+        "DataSource": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "FieldStatistics": ...,
+        "DataSize": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetImportJobResponseTypeDef(TypedDict):
+    DatasetImportJobName: str,
+    DatasetImportJobArn: str,
+    DatasetArn: str,
+    TimestampFormat: str,
+    TimeZone: str,
+    UseGeolocationForTimeZone: bool,
+    GeolocationFormat: str,
+    DataSource: DataSourceTypeDef,  # (1)
+    EstimatedTimeRemainingInMinutes: int,
+    FieldStatistics: Dict[str, StatisticsTypeDef],  # (2)
+    DataSize: float,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `DatasetImportJobName`: `str`
-- `DatasetImportJobArn`: `str`
-- `DatasetArn`: `str`
-- `TimestampFormat`: `str`
-- `TimeZone`: `str`
-- `UseGeolocationForTimeZone`: `bool`
-- `GeolocationFormat`: `str`
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `EstimatedTimeRemainingInMinutes`: `int`
-- `FieldStatistics`: `Dict`\[`str`,
-  [StatisticsTypeDef](./type_defs.md#statisticstypedef)\]
-- `DataSize`: `float`
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: StatisticsTypeDef](./type_defs.md#statisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "DatasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetArn`: `str`
-
-<a id="describedatasetresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    DatasetArn: str,
+```
 
 ## DescribeDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "DatasetArn": ...,
+        "DatasetName": ...,
+        "Domain": ...,
+        "DatasetType": ...,
+        "DataFrequency": ...,
+        "Schema": ...,
+        "EncryptionConfig": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    DatasetArn: str,
+    DatasetName: str,
+    Domain: DomainType,  # (1)
+    DatasetType: DatasetTypeType,  # (2)
+    DataFrequency: str,
+    Schema: SchemaTypeDef,  # (3)
+    EncryptionConfig: EncryptionConfigTypeDef,  # (4)
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `DatasetArn`: `str`
-- `DatasetName`: `str`
-- `Domain`: [DomainType](./literals.md#domaintype)
-- `DatasetType`: [DatasetTypeType](./literals.md#datasettypetype)
-- `DataFrequency`: `str`
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeexplainabilityexportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-brackets: DatasetTypeType](./literals.md#datasettypetype) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExplainabilityExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeExplainabilityExportRequestRequestTypeDef
+
+def get_value() -> DescribeExplainabilityExportRequestRequestTypeDef:
+    return {
+        "ExplainabilityExportArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ExplainabilityExportArn`: `str`
-
-<a id="describeexplainabilityexportresponsetypedef"></a>
+```python title="Definition"
+class DescribeExplainabilityExportRequestRequestTypeDef(TypedDict):
+    ExplainabilityExportArn: str,
+```
 
 ## DescribeExplainabilityExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeExplainabilityExportResponseTypeDef
+
+def get_value() -> DescribeExplainabilityExportResponseTypeDef:
+    return {
+        "ExplainabilityExportArn": ...,
+        "ExplainabilityExportName": ...,
+        "ExplainabilityArn": ...,
+        "Destination": ...,
+        "Message": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExplainabilityExportResponseTypeDef(TypedDict):
+    ExplainabilityExportArn: str,
+    ExplainabilityExportName: str,
+    ExplainabilityArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Message: str,
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExplainabilityExportArn`: `str`
-- `ExplainabilityExportName`: `str`
-- `ExplainabilityArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Message`: `str`
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeexplainabilityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExplainabilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeExplainabilityRequestRequestTypeDef
+
+def get_value() -> DescribeExplainabilityRequestRequestTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ExplainabilityArn`: `str`
-
-<a id="describeexplainabilityresponsetypedef"></a>
+```python title="Definition"
+class DescribeExplainabilityRequestRequestTypeDef(TypedDict):
+    ExplainabilityArn: str,
+```
 
 ## DescribeExplainabilityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeExplainabilityResponseTypeDef
+
+def get_value() -> DescribeExplainabilityResponseTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+        "ExplainabilityName": ...,
+        "ResourceArn": ...,
+        "ExplainabilityConfig": ...,
+        "EnableVisualization": ...,
+        "DataSource": ...,
+        "Schema": ...,
+        "StartDateTime": ...,
+        "EndDateTime": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Message": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExplainabilityResponseTypeDef(TypedDict):
+    ExplainabilityArn: str,
+    ExplainabilityName: str,
+    ResourceArn: str,
+    ExplainabilityConfig: ExplainabilityConfigTypeDef,  # (1)
+    EnableVisualization: bool,
+    DataSource: DataSourceTypeDef,  # (2)
+    Schema: SchemaTypeDef,  # (3)
+    StartDateTime: str,
+    EndDateTime: str,
+    EstimatedTimeRemainingInMinutes: int,
+    Message: str,
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ExplainabilityArn`: `str`
-- `ExplainabilityName`: `str`
-- `ResourceArn`: `str`
-- `ExplainabilityConfig`:
-  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
-- `EnableVisualization`: `bool`
-- `DataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `Schema`: [SchemaTypeDef](./type_defs.md#schematypedef)
-- `StartDateTime`: `str`
-- `EndDateTime`: `str`
-- `EstimatedTimeRemainingInMinutes`: `int`
-- `Message`: `str`
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeforecastexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef) 
+2. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+3. See [:material-code-braces: SchemaTypeDef](./type_defs.md#schematypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeForecastExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeForecastExportJobRequestRequestTypeDef
+
+def get_value() -> DescribeForecastExportJobRequestRequestTypeDef:
+    return {
+        "ForecastExportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ForecastExportJobArn`: `str`
-
-<a id="describeforecastexportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeForecastExportJobRequestRequestTypeDef(TypedDict):
+    ForecastExportJobArn: str,
+```
 
 ## DescribeForecastExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeForecastExportJobResponseTypeDef
+
+def get_value() -> DescribeForecastExportJobResponseTypeDef:
+    return {
+        "ForecastExportJobArn": ...,
+        "ForecastExportJobName": ...,
+        "ForecastArn": ...,
+        "Destination": ...,
+        "Message": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeForecastExportJobResponseTypeDef(TypedDict):
+    ForecastExportJobArn: str,
+    ForecastExportJobName: str,
+    ForecastArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Message: str,
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ForecastExportJobArn`: `str`
-- `ForecastExportJobName`: `str`
-- `ForecastArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Message`: `str`
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeforecastrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeForecastRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeForecastRequestRequestTypeDef
+
+def get_value() -> DescribeForecastRequestRequestTypeDef:
+    return {
+        "ForecastArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ForecastArn`: `str`
-
-<a id="describeforecastresponsetypedef"></a>
+```python title="Definition"
+class DescribeForecastRequestRequestTypeDef(TypedDict):
+    ForecastArn: str,
+```
 
 ## DescribeForecastResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribeForecastResponseTypeDef
+
+def get_value() -> DescribeForecastResponseTypeDef:
+    return {
+        "ForecastArn": ...,
+        "ForecastName": ...,
+        "ForecastTypes": ...,
+        "PredictorArn": ...,
+        "DatasetGroupArn": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeForecastResponseTypeDef(TypedDict):
+    ForecastArn: str,
+    ForecastName: str,
+    ForecastTypes: List[str],
+    PredictorArn: str,
+    DatasetGroupArn: str,
+    EstimatedTimeRemainingInMinutes: int,
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ForecastArn`: `str`
-- `ForecastName`: `str`
-- `ForecastTypes`: `List`\[`str`\]
-- `PredictorArn`: `str`
-- `DatasetGroupArn`: `str`
-- `EstimatedTimeRemainingInMinutes`: `int`
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepredictorbacktestexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePredictorBacktestExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobRequestRequestTypeDef
+
+def get_value() -> DescribePredictorBacktestExportJobRequestRequestTypeDef:
+    return {
+        "PredictorBacktestExportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorBacktestExportJobArn`: `str`
-
-<a id="describepredictorbacktestexportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribePredictorBacktestExportJobRequestRequestTypeDef(TypedDict):
+    PredictorBacktestExportJobArn: str,
+```
 
 ## DescribePredictorBacktestExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobResponseTypeDef
+
+def get_value() -> DescribePredictorBacktestExportJobResponseTypeDef:
+    return {
+        "PredictorBacktestExportJobArn": ...,
+        "PredictorBacktestExportJobName": ...,
+        "PredictorArn": ...,
+        "Destination": ...,
+        "Message": ...,
+        "Status": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePredictorBacktestExportJobResponseTypeDef(TypedDict):
+    PredictorBacktestExportJobArn: str,
+    PredictorBacktestExportJobName: str,
+    PredictorArn: str,
+    Destination: DataDestinationTypeDef,  # (1)
+    Message: str,
+    Status: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PredictorBacktestExportJobArn`: `str`
-- `PredictorBacktestExportJobName`: `str`
-- `PredictorArn`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Message`: `str`
-- `Status`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepredictorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePredictorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribePredictorRequestRequestTypeDef
+
+def get_value() -> DescribePredictorRequestRequestTypeDef:
+    return {
+        "PredictorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorArn`: `str`
-
-<a id="describepredictorresponsetypedef"></a>
+```python title="Definition"
+class DescribePredictorRequestRequestTypeDef(TypedDict):
+    PredictorArn: str,
+```
 
 ## DescribePredictorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import DescribePredictorResponseTypeDef
+
+def get_value() -> DescribePredictorResponseTypeDef:
+    return {
+        "PredictorArn": ...,
+        "PredictorName": ...,
+        "AlgorithmArn": ...,
+        "AutoMLAlgorithmArns": ...,
+        "ForecastHorizon": ...,
+        "ForecastTypes": ...,
+        "PerformAutoML": ...,
+        "AutoMLOverrideStrategy": ...,
+        "PerformHPO": ...,
+        "TrainingParameters": ...,
+        "EvaluationParameters": ...,
+        "HPOConfig": ...,
+        "InputDataConfig": ...,
+        "FeaturizationConfig": ...,
+        "EncryptionConfig": ...,
+        "PredictorExecutionDetails": ...,
+        "EstimatedTimeRemainingInMinutes": ...,
+        "IsAutoPredictor": ...,
+        "DatasetImportJobArns": ...,
+        "Status": ...,
+        "Message": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "OptimizationMetric": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePredictorResponseTypeDef(TypedDict):
+    PredictorArn: str,
+    PredictorName: str,
+    AlgorithmArn: str,
+    AutoMLAlgorithmArns: List[str],
+    ForecastHorizon: int,
+    ForecastTypes: List[str],
+    PerformAutoML: bool,
+    AutoMLOverrideStrategy: AutoMLOverrideStrategyType,  # (1)
+    PerformHPO: bool,
+    TrainingParameters: Dict[str, str],
+    EvaluationParameters: EvaluationParametersTypeDef,  # (2)
+    HPOConfig: HyperParameterTuningJobConfigTypeDef,  # (3)
+    InputDataConfig: InputDataConfigTypeDef,  # (4)
+    FeaturizationConfig: FeaturizationConfigTypeDef,  # (5)
+    EncryptionConfig: EncryptionConfigTypeDef,  # (6)
+    PredictorExecutionDetails: PredictorExecutionDetailsTypeDef,  # (7)
+    EstimatedTimeRemainingInMinutes: int,
+    IsAutoPredictor: bool,
+    DatasetImportJobArns: List[str],
+    Status: str,
+    Message: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    OptimizationMetric: OptimizationMetricType,  # (8)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+```
 
-- `PredictorArn`: `str`
-- `PredictorName`: `str`
-- `AlgorithmArn`: `str`
-- `AutoMLAlgorithmArns`: `List`\[`str`\]
-- `ForecastHorizon`: `int`
-- `ForecastTypes`: `List`\[`str`\]
-- `PerformAutoML`: `bool`
-- `AutoMLOverrideStrategy`:
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
-- `PerformHPO`: `bool`
-- `TrainingParameters`: `Dict`\[`str`, `str`\]
-- `EvaluationParameters`:
-  [EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef)
-- `HPOConfig`:
-  [HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef)
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `FeaturizationConfig`:
-  [FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef)
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `PredictorExecutionDetails`:
-  [PredictorExecutionDetailsTypeDef](./type_defs.md#predictorexecutiondetailstypedef)
-- `EstimatedTimeRemainingInMinutes`: `int`
-- `IsAutoPredictor`: `bool`
-- `DatasetImportJobArns`: `List`\[`str`\]
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="encryptionconfigtypedef"></a>
-
+1. See [:material-code-brackets: AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype) 
+2. See [:material-code-braces: EvaluationParametersTypeDef](./type_defs.md#evaluationparameterstypedef) 
+3. See [:material-code-braces: HyperParameterTuningJobConfigTypeDef](./type_defs.md#hyperparametertuningjobconfigtypedef) 
+4. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+5. See [:material-code-braces: FeaturizationConfigTypeDef](./type_defs.md#featurizationconfigtypedef) 
+6. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+7. See [:material-code-braces: PredictorExecutionDetailsTypeDef](./type_defs.md#predictorexecutiondetailstypedef) 
+8. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import EncryptionConfigTypeDef
+
+def get_value() -> EncryptionConfigTypeDef:
+    return {
+        "RoleArn": ...,
+        "KMSKeyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-- `KMSKeyArn`: `str`
-
-<a id="errormetrictypedef"></a>
+```python title="Definition"
+class EncryptionConfigTypeDef(TypedDict):
+    RoleArn: str,
+    KMSKeyArn: str,
+```
 
 ## ErrorMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ErrorMetricTypeDef
+
+def get_value() -> ErrorMetricTypeDef:
+    return {
+        "ForecastType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ForecastType`: `str`
-- `WAPE`: `float`
-- `RMSE`: `float`
-- `MASE`: `float`
-- `MAPE`: `float`
-
-<a id="evaluationparameterstypedef"></a>
+```python title="Definition"
+class ErrorMetricTypeDef(TypedDict):
+    ForecastType: NotRequired[str],
+    WAPE: NotRequired[float],
+    RMSE: NotRequired[float],
+    MASE: NotRequired[float],
+    MAPE: NotRequired[float],
+```
 
 ## EvaluationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import EvaluationParametersTypeDef
+
+def get_value() -> EvaluationParametersTypeDef:
+    return {
+        "NumberOfBacktestWindows": ...,
+    }
 ```
 
-Optional fields:
-
-- `NumberOfBacktestWindows`: `int`
-- `BackTestWindowOffset`: `int`
-
-<a id="evaluationresulttypedef"></a>
+```python title="Definition"
+class EvaluationParametersTypeDef(TypedDict):
+    NumberOfBacktestWindows: NotRequired[int],
+    BackTestWindowOffset: NotRequired[int],
+```
 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "AlgorithmArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    AlgorithmArn: NotRequired[str],
+    TestWindows: NotRequired[List[WindowSummaryTypeDef]],  # (1)
+```
 
-- `AlgorithmArn`: `str`
-- `TestWindows`:
-  `List`\[[WindowSummaryTypeDef](./type_defs.md#windowsummarytypedef)\]
-
-<a id="explainabilityconfigtypedef"></a>
-
+1. See [:material-code-braces: WindowSummaryTypeDef](./type_defs.md#windowsummarytypedef) 
 ## ExplainabilityConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ExplainabilityConfigTypeDef
+
+def get_value() -> ExplainabilityConfigTypeDef:
+    return {
+        "TimeSeriesGranularity": ...,
+        "TimePointGranularity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExplainabilityConfigTypeDef(TypedDict):
+    TimeSeriesGranularity: TimeSeriesGranularityType,  # (1)
+    TimePointGranularity: TimePointGranularityType,  # (2)
+```
 
-- `TimeSeriesGranularity`:
-  [TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype)
-- `TimePointGranularity`:
-  [TimePointGranularityType](./literals.md#timepointgranularitytype)
-
-<a id="explainabilityexportsummarytypedef"></a>
-
+1. See [:material-code-brackets: TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype) 
+2. See [:material-code-brackets: TimePointGranularityType](./literals.md#timepointgranularitytype) 
 ## ExplainabilityExportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ExplainabilityExportSummaryTypeDef
+
+def get_value() -> ExplainabilityExportSummaryTypeDef:
+    return {
+        "ExplainabilityExportArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExplainabilityExportSummaryTypeDef(TypedDict):
+    ExplainabilityExportArn: NotRequired[str],
+    ExplainabilityExportName: NotRequired[str],
+    Destination: NotRequired[DataDestinationTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `ExplainabilityExportArn`: `str`
-- `ExplainabilityExportName`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="explainabilityinfotypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
 ## ExplainabilityInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ExplainabilityInfoTypeDef
+
+def get_value() -> ExplainabilityInfoTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExplainabilityArn`: `str`
-- `Status`: `str`
-
-<a id="explainabilitysummarytypedef"></a>
+```python title="Definition"
+class ExplainabilityInfoTypeDef(TypedDict):
+    ExplainabilityArn: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## ExplainabilitySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ExplainabilitySummaryTypeDef
+
+def get_value() -> ExplainabilitySummaryTypeDef:
+    return {
+        "ExplainabilityArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExplainabilitySummaryTypeDef(TypedDict):
+    ExplainabilityArn: NotRequired[str],
+    ExplainabilityName: NotRequired[str],
+    ResourceArn: NotRequired[str],
+    ExplainabilityConfig: NotRequired[ExplainabilityConfigTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `ExplainabilityArn`: `str`
-- `ExplainabilityName`: `str`
-- `ResourceArn`: `str`
-- `ExplainabilityConfig`:
-  [ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="featurizationconfigtypedef"></a>
-
+1. See [:material-code-braces: ExplainabilityConfigTypeDef](./type_defs.md#explainabilityconfigtypedef) 
 ## FeaturizationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import FeaturizationConfigTypeDef
+
+def get_value() -> FeaturizationConfigTypeDef:
+    return {
+        "ForecastFrequency": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FeaturizationConfigTypeDef(TypedDict):
+    ForecastFrequency: str,
+    ForecastDimensions: NotRequired[Sequence[str]],
+    Featurizations: NotRequired[Sequence[FeaturizationTypeDef]],  # (1)
+```
 
-- `ForecastFrequency`: `str`
-
-Optional fields:
-
-- `ForecastDimensions`: `Sequence`\[`str`\]
-- `Featurizations`:
-  `Sequence`\[[FeaturizationTypeDef](./type_defs.md#featurizationtypedef)\]
-
-<a id="featurizationmethodtypedef"></a>
-
+1. See [:material-code-braces: FeaturizationTypeDef](./type_defs.md#featurizationtypedef) 
 ## FeaturizationMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import FeaturizationMethodTypeDef
+
+def get_value() -> FeaturizationMethodTypeDef:
+    return {
+        "FeaturizationMethodName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FeaturizationMethodTypeDef(TypedDict):
+    FeaturizationMethodName: FeaturizationMethodNameType,  # (1)
+    FeaturizationMethodParameters: NotRequired[Mapping[str, str]],
+```
 
-- `FeaturizationMethodName`: `Literal['filling']` (see
-  [FeaturizationMethodNameType](./literals.md#featurizationmethodnametype))
-
-Optional fields:
-
-- `FeaturizationMethodParameters`: `Mapping`\[`str`, `str`\]
-
-<a id="featurizationtypedef"></a>
-
+1. See [:material-code-brackets: FeaturizationMethodNameType](./literals.md#featurizationmethodnametype) 
 ## FeaturizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import FeaturizationTypeDef
+
+def get_value() -> FeaturizationTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FeaturizationTypeDef(TypedDict):
+    AttributeName: str,
+    FeaturizationPipeline: NotRequired[Sequence[FeaturizationMethodTypeDef]],  # (1)
+```
 
-- `AttributeName`: `str`
-
-Optional fields:
-
-- `FeaturizationPipeline`:
-  `Sequence`\[[FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef)\]
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+        "Condition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+    Condition: FilterConditionStringType,  # (1)
+```
 
-- `Key`: `str`
-- `Value`: `str`
-- `Condition`:
-  [FilterConditionStringType](./literals.md#filterconditionstringtype)
-
-<a id="forecastexportjobsummarytypedef"></a>
-
+1. See [:material-code-brackets: FilterConditionStringType](./literals.md#filterconditionstringtype) 
 ## ForecastExportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ForecastExportJobSummaryTypeDef
+
+def get_value() -> ForecastExportJobSummaryTypeDef:
+    return {
+        "ForecastExportJobArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ForecastExportJobSummaryTypeDef(TypedDict):
+    ForecastExportJobArn: NotRequired[str],
+    ForecastExportJobName: NotRequired[str],
+    Destination: NotRequired[DataDestinationTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `ForecastExportJobArn`: `str`
-- `ForecastExportJobName`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="forecastsummarytypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
 ## ForecastSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ForecastSummaryTypeDef
+
+def get_value() -> ForecastSummaryTypeDef:
+    return {
+        "ForecastArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ForecastArn`: `str`
-- `ForecastName`: `str`
-- `PredictorArn`: `str`
-- `CreatedUsingAutoPredictor`: `bool`
-- `DatasetGroupArn`: `str`
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="getaccuracymetricsrequestrequesttypedef"></a>
+```python title="Definition"
+class ForecastSummaryTypeDef(TypedDict):
+    ForecastArn: NotRequired[str],
+    ForecastName: NotRequired[str],
+    PredictorArn: NotRequired[str],
+    CreatedUsingAutoPredictor: NotRequired[bool],
+    DatasetGroupArn: NotRequired[str],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
 ## GetAccuracyMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import GetAccuracyMetricsRequestRequestTypeDef
+
+def get_value() -> GetAccuracyMetricsRequestRequestTypeDef:
+    return {
+        "PredictorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PredictorArn`: `str`
-
-<a id="getaccuracymetricsresponsetypedef"></a>
+```python title="Definition"
+class GetAccuracyMetricsRequestRequestTypeDef(TypedDict):
+    PredictorArn: str,
+```
 
 ## GetAccuracyMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import GetAccuracyMetricsResponseTypeDef
+
+def get_value() -> GetAccuracyMetricsResponseTypeDef:
+    return {
+        "PredictorEvaluationResults": ...,
+        "IsAutoPredictor": ...,
+        "AutoMLOverrideStrategy": ...,
+        "OptimizationMetric": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccuracyMetricsResponseTypeDef(TypedDict):
+    PredictorEvaluationResults: List[EvaluationResultTypeDef],  # (1)
+    IsAutoPredictor: bool,
+    AutoMLOverrideStrategy: AutoMLOverrideStrategyType,  # (2)
+    OptimizationMetric: OptimizationMetricType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `PredictorEvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `IsAutoPredictor`: `bool`
-- `AutoMLOverrideStrategy`:
-  [AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype)
-- `OptimizationMetric`:
-  [OptimizationMetricType](./literals.md#optimizationmetrictype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hyperparametertuningjobconfigtypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-brackets: AutoMLOverrideStrategyType](./literals.md#automloverridestrategytype) 
+3. See [:material-code-brackets: OptimizationMetricType](./literals.md#optimizationmetrictype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HyperParameterTuningJobConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import HyperParameterTuningJobConfigTypeDef
+
+def get_value() -> HyperParameterTuningJobConfigTypeDef:
+    return {
+        "ParameterRanges": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HyperParameterTuningJobConfigTypeDef(TypedDict):
+    ParameterRanges: NotRequired[ParameterRangesTypeDef],  # (1)
+```
 
-- `ParameterRanges`:
-  [ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef)
-
-<a id="inputdataconfigtypedef"></a>
-
+1. See [:material-code-braces: ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef) 
 ## InputDataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import InputDataConfigTypeDef
+
+def get_value() -> InputDataConfigTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputDataConfigTypeDef(TypedDict):
+    DatasetGroupArn: str,
+    SupplementaryFeatures: NotRequired[Sequence[SupplementaryFeatureTypeDef]],  # (1)
+```
 
-- `DatasetGroupArn`: `str`
-
-Optional fields:
-
-- `SupplementaryFeatures`:
-  `Sequence`\[[SupplementaryFeatureTypeDef](./type_defs.md#supplementaryfeaturetypedef)\]
-
-<a id="integerparameterrangetypedef"></a>
-
+1. See [:material-code-braces: SupplementaryFeatureTypeDef](./type_defs.md#supplementaryfeaturetypedef) 
 ## IntegerParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import IntegerParameterRangeTypeDef
+
+def get_value() -> IntegerParameterRangeTypeDef:
+    return {
+        "Name": ...,
+        "MaxValue": ...,
+        "MinValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IntegerParameterRangeTypeDef(TypedDict):
+    Name: str,
+    MaxValue: int,
+    MinValue: int,
+    ScalingType: NotRequired[ScalingTypeType],  # (1)
+```
 
-- `Name`: `str`
-- `MaxValue`: `int`
-- `MinValue`: `int`
+1. See [:material-code-brackets: ScalingTypeType](./literals.md#scalingtypetype) 
+## ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef
 
-- `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
+def get_value() -> ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
 
-<a id="listdatasetgroupsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetGroupsRequestRequestTypeDef
+
+def get_value() -> ListDatasetGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatasetgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDatasetGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetGroupsResponseTypeDef
+
+def get_value() -> ListDatasetGroupsResponseTypeDef:
+    return {
+        "DatasetGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetGroupsResponseTypeDef(TypedDict):
+    DatasetGroups: List[DatasetGroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetGroups`:
-  `List`\[[DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef
 
-<a id="listdatasetimportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef
 
+def get_value() -> ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetImportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetImportJobsRequestRequestTypeDef
+
+def get_value() -> ListDatasetImportJobsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDatasetImportJobsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listdatasetimportjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListDatasetImportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetImportJobsResponseTypeDef
+
+def get_value() -> ListDatasetImportJobsResponseTypeDef:
+    return {
+        "DatasetImportJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetImportJobsResponseTypeDef(TypedDict):
+    DatasetImportJobs: List[DatasetImportJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetImportJobs`:
-  `List`\[[DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetsRequestListDatasetsPaginateTypeDef
 
-<a id="listdatasetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListDatasetsRequestListDatasetsPaginateTypeDef
 
+def get_value() -> ListDatasetsRequestListDatasetsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsRequestListDatasetsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdatasetsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDatasetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListDatasetsResponseTypeDef
+
+def get_value() -> ListDatasetsResponseTypeDef:
+    return {
+        "Datasets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetsResponseTypeDef(TypedDict):
+    Datasets: List[DatasetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Datasets`:
-  `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexplainabilitiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExplainabilitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListExplainabilitiesRequestRequestTypeDef
+
+def get_value() -> ListExplainabilitiesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListExplainabilitiesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listexplainabilitiesresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListExplainabilitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListExplainabilitiesResponseTypeDef
+
+def get_value() -> ListExplainabilitiesResponseTypeDef:
+    return {
+        "Explainabilities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExplainabilitiesResponseTypeDef(TypedDict):
+    Explainabilities: List[ExplainabilitySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Explainabilities`:
-  `List`\[[ExplainabilitySummaryTypeDef](./type_defs.md#explainabilitysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexplainabilityexportsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExplainabilitySummaryTypeDef](./type_defs.md#explainabilitysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExplainabilityExportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListExplainabilityExportsRequestRequestTypeDef
+
+def get_value() -> ListExplainabilityExportsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListExplainabilityExportsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listexplainabilityexportsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListExplainabilityExportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListExplainabilityExportsResponseTypeDef
+
+def get_value() -> ListExplainabilityExportsResponseTypeDef:
+    return {
+        "ExplainabilityExports": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExplainabilityExportsResponseTypeDef(TypedDict):
+    ExplainabilityExports: List[ExplainabilityExportSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExplainabilityExports`:
-  `List`\[[ExplainabilityExportSummaryTypeDef](./type_defs.md#explainabilityexportsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExplainabilityExportSummaryTypeDef](./type_defs.md#explainabilityexportsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef
 
-<a id="listforecastexportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef
 
+def get_value() -> ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListForecastExportJobsRequestListForecastExportJobsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListForecastExportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListForecastExportJobsRequestRequestTypeDef
+
+def get_value() -> ListForecastExportJobsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListForecastExportJobsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listforecastexportjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListForecastExportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListForecastExportJobsResponseTypeDef
+
+def get_value() -> ListForecastExportJobsResponseTypeDef:
+    return {
+        "ForecastExportJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListForecastExportJobsResponseTypeDef(TypedDict):
+    ForecastExportJobs: List[ForecastExportJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ForecastExportJobs`:
-  `List`\[[ForecastExportJobSummaryTypeDef](./type_defs.md#forecastexportjobsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ForecastExportJobSummaryTypeDef](./type_defs.md#forecastexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListForecastsRequestListForecastsPaginateTypeDef
 
-<a id="listforecastsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListForecastsRequestListForecastsPaginateTypeDef
 
+def get_value() -> ListForecastsRequestListForecastsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListForecastsRequestListForecastsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListForecastsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListForecastsRequestRequestTypeDef
+
+def get_value() -> ListForecastsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListForecastsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listforecastsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListForecastsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListForecastsResponseTypeDef
+
+def get_value() -> ListForecastsResponseTypeDef:
+    return {
+        "Forecasts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListForecastsResponseTypeDef(TypedDict):
+    Forecasts: List[ForecastSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Forecasts`:
-  `List`\[[ForecastSummaryTypeDef](./type_defs.md#forecastsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ForecastSummaryTypeDef](./type_defs.md#forecastsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef
 
-<a id="listpredictorbacktestexportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef
 
+def get_value() -> ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListPredictorBacktestExportJobsRequestListPredictorBacktestExportJobsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPredictorBacktestExportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsRequestRequestTypeDef
+
+def get_value() -> ListPredictorBacktestExportJobsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPredictorBacktestExportJobsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listpredictorbacktestexportjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListPredictorBacktestExportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListPredictorBacktestExportJobsResponseTypeDef
+
+def get_value() -> ListPredictorBacktestExportJobsResponseTypeDef:
+    return {
+        "PredictorBacktestExportJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPredictorBacktestExportJobsResponseTypeDef(TypedDict):
+    PredictorBacktestExportJobs: List[PredictorBacktestExportJobSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PredictorBacktestExportJobs`:
-  `List`\[[PredictorBacktestExportJobSummaryTypeDef](./type_defs.md#predictorbacktestexportjobsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PredictorBacktestExportJobSummaryTypeDef](./type_defs.md#predictorbacktestexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPredictorsRequestListPredictorsPaginateTypeDef
 
-<a id="listpredictorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_forecast.type_defs import ListPredictorsRequestListPredictorsPaginateTypeDef
 
+def get_value() -> ListPredictorsRequestListPredictorsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListPredictorsRequestListPredictorsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPredictorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListPredictorsRequestRequestTypeDef
+
+def get_value() -> ListPredictorsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPredictorsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listpredictorsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListPredictorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListPredictorsResponseTypeDef
+
+def get_value() -> ListPredictorsResponseTypeDef:
+    return {
+        "Predictors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPredictorsResponseTypeDef(TypedDict):
+    Predictors: List[PredictorSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Predictors`:
-  `List`\[[PredictorSummaryTypeDef](./type_defs.md#predictorsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PredictorSummaryTypeDef](./type_defs.md#predictorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricstypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import MetricsTypeDef
+
+def get_value() -> MetricsTypeDef:
+    return {
+        "RMSE": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricsTypeDef(TypedDict):
+    RMSE: NotRequired[float],
+    WeightedQuantileLosses: NotRequired[List[WeightedQuantileLossTypeDef]],  # (1)
+    ErrorMetrics: NotRequired[List[ErrorMetricTypeDef]],  # (2)
+    AverageWeightedQuantileLoss: NotRequired[float],
+```
 
-- `RMSE`: `float`
-- `WeightedQuantileLosses`:
-  `List`\[[WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef)\]
-- `ErrorMetrics`:
-  `List`\[[ErrorMetricTypeDef](./type_defs.md#errormetrictypedef)\]
-- `AverageWeightedQuantileLoss`: `float`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: WeightedQuantileLossTypeDef](./type_defs.md#weightedquantilelosstypedef) 
+2. See [:material-code-braces: ErrorMetricTypeDef](./type_defs.md#errormetrictypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parameterrangestypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterRangesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ParameterRangesTypeDef
+
+def get_value() -> ParameterRangesTypeDef:
+    return {
+        "CategoricalParameterRanges": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterRangesTypeDef(TypedDict):
+    CategoricalParameterRanges: NotRequired[Sequence[CategoricalParameterRangeTypeDef]],  # (1)
+    ContinuousParameterRanges: NotRequired[Sequence[ContinuousParameterRangeTypeDef]],  # (2)
+    IntegerParameterRanges: NotRequired[Sequence[IntegerParameterRangeTypeDef]],  # (3)
+```
 
-- `CategoricalParameterRanges`:
-  `Sequence`\[[CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef)\]
-- `ContinuousParameterRanges`:
-  `Sequence`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
-- `IntegerParameterRanges`:
-  `Sequence`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
-
-<a id="predictorbacktestexportjobsummarytypedef"></a>
-
+1. See [:material-code-braces: CategoricalParameterRangeTypeDef](./type_defs.md#categoricalparameterrangetypedef) 
+2. See [:material-code-braces: ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef) 
+3. See [:material-code-braces: IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef) 
 ## PredictorBacktestExportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import PredictorBacktestExportJobSummaryTypeDef
+
+def get_value() -> PredictorBacktestExportJobSummaryTypeDef:
+    return {
+        "PredictorBacktestExportJobArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredictorBacktestExportJobSummaryTypeDef(TypedDict):
+    PredictorBacktestExportJobArn: NotRequired[str],
+    PredictorBacktestExportJobName: NotRequired[str],
+    Destination: NotRequired[DataDestinationTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `PredictorBacktestExportJobArn`: `str`
-- `PredictorBacktestExportJobName`: `str`
-- `Destination`:
-  [DataDestinationTypeDef](./type_defs.md#datadestinationtypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="predictorexecutiondetailstypedef"></a>
-
+1. See [:material-code-braces: DataDestinationTypeDef](./type_defs.md#datadestinationtypedef) 
 ## PredictorExecutionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import PredictorExecutionDetailsTypeDef
+
+def get_value() -> PredictorExecutionDetailsTypeDef:
+    return {
+        "PredictorExecutions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredictorExecutionDetailsTypeDef(TypedDict):
+    PredictorExecutions: NotRequired[List[PredictorExecutionTypeDef]],  # (1)
+```
 
-- `PredictorExecutions`:
-  `List`\[[PredictorExecutionTypeDef](./type_defs.md#predictorexecutiontypedef)\]
-
-<a id="predictorexecutiontypedef"></a>
-
+1. See [:material-code-braces: PredictorExecutionTypeDef](./type_defs.md#predictorexecutiontypedef) 
 ## PredictorExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import PredictorExecutionTypeDef
+
+def get_value() -> PredictorExecutionTypeDef:
+    return {
+        "AlgorithmArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredictorExecutionTypeDef(TypedDict):
+    AlgorithmArn: NotRequired[str],
+    TestWindows: NotRequired[List[TestWindowSummaryTypeDef]],  # (1)
+```
 
-- `AlgorithmArn`: `str`
-- `TestWindows`:
-  `List`\[[TestWindowSummaryTypeDef](./type_defs.md#testwindowsummarytypedef)\]
-
-<a id="predictorsummarytypedef"></a>
-
+1. See [:material-code-braces: TestWindowSummaryTypeDef](./type_defs.md#testwindowsummarytypedef) 
 ## PredictorSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import PredictorSummaryTypeDef
+
+def get_value() -> PredictorSummaryTypeDef:
+    return {
+        "PredictorArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredictorSummaryTypeDef(TypedDict):
+    PredictorArn: NotRequired[str],
+    PredictorName: NotRequired[str],
+    DatasetGroupArn: NotRequired[str],
+    IsAutoPredictor: NotRequired[bool],
+    ReferencePredictorSummary: NotRequired[ReferencePredictorSummaryTypeDef],  # (1)
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+```
 
-- `PredictorArn`: `str`
-- `PredictorName`: `str`
-- `DatasetGroupArn`: `str`
-- `IsAutoPredictor`: `bool`
-- `ReferencePredictorSummary`:
-  [ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef)
-- `Status`: `str`
-- `Message`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-
-<a id="referencepredictorsummarytypedef"></a>
-
+1. See [:material-code-braces: ReferencePredictorSummaryTypeDef](./type_defs.md#referencepredictorsummarytypedef) 
 ## ReferencePredictorSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ReferencePredictorSummaryTypeDef
+
+def get_value() -> ReferencePredictorSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReferencePredictorSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    State: NotRequired[StateType],  # (1)
+```
 
-- `Arn`: `str`
-- `State`: [StateType](./literals.md#statetype)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: StateType](./literals.md#statetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3configtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3ConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import S3ConfigTypeDef
+
+def get_value() -> S3ConfigTypeDef:
+    return {
+        "Path": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `Path`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `KMSKeyArn`: `str`
-
-<a id="schemaattributetypedef"></a>
+```python title="Definition"
+class S3ConfigTypeDef(TypedDict):
+    Path: str,
+    RoleArn: str,
+    KMSKeyArn: NotRequired[str],
+```
 
 ## SchemaAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import SchemaAttributeTypeDef
+
+def get_value() -> SchemaAttributeTypeDef:
+    return {
+        "AttributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaAttributeTypeDef(TypedDict):
+    AttributeName: NotRequired[str],
+    AttributeType: NotRequired[AttributeTypeType],  # (1)
+```
 
-- `AttributeName`: `str`
-- `AttributeType`: [AttributeTypeType](./literals.md#attributetypetype)
-
-<a id="schematypedef"></a>
-
+1. See [:material-code-brackets: AttributeTypeType](./literals.md#attributetypetype) 
 ## SchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import SchemaTypeDef
+
+def get_value() -> SchemaTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaTypeDef(TypedDict):
+    Attributes: NotRequired[Sequence[SchemaAttributeTypeDef]],  # (1)
+```
 
-- `Attributes`:
-  `Sequence`\[[SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef)\]
-
-<a id="statisticstypedef"></a>
-
+1. See [:material-code-braces: SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef) 
 ## StatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import StatisticsTypeDef
+
+def get_value() -> StatisticsTypeDef:
+    return {
+        "Count": ...,
+    }
 ```
 
-Optional fields:
-
-- `Count`: `int`
-- `CountDistinct`: `int`
-- `CountNull`: `int`
-- `CountNan`: `int`
-- `Min`: `str`
-- `Max`: `str`
-- `Avg`: `float`
-- `Stddev`: `float`
-- `CountLong`: `int`
-- `CountDistinctLong`: `int`
-- `CountNullLong`: `int`
-- `CountNanLong`: `int`
-
-<a id="stopresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StatisticsTypeDef(TypedDict):
+    Count: NotRequired[int],
+    CountDistinct: NotRequired[int],
+    CountNull: NotRequired[int],
+    CountNan: NotRequired[int],
+    Min: NotRequired[str],
+    Max: NotRequired[str],
+    Avg: NotRequired[float],
+    Stddev: NotRequired[float],
+    CountLong: NotRequired[int],
+    CountDistinctLong: NotRequired[int],
+    CountNullLong: NotRequired[int],
+    CountNanLong: NotRequired[int],
+```
 
 ## StopResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import StopResourceRequestRequestTypeDef
+
+def get_value() -> StopResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="supplementaryfeaturetypedef"></a>
+```python title="Definition"
+class StopResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## SupplementaryFeatureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import SupplementaryFeatureTypeDef
+
+def get_value() -> SupplementaryFeatureTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SupplementaryFeatureTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="testwindowsummarytypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TestWindowSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import TestWindowSummaryTypeDef
+
+def get_value() -> TestWindowSummaryTypeDef:
+    return {
+        "TestWindowStart": ...,
+    }
 ```
 
-Optional fields:
-
-- `TestWindowStart`: `datetime`
-- `TestWindowEnd`: `datetime`
-- `Status`: `str`
-- `Message`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TestWindowSummaryTypeDef(TypedDict):
+    TestWindowStart: NotRequired[datetime],
+    TestWindowEnd: NotRequired[datetime],
+    Status: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedatasetgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import UpdateDatasetGroupRequestRequestTypeDef
+
+def get_value() -> UpdateDatasetGroupRequestRequestTypeDef:
+    return {
+        "DatasetGroupArn": ...,
+        "DatasetArns": ...,
+    }
 ```
 
-Required fields:
-
-- `DatasetGroupArn`: `str`
-- `DatasetArns`: `Sequence`\[`str`\]
-
-<a id="weightedquantilelosstypedef"></a>
+```python title="Definition"
+class UpdateDatasetGroupRequestRequestTypeDef(TypedDict):
+    DatasetGroupArn: str,
+    DatasetArns: Sequence[str],
+```
 
 ## WeightedQuantileLossTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import WeightedQuantileLossTypeDef
+
+def get_value() -> WeightedQuantileLossTypeDef:
+    return {
+        "Quantile": ...,
+    }
 ```
 
-Optional fields:
-
-- `Quantile`: `float`
-- `LossValue`: `float`
-
-<a id="windowsummarytypedef"></a>
+```python title="Definition"
+class WeightedQuantileLossTypeDef(TypedDict):
+    Quantile: NotRequired[float],
+    LossValue: NotRequired[float],
+```
 
 ## WindowSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.type_defs import WindowSummaryTypeDef
+
+def get_value() -> WindowSummaryTypeDef:
+    return {
+        "TestWindowStart": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WindowSummaryTypeDef(TypedDict):
+    TestWindowStart: NotRequired[datetime],
+    TestWindowEnd: NotRequired[datetime],
+    ItemCount: NotRequired[int],
+    EvaluationType: NotRequired[EvaluationTypeType],  # (1)
+    Metrics: NotRequired[MetricsTypeDef],  # (2)
+```
 
-- `TestWindowStart`: `datetime`
-- `TestWindowEnd`: `datetime`
-- `ItemCount`: `int`
-- `EvaluationType`: [EvaluationTypeType](./literals.md#evaluationtypetype)
-- `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
+1. See [:material-code-brackets: EvaluationTypeType](./literals.md#evaluationtypetype) 
+2. See [:material-code-braces: MetricsTypeDef](./type_defs.md#metricstypedef) 

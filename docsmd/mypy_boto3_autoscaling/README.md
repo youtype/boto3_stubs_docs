@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-autoscaling-module"></a>
-
-# Type annotations for boto3 AutoScaling module
+#  AutoScaling module
 
 > [Index](../README.md) > AutoScaling
 
-Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module
-[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+!!! note ""
 
-- [Type annotations for boto3 AutoScaling module](#type-annotations-for-boto3-autoscaling-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AutoScalingClient](#autoscalingclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+    type annotations stubs module [mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AutoScaling`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[autoscaling]'
 python -m pip install mypy-boto3-autoscaling
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,123 +42,37 @@ python -m pip install mypy-boto3-autoscaling
 python -m pip uninstall -y mypy-boto3-autoscaling
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="autoscalingclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AutoScalingClient
 
-Type annotations for `boto3.client("autoscaling")` as
-[AutoScalingClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("autoscaling")` as [AutoScalingClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_autoscaling.client import AutoScalingClient
+
+def get_client() -> AutoScalingClient:
+    return Session().cleint("autoscaling")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [attach_instances](./client.md#attach_instances)
-- [attach_load_balancer_target_groups](./client.md#attach_load_balancer_target_groups)
-- [attach_load_balancers](./client.md#attach_load_balancers)
-- [batch_delete_scheduled_action](./client.md#batch_delete_scheduled_action)
-- [batch_put_scheduled_update_group_action](./client.md#batch_put_scheduled_update_group_action)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_instance_refresh](./client.md#cancel_instance_refresh)
-- [complete_lifecycle_action](./client.md#complete_lifecycle_action)
-- [create_auto_scaling_group](./client.md#create_auto_scaling_group)
-- [create_launch_configuration](./client.md#create_launch_configuration)
-- [create_or_update_tags](./client.md#create_or_update_tags)
-- [delete_auto_scaling_group](./client.md#delete_auto_scaling_group)
-- [delete_launch_configuration](./client.md#delete_launch_configuration)
-- [delete_lifecycle_hook](./client.md#delete_lifecycle_hook)
-- [delete_notification_configuration](./client.md#delete_notification_configuration)
-- [delete_policy](./client.md#delete_policy)
-- [delete_scheduled_action](./client.md#delete_scheduled_action)
-- [delete_tags](./client.md#delete_tags)
-- [delete_warm_pool](./client.md#delete_warm_pool)
-- [describe_account_limits](./client.md#describe_account_limits)
-- [describe_adjustment_types](./client.md#describe_adjustment_types)
-- [describe_auto_scaling_groups](./client.md#describe_auto_scaling_groups)
-- [describe_auto_scaling_instances](./client.md#describe_auto_scaling_instances)
-- [describe_auto_scaling_notification_types](./client.md#describe_auto_scaling_notification_types)
-- [describe_instance_refreshes](./client.md#describe_instance_refreshes)
-- [describe_launch_configurations](./client.md#describe_launch_configurations)
-- [describe_lifecycle_hook_types](./client.md#describe_lifecycle_hook_types)
-- [describe_lifecycle_hooks](./client.md#describe_lifecycle_hooks)
-- [describe_load_balancer_target_groups](./client.md#describe_load_balancer_target_groups)
-- [describe_load_balancers](./client.md#describe_load_balancers)
-- [describe_metric_collection_types](./client.md#describe_metric_collection_types)
-- [describe_notification_configurations](./client.md#describe_notification_configurations)
-- [describe_policies](./client.md#describe_policies)
-- [describe_scaling_activities](./client.md#describe_scaling_activities)
-- [describe_scaling_process_types](./client.md#describe_scaling_process_types)
-- [describe_scheduled_actions](./client.md#describe_scheduled_actions)
-- [describe_tags](./client.md#describe_tags)
-- [describe_termination_policy_types](./client.md#describe_termination_policy_types)
-- [describe_warm_pool](./client.md#describe_warm_pool)
-- [detach_instances](./client.md#detach_instances)
-- [detach_load_balancer_target_groups](./client.md#detach_load_balancer_target_groups)
-- [detach_load_balancers](./client.md#detach_load_balancers)
-- [disable_metrics_collection](./client.md#disable_metrics_collection)
-- [enable_metrics_collection](./client.md#enable_metrics_collection)
-- [enter_standby](./client.md#enter_standby)
-- [exceptions](./client.md#exceptions)
-- [execute_policy](./client.md#execute_policy)
-- [exit_standby](./client.md#exit_standby)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_predictive_scaling_forecast](./client.md#get_predictive_scaling_forecast)
-- [put_lifecycle_hook](./client.md#put_lifecycle_hook)
-- [put_notification_configuration](./client.md#put_notification_configuration)
-- [put_scaling_policy](./client.md#put_scaling_policy)
-- [put_scheduled_update_group_action](./client.md#put_scheduled_update_group_action)
-- [put_warm_pool](./client.md#put_warm_pool)
-- [record_lifecycle_action_heartbeat](./client.md#record_lifecycle_action_heartbeat)
-- [resume_processes](./client.md#resume_processes)
-- [set_desired_capacity](./client.md#set_desired_capacity)
-- [set_instance_health](./client.md#set_instance_health)
-- [set_instance_protection](./client.md#set_instance_protection)
-- [start_instance_refresh](./client.md#start_instance_refresh)
-- [suspend_processes](./client.md#suspend_processes)
-- [terminate_instance_in_auto_scaling_group](./client.md#terminate_instance_in_auto_scaling_group)
-- [update_auto_scaling_group](./client.md#update_auto_scaling_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AutoScalingClient [exceptions](./client.md#exceptions)
-
-- ActiveInstanceRefreshNotFoundFault
-- AlreadyExistsFault
-- ClientError
-- InstanceRefreshInProgressFault
-- InvalidNextToken
-- LimitExceededFault
-- ResourceContentionFault
-- ResourceInUseFault
-- ScalingActivityInProgressFault
-- ServiceLinkedRoleFailure
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("autoscaling").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("autoscaling").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator, ...
+from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator
+
+def get_describe_auto_scaling_groups_paginator() -> DescribeAutoScalingGroupsPaginator:
+    return Session().client("autoscaling").get_paginator("describe_auto_scaling_groups"))
 ```
 
 - [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
@@ -194,16 +86,23 @@ from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator,
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType
 
-```python
-from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType, ...
+def get_value() -> AcceleratorManufacturerType:
+    return "amazon-web-services"
 ```
 
 - [AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)
@@ -244,18 +143,22 @@ from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef
 
-```python
-from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
+def get_value() -> AcceleratorCountRequestTypeDef:
+    return {
+        "Min": ...,
+    }
 ```
 
 - [AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef)
@@ -268,6 +171,7 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [AttachInstancesQueryRequestTypeDef](./type_defs.md#attachinstancesqueryrequesttypedef)
 - [AttachLoadBalancerTargetGroupsTypeRequestTypeDef](./type_defs.md#attachloadbalancertargetgroupstyperequesttypedef)
 - [AttachLoadBalancersTypeRequestTypeDef](./type_defs.md#attachloadbalancerstyperequesttypedef)
+- [AutoScalingGroupNamesTypeDescribeAutoScalingGroupsPaginateTypeDef](./type_defs.md#autoscalinggroupnamestypedescribeautoscalinggroupspaginatetypedef)
 - [AutoScalingGroupNamesTypeRequestTypeDef](./type_defs.md#autoscalinggroupnamestyperequesttypedef)
 - [AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)
 - [AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef)
@@ -296,6 +200,7 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DeleteWarmPoolTypeRequestTypeDef](./type_defs.md#deletewarmpooltyperequesttypedef)
 - [DescribeAccountLimitsAnswerTypeDef](./type_defs.md#describeaccountlimitsanswertypedef)
 - [DescribeAdjustmentTypesAnswerTypeDef](./type_defs.md#describeadjustmenttypesanswertypedef)
+- [DescribeAutoScalingInstancesTypeDescribeAutoScalingInstancesPaginateTypeDef](./type_defs.md#describeautoscalinginstancestypedescribeautoscalinginstancespaginatetypedef)
 - [DescribeAutoScalingInstancesTypeRequestTypeDef](./type_defs.md#describeautoscalinginstancestyperequesttypedef)
 - [DescribeAutoScalingNotificationTypesAnswerTypeDef](./type_defs.md#describeautoscalingnotificationtypesanswertypedef)
 - [DescribeInstanceRefreshesAnswerTypeDef](./type_defs.md#describeinstancerefreshesanswertypedef)
@@ -303,16 +208,23 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DescribeLifecycleHookTypesAnswerTypeDef](./type_defs.md#describelifecyclehooktypesanswertypedef)
 - [DescribeLifecycleHooksAnswerTypeDef](./type_defs.md#describelifecyclehooksanswertypedef)
 - [DescribeLifecycleHooksTypeRequestTypeDef](./type_defs.md#describelifecyclehookstyperequesttypedef)
+- [DescribeLoadBalancerTargetGroupsRequestDescribeLoadBalancerTargetGroupsPaginateTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequestdescribeloadbalancertargetgroupspaginatetypedef)
 - [DescribeLoadBalancerTargetGroupsRequestRequestTypeDef](./type_defs.md#describeloadbalancertargetgroupsrequestrequesttypedef)
 - [DescribeLoadBalancerTargetGroupsResponseTypeDef](./type_defs.md#describeloadbalancertargetgroupsresponsetypedef)
+- [DescribeLoadBalancersRequestDescribeLoadBalancersPaginateTypeDef](./type_defs.md#describeloadbalancersrequestdescribeloadbalancerspaginatetypedef)
 - [DescribeLoadBalancersRequestRequestTypeDef](./type_defs.md#describeloadbalancersrequestrequesttypedef)
 - [DescribeLoadBalancersResponseTypeDef](./type_defs.md#describeloadbalancersresponsetypedef)
 - [DescribeMetricCollectionTypesAnswerTypeDef](./type_defs.md#describemetriccollectiontypesanswertypedef)
 - [DescribeNotificationConfigurationsAnswerTypeDef](./type_defs.md#describenotificationconfigurationsanswertypedef)
+- [DescribeNotificationConfigurationsTypeDescribeNotificationConfigurationsPaginateTypeDef](./type_defs.md#describenotificationconfigurationstypedescribenotificationconfigurationspaginatetypedef)
 - [DescribeNotificationConfigurationsTypeRequestTypeDef](./type_defs.md#describenotificationconfigurationstyperequesttypedef)
+- [DescribePoliciesTypeDescribePoliciesPaginateTypeDef](./type_defs.md#describepoliciestypedescribepoliciespaginatetypedef)
 - [DescribePoliciesTypeRequestTypeDef](./type_defs.md#describepoliciestyperequesttypedef)
+- [DescribeScalingActivitiesTypeDescribeScalingActivitiesPaginateTypeDef](./type_defs.md#describescalingactivitiestypedescribescalingactivitiespaginatetypedef)
 - [DescribeScalingActivitiesTypeRequestTypeDef](./type_defs.md#describescalingactivitiestyperequesttypedef)
+- [DescribeScheduledActionsTypeDescribeScheduledActionsPaginateTypeDef](./type_defs.md#describescheduledactionstypedescribescheduledactionspaginatetypedef)
 - [DescribeScheduledActionsTypeRequestTypeDef](./type_defs.md#describescheduledactionstyperequesttypedef)
+- [DescribeTagsTypeDescribeTagsPaginateTypeDef](./type_defs.md#describetagstypedescribetagspaginatetypedef)
 - [DescribeTagsTypeRequestTypeDef](./type_defs.md#describetagstyperequesttypedef)
 - [DescribeTerminationPolicyTypesAnswerTypeDef](./type_defs.md#describeterminationpolicytypesanswertypedef)
 - [DescribeWarmPoolAnswerTypeDef](./type_defs.md#describewarmpoolanswertypedef)
@@ -346,6 +258,7 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
 - [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
 - [LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef)
+- [LaunchConfigurationNamesTypeDescribeLaunchConfigurationsPaginateTypeDef](./type_defs.md#launchconfigurationnamestypedescribelaunchconfigurationspaginatetypedef)
 - [LaunchConfigurationNamesTypeRequestTypeDef](./type_defs.md#launchconfigurationnamestyperequesttypedef)
 - [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef)
 - [LaunchConfigurationsTypeTypeDef](./type_defs.md#launchconfigurationstypetypedef)
@@ -411,3 +324,4 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [UpdateAutoScalingGroupTypeRequestTypeDef](./type_defs.md#updateautoscalinggrouptyperequesttypedef)
 - [VCpuCountRequestTypeDef](./type_defs.md#vcpucountrequesttypedef)
 - [WarmPoolConfigurationTypeDef](./type_defs.md#warmpoolconfigurationtypedef)
+

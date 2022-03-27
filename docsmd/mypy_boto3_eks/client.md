@@ -1,67 +1,18 @@
-<a id="eksclient-for-boto3-eks-module"></a>
-
-# EKSClient for boto3 EKS module
+# EKSClient
 
 > [Index](../README.md) > [EKS](./README.md) > EKSClient
 
-Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module
-[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
+!!! note ""
 
-- [EKSClient for boto3 EKS module](#eksclient-for-boto3-eks-module)
-  - [EKSClient](#eksclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_encryption_config](#associate_encryption_config)
-    - [associate_identity_provider_config](#associate_identity_provider_config)
-    - [can_paginate](#can_paginate)
-    - [create_addon](#create_addon)
-    - [create_cluster](#create_cluster)
-    - [create_fargate_profile](#create_fargate_profile)
-    - [create_nodegroup](#create_nodegroup)
-    - [delete_addon](#delete_addon)
-    - [delete_cluster](#delete_cluster)
-    - [delete_fargate_profile](#delete_fargate_profile)
-    - [delete_nodegroup](#delete_nodegroup)
-    - [deregister_cluster](#deregister_cluster)
-    - [describe_addon](#describe_addon)
-    - [describe_addon_versions](#describe_addon_versions)
-    - [describe_cluster](#describe_cluster)
-    - [describe_fargate_profile](#describe_fargate_profile)
-    - [describe_identity_provider_config](#describe_identity_provider_config)
-    - [describe_nodegroup](#describe_nodegroup)
-    - [describe_update](#describe_update)
-    - [disassociate_identity_provider_config](#disassociate_identity_provider_config)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_addons](#list_addons)
-    - [list_clusters](#list_clusters)
-    - [list_fargate_profiles](#list_fargate_profiles)
-    - [list_identity_provider_configs](#list_identity_provider_configs)
-    - [list_nodegroups](#list_nodegroups)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_updates](#list_updates)
-    - [register_cluster](#register_cluster)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_addon](#update_addon)
-    - [update_cluster_config](#update_cluster_config)
-    - [update_cluster_version](#update_cluster_version)
-    - [update_nodegroup_config](#update_nodegroup_config)
-    - [update_nodegroup_version](#update_nodegroup_version)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="eksclient"></a>
+    Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+    type annotations stubs module [mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 ## EKSClient
 
-Type annotations for `boto3.client("eks")`
+Type annotations and code completion for `#!python boto3.client("eks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_eks.client import EKSClient
 
@@ -69,980 +20,1249 @@ def get_eks_client() -> EKSClient:
     return Session().client("eks")
 ```
 
-Boto3 documentation:
-[EKS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("eks").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("eks")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ClientException,
+    client.InvalidParameterException,
+    client.InvalidRequestException,
+    client.NotFoundException,
+    client.ResourceInUseException,
+    client.ResourceLimitExceededException,
+    client.ResourceNotFoundException,
+    client.ResourcePropagationDelayException,
+    client.ServerException,
+    client.ServiceUnavailableException,
+    client.UnsupportedAvailabilityZoneException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_eks.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourcePropagationDelayException`
-- `Exceptions.ServerException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.UnsupportedAvailabilityZoneException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EKSClient exceptions.
-
-Type annotations for `boto3.client("eks").exceptions` method.
-
-Boto3 documentation:
-[EKS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_encryption\_config"></a>
-
-### associate_encryption_config
+### associate\_encryption\_config
 
 Associate encryption configuration to an existing cluster.
 
-Type annotations for `boto3.client("eks").associate_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("eks").associate_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config)
 
-Boto3 documentation:
-[EKS.Client.associate_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_encryption_config)
+```python title="Method definition"
+def associate_encryption_config(
+    self,
+    *,
+    clusterName: str,
+    encryptionConfig: Sequence[EncryptionConfigTypeDef],  # (1)
+    clientRequestToken: str = ...,
+) -> AssociateEncryptionConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateEncryptionConfigRequestRequestTypeDef](./type_defs.md#associateencryptionconfigrequestrequesttypedef).
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+2. See [:material-code-braces: AssociateEncryptionConfigResponseTypeDef](./type_defs.md#associateencryptionconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `encryptionConfig`:
-  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
-  *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "encryptionConfig": ...,
+}
 
-Returns
-[AssociateEncryptionConfigResponseTypeDef](./type_defs.md#associateencryptionconfigresponsetypedef).
+parent.associate_encryption_config(**kwargs)
+```
 
-<a id="associate\_identity\_provider\_config"></a>
+1. See [:material-code-braces: AssociateEncryptionConfigRequestRequestTypeDef](./type_defs.md#associateencryptionconfigrequestrequesttypedef) 
 
-### associate_identity_provider_config
+### associate\_identity\_provider\_config
 
 Associate an identity provider configuration to a cluster.
 
-Type annotations for `boto3.client("eks").associate_identity_provider_config`
-method.
+Type annotations and code completion for `#!python boto3.client("eks").associate_identity_provider_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
 
-Boto3 documentation:
-[EKS.Client.associate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.associate_identity_provider_config)
+```python title="Method definition"
+def associate_identity_provider_config(
+    self,
+    *,
+    clusterName: str,
+    oidc: OidcIdentityProviderConfigRequestTypeDef,  # (1)
+    tags: Mapping[str, str] = ...,
+    clientRequestToken: str = ...,
+) -> AssociateIdentityProviderConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#associateidentityproviderconfigrequestrequesttypedef).
+1. See [:material-code-braces: OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef) 
+2. See [:material-code-braces: AssociateIdentityProviderConfigResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `oidc`:
-  [OidcIdentityProviderConfigRequestTypeDef](./type_defs.md#oidcidentityproviderconfigrequesttypedef)
-  *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateIdentityProviderConfigRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "oidc": ...,
+}
 
-Returns
-[AssociateIdentityProviderConfigResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponsetypedef).
+parent.associate_identity_provider_config(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#associateidentityproviderconfigrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("eks").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("eks").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.can_paginate)
 
-Boto3 documentation:
-[EKS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_addon"></a>
-
-### create_addon
+### create\_addon
 
 .
 
-Type annotations for `boto3.client("eks").create_addon` method.
+Type annotations and code completion for `#!python boto3.client("eks").create_addon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon)
 
-Boto3 documentation:
-[EKS.Client.create_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_addon)
+```python title="Method definition"
+def create_addon(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+    addonVersion: str = ...,
+    serviceAccountRoleArn: str = ...,
+    resolveConflicts: ResolveConflictsType = ...,  # (1)
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAddonResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAddonRequestRequestTypeDef](./type_defs.md#createaddonrequestrequesttypedef).
+1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
+2. See [:material-code-braces: CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-- `addonVersion`: `str`
-- `serviceAccountRoleArn`: `str`
-- `resolveConflicts`:
-  [ResolveConflictsType](./literals.md#resolveconflictstype)
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAddonRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
 
-Returns
-[CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
+parent.create_addon(**kwargs)
+```
 
-<a id="create\_cluster"></a>
+1. See [:material-code-braces: CreateAddonRequestRequestTypeDef](./type_defs.md#createaddonrequestrequesttypedef) 
 
-### create_cluster
+### create\_cluster
 
 Creates an Amazon EKS control plane.
 
-Type annotations for `boto3.client("eks").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("eks").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster)
 
-Boto3 documentation:
-[EKS.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    name: str,
+    roleArn: str,
+    resourcesVpcConfig: VpcConfigRequestTypeDef,  # (1)
+    version: str = ...,
+    kubernetesNetworkConfig: KubernetesNetworkConfigRequestTypeDef = ...,  # (2)
+    logging: LoggingTypeDef = ...,  # (3)
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+    encryptionConfig: Sequence[EncryptionConfigTypeDef] = ...,  # (4)
+) -> CreateClusterResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-braces: VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef) 
+2. See [:material-code-braces: KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef) 
+3. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+4. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+5. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `resourcesVpcConfig`:
-  [VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef)
-  *(required)*
-- `version`: `str`
-- `kubernetesNetworkConfig`:
-  [KubernetesNetworkConfigRequestTypeDef](./type_defs.md#kubernetesnetworkconfigrequesttypedef)
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `encryptionConfig`:
-  `Sequence`\[[EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "roleArn": ...,
+    "resourcesVpcConfig": ...,
+}
 
-Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_fargate\_profile"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_fargate_profile
+### create\_fargate\_profile
 
 Creates an Fargate profile for your Amazon EKS cluster.
 
-Type annotations for `boto3.client("eks").create_fargate_profile` method.
+Type annotations and code completion for `#!python boto3.client("eks").create_fargate_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile)
 
-Boto3 documentation:
-[EKS.Client.create_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_fargate_profile)
+```python title="Method definition"
+def create_fargate_profile(
+    self,
+    *,
+    fargateProfileName: str,
+    clusterName: str,
+    podExecutionRoleArn: str,
+    subnets: Sequence[str] = ...,
+    selectors: Sequence[FargateProfileSelectorTypeDef] = ...,  # (1)
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateFargateProfileResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFargateProfileRequestRequestTypeDef](./type_defs.md#createfargateprofilerequestrequesttypedef).
+1. See [:material-code-braces: FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef) 
+2. See [:material-code-braces: CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `fargateProfileName`: `str` *(required)*
-- `clusterName`: `str` *(required)*
-- `podExecutionRoleArn`: `str` *(required)*
-- `subnets`: `Sequence`\[`str`\]
-- `selectors`:
-  `Sequence`\[[FargateProfileSelectorTypeDef](./type_defs.md#fargateprofileselectortypedef)\]
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFargateProfileRequestRequestTypeDef = {  # (1)
+    "fargateProfileName": ...,
+    "clusterName": ...,
+    "podExecutionRoleArn": ...,
+}
 
-Returns
-[CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
+parent.create_fargate_profile(**kwargs)
+```
 
-<a id="create\_nodegroup"></a>
+1. See [:material-code-braces: CreateFargateProfileRequestRequestTypeDef](./type_defs.md#createfargateprofilerequestrequesttypedef) 
 
-### create_nodegroup
-
-.
-
-Type annotations for `boto3.client("eks").create_nodegroup` method.
-
-Boto3 documentation:
-[EKS.Client.create_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup)
-
-Arguments mapping described in
-[CreateNodegroupRequestRequestTypeDef](./type_defs.md#createnodegrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
-- `subnets`: `Sequence`\[`str`\] *(required)*
-- `nodeRole`: `str` *(required)*
-- `scalingConfig`:
-  [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
-- `diskSize`: `int`
-- `instanceTypes`: `Sequence`\[`str`\]
-- `amiType`: [AMITypesType](./literals.md#amitypestype)
-- `remoteAccess`:
-  [RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef)
-- `labels`: `Mapping`\[`str`, `str`\]
-- `taints`: `Sequence`\[[TaintTypeDef](./type_defs.md#tainttypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientRequestToken`: `str`
-- `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `updateConfig`:
-  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
-- `capacityType`: [CapacityTypesType](./literals.md#capacitytypestype)
-- `version`: `str`
-- `releaseVersion`: `str`
-
-Returns
-[CreateNodegroupResponseTypeDef](./type_defs.md#createnodegroupresponsetypedef).
-
-<a id="delete\_addon"></a>
-
-### delete_addon
+### create\_nodegroup
 
 .
 
-Type annotations for `boto3.client("eks").delete_addon` method.
+Type annotations and code completion for `#!python boto3.client("eks").create_nodegroup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.create_nodegroup)
 
-Boto3 documentation:
-[EKS.Client.delete_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon)
+```python title="Method definition"
+def create_nodegroup(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+    subnets: Sequence[str],
+    nodeRole: str,
+    scalingConfig: NodegroupScalingConfigTypeDef = ...,  # (1)
+    diskSize: int = ...,
+    instanceTypes: Sequence[str] = ...,
+    amiType: AMITypesType = ...,  # (2)
+    remoteAccess: RemoteAccessConfigTypeDef = ...,  # (3)
+    labels: Mapping[str, str] = ...,
+    taints: Sequence[TaintTypeDef] = ...,  # (4)
+    tags: Mapping[str, str] = ...,
+    clientRequestToken: str = ...,
+    launchTemplate: LaunchTemplateSpecificationTypeDef = ...,  # (5)
+    updateConfig: NodegroupUpdateConfigTypeDef = ...,  # (6)
+    capacityType: CapacityTypesType = ...,  # (7)
+    version: str = ...,
+    releaseVersion: str = ...,
+) -> CreateNodegroupResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAddonRequestRequestTypeDef](./type_defs.md#deleteaddonrequestrequesttypedef).
+1. See [:material-code-braces: NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef) 
+2. See [:material-code-brackets: AMITypesType](./literals.md#amitypestype) 
+3. See [:material-code-braces: RemoteAccessConfigTypeDef](./type_defs.md#remoteaccessconfigtypedef) 
+4. See [:material-code-braces: TaintTypeDef](./type_defs.md#tainttypedef) 
+5. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+6. See [:material-code-braces: NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef) 
+7. See [:material-code-brackets: CapacityTypesType](./literals.md#capacitytypestype) 
+8. See [:material-code-braces: CreateNodegroupResponseTypeDef](./type_defs.md#createnodegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-- `preserve`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateNodegroupRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+    "subnets": ...,
+    "nodeRole": ...,
+}
 
-Returns
-[DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).
+parent.create_nodegroup(**kwargs)
+```
 
-<a id="delete\_cluster"></a>
+1. See [:material-code-braces: CreateNodegroupRequestRequestTypeDef](./type_defs.md#createnodegrouprequestrequesttypedef) 
 
-### delete_cluster
+### delete\_addon
+
+.
+
+Type annotations and code completion for `#!python boto3.client("eks").delete_addon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_addon)
+
+```python title="Method definition"
+def delete_addon(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+    preserve: bool = ...,
+) -> DeleteAddonResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteAddonRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
+
+parent.delete_addon(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteAddonRequestRequestTypeDef](./type_defs.md#deleteaddonrequestrequesttypedef) 
+
+### delete\_cluster
 
 Deletes the Amazon EKS cluster control plane.
 
-Type annotations for `boto3.client("eks").delete_cluster` method.
+Type annotations and code completion for `#!python boto3.client("eks").delete_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster)
 
-Boto3 documentation:
-[EKS.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_cluster)
+```python title="Method definition"
+def delete_cluster(
+    self,
+    *,
+    name: str,
+) -> DeleteClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+parent.delete_cluster(**kwargs)
+```
 
-<a id="delete\_fargate\_profile"></a>
+1. See [:material-code-braces: DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef) 
 
-### delete_fargate_profile
+### delete\_fargate\_profile
 
 Deletes an Fargate profile.
 
-Type annotations for `boto3.client("eks").delete_fargate_profile` method.
+Type annotations and code completion for `#!python boto3.client("eks").delete_fargate_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile)
 
-Boto3 documentation:
-[EKS.Client.delete_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_fargate_profile)
+```python title="Method definition"
+def delete_fargate_profile(
+    self,
+    *,
+    clusterName: str,
+    fargateProfileName: str,
+) -> DeleteFargateProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFargateProfileRequestRequestTypeDef](./type_defs.md#deletefargateprofilerequestrequesttypedef).
+1. See [:material-code-braces: DeleteFargateProfileResponseTypeDef](./type_defs.md#deletefargateprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `fargateProfileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFargateProfileRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "fargateProfileName": ...,
+}
 
-Returns
-[DeleteFargateProfileResponseTypeDef](./type_defs.md#deletefargateprofileresponsetypedef).
+parent.delete_fargate_profile(**kwargs)
+```
 
-<a id="delete\_nodegroup"></a>
+1. See [:material-code-braces: DeleteFargateProfileRequestRequestTypeDef](./type_defs.md#deletefargateprofilerequestrequesttypedef) 
 
-### delete_nodegroup
+### delete\_nodegroup
 
 Deletes an Amazon EKS node group for a cluster.
 
-Type annotations for `boto3.client("eks").delete_nodegroup` method.
+Type annotations and code completion for `#!python boto3.client("eks").delete_nodegroup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup)
 
-Boto3 documentation:
-[EKS.Client.delete_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.delete_nodegroup)
+```python title="Method definition"
+def delete_nodegroup(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+) -> DeleteNodegroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteNodegroupRequestRequestTypeDef](./type_defs.md#deletenodegrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNodegroupRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
 
-Returns
-[DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
+parent.delete_nodegroup(**kwargs)
+```
 
-<a id="deregister\_cluster"></a>
+1. See [:material-code-braces: DeleteNodegroupRequestRequestTypeDef](./type_defs.md#deletenodegrouprequestrequesttypedef) 
 
-### deregister_cluster
+### deregister\_cluster
 
 Deregisters a connected cluster to remove it from the Amazon EKS control plane.
 
-Type annotations for `boto3.client("eks").deregister_cluster` method.
+Type annotations and code completion for `#!python boto3.client("eks").deregister_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.deregister_cluster)
 
-Boto3 documentation:
-[EKS.Client.deregister_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.deregister_cluster)
+```python title="Method definition"
+def deregister_cluster(
+    self,
+    *,
+    name: str,
+) -> DeregisterClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterClusterRequestRequestTypeDef](./type_defs.md#deregisterclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef).
+parent.deregister_cluster(**kwargs)
+```
 
-<a id="describe\_addon"></a>
+1. See [:material-code-braces: DeregisterClusterRequestRequestTypeDef](./type_defs.md#deregisterclusterrequestrequesttypedef) 
 
-### describe_addon
-
-.
-
-Type annotations for `boto3.client("eks").describe_addon` method.
-
-Boto3 documentation:
-[EKS.Client.describe_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon)
-
-Arguments mapping described in
-[DescribeAddonRequestRequestTypeDef](./type_defs.md#describeaddonrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-
-Returns
-[DescribeAddonResponseTypeDef](./type_defs.md#describeaddonresponsetypedef).
-
-<a id="describe\_addon\_versions"></a>
-
-### describe_addon_versions
+### describe\_addon
 
 .
 
-Type annotations for `boto3.client("eks").describe_addon_versions` method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_addon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon)
 
-Boto3 documentation:
-[EKS.Client.describe_addon_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions)
+```python title="Method definition"
+def describe_addon(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+) -> DescribeAddonResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAddonVersionsRequestRequestTypeDef](./type_defs.md#describeaddonversionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAddonResponseTypeDef](./type_defs.md#describeaddonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `kubernetesVersion`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `addonName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAddonRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
 
-Returns
-[DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef).
+parent.describe_addon(**kwargs)
+```
 
-<a id="describe\_cluster"></a>
+1. See [:material-code-braces: DescribeAddonRequestRequestTypeDef](./type_defs.md#describeaddonrequestrequesttypedef) 
 
-### describe_cluster
+### describe\_addon\_versions
+
+.
+
+Type annotations and code completion for `#!python boto3.client("eks").describe_addon_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_addon_versions)
+
+```python title="Method definition"
+def describe_addon_versions(
+    self,
+    *,
+    kubernetesVersion: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    addonName: str = ...,
+) -> DescribeAddonVersionsResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddonVersionsRequestRequestTypeDef = {  # (1)
+    "kubernetesVersion": ...,
+}
+
+parent.describe_addon_versions(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddonVersionsRequestRequestTypeDef](./type_defs.md#describeaddonversionsrequestrequesttypedef) 
+
+### describe\_cluster
 
 Returns descriptive information about an Amazon EKS cluster.
 
-Type annotations for `boto3.client("eks").describe_cluster` method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster)
 
-Boto3 documentation:
-[EKS.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_cluster)
+```python title="Method definition"
+def describe_cluster(
+    self,
+    *,
+    name: str,
+) -> DescribeClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
+parent.describe_cluster(**kwargs)
+```
 
-<a id="describe\_fargate\_profile"></a>
+1. See [:material-code-braces: DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef) 
 
-### describe_fargate_profile
+### describe\_fargate\_profile
 
 Returns descriptive information about an Fargate profile.
 
-Type annotations for `boto3.client("eks").describe_fargate_profile` method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_fargate_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile)
 
-Boto3 documentation:
-[EKS.Client.describe_fargate_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_fargate_profile)
+```python title="Method definition"
+def describe_fargate_profile(
+    self,
+    *,
+    clusterName: str,
+    fargateProfileName: str,
+) -> DescribeFargateProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFargateProfileRequestRequestTypeDef](./type_defs.md#describefargateprofilerequestrequesttypedef).
+1. See [:material-code-braces: DescribeFargateProfileResponseTypeDef](./type_defs.md#describefargateprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `fargateProfileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFargateProfileRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "fargateProfileName": ...,
+}
 
-Returns
-[DescribeFargateProfileResponseTypeDef](./type_defs.md#describefargateprofileresponsetypedef).
+parent.describe_fargate_profile(**kwargs)
+```
 
-<a id="describe\_identity\_provider\_config"></a>
+1. See [:material-code-braces: DescribeFargateProfileRequestRequestTypeDef](./type_defs.md#describefargateprofilerequestrequesttypedef) 
 
-### describe_identity_provider_config
+### describe\_identity\_provider\_config
 
 Returns descriptive information about an identity provider configuration.
 
-Type annotations for `boto3.client("eks").describe_identity_provider_config`
-method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_identity_provider_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
 
-Boto3 documentation:
-[EKS.Client.describe_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_identity_provider_config)
+```python title="Method definition"
+def describe_identity_provider_config(
+    self,
+    *,
+    clusterName: str,
+    identityProviderConfig: IdentityProviderConfigTypeDef,  # (1)
+) -> DescribeIdentityProviderConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#describeidentityproviderconfigrequestrequesttypedef).
+1. See [:material-code-braces: IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef) 
+2. See [:material-code-braces: DescribeIdentityProviderConfigResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `identityProviderConfig`:
-  [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityProviderConfigRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "identityProviderConfig": ...,
+}
 
-Returns
-[DescribeIdentityProviderConfigResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponsetypedef).
+parent.describe_identity_provider_config(**kwargs)
+```
 
-<a id="describe\_nodegroup"></a>
+1. See [:material-code-braces: DescribeIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#describeidentityproviderconfigrequestrequesttypedef) 
 
-### describe_nodegroup
+### describe\_nodegroup
 
 Returns descriptive information about an Amazon EKS node group.
 
-Type annotations for `boto3.client("eks").describe_nodegroup` method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_nodegroup` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup)
 
-Boto3 documentation:
-[EKS.Client.describe_nodegroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_nodegroup)
+```python title="Method definition"
+def describe_nodegroup(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+) -> DescribeNodegroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNodegroupRequestRequestTypeDef](./type_defs.md#describenodegrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeNodegroupResponseTypeDef](./type_defs.md#describenodegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNodegroupRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
 
-Returns
-[DescribeNodegroupResponseTypeDef](./type_defs.md#describenodegroupresponsetypedef).
+parent.describe_nodegroup(**kwargs)
+```
 
-<a id="describe\_update"></a>
+1. See [:material-code-braces: DescribeNodegroupRequestRequestTypeDef](./type_defs.md#describenodegrouprequestrequesttypedef) 
 
-### describe_update
+### describe\_update
 
 .
 
-Type annotations for `boto3.client("eks").describe_update` method.
+Type annotations and code completion for `#!python boto3.client("eks").describe_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update)
 
-Boto3 documentation:
-[EKS.Client.describe_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.describe_update)
+```python title="Method definition"
+def describe_update(
+    self,
+    *,
+    name: str,
+    updateId: str,
+    nodegroupName: str = ...,
+    addonName: str = ...,
+) -> DescribeUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUpdateRequestRequestTypeDef](./type_defs.md#describeupdaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeUpdateResponseTypeDef](./type_defs.md#describeupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `updateId`: `str` *(required)*
-- `nodegroupName`: `str`
-- `addonName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUpdateRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "updateId": ...,
+}
 
-Returns
-[DescribeUpdateResponseTypeDef](./type_defs.md#describeupdateresponsetypedef).
+parent.describe_update(**kwargs)
+```
 
-<a id="disassociate\_identity\_provider\_config"></a>
+1. See [:material-code-braces: DescribeUpdateRequestRequestTypeDef](./type_defs.md#describeupdaterequestrequesttypedef) 
 
-### disassociate_identity_provider_config
+### disassociate\_identity\_provider\_config
 
 Disassociates an identity provider configuration from a cluster.
 
-Type annotations for
-`boto3.client("eks").disassociate_identity_provider_config` method.
+Type annotations and code completion for `#!python boto3.client("eks").disassociate_identity_provider_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
 
-Boto3 documentation:
-[EKS.Client.disassociate_identity_provider_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.disassociate_identity_provider_config)
+```python title="Method definition"
+def disassociate_identity_provider_config(
+    self,
+    *,
+    clusterName: str,
+    identityProviderConfig: IdentityProviderConfigTypeDef,  # (1)
+    clientRequestToken: str = ...,
+) -> DisassociateIdentityProviderConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#disassociateidentityproviderconfigrequestrequesttypedef).
+1. See [:material-code-braces: IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef) 
+2. See [:material-code-braces: DisassociateIdentityProviderConfigResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `identityProviderConfig`:
-  [IdentityProviderConfigTypeDef](./type_defs.md#identityproviderconfigtypedef)
-  *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisassociateIdentityProviderConfigRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "identityProviderConfig": ...,
+}
 
-Returns
-[DisassociateIdentityProviderConfigResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponsetypedef).
+parent.disassociate_identity_provider_config(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateIdentityProviderConfigRequestRequestTypeDef](./type_defs.md#disassociateidentityproviderconfigrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("eks").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("eks").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EKS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_addons"></a>
-
-### list_addons
+### list\_addons
 
 Lists the available add-ons.
 
-Type annotations for `boto3.client("eks").list_addons` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_addons` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons)
 
-Boto3 documentation:
-[EKS.Client.list_addons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_addons)
+```python title="Method definition"
+def list_addons(
+    self,
+    *,
+    clusterName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAddonsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAddonsRequestRequestTypeDef](./type_defs.md#listaddonsrequestrequesttypedef).
+1. See [:material-code-braces: ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAddonsRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+}
 
-Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
+parent.list_addons(**kwargs)
+```
 
-<a id="list\_clusters"></a>
+1. See [:material-code-braces: ListAddonsRequestRequestTypeDef](./type_defs.md#listaddonsrequestrequesttypedef) 
 
-### list_clusters
+### list\_clusters
 
 Lists the Amazon EKS clusters in your Amazon Web Services account in the
 specified Region.
 
-Type annotations for `boto3.client("eks").list_clusters` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters)
 
-Boto3 documentation:
-[EKS.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_clusters)
+```python title="Method definition"
+def list_clusters(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    include: Sequence[str] = ...,
+) -> ListClustersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
+1. See [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `include`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ListClustersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+parent.list_clusters(**kwargs)
+```
 
-<a id="list\_fargate\_profiles"></a>
+1. See [:material-code-braces: ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef) 
 
-### list_fargate_profiles
+### list\_fargate\_profiles
 
 Lists the Fargate profiles associated with the specified cluster in your Amazon
 Web Services account in the specified Region.
 
-Type annotations for `boto3.client("eks").list_fargate_profiles` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_fargate_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles)
 
-Boto3 documentation:
-[EKS.Client.list_fargate_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_fargate_profiles)
+```python title="Method definition"
+def list_fargate_profiles(
+    self,
+    *,
+    clusterName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFargateProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFargateProfilesRequestRequestTypeDef](./type_defs.md#listfargateprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFargateProfilesRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+}
 
-Returns
-[ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef).
+parent.list_fargate_profiles(**kwargs)
+```
 
-<a id="list\_identity\_provider\_configs"></a>
+1. See [:material-code-braces: ListFargateProfilesRequestRequestTypeDef](./type_defs.md#listfargateprofilesrequestrequesttypedef) 
 
-### list_identity_provider_configs
+### list\_identity\_provider\_configs
 
 A list of identity provider configurations.
 
-Type annotations for `boto3.client("eks").list_identity_provider_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("eks").list_identity_provider_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
 
-Boto3 documentation:
-[EKS.Client.list_identity_provider_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_identity_provider_configs)
+```python title="Method definition"
+def list_identity_provider_configs(
+    self,
+    *,
+    clusterName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListIdentityProviderConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentityProviderConfigsRequestRequestTypeDef](./type_defs.md#listidentityproviderconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIdentityProviderConfigsRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+}
 
-Returns
-[ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef).
+parent.list_identity_provider_configs(**kwargs)
+```
 
-<a id="list\_nodegroups"></a>
+1. See [:material-code-braces: ListIdentityProviderConfigsRequestRequestTypeDef](./type_defs.md#listidentityproviderconfigsrequestrequesttypedef) 
 
-### list_nodegroups
+### list\_nodegroups
 
 Lists the Amazon EKS managed node groups associated with the specified cluster
 in your Amazon Web Services account in the specified Region.
 
-Type annotations for `boto3.client("eks").list_nodegroups` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_nodegroups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups)
 
-Boto3 documentation:
-[EKS.Client.list_nodegroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_nodegroups)
+```python title="Method definition"
+def list_nodegroups(
+    self,
+    *,
+    clusterName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListNodegroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNodegroupsRequestRequestTypeDef](./type_defs.md#listnodegroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNodegroupsRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+}
 
-Returns
-[ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef).
+parent.list_nodegroups(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListNodegroupsRequestRequestTypeDef](./type_defs.md#listnodegroupsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for an Amazon EKS resource.
 
-Type annotations for `boto3.client("eks").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[EKS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_updates"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_updates
+### list\_updates
 
-Lists the updates associated with an Amazon EKS cluster or managed node group
-in your Amazon Web Services account, in the specified Region.
+Lists the updates associated with an Amazon EKS cluster or managed node group in
+your Amazon Web Services account, in the specified Region.
 
-Type annotations for `boto3.client("eks").list_updates` method.
+Type annotations and code completion for `#!python boto3.client("eks").list_updates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates)
 
-Boto3 documentation:
-[EKS.Client.list_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.list_updates)
+```python title="Method definition"
+def list_updates(
+    self,
+    *,
+    name: str,
+    nodegroupName: str = ...,
+    addonName: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListUpdatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUpdatesRequestRequestTypeDef](./type_defs.md#listupdatesrequestrequesttypedef).
+1. See [:material-code-braces: ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `nodegroupName`: `str`
-- `addonName`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUpdatesRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
+parent.list_updates(**kwargs)
+```
 
-<a id="register\_cluster"></a>
+1. See [:material-code-braces: ListUpdatesRequestRequestTypeDef](./type_defs.md#listupdatesrequestrequesttypedef) 
 
-### register_cluster
+### register\_cluster
 
 Connects a Kubernetes cluster to the Amazon EKS control plane.
 
-Type annotations for `boto3.client("eks").register_cluster` method.
+Type annotations and code completion for `#!python boto3.client("eks").register_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.register_cluster)
 
-Boto3 documentation:
-[EKS.Client.register_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.register_cluster)
+```python title="Method definition"
+def register_cluster(
+    self,
+    *,
+    name: str,
+    connectorConfig: ConnectorConfigRequestTypeDef,  # (1)
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> RegisterClusterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterClusterRequestRequestTypeDef](./type_defs.md#registerclusterrequestrequesttypedef).
+1. See [:material-code-braces: ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef) 
+2. See [:material-code-braces: RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `connectorConfig`:
-  [ConnectorConfigRequestTypeDef](./type_defs.md#connectorconfigrequesttypedef)
-  *(required)*
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: RegisterClusterRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "connectorConfig": ...,
+}
 
-Returns
-[RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).
+parent.register_cluster(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RegisterClusterRequestRequestTypeDef](./type_defs.md#registerclusterrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("eks").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("eks").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource)
 
-Boto3 documentation:
-[EKS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("eks").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("eks").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource)
 
-Boto3 documentation:
-[EKS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_addon"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_addon
+### update\_addon
 
 .
 
-Type annotations for `boto3.client("eks").update_addon` method.
+Type annotations and code completion for `#!python boto3.client("eks").update_addon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon)
 
-Boto3 documentation:
-[EKS.Client.update_addon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_addon)
+```python title="Method definition"
+def update_addon(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+    addonVersion: str = ...,
+    serviceAccountRoleArn: str = ...,
+    resolveConflicts: ResolveConflictsType = ...,  # (1)
+    clientRequestToken: str = ...,
+) -> UpdateAddonResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAddonRequestRequestTypeDef](./type_defs.md#updateaddonrequestrequesttypedef).
+1. See [:material-code-brackets: ResolveConflictsType](./literals.md#resolveconflictstype) 
+2. See [:material-code-braces: UpdateAddonResponseTypeDef](./type_defs.md#updateaddonresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-- `addonVersion`: `str`
-- `serviceAccountRoleArn`: `str`
-- `resolveConflicts`:
-  [ResolveConflictsType](./literals.md#resolveconflictstype)
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAddonRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
 
-Returns
-[UpdateAddonResponseTypeDef](./type_defs.md#updateaddonresponsetypedef).
+parent.update_addon(**kwargs)
+```
 
-<a id="update\_cluster\_config"></a>
+1. See [:material-code-braces: UpdateAddonRequestRequestTypeDef](./type_defs.md#updateaddonrequestrequesttypedef) 
 
-### update_cluster_config
+### update\_cluster\_config
 
 Updates an Amazon EKS cluster configuration.
 
-Type annotations for `boto3.client("eks").update_cluster_config` method.
+Type annotations and code completion for `#!python boto3.client("eks").update_cluster_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config)
 
-Boto3 documentation:
-[EKS.Client.update_cluster_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_config)
+```python title="Method definition"
+def update_cluster_config(
+    self,
+    *,
+    name: str,
+    resourcesVpcConfig: VpcConfigRequestTypeDef = ...,  # (1)
+    logging: LoggingTypeDef = ...,  # (2)
+    clientRequestToken: str = ...,
+) -> UpdateClusterConfigResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterConfigRequestRequestTypeDef](./type_defs.md#updateclusterconfigrequestrequesttypedef).
+1. See [:material-code-braces: VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef) 
+2. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+3. See [:material-code-braces: UpdateClusterConfigResponseTypeDef](./type_defs.md#updateclusterconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `resourcesVpcConfig`:
-  [VpcConfigRequestTypeDef](./type_defs.md#vpcconfigrequesttypedef)
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterConfigRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[UpdateClusterConfigResponseTypeDef](./type_defs.md#updateclusterconfigresponsetypedef).
+parent.update_cluster_config(**kwargs)
+```
 
-<a id="update\_cluster\_version"></a>
+1. See [:material-code-braces: UpdateClusterConfigRequestRequestTypeDef](./type_defs.md#updateclusterconfigrequestrequesttypedef) 
 
-### update_cluster_version
+### update\_cluster\_version
 
 Updates an Amazon EKS cluster to the specified Kubernetes version.
 
-Type annotations for `boto3.client("eks").update_cluster_version` method.
+Type annotations and code completion for `#!python boto3.client("eks").update_cluster_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version)
 
-Boto3 documentation:
-[EKS.Client.update_cluster_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_cluster_version)
+```python title="Method definition"
+def update_cluster_version(
+    self,
+    *,
+    name: str,
+    version: str,
+    clientRequestToken: str = ...,
+) -> UpdateClusterVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterVersionRequestRequestTypeDef](./type_defs.md#updateclusterversionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateClusterVersionResponseTypeDef](./type_defs.md#updateclusterversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `version`: `str` *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterVersionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "version": ...,
+}
 
-Returns
-[UpdateClusterVersionResponseTypeDef](./type_defs.md#updateclusterversionresponsetypedef).
+parent.update_cluster_version(**kwargs)
+```
 
-<a id="update\_nodegroup\_config"></a>
+1. See [:material-code-braces: UpdateClusterVersionRequestRequestTypeDef](./type_defs.md#updateclusterversionrequestrequesttypedef) 
 
-### update_nodegroup_config
+### update\_nodegroup\_config
 
 Updates an Amazon EKS managed node group configuration.
 
-Type annotations for `boto3.client("eks").update_nodegroup_config` method.
+Type annotations and code completion for `#!python boto3.client("eks").update_nodegroup_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config)
 
-Boto3 documentation:
-[EKS.Client.update_nodegroup_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_config)
+```python title="Method definition"
+def update_nodegroup_config(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+    labels: UpdateLabelsPayloadTypeDef = ...,  # (1)
+    taints: UpdateTaintsPayloadTypeDef = ...,  # (2)
+    scalingConfig: NodegroupScalingConfigTypeDef = ...,  # (3)
+    updateConfig: NodegroupUpdateConfigTypeDef = ...,  # (4)
+    clientRequestToken: str = ...,
+) -> UpdateNodegroupConfigResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNodegroupConfigRequestRequestTypeDef](./type_defs.md#updatenodegroupconfigrequestrequesttypedef).
+1. See [:material-code-braces: UpdateLabelsPayloadTypeDef](./type_defs.md#updatelabelspayloadtypedef) 
+2. See [:material-code-braces: UpdateTaintsPayloadTypeDef](./type_defs.md#updatetaintspayloadtypedef) 
+3. See [:material-code-braces: NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef) 
+4. See [:material-code-braces: NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef) 
+5. See [:material-code-braces: UpdateNodegroupConfigResponseTypeDef](./type_defs.md#updatenodegroupconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
-- `labels`:
-  [UpdateLabelsPayloadTypeDef](./type_defs.md#updatelabelspayloadtypedef)
-- `taints`:
-  [UpdateTaintsPayloadTypeDef](./type_defs.md#updatetaintspayloadtypedef)
-- `scalingConfig`:
-  [NodegroupScalingConfigTypeDef](./type_defs.md#nodegroupscalingconfigtypedef)
-- `updateConfig`:
-  [NodegroupUpdateConfigTypeDef](./type_defs.md#nodegroupupdateconfigtypedef)
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateNodegroupConfigRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
 
-Returns
-[UpdateNodegroupConfigResponseTypeDef](./type_defs.md#updatenodegroupconfigresponsetypedef).
+parent.update_nodegroup_config(**kwargs)
+```
 
-<a id="update\_nodegroup\_version"></a>
+1. See [:material-code-braces: UpdateNodegroupConfigRequestRequestTypeDef](./type_defs.md#updatenodegroupconfigrequestrequesttypedef) 
 
-### update_nodegroup_version
+### update\_nodegroup\_version
 
 Updates the Kubernetes version or AMI version of an Amazon EKS managed node
 group.
 
-Type annotations for `boto3.client("eks").update_nodegroup_version` method.
+Type annotations and code completion for `#!python boto3.client("eks").update_nodegroup_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version)
 
-Boto3 documentation:
-[EKS.Client.update_nodegroup_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.update_nodegroup_version)
+```python title="Method definition"
+def update_nodegroup_version(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+    version: str = ...,
+    releaseVersion: str = ...,
+    launchTemplate: LaunchTemplateSpecificationTypeDef = ...,  # (1)
+    force: bool = ...,
+    clientRequestToken: str = ...,
+) -> UpdateNodegroupVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNodegroupVersionRequestRequestTypeDef](./type_defs.md#updatenodegroupversionrequestrequesttypedef).
+1. See [:material-code-braces: LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef) 
+2. See [:material-code-braces: UpdateNodegroupVersionResponseTypeDef](./type_defs.md#updatenodegroupversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
-- `version`: `str`
-- `releaseVersion`: `str`
-- `launchTemplate`:
-  [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
-- `force`: `bool`
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateNodegroupVersionRequestRequestTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
 
-Returns
-[UpdateNodegroupVersionResponseTypeDef](./type_defs.md#updatenodegroupversionresponsetypedef).
+parent.update_nodegroup_version(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateNodegroupVersionRequestRequestTypeDef](./type_defs.md#updatenodegroupversionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("eks").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("eks").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_addon_versions")` ->
-  [DescribeAddonVersionsPaginator](./paginators.md#describeaddonversionspaginator)
-- `client.get_paginator("list_addons")` ->
-  [ListAddonsPaginator](./paginators.md#listaddonspaginator)
-- `client.get_paginator("list_clusters")` ->
-  [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_fargate_profiles")` ->
-  [ListFargateProfilesPaginator](./paginators.md#listfargateprofilespaginator)
-- `client.get_paginator("list_identity_provider_configs")` ->
-  [ListIdentityProviderConfigsPaginator](./paginators.md#listidentityproviderconfigspaginator)
-- `client.get_paginator("list_nodegroups")` ->
-  [ListNodegroupsPaginator](./paginators.md#listnodegroupspaginator)
-- `client.get_paginator("list_updates")` ->
-  [ListUpdatesPaginator](./paginators.md#listupdatespaginator)
+- `client.get_paginator("describe_addon_versions")` -> [DescribeAddonVersionsPaginator](./paginators.md#describeaddonversionspaginator)
+- `client.get_paginator("list_addons")` -> [ListAddonsPaginator](./paginators.md#listaddonspaginator)
+- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_fargate_profiles")` -> [ListFargateProfilesPaginator](./paginators.md#listfargateprofilespaginator)
+- `client.get_paginator("list_identity_provider_configs")` -> [ListIdentityProviderConfigsPaginator](./paginators.md#listidentityproviderconfigspaginator)
+- `client.get_paginator("list_nodegroups")` -> [ListNodegroupsPaginator](./paginators.md#listnodegroupspaginator)
+- `client.get_paginator("list_updates")` -> [ListUpdatesPaginator](./paginators.md#listupdatespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("eks").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter` method with overloads.
 
-- `client.get_waiter("addon_active")` ->
-  [AddonActiveWaiter](./waiters.md#addonactivewaiter)
-- `client.get_waiter("addon_deleted")` ->
-  [AddonDeletedWaiter](./waiters.md#addondeletedwaiter)
-- `client.get_waiter("cluster_active")` ->
-  [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
-- `client.get_waiter("cluster_deleted")` ->
-  [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
-- `client.get_waiter("fargate_profile_active")` ->
-  [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
-- `client.get_waiter("fargate_profile_deleted")` ->
-  [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
-- `client.get_waiter("nodegroup_active")` ->
-  [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
-- `client.get_waiter("nodegroup_deleted")` ->
-  [NodegroupDeletedWaiter](./waiters.md#nodegroupdeletedwaiter)
+- `client.get_waiter("addon_active")` -> [AddonActiveWaiter](./waiters.md#addonactivewaiter)
+- `client.get_waiter("addon_deleted")` -> [AddonDeletedWaiter](./waiters.md#addondeletedwaiter)
+- `client.get_waiter("cluster_active")` -> [ClusterActiveWaiter](./waiters.md#clusteractivewaiter)
+- `client.get_waiter("cluster_deleted")` -> [ClusterDeletedWaiter](./waiters.md#clusterdeletedwaiter)
+- `client.get_waiter("fargate_profile_active")` -> [FargateProfileActiveWaiter](./waiters.md#fargateprofileactivewaiter)
+- `client.get_waiter("fargate_profile_deleted")` -> [FargateProfileDeletedWaiter](./waiters.md#fargateprofiledeletedwaiter)
+- `client.get_waiter("nodegroup_active")` -> [NodegroupActiveWaiter](./waiters.md#nodegroupactivewaiter)
+- `client.get_waiter("nodegroup_deleted")` -> [NodegroupDeletedWaiter](./waiters.md#nodegroupdeletedwaiter)
+

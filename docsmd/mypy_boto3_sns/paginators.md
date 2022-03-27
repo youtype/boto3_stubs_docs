@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-sns-module"></a>
-
-# Paginators for boto3 SNS module
+# Paginators
 
 > [Index](../README.md) > [SNS](./README.md) > Paginators
 
-Auto-generated documentation for
-[SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
-type annotations stubs module
-[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
+!!! note ""
 
-- [Paginators for boto3 SNS module](#paginators-for-boto3-sns-module)
-  - [ListEndpointsByPlatformApplicationPaginator](#listendpointsbyplatformapplicationpaginator)
-  - [ListOriginationNumbersPaginator](#listoriginationnumberspaginator)
-  - [ListPhoneNumbersOptedOutPaginator](#listphonenumbersoptedoutpaginator)
-  - [ListPlatformApplicationsPaginator](#listplatformapplicationspaginator)
-  - [ListSMSSandboxPhoneNumbersPaginator](#listsmssandboxphonenumberspaginator)
-  - [ListSubscriptionsPaginator](#listsubscriptionspaginator)
-  - [ListSubscriptionsByTopicPaginator](#listsubscriptionsbytopicpaginator)
-  - [ListTopicsPaginator](#listtopicspaginator)
-
-<a id="listendpointsbyplatformapplicationpaginator"></a>
+    Auto-generated documentation for [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
+    type annotations stubs module [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ## ListEndpointsByPlatformApplicationPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_endpoints_by_platform_application")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_endpoints_by_platform_application")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
@@ -37,28 +21,40 @@ def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPla
     return Session().client("sns").get_paginator("list_endpoints_by_platform_application")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListEndpointsByPlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListEndpointsByPlatformApplication)
 
-Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
+### paginate
 
-- `PlatformApplicationArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEndpointsByPlatformApplicationPaginator.paginate` method.
 
-`ListEndpointsByPlatformApplicationPaginator.paginate` returns
-`_PageIterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PlatformApplicationArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEndpointsByPlatformApplicationResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listoriginationnumberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef = {  # (1)
+    "PlatformApplicationArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEndpointsByPlatformApplicationInputListEndpointsByPlatformApplicationPaginateTypeDef](./type_defs.md#listendpointsbyplatformapplicationinputlistendpointsbyplatformapplicationpaginatetypedef) 
 ## ListOriginationNumbersPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_origination_numbers")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_origination_numbers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListOriginationNumbers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListOriginationNumbersPaginator
@@ -67,27 +63,39 @@ def get_list_origination_numbers_paginator() -> ListOriginationNumbersPaginator:
     return Session().client("sns").get_paginator("list_origination_numbers")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListOriginationNumbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListOriginationNumbers)
 
-Arguments for `ListOriginationNumbersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOriginationNumbersPaginator.paginate` method.
 
-`ListOriginationNumbersPaginator.paginate` returns
-`_PageIterator`\[[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOriginationNumbersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listphonenumbersoptedoutpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOriginationNumbersRequestListOriginationNumbersPaginateTypeDef](./type_defs.md#listoriginationnumbersrequestlistoriginationnumberspaginatetypedef) 
 ## ListPhoneNumbersOptedOutPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_phone_numbers_opted_out")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_phone_numbers_opted_out")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListPhoneNumbersOptedOutPaginator
@@ -96,27 +104,39 @@ def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPagi
     return Session().client("sns").get_paginator("list_phone_numbers_opted_out")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListPhoneNumbersOptedOut](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPhoneNumbersOptedOut)
 
-Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPhoneNumbersOptedOutPaginator.paginate` method.
 
-`ListPhoneNumbersOptedOutPaginator.paginate` returns
-`_PageIterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPhoneNumbersOptedOutResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listplatformapplicationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPhoneNumbersOptedOutInputListPhoneNumbersOptedOutPaginateTypeDef](./type_defs.md#listphonenumbersoptedoutinputlistphonenumbersoptedoutpaginatetypedef) 
 ## ListPlatformApplicationsPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_platform_applications")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_platform_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListPlatformApplicationsPaginator
@@ -125,27 +145,39 @@ def get_list_platform_applications_paginator() -> ListPlatformApplicationsPagina
     return Session().client("sns").get_paginator("list_platform_applications")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListPlatformApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListPlatformApplications)
 
-Arguments for `ListPlatformApplicationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPlatformApplicationsPaginator.paginate` method.
 
-`ListPlatformApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPlatformApplicationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsmssandboxphonenumberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPlatformApplicationsInputListPlatformApplicationsPaginateTypeDef](./type_defs.md#listplatformapplicationsinputlistplatformapplicationspaginatetypedef) 
 ## ListSMSSandboxPhoneNumbersPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_sms_sandbox_phone_numbers")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_sms_sandbox_phone_numbers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSMSSandboxPhoneNumbers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListSMSSandboxPhoneNumbersPaginator
@@ -154,26 +186,39 @@ def get_list_sms_sandbox_phone_numbers_paginator() -> ListSMSSandboxPhoneNumbers
     return Session().client("sns").get_paginator("list_sms_sandbox_phone_numbers")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListSMSSandboxPhoneNumbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSMSSandboxPhoneNumbers)
 
-Arguments for `ListSMSSandboxPhoneNumbersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSMSSandboxPhoneNumbersPaginator.paginate` method.
 
-`ListSMSSandboxPhoneNumbersPaginator.paginate` returns
-`_PageIterator`\[[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSMSSandboxPhoneNumbersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsubscriptionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSMSSandboxPhoneNumbersInputListSMSSandboxPhoneNumbersPaginateTypeDef](./type_defs.md#listsmssandboxphonenumbersinputlistsmssandboxphonenumberspaginatetypedef) 
 ## ListSubscriptionsPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_subscriptions")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListSubscriptionsPaginator
@@ -182,27 +227,39 @@ def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
     return Session().client("sns").get_paginator("list_subscriptions")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptions)
 
-Arguments for `ListSubscriptionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSubscriptionsPaginator.paginate` method.
 
-`ListSubscriptionsPaginator.paginate` returns
-`_PageIterator`\[[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSubscriptionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsubscriptionsbytopicpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionsInputListSubscriptionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscriptionsInputListSubscriptionsPaginateTypeDef](./type_defs.md#listsubscriptionsinputlistsubscriptionspaginatetypedef) 
 ## ListSubscriptionsByTopicPaginator
 
-Type annotations for
-`boto3.client("sns").get_paginator("list_subscriptions_by_topic")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_subscriptions_by_topic")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListSubscriptionsByTopicPaginator
@@ -211,27 +268,40 @@ def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPagin
     return Session().client("sns").get_paginator("list_subscriptions_by_topic")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListSubscriptionsByTopic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListSubscriptionsByTopic)
 
-Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
+### paginate
 
-- `TopicArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSubscriptionsByTopicPaginator.paginate` method.
 
-`ListSubscriptionsByTopicPaginator.paginate` returns
-`_PageIterator`\[[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TopicArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSubscriptionsByTopicResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtopicspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef = {  # (1)
+    "TopicArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSubscriptionsByTopicInputListSubscriptionsByTopicPaginateTypeDef](./type_defs.md#listsubscriptionsbytopicinputlistsubscriptionsbytopicpaginatetypedef) 
 ## ListTopicsPaginator
 
-Type annotations for `boto3.client("sns").get_paginator("list_topics")`.
+Type annotations and code completion for `#!python boto3.client("sns").get_paginator("list_topics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sns.paginator import ListTopicsPaginator
@@ -240,13 +310,30 @@ def get_list_topics_paginator() -> ListTopicsPaginator:
     return Session().client("sns").get_paginator("list_topics")
 ```
 
-Boto3 documentation:
-[SNS.Paginator.ListTopics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Paginator.ListTopics)
 
-Arguments for `ListTopicsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTopicsPaginator.paginate` method.
 
-`ListTopicsPaginator.paginate` returns
-`_PageIterator`\[[ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTopicsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTopicsInputListTopicsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTopicsInputListTopicsPaginateTypeDef](./type_defs.md#listtopicsinputlisttopicspaginatetypedef) 

@@ -1,618 +1,814 @@
-<a id="typed-dictionaries-for-boto3-applicationautoscaling-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ApplicationAutoScaling module
+> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module
-[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
-
-- [Typed dictionaries for boto3 ApplicationAutoScaling module](#typed-dictionaries-for-boto3-applicationautoscaling-module)
-  - [AlarmTypeDef](#alarmtypedef)
-  - [CustomizedMetricSpecificationTypeDef](#customizedmetricspecificationtypedef)
-  - [DeleteScalingPolicyRequestRequestTypeDef](#deletescalingpolicyrequestrequesttypedef)
-  - [DeleteScheduledActionRequestRequestTypeDef](#deletescheduledactionrequestrequesttypedef)
-  - [DeregisterScalableTargetRequestRequestTypeDef](#deregisterscalabletargetrequestrequesttypedef)
-  - [DescribeScalableTargetsRequestRequestTypeDef](#describescalabletargetsrequestrequesttypedef)
-  - [DescribeScalableTargetsResponseTypeDef](#describescalabletargetsresponsetypedef)
-  - [DescribeScalingActivitiesRequestRequestTypeDef](#describescalingactivitiesrequestrequesttypedef)
-  - [DescribeScalingActivitiesResponseTypeDef](#describescalingactivitiesresponsetypedef)
-  - [DescribeScalingPoliciesRequestRequestTypeDef](#describescalingpoliciesrequestrequesttypedef)
-  - [DescribeScalingPoliciesResponseTypeDef](#describescalingpoliciesresponsetypedef)
-  - [DescribeScheduledActionsRequestRequestTypeDef](#describescheduledactionsrequestrequesttypedef)
-  - [DescribeScheduledActionsResponseTypeDef](#describescheduledactionsresponsetypedef)
-  - [MetricDimensionTypeDef](#metricdimensiontypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PredefinedMetricSpecificationTypeDef](#predefinedmetricspecificationtypedef)
-  - [PutScalingPolicyRequestRequestTypeDef](#putscalingpolicyrequestrequesttypedef)
-  - [PutScalingPolicyResponseTypeDef](#putscalingpolicyresponsetypedef)
-  - [PutScheduledActionRequestRequestTypeDef](#putscheduledactionrequestrequesttypedef)
-  - [RegisterScalableTargetRequestRequestTypeDef](#registerscalabletargetrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScalableTargetActionTypeDef](#scalabletargetactiontypedef)
-  - [ScalableTargetTypeDef](#scalabletargettypedef)
-  - [ScalingActivityTypeDef](#scalingactivitytypedef)
-  - [ScalingPolicyTypeDef](#scalingpolicytypedef)
-  - [ScheduledActionTypeDef](#scheduledactiontypedef)
-  - [StepAdjustmentTypeDef](#stepadjustmenttypedef)
-  - [StepScalingPolicyConfigurationTypeDef](#stepscalingpolicyconfigurationtypedef)
-  - [SuspendedStateTypeDef](#suspendedstatetypedef)
-  - [TargetTrackingScalingPolicyConfigurationTypeDef](#targettrackingscalingpolicyconfigurationtypedef)
-
-<a id="alarmtypedef"></a>
+    Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+    type annotations stubs module [mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ## AlarmTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import AlarmTypeDef
+
+def get_value() -> AlarmTypeDef:
+    return {
+        "AlarmName": ...,
+        "AlarmARN": ...,
+    }
 ```
 
-Required fields:
-
-- `AlarmName`: `str`
-- `AlarmARN`: `str`
-
-<a id="customizedmetricspecificationtypedef"></a>
+```python title="Definition"
+class AlarmTypeDef(TypedDict):
+    AlarmName: str,
+    AlarmARN: str,
+```
 
 ## CustomizedMetricSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import CustomizedMetricSpecificationTypeDef
+
+def get_value() -> CustomizedMetricSpecificationTypeDef:
+    return {
+        "MetricName": ...,
+        "Namespace": ...,
+        "Statistic": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomizedMetricSpecificationTypeDef(TypedDict):
+    MetricName: str,
+    Namespace: str,
+    Statistic: MetricStatisticType,  # (2)
+    Dimensions: NotRequired[List[MetricDimensionTypeDef]],  # (1)
+    Unit: NotRequired[str],
+```
 
-- `MetricName`: `str`
-- `Namespace`: `str`
-- `Statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
-
-Optional fields:
-
-- `Dimensions`:
-  `List`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
-- `Unit`: `str`
-
-<a id="deletescalingpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
+2. See [:material-code-brackets: MetricStatisticType](./literals.md#metricstatistictype) 
 ## DeleteScalingPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DeleteScalingPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteScalingPolicyRequestRequestTypeDef:
+    return {
+        "PolicyName": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteScalingPolicyRequestRequestTypeDef(TypedDict):
+    PolicyName: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+```
 
-- `PolicyName`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-
-<a id="deletescheduledactionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DeleteScheduledActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DeleteScheduledActionRequestRequestTypeDef
+
+def get_value() -> DeleteScheduledActionRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+        "ScheduledActionName": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteScheduledActionRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionName: str,
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ScheduledActionName`: `str`
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-
-<a id="deregisterscalabletargetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DeregisterScalableTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DeregisterScalableTargetRequestRequestTypeDef
+
+def get_value() -> DeregisterScalableTargetRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterScalableTargetRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+## DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef
 
-<a id="describescalabletargetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef
 
+def get_value() -> DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceIds: NotRequired[Sequence[str]],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScalableTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsRequestRequestTypeDef
+
+def get_value() -> DescribeScalableTargetsRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalableTargetsRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceIds: NotRequired[Sequence[str]],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-
-Optional fields:
-
-- `ResourceIds`: `Sequence`\[`str`\]
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describescalabletargetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DescribeScalableTargetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalableTargetsResponseTypeDef
+
+def get_value() -> DescribeScalableTargetsResponseTypeDef:
+    return {
+        "ScalableTargets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalableTargetsResponseTypeDef(TypedDict):
+    ScalableTargets: List[ScalableTargetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScalableTargets`:
-  `List`\[[ScalableTargetTypeDef](./type_defs.md#scalabletargettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ScalableTargetTypeDef](./type_defs.md#scalabletargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef
 
-<a id="describescalingactivitiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef
 
+def get_value() -> DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScalingActivitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesRequestRequestTypeDef
+
+def get_value() -> DescribeScalingActivitiesRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalingActivitiesRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-
-Optional fields:
-
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describescalingactivitiesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DescribeScalingActivitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalingActivitiesResponseTypeDef
+
+def get_value() -> DescribeScalingActivitiesResponseTypeDef:
+    return {
+        "ScalingActivities": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalingActivitiesResponseTypeDef(TypedDict):
+    ScalingActivities: List[ScalingActivityTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScalingActivities`:
-  `List`\[[ScalingActivityTypeDef](./type_defs.md#scalingactivitytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ScalingActivityTypeDef](./type_defs.md#scalingactivitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef
 
-<a id="describescalingpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef
 
+def get_value() -> DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    PolicyNames: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScalingPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesRequestRequestTypeDef
+
+def get_value() -> DescribeScalingPoliciesRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalingPoliciesRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    PolicyNames: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-
-Optional fields:
-
-- `PolicyNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describescalingpoliciesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DescribeScalingPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScalingPoliciesResponseTypeDef
+
+def get_value() -> DescribeScalingPoliciesResponseTypeDef:
+    return {
+        "ScalingPolicies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalingPoliciesResponseTypeDef(TypedDict):
+    ScalingPolicies: List[ScalingPolicyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScalingPolicies`:
-  `List`\[[ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ScalingPolicyTypeDef](./type_defs.md#scalingpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef
 
-<a id="describescheduledactionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef
 
+def get_value() -> DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionNames: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeScheduledActionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsRequestRequestTypeDef
+
+def get_value() -> DescribeScheduledActionsRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScheduledActionsRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionNames: NotRequired[Sequence[str]],
+    ResourceId: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-
-Optional fields:
-
-- `ScheduledActionNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describescheduledactionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
 ## DescribeScheduledActionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import DescribeScheduledActionsResponseTypeDef
+
+def get_value() -> DescribeScheduledActionsResponseTypeDef:
+    return {
+        "ScheduledActions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScheduledActionsResponseTypeDef(TypedDict):
+    ScheduledActions: List[ScheduledActionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScheduledActions`:
-  `List`\[[ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricdimensiontypedef"></a>
-
+1. See [:material-code-braces: ScheduledActionTypeDef](./type_defs.md#scheduledactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricDimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import MetricDimensionTypeDef
+
+def get_value() -> MetricDimensionTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class MetricDimensionTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="predefinedmetricspecificationtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PredefinedMetricSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import PredefinedMetricSpecificationTypeDef
+
+def get_value() -> PredefinedMetricSpecificationTypeDef:
+    return {
+        "PredefinedMetricType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PredefinedMetricSpecificationTypeDef(TypedDict):
+    PredefinedMetricType: MetricTypeType,  # (1)
+    ResourceLabel: NotRequired[str],
+```
 
-- `PredefinedMetricType`: [MetricTypeType](./literals.md#metrictypetype)
-
-Optional fields:
-
-- `ResourceLabel`: `str`
-
-<a id="putscalingpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
 ## PutScalingPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyRequestRequestTypeDef
+
+def get_value() -> PutScalingPolicyRequestRequestTypeDef:
+    return {
+        "PolicyName": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutScalingPolicyRequestRequestTypeDef(TypedDict):
+    PolicyName: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    PolicyType: NotRequired[PolicyTypeType],  # (3)
+    StepScalingPolicyConfiguration: NotRequired[StepScalingPolicyConfigurationTypeDef],  # (4)
+    TargetTrackingScalingPolicyConfiguration: NotRequired[TargetTrackingScalingPolicyConfigurationTypeDef],  # (5)
+```
 
-- `PolicyName`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-
-Optional fields:
-
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
-- `StepScalingPolicyConfiguration`:
-  [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
-- `TargetTrackingScalingPolicyConfiguration`:
-  [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
-
-<a id="putscalingpolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+4. See [:material-code-braces: StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef) 
+5. See [:material-code-braces: TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef) 
 ## PutScalingPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import PutScalingPolicyResponseTypeDef
+
+def get_value() -> PutScalingPolicyResponseTypeDef:
+    return {
+        "PolicyARN": ...,
+        "Alarms": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutScalingPolicyResponseTypeDef(TypedDict):
+    PolicyARN: str,
+    Alarms: List[AlarmTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyARN`: `str`
-- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putscheduledactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutScheduledActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import PutScheduledActionRequestRequestTypeDef
+
+def get_value() -> PutScheduledActionRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+        "ScheduledActionName": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutScheduledActionRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionName: str,
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    Schedule: NotRequired[str],
+    Timezone: NotRequired[str],
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    ScalableTargetAction: NotRequired[ScalableTargetActionTypeDef],  # (3)
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ScheduledActionName`: `str`
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-
-Optional fields:
-
-- `Schedule`: `str`
-- `Timezone`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `ScalableTargetAction`:
-  [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
-
-<a id="registerscalabletargetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef) 
 ## RegisterScalableTargetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import RegisterScalableTargetRequestRequestTypeDef
+
+def get_value() -> RegisterScalableTargetRequestRequestTypeDef:
+    return {
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterScalableTargetRequestRequestTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    MinCapacity: NotRequired[int],
+    MaxCapacity: NotRequired[int],
+    RoleARN: NotRequired[str],
+    SuspendedState: NotRequired[SuspendedStateTypeDef],  # (3)
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-
-Optional fields:
-
-- `MinCapacity`: `int`
-- `MaxCapacity`: `int`
-- `RoleARN`: `str`
-- `SuspendedState`:
-  [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scalabletargetactiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ScalableTargetActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ScalableTargetActionTypeDef
+
+def get_value() -> ScalableTargetActionTypeDef:
+    return {
+        "MinCapacity": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinCapacity`: `int`
-- `MaxCapacity`: `int`
-
-<a id="scalabletargettypedef"></a>
+```python title="Definition"
+class ScalableTargetActionTypeDef(TypedDict):
+    MinCapacity: NotRequired[int],
+    MaxCapacity: NotRequired[int],
+```
 
 ## ScalableTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ScalableTargetTypeDef
+
+def get_value() -> ScalableTargetTypeDef:
+    return {
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+        "MinCapacity": ...,
+        "MaxCapacity": ...,
+        "RoleARN": ...,
+        "CreationTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalableTargetTypeDef(TypedDict):
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    MinCapacity: int,
+    MaxCapacity: int,
+    RoleARN: str,
+    CreationTime: datetime,
+    SuspendedState: NotRequired[SuspendedStateTypeDef],  # (3)
+```
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `MinCapacity`: `int`
-- `MaxCapacity`: `int`
-- `RoleARN`: `str`
-- `CreationTime`: `datetime`
-
-Optional fields:
-
-- `SuspendedState`:
-  [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
-
-<a id="scalingactivitytypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef) 
 ## ScalingActivityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ScalingActivityTypeDef
+
+def get_value() -> ScalingActivityTypeDef:
+    return {
+        "ActivityId": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+        "Description": ...,
+        "Cause": ...,
+        "StartTime": ...,
+        "StatusCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingActivityTypeDef(TypedDict):
+    ActivityId: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    Description: str,
+    Cause: str,
+    StartTime: datetime,
+    StatusCode: ScalingActivityStatusCodeType,  # (3)
+    EndTime: NotRequired[datetime],
+    StatusMessage: NotRequired[str],
+    Details: NotRequired[str],
+```
 
-- `ActivityId`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `Description`: `str`
-- `Cause`: `str`
-- `StartTime`: `datetime`
-- `StatusCode`:
-  [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
-
-Optional fields:
-
-- `EndTime`: `datetime`
-- `StatusMessage`: `str`
-- `Details`: `str`
-
-<a id="scalingpolicytypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype) 
 ## ScalingPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ScalingPolicyTypeDef
+
+def get_value() -> ScalingPolicyTypeDef:
+    return {
+        "PolicyARN": ...,
+        "PolicyName": ...,
+        "ServiceNamespace": ...,
+        "ResourceId": ...,
+        "ScalableDimension": ...,
+        "PolicyType": ...,
+        "CreationTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingPolicyTypeDef(TypedDict):
+    PolicyARN: str,
+    PolicyName: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    PolicyType: PolicyTypeType,  # (3)
+    CreationTime: datetime,
+    StepScalingPolicyConfiguration: NotRequired[StepScalingPolicyConfigurationTypeDef],  # (4)
+    TargetTrackingScalingPolicyConfiguration: NotRequired[TargetTrackingScalingPolicyConfigurationTypeDef],  # (5)
+    Alarms: NotRequired[List[AlarmTypeDef]],  # (6)
+```
 
-- `PolicyARN`: `str`
-- `PolicyName`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `PolicyType`: [PolicyTypeType](./literals.md#policytypetype)
-- `CreationTime`: `datetime`
-
-Optional fields:
-
-- `StepScalingPolicyConfiguration`:
-  [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
-- `TargetTrackingScalingPolicyConfiguration`:
-  [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
-- `Alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
-
-<a id="scheduledactiontypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+4. See [:material-code-braces: StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef) 
+5. See [:material-code-braces: TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef) 
+6. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
 ## ScheduledActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import ScheduledActionTypeDef
+
+def get_value() -> ScheduledActionTypeDef:
+    return {
+        "ScheduledActionName": ...,
+        "ScheduledActionARN": ...,
+        "ServiceNamespace": ...,
+        "Schedule": ...,
+        "ResourceId": ...,
+        "CreationTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduledActionTypeDef(TypedDict):
+    ScheduledActionName: str,
+    ScheduledActionARN: str,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    Schedule: str,
+    ResourceId: str,
+    CreationTime: datetime,
+    Timezone: NotRequired[str],
+    ScalableDimension: NotRequired[ScalableDimensionType],  # (2)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    ScalableTargetAction: NotRequired[ScalableTargetActionTypeDef],  # (3)
+```
 
-- `ScheduledActionName`: `str`
-- `ScheduledActionARN`: `str`
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype)
-- `Schedule`: `str`
-- `ResourceId`: `str`
-- `CreationTime`: `datetime`
-
-Optional fields:
-
-- `Timezone`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ScalableTargetAction`:
-  [ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef)
-
-<a id="stepadjustmenttypedef"></a>
-
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: ScalableTargetActionTypeDef](./type_defs.md#scalabletargetactiontypedef) 
 ## StepAdjustmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import StepAdjustmentTypeDef
+
+def get_value() -> StepAdjustmentTypeDef:
+    return {
+        "ScalingAdjustment": ...,
+    }
 ```
 
-Required fields:
-
-- `ScalingAdjustment`: `int`
-
-Optional fields:
-
-- `MetricIntervalLowerBound`: `float`
-- `MetricIntervalUpperBound`: `float`
-
-<a id="stepscalingpolicyconfigurationtypedef"></a>
+```python title="Definition"
+class StepAdjustmentTypeDef(TypedDict):
+    ScalingAdjustment: int,
+    MetricIntervalLowerBound: NotRequired[float],
+    MetricIntervalUpperBound: NotRequired[float],
+```
 
 ## StepScalingPolicyConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import StepScalingPolicyConfigurationTypeDef
+
+def get_value() -> StepScalingPolicyConfigurationTypeDef:
+    return {
+        "AdjustmentType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepScalingPolicyConfigurationTypeDef(TypedDict):
+    AdjustmentType: NotRequired[AdjustmentTypeType],  # (1)
+    StepAdjustments: NotRequired[List[StepAdjustmentTypeDef]],  # (2)
+    MinAdjustmentMagnitude: NotRequired[int],
+    Cooldown: NotRequired[int],
+    MetricAggregationType: NotRequired[MetricAggregationTypeType],  # (3)
+```
 
-- `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
-- `StepAdjustments`:
-  `List`\[[StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef)\]
-- `MinAdjustmentMagnitude`: `int`
-- `Cooldown`: `int`
-- `MetricAggregationType`:
-  [MetricAggregationTypeType](./literals.md#metricaggregationtypetype)
-
-<a id="suspendedstatetypedef"></a>
-
+1. See [:material-code-brackets: AdjustmentTypeType](./literals.md#adjustmenttypetype) 
+2. See [:material-code-braces: StepAdjustmentTypeDef](./type_defs.md#stepadjustmenttypedef) 
+3. See [:material-code-brackets: MetricAggregationTypeType](./literals.md#metricaggregationtypetype) 
 ## SuspendedStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import SuspendedStateTypeDef
+
+def get_value() -> SuspendedStateTypeDef:
+    return {
+        "DynamicScalingInSuspended": ...,
+    }
 ```
 
-Optional fields:
-
-- `DynamicScalingInSuspended`: `bool`
-- `DynamicScalingOutSuspended`: `bool`
-- `ScheduledScalingSuspended`: `bool`
-
-<a id="targettrackingscalingpolicyconfigurationtypedef"></a>
+```python title="Definition"
+class SuspendedStateTypeDef(TypedDict):
+    DynamicScalingInSuspended: NotRequired[bool],
+    DynamicScalingOutSuspended: NotRequired[bool],
+    ScheduledScalingSuspended: NotRequired[bool],
+```
 
 ## TargetTrackingScalingPolicyConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_application_autoscaling.type_defs import TargetTrackingScalingPolicyConfigurationTypeDef
+
+def get_value() -> TargetTrackingScalingPolicyConfigurationTypeDef:
+    return {
+        "TargetValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TargetTrackingScalingPolicyConfigurationTypeDef(TypedDict):
+    TargetValue: float,
+    PredefinedMetricSpecification: NotRequired[PredefinedMetricSpecificationTypeDef],  # (1)
+    CustomizedMetricSpecification: NotRequired[CustomizedMetricSpecificationTypeDef],  # (2)
+    ScaleOutCooldown: NotRequired[int],
+    ScaleInCooldown: NotRequired[int],
+    DisableScaleIn: NotRequired[bool],
+```
 
-- `TargetValue`: `float`
-
-Optional fields:
-
-- `PredefinedMetricSpecification`:
-  [PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef)
-- `CustomizedMetricSpecification`:
-  [CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef)
-- `ScaleOutCooldown`: `int`
-- `ScaleInCooldown`: `int`
-- `DisableScaleIn`: `bool`
+1. See [:material-code-braces: PredefinedMetricSpecificationTypeDef](./type_defs.md#predefinedmetricspecificationtypedef) 
+2. See [:material-code-braces: CustomizedMetricSpecificationTypeDef](./type_defs.md#customizedmetricspecificationtypedef) 

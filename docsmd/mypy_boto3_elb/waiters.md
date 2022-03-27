@@ -1,29 +1,18 @@
-<a id="waiters-for-boto3-elasticloadbalancing-module"></a>
-
-# Waiters for boto3 ElasticLoadBalancing module
+# Waiters
 
 > [Index](../README.md) > [ElasticLoadBalancing](./README.md) > Waiters
 
-Auto-generated documentation for
-[ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
-type annotations stubs module
-[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
+!!! note ""
 
-- [Waiters for boto3 ElasticLoadBalancing module](#waiters-for-boto3-elasticloadbalancing-module)
-  - [AnyInstanceInServiceWaiter](#anyinstanceinservicewaiter)
-  - [InstanceDeregisteredWaiter](#instancederegisteredwaiter)
-  - [InstanceInServiceWaiter](#instanceinservicewaiter)
-
-<a id="anyinstanceinservicewaiter"></a>
+    Auto-generated documentation for [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
+    type annotations stubs module [mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 ## AnyInstanceInServiceWaiter
 
-Type annotations for
-`boto3.client("elb").get_waiter("any_instance_in_service")`.
+Type annotations and code completion for `#!python boto3.client("elb").get_waiter("any_instance_in_service")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.AnyInstanceInService)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elb.waiter import AnyInstanceInServiceWaiter
@@ -32,24 +21,41 @@ def get_any_instance_in_service_waiter() -> AnyInstanceInServiceWaiter:
     return Session().client("elb").get_waiter("any_instance_in_service")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Waiter.any_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.AnyInstanceInService)
 
-Arguments for `AnyInstanceInServiceWaiter.wait` method:
+### wait
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AnyInstanceInServiceWaiter.wait` method.
 
-<a id="instancederegisteredwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndPointStateInputAnyInstanceInServiceWaitTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndPointStateInputAnyInstanceInServiceWaitTypeDef](./type_defs.md#describeendpointstateinputanyinstanceinservicewaittypedef) 
 ## InstanceDeregisteredWaiter
 
-Type annotations for `boto3.client("elb").get_waiter("instance_deregistered")`.
+Type annotations and code completion for `#!python boto3.client("elb").get_waiter("instance_deregistered")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceDeregistered)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elb.waiter import InstanceDeregisteredWaiter
@@ -58,24 +64,41 @@ def get_instance_deregistered_waiter() -> InstanceDeregisteredWaiter:
     return Session().client("elb").get_waiter("instance_deregistered")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Waiter.instance_deregistered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceDeregistered)
 
-Arguments for `InstanceDeregisteredWaiter.wait` method:
+### wait
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceDeregisteredWaiter.wait` method.
 
-<a id="instanceinservicewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndPointStateInputInstanceDeregisteredWaitTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndPointStateInputInstanceDeregisteredWaitTypeDef](./type_defs.md#describeendpointstateinputinstancederegisteredwaittypedef) 
 ## InstanceInServiceWaiter
 
-Type annotations for `boto3.client("elb").get_waiter("instance_in_service")`.
+Type annotations and code completion for `#!python boto3.client("elb").get_waiter("instance_in_service")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceInService)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elb.waiter import InstanceInServiceWaiter
@@ -84,11 +107,32 @@ def get_instance_in_service_waiter() -> InstanceInServiceWaiter:
     return Session().client("elb").get_waiter("instance_in_service")
 ```
 
-Boto3 documentation:
-[ElasticLoadBalancing.Waiter.instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing.Waiter.InstanceInService)
 
-Arguments for `InstanceInServiceWaiter.wait` method:
+### wait
 
-- `LoadBalancerName`: `str` *(required)*
-- `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InstanceInServiceWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    LoadBalancerName: str,
+    Instances: Sequence[InstanceTypeDef] = ...,  # (1)
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndPointStateInputInstanceInServiceWaitTypeDef = {  # (1)
+    "LoadBalancerName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndPointStateInputInstanceInServiceWaitTypeDef](./type_defs.md#describeendpointstateinputinstanceinservicewaittypedef) 

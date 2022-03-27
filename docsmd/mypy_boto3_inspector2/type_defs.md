@@ -1,2309 +1,3016 @@
-<a id="typed-dictionaries-for-boto3-inspector2-module"></a>
-
-# Typed dictionaries for boto3 Inspector2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [Inspector2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
-type annotations stubs module
-[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Inspector2 module](#typed-dictionaries-for-boto3-inspector2-module)
-  - [AccountAggregationResponseTypeDef](#accountaggregationresponsetypedef)
-  - [AccountAggregationTypeDef](#accountaggregationtypedef)
-  - [AccountStateTypeDef](#accountstatetypedef)
-  - [AccountTypeDef](#accounttypedef)
-  - [AggregationRequestTypeDef](#aggregationrequesttypedef)
-  - [AggregationResponseTypeDef](#aggregationresponsetypedef)
-  - [AmiAggregationResponseTypeDef](#amiaggregationresponsetypedef)
-  - [AmiAggregationTypeDef](#amiaggregationtypedef)
-  - [AssociateMemberRequestRequestTypeDef](#associatememberrequestrequesttypedef)
-  - [AssociateMemberResponseTypeDef](#associatememberresponsetypedef)
-  - [AutoEnableTypeDef](#autoenabletypedef)
-  - [AwsEc2InstanceDetailsTypeDef](#awsec2instancedetailstypedef)
-  - [AwsEcrContainerAggregationResponseTypeDef](#awsecrcontaineraggregationresponsetypedef)
-  - [AwsEcrContainerAggregationTypeDef](#awsecrcontaineraggregationtypedef)
-  - [AwsEcrContainerImageDetailsTypeDef](#awsecrcontainerimagedetailstypedef)
-  - [BatchGetAccountStatusRequestRequestTypeDef](#batchgetaccountstatusrequestrequesttypedef)
-  - [BatchGetAccountStatusResponseTypeDef](#batchgetaccountstatusresponsetypedef)
-  - [BatchGetFreeTrialInfoRequestRequestTypeDef](#batchgetfreetrialinforequestrequesttypedef)
-  - [BatchGetFreeTrialInfoResponseTypeDef](#batchgetfreetrialinforesponsetypedef)
-  - [CancelFindingsReportRequestRequestTypeDef](#cancelfindingsreportrequestrequesttypedef)
-  - [CancelFindingsReportResponseTypeDef](#cancelfindingsreportresponsetypedef)
-  - [CountsTypeDef](#countstypedef)
-  - [CoverageFilterCriteriaTypeDef](#coveragefiltercriteriatypedef)
-  - [CoverageMapFilterTypeDef](#coveragemapfiltertypedef)
-  - [CoverageStringFilterTypeDef](#coveragestringfiltertypedef)
-  - [CoveredResourceTypeDef](#coveredresourcetypedef)
-  - [CreateFilterRequestRequestTypeDef](#createfilterrequestrequesttypedef)
-  - [CreateFilterResponseTypeDef](#createfilterresponsetypedef)
-  - [CreateFindingsReportRequestRequestTypeDef](#createfindingsreportrequestrequesttypedef)
-  - [CreateFindingsReportResponseTypeDef](#createfindingsreportresponsetypedef)
-  - [CvssScoreAdjustmentTypeDef](#cvssscoreadjustmenttypedef)
-  - [CvssScoreDetailsTypeDef](#cvssscoredetailstypedef)
-  - [CvssScoreTypeDef](#cvssscoretypedef)
-  - [DateFilterTypeDef](#datefiltertypedef)
-  - [DelegatedAdminAccountTypeDef](#delegatedadminaccounttypedef)
-  - [DelegatedAdminTypeDef](#delegatedadmintypedef)
-  - [DeleteFilterRequestRequestTypeDef](#deletefilterrequestrequesttypedef)
-  - [DeleteFilterResponseTypeDef](#deletefilterresponsetypedef)
-  - [DescribeOrganizationConfigurationResponseTypeDef](#describeorganizationconfigurationresponsetypedef)
-  - [DestinationTypeDef](#destinationtypedef)
-  - [DisableDelegatedAdminAccountRequestRequestTypeDef](#disabledelegatedadminaccountrequestrequesttypedef)
-  - [DisableDelegatedAdminAccountResponseTypeDef](#disabledelegatedadminaccountresponsetypedef)
-  - [DisableRequestRequestTypeDef](#disablerequestrequesttypedef)
-  - [DisableResponseTypeDef](#disableresponsetypedef)
-  - [DisassociateMemberRequestRequestTypeDef](#disassociatememberrequestrequesttypedef)
-  - [DisassociateMemberResponseTypeDef](#disassociatememberresponsetypedef)
-  - [Ec2InstanceAggregationResponseTypeDef](#ec2instanceaggregationresponsetypedef)
-  - [Ec2InstanceAggregationTypeDef](#ec2instanceaggregationtypedef)
-  - [Ec2MetadataTypeDef](#ec2metadatatypedef)
-  - [EcrContainerImageMetadataTypeDef](#ecrcontainerimagemetadatatypedef)
-  - [EcrRepositoryMetadataTypeDef](#ecrrepositorymetadatatypedef)
-  - [EnableDelegatedAdminAccountRequestRequestTypeDef](#enabledelegatedadminaccountrequestrequesttypedef)
-  - [EnableDelegatedAdminAccountResponseTypeDef](#enabledelegatedadminaccountresponsetypedef)
-  - [EnableRequestRequestTypeDef](#enablerequestrequesttypedef)
-  - [EnableResponseTypeDef](#enableresponsetypedef)
-  - [FailedAccountTypeDef](#failedaccounttypedef)
-  - [FilterCriteriaTypeDef](#filtercriteriatypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [FindingTypeAggregationResponseTypeDef](#findingtypeaggregationresponsetypedef)
-  - [FindingTypeAggregationTypeDef](#findingtypeaggregationtypedef)
-  - [FindingTypeDef](#findingtypedef)
-  - [FreeTrialAccountInfoTypeDef](#freetrialaccountinfotypedef)
-  - [FreeTrialInfoErrorTypeDef](#freetrialinfoerrortypedef)
-  - [FreeTrialInfoTypeDef](#freetrialinfotypedef)
-  - [GetDelegatedAdminAccountResponseTypeDef](#getdelegatedadminaccountresponsetypedef)
-  - [GetFindingsReportStatusRequestRequestTypeDef](#getfindingsreportstatusrequestrequesttypedef)
-  - [GetFindingsReportStatusResponseTypeDef](#getfindingsreportstatusresponsetypedef)
-  - [GetMemberRequestRequestTypeDef](#getmemberrequestrequesttypedef)
-  - [GetMemberResponseTypeDef](#getmemberresponsetypedef)
-  - [ImageLayerAggregationResponseTypeDef](#imagelayeraggregationresponsetypedef)
-  - [ImageLayerAggregationTypeDef](#imagelayeraggregationtypedef)
-  - [InspectorScoreDetailsTypeDef](#inspectorscoredetailstypedef)
-  - [ListAccountPermissionsRequestRequestTypeDef](#listaccountpermissionsrequestrequesttypedef)
-  - [ListAccountPermissionsResponseTypeDef](#listaccountpermissionsresponsetypedef)
-  - [ListCoverageRequestRequestTypeDef](#listcoveragerequestrequesttypedef)
-  - [ListCoverageResponseTypeDef](#listcoverageresponsetypedef)
-  - [ListCoverageStatisticsRequestRequestTypeDef](#listcoveragestatisticsrequestrequesttypedef)
-  - [ListCoverageStatisticsResponseTypeDef](#listcoveragestatisticsresponsetypedef)
-  - [ListDelegatedAdminAccountsRequestRequestTypeDef](#listdelegatedadminaccountsrequestrequesttypedef)
-  - [ListDelegatedAdminAccountsResponseTypeDef](#listdelegatedadminaccountsresponsetypedef)
-  - [ListFiltersRequestRequestTypeDef](#listfiltersrequestrequesttypedef)
-  - [ListFiltersResponseTypeDef](#listfiltersresponsetypedef)
-  - [ListFindingAggregationsRequestRequestTypeDef](#listfindingaggregationsrequestrequesttypedef)
-  - [ListFindingAggregationsResponseTypeDef](#listfindingaggregationsresponsetypedef)
-  - [ListFindingsRequestRequestTypeDef](#listfindingsrequestrequesttypedef)
-  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
-  - [ListMembersRequestRequestTypeDef](#listmembersrequestrequesttypedef)
-  - [ListMembersResponseTypeDef](#listmembersresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListUsageTotalsRequestRequestTypeDef](#listusagetotalsrequestrequesttypedef)
-  - [ListUsageTotalsResponseTypeDef](#listusagetotalsresponsetypedef)
-  - [MapFilterTypeDef](#mapfiltertypedef)
-  - [MemberTypeDef](#membertypedef)
-  - [NetworkPathTypeDef](#networkpathtypedef)
-  - [NetworkReachabilityDetailsTypeDef](#networkreachabilitydetailstypedef)
-  - [NumberFilterTypeDef](#numberfiltertypedef)
-  - [PackageAggregationResponseTypeDef](#packageaggregationresponsetypedef)
-  - [PackageAggregationTypeDef](#packageaggregationtypedef)
-  - [PackageFilterTypeDef](#packagefiltertypedef)
-  - [PackageVulnerabilityDetailsTypeDef](#packagevulnerabilitydetailstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PermissionTypeDef](#permissiontypedef)
-  - [PortRangeFilterTypeDef](#portrangefiltertypedef)
-  - [PortRangeTypeDef](#portrangetypedef)
-  - [RecommendationTypeDef](#recommendationtypedef)
-  - [RemediationTypeDef](#remediationtypedef)
-  - [RepositoryAggregationResponseTypeDef](#repositoryaggregationresponsetypedef)
-  - [RepositoryAggregationTypeDef](#repositoryaggregationtypedef)
-  - [ResourceDetailsTypeDef](#resourcedetailstypedef)
-  - [ResourceScanMetadataTypeDef](#resourcescanmetadatatypedef)
-  - [ResourceStateTypeDef](#resourcestatetypedef)
-  - [ResourceStatusTypeDef](#resourcestatustypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScanStatusTypeDef](#scanstatustypedef)
-  - [SeverityCountsTypeDef](#severitycountstypedef)
-  - [SortCriteriaTypeDef](#sortcriteriatypedef)
-  - [StateTypeDef](#statetypedef)
-  - [StepTypeDef](#steptypedef)
-  - [StringFilterTypeDef](#stringfiltertypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TitleAggregationResponseTypeDef](#titleaggregationresponsetypedef)
-  - [TitleAggregationTypeDef](#titleaggregationtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateFilterRequestRequestTypeDef](#updatefilterrequestrequesttypedef)
-  - [UpdateFilterResponseTypeDef](#updatefilterresponsetypedef)
-  - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
-  - [UpdateOrganizationConfigurationResponseTypeDef](#updateorganizationconfigurationresponsetypedef)
-  - [UsageTotalTypeDef](#usagetotaltypedef)
-  - [UsageTypeDef](#usagetypedef)
-  - [VulnerablePackageTypeDef](#vulnerablepackagetypedef)
-
-<a id="accountaggregationresponsetypedef"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## AccountAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AccountAggregationResponseTypeDef
+
+def get_value() -> AccountAggregationResponseTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAggregationResponseTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `accountId`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="accountaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## AccountAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AccountAggregationTypeDef
+
+def get_value() -> AccountAggregationTypeDef:
+    return {
+        "findingType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountAggregationTypeDef(TypedDict):
+    findingType: NotRequired[AggregationFindingTypeType],  # (1)
+    resourceType: NotRequired[AggregationResourceTypeType],  # (2)
+    sortBy: NotRequired[AccountSortByType],  # (3)
+    sortOrder: NotRequired[SortOrderType],  # (4)
+```
 
-- `findingType`:
-  [AggregationFindingTypeType](./literals.md#aggregationfindingtypetype)
-- `resourceType`:
-  [AggregationResourceTypeType](./literals.md#aggregationresourcetypetype)
-- `sortBy`: [AccountSortByType](./literals.md#accountsortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="accountstatetypedef"></a>
-
+1. See [:material-code-brackets: AggregationFindingTypeType](./literals.md#aggregationfindingtypetype) 
+2. See [:material-code-brackets: AggregationResourceTypeType](./literals.md#aggregationresourcetypetype) 
+3. See [:material-code-brackets: AccountSortByType](./literals.md#accountsortbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## AccountStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AccountStateTypeDef
+
+def get_value() -> AccountStateTypeDef:
+    return {
+        "accountId": ...,
+        "resourceState": ...,
+        "state": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountStateTypeDef(TypedDict):
+    accountId: str,
+    resourceState: ResourceStateTypeDef,  # (1)
+    state: StateTypeDef,  # (2)
+```
 
-- `accountId`: `str`
-- `resourceState`: [ResourceStateTypeDef](./type_defs.md#resourcestatetypedef)
-- `state`: [StateTypeDef](./type_defs.md#statetypedef)
-
-<a id="accounttypedef"></a>
-
+1. See [:material-code-braces: ResourceStateTypeDef](./type_defs.md#resourcestatetypedef) 
+2. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
 ## AccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AccountTypeDef
+
+def get_value() -> AccountTypeDef:
+    return {
+        "accountId": ...,
+        "resourceStatus": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccountTypeDef(TypedDict):
+    accountId: str,
+    resourceStatus: ResourceStatusTypeDef,  # (1)
+    status: StatusType,  # (2)
+```
 
-- `accountId`: `str`
-- `resourceStatus`:
-  [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
-- `status`: [StatusType](./literals.md#statustype)
-
-<a id="aggregationrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## AggregationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AggregationRequestTypeDef
+
+def get_value() -> AggregationRequestTypeDef:
+    return {
+        "accountAggregation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregationRequestTypeDef(TypedDict):
+    accountAggregation: NotRequired[AccountAggregationTypeDef],  # (1)
+    amiAggregation: NotRequired[AmiAggregationTypeDef],  # (2)
+    awsEcrContainerAggregation: NotRequired[AwsEcrContainerAggregationTypeDef],  # (3)
+    ec2InstanceAggregation: NotRequired[Ec2InstanceAggregationTypeDef],  # (4)
+    findingTypeAggregation: NotRequired[FindingTypeAggregationTypeDef],  # (5)
+    imageLayerAggregation: NotRequired[ImageLayerAggregationTypeDef],  # (6)
+    packageAggregation: NotRequired[PackageAggregationTypeDef],  # (7)
+    repositoryAggregation: NotRequired[RepositoryAggregationTypeDef],  # (8)
+    titleAggregation: NotRequired[TitleAggregationTypeDef],  # (9)
+```
 
-- `accountAggregation`:
-  [AccountAggregationTypeDef](./type_defs.md#accountaggregationtypedef)
-- `amiAggregation`:
-  [AmiAggregationTypeDef](./type_defs.md#amiaggregationtypedef)
-- `awsEcrContainerAggregation`:
-  [AwsEcrContainerAggregationTypeDef](./type_defs.md#awsecrcontaineraggregationtypedef)
-- `ec2InstanceAggregation`:
-  [Ec2InstanceAggregationTypeDef](./type_defs.md#ec2instanceaggregationtypedef)
-- `findingTypeAggregation`:
-  [FindingTypeAggregationTypeDef](./type_defs.md#findingtypeaggregationtypedef)
-- `imageLayerAggregation`:
-  [ImageLayerAggregationTypeDef](./type_defs.md#imagelayeraggregationtypedef)
-- `packageAggregation`:
-  [PackageAggregationTypeDef](./type_defs.md#packageaggregationtypedef)
-- `repositoryAggregation`:
-  [RepositoryAggregationTypeDef](./type_defs.md#repositoryaggregationtypedef)
-- `titleAggregation`:
-  [TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef)
-
-<a id="aggregationresponsetypedef"></a>
-
+1. See [:material-code-braces: AccountAggregationTypeDef](./type_defs.md#accountaggregationtypedef) 
+2. See [:material-code-braces: AmiAggregationTypeDef](./type_defs.md#amiaggregationtypedef) 
+3. See [:material-code-braces: AwsEcrContainerAggregationTypeDef](./type_defs.md#awsecrcontaineraggregationtypedef) 
+4. See [:material-code-braces: Ec2InstanceAggregationTypeDef](./type_defs.md#ec2instanceaggregationtypedef) 
+5. See [:material-code-braces: FindingTypeAggregationTypeDef](./type_defs.md#findingtypeaggregationtypedef) 
+6. See [:material-code-braces: ImageLayerAggregationTypeDef](./type_defs.md#imagelayeraggregationtypedef) 
+7. See [:material-code-braces: PackageAggregationTypeDef](./type_defs.md#packageaggregationtypedef) 
+8. See [:material-code-braces: RepositoryAggregationTypeDef](./type_defs.md#repositoryaggregationtypedef) 
+9. See [:material-code-braces: TitleAggregationTypeDef](./type_defs.md#titleaggregationtypedef) 
 ## AggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AggregationResponseTypeDef
+
+def get_value() -> AggregationResponseTypeDef:
+    return {
+        "accountAggregation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregationResponseTypeDef(TypedDict):
+    accountAggregation: NotRequired[AccountAggregationResponseTypeDef],  # (1)
+    amiAggregation: NotRequired[AmiAggregationResponseTypeDef],  # (2)
+    awsEcrContainerAggregation: NotRequired[AwsEcrContainerAggregationResponseTypeDef],  # (3)
+    ec2InstanceAggregation: NotRequired[Ec2InstanceAggregationResponseTypeDef],  # (4)
+    findingTypeAggregation: NotRequired[FindingTypeAggregationResponseTypeDef],  # (5)
+    imageLayerAggregation: NotRequired[ImageLayerAggregationResponseTypeDef],  # (6)
+    packageAggregation: NotRequired[PackageAggregationResponseTypeDef],  # (7)
+    repositoryAggregation: NotRequired[RepositoryAggregationResponseTypeDef],  # (8)
+    titleAggregation: NotRequired[TitleAggregationResponseTypeDef],  # (9)
+```
 
-- `accountAggregation`:
-  [AccountAggregationResponseTypeDef](./type_defs.md#accountaggregationresponsetypedef)
-- `amiAggregation`:
-  [AmiAggregationResponseTypeDef](./type_defs.md#amiaggregationresponsetypedef)
-- `awsEcrContainerAggregation`:
-  [AwsEcrContainerAggregationResponseTypeDef](./type_defs.md#awsecrcontaineraggregationresponsetypedef)
-- `ec2InstanceAggregation`:
-  [Ec2InstanceAggregationResponseTypeDef](./type_defs.md#ec2instanceaggregationresponsetypedef)
-- `findingTypeAggregation`:
-  [FindingTypeAggregationResponseTypeDef](./type_defs.md#findingtypeaggregationresponsetypedef)
-- `imageLayerAggregation`:
-  [ImageLayerAggregationResponseTypeDef](./type_defs.md#imagelayeraggregationresponsetypedef)
-- `packageAggregation`:
-  [PackageAggregationResponseTypeDef](./type_defs.md#packageaggregationresponsetypedef)
-- `repositoryAggregation`:
-  [RepositoryAggregationResponseTypeDef](./type_defs.md#repositoryaggregationresponsetypedef)
-- `titleAggregation`:
-  [TitleAggregationResponseTypeDef](./type_defs.md#titleaggregationresponsetypedef)
-
-<a id="amiaggregationresponsetypedef"></a>
-
+1. See [:material-code-braces: AccountAggregationResponseTypeDef](./type_defs.md#accountaggregationresponsetypedef) 
+2. See [:material-code-braces: AmiAggregationResponseTypeDef](./type_defs.md#amiaggregationresponsetypedef) 
+3. See [:material-code-braces: AwsEcrContainerAggregationResponseTypeDef](./type_defs.md#awsecrcontaineraggregationresponsetypedef) 
+4. See [:material-code-braces: Ec2InstanceAggregationResponseTypeDef](./type_defs.md#ec2instanceaggregationresponsetypedef) 
+5. See [:material-code-braces: FindingTypeAggregationResponseTypeDef](./type_defs.md#findingtypeaggregationresponsetypedef) 
+6. See [:material-code-braces: ImageLayerAggregationResponseTypeDef](./type_defs.md#imagelayeraggregationresponsetypedef) 
+7. See [:material-code-braces: PackageAggregationResponseTypeDef](./type_defs.md#packageaggregationresponsetypedef) 
+8. See [:material-code-braces: RepositoryAggregationResponseTypeDef](./type_defs.md#repositoryaggregationresponsetypedef) 
+9. See [:material-code-braces: TitleAggregationResponseTypeDef](./type_defs.md#titleaggregationresponsetypedef) 
 ## AmiAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AmiAggregationResponseTypeDef
+
+def get_value() -> AmiAggregationResponseTypeDef:
+    return {
+        "ami": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AmiAggregationResponseTypeDef(TypedDict):
+    ami: str,
+    accountId: NotRequired[str],
+    affectedInstances: NotRequired[int],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `ami`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `affectedInstances`: `int`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="amiaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## AmiAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AmiAggregationTypeDef
+
+def get_value() -> AmiAggregationTypeDef:
+    return {
+        "amis": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AmiAggregationTypeDef(TypedDict):
+    amis: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[AmiSortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+```
 
-- `amis`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`: [AmiSortByType](./literals.md#amisortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="associatememberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-brackets: AmiSortByType](./literals.md#amisortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## AssociateMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AssociateMemberRequestRequestTypeDef
+
+def get_value() -> AssociateMemberRequestRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Required fields:
-
-- `accountId`: `str`
-
-<a id="associatememberresponsetypedef"></a>
+```python title="Definition"
+class AssociateMemberRequestRequestTypeDef(TypedDict):
+    accountId: str,
+```
 
 ## AssociateMemberResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AssociateMemberResponseTypeDef
+
+def get_value() -> AssociateMemberResponseTypeDef:
+    return {
+        "accountId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateMemberResponseTypeDef(TypedDict):
+    accountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `accountId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="autoenabletypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AutoEnableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AutoEnableTypeDef
+
+def get_value() -> AutoEnableTypeDef:
+    return {
+        "ec2": ...,
+        "ecr": ...,
+    }
 ```
 
-Required fields:
-
-- `ec2`: `bool`
-- `ecr`: `bool`
-
-<a id="awsec2instancedetailstypedef"></a>
+```python title="Definition"
+class AutoEnableTypeDef(TypedDict):
+    ec2: bool,
+    ecr: bool,
+```
 
 ## AwsEc2InstanceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AwsEc2InstanceDetailsTypeDef
+
+def get_value() -> AwsEc2InstanceDetailsTypeDef:
+    return {
+        "iamInstanceProfileArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `iamInstanceProfileArn`: `str`
-- `imageId`: `str`
-- `ipV4Addresses`: `List`\[`str`\]
-- `ipV6Addresses`: `List`\[`str`\]
-- `keyName`: `str`
-- `launchedAt`: `datetime`
-- `platform`: `str`
-- `subnetId`: `str`
-- `type`: `str`
-- `vpcId`: `str`
-
-<a id="awsecrcontaineraggregationresponsetypedef"></a>
+```python title="Definition"
+class AwsEc2InstanceDetailsTypeDef(TypedDict):
+    iamInstanceProfileArn: NotRequired[str],
+    imageId: NotRequired[str],
+    ipV4Addresses: NotRequired[List[str]],
+    ipV6Addresses: NotRequired[List[str]],
+    keyName: NotRequired[str],
+    launchedAt: NotRequired[datetime],
+    platform: NotRequired[str],
+    subnetId: NotRequired[str],
+    type: NotRequired[str],
+    vpcId: NotRequired[str],
+```
 
 ## AwsEcrContainerAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AwsEcrContainerAggregationResponseTypeDef
+
+def get_value() -> AwsEcrContainerAggregationResponseTypeDef:
+    return {
+        "resourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AwsEcrContainerAggregationResponseTypeDef(TypedDict):
+    resourceId: str,
+    accountId: NotRequired[str],
+    architecture: NotRequired[str],
+    imageSha: NotRequired[str],
+    imageTags: NotRequired[List[str]],
+    repository: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `resourceId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `architecture`: `str`
-- `imageSha`: `str`
-- `imageTags`: `List`\[`str`\]
-- `repository`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="awsecrcontaineraggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## AwsEcrContainerAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AwsEcrContainerAggregationTypeDef
+
+def get_value() -> AwsEcrContainerAggregationTypeDef:
+    return {
+        "architectures": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AwsEcrContainerAggregationTypeDef(TypedDict):
+    architectures: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    imageShas: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    imageTags: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    repositories: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceIds: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[AwsEcrContainerSortByType],  # (6)
+    sortOrder: NotRequired[SortOrderType],  # (7)
+```
 
-- `architectures`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `imageShas`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `imageTags`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `repositories`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `resourceIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`:
-  [AwsEcrContainerSortByType](./literals.md#awsecrcontainersortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="awsecrcontainerimagedetailstypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+6. See [:material-code-brackets: AwsEcrContainerSortByType](./literals.md#awsecrcontainersortbytype) 
+7. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## AwsEcrContainerImageDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import AwsEcrContainerImageDetailsTypeDef
+
+def get_value() -> AwsEcrContainerImageDetailsTypeDef:
+    return {
+        "imageHash": ...,
+        "registry": ...,
+        "repositoryName": ...,
+    }
 ```
 
-Required fields:
-
-- `imageHash`: `str`
-- `registry`: `str`
-- `repositoryName`: `str`
-
-Optional fields:
-
-- `architecture`: `str`
-- `author`: `str`
-- `imageTags`: `List`\[`str`\]
-- `platform`: `str`
-- `pushedAt`: `datetime`
-
-<a id="batchgetaccountstatusrequestrequesttypedef"></a>
+```python title="Definition"
+class AwsEcrContainerImageDetailsTypeDef(TypedDict):
+    imageHash: str,
+    registry: str,
+    repositoryName: str,
+    architecture: NotRequired[str],
+    author: NotRequired[str],
+    imageTags: NotRequired[List[str]],
+    platform: NotRequired[str],
+    pushedAt: NotRequired[datetime],
+```
 
 ## BatchGetAccountStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import BatchGetAccountStatusRequestRequestTypeDef
+
+def get_value() -> BatchGetAccountStatusRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-
-<a id="batchgetaccountstatusresponsetypedef"></a>
+```python title="Definition"
+class BatchGetAccountStatusRequestRequestTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+```
 
 ## BatchGetAccountStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import BatchGetAccountStatusResponseTypeDef
+
+def get_value() -> BatchGetAccountStatusResponseTypeDef:
+    return {
+        "accounts": ...,
+        "failedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetAccountStatusResponseTypeDef(TypedDict):
+    accounts: List[AccountStateTypeDef],  # (1)
+    failedAccounts: List[FailedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `accounts`:
-  `List`\[[AccountStateTypeDef](./type_defs.md#accountstatetypedef)\]
-- `failedAccounts`:
-  `List`\[[FailedAccountTypeDef](./type_defs.md#failedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetfreetrialinforequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountStateTypeDef](./type_defs.md#accountstatetypedef) 
+2. See [:material-code-braces: FailedAccountTypeDef](./type_defs.md#failedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetFreeTrialInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import BatchGetFreeTrialInfoRequestRequestTypeDef
+
+def get_value() -> BatchGetFreeTrialInfoRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-
-<a id="batchgetfreetrialinforesponsetypedef"></a>
+```python title="Definition"
+class BatchGetFreeTrialInfoRequestRequestTypeDef(TypedDict):
+    accountIds: Sequence[str],
+```
 
 ## BatchGetFreeTrialInfoResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import BatchGetFreeTrialInfoResponseTypeDef
+
+def get_value() -> BatchGetFreeTrialInfoResponseTypeDef:
+    return {
+        "accounts": ...,
+        "failedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetFreeTrialInfoResponseTypeDef(TypedDict):
+    accounts: List[FreeTrialAccountInfoTypeDef],  # (1)
+    failedAccounts: List[FreeTrialInfoErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `accounts`:
-  `List`\[[FreeTrialAccountInfoTypeDef](./type_defs.md#freetrialaccountinfotypedef)\]
-- `failedAccounts`:
-  `List`\[[FreeTrialInfoErrorTypeDef](./type_defs.md#freetrialinfoerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelfindingsreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FreeTrialAccountInfoTypeDef](./type_defs.md#freetrialaccountinfotypedef) 
+2. See [:material-code-braces: FreeTrialInfoErrorTypeDef](./type_defs.md#freetrialinfoerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelFindingsReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CancelFindingsReportRequestRequestTypeDef
+
+def get_value() -> CancelFindingsReportRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+    }
 ```
 
-Required fields:
-
-- `reportId`: `str`
-
-<a id="cancelfindingsreportresponsetypedef"></a>
+```python title="Definition"
+class CancelFindingsReportRequestRequestTypeDef(TypedDict):
+    reportId: str,
+```
 
 ## CancelFindingsReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CancelFindingsReportResponseTypeDef
+
+def get_value() -> CancelFindingsReportResponseTypeDef:
+    return {
+        "reportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelFindingsReportResponseTypeDef(TypedDict):
+    reportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `reportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="countstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CountsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CountsTypeDef
+
+def get_value() -> CountsTypeDef:
+    return {
+        "count": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CountsTypeDef(TypedDict):
+    count: NotRequired[int],
+    groupKey: NotRequired[GroupKeyType],  # (1)
+```
 
-- `count`: `int`
-- `groupKey`: [GroupKeyType](./literals.md#groupkeytype)
-
-<a id="coveragefiltercriteriatypedef"></a>
-
+1. See [:material-code-brackets: GroupKeyType](./literals.md#groupkeytype) 
 ## CoverageFilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CoverageFilterCriteriaTypeDef
+
+def get_value() -> CoverageFilterCriteriaTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CoverageFilterCriteriaTypeDef(TypedDict):
+    accountId: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    ec2InstanceTags: NotRequired[Sequence[CoverageMapFilterTypeDef]],  # (2)
+    ecrImageTags: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    ecrRepositoryName: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    resourceId: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    resourceType: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    scanStatusCode: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    scanStatusReason: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+    scanType: NotRequired[Sequence[CoverageStringFilterTypeDef]],  # (1)
+```
 
-- `accountId`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `ec2InstanceTags`:
-  `Sequence`\[[CoverageMapFilterTypeDef](./type_defs.md#coveragemapfiltertypedef)\]
-- `ecrImageTags`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `ecrRepositoryName`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `resourceId`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `resourceType`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `scanStatusCode`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `scanStatusReason`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-- `scanType`:
-  `Sequence`\[[CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef)\]
-
-<a id="coveragemapfiltertypedef"></a>
-
+1. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+2. See [:material-code-braces: CoverageMapFilterTypeDef](./type_defs.md#coveragemapfiltertypedef) 
+3. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+4. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+5. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+6. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+7. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+8. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
+9. See [:material-code-braces: CoverageStringFilterTypeDef](./type_defs.md#coveragestringfiltertypedef) 
 ## CoverageMapFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CoverageMapFilterTypeDef
+
+def get_value() -> CoverageMapFilterTypeDef:
+    return {
+        "comparison": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CoverageMapFilterTypeDef(TypedDict):
+    comparison: CoverageMapComparisonType,  # (1)
+    key: str,
+    value: NotRequired[str],
+```
 
-- `comparison`: `Literal['EQUALS']` (see
-  [CoverageMapComparisonType](./literals.md#coveragemapcomparisontype))
-- `key`: `str`
-
-Optional fields:
-
-- `value`: `str`
-
-<a id="coveragestringfiltertypedef"></a>
-
+1. See [:material-code-brackets: CoverageMapComparisonType](./literals.md#coveragemapcomparisontype) 
 ## CoverageStringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CoverageStringFilterTypeDef
+
+def get_value() -> CoverageStringFilterTypeDef:
+    return {
+        "comparison": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CoverageStringFilterTypeDef(TypedDict):
+    comparison: CoverageStringComparisonType,  # (1)
+    value: str,
+```
 
-- `comparison`:
-  [CoverageStringComparisonType](./literals.md#coveragestringcomparisontype)
-- `value`: `str`
-
-<a id="coveredresourcetypedef"></a>
-
+1. See [:material-code-brackets: CoverageStringComparisonType](./literals.md#coveragestringcomparisontype) 
 ## CoveredResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CoveredResourceTypeDef
+
+def get_value() -> CoveredResourceTypeDef:
+    return {
+        "accountId": ...,
+        "resourceId": ...,
+        "resourceType": ...,
+        "scanType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CoveredResourceTypeDef(TypedDict):
+    accountId: str,
+    resourceId: str,
+    resourceType: CoverageResourceTypeType,  # (2)
+    scanType: ScanTypeType,  # (4)
+    resourceMetadata: NotRequired[ResourceScanMetadataTypeDef],  # (1)
+    scanStatus: NotRequired[ScanStatusTypeDef],  # (3)
+```
 
-- `accountId`: `str`
-- `resourceId`: `str`
-- `resourceType`:
-  [CoverageResourceTypeType](./literals.md#coverageresourcetypetype)
-- `scanType`: [ScanTypeType](./literals.md#scantypetype)
-
-Optional fields:
-
-- `resourceMetadata`:
-  [ResourceScanMetadataTypeDef](./type_defs.md#resourcescanmetadatatypedef)
-- `scanStatus`: [ScanStatusTypeDef](./type_defs.md#scanstatustypedef)
-
-<a id="createfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceScanMetadataTypeDef](./type_defs.md#resourcescanmetadatatypedef) 
+2. See [:material-code-brackets: CoverageResourceTypeType](./literals.md#coverageresourcetypetype) 
+3. See [:material-code-braces: ScanStatusTypeDef](./type_defs.md#scanstatustypedef) 
+4. See [:material-code-brackets: ScanTypeType](./literals.md#scantypetype) 
 ## CreateFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CreateFilterRequestRequestTypeDef
+
+def get_value() -> CreateFilterRequestRequestTypeDef:
+    return {
+        "action": ...,
+        "filterCriteria": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFilterRequestRequestTypeDef(TypedDict):
+    action: FilterActionType,  # (1)
+    filterCriteria: FilterCriteriaTypeDef,  # (2)
+    name: str,
+    description: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createfilterresponsetypedef"></a>
-
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
 ## CreateFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CreateFilterResponseTypeDef
+
+def get_value() -> CreateFilterResponseTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFilterResponseTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfindingsreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFindingsReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CreateFindingsReportRequestRequestTypeDef
+
+def get_value() -> CreateFindingsReportRequestRequestTypeDef:
+    return {
+        "reportFormat": ...,
+        "s3Destination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFindingsReportRequestRequestTypeDef(TypedDict):
+    reportFormat: ReportFormatType,  # (1)
+    s3Destination: DestinationTypeDef,  # (2)
+    filterCriteria: NotRequired[FilterCriteriaTypeDef],  # (3)
+```
 
-- `reportFormat`: [ReportFormatType](./literals.md#reportformattype)
-- `s3Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-
-Optional fields:
-
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-
-<a id="createfindingsreportresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReportFormatType](./literals.md#reportformattype) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
 ## CreateFindingsReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CreateFindingsReportResponseTypeDef
+
+def get_value() -> CreateFindingsReportResponseTypeDef:
+    return {
+        "reportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFindingsReportResponseTypeDef(TypedDict):
+    reportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `reportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cvssscoreadjustmenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CvssScoreAdjustmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CvssScoreAdjustmentTypeDef
+
+def get_value() -> CvssScoreAdjustmentTypeDef:
+    return {
+        "metric": ...,
+        "reason": ...,
+    }
 ```
 
-Required fields:
-
-- `metric`: `str`
-- `reason`: `str`
-
-<a id="cvssscoredetailstypedef"></a>
+```python title="Definition"
+class CvssScoreAdjustmentTypeDef(TypedDict):
+    metric: str,
+    reason: str,
+```
 
 ## CvssScoreDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CvssScoreDetailsTypeDef
+
+def get_value() -> CvssScoreDetailsTypeDef:
+    return {
+        "score": ...,
+        "scoreSource": ...,
+        "scoringVector": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CvssScoreDetailsTypeDef(TypedDict):
+    score: float,
+    scoreSource: str,
+    scoringVector: str,
+    version: str,
+    adjustments: NotRequired[List[CvssScoreAdjustmentTypeDef]],  # (1)
+    cvssSource: NotRequired[str],
+```
 
-- `score`: `float`
-- `scoreSource`: `str`
-- `scoringVector`: `str`
-- `version`: `str`
-
-Optional fields:
-
-- `adjustments`:
-  `List`\[[CvssScoreAdjustmentTypeDef](./type_defs.md#cvssscoreadjustmenttypedef)\]
-- `cvssSource`: `str`
-
-<a id="cvssscoretypedef"></a>
-
+1. See [:material-code-braces: CvssScoreAdjustmentTypeDef](./type_defs.md#cvssscoreadjustmenttypedef) 
 ## CvssScoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import CvssScoreTypeDef
+
+def get_value() -> CvssScoreTypeDef:
+    return {
+        "baseScore": ...,
+        "scoringVector": ...,
+        "source": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
-
-- `baseScore`: `float`
-- `scoringVector`: `str`
-- `source`: `str`
-- `version`: `str`
-
-<a id="datefiltertypedef"></a>
+```python title="Definition"
+class CvssScoreTypeDef(TypedDict):
+    baseScore: float,
+    scoringVector: str,
+    source: str,
+    version: str,
+```
 
 ## DateFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DateFilterTypeDef
+
+def get_value() -> DateFilterTypeDef:
+    return {
+        "endInclusive": ...,
+    }
 ```
 
-Optional fields:
-
-- `endInclusive`: `Union`\[`datetime`, `str`\]
-- `startInclusive`: `Union`\[`datetime`, `str`\]
-
-<a id="delegatedadminaccounttypedef"></a>
+```python title="Definition"
+class DateFilterTypeDef(TypedDict):
+    endInclusive: NotRequired[Union[datetime, str]],
+    startInclusive: NotRequired[Union[datetime, str]],
+```
 
 ## DelegatedAdminAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DelegatedAdminAccountTypeDef
+
+def get_value() -> DelegatedAdminAccountTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DelegatedAdminAccountTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    status: NotRequired[DelegatedAdminStatusType],  # (1)
+```
 
-- `accountId`: `str`
-- `status`: [DelegatedAdminStatusType](./literals.md#delegatedadminstatustype)
-
-<a id="delegatedadmintypedef"></a>
-
+1. See [:material-code-brackets: DelegatedAdminStatusType](./literals.md#delegatedadminstatustype) 
 ## DelegatedAdminTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DelegatedAdminTypeDef
+
+def get_value() -> DelegatedAdminTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DelegatedAdminTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    relationshipStatus: NotRequired[RelationshipStatusType],  # (1)
+```
 
-- `accountId`: `str`
-- `relationshipStatus`:
-  [RelationshipStatusType](./literals.md#relationshipstatustype)
-
-<a id="deletefilterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
 ## DeleteFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DeleteFilterRequestRequestTypeDef
+
+def get_value() -> DeleteFilterRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletefilterresponsetypedef"></a>
+```python title="Definition"
+class DeleteFilterRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DeleteFilterResponseTypeDef
+
+def get_value() -> DeleteFilterResponseTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFilterResponseTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeorganizationconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DescribeOrganizationConfigurationResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigurationResponseTypeDef:
+    return {
+        "autoEnable": ...,
+        "maxAccountLimitReached": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConfigurationResponseTypeDef(TypedDict):
+    autoEnable: AutoEnableTypeDef,  # (1)
+    maxAccountLimitReached: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `autoEnable`: [AutoEnableTypeDef](./type_defs.md#autoenabletypedef)
-- `maxAccountLimitReached`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationtypedef"></a>
-
+1. See [:material-code-braces: AutoEnableTypeDef](./type_defs.md#autoenabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DestinationTypeDef
+
+def get_value() -> DestinationTypeDef:
+    return {
+        "bucketName": ...,
+        "kmsKeyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `bucketName`: `str`
-- `kmsKeyArn`: `str`
-
-Optional fields:
-
-- `keyPrefix`: `str`
-
-<a id="disabledelegatedadminaccountrequestrequesttypedef"></a>
+```python title="Definition"
+class DestinationTypeDef(TypedDict):
+    bucketName: str,
+    kmsKeyArn: str,
+    keyPrefix: NotRequired[str],
+```
 
 ## DisableDelegatedAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisableDelegatedAdminAccountRequestRequestTypeDef
+
+def get_value() -> DisableDelegatedAdminAccountRequestRequestTypeDef:
+    return {
+        "delegatedAdminAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `delegatedAdminAccountId`: `str`
-
-<a id="disabledelegatedadminaccountresponsetypedef"></a>
+```python title="Definition"
+class DisableDelegatedAdminAccountRequestRequestTypeDef(TypedDict):
+    delegatedAdminAccountId: str,
+```
 
 ## DisableDelegatedAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisableDelegatedAdminAccountResponseTypeDef
+
+def get_value() -> DisableDelegatedAdminAccountResponseTypeDef:
+    return {
+        "delegatedAdminAccountId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableDelegatedAdminAccountResponseTypeDef(TypedDict):
+    delegatedAdminAccountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `delegatedAdminAccountId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisableRequestRequestTypeDef
+
+def get_value() -> DisableRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DisableRequestRequestTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+    resourceTypes: NotRequired[Sequence[ResourceScanTypeType]],  # (1)
+```
 
-- `accountIds`: `Sequence`\[`str`\]
-- `resourceTypes`:
-  `Sequence`\[[ResourceScanTypeType](./literals.md#resourcescantypetype)\]
-
-<a id="disableresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceScanTypeType](./literals.md#resourcescantypetype) 
 ## DisableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisableResponseTypeDef
+
+def get_value() -> DisableResponseTypeDef:
+    return {
+        "accounts": ...,
+        "failedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableResponseTypeDef(TypedDict):
+    accounts: List[AccountTypeDef],  # (1)
+    failedAccounts: List[FailedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
-- `failedAccounts`:
-  `List`\[[FailedAccountTypeDef](./type_defs.md#failedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatememberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: FailedAccountTypeDef](./type_defs.md#failedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisassociateMemberRequestRequestTypeDef
+
+def get_value() -> DisassociateMemberRequestRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Required fields:
-
-- `accountId`: `str`
-
-<a id="disassociatememberresponsetypedef"></a>
+```python title="Definition"
+class DisassociateMemberRequestRequestTypeDef(TypedDict):
+    accountId: str,
+```
 
 ## DisassociateMemberResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import DisassociateMemberResponseTypeDef
+
+def get_value() -> DisassociateMemberResponseTypeDef:
+    return {
+        "accountId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateMemberResponseTypeDef(TypedDict):
+    accountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `accountId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ec2instanceaggregationresponsetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## Ec2InstanceAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import Ec2InstanceAggregationResponseTypeDef
+
+def get_value() -> Ec2InstanceAggregationResponseTypeDef:
+    return {
+        "instanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class Ec2InstanceAggregationResponseTypeDef(TypedDict):
+    instanceId: str,
+    accountId: NotRequired[str],
+    ami: NotRequired[str],
+    instanceTags: NotRequired[Dict[str, str]],
+    networkFindings: NotRequired[int],
+    operatingSystem: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `instanceId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `ami`: `str`
-- `instanceTags`: `Dict`\[`str`, `str`\]
-- `networkFindings`: `int`
-- `operatingSystem`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="ec2instanceaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## Ec2InstanceAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import Ec2InstanceAggregationTypeDef
+
+def get_value() -> Ec2InstanceAggregationTypeDef:
+    return {
+        "amis": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Ec2InstanceAggregationTypeDef(TypedDict):
+    amis: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    instanceIds: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    instanceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (3)
+    operatingSystems: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[Ec2InstanceSortByType],  # (5)
+    sortOrder: NotRequired[SortOrderType],  # (6)
+```
 
-- `amis`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `instanceIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `instanceTags`:
-  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
-- `operatingSystems`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`: [Ec2InstanceSortByType](./literals.md#ec2instancesortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="ec2metadatatypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-brackets: Ec2InstanceSortByType](./literals.md#ec2instancesortbytype) 
+6. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## Ec2MetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import Ec2MetadataTypeDef
+
+def get_value() -> Ec2MetadataTypeDef:
+    return {
+        "amiId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class Ec2MetadataTypeDef(TypedDict):
+    amiId: NotRequired[str],
+    platform: NotRequired[Ec2PlatformType],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `amiId`: `str`
-- `platform`: [Ec2PlatformType](./literals.md#ec2platformtype)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="ecrcontainerimagemetadatatypedef"></a>
-
+1. See [:material-code-brackets: Ec2PlatformType](./literals.md#ec2platformtype) 
 ## EcrContainerImageMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EcrContainerImageMetadataTypeDef
+
+def get_value() -> EcrContainerImageMetadataTypeDef:
+    return {
+        "tags": ...,
+    }
 ```
 
-Optional fields:
-
-- `tags`: `List`\[`str`\]
-
-<a id="ecrrepositorymetadatatypedef"></a>
+```python title="Definition"
+class EcrContainerImageMetadataTypeDef(TypedDict):
+    tags: NotRequired[List[str]],
+```
 
 ## EcrRepositoryMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EcrRepositoryMetadataTypeDef
+
+def get_value() -> EcrRepositoryMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EcrRepositoryMetadataTypeDef(TypedDict):
+    name: NotRequired[str],
+    scanFrequency: NotRequired[EcrScanFrequencyType],  # (1)
+```
 
-- `name`: `str`
-- `scanFrequency`: [EcrScanFrequencyType](./literals.md#ecrscanfrequencytype)
-
-<a id="enabledelegatedadminaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EcrScanFrequencyType](./literals.md#ecrscanfrequencytype) 
 ## EnableDelegatedAdminAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EnableDelegatedAdminAccountRequestRequestTypeDef
+
+def get_value() -> EnableDelegatedAdminAccountRequestRequestTypeDef:
+    return {
+        "delegatedAdminAccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `delegatedAdminAccountId`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="enabledelegatedadminaccountresponsetypedef"></a>
+```python title="Definition"
+class EnableDelegatedAdminAccountRequestRequestTypeDef(TypedDict):
+    delegatedAdminAccountId: str,
+    clientToken: NotRequired[str],
+```
 
 ## EnableDelegatedAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EnableDelegatedAdminAccountResponseTypeDef
+
+def get_value() -> EnableDelegatedAdminAccountResponseTypeDef:
+    return {
+        "delegatedAdminAccountId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableDelegatedAdminAccountResponseTypeDef(TypedDict):
+    delegatedAdminAccountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `delegatedAdminAccountId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="enablerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnableRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EnableRequestRequestTypeDef
+
+def get_value() -> EnableRequestRequestTypeDef:
+    return {
+        "resourceTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableRequestRequestTypeDef(TypedDict):
+    resourceTypes: Sequence[ResourceScanTypeType],  # (1)
+    accountIds: NotRequired[Sequence[str]],
+    clientToken: NotRequired[str],
+```
 
-- `resourceTypes`:
-  `Sequence`\[[ResourceScanTypeType](./literals.md#resourcescantypetype)\]
-
-Optional fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-- `clientToken`: `str`
-
-<a id="enableresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceScanTypeType](./literals.md#resourcescantypetype) 
 ## EnableResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import EnableResponseTypeDef
+
+def get_value() -> EnableResponseTypeDef:
+    return {
+        "accounts": ...,
+        "failedAccounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableResponseTypeDef(TypedDict):
+    accounts: List[AccountTypeDef],  # (1)
+    failedAccounts: List[FailedAccountTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `accounts`: `List`\[[AccountTypeDef](./type_defs.md#accounttypedef)\]
-- `failedAccounts`:
-  `List`\[[FailedAccountTypeDef](./type_defs.md#failedaccounttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="failedaccounttypedef"></a>
-
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
+2. See [:material-code-braces: FailedAccountTypeDef](./type_defs.md#failedaccounttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailedAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FailedAccountTypeDef
+
+def get_value() -> FailedAccountTypeDef:
+    return {
+        "accountId": ...,
+        "errorCode": ...,
+        "errorMessage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FailedAccountTypeDef(TypedDict):
+    accountId: str,
+    errorCode: ErrorCodeType,  # (1)
+    errorMessage: str,
+    resourceStatus: NotRequired[ResourceStatusTypeDef],  # (2)
+    status: NotRequired[StatusType],  # (3)
+```
 
-- `accountId`: `str`
-- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `errorMessage`: `str`
-
-Optional fields:
-
-- `resourceStatus`:
-  [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
-- `status`: [StatusType](./literals.md#statustype)
-
-<a id="filtercriteriatypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+2. See [:material-code-braces: ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef) 
+3. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## FilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FilterCriteriaTypeDef
+
+def get_value() -> FilterCriteriaTypeDef:
+    return {
+        "awsAccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FilterCriteriaTypeDef(TypedDict):
+    awsAccountId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    componentId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    componentType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceImageId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceSubnetId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ec2InstanceVpcId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageArchitecture: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageHash: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImagePushedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    ecrImageRegistry: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageRepositoryName: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    ecrImageTags: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingArn: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingStatus: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    findingType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    firstObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    inspectorScore: NotRequired[Sequence[NumberFilterTypeDef]],  # (17)
+    lastObservedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    networkProtocol: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    portRange: NotRequired[Sequence[PortRangeFilterTypeDef]],  # (20)
+    relatedVulnerabilities: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceTags: NotRequired[Sequence[MapFilterTypeDef]],  # (23)
+    resourceType: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    severity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    title: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    updatedAt: NotRequired[Sequence[DateFilterTypeDef]],  # (9)
+    vendorSeverity: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerabilityId: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerabilitySource: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    vulnerablePackages: NotRequired[Sequence[PackageFilterTypeDef]],  # (31)
+```
 
-- `awsAccountId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `componentId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `componentType`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ec2InstanceImageId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ec2InstanceSubnetId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ec2InstanceVpcId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ecrImageArchitecture`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ecrImageHash`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ecrImagePushedAt`:
-  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `ecrImageRegistry`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ecrImageRepositoryName`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `ecrImageTags`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `findingArn`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `findingStatus`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `findingType`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `firstObservedAt`:
-  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `inspectorScore`:
-  `Sequence`\[[NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)\]
-- `lastObservedAt`:
-  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `networkProtocol`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `portRange`:
-  `Sequence`\[[PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef)\]
-- `relatedVulnerabilities`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `resourceId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `resourceTags`:
-  `Sequence`\[[MapFilterTypeDef](./type_defs.md#mapfiltertypedef)\]
-- `resourceType`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `severity`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `title`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `updatedAt`:
-  `Sequence`\[[DateFilterTypeDef](./type_defs.md#datefiltertypedef)\]
-- `vendorSeverity`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `vulnerabilityId`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `vulnerabilitySource`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `vulnerablePackages`:
-  `Sequence`\[[PackageFilterTypeDef](./type_defs.md#packagefiltertypedef)\]
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+6. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+7. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+8. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+9. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+10. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+11. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+12. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+13. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+14. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+15. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+16. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+17. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
+18. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+19. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+20. See [:material-code-braces: PortRangeFilterTypeDef](./type_defs.md#portrangefiltertypedef) 
+21. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+22. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+23. See [:material-code-braces: MapFilterTypeDef](./type_defs.md#mapfiltertypedef) 
+24. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+25. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+26. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+27. See [:material-code-braces: DateFilterTypeDef](./type_defs.md#datefiltertypedef) 
+28. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+29. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+30. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+31. See [:material-code-braces: PackageFilterTypeDef](./type_defs.md#packagefiltertypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "action": ...,
+        "arn": ...,
+        "createdAt": ...,
+        "criteria": ...,
+        "name": ...,
+        "ownerId": ...,
+        "updatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    action: FilterActionType,  # (1)
+    arn: str,
+    createdAt: datetime,
+    criteria: FilterCriteriaTypeDef,  # (2)
+    name: str,
+    ownerId: str,
+    updatedAt: datetime,
+    description: NotRequired[str],
+    reason: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `criteria`: [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `name`: `str`
-- `ownerId`: `str`
-- `updatedAt`: `datetime`
-
-Optional fields:
-
-- `description`: `str`
-- `reason`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="findingtypeaggregationresponsetypedef"></a>
-
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
 ## FindingTypeAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FindingTypeAggregationResponseTypeDef
+
+def get_value() -> FindingTypeAggregationResponseTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingTypeAggregationResponseTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `accountId`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="findingtypeaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## FindingTypeAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FindingTypeAggregationTypeDef
+
+def get_value() -> FindingTypeAggregationTypeDef:
+    return {
+        "findingType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FindingTypeAggregationTypeDef(TypedDict):
+    findingType: NotRequired[AggregationFindingTypeType],  # (1)
+    resourceType: NotRequired[AggregationResourceTypeType],  # (2)
+    sortBy: NotRequired[FindingTypeSortByType],  # (3)
+    sortOrder: NotRequired[SortOrderType],  # (4)
+```
 
-- `findingType`:
-  [AggregationFindingTypeType](./literals.md#aggregationfindingtypetype)
-- `resourceType`:
-  [AggregationResourceTypeType](./literals.md#aggregationresourcetypetype)
-- `sortBy`: [FindingTypeSortByType](./literals.md#findingtypesortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="findingtypedef"></a>
-
+1. See [:material-code-brackets: AggregationFindingTypeType](./literals.md#aggregationfindingtypetype) 
+2. See [:material-code-brackets: AggregationResourceTypeType](./literals.md#aggregationresourcetypetype) 
+3. See [:material-code-brackets: FindingTypeSortByType](./literals.md#findingtypesortbytype) 
+4. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## FindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FindingTypeDef
+
+def get_value() -> FindingTypeDef:
+    return {
+        "awsAccountId": ...,
+        "description": ...,
+        "findingArn": ...,
+        "firstObservedAt": ...,
+        "lastObservedAt": ...,
+        "remediation": ...,
+        "resources": ...,
+        "severity": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FindingTypeDef(TypedDict):
+    awsAccountId: str,
+    description: str,
+    findingArn: str,
+    firstObservedAt: datetime,
+    lastObservedAt: datetime,
+    remediation: RemediationTypeDef,  # (4)
+    resources: List[ResourceTypeDef],  # (5)
+    severity: SeverityType,  # (6)
+    status: FindingStatusType,  # (7)
+    type: FindingTypeType,  # (8)
+    inspectorScore: NotRequired[float],
+    inspectorScoreDetails: NotRequired[InspectorScoreDetailsTypeDef],  # (1)
+    networkReachabilityDetails: NotRequired[NetworkReachabilityDetailsTypeDef],  # (2)
+    packageVulnerabilityDetails: NotRequired[PackageVulnerabilityDetailsTypeDef],  # (3)
+    title: NotRequired[str],
+    updatedAt: NotRequired[datetime],
+```
 
-- `awsAccountId`: `str`
-- `description`: `str`
-- `findingArn`: `str`
-- `firstObservedAt`: `datetime`
-- `lastObservedAt`: `datetime`
-- `remediation`: [RemediationTypeDef](./type_defs.md#remediationtypedef)
-- `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `severity`: [SeverityType](./literals.md#severitytype)
-- `status`: [FindingStatusType](./literals.md#findingstatustype)
-- `type`: [FindingTypeType](./literals.md#findingtypetype)
-
-Optional fields:
-
-- `inspectorScore`: `float`
-- `inspectorScoreDetails`:
-  [InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef)
-- `networkReachabilityDetails`:
-  [NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef)
-- `packageVulnerabilityDetails`:
-  [PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef)
-- `title`: `str`
-- `updatedAt`: `datetime`
-
-<a id="freetrialaccountinfotypedef"></a>
-
+1. See [:material-code-braces: InspectorScoreDetailsTypeDef](./type_defs.md#inspectorscoredetailstypedef) 
+2. See [:material-code-braces: NetworkReachabilityDetailsTypeDef](./type_defs.md#networkreachabilitydetailstypedef) 
+3. See [:material-code-braces: PackageVulnerabilityDetailsTypeDef](./type_defs.md#packagevulnerabilitydetailstypedef) 
+4. See [:material-code-braces: RemediationTypeDef](./type_defs.md#remediationtypedef) 
+5. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+6. See [:material-code-brackets: SeverityType](./literals.md#severitytype) 
+7. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+8. See [:material-code-brackets: FindingTypeType](./literals.md#findingtypetype) 
 ## FreeTrialAccountInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FreeTrialAccountInfoTypeDef
+
+def get_value() -> FreeTrialAccountInfoTypeDef:
+    return {
+        "accountId": ...,
+        "freeTrialInfo": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FreeTrialAccountInfoTypeDef(TypedDict):
+    accountId: str,
+    freeTrialInfo: List[FreeTrialInfoTypeDef],  # (1)
+```
 
-- `accountId`: `str`
-- `freeTrialInfo`:
-  `List`\[[FreeTrialInfoTypeDef](./type_defs.md#freetrialinfotypedef)\]
-
-<a id="freetrialinfoerrortypedef"></a>
-
+1. See [:material-code-braces: FreeTrialInfoTypeDef](./type_defs.md#freetrialinfotypedef) 
 ## FreeTrialInfoErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FreeTrialInfoErrorTypeDef
+
+def get_value() -> FreeTrialInfoErrorTypeDef:
+    return {
+        "accountId": ...,
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FreeTrialInfoErrorTypeDef(TypedDict):
+    accountId: str,
+    code: FreeTrialInfoErrorCodeType,  # (1)
+    message: str,
+```
 
-- `accountId`: `str`
-- `code`:
-  [FreeTrialInfoErrorCodeType](./literals.md#freetrialinfoerrorcodetype)
-- `message`: `str`
-
-<a id="freetrialinfotypedef"></a>
-
+1. See [:material-code-brackets: FreeTrialInfoErrorCodeType](./literals.md#freetrialinfoerrorcodetype) 
 ## FreeTrialInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import FreeTrialInfoTypeDef
+
+def get_value() -> FreeTrialInfoTypeDef:
+    return {
+        "end": ...,
+        "start": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FreeTrialInfoTypeDef(TypedDict):
+    end: datetime,
+    start: datetime,
+    status: FreeTrialStatusType,  # (1)
+    type: FreeTrialTypeType,  # (2)
+```
 
-- `end`: `datetime`
-- `start`: `datetime`
-- `status`: [FreeTrialStatusType](./literals.md#freetrialstatustype)
-- `type`: [FreeTrialTypeType](./literals.md#freetrialtypetype)
-
-<a id="getdelegatedadminaccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: FreeTrialStatusType](./literals.md#freetrialstatustype) 
+2. See [:material-code-brackets: FreeTrialTypeType](./literals.md#freetrialtypetype) 
 ## GetDelegatedAdminAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import GetDelegatedAdminAccountResponseTypeDef
+
+def get_value() -> GetDelegatedAdminAccountResponseTypeDef:
+    return {
+        "delegatedAdmin": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDelegatedAdminAccountResponseTypeDef(TypedDict):
+    delegatedAdmin: DelegatedAdminTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `delegatedAdmin`:
-  [DelegatedAdminTypeDef](./type_defs.md#delegatedadmintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingsreportstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DelegatedAdminTypeDef](./type_defs.md#delegatedadmintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingsReportStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import GetFindingsReportStatusRequestRequestTypeDef
+
+def get_value() -> GetFindingsReportStatusRequestRequestTypeDef:
+    return {
+        "reportId": ...,
+    }
 ```
 
-Optional fields:
-
-- `reportId`: `str`
-
-<a id="getfindingsreportstatusresponsetypedef"></a>
+```python title="Definition"
+class GetFindingsReportStatusRequestRequestTypeDef(TypedDict):
+    reportId: NotRequired[str],
+```
 
 ## GetFindingsReportStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import GetFindingsReportStatusResponseTypeDef
+
+def get_value() -> GetFindingsReportStatusResponseTypeDef:
+    return {
+        "destination": ...,
+        "errorCode": ...,
+        "errorMessage": ...,
+        "filterCriteria": ...,
+        "reportId": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingsReportStatusResponseTypeDef(TypedDict):
+    destination: DestinationTypeDef,  # (1)
+    errorCode: ReportingErrorCodeType,  # (2)
+    errorMessage: str,
+    filterCriteria: FilterCriteriaTypeDef,  # (3)
+    reportId: str,
+    status: ExternalReportStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-- `errorCode`: [ReportingErrorCodeType](./literals.md#reportingerrorcodetype)
-- `errorMessage`: `str`
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `reportId`: `str`
-- `status`: [ExternalReportStatusType](./literals.md#externalreportstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmemberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+2. See [:material-code-brackets: ReportingErrorCodeType](./literals.md#reportingerrorcodetype) 
+3. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+4. See [:material-code-brackets: ExternalReportStatusType](./literals.md#externalreportstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMemberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import GetMemberRequestRequestTypeDef
+
+def get_value() -> GetMemberRequestRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Required fields:
-
-- `accountId`: `str`
-
-<a id="getmemberresponsetypedef"></a>
+```python title="Definition"
+class GetMemberRequestRequestTypeDef(TypedDict):
+    accountId: str,
+```
 
 ## GetMemberResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import GetMemberResponseTypeDef
+
+def get_value() -> GetMemberResponseTypeDef:
+    return {
+        "member": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMemberResponseTypeDef(TypedDict):
+    member: MemberTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `member`: [MemberTypeDef](./type_defs.md#membertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="imagelayeraggregationresponsetypedef"></a>
-
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageLayerAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ImageLayerAggregationResponseTypeDef
+
+def get_value() -> ImageLayerAggregationResponseTypeDef:
+    return {
+        "accountId": ...,
+        "layerHash": ...,
+        "repository": ...,
+        "resourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImageLayerAggregationResponseTypeDef(TypedDict):
+    accountId: str,
+    layerHash: str,
+    repository: str,
+    resourceId: str,
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `accountId`: `str`
-- `layerHash`: `str`
-- `repository`: `str`
-- `resourceId`: `str`
-
-Optional fields:
-
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="imagelayeraggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## ImageLayerAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ImageLayerAggregationTypeDef
+
+def get_value() -> ImageLayerAggregationTypeDef:
+    return {
+        "layerHashes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImageLayerAggregationTypeDef(TypedDict):
+    layerHashes: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    repositories: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    resourceIds: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[ImageLayerSortByType],  # (4)
+    sortOrder: NotRequired[SortOrderType],  # (5)
+```
 
-- `layerHashes`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `repositories`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `resourceIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`: [ImageLayerSortByType](./literals.md#imagelayersortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="inspectorscoredetailstypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-brackets: ImageLayerSortByType](./literals.md#imagelayersortbytype) 
+5. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## InspectorScoreDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import InspectorScoreDetailsTypeDef
+
+def get_value() -> InspectorScoreDetailsTypeDef:
+    return {
+        "adjustedCvss": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InspectorScoreDetailsTypeDef(TypedDict):
+    adjustedCvss: NotRequired[CvssScoreDetailsTypeDef],  # (1)
+```
 
-- `adjustedCvss`:
-  [CvssScoreDetailsTypeDef](./type_defs.md#cvssscoredetailstypedef)
+1. See [:material-code-braces: CvssScoreDetailsTypeDef](./type_defs.md#cvssscoredetailstypedef) 
+## ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef
 
-<a id="listaccountpermissionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef
 
+def get_value() -> ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef:
+    return {
+        "service": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountPermissionsRequestListAccountPermissionsPaginateTypeDef(TypedDict):
+    service: NotRequired[ServiceType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountPermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListAccountPermissionsRequestRequestTypeDef
+
+def get_value() -> ListAccountPermissionsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAccountPermissionsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    service: NotRequired[ServiceType],  # (1)
+```
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `service`: [ServiceType](./literals.md#servicetype)
-
-<a id="listaccountpermissionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
 ## ListAccountPermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListAccountPermissionsResponseTypeDef
+
+def get_value() -> ListAccountPermissionsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "permissions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountPermissionsResponseTypeDef(TypedDict):
+    nextToken: str,
+    permissions: List[PermissionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `permissions`:
-  `List`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PermissionTypeDef](./type_defs.md#permissiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCoverageRequestListCoveragePaginateTypeDef
 
-<a id="listcoveragerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListCoverageRequestListCoveragePaginateTypeDef
 
+def get_value() -> ListCoverageRequestListCoveragePaginateTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoverageRequestListCoveragePaginateTypeDef(TypedDict):
+    filterCriteria: NotRequired[CoverageFilterCriteriaTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCoverageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListCoverageRequestRequestTypeDef
+
+def get_value() -> ListCoverageRequestRequestTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCoverageRequestRequestTypeDef(TypedDict):
+    filterCriteria: NotRequired[CoverageFilterCriteriaTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcoverageresponsetypedef"></a>
-
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
 ## ListCoverageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListCoverageResponseTypeDef
+
+def get_value() -> ListCoverageResponseTypeDef:
+    return {
+        "coveredResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCoverageResponseTypeDef(TypedDict):
+    coveredResources: List[CoveredResourceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `coveredResources`:
-  `List`\[[CoveredResourceTypeDef](./type_defs.md#coveredresourcetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CoveredResourceTypeDef](./type_defs.md#coveredresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef
 
-<a id="listcoveragestatisticsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef
 
+def get_value() -> ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoverageStatisticsRequestListCoverageStatisticsPaginateTypeDef(TypedDict):
+    filterCriteria: NotRequired[CoverageFilterCriteriaTypeDef],  # (1)
+    groupBy: NotRequired[GroupKeyType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-brackets: GroupKeyType](./literals.md#groupkeytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCoverageStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListCoverageStatisticsRequestRequestTypeDef
+
+def get_value() -> ListCoverageStatisticsRequestRequestTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCoverageStatisticsRequestRequestTypeDef(TypedDict):
+    filterCriteria: NotRequired[CoverageFilterCriteriaTypeDef],  # (1)
+    groupBy: NotRequired[GroupKeyType],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `groupBy`: [GroupKeyType](./literals.md#groupkeytype)
-- `nextToken`: `str`
-
-<a id="listcoveragestatisticsresponsetypedef"></a>
-
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-brackets: GroupKeyType](./literals.md#groupkeytype) 
 ## ListCoverageStatisticsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListCoverageStatisticsResponseTypeDef
+
+def get_value() -> ListCoverageStatisticsResponseTypeDef:
+    return {
+        "countsByGroup": ...,
+        "nextToken": ...,
+        "totalCounts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCoverageStatisticsResponseTypeDef(TypedDict):
+    countsByGroup: List[CountsTypeDef],  # (1)
+    nextToken: str,
+    totalCounts: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `countsByGroup`: `List`\[[CountsTypeDef](./type_defs.md#countstypedef)\]
-- `nextToken`: `str`
-- `totalCounts`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CountsTypeDef](./type_defs.md#countstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef
 
-<a id="listdelegatedadminaccountsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef
 
+def get_value() -> ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDelegatedAdminAccountsRequestListDelegatedAdminAccountsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDelegatedAdminAccountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListDelegatedAdminAccountsRequestRequestTypeDef
+
+def get_value() -> ListDelegatedAdminAccountsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listdelegatedadminaccountsresponsetypedef"></a>
+```python title="Definition"
+class ListDelegatedAdminAccountsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListDelegatedAdminAccountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListDelegatedAdminAccountsResponseTypeDef
+
+def get_value() -> ListDelegatedAdminAccountsResponseTypeDef:
+    return {
+        "delegatedAdminAccounts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDelegatedAdminAccountsResponseTypeDef(TypedDict):
+    delegatedAdminAccounts: List[DelegatedAdminAccountTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `delegatedAdminAccounts`:
-  `List`\[[DelegatedAdminAccountTypeDef](./type_defs.md#delegatedadminaccounttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DelegatedAdminAccountTypeDef](./type_defs.md#delegatedadminaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFiltersRequestListFiltersPaginateTypeDef
 
-<a id="listfiltersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListFiltersRequestListFiltersPaginateTypeDef
 
+def get_value() -> ListFiltersRequestListFiltersPaginateTypeDef:
+    return {
+        "action": ...,
+    }
+```
+
+```python title="Definition"
+class ListFiltersRequestListFiltersPaginateTypeDef(TypedDict):
+    action: NotRequired[FilterActionType],  # (1)
+    arns: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFiltersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFiltersRequestRequestTypeDef
+
+def get_value() -> ListFiltersRequestRequestTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFiltersRequestRequestTypeDef(TypedDict):
+    action: NotRequired[FilterActionType],  # (1)
+    arns: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `arns`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listfiltersresponsetypedef"></a>
-
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
 ## ListFiltersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFiltersResponseTypeDef
+
+def get_value() -> ListFiltersResponseTypeDef:
+    return {
+        "filters": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFiltersResponseTypeDef(TypedDict):
+    filters: List[FilterTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef
 
-<a id="listfindingaggregationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef
 
+def get_value() -> ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef:
+    return {
+        "aggregationType": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingAggregationsRequestListFindingAggregationsPaginateTypeDef(TypedDict):
+    aggregationType: AggregationTypeType,  # (1)
+    accountIds: NotRequired[Sequence[StringFilterTypeDef]],  # (2)
+    aggregationRequest: NotRequired[AggregationRequestTypeDef],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFindingAggregationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFindingAggregationsRequestRequestTypeDef
+
+def get_value() -> ListFindingAggregationsRequestRequestTypeDef:
+    return {
+        "aggregationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingAggregationsRequestRequestTypeDef(TypedDict):
+    aggregationType: AggregationTypeType,  # (1)
+    accountIds: NotRequired[Sequence[StringFilterTypeDef]],  # (2)
+    aggregationRequest: NotRequired[AggregationRequestTypeDef],  # (3)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
-
-Optional fields:
-
-- `accountIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `aggregationRequest`:
-  [AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listfindingaggregationsresponsetypedef"></a>
-
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef) 
 ## ListFindingAggregationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFindingAggregationsResponseTypeDef
+
+def get_value() -> ListFindingAggregationsResponseTypeDef:
+    return {
+        "aggregationType": ...,
+        "nextToken": ...,
+        "responses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingAggregationsResponseTypeDef(TypedDict):
+    aggregationType: AggregationTypeType,  # (1)
+    nextToken: str,
+    responses: List[AggregationResponseTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
-- `nextToken`: `str`
-- `responses`:
-  `List`\[[AggregationResponseTypeDef](./type_defs.md#aggregationresponsetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
+2. See [:material-code-braces: AggregationResponseTypeDef](./type_defs.md#aggregationresponsetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingsRequestListFindingsPaginateTypeDef
 
-<a id="listfindingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListFindingsRequestListFindingsPaginateTypeDef
 
+def get_value() -> ListFindingsRequestListFindingsPaginateTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingsRequestListFindingsPaginateTypeDef(TypedDict):
+    filterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    sortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFindingsRequestRequestTypeDef
+
+def get_value() -> ListFindingsRequestRequestTypeDef:
+    return {
+        "filterCriteria": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFindingsRequestRequestTypeDef(TypedDict):
+    filterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sortCriteria: NotRequired[SortCriteriaTypeDef],  # (2)
+```
 
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-
-<a id="listfindingsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## ListFindingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListFindingsResponseTypeDef
+
+def get_value() -> ListFindingsResponseTypeDef:
+    return {
+        "findings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingsResponseTypeDef(TypedDict):
+    findings: List[FindingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FindingTypeDef](./type_defs.md#findingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMembersRequestListMembersPaginateTypeDef
 
-<a id="listmembersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListMembersRequestListMembersPaginateTypeDef
 
+def get_value() -> ListMembersRequestListMembersPaginateTypeDef:
+    return {
+        "onlyAssociated": ...,
+    }
+```
+
+```python title="Definition"
+class ListMembersRequestListMembersPaginateTypeDef(TypedDict):
+    onlyAssociated: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMembersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListMembersRequestRequestTypeDef
+
+def get_value() -> ListMembersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `onlyAssociated`: `bool`
-
-<a id="listmembersresponsetypedef"></a>
+```python title="Definition"
+class ListMembersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    onlyAssociated: NotRequired[bool],
+```
 
 ## ListMembersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListMembersResponseTypeDef
+
+def get_value() -> ListMembersResponseTypeDef:
+    return {
+        "members": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMembersResponseTypeDef(TypedDict):
+    members: List[MemberTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `members`: `List`\[[MemberTypeDef](./type_defs.md#membertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MemberTypeDef](./type_defs.md#membertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsageTotalsRequestListUsageTotalsPaginateTypeDef
 
-<a id="listusagetotalsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_inspector2.type_defs import ListUsageTotalsRequestListUsageTotalsPaginateTypeDef
 
+def get_value() -> ListUsageTotalsRequestListUsageTotalsPaginateTypeDef:
+    return {
+        "accountIds": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsageTotalsRequestListUsageTotalsPaginateTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsageTotalsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListUsageTotalsRequestRequestTypeDef
+
+def get_value() -> ListUsageTotalsRequestRequestTypeDef:
+    return {
+        "accountIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listusagetotalsresponsetypedef"></a>
+```python title="Definition"
+class ListUsageTotalsRequestRequestTypeDef(TypedDict):
+    accountIds: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListUsageTotalsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ListUsageTotalsResponseTypeDef
+
+def get_value() -> ListUsageTotalsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "totals": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsageTotalsResponseTypeDef(TypedDict):
+    nextToken: str,
+    totals: List[UsageTotalTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `totals`: `List`\[[UsageTotalTypeDef](./type_defs.md#usagetotaltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mapfiltertypedef"></a>
-
+1. See [:material-code-braces: UsageTotalTypeDef](./type_defs.md#usagetotaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MapFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import MapFilterTypeDef
+
+def get_value() -> MapFilterTypeDef:
+    return {
+        "comparison": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MapFilterTypeDef(TypedDict):
+    comparison: MapComparisonType,  # (1)
+    key: str,
+    value: NotRequired[str],
+```
 
-- `comparison`: `Literal['EQUALS']` (see
-  [MapComparisonType](./literals.md#mapcomparisontype))
-- `key`: `str`
-
-Optional fields:
-
-- `value`: `str`
-
-<a id="membertypedef"></a>
-
+1. See [:material-code-brackets: MapComparisonType](./literals.md#mapcomparisontype) 
 ## MemberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import MemberTypeDef
+
+def get_value() -> MemberTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MemberTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    delegatedAdminAccountId: NotRequired[str],
+    relationshipStatus: NotRequired[RelationshipStatusType],  # (1)
+    updatedAt: NotRequired[datetime],
+```
 
-- `accountId`: `str`
-- `delegatedAdminAccountId`: `str`
-- `relationshipStatus`:
-  [RelationshipStatusType](./literals.md#relationshipstatustype)
-- `updatedAt`: `datetime`
-
-<a id="networkpathtypedef"></a>
-
+1. See [:material-code-brackets: RelationshipStatusType](./literals.md#relationshipstatustype) 
 ## NetworkPathTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import NetworkPathTypeDef
+
+def get_value() -> NetworkPathTypeDef:
+    return {
+        "steps": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkPathTypeDef(TypedDict):
+    steps: NotRequired[List[StepTypeDef]],  # (1)
+```
 
-- `steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
-
-<a id="networkreachabilitydetailstypedef"></a>
-
+1. See [:material-code-braces: StepTypeDef](./type_defs.md#steptypedef) 
 ## NetworkReachabilityDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import NetworkReachabilityDetailsTypeDef
+
+def get_value() -> NetworkReachabilityDetailsTypeDef:
+    return {
+        "networkPath": ...,
+        "openPortRange": ...,
+        "protocol": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NetworkReachabilityDetailsTypeDef(TypedDict):
+    networkPath: NetworkPathTypeDef,  # (1)
+    openPortRange: PortRangeTypeDef,  # (2)
+    protocol: NetworkProtocolType,  # (3)
+```
 
-- `networkPath`: [NetworkPathTypeDef](./type_defs.md#networkpathtypedef)
-- `openPortRange`: [PortRangeTypeDef](./type_defs.md#portrangetypedef)
-- `protocol`: [NetworkProtocolType](./literals.md#networkprotocoltype)
-
-<a id="numberfiltertypedef"></a>
-
+1. See [:material-code-braces: NetworkPathTypeDef](./type_defs.md#networkpathtypedef) 
+2. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+3. See [:material-code-brackets: NetworkProtocolType](./literals.md#networkprotocoltype) 
 ## NumberFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import NumberFilterTypeDef
+
+def get_value() -> NumberFilterTypeDef:
+    return {
+        "lowerInclusive": ...,
+    }
 ```
 
-Optional fields:
-
-- `lowerInclusive`: `float`
-- `upperInclusive`: `float`
-
-<a id="packageaggregationresponsetypedef"></a>
+```python title="Definition"
+class NumberFilterTypeDef(TypedDict):
+    lowerInclusive: NotRequired[float],
+    upperInclusive: NotRequired[float],
+```
 
 ## PackageAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PackageAggregationResponseTypeDef
+
+def get_value() -> PackageAggregationResponseTypeDef:
+    return {
+        "packageName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PackageAggregationResponseTypeDef(TypedDict):
+    packageName: str,
+    accountId: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `packageName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="packageaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## PackageAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PackageAggregationTypeDef
+
+def get_value() -> PackageAggregationTypeDef:
+    return {
+        "packageNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PackageAggregationTypeDef(TypedDict):
+    packageNames: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[PackageSortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+```
 
-- `packageNames`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`: [PackageSortByType](./literals.md#packagesortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="packagefiltertypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-brackets: PackageSortByType](./literals.md#packagesortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## PackageFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PackageFilterTypeDef
+
+def get_value() -> PackageFilterTypeDef:
+    return {
+        "architecture": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PackageFilterTypeDef(TypedDict):
+    architecture: NotRequired[StringFilterTypeDef],  # (1)
+    epoch: NotRequired[NumberFilterTypeDef],  # (2)
+    name: NotRequired[StringFilterTypeDef],  # (1)
+    release: NotRequired[StringFilterTypeDef],  # (1)
+    sourceLayerHash: NotRequired[StringFilterTypeDef],  # (1)
+    version: NotRequired[StringFilterTypeDef],  # (1)
+```
 
-- `architecture`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
-- `epoch`: [NumberFilterTypeDef](./type_defs.md#numberfiltertypedef)
-- `name`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
-- `release`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
-- `sourceLayerHash`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
-- `version`: [StringFilterTypeDef](./type_defs.md#stringfiltertypedef)
-
-<a id="packagevulnerabilitydetailstypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-braces: NumberFilterTypeDef](./type_defs.md#numberfiltertypedef) 
+3. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+6. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 ## PackageVulnerabilityDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PackageVulnerabilityDetailsTypeDef
+
+def get_value() -> PackageVulnerabilityDetailsTypeDef:
+    return {
+        "source": ...,
+        "vulnerabilityId": ...,
+        "vulnerablePackages": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PackageVulnerabilityDetailsTypeDef(TypedDict):
+    source: str,
+    vulnerabilityId: str,
+    vulnerablePackages: List[VulnerablePackageTypeDef],  # (2)
+    cvss: NotRequired[List[CvssScoreTypeDef]],  # (1)
+    referenceUrls: NotRequired[List[str]],
+    relatedVulnerabilities: NotRequired[List[str]],
+    sourceUrl: NotRequired[str],
+    vendorCreatedAt: NotRequired[datetime],
+    vendorSeverity: NotRequired[str],
+    vendorUpdatedAt: NotRequired[datetime],
+```
 
-- `source`: `str`
-- `vulnerabilityId`: `str`
-- `vulnerablePackages`:
-  `List`\[[VulnerablePackageTypeDef](./type_defs.md#vulnerablepackagetypedef)\]
-
-Optional fields:
-
-- `cvss`: `List`\[[CvssScoreTypeDef](./type_defs.md#cvssscoretypedef)\]
-- `referenceUrls`: `List`\[`str`\]
-- `relatedVulnerabilities`: `List`\[`str`\]
-- `sourceUrl`: `str`
-- `vendorCreatedAt`: `datetime`
-- `vendorSeverity`: `str`
-- `vendorUpdatedAt`: `datetime`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: CvssScoreTypeDef](./type_defs.md#cvssscoretypedef) 
+2. See [:material-code-braces: VulnerablePackageTypeDef](./type_defs.md#vulnerablepackagetypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="permissiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PermissionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PermissionTypeDef
+
+def get_value() -> PermissionTypeDef:
+    return {
+        "operation": ...,
+        "service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PermissionTypeDef(TypedDict):
+    operation: OperationType,  # (1)
+    service: ServiceType,  # (2)
+```
 
-- `operation`: [OperationType](./literals.md#operationtype)
-- `service`: [ServiceType](./literals.md#servicetype)
-
-<a id="portrangefiltertypedef"></a>
-
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
+2. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
 ## PortRangeFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PortRangeFilterTypeDef
+
+def get_value() -> PortRangeFilterTypeDef:
+    return {
+        "beginInclusive": ...,
+    }
 ```
 
-Optional fields:
-
-- `beginInclusive`: `int`
-- `endInclusive`: `int`
-
-<a id="portrangetypedef"></a>
+```python title="Definition"
+class PortRangeFilterTypeDef(TypedDict):
+    beginInclusive: NotRequired[int],
+    endInclusive: NotRequired[int],
+```
 
 ## PortRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import PortRangeTypeDef
+
+def get_value() -> PortRangeTypeDef:
+    return {
+        "begin": ...,
+        "end": ...,
+    }
 ```
 
-Required fields:
-
-- `begin`: `int`
-- `end`: `int`
-
-<a id="recommendationtypedef"></a>
+```python title="Definition"
+class PortRangeTypeDef(TypedDict):
+    begin: int,
+    end: int,
+```
 
 ## RecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import RecommendationTypeDef
+
+def get_value() -> RecommendationTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Optional fields:
-
-- `Url`: `str`
-- `text`: `str`
-
-<a id="remediationtypedef"></a>
+```python title="Definition"
+class RecommendationTypeDef(TypedDict):
+    Url: NotRequired[str],
+    text: NotRequired[str],
+```
 
 ## RemediationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import RemediationTypeDef
+
+def get_value() -> RemediationTypeDef:
+    return {
+        "recommendation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationTypeDef(TypedDict):
+    recommendation: NotRequired[RecommendationTypeDef],  # (1)
+```
 
-- `recommendation`:
-  [RecommendationTypeDef](./type_defs.md#recommendationtypedef)
-
-<a id="repositoryaggregationresponsetypedef"></a>
-
+1. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
 ## RepositoryAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import RepositoryAggregationResponseTypeDef
+
+def get_value() -> RepositoryAggregationResponseTypeDef:
+    return {
+        "repository": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RepositoryAggregationResponseTypeDef(TypedDict):
+    repository: str,
+    accountId: NotRequired[str],
+    affectedImages: NotRequired[int],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+```
 
-- `repository`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `affectedImages`: `int`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-
-<a id="repositoryaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## RepositoryAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import RepositoryAggregationTypeDef
+
+def get_value() -> RepositoryAggregationTypeDef:
+    return {
+        "repositories": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RepositoryAggregationTypeDef(TypedDict):
+    repositories: NotRequired[Sequence[StringFilterTypeDef]],  # (1)
+    sortBy: NotRequired[RepositorySortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+```
 
-- `repositories`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `sortBy`: [RepositorySortByType](./literals.md#repositorysortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="resourcedetailstypedef"></a>
-
+1. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+2. See [:material-code-brackets: RepositorySortByType](./literals.md#repositorysortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ResourceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResourceDetailsTypeDef
+
+def get_value() -> ResourceDetailsTypeDef:
+    return {
+        "awsEc2Instance": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceDetailsTypeDef(TypedDict):
+    awsEc2Instance: NotRequired[AwsEc2InstanceDetailsTypeDef],  # (1)
+    awsEcrContainerImage: NotRequired[AwsEcrContainerImageDetailsTypeDef],  # (2)
+```
 
-- `awsEc2Instance`:
-  [AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef)
-- `awsEcrContainerImage`:
-  [AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef)
-
-<a id="resourcescanmetadatatypedef"></a>
-
+1. See [:material-code-braces: AwsEc2InstanceDetailsTypeDef](./type_defs.md#awsec2instancedetailstypedef) 
+2. See [:material-code-braces: AwsEcrContainerImageDetailsTypeDef](./type_defs.md#awsecrcontainerimagedetailstypedef) 
 ## ResourceScanMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResourceScanMetadataTypeDef
+
+def get_value() -> ResourceScanMetadataTypeDef:
+    return {
+        "ec2": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceScanMetadataTypeDef(TypedDict):
+    ec2: NotRequired[Ec2MetadataTypeDef],  # (1)
+    ecrImage: NotRequired[EcrContainerImageMetadataTypeDef],  # (2)
+    ecrRepository: NotRequired[EcrRepositoryMetadataTypeDef],  # (3)
+```
 
-- `ec2`: [Ec2MetadataTypeDef](./type_defs.md#ec2metadatatypedef)
-- `ecrImage`:
-  [EcrContainerImageMetadataTypeDef](./type_defs.md#ecrcontainerimagemetadatatypedef)
-- `ecrRepository`:
-  [EcrRepositoryMetadataTypeDef](./type_defs.md#ecrrepositorymetadatatypedef)
-
-<a id="resourcestatetypedef"></a>
-
+1. See [:material-code-braces: Ec2MetadataTypeDef](./type_defs.md#ec2metadatatypedef) 
+2. See [:material-code-braces: EcrContainerImageMetadataTypeDef](./type_defs.md#ecrcontainerimagemetadatatypedef) 
+3. See [:material-code-braces: EcrRepositoryMetadataTypeDef](./type_defs.md#ecrrepositorymetadatatypedef) 
 ## ResourceStateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResourceStateTypeDef
+
+def get_value() -> ResourceStateTypeDef:
+    return {
+        "ec2": ...,
+        "ecr": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceStateTypeDef(TypedDict):
+    ec2: StateTypeDef,  # (1)
+    ecr: StateTypeDef,  # (1)
+```
 
-- `ec2`: [StateTypeDef](./type_defs.md#statetypedef)
-- `ecr`: [StateTypeDef](./type_defs.md#statetypedef)
-
-<a id="resourcestatustypedef"></a>
-
+1. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
+2. See [:material-code-braces: StateTypeDef](./type_defs.md#statetypedef) 
 ## ResourceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResourceStatusTypeDef
+
+def get_value() -> ResourceStatusTypeDef:
+    return {
+        "ec2": ...,
+        "ecr": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceStatusTypeDef(TypedDict):
+    ec2: StatusType,  # (1)
+    ecr: StatusType,  # (1)
+```
 
-- `ec2`: [StatusType](./literals.md#statustype)
-- `ecr`: [StatusType](./literals.md#statustype)
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "id": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    id: str,
+    type: ResourceTypeType,  # (2)
+    details: NotRequired[ResourceDetailsTypeDef],  # (1)
+    partition: NotRequired[str],
+    region: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `id`: `str`
-- `type`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `details`: [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
-- `partition`: `str`
-- `region`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scanstatustypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ScanStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import ScanStatusTypeDef
+
+def get_value() -> ScanStatusTypeDef:
+    return {
+        "reason": ...,
+        "statusCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScanStatusTypeDef(TypedDict):
+    reason: ScanStatusReasonType,  # (1)
+    statusCode: ScanStatusCodeType,  # (2)
+```
 
-- `reason`: [ScanStatusReasonType](./literals.md#scanstatusreasontype)
-- `statusCode`: [ScanStatusCodeType](./literals.md#scanstatuscodetype)
-
-<a id="severitycountstypedef"></a>
-
+1. See [:material-code-brackets: ScanStatusReasonType](./literals.md#scanstatusreasontype) 
+2. See [:material-code-brackets: ScanStatusCodeType](./literals.md#scanstatuscodetype) 
 ## SeverityCountsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import SeverityCountsTypeDef
+
+def get_value() -> SeverityCountsTypeDef:
+    return {
+        "all": ...,
+    }
 ```
 
-Optional fields:
-
-- `all`: `int`
-- `critical`: `int`
-- `high`: `int`
-- `medium`: `int`
-
-<a id="sortcriteriatypedef"></a>
+```python title="Definition"
+class SeverityCountsTypeDef(TypedDict):
+    all: NotRequired[int],
+    critical: NotRequired[int],
+    high: NotRequired[int],
+    medium: NotRequired[int],
+```
 
 ## SortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import SortCriteriaTypeDef
+
+def get_value() -> SortCriteriaTypeDef:
+    return {
+        "field": ...,
+        "sortOrder": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SortCriteriaTypeDef(TypedDict):
+    field: SortFieldType,  # (1)
+    sortOrder: SortOrderType,  # (2)
+```
 
-- `field`: [SortFieldType](./literals.md#sortfieldtype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="statetypedef"></a>
-
+1. See [:material-code-brackets: SortFieldType](./literals.md#sortfieldtype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## StateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import StateTypeDef
+
+def get_value() -> StateTypeDef:
+    return {
+        "errorCode": ...,
+        "errorMessage": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StateTypeDef(TypedDict):
+    errorCode: ErrorCodeType,  # (1)
+    errorMessage: str,
+    status: StatusType,  # (2)
+```
 
-- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `errorMessage`: `str`
-- `status`: [StatusType](./literals.md#statustype)
-
-<a id="steptypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## StepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import StepTypeDef
+
+def get_value() -> StepTypeDef:
+    return {
+        "componentId": ...,
+        "componentType": ...,
+    }
 ```
 
-Required fields:
-
-- `componentId`: `str`
-- `componentType`: `str`
-
-<a id="stringfiltertypedef"></a>
+```python title="Definition"
+class StepTypeDef(TypedDict):
+    componentId: str,
+    componentType: str,
+```
 
 ## StringFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import StringFilterTypeDef
+
+def get_value() -> StringFilterTypeDef:
+    return {
+        "comparison": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StringFilterTypeDef(TypedDict):
+    comparison: StringComparisonType,  # (1)
+    value: str,
+```
 
-- `comparison`: [StringComparisonType](./literals.md#stringcomparisontype)
-- `value`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StringComparisonType](./literals.md#stringcomparisontype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="titleaggregationresponsetypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TitleAggregationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import TitleAggregationResponseTypeDef
+
+def get_value() -> TitleAggregationResponseTypeDef:
+    return {
+        "title": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TitleAggregationResponseTypeDef(TypedDict):
+    title: str,
+    accountId: NotRequired[str],
+    severityCounts: NotRequired[SeverityCountsTypeDef],  # (1)
+    vulnerabilityId: NotRequired[str],
+```
 
-- `title`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `severityCounts`:
-  [SeverityCountsTypeDef](./type_defs.md#severitycountstypedef)
-- `vulnerabilityId`: `str`
-
-<a id="titleaggregationtypedef"></a>
-
+1. See [:material-code-braces: SeverityCountsTypeDef](./type_defs.md#severitycountstypedef) 
 ## TitleAggregationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import TitleAggregationTypeDef
+
+def get_value() -> TitleAggregationTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TitleAggregationTypeDef(TypedDict):
+    resourceType: NotRequired[AggregationResourceTypeType],  # (1)
+    sortBy: NotRequired[TitleSortByType],  # (2)
+    sortOrder: NotRequired[SortOrderType],  # (3)
+    titles: NotRequired[Sequence[StringFilterTypeDef]],  # (4)
+    vulnerabilityIds: NotRequired[Sequence[StringFilterTypeDef]],  # (4)
+```
 
-- `resourceType`:
-  [AggregationResourceTypeType](./literals.md#aggregationresourcetypetype)
-- `sortBy`: [TitleSortByType](./literals.md#titlesortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `titles`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `vulnerabilityIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AggregationResourceTypeType](./literals.md#aggregationresourcetypetype) 
+2. See [:material-code-brackets: TitleSortByType](./literals.md#titlesortbytype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+5. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatefilterrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UpdateFilterRequestRequestTypeDef
+
+def get_value() -> UpdateFilterRequestRequestTypeDef:
+    return {
+        "filterArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFilterRequestRequestTypeDef(TypedDict):
+    filterArn: str,
+    action: NotRequired[FilterActionType],  # (1)
+    description: NotRequired[str],
+    filterCriteria: NotRequired[FilterCriteriaTypeDef],  # (2)
+    name: NotRequired[str],
+```
 
-- `filterArn`: `str`
-
-Optional fields:
-
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `description`: `str`
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `name`: `str`
-
-<a id="updatefilterresponsetypedef"></a>
-
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
 ## UpdateFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UpdateFilterResponseTypeDef
+
+def get_value() -> UpdateFilterResponseTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFilterResponseTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UpdateOrganizationConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationRequestRequestTypeDef:
+    return {
+        "autoEnable": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOrganizationConfigurationRequestRequestTypeDef(TypedDict):
+    autoEnable: AutoEnableTypeDef,  # (1)
+```
 
-- `autoEnable`: [AutoEnableTypeDef](./type_defs.md#autoenabletypedef)
-
-<a id="updateorganizationconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: AutoEnableTypeDef](./type_defs.md#autoenabletypedef) 
 ## UpdateOrganizationConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UpdateOrganizationConfigurationResponseTypeDef
+
+def get_value() -> UpdateOrganizationConfigurationResponseTypeDef:
+    return {
+        "autoEnable": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOrganizationConfigurationResponseTypeDef(TypedDict):
+    autoEnable: AutoEnableTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `autoEnable`: [AutoEnableTypeDef](./type_defs.md#autoenabletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="usagetotaltypedef"></a>
-
+1. See [:material-code-braces: AutoEnableTypeDef](./type_defs.md#autoenabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UsageTotalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UsageTotalTypeDef
+
+def get_value() -> UsageTotalTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageTotalTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    usage: NotRequired[List[UsageTypeDef]],  # (1)
+```
 
-- `accountId`: `str`
-- `usage`: `List`\[[UsageTypeDef](./type_defs.md#usagetypedef)\]
-
-<a id="usagetypedef"></a>
-
+1. See [:material-code-braces: UsageTypeDef](./type_defs.md#usagetypedef) 
 ## UsageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import UsageTypeDef
+
+def get_value() -> UsageTypeDef:
+    return {
+        "currency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageTypeDef(TypedDict):
+    currency: NotRequired[CurrencyType],  # (1)
+    estimatedMonthlyCost: NotRequired[float],
+    total: NotRequired[float],
+    type: NotRequired[UsageTypeType],  # (2)
+```
 
-- `currency`: `Literal['USD']` (see [CurrencyType](./literals.md#currencytype))
-- `estimatedMonthlyCost`: `float`
-- `total`: `float`
-- `type`: [UsageTypeType](./literals.md#usagetypetype)
-
-<a id="vulnerablepackagetypedef"></a>
-
+1. See [:material-code-brackets: CurrencyType](./literals.md#currencytype) 
+2. See [:material-code-brackets: UsageTypeType](./literals.md#usagetypetype) 
 ## VulnerablePackageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_inspector2.type_defs import VulnerablePackageTypeDef
+
+def get_value() -> VulnerablePackageTypeDef:
+    return {
+        "name": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VulnerablePackageTypeDef(TypedDict):
+    name: str,
+    version: str,
+    arch: NotRequired[str],
+    epoch: NotRequired[int],
+    filePath: NotRequired[str],
+    fixedInVersion: NotRequired[str],
+    packageManager: NotRequired[PackageManagerType],  # (1)
+    release: NotRequired[str],
+    sourceLayerHash: NotRequired[str],
+```
 
-- `name`: `str`
-- `version`: `str`
-
-Optional fields:
-
-- `arch`: `str`
-- `epoch`: `int`
-- `filePath`: `str`
-- `fixedInVersion`: `str`
-- `packageManager`: [PackageManagerType](./literals.md#packagemanagertype)
-- `release`: `str`
-- `sourceLayerHash`: `str`
+1. See [:material-code-brackets: PackageManagerType](./literals.md#packagemanagertype) 

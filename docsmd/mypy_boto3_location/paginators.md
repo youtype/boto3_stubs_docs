@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-locationservice-module"></a>
-
-# Paginators for boto3 LocationService module
+# Paginators
 
 > [Index](../README.md) > [LocationService](./README.md) > Paginators
 
-Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module
-[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
+!!! note ""
 
-- [Paginators for boto3 LocationService module](#paginators-for-boto3-locationservice-module)
-  - [GetDevicePositionHistoryPaginator](#getdevicepositionhistorypaginator)
-  - [ListDevicePositionsPaginator](#listdevicepositionspaginator)
-  - [ListGeofenceCollectionsPaginator](#listgeofencecollectionspaginator)
-  - [ListGeofencesPaginator](#listgeofencespaginator)
-  - [ListMapsPaginator](#listmapspaginator)
-  - [ListPlaceIndexesPaginator](#listplaceindexespaginator)
-  - [ListRouteCalculatorsPaginator](#listroutecalculatorspaginator)
-  - [ListTrackerConsumersPaginator](#listtrackerconsumerspaginator)
-  - [ListTrackersPaginator](#listtrackerspaginator)
-
-<a id="getdevicepositionhistorypaginator"></a>
+    Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+    type annotations stubs module [mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 ## GetDevicePositionHistoryPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("get_device_position_history")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("get_device_position_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
@@ -38,31 +21,44 @@ def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPagin
     return Session().client("location").get_paginator("get_device_position_history")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.GetDevicePositionHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.GetDevicePositionHistory)
 
-Arguments for `GetDevicePositionHistoryPaginator.paginate` method:
+### paginate
 
-- `DeviceId`: `str` *(required)*
-- `TrackerName`: `str` *(required)*
-- `EndTimeExclusive`: `Union`\[`datetime`, `str`\]
-- `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDevicePositionHistoryPaginator.paginate` method.
 
-`GetDevicePositionHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DeviceId: str,
+    TrackerName: str,
+    EndTimeExclusive: Union[datetime, str] = ...,
+    StartTimeInclusive: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDevicePositionHistoryResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicepositionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef = {  # (1)
+    "DeviceId": ...,
+    "TrackerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef](./type_defs.md#getdevicepositionhistoryrequestgetdevicepositionhistorypaginatetypedef) 
 ## ListDevicePositionsPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_device_positions")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_device_positions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListDevicePositions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListDevicePositionsPaginator
@@ -71,28 +67,40 @@ def get_list_device_positions_paginator() -> ListDevicePositionsPaginator:
     return Session().client("location").get_paginator("list_device_positions")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListDevicePositions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListDevicePositions)
 
-Arguments for `ListDevicePositionsPaginator.paginate` method:
+### paginate
 
-- `TrackerName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDevicePositionsPaginator.paginate` method.
 
-`ListDevicePositionsPaginator.paginate` returns
-`_PageIterator`\[[ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TrackerName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDevicePositionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgeofencecollectionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDevicePositionsRequestListDevicePositionsPaginateTypeDef = {  # (1)
+    "TrackerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevicePositionsRequestListDevicePositionsPaginateTypeDef](./type_defs.md#listdevicepositionsrequestlistdevicepositionspaginatetypedef) 
 ## ListGeofenceCollectionsPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_geofence_collections")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_geofence_collections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListGeofenceCollectionsPaginator
@@ -101,27 +109,39 @@ def get_list_geofence_collections_paginator() -> ListGeofenceCollectionsPaginato
     return Session().client("location").get_paginator("list_geofence_collections")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListGeofenceCollections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofenceCollections)
 
-Arguments for `ListGeofenceCollectionsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGeofenceCollectionsPaginator.paginate` method.
 
-`ListGeofenceCollectionsPaginator.paginate` returns
-`_PageIterator`\[[ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGeofenceCollectionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgeofencespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef](./type_defs.md#listgeofencecollectionsrequestlistgeofencecollectionspaginatetypedef) 
 ## ListGeofencesPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_geofences")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_geofences")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListGeofencesPaginator
@@ -130,27 +150,40 @@ def get_list_geofences_paginator() -> ListGeofencesPaginator:
     return Session().client("location").get_paginator("list_geofences")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListGeofences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListGeofences)
 
-Arguments for `ListGeofencesPaginator.paginate` method:
+### paginate
 
-- `CollectionName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGeofencesPaginator.paginate` method.
 
-`ListGeofencesPaginator.paginate` returns
-`_PageIterator`\[[ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CollectionName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGeofencesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmapspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGeofencesRequestListGeofencesPaginateTypeDef = {  # (1)
+    "CollectionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGeofencesRequestListGeofencesPaginateTypeDef](./type_defs.md#listgeofencesrequestlistgeofencespaginatetypedef) 
 ## ListMapsPaginator
 
-Type annotations for `boto3.client("location").get_paginator("list_maps")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_maps")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListMapsPaginator
@@ -159,27 +192,39 @@ def get_list_maps_paginator() -> ListMapsPaginator:
     return Session().client("location").get_paginator("list_maps")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListMaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListMaps)
 
-Arguments for `ListMapsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMapsPaginator.paginate` method.
 
-`ListMapsPaginator.paginate` returns
-`_PageIterator`\[[ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMapsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listplaceindexespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMapsRequestListMapsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMapsRequestListMapsPaginateTypeDef](./type_defs.md#listmapsrequestlistmapspaginatetypedef) 
 ## ListPlaceIndexesPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_place_indexes")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_place_indexes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListPlaceIndexesPaginator
@@ -188,27 +233,39 @@ def get_list_place_indexes_paginator() -> ListPlaceIndexesPaginator:
     return Session().client("location").get_paginator("list_place_indexes")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListPlaceIndexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListPlaceIndexes)
 
-Arguments for `ListPlaceIndexesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPlaceIndexesPaginator.paginate` method.
 
-`ListPlaceIndexesPaginator.paginate` returns
-`_PageIterator`\[[ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPlaceIndexesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listroutecalculatorspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef](./type_defs.md#listplaceindexesrequestlistplaceindexespaginatetypedef) 
 ## ListRouteCalculatorsPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_route_calculators")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_route_calculators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListRouteCalculators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListRouteCalculatorsPaginator
@@ -217,27 +274,39 @@ def get_list_route_calculators_paginator() -> ListRouteCalculatorsPaginator:
     return Session().client("location").get_paginator("list_route_calculators")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListRouteCalculators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListRouteCalculators)
 
-Arguments for `ListRouteCalculatorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRouteCalculatorsPaginator.paginate` method.
 
-`ListRouteCalculatorsPaginator.paginate` returns
-`_PageIterator`\[[ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRouteCalculatorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtrackerconsumerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef](./type_defs.md#listroutecalculatorsrequestlistroutecalculatorspaginatetypedef) 
 ## ListTrackerConsumersPaginator
 
-Type annotations for
-`boto3.client("location").get_paginator("list_tracker_consumers")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_tracker_consumers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListTrackerConsumersPaginator
@@ -246,27 +315,40 @@ def get_list_tracker_consumers_paginator() -> ListTrackerConsumersPaginator:
     return Session().client("location").get_paginator("list_tracker_consumers")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListTrackerConsumers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackerConsumers)
 
-Arguments for `ListTrackerConsumersPaginator.paginate` method:
+### paginate
 
-- `TrackerName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTrackerConsumersPaginator.paginate` method.
 
-`ListTrackerConsumersPaginator.paginate` returns
-`_PageIterator`\[[ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TrackerName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTrackerConsumersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtrackerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef = {  # (1)
+    "TrackerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef](./type_defs.md#listtrackerconsumersrequestlisttrackerconsumerspaginatetypedef) 
 ## ListTrackersPaginator
 
-Type annotations for `boto3.client("location").get_paginator("list_trackers")`.
+Type annotations and code completion for `#!python boto3.client("location").get_paginator("list_trackers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_location.paginator import ListTrackersPaginator
@@ -275,13 +357,30 @@ def get_list_trackers_paginator() -> ListTrackersPaginator:
     return Session().client("location").get_paginator("list_trackers")
 ```
 
-Boto3 documentation:
-[LocationService.Paginator.ListTrackers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Paginator.ListTrackers)
 
-Arguments for `ListTrackersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTrackersPaginator.paginate` method.
 
-`ListTrackersPaginator.paginate` returns
-`_PageIterator`\[[ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTrackersResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTrackersRequestListTrackersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTrackersRequestListTrackersPaginateTypeDef](./type_defs.md#listtrackersrequestlisttrackerspaginatetypedef) 

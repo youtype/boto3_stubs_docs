@@ -1,44 +1,18 @@
-<a id="healthlakeclient-for-boto3-healthlake-module"></a>
-
-# HealthLakeClient for boto3 HealthLake module
+# HealthLakeClient
 
 > [Index](../README.md) > [HealthLake](./README.md) > HealthLakeClient
 
-Auto-generated documentation for
-[HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
-type annotations stubs module
-[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+!!! note ""
 
-- [HealthLakeClient for boto3 HealthLake module](#healthlakeclient-for-boto3-healthlake-module)
-  - [HealthLakeClient](#healthlakeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_fhir_datastore](#create_fhir_datastore)
-    - [delete_fhir_datastore](#delete_fhir_datastore)
-    - [describe_fhir_datastore](#describe_fhir_datastore)
-    - [describe_fhir_export_job](#describe_fhir_export_job)
-    - [describe_fhir_import_job](#describe_fhir_import_job)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_fhir_datastores](#list_fhir_datastores)
-    - [list_fhir_export_jobs](#list_fhir_export_jobs)
-    - [list_fhir_import_jobs](#list_fhir_import_jobs)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_fhir_export_job](#start_fhir_export_job)
-    - [start_fhir_import_job](#start_fhir_import_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-
-<a id="healthlakeclient"></a>
+    Auto-generated documentation for [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
+    type annotations stubs module [mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 ## HealthLakeClient
 
-Type annotations for `boto3.client("healthlake")`
+Type annotations and code completion for `#!python boto3.client("healthlake")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_healthlake.client import HealthLakeClient
 
@@ -46,404 +20,509 @@ def get_healthlake_client() -> HealthLakeClient:
     return Session().client("healthlake")
 ```
 
-Boto3 documentation:
-[HealthLake.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("healthlake").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("healthlake")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_healthlake.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-HealthLakeClient exceptions.
-
-Type annotations for `boto3.client("healthlake").exceptions` method.
-
-Boto3 documentation:
-[HealthLake.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("healthlake").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate)
 
-Boto3 documentation:
-[HealthLake.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_fhir\_datastore"></a>
-
-### create_fhir_datastore
+### create\_fhir\_datastore
 
 Creates a Data Store that can ingest and export FHIR formatted data.
 
-Type annotations for `boto3.client("healthlake").create_fhir_datastore` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").create_fhir_datastore` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
 
-Boto3 documentation:
-[HealthLake.Client.create_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.create_fhir_datastore)
+```python title="Method definition"
+def create_fhir_datastore(
+    self,
+    *,
+    DatastoreTypeVersion: FHIRVersionType,  # (1)
+    DatastoreName: str = ...,
+    SseConfiguration: SseConfigurationTypeDef = ...,  # (2)
+    PreloadDataConfig: PreloadDataConfigTypeDef = ...,  # (3)
+    ClientToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateFHIRDatastoreResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateFHIRDatastoreRequestRequestTypeDef](./type_defs.md#createfhirdatastorerequestrequesttypedef).
+1. See [:material-code-brackets: FHIRVersionType](./literals.md#fhirversiontype) 
+2. See [:material-code-braces: SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef) 
+3. See [:material-code-braces: PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreTypeVersion`: `Literal['R4']` (see
-  [FHIRVersionType](./literals.md#fhirversiontype)) *(required)*
-- `DatastoreName`: `str`
-- `SseConfiguration`:
-  [SseConfigurationTypeDef](./type_defs.md#sseconfigurationtypedef)
-- `PreloadDataConfig`:
-  [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFHIRDatastoreRequestRequestTypeDef = {  # (1)
+    "DatastoreTypeVersion": ...,
+}
 
-Returns
-[CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
+parent.create_fhir_datastore(**kwargs)
+```
 
-<a id="delete\_fhir\_datastore"></a>
+1. See [:material-code-braces: CreateFHIRDatastoreRequestRequestTypeDef](./type_defs.md#createfhirdatastorerequestrequesttypedef) 
 
-### delete_fhir_datastore
+### delete\_fhir\_datastore
 
 Deletes a Data Store.
 
-Type annotations for `boto3.client("healthlake").delete_fhir_datastore` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").delete_fhir_datastore` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
 
-Boto3 documentation:
-[HealthLake.Client.delete_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.delete_fhir_datastore)
+```python title="Method definition"
+def delete_fhir_datastore(
+    self,
+    *,
+    DatastoreId: str = ...,
+) -> DeleteFHIRDatastoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFHIRDatastoreRequestRequestTypeDef](./type_defs.md#deletefhirdatastorerequestrequesttypedef).
+1. See [:material-code-braces: DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFHIRDatastoreRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+}
 
-Returns
-[DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef).
+parent.delete_fhir_datastore(**kwargs)
+```
 
-<a id="describe\_fhir\_datastore"></a>
+1. See [:material-code-braces: DeleteFHIRDatastoreRequestRequestTypeDef](./type_defs.md#deletefhirdatastorerequestrequesttypedef) 
 
-### describe_fhir_datastore
+### describe\_fhir\_datastore
 
 Gets the properties associated with the FHIR Data Store, including the Data
 Store ID, Data Store ARN, Data Store name, Data Store status, created at, Data
 Store type version, and Data Store endpoint.
 
-Type annotations for `boto3.client("healthlake").describe_fhir_datastore`
-method.
+Type annotations and code completion for `#!python boto3.client("healthlake").describe_fhir_datastore` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
 
-Boto3 documentation:
-[HealthLake.Client.describe_fhir_datastore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_datastore)
+```python title="Method definition"
+def describe_fhir_datastore(
+    self,
+    *,
+    DatastoreId: str = ...,
+) -> DescribeFHIRDatastoreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFHIRDatastoreRequestRequestTypeDef](./type_defs.md#describefhirdatastorerequestrequesttypedef).
+1. See [:material-code-braces: DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeFHIRDatastoreRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+}
 
-Returns
-[DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef).
+parent.describe_fhir_datastore(**kwargs)
+```
 
-<a id="describe\_fhir\_export\_job"></a>
+1. See [:material-code-braces: DescribeFHIRDatastoreRequestRequestTypeDef](./type_defs.md#describefhirdatastorerequestrequesttypedef) 
 
-### describe_fhir_export_job
+### describe\_fhir\_export\_job
 
 Displays the properties of a FHIR export job, including the ID, ARN, name, and
 the status of the job.
 
-Type annotations for `boto3.client("healthlake").describe_fhir_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("healthlake").describe_fhir_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
 
-Boto3 documentation:
-[HealthLake.Client.describe_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_export_job)
+```python title="Method definition"
+def describe_fhir_export_job(
+    self,
+    *,
+    DatastoreId: str,
+    JobId: str,
+) -> DescribeFHIRExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFHIRExportJobRequestRequestTypeDef](./type_defs.md#describefhirexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFHIRExportJobRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+    "JobId": ...,
+}
 
-Returns
-[DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef).
+parent.describe_fhir_export_job(**kwargs)
+```
 
-<a id="describe\_fhir\_import\_job"></a>
+1. See [:material-code-braces: DescribeFHIRExportJobRequestRequestTypeDef](./type_defs.md#describefhirexportjobrequestrequesttypedef) 
 
-### describe_fhir_import_job
+### describe\_fhir\_import\_job
 
 Displays the properties of a FHIR import job, including the ID, ARN, name, and
 the status of the job.
 
-Type annotations for `boto3.client("healthlake").describe_fhir_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("healthlake").describe_fhir_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
 
-Boto3 documentation:
-[HealthLake.Client.describe_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.describe_fhir_import_job)
+```python title="Method definition"
+def describe_fhir_import_job(
+    self,
+    *,
+    DatastoreId: str,
+    JobId: str,
+) -> DescribeFHIRImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFHIRImportJobRequestRequestTypeDef](./type_defs.md#describefhirimportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFHIRImportJobRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+    "JobId": ...,
+}
 
-Returns
-[DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef).
+parent.describe_fhir_import_job(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeFHIRImportJobRequestRequestTypeDef](./type_defs.md#describefhirimportjobrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("healthlake").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("healthlake").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url)
 
-Boto3 documentation:
-[HealthLake.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_fhir\_datastores"></a>
-
-### list_fhir_datastores
+### list\_fhir\_datastores
 
 Lists all FHIR Data Stores that are in the user’s account, regardless of Data
 Store status.
 
-Type annotations for `boto3.client("healthlake").list_fhir_datastores` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").list_fhir_datastores` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
 
-Boto3 documentation:
-[HealthLake.Client.list_fhir_datastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_datastores)
+```python title="Method definition"
+def list_fhir_datastores(
+    self,
+    *,
+    Filter: DatastoreFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFHIRDatastoresResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFHIRDatastoresRequestRequestTypeDef](./type_defs.md#listfhirdatastoresrequestrequesttypedef).
+1. See [:material-code-braces: DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef) 
+2. See [:material-code-braces: ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`: [DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFHIRDatastoresRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
+parent.list_fhir_datastores(**kwargs)
+```
 
-<a id="list\_fhir\_export\_jobs"></a>
+1. See [:material-code-braces: ListFHIRDatastoresRequestRequestTypeDef](./type_defs.md#listfhirdatastoresrequestrequesttypedef) 
 
-### list_fhir_export_jobs
+### list\_fhir\_export\_jobs
 
 Lists all FHIR export jobs associated with an account and their statuses.
 
-Type annotations for `boto3.client("healthlake").list_fhir_export_jobs` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").list_fhir_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_export_jobs)
 
-Boto3 documentation:
-[HealthLake.Client.list_fhir_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_export_jobs)
+```python title="Method definition"
+def list_fhir_export_jobs(
+    self,
+    *,
+    DatastoreId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    JobName: str = ...,
+    JobStatus: JobStatusType = ...,  # (1)
+    SubmittedBefore: Union[datetime, str] = ...,
+    SubmittedAfter: Union[datetime, str] = ...,
+) -> ListFHIRExportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFHIRExportJobsRequestRequestTypeDef](./type_defs.md#listfhirexportjobsrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `JobName`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
-- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListFHIRExportJobsRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+}
 
-Returns
-[ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef).
+parent.list_fhir_export_jobs(**kwargs)
+```
 
-<a id="list\_fhir\_import\_jobs"></a>
+1. See [:material-code-braces: ListFHIRExportJobsRequestRequestTypeDef](./type_defs.md#listfhirexportjobsrequestrequesttypedef) 
 
-### list_fhir_import_jobs
+### list\_fhir\_import\_jobs
 
 Lists all FHIR import jobs associated with an account and their statuses.
 
-Type annotations for `boto3.client("healthlake").list_fhir_import_jobs` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").list_fhir_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_import_jobs)
 
-Boto3 documentation:
-[HealthLake.Client.list_fhir_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_fhir_import_jobs)
+```python title="Method definition"
+def list_fhir_import_jobs(
+    self,
+    *,
+    DatastoreId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    JobName: str = ...,
+    JobStatus: JobStatusType = ...,  # (1)
+    SubmittedBefore: Union[datetime, str] = ...,
+    SubmittedAfter: Union[datetime, str] = ...,
+) -> ListFHIRImportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFHIRImportJobsRequestRequestTypeDef](./type_defs.md#listfhirimportjobsrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatastoreId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `JobName`: `str`
-- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `SubmittedBefore`: `Union`\[`datetime`, `str`\]
-- `SubmittedAfter`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ListFHIRImportJobsRequestRequestTypeDef = {  # (1)
+    "DatastoreId": ...,
+}
 
-Returns
-[ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef).
+parent.list_fhir_import_jobs(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListFHIRImportJobsRequestRequestTypeDef](./type_defs.md#listfhirimportjobsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of all existing tags associated with a Data Store.
 
-Type annotations for `boto3.client("healthlake").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("healthlake").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[HealthLake.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_fhir\_export\_job"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_fhir_export_job
+### start\_fhir\_export\_job
 
 Begins a FHIR export job.
 
-Type annotations for `boto3.client("healthlake").start_fhir_export_job` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").start_fhir_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
 
-Boto3 documentation:
-[HealthLake.Client.start_fhir_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_export_job)
+```python title="Method definition"
+def start_fhir_export_job(
+    self,
+    *,
+    OutputDataConfig: OutputDataConfigTypeDef,  # (1)
+    DatastoreId: str,
+    DataAccessRoleArn: str,
+    ClientToken: str,
+    JobName: str = ...,
+) -> StartFHIRExportJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartFHIRExportJobRequestRequestTypeDef](./type_defs.md#startfhirexportjobrequestrequesttypedef).
+1. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+2. See [:material-code-braces: StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DatastoreId`: `str` *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `JobName`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartFHIRExportJobRequestRequestTypeDef = {  # (1)
+    "OutputDataConfig": ...,
+    "DatastoreId": ...,
+    "DataAccessRoleArn": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef).
+parent.start_fhir_export_job(**kwargs)
+```
 
-<a id="start\_fhir\_import\_job"></a>
+1. See [:material-code-braces: StartFHIRExportJobRequestRequestTypeDef](./type_defs.md#startfhirexportjobrequestrequesttypedef) 
 
-### start_fhir_import_job
+### start\_fhir\_import\_job
 
 Begins a FHIR Import job.
 
-Type annotations for `boto3.client("healthlake").start_fhir_import_job` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").start_fhir_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
 
-Boto3 documentation:
-[HealthLake.Client.start_fhir_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.start_fhir_import_job)
+```python title="Method definition"
+def start_fhir_import_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    JobOutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DatastoreId: str,
+    DataAccessRoleArn: str,
+    ClientToken: str,
+    JobName: str = ...,
+) -> StartFHIRImportJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartFHIRImportJobRequestRequestTypeDef](./type_defs.md#startfhirimportjobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-braces: StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `JobOutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DatastoreId`: `str` *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `JobName`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartFHIRImportJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "JobOutputDataConfig": ...,
+    "DatastoreId": ...,
+    "DataAccessRoleArn": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).
+parent.start_fhir_import_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartFHIRImportJobRequestRequestTypeDef](./type_defs.md#startfhirimportjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds a user specifed key and value tag to a Data Store.
 
-Type annotations for `boto3.client("healthlake").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.tag_resource)
 
-Boto3 documentation:
-[HealthLake.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a Data Store.
 
-Type annotations for `boto3.client("healthlake").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("healthlake").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.untag_resource)
 
-Boto3 documentation:
-[HealthLake.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
+
+

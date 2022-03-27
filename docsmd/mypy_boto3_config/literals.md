@@ -1,1351 +1,1445 @@
-<a id="literals-for-boto3-configservice-module"></a>
-
-# Literals for boto3 ConfigService module
+# Literals
 
 > [Index](../README.md) > [ConfigService](./README.md) > Literals
 
-Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module
-[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
+!!! note ""
 
-- [Literals for boto3 ConfigService module](#literals-for-boto3-configservice-module)
-  - [AggregateConformancePackComplianceSummaryGroupKeyType](#aggregateconformancepackcompliancesummarygroupkeytype)
-  - [AggregatedSourceStatusTypeType](#aggregatedsourcestatustypetype)
-  - [AggregatedSourceTypeType](#aggregatedsourcetypetype)
-  - [ChronologicalOrderType](#chronologicalordertype)
-  - [ComplianceTypeType](#compliancetypetype)
-  - [ConfigRuleComplianceSummaryGroupKeyType](#configrulecompliancesummarygroupkeytype)
-  - [ConfigRuleStateType](#configrulestatetype)
-  - [ConfigurationItemStatusType](#configurationitemstatustype)
-  - [ConformancePackComplianceTypeType](#conformancepackcompliancetypetype)
-  - [ConformancePackStateType](#conformancepackstatetype)
-  - [DeliveryStatusType](#deliverystatustype)
-  - [DescribeAggregateComplianceByConfigRulesPaginatorName](#describeaggregatecompliancebyconfigrulespaginatorname)
-  - [DescribeAggregateComplianceByConformancePacksPaginatorName](#describeaggregatecompliancebyconformancepackspaginatorname)
-  - [DescribeAggregationAuthorizationsPaginatorName](#describeaggregationauthorizationspaginatorname)
-  - [DescribeComplianceByConfigRulePaginatorName](#describecompliancebyconfigrulepaginatorname)
-  - [DescribeComplianceByResourcePaginatorName](#describecompliancebyresourcepaginatorname)
-  - [DescribeConfigRuleEvaluationStatusPaginatorName](#describeconfigruleevaluationstatuspaginatorname)
-  - [DescribeConfigRulesPaginatorName](#describeconfigrulespaginatorname)
-  - [DescribeConfigurationAggregatorSourcesStatusPaginatorName](#describeconfigurationaggregatorsourcesstatuspaginatorname)
-  - [DescribeConfigurationAggregatorsPaginatorName](#describeconfigurationaggregatorspaginatorname)
-  - [DescribeConformancePackStatusPaginatorName](#describeconformancepackstatuspaginatorname)
-  - [DescribeConformancePacksPaginatorName](#describeconformancepackspaginatorname)
-  - [DescribeOrganizationConfigRuleStatusesPaginatorName](#describeorganizationconfigrulestatusespaginatorname)
-  - [DescribeOrganizationConfigRulesPaginatorName](#describeorganizationconfigrulespaginatorname)
-  - [DescribeOrganizationConformancePackStatusesPaginatorName](#describeorganizationconformancepackstatusespaginatorname)
-  - [DescribeOrganizationConformancePacksPaginatorName](#describeorganizationconformancepackspaginatorname)
-  - [DescribePendingAggregationRequestsPaginatorName](#describependingaggregationrequestspaginatorname)
-  - [DescribeRemediationExecutionStatusPaginatorName](#describeremediationexecutionstatuspaginatorname)
-  - [DescribeRetentionConfigurationsPaginatorName](#describeretentionconfigurationspaginatorname)
-  - [EventSourceType](#eventsourcetype)
-  - [GetAggregateComplianceDetailsByConfigRulePaginatorName](#getaggregatecompliancedetailsbyconfigrulepaginatorname)
-  - [GetComplianceDetailsByConfigRulePaginatorName](#getcompliancedetailsbyconfigrulepaginatorname)
-  - [GetComplianceDetailsByResourcePaginatorName](#getcompliancedetailsbyresourcepaginatorname)
-  - [GetConformancePackComplianceSummaryPaginatorName](#getconformancepackcompliancesummarypaginatorname)
-  - [GetOrganizationConfigRuleDetailedStatusPaginatorName](#getorganizationconfigruledetailedstatuspaginatorname)
-  - [GetOrganizationConformancePackDetailedStatusPaginatorName](#getorganizationconformancepackdetailedstatuspaginatorname)
-  - [GetResourceConfigHistoryPaginatorName](#getresourceconfighistorypaginatorname)
-  - [ListAggregateDiscoveredResourcesPaginatorName](#listaggregatediscoveredresourcespaginatorname)
-  - [ListDiscoveredResourcesPaginatorName](#listdiscoveredresourcespaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [MaximumExecutionFrequencyType](#maximumexecutionfrequencytype)
-  - [MemberAccountRuleStatusType](#memberaccountrulestatustype)
-  - [MessageTypeType](#messagetypetype)
-  - [OrganizationConfigRuleTriggerTypeNoSNType](#organizationconfigruletriggertypenosntype)
-  - [OrganizationConfigRuleTriggerTypeType](#organizationconfigruletriggertypetype)
-  - [OrganizationResourceDetailedStatusType](#organizationresourcedetailedstatustype)
-  - [OrganizationResourceStatusType](#organizationresourcestatustype)
-  - [OrganizationRuleStatusType](#organizationrulestatustype)
-  - [OwnerType](#ownertype)
-  - [RecorderStatusType](#recorderstatustype)
-  - [RemediationExecutionStateType](#remediationexecutionstatetype)
-  - [RemediationExecutionStepStateType](#remediationexecutionstepstatetype)
-  - [RemediationTargetTypeType](#remediationtargettypetype)
-  - [ResourceCountGroupKeyType](#resourcecountgroupkeytype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ResourceValueTypeType](#resourcevaluetypetype)
-  - [SelectAggregateResourceConfigPaginatorName](#selectaggregateresourceconfigpaginatorname)
-  - [SelectResourceConfigPaginatorName](#selectresourceconfigpaginatorname)
-  - [ConfigServiceServiceName](#configserviceservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="aggregateconformancepackcompliancesummarygroupkeytype"></a>
+    Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+    type annotations stubs module [mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 ## AggregateConformancePackComplianceSummaryGroupKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import AggregateConformancePackComplianceSummaryGroupKeyType
+
+def get_value() -> AggregateConformancePackComplianceSummaryGroupKeyType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `AWS_REGION`
-
-<a id="aggregatedsourcestatustypetype"></a>
-
+```python title="Definition"
+AggregateConformancePackComplianceSummaryGroupKeyType = Literal[
+    "ACCOUNT_ID",
+    "AWS_REGION",
+]
+```
 ## AggregatedSourceStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import AggregatedSourceStatusTypeType
+
+def get_value() -> AggregatedSourceStatusTypeType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `OUTDATED`
-- `SUCCEEDED`
-
-<a id="aggregatedsourcetypetype"></a>
-
+```python title="Definition"
+AggregatedSourceStatusTypeType = Literal[
+    "FAILED",
+    "OUTDATED",
+    "SUCCEEDED",
+]
+```
 ## AggregatedSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import AggregatedSourceTypeType
+
+def get_value() -> AggregatedSourceTypeType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `ORGANIZATION`
-
-<a id="chronologicalordertype"></a>
-
+```python title="Definition"
+AggregatedSourceTypeType = Literal[
+    "ACCOUNT",
+    "ORGANIZATION",
+]
+```
 ## ChronologicalOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ChronologicalOrderType
+
+def get_value() -> ChronologicalOrderType:
+    return "Forward"
 ```
 
-Values:
-
-- `Forward`
-- `Reverse`
-
-<a id="compliancetypetype"></a>
-
+```python title="Definition"
+ChronologicalOrderType = Literal[
+    "Forward",
+    "Reverse",
+]
+```
 ## ComplianceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ComplianceTypeType
+
+def get_value() -> ComplianceTypeType:
+    return "COMPLIANT"
 ```
 
-Values:
-
-- `COMPLIANT`
-- `INSUFFICIENT_DATA`
-- `NON_COMPLIANT`
-- `NOT_APPLICABLE`
-
-<a id="configrulecompliancesummarygroupkeytype"></a>
-
+```python title="Definition"
+ComplianceTypeType = Literal[
+    "COMPLIANT",
+    "INSUFFICIENT_DATA",
+    "NON_COMPLIANT",
+    "NOT_APPLICABLE",
+]
+```
 ## ConfigRuleComplianceSummaryGroupKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConfigRuleComplianceSummaryGroupKeyType
+
+def get_value() -> ConfigRuleComplianceSummaryGroupKeyType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `AWS_REGION`
-
-<a id="configrulestatetype"></a>
-
+```python title="Definition"
+ConfigRuleComplianceSummaryGroupKeyType = Literal[
+    "ACCOUNT_ID",
+    "AWS_REGION",
+]
+```
 ## ConfigRuleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConfigRuleStateType
+
+def get_value() -> ConfigRuleStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETING`
-- `DELETING_RESULTS`
-- `EVALUATING`
-
-<a id="configurationitemstatustype"></a>
-
+```python title="Definition"
+ConfigRuleStateType = Literal[
+    "ACTIVE",
+    "DELETING",
+    "DELETING_RESULTS",
+    "EVALUATING",
+]
+```
 ## ConfigurationItemStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConfigurationItemStatusType
+
+def get_value() -> ConfigurationItemStatusType:
+    return "OK"
 ```
 
-Values:
-
-- `OK`
-- `ResourceDeleted`
-- `ResourceDeletedNotRecorded`
-- `ResourceDiscovered`
-- `ResourceNotRecorded`
-
-<a id="conformancepackcompliancetypetype"></a>
-
+```python title="Definition"
+ConfigurationItemStatusType = Literal[
+    "OK",
+    "ResourceDeleted",
+    "ResourceDeletedNotRecorded",
+    "ResourceDiscovered",
+    "ResourceNotRecorded",
+]
+```
 ## ConformancePackComplianceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConformancePackComplianceTypeType
+
+def get_value() -> ConformancePackComplianceTypeType:
+    return "COMPLIANT"
 ```
 
-Values:
-
-- `COMPLIANT`
-- `INSUFFICIENT_DATA`
-- `NON_COMPLIANT`
-
-<a id="conformancepackstatetype"></a>
-
+```python title="Definition"
+ConformancePackComplianceTypeType = Literal[
+    "COMPLIANT",
+    "INSUFFICIENT_DATA",
+    "NON_COMPLIANT",
+]
+```
 ## ConformancePackStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConformancePackStateType
+
+def get_value() -> ConformancePackStateType:
+    return "CREATE_COMPLETE"
 ```
 
-Values:
-
-- `CREATE_COMPLETE`
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-
-<a id="deliverystatustype"></a>
-
+```python title="Definition"
+ConformancePackStateType = Literal[
+    "CREATE_COMPLETE",
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+]
+```
 ## DeliveryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DeliveryStatusType
+
+def get_value() -> DeliveryStatusType:
+    return "Failure"
 ```
 
-Values:
-
-- `Failure`
-- `Not_Applicable`
-- `Success`
-
-<a id="describeaggregatecompliancebyconfigrulespaginatorname"></a>
-
+```python title="Definition"
+DeliveryStatusType = Literal[
+    "Failure",
+    "Not_Applicable",
+    "Success",
+]
+```
 ## DescribeAggregateComplianceByConfigRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeAggregateComplianceByConfigRulesPaginatorName
+
+def get_value() -> DescribeAggregateComplianceByConfigRulesPaginatorName:
+    return "describe_aggregate_compliance_by_config_rules"
 ```
 
-Values:
-
-- `describe_aggregate_compliance_by_config_rules`
-
-<a id="describeaggregatecompliancebyconformancepackspaginatorname"></a>
-
+```python title="Definition"
+DescribeAggregateComplianceByConfigRulesPaginatorName = Literal[
+    "describe_aggregate_compliance_by_config_rules",
+]
+```
 ## DescribeAggregateComplianceByConformancePacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeAggregateComplianceByConformancePacksPaginatorName
+
+def get_value() -> DescribeAggregateComplianceByConformancePacksPaginatorName:
+    return "describe_aggregate_compliance_by_conformance_packs"
 ```
 
-Values:
-
-- `describe_aggregate_compliance_by_conformance_packs`
-
-<a id="describeaggregationauthorizationspaginatorname"></a>
-
+```python title="Definition"
+DescribeAggregateComplianceByConformancePacksPaginatorName = Literal[
+    "describe_aggregate_compliance_by_conformance_packs",
+]
+```
 ## DescribeAggregationAuthorizationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeAggregationAuthorizationsPaginatorName
+
+def get_value() -> DescribeAggregationAuthorizationsPaginatorName:
+    return "describe_aggregation_authorizations"
 ```
 
-Values:
-
-- `describe_aggregation_authorizations`
-
-<a id="describecompliancebyconfigrulepaginatorname"></a>
-
+```python title="Definition"
+DescribeAggregationAuthorizationsPaginatorName = Literal[
+    "describe_aggregation_authorizations",
+]
+```
 ## DescribeComplianceByConfigRulePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeComplianceByConfigRulePaginatorName
+
+def get_value() -> DescribeComplianceByConfigRulePaginatorName:
+    return "describe_compliance_by_config_rule"
 ```
 
-Values:
-
-- `describe_compliance_by_config_rule`
-
-<a id="describecompliancebyresourcepaginatorname"></a>
-
+```python title="Definition"
+DescribeComplianceByConfigRulePaginatorName = Literal[
+    "describe_compliance_by_config_rule",
+]
+```
 ## DescribeComplianceByResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeComplianceByResourcePaginatorName
+
+def get_value() -> DescribeComplianceByResourcePaginatorName:
+    return "describe_compliance_by_resource"
 ```
 
-Values:
-
-- `describe_compliance_by_resource`
-
-<a id="describeconfigruleevaluationstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeComplianceByResourcePaginatorName = Literal[
+    "describe_compliance_by_resource",
+]
+```
 ## DescribeConfigRuleEvaluationStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConfigRuleEvaluationStatusPaginatorName
+
+def get_value() -> DescribeConfigRuleEvaluationStatusPaginatorName:
+    return "describe_config_rule_evaluation_status"
 ```
 
-Values:
-
-- `describe_config_rule_evaluation_status`
-
-<a id="describeconfigrulespaginatorname"></a>
-
+```python title="Definition"
+DescribeConfigRuleEvaluationStatusPaginatorName = Literal[
+    "describe_config_rule_evaluation_status",
+]
+```
 ## DescribeConfigRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConfigRulesPaginatorName
+
+def get_value() -> DescribeConfigRulesPaginatorName:
+    return "describe_config_rules"
 ```
 
-Values:
-
-- `describe_config_rules`
-
-<a id="describeconfigurationaggregatorsourcesstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeConfigRulesPaginatorName = Literal[
+    "describe_config_rules",
+]
+```
 ## DescribeConfigurationAggregatorSourcesStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConfigurationAggregatorSourcesStatusPaginatorName
+
+def get_value() -> DescribeConfigurationAggregatorSourcesStatusPaginatorName:
+    return "describe_configuration_aggregator_sources_status"
 ```
 
-Values:
-
-- `describe_configuration_aggregator_sources_status`
-
-<a id="describeconfigurationaggregatorspaginatorname"></a>
-
+```python title="Definition"
+DescribeConfigurationAggregatorSourcesStatusPaginatorName = Literal[
+    "describe_configuration_aggregator_sources_status",
+]
+```
 ## DescribeConfigurationAggregatorsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConfigurationAggregatorsPaginatorName
+
+def get_value() -> DescribeConfigurationAggregatorsPaginatorName:
+    return "describe_configuration_aggregators"
 ```
 
-Values:
-
-- `describe_configuration_aggregators`
-
-<a id="describeconformancepackstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeConfigurationAggregatorsPaginatorName = Literal[
+    "describe_configuration_aggregators",
+]
+```
 ## DescribeConformancePackStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConformancePackStatusPaginatorName
+
+def get_value() -> DescribeConformancePackStatusPaginatorName:
+    return "describe_conformance_pack_status"
 ```
 
-Values:
-
-- `describe_conformance_pack_status`
-
-<a id="describeconformancepackspaginatorname"></a>
-
+```python title="Definition"
+DescribeConformancePackStatusPaginatorName = Literal[
+    "describe_conformance_pack_status",
+]
+```
 ## DescribeConformancePacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeConformancePacksPaginatorName
+
+def get_value() -> DescribeConformancePacksPaginatorName:
+    return "describe_conformance_packs"
 ```
 
-Values:
-
-- `describe_conformance_packs`
-
-<a id="describeorganizationconfigrulestatusespaginatorname"></a>
-
+```python title="Definition"
+DescribeConformancePacksPaginatorName = Literal[
+    "describe_conformance_packs",
+]
+```
 ## DescribeOrganizationConfigRuleStatusesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeOrganizationConfigRuleStatusesPaginatorName
+
+def get_value() -> DescribeOrganizationConfigRuleStatusesPaginatorName:
+    return "describe_organization_config_rule_statuses"
 ```
 
-Values:
-
-- `describe_organization_config_rule_statuses`
-
-<a id="describeorganizationconfigrulespaginatorname"></a>
-
+```python title="Definition"
+DescribeOrganizationConfigRuleStatusesPaginatorName = Literal[
+    "describe_organization_config_rule_statuses",
+]
+```
 ## DescribeOrganizationConfigRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeOrganizationConfigRulesPaginatorName
+
+def get_value() -> DescribeOrganizationConfigRulesPaginatorName:
+    return "describe_organization_config_rules"
 ```
 
-Values:
-
-- `describe_organization_config_rules`
-
-<a id="describeorganizationconformancepackstatusespaginatorname"></a>
-
+```python title="Definition"
+DescribeOrganizationConfigRulesPaginatorName = Literal[
+    "describe_organization_config_rules",
+]
+```
 ## DescribeOrganizationConformancePackStatusesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeOrganizationConformancePackStatusesPaginatorName
+
+def get_value() -> DescribeOrganizationConformancePackStatusesPaginatorName:
+    return "describe_organization_conformance_pack_statuses"
 ```
 
-Values:
-
-- `describe_organization_conformance_pack_statuses`
-
-<a id="describeorganizationconformancepackspaginatorname"></a>
-
+```python title="Definition"
+DescribeOrganizationConformancePackStatusesPaginatorName = Literal[
+    "describe_organization_conformance_pack_statuses",
+]
+```
 ## DescribeOrganizationConformancePacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeOrganizationConformancePacksPaginatorName
+
+def get_value() -> DescribeOrganizationConformancePacksPaginatorName:
+    return "describe_organization_conformance_packs"
 ```
 
-Values:
-
-- `describe_organization_conformance_packs`
-
-<a id="describependingaggregationrequestspaginatorname"></a>
-
+```python title="Definition"
+DescribeOrganizationConformancePacksPaginatorName = Literal[
+    "describe_organization_conformance_packs",
+]
+```
 ## DescribePendingAggregationRequestsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribePendingAggregationRequestsPaginatorName
+
+def get_value() -> DescribePendingAggregationRequestsPaginatorName:
+    return "describe_pending_aggregation_requests"
 ```
 
-Values:
-
-- `describe_pending_aggregation_requests`
-
-<a id="describeremediationexecutionstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribePendingAggregationRequestsPaginatorName = Literal[
+    "describe_pending_aggregation_requests",
+]
+```
 ## DescribeRemediationExecutionStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeRemediationExecutionStatusPaginatorName
+
+def get_value() -> DescribeRemediationExecutionStatusPaginatorName:
+    return "describe_remediation_execution_status"
 ```
 
-Values:
-
-- `describe_remediation_execution_status`
-
-<a id="describeretentionconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeRemediationExecutionStatusPaginatorName = Literal[
+    "describe_remediation_execution_status",
+]
+```
 ## DescribeRetentionConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import DescribeRetentionConfigurationsPaginatorName
+
+def get_value() -> DescribeRetentionConfigurationsPaginatorName:
+    return "describe_retention_configurations"
 ```
 
-Values:
-
-- `describe_retention_configurations`
-
-<a id="eventsourcetype"></a>
-
+```python title="Definition"
+DescribeRetentionConfigurationsPaginatorName = Literal[
+    "describe_retention_configurations",
+]
+```
 ## EventSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import EventSourceType
+
+def get_value() -> EventSourceType:
+    return "aws.config"
 ```
 
-Values:
-
-- `aws.config`
-
-<a id="getaggregatecompliancedetailsbyconfigrulepaginatorname"></a>
-
+```python title="Definition"
+EventSourceType = Literal[
+    "aws.config",
+]
+```
 ## GetAggregateComplianceDetailsByConfigRulePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetAggregateComplianceDetailsByConfigRulePaginatorName
+
+def get_value() -> GetAggregateComplianceDetailsByConfigRulePaginatorName:
+    return "get_aggregate_compliance_details_by_config_rule"
 ```
 
-Values:
-
-- `get_aggregate_compliance_details_by_config_rule`
-
-<a id="getcompliancedetailsbyconfigrulepaginatorname"></a>
-
+```python title="Definition"
+GetAggregateComplianceDetailsByConfigRulePaginatorName = Literal[
+    "get_aggregate_compliance_details_by_config_rule",
+]
+```
 ## GetComplianceDetailsByConfigRulePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetComplianceDetailsByConfigRulePaginatorName
+
+def get_value() -> GetComplianceDetailsByConfigRulePaginatorName:
+    return "get_compliance_details_by_config_rule"
 ```
 
-Values:
-
-- `get_compliance_details_by_config_rule`
-
-<a id="getcompliancedetailsbyresourcepaginatorname"></a>
-
+```python title="Definition"
+GetComplianceDetailsByConfigRulePaginatorName = Literal[
+    "get_compliance_details_by_config_rule",
+]
+```
 ## GetComplianceDetailsByResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetComplianceDetailsByResourcePaginatorName
+
+def get_value() -> GetComplianceDetailsByResourcePaginatorName:
+    return "get_compliance_details_by_resource"
 ```
 
-Values:
-
-- `get_compliance_details_by_resource`
-
-<a id="getconformancepackcompliancesummarypaginatorname"></a>
-
+```python title="Definition"
+GetComplianceDetailsByResourcePaginatorName = Literal[
+    "get_compliance_details_by_resource",
+]
+```
 ## GetConformancePackComplianceSummaryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetConformancePackComplianceSummaryPaginatorName
+
+def get_value() -> GetConformancePackComplianceSummaryPaginatorName:
+    return "get_conformance_pack_compliance_summary"
 ```
 
-Values:
-
-- `get_conformance_pack_compliance_summary`
-
-<a id="getorganizationconfigruledetailedstatuspaginatorname"></a>
-
+```python title="Definition"
+GetConformancePackComplianceSummaryPaginatorName = Literal[
+    "get_conformance_pack_compliance_summary",
+]
+```
 ## GetOrganizationConfigRuleDetailedStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetOrganizationConfigRuleDetailedStatusPaginatorName
+
+def get_value() -> GetOrganizationConfigRuleDetailedStatusPaginatorName:
+    return "get_organization_config_rule_detailed_status"
 ```
 
-Values:
-
-- `get_organization_config_rule_detailed_status`
-
-<a id="getorganizationconformancepackdetailedstatuspaginatorname"></a>
-
+```python title="Definition"
+GetOrganizationConfigRuleDetailedStatusPaginatorName = Literal[
+    "get_organization_config_rule_detailed_status",
+]
+```
 ## GetOrganizationConformancePackDetailedStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetOrganizationConformancePackDetailedStatusPaginatorName
+
+def get_value() -> GetOrganizationConformancePackDetailedStatusPaginatorName:
+    return "get_organization_conformance_pack_detailed_status"
 ```
 
-Values:
-
-- `get_organization_conformance_pack_detailed_status`
-
-<a id="getresourceconfighistorypaginatorname"></a>
-
+```python title="Definition"
+GetOrganizationConformancePackDetailedStatusPaginatorName = Literal[
+    "get_organization_conformance_pack_detailed_status",
+]
+```
 ## GetResourceConfigHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import GetResourceConfigHistoryPaginatorName
+
+def get_value() -> GetResourceConfigHistoryPaginatorName:
+    return "get_resource_config_history"
 ```
 
-Values:
-
-- `get_resource_config_history`
-
-<a id="listaggregatediscoveredresourcespaginatorname"></a>
-
+```python title="Definition"
+GetResourceConfigHistoryPaginatorName = Literal[
+    "get_resource_config_history",
+]
+```
 ## ListAggregateDiscoveredResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ListAggregateDiscoveredResourcesPaginatorName
+
+def get_value() -> ListAggregateDiscoveredResourcesPaginatorName:
+    return "list_aggregate_discovered_resources"
 ```
 
-Values:
-
-- `list_aggregate_discovered_resources`
-
-<a id="listdiscoveredresourcespaginatorname"></a>
-
+```python title="Definition"
+ListAggregateDiscoveredResourcesPaginatorName = Literal[
+    "list_aggregate_discovered_resources",
+]
+```
 ## ListDiscoveredResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ListDiscoveredResourcesPaginatorName
+
+def get_value() -> ListDiscoveredResourcesPaginatorName:
+    return "list_discovered_resources"
 ```
 
-Values:
-
-- `list_discovered_resources`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListDiscoveredResourcesPaginatorName = Literal[
+    "list_discovered_resources",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="maximumexecutionfrequencytype"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## MaximumExecutionFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import MaximumExecutionFrequencyType
+
+def get_value() -> MaximumExecutionFrequencyType:
+    return "One_Hour"
 ```
 
-Values:
-
-- `One_Hour`
-- `Six_Hours`
-- `Three_Hours`
-- `Twelve_Hours`
-- `TwentyFour_Hours`
-
-<a id="memberaccountrulestatustype"></a>
-
+```python title="Definition"
+MaximumExecutionFrequencyType = Literal[
+    "One_Hour",
+    "Six_Hours",
+    "Three_Hours",
+    "Twelve_Hours",
+    "TwentyFour_Hours",
+]
+```
 ## MemberAccountRuleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import MemberAccountRuleStatusType
+
+def get_value() -> MemberAccountRuleStatusType:
+    return "CREATE_FAILED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `CREATE_SUCCESSFUL`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_SUCCESSFUL`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_SUCCESSFUL`
-
-<a id="messagetypetype"></a>
-
+```python title="Definition"
+MemberAccountRuleStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_SUCCESSFUL",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_SUCCESSFUL",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_SUCCESSFUL",
+]
+```
 ## MessageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import MessageTypeType
+
+def get_value() -> MessageTypeType:
+    return "ConfigurationItemChangeNotification"
 ```
 
-Values:
-
-- `ConfigurationItemChangeNotification`
-- `ConfigurationSnapshotDeliveryCompleted`
-- `OversizedConfigurationItemChangeNotification`
-- `ScheduledNotification`
-
-<a id="organizationconfigruletriggertypenosntype"></a>
-
+```python title="Definition"
+MessageTypeType = Literal[
+    "ConfigurationItemChangeNotification",
+    "ConfigurationSnapshotDeliveryCompleted",
+    "OversizedConfigurationItemChangeNotification",
+    "ScheduledNotification",
+]
+```
 ## OrganizationConfigRuleTriggerTypeNoSNType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OrganizationConfigRuleTriggerTypeNoSNType
+
+def get_value() -> OrganizationConfigRuleTriggerTypeNoSNType:
+    return "ConfigurationItemChangeNotification"
 ```
 
-Values:
-
-- `ConfigurationItemChangeNotification`
-- `OversizedConfigurationItemChangeNotification`
-
-<a id="organizationconfigruletriggertypetype"></a>
-
+```python title="Definition"
+OrganizationConfigRuleTriggerTypeNoSNType = Literal[
+    "ConfigurationItemChangeNotification",
+    "OversizedConfigurationItemChangeNotification",
+]
+```
 ## OrganizationConfigRuleTriggerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OrganizationConfigRuleTriggerTypeType
+
+def get_value() -> OrganizationConfigRuleTriggerTypeType:
+    return "ConfigurationItemChangeNotification"
 ```
 
-Values:
-
-- `ConfigurationItemChangeNotification`
-- `OversizedConfigurationItemChangeNotification`
-- `ScheduledNotification`
-
-<a id="organizationresourcedetailedstatustype"></a>
-
+```python title="Definition"
+OrganizationConfigRuleTriggerTypeType = Literal[
+    "ConfigurationItemChangeNotification",
+    "OversizedConfigurationItemChangeNotification",
+    "ScheduledNotification",
+]
+```
 ## OrganizationResourceDetailedStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OrganizationResourceDetailedStatusType
+
+def get_value() -> OrganizationResourceDetailedStatusType:
+    return "CREATE_FAILED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `CREATE_SUCCESSFUL`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_SUCCESSFUL`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_SUCCESSFUL`
-
-<a id="organizationresourcestatustype"></a>
-
+```python title="Definition"
+OrganizationResourceDetailedStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_SUCCESSFUL",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_SUCCESSFUL",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_SUCCESSFUL",
+]
+```
 ## OrganizationResourceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OrganizationResourceStatusType
+
+def get_value() -> OrganizationResourceStatusType:
+    return "CREATE_FAILED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `CREATE_SUCCESSFUL`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_SUCCESSFUL`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_SUCCESSFUL`
-
-<a id="organizationrulestatustype"></a>
-
+```python title="Definition"
+OrganizationResourceStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_SUCCESSFUL",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_SUCCESSFUL",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_SUCCESSFUL",
+]
+```
 ## OrganizationRuleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OrganizationRuleStatusType
+
+def get_value() -> OrganizationRuleStatusType:
+    return "CREATE_FAILED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATE_IN_PROGRESS`
-- `CREATE_SUCCESSFUL`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `DELETE_SUCCESSFUL`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_SUCCESSFUL`
-
-<a id="ownertype"></a>
-
+```python title="Definition"
+OrganizationRuleStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATE_IN_PROGRESS",
+    "CREATE_SUCCESSFUL",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "DELETE_SUCCESSFUL",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_SUCCESSFUL",
+]
+```
 ## OwnerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import OwnerType
+
+def get_value() -> OwnerType:
+    return "AWS"
 ```
 
-Values:
-
-- `AWS`
-- `CUSTOM_LAMBDA`
-- `CUSTOM_POLICY`
-
-<a id="recorderstatustype"></a>
-
+```python title="Definition"
+OwnerType = Literal[
+    "AWS",
+    "CUSTOM_LAMBDA",
+    "CUSTOM_POLICY",
+]
+```
 ## RecorderStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import RecorderStatusType
+
+def get_value() -> RecorderStatusType:
+    return "Failure"
 ```
 
-Values:
-
-- `Failure`
-- `Pending`
-- `Success`
-
-<a id="remediationexecutionstatetype"></a>
-
+```python title="Definition"
+RecorderStatusType = Literal[
+    "Failure",
+    "Pending",
+    "Success",
+]
+```
 ## RemediationExecutionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import RemediationExecutionStateType
+
+def get_value() -> RemediationExecutionStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `QUEUED`
-- `SUCCEEDED`
-
-<a id="remediationexecutionstepstatetype"></a>
-
+```python title="Definition"
+RemediationExecutionStateType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "QUEUED",
+    "SUCCEEDED",
+]
+```
 ## RemediationExecutionStepStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import RemediationExecutionStepStateType
+
+def get_value() -> RemediationExecutionStepStateType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `PENDING`
-- `SUCCEEDED`
-
-<a id="remediationtargettypetype"></a>
-
+```python title="Definition"
+RemediationExecutionStepStateType = Literal[
+    "FAILED",
+    "PENDING",
+    "SUCCEEDED",
+]
+```
 ## RemediationTargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import RemediationTargetTypeType
+
+def get_value() -> RemediationTargetTypeType:
+    return "SSM_DOCUMENT"
 ```
 
-Values:
-
-- `SSM_DOCUMENT`
-
-<a id="resourcecountgroupkeytype"></a>
-
+```python title="Definition"
+RemediationTargetTypeType = Literal[
+    "SSM_DOCUMENT",
+]
+```
 ## ResourceCountGroupKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ResourceCountGroupKeyType
+
+def get_value() -> ResourceCountGroupKeyType:
+    return "ACCOUNT_ID"
 ```
 
-Values:
-
-- `ACCOUNT_ID`
-- `AWS_REGION`
-- `RESOURCE_TYPE`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ResourceCountGroupKeyType = Literal[
+    "ACCOUNT_ID",
+    "AWS_REGION",
+    "RESOURCE_TYPE",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "AWS::ACM::Certificate"
 ```
 
-Values:
-
-- `AWS::ACM::Certificate`
-- `AWS::ApiGateway::RestApi`
-- `AWS::ApiGateway::Stage`
-- `AWS::ApiGatewayV2::Api`
-- `AWS::ApiGatewayV2::Stage`
-- `AWS::AutoScaling::AutoScalingGroup`
-- `AWS::AutoScaling::LaunchConfiguration`
-- `AWS::AutoScaling::ScalingPolicy`
-- `AWS::AutoScaling::ScheduledAction`
-- `AWS::Backup::BackupPlan`
-- `AWS::Backup::BackupSelection`
-- `AWS::Backup::BackupVault`
-- `AWS::Backup::RecoveryPoint`
-- `AWS::CloudFormation::Stack`
-- `AWS::CloudFront::Distribution`
-- `AWS::CloudFront::StreamingDistribution`
-- `AWS::CloudTrail::Trail`
-- `AWS::CloudWatch::Alarm`
-- `AWS::CodeBuild::Project`
-- `AWS::CodeDeploy::Application`
-- `AWS::CodeDeploy::DeploymentConfig`
-- `AWS::CodeDeploy::DeploymentGroup`
-- `AWS::CodePipeline::Pipeline`
-- `AWS::Config::ConformancePackCompliance`
-- `AWS::Config::ResourceCompliance`
-- `AWS::DynamoDB::Table`
-- `AWS::EC2::CustomerGateway`
-- `AWS::EC2::EgressOnlyInternetGateway`
-- `AWS::EC2::EIP`
-- `AWS::EC2::FlowLog`
-- `AWS::EC2::Host`
-- `AWS::EC2::Instance`
-- `AWS::EC2::InternetGateway`
-- `AWS::EC2::LaunchTemplate`
-- `AWS::EC2::NatGateway`
-- `AWS::EC2::NetworkAcl`
-- `AWS::EC2::NetworkInterface`
-- `AWS::EC2::RegisteredHAInstance`
-- `AWS::EC2::RouteTable`
-- `AWS::EC2::SecurityGroup`
-- `AWS::EC2::Subnet`
-- `AWS::EC2::TransitGateway`
-- `AWS::EC2::Volume`
-- `AWS::EC2::VPC`
-- `AWS::EC2::VPCEndpoint`
-- `AWS::EC2::VPCEndpointService`
-- `AWS::EC2::VPCPeeringConnection`
-- `AWS::EC2::VPNConnection`
-- `AWS::EC2::VPNGateway`
-- `AWS::ECR::PublicRepository`
-- `AWS::ECR::Repository`
-- `AWS::ECS::Cluster`
-- `AWS::ECS::Service`
-- `AWS::ECS::TaskDefinition`
-- `AWS::EFS::AccessPoint`
-- `AWS::EFS::FileSystem`
-- `AWS::EKS::Cluster`
-- `AWS::ElasticBeanstalk::Application`
-- `AWS::ElasticBeanstalk::ApplicationVersion`
-- `AWS::ElasticBeanstalk::Environment`
-- `AWS::ElasticLoadBalancing::LoadBalancer`
-- `AWS::ElasticLoadBalancingV2::LoadBalancer`
-- `AWS::Elasticsearch::Domain`
-- `AWS::GuardDuty::Detector`
-- `AWS::IAM::Group`
-- `AWS::IAM::Policy`
-- `AWS::IAM::Role`
-- `AWS::IAM::User`
-- `AWS::Kinesis::Stream`
-- `AWS::Kinesis::StreamConsumer`
-- `AWS::KMS::Key`
-- `AWS::Lambda::Function`
-- `AWS::NetworkFirewall::Firewall`
-- `AWS::NetworkFirewall::FirewallPolicy`
-- `AWS::NetworkFirewall::RuleGroup`
-- `AWS::OpenSearch::Domain`
-- `AWS::QLDB::Ledger`
-- `AWS::RDS::DBCluster`
-- `AWS::RDS::DBClusterSnapshot`
-- `AWS::RDS::DBInstance`
-- `AWS::RDS::DBSecurityGroup`
-- `AWS::RDS::DBSnapshot`
-- `AWS::RDS::DBSubnetGroup`
-- `AWS::RDS::EventSubscription`
-- `AWS::Redshift::Cluster`
-- `AWS::Redshift::ClusterParameterGroup`
-- `AWS::Redshift::ClusterSecurityGroup`
-- `AWS::Redshift::ClusterSnapshot`
-- `AWS::Redshift::ClusterSubnetGroup`
-- `AWS::Redshift::EventSubscription`
-- `AWS::S3::AccountPublicAccessBlock`
-- `AWS::S3::Bucket`
-- `AWS::SecretsManager::Secret`
-- `AWS::ServiceCatalog::CloudFormationProduct`
-- `AWS::ServiceCatalog::CloudFormationProvisionedProduct`
-- `AWS::ServiceCatalog::Portfolio`
-- `AWS::Shield::Protection`
-- `AWS::ShieldRegional::Protection`
-- `AWS::SNS::Topic`
-- `AWS::SQS::Queue`
-- `AWS::SSM::AssociationCompliance`
-- `AWS::SSM::FileData`
-- `AWS::SSM::ManagedInstanceInventory`
-- `AWS::SSM::PatchCompliance`
-- `AWS::WAF::RateBasedRule`
-- `AWS::WAF::Rule`
-- `AWS::WAF::RuleGroup`
-- `AWS::WAF::WebACL`
-- `AWS::WAFRegional::RateBasedRule`
-- `AWS::WAFRegional::Rule`
-- `AWS::WAFRegional::RuleGroup`
-- `AWS::WAFRegional::WebACL`
-- `AWS::WAFv2::IPSet`
-- `AWS::WAFv2::ManagedRuleSet`
-- `AWS::WAFv2::RegexPatternSet`
-- `AWS::WAFv2::RuleGroup`
-- `AWS::WAFv2::WebACL`
-- `AWS::XRay::EncryptionConfig`
-
-<a id="resourcevaluetypetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "AWS::ACM::Certificate",
+    "AWS::ApiGateway::RestApi",
+    "AWS::ApiGateway::Stage",
+    "AWS::ApiGatewayV2::Api",
+    "AWS::ApiGatewayV2::Stage",
+    "AWS::AutoScaling::AutoScalingGroup",
+    "AWS::AutoScaling::LaunchConfiguration",
+    "AWS::AutoScaling::ScalingPolicy",
+    "AWS::AutoScaling::ScheduledAction",
+    "AWS::Backup::BackupPlan",
+    "AWS::Backup::BackupSelection",
+    "AWS::Backup::BackupVault",
+    "AWS::Backup::RecoveryPoint",
+    "AWS::CloudFormation::Stack",
+    "AWS::CloudFront::Distribution",
+    "AWS::CloudFront::StreamingDistribution",
+    "AWS::CloudTrail::Trail",
+    "AWS::CloudWatch::Alarm",
+    "AWS::CodeBuild::Project",
+    "AWS::CodeDeploy::Application",
+    "AWS::CodeDeploy::DeploymentConfig",
+    "AWS::CodeDeploy::DeploymentGroup",
+    "AWS::CodePipeline::Pipeline",
+    "AWS::Config::ConformancePackCompliance",
+    "AWS::Config::ResourceCompliance",
+    "AWS::DynamoDB::Table",
+    "AWS::EC2::CustomerGateway",
+    "AWS::EC2::EgressOnlyInternetGateway",
+    "AWS::EC2::EIP",
+    "AWS::EC2::FlowLog",
+    "AWS::EC2::Host",
+    "AWS::EC2::Instance",
+    "AWS::EC2::InternetGateway",
+    "AWS::EC2::LaunchTemplate",
+    "AWS::EC2::NatGateway",
+    "AWS::EC2::NetworkAcl",
+    "AWS::EC2::NetworkInterface",
+    "AWS::EC2::RegisteredHAInstance",
+    "AWS::EC2::RouteTable",
+    "AWS::EC2::SecurityGroup",
+    "AWS::EC2::Subnet",
+    "AWS::EC2::TransitGateway",
+    "AWS::EC2::Volume",
+    "AWS::EC2::VPC",
+    "AWS::EC2::VPCEndpoint",
+    "AWS::EC2::VPCEndpointService",
+    "AWS::EC2::VPCPeeringConnection",
+    "AWS::EC2::VPNConnection",
+    "AWS::EC2::VPNGateway",
+    "AWS::ECR::PublicRepository",
+    "AWS::ECR::Repository",
+    "AWS::ECS::Cluster",
+    "AWS::ECS::Service",
+    "AWS::ECS::TaskDefinition",
+    "AWS::EFS::AccessPoint",
+    "AWS::EFS::FileSystem",
+    "AWS::EKS::Cluster",
+    "AWS::ElasticBeanstalk::Application",
+    "AWS::ElasticBeanstalk::ApplicationVersion",
+    "AWS::ElasticBeanstalk::Environment",
+    "AWS::ElasticLoadBalancing::LoadBalancer",
+    "AWS::ElasticLoadBalancingV2::LoadBalancer",
+    "AWS::Elasticsearch::Domain",
+    "AWS::GuardDuty::Detector",
+    "AWS::IAM::Group",
+    "AWS::IAM::Policy",
+    "AWS::IAM::Role",
+    "AWS::IAM::User",
+    "AWS::Kinesis::Stream",
+    "AWS::Kinesis::StreamConsumer",
+    "AWS::KMS::Key",
+    "AWS::Lambda::Function",
+    "AWS::NetworkFirewall::Firewall",
+    "AWS::NetworkFirewall::FirewallPolicy",
+    "AWS::NetworkFirewall::RuleGroup",
+    "AWS::OpenSearch::Domain",
+    "AWS::QLDB::Ledger",
+    "AWS::RDS::DBCluster",
+    "AWS::RDS::DBClusterSnapshot",
+    "AWS::RDS::DBInstance",
+    "AWS::RDS::DBSecurityGroup",
+    "AWS::RDS::DBSnapshot",
+    "AWS::RDS::DBSubnetGroup",
+    "AWS::RDS::EventSubscription",
+    "AWS::Redshift::Cluster",
+    "AWS::Redshift::ClusterParameterGroup",
+    "AWS::Redshift::ClusterSecurityGroup",
+    "AWS::Redshift::ClusterSnapshot",
+    "AWS::Redshift::ClusterSubnetGroup",
+    "AWS::Redshift::EventSubscription",
+    "AWS::S3::AccountPublicAccessBlock",
+    "AWS::S3::Bucket",
+    "AWS::SecretsManager::Secret",
+    "AWS::ServiceCatalog::CloudFormationProduct",
+    "AWS::ServiceCatalog::CloudFormationProvisionedProduct",
+    "AWS::ServiceCatalog::Portfolio",
+    "AWS::Shield::Protection",
+    "AWS::ShieldRegional::Protection",
+    "AWS::SNS::Topic",
+    "AWS::SQS::Queue",
+    "AWS::SSM::AssociationCompliance",
+    "AWS::SSM::FileData",
+    "AWS::SSM::ManagedInstanceInventory",
+    "AWS::SSM::PatchCompliance",
+    "AWS::WAF::RateBasedRule",
+    "AWS::WAF::Rule",
+    "AWS::WAF::RuleGroup",
+    "AWS::WAF::WebACL",
+    "AWS::WAFRegional::RateBasedRule",
+    "AWS::WAFRegional::Rule",
+    "AWS::WAFRegional::RuleGroup",
+    "AWS::WAFRegional::WebACL",
+    "AWS::WAFv2::IPSet",
+    "AWS::WAFv2::ManagedRuleSet",
+    "AWS::WAFv2::RegexPatternSet",
+    "AWS::WAFv2::RuleGroup",
+    "AWS::WAFv2::WebACL",
+    "AWS::XRay::EncryptionConfig",
+]
+```
 ## ResourceValueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ResourceValueTypeType
+
+def get_value() -> ResourceValueTypeType:
+    return "RESOURCE_ID"
 ```
 
-Values:
-
-- `RESOURCE_ID`
-
-<a id="selectaggregateresourceconfigpaginatorname"></a>
-
+```python title="Definition"
+ResourceValueTypeType = Literal[
+    "RESOURCE_ID",
+]
+```
 ## SelectAggregateResourceConfigPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import SelectAggregateResourceConfigPaginatorName
+
+def get_value() -> SelectAggregateResourceConfigPaginatorName:
+    return "select_aggregate_resource_config"
 ```
 
-Values:
-
-- `select_aggregate_resource_config`
-
-<a id="selectresourceconfigpaginatorname"></a>
-
+```python title="Definition"
+SelectAggregateResourceConfigPaginatorName = Literal[
+    "select_aggregate_resource_config",
+]
+```
 ## SelectResourceConfigPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import SelectResourceConfigPaginatorName
+
+def get_value() -> SelectResourceConfigPaginatorName:
+    return "select_resource_config"
 ```
 
-Values:
-
-- `select_resource_config`
-
-<a id="configserviceservicename"></a>
-
+```python title="Definition"
+SelectResourceConfigPaginatorName = Literal[
+    "select_resource_config",
+]
+```
 ## ConfigServiceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ConfigServiceServiceName
+
+def get_value() -> ConfigServiceServiceName:
+    return "config"
 ```
 
-Values:
-
-- `config`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ConfigServiceServiceName = Literal[
+    "config",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_aggregate_compliance_by_config_rules"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_aggregate_compliance_by_config_rules",
+    "describe_aggregate_compliance_by_conformance_packs",
+    "describe_aggregation_authorizations",
+    "describe_compliance_by_config_rule",
+    "describe_compliance_by_resource",
+    "describe_config_rule_evaluation_status",
+    "describe_config_rules",
+    "describe_configuration_aggregator_sources_status",
+    "describe_configuration_aggregators",
+    "describe_conformance_pack_status",
+    "describe_conformance_packs",
+    "describe_organization_config_rule_statuses",
+    "describe_organization_config_rules",
+    "describe_organization_conformance_pack_statuses",
+    "describe_organization_conformance_packs",
+    "describe_pending_aggregation_requests",
+    "describe_remediation_execution_status",
+    "describe_retention_configurations",
+    "get_aggregate_compliance_details_by_config_rule",
+    "get_compliance_details_by_config_rule",
+    "get_compliance_details_by_resource",
+    "get_conformance_pack_compliance_summary",
+    "get_organization_config_rule_detailed_status",
+    "get_organization_conformance_pack_detailed_status",
+    "get_resource_config_history",
+    "list_aggregate_discovered_resources",
+    "list_discovered_resources",
+    "list_tags_for_resource",
+    "select_aggregate_resource_config",
+    "select_resource_config",
+]
+```
+## RegionName
 
-- `describe_aggregate_compliance_by_config_rules`
-- `describe_aggregate_compliance_by_conformance_packs`
-- `describe_aggregation_authorizations`
-- `describe_compliance_by_config_rule`
-- `describe_compliance_by_resource`
-- `describe_config_rule_evaluation_status`
-- `describe_config_rules`
-- `describe_configuration_aggregator_sources_status`
-- `describe_configuration_aggregators`
-- `describe_conformance_pack_status`
-- `describe_conformance_packs`
-- `describe_organization_config_rule_statuses`
-- `describe_organization_config_rules`
-- `describe_organization_conformance_pack_statuses`
-- `describe_organization_conformance_packs`
-- `describe_pending_aggregation_requests`
-- `describe_remediation_execution_status`
-- `describe_retention_configurations`
-- `get_aggregate_compliance_details_by_config_rule`
-- `get_compliance_details_by_config_rule`
-- `get_compliance_details_by_resource`
-- `get_conformance_pack_compliance_summary`
-- `get_organization_config_rule_detailed_status`
-- `get_organization_conformance_pack_detailed_status`
-- `get_resource_config_history`
-- `list_aggregate_discovered_resources`
-- `list_discovered_resources`
-- `list_tags_for_resource`
-- `select_aggregate_resource_config`
-- `select_resource_config`
+```python title="Usage Example"
+from mypy_boto3_config.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

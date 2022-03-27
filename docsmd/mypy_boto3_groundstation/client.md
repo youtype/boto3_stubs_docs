@@ -1,57 +1,18 @@
-<a id="groundstationclient-for-boto3-groundstation-module"></a>
-
-# GroundStationClient for boto3 GroundStation module
+# GroundStationClient
 
 > [Index](../README.md) > [GroundStation](./README.md) > GroundStationClient
 
-Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module
-[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+!!! note ""
 
-- [GroundStationClient for boto3 GroundStation module](#groundstationclient-for-boto3-groundstation-module)
-  - [GroundStationClient](#groundstationclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_contact](#cancel_contact)
-    - [create_config](#create_config)
-    - [create_dataflow_endpoint_group](#create_dataflow_endpoint_group)
-    - [create_mission_profile](#create_mission_profile)
-    - [delete_config](#delete_config)
-    - [delete_dataflow_endpoint_group](#delete_dataflow_endpoint_group)
-    - [delete_mission_profile](#delete_mission_profile)
-    - [describe_contact](#describe_contact)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_config](#get_config)
-    - [get_dataflow_endpoint_group](#get_dataflow_endpoint_group)
-    - [get_minute_usage](#get_minute_usage)
-    - [get_mission_profile](#get_mission_profile)
-    - [get_satellite](#get_satellite)
-    - [list_configs](#list_configs)
-    - [list_contacts](#list_contacts)
-    - [list_dataflow_endpoint_groups](#list_dataflow_endpoint_groups)
-    - [list_ground_stations](#list_ground_stations)
-    - [list_mission_profiles](#list_mission_profiles)
-    - [list_satellites](#list_satellites)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [reserve_contact](#reserve_contact)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_config](#update_config)
-    - [update_mission_profile](#update_mission_profile)
-    - [get_paginator](#get_paginator)
-
-<a id="groundstationclient"></a>
+    Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+    type annotations stubs module [mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 ## GroundStationClient
 
-Type annotations for `boto3.client("groundstation")`
+Type annotations and code completion for `#!python boto3.client("groundstation")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_groundstation.client import GroundStationClient
 
@@ -59,684 +20,875 @@ def get_groundstation_client() -> GroundStationClient:
     return Session().client("groundstation")
 ```
 
-Boto3 documentation:
-[GroundStation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("groundstation").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("groundstation")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DependencyException,
+    client.InvalidParameterException,
+    client.ResourceLimitExceededException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_groundstation.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DependencyException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GroundStationClient exceptions.
-
-Type annotations for `boto3.client("groundstation").exceptions` method.
-
-Boto3 documentation:
-[GroundStation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("groundstation").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate)
 
-Boto3 documentation:
-[GroundStation.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_contact"></a>
-
-### cancel_contact
+### cancel\_contact
 
 Cancels a contact with a specified contact ID.
 
-Type annotations for `boto3.client("groundstation").cancel_contact` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").cancel_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
 
-Boto3 documentation:
-[GroundStation.Client.cancel_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.cancel_contact)
+```python title="Method definition"
+def cancel_contact(
+    self,
+    *,
+    contactId: str,
+) -> ContactIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelContactRequestRequestTypeDef](./type_defs.md#cancelcontactrequestrequesttypedef).
+1. See [:material-code-braces: ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelContactRequestRequestTypeDef = {  # (1)
+    "contactId": ...,
+}
 
-Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
+parent.cancel_contact(**kwargs)
+```
 
-<a id="create\_config"></a>
+1. See [:material-code-braces: CancelContactRequestRequestTypeDef](./type_defs.md#cancelcontactrequestrequesttypedef) 
 
-### create_config
+### create\_config
 
 Creates a `Config` with the specified `configData` parameters.
 
-Type annotations for `boto3.client("groundstation").create_config` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").create_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
 
-Boto3 documentation:
-[GroundStation.Client.create_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_config)
+```python title="Method definition"
+def create_config(
+    self,
+    *,
+    configData: ConfigTypeDataTypeDef,  # (1)
+    name: str,
+    tags: Mapping[str, str] = ...,
+) -> ConfigIdResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigRequestRequestTypeDef](./type_defs.md#createconfigrequestrequesttypedef).
+1. See [:material-code-braces: ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef) 
+2. See [:material-code-braces: ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
-  *(required)*
-- `name`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateConfigRequestRequestTypeDef = {  # (1)
+    "configData": ...,
+    "name": ...,
+}
 
-Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
+parent.create_config(**kwargs)
+```
 
-<a id="create\_dataflow\_endpoint\_group"></a>
+1. See [:material-code-braces: CreateConfigRequestRequestTypeDef](./type_defs.md#createconfigrequestrequesttypedef) 
 
-### create_dataflow_endpoint_group
+### create\_dataflow\_endpoint\_group
 
 Creates a `DataflowEndpoint` group containing the specified list of
 `DataflowEndpoint` objects.
 
-Type annotations for
-`boto3.client("groundstation").create_dataflow_endpoint_group` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").create_dataflow_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
 
-Boto3 documentation:
-[GroundStation.Client.create_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_dataflow_endpoint_group)
+```python title="Method definition"
+def create_dataflow_endpoint_group(
+    self,
+    *,
+    endpointDetails: Sequence[EndpointDetailsTypeDef],  # (1)
+    tags: Mapping[str, str] = ...,
+) -> DataflowEndpointGroupIdResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef) 
+2. See [:material-code-braces: DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endpointDetails`:
-  `Sequence`\[[EndpointDetailsTypeDef](./type_defs.md#endpointdetailstypedef)\]
-  *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataflowEndpointGroupRequestRequestTypeDef = {  # (1)
+    "endpointDetails": ...,
+}
 
-Returns
-[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
+parent.create_dataflow_endpoint_group(**kwargs)
+```
 
-<a id="create\_mission\_profile"></a>
+1. See [:material-code-braces: CreateDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#createdataflowendpointgrouprequestrequesttypedef) 
 
-### create_mission_profile
+### create\_mission\_profile
 
 Creates a mission profile.
 
-Type annotations for `boto3.client("groundstation").create_mission_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").create_mission_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
 
-Boto3 documentation:
-[GroundStation.Client.create_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.create_mission_profile)
+```python title="Method definition"
+def create_mission_profile(
+    self,
+    *,
+    dataflowEdges: Sequence[Sequence[str]],
+    minimumViableContactDurationSeconds: int,
+    name: str,
+    trackingConfigArn: str,
+    contactPostPassDurationSeconds: int = ...,
+    contactPrePassDurationSeconds: int = ...,
+    tags: Mapping[str, str] = ...,
+) -> MissionProfileIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateMissionProfileRequestRequestTypeDef](./type_defs.md#createmissionprofilerequestrequesttypedef).
+1. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\] *(required)*
-- `minimumViableContactDurationSeconds`: `int` *(required)*
-- `name`: `str` *(required)*
-- `trackingConfigArn`: `str` *(required)*
-- `contactPostPassDurationSeconds`: `int`
-- `contactPrePassDurationSeconds`: `int`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMissionProfileRequestRequestTypeDef = {  # (1)
+    "dataflowEdges": ...,
+    "minimumViableContactDurationSeconds": ...,
+    "name": ...,
+    "trackingConfigArn": ...,
+}
 
-Returns
-[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
+parent.create_mission_profile(**kwargs)
+```
 
-<a id="delete\_config"></a>
+1. See [:material-code-braces: CreateMissionProfileRequestRequestTypeDef](./type_defs.md#createmissionprofilerequestrequesttypedef) 
 
-### delete_config
+### delete\_config
 
 Deletes a `Config` .
 
-Type annotations for `boto3.client("groundstation").delete_config` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").delete_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
 
-Boto3 documentation:
-[GroundStation.Client.delete_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_config)
+```python title="Method definition"
+def delete_config(
+    self,
+    *,
+    configId: str,
+    configType: ConfigCapabilityTypeType,  # (1)
+) -> ConfigIdResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigRequestRequestTypeDef](./type_defs.md#deleteconfigrequestrequesttypedef).
+1. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+2. See [:material-code-braces: ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigRequestRequestTypeDef = {  # (1)
+    "configId": ...,
+    "configType": ...,
+}
 
-Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
+parent.delete_config(**kwargs)
+```
 
-<a id="delete\_dataflow\_endpoint\_group"></a>
+1. See [:material-code-braces: DeleteConfigRequestRequestTypeDef](./type_defs.md#deleteconfigrequestrequesttypedef) 
 
-### delete_dataflow_endpoint_group
+### delete\_dataflow\_endpoint\_group
 
 Deletes a dataflow endpoint group.
 
-Type annotations for
-`boto3.client("groundstation").delete_dataflow_endpoint_group` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").delete_dataflow_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
 
-Boto3 documentation:
-[GroundStation.Client.delete_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_dataflow_endpoint_group)
+```python title="Method definition"
+def delete_dataflow_endpoint_group(
+    self,
+    *,
+    dataflowEndpointGroupId: str,
+) -> DataflowEndpointGroupIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dataflowEndpointGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataflowEndpointGroupRequestRequestTypeDef = {  # (1)
+    "dataflowEndpointGroupId": ...,
+}
 
-Returns
-[DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
+parent.delete_dataflow_endpoint_group(**kwargs)
+```
 
-<a id="delete\_mission\_profile"></a>
+1. See [:material-code-braces: DeleteDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#deletedataflowendpointgrouprequestrequesttypedef) 
 
-### delete_mission_profile
+### delete\_mission\_profile
 
 Deletes a mission profile.
 
-Type annotations for `boto3.client("groundstation").delete_mission_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").delete_mission_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
 
-Boto3 documentation:
-[GroundStation.Client.delete_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.delete_mission_profile)
+```python title="Method definition"
+def delete_mission_profile(
+    self,
+    *,
+    missionProfileId: str,
+) -> MissionProfileIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMissionProfileRequestRequestTypeDef](./type_defs.md#deletemissionprofilerequestrequesttypedef).
+1. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `missionProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMissionProfileRequestRequestTypeDef = {  # (1)
+    "missionProfileId": ...,
+}
 
-Returns
-[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
+parent.delete_mission_profile(**kwargs)
+```
 
-<a id="describe\_contact"></a>
+1. See [:material-code-braces: DeleteMissionProfileRequestRequestTypeDef](./type_defs.md#deletemissionprofilerequestrequesttypedef) 
 
-### describe_contact
+### describe\_contact
 
 Describes an existing contact.
 
-Type annotations for `boto3.client("groundstation").describe_contact` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").describe_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
 
-Boto3 documentation:
-[GroundStation.Client.describe_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.describe_contact)
+```python title="Method definition"
+def describe_contact(
+    self,
+    *,
+    contactId: str,
+) -> DescribeContactResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef).
+1. See [:material-code-braces: DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contactId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeContactRequestRequestTypeDef = {  # (1)
+    "contactId": ...,
+}
 
-Returns
-[DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
+parent.describe_contact(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeContactRequestRequestTypeDef](./type_defs.md#describecontactrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("groundstation").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GroundStation.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_config"></a>
-
-### get_config
+### get\_config
 
 Returns `Config` information.
 
-Type annotations for `boto3.client("groundstation").get_config` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
 
-Boto3 documentation:
-[GroundStation.Client.get_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_config)
+```python title="Method definition"
+def get_config(
+    self,
+    *,
+    configId: str,
+    configType: ConfigCapabilityTypeType,  # (1)
+) -> GetConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef).
+1. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+2. See [:material-code-braces: GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConfigRequestRequestTypeDef = {  # (1)
+    "configId": ...,
+    "configType": ...,
+}
 
-Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
+parent.get_config(**kwargs)
+```
 
-<a id="get\_dataflow\_endpoint\_group"></a>
+1. See [:material-code-braces: GetConfigRequestRequestTypeDef](./type_defs.md#getconfigrequestrequesttypedef) 
 
-### get_dataflow_endpoint_group
+### get\_dataflow\_endpoint\_group
 
 Returns the dataflow endpoint group.
 
-Type annotations for
-`boto3.client("groundstation").get_dataflow_endpoint_group` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_dataflow_endpoint_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
 
-Boto3 documentation:
-[GroundStation.Client.get_dataflow_endpoint_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_dataflow_endpoint_group)
+```python title="Method definition"
+def get_dataflow_endpoint_group(
+    self,
+    *,
+    dataflowEndpointGroupId: str,
+) -> GetDataflowEndpointGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#getdataflowendpointgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dataflowEndpointGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataflowEndpointGroupRequestRequestTypeDef = {  # (1)
+    "dataflowEndpointGroupId": ...,
+}
 
-Returns
-[GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef).
+parent.get_dataflow_endpoint_group(**kwargs)
+```
 
-<a id="get\_minute\_usage"></a>
+1. See [:material-code-braces: GetDataflowEndpointGroupRequestRequestTypeDef](./type_defs.md#getdataflowendpointgrouprequestrequesttypedef) 
 
-### get_minute_usage
+### get\_minute\_usage
 
 Returns the number of minutes used by account.
 
-Type annotations for `boto3.client("groundstation").get_minute_usage` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_minute_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
 
-Boto3 documentation:
-[GroundStation.Client.get_minute_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_minute_usage)
+```python title="Method definition"
+def get_minute_usage(
+    self,
+    *,
+    month: int,
+    year: int,
+) -> GetMinuteUsageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMinuteUsageRequestRequestTypeDef](./type_defs.md#getminuteusagerequestrequesttypedef).
+1. See [:material-code-braces: GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `month`: `int` *(required)*
-- `year`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMinuteUsageRequestRequestTypeDef = {  # (1)
+    "month": ...,
+    "year": ...,
+}
 
-Returns
-[GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef).
+parent.get_minute_usage(**kwargs)
+```
 
-<a id="get\_mission\_profile"></a>
+1. See [:material-code-braces: GetMinuteUsageRequestRequestTypeDef](./type_defs.md#getminuteusagerequestrequesttypedef) 
 
-### get_mission_profile
+### get\_mission\_profile
 
 Returns a mission profile.
 
-Type annotations for `boto3.client("groundstation").get_mission_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_mission_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
 
-Boto3 documentation:
-[GroundStation.Client.get_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_mission_profile)
+```python title="Method definition"
+def get_mission_profile(
+    self,
+    *,
+    missionProfileId: str,
+) -> GetMissionProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMissionProfileRequestRequestTypeDef](./type_defs.md#getmissionprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `missionProfileId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMissionProfileRequestRequestTypeDef = {  # (1)
+    "missionProfileId": ...,
+}
 
-Returns
-[GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef).
+parent.get_mission_profile(**kwargs)
+```
 
-<a id="get\_satellite"></a>
+1. See [:material-code-braces: GetMissionProfileRequestRequestTypeDef](./type_defs.md#getmissionprofilerequestrequesttypedef) 
 
-### get_satellite
+### get\_satellite
 
 Returns a satellite.
 
-Type annotations for `boto3.client("groundstation").get_satellite` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_satellite` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
 
-Boto3 documentation:
-[GroundStation.Client.get_satellite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.get_satellite)
+```python title="Method definition"
+def get_satellite(
+    self,
+    *,
+    satelliteId: str,
+) -> GetSatelliteResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSatelliteRequestRequestTypeDef](./type_defs.md#getsatelliterequestrequesttypedef).
+1. See [:material-code-braces: GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `satelliteId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSatelliteRequestRequestTypeDef = {  # (1)
+    "satelliteId": ...,
+}
 
-Returns
-[GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef).
+parent.get_satellite(**kwargs)
+```
 
-<a id="list\_configs"></a>
+1. See [:material-code-braces: GetSatelliteRequestRequestTypeDef](./type_defs.md#getsatelliterequestrequesttypedef) 
 
-### list_configs
+### list\_configs
 
 Returns a list of `Config` objects.
 
-Type annotations for `boto3.client("groundstation").list_configs` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
 
-Boto3 documentation:
-[GroundStation.Client.list_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_configs)
+```python title="Method definition"
+def list_configs(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListConfigsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigsRequestRequestTypeDef](./type_defs.md#listconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef).
+parent.list_configs(**kwargs)
+```
 
-<a id="list\_contacts"></a>
+1. See [:material-code-braces: ListConfigsRequestRequestTypeDef](./type_defs.md#listconfigsrequestrequesttypedef) 
 
-### list_contacts
+### list\_contacts
 
 Returns a list of contacts.
 
-Type annotations for `boto3.client("groundstation").list_contacts` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_contacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
 
-Boto3 documentation:
-[GroundStation.Client.list_contacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_contacts)
+```python title="Method definition"
+def list_contacts(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    startTime: Union[datetime, str],
+    statusList: Sequence[ContactStatusType],  # (1)
+    groundStation: str = ...,
+    maxResults: int = ...,
+    missionProfileArn: str = ...,
+    nextToken: str = ...,
+    satelliteArn: str = ...,
+) -> ListContactsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef).
+1. See [:material-code-brackets: ContactStatusType](./literals.md#contactstatustype) 
+2. See [:material-code-braces: ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `statusList`:
-  `Sequence`\[[ContactStatusType](./literals.md#contactstatustype)\]
-  *(required)*
-- `groundStation`: `str`
-- `maxResults`: `int`
-- `missionProfileArn`: `str`
-- `nextToken`: `str`
-- `satelliteArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContactsRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "startTime": ...,
+    "statusList": ...,
+}
 
-Returns
-[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
+parent.list_contacts(**kwargs)
+```
 
-<a id="list\_dataflow\_endpoint\_groups"></a>
+1. See [:material-code-braces: ListContactsRequestRequestTypeDef](./type_defs.md#listcontactsrequestrequesttypedef) 
 
-### list_dataflow_endpoint_groups
+### list\_dataflow\_endpoint\_groups
 
 Returns a list of `DataflowEndpoint` groups.
 
-Type annotations for
-`boto3.client("groundstation").list_dataflow_endpoint_groups` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_dataflow_endpoint_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
 
-Boto3 documentation:
-[GroundStation.Client.list_dataflow_endpoint_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_dataflow_endpoint_groups)
+```python title="Method definition"
+def list_dataflow_endpoint_groups(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDataflowEndpointGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataflowEndpointGroupsRequestRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDataflowEndpointGroupsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef).
+parent.list_dataflow_endpoint_groups(**kwargs)
+```
 
-<a id="list\_ground\_stations"></a>
+1. See [:material-code-braces: ListDataflowEndpointGroupsRequestRequestTypeDef](./type_defs.md#listdataflowendpointgroupsrequestrequesttypedef) 
 
-### list_ground_stations
+### list\_ground\_stations
 
 Returns a list of ground stations.
 
-Type annotations for `boto3.client("groundstation").list_ground_stations`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_ground_stations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
 
-Boto3 documentation:
-[GroundStation.Client.list_ground_stations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_ground_stations)
+```python title="Method definition"
+def list_ground_stations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    satelliteId: str = ...,
+) -> ListGroundStationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroundStationsRequestRequestTypeDef](./type_defs.md#listgroundstationsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `satelliteId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGroundStationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef).
+parent.list_ground_stations(**kwargs)
+```
 
-<a id="list\_mission\_profiles"></a>
+1. See [:material-code-braces: ListGroundStationsRequestRequestTypeDef](./type_defs.md#listgroundstationsrequestrequesttypedef) 
 
-### list_mission_profiles
+### list\_mission\_profiles
 
 Returns a list of mission profiles.
 
-Type annotations for `boto3.client("groundstation").list_mission_profiles`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_mission_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
 
-Boto3 documentation:
-[GroundStation.Client.list_mission_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_mission_profiles)
+```python title="Method definition"
+def list_mission_profiles(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListMissionProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMissionProfilesRequestRequestTypeDef](./type_defs.md#listmissionprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMissionProfilesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef).
+parent.list_mission_profiles(**kwargs)
+```
 
-<a id="list\_satellites"></a>
+1. See [:material-code-braces: ListMissionProfilesRequestRequestTypeDef](./type_defs.md#listmissionprofilesrequestrequesttypedef) 
 
-### list_satellites
+### list\_satellites
 
 Returns a list of satellites.
 
-Type annotations for `boto3.client("groundstation").list_satellites` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_satellites` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
 
-Boto3 documentation:
-[GroundStation.Client.list_satellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_satellites)
+```python title="Method definition"
+def list_satellites(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSatellitesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSatellitesRequestRequestTypeDef](./type_defs.md#listsatellitesrequestrequesttypedef).
+1. See [:material-code-braces: ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSatellitesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef).
+parent.list_satellites(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSatellitesRequestRequestTypeDef](./type_defs.md#listsatellitesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags for a specified resource.
 
-Type annotations for `boto3.client("groundstation").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GroundStation.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="reserve\_contact"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### reserve_contact
+### reserve\_contact
 
 Reserves a contact using specified parameters.
 
-Type annotations for `boto3.client("groundstation").reserve_contact` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").reserve_contact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
 
-Boto3 documentation:
-[GroundStation.Client.reserve_contact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.reserve_contact)
+```python title="Method definition"
+def reserve_contact(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    groundStation: str,
+    missionProfileArn: str,
+    satelliteArn: str,
+    startTime: Union[datetime, str],
+    tags: Mapping[str, str] = ...,
+) -> ContactIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReserveContactRequestRequestTypeDef](./type_defs.md#reservecontactrequestrequesttypedef).
+1. See [:material-code-braces: ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `groundStation`: `str` *(required)*
-- `missionProfileArn`: `str` *(required)*
-- `satelliteArn`: `str` *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ReserveContactRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "groundStation": ...,
+    "missionProfileArn": ...,
+    "satelliteArn": ...,
+    "startTime": ...,
+}
 
-Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
+parent.reserve_contact(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ReserveContactRequestRequestTypeDef](./type_defs.md#reservecontactrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns a tag to a resource.
 
-Type annotations for `boto3.client("groundstation").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
 
-Boto3 documentation:
-[GroundStation.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deassigns a resource tag.
 
-Type annotations for `boto3.client("groundstation").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
 
-Boto3 documentation:
-[GroundStation.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_config"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_config
+### update\_config
 
 Updates the `Config` used when scheduling contacts.
 
-Type annotations for `boto3.client("groundstation").update_config` method.
+Type annotations and code completion for `#!python boto3.client("groundstation").update_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
 
-Boto3 documentation:
-[GroundStation.Client.update_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_config)
+```python title="Method definition"
+def update_config(
+    self,
+    *,
+    configData: ConfigTypeDataTypeDef,  # (1)
+    configId: str,
+    configType: ConfigCapabilityTypeType,  # (2)
+    name: str,
+) -> ConfigIdResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigRequestRequestTypeDef](./type_defs.md#updateconfigrequestrequesttypedef).
+1. See [:material-code-braces: ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef) 
+2. See [:material-code-brackets: ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype) 
+3. See [:material-code-braces: ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configData`: [ConfigTypeDataTypeDef](./type_defs.md#configtypedatatypedef)
-  *(required)*
-- `configId`: `str` *(required)*
-- `configType`:
-  [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
-  *(required)*
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigRequestRequestTypeDef = {  # (1)
+    "configData": ...,
+    "configId": ...,
+    "configType": ...,
+    "name": ...,
+}
 
-Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
+parent.update_config(**kwargs)
+```
 
-<a id="update\_mission\_profile"></a>
+1. See [:material-code-braces: UpdateConfigRequestRequestTypeDef](./type_defs.md#updateconfigrequestrequesttypedef) 
 
-### update_mission_profile
+### update\_mission\_profile
 
 Updates a mission profile.
 
-Type annotations for `boto3.client("groundstation").update_mission_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("groundstation").update_mission_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
 
-Boto3 documentation:
-[GroundStation.Client.update_mission_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.update_mission_profile)
+```python title="Method definition"
+def update_mission_profile(
+    self,
+    *,
+    missionProfileId: str,
+    contactPostPassDurationSeconds: int = ...,
+    contactPrePassDurationSeconds: int = ...,
+    dataflowEdges: Sequence[Sequence[str]] = ...,
+    minimumViableContactDurationSeconds: int = ...,
+    name: str = ...,
+    trackingConfigArn: str = ...,
+) -> MissionProfileIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef).
+1. See [:material-code-braces: MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `missionProfileId`: `str` *(required)*
-- `contactPostPassDurationSeconds`: `int`
-- `contactPrePassDurationSeconds`: `int`
-- `dataflowEdges`: `Sequence`\[`Sequence`\[`str`\]\]
-- `minimumViableContactDurationSeconds`: `int`
-- `name`: `str`
-- `trackingConfigArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateMissionProfileRequestRequestTypeDef = {  # (1)
+    "missionProfileId": ...,
+}
 
-Returns
-[MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
+parent.update_mission_profile(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateMissionProfileRequestRequestTypeDef](./type_defs.md#updatemissionprofilerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("groundstation").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator` method with overloads.
 
-- `client.get_paginator("list_configs")` ->
-  [ListConfigsPaginator](./paginators.md#listconfigspaginator)
-- `client.get_paginator("list_contacts")` ->
-  [ListContactsPaginator](./paginators.md#listcontactspaginator)
-- `client.get_paginator("list_dataflow_endpoint_groups")` ->
-  [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
-- `client.get_paginator("list_ground_stations")` ->
-  [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
-- `client.get_paginator("list_mission_profiles")` ->
-  [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
-- `client.get_paginator("list_satellites")` ->
-  [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
+- `client.get_paginator("list_configs")` -> [ListConfigsPaginator](./paginators.md#listconfigspaginator)
+- `client.get_paginator("list_contacts")` -> [ListContactsPaginator](./paginators.md#listcontactspaginator)
+- `client.get_paginator("list_dataflow_endpoint_groups")` -> [ListDataflowEndpointGroupsPaginator](./paginators.md#listdataflowendpointgroupspaginator)
+- `client.get_paginator("list_ground_stations")` -> [ListGroundStationsPaginator](./paginators.md#listgroundstationspaginator)
+- `client.get_paginator("list_mission_profiles")` -> [ListMissionProfilesPaginator](./paginators.md#listmissionprofilespaginator)
+- `client.get_paginator("list_satellites")` -> [ListSatellitesPaginator](./paginators.md#listsatellitespaginator)
+
+
+

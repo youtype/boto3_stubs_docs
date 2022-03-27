@@ -1,621 +1,674 @@
-<a id="literals-for-boto3-glacier-module"></a>
-
-# Literals for boto3 Glacier module
+# Literals
 
 > [Index](../README.md) > [Glacier](./README.md) > Literals
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [Literals for boto3 Glacier module](#literals-for-boto3-glacier-module)
-  - [ActionCodeType](#actioncodetype)
-  - [CannedACLType](#cannedacltype)
-  - [EncryptionTypeType](#encryptiontypetype)
-  - [ExpressionTypeType](#expressiontypetype)
-  - [FileHeaderInfoType](#fileheaderinfotype)
-  - [ListJobsPaginatorName](#listjobspaginatorname)
-  - [ListMultipartUploadsPaginatorName](#listmultipartuploadspaginatorname)
-  - [ListPartsPaginatorName](#listpartspaginatorname)
-  - [ListVaultsPaginatorName](#listvaultspaginatorname)
-  - [PermissionType](#permissiontype)
-  - [QuoteFieldsType](#quotefieldstype)
-  - [StatusCodeType](#statuscodetype)
-  - [StorageClassType](#storageclasstype)
-  - [TypeType](#typetype)
-  - [VaultExistsWaiterName](#vaultexistswaitername)
-  - [VaultNotExistsWaiterName](#vaultnotexistswaitername)
-  - [GlacierServiceName](#glacierservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="actioncodetype"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## ActionCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ActionCodeType
+
+def get_value() -> ActionCodeType:
+    return "ArchiveRetrieval"
 ```
 
-Values:
-
-- `ArchiveRetrieval`
-- `InventoryRetrieval`
-- `Select`
-
-<a id="cannedacltype"></a>
-
+```python title="Definition"
+ActionCodeType = Literal[
+    "ArchiveRetrieval",
+    "InventoryRetrieval",
+    "Select",
+]
+```
 ## CannedACLType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import CannedACLType
+
+def get_value() -> CannedACLType:
+    return "authenticated-read"
 ```
 
-Values:
-
-- `authenticated-read`
-- `aws-exec-read`
-- `bucket-owner-full-control`
-- `bucket-owner-read`
-- `private`
-- `public-read`
-- `public-read-write`
-
-<a id="encryptiontypetype"></a>
-
+```python title="Definition"
+CannedACLType = Literal[
+    "authenticated-read",
+    "aws-exec-read",
+    "bucket-owner-full-control",
+    "bucket-owner-read",
+    "private",
+    "public-read",
+    "public-read-write",
+]
+```
 ## EncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "AES256"
 ```
 
-Values:
-
-- `AES256`
-- `aws:kms`
-
-<a id="expressiontypetype"></a>
-
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "AES256",
+    "aws:kms",
+]
+```
 ## ExpressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ExpressionTypeType
+
+def get_value() -> ExpressionTypeType:
+    return "SQL"
 ```
 
-Values:
-
-- `SQL`
-
-<a id="fileheaderinfotype"></a>
-
+```python title="Definition"
+ExpressionTypeType = Literal[
+    "SQL",
+]
+```
 ## FileHeaderInfoType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import FileHeaderInfoType
+
+def get_value() -> FileHeaderInfoType:
+    return "IGNORE"
 ```
 
-Values:
-
-- `IGNORE`
-- `NONE`
-- `USE`
-
-<a id="listjobspaginatorname"></a>
-
+```python title="Definition"
+FileHeaderInfoType = Literal[
+    "IGNORE",
+    "NONE",
+    "USE",
+]
+```
 ## ListJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ListJobsPaginatorName
+
+def get_value() -> ListJobsPaginatorName:
+    return "list_jobs"
 ```
 
-Values:
-
-- `list_jobs`
-
-<a id="listmultipartuploadspaginatorname"></a>
-
+```python title="Definition"
+ListJobsPaginatorName = Literal[
+    "list_jobs",
+]
+```
 ## ListMultipartUploadsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ListMultipartUploadsPaginatorName
+
+def get_value() -> ListMultipartUploadsPaginatorName:
+    return "list_multipart_uploads"
 ```
 
-Values:
-
-- `list_multipart_uploads`
-
-<a id="listpartspaginatorname"></a>
-
+```python title="Definition"
+ListMultipartUploadsPaginatorName = Literal[
+    "list_multipart_uploads",
+]
+```
 ## ListPartsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ListPartsPaginatorName
+
+def get_value() -> ListPartsPaginatorName:
+    return "list_parts"
 ```
 
-Values:
-
-- `list_parts`
-
-<a id="listvaultspaginatorname"></a>
-
+```python title="Definition"
+ListPartsPaginatorName = Literal[
+    "list_parts",
+]
+```
 ## ListVaultsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ListVaultsPaginatorName
+
+def get_value() -> ListVaultsPaginatorName:
+    return "list_vaults"
 ```
 
-Values:
-
-- `list_vaults`
-
-<a id="permissiontype"></a>
-
+```python title="Definition"
+ListVaultsPaginatorName = Literal[
+    "list_vaults",
+]
+```
 ## PermissionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import PermissionType
+
+def get_value() -> PermissionType:
+    return "FULL_CONTROL"
 ```
 
-Values:
-
-- `FULL_CONTROL`
-- `READ`
-- `READ_ACP`
-- `WRITE`
-- `WRITE_ACP`
-
-<a id="quotefieldstype"></a>
-
+```python title="Definition"
+PermissionType = Literal[
+    "FULL_CONTROL",
+    "READ",
+    "READ_ACP",
+    "WRITE",
+    "WRITE_ACP",
+]
+```
 ## QuoteFieldsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import QuoteFieldsType
+
+def get_value() -> QuoteFieldsType:
+    return "ALWAYS"
 ```
 
-Values:
-
-- `ALWAYS`
-- `ASNEEDED`
-
-<a id="statuscodetype"></a>
-
+```python title="Definition"
+QuoteFieldsType = Literal[
+    "ALWAYS",
+    "ASNEEDED",
+]
+```
 ## StatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import StatusCodeType
+
+def get_value() -> StatusCodeType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `InProgress`
-- `Succeeded`
-
-<a id="storageclasstype"></a>
-
+```python title="Definition"
+StatusCodeType = Literal[
+    "Failed",
+    "InProgress",
+    "Succeeded",
+]
+```
 ## StorageClassType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import StorageClassType
+
+def get_value() -> StorageClassType:
+    return "REDUCED_REDUNDANCY"
 ```
 
-Values:
-
-- `REDUCED_REDUNDANCY`
-- `STANDARD`
-- `STANDARD_IA`
-
-<a id="typetype"></a>
-
+```python title="Definition"
+StorageClassType = Literal[
+    "REDUCED_REDUNDANCY",
+    "STANDARD",
+    "STANDARD_IA",
+]
+```
 ## TypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import TypeType
+
+def get_value() -> TypeType:
+    return "AmazonCustomerByEmail"
 ```
 
-Values:
-
-- `AmazonCustomerByEmail`
-- `CanonicalUser`
-- `Group`
-
-<a id="vaultexistswaitername"></a>
-
+```python title="Definition"
+TypeType = Literal[
+    "AmazonCustomerByEmail",
+    "CanonicalUser",
+    "Group",
+]
+```
 ## VaultExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import VaultExistsWaiterName
+
+def get_value() -> VaultExistsWaiterName:
+    return "vault_exists"
 ```
 
-Values:
-
-- `vault_exists`
-
-<a id="vaultnotexistswaitername"></a>
-
+```python title="Definition"
+VaultExistsWaiterName = Literal[
+    "vault_exists",
+]
+```
 ## VaultNotExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import VaultNotExistsWaiterName
+
+def get_value() -> VaultNotExistsWaiterName:
+    return "vault_not_exists"
 ```
 
-Values:
-
-- `vault_not_exists`
-
-<a id="glacierservicename"></a>
-
+```python title="Definition"
+VaultNotExistsWaiterName = Literal[
+    "vault_not_exists",
+]
+```
 ## GlacierServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import GlacierServiceName
+
+def get_value() -> GlacierServiceName:
+    return "glacier"
 ```
 
-Values:
-
-- `glacier`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+GlacierServiceName = Literal[
+    "glacier",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_jobs"
 ```
 
-Values:
-
-- `list_jobs`
-- `list_multipart_uploads`
-- `list_parts`
-- `list_vaults`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_jobs",
+    "list_multipart_uploads",
+    "list_parts",
+    "list_vaults",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "vault_exists"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "vault_exists",
+    "vault_not_exists",
+]
+```
+## RegionName
 
-- `vault_exists`
-- `vault_not_exists`
+```python title="Usage Example"
+from mypy_boto3_glacier.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

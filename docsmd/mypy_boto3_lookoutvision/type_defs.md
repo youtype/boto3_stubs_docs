@@ -1,1127 +1,1428 @@
-<a id="typed-dictionaries-for-boto3-lookoutforvision-module"></a>
-
-# Typed dictionaries for boto3 LookoutforVision module
+# Typed dictionaries
 
 > [Index](../README.md) > [LookoutforVision](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module
-[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LookoutforVision module](#typed-dictionaries-for-boto3-lookoutforvision-module)
-  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateModelRequestRequestTypeDef](#createmodelrequestrequesttypedef)
-  - [CreateModelResponseTypeDef](#createmodelresponsetypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResponseTypeDef](#createprojectresponsetypedef)
-  - [DatasetDescriptionTypeDef](#datasetdescriptiontypedef)
-  - [DatasetGroundTruthManifestTypeDef](#datasetgroundtruthmanifesttypedef)
-  - [DatasetImageStatsTypeDef](#datasetimagestatstypedef)
-  - [DatasetMetadataTypeDef](#datasetmetadatatypedef)
-  - [DatasetSourceTypeDef](#datasetsourcetypedef)
-  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
-  - [DeleteModelRequestRequestTypeDef](#deletemodelrequestrequesttypedef)
-  - [DeleteModelResponseTypeDef](#deletemodelresponsetypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DeleteProjectResponseTypeDef](#deleteprojectresponsetypedef)
-  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeModelPackagingJobRequestRequestTypeDef](#describemodelpackagingjobrequestrequesttypedef)
-  - [DescribeModelPackagingJobResponseTypeDef](#describemodelpackagingjobresponsetypedef)
-  - [DescribeModelRequestRequestTypeDef](#describemodelrequestrequesttypedef)
-  - [DescribeModelResponseTypeDef](#describemodelresponsetypedef)
-  - [DescribeProjectRequestRequestTypeDef](#describeprojectrequestrequesttypedef)
-  - [DescribeProjectResponseTypeDef](#describeprojectresponsetypedef)
-  - [DetectAnomaliesRequestRequestTypeDef](#detectanomaliesrequestrequesttypedef)
-  - [DetectAnomaliesResponseTypeDef](#detectanomaliesresponsetypedef)
-  - [DetectAnomalyResultTypeDef](#detectanomalyresulttypedef)
-  - [GreengrassConfigurationTypeDef](#greengrassconfigurationtypedef)
-  - [GreengrassOutputDetailsTypeDef](#greengrassoutputdetailstypedef)
-  - [ImageSourceTypeDef](#imagesourcetypedef)
-  - [InputS3ObjectTypeDef](#inputs3objecttypedef)
-  - [ListDatasetEntriesRequestRequestTypeDef](#listdatasetentriesrequestrequesttypedef)
-  - [ListDatasetEntriesResponseTypeDef](#listdatasetentriesresponsetypedef)
-  - [ListModelPackagingJobsRequestRequestTypeDef](#listmodelpackagingjobsrequestrequesttypedef)
-  - [ListModelPackagingJobsResponseTypeDef](#listmodelpackagingjobsresponsetypedef)
-  - [ListModelsRequestRequestTypeDef](#listmodelsrequestrequesttypedef)
-  - [ListModelsResponseTypeDef](#listmodelsresponsetypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResponseTypeDef](#listprojectsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ModelDescriptionTypeDef](#modeldescriptiontypedef)
-  - [ModelMetadataTypeDef](#modelmetadatatypedef)
-  - [ModelPackagingConfigurationTypeDef](#modelpackagingconfigurationtypedef)
-  - [ModelPackagingDescriptionTypeDef](#modelpackagingdescriptiontypedef)
-  - [ModelPackagingJobMetadataTypeDef](#modelpackagingjobmetadatatypedef)
-  - [ModelPackagingOutputDetailsTypeDef](#modelpackagingoutputdetailstypedef)
-  - [ModelPerformanceTypeDef](#modelperformancetypedef)
-  - [OutputConfigTypeDef](#outputconfigtypedef)
-  - [OutputS3ObjectTypeDef](#outputs3objecttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProjectDescriptionTypeDef](#projectdescriptiontypedef)
-  - [ProjectMetadataTypeDef](#projectmetadatatypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [StartModelPackagingJobRequestRequestTypeDef](#startmodelpackagingjobrequestrequesttypedef)
-  - [StartModelPackagingJobResponseTypeDef](#startmodelpackagingjobresponsetypedef)
-  - [StartModelRequestRequestTypeDef](#startmodelrequestrequesttypedef)
-  - [StartModelResponseTypeDef](#startmodelresponsetypedef)
-  - [StopModelRequestRequestTypeDef](#stopmodelrequestrequesttypedef)
-  - [StopModelResponseTypeDef](#stopmodelresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetPlatformTypeDef](#targetplatformtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDatasetEntriesRequestRequestTypeDef](#updatedatasetentriesrequestrequesttypedef)
-  - [UpdateDatasetEntriesResponseTypeDef](#updatedatasetentriesresponsetypedef)
-
-<a id="createdatasetrequestrequesttypedef"></a>
+    Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+    type annotations stubs module [mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ## CreateDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+    DatasetSource: NotRequired[DatasetSourceTypeDef],  # (1)
+    ClientToken: NotRequired[str],
+```
 
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-
-Optional fields:
-
-- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
-- `ClientToken`: `str`
-
-<a id="createdatasetresponsetypedef"></a>
-
+1. See [:material-code-braces: DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef) 
 ## CreateDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "DatasetMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    DatasetMetadata: DatasetMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetMetadata`:
-  [DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateModelRequestRequestTypeDef
+
+def get_value() -> CreateModelRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "OutputConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateModelRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ProjectName`: `str`
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `ClientToken`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createmodelresponsetypedef"></a>
-
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateModelResponseTypeDef
+
+def get_value() -> CreateModelResponseTypeDef:
+    return {
+        "ModelMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateModelResponseTypeDef(TypedDict):
+    ModelMetadata: ModelMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelMetadata`: [ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="createprojectresponsetypedef"></a>
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ClientToken: NotRequired[str],
+```
 
 ## CreateProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import CreateProjectResponseTypeDef
+
+def get_value() -> CreateProjectResponseTypeDef:
+    return {
+        "ProjectMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResponseTypeDef(TypedDict):
+    ProjectMetadata: ProjectMetadataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProjectMetadata`:
-  [ProjectMetadataTypeDef](./type_defs.md#projectmetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasetdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ProjectMetadataTypeDef](./type_defs.md#projectmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DatasetDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DatasetDescriptionTypeDef
+
+def get_value() -> DatasetDescriptionTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetDescriptionTypeDef(TypedDict):
+    ProjectName: NotRequired[str],
+    DatasetType: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    Status: NotRequired[DatasetStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    ImageStats: NotRequired[DatasetImageStatsTypeDef],  # (2)
+```
 
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-- `CreationTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `StatusMessage`: `str`
-- `ImageStats`:
-  [DatasetImageStatsTypeDef](./type_defs.md#datasetimagestatstypedef)
-
-<a id="datasetgroundtruthmanifesttypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-braces: DatasetImageStatsTypeDef](./type_defs.md#datasetimagestatstypedef) 
 ## DatasetGroundTruthManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DatasetGroundTruthManifestTypeDef
+
+def get_value() -> DatasetGroundTruthManifestTypeDef:
+    return {
+        "S3Object": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetGroundTruthManifestTypeDef(TypedDict):
+    S3Object: NotRequired[InputS3ObjectTypeDef],  # (1)
+```
 
-- `S3Object`: [InputS3ObjectTypeDef](./type_defs.md#inputs3objecttypedef)
-
-<a id="datasetimagestatstypedef"></a>
-
+1. See [:material-code-braces: InputS3ObjectTypeDef](./type_defs.md#inputs3objecttypedef) 
 ## DatasetImageStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DatasetImageStatsTypeDef
+
+def get_value() -> DatasetImageStatsTypeDef:
+    return {
+        "Total": ...,
+    }
 ```
 
-Optional fields:
-
-- `Total`: `int`
-- `Labeled`: `int`
-- `Normal`: `int`
-- `Anomaly`: `int`
-
-<a id="datasetmetadatatypedef"></a>
+```python title="Definition"
+class DatasetImageStatsTypeDef(TypedDict):
+    Total: NotRequired[int],
+    Labeled: NotRequired[int],
+    Normal: NotRequired[int],
+    Anomaly: NotRequired[int],
+```
 
 ## DatasetMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DatasetMetadataTypeDef
+
+def get_value() -> DatasetMetadataTypeDef:
+    return {
+        "DatasetType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetMetadataTypeDef(TypedDict):
+    DatasetType: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    Status: NotRequired[DatasetStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+```
 
-- `DatasetType`: `str`
-- `CreationTimestamp`: `datetime`
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `StatusMessage`: `str`
-
-<a id="datasetsourcetypedef"></a>
-
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
 ## DatasetSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DatasetSourceTypeDef
+
+def get_value() -> DatasetSourceTypeDef:
+    return {
+        "GroundTruthManifest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSourceTypeDef(TypedDict):
+    GroundTruthManifest: NotRequired[DatasetGroundTruthManifestTypeDef],  # (1)
+```
 
-- `GroundTruthManifest`:
-  [DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef)
-
-<a id="deletedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetGroundTruthManifestTypeDef](./type_defs.md#datasetgroundtruthmanifesttypedef) 
 ## DeleteDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DeleteDatasetRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="deletemodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+    ClientToken: NotRequired[str],
+```
 
 ## DeleteModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DeleteModelRequestRequestTypeDef
+
+def get_value() -> DeleteModelRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="deletemodelresponsetypedef"></a>
+```python title="Definition"
+class DeleteModelRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+    ClientToken: NotRequired[str],
+```
 
 ## DeleteModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DeleteModelResponseTypeDef
+
+def get_value() -> DeleteModelResponseTypeDef:
+    return {
+        "ModelArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteModelResponseTypeDef(TypedDict):
+    ModelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ModelArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="deleteprojectresponsetypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ClientToken: NotRequired[str],
+```
 
 ## DeleteProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DeleteProjectResponseTypeDef
+
+def get_value() -> DeleteProjectResponseTypeDef:
+    return {
+        "ProjectArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteProjectResponseTypeDef(TypedDict):
+    ProjectArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ProjectArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-
-<a id="describedatasetresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+```
 
 ## DescribeDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "DatasetDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    DatasetDescription: DatasetDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DatasetDescription`:
-  [DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemodelpackagingjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeModelPackagingJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeModelPackagingJobRequestRequestTypeDef
+
+def get_value() -> DescribeModelPackagingJobRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "JobName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `JobName`: `str`
-
-<a id="describemodelpackagingjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeModelPackagingJobRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    JobName: str,
+```
 
 ## DescribeModelPackagingJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeModelPackagingJobResponseTypeDef
+
+def get_value() -> DescribeModelPackagingJobResponseTypeDef:
+    return {
+        "ModelPackagingDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeModelPackagingJobResponseTypeDef(TypedDict):
+    ModelPackagingDescription: ModelPackagingDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelPackagingDescription`:
-  [ModelPackagingDescriptionTypeDef](./type_defs.md#modelpackagingdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ModelPackagingDescriptionTypeDef](./type_defs.md#modelpackagingdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeModelRequestRequestTypeDef
+
+def get_value() -> DescribeModelRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-
-<a id="describemodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeModelRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+```
 
 ## DescribeModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeModelResponseTypeDef
+
+def get_value() -> DescribeModelResponseTypeDef:
+    return {
+        "ModelDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeModelResponseTypeDef(TypedDict):
+    ModelDescription: ModelDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelDescription`:
-  [ModelDescriptionTypeDef](./type_defs.md#modeldescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ModelDescriptionTypeDef](./type_defs.md#modeldescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeProjectRequestRequestTypeDef
+
+def get_value() -> DescribeProjectRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-<a id="describeprojectresponsetypedef"></a>
+```python title="Definition"
+class DescribeProjectRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+```
 
 ## DescribeProjectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DescribeProjectResponseTypeDef
+
+def get_value() -> DescribeProjectResponseTypeDef:
+    return {
+        "ProjectDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProjectResponseTypeDef(TypedDict):
+    ProjectDescription: ProjectDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProjectDescription`:
-  [ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectanomaliesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectDescriptionTypeDef](./type_defs.md#projectdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectAnomaliesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesRequestRequestTypeDef
+
+def get_value() -> DetectAnomaliesRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+        "Body": ...,
+        "ContentType": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `ContentType`: `str`
-
-<a id="detectanomaliesresponsetypedef"></a>
+```python title="Definition"
+class DetectAnomaliesRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+    Body: Union[bytes, IO[bytes], StreamingBody],
+    ContentType: str,
+```
 
 ## DetectAnomaliesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DetectAnomaliesResponseTypeDef
+
+def get_value() -> DetectAnomaliesResponseTypeDef:
+    return {
+        "DetectAnomalyResult": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetectAnomaliesResponseTypeDef(TypedDict):
+    DetectAnomalyResult: DetectAnomalyResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DetectAnomalyResult`:
-  [DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detectanomalyresulttypedef"></a>
-
+1. See [:material-code-braces: DetectAnomalyResultTypeDef](./type_defs.md#detectanomalyresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetectAnomalyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import DetectAnomalyResultTypeDef
+
+def get_value() -> DetectAnomalyResultTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DetectAnomalyResultTypeDef(TypedDict):
+    Source: NotRequired[ImageSourceTypeDef],  # (1)
+    IsAnomalous: NotRequired[bool],
+    Confidence: NotRequired[float],
+```
 
-- `Source`: [ImageSourceTypeDef](./type_defs.md#imagesourcetypedef)
-- `IsAnomalous`: `bool`
-- `Confidence`: `float`
-
-<a id="greengrassconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ImageSourceTypeDef](./type_defs.md#imagesourcetypedef) 
 ## GreengrassConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import GreengrassConfigurationTypeDef
+
+def get_value() -> GreengrassConfigurationTypeDef:
+    return {
+        "S3OutputLocation": ...,
+        "ComponentName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GreengrassConfigurationTypeDef(TypedDict):
+    S3OutputLocation: S3LocationTypeDef,  # (3)
+    ComponentName: str,
+    CompilerOptions: NotRequired[str],
+    TargetDevice: NotRequired[TargetDeviceType],  # (1)
+    TargetPlatform: NotRequired[TargetPlatformTypeDef],  # (2)
+    ComponentVersion: NotRequired[str],
+    ComponentDescription: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+```
 
-- `S3OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ComponentName`: `str`
-
-Optional fields:
-
-- `CompilerOptions`: `str`
-- `TargetDevice`: `Literal['jetson_xavier']` (see
-  [TargetDeviceType](./literals.md#targetdevicetype))
-- `TargetPlatform`:
-  [TargetPlatformTypeDef](./type_defs.md#targetplatformtypedef)
-- `ComponentVersion`: `str`
-- `ComponentDescription`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="greengrassoutputdetailstypedef"></a>
-
+1. See [:material-code-brackets: TargetDeviceType](./literals.md#targetdevicetype) 
+2. See [:material-code-braces: TargetPlatformTypeDef](./type_defs.md#targetplatformtypedef) 
+3. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## GreengrassOutputDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import GreengrassOutputDetailsTypeDef
+
+def get_value() -> GreengrassOutputDetailsTypeDef:
+    return {
+        "ComponentVersionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ComponentVersionArn`: `str`
-- `ComponentName`: `str`
-- `ComponentVersion`: `str`
-
-<a id="imagesourcetypedef"></a>
+```python title="Definition"
+class GreengrassOutputDetailsTypeDef(TypedDict):
+    ComponentVersionArn: NotRequired[str],
+    ComponentName: NotRequired[str],
+    ComponentVersion: NotRequired[str],
+```
 
 ## ImageSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ImageSourceTypeDef
+
+def get_value() -> ImageSourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-
-<a id="inputs3objecttypedef"></a>
+```python title="Definition"
+class ImageSourceTypeDef(TypedDict):
+    Type: NotRequired[str],
+```
 
 ## InputS3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import InputS3ObjectTypeDef
+
+def get_value() -> InputS3ObjectTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InputS3ObjectTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+    VersionId: NotRequired[str],
+```
 
-- `Bucket`: `str`
-- `Key`: `str`
+## ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef
 
-- `VersionId`: `str`
+def get_value() -> ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
+```
 
-<a id="listdatasetentriesrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDatasetEntriesRequestListDatasetEntriesPaginateTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+    Labeled: NotRequired[bool],
+    AnomalyClass: NotRequired[str],
+    BeforeCreationDate: NotRequired[Union[datetime, str]],
+    AfterCreationDate: NotRequired[Union[datetime, str]],
+    SourceRefContains: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesRequestRequestTypeDef
+
+def get_value() -> ListDatasetEntriesRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-
-Optional fields:
-
-- `Labeled`: `bool`
-- `AnomalyClass`: `str`
-- `BeforeCreationDate`: `Union`\[`datetime`, `str`\]
-- `AfterCreationDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SourceRefContains`: `str`
-
-<a id="listdatasetentriesresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetEntriesRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+    Labeled: NotRequired[bool],
+    AnomalyClass: NotRequired[str],
+    BeforeCreationDate: NotRequired[Union[datetime, str]],
+    AfterCreationDate: NotRequired[Union[datetime, str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    SourceRefContains: NotRequired[str],
+```
 
 ## ListDatasetEntriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListDatasetEntriesResponseTypeDef
+
+def get_value() -> ListDatasetEntriesResponseTypeDef:
+    return {
+        "DatasetEntries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetEntriesResponseTypeDef(TypedDict):
+    DatasetEntries: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DatasetEntries`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef
 
-<a id="listmodelpackagingjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef
 
+def get_value() -> ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef:
+    return {
+        "ProjectName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelPackagingJobsRequestListModelPackagingJobsPaginateTypeDef(TypedDict):
+    ProjectName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListModelPackagingJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListModelPackagingJobsRequestRequestTypeDef
+
+def get_value() -> ListModelPackagingJobsRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmodelpackagingjobsresponsetypedef"></a>
+```python title="Definition"
+class ListModelPackagingJobsRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListModelPackagingJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListModelPackagingJobsResponseTypeDef
+
+def get_value() -> ListModelPackagingJobsResponseTypeDef:
+    return {
+        "ModelPackagingJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListModelPackagingJobsResponseTypeDef(TypedDict):
+    ModelPackagingJobs: List[ModelPackagingJobMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ModelPackagingJobs`:
-  `List`\[[ModelPackagingJobMetadataTypeDef](./type_defs.md#modelpackagingjobmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ModelPackagingJobMetadataTypeDef](./type_defs.md#modelpackagingjobmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListModelsRequestListModelsPaginateTypeDef
 
-<a id="listmodelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import ListModelsRequestListModelsPaginateTypeDef
 
+def get_value() -> ListModelsRequestListModelsPaginateTypeDef:
+    return {
+        "ProjectName": ...,
+    }
+```
+
+```python title="Definition"
+class ListModelsRequestListModelsPaginateTypeDef(TypedDict):
+    ProjectName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListModelsRequestRequestTypeDef
+
+def get_value() -> ListModelsRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmodelsresponsetypedef"></a>
+```python title="Definition"
+class ListModelsRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListModelsResponseTypeDef
+
+def get_value() -> ListModelsResponseTypeDef:
+    return {
+        "Models": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListModelsResponseTypeDef(TypedDict):
+    Models: List[ModelMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Models`:
-  `List`\[[ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ModelMetadataTypeDef](./type_defs.md#modelmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lookoutvision.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listprojectsresponsetypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListProjectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListProjectsResponseTypeDef
+
+def get_value() -> ListProjectsResponseTypeDef:
+    return {
+        "Projects": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResponseTypeDef(TypedDict):
+    Projects: List[ProjectMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Projects`:
-  `List`\[[ProjectMetadataTypeDef](./type_defs.md#projectmetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectMetadataTypeDef](./type_defs.md#projectmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modeldescriptiontypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModelDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelDescriptionTypeDef
+
+def get_value() -> ModelDescriptionTypeDef:
+    return {
+        "ModelVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelDescriptionTypeDef(TypedDict):
+    ModelVersion: NotRequired[str],
+    ModelArn: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    Description: NotRequired[str],
+    Status: NotRequired[ModelStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    Performance: NotRequired[ModelPerformanceTypeDef],  # (2)
+    OutputConfig: NotRequired[OutputConfigTypeDef],  # (3)
+    EvaluationManifest: NotRequired[OutputS3ObjectTypeDef],  # (4)
+    EvaluationResult: NotRequired[OutputS3ObjectTypeDef],  # (4)
+    EvaluationEndTimestamp: NotRequired[datetime],
+    KmsKeyId: NotRequired[str],
+```
 
-- `ModelVersion`: `str`
-- `ModelArn`: `str`
-- `CreationTimestamp`: `datetime`
-- `Description`: `str`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `StatusMessage`: `str`
-- `Performance`:
-  [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-- `EvaluationManifest`:
-  [OutputS3ObjectTypeDef](./type_defs.md#outputs3objecttypedef)
-- `EvaluationResult`:
-  [OutputS3ObjectTypeDef](./type_defs.md#outputs3objecttypedef)
-- `EvaluationEndTimestamp`: `datetime`
-- `KmsKeyId`: `str`
-
-<a id="modelmetadatatypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef) 
+3. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+4. See [:material-code-braces: OutputS3ObjectTypeDef](./type_defs.md#outputs3objecttypedef) 
+5. See [:material-code-braces: OutputS3ObjectTypeDef](./type_defs.md#outputs3objecttypedef) 
 ## ModelMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelMetadataTypeDef
+
+def get_value() -> ModelMetadataTypeDef:
+    return {
+        "CreationTimestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelMetadataTypeDef(TypedDict):
+    CreationTimestamp: NotRequired[datetime],
+    ModelVersion: NotRequired[str],
+    ModelArn: NotRequired[str],
+    Description: NotRequired[str],
+    Status: NotRequired[ModelStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    Performance: NotRequired[ModelPerformanceTypeDef],  # (2)
+```
 
-- `CreationTimestamp`: `datetime`
-- `ModelVersion`: `str`
-- `ModelArn`: `str`
-- `Description`: `str`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `StatusMessage`: `str`
-- `Performance`:
-  [ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef)
-
-<a id="modelpackagingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ModelPerformanceTypeDef](./type_defs.md#modelperformancetypedef) 
 ## ModelPackagingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelPackagingConfigurationTypeDef
+
+def get_value() -> ModelPackagingConfigurationTypeDef:
+    return {
+        "Greengrass": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModelPackagingConfigurationTypeDef(TypedDict):
+    Greengrass: GreengrassConfigurationTypeDef,  # (1)
+```
 
-- `Greengrass`:
-  [GreengrassConfigurationTypeDef](./type_defs.md#greengrassconfigurationtypedef)
-
-<a id="modelpackagingdescriptiontypedef"></a>
-
+1. See [:material-code-braces: GreengrassConfigurationTypeDef](./type_defs.md#greengrassconfigurationtypedef) 
 ## ModelPackagingDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelPackagingDescriptionTypeDef
+
+def get_value() -> ModelPackagingDescriptionTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelPackagingDescriptionTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    ProjectName: NotRequired[str],
+    ModelVersion: NotRequired[str],
+    ModelPackagingConfiguration: NotRequired[ModelPackagingConfigurationTypeDef],  # (1)
+    ModelPackagingJobDescription: NotRequired[str],
+    ModelPackagingMethod: NotRequired[str],
+    ModelPackagingOutputDetails: NotRequired[ModelPackagingOutputDetailsTypeDef],  # (2)
+    Status: NotRequired[ModelPackagingJobStatusType],  # (3)
+    StatusMessage: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
 
-- `JobName`: `str`
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-- `ModelPackagingConfiguration`:
-  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
-- `ModelPackagingJobDescription`: `str`
-- `ModelPackagingMethod`: `str`
-- `ModelPackagingOutputDetails`:
-  [ModelPackagingOutputDetailsTypeDef](./type_defs.md#modelpackagingoutputdetailstypedef)
-- `Status`:
-  [ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype)
-- `StatusMessage`: `str`
-- `CreationTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-
-<a id="modelpackagingjobmetadatatypedef"></a>
-
+1. See [:material-code-braces: ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef) 
+2. See [:material-code-braces: ModelPackagingOutputDetailsTypeDef](./type_defs.md#modelpackagingoutputdetailstypedef) 
+3. See [:material-code-brackets: ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype) 
 ## ModelPackagingJobMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelPackagingJobMetadataTypeDef
+
+def get_value() -> ModelPackagingJobMetadataTypeDef:
+    return {
+        "JobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelPackagingJobMetadataTypeDef(TypedDict):
+    JobName: NotRequired[str],
+    ProjectName: NotRequired[str],
+    ModelVersion: NotRequired[str],
+    ModelPackagingJobDescription: NotRequired[str],
+    ModelPackagingMethod: NotRequired[str],
+    Status: NotRequired[ModelPackagingJobStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
 
-- `JobName`: `str`
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-- `ModelPackagingJobDescription`: `str`
-- `ModelPackagingMethod`: `str`
-- `Status`:
-  [ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype)
-- `StatusMessage`: `str`
-- `CreationTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-
-<a id="modelpackagingoutputdetailstypedef"></a>
-
+1. See [:material-code-brackets: ModelPackagingJobStatusType](./literals.md#modelpackagingjobstatustype) 
 ## ModelPackagingOutputDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelPackagingOutputDetailsTypeDef
+
+def get_value() -> ModelPackagingOutputDetailsTypeDef:
+    return {
+        "Greengrass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelPackagingOutputDetailsTypeDef(TypedDict):
+    Greengrass: NotRequired[GreengrassOutputDetailsTypeDef],  # (1)
+```
 
-- `Greengrass`:
-  [GreengrassOutputDetailsTypeDef](./type_defs.md#greengrassoutputdetailstypedef)
-
-<a id="modelperformancetypedef"></a>
-
+1. See [:material-code-braces: GreengrassOutputDetailsTypeDef](./type_defs.md#greengrassoutputdetailstypedef) 
 ## ModelPerformanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ModelPerformanceTypeDef
+
+def get_value() -> ModelPerformanceTypeDef:
+    return {
+        "F1Score": ...,
+    }
 ```
 
-Optional fields:
-
-- `F1Score`: `float`
-- `Recall`: `float`
-- `Precision`: `float`
-
-<a id="outputconfigtypedef"></a>
+```python title="Definition"
+class ModelPerformanceTypeDef(TypedDict):
+    F1Score: NotRequired[float],
+    Recall: NotRequired[float],
+    Precision: NotRequired[float],
+```
 
 ## OutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import OutputConfigTypeDef
+
+def get_value() -> OutputConfigTypeDef:
+    return {
+        "S3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OutputConfigTypeDef(TypedDict):
+    S3Location: S3LocationTypeDef,  # (1)
+```
 
-- `S3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="outputs3objecttypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## OutputS3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import OutputS3ObjectTypeDef
+
+def get_value() -> OutputS3ObjectTypeDef:
+    return {
+        "Bucket": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputS3ObjectTypeDef(TypedDict):
+    Bucket: str,
+    Key: str,
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="projectdescriptiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProjectDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ProjectDescriptionTypeDef
+
+def get_value() -> ProjectDescriptionTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectDescriptionTypeDef(TypedDict):
+    ProjectArn: NotRequired[str],
+    ProjectName: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+    Datasets: NotRequired[List[DatasetMetadataTypeDef]],  # (1)
+```
 
-- `ProjectArn`: `str`
-- `ProjectName`: `str`
-- `CreationTimestamp`: `datetime`
-- `Datasets`:
-  `List`\[[DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)\]
-
-<a id="projectmetadatatypedef"></a>
-
+1. See [:material-code-braces: DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef) 
 ## ProjectMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ProjectMetadataTypeDef
+
+def get_value() -> ProjectMetadataTypeDef:
+    return {
+        "ProjectArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ProjectArn`: `str`
-- `ProjectName`: `str`
-- `CreationTimestamp`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ProjectMetadataTypeDef(TypedDict):
+    ProjectArn: NotRequired[str],
+    ProjectName: NotRequired[str],
+    CreationTimestamp: NotRequired[datetime],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "Bucket": ...,
+    }
 ```
 
-Required fields:
-
-- `Bucket`: `str`
-
-Optional fields:
-
-- `Prefix`: `str`
-
-<a id="startmodelpackagingjobrequestrequesttypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    Bucket: str,
+    Prefix: NotRequired[str],
+```
 
 ## StartModelPackagingJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StartModelPackagingJobRequestRequestTypeDef
+
+def get_value() -> StartModelPackagingJobRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+        "Configuration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartModelPackagingJobRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+    Configuration: ModelPackagingConfigurationTypeDef,  # (1)
+    JobName: NotRequired[str],
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+```
 
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-- `Configuration`:
-  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
-
-Optional fields:
-
-- `JobName`: `str`
-- `Description`: `str`
-- `ClientToken`: `str`
-
-<a id="startmodelpackagingjobresponsetypedef"></a>
-
+1. See [:material-code-braces: ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef) 
 ## StartModelPackagingJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StartModelPackagingJobResponseTypeDef
+
+def get_value() -> StartModelPackagingJobResponseTypeDef:
+    return {
+        "JobName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartModelPackagingJobResponseTypeDef(TypedDict):
+    JobName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StartModelRequestRequestTypeDef
+
+def get_value() -> StartModelRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+        "MinInferenceUnits": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-- `MinInferenceUnits`: `int`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="startmodelresponsetypedef"></a>
+```python title="Definition"
+class StartModelRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+    MinInferenceUnits: int,
+    ClientToken: NotRequired[str],
+```
 
 ## StartModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StartModelResponseTypeDef
+
+def get_value() -> StartModelResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartModelResponseTypeDef(TypedDict):
+    Status: ModelHostingStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ModelHostingStatusType](./literals.md#modelhostingstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopmodelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ModelHostingStatusType](./literals.md#modelhostingstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StopModelRequestRequestTypeDef
+
+def get_value() -> StopModelRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "ModelVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `ModelVersion`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="stopmodelresponsetypedef"></a>
+```python title="Definition"
+class StopModelRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    ModelVersion: str,
+    ClientToken: NotRequired[str],
+```
 
 ## StopModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import StopModelResponseTypeDef
+
+def get_value() -> StopModelResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopModelResponseTypeDef(TypedDict):
+    Status: ModelHostingStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [ModelHostingStatusType](./literals.md#modelhostingstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ModelHostingStatusType](./literals.md#modelhostingstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targetplatformtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TargetPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import TargetPlatformTypeDef
+
+def get_value() -> TargetPlatformTypeDef:
+    return {
+        "Os": ...,
+        "Arch": ...,
+        "Accelerator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TargetPlatformTypeDef(TypedDict):
+    Os: TargetPlatformOsType,  # (1)
+    Arch: TargetPlatformArchType,  # (2)
+    Accelerator: TargetPlatformAcceleratorType,  # (3)
+```
 
-- `Os`: `Literal['LINUX']` (see
-  [TargetPlatformOsType](./literals.md#targetplatformostype))
-- `Arch`: [TargetPlatformArchType](./literals.md#targetplatformarchtype)
-- `Accelerator`: `Literal['NVIDIA']` (see
-  [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype))
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TargetPlatformOsType](./literals.md#targetplatformostype) 
+2. See [:material-code-brackets: TargetPlatformArchType](./literals.md#targetplatformarchtype) 
+3. See [:material-code-brackets: TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedatasetentriesrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDatasetEntriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesRequestRequestTypeDef
+
+def get_value() -> UpdateDatasetEntriesRequestRequestTypeDef:
+    return {
+        "ProjectName": ...,
+        "DatasetType": ...,
+        "Changes": ...,
+    }
 ```
 
-Required fields:
-
-- `ProjectName`: `str`
-- `DatasetType`: `str`
-- `Changes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="updatedatasetentriesresponsetypedef"></a>
+```python title="Definition"
+class UpdateDatasetEntriesRequestRequestTypeDef(TypedDict):
+    ProjectName: str,
+    DatasetType: str,
+    Changes: Union[bytes, IO[bytes], StreamingBody],
+    ClientToken: NotRequired[str],
+```
 
 ## UpdateDatasetEntriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutvision.type_defs import UpdateDatasetEntriesResponseTypeDef
+
+def get_value() -> UpdateDatasetEntriesResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDatasetEntriesResponseTypeDef(TypedDict):
+    Status: DatasetStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`: [DatasetStatusType](./literals.md#datasetstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: DatasetStatusType](./literals.md#datasetstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

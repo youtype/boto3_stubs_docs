@@ -1,48 +1,18 @@
-<a id="acmclient-for-boto3-acm-module"></a>
-
-# ACMClient for boto3 ACM module
+# ACMClient
 
 > [Index](../README.md) > [ACM](./README.md) > ACMClient
 
-Auto-generated documentation for
-[ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
-type annotations stubs module
-[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
+!!! note ""
 
-- [ACMClient for boto3 ACM module](#acmclient-for-boto3-acm-module)
-  - [ACMClient](#acmclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_tags_to_certificate](#add_tags_to_certificate)
-    - [can_paginate](#can_paginate)
-    - [delete_certificate](#delete_certificate)
-    - [describe_certificate](#describe_certificate)
-    - [export_certificate](#export_certificate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account_configuration](#get_account_configuration)
-    - [get_certificate](#get_certificate)
-    - [import_certificate](#import_certificate)
-    - [list_certificates](#list_certificates)
-    - [list_tags_for_certificate](#list_tags_for_certificate)
-    - [put_account_configuration](#put_account_configuration)
-    - [remove_tags_from_certificate](#remove_tags_from_certificate)
-    - [renew_certificate](#renew_certificate)
-    - [request_certificate](#request_certificate)
-    - [resend_validation_email](#resend_validation_email)
-    - [update_certificate_options](#update_certificate_options)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="acmclient"></a>
+    Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+    type annotations stubs module [mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 ## ACMClient
 
-Type annotations for `boto3.client("acm")`
+Type annotations and code completion for `#!python boto3.client("acm")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_acm.client import ACMClient
 
@@ -50,432 +20,556 @@ def get_acm_client() -> ACMClient:
     return Session().client("acm")
 ```
 
-Boto3 documentation:
-[ACM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("acm").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("acm")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InvalidArgsException,
+    client.InvalidArnException,
+    client.InvalidDomainValidationOptionsException,
+    client.InvalidParameterException,
+    client.InvalidStateException,
+    client.InvalidTagException,
+    client.LimitExceededException,
+    client.RequestInProgressException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.TagPolicyException,
+    client.ThrottlingException,
+    client.TooManyTagsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_acm.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InvalidArgsException`
-- `Exceptions.InvalidArnException`
-- `Exceptions.InvalidDomainValidationOptionsException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidStateException`
-- `Exceptions.InvalidTagException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.RequestInProgressException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TagPolicyException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ACMClient exceptions.
-
-Type annotations for `boto3.client("acm").exceptions` method.
-
-Boto3 documentation:
-[ACM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_tags\_to\_certificate"></a>
-
-### add_tags_to_certificate
+### add\_tags\_to\_certificate
 
 Adds one or more tags to an ACM certificate.
 
-Type annotations for `boto3.client("acm").add_tags_to_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").add_tags_to_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
 
-Boto3 documentation:
-[ACM.Client.add_tags_to_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.add_tags_to_certificate)
+```python title="Method definition"
+def add_tags_to_certificate(
+    self,
+    *,
+    CertificateArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToCertificateRequestRequestTypeDef](./type_defs.md#addtagstocertificaterequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+    "Tags": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.add_tags_to_certificate(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AddTagsToCertificateRequestRequestTypeDef](./type_defs.md#addtagstocertificaterequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("acm").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("acm").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate)
 
-Boto3 documentation:
-[ACM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_certificate"></a>
-
-### delete_certificate
+### delete\_certificate
 
 Deletes a certificate and its associated private key.
 
-Type annotations for `boto3.client("acm").delete_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").delete_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
 
-Boto3 documentation:
-[ACM.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.delete_certificate)
+```python title="Method definition"
+def delete_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-<a id="describe\_certificate"></a>
+parent.delete_certificate(**kwargs)
+```
 
-### describe_certificate
+1. See [:material-code-braces: DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef) 
+
+### describe\_certificate
 
 Returns detailed metadata about the specified ACM certificate.
 
-Type annotations for `boto3.client("acm").describe_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").describe_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
 
-Boto3 documentation:
-[ACM.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.describe_certificate)
+```python title="Method definition"
+def describe_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> DescribeCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-Returns
-[DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+parent.describe_certificate(**kwargs)
+```
 
-<a id="export\_certificate"></a>
+1. See [:material-code-braces: DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef) 
 
-### export_certificate
+### export\_certificate
 
-Exports a private certificate issued by a private certificate authority (CA)
-for use anywhere.
+Exports a private certificate issued by a private certificate authority (CA) for
+use anywhere.
 
-Type annotations for `boto3.client("acm").export_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").export_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
 
-Boto3 documentation:
-[ACM.Client.export_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.export_certificate)
+```python title="Method definition"
+def export_certificate(
+    self,
+    *,
+    CertificateArn: str,
+    Passphrase: Union[bytes, IO[bytes], StreamingBody],
+) -> ExportCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportCertificateRequestRequestTypeDef](./type_defs.md#exportcertificaterequestrequesttypedef).
+1. See [:material-code-braces: ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
-- `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExportCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+    "Passphrase": ...,
+}
 
-Returns
-[ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
+parent.export_certificate(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportCertificateRequestRequestTypeDef](./type_defs.md#exportcertificaterequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("acm").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("acm").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ACM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_account\_configuration
 
-Returns `str`.
+Returns the account configuration options associated with an Amazon Web Services
+account.
 
-<a id="get\_account\_configuration"></a>
+Type annotations and code completion for `#!python boto3.client("acm").get_account_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
 
-### get_account_configuration
+```python title="Method definition"
+def get_account_configuration(
+    self,
+) -> GetAccountConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns the account configuration options associated with an Amazon Web
-Services account.
+1. See [:material-code-braces: GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef) 
 
-Type annotations for `boto3.client("acm").get_account_configuration` method.
-
-Boto3 documentation:
-[ACM.Client.get_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_account_configuration)
-
-Returns
-[GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
-
-<a id="get\_certificate"></a>
-
-### get_certificate
+### get\_certificate
 
 Retrieves an Amazon-issued certificate and its certificate chain.
 
-Type annotations for `boto3.client("acm").get_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").get_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
 
-Boto3 documentation:
-[ACM.Client.get_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.get_certificate)
+```python title="Method definition"
+def get_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> GetCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-Returns
-[GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
+parent.get_certificate(**kwargs)
+```
 
-<a id="import\_certificate"></a>
+1. See [:material-code-braces: GetCertificateRequestRequestTypeDef](./type_defs.md#getcertificaterequestrequesttypedef) 
 
-### import_certificate
+### import\_certificate
 
 Imports a certificate into Amazon Web Services Certificate Manager (ACM) to use
 with services that are integrated with ACM.
 
-Type annotations for `boto3.client("acm").import_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").import_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
 
-Boto3 documentation:
-[ACM.Client.import_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.import_certificate)
+```python title="Method definition"
+def import_certificate(
+    self,
+    *,
+    Certificate: Union[bytes, IO[bytes], StreamingBody],
+    PrivateKey: Union[bytes, IO[bytes], StreamingBody],
+    CertificateArn: str = ...,
+    CertificateChain: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> ImportCertificateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `PrivateKey`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `CertificateArn`: `str`
-- `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ImportCertificateRequestRequestTypeDef = {  # (1)
+    "Certificate": ...,
+    "PrivateKey": ...,
+}
 
-Returns
-[ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
+parent.import_certificate(**kwargs)
+```
 
-<a id="list\_certificates"></a>
+1. See [:material-code-braces: ImportCertificateRequestRequestTypeDef](./type_defs.md#importcertificaterequestrequesttypedef) 
 
-### list_certificates
+### list\_certificates
 
 Retrieves a list of certificate ARNs and domain names.
 
-Type annotations for `boto3.client("acm").list_certificates` method.
+Type annotations and code completion for `#!python boto3.client("acm").list_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
 
-Boto3 documentation:
-[ACM.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_certificates)
+```python title="Method definition"
+def list_certificates(
+    self,
+    *,
+    CertificateStatuses: Sequence[CertificateStatusType] = ...,  # (1)
+    Includes: FiltersTypeDef = ...,  # (2)
+    NextToken: str = ...,
+    MaxItems: int = ...,
+) -> ListCertificatesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef).
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+3. See [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateStatuses`:
-  `Sequence`\[[CertificateStatusType](./literals.md#certificatestatustype)\]
-- `Includes`: [FiltersTypeDef](./type_defs.md#filterstypedef)
-- `NextToken`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesRequestRequestTypeDef = {  # (1)
+    "CertificateStatuses": ...,
+}
 
-Returns
-[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
+parent.list_certificates(**kwargs)
+```
 
-<a id="list\_tags\_for\_certificate"></a>
+1. See [:material-code-braces: ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef) 
 
-### list_tags_for_certificate
+### list\_tags\_for\_certificate
 
 Lists the tags that have been applied to the ACM certificate.
 
-Type annotations for `boto3.client("acm").list_tags_for_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").list_tags_for_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
 
-Boto3 documentation:
-[ACM.Client.list_tags_for_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.list_tags_for_certificate)
+```python title="Method definition"
+def list_tags_for_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> ListTagsForCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForCertificateRequestRequestTypeDef](./type_defs.md#listtagsforcertificaterequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-Returns
-[ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef).
+parent.list_tags_for_certificate(**kwargs)
+```
 
-<a id="put\_account\_configuration"></a>
+1. See [:material-code-braces: ListTagsForCertificateRequestRequestTypeDef](./type_defs.md#listtagsforcertificaterequestrequesttypedef) 
 
-### put_account_configuration
+### put\_account\_configuration
 
 Adds or modifies account-level configurations in ACM.
 
-Type annotations for `boto3.client("acm").put_account_configuration` method.
+Type annotations and code completion for `#!python boto3.client("acm").put_account_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
 
-Boto3 documentation:
-[ACM.Client.put_account_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.put_account_configuration)
+```python title="Method definition"
+def put_account_configuration(
+    self,
+    *,
+    IdempotencyToken: str,
+    ExpiryEvents: ExpiryEventsConfigurationTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutAccountConfigurationRequestRequestTypeDef](./type_defs.md#putaccountconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `IdempotencyToken`: `str` *(required)*
-- `ExpiryEvents`:
-  [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutAccountConfigurationRequestRequestTypeDef = {  # (1)
+    "IdempotencyToken": ...,
+}
 
-<a id="remove\_tags\_from\_certificate"></a>
+parent.put_account_configuration(**kwargs)
+```
 
-### remove_tags_from_certificate
+1. See [:material-code-braces: PutAccountConfigurationRequestRequestTypeDef](./type_defs.md#putaccountconfigurationrequestrequesttypedef) 
+
+### remove\_tags\_from\_certificate
 
 Remove one or more tags from an ACM certificate.
 
-Type annotations for `boto3.client("acm").remove_tags_from_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").remove_tags_from_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
 
-Boto3 documentation:
-[ACM.Client.remove_tags_from_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.remove_tags_from_certificate)
+```python title="Method definition"
+def remove_tags_from_certificate(
+    self,
+    *,
+    CertificateArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromCertificateRequestRequestTypeDef](./type_defs.md#removetagsfromcertificaterequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+    "Tags": ...,
+}
 
-<a id="renew\_certificate"></a>
+parent.remove_tags_from_certificate(**kwargs)
+```
 
-### renew_certificate
+1. See [:material-code-braces: RemoveTagsFromCertificateRequestRequestTypeDef](./type_defs.md#removetagsfromcertificaterequestrequesttypedef) 
+
+### renew\_certificate
 
 Renews an eligible ACM certificate.
 
-Type annotations for `boto3.client("acm").renew_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").renew_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
 
-Boto3 documentation:
-[ACM.Client.renew_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.renew_certificate)
+```python title="Method definition"
+def renew_certificate(
+    self,
+    *,
+    CertificateArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RenewCertificateRequestRequestTypeDef](./type_defs.md#renewcertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RenewCertificateRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+}
 
-<a id="request\_certificate"></a>
+parent.renew_certificate(**kwargs)
+```
 
-### request_certificate
+1. See [:material-code-braces: RenewCertificateRequestRequestTypeDef](./type_defs.md#renewcertificaterequestrequesttypedef) 
+
+### request\_certificate
 
 Requests an ACM certificate for use with other Amazon Web Services services.
 
-Type annotations for `boto3.client("acm").request_certificate` method.
+Type annotations and code completion for `#!python boto3.client("acm").request_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
 
-Boto3 documentation:
-[ACM.Client.request_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.request_certificate)
+```python title="Method definition"
+def request_certificate(
+    self,
+    *,
+    DomainName: str,
+    ValidationMethod: ValidationMethodType = ...,  # (1)
+    SubjectAlternativeNames: Sequence[str] = ...,
+    IdempotencyToken: str = ...,
+    DomainValidationOptions: Sequence[DomainValidationOptionTypeDef] = ...,  # (2)
+    Options: CertificateOptionsTypeDef = ...,  # (3)
+    CertificateAuthorityArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> RequestCertificateResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[RequestCertificateRequestRequestTypeDef](./type_defs.md#requestcertificaterequestrequesttypedef).
+1. See [:material-code-brackets: ValidationMethodType](./literals.md#validationmethodtype) 
+2. See [:material-code-braces: DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef) 
+3. See [:material-code-braces: CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ValidationMethod`:
-  [ValidationMethodType](./literals.md#validationmethodtype)
-- `SubjectAlternativeNames`: `Sequence`\[`str`\]
-- `IdempotencyToken`: `str`
-- `DomainValidationOptions`:
-  `Sequence`\[[DomainValidationOptionTypeDef](./type_defs.md#domainvalidationoptiontypedef)\]
-- `Options`:
-  [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
-- `CertificateAuthorityArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RequestCertificateRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).
+parent.request_certificate(**kwargs)
+```
 
-<a id="resend\_validation\_email"></a>
+1. See [:material-code-braces: RequestCertificateRequestRequestTypeDef](./type_defs.md#requestcertificaterequestrequesttypedef) 
 
-### resend_validation_email
+### resend\_validation\_email
 
 Resends the email that requests domain ownership validation.
 
-Type annotations for `boto3.client("acm").resend_validation_email` method.
+Type annotations and code completion for `#!python boto3.client("acm").resend_validation_email` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
 
-Boto3 documentation:
-[ACM.Client.resend_validation_email](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.resend_validation_email)
+```python title="Method definition"
+def resend_validation_email(
+    self,
+    *,
+    CertificateArn: str,
+    Domain: str,
+    ValidationDomain: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ResendValidationEmailRequestRequestTypeDef](./type_defs.md#resendvalidationemailrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
-- `Domain`: `str` *(required)*
-- `ValidationDomain`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResendValidationEmailRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+    "Domain": ...,
+    "ValidationDomain": ...,
+}
 
-<a id="update\_certificate\_options"></a>
+parent.resend_validation_email(**kwargs)
+```
 
-### update_certificate_options
+1. See [:material-code-braces: ResendValidationEmailRequestRequestTypeDef](./type_defs.md#resendvalidationemailrequestrequesttypedef) 
+
+### update\_certificate\_options
 
 Updates a certificate.
 
-Type annotations for `boto3.client("acm").update_certificate_options` method.
+Type annotations and code completion for `#!python boto3.client("acm").update_certificate_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
 
-Boto3 documentation:
-[ACM.Client.update_certificate_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.update_certificate_options)
+```python title="Method definition"
+def update_certificate_options(
+    self,
+    *,
+    CertificateArn: str,
+    Options: CertificateOptionsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCertificateOptionsRequestRequestTypeDef](./type_defs.md#updatecertificateoptionsrequestrequesttypedef).
+1. See [:material-code-braces: CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef) 
 
-Keyword-only arguments:
 
-- `CertificateArn`: `str` *(required)*
-- `Options`:
-  [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCertificateOptionsRequestRequestTypeDef = {  # (1)
+    "CertificateArn": ...,
+    "Options": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_certificate_options(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCertificateOptionsRequestRequestTypeDef](./type_defs.md#updatecertificateoptionsrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("acm").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("acm").get_paginator` method with overloads.
 
-- `client.get_paginator("list_certificates")` ->
-  [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+- `client.get_paginator("list_certificates")` -> [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("acm").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("acm").get_waiter` method with overloads.
 
-- `client.get_waiter("certificate_validated")` ->
-  [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
+- `client.get_waiter("certificate_validated")` -> [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
+

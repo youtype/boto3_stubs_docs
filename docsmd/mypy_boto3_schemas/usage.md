@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-schemas-module"></a>
-
-# Examples for boto3 Schemas module
+# Examples
 
 > [Index](../README.md) > [Schemas](./README.md) > Examples
 
-- [Examples for boto3 Schemas module](#examples-for-boto3-schemas-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[schemas]` package installed.
 
-Write your `Schemas` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Schemas` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SchemasClient
-# and provides type checking and code completion
-client = session.client("schemas")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListDiscoverersPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_discoverers")
-for item in paginator.paginate(...):
-    # item has type ListDiscoverersResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type CodeBindingExistsWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("code_binding_exists")
-waiter.wait()
-```
+    client = session.client("schemas")  # (1)
+    result = client.create_discoverer()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [SchemasClient](./client.md)
+    2. result: [:material-code-braces: CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("schemas")  # (1)
+
+    paginator = client.get_paginator("list_discoverers")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SchemasClient](./client.md)
+    2. paginator: [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
+    3. item: [:material-code-braces: ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("schemas")  # (1)
+
+    waiter = client.get_waiter("code_binding_exists")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [SchemasClient](./client.md)
+    2. waiter: [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[schemas]` or a standalone `mypy_boto3_schemas` package,
-you have to explicitly specify `client: SchemasClient` type annotation.
+With `boto3-stubs-lite[schemas]`
+or a standalone `mypy_boto3_schemas` package, you have to explicitly specify `client: SchemasClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_schemas.client import SchemasClient
-from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
-from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
-from mypy_boto3_schemas.literals import PaginatorName
-from mypy_boto3_schemas.literals import WaiterName
-from mypy_boto3_schemas.type_defs import bool
-from mypy_boto3_schemas.type_defs import ListDiscoverersResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SchemasClient = session.client("schemas")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_schemas.client import SchemasClient
+    from mypy_boto3_schemas.type_defs import CreateDiscovererResponseTypeDef
+    from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_discoverers"
-paginator: ListDiscoverersPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDiscoverersResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "code_binding_exists"
-waiter: CodeBindingExistsWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: SchemasClient = session.client("schemas")
+
+    kwargs: CreateDiscovererRequestRequestTypeDef = {...}
+    result: CreateDiscovererResponseTypeDef = client.create_discoverer(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_schemas.client import SchemasClient
+    from mypy_boto3_schemas.paginator import ListDiscoverersPaginator
+    from mypy_boto3_schemas.type_defs import ListDiscoverersResponseTypeDef
+
+
+    session = Session()
+    client: SchemasClient = session.client("schemas")
+
+    paginator: ListDiscoverersPaginator = client.get_paginator("list_discoverers")
+    for item in paginator.paginate(...):
+        item: ListDiscoverersResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_schemas.client import SchemasClient
+    from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter
+
+    session = Session()
+    client: SchemasClient = session.client("schemas")
+
+    waiter: CodeBindingExistsWaiter = client.get_waiter("code_binding_exists")
+    waiter.wait()
+    ```
+
+

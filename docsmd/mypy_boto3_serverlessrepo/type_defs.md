@@ -1,737 +1,970 @@
-<a id="typed-dictionaries-for-boto3-serverlessapplicationrepository-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ServerlessApplicationRepository module
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> Typed dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module
-[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
-
-- [Typed dictionaries for boto3 ServerlessApplicationRepository module](#typed-dictionaries-for-boto3-serverlessapplicationrepository-module)
-  - [ApplicationDependencySummaryTypeDef](#applicationdependencysummarytypedef)
-  - [ApplicationPolicyStatementTypeDef](#applicationpolicystatementtypedef)
-  - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [CreateApplicationVersionRequestRequestTypeDef](#createapplicationversionrequestrequesttypedef)
-  - [CreateApplicationVersionResponseTypeDef](#createapplicationversionresponsetypedef)
-  - [CreateCloudFormationChangeSetRequestRequestTypeDef](#createcloudformationchangesetrequestrequesttypedef)
-  - [CreateCloudFormationChangeSetResponseTypeDef](#createcloudformationchangesetresponsetypedef)
-  - [CreateCloudFormationTemplateRequestRequestTypeDef](#createcloudformationtemplaterequestrequesttypedef)
-  - [CreateCloudFormationTemplateResponseTypeDef](#createcloudformationtemplateresponsetypedef)
-  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
-  - [GetApplicationPolicyRequestRequestTypeDef](#getapplicationpolicyrequestrequesttypedef)
-  - [GetApplicationPolicyResponseTypeDef](#getapplicationpolicyresponsetypedef)
-  - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
-  - [GetApplicationResponseTypeDef](#getapplicationresponsetypedef)
-  - [GetCloudFormationTemplateRequestRequestTypeDef](#getcloudformationtemplaterequestrequesttypedef)
-  - [GetCloudFormationTemplateResponseTypeDef](#getcloudformationtemplateresponsetypedef)
-  - [ListApplicationDependenciesRequestRequestTypeDef](#listapplicationdependenciesrequestrequesttypedef)
-  - [ListApplicationDependenciesResponseTypeDef](#listapplicationdependenciesresponsetypedef)
-  - [ListApplicationVersionsRequestRequestTypeDef](#listapplicationversionsrequestrequesttypedef)
-  - [ListApplicationVersionsResponseTypeDef](#listapplicationversionsresponsetypedef)
-  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
-  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterDefinitionTypeDef](#parameterdefinitiontypedef)
-  - [ParameterValueTypeDef](#parametervaluetypedef)
-  - [PutApplicationPolicyRequestRequestTypeDef](#putapplicationpolicyrequestrequesttypedef)
-  - [PutApplicationPolicyResponseTypeDef](#putapplicationpolicyresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RollbackConfigurationTypeDef](#rollbackconfigurationtypedef)
-  - [RollbackTriggerTypeDef](#rollbacktriggertypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UnshareApplicationRequestRequestTypeDef](#unshareapplicationrequestrequesttypedef)
-  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
-  - [UpdateApplicationResponseTypeDef](#updateapplicationresponsetypedef)
-  - [VersionSummaryTypeDef](#versionsummarytypedef)
-  - [VersionTypeDef](#versiontypedef)
-
-<a id="applicationdependencysummarytypedef"></a>
+    Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+    type annotations stubs module [mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ## ApplicationDependencySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ApplicationDependencySummaryTypeDef
+
+def get_value() -> ApplicationDependencySummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+        "SemanticVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `SemanticVersion`: `str`
-
-<a id="applicationpolicystatementtypedef"></a>
+```python title="Definition"
+class ApplicationDependencySummaryTypeDef(TypedDict):
+    ApplicationId: str,
+    SemanticVersion: str,
+```
 
 ## ApplicationPolicyStatementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ApplicationPolicyStatementTypeDef
+
+def get_value() -> ApplicationPolicyStatementTypeDef:
+    return {
+        "Actions": ...,
+        "Principals": ...,
+    }
 ```
 
-Required fields:
-
-- `Actions`: `List`\[`str`\]
-- `Principals`: `List`\[`str`\]
-
-Optional fields:
-
-- `PrincipalOrgIDs`: `List`\[`str`\]
-- `StatementId`: `str`
-
-<a id="applicationsummarytypedef"></a>
+```python title="Definition"
+class ApplicationPolicyStatementTypeDef(TypedDict):
+    Actions: List[str],
+    Principals: List[str],
+    PrincipalOrgIDs: NotRequired[List[str]],
+    StatementId: NotRequired[str],
+```
 
 ## ApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ApplicationSummaryTypeDef
+
+def get_value() -> ApplicationSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Author": ...,
+        "Description": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `Author`: `str`
-- `Description`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `CreationTime`: `str`
-- `HomePageUrl`: `str`
-- `Labels`: `List`\[`str`\]
-- `SpdxLicenseId`: `str`
-
-<a id="createapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class ApplicationSummaryTypeDef(TypedDict):
+    ApplicationId: str,
+    Author: str,
+    Description: str,
+    Name: str,
+    CreationTime: NotRequired[str],
+    HomePageUrl: NotRequired[str],
+    Labels: NotRequired[List[str]],
+    SpdxLicenseId: NotRequired[str],
+```
 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "Author": ...,
+        "Description": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Author`: `str`
-- `Description`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `HomePageUrl`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `LicenseBody`: `str`
-- `LicenseUrl`: `str`
-- `ReadmeBody`: `str`
-- `ReadmeUrl`: `str`
-- `SemanticVersion`: `str`
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
-- `SpdxLicenseId`: `str`
-- `TemplateBody`: `str`
-- `TemplateUrl`: `str`
-
-<a id="createapplicationresponsetypedef"></a>
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    Author: str,
+    Description: str,
+    Name: str,
+    HomePageUrl: NotRequired[str],
+    Labels: NotRequired[Sequence[str]],
+    LicenseBody: NotRequired[str],
+    LicenseUrl: NotRequired[str],
+    ReadmeBody: NotRequired[str],
+    ReadmeUrl: NotRequired[str],
+    SemanticVersion: NotRequired[str],
+    SourceCodeArchiveUrl: NotRequired[str],
+    SourceCodeUrl: NotRequired[str],
+    SpdxLicenseId: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    TemplateUrl: NotRequired[str],
+```
 
 ## CreateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Author": ...,
+        "CreationTime": ...,
+        "Description": ...,
+        "HomePageUrl": ...,
+        "IsVerifiedAuthor": ...,
+        "Labels": ...,
+        "LicenseUrl": ...,
+        "Name": ...,
+        "ReadmeUrl": ...,
+        "SpdxLicenseId": ...,
+        "VerifiedAuthorUrl": ...,
+        "Version": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Author: str,
+    CreationTime: str,
+    Description: str,
+    HomePageUrl: str,
+    IsVerifiedAuthor: bool,
+    Labels: List[str],
+    LicenseUrl: str,
+    Name: str,
+    ReadmeUrl: str,
+    SpdxLicenseId: str,
+    VerifiedAuthorUrl: str,
+    Version: VersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Author`: `str`
-- `CreationTime`: `str`
-- `Description`: `str`
-- `HomePageUrl`: `str`
-- `IsVerifiedAuthor`: `bool`
-- `Labels`: `List`\[`str`\]
-- `LicenseUrl`: `str`
-- `Name`: `str`
-- `ReadmeUrl`: `str`
-- `SpdxLicenseId`: `str`
-- `VerifiedAuthorUrl`: `str`
-- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createapplicationversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VersionTypeDef](./type_defs.md#versiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateApplicationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionRequestRequestTypeDef
+
+def get_value() -> CreateApplicationVersionRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "SemanticVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `SemanticVersion`: `str`
-
-Optional fields:
-
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
-- `TemplateBody`: `str`
-- `TemplateUrl`: `str`
-
-<a id="createapplicationversionresponsetypedef"></a>
+```python title="Definition"
+class CreateApplicationVersionRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    SemanticVersion: str,
+    SourceCodeArchiveUrl: NotRequired[str],
+    SourceCodeUrl: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    TemplateUrl: NotRequired[str],
+```
 
 ## CreateApplicationVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateApplicationVersionResponseTypeDef
+
+def get_value() -> CreateApplicationVersionResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "CreationTime": ...,
+        "ParameterDefinitions": ...,
+        "RequiredCapabilities": ...,
+        "ResourcesSupported": ...,
+        "SemanticVersion": ...,
+        "SourceCodeArchiveUrl": ...,
+        "SourceCodeUrl": ...,
+        "TemplateUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationVersionResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    CreationTime: str,
+    ParameterDefinitions: List[ParameterDefinitionTypeDef],  # (1)
+    RequiredCapabilities: List[CapabilityType],  # (2)
+    ResourcesSupported: bool,
+    SemanticVersion: str,
+    SourceCodeArchiveUrl: str,
+    SourceCodeUrl: str,
+    TemplateUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ApplicationId`: `str`
-- `CreationTime`: `str`
-- `ParameterDefinitions`:
-  `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`:
-  `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourcesSupported`: `bool`
-- `SemanticVersion`: `str`
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
-- `TemplateUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcloudformationchangesetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCloudFormationChangeSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetRequestRequestTypeDef
+
+def get_value() -> CreateCloudFormationChangeSetRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "StackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCloudFormationChangeSetRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    StackName: str,
+    Capabilities: NotRequired[Sequence[str]],
+    ChangeSetName: NotRequired[str],
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    NotificationArns: NotRequired[Sequence[str]],
+    ParameterOverrides: NotRequired[Sequence[ParameterValueTypeDef]],  # (1)
+    ResourceTypes: NotRequired[Sequence[str]],
+    RollbackConfiguration: NotRequired[RollbackConfigurationTypeDef],  # (2)
+    SemanticVersion: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    TemplateId: NotRequired[str],
+```
 
-- `ApplicationId`: `str`
-- `StackName`: `str`
-
-Optional fields:
-
-- `Capabilities`: `Sequence`\[`str`\]
-- `ChangeSetName`: `str`
-- `ClientToken`: `str`
-- `Description`: `str`
-- `NotificationArns`: `Sequence`\[`str`\]
-- `ParameterOverrides`:
-  `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `RollbackConfiguration`:
-  [RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef)
-- `SemanticVersion`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TemplateId`: `str`
-
-<a id="createcloudformationchangesetresponsetypedef"></a>
-
+1. See [:material-code-braces: ParameterValueTypeDef](./type_defs.md#parametervaluetypedef) 
+2. See [:material-code-braces: RollbackConfigurationTypeDef](./type_defs.md#rollbackconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCloudFormationChangeSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationChangeSetResponseTypeDef
+
+def get_value() -> CreateCloudFormationChangeSetResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "ChangeSetId": ...,
+        "SemanticVersion": ...,
+        "StackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCloudFormationChangeSetResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    ChangeSetId: str,
+    SemanticVersion: str,
+    StackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationId`: `str`
-- `ChangeSetId`: `str`
-- `SemanticVersion`: `str`
-- `StackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcloudformationtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCloudFormationTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateRequestRequestTypeDef
+
+def get_value() -> CreateCloudFormationTemplateRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `SemanticVersion`: `str`
-
-<a id="createcloudformationtemplateresponsetypedef"></a>
+```python title="Definition"
+class CreateCloudFormationTemplateRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    SemanticVersion: NotRequired[str],
+```
 
 ## CreateCloudFormationTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import CreateCloudFormationTemplateResponseTypeDef
+
+def get_value() -> CreateCloudFormationTemplateResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "CreationTime": ...,
+        "ExpirationTime": ...,
+        "SemanticVersion": ...,
+        "Status": ...,
+        "TemplateId": ...,
+        "TemplateUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCloudFormationTemplateResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    CreationTime: str,
+    ExpirationTime: str,
+    SemanticVersion: str,
+    Status: StatusType,  # (1)
+    TemplateId: str,
+    TemplateUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `CreationTime`: `str`
-- `ExpirationTime`: `str`
-- `SemanticVersion`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `TemplateId`: `str`
-- `TemplateUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-<a id="getapplicationpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+```
 
 ## GetApplicationPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyRequestRequestTypeDef
+
+def get_value() -> GetApplicationPolicyRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-<a id="getapplicationpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetApplicationPolicyRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+```
 
 ## GetApplicationPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyResponseTypeDef
+
+def get_value() -> GetApplicationPolicyResponseTypeDef:
+    return {
+        "Statements": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationPolicyResponseTypeDef(TypedDict):
+    Statements: List[ApplicationPolicyStatementTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetApplicationRequestRequestTypeDef
+
+def get_value() -> GetApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `SemanticVersion`: `str`
-
-<a id="getapplicationresponsetypedef"></a>
+```python title="Definition"
+class GetApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    SemanticVersion: NotRequired[str],
+```
 
 ## GetApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetApplicationResponseTypeDef
+
+def get_value() -> GetApplicationResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Author": ...,
+        "CreationTime": ...,
+        "Description": ...,
+        "HomePageUrl": ...,
+        "IsVerifiedAuthor": ...,
+        "Labels": ...,
+        "LicenseUrl": ...,
+        "Name": ...,
+        "ReadmeUrl": ...,
+        "SpdxLicenseId": ...,
+        "VerifiedAuthorUrl": ...,
+        "Version": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Author: str,
+    CreationTime: str,
+    Description: str,
+    HomePageUrl: str,
+    IsVerifiedAuthor: bool,
+    Labels: List[str],
+    LicenseUrl: str,
+    Name: str,
+    ReadmeUrl: str,
+    SpdxLicenseId: str,
+    VerifiedAuthorUrl: str,
+    Version: VersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Author`: `str`
-- `CreationTime`: `str`
-- `Description`: `str`
-- `HomePageUrl`: `str`
-- `IsVerifiedAuthor`: `bool`
-- `Labels`: `List`\[`str`\]
-- `LicenseUrl`: `str`
-- `Name`: `str`
-- `ReadmeUrl`: `str`
-- `SpdxLicenseId`: `str`
-- `VerifiedAuthorUrl`: `str`
-- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcloudformationtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VersionTypeDef](./type_defs.md#versiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCloudFormationTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateRequestRequestTypeDef
+
+def get_value() -> GetCloudFormationTemplateRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "TemplateId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `TemplateId`: `str`
-
-<a id="getcloudformationtemplateresponsetypedef"></a>
+```python title="Definition"
+class GetCloudFormationTemplateRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    TemplateId: str,
+```
 
 ## GetCloudFormationTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import GetCloudFormationTemplateResponseTypeDef
+
+def get_value() -> GetCloudFormationTemplateResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "CreationTime": ...,
+        "ExpirationTime": ...,
+        "SemanticVersion": ...,
+        "Status": ...,
+        "TemplateId": ...,
+        "TemplateUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCloudFormationTemplateResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    CreationTime: str,
+    ExpirationTime: str,
+    SemanticVersion: str,
+    Status: StatusType,  # (1)
+    TemplateId: str,
+    TemplateUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `CreationTime`: `str`
-- `ExpirationTime`: `str`
-- `SemanticVersion`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `TemplateId`: `str`
-- `TemplateUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef
 
-<a id="listapplicationdependenciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef
 
+def get_value() -> ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef(TypedDict):
+    ApplicationId: str,
+    SemanticVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationDependenciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesRequestRequestTypeDef
+
+def get_value() -> ListApplicationDependenciesRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `MaxItems`: `int`
-- `NextToken`: `str`
-- `SemanticVersion`: `str`
-
-<a id="listapplicationdependenciesresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationDependenciesRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    MaxItems: NotRequired[int],
+    NextToken: NotRequired[str],
+    SemanticVersion: NotRequired[str],
+```
 
 ## ListApplicationDependenciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesResponseTypeDef
+
+def get_value() -> ListApplicationDependenciesResponseTypeDef:
+    return {
+        "Dependencies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationDependenciesResponseTypeDef(TypedDict):
+    Dependencies: List[ApplicationDependencySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Dependencies`:
-  `List`\[[ApplicationDependencySummaryTypeDef](./type_defs.md#applicationdependencysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ApplicationDependencySummaryTypeDef](./type_defs.md#applicationdependencysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef
 
-<a id="listapplicationversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef
 
+def get_value() -> ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef(TypedDict):
+    ApplicationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsRequestRequestTypeDef
+
+def get_value() -> ListApplicationVersionsRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `MaxItems`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationversionsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationVersionsRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    MaxItems: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationVersionsResponseTypeDef
+
+def get_value() -> ListApplicationVersionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Versions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationVersionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Versions: List[VersionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Versions`:
-  `List`\[[VersionSummaryTypeDef](./type_defs.md#versionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VersionSummaryTypeDef](./type_defs.md#versionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsRequestListApplicationsPaginateTypeDef
 
-<a id="listapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_serverlessrepo.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
 
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "Applications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    Applications: List[ApplicationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Applications`:
-  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parameterdefinitiontypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ParameterDefinitionTypeDef
+
+def get_value() -> ParameterDefinitionTypeDef:
+    return {
+        "Name": ...,
+        "ReferencedByResources": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `ReferencedByResources`: `List`\[`str`\]
-
-Optional fields:
-
-- `AllowedPattern`: `str`
-- `AllowedValues`: `List`\[`str`\]
-- `ConstraintDescription`: `str`
-- `DefaultValue`: `str`
-- `Description`: `str`
-- `MaxLength`: `int`
-- `MaxValue`: `int`
-- `MinLength`: `int`
-- `MinValue`: `int`
-- `NoEcho`: `bool`
-- `Type`: `str`
-
-<a id="parametervaluetypedef"></a>
+```python title="Definition"
+class ParameterDefinitionTypeDef(TypedDict):
+    Name: str,
+    ReferencedByResources: List[str],
+    AllowedPattern: NotRequired[str],
+    AllowedValues: NotRequired[List[str]],
+    ConstraintDescription: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    Description: NotRequired[str],
+    MaxLength: NotRequired[int],
+    MaxValue: NotRequired[int],
+    MinLength: NotRequired[int],
+    MinValue: NotRequired[int],
+    NoEcho: NotRequired[bool],
+    Type: NotRequired[str],
+```
 
 ## ParameterValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ParameterValueTypeDef
+
+def get_value() -> ParameterValueTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="putapplicationpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class ParameterValueTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+```
 
 ## PutApplicationPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyRequestRequestTypeDef
+
+def get_value() -> PutApplicationPolicyRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Statements": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutApplicationPolicyRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Statements: Sequence[ApplicationPolicyStatementTypeDef],  # (1)
+```
 
-- `ApplicationId`: `str`
-- `Statements`:
-  `Sequence`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
-
-<a id="putapplicationpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef) 
 ## PutApplicationPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import PutApplicationPolicyResponseTypeDef
+
+def get_value() -> PutApplicationPolicyResponseTypeDef:
+    return {
+        "Statements": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutApplicationPolicyResponseTypeDef(TypedDict):
+    Statements: List[ApplicationPolicyStatementTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Statements`:
-  `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rollbackconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RollbackConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import RollbackConfigurationTypeDef
+
+def get_value() -> RollbackConfigurationTypeDef:
+    return {
+        "MonitoringTimeInMinutes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RollbackConfigurationTypeDef(TypedDict):
+    MonitoringTimeInMinutes: NotRequired[int],
+    RollbackTriggers: NotRequired[Sequence[RollbackTriggerTypeDef]],  # (1)
+```
 
-- `MonitoringTimeInMinutes`: `int`
-- `RollbackTriggers`:
-  `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
-
-<a id="rollbacktriggertypedef"></a>
-
+1. See [:material-code-braces: RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef) 
 ## RollbackTriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import RollbackTriggerTypeDef
+
+def get_value() -> RollbackTriggerTypeDef:
+    return {
+        "Arn": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Type`: `str`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class RollbackTriggerTypeDef(TypedDict):
+    Arn: str,
+    Type: str,
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="unshareapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UnshareApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import UnshareApplicationRequestRequestTypeDef
+
+def get_value() -> UnshareApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+        "OrganizationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `OrganizationId`: `str`
-
-<a id="updateapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class UnshareApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    OrganizationId: str,
+```
 
 ## UpdateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-
-Optional fields:
-
-- `Author`: `str`
-- `Description`: `str`
-- `HomePageUrl`: `str`
-- `Labels`: `Sequence`\[`str`\]
-- `ReadmeBody`: `str`
-- `ReadmeUrl`: `str`
-
-<a id="updateapplicationresponsetypedef"></a>
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationId: str,
+    Author: NotRequired[str],
+    Description: NotRequired[str],
+    HomePageUrl: NotRequired[str],
+    Labels: NotRequired[Sequence[str]],
+    ReadmeBody: NotRequired[str],
+    ReadmeUrl: NotRequired[str],
+```
 
 ## UpdateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import UpdateApplicationResponseTypeDef
+
+def get_value() -> UpdateApplicationResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Author": ...,
+        "CreationTime": ...,
+        "Description": ...,
+        "HomePageUrl": ...,
+        "IsVerifiedAuthor": ...,
+        "Labels": ...,
+        "LicenseUrl": ...,
+        "Name": ...,
+        "ReadmeUrl": ...,
+        "SpdxLicenseId": ...,
+        "VerifiedAuthorUrl": ...,
+        "Version": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Author: str,
+    CreationTime: str,
+    Description: str,
+    HomePageUrl: str,
+    IsVerifiedAuthor: bool,
+    Labels: List[str],
+    LicenseUrl: str,
+    Name: str,
+    ReadmeUrl: str,
+    SpdxLicenseId: str,
+    VerifiedAuthorUrl: str,
+    Version: VersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Author`: `str`
-- `CreationTime`: `str`
-- `Description`: `str`
-- `HomePageUrl`: `str`
-- `IsVerifiedAuthor`: `bool`
-- `Labels`: `List`\[`str`\]
-- `LicenseUrl`: `str`
-- `Name`: `str`
-- `ReadmeUrl`: `str`
-- `SpdxLicenseId`: `str`
-- `VerifiedAuthorUrl`: `str`
-- `Version`: [VersionTypeDef](./type_defs.md#versiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="versionsummarytypedef"></a>
-
+1. See [:material-code-braces: VersionTypeDef](./type_defs.md#versiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import VersionSummaryTypeDef
+
+def get_value() -> VersionSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+        "CreationTime": ...,
+        "SemanticVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationId`: `str`
-- `CreationTime`: `str`
-- `SemanticVersion`: `str`
-
-Optional fields:
-
-- `SourceCodeUrl`: `str`
-
-<a id="versiontypedef"></a>
+```python title="Definition"
+class VersionSummaryTypeDef(TypedDict):
+    ApplicationId: str,
+    CreationTime: str,
+    SemanticVersion: str,
+    SourceCodeUrl: NotRequired[str],
+```
 
 ## VersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_serverlessrepo.type_defs import VersionTypeDef
+
+def get_value() -> VersionTypeDef:
+    return {
+        "ApplicationId": ...,
+        "CreationTime": ...,
+        "ParameterDefinitions": ...,
+        "RequiredCapabilities": ...,
+        "ResourcesSupported": ...,
+        "SemanticVersion": ...,
+        "TemplateUrl": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VersionTypeDef(TypedDict):
+    ApplicationId: str,
+    CreationTime: str,
+    ParameterDefinitions: List[ParameterDefinitionTypeDef],  # (1)
+    RequiredCapabilities: List[CapabilityType],  # (2)
+    ResourcesSupported: bool,
+    SemanticVersion: str,
+    TemplateUrl: str,
+    SourceCodeArchiveUrl: NotRequired[str],
+    SourceCodeUrl: NotRequired[str],
+```
 
-- `ApplicationId`: `str`
-- `CreationTime`: `str`
-- `ParameterDefinitions`:
-  `List`\[[ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef)\]
-- `RequiredCapabilities`:
-  `List`\[[CapabilityType](./literals.md#capabilitytype)\]
-- `ResourcesSupported`: `bool`
-- `SemanticVersion`: `str`
-- `TemplateUrl`: `str`
-
-Optional fields:
-
-- `SourceCodeArchiveUrl`: `str`
-- `SourceCodeUrl`: `str`
+1. See [:material-code-braces: ParameterDefinitionTypeDef](./type_defs.md#parameterdefinitiontypedef) 
+2. See [:material-code-brackets: CapabilityType](./literals.md#capabilitytype) 

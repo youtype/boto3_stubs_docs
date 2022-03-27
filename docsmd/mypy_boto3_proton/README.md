@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-proton-module"></a>
-
-# Type annotations for boto3 Proton module
+#  Proton module
 
 > [Index](../README.md) > Proton
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [Type annotations for boto3 Proton module](#type-annotations-for-boto3-proton-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ProtonClient](#protonclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Proton`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[proton]'
 python -m pip install mypy-boto3-proton
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,127 +42,37 @@ python -m pip install mypy-boto3-proton
 python -m pip uninstall -y mypy-boto3-proton
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="protonclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ProtonClient
 
-Type annotations for `boto3.client("proton")` as [ProtonClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("proton")` as [ProtonClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_proton.client import ProtonClient
+
+def get_client() -> ProtonClient:
+    return Session().cleint("proton")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_environment_account_connection](./client.md#accept_environment_account_connection)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_environment_deployment](./client.md#cancel_environment_deployment)
-- [cancel_service_instance_deployment](./client.md#cancel_service_instance_deployment)
-- [cancel_service_pipeline_deployment](./client.md#cancel_service_pipeline_deployment)
-- [create_environment](./client.md#create_environment)
-- [create_environment_account_connection](./client.md#create_environment_account_connection)
-- [create_environment_template](./client.md#create_environment_template)
-- [create_environment_template_version](./client.md#create_environment_template_version)
-- [create_repository](./client.md#create_repository)
-- [create_service](./client.md#create_service)
-- [create_service_template](./client.md#create_service_template)
-- [create_service_template_version](./client.md#create_service_template_version)
-- [create_template_sync_config](./client.md#create_template_sync_config)
-- [delete_environment](./client.md#delete_environment)
-- [delete_environment_account_connection](./client.md#delete_environment_account_connection)
-- [delete_environment_template](./client.md#delete_environment_template)
-- [delete_environment_template_version](./client.md#delete_environment_template_version)
-- [delete_repository](./client.md#delete_repository)
-- [delete_service](./client.md#delete_service)
-- [delete_service_template](./client.md#delete_service_template)
-- [delete_service_template_version](./client.md#delete_service_template_version)
-- [delete_template_sync_config](./client.md#delete_template_sync_config)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_settings](./client.md#get_account_settings)
-- [get_environment](./client.md#get_environment)
-- [get_environment_account_connection](./client.md#get_environment_account_connection)
-- [get_environment_template](./client.md#get_environment_template)
-- [get_environment_template_version](./client.md#get_environment_template_version)
-- [get_paginator](./client.md#get_paginator)
-- [get_repository](./client.md#get_repository)
-- [get_repository_sync_status](./client.md#get_repository_sync_status)
-- [get_service](./client.md#get_service)
-- [get_service_instance](./client.md#get_service_instance)
-- [get_service_template](./client.md#get_service_template)
-- [get_service_template_version](./client.md#get_service_template_version)
-- [get_template_sync_config](./client.md#get_template_sync_config)
-- [get_template_sync_status](./client.md#get_template_sync_status)
-- [get_waiter](./client.md#get_waiter)
-- [list_environment_account_connections](./client.md#list_environment_account_connections)
-- [list_environment_outputs](./client.md#list_environment_outputs)
-- [list_environment_provisioned_resources](./client.md#list_environment_provisioned_resources)
-- [list_environment_template_versions](./client.md#list_environment_template_versions)
-- [list_environment_templates](./client.md#list_environment_templates)
-- [list_environments](./client.md#list_environments)
-- [list_repositories](./client.md#list_repositories)
-- [list_repository_sync_definitions](./client.md#list_repository_sync_definitions)
-- [list_service_instance_outputs](./client.md#list_service_instance_outputs)
-- [list_service_instance_provisioned_resources](./client.md#list_service_instance_provisioned_resources)
-- [list_service_instances](./client.md#list_service_instances)
-- [list_service_pipeline_outputs](./client.md#list_service_pipeline_outputs)
-- [list_service_pipeline_provisioned_resources](./client.md#list_service_pipeline_provisioned_resources)
-- [list_service_template_versions](./client.md#list_service_template_versions)
-- [list_service_templates](./client.md#list_service_templates)
-- [list_services](./client.md#list_services)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [notify_resource_deployment_status_change](./client.md#notify_resource_deployment_status_change)
-- [reject_environment_account_connection](./client.md#reject_environment_account_connection)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_account_settings](./client.md#update_account_settings)
-- [update_environment](./client.md#update_environment)
-- [update_environment_account_connection](./client.md#update_environment_account_connection)
-- [update_environment_template](./client.md#update_environment_template)
-- [update_environment_template_version](./client.md#update_environment_template_version)
-- [update_service](./client.md#update_service)
-- [update_service_instance](./client.md#update_service_instance)
-- [update_service_pipeline](./client.md#update_service_pipeline)
-- [update_service_template](./client.md#update_service_template)
-- [update_service_template_version](./client.md#update_service_template_version)
-- [update_template_sync_config](./client.md#update_template_sync_config)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ProtonClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("proton").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("proton").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator, ...
+from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
+
+def get_list_environment_account_connections_paginator() -> ListEnvironmentAccountConnectionsPaginator:
+    return Session().client("proton").get_paginator("list_environment_account_connections"))
 ```
 
 - [ListEnvironmentAccountConnectionsPaginator](./paginators.md#listenvironmentaccountconnectionspaginator)
@@ -206,17 +93,21 @@ from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginat
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("proton").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("proton").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter, ...
+from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
+
+def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
+    return Session().client("proton").get_waiter("environment_deployed")
 ```
 
 - [EnvironmentDeployedWaiter](./waiters.md#environmentdeployedwaiter)
@@ -228,16 +119,21 @@ from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter, ...
 - [ServiceTemplateVersionRegisteredWaiter](./waiters.md#servicetemplateversionregisteredwaiter)
 - [ServiceUpdatedWaiter](./waiters.md#serviceupdatedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_proton.literals import DeploymentStatusType
 
-```python
-from mypy_boto3_proton.literals import DeploymentStatusType, ...
+def get_value() -> DeploymentStatusType:
+    return "CANCELLED"
 ```
 
 - [DeploymentStatusType](./literals.md#deploymentstatustype)
@@ -285,17 +181,20 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputRequestTypeDef
 
-```python
-from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputRequestTypeDef, ...
+def get_value() -> AcceptEnvironmentAccountConnectionInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
 - [AcceptEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#acceptenvironmentaccountconnectioninputrequesttypedef)
@@ -357,10 +256,12 @@ from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputR
 - [GetAccountSettingsOutputTypeDef](./type_defs.md#getaccountsettingsoutputtypedef)
 - [GetEnvironmentAccountConnectionInputRequestTypeDef](./type_defs.md#getenvironmentaccountconnectioninputrequesttypedef)
 - [GetEnvironmentAccountConnectionOutputTypeDef](./type_defs.md#getenvironmentaccountconnectionoutputtypedef)
+- [GetEnvironmentInputEnvironmentDeployedWaitTypeDef](./type_defs.md#getenvironmentinputenvironmentdeployedwaittypedef)
 - [GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef)
 - [GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef)
 - [GetEnvironmentTemplateInputRequestTypeDef](./type_defs.md#getenvironmenttemplateinputrequesttypedef)
 - [GetEnvironmentTemplateOutputTypeDef](./type_defs.md#getenvironmenttemplateoutputtypedef)
+- [GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getenvironmenttemplateversioninputenvironmenttemplateversionregisteredwaittypedef)
 - [GetEnvironmentTemplateVersionInputRequestTypeDef](./type_defs.md#getenvironmenttemplateversioninputrequesttypedef)
 - [GetEnvironmentTemplateVersionOutputTypeDef](./type_defs.md#getenvironmenttemplateversionoutputtypedef)
 - [GetRepositoryInputRequestTypeDef](./type_defs.md#getrepositoryinputrequesttypedef)
@@ -368,49 +269,72 @@ from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputR
 - [GetRepositorySyncStatusInputRequestTypeDef](./type_defs.md#getrepositorysyncstatusinputrequesttypedef)
 - [GetRepositorySyncStatusOutputTypeDef](./type_defs.md#getrepositorysyncstatusoutputtypedef)
 - [GetServiceInputRequestTypeDef](./type_defs.md#getserviceinputrequesttypedef)
+- [GetServiceInputServiceCreatedWaitTypeDef](./type_defs.md#getserviceinputservicecreatedwaittypedef)
+- [GetServiceInputServiceDeletedWaitTypeDef](./type_defs.md#getserviceinputservicedeletedwaittypedef)
+- [GetServiceInputServicePipelineDeployedWaitTypeDef](./type_defs.md#getserviceinputservicepipelinedeployedwaittypedef)
+- [GetServiceInputServiceUpdatedWaitTypeDef](./type_defs.md#getserviceinputserviceupdatedwaittypedef)
 - [GetServiceInstanceInputRequestTypeDef](./type_defs.md#getserviceinstanceinputrequesttypedef)
+- [GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef](./type_defs.md#getserviceinstanceinputserviceinstancedeployedwaittypedef)
 - [GetServiceInstanceOutputTypeDef](./type_defs.md#getserviceinstanceoutputtypedef)
 - [GetServiceOutputTypeDef](./type_defs.md#getserviceoutputtypedef)
 - [GetServiceTemplateInputRequestTypeDef](./type_defs.md#getservicetemplateinputrequesttypedef)
 - [GetServiceTemplateOutputTypeDef](./type_defs.md#getservicetemplateoutputtypedef)
 - [GetServiceTemplateVersionInputRequestTypeDef](./type_defs.md#getservicetemplateversioninputrequesttypedef)
+- [GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getservicetemplateversioninputservicetemplateversionregisteredwaittypedef)
 - [GetServiceTemplateVersionOutputTypeDef](./type_defs.md#getservicetemplateversionoutputtypedef)
 - [GetTemplateSyncConfigInputRequestTypeDef](./type_defs.md#gettemplatesyncconfiginputrequesttypedef)
 - [GetTemplateSyncConfigOutputTypeDef](./type_defs.md#gettemplatesyncconfigoutputtypedef)
 - [GetTemplateSyncStatusInputRequestTypeDef](./type_defs.md#gettemplatesyncstatusinputrequesttypedef)
 - [GetTemplateSyncStatusOutputTypeDef](./type_defs.md#gettemplatesyncstatusoutputtypedef)
+- [ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputlistenvironmentaccountconnectionspaginatetypedef)
 - [ListEnvironmentAccountConnectionsInputRequestTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputrequesttypedef)
 - [ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef)
+- [ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef](./type_defs.md#listenvironmentoutputsinputlistenvironmentoutputspaginatetypedef)
 - [ListEnvironmentOutputsInputRequestTypeDef](./type_defs.md#listenvironmentoutputsinputrequesttypedef)
 - [ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef)
+- [ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputlistenvironmentprovisionedresourcespaginatetypedef)
 - [ListEnvironmentProvisionedResourcesInputRequestTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputrequesttypedef)
 - [ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef)
+- [ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef](./type_defs.md#listenvironmenttemplateversionsinputlistenvironmenttemplateversionspaginatetypedef)
 - [ListEnvironmentTemplateVersionsInputRequestTypeDef](./type_defs.md#listenvironmenttemplateversionsinputrequesttypedef)
 - [ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef)
+- [ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef](./type_defs.md#listenvironmenttemplatesinputlistenvironmenttemplatespaginatetypedef)
 - [ListEnvironmentTemplatesInputRequestTypeDef](./type_defs.md#listenvironmenttemplatesinputrequesttypedef)
 - [ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef)
+- [ListEnvironmentsInputListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsinputlistenvironmentspaginatetypedef)
 - [ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef)
 - [ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)
+- [ListRepositoriesInputListRepositoriesPaginateTypeDef](./type_defs.md#listrepositoriesinputlistrepositoriespaginatetypedef)
 - [ListRepositoriesInputRequestTypeDef](./type_defs.md#listrepositoriesinputrequesttypedef)
 - [ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef)
+- [ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputlistrepositorysyncdefinitionspaginatetypedef)
 - [ListRepositorySyncDefinitionsInputRequestTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputrequesttypedef)
 - [ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef)
+- [ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef](./type_defs.md#listserviceinstanceoutputsinputlistserviceinstanceoutputspaginatetypedef)
 - [ListServiceInstanceOutputsInputRequestTypeDef](./type_defs.md#listserviceinstanceoutputsinputrequesttypedef)
 - [ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef)
+- [ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputlistserviceinstanceprovisionedresourcespaginatetypedef)
 - [ListServiceInstanceProvisionedResourcesInputRequestTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputrequesttypedef)
 - [ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef)
+- [ListServiceInstancesInputListServiceInstancesPaginateTypeDef](./type_defs.md#listserviceinstancesinputlistserviceinstancespaginatetypedef)
 - [ListServiceInstancesInputRequestTypeDef](./type_defs.md#listserviceinstancesinputrequesttypedef)
 - [ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef)
+- [ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef](./type_defs.md#listservicepipelineoutputsinputlistservicepipelineoutputspaginatetypedef)
 - [ListServicePipelineOutputsInputRequestTypeDef](./type_defs.md#listservicepipelineoutputsinputrequesttypedef)
 - [ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef)
+- [ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputlistservicepipelineprovisionedresourcespaginatetypedef)
 - [ListServicePipelineProvisionedResourcesInputRequestTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputrequesttypedef)
 - [ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef)
+- [ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef](./type_defs.md#listservicetemplateversionsinputlistservicetemplateversionspaginatetypedef)
 - [ListServiceTemplateVersionsInputRequestTypeDef](./type_defs.md#listservicetemplateversionsinputrequesttypedef)
 - [ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef)
+- [ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef](./type_defs.md#listservicetemplatesinputlistservicetemplatespaginatetypedef)
 - [ListServiceTemplatesInputRequestTypeDef](./type_defs.md#listservicetemplatesinputrequesttypedef)
 - [ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef)
+- [ListServicesInputListServicesPaginateTypeDef](./type_defs.md#listservicesinputlistservicespaginatetypedef)
 - [ListServicesInputRequestTypeDef](./type_defs.md#listservicesinputrequesttypedef)
 - [ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef)
+- [ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
 - [NotifyResourceDeploymentStatusChangeInputRequestTypeDef](./type_defs.md#notifyresourcedeploymentstatuschangeinputrequesttypedef)
@@ -468,3 +392,4 @@ from mypy_boto3_proton.type_defs import AcceptEnvironmentAccountConnectionInputR
 - [UpdateTemplateSyncConfigInputRequestTypeDef](./type_defs.md#updatetemplatesyncconfiginputrequesttypedef)
 - [UpdateTemplateSyncConfigOutputTypeDef](./type_defs.md#updatetemplatesyncconfigoutputtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

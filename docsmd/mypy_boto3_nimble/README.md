@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-nimblestudio-module"></a>
-
-# Type annotations for boto3 NimbleStudio module
+#  NimbleStudio module
 
 > [Index](../README.md) > NimbleStudio
 
-Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module
-[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
+!!! note ""
 
-- [Type annotations for boto3 NimbleStudio module](#type-annotations-for-boto3-nimblestudio-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [NimbleStudioClient](#nimblestudioclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+    type annotations stubs module [mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `NimbleStudio`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[nimble]'
 python -m pip install mypy-boto3-nimble
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,108 +42,37 @@ python -m pip install mypy-boto3-nimble
 python -m pip uninstall -y mypy-boto3-nimble
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="nimblestudioclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## NimbleStudioClient
 
-Type annotations for `boto3.client("nimble")` as
-[NimbleStudioClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("nimble")` as [NimbleStudioClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_nimble.client import NimbleStudioClient
+
+def get_client() -> NimbleStudioClient:
+    return Session().cleint("nimble")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_eulas](./client.md#accept_eulas)
-- [can_paginate](./client.md#can_paginate)
-- [create_launch_profile](./client.md#create_launch_profile)
-- [create_streaming_image](./client.md#create_streaming_image)
-- [create_streaming_session](./client.md#create_streaming_session)
-- [create_streaming_session_stream](./client.md#create_streaming_session_stream)
-- [create_studio](./client.md#create_studio)
-- [create_studio_component](./client.md#create_studio_component)
-- [delete_launch_profile](./client.md#delete_launch_profile)
-- [delete_launch_profile_member](./client.md#delete_launch_profile_member)
-- [delete_streaming_image](./client.md#delete_streaming_image)
-- [delete_streaming_session](./client.md#delete_streaming_session)
-- [delete_studio](./client.md#delete_studio)
-- [delete_studio_component](./client.md#delete_studio_component)
-- [delete_studio_member](./client.md#delete_studio_member)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_eula](./client.md#get_eula)
-- [get_launch_profile](./client.md#get_launch_profile)
-- [get_launch_profile_details](./client.md#get_launch_profile_details)
-- [get_launch_profile_initialization](./client.md#get_launch_profile_initialization)
-- [get_launch_profile_member](./client.md#get_launch_profile_member)
-- [get_paginator](./client.md#get_paginator)
-- [get_streaming_image](./client.md#get_streaming_image)
-- [get_streaming_session](./client.md#get_streaming_session)
-- [get_streaming_session_stream](./client.md#get_streaming_session_stream)
-- [get_studio](./client.md#get_studio)
-- [get_studio_component](./client.md#get_studio_component)
-- [get_studio_member](./client.md#get_studio_member)
-- [get_waiter](./client.md#get_waiter)
-- [list_eula_acceptances](./client.md#list_eula_acceptances)
-- [list_eulas](./client.md#list_eulas)
-- [list_launch_profile_members](./client.md#list_launch_profile_members)
-- [list_launch_profiles](./client.md#list_launch_profiles)
-- [list_streaming_images](./client.md#list_streaming_images)
-- [list_streaming_sessions](./client.md#list_streaming_sessions)
-- [list_studio_components](./client.md#list_studio_components)
-- [list_studio_members](./client.md#list_studio_members)
-- [list_studios](./client.md#list_studios)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_launch_profile_members](./client.md#put_launch_profile_members)
-- [put_studio_members](./client.md#put_studio_members)
-- [start_streaming_session](./client.md#start_streaming_session)
-- [start_studio_sso_configuration_repair](./client.md#start_studio_sso_configuration_repair)
-- [stop_streaming_session](./client.md#stop_streaming_session)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_launch_profile](./client.md#update_launch_profile)
-- [update_launch_profile_member](./client.md#update_launch_profile_member)
-- [update_streaming_image](./client.md#update_streaming_image)
-- [update_studio](./client.md#update_studio)
-- [update_studio_component](./client.md#update_studio_component)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-NimbleStudioClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerErrorException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("nimble").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("nimble").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator, ...
+from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator
+
+def get_list_eula_acceptances_paginator() -> ListEulaAcceptancesPaginator:
+    return Session().client("nimble").get_paginator("list_eula_acceptances"))
 ```
 
 - [ListEulaAcceptancesPaginator](./paginators.md#listeulaacceptancespaginator)
@@ -179,17 +85,21 @@ from mypy_boto3_nimble.paginator import ListEulaAcceptancesPaginator, ...
 - [ListStudioMembersPaginator](./paginators.md#liststudiomemberspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("nimble").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("nimble").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter, ...
+from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter
+
+def get_launch_profile_deleted_waiter() -> LaunchProfileDeletedWaiter:
+    return Session().client("nimble").get_waiter("launch_profile_deleted")
 ```
 
 - [LaunchProfileDeletedWaiter](./waiters.md#launchprofiledeletedwaiter)
@@ -205,16 +115,21 @@ from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter, ...
 - [StudioDeletedWaiter](./waiters.md#studiodeletedwaiter)
 - [StudioReadyWaiter](./waiters.md#studioreadywaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName
 
-```python
-from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName, ...
+def get_value() -> LaunchProfileDeletedWaiterName:
+    return "launch_profile_deleted"
 ```
 
 - [LaunchProfileDeletedWaiterName](./literals.md#launchprofiledeletedwaitername)
@@ -269,18 +184,22 @@ from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef
 
-```python
-from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
+def get_value() -> AcceptEulasRequestRequestTypeDef:
+    return {
+        "studioId": ...,
+    }
 ```
 
 - [AcceptEulasRequestRequestTypeDef](./type_defs.md#accepteulasrequestrequesttypedef)
@@ -322,19 +241,31 @@ from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
 - [GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef)
 - [GetLaunchProfileMemberRequestRequestTypeDef](./type_defs.md#getlaunchprofilememberrequestrequesttypedef)
 - [GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef)
+- [GetLaunchProfileRequestLaunchProfileDeletedWaitTypeDef](./type_defs.md#getlaunchprofilerequestlaunchprofiledeletedwaittypedef)
+- [GetLaunchProfileRequestLaunchProfileReadyWaitTypeDef](./type_defs.md#getlaunchprofilerequestlaunchprofilereadywaittypedef)
 - [GetLaunchProfileRequestRequestTypeDef](./type_defs.md#getlaunchprofilerequestrequesttypedef)
 - [GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef)
 - [GetStreamingImageRequestRequestTypeDef](./type_defs.md#getstreamingimagerequestrequesttypedef)
+- [GetStreamingImageRequestStreamingImageDeletedWaitTypeDef](./type_defs.md#getstreamingimagerequeststreamingimagedeletedwaittypedef)
+- [GetStreamingImageRequestStreamingImageReadyWaitTypeDef](./type_defs.md#getstreamingimagerequeststreamingimagereadywaittypedef)
 - [GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef)
 - [GetStreamingSessionRequestRequestTypeDef](./type_defs.md#getstreamingsessionrequestrequesttypedef)
+- [GetStreamingSessionRequestStreamingSessionDeletedWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessiondeletedwaittypedef)
+- [GetStreamingSessionRequestStreamingSessionReadyWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessionreadywaittypedef)
+- [GetStreamingSessionRequestStreamingSessionStoppedWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessionstoppedwaittypedef)
 - [GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef)
 - [GetStreamingSessionStreamRequestRequestTypeDef](./type_defs.md#getstreamingsessionstreamrequestrequesttypedef)
+- [GetStreamingSessionStreamRequestStreamingSessionStreamReadyWaitTypeDef](./type_defs.md#getstreamingsessionstreamrequeststreamingsessionstreamreadywaittypedef)
 - [GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef)
 - [GetStudioComponentRequestRequestTypeDef](./type_defs.md#getstudiocomponentrequestrequesttypedef)
+- [GetStudioComponentRequestStudioComponentDeletedWaitTypeDef](./type_defs.md#getstudiocomponentrequeststudiocomponentdeletedwaittypedef)
+- [GetStudioComponentRequestStudioComponentReadyWaitTypeDef](./type_defs.md#getstudiocomponentrequeststudiocomponentreadywaittypedef)
 - [GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef)
 - [GetStudioMemberRequestRequestTypeDef](./type_defs.md#getstudiomemberrequestrequesttypedef)
 - [GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef)
 - [GetStudioRequestRequestTypeDef](./type_defs.md#getstudiorequestrequesttypedef)
+- [GetStudioRequestStudioDeletedWaitTypeDef](./type_defs.md#getstudiorequeststudiodeletedwaittypedef)
+- [GetStudioRequestStudioReadyWaitTypeDef](./type_defs.md#getstudiorequeststudioreadywaittypedef)
 - [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef)
 - [LaunchProfileInitializationActiveDirectoryTypeDef](./type_defs.md#launchprofileinitializationactivedirectorytypedef)
 - [LaunchProfileInitializationScriptTypeDef](./type_defs.md#launchprofileinitializationscripttypedef)
@@ -342,22 +273,31 @@ from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
 - [LaunchProfileMembershipTypeDef](./type_defs.md#launchprofilemembershiptypedef)
 - [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 - [LicenseServiceConfigurationTypeDef](./type_defs.md#licenseserviceconfigurationtypedef)
+- [ListEulaAcceptancesRequestListEulaAcceptancesPaginateTypeDef](./type_defs.md#listeulaacceptancesrequestlisteulaacceptancespaginatetypedef)
 - [ListEulaAcceptancesRequestRequestTypeDef](./type_defs.md#listeulaacceptancesrequestrequesttypedef)
 - [ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef)
+- [ListEulasRequestListEulasPaginateTypeDef](./type_defs.md#listeulasrequestlisteulaspaginatetypedef)
 - [ListEulasRequestRequestTypeDef](./type_defs.md#listeulasrequestrequesttypedef)
 - [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef)
+- [ListLaunchProfileMembersRequestListLaunchProfileMembersPaginateTypeDef](./type_defs.md#listlaunchprofilemembersrequestlistlaunchprofilememberspaginatetypedef)
 - [ListLaunchProfileMembersRequestRequestTypeDef](./type_defs.md#listlaunchprofilemembersrequestrequesttypedef)
 - [ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef)
+- [ListLaunchProfilesRequestListLaunchProfilesPaginateTypeDef](./type_defs.md#listlaunchprofilesrequestlistlaunchprofilespaginatetypedef)
 - [ListLaunchProfilesRequestRequestTypeDef](./type_defs.md#listlaunchprofilesrequestrequesttypedef)
 - [ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef)
+- [ListStreamingImagesRequestListStreamingImagesPaginateTypeDef](./type_defs.md#liststreamingimagesrequestliststreamingimagespaginatetypedef)
 - [ListStreamingImagesRequestRequestTypeDef](./type_defs.md#liststreamingimagesrequestrequesttypedef)
 - [ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef)
+- [ListStreamingSessionsRequestListStreamingSessionsPaginateTypeDef](./type_defs.md#liststreamingsessionsrequestliststreamingsessionspaginatetypedef)
 - [ListStreamingSessionsRequestRequestTypeDef](./type_defs.md#liststreamingsessionsrequestrequesttypedef)
 - [ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef)
+- [ListStudioComponentsRequestListStudioComponentsPaginateTypeDef](./type_defs.md#liststudiocomponentsrequestliststudiocomponentspaginatetypedef)
 - [ListStudioComponentsRequestRequestTypeDef](./type_defs.md#liststudiocomponentsrequestrequesttypedef)
 - [ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef)
+- [ListStudioMembersRequestListStudioMembersPaginateTypeDef](./type_defs.md#liststudiomembersrequestliststudiomemberspaginatetypedef)
 - [ListStudioMembersRequestRequestTypeDef](./type_defs.md#liststudiomembersrequestrequesttypedef)
 - [ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef)
+- [ListStudiosRequestListStudiosPaginateTypeDef](./type_defs.md#liststudiosrequestliststudiospaginatetypedef)
 - [ListStudiosRequestRequestTypeDef](./type_defs.md#liststudiosrequestrequesttypedef)
 - [ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -405,3 +345,4 @@ from mypy_boto3_nimble.type_defs import AcceptEulasRequestRequestTypeDef, ...
 - [UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef)
 - [ValidationResultTypeDef](./type_defs.md#validationresulttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

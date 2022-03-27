@@ -1,3232 +1,4298 @@
-<a id="typed-dictionaries-for-boto3-devicefarm-module"></a>
-
-# Typed dictionaries for boto3 DeviceFarm module
+# Typed dictionaries
 
 > [Index](../README.md) > [DeviceFarm](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
-type annotations stubs module
-[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DeviceFarm module](#typed-dictionaries-for-boto3-devicefarm-module)
-  - [AccountSettingsTypeDef](#accountsettingstypedef)
-  - [ArtifactTypeDef](#artifacttypedef)
-  - [CPUTypeDef](#cputypedef)
-  - [CountersTypeDef](#counterstypedef)
-  - [CreateDevicePoolRequestRequestTypeDef](#createdevicepoolrequestrequesttypedef)
-  - [CreateDevicePoolResultTypeDef](#createdevicepoolresulttypedef)
-  - [CreateInstanceProfileRequestRequestTypeDef](#createinstanceprofilerequestrequesttypedef)
-  - [CreateInstanceProfileResultTypeDef](#createinstanceprofileresulttypedef)
-  - [CreateNetworkProfileRequestRequestTypeDef](#createnetworkprofilerequestrequesttypedef)
-  - [CreateNetworkProfileResultTypeDef](#createnetworkprofileresulttypedef)
-  - [CreateProjectRequestRequestTypeDef](#createprojectrequestrequesttypedef)
-  - [CreateProjectResultTypeDef](#createprojectresulttypedef)
-  - [CreateRemoteAccessSessionConfigurationTypeDef](#createremoteaccesssessionconfigurationtypedef)
-  - [CreateRemoteAccessSessionRequestRequestTypeDef](#createremoteaccesssessionrequestrequesttypedef)
-  - [CreateRemoteAccessSessionResultTypeDef](#createremoteaccesssessionresulttypedef)
-  - [CreateTestGridProjectRequestRequestTypeDef](#createtestgridprojectrequestrequesttypedef)
-  - [CreateTestGridProjectResultTypeDef](#createtestgridprojectresulttypedef)
-  - [CreateTestGridUrlRequestRequestTypeDef](#createtestgridurlrequestrequesttypedef)
-  - [CreateTestGridUrlResultTypeDef](#createtestgridurlresulttypedef)
-  - [CreateUploadRequestRequestTypeDef](#createuploadrequestrequesttypedef)
-  - [CreateUploadResultTypeDef](#createuploadresulttypedef)
-  - [CreateVPCEConfigurationRequestRequestTypeDef](#createvpceconfigurationrequestrequesttypedef)
-  - [CreateVPCEConfigurationResultTypeDef](#createvpceconfigurationresulttypedef)
-  - [CustomerArtifactPathsTypeDef](#customerartifactpathstypedef)
-  - [DeleteDevicePoolRequestRequestTypeDef](#deletedevicepoolrequestrequesttypedef)
-  - [DeleteInstanceProfileRequestRequestTypeDef](#deleteinstanceprofilerequestrequesttypedef)
-  - [DeleteNetworkProfileRequestRequestTypeDef](#deletenetworkprofilerequestrequesttypedef)
-  - [DeleteProjectRequestRequestTypeDef](#deleteprojectrequestrequesttypedef)
-  - [DeleteRemoteAccessSessionRequestRequestTypeDef](#deleteremoteaccesssessionrequestrequesttypedef)
-  - [DeleteRunRequestRequestTypeDef](#deleterunrequestrequesttypedef)
-  - [DeleteTestGridProjectRequestRequestTypeDef](#deletetestgridprojectrequestrequesttypedef)
-  - [DeleteUploadRequestRequestTypeDef](#deleteuploadrequestrequesttypedef)
-  - [DeleteVPCEConfigurationRequestRequestTypeDef](#deletevpceconfigurationrequestrequesttypedef)
-  - [DeviceFilterTypeDef](#devicefiltertypedef)
-  - [DeviceInstanceTypeDef](#deviceinstancetypedef)
-  - [DeviceMinutesTypeDef](#deviceminutestypedef)
-  - [DevicePoolCompatibilityResultTypeDef](#devicepoolcompatibilityresulttypedef)
-  - [DevicePoolTypeDef](#devicepooltypedef)
-  - [DeviceSelectionConfigurationTypeDef](#deviceselectionconfigurationtypedef)
-  - [DeviceSelectionResultTypeDef](#deviceselectionresulttypedef)
-  - [DeviceTypeDef](#devicetypedef)
-  - [ExecutionConfigurationTypeDef](#executionconfigurationtypedef)
-  - [GetAccountSettingsResultTypeDef](#getaccountsettingsresulttypedef)
-  - [GetDeviceInstanceRequestRequestTypeDef](#getdeviceinstancerequestrequesttypedef)
-  - [GetDeviceInstanceResultTypeDef](#getdeviceinstanceresulttypedef)
-  - [GetDevicePoolCompatibilityRequestRequestTypeDef](#getdevicepoolcompatibilityrequestrequesttypedef)
-  - [GetDevicePoolCompatibilityResultTypeDef](#getdevicepoolcompatibilityresulttypedef)
-  - [GetDevicePoolRequestRequestTypeDef](#getdevicepoolrequestrequesttypedef)
-  - [GetDevicePoolResultTypeDef](#getdevicepoolresulttypedef)
-  - [GetDeviceRequestRequestTypeDef](#getdevicerequestrequesttypedef)
-  - [GetDeviceResultTypeDef](#getdeviceresulttypedef)
-  - [GetInstanceProfileRequestRequestTypeDef](#getinstanceprofilerequestrequesttypedef)
-  - [GetInstanceProfileResultTypeDef](#getinstanceprofileresulttypedef)
-  - [GetJobRequestRequestTypeDef](#getjobrequestrequesttypedef)
-  - [GetJobResultTypeDef](#getjobresulttypedef)
-  - [GetNetworkProfileRequestRequestTypeDef](#getnetworkprofilerequestrequesttypedef)
-  - [GetNetworkProfileResultTypeDef](#getnetworkprofileresulttypedef)
-  - [GetOfferingStatusRequestRequestTypeDef](#getofferingstatusrequestrequesttypedef)
-  - [GetOfferingStatusResultTypeDef](#getofferingstatusresulttypedef)
-  - [GetProjectRequestRequestTypeDef](#getprojectrequestrequesttypedef)
-  - [GetProjectResultTypeDef](#getprojectresulttypedef)
-  - [GetRemoteAccessSessionRequestRequestTypeDef](#getremoteaccesssessionrequestrequesttypedef)
-  - [GetRemoteAccessSessionResultTypeDef](#getremoteaccesssessionresulttypedef)
-  - [GetRunRequestRequestTypeDef](#getrunrequestrequesttypedef)
-  - [GetRunResultTypeDef](#getrunresulttypedef)
-  - [GetSuiteRequestRequestTypeDef](#getsuiterequestrequesttypedef)
-  - [GetSuiteResultTypeDef](#getsuiteresulttypedef)
-  - [GetTestGridProjectRequestRequestTypeDef](#gettestgridprojectrequestrequesttypedef)
-  - [GetTestGridProjectResultTypeDef](#gettestgridprojectresulttypedef)
-  - [GetTestGridSessionRequestRequestTypeDef](#gettestgridsessionrequestrequesttypedef)
-  - [GetTestGridSessionResultTypeDef](#gettestgridsessionresulttypedef)
-  - [GetTestRequestRequestTypeDef](#gettestrequestrequesttypedef)
-  - [GetTestResultTypeDef](#gettestresulttypedef)
-  - [GetUploadRequestRequestTypeDef](#getuploadrequestrequesttypedef)
-  - [GetUploadResultTypeDef](#getuploadresulttypedef)
-  - [GetVPCEConfigurationRequestRequestTypeDef](#getvpceconfigurationrequestrequesttypedef)
-  - [GetVPCEConfigurationResultTypeDef](#getvpceconfigurationresulttypedef)
-  - [IncompatibilityMessageTypeDef](#incompatibilitymessagetypedef)
-  - [InstallToRemoteAccessSessionRequestRequestTypeDef](#installtoremoteaccesssessionrequestrequesttypedef)
-  - [InstallToRemoteAccessSessionResultTypeDef](#installtoremoteaccesssessionresulttypedef)
-  - [InstanceProfileTypeDef](#instanceprofiletypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [ListArtifactsRequestRequestTypeDef](#listartifactsrequestrequesttypedef)
-  - [ListArtifactsResultTypeDef](#listartifactsresulttypedef)
-  - [ListDeviceInstancesRequestRequestTypeDef](#listdeviceinstancesrequestrequesttypedef)
-  - [ListDeviceInstancesResultTypeDef](#listdeviceinstancesresulttypedef)
-  - [ListDevicePoolsRequestRequestTypeDef](#listdevicepoolsrequestrequesttypedef)
-  - [ListDevicePoolsResultTypeDef](#listdevicepoolsresulttypedef)
-  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
-  - [ListDevicesResultTypeDef](#listdevicesresulttypedef)
-  - [ListInstanceProfilesRequestRequestTypeDef](#listinstanceprofilesrequestrequesttypedef)
-  - [ListInstanceProfilesResultTypeDef](#listinstanceprofilesresulttypedef)
-  - [ListJobsRequestRequestTypeDef](#listjobsrequestrequesttypedef)
-  - [ListJobsResultTypeDef](#listjobsresulttypedef)
-  - [ListNetworkProfilesRequestRequestTypeDef](#listnetworkprofilesrequestrequesttypedef)
-  - [ListNetworkProfilesResultTypeDef](#listnetworkprofilesresulttypedef)
-  - [ListOfferingPromotionsRequestRequestTypeDef](#listofferingpromotionsrequestrequesttypedef)
-  - [ListOfferingPromotionsResultTypeDef](#listofferingpromotionsresulttypedef)
-  - [ListOfferingTransactionsRequestRequestTypeDef](#listofferingtransactionsrequestrequesttypedef)
-  - [ListOfferingTransactionsResultTypeDef](#listofferingtransactionsresulttypedef)
-  - [ListOfferingsRequestRequestTypeDef](#listofferingsrequestrequesttypedef)
-  - [ListOfferingsResultTypeDef](#listofferingsresulttypedef)
-  - [ListProjectsRequestRequestTypeDef](#listprojectsrequestrequesttypedef)
-  - [ListProjectsResultTypeDef](#listprojectsresulttypedef)
-  - [ListRemoteAccessSessionsRequestRequestTypeDef](#listremoteaccesssessionsrequestrequesttypedef)
-  - [ListRemoteAccessSessionsResultTypeDef](#listremoteaccesssessionsresulttypedef)
-  - [ListRunsRequestRequestTypeDef](#listrunsrequestrequesttypedef)
-  - [ListRunsResultTypeDef](#listrunsresulttypedef)
-  - [ListSamplesRequestRequestTypeDef](#listsamplesrequestrequesttypedef)
-  - [ListSamplesResultTypeDef](#listsamplesresulttypedef)
-  - [ListSuitesRequestRequestTypeDef](#listsuitesrequestrequesttypedef)
-  - [ListSuitesResultTypeDef](#listsuitesresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTestGridProjectsRequestRequestTypeDef](#listtestgridprojectsrequestrequesttypedef)
-  - [ListTestGridProjectsResultTypeDef](#listtestgridprojectsresulttypedef)
-  - [ListTestGridSessionActionsRequestRequestTypeDef](#listtestgridsessionactionsrequestrequesttypedef)
-  - [ListTestGridSessionActionsResultTypeDef](#listtestgridsessionactionsresulttypedef)
-  - [ListTestGridSessionArtifactsRequestRequestTypeDef](#listtestgridsessionartifactsrequestrequesttypedef)
-  - [ListTestGridSessionArtifactsResultTypeDef](#listtestgridsessionartifactsresulttypedef)
-  - [ListTestGridSessionsRequestRequestTypeDef](#listtestgridsessionsrequestrequesttypedef)
-  - [ListTestGridSessionsResultTypeDef](#listtestgridsessionsresulttypedef)
-  - [ListTestsRequestRequestTypeDef](#listtestsrequestrequesttypedef)
-  - [ListTestsResultTypeDef](#listtestsresulttypedef)
-  - [ListUniqueProblemsRequestRequestTypeDef](#listuniqueproblemsrequestrequesttypedef)
-  - [ListUniqueProblemsResultTypeDef](#listuniqueproblemsresulttypedef)
-  - [ListUploadsRequestRequestTypeDef](#listuploadsrequestrequesttypedef)
-  - [ListUploadsResultTypeDef](#listuploadsresulttypedef)
-  - [ListVPCEConfigurationsRequestRequestTypeDef](#listvpceconfigurationsrequestrequesttypedef)
-  - [ListVPCEConfigurationsResultTypeDef](#listvpceconfigurationsresulttypedef)
-  - [LocationTypeDef](#locationtypedef)
-  - [MonetaryAmountTypeDef](#monetaryamounttypedef)
-  - [NetworkProfileTypeDef](#networkprofiletypedef)
-  - [OfferingPromotionTypeDef](#offeringpromotiontypedef)
-  - [OfferingStatusTypeDef](#offeringstatustypedef)
-  - [OfferingTransactionTypeDef](#offeringtransactiontypedef)
-  - [OfferingTypeDef](#offeringtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProblemDetailTypeDef](#problemdetailtypedef)
-  - [ProblemTypeDef](#problemtypedef)
-  - [ProjectTypeDef](#projecttypedef)
-  - [PurchaseOfferingRequestRequestTypeDef](#purchaseofferingrequestrequesttypedef)
-  - [PurchaseOfferingResultTypeDef](#purchaseofferingresulttypedef)
-  - [RadiosTypeDef](#radiostypedef)
-  - [RecurringChargeTypeDef](#recurringchargetypedef)
-  - [RemoteAccessSessionTypeDef](#remoteaccesssessiontypedef)
-  - [RenewOfferingRequestRequestTypeDef](#renewofferingrequestrequesttypedef)
-  - [RenewOfferingResultTypeDef](#renewofferingresulttypedef)
-  - [ResolutionTypeDef](#resolutiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuleTypeDef](#ruletypedef)
-  - [RunTypeDef](#runtypedef)
-  - [SampleTypeDef](#sampletypedef)
-  - [ScheduleRunConfigurationTypeDef](#schedulerunconfigurationtypedef)
-  - [ScheduleRunRequestRequestTypeDef](#schedulerunrequestrequesttypedef)
-  - [ScheduleRunResultTypeDef](#schedulerunresulttypedef)
-  - [ScheduleRunTestTypeDef](#scheduleruntesttypedef)
-  - [StopJobRequestRequestTypeDef](#stopjobrequestrequesttypedef)
-  - [StopJobResultTypeDef](#stopjobresulttypedef)
-  - [StopRemoteAccessSessionRequestRequestTypeDef](#stopremoteaccesssessionrequestrequesttypedef)
-  - [StopRemoteAccessSessionResultTypeDef](#stopremoteaccesssessionresulttypedef)
-  - [StopRunRequestRequestTypeDef](#stoprunrequestrequesttypedef)
-  - [StopRunResultTypeDef](#stoprunresulttypedef)
-  - [SuiteTypeDef](#suitetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TestGridProjectTypeDef](#testgridprojecttypedef)
-  - [TestGridSessionActionTypeDef](#testgridsessionactiontypedef)
-  - [TestGridSessionArtifactTypeDef](#testgridsessionartifacttypedef)
-  - [TestGridSessionTypeDef](#testgridsessiontypedef)
-  - [TestGridVpcConfigTypeDef](#testgridvpcconfigtypedef)
-  - [TestTypeDef](#testtypedef)
-  - [TrialMinutesTypeDef](#trialminutestypedef)
-  - [UniqueProblemTypeDef](#uniqueproblemtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDeviceInstanceRequestRequestTypeDef](#updatedeviceinstancerequestrequesttypedef)
-  - [UpdateDeviceInstanceResultTypeDef](#updatedeviceinstanceresulttypedef)
-  - [UpdateDevicePoolRequestRequestTypeDef](#updatedevicepoolrequestrequesttypedef)
-  - [UpdateDevicePoolResultTypeDef](#updatedevicepoolresulttypedef)
-  - [UpdateInstanceProfileRequestRequestTypeDef](#updateinstanceprofilerequestrequesttypedef)
-  - [UpdateInstanceProfileResultTypeDef](#updateinstanceprofileresulttypedef)
-  - [UpdateNetworkProfileRequestRequestTypeDef](#updatenetworkprofilerequestrequesttypedef)
-  - [UpdateNetworkProfileResultTypeDef](#updatenetworkprofileresulttypedef)
-  - [UpdateProjectRequestRequestTypeDef](#updateprojectrequestrequesttypedef)
-  - [UpdateProjectResultTypeDef](#updateprojectresulttypedef)
-  - [UpdateTestGridProjectRequestRequestTypeDef](#updatetestgridprojectrequestrequesttypedef)
-  - [UpdateTestGridProjectResultTypeDef](#updatetestgridprojectresulttypedef)
-  - [UpdateUploadRequestRequestTypeDef](#updateuploadrequestrequesttypedef)
-  - [UpdateUploadResultTypeDef](#updateuploadresulttypedef)
-  - [UpdateVPCEConfigurationRequestRequestTypeDef](#updatevpceconfigurationrequestrequesttypedef)
-  - [UpdateVPCEConfigurationResultTypeDef](#updatevpceconfigurationresulttypedef)
-  - [UploadTypeDef](#uploadtypedef)
-  - [VPCEConfigurationTypeDef](#vpceconfigurationtypedef)
-
-<a id="accountsettingstypedef"></a>
+    Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+    type annotations stubs module [mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ## AccountSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import AccountSettingsTypeDef
+
+def get_value() -> AccountSettingsTypeDef:
+    return {
+        "awsAccountNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountSettingsTypeDef(TypedDict):
+    awsAccountNumber: NotRequired[str],
+    unmeteredDevices: NotRequired[Dict[DevicePlatformType, int]],  # (1)
+    unmeteredRemoteAccessDevices: NotRequired[Dict[DevicePlatformType, int]],  # (1)
+    maxJobTimeoutMinutes: NotRequired[int],
+    trialMinutes: NotRequired[TrialMinutesTypeDef],  # (3)
+    maxSlots: NotRequired[Dict[str, int]],
+    defaultJobTimeoutMinutes: NotRequired[int],
+    skipAppResign: NotRequired[bool],
+```
 
-- `awsAccountNumber`: `str`
-- `unmeteredDevices`:
-  `Dict`\[[DevicePlatformType](./literals.md#deviceplatformtype), `int`\]
-- `unmeteredRemoteAccessDevices`:
-  `Dict`\[[DevicePlatformType](./literals.md#deviceplatformtype), `int`\]
-- `maxJobTimeoutMinutes`: `int`
-- `trialMinutes`: [TrialMinutesTypeDef](./type_defs.md#trialminutestypedef)
-- `maxSlots`: `Dict`\[`str`, `int`\]
-- `defaultJobTimeoutMinutes`: `int`
-- `skipAppResign`: `bool`
-
-<a id="artifacttypedef"></a>
-
+1. See [:material-code-brackets: DevicePlatformType](./literals.md#deviceplatformtype) 
+2. See [:material-code-brackets: DevicePlatformType](./literals.md#deviceplatformtype) 
+3. See [:material-code-braces: TrialMinutesTypeDef](./type_defs.md#trialminutestypedef) 
 ## ArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ArtifactTypeDef
+
+def get_value() -> ArtifactTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ArtifactTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[ArtifactTypeType],  # (1)
+    extension: NotRequired[str],
+    url: NotRequired[str],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [ArtifactTypeType](./literals.md#artifacttypetype)
-- `extension`: `str`
-- `url`: `str`
-
-<a id="cputypedef"></a>
-
+1. See [:material-code-brackets: ArtifactTypeType](./literals.md#artifacttypetype) 
 ## CPUTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CPUTypeDef
+
+def get_value() -> CPUTypeDef:
+    return {
+        "frequency": ...,
+    }
 ```
 
-Optional fields:
-
-- `frequency`: `str`
-- `architecture`: `str`
-- `clock`: `float`
-
-<a id="counterstypedef"></a>
+```python title="Definition"
+class CPUTypeDef(TypedDict):
+    frequency: NotRequired[str],
+    architecture: NotRequired[str],
+    clock: NotRequired[float],
+```
 
 ## CountersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CountersTypeDef
+
+def get_value() -> CountersTypeDef:
+    return {
+        "total": ...,
+    }
 ```
 
-Optional fields:
-
-- `total`: `int`
-- `passed`: `int`
-- `failed`: `int`
-- `warned`: `int`
-- `errored`: `int`
-- `stopped`: `int`
-- `skipped`: `int`
-
-<a id="createdevicepoolrequestrequesttypedef"></a>
+```python title="Definition"
+class CountersTypeDef(TypedDict):
+    total: NotRequired[int],
+    passed: NotRequired[int],
+    failed: NotRequired[int],
+    warned: NotRequired[int],
+    errored: NotRequired[int],
+    stopped: NotRequired[int],
+    skipped: NotRequired[int],
+```
 
 ## CreateDevicePoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateDevicePoolRequestRequestTypeDef
+
+def get_value() -> CreateDevicePoolRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "name": ...,
+        "rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDevicePoolRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    name: str,
+    rules: Sequence[RuleTypeDef],  # (1)
+    description: NotRequired[str],
+    maxDevices: NotRequired[int],
+```
 
-- `projectArn`: `str`
-- `name`: `str`
-- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-
-Optional fields:
-
-- `description`: `str`
-- `maxDevices`: `int`
-
-<a id="createdevicepoolresulttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## CreateDevicePoolResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateDevicePoolResultTypeDef
+
+def get_value() -> CreateDevicePoolResultTypeDef:
+    return {
+        "devicePool": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDevicePoolResultTypeDef(TypedDict):
+    devicePool: DevicePoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstanceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevicePoolTypeDef](./type_defs.md#devicepooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileRequestRequestTypeDef
+
+def get_value() -> CreateInstanceProfileRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
-- `rebootAfterUse`: `bool`
-
-<a id="createinstanceprofileresulttypedef"></a>
+```python title="Definition"
+class CreateInstanceProfileRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    packageCleanup: NotRequired[bool],
+    excludeAppPackagesFromCleanup: NotRequired[Sequence[str]],
+    rebootAfterUse: NotRequired[bool],
+```
 
 ## CreateInstanceProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateInstanceProfileResultTypeDef
+
+def get_value() -> CreateInstanceProfileResultTypeDef:
+    return {
+        "instanceProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceProfileResultTypeDef(TypedDict):
+    instanceProfile: InstanceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createnetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileRequestRequestTypeDef
+
+def get_value() -> CreateNetworkProfileRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNetworkProfileRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    name: str,
+    description: NotRequired[str],
+    type: NotRequired[NetworkProfileTypeType],  # (1)
+    uplinkBandwidthBits: NotRequired[int],
+    downlinkBandwidthBits: NotRequired[int],
+    uplinkDelayMs: NotRequired[int],
+    downlinkDelayMs: NotRequired[int],
+    uplinkJitterMs: NotRequired[int],
+    downlinkJitterMs: NotRequired[int],
+    uplinkLossPercent: NotRequired[int],
+    downlinkLossPercent: NotRequired[int],
+```
 
-- `projectArn`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `uplinkBandwidthBits`: `int`
-- `downlinkBandwidthBits`: `int`
-- `uplinkDelayMs`: `int`
-- `downlinkDelayMs`: `int`
-- `uplinkJitterMs`: `int`
-- `downlinkJitterMs`: `int`
-- `uplinkLossPercent`: `int`
-- `downlinkLossPercent`: `int`
-
-<a id="createnetworkprofileresulttypedef"></a>
-
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
 ## CreateNetworkProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateNetworkProfileResultTypeDef
+
+def get_value() -> CreateNetworkProfileResultTypeDef:
+    return {
+        "networkProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNetworkProfileResultTypeDef(TypedDict):
+    networkProfile: NetworkProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateProjectRequestRequestTypeDef
+
+def get_value() -> CreateProjectRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `defaultJobTimeoutMinutes`: `int`
-
-<a id="createprojectresulttypedef"></a>
+```python title="Definition"
+class CreateProjectRequestRequestTypeDef(TypedDict):
+    name: str,
+    defaultJobTimeoutMinutes: NotRequired[int],
+```
 
 ## CreateProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateProjectResultTypeDef
+
+def get_value() -> CreateProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createremoteaccesssessionconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRemoteAccessSessionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionConfigurationTypeDef
+
+def get_value() -> CreateRemoteAccessSessionConfigurationTypeDef:
+    return {
+        "billingMethod": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateRemoteAccessSessionConfigurationTypeDef(TypedDict):
+    billingMethod: NotRequired[BillingMethodType],  # (1)
+    vpceConfigurationArns: NotRequired[Sequence[str]],
+```
 
-- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
-- `vpceConfigurationArns`: `Sequence`\[`str`\]
-
-<a id="createremoteaccesssessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BillingMethodType](./literals.md#billingmethodtype) 
 ## CreateRemoteAccessSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionRequestRequestTypeDef
+
+def get_value() -> CreateRemoteAccessSessionRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "deviceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRemoteAccessSessionRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    deviceArn: str,
+    instanceArn: NotRequired[str],
+    sshPublicKey: NotRequired[str],
+    remoteDebugEnabled: NotRequired[bool],
+    remoteRecordEnabled: NotRequired[bool],
+    remoteRecordAppArn: NotRequired[str],
+    name: NotRequired[str],
+    clientId: NotRequired[str],
+    configuration: NotRequired[CreateRemoteAccessSessionConfigurationTypeDef],  # (1)
+    interactionMode: NotRequired[InteractionModeType],  # (2)
+    skipAppResign: NotRequired[bool],
+```
 
-- `projectArn`: `str`
-- `deviceArn`: `str`
-
-Optional fields:
-
-- `instanceArn`: `str`
-- `sshPublicKey`: `str`
-- `remoteDebugEnabled`: `bool`
-- `remoteRecordEnabled`: `bool`
-- `remoteRecordAppArn`: `str`
-- `name`: `str`
-- `clientId`: `str`
-- `configuration`:
-  [CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef)
-- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
-- `skipAppResign`: `bool`
-
-<a id="createremoteaccesssessionresulttypedef"></a>
-
+1. See [:material-code-braces: CreateRemoteAccessSessionConfigurationTypeDef](./type_defs.md#createremoteaccesssessionconfigurationtypedef) 
+2. See [:material-code-brackets: InteractionModeType](./literals.md#interactionmodetype) 
 ## CreateRemoteAccessSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateRemoteAccessSessionResultTypeDef
+
+def get_value() -> CreateRemoteAccessSessionResultTypeDef:
+    return {
+        "remoteAccessSession": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRemoteAccessSessionResultTypeDef(TypedDict):
+    remoteAccessSession: RemoteAccessSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtestgridprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTestGridProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectRequestRequestTypeDef
+
+def get_value() -> CreateTestGridProjectRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTestGridProjectRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    vpcConfig: NotRequired[TestGridVpcConfigTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `vpcConfig`:
-  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
-
-<a id="createtestgridprojectresulttypedef"></a>
-
+1. See [:material-code-braces: TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef) 
 ## CreateTestGridProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateTestGridProjectResultTypeDef
+
+def get_value() -> CreateTestGridProjectResultTypeDef:
+    return {
+        "testGridProject": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTestGridProjectResultTypeDef(TypedDict):
+    testGridProject: TestGridProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridProject`:
-  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtestgridurlrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTestGridUrlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateTestGridUrlRequestRequestTypeDef
+
+def get_value() -> CreateTestGridUrlRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "expiresInSeconds": ...,
+    }
 ```
 
-Required fields:
-
-- `projectArn`: `str`
-- `expiresInSeconds`: `int`
-
-<a id="createtestgridurlresulttypedef"></a>
+```python title="Definition"
+class CreateTestGridUrlRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    expiresInSeconds: int,
+```
 
 ## CreateTestGridUrlResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateTestGridUrlResultTypeDef
+
+def get_value() -> CreateTestGridUrlResultTypeDef:
+    return {
+        "url": ...,
+        "expires": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTestGridUrlResultTypeDef(TypedDict):
+    url: str,
+    expires: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `url`: `str`
-- `expires`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateUploadRequestRequestTypeDef
+
+def get_value() -> CreateUploadRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUploadRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    name: str,
+    type: UploadTypeType,  # (1)
+    contentType: NotRequired[str],
+```
 
-- `projectArn`: `str`
-- `name`: `str`
-- `type`: [UploadTypeType](./literals.md#uploadtypetype)
-
-Optional fields:
-
-- `contentType`: `str`
-
-<a id="createuploadresulttypedef"></a>
-
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
 ## CreateUploadResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateUploadResultTypeDef
+
+def get_value() -> CreateUploadResultTypeDef:
+    return {
+        "upload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUploadResultTypeDef(TypedDict):
+    upload: UploadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvpceconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UploadTypeDef](./type_defs.md#uploadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVPCEConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateVPCEConfigurationRequestRequestTypeDef:
+    return {
+        "vpceConfigurationName": ...,
+        "vpceServiceName": ...,
+        "serviceDnsName": ...,
+    }
 ```
 
-Required fields:
-
-- `vpceConfigurationName`: `str`
-- `vpceServiceName`: `str`
-- `serviceDnsName`: `str`
-
-Optional fields:
-
-- `vpceConfigurationDescription`: `str`
-
-<a id="createvpceconfigurationresulttypedef"></a>
+```python title="Definition"
+class CreateVPCEConfigurationRequestRequestTypeDef(TypedDict):
+    vpceConfigurationName: str,
+    vpceServiceName: str,
+    serviceDnsName: str,
+    vpceConfigurationDescription: NotRequired[str],
+```
 
 ## CreateVPCEConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CreateVPCEConfigurationResultTypeDef
+
+def get_value() -> CreateVPCEConfigurationResultTypeDef:
+    return {
+        "vpceConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVPCEConfigurationResultTypeDef(TypedDict):
+    vpceConfiguration: VPCEConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customerartifactpathstypedef"></a>
-
+1. See [:material-code-braces: VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomerArtifactPathsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import CustomerArtifactPathsTypeDef
+
+def get_value() -> CustomerArtifactPathsTypeDef:
+    return {
+        "iosPaths": ...,
+    }
 ```
 
-Optional fields:
-
-- `iosPaths`: `Sequence`\[`str`\]
-- `androidPaths`: `Sequence`\[`str`\]
-- `deviceHostPaths`: `Sequence`\[`str`\]
-
-<a id="deletedevicepoolrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomerArtifactPathsTypeDef(TypedDict):
+    iosPaths: NotRequired[Sequence[str]],
+    androidPaths: NotRequired[Sequence[str]],
+    deviceHostPaths: NotRequired[Sequence[str]],
+```
 
 ## DeleteDevicePoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteDevicePoolRequestRequestTypeDef
+
+def get_value() -> DeleteDevicePoolRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteinstanceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDevicePoolRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteInstanceProfileRequestRequestTypeDef
+
+def get_value() -> DeleteInstanceProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletenetworkprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInstanceProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteNetworkProfileRequestRequestTypeDef
+
+def get_value() -> DeleteNetworkProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteNetworkProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteProjectRequestRequestTypeDef
+
+def get_value() -> DeleteProjectRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteremoteaccesssessionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProjectRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteRemoteAccessSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteRemoteAccessSessionRequestRequestTypeDef
+
+def get_value() -> DeleteRemoteAccessSessionRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleterunrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRemoteAccessSessionRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteRunRequestRequestTypeDef
+
+def get_value() -> DeleteRunRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletetestgridprojectrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRunRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteTestGridProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteTestGridProjectRequestRequestTypeDef
+
+def get_value() -> DeleteTestGridProjectRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+    }
 ```
 
-Required fields:
-
-- `projectArn`: `str`
-
-<a id="deleteuploadrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTestGridProjectRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+```
 
 ## DeleteUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteUploadRequestRequestTypeDef
+
+def get_value() -> DeleteUploadRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletevpceconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUploadRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteVPCEConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeleteVPCEConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteVPCEConfigurationRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="devicefiltertypedef"></a>
+```python title="Definition"
+class DeleteVPCEConfigurationRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeviceFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceFilterTypeDef
+
+def get_value() -> DeviceFilterTypeDef:
+    return {
+        "attribute": ...,
+        "operator": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeviceFilterTypeDef(TypedDict):
+    attribute: DeviceFilterAttributeType,  # (1)
+    operator: RuleOperatorType,  # (2)
+    values: List[str],
+```
 
-- `attribute`:
-  [DeviceFilterAttributeType](./literals.md#devicefilterattributetype)
-- `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
-- `values`: `List`\[`str`\]
-
-<a id="deviceinstancetypedef"></a>
-
+1. See [:material-code-brackets: DeviceFilterAttributeType](./literals.md#devicefilterattributetype) 
+2. See [:material-code-brackets: RuleOperatorType](./literals.md#ruleoperatortype) 
 ## DeviceInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceInstanceTypeDef
+
+def get_value() -> DeviceInstanceTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceInstanceTypeDef(TypedDict):
+    arn: NotRequired[str],
+    deviceArn: NotRequired[str],
+    labels: NotRequired[List[str]],
+    status: NotRequired[InstanceStatusType],  # (1)
+    udid: NotRequired[str],
+    instanceProfile: NotRequired[InstanceProfileTypeDef],  # (2)
+```
 
-- `arn`: `str`
-- `deviceArn`: `str`
-- `labels`: `List`\[`str`\]
-- `status`: [InstanceStatusType](./literals.md#instancestatustype)
-- `udid`: `str`
-- `instanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-
-<a id="deviceminutestypedef"></a>
-
+1. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
+2. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
 ## DeviceMinutesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceMinutesTypeDef
+
+def get_value() -> DeviceMinutesTypeDef:
+    return {
+        "total": ...,
+    }
 ```
 
-Optional fields:
-
-- `total`: `float`
-- `metered`: `float`
-- `unmetered`: `float`
-
-<a id="devicepoolcompatibilityresulttypedef"></a>
+```python title="Definition"
+class DeviceMinutesTypeDef(TypedDict):
+    total: NotRequired[float],
+    metered: NotRequired[float],
+    unmetered: NotRequired[float],
+```
 
 ## DevicePoolCompatibilityResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DevicePoolCompatibilityResultTypeDef
+
+def get_value() -> DevicePoolCompatibilityResultTypeDef:
+    return {
+        "device": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DevicePoolCompatibilityResultTypeDef(TypedDict):
+    device: NotRequired[DeviceTypeDef],  # (1)
+    compatible: NotRequired[bool],
+    incompatibilityMessages: NotRequired[List[IncompatibilityMessageTypeDef]],  # (2)
+```
 
-- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `compatible`: `bool`
-- `incompatibilityMessages`:
-  `List`\[[IncompatibilityMessageTypeDef](./type_defs.md#incompatibilitymessagetypedef)\]
-
-<a id="devicepooltypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: IncompatibilityMessageTypeDef](./type_defs.md#incompatibilitymessagetypedef) 
 ## DevicePoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DevicePoolTypeDef
+
+def get_value() -> DevicePoolTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DevicePoolTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    type: NotRequired[DevicePoolTypeType],  # (1)
+    rules: NotRequired[List[RuleTypeDef]],  # (2)
+    maxDevices: NotRequired[int],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `description`: `str`
-- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
-- `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `maxDevices`: `int`
-
-<a id="deviceselectionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: DevicePoolTypeType](./literals.md#devicepooltypetype) 
+2. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## DeviceSelectionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceSelectionConfigurationTypeDef
+
+def get_value() -> DeviceSelectionConfigurationTypeDef:
+    return {
+        "filters": ...,
+        "maxDevices": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeviceSelectionConfigurationTypeDef(TypedDict):
+    filters: Sequence[DeviceFilterTypeDef],  # (1)
+    maxDevices: int,
+```
 
-- `filters`:
-  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
-- `maxDevices`: `int`
-
-<a id="deviceselectionresulttypedef"></a>
-
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
 ## DeviceSelectionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceSelectionResultTypeDef
+
+def get_value() -> DeviceSelectionResultTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceSelectionResultTypeDef(TypedDict):
+    filters: NotRequired[List[DeviceFilterTypeDef]],  # (1)
+    matchedDevicesCount: NotRequired[int],
+    maxDevices: NotRequired[int],
+```
 
-- `filters`:
-  `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
-- `matchedDevicesCount`: `int`
-- `maxDevices`: `int`
-
-<a id="devicetypedef"></a>
-
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
 ## DeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    manufacturer: NotRequired[str],
+    model: NotRequired[str],
+    modelId: NotRequired[str],
+    formFactor: NotRequired[DeviceFormFactorType],  # (1)
+    platform: NotRequired[DevicePlatformType],  # (2)
+    os: NotRequired[str],
+    cpu: NotRequired[CPUTypeDef],  # (3)
+    resolution: NotRequired[ResolutionTypeDef],  # (4)
+    heapSize: NotRequired[int],
+    memory: NotRequired[int],
+    image: NotRequired[str],
+    carrier: NotRequired[str],
+    radio: NotRequired[str],
+    remoteAccessEnabled: NotRequired[bool],
+    remoteDebugEnabled: NotRequired[bool],
+    fleetType: NotRequired[str],
+    fleetName: NotRequired[str],
+    instances: NotRequired[List[DeviceInstanceTypeDef]],  # (5)
+    availability: NotRequired[DeviceAvailabilityType],  # (6)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `manufacturer`: `str`
-- `model`: `str`
-- `modelId`: `str`
-- `formFactor`: [DeviceFormFactorType](./literals.md#deviceformfactortype)
-- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
-- `os`: `str`
-- `cpu`: [CPUTypeDef](./type_defs.md#cputypedef)
-- `resolution`: [ResolutionTypeDef](./type_defs.md#resolutiontypedef)
-- `heapSize`: `int`
-- `memory`: `int`
-- `image`: `str`
-- `carrier`: `str`
-- `radio`: `str`
-- `remoteAccessEnabled`: `bool`
-- `remoteDebugEnabled`: `bool`
-- `fleetType`: `str`
-- `fleetName`: `str`
-- `instances`:
-  `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
-- `availability`:
-  [DeviceAvailabilityType](./literals.md#deviceavailabilitytype)
-
-<a id="executionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: DeviceFormFactorType](./literals.md#deviceformfactortype) 
+2. See [:material-code-brackets: DevicePlatformType](./literals.md#deviceplatformtype) 
+3. See [:material-code-braces: CPUTypeDef](./type_defs.md#cputypedef) 
+4. See [:material-code-braces: ResolutionTypeDef](./type_defs.md#resolutiontypedef) 
+5. See [:material-code-braces: DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef) 
+6. See [:material-code-brackets: DeviceAvailabilityType](./literals.md#deviceavailabilitytype) 
 ## ExecutionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ExecutionConfigurationTypeDef
+
+def get_value() -> ExecutionConfigurationTypeDef:
+    return {
+        "jobTimeoutMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `jobTimeoutMinutes`: `int`
-- `accountsCleanup`: `bool`
-- `appPackagesCleanup`: `bool`
-- `videoCapture`: `bool`
-- `skipAppResign`: `bool`
-
-<a id="getaccountsettingsresulttypedef"></a>
+```python title="Definition"
+class ExecutionConfigurationTypeDef(TypedDict):
+    jobTimeoutMinutes: NotRequired[int],
+    accountsCleanup: NotRequired[bool],
+    appPackagesCleanup: NotRequired[bool],
+    videoCapture: NotRequired[bool],
+    skipAppResign: NotRequired[bool],
+```
 
 ## GetAccountSettingsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetAccountSettingsResultTypeDef
+
+def get_value() -> GetAccountSettingsResultTypeDef:
+    return {
+        "accountSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountSettingsResultTypeDef(TypedDict):
+    accountSettings: AccountSettingsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accountSettings`:
-  [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeviceinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceRequestRequestTypeDef
+
+def get_value() -> GetDeviceInstanceRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getdeviceinstanceresulttypedef"></a>
+```python title="Definition"
+class GetDeviceInstanceRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetDeviceInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceResultTypeDef
+
+def get_value() -> GetDeviceInstanceResultTypeDef:
+    return {
+        "deviceInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceInstanceResultTypeDef(TypedDict):
+    deviceInstance: DeviceInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deviceInstance`:
-  [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicepoolcompatibilityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDevicePoolCompatibilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityRequestRequestTypeDef
+
+def get_value() -> GetDevicePoolCompatibilityRequestRequestTypeDef:
+    return {
+        "devicePoolArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicePoolCompatibilityRequestRequestTypeDef(TypedDict):
+    devicePoolArn: str,
+    appArn: NotRequired[str],
+    testType: NotRequired[TestTypeType],  # (1)
+    test: NotRequired[ScheduleRunTestTypeDef],  # (2)
+    configuration: NotRequired[ScheduleRunConfigurationTypeDef],  # (3)
+```
 
-- `devicePoolArn`: `str`
-
-Optional fields:
-
-- `appArn`: `str`
-- `testType`: [TestTypeType](./literals.md#testtypetype)
-- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
-- `configuration`:
-  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
-
-<a id="getdevicepoolcompatibilityresulttypedef"></a>
-
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-braces: ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef) 
+3. See [:material-code-braces: ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef) 
 ## GetDevicePoolCompatibilityResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDevicePoolCompatibilityResultTypeDef
+
+def get_value() -> GetDevicePoolCompatibilityResultTypeDef:
+    return {
+        "compatibleDevices": ...,
+        "incompatibleDevices": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicePoolCompatibilityResultTypeDef(TypedDict):
+    compatibleDevices: List[DevicePoolCompatibilityResultTypeDef],  # (1)
+    incompatibleDevices: List[DevicePoolCompatibilityResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `compatibleDevices`:
-  `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
-- `incompatibleDevices`:
-  `List`\[[DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicepoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef) 
+2. See [:material-code-braces: DevicePoolCompatibilityResultTypeDef](./type_defs.md#devicepoolcompatibilityresulttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDevicePoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDevicePoolRequestRequestTypeDef
+
+def get_value() -> GetDevicePoolRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getdevicepoolresulttypedef"></a>
+```python title="Definition"
+class GetDevicePoolRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetDevicePoolResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDevicePoolResultTypeDef
+
+def get_value() -> GetDevicePoolResultTypeDef:
+    return {
+        "devicePool": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDevicePoolResultTypeDef(TypedDict):
+    devicePool: DevicePoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevicePoolTypeDef](./type_defs.md#devicepooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDeviceRequestRequestTypeDef
+
+def get_value() -> GetDeviceRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getdeviceresulttypedef"></a>
+```python title="Definition"
+class GetDeviceRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetDeviceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetDeviceResultTypeDef
+
+def get_value() -> GetDeviceResultTypeDef:
+    return {
+        "device": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceResultTypeDef(TypedDict):
+    device: DeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinstanceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetInstanceProfileRequestRequestTypeDef
+
+def get_value() -> GetInstanceProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getinstanceprofileresulttypedef"></a>
+```python title="Definition"
+class GetInstanceProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetInstanceProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetInstanceProfileResultTypeDef
+
+def get_value() -> GetInstanceProfileResultTypeDef:
+    return {
+        "instanceProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInstanceProfileResultTypeDef(TypedDict):
+    instanceProfile: InstanceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetJobRequestRequestTypeDef
+
+def get_value() -> GetJobRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getjobresulttypedef"></a>
+```python title="Definition"
+class GetJobRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetJobResultTypeDef
+
+def get_value() -> GetJobResultTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobResultTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getnetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetNetworkProfileRequestRequestTypeDef
+
+def get_value() -> GetNetworkProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getnetworkprofileresulttypedef"></a>
+```python title="Definition"
+class GetNetworkProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetNetworkProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetNetworkProfileResultTypeDef
+
+def get_value() -> GetNetworkProfileResultTypeDef:
+    return {
+        "networkProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetNetworkProfileResultTypeDef(TypedDict):
+    networkProfile: NetworkProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef
 
-<a id="getofferingstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef
 
+def get_value() -> GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetOfferingStatusRequestGetOfferingStatusPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetOfferingStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetOfferingStatusRequestRequestTypeDef
+
+def get_value() -> GetOfferingStatusRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="getofferingstatusresulttypedef"></a>
+```python title="Definition"
+class GetOfferingStatusRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## GetOfferingStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultTypeDef
+
+def get_value() -> GetOfferingStatusResultTypeDef:
+    return {
+        "current": ...,
+        "nextPeriod": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOfferingStatusResultTypeDef(TypedDict):
+    current: Dict[str, OfferingStatusTypeDef],  # (1)
+    nextPeriod: Dict[str, OfferingStatusTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `current`: `Dict`\[`str`,
-  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
-- `nextPeriod`: `Dict`\[`str`,
-  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef) 
+2. See [:material-code-braces: OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetProjectRequestRequestTypeDef
+
+def get_value() -> GetProjectRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getprojectresulttypedef"></a>
+```python title="Definition"
+class GetProjectRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetProjectResultTypeDef
+
+def get_value() -> GetProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getremoteaccesssessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRemoteAccessSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionRequestRequestTypeDef
+
+def get_value() -> GetRemoteAccessSessionRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getremoteaccesssessionresulttypedef"></a>
+```python title="Definition"
+class GetRemoteAccessSessionRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetRemoteAccessSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionResultTypeDef
+
+def get_value() -> GetRemoteAccessSessionResultTypeDef:
+    return {
+        "remoteAccessSession": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRemoteAccessSessionResultTypeDef(TypedDict):
+    remoteAccessSession: RemoteAccessSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetRunRequestRequestTypeDef
+
+def get_value() -> GetRunRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getrunresulttypedef"></a>
+```python title="Definition"
+class GetRunRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetRunResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetRunResultTypeDef
+
+def get_value() -> GetRunResultTypeDef:
+    return {
+        "run": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRunResultTypeDef(TypedDict):
+    run: RunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `run`: [RunTypeDef](./type_defs.md#runtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsuiterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RunTypeDef](./type_defs.md#runtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSuiteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetSuiteRequestRequestTypeDef
+
+def get_value() -> GetSuiteRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getsuiteresulttypedef"></a>
+```python title="Definition"
+class GetSuiteRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetSuiteResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetSuiteResultTypeDef
+
+def get_value() -> GetSuiteResultTypeDef:
+    return {
+        "suite": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSuiteResultTypeDef(TypedDict):
+    suite: SuiteTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `suite`: [SuiteTypeDef](./type_defs.md#suitetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettestgridprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuiteTypeDef](./type_defs.md#suitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTestGridProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestGridProjectRequestRequestTypeDef
+
+def get_value() -> GetTestGridProjectRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+    }
 ```
 
-Required fields:
-
-- `projectArn`: `str`
-
-<a id="gettestgridprojectresulttypedef"></a>
+```python title="Definition"
+class GetTestGridProjectRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+```
 
 ## GetTestGridProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestGridProjectResultTypeDef
+
+def get_value() -> GetTestGridProjectResultTypeDef:
+    return {
+        "testGridProject": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTestGridProjectResultTypeDef(TypedDict):
+    testGridProject: TestGridProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridProject`:
-  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettestgridsessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTestGridSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestGridSessionRequestRequestTypeDef
+
+def get_value() -> GetTestGridSessionRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `projectArn`: `str`
-- `sessionId`: `str`
-- `sessionArn`: `str`
-
-<a id="gettestgridsessionresulttypedef"></a>
+```python title="Definition"
+class GetTestGridSessionRequestRequestTypeDef(TypedDict):
+    projectArn: NotRequired[str],
+    sessionId: NotRequired[str],
+    sessionArn: NotRequired[str],
+```
 
 ## GetTestGridSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestGridSessionResultTypeDef
+
+def get_value() -> GetTestGridSessionResultTypeDef:
+    return {
+        "testGridSession": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTestGridSessionResultTypeDef(TypedDict):
+    testGridSession: TestGridSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridSession`:
-  [TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettestrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestRequestRequestTypeDef
+
+def get_value() -> GetTestRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="gettestresulttypedef"></a>
+```python title="Definition"
+class GetTestRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetTestResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetTestResultTypeDef
+
+def get_value() -> GetTestResultTypeDef:
+    return {
+        "test": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTestResultTypeDef(TypedDict):
+    test: TestTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `test`: [TestTypeDef](./type_defs.md#testtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestTypeDef](./type_defs.md#testtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetUploadRequestRequestTypeDef
+
+def get_value() -> GetUploadRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getuploadresulttypedef"></a>
+```python title="Definition"
+class GetUploadRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetUploadResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetUploadResultTypeDef
+
+def get_value() -> GetUploadResultTypeDef:
+    return {
+        "upload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUploadResultTypeDef(TypedDict):
+    upload: UploadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvpceconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UploadTypeDef](./type_defs.md#uploadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVPCEConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationRequestRequestTypeDef
+
+def get_value() -> GetVPCEConfigurationRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="getvpceconfigurationresulttypedef"></a>
+```python title="Definition"
+class GetVPCEConfigurationRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## GetVPCEConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationResultTypeDef
+
+def get_value() -> GetVPCEConfigurationResultTypeDef:
+    return {
+        "vpceConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVPCEConfigurationResultTypeDef(TypedDict):
+    vpceConfiguration: VPCEConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="incompatibilitymessagetypedef"></a>
-
+1. See [:material-code-braces: VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IncompatibilityMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import IncompatibilityMessageTypeDef
+
+def get_value() -> IncompatibilityMessageTypeDef:
+    return {
+        "message": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IncompatibilityMessageTypeDef(TypedDict):
+    message: NotRequired[str],
+    type: NotRequired[DeviceAttributeType],  # (1)
+```
 
-- `message`: `str`
-- `type`: [DeviceAttributeType](./literals.md#deviceattributetype)
-
-<a id="installtoremoteaccesssessionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceAttributeType](./literals.md#deviceattributetype) 
 ## InstallToRemoteAccessSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionRequestRequestTypeDef
+
+def get_value() -> InstallToRemoteAccessSessionRequestRequestTypeDef:
+    return {
+        "remoteAccessSessionArn": ...,
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `remoteAccessSessionArn`: `str`
-- `appArn`: `str`
-
-<a id="installtoremoteaccesssessionresulttypedef"></a>
+```python title="Definition"
+class InstallToRemoteAccessSessionRequestRequestTypeDef(TypedDict):
+    remoteAccessSessionArn: str,
+    appArn: str,
+```
 
 ## InstallToRemoteAccessSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import InstallToRemoteAccessSessionResultTypeDef
+
+def get_value() -> InstallToRemoteAccessSessionResultTypeDef:
+    return {
+        "appUpload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstallToRemoteAccessSessionResultTypeDef(TypedDict):
+    appUpload: UploadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appUpload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instanceprofiletypedef"></a>
-
+1. See [:material-code-braces: UploadTypeDef](./type_defs.md#uploadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import InstanceProfileTypeDef
+
+def get_value() -> InstanceProfileTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `List`\[`str`\]
-- `rebootAfterUse`: `bool`
-- `name`: `str`
-- `description`: `str`
-
-<a id="jobtypedef"></a>
+```python title="Definition"
+class InstanceProfileTypeDef(TypedDict):
+    arn: NotRequired[str],
+    packageCleanup: NotRequired[bool],
+    excludeAppPackagesFromCleanup: NotRequired[List[str]],
+    rebootAfterUse: NotRequired[bool],
+    name: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[TestTypeType],  # (1)
+    created: NotRequired[datetime],
+    status: NotRequired[ExecutionStatusType],  # (2)
+    result: NotRequired[ExecutionResultType],  # (3)
+    started: NotRequired[datetime],
+    stopped: NotRequired[datetime],
+    counters: NotRequired[CountersTypeDef],  # (4)
+    message: NotRequired[str],
+    device: NotRequired[DeviceTypeDef],  # (5)
+    instanceArn: NotRequired[str],
+    deviceMinutes: NotRequired[DeviceMinutesTypeDef],  # (6)
+    videoEndpoint: NotRequired[str],
+    videoCapture: NotRequired[bool],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [TestTypeType](./literals.md#testtypetype)
-- `created`: `datetime`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `started`: `datetime`
-- `stopped`: `datetime`
-- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
-- `message`: `str`
-- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `instanceArn`: `str`
-- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-- `videoEndpoint`: `str`
-- `videoCapture`: `bool`
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+3. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
+4. See [:material-code-braces: CountersTypeDef](./type_defs.md#counterstypedef) 
+5. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+6. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
+## ListArtifactsRequestListArtifactsPaginateTypeDef
 
-<a id="listartifactsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListArtifactsRequestListArtifactsPaginateTypeDef
 
+def get_value() -> ListArtifactsRequestListArtifactsPaginateTypeDef:
+    return {
+        "arn": ...,
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ListArtifactsRequestListArtifactsPaginateTypeDef(TypedDict):
+    arn: str,
+    type: ArtifactCategoryType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ArtifactCategoryType](./literals.md#artifactcategorytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListArtifactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListArtifactsRequestRequestTypeDef
+
+def get_value() -> ListArtifactsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListArtifactsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    type: ArtifactCategoryType,  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `arn`: `str`
-- `type`: [ArtifactCategoryType](./literals.md#artifactcategorytype)
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listartifactsresulttypedef"></a>
-
+1. See [:material-code-brackets: ArtifactCategoryType](./literals.md#artifactcategorytype) 
 ## ListArtifactsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListArtifactsResultTypeDef
+
+def get_value() -> ListArtifactsResultTypeDef:
+    return {
+        "artifacts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListArtifactsResultTypeDef(TypedDict):
+    artifacts: List[ArtifactTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `artifacts`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef
 
-<a id="listdeviceinstancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef
 
+def get_value() -> ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeviceInstancesRequestListDeviceInstancesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeviceInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesRequestRequestTypeDef
+
+def get_value() -> ListDeviceInstancesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listdeviceinstancesresulttypedef"></a>
+```python title="Definition"
+class ListDeviceInstancesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListDeviceInstancesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDeviceInstancesResultTypeDef
+
+def get_value() -> ListDeviceInstancesResultTypeDef:
+    return {
+        "deviceInstances": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeviceInstancesResultTypeDef(TypedDict):
+    deviceInstances: List[DeviceInstanceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deviceInstances`:
-  `List`\[[DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDevicePoolsRequestListDevicePoolsPaginateTypeDef
 
-<a id="listdevicepoolsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListDevicePoolsRequestListDevicePoolsPaginateTypeDef
 
+def get_value() -> ListDevicePoolsRequestListDevicePoolsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicePoolsRequestListDevicePoolsPaginateTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[DevicePoolTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DevicePoolTypeType](./literals.md#devicepooltypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDevicePoolsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDevicePoolsRequestRequestTypeDef
+
+def get_value() -> ListDevicePoolsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicePoolsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[DevicePoolTypeType],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
-- `nextToken`: `str`
-
-<a id="listdevicepoolsresulttypedef"></a>
-
+1. See [:material-code-brackets: DevicePoolTypeType](./literals.md#devicepooltypetype) 
 ## ListDevicePoolsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDevicePoolsResultTypeDef
+
+def get_value() -> ListDevicePoolsResultTypeDef:
+    return {
+        "devicePools": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicePoolsResultTypeDef(TypedDict):
+    devicePools: List[DevicePoolTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `devicePools`:
-  `List`\[[DevicePoolTypeDef](./type_defs.md#devicepooltypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DevicePoolTypeDef](./type_defs.md#devicepooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDevicesRequestListDevicesPaginateTypeDef
 
-<a id="listdevicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListDevicesRequestListDevicesPaginateTypeDef
 
+def get_value() -> ListDevicesRequestListDevicesPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDevicesRequestListDevicesPaginateTypeDef(TypedDict):
+    arn: NotRequired[str],
+    filters: NotRequired[Sequence[DeviceFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDevicesRequestRequestTypeDef
+
+def get_value() -> ListDevicesRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDevicesRequestRequestTypeDef(TypedDict):
+    arn: NotRequired[str],
+    nextToken: NotRequired[str],
+    filters: NotRequired[Sequence[DeviceFilterTypeDef]],  # (1)
+```
 
-- `arn`: `str`
-- `nextToken`: `str`
-- `filters`:
-  `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
-
-<a id="listdevicesresulttypedef"></a>
-
+1. See [:material-code-braces: DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef) 
 ## ListDevicesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListDevicesResultTypeDef
+
+def get_value() -> ListDevicesResultTypeDef:
+    return {
+        "devices": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicesResultTypeDef(TypedDict):
+    devices: List[DeviceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef
 
-<a id="listinstanceprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef
 
+def get_value() -> ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesRequestRequestTypeDef
+
+def get_value() -> ListInstanceProfilesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listinstanceprofilesresulttypedef"></a>
+```python title="Definition"
+class ListInstanceProfilesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListInstanceProfilesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListInstanceProfilesResultTypeDef
+
+def get_value() -> ListInstanceProfilesResultTypeDef:
+    return {
+        "instanceProfiles": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceProfilesResultTypeDef(TypedDict):
+    instanceProfiles: List[InstanceProfileTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListJobsRequestListJobsPaginateTypeDef
 
-<a id="listjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListJobsRequestListJobsPaginateTypeDef
 
+def get_value() -> ListJobsRequestListJobsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsRequestListJobsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListJobsRequestRequestTypeDef
+
+def get_value() -> ListJobsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listjobsresulttypedef"></a>
+```python title="Definition"
+class ListJobsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListJobsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListJobsResultTypeDef
+
+def get_value() -> ListJobsResultTypeDef:
+    return {
+        "jobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsResultTypeDef(TypedDict):
+    jobs: List[JobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef
 
-<a id="listnetworkprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef
 
+def get_value() -> ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListNetworkProfilesRequestListNetworkProfilesPaginateTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[NetworkProfileTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNetworkProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesRequestRequestTypeDef
+
+def get_value() -> ListNetworkProfilesRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNetworkProfilesRequestRequestTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[NetworkProfileTypeType],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `nextToken`: `str`
-
-<a id="listnetworkprofilesresulttypedef"></a>
-
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
 ## ListNetworkProfilesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListNetworkProfilesResultTypeDef
+
+def get_value() -> ListNetworkProfilesResultTypeDef:
+    return {
+        "networkProfiles": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNetworkProfilesResultTypeDef(TypedDict):
+    networkProfiles: List[NetworkProfileTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `networkProfiles`:
-  `List`\[[NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef
 
-<a id="listofferingpromotionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef
 
+def get_value() -> ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOfferingPromotionsRequestListOfferingPromotionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOfferingPromotionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsRequestRequestTypeDef
+
+def get_value() -> ListOfferingPromotionsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listofferingpromotionsresulttypedef"></a>
+```python title="Definition"
+class ListOfferingPromotionsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListOfferingPromotionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsResultTypeDef
+
+def get_value() -> ListOfferingPromotionsResultTypeDef:
+    return {
+        "offeringPromotions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOfferingPromotionsResultTypeDef(TypedDict):
+    offeringPromotions: List[OfferingPromotionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `offeringPromotions`:
-  `List`\[[OfferingPromotionTypeDef](./type_defs.md#offeringpromotiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OfferingPromotionTypeDef](./type_defs.md#offeringpromotiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef
 
-<a id="listofferingtransactionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef
 
+def get_value() -> ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOfferingTransactionsRequestListOfferingTransactionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOfferingTransactionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsRequestRequestTypeDef
+
+def get_value() -> ListOfferingTransactionsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listofferingtransactionsresulttypedef"></a>
+```python title="Definition"
+class ListOfferingTransactionsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListOfferingTransactionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsResultTypeDef
+
+def get_value() -> ListOfferingTransactionsResultTypeDef:
+    return {
+        "offeringTransactions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOfferingTransactionsResultTypeDef(TypedDict):
+    offeringTransactions: List[OfferingTransactionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `offeringTransactions`:
-  `List`\[[OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOfferingsRequestListOfferingsPaginateTypeDef
 
-<a id="listofferingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListOfferingsRequestListOfferingsPaginateTypeDef
 
+def get_value() -> ListOfferingsRequestListOfferingsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListOfferingsRequestListOfferingsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOfferingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingsRequestRequestTypeDef
+
+def get_value() -> ListOfferingsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listofferingsresulttypedef"></a>
+```python title="Definition"
+class ListOfferingsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListOfferingsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListOfferingsResultTypeDef
+
+def get_value() -> ListOfferingsResultTypeDef:
+    return {
+        "offerings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOfferingsResultTypeDef(TypedDict):
+    offerings: List[OfferingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `offerings`: `List`\[[OfferingTypeDef](./type_defs.md#offeringtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OfferingTypeDef](./type_defs.md#offeringtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsRequestListProjectsPaginateTypeDef
 
-<a id="listprojectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListProjectsRequestListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsRequestListProjectsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsRequestListProjectsPaginateTypeDef(TypedDict):
+    arn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListProjectsRequestRequestTypeDef
+
+def get_value() -> ListProjectsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `nextToken`: `str`
-
-<a id="listprojectsresulttypedef"></a>
+```python title="Definition"
+class ListProjectsRequestRequestTypeDef(TypedDict):
+    arn: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListProjectsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListProjectsResultTypeDef
+
+def get_value() -> ListProjectsResultTypeDef:
+    return {
+        "projects": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsResultTypeDef(TypedDict):
+    projects: List[ProjectTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projects`: `List`\[[ProjectTypeDef](./type_defs.md#projecttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef
 
-<a id="listremoteaccesssessionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef
 
+def get_value() -> ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRemoteAccessSessionsRequestListRemoteAccessSessionsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRemoteAccessSessionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsRequestRequestTypeDef
+
+def get_value() -> ListRemoteAccessSessionsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listremoteaccesssessionsresulttypedef"></a>
+```python title="Definition"
+class ListRemoteAccessSessionsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListRemoteAccessSessionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListRemoteAccessSessionsResultTypeDef
+
+def get_value() -> ListRemoteAccessSessionsResultTypeDef:
+    return {
+        "remoteAccessSessions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRemoteAccessSessionsResultTypeDef(TypedDict):
+    remoteAccessSessions: List[RemoteAccessSessionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `remoteAccessSessions`:
-  `List`\[[RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRunsRequestListRunsPaginateTypeDef
 
-<a id="listrunsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListRunsRequestListRunsPaginateTypeDef
 
+def get_value() -> ListRunsRequestListRunsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRunsRequestListRunsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRunsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListRunsRequestRequestTypeDef
+
+def get_value() -> ListRunsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listrunsresulttypedef"></a>
+```python title="Definition"
+class ListRunsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListRunsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListRunsResultTypeDef
+
+def get_value() -> ListRunsResultTypeDef:
+    return {
+        "runs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRunsResultTypeDef(TypedDict):
+    runs: List[RunTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `runs`: `List`\[[RunTypeDef](./type_defs.md#runtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RunTypeDef](./type_defs.md#runtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSamplesRequestListSamplesPaginateTypeDef
 
-<a id="listsamplesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListSamplesRequestListSamplesPaginateTypeDef
 
+def get_value() -> ListSamplesRequestListSamplesPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSamplesRequestListSamplesPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSamplesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListSamplesRequestRequestTypeDef
+
+def get_value() -> ListSamplesRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listsamplesresulttypedef"></a>
+```python title="Definition"
+class ListSamplesRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListSamplesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListSamplesResultTypeDef
+
+def get_value() -> ListSamplesResultTypeDef:
+    return {
+        "samples": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSamplesResultTypeDef(TypedDict):
+    samples: List[SampleTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `samples`: `List`\[[SampleTypeDef](./type_defs.md#sampletypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SampleTypeDef](./type_defs.md#sampletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSuitesRequestListSuitesPaginateTypeDef
 
-<a id="listsuitesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListSuitesRequestListSuitesPaginateTypeDef
 
+def get_value() -> ListSuitesRequestListSuitesPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSuitesRequestListSuitesPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSuitesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListSuitesRequestRequestTypeDef
+
+def get_value() -> ListSuitesRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listsuitesresulttypedef"></a>
+```python title="Definition"
+class ListSuitesRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListSuitesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListSuitesResultTypeDef
+
+def get_value() -> ListSuitesResultTypeDef:
+    return {
+        "suites": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSuitesResultTypeDef(TypedDict):
+    suites: List[SuiteTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `suites`: `List`\[[SuiteTypeDef](./type_defs.md#suitetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuiteTypeDef](./type_defs.md#suitetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtestgridprojectsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTestGridProjectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsRequestRequestTypeDef
+
+def get_value() -> ListTestGridProjectsRequestRequestTypeDef:
+    return {
+        "maxResult": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResult`: `int`
-- `nextToken`: `str`
-
-<a id="listtestgridprojectsresulttypedef"></a>
+```python title="Definition"
+class ListTestGridProjectsRequestRequestTypeDef(TypedDict):
+    maxResult: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTestGridProjectsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridProjectsResultTypeDef
+
+def get_value() -> ListTestGridProjectsResultTypeDef:
+    return {
+        "testGridProjects": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridProjectsResultTypeDef(TypedDict):
+    testGridProjects: List[TestGridProjectTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridProjects`:
-  `List`\[[TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtestgridsessionactionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTestGridSessionActionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsRequestRequestTypeDef
+
+def get_value() -> ListTestGridSessionActionsRequestRequestTypeDef:
+    return {
+        "sessionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `sessionArn`: `str`
-
-Optional fields:
-
-- `maxResult`: `int`
-- `nextToken`: `str`
-
-<a id="listtestgridsessionactionsresulttypedef"></a>
+```python title="Definition"
+class ListTestGridSessionActionsRequestRequestTypeDef(TypedDict):
+    sessionArn: str,
+    maxResult: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTestGridSessionActionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionActionsResultTypeDef
+
+def get_value() -> ListTestGridSessionActionsResultTypeDef:
+    return {
+        "actions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridSessionActionsResultTypeDef(TypedDict):
+    actions: List[TestGridSessionActionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `actions`:
-  `List`\[[TestGridSessionActionTypeDef](./type_defs.md#testgridsessionactiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtestgridsessionartifactsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridSessionActionTypeDef](./type_defs.md#testgridsessionactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTestGridSessionArtifactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsRequestRequestTypeDef
+
+def get_value() -> ListTestGridSessionArtifactsRequestRequestTypeDef:
+    return {
+        "sessionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridSessionArtifactsRequestRequestTypeDef(TypedDict):
+    sessionArn: str,
+    type: NotRequired[TestGridSessionArtifactCategoryType],  # (1)
+    maxResult: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `sessionArn`: `str`
-
-Optional fields:
-
-- `type`:
-  [TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype)
-- `maxResult`: `int`
-- `nextToken`: `str`
-
-<a id="listtestgridsessionartifactsresulttypedef"></a>
-
+1. See [:material-code-brackets: TestGridSessionArtifactCategoryType](./literals.md#testgridsessionartifactcategorytype) 
 ## ListTestGridSessionArtifactsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionArtifactsResultTypeDef
+
+def get_value() -> ListTestGridSessionArtifactsResultTypeDef:
+    return {
+        "artifacts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridSessionArtifactsResultTypeDef(TypedDict):
+    artifacts: List[TestGridSessionArtifactTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `artifacts`:
-  `List`\[[TestGridSessionArtifactTypeDef](./type_defs.md#testgridsessionartifacttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtestgridsessionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridSessionArtifactTypeDef](./type_defs.md#testgridsessionartifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTestGridSessionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsRequestRequestTypeDef
+
+def get_value() -> ListTestGridSessionsRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridSessionsRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    status: NotRequired[TestGridSessionStatusType],  # (1)
+    creationTimeAfter: NotRequired[Union[datetime, str]],
+    creationTimeBefore: NotRequired[Union[datetime, str]],
+    endTimeAfter: NotRequired[Union[datetime, str]],
+    endTimeBefore: NotRequired[Union[datetime, str]],
+    maxResult: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `projectArn`: `str`
-
-Optional fields:
-
-- `status`:
-  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
-- `creationTimeAfter`: `Union`\[`datetime`, `str`\]
-- `creationTimeBefore`: `Union`\[`datetime`, `str`\]
-- `endTimeAfter`: `Union`\[`datetime`, `str`\]
-- `endTimeBefore`: `Union`\[`datetime`, `str`\]
-- `maxResult`: `int`
-- `nextToken`: `str`
-
-<a id="listtestgridsessionsresulttypedef"></a>
-
+1. See [:material-code-brackets: TestGridSessionStatusType](./literals.md#testgridsessionstatustype) 
 ## ListTestGridSessionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestGridSessionsResultTypeDef
+
+def get_value() -> ListTestGridSessionsResultTypeDef:
+    return {
+        "testGridSessions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestGridSessionsResultTypeDef(TypedDict):
+    testGridSessions: List[TestGridSessionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridSessions`:
-  `List`\[[TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TestGridSessionTypeDef](./type_defs.md#testgridsessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTestsRequestListTestsPaginateTypeDef
 
-<a id="listtestsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListTestsRequestListTestsPaginateTypeDef
 
+def get_value() -> ListTestsRequestListTestsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTestsRequestListTestsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTestsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestsRequestRequestTypeDef
+
+def get_value() -> ListTestsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listtestsresulttypedef"></a>
+```python title="Definition"
+class ListTestsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListTestsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListTestsResultTypeDef
+
+def get_value() -> ListTestsResultTypeDef:
+    return {
+        "tests": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestsResultTypeDef(TypedDict):
+    tests: List[TestTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tests`: `List`\[[TestTypeDef](./type_defs.md#testtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TestTypeDef](./type_defs.md#testtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef
 
-<a id="listuniqueproblemsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef
 
+def get_value() -> ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListUniqueProblemsRequestListUniqueProblemsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUniqueProblemsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsRequestRequestTypeDef
+
+def get_value() -> ListUniqueProblemsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listuniqueproblemsresulttypedef"></a>
+```python title="Definition"
+class ListUniqueProblemsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListUniqueProblemsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListUniqueProblemsResultTypeDef
+
+def get_value() -> ListUniqueProblemsResultTypeDef:
+    return {
+        "uniqueProblems": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUniqueProblemsResultTypeDef(TypedDict):
+    uniqueProblems: Dict[ExecutionResultType, List[UniqueProblemTypeDef]],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `uniqueProblems`:
-  `Dict`\[[ExecutionResultType](./literals.md#executionresulttype),
-  `List`\[[UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef)\]\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) [:material-code-braces: UniqueProblemTypeDef](./type_defs.md#uniqueproblemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUploadsRequestListUploadsPaginateTypeDef
 
-<a id="listuploadsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListUploadsRequestListUploadsPaginateTypeDef
 
+def get_value() -> ListUploadsRequestListUploadsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListUploadsRequestListUploadsPaginateTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[UploadTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUploadsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListUploadsRequestRequestTypeDef
+
+def get_value() -> ListUploadsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUploadsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    type: NotRequired[UploadTypeType],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `type`: [UploadTypeType](./literals.md#uploadtypetype)
-- `nextToken`: `str`
-
-<a id="listuploadsresulttypedef"></a>
-
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
 ## ListUploadsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListUploadsResultTypeDef
+
+def get_value() -> ListUploadsResultTypeDef:
+    return {
+        "uploads": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUploadsResultTypeDef(TypedDict):
+    uploads: List[UploadTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `uploads`: `List`\[[UploadTypeDef](./type_defs.md#uploadtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UploadTypeDef](./type_defs.md#uploadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef
 
-<a id="listvpceconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef
 
+def get_value() -> ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListVPCEConfigurationsRequestListVPCEConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVPCEConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListVPCEConfigurationsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listvpceconfigurationsresulttypedef"></a>
+```python title="Definition"
+class ListVPCEConfigurationsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListVPCEConfigurationsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ListVPCEConfigurationsResultTypeDef
+
+def get_value() -> ListVPCEConfigurationsResultTypeDef:
+    return {
+        "vpceConfigurations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVPCEConfigurationsResultTypeDef(TypedDict):
+    vpceConfigurations: List[VPCEConfigurationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `vpceConfigurations`:
-  `List`\[[VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="locationtypedef"></a>
-
+1. See [:material-code-braces: VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import LocationTypeDef
+
+def get_value() -> LocationTypeDef:
+    return {
+        "latitude": ...,
+        "longitude": ...,
+    }
 ```
 
-Required fields:
-
-- `latitude`: `float`
-- `longitude`: `float`
-
-<a id="monetaryamounttypedef"></a>
+```python title="Definition"
+class LocationTypeDef(TypedDict):
+    latitude: float,
+    longitude: float,
+```
 
 ## MonetaryAmountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import MonetaryAmountTypeDef
+
+def get_value() -> MonetaryAmountTypeDef:
+    return {
+        "amount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MonetaryAmountTypeDef(TypedDict):
+    amount: NotRequired[float],
+    currencyCode: NotRequired[CurrencyCodeType],  # (1)
+```
 
-- `amount`: `float`
-- `currencyCode`: `Literal['USD']` (see
-  [CurrencyCodeType](./literals.md#currencycodetype))
-
-<a id="networkprofiletypedef"></a>
-
+1. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
 ## NetworkProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import NetworkProfileTypeDef
+
+def get_value() -> NetworkProfileTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkProfileTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    type: NotRequired[NetworkProfileTypeType],  # (1)
+    uplinkBandwidthBits: NotRequired[int],
+    downlinkBandwidthBits: NotRequired[int],
+    uplinkDelayMs: NotRequired[int],
+    downlinkDelayMs: NotRequired[int],
+    uplinkJitterMs: NotRequired[int],
+    downlinkJitterMs: NotRequired[int],
+    uplinkLossPercent: NotRequired[int],
+    downlinkLossPercent: NotRequired[int],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `description`: `str`
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `uplinkBandwidthBits`: `int`
-- `downlinkBandwidthBits`: `int`
-- `uplinkDelayMs`: `int`
-- `downlinkDelayMs`: `int`
-- `uplinkJitterMs`: `int`
-- `downlinkJitterMs`: `int`
-- `uplinkLossPercent`: `int`
-- `downlinkLossPercent`: `int`
-
-<a id="offeringpromotiontypedef"></a>
-
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
 ## OfferingPromotionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import OfferingPromotionTypeDef
+
+def get_value() -> OfferingPromotionTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `description`: `str`
-
-<a id="offeringstatustypedef"></a>
+```python title="Definition"
+class OfferingPromotionTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+```
 
 ## OfferingStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import OfferingStatusTypeDef
+
+def get_value() -> OfferingStatusTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OfferingStatusTypeDef(TypedDict):
+    type: NotRequired[OfferingTransactionTypeType],  # (1)
+    offering: NotRequired[OfferingTypeDef],  # (2)
+    quantity: NotRequired[int],
+    effectiveOn: NotRequired[datetime],
+```
 
-- `type`:
-  [OfferingTransactionTypeType](./literals.md#offeringtransactiontypetype)
-- `offering`: [OfferingTypeDef](./type_defs.md#offeringtypedef)
-- `quantity`: `int`
-- `effectiveOn`: `datetime`
-
-<a id="offeringtransactiontypedef"></a>
-
+1. See [:material-code-brackets: OfferingTransactionTypeType](./literals.md#offeringtransactiontypetype) 
+2. See [:material-code-braces: OfferingTypeDef](./type_defs.md#offeringtypedef) 
 ## OfferingTransactionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import OfferingTransactionTypeDef
+
+def get_value() -> OfferingTransactionTypeDef:
+    return {
+        "offeringStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OfferingTransactionTypeDef(TypedDict):
+    offeringStatus: NotRequired[OfferingStatusTypeDef],  # (1)
+    transactionId: NotRequired[str],
+    offeringPromotionId: NotRequired[str],
+    createdOn: NotRequired[datetime],
+    cost: NotRequired[MonetaryAmountTypeDef],  # (2)
+```
 
-- `offeringStatus`:
-  [OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef)
-- `transactionId`: `str`
-- `offeringPromotionId`: `str`
-- `createdOn`: `datetime`
-- `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
-
-<a id="offeringtypedef"></a>
-
+1. See [:material-code-braces: OfferingStatusTypeDef](./type_defs.md#offeringstatustypedef) 
+2. See [:material-code-braces: MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef) 
 ## OfferingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import OfferingTypeDef
+
+def get_value() -> OfferingTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OfferingTypeDef(TypedDict):
+    id: NotRequired[str],
+    description: NotRequired[str],
+    type: NotRequired[OfferingTypeType],  # (1)
+    platform: NotRequired[DevicePlatformType],  # (2)
+    recurringCharges: NotRequired[List[RecurringChargeTypeDef]],  # (3)
+```
 
-- `id`: `str`
-- `description`: `str`
-- `type`: `Literal['RECURRING']` (see
-  [OfferingTypeType](./literals.md#offeringtypetype))
-- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
-- `recurringCharges`:
-  `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OfferingTypeType](./literals.md#offeringtypetype) 
+2. See [:material-code-brackets: DevicePlatformType](./literals.md#deviceplatformtype) 
+3. See [:material-code-braces: RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="problemdetailtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProblemDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ProblemDetailTypeDef
+
+def get_value() -> ProblemDetailTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `name`: `str`
-
-<a id="problemtypedef"></a>
+```python title="Definition"
+class ProblemDetailTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## ProblemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ProblemTypeDef
+
+def get_value() -> ProblemTypeDef:
+    return {
+        "run": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProblemTypeDef(TypedDict):
+    run: NotRequired[ProblemDetailTypeDef],  # (1)
+    job: NotRequired[ProblemDetailTypeDef],  # (1)
+    suite: NotRequired[ProblemDetailTypeDef],  # (1)
+    test: NotRequired[ProblemDetailTypeDef],  # (1)
+    device: NotRequired[DeviceTypeDef],  # (5)
+    result: NotRequired[ExecutionResultType],  # (6)
+    message: NotRequired[str],
+```
 
-- `run`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
-- `job`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
-- `suite`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
-- `test`: [ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef)
-- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `message`: `str`
-
-<a id="projecttypedef"></a>
-
+1. See [:material-code-braces: ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef) 
+2. See [:material-code-braces: ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef) 
+3. See [:material-code-braces: ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef) 
+4. See [:material-code-braces: ProblemDetailTypeDef](./type_defs.md#problemdetailtypedef) 
+5. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+6. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
 ## ProjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ProjectTypeDef
+
+def get_value() -> ProjectTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `name`: `str`
-- `defaultJobTimeoutMinutes`: `int`
-- `created`: `datetime`
-
-<a id="purchaseofferingrequestrequesttypedef"></a>
+```python title="Definition"
+class ProjectTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    defaultJobTimeoutMinutes: NotRequired[int],
+    created: NotRequired[datetime],
+```
 
 ## PurchaseOfferingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import PurchaseOfferingRequestRequestTypeDef
+
+def get_value() -> PurchaseOfferingRequestRequestTypeDef:
+    return {
+        "offeringId": ...,
+        "quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `offeringId`: `str`
-- `quantity`: `int`
-
-Optional fields:
-
-- `offeringPromotionId`: `str`
-
-<a id="purchaseofferingresulttypedef"></a>
+```python title="Definition"
+class PurchaseOfferingRequestRequestTypeDef(TypedDict):
+    offeringId: str,
+    quantity: int,
+    offeringPromotionId: NotRequired[str],
+```
 
 ## PurchaseOfferingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import PurchaseOfferingResultTypeDef
+
+def get_value() -> PurchaseOfferingResultTypeDef:
+    return {
+        "offeringTransaction": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PurchaseOfferingResultTypeDef(TypedDict):
+    offeringTransaction: OfferingTransactionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `offeringTransaction`:
-  [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="radiostypedef"></a>
-
+1. See [:material-code-braces: OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RadiosTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RadiosTypeDef
+
+def get_value() -> RadiosTypeDef:
+    return {
+        "wifi": ...,
+    }
 ```
 
-Optional fields:
-
-- `wifi`: `bool`
-- `bluetooth`: `bool`
-- `nfc`: `bool`
-- `gps`: `bool`
-
-<a id="recurringchargetypedef"></a>
+```python title="Definition"
+class RadiosTypeDef(TypedDict):
+    wifi: NotRequired[bool],
+    bluetooth: NotRequired[bool],
+    nfc: NotRequired[bool],
+    gps: NotRequired[bool],
+```
 
 ## RecurringChargeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RecurringChargeTypeDef
+
+def get_value() -> RecurringChargeTypeDef:
+    return {
+        "cost": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecurringChargeTypeDef(TypedDict):
+    cost: NotRequired[MonetaryAmountTypeDef],  # (1)
+    frequency: NotRequired[RecurringChargeFrequencyType],  # (2)
+```
 
-- `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
-- `frequency`: `Literal['MONTHLY']` (see
-  [RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype))
-
-<a id="remoteaccesssessiontypedef"></a>
-
+1. See [:material-code-braces: MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef) 
+2. See [:material-code-brackets: RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype) 
 ## RemoteAccessSessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RemoteAccessSessionTypeDef
+
+def get_value() -> RemoteAccessSessionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemoteAccessSessionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    created: NotRequired[datetime],
+    status: NotRequired[ExecutionStatusType],  # (1)
+    result: NotRequired[ExecutionResultType],  # (2)
+    message: NotRequired[str],
+    started: NotRequired[datetime],
+    stopped: NotRequired[datetime],
+    device: NotRequired[DeviceTypeDef],  # (3)
+    instanceArn: NotRequired[str],
+    remoteDebugEnabled: NotRequired[bool],
+    remoteRecordEnabled: NotRequired[bool],
+    remoteRecordAppArn: NotRequired[str],
+    hostAddress: NotRequired[str],
+    clientId: NotRequired[str],
+    billingMethod: NotRequired[BillingMethodType],  # (4)
+    deviceMinutes: NotRequired[DeviceMinutesTypeDef],  # (5)
+    endpoint: NotRequired[str],
+    deviceUdid: NotRequired[str],
+    interactionMode: NotRequired[InteractionModeType],  # (6)
+    skipAppResign: NotRequired[bool],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `created`: `datetime`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `message`: `str`
-- `started`: `datetime`
-- `stopped`: `datetime`
-- `device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
-- `instanceArn`: `str`
-- `remoteDebugEnabled`: `bool`
-- `remoteRecordEnabled`: `bool`
-- `remoteRecordAppArn`: `str`
-- `hostAddress`: `str`
-- `clientId`: `str`
-- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
-- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-- `endpoint`: `str`
-- `deviceUdid`: `str`
-- `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
-- `skipAppResign`: `bool`
-
-<a id="renewofferingrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+2. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
+3. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+4. See [:material-code-brackets: BillingMethodType](./literals.md#billingmethodtype) 
+5. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
+6. See [:material-code-brackets: InteractionModeType](./literals.md#interactionmodetype) 
 ## RenewOfferingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RenewOfferingRequestRequestTypeDef
+
+def get_value() -> RenewOfferingRequestRequestTypeDef:
+    return {
+        "offeringId": ...,
+        "quantity": ...,
+    }
 ```
 
-Required fields:
-
-- `offeringId`: `str`
-- `quantity`: `int`
-
-<a id="renewofferingresulttypedef"></a>
+```python title="Definition"
+class RenewOfferingRequestRequestTypeDef(TypedDict):
+    offeringId: str,
+    quantity: int,
+```
 
 ## RenewOfferingResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RenewOfferingResultTypeDef
+
+def get_value() -> RenewOfferingResultTypeDef:
+    return {
+        "offeringTransaction": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RenewOfferingResultTypeDef(TypedDict):
+    offeringTransaction: OfferingTransactionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `offeringTransaction`:
-  [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resolutiontypedef"></a>
-
+1. See [:material-code-braces: OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResolutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ResolutionTypeDef
+
+def get_value() -> ResolutionTypeDef:
+    return {
+        "width": ...,
+    }
 ```
 
-Optional fields:
-
-- `width`: `int`
-- `height`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResolutionTypeDef(TypedDict):
+    width: NotRequired[int],
+    height: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="ruletypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "attribute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    attribute: NotRequired[DeviceAttributeType],  # (1)
+    operator: NotRequired[RuleOperatorType],  # (2)
+    value: NotRequired[str],
+```
 
-- `attribute`: [DeviceAttributeType](./literals.md#deviceattributetype)
-- `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
-- `value`: `str`
-
-<a id="runtypedef"></a>
-
+1. See [:material-code-brackets: DeviceAttributeType](./literals.md#deviceattributetype) 
+2. See [:material-code-brackets: RuleOperatorType](./literals.md#ruleoperatortype) 
 ## RunTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import RunTypeDef
+
+def get_value() -> RunTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RunTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[TestTypeType],  # (1)
+    platform: NotRequired[DevicePlatformType],  # (2)
+    created: NotRequired[datetime],
+    status: NotRequired[ExecutionStatusType],  # (3)
+    result: NotRequired[ExecutionResultType],  # (4)
+    started: NotRequired[datetime],
+    stopped: NotRequired[datetime],
+    counters: NotRequired[CountersTypeDef],  # (5)
+    message: NotRequired[str],
+    totalJobs: NotRequired[int],
+    completedJobs: NotRequired[int],
+    billingMethod: NotRequired[BillingMethodType],  # (6)
+    deviceMinutes: NotRequired[DeviceMinutesTypeDef],  # (7)
+    networkProfile: NotRequired[NetworkProfileTypeDef],  # (8)
+    parsingResultUrl: NotRequired[str],
+    resultCode: NotRequired[ExecutionResultCodeType],  # (9)
+    seed: NotRequired[int],
+    appUpload: NotRequired[str],
+    eventCount: NotRequired[int],
+    jobTimeoutMinutes: NotRequired[int],
+    devicePoolArn: NotRequired[str],
+    locale: NotRequired[str],
+    radios: NotRequired[RadiosTypeDef],  # (10)
+    location: NotRequired[LocationTypeDef],  # (11)
+    customerArtifactPaths: NotRequired[CustomerArtifactPathsTypeDef],  # (12)
+    webUrl: NotRequired[str],
+    skipAppResign: NotRequired[bool],
+    testSpecArn: NotRequired[str],
+    deviceSelectionResult: NotRequired[DeviceSelectionResultTypeDef],  # (13)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [TestTypeType](./literals.md#testtypetype)
-- `platform`: [DevicePlatformType](./literals.md#deviceplatformtype)
-- `created`: `datetime`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `started`: `datetime`
-- `stopped`: `datetime`
-- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
-- `message`: `str`
-- `totalJobs`: `int`
-- `completedJobs`: `int`
-- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
-- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-- `networkProfile`:
-  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
-- `parsingResultUrl`: `str`
-- `resultCode`:
-  [ExecutionResultCodeType](./literals.md#executionresultcodetype)
-- `seed`: `int`
-- `appUpload`: `str`
-- `eventCount`: `int`
-- `jobTimeoutMinutes`: `int`
-- `devicePoolArn`: `str`
-- `locale`: `str`
-- `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
-- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `customerArtifactPaths`:
-  [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
-- `webUrl`: `str`
-- `skipAppResign`: `bool`
-- `testSpecArn`: `str`
-- `deviceSelectionResult`:
-  [DeviceSelectionResultTypeDef](./type_defs.md#deviceselectionresulttypedef)
-
-<a id="sampletypedef"></a>
-
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-brackets: DevicePlatformType](./literals.md#deviceplatformtype) 
+3. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+4. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
+5. See [:material-code-braces: CountersTypeDef](./type_defs.md#counterstypedef) 
+6. See [:material-code-brackets: BillingMethodType](./literals.md#billingmethodtype) 
+7. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
+8. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+9. See [:material-code-brackets: ExecutionResultCodeType](./literals.md#executionresultcodetype) 
+10. See [:material-code-braces: RadiosTypeDef](./type_defs.md#radiostypedef) 
+11. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+12. See [:material-code-braces: CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef) 
+13. See [:material-code-braces: DeviceSelectionResultTypeDef](./type_defs.md#deviceselectionresulttypedef) 
 ## SampleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import SampleTypeDef
+
+def get_value() -> SampleTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SampleTypeDef(TypedDict):
+    arn: NotRequired[str],
+    type: NotRequired[SampleTypeType],  # (1)
+    url: NotRequired[str],
+```
 
-- `arn`: `str`
-- `type`: [SampleTypeType](./literals.md#sampletypetype)
-- `url`: `str`
-
-<a id="schedulerunconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: SampleTypeType](./literals.md#sampletypetype) 
 ## ScheduleRunConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ScheduleRunConfigurationTypeDef
+
+def get_value() -> ScheduleRunConfigurationTypeDef:
+    return {
+        "extraDataPackageArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduleRunConfigurationTypeDef(TypedDict):
+    extraDataPackageArn: NotRequired[str],
+    networkProfileArn: NotRequired[str],
+    locale: NotRequired[str],
+    location: NotRequired[LocationTypeDef],  # (1)
+    vpceConfigurationArns: NotRequired[Sequence[str]],
+    customerArtifactPaths: NotRequired[CustomerArtifactPathsTypeDef],  # (2)
+    radios: NotRequired[RadiosTypeDef],  # (3)
+    auxiliaryApps: NotRequired[Sequence[str]],
+    billingMethod: NotRequired[BillingMethodType],  # (4)
+```
 
-- `extraDataPackageArn`: `str`
-- `networkProfileArn`: `str`
-- `locale`: `str`
-- `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `vpceConfigurationArns`: `Sequence`\[`str`\]
-- `customerArtifactPaths`:
-  [CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef)
-- `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
-- `auxiliaryApps`: `Sequence`\[`str`\]
-- `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
-
-<a id="schedulerunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-braces: CustomerArtifactPathsTypeDef](./type_defs.md#customerartifactpathstypedef) 
+3. See [:material-code-braces: RadiosTypeDef](./type_defs.md#radiostypedef) 
+4. See [:material-code-brackets: BillingMethodType](./literals.md#billingmethodtype) 
 ## ScheduleRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ScheduleRunRequestRequestTypeDef
+
+def get_value() -> ScheduleRunRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "test": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduleRunRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    test: ScheduleRunTestTypeDef,  # (1)
+    appArn: NotRequired[str],
+    devicePoolArn: NotRequired[str],
+    deviceSelectionConfiguration: NotRequired[DeviceSelectionConfigurationTypeDef],  # (2)
+    name: NotRequired[str],
+    configuration: NotRequired[ScheduleRunConfigurationTypeDef],  # (3)
+    executionConfiguration: NotRequired[ExecutionConfigurationTypeDef],  # (4)
+```
 
-- `projectArn`: `str`
-- `test`: [ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef)
-
-Optional fields:
-
-- `appArn`: `str`
-- `devicePoolArn`: `str`
-- `deviceSelectionConfiguration`:
-  [DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef)
-- `name`: `str`
-- `configuration`:
-  [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
-- `executionConfiguration`:
-  [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
-
-<a id="schedulerunresulttypedef"></a>
-
+1. See [:material-code-braces: ScheduleRunTestTypeDef](./type_defs.md#scheduleruntesttypedef) 
+2. See [:material-code-braces: DeviceSelectionConfigurationTypeDef](./type_defs.md#deviceselectionconfigurationtypedef) 
+3. See [:material-code-braces: ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef) 
+4. See [:material-code-braces: ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef) 
 ## ScheduleRunResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ScheduleRunResultTypeDef
+
+def get_value() -> ScheduleRunResultTypeDef:
+    return {
+        "run": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduleRunResultTypeDef(TypedDict):
+    run: RunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `run`: [RunTypeDef](./type_defs.md#runtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="scheduleruntesttypedef"></a>
-
+1. See [:material-code-braces: RunTypeDef](./type_defs.md#runtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ScheduleRunTestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import ScheduleRunTestTypeDef
+
+def get_value() -> ScheduleRunTestTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduleRunTestTypeDef(TypedDict):
+    type: TestTypeType,  # (1)
+    testPackageArn: NotRequired[str],
+    testSpecArn: NotRequired[str],
+    filter: NotRequired[str],
+    parameters: NotRequired[Mapping[str, str]],
+```
 
-- `type`: [TestTypeType](./literals.md#testtypetype)
-
-Optional fields:
-
-- `testPackageArn`: `str`
-- `testSpecArn`: `str`
-- `filter`: `str`
-- `parameters`: `Mapping`\[`str`, `str`\]
-
-<a id="stopjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
 ## StopJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopJobRequestRequestTypeDef
+
+def get_value() -> StopJobRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="stopjobresulttypedef"></a>
+```python title="Definition"
+class StopJobRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## StopJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopJobResultTypeDef
+
+def get_value() -> StopJobResultTypeDef:
+    return {
+        "job": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopJobResultTypeDef(TypedDict):
+    job: JobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `job`: [JobTypeDef](./type_defs.md#jobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopremoteaccesssessionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopRemoteAccessSessionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionRequestRequestTypeDef
+
+def get_value() -> StopRemoteAccessSessionRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="stopremoteaccesssessionresulttypedef"></a>
+```python title="Definition"
+class StopRemoteAccessSessionRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## StopRemoteAccessSessionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionResultTypeDef
+
+def get_value() -> StopRemoteAccessSessionResultTypeDef:
+    return {
+        "remoteAccessSession": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopRemoteAccessSessionResultTypeDef(TypedDict):
+    remoteAccessSession: RemoteAccessSessionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `remoteAccessSession`:
-  [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoprunrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopRunRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopRunRequestRequestTypeDef
+
+def get_value() -> StopRunRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="stoprunresulttypedef"></a>
+```python title="Definition"
+class StopRunRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## StopRunResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import StopRunResultTypeDef
+
+def get_value() -> StopRunResultTypeDef:
+    return {
+        "run": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopRunResultTypeDef(TypedDict):
+    run: RunTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `run`: [RunTypeDef](./type_defs.md#runtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="suitetypedef"></a>
-
+1. See [:material-code-braces: RunTypeDef](./type_defs.md#runtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SuiteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import SuiteTypeDef
+
+def get_value() -> SuiteTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SuiteTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[TestTypeType],  # (1)
+    created: NotRequired[datetime],
+    status: NotRequired[ExecutionStatusType],  # (2)
+    result: NotRequired[ExecutionResultType],  # (3)
+    started: NotRequired[datetime],
+    stopped: NotRequired[datetime],
+    counters: NotRequired[CountersTypeDef],  # (4)
+    message: NotRequired[str],
+    deviceMinutes: NotRequired[DeviceMinutesTypeDef],  # (5)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [TestTypeType](./literals.md#testtypetype)
-- `created`: `datetime`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `started`: `datetime`
-- `stopped`: `datetime`
-- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
-- `message`: `str`
-- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+3. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
+4. See [:material-code-braces: CountersTypeDef](./type_defs.md#counterstypedef) 
+5. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="testgridprojecttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TestGridProjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestGridProjectTypeDef
+
+def get_value() -> TestGridProjectTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestGridProjectTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    description: NotRequired[str],
+    vpcConfig: NotRequired[TestGridVpcConfigTypeDef],  # (1)
+    created: NotRequired[datetime],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `description`: `str`
-- `vpcConfig`:
-  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
-- `created`: `datetime`
-
-<a id="testgridsessionactiontypedef"></a>
-
+1. See [:material-code-braces: TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef) 
 ## TestGridSessionActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestGridSessionActionTypeDef
+
+def get_value() -> TestGridSessionActionTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
-
-- `action`: `str`
-- `started`: `datetime`
-- `duration`: `int`
-- `statusCode`: `str`
-- `requestMethod`: `str`
-
-<a id="testgridsessionartifacttypedef"></a>
+```python title="Definition"
+class TestGridSessionActionTypeDef(TypedDict):
+    action: NotRequired[str],
+    started: NotRequired[datetime],
+    duration: NotRequired[int],
+    statusCode: NotRequired[str],
+    requestMethod: NotRequired[str],
+```
 
 ## TestGridSessionArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestGridSessionArtifactTypeDef
+
+def get_value() -> TestGridSessionArtifactTypeDef:
+    return {
+        "filename": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestGridSessionArtifactTypeDef(TypedDict):
+    filename: NotRequired[str],
+    type: NotRequired[TestGridSessionArtifactTypeType],  # (1)
+    url: NotRequired[str],
+```
 
-- `filename`: `str`
-- `type`:
-  [TestGridSessionArtifactTypeType](./literals.md#testgridsessionartifacttypetype)
-- `url`: `str`
-
-<a id="testgridsessiontypedef"></a>
-
+1. See [:material-code-brackets: TestGridSessionArtifactTypeType](./literals.md#testgridsessionartifacttypetype) 
 ## TestGridSessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestGridSessionTypeDef
+
+def get_value() -> TestGridSessionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestGridSessionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    status: NotRequired[TestGridSessionStatusType],  # (1)
+    created: NotRequired[datetime],
+    ended: NotRequired[datetime],
+    billingMinutes: NotRequired[float],
+    seleniumProperties: NotRequired[str],
+```
 
-- `arn`: `str`
-- `status`:
-  [TestGridSessionStatusType](./literals.md#testgridsessionstatustype)
-- `created`: `datetime`
-- `ended`: `datetime`
-- `billingMinutes`: `float`
-- `seleniumProperties`: `str`
-
-<a id="testgridvpcconfigtypedef"></a>
-
+1. See [:material-code-brackets: TestGridSessionStatusType](./literals.md#testgridsessionstatustype) 
 ## TestGridVpcConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestGridVpcConfigTypeDef
+
+def get_value() -> TestGridVpcConfigTypeDef:
+    return {
+        "securityGroupIds": ...,
+        "subnetIds": ...,
+        "vpcId": ...,
+    }
 ```
 
-Required fields:
-
-- `securityGroupIds`: `Sequence`\[`str`\]
-- `subnetIds`: `Sequence`\[`str`\]
-- `vpcId`: `str`
-
-<a id="testtypedef"></a>
+```python title="Definition"
+class TestGridVpcConfigTypeDef(TypedDict):
+    securityGroupIds: Sequence[str],
+    subnetIds: Sequence[str],
+    vpcId: str,
+```
 
 ## TestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TestTypeDef
+
+def get_value() -> TestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TestTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[TestTypeType],  # (1)
+    created: NotRequired[datetime],
+    status: NotRequired[ExecutionStatusType],  # (2)
+    result: NotRequired[ExecutionResultType],  # (3)
+    started: NotRequired[datetime],
+    stopped: NotRequired[datetime],
+    counters: NotRequired[CountersTypeDef],  # (4)
+    message: NotRequired[str],
+    deviceMinutes: NotRequired[DeviceMinutesTypeDef],  # (5)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [TestTypeType](./literals.md#testtypetype)
-- `created`: `datetime`
-- `status`: [ExecutionStatusType](./literals.md#executionstatustype)
-- `result`: [ExecutionResultType](./literals.md#executionresulttype)
-- `started`: `datetime`
-- `stopped`: `datetime`
-- `counters`: [CountersTypeDef](./type_defs.md#counterstypedef)
-- `message`: `str`
-- `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
-
-<a id="trialminutestypedef"></a>
-
+1. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
+2. See [:material-code-brackets: ExecutionStatusType](./literals.md#executionstatustype) 
+3. See [:material-code-brackets: ExecutionResultType](./literals.md#executionresulttype) 
+4. See [:material-code-braces: CountersTypeDef](./type_defs.md#counterstypedef) 
+5. See [:material-code-braces: DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef) 
 ## TrialMinutesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import TrialMinutesTypeDef
+
+def get_value() -> TrialMinutesTypeDef:
+    return {
+        "total": ...,
+    }
 ```
 
-Optional fields:
-
-- `total`: `float`
-- `remaining`: `float`
-
-<a id="uniqueproblemtypedef"></a>
+```python title="Definition"
+class TrialMinutesTypeDef(TypedDict):
+    total: NotRequired[float],
+    remaining: NotRequired[float],
+```
 
 ## UniqueProblemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UniqueProblemTypeDef
+
+def get_value() -> UniqueProblemTypeDef:
+    return {
+        "message": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UniqueProblemTypeDef(TypedDict):
+    message: NotRequired[str],
+    problems: NotRequired[List[ProblemTypeDef]],  # (1)
+```
 
-- `message`: `str`
-- `problems`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProblemTypeDef](./type_defs.md#problemtypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedeviceinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDeviceInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceRequestRequestTypeDef
+
+def get_value() -> UpdateDeviceInstanceRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `profileArn`: `str`
-- `labels`: `Sequence`\[`str`\]
-
-<a id="updatedeviceinstanceresulttypedef"></a>
+```python title="Definition"
+class UpdateDeviceInstanceRequestRequestTypeDef(TypedDict):
+    arn: str,
+    profileArn: NotRequired[str],
+    labels: NotRequired[Sequence[str]],
+```
 
 ## UpdateDeviceInstanceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateDeviceInstanceResultTypeDef
+
+def get_value() -> UpdateDeviceInstanceResultTypeDef:
+    return {
+        "deviceInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeviceInstanceResultTypeDef(TypedDict):
+    deviceInstance: DeviceInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deviceInstance`:
-  [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedevicepoolrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDevicePoolRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolRequestRequestTypeDef
+
+def get_value() -> UpdateDevicePoolRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDevicePoolRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    rules: NotRequired[Sequence[RuleTypeDef]],  # (1)
+    maxDevices: NotRequired[int],
+    clearMaxDevices: NotRequired[bool],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `maxDevices`: `int`
-- `clearMaxDevices`: `bool`
-
-<a id="updatedevicepoolresulttypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## UpdateDevicePoolResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateDevicePoolResultTypeDef
+
+def get_value() -> UpdateDevicePoolResultTypeDef:
+    return {
+        "devicePool": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDevicePoolResultTypeDef(TypedDict):
+    devicePool: DevicePoolTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateinstanceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DevicePoolTypeDef](./type_defs.md#devicepooltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `packageCleanup`: `bool`
-- `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
-- `rebootAfterUse`: `bool`
-
-<a id="updateinstanceprofileresulttypedef"></a>
+```python title="Definition"
+class UpdateInstanceProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    packageCleanup: NotRequired[bool],
+    excludeAppPackagesFromCleanup: NotRequired[Sequence[str]],
+    rebootAfterUse: NotRequired[bool],
+```
 
 ## UpdateInstanceProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateInstanceProfileResultTypeDef
+
+def get_value() -> UpdateInstanceProfileResultTypeDef:
+    return {
+        "instanceProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceProfileResultTypeDef(TypedDict):
+    instanceProfile: InstanceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatenetworkprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNetworkProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileRequestRequestTypeDef
+
+def get_value() -> UpdateNetworkProfileRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNetworkProfileRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    type: NotRequired[NetworkProfileTypeType],  # (1)
+    uplinkBandwidthBits: NotRequired[int],
+    downlinkBandwidthBits: NotRequired[int],
+    uplinkDelayMs: NotRequired[int],
+    downlinkDelayMs: NotRequired[int],
+    uplinkJitterMs: NotRequired[int],
+    downlinkJitterMs: NotRequired[int],
+    uplinkLossPercent: NotRequired[int],
+    downlinkLossPercent: NotRequired[int],
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
-- `uplinkBandwidthBits`: `int`
-- `downlinkBandwidthBits`: `int`
-- `uplinkDelayMs`: `int`
-- `downlinkDelayMs`: `int`
-- `uplinkJitterMs`: `int`
-- `downlinkJitterMs`: `int`
-- `uplinkLossPercent`: `int`
-- `downlinkLossPercent`: `int`
-
-<a id="updatenetworkprofileresulttypedef"></a>
-
+1. See [:material-code-brackets: NetworkProfileTypeType](./literals.md#networkprofiletypetype) 
 ## UpdateNetworkProfileResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateNetworkProfileResultTypeDef
+
+def get_value() -> UpdateNetworkProfileResultTypeDef:
+    return {
+        "networkProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNetworkProfileResultTypeDef(TypedDict):
+    networkProfile: NetworkProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `networkProfile`:
-  [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateProjectRequestRequestTypeDef
+
+def get_value() -> UpdateProjectRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `defaultJobTimeoutMinutes`: `int`
-
-<a id="updateprojectresulttypedef"></a>
+```python title="Definition"
+class UpdateProjectRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    defaultJobTimeoutMinutes: NotRequired[int],
+```
 
 ## UpdateProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateProjectResultTypeDef
+
+def get_value() -> UpdateProjectResultTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectResultTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetestgridprojectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTestGridProjectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectRequestRequestTypeDef
+
+def get_value() -> UpdateTestGridProjectRequestRequestTypeDef:
+    return {
+        "projectArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTestGridProjectRequestRequestTypeDef(TypedDict):
+    projectArn: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    vpcConfig: NotRequired[TestGridVpcConfigTypeDef],  # (1)
+```
 
-- `projectArn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `vpcConfig`:
-  [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
-
-<a id="updatetestgridprojectresulttypedef"></a>
-
+1. See [:material-code-braces: TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef) 
 ## UpdateTestGridProjectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateTestGridProjectResultTypeDef
+
+def get_value() -> UpdateTestGridProjectResultTypeDef:
+    return {
+        "testGridProject": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTestGridProjectResultTypeDef(TypedDict):
+    testGridProject: TestGridProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `testGridProject`:
-  [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateuploadrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateUploadRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateUploadRequestRequestTypeDef
+
+def get_value() -> UpdateUploadRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `contentType`: `str`
-- `editContent`: `bool`
-
-<a id="updateuploadresulttypedef"></a>
+```python title="Definition"
+class UpdateUploadRequestRequestTypeDef(TypedDict):
+    arn: str,
+    name: NotRequired[str],
+    contentType: NotRequired[str],
+    editContent: NotRequired[bool],
+```
 
 ## UpdateUploadResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateUploadResultTypeDef
+
+def get_value() -> UpdateUploadResultTypeDef:
+    return {
+        "upload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUploadResultTypeDef(TypedDict):
+    upload: UploadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevpceconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UploadTypeDef](./type_defs.md#uploadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVPCEConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateVPCEConfigurationRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `vpceConfigurationName`: `str`
-- `vpceServiceName`: `str`
-- `serviceDnsName`: `str`
-- `vpceConfigurationDescription`: `str`
-
-<a id="updatevpceconfigurationresulttypedef"></a>
+```python title="Definition"
+class UpdateVPCEConfigurationRequestRequestTypeDef(TypedDict):
+    arn: str,
+    vpceConfigurationName: NotRequired[str],
+    vpceServiceName: NotRequired[str],
+    serviceDnsName: NotRequired[str],
+    vpceConfigurationDescription: NotRequired[str],
+```
 
 ## UpdateVPCEConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UpdateVPCEConfigurationResultTypeDef
+
+def get_value() -> UpdateVPCEConfigurationResultTypeDef:
+    return {
+        "vpceConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVPCEConfigurationResultTypeDef(TypedDict):
+    vpceConfiguration: VPCEConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `vpceConfiguration`:
-  [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadtypedef"></a>
-
+1. See [:material-code-braces: VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import UploadTypeDef
+
+def get_value() -> UploadTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UploadTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    created: NotRequired[datetime],
+    type: NotRequired[UploadTypeType],  # (1)
+    status: NotRequired[UploadStatusType],  # (2)
+    url: NotRequired[str],
+    metadata: NotRequired[str],
+    contentType: NotRequired[str],
+    message: NotRequired[str],
+    category: NotRequired[UploadCategoryType],  # (3)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `created`: `datetime`
-- `type`: [UploadTypeType](./literals.md#uploadtypetype)
-- `status`: [UploadStatusType](./literals.md#uploadstatustype)
-- `url`: `str`
-- `metadata`: `str`
-- `contentType`: `str`
-- `message`: `str`
-- `category`: [UploadCategoryType](./literals.md#uploadcategorytype)
-
-<a id="vpceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: UploadTypeType](./literals.md#uploadtypetype) 
+2. See [:material-code-brackets: UploadStatusType](./literals.md#uploadstatustype) 
+3. See [:material-code-brackets: UploadCategoryType](./literals.md#uploadcategorytype) 
 ## VPCEConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devicefarm.type_defs import VPCEConfigurationTypeDef
+
+def get_value() -> VPCEConfigurationTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VPCEConfigurationTypeDef(TypedDict):
+    arn: NotRequired[str],
+    vpceConfigurationName: NotRequired[str],
+    vpceServiceName: NotRequired[str],
+    serviceDnsName: NotRequired[str],
+    vpceConfigurationDescription: NotRequired[str],
+```
 
-- `arn`: `str`
-- `vpceConfigurationName`: `str`
-- `vpceServiceName`: `str`
-- `serviceDnsName`: `str`
-- `vpceConfigurationDescription`: `str`

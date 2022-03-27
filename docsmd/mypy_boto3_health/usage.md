@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-health-module"></a>
-
-# Examples for boto3 Health module
+# Examples
 
 > [Index](../README.md) > [Health](./README.md) > Examples
 
-- [Examples for boto3 Health module](#examples-for-boto3-health-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+    type annotations stubs module [mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[health]` package installed.
 
-Write your `Health` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Health` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type HealthClient
-# and provides type checking and code completion
-client = session.client("health")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type DescribeAffectedAccountsForOrganizationPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_affected_accounts_for_organization")
-for item in paginator.paginate(...):
-    # item has type DescribeAffectedAccountsForOrganizationResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("health")  # (1)
+    result = client.describe_affected_accounts_for_organization()  # (2)
+    ```
+
+    1. client: [HealthClient](./client.md)
+    2. result: [:material-code-braces: DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("health")  # (1)
+
+    paginator = client.get_paginator("describe_affected_accounts_for_organization")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [HealthClient](./client.md)
+    2. paginator: [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
+    3. item: [:material-code-braces: DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[health]` or a standalone `mypy_boto3_health` package,
-you have to explicitly specify `client: HealthClient` type annotation.
+With `boto3-stubs-lite[health]`
+or a standalone `mypy_boto3_health` package, you have to explicitly specify `client: HealthClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_health.client import HealthClient
-from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
-
-from mypy_boto3_health.literals import PaginatorName
-
-from mypy_boto3_health.type_defs import bool
-from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: HealthClient = session.client("health")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_health.client import HealthClient
+    from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseTypeDef
+    from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_affected_accounts_for_organization"
-paginator: DescribeAffectedAccountsForOrganizationPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeAffectedAccountsForOrganizationResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: HealthClient = session.client("health")
+
+    kwargs: DescribeAffectedAccountsForOrganizationRequestRequestTypeDef = {...}
+    result: DescribeAffectedAccountsForOrganizationResponseTypeDef = client.describe_affected_accounts_for_organization(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_health.client import HealthClient
+    from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
+    from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseTypeDef
+
+
+    session = Session()
+    client: HealthClient = session.client("health")
+
+    paginator: DescribeAffectedAccountsForOrganizationPaginator = client.get_paginator("describe_affected_accounts_for_organization")
+    for item in paginator.paginate(...):
+        item: DescribeAffectedAccountsForOrganizationResponseTypeDef
+        print(item)
+    ```
+
+
+
+

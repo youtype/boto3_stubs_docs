@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-acmpca-module"></a>
-
-# Examples for boto3 ACMPCA module
+# Examples
 
 > [Index](../README.md) > [ACMPCA](./README.md) > Examples
 
-- [Examples for boto3 ACMPCA module](#examples-for-boto3-acmpca-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+    type annotations stubs module [mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[acm-pca]` package installed.
 
-Write your `ACMPCA` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `ACMPCA` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ACMPCAClient
-# and provides type checking and code completion
-client = session.client("acm-pca")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListCertificateAuthoritiesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_certificate_authorities")
-for item in paginator.paginate(...):
-    # item has type ListCertificateAuthoritiesResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type AuditReportCreatedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("audit_report_created")
-waiter.wait()
-```
+    client = session.client("acm-pca")  # (1)
+    result = client.create_certificate_authority()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [ACMPCAClient](./client.md)
+    2. result: [:material-code-braces: CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("acm-pca")  # (1)
+
+    paginator = client.get_paginator("list_certificate_authorities")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ACMPCAClient](./client.md)
+    2. paginator: [ListCertificateAuthoritiesPaginator](./paginators.md#listcertificateauthoritiespaginator)
+    3. item: [:material-code-braces: ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("acm-pca")  # (1)
+
+    waiter = client.get_waiter("audit_report_created")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [ACMPCAClient](./client.md)
+    2. waiter: [AuditReportCreatedWaiter](./waiters.md#auditreportcreatedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[acm-pca]` or a standalone `mypy_boto3_acm_pca` package,
-you have to explicitly specify `client: ACMPCAClient` type annotation.
+With `boto3-stubs-lite[acm-pca]`
+or a standalone `mypy_boto3_acm_pca` package, you have to explicitly specify `client: ACMPCAClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_acm_pca.client import ACMPCAClient
-from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
-from mypy_boto3_acm_pca.waiter import AuditReportCreatedWaiter
-from mypy_boto3_acm_pca.literals import PaginatorName
-from mypy_boto3_acm_pca.literals import WaiterName
-from mypy_boto3_acm_pca.type_defs import bool
-from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ACMPCAClient = session.client("acm-pca")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_acm_pca.client import ACMPCAClient
+    from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityResponseTypeDef
+    from mypy_boto3_acm_pca.type_defs import CreateCertificateAuthorityRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_certificate_authorities"
-paginator: ListCertificateAuthoritiesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListCertificateAuthoritiesResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "audit_report_created"
-waiter: AuditReportCreatedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: ACMPCAClient = session.client("acm-pca")
+
+    kwargs: CreateCertificateAuthorityRequestRequestTypeDef = {...}
+    result: CreateCertificateAuthorityResponseTypeDef = client.create_certificate_authority(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_acm_pca.client import ACMPCAClient
+    from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
+    from mypy_boto3_acm_pca.type_defs import ListCertificateAuthoritiesResponseTypeDef
+
+
+    session = Session()
+    client: ACMPCAClient = session.client("acm-pca")
+
+    paginator: ListCertificateAuthoritiesPaginator = client.get_paginator("list_certificate_authorities")
+    for item in paginator.paginate(...):
+        item: ListCertificateAuthoritiesResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_acm_pca.client import ACMPCAClient
+    from mypy_boto3_acm_pca.waiter import AuditReportCreatedWaiter
+
+    session = Session()
+    client: ACMPCAClient = session.client("acm-pca")
+
+    waiter: AuditReportCreatedWaiter = client.get_waiter("audit_report_created")
+    waiter.wait()
+    ```
+
+

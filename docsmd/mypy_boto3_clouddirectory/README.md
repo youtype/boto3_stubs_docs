@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-clouddirectory-module"></a>
-
-# Type annotations for boto3 CloudDirectory module
+#  CloudDirectory module
 
 > [Index](../README.md) > CloudDirectory
 
-Auto-generated documentation for
-[CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
-type annotations stubs module
-[mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
+!!! note ""
 
-- [Type annotations for boto3 CloudDirectory module](#type-annotations-for-boto3-clouddirectory-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudDirectoryClient](#clouddirectoryclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudDirectory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory)
+    type annotations stubs module [mypy-boto3-clouddirectory](https://pypi.org/project/mypy-boto3-clouddirectory/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudDirectory`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[clouddirectory]'
 python -m pip install mypy-boto3-clouddirectory
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,154 +42,37 @@ python -m pip install mypy-boto3-clouddirectory
 python -m pip uninstall -y mypy-boto3-clouddirectory
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="clouddirectoryclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudDirectoryClient
 
-Type annotations for `boto3.client("clouddirectory")` as
-[CloudDirectoryClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("clouddirectory")` as [CloudDirectoryClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/clouddirectory.html#CloudDirectory.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_clouddirectory.client import CloudDirectoryClient
+
+def get_client() -> CloudDirectoryClient:
+    return Session().cleint("clouddirectory")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_facet_to_object](./client.md#add_facet_to_object)
-- [apply_schema](./client.md#apply_schema)
-- [attach_object](./client.md#attach_object)
-- [attach_policy](./client.md#attach_policy)
-- [attach_to_index](./client.md#attach_to_index)
-- [attach_typed_link](./client.md#attach_typed_link)
-- [batch_read](./client.md#batch_read)
-- [batch_write](./client.md#batch_write)
-- [can_paginate](./client.md#can_paginate)
-- [create_directory](./client.md#create_directory)
-- [create_facet](./client.md#create_facet)
-- [create_index](./client.md#create_index)
-- [create_object](./client.md#create_object)
-- [create_schema](./client.md#create_schema)
-- [create_typed_link_facet](./client.md#create_typed_link_facet)
-- [delete_directory](./client.md#delete_directory)
-- [delete_facet](./client.md#delete_facet)
-- [delete_object](./client.md#delete_object)
-- [delete_schema](./client.md#delete_schema)
-- [delete_typed_link_facet](./client.md#delete_typed_link_facet)
-- [detach_from_index](./client.md#detach_from_index)
-- [detach_object](./client.md#detach_object)
-- [detach_policy](./client.md#detach_policy)
-- [detach_typed_link](./client.md#detach_typed_link)
-- [disable_directory](./client.md#disable_directory)
-- [enable_directory](./client.md#enable_directory)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_applied_schema_version](./client.md#get_applied_schema_version)
-- [get_directory](./client.md#get_directory)
-- [get_facet](./client.md#get_facet)
-- [get_link_attributes](./client.md#get_link_attributes)
-- [get_object_attributes](./client.md#get_object_attributes)
-- [get_object_information](./client.md#get_object_information)
-- [get_paginator](./client.md#get_paginator)
-- [get_schema_as_json](./client.md#get_schema_as_json)
-- [get_typed_link_facet_information](./client.md#get_typed_link_facet_information)
-- [list_applied_schema_arns](./client.md#list_applied_schema_arns)
-- [list_attached_indices](./client.md#list_attached_indices)
-- [list_development_schema_arns](./client.md#list_development_schema_arns)
-- [list_directories](./client.md#list_directories)
-- [list_facet_attributes](./client.md#list_facet_attributes)
-- [list_facet_names](./client.md#list_facet_names)
-- [list_incoming_typed_links](./client.md#list_incoming_typed_links)
-- [list_index](./client.md#list_index)
-- [list_managed_schema_arns](./client.md#list_managed_schema_arns)
-- [list_object_attributes](./client.md#list_object_attributes)
-- [list_object_children](./client.md#list_object_children)
-- [list_object_parent_paths](./client.md#list_object_parent_paths)
-- [list_object_parents](./client.md#list_object_parents)
-- [list_object_policies](./client.md#list_object_policies)
-- [list_outgoing_typed_links](./client.md#list_outgoing_typed_links)
-- [list_policy_attachments](./client.md#list_policy_attachments)
-- [list_published_schema_arns](./client.md#list_published_schema_arns)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_typed_link_facet_attributes](./client.md#list_typed_link_facet_attributes)
-- [list_typed_link_facet_names](./client.md#list_typed_link_facet_names)
-- [lookup_policy](./client.md#lookup_policy)
-- [publish_schema](./client.md#publish_schema)
-- [put_schema_from_json](./client.md#put_schema_from_json)
-- [remove_facet_from_object](./client.md#remove_facet_from_object)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_facet](./client.md#update_facet)
-- [update_link_attributes](./client.md#update_link_attributes)
-- [update_object_attributes](./client.md#update_object_attributes)
-- [update_schema](./client.md#update_schema)
-- [update_typed_link_facet](./client.md#update_typed_link_facet)
-- [upgrade_applied_schema](./client.md#upgrade_applied_schema)
-- [upgrade_published_schema](./client.md#upgrade_published_schema)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudDirectoryClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- BatchWriteException
-- CannotListParentOfRootException
-- ClientError
-- DirectoryAlreadyExistsException
-- DirectoryDeletedException
-- DirectoryNotDisabledException
-- DirectoryNotEnabledException
-- FacetAlreadyExistsException
-- FacetInUseException
-- FacetNotFoundException
-- FacetValidationException
-- IncompatibleSchemaException
-- IndexedAttributeMissingException
-- InternalServiceException
-- InvalidArnException
-- InvalidAttachmentException
-- InvalidFacetUpdateException
-- InvalidNextTokenException
-- InvalidRuleException
-- InvalidSchemaDocException
-- InvalidTaggingRequestException
-- LimitExceededException
-- LinkNameAlreadyInUseException
-- NotIndexException
-- NotNodeException
-- NotPolicyException
-- ObjectAlreadyDetachedException
-- ObjectNotDetachedException
-- ResourceNotFoundException
-- RetryableConflictException
-- SchemaAlreadyExistsException
-- SchemaAlreadyPublishedException
-- StillContainsLinksException
-- UnsupportedIndexTypeException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("clouddirectory").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("clouddirectory").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator, ...
+from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator
+
+def get_list_applied_schema_arns_paginator() -> ListAppliedSchemaArnsPaginator:
+    return Session().client("clouddirectory").get_paginator("list_applied_schema_arns"))
 ```
 
 - [ListAppliedSchemaArnsPaginator](./paginators.md#listappliedschemaarnspaginator)
@@ -234,16 +95,23 @@ from mypy_boto3_clouddirectory.paginator import ListAppliedSchemaArnsPaginator, 
 - [ListTypedLinkFacetNamesPaginator](./paginators.md#listtypedlinkfacetnamespaginator)
 - [LookupPolicyPaginator](./paginators.md#lookuppolicypaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType
 
-```python
-from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
+def get_value() -> BatchReadExceptionTypeType:
+    return "AccessDeniedException"
 ```
 
 - [BatchReadExceptionTypeType](./literals.md#batchreadexceptiontypetype)
@@ -279,18 +147,24 @@ from mypy_boto3_clouddirectory.literals import BatchReadExceptionTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_clouddirectory.type_defs import AddFacetToObjectRequestRequestTypeDef
 
-```python
-from mypy_boto3_clouddirectory.type_defs import AddFacetToObjectRequestRequestTypeDef, ...
+def get_value() -> AddFacetToObjectRequestRequestTypeDef:
+    return {
+        "DirectoryArn": ...,
+        "SchemaFacet": ...,
+        "ObjectReference": ...,
+    }
 ```
 
 - [AddFacetToObjectRequestRequestTypeDef](./type_defs.md#addfacettoobjectrequestrequesttypedef)
@@ -419,46 +293,65 @@ from mypy_boto3_clouddirectory.type_defs import AddFacetToObjectRequestRequestTy
 - [IndexAttachmentTypeDef](./type_defs.md#indexattachmenttypedef)
 - [LinkAttributeActionTypeDef](./type_defs.md#linkattributeactiontypedef)
 - [LinkAttributeUpdateTypeDef](./type_defs.md#linkattributeupdatetypedef)
+- [ListAppliedSchemaArnsRequestListAppliedSchemaArnsPaginateTypeDef](./type_defs.md#listappliedschemaarnsrequestlistappliedschemaarnspaginatetypedef)
 - [ListAppliedSchemaArnsRequestRequestTypeDef](./type_defs.md#listappliedschemaarnsrequestrequesttypedef)
 - [ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef)
+- [ListAttachedIndicesRequestListAttachedIndicesPaginateTypeDef](./type_defs.md#listattachedindicesrequestlistattachedindicespaginatetypedef)
 - [ListAttachedIndicesRequestRequestTypeDef](./type_defs.md#listattachedindicesrequestrequesttypedef)
 - [ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef)
+- [ListDevelopmentSchemaArnsRequestListDevelopmentSchemaArnsPaginateTypeDef](./type_defs.md#listdevelopmentschemaarnsrequestlistdevelopmentschemaarnspaginatetypedef)
 - [ListDevelopmentSchemaArnsRequestRequestTypeDef](./type_defs.md#listdevelopmentschemaarnsrequestrequesttypedef)
 - [ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef)
+- [ListDirectoriesRequestListDirectoriesPaginateTypeDef](./type_defs.md#listdirectoriesrequestlistdirectoriespaginatetypedef)
 - [ListDirectoriesRequestRequestTypeDef](./type_defs.md#listdirectoriesrequestrequesttypedef)
 - [ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef)
+- [ListFacetAttributesRequestListFacetAttributesPaginateTypeDef](./type_defs.md#listfacetattributesrequestlistfacetattributespaginatetypedef)
 - [ListFacetAttributesRequestRequestTypeDef](./type_defs.md#listfacetattributesrequestrequesttypedef)
 - [ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef)
+- [ListFacetNamesRequestListFacetNamesPaginateTypeDef](./type_defs.md#listfacetnamesrequestlistfacetnamespaginatetypedef)
 - [ListFacetNamesRequestRequestTypeDef](./type_defs.md#listfacetnamesrequestrequesttypedef)
 - [ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef)
+- [ListIncomingTypedLinksRequestListIncomingTypedLinksPaginateTypeDef](./type_defs.md#listincomingtypedlinksrequestlistincomingtypedlinkspaginatetypedef)
 - [ListIncomingTypedLinksRequestRequestTypeDef](./type_defs.md#listincomingtypedlinksrequestrequesttypedef)
 - [ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef)
+- [ListIndexRequestListIndexPaginateTypeDef](./type_defs.md#listindexrequestlistindexpaginatetypedef)
 - [ListIndexRequestRequestTypeDef](./type_defs.md#listindexrequestrequesttypedef)
 - [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef)
+- [ListManagedSchemaArnsRequestListManagedSchemaArnsPaginateTypeDef](./type_defs.md#listmanagedschemaarnsrequestlistmanagedschemaarnspaginatetypedef)
 - [ListManagedSchemaArnsRequestRequestTypeDef](./type_defs.md#listmanagedschemaarnsrequestrequesttypedef)
 - [ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef)
+- [ListObjectAttributesRequestListObjectAttributesPaginateTypeDef](./type_defs.md#listobjectattributesrequestlistobjectattributespaginatetypedef)
 - [ListObjectAttributesRequestRequestTypeDef](./type_defs.md#listobjectattributesrequestrequesttypedef)
 - [ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef)
 - [ListObjectChildrenRequestRequestTypeDef](./type_defs.md#listobjectchildrenrequestrequesttypedef)
 - [ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef)
+- [ListObjectParentPathsRequestListObjectParentPathsPaginateTypeDef](./type_defs.md#listobjectparentpathsrequestlistobjectparentpathspaginatetypedef)
 - [ListObjectParentPathsRequestRequestTypeDef](./type_defs.md#listobjectparentpathsrequestrequesttypedef)
 - [ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef)
 - [ListObjectParentsRequestRequestTypeDef](./type_defs.md#listobjectparentsrequestrequesttypedef)
 - [ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef)
+- [ListObjectPoliciesRequestListObjectPoliciesPaginateTypeDef](./type_defs.md#listobjectpoliciesrequestlistobjectpoliciespaginatetypedef)
 - [ListObjectPoliciesRequestRequestTypeDef](./type_defs.md#listobjectpoliciesrequestrequesttypedef)
 - [ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef)
+- [ListOutgoingTypedLinksRequestListOutgoingTypedLinksPaginateTypeDef](./type_defs.md#listoutgoingtypedlinksrequestlistoutgoingtypedlinkspaginatetypedef)
 - [ListOutgoingTypedLinksRequestRequestTypeDef](./type_defs.md#listoutgoingtypedlinksrequestrequesttypedef)
 - [ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef)
+- [ListPolicyAttachmentsRequestListPolicyAttachmentsPaginateTypeDef](./type_defs.md#listpolicyattachmentsrequestlistpolicyattachmentspaginatetypedef)
 - [ListPolicyAttachmentsRequestRequestTypeDef](./type_defs.md#listpolicyattachmentsrequestrequesttypedef)
 - [ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef)
+- [ListPublishedSchemaArnsRequestListPublishedSchemaArnsPaginateTypeDef](./type_defs.md#listpublishedschemaarnsrequestlistpublishedschemaarnspaginatetypedef)
 - [ListPublishedSchemaArnsRequestRequestTypeDef](./type_defs.md#listpublishedschemaarnsrequestrequesttypedef)
 - [ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTypedLinkFacetAttributesRequestListTypedLinkFacetAttributesPaginateTypeDef](./type_defs.md#listtypedlinkfacetattributesrequestlisttypedlinkfacetattributespaginatetypedef)
 - [ListTypedLinkFacetAttributesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetattributesrequestrequesttypedef)
 - [ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef)
+- [ListTypedLinkFacetNamesRequestListTypedLinkFacetNamesPaginateTypeDef](./type_defs.md#listtypedlinkfacetnamesrequestlisttypedlinkfacetnamespaginatetypedef)
 - [ListTypedLinkFacetNamesRequestRequestTypeDef](./type_defs.md#listtypedlinkfacetnamesrequestrequesttypedef)
 - [ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef)
+- [LookupPolicyRequestLookupPolicyPaginateTypeDef](./type_defs.md#lookuppolicyrequestlookuppolicypaginatetypedef)
 - [LookupPolicyRequestRequestTypeDef](./type_defs.md#lookuppolicyrequestrequesttypedef)
 - [LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef)
 - [ObjectAttributeActionTypeDef](./type_defs.md#objectattributeactiontypedef)
@@ -500,3 +393,4 @@ from mypy_boto3_clouddirectory.type_defs import AddFacetToObjectRequestRequestTy
 - [UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef)
 - [UpgradePublishedSchemaRequestRequestTypeDef](./type_defs.md#upgradepublishedschemarequestrequesttypedef)
 - [UpgradePublishedSchemaResponseTypeDef](./type_defs.md#upgradepublishedschemaresponsetypedef)
+

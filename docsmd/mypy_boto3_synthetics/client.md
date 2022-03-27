@@ -1,44 +1,18 @@
-<a id="syntheticsclient-for-boto3-synthetics-module"></a>
-
-# SyntheticsClient for boto3 Synthetics module
+# SyntheticsClient
 
 > [Index](../README.md) > [Synthetics](./README.md) > SyntheticsClient
 
-Auto-generated documentation for
-[Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
-type annotations stubs module
-[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+!!! note ""
 
-- [SyntheticsClient for boto3 Synthetics module](#syntheticsclient-for-boto3-synthetics-module)
-  - [SyntheticsClient](#syntheticsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_canary](#create_canary)
-    - [delete_canary](#delete_canary)
-    - [describe_canaries](#describe_canaries)
-    - [describe_canaries_last_run](#describe_canaries_last_run)
-    - [describe_runtime_versions](#describe_runtime_versions)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_canary](#get_canary)
-    - [get_canary_runs](#get_canary_runs)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_canary](#start_canary)
-    - [stop_canary](#stop_canary)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_canary](#update_canary)
-
-<a id="syntheticsclient"></a>
+    Auto-generated documentation for [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
+    type annotations stubs module [mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 ## SyntheticsClient
 
-Type annotations for `boto3.client("synthetics")`
+Type annotations and code completion for `#!python boto3.client("synthetics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_synthetics.client import SyntheticsClient
 
@@ -46,395 +20,497 @@ def get_synthetics_client() -> SyntheticsClient:
     return Session().client("synthetics")
 ```
 
-Boto3 documentation:
-[Synthetics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("synthetics").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("synthetics")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.RequestEntityTooLargeException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_synthetics.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.RequestEntityTooLargeException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SyntheticsClient exceptions.
-
-Type annotations for `boto3.client("synthetics").exceptions` method.
-
-Boto3 documentation:
-[Synthetics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("synthetics").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.can_paginate)
 
-Boto3 documentation:
-[Synthetics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_canary"></a>
-
-### create_canary
+### create\_canary
 
 Creates a canary.
 
-Type annotations for `boto3.client("synthetics").create_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").create_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary)
 
-Boto3 documentation:
-[Synthetics.Client.create_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.create_canary)
+```python title="Method definition"
+def create_canary(
+    self,
+    *,
+    Name: str,
+    Code: CanaryCodeInputTypeDef,  # (1)
+    ArtifactS3Location: str,
+    ExecutionRoleArn: str,
+    Schedule: CanaryScheduleInputTypeDef,  # (2)
+    RuntimeVersion: str,
+    RunConfig: CanaryRunConfigInputTypeDef = ...,  # (3)
+    SuccessRetentionPeriodInDays: int = ...,
+    FailureRetentionPeriodInDays: int = ...,
+    VpcConfig: VpcConfigInputTypeDef = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+    ArtifactConfig: ArtifactConfigInputTypeDef = ...,  # (5)
+) -> CreateCanaryResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef).
+1. See [:material-code-braces: CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef) 
+2. See [:material-code-braces: CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef) 
+3. See [:material-code-braces: CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef) 
+4. See [:material-code-braces: VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef) 
+5. See [:material-code-braces: ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef) 
+6. See [:material-code-braces: CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
-  *(required)*
-- `ArtifactS3Location`: `str` *(required)*
-- `ExecutionRoleArn`: `str` *(required)*
-- `Schedule`:
-  [CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef)
-  *(required)*
-- `RuntimeVersion`: `str` *(required)*
-- `RunConfig`:
-  [CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef)
-- `SuccessRetentionPeriodInDays`: `int`
-- `FailureRetentionPeriodInDays`: `int`
-- `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ArtifactConfig`:
-  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Code": ...,
+    "ArtifactS3Location": ...,
+    "ExecutionRoleArn": ...,
+    "Schedule": ...,
+    "RuntimeVersion": ...,
+}
 
-Returns
-[CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
+parent.create_canary(**kwargs)
+```
 
-<a id="delete\_canary"></a>
+1. See [:material-code-braces: CreateCanaryRequestRequestTypeDef](./type_defs.md#createcanaryrequestrequesttypedef) 
 
-### delete_canary
+### delete\_canary
 
 Permanently deletes the specified canary.
 
-Type annotations for `boto3.client("synthetics").delete_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").delete_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_canary)
 
-Boto3 documentation:
-[Synthetics.Client.delete_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.delete_canary)
+```python title="Method definition"
+def delete_canary(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCanaryRequestRequestTypeDef](./type_defs.md#deletecanaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_canary(**kwargs)
+```
 
-<a id="describe\_canaries"></a>
+1. See [:material-code-braces: DeleteCanaryRequestRequestTypeDef](./type_defs.md#deletecanaryrequestrequesttypedef) 
 
-### describe_canaries
+### describe\_canaries
 
 This operation returns a list of the canaries in your account, along with full
 details about each canary.
 
-Type annotations for `boto3.client("synthetics").describe_canaries` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").describe_canaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries)
 
-Boto3 documentation:
-[Synthetics.Client.describe_canaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries)
+```python title="Method definition"
+def describe_canaries(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Names: Sequence[str] = ...,
+) -> DescribeCanariesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCanariesRequestRequestTypeDef](./type_defs.md#describecanariesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Names`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeCanariesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
+parent.describe_canaries(**kwargs)
+```
 
-<a id="describe\_canaries\_last\_run"></a>
+1. See [:material-code-braces: DescribeCanariesRequestRequestTypeDef](./type_defs.md#describecanariesrequestrequesttypedef) 
 
-### describe_canaries_last_run
+### describe\_canaries\_last\_run
 
 Use this operation to see information from the most recent run of each canary
 that you have created.
 
-Type annotations for `boto3.client("synthetics").describe_canaries_last_run`
-method.
+Type annotations and code completion for `#!python boto3.client("synthetics").describe_canaries_last_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries_last_run)
 
-Boto3 documentation:
-[Synthetics.Client.describe_canaries_last_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_canaries_last_run)
+```python title="Method definition"
+def describe_canaries_last_run(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Names: Sequence[str] = ...,
+) -> DescribeCanariesLastRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCanariesLastRunRequestRequestTypeDef](./type_defs.md#describecanarieslastrunrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Names`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeCanariesLastRunRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).
+parent.describe_canaries_last_run(**kwargs)
+```
 
-<a id="describe\_runtime\_versions"></a>
+1. See [:material-code-braces: DescribeCanariesLastRunRequestRequestTypeDef](./type_defs.md#describecanarieslastrunrequestrequesttypedef) 
 
-### describe_runtime_versions
+### describe\_runtime\_versions
 
 Returns a list of Synthetics canary runtime versions.
 
-Type annotations for `boto3.client("synthetics").describe_runtime_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("synthetics").describe_runtime_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_runtime_versions)
 
-Boto3 documentation:
-[Synthetics.Client.describe_runtime_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.describe_runtime_versions)
+```python title="Method definition"
+def describe_runtime_versions(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeRuntimeVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRuntimeVersionsRequestRequestTypeDef](./type_defs.md#describeruntimeversionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeRuntimeVersionsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef).
+parent.describe_runtime_versions(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeRuntimeVersionsRequestRequestTypeDef](./type_defs.md#describeruntimeversionsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("synthetics").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("synthetics").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Synthetics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_canary"></a>
-
-### get_canary
+### get\_canary
 
 Retrieves complete information about one canary.
 
-Type annotations for `boto3.client("synthetics").get_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").get_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary)
 
-Boto3 documentation:
-[Synthetics.Client.get_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary)
+```python title="Method definition"
+def get_canary(
+    self,
+    *,
+    Name: str,
+) -> GetCanaryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCanaryRequestRequestTypeDef](./type_defs.md#getcanaryrequestrequesttypedef).
+1. See [:material-code-braces: GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef).
+parent.get_canary(**kwargs)
+```
 
-<a id="get\_canary\_runs"></a>
+1. See [:material-code-braces: GetCanaryRequestRequestTypeDef](./type_defs.md#getcanaryrequestrequesttypedef) 
 
-### get_canary_runs
+### get\_canary\_runs
 
 Retrieves a list of runs for a specified canary.
 
-Type annotations for `boto3.client("synthetics").get_canary_runs` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").get_canary_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs)
 
-Boto3 documentation:
-[Synthetics.Client.get_canary_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.get_canary_runs)
+```python title="Method definition"
+def get_canary_runs(
+    self,
+    *,
+    Name: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetCanaryRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef).
+1. See [:material-code-braces: GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetCanaryRunsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef).
+parent.get_canary_runs(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: GetCanaryRunsRequestRequestTypeDef](./type_defs.md#getcanaryrunsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Displays the tags associated with a canary.
 
-Type annotations for `boto3.client("synthetics").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("synthetics").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Synthetics.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_canary"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_canary
+### start\_canary
 
 Use this operation to run a canary that has already been created.
 
-Type annotations for `boto3.client("synthetics").start_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").start_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.start_canary)
 
-Boto3 documentation:
-[Synthetics.Client.start_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.start_canary)
+```python title="Method definition"
+def start_canary(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartCanaryRequestRequestTypeDef](./type_defs.md#startcanaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_canary(**kwargs)
+```
 
-<a id="stop\_canary"></a>
+1. See [:material-code-braces: StartCanaryRequestRequestTypeDef](./type_defs.md#startcanaryrequestrequesttypedef) 
 
-### stop_canary
+### stop\_canary
 
 Stops the canary to prevent all future runs.
 
-Type annotations for `boto3.client("synthetics").stop_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").stop_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.stop_canary)
 
-Boto3 documentation:
-[Synthetics.Client.stop_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.stop_canary)
+```python title="Method definition"
+def stop_canary(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopCanaryRequestRequestTypeDef](./type_defs.md#stopcanaryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_canary(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopCanaryRequestRequestTypeDef](./type_defs.md#stopcanaryrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns one or more tags (key-value pairs) to the specified canary.
 
-Type annotations for `boto3.client("synthetics").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource)
 
-Boto3 documentation:
-[Synthetics.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified canary.
 
-Type annotations for `boto3.client("synthetics").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource)
 
-Boto3 documentation:
-[Synthetics.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_canary"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_canary
+### update\_canary
 
 Use this operation to change the settings of a canary that has already been
 created.
 
-Type annotations for `boto3.client("synthetics").update_canary` method.
+Type annotations and code completion for `#!python boto3.client("synthetics").update_canary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary)
 
-Boto3 documentation:
-[Synthetics.Client.update_canary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics.Client.update_canary)
+```python title="Method definition"
+def update_canary(
+    self,
+    *,
+    Name: str,
+    Code: CanaryCodeInputTypeDef = ...,  # (1)
+    ExecutionRoleArn: str = ...,
+    RuntimeVersion: str = ...,
+    Schedule: CanaryScheduleInputTypeDef = ...,  # (2)
+    RunConfig: CanaryRunConfigInputTypeDef = ...,  # (3)
+    SuccessRetentionPeriodInDays: int = ...,
+    FailureRetentionPeriodInDays: int = ...,
+    VpcConfig: VpcConfigInputTypeDef = ...,  # (4)
+    VisualReference: VisualReferenceInputTypeDef = ...,  # (5)
+    ArtifactS3Location: str = ...,
+    ArtifactConfig: ArtifactConfigInputTypeDef = ...,  # (6)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef).
+1. See [:material-code-braces: CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef) 
+2. See [:material-code-braces: CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef) 
+3. See [:material-code-braces: CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef) 
+4. See [:material-code-braces: VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef) 
+5. See [:material-code-braces: VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef) 
+6. See [:material-code-braces: ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Code`: [CanaryCodeInputTypeDef](./type_defs.md#canarycodeinputtypedef)
-- `ExecutionRoleArn`: `str`
-- `RuntimeVersion`: `str`
-- `Schedule`:
-  [CanaryScheduleInputTypeDef](./type_defs.md#canaryscheduleinputtypedef)
-- `RunConfig`:
-  [CanaryRunConfigInputTypeDef](./type_defs.md#canaryrunconfiginputtypedef)
-- `SuccessRetentionPeriodInDays`: `int`
-- `FailureRetentionPeriodInDays`: `int`
-- `VpcConfig`: [VpcConfigInputTypeDef](./type_defs.md#vpcconfiginputtypedef)
-- `VisualReference`:
-  [VisualReferenceInputTypeDef](./type_defs.md#visualreferenceinputtypedef)
-- `ArtifactS3Location`: `str`
-- `ArtifactConfig`:
-  [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateCanaryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_canary(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateCanaryRequestRequestTypeDef](./type_defs.md#updatecanaryrequestrequesttypedef) 
+
+
+
+

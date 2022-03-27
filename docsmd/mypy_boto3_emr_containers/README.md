@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-emrcontainers-module"></a>
-
-# Type annotations for boto3 EMRContainers module
+#  EMRContainers module
 
 > [Index](../README.md) > EMRContainers
 
-Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module
-[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+!!! note ""
 
-- [Type annotations for boto3 EMRContainers module](#type-annotations-for-boto3-emrcontainers-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [EMRContainersClient](#emrcontainersclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+    type annotations stubs module [mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `EMRContainers`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[emr-containers]'
 python -m pip install mypy-boto3-emr-containers
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,87 +42,60 @@ python -m pip install mypy-boto3-emr-containers
 python -m pip uninstall -y mypy-boto3-emr-containers
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="emrcontainersclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## EMRContainersClient
 
-Type annotations for `boto3.client("emr-containers")` as
-[EMRContainersClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("emr-containers")` as [EMRContainersClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_emr_containers.client import EMRContainersClient
+
+def get_client() -> EMRContainersClient:
+    return Session().cleint("emr-containers")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job_run](./client.md#cancel_job_run)
-- [create_managed_endpoint](./client.md#create_managed_endpoint)
-- [create_virtual_cluster](./client.md#create_virtual_cluster)
-- [delete_managed_endpoint](./client.md#delete_managed_endpoint)
-- [delete_virtual_cluster](./client.md#delete_virtual_cluster)
-- [describe_job_run](./client.md#describe_job_run)
-- [describe_managed_endpoint](./client.md#describe_managed_endpoint)
-- [describe_virtual_cluster](./client.md#describe_virtual_cluster)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_job_runs](./client.md#list_job_runs)
-- [list_managed_endpoints](./client.md#list_managed_endpoints)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_virtual_clusters](./client.md#list_virtual_clusters)
-- [start_job_run](./client.md#start_job_run)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-EMRContainersClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalServerException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("emr-containers").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("emr-containers").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_emr_containers.paginator import ListJobRunsPaginator, ...
+from mypy_boto3_emr_containers.paginator import ListJobRunsPaginator
+
+def get_list_job_runs_paginator() -> ListJobRunsPaginator:
+    return Session().client("emr-containers").get_paginator("list_job_runs"))
 ```
 
 - [ListJobRunsPaginator](./paginators.md#listjobrunspaginator)
 - [ListManagedEndpointsPaginator](./paginators.md#listmanagedendpointspaginator)
 - [ListVirtualClustersPaginator](./paginators.md#listvirtualclusterspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_emr_containers.literals import ContainerProviderTypeType
 
-```python
-from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
+def get_value() -> ContainerProviderTypeType:
+    return "EKS"
 ```
 
 - [ContainerProviderTypeType](./literals.md#containerprovidertypetype)
@@ -160,18 +111,23 @@ from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestRequestTypeDef
 
-```python
-from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestRequestTypeDef, ...
+def get_value() -> CancelJobRunRequestRequestTypeDef:
+    return {
+        "id": ...,
+        "virtualClusterId": ...,
+    }
 ```
 
 - [CancelJobRunRequestRequestTypeDef](./type_defs.md#canceljobrunrequestrequesttypedef)
@@ -200,12 +156,15 @@ from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestRequestTypeDe
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [JobDriverTypeDef](./type_defs.md#jobdrivertypedef)
 - [JobRunTypeDef](./type_defs.md#jobruntypedef)
+- [ListJobRunsRequestListJobRunsPaginateTypeDef](./type_defs.md#listjobrunsrequestlistjobrunspaginatetypedef)
 - [ListJobRunsRequestRequestTypeDef](./type_defs.md#listjobrunsrequestrequesttypedef)
 - [ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)
+- [ListManagedEndpointsRequestListManagedEndpointsPaginateTypeDef](./type_defs.md#listmanagedendpointsrequestlistmanagedendpointspaginatetypedef)
 - [ListManagedEndpointsRequestRequestTypeDef](./type_defs.md#listmanagedendpointsrequestrequesttypedef)
 - [ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListVirtualClustersRequestListVirtualClustersPaginateTypeDef](./type_defs.md#listvirtualclustersrequestlistvirtualclusterspaginatetypedef)
 - [ListVirtualClustersRequestRequestTypeDef](./type_defs.md#listvirtualclustersrequestrequesttypedef)
 - [ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)
 - [MonitoringConfigurationTypeDef](./type_defs.md#monitoringconfigurationtypedef)
@@ -218,3 +177,4 @@ from mypy_boto3_emr_containers.type_defs import CancelJobRunRequestRequestTypeDe
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [VirtualClusterTypeDef](./type_defs.md#virtualclustertypedef)
+

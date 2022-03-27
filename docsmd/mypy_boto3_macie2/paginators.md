@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-macie2-module"></a>
-
-# Paginators for boto3 Macie2 module
+# Paginators
 
 > [Index](../README.md) > [Macie2](./README.md) > Paginators
 
-Auto-generated documentation for
-[Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
-type annotations stubs module
-[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
+!!! note ""
 
-- [Paginators for boto3 Macie2 module](#paginators-for-boto3-macie2-module)
-  - [DescribeBucketsPaginator](#describebucketspaginator)
-  - [GetUsageStatisticsPaginator](#getusagestatisticspaginator)
-  - [ListClassificationJobsPaginator](#listclassificationjobspaginator)
-  - [ListCustomDataIdentifiersPaginator](#listcustomdataidentifierspaginator)
-  - [ListFindingsPaginator](#listfindingspaginator)
-  - [ListFindingsFiltersPaginator](#listfindingsfilterspaginator)
-  - [ListInvitationsPaginator](#listinvitationspaginator)
-  - [ListMembersPaginator](#listmemberspaginator)
-  - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
-  - [SearchResourcesPaginator](#searchresourcespaginator)
-
-<a id="describebucketspaginator"></a>
+    Auto-generated documentation for [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
+    type annotations stubs module [mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 ## DescribeBucketsPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("describe_buckets")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("describe_buckets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import DescribeBucketsPaginator
@@ -39,31 +21,43 @@ def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
     return Session().client("macie2").get_paginator("describe_buckets")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.DescribeBuckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.DescribeBuckets)
 
-Arguments for `DescribeBucketsPaginator.paginate` method:
+### paginate
 
-- `criteria`: `Mapping`\[`str`,
-  [BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef)\]
-- `sortCriteria`:
-  [BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBucketsPaginator.paginate` method.
 
-`DescribeBucketsPaginator.paginate` returns
-`_PageIterator`\[[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    criteria: Mapping[str, BucketCriteriaAdditionalPropertiesTypeDef] = ...,  # (1)
+    sortCriteria: BucketSortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeBucketsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="getusagestatisticspaginator"></a>
+1. See [:material-code-braces: BucketCriteriaAdditionalPropertiesTypeDef](./type_defs.md#bucketcriteriaadditionalpropertiestypedef) 
+2. See [:material-code-braces: BucketSortCriteriaTypeDef](./type_defs.md#bucketsortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBucketsRequestDescribeBucketsPaginateTypeDef = {  # (1)
+    "criteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBucketsRequestDescribeBucketsPaginateTypeDef](./type_defs.md#describebucketsrequestdescribebucketspaginatetypedef) 
 ## GetUsageStatisticsPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("get_usage_statistics")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("get_usage_statistics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import GetUsageStatisticsPaginator
@@ -72,32 +66,45 @@ def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
     return Session().client("macie2").get_paginator("get_usage_statistics")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.GetUsageStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.GetUsageStatistics)
 
-Arguments for `GetUsageStatisticsPaginator.paginate` method:
+### paginate
 
-- `filterBy`:
-  `Sequence`\[[UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef)\]
-- `sortBy`:
-  [UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef)
-- `timeRange`: [TimeRangeType](./literals.md#timerangetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetUsageStatisticsPaginator.paginate` method.
 
-`GetUsageStatisticsPaginator.paginate` returns
-`_PageIterator`\[[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterBy: Sequence[UsageStatisticsFilterTypeDef] = ...,  # (1)
+    sortBy: UsageStatisticsSortByTypeDef = ...,  # (2)
+    timeRange: TimeRangeType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetUsageStatisticsResponseTypeDef]:  # (5)
+    ...
+```
 
-<a id="listclassificationjobspaginator"></a>
+1. See [:material-code-braces: UsageStatisticsFilterTypeDef](./type_defs.md#usagestatisticsfiltertypedef) 
+2. See [:material-code-braces: UsageStatisticsSortByTypeDef](./type_defs.md#usagestatisticssortbytypedef) 
+3. See [:material-code-brackets: TimeRangeType](./literals.md#timerangetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef = {  # (1)
+    "filterBy": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetUsageStatisticsRequestGetUsageStatisticsPaginateTypeDef](./type_defs.md#getusagestatisticsrequestgetusagestatisticspaginatetypedef) 
 ## ListClassificationJobsPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("list_classification_jobs")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_classification_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListClassificationJobsPaginator
@@ -106,31 +113,43 @@ def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
     return Session().client("macie2").get_paginator("list_classification_jobs")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListClassificationJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListClassificationJobs)
 
-Arguments for `ListClassificationJobsPaginator.paginate` method:
+### paginate
 
-- `filterCriteria`:
-  [ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef)
-- `sortCriteria`:
-  [ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListClassificationJobsPaginator.paginate` method.
 
-`ListClassificationJobsPaginator.paginate` returns
-`_PageIterator`\[[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterCriteria: ListJobsFilterCriteriaTypeDef = ...,  # (1)
+    sortCriteria: ListJobsSortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListClassificationJobsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listcustomdataidentifierspaginator"></a>
+1. See [:material-code-braces: ListJobsFilterCriteriaTypeDef](./type_defs.md#listjobsfiltercriteriatypedef) 
+2. See [:material-code-braces: ListJobsSortCriteriaTypeDef](./type_defs.md#listjobssortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListClassificationJobsRequestListClassificationJobsPaginateTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListClassificationJobsRequestListClassificationJobsPaginateTypeDef](./type_defs.md#listclassificationjobsrequestlistclassificationjobspaginatetypedef) 
 ## ListCustomDataIdentifiersPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("list_custom_data_identifiers")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_custom_data_identifiers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListCustomDataIdentifiersPaginator
@@ -139,26 +158,39 @@ def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPag
     return Session().client("macie2").get_paginator("list_custom_data_identifiers")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListCustomDataIdentifiers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListCustomDataIdentifiers)
 
-Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomDataIdentifiersPaginator.paginate` method.
 
-`ListCustomDataIdentifiersPaginator.paginate` returns
-`_PageIterator`\[[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomDataIdentifiersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfindingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomDataIdentifiersRequestListCustomDataIdentifiersPaginateTypeDef](./type_defs.md#listcustomdataidentifiersrequestlistcustomdataidentifierspaginatetypedef) 
 ## ListFindingsPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_findings")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListFindingsPaginator
@@ -167,30 +199,43 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("macie2").get_paginator("list_findings")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindings)
 
-Arguments for `ListFindingsPaginator.paginate` method:
+### paginate
 
-- `findingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingsPaginator.paginate` method.
 
-`ListFindingsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    findingCriteria: FindingCriteriaTypeDef = ...,  # (1)
+    sortCriteria: SortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListFindingsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listfindingsfilterspaginator"></a>
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestListFindingsPaginateTypeDef = {  # (1)
+    "findingCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef) 
 ## ListFindingsFiltersPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("list_findings_filters")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_findings_filters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListFindingsFiltersPaginator
@@ -199,27 +244,39 @@ def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
     return Session().client("macie2").get_paginator("list_findings_filters")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListFindingsFilters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListFindingsFilters)
 
-Arguments for `ListFindingsFiltersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingsFiltersPaginator.paginate` method.
 
-`ListFindingsFiltersPaginator.paginate` returns
-`_PageIterator`\[[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFindingsFiltersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinvitationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingsFiltersRequestListFindingsFiltersPaginateTypeDef](./type_defs.md#listfindingsfiltersrequestlistfindingsfilterspaginatetypedef) 
 ## ListInvitationsPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("list_invitations")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_invitations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListInvitationsPaginator
@@ -228,26 +285,39 @@ def get_list_invitations_paginator() -> ListInvitationsPaginator:
     return Session().client("macie2").get_paginator("list_invitations")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListInvitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListInvitations)
 
-Arguments for `ListInvitationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInvitationsPaginator.paginate` method.
 
-`ListInvitationsPaginator.paginate` returns
-`_PageIterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInvitationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmemberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestListInvitationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef) 
 ## ListMembersPaginator
 
-Type annotations for `boto3.client("macie2").get_paginator("list_members")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_members")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListMembersPaginator
@@ -256,28 +326,40 @@ def get_list_members_paginator() -> ListMembersPaginator:
     return Session().client("macie2").get_paginator("list_members")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListMembers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListMembers)
 
-Arguments for `ListMembersPaginator.paginate` method:
+### paginate
 
-- `onlyAssociated`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMembersPaginator.paginate` method.
 
-`ListMembersPaginator.paginate` returns
-`_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    onlyAssociated: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMembersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listorganizationadminaccountspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestListMembersPaginateTypeDef = {  # (1)
+    "onlyAssociated": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef) 
 ## ListOrganizationAdminAccountsPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("list_organization_admin_accounts")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("list_organization_admin_accounts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import ListOrganizationAdminAccountsPaginator
@@ -286,27 +368,39 @@ def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAcc
     return Session().client("macie2").get_paginator("list_organization_admin_accounts")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.ListOrganizationAdminAccounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.ListOrganizationAdminAccounts)
 
-Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOrganizationAdminAccountsPaginator.paginate` method.
 
-`ListOrganizationAdminAccountsPaginator.paginate` returns
-`_PageIterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOrganizationAdminAccountsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef) 
 ## SearchResourcesPaginator
 
-Type annotations for
-`boto3.client("macie2").get_paginator("search_resources")`.
+Type annotations and code completion for `#!python boto3.client("macie2").get_paginator("search_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.SearchResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_macie2.paginator import SearchResourcesPaginator
@@ -315,17 +409,34 @@ def get_search_resources_paginator() -> SearchResourcesPaginator:
     return Session().client("macie2").get_paginator("search_resources")
 ```
 
-Boto3 documentation:
-[Macie2.Paginator.SearchResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Paginator.SearchResources)
 
-Arguments for `SearchResourcesPaginator.paginate` method:
+### paginate
 
-- `bucketCriteria`:
-  [SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef)
-- `sortCriteria`:
-  [SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchResourcesPaginator.paginate` method.
 
-`SearchResourcesPaginator.paginate` returns
-`_PageIterator`\[[SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    bucketCriteria: SearchResourcesBucketCriteriaTypeDef = ...,  # (1)
+    sortCriteria: SearchResourcesSortCriteriaTypeDef = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchResourcesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: SearchResourcesBucketCriteriaTypeDef](./type_defs.md#searchresourcesbucketcriteriatypedef) 
+2. See [:material-code-braces: SearchResourcesSortCriteriaTypeDef](./type_defs.md#searchresourcessortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchResourcesRequestSearchResourcesPaginateTypeDef = {  # (1)
+    "bucketCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchResourcesRequestSearchResourcesPaginateTypeDef](./type_defs.md#searchresourcesrequestsearchresourcespaginatetypedef) 

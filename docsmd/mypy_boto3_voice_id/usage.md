@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-voiceid-module"></a>
-
-# Examples for boto3 VoiceID module
+# Examples
 
 > [Index](../README.md) > [VoiceID](./README.md) > Examples
 
-- [Examples for boto3 VoiceID module](#examples-for-boto3-voiceid-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [VoiceID](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/voice-id.html#VoiceID)
+    type annotations stubs module [mypy-boto3-voice-id](https://pypi.org/project/mypy-boto3-voice-id/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[voice-id]` package installed.
 
-Write your `VoiceID` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `VoiceID` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type VoiceIDClient
-# and provides type checking and code completion
-client = session.client("voice-id")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("voice-id")  # (1)
+    result = client.create_domain()  # (2)
+    ```
+
+    1. client: [VoiceIDClient](./client.md)
+    2. result: [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[voice-id]` or a standalone `mypy_boto3_voice_id`
-package, you have to explicitly specify `client: VoiceIDClient` type
-annotation.
+With `boto3-stubs-lite[voice-id]`
+or a standalone `mypy_boto3_voice_id` package, you have to explicitly specify `client: VoiceIDClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_voice_id.client import VoiceIDClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_voice_id.client import VoiceIDClient
+    from mypy_boto3_voice_id.type_defs import CreateDomainResponseTypeDef
+    from mypy_boto3_voice_id.type_defs import CreateDomainRequestRequestTypeDef
 
 
-from mypy_boto3_voice_id.type_defs import bool
+    session = Session()
+
+    client: VoiceIDClient = session.client("voice-id")
+
+    kwargs: CreateDomainRequestRequestTypeDef = {...}
+    result: CreateDomainResponseTypeDef = client.create_domain(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: VoiceIDClient = session.client("voice-id")
 
-result: bool = client.can_paginate()
-```
+

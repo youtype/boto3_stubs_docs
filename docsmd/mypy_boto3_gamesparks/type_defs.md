@@ -1,1318 +1,1733 @@
-<a id="typed-dictionaries-for-boto3-gamesparks-module"></a>
-
-# Typed dictionaries for boto3 GameSparks module
+# Typed dictionaries
 
 > [Index](../README.md) > [GameSparks](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
-type annotations stubs module
-[mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
+!!! note ""
 
-- [Typed dictionaries for boto3 GameSparks module](#typed-dictionaries-for-boto3-gamesparks-module)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateGameRequestRequestTypeDef](#creategamerequestrequesttypedef)
-  - [CreateGameResultTypeDef](#creategameresulttypedef)
-  - [CreateSnapshotRequestRequestTypeDef](#createsnapshotrequestrequesttypedef)
-  - [CreateSnapshotResultTypeDef](#createsnapshotresulttypedef)
-  - [CreateStageRequestRequestTypeDef](#createstagerequestrequesttypedef)
-  - [CreateStageResultTypeDef](#createstageresulttypedef)
-  - [DeleteGameRequestRequestTypeDef](#deletegamerequestrequesttypedef)
-  - [DeleteStageRequestRequestTypeDef](#deletestagerequestrequesttypedef)
-  - [DisconnectPlayerRequestRequestTypeDef](#disconnectplayerrequestrequesttypedef)
-  - [DisconnectPlayerResultTypeDef](#disconnectplayerresulttypedef)
-  - [ExportSnapshotRequestRequestTypeDef](#exportsnapshotrequestrequesttypedef)
-  - [ExportSnapshotResultTypeDef](#exportsnapshotresulttypedef)
-  - [ExtensionDetailsTypeDef](#extensiondetailstypedef)
-  - [ExtensionVersionDetailsTypeDef](#extensionversiondetailstypedef)
-  - [GameConfigurationDetailsTypeDef](#gameconfigurationdetailstypedef)
-  - [GameDetailsTypeDef](#gamedetailstypedef)
-  - [GameSummaryTypeDef](#gamesummarytypedef)
-  - [GeneratedCodeJobDetailsTypeDef](#generatedcodejobdetailstypedef)
-  - [GeneratorTypeDef](#generatortypedef)
-  - [GetExtensionRequestRequestTypeDef](#getextensionrequestrequesttypedef)
-  - [GetExtensionResultTypeDef](#getextensionresulttypedef)
-  - [GetExtensionVersionRequestRequestTypeDef](#getextensionversionrequestrequesttypedef)
-  - [GetExtensionVersionResultTypeDef](#getextensionversionresulttypedef)
-  - [GetGameConfigurationRequestRequestTypeDef](#getgameconfigurationrequestrequesttypedef)
-  - [GetGameConfigurationResultTypeDef](#getgameconfigurationresulttypedef)
-  - [GetGameRequestRequestTypeDef](#getgamerequestrequesttypedef)
-  - [GetGameResultTypeDef](#getgameresulttypedef)
-  - [GetGeneratedCodeJobRequestRequestTypeDef](#getgeneratedcodejobrequestrequesttypedef)
-  - [GetGeneratedCodeJobResultTypeDef](#getgeneratedcodejobresulttypedef)
-  - [GetPlayerConnectionStatusRequestRequestTypeDef](#getplayerconnectionstatusrequestrequesttypedef)
-  - [GetPlayerConnectionStatusResultTypeDef](#getplayerconnectionstatusresulttypedef)
-  - [GetSnapshotRequestRequestTypeDef](#getsnapshotrequestrequesttypedef)
-  - [GetSnapshotResultTypeDef](#getsnapshotresulttypedef)
-  - [GetStageDeploymentRequestRequestTypeDef](#getstagedeploymentrequestrequesttypedef)
-  - [GetStageDeploymentResultTypeDef](#getstagedeploymentresulttypedef)
-  - [GetStageRequestRequestTypeDef](#getstagerequestrequesttypedef)
-  - [GetStageResultTypeDef](#getstageresulttypedef)
-  - [ImportGameConfigurationRequestRequestTypeDef](#importgameconfigurationrequestrequesttypedef)
-  - [ImportGameConfigurationResultTypeDef](#importgameconfigurationresulttypedef)
-  - [ImportGameConfigurationSourceTypeDef](#importgameconfigurationsourcetypedef)
-  - [ListExtensionVersionsRequestRequestTypeDef](#listextensionversionsrequestrequesttypedef)
-  - [ListExtensionVersionsResultTypeDef](#listextensionversionsresulttypedef)
-  - [ListExtensionsRequestRequestTypeDef](#listextensionsrequestrequesttypedef)
-  - [ListExtensionsResultTypeDef](#listextensionsresulttypedef)
-  - [ListGamesRequestRequestTypeDef](#listgamesrequestrequesttypedef)
-  - [ListGamesResultTypeDef](#listgamesresulttypedef)
-  - [ListGeneratedCodeJobsRequestRequestTypeDef](#listgeneratedcodejobsrequestrequesttypedef)
-  - [ListGeneratedCodeJobsResultTypeDef](#listgeneratedcodejobsresulttypedef)
-  - [ListSnapshotsRequestRequestTypeDef](#listsnapshotsrequestrequesttypedef)
-  - [ListSnapshotsResultTypeDef](#listsnapshotsresulttypedef)
-  - [ListStageDeploymentsRequestRequestTypeDef](#liststagedeploymentsrequestrequesttypedef)
-  - [ListStageDeploymentsResultTypeDef](#liststagedeploymentsresulttypedef)
-  - [ListStagesRequestRequestTypeDef](#liststagesrequestrequesttypedef)
-  - [ListStagesResultTypeDef](#liststagesresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SectionModificationTypeDef](#sectionmodificationtypedef)
-  - [SectionTypeDef](#sectiontypedef)
-  - [SnapshotDetailsTypeDef](#snapshotdetailstypedef)
-  - [SnapshotSummaryTypeDef](#snapshotsummarytypedef)
-  - [StageDeploymentDetailsTypeDef](#stagedeploymentdetailstypedef)
-  - [StageDeploymentSummaryTypeDef](#stagedeploymentsummarytypedef)
-  - [StageDetailsTypeDef](#stagedetailstypedef)
-  - [StageSummaryTypeDef](#stagesummarytypedef)
-  - [StartGeneratedCodeJobRequestRequestTypeDef](#startgeneratedcodejobrequestrequesttypedef)
-  - [StartGeneratedCodeJobResultTypeDef](#startgeneratedcodejobresulttypedef)
-  - [StartStageDeploymentRequestRequestTypeDef](#startstagedeploymentrequestrequesttypedef)
-  - [StartStageDeploymentResultTypeDef](#startstagedeploymentresulttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateGameConfigurationRequestRequestTypeDef](#updategameconfigurationrequestrequesttypedef)
-  - [UpdateGameConfigurationResultTypeDef](#updategameconfigurationresulttypedef)
-  - [UpdateGameRequestRequestTypeDef](#updategamerequestrequesttypedef)
-  - [UpdateGameResultTypeDef](#updategameresulttypedef)
-  - [UpdateSnapshotRequestRequestTypeDef](#updatesnapshotrequestrequesttypedef)
-  - [UpdateSnapshotResultTypeDef](#updatesnapshotresulttypedef)
-  - [UpdateStageRequestRequestTypeDef](#updatestagerequestrequesttypedef)
-  - [UpdateStageResultTypeDef](#updatestageresulttypedef)
-
-<a id="connectiontypedef"></a>
+    Auto-generated documentation for [GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
+    type annotations stubs module [mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
-Optional fields:
-
-- `Created`: `datetime`
-- `Id`: `str`
-
-<a id="creategamerequestrequesttypedef"></a>
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    Id: NotRequired[str],
+```
 
 ## CreateGameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateGameRequestRequestTypeDef
+
+def get_value() -> CreateGameRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creategameresulttypedef"></a>
+```python title="Definition"
+class CreateGameRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateGameResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateGameResultTypeDef
+
+def get_value() -> CreateGameResultTypeDef:
+    return {
+        "Game": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGameResultTypeDef(TypedDict):
+    Game: GameDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Game`: [GameDetailsTypeDef](./type_defs.md#gamedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GameDetailsTypeDef](./type_defs.md#gamedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateSnapshotRequestRequestTypeDef
+
+def get_value() -> CreateSnapshotRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="createsnapshotresulttypedef"></a>
+```python title="Definition"
+class CreateSnapshotRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Description: NotRequired[str],
+```
 
 ## CreateSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateSnapshotResultTypeDef
+
+def get_value() -> CreateSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateStageRequestRequestTypeDef
+
+def get_value() -> CreateStageRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "Role": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `Role`: `str`
-- `StageName`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createstageresulttypedef"></a>
+```python title="Definition"
+class CreateStageRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Role: str,
+    StageName: str,
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateStageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import CreateStageResultTypeDef
+
+def get_value() -> CreateStageResultTypeDef:
+    return {
+        "Stage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStageResultTypeDef(TypedDict):
+    Stage: StageDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stage`: [StageDetailsTypeDef](./type_defs.md#stagedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegamerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageDetailsTypeDef](./type_defs.md#stagedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import DeleteGameRequestRequestTypeDef
+
+def get_value() -> DeleteGameRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-<a id="deletestagerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGameRequestRequestTypeDef(TypedDict):
+    GameName: str,
+```
 
 ## DeleteStageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import DeleteStageRequestRequestTypeDef
+
+def get_value() -> DeleteStageRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `StageName`: `str`
-
-<a id="disconnectplayerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteStageRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+```
 
 ## DisconnectPlayerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import DisconnectPlayerRequestRequestTypeDef
+
+def get_value() -> DisconnectPlayerRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "PlayerId": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `PlayerId`: `str`
-- `StageName`: `str`
-
-<a id="disconnectplayerresulttypedef"></a>
+```python title="Definition"
+class DisconnectPlayerRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    PlayerId: str,
+    StageName: str,
+```
 
 ## DisconnectPlayerResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import DisconnectPlayerResultTypeDef
+
+def get_value() -> DisconnectPlayerResultTypeDef:
+    return {
+        "DisconnectFailures": ...,
+        "DisconnectSuccesses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisconnectPlayerResultTypeDef(TypedDict):
+    DisconnectFailures: List[str],
+    DisconnectSuccesses: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DisconnectFailures`: `List`\[`str`\]
-- `DisconnectSuccesses`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="exportsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ExportSnapshotRequestRequestTypeDef
+
+def get_value() -> ExportSnapshotRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `SnapshotId`: `str`
-
-<a id="exportsnapshotresulttypedef"></a>
+```python title="Definition"
+class ExportSnapshotRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+```
 
 ## ExportSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ExportSnapshotResultTypeDef
+
+def get_value() -> ExportSnapshotResultTypeDef:
+    return {
+        "S3Url": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportSnapshotResultTypeDef(TypedDict):
+    S3Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `S3Url`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="extensiondetailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExtensionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ExtensionDetailsTypeDef
+
+def get_value() -> ExtensionDetailsTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
-
-- `Description`: `str`
-- `Name`: `str`
-- `Namespace`: `str`
-
-<a id="extensionversiondetailstypedef"></a>
+```python title="Definition"
+class ExtensionDetailsTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Name: NotRequired[str],
+    Namespace: NotRequired[str],
+```
 
 ## ExtensionVersionDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ExtensionVersionDetailsTypeDef
+
+def get_value() -> ExtensionVersionDetailsTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Namespace`: `str`
-- `Schema`: `str`
-- `Version`: `str`
-
-<a id="gameconfigurationdetailstypedef"></a>
+```python title="Definition"
+class ExtensionVersionDetailsTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Namespace: NotRequired[str],
+    Schema: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## GameConfigurationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GameConfigurationDetailsTypeDef
+
+def get_value() -> GameConfigurationDetailsTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GameConfigurationDetailsTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    LastUpdated: NotRequired[datetime],
+    Sections: NotRequired[Dict[str, SectionTypeDef]],  # (1)
+```
 
-- `Created`: `datetime`
-- `LastUpdated`: `datetime`
-- `Sections`: `Dict`\[`str`, [SectionTypeDef](./type_defs.md#sectiontypedef)\]
-
-<a id="gamedetailstypedef"></a>
-
+1. See [:material-code-braces: SectionTypeDef](./type_defs.md#sectiontypedef) 
 ## GameDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GameDetailsTypeDef
+
+def get_value() -> GameDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GameDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Created: NotRequired[datetime],
+    Description: NotRequired[str],
+    EnableTerminationProtection: NotRequired[bool],
+    LastUpdated: NotRequired[datetime],
+    Name: NotRequired[str],
+    State: NotRequired[GameStateType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `Created`: `datetime`
-- `Description`: `str`
-- `EnableTerminationProtection`: `bool`
-- `LastUpdated`: `datetime`
-- `Name`: `str`
-- `State`: [GameStateType](./literals.md#gamestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="gamesummarytypedef"></a>
-
+1. See [:material-code-brackets: GameStateType](./literals.md#gamestatetype) 
 ## GameSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GameSummaryTypeDef
+
+def get_value() -> GameSummaryTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GameSummaryTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Name: NotRequired[str],
+    State: NotRequired[GameStateType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Description`: `str`
-- `Name`: `str`
-- `State`: [GameStateType](./literals.md#gamestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="generatedcodejobdetailstypedef"></a>
-
+1. See [:material-code-brackets: GameStateType](./literals.md#gamestatetype) 
 ## GeneratedCodeJobDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GeneratedCodeJobDetailsTypeDef
+
+def get_value() -> GeneratedCodeJobDetailsTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GeneratedCodeJobDetailsTypeDef(TypedDict):
+    Description: NotRequired[str],
+    ExpirationTime: NotRequired[datetime],
+    GeneratedCodeJobId: NotRequired[str],
+    S3Url: NotRequired[str],
+    Status: NotRequired[GeneratedCodeJobStateType],  # (1)
+```
 
-- `Description`: `str`
-- `ExpirationTime`: `datetime`
-- `GeneratedCodeJobId`: `str`
-- `S3Url`: `str`
-- `Status`:
-  [GeneratedCodeJobStateType](./literals.md#generatedcodejobstatetype)
-
-<a id="generatortypedef"></a>
-
+1. See [:material-code-brackets: GeneratedCodeJobStateType](./literals.md#generatedcodejobstatetype) 
 ## GeneratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GeneratorTypeDef
+
+def get_value() -> GeneratorTypeDef:
+    return {
+        "GameSdkVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `GameSdkVersion`: `str`
-- `Language`: `str`
-- `TargetPlatform`: `str`
-
-<a id="getextensionrequestrequesttypedef"></a>
+```python title="Definition"
+class GeneratorTypeDef(TypedDict):
+    GameSdkVersion: NotRequired[str],
+    Language: NotRequired[str],
+    TargetPlatform: NotRequired[str],
+```
 
 ## GetExtensionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetExtensionRequestRequestTypeDef
+
+def get_value() -> GetExtensionRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Namespace`: `str`
-
-<a id="getextensionresulttypedef"></a>
+```python title="Definition"
+class GetExtensionRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Namespace: str,
+```
 
 ## GetExtensionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetExtensionResultTypeDef
+
+def get_value() -> GetExtensionResultTypeDef:
+    return {
+        "Extension": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExtensionResultTypeDef(TypedDict):
+    Extension: ExtensionDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Extension`:
-  [ExtensionDetailsTypeDef](./type_defs.md#extensiondetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getextensionversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExtensionDetailsTypeDef](./type_defs.md#extensiondetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetExtensionVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetExtensionVersionRequestRequestTypeDef
+
+def get_value() -> GetExtensionVersionRequestRequestTypeDef:
+    return {
+        "ExtensionVersion": ...,
+        "Name": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
-
-- `ExtensionVersion`: `str`
-- `Name`: `str`
-- `Namespace`: `str`
-
-<a id="getextensionversionresulttypedef"></a>
+```python title="Definition"
+class GetExtensionVersionRequestRequestTypeDef(TypedDict):
+    ExtensionVersion: str,
+    Name: str,
+    Namespace: str,
+```
 
 ## GetExtensionVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetExtensionVersionResultTypeDef
+
+def get_value() -> GetExtensionVersionResultTypeDef:
+    return {
+        "ExtensionVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetExtensionVersionResultTypeDef(TypedDict):
+    ExtensionVersion: ExtensionVersionDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExtensionVersion`:
-  [ExtensionVersionDetailsTypeDef](./type_defs.md#extensionversiondetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgameconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExtensionVersionDetailsTypeDef](./type_defs.md#extensionversiondetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGameConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGameConfigurationRequestRequestTypeDef
+
+def get_value() -> GetGameConfigurationRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `Sections`: `Sequence`\[`str`\]
-
-<a id="getgameconfigurationresulttypedef"></a>
+```python title="Definition"
+class GetGameConfigurationRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Sections: NotRequired[Sequence[str]],
+```
 
 ## GetGameConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGameConfigurationResultTypeDef
+
+def get_value() -> GetGameConfigurationResultTypeDef:
+    return {
+        "GameConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGameConfigurationResultTypeDef(TypedDict):
+    GameConfiguration: GameConfigurationDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GameConfiguration`:
-  [GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgamerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGameRequestRequestTypeDef
+
+def get_value() -> GetGameRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-<a id="getgameresulttypedef"></a>
+```python title="Definition"
+class GetGameRequestRequestTypeDef(TypedDict):
+    GameName: str,
+```
 
 ## GetGameResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGameResultTypeDef
+
+def get_value() -> GetGameResultTypeDef:
+    return {
+        "Game": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGameResultTypeDef(TypedDict):
+    Game: GameDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Game`: [GameDetailsTypeDef](./type_defs.md#gamedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgeneratedcodejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GameDetailsTypeDef](./type_defs.md#gamedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGeneratedCodeJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGeneratedCodeJobRequestRequestTypeDef
+
+def get_value() -> GetGeneratedCodeJobRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "JobId": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `JobId`: `str`
-- `SnapshotId`: `str`
-
-<a id="getgeneratedcodejobresulttypedef"></a>
+```python title="Definition"
+class GetGeneratedCodeJobRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    JobId: str,
+    SnapshotId: str,
+```
 
 ## GetGeneratedCodeJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetGeneratedCodeJobResultTypeDef
+
+def get_value() -> GetGeneratedCodeJobResultTypeDef:
+    return {
+        "GeneratedCodeJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGeneratedCodeJobResultTypeDef(TypedDict):
+    GeneratedCodeJob: GeneratedCodeJobDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeneratedCodeJob`:
-  [GeneratedCodeJobDetailsTypeDef](./type_defs.md#generatedcodejobdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getplayerconnectionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GeneratedCodeJobDetailsTypeDef](./type_defs.md#generatedcodejobdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPlayerConnectionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetPlayerConnectionStatusRequestRequestTypeDef
+
+def get_value() -> GetPlayerConnectionStatusRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "PlayerId": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `PlayerId`: `str`
-- `StageName`: `str`
-
-<a id="getplayerconnectionstatusresulttypedef"></a>
+```python title="Definition"
+class GetPlayerConnectionStatusRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    PlayerId: str,
+    StageName: str,
+```
 
 ## GetPlayerConnectionStatusResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetPlayerConnectionStatusResultTypeDef
+
+def get_value() -> GetPlayerConnectionStatusResultTypeDef:
+    return {
+        "Connections": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPlayerConnectionStatusResultTypeDef(TypedDict):
+    Connections: List[ConnectionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connections`:
-  `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetSnapshotRequestRequestTypeDef
+
+def get_value() -> GetSnapshotRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `SnapshotId`: `str`
-
-Optional fields:
-
-- `Sections`: `Sequence`\[`str`\]
-
-<a id="getsnapshotresulttypedef"></a>
+```python title="Definition"
+class GetSnapshotRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+    Sections: NotRequired[Sequence[str]],
+```
 
 ## GetSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetSnapshotResultTypeDef
+
+def get_value() -> GetSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstagedeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStageDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetStageDeploymentRequestRequestTypeDef
+
+def get_value() -> GetStageDeploymentRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `StageName`: `str`
-
-Optional fields:
-
-- `DeploymentId`: `str`
-
-<a id="getstagedeploymentresulttypedef"></a>
+```python title="Definition"
+class GetStageDeploymentRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+    DeploymentId: NotRequired[str],
+```
 
 ## GetStageDeploymentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetStageDeploymentResultTypeDef
+
+def get_value() -> GetStageDeploymentResultTypeDef:
+    return {
+        "StageDeployment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStageDeploymentResultTypeDef(TypedDict):
+    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StageDeployment`:
-  [StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetStageRequestRequestTypeDef
+
+def get_value() -> GetStageRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `StageName`: `str`
-
-<a id="getstageresulttypedef"></a>
+```python title="Definition"
+class GetStageRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+```
 
 ## GetStageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import GetStageResultTypeDef
+
+def get_value() -> GetStageResultTypeDef:
+    return {
+        "Stage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStageResultTypeDef(TypedDict):
+    Stage: StageDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stage`: [StageDetailsTypeDef](./type_defs.md#stagedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importgameconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageDetailsTypeDef](./type_defs.md#stagedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportGameConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ImportGameConfigurationRequestRequestTypeDef
+
+def get_value() -> ImportGameConfigurationRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "ImportSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportGameConfigurationRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    ImportSource: ImportGameConfigurationSourceTypeDef,  # (1)
+```
 
-- `GameName`: `str`
-- `ImportSource`:
-  [ImportGameConfigurationSourceTypeDef](./type_defs.md#importgameconfigurationsourcetypedef)
-
-<a id="importgameconfigurationresulttypedef"></a>
-
+1. See [:material-code-braces: ImportGameConfigurationSourceTypeDef](./type_defs.md#importgameconfigurationsourcetypedef) 
 ## ImportGameConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ImportGameConfigurationResultTypeDef
+
+def get_value() -> ImportGameConfigurationResultTypeDef:
+    return {
+        "GameConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportGameConfigurationResultTypeDef(TypedDict):
+    GameConfiguration: GameConfigurationDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GameConfiguration`:
-  [GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importgameconfigurationsourcetypedef"></a>
-
+1. See [:material-code-braces: GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportGameConfigurationSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ImportGameConfigurationSourceTypeDef
+
+def get_value() -> ImportGameConfigurationSourceTypeDef:
+    return {
+        "File": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportGameConfigurationSourceTypeDef(TypedDict):
+    File: Union[bytes, IO[bytes], StreamingBody],
+```
 
-- `File`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+## ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef
 
-<a id="listextensionversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef
 
+def get_value() -> ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef:
+    return {
+        "Name": ...,
+        "Namespace": ...,
+    }
+```
+
+```python title="Definition"
+class ListExtensionVersionsRequestListExtensionVersionsPaginateTypeDef(TypedDict):
+    Name: str,
+    Namespace: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListExtensionVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListExtensionVersionsRequestRequestTypeDef
+
+def get_value() -> ListExtensionVersionsRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "Namespace": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Namespace`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listextensionversionsresulttypedef"></a>
+```python title="Definition"
+class ListExtensionVersionsRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Namespace: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListExtensionVersionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListExtensionVersionsResultTypeDef
+
+def get_value() -> ListExtensionVersionsResultTypeDef:
+    return {
+        "ExtensionVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExtensionVersionsResultTypeDef(TypedDict):
+    ExtensionVersions: List[ExtensionVersionDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExtensionVersions`:
-  `List`\[[ExtensionVersionDetailsTypeDef](./type_defs.md#extensionversiondetailstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExtensionVersionDetailsTypeDef](./type_defs.md#extensionversiondetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListExtensionsRequestListExtensionsPaginateTypeDef
 
-<a id="listextensionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListExtensionsRequestListExtensionsPaginateTypeDef
 
+def get_value() -> ListExtensionsRequestListExtensionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListExtensionsRequestListExtensionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListExtensionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListExtensionsRequestRequestTypeDef
+
+def get_value() -> ListExtensionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listextensionsresulttypedef"></a>
+```python title="Definition"
+class ListExtensionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListExtensionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListExtensionsResultTypeDef
+
+def get_value() -> ListExtensionsResultTypeDef:
+    return {
+        "Extensions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExtensionsResultTypeDef(TypedDict):
+    Extensions: List[ExtensionDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Extensions`:
-  `List`\[[ExtensionDetailsTypeDef](./type_defs.md#extensiondetailstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExtensionDetailsTypeDef](./type_defs.md#extensiondetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGamesRequestListGamesPaginateTypeDef
 
-<a id="listgamesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListGamesRequestListGamesPaginateTypeDef
 
+def get_value() -> ListGamesRequestListGamesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGamesRequestListGamesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGamesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListGamesRequestRequestTypeDef
+
+def get_value() -> ListGamesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listgamesresulttypedef"></a>
+```python title="Definition"
+class ListGamesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListGamesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListGamesResultTypeDef
+
+def get_value() -> ListGamesResultTypeDef:
+    return {
+        "Games": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGamesResultTypeDef(TypedDict):
+    Games: List[GameSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Games`: `List`\[[GameSummaryTypeDef](./type_defs.md#gamesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GameSummaryTypeDef](./type_defs.md#gamesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGeneratedCodeJobsRequestListGeneratedCodeJobsPaginateTypeDef
 
-<a id="listgeneratedcodejobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListGeneratedCodeJobsRequestListGeneratedCodeJobsPaginateTypeDef
 
+def get_value() -> ListGeneratedCodeJobsRequestListGeneratedCodeJobsPaginateTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+    }
+```
+
+```python title="Definition"
+class ListGeneratedCodeJobsRequestListGeneratedCodeJobsPaginateTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGeneratedCodeJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListGeneratedCodeJobsRequestRequestTypeDef
+
+def get_value() -> ListGeneratedCodeJobsRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `SnapshotId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listgeneratedcodejobsresulttypedef"></a>
+```python title="Definition"
+class ListGeneratedCodeJobsRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListGeneratedCodeJobsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListGeneratedCodeJobsResultTypeDef
+
+def get_value() -> ListGeneratedCodeJobsResultTypeDef:
+    return {
+        "GeneratedCodeJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGeneratedCodeJobsResultTypeDef(TypedDict):
+    GeneratedCodeJobs: List[GeneratedCodeJobDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GeneratedCodeJobs`:
-  `List`\[[GeneratedCodeJobDetailsTypeDef](./type_defs.md#generatedcodejobdetailstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GeneratedCodeJobDetailsTypeDef](./type_defs.md#generatedcodejobdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSnapshotsRequestListSnapshotsPaginateTypeDef
 
-<a id="listsnapshotsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListSnapshotsRequestListSnapshotsPaginateTypeDef
 
+def get_value() -> ListSnapshotsRequestListSnapshotsPaginateTypeDef:
+    return {
+        "GameName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSnapshotsRequestListSnapshotsPaginateTypeDef(TypedDict):
+    GameName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSnapshotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListSnapshotsRequestRequestTypeDef
+
+def get_value() -> ListSnapshotsRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listsnapshotsresulttypedef"></a>
+```python title="Definition"
+class ListSnapshotsRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListSnapshotsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListSnapshotsResultTypeDef
+
+def get_value() -> ListSnapshotsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Snapshots": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSnapshotsResultTypeDef(TypedDict):
+    NextToken: str,
+    Snapshots: List[SnapshotSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Snapshots`:
-  `List`\[[SnapshotSummaryTypeDef](./type_defs.md#snapshotsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SnapshotSummaryTypeDef](./type_defs.md#snapshotsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef
 
-<a id="liststagedeploymentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef
 
+def get_value() -> ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStageDeploymentsRequestListStageDeploymentsPaginateTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStageDeploymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListStageDeploymentsRequestRequestTypeDef
+
+def get_value() -> ListStageDeploymentsRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `StageName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="liststagedeploymentsresulttypedef"></a>
+```python title="Definition"
+class ListStageDeploymentsRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListStageDeploymentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListStageDeploymentsResultTypeDef
+
+def get_value() -> ListStageDeploymentsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "StageDeployments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStageDeploymentsResultTypeDef(TypedDict):
+    NextToken: str,
+    StageDeployments: List[StageDeploymentSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `StageDeployments`:
-  `List`\[[StageDeploymentSummaryTypeDef](./type_defs.md#stagedeploymentsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StageDeploymentSummaryTypeDef](./type_defs.md#stagedeploymentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStagesRequestListStagesPaginateTypeDef
 
-<a id="liststagesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_gamesparks.type_defs import ListStagesRequestListStagesPaginateTypeDef
 
+def get_value() -> ListStagesRequestListStagesPaginateTypeDef:
+    return {
+        "GameName": ...,
+    }
+```
+
+```python title="Definition"
+class ListStagesRequestListStagesPaginateTypeDef(TypedDict):
+    GameName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListStagesRequestRequestTypeDef
+
+def get_value() -> ListStagesRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="liststagesresulttypedef"></a>
+```python title="Definition"
+class ListStagesRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListStagesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListStagesResultTypeDef
+
+def get_value() -> ListStagesResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Stages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStagesResultTypeDef(TypedDict):
+    NextToken: str,
+    Stages: List[StageSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Stages`: `List`\[[StageSummaryTypeDef](./type_defs.md#stagesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageSummaryTypeDef](./type_defs.md#stagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sectionmodificationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SectionModificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import SectionModificationTypeDef
+
+def get_value() -> SectionModificationTypeDef:
+    return {
+        "Operation": ...,
+        "Path": ...,
+        "Section": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SectionModificationTypeDef(TypedDict):
+    Operation: OperationType,  # (1)
+    Path: str,
+    Section: str,
+    Value: NotRequired[Mapping[str, Any]],
+```
 
-- `Operation`: [OperationType](./literals.md#operationtype)
-- `Path`: `str`
-- `Section`: `str`
-
-Optional fields:
-
-- `Value`: `Mapping`\[`str`, `Any`\]
-
-<a id="sectiontypedef"></a>
-
+1. See [:material-code-brackets: OperationType](./literals.md#operationtype) 
 ## SectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import SectionTypeDef
+
+def get_value() -> SectionTypeDef:
+    return {
+        "Attributes": ...,
+    }
 ```
 
-Optional fields:
-
-- `Attributes`: `Dict`\[`str`, `Any`\]
-- `Name`: `str`
-- `Size`: `int`
-
-<a id="snapshotdetailstypedef"></a>
+```python title="Definition"
+class SectionTypeDef(TypedDict):
+    Attributes: NotRequired[Dict[str, Any]],
+    Name: NotRequired[str],
+    Size: NotRequired[int],
+```
 
 ## SnapshotDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import SnapshotDetailsTypeDef
+
+def get_value() -> SnapshotDetailsTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SnapshotDetailsTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    Description: NotRequired[str],
+    Id: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    Sections: NotRequired[Dict[str, SectionTypeDef]],  # (1)
+```
 
-- `Created`: `datetime`
-- `Description`: `str`
-- `Id`: `str`
-- `LastUpdated`: `datetime`
-- `Sections`: `Dict`\[`str`, [SectionTypeDef](./type_defs.md#sectiontypedef)\]
-
-<a id="snapshotsummarytypedef"></a>
-
+1. See [:material-code-braces: SectionTypeDef](./type_defs.md#sectiontypedef) 
 ## SnapshotSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import SnapshotSummaryTypeDef
+
+def get_value() -> SnapshotSummaryTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
-Optional fields:
-
-- `Created`: `datetime`
-- `Description`: `str`
-- `Id`: `str`
-- `LastUpdated`: `datetime`
-
-<a id="stagedeploymentdetailstypedef"></a>
+```python title="Definition"
+class SnapshotSummaryTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    Description: NotRequired[str],
+    Id: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+```
 
 ## StageDeploymentDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StageDeploymentDetailsTypeDef
+
+def get_value() -> StageDeploymentDetailsTypeDef:
+    return {
+        "Created": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StageDeploymentDetailsTypeDef(TypedDict):
+    Created: NotRequired[datetime],
+    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
+    DeploymentId: NotRequired[str],
+    DeploymentState: NotRequired[DeploymentStateType],  # (2)
+    LastUpdated: NotRequired[datetime],
+    SnapshotId: NotRequired[str],
+```
 
-- `Created`: `datetime`
-- `DeploymentAction`:
-  [DeploymentActionType](./literals.md#deploymentactiontype)
-- `DeploymentId`: `str`
-- `DeploymentState`: [DeploymentStateType](./literals.md#deploymentstatetype)
-- `LastUpdated`: `datetime`
-- `SnapshotId`: `str`
-
-<a id="stagedeploymentsummarytypedef"></a>
-
+1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
+2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## StageDeploymentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StageDeploymentSummaryTypeDef
+
+def get_value() -> StageDeploymentSummaryTypeDef:
+    return {
+        "DeploymentAction": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StageDeploymentSummaryTypeDef(TypedDict):
+    DeploymentAction: NotRequired[DeploymentActionType],  # (1)
+    DeploymentId: NotRequired[str],
+    DeploymentState: NotRequired[DeploymentStateType],  # (2)
+    LastUpdated: NotRequired[datetime],
+    SnapshotId: NotRequired[str],
+```
 
-- `DeploymentAction`:
-  [DeploymentActionType](./literals.md#deploymentactiontype)
-- `DeploymentId`: `str`
-- `DeploymentState`: [DeploymentStateType](./literals.md#deploymentstatetype)
-- `LastUpdated`: `datetime`
-- `SnapshotId`: `str`
-
-<a id="stagedetailstypedef"></a>
-
+1. See [:material-code-brackets: DeploymentActionType](./literals.md#deploymentactiontype) 
+2. See [:material-code-brackets: DeploymentStateType](./literals.md#deploymentstatetype) 
 ## StageDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StageDetailsTypeDef
+
+def get_value() -> StageDetailsTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StageDetailsTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Created: NotRequired[datetime],
+    Description: NotRequired[str],
+    GameKey: NotRequired[str],
+    LastUpdated: NotRequired[datetime],
+    LogGroup: NotRequired[str],
+    Name: NotRequired[str],
+    Role: NotRequired[str],
+    State: NotRequired[StageStateType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `Created`: `datetime`
-- `Description`: `str`
-- `GameKey`: `str`
-- `LastUpdated`: `datetime`
-- `LogGroup`: `str`
-- `Name`: `str`
-- `Role`: `str`
-- `State`: [StageStateType](./literals.md#stagestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="stagesummarytypedef"></a>
-
+1. See [:material-code-brackets: StageStateType](./literals.md#stagestatetype) 
 ## StageSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StageSummaryTypeDef
+
+def get_value() -> StageSummaryTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StageSummaryTypeDef(TypedDict):
+    Description: NotRequired[str],
+    GameKey: NotRequired[str],
+    Name: NotRequired[str],
+    State: NotRequired[StageStateType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Description`: `str`
-- `GameKey`: `str`
-- `Name`: `str`
-- `State`: [StageStateType](./literals.md#stagestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="startgeneratedcodejobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StageStateType](./literals.md#stagestatetype) 
 ## StartGeneratedCodeJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StartGeneratedCodeJobRequestRequestTypeDef
+
+def get_value() -> StartGeneratedCodeJobRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "Generator": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartGeneratedCodeJobRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Generator: GeneratorTypeDef,  # (1)
+    SnapshotId: str,
+```
 
-- `GameName`: `str`
-- `Generator`: [GeneratorTypeDef](./type_defs.md#generatortypedef)
-- `SnapshotId`: `str`
-
-<a id="startgeneratedcodejobresulttypedef"></a>
-
+1. See [:material-code-braces: GeneratorTypeDef](./type_defs.md#generatortypedef) 
 ## StartGeneratedCodeJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StartGeneratedCodeJobResultTypeDef
+
+def get_value() -> StartGeneratedCodeJobResultTypeDef:
+    return {
+        "GeneratedCodeJobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartGeneratedCodeJobResultTypeDef(TypedDict):
+    GeneratedCodeJobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GeneratedCodeJobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startstagedeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartStageDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StartStageDeploymentRequestRequestTypeDef
+
+def get_value() -> StartStageDeploymentRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `SnapshotId`: `str`
-- `StageName`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="startstagedeploymentresulttypedef"></a>
+```python title="Definition"
+class StartStageDeploymentRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+    StageName: str,
+    ClientToken: NotRequired[str],
+```
 
 ## StartStageDeploymentResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import StartStageDeploymentResultTypeDef
+
+def get_value() -> StartStageDeploymentResultTypeDef:
+    return {
+        "StageDeployment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartStageDeploymentResultTypeDef(TypedDict):
+    StageDeployment: StageDeploymentDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StageDeployment`:
-  [StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageDeploymentDetailsTypeDef](./type_defs.md#stagedeploymentdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updategameconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateGameConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateGameConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateGameConfigurationRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "Modifications": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGameConfigurationRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Modifications: Sequence[SectionModificationTypeDef],  # (1)
+```
 
-- `GameName`: `str`
-- `Modifications`:
-  `Sequence`\[[SectionModificationTypeDef](./type_defs.md#sectionmodificationtypedef)\]
-
-<a id="updategameconfigurationresulttypedef"></a>
-
+1. See [:material-code-braces: SectionModificationTypeDef](./type_defs.md#sectionmodificationtypedef) 
 ## UpdateGameConfigurationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateGameConfigurationResultTypeDef
+
+def get_value() -> UpdateGameConfigurationResultTypeDef:
+    return {
+        "GameConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGameConfigurationResultTypeDef(TypedDict):
+    GameConfiguration: GameConfigurationDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GameConfiguration`:
-  [GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategamerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GameConfigurationDetailsTypeDef](./type_defs.md#gameconfigurationdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateGameRequestRequestTypeDef
+
+def get_value() -> UpdateGameRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updategameresulttypedef"></a>
+```python title="Definition"
+class UpdateGameRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateGameResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateGameResultTypeDef
+
+def get_value() -> UpdateGameResultTypeDef:
+    return {
+        "Game": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGameResultTypeDef(TypedDict):
+    Game: GameDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Game`: [GameDetailsTypeDef](./type_defs.md#gamedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesnapshotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GameDetailsTypeDef](./type_defs.md#gamedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateSnapshotRequestRequestTypeDef
+
+def get_value() -> UpdateSnapshotRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "SnapshotId": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `SnapshotId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updatesnapshotresulttypedef"></a>
+```python title="Definition"
+class UpdateSnapshotRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    SnapshotId: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateSnapshotResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateSnapshotResultTypeDef
+
+def get_value() -> UpdateSnapshotResultTypeDef:
+    return {
+        "Snapshot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSnapshotResultTypeDef(TypedDict):
+    Snapshot: SnapshotDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Snapshot`: [SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatestagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SnapshotDetailsTypeDef](./type_defs.md#snapshotdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateStageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateStageRequestRequestTypeDef
+
+def get_value() -> UpdateStageRequestRequestTypeDef:
+    return {
+        "GameName": ...,
+        "StageName": ...,
+    }
 ```
 
-Required fields:
-
-- `GameName`: `str`
-- `StageName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Role`: `str`
-
-<a id="updatestageresulttypedef"></a>
+```python title="Definition"
+class UpdateStageRequestRequestTypeDef(TypedDict):
+    GameName: str,
+    StageName: str,
+    Description: NotRequired[str],
+    Role: NotRequired[str],
+```
 
 ## UpdateStageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_gamesparks.type_defs import UpdateStageResultTypeDef
+
+def get_value() -> UpdateStageResultTypeDef:
+    return {
+        "Stage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStageResultTypeDef(TypedDict):
+    Stage: StageDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Stage`: [StageDetailsTypeDef](./type_defs.md#stagedetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StageDetailsTypeDef](./type_defs.md#stagedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

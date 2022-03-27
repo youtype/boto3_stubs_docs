@@ -1,1659 +1,2097 @@
-<a id="typed-dictionaries-for-boto3-panorama-module"></a>
-
-# Typed dictionaries for boto3 Panorama module
+# Typed dictionaries
 
 > [Index](../README.md) > [Panorama](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
-type annotations stubs module
-[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Panorama module](#typed-dictionaries-for-boto3-panorama-module)
-  - [AlternateSoftwareMetadataTypeDef](#alternatesoftwaremetadatatypedef)
-  - [ApplicationInstanceTypeDef](#applicationinstancetypedef)
-  - [CreateApplicationInstanceRequestRequestTypeDef](#createapplicationinstancerequestrequesttypedef)
-  - [CreateApplicationInstanceResponseTypeDef](#createapplicationinstanceresponsetypedef)
-  - [CreateJobForDevicesRequestRequestTypeDef](#createjobfordevicesrequestrequesttypedef)
-  - [CreateJobForDevicesResponseTypeDef](#createjobfordevicesresponsetypedef)
-  - [CreateNodeFromTemplateJobRequestRequestTypeDef](#createnodefromtemplatejobrequestrequesttypedef)
-  - [CreateNodeFromTemplateJobResponseTypeDef](#createnodefromtemplatejobresponsetypedef)
-  - [CreatePackageImportJobRequestRequestTypeDef](#createpackageimportjobrequestrequesttypedef)
-  - [CreatePackageImportJobResponseTypeDef](#createpackageimportjobresponsetypedef)
-  - [CreatePackageRequestRequestTypeDef](#createpackagerequestrequesttypedef)
-  - [CreatePackageResponseTypeDef](#createpackageresponsetypedef)
-  - [DeleteDeviceRequestRequestTypeDef](#deletedevicerequestrequesttypedef)
-  - [DeleteDeviceResponseTypeDef](#deletedeviceresponsetypedef)
-  - [DeletePackageRequestRequestTypeDef](#deletepackagerequestrequesttypedef)
-  - [DeregisterPackageVersionRequestRequestTypeDef](#deregisterpackageversionrequestrequesttypedef)
-  - [DescribeApplicationInstanceDetailsRequestRequestTypeDef](#describeapplicationinstancedetailsrequestrequesttypedef)
-  - [DescribeApplicationInstanceDetailsResponseTypeDef](#describeapplicationinstancedetailsresponsetypedef)
-  - [DescribeApplicationInstanceRequestRequestTypeDef](#describeapplicationinstancerequestrequesttypedef)
-  - [DescribeApplicationInstanceResponseTypeDef](#describeapplicationinstanceresponsetypedef)
-  - [DescribeDeviceJobRequestRequestTypeDef](#describedevicejobrequestrequesttypedef)
-  - [DescribeDeviceJobResponseTypeDef](#describedevicejobresponsetypedef)
-  - [DescribeDeviceRequestRequestTypeDef](#describedevicerequestrequesttypedef)
-  - [DescribeDeviceResponseTypeDef](#describedeviceresponsetypedef)
-  - [DescribeNodeFromTemplateJobRequestRequestTypeDef](#describenodefromtemplatejobrequestrequesttypedef)
-  - [DescribeNodeFromTemplateJobResponseTypeDef](#describenodefromtemplatejobresponsetypedef)
-  - [DescribeNodeRequestRequestTypeDef](#describenoderequestrequesttypedef)
-  - [DescribeNodeResponseTypeDef](#describenoderesponsetypedef)
-  - [DescribePackageImportJobRequestRequestTypeDef](#describepackageimportjobrequestrequesttypedef)
-  - [DescribePackageImportJobResponseTypeDef](#describepackageimportjobresponsetypedef)
-  - [DescribePackageRequestRequestTypeDef](#describepackagerequestrequesttypedef)
-  - [DescribePackageResponseTypeDef](#describepackageresponsetypedef)
-  - [DescribePackageVersionRequestRequestTypeDef](#describepackageversionrequestrequesttypedef)
-  - [DescribePackageVersionResponseTypeDef](#describepackageversionresponsetypedef)
-  - [DeviceJobConfigTypeDef](#devicejobconfigtypedef)
-  - [DeviceJobTypeDef](#devicejobtypedef)
-  - [DeviceTypeDef](#devicetypedef)
-  - [EthernetPayloadTypeDef](#ethernetpayloadtypedef)
-  - [EthernetStatusTypeDef](#ethernetstatustypedef)
-  - [JobResourceTagsTypeDef](#jobresourcetagstypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [ListApplicationInstanceDependenciesRequestRequestTypeDef](#listapplicationinstancedependenciesrequestrequesttypedef)
-  - [ListApplicationInstanceDependenciesResponseTypeDef](#listapplicationinstancedependenciesresponsetypedef)
-  - [ListApplicationInstanceNodeInstancesRequestRequestTypeDef](#listapplicationinstancenodeinstancesrequestrequesttypedef)
-  - [ListApplicationInstanceNodeInstancesResponseTypeDef](#listapplicationinstancenodeinstancesresponsetypedef)
-  - [ListApplicationInstancesRequestRequestTypeDef](#listapplicationinstancesrequestrequesttypedef)
-  - [ListApplicationInstancesResponseTypeDef](#listapplicationinstancesresponsetypedef)
-  - [ListDevicesJobsRequestRequestTypeDef](#listdevicesjobsrequestrequesttypedef)
-  - [ListDevicesJobsResponseTypeDef](#listdevicesjobsresponsetypedef)
-  - [ListDevicesRequestRequestTypeDef](#listdevicesrequestrequesttypedef)
-  - [ListDevicesResponseTypeDef](#listdevicesresponsetypedef)
-  - [ListNodeFromTemplateJobsRequestRequestTypeDef](#listnodefromtemplatejobsrequestrequesttypedef)
-  - [ListNodeFromTemplateJobsResponseTypeDef](#listnodefromtemplatejobsresponsetypedef)
-  - [ListNodesRequestRequestTypeDef](#listnodesrequestrequesttypedef)
-  - [ListNodesResponseTypeDef](#listnodesresponsetypedef)
-  - [ListPackageImportJobsRequestRequestTypeDef](#listpackageimportjobsrequestrequesttypedef)
-  - [ListPackageImportJobsResponseTypeDef](#listpackageimportjobsresponsetypedef)
-  - [ListPackagesRequestRequestTypeDef](#listpackagesrequestrequesttypedef)
-  - [ListPackagesResponseTypeDef](#listpackagesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ManifestOverridesPayloadTypeDef](#manifestoverridespayloadtypedef)
-  - [ManifestPayloadTypeDef](#manifestpayloadtypedef)
-  - [NetworkPayloadTypeDef](#networkpayloadtypedef)
-  - [NetworkStatusTypeDef](#networkstatustypedef)
-  - [NodeFromTemplateJobTypeDef](#nodefromtemplatejobtypedef)
-  - [NodeInputPortTypeDef](#nodeinputporttypedef)
-  - [NodeInstanceTypeDef](#nodeinstancetypedef)
-  - [NodeInterfaceTypeDef](#nodeinterfacetypedef)
-  - [NodeOutputPortTypeDef](#nodeoutputporttypedef)
-  - [NodeTypeDef](#nodetypedef)
-  - [NtpPayloadTypeDef](#ntppayloadtypedef)
-  - [NtpStatusTypeDef](#ntpstatustypedef)
-  - [OTAJobConfigTypeDef](#otajobconfigtypedef)
-  - [OutPutS3LocationTypeDef](#outputs3locationtypedef)
-  - [PackageImportJobInputConfigTypeDef](#packageimportjobinputconfigtypedef)
-  - [PackageImportJobOutputConfigTypeDef](#packageimportjoboutputconfigtypedef)
-  - [PackageImportJobOutputTypeDef](#packageimportjoboutputtypedef)
-  - [PackageImportJobTypeDef](#packageimportjobtypedef)
-  - [PackageListItemTypeDef](#packagelistitemtypedef)
-  - [PackageObjectTypeDef](#packageobjecttypedef)
-  - [PackageVersionInputConfigTypeDef](#packageversioninputconfigtypedef)
-  - [PackageVersionOutputConfigTypeDef](#packageversionoutputconfigtypedef)
-  - [ProvisionDeviceRequestRequestTypeDef](#provisiondevicerequestrequesttypedef)
-  - [ProvisionDeviceResponseTypeDef](#provisiondeviceresponsetypedef)
-  - [RegisterPackageVersionRequestRequestTypeDef](#registerpackageversionrequestrequesttypedef)
-  - [RemoveApplicationInstanceRequestRequestTypeDef](#removeapplicationinstancerequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [StaticIpConnectionInfoTypeDef](#staticipconnectioninfotypedef)
-  - [StorageLocationTypeDef](#storagelocationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDeviceMetadataRequestRequestTypeDef](#updatedevicemetadatarequestrequesttypedef)
-  - [UpdateDeviceMetadataResponseTypeDef](#updatedevicemetadataresponsetypedef)
-
-<a id="alternatesoftwaremetadatatypedef"></a>
+    Auto-generated documentation for [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
+    type annotations stubs module [mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 ## AlternateSoftwareMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef
+
+def get_value() -> AlternateSoftwareMetadataTypeDef:
+    return {
+        "Version": ...,
+    }
 ```
 
-Optional fields:
-
-- `Version`: `str`
-
-<a id="applicationinstancetypedef"></a>
+```python title="Definition"
+class AlternateSoftwareMetadataTypeDef(TypedDict):
+    Version: NotRequired[str],
+```
 
 ## ApplicationInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef
+
+def get_value() -> ApplicationInstanceTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationInstanceTypeDef(TypedDict):
+    ApplicationInstanceId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    DefaultRuntimeContextDevice: NotRequired[str],
+    DefaultRuntimeContextDeviceName: NotRequired[str],
+    Description: NotRequired[str],
+    HealthStatus: NotRequired[ApplicationInstanceHealthStatusType],  # (1)
+    Name: NotRequired[str],
+    Status: NotRequired[ApplicationInstanceStatusType],  # (2)
+    StatusDescription: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `ApplicationInstanceId`: `str`
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `DefaultRuntimeContextDevice`: `str`
-- `DefaultRuntimeContextDeviceName`: `str`
-- `Description`: `str`
-- `HealthStatus`:
-  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
-- `Name`: `str`
-- `Status`:
-  [ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype)
-- `StatusDescription`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="createapplicationinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype) 
+2. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
 ## CreateApplicationInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateApplicationInstanceRequestRequestTypeDef
+
+def get_value() -> CreateApplicationInstanceRequestRequestTypeDef:
+    return {
+        "DefaultRuntimeContextDevice": ...,
+        "ManifestPayload": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationInstanceRequestRequestTypeDef(TypedDict):
+    DefaultRuntimeContextDevice: str,
+    ManifestPayload: ManifestPayloadTypeDef,  # (1)
+    ApplicationInstanceIdToReplace: NotRequired[str],
+    Description: NotRequired[str],
+    ManifestOverridesPayload: NotRequired[ManifestOverridesPayloadTypeDef],  # (2)
+    Name: NotRequired[str],
+    RuntimeRoleArn: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `DefaultRuntimeContextDevice`: `str`
-- `ManifestPayload`:
-  [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef)
-
-Optional fields:
-
-- `ApplicationInstanceIdToReplace`: `str`
-- `Description`: `str`
-- `ManifestOverridesPayload`:
-  [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
-- `Name`: `str`
-- `RuntimeRoleArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createapplicationinstanceresponsetypedef"></a>
-
+1. See [:material-code-braces: ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef) 
+2. See [:material-code-braces: ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef) 
 ## CreateApplicationInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateApplicationInstanceResponseTypeDef
+
+def get_value() -> CreateApplicationInstanceResponseTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationInstanceResponseTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ApplicationInstanceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createjobfordevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobForDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateJobForDevicesRequestRequestTypeDef
+
+def get_value() -> CreateJobForDevicesRequestRequestTypeDef:
+    return {
+        "DeviceIds": ...,
+        "DeviceJobConfig": ...,
+        "JobType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobForDevicesRequestRequestTypeDef(TypedDict):
+    DeviceIds: Sequence[str],
+    DeviceJobConfig: DeviceJobConfigTypeDef,  # (1)
+    JobType: JobTypeType,  # (2)
+```
 
-- `DeviceIds`: `Sequence`\[`str`\]
-- `DeviceJobConfig`:
-  [DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef)
-- `JobType`: `Literal['OTA']` (see [JobTypeType](./literals.md#jobtypetype))
-
-<a id="createjobfordevicesresponsetypedef"></a>
-
+1. See [:material-code-braces: DeviceJobConfigTypeDef](./type_defs.md#devicejobconfigtypedef) 
+2. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## CreateJobForDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateJobForDevicesResponseTypeDef
+
+def get_value() -> CreateJobForDevicesResponseTypeDef:
+    return {
+        "Jobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobForDevicesResponseTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createnodefromtemplatejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNodeFromTemplateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateNodeFromTemplateJobRequestRequestTypeDef
+
+def get_value() -> CreateNodeFromTemplateJobRequestRequestTypeDef:
+    return {
+        "NodeName": ...,
+        "OutputPackageName": ...,
+        "OutputPackageVersion": ...,
+        "TemplateParameters": ...,
+        "TemplateType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNodeFromTemplateJobRequestRequestTypeDef(TypedDict):
+    NodeName: str,
+    OutputPackageName: str,
+    OutputPackageVersion: str,
+    TemplateParameters: Mapping[str, str],
+    TemplateType: TemplateTypeType,  # (1)
+    JobTags: NotRequired[Sequence[JobResourceTagsTypeDef]],  # (2)
+    NodeDescription: NotRequired[str],
+```
 
-- `NodeName`: `str`
-- `OutputPackageName`: `str`
-- `OutputPackageVersion`: `str`
-- `TemplateParameters`: `Mapping`\[`str`, `str`\]
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype))
-
-Optional fields:
-
-- `JobTags`:
-  `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `NodeDescription`: `str`
-
-<a id="createnodefromtemplatejobresponsetypedef"></a>
-
+1. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+2. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
 ## CreateNodeFromTemplateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreateNodeFromTemplateJobResponseTypeDef
+
+def get_value() -> CreateNodeFromTemplateJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNodeFromTemplateJobResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpackageimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePackageImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreatePackageImportJobRequestRequestTypeDef
+
+def get_value() -> CreatePackageImportJobRequestRequestTypeDef:
+    return {
+        "ClientToken": ...,
+        "InputConfig": ...,
+        "JobType": ...,
+        "OutputConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePackageImportJobRequestRequestTypeDef(TypedDict):
+    ClientToken: str,
+    InputConfig: PackageImportJobInputConfigTypeDef,  # (1)
+    JobType: PackageImportJobTypeType,  # (2)
+    OutputConfig: PackageImportJobOutputConfigTypeDef,  # (3)
+    JobTags: NotRequired[Sequence[JobResourceTagsTypeDef]],  # (4)
+```
 
-- `ClientToken`: `str`
-- `InputConfig`:
-  [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-- `OutputConfig`:
-  [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
-
-Optional fields:
-
-- `JobTags`:
-  `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-
-<a id="createpackageimportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef) 
+2. See [:material-code-brackets: PackageImportJobTypeType](./literals.md#packageimportjobtypetype) 
+3. See [:material-code-braces: PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef) 
+4. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
 ## CreatePackageImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreatePackageImportJobResponseTypeDef
+
+def get_value() -> CreatePackageImportJobResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePackageImportJobResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpackagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePackageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreatePackageRequestRequestTypeDef
+
+def get_value() -> CreatePackageRequestRequestTypeDef:
+    return {
+        "PackageName": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageName`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createpackageresponsetypedef"></a>
+```python title="Definition"
+class CreatePackageRequestRequestTypeDef(TypedDict):
+    PackageName: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreatePackageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import CreatePackageResponseTypeDef
+
+def get_value() -> CreatePackageResponseTypeDef:
+    return {
+        "Arn": ...,
+        "PackageId": ...,
+        "StorageLocation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePackageResponseTypeDef(TypedDict):
+    Arn: str,
+    PackageId: str,
+    StorageLocation: StorageLocationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `PackageId`: `str`
-- `StorageLocation`:
-  [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StorageLocationTypeDef](./type_defs.md#storagelocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeleteDeviceRequestRequestTypeDef
+
+def get_value() -> DeleteDeviceRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="deletedeviceresponsetypedef"></a>
+```python title="Definition"
+class DeleteDeviceRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## DeleteDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeleteDeviceResponseTypeDef
+
+def get_value() -> DeleteDeviceResponseTypeDef:
+    return {
+        "DeviceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDeviceResponseTypeDef(TypedDict):
+    DeviceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeviceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletepackagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeletePackageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeletePackageRequestRequestTypeDef
+
+def get_value() -> DeletePackageRequestRequestTypeDef:
+    return {
+        "PackageId": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageId`: `str`
-
-Optional fields:
-
-- `ForceDelete`: `bool`
-
-<a id="deregisterpackageversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePackageRequestRequestTypeDef(TypedDict):
+    PackageId: str,
+    ForceDelete: NotRequired[bool],
+```
 
 ## DeregisterPackageVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeregisterPackageVersionRequestRequestTypeDef
+
+def get_value() -> DeregisterPackageVersionRequestRequestTypeDef:
+    return {
+        "PackageId": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageId`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-Optional fields:
-
-- `OwnerAccount`: `str`
-- `UpdatedLatestPatchVersion`: `str`
-
-<a id="describeapplicationinstancedetailsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeregisterPackageVersionRequestRequestTypeDef(TypedDict):
+    PackageId: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    OwnerAccount: NotRequired[str],
+    UpdatedLatestPatchVersion: NotRequired[str],
+```
 
 ## DescribeApplicationInstanceDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceDetailsRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationInstanceDetailsRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationInstanceId`: `str`
-
-<a id="describeapplicationinstancedetailsresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationInstanceDetailsRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+```
 
 ## DescribeApplicationInstanceDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceDetailsResponseTypeDef
+
+def get_value() -> DescribeApplicationInstanceDetailsResponseTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+        "ApplicationInstanceIdToReplace": ...,
+        "CreatedTime": ...,
+        "DefaultRuntimeContextDevice": ...,
+        "Description": ...,
+        "ManifestOverridesPayload": ...,
+        "ManifestPayload": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationInstanceDetailsResponseTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    ApplicationInstanceIdToReplace: str,
+    CreatedTime: datetime,
+    DefaultRuntimeContextDevice: str,
+    Description: str,
+    ManifestOverridesPayload: ManifestOverridesPayloadTypeDef,  # (1)
+    ManifestPayload: ManifestPayloadTypeDef,  # (2)
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ApplicationInstanceId`: `str`
-- `ApplicationInstanceIdToReplace`: `str`
-- `CreatedTime`: `datetime`
-- `DefaultRuntimeContextDevice`: `str`
-- `Description`: `str`
-- `ManifestOverridesPayload`:
-  [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
-- `ManifestPayload`:
-  [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef)
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeapplicationinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef) 
+2. See [:material-code-braces: ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeApplicationInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceRequestRequestTypeDef
+
+def get_value() -> DescribeApplicationInstanceRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationInstanceId`: `str`
-
-<a id="describeapplicationinstanceresponsetypedef"></a>
+```python title="Definition"
+class DescribeApplicationInstanceRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+```
 
 ## DescribeApplicationInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceResponseTypeDef
+
+def get_value() -> DescribeApplicationInstanceResponseTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+        "ApplicationInstanceIdToReplace": ...,
+        "Arn": ...,
+        "CreatedTime": ...,
+        "DefaultRuntimeContextDevice": ...,
+        "DefaultRuntimeContextDeviceName": ...,
+        "Description": ...,
+        "HealthStatus": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "RuntimeRoleArn": ...,
+        "Status": ...,
+        "StatusDescription": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeApplicationInstanceResponseTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    ApplicationInstanceIdToReplace: str,
+    Arn: str,
+    CreatedTime: datetime,
+    DefaultRuntimeContextDevice: str,
+    DefaultRuntimeContextDeviceName: str,
+    Description: str,
+    HealthStatus: ApplicationInstanceHealthStatusType,  # (1)
+    LastUpdatedTime: datetime,
+    Name: str,
+    RuntimeRoleArn: str,
+    Status: ApplicationInstanceStatusType,  # (2)
+    StatusDescription: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ApplicationInstanceId`: `str`
-- `ApplicationInstanceIdToReplace`: `str`
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `DefaultRuntimeContextDevice`: `str`
-- `DefaultRuntimeContextDeviceName`: `str`
-- `Description`: `str`
-- `HealthStatus`:
-  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `RuntimeRoleArn`: `str`
-- `Status`:
-  [ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype)
-- `StatusDescription`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedevicejobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype) 
+2. See [:material-code-brackets: ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeDeviceJobRequestRequestTypeDef
+
+def get_value() -> DescribeDeviceJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describedevicejobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeviceJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribeDeviceJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeDeviceJobResponseTypeDef
+
+def get_value() -> DescribeDeviceJobResponseTypeDef:
+    return {
+        "CreatedTime": ...,
+        "DeviceArn": ...,
+        "DeviceId": ...,
+        "DeviceName": ...,
+        "DeviceType": ...,
+        "ImageVersion": ...,
+        "JobId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeviceJobResponseTypeDef(TypedDict):
+    CreatedTime: datetime,
+    DeviceArn: str,
+    DeviceId: str,
+    DeviceName: str,
+    DeviceType: DeviceTypeType,  # (1)
+    ImageVersion: str,
+    JobId: str,
+    Status: UpdateProgressType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `CreatedTime`: `datetime`
-- `DeviceArn`: `str`
-- `DeviceId`: `str`
-- `DeviceName`: `str`
-- `DeviceType`: [DeviceTypeType](./literals.md#devicetypetype)
-- `ImageVersion`: `str`
-- `JobId`: `str`
-- `Status`: [UpdateProgressType](./literals.md#updateprogresstype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedevicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
+2. See [:material-code-brackets: UpdateProgressType](./literals.md#updateprogresstype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeDeviceRequestRequestTypeDef
+
+def get_value() -> DescribeDeviceRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-<a id="describedeviceresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeviceRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+```
 
 ## DescribeDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeDeviceResponseTypeDef
+
+def get_value() -> DescribeDeviceResponseTypeDef:
+    return {
+        "AlternateSoftwares": ...,
+        "Arn": ...,
+        "CreatedTime": ...,
+        "CurrentNetworkingStatus": ...,
+        "CurrentSoftware": ...,
+        "Description": ...,
+        "DeviceConnectionStatus": ...,
+        "DeviceId": ...,
+        "LatestAlternateSoftware": ...,
+        "LatestSoftware": ...,
+        "LeaseExpirationTime": ...,
+        "Name": ...,
+        "NetworkingConfiguration": ...,
+        "ProvisioningStatus": ...,
+        "SerialNumber": ...,
+        "Tags": ...,
+        "Type": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeviceResponseTypeDef(TypedDict):
+    AlternateSoftwares: List[AlternateSoftwareMetadataTypeDef],  # (1)
+    Arn: str,
+    CreatedTime: datetime,
+    CurrentNetworkingStatus: NetworkStatusTypeDef,  # (2)
+    CurrentSoftware: str,
+    Description: str,
+    DeviceConnectionStatus: DeviceConnectionStatusType,  # (3)
+    DeviceId: str,
+    LatestAlternateSoftware: str,
+    LatestSoftware: str,
+    LeaseExpirationTime: datetime,
+    Name: str,
+    NetworkingConfiguration: NetworkPayloadTypeDef,  # (4)
+    ProvisioningStatus: DeviceStatusType,  # (5)
+    SerialNumber: str,
+    Tags: Dict[str, str],
+    Type: DeviceTypeType,  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `AlternateSoftwares`:
-  `List`\[[AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef)\]
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `CurrentNetworkingStatus`:
-  [NetworkStatusTypeDef](./type_defs.md#networkstatustypedef)
-- `CurrentSoftware`: `str`
-- `Description`: `str`
-- `DeviceConnectionStatus`:
-  [DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype)
-- `DeviceId`: `str`
-- `LatestAlternateSoftware`: `str`
-- `LatestSoftware`: `str`
-- `LeaseExpirationTime`: `datetime`
-- `Name`: `str`
-- `NetworkingConfiguration`:
-  [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
-- `ProvisioningStatus`: [DeviceStatusType](./literals.md#devicestatustype)
-- `SerialNumber`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Type`: [DeviceTypeType](./literals.md#devicetypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describenodefromtemplatejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef) 
+2. See [:material-code-braces: NetworkStatusTypeDef](./type_defs.md#networkstatustypedef) 
+3. See [:material-code-brackets: DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype) 
+4. See [:material-code-braces: NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef) 
+5. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+6. See [:material-code-brackets: DeviceTypeType](./literals.md#devicetypetype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeNodeFromTemplateJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeNodeFromTemplateJobRequestRequestTypeDef
+
+def get_value() -> DescribeNodeFromTemplateJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describenodefromtemplatejobresponsetypedef"></a>
+```python title="Definition"
+class DescribeNodeFromTemplateJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribeNodeFromTemplateJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeNodeFromTemplateJobResponseTypeDef
+
+def get_value() -> DescribeNodeFromTemplateJobResponseTypeDef:
+    return {
+        "CreatedTime": ...,
+        "JobId": ...,
+        "JobTags": ...,
+        "LastUpdatedTime": ...,
+        "NodeDescription": ...,
+        "NodeName": ...,
+        "OutputPackageName": ...,
+        "OutputPackageVersion": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "TemplateParameters": ...,
+        "TemplateType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNodeFromTemplateJobResponseTypeDef(TypedDict):
+    CreatedTime: datetime,
+    JobId: str,
+    JobTags: List[JobResourceTagsTypeDef],  # (1)
+    LastUpdatedTime: datetime,
+    NodeDescription: str,
+    NodeName: str,
+    OutputPackageName: str,
+    OutputPackageVersion: str,
+    Status: NodeFromTemplateJobStatusType,  # (2)
+    StatusMessage: str,
+    TemplateParameters: Dict[str, str],
+    TemplateType: TemplateTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `CreatedTime`: `datetime`
-- `JobId`: `str`
-- `JobTags`:
-  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `LastUpdatedTime`: `datetime`
-- `NodeDescription`: `str`
-- `NodeName`: `str`
-- `OutputPackageName`: `str`
-- `OutputPackageVersion`: `str`
-- `Status`:
-  [NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype)
-- `StatusMessage`: `str`
-- `TemplateParameters`: `Dict`\[`str`, `str`\]
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype))
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describenoderequestrequesttypedef"></a>
-
+1. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
+2. See [:material-code-brackets: NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype) 
+3. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeNodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeNodeRequestRequestTypeDef
+
+def get_value() -> DescribeNodeRequestRequestTypeDef:
+    return {
+        "NodeId": ...,
+    }
 ```
 
-Required fields:
-
-- `NodeId`: `str`
-
-Optional fields:
-
-- `OwnerAccount`: `str`
-
-<a id="describenoderesponsetypedef"></a>
+```python title="Definition"
+class DescribeNodeRequestRequestTypeDef(TypedDict):
+    NodeId: str,
+    OwnerAccount: NotRequired[str],
+```
 
 ## DescribeNodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribeNodeResponseTypeDef
+
+def get_value() -> DescribeNodeResponseTypeDef:
+    return {
+        "AssetName": ...,
+        "Category": ...,
+        "CreatedTime": ...,
+        "Description": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "NodeId": ...,
+        "NodeInterface": ...,
+        "OwnerAccount": ...,
+        "PackageArn": ...,
+        "PackageId": ...,
+        "PackageName": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNodeResponseTypeDef(TypedDict):
+    AssetName: str,
+    Category: NodeCategoryType,  # (1)
+    CreatedTime: datetime,
+    Description: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    NodeId: str,
+    NodeInterface: NodeInterfaceTypeDef,  # (2)
+    OwnerAccount: str,
+    PackageArn: str,
+    PackageId: str,
+    PackageName: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AssetName`: `str`
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `NodeId`: `str`
-- `NodeInterface`: [NodeInterfaceTypeDef](./type_defs.md#nodeinterfacetypedef)
-- `OwnerAccount`: `str`
-- `PackageArn`: `str`
-- `PackageId`: `str`
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepackageimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: NodeCategoryType](./literals.md#nodecategorytype) 
+2. See [:material-code-braces: NodeInterfaceTypeDef](./type_defs.md#nodeinterfacetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePackageImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageImportJobRequestRequestTypeDef
+
+def get_value() -> DescribePackageImportJobRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-<a id="describepackageimportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribePackageImportJobRequestRequestTypeDef(TypedDict):
+    JobId: str,
+```
 
 ## DescribePackageImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageImportJobResponseTypeDef
+
+def get_value() -> DescribePackageImportJobResponseTypeDef:
+    return {
+        "ClientToken": ...,
+        "CreatedTime": ...,
+        "InputConfig": ...,
+        "JobId": ...,
+        "JobTags": ...,
+        "JobType": ...,
+        "LastUpdatedTime": ...,
+        "Output": ...,
+        "OutputConfig": ...,
+        "Status": ...,
+        "StatusMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePackageImportJobResponseTypeDef(TypedDict):
+    ClientToken: str,
+    CreatedTime: datetime,
+    InputConfig: PackageImportJobInputConfigTypeDef,  # (1)
+    JobId: str,
+    JobTags: List[JobResourceTagsTypeDef],  # (2)
+    JobType: PackageImportJobTypeType,  # (3)
+    LastUpdatedTime: datetime,
+    Output: PackageImportJobOutputTypeDef,  # (4)
+    OutputConfig: PackageImportJobOutputConfigTypeDef,  # (5)
+    Status: PackageImportJobStatusType,  # (6)
+    StatusMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `ClientToken`: `str`
-- `CreatedTime`: `datetime`
-- `InputConfig`:
-  [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
-- `JobId`: `str`
-- `JobTags`:
-  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-- `LastUpdatedTime`: `datetime`
-- `Output`:
-  [PackageImportJobOutputTypeDef](./type_defs.md#packageimportjoboutputtypedef)
-- `OutputConfig`:
-  [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
-- `Status`:
-  [PackageImportJobStatusType](./literals.md#packageimportjobstatustype)
-- `StatusMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepackagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef) 
+2. See [:material-code-braces: JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef) 
+3. See [:material-code-brackets: PackageImportJobTypeType](./literals.md#packageimportjobtypetype) 
+4. See [:material-code-braces: PackageImportJobOutputTypeDef](./type_defs.md#packageimportjoboutputtypedef) 
+5. See [:material-code-braces: PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef) 
+6. See [:material-code-brackets: PackageImportJobStatusType](./literals.md#packageimportjobstatustype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePackageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageRequestRequestTypeDef
+
+def get_value() -> DescribePackageRequestRequestTypeDef:
+    return {
+        "PackageId": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageId`: `str`
-
-<a id="describepackageresponsetypedef"></a>
+```python title="Definition"
+class DescribePackageRequestRequestTypeDef(TypedDict):
+    PackageId: str,
+```
 
 ## DescribePackageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageResponseTypeDef
+
+def get_value() -> DescribePackageResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreatedTime": ...,
+        "PackageId": ...,
+        "PackageName": ...,
+        "ReadAccessPrincipalArns": ...,
+        "StorageLocation": ...,
+        "Tags": ...,
+        "WriteAccessPrincipalArns": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePackageResponseTypeDef(TypedDict):
+    Arn: str,
+    CreatedTime: datetime,
+    PackageId: str,
+    PackageName: str,
+    ReadAccessPrincipalArns: List[str],
+    StorageLocation: StorageLocationTypeDef,  # (1)
+    Tags: Dict[str, str],
+    WriteAccessPrincipalArns: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `PackageId`: `str`
-- `PackageName`: `str`
-- `ReadAccessPrincipalArns`: `List`\[`str`\]
-- `StorageLocation`:
-  [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `WriteAccessPrincipalArns`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepackageversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StorageLocationTypeDef](./type_defs.md#storagelocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePackageVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageVersionRequestRequestTypeDef
+
+def get_value() -> DescribePackageVersionRequestRequestTypeDef:
+    return {
+        "PackageId": ...,
+        "PackageVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageId`: `str`
-- `PackageVersion`: `str`
-
-Optional fields:
-
-- `OwnerAccount`: `str`
-- `PatchVersion`: `str`
-
-<a id="describepackageversionresponsetypedef"></a>
+```python title="Definition"
+class DescribePackageVersionRequestRequestTypeDef(TypedDict):
+    PackageId: str,
+    PackageVersion: str,
+    OwnerAccount: NotRequired[str],
+    PatchVersion: NotRequired[str],
+```
 
 ## DescribePackageVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DescribePackageVersionResponseTypeDef
+
+def get_value() -> DescribePackageVersionResponseTypeDef:
+    return {
+        "IsLatestPatch": ...,
+        "OwnerAccount": ...,
+        "PackageArn": ...,
+        "PackageId": ...,
+        "PackageName": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+        "RegisteredTime": ...,
+        "Status": ...,
+        "StatusDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePackageVersionResponseTypeDef(TypedDict):
+    IsLatestPatch: bool,
+    OwnerAccount: str,
+    PackageArn: str,
+    PackageId: str,
+    PackageName: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    RegisteredTime: datetime,
+    Status: PackageVersionStatusType,  # (1)
+    StatusDescription: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IsLatestPatch`: `bool`
-- `OwnerAccount`: `str`
-- `PackageArn`: `str`
-- `PackageId`: `str`
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-- `RegisteredTime`: `datetime`
-- `Status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
-- `StatusDescription`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="devicejobconfigtypedef"></a>
-
+1. See [:material-code-brackets: PackageVersionStatusType](./literals.md#packageversionstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceJobConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeviceJobConfigTypeDef
+
+def get_value() -> DeviceJobConfigTypeDef:
+    return {
+        "OTAJobConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceJobConfigTypeDef(TypedDict):
+    OTAJobConfig: NotRequired[OTAJobConfigTypeDef],  # (1)
+```
 
-- `OTAJobConfig`: [OTAJobConfigTypeDef](./type_defs.md#otajobconfigtypedef)
-
-<a id="devicejobtypedef"></a>
-
+1. See [:material-code-braces: OTAJobConfigTypeDef](./type_defs.md#otajobconfigtypedef) 
 ## DeviceJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeviceJobTypeDef
+
+def get_value() -> DeviceJobTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreatedTime`: `datetime`
-- `DeviceId`: `str`
-- `DeviceName`: `str`
-- `JobId`: `str`
-
-<a id="devicetypedef"></a>
+```python title="Definition"
+class DeviceJobTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    DeviceId: NotRequired[str],
+    DeviceName: NotRequired[str],
+    JobId: NotRequired[str],
+```
 
 ## DeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    DeviceId: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+    LeaseExpirationTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    ProvisioningStatus: NotRequired[DeviceStatusType],  # (1)
+```
 
-- `CreatedTime`: `datetime`
-- `DeviceId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `LeaseExpirationTime`: `datetime`
-- `Name`: `str`
-- `ProvisioningStatus`: [DeviceStatusType](./literals.md#devicestatustype)
-
-<a id="ethernetpayloadtypedef"></a>
-
+1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
 ## EthernetPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import EthernetPayloadTypeDef
+
+def get_value() -> EthernetPayloadTypeDef:
+    return {
+        "ConnectionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EthernetPayloadTypeDef(TypedDict):
+    ConnectionType: ConnectionTypeType,  # (1)
+    StaticIpConnectionInfo: NotRequired[StaticIpConnectionInfoTypeDef],  # (2)
+```
 
-- `ConnectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-
-Optional fields:
-
-- `StaticIpConnectionInfo`:
-  [StaticIpConnectionInfoTypeDef](./type_defs.md#staticipconnectioninfotypedef)
-
-<a id="ethernetstatustypedef"></a>
-
+1. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+2. See [:material-code-braces: StaticIpConnectionInfoTypeDef](./type_defs.md#staticipconnectioninfotypedef) 
 ## EthernetStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import EthernetStatusTypeDef
+
+def get_value() -> EthernetStatusTypeDef:
+    return {
+        "ConnectionStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EthernetStatusTypeDef(TypedDict):
+    ConnectionStatus: NotRequired[NetworkConnectionStatusType],  # (1)
+    HwAddress: NotRequired[str],
+    IpAddress: NotRequired[str],
+```
 
-- `ConnectionStatus`:
-  [NetworkConnectionStatusType](./literals.md#networkconnectionstatustype)
-- `HwAddress`: `str`
-- `IpAddress`: `str`
-
-<a id="jobresourcetagstypedef"></a>
-
+1. See [:material-code-brackets: NetworkConnectionStatusType](./literals.md#networkconnectionstatustype) 
 ## JobResourceTagsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import JobResourceTagsTypeDef
+
+def get_value() -> JobResourceTagsTypeDef:
+    return {
+        "ResourceType": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobResourceTagsTypeDef(TypedDict):
+    ResourceType: JobResourceTypeType,  # (1)
+    Tags: Mapping[str, str],
+```
 
-- `ResourceType`: `Literal['PACKAGE']` (see
-  [JobResourceTypeType](./literals.md#jobresourcetypetype))
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-brackets: JobResourceTypeType](./literals.md#jobresourcetypetype) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceId`: `str`
-- `JobId`: `str`
-
-<a id="listapplicationinstancedependenciesrequestrequesttypedef"></a>
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    DeviceId: NotRequired[str],
+    JobId: NotRequired[str],
+```
 
 ## ListApplicationInstanceDependenciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstanceDependenciesRequestRequestTypeDef
+
+def get_value() -> ListApplicationInstanceDependenciesRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationInstanceId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationinstancedependenciesresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationInstanceDependenciesRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationInstanceDependenciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstanceDependenciesResponseTypeDef
+
+def get_value() -> ListApplicationInstanceDependenciesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "PackageObjects": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationInstanceDependenciesResponseTypeDef(TypedDict):
+    NextToken: str,
+    PackageObjects: List[PackageObjectTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `PackageObjects`:
-  `List`\[[PackageObjectTypeDef](./type_defs.md#packageobjecttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listapplicationinstancenodeinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PackageObjectTypeDef](./type_defs.md#packageobjecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListApplicationInstanceNodeInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstanceNodeInstancesRequestRequestTypeDef
+
+def get_value() -> ListApplicationInstanceNodeInstancesRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationInstanceId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationinstancenodeinstancesresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationInstanceNodeInstancesRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationInstanceNodeInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstanceNodeInstancesResponseTypeDef
+
+def get_value() -> ListApplicationInstanceNodeInstancesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NodeInstances": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationInstanceNodeInstancesResponseTypeDef(TypedDict):
+    NextToken: str,
+    NodeInstances: List[NodeInstanceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NodeInstances`:
-  `List`\[[NodeInstanceTypeDef](./type_defs.md#nodeinstancetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listapplicationinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodeInstanceTypeDef](./type_defs.md#nodeinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListApplicationInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstancesRequestRequestTypeDef
+
+def get_value() -> ListApplicationInstancesRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListApplicationInstancesRequestRequestTypeDef(TypedDict):
+    DeviceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    StatusFilter: NotRequired[StatusFilterType],  # (1)
+```
 
-- `DeviceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
-
-<a id="listapplicationinstancesresponsetypedef"></a>
-
+1. See [:material-code-brackets: StatusFilterType](./literals.md#statusfiltertype) 
 ## ListApplicationInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListApplicationInstancesResponseTypeDef
+
+def get_value() -> ListApplicationInstancesResponseTypeDef:
+    return {
+        "ApplicationInstances": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationInstancesResponseTypeDef(TypedDict):
+    ApplicationInstances: List[ApplicationInstanceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationInstances`:
-  `List`\[[ApplicationInstanceTypeDef](./type_defs.md#applicationinstancetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdevicesjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationInstanceTypeDef](./type_defs.md#applicationinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDevicesJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListDevicesJobsRequestRequestTypeDef
+
+def get_value() -> ListDevicesJobsRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeviceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdevicesjobsresponsetypedef"></a>
+```python title="Definition"
+class ListDevicesJobsRequestRequestTypeDef(TypedDict):
+    DeviceId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDevicesJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListDevicesJobsResponseTypeDef
+
+def get_value() -> ListDevicesJobsResponseTypeDef:
+    return {
+        "DeviceJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicesJobsResponseTypeDef(TypedDict):
+    DeviceJobs: List[DeviceJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeviceJobs`: `List`\[[DeviceJobTypeDef](./type_defs.md#devicejobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdevicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceJobTypeDef](./type_defs.md#devicejobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListDevicesRequestRequestTypeDef
+
+def get_value() -> ListDevicesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdevicesresponsetypedef"></a>
+```python title="Definition"
+class ListDevicesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListDevicesResponseTypeDef
+
+def get_value() -> ListDevicesResponseTypeDef:
+    return {
+        "Devices": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDevicesResponseTypeDef(TypedDict):
+    Devices: List[DeviceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnodefromtemplatejobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNodeFromTemplateJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListNodeFromTemplateJobsRequestRequestTypeDef
+
+def get_value() -> ListNodeFromTemplateJobsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listnodefromtemplatejobsresponsetypedef"></a>
+```python title="Definition"
+class ListNodeFromTemplateJobsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListNodeFromTemplateJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListNodeFromTemplateJobsResponseTypeDef
+
+def get_value() -> ListNodeFromTemplateJobsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "NodeFromTemplateJobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNodeFromTemplateJobsResponseTypeDef(TypedDict):
+    NextToken: str,
+    NodeFromTemplateJobs: List[NodeFromTemplateJobTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `NodeFromTemplateJobs`:
-  `List`\[[NodeFromTemplateJobTypeDef](./type_defs.md#nodefromtemplatejobtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnodesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodeFromTemplateJobTypeDef](./type_defs.md#nodefromtemplatejobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNodesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListNodesRequestRequestTypeDef
+
+def get_value() -> ListNodesRequestRequestTypeDef:
+    return {
+        "Category": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListNodesRequestRequestTypeDef(TypedDict):
+    Category: NotRequired[NodeCategoryType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    PackageName: NotRequired[str],
+    PackageVersion: NotRequired[str],
+    PatchVersion: NotRequired[str],
+```
 
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `OwnerAccount`: `str`
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-<a id="listnodesresponsetypedef"></a>
-
+1. See [:material-code-brackets: NodeCategoryType](./literals.md#nodecategorytype) 
 ## ListNodesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListNodesResponseTypeDef
+
+def get_value() -> ListNodesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Nodes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNodesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Nodes: List[NodeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpackageimportjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NodeTypeDef](./type_defs.md#nodetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPackageImportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListPackageImportJobsRequestRequestTypeDef
+
+def get_value() -> ListPackageImportJobsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listpackageimportjobsresponsetypedef"></a>
+```python title="Definition"
+class ListPackageImportJobsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListPackageImportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListPackageImportJobsResponseTypeDef
+
+def get_value() -> ListPackageImportJobsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "PackageImportJobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPackageImportJobsResponseTypeDef(TypedDict):
+    NextToken: str,
+    PackageImportJobs: List[PackageImportJobTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `PackageImportJobs`:
-  `List`\[[PackageImportJobTypeDef](./type_defs.md#packageimportjobtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpackagesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PackageImportJobTypeDef](./type_defs.md#packageimportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPackagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListPackagesRequestRequestTypeDef
+
+def get_value() -> ListPackagesRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listpackagesresponsetypedef"></a>
+```python title="Definition"
+class ListPackagesRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListPackagesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListPackagesResponseTypeDef
+
+def get_value() -> ListPackagesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Packages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPackagesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Packages: List[PackageListItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Packages`:
-  `List`\[[PackageListItemTypeDef](./type_defs.md#packagelistitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PackageListItemTypeDef](./type_defs.md#packagelistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="manifestoverridespayloadtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ManifestOverridesPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ManifestOverridesPayloadTypeDef
+
+def get_value() -> ManifestOverridesPayloadTypeDef:
+    return {
+        "PayloadData": ...,
+    }
 ```
 
-Optional fields:
-
-- `PayloadData`: `str`
-
-<a id="manifestpayloadtypedef"></a>
+```python title="Definition"
+class ManifestOverridesPayloadTypeDef(TypedDict):
+    PayloadData: NotRequired[str],
+```
 
 ## ManifestPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ManifestPayloadTypeDef
+
+def get_value() -> ManifestPayloadTypeDef:
+    return {
+        "PayloadData": ...,
+    }
 ```
 
-Optional fields:
-
-- `PayloadData`: `str`
-
-<a id="networkpayloadtypedef"></a>
+```python title="Definition"
+class ManifestPayloadTypeDef(TypedDict):
+    PayloadData: NotRequired[str],
+```
 
 ## NetworkPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NetworkPayloadTypeDef
+
+def get_value() -> NetworkPayloadTypeDef:
+    return {
+        "Ethernet0": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkPayloadTypeDef(TypedDict):
+    Ethernet0: NotRequired[EthernetPayloadTypeDef],  # (1)
+    Ethernet1: NotRequired[EthernetPayloadTypeDef],  # (1)
+    Ntp: NotRequired[NtpPayloadTypeDef],  # (3)
+```
 
-- `Ethernet0`: [EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef)
-- `Ethernet1`: [EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef)
-- `Ntp`: [NtpPayloadTypeDef](./type_defs.md#ntppayloadtypedef)
-
-<a id="networkstatustypedef"></a>
-
+1. See [:material-code-braces: EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef) 
+2. See [:material-code-braces: EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef) 
+3. See [:material-code-braces: NtpPayloadTypeDef](./type_defs.md#ntppayloadtypedef) 
 ## NetworkStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NetworkStatusTypeDef
+
+def get_value() -> NetworkStatusTypeDef:
+    return {
+        "Ethernet0Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkStatusTypeDef(TypedDict):
+    Ethernet0Status: NotRequired[EthernetStatusTypeDef],  # (1)
+    Ethernet1Status: NotRequired[EthernetStatusTypeDef],  # (1)
+    LastUpdatedTime: NotRequired[datetime],
+    NtpStatus: NotRequired[NtpStatusTypeDef],  # (3)
+```
 
-- `Ethernet0Status`:
-  [EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef)
-- `Ethernet1Status`:
-  [EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef)
-- `LastUpdatedTime`: `datetime`
-- `NtpStatus`: [NtpStatusTypeDef](./type_defs.md#ntpstatustypedef)
-
-<a id="nodefromtemplatejobtypedef"></a>
-
+1. See [:material-code-braces: EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef) 
+2. See [:material-code-braces: EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef) 
+3. See [:material-code-braces: NtpStatusTypeDef](./type_defs.md#ntpstatustypedef) 
 ## NodeFromTemplateJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeFromTemplateJobTypeDef
+
+def get_value() -> NodeFromTemplateJobTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeFromTemplateJobTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    JobId: NotRequired[str],
+    NodeName: NotRequired[str],
+    Status: NotRequired[NodeFromTemplateJobStatusType],  # (1)
+    StatusMessage: NotRequired[str],
+    TemplateType: NotRequired[TemplateTypeType],  # (2)
+```
 
-- `CreatedTime`: `datetime`
-- `JobId`: `str`
-- `NodeName`: `str`
-- `Status`:
-  [NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype)
-- `StatusMessage`: `str`
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype))
-
-<a id="nodeinputporttypedef"></a>
-
+1. See [:material-code-brackets: NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype) 
+2. See [:material-code-brackets: TemplateTypeType](./literals.md#templatetypetype) 
 ## NodeInputPortTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeInputPortTypeDef
+
+def get_value() -> NodeInputPortTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeInputPortTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    Description: NotRequired[str],
+    MaxConnections: NotRequired[int],
+    Name: NotRequired[str],
+    Type: NotRequired[PortTypeType],  # (1)
+```
 
-- `DefaultValue`: `str`
-- `Description`: `str`
-- `MaxConnections`: `int`
-- `Name`: `str`
-- `Type`: [PortTypeType](./literals.md#porttypetype)
-
-<a id="nodeinstancetypedef"></a>
-
+1. See [:material-code-brackets: PortTypeType](./literals.md#porttypetype) 
 ## NodeInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeInstanceTypeDef
+
+def get_value() -> NodeInstanceTypeDef:
+    return {
+        "CurrentStatus": ...,
+        "NodeInstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NodeInstanceTypeDef(TypedDict):
+    CurrentStatus: NodeInstanceStatusType,  # (1)
+    NodeInstanceId: str,
+    NodeId: NotRequired[str],
+    NodeName: NotRequired[str],
+    PackageName: NotRequired[str],
+    PackagePatchVersion: NotRequired[str],
+    PackageVersion: NotRequired[str],
+```
 
-- `CurrentStatus`:
-  [NodeInstanceStatusType](./literals.md#nodeinstancestatustype)
-- `NodeInstanceId`: `str`
-
-Optional fields:
-
-- `NodeId`: `str`
-- `NodeName`: `str`
-- `PackageName`: `str`
-- `PackagePatchVersion`: `str`
-- `PackageVersion`: `str`
-
-<a id="nodeinterfacetypedef"></a>
-
+1. See [:material-code-brackets: NodeInstanceStatusType](./literals.md#nodeinstancestatustype) 
 ## NodeInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeInterfaceTypeDef
+
+def get_value() -> NodeInterfaceTypeDef:
+    return {
+        "Inputs": ...,
+        "Outputs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NodeInterfaceTypeDef(TypedDict):
+    Inputs: List[NodeInputPortTypeDef],  # (1)
+    Outputs: List[NodeOutputPortTypeDef],  # (2)
+```
 
-- `Inputs`:
-  `List`\[[NodeInputPortTypeDef](./type_defs.md#nodeinputporttypedef)\]
-- `Outputs`:
-  `List`\[[NodeOutputPortTypeDef](./type_defs.md#nodeoutputporttypedef)\]
-
-<a id="nodeoutputporttypedef"></a>
-
+1. See [:material-code-braces: NodeInputPortTypeDef](./type_defs.md#nodeinputporttypedef) 
+2. See [:material-code-braces: NodeOutputPortTypeDef](./type_defs.md#nodeoutputporttypedef) 
 ## NodeOutputPortTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeOutputPortTypeDef
+
+def get_value() -> NodeOutputPortTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeOutputPortTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[PortTypeType],  # (1)
+```
 
-- `Description`: `str`
-- `Name`: `str`
-- `Type`: [PortTypeType](./literals.md#porttypetype)
-
-<a id="nodetypedef"></a>
-
+1. See [:material-code-brackets: PortTypeType](./literals.md#porttypetype) 
 ## NodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NodeTypeDef
+
+def get_value() -> NodeTypeDef:
+    return {
+        "Category": ...,
+        "CreatedTime": ...,
+        "Name": ...,
+        "NodeId": ...,
+        "PackageId": ...,
+        "PackageName": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NodeTypeDef(TypedDict):
+    Category: NodeCategoryType,  # (1)
+    CreatedTime: datetime,
+    Name: str,
+    NodeId: str,
+    PackageId: str,
+    PackageName: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    Description: NotRequired[str],
+    OwnerAccount: NotRequired[str],
+    PackageArn: NotRequired[str],
+```
 
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `CreatedTime`: `datetime`
-- `Name`: `str`
-- `NodeId`: `str`
-- `PackageId`: `str`
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `OwnerAccount`: `str`
-- `PackageArn`: `str`
-
-<a id="ntppayloadtypedef"></a>
-
+1. See [:material-code-brackets: NodeCategoryType](./literals.md#nodecategorytype) 
 ## NtpPayloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NtpPayloadTypeDef
+
+def get_value() -> NtpPayloadTypeDef:
+    return {
+        "NtpServers": ...,
+    }
 ```
 
-Required fields:
-
-- `NtpServers`: `List`\[`str`\]
-
-<a id="ntpstatustypedef"></a>
+```python title="Definition"
+class NtpPayloadTypeDef(TypedDict):
+    NtpServers: List[str],
+```
 
 ## NtpStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import NtpStatusTypeDef
+
+def get_value() -> NtpStatusTypeDef:
+    return {
+        "ConnectionStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NtpStatusTypeDef(TypedDict):
+    ConnectionStatus: NotRequired[NetworkConnectionStatusType],  # (1)
+    IpAddress: NotRequired[str],
+    NtpServerName: NotRequired[str],
+```
 
-- `ConnectionStatus`:
-  [NetworkConnectionStatusType](./literals.md#networkconnectionstatustype)
-- `IpAddress`: `str`
-- `NtpServerName`: `str`
-
-<a id="otajobconfigtypedef"></a>
-
+1. See [:material-code-brackets: NetworkConnectionStatusType](./literals.md#networkconnectionstatustype) 
 ## OTAJobConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import OTAJobConfigTypeDef
+
+def get_value() -> OTAJobConfigTypeDef:
+    return {
+        "ImageVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ImageVersion`: `str`
-
-<a id="outputs3locationtypedef"></a>
+```python title="Definition"
+class OTAJobConfigTypeDef(TypedDict):
+    ImageVersion: str,
+```
 
 ## OutPutS3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import OutPutS3LocationTypeDef
+
+def get_value() -> OutPutS3LocationTypeDef:
+    return {
+        "BucketName": ...,
+        "ObjectKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketName`: `str`
-- `ObjectKey`: `str`
-
-<a id="packageimportjobinputconfigtypedef"></a>
+```python title="Definition"
+class OutPutS3LocationTypeDef(TypedDict):
+    BucketName: str,
+    ObjectKey: str,
+```
 
 ## PackageImportJobInputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageImportJobInputConfigTypeDef
+
+def get_value() -> PackageImportJobInputConfigTypeDef:
+    return {
+        "PackageVersionInputConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PackageImportJobInputConfigTypeDef(TypedDict):
+    PackageVersionInputConfig: NotRequired[PackageVersionInputConfigTypeDef],  # (1)
+```
 
-- `PackageVersionInputConfig`:
-  [PackageVersionInputConfigTypeDef](./type_defs.md#packageversioninputconfigtypedef)
-
-<a id="packageimportjoboutputconfigtypedef"></a>
-
+1. See [:material-code-braces: PackageVersionInputConfigTypeDef](./type_defs.md#packageversioninputconfigtypedef) 
 ## PackageImportJobOutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageImportJobOutputConfigTypeDef
+
+def get_value() -> PackageImportJobOutputConfigTypeDef:
+    return {
+        "PackageVersionOutputConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PackageImportJobOutputConfigTypeDef(TypedDict):
+    PackageVersionOutputConfig: NotRequired[PackageVersionOutputConfigTypeDef],  # (1)
+```
 
-- `PackageVersionOutputConfig`:
-  [PackageVersionOutputConfigTypeDef](./type_defs.md#packageversionoutputconfigtypedef)
-
-<a id="packageimportjoboutputtypedef"></a>
-
+1. See [:material-code-braces: PackageVersionOutputConfigTypeDef](./type_defs.md#packageversionoutputconfigtypedef) 
 ## PackageImportJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageImportJobOutputTypeDef
+
+def get_value() -> PackageImportJobOutputTypeDef:
+    return {
+        "OutputS3Location": ...,
+        "PackageId": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PackageImportJobOutputTypeDef(TypedDict):
+    OutputS3Location: OutPutS3LocationTypeDef,  # (1)
+    PackageId: str,
+    PackageVersion: str,
+    PatchVersion: str,
+```
 
-- `OutputS3Location`:
-  [OutPutS3LocationTypeDef](./type_defs.md#outputs3locationtypedef)
-- `PackageId`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-<a id="packageimportjobtypedef"></a>
-
+1. See [:material-code-braces: OutPutS3LocationTypeDef](./type_defs.md#outputs3locationtypedef) 
 ## PackageImportJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageImportJobTypeDef
+
+def get_value() -> PackageImportJobTypeDef:
+    return {
+        "CreatedTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PackageImportJobTypeDef(TypedDict):
+    CreatedTime: NotRequired[datetime],
+    JobId: NotRequired[str],
+    JobType: NotRequired[PackageImportJobTypeType],  # (1)
+    LastUpdatedTime: NotRequired[datetime],
+    Status: NotRequired[PackageImportJobStatusType],  # (2)
+    StatusMessage: NotRequired[str],
+```
 
-- `CreatedTime`: `datetime`
-- `JobId`: `str`
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-- `LastUpdatedTime`: `datetime`
-- `Status`:
-  [PackageImportJobStatusType](./literals.md#packageimportjobstatustype)
-- `StatusMessage`: `str`
-
-<a id="packagelistitemtypedef"></a>
-
+1. See [:material-code-brackets: PackageImportJobTypeType](./literals.md#packageimportjobtypetype) 
+2. See [:material-code-brackets: PackageImportJobStatusType](./literals.md#packageimportjobstatustype) 
 ## PackageListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageListItemTypeDef
+
+def get_value() -> PackageListItemTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `PackageId`: `str`
-- `PackageName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="packageobjecttypedef"></a>
+```python title="Definition"
+class PackageListItemTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    PackageId: NotRequired[str],
+    PackageName: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## PackageObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageObjectTypeDef
+
+def get_value() -> PackageObjectTypeDef:
+    return {
+        "Name": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-<a id="packageversioninputconfigtypedef"></a>
+```python title="Definition"
+class PackageObjectTypeDef(TypedDict):
+    Name: str,
+    PackageVersion: str,
+    PatchVersion: str,
+```
 
 ## PackageVersionInputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageVersionInputConfigTypeDef
+
+def get_value() -> PackageVersionInputConfigTypeDef:
+    return {
+        "S3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PackageVersionInputConfigTypeDef(TypedDict):
+    S3Location: S3LocationTypeDef,  # (1)
+```
 
-- `S3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="packageversionoutputconfigtypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## PackageVersionOutputConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import PackageVersionOutputConfigTypeDef
+
+def get_value() -> PackageVersionOutputConfigTypeDef:
+    return {
+        "PackageName": ...,
+        "PackageVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageName`: `str`
-- `PackageVersion`: `str`
-
-Optional fields:
-
-- `MarkLatest`: `bool`
-
-<a id="provisiondevicerequestrequesttypedef"></a>
+```python title="Definition"
+class PackageVersionOutputConfigTypeDef(TypedDict):
+    PackageName: str,
+    PackageVersion: str,
+    MarkLatest: NotRequired[bool],
+```
 
 ## ProvisionDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ProvisionDeviceRequestRequestTypeDef
+
+def get_value() -> ProvisionDeviceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionDeviceRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    NetworkingConfiguration: NotRequired[NetworkPayloadTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `NetworkingConfiguration`:
-  [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="provisiondeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef) 
 ## ProvisionDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ProvisionDeviceResponseTypeDef
+
+def get_value() -> ProvisionDeviceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Certificates": ...,
+        "DeviceId": ...,
+        "IotThingName": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionDeviceResponseTypeDef(TypedDict):
+    Arn: str,
+    Certificates: bytes,
+    DeviceId: str,
+    IotThingName: str,
+    Status: DeviceStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Certificates`: `bytes`
-- `DeviceId`: `str`
-- `IotThingName`: `str`
-- `Status`: [DeviceStatusType](./literals.md#devicestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerpackageversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceStatusType](./literals.md#devicestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterPackageVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import RegisterPackageVersionRequestRequestTypeDef
+
+def get_value() -> RegisterPackageVersionRequestRequestTypeDef:
+    return {
+        "PackageId": ...,
+        "PackageVersion": ...,
+        "PatchVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `PackageId`: `str`
-- `PackageVersion`: `str`
-- `PatchVersion`: `str`
-
-Optional fields:
-
-- `MarkLatest`: `bool`
-- `OwnerAccount`: `str`
-
-<a id="removeapplicationinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class RegisterPackageVersionRequestRequestTypeDef(TypedDict):
+    PackageId: str,
+    PackageVersion: str,
+    PatchVersion: str,
+    MarkLatest: NotRequired[bool],
+    OwnerAccount: NotRequired[str],
+```
 
 ## RemoveApplicationInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import RemoveApplicationInstanceRequestRequestTypeDef
+
+def get_value() -> RemoveApplicationInstanceRequestRequestTypeDef:
+    return {
+        "ApplicationInstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationInstanceId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemoveApplicationInstanceRequestRequestTypeDef(TypedDict):
+    ApplicationInstanceId: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "BucketName": ...,
+        "ObjectKey": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketName`: `str`
-- `ObjectKey`: `str`
-
-Optional fields:
-
-- `Region`: `str`
-
-<a id="staticipconnectioninfotypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    BucketName: str,
+    ObjectKey: str,
+    Region: NotRequired[str],
+```
 
 ## StaticIpConnectionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import StaticIpConnectionInfoTypeDef
+
+def get_value() -> StaticIpConnectionInfoTypeDef:
+    return {
+        "DefaultGateway": ...,
+        "Dns": ...,
+        "IpAddress": ...,
+        "Mask": ...,
+    }
 ```
 
-Required fields:
-
-- `DefaultGateway`: `str`
-- `Dns`: `List`\[`str`\]
-- `IpAddress`: `str`
-- `Mask`: `str`
-
-<a id="storagelocationtypedef"></a>
+```python title="Definition"
+class StaticIpConnectionInfoTypeDef(TypedDict):
+    DefaultGateway: str,
+    Dns: List[str],
+    IpAddress: str,
+    Mask: str,
+```
 
 ## StorageLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import StorageLocationTypeDef
+
+def get_value() -> StorageLocationTypeDef:
+    return {
+        "BinaryPrefixLocation": ...,
+        "Bucket": ...,
+        "GeneratedPrefixLocation": ...,
+        "ManifestPrefixLocation": ...,
+        "RepoPrefixLocation": ...,
+    }
 ```
 
-Required fields:
-
-- `BinaryPrefixLocation`: `str`
-- `Bucket`: `str`
-- `GeneratedPrefixLocation`: `str`
-- `ManifestPrefixLocation`: `str`
-- `RepoPrefixLocation`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StorageLocationTypeDef(TypedDict):
+    BinaryPrefixLocation: str,
+    Bucket: str,
+    GeneratedPrefixLocation: str,
+    ManifestPrefixLocation: str,
+    RepoPrefixLocation: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedevicemetadatarequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDeviceMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import UpdateDeviceMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateDeviceMetadataRequestRequestTypeDef:
+    return {
+        "DeviceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updatedevicemetadataresponsetypedef"></a>
+```python title="Definition"
+class UpdateDeviceMetadataRequestRequestTypeDef(TypedDict):
+    DeviceId: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateDeviceMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_panorama.type_defs import UpdateDeviceMetadataResponseTypeDef
+
+def get_value() -> UpdateDeviceMetadataResponseTypeDef:
+    return {
+        "DeviceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeviceMetadataResponseTypeDef(TypedDict):
+    DeviceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeviceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

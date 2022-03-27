@@ -1,34 +1,18 @@
-<a id="waiters-for-boto3-lexmodelsv2-module"></a>
-
-# Waiters for boto3 LexModelsV2 module
+# Waiters
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > Waiters
 
-Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module
-[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+!!! note ""
 
-- [Waiters for boto3 LexModelsV2 module](#waiters-for-boto3-lexmodelsv2-module)
-  - [BotAliasAvailableWaiter](#botaliasavailablewaiter)
-  - [BotAvailableWaiter](#botavailablewaiter)
-  - [BotExportCompletedWaiter](#botexportcompletedwaiter)
-  - [BotImportCompletedWaiter](#botimportcompletedwaiter)
-  - [BotLocaleBuiltWaiter](#botlocalebuiltwaiter)
-  - [BotLocaleCreatedWaiter](#botlocalecreatedwaiter)
-  - [BotLocaleExpressTestingAvailableWaiter](#botlocaleexpresstestingavailablewaiter)
-  - [BotVersionAvailableWaiter](#botversionavailablewaiter)
-
-<a id="botaliasavailablewaiter"></a>
+    Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+    type annotations stubs module [mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ## BotAliasAvailableWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_alias_available")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_alias_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotAliasAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter
@@ -37,25 +21,41 @@ def get_bot_alias_available_waiter() -> BotAliasAvailableWaiter:
     return Session().client("lexv2-models").get_waiter("bot_alias_available")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_alias_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotAliasAvailable)
 
-Arguments for `BotAliasAvailableWaiter.wait` method:
+### wait
 
-- `botAliasId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotAliasAvailableWaiter.wait` method.
 
-<a id="botavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botAliasId: str,
+    botId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotAliasRequestBotAliasAvailableWaitTypeDef = {  # (1)
+    "botAliasId": ...,
+    "botId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotAliasRequestBotAliasAvailableWaitTypeDef](./type_defs.md#describebotaliasrequestbotaliasavailablewaittypedef) 
 ## BotAvailableWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_available")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotAvailableWaiter
@@ -64,24 +64,39 @@ def get_bot_available_waiter() -> BotAvailableWaiter:
     return Session().client("lexv2-models").get_waiter("bot_available")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotAvailable)
 
-Arguments for `BotAvailableWaiter.wait` method:
+### wait
 
-- `botId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotAvailableWaiter.wait` method.
 
-<a id="botexportcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotRequestBotAvailableWaitTypeDef = {  # (1)
+    "botId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotRequestBotAvailableWaitTypeDef](./type_defs.md#describebotrequestbotavailablewaittypedef) 
 ## BotExportCompletedWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_export_completed")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_export_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotExportCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotExportCompletedWaiter
@@ -90,24 +105,39 @@ def get_bot_export_completed_waiter() -> BotExportCompletedWaiter:
     return Session().client("lexv2-models").get_waiter("bot_export_completed")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_export_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotExportCompleted)
 
-Arguments for `BotExportCompletedWaiter.wait` method:
+### wait
 
-- `exportId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotExportCompletedWaiter.wait` method.
 
-<a id="botimportcompletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    exportId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeExportRequestBotExportCompletedWaitTypeDef = {  # (1)
+    "exportId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeExportRequestBotExportCompletedWaitTypeDef](./type_defs.md#describeexportrequestbotexportcompletedwaittypedef) 
 ## BotImportCompletedWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_import_completed")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_import_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotImportCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotImportCompletedWaiter
@@ -116,24 +146,39 @@ def get_bot_import_completed_waiter() -> BotImportCompletedWaiter:
     return Session().client("lexv2-models").get_waiter("bot_import_completed")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_import_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotImportCompleted)
 
-Arguments for `BotImportCompletedWaiter.wait` method:
+### wait
 
-- `importId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotImportCompletedWaiter.wait` method.
 
-<a id="botlocalebuiltwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    importId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImportRequestBotImportCompletedWaitTypeDef = {  # (1)
+    "importId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImportRequestBotImportCompletedWaitTypeDef](./type_defs.md#describeimportrequestbotimportcompletedwaittypedef) 
 ## BotLocaleBuiltWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_locale_built")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_locale_built")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleBuilt)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleBuiltWaiter
@@ -142,26 +187,43 @@ def get_bot_locale_built_waiter() -> BotLocaleBuiltWaiter:
     return Session().client("lexv2-models").get_waiter("bot_locale_built")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_locale_built](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleBuilt)
 
-Arguments for `BotLocaleBuiltWaiter.wait` method:
+### wait
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotLocaleBuiltWaiter.wait` method.
 
-<a id="botlocalecreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotLocaleRequestBotLocaleBuiltWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocalebuiltwaittypedef) 
 ## BotLocaleCreatedWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_locale_created")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_locale_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleCreatedWaiter
@@ -170,26 +232,43 @@ def get_bot_locale_created_waiter() -> BotLocaleCreatedWaiter:
     return Session().client("lexv2-models").get_waiter("bot_locale_created")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_locale_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleCreated)
 
-Arguments for `BotLocaleCreatedWaiter.wait` method:
+### wait
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotLocaleCreatedWaiter.wait` method.
 
-<a id="botlocaleexpresstestingavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotLocaleRequestBotLocaleCreatedWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocalecreatedwaittypedef) 
 ## BotLocaleExpressTestingAvailableWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_locale_express_testing_available")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_locale_express_testing_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleExpressTestingAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotLocaleExpressTestingAvailableWaiter
@@ -198,26 +277,43 @@ def get_bot_locale_express_testing_available_waiter() -> BotLocaleExpressTesting
     return Session().client("lexv2-models").get_waiter("bot_locale_express_testing_available")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_locale_express_testing_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotLocaleExpressTestingAvailable)
 
-Arguments for `BotLocaleExpressTestingAvailableWaiter.wait` method:
+### wait
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotLocaleExpressTestingAvailableWaiter.wait` method.
 
-<a id="botversionavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotLocaleRequestBotLocaleExpressTestingAvailableWaitTypeDef](./type_defs.md#describebotlocalerequestbotlocaleexpresstestingavailablewaittypedef) 
 ## BotVersionAvailableWaiter
 
-Type annotations for
-`boto3.client("lexv2-models").get_waiter("bot_version_available")`.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter("bot_version_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotVersionAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lexv2_models.waiter import BotVersionAvailableWaiter
@@ -226,11 +322,32 @@ def get_bot_version_available_waiter() -> BotVersionAvailableWaiter:
     return Session().client("lexv2-models").get_waiter("bot_version_available")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Waiter.bot_version_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Waiter.BotVersionAvailable)
 
-Arguments for `BotVersionAvailableWaiter.wait` method:
+### wait
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BotVersionAvailableWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBotVersionRequestBotVersionAvailableWaitTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBotVersionRequestBotVersionAvailableWaitTypeDef](./type_defs.md#describebotversionrequestbotversionavailablewaittypedef) 

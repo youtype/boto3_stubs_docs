@@ -1,65 +1,18 @@
-<a id="gamesparksclient-for-boto3-gamesparks-module"></a>
-
-# GameSparksClient for boto3 GameSparks module
+# GameSparksClient
 
 > [Index](../README.md) > [GameSparks](./README.md) > GameSparksClient
 
-Auto-generated documentation for
-[GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
-type annotations stubs module
-[mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
+!!! note ""
 
-- [GameSparksClient for boto3 GameSparks module](#gamesparksclient-for-boto3-gamesparks-module)
-  - [GameSparksClient](#gamesparksclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_game](#create_game)
-    - [create_snapshot](#create_snapshot)
-    - [create_stage](#create_stage)
-    - [delete_game](#delete_game)
-    - [delete_stage](#delete_stage)
-    - [disconnect_player](#disconnect_player)
-    - [export_snapshot](#export_snapshot)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_extension](#get_extension)
-    - [get_extension_version](#get_extension_version)
-    - [get_game](#get_game)
-    - [get_game_configuration](#get_game_configuration)
-    - [get_generated_code_job](#get_generated_code_job)
-    - [get_player_connection_status](#get_player_connection_status)
-    - [get_snapshot](#get_snapshot)
-    - [get_stage](#get_stage)
-    - [get_stage_deployment](#get_stage_deployment)
-    - [import_game_configuration](#import_game_configuration)
-    - [list_extension_versions](#list_extension_versions)
-    - [list_extensions](#list_extensions)
-    - [list_games](#list_games)
-    - [list_generated_code_jobs](#list_generated_code_jobs)
-    - [list_snapshots](#list_snapshots)
-    - [list_stage_deployments](#list_stage_deployments)
-    - [list_stages](#list_stages)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_generated_code_job](#start_generated_code_job)
-    - [start_stage_deployment](#start_stage_deployment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_game](#update_game)
-    - [update_game_configuration](#update_game_configuration)
-    - [update_snapshot](#update_snapshot)
-    - [update_stage](#update_stage)
-    - [get_paginator](#get_paginator)
-
-<a id="gamesparksclient"></a>
+    Auto-generated documentation for [GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
+    type annotations stubs module [mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
 
 ## GameSparksClient
 
-Type annotations for `boto3.client("gamesparks")`
+Type annotations and code completion for `#!python boto3.client("gamesparks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_gamesparks.client import GameSparksClient
 
@@ -67,858 +20,1131 @@ def get_gamesparks_client() -> GameSparksClient:
     return Session().client("gamesparks")
 ```
 
-Boto3 documentation:
-[GameSparks.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("gamesparks").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("gamesparks")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_gamesparks.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GameSparksClient exceptions.
-
-Type annotations for `boto3.client("gamesparks").exceptions` method.
-
-Boto3 documentation:
-[GameSparks.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("gamesparks").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.can_paginate)
 
-Boto3 documentation:
-[GameSparks.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_game"></a>
-
-### create_game
+### create\_game
 
 Creates a new game with an empty configuration.
 
-Type annotations for `boto3.client("gamesparks").create_game` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").create_game` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_game)
 
-Boto3 documentation:
-[GameSparks.Client.create_game](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_game)
+```python title="Method definition"
+def create_game(
+    self,
+    *,
+    GameName: str,
+    ClientToken: str = ...,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateGameResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGameRequestRequestTypeDef](./type_defs.md#creategamerequestrequesttypedef).
+1. See [:material-code-braces: CreateGameResultTypeDef](./type_defs.md#creategameresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateGameRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns [CreateGameResultTypeDef](./type_defs.md#creategameresulttypedef).
+parent.create_game(**kwargs)
+```
 
-<a id="create\_snapshot"></a>
+1. See [:material-code-braces: CreateGameRequestRequestTypeDef](./type_defs.md#creategamerequestrequesttypedef) 
 
-### create_snapshot
+### create\_snapshot
 
 Creates a snapshot of the game configuration.
 
-Type annotations for `boto3.client("gamesparks").create_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").create_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_snapshot)
 
-Boto3 documentation:
-[GameSparks.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_snapshot)
+```python title="Method definition"
+def create_snapshot(
+    self,
+    *,
+    GameName: str,
+    Description: str = ...,
+) -> CreateSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns
-[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
+parent.create_snapshot(**kwargs)
+```
 
-<a id="create\_stage"></a>
+1. See [:material-code-braces: CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef) 
 
-### create_stage
+### create\_stage
 
 Creates a new stage for stage-by-stage game development and deployment.
 
-Type annotations for `boto3.client("gamesparks").create_stage` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").create_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_stage)
 
-Boto3 documentation:
-[GameSparks.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.create_stage)
+```python title="Method definition"
+def create_stage(
+    self,
+    *,
+    GameName: str,
+    Role: str,
+    StageName: str,
+    ClientToken: str = ...,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateStageResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStageRequestRequestTypeDef](./type_defs.md#createstagerequestrequesttypedef).
+1. See [:material-code-braces: CreateStageResultTypeDef](./type_defs.md#createstageresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `StageName`: `str` *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStageRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "Role": ...,
+    "StageName": ...,
+}
 
-Returns [CreateStageResultTypeDef](./type_defs.md#createstageresulttypedef).
+parent.create_stage(**kwargs)
+```
 
-<a id="delete\_game"></a>
+1. See [:material-code-braces: CreateStageRequestRequestTypeDef](./type_defs.md#createstagerequestrequesttypedef) 
 
-### delete_game
+### delete\_game
 
 Deletes a game.
 
-Type annotations for `boto3.client("gamesparks").delete_game` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").delete_game` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.delete_game)
 
-Boto3 documentation:
-[GameSparks.Client.delete_game](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.delete_game)
+```python title="Method definition"
+def delete_game(
+    self,
+    *,
+    GameName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGameRequestRequestTypeDef](./type_defs.md#deletegamerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGameRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_game(**kwargs)
+```
 
-<a id="delete\_stage"></a>
+1. See [:material-code-braces: DeleteGameRequestRequestTypeDef](./type_defs.md#deletegamerequestrequesttypedef) 
 
-### delete_stage
+### delete\_stage
 
 Deletes a stage from a game, along with the associated game runtime.
 
-Type annotations for `boto3.client("gamesparks").delete_stage` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").delete_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.delete_stage)
 
-Boto3 documentation:
-[GameSparks.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.delete_stage)
+```python title="Method definition"
+def delete_stage(
+    self,
+    *,
+    GameName: str,
+    StageName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStageRequestRequestTypeDef](./type_defs.md#deletestagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `StageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStageRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "StageName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stage(**kwargs)
+```
 
-<a id="disconnect\_player"></a>
+1. See [:material-code-braces: DeleteStageRequestRequestTypeDef](./type_defs.md#deletestagerequestrequesttypedef) 
 
-### disconnect_player
+### disconnect\_player
 
 Disconnects a player from the game runtime.
 
-Type annotations for `boto3.client("gamesparks").disconnect_player` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").disconnect_player` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.disconnect_player)
 
-Boto3 documentation:
-[GameSparks.Client.disconnect_player](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.disconnect_player)
+```python title="Method definition"
+def disconnect_player(
+    self,
+    *,
+    GameName: str,
+    PlayerId: str,
+    StageName: str,
+) -> DisconnectPlayerResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisconnectPlayerRequestRequestTypeDef](./type_defs.md#disconnectplayerrequestrequesttypedef).
+1. See [:material-code-braces: DisconnectPlayerResultTypeDef](./type_defs.md#disconnectplayerresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `PlayerId`: `str` *(required)*
-- `StageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisconnectPlayerRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "PlayerId": ...,
+    "StageName": ...,
+}
 
-Returns
-[DisconnectPlayerResultTypeDef](./type_defs.md#disconnectplayerresulttypedef).
+parent.disconnect_player(**kwargs)
+```
 
-<a id="export\_snapshot"></a>
+1. See [:material-code-braces: DisconnectPlayerRequestRequestTypeDef](./type_defs.md#disconnectplayerrequestrequesttypedef) 
 
-### export_snapshot
+### export\_snapshot
 
 Exports a game configuration snapshot.
 
-Type annotations for `boto3.client("gamesparks").export_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").export_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.export_snapshot)
 
-Boto3 documentation:
-[GameSparks.Client.export_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.export_snapshot)
+```python title="Method definition"
+def export_snapshot(
+    self,
+    *,
+    GameName: str,
+    SnapshotId: str,
+) -> ExportSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportSnapshotRequestRequestTypeDef](./type_defs.md#exportsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExportSnapshotRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[ExportSnapshotResultTypeDef](./type_defs.md#exportsnapshotresulttypedef).
+parent.export_snapshot(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportSnapshotRequestRequestTypeDef](./type_defs.md#exportsnapshotrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("gamesparks").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GameSparks.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_extension"></a>
-
-### get_extension
+### get\_extension
 
 Gets details about a specified extension.
 
-Type annotations for `boto3.client("gamesparks").get_extension` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_extension)
 
-Boto3 documentation:
-[GameSparks.Client.get_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_extension)
+```python title="Method definition"
+def get_extension(
+    self,
+    *,
+    Name: str,
+    Namespace: str,
+) -> GetExtensionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExtensionRequestRequestTypeDef](./type_defs.md#getextensionrequestrequesttypedef).
+1. See [:material-code-braces: GetExtensionResultTypeDef](./type_defs.md#getextensionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExtensionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Namespace": ...,
+}
 
-Returns [GetExtensionResultTypeDef](./type_defs.md#getextensionresulttypedef).
+parent.get_extension(**kwargs)
+```
 
-<a id="get\_extension\_version"></a>
+1. See [:material-code-braces: GetExtensionRequestRequestTypeDef](./type_defs.md#getextensionrequestrequesttypedef) 
 
-### get_extension_version
+### get\_extension\_version
 
 Gets details about a specified extension version.
 
-Type annotations for `boto3.client("gamesparks").get_extension_version` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_extension_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_extension_version)
 
-Boto3 documentation:
-[GameSparks.Client.get_extension_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_extension_version)
+```python title="Method definition"
+def get_extension_version(
+    self,
+    *,
+    ExtensionVersion: str,
+    Name: str,
+    Namespace: str,
+) -> GetExtensionVersionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExtensionVersionRequestRequestTypeDef](./type_defs.md#getextensionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetExtensionVersionResultTypeDef](./type_defs.md#getextensionversionresulttypedef) 
 
-Keyword-only arguments:
 
-- `ExtensionVersion`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Namespace`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExtensionVersionRequestRequestTypeDef = {  # (1)
+    "ExtensionVersion": ...,
+    "Name": ...,
+    "Namespace": ...,
+}
 
-Returns
-[GetExtensionVersionResultTypeDef](./type_defs.md#getextensionversionresulttypedef).
+parent.get_extension_version(**kwargs)
+```
 
-<a id="get\_game"></a>
+1. See [:material-code-braces: GetExtensionVersionRequestRequestTypeDef](./type_defs.md#getextensionversionrequestrequesttypedef) 
 
-### get_game
+### get\_game
 
 Gets details about a game.
 
-Type annotations for `boto3.client("gamesparks").get_game` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_game` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_game)
 
-Boto3 documentation:
-[GameSparks.Client.get_game](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_game)
+```python title="Method definition"
+def get_game(
+    self,
+    *,
+    GameName: str,
+) -> GetGameResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGameRequestRequestTypeDef](./type_defs.md#getgamerequestrequesttypedef).
+1. See [:material-code-braces: GetGameResultTypeDef](./type_defs.md#getgameresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGameRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns [GetGameResultTypeDef](./type_defs.md#getgameresulttypedef).
+parent.get_game(**kwargs)
+```
 
-<a id="get\_game\_configuration"></a>
+1. See [:material-code-braces: GetGameRequestRequestTypeDef](./type_defs.md#getgamerequestrequesttypedef) 
 
-### get_game_configuration
+### get\_game\_configuration
 
 Gets the configuration of the game.
 
-Type annotations for `boto3.client("gamesparks").get_game_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_game_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_game_configuration)
 
-Boto3 documentation:
-[GameSparks.Client.get_game_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_game_configuration)
+```python title="Method definition"
+def get_game_configuration(
+    self,
+    *,
+    GameName: str,
+    Sections: Sequence[str] = ...,
+) -> GetGameConfigurationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGameConfigurationRequestRequestTypeDef](./type_defs.md#getgameconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetGameConfigurationResultTypeDef](./type_defs.md#getgameconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Sections`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetGameConfigurationRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns
-[GetGameConfigurationResultTypeDef](./type_defs.md#getgameconfigurationresulttypedef).
+parent.get_game_configuration(**kwargs)
+```
 
-<a id="get\_generated\_code\_job"></a>
+1. See [:material-code-braces: GetGameConfigurationRequestRequestTypeDef](./type_defs.md#getgameconfigurationrequestrequesttypedef) 
 
-### get_generated_code_job
+### get\_generated\_code\_job
 
 Gets details about a job that is generating code for a snapshot.
 
-Type annotations for `boto3.client("gamesparks").get_generated_code_job`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_generated_code_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_generated_code_job)
 
-Boto3 documentation:
-[GameSparks.Client.get_generated_code_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_generated_code_job)
+```python title="Method definition"
+def get_generated_code_job(
+    self,
+    *,
+    GameName: str,
+    JobId: str,
+    SnapshotId: str,
+) -> GetGeneratedCodeJobResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGeneratedCodeJobRequestRequestTypeDef](./type_defs.md#getgeneratedcodejobrequestrequesttypedef).
+1. See [:material-code-braces: GetGeneratedCodeJobResultTypeDef](./type_defs.md#getgeneratedcodejobresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGeneratedCodeJobRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "JobId": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[GetGeneratedCodeJobResultTypeDef](./type_defs.md#getgeneratedcodejobresulttypedef).
+parent.get_generated_code_job(**kwargs)
+```
 
-<a id="get\_player\_connection\_status"></a>
+1. See [:material-code-braces: GetGeneratedCodeJobRequestRequestTypeDef](./type_defs.md#getgeneratedcodejobrequestrequesttypedef) 
 
-### get_player_connection_status
+### get\_player\_connection\_status
 
 Gets the status of a player's connection to the game runtime.
 
-Type annotations for `boto3.client("gamesparks").get_player_connection_status`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_player_connection_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_player_connection_status)
 
-Boto3 documentation:
-[GameSparks.Client.get_player_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_player_connection_status)
+```python title="Method definition"
+def get_player_connection_status(
+    self,
+    *,
+    GameName: str,
+    PlayerId: str,
+    StageName: str,
+) -> GetPlayerConnectionStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPlayerConnectionStatusRequestRequestTypeDef](./type_defs.md#getplayerconnectionstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetPlayerConnectionStatusResultTypeDef](./type_defs.md#getplayerconnectionstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `PlayerId`: `str` *(required)*
-- `StageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPlayerConnectionStatusRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "PlayerId": ...,
+    "StageName": ...,
+}
 
-Returns
-[GetPlayerConnectionStatusResultTypeDef](./type_defs.md#getplayerconnectionstatusresulttypedef).
+parent.get_player_connection_status(**kwargs)
+```
 
-<a id="get\_snapshot"></a>
+1. See [:material-code-braces: GetPlayerConnectionStatusRequestRequestTypeDef](./type_defs.md#getplayerconnectionstatusrequestrequesttypedef) 
 
-### get_snapshot
+### get\_snapshot
 
 Gets a copy of the game configuration in a snapshot.
 
-Type annotations for `boto3.client("gamesparks").get_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_snapshot)
 
-Boto3 documentation:
-[GameSparks.Client.get_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_snapshot)
+```python title="Method definition"
+def get_snapshot(
+    self,
+    *,
+    GameName: str,
+    SnapshotId: str,
+    Sections: Sequence[str] = ...,
+) -> GetSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSnapshotRequestRequestTypeDef](./type_defs.md#getsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: GetSnapshotResultTypeDef](./type_defs.md#getsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `Sections`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetSnapshotRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "SnapshotId": ...,
+}
 
-Returns [GetSnapshotResultTypeDef](./type_defs.md#getsnapshotresulttypedef).
+parent.get_snapshot(**kwargs)
+```
 
-<a id="get\_stage"></a>
+1. See [:material-code-braces: GetSnapshotRequestRequestTypeDef](./type_defs.md#getsnapshotrequestrequesttypedef) 
 
-### get_stage
+### get\_stage
 
 Gets information about a stage.
 
-Type annotations for `boto3.client("gamesparks").get_stage` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_stage)
 
-Boto3 documentation:
-[GameSparks.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_stage)
+```python title="Method definition"
+def get_stage(
+    self,
+    *,
+    GameName: str,
+    StageName: str,
+) -> GetStageResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStageRequestRequestTypeDef](./type_defs.md#getstagerequestrequesttypedef).
+1. See [:material-code-braces: GetStageResultTypeDef](./type_defs.md#getstageresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `StageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStageRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "StageName": ...,
+}
 
-Returns [GetStageResultTypeDef](./type_defs.md#getstageresulttypedef).
+parent.get_stage(**kwargs)
+```
 
-<a id="get\_stage\_deployment"></a>
+1. See [:material-code-braces: GetStageRequestRequestTypeDef](./type_defs.md#getstagerequestrequesttypedef) 
 
-### get_stage_deployment
+### get\_stage\_deployment
 
 Gets information about a stage deployment.
 
-Type annotations for `boto3.client("gamesparks").get_stage_deployment` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_stage_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_stage_deployment)
 
-Boto3 documentation:
-[GameSparks.Client.get_stage_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.get_stage_deployment)
+```python title="Method definition"
+def get_stage_deployment(
+    self,
+    *,
+    GameName: str,
+    StageName: str,
+    DeploymentId: str = ...,
+) -> GetStageDeploymentResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStageDeploymentRequestRequestTypeDef](./type_defs.md#getstagedeploymentrequestrequesttypedef).
+1. See [:material-code-braces: GetStageDeploymentResultTypeDef](./type_defs.md#getstagedeploymentresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `StageName`: `str` *(required)*
-- `DeploymentId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStageDeploymentRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "StageName": ...,
+}
 
-Returns
-[GetStageDeploymentResultTypeDef](./type_defs.md#getstagedeploymentresulttypedef).
+parent.get_stage_deployment(**kwargs)
+```
 
-<a id="import\_game\_configuration"></a>
+1. See [:material-code-braces: GetStageDeploymentRequestRequestTypeDef](./type_defs.md#getstagedeploymentrequestrequesttypedef) 
 
-### import_game_configuration
+### import\_game\_configuration
 
 Imports a game configuration.
 
-Type annotations for `boto3.client("gamesparks").import_game_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").import_game_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.import_game_configuration)
 
-Boto3 documentation:
-[GameSparks.Client.import_game_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.import_game_configuration)
+```python title="Method definition"
+def import_game_configuration(
+    self,
+    *,
+    GameName: str,
+    ImportSource: ImportGameConfigurationSourceTypeDef,  # (1)
+) -> ImportGameConfigurationResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportGameConfigurationRequestRequestTypeDef](./type_defs.md#importgameconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ImportGameConfigurationSourceTypeDef](./type_defs.md#importgameconfigurationsourcetypedef) 
+2. See [:material-code-braces: ImportGameConfigurationResultTypeDef](./type_defs.md#importgameconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `ImportSource`:
-  [ImportGameConfigurationSourceTypeDef](./type_defs.md#importgameconfigurationsourcetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ImportGameConfigurationRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "ImportSource": ...,
+}
 
-Returns
-[ImportGameConfigurationResultTypeDef](./type_defs.md#importgameconfigurationresulttypedef).
+parent.import_game_configuration(**kwargs)
+```
 
-<a id="list\_extension\_versions"></a>
+1. See [:material-code-braces: ImportGameConfigurationRequestRequestTypeDef](./type_defs.md#importgameconfigurationrequestrequesttypedef) 
 
-### list_extension_versions
+### list\_extension\_versions
 
 Gets a paginated list of available versions for the extension.
 
-Type annotations for `boto3.client("gamesparks").list_extension_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_extension_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_extension_versions)
 
-Boto3 documentation:
-[GameSparks.Client.list_extension_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_extension_versions)
+```python title="Method definition"
+def list_extension_versions(
+    self,
+    *,
+    Name: str,
+    Namespace: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListExtensionVersionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExtensionVersionsRequestRequestTypeDef](./type_defs.md#listextensionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListExtensionVersionsResultTypeDef](./type_defs.md#listextensionversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Namespace`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExtensionVersionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Namespace": ...,
+}
 
-Returns
-[ListExtensionVersionsResultTypeDef](./type_defs.md#listextensionversionsresulttypedef).
+parent.list_extension_versions(**kwargs)
+```
 
-<a id="list\_extensions"></a>
+1. See [:material-code-braces: ListExtensionVersionsRequestRequestTypeDef](./type_defs.md#listextensionversionsrequestrequesttypedef) 
 
-### list_extensions
+### list\_extensions
 
 Gets a paginated list of available extensions.
 
-Type annotations for `boto3.client("gamesparks").list_extensions` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_extensions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_extensions)
 
-Boto3 documentation:
-[GameSparks.Client.list_extensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_extensions)
+```python title="Method definition"
+def list_extensions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListExtensionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExtensionsRequestRequestTypeDef](./type_defs.md#listextensionsrequestrequesttypedef).
+1. See [:material-code-braces: ListExtensionsResultTypeDef](./type_defs.md#listextensionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExtensionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListExtensionsResultTypeDef](./type_defs.md#listextensionsresulttypedef).
+parent.list_extensions(**kwargs)
+```
 
-<a id="list\_games"></a>
+1. See [:material-code-braces: ListExtensionsRequestRequestTypeDef](./type_defs.md#listextensionsrequestrequesttypedef) 
 
-### list_games
+### list\_games
 
 Gets a paginated list of games.
 
-Type annotations for `boto3.client("gamesparks").list_games` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_games` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_games)
 
-Boto3 documentation:
-[GameSparks.Client.list_games](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_games)
+```python title="Method definition"
+def list_games(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListGamesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGamesRequestRequestTypeDef](./type_defs.md#listgamesrequestrequesttypedef).
+1. See [:material-code-braces: ListGamesResultTypeDef](./type_defs.md#listgamesresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGamesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListGamesResultTypeDef](./type_defs.md#listgamesresulttypedef).
+parent.list_games(**kwargs)
+```
 
-<a id="list\_generated\_code\_jobs"></a>
+1. See [:material-code-braces: ListGamesRequestRequestTypeDef](./type_defs.md#listgamesrequestrequesttypedef) 
 
-### list_generated_code_jobs
+### list\_generated\_code\_jobs
 
 Gets a paginated list of code generation jobs for a snapshot.
 
-Type annotations for `boto3.client("gamesparks").list_generated_code_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_generated_code_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_generated_code_jobs)
 
-Boto3 documentation:
-[GameSparks.Client.list_generated_code_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_generated_code_jobs)
+```python title="Method definition"
+def list_generated_code_jobs(
+    self,
+    *,
+    GameName: str,
+    SnapshotId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListGeneratedCodeJobsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGeneratedCodeJobsRequestRequestTypeDef](./type_defs.md#listgeneratedcodejobsrequestrequesttypedef).
+1. See [:material-code-braces: ListGeneratedCodeJobsResultTypeDef](./type_defs.md#listgeneratedcodejobsresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGeneratedCodeJobsRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[ListGeneratedCodeJobsResultTypeDef](./type_defs.md#listgeneratedcodejobsresulttypedef).
+parent.list_generated_code_jobs(**kwargs)
+```
 
-<a id="list\_snapshots"></a>
+1. See [:material-code-braces: ListGeneratedCodeJobsRequestRequestTypeDef](./type_defs.md#listgeneratedcodejobsrequestrequesttypedef) 
 
-### list_snapshots
+### list\_snapshots
 
 Gets a paginated list of snapshot summaries from the game.
 
-Type annotations for `boto3.client("gamesparks").list_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_snapshots)
 
-Boto3 documentation:
-[GameSparks.Client.list_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_snapshots)
+```python title="Method definition"
+def list_snapshots(
+    self,
+    *,
+    GameName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListSnapshotsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSnapshotsRequestRequestTypeDef](./type_defs.md#listsnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: ListSnapshotsResultTypeDef](./type_defs.md#listsnapshotsresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSnapshotsRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns
-[ListSnapshotsResultTypeDef](./type_defs.md#listsnapshotsresulttypedef).
+parent.list_snapshots(**kwargs)
+```
 
-<a id="list\_stage\_deployments"></a>
+1. See [:material-code-braces: ListSnapshotsRequestRequestTypeDef](./type_defs.md#listsnapshotsrequestrequesttypedef) 
 
-### list_stage_deployments
+### list\_stage\_deployments
 
 Gets a paginated list of stage deployment summaries from the game.
 
-Type annotations for `boto3.client("gamesparks").list_stage_deployments`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_stage_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_stage_deployments)
 
-Boto3 documentation:
-[GameSparks.Client.list_stage_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_stage_deployments)
+```python title="Method definition"
+def list_stage_deployments(
+    self,
+    *,
+    GameName: str,
+    StageName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListStageDeploymentsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStageDeploymentsRequestRequestTypeDef](./type_defs.md#liststagedeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: ListStageDeploymentsResultTypeDef](./type_defs.md#liststagedeploymentsresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `StageName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStageDeploymentsRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "StageName": ...,
+}
 
-Returns
-[ListStageDeploymentsResultTypeDef](./type_defs.md#liststagedeploymentsresulttypedef).
+parent.list_stage_deployments(**kwargs)
+```
 
-<a id="list\_stages"></a>
+1. See [:material-code-braces: ListStageDeploymentsRequestRequestTypeDef](./type_defs.md#liststagedeploymentsrequestrequesttypedef) 
 
-### list_stages
+### list\_stages
 
 Gets a paginated list of stage summaries from the game.
 
-Type annotations for `boto3.client("gamesparks").list_stages` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_stages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_stages)
 
-Boto3 documentation:
-[GameSparks.Client.list_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_stages)
+```python title="Method definition"
+def list_stages(
+    self,
+    *,
+    GameName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListStagesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStagesRequestRequestTypeDef](./type_defs.md#liststagesrequestrequesttypedef).
+1. See [:material-code-braces: ListStagesResultTypeDef](./type_defs.md#liststagesresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStagesRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns [ListStagesResultTypeDef](./type_defs.md#liststagesresulttypedef).
+parent.list_stages(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStagesRequestRequestTypeDef](./type_defs.md#liststagesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags associated with a GameSparks resource.
 
-Type annotations for `boto3.client("gamesparks").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GameSparks.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_generated\_code\_job"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_generated_code_job
+### start\_generated\_code\_job
 
-Starts an asynchronous process that generates client code for system-defined
-and custom messages.
+Starts an asynchronous process that generates client code for system-defined and
+custom messages.
 
-Type annotations for `boto3.client("gamesparks").start_generated_code_job`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").start_generated_code_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.start_generated_code_job)
 
-Boto3 documentation:
-[GameSparks.Client.start_generated_code_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.start_generated_code_job)
+```python title="Method definition"
+def start_generated_code_job(
+    self,
+    *,
+    GameName: str,
+    Generator: GeneratorTypeDef,  # (1)
+    SnapshotId: str,
+) -> StartGeneratedCodeJobResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartGeneratedCodeJobRequestRequestTypeDef](./type_defs.md#startgeneratedcodejobrequestrequesttypedef).
+1. See [:material-code-braces: GeneratorTypeDef](./type_defs.md#generatortypedef) 
+2. See [:material-code-braces: StartGeneratedCodeJobResultTypeDef](./type_defs.md#startgeneratedcodejobresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Generator`: [GeneratorTypeDef](./type_defs.md#generatortypedef) *(required)*
-- `SnapshotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartGeneratedCodeJobRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "Generator": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[StartGeneratedCodeJobResultTypeDef](./type_defs.md#startgeneratedcodejobresulttypedef).
+parent.start_generated_code_job(**kwargs)
+```
 
-<a id="start\_stage\_deployment"></a>
+1. See [:material-code-braces: StartGeneratedCodeJobRequestRequestTypeDef](./type_defs.md#startgeneratedcodejobrequestrequesttypedef) 
 
-### start_stage_deployment
+### start\_stage\_deployment
 
 Deploys a snapshot to the stage and creates a new game runtime.
 
-Type annotations for `boto3.client("gamesparks").start_stage_deployment`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").start_stage_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.start_stage_deployment)
 
-Boto3 documentation:
-[GameSparks.Client.start_stage_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.start_stage_deployment)
+```python title="Method definition"
+def start_stage_deployment(
+    self,
+    *,
+    GameName: str,
+    SnapshotId: str,
+    StageName: str,
+    ClientToken: str = ...,
+) -> StartStageDeploymentResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartStageDeploymentRequestRequestTypeDef](./type_defs.md#startstagedeploymentrequestrequesttypedef).
+1. See [:material-code-braces: StartStageDeploymentResultTypeDef](./type_defs.md#startstagedeploymentresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `StageName`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartStageDeploymentRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "SnapshotId": ...,
+    "StageName": ...,
+}
 
-Returns
-[StartStageDeploymentResultTypeDef](./type_defs.md#startstagedeploymentresulttypedef).
+parent.start_stage_deployment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartStageDeploymentRequestRequestTypeDef](./type_defs.md#startstagedeploymentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a GameSparks resource.
 
-Type annotations for `boto3.client("gamesparks").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.tag_resource)
 
-Boto3 documentation:
-[GameSparks.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a GameSparks resource.
 
-Type annotations for `boto3.client("gamesparks").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.untag_resource)
 
-Boto3 documentation:
-[GameSparks.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_game"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_game
+### update\_game
 
 Updates details of the game.
 
-Type annotations for `boto3.client("gamesparks").update_game` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").update_game` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_game)
 
-Boto3 documentation:
-[GameSparks.Client.update_game](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_game)
+```python title="Method definition"
+def update_game(
+    self,
+    *,
+    GameName: str,
+    Description: str = ...,
+) -> UpdateGameResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameRequestRequestTypeDef](./type_defs.md#updategamerequestrequesttypedef).
+1. See [:material-code-braces: UpdateGameResultTypeDef](./type_defs.md#updategameresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGameRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+}
 
-Returns [UpdateGameResultTypeDef](./type_defs.md#updategameresulttypedef).
+parent.update_game(**kwargs)
+```
 
-<a id="update\_game\_configuration"></a>
+1. See [:material-code-braces: UpdateGameRequestRequestTypeDef](./type_defs.md#updategamerequestrequesttypedef) 
 
-### update_game_configuration
+### update\_game\_configuration
 
 Updates one or more sections of the game configuration.
 
-Type annotations for `boto3.client("gamesparks").update_game_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").update_game_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_game_configuration)
 
-Boto3 documentation:
-[GameSparks.Client.update_game_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_game_configuration)
+```python title="Method definition"
+def update_game_configuration(
+    self,
+    *,
+    GameName: str,
+    Modifications: Sequence[SectionModificationTypeDef],  # (1)
+) -> UpdateGameConfigurationResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGameConfigurationRequestRequestTypeDef](./type_defs.md#updategameconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: SectionModificationTypeDef](./type_defs.md#sectionmodificationtypedef) 
+2. See [:material-code-braces: UpdateGameConfigurationResultTypeDef](./type_defs.md#updategameconfigurationresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `Modifications`:
-  `Sequence`\[[SectionModificationTypeDef](./type_defs.md#sectionmodificationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateGameConfigurationRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "Modifications": ...,
+}
 
-Returns
-[UpdateGameConfigurationResultTypeDef](./type_defs.md#updategameconfigurationresulttypedef).
+parent.update_game_configuration(**kwargs)
+```
 
-<a id="update\_snapshot"></a>
+1. See [:material-code-braces: UpdateGameConfigurationRequestRequestTypeDef](./type_defs.md#updategameconfigurationrequestrequesttypedef) 
 
-### update_snapshot
+### update\_snapshot
 
 Updates the metadata of a GameSparks snapshot.
 
-Type annotations for `boto3.client("gamesparks").update_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").update_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_snapshot)
 
-Boto3 documentation:
-[GameSparks.Client.update_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_snapshot)
+```python title="Method definition"
+def update_snapshot(
+    self,
+    *,
+    GameName: str,
+    SnapshotId: str,
+    Description: str = ...,
+) -> UpdateSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSnapshotRequestRequestTypeDef](./type_defs.md#updatesnapshotrequestrequesttypedef).
+1. See [:material-code-braces: UpdateSnapshotResultTypeDef](./type_defs.md#updatesnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `SnapshotId`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSnapshotRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "SnapshotId": ...,
+}
 
-Returns
-[UpdateSnapshotResultTypeDef](./type_defs.md#updatesnapshotresulttypedef).
+parent.update_snapshot(**kwargs)
+```
 
-<a id="update\_stage"></a>
+1. See [:material-code-braces: UpdateSnapshotRequestRequestTypeDef](./type_defs.md#updatesnapshotrequestrequesttypedef) 
 
-### update_stage
+### update\_stage
 
 Updates the metadata of a stage.
 
-Type annotations for `boto3.client("gamesparks").update_stage` method.
+Type annotations and code completion for `#!python boto3.client("gamesparks").update_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_stage)
 
-Boto3 documentation:
-[GameSparks.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks.Client.update_stage)
+```python title="Method definition"
+def update_stage(
+    self,
+    *,
+    GameName: str,
+    StageName: str,
+    Description: str = ...,
+    Role: str = ...,
+) -> UpdateStageResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStageRequestRequestTypeDef](./type_defs.md#updatestagerequestrequesttypedef).
+1. See [:material-code-braces: UpdateStageResultTypeDef](./type_defs.md#updatestageresulttypedef) 
 
-Keyword-only arguments:
 
-- `GameName`: `str` *(required)*
-- `StageName`: `str` *(required)*
-- `Description`: `str`
-- `Role`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStageRequestRequestTypeDef = {  # (1)
+    "GameName": ...,
+    "StageName": ...,
+}
 
-Returns [UpdateStageResultTypeDef](./type_defs.md#updatestageresulttypedef).
+parent.update_stage(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStageRequestRequestTypeDef](./type_defs.md#updatestagerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("gamesparks").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("gamesparks").get_paginator` method with overloads.
 
-- `client.get_paginator("list_extension_versions")` ->
-  [ListExtensionVersionsPaginator](./paginators.md#listextensionversionspaginator)
-- `client.get_paginator("list_extensions")` ->
-  [ListExtensionsPaginator](./paginators.md#listextensionspaginator)
-- `client.get_paginator("list_games")` ->
-  [ListGamesPaginator](./paginators.md#listgamespaginator)
-- `client.get_paginator("list_generated_code_jobs")` ->
-  [ListGeneratedCodeJobsPaginator](./paginators.md#listgeneratedcodejobspaginator)
-- `client.get_paginator("list_snapshots")` ->
-  [ListSnapshotsPaginator](./paginators.md#listsnapshotspaginator)
-- `client.get_paginator("list_stage_deployments")` ->
-  [ListStageDeploymentsPaginator](./paginators.md#liststagedeploymentspaginator)
-- `client.get_paginator("list_stages")` ->
-  [ListStagesPaginator](./paginators.md#liststagespaginator)
+- `client.get_paginator("list_extension_versions")` -> [ListExtensionVersionsPaginator](./paginators.md#listextensionversionspaginator)
+- `client.get_paginator("list_extensions")` -> [ListExtensionsPaginator](./paginators.md#listextensionspaginator)
+- `client.get_paginator("list_games")` -> [ListGamesPaginator](./paginators.md#listgamespaginator)
+- `client.get_paginator("list_generated_code_jobs")` -> [ListGeneratedCodeJobsPaginator](./paginators.md#listgeneratedcodejobspaginator)
+- `client.get_paginator("list_snapshots")` -> [ListSnapshotsPaginator](./paginators.md#listsnapshotspaginator)
+- `client.get_paginator("list_stage_deployments")` -> [ListStageDeploymentsPaginator](./paginators.md#liststagedeploymentspaginator)
+- `client.get_paginator("list_stages")` -> [ListStagesPaginator](./paginators.md#liststagespaginator)
+
+
+

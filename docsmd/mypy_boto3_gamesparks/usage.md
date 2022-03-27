@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-gamesparks-module"></a>
-
-# Examples for boto3 GameSparks module
+# Examples
 
 > [Index](../README.md) > [GameSparks](./README.md) > Examples
 
-- [Examples for boto3 GameSparks module](#examples-for-boto3-gamesparks-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
+    type annotations stubs module [mypy-boto3-gamesparks](https://pypi.org/project/mypy-boto3-gamesparks/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[gamesparks]` package installed.
 
-Write your `GameSparks` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `GameSparks` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type GameSparksClient
-# and provides type checking and code completion
-client = session.client("gamesparks")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListExtensionVersionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_extension_versions")
-for item in paginator.paginate(...):
-    # item has type ListExtensionVersionsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("gamesparks")  # (1)
+    result = client.create_game()  # (2)
+    ```
+
+    1. client: [GameSparksClient](./client.md)
+    2. result: [:material-code-braces: CreateGameResultTypeDef](./type_defs.md#creategameresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("gamesparks")  # (1)
+
+    paginator = client.get_paginator("list_extension_versions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [GameSparksClient](./client.md)
+    2. paginator: [ListExtensionVersionsPaginator](./paginators.md#listextensionversionspaginator)
+    3. item: [:material-code-braces: ListExtensionVersionsResultTypeDef](./type_defs.md#listextensionversionsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[gamesparks]` or a standalone `mypy_boto3_gamesparks`
-package, you have to explicitly specify `client: GameSparksClient` type
-annotation.
+With `boto3-stubs-lite[gamesparks]`
+or a standalone `mypy_boto3_gamesparks` package, you have to explicitly specify `client: GameSparksClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_gamesparks.client import GameSparksClient
-from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator
-
-from mypy_boto3_gamesparks.literals import PaginatorName
-
-from mypy_boto3_gamesparks.type_defs import bool
-from mypy_boto3_gamesparks.type_defs import ListExtensionVersionsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: GameSparksClient = session.client("gamesparks")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_gamesparks.client import GameSparksClient
+    from mypy_boto3_gamesparks.type_defs import CreateGameResultTypeDef
+    from mypy_boto3_gamesparks.type_defs import CreateGameRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_extension_versions"
-paginator: ListExtensionVersionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListExtensionVersionsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: GameSparksClient = session.client("gamesparks")
+
+    kwargs: CreateGameRequestRequestTypeDef = {...}
+    result: CreateGameResultTypeDef = client.create_game(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_gamesparks.client import GameSparksClient
+    from mypy_boto3_gamesparks.paginator import ListExtensionVersionsPaginator
+    from mypy_boto3_gamesparks.type_defs import ListExtensionVersionsResultTypeDef
+
+
+    session = Session()
+    client: GameSparksClient = session.client("gamesparks")
+
+    paginator: ListExtensionVersionsPaginator = client.get_paginator("list_extension_versions")
+    for item in paginator.paginate(...):
+        item: ListExtensionVersionsResultTypeDef
+        print(item)
+    ```
+
+
+
+

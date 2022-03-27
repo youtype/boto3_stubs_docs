@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-pricing-module"></a>
-
-# Type annotations for boto3 Pricing module
+#  Pricing module
 
 > [Index](../README.md) > Pricing
 
-Auto-generated documentation for
-[Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
-type annotations stubs module
-[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
+!!! note ""
 
-- [Type annotations for boto3 Pricing module](#type-annotations-for-boto3-pricing-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PricingClient](#pricingclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
+    type annotations stubs module [mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Pricing`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[pricing]'
 python -m pip install mypy-boto3-pricing
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,76 +42,60 @@ python -m pip install mypy-boto3-pricing
 python -m pip uninstall -y mypy-boto3-pricing
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="pricingclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PricingClient
 
-Type annotations for `boto3.client("pricing")` as [PricingClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("pricing")` as [PricingClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_pricing.client import PricingClient
+
+def get_client() -> PricingClient:
+    return Session().cleint("pricing")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [describe_services](./client.md#describe_services)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_attribute_values](./client.md#get_attribute_values)
-- [get_paginator](./client.md#get_paginator)
-- [get_products](./client.md#get_products)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-PricingClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ExpiredNextTokenException
-- InternalErrorException
-- InvalidNextTokenException
-- InvalidParameterException
-- NotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("pricing").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("pricing").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_pricing.paginator import DescribeServicesPaginator, ...
+from mypy_boto3_pricing.paginator import DescribeServicesPaginator
+
+def get_describe_services_paginator() -> DescribeServicesPaginator:
+    return Session().client("pricing").get_paginator("describe_services"))
 ```
 
 - [DescribeServicesPaginator](./paginators.md#describeservicespaginator)
 - [GetAttributeValuesPaginator](./paginators.md#getattributevaluespaginator)
 - [GetProductsPaginator](./paginators.md#getproductspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pricing.literals import DescribeServicesPaginatorName
 
-```python
-from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
+def get_value() -> DescribeServicesPaginatorName:
+    return "describe_services"
 ```
 
 - [DescribeServicesPaginatorName](./literals.md#describeservicespaginatorname)
@@ -144,28 +106,36 @@ from mypy_boto3_pricing.literals import DescribeServicesPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pricing.type_defs import AttributeValueTypeDef
 
-```python
-from mypy_boto3_pricing.type_defs import AttributeValueTypeDef, ...
+def get_value() -> AttributeValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
 - [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- [DescribeServicesRequestDescribeServicesPaginateTypeDef](./type_defs.md#describeservicesrequestdescribeservicespaginatetypedef)
 - [DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef)
 - [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)
 - [FilterTypeDef](./type_defs.md#filtertypedef)
+- [GetAttributeValuesRequestGetAttributeValuesPaginateTypeDef](./type_defs.md#getattributevaluesrequestgetattributevaluespaginatetypedef)
 - [GetAttributeValuesRequestRequestTypeDef](./type_defs.md#getattributevaluesrequestrequesttypedef)
 - [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef)
+- [GetProductsRequestGetProductsPaginateTypeDef](./type_defs.md#getproductsrequestgetproductspaginatetypedef)
 - [GetProductsRequestRequestTypeDef](./type_defs.md#getproductsrequestrequesttypedef)
 - [GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ServiceTypeDef](./type_defs.md#servicetypedef)
+

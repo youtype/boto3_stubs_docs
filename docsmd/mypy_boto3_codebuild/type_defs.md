@@ -1,2488 +1,3273 @@
-<a id="typed-dictionaries-for-boto3-codebuild-module"></a>
-
-# Typed dictionaries for boto3 CodeBuild module
+# Typed dictionaries
 
 > [Index](../README.md) > [CodeBuild](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
-type annotations stubs module
-[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CodeBuild module](#typed-dictionaries-for-boto3-codebuild-module)
-  - [BatchDeleteBuildsInputRequestTypeDef](#batchdeletebuildsinputrequesttypedef)
-  - [BatchDeleteBuildsOutputTypeDef](#batchdeletebuildsoutputtypedef)
-  - [BatchGetBuildBatchesInputRequestTypeDef](#batchgetbuildbatchesinputrequesttypedef)
-  - [BatchGetBuildBatchesOutputTypeDef](#batchgetbuildbatchesoutputtypedef)
-  - [BatchGetBuildsInputRequestTypeDef](#batchgetbuildsinputrequesttypedef)
-  - [BatchGetBuildsOutputTypeDef](#batchgetbuildsoutputtypedef)
-  - [BatchGetProjectsInputRequestTypeDef](#batchgetprojectsinputrequesttypedef)
-  - [BatchGetProjectsOutputTypeDef](#batchgetprojectsoutputtypedef)
-  - [BatchGetReportGroupsInputRequestTypeDef](#batchgetreportgroupsinputrequesttypedef)
-  - [BatchGetReportGroupsOutputTypeDef](#batchgetreportgroupsoutputtypedef)
-  - [BatchGetReportsInputRequestTypeDef](#batchgetreportsinputrequesttypedef)
-  - [BatchGetReportsOutputTypeDef](#batchgetreportsoutputtypedef)
-  - [BatchRestrictionsTypeDef](#batchrestrictionstypedef)
-  - [BuildArtifactsTypeDef](#buildartifactstypedef)
-  - [BuildBatchFilterTypeDef](#buildbatchfiltertypedef)
-  - [BuildBatchPhaseTypeDef](#buildbatchphasetypedef)
-  - [BuildBatchTypeDef](#buildbatchtypedef)
-  - [BuildGroupTypeDef](#buildgrouptypedef)
-  - [BuildNotDeletedTypeDef](#buildnotdeletedtypedef)
-  - [BuildPhaseTypeDef](#buildphasetypedef)
-  - [BuildStatusConfigTypeDef](#buildstatusconfigtypedef)
-  - [BuildSummaryTypeDef](#buildsummarytypedef)
-  - [BuildTypeDef](#buildtypedef)
-  - [CloudWatchLogsConfigTypeDef](#cloudwatchlogsconfigtypedef)
-  - [CodeCoverageReportSummaryTypeDef](#codecoveragereportsummarytypedef)
-  - [CodeCoverageTypeDef](#codecoveragetypedef)
-  - [CreateProjectInputRequestTypeDef](#createprojectinputrequesttypedef)
-  - [CreateProjectOutputTypeDef](#createprojectoutputtypedef)
-  - [CreateReportGroupInputRequestTypeDef](#createreportgroupinputrequesttypedef)
-  - [CreateReportGroupOutputTypeDef](#createreportgroupoutputtypedef)
-  - [CreateWebhookInputRequestTypeDef](#createwebhookinputrequesttypedef)
-  - [CreateWebhookOutputTypeDef](#createwebhookoutputtypedef)
-  - [DebugSessionTypeDef](#debugsessiontypedef)
-  - [DeleteBuildBatchInputRequestTypeDef](#deletebuildbatchinputrequesttypedef)
-  - [DeleteBuildBatchOutputTypeDef](#deletebuildbatchoutputtypedef)
-  - [DeleteProjectInputRequestTypeDef](#deleteprojectinputrequesttypedef)
-  - [DeleteReportGroupInputRequestTypeDef](#deletereportgroupinputrequesttypedef)
-  - [DeleteReportInputRequestTypeDef](#deletereportinputrequesttypedef)
-  - [DeleteResourcePolicyInputRequestTypeDef](#deleteresourcepolicyinputrequesttypedef)
-  - [DeleteSourceCredentialsInputRequestTypeDef](#deletesourcecredentialsinputrequesttypedef)
-  - [DeleteSourceCredentialsOutputTypeDef](#deletesourcecredentialsoutputtypedef)
-  - [DeleteWebhookInputRequestTypeDef](#deletewebhookinputrequesttypedef)
-  - [DescribeCodeCoveragesInputRequestTypeDef](#describecodecoveragesinputrequesttypedef)
-  - [DescribeCodeCoveragesOutputTypeDef](#describecodecoveragesoutputtypedef)
-  - [DescribeTestCasesInputRequestTypeDef](#describetestcasesinputrequesttypedef)
-  - [DescribeTestCasesOutputTypeDef](#describetestcasesoutputtypedef)
-  - [EnvironmentImageTypeDef](#environmentimagetypedef)
-  - [EnvironmentLanguageTypeDef](#environmentlanguagetypedef)
-  - [EnvironmentPlatformTypeDef](#environmentplatformtypedef)
-  - [EnvironmentVariableTypeDef](#environmentvariabletypedef)
-  - [ExportedEnvironmentVariableTypeDef](#exportedenvironmentvariabletypedef)
-  - [GetReportGroupTrendInputRequestTypeDef](#getreportgrouptrendinputrequesttypedef)
-  - [GetReportGroupTrendOutputTypeDef](#getreportgrouptrendoutputtypedef)
-  - [GetResourcePolicyInputRequestTypeDef](#getresourcepolicyinputrequesttypedef)
-  - [GetResourcePolicyOutputTypeDef](#getresourcepolicyoutputtypedef)
-  - [GitSubmodulesConfigTypeDef](#gitsubmodulesconfigtypedef)
-  - [ImportSourceCredentialsInputRequestTypeDef](#importsourcecredentialsinputrequesttypedef)
-  - [ImportSourceCredentialsOutputTypeDef](#importsourcecredentialsoutputtypedef)
-  - [InvalidateProjectCacheInputRequestTypeDef](#invalidateprojectcacheinputrequesttypedef)
-  - [ListBuildBatchesForProjectInputRequestTypeDef](#listbuildbatchesforprojectinputrequesttypedef)
-  - [ListBuildBatchesForProjectOutputTypeDef](#listbuildbatchesforprojectoutputtypedef)
-  - [ListBuildBatchesInputRequestTypeDef](#listbuildbatchesinputrequesttypedef)
-  - [ListBuildBatchesOutputTypeDef](#listbuildbatchesoutputtypedef)
-  - [ListBuildsForProjectInputRequestTypeDef](#listbuildsforprojectinputrequesttypedef)
-  - [ListBuildsForProjectOutputTypeDef](#listbuildsforprojectoutputtypedef)
-  - [ListBuildsInputRequestTypeDef](#listbuildsinputrequesttypedef)
-  - [ListBuildsOutputTypeDef](#listbuildsoutputtypedef)
-  - [ListCuratedEnvironmentImagesOutputTypeDef](#listcuratedenvironmentimagesoutputtypedef)
-  - [ListProjectsInputRequestTypeDef](#listprojectsinputrequesttypedef)
-  - [ListProjectsOutputTypeDef](#listprojectsoutputtypedef)
-  - [ListReportGroupsInputRequestTypeDef](#listreportgroupsinputrequesttypedef)
-  - [ListReportGroupsOutputTypeDef](#listreportgroupsoutputtypedef)
-  - [ListReportsForReportGroupInputRequestTypeDef](#listreportsforreportgroupinputrequesttypedef)
-  - [ListReportsForReportGroupOutputTypeDef](#listreportsforreportgroupoutputtypedef)
-  - [ListReportsInputRequestTypeDef](#listreportsinputrequesttypedef)
-  - [ListReportsOutputTypeDef](#listreportsoutputtypedef)
-  - [ListSharedProjectsInputRequestTypeDef](#listsharedprojectsinputrequesttypedef)
-  - [ListSharedProjectsOutputTypeDef](#listsharedprojectsoutputtypedef)
-  - [ListSharedReportGroupsInputRequestTypeDef](#listsharedreportgroupsinputrequesttypedef)
-  - [ListSharedReportGroupsOutputTypeDef](#listsharedreportgroupsoutputtypedef)
-  - [ListSourceCredentialsOutputTypeDef](#listsourcecredentialsoutputtypedef)
-  - [LogsConfigTypeDef](#logsconfigtypedef)
-  - [LogsLocationTypeDef](#logslocationtypedef)
-  - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PhaseContextTypeDef](#phasecontexttypedef)
-  - [ProjectArtifactsTypeDef](#projectartifactstypedef)
-  - [ProjectBadgeTypeDef](#projectbadgetypedef)
-  - [ProjectBuildBatchConfigTypeDef](#projectbuildbatchconfigtypedef)
-  - [ProjectCacheTypeDef](#projectcachetypedef)
-  - [ProjectEnvironmentTypeDef](#projectenvironmenttypedef)
-  - [ProjectFileSystemLocationTypeDef](#projectfilesystemlocationtypedef)
-  - [ProjectSourceTypeDef](#projectsourcetypedef)
-  - [ProjectSourceVersionTypeDef](#projectsourceversiontypedef)
-  - [ProjectTypeDef](#projecttypedef)
-  - [PutResourcePolicyInputRequestTypeDef](#putresourcepolicyinputrequesttypedef)
-  - [PutResourcePolicyOutputTypeDef](#putresourcepolicyoutputtypedef)
-  - [RegistryCredentialTypeDef](#registrycredentialtypedef)
-  - [ReportExportConfigTypeDef](#reportexportconfigtypedef)
-  - [ReportFilterTypeDef](#reportfiltertypedef)
-  - [ReportGroupTrendStatsTypeDef](#reportgrouptrendstatstypedef)
-  - [ReportGroupTypeDef](#reportgrouptypedef)
-  - [ReportTypeDef](#reporttypedef)
-  - [ReportWithRawDataTypeDef](#reportwithrawdatatypedef)
-  - [ResolvedArtifactTypeDef](#resolvedartifacttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetryBuildBatchInputRequestTypeDef](#retrybuildbatchinputrequesttypedef)
-  - [RetryBuildBatchOutputTypeDef](#retrybuildbatchoutputtypedef)
-  - [RetryBuildInputRequestTypeDef](#retrybuildinputrequesttypedef)
-  - [RetryBuildOutputTypeDef](#retrybuildoutputtypedef)
-  - [S3LogsConfigTypeDef](#s3logsconfigtypedef)
-  - [S3ReportExportConfigTypeDef](#s3reportexportconfigtypedef)
-  - [SourceAuthTypeDef](#sourceauthtypedef)
-  - [SourceCredentialsInfoTypeDef](#sourcecredentialsinfotypedef)
-  - [StartBuildBatchInputRequestTypeDef](#startbuildbatchinputrequesttypedef)
-  - [StartBuildBatchOutputTypeDef](#startbuildbatchoutputtypedef)
-  - [StartBuildInputRequestTypeDef](#startbuildinputrequesttypedef)
-  - [StartBuildOutputTypeDef](#startbuildoutputtypedef)
-  - [StopBuildBatchInputRequestTypeDef](#stopbuildbatchinputrequesttypedef)
-  - [StopBuildBatchOutputTypeDef](#stopbuildbatchoutputtypedef)
-  - [StopBuildInputRequestTypeDef](#stopbuildinputrequesttypedef)
-  - [StopBuildOutputTypeDef](#stopbuildoutputtypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TestCaseFilterTypeDef](#testcasefiltertypedef)
-  - [TestCaseTypeDef](#testcasetypedef)
-  - [TestReportSummaryTypeDef](#testreportsummarytypedef)
-  - [UpdateProjectInputRequestTypeDef](#updateprojectinputrequesttypedef)
-  - [UpdateProjectOutputTypeDef](#updateprojectoutputtypedef)
-  - [UpdateProjectVisibilityInputRequestTypeDef](#updateprojectvisibilityinputrequesttypedef)
-  - [UpdateProjectVisibilityOutputTypeDef](#updateprojectvisibilityoutputtypedef)
-  - [UpdateReportGroupInputRequestTypeDef](#updatereportgroupinputrequesttypedef)
-  - [UpdateReportGroupOutputTypeDef](#updatereportgroupoutputtypedef)
-  - [UpdateWebhookInputRequestTypeDef](#updatewebhookinputrequesttypedef)
-  - [UpdateWebhookOutputTypeDef](#updatewebhookoutputtypedef)
-  - [VpcConfigTypeDef](#vpcconfigtypedef)
-  - [WebhookFilterTypeDef](#webhookfiltertypedef)
-  - [WebhookTypeDef](#webhooktypedef)
-
-<a id="batchdeletebuildsinputrequesttypedef"></a>
+    Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+    type annotations stubs module [mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ## BatchDeleteBuildsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef
+
+def get_value() -> BatchDeleteBuildsInputRequestTypeDef:
+    return {
+        "ids": ...,
+    }
 ```
 
-Required fields:
-
-- `ids`: `Sequence`\[`str`\]
-
-<a id="batchdeletebuildsoutputtypedef"></a>
+```python title="Definition"
+class BatchDeleteBuildsInputRequestTypeDef(TypedDict):
+    ids: Sequence[str],
+```
 
 ## BatchDeleteBuildsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsOutputTypeDef
+
+def get_value() -> BatchDeleteBuildsOutputTypeDef:
+    return {
+        "buildsDeleted": ...,
+        "buildsNotDeleted": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteBuildsOutputTypeDef(TypedDict):
+    buildsDeleted: List[str],
+    buildsNotDeleted: List[BuildNotDeletedTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buildsDeleted`: `List`\[`str`\]
-- `buildsNotDeleted`:
-  `List`\[[BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetbuildbatchesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetBuildBatchesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesInputRequestTypeDef
+
+def get_value() -> BatchGetBuildBatchesInputRequestTypeDef:
+    return {
+        "ids": ...,
+    }
 ```
 
-Required fields:
-
-- `ids`: `Sequence`\[`str`\]
-
-<a id="batchgetbuildbatchesoutputtypedef"></a>
+```python title="Definition"
+class BatchGetBuildBatchesInputRequestTypeDef(TypedDict):
+    ids: Sequence[str],
+```
 
 ## BatchGetBuildBatchesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesOutputTypeDef
+
+def get_value() -> BatchGetBuildBatchesOutputTypeDef:
+    return {
+        "buildBatches": ...,
+        "buildBatchesNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetBuildBatchesOutputTypeDef(TypedDict):
+    buildBatches: List[BuildBatchTypeDef],  # (1)
+    buildBatchesNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buildBatches`:
-  `List`\[[BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)\]
-- `buildBatchesNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetbuildsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildBatchTypeDef](./type_defs.md#buildbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetBuildsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetBuildsInputRequestTypeDef
+
+def get_value() -> BatchGetBuildsInputRequestTypeDef:
+    return {
+        "ids": ...,
+    }
 ```
 
-Required fields:
-
-- `ids`: `Sequence`\[`str`\]
-
-<a id="batchgetbuildsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetBuildsInputRequestTypeDef(TypedDict):
+    ids: Sequence[str],
+```
 
 ## BatchGetBuildsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetBuildsOutputTypeDef
+
+def get_value() -> BatchGetBuildsOutputTypeDef:
+    return {
+        "builds": ...,
+        "buildsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetBuildsOutputTypeDef(TypedDict):
+    builds: List[BuildTypeDef],  # (1)
+    buildsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `builds`: `List`\[[BuildTypeDef](./type_defs.md#buildtypedef)\]
-- `buildsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetprojectsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildTypeDef](./type_defs.md#buildtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetProjectsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetProjectsInputRequestTypeDef
+
+def get_value() -> BatchGetProjectsInputRequestTypeDef:
+    return {
+        "names": ...,
+    }
 ```
 
-Required fields:
-
-- `names`: `Sequence`\[`str`\]
-
-<a id="batchgetprojectsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetProjectsInputRequestTypeDef(TypedDict):
+    names: Sequence[str],
+```
 
 ## BatchGetProjectsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetProjectsOutputTypeDef
+
+def get_value() -> BatchGetProjectsOutputTypeDef:
+    return {
+        "projects": ...,
+        "projectsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetProjectsOutputTypeDef(TypedDict):
+    projects: List[ProjectTypeDef],  # (1)
+    projectsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projects`: `List`\[[ProjectTypeDef](./type_defs.md#projecttypedef)\]
-- `projectsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetreportgroupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetReportGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsInputRequestTypeDef
+
+def get_value() -> BatchGetReportGroupsInputRequestTypeDef:
+    return {
+        "reportGroupArns": ...,
+    }
 ```
 
-Required fields:
-
-- `reportGroupArns`: `Sequence`\[`str`\]
-
-<a id="batchgetreportgroupsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetReportGroupsInputRequestTypeDef(TypedDict):
+    reportGroupArns: Sequence[str],
+```
 
 ## BatchGetReportGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsOutputTypeDef
+
+def get_value() -> BatchGetReportGroupsOutputTypeDef:
+    return {
+        "reportGroups": ...,
+        "reportGroupsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetReportGroupsOutputTypeDef(TypedDict):
+    reportGroups: List[ReportGroupTypeDef],  # (1)
+    reportGroupsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `reportGroups`:
-  `List`\[[ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)\]
-- `reportGroupsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetreportsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportGroupTypeDef](./type_defs.md#reportgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetReportsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetReportsInputRequestTypeDef
+
+def get_value() -> BatchGetReportsInputRequestTypeDef:
+    return {
+        "reportArns": ...,
+    }
 ```
 
-Required fields:
-
-- `reportArns`: `Sequence`\[`str`\]
-
-<a id="batchgetreportsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetReportsInputRequestTypeDef(TypedDict):
+    reportArns: Sequence[str],
+```
 
 ## BatchGetReportsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchGetReportsOutputTypeDef
+
+def get_value() -> BatchGetReportsOutputTypeDef:
+    return {
+        "reports": ...,
+        "reportsNotFound": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetReportsOutputTypeDef(TypedDict):
+    reports: List[ReportTypeDef],  # (1)
+    reportsNotFound: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `reports`: `List`\[[ReportTypeDef](./type_defs.md#reporttypedef)\]
-- `reportsNotFound`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchrestrictionstypedef"></a>
-
+1. See [:material-code-braces: ReportTypeDef](./type_defs.md#reporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchRestrictionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BatchRestrictionsTypeDef
+
+def get_value() -> BatchRestrictionsTypeDef:
+    return {
+        "maximumBuildsAllowed": ...,
+    }
 ```
 
-Optional fields:
-
-- `maximumBuildsAllowed`: `int`
-- `computeTypesAllowed`: `List`\[`str`\]
-
-<a id="buildartifactstypedef"></a>
+```python title="Definition"
+class BatchRestrictionsTypeDef(TypedDict):
+    maximumBuildsAllowed: NotRequired[int],
+    computeTypesAllowed: NotRequired[List[str]],
+```
 
 ## BuildArtifactsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildArtifactsTypeDef
+
+def get_value() -> BuildArtifactsTypeDef:
+    return {
+        "location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildArtifactsTypeDef(TypedDict):
+    location: NotRequired[str],
+    sha256sum: NotRequired[str],
+    md5sum: NotRequired[str],
+    overrideArtifactName: NotRequired[bool],
+    encryptionDisabled: NotRequired[bool],
+    artifactIdentifier: NotRequired[str],
+    bucketOwnerAccess: NotRequired[BucketOwnerAccessType],  # (1)
+```
 
-- `location`: `str`
-- `sha256sum`: `str`
-- `md5sum`: `str`
-- `overrideArtifactName`: `bool`
-- `encryptionDisabled`: `bool`
-- `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
-
-<a id="buildbatchfiltertypedef"></a>
-
+1. See [:material-code-brackets: BucketOwnerAccessType](./literals.md#bucketowneraccesstype) 
 ## BuildBatchFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildBatchFilterTypeDef
+
+def get_value() -> BuildBatchFilterTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildBatchFilterTypeDef(TypedDict):
+    status: NotRequired[StatusTypeType],  # (1)
+```
 
-- `status`: [StatusTypeType](./literals.md#statustypetype)
-
-<a id="buildbatchphasetypedef"></a>
-
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
 ## BuildBatchPhaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildBatchPhaseTypeDef
+
+def get_value() -> BuildBatchPhaseTypeDef:
+    return {
+        "phaseType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildBatchPhaseTypeDef(TypedDict):
+    phaseType: NotRequired[BuildBatchPhaseTypeType],  # (1)
+    phaseStatus: NotRequired[StatusTypeType],  # (2)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    durationInSeconds: NotRequired[int],
+    contexts: NotRequired[List[PhaseContextTypeDef]],  # (3)
+```
 
-- `phaseType`: [BuildBatchPhaseTypeType](./literals.md#buildbatchphasetypetype)
-- `phaseStatus`: [StatusTypeType](./literals.md#statustypetype)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `durationInSeconds`: `int`
-- `contexts`:
-  `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
-
-<a id="buildbatchtypedef"></a>
-
+1. See [:material-code-brackets: BuildBatchPhaseTypeType](./literals.md#buildbatchphasetypetype) 
+2. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+3. See [:material-code-braces: PhaseContextTypeDef](./type_defs.md#phasecontexttypedef) 
 ## BuildBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildBatchTypeDef
+
+def get_value() -> BuildBatchTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildBatchTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    currentPhase: NotRequired[str],
+    buildBatchStatus: NotRequired[StatusTypeType],  # (1)
+    sourceVersion: NotRequired[str],
+    resolvedSourceVersion: NotRequired[str],
+    projectName: NotRequired[str],
+    phases: NotRequired[List[BuildBatchPhaseTypeDef]],  # (2)
+    source: NotRequired[ProjectSourceTypeDef],  # (3)
+    secondarySources: NotRequired[List[ProjectSourceTypeDef]],  # (4)
+    secondarySourceVersions: NotRequired[List[ProjectSourceVersionTypeDef]],  # (5)
+    artifacts: NotRequired[BuildArtifactsTypeDef],  # (6)
+    secondaryArtifacts: NotRequired[List[BuildArtifactsTypeDef]],  # (7)
+    cache: NotRequired[ProjectCacheTypeDef],  # (8)
+    environment: NotRequired[ProjectEnvironmentTypeDef],  # (9)
+    serviceRole: NotRequired[str],
+    logConfig: NotRequired[LogsConfigTypeDef],  # (10)
+    buildTimeoutInMinutes: NotRequired[int],
+    queuedTimeoutInMinutes: NotRequired[int],
+    complete: NotRequired[bool],
+    initiator: NotRequired[str],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (11)
+    encryptionKey: NotRequired[str],
+    buildBatchNumber: NotRequired[int],
+    fileSystemLocations: NotRequired[List[ProjectFileSystemLocationTypeDef]],  # (12)
+    buildBatchConfig: NotRequired[ProjectBuildBatchConfigTypeDef],  # (13)
+    buildGroups: NotRequired[List[BuildGroupTypeDef]],  # (14)
+    debugSessionEnabled: NotRequired[bool],
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `currentPhase`: `str`
-- `buildBatchStatus`: [StatusTypeType](./literals.md#statustypetype)
-- `sourceVersion`: `str`
-- `resolvedSourceVersion`: `str`
-- `projectName`: `str`
-- `phases`:
-  `List`\[[BuildBatchPhaseTypeDef](./type_defs.md#buildbatchphasetypedef)\]
-- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
-- `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `artifacts`: [BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)
-- `secondaryArtifacts`:
-  `List`\[[BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)\]
-- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `environment`:
-  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
-- `serviceRole`: `str`
-- `logConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `buildTimeoutInMinutes`: `int`
-- `queuedTimeoutInMinutes`: `int`
-- `complete`: `bool`
-- `initiator`: `str`
-- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `encryptionKey`: `str`
-- `buildBatchNumber`: `int`
-- `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
-- `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `buildGroups`:
-  `List`\[[BuildGroupTypeDef](./type_defs.md#buildgrouptypedef)\]
-- `debugSessionEnabled`: `bool`
-
-<a id="buildgrouptypedef"></a>
-
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+2. See [:material-code-braces: BuildBatchPhaseTypeDef](./type_defs.md#buildbatchphasetypedef) 
+3. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+4. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+5. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+6. See [:material-code-braces: BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef) 
+7. See [:material-code-braces: BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef) 
+8. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+9. See [:material-code-braces: ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef) 
+10. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+11. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+12. See [:material-code-braces: ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef) 
+13. See [:material-code-braces: ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef) 
+14. See [:material-code-braces: BuildGroupTypeDef](./type_defs.md#buildgrouptypedef) 
 ## BuildGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildGroupTypeDef
+
+def get_value() -> BuildGroupTypeDef:
+    return {
+        "identifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildGroupTypeDef(TypedDict):
+    identifier: NotRequired[str],
+    dependsOn: NotRequired[List[str]],
+    ignoreFailure: NotRequired[bool],
+    currentBuildSummary: NotRequired[BuildSummaryTypeDef],  # (1)
+    priorBuildSummaryList: NotRequired[List[BuildSummaryTypeDef]],  # (2)
+```
 
-- `identifier`: `str`
-- `dependsOn`: `List`\[`str`\]
-- `ignoreFailure`: `bool`
-- `currentBuildSummary`:
-  [BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef)
-- `priorBuildSummaryList`:
-  `List`\[[BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef)\]
-
-<a id="buildnotdeletedtypedef"></a>
-
+1. See [:material-code-braces: BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef) 
+2. See [:material-code-braces: BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef) 
 ## BuildNotDeletedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildNotDeletedTypeDef
+
+def get_value() -> BuildNotDeletedTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `statusCode`: `str`
-
-<a id="buildphasetypedef"></a>
+```python title="Definition"
+class BuildNotDeletedTypeDef(TypedDict):
+    id: NotRequired[str],
+    statusCode: NotRequired[str],
+```
 
 ## BuildPhaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildPhaseTypeDef
+
+def get_value() -> BuildPhaseTypeDef:
+    return {
+        "phaseType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildPhaseTypeDef(TypedDict):
+    phaseType: NotRequired[BuildPhaseTypeType],  # (1)
+    phaseStatus: NotRequired[StatusTypeType],  # (2)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    durationInSeconds: NotRequired[int],
+    contexts: NotRequired[List[PhaseContextTypeDef]],  # (3)
+```
 
-- `phaseType`: [BuildPhaseTypeType](./literals.md#buildphasetypetype)
-- `phaseStatus`: [StatusTypeType](./literals.md#statustypetype)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `durationInSeconds`: `int`
-- `contexts`:
-  `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
-
-<a id="buildstatusconfigtypedef"></a>
-
+1. See [:material-code-brackets: BuildPhaseTypeType](./literals.md#buildphasetypetype) 
+2. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+3. See [:material-code-braces: PhaseContextTypeDef](./type_defs.md#phasecontexttypedef) 
 ## BuildStatusConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildStatusConfigTypeDef
+
+def get_value() -> BuildStatusConfigTypeDef:
+    return {
+        "context": ...,
+    }
 ```
 
-Optional fields:
-
-- `context`: `str`
-- `targetUrl`: `str`
-
-<a id="buildsummarytypedef"></a>
+```python title="Definition"
+class BuildStatusConfigTypeDef(TypedDict):
+    context: NotRequired[str],
+    targetUrl: NotRequired[str],
+```
 
 ## BuildSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildSummaryTypeDef
+
+def get_value() -> BuildSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    requestedOn: NotRequired[datetime],
+    buildStatus: NotRequired[StatusTypeType],  # (1)
+    primaryArtifact: NotRequired[ResolvedArtifactTypeDef],  # (2)
+    secondaryArtifacts: NotRequired[List[ResolvedArtifactTypeDef]],  # (3)
+```
 
-- `arn`: `str`
-- `requestedOn`: `datetime`
-- `buildStatus`: [StatusTypeType](./literals.md#statustypetype)
-- `primaryArtifact`:
-  [ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)
-- `secondaryArtifacts`:
-  `List`\[[ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)\]
-
-<a id="buildtypedef"></a>
-
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+2. See [:material-code-braces: ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef) 
+3. See [:material-code-braces: ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef) 
 ## BuildTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import BuildTypeDef
+
+def get_value() -> BuildTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BuildTypeDef(TypedDict):
+    id: NotRequired[str],
+    arn: NotRequired[str],
+    buildNumber: NotRequired[int],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    currentPhase: NotRequired[str],
+    buildStatus: NotRequired[StatusTypeType],  # (1)
+    sourceVersion: NotRequired[str],
+    resolvedSourceVersion: NotRequired[str],
+    projectName: NotRequired[str],
+    phases: NotRequired[List[BuildPhaseTypeDef]],  # (2)
+    source: NotRequired[ProjectSourceTypeDef],  # (3)
+    secondarySources: NotRequired[List[ProjectSourceTypeDef]],  # (4)
+    secondarySourceVersions: NotRequired[List[ProjectSourceVersionTypeDef]],  # (5)
+    artifacts: NotRequired[BuildArtifactsTypeDef],  # (6)
+    secondaryArtifacts: NotRequired[List[BuildArtifactsTypeDef]],  # (7)
+    cache: NotRequired[ProjectCacheTypeDef],  # (8)
+    environment: NotRequired[ProjectEnvironmentTypeDef],  # (9)
+    serviceRole: NotRequired[str],
+    logs: NotRequired[LogsLocationTypeDef],  # (10)
+    timeoutInMinutes: NotRequired[int],
+    queuedTimeoutInMinutes: NotRequired[int],
+    buildComplete: NotRequired[bool],
+    initiator: NotRequired[str],
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (11)
+    networkInterface: NotRequired[NetworkInterfaceTypeDef],  # (12)
+    encryptionKey: NotRequired[str],
+    exportedEnvironmentVariables: NotRequired[List[ExportedEnvironmentVariableTypeDef]],  # (13)
+    reportArns: NotRequired[List[str]],
+    fileSystemLocations: NotRequired[List[ProjectFileSystemLocationTypeDef]],  # (14)
+    debugSession: NotRequired[DebugSessionTypeDef],  # (15)
+    buildBatchArn: NotRequired[str],
+```
 
-- `id`: `str`
-- `arn`: `str`
-- `buildNumber`: `int`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `currentPhase`: `str`
-- `buildStatus`: [StatusTypeType](./literals.md#statustypetype)
-- `sourceVersion`: `str`
-- `resolvedSourceVersion`: `str`
-- `projectName`: `str`
-- `phases`: `List`\[[BuildPhaseTypeDef](./type_defs.md#buildphasetypedef)\]
-- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
-- `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `artifacts`: [BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)
-- `secondaryArtifacts`:
-  `List`\[[BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef)\]
-- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `environment`:
-  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
-- `serviceRole`: `str`
-- `logs`: [LogsLocationTypeDef](./type_defs.md#logslocationtypedef)
-- `timeoutInMinutes`: `int`
-- `queuedTimeoutInMinutes`: `int`
-- `buildComplete`: `bool`
-- `initiator`: `str`
-- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `networkInterface`:
-  [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
-- `encryptionKey`: `str`
-- `exportedEnvironmentVariables`:
-  `List`\[[ExportedEnvironmentVariableTypeDef](./type_defs.md#exportedenvironmentvariabletypedef)\]
-- `reportArns`: `List`\[`str`\]
-- `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
-- `debugSession`: [DebugSessionTypeDef](./type_defs.md#debugsessiontypedef)
-- `buildBatchArn`: `str`
-
-<a id="cloudwatchlogsconfigtypedef"></a>
-
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
+2. See [:material-code-braces: BuildPhaseTypeDef](./type_defs.md#buildphasetypedef) 
+3. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+4. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+5. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+6. See [:material-code-braces: BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef) 
+7. See [:material-code-braces: BuildArtifactsTypeDef](./type_defs.md#buildartifactstypedef) 
+8. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+9. See [:material-code-braces: ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef) 
+10. See [:material-code-braces: LogsLocationTypeDef](./type_defs.md#logslocationtypedef) 
+11. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+12. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+13. See [:material-code-braces: ExportedEnvironmentVariableTypeDef](./type_defs.md#exportedenvironmentvariabletypedef) 
+14. See [:material-code-braces: ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef) 
+15. See [:material-code-braces: DebugSessionTypeDef](./type_defs.md#debugsessiontypedef) 
 ## CloudWatchLogsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CloudWatchLogsConfigTypeDef
+
+def get_value() -> CloudWatchLogsConfigTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchLogsConfigTypeDef(TypedDict):
+    status: LogsConfigStatusTypeType,  # (1)
+    groupName: NotRequired[str],
+    streamName: NotRequired[str],
+```
 
-- `status`: [LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype)
-
-Optional fields:
-
-- `groupName`: `str`
-- `streamName`: `str`
-
-<a id="codecoveragereportsummarytypedef"></a>
-
+1. See [:material-code-brackets: LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype) 
 ## CodeCoverageReportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CodeCoverageReportSummaryTypeDef
+
+def get_value() -> CodeCoverageReportSummaryTypeDef:
+    return {
+        "lineCoveragePercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `lineCoveragePercentage`: `float`
-- `linesCovered`: `int`
-- `linesMissed`: `int`
-- `branchCoveragePercentage`: `float`
-- `branchesCovered`: `int`
-- `branchesMissed`: `int`
-
-<a id="codecoveragetypedef"></a>
+```python title="Definition"
+class CodeCoverageReportSummaryTypeDef(TypedDict):
+    lineCoveragePercentage: NotRequired[float],
+    linesCovered: NotRequired[int],
+    linesMissed: NotRequired[int],
+    branchCoveragePercentage: NotRequired[float],
+    branchesCovered: NotRequired[int],
+    branchesMissed: NotRequired[int],
+```
 
 ## CodeCoverageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CodeCoverageTypeDef
+
+def get_value() -> CodeCoverageTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `reportARN`: `str`
-- `filePath`: `str`
-- `lineCoveragePercentage`: `float`
-- `linesCovered`: `int`
-- `linesMissed`: `int`
-- `branchCoveragePercentage`: `float`
-- `branchesCovered`: `int`
-- `branchesMissed`: `int`
-- `expired`: `datetime`
-
-<a id="createprojectinputrequesttypedef"></a>
+```python title="Definition"
+class CodeCoverageTypeDef(TypedDict):
+    id: NotRequired[str],
+    reportARN: NotRequired[str],
+    filePath: NotRequired[str],
+    lineCoveragePercentage: NotRequired[float],
+    linesCovered: NotRequired[int],
+    linesMissed: NotRequired[int],
+    branchCoveragePercentage: NotRequired[float],
+    branchesCovered: NotRequired[int],
+    branchesMissed: NotRequired[int],
+    expired: NotRequired[datetime],
+```
 
 ## CreateProjectInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateProjectInputRequestTypeDef
+
+def get_value() -> CreateProjectInputRequestTypeDef:
+    return {
+        "name": ...,
+        "source": ...,
+        "artifacts": ...,
+        "environment": ...,
+        "serviceRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectInputRequestTypeDef(TypedDict):
+    name: str,
+    source: ProjectSourceTypeDef,  # (1)
+    artifacts: ProjectArtifactsTypeDef,  # (2)
+    environment: ProjectEnvironmentTypeDef,  # (3)
+    serviceRole: str,
+    description: NotRequired[str],
+    secondarySources: NotRequired[Sequence[ProjectSourceTypeDef]],  # (4)
+    sourceVersion: NotRequired[str],
+    secondarySourceVersions: NotRequired[Sequence[ProjectSourceVersionTypeDef]],  # (5)
+    secondaryArtifacts: NotRequired[Sequence[ProjectArtifactsTypeDef]],  # (6)
+    cache: NotRequired[ProjectCacheTypeDef],  # (7)
+    timeoutInMinutes: NotRequired[int],
+    queuedTimeoutInMinutes: NotRequired[int],
+    encryptionKey: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (9)
+    badgeEnabled: NotRequired[bool],
+    logsConfig: NotRequired[LogsConfigTypeDef],  # (10)
+    fileSystemLocations: NotRequired[Sequence[ProjectFileSystemLocationTypeDef]],  # (11)
+    buildBatchConfig: NotRequired[ProjectBuildBatchConfigTypeDef],  # (12)
+    concurrentBuildLimit: NotRequired[int],
+```
 
-- `name`: `str`
-- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
-- `artifacts`:
-  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
-- `environment`:
-  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
-- `serviceRole`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `secondarySources`:
-  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `sourceVersion`: `str`
-- `secondarySourceVersions`:
-  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `secondaryArtifacts`:
-  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
-- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `timeoutInMinutes`: `int`
-- `queuedTimeoutInMinutes`: `int`
-- `encryptionKey`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `badgeEnabled`: `bool`
-- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `fileSystemLocations`:
-  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
-- `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `concurrentBuildLimit`: `int`
-
-<a id="createprojectoutputtypedef"></a>
-
+1. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+2. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+3. See [:material-code-braces: ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef) 
+4. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+5. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+6. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+7. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+10. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+11. See [:material-code-braces: ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef) 
+12. See [:material-code-braces: ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef) 
 ## CreateProjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateProjectOutputTypeDef
+
+def get_value() -> CreateProjectOutputTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProjectOutputTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreportgroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReportGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateReportGroupInputRequestTypeDef
+
+def get_value() -> CreateReportGroupInputRequestTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+        "exportConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReportGroupInputRequestTypeDef(TypedDict):
+    name: str,
+    type: ReportTypeType,  # (1)
+    exportConfig: ReportExportConfigTypeDef,  # (2)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `name`: `str`
-- `type`: [ReportTypeType](./literals.md#reporttypetype)
-- `exportConfig`:
-  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createreportgroupoutputtypedef"></a>
-
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateReportGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateReportGroupOutputTypeDef
+
+def get_value() -> CreateReportGroupOutputTypeDef:
+    return {
+        "reportGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReportGroupOutputTypeDef(TypedDict):
+    reportGroup: ReportGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createwebhookinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportGroupTypeDef](./type_defs.md#reportgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWebhookInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateWebhookInputRequestTypeDef
+
+def get_value() -> CreateWebhookInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebhookInputRequestTypeDef(TypedDict):
+    projectName: str,
+    branchFilter: NotRequired[str],
+    filterGroups: NotRequired[Sequence[Sequence[WebhookFilterTypeDef]]],  # (1)
+    buildType: NotRequired[WebhookBuildTypeType],  # (2)
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `branchFilter`: `str`
-- `filterGroups`:
-  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
-- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
-
-<a id="createwebhookoutputtypedef"></a>
-
+1. See [:material-code-braces: WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef) 
+2. See [:material-code-brackets: WebhookBuildTypeType](./literals.md#webhookbuildtypetype) 
 ## CreateWebhookOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import CreateWebhookOutputTypeDef
+
+def get_value() -> CreateWebhookOutputTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWebhookOutputTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="debugsessiontypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DebugSessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DebugSessionTypeDef
+
+def get_value() -> DebugSessionTypeDef:
+    return {
+        "sessionEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `sessionEnabled`: `bool`
-- `sessionTarget`: `str`
-
-<a id="deletebuildbatchinputrequesttypedef"></a>
+```python title="Definition"
+class DebugSessionTypeDef(TypedDict):
+    sessionEnabled: NotRequired[bool],
+    sessionTarget: NotRequired[str],
+```
 
 ## DeleteBuildBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteBuildBatchInputRequestTypeDef
+
+def get_value() -> DeleteBuildBatchInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="deletebuildbatchoutputtypedef"></a>
+```python title="Definition"
+class DeleteBuildBatchInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## DeleteBuildBatchOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteBuildBatchOutputTypeDef
+
+def get_value() -> DeleteBuildBatchOutputTypeDef:
+    return {
+        "statusCode": ...,
+        "buildsDeleted": ...,
+        "buildsNotDeleted": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBuildBatchOutputTypeDef(TypedDict):
+    statusCode: str,
+    buildsDeleted: List[str],
+    buildsNotDeleted: List[BuildNotDeletedTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `statusCode`: `str`
-- `buildsDeleted`: `List`\[`str`\]
-- `buildsNotDeleted`:
-  `List`\[[BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteprojectinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildNotDeletedTypeDef](./type_defs.md#buildnotdeletedtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteProjectInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteProjectInputRequestTypeDef
+
+def get_value() -> DeleteProjectInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="deletereportgroupinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteProjectInputRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## DeleteReportGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteReportGroupInputRequestTypeDef
+
+def get_value() -> DeleteReportGroupInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `deleteReports`: `bool`
-
-<a id="deletereportinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteReportGroupInputRequestTypeDef(TypedDict):
+    arn: str,
+    deleteReports: NotRequired[bool],
+```
 
 ## DeleteReportInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteReportInputRequestTypeDef
+
+def get_value() -> DeleteReportInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deleteresourcepolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteReportInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteResourcePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteResourcePolicyInputRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="deletesourcecredentialsinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## DeleteSourceCredentialsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsInputRequestTypeDef
+
+def get_value() -> DeleteSourceCredentialsInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletesourcecredentialsoutputtypedef"></a>
+```python title="Definition"
+class DeleteSourceCredentialsInputRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteSourceCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsOutputTypeDef
+
+def get_value() -> DeleteSourceCredentialsOutputTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSourceCredentialsOutputTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletewebhookinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteWebhookInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DeleteWebhookInputRequestTypeDef
+
+def get_value() -> DeleteWebhookInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteWebhookInputRequestTypeDef(TypedDict):
+    projectName: str,
+```
 
-- `projectName`: `str`
+## DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef
 
-<a id="describecodecoveragesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef
 
+def get_value() -> DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef:
+    return {
+        "reportArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef(TypedDict):
+    reportArn: str,
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[ReportCodeCoverageSortByTypeType],  # (2)
+    minLineCoveragePercentage: NotRequired[float],
+    maxLineCoveragePercentage: NotRequired[float],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCodeCoveragesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesInputRequestTypeDef
+
+def get_value() -> DescribeCodeCoveragesInputRequestTypeDef:
+    return {
+        "reportArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCodeCoveragesInputRequestTypeDef(TypedDict):
+    reportArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[ReportCodeCoverageSortByTypeType],  # (2)
+    minLineCoveragePercentage: NotRequired[float],
+    maxLineCoveragePercentage: NotRequired[float],
+```
 
-- `reportArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype)
-- `minLineCoveragePercentage`: `float`
-- `maxLineCoveragePercentage`: `float`
-
-<a id="describecodecoveragesoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportCodeCoverageSortByTypeType](./literals.md#reportcodecoveragesortbytypetype) 
 ## DescribeCodeCoveragesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DescribeCodeCoveragesOutputTypeDef
+
+def get_value() -> DescribeCodeCoveragesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "codeCoverages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCodeCoveragesOutputTypeDef(TypedDict):
+    nextToken: str,
+    codeCoverages: List[CodeCoverageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `codeCoverages`:
-  `List`\[[CodeCoverageTypeDef](./type_defs.md#codecoveragetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CodeCoverageTypeDef](./type_defs.md#codecoveragetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTestCasesInputDescribeTestCasesPaginateTypeDef
 
-<a id="describetestcasesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import DescribeTestCasesInputDescribeTestCasesPaginateTypeDef
 
+def get_value() -> DescribeTestCasesInputDescribeTestCasesPaginateTypeDef:
+    return {
+        "reportArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTestCasesInputDescribeTestCasesPaginateTypeDef(TypedDict):
+    reportArn: str,
+    filter: NotRequired[TestCaseFilterTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTestCasesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DescribeTestCasesInputRequestTypeDef
+
+def get_value() -> DescribeTestCasesInputRequestTypeDef:
+    return {
+        "reportArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTestCasesInputRequestTypeDef(TypedDict):
+    reportArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filter: NotRequired[TestCaseFilterTypeDef],  # (1)
+```
 
-- `reportArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
-
-<a id="describetestcasesoutputtypedef"></a>
-
+1. See [:material-code-braces: TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef) 
 ## DescribeTestCasesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import DescribeTestCasesOutputTypeDef
+
+def get_value() -> DescribeTestCasesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "testCases": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTestCasesOutputTypeDef(TypedDict):
+    nextToken: str,
+    testCases: List[TestCaseTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `testCases`: `List`\[[TestCaseTypeDef](./type_defs.md#testcasetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentimagetypedef"></a>
-
+1. See [:material-code-braces: TestCaseTypeDef](./type_defs.md#testcasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import EnvironmentImageTypeDef
+
+def get_value() -> EnvironmentImageTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `versions`: `List`\[`str`\]
-
-<a id="environmentlanguagetypedef"></a>
+```python title="Definition"
+class EnvironmentImageTypeDef(TypedDict):
+    name: NotRequired[str],
+    description: NotRequired[str],
+    versions: NotRequired[List[str]],
+```
 
 ## EnvironmentLanguageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import EnvironmentLanguageTypeDef
+
+def get_value() -> EnvironmentLanguageTypeDef:
+    return {
+        "language": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentLanguageTypeDef(TypedDict):
+    language: NotRequired[LanguageTypeType],  # (1)
+    images: NotRequired[List[EnvironmentImageTypeDef]],  # (2)
+```
 
-- `language`: [LanguageTypeType](./literals.md#languagetypetype)
-- `images`:
-  `List`\[[EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef)\]
-
-<a id="environmentplatformtypedef"></a>
-
+1. See [:material-code-brackets: LanguageTypeType](./literals.md#languagetypetype) 
+2. See [:material-code-braces: EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef) 
 ## EnvironmentPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import EnvironmentPlatformTypeDef
+
+def get_value() -> EnvironmentPlatformTypeDef:
+    return {
+        "platform": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentPlatformTypeDef(TypedDict):
+    platform: NotRequired[PlatformTypeType],  # (1)
+    languages: NotRequired[List[EnvironmentLanguageTypeDef]],  # (2)
+```
 
-- `platform`: [PlatformTypeType](./literals.md#platformtypetype)
-- `languages`:
-  `List`\[[EnvironmentLanguageTypeDef](./type_defs.md#environmentlanguagetypedef)\]
-
-<a id="environmentvariabletypedef"></a>
-
+1. See [:material-code-brackets: PlatformTypeType](./literals.md#platformtypetype) 
+2. See [:material-code-braces: EnvironmentLanguageTypeDef](./type_defs.md#environmentlanguagetypedef) 
 ## EnvironmentVariableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import EnvironmentVariableTypeDef
+
+def get_value() -> EnvironmentVariableTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentVariableTypeDef(TypedDict):
+    name: str,
+    value: str,
+    type: NotRequired[EnvironmentVariableTypeType],  # (1)
+```
 
-- `name`: `str`
-- `value`: `str`
-
-Optional fields:
-
-- `type`:
-  [EnvironmentVariableTypeType](./literals.md#environmentvariabletypetype)
-
-<a id="exportedenvironmentvariabletypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentVariableTypeType](./literals.md#environmentvariabletypetype) 
 ## ExportedEnvironmentVariableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ExportedEnvironmentVariableTypeDef
+
+def get_value() -> ExportedEnvironmentVariableTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `value`: `str`
-
-<a id="getreportgrouptrendinputrequesttypedef"></a>
+```python title="Definition"
+class ExportedEnvironmentVariableTypeDef(TypedDict):
+    name: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## GetReportGroupTrendInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import GetReportGroupTrendInputRequestTypeDef
+
+def get_value() -> GetReportGroupTrendInputRequestTypeDef:
+    return {
+        "reportGroupArn": ...,
+        "trendField": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReportGroupTrendInputRequestTypeDef(TypedDict):
+    reportGroupArn: str,
+    trendField: ReportGroupTrendFieldTypeType,  # (1)
+    numOfReports: NotRequired[int],
+```
 
-- `reportGroupArn`: `str`
-- `trendField`:
-  [ReportGroupTrendFieldTypeType](./literals.md#reportgrouptrendfieldtypetype)
-
-Optional fields:
-
-- `numOfReports`: `int`
-
-<a id="getreportgrouptrendoutputtypedef"></a>
-
+1. See [:material-code-brackets: ReportGroupTrendFieldTypeType](./literals.md#reportgrouptrendfieldtypetype) 
 ## GetReportGroupTrendOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import GetReportGroupTrendOutputTypeDef
+
+def get_value() -> GetReportGroupTrendOutputTypeDef:
+    return {
+        "stats": ...,
+        "rawData": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetReportGroupTrendOutputTypeDef(TypedDict):
+    stats: ReportGroupTrendStatsTypeDef,  # (1)
+    rawData: List[ReportWithRawDataTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `stats`:
-  [ReportGroupTrendStatsTypeDef](./type_defs.md#reportgrouptrendstatstypedef)
-- `rawData`:
-  `List`\[[ReportWithRawDataTypeDef](./type_defs.md#reportwithrawdatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcepolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportGroupTrendStatsTypeDef](./type_defs.md#reportgrouptrendstatstypedef) 
+2. See [:material-code-braces: ReportWithRawDataTypeDef](./type_defs.md#reportwithrawdatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import GetResourcePolicyInputRequestTypeDef
+
+def get_value() -> GetResourcePolicyInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="getresourcepolicyoutputtypedef"></a>
+```python title="Definition"
+class GetResourcePolicyInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## GetResourcePolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import GetResourcePolicyOutputTypeDef
+
+def get_value() -> GetResourcePolicyOutputTypeDef:
+    return {
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePolicyOutputTypeDef(TypedDict):
+    policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gitsubmodulesconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GitSubmodulesConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import GitSubmodulesConfigTypeDef
+
+def get_value() -> GitSubmodulesConfigTypeDef:
+    return {
+        "fetchSubmodules": ...,
+    }
 ```
 
-Required fields:
-
-- `fetchSubmodules`: `bool`
-
-<a id="importsourcecredentialsinputrequesttypedef"></a>
+```python title="Definition"
+class GitSubmodulesConfigTypeDef(TypedDict):
+    fetchSubmodules: bool,
+```
 
 ## ImportSourceCredentialsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsInputRequestTypeDef
+
+def get_value() -> ImportSourceCredentialsInputRequestTypeDef:
+    return {
+        "token": ...,
+        "serverType": ...,
+        "authType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportSourceCredentialsInputRequestTypeDef(TypedDict):
+    token: str,
+    serverType: ServerTypeType,  # (1)
+    authType: AuthTypeType,  # (2)
+    username: NotRequired[str],
+    shouldOverwrite: NotRequired[bool],
+```
 
-- `token`: `str`
-- `serverType`: [ServerTypeType](./literals.md#servertypetype)
-- `authType`: [AuthTypeType](./literals.md#authtypetype)
-
-Optional fields:
-
-- `username`: `str`
-- `shouldOverwrite`: `bool`
-
-<a id="importsourcecredentialsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ServerTypeType](./literals.md#servertypetype) 
+2. See [:material-code-brackets: AuthTypeType](./literals.md#authtypetype) 
 ## ImportSourceCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ImportSourceCredentialsOutputTypeDef
+
+def get_value() -> ImportSourceCredentialsOutputTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportSourceCredentialsOutputTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="invalidateprojectcacheinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InvalidateProjectCacheInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import InvalidateProjectCacheInputRequestTypeDef
+
+def get_value() -> InvalidateProjectCacheInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvalidateProjectCacheInputRequestTypeDef(TypedDict):
+    projectName: str,
+```
 
-- `projectName`: `str`
+## ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef
 
-<a id="listbuildbatchesforprojectinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef
 
+def get_value() -> ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef:
+    return {
+        "projectName": ...,
+    }
+```
+
+```python title="Definition"
+class ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef(TypedDict):
+    projectName: NotRequired[str],
+    filter: NotRequired[BuildBatchFilterTypeDef],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBuildBatchesForProjectInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectInputRequestTypeDef
+
+def get_value() -> ListBuildBatchesForProjectInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBuildBatchesForProjectInputRequestTypeDef(TypedDict):
+    projectName: NotRequired[str],
+    filter: NotRequired[BuildBatchFilterTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `projectName`: `str`
-- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `maxResults`: `int`
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-
-<a id="listbuildbatchesforprojectoutputtypedef"></a>
-
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListBuildBatchesForProjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildBatchesForProjectOutputTypeDef
+
+def get_value() -> ListBuildBatchesForProjectOutputTypeDef:
+    return {
+        "ids": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuildBatchesForProjectOutputTypeDef(TypedDict):
+    ids: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ids`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBuildBatchesInputListBuildBatchesPaginateTypeDef
 
-<a id="listbuildbatchesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListBuildBatchesInputListBuildBatchesPaginateTypeDef
 
+def get_value() -> ListBuildBatchesInputListBuildBatchesPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class ListBuildBatchesInputListBuildBatchesPaginateTypeDef(TypedDict):
+    filter: NotRequired[BuildBatchFilterTypeDef],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBuildBatchesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildBatchesInputRequestTypeDef
+
+def get_value() -> ListBuildBatchesInputRequestTypeDef:
+    return {
+        "filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBuildBatchesInputRequestTypeDef(TypedDict):
+    filter: NotRequired[BuildBatchFilterTypeDef],  # (1)
+    maxResults: NotRequired[int],
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `filter`: [BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef)
-- `maxResults`: `int`
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-
-<a id="listbuildbatchesoutputtypedef"></a>
-
+1. See [:material-code-braces: BuildBatchFilterTypeDef](./type_defs.md#buildbatchfiltertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListBuildBatchesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildBatchesOutputTypeDef
+
+def get_value() -> ListBuildBatchesOutputTypeDef:
+    return {
+        "ids": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuildBatchesOutputTypeDef(TypedDict):
+    ids: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ids`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef
 
-<a id="listbuildsforprojectinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef
 
+def get_value() -> ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef:
+    return {
+        "projectName": ...,
+    }
+```
+
+```python title="Definition"
+class ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef(TypedDict):
+    projectName: str,
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBuildsForProjectInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildsForProjectInputRequestTypeDef
+
+def get_value() -> ListBuildsForProjectInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuildsForProjectInputRequestTypeDef(TypedDict):
+    projectName: str,
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-
-<a id="listbuildsforprojectoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListBuildsForProjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildsForProjectOutputTypeDef
+
+def get_value() -> ListBuildsForProjectOutputTypeDef:
+    return {
+        "ids": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuildsForProjectOutputTypeDef(TypedDict):
+    ids: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ids`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBuildsInputListBuildsPaginateTypeDef
 
-<a id="listbuildsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListBuildsInputListBuildsPaginateTypeDef
 
+def get_value() -> ListBuildsInputListBuildsPaginateTypeDef:
+    return {
+        "sortOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListBuildsInputListBuildsPaginateTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBuildsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildsInputRequestTypeDef
+
+def get_value() -> ListBuildsInputRequestTypeDef:
+    return {
+        "sortOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBuildsInputRequestTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-
-<a id="listbuildsoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListBuildsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListBuildsOutputTypeDef
+
+def get_value() -> ListBuildsOutputTypeDef:
+    return {
+        "ids": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBuildsOutputTypeDef(TypedDict):
+    ids: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ids`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcuratedenvironmentimagesoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCuratedEnvironmentImagesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListCuratedEnvironmentImagesOutputTypeDef
+
+def get_value() -> ListCuratedEnvironmentImagesOutputTypeDef:
+    return {
+        "platforms": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCuratedEnvironmentImagesOutputTypeDef(TypedDict):
+    platforms: List[EnvironmentPlatformTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `platforms`:
-  `List`\[[EnvironmentPlatformTypeDef](./type_defs.md#environmentplatformtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentPlatformTypeDef](./type_defs.md#environmentplatformtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProjectsInputListProjectsPaginateTypeDef
 
-<a id="listprojectsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListProjectsInputListProjectsPaginateTypeDef
 
+def get_value() -> ListProjectsInputListProjectsPaginateTypeDef:
+    return {
+        "sortBy": ...,
+    }
+```
+
+```python title="Definition"
+class ListProjectsInputListProjectsPaginateTypeDef(TypedDict):
+    sortBy: NotRequired[ProjectSortByTypeType],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ProjectSortByTypeType](./literals.md#projectsortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProjectsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListProjectsInputRequestTypeDef
+
+def get_value() -> ListProjectsInputRequestTypeDef:
+    return {
+        "sortBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListProjectsInputRequestTypeDef(TypedDict):
+    sortBy: NotRequired[ProjectSortByTypeType],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-
-<a id="listprojectsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProjectSortByTypeType](./literals.md#projectsortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListProjectsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListProjectsOutputTypeDef
+
+def get_value() -> ListProjectsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "projects": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProjectsOutputTypeDef(TypedDict):
+    nextToken: str,
+    projects: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `projects`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReportGroupsInputListReportGroupsPaginateTypeDef
 
-<a id="listreportgroupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListReportGroupsInputListReportGroupsPaginateTypeDef
 
+def get_value() -> ListReportGroupsInputListReportGroupsPaginateTypeDef:
+    return {
+        "sortOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListReportGroupsInputListReportGroupsPaginateTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[ReportGroupSortByTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReportGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportGroupsInputRequestTypeDef
+
+def get_value() -> ListReportGroupsInputRequestTypeDef:
+    return {
+        "sortOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListReportGroupsInputRequestTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[ReportGroupSortByTypeType],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listreportgroupsoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: ReportGroupSortByTypeType](./literals.md#reportgroupsortbytypetype) 
 ## ListReportGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportGroupsOutputTypeDef
+
+def get_value() -> ListReportGroupsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "reportGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportGroupsOutputTypeDef(TypedDict):
+    nextToken: str,
+    reportGroups: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `reportGroups`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef
 
-<a id="listreportsforreportgroupinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef
 
+def get_value() -> ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef:
+    return {
+        "reportGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef(TypedDict):
+    reportGroupArn: str,
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    filter: NotRequired[ReportFilterTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReportsForReportGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupInputRequestTypeDef
+
+def get_value() -> ListReportsForReportGroupInputRequestTypeDef:
+    return {
+        "reportGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportsForReportGroupInputRequestTypeDef(TypedDict):
+    reportGroupArn: str,
+    nextToken: NotRequired[str],
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    maxResults: NotRequired[int],
+    filter: NotRequired[ReportFilterTypeDef],  # (2)
+```
 
-- `reportGroupArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `maxResults`: `int`
-- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
-
-<a id="listreportsforreportgroupoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
 ## ListReportsForReportGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportsForReportGroupOutputTypeDef
+
+def get_value() -> ListReportsForReportGroupOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "reports": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportsForReportGroupOutputTypeDef(TypedDict):
+    nextToken: str,
+    reports: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `reports`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListReportsInputListReportsPaginateTypeDef
 
-<a id="listreportsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListReportsInputListReportsPaginateTypeDef
 
+def get_value() -> ListReportsInputListReportsPaginateTypeDef:
+    return {
+        "sortOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListReportsInputListReportsPaginateTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    filter: NotRequired[ReportFilterTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListReportsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportsInputRequestTypeDef
+
+def get_value() -> ListReportsInputRequestTypeDef:
+    return {
+        "sortOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListReportsInputRequestTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filter: NotRequired[ReportFilterTypeDef],  # (2)
+```
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
-
-<a id="listreportsoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-braces: ReportFilterTypeDef](./type_defs.md#reportfiltertypedef) 
 ## ListReportsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListReportsOutputTypeDef
+
+def get_value() -> ListReportsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "reports": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReportsOutputTypeDef(TypedDict):
+    nextToken: str,
+    reports: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `reports`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSharedProjectsInputListSharedProjectsPaginateTypeDef
 
-<a id="listsharedprojectsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListSharedProjectsInputListSharedProjectsPaginateTypeDef
 
+def get_value() -> ListSharedProjectsInputListSharedProjectsPaginateTypeDef:
+    return {
+        "sortBy": ...,
+    }
+```
+
+```python title="Definition"
+class ListSharedProjectsInputListSharedProjectsPaginateTypeDef(TypedDict):
+    sortBy: NotRequired[SharedResourceSortByTypeType],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSharedProjectsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListSharedProjectsInputRequestTypeDef
+
+def get_value() -> ListSharedProjectsInputRequestTypeDef:
+    return {
+        "sortBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSharedProjectsInputRequestTypeDef(TypedDict):
+    sortBy: NotRequired[SharedResourceSortByTypeType],  # (1)
+    sortOrder: NotRequired[SortOrderTypeType],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `sortBy`:
-  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsharedprojectsoutputtypedef"></a>
-
+1. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListSharedProjectsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListSharedProjectsOutputTypeDef
+
+def get_value() -> ListSharedProjectsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "projects": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSharedProjectsOutputTypeDef(TypedDict):
+    nextToken: str,
+    projects: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `projects`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef
 
-<a id="listsharedreportgroupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef
 
+def get_value() -> ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef:
+    return {
+        "sortOrder": ...,
+    }
+```
+
+```python title="Definition"
+class ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[SharedResourceSortByTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSharedReportGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsInputRequestTypeDef
+
+def get_value() -> ListSharedReportGroupsInputRequestTypeDef:
+    return {
+        "sortOrder": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSharedReportGroupsInputRequestTypeDef(TypedDict):
+    sortOrder: NotRequired[SortOrderTypeType],  # (1)
+    sortBy: NotRequired[SharedResourceSortByTypeType],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `sortBy`:
-  [SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listsharedreportgroupsoutputtypedef"></a>
-
+1. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+2. See [:material-code-brackets: SharedResourceSortByTypeType](./literals.md#sharedresourcesortbytypetype) 
 ## ListSharedReportGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListSharedReportGroupsOutputTypeDef
+
+def get_value() -> ListSharedReportGroupsOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "reportGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSharedReportGroupsOutputTypeDef(TypedDict):
+    nextToken: str,
+    reportGroups: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `nextToken`: `str`
-- `reportGroups`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsourcecredentialsoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSourceCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ListSourceCredentialsOutputTypeDef
+
+def get_value() -> ListSourceCredentialsOutputTypeDef:
+    return {
+        "sourceCredentialsInfos": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSourceCredentialsOutputTypeDef(TypedDict):
+    sourceCredentialsInfos: List[SourceCredentialsInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `sourceCredentialsInfos`:
-  `List`\[[SourceCredentialsInfoTypeDef](./type_defs.md#sourcecredentialsinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logsconfigtypedef"></a>
-
+1. See [:material-code-braces: SourceCredentialsInfoTypeDef](./type_defs.md#sourcecredentialsinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import LogsConfigTypeDef
+
+def get_value() -> LogsConfigTypeDef:
+    return {
+        "cloudWatchLogs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LogsConfigTypeDef(TypedDict):
+    cloudWatchLogs: NotRequired[CloudWatchLogsConfigTypeDef],  # (1)
+    s3Logs: NotRequired[S3LogsConfigTypeDef],  # (2)
+```
 
-- `cloudWatchLogs`:
-  [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
-- `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
-
-<a id="logslocationtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef) 
+2. See [:material-code-braces: S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef) 
 ## LogsLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import LogsLocationTypeDef
+
+def get_value() -> LogsLocationTypeDef:
+    return {
+        "groupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LogsLocationTypeDef(TypedDict):
+    groupName: NotRequired[str],
+    streamName: NotRequired[str],
+    deepLink: NotRequired[str],
+    s3DeepLink: NotRequired[str],
+    cloudWatchLogsArn: NotRequired[str],
+    s3LogsArn: NotRequired[str],
+    cloudWatchLogs: NotRequired[CloudWatchLogsConfigTypeDef],  # (1)
+    s3Logs: NotRequired[S3LogsConfigTypeDef],  # (2)
+```
 
-- `groupName`: `str`
-- `streamName`: `str`
-- `deepLink`: `str`
-- `s3DeepLink`: `str`
-- `cloudWatchLogsArn`: `str`
-- `s3LogsArn`: `str`
-- `cloudWatchLogs`:
-  [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
-- `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
-
-<a id="networkinterfacetypedef"></a>
-
+1. See [:material-code-braces: CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef) 
+2. See [:material-code-braces: S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef) 
 ## NetworkInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "subnetId": ...,
+    }
 ```
 
-Optional fields:
-
-- `subnetId`: `str`
-- `networkInterfaceId`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    subnetId: NotRequired[str],
+    networkInterfaceId: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="phasecontexttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PhaseContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import PhaseContextTypeDef
+
+def get_value() -> PhaseContextTypeDef:
+    return {
+        "statusCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `statusCode`: `str`
-- `message`: `str`
-
-<a id="projectartifactstypedef"></a>
+```python title="Definition"
+class PhaseContextTypeDef(TypedDict):
+    statusCode: NotRequired[str],
+    message: NotRequired[str],
+```
 
 ## ProjectArtifactsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectArtifactsTypeDef
+
+def get_value() -> ProjectArtifactsTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectArtifactsTypeDef(TypedDict):
+    type: ArtifactsTypeType,  # (1)
+    location: NotRequired[str],
+    path: NotRequired[str],
+    namespaceType: NotRequired[ArtifactNamespaceType],  # (2)
+    name: NotRequired[str],
+    packaging: NotRequired[ArtifactPackagingType],  # (3)
+    overrideArtifactName: NotRequired[bool],
+    encryptionDisabled: NotRequired[bool],
+    artifactIdentifier: NotRequired[str],
+    bucketOwnerAccess: NotRequired[BucketOwnerAccessType],  # (4)
+```
 
-- `type`: [ArtifactsTypeType](./literals.md#artifactstypetype)
-
-Optional fields:
-
-- `location`: `str`
-- `path`: `str`
-- `namespaceType`: [ArtifactNamespaceType](./literals.md#artifactnamespacetype)
-- `name`: `str`
-- `packaging`: [ArtifactPackagingType](./literals.md#artifactpackagingtype)
-- `overrideArtifactName`: `bool`
-- `encryptionDisabled`: `bool`
-- `artifactIdentifier`: `str`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
-
-<a id="projectbadgetypedef"></a>
-
+1. See [:material-code-brackets: ArtifactsTypeType](./literals.md#artifactstypetype) 
+2. See [:material-code-brackets: ArtifactNamespaceType](./literals.md#artifactnamespacetype) 
+3. See [:material-code-brackets: ArtifactPackagingType](./literals.md#artifactpackagingtype) 
+4. See [:material-code-brackets: BucketOwnerAccessType](./literals.md#bucketowneraccesstype) 
 ## ProjectBadgeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectBadgeTypeDef
+
+def get_value() -> ProjectBadgeTypeDef:
+    return {
+        "badgeEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `badgeEnabled`: `bool`
-- `badgeRequestUrl`: `str`
-
-<a id="projectbuildbatchconfigtypedef"></a>
+```python title="Definition"
+class ProjectBadgeTypeDef(TypedDict):
+    badgeEnabled: NotRequired[bool],
+    badgeRequestUrl: NotRequired[str],
+```
 
 ## ProjectBuildBatchConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectBuildBatchConfigTypeDef
+
+def get_value() -> ProjectBuildBatchConfigTypeDef:
+    return {
+        "serviceRole": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectBuildBatchConfigTypeDef(TypedDict):
+    serviceRole: NotRequired[str],
+    combineArtifacts: NotRequired[bool],
+    restrictions: NotRequired[BatchRestrictionsTypeDef],  # (1)
+    timeoutInMins: NotRequired[int],
+    batchReportMode: NotRequired[BatchReportModeTypeType],  # (2)
+```
 
-- `serviceRole`: `str`
-- `combineArtifacts`: `bool`
-- `restrictions`:
-  [BatchRestrictionsTypeDef](./type_defs.md#batchrestrictionstypedef)
-- `timeoutInMins`: `int`
-- `batchReportMode`:
-  [BatchReportModeTypeType](./literals.md#batchreportmodetypetype)
-
-<a id="projectcachetypedef"></a>
-
+1. See [:material-code-braces: BatchRestrictionsTypeDef](./type_defs.md#batchrestrictionstypedef) 
+2. See [:material-code-brackets: BatchReportModeTypeType](./literals.md#batchreportmodetypetype) 
 ## ProjectCacheTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectCacheTypeDef
+
+def get_value() -> ProjectCacheTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectCacheTypeDef(TypedDict):
+    type: CacheTypeType,  # (1)
+    location: NotRequired[str],
+    modes: NotRequired[List[CacheModeType]],  # (2)
+```
 
-- `type`: [CacheTypeType](./literals.md#cachetypetype)
-
-Optional fields:
-
-- `location`: `str`
-- `modes`: `List`\[[CacheModeType](./literals.md#cachemodetype)\]
-
-<a id="projectenvironmenttypedef"></a>
-
+1. See [:material-code-brackets: CacheTypeType](./literals.md#cachetypetype) 
+2. See [:material-code-brackets: CacheModeType](./literals.md#cachemodetype) 
 ## ProjectEnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectEnvironmentTypeDef
+
+def get_value() -> ProjectEnvironmentTypeDef:
+    return {
+        "type": ...,
+        "image": ...,
+        "computeType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectEnvironmentTypeDef(TypedDict):
+    type: EnvironmentTypeType,  # (1)
+    image: str,
+    computeType: ComputeTypeType,  # (2)
+    environmentVariables: NotRequired[List[EnvironmentVariableTypeDef]],  # (3)
+    privilegedMode: NotRequired[bool],
+    certificate: NotRequired[str],
+    registryCredential: NotRequired[RegistryCredentialTypeDef],  # (4)
+    imagePullCredentialsType: NotRequired[ImagePullCredentialsTypeType],  # (5)
+```
 
-- `type`: [EnvironmentTypeType](./literals.md#environmenttypetype)
-- `image`: `str`
-- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
-
-Optional fields:
-
-- `environmentVariables`:
-  `List`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-- `privilegedMode`: `bool`
-- `certificate`: `str`
-- `registryCredential`:
-  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
-- `imagePullCredentialsType`:
-  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
-
-<a id="projectfilesystemlocationtypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentTypeType](./literals.md#environmenttypetype) 
+2. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+3. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
+4. See [:material-code-braces: RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef) 
+5. See [:material-code-brackets: ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype) 
 ## ProjectFileSystemLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectFileSystemLocationTypeDef
+
+def get_value() -> ProjectFileSystemLocationTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectFileSystemLocationTypeDef(TypedDict):
+    type: NotRequired[FileSystemTypeType],  # (1)
+    location: NotRequired[str],
+    mountPoint: NotRequired[str],
+    identifier: NotRequired[str],
+    mountOptions: NotRequired[str],
+```
 
-- `type`: `Literal['EFS']` (see
-  [FileSystemTypeType](./literals.md#filesystemtypetype))
-- `location`: `str`
-- `mountPoint`: `str`
-- `identifier`: `str`
-- `mountOptions`: `str`
-
-<a id="projectsourcetypedef"></a>
-
+1. See [:material-code-brackets: FileSystemTypeType](./literals.md#filesystemtypetype) 
 ## ProjectSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectSourceTypeDef
+
+def get_value() -> ProjectSourceTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProjectSourceTypeDef(TypedDict):
+    type: SourceTypeType,  # (1)
+    location: NotRequired[str],
+    gitCloneDepth: NotRequired[int],
+    gitSubmodulesConfig: NotRequired[GitSubmodulesConfigTypeDef],  # (2)
+    buildspec: NotRequired[str],
+    auth: NotRequired[SourceAuthTypeDef],  # (3)
+    reportBuildStatus: NotRequired[bool],
+    buildStatusConfig: NotRequired[BuildStatusConfigTypeDef],  # (4)
+    insecureSsl: NotRequired[bool],
+    sourceIdentifier: NotRequired[str],
+```
 
-- `type`: [SourceTypeType](./literals.md#sourcetypetype)
-
-Optional fields:
-
-- `location`: `str`
-- `gitCloneDepth`: `int`
-- `gitSubmodulesConfig`:
-  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
-- `buildspec`: `str`
-- `auth`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
-- `reportBuildStatus`: `bool`
-- `buildStatusConfig`:
-  [BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef)
-- `insecureSsl`: `bool`
-- `sourceIdentifier`: `str`
-
-<a id="projectsourceversiontypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef) 
+3. See [:material-code-braces: SourceAuthTypeDef](./type_defs.md#sourceauthtypedef) 
+4. See [:material-code-braces: BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef) 
 ## ProjectSourceVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectSourceVersionTypeDef
+
+def get_value() -> ProjectSourceVersionTypeDef:
+    return {
+        "sourceIdentifier": ...,
+        "sourceVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `sourceIdentifier`: `str`
-- `sourceVersion`: `str`
-
-<a id="projecttypedef"></a>
+```python title="Definition"
+class ProjectSourceVersionTypeDef(TypedDict):
+    sourceIdentifier: str,
+    sourceVersion: str,
+```
 
 ## ProjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ProjectTypeDef
+
+def get_value() -> ProjectTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    description: NotRequired[str],
+    source: NotRequired[ProjectSourceTypeDef],  # (1)
+    secondarySources: NotRequired[List[ProjectSourceTypeDef]],  # (2)
+    sourceVersion: NotRequired[str],
+    secondarySourceVersions: NotRequired[List[ProjectSourceVersionTypeDef]],  # (3)
+    artifacts: NotRequired[ProjectArtifactsTypeDef],  # (4)
+    secondaryArtifacts: NotRequired[List[ProjectArtifactsTypeDef]],  # (5)
+    cache: NotRequired[ProjectCacheTypeDef],  # (6)
+    environment: NotRequired[ProjectEnvironmentTypeDef],  # (7)
+    serviceRole: NotRequired[str],
+    timeoutInMinutes: NotRequired[int],
+    queuedTimeoutInMinutes: NotRequired[int],
+    encryptionKey: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (8)
+    created: NotRequired[datetime],
+    lastModified: NotRequired[datetime],
+    webhook: NotRequired[WebhookTypeDef],  # (9)
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (10)
+    badge: NotRequired[ProjectBadgeTypeDef],  # (11)
+    logsConfig: NotRequired[LogsConfigTypeDef],  # (12)
+    fileSystemLocations: NotRequired[List[ProjectFileSystemLocationTypeDef]],  # (13)
+    buildBatchConfig: NotRequired[ProjectBuildBatchConfigTypeDef],  # (14)
+    concurrentBuildLimit: NotRequired[int],
+    projectVisibility: NotRequired[ProjectVisibilityTypeType],  # (15)
+    publicProjectAlias: NotRequired[str],
+    resourceAccessRole: NotRequired[str],
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `description`: `str`
-- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
-- `secondarySources`:
-  `List`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `sourceVersion`: `str`
-- `secondarySourceVersions`:
-  `List`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `artifacts`:
-  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
-- `secondaryArtifacts`:
-  `List`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
-- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `environment`:
-  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
-- `serviceRole`: `str`
-- `timeoutInMinutes`: `int`
-- `queuedTimeoutInMinutes`: `int`
-- `encryptionKey`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `created`: `datetime`
-- `lastModified`: `datetime`
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `badge`: [ProjectBadgeTypeDef](./type_defs.md#projectbadgetypedef)
-- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `fileSystemLocations`:
-  `List`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
-- `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `concurrentBuildLimit`: `int`
-- `projectVisibility`:
-  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
-- `publicProjectAlias`: `str`
-- `resourceAccessRole`: `str`
-
-<a id="putresourcepolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+2. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+3. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+4. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+5. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+6. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+7. See [:material-code-braces: ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+10. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+11. See [:material-code-braces: ProjectBadgeTypeDef](./type_defs.md#projectbadgetypedef) 
+12. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+13. See [:material-code-braces: ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef) 
+14. See [:material-code-braces: ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef) 
+15. See [:material-code-brackets: ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype) 
 ## PutResourcePolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import PutResourcePolicyInputRequestTypeDef
+
+def get_value() -> PutResourcePolicyInputRequestTypeDef:
+    return {
+        "policy": ...,
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `policy`: `str`
-- `resourceArn`: `str`
-
-<a id="putresourcepolicyoutputtypedef"></a>
+```python title="Definition"
+class PutResourcePolicyInputRequestTypeDef(TypedDict):
+    policy: str,
+    resourceArn: str,
+```
 
 ## PutResourcePolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import PutResourcePolicyOutputTypeDef
+
+def get_value() -> PutResourcePolicyOutputTypeDef:
+    return {
+        "resourceArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyOutputTypeDef(TypedDict):
+    resourceArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `resourceArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registrycredentialtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegistryCredentialTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import RegistryCredentialTypeDef
+
+def get_value() -> RegistryCredentialTypeDef:
+    return {
+        "credential": ...,
+        "credentialProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegistryCredentialTypeDef(TypedDict):
+    credential: str,
+    credentialProvider: CredentialProviderTypeType,  # (1)
+```
 
-- `credential`: `str`
-- `credentialProvider`: `Literal['SECRETS_MANAGER']` (see
-  [CredentialProviderTypeType](./literals.md#credentialprovidertypetype))
-
-<a id="reportexportconfigtypedef"></a>
-
+1. See [:material-code-brackets: CredentialProviderTypeType](./literals.md#credentialprovidertypetype) 
 ## ReportExportConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportExportConfigTypeDef
+
+def get_value() -> ReportExportConfigTypeDef:
+    return {
+        "exportConfigType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportExportConfigTypeDef(TypedDict):
+    exportConfigType: NotRequired[ReportExportConfigTypeType],  # (1)
+    s3Destination: NotRequired[S3ReportExportConfigTypeDef],  # (2)
+```
 
-- `exportConfigType`:
-  [ReportExportConfigTypeType](./literals.md#reportexportconfigtypetype)
-- `s3Destination`:
-  [S3ReportExportConfigTypeDef](./type_defs.md#s3reportexportconfigtypedef)
-
-<a id="reportfiltertypedef"></a>
-
+1. See [:material-code-brackets: ReportExportConfigTypeType](./literals.md#reportexportconfigtypetype) 
+2. See [:material-code-braces: S3ReportExportConfigTypeDef](./type_defs.md#s3reportexportconfigtypedef) 
 ## ReportFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportFilterTypeDef
+
+def get_value() -> ReportFilterTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportFilterTypeDef(TypedDict):
+    status: NotRequired[ReportStatusTypeType],  # (1)
+```
 
-- `status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
-
-<a id="reportgrouptrendstatstypedef"></a>
-
+1. See [:material-code-brackets: ReportStatusTypeType](./literals.md#reportstatustypetype) 
 ## ReportGroupTrendStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportGroupTrendStatsTypeDef
+
+def get_value() -> ReportGroupTrendStatsTypeDef:
+    return {
+        "average": ...,
+    }
 ```
 
-Optional fields:
-
-- `average`: `str`
-- `max`: `str`
-- `min`: `str`
-
-<a id="reportgrouptypedef"></a>
+```python title="Definition"
+class ReportGroupTrendStatsTypeDef(TypedDict):
+    average: NotRequired[str],
+    max: NotRequired[str],
+    min: NotRequired[str],
+```
 
 ## ReportGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportGroupTypeDef
+
+def get_value() -> ReportGroupTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportGroupTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    type: NotRequired[ReportTypeType],  # (1)
+    exportConfig: NotRequired[ReportExportConfigTypeDef],  # (2)
+    created: NotRequired[datetime],
+    lastModified: NotRequired[datetime],
+    tags: NotRequired[List[TagTypeDef]],  # (3)
+    status: NotRequired[ReportGroupStatusTypeType],  # (4)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `type`: [ReportTypeType](./literals.md#reporttypetype)
-- `exportConfig`:
-  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-- `created`: `datetime`
-- `lastModified`: `datetime`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `status`:
-  [ReportGroupStatusTypeType](./literals.md#reportgroupstatustypetype)
-
-<a id="reporttypedef"></a>
-
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-brackets: ReportGroupStatusTypeType](./literals.md#reportgroupstatustypetype) 
 ## ReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportTypeDef
+
+def get_value() -> ReportTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReportTypeDef(TypedDict):
+    arn: NotRequired[str],
+    type: NotRequired[ReportTypeType],  # (1)
+    name: NotRequired[str],
+    reportGroupArn: NotRequired[str],
+    executionId: NotRequired[str],
+    status: NotRequired[ReportStatusTypeType],  # (2)
+    created: NotRequired[datetime],
+    expired: NotRequired[datetime],
+    exportConfig: NotRequired[ReportExportConfigTypeDef],  # (3)
+    truncated: NotRequired[bool],
+    testSummary: NotRequired[TestReportSummaryTypeDef],  # (4)
+    codeCoverageSummary: NotRequired[CodeCoverageReportSummaryTypeDef],  # (5)
+```
 
-- `arn`: `str`
-- `type`: [ReportTypeType](./literals.md#reporttypetype)
-- `name`: `str`
-- `reportGroupArn`: `str`
-- `executionId`: `str`
-- `status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
-- `created`: `datetime`
-- `expired`: `datetime`
-- `exportConfig`:
-  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-- `truncated`: `bool`
-- `testSummary`:
-  [TestReportSummaryTypeDef](./type_defs.md#testreportsummarytypedef)
-- `codeCoverageSummary`:
-  [CodeCoverageReportSummaryTypeDef](./type_defs.md#codecoveragereportsummarytypedef)
-
-<a id="reportwithrawdatatypedef"></a>
-
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-brackets: ReportStatusTypeType](./literals.md#reportstatustypetype) 
+3. See [:material-code-braces: ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef) 
+4. See [:material-code-braces: TestReportSummaryTypeDef](./type_defs.md#testreportsummarytypedef) 
+5. See [:material-code-braces: CodeCoverageReportSummaryTypeDef](./type_defs.md#codecoveragereportsummarytypedef) 
 ## ReportWithRawDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ReportWithRawDataTypeDef
+
+def get_value() -> ReportWithRawDataTypeDef:
+    return {
+        "reportArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `reportArn`: `str`
-- `data`: `str`
-
-<a id="resolvedartifacttypedef"></a>
+```python title="Definition"
+class ReportWithRawDataTypeDef(TypedDict):
+    reportArn: NotRequired[str],
+    data: NotRequired[str],
+```
 
 ## ResolvedArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ResolvedArtifactTypeDef
+
+def get_value() -> ResolvedArtifactTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResolvedArtifactTypeDef(TypedDict):
+    type: NotRequired[ArtifactsTypeType],  # (1)
+    location: NotRequired[str],
+    identifier: NotRequired[str],
+```
 
-- `type`: [ArtifactsTypeType](./literals.md#artifactstypetype)
-- `location`: `str`
-- `identifier`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ArtifactsTypeType](./literals.md#artifactstypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retrybuildbatchinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetryBuildBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import RetryBuildBatchInputRequestTypeDef
+
+def get_value() -> RetryBuildBatchInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RetryBuildBatchInputRequestTypeDef(TypedDict):
+    id: NotRequired[str],
+    idempotencyToken: NotRequired[str],
+    retryType: NotRequired[RetryBuildBatchTypeType],  # (1)
+```
 
-- `id`: `str`
-- `idempotencyToken`: `str`
-- `retryType`: [RetryBuildBatchTypeType](./literals.md#retrybuildbatchtypetype)
-
-<a id="retrybuildbatchoutputtypedef"></a>
-
+1. See [:material-code-brackets: RetryBuildBatchTypeType](./literals.md#retrybuildbatchtypetype) 
 ## RetryBuildBatchOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import RetryBuildBatchOutputTypeDef
+
+def get_value() -> RetryBuildBatchOutputTypeDef:
+    return {
+        "buildBatch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetryBuildBatchOutputTypeDef(TypedDict):
+    buildBatch: BuildBatchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="retrybuildinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildBatchTypeDef](./type_defs.md#buildbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RetryBuildInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import RetryBuildInputRequestTypeDef
+
+def get_value() -> RetryBuildInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `idempotencyToken`: `str`
-
-<a id="retrybuildoutputtypedef"></a>
+```python title="Definition"
+class RetryBuildInputRequestTypeDef(TypedDict):
+    id: NotRequired[str],
+    idempotencyToken: NotRequired[str],
+```
 
 ## RetryBuildOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import RetryBuildOutputTypeDef
+
+def get_value() -> RetryBuildOutputTypeDef:
+    return {
+        "build": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetryBuildOutputTypeDef(TypedDict):
+    build: BuildTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="s3logsconfigtypedef"></a>
-
+1. See [:material-code-braces: BuildTypeDef](./type_defs.md#buildtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3LogsConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import S3LogsConfigTypeDef
+
+def get_value() -> S3LogsConfigTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3LogsConfigTypeDef(TypedDict):
+    status: LogsConfigStatusTypeType,  # (1)
+    location: NotRequired[str],
+    encryptionDisabled: NotRequired[bool],
+    bucketOwnerAccess: NotRequired[BucketOwnerAccessType],  # (2)
+```
 
-- `status`: [LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype)
-
-Optional fields:
-
-- `location`: `str`
-- `encryptionDisabled`: `bool`
-- `bucketOwnerAccess`:
-  [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
-
-<a id="s3reportexportconfigtypedef"></a>
-
+1. See [:material-code-brackets: LogsConfigStatusTypeType](./literals.md#logsconfigstatustypetype) 
+2. See [:material-code-brackets: BucketOwnerAccessType](./literals.md#bucketowneraccesstype) 
 ## S3ReportExportConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import S3ReportExportConfigTypeDef
+
+def get_value() -> S3ReportExportConfigTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3ReportExportConfigTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    bucketOwner: NotRequired[str],
+    path: NotRequired[str],
+    packaging: NotRequired[ReportPackagingTypeType],  # (1)
+    encryptionKey: NotRequired[str],
+    encryptionDisabled: NotRequired[bool],
+```
 
-- `bucket`: `str`
-- `bucketOwner`: `str`
-- `path`: `str`
-- `packaging`: [ReportPackagingTypeType](./literals.md#reportpackagingtypetype)
-- `encryptionKey`: `str`
-- `encryptionDisabled`: `bool`
-
-<a id="sourceauthtypedef"></a>
-
+1. See [:material-code-brackets: ReportPackagingTypeType](./literals.md#reportpackagingtypetype) 
 ## SourceAuthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import SourceAuthTypeDef
+
+def get_value() -> SourceAuthTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceAuthTypeDef(TypedDict):
+    type: SourceAuthTypeType,  # (1)
+    resource: NotRequired[str],
+```
 
-- `type`: `Literal['OAUTH']` (see
-  [SourceAuthTypeType](./literals.md#sourceauthtypetype))
-
-Optional fields:
-
-- `resource`: `str`
-
-<a id="sourcecredentialsinfotypedef"></a>
-
+1. See [:material-code-brackets: SourceAuthTypeType](./literals.md#sourceauthtypetype) 
 ## SourceCredentialsInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import SourceCredentialsInfoTypeDef
+
+def get_value() -> SourceCredentialsInfoTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceCredentialsInfoTypeDef(TypedDict):
+    arn: NotRequired[str],
+    serverType: NotRequired[ServerTypeType],  # (1)
+    authType: NotRequired[AuthTypeType],  # (2)
+```
 
-- `arn`: `str`
-- `serverType`: [ServerTypeType](./literals.md#servertypetype)
-- `authType`: [AuthTypeType](./literals.md#authtypetype)
-
-<a id="startbuildbatchinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServerTypeType](./literals.md#servertypetype) 
+2. See [:material-code-brackets: AuthTypeType](./literals.md#authtypetype) 
 ## StartBuildBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StartBuildBatchInputRequestTypeDef
+
+def get_value() -> StartBuildBatchInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBuildBatchInputRequestTypeDef(TypedDict):
+    projectName: str,
+    secondarySourcesOverride: NotRequired[Sequence[ProjectSourceTypeDef]],  # (1)
+    secondarySourcesVersionOverride: NotRequired[Sequence[ProjectSourceVersionTypeDef]],  # (2)
+    sourceVersion: NotRequired[str],
+    artifactsOverride: NotRequired[ProjectArtifactsTypeDef],  # (3)
+    secondaryArtifactsOverride: NotRequired[Sequence[ProjectArtifactsTypeDef]],  # (4)
+    environmentVariablesOverride: NotRequired[Sequence[EnvironmentVariableTypeDef]],  # (5)
+    sourceTypeOverride: NotRequired[SourceTypeType],  # (6)
+    sourceLocationOverride: NotRequired[str],
+    sourceAuthOverride: NotRequired[SourceAuthTypeDef],  # (7)
+    gitCloneDepthOverride: NotRequired[int],
+    gitSubmodulesConfigOverride: NotRequired[GitSubmodulesConfigTypeDef],  # (8)
+    buildspecOverride: NotRequired[str],
+    insecureSslOverride: NotRequired[bool],
+    reportBuildBatchStatusOverride: NotRequired[bool],
+    environmentTypeOverride: NotRequired[EnvironmentTypeType],  # (9)
+    imageOverride: NotRequired[str],
+    computeTypeOverride: NotRequired[ComputeTypeType],  # (10)
+    certificateOverride: NotRequired[str],
+    cacheOverride: NotRequired[ProjectCacheTypeDef],  # (11)
+    serviceRoleOverride: NotRequired[str],
+    privilegedModeOverride: NotRequired[bool],
+    buildTimeoutInMinutesOverride: NotRequired[int],
+    queuedTimeoutInMinutesOverride: NotRequired[int],
+    encryptionKeyOverride: NotRequired[str],
+    idempotencyToken: NotRequired[str],
+    logsConfigOverride: NotRequired[LogsConfigTypeDef],  # (12)
+    registryCredentialOverride: NotRequired[RegistryCredentialTypeDef],  # (13)
+    imagePullCredentialsTypeOverride: NotRequired[ImagePullCredentialsTypeType],  # (14)
+    buildBatchConfigOverride: NotRequired[ProjectBuildBatchConfigTypeDef],  # (15)
+    debugSessionEnabled: NotRequired[bool],
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `secondarySourcesOverride`:
-  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `secondarySourcesVersionOverride`:
-  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `sourceVersion`: `str`
-- `artifactsOverride`:
-  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
-- `secondaryArtifactsOverride`:
-  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
-- `environmentVariablesOverride`:
-  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-- `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
-- `sourceLocationOverride`: `str`
-- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
-- `gitCloneDepthOverride`: `int`
-- `gitSubmodulesConfigOverride`:
-  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
-- `buildspecOverride`: `str`
-- `insecureSslOverride`: `bool`
-- `reportBuildBatchStatusOverride`: `bool`
-- `environmentTypeOverride`:
-  [EnvironmentTypeType](./literals.md#environmenttypetype)
-- `imageOverride`: `str`
-- `computeTypeOverride`: [ComputeTypeType](./literals.md#computetypetype)
-- `certificateOverride`: `str`
-- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `serviceRoleOverride`: `str`
-- `privilegedModeOverride`: `bool`
-- `buildTimeoutInMinutesOverride`: `int`
-- `queuedTimeoutInMinutesOverride`: `int`
-- `encryptionKeyOverride`: `str`
-- `idempotencyToken`: `str`
-- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `registryCredentialOverride`:
-  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
-- `imagePullCredentialsTypeOverride`:
-  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
-- `buildBatchConfigOverride`:
-  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `debugSessionEnabled`: `bool`
-
-<a id="startbuildbatchoutputtypedef"></a>
-
+1. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+2. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+3. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+4. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+5. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
+6. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+7. See [:material-code-braces: SourceAuthTypeDef](./type_defs.md#sourceauthtypedef) 
+8. See [:material-code-braces: GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef) 
+9. See [:material-code-brackets: EnvironmentTypeType](./literals.md#environmenttypetype) 
+10. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+11. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+12. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+13. See [:material-code-braces: RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef) 
+14. See [:material-code-brackets: ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype) 
+15. See [:material-code-braces: ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef) 
 ## StartBuildBatchOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StartBuildBatchOutputTypeDef
+
+def get_value() -> StartBuildBatchOutputTypeDef:
+    return {
+        "buildBatch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBuildBatchOutputTypeDef(TypedDict):
+    buildBatch: BuildBatchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startbuildinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildBatchTypeDef](./type_defs.md#buildbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartBuildInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StartBuildInputRequestTypeDef
+
+def get_value() -> StartBuildInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBuildInputRequestTypeDef(TypedDict):
+    projectName: str,
+    secondarySourcesOverride: NotRequired[Sequence[ProjectSourceTypeDef]],  # (1)
+    secondarySourcesVersionOverride: NotRequired[Sequence[ProjectSourceVersionTypeDef]],  # (2)
+    sourceVersion: NotRequired[str],
+    artifactsOverride: NotRequired[ProjectArtifactsTypeDef],  # (3)
+    secondaryArtifactsOverride: NotRequired[Sequence[ProjectArtifactsTypeDef]],  # (4)
+    environmentVariablesOverride: NotRequired[Sequence[EnvironmentVariableTypeDef]],  # (5)
+    sourceTypeOverride: NotRequired[SourceTypeType],  # (6)
+    sourceLocationOverride: NotRequired[str],
+    sourceAuthOverride: NotRequired[SourceAuthTypeDef],  # (7)
+    gitCloneDepthOverride: NotRequired[int],
+    gitSubmodulesConfigOverride: NotRequired[GitSubmodulesConfigTypeDef],  # (8)
+    buildspecOverride: NotRequired[str],
+    insecureSslOverride: NotRequired[bool],
+    reportBuildStatusOverride: NotRequired[bool],
+    buildStatusConfigOverride: NotRequired[BuildStatusConfigTypeDef],  # (9)
+    environmentTypeOverride: NotRequired[EnvironmentTypeType],  # (10)
+    imageOverride: NotRequired[str],
+    computeTypeOverride: NotRequired[ComputeTypeType],  # (11)
+    certificateOverride: NotRequired[str],
+    cacheOverride: NotRequired[ProjectCacheTypeDef],  # (12)
+    serviceRoleOverride: NotRequired[str],
+    privilegedModeOverride: NotRequired[bool],
+    timeoutInMinutesOverride: NotRequired[int],
+    queuedTimeoutInMinutesOverride: NotRequired[int],
+    encryptionKeyOverride: NotRequired[str],
+    idempotencyToken: NotRequired[str],
+    logsConfigOverride: NotRequired[LogsConfigTypeDef],  # (13)
+    registryCredentialOverride: NotRequired[RegistryCredentialTypeDef],  # (14)
+    imagePullCredentialsTypeOverride: NotRequired[ImagePullCredentialsTypeType],  # (15)
+    debugSessionEnabled: NotRequired[bool],
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `secondarySourcesOverride`:
-  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `secondarySourcesVersionOverride`:
-  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `sourceVersion`: `str`
-- `artifactsOverride`:
-  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
-- `secondaryArtifactsOverride`:
-  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
-- `environmentVariablesOverride`:
-  `Sequence`\[[EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef)\]
-- `sourceTypeOverride`: [SourceTypeType](./literals.md#sourcetypetype)
-- `sourceLocationOverride`: `str`
-- `sourceAuthOverride`: [SourceAuthTypeDef](./type_defs.md#sourceauthtypedef)
-- `gitCloneDepthOverride`: `int`
-- `gitSubmodulesConfigOverride`:
-  [GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef)
-- `buildspecOverride`: `str`
-- `insecureSslOverride`: `bool`
-- `reportBuildStatusOverride`: `bool`
-- `buildStatusConfigOverride`:
-  [BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef)
-- `environmentTypeOverride`:
-  [EnvironmentTypeType](./literals.md#environmenttypetype)
-- `imageOverride`: `str`
-- `computeTypeOverride`: [ComputeTypeType](./literals.md#computetypetype)
-- `certificateOverride`: `str`
-- `cacheOverride`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `serviceRoleOverride`: `str`
-- `privilegedModeOverride`: `bool`
-- `timeoutInMinutesOverride`: `int`
-- `queuedTimeoutInMinutesOverride`: `int`
-- `encryptionKeyOverride`: `str`
-- `idempotencyToken`: `str`
-- `logsConfigOverride`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `registryCredentialOverride`:
-  [RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef)
-- `imagePullCredentialsTypeOverride`:
-  [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
-- `debugSessionEnabled`: `bool`
-
-<a id="startbuildoutputtypedef"></a>
-
+1. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+2. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+3. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+4. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+5. See [:material-code-braces: EnvironmentVariableTypeDef](./type_defs.md#environmentvariabletypedef) 
+6. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+7. See [:material-code-braces: SourceAuthTypeDef](./type_defs.md#sourceauthtypedef) 
+8. See [:material-code-braces: GitSubmodulesConfigTypeDef](./type_defs.md#gitsubmodulesconfigtypedef) 
+9. See [:material-code-braces: BuildStatusConfigTypeDef](./type_defs.md#buildstatusconfigtypedef) 
+10. See [:material-code-brackets: EnvironmentTypeType](./literals.md#environmenttypetype) 
+11. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
+12. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+13. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+14. See [:material-code-braces: RegistryCredentialTypeDef](./type_defs.md#registrycredentialtypedef) 
+15. See [:material-code-brackets: ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype) 
 ## StartBuildOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StartBuildOutputTypeDef
+
+def get_value() -> StartBuildOutputTypeDef:
+    return {
+        "build": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartBuildOutputTypeDef(TypedDict):
+    build: BuildTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopbuildbatchinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildTypeDef](./type_defs.md#buildtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopBuildBatchInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StopBuildBatchInputRequestTypeDef
+
+def get_value() -> StopBuildBatchInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="stopbuildbatchoutputtypedef"></a>
+```python title="Definition"
+class StopBuildBatchInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## StopBuildBatchOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StopBuildBatchOutputTypeDef
+
+def get_value() -> StopBuildBatchOutputTypeDef:
+    return {
+        "buildBatch": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopBuildBatchOutputTypeDef(TypedDict):
+    buildBatch: BuildBatchTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopbuildinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BuildBatchTypeDef](./type_defs.md#buildbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopBuildInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StopBuildInputRequestTypeDef
+
+def get_value() -> StopBuildInputRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="stopbuildoutputtypedef"></a>
+```python title="Definition"
+class StopBuildInputRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## StopBuildOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import StopBuildOutputTypeDef
+
+def get_value() -> StopBuildOutputTypeDef:
+    return {
+        "build": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopBuildOutputTypeDef(TypedDict):
+    build: BuildTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: BuildTypeDef](./type_defs.md#buildtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="testcasefiltertypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TestCaseFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import TestCaseFilterTypeDef
+
+def get_value() -> TestCaseFilterTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
-
-- `status`: `str`
-- `keyword`: `str`
-
-<a id="testcasetypedef"></a>
+```python title="Definition"
+class TestCaseFilterTypeDef(TypedDict):
+    status: NotRequired[str],
+    keyword: NotRequired[str],
+```
 
 ## TestCaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import TestCaseTypeDef
+
+def get_value() -> TestCaseTypeDef:
+    return {
+        "reportArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `reportArn`: `str`
-- `testRawDataPath`: `str`
-- `prefix`: `str`
-- `name`: `str`
-- `status`: `str`
-- `durationInNanoSeconds`: `int`
-- `message`: `str`
-- `expired`: `datetime`
-
-<a id="testreportsummarytypedef"></a>
+```python title="Definition"
+class TestCaseTypeDef(TypedDict):
+    reportArn: NotRequired[str],
+    testRawDataPath: NotRequired[str],
+    prefix: NotRequired[str],
+    name: NotRequired[str],
+    status: NotRequired[str],
+    durationInNanoSeconds: NotRequired[int],
+    message: NotRequired[str],
+    expired: NotRequired[datetime],
+```
 
 ## TestReportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import TestReportSummaryTypeDef
+
+def get_value() -> TestReportSummaryTypeDef:
+    return {
+        "total": ...,
+        "statusCounts": ...,
+        "durationInNanoSeconds": ...,
+    }
 ```
 
-Required fields:
-
-- `total`: `int`
-- `statusCounts`: `Dict`\[`str`, `int`\]
-- `durationInNanoSeconds`: `int`
-
-<a id="updateprojectinputrequesttypedef"></a>
+```python title="Definition"
+class TestReportSummaryTypeDef(TypedDict):
+    total: int,
+    statusCounts: Dict[str, int],
+    durationInNanoSeconds: int,
+```
 
 ## UpdateProjectInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateProjectInputRequestTypeDef
+
+def get_value() -> UpdateProjectInputRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectInputRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    source: NotRequired[ProjectSourceTypeDef],  # (1)
+    secondarySources: NotRequired[Sequence[ProjectSourceTypeDef]],  # (2)
+    sourceVersion: NotRequired[str],
+    secondarySourceVersions: NotRequired[Sequence[ProjectSourceVersionTypeDef]],  # (3)
+    artifacts: NotRequired[ProjectArtifactsTypeDef],  # (4)
+    secondaryArtifacts: NotRequired[Sequence[ProjectArtifactsTypeDef]],  # (5)
+    cache: NotRequired[ProjectCacheTypeDef],  # (6)
+    environment: NotRequired[ProjectEnvironmentTypeDef],  # (7)
+    serviceRole: NotRequired[str],
+    timeoutInMinutes: NotRequired[int],
+    queuedTimeoutInMinutes: NotRequired[int],
+    encryptionKey: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+    vpcConfig: NotRequired[VpcConfigTypeDef],  # (9)
+    badgeEnabled: NotRequired[bool],
+    logsConfig: NotRequired[LogsConfigTypeDef],  # (10)
+    fileSystemLocations: NotRequired[Sequence[ProjectFileSystemLocationTypeDef]],  # (11)
+    buildBatchConfig: NotRequired[ProjectBuildBatchConfigTypeDef],  # (12)
+    concurrentBuildLimit: NotRequired[int],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `source`: [ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)
-- `secondarySources`:
-  `Sequence`\[[ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef)\]
-- `sourceVersion`: `str`
-- `secondarySourceVersions`:
-  `Sequence`\[[ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef)\]
-- `artifacts`:
-  [ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)
-- `secondaryArtifacts`:
-  `Sequence`\[[ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef)\]
-- `cache`: [ProjectCacheTypeDef](./type_defs.md#projectcachetypedef)
-- `environment`:
-  [ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef)
-- `serviceRole`: `str`
-- `timeoutInMinutes`: `int`
-- `queuedTimeoutInMinutes`: `int`
-- `encryptionKey`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `vpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `badgeEnabled`: `bool`
-- `logsConfig`: [LogsConfigTypeDef](./type_defs.md#logsconfigtypedef)
-- `fileSystemLocations`:
-  `Sequence`\[[ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef)\]
-- `buildBatchConfig`:
-  [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
-- `concurrentBuildLimit`: `int`
-
-<a id="updateprojectoutputtypedef"></a>
-
+1. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+2. See [:material-code-braces: ProjectSourceTypeDef](./type_defs.md#projectsourcetypedef) 
+3. See [:material-code-braces: ProjectSourceVersionTypeDef](./type_defs.md#projectsourceversiontypedef) 
+4. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+5. See [:material-code-braces: ProjectArtifactsTypeDef](./type_defs.md#projectartifactstypedef) 
+6. See [:material-code-braces: ProjectCacheTypeDef](./type_defs.md#projectcachetypedef) 
+7. See [:material-code-braces: ProjectEnvironmentTypeDef](./type_defs.md#projectenvironmenttypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+10. See [:material-code-braces: LogsConfigTypeDef](./type_defs.md#logsconfigtypedef) 
+11. See [:material-code-braces: ProjectFileSystemLocationTypeDef](./type_defs.md#projectfilesystemlocationtypedef) 
+12. See [:material-code-braces: ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef) 
 ## UpdateProjectOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateProjectOutputTypeDef
+
+def get_value() -> UpdateProjectOutputTypeDef:
+    return {
+        "project": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectOutputTypeDef(TypedDict):
+    project: ProjectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateprojectvisibilityinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProjectTypeDef](./type_defs.md#projecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateProjectVisibilityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityInputRequestTypeDef
+
+def get_value() -> UpdateProjectVisibilityInputRequestTypeDef:
+    return {
+        "projectArn": ...,
+        "projectVisibility": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectVisibilityInputRequestTypeDef(TypedDict):
+    projectArn: str,
+    projectVisibility: ProjectVisibilityTypeType,  # (1)
+    resourceAccessRole: NotRequired[str],
+```
 
-- `projectArn`: `str`
-- `projectVisibility`:
-  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
-
-Optional fields:
-
-- `resourceAccessRole`: `str`
-
-<a id="updateprojectvisibilityoutputtypedef"></a>
-
+1. See [:material-code-brackets: ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype) 
 ## UpdateProjectVisibilityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateProjectVisibilityOutputTypeDef
+
+def get_value() -> UpdateProjectVisibilityOutputTypeDef:
+    return {
+        "projectArn": ...,
+        "publicProjectAlias": ...,
+        "projectVisibility": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateProjectVisibilityOutputTypeDef(TypedDict):
+    projectArn: str,
+    publicProjectAlias: str,
+    projectVisibility: ProjectVisibilityTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `projectArn`: `str`
-- `publicProjectAlias`: `str`
-- `projectVisibility`:
-  [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatereportgroupinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateReportGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateReportGroupInputRequestTypeDef
+
+def get_value() -> UpdateReportGroupInputRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportGroupInputRequestTypeDef(TypedDict):
+    arn: str,
+    exportConfig: NotRequired[ReportExportConfigTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `exportConfig`:
-  [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="updatereportgroupoutputtypedef"></a>
-
+1. See [:material-code-braces: ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateReportGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateReportGroupOutputTypeDef
+
+def get_value() -> UpdateReportGroupOutputTypeDef:
+    return {
+        "reportGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReportGroupOutputTypeDef(TypedDict):
+    reportGroup: ReportGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatewebhookinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportGroupTypeDef](./type_defs.md#reportgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWebhookInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateWebhookInputRequestTypeDef
+
+def get_value() -> UpdateWebhookInputRequestTypeDef:
+    return {
+        "projectName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWebhookInputRequestTypeDef(TypedDict):
+    projectName: str,
+    branchFilter: NotRequired[str],
+    rotateSecret: NotRequired[bool],
+    filterGroups: NotRequired[Sequence[Sequence[WebhookFilterTypeDef]]],  # (1)
+    buildType: NotRequired[WebhookBuildTypeType],  # (2)
+```
 
-- `projectName`: `str`
-
-Optional fields:
-
-- `branchFilter`: `str`
-- `rotateSecret`: `bool`
-- `filterGroups`:
-  `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
-- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
-
-<a id="updatewebhookoutputtypedef"></a>
-
+1. See [:material-code-braces: WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef) 
+2. See [:material-code-brackets: WebhookBuildTypeType](./literals.md#webhookbuildtypetype) 
 ## UpdateWebhookOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import UpdateWebhookOutputTypeDef
+
+def get_value() -> UpdateWebhookOutputTypeDef:
+    return {
+        "webhook": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWebhookOutputTypeDef(TypedDict):
+    webhook: WebhookTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcconfigtypedef"></a>
-
+1. See [:material-code-braces: WebhookTypeDef](./type_defs.md#webhooktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import VpcConfigTypeDef
+
+def get_value() -> VpcConfigTypeDef:
+    return {
+        "vpcId": ...,
+    }
 ```
 
-Optional fields:
-
-- `vpcId`: `str`
-- `subnets`: `List`\[`str`\]
-- `securityGroupIds`: `List`\[`str`\]
-
-<a id="webhookfiltertypedef"></a>
+```python title="Definition"
+class VpcConfigTypeDef(TypedDict):
+    vpcId: NotRequired[str],
+    subnets: NotRequired[List[str]],
+    securityGroupIds: NotRequired[List[str]],
+```
 
 ## WebhookFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import WebhookFilterTypeDef
+
+def get_value() -> WebhookFilterTypeDef:
+    return {
+        "type": ...,
+        "pattern": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WebhookFilterTypeDef(TypedDict):
+    type: WebhookFilterTypeType,  # (1)
+    pattern: str,
+    excludeMatchedPattern: NotRequired[bool],
+```
 
-- `type`: [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
-- `pattern`: `str`
-
-Optional fields:
-
-- `excludeMatchedPattern`: `bool`
-
-<a id="webhooktypedef"></a>
-
+1. See [:material-code-brackets: WebhookFilterTypeType](./literals.md#webhookfiltertypetype) 
 ## WebhookTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codebuild.type_defs import WebhookTypeDef
+
+def get_value() -> WebhookTypeDef:
+    return {
+        "url": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WebhookTypeDef(TypedDict):
+    url: NotRequired[str],
+    payloadUrl: NotRequired[str],
+    secret: NotRequired[str],
+    branchFilter: NotRequired[str],
+    filterGroups: NotRequired[List[List[WebhookFilterTypeDef]]],  # (1)
+    buildType: NotRequired[WebhookBuildTypeType],  # (2)
+    lastModifiedSecret: NotRequired[datetime],
+```
 
-- `url`: `str`
-- `payloadUrl`: `str`
-- `secret`: `str`
-- `branchFilter`: `str`
-- `filterGroups`:
-  `List`\[`List`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
-- `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
-- `lastModifiedSecret`: `datetime`
+1. See [:material-code-braces: WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef) 
+2. See [:material-code-brackets: WebhookBuildTypeType](./literals.md#webhookbuildtypetype) 

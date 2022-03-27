@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-redshift-module"></a>
-
-# Type annotations for boto3 Redshift module
+#  Redshift module
 
 > [Index](../README.md) > Redshift
 
-Auto-generated documentation for
-[Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
-type annotations stubs module
-[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
+!!! note ""
 
-- [Type annotations for boto3 Redshift module](#type-annotations-for-boto3-redshift-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [RedshiftClient](#redshiftclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
+    type annotations stubs module [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Redshift`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[redshift]'
 python -m pip install mypy-boto3-redshift
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,298 +42,37 @@ python -m pip install mypy-boto3-redshift
 python -m pip uninstall -y mypy-boto3-redshift
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="redshiftclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## RedshiftClient
 
-Type annotations for `boto3.client("redshift")` as
-[RedshiftClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("redshift")` as [RedshiftClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_redshift.client import RedshiftClient
+
+def get_client() -> RedshiftClient:
+    return Session().cleint("redshift")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_reserved_node_exchange](./client.md#accept_reserved_node_exchange)
-- [add_partner](./client.md#add_partner)
-- [associate_data_share_consumer](./client.md#associate_data_share_consumer)
-- [authorize_cluster_security_group_ingress](./client.md#authorize_cluster_security_group_ingress)
-- [authorize_data_share](./client.md#authorize_data_share)
-- [authorize_endpoint_access](./client.md#authorize_endpoint_access)
-- [authorize_snapshot_access](./client.md#authorize_snapshot_access)
-- [batch_delete_cluster_snapshots](./client.md#batch_delete_cluster_snapshots)
-- [batch_modify_cluster_snapshots](./client.md#batch_modify_cluster_snapshots)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_resize](./client.md#cancel_resize)
-- [copy_cluster_snapshot](./client.md#copy_cluster_snapshot)
-- [create_authentication_profile](./client.md#create_authentication_profile)
-- [create_cluster](./client.md#create_cluster)
-- [create_cluster_parameter_group](./client.md#create_cluster_parameter_group)
-- [create_cluster_security_group](./client.md#create_cluster_security_group)
-- [create_cluster_snapshot](./client.md#create_cluster_snapshot)
-- [create_cluster_subnet_group](./client.md#create_cluster_subnet_group)
-- [create_endpoint_access](./client.md#create_endpoint_access)
-- [create_event_subscription](./client.md#create_event_subscription)
-- [create_hsm_client_certificate](./client.md#create_hsm_client_certificate)
-- [create_hsm_configuration](./client.md#create_hsm_configuration)
-- [create_scheduled_action](./client.md#create_scheduled_action)
-- [create_snapshot_copy_grant](./client.md#create_snapshot_copy_grant)
-- [create_snapshot_schedule](./client.md#create_snapshot_schedule)
-- [create_tags](./client.md#create_tags)
-- [create_usage_limit](./client.md#create_usage_limit)
-- [deauthorize_data_share](./client.md#deauthorize_data_share)
-- [delete_authentication_profile](./client.md#delete_authentication_profile)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_cluster_parameter_group](./client.md#delete_cluster_parameter_group)
-- [delete_cluster_security_group](./client.md#delete_cluster_security_group)
-- [delete_cluster_snapshot](./client.md#delete_cluster_snapshot)
-- [delete_cluster_subnet_group](./client.md#delete_cluster_subnet_group)
-- [delete_endpoint_access](./client.md#delete_endpoint_access)
-- [delete_event_subscription](./client.md#delete_event_subscription)
-- [delete_hsm_client_certificate](./client.md#delete_hsm_client_certificate)
-- [delete_hsm_configuration](./client.md#delete_hsm_configuration)
-- [delete_partner](./client.md#delete_partner)
-- [delete_scheduled_action](./client.md#delete_scheduled_action)
-- [delete_snapshot_copy_grant](./client.md#delete_snapshot_copy_grant)
-- [delete_snapshot_schedule](./client.md#delete_snapshot_schedule)
-- [delete_tags](./client.md#delete_tags)
-- [delete_usage_limit](./client.md#delete_usage_limit)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_authentication_profiles](./client.md#describe_authentication_profiles)
-- [describe_cluster_db_revisions](./client.md#describe_cluster_db_revisions)
-- [describe_cluster_parameter_groups](./client.md#describe_cluster_parameter_groups)
-- [describe_cluster_parameters](./client.md#describe_cluster_parameters)
-- [describe_cluster_security_groups](./client.md#describe_cluster_security_groups)
-- [describe_cluster_snapshots](./client.md#describe_cluster_snapshots)
-- [describe_cluster_subnet_groups](./client.md#describe_cluster_subnet_groups)
-- [describe_cluster_tracks](./client.md#describe_cluster_tracks)
-- [describe_cluster_versions](./client.md#describe_cluster_versions)
-- [describe_clusters](./client.md#describe_clusters)
-- [describe_data_shares](./client.md#describe_data_shares)
-- [describe_data_shares_for_consumer](./client.md#describe_data_shares_for_consumer)
-- [describe_data_shares_for_producer](./client.md#describe_data_shares_for_producer)
-- [describe_default_cluster_parameters](./client.md#describe_default_cluster_parameters)
-- [describe_endpoint_access](./client.md#describe_endpoint_access)
-- [describe_endpoint_authorization](./client.md#describe_endpoint_authorization)
-- [describe_event_categories](./client.md#describe_event_categories)
-- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
-- [describe_events](./client.md#describe_events)
-- [describe_hsm_client_certificates](./client.md#describe_hsm_client_certificates)
-- [describe_hsm_configurations](./client.md#describe_hsm_configurations)
-- [describe_logging_status](./client.md#describe_logging_status)
-- [describe_node_configuration_options](./client.md#describe_node_configuration_options)
-- [describe_orderable_cluster_options](./client.md#describe_orderable_cluster_options)
-- [describe_partners](./client.md#describe_partners)
-- [describe_reserved_node_exchange_status](./client.md#describe_reserved_node_exchange_status)
-- [describe_reserved_node_offerings](./client.md#describe_reserved_node_offerings)
-- [describe_reserved_nodes](./client.md#describe_reserved_nodes)
-- [describe_resize](./client.md#describe_resize)
-- [describe_scheduled_actions](./client.md#describe_scheduled_actions)
-- [describe_snapshot_copy_grants](./client.md#describe_snapshot_copy_grants)
-- [describe_snapshot_schedules](./client.md#describe_snapshot_schedules)
-- [describe_storage](./client.md#describe_storage)
-- [describe_table_restore_status](./client.md#describe_table_restore_status)
-- [describe_tags](./client.md#describe_tags)
-- [describe_usage_limits](./client.md#describe_usage_limits)
-- [disable_logging](./client.md#disable_logging)
-- [disable_snapshot_copy](./client.md#disable_snapshot_copy)
-- [disassociate_data_share_consumer](./client.md#disassociate_data_share_consumer)
-- [enable_logging](./client.md#enable_logging)
-- [enable_snapshot_copy](./client.md#enable_snapshot_copy)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_cluster_credentials](./client.md#get_cluster_credentials)
-- [get_paginator](./client.md#get_paginator)
-- [get_reserved_node_exchange_configuration_options](./client.md#get_reserved_node_exchange_configuration_options)
-- [get_reserved_node_exchange_offerings](./client.md#get_reserved_node_exchange_offerings)
-- [get_waiter](./client.md#get_waiter)
-- [modify_aqua_configuration](./client.md#modify_aqua_configuration)
-- [modify_authentication_profile](./client.md#modify_authentication_profile)
-- [modify_cluster](./client.md#modify_cluster)
-- [modify_cluster_db_revision](./client.md#modify_cluster_db_revision)
-- [modify_cluster_iam_roles](./client.md#modify_cluster_iam_roles)
-- [modify_cluster_maintenance](./client.md#modify_cluster_maintenance)
-- [modify_cluster_parameter_group](./client.md#modify_cluster_parameter_group)
-- [modify_cluster_snapshot](./client.md#modify_cluster_snapshot)
-- [modify_cluster_snapshot_schedule](./client.md#modify_cluster_snapshot_schedule)
-- [modify_cluster_subnet_group](./client.md#modify_cluster_subnet_group)
-- [modify_endpoint_access](./client.md#modify_endpoint_access)
-- [modify_event_subscription](./client.md#modify_event_subscription)
-- [modify_scheduled_action](./client.md#modify_scheduled_action)
-- [modify_snapshot_copy_retention_period](./client.md#modify_snapshot_copy_retention_period)
-- [modify_snapshot_schedule](./client.md#modify_snapshot_schedule)
-- [modify_usage_limit](./client.md#modify_usage_limit)
-- [pause_cluster](./client.md#pause_cluster)
-- [purchase_reserved_node_offering](./client.md#purchase_reserved_node_offering)
-- [reboot_cluster](./client.md#reboot_cluster)
-- [reject_data_share](./client.md#reject_data_share)
-- [reset_cluster_parameter_group](./client.md#reset_cluster_parameter_group)
-- [resize_cluster](./client.md#resize_cluster)
-- [restore_from_cluster_snapshot](./client.md#restore_from_cluster_snapshot)
-- [restore_table_from_cluster_snapshot](./client.md#restore_table_from_cluster_snapshot)
-- [resume_cluster](./client.md#resume_cluster)
-- [revoke_cluster_security_group_ingress](./client.md#revoke_cluster_security_group_ingress)
-- [revoke_endpoint_access](./client.md#revoke_endpoint_access)
-- [revoke_snapshot_access](./client.md#revoke_snapshot_access)
-- [rotate_encryption_key](./client.md#rotate_encryption_key)
-- [update_partner_status](./client.md#update_partner_status)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-RedshiftClient [exceptions](./client.md#exceptions)
-
-- AccessToClusterDeniedFault
-- AccessToSnapshotDeniedFault
-- AuthenticationProfileAlreadyExistsFault
-- AuthenticationProfileNotFoundFault
-- AuthenticationProfileQuotaExceededFault
-- AuthorizationAlreadyExistsFault
-- AuthorizationNotFoundFault
-- AuthorizationQuotaExceededFault
-- BatchDeleteRequestSizeExceededFault
-- BatchModifyClusterSnapshotsLimitExceededFault
-- BucketNotFoundFault
-- ClientError
-- ClusterAlreadyExistsFault
-- ClusterNotFoundFault
-- ClusterOnLatestRevisionFault
-- ClusterParameterGroupAlreadyExistsFault
-- ClusterParameterGroupNotFoundFault
-- ClusterParameterGroupQuotaExceededFault
-- ClusterQuotaExceededFault
-- ClusterSecurityGroupAlreadyExistsFault
-- ClusterSecurityGroupNotFoundFault
-- ClusterSecurityGroupQuotaExceededFault
-- ClusterSnapshotAlreadyExistsFault
-- ClusterSnapshotNotFoundFault
-- ClusterSnapshotQuotaExceededFault
-- ClusterSubnetGroupAlreadyExistsFault
-- ClusterSubnetGroupNotFoundFault
-- ClusterSubnetGroupQuotaExceededFault
-- ClusterSubnetQuotaExceededFault
-- CopyToRegionDisabledFault
-- DependentServiceRequestThrottlingFault
-- DependentServiceUnavailableFault
-- EndpointAlreadyExistsFault
-- EndpointAuthorizationAlreadyExistsFault
-- EndpointAuthorizationNotFoundFault
-- EndpointAuthorizationsPerClusterLimitExceededFault
-- EndpointNotFoundFault
-- EndpointsPerAuthorizationLimitExceededFault
-- EndpointsPerClusterLimitExceededFault
-- EventSubscriptionQuotaExceededFault
-- HsmClientCertificateAlreadyExistsFault
-- HsmClientCertificateNotFoundFault
-- HsmClientCertificateQuotaExceededFault
-- HsmConfigurationAlreadyExistsFault
-- HsmConfigurationNotFoundFault
-- HsmConfigurationQuotaExceededFault
-- InProgressTableRestoreQuotaExceededFault
-- IncompatibleOrderableOptions
-- InsufficientClusterCapacityFault
-- InsufficientS3BucketPolicyFault
-- InvalidAuthenticationProfileRequestFault
-- InvalidAuthorizationStateFault
-- InvalidClusterParameterGroupStateFault
-- InvalidClusterSecurityGroupStateFault
-- InvalidClusterSnapshotScheduleStateFault
-- InvalidClusterSnapshotStateFault
-- InvalidClusterStateFault
-- InvalidClusterSubnetGroupStateFault
-- InvalidClusterSubnetStateFault
-- InvalidClusterTrackFault
-- InvalidDataShareFault
-- InvalidElasticIpFault
-- InvalidEndpointStateFault
-- InvalidHsmClientCertificateStateFault
-- InvalidHsmConfigurationStateFault
-- InvalidNamespaceFault
-- InvalidReservedNodeStateFault
-- InvalidRestoreFault
-- InvalidRetentionPeriodFault
-- InvalidS3BucketNameFault
-- InvalidS3KeyPrefixFault
-- InvalidScheduleFault
-- InvalidScheduledActionFault
-- InvalidSnapshotCopyGrantStateFault
-- InvalidSubnet
-- InvalidSubscriptionStateFault
-- InvalidTableRestoreArgumentFault
-- InvalidTagFault
-- InvalidUsageLimitFault
-- InvalidVPCNetworkStateFault
-- LimitExceededFault
-- NumberOfNodesPerClusterLimitExceededFault
-- NumberOfNodesQuotaExceededFault
-- PartnerNotFoundFault
-- ReservedNodeAlreadyExistsFault
-- ReservedNodeAlreadyMigratedFault
-- ReservedNodeExchangeNotFoundFault
-- ReservedNodeNotFoundFault
-- ReservedNodeOfferingNotFoundFault
-- ReservedNodeQuotaExceededFault
-- ResizeNotFoundFault
-- ResourceNotFoundFault
-- SNSInvalidTopicFault
-- SNSNoAuthorizationFault
-- SNSTopicArnNotFoundFault
-- ScheduleDefinitionTypeUnsupportedFault
-- ScheduledActionAlreadyExistsFault
-- ScheduledActionNotFoundFault
-- ScheduledActionQuotaExceededFault
-- ScheduledActionTypeUnsupportedFault
-- SnapshotCopyAlreadyDisabledFault
-- SnapshotCopyAlreadyEnabledFault
-- SnapshotCopyDisabledFault
-- SnapshotCopyGrantAlreadyExistsFault
-- SnapshotCopyGrantNotFoundFault
-- SnapshotCopyGrantQuotaExceededFault
-- SnapshotScheduleAlreadyExistsFault
-- SnapshotScheduleNotFoundFault
-- SnapshotScheduleQuotaExceededFault
-- SnapshotScheduleUpdateInProgressFault
-- SourceNotFoundFault
-- SubnetAlreadyInUse
-- SubscriptionAlreadyExistFault
-- SubscriptionCategoryNotFoundFault
-- SubscriptionEventIdNotFoundFault
-- SubscriptionNotFoundFault
-- SubscriptionSeverityNotFoundFault
-- TableLimitExceededFault
-- TableRestoreNotFoundFault
-- TagLimitExceededFault
-- UnauthorizedOperation
-- UnauthorizedPartnerIntegrationFault
-- UnknownSnapshotCopyRegionFault
-- UnsupportedOperationFault
-- UnsupportedOptionFault
-- UsageLimitAlreadyExistsFault
-- UsageLimitNotFoundFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("redshift").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("redshift").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator, ...
+from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator
+
+def get_describe_cluster_db_revisions_paginator() -> DescribeClusterDbRevisionsPaginator:
+    return Session().client("redshift").get_paginator("describe_cluster_db_revisions"))
 ```
 
 - [DescribeClusterDbRevisionsPaginator](./paginators.md#describeclusterdbrevisionspaginator)
@@ -392,17 +108,21 @@ from mypy_boto3_redshift.paginator import DescribeClusterDbRevisionsPaginator, .
 - [GetReservedNodeExchangeConfigurationOptionsPaginator](./paginators.md#getreservednodeexchangeconfigurationoptionspaginator)
 - [GetReservedNodeExchangeOfferingsPaginator](./paginators.md#getreservednodeexchangeofferingspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("redshift").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("redshift").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_redshift.waiter import ClusterAvailableWaiter, ...
+from mypy_boto3_redshift.waiter import ClusterAvailableWaiter
+
+def get_cluster_available_waiter() -> ClusterAvailableWaiter:
+    return Session().client("redshift").get_waiter("cluster_available")
 ```
 
 - [ClusterAvailableWaiter](./waiters.md#clusteravailablewaiter)
@@ -410,16 +130,21 @@ from mypy_boto3_redshift.waiter import ClusterAvailableWaiter, ...
 - [ClusterRestoredWaiter](./waiters.md#clusterrestoredwaiter)
 - [SnapshotAvailableWaiter](./waiters.md#snapshotavailablewaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_redshift.literals import ActionTypeType
 
-```python
-from mypy_boto3_redshift.literals import ActionTypeType, ...
+def get_value() -> ActionTypeType:
+    return "recommend-node-config"
 ```
 
 - [ActionTypeType](./literals.md#actiontypetype)
@@ -490,18 +215,23 @@ from mypy_boto3_redshift.literals import ActionTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessageRequestTypeDef
 
-```python
-from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessageRequestTypeDef, ...
+def get_value() -> AcceptReservedNodeExchangeInputMessageRequestTypeDef:
+    return {
+        "ReservedNodeId": ...,
+        "TargetReservedNodeOfferingId": ...,
+    }
 ```
 
 - [AcceptReservedNodeExchangeInputMessageRequestTypeDef](./type_defs.md#acceptreservednodeexchangeinputmessagerequesttypedef)
@@ -604,46 +334,80 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [DescribeAccountAttributesMessageRequestTypeDef](./type_defs.md#describeaccountattributesmessagerequesttypedef)
 - [DescribeAuthenticationProfilesMessageRequestTypeDef](./type_defs.md#describeauthenticationprofilesmessagerequesttypedef)
 - [DescribeAuthenticationProfilesResultTypeDef](./type_defs.md#describeauthenticationprofilesresulttypedef)
+- [DescribeClusterDbRevisionsMessageDescribeClusterDbRevisionsPaginateTypeDef](./type_defs.md#describeclusterdbrevisionsmessagedescribeclusterdbrevisionspaginatetypedef)
 - [DescribeClusterDbRevisionsMessageRequestTypeDef](./type_defs.md#describeclusterdbrevisionsmessagerequesttypedef)
+- [DescribeClusterParameterGroupsMessageDescribeClusterParameterGroupsPaginateTypeDef](./type_defs.md#describeclusterparametergroupsmessagedescribeclusterparametergroupspaginatetypedef)
 - [DescribeClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describeclusterparametergroupsmessagerequesttypedef)
+- [DescribeClusterParametersMessageDescribeClusterParametersPaginateTypeDef](./type_defs.md#describeclusterparametersmessagedescribeclusterparameterspaginatetypedef)
 - [DescribeClusterParametersMessageRequestTypeDef](./type_defs.md#describeclusterparametersmessagerequesttypedef)
+- [DescribeClusterSecurityGroupsMessageDescribeClusterSecurityGroupsPaginateTypeDef](./type_defs.md#describeclustersecuritygroupsmessagedescribeclustersecuritygroupspaginatetypedef)
 - [DescribeClusterSecurityGroupsMessageRequestTypeDef](./type_defs.md#describeclustersecuritygroupsmessagerequesttypedef)
+- [DescribeClusterSnapshotsMessageDescribeClusterSnapshotsPaginateTypeDef](./type_defs.md#describeclustersnapshotsmessagedescribeclustersnapshotspaginatetypedef)
 - [DescribeClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describeclustersnapshotsmessagerequesttypedef)
+- [DescribeClusterSnapshotsMessageSnapshotAvailableWaitTypeDef](./type_defs.md#describeclustersnapshotsmessagesnapshotavailablewaittypedef)
+- [DescribeClusterSubnetGroupsMessageDescribeClusterSubnetGroupsPaginateTypeDef](./type_defs.md#describeclustersubnetgroupsmessagedescribeclustersubnetgroupspaginatetypedef)
 - [DescribeClusterSubnetGroupsMessageRequestTypeDef](./type_defs.md#describeclustersubnetgroupsmessagerequesttypedef)
+- [DescribeClusterTracksMessageDescribeClusterTracksPaginateTypeDef](./type_defs.md#describeclustertracksmessagedescribeclustertrackspaginatetypedef)
 - [DescribeClusterTracksMessageRequestTypeDef](./type_defs.md#describeclustertracksmessagerequesttypedef)
+- [DescribeClusterVersionsMessageDescribeClusterVersionsPaginateTypeDef](./type_defs.md#describeclusterversionsmessagedescribeclusterversionspaginatetypedef)
 - [DescribeClusterVersionsMessageRequestTypeDef](./type_defs.md#describeclusterversionsmessagerequesttypedef)
+- [DescribeClustersMessageClusterAvailableWaitTypeDef](./type_defs.md#describeclustersmessageclusteravailablewaittypedef)
+- [DescribeClustersMessageClusterDeletedWaitTypeDef](./type_defs.md#describeclustersmessageclusterdeletedwaittypedef)
+- [DescribeClustersMessageClusterRestoredWaitTypeDef](./type_defs.md#describeclustersmessageclusterrestoredwaittypedef)
+- [DescribeClustersMessageDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersmessagedescribeclusterspaginatetypedef)
 - [DescribeClustersMessageRequestTypeDef](./type_defs.md#describeclustersmessagerequesttypedef)
+- [DescribeDataSharesForConsumerMessageDescribeDataSharesForConsumerPaginateTypeDef](./type_defs.md#describedatasharesforconsumermessagedescribedatasharesforconsumerpaginatetypedef)
 - [DescribeDataSharesForConsumerMessageRequestTypeDef](./type_defs.md#describedatasharesforconsumermessagerequesttypedef)
 - [DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef)
+- [DescribeDataSharesForProducerMessageDescribeDataSharesForProducerPaginateTypeDef](./type_defs.md#describedatasharesforproducermessagedescribedatasharesforproducerpaginatetypedef)
 - [DescribeDataSharesForProducerMessageRequestTypeDef](./type_defs.md#describedatasharesforproducermessagerequesttypedef)
 - [DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef)
+- [DescribeDataSharesMessageDescribeDataSharesPaginateTypeDef](./type_defs.md#describedatasharesmessagedescribedatasharespaginatetypedef)
 - [DescribeDataSharesMessageRequestTypeDef](./type_defs.md#describedatasharesmessagerequesttypedef)
 - [DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef)
+- [DescribeDefaultClusterParametersMessageDescribeDefaultClusterParametersPaginateTypeDef](./type_defs.md#describedefaultclusterparametersmessagedescribedefaultclusterparameterspaginatetypedef)
 - [DescribeDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describedefaultclusterparametersmessagerequesttypedef)
 - [DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef)
+- [DescribeEndpointAccessMessageDescribeEndpointAccessPaginateTypeDef](./type_defs.md#describeendpointaccessmessagedescribeendpointaccesspaginatetypedef)
 - [DescribeEndpointAccessMessageRequestTypeDef](./type_defs.md#describeendpointaccessmessagerequesttypedef)
+- [DescribeEndpointAuthorizationMessageDescribeEndpointAuthorizationPaginateTypeDef](./type_defs.md#describeendpointauthorizationmessagedescribeendpointauthorizationpaginatetypedef)
 - [DescribeEndpointAuthorizationMessageRequestTypeDef](./type_defs.md#describeendpointauthorizationmessagerequesttypedef)
 - [DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef)
+- [DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef)
 - [DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
+- [DescribeHsmClientCertificatesMessageDescribeHsmClientCertificatesPaginateTypeDef](./type_defs.md#describehsmclientcertificatesmessagedescribehsmclientcertificatespaginatetypedef)
 - [DescribeHsmClientCertificatesMessageRequestTypeDef](./type_defs.md#describehsmclientcertificatesmessagerequesttypedef)
+- [DescribeHsmConfigurationsMessageDescribeHsmConfigurationsPaginateTypeDef](./type_defs.md#describehsmconfigurationsmessagedescribehsmconfigurationspaginatetypedef)
 - [DescribeHsmConfigurationsMessageRequestTypeDef](./type_defs.md#describehsmconfigurationsmessagerequesttypedef)
 - [DescribeLoggingStatusMessageRequestTypeDef](./type_defs.md#describeloggingstatusmessagerequesttypedef)
+- [DescribeNodeConfigurationOptionsMessageDescribeNodeConfigurationOptionsPaginateTypeDef](./type_defs.md#describenodeconfigurationoptionsmessagedescribenodeconfigurationoptionspaginatetypedef)
 - [DescribeNodeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describenodeconfigurationoptionsmessagerequesttypedef)
+- [DescribeOrderableClusterOptionsMessageDescribeOrderableClusterOptionsPaginateTypeDef](./type_defs.md#describeorderableclusteroptionsmessagedescribeorderableclusteroptionspaginatetypedef)
 - [DescribeOrderableClusterOptionsMessageRequestTypeDef](./type_defs.md#describeorderableclusteroptionsmessagerequesttypedef)
 - [DescribePartnersInputMessageRequestTypeDef](./type_defs.md#describepartnersinputmessagerequesttypedef)
 - [DescribePartnersOutputMessageTypeDef](./type_defs.md#describepartnersoutputmessagetypedef)
+- [DescribeReservedNodeExchangeStatusInputMessageDescribeReservedNodeExchangeStatusPaginateTypeDef](./type_defs.md#describereservednodeexchangestatusinputmessagedescribereservednodeexchangestatuspaginatetypedef)
 - [DescribeReservedNodeExchangeStatusInputMessageRequestTypeDef](./type_defs.md#describereservednodeexchangestatusinputmessagerequesttypedef)
 - [DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef)
+- [DescribeReservedNodeOfferingsMessageDescribeReservedNodeOfferingsPaginateTypeDef](./type_defs.md#describereservednodeofferingsmessagedescribereservednodeofferingspaginatetypedef)
 - [DescribeReservedNodeOfferingsMessageRequestTypeDef](./type_defs.md#describereservednodeofferingsmessagerequesttypedef)
+- [DescribeReservedNodesMessageDescribeReservedNodesPaginateTypeDef](./type_defs.md#describereservednodesmessagedescribereservednodespaginatetypedef)
 - [DescribeReservedNodesMessageRequestTypeDef](./type_defs.md#describereservednodesmessagerequesttypedef)
 - [DescribeResizeMessageRequestTypeDef](./type_defs.md#describeresizemessagerequesttypedef)
+- [DescribeScheduledActionsMessageDescribeScheduledActionsPaginateTypeDef](./type_defs.md#describescheduledactionsmessagedescribescheduledactionspaginatetypedef)
 - [DescribeScheduledActionsMessageRequestTypeDef](./type_defs.md#describescheduledactionsmessagerequesttypedef)
+- [DescribeSnapshotCopyGrantsMessageDescribeSnapshotCopyGrantsPaginateTypeDef](./type_defs.md#describesnapshotcopygrantsmessagedescribesnapshotcopygrantspaginatetypedef)
 - [DescribeSnapshotCopyGrantsMessageRequestTypeDef](./type_defs.md#describesnapshotcopygrantsmessagerequesttypedef)
+- [DescribeSnapshotSchedulesMessageDescribeSnapshotSchedulesPaginateTypeDef](./type_defs.md#describesnapshotschedulesmessagedescribesnapshotschedulespaginatetypedef)
 - [DescribeSnapshotSchedulesMessageRequestTypeDef](./type_defs.md#describesnapshotschedulesmessagerequesttypedef)
 - [DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef)
+- [DescribeTableRestoreStatusMessageDescribeTableRestoreStatusPaginateTypeDef](./type_defs.md#describetablerestorestatusmessagedescribetablerestorestatuspaginatetypedef)
 - [DescribeTableRestoreStatusMessageRequestTypeDef](./type_defs.md#describetablerestorestatusmessagerequesttypedef)
+- [DescribeTagsMessageDescribeTagsPaginateTypeDef](./type_defs.md#describetagsmessagedescribetagspaginatetypedef)
 - [DescribeTagsMessageRequestTypeDef](./type_defs.md#describetagsmessagerequesttypedef)
+- [DescribeUsageLimitsMessageDescribeUsageLimitsPaginateTypeDef](./type_defs.md#describeusagelimitsmessagedescribeusagelimitspaginatetypedef)
 - [DescribeUsageLimitsMessageRequestTypeDef](./type_defs.md#describeusagelimitsmessagerequesttypedef)
 - [DisableLoggingMessageRequestTypeDef](./type_defs.md#disableloggingmessagerequesttypedef)
 - [DisableSnapshotCopyMessageRequestTypeDef](./type_defs.md#disablesnapshotcopymessagerequesttypedef)
@@ -669,8 +433,10 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)
 - [GetClusterCredentialsMessageRequestTypeDef](./type_defs.md#getclustercredentialsmessagerequesttypedef)
+- [GetReservedNodeExchangeConfigurationOptionsInputMessageGetReservedNodeExchangeConfigurationOptionsPaginateTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsinputmessagegetreservednodeexchangeconfigurationoptionspaginatetypedef)
 - [GetReservedNodeExchangeConfigurationOptionsInputMessageRequestTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsinputmessagerequesttypedef)
 - [GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef)
+- [GetReservedNodeExchangeOfferingsInputMessageGetReservedNodeExchangeOfferingsPaginateTypeDef](./type_defs.md#getreservednodeexchangeofferingsinputmessagegetreservednodeexchangeofferingspaginatetypedef)
 - [GetReservedNodeExchangeOfferingsInputMessageRequestTypeDef](./type_defs.md#getreservednodeexchangeofferingsinputmessagerequesttypedef)
 - [GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef)
 - [HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef)
@@ -787,3 +553,4 @@ from mypy_boto3_redshift.type_defs import AcceptReservedNodeExchangeInputMessage
 - [VpcEndpointTypeDef](./type_defs.md#vpcendpointtypedef)
 - [VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-apprunner-module"></a>
-
-# Type annotations for boto3 AppRunner module
+#  AppRunner module
 
 > [Index](../README.md) > AppRunner
 
-Auto-generated documentation for
-[AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
-type annotations stubs module
-[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+!!! note ""
 
-- [Type annotations for boto3 AppRunner module](#type-annotations-for-boto3-apprunner-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppRunnerClient](#apprunnerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
+    type annotations stubs module [mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppRunner`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[apprunner]'
 python -m pip install mypy-boto3-apprunner
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,82 +42,41 @@ python -m pip install mypy-boto3-apprunner
 python -m pip uninstall -y mypy-boto3-apprunner
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="apprunnerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppRunnerClient
 
-Type annotations for `boto3.client("apprunner")` as
-[AppRunnerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("apprunner")` as [AppRunnerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_apprunner.client import AppRunnerClient
+
+def get_client() -> AppRunnerClient:
+    return Session().cleint("apprunner")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_custom_domain](./client.md#associate_custom_domain)
-- [can_paginate](./client.md#can_paginate)
-- [create_auto_scaling_configuration](./client.md#create_auto_scaling_configuration)
-- [create_connection](./client.md#create_connection)
-- [create_service](./client.md#create_service)
-- [create_vpc_connector](./client.md#create_vpc_connector)
-- [delete_auto_scaling_configuration](./client.md#delete_auto_scaling_configuration)
-- [delete_connection](./client.md#delete_connection)
-- [delete_service](./client.md#delete_service)
-- [delete_vpc_connector](./client.md#delete_vpc_connector)
-- [describe_auto_scaling_configuration](./client.md#describe_auto_scaling_configuration)
-- [describe_custom_domains](./client.md#describe_custom_domains)
-- [describe_service](./client.md#describe_service)
-- [describe_vpc_connector](./client.md#describe_vpc_connector)
-- [disassociate_custom_domain](./client.md#disassociate_custom_domain)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_auto_scaling_configurations](./client.md#list_auto_scaling_configurations)
-- [list_connections](./client.md#list_connections)
-- [list_operations](./client.md#list_operations)
-- [list_services](./client.md#list_services)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_vpc_connectors](./client.md#list_vpc_connectors)
-- [pause_service](./client.md#pause_service)
-- [resume_service](./client.md#resume_service)
-- [start_deployment](./client.md#start_deployment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_service](./client.md#update_service)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-AppRunnerClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalServiceErrorException
-- InvalidRequestException
-- InvalidStateException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType
 
-```python
-from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType, ...
+def get_value() -> AutoScalingConfigurationStatusType:
+    return "ACTIVE"
 ```
 
 - [AutoScalingConfigurationStatusType](./literals.md#autoscalingconfigurationstatustype)
@@ -159,18 +97,23 @@ from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType, ..
 - [AppRunnerServiceName](./literals.md#apprunnerservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestRequestTypeDef
 
-```python
-from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestRequestTypeDef, ...
+def get_value() -> AssociateCustomDomainRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+        "DomainName": ...,
+    }
 ```
 
 - [AssociateCustomDomainRequestRequestTypeDef](./type_defs.md#associatecustomdomainrequestrequesttypedef)
@@ -248,3 +191,4 @@ from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestRequestTy
 - [UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef)
 - [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef)
 - [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
+

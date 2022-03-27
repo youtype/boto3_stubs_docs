@@ -1,72 +1,18 @@
-<a id="opensearchserviceclient-for-boto3-opensearchservice-module"></a>
+# OpenSearchServiceClient
 
-# OpenSearchServiceClient for boto3 OpenSearchService module
+> [Index](../README.md) > [OpenSearchService](./README.md) > OpenSearchServiceClient
 
-> [Index](../README.md) > [OpenSearchService](./README.md) >
-> OpenSearchServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
-type annotations stubs module
-[mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
-
-- [OpenSearchServiceClient for boto3 OpenSearchService module](#opensearchserviceclient-for-boto3-opensearchservice-module)
-  - [OpenSearchServiceClient](#opensearchserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_inbound_connection](#accept_inbound_connection)
-    - [add_tags](#add_tags)
-    - [associate_package](#associate_package)
-    - [can_paginate](#can_paginate)
-    - [cancel_service_software_update](#cancel_service_software_update)
-    - [create_domain](#create_domain)
-    - [create_outbound_connection](#create_outbound_connection)
-    - [create_package](#create_package)
-    - [delete_domain](#delete_domain)
-    - [delete_inbound_connection](#delete_inbound_connection)
-    - [delete_outbound_connection](#delete_outbound_connection)
-    - [delete_package](#delete_package)
-    - [describe_domain](#describe_domain)
-    - [describe_domain_auto_tunes](#describe_domain_auto_tunes)
-    - [describe_domain_change_progress](#describe_domain_change_progress)
-    - [describe_domain_config](#describe_domain_config)
-    - [describe_domains](#describe_domains)
-    - [describe_inbound_connections](#describe_inbound_connections)
-    - [describe_instance_type_limits](#describe_instance_type_limits)
-    - [describe_outbound_connections](#describe_outbound_connections)
-    - [describe_packages](#describe_packages)
-    - [describe_reserved_instance_offerings](#describe_reserved_instance_offerings)
-    - [describe_reserved_instances](#describe_reserved_instances)
-    - [dissociate_package](#dissociate_package)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_compatible_versions](#get_compatible_versions)
-    - [get_package_version_history](#get_package_version_history)
-    - [get_upgrade_history](#get_upgrade_history)
-    - [get_upgrade_status](#get_upgrade_status)
-    - [list_domain_names](#list_domain_names)
-    - [list_domains_for_package](#list_domains_for_package)
-    - [list_instance_type_details](#list_instance_type_details)
-    - [list_packages_for_domain](#list_packages_for_domain)
-    - [list_tags](#list_tags)
-    - [list_versions](#list_versions)
-    - [purchase_reserved_instance_offering](#purchase_reserved_instance_offering)
-    - [reject_inbound_connection](#reject_inbound_connection)
-    - [remove_tags](#remove_tags)
-    - [start_service_software_update](#start_service_software_update)
-    - [update_domain_config](#update_domain_config)
-    - [update_package](#update_package)
-    - [upgrade_domain](#upgrade_domain)
-
-<a id="opensearchserviceclient"></a>
+    Auto-generated documentation for [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
+    type annotations stubs module [mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 ## OpenSearchServiceClient
 
-Type annotations for `boto3.client("opensearch")`
+Type annotations and code completion for `#!python boto3.client("opensearch")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_opensearch.client import OpenSearchServiceClient
 
@@ -74,1059 +20,1374 @@ def get_opensearch_client() -> OpenSearchServiceClient:
     return Session().client("opensearch")
 ```
 
-Boto3 documentation:
-[OpenSearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("opensearch").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("opensearch")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BaseException,
+    client.ClientError,
+    client.ConflictException,
+    client.DisabledOperationException,
+    client.InternalException,
+    client.InvalidPaginationTokenException,
+    client.InvalidTypeException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_opensearch.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BaseException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.DisabledOperationException`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidTypeException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-OpenSearchServiceClient exceptions.
-
-Type annotations for `boto3.client("opensearch").exceptions` method.
-
-Boto3 documentation:
-[OpenSearchService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_inbound\_connection"></a>
-
-### accept_inbound_connection
+### accept\_inbound\_connection
 
 Allows the remote domain owner to accept an inbound cross-cluster connection
 request.
 
-Type annotations for `boto3.client("opensearch").accept_inbound_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").accept_inbound_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.accept_inbound_connection)
 
-Boto3 documentation:
-[OpenSearchService.Client.accept_inbound_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.accept_inbound_connection)
+```python title="Method definition"
+def accept_inbound_connection(
+    self,
+    *,
+    ConnectionId: str,
+) -> AcceptInboundConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptInboundConnectionRequestRequestTypeDef](./type_defs.md#acceptinboundconnectionrequestrequesttypedef).
+1. See [:material-code-braces: AcceptInboundConnectionResponseTypeDef](./type_defs.md#acceptinboundconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInboundConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionId": ...,
+}
 
-Returns
-[AcceptInboundConnectionResponseTypeDef](./type_defs.md#acceptinboundconnectionresponsetypedef).
+parent.accept_inbound_connection(**kwargs)
+```
 
-<a id="add\_tags"></a>
+1. See [:material-code-braces: AcceptInboundConnectionRequestRequestTypeDef](./type_defs.md#acceptinboundconnectionrequestrequesttypedef) 
 
-### add_tags
+### add\_tags
 
 Attaches tags to an existing domain.
 
-Type annotations for `boto3.client("opensearch").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.add_tags)
 
-Boto3 documentation:
-[OpenSearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    ARN: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+    "TagList": ...,
+}
 
-<a id="associate\_package"></a>
+parent.add_tags(**kwargs)
+```
 
-### associate_package
+1. See [:material-code-braces: AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef) 
+
+### associate\_package
 
 Associates a package with an Amazon OpenSearch Service domain.
 
-Type annotations for `boto3.client("opensearch").associate_package` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").associate_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.associate_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.associate_package)
+```python title="Method definition"
+def associate_package(
+    self,
+    *,
+    PackageID: str,
+    DomainName: str,
+) -> AssociatePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef).
+1. See [:material-code-braces: AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "DomainName": ...,
+}
 
-Returns
-[AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
+parent.associate_package(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("opensearch").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.can_paginate)
 
-Boto3 documentation:
-[OpenSearchService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_service\_software\_update"></a>
-
-### cancel_service_software_update
+### cancel\_service\_software\_update
 
 Cancels a scheduled service software update for an Amazon OpenSearch Service
 domain.
 
-Type annotations for
-`boto3.client("opensearch").cancel_service_software_update` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").cancel_service_software_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.cancel_service_software_update)
 
-Boto3 documentation:
-[OpenSearchService.Client.cancel_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.cancel_service_software_update)
+```python title="Method definition"
+def cancel_service_software_update(
+    self,
+    *,
+    DomainName: str,
+) -> CancelServiceSoftwareUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#cancelservicesoftwareupdaterequestrequesttypedef).
+1. See [:material-code-braces: CancelServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelservicesoftwareupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelServiceSoftwareUpdateRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[CancelServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelservicesoftwareupdateresponsetypedef).
+parent.cancel_service_software_update(**kwargs)
+```
 
-<a id="create\_domain"></a>
+1. See [:material-code-braces: CancelServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#cancelservicesoftwareupdaterequestrequesttypedef) 
 
-### create_domain
+### create\_domain
 
 Creates a new Amazon OpenSearch Service domain.
 
-Type annotations for `boto3.client("opensearch").create_domain` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").create_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_domain)
 
-Boto3 documentation:
-[OpenSearchService.Client.create_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_domain)
+```python title="Method definition"
+def create_domain(
+    self,
+    *,
+    DomainName: str,
+    EngineVersion: str = ...,
+    ClusterConfig: ClusterConfigTypeDef = ...,  # (1)
+    EBSOptions: EBSOptionsTypeDef = ...,  # (2)
+    AccessPolicies: str = ...,
+    SnapshotOptions: SnapshotOptionsTypeDef = ...,  # (3)
+    VPCOptions: VPCOptionsTypeDef = ...,  # (4)
+    CognitoOptions: CognitoOptionsTypeDef = ...,  # (5)
+    EncryptionAtRestOptions: EncryptionAtRestOptionsTypeDef = ...,  # (6)
+    NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptionsTypeDef = ...,  # (7)
+    AdvancedOptions: Mapping[str, str] = ...,
+    LogPublishingOptions: Mapping[LogTypeType, LogPublishingOptionTypeDef] = ...,  # (8)
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef = ...,  # (9)
+    AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (10)
+    TagList: Sequence[TagTypeDef] = ...,  # (11)
+    AutoTuneOptions: AutoTuneOptionsInputTypeDef = ...,  # (12)
+) -> CreateDomainResponseTypeDef:  # (13)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef).
+1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
+2. See [:material-code-braces: EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef) 
+3. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
+4. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+5. See [:material-code-braces: CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef) 
+6. See [:material-code-braces: EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef) 
+7. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
+8. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) [:material-code-braces: LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef) 
+9. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-braces: AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef) 
+13. See [:material-code-braces: CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `EngineVersion`: `str`
-- `ClusterConfig`: [ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef)
-- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
-- `AccessPolicies`: `str`
-- `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
-- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
-- `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
-- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
-  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-- `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AutoTuneOptions`:
-  [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
+parent.create_domain(**kwargs)
+```
 
-<a id="create\_outbound\_connection"></a>
+1. See [:material-code-braces: CreateDomainRequestRequestTypeDef](./type_defs.md#createdomainrequestrequesttypedef) 
 
-### create_outbound_connection
+### create\_outbound\_connection
 
 Creates a new cross-cluster connection from a local OpenSearch domain to a
 remote OpenSearch domain.
 
-Type annotations for `boto3.client("opensearch").create_outbound_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").create_outbound_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_outbound_connection)
 
-Boto3 documentation:
-[OpenSearchService.Client.create_outbound_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_outbound_connection)
+```python title="Method definition"
+def create_outbound_connection(
+    self,
+    *,
+    LocalDomainInfo: DomainInformationContainerTypeDef,  # (1)
+    RemoteDomainInfo: DomainInformationContainerTypeDef,  # (1)
+    ConnectionAlias: str,
+) -> CreateOutboundConnectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateOutboundConnectionRequestRequestTypeDef](./type_defs.md#createoutboundconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
+2. See [:material-code-braces: DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef) 
+3. See [:material-code-braces: CreateOutboundConnectionResponseTypeDef](./type_defs.md#createoutboundconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocalDomainInfo`:
-  [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
-  *(required)*
-- `RemoteDomainInfo`:
-  [DomainInformationContainerTypeDef](./type_defs.md#domaininformationcontainertypedef)
-  *(required)*
-- `ConnectionAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateOutboundConnectionRequestRequestTypeDef = {  # (1)
+    "LocalDomainInfo": ...,
+    "RemoteDomainInfo": ...,
+    "ConnectionAlias": ...,
+}
 
-Returns
-[CreateOutboundConnectionResponseTypeDef](./type_defs.md#createoutboundconnectionresponsetypedef).
+parent.create_outbound_connection(**kwargs)
+```
 
-<a id="create\_package"></a>
+1. See [:material-code-braces: CreateOutboundConnectionRequestRequestTypeDef](./type_defs.md#createoutboundconnectionrequestrequesttypedef) 
 
-### create_package
+### create\_package
 
 Create a package for use with Amazon OpenSearch Service domains.
 
-Type annotations for `boto3.client("opensearch").create_package` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").create_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.create_package)
+```python title="Method definition"
+def create_package(
+    self,
+    *,
+    PackageName: str,
+    PackageType: PackageTypeType,  # (1)
+    PackageSource: PackageSourceTypeDef,  # (2)
+    PackageDescription: str = ...,
+) -> CreatePackageResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef).
+1. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+2. See [:material-code-braces: PackageSourceTypeDef](./type_defs.md#packagesourcetypedef) 
+3. See [:material-code-braces: CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageName`: `str` *(required)*
-- `PackageType`: `Literal['TXT-DICTIONARY']` (see
-  [PackageTypeType](./literals.md#packagetypetype)) *(required)*
-- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
-  *(required)*
-- `PackageDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePackageRequestRequestTypeDef = {  # (1)
+    "PackageName": ...,
+    "PackageType": ...,
+    "PackageSource": ...,
+}
 
-Returns
-[CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
+parent.create_package(**kwargs)
+```
 
-<a id="delete\_domain"></a>
+1. See [:material-code-braces: CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef) 
 
-### delete_domain
+### delete\_domain
 
 Permanently deletes the specified domain and all of its data.
 
-Type annotations for `boto3.client("opensearch").delete_domain` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").delete_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_domain)
 
-Boto3 documentation:
-[OpenSearchService.Client.delete_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_domain)
+```python title="Method definition"
+def delete_domain(
+    self,
+    *,
+    DomainName: str,
+) -> DeleteDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+parent.delete_domain(**kwargs)
+```
 
-<a id="delete\_inbound\_connection"></a>
+1. See [:material-code-braces: DeleteDomainRequestRequestTypeDef](./type_defs.md#deletedomainrequestrequesttypedef) 
 
-### delete_inbound_connection
+### delete\_inbound\_connection
 
 Allows the remote domain owner to delete an existing inbound cross-cluster
 connection.
 
-Type annotations for `boto3.client("opensearch").delete_inbound_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").delete_inbound_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_inbound_connection)
 
-Boto3 documentation:
-[OpenSearchService.Client.delete_inbound_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_inbound_connection)
+```python title="Method definition"
+def delete_inbound_connection(
+    self,
+    *,
+    ConnectionId: str,
+) -> DeleteInboundConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInboundConnectionRequestRequestTypeDef](./type_defs.md#deleteinboundconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInboundConnectionResponseTypeDef](./type_defs.md#deleteinboundconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInboundConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionId": ...,
+}
 
-Returns
-[DeleteInboundConnectionResponseTypeDef](./type_defs.md#deleteinboundconnectionresponsetypedef).
+parent.delete_inbound_connection(**kwargs)
+```
 
-<a id="delete\_outbound\_connection"></a>
+1. See [:material-code-braces: DeleteInboundConnectionRequestRequestTypeDef](./type_defs.md#deleteinboundconnectionrequestrequesttypedef) 
 
-### delete_outbound_connection
+### delete\_outbound\_connection
 
 Allows the local domain owner to delete an existing outbound cross-cluster
 connection.
 
-Type annotations for `boto3.client("opensearch").delete_outbound_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").delete_outbound_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_outbound_connection)
 
-Boto3 documentation:
-[OpenSearchService.Client.delete_outbound_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_outbound_connection)
+```python title="Method definition"
+def delete_outbound_connection(
+    self,
+    *,
+    ConnectionId: str,
+) -> DeleteOutboundConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteOutboundConnectionRequestRequestTypeDef](./type_defs.md#deleteoutboundconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteOutboundConnectionResponseTypeDef](./type_defs.md#deleteoutboundconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOutboundConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionId": ...,
+}
 
-Returns
-[DeleteOutboundConnectionResponseTypeDef](./type_defs.md#deleteoutboundconnectionresponsetypedef).
+parent.delete_outbound_connection(**kwargs)
+```
 
-<a id="delete\_package"></a>
+1. See [:material-code-braces: DeleteOutboundConnectionRequestRequestTypeDef](./type_defs.md#deleteoutboundconnectionrequestrequesttypedef) 
 
-### delete_package
+### delete\_package
 
 Deletes the package.
 
-Type annotations for `boto3.client("opensearch").delete_package` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").delete_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.delete_package)
+```python title="Method definition"
+def delete_package(
+    self,
+    *,
+    PackageID: str,
+) -> DeletePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef).
+1. See [:material-code-braces: DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
+parent.delete_package(**kwargs)
+```
 
-<a id="describe\_domain"></a>
+1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
 
-### describe_domain
+### describe\_domain
 
 Returns domain configuration information about the specified domain, including
 the domain ID, domain endpoint, and domain ARN.
 
-Type annotations for `boto3.client("opensearch").describe_domain` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain)
+```python title="Method definition"
+def describe_domain(
+    self,
+    *,
+    DomainName: str,
+) -> DescribeDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
+parent.describe_domain(**kwargs)
+```
 
-<a id="describe\_domain\_auto\_tunes"></a>
+1. See [:material-code-braces: DescribeDomainRequestRequestTypeDef](./type_defs.md#describedomainrequestrequesttypedef) 
 
-### describe_domain_auto_tunes
+### describe\_domain\_auto\_tunes
 
 Provides scheduled Auto-Tune action details for the domain, such as Auto-Tune
 action type, description, severity, and scheduled date.
 
-Type annotations for `boto3.client("opensearch").describe_domain_auto_tunes`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_auto_tunes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_auto_tunes)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_auto_tunes)
+```python title="Method definition"
+def describe_domain_auto_tunes(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDomainAutoTunesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainAutoTunesRequestRequestTypeDef](./type_defs.md#describedomainautotunesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainAutoTunesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
+parent.describe_domain_auto_tunes(**kwargs)
+```
 
-<a id="describe\_domain\_change\_progress"></a>
+1. See [:material-code-braces: DescribeDomainAutoTunesRequestRequestTypeDef](./type_defs.md#describedomainautotunesrequestrequesttypedef) 
 
-### describe_domain_change_progress
+### describe\_domain\_change\_progress
 
 Returns information about the current blue/green deployment happening on a
 domain, including a change ID, status, and progress stages.
 
-Type annotations for
-`boto3.client("opensearch").describe_domain_change_progress` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_change_progress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_change_progress)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_domain_change_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_change_progress)
+```python title="Method definition"
+def describe_domain_change_progress(
+    self,
+    *,
+    DomainName: str,
+    ChangeId: str = ...,
+) -> DescribeDomainChangeProgressResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ChangeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainChangeProgressRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
+parent.describe_domain_change_progress(**kwargs)
+```
 
-<a id="describe\_domain\_config"></a>
+1. See [:material-code-braces: DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef) 
 
-### describe_domain_config
+### describe\_domain\_config
 
 Provides cluster configuration information about the specified domain, such as
 the state, creation date, update version, and update date for cluster options.
 
-Type annotations for `boto3.client("opensearch").describe_domain_config`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_domain_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_config)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domain_config)
+```python title="Method definition"
+def describe_domain_config(
+    self,
+    *,
+    DomainName: str,
+) -> DescribeDomainConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainConfigRequestRequestTypeDef](./type_defs.md#describedomainconfigrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainConfigResponseTypeDef](./type_defs.md#describedomainconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainConfigRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainConfigResponseTypeDef](./type_defs.md#describedomainconfigresponsetypedef).
+parent.describe_domain_config(**kwargs)
+```
 
-<a id="describe\_domains"></a>
+1. See [:material-code-braces: DescribeDomainConfigRequestRequestTypeDef](./type_defs.md#describedomainconfigrequestrequesttypedef) 
 
-### describe_domains
+### describe\_domains
 
 Returns domain configuration information about the specified domains, including
 the domain ID, domain endpoint, and domain ARN.
 
-Type annotations for `boto3.client("opensearch").describe_domains` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domains)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_domains)
+```python title="Method definition"
+def describe_domains(
+    self,
+    *,
+    DomainNames: Sequence[str],
+) -> DescribeDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainsRequestRequestTypeDef = {  # (1)
+    "DomainNames": ...,
+}
 
-Returns
-[DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
+parent.describe_domains(**kwargs)
+```
 
-<a id="describe\_inbound\_connections"></a>
+1. See [:material-code-braces: DescribeDomainsRequestRequestTypeDef](./type_defs.md#describedomainsrequestrequesttypedef) 
 
-### describe_inbound_connections
+### describe\_inbound\_connections
 
 Lists all the inbound cross-cluster connections for a remote domain.
 
-Type annotations for `boto3.client("opensearch").describe_inbound_connections`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_inbound_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_inbound_connections)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_inbound_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_inbound_connections)
+```python title="Method definition"
+def describe_inbound_connections(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeInboundConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInboundConnectionsRequestRequestTypeDef](./type_defs.md#describeinboundconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeInboundConnectionsResponseTypeDef](./type_defs.md#describeinboundconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInboundConnectionsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeInboundConnectionsResponseTypeDef](./type_defs.md#describeinboundconnectionsresponsetypedef).
+parent.describe_inbound_connections(**kwargs)
+```
 
-<a id="describe\_instance\_type\_limits"></a>
+1. See [:material-code-braces: DescribeInboundConnectionsRequestRequestTypeDef](./type_defs.md#describeinboundconnectionsrequestrequesttypedef) 
 
-### describe_instance_type_limits
+### describe\_instance\_type\_limits
 
 Describe the limits for a given instance type and OpenSearch or Elasticsearch
 version.
 
-Type annotations for `boto3.client("opensearch").describe_instance_type_limits`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_instance_type_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_instance_type_limits)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_instance_type_limits)
+```python title="Method definition"
+def describe_instance_type_limits(
+    self,
+    *,
+    InstanceType: OpenSearchPartitionInstanceTypeType,  # (1)
+    EngineVersion: str,
+    DomainName: str = ...,
+) -> DescribeInstanceTypeLimitsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstanceTypeLimitsRequestRequestTypeDef](./type_defs.md#describeinstancetypelimitsrequestrequesttypedef).
+1. See [:material-code-brackets: OpenSearchPartitionInstanceTypeType](./literals.md#opensearchpartitioninstancetypetype) 
+2. See [:material-code-braces: DescribeInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeinstancetypelimitsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceType`:
-  [OpenSearchPartitionInstanceTypeType](./literals.md#opensearchpartitioninstancetypetype)
-  *(required)*
-- `EngineVersion`: `str` *(required)*
-- `DomainName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceTypeLimitsRequestRequestTypeDef = {  # (1)
+    "InstanceType": ...,
+    "EngineVersion": ...,
+}
 
-Returns
-[DescribeInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeinstancetypelimitsresponsetypedef).
+parent.describe_instance_type_limits(**kwargs)
+```
 
-<a id="describe\_outbound\_connections"></a>
+1. See [:material-code-braces: DescribeInstanceTypeLimitsRequestRequestTypeDef](./type_defs.md#describeinstancetypelimitsrequestrequesttypedef) 
 
-### describe_outbound_connections
+### describe\_outbound\_connections
 
 Lists all the outbound cross-cluster connections for a local domain.
 
-Type annotations for `boto3.client("opensearch").describe_outbound_connections`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_outbound_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_outbound_connections)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_outbound_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_outbound_connections)
+```python title="Method definition"
+def describe_outbound_connections(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeOutboundConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOutboundConnectionsRequestRequestTypeDef](./type_defs.md#describeoutboundconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeOutboundConnectionsResponseTypeDef](./type_defs.md#describeoutboundconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOutboundConnectionsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeOutboundConnectionsResponseTypeDef](./type_defs.md#describeoutboundconnectionsresponsetypedef).
+parent.describe_outbound_connections(**kwargs)
+```
 
-<a id="describe\_packages"></a>
+1. See [:material-code-braces: DescribeOutboundConnectionsRequestRequestTypeDef](./type_defs.md#describeoutboundconnectionsrequestrequesttypedef) 
 
-### describe_packages
+### describe\_packages
 
 Describes all packages available to Amazon OpenSearch Service domains.
 
-Type annotations for `boto3.client("opensearch").describe_packages` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_packages)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_packages)
+```python title="Method definition"
+def describe_packages(
+    self,
+    *,
+    Filters: Sequence[DescribePackagesFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribePackagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackagesRequestRequestTypeDef](./type_defs.md#describepackagesrequestrequesttypedef).
+1. See [:material-code-braces: DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef) 
+2. See [:material-code-braces: DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePackagesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
+parent.describe_packages(**kwargs)
+```
 
-<a id="describe\_reserved\_instance\_offerings"></a>
+1. See [:material-code-braces: DescribePackagesRequestRequestTypeDef](./type_defs.md#describepackagesrequestrequesttypedef) 
 
-### describe_reserved_instance_offerings
+### describe\_reserved\_instance\_offerings
 
 Lists available reserved OpenSearch instance offerings.
 
-Type annotations for
-`boto3.client("opensearch").describe_reserved_instance_offerings` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_reserved_instance_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instance_offerings)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_reserved_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instance_offerings)
+```python title="Method definition"
+def describe_reserved_instance_offerings(
+    self,
+    *,
+    ReservedInstanceOfferingId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedInstanceOfferingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedInstanceOfferingsRequestRequestTypeDef](./type_defs.md#describereservedinstanceofferingsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservedInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedinstanceofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedInstanceOfferingId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedInstanceOfferingsRequestRequestTypeDef = {  # (1)
+    "ReservedInstanceOfferingId": ...,
+}
 
-Returns
-[DescribeReservedInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedinstanceofferingsresponsetypedef).
+parent.describe_reserved_instance_offerings(**kwargs)
+```
 
-<a id="describe\_reserved\_instances"></a>
+1. See [:material-code-braces: DescribeReservedInstanceOfferingsRequestRequestTypeDef](./type_defs.md#describereservedinstanceofferingsrequestrequesttypedef) 
 
-### describe_reserved_instances
+### describe\_reserved\_instances
 
 Returns information about reserved OpenSearch instances for this account.
 
-Type annotations for `boto3.client("opensearch").describe_reserved_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").describe_reserved_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instances)
 
-Boto3 documentation:
-[OpenSearchService.Client.describe_reserved_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.describe_reserved_instances)
+```python title="Method definition"
+def describe_reserved_instances(
+    self,
+    *,
+    ReservedInstanceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedInstancesRequestRequestTypeDef](./type_defs.md#describereservedinstancesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservedInstancesResponseTypeDef](./type_defs.md#describereservedinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedInstanceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedInstancesRequestRequestTypeDef = {  # (1)
+    "ReservedInstanceId": ...,
+}
 
-Returns
-[DescribeReservedInstancesResponseTypeDef](./type_defs.md#describereservedinstancesresponsetypedef).
+parent.describe_reserved_instances(**kwargs)
+```
 
-<a id="dissociate\_package"></a>
+1. See [:material-code-braces: DescribeReservedInstancesRequestRequestTypeDef](./type_defs.md#describereservedinstancesrequestrequesttypedef) 
 
-### dissociate_package
+### dissociate\_package
 
 Dissociates a package from the Amazon OpenSearch Service domain.
 
-Type annotations for `boto3.client("opensearch").dissociate_package` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").dissociate_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.dissociate_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.dissociate_package)
+```python title="Method definition"
+def dissociate_package(
+    self,
+    *,
+    PackageID: str,
+    DomainName: str,
+) -> DissociatePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DissociatePackageRequestRequestTypeDef](./type_defs.md#dissociatepackagerequestrequesttypedef).
+1. See [:material-code-braces: DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DissociatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "DomainName": ...,
+}
 
-Returns
-[DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
+parent.dissociate_package(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DissociatePackageRequestRequestTypeDef](./type_defs.md#dissociatepackagerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("opensearch").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[OpenSearchService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_compatible\_versions"></a>
-
-### get_compatible_versions
+### get\_compatible\_versions
 
 Returns a list of upgrade-compatible versions of OpenSearch/Elasticsearch.
 
-Type annotations for `boto3.client("opensearch").get_compatible_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").get_compatible_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_compatible_versions)
 
-Boto3 documentation:
-[OpenSearchService.Client.get_compatible_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_compatible_versions)
+```python title="Method definition"
+def get_compatible_versions(
+    self,
+    *,
+    DomainName: str = ...,
+) -> GetCompatibleVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCompatibleVersionsRequestRequestTypeDef](./type_defs.md#getcompatibleversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetCompatibleVersionsResponseTypeDef](./type_defs.md#getcompatibleversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCompatibleVersionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetCompatibleVersionsResponseTypeDef](./type_defs.md#getcompatibleversionsresponsetypedef).
+parent.get_compatible_versions(**kwargs)
+```
 
-<a id="get\_package\_version\_history"></a>
+1. See [:material-code-braces: GetCompatibleVersionsRequestRequestTypeDef](./type_defs.md#getcompatibleversionsrequestrequesttypedef) 
 
-### get_package_version_history
+### get\_package\_version\_history
 
 Returns a list of package versions, along with their creation time and commit
 message.
 
-Type annotations for `boto3.client("opensearch").get_package_version_history`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").get_package_version_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_package_version_history)
 
-Boto3 documentation:
-[OpenSearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_package_version_history)
+```python title="Method definition"
+def get_package_version_history(
+    self,
+    *,
+    PackageID: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetPackageVersionHistoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPackageVersionHistoryRequestRequestTypeDef](./type_defs.md#getpackageversionhistoryrequestrequesttypedef).
+1. See [:material-code-braces: GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPackageVersionHistoryRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
+parent.get_package_version_history(**kwargs)
+```
 
-<a id="get\_upgrade\_history"></a>
+1. See [:material-code-braces: GetPackageVersionHistoryRequestRequestTypeDef](./type_defs.md#getpackageversionhistoryrequestrequesttypedef) 
 
-### get_upgrade_history
+### get\_upgrade\_history
 
 Retrieves the complete history of the last 10 upgrades performed on the domain.
 
-Type annotations for `boto3.client("opensearch").get_upgrade_history` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").get_upgrade_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_history)
 
-Boto3 documentation:
-[OpenSearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_history)
+```python title="Method definition"
+def get_upgrade_history(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetUpgradeHistoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUpgradeHistoryRequestRequestTypeDef](./type_defs.md#getupgradehistoryrequestrequesttypedef).
+1. See [:material-code-braces: GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUpgradeHistoryRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
+parent.get_upgrade_history(**kwargs)
+```
 
-<a id="get\_upgrade\_status"></a>
+1. See [:material-code-braces: GetUpgradeHistoryRequestRequestTypeDef](./type_defs.md#getupgradehistoryrequestrequesttypedef) 
 
-### get_upgrade_status
+### get\_upgrade\_status
 
 Retrieves the latest status of the last upgrade or upgrade eligibility check
 performed on the domain.
 
-Type annotations for `boto3.client("opensearch").get_upgrade_status` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").get_upgrade_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_status)
 
-Boto3 documentation:
-[OpenSearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.get_upgrade_status)
+```python title="Method definition"
+def get_upgrade_status(
+    self,
+    *,
+    DomainName: str,
+) -> GetUpgradeStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUpgradeStatusRequestRequestTypeDef](./type_defs.md#getupgradestatusrequestrequesttypedef).
+1. See [:material-code-braces: GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUpgradeStatusRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
+parent.get_upgrade_status(**kwargs)
+```
 
-<a id="list\_domain\_names"></a>
+1. See [:material-code-braces: GetUpgradeStatusRequestRequestTypeDef](./type_defs.md#getupgradestatusrequestrequesttypedef) 
 
-### list_domain_names
+### list\_domain\_names
 
 Returns the names of all domains owned by the current user's account.
 
-Type annotations for `boto3.client("opensearch").list_domain_names` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_domain_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domain_names)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domain_names)
+```python title="Method definition"
+def list_domain_names(
+    self,
+    *,
+    EngineType: EngineTypeType = ...,  # (1)
+) -> ListDomainNamesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+2. See [:material-code-braces: ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListDomainNamesRequestRequestTypeDef = {  # (1)
+    "EngineType": ...,
+}
 
-Returns
-[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+parent.list_domain_names(**kwargs)
+```
 
-<a id="list\_domains\_for\_package"></a>
+1. See [:material-code-braces: ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef) 
 
-### list_domains_for_package
+### list\_domains\_for\_package
 
 Lists all Amazon OpenSearch Service domains associated with the package.
 
-Type annotations for `boto3.client("opensearch").list_domains_for_package`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_domains_for_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domains_for_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_domains_for_package)
+```python title="Method definition"
+def list_domains_for_package(
+    self,
+    *,
+    PackageID: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDomainsForPackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef).
+1. See [:material-code-braces: ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDomainsForPackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
+parent.list_domains_for_package(**kwargs)
+```
 
-<a id="list\_instance\_type\_details"></a>
+1. See [:material-code-braces: ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef) 
 
-### list_instance_type_details
+### list\_instance\_type\_details
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/opensearch-2021-01-01/ListInstanceTypeDetails).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/opensearch-2021-01-01/ListInstanceTypeDetails).
 
-Type annotations for `boto3.client("opensearch").list_instance_type_details`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_instance_type_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_instance_type_details)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_instance_type_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_instance_type_details)
+```python title="Method definition"
+def list_instance_type_details(
+    self,
+    *,
+    EngineVersion: str,
+    DomainName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInstanceTypeDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceTypeDetailsRequestRequestTypeDef](./type_defs.md#listinstancetypedetailsrequestrequesttypedef).
+1. See [:material-code-braces: ListInstanceTypeDetailsResponseTypeDef](./type_defs.md#listinstancetypedetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineVersion`: `str` *(required)*
-- `DomainName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceTypeDetailsRequestRequestTypeDef = {  # (1)
+    "EngineVersion": ...,
+}
 
-Returns
-[ListInstanceTypeDetailsResponseTypeDef](./type_defs.md#listinstancetypedetailsresponsetypedef).
+parent.list_instance_type_details(**kwargs)
+```
 
-<a id="list\_packages\_for\_domain"></a>
+1. See [:material-code-braces: ListInstanceTypeDetailsRequestRequestTypeDef](./type_defs.md#listinstancetypedetailsrequestrequesttypedef) 
 
-### list_packages_for_domain
+### list\_packages\_for\_domain
 
 Lists all packages associated with the Amazon OpenSearch Service domain.
 
-Type annotations for `boto3.client("opensearch").list_packages_for_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_packages_for_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_packages_for_domain)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_packages_for_domain)
+```python title="Method definition"
+def list_packages_for_domain(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPackagesForDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef).
+1. See [:material-code-braces: ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackagesForDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
+parent.list_packages_for_domain(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Returns all tags for the given domain.
 
-Type annotations for `boto3.client("opensearch").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_tags)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ARN: str,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="list\_versions"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### list_versions
+### list\_versions
 
 List all supported versions of OpenSearch and Elasticsearch.
 
-Type annotations for `boto3.client("opensearch").list_versions` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").list_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_versions)
 
-Boto3 documentation:
-[OpenSearchService.Client.list_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.list_versions)
+```python title="Method definition"
+def list_versions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVersionsRequestRequestTypeDef](./type_defs.md#listversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListVersionsResponseTypeDef](./type_defs.md#listversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListVersionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListVersionsResponseTypeDef](./type_defs.md#listversionsresponsetypedef).
+parent.list_versions(**kwargs)
+```
 
-<a id="purchase\_reserved\_instance\_offering"></a>
+1. See [:material-code-braces: ListVersionsRequestRequestTypeDef](./type_defs.md#listversionsrequestrequesttypedef) 
 
-### purchase_reserved_instance_offering
+### purchase\_reserved\_instance\_offering
 
 Allows you to purchase reserved OpenSearch instances.
 
-Type annotations for
-`boto3.client("opensearch").purchase_reserved_instance_offering` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").purchase_reserved_instance_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.purchase_reserved_instance_offering)
 
-Boto3 documentation:
-[OpenSearchService.Client.purchase_reserved_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.purchase_reserved_instance_offering)
+```python title="Method definition"
+def purchase_reserved_instance_offering(
+    self,
+    *,
+    ReservedInstanceOfferingId: str,
+    ReservationName: str,
+    InstanceCount: int = ...,
+) -> PurchaseReservedInstanceOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseReservedInstanceOfferingRequestRequestTypeDef](./type_defs.md#purchasereservedinstanceofferingrequestrequesttypedef).
+1. See [:material-code-braces: PurchaseReservedInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedinstanceofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedInstanceOfferingId`: `str` *(required)*
-- `ReservationName`: `str` *(required)*
-- `InstanceCount`: `int`
+```python title="Usage example with kwargs"
+kwargs: PurchaseReservedInstanceOfferingRequestRequestTypeDef = {  # (1)
+    "ReservedInstanceOfferingId": ...,
+    "ReservationName": ...,
+}
 
-Returns
-[PurchaseReservedInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedinstanceofferingresponsetypedef).
+parent.purchase_reserved_instance_offering(**kwargs)
+```
 
-<a id="reject\_inbound\_connection"></a>
+1. See [:material-code-braces: PurchaseReservedInstanceOfferingRequestRequestTypeDef](./type_defs.md#purchasereservedinstanceofferingrequestrequesttypedef) 
 
-### reject_inbound_connection
+### reject\_inbound\_connection
 
 Allows the remote domain owner to reject an inbound cross-cluster connection
 request.
 
-Type annotations for `boto3.client("opensearch").reject_inbound_connection`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").reject_inbound_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.reject_inbound_connection)
 
-Boto3 documentation:
-[OpenSearchService.Client.reject_inbound_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.reject_inbound_connection)
+```python title="Method definition"
+def reject_inbound_connection(
+    self,
+    *,
+    ConnectionId: str,
+) -> RejectInboundConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectInboundConnectionRequestRequestTypeDef](./type_defs.md#rejectinboundconnectionrequestrequesttypedef).
+1. See [:material-code-braces: RejectInboundConnectionResponseTypeDef](./type_defs.md#rejectinboundconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectInboundConnectionRequestRequestTypeDef = {  # (1)
+    "ConnectionId": ...,
+}
 
-Returns
-[RejectInboundConnectionResponseTypeDef](./type_defs.md#rejectinboundconnectionresponsetypedef).
+parent.reject_inbound_connection(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: RejectInboundConnectionRequestRequestTypeDef](./type_defs.md#rejectinboundconnectionrequestrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes the specified set of tags from the given domain.
 
-Type annotations for `boto3.client("opensearch").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.remove_tags)
 
-Boto3 documentation:
-[OpenSearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    ARN: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+    "TagKeys": ...,
+}
 
-<a id="start\_service\_software\_update"></a>
+parent.remove_tags(**kwargs)
+```
 
-### start_service_software_update
+1. See [:material-code-braces: RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef) 
+
+### start\_service\_software\_update
 
 Schedules a service software update for an Amazon OpenSearch Service domain.
 
-Type annotations for `boto3.client("opensearch").start_service_software_update`
-method.
+Type annotations and code completion for `#!python boto3.client("opensearch").start_service_software_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.start_service_software_update)
 
-Boto3 documentation:
-[OpenSearchService.Client.start_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.start_service_software_update)
+```python title="Method definition"
+def start_service_software_update(
+    self,
+    *,
+    DomainName: str,
+) -> StartServiceSoftwareUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#startservicesoftwareupdaterequestrequesttypedef).
+1. See [:material-code-braces: StartServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startservicesoftwareupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartServiceSoftwareUpdateRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[StartServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startservicesoftwareupdateresponsetypedef).
+parent.start_service_software_update(**kwargs)
+```
 
-<a id="update\_domain\_config"></a>
+1. See [:material-code-braces: StartServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#startservicesoftwareupdaterequestrequesttypedef) 
 
-### update_domain_config
+### update\_domain\_config
 
 Modifies the cluster configuration of the specified domain, such as setting the
 instance type and the number of instances.
 
-Type annotations for `boto3.client("opensearch").update_domain_config` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").update_domain_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_domain_config)
 
-Boto3 documentation:
-[OpenSearchService.Client.update_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_domain_config)
+```python title="Method definition"
+def update_domain_config(
+    self,
+    *,
+    DomainName: str,
+    ClusterConfig: ClusterConfigTypeDef = ...,  # (1)
+    EBSOptions: EBSOptionsTypeDef = ...,  # (2)
+    SnapshotOptions: SnapshotOptionsTypeDef = ...,  # (3)
+    VPCOptions: VPCOptionsTypeDef = ...,  # (4)
+    CognitoOptions: CognitoOptionsTypeDef = ...,  # (5)
+    AdvancedOptions: Mapping[str, str] = ...,
+    AccessPolicies: str = ...,
+    LogPublishingOptions: Mapping[LogTypeType, LogPublishingOptionTypeDef] = ...,  # (6)
+    EncryptionAtRestOptions: EncryptionAtRestOptionsTypeDef = ...,  # (7)
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef = ...,  # (8)
+    NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptionsTypeDef = ...,  # (9)
+    AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (10)
+    AutoTuneOptions: AutoTuneOptionsTypeDef = ...,  # (11)
+    DryRun: bool = ...,
+) -> UpdateDomainConfigResponseTypeDef:  # (12)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDomainConfigRequestRequestTypeDef](./type_defs.md#updatedomainconfigrequestrequesttypedef).
+1. See [:material-code-braces: ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef) 
+2. See [:material-code-braces: EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef) 
+3. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
+4. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+5. See [:material-code-braces: CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef) 
+6. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) [:material-code-braces: LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef) 
+7. See [:material-code-braces: EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef) 
+8. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+9. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
+10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
+11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
+12. See [:material-code-braces: UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ClusterConfig`: [ClusterConfigTypeDef](./type_defs.md#clusterconfigtypedef)
-- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
-- `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
-- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
-- `AccessPolicies`: `str`
-- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
-  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
-- `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-- `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `AutoTuneOptions`:
-  [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainConfigRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[UpdateDomainConfigResponseTypeDef](./type_defs.md#updatedomainconfigresponsetypedef).
+parent.update_domain_config(**kwargs)
+```
 
-<a id="update\_package"></a>
+1. See [:material-code-braces: UpdateDomainConfigRequestRequestTypeDef](./type_defs.md#updatedomainconfigrequestrequesttypedef) 
 
-### update_package
+### update\_package
 
 Updates a package for use with Amazon OpenSearch Service domains.
 
-Type annotations for `boto3.client("opensearch").update_package` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").update_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_package)
 
-Boto3 documentation:
-[OpenSearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.update_package)
+```python title="Method definition"
+def update_package(
+    self,
+    *,
+    PackageID: str,
+    PackageSource: PackageSourceTypeDef,  # (1)
+    PackageDescription: str = ...,
+    CommitMessage: str = ...,
+) -> UpdatePackageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef).
+1. See [:material-code-braces: PackageSourceTypeDef](./type_defs.md#packagesourcetypedef) 
+2. See [:material-code-braces: UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
-  *(required)*
-- `PackageDescription`: `str`
-- `CommitMessage`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "PackageSource": ...,
+}
 
-Returns
-[UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
+parent.update_package(**kwargs)
+```
 
-<a id="upgrade\_domain"></a>
+1. See [:material-code-braces: UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef) 
 
-### upgrade_domain
+### upgrade\_domain
 
-Allows you to either upgrade your domain or perform an upgrade eligibility
-check to a compatible version of OpenSearch or Elasticsearch.
+Allows you to either upgrade your domain or perform an upgrade eligibility check
+to a compatible version of OpenSearch or Elasticsearch.
 
-Type annotations for `boto3.client("opensearch").upgrade_domain` method.
+Type annotations and code completion for `#!python boto3.client("opensearch").upgrade_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.upgrade_domain)
 
-Boto3 documentation:
-[OpenSearchService.Client.upgrade_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService.Client.upgrade_domain)
+```python title="Method definition"
+def upgrade_domain(
+    self,
+    *,
+    DomainName: str,
+    TargetVersion: str,
+    PerformCheckOnly: bool = ...,
+    AdvancedOptions: Mapping[str, str] = ...,
+) -> UpgradeDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpgradeDomainRequestRequestTypeDef](./type_defs.md#upgradedomainrequestrequesttypedef).
+1. See [:material-code-braces: UpgradeDomainResponseTypeDef](./type_defs.md#upgradedomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `TargetVersion`: `str` *(required)*
-- `PerformCheckOnly`: `bool`
-- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpgradeDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "TargetVersion": ...,
+}
 
-Returns
-[UpgradeDomainResponseTypeDef](./type_defs.md#upgradedomainresponsetypedef).
+parent.upgrade_domain(**kwargs)
+```
+
+1. See [:material-code-braces: UpgradeDomainRequestRequestTypeDef](./type_defs.md#upgradedomainrequestrequesttypedef) 
+
+
+
+

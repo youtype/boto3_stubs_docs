@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-medialive-module"></a>
-
-# Type annotations for boto3 MediaLive module
+#  MediaLive module
 
 > [Index](../README.md) > MediaLive
 
-Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module
-[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
+!!! note ""
 
-- [Type annotations for boto3 MediaLive module](#type-annotations-for-boto3-medialive-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MediaLiveClient](#medialiveclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+    type annotations stubs module [mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MediaLive`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[medialive]'
 python -m pip install mypy-boto3-medialive
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,120 +42,37 @@ python -m pip install mypy-boto3-medialive
 python -m pip uninstall -y mypy-boto3-medialive
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="medialiveclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MediaLiveClient
 
-Type annotations for `boto3.client("medialive")` as
-[MediaLiveClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("medialive")` as [MediaLiveClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_medialive.client import MediaLiveClient
+
+def get_client() -> MediaLiveClient:
+    return Session().cleint("medialive")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_input_device_transfer](./client.md#accept_input_device_transfer)
-- [batch_delete](./client.md#batch_delete)
-- [batch_start](./client.md#batch_start)
-- [batch_stop](./client.md#batch_stop)
-- [batch_update_schedule](./client.md#batch_update_schedule)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_input_device_transfer](./client.md#cancel_input_device_transfer)
-- [claim_device](./client.md#claim_device)
-- [create_channel](./client.md#create_channel)
-- [create_input](./client.md#create_input)
-- [create_input_security_group](./client.md#create_input_security_group)
-- [create_multiplex](./client.md#create_multiplex)
-- [create_multiplex_program](./client.md#create_multiplex_program)
-- [create_partner_input](./client.md#create_partner_input)
-- [create_tags](./client.md#create_tags)
-- [delete_channel](./client.md#delete_channel)
-- [delete_input](./client.md#delete_input)
-- [delete_input_security_group](./client.md#delete_input_security_group)
-- [delete_multiplex](./client.md#delete_multiplex)
-- [delete_multiplex_program](./client.md#delete_multiplex_program)
-- [delete_reservation](./client.md#delete_reservation)
-- [delete_schedule](./client.md#delete_schedule)
-- [delete_tags](./client.md#delete_tags)
-- [describe_channel](./client.md#describe_channel)
-- [describe_input](./client.md#describe_input)
-- [describe_input_device](./client.md#describe_input_device)
-- [describe_input_device_thumbnail](./client.md#describe_input_device_thumbnail)
-- [describe_input_security_group](./client.md#describe_input_security_group)
-- [describe_multiplex](./client.md#describe_multiplex)
-- [describe_multiplex_program](./client.md#describe_multiplex_program)
-- [describe_offering](./client.md#describe_offering)
-- [describe_reservation](./client.md#describe_reservation)
-- [describe_schedule](./client.md#describe_schedule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_channels](./client.md#list_channels)
-- [list_input_device_transfers](./client.md#list_input_device_transfers)
-- [list_input_devices](./client.md#list_input_devices)
-- [list_input_security_groups](./client.md#list_input_security_groups)
-- [list_inputs](./client.md#list_inputs)
-- [list_multiplex_programs](./client.md#list_multiplex_programs)
-- [list_multiplexes](./client.md#list_multiplexes)
-- [list_offerings](./client.md#list_offerings)
-- [list_reservations](./client.md#list_reservations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [purchase_offering](./client.md#purchase_offering)
-- [reject_input_device_transfer](./client.md#reject_input_device_transfer)
-- [start_channel](./client.md#start_channel)
-- [start_multiplex](./client.md#start_multiplex)
-- [stop_channel](./client.md#stop_channel)
-- [stop_multiplex](./client.md#stop_multiplex)
-- [transfer_input_device](./client.md#transfer_input_device)
-- [update_channel](./client.md#update_channel)
-- [update_channel_class](./client.md#update_channel_class)
-- [update_input](./client.md#update_input)
-- [update_input_device](./client.md#update_input_device)
-- [update_input_security_group](./client.md#update_input_security_group)
-- [update_multiplex](./client.md#update_multiplex)
-- [update_multiplex_program](./client.md#update_multiplex_program)
-- [update_reservation](./client.md#update_reservation)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MediaLiveClient [exceptions](./client.md#exceptions)
-
-- BadGatewayException
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- GatewayTimeoutException
-- InternalServerErrorException
-- NotFoundException
-- TooManyRequestsException
-- UnprocessableEntityException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("medialive").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("medialive").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_medialive.paginator import DescribeSchedulePaginator, ...
+from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
+
+def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
+    return Session().client("medialive").get_paginator("describe_schedule"))
 ```
 
 - [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
@@ -192,17 +86,21 @@ from mypy_boto3_medialive.paginator import DescribeSchedulePaginator, ...
 - [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("medialive").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("medialive").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_medialive.waiter import ChannelCreatedWaiter, ...
+from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
+
+def get_channel_created_waiter() -> ChannelCreatedWaiter:
+    return Session().client("medialive").get_waiter("channel_created")
 ```
 
 - [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
@@ -217,16 +115,21 @@ from mypy_boto3_medialive.waiter import ChannelCreatedWaiter, ...
 - [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
 - [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_medialive.literals import AacCodingModeType
 
-```python
-from mypy_boto3_medialive.literals import AacCodingModeType, ...
+def get_value() -> AacCodingModeType:
+    return "AD_RECEIVER_MIX"
 ```
 
 - [AacCodingModeType](./literals.md#aaccodingmodetype)
@@ -508,18 +411,22 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_medialive.type_defs import AacSettingsTypeDef
 
-```python
-from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
+def get_value() -> AacSettingsTypeDef:
+    return {
+        "Bitrate": ...,
+    }
 ```
 
 - [AacSettingsTypeDef](./type_defs.md#aacsettingstypedef)
@@ -602,24 +509,36 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef)
 - [DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef)
 - [DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef)
+- [DescribeChannelRequestChannelCreatedWaitTypeDef](./type_defs.md#describechannelrequestchannelcreatedwaittypedef)
+- [DescribeChannelRequestChannelDeletedWaitTypeDef](./type_defs.md#describechannelrequestchanneldeletedwaittypedef)
+- [DescribeChannelRequestChannelRunningWaitTypeDef](./type_defs.md#describechannelrequestchannelrunningwaittypedef)
+- [DescribeChannelRequestChannelStoppedWaitTypeDef](./type_defs.md#describechannelrequestchannelstoppedwaittypedef)
 - [DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef)
 - [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef)
 - [DescribeInputDeviceRequestRequestTypeDef](./type_defs.md#describeinputdevicerequestrequesttypedef)
 - [DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef)
 - [DescribeInputDeviceThumbnailRequestRequestTypeDef](./type_defs.md#describeinputdevicethumbnailrequestrequesttypedef)
 - [DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef)
+- [DescribeInputRequestInputAttachedWaitTypeDef](./type_defs.md#describeinputrequestinputattachedwaittypedef)
+- [DescribeInputRequestInputDeletedWaitTypeDef](./type_defs.md#describeinputrequestinputdeletedwaittypedef)
+- [DescribeInputRequestInputDetachedWaitTypeDef](./type_defs.md#describeinputrequestinputdetachedwaittypedef)
 - [DescribeInputRequestRequestTypeDef](./type_defs.md#describeinputrequestrequesttypedef)
 - [DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef)
 - [DescribeInputSecurityGroupRequestRequestTypeDef](./type_defs.md#describeinputsecuritygrouprequestrequesttypedef)
 - [DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef)
 - [DescribeMultiplexProgramRequestRequestTypeDef](./type_defs.md#describemultiplexprogramrequestrequesttypedef)
 - [DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef)
+- [DescribeMultiplexRequestMultiplexCreatedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexcreatedwaittypedef)
+- [DescribeMultiplexRequestMultiplexDeletedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexdeletedwaittypedef)
+- [DescribeMultiplexRequestMultiplexRunningWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexrunningwaittypedef)
+- [DescribeMultiplexRequestMultiplexStoppedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexstoppedwaittypedef)
 - [DescribeMultiplexRequestRequestTypeDef](./type_defs.md#describemultiplexrequestrequesttypedef)
 - [DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef)
 - [DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef)
 - [DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef)
 - [DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef)
 - [DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef)
+- [DescribeScheduleRequestDescribeSchedulePaginateTypeDef](./type_defs.md#describeschedulerequestdescribeschedulepaginatetypedef)
 - [DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef)
 - [DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)
 - [DvbNitSettingsTypeDef](./type_defs.md#dvbnitsettingstypedef)
@@ -691,22 +610,31 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)
 - [InputWhitelistRuleTypeDef](./type_defs.md#inputwhitelistruletypedef)
 - [KeyProviderSettingsTypeDef](./type_defs.md#keyprovidersettingstypedef)
+- [ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
+- [ListInputDeviceTransfersRequestListInputDeviceTransfersPaginateTypeDef](./type_defs.md#listinputdevicetransfersrequestlistinputdevicetransferspaginatetypedef)
 - [ListInputDeviceTransfersRequestRequestTypeDef](./type_defs.md#listinputdevicetransfersrequestrequesttypedef)
 - [ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef)
+- [ListInputDevicesRequestListInputDevicesPaginateTypeDef](./type_defs.md#listinputdevicesrequestlistinputdevicespaginatetypedef)
 - [ListInputDevicesRequestRequestTypeDef](./type_defs.md#listinputdevicesrequestrequesttypedef)
 - [ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef)
+- [ListInputSecurityGroupsRequestListInputSecurityGroupsPaginateTypeDef](./type_defs.md#listinputsecuritygroupsrequestlistinputsecuritygroupspaginatetypedef)
 - [ListInputSecurityGroupsRequestRequestTypeDef](./type_defs.md#listinputsecuritygroupsrequestrequesttypedef)
 - [ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef)
+- [ListInputsRequestListInputsPaginateTypeDef](./type_defs.md#listinputsrequestlistinputspaginatetypedef)
 - [ListInputsRequestRequestTypeDef](./type_defs.md#listinputsrequestrequesttypedef)
 - [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef)
+- [ListMultiplexProgramsRequestListMultiplexProgramsPaginateTypeDef](./type_defs.md#listmultiplexprogramsrequestlistmultiplexprogramspaginatetypedef)
 - [ListMultiplexProgramsRequestRequestTypeDef](./type_defs.md#listmultiplexprogramsrequestrequesttypedef)
 - [ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef)
+- [ListMultiplexesRequestListMultiplexesPaginateTypeDef](./type_defs.md#listmultiplexesrequestlistmultiplexespaginatetypedef)
 - [ListMultiplexesRequestRequestTypeDef](./type_defs.md#listmultiplexesrequestrequesttypedef)
 - [ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef)
+- [ListOfferingsRequestListOfferingsPaginateTypeDef](./type_defs.md#listofferingsrequestlistofferingspaginatetypedef)
 - [ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef)
 - [ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)
+- [ListReservationsRequestListReservationsPaginateTypeDef](./type_defs.md#listreservationsrequestlistreservationspaginatetypedef)
 - [ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef)
 - [ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -833,3 +761,4 @@ from mypy_boto3_medialive.type_defs import AacSettingsTypeDef, ...
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
 - [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)
+

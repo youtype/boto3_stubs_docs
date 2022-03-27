@@ -1,41 +1,18 @@
-<a id="cloudcontrolapiclient-for-boto3-cloudcontrolapi-module"></a>
+# CloudControlApiClient
 
-# CloudControlApiClient for boto3 CloudControlApi module
+> [Index](../README.md) > [CloudControlApi](./README.md) > CloudControlApiClient
 
-> [Index](../README.md) > [CloudControlApi](./README.md) >
-> CloudControlApiClient
+!!! note ""
 
-Auto-generated documentation for
-[CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
-type annotations stubs module
-[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
-
-- [CloudControlApiClient for boto3 CloudControlApi module](#cloudcontrolapiclient-for-boto3-cloudcontrolapi-module)
-  - [CloudControlApiClient](#cloudcontrolapiclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_resource_request](#cancel_resource_request)
-    - [create_resource](#create_resource)
-    - [delete_resource](#delete_resource)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_resource](#get_resource)
-    - [get_resource_request_status](#get_resource_request_status)
-    - [list_resource_requests](#list_resource_requests)
-    - [list_resources](#list_resources)
-    - [update_resource](#update_resource)
-    - [get_waiter](#get_waiter)
-
-<a id="cloudcontrolapiclient"></a>
+    Auto-generated documentation for [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
+    type annotations stubs module [mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 ## CloudControlApiClient
 
-Type annotations for `boto3.client("cloudcontrol")`
+Type annotations and code completion for `#!python boto3.client("cloudcontrol")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudcontrol.client import CloudControlApiClient
 
@@ -43,303 +20,358 @@ def get_cloudcontrol_client() -> CloudControlApiClient:
     return Session().client("cloudcontrol")
 ```
 
-Boto3 documentation:
-[CloudControlApi.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudcontrol").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudcontrol")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyExistsException,
+    client.ClientError,
+    client.ClientTokenConflictException,
+    client.ConcurrentModificationException,
+    client.ConcurrentOperationException,
+    client.GeneralServiceException,
+    client.HandlerFailureException,
+    client.HandlerInternalFailureException,
+    client.InvalidCredentialsException,
+    client.InvalidRequestException,
+    client.NetworkFailureException,
+    client.NotStabilizedException,
+    client.NotUpdatableException,
+    client.PrivateTypeException,
+    client.RequestTokenNotFoundException,
+    client.ResourceConflictException,
+    client.ResourceNotFoundException,
+    client.ServiceInternalErrorException,
+    client.ServiceLimitExceededException,
+    client.ThrottlingException,
+    client.TypeNotFoundException,
+    client.UnsupportedActionException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudcontrol.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientTokenConflictException`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConcurrentOperationException`
-- `Exceptions.GeneralServiceException`
-- `Exceptions.HandlerFailureException`
-- `Exceptions.HandlerInternalFailureException`
-- `Exceptions.InvalidCredentialsException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.NetworkFailureException`
-- `Exceptions.NotStabilizedException`
-- `Exceptions.NotUpdatableException`
-- `Exceptions.PrivateTypeException`
-- `Exceptions.RequestTokenNotFoundException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceInternalErrorException`
-- `Exceptions.ServiceLimitExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TypeNotFoundException`
-- `Exceptions.UnsupportedActionException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudControlApiClient exceptions.
-
-Type annotations for `boto3.client("cloudcontrol").exceptions` method.
-
-Boto3 documentation:
-[CloudControlApi.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudcontrol").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.can_paginate)
 
-Boto3 documentation:
-[CloudControlApi.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_resource\_request"></a>
-
-### cancel_resource_request
+### cancel\_resource\_request
 
 Cancels the specified resource operation request.
 
-Type annotations for `boto3.client("cloudcontrol").cancel_resource_request`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").cancel_resource_request` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.cancel_resource_request)
 
-Boto3 documentation:
-[CloudControlApi.Client.cancel_resource_request](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.cancel_resource_request)
+```python title="Method definition"
+def cancel_resource_request(
+    self,
+    *,
+    RequestToken: str,
+) -> CancelResourceRequestOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelResourceRequestInputRequestTypeDef](./type_defs.md#cancelresourcerequestinputrequesttypedef).
+1. See [:material-code-braces: CancelResourceRequestOutputTypeDef](./type_defs.md#cancelresourcerequestoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelResourceRequestInputRequestTypeDef = {  # (1)
+    "RequestToken": ...,
+}
 
-Returns
-[CancelResourceRequestOutputTypeDef](./type_defs.md#cancelresourcerequestoutputtypedef).
+parent.cancel_resource_request(**kwargs)
+```
 
-<a id="create\_resource"></a>
+1. See [:material-code-braces: CancelResourceRequestInputRequestTypeDef](./type_defs.md#cancelresourcerequestinputrequesttypedef) 
 
-### create_resource
+### create\_resource
 
 Creates the specified resource.
 
-Type annotations for `boto3.client("cloudcontrol").create_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").create_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.create_resource)
 
-Boto3 documentation:
-[CloudControlApi.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.create_resource)
+```python title="Method definition"
+def create_resource(
+    self,
+    *,
+    TypeName: str,
+    DesiredState: str,
+    TypeVersionId: str = ...,
+    RoleArn: str = ...,
+    ClientToken: str = ...,
+) -> CreateResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceInputRequestTypeDef](./type_defs.md#createresourceinputrequesttypedef).
+1. See [:material-code-braces: CreateResourceOutputTypeDef](./type_defs.md#createresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `DesiredState`: `str` *(required)*
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateResourceInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+    "DesiredState": ...,
+}
 
-Returns
-[CreateResourceOutputTypeDef](./type_defs.md#createresourceoutputtypedef).
+parent.create_resource(**kwargs)
+```
 
-<a id="delete\_resource"></a>
+1. See [:material-code-braces: CreateResourceInputRequestTypeDef](./type_defs.md#createresourceinputrequesttypedef) 
 
-### delete_resource
+### delete\_resource
 
 Deletes the specified resource.
 
-Type annotations for `boto3.client("cloudcontrol").delete_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").delete_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.delete_resource)
 
-Boto3 documentation:
-[CloudControlApi.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.delete_resource)
+```python title="Method definition"
+def delete_resource(
+    self,
+    *,
+    TypeName: str,
+    Identifier: str,
+    TypeVersionId: str = ...,
+    RoleArn: str = ...,
+    ClientToken: str = ...,
+) -> DeleteResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceInputRequestTypeDef](./type_defs.md#deleteresourceinputrequesttypedef).
+1. See [:material-code-braces: DeleteResourceOutputTypeDef](./type_defs.md#deleteresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `Identifier`: `str` *(required)*
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+    "Identifier": ...,
+}
 
-Returns
-[DeleteResourceOutputTypeDef](./type_defs.md#deleteresourceoutputtypedef).
+parent.delete_resource(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteResourceInputRequestTypeDef](./type_defs.md#deleteresourceinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudcontrol").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudControlApi.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_resource"></a>
-
-### get_resource
+### get\_resource
 
 Returns information about the current state of the specified resource.
 
-Type annotations for `boto3.client("cloudcontrol").get_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").get_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.get_resource)
 
-Boto3 documentation:
-[CloudControlApi.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.get_resource)
+```python title="Method definition"
+def get_resource(
+    self,
+    *,
+    TypeName: str,
+    Identifier: str,
+    TypeVersionId: str = ...,
+    RoleArn: str = ...,
+) -> GetResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceInputRequestTypeDef](./type_defs.md#getresourceinputrequesttypedef).
+1. See [:material-code-braces: GetResourceOutputTypeDef](./type_defs.md#getresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `Identifier`: `str` *(required)*
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetResourceInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+    "Identifier": ...,
+}
 
-Returns [GetResourceOutputTypeDef](./type_defs.md#getresourceoutputtypedef).
+parent.get_resource(**kwargs)
+```
 
-<a id="get\_resource\_request\_status"></a>
+1. See [:material-code-braces: GetResourceInputRequestTypeDef](./type_defs.md#getresourceinputrequesttypedef) 
 
-### get_resource_request_status
+### get\_resource\_request\_status
 
 Returns the current status of a resource operation request.
 
-Type annotations for `boto3.client("cloudcontrol").get_resource_request_status`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").get_resource_request_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.get_resource_request_status)
 
-Boto3 documentation:
-[CloudControlApi.Client.get_resource_request_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.get_resource_request_status)
+```python title="Method definition"
+def get_resource_request_status(
+    self,
+    *,
+    RequestToken: str,
+) -> GetResourceRequestStatusOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceRequestStatusInputRequestTypeDef](./type_defs.md#getresourcerequeststatusinputrequesttypedef).
+1. See [:material-code-braces: GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourceRequestStatusInputRequestTypeDef = {  # (1)
+    "RequestToken": ...,
+}
 
-Returns
-[GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef).
+parent.get_resource_request_status(**kwargs)
+```
 
-<a id="list\_resource\_requests"></a>
+1. See [:material-code-braces: GetResourceRequestStatusInputRequestTypeDef](./type_defs.md#getresourcerequeststatusinputrequesttypedef) 
 
-### list_resource_requests
+### list\_resource\_requests
 
 Returns existing resource operation requests.
 
-Type annotations for `boto3.client("cloudcontrol").list_resource_requests`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").list_resource_requests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.list_resource_requests)
 
-Boto3 documentation:
-[CloudControlApi.Client.list_resource_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.list_resource_requests)
+```python title="Method definition"
+def list_resource_requests(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ResourceRequestStatusFilter: ResourceRequestStatusFilterTypeDef = ...,  # (1)
+) -> ListResourceRequestsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceRequestsInputRequestTypeDef](./type_defs.md#listresourcerequestsinputrequesttypedef).
+1. See [:material-code-braces: ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef) 
+2. See [:material-code-braces: ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ResourceRequestStatusFilter`:
-  [ResourceRequestStatusFilterTypeDef](./type_defs.md#resourcerequeststatusfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListResourceRequestsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef).
+parent.list_resource_requests(**kwargs)
+```
 
-<a id="list\_resources"></a>
+1. See [:material-code-braces: ListResourceRequestsInputRequestTypeDef](./type_defs.md#listresourcerequestsinputrequesttypedef) 
 
-### list_resources
+### list\_resources
 
 Returns information about the specified resources.
 
-Type annotations for `boto3.client("cloudcontrol").list_resources` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").list_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.list_resources)
 
-Boto3 documentation:
-[CloudControlApi.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.list_resources)
+```python title="Method definition"
+def list_resources(
+    self,
+    *,
+    TypeName: str,
+    TypeVersionId: str = ...,
+    RoleArn: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ResourceModel: str = ...,
+) -> ListResourcesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesInputRequestTypeDef](./type_defs.md#listresourcesinputrequesttypedef).
+1. See [:material-code-braces: ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceModel`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+}
 
-Returns
-[ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef).
+parent.list_resources(**kwargs)
+```
 
-<a id="update\_resource"></a>
+1. See [:material-code-braces: ListResourcesInputRequestTypeDef](./type_defs.md#listresourcesinputrequesttypedef) 
 
-### update_resource
+### update\_resource
 
 .
 
-Type annotations for `boto3.client("cloudcontrol").update_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").update_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.update_resource)
 
-Boto3 documentation:
-[CloudControlApi.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi.Client.update_resource)
+```python title="Method definition"
+def update_resource(
+    self,
+    *,
+    TypeName: str,
+    Identifier: str,
+    PatchDocument: str,
+    TypeVersionId: str = ...,
+    RoleArn: str = ...,
+    ClientToken: str = ...,
+) -> UpdateResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceInputRequestTypeDef](./type_defs.md#updateresourceinputrequesttypedef).
+1. See [:material-code-braces: UpdateResourceOutputTypeDef](./type_defs.md#updateresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TypeName`: `str` *(required)*
-- `Identifier`: `str` *(required)*
-- `PatchDocument`: `str` *(required)*
-- `TypeVersionId`: `str`
-- `RoleArn`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceInputRequestTypeDef = {  # (1)
+    "TypeName": ...,
+    "Identifier": ...,
+    "PatchDocument": ...,
+}
 
-Returns
-[UpdateResourceOutputTypeDef](./type_defs.md#updateresourceoutputtypedef).
+parent.update_resource(**kwargs)
+```
 
-<a id="get_waiter"></a>
+1. See [:material-code-braces: UpdateResourceInputRequestTypeDef](./type_defs.md#updateresourceinputrequesttypedef) 
+
+
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudcontrol").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudcontrol").get_waiter` method with overloads.
 
-- `client.get_waiter("resource_request_success")` ->
-  [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
+- `client.get_waiter("resource_request_success")` -> [ResourceRequestSuccessWaiter](./waiters.md#resourcerequestsuccesswaiter)
+

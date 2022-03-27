@@ -1,58 +1,18 @@
-<a id="comprehendmedicalclient-for-boto3-comprehendmedical-module"></a>
+# ComprehendMedicalClient
 
-# ComprehendMedicalClient for boto3 ComprehendMedical module
+> [Index](../README.md) > [ComprehendMedical](./README.md) > ComprehendMedicalClient
 
-> [Index](../README.md) > [ComprehendMedical](./README.md) >
-> ComprehendMedicalClient
+!!! note ""
 
-Auto-generated documentation for
-[ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
-type annotations stubs module
-[mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
-
-- [ComprehendMedicalClient for boto3 ComprehendMedical module](#comprehendmedicalclient-for-boto3-comprehendmedical-module)
-  - [ComprehendMedicalClient](#comprehendmedicalclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [describe_entities_detection_v2_job](#describe_entities_detection_v2_job)
-    - [describe_icd10_cm_inference_job](#describe_icd10_cm_inference_job)
-    - [describe_phi_detection_job](#describe_phi_detection_job)
-    - [describe_rx_norm_inference_job](#describe_rx_norm_inference_job)
-    - [describe_snomedct_inference_job](#describe_snomedct_inference_job)
-    - [detect_entities](#detect_entities)
-    - [detect_entities_v2](#detect_entities_v2)
-    - [detect_phi](#detect_phi)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [infer_icd10_cm](#infer_icd10_cm)
-    - [infer_rx_norm](#infer_rx_norm)
-    - [infer_snomedct](#infer_snomedct)
-    - [list_entities_detection_v2_jobs](#list_entities_detection_v2_jobs)
-    - [list_icd10_cm_inference_jobs](#list_icd10_cm_inference_jobs)
-    - [list_phi_detection_jobs](#list_phi_detection_jobs)
-    - [list_rx_norm_inference_jobs](#list_rx_norm_inference_jobs)
-    - [list_snomedct_inference_jobs](#list_snomedct_inference_jobs)
-    - [start_entities_detection_v2_job](#start_entities_detection_v2_job)
-    - [start_icd10_cm_inference_job](#start_icd10_cm_inference_job)
-    - [start_phi_detection_job](#start_phi_detection_job)
-    - [start_rx_norm_inference_job](#start_rx_norm_inference_job)
-    - [start_snomedct_inference_job](#start_snomedct_inference_job)
-    - [stop_entities_detection_v2_job](#stop_entities_detection_v2_job)
-    - [stop_icd10_cm_inference_job](#stop_icd10_cm_inference_job)
-    - [stop_phi_detection_job](#stop_phi_detection_job)
-    - [stop_rx_norm_inference_job](#stop_rx_norm_inference_job)
-    - [stop_snomedct_inference_job](#stop_snomedct_inference_job)
-
-<a id="comprehendmedicalclient"></a>
+    Auto-generated documentation for [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
+    type annotations stubs module [mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 ## ComprehendMedicalClient
 
-Type annotations for `boto3.client("comprehendmedical")`
+Type annotations and code completion for `#!python boto3.client("comprehendmedical")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 
@@ -60,735 +20,923 @@ def get_comprehendmedical_client() -> ComprehendMedicalClient:
     return Session().client("comprehendmedical")
 ```
 
-Boto3 documentation:
-[ComprehendMedical.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("comprehendmedical").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("comprehendmedical")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.InvalidEncodingException,
+    client.InvalidRequestException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.TextSizeLimitExceededException,
+    client.TooManyRequestsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_comprehendmedical.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidEncodingException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TextSizeLimitExceededException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ComprehendMedicalClient exceptions.
-
-Type annotations for `boto3.client("comprehendmedical").exceptions` method.
-
-Boto3 documentation:
-[ComprehendMedical.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("comprehendmedical").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate)
 
-Boto3 documentation:
-[ComprehendMedical.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="describe\_entities\_detection\_v2\_job"></a>
-
-### describe_entities_detection_v2_job
+### describe\_entities\_detection\_v2\_job
 
 Gets the properties associated with a medical entities detection job.
 
-Type annotations for
-`boto3.client("comprehendmedical").describe_entities_detection_v2_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").describe_entities_detection_v2_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.describe_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_entities_detection_v2_job)
+```python title="Method definition"
+def describe_entities_detection_v2_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeEntitiesDetectionV2JobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#describeentitiesdetectionv2jobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEntitiesDetectionV2JobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef).
+parent.describe_entities_detection_v2_job(**kwargs)
+```
 
-<a id="describe\_icd10\_cm\_inference\_job"></a>
+1. See [:material-code-braces: DescribeEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#describeentitiesdetectionv2jobrequestrequesttypedef) 
 
-### describe_icd10_cm_inference_job
+### describe\_icd10\_cm\_inference\_job
 
 Gets the properties associated with an InferICD10CM job.
 
-Type annotations for
-`boto3.client("comprehendmedical").describe_icd10_cm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").describe_icd10_cm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.describe_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_icd10_cm_inference_job)
+```python title="Method definition"
+def describe_icd10_cm_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeICD10CMInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#describeicd10cminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeICD10CMInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef).
+parent.describe_icd10_cm_inference_job(**kwargs)
+```
 
-<a id="describe\_phi\_detection\_job"></a>
+1. See [:material-code-braces: DescribeICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#describeicd10cminferencejobrequestrequesttypedef) 
 
-### describe_phi_detection_job
+### describe\_phi\_detection\_job
 
 Gets the properties associated with a protected health information (PHI)
 detection job.
 
-Type annotations for
-`boto3.client("comprehendmedical").describe_phi_detection_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").describe_phi_detection_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.describe_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_phi_detection_job)
+```python title="Method definition"
+def describe_phi_detection_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribePHIDetectionJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePHIDetectionJobRequestRequestTypeDef](./type_defs.md#describephidetectionjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePHIDetectionJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef).
+parent.describe_phi_detection_job(**kwargs)
+```
 
-<a id="describe\_rx\_norm\_inference\_job"></a>
+1. See [:material-code-braces: DescribePHIDetectionJobRequestRequestTypeDef](./type_defs.md#describephidetectionjobrequestrequesttypedef) 
 
-### describe_rx_norm_inference_job
+### describe\_rx\_norm\_inference\_job
 
 Gets the properties associated with an InferRxNorm job.
 
-Type annotations for
-`boto3.client("comprehendmedical").describe_rx_norm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").describe_rx_norm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.describe_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_rx_norm_inference_job)
+```python title="Method definition"
+def describe_rx_norm_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeRxNormInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#describerxnorminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRxNormInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
+parent.describe_rx_norm_inference_job(**kwargs)
+```
 
-<a id="describe\_snomedct\_inference\_job"></a>
+1. See [:material-code-braces: DescribeRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#describerxnorminferencejobrequestrequesttypedef) 
 
-### describe_snomedct_inference_job
+### describe\_snomedct\_inference\_job
 
 Gets the properties associated with an InferSNOMEDCT job.
 
-Type annotations for
-`boto3.client("comprehendmedical").describe_snomedct_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").describe_snomedct_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_snomedct_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.describe_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.describe_snomedct_inference_job)
+```python title="Method definition"
+def describe_snomedct_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeSNOMEDCTInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#describesnomedctinferencejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#describesnomedctinferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSNOMEDCTInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#describesnomedctinferencejobresponsetypedef).
+parent.describe_snomedct_inference_job(**kwargs)
+```
 
-<a id="detect\_entities"></a>
+1. See [:material-code-braces: DescribeSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#describesnomedctinferencejobrequestrequesttypedef) 
 
-### detect_entities
+### detect\_entities
 
 The `DetectEntities` operation is deprecated.
 
-Type annotations for `boto3.client("comprehendmedical").detect_entities`
-method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").detect_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
 
-Boto3 documentation:
-[ComprehendMedical.Client.detect_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities)
+```python title="Method definition"
+def detect_entities(
+    self,
+    *,
+    Text: str,
+) -> DetectEntitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectEntitiesRequestRequestTypeDef](./type_defs.md#detectentitiesrequestrequesttypedef).
+1. See [:material-code-braces: DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectEntitiesRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns
-[DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
+parent.detect_entities(**kwargs)
+```
 
-<a id="detect\_entities\_v2"></a>
+1. See [:material-code-braces: DetectEntitiesRequestRequestTypeDef](./type_defs.md#detectentitiesrequestrequesttypedef) 
 
-### detect_entities_v2
+### detect\_entities\_v2
 
 Inspects the clinical text for a variety of medical entities and returns
 specific information about them such as entity category, location, and
 confidence score on that information.
 
-Type annotations for `boto3.client("comprehendmedical").detect_entities_v2`
-method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").detect_entities_v2` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
 
-Boto3 documentation:
-[ComprehendMedical.Client.detect_entities_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_entities_v2)
+```python title="Method definition"
+def detect_entities_v2(
+    self,
+    *,
+    Text: str,
+) -> DetectEntitiesV2ResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectEntitiesV2RequestRequestTypeDef](./type_defs.md#detectentitiesv2requestrequesttypedef).
+1. See [:material-code-braces: DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectEntitiesV2RequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns
-[DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef).
+parent.detect_entities_v2(**kwargs)
+```
 
-<a id="detect\_phi"></a>
+1. See [:material-code-braces: DetectEntitiesV2RequestRequestTypeDef](./type_defs.md#detectentitiesv2requestrequesttypedef) 
 
-### detect_phi
+### detect\_phi
 
 Inspects the clinical text for protected health information (PHI) entities and
 returns the entity category, location, and confidence score for each entity.
 
-Type annotations for `boto3.client("comprehendmedical").detect_phi` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").detect_phi` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
 
-Boto3 documentation:
-[ComprehendMedical.Client.detect_phi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.detect_phi)
+```python title="Method definition"
+def detect_phi(
+    self,
+    *,
+    Text: str,
+) -> DetectPHIResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectPHIRequestRequestTypeDef](./type_defs.md#detectphirequestrequesttypedef).
+1. See [:material-code-braces: DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectPHIRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns [DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef).
+parent.detect_phi(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DetectPHIRequestRequestTypeDef](./type_defs.md#detectphirequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("comprehendmedical").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ComprehendMedical.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="infer\_icd10\_cm"></a>
-
-### infer_icd10_cm
+### infer\_icd10\_cm
 
 InferICD10CM detects medical conditions as entities listed in a patient record
 and links those entities to normalized concept identifiers in the ICD-10-CM
 knowledge base from the Centers for Disease Control.
 
-Type annotations for `boto3.client("comprehendmedical").infer_icd10_cm` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").infer_icd10_cm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
 
-Boto3 documentation:
-[ComprehendMedical.Client.infer_icd10_cm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_icd10_cm)
+```python title="Method definition"
+def infer_icd10_cm(
+    self,
+    *,
+    Text: str,
+) -> InferICD10CMResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InferICD10CMRequestRequestTypeDef](./type_defs.md#infericd10cmrequestrequesttypedef).
+1. See [:material-code-braces: InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: InferICD10CMRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns
-[InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef).
+parent.infer_icd10_cm(**kwargs)
+```
 
-<a id="infer\_rx\_norm"></a>
+1. See [:material-code-braces: InferICD10CMRequestRequestTypeDef](./type_defs.md#infericd10cmrequestrequesttypedef) 
 
-### infer_rx_norm
+### infer\_rx\_norm
 
-InferRxNorm detects medications as entities listed in a patient record and
-links to the normalized concept identifiers in the RxNorm database from the
-National Library of Medicine.
+InferRxNorm detects medications as entities listed in a patient record and links
+to the normalized concept identifiers in the RxNorm database from the National
+Library of Medicine.
 
-Type annotations for `boto3.client("comprehendmedical").infer_rx_norm` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").infer_rx_norm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
 
-Boto3 documentation:
-[ComprehendMedical.Client.infer_rx_norm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_rx_norm)
+```python title="Method definition"
+def infer_rx_norm(
+    self,
+    *,
+    Text: str,
+) -> InferRxNormResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InferRxNormRequestRequestTypeDef](./type_defs.md#inferrxnormrequestrequesttypedef).
+1. See [:material-code-braces: InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: InferRxNormRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns
-[InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
+parent.infer_rx_norm(**kwargs)
+```
 
-<a id="infer\_snomedct"></a>
+1. See [:material-code-braces: InferRxNormRequestRequestTypeDef](./type_defs.md#inferrxnormrequestrequesttypedef) 
 
-### infer_snomedct
+### infer\_snomedct
 
 InferSNOMEDCT detects possible medical concepts as entities and links them to
-codes from the Systematized Nomenclature of Medicine, Clinical Terms
-(SNOMED-CT) ontology See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/comprehendmedical-2018-10-30/InferSNOMEDCT)
-\*\*Re...
+codes from the Systematized Nomenclature of Medicine, Clinical Terms (SNOMED-CT)
+ontology See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/comprehendmedical-2018-10-30/InferSNOMEDCT)
+**Re...
 
-Type annotations for `boto3.client("comprehendmedical").infer_snomedct` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").infer_snomedct` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_snomedct)
 
-Boto3 documentation:
-[ComprehendMedical.Client.infer_snomedct](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.infer_snomedct)
+```python title="Method definition"
+def infer_snomedct(
+    self,
+    *,
+    Text: str,
+) -> InferSNOMEDCTResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InferSNOMEDCTRequestRequestTypeDef](./type_defs.md#infersnomedctrequestrequesttypedef).
+1. See [:material-code-braces: InferSNOMEDCTResponseTypeDef](./type_defs.md#infersnomedctresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Text`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: InferSNOMEDCTRequestRequestTypeDef = {  # (1)
+    "Text": ...,
+}
 
-Returns
-[InferSNOMEDCTResponseTypeDef](./type_defs.md#infersnomedctresponsetypedef).
+parent.infer_snomedct(**kwargs)
+```
 
-<a id="list\_entities\_detection\_v2\_jobs"></a>
+1. See [:material-code-braces: InferSNOMEDCTRequestRequestTypeDef](./type_defs.md#infersnomedctrequestrequesttypedef) 
 
-### list_entities_detection_v2_jobs
+### list\_entities\_detection\_v2\_jobs
 
 Gets a list of medical entity detection jobs that you have submitted.
 
-Type annotations for
-`boto3.client("comprehendmedical").list_entities_detection_v2_jobs` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").list_entities_detection_v2_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
 
-Boto3 documentation:
-[ComprehendMedical.Client.list_entities_detection_v2_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_entities_detection_v2_jobs)
+```python title="Method definition"
+def list_entities_detection_v2_jobs(
+    self,
+    *,
+    Filter: ComprehendMedicalAsyncJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEntitiesDetectionV2JobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitiesDetectionV2JobsRequestRequestTypeDef](./type_defs.md#listentitiesdetectionv2jobsrequestrequesttypedef).
+1. See [:material-code-braces: ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef) 
+2. See [:material-code-braces: ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEntitiesDetectionV2JobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef).
+parent.list_entities_detection_v2_jobs(**kwargs)
+```
 
-<a id="list\_icd10\_cm\_inference\_jobs"></a>
+1. See [:material-code-braces: ListEntitiesDetectionV2JobsRequestRequestTypeDef](./type_defs.md#listentitiesdetectionv2jobsrequestrequesttypedef) 
 
-### list_icd10_cm_inference_jobs
+### list\_icd10\_cm\_inference\_jobs
 
 Gets a list of InferICD10CM jobs that you have submitted.
 
-Type annotations for
-`boto3.client("comprehendmedical").list_icd10_cm_inference_jobs` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").list_icd10_cm_inference_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
 
-Boto3 documentation:
-[ComprehendMedical.Client.list_icd10_cm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_icd10_cm_inference_jobs)
+```python title="Method definition"
+def list_icd10_cm_inference_jobs(
+    self,
+    *,
+    Filter: ComprehendMedicalAsyncJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListICD10CMInferenceJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListICD10CMInferenceJobsRequestRequestTypeDef](./type_defs.md#listicd10cminferencejobsrequestrequesttypedef).
+1. See [:material-code-braces: ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef) 
+2. See [:material-code-braces: ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListICD10CMInferenceJobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef).
+parent.list_icd10_cm_inference_jobs(**kwargs)
+```
 
-<a id="list\_phi\_detection\_jobs"></a>
+1. See [:material-code-braces: ListICD10CMInferenceJobsRequestRequestTypeDef](./type_defs.md#listicd10cminferencejobsrequestrequesttypedef) 
 
-### list_phi_detection_jobs
+### list\_phi\_detection\_jobs
 
 Gets a list of protected health information (PHI) detection jobs that you have
 submitted.
 
-Type annotations for
-`boto3.client("comprehendmedical").list_phi_detection_jobs` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").list_phi_detection_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
 
-Boto3 documentation:
-[ComprehendMedical.Client.list_phi_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_phi_detection_jobs)
+```python title="Method definition"
+def list_phi_detection_jobs(
+    self,
+    *,
+    Filter: ComprehendMedicalAsyncJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListPHIDetectionJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPHIDetectionJobsRequestRequestTypeDef](./type_defs.md#listphidetectionjobsrequestrequesttypedef).
+1. See [:material-code-braces: ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef) 
+2. See [:material-code-braces: ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPHIDetectionJobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef).
+parent.list_phi_detection_jobs(**kwargs)
+```
 
-<a id="list\_rx\_norm\_inference\_jobs"></a>
+1. See [:material-code-braces: ListPHIDetectionJobsRequestRequestTypeDef](./type_defs.md#listphidetectionjobsrequestrequesttypedef) 
 
-### list_rx_norm_inference_jobs
+### list\_rx\_norm\_inference\_jobs
 
 Gets a list of InferRxNorm jobs that you have submitted.
 
-Type annotations for
-`boto3.client("comprehendmedical").list_rx_norm_inference_jobs` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").list_rx_norm_inference_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
 
-Boto3 documentation:
-[ComprehendMedical.Client.list_rx_norm_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_rx_norm_inference_jobs)
+```python title="Method definition"
+def list_rx_norm_inference_jobs(
+    self,
+    *,
+    Filter: ComprehendMedicalAsyncJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRxNormInferenceJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRxNormInferenceJobsRequestRequestTypeDef](./type_defs.md#listrxnorminferencejobsrequestrequesttypedef).
+1. See [:material-code-braces: ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef) 
+2. See [:material-code-braces: ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRxNormInferenceJobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
+parent.list_rx_norm_inference_jobs(**kwargs)
+```
 
-<a id="list\_snomedct\_inference\_jobs"></a>
+1. See [:material-code-braces: ListRxNormInferenceJobsRequestRequestTypeDef](./type_defs.md#listrxnorminferencejobsrequestrequesttypedef) 
 
-### list_snomedct_inference_jobs
+### list\_snomedct\_inference\_jobs
 
 Gets a list of InferSNOMEDCT jobs a user has submitted.
 
-Type annotations for
-`boto3.client("comprehendmedical").list_snomedct_inference_jobs` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").list_snomedct_inference_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_snomedct_inference_jobs)
 
-Boto3 documentation:
-[ComprehendMedical.Client.list_snomedct_inference_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.list_snomedct_inference_jobs)
+```python title="Method definition"
+def list_snomedct_inference_jobs(
+    self,
+    *,
+    Filter: ComprehendMedicalAsyncJobFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListSNOMEDCTInferenceJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSNOMEDCTInferenceJobsRequestRequestTypeDef](./type_defs.md#listsnomedctinferencejobsrequestrequesttypedef).
+1. See [:material-code-braces: ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef) 
+2. See [:material-code-braces: ListSNOMEDCTInferenceJobsResponseTypeDef](./type_defs.md#listsnomedctinferencejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filter`:
-  [ComprehendMedicalAsyncJobFilterTypeDef](./type_defs.md#comprehendmedicalasyncjobfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSNOMEDCTInferenceJobsRequestRequestTypeDef = {  # (1)
+    "Filter": ...,
+}
 
-Returns
-[ListSNOMEDCTInferenceJobsResponseTypeDef](./type_defs.md#listsnomedctinferencejobsresponsetypedef).
+parent.list_snomedct_inference_jobs(**kwargs)
+```
 
-<a id="start\_entities\_detection\_v2\_job"></a>
+1. See [:material-code-braces: ListSNOMEDCTInferenceJobsRequestRequestTypeDef](./type_defs.md#listsnomedctinferencejobsrequestrequesttypedef) 
 
-### start_entities_detection_v2_job
+### start\_entities\_detection\_v2\_job
 
 Starts an asynchronous medical entity detection job for a collection of
 documents.
 
-Type annotations for
-`boto3.client("comprehendmedical").start_entities_detection_v2_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").start_entities_detection_v2_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.start_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_entities_detection_v2_job)
+```python title="Method definition"
+def start_entities_detection_v2_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    LanguageCode: LanguageCodeType,  # (3)
+    JobName: str = ...,
+    ClientRequestToken: str = ...,
+    KMSKey: str = ...,
+) -> StartEntitiesDetectionV2JobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#startentitiesdetectionv2jobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` (see
-  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
-- `JobName`: `str`
-- `ClientRequestToken`: `str`
-- `KMSKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartEntitiesDetectionV2JobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef).
+parent.start_entities_detection_v2_job(**kwargs)
+```
 
-<a id="start\_icd10\_cm\_inference\_job"></a>
+1. See [:material-code-braces: StartEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#startentitiesdetectionv2jobrequestrequesttypedef) 
 
-### start_icd10_cm_inference_job
+### start\_icd10\_cm\_inference\_job
 
 Starts an asynchronous job to detect medical conditions and link them to the
 ICD-10-CM ontology.
 
-Type annotations for
-`boto3.client("comprehendmedical").start_icd10_cm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").start_icd10_cm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.start_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_icd10_cm_inference_job)
+```python title="Method definition"
+def start_icd10_cm_inference_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    LanguageCode: LanguageCodeType,  # (3)
+    JobName: str = ...,
+    ClientRequestToken: str = ...,
+    KMSKey: str = ...,
+) -> StartICD10CMInferenceJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#starticd10cminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` (see
-  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
-- `JobName`: `str`
-- `ClientRequestToken`: `str`
-- `KMSKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartICD10CMInferenceJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef).
+parent.start_icd10_cm_inference_job(**kwargs)
+```
 
-<a id="start\_phi\_detection\_job"></a>
+1. See [:material-code-braces: StartICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#starticd10cminferencejobrequestrequesttypedef) 
 
-### start_phi_detection_job
+### start\_phi\_detection\_job
 
 Starts an asynchronous job to detect protected health information (PHI).
 
-Type annotations for
-`boto3.client("comprehendmedical").start_phi_detection_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").start_phi_detection_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.start_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_phi_detection_job)
+```python title="Method definition"
+def start_phi_detection_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    LanguageCode: LanguageCodeType,  # (3)
+    JobName: str = ...,
+    ClientRequestToken: str = ...,
+    KMSKey: str = ...,
+) -> StartPHIDetectionJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartPHIDetectionJobRequestRequestTypeDef](./type_defs.md#startphidetectionjobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` (see
-  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
-- `JobName`: `str`
-- `ClientRequestToken`: `str`
-- `KMSKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartPHIDetectionJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef).
+parent.start_phi_detection_job(**kwargs)
+```
 
-<a id="start\_rx\_norm\_inference\_job"></a>
+1. See [:material-code-braces: StartPHIDetectionJobRequestRequestTypeDef](./type_defs.md#startphidetectionjobrequestrequesttypedef) 
 
-### start_rx_norm_inference_job
+### start\_rx\_norm\_inference\_job
 
 Starts an asynchronous job to detect medication entities and link them to the
 RxNorm ontology.
 
-Type annotations for
-`boto3.client("comprehendmedical").start_rx_norm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").start_rx_norm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.start_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_rx_norm_inference_job)
+```python title="Method definition"
+def start_rx_norm_inference_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    LanguageCode: LanguageCodeType,  # (3)
+    JobName: str = ...,
+    ClientRequestToken: str = ...,
+    KMSKey: str = ...,
+) -> StartRxNormInferenceJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#startrxnorminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` (see
-  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
-- `JobName`: `str`
-- `ClientRequestToken`: `str`
-- `KMSKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartRxNormInferenceJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
+parent.start_rx_norm_inference_job(**kwargs)
+```
 
-<a id="start\_snomedct\_inference\_job"></a>
+1. See [:material-code-braces: StartRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#startrxnorminferencejobrequestrequesttypedef) 
 
-### start_snomedct_inference_job
+### start\_snomedct\_inference\_job
 
 Starts an asynchronous job to detect medical concepts and link them to the
 SNOMED-CT ontology.
 
-Type annotations for
-`boto3.client("comprehendmedical").start_snomedct_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").start_snomedct_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_snomedct_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.start_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.start_snomedct_inference_job)
+```python title="Method definition"
+def start_snomedct_inference_job(
+    self,
+    *,
+    InputDataConfig: InputDataConfigTypeDef,  # (1)
+    OutputDataConfig: OutputDataConfigTypeDef,  # (2)
+    DataAccessRoleArn: str,
+    LanguageCode: LanguageCodeType,  # (3)
+    JobName: str = ...,
+    ClientRequestToken: str = ...,
+    KMSKey: str = ...,
+) -> StartSNOMEDCTInferenceJobResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#startsnomedctinferencejobrequestrequesttypedef).
+1. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+2. See [:material-code-braces: OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-braces: StartSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#startsnomedctinferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
-- `OutputDataConfig`:
-  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
-  *(required)*
-- `DataAccessRoleArn`: `str` *(required)*
-- `LanguageCode`: `Literal['en']` (see
-  [LanguageCodeType](./literals.md#languagecodetype)) *(required)*
-- `JobName`: `str`
-- `ClientRequestToken`: `str`
-- `KMSKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartSNOMEDCTInferenceJobRequestRequestTypeDef = {  # (1)
+    "InputDataConfig": ...,
+    "OutputDataConfig": ...,
+    "DataAccessRoleArn": ...,
+    "LanguageCode": ...,
+}
 
-Returns
-[StartSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#startsnomedctinferencejobresponsetypedef).
+parent.start_snomedct_inference_job(**kwargs)
+```
 
-<a id="stop\_entities\_detection\_v2\_job"></a>
+1. See [:material-code-braces: StartSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#startsnomedctinferencejobrequestrequesttypedef) 
 
-### stop_entities_detection_v2_job
+### stop\_entities\_detection\_v2\_job
 
 Stops a medical entities detection job in progress.
 
-Type annotations for
-`boto3.client("comprehendmedical").stop_entities_detection_v2_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").stop_entities_detection_v2_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.stop_entities_detection_v2_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_entities_detection_v2_job)
+```python title="Method definition"
+def stop_entities_detection_v2_job(
+    self,
+    *,
+    JobId: str,
+) -> StopEntitiesDetectionV2JobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#stopentitiesdetectionv2jobrequestrequesttypedef).
+1. See [:material-code-braces: StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopEntitiesDetectionV2JobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef).
+parent.stop_entities_detection_v2_job(**kwargs)
+```
 
-<a id="stop\_icd10\_cm\_inference\_job"></a>
+1. See [:material-code-braces: StopEntitiesDetectionV2JobRequestRequestTypeDef](./type_defs.md#stopentitiesdetectionv2jobrequestrequesttypedef) 
 
-### stop_icd10_cm_inference_job
+### stop\_icd10\_cm\_inference\_job
 
 Stops an InferICD10CM inference job in progress.
 
-Type annotations for
-`boto3.client("comprehendmedical").stop_icd10_cm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").stop_icd10_cm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.stop_icd10_cm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_icd10_cm_inference_job)
+```python title="Method definition"
+def stop_icd10_cm_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> StopICD10CMInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#stopicd10cminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopICD10CMInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef).
+parent.stop_icd10_cm_inference_job(**kwargs)
+```
 
-<a id="stop\_phi\_detection\_job"></a>
+1. See [:material-code-braces: StopICD10CMInferenceJobRequestRequestTypeDef](./type_defs.md#stopicd10cminferencejobrequestrequesttypedef) 
 
-### stop_phi_detection_job
+### stop\_phi\_detection\_job
 
 Stops a protected health information (PHI) detection job in progress.
 
-Type annotations for `boto3.client("comprehendmedical").stop_phi_detection_job`
-method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").stop_phi_detection_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.stop_phi_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_phi_detection_job)
+```python title="Method definition"
+def stop_phi_detection_job(
+    self,
+    *,
+    JobId: str,
+) -> StopPHIDetectionJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopPHIDetectionJobRequestRequestTypeDef](./type_defs.md#stopphidetectionjobrequestrequesttypedef).
+1. See [:material-code-braces: StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopPHIDetectionJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef).
+parent.stop_phi_detection_job(**kwargs)
+```
 
-<a id="stop\_rx\_norm\_inference\_job"></a>
+1. See [:material-code-braces: StopPHIDetectionJobRequestRequestTypeDef](./type_defs.md#stopphidetectionjobrequestrequesttypedef) 
 
-### stop_rx_norm_inference_job
+### stop\_rx\_norm\_inference\_job
 
 Stops an InferRxNorm inference job in progress.
 
-Type annotations for
-`boto3.client("comprehendmedical").stop_rx_norm_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").stop_rx_norm_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.stop_rx_norm_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_rx_norm_inference_job)
+```python title="Method definition"
+def stop_rx_norm_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> StopRxNormInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#stoprxnorminferencejobrequestrequesttypedef).
+1. See [:material-code-braces: StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopRxNormInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).
+parent.stop_rx_norm_inference_job(**kwargs)
+```
 
-<a id="stop\_snomedct\_inference\_job"></a>
+1. See [:material-code-braces: StopRxNormInferenceJobRequestRequestTypeDef](./type_defs.md#stoprxnorminferencejobrequestrequesttypedef) 
 
-### stop_snomedct_inference_job
+### stop\_snomedct\_inference\_job
 
 Stops an InferSNOMEDCT inference job in progress.
 
-Type annotations for
-`boto3.client("comprehendmedical").stop_snomedct_inference_job` method.
+Type annotations and code completion for `#!python boto3.client("comprehendmedical").stop_snomedct_inference_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_snomedct_inference_job)
 
-Boto3 documentation:
-[ComprehendMedical.Client.stop_snomedct_inference_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical.Client.stop_snomedct_inference_job)
+```python title="Method definition"
+def stop_snomedct_inference_job(
+    self,
+    *,
+    JobId: str,
+) -> StopSNOMEDCTInferenceJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#stopsnomedctinferencejobrequestrequesttypedef).
+1. See [:material-code-braces: StopSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#stopsnomedctinferencejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopSNOMEDCTInferenceJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[StopSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#stopsnomedctinferencejobresponsetypedef).
+parent.stop_snomedct_inference_job(**kwargs)
+```
+
+1. See [:material-code-braces: StopSNOMEDCTInferenceJobRequestRequestTypeDef](./type_defs.md#stopsnomedctinferencejobrequestrequesttypedef) 
+
+
+
+

@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-glacier-module"></a>
-
-# Waiters for boto3 Glacier module
+# Waiters
 
 > [Index](../README.md) > [Glacier](./README.md) > Waiters
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [Waiters for boto3 Glacier module](#waiters-for-boto3-glacier-module)
-  - [VaultExistsWaiter](#vaultexistswaiter)
-  - [VaultNotExistsWaiter](#vaultnotexistswaiter)
-
-<a id="vaultexistswaiter"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## VaultExistsWaiter
 
-Type annotations for `boto3.client("glacier").get_waiter("vault_exists")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_waiter("vault_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.waiter import VaultExistsWaiter
@@ -30,24 +21,41 @@ def get_vault_exists_waiter() -> VaultExistsWaiter:
     return Session().client("glacier").get_waiter("vault_exists")
 ```
 
-Boto3 documentation:
-[Glacier.Waiter.vault_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultExists)
 
-Arguments for `VaultExistsWaiter.wait` method:
+### wait
 
-- `accountId`: `str` *(required)*
-- `vaultName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VaultExistsWaiter.wait` method.
 
-<a id="vaultnotexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    accountId: str,
+    vaultName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVaultInputVaultExistsWaitTypeDef = {  # (1)
+    "accountId": ...,
+    "vaultName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVaultInputVaultExistsWaitTypeDef](./type_defs.md#describevaultinputvaultexistswaittypedef) 
 ## VaultNotExistsWaiter
 
-Type annotations for `boto3.client("glacier").get_waiter("vault_not_exists")`.
+Type annotations and code completion for `#!python boto3.client("glacier").get_waiter("vault_not_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultNotExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_glacier.waiter import VaultNotExistsWaiter
@@ -56,11 +64,32 @@ def get_vault_not_exists_waiter() -> VaultNotExistsWaiter:
     return Session().client("glacier").get_waiter("vault_not_exists")
 ```
 
-Boto3 documentation:
-[Glacier.Waiter.vault_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Waiter.VaultNotExists)
 
-Arguments for `VaultNotExistsWaiter.wait` method:
+### wait
 
-- `accountId`: `str` *(required)*
-- `vaultName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python VaultNotExistsWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    accountId: str,
+    vaultName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVaultInputVaultNotExistsWaitTypeDef = {  # (1)
+    "accountId": ...,
+    "vaultName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVaultInputVaultNotExistsWaitTypeDef](./type_defs.md#describevaultinputvaultnotexistswaittypedef) 

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-ivs-module"></a>
-
-# Type annotations for boto3 IVS module
+#  IVS module
 
 > [Index](../README.md) > IVS
 
-Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module
-[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
+!!! note ""
 
-- [Type annotations for boto3 IVS module](#type-annotations-for-boto3-ivs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IVSClient](#ivsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+    type annotations stubs module [mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IVS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ivs]'
 python -m pip install mypy-boto3-ivs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,90 +42,37 @@ python -m pip install mypy-boto3-ivs
 python -m pip uninstall -y mypy-boto3-ivs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ivsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IVSClient
 
-Type annotations for `boto3.client("ivs")` as [IVSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ivs")` as [IVSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ivs.client import IVSClient
+
+def get_client() -> IVSClient:
+    return Session().cleint("ivs")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_get_channel](./client.md#batch_get_channel)
-- [batch_get_stream_key](./client.md#batch_get_stream_key)
-- [can_paginate](./client.md#can_paginate)
-- [create_channel](./client.md#create_channel)
-- [create_recording_configuration](./client.md#create_recording_configuration)
-- [create_stream_key](./client.md#create_stream_key)
-- [delete_channel](./client.md#delete_channel)
-- [delete_playback_key_pair](./client.md#delete_playback_key_pair)
-- [delete_recording_configuration](./client.md#delete_recording_configuration)
-- [delete_stream_key](./client.md#delete_stream_key)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_channel](./client.md#get_channel)
-- [get_paginator](./client.md#get_paginator)
-- [get_playback_key_pair](./client.md#get_playback_key_pair)
-- [get_recording_configuration](./client.md#get_recording_configuration)
-- [get_stream](./client.md#get_stream)
-- [get_stream_key](./client.md#get_stream_key)
-- [get_stream_session](./client.md#get_stream_session)
-- [import_playback_key_pair](./client.md#import_playback_key_pair)
-- [list_channels](./client.md#list_channels)
-- [list_playback_key_pairs](./client.md#list_playback_key_pairs)
-- [list_recording_configurations](./client.md#list_recording_configurations)
-- [list_stream_keys](./client.md#list_stream_keys)
-- [list_stream_sessions](./client.md#list_stream_sessions)
-- [list_streams](./client.md#list_streams)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_metadata](./client.md#put_metadata)
-- [stop_stream](./client.md#stop_stream)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_channel](./client.md#update_channel)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IVSClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ChannelNotBroadcasting
-- ClientError
-- ConflictException
-- InternalServerException
-- PendingVerification
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- StreamUnavailable
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ivs").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ivs").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ivs.paginator import ListChannelsPaginator, ...
+from mypy_boto3_ivs.paginator import ListChannelsPaginator
+
+def get_list_channels_paginator() -> ListChannelsPaginator:
+    return Session().client("ivs").get_paginator("list_channels"))
 ```
 
 - [ListChannelsPaginator](./paginators.md#listchannelspaginator)
@@ -156,16 +81,23 @@ from mypy_boto3_ivs.paginator import ListChannelsPaginator, ...
 - [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ivs.literals import ChannelLatencyModeType
 
-```python
-from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
+def get_value() -> ChannelLatencyModeType:
+    return "LOW"
 ```
 
 - [ChannelLatencyModeType](./literals.md#channellatencymodetype)
@@ -183,18 +115,22 @@ from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef
 
-```python
-from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef, ...
+def get_value() -> AudioConfigurationTypeDef:
+    return {
+        "channels": ...,
+    }
 ```
 
 - [AudioConfigurationTypeDef](./type_defs.md#audioconfigurationtypedef)
@@ -231,16 +167,21 @@ from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef, ...
 - [ImportPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#importplaybackkeypairrequestrequesttypedef)
 - [ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef)
 - [IngestConfigurationTypeDef](./type_defs.md#ingestconfigurationtypedef)
+- [ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef)
 - [ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef)
 - [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)
+- [ListPlaybackKeyPairsRequestListPlaybackKeyPairsPaginateTypeDef](./type_defs.md#listplaybackkeypairsrequestlistplaybackkeypairspaginatetypedef)
 - [ListPlaybackKeyPairsRequestRequestTypeDef](./type_defs.md#listplaybackkeypairsrequestrequesttypedef)
 - [ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef)
+- [ListRecordingConfigurationsRequestListRecordingConfigurationsPaginateTypeDef](./type_defs.md#listrecordingconfigurationsrequestlistrecordingconfigurationspaginatetypedef)
 - [ListRecordingConfigurationsRequestRequestTypeDef](./type_defs.md#listrecordingconfigurationsrequestrequesttypedef)
 - [ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef)
+- [ListStreamKeysRequestListStreamKeysPaginateTypeDef](./type_defs.md#liststreamkeysrequestliststreamkeyspaginatetypedef)
 - [ListStreamKeysRequestRequestTypeDef](./type_defs.md#liststreamkeysrequestrequesttypedef)
 - [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef)
 - [ListStreamSessionsRequestRequestTypeDef](./type_defs.md#liststreamsessionsrequestrequesttypedef)
 - [ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef)
+- [ListStreamsRequestListStreamsPaginateTypeDef](./type_defs.md#liststreamsrequestliststreamspaginatetypedef)
 - [ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef)
 - [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -268,3 +209,4 @@ from mypy_boto3_ivs.type_defs import AudioConfigurationTypeDef, ...
 - [UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef)
 - [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef)
 - [VideoConfigurationTypeDef](./type_defs.md#videoconfigurationtypedef)
+

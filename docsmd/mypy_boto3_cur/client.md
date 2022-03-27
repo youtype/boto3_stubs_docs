@@ -1,37 +1,18 @@
-<a id="costandusagereportserviceclient-for-boto3-costandusagereportservice-module"></a>
+# CostandUsageReportServiceClient
 
-# CostandUsageReportServiceClient for boto3 CostandUsageReportService module
+> [Index](../README.md) > [CostandUsageReportService](./README.md) > CostandUsageReportServiceClient
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) >
-> CostandUsageReportServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module
-[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
-
-- [CostandUsageReportServiceClient for boto3 CostandUsageReportService module](#costandusagereportserviceclient-for-boto3-costandusagereportservice-module)
-  - [CostandUsageReportServiceClient](#costandusagereportserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_report_definition](#delete_report_definition)
-    - [describe_report_definitions](#describe_report_definitions)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [modify_report_definition](#modify_report_definition)
-    - [put_report_definition](#put_report_definition)
-    - [get_paginator](#get_paginator)
-
-<a id="costandusagereportserviceclient"></a>
+    Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+    type annotations stubs module [mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 ## CostandUsageReportServiceClient
 
-Type annotations for `boto3.client("cur")`
+Type annotations and code completion for `#!python boto3.client("cur")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cur.client import CostandUsageReportServiceClient
 
@@ -39,178 +20,199 @@ def get_cur_client() -> CostandUsageReportServiceClient:
     return Session().client("cur")
 ```
 
-Boto3 documentation:
-[CostandUsageReportService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cur").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cur")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DuplicateReportNameException,
+    client.InternalErrorException,
+    client.ReportLimitReachedException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cur.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DuplicateReportNameException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.ReportLimitReachedException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CostandUsageReportServiceClient exceptions.
-
-Type annotations for `boto3.client("cur").exceptions` method.
-
-Boto3 documentation:
-[CostandUsageReportService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cur").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cur").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_report\_definition"></a>
-
-### delete_report_definition
+### delete\_report\_definition
 
 Deletes the specified report.
 
-Type annotations for `boto3.client("cur").delete_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("cur").delete_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.delete_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.delete_report_definition)
+```python title="Method definition"
+def delete_report_definition(
+    self,
+    *,
+    ReportName: str = ...,
+) -> DeleteReportDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReportName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteReportDefinitionRequestRequestTypeDef = {  # (1)
+    "ReportName": ...,
+}
 
-Returns
-[DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef).
+parent.delete_report_definition(**kwargs)
+```
 
-<a id="describe\_report\_definitions"></a>
+1. See [:material-code-braces: DeleteReportDefinitionRequestRequestTypeDef](./type_defs.md#deletereportdefinitionrequestrequesttypedef) 
 
-### describe_report_definitions
+### describe\_report\_definitions
 
 Lists the AWS Cost and Usage reports available to this account.
 
-Type annotations for `boto3.client("cur").describe_report_definitions` method.
+Type annotations and code completion for `#!python boto3.client("cur").describe_report_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.describe_report_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.describe_report_definitions)
+```python title="Method definition"
+def describe_report_definitions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReportDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReportDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef).
+parent.describe_report_definitions(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeReportDefinitionsRequestRequestTypeDef](./type_defs.md#describereportdefinitionsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cur").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("cur").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="modify\_report\_definition"></a>
-
-### modify_report_definition
+### modify\_report\_definition
 
 Allows you to programatically update your report preferences.
 
-Type annotations for `boto3.client("cur").modify_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("cur").modify_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.modify_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.modify_report_definition)
+```python title="Method definition"
+def modify_report_definition(
+    self,
+    *,
+    ReportName: str,
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ReportName`: `str` *(required)*
-- `ReportDefinition`:
-  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyReportDefinitionRequestRequestTypeDef = {  # (1)
+    "ReportName": ...,
+    "ReportDefinition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_report_definition(**kwargs)
+```
 
-<a id="put\_report\_definition"></a>
+1. See [:material-code-braces: ModifyReportDefinitionRequestRequestTypeDef](./type_defs.md#modifyreportdefinitionrequestrequesttypedef) 
 
-### put_report_definition
+### put\_report\_definition
 
 Creates a new report using the description that you provide.
 
-Type annotations for `boto3.client("cur").put_report_definition` method.
+Type annotations and code completion for `#!python boto3.client("cur").put_report_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
 
-Boto3 documentation:
-[CostandUsageReportService.Client.put_report_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService.Client.put_report_definition)
+```python title="Method definition"
+def put_report_definition(
+    self,
+    *,
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ReportDefinition`:
-  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutReportDefinitionRequestRequestTypeDef = {  # (1)
+    "ReportDefinition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_report_definition(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: PutReportDefinitionRequestRequestTypeDef](./type_defs.md#putreportdefinitionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cur").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("cur").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_report_definitions")` ->
-  [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
+- `client.get_paginator("describe_report_definitions")` -> [DescribeReportDefinitionsPaginator](./paginators.md#describereportdefinitionspaginator)
+
+
+

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-imagebuilder-module"></a>
-
-# Type annotations for boto3 imagebuilder module
+#  imagebuilder module
 
 > [Index](../README.md) > imagebuilder
 
-Auto-generated documentation for
-[imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
-type annotations stubs module
-[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+!!! note ""
 
-- [Type annotations for boto3 imagebuilder module](#type-annotations-for-boto3-imagebuilder-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [imagebuilderClient](#imagebuilderclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
+    type annotations stubs module [mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `imagebuilder`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[imagebuilder]'
 python -m pip install mypy-boto3-imagebuilder
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,118 +42,41 @@ python -m pip install mypy-boto3-imagebuilder
 python -m pip uninstall -y mypy-boto3-imagebuilder
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="imagebuilderclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## imagebuilderClient
 
-Type annotations for `boto3.client("imagebuilder")` as
-[imagebuilderClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("imagebuilder")` as [imagebuilderClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_imagebuilder.client import imagebuilderClient
+
+def get_client() -> imagebuilderClient:
+    return Session().cleint("imagebuilder")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [cancel_image_creation](./client.md#cancel_image_creation)
-- [create_component](./client.md#create_component)
-- [create_container_recipe](./client.md#create_container_recipe)
-- [create_distribution_configuration](./client.md#create_distribution_configuration)
-- [create_image](./client.md#create_image)
-- [create_image_pipeline](./client.md#create_image_pipeline)
-- [create_image_recipe](./client.md#create_image_recipe)
-- [create_infrastructure_configuration](./client.md#create_infrastructure_configuration)
-- [delete_component](./client.md#delete_component)
-- [delete_container_recipe](./client.md#delete_container_recipe)
-- [delete_distribution_configuration](./client.md#delete_distribution_configuration)
-- [delete_image](./client.md#delete_image)
-- [delete_image_pipeline](./client.md#delete_image_pipeline)
-- [delete_image_recipe](./client.md#delete_image_recipe)
-- [delete_infrastructure_configuration](./client.md#delete_infrastructure_configuration)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_component](./client.md#get_component)
-- [get_component_policy](./client.md#get_component_policy)
-- [get_container_recipe](./client.md#get_container_recipe)
-- [get_container_recipe_policy](./client.md#get_container_recipe_policy)
-- [get_distribution_configuration](./client.md#get_distribution_configuration)
-- [get_image](./client.md#get_image)
-- [get_image_pipeline](./client.md#get_image_pipeline)
-- [get_image_policy](./client.md#get_image_policy)
-- [get_image_recipe](./client.md#get_image_recipe)
-- [get_image_recipe_policy](./client.md#get_image_recipe_policy)
-- [get_infrastructure_configuration](./client.md#get_infrastructure_configuration)
-- [import_component](./client.md#import_component)
-- [import_vm_image](./client.md#import_vm_image)
-- [list_component_build_versions](./client.md#list_component_build_versions)
-- [list_components](./client.md#list_components)
-- [list_container_recipes](./client.md#list_container_recipes)
-- [list_distribution_configurations](./client.md#list_distribution_configurations)
-- [list_image_build_versions](./client.md#list_image_build_versions)
-- [list_image_packages](./client.md#list_image_packages)
-- [list_image_pipeline_images](./client.md#list_image_pipeline_images)
-- [list_image_pipelines](./client.md#list_image_pipelines)
-- [list_image_recipes](./client.md#list_image_recipes)
-- [list_images](./client.md#list_images)
-- [list_infrastructure_configurations](./client.md#list_infrastructure_configurations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_component_policy](./client.md#put_component_policy)
-- [put_container_recipe_policy](./client.md#put_container_recipe_policy)
-- [put_image_policy](./client.md#put_image_policy)
-- [put_image_recipe_policy](./client.md#put_image_recipe_policy)
-- [start_image_pipeline_execution](./client.md#start_image_pipeline_execution)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_distribution_configuration](./client.md#update_distribution_configuration)
-- [update_image_pipeline](./client.md#update_image_pipeline)
-- [update_infrastructure_configuration](./client.md#update_infrastructure_configuration)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-imagebuilderClient [exceptions](./client.md#exceptions)
 
-- CallRateLimitExceededException
-- ClientError
-- ClientException
-- ForbiddenException
-- IdempotentParameterMismatchException
-- InvalidPaginationTokenException
-- InvalidParameterCombinationException
-- InvalidParameterException
-- InvalidParameterValueException
-- InvalidRequestException
-- InvalidVersionNumberException
-- ResourceAlreadyExistsException
-- ResourceDependencyException
-- ResourceInUseException
-- ResourceNotFoundException
-- ServiceException
-- ServiceQuotaExceededException
-- ServiceUnavailableException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_imagebuilder.literals import BuildTypeType
 
-```python
-from mypy_boto3_imagebuilder.literals import BuildTypeType, ...
+def get_value() -> BuildTypeType:
+    return "IMPORT"
 ```
 
 - [BuildTypeType](./literals.md#buildtypetype)
@@ -195,17 +97,20 @@ from mypy_boto3_imagebuilder.literals import BuildTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef
 
-```python
-from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTypeDef, ...
+def get_value() -> AdditionalInstanceConfigurationTypeDef:
+    return {
+        "systemsManagerAgent": ...,
+    }
 ```
 
 - [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
@@ -352,3 +257,4 @@ from mypy_boto3_imagebuilder.type_defs import AdditionalInstanceConfigurationTyp
 - [UpdateImagePipelineResponseTypeDef](./type_defs.md#updateimagepipelineresponsetypedef)
 - [UpdateInfrastructureConfigurationRequestRequestTypeDef](./type_defs.md#updateinfrastructureconfigurationrequestrequesttypedef)
 - [UpdateInfrastructureConfigurationResponseTypeDef](./type_defs.md#updateinfrastructureconfigurationresponsetypedef)
+

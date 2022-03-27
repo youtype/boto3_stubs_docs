@@ -1,58 +1,18 @@
-<a id="applicationdiscoveryserviceclient-for-boto3-applicationdiscoveryservice-module"></a>
+# ApplicationDiscoveryServiceClient
 
-# ApplicationDiscoveryServiceClient for boto3 ApplicationDiscoveryService module
+> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > ApplicationDiscoveryServiceClient
 
-> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) >
-> ApplicationDiscoveryServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
-type annotations stubs module
-[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
-
-- [ApplicationDiscoveryServiceClient for boto3 ApplicationDiscoveryService module](#applicationdiscoveryserviceclient-for-boto3-applicationdiscoveryservice-module)
-  - [ApplicationDiscoveryServiceClient](#applicationdiscoveryserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_configuration_items_to_application](#associate_configuration_items_to_application)
-    - [batch_delete_import_data](#batch_delete_import_data)
-    - [can_paginate](#can_paginate)
-    - [create_application](#create_application)
-    - [create_tags](#create_tags)
-    - [delete_applications](#delete_applications)
-    - [delete_tags](#delete_tags)
-    - [describe_agents](#describe_agents)
-    - [describe_configurations](#describe_configurations)
-    - [describe_continuous_exports](#describe_continuous_exports)
-    - [describe_export_configurations](#describe_export_configurations)
-    - [describe_export_tasks](#describe_export_tasks)
-    - [describe_import_tasks](#describe_import_tasks)
-    - [describe_tags](#describe_tags)
-    - [disassociate_configuration_items_from_application](#disassociate_configuration_items_from_application)
-    - [export_configurations](#export_configurations)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_discovery_summary](#get_discovery_summary)
-    - [list_configurations](#list_configurations)
-    - [list_server_neighbors](#list_server_neighbors)
-    - [start_continuous_export](#start_continuous_export)
-    - [start_data_collection_by_agent_ids](#start_data_collection_by_agent_ids)
-    - [start_export_task](#start_export_task)
-    - [start_import_task](#start_import_task)
-    - [stop_continuous_export](#stop_continuous_export)
-    - [stop_data_collection_by_agent_ids](#stop_data_collection_by_agent_ids)
-    - [update_application](#update_application)
-    - [get_paginator](#get_paginator)
-
-<a id="applicationdiscoveryserviceclient"></a>
+    Auto-generated documentation for [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+    type annotations stubs module [mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 ## ApplicationDiscoveryServiceClient
 
-Type annotations for `boto3.client("discovery")`
+Type annotations and code completion for `#!python boto3.client("discovery")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 
@@ -60,664 +20,826 @@ def get_discovery_client() -> ApplicationDiscoveryServiceClient:
     return Session().client("discovery")
 ```
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("discovery").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("discovery")
+
+try:
+    do_something(client)
+except (
+    client.AuthorizationErrorException,
+    client.ClientError,
+    client.ConflictErrorException,
+    client.HomeRegionNotSetException,
+    client.InvalidParameterException,
+    client.InvalidParameterValueException,
+    client.OperationNotPermittedException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ServerInternalErrorException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_discovery.client import Exceptions
 
 def handle_error(exc: Exceptions.AuthorizationErrorException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AuthorizationErrorException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictErrorException`
-- `Exceptions.HomeRegionNotSetException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServerInternalErrorException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ApplicationDiscoveryServiceClient exceptions.
-
-Type annotations for `boto3.client("discovery").exceptions` method.
-
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_configuration\_items\_to\_application"></a>
-
-### associate_configuration_items_to_application
+### associate\_configuration\_items\_to\_application
 
 Associates one or more configuration items with an application.
 
-Type annotations for
-`boto3.client("discovery").associate_configuration_items_to_application`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").associate_configuration_items_to_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.associate_configuration_items_to_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.associate_configuration_items_to_application)
+```python title="Method definition"
+def associate_configuration_items_to_application(
+    self,
+    *,
+    applicationConfigurationId: str,
+    configurationIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateConfigurationItemsToApplicationRequestRequestTypeDef](./type_defs.md#associateconfigurationitemstoapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `applicationConfigurationId`: `str` *(required)*
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateConfigurationItemsToApplicationRequestRequestTypeDef = {  # (1)
+    "applicationConfigurationId": ...,
+    "configurationIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_configuration_items_to_application(**kwargs)
+```
 
-<a id="batch\_delete\_import\_data"></a>
+1. See [:material-code-braces: AssociateConfigurationItemsToApplicationRequestRequestTypeDef](./type_defs.md#associateconfigurationitemstoapplicationrequestrequesttypedef) 
 
-### batch_delete_import_data
+### batch\_delete\_import\_data
 
 Deletes one or more import tasks, each identified by their import ID.
 
-Type annotations for `boto3.client("discovery").batch_delete_import_data`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").batch_delete_import_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.batch_delete_import_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.batch_delete_import_data)
+```python title="Method definition"
+def batch_delete_import_data(
+    self,
+    *,
+    importTaskIds: Sequence[str],
+) -> BatchDeleteImportDataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteImportDataRequestRequestTypeDef](./type_defs.md#batchdeleteimportdatarequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `importTaskIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteImportDataRequestRequestTypeDef = {  # (1)
+    "importTaskIds": ...,
+}
 
-Returns
-[BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
+parent.batch_delete_import_data(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDeleteImportDataRequestRequestTypeDef](./type_defs.md#batchdeleteimportdatarequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("discovery").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("discovery").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_application"></a>
-
-### create_application
+### create\_application
 
 Creates an application with the given name and description.
 
-Type annotations for `boto3.client("discovery").create_application` method.
+Type annotations and code completion for `#!python boto3.client("discovery").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+) -> CreateApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+1. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+parent.create_application(**kwargs)
+```
 
-<a id="create\_tags"></a>
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-### create_tags
+### create\_tags
 
 Creates one or more tags for configuration items.
 
-Type annotations for `boto3.client("discovery").create_tags` method.
+Type annotations and code completion for `#!python boto3.client("discovery").create_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.create_tags)
+```python title="Method definition"
+def create_tags(
+    self,
+    *,
+    configurationIds: Sequence[str],
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTagsRequestRequestTypeDef = {  # (1)
+    "configurationIds": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_tags(**kwargs)
+```
 
-<a id="delete\_applications"></a>
+1. See [:material-code-braces: CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef) 
 
-### delete_applications
+### delete\_applications
 
 Deletes a list of applications and their associations with configuration items.
 
-Type annotations for `boto3.client("discovery").delete_applications` method.
+Type annotations and code completion for `#!python boto3.client("discovery").delete_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.delete_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_applications)
+```python title="Method definition"
+def delete_applications(
+    self,
+    *,
+    configurationIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationsRequestRequestTypeDef](./type_defs.md#deleteapplicationsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationsRequestRequestTypeDef = {  # (1)
+    "configurationIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_applications(**kwargs)
+```
 
-<a id="delete\_tags"></a>
+1. See [:material-code-braces: DeleteApplicationsRequestRequestTypeDef](./type_defs.md#deleteapplicationsrequestrequesttypedef) 
 
-### delete_tags
+### delete\_tags
 
 Deletes the association between configuration items and one or more tags.
 
-Type annotations for `boto3.client("discovery").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("discovery").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    configurationIds: Sequence[str],
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsRequestRequestTypeDef = {  # (1)
+    "configurationIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_tags(**kwargs)
+```
 
-<a id="describe\_agents"></a>
+1. See [:material-code-braces: DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef) 
 
-### describe_agents
+### describe\_agents
 
 Lists agents or connectors as specified by ID or other filters.
 
-Type annotations for `boto3.client("discovery").describe_agents` method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_agents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_agents)
+```python title="Method definition"
+def describe_agents(
+    self,
+    *,
+    agentIds: Sequence[str] = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeAgentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAgentsRequestRequestTypeDef](./type_defs.md#describeagentsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `agentIds`: `Sequence`\[`str`\]
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAgentsRequestRequestTypeDef = {  # (1)
+    "agentIds": ...,
+}
 
-Returns
-[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef).
+parent.describe_agents(**kwargs)
+```
 
-<a id="describe\_configurations"></a>
+1. See [:material-code-braces: DescribeAgentsRequestRequestTypeDef](./type_defs.md#describeagentsrequestrequesttypedef) 
 
-### describe_configurations
+### describe\_configurations
 
 Retrieves attributes for a list of configuration item IDs.
 
-Type annotations for `boto3.client("discovery").describe_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_configurations)
+```python title="Method definition"
+def describe_configurations(
+    self,
+    *,
+    configurationIds: Sequence[str],
+) -> DescribeConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConfigurationsRequestRequestTypeDef](./type_defs.md#describeconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationsRequestRequestTypeDef = {  # (1)
+    "configurationIds": ...,
+}
 
-Returns
-[DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
+parent.describe_configurations(**kwargs)
+```
 
-<a id="describe\_continuous\_exports"></a>
+1. See [:material-code-braces: DescribeConfigurationsRequestRequestTypeDef](./type_defs.md#describeconfigurationsrequestrequesttypedef) 
 
-### describe_continuous_exports
+### describe\_continuous\_exports
 
 Lists exports as specified by ID.
 
-Type annotations for `boto3.client("discovery").describe_continuous_exports`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_continuous_exports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_continuous_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_continuous_exports)
+```python title="Method definition"
+def describe_continuous_exports(
+    self,
+    *,
+    exportIds: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeContinuousExportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeContinuousExportsRequestRequestTypeDef](./type_defs.md#describecontinuousexportsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeContinuousExportsRequestRequestTypeDef = {  # (1)
+    "exportIds": ...,
+}
 
-Returns
-[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef).
+parent.describe_continuous_exports(**kwargs)
+```
 
-<a id="describe\_export\_configurations"></a>
+1. See [:material-code-braces: DescribeContinuousExportsRequestRequestTypeDef](./type_defs.md#describecontinuousexportsrequestrequesttypedef) 
 
-### describe_export_configurations
+### describe\_export\_configurations
 
 `DescribeExportConfigurations` is deprecated.
 
-Type annotations for `boto3.client("discovery").describe_export_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_export_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_configurations)
+```python title="Method definition"
+def describe_export_configurations(
+    self,
+    *,
+    exportIds: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeExportConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExportConfigurationsRequestRequestTypeDef](./type_defs.md#describeexportconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeExportConfigurationsRequestRequestTypeDef = {  # (1)
+    "exportIds": ...,
+}
 
-Returns
-[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef).
+parent.describe_export_configurations(**kwargs)
+```
 
-<a id="describe\_export\_tasks"></a>
+1. See [:material-code-braces: DescribeExportConfigurationsRequestRequestTypeDef](./type_defs.md#describeexportconfigurationsrequestrequesttypedef) 
 
-### describe_export_tasks
+### describe\_export\_tasks
 
 Retrieve status of one or more export tasks.
 
-Type annotations for `boto3.client("discovery").describe_export_tasks` method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_export_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_export_tasks)
+```python title="Method definition"
+def describe_export_tasks(
+    self,
+    *,
+    exportIds: Sequence[str] = ...,
+    filters: Sequence[ExportFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeExportTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef).
+1. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
+2. See [:material-code-braces: DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportIds`: `Sequence`\[`str`\]
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksRequestRequestTypeDef = {  # (1)
+    "exportIds": ...,
+}
 
-Returns
-[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
+parent.describe_export_tasks(**kwargs)
+```
 
-<a id="describe\_import\_tasks"></a>
+1. See [:material-code-braces: DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef) 
 
-### describe_import_tasks
+### describe\_import\_tasks
 
-Returns an array of import tasks for your account, including status
-information, times, IDs, the Amazon S3 Object URL for the import file, and
-more.
+Returns an array of import tasks for your account, including status information,
+times, IDs, the Amazon S3 Object URL for the import file, and more.
 
-Type annotations for `boto3.client("discovery").describe_import_tasks` method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_import_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_import_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_import_tasks)
+```python title="Method definition"
+def describe_import_tasks(
+    self,
+    *,
+    filters: Sequence[ImportTaskFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeImportTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImportTasksRequestRequestTypeDef](./type_defs.md#describeimporttasksrequestrequesttypedef).
+1. See [:material-code-braces: ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef) 
+2. See [:material-code-braces: DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  `Sequence`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeImportTasksRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef).
+parent.describe_import_tasks(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeImportTasksRequestRequestTypeDef](./type_defs.md#describeimporttasksrequestrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Retrieves a list of configuration items that have tags as specified by the key-
 value pairs, name and value, passed to the optional parameter `filters` .
 
-Type annotations for `boto3.client("discovery").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("discovery").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    filters: Sequence[TagFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeTagsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+2. See [:material-code-braces: DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="disassociate\_configuration\_items\_from\_application"></a>
+1. See [:material-code-braces: DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef) 
 
-### disassociate_configuration_items_from_application
+### disassociate\_configuration\_items\_from\_application
 
 Disassociates one or more configuration items from an application.
 
-Type annotations for
-`boto3.client("discovery").disassociate_configuration_items_from_application`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").disassociate_configuration_items_from_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.disassociate_configuration_items_from_application)
+```python title="Method definition"
+def disassociate_configuration_items_from_application(
+    self,
+    *,
+    applicationConfigurationId: str,
+    configurationIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef](./type_defs.md#disassociateconfigurationitemsfromapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `applicationConfigurationId`: `str` *(required)*
-- `configurationIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef = {  # (1)
+    "applicationConfigurationId": ...,
+    "configurationIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_configuration_items_from_application(**kwargs)
+```
 
-<a id="export\_configurations"></a>
+1. See [:material-code-braces: DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef](./type_defs.md#disassociateconfigurationitemsfromapplicationrequestrequesttypedef) 
 
-### export_configurations
+### export\_configurations
 
 Deprecated.
 
-Type annotations for `boto3.client("discovery").export_configurations` method.
+Type annotations and code completion for `#!python boto3.client("discovery").export_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.export_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.export_configurations)
+```python title="Method definition"
+def export_configurations(
+    self,
+) -> ExportConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
+1. See [:material-code-braces: ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef) 
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("discovery").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("discovery").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_discovery\_summary"></a>
-
-### get_discovery_summary
+### get\_discovery\_summary
 
 Retrieves a short summary of discovered assets.
 
-Type annotations for `boto3.client("discovery").get_discovery_summary` method.
+Type annotations and code completion for `#!python boto3.client("discovery").get_discovery_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.get_discovery_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.get_discovery_summary)
+```python title="Method definition"
+def get_discovery_summary(
+    self,
+) -> GetDiscoverySummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
+1. See [:material-code-braces: GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef) 
 
-<a id="list\_configurations"></a>
-
-### list_configurations
+### list\_configurations
 
 Retrieves a list of configuration items as specified by the value passed to the
 required parameter `configurationType`.
 
-Type annotations for `boto3.client("discovery").list_configurations` method.
+Type annotations and code completion for `#!python boto3.client("discovery").list_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.list_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_configurations)
+```python title="Method definition"
+def list_configurations(
+    self,
+    *,
+    configurationType: ConfigurationItemTypeType,  # (1)
+    filters: Sequence[FilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    orderBy: Sequence[OrderByElementTypeDef] = ...,  # (3)
+) -> ListConfigurationsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef).
+1. See [:material-code-brackets: ConfigurationItemTypeType](./literals.md#configurationitemtypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef) 
+4. See [:material-code-braces: ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configurationType`:
-  [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
-  *(required)*
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `orderBy`:
-  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationsRequestRequestTypeDef = {  # (1)
+    "configurationType": ...,
+}
 
-Returns
-[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
+parent.list_configurations(**kwargs)
+```
 
-<a id="list\_server\_neighbors"></a>
+1. See [:material-code-braces: ListConfigurationsRequestRequestTypeDef](./type_defs.md#listconfigurationsrequestrequesttypedef) 
 
-### list_server_neighbors
+### list\_server\_neighbors
 
 Retrieves a list of servers that are one network hop away from a specified
 server.
 
-Type annotations for `boto3.client("discovery").list_server_neighbors` method.
+Type annotations and code completion for `#!python boto3.client("discovery").list_server_neighbors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.list_server_neighbors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.list_server_neighbors)
+```python title="Method definition"
+def list_server_neighbors(
+    self,
+    *,
+    configurationId: str,
+    portInformationNeeded: bool = ...,
+    neighborConfigurationIds: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListServerNeighborsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServerNeighborsRequestRequestTypeDef](./type_defs.md#listserverneighborsrequestrequesttypedef).
+1. See [:material-code-braces: ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `configurationId`: `str` *(required)*
-- `portInformationNeeded`: `bool`
-- `neighborConfigurationIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListServerNeighborsRequestRequestTypeDef = {  # (1)
+    "configurationId": ...,
+}
 
-Returns
-[ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef).
+parent.list_server_neighbors(**kwargs)
+```
 
-<a id="start\_continuous\_export"></a>
+1. See [:material-code-braces: ListServerNeighborsRequestRequestTypeDef](./type_defs.md#listserverneighborsrequestrequesttypedef) 
 
-### start_continuous_export
+### start\_continuous\_export
 
 Start the continuous flow of agent's discovered data into Amazon Athena.
 
-Type annotations for `boto3.client("discovery").start_continuous_export`
-method.
+Type annotations and code completion for `#!python boto3.client("discovery").start_continuous_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_continuous_export)
+```python title="Method definition"
+def start_continuous_export(
+    self,
+) -> StartContinuousExportResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
+1. See [:material-code-braces: StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef) 
 
-<a id="start\_data\_collection\_by\_agent\_ids"></a>
-
-### start_data_collection_by_agent_ids
+### start\_data\_collection\_by\_agent\_ids
 
 Instructs the specified agents or connectors to start collecting data.
 
-Type annotations for
-`boto3.client("discovery").start_data_collection_by_agent_ids` method.
+Type annotations and code completion for `#!python boto3.client("discovery").start_data_collection_by_agent_ids` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_data_collection_by_agent_ids)
+```python title="Method definition"
+def start_data_collection_by_agent_ids(
+    self,
+    *,
+    agentIds: Sequence[str],
+) -> StartDataCollectionByAgentIdsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#startdatacollectionbyagentidsrequestrequesttypedef).
+1. See [:material-code-braces: StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `agentIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDataCollectionByAgentIdsRequestRequestTypeDef = {  # (1)
+    "agentIds": ...,
+}
 
-Returns
-[StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
+parent.start_data_collection_by_agent_ids(**kwargs)
+```
 
-<a id="start\_export\_task"></a>
+1. See [:material-code-braces: StartDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#startdatacollectionbyagentidsrequestrequesttypedef) 
 
-### start_export_task
+### start\_export\_task
 
 Begins the export of discovered data to an S3 bucket.
 
-Type annotations for `boto3.client("discovery").start_export_task` method.
+Type annotations and code completion for `#!python boto3.client("discovery").start_export_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_export_task)
+```python title="Method definition"
+def start_export_task(
+    self,
+    *,
+    exportDataFormat: Sequence[ExportDataFormatType] = ...,  # (1)
+    filters: Sequence[ExportFilterTypeDef] = ...,  # (2)
+    startTime: Union[datetime, str] = ...,
+    endTime: Union[datetime, str] = ...,
+) -> StartExportTaskResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartExportTaskRequestRequestTypeDef](./type_defs.md#startexporttaskrequestrequesttypedef).
+1. See [:material-code-brackets: ExportDataFormatType](./literals.md#exportdataformattype) 
+2. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
+3. See [:material-code-braces: StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportDataFormat`:
-  `Sequence`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartExportTaskRequestRequestTypeDef = {  # (1)
+    "exportDataFormat": ...,
+}
 
-Returns
-[StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef).
+parent.start_export_task(**kwargs)
+```
 
-<a id="start\_import\_task"></a>
+1. See [:material-code-braces: StartExportTaskRequestRequestTypeDef](./type_defs.md#startexporttaskrequestrequesttypedef) 
 
-### start_import_task
+### start\_import\_task
 
 Starts an import task, which allows you to import details of your on-premises
 environment directly into AWS Migration Hub without having to use the
 Application Discovery Service (ADS) tools such as the Discovery Connector or
 Discovery Agent.
 
-Type annotations for `boto3.client("discovery").start_import_task` method.
+Type annotations and code completion for `#!python boto3.client("discovery").start_import_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.start_import_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.start_import_task)
+```python title="Method definition"
+def start_import_task(
+    self,
+    *,
+    name: str,
+    importUrl: str,
+    clientRequestToken: str = ...,
+) -> StartImportTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartImportTaskRequestRequestTypeDef](./type_defs.md#startimporttaskrequestrequesttypedef).
+1. See [:material-code-braces: StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `importUrl`: `str` *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartImportTaskRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "importUrl": ...,
+}
 
-Returns
-[StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef).
+parent.start_import_task(**kwargs)
+```
 
-<a id="stop\_continuous\_export"></a>
+1. See [:material-code-braces: StartImportTaskRequestRequestTypeDef](./type_defs.md#startimporttaskrequestrequesttypedef) 
 
-### stop_continuous_export
+### stop\_continuous\_export
 
 Stop the continuous flow of agent's discovered data into Amazon Athena.
 
-Type annotations for `boto3.client("discovery").stop_continuous_export` method.
+Type annotations and code completion for `#!python boto3.client("discovery").stop_continuous_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.stop_continuous_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_continuous_export)
+```python title="Method definition"
+def stop_continuous_export(
+    self,
+    *,
+    exportId: str,
+) -> StopContinuousExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopContinuousExportRequestRequestTypeDef](./type_defs.md#stopcontinuousexportrequestrequesttypedef).
+1. See [:material-code-braces: StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopContinuousExportRequestRequestTypeDef = {  # (1)
+    "exportId": ...,
+}
 
-Returns
-[StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef).
+parent.stop_continuous_export(**kwargs)
+```
 
-<a id="stop\_data\_collection\_by\_agent\_ids"></a>
+1. See [:material-code-braces: StopContinuousExportRequestRequestTypeDef](./type_defs.md#stopcontinuousexportrequestrequesttypedef) 
 
-### stop_data_collection_by_agent_ids
+### stop\_data\_collection\_by\_agent\_ids
 
 Instructs the specified agents or connectors to stop collecting data.
 
-Type annotations for
-`boto3.client("discovery").stop_data_collection_by_agent_ids` method.
+Type annotations and code completion for `#!python boto3.client("discovery").stop_data_collection_by_agent_ids` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.stop_data_collection_by_agent_ids)
+```python title="Method definition"
+def stop_data_collection_by_agent_ids(
+    self,
+    *,
+    agentIds: Sequence[str],
+) -> StopDataCollectionByAgentIdsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#stopdatacollectionbyagentidsrequestrequesttypedef).
+1. See [:material-code-braces: StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `agentIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDataCollectionByAgentIdsRequestRequestTypeDef = {  # (1)
+    "agentIds": ...,
+}
 
-Returns
-[StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).
+parent.stop_data_collection_by_agent_ids(**kwargs)
+```
 
-<a id="update\_application"></a>
+1. See [:material-code-braces: StopDataCollectionByAgentIdsRequestRequestTypeDef](./type_defs.md#stopdatacollectionbyagentidsrequestrequesttypedef) 
 
-### update_application
+### update\_application
 
 Updates metadata about an application.
 
-Type annotations for `boto3.client("discovery").update_application` method.
+Type annotations and code completion for `#!python boto3.client("discovery").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
 
-Boto3 documentation:
-[ApplicationDiscoveryService.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    configurationId: str,
+    name: str = ...,
+    description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `configurationId`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "configurationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_application(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("discovery").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("discovery").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_agents")` ->
-  [DescribeAgentsPaginator](./paginators.md#describeagentspaginator)
-- `client.get_paginator("describe_continuous_exports")` ->
-  [DescribeContinuousExportsPaginator](./paginators.md#describecontinuousexportspaginator)
-- `client.get_paginator("describe_export_configurations")` ->
-  [DescribeExportConfigurationsPaginator](./paginators.md#describeexportconfigurationspaginator)
-- `client.get_paginator("describe_export_tasks")` ->
-  [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
-- `client.get_paginator("describe_tags")` ->
-  [DescribeTagsPaginator](./paginators.md#describetagspaginator)
-- `client.get_paginator("list_configurations")` ->
-  [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+- `client.get_paginator("describe_agents")` -> [DescribeAgentsPaginator](./paginators.md#describeagentspaginator)
+- `client.get_paginator("describe_continuous_exports")` -> [DescribeContinuousExportsPaginator](./paginators.md#describecontinuousexportspaginator)
+- `client.get_paginator("describe_export_configurations")` -> [DescribeExportConfigurationsPaginator](./paginators.md#describeexportconfigurationspaginator)
+- `client.get_paginator("describe_export_tasks")` -> [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+- `client.get_paginator("describe_tags")` -> [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+- `client.get_paginator("list_configurations")` -> [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+
+
+

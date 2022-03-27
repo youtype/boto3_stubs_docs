@@ -1,50 +1,18 @@
-<a id="codestarclient-for-boto3-codestar-module"></a>
-
-# CodeStarClient for boto3 CodeStar module
+# CodeStarClient
 
 > [Index](../README.md) > [CodeStar](./README.md) > CodeStarClient
 
-Auto-generated documentation for
-[CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
-type annotations stubs module
-[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
+!!! note ""
 
-- [CodeStarClient for boto3 CodeStar module](#codestarclient-for-boto3-codestar-module)
-  - [CodeStarClient](#codestarclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_team_member](#associate_team_member)
-    - [can_paginate](#can_paginate)
-    - [create_project](#create_project)
-    - [create_user_profile](#create_user_profile)
-    - [delete_project](#delete_project)
-    - [delete_user_profile](#delete_user_profile)
-    - [describe_project](#describe_project)
-    - [describe_user_profile](#describe_user_profile)
-    - [disassociate_team_member](#disassociate_team_member)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_projects](#list_projects)
-    - [list_resources](#list_resources)
-    - [list_tags_for_project](#list_tags_for_project)
-    - [list_team_members](#list_team_members)
-    - [list_user_profiles](#list_user_profiles)
-    - [tag_project](#tag_project)
-    - [untag_project](#untag_project)
-    - [update_project](#update_project)
-    - [update_team_member](#update_team_member)
-    - [update_user_profile](#update_user_profile)
-    - [get_paginator](#get_paginator)
-
-<a id="codestarclient"></a>
+    Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+    type annotations stubs module [mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 ## CodeStarClient
 
-Type annotations for `boto3.client("codestar")`
+Type annotations and code completion for `#!python boto3.client("codestar")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codestar.client import CodeStarClient
 
@@ -52,516 +20,658 @@ def get_codestar_client() -> CodeStarClient:
     return Session().client("codestar")
 ```
 
-Boto3 documentation:
-[CodeStar.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codestar").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codestar")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.InvalidNextTokenException,
+    client.InvalidServiceRoleException,
+    client.LimitExceededException,
+    client.ProjectAlreadyExistsException,
+    client.ProjectConfigurationException,
+    client.ProjectCreationFailedException,
+    client.ProjectNotFoundException,
+    client.TeamMemberAlreadyAssociatedException,
+    client.TeamMemberNotFoundException,
+    client.UserProfileAlreadyExistsException,
+    client.UserProfileNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codestar.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidServiceRoleException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ProjectAlreadyExistsException`
-- `Exceptions.ProjectConfigurationException`
-- `Exceptions.ProjectCreationFailedException`
-- `Exceptions.ProjectNotFoundException`
-- `Exceptions.TeamMemberAlreadyAssociatedException`
-- `Exceptions.TeamMemberNotFoundException`
-- `Exceptions.UserProfileAlreadyExistsException`
-- `Exceptions.UserProfileNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeStarClient exceptions.
-
-Type annotations for `boto3.client("codestar").exceptions` method.
-
-Boto3 documentation:
-[CodeStar.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_team\_member"></a>
-
-### associate_team_member
+### associate\_team\_member
 
 Adds an IAM user to the team for an AWS CodeStar project.
 
-Type annotations for `boto3.client("codestar").associate_team_member` method.
+Type annotations and code completion for `#!python boto3.client("codestar").associate_team_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member)
 
-Boto3 documentation:
-[CodeStar.Client.associate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.associate_team_member)
+```python title="Method definition"
+def associate_team_member(
+    self,
+    *,
+    projectId: str,
+    userArn: str,
+    projectRole: str,
+    clientRequestToken: str = ...,
+    remoteAccessAllowed: bool = ...,
+) -> AssociateTeamMemberResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateTeamMemberRequestRequestTypeDef](./type_defs.md#associateteammemberrequestrequesttypedef).
+1. See [:material-code-braces: AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `userArn`: `str` *(required)*
-- `projectRole`: `str` *(required)*
-- `clientRequestToken`: `str`
-- `remoteAccessAllowed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociateTeamMemberRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "userArn": ...,
+    "projectRole": ...,
+}
 
-Returns
-[AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef).
+parent.associate_team_member(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateTeamMemberRequestRequestTypeDef](./type_defs.md#associateteammemberrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codestar").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("codestar").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate)
 
-Boto3 documentation:
-[CodeStar.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_project"></a>
-
-### create_project
+### create\_project
 
 Creates a project, including project resources.
 
-Type annotations for `boto3.client("codestar").create_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project)
 
-Boto3 documentation:
-[CodeStar.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    name: str,
+    id: str,
+    description: str = ...,
+    clientRequestToken: str = ...,
+    sourceCode: Sequence[CodeTypeDef] = ...,  # (1)
+    toolchain: ToolchainTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateProjectResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CodeTypeDef](./type_defs.md#codetypedef) 
+2. See [:material-code-braces: ToolchainTypeDef](./type_defs.md#toolchaintypedef) 
+3. See [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `id`: `str` *(required)*
-- `description`: `str`
-- `clientRequestToken`: `str`
-- `sourceCode`: `Sequence`\[[CodeTypeDef](./type_defs.md#codetypedef)\]
-- `toolchain`: [ToolchainTypeDef](./type_defs.md#toolchaintypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "id": ...,
+}
 
-Returns
-[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="create\_user\_profile"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### create_user_profile
+### create\_user\_profile
 
-Creates a profile for a user that includes user preferences, such as the
-display name and email address assocciated with the user, in AWS CodeStar.
+Creates a profile for a user that includes user preferences, such as the display
+name and email address assocciated with the user, in AWS CodeStar.
 
-Type annotations for `boto3.client("codestar").create_user_profile` method.
+Type annotations and code completion for `#!python boto3.client("codestar").create_user_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile)
 
-Boto3 documentation:
-[CodeStar.Client.create_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.create_user_profile)
+```python title="Method definition"
+def create_user_profile(
+    self,
+    *,
+    userArn: str,
+    displayName: str,
+    emailAddress: str,
+    sshPublicKey: str = ...,
+) -> CreateUserProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserProfileRequestRequestTypeDef](./type_defs.md#createuserprofilerequestrequesttypedef).
+1. See [:material-code-braces: CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `userArn`: `str` *(required)*
-- `displayName`: `str` *(required)*
-- `emailAddress`: `str` *(required)*
-- `sshPublicKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateUserProfileRequestRequestTypeDef = {  # (1)
+    "userArn": ...,
+    "displayName": ...,
+    "emailAddress": ...,
+}
 
-Returns
-[CreateUserProfileResultTypeDef](./type_defs.md#createuserprofileresulttypedef).
+parent.create_user_profile(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: CreateUserProfileRequestRequestTypeDef](./type_defs.md#createuserprofilerequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes a project, including project resources.
 
-Type annotations for `boto3.client("codestar").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project)
 
-Boto3 documentation:
-[CodeStar.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    id: str,
+    clientRequestToken: str = ...,
+    deleteStack: bool = ...,
+) -> DeleteProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `clientRequestToken`: `str`
-- `deleteStack`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
+parent.delete_project(**kwargs)
+```
 
-<a id="delete\_user\_profile"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### delete_user_profile
+### delete\_user\_profile
 
 Deletes a user profile in AWS CodeStar, including all personal preference data
 associated with that profile, such as display name and email address.
 
-Type annotations for `boto3.client("codestar").delete_user_profile` method.
+Type annotations and code completion for `#!python boto3.client("codestar").delete_user_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
 
-Boto3 documentation:
-[CodeStar.Client.delete_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.delete_user_profile)
+```python title="Method definition"
+def delete_user_profile(
+    self,
+    *,
+    userArn: str,
+) -> DeleteUserProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserProfileRequestRequestTypeDef](./type_defs.md#deleteuserprofilerequestrequesttypedef).
+1. See [:material-code-braces: DeleteUserProfileResultTypeDef](./type_defs.md#deleteuserprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `userArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserProfileRequestRequestTypeDef = {  # (1)
+    "userArn": ...,
+}
 
-Returns
-[DeleteUserProfileResultTypeDef](./type_defs.md#deleteuserprofileresulttypedef).
+parent.delete_user_profile(**kwargs)
+```
 
-<a id="describe\_project"></a>
+1. See [:material-code-braces: DeleteUserProfileRequestRequestTypeDef](./type_defs.md#deleteuserprofilerequestrequesttypedef) 
 
-### describe_project
+### describe\_project
 
 Describes a project and its resources.
 
-Type annotations for `boto3.client("codestar").describe_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").describe_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project)
 
-Boto3 documentation:
-[CodeStar.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_project)
+```python title="Method definition"
+def describe_project(
+    self,
+    *,
+    id: str,
+) -> DescribeProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
+parent.describe_project(**kwargs)
+```
 
-<a id="describe\_user\_profile"></a>
+1. See [:material-code-braces: DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef) 
 
-### describe_user_profile
+### describe\_user\_profile
 
 Describes a user in AWS CodeStar and the user attributes across all projects.
 
-Type annotations for `boto3.client("codestar").describe_user_profile` method.
+Type annotations and code completion for `#!python boto3.client("codestar").describe_user_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
 
-Boto3 documentation:
-[CodeStar.Client.describe_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.describe_user_profile)
+```python title="Method definition"
+def describe_user_profile(
+    self,
+    *,
+    userArn: str,
+) -> DescribeUserProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserProfileRequestRequestTypeDef](./type_defs.md#describeuserprofilerequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserProfileResultTypeDef](./type_defs.md#describeuserprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `userArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserProfileRequestRequestTypeDef = {  # (1)
+    "userArn": ...,
+}
 
-Returns
-[DescribeUserProfileResultTypeDef](./type_defs.md#describeuserprofileresulttypedef).
+parent.describe_user_profile(**kwargs)
+```
 
-<a id="disassociate\_team\_member"></a>
+1. See [:material-code-braces: DescribeUserProfileRequestRequestTypeDef](./type_defs.md#describeuserprofilerequestrequesttypedef) 
 
-### disassociate_team_member
+### disassociate\_team\_member
 
 Removes a user from a project.
 
-Type annotations for `boto3.client("codestar").disassociate_team_member`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar").disassociate_team_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
 
-Boto3 documentation:
-[CodeStar.Client.disassociate_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.disassociate_team_member)
+```python title="Method definition"
+def disassociate_team_member(
+    self,
+    *,
+    projectId: str,
+    userArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateTeamMemberRequestRequestTypeDef](./type_defs.md#disassociateteammemberrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `userArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateTeamMemberRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "userArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_team_member(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateTeamMemberRequestRequestTypeDef](./type_defs.md#disassociateteammemberrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("codestar").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("codestar").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeStar.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_projects"></a>
-
-### list_projects
+### list\_projects
 
 Lists all projects in AWS CodeStar associated with your AWS account.
 
-Type annotations for `boto3.client("codestar").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("codestar").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects)
 
-Boto3 documentation:
-[CodeStar.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListProjectsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_resources"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_resources
+### list\_resources
 
 Lists resources associated with a project in AWS CodeStar.
 
-Type annotations for `boto3.client("codestar").list_resources` method.
+Type annotations and code completion for `#!python boto3.client("codestar").list_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources)
 
-Boto3 documentation:
-[CodeStar.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_resources)
+```python title="Method definition"
+def list_resources(
+    self,
+    *,
+    projectId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListResourcesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef).
+parent.list_resources(**kwargs)
+```
 
-<a id="list\_tags\_for\_project"></a>
+1. See [:material-code-braces: ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef) 
 
-### list_tags_for_project
+### list\_tags\_for\_project
 
 Gets the tags for a project.
 
-Type annotations for `boto3.client("codestar").list_tags_for_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").list_tags_for_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
 
-Boto3 documentation:
-[CodeStar.Client.list_tags_for_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_tags_for_project)
+```python title="Method definition"
+def list_tags_for_project(
+    self,
+    *,
+    id: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTagsForProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForProjectRequestRequestTypeDef](./type_defs.md#listtagsforprojectrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForProjectResultTypeDef](./type_defs.md#listtagsforprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[ListTagsForProjectResultTypeDef](./type_defs.md#listtagsforprojectresulttypedef).
+parent.list_tags_for_project(**kwargs)
+```
 
-<a id="list\_team\_members"></a>
+1. See [:material-code-braces: ListTagsForProjectRequestRequestTypeDef](./type_defs.md#listtagsforprojectrequestrequesttypedef) 
 
-### list_team_members
+### list\_team\_members
 
 Lists all team members associated with a project.
 
-Type annotations for `boto3.client("codestar").list_team_members` method.
+Type annotations and code completion for `#!python boto3.client("codestar").list_team_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members)
 
-Boto3 documentation:
-[CodeStar.Client.list_team_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_team_members)
+```python title="Method definition"
+def list_team_members(
+    self,
+    *,
+    projectId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTeamMembersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTeamMembersRequestRequestTypeDef](./type_defs.md#listteammembersrequestrequesttypedef).
+1. See [:material-code-braces: ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTeamMembersRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef).
+parent.list_team_members(**kwargs)
+```
 
-<a id="list\_user\_profiles"></a>
+1. See [:material-code-braces: ListTeamMembersRequestRequestTypeDef](./type_defs.md#listteammembersrequestrequesttypedef) 
 
-### list_user_profiles
+### list\_user\_profiles
 
 Lists all the user profiles configured for your AWS account in AWS CodeStar.
 
-Type annotations for `boto3.client("codestar").list_user_profiles` method.
+Type annotations and code completion for `#!python boto3.client("codestar").list_user_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
 
-Boto3 documentation:
-[CodeStar.Client.list_user_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.list_user_profiles)
+```python title="Method definition"
+def list_user_profiles(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListUserProfilesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUserProfilesRequestRequestTypeDef](./type_defs.md#listuserprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUserProfilesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListUserProfilesResultTypeDef](./type_defs.md#listuserprofilesresulttypedef).
+parent.list_user_profiles(**kwargs)
+```
 
-<a id="tag\_project"></a>
+1. See [:material-code-braces: ListUserProfilesRequestRequestTypeDef](./type_defs.md#listuserprofilesrequestrequesttypedef) 
 
-### tag_project
+### tag\_project
 
 Adds tags to a project.
 
-Type annotations for `boto3.client("codestar").tag_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").tag_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project)
 
-Boto3 documentation:
-[CodeStar.Client.tag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.tag_project)
+```python title="Method definition"
+def tag_project(
+    self,
+    *,
+    id: str,
+    tags: Mapping[str, str],
+) -> TagProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TagProjectRequestRequestTypeDef](./type_defs.md#tagprojectrequestrequesttypedef).
+1. See [:material-code-braces: TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "tags": ...,
+}
 
-Returns [TagProjectResultTypeDef](./type_defs.md#tagprojectresulttypedef).
+parent.tag_project(**kwargs)
+```
 
-<a id="untag\_project"></a>
+1. See [:material-code-braces: TagProjectRequestRequestTypeDef](./type_defs.md#tagprojectrequestrequesttypedef) 
 
-### untag_project
+### untag\_project
 
 Removes tags from a project.
 
-Type annotations for `boto3.client("codestar").untag_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").untag_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project)
 
-Boto3 documentation:
-[CodeStar.Client.untag_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.untag_project)
+```python title="Method definition"
+def untag_project(
+    self,
+    *,
+    id: str,
+    tags: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagProjectRequestRequestTypeDef](./type_defs.md#untagprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `tags`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_project(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: UntagProjectRequestRequestTypeDef](./type_defs.md#untagprojectrequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Updates a project in AWS CodeStar.
 
-Type annotations for `boto3.client("codestar").update_project` method.
+Type annotations and code completion for `#!python boto3.client("codestar").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project)
 
-Boto3 documentation:
-[CodeStar.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    id: str,
+    name: str = ...,
+    description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_project(**kwargs)
+```
 
-<a id="update\_team\_member"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
 
-### update_team_member
+### update\_team\_member
 
 Updates a team member's attributes in an AWS CodeStar project.
 
-Type annotations for `boto3.client("codestar").update_team_member` method.
+Type annotations and code completion for `#!python boto3.client("codestar").update_team_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member)
 
-Boto3 documentation:
-[CodeStar.Client.update_team_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_team_member)
+```python title="Method definition"
+def update_team_member(
+    self,
+    *,
+    projectId: str,
+    userArn: str,
+    projectRole: str = ...,
+    remoteAccessAllowed: bool = ...,
+) -> UpdateTeamMemberResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTeamMemberRequestRequestTypeDef](./type_defs.md#updateteammemberrequestrequesttypedef).
+1. See [:material-code-braces: UpdateTeamMemberResultTypeDef](./type_defs.md#updateteammemberresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `userArn`: `str` *(required)*
-- `projectRole`: `str`
-- `remoteAccessAllowed`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateTeamMemberRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+    "userArn": ...,
+}
 
-Returns
-[UpdateTeamMemberResultTypeDef](./type_defs.md#updateteammemberresulttypedef).
+parent.update_team_member(**kwargs)
+```
 
-<a id="update\_user\_profile"></a>
+1. See [:material-code-braces: UpdateTeamMemberRequestRequestTypeDef](./type_defs.md#updateteammemberrequestrequesttypedef) 
 
-### update_user_profile
+### update\_user\_profile
 
 Updates a user's profile in AWS CodeStar.
 
-Type annotations for `boto3.client("codestar").update_user_profile` method.
+Type annotations and code completion for `#!python boto3.client("codestar").update_user_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile)
 
-Boto3 documentation:
-[CodeStar.Client.update_user_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar.Client.update_user_profile)
+```python title="Method definition"
+def update_user_profile(
+    self,
+    *,
+    userArn: str,
+    displayName: str = ...,
+    emailAddress: str = ...,
+    sshPublicKey: str = ...,
+) -> UpdateUserProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserProfileRequestRequestTypeDef](./type_defs.md#updateuserprofilerequestrequesttypedef).
+1. See [:material-code-braces: UpdateUserProfileResultTypeDef](./type_defs.md#updateuserprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `userArn`: `str` *(required)*
-- `displayName`: `str`
-- `emailAddress`: `str`
-- `sshPublicKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserProfileRequestRequestTypeDef = {  # (1)
+    "userArn": ...,
+}
 
-Returns
-[UpdateUserProfileResultTypeDef](./type_defs.md#updateuserprofileresulttypedef).
+parent.update_user_profile(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateUserProfileRequestRequestTypeDef](./type_defs.md#updateuserprofilerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codestar").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("codestar").get_paginator` method with overloads.
 
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
-- `client.get_paginator("list_resources")` ->
-  [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-- `client.get_paginator("list_team_members")` ->
-  [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
-- `client.get_paginator("list_user_profiles")` ->
-  [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+- `client.get_paginator("list_team_members")` -> [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
+- `client.get_paginator("list_user_profiles")` -> [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+
+
+

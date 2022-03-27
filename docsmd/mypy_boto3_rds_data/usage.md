@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-rdsdataservice-module"></a>
-
-# Examples for boto3 RDSDataService module
+# Examples
 
 > [Index](../README.md) > [RDSDataService](./README.md) > Examples
 
-- [Examples for boto3 RDSDataService module](#examples-for-boto3-rdsdataservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
+    type annotations stubs module [mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[rds-data]` package installed.
 
-Write your `RDSDataService` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `RDSDataService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type RDSDataServiceClient
-# and provides type checking and code completion
-client = session.client("rds-data")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type BatchExecuteStatementResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_execute_statement()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("rds-data")  # (1)
+    result = client.batch_execute_statement()  # (2)
+    ```
+
+    1. client: [RDSDataServiceClient](./client.md)
+    2. result: [:material-code-braces: BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[rds-data]` or a standalone `mypy_boto3_rds_data`
-package, you have to explicitly specify `client: RDSDataServiceClient` type
-annotation.
+With `boto3-stubs-lite[rds-data]`
+or a standalone `mypy_boto3_rds_data` package, you have to explicitly specify `client: RDSDataServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_rds_data.client import RDSDataServiceClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_rds_data.client import RDSDataServiceClient
+    from mypy_boto3_rds_data.type_defs import BatchExecuteStatementResponseTypeDef
+    from mypy_boto3_rds_data.type_defs import BatchExecuteStatementRequestRequestTypeDef
 
 
-from mypy_boto3_rds_data.type_defs import BatchExecuteStatementResponseTypeDef
+    session = Session()
+
+    client: RDSDataServiceClient = session.client("rds-data")
+
+    kwargs: BatchExecuteStatementRequestRequestTypeDef = {...}
+    result: BatchExecuteStatementResponseTypeDef = client.batch_execute_statement(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: RDSDataServiceClient = session.client("rds-data")
 
-result: BatchExecuteStatementResponseTypeDef = client.batch_execute_statement()
-```
+

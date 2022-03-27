@@ -1,1179 +1,1245 @@
-<a id="literals-for-boto3-appflow-module"></a>
-
-# Literals for boto3 Appflow module
+# Literals
 
 > [Index](../README.md) > [Appflow](./README.md) > Literals
 
-Auto-generated documentation for
-[Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
-type annotations stubs module
-[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
+!!! note ""
 
-- [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
-  - [AggregationTypeType](#aggregationtypetype)
-  - [AmplitudeConnectorOperatorType](#amplitudeconnectoroperatortype)
-  - [AuthenticationTypeType](#authenticationtypetype)
-  - [ConnectionModeType](#connectionmodetype)
-  - [ConnectorProvisioningTypeType](#connectorprovisioningtypetype)
-  - [ConnectorTypeType](#connectortypetype)
-  - [DataPullModeType](#datapullmodetype)
-  - [DatadogConnectorOperatorType](#datadogconnectoroperatortype)
-  - [DynatraceConnectorOperatorType](#dynatraceconnectoroperatortype)
-  - [ExecutionStatusType](#executionstatustype)
-  - [FileTypeType](#filetypetype)
-  - [FlowStatusType](#flowstatustype)
-  - [GoogleAnalyticsConnectorOperatorType](#googleanalyticsconnectoroperatortype)
-  - [InforNexusConnectorOperatorType](#infornexusconnectoroperatortype)
-  - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
-  - [OAuth2GrantTypeType](#oauth2granttypetype)
-  - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
-  - [OperatorType](#operatortype)
-  - [OperatorsType](#operatorstype)
-  - [PrefixFormatType](#prefixformattype)
-  - [PrefixTypeType](#prefixtypetype)
-  - [PrivateConnectionProvisioningFailureCauseType](#privateconnectionprovisioningfailurecausetype)
-  - [PrivateConnectionProvisioningStatusType](#privateconnectionprovisioningstatustype)
-  - [S3ConnectorOperatorType](#s3connectoroperatortype)
-  - [S3InputFileTypeType](#s3inputfiletypetype)
-  - [SAPODataConnectorOperatorType](#sapodataconnectoroperatortype)
-  - [SalesforceConnectorOperatorType](#salesforceconnectoroperatortype)
-  - [ScheduleFrequencyTypeType](#schedulefrequencytypetype)
-  - [ServiceNowConnectorOperatorType](#servicenowconnectoroperatortype)
-  - [SingularConnectorOperatorType](#singularconnectoroperatortype)
-  - [SlackConnectorOperatorType](#slackconnectoroperatortype)
-  - [TaskTypeType](#tasktypetype)
-  - [TrendmicroConnectorOperatorType](#trendmicroconnectoroperatortype)
-  - [TriggerTypeType](#triggertypetype)
-  - [VeevaConnectorOperatorType](#veevaconnectoroperatortype)
-  - [WriteOperationTypeType](#writeoperationtypetype)
-  - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
-  - [AppflowServiceName](#appflowservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="aggregationtypetype"></a>
+    Auto-generated documentation for [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
+    type annotations stubs module [mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 ## AggregationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import AggregationTypeType
+
+def get_value() -> AggregationTypeType:
+    return "None"
 ```
 
-Values:
-
-- `None`
-- `SingleFile`
-
-<a id="amplitudeconnectoroperatortype"></a>
-
+```python title="Definition"
+AggregationTypeType = Literal[
+    "None",
+    "SingleFile",
+]
+```
 ## AmplitudeConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import AmplitudeConnectorOperatorType
+
+def get_value() -> AmplitudeConnectorOperatorType:
+    return "BETWEEN"
 ```
 
-Values:
-
-- `BETWEEN`
-
-<a id="authenticationtypetype"></a>
-
+```python title="Definition"
+AmplitudeConnectorOperatorType = Literal[
+    "BETWEEN",
+]
+```
 ## AuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import AuthenticationTypeType
+
+def get_value() -> AuthenticationTypeType:
+    return "APIKEY"
 ```
 
-Values:
-
-- `APIKEY`
-- `BASIC`
-- `CUSTOM`
-- `OAUTH2`
-
-<a id="connectionmodetype"></a>
-
+```python title="Definition"
+AuthenticationTypeType = Literal[
+    "APIKEY",
+    "BASIC",
+    "CUSTOM",
+    "OAUTH2",
+]
+```
 ## ConnectionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ConnectionModeType
+
+def get_value() -> ConnectionModeType:
+    return "Private"
 ```
 
-Values:
-
-- `Private`
-- `Public`
-
-<a id="connectorprovisioningtypetype"></a>
-
+```python title="Definition"
+ConnectionModeType = Literal[
+    "Private",
+    "Public",
+]
+```
 ## ConnectorProvisioningTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ConnectorProvisioningTypeType
+
+def get_value() -> ConnectorProvisioningTypeType:
+    return "LAMBDA"
 ```
 
-Values:
-
-- `LAMBDA`
-
-<a id="connectortypetype"></a>
-
+```python title="Definition"
+ConnectorProvisioningTypeType = Literal[
+    "LAMBDA",
+]
+```
 ## ConnectorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ConnectorTypeType
+
+def get_value() -> ConnectorTypeType:
+    return "Amplitude"
 ```
 
-Values:
-
-- `Amplitude`
-- `CustomConnector`
-- `CustomerProfiles`
-- `Datadog`
-- `Dynatrace`
-- `EventBridge`
-- `Googleanalytics`
-- `Honeycode`
-- `Infornexus`
-- `LookoutMetrics`
-- `Marketo`
-- `Redshift`
-- `S3`
-- `Salesforce`
-- `SAPOData`
-- `Servicenow`
-- `Singular`
-- `Slack`
-- `Snowflake`
-- `Trendmicro`
-- `Upsolver`
-- `Veeva`
-- `Zendesk`
-
-<a id="datapullmodetype"></a>
-
+```python title="Definition"
+ConnectorTypeType = Literal[
+    "Amplitude",
+    "CustomConnector",
+    "CustomerProfiles",
+    "Datadog",
+    "Dynatrace",
+    "EventBridge",
+    "Googleanalytics",
+    "Honeycode",
+    "Infornexus",
+    "LookoutMetrics",
+    "Marketo",
+    "Redshift",
+    "S3",
+    "Salesforce",
+    "SAPOData",
+    "Servicenow",
+    "Singular",
+    "Slack",
+    "Snowflake",
+    "Trendmicro",
+    "Upsolver",
+    "Veeva",
+    "Zendesk",
+]
+```
 ## DataPullModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import DataPullModeType
+
+def get_value() -> DataPullModeType:
+    return "Complete"
 ```
 
-Values:
-
-- `Complete`
-- `Incremental`
-
-<a id="datadogconnectoroperatortype"></a>
-
+```python title="Definition"
+DataPullModeType = Literal[
+    "Complete",
+    "Incremental",
+]
+```
 ## DatadogConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import DatadogConnectorOperatorType
+
+def get_value() -> DatadogConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="dynatraceconnectoroperatortype"></a>
-
+```python title="Definition"
+DatadogConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## DynatraceConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import DynatraceConnectorOperatorType
+
+def get_value() -> DynatraceConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="executionstatustype"></a>
-
+```python title="Definition"
+DynatraceConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## ExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ExecutionStatusType
+
+def get_value() -> ExecutionStatusType:
+    return "Error"
 ```
 
-Values:
-
-- `Error`
-- `InProgress`
-- `Successful`
-
-<a id="filetypetype"></a>
-
+```python title="Definition"
+ExecutionStatusType = Literal[
+    "Error",
+    "InProgress",
+    "Successful",
+]
+```
 ## FileTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import FileTypeType
+
+def get_value() -> FileTypeType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `JSON`
-- `PARQUET`
-
-<a id="flowstatustype"></a>
-
+```python title="Definition"
+FileTypeType = Literal[
+    "CSV",
+    "JSON",
+    "PARQUET",
+]
+```
 ## FlowStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import FlowStatusType
+
+def get_value() -> FlowStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Deleted`
-- `Deprecated`
-- `Draft`
-- `Errored`
-- `Suspended`
-
-<a id="googleanalyticsconnectoroperatortype"></a>
-
+```python title="Definition"
+FlowStatusType = Literal[
+    "Active",
+    "Deleted",
+    "Deprecated",
+    "Draft",
+    "Errored",
+    "Suspended",
+]
+```
 ## GoogleAnalyticsConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import GoogleAnalyticsConnectorOperatorType
+
+def get_value() -> GoogleAnalyticsConnectorOperatorType:
+    return "BETWEEN"
 ```
 
-Values:
-
-- `BETWEEN`
-- `PROJECTION`
-
-<a id="infornexusconnectoroperatortype"></a>
-
+```python title="Definition"
+GoogleAnalyticsConnectorOperatorType = Literal[
+    "BETWEEN",
+    "PROJECTION",
+]
+```
 ## InforNexusConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import InforNexusConnectorOperatorType
+
+def get_value() -> InforNexusConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="marketoconnectoroperatortype"></a>
-
+```python title="Definition"
+InforNexusConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## MarketoConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import MarketoConnectorOperatorType
+
+def get_value() -> MarketoConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `GREATER_THAN`
-- `LESS_THAN`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="oauth2granttypetype"></a>
-
+```python title="Definition"
+MarketoConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "GREATER_THAN",
+    "LESS_THAN",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## OAuth2GrantTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import OAuth2GrantTypeType
+
+def get_value() -> OAuth2GrantTypeType:
+    return "AUTHORIZATION_CODE"
 ```
 
-Values:
-
-- `AUTHORIZATION_CODE`
-- `CLIENT_CREDENTIALS`
-
-<a id="operatorpropertieskeystype"></a>
-
+```python title="Definition"
+OAuth2GrantTypeType = Literal[
+    "AUTHORIZATION_CODE",
+    "CLIENT_CREDENTIALS",
+]
+```
 ## OperatorPropertiesKeysType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import OperatorPropertiesKeysType
+
+def get_value() -> OperatorPropertiesKeysType:
+    return "CONCAT_FORMAT"
 ```
 
-Values:
-
-- `CONCAT_FORMAT`
-- `DATA_TYPE`
-- `DESTINATION_DATA_TYPE`
-- `EXCLUDE_SOURCE_FIELDS_LIST`
-- `LOWER_BOUND`
-- `MASK_LENGTH`
-- `MASK_VALUE`
-- `MATH_OPERATION_FIELDS_ORDER`
-- `SOURCE_DATA_TYPE`
-- `SUBFIELD_CATEGORY_MAP`
-- `TRUNCATE_LENGTH`
-- `UPPER_BOUND`
-- `VALIDATION_ACTION`
-- `VALUE`
-- `VALUES`
-
-<a id="operatortype"></a>
-
+```python title="Definition"
+OperatorPropertiesKeysType = Literal[
+    "CONCAT_FORMAT",
+    "DATA_TYPE",
+    "DESTINATION_DATA_TYPE",
+    "EXCLUDE_SOURCE_FIELDS_LIST",
+    "LOWER_BOUND",
+    "MASK_LENGTH",
+    "MASK_VALUE",
+    "MATH_OPERATION_FIELDS_ORDER",
+    "SOURCE_DATA_TYPE",
+    "SUBFIELD_CATEGORY_MAP",
+    "TRUNCATE_LENGTH",
+    "UPPER_BOUND",
+    "VALIDATION_ACTION",
+    "VALUE",
+    "VALUES",
+]
+```
 ## OperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import OperatorType
+
+def get_value() -> OperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="operatorstype"></a>
-
+```python title="Definition"
+OperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## OperatorsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import OperatorsType
+
+def get_value() -> OperatorsType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="prefixformattype"></a>
-
+```python title="Definition"
+OperatorsType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## PrefixFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import PrefixFormatType
+
+def get_value() -> PrefixFormatType:
+    return "DAY"
 ```
 
-Values:
-
-- `DAY`
-- `HOUR`
-- `MINUTE`
-- `MONTH`
-- `YEAR`
-
-<a id="prefixtypetype"></a>
-
+```python title="Definition"
+PrefixFormatType = Literal[
+    "DAY",
+    "HOUR",
+    "MINUTE",
+    "MONTH",
+    "YEAR",
+]
+```
 ## PrefixTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import PrefixTypeType
+
+def get_value() -> PrefixTypeType:
+    return "FILENAME"
 ```
 
-Values:
-
-- `FILENAME`
-- `PATH`
-- `PATH_AND_FILENAME`
-
-<a id="privateconnectionprovisioningfailurecausetype"></a>
-
+```python title="Definition"
+PrefixTypeType = Literal[
+    "FILENAME",
+    "PATH",
+    "PATH_AND_FILENAME",
+]
+```
 ## PrivateConnectionProvisioningFailureCauseType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import PrivateConnectionProvisioningFailureCauseType
+
+def get_value() -> PrivateConnectionProvisioningFailureCauseType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `CONNECTOR_AUTHENTICATION`
-- `CONNECTOR_SERVER`
-- `INTERNAL_SERVER`
-- `VALIDATION`
-
-<a id="privateconnectionprovisioningstatustype"></a>
-
+```python title="Definition"
+PrivateConnectionProvisioningFailureCauseType = Literal[
+    "ACCESS_DENIED",
+    "CONNECTOR_AUTHENTICATION",
+    "CONNECTOR_SERVER",
+    "INTERNAL_SERVER",
+    "VALIDATION",
+]
+```
 ## PrivateConnectionProvisioningStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import PrivateConnectionProvisioningStatusType
+
+def get_value() -> PrivateConnectionProvisioningStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `FAILED`
-- `PENDING`
-
-<a id="s3connectoroperatortype"></a>
-
+```python title="Definition"
+PrivateConnectionProvisioningStatusType = Literal[
+    "CREATED",
+    "FAILED",
+    "PENDING",
+]
+```
 ## S3ConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import S3ConnectorOperatorType
+
+def get_value() -> S3ConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="s3inputfiletypetype"></a>
-
+```python title="Definition"
+S3ConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## S3InputFileTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import S3InputFileTypeType
+
+def get_value() -> S3InputFileTypeType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `JSON`
-
-<a id="sapodataconnectoroperatortype"></a>
-
+```python title="Definition"
+S3InputFileTypeType = Literal[
+    "CSV",
+    "JSON",
+]
+```
 ## SAPODataConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import SAPODataConnectorOperatorType
+
+def get_value() -> SAPODataConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="salesforceconnectoroperatortype"></a>
-
+```python title="Definition"
+SAPODataConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## SalesforceConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import SalesforceConnectorOperatorType
+
+def get_value() -> SalesforceConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="schedulefrequencytypetype"></a>
-
+```python title="Definition"
+SalesforceConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## ScheduleFrequencyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ScheduleFrequencyTypeType
+
+def get_value() -> ScheduleFrequencyTypeType:
+    return "BYMINUTE"
 ```
 
-Values:
-
-- `BYMINUTE`
-- `DAILY`
-- `HOURLY`
-- `MONTHLY`
-- `ONCE`
-- `WEEKLY`
-
-<a id="servicenowconnectoroperatortype"></a>
-
+```python title="Definition"
+ScheduleFrequencyTypeType = Literal[
+    "BYMINUTE",
+    "DAILY",
+    "HOURLY",
+    "MONTHLY",
+    "ONCE",
+    "WEEKLY",
+]
+```
 ## ServiceNowConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ServiceNowConnectorOperatorType
+
+def get_value() -> ServiceNowConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="singularconnectoroperatortype"></a>
-
+```python title="Definition"
+ServiceNowConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## SingularConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import SingularConnectorOperatorType
+
+def get_value() -> SingularConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `DIVISION`
-- `EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="slackconnectoroperatortype"></a>
-
+```python title="Definition"
+SingularConnectorOperatorType = Literal[
+    "ADDITION",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## SlackConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import SlackConnectorOperatorType
+
+def get_value() -> SlackConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="tasktypetype"></a>
-
+```python title="Definition"
+SlackConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## TaskTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import TaskTypeType
+
+def get_value() -> TaskTypeType:
+    return "Arithmetic"
 ```
 
-Values:
-
-- `Arithmetic`
-- `Filter`
-- `Map`
-- `Map_all`
-- `Mask`
-- `Merge`
-- `Passthrough`
-- `Truncate`
-- `Validate`
-
-<a id="trendmicroconnectoroperatortype"></a>
-
+```python title="Definition"
+TaskTypeType = Literal[
+    "Arithmetic",
+    "Filter",
+    "Map",
+    "Map_all",
+    "Mask",
+    "Merge",
+    "Passthrough",
+    "Truncate",
+    "Validate",
+]
+```
 ## TrendmicroConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import TrendmicroConnectorOperatorType
+
+def get_value() -> TrendmicroConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `DIVISION`
-- `EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="triggertypetype"></a>
-
+```python title="Definition"
+TrendmicroConnectorOperatorType = Literal[
+    "ADDITION",
+    "DIVISION",
+    "EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## TriggerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import TriggerTypeType
+
+def get_value() -> TriggerTypeType:
+    return "Event"
 ```
 
-Values:
-
-- `Event`
-- `OnDemand`
-- `Scheduled`
-
-<a id="veevaconnectoroperatortype"></a>
-
+```python title="Definition"
+TriggerTypeType = Literal[
+    "Event",
+    "OnDemand",
+    "Scheduled",
+]
+```
 ## VeevaConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import VeevaConnectorOperatorType
+
+def get_value() -> VeevaConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="writeoperationtypetype"></a>
-
+```python title="Definition"
+VeevaConnectorOperatorType = Literal[
+    "ADDITION",
+    "BETWEEN",
+    "CONTAINS",
+    "DIVISION",
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "GREATER_THAN_OR_EQUAL_TO",
+    "LESS_THAN",
+    "LESS_THAN_OR_EQUAL_TO",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "NOT_EQUAL_TO",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## WriteOperationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import WriteOperationTypeType
+
+def get_value() -> WriteOperationTypeType:
+    return "DELETE"
 ```
 
-Values:
-
-- `DELETE`
-- `INSERT`
-- `UPDATE`
-- `UPSERT`
-
-<a id="zendeskconnectoroperatortype"></a>
-
+```python title="Definition"
+WriteOperationTypeType = Literal[
+    "DELETE",
+    "INSERT",
+    "UPDATE",
+    "UPSERT",
+]
+```
 ## ZendeskConnectorOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ZendeskConnectorOperatorType
+
+def get_value() -> ZendeskConnectorOperatorType:
+    return "ADDITION"
 ```
 
-Values:
-
-- `ADDITION`
-- `DIVISION`
-- `GREATER_THAN`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="appflowservicename"></a>
-
+```python title="Definition"
+ZendeskConnectorOperatorType = Literal[
+    "ADDITION",
+    "DIVISION",
+    "GREATER_THAN",
+    "MASK_ALL",
+    "MASK_FIRST_N",
+    "MASK_LAST_N",
+    "MULTIPLICATION",
+    "NO_OP",
+    "PROJECTION",
+    "SUBTRACTION",
+    "VALIDATE_NON_NEGATIVE",
+    "VALIDATE_NON_NULL",
+    "VALIDATE_NON_ZERO",
+    "VALIDATE_NUMERIC",
+]
+```
 ## AppflowServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import AppflowServiceName
+
+def get_value() -> AppflowServiceName:
+    return "appflow"
 ```
 
-Values:
-
-- `appflow`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+AppflowServiceName = Literal[
+    "appflow",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appflow.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
+## RegionName
 
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Usage Example"
+from mypy_boto3_appflow.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

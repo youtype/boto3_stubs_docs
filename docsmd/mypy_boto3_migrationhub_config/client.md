@@ -1,35 +1,18 @@
-<a id="migrationhubconfigclient-for-boto3-migrationhubconfig-module"></a>
+# MigrationHubConfigClient
 
-# MigrationHubConfigClient for boto3 MigrationHubConfig module
+> [Index](../README.md) > [MigrationHubConfig](./README.md) > MigrationHubConfigClient
 
-> [Index](../README.md) > [MigrationHubConfig](./README.md) >
-> MigrationHubConfigClient
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
-type annotations stubs module
-[mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
-
-- [MigrationHubConfigClient for boto3 MigrationHubConfig module](#migrationhubconfigclient-for-boto3-migrationhubconfig-module)
-  - [MigrationHubConfigClient](#migrationhubconfigclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_home_region_control](#create_home_region_control)
-    - [describe_home_region_controls](#describe_home_region_controls)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_home_region](#get_home_region)
-
-<a id="migrationhubconfigclient"></a>
+    Auto-generated documentation for [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
+    type annotations stubs module [mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 ## MigrationHubConfigClient
 
-Type annotations for `boto3.client("migrationhub-config")`
+Type annotations and code completion for `#!python boto3.client("migrationhub-config")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 
@@ -37,149 +20,158 @@ def get_migrationhub-config_client() -> MigrationHubConfigClient:
     return Session().client("migrationhub-config")
 ```
 
-Boto3 documentation:
-[MigrationHubConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("migrationhub-config").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("migrationhub-config")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.DryRunOperation,
+    client.InternalServerError,
+    client.InvalidInputException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_migrationhub_config.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.DryRunOperation`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidInputException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MigrationHubConfigClient exceptions.
-
-Type annotations for `boto3.client("migrationhub-config").exceptions` method.
-
-Boto3 documentation:
-[MigrationHubConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("migrationhub-config").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("migrationhub-config").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
 
-Boto3 documentation:
-[MigrationHubConfig.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_home\_region\_control"></a>
-
-### create_home_region_control
+### create\_home\_region\_control
 
 This API sets up the home region for the calling account only.
 
-Type annotations for
-`boto3.client("migrationhub-config").create_home_region_control` method.
+Type annotations and code completion for `#!python boto3.client("migrationhub-config").create_home_region_control` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
 
-Boto3 documentation:
-[MigrationHubConfig.Client.create_home_region_control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.create_home_region_control)
+```python title="Method definition"
+def create_home_region_control(
+    self,
+    *,
+    HomeRegion: str,
+    Target: TargetTypeDef,  # (1)
+    DryRun: bool = ...,
+) -> CreateHomeRegionControlResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateHomeRegionControlRequestRequestTypeDef](./type_defs.md#createhomeregioncontrolrequestrequesttypedef).
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef) 
 
-Keyword-only arguments:
 
-- `HomeRegion`: `str` *(required)*
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateHomeRegionControlRequestRequestTypeDef = {  # (1)
+    "HomeRegion": ...,
+    "Target": ...,
+}
 
-Returns
-[CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
+parent.create_home_region_control(**kwargs)
+```
 
-<a id="describe\_home\_region\_controls"></a>
+1. See [:material-code-braces: CreateHomeRegionControlRequestRequestTypeDef](./type_defs.md#createhomeregioncontrolrequestrequesttypedef) 
 
-### describe_home_region_controls
+### describe\_home\_region\_controls
 
 This API permits filtering on the `ControlId` and `HomeRegion` fields.
 
-Type annotations for
-`boto3.client("migrationhub-config").describe_home_region_controls` method.
+Type annotations and code completion for `#!python boto3.client("migrationhub-config").describe_home_region_controls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
 
-Boto3 documentation:
-[MigrationHubConfig.Client.describe_home_region_controls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.describe_home_region_controls)
+```python title="Method definition"
+def describe_home_region_controls(
+    self,
+    *,
+    ControlId: str = ...,
+    HomeRegion: str = ...,
+    Target: TargetTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeHomeRegionControlsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeHomeRegionControlsRequestRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequestrequesttypedef).
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ControlId`: `str`
-- `HomeRegion`: `str`
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeHomeRegionControlsRequestRequestTypeDef = {  # (1)
+    "ControlId": ...,
+}
 
-Returns
-[DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
+parent.describe_home_region_controls(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeHomeRegionControlsRequestRequestTypeDef](./type_defs.md#describehomeregioncontrolsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("migrationhub-config").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("migrationhub-config").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MigrationHubConfig.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_home\_region"></a>
-
-### get_home_region
+### get\_home\_region
 
 Returns the calling account’s home region, if configured.
 
-Type annotations for `boto3.client("migrationhub-config").get_home_region`
-method.
+Type annotations and code completion for `#!python boto3.client("migrationhub-config").get_home_region` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
 
-Boto3 documentation:
-[MigrationHubConfig.Client.get_home_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.get_home_region)
+```python title="Method definition"
+def get_home_region(
+    self,
+) -> GetHomeRegionResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef).
+1. See [:material-code-braces: GetHomeRegionResultTypeDef](./type_defs.md#gethomeregionresulttypedef) 
+
+
+
+

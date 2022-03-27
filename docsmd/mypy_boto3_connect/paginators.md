@@ -1,55 +1,18 @@
-<a id="paginators-for-boto3-connect-module"></a>
-
-# Paginators for boto3 Connect module
+# Paginators
 
 > [Index](../README.md) > [Connect](./README.md) > Paginators
 
-Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module
-[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
+!!! note ""
 
-- [Paginators for boto3 Connect module](#paginators-for-boto3-connect-module)
-  - [GetMetricDataPaginator](#getmetricdatapaginator)
-  - [ListAgentStatusesPaginator](#listagentstatusespaginator)
-  - [ListApprovedOriginsPaginator](#listapprovedoriginspaginator)
-  - [ListBotsPaginator](#listbotspaginator)
-  - [ListContactFlowModulesPaginator](#listcontactflowmodulespaginator)
-  - [ListContactFlowsPaginator](#listcontactflowspaginator)
-  - [ListContactReferencesPaginator](#listcontactreferencespaginator)
-  - [ListDefaultVocabulariesPaginator](#listdefaultvocabulariespaginator)
-  - [ListHoursOfOperationsPaginator](#listhoursofoperationspaginator)
-  - [ListInstanceAttributesPaginator](#listinstanceattributespaginator)
-  - [ListInstanceStorageConfigsPaginator](#listinstancestorageconfigspaginator)
-  - [ListInstancesPaginator](#listinstancespaginator)
-  - [ListIntegrationAssociationsPaginator](#listintegrationassociationspaginator)
-  - [ListLambdaFunctionsPaginator](#listlambdafunctionspaginator)
-  - [ListLexBotsPaginator](#listlexbotspaginator)
-  - [ListPhoneNumbersPaginator](#listphonenumberspaginator)
-  - [ListPromptsPaginator](#listpromptspaginator)
-  - [ListQueueQuickConnectsPaginator](#listqueuequickconnectspaginator)
-  - [ListQueuesPaginator](#listqueuespaginator)
-  - [ListQuickConnectsPaginator](#listquickconnectspaginator)
-  - [ListRoutingProfileQueuesPaginator](#listroutingprofilequeuespaginator)
-  - [ListRoutingProfilesPaginator](#listroutingprofilespaginator)
-  - [ListSecurityKeysPaginator](#listsecuritykeyspaginator)
-  - [ListSecurityProfilePermissionsPaginator](#listsecurityprofilepermissionspaginator)
-  - [ListSecurityProfilesPaginator](#listsecurityprofilespaginator)
-  - [ListUseCasesPaginator](#listusecasespaginator)
-  - [ListUserHierarchyGroupsPaginator](#listuserhierarchygroupspaginator)
-  - [ListUsersPaginator](#listuserspaginator)
-  - [SearchVocabulariesPaginator](#searchvocabulariespaginator)
-
-<a id="getmetricdatapaginator"></a>
+    Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+    type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ## GetMetricDataPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("get_metric_data")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("get_metric_data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.GetMetricData)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import GetMetricDataPaginator
@@ -58,35 +21,52 @@ def get_get_metric_data_paginator() -> GetMetricDataPaginator:
     return Session().client("connect").get_paginator("get_metric_data")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.GetMetricData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.GetMetricData)
 
-Arguments for `GetMetricDataPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef) *(required)*
-- `HistoricalMetrics`:
-  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
-  *(required)*
-- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetMetricDataPaginator.paginate` method.
 
-`GetMetricDataPaginator.paginate` returns
-`_PageIterator`\[[GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: FiltersTypeDef,  # (1)
+    HistoricalMetrics: Sequence[HistoricalMetricTypeDef],  # (2)
+    Groupings: Sequence[GroupingType] = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetMetricDataResponseTypeDef]:  # (5)
+    ...
+```
 
-<a id="listagentstatusespaginator"></a>
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetMetricDataRequestGetMetricDataPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+    "Filters": ...,
+    "HistoricalMetrics": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetMetricDataRequestGetMetricDataPaginateTypeDef](./type_defs.md#getmetricdatarequestgetmetricdatapaginatetypedef) 
 ## ListAgentStatusesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_agent_statuses")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_agent_statuses")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListAgentStatuses)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListAgentStatusesPaginator
@@ -95,30 +75,42 @@ def get_list_agent_statuses_paginator() -> ListAgentStatusesPaginator:
     return Session().client("connect").get_paginator("list_agent_statuses")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListAgentStatuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListAgentStatuses)
 
-Arguments for `ListAgentStatusesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `AgentStatusTypes`:
-  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAgentStatusesPaginator.paginate` method.
 
-`ListAgentStatusesPaginator.paginate` returns
-`_PageIterator`\[[ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    AgentStatusTypes: Sequence[AgentStatusTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAgentStatusResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listapprovedoriginspaginator"></a>
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAgentStatusRequestListAgentStatusesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAgentStatusRequestListAgentStatusesPaginateTypeDef](./type_defs.md#listagentstatusrequestlistagentstatusespaginatetypedef) 
 ## ListApprovedOriginsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_approved_origins")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_approved_origins")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListApprovedOriginsPaginator
@@ -127,27 +119,40 @@ def get_list_approved_origins_paginator() -> ListApprovedOriginsPaginator:
     return Session().client("connect").get_paginator("list_approved_origins")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListApprovedOrigins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListApprovedOrigins)
 
-Arguments for `ListApprovedOriginsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApprovedOriginsPaginator.paginate` method.
 
-`ListApprovedOriginsPaginator.paginate` returns
-`_PageIterator`\[[ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApprovedOriginsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listbotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef](./type_defs.md#listapprovedoriginsrequestlistapprovedoriginspaginatetypedef) 
 ## ListBotsPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_bots")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_bots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListBots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListBotsPaginator
@@ -156,29 +161,43 @@ def get_list_bots_paginator() -> ListBotsPaginator:
     return Session().client("connect").get_paginator("list_bots")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListBots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListBots)
 
-Arguments for `ListBotsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `LexVersion`: [LexVersionType](./literals.md#lexversiontype) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBotsPaginator.paginate` method.
 
-`ListBotsPaginator.paginate` returns
-`_PageIterator`\[[ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    LexVersion: LexVersionType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBotsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcontactflowmodulespaginator"></a>
+1. See [:material-code-brackets: LexVersionType](./literals.md#lexversiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBotsRequestListBotsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "LexVersion": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBotsRequestListBotsPaginateTypeDef](./type_defs.md#listbotsrequestlistbotspaginatetypedef) 
 ## ListContactFlowModulesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_contact_flow_modules")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_contact_flow_modules")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlowModules)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListContactFlowModulesPaginator
@@ -187,30 +206,42 @@ def get_list_contact_flow_modules_paginator() -> ListContactFlowModulesPaginator
     return Session().client("connect").get_paginator("list_contact_flow_modules")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListContactFlowModules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlowModules)
 
-Arguments for `ListContactFlowModulesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowModuleState`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContactFlowModulesPaginator.paginate` method.
 
-`ListContactFlowModulesPaginator.paginate` returns
-`_PageIterator`\[[ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowModuleState: ContactFlowModuleStateType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListContactFlowModulesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcontactflowspaginator"></a>
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef](./type_defs.md#listcontactflowmodulesrequestlistcontactflowmodulespaginatetypedef) 
 ## ListContactFlowsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_contact_flows")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_contact_flows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlows)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListContactFlowsPaginator
@@ -219,30 +250,42 @@ def get_list_contact_flows_paginator() -> ListContactFlowsPaginator:
     return Session().client("connect").get_paginator("list_contact_flows")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListContactFlows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactFlows)
 
-Arguments for `ListContactFlowsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `ContactFlowTypes`:
-  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContactFlowsPaginator.paginate` method.
 
-`ListContactFlowsPaginator.paginate` returns
-`_PageIterator`\[[ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    ContactFlowTypes: Sequence[ContactFlowTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListContactFlowsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcontactreferencespaginator"></a>
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContactFlowsRequestListContactFlowsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContactFlowsRequestListContactFlowsPaginateTypeDef](./type_defs.md#listcontactflowsrequestlistcontactflowspaginatetypedef) 
 ## ListContactReferencesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_contact_references")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_contact_references")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactReferences)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListContactReferencesPaginator
@@ -251,32 +294,45 @@ def get_list_contact_references_paginator() -> ListContactReferencesPaginator:
     return Session().client("connect").get_paginator("list_contact_references")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListContactReferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListContactReferences)
 
-Arguments for `ListContactReferencesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `ContactId`: `str` *(required)*
-- `ReferenceTypes`:
-  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContactReferencesPaginator.paginate` method.
 
-`ListContactReferencesPaginator.paginate` returns
-`_PageIterator`\[[ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    ContactId: str,
+    ReferenceTypes: Sequence[ReferenceTypeType],  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListContactReferencesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdefaultvocabulariespaginator"></a>
+1. See [:material-code-brackets: ReferenceTypeType](./literals.md#referencetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContactReferencesRequestListContactReferencesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ContactId": ...,
+    "ReferenceTypes": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContactReferencesRequestListContactReferencesPaginateTypeDef](./type_defs.md#listcontactreferencesrequestlistcontactreferencespaginatetypedef) 
 ## ListDefaultVocabulariesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_default_vocabularies")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_default_vocabularies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListDefaultVocabularies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListDefaultVocabulariesPaginator
@@ -285,30 +341,42 @@ def get_list_default_vocabularies_paginator() -> ListDefaultVocabulariesPaginato
     return Session().client("connect").get_paginator("list_default_vocabularies")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListDefaultVocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListDefaultVocabularies)
 
-Arguments for `ListDefaultVocabulariesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDefaultVocabulariesPaginator.paginate` method.
 
-`ListDefaultVocabulariesPaginator.paginate` returns
-`_PageIterator`\[[ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    LanguageCode: VocabularyLanguageCodeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListDefaultVocabulariesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listhoursofoperationspaginator"></a>
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef](./type_defs.md#listdefaultvocabulariesrequestlistdefaultvocabulariespaginatetypedef) 
 ## ListHoursOfOperationsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_hours_of_operations")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_hours_of_operations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListHoursOfOperationsPaginator
@@ -317,28 +385,40 @@ def get_list_hours_of_operations_paginator() -> ListHoursOfOperationsPaginator:
     return Session().client("connect").get_paginator("list_hours_of_operations")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListHoursOfOperations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListHoursOfOperations)
 
-Arguments for `ListHoursOfOperationsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHoursOfOperationsPaginator.paginate` method.
 
-`ListHoursOfOperationsPaginator.paginate` returns
-`_PageIterator`\[[ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListHoursOfOperationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinstanceattributespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef](./type_defs.md#listhoursofoperationsrequestlisthoursofoperationspaginatetypedef) 
 ## ListInstanceAttributesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_instance_attributes")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_instance_attributes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListInstanceAttributesPaginator
@@ -347,28 +427,40 @@ def get_list_instance_attributes_paginator() -> ListInstanceAttributesPaginator:
     return Session().client("connect").get_paginator("list_instance_attributes")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListInstanceAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceAttributes)
 
-Arguments for `ListInstanceAttributesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstanceAttributesPaginator.paginate` method.
 
-`ListInstanceAttributesPaginator.paginate` returns
-`_PageIterator`\[[ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstanceAttributesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinstancestorageconfigspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef](./type_defs.md#listinstanceattributesrequestlistinstanceattributespaginatetypedef) 
 ## ListInstanceStorageConfigsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_instance_storage_configs")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_instance_storage_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListInstanceStorageConfigsPaginator
@@ -377,30 +469,43 @@ def get_list_instance_storage_configs_paginator() -> ListInstanceStorageConfigsP
     return Session().client("connect").get_paginator("list_instance_storage_configs")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListInstanceStorageConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstanceStorageConfigs)
 
-Arguments for `ListInstanceStorageConfigsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstanceStorageConfigsPaginator.paginate` method.
 
-`ListInstanceStorageConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListInstanceStorageConfigsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listinstancespaginator"></a>
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "ResourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef](./type_defs.md#listinstancestorageconfigsrequestlistinstancestorageconfigspaginatetypedef) 
 ## ListInstancesPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_instances")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListInstancesPaginator
@@ -409,27 +514,39 @@ def get_list_instances_paginator() -> ListInstancesPaginator:
     return Session().client("connect").get_paginator("list_instances")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListInstances)
 
-Arguments for `ListInstancesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInstancesPaginator.paginate` method.
 
-`ListInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listintegrationassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestListInstancesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInstancesRequestListInstancesPaginateTypeDef](./type_defs.md#listinstancesrequestlistinstancespaginatetypedef) 
 ## ListIntegrationAssociationsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_integration_associations")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_integration_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListIntegrationAssociationsPaginator
@@ -438,29 +555,42 @@ def get_list_integration_associations_paginator() -> ListIntegrationAssociations
     return Session().client("connect").get_paginator("list_integration_associations")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListIntegrationAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListIntegrationAssociations)
 
-Arguments for `ListIntegrationAssociationsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListIntegrationAssociationsPaginator.paginate` method.
 
-`ListIntegrationAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationType: IntegrationTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListIntegrationAssociationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listlambdafunctionspaginator"></a>
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef](./type_defs.md#listintegrationassociationsrequestlistintegrationassociationspaginatetypedef) 
 ## ListLambdaFunctionsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_lambda_functions")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_lambda_functions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListLambdaFunctionsPaginator
@@ -469,27 +599,40 @@ def get_list_lambda_functions_paginator() -> ListLambdaFunctionsPaginator:
     return Session().client("connect").get_paginator("list_lambda_functions")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListLambdaFunctions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLambdaFunctions)
 
-Arguments for `ListLambdaFunctionsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLambdaFunctionsPaginator.paginate` method.
 
-`ListLambdaFunctionsPaginator.paginate` returns
-`_PageIterator`\[[ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLambdaFunctionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlexbotspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef](./type_defs.md#listlambdafunctionsrequestlistlambdafunctionspaginatetypedef) 
 ## ListLexBotsPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_lex_bots")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_lex_bots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLexBots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListLexBotsPaginator
@@ -498,28 +641,40 @@ def get_list_lex_bots_paginator() -> ListLexBotsPaginator:
     return Session().client("connect").get_paginator("list_lex_bots")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListLexBots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListLexBots)
 
-Arguments for `ListLexBotsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListLexBotsPaginator.paginate` method.
 
-`ListLexBotsPaginator.paginate` returns
-`_PageIterator`\[[ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListLexBotsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listphonenumberspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListLexBotsRequestListLexBotsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListLexBotsRequestListLexBotsPaginateTypeDef](./type_defs.md#listlexbotsrequestlistlexbotspaginatetypedef) 
 ## ListPhoneNumbersPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_phone_numbers")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_phone_numbers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListPhoneNumbersPaginator
@@ -528,31 +683,44 @@ def get_list_phone_numbers_paginator() -> ListPhoneNumbersPaginator:
     return Session().client("connect").get_paginator("list_phone_numbers")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListPhoneNumbers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPhoneNumbers)
 
-Arguments for `ListPhoneNumbersPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PhoneNumberTypes`:
-  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
-- `PhoneNumberCountryCodes`:
-  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPhoneNumbersPaginator.paginate` method.
 
-`ListPhoneNumbersPaginator.paginate` returns
-`_PageIterator`\[[ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PhoneNumberTypes: Sequence[PhoneNumberTypeType] = ...,  # (1)
+    PhoneNumberCountryCodes: Sequence[PhoneNumberCountryCodeType] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListPhoneNumbersResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listpromptspaginator"></a>
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef](./type_defs.md#listphonenumbersrequestlistphonenumberspaginatetypedef) 
 ## ListPromptsPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_prompts")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_prompts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPrompts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListPromptsPaginator
@@ -561,28 +729,40 @@ def get_list_prompts_paginator() -> ListPromptsPaginator:
     return Session().client("connect").get_paginator("list_prompts")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListPrompts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListPrompts)
 
-Arguments for `ListPromptsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPromptsPaginator.paginate` method.
 
-`ListPromptsPaginator.paginate` returns
-`_PageIterator`\[[ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPromptsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqueuequickconnectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPromptsRequestListPromptsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPromptsRequestListPromptsPaginateTypeDef](./type_defs.md#listpromptsrequestlistpromptspaginatetypedef) 
 ## ListQueueQuickConnectsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_queue_quick_connects")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_queue_quick_connects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListQueueQuickConnectsPaginator
@@ -591,28 +771,42 @@ def get_list_queue_quick_connects_paginator() -> ListQueueQuickConnectsPaginator
     return Session().client("connect").get_paginator("list_queue_quick_connects")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListQueueQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueueQuickConnects)
 
-Arguments for `ListQueueQuickConnectsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `QueueId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueueQuickConnectsPaginator.paginate` method.
 
-`ListQueueQuickConnectsPaginator.paginate` returns
-`_PageIterator`\[[ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    QueueId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQueueQuickConnectsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqueuespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "QueueId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef](./type_defs.md#listqueuequickconnectsrequestlistqueuequickconnectspaginatetypedef) 
 ## ListQueuesPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_queues")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListQueuesPaginator
@@ -621,29 +815,42 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("connect").get_paginator("list_queues")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQueues)
 
-Arguments for `ListQueuesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueuesPaginator.paginate` method.
 
-`ListQueuesPaginator.paginate` returns
-`_PageIterator`\[[ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    QueueTypes: Sequence[QueueTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListQueuesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listquickconnectspaginator"></a>
+1. See [:material-code-brackets: QueueTypeType](./literals.md#queuetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQueuesRequestListQueuesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueuesRequestListQueuesPaginateTypeDef](./type_defs.md#listqueuesrequestlistqueuespaginatetypedef) 
 ## ListQuickConnectsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_quick_connects")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_quick_connects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListQuickConnectsPaginator
@@ -652,30 +859,42 @@ def get_list_quick_connects_paginator() -> ListQuickConnectsPaginator:
     return Session().client("connect").get_paginator("list_quick_connects")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListQuickConnects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListQuickConnects)
 
-Arguments for `ListQuickConnectsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `QuickConnectTypes`:
-  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQuickConnectsPaginator.paginate` method.
 
-`ListQuickConnectsPaginator.paginate` returns
-`_PageIterator`\[[ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    QuickConnectTypes: Sequence[QuickConnectTypeType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListQuickConnectsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listroutingprofilequeuespaginator"></a>
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQuickConnectsRequestListQuickConnectsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQuickConnectsRequestListQuickConnectsPaginateTypeDef](./type_defs.md#listquickconnectsrequestlistquickconnectspaginatetypedef) 
 ## ListRoutingProfileQueuesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_routing_profile_queues")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_routing_profile_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListRoutingProfileQueuesPaginator
@@ -684,29 +903,42 @@ def get_list_routing_profile_queues_paginator() -> ListRoutingProfileQueuesPagin
     return Session().client("connect").get_paginator("list_routing_profile_queues")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListRoutingProfileQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfileQueues)
 
-Arguments for `ListRoutingProfileQueuesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `RoutingProfileId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRoutingProfileQueuesPaginator.paginate` method.
 
-`ListRoutingProfileQueuesPaginator.paginate` returns
-`_PageIterator`\[[ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    RoutingProfileId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRoutingProfileQueuesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listroutingprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "RoutingProfileId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef](./type_defs.md#listroutingprofilequeuesrequestlistroutingprofilequeuespaginatetypedef) 
 ## ListRoutingProfilesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_routing_profiles")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_routing_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListRoutingProfilesPaginator
@@ -715,28 +947,40 @@ def get_list_routing_profiles_paginator() -> ListRoutingProfilesPaginator:
     return Session().client("connect").get_paginator("list_routing_profiles")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListRoutingProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListRoutingProfiles)
 
-Arguments for `ListRoutingProfilesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRoutingProfilesPaginator.paginate` method.
 
-`ListRoutingProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRoutingProfilesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsecuritykeyspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef](./type_defs.md#listroutingprofilesrequestlistroutingprofilespaginatetypedef) 
 ## ListSecurityKeysPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_security_keys")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_security_keys")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListSecurityKeysPaginator
@@ -745,28 +989,40 @@ def get_list_security_keys_paginator() -> ListSecurityKeysPaginator:
     return Session().client("connect").get_paginator("list_security_keys")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListSecurityKeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityKeys)
 
-Arguments for `ListSecurityKeysPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSecurityKeysPaginator.paginate` method.
 
-`ListSecurityKeysPaginator.paginate` returns
-`_PageIterator`\[[ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSecurityKeysResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsecurityprofilepermissionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityKeysRequestListSecurityKeysPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityKeysRequestListSecurityKeysPaginateTypeDef](./type_defs.md#listsecuritykeysrequestlistsecuritykeyspaginatetypedef) 
 ## ListSecurityProfilePermissionsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_security_profile_permissions")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_security_profile_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfilePermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListSecurityProfilePermissionsPaginator
@@ -775,29 +1031,42 @@ def get_list_security_profile_permissions_paginator() -> ListSecurityProfilePerm
     return Session().client("connect").get_paginator("list_security_profile_permissions")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListSecurityProfilePermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfilePermissions)
 
-Arguments for `ListSecurityProfilePermissionsPaginator.paginate` method:
+### paginate
 
-- `SecurityProfileId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSecurityProfilePermissionsPaginator.paginate` method.
 
-`ListSecurityProfilePermissionsPaginator.paginate` returns
-`_PageIterator`\[[ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SecurityProfileId: str,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSecurityProfilePermissionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsecurityprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef = {  # (1)
+    "SecurityProfileId": ...,
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef](./type_defs.md#listsecurityprofilepermissionsrequestlistsecurityprofilepermissionspaginatetypedef) 
 ## ListSecurityProfilesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_security_profiles")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_security_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListSecurityProfilesPaginator
@@ -806,27 +1075,40 @@ def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
     return Session().client("connect").get_paginator("list_security_profiles")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListSecurityProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListSecurityProfiles)
 
-Arguments for `ListSecurityProfilesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSecurityProfilesPaginator.paginate` method.
 
-`ListSecurityProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSecurityProfilesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listusecasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef](./type_defs.md#listsecurityprofilesrequestlistsecurityprofilespaginatetypedef) 
 ## ListUseCasesPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_use_cases")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_use_cases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUseCases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListUseCasesPaginator
@@ -835,29 +1117,42 @@ def get_list_use_cases_paginator() -> ListUseCasesPaginator:
     return Session().client("connect").get_paginator("list_use_cases")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListUseCases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUseCases)
 
-Arguments for `ListUseCasesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `IntegrationAssociationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUseCasesPaginator.paginate` method.
 
-`ListUseCasesPaginator.paginate` returns
-`_PageIterator`\[[ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUseCasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserhierarchygroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUseCasesRequestListUseCasesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+    "IntegrationAssociationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUseCasesRequestListUseCasesPaginateTypeDef](./type_defs.md#listusecasesrequestlistusecasespaginatetypedef) 
 ## ListUserHierarchyGroupsPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("list_user_hierarchy_groups")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_user_hierarchy_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListUserHierarchyGroupsPaginator
@@ -866,27 +1161,40 @@ def get_list_user_hierarchy_groups_paginator() -> ListUserHierarchyGroupsPaginat
     return Session().client("connect").get_paginator("list_user_hierarchy_groups")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListUserHierarchyGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUserHierarchyGroups)
 
-Arguments for `ListUserHierarchyGroupsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUserHierarchyGroupsPaginator.paginate` method.
 
-`ListUserHierarchyGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUserHierarchyGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef](./type_defs.md#listuserhierarchygroupsrequestlistuserhierarchygroupspaginatetypedef) 
 ## ListUsersPaginator
 
-Type annotations for `boto3.client("connect").get_paginator("list_users")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("list_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import ListUsersPaginator
@@ -895,28 +1203,40 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("connect").get_paginator("list_users")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListUsers)
 
-Arguments for `ListUsersPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersPaginator.paginate` method.
 
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchvocabulariespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestListUsersPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef) 
 ## SearchVocabulariesPaginator
 
-Type annotations for
-`boto3.client("connect").get_paginator("search_vocabularies")`.
+Type annotations and code completion for `#!python boto3.client("connect").get_paginator("search_vocabularies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchVocabularies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_connect.paginator import SearchVocabulariesPaginator
@@ -925,18 +1245,36 @@ def get_search_vocabularies_paginator() -> SearchVocabulariesPaginator:
     return Session().client("connect").get_paginator("search_vocabularies")
 ```
 
-Boto3 documentation:
-[Connect.Paginator.SearchVocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchVocabularies)
 
-Arguments for `SearchVocabulariesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameStartsWith`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchVocabulariesPaginator.paginate` method.
 
-`SearchVocabulariesPaginator.paginate` returns
-`_PageIterator`\[[SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    State: VocabularyStateType = ...,  # (1)
+    NameStartsWith: str = ...,
+    LanguageCode: VocabularyLanguageCodeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchVocabulariesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef](./type_defs.md#searchvocabulariesrequestsearchvocabulariespaginatetypedef) 

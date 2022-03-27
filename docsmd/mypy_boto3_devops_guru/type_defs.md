@@ -1,2202 +1,2895 @@
-<a id="typed-dictionaries-for-boto3-devopsguru-module"></a>
-
-# Typed dictionaries for boto3 DevOpsGuru module
+# Typed dictionaries
 
 > [Index](../README.md) > [DevOpsGuru](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
-type annotations stubs module
-[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DevOpsGuru module](#typed-dictionaries-for-boto3-devopsguru-module)
-  - [AccountHealthTypeDef](#accounthealthtypedef)
-  - [AccountInsightHealthTypeDef](#accountinsighthealthtypedef)
-  - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
-  - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
-  - [AmazonCodeGuruProfilerIntegrationTypeDef](#amazoncodeguruprofilerintegrationtypedef)
-  - [AnomalyReportedTimeRangeTypeDef](#anomalyreportedtimerangetypedef)
-  - [AnomalyResourceTypeDef](#anomalyresourcetypedef)
-  - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
-  - [AnomalySourceMetadataTypeDef](#anomalysourcemetadatatypedef)
-  - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
-  - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
-  - [CloudFormationCollectionTypeDef](#cloudformationcollectiontypedef)
-  - [CloudFormationCostEstimationResourceCollectionFilterTypeDef](#cloudformationcostestimationresourcecollectionfiltertypedef)
-  - [CloudFormationHealthTypeDef](#cloudformationhealthtypedef)
-  - [CloudWatchMetricsDataSummaryTypeDef](#cloudwatchmetricsdatasummarytypedef)
-  - [CloudWatchMetricsDetailTypeDef](#cloudwatchmetricsdetailtypedef)
-  - [CloudWatchMetricsDimensionTypeDef](#cloudwatchmetricsdimensiontypedef)
-  - [CostEstimationResourceCollectionFilterTypeDef](#costestimationresourcecollectionfiltertypedef)
-  - [CostEstimationTimeRangeTypeDef](#costestimationtimerangetypedef)
-  - [DescribeAccountHealthResponseTypeDef](#describeaccounthealthresponsetypedef)
-  - [DescribeAccountOverviewRequestRequestTypeDef](#describeaccountoverviewrequestrequesttypedef)
-  - [DescribeAccountOverviewResponseTypeDef](#describeaccountoverviewresponsetypedef)
-  - [DescribeAnomalyRequestRequestTypeDef](#describeanomalyrequestrequesttypedef)
-  - [DescribeAnomalyResponseTypeDef](#describeanomalyresponsetypedef)
-  - [DescribeEventSourcesConfigResponseTypeDef](#describeeventsourcesconfigresponsetypedef)
-  - [DescribeFeedbackRequestRequestTypeDef](#describefeedbackrequestrequesttypedef)
-  - [DescribeFeedbackResponseTypeDef](#describefeedbackresponsetypedef)
-  - [DescribeInsightRequestRequestTypeDef](#describeinsightrequestrequesttypedef)
-  - [DescribeInsightResponseTypeDef](#describeinsightresponsetypedef)
-  - [DescribeOrganizationHealthRequestRequestTypeDef](#describeorganizationhealthrequestrequesttypedef)
-  - [DescribeOrganizationHealthResponseTypeDef](#describeorganizationhealthresponsetypedef)
-  - [DescribeOrganizationOverviewRequestRequestTypeDef](#describeorganizationoverviewrequestrequesttypedef)
-  - [DescribeOrganizationOverviewResponseTypeDef](#describeorganizationoverviewresponsetypedef)
-  - [DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef](#describeorganizationresourcecollectionhealthrequestrequesttypedef)
-  - [DescribeOrganizationResourceCollectionHealthResponseTypeDef](#describeorganizationresourcecollectionhealthresponsetypedef)
-  - [DescribeResourceCollectionHealthRequestRequestTypeDef](#describeresourcecollectionhealthrequestrequesttypedef)
-  - [DescribeResourceCollectionHealthResponseTypeDef](#describeresourcecollectionhealthresponsetypedef)
-  - [DescribeServiceIntegrationResponseTypeDef](#describeserviceintegrationresponsetypedef)
-  - [EndTimeRangeTypeDef](#endtimerangetypedef)
-  - [EventResourceTypeDef](#eventresourcetypedef)
-  - [EventSourcesConfigTypeDef](#eventsourcesconfigtypedef)
-  - [EventTimeRangeTypeDef](#eventtimerangetypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [GetCostEstimationRequestRequestTypeDef](#getcostestimationrequestrequesttypedef)
-  - [GetCostEstimationResponseTypeDef](#getcostestimationresponsetypedef)
-  - [GetResourceCollectionRequestRequestTypeDef](#getresourcecollectionrequestrequesttypedef)
-  - [GetResourceCollectionResponseTypeDef](#getresourcecollectionresponsetypedef)
-  - [InsightFeedbackTypeDef](#insightfeedbacktypedef)
-  - [InsightHealthTypeDef](#insighthealthtypedef)
-  - [InsightTimeRangeTypeDef](#insighttimerangetypedef)
-  - [ListAnomaliesForInsightRequestRequestTypeDef](#listanomaliesforinsightrequestrequesttypedef)
-  - [ListAnomaliesForInsightResponseTypeDef](#listanomaliesforinsightresponsetypedef)
-  - [ListEventsFiltersTypeDef](#listeventsfilterstypedef)
-  - [ListEventsRequestRequestTypeDef](#listeventsrequestrequesttypedef)
-  - [ListEventsResponseTypeDef](#listeventsresponsetypedef)
-  - [ListInsightsAnyStatusFilterTypeDef](#listinsightsanystatusfiltertypedef)
-  - [ListInsightsClosedStatusFilterTypeDef](#listinsightsclosedstatusfiltertypedef)
-  - [ListInsightsOngoingStatusFilterTypeDef](#listinsightsongoingstatusfiltertypedef)
-  - [ListInsightsRequestRequestTypeDef](#listinsightsrequestrequesttypedef)
-  - [ListInsightsResponseTypeDef](#listinsightsresponsetypedef)
-  - [ListInsightsStatusFilterTypeDef](#listinsightsstatusfiltertypedef)
-  - [ListNotificationChannelsRequestRequestTypeDef](#listnotificationchannelsrequestrequesttypedef)
-  - [ListNotificationChannelsResponseTypeDef](#listnotificationchannelsresponsetypedef)
-  - [ListOrganizationInsightsRequestRequestTypeDef](#listorganizationinsightsrequestrequesttypedef)
-  - [ListOrganizationInsightsResponseTypeDef](#listorganizationinsightsresponsetypedef)
-  - [ListRecommendationsRequestRequestTypeDef](#listrecommendationsrequestrequesttypedef)
-  - [ListRecommendationsResponseTypeDef](#listrecommendationsresponsetypedef)
-  - [NotificationChannelConfigTypeDef](#notificationchannelconfigtypedef)
-  - [NotificationChannelTypeDef](#notificationchanneltypedef)
-  - [OpsCenterIntegrationConfigTypeDef](#opscenterintegrationconfigtypedef)
-  - [OpsCenterIntegrationTypeDef](#opscenterintegrationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PerformanceInsightsMetricDimensionGroupTypeDef](#performanceinsightsmetricdimensiongrouptypedef)
-  - [PerformanceInsightsMetricQueryTypeDef](#performanceinsightsmetricquerytypedef)
-  - [PerformanceInsightsMetricsDetailTypeDef](#performanceinsightsmetricsdetailtypedef)
-  - [PerformanceInsightsReferenceComparisonValuesTypeDef](#performanceinsightsreferencecomparisonvaluestypedef)
-  - [PerformanceInsightsReferenceDataTypeDef](#performanceinsightsreferencedatatypedef)
-  - [PerformanceInsightsReferenceMetricTypeDef](#performanceinsightsreferencemetrictypedef)
-  - [PerformanceInsightsReferenceScalarTypeDef](#performanceinsightsreferencescalartypedef)
-  - [PerformanceInsightsStatTypeDef](#performanceinsightsstattypedef)
-  - [PredictionTimeRangeTypeDef](#predictiontimerangetypedef)
-  - [ProactiveAnomalySummaryTypeDef](#proactiveanomalysummarytypedef)
-  - [ProactiveAnomalyTypeDef](#proactiveanomalytypedef)
-  - [ProactiveInsightSummaryTypeDef](#proactiveinsightsummarytypedef)
-  - [ProactiveInsightTypeDef](#proactiveinsighttypedef)
-  - [ProactiveOrganizationInsightSummaryTypeDef](#proactiveorganizationinsightsummarytypedef)
-  - [PutFeedbackRequestRequestTypeDef](#putfeedbackrequestrequesttypedef)
-  - [ReactiveAnomalySummaryTypeDef](#reactiveanomalysummarytypedef)
-  - [ReactiveAnomalyTypeDef](#reactiveanomalytypedef)
-  - [ReactiveInsightSummaryTypeDef](#reactiveinsightsummarytypedef)
-  - [ReactiveInsightTypeDef](#reactiveinsighttypedef)
-  - [ReactiveOrganizationInsightSummaryTypeDef](#reactiveorganizationinsightsummarytypedef)
-  - [RecommendationRelatedAnomalyResourceTypeDef](#recommendationrelatedanomalyresourcetypedef)
-  - [RecommendationRelatedAnomalySourceDetailTypeDef](#recommendationrelatedanomalysourcedetailtypedef)
-  - [RecommendationRelatedAnomalyTypeDef](#recommendationrelatedanomalytypedef)
-  - [RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef](#recommendationrelatedcloudwatchmetricssourcedetailtypedef)
-  - [RecommendationRelatedEventResourceTypeDef](#recommendationrelatedeventresourcetypedef)
-  - [RecommendationRelatedEventTypeDef](#recommendationrelatedeventtypedef)
-  - [RecommendationTypeDef](#recommendationtypedef)
-  - [RemoveNotificationChannelRequestRequestTypeDef](#removenotificationchannelrequestrequesttypedef)
-  - [ResourceCollectionFilterTypeDef](#resourcecollectionfiltertypedef)
-  - [ResourceCollectionTypeDef](#resourcecollectiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SearchInsightsFiltersTypeDef](#searchinsightsfilterstypedef)
-  - [SearchInsightsRequestRequestTypeDef](#searchinsightsrequestrequesttypedef)
-  - [SearchInsightsResponseTypeDef](#searchinsightsresponsetypedef)
-  - [SearchOrganizationInsightsFiltersTypeDef](#searchorganizationinsightsfilterstypedef)
-  - [SearchOrganizationInsightsRequestRequestTypeDef](#searchorganizationinsightsrequestrequesttypedef)
-  - [SearchOrganizationInsightsResponseTypeDef](#searchorganizationinsightsresponsetypedef)
-  - [ServiceCollectionTypeDef](#servicecollectiontypedef)
-  - [ServiceHealthTypeDef](#servicehealthtypedef)
-  - [ServiceInsightHealthTypeDef](#serviceinsighthealthtypedef)
-  - [ServiceIntegrationConfigTypeDef](#serviceintegrationconfigtypedef)
-  - [ServiceResourceCostTypeDef](#serviceresourcecosttypedef)
-  - [SnsChannelConfigTypeDef](#snschannelconfigtypedef)
-  - [StartCostEstimationRequestRequestTypeDef](#startcostestimationrequestrequesttypedef)
-  - [StartTimeRangeTypeDef](#starttimerangetypedef)
-  - [TagCollectionFilterTypeDef](#tagcollectionfiltertypedef)
-  - [TagCollectionTypeDef](#tagcollectiontypedef)
-  - [TagCostEstimationResourceCollectionFilterTypeDef](#tagcostestimationresourcecollectionfiltertypedef)
-  - [TagHealthTypeDef](#taghealthtypedef)
-  - [TimestampMetricValuePairTypeDef](#timestampmetricvaluepairtypedef)
-  - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
-  - [UpdateEventSourcesConfigRequestRequestTypeDef](#updateeventsourcesconfigrequestrequesttypedef)
-  - [UpdateResourceCollectionFilterTypeDef](#updateresourcecollectionfiltertypedef)
-  - [UpdateResourceCollectionRequestRequestTypeDef](#updateresourcecollectionrequestrequesttypedef)
-  - [UpdateServiceIntegrationConfigTypeDef](#updateserviceintegrationconfigtypedef)
-  - [UpdateServiceIntegrationRequestRequestTypeDef](#updateserviceintegrationrequestrequesttypedef)
-  - [UpdateTagCollectionFilterTypeDef](#updatetagcollectionfiltertypedef)
-
-<a id="accounthealthtypedef"></a>
+    Auto-generated documentation for [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
+    type annotations stubs module [mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 ## AccountHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AccountHealthTypeDef
+
+def get_value() -> AccountHealthTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccountHealthTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    Insight: NotRequired[AccountInsightHealthTypeDef],  # (1)
+```
 
-- `AccountId`: `str`
-- `Insight`:
-  [AccountInsightHealthTypeDef](./type_defs.md#accountinsighthealthtypedef)
-
-<a id="accountinsighthealthtypedef"></a>
-
+1. See [:material-code-braces: AccountInsightHealthTypeDef](./type_defs.md#accountinsighthealthtypedef) 
 ## AccountInsightHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AccountInsightHealthTypeDef
+
+def get_value() -> AccountInsightHealthTypeDef:
+    return {
+        "OpenProactiveInsights": ...,
+    }
 ```
 
-Optional fields:
-
-- `OpenProactiveInsights`: `int`
-- `OpenReactiveInsights`: `int`
-
-<a id="addnotificationchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class AccountInsightHealthTypeDef(TypedDict):
+    OpenProactiveInsights: NotRequired[int],
+    OpenReactiveInsights: NotRequired[int],
+```
 
 ## AddNotificationChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AddNotificationChannelRequestRequestTypeDef
+
+def get_value() -> AddNotificationChannelRequestRequestTypeDef:
+    return {
+        "Config": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddNotificationChannelRequestRequestTypeDef(TypedDict):
+    Config: NotificationChannelConfigTypeDef,  # (1)
+```
 
-- `Config`:
-  [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
-
-<a id="addnotificationchannelresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef) 
 ## AddNotificationChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AddNotificationChannelResponseTypeDef
+
+def get_value() -> AddNotificationChannelResponseTypeDef:
+    return {
+        "Id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddNotificationChannelResponseTypeDef(TypedDict):
+    Id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="amazoncodeguruprofilerintegrationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AmazonCodeGuruProfilerIntegrationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AmazonCodeGuruProfilerIntegrationTypeDef
+
+def get_value() -> AmazonCodeGuruProfilerIntegrationTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AmazonCodeGuruProfilerIntegrationTypeDef(TypedDict):
+    Status: NotRequired[EventSourceOptInStatusType],  # (1)
+```
 
-- `Status`:
-  [EventSourceOptInStatusType](./literals.md#eventsourceoptinstatustype)
-
-<a id="anomalyreportedtimerangetypedef"></a>
-
+1. See [:material-code-brackets: EventSourceOptInStatusType](./literals.md#eventsourceoptinstatustype) 
 ## AnomalyReportedTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AnomalyReportedTimeRangeTypeDef
+
+def get_value() -> AnomalyReportedTimeRangeTypeDef:
+    return {
+        "OpenTime": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenTime`: `datetime`
-
-Optional fields:
-
-- `CloseTime`: `datetime`
-
-<a id="anomalyresourcetypedef"></a>
+```python title="Definition"
+class AnomalyReportedTimeRangeTypeDef(TypedDict):
+    OpenTime: datetime,
+    CloseTime: NotRequired[datetime],
+```
 
 ## AnomalyResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AnomalyResourceTypeDef
+
+def get_value() -> AnomalyResourceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Type`: `str`
-
-<a id="anomalysourcedetailstypedef"></a>
+```python title="Definition"
+class AnomalyResourceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## AnomalySourceDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AnomalySourceDetailsTypeDef
+
+def get_value() -> AnomalySourceDetailsTypeDef:
+    return {
+        "CloudWatchMetrics": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalySourceDetailsTypeDef(TypedDict):
+    CloudWatchMetrics: NotRequired[List[CloudWatchMetricsDetailTypeDef]],  # (1)
+    PerformanceInsightsMetrics: NotRequired[List[PerformanceInsightsMetricsDetailTypeDef]],  # (2)
+```
 
-- `CloudWatchMetrics`:
-  `List`\[[CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef)\]
-- `PerformanceInsightsMetrics`:
-  `List`\[[PerformanceInsightsMetricsDetailTypeDef](./type_defs.md#performanceinsightsmetricsdetailtypedef)\]
-
-<a id="anomalysourcemetadatatypedef"></a>
-
+1. See [:material-code-braces: CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef) 
+2. See [:material-code-braces: PerformanceInsightsMetricsDetailTypeDef](./type_defs.md#performanceinsightsmetricsdetailtypedef) 
 ## AnomalySourceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AnomalySourceMetadataTypeDef
+
+def get_value() -> AnomalySourceMetadataTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Optional fields:
-
-- `Source`: `str`
-- `SourceResourceName`: `str`
-- `SourceResourceType`: `str`
-
-<a id="anomalytimerangetypedef"></a>
+```python title="Definition"
+class AnomalySourceMetadataTypeDef(TypedDict):
+    Source: NotRequired[str],
+    SourceResourceName: NotRequired[str],
+    SourceResourceType: NotRequired[str],
+```
 
 ## AnomalyTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import AnomalyTimeRangeTypeDef
+
+def get_value() -> AnomalyTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `datetime`
-
-Optional fields:
-
-- `EndTime`: `datetime`
-
-<a id="cloudformationcollectionfiltertypedef"></a>
+```python title="Definition"
+class AnomalyTimeRangeTypeDef(TypedDict):
+    StartTime: datetime,
+    EndTime: NotRequired[datetime],
+```
 
 ## CloudFormationCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudFormationCollectionFilterTypeDef
+
+def get_value() -> CloudFormationCollectionFilterTypeDef:
+    return {
+        "StackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackNames`: `List`\[`str`\]
-
-<a id="cloudformationcollectiontypedef"></a>
+```python title="Definition"
+class CloudFormationCollectionFilterTypeDef(TypedDict):
+    StackNames: NotRequired[List[str]],
+```
 
 ## CloudFormationCollectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudFormationCollectionTypeDef
+
+def get_value() -> CloudFormationCollectionTypeDef:
+    return {
+        "StackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackNames`: `List`\[`str`\]
-
-<a id="cloudformationcostestimationresourcecollectionfiltertypedef"></a>
+```python title="Definition"
+class CloudFormationCollectionTypeDef(TypedDict):
+    StackNames: NotRequired[List[str]],
+```
 
 ## CloudFormationCostEstimationResourceCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudFormationCostEstimationResourceCollectionFilterTypeDef
+
+def get_value() -> CloudFormationCostEstimationResourceCollectionFilterTypeDef:
+    return {
+        "StackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackNames`: `List`\[`str`\]
-
-<a id="cloudformationhealthtypedef"></a>
+```python title="Definition"
+class CloudFormationCostEstimationResourceCollectionFilterTypeDef(TypedDict):
+    StackNames: NotRequired[List[str]],
+```
 
 ## CloudFormationHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudFormationHealthTypeDef
+
+def get_value() -> CloudFormationHealthTypeDef:
+    return {
+        "StackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudFormationHealthTypeDef(TypedDict):
+    StackName: NotRequired[str],
+    Insight: NotRequired[InsightHealthTypeDef],  # (1)
+```
 
-- `StackName`: `str`
-- `Insight`: [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
-
-<a id="cloudwatchmetricsdatasummarytypedef"></a>
-
+1. See [:material-code-braces: InsightHealthTypeDef](./type_defs.md#insighthealthtypedef) 
 ## CloudWatchMetricsDataSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudWatchMetricsDataSummaryTypeDef
+
+def get_value() -> CloudWatchMetricsDataSummaryTypeDef:
+    return {
+        "TimestampMetricValuePairList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudWatchMetricsDataSummaryTypeDef(TypedDict):
+    TimestampMetricValuePairList: NotRequired[List[TimestampMetricValuePairTypeDef]],  # (1)
+    StatusCode: NotRequired[CloudWatchMetricDataStatusCodeType],  # (2)
+```
 
-- `TimestampMetricValuePairList`:
-  `List`\[[TimestampMetricValuePairTypeDef](./type_defs.md#timestampmetricvaluepairtypedef)\]
-- `StatusCode`:
-  [CloudWatchMetricDataStatusCodeType](./literals.md#cloudwatchmetricdatastatuscodetype)
-
-<a id="cloudwatchmetricsdetailtypedef"></a>
-
+1. See [:material-code-braces: TimestampMetricValuePairTypeDef](./type_defs.md#timestampmetricvaluepairtypedef) 
+2. See [:material-code-brackets: CloudWatchMetricDataStatusCodeType](./literals.md#cloudwatchmetricdatastatuscodetype) 
 ## CloudWatchMetricsDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudWatchMetricsDetailTypeDef
+
+def get_value() -> CloudWatchMetricsDetailTypeDef:
+    return {
+        "MetricName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudWatchMetricsDetailTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Namespace: NotRequired[str],
+    Dimensions: NotRequired[List[CloudWatchMetricsDimensionTypeDef]],  # (1)
+    Stat: NotRequired[CloudWatchMetricsStatType],  # (2)
+    Unit: NotRequired[str],
+    Period: NotRequired[int],
+    MetricDataSummary: NotRequired[CloudWatchMetricsDataSummaryTypeDef],  # (3)
+```
 
-- `MetricName`: `str`
-- `Namespace`: `str`
-- `Dimensions`:
-  `List`\[[CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef)\]
-- `Stat`: [CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype)
-- `Unit`: `str`
-- `Period`: `int`
-- `MetricDataSummary`:
-  [CloudWatchMetricsDataSummaryTypeDef](./type_defs.md#cloudwatchmetricsdatasummarytypedef)
-
-<a id="cloudwatchmetricsdimensiontypedef"></a>
-
+1. See [:material-code-braces: CloudWatchMetricsDimensionTypeDef](./type_defs.md#cloudwatchmetricsdimensiontypedef) 
+2. See [:material-code-brackets: CloudWatchMetricsStatType](./literals.md#cloudwatchmetricsstattype) 
+3. See [:material-code-braces: CloudWatchMetricsDataSummaryTypeDef](./type_defs.md#cloudwatchmetricsdatasummarytypedef) 
 ## CloudWatchMetricsDimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CloudWatchMetricsDimensionTypeDef
+
+def get_value() -> CloudWatchMetricsDimensionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="costestimationresourcecollectionfiltertypedef"></a>
+```python title="Definition"
+class CloudWatchMetricsDimensionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## CostEstimationResourceCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CostEstimationResourceCollectionFilterTypeDef
+
+def get_value() -> CostEstimationResourceCollectionFilterTypeDef:
+    return {
+        "CloudFormation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CostEstimationResourceCollectionFilterTypeDef(TypedDict):
+    CloudFormation: NotRequired[CloudFormationCostEstimationResourceCollectionFilterTypeDef],  # (1)
+    Tags: NotRequired[List[TagCostEstimationResourceCollectionFilterTypeDef]],  # (2)
+```
 
-- `CloudFormation`:
-  [CloudFormationCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#cloudformationcostestimationresourcecollectionfiltertypedef)
-- `Tags`:
-  `List`\[[TagCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#tagcostestimationresourcecollectionfiltertypedef)\]
-
-<a id="costestimationtimerangetypedef"></a>
-
+1. See [:material-code-braces: CloudFormationCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#cloudformationcostestimationresourcecollectionfiltertypedef) 
+2. See [:material-code-braces: TagCostEstimationResourceCollectionFilterTypeDef](./type_defs.md#tagcostestimationresourcecollectionfiltertypedef) 
 ## CostEstimationTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import CostEstimationTimeRangeTypeDef
+
+def get_value() -> CostEstimationTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-
-<a id="describeaccounthealthresponsetypedef"></a>
+```python title="Definition"
+class CostEstimationTimeRangeTypeDef(TypedDict):
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
 
 ## DescribeAccountHealthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeAccountHealthResponseTypeDef
+
+def get_value() -> DescribeAccountHealthResponseTypeDef:
+    return {
+        "OpenReactiveInsights": ...,
+        "OpenProactiveInsights": ...,
+        "MetricsAnalyzed": ...,
+        "ResourceHours": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountHealthResponseTypeDef(TypedDict):
+    OpenReactiveInsights: int,
+    OpenProactiveInsights: int,
+    MetricsAnalyzed: int,
+    ResourceHours: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OpenReactiveInsights`: `int`
-- `OpenProactiveInsights`: `int`
-- `MetricsAnalyzed`: `int`
-- `ResourceHours`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeaccountoverviewrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAccountOverviewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewRequestRequestTypeDef
+
+def get_value() -> DescribeAccountOverviewRequestRequestTypeDef:
+    return {
+        "FromTime": ...,
+    }
 ```
 
-Required fields:
-
-- `FromTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `ToTime`: `Union`\[`datetime`, `str`\]
-
-<a id="describeaccountoverviewresponsetypedef"></a>
+```python title="Definition"
+class DescribeAccountOverviewRequestRequestTypeDef(TypedDict):
+    FromTime: Union[datetime, str],
+    ToTime: NotRequired[Union[datetime, str]],
+```
 
 ## DescribeAccountOverviewResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeAccountOverviewResponseTypeDef
+
+def get_value() -> DescribeAccountOverviewResponseTypeDef:
+    return {
+        "ReactiveInsights": ...,
+        "ProactiveInsights": ...,
+        "MeanTimeToRecoverInMilliseconds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountOverviewResponseTypeDef(TypedDict):
+    ReactiveInsights: int,
+    ProactiveInsights: int,
+    MeanTimeToRecoverInMilliseconds: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReactiveInsights`: `int`
-- `ProactiveInsights`: `int`
-- `MeanTimeToRecoverInMilliseconds`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeanomalyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAnomalyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeAnomalyRequestRequestTypeDef
+
+def get_value() -> DescribeAnomalyRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `AccountId`: `str`
-
-<a id="describeanomalyresponsetypedef"></a>
+```python title="Definition"
+class DescribeAnomalyRequestRequestTypeDef(TypedDict):
+    Id: str,
+    AccountId: NotRequired[str],
+```
 
 ## DescribeAnomalyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeAnomalyResponseTypeDef
+
+def get_value() -> DescribeAnomalyResponseTypeDef:
+    return {
+        "ProactiveAnomaly": ...,
+        "ReactiveAnomaly": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAnomalyResponseTypeDef(TypedDict):
+    ProactiveAnomaly: ProactiveAnomalyTypeDef,  # (1)
+    ReactiveAnomaly: ReactiveAnomalyTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveAnomaly`:
-  [ProactiveAnomalyTypeDef](./type_defs.md#proactiveanomalytypedef)
-- `ReactiveAnomaly`:
-  [ReactiveAnomalyTypeDef](./type_defs.md#reactiveanomalytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventsourcesconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: ProactiveAnomalyTypeDef](./type_defs.md#proactiveanomalytypedef) 
+2. See [:material-code-braces: ReactiveAnomalyTypeDef](./type_defs.md#reactiveanomalytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventSourcesConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeEventSourcesConfigResponseTypeDef
+
+def get_value() -> DescribeEventSourcesConfigResponseTypeDef:
+    return {
+        "EventSources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventSourcesConfigResponseTypeDef(TypedDict):
+    EventSources: EventSourcesConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventSources`:
-  [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefeedbackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeFeedbackRequestRequestTypeDef
+
+def get_value() -> DescribeFeedbackRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Optional fields:
-
-- `InsightId`: `str`
-
-<a id="describefeedbackresponsetypedef"></a>
+```python title="Definition"
+class DescribeFeedbackRequestRequestTypeDef(TypedDict):
+    InsightId: NotRequired[str],
+```
 
 ## DescribeFeedbackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeFeedbackResponseTypeDef
+
+def get_value() -> DescribeFeedbackResponseTypeDef:
+    return {
+        "InsightFeedback": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFeedbackResponseTypeDef(TypedDict):
+    InsightFeedback: InsightFeedbackTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InsightFeedback`:
-  [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinsightrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInsightRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeInsightRequestRequestTypeDef
+
+def get_value() -> DescribeInsightRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `AccountId`: `str`
-
-<a id="describeinsightresponsetypedef"></a>
+```python title="Definition"
+class DescribeInsightRequestRequestTypeDef(TypedDict):
+    Id: str,
+    AccountId: NotRequired[str],
+```
 
 ## DescribeInsightResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeInsightResponseTypeDef
+
+def get_value() -> DescribeInsightResponseTypeDef:
+    return {
+        "ProactiveInsight": ...,
+        "ReactiveInsight": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInsightResponseTypeDef(TypedDict):
+    ProactiveInsight: ProactiveInsightTypeDef,  # (1)
+    ReactiveInsight: ReactiveInsightTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveInsight`:
-  [ProactiveInsightTypeDef](./type_defs.md#proactiveinsighttypedef)
-- `ReactiveInsight`:
-  [ReactiveInsightTypeDef](./type_defs.md#reactiveinsighttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeorganizationhealthrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProactiveInsightTypeDef](./type_defs.md#proactiveinsighttypedef) 
+2. See [:material-code-braces: ReactiveInsightTypeDef](./type_defs.md#reactiveinsighttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationHealthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationHealthRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationHealthRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-
-<a id="describeorganizationhealthresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationHealthRequestRequestTypeDef(TypedDict):
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeOrganizationHealthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationHealthResponseTypeDef
+
+def get_value() -> DescribeOrganizationHealthResponseTypeDef:
+    return {
+        "OpenReactiveInsights": ...,
+        "OpenProactiveInsights": ...,
+        "MetricsAnalyzed": ...,
+        "ResourceHours": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationHealthResponseTypeDef(TypedDict):
+    OpenReactiveInsights: int,
+    OpenProactiveInsights: int,
+    MetricsAnalyzed: int,
+    ResourceHours: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OpenReactiveInsights`: `int`
-- `OpenProactiveInsights`: `int`
-- `MetricsAnalyzed`: `int`
-- `ResourceHours`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeorganizationoverviewrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOrganizationOverviewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationOverviewRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationOverviewRequestRequestTypeDef:
+    return {
+        "FromTime": ...,
+    }
 ```
 
-Required fields:
-
-- `FromTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `ToTime`: `Union`\[`datetime`, `str`\]
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-
-<a id="describeorganizationoverviewresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationOverviewRequestRequestTypeDef(TypedDict):
+    FromTime: Union[datetime, str],
+    ToTime: NotRequired[Union[datetime, str]],
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+```
 
 ## DescribeOrganizationOverviewResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationOverviewResponseTypeDef
+
+def get_value() -> DescribeOrganizationOverviewResponseTypeDef:
+    return {
+        "ReactiveInsights": ...,
+        "ProactiveInsights": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationOverviewResponseTypeDef(TypedDict):
+    ReactiveInsights: int,
+    ProactiveInsights: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReactiveInsights`: `int`
-- `ProactiveInsights`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef
 
-<a id="describeorganizationresourcecollectionhealthrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef
 
+def get_value() -> DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef:
+    return {
+        "OrganizationResourceCollectionType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef(TypedDict):
+    OrganizationResourceCollectionType: OrganizationResourceCollectionTypeType,  # (1)
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef:
+    return {
+        "OrganizationResourceCollectionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationResourceCollectionHealthRequestRequestTypeDef(TypedDict):
+    OrganizationResourceCollectionType: OrganizationResourceCollectionTypeType,  # (1)
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `OrganizationResourceCollectionType`:
-  [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
-
-Optional fields:
-
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describeorganizationresourcecollectionhealthresponsetypedef"></a>
-
+1. See [:material-code-brackets: OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype) 
 ## DescribeOrganizationResourceCollectionHealthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeOrganizationResourceCollectionHealthResponseTypeDef
+
+def get_value() -> DescribeOrganizationResourceCollectionHealthResponseTypeDef:
+    return {
+        "CloudFormation": ...,
+        "Service": ...,
+        "Account": ...,
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationResourceCollectionHealthResponseTypeDef(TypedDict):
+    CloudFormation: List[CloudFormationHealthTypeDef],  # (1)
+    Service: List[ServiceHealthTypeDef],  # (2)
+    Account: List[AccountHealthTypeDef],  # (3)
+    NextToken: str,
+    Tags: List[TagHealthTypeDef],  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `CloudFormation`:
-  `List`\[[CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef)\]
-- `Service`:
-  `List`\[[ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)\]
-- `Account`:
-  `List`\[[AccountHealthTypeDef](./type_defs.md#accounthealthtypedef)\]
-- `NextToken`: `str`
-- `Tags`: `List`\[[TagHealthTypeDef](./type_defs.md#taghealthtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef) 
+2. See [:material-code-braces: ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef) 
+3. See [:material-code-braces: AccountHealthTypeDef](./type_defs.md#accounthealthtypedef) 
+4. See [:material-code-braces: TagHealthTypeDef](./type_defs.md#taghealthtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef
 
-<a id="describeresourcecollectionhealthrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef
 
+def get_value() -> DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef:
+    return {
+        "ResourceCollectionType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef(TypedDict):
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeResourceCollectionHealthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthRequestRequestTypeDef
+
+def get_value() -> DescribeResourceCollectionHealthRequestRequestTypeDef:
+    return {
+        "ResourceCollectionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourceCollectionHealthRequestRequestTypeDef(TypedDict):
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `ResourceCollectionType`:
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="describeresourcecollectionhealthresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
 ## DescribeResourceCollectionHealthResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeResourceCollectionHealthResponseTypeDef
+
+def get_value() -> DescribeResourceCollectionHealthResponseTypeDef:
+    return {
+        "CloudFormation": ...,
+        "Service": ...,
+        "NextToken": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResourceCollectionHealthResponseTypeDef(TypedDict):
+    CloudFormation: List[CloudFormationHealthTypeDef],  # (1)
+    Service: List[ServiceHealthTypeDef],  # (2)
+    NextToken: str,
+    Tags: List[TagHealthTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `CloudFormation`:
-  `List`\[[CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef)\]
-- `Service`:
-  `List`\[[ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef)\]
-- `NextToken`: `str`
-- `Tags`: `List`\[[TagHealthTypeDef](./type_defs.md#taghealthtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeserviceintegrationresponsetypedef"></a>
-
+1. See [:material-code-braces: CloudFormationHealthTypeDef](./type_defs.md#cloudformationhealthtypedef) 
+2. See [:material-code-braces: ServiceHealthTypeDef](./type_defs.md#servicehealthtypedef) 
+3. See [:material-code-braces: TagHealthTypeDef](./type_defs.md#taghealthtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import DescribeServiceIntegrationResponseTypeDef
+
+def get_value() -> DescribeServiceIntegrationResponseTypeDef:
+    return {
+        "ServiceIntegration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServiceIntegrationResponseTypeDef(TypedDict):
+    ServiceIntegration: ServiceIntegrationConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceIntegration`:
-  [ServiceIntegrationConfigTypeDef](./type_defs.md#serviceintegrationconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endtimerangetypedef"></a>
-
+1. See [:material-code-braces: ServiceIntegrationConfigTypeDef](./type_defs.md#serviceintegrationconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import EndTimeRangeTypeDef
+
+def get_value() -> EndTimeRangeTypeDef:
+    return {
+        "FromTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `FromTime`: `Union`\[`datetime`, `str`\]
-- `ToTime`: `Union`\[`datetime`, `str`\]
-
-<a id="eventresourcetypedef"></a>
+```python title="Definition"
+class EndTimeRangeTypeDef(TypedDict):
+    FromTime: NotRequired[Union[datetime, str]],
+    ToTime: NotRequired[Union[datetime, str]],
+```
 
 ## EventResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import EventResourceTypeDef
+
+def get_value() -> EventResourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-- `Name`: `str`
-- `Arn`: `str`
-
-<a id="eventsourcesconfigtypedef"></a>
+```python title="Definition"
+class EventResourceTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Name: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## EventSourcesConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import EventSourcesConfigTypeDef
+
+def get_value() -> EventSourcesConfigTypeDef:
+    return {
+        "AmazonCodeGuruProfiler": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventSourcesConfigTypeDef(TypedDict):
+    AmazonCodeGuruProfiler: NotRequired[AmazonCodeGuruProfilerIntegrationTypeDef],  # (1)
+```
 
-- `AmazonCodeGuruProfiler`:
-  [AmazonCodeGuruProfilerIntegrationTypeDef](./type_defs.md#amazoncodeguruprofilerintegrationtypedef)
-
-<a id="eventtimerangetypedef"></a>
-
+1. See [:material-code-braces: AmazonCodeGuruProfilerIntegrationTypeDef](./type_defs.md#amazoncodeguruprofilerintegrationtypedef) 
 ## EventTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import EventTimeRangeTypeDef
+
+def get_value() -> EventTimeRangeTypeDef:
+    return {
+        "FromTime": ...,
+        "ToTime": ...,
+    }
 ```
 
-Required fields:
-
-- `FromTime`: `Union`\[`datetime`, `str`\]
-- `ToTime`: `Union`\[`datetime`, `str`\]
-
-<a id="eventtypedef"></a>
+```python title="Definition"
+class EventTimeRangeTypeDef(TypedDict):
+    FromTime: Union[datetime, str],
+    ToTime: Union[datetime, str],
+```
 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "ResourceCollection": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (1)
+    Id: NotRequired[str],
+    Time: NotRequired[datetime],
+    EventSource: NotRequired[str],
+    Name: NotRequired[str],
+    DataSource: NotRequired[EventDataSourceType],  # (2)
+    EventClass: NotRequired[EventClassType],  # (3)
+    Resources: NotRequired[List[EventResourceTypeDef]],  # (4)
+```
 
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `Id`: `str`
-- `Time`: `datetime`
-- `EventSource`: `str`
-- `Name`: `str`
-- `DataSource`: [EventDataSourceType](./literals.md#eventdatasourcetype)
-- `EventClass`: [EventClassType](./literals.md#eventclasstype)
-- `Resources`:
-  `List`\[[EventResourceTypeDef](./type_defs.md#eventresourcetypedef)\]
+1. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+2. See [:material-code-brackets: EventDataSourceType](./literals.md#eventdatasourcetype) 
+3. See [:material-code-brackets: EventClassType](./literals.md#eventclasstype) 
+4. See [:material-code-braces: EventResourceTypeDef](./type_defs.md#eventresourcetypedef) 
+## GetCostEstimationRequestGetCostEstimationPaginateTypeDef
 
-<a id="getcostestimationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import GetCostEstimationRequestGetCostEstimationPaginateTypeDef
 
+def get_value() -> GetCostEstimationRequestGetCostEstimationPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetCostEstimationRequestGetCostEstimationPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetCostEstimationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import GetCostEstimationRequestRequestTypeDef
+
+def get_value() -> GetCostEstimationRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getcostestimationresponsetypedef"></a>
+```python title="Definition"
+class GetCostEstimationRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## GetCostEstimationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import GetCostEstimationResponseTypeDef
+
+def get_value() -> GetCostEstimationResponseTypeDef:
+    return {
+        "ResourceCollection": ...,
+        "Status": ...,
+        "Costs": ...,
+        "TimeRange": ...,
+        "TotalCost": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCostEstimationResponseTypeDef(TypedDict):
+    ResourceCollection: CostEstimationResourceCollectionFilterTypeDef,  # (1)
+    Status: CostEstimationStatusType,  # (2)
+    Costs: List[ServiceResourceCostTypeDef],  # (3)
+    TimeRange: CostEstimationTimeRangeTypeDef,  # (4)
+    TotalCost: float,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ResourceCollection`:
-  [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
-- `Status`: [CostEstimationStatusType](./literals.md#costestimationstatustype)
-- `Costs`:
-  `List`\[[ServiceResourceCostTypeDef](./type_defs.md#serviceresourcecosttypedef)\]
-- `TimeRange`:
-  [CostEstimationTimeRangeTypeDef](./type_defs.md#costestimationtimerangetypedef)
-- `TotalCost`: `float`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef) 
+2. See [:material-code-brackets: CostEstimationStatusType](./literals.md#costestimationstatustype) 
+3. See [:material-code-braces: ServiceResourceCostTypeDef](./type_defs.md#serviceresourcecosttypedef) 
+4. See [:material-code-braces: CostEstimationTimeRangeTypeDef](./type_defs.md#costestimationtimerangetypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef
 
-<a id="getresourcecollectionrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef
 
+def get_value() -> GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef:
+    return {
+        "ResourceCollectionType": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef(TypedDict):
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import GetResourceCollectionRequestRequestTypeDef
+
+def get_value() -> GetResourceCollectionRequestRequestTypeDef:
+    return {
+        "ResourceCollectionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceCollectionRequestRequestTypeDef(TypedDict):
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `ResourceCollectionType`:
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getresourcecollectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
 ## GetResourceCollectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import GetResourceCollectionResponseTypeDef
+
+def get_value() -> GetResourceCollectionResponseTypeDef:
+    return {
+        "ResourceCollection": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceCollectionResponseTypeDef(TypedDict):
+    ResourceCollection: ResourceCollectionFilterTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceCollection`:
-  [ResourceCollectionFilterTypeDef](./type_defs.md#resourcecollectionfiltertypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="insightfeedbacktypedef"></a>
-
+1. See [:material-code-braces: ResourceCollectionFilterTypeDef](./type_defs.md#resourcecollectionfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InsightFeedbackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import InsightFeedbackTypeDef
+
+def get_value() -> InsightFeedbackTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightFeedbackTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Feedback: NotRequired[InsightFeedbackOptionType],  # (1)
+```
 
-- `Id`: `str`
-- `Feedback`:
-  [InsightFeedbackOptionType](./literals.md#insightfeedbackoptiontype)
-
-<a id="insighthealthtypedef"></a>
-
+1. See [:material-code-brackets: InsightFeedbackOptionType](./literals.md#insightfeedbackoptiontype) 
 ## InsightHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import InsightHealthTypeDef
+
+def get_value() -> InsightHealthTypeDef:
+    return {
+        "OpenProactiveInsights": ...,
+    }
 ```
 
-Optional fields:
-
-- `OpenProactiveInsights`: `int`
-- `OpenReactiveInsights`: `int`
-- `MeanTimeToRecoverInMilliseconds`: `int`
-
-<a id="insighttimerangetypedef"></a>
+```python title="Definition"
+class InsightHealthTypeDef(TypedDict):
+    OpenProactiveInsights: NotRequired[int],
+    OpenReactiveInsights: NotRequired[int],
+    MeanTimeToRecoverInMilliseconds: NotRequired[int],
+```
 
 ## InsightTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import InsightTimeRangeTypeDef
+
+def get_value() -> InsightTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InsightTimeRangeTypeDef(TypedDict):
+    StartTime: datetime,
+    EndTime: NotRequired[datetime],
+```
 
-- `StartTime`: `datetime`
+## ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef
 
-- `EndTime`: `datetime`
+def get_value() -> ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
 
-<a id="listanomaliesforinsightrequestrequesttypedef"></a>
+```python title="Definition"
+class ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef(TypedDict):
+    InsightId: str,
+    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
+    AccountId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAnomaliesForInsightRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightRequestRequestTypeDef
+
+def get_value() -> ListAnomaliesForInsightRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomaliesForInsightRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    StartTimeRange: NotRequired[StartTimeRangeTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    AccountId: NotRequired[str],
+```
 
-- `InsightId`: `str`
-
-Optional fields:
-
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `AccountId`: `str`
-
-<a id="listanomaliesforinsightresponsetypedef"></a>
-
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
 ## ListAnomaliesForInsightResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListAnomaliesForInsightResponseTypeDef
+
+def get_value() -> ListAnomaliesForInsightResponseTypeDef:
+    return {
+        "ProactiveAnomalies": ...,
+        "ReactiveAnomalies": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomaliesForInsightResponseTypeDef(TypedDict):
+    ProactiveAnomalies: List[ProactiveAnomalySummaryTypeDef],  # (1)
+    ReactiveAnomalies: List[ReactiveAnomalySummaryTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveAnomalies`:
-  `List`\[[ProactiveAnomalySummaryTypeDef](./type_defs.md#proactiveanomalysummarytypedef)\]
-- `ReactiveAnomalies`:
-  `List`\[[ReactiveAnomalySummaryTypeDef](./type_defs.md#reactiveanomalysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listeventsfilterstypedef"></a>
-
+1. See [:material-code-braces: ProactiveAnomalySummaryTypeDef](./type_defs.md#proactiveanomalysummarytypedef) 
+2. See [:material-code-braces: ReactiveAnomalySummaryTypeDef](./type_defs.md#reactiveanomalysummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventsFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListEventsFiltersTypeDef
+
+def get_value() -> ListEventsFiltersTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListEventsFiltersTypeDef(TypedDict):
+    InsightId: NotRequired[str],
+    EventTimeRange: NotRequired[EventTimeRangeTypeDef],  # (1)
+    EventClass: NotRequired[EventClassType],  # (2)
+    EventSource: NotRequired[str],
+    DataSource: NotRequired[EventDataSourceType],  # (3)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (4)
+```
 
-- `InsightId`: `str`
-- `EventTimeRange`:
-  [EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef)
-- `EventClass`: [EventClassType](./literals.md#eventclasstype)
-- `EventSource`: `str`
-- `DataSource`: [EventDataSourceType](./literals.md#eventdatasourcetype)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
+1. See [:material-code-braces: EventTimeRangeTypeDef](./type_defs.md#eventtimerangetypedef) 
+2. See [:material-code-brackets: EventClassType](./literals.md#eventclasstype) 
+3. See [:material-code-brackets: EventDataSourceType](./literals.md#eventdatasourcetype) 
+4. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+## ListEventsRequestListEventsPaginateTypeDef
 
-<a id="listeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListEventsRequestListEventsPaginateTypeDef
 
+def get_value() -> ListEventsRequestListEventsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventsRequestListEventsPaginateTypeDef(TypedDict):
+    Filters: ListEventsFiltersTypeDef,  # (1)
+    AccountId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListEventsRequestRequestTypeDef
+
+def get_value() -> ListEventsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventsRequestRequestTypeDef(TypedDict):
+    Filters: ListEventsFiltersTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    AccountId: NotRequired[str],
+```
 
-- `Filters`:
-  [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `AccountId`: `str`
-
-<a id="listeventsresponsetypedef"></a>
-
+1. See [:material-code-braces: ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef) 
 ## ListEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListEventsResponseTypeDef
+
+def get_value() -> ListEventsResponseTypeDef:
+    return {
+        "Events": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventsResponseTypeDef(TypedDict):
+    Events: List[EventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinsightsanystatusfiltertypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInsightsAnyStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsAnyStatusFilterTypeDef
+
+def get_value() -> ListInsightsAnyStatusFilterTypeDef:
+    return {
+        "Type": ...,
+        "StartTimeRange": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInsightsAnyStatusFilterTypeDef(TypedDict):
+    Type: InsightTypeType,  # (1)
+    StartTimeRange: StartTimeRangeTypeDef,  # (2)
+```
 
-- `Type`: [InsightTypeType](./literals.md#insighttypetype)
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
-
-<a id="listinsightsclosedstatusfiltertypedef"></a>
-
+1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+2. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
 ## ListInsightsClosedStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsClosedStatusFilterTypeDef
+
+def get_value() -> ListInsightsClosedStatusFilterTypeDef:
+    return {
+        "Type": ...,
+        "EndTimeRange": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInsightsClosedStatusFilterTypeDef(TypedDict):
+    Type: InsightTypeType,  # (1)
+    EndTimeRange: EndTimeRangeTypeDef,  # (2)
+```
 
-- `Type`: [InsightTypeType](./literals.md#insighttypetype)
-- `EndTimeRange`: [EndTimeRangeTypeDef](./type_defs.md#endtimerangetypedef)
-
-<a id="listinsightsongoingstatusfiltertypedef"></a>
-
+1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+2. See [:material-code-braces: EndTimeRangeTypeDef](./type_defs.md#endtimerangetypedef) 
 ## ListInsightsOngoingStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsOngoingStatusFilterTypeDef
+
+def get_value() -> ListInsightsOngoingStatusFilterTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInsightsOngoingStatusFilterTypeDef(TypedDict):
+    Type: InsightTypeType,  # (1)
+```
 
-- `Type`: [InsightTypeType](./literals.md#insighttypetype)
+1. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+## ListInsightsRequestListInsightsPaginateTypeDef
 
-<a id="listinsightsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListInsightsRequestListInsightsPaginateTypeDef
 
+def get_value() -> ListInsightsRequestListInsightsPaginateTypeDef:
+    return {
+        "StatusFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListInsightsRequestListInsightsPaginateTypeDef(TypedDict):
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInsightsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsRequestRequestTypeDef
+
+def get_value() -> ListInsightsRequestRequestTypeDef:
+    return {
+        "StatusFilter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInsightsRequestRequestTypeDef(TypedDict):
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listinsightsresponsetypedef"></a>
-
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
 ## ListInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsResponseTypeDef
+
+def get_value() -> ListInsightsResponseTypeDef:
+    return {
+        "ProactiveInsights": ...,
+        "ReactiveInsights": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInsightsResponseTypeDef(TypedDict):
+    ProactiveInsights: List[ProactiveInsightSummaryTypeDef],  # (1)
+    ReactiveInsights: List[ReactiveInsightSummaryTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveInsights`:
-  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
-- `ReactiveInsights`:
-  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinsightsstatusfiltertypedef"></a>
-
+1. See [:material-code-braces: ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef) 
+2. See [:material-code-braces: ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInsightsStatusFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListInsightsStatusFilterTypeDef
+
+def get_value() -> ListInsightsStatusFilterTypeDef:
+    return {
+        "Ongoing": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListInsightsStatusFilterTypeDef(TypedDict):
+    Ongoing: NotRequired[ListInsightsOngoingStatusFilterTypeDef],  # (1)
+    Closed: NotRequired[ListInsightsClosedStatusFilterTypeDef],  # (2)
+    Any: NotRequired[ListInsightsAnyStatusFilterTypeDef],  # (3)
+```
 
-- `Ongoing`:
-  [ListInsightsOngoingStatusFilterTypeDef](./type_defs.md#listinsightsongoingstatusfiltertypedef)
-- `Closed`:
-  [ListInsightsClosedStatusFilterTypeDef](./type_defs.md#listinsightsclosedstatusfiltertypedef)
-- `Any`:
-  [ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef)
+1. See [:material-code-braces: ListInsightsOngoingStatusFilterTypeDef](./type_defs.md#listinsightsongoingstatusfiltertypedef) 
+2. See [:material-code-braces: ListInsightsClosedStatusFilterTypeDef](./type_defs.md#listinsightsclosedstatusfiltertypedef) 
+3. See [:material-code-braces: ListInsightsAnyStatusFilterTypeDef](./type_defs.md#listinsightsanystatusfiltertypedef) 
+## ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef
 
-<a id="listnotificationchannelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef
 
+def get_value() -> ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNotificationChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsRequestRequestTypeDef
+
+def get_value() -> ListNotificationChannelsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listnotificationchannelsresponsetypedef"></a>
+```python title="Definition"
+class ListNotificationChannelsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## ListNotificationChannelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListNotificationChannelsResponseTypeDef
+
+def get_value() -> ListNotificationChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotificationChannelsResponseTypeDef(TypedDict):
+    Channels: List[NotificationChannelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channels`:
-  `List`\[[NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef
 
-<a id="listorganizationinsightsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef
 
+def get_value() -> ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef:
+    return {
+        "StatusFilter": ...,
+    }
+```
+
+```python title="Definition"
+class ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef(TypedDict):
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOrganizationInsightsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListOrganizationInsightsRequestRequestTypeDef
+
+def get_value() -> ListOrganizationInsightsRequestRequestTypeDef:
+    return {
+        "StatusFilter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOrganizationInsightsRequestRequestTypeDef(TypedDict):
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    AccountIds: NotRequired[Sequence[str]],
+    OrganizationalUnitIds: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+```
 
-- `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-
-<a id="listorganizationinsightsresponsetypedef"></a>
-
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
 ## ListOrganizationInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListOrganizationInsightsResponseTypeDef
+
+def get_value() -> ListOrganizationInsightsResponseTypeDef:
+    return {
+        "ProactiveInsights": ...,
+        "ReactiveInsights": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOrganizationInsightsResponseTypeDef(TypedDict):
+    ProactiveInsights: List[ProactiveOrganizationInsightSummaryTypeDef],  # (1)
+    ReactiveInsights: List[ReactiveOrganizationInsightSummaryTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveInsights`:
-  `List`\[[ProactiveOrganizationInsightSummaryTypeDef](./type_defs.md#proactiveorganizationinsightsummarytypedef)\]
-- `ReactiveInsights`:
-  `List`\[[ReactiveOrganizationInsightSummaryTypeDef](./type_defs.md#reactiveorganizationinsightsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ProactiveOrganizationInsightSummaryTypeDef](./type_defs.md#proactiveorganizationinsightsummarytypedef) 
+2. See [:material-code-braces: ReactiveOrganizationInsightSummaryTypeDef](./type_defs.md#reactiveorganizationinsightsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecommendationsRequestListRecommendationsPaginateTypeDef
 
-<a id="listrecommendationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import ListRecommendationsRequestListRecommendationsPaginateTypeDef
 
+def get_value() -> ListRecommendationsRequestListRecommendationsPaginateTypeDef:
+    return {
+        "InsightId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecommendationsRequestListRecommendationsPaginateTypeDef(TypedDict):
+    InsightId: str,
+    Locale: NotRequired[LocaleType],  # (1)
+    AccountId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListRecommendationsRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendationsRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    NextToken: NotRequired[str],
+    Locale: NotRequired[LocaleType],  # (1)
+    AccountId: NotRequired[str],
+```
 
-- `InsightId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `Locale`: [LocaleType](./literals.md#localetype)
-- `AccountId`: `str`
-
-<a id="listrecommendationsresponsetypedef"></a>
-
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
 ## ListRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ListRecommendationsResponseTypeDef
+
+def get_value() -> ListRecommendationsResponseTypeDef:
+    return {
+        "Recommendations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendationsResponseTypeDef(TypedDict):
+    Recommendations: List[RecommendationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Recommendations`:
-  `List`\[[RecommendationTypeDef](./type_defs.md#recommendationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="notificationchannelconfigtypedef"></a>
-
+1. See [:material-code-braces: RecommendationTypeDef](./type_defs.md#recommendationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NotificationChannelConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import NotificationChannelConfigTypeDef
+
+def get_value() -> NotificationChannelConfigTypeDef:
+    return {
+        "Sns": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationChannelConfigTypeDef(TypedDict):
+    Sns: SnsChannelConfigTypeDef,  # (1)
+```
 
-- `Sns`: [SnsChannelConfigTypeDef](./type_defs.md#snschannelconfigtypedef)
-
-<a id="notificationchanneltypedef"></a>
-
+1. See [:material-code-braces: SnsChannelConfigTypeDef](./type_defs.md#snschannelconfigtypedef) 
 ## NotificationChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import NotificationChannelTypeDef
+
+def get_value() -> NotificationChannelTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationChannelTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Config: NotRequired[NotificationChannelConfigTypeDef],  # (1)
+```
 
-- `Id`: `str`
-- `Config`:
-  [NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef)
-
-<a id="opscenterintegrationconfigtypedef"></a>
-
+1. See [:material-code-braces: NotificationChannelConfigTypeDef](./type_defs.md#notificationchannelconfigtypedef) 
 ## OpsCenterIntegrationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationConfigTypeDef
+
+def get_value() -> OpsCenterIntegrationConfigTypeDef:
+    return {
+        "OptInStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsCenterIntegrationConfigTypeDef(TypedDict):
+    OptInStatus: NotRequired[OptInStatusType],  # (1)
+```
 
-- `OptInStatus`: [OptInStatusType](./literals.md#optinstatustype)
-
-<a id="opscenterintegrationtypedef"></a>
-
+1. See [:material-code-brackets: OptInStatusType](./literals.md#optinstatustype) 
 ## OpsCenterIntegrationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import OpsCenterIntegrationTypeDef
+
+def get_value() -> OpsCenterIntegrationTypeDef:
+    return {
+        "OptInStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OpsCenterIntegrationTypeDef(TypedDict):
+    OptInStatus: NotRequired[OptInStatusType],  # (1)
+```
 
-- `OptInStatus`: [OptInStatusType](./literals.md#optinstatustype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OptInStatusType](./literals.md#optinstatustype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="performanceinsightsmetricdimensiongrouptypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PerformanceInsightsMetricDimensionGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricDimensionGroupTypeDef
+
+def get_value() -> PerformanceInsightsMetricDimensionGroupTypeDef:
+    return {
+        "Group": ...,
+    }
 ```
 
-Optional fields:
-
-- `Group`: `str`
-- `Dimensions`: `List`\[`str`\]
-- `Limit`: `int`
-
-<a id="performanceinsightsmetricquerytypedef"></a>
+```python title="Definition"
+class PerformanceInsightsMetricDimensionGroupTypeDef(TypedDict):
+    Group: NotRequired[str],
+    Dimensions: NotRequired[List[str]],
+    Limit: NotRequired[int],
+```
 
 ## PerformanceInsightsMetricQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricQueryTypeDef
+
+def get_value() -> PerformanceInsightsMetricQueryTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerformanceInsightsMetricQueryTypeDef(TypedDict):
+    Metric: NotRequired[str],
+    GroupBy: NotRequired[PerformanceInsightsMetricDimensionGroupTypeDef],  # (1)
+    Filter: NotRequired[Dict[str, str]],
+```
 
-- `Metric`: `str`
-- `GroupBy`:
-  [PerformanceInsightsMetricDimensionGroupTypeDef](./type_defs.md#performanceinsightsmetricdimensiongrouptypedef)
-- `Filter`: `Dict`\[`str`, `str`\]
-
-<a id="performanceinsightsmetricsdetailtypedef"></a>
-
+1. See [:material-code-braces: PerformanceInsightsMetricDimensionGroupTypeDef](./type_defs.md#performanceinsightsmetricdimensiongrouptypedef) 
 ## PerformanceInsightsMetricsDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsMetricsDetailTypeDef
+
+def get_value() -> PerformanceInsightsMetricsDetailTypeDef:
+    return {
+        "MetricDisplayName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerformanceInsightsMetricsDetailTypeDef(TypedDict):
+    MetricDisplayName: NotRequired[str],
+    Unit: NotRequired[str],
+    MetricQuery: NotRequired[PerformanceInsightsMetricQueryTypeDef],  # (1)
+    ReferenceData: NotRequired[List[PerformanceInsightsReferenceDataTypeDef]],  # (2)
+    StatsAtAnomaly: NotRequired[List[PerformanceInsightsStatTypeDef]],  # (3)
+    StatsAtBaseline: NotRequired[List[PerformanceInsightsStatTypeDef]],  # (3)
+```
 
-- `MetricDisplayName`: `str`
-- `Unit`: `str`
-- `MetricQuery`:
-  [PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef)
-- `ReferenceData`:
-  `List`\[[PerformanceInsightsReferenceDataTypeDef](./type_defs.md#performanceinsightsreferencedatatypedef)\]
-- `StatsAtAnomaly`:
-  `List`\[[PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef)\]
-- `StatsAtBaseline`:
-  `List`\[[PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef)\]
-
-<a id="performanceinsightsreferencecomparisonvaluestypedef"></a>
-
+1. See [:material-code-braces: PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef) 
+2. See [:material-code-braces: PerformanceInsightsReferenceDataTypeDef](./type_defs.md#performanceinsightsreferencedatatypedef) 
+3. See [:material-code-braces: PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef) 
+4. See [:material-code-braces: PerformanceInsightsStatTypeDef](./type_defs.md#performanceinsightsstattypedef) 
 ## PerformanceInsightsReferenceComparisonValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceComparisonValuesTypeDef
+
+def get_value() -> PerformanceInsightsReferenceComparisonValuesTypeDef:
+    return {
+        "ReferenceScalar": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerformanceInsightsReferenceComparisonValuesTypeDef(TypedDict):
+    ReferenceScalar: NotRequired[PerformanceInsightsReferenceScalarTypeDef],  # (1)
+    ReferenceMetric: NotRequired[PerformanceInsightsReferenceMetricTypeDef],  # (2)
+```
 
-- `ReferenceScalar`:
-  [PerformanceInsightsReferenceScalarTypeDef](./type_defs.md#performanceinsightsreferencescalartypedef)
-- `ReferenceMetric`:
-  [PerformanceInsightsReferenceMetricTypeDef](./type_defs.md#performanceinsightsreferencemetrictypedef)
-
-<a id="performanceinsightsreferencedatatypedef"></a>
-
+1. See [:material-code-braces: PerformanceInsightsReferenceScalarTypeDef](./type_defs.md#performanceinsightsreferencescalartypedef) 
+2. See [:material-code-braces: PerformanceInsightsReferenceMetricTypeDef](./type_defs.md#performanceinsightsreferencemetrictypedef) 
 ## PerformanceInsightsReferenceDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceDataTypeDef
+
+def get_value() -> PerformanceInsightsReferenceDataTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerformanceInsightsReferenceDataTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ComparisonValues: NotRequired[PerformanceInsightsReferenceComparisonValuesTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `ComparisonValues`:
-  [PerformanceInsightsReferenceComparisonValuesTypeDef](./type_defs.md#performanceinsightsreferencecomparisonvaluestypedef)
-
-<a id="performanceinsightsreferencemetrictypedef"></a>
-
+1. See [:material-code-braces: PerformanceInsightsReferenceComparisonValuesTypeDef](./type_defs.md#performanceinsightsreferencecomparisonvaluestypedef) 
 ## PerformanceInsightsReferenceMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceMetricTypeDef
+
+def get_value() -> PerformanceInsightsReferenceMetricTypeDef:
+    return {
+        "MetricQuery": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PerformanceInsightsReferenceMetricTypeDef(TypedDict):
+    MetricQuery: NotRequired[PerformanceInsightsMetricQueryTypeDef],  # (1)
+```
 
-- `MetricQuery`:
-  [PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef)
-
-<a id="performanceinsightsreferencescalartypedef"></a>
-
+1. See [:material-code-braces: PerformanceInsightsMetricQueryTypeDef](./type_defs.md#performanceinsightsmetricquerytypedef) 
 ## PerformanceInsightsReferenceScalarTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsReferenceScalarTypeDef
+
+def get_value() -> PerformanceInsightsReferenceScalarTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `float`
-
-<a id="performanceinsightsstattypedef"></a>
+```python title="Definition"
+class PerformanceInsightsReferenceScalarTypeDef(TypedDict):
+    Value: NotRequired[float],
+```
 
 ## PerformanceInsightsStatTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PerformanceInsightsStatTypeDef
+
+def get_value() -> PerformanceInsightsStatTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-- `Value`: `float`
-
-<a id="predictiontimerangetypedef"></a>
+```python title="Definition"
+class PerformanceInsightsStatTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Value: NotRequired[float],
+```
 
 ## PredictionTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PredictionTimeRangeTypeDef
+
+def get_value() -> PredictionTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `datetime`
-
-Optional fields:
-
-- `EndTime`: `datetime`
-
-<a id="proactiveanomalysummarytypedef"></a>
+```python title="Definition"
+class PredictionTimeRangeTypeDef(TypedDict):
+    StartTime: datetime,
+    EndTime: NotRequired[datetime],
+```
 
 ## ProactiveAnomalySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ProactiveAnomalySummaryTypeDef
+
+def get_value() -> ProactiveAnomalySummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProactiveAnomalySummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Severity: NotRequired[AnomalySeverityType],  # (1)
+    Status: NotRequired[AnomalyStatusType],  # (2)
+    UpdateTime: NotRequired[datetime],
+    AnomalyTimeRange: NotRequired[AnomalyTimeRangeTypeDef],  # (3)
+    AnomalyReportedTimeRange: NotRequired[AnomalyReportedTimeRangeTypeDef],  # (4)
+    PredictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (5)
+    SourceDetails: NotRequired[AnomalySourceDetailsTypeDef],  # (6)
+    AssociatedInsightId: NotRequired[str],
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (7)
+    Limit: NotRequired[float],
+    SourceMetadata: NotRequired[AnomalySourceMetadataTypeDef],  # (8)
+    AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (9)
+```
 
-- `Id`: `str`
-- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
-- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
-- `UpdateTime`: `datetime`
-- `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
-- `AnomalyReportedTimeRange`:
-  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
-- `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
-- `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
-- `AssociatedInsightId`: `str`
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `Limit`: `float`
-- `SourceMetadata`:
-  [AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef)
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
-
-<a id="proactiveanomalytypedef"></a>
-
+1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 
+2. See [:material-code-brackets: AnomalyStatusType](./literals.md#anomalystatustype) 
+3. See [:material-code-braces: AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef) 
+4. See [:material-code-braces: AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef) 
+5. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
+6. See [:material-code-braces: AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef) 
+7. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+8. See [:material-code-braces: AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef) 
+9. See [:material-code-braces: AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef) 
 ## ProactiveAnomalyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ProactiveAnomalyTypeDef
+
+def get_value() -> ProactiveAnomalyTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProactiveAnomalyTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Severity: NotRequired[AnomalySeverityType],  # (1)
+    Status: NotRequired[AnomalyStatusType],  # (2)
+    UpdateTime: NotRequired[datetime],
+    AnomalyTimeRange: NotRequired[AnomalyTimeRangeTypeDef],  # (3)
+    AnomalyReportedTimeRange: NotRequired[AnomalyReportedTimeRangeTypeDef],  # (4)
+    PredictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (5)
+    SourceDetails: NotRequired[AnomalySourceDetailsTypeDef],  # (6)
+    AssociatedInsightId: NotRequired[str],
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (7)
+    Limit: NotRequired[float],
+    SourceMetadata: NotRequired[AnomalySourceMetadataTypeDef],  # (8)
+    AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (9)
+```
 
-- `Id`: `str`
-- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
-- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
-- `UpdateTime`: `datetime`
-- `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
-- `AnomalyReportedTimeRange`:
-  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
-- `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
-- `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
-- `AssociatedInsightId`: `str`
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `Limit`: `float`
-- `SourceMetadata`:
-  [AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef)
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
-
-<a id="proactiveinsightsummarytypedef"></a>
-
+1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 
+2. See [:material-code-brackets: AnomalyStatusType](./literals.md#anomalystatustype) 
+3. See [:material-code-braces: AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef) 
+4. See [:material-code-braces: AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef) 
+5. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
+6. See [:material-code-braces: AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef) 
+7. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+8. See [:material-code-braces: AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef) 
+9. See [:material-code-braces: AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef) 
 ## ProactiveInsightSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ProactiveInsightSummaryTypeDef
+
+def get_value() -> ProactiveInsightSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProactiveInsightSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    PredictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (4)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (5)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (6)
+    AssociatedResourceArns: NotRequired[List[str]],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-- `AssociatedResourceArns`: `List`\[`str`\]
-
-<a id="proactiveinsighttypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
+5. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+6. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## ProactiveInsightTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ProactiveInsightTypeDef
+
+def get_value() -> ProactiveInsightTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProactiveInsightTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    PredictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (4)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (5)
+    SsmOpsItemId: NotRequired[str],
+    Description: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `SsmOpsItemId`: `str`
-- `Description`: `str`
-
-<a id="proactiveorganizationinsightsummarytypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
+5. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
 ## ProactiveOrganizationInsightSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ProactiveOrganizationInsightSummaryTypeDef
+
+def get_value() -> ProactiveOrganizationInsightSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProactiveOrganizationInsightSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    AccountId: NotRequired[str],
+    OrganizationalUnitId: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    PredictionTimeRange: NotRequired[PredictionTimeRangeTypeDef],  # (4)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (5)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (6)
+```
 
-- `Id`: `str`
-- `AccountId`: `str`
-- `OrganizationalUnitId`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `PredictionTimeRange`:
-  [PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-
-<a id="putfeedbackrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: PredictionTimeRangeTypeDef](./type_defs.md#predictiontimerangetypedef) 
+5. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+6. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## PutFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import PutFeedbackRequestRequestTypeDef
+
+def get_value() -> PutFeedbackRequestRequestTypeDef:
+    return {
+        "InsightFeedback": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutFeedbackRequestRequestTypeDef(TypedDict):
+    InsightFeedback: NotRequired[InsightFeedbackTypeDef],  # (1)
+```
 
-- `InsightFeedback`:
-  [InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef)
-
-<a id="reactiveanomalysummarytypedef"></a>
-
+1. See [:material-code-braces: InsightFeedbackTypeDef](./type_defs.md#insightfeedbacktypedef) 
 ## ReactiveAnomalySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ReactiveAnomalySummaryTypeDef
+
+def get_value() -> ReactiveAnomalySummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReactiveAnomalySummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Severity: NotRequired[AnomalySeverityType],  # (1)
+    Status: NotRequired[AnomalyStatusType],  # (2)
+    AnomalyTimeRange: NotRequired[AnomalyTimeRangeTypeDef],  # (3)
+    AnomalyReportedTimeRange: NotRequired[AnomalyReportedTimeRangeTypeDef],  # (4)
+    SourceDetails: NotRequired[AnomalySourceDetailsTypeDef],  # (5)
+    AssociatedInsightId: NotRequired[str],
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (6)
+    Type: NotRequired[AnomalyTypeType],  # (7)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CausalAnomalyId: NotRequired[str],
+    AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (8)
+```
 
-- `Id`: `str`
-- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
-- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
-- `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
-- `AnomalyReportedTimeRange`:
-  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
-- `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
-- `AssociatedInsightId`: `str`
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `Type`: [AnomalyTypeType](./literals.md#anomalytypetype)
-- `Name`: `str`
-- `Description`: `str`
-- `CausalAnomalyId`: `str`
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
-
-<a id="reactiveanomalytypedef"></a>
-
+1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 
+2. See [:material-code-brackets: AnomalyStatusType](./literals.md#anomalystatustype) 
+3. See [:material-code-braces: AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef) 
+4. See [:material-code-braces: AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef) 
+5. See [:material-code-braces: AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef) 
+6. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+7. See [:material-code-brackets: AnomalyTypeType](./literals.md#anomalytypetype) 
+8. See [:material-code-braces: AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef) 
 ## ReactiveAnomalyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ReactiveAnomalyTypeDef
+
+def get_value() -> ReactiveAnomalyTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReactiveAnomalyTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Severity: NotRequired[AnomalySeverityType],  # (1)
+    Status: NotRequired[AnomalyStatusType],  # (2)
+    AnomalyTimeRange: NotRequired[AnomalyTimeRangeTypeDef],  # (3)
+    AnomalyReportedTimeRange: NotRequired[AnomalyReportedTimeRangeTypeDef],  # (4)
+    SourceDetails: NotRequired[AnomalySourceDetailsTypeDef],  # (5)
+    AssociatedInsightId: NotRequired[str],
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (6)
+    Type: NotRequired[AnomalyTypeType],  # (7)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    CausalAnomalyId: NotRequired[str],
+    AnomalyResources: NotRequired[List[AnomalyResourceTypeDef]],  # (8)
+```
 
-- `Id`: `str`
-- `Severity`: [AnomalySeverityType](./literals.md#anomalyseveritytype)
-- `Status`: [AnomalyStatusType](./literals.md#anomalystatustype)
-- `AnomalyTimeRange`:
-  [AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef)
-- `AnomalyReportedTimeRange`:
-  [AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef)
-- `SourceDetails`:
-  [AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef)
-- `AssociatedInsightId`: `str`
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `Type`: [AnomalyTypeType](./literals.md#anomalytypetype)
-- `Name`: `str`
-- `Description`: `str`
-- `CausalAnomalyId`: `str`
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
-
-<a id="reactiveinsightsummarytypedef"></a>
-
+1. See [:material-code-brackets: AnomalySeverityType](./literals.md#anomalyseveritytype) 
+2. See [:material-code-brackets: AnomalyStatusType](./literals.md#anomalystatustype) 
+3. See [:material-code-braces: AnomalyTimeRangeTypeDef](./type_defs.md#anomalytimerangetypedef) 
+4. See [:material-code-braces: AnomalyReportedTimeRangeTypeDef](./type_defs.md#anomalyreportedtimerangetypedef) 
+5. See [:material-code-braces: AnomalySourceDetailsTypeDef](./type_defs.md#anomalysourcedetailstypedef) 
+6. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+7. See [:material-code-brackets: AnomalyTypeType](./literals.md#anomalytypetype) 
+8. See [:material-code-braces: AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef) 
 ## ReactiveInsightSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ReactiveInsightSummaryTypeDef
+
+def get_value() -> ReactiveInsightSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReactiveInsightSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (4)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (5)
+    AssociatedResourceArns: NotRequired[List[str]],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-- `AssociatedResourceArns`: `List`\[`str`\]
-
-<a id="reactiveinsighttypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+5. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## ReactiveInsightTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ReactiveInsightTypeDef
+
+def get_value() -> ReactiveInsightTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReactiveInsightTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (4)
+    SsmOpsItemId: NotRequired[str],
+    Description: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `SsmOpsItemId`: `str`
-- `Description`: `str`
-
-<a id="reactiveorganizationinsightsummarytypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
 ## ReactiveOrganizationInsightSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ReactiveOrganizationInsightSummaryTypeDef
+
+def get_value() -> ReactiveOrganizationInsightSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReactiveOrganizationInsightSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    AccountId: NotRequired[str],
+    OrganizationalUnitId: NotRequired[str],
+    Name: NotRequired[str],
+    Severity: NotRequired[InsightSeverityType],  # (1)
+    Status: NotRequired[InsightStatusType],  # (2)
+    InsightTimeRange: NotRequired[InsightTimeRangeTypeDef],  # (3)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (4)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (5)
+```
 
-- `Id`: `str`
-- `AccountId`: `str`
-- `OrganizationalUnitId`: `str`
-- `Name`: `str`
-- `Severity`: [InsightSeverityType](./literals.md#insightseveritytype)
-- `Status`: [InsightStatusType](./literals.md#insightstatustype)
-- `InsightTimeRange`:
-  [InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef)
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-
-<a id="recommendationrelatedanomalyresourcetypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: InsightTimeRangeTypeDef](./type_defs.md#insighttimerangetypedef) 
+4. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+5. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## RecommendationRelatedAnomalyResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedAnomalyResourceTypeDef
+
+def get_value() -> RecommendationRelatedAnomalyResourceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Type`: `str`
-
-<a id="recommendationrelatedanomalysourcedetailtypedef"></a>
+```python title="Definition"
+class RecommendationRelatedAnomalyResourceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## RecommendationRelatedAnomalySourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedAnomalySourceDetailTypeDef
+
+def get_value() -> RecommendationRelatedAnomalySourceDetailTypeDef:
+    return {
+        "CloudWatchMetrics": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommendationRelatedAnomalySourceDetailTypeDef(TypedDict):
+    CloudWatchMetrics: NotRequired[List[RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef]],  # (1)
+```
 
-- `CloudWatchMetrics`:
-  `List`\[[RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef](./type_defs.md#recommendationrelatedcloudwatchmetricssourcedetailtypedef)\]
-
-<a id="recommendationrelatedanomalytypedef"></a>
-
+1. See [:material-code-braces: RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef](./type_defs.md#recommendationrelatedcloudwatchmetricssourcedetailtypedef) 
 ## RecommendationRelatedAnomalyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedAnomalyTypeDef
+
+def get_value() -> RecommendationRelatedAnomalyTypeDef:
+    return {
+        "Resources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommendationRelatedAnomalyTypeDef(TypedDict):
+    Resources: NotRequired[List[RecommendationRelatedAnomalyResourceTypeDef]],  # (1)
+    SourceDetails: NotRequired[List[RecommendationRelatedAnomalySourceDetailTypeDef]],  # (2)
+    AnomalyId: NotRequired[str],
+```
 
-- `Resources`:
-  `List`\[[RecommendationRelatedAnomalyResourceTypeDef](./type_defs.md#recommendationrelatedanomalyresourcetypedef)\]
-- `SourceDetails`:
-  `List`\[[RecommendationRelatedAnomalySourceDetailTypeDef](./type_defs.md#recommendationrelatedanomalysourcedetailtypedef)\]
-- `AnomalyId`: `str`
-
-<a id="recommendationrelatedcloudwatchmetricssourcedetailtypedef"></a>
-
+1. See [:material-code-braces: RecommendationRelatedAnomalyResourceTypeDef](./type_defs.md#recommendationrelatedanomalyresourcetypedef) 
+2. See [:material-code-braces: RecommendationRelatedAnomalySourceDetailTypeDef](./type_defs.md#recommendationrelatedanomalysourcedetailtypedef) 
 ## RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef
+
+def get_value() -> RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef:
+    return {
+        "MetricName": ...,
+    }
 ```
 
-Optional fields:
-
-- `MetricName`: `str`
-- `Namespace`: `str`
-
-<a id="recommendationrelatedeventresourcetypedef"></a>
+```python title="Definition"
+class RecommendationRelatedCloudWatchMetricsSourceDetailTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    Namespace: NotRequired[str],
+```
 
 ## RecommendationRelatedEventResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedEventResourceTypeDef
+
+def get_value() -> RecommendationRelatedEventResourceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Type`: `str`
-
-<a id="recommendationrelatedeventtypedef"></a>
+```python title="Definition"
+class RecommendationRelatedEventResourceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## RecommendationRelatedEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationRelatedEventTypeDef
+
+def get_value() -> RecommendationRelatedEventTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommendationRelatedEventTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Resources: NotRequired[List[RecommendationRelatedEventResourceTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-- `Resources`:
-  `List`\[[RecommendationRelatedEventResourceTypeDef](./type_defs.md#recommendationrelatedeventresourcetypedef)\]
-
-<a id="recommendationtypedef"></a>
-
+1. See [:material-code-braces: RecommendationRelatedEventResourceTypeDef](./type_defs.md#recommendationrelatedeventresourcetypedef) 
 ## RecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RecommendationTypeDef
+
+def get_value() -> RecommendationTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommendationTypeDef(TypedDict):
+    Description: NotRequired[str],
+    Link: NotRequired[str],
+    Name: NotRequired[str],
+    Reason: NotRequired[str],
+    RelatedEvents: NotRequired[List[RecommendationRelatedEventTypeDef]],  # (1)
+    RelatedAnomalies: NotRequired[List[RecommendationRelatedAnomalyTypeDef]],  # (2)
+    Category: NotRequired[str],
+```
 
-- `Description`: `str`
-- `Link`: `str`
-- `Name`: `str`
-- `Reason`: `str`
-- `RelatedEvents`:
-  `List`\[[RecommendationRelatedEventTypeDef](./type_defs.md#recommendationrelatedeventtypedef)\]
-- `RelatedAnomalies`:
-  `List`\[[RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef)\]
-- `Category`: `str`
-
-<a id="removenotificationchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendationRelatedEventTypeDef](./type_defs.md#recommendationrelatedeventtypedef) 
+2. See [:material-code-braces: RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef) 
 ## RemoveNotificationChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import RemoveNotificationChannelRequestRequestTypeDef
+
+def get_value() -> RemoveNotificationChannelRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="resourcecollectionfiltertypedef"></a>
+```python title="Definition"
+class RemoveNotificationChannelRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## ResourceCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ResourceCollectionFilterTypeDef
+
+def get_value() -> ResourceCollectionFilterTypeDef:
+    return {
+        "CloudFormation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceCollectionFilterTypeDef(TypedDict):
+    CloudFormation: NotRequired[CloudFormationCollectionFilterTypeDef],  # (1)
+    Tags: NotRequired[List[TagCollectionFilterTypeDef]],  # (2)
+```
 
-- `CloudFormation`:
-  [CloudFormationCollectionFilterTypeDef](./type_defs.md#cloudformationcollectionfiltertypedef)
-- `Tags`:
-  `List`\[[TagCollectionFilterTypeDef](./type_defs.md#tagcollectionfiltertypedef)\]
-
-<a id="resourcecollectiontypedef"></a>
-
+1. See [:material-code-braces: CloudFormationCollectionFilterTypeDef](./type_defs.md#cloudformationcollectionfiltertypedef) 
+2. See [:material-code-braces: TagCollectionFilterTypeDef](./type_defs.md#tagcollectionfiltertypedef) 
 ## ResourceCollectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ResourceCollectionTypeDef
+
+def get_value() -> ResourceCollectionTypeDef:
+    return {
+        "CloudFormation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceCollectionTypeDef(TypedDict):
+    CloudFormation: NotRequired[CloudFormationCollectionTypeDef],  # (1)
+    Tags: NotRequired[List[TagCollectionTypeDef]],  # (2)
+```
 
-- `CloudFormation`:
-  [CloudFormationCollectionTypeDef](./type_defs.md#cloudformationcollectiontypedef)
-- `Tags`: `List`\[[TagCollectionTypeDef](./type_defs.md#tagcollectiontypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: CloudFormationCollectionTypeDef](./type_defs.md#cloudformationcollectiontypedef) 
+2. See [:material-code-braces: TagCollectionTypeDef](./type_defs.md#tagcollectiontypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="searchinsightsfilterstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SearchInsightsFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchInsightsFiltersTypeDef
+
+def get_value() -> SearchInsightsFiltersTypeDef:
+    return {
+        "Severities": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchInsightsFiltersTypeDef(TypedDict):
+    Severities: NotRequired[Sequence[InsightSeverityType]],  # (1)
+    Statuses: NotRequired[Sequence[InsightStatusType]],  # (2)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (3)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (4)
+```
 
-- `Severities`:
-  `Sequence`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
-- `Statuses`:
-  `Sequence`\[[InsightStatusType](./literals.md#insightstatustype)\]
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-
-<a id="searchinsightsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+4. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## SearchInsightsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchInsightsRequestRequestTypeDef
+
+def get_value() -> SearchInsightsRequestRequestTypeDef:
+    return {
+        "StartTimeRange": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchInsightsRequestRequestTypeDef(TypedDict):
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: NotRequired[SearchInsightsFiltersTypeDef],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
-- `Type`: [InsightTypeType](./literals.md#insighttypetype)
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef) 
+## SearchInsightsRequestSearchInsightsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import SearchInsightsRequestSearchInsightsPaginateTypeDef
 
-- `Filters`:
-  [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+def get_value() -> SearchInsightsRequestSearchInsightsPaginateTypeDef:
+    return {
+        "StartTimeRange": ...,
+        "Type": ...,
+    }
+```
 
-<a id="searchinsightsresponsetypedef"></a>
+```python title="Definition"
+class SearchInsightsRequestSearchInsightsPaginateTypeDef(TypedDict):
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: NotRequired[SearchInsightsFiltersTypeDef],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
 
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchInsightsResponseTypeDef
+
+def get_value() -> SearchInsightsResponseTypeDef:
+    return {
+        "ProactiveInsights": ...,
+        "ReactiveInsights": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchInsightsResponseTypeDef(TypedDict):
+    ProactiveInsights: List[ProactiveInsightSummaryTypeDef],  # (1)
+    ReactiveInsights: List[ReactiveInsightSummaryTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveInsights`:
-  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
-- `ReactiveInsights`:
-  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="searchorganizationinsightsfilterstypedef"></a>
-
+1. See [:material-code-braces: ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef) 
+2. See [:material-code-braces: ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SearchOrganizationInsightsFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsFiltersTypeDef
+
+def get_value() -> SearchOrganizationInsightsFiltersTypeDef:
+    return {
+        "Severities": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchOrganizationInsightsFiltersTypeDef(TypedDict):
+    Severities: NotRequired[Sequence[InsightSeverityType]],  # (1)
+    Statuses: NotRequired[Sequence[InsightStatusType]],  # (2)
+    ResourceCollection: NotRequired[ResourceCollectionTypeDef],  # (3)
+    ServiceCollection: NotRequired[ServiceCollectionTypeDef],  # (4)
+```
 
-- `Severities`:
-  `Sequence`\[[InsightSeverityType](./literals.md#insightseveritytype)\]
-- `Statuses`:
-  `Sequence`\[[InsightStatusType](./literals.md#insightstatustype)\]
-- `ResourceCollection`:
-  [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
-- `ServiceCollection`:
-  [ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef)
-
-<a id="searchorganizationinsightsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InsightSeverityType](./literals.md#insightseveritytype) 
+2. See [:material-code-brackets: InsightStatusType](./literals.md#insightstatustype) 
+3. See [:material-code-braces: ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef) 
+4. See [:material-code-braces: ServiceCollectionTypeDef](./type_defs.md#servicecollectiontypedef) 
 ## SearchOrganizationInsightsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsRequestRequestTypeDef
+
+def get_value() -> SearchOrganizationInsightsRequestRequestTypeDef:
+    return {
+        "AccountIds": ...,
+        "StartTimeRange": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchOrganizationInsightsRequestRequestTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: NotRequired[SearchOrganizationInsightsFiltersTypeDef],  # (3)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AccountIds`: `Sequence`\[`str`\]
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
-- `Type`: [InsightTypeType](./literals.md#insighttypetype)
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef) 
+## SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef
 
-- `Filters`:
-  [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+def get_value() -> SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef:
+    return {
+        "AccountIds": ...,
+        "StartTimeRange": ...,
+        "Type": ...,
+    }
+```
 
-<a id="searchorganizationinsightsresponsetypedef"></a>
+```python title="Definition"
+class SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef(TypedDict):
+    AccountIds: Sequence[str],
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: NotRequired[SearchOrganizationInsightsFiltersTypeDef],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
 
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchOrganizationInsightsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SearchOrganizationInsightsResponseTypeDef
+
+def get_value() -> SearchOrganizationInsightsResponseTypeDef:
+    return {
+        "ProactiveInsights": ...,
+        "ReactiveInsights": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchOrganizationInsightsResponseTypeDef(TypedDict):
+    ProactiveInsights: List[ProactiveInsightSummaryTypeDef],  # (1)
+    ReactiveInsights: List[ReactiveInsightSummaryTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ProactiveInsights`:
-  `List`\[[ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef)\]
-- `ReactiveInsights`:
-  `List`\[[ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servicecollectiontypedef"></a>
-
+1. See [:material-code-braces: ProactiveInsightSummaryTypeDef](./type_defs.md#proactiveinsightsummarytypedef) 
+2. See [:material-code-braces: ReactiveInsightSummaryTypeDef](./type_defs.md#reactiveinsightsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceCollectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ServiceCollectionTypeDef
+
+def get_value() -> ServiceCollectionTypeDef:
+    return {
+        "ServiceNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceCollectionTypeDef(TypedDict):
+    ServiceNames: NotRequired[List[ServiceNameType]],  # (1)
+```
 
-- `ServiceNames`: `List`\[[ServiceNameType](./literals.md#servicenametype)\]
-
-<a id="servicehealthtypedef"></a>
-
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
 ## ServiceHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ServiceHealthTypeDef
+
+def get_value() -> ServiceHealthTypeDef:
+    return {
+        "ServiceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceHealthTypeDef(TypedDict):
+    ServiceName: NotRequired[ServiceNameType],  # (1)
+    Insight: NotRequired[ServiceInsightHealthTypeDef],  # (2)
+```
 
-- `ServiceName`: [ServiceNameType](./literals.md#servicenametype)
-- `Insight`:
-  [ServiceInsightHealthTypeDef](./type_defs.md#serviceinsighthealthtypedef)
-
-<a id="serviceinsighthealthtypedef"></a>
-
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: ServiceInsightHealthTypeDef](./type_defs.md#serviceinsighthealthtypedef) 
 ## ServiceInsightHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ServiceInsightHealthTypeDef
+
+def get_value() -> ServiceInsightHealthTypeDef:
+    return {
+        "OpenProactiveInsights": ...,
+    }
 ```
 
-Optional fields:
-
-- `OpenProactiveInsights`: `int`
-- `OpenReactiveInsights`: `int`
-
-<a id="serviceintegrationconfigtypedef"></a>
+```python title="Definition"
+class ServiceInsightHealthTypeDef(TypedDict):
+    OpenProactiveInsights: NotRequired[int],
+    OpenReactiveInsights: NotRequired[int],
+```
 
 ## ServiceIntegrationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ServiceIntegrationConfigTypeDef
+
+def get_value() -> ServiceIntegrationConfigTypeDef:
+    return {
+        "OpsCenter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceIntegrationConfigTypeDef(TypedDict):
+    OpsCenter: NotRequired[OpsCenterIntegrationTypeDef],  # (1)
+```
 
-- `OpsCenter`:
-  [OpsCenterIntegrationTypeDef](./type_defs.md#opscenterintegrationtypedef)
-
-<a id="serviceresourcecosttypedef"></a>
-
+1. See [:material-code-braces: OpsCenterIntegrationTypeDef](./type_defs.md#opscenterintegrationtypedef) 
 ## ServiceResourceCostTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import ServiceResourceCostTypeDef
+
+def get_value() -> ServiceResourceCostTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceResourceCostTypeDef(TypedDict):
+    Type: NotRequired[str],
+    State: NotRequired[CostEstimationServiceResourceStateType],  # (1)
+    Count: NotRequired[int],
+    UnitCost: NotRequired[float],
+    Cost: NotRequired[float],
+```
 
-- `Type`: `str`
-- `State`:
-  [CostEstimationServiceResourceStateType](./literals.md#costestimationserviceresourcestatetype)
-- `Count`: `int`
-- `UnitCost`: `float`
-- `Cost`: `float`
-
-<a id="snschannelconfigtypedef"></a>
-
+1. See [:material-code-brackets: CostEstimationServiceResourceStateType](./literals.md#costestimationserviceresourcestatetype) 
 ## SnsChannelConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import SnsChannelConfigTypeDef
+
+def get_value() -> SnsChannelConfigTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TopicArn`: `str`
-
-<a id="startcostestimationrequestrequesttypedef"></a>
+```python title="Definition"
+class SnsChannelConfigTypeDef(TypedDict):
+    TopicArn: NotRequired[str],
+```
 
 ## StartCostEstimationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import StartCostEstimationRequestRequestTypeDef
+
+def get_value() -> StartCostEstimationRequestRequestTypeDef:
+    return {
+        "ResourceCollection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCostEstimationRequestRequestTypeDef(TypedDict):
+    ResourceCollection: CostEstimationResourceCollectionFilterTypeDef,  # (1)
+    ClientToken: NotRequired[str],
+```
 
-- `ResourceCollection`:
-  [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
-
-Optional fields:
-
-- `ClientToken`: `str`
-
-<a id="starttimerangetypedef"></a>
-
+1. See [:material-code-braces: CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef) 
 ## StartTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import StartTimeRangeTypeDef
+
+def get_value() -> StartTimeRangeTypeDef:
+    return {
+        "FromTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `FromTime`: `Union`\[`datetime`, `str`\]
-- `ToTime`: `Union`\[`datetime`, `str`\]
-
-<a id="tagcollectionfiltertypedef"></a>
+```python title="Definition"
+class StartTimeRangeTypeDef(TypedDict):
+    FromTime: NotRequired[Union[datetime, str]],
+    ToTime: NotRequired[Union[datetime, str]],
+```
 
 ## TagCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import TagCollectionFilterTypeDef
+
+def get_value() -> TagCollectionFilterTypeDef:
+    return {
+        "AppBoundaryKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `AppBoundaryKey`: `str`
-- `TagValues`: `List`\[`str`\]
-
-<a id="tagcollectiontypedef"></a>
+```python title="Definition"
+class TagCollectionFilterTypeDef(TypedDict):
+    AppBoundaryKey: str,
+    TagValues: List[str],
+```
 
 ## TagCollectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import TagCollectionTypeDef
+
+def get_value() -> TagCollectionTypeDef:
+    return {
+        "AppBoundaryKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `AppBoundaryKey`: `str`
-- `TagValues`: `List`\[`str`\]
-
-<a id="tagcostestimationresourcecollectionfiltertypedef"></a>
+```python title="Definition"
+class TagCollectionTypeDef(TypedDict):
+    AppBoundaryKey: str,
+    TagValues: List[str],
+```
 
 ## TagCostEstimationResourceCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import TagCostEstimationResourceCollectionFilterTypeDef
+
+def get_value() -> TagCostEstimationResourceCollectionFilterTypeDef:
+    return {
+        "AppBoundaryKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
-
-- `AppBoundaryKey`: `str`
-- `TagValues`: `List`\[`str`\]
-
-<a id="taghealthtypedef"></a>
+```python title="Definition"
+class TagCostEstimationResourceCollectionFilterTypeDef(TypedDict):
+    AppBoundaryKey: str,
+    TagValues: List[str],
+```
 
 ## TagHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import TagHealthTypeDef
+
+def get_value() -> TagHealthTypeDef:
+    return {
+        "AppBoundaryKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagHealthTypeDef(TypedDict):
+    AppBoundaryKey: NotRequired[str],
+    TagValue: NotRequired[str],
+    Insight: NotRequired[InsightHealthTypeDef],  # (1)
+```
 
-- `AppBoundaryKey`: `str`
-- `TagValue`: `str`
-- `Insight`: [InsightHealthTypeDef](./type_defs.md#insighthealthtypedef)
-
-<a id="timestampmetricvaluepairtypedef"></a>
-
+1. See [:material-code-braces: InsightHealthTypeDef](./type_defs.md#insighthealthtypedef) 
 ## TimestampMetricValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import TimestampMetricValuePairTypeDef
+
+def get_value() -> TimestampMetricValuePairTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
-
-- `Timestamp`: `datetime`
-- `MetricValue`: `float`
-
-<a id="updatecloudformationcollectionfiltertypedef"></a>
+```python title="Definition"
+class TimestampMetricValuePairTypeDef(TypedDict):
+    Timestamp: NotRequired[datetime],
+    MetricValue: NotRequired[float],
+```
 
 ## UpdateCloudFormationCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateCloudFormationCollectionFilterTypeDef
+
+def get_value() -> UpdateCloudFormationCollectionFilterTypeDef:
+    return {
+        "StackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `StackNames`: `Sequence`\[`str`\]
-
-<a id="updateeventsourcesconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateCloudFormationCollectionFilterTypeDef(TypedDict):
+    StackNames: NotRequired[Sequence[str]],
+```
 
 ## UpdateEventSourcesConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateEventSourcesConfigRequestRequestTypeDef
+
+def get_value() -> UpdateEventSourcesConfigRequestRequestTypeDef:
+    return {
+        "EventSources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateEventSourcesConfigRequestRequestTypeDef(TypedDict):
+    EventSources: NotRequired[EventSourcesConfigTypeDef],  # (1)
+```
 
-- `EventSources`:
-  [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
-
-<a id="updateresourcecollectionfiltertypedef"></a>
-
+1. See [:material-code-braces: EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef) 
 ## UpdateResourceCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateResourceCollectionFilterTypeDef
+
+def get_value() -> UpdateResourceCollectionFilterTypeDef:
+    return {
+        "CloudFormation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateResourceCollectionFilterTypeDef(TypedDict):
+    CloudFormation: NotRequired[UpdateCloudFormationCollectionFilterTypeDef],  # (1)
+    Tags: NotRequired[Sequence[UpdateTagCollectionFilterTypeDef]],  # (2)
+```
 
-- `CloudFormation`:
-  [UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef)
-- `Tags`:
-  `Sequence`\[[UpdateTagCollectionFilterTypeDef](./type_defs.md#updatetagcollectionfiltertypedef)\]
-
-<a id="updateresourcecollectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UpdateCloudFormationCollectionFilterTypeDef](./type_defs.md#updatecloudformationcollectionfiltertypedef) 
+2. See [:material-code-braces: UpdateTagCollectionFilterTypeDef](./type_defs.md#updatetagcollectionfiltertypedef) 
 ## UpdateResourceCollectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateResourceCollectionRequestRequestTypeDef
+
+def get_value() -> UpdateResourceCollectionRequestRequestTypeDef:
+    return {
+        "Action": ...,
+        "ResourceCollection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResourceCollectionRequestRequestTypeDef(TypedDict):
+    Action: UpdateResourceCollectionActionType,  # (1)
+    ResourceCollection: UpdateResourceCollectionFilterTypeDef,  # (2)
+```
 
-- `Action`:
-  [UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype)
-- `ResourceCollection`:
-  [UpdateResourceCollectionFilterTypeDef](./type_defs.md#updateresourcecollectionfiltertypedef)
-
-<a id="updateserviceintegrationconfigtypedef"></a>
-
+1. See [:material-code-brackets: UpdateResourceCollectionActionType](./literals.md#updateresourcecollectionactiontype) 
+2. See [:material-code-braces: UpdateResourceCollectionFilterTypeDef](./type_defs.md#updateresourcecollectionfiltertypedef) 
 ## UpdateServiceIntegrationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateServiceIntegrationConfigTypeDef
+
+def get_value() -> UpdateServiceIntegrationConfigTypeDef:
+    return {
+        "OpsCenter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateServiceIntegrationConfigTypeDef(TypedDict):
+    OpsCenter: NotRequired[OpsCenterIntegrationConfigTypeDef],  # (1)
+```
 
-- `OpsCenter`:
-  [OpsCenterIntegrationConfigTypeDef](./type_defs.md#opscenterintegrationconfigtypedef)
-
-<a id="updateserviceintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OpsCenterIntegrationConfigTypeDef](./type_defs.md#opscenterintegrationconfigtypedef) 
 ## UpdateServiceIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateServiceIntegrationRequestRequestTypeDef
+
+def get_value() -> UpdateServiceIntegrationRequestRequestTypeDef:
+    return {
+        "ServiceIntegration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceIntegrationRequestRequestTypeDef(TypedDict):
+    ServiceIntegration: UpdateServiceIntegrationConfigTypeDef,  # (1)
+```
 
-- `ServiceIntegration`:
-  [UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef)
-
-<a id="updatetagcollectionfiltertypedef"></a>
-
+1. See [:material-code-braces: UpdateServiceIntegrationConfigTypeDef](./type_defs.md#updateserviceintegrationconfigtypedef) 
 ## UpdateTagCollectionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_devops_guru.type_defs import UpdateTagCollectionFilterTypeDef
+
+def get_value() -> UpdateTagCollectionFilterTypeDef:
+    return {
+        "AppBoundaryKey": ...,
+        "TagValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTagCollectionFilterTypeDef(TypedDict):
+    AppBoundaryKey: str,
+    TagValues: Sequence[str],
+```
 
-- `AppBoundaryKey`: `str`
-- `TagValues`: `Sequence`\[`str`\]

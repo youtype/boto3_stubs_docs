@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-elasticbeanstalk-module"></a>
-
-# Type annotations for boto3 ElasticBeanstalk module
+#  ElasticBeanstalk module
 
 > [Index](../README.md) > ElasticBeanstalk
 
-Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module
-[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+!!! note ""
 
-- [Type annotations for boto3 ElasticBeanstalk module](#type-annotations-for-boto3-elasticbeanstalk-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElasticBeanstalkClient](#elasticbeanstalkclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElasticBeanstalk`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[elasticbeanstalk]'
 python -m pip install mypy-boto3-elasticbeanstalk
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,120 +42,37 @@ python -m pip install mypy-boto3-elasticbeanstalk
 python -m pip uninstall -y mypy-boto3-elasticbeanstalk
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elasticbeanstalkclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElasticBeanstalkClient
 
-Type annotations for `boto3.client("elasticbeanstalk")` as
-[ElasticBeanstalkClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("elasticbeanstalk")` as [ElasticBeanstalkClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
+
+def get_client() -> ElasticBeanstalkClient:
+    return Session().cleint("elasticbeanstalk")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [abort_environment_update](./client.md#abort_environment_update)
-- [apply_environment_managed_action](./client.md#apply_environment_managed_action)
-- [associate_environment_operations_role](./client.md#associate_environment_operations_role)
-- [can_paginate](./client.md#can_paginate)
-- [check_dns_availability](./client.md#check_dns_availability)
-- [compose_environments](./client.md#compose_environments)
-- [create_application](./client.md#create_application)
-- [create_application_version](./client.md#create_application_version)
-- [create_configuration_template](./client.md#create_configuration_template)
-- [create_environment](./client.md#create_environment)
-- [create_platform_version](./client.md#create_platform_version)
-- [create_storage_location](./client.md#create_storage_location)
-- [delete_application](./client.md#delete_application)
-- [delete_application_version](./client.md#delete_application_version)
-- [delete_configuration_template](./client.md#delete_configuration_template)
-- [delete_environment_configuration](./client.md#delete_environment_configuration)
-- [delete_platform_version](./client.md#delete_platform_version)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_application_versions](./client.md#describe_application_versions)
-- [describe_applications](./client.md#describe_applications)
-- [describe_configuration_options](./client.md#describe_configuration_options)
-- [describe_configuration_settings](./client.md#describe_configuration_settings)
-- [describe_environment_health](./client.md#describe_environment_health)
-- [describe_environment_managed_action_history](./client.md#describe_environment_managed_action_history)
-- [describe_environment_managed_actions](./client.md#describe_environment_managed_actions)
-- [describe_environment_resources](./client.md#describe_environment_resources)
-- [describe_environments](./client.md#describe_environments)
-- [describe_events](./client.md#describe_events)
-- [describe_instances_health](./client.md#describe_instances_health)
-- [describe_platform_version](./client.md#describe_platform_version)
-- [disassociate_environment_operations_role](./client.md#disassociate_environment_operations_role)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_available_solution_stacks](./client.md#list_available_solution_stacks)
-- [list_platform_branches](./client.md#list_platform_branches)
-- [list_platform_versions](./client.md#list_platform_versions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [rebuild_environment](./client.md#rebuild_environment)
-- [request_environment_info](./client.md#request_environment_info)
-- [restart_app_server](./client.md#restart_app_server)
-- [retrieve_environment_info](./client.md#retrieve_environment_info)
-- [swap_environment_cnames](./client.md#swap_environment_cnames)
-- [terminate_environment](./client.md#terminate_environment)
-- [update_application](./client.md#update_application)
-- [update_application_resource_lifecycle](./client.md#update_application_resource_lifecycle)
-- [update_application_version](./client.md#update_application_version)
-- [update_configuration_template](./client.md#update_configuration_template)
-- [update_environment](./client.md#update_environment)
-- [update_tags_for_resource](./client.md#update_tags_for_resource)
-- [validate_configuration_settings](./client.md#validate_configuration_settings)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElasticBeanstalkClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- CodeBuildNotInServiceRegionException
-- ElasticBeanstalkServiceException
-- InsufficientPrivilegesException
-- InvalidRequestException
-- ManagedActionInvalidStateException
-- OperationInProgressException
-- PlatformVersionStillReferencedException
-- ResourceNotFoundException
-- ResourceTypeNotSupportedException
-- S3LocationNotInServiceRegionException
-- S3SubscriptionRequiredException
-- SourceBundleDeletionException
-- TooManyApplicationVersionsException
-- TooManyApplicationsException
-- TooManyBucketsException
-- TooManyConfigurationTemplatesException
-- TooManyEnvironmentsException
-- TooManyPlatformsException
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("elasticbeanstalk").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("elasticbeanstalk").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator, ...
+from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator
+
+def get_describe_application_versions_paginator() -> DescribeApplicationVersionsPaginator:
+    return Session().client("elasticbeanstalk").get_paginator("describe_application_versions"))
 ```
 
 - [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
@@ -187,33 +81,42 @@ from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPag
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("elasticbeanstalk").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("elasticbeanstalk").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter, ...
+from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
+
+def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
+    return Session().client("elasticbeanstalk").get_waiter("environment_exists")
 ```
 
 - [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
 - [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
 - [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType
 
-```python
-from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType, ...
+def get_value() -> ActionHistoryStatusType:
+    return "Completed"
 ```
 
 - [ActionHistoryStatusType](./literals.md#actionhistorystatustype)
@@ -248,18 +151,22 @@ from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageRequestTypeDef
 
-```python
-from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageRequestTypeDef, ...
+def get_value() -> AbortEnvironmentUpdateMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
 - [AbortEnvironmentUpdateMessageRequestTypeDef](./type_defs.md#abortenvironmentupdatemessagerequesttypedef)
@@ -306,18 +213,25 @@ from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageR
 - [DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef)
 - [DeploymentTypeDef](./type_defs.md#deploymenttypedef)
 - [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef)
+- [DescribeApplicationVersionsMessageDescribeApplicationVersionsPaginateTypeDef](./type_defs.md#describeapplicationversionsmessagedescribeapplicationversionspaginatetypedef)
 - [DescribeApplicationVersionsMessageRequestTypeDef](./type_defs.md#describeapplicationversionsmessagerequesttypedef)
 - [DescribeApplicationsMessageRequestTypeDef](./type_defs.md#describeapplicationsmessagerequesttypedef)
 - [DescribeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describeconfigurationoptionsmessagerequesttypedef)
 - [DescribeConfigurationSettingsMessageRequestTypeDef](./type_defs.md#describeconfigurationsettingsmessagerequesttypedef)
 - [DescribeEnvironmentHealthRequestRequestTypeDef](./type_defs.md#describeenvironmenthealthrequestrequesttypedef)
 - [DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef)
+- [DescribeEnvironmentManagedActionHistoryRequestDescribeEnvironmentManagedActionHistoryPaginateTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequestdescribeenvironmentmanagedactionhistorypaginatetypedef)
 - [DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequestrequesttypedef)
 - [DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef)
 - [DescribeEnvironmentManagedActionsRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionsrequestrequesttypedef)
 - [DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef)
 - [DescribeEnvironmentResourcesMessageRequestTypeDef](./type_defs.md#describeenvironmentresourcesmessagerequesttypedef)
+- [DescribeEnvironmentsMessageDescribeEnvironmentsPaginateTypeDef](./type_defs.md#describeenvironmentsmessagedescribeenvironmentspaginatetypedef)
+- [DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentexistswaittypedef)
+- [DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentterminatedwaittypedef)
+- [DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentupdatedwaittypedef)
 - [DescribeEnvironmentsMessageRequestTypeDef](./type_defs.md#describeenvironmentsmessagerequesttypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
 - [DescribeInstancesHealthRequestRequestTypeDef](./type_defs.md#describeinstanceshealthrequestrequesttypedef)
 - [DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef)
@@ -343,6 +257,7 @@ from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageR
 - [ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef)
 - [ListPlatformBranchesRequestRequestTypeDef](./type_defs.md#listplatformbranchesrequestrequesttypedef)
 - [ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef)
+- [ListPlatformVersionsRequestListPlatformVersionsPaginateTypeDef](./type_defs.md#listplatformversionsrequestlistplatformversionspaginatetypedef)
 - [ListPlatformVersionsRequestRequestTypeDef](./type_defs.md#listplatformversionsrequestrequesttypedef)
 - [ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef)
 - [ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef)
@@ -393,3 +308,4 @@ from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageR
 - [ValidateConfigurationSettingsMessageRequestTypeDef](./type_defs.md#validateconfigurationsettingsmessagerequesttypedef)
 - [ValidationMessageTypeDef](./type_defs.md#validationmessagetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

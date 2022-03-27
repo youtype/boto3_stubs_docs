@@ -1,758 +1,964 @@
-<a id="typed-dictionaries-for-boto3-support-module"></a>
-
-# Typed dictionaries for boto3 Support module
+# Typed dictionaries
 
 > [Index](../README.md) > [Support](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module
-[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Support module](#typed-dictionaries-for-boto3-support-module)
-  - [AddAttachmentsToSetRequestRequestTypeDef](#addattachmentstosetrequestrequesttypedef)
-  - [AddAttachmentsToSetResponseTypeDef](#addattachmentstosetresponsetypedef)
-  - [AddCommunicationToCaseRequestRequestTypeDef](#addcommunicationtocaserequestrequesttypedef)
-  - [AddCommunicationToCaseResponseTypeDef](#addcommunicationtocaseresponsetypedef)
-  - [AttachmentDetailsTypeDef](#attachmentdetailstypedef)
-  - [AttachmentTypeDef](#attachmenttypedef)
-  - [CaseDetailsTypeDef](#casedetailstypedef)
-  - [CategoryTypeDef](#categorytypedef)
-  - [CommunicationTypeDef](#communicationtypedef)
-  - [CreateCaseRequestRequestTypeDef](#createcaserequestrequesttypedef)
-  - [CreateCaseResponseTypeDef](#createcaseresponsetypedef)
-  - [DescribeAttachmentRequestRequestTypeDef](#describeattachmentrequestrequesttypedef)
-  - [DescribeAttachmentResponseTypeDef](#describeattachmentresponsetypedef)
-  - [DescribeCasesRequestRequestTypeDef](#describecasesrequestrequesttypedef)
-  - [DescribeCasesResponseTypeDef](#describecasesresponsetypedef)
-  - [DescribeCommunicationsRequestRequestTypeDef](#describecommunicationsrequestrequesttypedef)
-  - [DescribeCommunicationsResponseTypeDef](#describecommunicationsresponsetypedef)
-  - [DescribeServicesRequestRequestTypeDef](#describeservicesrequestrequesttypedef)
-  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
-  - [DescribeSeverityLevelsRequestRequestTypeDef](#describeseveritylevelsrequestrequesttypedef)
-  - [DescribeSeverityLevelsResponseTypeDef](#describeseveritylevelsresponsetypedef)
-  - [DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef](#describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef)
-  - [DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](#describetrustedadvisorcheckrefreshstatusesresponsetypedef)
-  - [DescribeTrustedAdvisorCheckResultRequestRequestTypeDef](#describetrustedadvisorcheckresultrequestrequesttypedef)
-  - [DescribeTrustedAdvisorCheckResultResponseTypeDef](#describetrustedadvisorcheckresultresponsetypedef)
-  - [DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef](#describetrustedadvisorchecksummariesrequestrequesttypedef)
-  - [DescribeTrustedAdvisorCheckSummariesResponseTypeDef](#describetrustedadvisorchecksummariesresponsetypedef)
-  - [DescribeTrustedAdvisorChecksRequestRequestTypeDef](#describetrustedadvisorchecksrequestrequesttypedef)
-  - [DescribeTrustedAdvisorChecksResponseTypeDef](#describetrustedadvisorchecksresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RecentCaseCommunicationsTypeDef](#recentcasecommunicationstypedef)
-  - [RefreshTrustedAdvisorCheckRequestRequestTypeDef](#refreshtrustedadvisorcheckrequestrequesttypedef)
-  - [RefreshTrustedAdvisorCheckResponseTypeDef](#refreshtrustedadvisorcheckresponsetypedef)
-  - [ResolveCaseRequestRequestTypeDef](#resolvecaserequestrequesttypedef)
-  - [ResolveCaseResponseTypeDef](#resolvecaseresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [SeverityLevelTypeDef](#severityleveltypedef)
-  - [TrustedAdvisorCategorySpecificSummaryTypeDef](#trustedadvisorcategoryspecificsummarytypedef)
-  - [TrustedAdvisorCheckDescriptionTypeDef](#trustedadvisorcheckdescriptiontypedef)
-  - [TrustedAdvisorCheckRefreshStatusTypeDef](#trustedadvisorcheckrefreshstatustypedef)
-  - [TrustedAdvisorCheckResultTypeDef](#trustedadvisorcheckresulttypedef)
-  - [TrustedAdvisorCheckSummaryTypeDef](#trustedadvisorchecksummarytypedef)
-  - [TrustedAdvisorCostOptimizingSummaryTypeDef](#trustedadvisorcostoptimizingsummarytypedef)
-  - [TrustedAdvisorResourceDetailTypeDef](#trustedadvisorresourcedetailtypedef)
-  - [TrustedAdvisorResourcesSummaryTypeDef](#trustedadvisorresourcessummarytypedef)
-
-<a id="addattachmentstosetrequestrequesttypedef"></a>
+    Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+    type annotations stubs module [mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 ## AddAttachmentsToSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AddAttachmentsToSetRequestRequestTypeDef
+
+def get_value() -> AddAttachmentsToSetRequestRequestTypeDef:
+    return {
+        "attachments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddAttachmentsToSetRequestRequestTypeDef(TypedDict):
+    attachments: Sequence[AttachmentTypeDef],  # (1)
+    attachmentSetId: NotRequired[str],
+```
 
-- `attachments`:
-  `Sequence`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
-
-Optional fields:
-
-- `attachmentSetId`: `str`
-
-<a id="addattachmentstosetresponsetypedef"></a>
-
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
 ## AddAttachmentsToSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AddAttachmentsToSetResponseTypeDef
+
+def get_value() -> AddAttachmentsToSetResponseTypeDef:
+    return {
+        "attachmentSetId": ...,
+        "expiryTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddAttachmentsToSetResponseTypeDef(TypedDict):
+    attachmentSetId: str,
+    expiryTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `attachmentSetId`: `str`
-- `expiryTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addcommunicationtocaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddCommunicationToCaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AddCommunicationToCaseRequestRequestTypeDef
+
+def get_value() -> AddCommunicationToCaseRequestRequestTypeDef:
+    return {
+        "communicationBody": ...,
+    }
 ```
 
-Required fields:
-
-- `communicationBody`: `str`
-
-Optional fields:
-
-- `caseId`: `str`
-- `ccEmailAddresses`: `Sequence`\[`str`\]
-- `attachmentSetId`: `str`
-
-<a id="addcommunicationtocaseresponsetypedef"></a>
+```python title="Definition"
+class AddCommunicationToCaseRequestRequestTypeDef(TypedDict):
+    communicationBody: str,
+    caseId: NotRequired[str],
+    ccEmailAddresses: NotRequired[Sequence[str]],
+    attachmentSetId: NotRequired[str],
+```
 
 ## AddCommunicationToCaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AddCommunicationToCaseResponseTypeDef
+
+def get_value() -> AddCommunicationToCaseResponseTypeDef:
+    return {
+        "result": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddCommunicationToCaseResponseTypeDef(TypedDict):
+    result: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `result`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attachmentdetailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachmentDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AttachmentDetailsTypeDef
+
+def get_value() -> AttachmentDetailsTypeDef:
+    return {
+        "attachmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `attachmentId`: `str`
-- `fileName`: `str`
-
-<a id="attachmenttypedef"></a>
+```python title="Definition"
+class AttachmentDetailsTypeDef(TypedDict):
+    attachmentId: NotRequired[str],
+    fileName: NotRequired[str],
+```
 
 ## AttachmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import AttachmentTypeDef
+
+def get_value() -> AttachmentTypeDef:
+    return {
+        "fileName": ...,
+    }
 ```
 
-Optional fields:
-
-- `fileName`: `str`
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="casedetailstypedef"></a>
+```python title="Definition"
+class AttachmentTypeDef(TypedDict):
+    fileName: NotRequired[str],
+    data: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## CaseDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import CaseDetailsTypeDef
+
+def get_value() -> CaseDetailsTypeDef:
+    return {
+        "caseId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CaseDetailsTypeDef(TypedDict):
+    caseId: NotRequired[str],
+    displayId: NotRequired[str],
+    subject: NotRequired[str],
+    status: NotRequired[str],
+    serviceCode: NotRequired[str],
+    categoryCode: NotRequired[str],
+    severityCode: NotRequired[str],
+    submittedBy: NotRequired[str],
+    timeCreated: NotRequired[str],
+    recentCommunications: NotRequired[RecentCaseCommunicationsTypeDef],  # (1)
+    ccEmailAddresses: NotRequired[List[str]],
+    language: NotRequired[str],
+```
 
-- `caseId`: `str`
-- `displayId`: `str`
-- `subject`: `str`
-- `status`: `str`
-- `serviceCode`: `str`
-- `categoryCode`: `str`
-- `severityCode`: `str`
-- `submittedBy`: `str`
-- `timeCreated`: `str`
-- `recentCommunications`:
-  [RecentCaseCommunicationsTypeDef](./type_defs.md#recentcasecommunicationstypedef)
-- `ccEmailAddresses`: `List`\[`str`\]
-- `language`: `str`
-
-<a id="categorytypedef"></a>
-
+1. See [:material-code-braces: RecentCaseCommunicationsTypeDef](./type_defs.md#recentcasecommunicationstypedef) 
 ## CategoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import CategoryTypeDef
+
+def get_value() -> CategoryTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `name`: `str`
-
-<a id="communicationtypedef"></a>
+```python title="Definition"
+class CategoryTypeDef(TypedDict):
+    code: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## CommunicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import CommunicationTypeDef
+
+def get_value() -> CommunicationTypeDef:
+    return {
+        "caseId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CommunicationTypeDef(TypedDict):
+    caseId: NotRequired[str],
+    body: NotRequired[str],
+    submittedBy: NotRequired[str],
+    timeCreated: NotRequired[str],
+    attachmentSet: NotRequired[List[AttachmentDetailsTypeDef]],  # (1)
+```
 
-- `caseId`: `str`
-- `body`: `str`
-- `submittedBy`: `str`
-- `timeCreated`: `str`
-- `attachmentSet`:
-  `List`\[[AttachmentDetailsTypeDef](./type_defs.md#attachmentdetailstypedef)\]
-
-<a id="createcaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttachmentDetailsTypeDef](./type_defs.md#attachmentdetailstypedef) 
 ## CreateCaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import CreateCaseRequestRequestTypeDef
+
+def get_value() -> CreateCaseRequestRequestTypeDef:
+    return {
+        "subject": ...,
+        "communicationBody": ...,
+    }
 ```
 
-Required fields:
-
-- `subject`: `str`
-- `communicationBody`: `str`
-
-Optional fields:
-
-- `serviceCode`: `str`
-- `severityCode`: `str`
-- `categoryCode`: `str`
-- `ccEmailAddresses`: `Sequence`\[`str`\]
-- `language`: `str`
-- `issueType`: `str`
-- `attachmentSetId`: `str`
-
-<a id="createcaseresponsetypedef"></a>
+```python title="Definition"
+class CreateCaseRequestRequestTypeDef(TypedDict):
+    subject: str,
+    communicationBody: str,
+    serviceCode: NotRequired[str],
+    severityCode: NotRequired[str],
+    categoryCode: NotRequired[str],
+    ccEmailAddresses: NotRequired[Sequence[str]],
+    language: NotRequired[str],
+    issueType: NotRequired[str],
+    attachmentSetId: NotRequired[str],
+```
 
 ## CreateCaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import CreateCaseResponseTypeDef
+
+def get_value() -> CreateCaseResponseTypeDef:
+    return {
+        "caseId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCaseResponseTypeDef(TypedDict):
+    caseId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `caseId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeattachmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAttachmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeAttachmentRequestRequestTypeDef
+
+def get_value() -> DescribeAttachmentRequestRequestTypeDef:
+    return {
+        "attachmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `attachmentId`: `str`
-
-<a id="describeattachmentresponsetypedef"></a>
+```python title="Definition"
+class DescribeAttachmentRequestRequestTypeDef(TypedDict):
+    attachmentId: str,
+```
 
 ## DescribeAttachmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeAttachmentResponseTypeDef
+
+def get_value() -> DescribeAttachmentResponseTypeDef:
+    return {
+        "attachment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAttachmentResponseTypeDef(TypedDict):
+    attachment: AttachmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCasesRequestDescribeCasesPaginateTypeDef
 
-<a id="describecasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_support.type_defs import DescribeCasesRequestDescribeCasesPaginateTypeDef
 
+def get_value() -> DescribeCasesRequestDescribeCasesPaginateTypeDef:
+    return {
+        "caseIdList": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCasesRequestDescribeCasesPaginateTypeDef(TypedDict):
+    caseIdList: NotRequired[Sequence[str]],
+    displayId: NotRequired[str],
+    afterTime: NotRequired[str],
+    beforeTime: NotRequired[str],
+    includeResolvedCases: NotRequired[bool],
+    language: NotRequired[str],
+    includeCommunications: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeCasesRequestRequestTypeDef
+
+def get_value() -> DescribeCasesRequestRequestTypeDef:
+    return {
+        "caseIdList": ...,
+    }
 ```
 
-Optional fields:
-
-- `caseIdList`: `Sequence`\[`str`\]
-- `displayId`: `str`
-- `afterTime`: `str`
-- `beforeTime`: `str`
-- `includeResolvedCases`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `language`: `str`
-- `includeCommunications`: `bool`
-
-<a id="describecasesresponsetypedef"></a>
+```python title="Definition"
+class DescribeCasesRequestRequestTypeDef(TypedDict):
+    caseIdList: NotRequired[Sequence[str]],
+    displayId: NotRequired[str],
+    afterTime: NotRequired[str],
+    beforeTime: NotRequired[str],
+    includeResolvedCases: NotRequired[bool],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    language: NotRequired[str],
+    includeCommunications: NotRequired[bool],
+```
 
 ## DescribeCasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeCasesResponseTypeDef
+
+def get_value() -> DescribeCasesResponseTypeDef:
+    return {
+        "cases": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCasesResponseTypeDef(TypedDict):
+    cases: List[CaseDetailsTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cases`: `List`\[[CaseDetailsTypeDef](./type_defs.md#casedetailstypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CaseDetailsTypeDef](./type_defs.md#casedetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef
 
-<a id="describecommunicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_support.type_defs import DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef
 
+def get_value() -> DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef:
+    return {
+        "caseId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCommunicationsRequestDescribeCommunicationsPaginateTypeDef(TypedDict):
+    caseId: str,
+    beforeTime: NotRequired[str],
+    afterTime: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeCommunicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeCommunicationsRequestRequestTypeDef
+
+def get_value() -> DescribeCommunicationsRequestRequestTypeDef:
+    return {
+        "caseId": ...,
+    }
 ```
 
-Required fields:
-
-- `caseId`: `str`
-
-Optional fields:
-
-- `beforeTime`: `str`
-- `afterTime`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describecommunicationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeCommunicationsRequestRequestTypeDef(TypedDict):
+    caseId: str,
+    beforeTime: NotRequired[str],
+    afterTime: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## DescribeCommunicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeCommunicationsResponseTypeDef
+
+def get_value() -> DescribeCommunicationsResponseTypeDef:
+    return {
+        "communications": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCommunicationsResponseTypeDef(TypedDict):
+    communications: List[CommunicationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `communications`:
-  `List`\[[CommunicationTypeDef](./type_defs.md#communicationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeservicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CommunicationTypeDef](./type_defs.md#communicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeServicesRequestRequestTypeDef
+
+def get_value() -> DescribeServicesRequestRequestTypeDef:
+    return {
+        "serviceCodeList": ...,
+    }
 ```
 
-Optional fields:
-
-- `serviceCodeList`: `Sequence`\[`str`\]
-- `language`: `str`
-
-<a id="describeservicesresponsetypedef"></a>
+```python title="Definition"
+class DescribeServicesRequestRequestTypeDef(TypedDict):
+    serviceCodeList: NotRequired[Sequence[str]],
+    language: NotRequired[str],
+```
 
 ## DescribeServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeServicesResponseTypeDef
+
+def get_value() -> DescribeServicesResponseTypeDef:
+    return {
+        "services": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServicesResponseTypeDef(TypedDict):
+    services: List[ServiceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeseveritylevelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSeverityLevelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeSeverityLevelsRequestRequestTypeDef
+
+def get_value() -> DescribeSeverityLevelsRequestRequestTypeDef:
+    return {
+        "language": ...,
+    }
 ```
 
-Optional fields:
-
-- `language`: `str`
-
-<a id="describeseveritylevelsresponsetypedef"></a>
+```python title="Definition"
+class DescribeSeverityLevelsRequestRequestTypeDef(TypedDict):
+    language: NotRequired[str],
+```
 
 ## DescribeSeverityLevelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeSeverityLevelsResponseTypeDef
+
+def get_value() -> DescribeSeverityLevelsResponseTypeDef:
+    return {
+        "severityLevels": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSeverityLevelsResponseTypeDef(TypedDict):
+    severityLevels: List[SeverityLevelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `severityLevels`:
-  `List`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SeverityLevelTypeDef](./type_defs.md#severityleveltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef:
+    return {
+        "checkIds": ...,
+    }
 ```
 
-Required fields:
-
-- `checkIds`: `Sequence`\[`str`\]
-
-<a id="describetrustedadvisorcheckrefreshstatusesresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef(TypedDict):
+    checkIds: Sequence[str],
+```
 
 ## DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef:
+    return {
+        "statuses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef(TypedDict):
+    statuses: List[TrustedAdvisorCheckRefreshStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `statuses`:
-  `List`\[[TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrustedadvisorcheckresultrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrustedAdvisorCheckResultRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultRequestRequestTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckResultRequestRequestTypeDef:
+    return {
+        "checkId": ...,
+    }
 ```
 
-Required fields:
-
-- `checkId`: `str`
-
-Optional fields:
-
-- `language`: `str`
-
-<a id="describetrustedadvisorcheckresultresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrustedAdvisorCheckResultRequestRequestTypeDef(TypedDict):
+    checkId: str,
+    language: NotRequired[str],
+```
 
 ## DescribeTrustedAdvisorCheckResultResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckResultResponseTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckResultResponseTypeDef:
+    return {
+        "result": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrustedAdvisorCheckResultResponseTypeDef(TypedDict):
+    result: TrustedAdvisorCheckResultTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `result`:
-  [TrustedAdvisorCheckResultTypeDef](./type_defs.md#trustedadvisorcheckresulttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrustedadvisorchecksummariesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCheckResultTypeDef](./type_defs.md#trustedadvisorcheckresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef:
+    return {
+        "checkIds": ...,
+    }
 ```
 
-Required fields:
-
-- `checkIds`: `Sequence`\[`str`\]
-
-<a id="describetrustedadvisorchecksummariesresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef(TypedDict):
+    checkIds: Sequence[str],
+```
 
 ## DescribeTrustedAdvisorCheckSummariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorCheckSummariesResponseTypeDef
+
+def get_value() -> DescribeTrustedAdvisorCheckSummariesResponseTypeDef:
+    return {
+        "summaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrustedAdvisorCheckSummariesResponseTypeDef(TypedDict):
+    summaries: List[TrustedAdvisorCheckSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `summaries`:
-  `List`\[[TrustedAdvisorCheckSummaryTypeDef](./type_defs.md#trustedadvisorchecksummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetrustedadvisorchecksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCheckSummaryTypeDef](./type_defs.md#trustedadvisorchecksummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTrustedAdvisorChecksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksRequestRequestTypeDef
+
+def get_value() -> DescribeTrustedAdvisorChecksRequestRequestTypeDef:
+    return {
+        "language": ...,
+    }
 ```
 
-Required fields:
-
-- `language`: `str`
-
-<a id="describetrustedadvisorchecksresponsetypedef"></a>
+```python title="Definition"
+class DescribeTrustedAdvisorChecksRequestRequestTypeDef(TypedDict):
+    language: str,
+```
 
 ## DescribeTrustedAdvisorChecksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import DescribeTrustedAdvisorChecksResponseTypeDef
+
+def get_value() -> DescribeTrustedAdvisorChecksResponseTypeDef:
+    return {
+        "checks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTrustedAdvisorChecksResponseTypeDef(TypedDict):
+    checks: List[TrustedAdvisorCheckDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `checks`:
-  `List`\[[TrustedAdvisorCheckDescriptionTypeDef](./type_defs.md#trustedadvisorcheckdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCheckDescriptionTypeDef](./type_defs.md#trustedadvisorcheckdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="recentcasecommunicationstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## RecentCaseCommunicationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import RecentCaseCommunicationsTypeDef
+
+def get_value() -> RecentCaseCommunicationsTypeDef:
+    return {
+        "communications": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecentCaseCommunicationsTypeDef(TypedDict):
+    communications: NotRequired[List[CommunicationTypeDef]],  # (1)
+    nextToken: NotRequired[str],
+```
 
-- `communications`:
-  `List`\[[CommunicationTypeDef](./type_defs.md#communicationtypedef)\]
-- `nextToken`: `str`
-
-<a id="refreshtrustedadvisorcheckrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CommunicationTypeDef](./type_defs.md#communicationtypedef) 
 ## RefreshTrustedAdvisorCheckRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckRequestRequestTypeDef
+
+def get_value() -> RefreshTrustedAdvisorCheckRequestRequestTypeDef:
+    return {
+        "checkId": ...,
+    }
 ```
 
-Required fields:
-
-- `checkId`: `str`
-
-<a id="refreshtrustedadvisorcheckresponsetypedef"></a>
+```python title="Definition"
+class RefreshTrustedAdvisorCheckRequestRequestTypeDef(TypedDict):
+    checkId: str,
+```
 
 ## RefreshTrustedAdvisorCheckResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import RefreshTrustedAdvisorCheckResponseTypeDef
+
+def get_value() -> RefreshTrustedAdvisorCheckResponseTypeDef:
+    return {
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RefreshTrustedAdvisorCheckResponseTypeDef(TypedDict):
+    status: TrustedAdvisorCheckRefreshStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`:
-  [TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resolvecaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCheckRefreshStatusTypeDef](./type_defs.md#trustedadvisorcheckrefreshstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResolveCaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import ResolveCaseRequestRequestTypeDef
+
+def get_value() -> ResolveCaseRequestRequestTypeDef:
+    return {
+        "caseId": ...,
+    }
 ```
 
-Optional fields:
-
-- `caseId`: `str`
-
-<a id="resolvecaseresponsetypedef"></a>
+```python title="Definition"
+class ResolveCaseRequestRequestTypeDef(TypedDict):
+    caseId: NotRequired[str],
+```
 
 ## ResolveCaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import ResolveCaseResponseTypeDef
+
+def get_value() -> ResolveCaseResponseTypeDef:
+    return {
+        "initialCaseStatus": ...,
+        "finalCaseStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveCaseResponseTypeDef(TypedDict):
+    initialCaseStatus: str,
+    finalCaseStatus: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `initialCaseStatus`: `str`
-- `finalCaseStatus`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="servicetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    code: NotRequired[str],
+    name: NotRequired[str],
+    categories: NotRequired[List[CategoryTypeDef]],  # (1)
+```
 
-- `code`: `str`
-- `name`: `str`
-- `categories`: `List`\[[CategoryTypeDef](./type_defs.md#categorytypedef)\]
-
-<a id="severityleveltypedef"></a>
-
+1. See [:material-code-braces: CategoryTypeDef](./type_defs.md#categorytypedef) 
 ## SeverityLevelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import SeverityLevelTypeDef
+
+def get_value() -> SeverityLevelTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
-
-- `code`: `str`
-- `name`: `str`
-
-<a id="trustedadvisorcategoryspecificsummarytypedef"></a>
+```python title="Definition"
+class SeverityLevelTypeDef(TypedDict):
+    code: NotRequired[str],
+    name: NotRequired[str],
+```
 
 ## TrustedAdvisorCategorySpecificSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCategorySpecificSummaryTypeDef
+
+def get_value() -> TrustedAdvisorCategorySpecificSummaryTypeDef:
+    return {
+        "costOptimizing": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TrustedAdvisorCategorySpecificSummaryTypeDef(TypedDict):
+    costOptimizing: NotRequired[TrustedAdvisorCostOptimizingSummaryTypeDef],  # (1)
+```
 
-- `costOptimizing`:
-  [TrustedAdvisorCostOptimizingSummaryTypeDef](./type_defs.md#trustedadvisorcostoptimizingsummarytypedef)
-
-<a id="trustedadvisorcheckdescriptiontypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorCostOptimizingSummaryTypeDef](./type_defs.md#trustedadvisorcostoptimizingsummarytypedef) 
 ## TrustedAdvisorCheckDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckDescriptionTypeDef
+
+def get_value() -> TrustedAdvisorCheckDescriptionTypeDef:
+    return {
+        "id": ...,
+        "name": ...,
+        "description": ...,
+        "category": ...,
+        "metadata": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `name`: `str`
-- `description`: `str`
-- `category`: `str`
-- `metadata`: `List`\[`str`\]
-
-<a id="trustedadvisorcheckrefreshstatustypedef"></a>
+```python title="Definition"
+class TrustedAdvisorCheckDescriptionTypeDef(TypedDict):
+    id: str,
+    name: str,
+    description: str,
+    category: str,
+    metadata: List[str],
+```
 
 ## TrustedAdvisorCheckRefreshStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckRefreshStatusTypeDef
+
+def get_value() -> TrustedAdvisorCheckRefreshStatusTypeDef:
+    return {
+        "checkId": ...,
+        "status": ...,
+        "millisUntilNextRefreshable": ...,
+    }
 ```
 
-Required fields:
-
-- `checkId`: `str`
-- `status`: `str`
-- `millisUntilNextRefreshable`: `int`
-
-<a id="trustedadvisorcheckresulttypedef"></a>
+```python title="Definition"
+class TrustedAdvisorCheckRefreshStatusTypeDef(TypedDict):
+    checkId: str,
+    status: str,
+    millisUntilNextRefreshable: int,
+```
 
 ## TrustedAdvisorCheckResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckResultTypeDef
+
+def get_value() -> TrustedAdvisorCheckResultTypeDef:
+    return {
+        "checkId": ...,
+        "timestamp": ...,
+        "status": ...,
+        "resourcesSummary": ...,
+        "categorySpecificSummary": ...,
+        "flaggedResources": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrustedAdvisorCheckResultTypeDef(TypedDict):
+    checkId: str,
+    timestamp: str,
+    status: str,
+    resourcesSummary: TrustedAdvisorResourcesSummaryTypeDef,  # (1)
+    categorySpecificSummary: TrustedAdvisorCategorySpecificSummaryTypeDef,  # (2)
+    flaggedResources: List[TrustedAdvisorResourceDetailTypeDef],  # (3)
+```
 
-- `checkId`: `str`
-- `timestamp`: `str`
-- `status`: `str`
-- `resourcesSummary`:
-  [TrustedAdvisorResourcesSummaryTypeDef](./type_defs.md#trustedadvisorresourcessummarytypedef)
-- `categorySpecificSummary`:
-  [TrustedAdvisorCategorySpecificSummaryTypeDef](./type_defs.md#trustedadvisorcategoryspecificsummarytypedef)
-- `flaggedResources`:
-  `List`\[[TrustedAdvisorResourceDetailTypeDef](./type_defs.md#trustedadvisorresourcedetailtypedef)\]
-
-<a id="trustedadvisorchecksummarytypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorResourcesSummaryTypeDef](./type_defs.md#trustedadvisorresourcessummarytypedef) 
+2. See [:material-code-braces: TrustedAdvisorCategorySpecificSummaryTypeDef](./type_defs.md#trustedadvisorcategoryspecificsummarytypedef) 
+3. See [:material-code-braces: TrustedAdvisorResourceDetailTypeDef](./type_defs.md#trustedadvisorresourcedetailtypedef) 
 ## TrustedAdvisorCheckSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCheckSummaryTypeDef
+
+def get_value() -> TrustedAdvisorCheckSummaryTypeDef:
+    return {
+        "checkId": ...,
+        "timestamp": ...,
+        "status": ...,
+        "resourcesSummary": ...,
+        "categorySpecificSummary": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrustedAdvisorCheckSummaryTypeDef(TypedDict):
+    checkId: str,
+    timestamp: str,
+    status: str,
+    resourcesSummary: TrustedAdvisorResourcesSummaryTypeDef,  # (1)
+    categorySpecificSummary: TrustedAdvisorCategorySpecificSummaryTypeDef,  # (2)
+    hasFlaggedResources: NotRequired[bool],
+```
 
-- `checkId`: `str`
-- `timestamp`: `str`
-- `status`: `str`
-- `resourcesSummary`:
-  [TrustedAdvisorResourcesSummaryTypeDef](./type_defs.md#trustedadvisorresourcessummarytypedef)
-- `categorySpecificSummary`:
-  [TrustedAdvisorCategorySpecificSummaryTypeDef](./type_defs.md#trustedadvisorcategoryspecificsummarytypedef)
-
-Optional fields:
-
-- `hasFlaggedResources`: `bool`
-
-<a id="trustedadvisorcostoptimizingsummarytypedef"></a>
-
+1. See [:material-code-braces: TrustedAdvisorResourcesSummaryTypeDef](./type_defs.md#trustedadvisorresourcessummarytypedef) 
+2. See [:material-code-braces: TrustedAdvisorCategorySpecificSummaryTypeDef](./type_defs.md#trustedadvisorcategoryspecificsummarytypedef) 
 ## TrustedAdvisorCostOptimizingSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorCostOptimizingSummaryTypeDef
+
+def get_value() -> TrustedAdvisorCostOptimizingSummaryTypeDef:
+    return {
+        "estimatedMonthlySavings": ...,
+        "estimatedPercentMonthlySavings": ...,
+    }
 ```
 
-Required fields:
-
-- `estimatedMonthlySavings`: `float`
-- `estimatedPercentMonthlySavings`: `float`
-
-<a id="trustedadvisorresourcedetailtypedef"></a>
+```python title="Definition"
+class TrustedAdvisorCostOptimizingSummaryTypeDef(TypedDict):
+    estimatedMonthlySavings: float,
+    estimatedPercentMonthlySavings: float,
+```
 
 ## TrustedAdvisorResourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorResourceDetailTypeDef
+
+def get_value() -> TrustedAdvisorResourceDetailTypeDef:
+    return {
+        "status": ...,
+        "resourceId": ...,
+        "metadata": ...,
+    }
 ```
 
-Required fields:
-
-- `status`: `str`
-- `resourceId`: `str`
-- `metadata`: `List`\[`str`\]
-
-Optional fields:
-
-- `region`: `str`
-- `isSuppressed`: `bool`
-
-<a id="trustedadvisorresourcessummarytypedef"></a>
+```python title="Definition"
+class TrustedAdvisorResourceDetailTypeDef(TypedDict):
+    status: str,
+    resourceId: str,
+    metadata: List[str],
+    region: NotRequired[str],
+    isSuppressed: NotRequired[bool],
+```
 
 ## TrustedAdvisorResourcesSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_support.type_defs import TrustedAdvisorResourcesSummaryTypeDef
+
+def get_value() -> TrustedAdvisorResourcesSummaryTypeDef:
+    return {
+        "resourcesProcessed": ...,
+        "resourcesFlagged": ...,
+        "resourcesIgnored": ...,
+        "resourcesSuppressed": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TrustedAdvisorResourcesSummaryTypeDef(TypedDict):
+    resourcesProcessed: int,
+    resourcesFlagged: int,
+    resourcesIgnored: int,
+    resourcesSuppressed: int,
+```
 
-- `resourcesProcessed`: `int`
-- `resourcesFlagged`: `int`
-- `resourcesIgnored`: `int`
-- `resourcesSuppressed`: `int`

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-sfn-module"></a>
-
-# Type annotations for boto3 SFN module
+#  SFN module
 
 > [Index](../README.md) > SFN
 
-Auto-generated documentation for
-[SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
-type annotations stubs module
-[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+!!! note ""
 
-- [Type annotations for boto3 SFN module](#type-annotations-for-boto3-sfn-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SFNClient](#sfnclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
+    type annotations stubs module [mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SFN`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[stepfunctions]'
 python -m pip install mypy-boto3-stepfunctions
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,100 +42,37 @@ python -m pip install mypy-boto3-stepfunctions
 python -m pip uninstall -y mypy-boto3-stepfunctions
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="sfnclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SFNClient
 
-Type annotations for `boto3.client("stepfunctions")` as
-[SFNClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("stepfunctions")` as [SFNClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_stepfunctions.client import SFNClient
+
+def get_client() -> SFNClient:
+    return Session().cleint("stepfunctions")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_activity](./client.md#create_activity)
-- [create_state_machine](./client.md#create_state_machine)
-- [delete_activity](./client.md#delete_activity)
-- [delete_state_machine](./client.md#delete_state_machine)
-- [describe_activity](./client.md#describe_activity)
-- [describe_execution](./client.md#describe_execution)
-- [describe_state_machine](./client.md#describe_state_machine)
-- [describe_state_machine_for_execution](./client.md#describe_state_machine_for_execution)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_activity_task](./client.md#get_activity_task)
-- [get_execution_history](./client.md#get_execution_history)
-- [get_paginator](./client.md#get_paginator)
-- [list_activities](./client.md#list_activities)
-- [list_executions](./client.md#list_executions)
-- [list_state_machines](./client.md#list_state_machines)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [send_task_failure](./client.md#send_task_failure)
-- [send_task_heartbeat](./client.md#send_task_heartbeat)
-- [send_task_success](./client.md#send_task_success)
-- [start_execution](./client.md#start_execution)
-- [start_sync_execution](./client.md#start_sync_execution)
-- [stop_execution](./client.md#stop_execution)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_state_machine](./client.md#update_state_machine)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SFNClient [exceptions](./client.md#exceptions)
-
-- ActivityDoesNotExist
-- ActivityLimitExceeded
-- ActivityWorkerLimitExceeded
-- ClientError
-- ExecutionAlreadyExists
-- ExecutionDoesNotExist
-- ExecutionLimitExceeded
-- InvalidArn
-- InvalidDefinition
-- InvalidExecutionInput
-- InvalidLoggingConfiguration
-- InvalidName
-- InvalidOutput
-- InvalidToken
-- InvalidTracingConfiguration
-- MissingRequiredParameter
-- ResourceNotFound
-- StateMachineAlreadyExists
-- StateMachineDeleting
-- StateMachineDoesNotExist
-- StateMachineLimitExceeded
-- StateMachineTypeNotSupported
-- TaskDoesNotExist
-- TaskTimedOut
-- TooManyTags
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("stepfunctions").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("stepfunctions").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator, ...
+from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator
+
+def get_get_execution_history_paginator() -> GetExecutionHistoryPaginator:
+    return Session().client("stepfunctions").get_paginator("get_execution_history"))
 ```
 
 - [GetExecutionHistoryPaginator](./paginators.md#getexecutionhistorypaginator)
@@ -165,16 +80,23 @@ from mypy_boto3_stepfunctions.paginator import GetExecutionHistoryPaginator, ...
 - [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
 - [ListStateMachinesPaginator](./paginators.md#liststatemachinespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_stepfunctions.literals import ExecutionStatusType
 
-```python
-from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
+def get_value() -> ExecutionStatusType:
+    return "ABORTED"
 ```
 
 - [ExecutionStatusType](./literals.md#executionstatustype)
@@ -191,18 +113,22 @@ from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 
-```python
-from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef, ...
+def get_value() -> ActivityFailedEventDetailsTypeDef:
+    return {
+        "error": ...,
+    }
 ```
 
 - [ActivityFailedEventDetailsTypeDef](./type_defs.md#activityfailedeventdetailstypedef)
@@ -237,6 +163,7 @@ from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 - [ExecutionTimedOutEventDetailsTypeDef](./type_defs.md#executiontimedouteventdetailstypedef)
 - [GetActivityTaskInputRequestTypeDef](./type_defs.md#getactivitytaskinputrequesttypedef)
 - [GetActivityTaskOutputTypeDef](./type_defs.md#getactivitytaskoutputtypedef)
+- [GetExecutionHistoryInputGetExecutionHistoryPaginateTypeDef](./type_defs.md#getexecutionhistoryinputgetexecutionhistorypaginatetypedef)
 - [GetExecutionHistoryInputRequestTypeDef](./type_defs.md#getexecutionhistoryinputrequesttypedef)
 - [GetExecutionHistoryOutputTypeDef](./type_defs.md#getexecutionhistoryoutputtypedef)
 - [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
@@ -247,10 +174,13 @@ from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 - [LambdaFunctionStartFailedEventDetailsTypeDef](./type_defs.md#lambdafunctionstartfailedeventdetailstypedef)
 - [LambdaFunctionSucceededEventDetailsTypeDef](./type_defs.md#lambdafunctionsucceededeventdetailstypedef)
 - [LambdaFunctionTimedOutEventDetailsTypeDef](./type_defs.md#lambdafunctiontimedouteventdetailstypedef)
+- [ListActivitiesInputListActivitiesPaginateTypeDef](./type_defs.md#listactivitiesinputlistactivitiespaginatetypedef)
 - [ListActivitiesInputRequestTypeDef](./type_defs.md#listactivitiesinputrequesttypedef)
 - [ListActivitiesOutputTypeDef](./type_defs.md#listactivitiesoutputtypedef)
+- [ListExecutionsInputListExecutionsPaginateTypeDef](./type_defs.md#listexecutionsinputlistexecutionspaginatetypedef)
 - [ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef)
 - [ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)
+- [ListStateMachinesInputListStateMachinesPaginateTypeDef](./type_defs.md#liststatemachinesinputliststatemachinespaginatetypedef)
 - [ListStateMachinesInputRequestTypeDef](./type_defs.md#liststatemachinesinputrequesttypedef)
 - [ListStateMachinesOutputTypeDef](./type_defs.md#liststatemachinesoutputtypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
@@ -287,3 +217,4 @@ from mypy_boto3_stepfunctions.type_defs import ActivityFailedEventDetailsTypeDef
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
 - [UpdateStateMachineInputRequestTypeDef](./type_defs.md#updatestatemachineinputrequesttypedef)
 - [UpdateStateMachineOutputTypeDef](./type_defs.md#updatestatemachineoutputtypedef)
+

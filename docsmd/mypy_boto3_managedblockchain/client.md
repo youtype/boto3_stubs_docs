@@ -1,55 +1,18 @@
-<a id="managedblockchainclient-for-boto3-managedblockchain-module"></a>
+# ManagedBlockchainClient
 
-# ManagedBlockchainClient for boto3 ManagedBlockchain module
+> [Index](../README.md) > [ManagedBlockchain](./README.md) > ManagedBlockchainClient
 
-> [Index](../README.md) > [ManagedBlockchain](./README.md) >
-> ManagedBlockchainClient
+!!! note ""
 
-Auto-generated documentation for
-[ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
-type annotations stubs module
-[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
-
-- [ManagedBlockchainClient for boto3 ManagedBlockchain module](#managedblockchainclient-for-boto3-managedblockchain-module)
-  - [ManagedBlockchainClient](#managedblockchainclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_member](#create_member)
-    - [create_network](#create_network)
-    - [create_node](#create_node)
-    - [create_proposal](#create_proposal)
-    - [delete_member](#delete_member)
-    - [delete_node](#delete_node)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_member](#get_member)
-    - [get_network](#get_network)
-    - [get_node](#get_node)
-    - [get_proposal](#get_proposal)
-    - [list_invitations](#list_invitations)
-    - [list_members](#list_members)
-    - [list_networks](#list_networks)
-    - [list_nodes](#list_nodes)
-    - [list_proposal_votes](#list_proposal_votes)
-    - [list_proposals](#list_proposals)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [reject_invitation](#reject_invitation)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_member](#update_member)
-    - [update_node](#update_node)
-    - [vote_on_proposal](#vote_on_proposal)
-
-<a id="managedblockchainclient"></a>
+    Auto-generated documentation for [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
+    type annotations stubs module [mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 ## ManagedBlockchainClient
 
-Type annotations for `boto3.client("managedblockchain")`
+Type annotations and code completion for `#!python boto3.client("managedblockchain")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 
@@ -57,633 +20,839 @@ def get_managedblockchain_client() -> ManagedBlockchainClient:
     return Session().client("managedblockchain")
 ```
 
-Boto3 documentation:
-[ManagedBlockchain.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("managedblockchain").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("managedblockchain")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.IllegalActionException,
+    client.InternalServiceErrorException,
+    client.InvalidRequestException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceLimitExceededException,
+    client.ResourceNotFoundException,
+    client.ResourceNotReadyException,
+    client.ThrottlingException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_managedblockchain.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.IllegalActionException`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceNotReadyException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ManagedBlockchainClient exceptions.
-
-Type annotations for `boto3.client("managedblockchain").exceptions` method.
-
-Boto3 documentation:
-[ManagedBlockchain.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("managedblockchain").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_member"></a>
-
-### create_member
+### create\_member
 
 Creates a member within a Managed Blockchain network.
 
-Type annotations for `boto3.client("managedblockchain").create_member` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").create_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.create_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_member)
+```python title="Method definition"
+def create_member(
+    self,
+    *,
+    ClientRequestToken: str,
+    InvitationId: str,
+    NetworkId: str,
+    MemberConfiguration: MemberConfigurationTypeDef,  # (1)
+) -> CreateMemberOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMemberInputRequestTypeDef](./type_defs.md#creatememberinputrequesttypedef).
+1. See [:material-code-braces: MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef) 
+2. See [:material-code-braces: CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `InvitationId`: `str` *(required)*
-- `NetworkId`: `str` *(required)*
-- `MemberConfiguration`:
-  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMemberInputRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "InvitationId": ...,
+    "NetworkId": ...,
+    "MemberConfiguration": ...,
+}
 
-Returns [CreateMemberOutputTypeDef](./type_defs.md#creatememberoutputtypedef).
+parent.create_member(**kwargs)
+```
 
-<a id="create\_network"></a>
+1. See [:material-code-braces: CreateMemberInputRequestTypeDef](./type_defs.md#creatememberinputrequesttypedef) 
 
-### create_network
+### create\_network
 
 Creates a new blockchain network using Amazon Managed Blockchain.
 
-Type annotations for `boto3.client("managedblockchain").create_network` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").create_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.create_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_network)
+```python title="Method definition"
+def create_network(
+    self,
+    *,
+    ClientRequestToken: str,
+    Name: str,
+    Framework: FrameworkType,  # (1)
+    FrameworkVersion: str,
+    VotingPolicy: VotingPolicyTypeDef,  # (2)
+    MemberConfiguration: MemberConfigurationTypeDef,  # (3)
+    Description: str = ...,
+    FrameworkConfiguration: NetworkFrameworkConfigurationTypeDef = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+) -> CreateNetworkOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateNetworkInputRequestTypeDef](./type_defs.md#createnetworkinputrequesttypedef).
+1. See [:material-code-brackets: FrameworkType](./literals.md#frameworktype) 
+2. See [:material-code-braces: VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef) 
+3. See [:material-code-braces: MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef) 
+4. See [:material-code-braces: NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef) 
+5. See [:material-code-braces: CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Framework`: [FrameworkType](./literals.md#frameworktype) *(required)*
-- `FrameworkVersion`: `str` *(required)*
-- `VotingPolicy`: [VotingPolicyTypeDef](./type_defs.md#votingpolicytypedef)
-  *(required)*
-- `MemberConfiguration`:
-  [MemberConfigurationTypeDef](./type_defs.md#memberconfigurationtypedef)
-  *(required)*
-- `Description`: `str`
-- `FrameworkConfiguration`:
-  [NetworkFrameworkConfigurationTypeDef](./type_defs.md#networkframeworkconfigurationtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateNetworkInputRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "Name": ...,
+    "Framework": ...,
+    "FrameworkVersion": ...,
+    "VotingPolicy": ...,
+    "MemberConfiguration": ...,
+}
 
-Returns
-[CreateNetworkOutputTypeDef](./type_defs.md#createnetworkoutputtypedef).
+parent.create_network(**kwargs)
+```
 
-<a id="create\_node"></a>
+1. See [:material-code-braces: CreateNetworkInputRequestTypeDef](./type_defs.md#createnetworkinputrequesttypedef) 
 
-### create_node
+### create\_node
 
 Creates a node on the specified blockchain network.
 
-Type annotations for `boto3.client("managedblockchain").create_node` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").create_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.create_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_node)
+```python title="Method definition"
+def create_node(
+    self,
+    *,
+    ClientRequestToken: str,
+    NetworkId: str,
+    NodeConfiguration: NodeConfigurationTypeDef,  # (1)
+    MemberId: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateNodeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateNodeInputRequestTypeDef](./type_defs.md#createnodeinputrequesttypedef).
+1. See [:material-code-braces: NodeConfigurationTypeDef](./type_defs.md#nodeconfigurationtypedef) 
+2. See [:material-code-braces: CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `NetworkId`: `str` *(required)*
-- `NodeConfiguration`:
-  [NodeConfigurationTypeDef](./type_defs.md#nodeconfigurationtypedef)
-  *(required)*
-- `MemberId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateNodeInputRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "NetworkId": ...,
+    "NodeConfiguration": ...,
+}
 
-Returns [CreateNodeOutputTypeDef](./type_defs.md#createnodeoutputtypedef).
+parent.create_node(**kwargs)
+```
 
-<a id="create\_proposal"></a>
+1. See [:material-code-braces: CreateNodeInputRequestTypeDef](./type_defs.md#createnodeinputrequesttypedef) 
 
-### create_proposal
+### create\_proposal
 
-Creates a proposal for a change to the network that other members of the
-network can vote on, for example, a proposal to add a new member to the
-network.
+Creates a proposal for a change to the network that other members of the network
+can vote on, for example, a proposal to add a new member to the network.
 
-Type annotations for `boto3.client("managedblockchain").create_proposal`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").create_proposal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.create_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.create_proposal)
+```python title="Method definition"
+def create_proposal(
+    self,
+    *,
+    ClientRequestToken: str,
+    NetworkId: str,
+    MemberId: str,
+    Actions: ProposalActionsTypeDef,  # (1)
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateProposalOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProposalInputRequestTypeDef](./type_defs.md#createproposalinputrequesttypedef).
+1. See [:material-code-braces: ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef) 
+2. See [:material-code-braces: CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientRequestToken`: `str` *(required)*
-- `NetworkId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `Actions`: [ProposalActionsTypeDef](./type_defs.md#proposalactionstypedef)
-  *(required)*
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateProposalInputRequestTypeDef = {  # (1)
+    "ClientRequestToken": ...,
+    "NetworkId": ...,
+    "MemberId": ...,
+    "Actions": ...,
+}
 
-Returns
-[CreateProposalOutputTypeDef](./type_defs.md#createproposaloutputtypedef).
+parent.create_proposal(**kwargs)
+```
 
-<a id="delete\_member"></a>
+1. See [:material-code-braces: CreateProposalInputRequestTypeDef](./type_defs.md#createproposalinputrequesttypedef) 
 
-### delete_member
+### delete\_member
 
 Deletes a member.
 
-Type annotations for `boto3.client("managedblockchain").delete_member` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").delete_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.delete_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_member)
+```python title="Method definition"
+def delete_member(
+    self,
+    *,
+    NetworkId: str,
+    MemberId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMemberInputRequestTypeDef](./type_defs.md#deletememberinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMemberInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "MemberId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_member(**kwargs)
+```
 
-<a id="delete\_node"></a>
+1. See [:material-code-braces: DeleteMemberInputRequestTypeDef](./type_defs.md#deletememberinputrequesttypedef) 
 
-### delete_node
+### delete\_node
 
 Deletes a node that your AWS account owns.
 
-Type annotations for `boto3.client("managedblockchain").delete_node` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").delete_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.delete_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.delete_node)
+```python title="Method definition"
+def delete_node(
+    self,
+    *,
+    NetworkId: str,
+    NodeId: str,
+    MemberId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteNodeInputRequestTypeDef](./type_defs.md#deletenodeinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `NodeId`: `str` *(required)*
-- `MemberId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteNodeInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "NodeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_node(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteNodeInputRequestTypeDef](./type_defs.md#deletenodeinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("managedblockchain").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_member"></a>
-
-### get_member
+### get\_member
 
 Returns detailed information about a member.
 
-Type annotations for `boto3.client("managedblockchain").get_member` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_member)
+```python title="Method definition"
+def get_member(
+    self,
+    *,
+    NetworkId: str,
+    MemberId: str,
+) -> GetMemberOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMemberInputRequestTypeDef](./type_defs.md#getmemberinputrequesttypedef).
+1. See [:material-code-braces: GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMemberInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "MemberId": ...,
+}
 
-Returns [GetMemberOutputTypeDef](./type_defs.md#getmemberoutputtypedef).
+parent.get_member(**kwargs)
+```
 
-<a id="get\_network"></a>
+1. See [:material-code-braces: GetMemberInputRequestTypeDef](./type_defs.md#getmemberinputrequesttypedef) 
 
-### get_network
+### get\_network
 
 Returns detailed information about a network.
 
-Type annotations for `boto3.client("managedblockchain").get_network` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.get_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_network)
+```python title="Method definition"
+def get_network(
+    self,
+    *,
+    NetworkId: str,
+) -> GetNetworkOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkInputRequestTypeDef](./type_defs.md#getnetworkinputrequesttypedef).
+1. See [:material-code-braces: GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNetworkInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+}
 
-Returns [GetNetworkOutputTypeDef](./type_defs.md#getnetworkoutputtypedef).
+parent.get_network(**kwargs)
+```
 
-<a id="get\_node"></a>
+1. See [:material-code-braces: GetNetworkInputRequestTypeDef](./type_defs.md#getnetworkinputrequesttypedef) 
 
-### get_node
+### get\_node
 
 Returns detailed information about a node.
 
-Type annotations for `boto3.client("managedblockchain").get_node` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.get_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_node)
+```python title="Method definition"
+def get_node(
+    self,
+    *,
+    NetworkId: str,
+    NodeId: str,
+    MemberId: str = ...,
+) -> GetNodeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNodeInputRequestTypeDef](./type_defs.md#getnodeinputrequesttypedef).
+1. See [:material-code-braces: GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `NodeId`: `str` *(required)*
-- `MemberId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetNodeInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "NodeId": ...,
+}
 
-Returns [GetNodeOutputTypeDef](./type_defs.md#getnodeoutputtypedef).
+parent.get_node(**kwargs)
+```
 
-<a id="get\_proposal"></a>
+1. See [:material-code-braces: GetNodeInputRequestTypeDef](./type_defs.md#getnodeinputrequesttypedef) 
 
-### get_proposal
+### get\_proposal
 
 Returns detailed information about a proposal.
 
-Type annotations for `boto3.client("managedblockchain").get_proposal` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").get_proposal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.get_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.get_proposal)
+```python title="Method definition"
+def get_proposal(
+    self,
+    *,
+    NetworkId: str,
+    ProposalId: str,
+) -> GetProposalOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProposalInputRequestTypeDef](./type_defs.md#getproposalinputrequesttypedef).
+1. See [:material-code-braces: GetProposalOutputTypeDef](./type_defs.md#getproposaloutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `ProposalId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetProposalInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "ProposalId": ...,
+}
 
-Returns [GetProposalOutputTypeDef](./type_defs.md#getproposaloutputtypedef).
+parent.get_proposal(**kwargs)
+```
 
-<a id="list\_invitations"></a>
+1. See [:material-code-braces: GetProposalInputRequestTypeDef](./type_defs.md#getproposalinputrequesttypedef) 
 
-### list_invitations
+### list\_invitations
 
 Returns a list of all invitations for the current AWS account.
 
-Type annotations for `boto3.client("managedblockchain").list_invitations`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_invitations)
+```python title="Method definition"
+def list_invitations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInvitationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvitationsInputRequestTypeDef](./type_defs.md#listinvitationsinputrequesttypedef).
+1. See [:material-code-braces: ListInvitationsOutputTypeDef](./type_defs.md#listinvitationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInvitationsOutputTypeDef](./type_defs.md#listinvitationsoutputtypedef).
+parent.list_invitations(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListInvitationsInputRequestTypeDef](./type_defs.md#listinvitationsinputrequesttypedef) 
 
-### list_members
+### list\_members
 
 Returns a list of the members in a network and properties of their
 configurations.
 
-Type annotations for `boto3.client("managedblockchain").list_members` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    NetworkId: str,
+    Name: str = ...,
+    Status: MemberStatusType = ...,  # (1)
+    IsOwned: bool = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMembersOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersInputRequestTypeDef](./type_defs.md#listmembersinputrequesttypedef).
+1. See [:material-code-brackets: MemberStatusType](./literals.md#memberstatustype) 
+2. See [:material-code-braces: ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `Name`: `str`
-- `Status`: [MemberStatusType](./literals.md#memberstatustype)
-- `IsOwned`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMembersInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+}
 
-Returns [ListMembersOutputTypeDef](./type_defs.md#listmembersoutputtypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_networks"></a>
+1. See [:material-code-braces: ListMembersInputRequestTypeDef](./type_defs.md#listmembersinputrequesttypedef) 
 
-### list_networks
+### list\_networks
 
 Returns information about the networks in which the current AWS account
 participates.
 
-Type annotations for `boto3.client("managedblockchain").list_networks` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_networks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_networks)
+```python title="Method definition"
+def list_networks(
+    self,
+    *,
+    Name: str = ...,
+    Framework: FrameworkType = ...,  # (1)
+    Status: NetworkStatusType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListNetworksOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListNetworksInputRequestTypeDef](./type_defs.md#listnetworksinputrequesttypedef).
+1. See [:material-code-brackets: FrameworkType](./literals.md#frameworktype) 
+2. See [:material-code-brackets: NetworkStatusType](./literals.md#networkstatustype) 
+3. See [:material-code-braces: ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `Framework`: [FrameworkType](./literals.md#frameworktype)
-- `Status`: [NetworkStatusType](./literals.md#networkstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNetworksInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [ListNetworksOutputTypeDef](./type_defs.md#listnetworksoutputtypedef).
+parent.list_networks(**kwargs)
+```
 
-<a id="list\_nodes"></a>
+1. See [:material-code-braces: ListNetworksInputRequestTypeDef](./type_defs.md#listnetworksinputrequesttypedef) 
 
-### list_nodes
+### list\_nodes
 
 Returns information about the nodes within a network.
 
-Type annotations for `boto3.client("managedblockchain").list_nodes` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_nodes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_nodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_nodes)
+```python title="Method definition"
+def list_nodes(
+    self,
+    *,
+    NetworkId: str,
+    MemberId: str = ...,
+    Status: NodeStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListNodesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNodesInputRequestTypeDef](./type_defs.md#listnodesinputrequesttypedef).
+1. See [:material-code-brackets: NodeStatusType](./literals.md#nodestatustype) 
+2. See [:material-code-braces: ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `MemberId`: `str`
-- `Status`: [NodeStatusType](./literals.md#nodestatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNodesInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+}
 
-Returns [ListNodesOutputTypeDef](./type_defs.md#listnodesoutputtypedef).
+parent.list_nodes(**kwargs)
+```
 
-<a id="list\_proposal\_votes"></a>
+1. See [:material-code-braces: ListNodesInputRequestTypeDef](./type_defs.md#listnodesinputrequesttypedef) 
 
-### list_proposal_votes
+### list\_proposal\_votes
 
 Returns the list of votes for a specified proposal, including the value of each
 vote and the unique identifier of the member that cast the vote.
 
-Type annotations for `boto3.client("managedblockchain").list_proposal_votes`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_proposal_votes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_proposal_votes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposal_votes)
+```python title="Method definition"
+def list_proposal_votes(
+    self,
+    *,
+    NetworkId: str,
+    ProposalId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListProposalVotesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProposalVotesInputRequestTypeDef](./type_defs.md#listproposalvotesinputrequesttypedef).
+1. See [:material-code-braces: ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `ProposalId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProposalVotesInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "ProposalId": ...,
+}
 
-Returns
-[ListProposalVotesOutputTypeDef](./type_defs.md#listproposalvotesoutputtypedef).
+parent.list_proposal_votes(**kwargs)
+```
 
-<a id="list\_proposals"></a>
+1. See [:material-code-braces: ListProposalVotesInputRequestTypeDef](./type_defs.md#listproposalvotesinputrequesttypedef) 
 
-### list_proposals
+### list\_proposals
 
 Returns a list of proposals for the network.
 
-Type annotations for `boto3.client("managedblockchain").list_proposals` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_proposals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_proposals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_proposals)
+```python title="Method definition"
+def list_proposals(
+    self,
+    *,
+    NetworkId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListProposalsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProposalsInputRequestTypeDef](./type_defs.md#listproposalsinputrequesttypedef).
+1. See [:material-code-braces: ListProposalsOutputTypeDef](./type_defs.md#listproposalsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProposalsInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+}
 
-Returns
-[ListProposalsOutputTypeDef](./type_defs.md#listproposalsoutputtypedef).
+parent.list_proposals(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProposalsInputRequestTypeDef](./type_defs.md#listproposalsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags for the specified resource.
 
-Type annotations for `boto3.client("managedblockchain").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="reject\_invitation"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### reject_invitation
+### reject\_invitation
 
 Rejects an invitation to join a network.
 
-Type annotations for `boto3.client("managedblockchain").reject_invitation`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").reject_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.reject_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.reject_invitation)
+```python title="Method definition"
+def reject_invitation(
+    self,
+    *,
+    InvitationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectInvitationInputRequestTypeDef](./type_defs.md#rejectinvitationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `InvitationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectInvitationInputRequestTypeDef = {  # (1)
+    "InvitationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_invitation(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RejectInvitationInputRequestTypeDef](./type_defs.md#rejectinvitationinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or overwrites the specified tags for the specified Amazon Managed
 Blockchain resource.
 
-Type annotations for `boto3.client("managedblockchain").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the Amazon Managed Blockchain resource.
 
-Type annotations for `boto3.client("managedblockchain").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_member"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_member
+### update\_member
 
 Updates a member configuration with new parameters.
 
-Type annotations for `boto3.client("managedblockchain").update_member` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").update_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.update_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_member)
+```python title="Method definition"
+def update_member(
+    self,
+    *,
+    NetworkId: str,
+    MemberId: str,
+    LogPublishingConfiguration: MemberLogPublishingConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateMemberInputRequestTypeDef](./type_defs.md#updatememberinputrequesttypedef).
+1. See [:material-code-braces: MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
-- `LogPublishingConfiguration`:
-  [MemberLogPublishingConfigurationTypeDef](./type_defs.md#memberlogpublishingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMemberInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "MemberId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_member(**kwargs)
+```
 
-<a id="update\_node"></a>
+1. See [:material-code-braces: UpdateMemberInputRequestTypeDef](./type_defs.md#updatememberinputrequesttypedef) 
 
-### update_node
+### update\_node
 
 Updates a node configuration with new parameters.
 
-Type annotations for `boto3.client("managedblockchain").update_node` method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").update_node` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.update_node](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.update_node)
+```python title="Method definition"
+def update_node(
+    self,
+    *,
+    NetworkId: str,
+    NodeId: str,
+    MemberId: str = ...,
+    LogPublishingConfiguration: NodeLogPublishingConfigurationTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNodeInputRequestTypeDef](./type_defs.md#updatenodeinputrequesttypedef).
+1. See [:material-code-braces: NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `NodeId`: `str` *(required)*
-- `MemberId`: `str`
-- `LogPublishingConfiguration`:
-  [NodeLogPublishingConfigurationTypeDef](./type_defs.md#nodelogpublishingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateNodeInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "NodeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_node(**kwargs)
+```
 
-<a id="vote\_on\_proposal"></a>
+1. See [:material-code-braces: UpdateNodeInputRequestTypeDef](./type_defs.md#updatenodeinputrequesttypedef) 
 
-### vote_on_proposal
+### vote\_on\_proposal
 
 Casts a vote for a specified `ProposalId` on behalf of a member.
 
-Type annotations for `boto3.client("managedblockchain").vote_on_proposal`
-method.
+Type annotations and code completion for `#!python boto3.client("managedblockchain").vote_on_proposal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
 
-Boto3 documentation:
-[ManagedBlockchain.Client.vote_on_proposal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain.Client.vote_on_proposal)
+```python title="Method definition"
+def vote_on_proposal(
+    self,
+    *,
+    NetworkId: str,
+    ProposalId: str,
+    VoterMemberId: str,
+    Vote: VoteValueType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef).
+1. See [:material-code-brackets: VoteValueType](./literals.md#votevaluetype) 
 
-Keyword-only arguments:
 
-- `NetworkId`: `str` *(required)*
-- `ProposalId`: `str` *(required)*
-- `VoterMemberId`: `str` *(required)*
-- `Vote`: [VoteValueType](./literals.md#votevaluetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: VoteOnProposalInputRequestTypeDef = {  # (1)
+    "NetworkId": ...,
+    "ProposalId": ...,
+    "VoterMemberId": ...,
+    "Vote": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.vote_on_proposal(**kwargs)
+```
+
+1. See [:material-code-braces: VoteOnProposalInputRequestTypeDef](./type_defs.md#voteonproposalinputrequesttypedef) 
+
+
+
+

@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-groundstation-module"></a>
-
-# Paginators for boto3 GroundStation module
+# Paginators
 
 > [Index](../README.md) > [GroundStation](./README.md) > Paginators
 
-Auto-generated documentation for
-[GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
-type annotations stubs module
-[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+!!! note ""
 
-- [Paginators for boto3 GroundStation module](#paginators-for-boto3-groundstation-module)
-  - [ListConfigsPaginator](#listconfigspaginator)
-  - [ListContactsPaginator](#listcontactspaginator)
-  - [ListDataflowEndpointGroupsPaginator](#listdataflowendpointgroupspaginator)
-  - [ListGroundStationsPaginator](#listgroundstationspaginator)
-  - [ListMissionProfilesPaginator](#listmissionprofilespaginator)
-  - [ListSatellitesPaginator](#listsatellitespaginator)
-
-<a id="listconfigspaginator"></a>
+    Auto-generated documentation for [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
+    type annotations stubs module [mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 ## ListConfigsPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_configs")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListConfigsPaginator
@@ -35,27 +21,39 @@ def get_list_configs_paginator() -> ListConfigsPaginator:
     return Session().client("groundstation").get_paginator("list_configs")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListConfigs)
 
-Arguments for `ListConfigsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListConfigsPaginator.paginate` method.
 
-`ListConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListConfigsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcontactspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListConfigsRequestListConfigsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListConfigsRequestListConfigsPaginateTypeDef](./type_defs.md#listconfigsrequestlistconfigspaginatetypedef) 
 ## ListContactsPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_contacts")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_contacts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListContactsPaginator
@@ -64,35 +62,48 @@ def get_list_contacts_paginator() -> ListContactsPaginator:
     return Session().client("groundstation").get_paginator("list_contacts")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListContacts)
 
-Arguments for `ListContactsPaginator.paginate` method:
+### paginate
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `statusList`:
-  `Sequence`\[[ContactStatusType](./literals.md#contactstatustype)\]
-  *(required)*
-- `groundStation`: `str`
-- `missionProfileArn`: `str`
-- `satelliteArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContactsPaginator.paginate` method.
 
-`ListContactsPaginator.paginate` returns
-`_PageIterator`\[[ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    startTime: Union[datetime, str],
+    statusList: Sequence[ContactStatusType],  # (1)
+    groundStation: str = ...,
+    missionProfileArn: str = ...,
+    satelliteArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListContactsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdataflowendpointgroupspaginator"></a>
+1. See [:material-code-brackets: ContactStatusType](./literals.md#contactstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContactsRequestListContactsPaginateTypeDef = {  # (1)
+    "endTime": ...,
+    "startTime": ...,
+    "statusList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContactsRequestListContactsPaginateTypeDef](./type_defs.md#listcontactsrequestlistcontactspaginatetypedef) 
 ## ListDataflowEndpointGroupsPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_dataflow_endpoint_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListDataflowEndpointGroupsPaginator
@@ -101,27 +112,39 @@ def get_list_dataflow_endpoint_groups_paginator() -> ListDataflowEndpointGroupsP
     return Session().client("groundstation").get_paginator("list_dataflow_endpoint_groups")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListDataflowEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListDataflowEndpointGroups)
 
-Arguments for `ListDataflowEndpointGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataflowEndpointGroupsPaginator.paginate` method.
 
-`ListDataflowEndpointGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataflowEndpointGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgroundstationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataflowEndpointGroupsRequestListDataflowEndpointGroupsPaginateTypeDef](./type_defs.md#listdataflowendpointgroupsrequestlistdataflowendpointgroupspaginatetypedef) 
 ## ListGroundStationsPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_ground_stations")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_ground_stations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListGroundStationsPaginator
@@ -130,28 +153,40 @@ def get_list_ground_stations_paginator() -> ListGroundStationsPaginator:
     return Session().client("groundstation").get_paginator("list_ground_stations")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListGroundStations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListGroundStations)
 
-Arguments for `ListGroundStationsPaginator.paginate` method:
+### paginate
 
-- `satelliteId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGroundStationsPaginator.paginate` method.
 
-`ListGroundStationsPaginator.paginate` returns
-`_PageIterator`\[[ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    satelliteId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGroundStationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmissionprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGroundStationsRequestListGroundStationsPaginateTypeDef = {  # (1)
+    "satelliteId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGroundStationsRequestListGroundStationsPaginateTypeDef](./type_defs.md#listgroundstationsrequestlistgroundstationspaginatetypedef) 
 ## ListMissionProfilesPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_mission_profiles")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_mission_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListMissionProfilesPaginator
@@ -160,27 +195,39 @@ def get_list_mission_profiles_paginator() -> ListMissionProfilesPaginator:
     return Session().client("groundstation").get_paginator("list_mission_profiles")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListMissionProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListMissionProfiles)
 
-Arguments for `ListMissionProfilesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMissionProfilesPaginator.paginate` method.
 
-`ListMissionProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMissionProfilesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsatellitespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMissionProfilesRequestListMissionProfilesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMissionProfilesRequestListMissionProfilesPaginateTypeDef](./type_defs.md#listmissionprofilesrequestlistmissionprofilespaginatetypedef) 
 ## ListSatellitesPaginator
 
-Type annotations for
-`boto3.client("groundstation").get_paginator("list_satellites")`.
+Type annotations and code completion for `#!python boto3.client("groundstation").get_paginator("list_satellites")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_groundstation.paginator import ListSatellitesPaginator
@@ -189,13 +236,30 @@ def get_list_satellites_paginator() -> ListSatellitesPaginator:
     return Session().client("groundstation").get_paginator("list_satellites")
 ```
 
-Boto3 documentation:
-[GroundStation.Paginator.ListSatellites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Paginator.ListSatellites)
 
-Arguments for `ListSatellitesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSatellitesPaginator.paginate` method.
 
-`ListSatellitesPaginator.paginate` returns
-`_PageIterator`\[[ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSatellitesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSatellitesRequestListSatellitesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSatellitesRequestListSatellitesPaginateTypeDef](./type_defs.md#listsatellitesrequestlistsatellitespaginatetypedef) 

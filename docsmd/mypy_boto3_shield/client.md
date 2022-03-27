@@ -1,68 +1,18 @@
-<a id="shieldclient-for-boto3-shield-module"></a>
-
-# ShieldClient for boto3 Shield module
+# ShieldClient
 
 > [Index](../README.md) > [Shield](./README.md) > ShieldClient
 
-Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
-type annotations stubs module
-[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
+!!! note ""
 
-- [ShieldClient for boto3 Shield module](#shieldclient-for-boto3-shield-module)
-  - [ShieldClient](#shieldclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_drt_log_bucket](#associate_drt_log_bucket)
-    - [associate_drt_role](#associate_drt_role)
-    - [associate_health_check](#associate_health_check)
-    - [associate_proactive_engagement_details](#associate_proactive_engagement_details)
-    - [can_paginate](#can_paginate)
-    - [create_protection](#create_protection)
-    - [create_protection_group](#create_protection_group)
-    - [create_subscription](#create_subscription)
-    - [delete_protection](#delete_protection)
-    - [delete_protection_group](#delete_protection_group)
-    - [delete_subscription](#delete_subscription)
-    - [describe_attack](#describe_attack)
-    - [describe_attack_statistics](#describe_attack_statistics)
-    - [describe_drt_access](#describe_drt_access)
-    - [describe_emergency_contact_settings](#describe_emergency_contact_settings)
-    - [describe_protection](#describe_protection)
-    - [describe_protection_group](#describe_protection_group)
-    - [describe_subscription](#describe_subscription)
-    - [disable_application_layer_automatic_response](#disable_application_layer_automatic_response)
-    - [disable_proactive_engagement](#disable_proactive_engagement)
-    - [disassociate_drt_log_bucket](#disassociate_drt_log_bucket)
-    - [disassociate_drt_role](#disassociate_drt_role)
-    - [disassociate_health_check](#disassociate_health_check)
-    - [enable_application_layer_automatic_response](#enable_application_layer_automatic_response)
-    - [enable_proactive_engagement](#enable_proactive_engagement)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_subscription_state](#get_subscription_state)
-    - [list_attacks](#list_attacks)
-    - [list_protection_groups](#list_protection_groups)
-    - [list_protections](#list_protections)
-    - [list_resources_in_protection_group](#list_resources_in_protection_group)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_application_layer_automatic_response](#update_application_layer_automatic_response)
-    - [update_emergency_contact_settings](#update_emergency_contact_settings)
-    - [update_protection_group](#update_protection_group)
-    - [update_subscription](#update_subscription)
-    - [get_paginator](#get_paginator)
-
-<a id="shieldclient"></a>
+    Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+    type annotations stubs module [mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ## ShieldClient
 
-Type annotations for `boto3.client("shield")`
+Type annotations and code completion for `#!python boto3.client("shield")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_shield.client import ShieldClient
 
@@ -70,844 +20,1061 @@ def get_shield_client() -> ShieldClient:
     return Session().client("shield")
 ```
 
-Boto3 documentation:
-[Shield.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("shield").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("shield")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AccessDeniedForDependencyException,
+    client.ClientError,
+    client.InternalErrorException,
+    client.InvalidOperationException,
+    client.InvalidPaginationTokenException,
+    client.InvalidParameterException,
+    client.InvalidResourceException,
+    client.LimitsExceededException,
+    client.LockedSubscriptionException,
+    client.NoAssociatedRoleException,
+    client.OptimisticLockException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_shield.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AccessDeniedForDependencyException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidResourceException`
-- `Exceptions.LimitsExceededException`
-- `Exceptions.LockedSubscriptionException`
-- `Exceptions.NoAssociatedRoleException`
-- `Exceptions.OptimisticLockException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ShieldClient exceptions.
-
-Type annotations for `boto3.client("shield").exceptions` method.
-
-Boto3 documentation:
-[Shield.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_drt\_log\_bucket"></a>
-
-### associate_drt_log_bucket
+### associate\_drt\_log\_bucket
 
 Authorizes the Shield Response Team (SRT) to access the specified Amazon S3
 bucket containing log data such as Application Load Balancer access logs,
 CloudFront logs, or logs from third party sources.
 
-Type annotations for `boto3.client("shield").associate_drt_log_bucket` method.
+Type annotations and code completion for `#!python boto3.client("shield").associate_drt_log_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
 
-Boto3 documentation:
-[Shield.Client.associate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_log_bucket)
+```python title="Method definition"
+def associate_drt_log_bucket(
+    self,
+    *,
+    LogBucket: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#associatedrtlogbucketrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LogBucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateDRTLogBucketRequestRequestTypeDef = {  # (1)
+    "LogBucket": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_drt_log_bucket(**kwargs)
+```
 
-<a id="associate\_drt\_role"></a>
+1. See [:material-code-braces: AssociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#associatedrtlogbucketrequestrequesttypedef) 
 
-### associate_drt_role
+### associate\_drt\_role
 
 Authorizes the Shield Response Team (SRT) using the specified role, to access
 your Amazon Web Services account to assist with DDoS attack mitigation during
 potential attacks.
 
-Type annotations for `boto3.client("shield").associate_drt_role` method.
+Type annotations and code completion for `#!python boto3.client("shield").associate_drt_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role)
 
-Boto3 documentation:
-[Shield.Client.associate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_drt_role)
+```python title="Method definition"
+def associate_drt_role(
+    self,
+    *,
+    RoleArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDRTRoleRequestRequestTypeDef](./type_defs.md#associatedrtrolerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateDRTRoleRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_drt_role(**kwargs)
+```
 
-<a id="associate\_health\_check"></a>
+1. See [:material-code-braces: AssociateDRTRoleRequestRequestTypeDef](./type_defs.md#associatedrtrolerequestrequesttypedef) 
 
-### associate_health_check
+### associate\_health\_check
 
 Adds health-based detection to the Shield Advanced protection for a resource.
 
-Type annotations for `boto3.client("shield").associate_health_check` method.
+Type annotations and code completion for `#!python boto3.client("shield").associate_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check)
 
-Boto3 documentation:
-[Shield.Client.associate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_health_check)
+```python title="Method definition"
+def associate_health_check(
+    self,
+    *,
+    ProtectionId: str,
+    HealthCheckArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateHealthCheckRequestRequestTypeDef](./type_defs.md#associatehealthcheckrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProtectionId`: `str` *(required)*
-- `HealthCheckArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateHealthCheckRequestRequestTypeDef = {  # (1)
+    "ProtectionId": ...,
+    "HealthCheckArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_health_check(**kwargs)
+```
 
-<a id="associate\_proactive\_engagement\_details"></a>
+1. See [:material-code-braces: AssociateHealthCheckRequestRequestTypeDef](./type_defs.md#associatehealthcheckrequestrequesttypedef) 
 
-### associate_proactive_engagement_details
+### associate\_proactive\_engagement\_details
 
 Initializes proactive engagement and sets the list of contacts for the Shield
 Response Team (SRT) to use.
 
-Type annotations for
-`boto3.client("shield").associate_proactive_engagement_details` method.
+Type annotations and code completion for `#!python boto3.client("shield").associate_proactive_engagement_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
 
-Boto3 documentation:
-[Shield.Client.associate_proactive_engagement_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.associate_proactive_engagement_details)
+```python title="Method definition"
+def associate_proactive_engagement_details(
+    self,
+    *,
+    EmergencyContactList: Sequence[EmergencyContactTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateProactiveEngagementDetailsRequestRequestTypeDef](./type_defs.md#associateproactiveengagementdetailsrequestrequesttypedef).
+1. See [:material-code-braces: EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef) 
 
-Keyword-only arguments:
 
-- `EmergencyContactList`:
-  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateProactiveEngagementDetailsRequestRequestTypeDef = {  # (1)
+    "EmergencyContactList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_proactive_engagement_details(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateProactiveEngagementDetailsRequestRequestTypeDef](./type_defs.md#associateproactiveengagementdetailsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("shield").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("shield").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.can_paginate)
 
-Boto3 documentation:
-[Shield.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_protection"></a>
-
-### create_protection
+### create\_protection
 
 Enables Shield Advanced for a specific Amazon Web Services resource.
 
-Type annotations for `boto3.client("shield").create_protection` method.
+Type annotations and code completion for `#!python boto3.client("shield").create_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection)
 
-Boto3 documentation:
-[Shield.Client.create_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection)
+```python title="Method definition"
+def create_protection(
+    self,
+    *,
+    Name: str,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateProtectionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProtectionRequestRequestTypeDef](./type_defs.md#createprotectionrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProtectionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ResourceArn": ...,
+}
 
-Returns
-[CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
+parent.create_protection(**kwargs)
+```
 
-<a id="create\_protection\_group"></a>
+1. See [:material-code-braces: CreateProtectionRequestRequestTypeDef](./type_defs.md#createprotectionrequestrequesttypedef) 
 
-### create_protection_group
+### create\_protection\_group
 
 Creates a grouping of protected resources so they can be handled as a
 collective.
 
-Type annotations for `boto3.client("shield").create_protection_group` method.
+Type annotations and code completion for `#!python boto3.client("shield").create_protection_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group)
 
-Boto3 documentation:
-[Shield.Client.create_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_protection_group)
+```python title="Method definition"
+def create_protection_group(
+    self,
+    *,
+    ProtectionGroupId: str,
+    Aggregation: ProtectionGroupAggregationType,  # (1)
+    Pattern: ProtectionGroupPatternType,  # (2)
+    ResourceType: ProtectedResourceTypeType = ...,  # (3)
+    Members: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateProtectionGroupRequestRequestTypeDef](./type_defs.md#createprotectiongrouprequestrequesttypedef).
+1. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
+2. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+3. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ProtectionGroupId`: `str` *(required)*
-- `Aggregation`:
-  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
-  *(required)*
-- `Pattern`:
-  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
-  *(required)*
-- `ResourceType`:
-  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProtectionGroupRequestRequestTypeDef = {  # (1)
+    "ProtectionGroupId": ...,
+    "Aggregation": ...,
+    "Pattern": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_protection_group(**kwargs)
+```
 
-<a id="create\_subscription"></a>
+1. See [:material-code-braces: CreateProtectionGroupRequestRequestTypeDef](./type_defs.md#createprotectiongrouprequestrequesttypedef) 
 
-### create_subscription
+### create\_subscription
 
 Activates Shield Advanced for an account.
 
-Type annotations for `boto3.client("shield").create_subscription` method.
+Type annotations and code completion for `#!python boto3.client("shield").create_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_subscription)
 
-Boto3 documentation:
-[Shield.Client.create_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_subscription)
+```python title="Method definition"
+def create_subscription(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete\_protection"></a>
+### delete\_protection
 
-### delete_protection
+Deletes an Shield Advanced  Protection .
 
-Deletes an Shield Advanced Protection .
+Type annotations and code completion for `#!python boto3.client("shield").delete_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)
 
-Type annotations for `boto3.client("shield").delete_protection` method.
+```python title="Method definition"
+def delete_protection(
+    self,
+    *,
+    ProtectionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Boto3 documentation:
-[Shield.Client.delete_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection)
 
-Arguments mapping described in
-[DeleteProtectionRequestRequestTypeDef](./type_defs.md#deleteprotectionrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DeleteProtectionRequestRequestTypeDef = {  # (1)
+    "ProtectionId": ...,
+}
 
-- `ProtectionId`: `str` *(required)*
+parent.delete_protection(**kwargs)
+```
 
-Returns `Dict`\[`str`, `Any`\].
+1. See [:material-code-braces: DeleteProtectionRequestRequestTypeDef](./type_defs.md#deleteprotectionrequestrequesttypedef) 
 
-<a id="delete\_protection\_group"></a>
-
-### delete_protection_group
+### delete\_protection\_group
 
 Removes the specified protection group.
 
-Type annotations for `boto3.client("shield").delete_protection_group` method.
+Type annotations and code completion for `#!python boto3.client("shield").delete_protection_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group)
 
-Boto3 documentation:
-[Shield.Client.delete_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_protection_group)
+```python title="Method definition"
+def delete_protection_group(
+    self,
+    *,
+    ProtectionGroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProtectionGroupRequestRequestTypeDef](./type_defs.md#deleteprotectiongrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProtectionGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProtectionGroupRequestRequestTypeDef = {  # (1)
+    "ProtectionGroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_protection_group(**kwargs)
+```
 
-<a id="delete\_subscription"></a>
+1. See [:material-code-braces: DeleteProtectionGroupRequestRequestTypeDef](./type_defs.md#deleteprotectiongrouprequestrequesttypedef) 
 
-### delete_subscription
+### delete\_subscription
 
 Removes Shield Advanced from an account.
 
-Type annotations for `boto3.client("shield").delete_subscription` method.
+Type annotations and code completion for `#!python boto3.client("shield").delete_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_subscription)
 
-Boto3 documentation:
-[Shield.Client.delete_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_subscription)
+```python title="Method definition"
+def delete_subscription(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe\_attack"></a>
-
-### describe_attack
+### describe\_attack
 
 Describes the details of a DDoS attack.
 
-Type annotations for `boto3.client("shield").describe_attack` method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_attack` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack)
 
-Boto3 documentation:
-[Shield.Client.describe_attack](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack)
+```python title="Method definition"
+def describe_attack(
+    self,
+    *,
+    AttackId: str,
+) -> DescribeAttackResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAttackRequestRequestTypeDef](./type_defs.md#describeattackrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAttackResponseTypeDef](./type_defs.md#describeattackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttackId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAttackRequestRequestTypeDef = {  # (1)
+    "AttackId": ...,
+}
 
-Returns
-[DescribeAttackResponseTypeDef](./type_defs.md#describeattackresponsetypedef).
+parent.describe_attack(**kwargs)
+```
 
-<a id="describe\_attack\_statistics"></a>
+1. See [:material-code-braces: DescribeAttackRequestRequestTypeDef](./type_defs.md#describeattackrequestrequesttypedef) 
 
-### describe_attack_statistics
+### describe\_attack\_statistics
 
-Provides information about the number and type of attacks Shield has detected
-in the last year for all resources that belong to your account, regardless of
+Provides information about the number and type of attacks Shield has detected in
+the last year for all resources that belong to your account, regardless of
 whether you've defined Shield protections for them.
 
-Type annotations for `boto3.client("shield").describe_attack_statistics`
-method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_attack_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics)
 
-Boto3 documentation:
-[Shield.Client.describe_attack_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_attack_statistics)
+```python title="Method definition"
+def describe_attack_statistics(
+    self,
+) -> DescribeAttackStatisticsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef).
+1. See [:material-code-braces: DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef) 
 
-<a id="describe\_drt\_access"></a>
-
-### describe_drt_access
+### describe\_drt\_access
 
 Returns the current role and list of Amazon S3 log buckets used by the Shield
 Response Team (SRT) to access your Amazon Web Services account while assisting
 with attack mitigation.
 
-Type annotations for `boto3.client("shield").describe_drt_access` method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_drt_access` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access)
 
-Boto3 documentation:
-[Shield.Client.describe_drt_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_drt_access)
+```python title="Method definition"
+def describe_drt_access(
+    self,
+) -> DescribeDRTAccessResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef).
+1. See [:material-code-braces: DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef) 
 
-<a id="describe\_emergency\_contact\_settings"></a>
-
-### describe_emergency_contact_settings
+### describe\_emergency\_contact\_settings
 
 A list of email addresses and phone numbers that the Shield Response Team (SRT)
-can use to contact you if you have proactive engagement enabled, for
-escalations to the SRT and to initiate proactive customer support.
+can use to contact you if you have proactive engagement enabled, for escalations
+to the SRT and to initiate proactive customer support.
 
-Type annotations for
-`boto3.client("shield").describe_emergency_contact_settings` method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_emergency_contact_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
 
-Boto3 documentation:
-[Shield.Client.describe_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_emergency_contact_settings)
+```python title="Method definition"
+def describe_emergency_contact_settings(
+    self,
+) -> DescribeEmergencyContactSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef).
+1. See [:material-code-braces: DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef) 
 
-<a id="describe\_protection"></a>
+### describe\_protection
 
-### describe_protection
+Lists the details of a  Protection object.
 
-Lists the details of a Protection object.
+Type annotations and code completion for `#!python boto3.client("shield").describe_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection)
 
-Type annotations for `boto3.client("shield").describe_protection` method.
+```python title="Method definition"
+def describe_protection(
+    self,
+    *,
+    ProtectionId: str = ...,
+    ResourceArn: str = ...,
+) -> DescribeProtectionResponseTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[Shield.Client.describe_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection)
+1. See [:material-code-braces: DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef) 
 
-Arguments mapping described in
-[DescribeProtectionRequestRequestTypeDef](./type_defs.md#describeprotectionrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DescribeProtectionRequestRequestTypeDef = {  # (1)
+    "ProtectionId": ...,
+}
 
-- `ProtectionId`: `str`
-- `ResourceArn`: `str`
+parent.describe_protection(**kwargs)
+```
 
-Returns
-[DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef).
+1. See [:material-code-braces: DescribeProtectionRequestRequestTypeDef](./type_defs.md#describeprotectionrequestrequesttypedef) 
 
-<a id="describe\_protection\_group"></a>
-
-### describe_protection_group
+### describe\_protection\_group
 
 Returns the specification for the specified protection group.
 
-Type annotations for `boto3.client("shield").describe_protection_group` method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_protection_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group)
 
-Boto3 documentation:
-[Shield.Client.describe_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_protection_group)
+```python title="Method definition"
+def describe_protection_group(
+    self,
+    *,
+    ProtectionGroupId: str,
+) -> DescribeProtectionGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProtectionGroupRequestRequestTypeDef](./type_defs.md#describeprotectiongrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeProtectionGroupResponseTypeDef](./type_defs.md#describeprotectiongroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProtectionGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProtectionGroupRequestRequestTypeDef = {  # (1)
+    "ProtectionGroupId": ...,
+}
 
-Returns
-[DescribeProtectionGroupResponseTypeDef](./type_defs.md#describeprotectiongroupresponsetypedef).
+parent.describe_protection_group(**kwargs)
+```
 
-<a id="describe\_subscription"></a>
+1. See [:material-code-braces: DescribeProtectionGroupRequestRequestTypeDef](./type_defs.md#describeprotectiongrouprequestrequesttypedef) 
 
-### describe_subscription
+### describe\_subscription
 
 Provides details about the Shield Advanced subscription for an account.
 
-Type annotations for `boto3.client("shield").describe_subscription` method.
+Type annotations and code completion for `#!python boto3.client("shield").describe_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription)
 
-Boto3 documentation:
-[Shield.Client.describe_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.describe_subscription)
+```python title="Method definition"
+def describe_subscription(
+    self,
+) -> DescribeSubscriptionResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
+1. See [:material-code-braces: DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef) 
 
-<a id="disable\_application\_layer\_automatic\_response"></a>
-
-### disable_application_layer_automatic_response
+### disable\_application\_layer\_automatic\_response
 
 Disable the Shield Advanced automatic application layer DDoS mitigation feature
 for the resource.
 
-Type annotations for
-`boto3.client("shield").disable_application_layer_automatic_response` method.
+Type annotations and code completion for `#!python boto3.client("shield").disable_application_layer_automatic_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_application_layer_automatic_response)
 
-Boto3 documentation:
-[Shield.Client.disable_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_application_layer_automatic_response)
+```python title="Method definition"
+def disable_application_layer_automatic_response(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#disableapplicationlayerautomaticresponserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableApplicationLayerAutomaticResponseRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_application_layer_automatic_response(**kwargs)
+```
 
-<a id="disable\_proactive\_engagement"></a>
+1. See [:material-code-braces: DisableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#disableapplicationlayerautomaticresponserequestrequesttypedef) 
 
-### disable_proactive_engagement
+### disable\_proactive\_engagement
 
 Removes authorization from the Shield Response Team (SRT) to notify contacts
 about escalations to the SRT and to initiate proactive customer support.
 
-Type annotations for `boto3.client("shield").disable_proactive_engagement`
-method.
+Type annotations and code completion for `#!python boto3.client("shield").disable_proactive_engagement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
 
-Boto3 documentation:
-[Shield.Client.disable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
+```python title="Method definition"
+def disable_proactive_engagement(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_drt\_log\_bucket"></a>
-
-### disassociate_drt_log_bucket
+### disassociate\_drt\_log\_bucket
 
 Removes the Shield Response Team's (SRT) access to the specified Amazon S3
 bucket containing the logs that you shared previously.
 
-Type annotations for `boto3.client("shield").disassociate_drt_log_bucket`
-method.
+Type annotations and code completion for `#!python boto3.client("shield").disassociate_drt_log_bucket` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
 
-Boto3 documentation:
-[Shield.Client.disassociate_drt_log_bucket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_log_bucket)
+```python title="Method definition"
+def disassociate_drt_log_bucket(
+    self,
+    *,
+    LogBucket: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#disassociatedrtlogbucketrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LogBucket`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateDRTLogBucketRequestRequestTypeDef = {  # (1)
+    "LogBucket": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_drt_log_bucket(**kwargs)
+```
 
-<a id="disassociate\_drt\_role"></a>
+1. See [:material-code-braces: DisassociateDRTLogBucketRequestRequestTypeDef](./type_defs.md#disassociatedrtlogbucketrequestrequesttypedef) 
 
-### disassociate_drt_role
+### disassociate\_drt\_role
 
 Removes the Shield Response Team's (SRT) access to your Amazon Web Services
 account.
 
-Type annotations for `boto3.client("shield").disassociate_drt_role` method.
+Type annotations and code completion for `#!python boto3.client("shield").disassociate_drt_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_role)
 
-Boto3 documentation:
-[Shield.Client.disassociate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_role)
+```python title="Method definition"
+def disassociate_drt_role(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_health\_check"></a>
-
-### disassociate_health_check
+### disassociate\_health\_check
 
 Removes health-based detection from the Shield Advanced protection for a
 resource.
 
-Type annotations for `boto3.client("shield").disassociate_health_check` method.
+Type annotations and code completion for `#!python boto3.client("shield").disassociate_health_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check)
 
-Boto3 documentation:
-[Shield.Client.disassociate_health_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_health_check)
+```python title="Method definition"
+def disassociate_health_check(
+    self,
+    *,
+    ProtectionId: str,
+    HealthCheckArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateHealthCheckRequestRequestTypeDef](./type_defs.md#disassociatehealthcheckrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProtectionId`: `str` *(required)*
-- `HealthCheckArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateHealthCheckRequestRequestTypeDef = {  # (1)
+    "ProtectionId": ...,
+    "HealthCheckArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_health_check(**kwargs)
+```
 
-<a id="enable\_application\_layer\_automatic\_response"></a>
+1. See [:material-code-braces: DisassociateHealthCheckRequestRequestTypeDef](./type_defs.md#disassociatehealthcheckrequestrequesttypedef) 
 
-### enable_application_layer_automatic_response
+### enable\_application\_layer\_automatic\_response
 
 Enable the Shield Advanced automatic application layer DDoS mitigation for the
 resource.
 
-Type annotations for
-`boto3.client("shield").enable_application_layer_automatic_response` method.
+Type annotations and code completion for `#!python boto3.client("shield").enable_application_layer_automatic_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_application_layer_automatic_response)
 
-Boto3 documentation:
-[Shield.Client.enable_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_application_layer_automatic_response)
+```python title="Method definition"
+def enable_application_layer_automatic_response(
+    self,
+    *,
+    ResourceArn: str,
+    Action: ResponseActionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#enableapplicationlayerautomaticresponserequestrequesttypedef).
+1. See [:material-code-braces: ResponseActionTypeDef](./type_defs.md#responseactiontypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableApplicationLayerAutomaticResponseRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Action": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_application_layer_automatic_response(**kwargs)
+```
 
-<a id="enable\_proactive\_engagement"></a>
+1. See [:material-code-braces: EnableApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#enableapplicationlayerautomaticresponserequestrequesttypedef) 
 
-### enable_proactive_engagement
+### enable\_proactive\_engagement
 
 Authorizes the Shield Response Team (SRT) to use email and phone to notify
 contacts about escalations to the SRT and to initiate proactive customer
 support.
 
-Type annotations for `boto3.client("shield").enable_proactive_engagement`
-method.
+Type annotations and code completion for `#!python boto3.client("shield").enable_proactive_engagement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
 
-Boto3 documentation:
-[Shield.Client.enable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
+```python title="Method definition"
+def enable_proactive_engagement(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("shield").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("shield").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Shield.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_subscription\_state"></a>
-
-### get_subscription_state
+### get\_subscription\_state
 
 Returns the `SubscriptionState` , either `Active` or `Inactive` .
 
-Type annotations for `boto3.client("shield").get_subscription_state` method.
+Type annotations and code completion for `#!python boto3.client("shield").get_subscription_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state)
 
-Boto3 documentation:
-[Shield.Client.get_subscription_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.get_subscription_state)
+```python title="Method definition"
+def get_subscription_state(
+    self,
+) -> GetSubscriptionStateResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef).
+1. See [:material-code-braces: GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef) 
 
-<a id="list\_attacks"></a>
-
-### list_attacks
+### list\_attacks
 
 Returns all ongoing DDoS attacks or all DDoS attacks during a specified time
 period.
 
-Type annotations for `boto3.client("shield").list_attacks` method.
+Type annotations and code completion for `#!python boto3.client("shield").list_attacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks)
 
-Boto3 documentation:
-[Shield.Client.list_attacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_attacks)
+```python title="Method definition"
+def list_attacks(
+    self,
+    *,
+    ResourceArns: Sequence[str] = ...,
+    StartTime: TimeRangeTypeDef = ...,  # (1)
+    EndTime: TimeRangeTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAttacksResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListAttacksRequestRequestTypeDef](./type_defs.md#listattacksrequestrequesttypedef).
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+3. See [:material-code-braces: ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArns`: `Sequence`\[`str`\]
-- `StartTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `EndTime`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttacksRequestRequestTypeDef = {  # (1)
+    "ResourceArns": ...,
+}
 
-Returns
-[ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef).
+parent.list_attacks(**kwargs)
+```
 
-<a id="list\_protection\_groups"></a>
+1. See [:material-code-braces: ListAttacksRequestRequestTypeDef](./type_defs.md#listattacksrequestrequesttypedef) 
 
-### list_protection_groups
+### list\_protection\_groups
 
-Retrieves the ProtectionGroup objects for the account.
+Retrieves the  ProtectionGroup objects for the account.
 
-Type annotations for `boto3.client("shield").list_protection_groups` method.
+Type annotations and code completion for `#!python boto3.client("shield").list_protection_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
 
-Boto3 documentation:
-[Shield.Client.list_protection_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protection_groups)
+```python title="Method definition"
+def list_protection_groups(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProtectionGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProtectionGroupsRequestRequestTypeDef](./type_defs.md#listprotectiongroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProtectionGroupsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef).
+parent.list_protection_groups(**kwargs)
+```
 
-<a id="list\_protections"></a>
+1. See [:material-code-braces: ListProtectionGroupsRequestRequestTypeDef](./type_defs.md#listprotectiongroupsrequestrequesttypedef) 
 
-### list_protections
+### list\_protections
 
-Lists all Protection objects for the account.
+Lists all  Protection objects for the account.
 
-Type annotations for `boto3.client("shield").list_protections` method.
+Type annotations and code completion for `#!python boto3.client("shield").list_protections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
 
-Boto3 documentation:
-[Shield.Client.list_protections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_protections)
+```python title="Method definition"
+def list_protections(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProtectionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProtectionsRequestRequestTypeDef](./type_defs.md#listprotectionsrequestrequesttypedef).
+1. See [:material-code-braces: ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProtectionsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef).
+parent.list_protections(**kwargs)
+```
 
-<a id="list\_resources\_in\_protection\_group"></a>
+1. See [:material-code-braces: ListProtectionsRequestRequestTypeDef](./type_defs.md#listprotectionsrequestrequesttypedef) 
 
-### list_resources_in_protection_group
+### list\_resources\_in\_protection\_group
 
 Retrieves the resources that are included in the protection group.
 
-Type annotations for
-`boto3.client("shield").list_resources_in_protection_group` method.
+Type annotations and code completion for `#!python boto3.client("shield").list_resources_in_protection_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
 
-Boto3 documentation:
-[Shield.Client.list_resources_in_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_resources_in_protection_group)
+```python title="Method definition"
+def list_resources_in_protection_group(
+    self,
+    *,
+    ProtectionGroupId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListResourcesInProtectionGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesInProtectionGroupRequestRequestTypeDef](./type_defs.md#listresourcesinprotectiongrouprequestrequesttypedef).
+1. See [:material-code-braces: ListResourcesInProtectionGroupResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProtectionGroupId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesInProtectionGroupRequestRequestTypeDef = {  # (1)
+    "ProtectionGroupId": ...,
+}
 
-Returns
-[ListResourcesInProtectionGroupResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponsetypedef).
+parent.list_resources_in_protection_group(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResourcesInProtectionGroupRequestRequestTypeDef](./type_defs.md#listresourcesinprotectiongrouprequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets information about Amazon Web Services tags for a specified Amazon Resource
 Name (ARN) in Shield.
 
-Type annotations for `boto3.client("shield").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("shield").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Shield.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates tags for a resource in Shield.
 
-Type annotations for `boto3.client("shield").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("shield").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource)
 
-Boto3 documentation:
-[Shield.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource in Shield.
 
-Type annotations for `boto3.client("shield").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("shield").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource)
 
-Boto3 documentation:
-[Shield.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_application\_layer\_automatic\_response"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_application_layer_automatic_response
+### update\_application\_layer\_automatic\_response
 
 Updates an existing Shield Advanced automatic application layer DDoS mitigation
 configuration for the specified resource.
 
-Type annotations for
-`boto3.client("shield").update_application_layer_automatic_response` method.
+Type annotations and code completion for `#!python boto3.client("shield").update_application_layer_automatic_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_application_layer_automatic_response)
 
-Boto3 documentation:
-[Shield.Client.update_application_layer_automatic_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_application_layer_automatic_response)
+```python title="Method definition"
+def update_application_layer_automatic_response(
+    self,
+    *,
+    ResourceArn: str,
+    Action: ResponseActionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#updateapplicationlayerautomaticresponserequestrequesttypedef).
+1. See [:material-code-braces: ResponseActionTypeDef](./type_defs.md#responseactiontypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Action`: [ResponseActionTypeDef](./type_defs.md#responseactiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Action": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_application_layer_automatic_response(**kwargs)
+```
 
-<a id="update\_emergency\_contact\_settings"></a>
+1. See [:material-code-braces: UpdateApplicationLayerAutomaticResponseRequestRequestTypeDef](./type_defs.md#updateapplicationlayerautomaticresponserequestrequesttypedef) 
 
-### update_emergency_contact_settings
+### update\_emergency\_contact\_settings
 
 Updates the details of the list of email addresses and phone numbers that the
 Shield Response Team (SRT) can use to contact you if you have proactive
 engagement enabled, for escalations to the SRT and to initiate proactive
 customer support.
 
-Type annotations for `boto3.client("shield").update_emergency_contact_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("shield").update_emergency_contact_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
 
-Boto3 documentation:
-[Shield.Client.update_emergency_contact_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_emergency_contact_settings)
+```python title="Method definition"
+def update_emergency_contact_settings(
+    self,
+    *,
+    EmergencyContactList: Sequence[EmergencyContactTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEmergencyContactSettingsRequestRequestTypeDef](./type_defs.md#updateemergencycontactsettingsrequestrequesttypedef).
+1. See [:material-code-braces: EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef) 
 
-Keyword-only arguments:
 
-- `EmergencyContactList`:
-  `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEmergencyContactSettingsRequestRequestTypeDef = {  # (1)
+    "EmergencyContactList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_emergency_contact_settings(**kwargs)
+```
 
-<a id="update\_protection\_group"></a>
+1. See [:material-code-braces: UpdateEmergencyContactSettingsRequestRequestTypeDef](./type_defs.md#updateemergencycontactsettingsrequestrequesttypedef) 
 
-### update_protection_group
+### update\_protection\_group
 
 Updates an existing protection group.
 
-Type annotations for `boto3.client("shield").update_protection_group` method.
+Type annotations and code completion for `#!python boto3.client("shield").update_protection_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group)
 
-Boto3 documentation:
-[Shield.Client.update_protection_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_protection_group)
+```python title="Method definition"
+def update_protection_group(
+    self,
+    *,
+    ProtectionGroupId: str,
+    Aggregation: ProtectionGroupAggregationType,  # (1)
+    Pattern: ProtectionGroupPatternType,  # (2)
+    ResourceType: ProtectedResourceTypeType = ...,  # (3)
+    Members: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateProtectionGroupRequestRequestTypeDef](./type_defs.md#updateprotectiongrouprequestrequesttypedef).
+1. See [:material-code-brackets: ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype) 
+2. See [:material-code-brackets: ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype) 
+3. See [:material-code-brackets: ProtectedResourceTypeType](./literals.md#protectedresourcetypetype) 
 
-Keyword-only arguments:
 
-- `ProtectionGroupId`: `str` *(required)*
-- `Aggregation`:
-  [ProtectionGroupAggregationType](./literals.md#protectiongroupaggregationtype)
-  *(required)*
-- `Pattern`:
-  [ProtectionGroupPatternType](./literals.md#protectiongrouppatterntype)
-  *(required)*
-- `ResourceType`:
-  [ProtectedResourceTypeType](./literals.md#protectedresourcetypetype)
-- `Members`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateProtectionGroupRequestRequestTypeDef = {  # (1)
+    "ProtectionGroupId": ...,
+    "Aggregation": ...,
+    "Pattern": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_protection_group(**kwargs)
+```
 
-<a id="update\_subscription"></a>
+1. See [:material-code-braces: UpdateProtectionGroupRequestRequestTypeDef](./type_defs.md#updateprotectiongrouprequestrequesttypedef) 
 
-### update_subscription
+### update\_subscription
 
 Updates the details of an existing subscription.
 
-Type annotations for `boto3.client("shield").update_subscription` method.
+Type annotations and code completion for `#!python boto3.client("shield").update_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription)
 
-Boto3 documentation:
-[Shield.Client.update_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.update_subscription)
+```python title="Method definition"
+def update_subscription(
+    self,
+    *,
+    AutoRenew: AutoRenewType = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSubscriptionRequestRequestTypeDef](./type_defs.md#updatesubscriptionrequestrequesttypedef).
+1. See [:material-code-brackets: AutoRenewType](./literals.md#autorenewtype) 
 
-Keyword-only arguments:
 
-- `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
+```python title="Usage example with kwargs"
+kwargs: UpdateSubscriptionRequestRequestTypeDef = {  # (1)
+    "AutoRenew": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_subscription(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSubscriptionRequestRequestTypeDef](./type_defs.md#updatesubscriptionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("shield").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("shield").get_paginator` method with overloads.
 
-- `client.get_paginator("list_attacks")` ->
-  [ListAttacksPaginator](./paginators.md#listattackspaginator)
-- `client.get_paginator("list_protections")` ->
-  [ListProtectionsPaginator](./paginators.md#listprotectionspaginator)
+- `client.get_paginator("list_attacks")` -> [ListAttacksPaginator](./paginators.md#listattackspaginator)
+- `client.get_paginator("list_protections")` -> [ListProtectionsPaginator](./paginators.md#listprotectionspaginator)
+
+
+

@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-simpledb-module"></a>
-
-# Examples for boto3 SimpleDB module
+# Examples
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Examples
 
-- [Examples for boto3 SimpleDB module](#examples-for-boto3-simpledb-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+    type annotations stubs module [mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sdb]` package installed.
 
-Write your `SimpleDB` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `SimpleDB` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SimpleDBClient
-# and provides type checking and code completion
-client = session.client("sdb")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.batch_delete_attributes()
 
-# paginator has type ListDomainsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_domains")
-for item in paginator.paginate(...):
-    # item has type ListDomainsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("sdb")  # (1)
+    result = client.domain_metadata()  # (2)
+    ```
+
+    1. client: [SimpleDBClient](./client.md)
+    2. result: [:material-code-braces: DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("sdb")  # (1)
+
+    paginator = client.get_paginator("list_domains")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SimpleDBClient](./client.md)
+    2. paginator: [ListDomainsPaginator](./paginators.md#listdomainspaginator)
+    3. item: [:material-code-braces: ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sdb]` or a standalone `mypy_boto3_sdb` package, you have
-to explicitly specify `client: SimpleDBClient` type annotation.
+With `boto3-stubs-lite[sdb]`
+or a standalone `mypy_boto3_sdb` package, you have to explicitly specify `client: SimpleDBClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sdb.client import SimpleDBClient
-from mypy_boto3_sdb.paginator import ListDomainsPaginator
-
-from mypy_boto3_sdb.literals import PaginatorName
-
-from mypy_boto3_sdb.type_defs import None
-from mypy_boto3_sdb.type_defs import ListDomainsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SimpleDBClient = session.client("sdb")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.batch_delete_attributes()
+    from mypy_boto3_sdb.client import SimpleDBClient
+    from mypy_boto3_sdb.type_defs import DomainMetadataResultTypeDef
+    from mypy_boto3_sdb.type_defs import DomainMetadataRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_domains"
-paginator: ListDomainsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDomainsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: SimpleDBClient = session.client("sdb")
+
+    kwargs: DomainMetadataRequestRequestTypeDef = {...}
+    result: DomainMetadataResultTypeDef = client.domain_metadata(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sdb.client import SimpleDBClient
+    from mypy_boto3_sdb.paginator import ListDomainsPaginator
+    from mypy_boto3_sdb.type_defs import ListDomainsResultTypeDef
+
+
+    session = Session()
+    client: SimpleDBClient = session.client("sdb")
+
+    paginator: ListDomainsPaginator = client.get_paginator("list_domains")
+    for item in paginator.paginate(...):
+        item: ListDomainsResultTypeDef
+        print(item)
+    ```
+
+
+
+

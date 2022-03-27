@@ -1,80 +1,18 @@
-<a id="licensemanagerclient-for-boto3-licensemanager-module"></a>
-
-# LicenseManagerClient for boto3 LicenseManager module
+# LicenseManagerClient
 
 > [Index](../README.md) > [LicenseManager](./README.md) > LicenseManagerClient
 
-Auto-generated documentation for
-[LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
-type annotations stubs module
-[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
+!!! note ""
 
-- [LicenseManagerClient for boto3 LicenseManager module](#licensemanagerclient-for-boto3-licensemanager-module)
-  - [LicenseManagerClient](#licensemanagerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_grant](#accept_grant)
-    - [can_paginate](#can_paginate)
-    - [check_in_license](#check_in_license)
-    - [checkout_borrow_license](#checkout_borrow_license)
-    - [checkout_license](#checkout_license)
-    - [create_grant](#create_grant)
-    - [create_grant_version](#create_grant_version)
-    - [create_license](#create_license)
-    - [create_license_configuration](#create_license_configuration)
-    - [create_license_conversion_task_for_resource](#create_license_conversion_task_for_resource)
-    - [create_license_manager_report_generator](#create_license_manager_report_generator)
-    - [create_license_version](#create_license_version)
-    - [create_token](#create_token)
-    - [delete_grant](#delete_grant)
-    - [delete_license](#delete_license)
-    - [delete_license_configuration](#delete_license_configuration)
-    - [delete_license_manager_report_generator](#delete_license_manager_report_generator)
-    - [delete_token](#delete_token)
-    - [extend_license_consumption](#extend_license_consumption)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_access_token](#get_access_token)
-    - [get_grant](#get_grant)
-    - [get_license](#get_license)
-    - [get_license_configuration](#get_license_configuration)
-    - [get_license_conversion_task](#get_license_conversion_task)
-    - [get_license_manager_report_generator](#get_license_manager_report_generator)
-    - [get_license_usage](#get_license_usage)
-    - [get_service_settings](#get_service_settings)
-    - [list_associations_for_license_configuration](#list_associations_for_license_configuration)
-    - [list_distributed_grants](#list_distributed_grants)
-    - [list_failures_for_license_configuration_operations](#list_failures_for_license_configuration_operations)
-    - [list_license_configurations](#list_license_configurations)
-    - [list_license_conversion_tasks](#list_license_conversion_tasks)
-    - [list_license_manager_report_generators](#list_license_manager_report_generators)
-    - [list_license_specifications_for_resource](#list_license_specifications_for_resource)
-    - [list_license_versions](#list_license_versions)
-    - [list_licenses](#list_licenses)
-    - [list_received_grants](#list_received_grants)
-    - [list_received_licenses](#list_received_licenses)
-    - [list_resource_inventory](#list_resource_inventory)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_tokens](#list_tokens)
-    - [list_usage_for_license_configuration](#list_usage_for_license_configuration)
-    - [reject_grant](#reject_grant)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_license_configuration](#update_license_configuration)
-    - [update_license_manager_report_generator](#update_license_manager_report_generator)
-    - [update_license_specifications_for_resource](#update_license_specifications_for_resource)
-    - [update_service_settings](#update_service_settings)
-    - [get_paginator](#get_paginator)
-
-<a id="licensemanagerclient"></a>
+    Auto-generated documentation for [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
+    type annotations stubs module [mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 ## LicenseManagerClient
 
-Type annotations for `boto3.client("license-manager")`
+Type annotations and code completion for `#!python boto3.client("license-manager")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_license_manager.client import LicenseManagerClient
 
@@ -82,1311 +20,1690 @@ def get_license-manager_client() -> LicenseManagerClient:
     return Session().client("license-manager")
 ```
 
-Boto3 documentation:
-[LicenseManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("license-manager").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("license-manager")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AuthorizationException,
+    client.ClientError,
+    client.ConflictException,
+    client.EntitlementNotAllowedException,
+    client.FailedDependencyException,
+    client.FilterLimitExceededException,
+    client.InvalidParameterValueException,
+    client.InvalidResourceStateException,
+    client.LicenseUsageException,
+    client.NoEntitlementsAllowedException,
+    client.RateLimitExceededException,
+    client.RedirectException,
+    client.ResourceLimitExceededException,
+    client.ResourceNotFoundException,
+    client.ServerInternalException,
+    client.UnsupportedDigitalSignatureMethodException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_license_manager.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AuthorizationException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.EntitlementNotAllowedException`
-- `Exceptions.FailedDependencyException`
-- `Exceptions.FilterLimitExceededException`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidResourceStateException`
-- `Exceptions.LicenseUsageException`
-- `Exceptions.NoEntitlementsAllowedException`
-- `Exceptions.RateLimitExceededException`
-- `Exceptions.RedirectException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServerInternalException`
-- `Exceptions.UnsupportedDigitalSignatureMethodException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LicenseManagerClient exceptions.
-
-Type annotations for `boto3.client("license-manager").exceptions` method.
-
-Boto3 documentation:
-[LicenseManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_grant"></a>
-
-### accept_grant
+### accept\_grant
 
 Accepts the specified grant.
 
-Type annotations for `boto3.client("license-manager").accept_grant` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").accept_grant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
 
-Boto3 documentation:
-[LicenseManager.Client.accept_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.accept_grant)
+```python title="Method definition"
+def accept_grant(
+    self,
+    *,
+    GrantArn: str,
+) -> AcceptGrantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptGrantRequestRequestTypeDef](./type_defs.md#acceptgrantrequestrequesttypedef).
+1. See [:material-code-braces: AcceptGrantResponseTypeDef](./type_defs.md#acceptgrantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptGrantRequestRequestTypeDef = {  # (1)
+    "GrantArn": ...,
+}
 
-Returns
-[AcceptGrantResponseTypeDef](./type_defs.md#acceptgrantresponsetypedef).
+parent.accept_grant(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AcceptGrantRequestRequestTypeDef](./type_defs.md#acceptgrantrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("license-manager").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
 
-Boto3 documentation:
-[LicenseManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="check\_in\_license"></a>
-
-### check_in_license
+### check\_in\_license
 
 Checks in the specified license.
 
-Type annotations for `boto3.client("license-manager").check_in_license` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").check_in_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
 
-Boto3 documentation:
-[LicenseManager.Client.check_in_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.check_in_license)
+```python title="Method definition"
+def check_in_license(
+    self,
+    *,
+    LicenseConsumptionToken: str,
+    Beneficiary: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CheckInLicenseRequestRequestTypeDef](./type_defs.md#checkinlicenserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LicenseConsumptionToken`: `str` *(required)*
-- `Beneficiary`: `str`
+```python title="Usage example with kwargs"
+kwargs: CheckInLicenseRequestRequestTypeDef = {  # (1)
+    "LicenseConsumptionToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.check_in_license(**kwargs)
+```
 
-<a id="checkout\_borrow\_license"></a>
+1. See [:material-code-braces: CheckInLicenseRequestRequestTypeDef](./type_defs.md#checkinlicenserequestrequesttypedef) 
 
-### checkout_borrow_license
+### checkout\_borrow\_license
 
 Checks out the specified license for offline use.
 
-Type annotations for `boto3.client("license-manager").checkout_borrow_license`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").checkout_borrow_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
 
-Boto3 documentation:
-[LicenseManager.Client.checkout_borrow_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_borrow_license)
+```python title="Method definition"
+def checkout_borrow_license(
+    self,
+    *,
+    LicenseArn: str,
+    Entitlements: Sequence[EntitlementDataTypeDef],  # (1)
+    DigitalSignatureMethod: DigitalSignatureMethodType,  # (2)
+    ClientToken: str,
+    NodeId: str = ...,
+    CheckoutMetadata: Sequence[MetadataTypeDef] = ...,  # (3)
+) -> CheckoutBorrowLicenseResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CheckoutBorrowLicenseRequestRequestTypeDef](./type_defs.md#checkoutborrowlicenserequestrequesttypedef).
+1. See [:material-code-braces: EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef) 
+2. See [:material-code-brackets: DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype) 
+3. See [:material-code-braces: MetadataTypeDef](./type_defs.md#metadatatypedef) 
+4. See [:material-code-braces: CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `Entitlements`:
-  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
-  *(required)*
-- `DigitalSignatureMethod`: `Literal['JWT_PS384']` (see
-  [DigitalSignatureMethodType](./literals.md#digitalsignaturemethodtype))
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `NodeId`: `str`
-- `CheckoutMetadata`:
-  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CheckoutBorrowLicenseRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+    "Entitlements": ...,
+    "DigitalSignatureMethod": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CheckoutBorrowLicenseResponseTypeDef](./type_defs.md#checkoutborrowlicenseresponsetypedef).
+parent.checkout_borrow_license(**kwargs)
+```
 
-<a id="checkout\_license"></a>
+1. See [:material-code-braces: CheckoutBorrowLicenseRequestRequestTypeDef](./type_defs.md#checkoutborrowlicenserequestrequesttypedef) 
 
-### checkout_license
+### checkout\_license
 
 Checks out the specified license.
 
-Type annotations for `boto3.client("license-manager").checkout_license` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").checkout_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
 
-Boto3 documentation:
-[LicenseManager.Client.checkout_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.checkout_license)
+```python title="Method definition"
+def checkout_license(
+    self,
+    *,
+    ProductSKU: str,
+    CheckoutType: CheckoutTypeType,  # (1)
+    KeyFingerprint: str,
+    Entitlements: Sequence[EntitlementDataTypeDef],  # (2)
+    ClientToken: str,
+    Beneficiary: str = ...,
+    NodeId: str = ...,
+) -> CheckoutLicenseResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CheckoutLicenseRequestRequestTypeDef](./type_defs.md#checkoutlicenserequestrequesttypedef).
+1. See [:material-code-brackets: CheckoutTypeType](./literals.md#checkouttypetype) 
+2. See [:material-code-braces: EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef) 
+3. See [:material-code-braces: CheckoutLicenseResponseTypeDef](./type_defs.md#checkoutlicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProductSKU`: `str` *(required)*
-- `CheckoutType`: [CheckoutTypeType](./literals.md#checkouttypetype)
-  *(required)*
-- `KeyFingerprint`: `str` *(required)*
-- `Entitlements`:
-  `Sequence`\[[EntitlementDataTypeDef](./type_defs.md#entitlementdatatypedef)\]
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `Beneficiary`: `str`
-- `NodeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CheckoutLicenseRequestRequestTypeDef = {  # (1)
+    "ProductSKU": ...,
+    "CheckoutType": ...,
+    "KeyFingerprint": ...,
+    "Entitlements": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CheckoutLicenseResponseTypeDef](./type_defs.md#checkoutlicenseresponsetypedef).
+parent.checkout_license(**kwargs)
+```
 
-<a id="create\_grant"></a>
+1. See [:material-code-braces: CheckoutLicenseRequestRequestTypeDef](./type_defs.md#checkoutlicenserequestrequesttypedef) 
 
-### create_grant
+### create\_grant
 
 Creates a grant for the specified license.
 
-Type annotations for `boto3.client("license-manager").create_grant` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_grant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
 
-Boto3 documentation:
-[LicenseManager.Client.create_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant)
+```python title="Method definition"
+def create_grant(
+    self,
+    *,
+    ClientToken: str,
+    GrantName: str,
+    LicenseArn: str,
+    Principals: Sequence[str],
+    HomeRegion: str,
+    AllowedOperations: Sequence[AllowedOperationType],  # (1)
+) -> CreateGrantResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGrantRequestRequestTypeDef](./type_defs.md#creategrantrequestrequesttypedef).
+1. See [:material-code-brackets: AllowedOperationType](./literals.md#allowedoperationtype) 
+2. See [:material-code-braces: CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `GrantName`: `str` *(required)*
-- `LicenseArn`: `str` *(required)*
-- `Principals`: `Sequence`\[`str`\] *(required)*
-- `HomeRegion`: `str` *(required)*
-- `AllowedOperations`:
-  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateGrantRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "GrantName": ...,
+    "LicenseArn": ...,
+    "Principals": ...,
+    "HomeRegion": ...,
+    "AllowedOperations": ...,
+}
 
-Returns
-[CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
+parent.create_grant(**kwargs)
+```
 
-<a id="create\_grant\_version"></a>
+1. See [:material-code-braces: CreateGrantRequestRequestTypeDef](./type_defs.md#creategrantrequestrequesttypedef) 
 
-### create_grant_version
+### create\_grant\_version
 
 Creates a new version of the specified grant.
 
-Type annotations for `boto3.client("license-manager").create_grant_version`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_grant_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
 
-Boto3 documentation:
-[LicenseManager.Client.create_grant_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_grant_version)
+```python title="Method definition"
+def create_grant_version(
+    self,
+    *,
+    ClientToken: str,
+    GrantArn: str,
+    GrantName: str = ...,
+    AllowedOperations: Sequence[AllowedOperationType] = ...,  # (1)
+    Status: GrantStatusType = ...,  # (2)
+    StatusReason: str = ...,
+    SourceVersion: str = ...,
+) -> CreateGrantVersionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateGrantVersionRequestRequestTypeDef](./type_defs.md#creategrantversionrequestrequesttypedef).
+1. See [:material-code-brackets: AllowedOperationType](./literals.md#allowedoperationtype) 
+2. See [:material-code-brackets: GrantStatusType](./literals.md#grantstatustype) 
+3. See [:material-code-braces: CreateGrantVersionResponseTypeDef](./type_defs.md#creategrantversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `GrantArn`: `str` *(required)*
-- `GrantName`: `str`
-- `AllowedOperations`:
-  `Sequence`\[[AllowedOperationType](./literals.md#allowedoperationtype)\]
-- `Status`: [GrantStatusType](./literals.md#grantstatustype)
-- `StatusReason`: `str`
-- `SourceVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGrantVersionRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "GrantArn": ...,
+}
 
-Returns
-[CreateGrantVersionResponseTypeDef](./type_defs.md#creategrantversionresponsetypedef).
+parent.create_grant_version(**kwargs)
+```
 
-<a id="create\_license"></a>
+1. See [:material-code-braces: CreateGrantVersionRequestRequestTypeDef](./type_defs.md#creategrantversionrequestrequesttypedef) 
 
-### create_license
+### create\_license
 
 Creates a license.
 
-Type annotations for `boto3.client("license-manager").create_license` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
 
-Boto3 documentation:
-[LicenseManager.Client.create_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license)
+```python title="Method definition"
+def create_license(
+    self,
+    *,
+    LicenseName: str,
+    ProductName: str,
+    ProductSKU: str,
+    Issuer: IssuerTypeDef,  # (1)
+    HomeRegion: str,
+    Validity: DatetimeRangeTypeDef,  # (2)
+    Entitlements: Sequence[EntitlementTypeDef],  # (3)
+    Beneficiary: str,
+    ConsumptionConfiguration: ConsumptionConfigurationTypeDef,  # (4)
+    ClientToken: str,
+    LicenseMetadata: Sequence[MetadataTypeDef] = ...,  # (5)
+) -> CreateLicenseResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateLicenseRequestRequestTypeDef](./type_defs.md#createlicenserequestrequesttypedef).
+1. See [:material-code-braces: IssuerTypeDef](./type_defs.md#issuertypedef) 
+2. See [:material-code-braces: DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+3. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
+4. See [:material-code-braces: ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef) 
+5. See [:material-code-braces: MetadataTypeDef](./type_defs.md#metadatatypedef) 
+6. See [:material-code-braces: CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseName`: `str` *(required)*
-- `ProductName`: `str` *(required)*
-- `ProductSKU`: `str` *(required)*
-- `Issuer`: [IssuerTypeDef](./type_defs.md#issuertypedef) *(required)*
-- `HomeRegion`: `str` *(required)*
-- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-  *(required)*
-- `Entitlements`:
-  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
-  *(required)*
-- `Beneficiary`: `str` *(required)*
-- `ConsumptionConfiguration`:
-  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `LicenseMetadata`:
-  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLicenseRequestRequestTypeDef = {  # (1)
+    "LicenseName": ...,
+    "ProductName": ...,
+    "ProductSKU": ...,
+    "Issuer": ...,
+    "HomeRegion": ...,
+    "Validity": ...,
+    "Entitlements": ...,
+    "Beneficiary": ...,
+    "ConsumptionConfiguration": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateLicenseResponseTypeDef](./type_defs.md#createlicenseresponsetypedef).
+parent.create_license(**kwargs)
+```
 
-<a id="create\_license\_configuration"></a>
+1. See [:material-code-braces: CreateLicenseRequestRequestTypeDef](./type_defs.md#createlicenserequestrequesttypedef) 
 
-### create_license_configuration
+### create\_license\_configuration
 
 Creates a license configuration.
 
-Type annotations for
-`boto3.client("license-manager").create_license_configuration` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.create_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_configuration)
+```python title="Method definition"
+def create_license_configuration(
+    self,
+    *,
+    Name: str,
+    LicenseCountingType: LicenseCountingTypeType,  # (1)
+    Description: str = ...,
+    LicenseCount: int = ...,
+    LicenseCountHardLimit: bool = ...,
+    LicenseRules: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    DisassociateWhenNotFound: bool = ...,
+    ProductInformationList: Sequence[ProductInformationTypeDef] = ...,  # (3)
+) -> CreateLicenseConfigurationResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#createlicenseconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseCountingTypeType](./literals.md#licensecountingtypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ProductInformationTypeDef](./type_defs.md#productinformationtypedef) 
+4. See [:material-code-braces: CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `LicenseCountingType`:
-  [LicenseCountingTypeType](./literals.md#licensecountingtypetype) *(required)*
-- `Description`: `str`
-- `LicenseCount`: `int`
-- `LicenseCountHardLimit`: `bool`
-- `LicenseRules`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `DisassociateWhenNotFound`: `bool`
-- `ProductInformationList`:
-  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "LicenseCountingType": ...,
+}
 
-Returns
-[CreateLicenseConfigurationResponseTypeDef](./type_defs.md#createlicenseconfigurationresponsetypedef).
+parent.create_license_configuration(**kwargs)
+```
 
-<a id="create\_license\_conversion\_task\_for\_resource"></a>
+1. See [:material-code-braces: CreateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#createlicenseconfigurationrequestrequesttypedef) 
 
-### create_license_conversion_task_for_resource
+### create\_license\_conversion\_task\_for\_resource
 
 Creates a new license conversion task.
 
-Type annotations for
-`boto3.client("license-manager").create_license_conversion_task_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_license_conversion_task_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_conversion_task_for_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.create_license_conversion_task_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_conversion_task_for_resource)
+```python title="Method definition"
+def create_license_conversion_task_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    SourceLicenseContext: LicenseConversionContextTypeDef,  # (1)
+    DestinationLicenseContext: LicenseConversionContextTypeDef,  # (1)
+) -> CreateLicenseConversionTaskForResourceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLicenseConversionTaskForResourceRequestRequestTypeDef](./type_defs.md#createlicenseconversiontaskforresourcerequestrequesttypedef).
+1. See [:material-code-braces: LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef) 
+2. See [:material-code-braces: LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef) 
+3. See [:material-code-braces: CreateLicenseConversionTaskForResourceResponseTypeDef](./type_defs.md#createlicenseconversiontaskforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `SourceLicenseContext`:
-  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
-  *(required)*
-- `DestinationLicenseContext`:
-  [LicenseConversionContextTypeDef](./type_defs.md#licenseconversioncontexttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLicenseConversionTaskForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "SourceLicenseContext": ...,
+    "DestinationLicenseContext": ...,
+}
 
-Returns
-[CreateLicenseConversionTaskForResourceResponseTypeDef](./type_defs.md#createlicenseconversiontaskforresourceresponsetypedef).
+parent.create_license_conversion_task_for_resource(**kwargs)
+```
 
-<a id="create\_license\_manager\_report\_generator"></a>
+1. See [:material-code-braces: CreateLicenseConversionTaskForResourceRequestRequestTypeDef](./type_defs.md#createlicenseconversiontaskforresourcerequestrequesttypedef) 
 
-### create_license_manager_report_generator
+### create\_license\_manager\_report\_generator
 
 Creates a report generator.
 
-Type annotations for
-`boto3.client("license-manager").create_license_manager_report_generator`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_license_manager_report_generator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
 
-Boto3 documentation:
-[LicenseManager.Client.create_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_manager_report_generator)
+```python title="Method definition"
+def create_license_manager_report_generator(
+    self,
+    *,
+    ReportGeneratorName: str,
+    Type: Sequence[ReportTypeType],  # (1)
+    ReportContext: ReportContextTypeDef,  # (2)
+    ReportFrequency: ReportFrequencyTypeDef,  # (3)
+    ClientToken: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateLicenseManagerReportGeneratorResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#createlicensemanagerreportgeneratorrequestrequesttypedef).
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ReportContextTypeDef](./type_defs.md#reportcontexttypedef) 
+3. See [:material-code-braces: ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReportGeneratorName`: `str` *(required)*
-- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
-  *(required)*
-- `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
-  *(required)*
-- `ReportFrequency`:
-  [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) *(required)*
-- `ClientToken`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLicenseManagerReportGeneratorRequestRequestTypeDef = {  # (1)
+    "ReportGeneratorName": ...,
+    "Type": ...,
+    "ReportContext": ...,
+    "ReportFrequency": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#createlicensemanagerreportgeneratorresponsetypedef).
+parent.create_license_manager_report_generator(**kwargs)
+```
 
-<a id="create\_license\_version"></a>
+1. See [:material-code-braces: CreateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#createlicensemanagerreportgeneratorrequestrequesttypedef) 
 
-### create_license_version
+### create\_license\_version
 
 Creates a new version of the specified license.
 
-Type annotations for `boto3.client("license-manager").create_license_version`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_license_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
 
-Boto3 documentation:
-[LicenseManager.Client.create_license_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_license_version)
+```python title="Method definition"
+def create_license_version(
+    self,
+    *,
+    LicenseArn: str,
+    LicenseName: str,
+    ProductName: str,
+    Issuer: IssuerTypeDef,  # (1)
+    HomeRegion: str,
+    Validity: DatetimeRangeTypeDef,  # (2)
+    Entitlements: Sequence[EntitlementTypeDef],  # (3)
+    ConsumptionConfiguration: ConsumptionConfigurationTypeDef,  # (4)
+    Status: LicenseStatusType,  # (5)
+    ClientToken: str,
+    LicenseMetadata: Sequence[MetadataTypeDef] = ...,  # (6)
+    SourceVersion: str = ...,
+) -> CreateLicenseVersionResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateLicenseVersionRequestRequestTypeDef](./type_defs.md#createlicenseversionrequestrequesttypedef).
+1. See [:material-code-braces: IssuerTypeDef](./type_defs.md#issuertypedef) 
+2. See [:material-code-braces: DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+3. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
+4. See [:material-code-braces: ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef) 
+5. See [:material-code-brackets: LicenseStatusType](./literals.md#licensestatustype) 
+6. See [:material-code-braces: MetadataTypeDef](./type_defs.md#metadatatypedef) 
+7. See [:material-code-braces: CreateLicenseVersionResponseTypeDef](./type_defs.md#createlicenseversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `LicenseName`: `str` *(required)*
-- `ProductName`: `str` *(required)*
-- `Issuer`: [IssuerTypeDef](./type_defs.md#issuertypedef) *(required)*
-- `HomeRegion`: `str` *(required)*
-- `Validity`: [DatetimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-  *(required)*
-- `Entitlements`:
-  `Sequence`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
-  *(required)*
-- `ConsumptionConfiguration`:
-  [ConsumptionConfigurationTypeDef](./type_defs.md#consumptionconfigurationtypedef)
-  *(required)*
-- `Status`: [LicenseStatusType](./literals.md#licensestatustype) *(required)*
-- `ClientToken`: `str` *(required)*
-- `LicenseMetadata`:
-  `Sequence`\[[MetadataTypeDef](./type_defs.md#metadatatypedef)\]
-- `SourceVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLicenseVersionRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+    "LicenseName": ...,
+    "ProductName": ...,
+    "Issuer": ...,
+    "HomeRegion": ...,
+    "Validity": ...,
+    "Entitlements": ...,
+    "ConsumptionConfiguration": ...,
+    "Status": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateLicenseVersionResponseTypeDef](./type_defs.md#createlicenseversionresponsetypedef).
+parent.create_license_version(**kwargs)
+```
 
-<a id="create\_token"></a>
+1. See [:material-code-braces: CreateLicenseVersionRequestRequestTypeDef](./type_defs.md#createlicenseversionrequestrequesttypedef) 
 
-### create_token
+### create\_token
 
 Creates a long-lived token.
 
-Type annotations for `boto3.client("license-manager").create_token` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").create_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
 
-Boto3 documentation:
-[LicenseManager.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.create_token)
+```python title="Method definition"
+def create_token(
+    self,
+    *,
+    LicenseArn: str,
+    ClientToken: str,
+    RoleArns: Sequence[str] = ...,
+    ExpirationInDays: int = ...,
+    TokenProperties: Sequence[str] = ...,
+) -> CreateTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef).
+1. See [:material-code-braces: CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `RoleArns`: `Sequence`\[`str`\]
-- `ExpirationInDays`: `int`
-- `TokenProperties`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateTokenRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
+parent.create_token(**kwargs)
+```
 
-<a id="delete\_grant"></a>
+1. See [:material-code-braces: CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef) 
 
-### delete_grant
+### delete\_grant
 
 Deletes the specified grant.
 
-Type annotations for `boto3.client("license-manager").delete_grant` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").delete_grant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
 
-Boto3 documentation:
-[LicenseManager.Client.delete_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_grant)
+```python title="Method definition"
+def delete_grant(
+    self,
+    *,
+    GrantArn: str,
+    Version: str,
+    StatusReason: str = ...,
+) -> DeleteGrantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGrantRequestRequestTypeDef](./type_defs.md#deletegrantrequestrequesttypedef).
+1. See [:material-code-braces: DeleteGrantResponseTypeDef](./type_defs.md#deletegrantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArn`: `str` *(required)*
-- `Version`: `str` *(required)*
-- `StatusReason`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteGrantRequestRequestTypeDef = {  # (1)
+    "GrantArn": ...,
+    "Version": ...,
+}
 
-Returns
-[DeleteGrantResponseTypeDef](./type_defs.md#deletegrantresponsetypedef).
+parent.delete_grant(**kwargs)
+```
 
-<a id="delete\_license"></a>
+1. See [:material-code-braces: DeleteGrantRequestRequestTypeDef](./type_defs.md#deletegrantrequestrequesttypedef) 
 
-### delete_license
+### delete\_license
 
 Deletes the specified license.
 
-Type annotations for `boto3.client("license-manager").delete_license` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").delete_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
 
-Boto3 documentation:
-[LicenseManager.Client.delete_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license)
+```python title="Method definition"
+def delete_license(
+    self,
+    *,
+    LicenseArn: str,
+    SourceVersion: str,
+) -> DeleteLicenseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteLicenseRequestRequestTypeDef](./type_defs.md#deletelicenserequestrequesttypedef).
+1. See [:material-code-braces: DeleteLicenseResponseTypeDef](./type_defs.md#deletelicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `SourceVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLicenseRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+    "SourceVersion": ...,
+}
 
-Returns
-[DeleteLicenseResponseTypeDef](./type_defs.md#deletelicenseresponsetypedef).
+parent.delete_license(**kwargs)
+```
 
-<a id="delete\_license\_configuration"></a>
+1. See [:material-code-braces: DeleteLicenseRequestRequestTypeDef](./type_defs.md#deletelicenserequestrequesttypedef) 
 
-### delete_license_configuration
+### delete\_license\_configuration
 
 Deletes the specified license configuration.
 
-Type annotations for
-`boto3.client("license-manager").delete_license_configuration` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").delete_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.delete_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_configuration)
+```python title="Method definition"
+def delete_license_configuration(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLicenseConfigurationRequestRequestTypeDef](./type_defs.md#deletelicenseconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_license_configuration(**kwargs)
+```
 
-<a id="delete\_license\_manager\_report\_generator"></a>
+1. See [:material-code-braces: DeleteLicenseConfigurationRequestRequestTypeDef](./type_defs.md#deletelicenseconfigurationrequestrequesttypedef) 
 
-### delete_license_manager_report_generator
+### delete\_license\_manager\_report\_generator
 
 Deletes the specified report generator.
 
-Type annotations for
-`boto3.client("license-manager").delete_license_manager_report_generator`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").delete_license_manager_report_generator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
 
-Boto3 documentation:
-[LicenseManager.Client.delete_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_license_manager_report_generator)
+```python title="Method definition"
+def delete_license_manager_report_generator(
+    self,
+    *,
+    LicenseManagerReportGeneratorArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#deletelicensemanagerreportgeneratorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LicenseManagerReportGeneratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLicenseManagerReportGeneratorRequestRequestTypeDef = {  # (1)
+    "LicenseManagerReportGeneratorArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_license_manager_report_generator(**kwargs)
+```
 
-<a id="delete\_token"></a>
+1. See [:material-code-braces: DeleteLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#deletelicensemanagerreportgeneratorrequestrequesttypedef) 
 
-### delete_token
+### delete\_token
 
 Deletes the specified token.
 
-Type annotations for `boto3.client("license-manager").delete_token` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").delete_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
 
-Boto3 documentation:
-[LicenseManager.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.delete_token)
+```python title="Method definition"
+def delete_token(
+    self,
+    *,
+    TokenId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTokenRequestRequestTypeDef](./type_defs.md#deletetokenrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TokenId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTokenRequestRequestTypeDef = {  # (1)
+    "TokenId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_token(**kwargs)
+```
 
-<a id="extend\_license\_consumption"></a>
+1. See [:material-code-braces: DeleteTokenRequestRequestTypeDef](./type_defs.md#deletetokenrequestrequesttypedef) 
 
-### extend_license_consumption
+### extend\_license\_consumption
 
 Extends the expiration date for license consumption.
 
-Type annotations for
-`boto3.client("license-manager").extend_license_consumption` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").extend_license_consumption` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
 
-Boto3 documentation:
-[LicenseManager.Client.extend_license_consumption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.extend_license_consumption)
+```python title="Method definition"
+def extend_license_consumption(
+    self,
+    *,
+    LicenseConsumptionToken: str,
+    DryRun: bool = ...,
+) -> ExtendLicenseConsumptionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExtendLicenseConsumptionRequestRequestTypeDef](./type_defs.md#extendlicenseconsumptionrequestrequesttypedef).
+1. See [:material-code-braces: ExtendLicenseConsumptionResponseTypeDef](./type_defs.md#extendlicenseconsumptionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConsumptionToken`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ExtendLicenseConsumptionRequestRequestTypeDef = {  # (1)
+    "LicenseConsumptionToken": ...,
+}
 
-Returns
-[ExtendLicenseConsumptionResponseTypeDef](./type_defs.md#extendlicenseconsumptionresponsetypedef).
+parent.extend_license_consumption(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExtendLicenseConsumptionRequestRequestTypeDef](./type_defs.md#extendlicenseconsumptionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("license-manager").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LicenseManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_access\_token"></a>
-
-### get_access_token
+### get\_access\_token
 
 Gets a temporary access token to use with AssumeRoleWithWebIdentity.
 
-Type annotations for `boto3.client("license-manager").get_access_token` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_access_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
 
-Boto3 documentation:
-[LicenseManager.Client.get_access_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_access_token)
+```python title="Method definition"
+def get_access_token(
+    self,
+    *,
+    Token: str,
+    TokenProperties: Sequence[str] = ...,
+) -> GetAccessTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessTokenRequestRequestTypeDef](./type_defs.md#getaccesstokenrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Token`: `str` *(required)*
-- `TokenProperties`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetAccessTokenRequestRequestTypeDef = {  # (1)
+    "Token": ...,
+}
 
-Returns
-[GetAccessTokenResponseTypeDef](./type_defs.md#getaccesstokenresponsetypedef).
+parent.get_access_token(**kwargs)
+```
 
-<a id="get\_grant"></a>
+1. See [:material-code-braces: GetAccessTokenRequestRequestTypeDef](./type_defs.md#getaccesstokenrequestrequesttypedef) 
 
-### get_grant
+### get\_grant
 
 Gets detailed information about the specified grant.
 
-Type annotations for `boto3.client("license-manager").get_grant` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_grant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
 
-Boto3 documentation:
-[LicenseManager.Client.get_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_grant)
+```python title="Method definition"
+def get_grant(
+    self,
+    *,
+    GrantArn: str,
+    Version: str = ...,
+) -> GetGrantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGrantRequestRequestTypeDef](./type_defs.md#getgrantrequestrequesttypedef).
+1. See [:material-code-braces: GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArn`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetGrantRequestRequestTypeDef = {  # (1)
+    "GrantArn": ...,
+}
 
-Returns [GetGrantResponseTypeDef](./type_defs.md#getgrantresponsetypedef).
+parent.get_grant(**kwargs)
+```
 
-<a id="get\_license"></a>
+1. See [:material-code-braces: GetGrantRequestRequestTypeDef](./type_defs.md#getgrantrequestrequesttypedef) 
 
-### get_license
+### get\_license
 
 Gets detailed information about the specified license.
 
-Type annotations for `boto3.client("license-manager").get_license` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_license` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
 
-Boto3 documentation:
-[LicenseManager.Client.get_license](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license)
+```python title="Method definition"
+def get_license(
+    self,
+    *,
+    LicenseArn: str,
+    Version: str = ...,
+) -> GetLicenseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLicenseRequestRequestTypeDef](./type_defs.md#getlicenserequestrequesttypedef).
+1. See [:material-code-braces: GetLicenseResponseTypeDef](./type_defs.md#getlicenseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLicenseRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+}
 
-Returns [GetLicenseResponseTypeDef](./type_defs.md#getlicenseresponsetypedef).
+parent.get_license(**kwargs)
+```
 
-<a id="get\_license\_configuration"></a>
+1. See [:material-code-braces: GetLicenseRequestRequestTypeDef](./type_defs.md#getlicenserequestrequesttypedef) 
 
-### get_license_configuration
+### get\_license\_configuration
 
 Gets detailed information about the specified license configuration.
 
-Type annotations for
-`boto3.client("license-manager").get_license_configuration` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.get_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_configuration)
+```python title="Method definition"
+def get_license_configuration(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+) -> GetLicenseConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLicenseConfigurationRequestRequestTypeDef](./type_defs.md#getlicenseconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns
-[GetLicenseConfigurationResponseTypeDef](./type_defs.md#getlicenseconfigurationresponsetypedef).
+parent.get_license_configuration(**kwargs)
+```
 
-<a id="get\_license\_conversion\_task"></a>
+1. See [:material-code-braces: GetLicenseConfigurationRequestRequestTypeDef](./type_defs.md#getlicenseconfigurationrequestrequesttypedef) 
 
-### get_license_conversion_task
+### get\_license\_conversion\_task
 
 Gets information about the specified license type conversion task.
 
-Type annotations for
-`boto3.client("license-manager").get_license_conversion_task` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_license_conversion_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_conversion_task)
 
-Boto3 documentation:
-[LicenseManager.Client.get_license_conversion_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_conversion_task)
+```python title="Method definition"
+def get_license_conversion_task(
+    self,
+    *,
+    LicenseConversionTaskId: str,
+) -> GetLicenseConversionTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLicenseConversionTaskRequestRequestTypeDef](./type_defs.md#getlicenseconversiontaskrequestrequesttypedef).
+1. See [:material-code-braces: GetLicenseConversionTaskResponseTypeDef](./type_defs.md#getlicenseconversiontaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConversionTaskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLicenseConversionTaskRequestRequestTypeDef = {  # (1)
+    "LicenseConversionTaskId": ...,
+}
 
-Returns
-[GetLicenseConversionTaskResponseTypeDef](./type_defs.md#getlicenseconversiontaskresponsetypedef).
+parent.get_license_conversion_task(**kwargs)
+```
 
-<a id="get\_license\_manager\_report\_generator"></a>
+1. See [:material-code-braces: GetLicenseConversionTaskRequestRequestTypeDef](./type_defs.md#getlicenseconversiontaskrequestrequesttypedef) 
 
-### get_license_manager_report_generator
+### get\_license\_manager\_report\_generator
 
 Gets information about the specified report generator.
 
-Type annotations for
-`boto3.client("license-manager").get_license_manager_report_generator` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_license_manager_report_generator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
 
-Boto3 documentation:
-[LicenseManager.Client.get_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_manager_report_generator)
+```python title="Method definition"
+def get_license_manager_report_generator(
+    self,
+    *,
+    LicenseManagerReportGeneratorArn: str,
+) -> GetLicenseManagerReportGeneratorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#getlicensemanagerreportgeneratorrequestrequesttypedef).
+1. See [:material-code-braces: GetLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseManagerReportGeneratorArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLicenseManagerReportGeneratorRequestRequestTypeDef = {  # (1)
+    "LicenseManagerReportGeneratorArn": ...,
+}
 
-Returns
-[GetLicenseManagerReportGeneratorResponseTypeDef](./type_defs.md#getlicensemanagerreportgeneratorresponsetypedef).
+parent.get_license_manager_report_generator(**kwargs)
+```
 
-<a id="get\_license\_usage"></a>
+1. See [:material-code-braces: GetLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#getlicensemanagerreportgeneratorrequestrequesttypedef) 
 
-### get_license_usage
+### get\_license\_usage
 
 Gets detailed information about the usage of the specified license.
 
-Type annotations for `boto3.client("license-manager").get_license_usage`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_license_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
 
-Boto3 documentation:
-[LicenseManager.Client.get_license_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_license_usage)
+```python title="Method definition"
+def get_license_usage(
+    self,
+    *,
+    LicenseArn: str,
+) -> GetLicenseUsageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLicenseUsageRequestRequestTypeDef](./type_defs.md#getlicenseusagerequestrequesttypedef).
+1. See [:material-code-braces: GetLicenseUsageResponseTypeDef](./type_defs.md#getlicenseusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLicenseUsageRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+}
 
-Returns
-[GetLicenseUsageResponseTypeDef](./type_defs.md#getlicenseusageresponsetypedef).
+parent.get_license_usage(**kwargs)
+```
 
-<a id="get\_service\_settings"></a>
+1. See [:material-code-braces: GetLicenseUsageRequestRequestTypeDef](./type_defs.md#getlicenseusagerequestrequesttypedef) 
 
-### get_service_settings
+### get\_service\_settings
 
 Gets the License Manager settings for the current Region.
 
-Type annotations for `boto3.client("license-manager").get_service_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_service_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
 
-Boto3 documentation:
-[LicenseManager.Client.get_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.get_service_settings)
+```python title="Method definition"
+def get_service_settings(
+    self,
+) -> GetServiceSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef).
+1. See [:material-code-braces: GetServiceSettingsResponseTypeDef](./type_defs.md#getservicesettingsresponsetypedef) 
 
-<a id="list\_associations\_for\_license\_configuration"></a>
-
-### list_associations_for_license_configuration
+### list\_associations\_for\_license\_configuration
 
 Lists the resource associations for the specified license configuration.
 
-Type annotations for
-`boto3.client("license-manager").list_associations_for_license_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_associations_for_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.list_associations_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_associations_for_license_configuration)
+```python title="Method definition"
+def list_associations_for_license_configuration(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAssociationsForLicenseConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssociationsForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAssociationsForLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns
-[ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef).
+parent.list_associations_for_license_configuration(**kwargs)
+```
 
-<a id="list\_distributed\_grants"></a>
+1. See [:material-code-braces: ListAssociationsForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listassociationsforlicenseconfigurationrequestrequesttypedef) 
 
-### list_distributed_grants
+### list\_distributed\_grants
 
 Lists the grants distributed for the specified license.
 
-Type annotations for `boto3.client("license-manager").list_distributed_grants`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_distributed_grants` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
 
-Boto3 documentation:
-[LicenseManager.Client.list_distributed_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_distributed_grants)
+```python title="Method definition"
+def list_distributed_grants(
+    self,
+    *,
+    GrantArns: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDistributedGrantsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributedGrantsRequestRequestTypeDef](./type_defs.md#listdistributedgrantsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArns`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDistributedGrantsRequestRequestTypeDef = {  # (1)
+    "GrantArns": ...,
+}
 
-Returns
-[ListDistributedGrantsResponseTypeDef](./type_defs.md#listdistributedgrantsresponsetypedef).
+parent.list_distributed_grants(**kwargs)
+```
 
-<a id="list\_failures\_for\_license\_configuration\_operations"></a>
+1. See [:material-code-braces: ListDistributedGrantsRequestRequestTypeDef](./type_defs.md#listdistributedgrantsrequestrequesttypedef) 
 
-### list_failures_for_license_configuration_operations
+### list\_failures\_for\_license\_configuration\_operations
 
 Lists the license configuration operations that failed.
 
-Type annotations for
-`boto3.client("license-manager").list_failures_for_license_configuration_operations`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_failures_for_license_configuration_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
 
-Boto3 documentation:
-[LicenseManager.Client.list_failures_for_license_configuration_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_failures_for_license_configuration_operations)
+```python title="Method definition"
+def list_failures_for_license_configuration_operations(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFailuresForLicenseConfigurationOperationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFailuresForLicenseConfigurationOperationsRequestRequestTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsrequestrequesttypedef).
+1. See [:material-code-braces: ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFailuresForLicenseConfigurationOperationsRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns
-[ListFailuresForLicenseConfigurationOperationsResponseTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsresponsetypedef).
+parent.list_failures_for_license_configuration_operations(**kwargs)
+```
 
-<a id="list\_license\_configurations"></a>
+1. See [:material-code-braces: ListFailuresForLicenseConfigurationOperationsRequestRequestTypeDef](./type_defs.md#listfailuresforlicenseconfigurationoperationsrequestrequesttypedef) 
 
-### list_license_configurations
+### list\_license\_configurations
 
 Lists the license configurations for your account.
 
-Type annotations for
-`boto3.client("license-manager").list_license_configurations` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_license_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
 
-Boto3 documentation:
-[LicenseManager.Client.list_license_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_configurations)
+```python title="Method definition"
+def list_license_configurations(
+    self,
+    *,
+    LicenseConfigurationArns: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListLicenseConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLicenseConfigurationsRequestRequestTypeDef](./type_defs.md#listlicenseconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArns`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListLicenseConfigurationsRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArns": ...,
+}
 
-Returns
-[ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef).
+parent.list_license_configurations(**kwargs)
+```
 
-<a id="list\_license\_conversion\_tasks"></a>
+1. See [:material-code-braces: ListLicenseConfigurationsRequestRequestTypeDef](./type_defs.md#listlicenseconfigurationsrequestrequesttypedef) 
 
-### list_license_conversion_tasks
+### list\_license\_conversion\_tasks
 
 Lists the license type conversion tasks for your account.
 
-Type annotations for
-`boto3.client("license-manager").list_license_conversion_tasks` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_license_conversion_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_conversion_tasks)
 
-Boto3 documentation:
-[LicenseManager.Client.list_license_conversion_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_conversion_tasks)
+```python title="Method definition"
+def list_license_conversion_tasks(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListLicenseConversionTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLicenseConversionTasksRequestRequestTypeDef](./type_defs.md#listlicenseconversiontasksrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListLicenseConversionTasksRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListLicenseConversionTasksResponseTypeDef](./type_defs.md#listlicenseconversiontasksresponsetypedef).
+parent.list_license_conversion_tasks(**kwargs)
+```
 
-<a id="list\_license\_manager\_report\_generators"></a>
+1. See [:material-code-braces: ListLicenseConversionTasksRequestRequestTypeDef](./type_defs.md#listlicenseconversiontasksrequestrequesttypedef) 
 
-### list_license_manager_report_generators
+### list\_license\_manager\_report\_generators
 
 Lists the report generators for your account.
 
-Type annotations for
-`boto3.client("license-manager").list_license_manager_report_generators`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_license_manager_report_generators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
 
-Boto3 documentation:
-[LicenseManager.Client.list_license_manager_report_generators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_manager_report_generators)
+```python title="Method definition"
+def list_license_manager_report_generators(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLicenseManagerReportGeneratorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLicenseManagerReportGeneratorsRequestRequestTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLicenseManagerReportGeneratorsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListLicenseManagerReportGeneratorsResponseTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsresponsetypedef).
+parent.list_license_manager_report_generators(**kwargs)
+```
 
-<a id="list\_license\_specifications\_for\_resource"></a>
+1. See [:material-code-braces: ListLicenseManagerReportGeneratorsRequestRequestTypeDef](./type_defs.md#listlicensemanagerreportgeneratorsrequestrequesttypedef) 
 
-### list_license_specifications_for_resource
+### list\_license\_specifications\_for\_resource
 
 Describes the license configurations for the specified resource.
 
-Type annotations for
-`boto3.client("license-manager").list_license_specifications_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_license_specifications_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.list_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_specifications_for_resource)
+```python title="Method definition"
+def list_license_specifications_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLicenseSpecificationsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#listlicensespecificationsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLicenseSpecificationsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef).
+parent.list_license_specifications_for_resource(**kwargs)
+```
 
-<a id="list\_license\_versions"></a>
+1. See [:material-code-braces: ListLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#listlicensespecificationsforresourcerequestrequesttypedef) 
 
-### list_license_versions
+### list\_license\_versions
 
 Lists all versions of the specified license.
 
-Type annotations for `boto3.client("license-manager").list_license_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_license_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
 
-Boto3 documentation:
-[LicenseManager.Client.list_license_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_license_versions)
+```python title="Method definition"
+def list_license_versions(
+    self,
+    *,
+    LicenseArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLicenseVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLicenseVersionsRequestRequestTypeDef](./type_defs.md#listlicenseversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListLicenseVersionsResponseTypeDef](./type_defs.md#listlicenseversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLicenseVersionsRequestRequestTypeDef = {  # (1)
+    "LicenseArn": ...,
+}
 
-Returns
-[ListLicenseVersionsResponseTypeDef](./type_defs.md#listlicenseversionsresponsetypedef).
+parent.list_license_versions(**kwargs)
+```
 
-<a id="list\_licenses"></a>
+1. See [:material-code-braces: ListLicenseVersionsRequestRequestTypeDef](./type_defs.md#listlicenseversionsrequestrequesttypedef) 
 
-### list_licenses
+### list\_licenses
 
 Lists the licenses for your account.
 
-Type annotations for `boto3.client("license-manager").list_licenses` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_licenses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
 
-Boto3 documentation:
-[LicenseManager.Client.list_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_licenses)
+```python title="Method definition"
+def list_licenses(
+    self,
+    *,
+    LicenseArns: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLicensesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLicensesRequestRequestTypeDef](./type_defs.md#listlicensesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListLicensesResponseTypeDef](./type_defs.md#listlicensesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArns`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLicensesRequestRequestTypeDef = {  # (1)
+    "LicenseArns": ...,
+}
 
-Returns
-[ListLicensesResponseTypeDef](./type_defs.md#listlicensesresponsetypedef).
+parent.list_licenses(**kwargs)
+```
 
-<a id="list\_received\_grants"></a>
+1. See [:material-code-braces: ListLicensesRequestRequestTypeDef](./type_defs.md#listlicensesrequestrequesttypedef) 
 
-### list_received_grants
+### list\_received\_grants
 
 Lists grants that are received but not accepted.
 
-Type annotations for `boto3.client("license-manager").list_received_grants`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_received_grants` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
 
-Boto3 documentation:
-[LicenseManager.Client.list_received_grants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_grants)
+```python title="Method definition"
+def list_received_grants(
+    self,
+    *,
+    GrantArns: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReceivedGrantsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReceivedGrantsRequestRequestTypeDef](./type_defs.md#listreceivedgrantsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListReceivedGrantsResponseTypeDef](./type_defs.md#listreceivedgrantsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArns`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReceivedGrantsRequestRequestTypeDef = {  # (1)
+    "GrantArns": ...,
+}
 
-Returns
-[ListReceivedGrantsResponseTypeDef](./type_defs.md#listreceivedgrantsresponsetypedef).
+parent.list_received_grants(**kwargs)
+```
 
-<a id="list\_received\_licenses"></a>
+1. See [:material-code-braces: ListReceivedGrantsRequestRequestTypeDef](./type_defs.md#listreceivedgrantsrequestrequesttypedef) 
 
-### list_received_licenses
+### list\_received\_licenses
 
 Lists received licenses.
 
-Type annotations for `boto3.client("license-manager").list_received_licenses`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_received_licenses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
 
-Boto3 documentation:
-[LicenseManager.Client.list_received_licenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_received_licenses)
+```python title="Method definition"
+def list_received_licenses(
+    self,
+    *,
+    LicenseArns: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReceivedLicensesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReceivedLicensesRequestRequestTypeDef](./type_defs.md#listreceivedlicensesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListReceivedLicensesResponseTypeDef](./type_defs.md#listreceivedlicensesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseArns`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReceivedLicensesRequestRequestTypeDef = {  # (1)
+    "LicenseArns": ...,
+}
 
-Returns
-[ListReceivedLicensesResponseTypeDef](./type_defs.md#listreceivedlicensesresponsetypedef).
+parent.list_received_licenses(**kwargs)
+```
 
-<a id="list\_resource\_inventory"></a>
+1. See [:material-code-braces: ListReceivedLicensesRequestRequestTypeDef](./type_defs.md#listreceivedlicensesrequestrequesttypedef) 
 
-### list_resource_inventory
+### list\_resource\_inventory
 
 Lists resources managed using Systems Manager inventory.
 
-Type annotations for `boto3.client("license-manager").list_resource_inventory`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_resource_inventory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
 
-Boto3 documentation:
-[LicenseManager.Client.list_resource_inventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_resource_inventory)
+```python title="Method definition"
+def list_resource_inventory(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[InventoryFilterTypeDef] = ...,  # (1)
+) -> ListResourceInventoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceInventoryRequestRequestTypeDef](./type_defs.md#listresourceinventoryrequestrequesttypedef).
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
+2. See [:material-code-braces: ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListResourceInventoryRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef).
+parent.list_resource_inventory(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResourceInventoryRequestRequestTypeDef](./type_defs.md#listresourceinventoryrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified license configuration.
 
-Type annotations for `boto3.client("license-manager").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_tokens"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_tokens
+### list\_tokens
 
 Lists your tokens.
 
-Type annotations for `boto3.client("license-manager").list_tokens` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_tokens` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
 
-Boto3 documentation:
-[LicenseManager.Client.list_tokens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_tokens)
+```python title="Method definition"
+def list_tokens(
+    self,
+    *,
+    TokenIds: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTokensResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTokensRequestRequestTypeDef](./type_defs.md#listtokensrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListTokensResponseTypeDef](./type_defs.md#listtokensresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TokenIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTokensRequestRequestTypeDef = {  # (1)
+    "TokenIds": ...,
+}
 
-Returns [ListTokensResponseTypeDef](./type_defs.md#listtokensresponsetypedef).
+parent.list_tokens(**kwargs)
+```
 
-<a id="list\_usage\_for\_license\_configuration"></a>
+1. See [:material-code-braces: ListTokensRequestRequestTypeDef](./type_defs.md#listtokensrequestrequesttypedef) 
 
-### list_usage_for_license_configuration
+### list\_usage\_for\_license\_configuration
 
 Lists all license usage records for a license configuration, displaying license
 consumption details by resource at a selected point in time.
 
-Type annotations for
-`boto3.client("license-manager").list_usage_for_license_configuration` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").list_usage_for_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.list_usage_for_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.list_usage_for_license_configuration)
+```python title="Method definition"
+def list_usage_for_license_configuration(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListUsageForLicenseConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListUsageForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listusageforlicenseconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListUsageForLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns
-[ListUsageForLicenseConfigurationResponseTypeDef](./type_defs.md#listusageforlicenseconfigurationresponsetypedef).
+parent.list_usage_for_license_configuration(**kwargs)
+```
 
-<a id="reject\_grant"></a>
+1. See [:material-code-braces: ListUsageForLicenseConfigurationRequestRequestTypeDef](./type_defs.md#listusageforlicenseconfigurationrequestrequesttypedef) 
 
-### reject_grant
+### reject\_grant
 
 Rejects the specified grant.
 
-Type annotations for `boto3.client("license-manager").reject_grant` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").reject_grant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
 
-Boto3 documentation:
-[LicenseManager.Client.reject_grant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.reject_grant)
+```python title="Method definition"
+def reject_grant(
+    self,
+    *,
+    GrantArn: str,
+) -> RejectGrantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectGrantRequestRequestTypeDef](./type_defs.md#rejectgrantrequestrequesttypedef).
+1. See [:material-code-braces: RejectGrantResponseTypeDef](./type_defs.md#rejectgrantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GrantArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectGrantRequestRequestTypeDef = {  # (1)
+    "GrantArn": ...,
+}
 
-Returns
-[RejectGrantResponseTypeDef](./type_defs.md#rejectgrantresponsetypedef).
+parent.reject_grant(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RejectGrantRequestRequestTypeDef](./type_defs.md#rejectgrantrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified license configuration.
 
-Type annotations for `boto3.client("license-manager").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified license configuration.
 
-Type annotations for `boto3.client("license-manager").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_license\_configuration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_license_configuration
+### update\_license\_configuration
 
 Modifies the attributes of an existing license configuration.
 
-Type annotations for
-`boto3.client("license-manager").update_license_configuration` method.
+Type annotations and code completion for `#!python boto3.client("license-manager").update_license_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
 
-Boto3 documentation:
-[LicenseManager.Client.update_license_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_configuration)
+```python title="Method definition"
+def update_license_configuration(
+    self,
+    *,
+    LicenseConfigurationArn: str,
+    LicenseConfigurationStatus: LicenseConfigurationStatusType = ...,  # (1)
+    LicenseRules: Sequence[str] = ...,
+    LicenseCount: int = ...,
+    LicenseCountHardLimit: bool = ...,
+    Name: str = ...,
+    Description: str = ...,
+    ProductInformationList: Sequence[ProductInformationTypeDef] = ...,  # (2)
+    DisassociateWhenNotFound: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#updatelicenseconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype) 
+2. See [:material-code-braces: ProductInformationTypeDef](./type_defs.md#productinformationtypedef) 
 
-Keyword-only arguments:
 
-- `LicenseConfigurationArn`: `str` *(required)*
-- `LicenseConfigurationStatus`:
-  [LicenseConfigurationStatusType](./literals.md#licenseconfigurationstatustype)
-- `LicenseRules`: `Sequence`\[`str`\]
-- `LicenseCount`: `int`
-- `LicenseCountHardLimit`: `bool`
-- `Name`: `str`
-- `Description`: `str`
-- `ProductInformationList`:
-  `Sequence`\[[ProductInformationTypeDef](./type_defs.md#productinformationtypedef)\]
-- `DisassociateWhenNotFound`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateLicenseConfigurationRequestRequestTypeDef = {  # (1)
+    "LicenseConfigurationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_license_configuration(**kwargs)
+```
 
-<a id="update\_license\_manager\_report\_generator"></a>
+1. See [:material-code-braces: UpdateLicenseConfigurationRequestRequestTypeDef](./type_defs.md#updatelicenseconfigurationrequestrequesttypedef) 
 
-### update_license_manager_report_generator
+### update\_license\_manager\_report\_generator
 
 Updates a report generator.
 
-Type annotations for
-`boto3.client("license-manager").update_license_manager_report_generator`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").update_license_manager_report_generator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
 
-Boto3 documentation:
-[LicenseManager.Client.update_license_manager_report_generator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_manager_report_generator)
+```python title="Method definition"
+def update_license_manager_report_generator(
+    self,
+    *,
+    LicenseManagerReportGeneratorArn: str,
+    ReportGeneratorName: str,
+    Type: Sequence[ReportTypeType],  # (1)
+    ReportContext: ReportContextTypeDef,  # (2)
+    ReportFrequency: ReportFrequencyTypeDef,  # (3)
+    ClientToken: str,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#updatelicensemanagerreportgeneratorrequestrequesttypedef).
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ReportContextTypeDef](./type_defs.md#reportcontexttypedef) 
+3. See [:material-code-braces: ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) 
 
-Keyword-only arguments:
 
-- `LicenseManagerReportGeneratorArn`: `str` *(required)*
-- `ReportGeneratorName`: `str` *(required)*
-- `Type`: `Sequence`\[[ReportTypeType](./literals.md#reporttypetype)\]
-  *(required)*
-- `ReportContext`: [ReportContextTypeDef](./type_defs.md#reportcontexttypedef)
-  *(required)*
-- `ReportFrequency`:
-  [ReportFrequencyTypeDef](./type_defs.md#reportfrequencytypedef) *(required)*
-- `ClientToken`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateLicenseManagerReportGeneratorRequestRequestTypeDef = {  # (1)
+    "LicenseManagerReportGeneratorArn": ...,
+    "ReportGeneratorName": ...,
+    "Type": ...,
+    "ReportContext": ...,
+    "ReportFrequency": ...,
+    "ClientToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_license_manager_report_generator(**kwargs)
+```
 
-<a id="update\_license\_specifications\_for\_resource"></a>
+1. See [:material-code-braces: UpdateLicenseManagerReportGeneratorRequestRequestTypeDef](./type_defs.md#updatelicensemanagerreportgeneratorrequestrequesttypedef) 
 
-### update_license_specifications_for_resource
+### update\_license\_specifications\_for\_resource
 
 Adds or removes the specified license configurations for the specified Amazon
 Web Services resource.
 
-Type annotations for
-`boto3.client("license-manager").update_license_specifications_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").update_license_specifications_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
 
-Boto3 documentation:
-[LicenseManager.Client.update_license_specifications_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_license_specifications_for_resource)
+```python title="Method definition"
+def update_license_specifications_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    AddLicenseSpecifications: Sequence[LicenseSpecificationTypeDef] = ...,  # (1)
+    RemoveLicenseSpecifications: Sequence[LicenseSpecificationTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#updatelicensespecificationsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef) 
+2. See [:material-code-braces: LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `AddLicenseSpecifications`:
-  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
-- `RemoveLicenseSpecifications`:
-  `Sequence`\[[LicenseSpecificationTypeDef](./type_defs.md#licensespecificationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLicenseSpecificationsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_license_specifications_for_resource(**kwargs)
+```
 
-<a id="update\_service\_settings"></a>
+1. See [:material-code-braces: UpdateLicenseSpecificationsForResourceRequestRequestTypeDef](./type_defs.md#updatelicensespecificationsforresourcerequestrequesttypedef) 
 
-### update_service_settings
+### update\_service\_settings
 
 Updates License Manager settings for the current Region.
 
-Type annotations for `boto3.client("license-manager").update_service_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("license-manager").update_service_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
 
-Boto3 documentation:
-[LicenseManager.Client.update_service_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager.Client.update_service_settings)
+```python title="Method definition"
+def update_service_settings(
+    self,
+    *,
+    S3BucketArn: str = ...,
+    SnsTopicArn: str = ...,
+    OrganizationConfiguration: OrganizationConfigurationTypeDef = ...,  # (1)
+    EnableCrossAccountsDiscovery: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceSettingsRequestRequestTypeDef](./type_defs.md#updateservicesettingsrequestrequesttypedef).
+1. See [:material-code-braces: OrganizationConfigurationTypeDef](./type_defs.md#organizationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `S3BucketArn`: `str`
-- `SnsTopicArn`: `str`
-- `OrganizationConfiguration`:
-  [OrganizationConfigurationTypeDef](./type_defs.md#organizationconfigurationtypedef)
-- `EnableCrossAccountsDiscovery`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceSettingsRequestRequestTypeDef = {  # (1)
+    "S3BucketArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_service_settings(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateServiceSettingsRequestRequestTypeDef](./type_defs.md#updateservicesettingsrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("license-manager").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("license-manager").get_paginator` method with overloads.
 
-- `client.get_paginator("list_associations_for_license_configuration")` ->
-  [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
-- `client.get_paginator("list_license_configurations")` ->
-  [ListLicenseConfigurationsPaginator](./paginators.md#listlicenseconfigurationspaginator)
-- `client.get_paginator("list_license_specifications_for_resource")` ->
-  [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
-- `client.get_paginator("list_resource_inventory")` ->
-  [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
-- `client.get_paginator("list_usage_for_license_configuration")` ->
-  [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
+- `client.get_paginator("list_associations_for_license_configuration")` -> [ListAssociationsForLicenseConfigurationPaginator](./paginators.md#listassociationsforlicenseconfigurationpaginator)
+- `client.get_paginator("list_license_configurations")` -> [ListLicenseConfigurationsPaginator](./paginators.md#listlicenseconfigurationspaginator)
+- `client.get_paginator("list_license_specifications_for_resource")` -> [ListLicenseSpecificationsForResourcePaginator](./paginators.md#listlicensespecificationsforresourcepaginator)
+- `client.get_paginator("list_resource_inventory")` -> [ListResourceInventoryPaginator](./paginators.md#listresourceinventorypaginator)
+- `client.get_paginator("list_usage_for_license_configuration")` -> [ListUsageForLicenseConfigurationPaginator](./paginators.md#listusageforlicenseconfigurationpaginator)
+
+
+

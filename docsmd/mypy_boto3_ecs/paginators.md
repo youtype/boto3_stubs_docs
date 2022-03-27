@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-ecs-module"></a>
-
-# Paginators for boto3 ECS module
+# Paginators
 
 > [Index](../README.md) > [ECS](./README.md) > Paginators
 
-Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module
-[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
+!!! note ""
 
-- [Paginators for boto3 ECS module](#paginators-for-boto3-ecs-module)
-  - [ListAccountSettingsPaginator](#listaccountsettingspaginator)
-  - [ListAttributesPaginator](#listattributespaginator)
-  - [ListClustersPaginator](#listclusterspaginator)
-  - [ListContainerInstancesPaginator](#listcontainerinstancespaginator)
-  - [ListServicesPaginator](#listservicespaginator)
-  - [ListTaskDefinitionFamiliesPaginator](#listtaskdefinitionfamiliespaginator)
-  - [ListTaskDefinitionsPaginator](#listtaskdefinitionspaginator)
-  - [ListTasksPaginator](#listtaskspaginator)
-
-<a id="listaccountsettingspaginator"></a>
+    Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+    type annotations stubs module [mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ## ListAccountSettingsPaginator
 
-Type annotations for
-`boto3.client("ecs").get_paginator("list_account_settings")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_account_settings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAccountSettings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator
@@ -37,30 +21,44 @@ def get_list_account_settings_paginator() -> ListAccountSettingsPaginator:
     return Session().client("ecs").get_paginator("list_account_settings")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListAccountSettings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAccountSettings)
 
-Arguments for `ListAccountSettingsPaginator.paginate` method:
+### paginate
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-- `principalArn`: `str`
-- `effectiveSettings`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAccountSettingsPaginator.paginate` method.
 
-`ListAccountSettingsPaginator.paginate` returns
-`_PageIterator`\[[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    name: SettingNameType = ...,  # (1)
+    value: str = ...,
+    principalArn: str = ...,
+    effectiveSettings: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAccountSettingsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listattributespaginator"></a>
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAccountSettingsRequestListAccountSettingsPaginateTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAccountSettingsRequestListAccountSettingsPaginateTypeDef](./type_defs.md#listaccountsettingsrequestlistaccountsettingspaginatetypedef) 
 ## ListAttributesPaginator
 
-Type annotations for `boto3.client("ecs").get_paginator("list_attributes")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_attributes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAttributes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListAttributesPaginator
@@ -69,31 +67,44 @@ def get_list_attributes_paginator() -> ListAttributesPaginator:
     return Session().client("ecs").get_paginator("list_attributes")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListAttributes)
 
-Arguments for `ListAttributesPaginator.paginate` method:
+### paginate
 
-- `targetType`: `Literal['container-instance']` (see
-  [TargetTypeType](./literals.md#targettypetype)) *(required)*
-- `cluster`: `str`
-- `attributeName`: `str`
-- `attributeValue`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAttributesPaginator.paginate` method.
 
-`ListAttributesPaginator.paginate` returns
-`_PageIterator`\[[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    targetType: TargetTypeType,  # (1)
+    cluster: str = ...,
+    attributeName: str = ...,
+    attributeValue: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAttributesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listclusterspaginator"></a>
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAttributesRequestListAttributesPaginateTypeDef = {  # (1)
+    "targetType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAttributesRequestListAttributesPaginateTypeDef](./type_defs.md#listattributesrequestlistattributespaginatetypedef) 
 ## ListClustersPaginator
 
-Type annotations for `boto3.client("ecs").get_paginator("list_clusters")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListClustersPaginator
@@ -102,27 +113,39 @@ def get_list_clusters_paginator() -> ListClustersPaginator:
     return Session().client("ecs").get_paginator("list_clusters")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListClusters)
 
-Arguments for `ListClustersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListClustersPaginator.paginate` method.
 
-`ListClustersPaginator.paginate` returns
-`_PageIterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListClustersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcontainerinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListClustersRequestListClustersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef) 
 ## ListContainerInstancesPaginator
 
-Type annotations for
-`boto3.client("ecs").get_paginator("list_container_instances")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_container_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListContainerInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListContainerInstancesPaginator
@@ -131,30 +154,43 @@ def get_list_container_instances_paginator() -> ListContainerInstancesPaginator:
     return Session().client("ecs").get_paginator("list_container_instances")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListContainerInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListContainerInstances)
 
-Arguments for `ListContainerInstancesPaginator.paginate` method:
+### paginate
 
-- `cluster`: `str`
-- `filter`: `str`
-- `status`:
-  [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContainerInstancesPaginator.paginate` method.
 
-`ListContainerInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    cluster: str = ...,
+    filter: str = ...,
+    status: ContainerInstanceStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListContainerInstancesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listservicespaginator"></a>
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContainerInstancesRequestListContainerInstancesPaginateTypeDef = {  # (1)
+    "cluster": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContainerInstancesRequestListContainerInstancesPaginateTypeDef](./type_defs.md#listcontainerinstancesrequestlistcontainerinstancespaginatetypedef) 
 ## ListServicesPaginator
 
-Type annotations for `boto3.client("ecs").get_paginator("list_services")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListServicesPaginator
@@ -163,31 +199,44 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("ecs").get_paginator("list_services")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListServices)
 
-Arguments for `ListServicesPaginator.paginate` method:
+### paginate
 
-- `cluster`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicesPaginator.paginate` method.
 
-`ListServicesPaginator.paginate` returns
-`_PageIterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    cluster: str = ...,
+    launchType: LaunchTypeType = ...,  # (1)
+    schedulingStrategy: SchedulingStrategyType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListServicesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listtaskdefinitionfamiliespaginator"></a>
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestListServicesPaginateTypeDef = {  # (1)
+    "cluster": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef) 
 ## ListTaskDefinitionFamiliesPaginator
 
-Type annotations for
-`boto3.client("ecs").get_paginator("list_task_definition_families")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_task_definition_families")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitionFamilies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListTaskDefinitionFamiliesPaginator
@@ -196,30 +245,42 @@ def get_list_task_definition_families_paginator() -> ListTaskDefinitionFamiliesP
     return Session().client("ecs").get_paginator("list_task_definition_families")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListTaskDefinitionFamilies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitionFamilies)
 
-Arguments for `ListTaskDefinitionFamiliesPaginator.paginate` method:
+### paginate
 
-- `familyPrefix`: `str`
-- `status`:
-  [TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTaskDefinitionFamiliesPaginator.paginate` method.
 
-`ListTaskDefinitionFamiliesPaginator.paginate` returns
-`_PageIterator`\[[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    familyPrefix: str = ...,
+    status: TaskDefinitionFamilyStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListTaskDefinitionFamiliesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtaskdefinitionspaginator"></a>
+1. See [:material-code-brackets: TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef = {  # (1)
+    "familyPrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestlisttaskdefinitionfamiliespaginatetypedef) 
 ## ListTaskDefinitionsPaginator
 
-Type annotations for
-`boto3.client("ecs").get_paginator("list_task_definitions")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_task_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListTaskDefinitionsPaginator
@@ -228,29 +289,44 @@ def get_list_task_definitions_paginator() -> ListTaskDefinitionsPaginator:
     return Session().client("ecs").get_paginator("list_task_definitions")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListTaskDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTaskDefinitions)
 
-Arguments for `ListTaskDefinitionsPaginator.paginate` method:
+### paginate
 
-- `familyPrefix`: `str`
-- `status`: [TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype)
-- `sort`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTaskDefinitionsPaginator.paginate` method.
 
-`ListTaskDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    familyPrefix: str = ...,
+    status: TaskDefinitionStatusType = ...,  # (1)
+    sort: SortOrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListTaskDefinitionsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listtaskspaginator"></a>
+1. See [:material-code-brackets: TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef = {  # (1)
+    "familyPrefix": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef](./type_defs.md#listtaskdefinitionsrequestlisttaskdefinitionspaginatetypedef) 
 ## ListTasksPaginator
 
-Type annotations for `boto3.client("ecs").get_paginator("list_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ecs").get_paginator("list_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecs.paginator import ListTasksPaginator
@@ -259,20 +335,39 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("ecs").get_paginator("list_tasks")
 ```
 
-Boto3 documentation:
-[ECS.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Paginator.ListTasks)
 
-Arguments for `ListTasksPaginator.paginate` method:
+### paginate
 
-- `cluster`: `str`
-- `containerInstance`: `str`
-- `family`: `str`
-- `startedBy`: `str`
-- `serviceName`: `str`
-- `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTasksPaginator.paginate` method.
 
-`ListTasksPaginator.paginate` returns
-`_PageIterator`\[[ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    cluster: str = ...,
+    containerInstance: str = ...,
+    family: str = ...,
+    startedBy: str = ...,
+    serviceName: str = ...,
+    desiredStatus: DesiredStatusType = ...,  # (1)
+    launchType: LaunchTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListTasksResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: DesiredStatusType](./literals.md#desiredstatustype) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTasksRequestListTasksPaginateTypeDef = {  # (1)
+    "cluster": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTasksRequestListTasksPaginateTypeDef](./type_defs.md#listtasksrequestlisttaskspaginatetypedef) 

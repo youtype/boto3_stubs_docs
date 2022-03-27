@@ -1,3123 +1,3971 @@
-<a id="typed-dictionaries-for-boto3-emr-module"></a>
-
-# Typed dictionaries for boto3 EMR module
+# Typed dictionaries
 
 > [Index](../README.md) > [EMR](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module
-[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
+!!! note ""
 
-- [Typed dictionaries for boto3 EMR module](#typed-dictionaries-for-boto3-emr-module)
-  - [AddInstanceFleetInputRequestTypeDef](#addinstancefleetinputrequesttypedef)
-  - [AddInstanceFleetOutputTypeDef](#addinstancefleetoutputtypedef)
-  - [AddInstanceGroupsInputRequestTypeDef](#addinstancegroupsinputrequesttypedef)
-  - [AddInstanceGroupsOutputTypeDef](#addinstancegroupsoutputtypedef)
-  - [AddJobFlowStepsInputRequestTypeDef](#addjobflowstepsinputrequesttypedef)
-  - [AddJobFlowStepsOutputTypeDef](#addjobflowstepsoutputtypedef)
-  - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
-  - [ApplicationTypeDef](#applicationtypedef)
-  - [AutoScalingPolicyDescriptionTypeDef](#autoscalingpolicydescriptiontypedef)
-  - [AutoScalingPolicyStateChangeReasonTypeDef](#autoscalingpolicystatechangereasontypedef)
-  - [AutoScalingPolicyStatusTypeDef](#autoscalingpolicystatustypedef)
-  - [AutoScalingPolicyTypeDef](#autoscalingpolicytypedef)
-  - [AutoTerminationPolicyTypeDef](#autoterminationpolicytypedef)
-  - [BlockPublicAccessConfigurationMetadataTypeDef](#blockpublicaccessconfigurationmetadatatypedef)
-  - [BlockPublicAccessConfigurationTypeDef](#blockpublicaccessconfigurationtypedef)
-  - [BootstrapActionConfigTypeDef](#bootstrapactionconfigtypedef)
-  - [BootstrapActionDetailTypeDef](#bootstrapactiondetailtypedef)
-  - [CancelStepsInfoTypeDef](#cancelstepsinfotypedef)
-  - [CancelStepsInputRequestTypeDef](#cancelstepsinputrequesttypedef)
-  - [CancelStepsOutputTypeDef](#cancelstepsoutputtypedef)
-  - [CloudWatchAlarmDefinitionTypeDef](#cloudwatchalarmdefinitiontypedef)
-  - [ClusterStateChangeReasonTypeDef](#clusterstatechangereasontypedef)
-  - [ClusterStatusTypeDef](#clusterstatustypedef)
-  - [ClusterSummaryTypeDef](#clustersummarytypedef)
-  - [ClusterTimelineTypeDef](#clustertimelinetypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [CommandTypeDef](#commandtypedef)
-  - [ComputeLimitsTypeDef](#computelimitstypedef)
-  - [ConfigurationTypeDef](#configurationtypedef)
-  - [CreateSecurityConfigurationInputRequestTypeDef](#createsecurityconfigurationinputrequesttypedef)
-  - [CreateSecurityConfigurationOutputTypeDef](#createsecurityconfigurationoutputtypedef)
-  - [CreateStudioInputRequestTypeDef](#createstudioinputrequesttypedef)
-  - [CreateStudioOutputTypeDef](#createstudiooutputtypedef)
-  - [CreateStudioSessionMappingInputRequestTypeDef](#createstudiosessionmappinginputrequesttypedef)
-  - [DeleteSecurityConfigurationInputRequestTypeDef](#deletesecurityconfigurationinputrequesttypedef)
-  - [DeleteStudioInputRequestTypeDef](#deletestudioinputrequesttypedef)
-  - [DeleteStudioSessionMappingInputRequestTypeDef](#deletestudiosessionmappinginputrequesttypedef)
-  - [DescribeClusterInputRequestTypeDef](#describeclusterinputrequesttypedef)
-  - [DescribeClusterOutputTypeDef](#describeclusteroutputtypedef)
-  - [DescribeJobFlowsInputRequestTypeDef](#describejobflowsinputrequesttypedef)
-  - [DescribeJobFlowsOutputTypeDef](#describejobflowsoutputtypedef)
-  - [DescribeNotebookExecutionInputRequestTypeDef](#describenotebookexecutioninputrequesttypedef)
-  - [DescribeNotebookExecutionOutputTypeDef](#describenotebookexecutionoutputtypedef)
-  - [DescribeReleaseLabelInputRequestTypeDef](#describereleaselabelinputrequesttypedef)
-  - [DescribeReleaseLabelOutputTypeDef](#describereleaselabeloutputtypedef)
-  - [DescribeSecurityConfigurationInputRequestTypeDef](#describesecurityconfigurationinputrequesttypedef)
-  - [DescribeSecurityConfigurationOutputTypeDef](#describesecurityconfigurationoutputtypedef)
-  - [DescribeStepInputRequestTypeDef](#describestepinputrequesttypedef)
-  - [DescribeStepOutputTypeDef](#describestepoutputtypedef)
-  - [DescribeStudioInputRequestTypeDef](#describestudioinputrequesttypedef)
-  - [DescribeStudioOutputTypeDef](#describestudiooutputtypedef)
-  - [EbsBlockDeviceConfigTypeDef](#ebsblockdeviceconfigtypedef)
-  - [EbsBlockDeviceTypeDef](#ebsblockdevicetypedef)
-  - [EbsConfigurationTypeDef](#ebsconfigurationtypedef)
-  - [EbsVolumeTypeDef](#ebsvolumetypedef)
-  - [Ec2InstanceAttributesTypeDef](#ec2instanceattributestypedef)
-  - [ExecutionEngineConfigTypeDef](#executionengineconfigtypedef)
-  - [FailureDetailsTypeDef](#failuredetailstypedef)
-  - [GetAutoTerminationPolicyInputRequestTypeDef](#getautoterminationpolicyinputrequesttypedef)
-  - [GetAutoTerminationPolicyOutputTypeDef](#getautoterminationpolicyoutputtypedef)
-  - [GetBlockPublicAccessConfigurationOutputTypeDef](#getblockpublicaccessconfigurationoutputtypedef)
-  - [GetManagedScalingPolicyInputRequestTypeDef](#getmanagedscalingpolicyinputrequesttypedef)
-  - [GetManagedScalingPolicyOutputTypeDef](#getmanagedscalingpolicyoutputtypedef)
-  - [GetStudioSessionMappingInputRequestTypeDef](#getstudiosessionmappinginputrequesttypedef)
-  - [GetStudioSessionMappingOutputTypeDef](#getstudiosessionmappingoutputtypedef)
-  - [HadoopJarStepConfigTypeDef](#hadoopjarstepconfigtypedef)
-  - [HadoopStepConfigTypeDef](#hadoopstepconfigtypedef)
-  - [InstanceFleetConfigTypeDef](#instancefleetconfigtypedef)
-  - [InstanceFleetModifyConfigTypeDef](#instancefleetmodifyconfigtypedef)
-  - [InstanceFleetProvisioningSpecificationsTypeDef](#instancefleetprovisioningspecificationstypedef)
-  - [InstanceFleetStateChangeReasonTypeDef](#instancefleetstatechangereasontypedef)
-  - [InstanceFleetStatusTypeDef](#instancefleetstatustypedef)
-  - [InstanceFleetTimelineTypeDef](#instancefleettimelinetypedef)
-  - [InstanceFleetTypeDef](#instancefleettypedef)
-  - [InstanceGroupConfigTypeDef](#instancegroupconfigtypedef)
-  - [InstanceGroupDetailTypeDef](#instancegroupdetailtypedef)
-  - [InstanceGroupModifyConfigTypeDef](#instancegroupmodifyconfigtypedef)
-  - [InstanceGroupStateChangeReasonTypeDef](#instancegroupstatechangereasontypedef)
-  - [InstanceGroupStatusTypeDef](#instancegroupstatustypedef)
-  - [InstanceGroupTimelineTypeDef](#instancegrouptimelinetypedef)
-  - [InstanceGroupTypeDef](#instancegrouptypedef)
-  - [InstanceResizePolicyTypeDef](#instanceresizepolicytypedef)
-  - [InstanceStateChangeReasonTypeDef](#instancestatechangereasontypedef)
-  - [InstanceStatusTypeDef](#instancestatustypedef)
-  - [InstanceTimelineTypeDef](#instancetimelinetypedef)
-  - [InstanceTypeConfigTypeDef](#instancetypeconfigtypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [InstanceTypeSpecificationTypeDef](#instancetypespecificationtypedef)
-  - [JobFlowDetailTypeDef](#jobflowdetailtypedef)
-  - [JobFlowExecutionStatusDetailTypeDef](#jobflowexecutionstatusdetailtypedef)
-  - [JobFlowInstancesConfigTypeDef](#jobflowinstancesconfigtypedef)
-  - [JobFlowInstancesDetailTypeDef](#jobflowinstancesdetailtypedef)
-  - [KerberosAttributesTypeDef](#kerberosattributestypedef)
-  - [KeyValueTypeDef](#keyvaluetypedef)
-  - [ListBootstrapActionsInputRequestTypeDef](#listbootstrapactionsinputrequesttypedef)
-  - [ListBootstrapActionsOutputTypeDef](#listbootstrapactionsoutputtypedef)
-  - [ListClustersInputRequestTypeDef](#listclustersinputrequesttypedef)
-  - [ListClustersOutputTypeDef](#listclustersoutputtypedef)
-  - [ListInstanceFleetsInputRequestTypeDef](#listinstancefleetsinputrequesttypedef)
-  - [ListInstanceFleetsOutputTypeDef](#listinstancefleetsoutputtypedef)
-  - [ListInstanceGroupsInputRequestTypeDef](#listinstancegroupsinputrequesttypedef)
-  - [ListInstanceGroupsOutputTypeDef](#listinstancegroupsoutputtypedef)
-  - [ListInstancesInputRequestTypeDef](#listinstancesinputrequesttypedef)
-  - [ListInstancesOutputTypeDef](#listinstancesoutputtypedef)
-  - [ListNotebookExecutionsInputRequestTypeDef](#listnotebookexecutionsinputrequesttypedef)
-  - [ListNotebookExecutionsOutputTypeDef](#listnotebookexecutionsoutputtypedef)
-  - [ListReleaseLabelsInputRequestTypeDef](#listreleaselabelsinputrequesttypedef)
-  - [ListReleaseLabelsOutputTypeDef](#listreleaselabelsoutputtypedef)
-  - [ListSecurityConfigurationsInputRequestTypeDef](#listsecurityconfigurationsinputrequesttypedef)
-  - [ListSecurityConfigurationsOutputTypeDef](#listsecurityconfigurationsoutputtypedef)
-  - [ListStepsInputRequestTypeDef](#liststepsinputrequesttypedef)
-  - [ListStepsOutputTypeDef](#liststepsoutputtypedef)
-  - [ListStudioSessionMappingsInputRequestTypeDef](#liststudiosessionmappingsinputrequesttypedef)
-  - [ListStudioSessionMappingsOutputTypeDef](#liststudiosessionmappingsoutputtypedef)
-  - [ListStudiosInputRequestTypeDef](#liststudiosinputrequesttypedef)
-  - [ListStudiosOutputTypeDef](#liststudiosoutputtypedef)
-  - [ManagedScalingPolicyTypeDef](#managedscalingpolicytypedef)
-  - [MetricDimensionTypeDef](#metricdimensiontypedef)
-  - [ModifyClusterInputRequestTypeDef](#modifyclusterinputrequesttypedef)
-  - [ModifyClusterOutputTypeDef](#modifyclusteroutputtypedef)
-  - [ModifyInstanceFleetInputRequestTypeDef](#modifyinstancefleetinputrequesttypedef)
-  - [ModifyInstanceGroupsInputRequestTypeDef](#modifyinstancegroupsinputrequesttypedef)
-  - [NotebookExecutionSummaryTypeDef](#notebookexecutionsummarytypedef)
-  - [NotebookExecutionTypeDef](#notebookexecutiontypedef)
-  - [OnDemandCapacityReservationOptionsTypeDef](#ondemandcapacityreservationoptionstypedef)
-  - [OnDemandProvisioningSpecificationTypeDef](#ondemandprovisioningspecificationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlacementGroupConfigTypeDef](#placementgroupconfigtypedef)
-  - [PlacementTypeTypeDef](#placementtypetypedef)
-  - [PortRangeTypeDef](#portrangetypedef)
-  - [PutAutoScalingPolicyInputRequestTypeDef](#putautoscalingpolicyinputrequesttypedef)
-  - [PutAutoScalingPolicyOutputTypeDef](#putautoscalingpolicyoutputtypedef)
-  - [PutAutoTerminationPolicyInputRequestTypeDef](#putautoterminationpolicyinputrequesttypedef)
-  - [PutBlockPublicAccessConfigurationInputRequestTypeDef](#putblockpublicaccessconfigurationinputrequesttypedef)
-  - [PutManagedScalingPolicyInputRequestTypeDef](#putmanagedscalingpolicyinputrequesttypedef)
-  - [ReleaseLabelFilterTypeDef](#releaselabelfiltertypedef)
-  - [RemoveAutoScalingPolicyInputRequestTypeDef](#removeautoscalingpolicyinputrequesttypedef)
-  - [RemoveAutoTerminationPolicyInputRequestTypeDef](#removeautoterminationpolicyinputrequesttypedef)
-  - [RemoveManagedScalingPolicyInputRequestTypeDef](#removemanagedscalingpolicyinputrequesttypedef)
-  - [RemoveTagsInputRequestTypeDef](#removetagsinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RunJobFlowInputRequestTypeDef](#runjobflowinputrequesttypedef)
-  - [RunJobFlowOutputTypeDef](#runjobflowoutputtypedef)
-  - [ScalingActionTypeDef](#scalingactiontypedef)
-  - [ScalingConstraintsTypeDef](#scalingconstraintstypedef)
-  - [ScalingRuleTypeDef](#scalingruletypedef)
-  - [ScalingTriggerTypeDef](#scalingtriggertypedef)
-  - [ScriptBootstrapActionConfigTypeDef](#scriptbootstrapactionconfigtypedef)
-  - [SecurityConfigurationSummaryTypeDef](#securityconfigurationsummarytypedef)
-  - [SessionMappingDetailTypeDef](#sessionmappingdetailtypedef)
-  - [SessionMappingSummaryTypeDef](#sessionmappingsummarytypedef)
-  - [SetTerminationProtectionInputRequestTypeDef](#setterminationprotectioninputrequesttypedef)
-  - [SetVisibleToAllUsersInputRequestTypeDef](#setvisibletoallusersinputrequesttypedef)
-  - [ShrinkPolicyTypeDef](#shrinkpolicytypedef)
-  - [SimpleScalingPolicyConfigurationTypeDef](#simplescalingpolicyconfigurationtypedef)
-  - [SimplifiedApplicationTypeDef](#simplifiedapplicationtypedef)
-  - [SpotProvisioningSpecificationTypeDef](#spotprovisioningspecificationtypedef)
-  - [StartNotebookExecutionInputRequestTypeDef](#startnotebookexecutioninputrequesttypedef)
-  - [StartNotebookExecutionOutputTypeDef](#startnotebookexecutionoutputtypedef)
-  - [StepConfigTypeDef](#stepconfigtypedef)
-  - [StepDetailTypeDef](#stepdetailtypedef)
-  - [StepExecutionStatusDetailTypeDef](#stepexecutionstatusdetailtypedef)
-  - [StepStateChangeReasonTypeDef](#stepstatechangereasontypedef)
-  - [StepStatusTypeDef](#stepstatustypedef)
-  - [StepSummaryTypeDef](#stepsummarytypedef)
-  - [StepTimelineTypeDef](#steptimelinetypedef)
-  - [StepTypeDef](#steptypedef)
-  - [StopNotebookExecutionInputRequestTypeDef](#stopnotebookexecutioninputrequesttypedef)
-  - [StudioSummaryTypeDef](#studiosummarytypedef)
-  - [StudioTypeDef](#studiotypedef)
-  - [SupportedProductConfigTypeDef](#supportedproductconfigtypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TerminateJobFlowsInputRequestTypeDef](#terminatejobflowsinputrequesttypedef)
-  - [UpdateStudioInputRequestTypeDef](#updatestudioinputrequesttypedef)
-  - [UpdateStudioSessionMappingInputRequestTypeDef](#updatestudiosessionmappinginputrequesttypedef)
-  - [VolumeSpecificationTypeDef](#volumespecificationtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addinstancefleetinputrequesttypedef"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## AddInstanceFleetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddInstanceFleetInputRequestTypeDef
+
+def get_value() -> AddInstanceFleetInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceFleet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddInstanceFleetInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceFleet: InstanceFleetConfigTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `InstanceFleet`:
-  [InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)
-
-<a id="addinstancefleetoutputtypedef"></a>
-
+1. See [:material-code-braces: InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef) 
 ## AddInstanceFleetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddInstanceFleetOutputTypeDef
+
+def get_value() -> AddInstanceFleetOutputTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceFleetId": ...,
+        "ClusterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddInstanceFleetOutputTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceFleetId: str,
+    ClusterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `InstanceFleetId`: `str`
-- `ClusterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addinstancegroupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddInstanceGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddInstanceGroupsInputRequestTypeDef
+
+def get_value() -> AddInstanceGroupsInputRequestTypeDef:
+    return {
+        "InstanceGroups": ...,
+        "JobFlowId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddInstanceGroupsInputRequestTypeDef(TypedDict):
+    InstanceGroups: Sequence[InstanceGroupConfigTypeDef],  # (1)
+    JobFlowId: str,
+```
 
-- `InstanceGroups`:
-  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
-- `JobFlowId`: `str`
-
-<a id="addinstancegroupsoutputtypedef"></a>
-
+1. See [:material-code-braces: InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef) 
 ## AddInstanceGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddInstanceGroupsOutputTypeDef
+
+def get_value() -> AddInstanceGroupsOutputTypeDef:
+    return {
+        "JobFlowId": ...,
+        "InstanceGroupIds": ...,
+        "ClusterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddInstanceGroupsOutputTypeDef(TypedDict):
+    JobFlowId: str,
+    InstanceGroupIds: List[str],
+    ClusterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobFlowId`: `str`
-- `InstanceGroupIds`: `List`\[`str`\]
-- `ClusterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addjobflowstepsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddJobFlowStepsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddJobFlowStepsInputRequestTypeDef
+
+def get_value() -> AddJobFlowStepsInputRequestTypeDef:
+    return {
+        "JobFlowId": ...,
+        "Steps": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddJobFlowStepsInputRequestTypeDef(TypedDict):
+    JobFlowId: str,
+    Steps: Sequence[StepConfigTypeDef],  # (1)
+```
 
-- `JobFlowId`: `str`
-- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
-
-<a id="addjobflowstepsoutputtypedef"></a>
-
+1. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
 ## AddJobFlowStepsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddJobFlowStepsOutputTypeDef
+
+def get_value() -> AddJobFlowStepsOutputTypeDef:
+    return {
+        "StepIds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddJobFlowStepsOutputTypeDef(TypedDict):
+    StepIds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StepIds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addtagsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AddTagsInputRequestTypeDef
+
+def get_value() -> AddTagsInputRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsInputRequestTypeDef(TypedDict):
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="applicationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ApplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ApplicationTypeDef
+
+def get_value() -> ApplicationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-- `Args`: `List`\[`str`\]
-- `AdditionalInfo`: `Dict`\[`str`, `str`\]
-
-<a id="autoscalingpolicydescriptiontypedef"></a>
+```python title="Definition"
+class ApplicationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+    Args: NotRequired[List[str]],
+    AdditionalInfo: NotRequired[Dict[str, str]],
+```
 
 ## AutoScalingPolicyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AutoScalingPolicyDescriptionTypeDef
+
+def get_value() -> AutoScalingPolicyDescriptionTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingPolicyDescriptionTypeDef(TypedDict):
+    Status: NotRequired[AutoScalingPolicyStatusTypeDef],  # (1)
+    Constraints: NotRequired[ScalingConstraintsTypeDef],  # (2)
+    Rules: NotRequired[List[ScalingRuleTypeDef]],  # (3)
+```
 
-- `Status`:
-  [AutoScalingPolicyStatusTypeDef](./type_defs.md#autoscalingpolicystatustypedef)
-- `Constraints`:
-  [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)
-- `Rules`: `List`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
-
-<a id="autoscalingpolicystatechangereasontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingPolicyStatusTypeDef](./type_defs.md#autoscalingpolicystatustypedef) 
+2. See [:material-code-braces: ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef) 
+3. See [:material-code-braces: ScalingRuleTypeDef](./type_defs.md#scalingruletypedef) 
 ## AutoScalingPolicyStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AutoScalingPolicyStateChangeReasonTypeDef
+
+def get_value() -> AutoScalingPolicyStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingPolicyStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[AutoScalingPolicyStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [AutoScalingPolicyStateChangeReasonCodeType](./literals.md#autoscalingpolicystatechangereasoncodetype)
-- `Message`: `str`
-
-<a id="autoscalingpolicystatustypedef"></a>
-
+1. See [:material-code-brackets: AutoScalingPolicyStateChangeReasonCodeType](./literals.md#autoscalingpolicystatechangereasoncodetype) 
 ## AutoScalingPolicyStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AutoScalingPolicyStatusTypeDef
+
+def get_value() -> AutoScalingPolicyStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingPolicyStatusTypeDef(TypedDict):
+    State: NotRequired[AutoScalingPolicyStateType],  # (1)
+    StateChangeReason: NotRequired[AutoScalingPolicyStateChangeReasonTypeDef],  # (2)
+```
 
-- `State`:
-  [AutoScalingPolicyStateType](./literals.md#autoscalingpolicystatetype)
-- `StateChangeReason`:
-  [AutoScalingPolicyStateChangeReasonTypeDef](./type_defs.md#autoscalingpolicystatechangereasontypedef)
-
-<a id="autoscalingpolicytypedef"></a>
-
+1. See [:material-code-brackets: AutoScalingPolicyStateType](./literals.md#autoscalingpolicystatetype) 
+2. See [:material-code-braces: AutoScalingPolicyStateChangeReasonTypeDef](./type_defs.md#autoscalingpolicystatechangereasontypedef) 
 ## AutoScalingPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AutoScalingPolicyTypeDef
+
+def get_value() -> AutoScalingPolicyTypeDef:
+    return {
+        "Constraints": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoScalingPolicyTypeDef(TypedDict):
+    Constraints: ScalingConstraintsTypeDef,  # (1)
+    Rules: Sequence[ScalingRuleTypeDef],  # (2)
+```
 
-- `Constraints`:
-  [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)
-- `Rules`:
-  `Sequence`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
-
-<a id="autoterminationpolicytypedef"></a>
-
+1. See [:material-code-braces: ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef) 
+2. See [:material-code-braces: ScalingRuleTypeDef](./type_defs.md#scalingruletypedef) 
 ## AutoTerminationPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import AutoTerminationPolicyTypeDef
+
+def get_value() -> AutoTerminationPolicyTypeDef:
+    return {
+        "IdleTimeout": ...,
+    }
 ```
 
-Optional fields:
-
-- `IdleTimeout`: `int`
-
-<a id="blockpublicaccessconfigurationmetadatatypedef"></a>
+```python title="Definition"
+class AutoTerminationPolicyTypeDef(TypedDict):
+    IdleTimeout: NotRequired[int],
+```
 
 ## BlockPublicAccessConfigurationMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import BlockPublicAccessConfigurationMetadataTypeDef
+
+def get_value() -> BlockPublicAccessConfigurationMetadataTypeDef:
+    return {
+        "CreationDateTime": ...,
+        "CreatedByArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CreationDateTime`: `datetime`
-- `CreatedByArn`: `str`
-
-<a id="blockpublicaccessconfigurationtypedef"></a>
+```python title="Definition"
+class BlockPublicAccessConfigurationMetadataTypeDef(TypedDict):
+    CreationDateTime: datetime,
+    CreatedByArn: str,
+```
 
 ## BlockPublicAccessConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import BlockPublicAccessConfigurationTypeDef
+
+def get_value() -> BlockPublicAccessConfigurationTypeDef:
+    return {
+        "BlockPublicSecurityGroupRules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BlockPublicAccessConfigurationTypeDef(TypedDict):
+    BlockPublicSecurityGroupRules: bool,
+    PermittedPublicSecurityGroupRuleRanges: NotRequired[List[PortRangeTypeDef]],  # (1)
+```
 
-- `BlockPublicSecurityGroupRules`: `bool`
-
-Optional fields:
-
-- `PermittedPublicSecurityGroupRuleRanges`:
-  `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-
-<a id="bootstrapactionconfigtypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
 ## BootstrapActionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import BootstrapActionConfigTypeDef
+
+def get_value() -> BootstrapActionConfigTypeDef:
+    return {
+        "Name": ...,
+        "ScriptBootstrapAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BootstrapActionConfigTypeDef(TypedDict):
+    Name: str,
+    ScriptBootstrapAction: ScriptBootstrapActionConfigTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `ScriptBootstrapAction`:
-  [ScriptBootstrapActionConfigTypeDef](./type_defs.md#scriptbootstrapactionconfigtypedef)
-
-<a id="bootstrapactiondetailtypedef"></a>
-
+1. See [:material-code-braces: ScriptBootstrapActionConfigTypeDef](./type_defs.md#scriptbootstrapactionconfigtypedef) 
 ## BootstrapActionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import BootstrapActionDetailTypeDef
+
+def get_value() -> BootstrapActionDetailTypeDef:
+    return {
+        "BootstrapActionConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BootstrapActionDetailTypeDef(TypedDict):
+    BootstrapActionConfig: NotRequired[BootstrapActionConfigTypeDef],  # (1)
+```
 
-- `BootstrapActionConfig`:
-  [BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)
-
-<a id="cancelstepsinfotypedef"></a>
-
+1. See [:material-code-braces: BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef) 
 ## CancelStepsInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CancelStepsInfoTypeDef
+
+def get_value() -> CancelStepsInfoTypeDef:
+    return {
+        "StepId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CancelStepsInfoTypeDef(TypedDict):
+    StepId: NotRequired[str],
+    Status: NotRequired[CancelStepsRequestStatusType],  # (1)
+    Reason: NotRequired[str],
+```
 
-- `StepId`: `str`
-- `Status`:
-  [CancelStepsRequestStatusType](./literals.md#cancelstepsrequeststatustype)
-- `Reason`: `str`
-
-<a id="cancelstepsinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: CancelStepsRequestStatusType](./literals.md#cancelstepsrequeststatustype) 
 ## CancelStepsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CancelStepsInputRequestTypeDef
+
+def get_value() -> CancelStepsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "StepIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelStepsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    StepIds: Sequence[str],
+    StepCancellationOption: NotRequired[StepCancellationOptionType],  # (1)
+```
 
-- `ClusterId`: `str`
-- `StepIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `StepCancellationOption`:
-  [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
-
-<a id="cancelstepsoutputtypedef"></a>
-
+1. See [:material-code-brackets: StepCancellationOptionType](./literals.md#stepcancellationoptiontype) 
 ## CancelStepsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CancelStepsOutputTypeDef
+
+def get_value() -> CancelStepsOutputTypeDef:
+    return {
+        "CancelStepsInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelStepsOutputTypeDef(TypedDict):
+    CancelStepsInfoList: List[CancelStepsInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CancelStepsInfoList`:
-  `List`\[[CancelStepsInfoTypeDef](./type_defs.md#cancelstepsinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudwatchalarmdefinitiontypedef"></a>
-
+1. See [:material-code-braces: CancelStepsInfoTypeDef](./type_defs.md#cancelstepsinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudWatchAlarmDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CloudWatchAlarmDefinitionTypeDef
+
+def get_value() -> CloudWatchAlarmDefinitionTypeDef:
+    return {
+        "ComparisonOperator": ...,
+        "MetricName": ...,
+        "Period": ...,
+        "Threshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudWatchAlarmDefinitionTypeDef(TypedDict):
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    MetricName: str,
+    Period: int,
+    Threshold: float,
+    EvaluationPeriods: NotRequired[int],
+    Namespace: NotRequired[str],
+    Statistic: NotRequired[StatisticType],  # (2)
+    Unit: NotRequired[UnitType],  # (3)
+    Dimensions: NotRequired[Sequence[MetricDimensionTypeDef]],  # (4)
+```
 
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `MetricName`: `str`
-- `Period`: `int`
-- `Threshold`: `float`
-
-Optional fields:
-
-- `EvaluationPeriods`: `int`
-- `Namespace`: `str`
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-- `Unit`: [UnitType](./literals.md#unittype)
-- `Dimensions`:
-  `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
-
-<a id="clusterstatechangereasontypedef"></a>
-
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-brackets: UnitType](./literals.md#unittype) 
+4. See [:material-code-braces: MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef) 
 ## ClusterStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ClusterStateChangeReasonTypeDef
+
+def get_value() -> ClusterStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[ClusterStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [ClusterStateChangeReasonCodeType](./literals.md#clusterstatechangereasoncodetype)
-- `Message`: `str`
-
-<a id="clusterstatustypedef"></a>
-
+1. See [:material-code-brackets: ClusterStateChangeReasonCodeType](./literals.md#clusterstatechangereasoncodetype) 
 ## ClusterStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ClusterStatusTypeDef
+
+def get_value() -> ClusterStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterStatusTypeDef(TypedDict):
+    State: NotRequired[ClusterStateType],  # (1)
+    StateChangeReason: NotRequired[ClusterStateChangeReasonTypeDef],  # (2)
+    Timeline: NotRequired[ClusterTimelineTypeDef],  # (3)
+```
 
-- `State`: [ClusterStateType](./literals.md#clusterstatetype)
-- `StateChangeReason`:
-  [ClusterStateChangeReasonTypeDef](./type_defs.md#clusterstatechangereasontypedef)
-- `Timeline`: [ClusterTimelineTypeDef](./type_defs.md#clustertimelinetypedef)
-
-<a id="clustersummarytypedef"></a>
-
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-braces: ClusterStateChangeReasonTypeDef](./type_defs.md#clusterstatechangereasontypedef) 
+3. See [:material-code-braces: ClusterTimelineTypeDef](./type_defs.md#clustertimelinetypedef) 
 ## ClusterSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ClusterSummaryTypeDef
+
+def get_value() -> ClusterSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ClusterStatusTypeDef],  # (1)
+    NormalizedInstanceHours: NotRequired[int],
+    ClusterArn: NotRequired[str],
+    OutpostArn: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Status`: [ClusterStatusTypeDef](./type_defs.md#clusterstatustypedef)
-- `NormalizedInstanceHours`: `int`
-- `ClusterArn`: `str`
-- `OutpostArn`: `str`
-
-<a id="clustertimelinetypedef"></a>
-
+1. See [:material-code-braces: ClusterStatusTypeDef](./type_defs.md#clusterstatustypedef) 
 ## ClusterTimelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ClusterTimelineTypeDef
+
+def get_value() -> ClusterTimelineTypeDef:
+    return {
+        "CreationDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreationDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-
-<a id="clustertypedef"></a>
+```python title="Definition"
+class ClusterTimelineTypeDef(TypedDict):
+    CreationDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+```
 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[ClusterStatusTypeDef],  # (1)
+    Ec2InstanceAttributes: NotRequired[Ec2InstanceAttributesTypeDef],  # (2)
+    InstanceCollectionType: NotRequired[InstanceCollectionTypeType],  # (3)
+    LogUri: NotRequired[str],
+    LogEncryptionKmsKeyId: NotRequired[str],
+    RequestedAmiVersion: NotRequired[str],
+    RunningAmiVersion: NotRequired[str],
+    ReleaseLabel: NotRequired[str],
+    AutoTerminate: NotRequired[bool],
+    TerminationProtected: NotRequired[bool],
+    VisibleToAllUsers: NotRequired[bool],
+    Applications: NotRequired[List[ApplicationTypeDef]],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    ServiceRole: NotRequired[str],
+    NormalizedInstanceHours: NotRequired[int],
+    MasterPublicDnsName: NotRequired[str],
+    Configurations: NotRequired[List[ConfigurationTypeDef]],  # (6)
+    SecurityConfiguration: NotRequired[str],
+    AutoScalingRole: NotRequired[str],
+    ScaleDownBehavior: NotRequired[ScaleDownBehaviorType],  # (7)
+    CustomAmiId: NotRequired[str],
+    EbsRootVolumeSize: NotRequired[int],
+    RepoUpgradeOnBoot: NotRequired[RepoUpgradeOnBootType],  # (8)
+    KerberosAttributes: NotRequired[KerberosAttributesTypeDef],  # (9)
+    ClusterArn: NotRequired[str],
+    OutpostArn: NotRequired[str],
+    StepConcurrencyLevel: NotRequired[int],
+    PlacementGroups: NotRequired[List[PlacementGroupConfigTypeDef]],  # (10)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Status`: [ClusterStatusTypeDef](./type_defs.md#clusterstatustypedef)
-- `Ec2InstanceAttributes`:
-  [Ec2InstanceAttributesTypeDef](./type_defs.md#ec2instanceattributestypedef)
-- `InstanceCollectionType`:
-  [InstanceCollectionTypeType](./literals.md#instancecollectiontypetype)
-- `LogUri`: `str`
-- `LogEncryptionKmsKeyId`: `str`
-- `RequestedAmiVersion`: `str`
-- `RunningAmiVersion`: `str`
-- `ReleaseLabel`: `str`
-- `AutoTerminate`: `bool`
-- `TerminationProtected`: `bool`
-- `VisibleToAllUsers`: `bool`
-- `Applications`:
-  `List`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ServiceRole`: `str`
-- `NormalizedInstanceHours`: `int`
-- `MasterPublicDnsName`: `str`
-- `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `SecurityConfiguration`: `str`
-- `AutoScalingRole`: `str`
-- `ScaleDownBehavior`:
-  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
-- `CustomAmiId`: `str`
-- `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`:
-  [RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype)
-- `KerberosAttributes`:
-  [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
-- `ClusterArn`: `str`
-- `OutpostArn`: `str`
-- `StepConcurrencyLevel`: `int`
-- `PlacementGroups`:
-  `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
-
-<a id="commandtypedef"></a>
-
+1. See [:material-code-braces: ClusterStatusTypeDef](./type_defs.md#clusterstatustypedef) 
+2. See [:material-code-braces: Ec2InstanceAttributesTypeDef](./type_defs.md#ec2instanceattributestypedef) 
+3. See [:material-code-brackets: InstanceCollectionTypeType](./literals.md#instancecollectiontypetype) 
+4. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+7. See [:material-code-brackets: ScaleDownBehaviorType](./literals.md#scaledownbehaviortype) 
+8. See [:material-code-brackets: RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype) 
+9. See [:material-code-braces: KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef) 
+10. See [:material-code-braces: PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef) 
 ## CommandTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CommandTypeDef
+
+def get_value() -> CommandTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `ScriptPath`: `str`
-- `Args`: `List`\[`str`\]
-
-<a id="computelimitstypedef"></a>
+```python title="Definition"
+class CommandTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ScriptPath: NotRequired[str],
+    Args: NotRequired[List[str]],
+```
 
 ## ComputeLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ComputeLimitsTypeDef
+
+def get_value() -> ComputeLimitsTypeDef:
+    return {
+        "UnitType": ...,
+        "MinimumCapacityUnits": ...,
+        "MaximumCapacityUnits": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComputeLimitsTypeDef(TypedDict):
+    UnitType: ComputeLimitsUnitTypeType,  # (1)
+    MinimumCapacityUnits: int,
+    MaximumCapacityUnits: int,
+    MaximumOnDemandCapacityUnits: NotRequired[int],
+    MaximumCoreCapacityUnits: NotRequired[int],
+```
 
-- `UnitType`:
-  [ComputeLimitsUnitTypeType](./literals.md#computelimitsunittypetype)
-- `MinimumCapacityUnits`: `int`
-- `MaximumCapacityUnits`: `int`
-
-Optional fields:
-
-- `MaximumOnDemandCapacityUnits`: `int`
-- `MaximumCoreCapacityUnits`: `int`
-
-<a id="configurationtypedef"></a>
-
+1. See [:material-code-brackets: ComputeLimitsUnitTypeType](./literals.md#computelimitsunittypetype) 
 ## ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ConfigurationTypeDef
+
+def get_value() -> ConfigurationTypeDef:
+    return {
+        "Classification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationTypeDef(TypedDict):
+    Classification: NotRequired[str],
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (1)
+    Properties: NotRequired[Mapping[str, str]],
+```
 
-- `Classification`: `str`
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `Properties`: `Mapping`\[`str`, `str`\]
-
-<a id="createsecurityconfigurationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 ## CreateSecurityConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CreateSecurityConfigurationInputRequestTypeDef
+
+def get_value() -> CreateSecurityConfigurationInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "SecurityConfiguration": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `SecurityConfiguration`: `str`
-
-<a id="createsecurityconfigurationoutputtypedef"></a>
+```python title="Definition"
+class CreateSecurityConfigurationInputRequestTypeDef(TypedDict):
+    Name: str,
+    SecurityConfiguration: str,
+```
 
 ## CreateSecurityConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CreateSecurityConfigurationOutputTypeDef
+
+def get_value() -> CreateSecurityConfigurationOutputTypeDef:
+    return {
+        "Name": ...,
+        "CreationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecurityConfigurationOutputTypeDef(TypedDict):
+    Name: str,
+    CreationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `CreationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstudioinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStudioInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CreateStudioInputRequestTypeDef
+
+def get_value() -> CreateStudioInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "AuthMode": ...,
+        "VpcId": ...,
+        "SubnetIds": ...,
+        "ServiceRole": ...,
+        "WorkspaceSecurityGroupId": ...,
+        "EngineSecurityGroupId": ...,
+        "DefaultS3Location": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStudioInputRequestTypeDef(TypedDict):
+    Name: str,
+    AuthMode: AuthModeType,  # (1)
+    VpcId: str,
+    SubnetIds: Sequence[str],
+    ServiceRole: str,
+    WorkspaceSecurityGroupId: str,
+    EngineSecurityGroupId: str,
+    DefaultS3Location: str,
+    Description: NotRequired[str],
+    UserRole: NotRequired[str],
+    IdpAuthUrl: NotRequired[str],
+    IdpRelayStateParameterName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `VpcId`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-- `ServiceRole`: `str`
-- `WorkspaceSecurityGroupId`: `str`
-- `EngineSecurityGroupId`: `str`
-- `DefaultS3Location`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `UserRole`: `str`
-- `IdpAuthUrl`: `str`
-- `IdpRelayStateParameterName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createstudiooutputtypedef"></a>
-
+1. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateStudioOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CreateStudioOutputTypeDef
+
+def get_value() -> CreateStudioOutputTypeDef:
+    return {
+        "StudioId": ...,
+        "Url": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStudioOutputTypeDef(TypedDict):
+    StudioId: str,
+    Url: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StudioId`: `str`
-- `Url`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstudiosessionmappinginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStudioSessionMappingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import CreateStudioSessionMappingInputRequestTypeDef
+
+def get_value() -> CreateStudioSessionMappingInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+        "IdentityType": ...,
+        "SessionPolicyArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStudioSessionMappingInputRequestTypeDef(TypedDict):
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    SessionPolicyArn: str,
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+```
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `SessionPolicyArn`: `str`
-
-Optional fields:
-
-- `IdentityId`: `str`
-- `IdentityName`: `str`
-
-<a id="deletesecurityconfigurationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## DeleteSecurityConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DeleteSecurityConfigurationInputRequestTypeDef
+
+def get_value() -> DeleteSecurityConfigurationInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deletestudioinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteSecurityConfigurationInputRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeleteStudioInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DeleteStudioInputRequestTypeDef
+
+def get_value() -> DeleteStudioInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Required fields:
-
-- `StudioId`: `str`
-
-<a id="deletestudiosessionmappinginputrequesttypedef"></a>
+```python title="Definition"
+class DeleteStudioInputRequestTypeDef(TypedDict):
+    StudioId: str,
+```
 
 ## DeleteStudioSessionMappingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DeleteStudioSessionMappingInputRequestTypeDef
+
+def get_value() -> DeleteStudioSessionMappingInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+        "IdentityType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteStudioSessionMappingInputRequestTypeDef(TypedDict):
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+```
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+## DescribeClusterInputClusterRunningWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import DescribeClusterInputClusterRunningWaitTypeDef
 
-- `IdentityId`: `str`
-- `IdentityName`: `str`
+def get_value() -> DescribeClusterInputClusterRunningWaitTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
 
-<a id="describeclusterinputrequesttypedef"></a>
+```python title="Definition"
+class DescribeClusterInputClusterRunningWaitTypeDef(TypedDict):
+    ClusterId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeClusterInputClusterTerminatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import DescribeClusterInputClusterTerminatedWaitTypeDef
+
+def get_value() -> DescribeClusterInputClusterTerminatedWaitTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClusterInputClusterTerminatedWaitTypeDef(TypedDict):
+    ClusterId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeClusterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeClusterInputRequestTypeDef
+
+def get_value() -> DescribeClusterInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="describeclusteroutputtypedef"></a>
+```python title="Definition"
+class DescribeClusterInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## DescribeClusterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeClusterOutputTypeDef
+
+def get_value() -> DescribeClusterOutputTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClusterOutputTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describejobflowsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeJobFlowsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeJobFlowsInputRequestTypeDef
+
+def get_value() -> DescribeJobFlowsInputRequestTypeDef:
+    return {
+        "CreatedAfter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeJobFlowsInputRequestTypeDef(TypedDict):
+    CreatedAfter: NotRequired[Union[datetime, str]],
+    CreatedBefore: NotRequired[Union[datetime, str]],
+    JobFlowIds: NotRequired[Sequence[str]],
+    JobFlowStates: NotRequired[Sequence[JobFlowExecutionStateType]],  # (1)
+```
 
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `JobFlowIds`: `Sequence`\[`str`\]
-- `JobFlowStates`:
-  `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
-
-<a id="describejobflowsoutputtypedef"></a>
-
+1. See [:material-code-brackets: JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype) 
 ## DescribeJobFlowsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeJobFlowsOutputTypeDef
+
+def get_value() -> DescribeJobFlowsOutputTypeDef:
+    return {
+        "JobFlows": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeJobFlowsOutputTypeDef(TypedDict):
+    JobFlows: List[JobFlowDetailTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobFlows`:
-  `List`\[[JobFlowDetailTypeDef](./type_defs.md#jobflowdetailtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describenotebookexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: JobFlowDetailTypeDef](./type_defs.md#jobflowdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeNotebookExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeNotebookExecutionInputRequestTypeDef
+
+def get_value() -> DescribeNotebookExecutionInputRequestTypeDef:
+    return {
+        "NotebookExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `NotebookExecutionId`: `str`
-
-<a id="describenotebookexecutionoutputtypedef"></a>
+```python title="Definition"
+class DescribeNotebookExecutionInputRequestTypeDef(TypedDict):
+    NotebookExecutionId: str,
+```
 
 ## DescribeNotebookExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeNotebookExecutionOutputTypeDef
+
+def get_value() -> DescribeNotebookExecutionOutputTypeDef:
+    return {
+        "NotebookExecution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNotebookExecutionOutputTypeDef(TypedDict):
+    NotebookExecution: NotebookExecutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NotebookExecution`:
-  [NotebookExecutionTypeDef](./type_defs.md#notebookexecutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereleaselabelinputrequesttypedef"></a>
-
+1. See [:material-code-braces: NotebookExecutionTypeDef](./type_defs.md#notebookexecutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeReleaseLabelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeReleaseLabelInputRequestTypeDef
+
+def get_value() -> DescribeReleaseLabelInputRequestTypeDef:
+    return {
+        "ReleaseLabel": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReleaseLabel`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describereleaselabeloutputtypedef"></a>
+```python title="Definition"
+class DescribeReleaseLabelInputRequestTypeDef(TypedDict):
+    ReleaseLabel: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeReleaseLabelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeReleaseLabelOutputTypeDef
+
+def get_value() -> DescribeReleaseLabelOutputTypeDef:
+    return {
+        "ReleaseLabel": ...,
+        "Applications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReleaseLabelOutputTypeDef(TypedDict):
+    ReleaseLabel: str,
+    Applications: List[SimplifiedApplicationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReleaseLabel`: `str`
-- `Applications`:
-  `List`\[[SimplifiedApplicationTypeDef](./type_defs.md#simplifiedapplicationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesecurityconfigurationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: SimplifiedApplicationTypeDef](./type_defs.md#simplifiedapplicationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecurityConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationInputRequestTypeDef
+
+def get_value() -> DescribeSecurityConfigurationInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="describesecurityconfigurationoutputtypedef"></a>
+```python title="Definition"
+class DescribeSecurityConfigurationInputRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DescribeSecurityConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationOutputTypeDef
+
+def get_value() -> DescribeSecurityConfigurationOutputTypeDef:
+    return {
+        "Name": ...,
+        "SecurityConfiguration": ...,
+        "CreationDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSecurityConfigurationOutputTypeDef(TypedDict):
+    Name: str,
+    SecurityConfiguration: str,
+    CreationDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Name`: `str`
-- `SecurityConfiguration`: `str`
-- `CreationDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestepinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStepInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeStepInputRequestTypeDef
+
+def get_value() -> DescribeStepInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "StepId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStepInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    StepId: str,
+```
 
-- `ClusterId`: `str`
-- `StepId`: `str`
+## DescribeStepInputStepCompleteWaitTypeDef
 
-<a id="describestepoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import DescribeStepInputStepCompleteWaitTypeDef
 
+def get_value() -> DescribeStepInputStepCompleteWaitTypeDef:
+    return {
+        "ClusterId": ...,
+        "StepId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeStepInputStepCompleteWaitTypeDef(TypedDict):
+    ClusterId: str,
+    StepId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeStepOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeStepOutputTypeDef
+
+def get_value() -> DescribeStepOutputTypeDef:
+    return {
+        "Step": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStepOutputTypeDef(TypedDict):
+    Step: StepTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Step`: [StepTypeDef](./type_defs.md#steptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestudioinputrequesttypedef"></a>
-
+1. See [:material-code-braces: StepTypeDef](./type_defs.md#steptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStudioInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeStudioInputRequestTypeDef
+
+def get_value() -> DescribeStudioInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Required fields:
-
-- `StudioId`: `str`
-
-<a id="describestudiooutputtypedef"></a>
+```python title="Definition"
+class DescribeStudioInputRequestTypeDef(TypedDict):
+    StudioId: str,
+```
 
 ## DescribeStudioOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import DescribeStudioOutputTypeDef
+
+def get_value() -> DescribeStudioOutputTypeDef:
+    return {
+        "Studio": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStudioOutputTypeDef(TypedDict):
+    Studio: StudioTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ebsblockdeviceconfigtypedef"></a>
-
+1. See [:material-code-braces: StudioTypeDef](./type_defs.md#studiotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EbsBlockDeviceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import EbsBlockDeviceConfigTypeDef
+
+def get_value() -> EbsBlockDeviceConfigTypeDef:
+    return {
+        "VolumeSpecification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EbsBlockDeviceConfigTypeDef(TypedDict):
+    VolumeSpecification: VolumeSpecificationTypeDef,  # (1)
+    VolumesPerInstance: NotRequired[int],
+```
 
-- `VolumeSpecification`:
-  [VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef)
-
-Optional fields:
-
-- `VolumesPerInstance`: `int`
-
-<a id="ebsblockdevicetypedef"></a>
-
+1. See [:material-code-braces: VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef) 
 ## EbsBlockDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import EbsBlockDeviceTypeDef
+
+def get_value() -> EbsBlockDeviceTypeDef:
+    return {
+        "VolumeSpecification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EbsBlockDeviceTypeDef(TypedDict):
+    VolumeSpecification: NotRequired[VolumeSpecificationTypeDef],  # (1)
+    Device: NotRequired[str],
+```
 
-- `VolumeSpecification`:
-  [VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef)
-- `Device`: `str`
-
-<a id="ebsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef) 
 ## EbsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import EbsConfigurationTypeDef
+
+def get_value() -> EbsConfigurationTypeDef:
+    return {
+        "EbsBlockDeviceConfigs": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EbsConfigurationTypeDef(TypedDict):
+    EbsBlockDeviceConfigs: NotRequired[Sequence[EbsBlockDeviceConfigTypeDef]],  # (1)
+    EbsOptimized: NotRequired[bool],
+```
 
-- `EbsBlockDeviceConfigs`:
-  `Sequence`\[[EbsBlockDeviceConfigTypeDef](./type_defs.md#ebsblockdeviceconfigtypedef)\]
-- `EbsOptimized`: `bool`
-
-<a id="ebsvolumetypedef"></a>
-
+1. See [:material-code-braces: EbsBlockDeviceConfigTypeDef](./type_defs.md#ebsblockdeviceconfigtypedef) 
 ## EbsVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import EbsVolumeTypeDef
+
+def get_value() -> EbsVolumeTypeDef:
+    return {
+        "Device": ...,
+    }
 ```
 
-Optional fields:
-
-- `Device`: `str`
-- `VolumeId`: `str`
-
-<a id="ec2instanceattributestypedef"></a>
+```python title="Definition"
+class EbsVolumeTypeDef(TypedDict):
+    Device: NotRequired[str],
+    VolumeId: NotRequired[str],
+```
 
 ## Ec2InstanceAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import Ec2InstanceAttributesTypeDef
+
+def get_value() -> Ec2InstanceAttributesTypeDef:
+    return {
+        "Ec2KeyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `Ec2KeyName`: `str`
-- `Ec2SubnetId`: `str`
-- `RequestedEc2SubnetIds`: `List`\[`str`\]
-- `Ec2AvailabilityZone`: `str`
-- `RequestedEc2AvailabilityZones`: `List`\[`str`\]
-- `IamInstanceProfile`: `str`
-- `EmrManagedMasterSecurityGroup`: `str`
-- `EmrManagedSlaveSecurityGroup`: `str`
-- `ServiceAccessSecurityGroup`: `str`
-- `AdditionalMasterSecurityGroups`: `List`\[`str`\]
-- `AdditionalSlaveSecurityGroups`: `List`\[`str`\]
-
-<a id="executionengineconfigtypedef"></a>
+```python title="Definition"
+class Ec2InstanceAttributesTypeDef(TypedDict):
+    Ec2KeyName: NotRequired[str],
+    Ec2SubnetId: NotRequired[str],
+    RequestedEc2SubnetIds: NotRequired[List[str]],
+    Ec2AvailabilityZone: NotRequired[str],
+    RequestedEc2AvailabilityZones: NotRequired[List[str]],
+    IamInstanceProfile: NotRequired[str],
+    EmrManagedMasterSecurityGroup: NotRequired[str],
+    EmrManagedSlaveSecurityGroup: NotRequired[str],
+    ServiceAccessSecurityGroup: NotRequired[str],
+    AdditionalMasterSecurityGroups: NotRequired[List[str]],
+    AdditionalSlaveSecurityGroups: NotRequired[List[str]],
+```
 
 ## ExecutionEngineConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ExecutionEngineConfigTypeDef
+
+def get_value() -> ExecutionEngineConfigTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecutionEngineConfigTypeDef(TypedDict):
+    Id: str,
+    Type: NotRequired[ExecutionEngineTypeType],  # (1)
+    MasterInstanceSecurityGroupId: NotRequired[str],
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Type`: `Literal['EMR']` (see
-  [ExecutionEngineTypeType](./literals.md#executionenginetypetype))
-- `MasterInstanceSecurityGroupId`: `str`
-
-<a id="failuredetailstypedef"></a>
-
+1. See [:material-code-brackets: ExecutionEngineTypeType](./literals.md#executionenginetypetype) 
 ## FailureDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import FailureDetailsTypeDef
+
+def get_value() -> FailureDetailsTypeDef:
+    return {
+        "Reason": ...,
+    }
 ```
 
-Optional fields:
-
-- `Reason`: `str`
-- `Message`: `str`
-- `LogFile`: `str`
-
-<a id="getautoterminationpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class FailureDetailsTypeDef(TypedDict):
+    Reason: NotRequired[str],
+    Message: NotRequired[str],
+    LogFile: NotRequired[str],
+```
 
 ## GetAutoTerminationPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetAutoTerminationPolicyInputRequestTypeDef
+
+def get_value() -> GetAutoTerminationPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="getautoterminationpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetAutoTerminationPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## GetAutoTerminationPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetAutoTerminationPolicyOutputTypeDef
+
+def get_value() -> GetAutoTerminationPolicyOutputTypeDef:
+    return {
+        "AutoTerminationPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAutoTerminationPolicyOutputTypeDef(TypedDict):
+    AutoTerminationPolicy: AutoTerminationPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoTerminationPolicy`:
-  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getblockpublicaccessconfigurationoutputtypedef"></a>
-
+1. See [:material-code-braces: AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetBlockPublicAccessConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetBlockPublicAccessConfigurationOutputTypeDef
+
+def get_value() -> GetBlockPublicAccessConfigurationOutputTypeDef:
+    return {
+        "BlockPublicAccessConfiguration": ...,
+        "BlockPublicAccessConfigurationMetadata": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBlockPublicAccessConfigurationOutputTypeDef(TypedDict):
+    BlockPublicAccessConfiguration: BlockPublicAccessConfigurationTypeDef,  # (1)
+    BlockPublicAccessConfigurationMetadata: BlockPublicAccessConfigurationMetadataTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `BlockPublicAccessConfiguration`:
-  [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
-- `BlockPublicAccessConfigurationMetadata`:
-  [BlockPublicAccessConfigurationMetadataTypeDef](./type_defs.md#blockpublicaccessconfigurationmetadatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmanagedscalingpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef) 
+2. See [:material-code-braces: BlockPublicAccessConfigurationMetadataTypeDef](./type_defs.md#blockpublicaccessconfigurationmetadatatypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetManagedScalingPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetManagedScalingPolicyInputRequestTypeDef
+
+def get_value() -> GetManagedScalingPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="getmanagedscalingpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetManagedScalingPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## GetManagedScalingPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetManagedScalingPolicyOutputTypeDef
+
+def get_value() -> GetManagedScalingPolicyOutputTypeDef:
+    return {
+        "ManagedScalingPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetManagedScalingPolicyOutputTypeDef(TypedDict):
+    ManagedScalingPolicy: ManagedScalingPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstudiosessionmappinginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStudioSessionMappingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetStudioSessionMappingInputRequestTypeDef
+
+def get_value() -> GetStudioSessionMappingInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+        "IdentityType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStudioSessionMappingInputRequestTypeDef(TypedDict):
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+```
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-
-Optional fields:
-
-- `IdentityId`: `str`
-- `IdentityName`: `str`
-
-<a id="getstudiosessionmappingoutputtypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## GetStudioSessionMappingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import GetStudioSessionMappingOutputTypeDef
+
+def get_value() -> GetStudioSessionMappingOutputTypeDef:
+    return {
+        "SessionMapping": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStudioSessionMappingOutputTypeDef(TypedDict):
+    SessionMapping: SessionMappingDetailTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SessionMapping`:
-  [SessionMappingDetailTypeDef](./type_defs.md#sessionmappingdetailtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hadoopjarstepconfigtypedef"></a>
-
+1. See [:material-code-braces: SessionMappingDetailTypeDef](./type_defs.md#sessionmappingdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HadoopJarStepConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import HadoopJarStepConfigTypeDef
+
+def get_value() -> HadoopJarStepConfigTypeDef:
+    return {
+        "Jar": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HadoopJarStepConfigTypeDef(TypedDict):
+    Jar: str,
+    Properties: NotRequired[Sequence[KeyValueTypeDef]],  # (1)
+    MainClass: NotRequired[str],
+    Args: NotRequired[Sequence[str]],
+```
 
-- `Jar`: `str`
-
-Optional fields:
-
-- `Properties`: `Sequence`\[[KeyValueTypeDef](./type_defs.md#keyvaluetypedef)\]
-- `MainClass`: `str`
-- `Args`: `Sequence`\[`str`\]
-
-<a id="hadoopstepconfigtypedef"></a>
-
+1. See [:material-code-braces: KeyValueTypeDef](./type_defs.md#keyvaluetypedef) 
 ## HadoopStepConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import HadoopStepConfigTypeDef
+
+def get_value() -> HadoopStepConfigTypeDef:
+    return {
+        "Jar": ...,
+    }
 ```
 
-Optional fields:
-
-- `Jar`: `str`
-- `Properties`: `Dict`\[`str`, `str`\]
-- `MainClass`: `str`
-- `Args`: `List`\[`str`\]
-
-<a id="instancefleetconfigtypedef"></a>
+```python title="Definition"
+class HadoopStepConfigTypeDef(TypedDict):
+    Jar: NotRequired[str],
+    Properties: NotRequired[Dict[str, str]],
+    MainClass: NotRequired[str],
+    Args: NotRequired[List[str]],
+```
 
 ## InstanceFleetConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetConfigTypeDef
+
+def get_value() -> InstanceFleetConfigTypeDef:
+    return {
+        "InstanceFleetType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceFleetConfigTypeDef(TypedDict):
+    InstanceFleetType: InstanceFleetTypeType,  # (1)
+    Name: NotRequired[str],
+    TargetOnDemandCapacity: NotRequired[int],
+    TargetSpotCapacity: NotRequired[int],
+    InstanceTypeConfigs: NotRequired[Sequence[InstanceTypeConfigTypeDef]],  # (2)
+    LaunchSpecifications: NotRequired[InstanceFleetProvisioningSpecificationsTypeDef],  # (3)
+```
 
-- `InstanceFleetType`:
-  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
-
-Optional fields:
-
-- `Name`: `str`
-- `TargetOnDemandCapacity`: `int`
-- `TargetSpotCapacity`: `int`
-- `InstanceTypeConfigs`:
-  `Sequence`\[[InstanceTypeConfigTypeDef](./type_defs.md#instancetypeconfigtypedef)\]
-- `LaunchSpecifications`:
-  [InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef)
-
-<a id="instancefleetmodifyconfigtypedef"></a>
-
+1. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+2. See [:material-code-braces: InstanceTypeConfigTypeDef](./type_defs.md#instancetypeconfigtypedef) 
+3. See [:material-code-braces: InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef) 
 ## InstanceFleetModifyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetModifyConfigTypeDef
+
+def get_value() -> InstanceFleetModifyConfigTypeDef:
+    return {
+        "InstanceFleetId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceFleetId`: `str`
-
-Optional fields:
-
-- `TargetOnDemandCapacity`: `int`
-- `TargetSpotCapacity`: `int`
-
-<a id="instancefleetprovisioningspecificationstypedef"></a>
+```python title="Definition"
+class InstanceFleetModifyConfigTypeDef(TypedDict):
+    InstanceFleetId: str,
+    TargetOnDemandCapacity: NotRequired[int],
+    TargetSpotCapacity: NotRequired[int],
+```
 
 ## InstanceFleetProvisioningSpecificationsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetProvisioningSpecificationsTypeDef
+
+def get_value() -> InstanceFleetProvisioningSpecificationsTypeDef:
+    return {
+        "SpotSpecification": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceFleetProvisioningSpecificationsTypeDef(TypedDict):
+    SpotSpecification: NotRequired[SpotProvisioningSpecificationTypeDef],  # (1)
+    OnDemandSpecification: NotRequired[OnDemandProvisioningSpecificationTypeDef],  # (2)
+```
 
-- `SpotSpecification`:
-  [SpotProvisioningSpecificationTypeDef](./type_defs.md#spotprovisioningspecificationtypedef)
-- `OnDemandSpecification`:
-  [OnDemandProvisioningSpecificationTypeDef](./type_defs.md#ondemandprovisioningspecificationtypedef)
-
-<a id="instancefleetstatechangereasontypedef"></a>
-
+1. See [:material-code-braces: SpotProvisioningSpecificationTypeDef](./type_defs.md#spotprovisioningspecificationtypedef) 
+2. See [:material-code-braces: OnDemandProvisioningSpecificationTypeDef](./type_defs.md#ondemandprovisioningspecificationtypedef) 
 ## InstanceFleetStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetStateChangeReasonTypeDef
+
+def get_value() -> InstanceFleetStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceFleetStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[InstanceFleetStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [InstanceFleetStateChangeReasonCodeType](./literals.md#instancefleetstatechangereasoncodetype)
-- `Message`: `str`
-
-<a id="instancefleetstatustypedef"></a>
-
+1. See [:material-code-brackets: InstanceFleetStateChangeReasonCodeType](./literals.md#instancefleetstatechangereasoncodetype) 
 ## InstanceFleetStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetStatusTypeDef
+
+def get_value() -> InstanceFleetStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceFleetStatusTypeDef(TypedDict):
+    State: NotRequired[InstanceFleetStateType],  # (1)
+    StateChangeReason: NotRequired[InstanceFleetStateChangeReasonTypeDef],  # (2)
+    Timeline: NotRequired[InstanceFleetTimelineTypeDef],  # (3)
+```
 
-- `State`: [InstanceFleetStateType](./literals.md#instancefleetstatetype)
-- `StateChangeReason`:
-  [InstanceFleetStateChangeReasonTypeDef](./type_defs.md#instancefleetstatechangereasontypedef)
-- `Timeline`:
-  [InstanceFleetTimelineTypeDef](./type_defs.md#instancefleettimelinetypedef)
-
-<a id="instancefleettimelinetypedef"></a>
-
+1. See [:material-code-brackets: InstanceFleetStateType](./literals.md#instancefleetstatetype) 
+2. See [:material-code-braces: InstanceFleetStateChangeReasonTypeDef](./type_defs.md#instancefleetstatechangereasontypedef) 
+3. See [:material-code-braces: InstanceFleetTimelineTypeDef](./type_defs.md#instancefleettimelinetypedef) 
 ## InstanceFleetTimelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetTimelineTypeDef
+
+def get_value() -> InstanceFleetTimelineTypeDef:
+    return {
+        "CreationDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreationDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-
-<a id="instancefleettypedef"></a>
+```python title="Definition"
+class InstanceFleetTimelineTypeDef(TypedDict):
+    CreationDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+```
 
 ## InstanceFleetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceFleetTypeDef
+
+def get_value() -> InstanceFleetTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceFleetTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Status: NotRequired[InstanceFleetStatusTypeDef],  # (1)
+    InstanceFleetType: NotRequired[InstanceFleetTypeType],  # (2)
+    TargetOnDemandCapacity: NotRequired[int],
+    TargetSpotCapacity: NotRequired[int],
+    ProvisionedOnDemandCapacity: NotRequired[int],
+    ProvisionedSpotCapacity: NotRequired[int],
+    InstanceTypeSpecifications: NotRequired[List[InstanceTypeSpecificationTypeDef]],  # (3)
+    LaunchSpecifications: NotRequired[InstanceFleetProvisioningSpecificationsTypeDef],  # (4)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Status`:
-  [InstanceFleetStatusTypeDef](./type_defs.md#instancefleetstatustypedef)
-- `InstanceFleetType`:
-  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
-- `TargetOnDemandCapacity`: `int`
-- `TargetSpotCapacity`: `int`
-- `ProvisionedOnDemandCapacity`: `int`
-- `ProvisionedSpotCapacity`: `int`
-- `InstanceTypeSpecifications`:
-  `List`\[[InstanceTypeSpecificationTypeDef](./type_defs.md#instancetypespecificationtypedef)\]
-- `LaunchSpecifications`:
-  [InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef)
-
-<a id="instancegroupconfigtypedef"></a>
-
+1. See [:material-code-braces: InstanceFleetStatusTypeDef](./type_defs.md#instancefleetstatustypedef) 
+2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+3. See [:material-code-braces: InstanceTypeSpecificationTypeDef](./type_defs.md#instancetypespecificationtypedef) 
+4. See [:material-code-braces: InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef) 
 ## InstanceGroupConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupConfigTypeDef
+
+def get_value() -> InstanceGroupConfigTypeDef:
+    return {
+        "InstanceRole": ...,
+        "InstanceType": ...,
+        "InstanceCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceGroupConfigTypeDef(TypedDict):
+    InstanceRole: InstanceRoleTypeType,  # (2)
+    InstanceType: str,
+    InstanceCount: int,
+    Name: NotRequired[str],
+    Market: NotRequired[MarketTypeType],  # (1)
+    BidPrice: NotRequired[str],
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (3)
+    EbsConfiguration: NotRequired[EbsConfigurationTypeDef],  # (4)
+    AutoScalingPolicy: NotRequired[AutoScalingPolicyTypeDef],  # (5)
+    CustomAmiId: NotRequired[str],
+```
 
-- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
-- `InstanceType`: `str`
-- `InstanceCount`: `int`
-
-Optional fields:
-
-- `Name`: `str`
-- `Market`: [MarketTypeType](./literals.md#markettypetype)
-- `BidPrice`: `str`
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `EbsConfiguration`:
-  [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
-- `AutoScalingPolicy`:
-  [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
-- `CustomAmiId`: `str`
-
-<a id="instancegroupdetailtypedef"></a>
-
+1. See [:material-code-brackets: MarketTypeType](./literals.md#markettypetype) 
+2. See [:material-code-brackets: InstanceRoleTypeType](./literals.md#instanceroletypetype) 
+3. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+4. See [:material-code-braces: EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef) 
+5. See [:material-code-braces: AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef) 
 ## InstanceGroupDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupDetailTypeDef
+
+def get_value() -> InstanceGroupDetailTypeDef:
+    return {
+        "Market": ...,
+        "InstanceRole": ...,
+        "InstanceType": ...,
+        "InstanceRequestCount": ...,
+        "InstanceRunningCount": ...,
+        "State": ...,
+        "CreationDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceGroupDetailTypeDef(TypedDict):
+    Market: MarketTypeType,  # (1)
+    InstanceRole: InstanceRoleTypeType,  # (2)
+    InstanceType: str,
+    InstanceRequestCount: int,
+    InstanceRunningCount: int,
+    State: InstanceGroupStateType,  # (3)
+    CreationDateTime: datetime,
+    InstanceGroupId: NotRequired[str],
+    Name: NotRequired[str],
+    BidPrice: NotRequired[str],
+    LastStateChangeReason: NotRequired[str],
+    StartDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+    CustomAmiId: NotRequired[str],
+```
 
-- `Market`: [MarketTypeType](./literals.md#markettypetype)
-- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
-- `InstanceType`: `str`
-- `InstanceRequestCount`: `int`
-- `InstanceRunningCount`: `int`
-- `State`: [InstanceGroupStateType](./literals.md#instancegroupstatetype)
-- `CreationDateTime`: `datetime`
-
-Optional fields:
-
-- `InstanceGroupId`: `str`
-- `Name`: `str`
-- `BidPrice`: `str`
-- `LastStateChangeReason`: `str`
-- `StartDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-- `CustomAmiId`: `str`
-
-<a id="instancegroupmodifyconfigtypedef"></a>
-
+1. See [:material-code-brackets: MarketTypeType](./literals.md#markettypetype) 
+2. See [:material-code-brackets: InstanceRoleTypeType](./literals.md#instanceroletypetype) 
+3. See [:material-code-brackets: InstanceGroupStateType](./literals.md#instancegroupstatetype) 
 ## InstanceGroupModifyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupModifyConfigTypeDef
+
+def get_value() -> InstanceGroupModifyConfigTypeDef:
+    return {
+        "InstanceGroupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceGroupModifyConfigTypeDef(TypedDict):
+    InstanceGroupId: str,
+    InstanceCount: NotRequired[int],
+    EC2InstanceIdsToTerminate: NotRequired[Sequence[str]],
+    ShrinkPolicy: NotRequired[ShrinkPolicyTypeDef],  # (1)
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (2)
+```
 
-- `InstanceGroupId`: `str`
-
-Optional fields:
-
-- `InstanceCount`: `int`
-- `EC2InstanceIdsToTerminate`: `Sequence`\[`str`\]
-- `ShrinkPolicy`: [ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef)
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-
-<a id="instancegroupstatechangereasontypedef"></a>
-
+1. See [:material-code-braces: ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef) 
+2. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 ## InstanceGroupStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupStateChangeReasonTypeDef
+
+def get_value() -> InstanceGroupStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceGroupStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[InstanceGroupStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [InstanceGroupStateChangeReasonCodeType](./literals.md#instancegroupstatechangereasoncodetype)
-- `Message`: `str`
-
-<a id="instancegroupstatustypedef"></a>
-
+1. See [:material-code-brackets: InstanceGroupStateChangeReasonCodeType](./literals.md#instancegroupstatechangereasoncodetype) 
 ## InstanceGroupStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupStatusTypeDef
+
+def get_value() -> InstanceGroupStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceGroupStatusTypeDef(TypedDict):
+    State: NotRequired[InstanceGroupStateType],  # (1)
+    StateChangeReason: NotRequired[InstanceGroupStateChangeReasonTypeDef],  # (2)
+    Timeline: NotRequired[InstanceGroupTimelineTypeDef],  # (3)
+```
 
-- `State`: [InstanceGroupStateType](./literals.md#instancegroupstatetype)
-- `StateChangeReason`:
-  [InstanceGroupStateChangeReasonTypeDef](./type_defs.md#instancegroupstatechangereasontypedef)
-- `Timeline`:
-  [InstanceGroupTimelineTypeDef](./type_defs.md#instancegrouptimelinetypedef)
-
-<a id="instancegrouptimelinetypedef"></a>
-
+1. See [:material-code-brackets: InstanceGroupStateType](./literals.md#instancegroupstatetype) 
+2. See [:material-code-braces: InstanceGroupStateChangeReasonTypeDef](./type_defs.md#instancegroupstatechangereasontypedef) 
+3. See [:material-code-braces: InstanceGroupTimelineTypeDef](./type_defs.md#instancegrouptimelinetypedef) 
 ## InstanceGroupTimelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupTimelineTypeDef
+
+def get_value() -> InstanceGroupTimelineTypeDef:
+    return {
+        "CreationDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreationDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-
-<a id="instancegrouptypedef"></a>
+```python title="Definition"
+class InstanceGroupTimelineTypeDef(TypedDict):
+    CreationDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+```
 
 ## InstanceGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceGroupTypeDef
+
+def get_value() -> InstanceGroupTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceGroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Market: NotRequired[MarketTypeType],  # (1)
+    InstanceGroupType: NotRequired[InstanceGroupTypeType],  # (2)
+    BidPrice: NotRequired[str],
+    InstanceType: NotRequired[str],
+    RequestedInstanceCount: NotRequired[int],
+    RunningInstanceCount: NotRequired[int],
+    Status: NotRequired[InstanceGroupStatusTypeDef],  # (3)
+    Configurations: NotRequired[List[ConfigurationTypeDef]],  # (4)
+    ConfigurationsVersion: NotRequired[int],
+    LastSuccessfullyAppliedConfigurations: NotRequired[List[ConfigurationTypeDef]],  # (4)
+    LastSuccessfullyAppliedConfigurationsVersion: NotRequired[int],
+    EbsBlockDevices: NotRequired[List[EbsBlockDeviceTypeDef]],  # (6)
+    EbsOptimized: NotRequired[bool],
+    ShrinkPolicy: NotRequired[ShrinkPolicyTypeDef],  # (7)
+    AutoScalingPolicy: NotRequired[AutoScalingPolicyDescriptionTypeDef],  # (8)
+    CustomAmiId: NotRequired[str],
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Market`: [MarketTypeType](./literals.md#markettypetype)
-- `InstanceGroupType`:
-  [InstanceGroupTypeType](./literals.md#instancegrouptypetype)
-- `BidPrice`: `str`
-- `InstanceType`: `str`
-- `RequestedInstanceCount`: `int`
-- `RunningInstanceCount`: `int`
-- `Status`:
-  [InstanceGroupStatusTypeDef](./type_defs.md#instancegroupstatustypedef)
-- `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `ConfigurationsVersion`: `int`
-- `LastSuccessfullyAppliedConfigurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `LastSuccessfullyAppliedConfigurationsVersion`: `int`
-- `EbsBlockDevices`:
-  `List`\[[EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)\]
-- `EbsOptimized`: `bool`
-- `ShrinkPolicy`: [ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef)
-- `AutoScalingPolicy`:
-  [AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)
-- `CustomAmiId`: `str`
-
-<a id="instanceresizepolicytypedef"></a>
-
+1. See [:material-code-brackets: MarketTypeType](./literals.md#markettypetype) 
+2. See [:material-code-brackets: InstanceGroupTypeType](./literals.md#instancegrouptypetype) 
+3. See [:material-code-braces: InstanceGroupStatusTypeDef](./type_defs.md#instancegroupstatustypedef) 
+4. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+5. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+6. See [:material-code-braces: EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef) 
+7. See [:material-code-braces: ShrinkPolicyTypeDef](./type_defs.md#shrinkpolicytypedef) 
+8. See [:material-code-braces: AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef) 
 ## InstanceResizePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceResizePolicyTypeDef
+
+def get_value() -> InstanceResizePolicyTypeDef:
+    return {
+        "InstancesToTerminate": ...,
+    }
 ```
 
-Optional fields:
-
-- `InstancesToTerminate`: `List`\[`str`\]
-- `InstancesToProtect`: `List`\[`str`\]
-- `InstanceTerminationTimeout`: `int`
-
-<a id="instancestatechangereasontypedef"></a>
+```python title="Definition"
+class InstanceResizePolicyTypeDef(TypedDict):
+    InstancesToTerminate: NotRequired[List[str]],
+    InstancesToProtect: NotRequired[List[str]],
+    InstanceTerminationTimeout: NotRequired[int],
+```
 
 ## InstanceStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceStateChangeReasonTypeDef
+
+def get_value() -> InstanceStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[InstanceStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [InstanceStateChangeReasonCodeType](./literals.md#instancestatechangereasoncodetype)
-- `Message`: `str`
-
-<a id="instancestatustypedef"></a>
-
+1. See [:material-code-brackets: InstanceStateChangeReasonCodeType](./literals.md#instancestatechangereasoncodetype) 
 ## InstanceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceStatusTypeDef
+
+def get_value() -> InstanceStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceStatusTypeDef(TypedDict):
+    State: NotRequired[InstanceStateType],  # (1)
+    StateChangeReason: NotRequired[InstanceStateChangeReasonTypeDef],  # (2)
+    Timeline: NotRequired[InstanceTimelineTypeDef],  # (3)
+```
 
-- `State`: [InstanceStateType](./literals.md#instancestatetype)
-- `StateChangeReason`:
-  [InstanceStateChangeReasonTypeDef](./type_defs.md#instancestatechangereasontypedef)
-- `Timeline`: [InstanceTimelineTypeDef](./type_defs.md#instancetimelinetypedef)
-
-<a id="instancetimelinetypedef"></a>
-
+1. See [:material-code-brackets: InstanceStateType](./literals.md#instancestatetype) 
+2. See [:material-code-braces: InstanceStateChangeReasonTypeDef](./type_defs.md#instancestatechangereasontypedef) 
+3. See [:material-code-braces: InstanceTimelineTypeDef](./type_defs.md#instancetimelinetypedef) 
 ## InstanceTimelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceTimelineTypeDef
+
+def get_value() -> InstanceTimelineTypeDef:
+    return {
+        "CreationDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreationDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-
-<a id="instancetypeconfigtypedef"></a>
+```python title="Definition"
+class InstanceTimelineTypeDef(TypedDict):
+    CreationDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+```
 
 ## InstanceTypeConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceTypeConfigTypeDef
+
+def get_value() -> InstanceTypeConfigTypeDef:
+    return {
+        "InstanceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceTypeConfigTypeDef(TypedDict):
+    InstanceType: str,
+    WeightedCapacity: NotRequired[int],
+    BidPrice: NotRequired[str],
+    BidPriceAsPercentageOfOnDemandPrice: NotRequired[float],
+    EbsConfiguration: NotRequired[EbsConfigurationTypeDef],  # (1)
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (2)
+    CustomAmiId: NotRequired[str],
+```
 
-- `InstanceType`: `str`
-
-Optional fields:
-
-- `WeightedCapacity`: `int`
-- `BidPrice`: `str`
-- `BidPriceAsPercentageOfOnDemandPrice`: `float`
-- `EbsConfiguration`:
-  [EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef)
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `CustomAmiId`: `str`
-
-<a id="instancetypedef"></a>
-
+1. See [:material-code-braces: EbsConfigurationTypeDef](./type_defs.md#ebsconfigurationtypedef) 
+2. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Ec2InstanceId: NotRequired[str],
+    PublicDnsName: NotRequired[str],
+    PublicIpAddress: NotRequired[str],
+    PrivateDnsName: NotRequired[str],
+    PrivateIpAddress: NotRequired[str],
+    Status: NotRequired[InstanceStatusTypeDef],  # (1)
+    InstanceGroupId: NotRequired[str],
+    InstanceFleetId: NotRequired[str],
+    Market: NotRequired[MarketTypeType],  # (2)
+    InstanceType: NotRequired[str],
+    EbsVolumes: NotRequired[List[EbsVolumeTypeDef]],  # (3)
+```
 
-- `Id`: `str`
-- `Ec2InstanceId`: `str`
-- `PublicDnsName`: `str`
-- `PublicIpAddress`: `str`
-- `PrivateDnsName`: `str`
-- `PrivateIpAddress`: `str`
-- `Status`: [InstanceStatusTypeDef](./type_defs.md#instancestatustypedef)
-- `InstanceGroupId`: `str`
-- `InstanceFleetId`: `str`
-- `Market`: [MarketTypeType](./literals.md#markettypetype)
-- `InstanceType`: `str`
-- `EbsVolumes`: `List`\[[EbsVolumeTypeDef](./type_defs.md#ebsvolumetypedef)\]
-
-<a id="instancetypespecificationtypedef"></a>
-
+1. See [:material-code-braces: InstanceStatusTypeDef](./type_defs.md#instancestatustypedef) 
+2. See [:material-code-brackets: MarketTypeType](./literals.md#markettypetype) 
+3. See [:material-code-braces: EbsVolumeTypeDef](./type_defs.md#ebsvolumetypedef) 
 ## InstanceTypeSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import InstanceTypeSpecificationTypeDef
+
+def get_value() -> InstanceTypeSpecificationTypeDef:
+    return {
+        "InstanceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTypeSpecificationTypeDef(TypedDict):
+    InstanceType: NotRequired[str],
+    WeightedCapacity: NotRequired[int],
+    BidPrice: NotRequired[str],
+    BidPriceAsPercentageOfOnDemandPrice: NotRequired[float],
+    Configurations: NotRequired[List[ConfigurationTypeDef]],  # (1)
+    EbsBlockDevices: NotRequired[List[EbsBlockDeviceTypeDef]],  # (2)
+    EbsOptimized: NotRequired[bool],
+    CustomAmiId: NotRequired[str],
+```
 
-- `InstanceType`: `str`
-- `WeightedCapacity`: `int`
-- `BidPrice`: `str`
-- `BidPriceAsPercentageOfOnDemandPrice`: `float`
-- `Configurations`:
-  `List`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `EbsBlockDevices`:
-  `List`\[[EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)\]
-- `EbsOptimized`: `bool`
-- `CustomAmiId`: `str`
-
-<a id="jobflowdetailtypedef"></a>
-
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-braces: EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef) 
 ## JobFlowDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import JobFlowDetailTypeDef
+
+def get_value() -> JobFlowDetailTypeDef:
+    return {
+        "JobFlowId": ...,
+        "Name": ...,
+        "ExecutionStatusDetail": ...,
+        "Instances": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobFlowDetailTypeDef(TypedDict):
+    JobFlowId: str,
+    Name: str,
+    ExecutionStatusDetail: JobFlowExecutionStatusDetailTypeDef,  # (1)
+    Instances: JobFlowInstancesDetailTypeDef,  # (2)
+    LogUri: NotRequired[str],
+    LogEncryptionKmsKeyId: NotRequired[str],
+    AmiVersion: NotRequired[str],
+    Steps: NotRequired[List[StepDetailTypeDef]],  # (3)
+    BootstrapActions: NotRequired[List[BootstrapActionDetailTypeDef]],  # (4)
+    SupportedProducts: NotRequired[List[str]],
+    VisibleToAllUsers: NotRequired[bool],
+    JobFlowRole: NotRequired[str],
+    ServiceRole: NotRequired[str],
+    AutoScalingRole: NotRequired[str],
+    ScaleDownBehavior: NotRequired[ScaleDownBehaviorType],  # (5)
+```
 
-- `JobFlowId`: `str`
-- `Name`: `str`
-- `ExecutionStatusDetail`:
-  [JobFlowExecutionStatusDetailTypeDef](./type_defs.md#jobflowexecutionstatusdetailtypedef)
-- `Instances`:
-  [JobFlowInstancesDetailTypeDef](./type_defs.md#jobflowinstancesdetailtypedef)
-
-Optional fields:
-
-- `LogUri`: `str`
-- `LogEncryptionKmsKeyId`: `str`
-- `AmiVersion`: `str`
-- `Steps`: `List`\[[StepDetailTypeDef](./type_defs.md#stepdetailtypedef)\]
-- `BootstrapActions`:
-  `List`\[[BootstrapActionDetailTypeDef](./type_defs.md#bootstrapactiondetailtypedef)\]
-- `SupportedProducts`: `List`\[`str`\]
-- `VisibleToAllUsers`: `bool`
-- `JobFlowRole`: `str`
-- `ServiceRole`: `str`
-- `AutoScalingRole`: `str`
-- `ScaleDownBehavior`:
-  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
-
-<a id="jobflowexecutionstatusdetailtypedef"></a>
-
+1. See [:material-code-braces: JobFlowExecutionStatusDetailTypeDef](./type_defs.md#jobflowexecutionstatusdetailtypedef) 
+2. See [:material-code-braces: JobFlowInstancesDetailTypeDef](./type_defs.md#jobflowinstancesdetailtypedef) 
+3. See [:material-code-braces: StepDetailTypeDef](./type_defs.md#stepdetailtypedef) 
+4. See [:material-code-braces: BootstrapActionDetailTypeDef](./type_defs.md#bootstrapactiondetailtypedef) 
+5. See [:material-code-brackets: ScaleDownBehaviorType](./literals.md#scaledownbehaviortype) 
 ## JobFlowExecutionStatusDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import JobFlowExecutionStatusDetailTypeDef
+
+def get_value() -> JobFlowExecutionStatusDetailTypeDef:
+    return {
+        "State": ...,
+        "CreationDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobFlowExecutionStatusDetailTypeDef(TypedDict):
+    State: JobFlowExecutionStateType,  # (1)
+    CreationDateTime: datetime,
+    StartDateTime: NotRequired[datetime],
+    ReadyDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+    LastStateChangeReason: NotRequired[str],
+```
 
-- `State`: [JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)
-- `CreationDateTime`: `datetime`
-
-Optional fields:
-
-- `StartDateTime`: `datetime`
-- `ReadyDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-- `LastStateChangeReason`: `str`
-
-<a id="jobflowinstancesconfigtypedef"></a>
-
+1. See [:material-code-brackets: JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype) 
 ## JobFlowInstancesConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import JobFlowInstancesConfigTypeDef
+
+def get_value() -> JobFlowInstancesConfigTypeDef:
+    return {
+        "MasterInstanceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobFlowInstancesConfigTypeDef(TypedDict):
+    MasterInstanceType: NotRequired[str],
+    SlaveInstanceType: NotRequired[str],
+    InstanceCount: NotRequired[int],
+    InstanceGroups: NotRequired[Sequence[InstanceGroupConfigTypeDef]],  # (1)
+    InstanceFleets: NotRequired[Sequence[InstanceFleetConfigTypeDef]],  # (2)
+    Ec2KeyName: NotRequired[str],
+    Placement: NotRequired[PlacementTypeTypeDef],  # (3)
+    KeepJobFlowAliveWhenNoSteps: NotRequired[bool],
+    TerminationProtected: NotRequired[bool],
+    HadoopVersion: NotRequired[str],
+    Ec2SubnetId: NotRequired[str],
+    Ec2SubnetIds: NotRequired[Sequence[str]],
+    EmrManagedMasterSecurityGroup: NotRequired[str],
+    EmrManagedSlaveSecurityGroup: NotRequired[str],
+    ServiceAccessSecurityGroup: NotRequired[str],
+    AdditionalMasterSecurityGroups: NotRequired[Sequence[str]],
+    AdditionalSlaveSecurityGroups: NotRequired[Sequence[str]],
+```
 
-- `MasterInstanceType`: `str`
-- `SlaveInstanceType`: `str`
-- `InstanceCount`: `int`
-- `InstanceGroups`:
-  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
-- `InstanceFleets`:
-  `Sequence`\[[InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)\]
-- `Ec2KeyName`: `str`
-- `Placement`: [PlacementTypeTypeDef](./type_defs.md#placementtypetypedef)
-- `KeepJobFlowAliveWhenNoSteps`: `bool`
-- `TerminationProtected`: `bool`
-- `HadoopVersion`: `str`
-- `Ec2SubnetId`: `str`
-- `Ec2SubnetIds`: `Sequence`\[`str`\]
-- `EmrManagedMasterSecurityGroup`: `str`
-- `EmrManagedSlaveSecurityGroup`: `str`
-- `ServiceAccessSecurityGroup`: `str`
-- `AdditionalMasterSecurityGroups`: `Sequence`\[`str`\]
-- `AdditionalSlaveSecurityGroups`: `Sequence`\[`str`\]
-
-<a id="jobflowinstancesdetailtypedef"></a>
-
+1. See [:material-code-braces: InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef) 
+2. See [:material-code-braces: InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef) 
+3. See [:material-code-braces: PlacementTypeTypeDef](./type_defs.md#placementtypetypedef) 
 ## JobFlowInstancesDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import JobFlowInstancesDetailTypeDef
+
+def get_value() -> JobFlowInstancesDetailTypeDef:
+    return {
+        "MasterInstanceType": ...,
+        "SlaveInstanceType": ...,
+        "InstanceCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobFlowInstancesDetailTypeDef(TypedDict):
+    MasterInstanceType: str,
+    SlaveInstanceType: str,
+    InstanceCount: int,
+    MasterPublicDnsName: NotRequired[str],
+    MasterInstanceId: NotRequired[str],
+    InstanceGroups: NotRequired[List[InstanceGroupDetailTypeDef]],  # (1)
+    NormalizedInstanceHours: NotRequired[int],
+    Ec2KeyName: NotRequired[str],
+    Ec2SubnetId: NotRequired[str],
+    Placement: NotRequired[PlacementTypeTypeDef],  # (2)
+    KeepJobFlowAliveWhenNoSteps: NotRequired[bool],
+    TerminationProtected: NotRequired[bool],
+    HadoopVersion: NotRequired[str],
+```
 
-- `MasterInstanceType`: `str`
-- `SlaveInstanceType`: `str`
-- `InstanceCount`: `int`
-
-Optional fields:
-
-- `MasterPublicDnsName`: `str`
-- `MasterInstanceId`: `str`
-- `InstanceGroups`:
-  `List`\[[InstanceGroupDetailTypeDef](./type_defs.md#instancegroupdetailtypedef)\]
-- `NormalizedInstanceHours`: `int`
-- `Ec2KeyName`: `str`
-- `Ec2SubnetId`: `str`
-- `Placement`: [PlacementTypeTypeDef](./type_defs.md#placementtypetypedef)
-- `KeepJobFlowAliveWhenNoSteps`: `bool`
-- `TerminationProtected`: `bool`
-- `HadoopVersion`: `str`
-
-<a id="kerberosattributestypedef"></a>
-
+1. See [:material-code-braces: InstanceGroupDetailTypeDef](./type_defs.md#instancegroupdetailtypedef) 
+2. See [:material-code-braces: PlacementTypeTypeDef](./type_defs.md#placementtypetypedef) 
 ## KerberosAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import KerberosAttributesTypeDef
+
+def get_value() -> KerberosAttributesTypeDef:
+    return {
+        "Realm": ...,
+        "KdcAdminPassword": ...,
+    }
 ```
 
-Required fields:
-
-- `Realm`: `str`
-- `KdcAdminPassword`: `str`
-
-Optional fields:
-
-- `CrossRealmTrustPrincipalPassword`: `str`
-- `ADDomainJoinUser`: `str`
-- `ADDomainJoinPassword`: `str`
-
-<a id="keyvaluetypedef"></a>
+```python title="Definition"
+class KerberosAttributesTypeDef(TypedDict):
+    Realm: str,
+    KdcAdminPassword: str,
+    CrossRealmTrustPrincipalPassword: NotRequired[str],
+    ADDomainJoinUser: NotRequired[str],
+    ADDomainJoinPassword: NotRequired[str],
+```
 
 ## KeyValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import KeyValueTypeDef
+
+def get_value() -> KeyValueTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KeyValueTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
-- `Key`: `str`
-- `Value`: `str`
+## ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef
 
-<a id="listbootstrapactionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef
 
+def get_value() -> ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListBootstrapActionsInputListBootstrapActionsPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBootstrapActionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListBootstrapActionsInputRequestTypeDef
+
+def get_value() -> ListBootstrapActionsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="listbootstrapactionsoutputtypedef"></a>
+```python title="Definition"
+class ListBootstrapActionsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    Marker: NotRequired[str],
+```
 
 ## ListBootstrapActionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListBootstrapActionsOutputTypeDef
+
+def get_value() -> ListBootstrapActionsOutputTypeDef:
+    return {
+        "BootstrapActions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBootstrapActionsOutputTypeDef(TypedDict):
+    BootstrapActions: List[CommandTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BootstrapActions`: `List`\[[CommandTypeDef](./type_defs.md#commandtypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CommandTypeDef](./type_defs.md#commandtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListClustersInputListClustersPaginateTypeDef
 
-<a id="listclustersinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListClustersInputListClustersPaginateTypeDef
 
+def get_value() -> ListClustersInputListClustersPaginateTypeDef:
+    return {
+        "CreatedAfter": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersInputListClustersPaginateTypeDef(TypedDict):
+    CreatedAfter: NotRequired[Union[datetime, str]],
+    CreatedBefore: NotRequired[Union[datetime, str]],
+    ClusterStates: NotRequired[Sequence[ClusterStateType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClustersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListClustersInputRequestTypeDef
+
+def get_value() -> ListClustersInputRequestTypeDef:
+    return {
+        "CreatedAfter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListClustersInputRequestTypeDef(TypedDict):
+    CreatedAfter: NotRequired[Union[datetime, str]],
+    CreatedBefore: NotRequired[Union[datetime, str]],
+    ClusterStates: NotRequired[Sequence[ClusterStateType]],  # (1)
+    Marker: NotRequired[str],
+```
 
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`:
-  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
-- `Marker`: `str`
-
-<a id="listclustersoutputtypedef"></a>
-
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
 ## ListClustersOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListClustersOutputTypeDef
+
+def get_value() -> ListClustersOutputTypeDef:
+    return {
+        "Clusters": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClustersOutputTypeDef(TypedDict):
+    Clusters: List[ClusterSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Clusters`:
-  `List`\[[ClusterSummaryTypeDef](./type_defs.md#clustersummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterSummaryTypeDef](./type_defs.md#clustersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef
 
-<a id="listinstancefleetsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef
 
+def get_value() -> ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceFleetsInputListInstanceFleetsPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceFleetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstanceFleetsInputRequestTypeDef
+
+def get_value() -> ListInstanceFleetsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="listinstancefleetsoutputtypedef"></a>
+```python title="Definition"
+class ListInstanceFleetsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    Marker: NotRequired[str],
+```
 
 ## ListInstanceFleetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstanceFleetsOutputTypeDef
+
+def get_value() -> ListInstanceFleetsOutputTypeDef:
+    return {
+        "InstanceFleets": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceFleetsOutputTypeDef(TypedDict):
+    InstanceFleets: List[InstanceFleetTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceFleets`:
-  `List`\[[InstanceFleetTypeDef](./type_defs.md#instancefleettypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceFleetTypeDef](./type_defs.md#instancefleettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef
 
-<a id="listinstancegroupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef
 
+def get_value() -> ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceGroupsInputListInstanceGroupsPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstanceGroupsInputRequestTypeDef
+
+def get_value() -> ListInstanceGroupsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="listinstancegroupsoutputtypedef"></a>
+```python title="Definition"
+class ListInstanceGroupsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    Marker: NotRequired[str],
+```
 
 ## ListInstanceGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstanceGroupsOutputTypeDef
+
+def get_value() -> ListInstanceGroupsOutputTypeDef:
+    return {
+        "InstanceGroups": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceGroupsOutputTypeDef(TypedDict):
+    InstanceGroups: List[InstanceGroupTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceGroups`:
-  `List`\[[InstanceGroupTypeDef](./type_defs.md#instancegrouptypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceGroupTypeDef](./type_defs.md#instancegrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstancesInputListInstancesPaginateTypeDef
 
-<a id="listinstancesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListInstancesInputListInstancesPaginateTypeDef
 
+def get_value() -> ListInstancesInputListInstancesPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstancesInputListInstancesPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceGroupId: NotRequired[str],
+    InstanceGroupTypes: NotRequired[Sequence[InstanceGroupTypeType]],  # (1)
+    InstanceFleetId: NotRequired[str],
+    InstanceFleetType: NotRequired[InstanceFleetTypeType],  # (2)
+    InstanceStates: NotRequired[Sequence[InstanceStateType]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: InstanceGroupTypeType](./literals.md#instancegrouptypetype) 
+2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+3. See [:material-code-brackets: InstanceStateType](./literals.md#instancestatetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstancesInputRequestTypeDef
+
+def get_value() -> ListInstancesInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstancesInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceGroupId: NotRequired[str],
+    InstanceGroupTypes: NotRequired[Sequence[InstanceGroupTypeType]],  # (1)
+    InstanceFleetId: NotRequired[str],
+    InstanceFleetType: NotRequired[InstanceFleetTypeType],  # (2)
+    InstanceStates: NotRequired[Sequence[InstanceStateType]],  # (3)
+    Marker: NotRequired[str],
+```
 
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `InstanceGroupId`: `str`
-- `InstanceGroupTypes`:
-  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
-- `InstanceFleetId`: `str`
-- `InstanceFleetType`:
-  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
-- `InstanceStates`:
-  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
-- `Marker`: `str`
-
-<a id="listinstancesoutputtypedef"></a>
-
+1. See [:material-code-brackets: InstanceGroupTypeType](./literals.md#instancegrouptypetype) 
+2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+3. See [:material-code-brackets: InstanceStateType](./literals.md#instancestatetype) 
 ## ListInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListInstancesOutputTypeDef
+
+def get_value() -> ListInstancesOutputTypeDef:
+    return {
+        "Instances": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstancesOutputTypeDef(TypedDict):
+    Instances: List[InstanceTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef
 
-<a id="listnotebookexecutionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef
 
+def get_value() -> ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef:
+    return {
+        "EditorId": ...,
+    }
+```
+
+```python title="Definition"
+class ListNotebookExecutionsInputListNotebookExecutionsPaginateTypeDef(TypedDict):
+    EditorId: NotRequired[str],
+    Status: NotRequired[NotebookExecutionStatusType],  # (1)
+    From: NotRequired[Union[datetime, str]],
+    To: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListNotebookExecutionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListNotebookExecutionsInputRequestTypeDef
+
+def get_value() -> ListNotebookExecutionsInputRequestTypeDef:
+    return {
+        "EditorId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListNotebookExecutionsInputRequestTypeDef(TypedDict):
+    EditorId: NotRequired[str],
+    Status: NotRequired[NotebookExecutionStatusType],  # (1)
+    From: NotRequired[Union[datetime, str]],
+    To: NotRequired[Union[datetime, str]],
+    Marker: NotRequired[str],
+```
 
-- `EditorId`: `str`
-- `Status`:
-  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `From`: `Union`\[`datetime`, `str`\]
-- `To`: `Union`\[`datetime`, `str`\]
-- `Marker`: `str`
-
-<a id="listnotebookexecutionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
 ## ListNotebookExecutionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListNotebookExecutionsOutputTypeDef
+
+def get_value() -> ListNotebookExecutionsOutputTypeDef:
+    return {
+        "NotebookExecutions": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotebookExecutionsOutputTypeDef(TypedDict):
+    NotebookExecutions: List[NotebookExecutionSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NotebookExecutions`:
-  `List`\[[NotebookExecutionSummaryTypeDef](./type_defs.md#notebookexecutionsummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listreleaselabelsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: NotebookExecutionSummaryTypeDef](./type_defs.md#notebookexecutionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListReleaseLabelsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListReleaseLabelsInputRequestTypeDef
+
+def get_value() -> ListReleaseLabelsInputRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListReleaseLabelsInputRequestTypeDef(TypedDict):
+    Filters: NotRequired[ReleaseLabelFilterTypeDef],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Filters`:
-  [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listreleaselabelsoutputtypedef"></a>
-
+1. See [:material-code-braces: ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef) 
 ## ListReleaseLabelsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListReleaseLabelsOutputTypeDef
+
+def get_value() -> ListReleaseLabelsOutputTypeDef:
+    return {
+        "ReleaseLabels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListReleaseLabelsOutputTypeDef(TypedDict):
+    ReleaseLabels: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReleaseLabels`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef
 
-<a id="listsecurityconfigurationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef
 
+def get_value() -> ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityConfigurationsInputListSecurityConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityConfigurationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListSecurityConfigurationsInputRequestTypeDef
+
+def get_value() -> ListSecurityConfigurationsInputRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="listsecurityconfigurationsoutputtypedef"></a>
+```python title="Definition"
+class ListSecurityConfigurationsInputRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+```
 
 ## ListSecurityConfigurationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListSecurityConfigurationsOutputTypeDef
+
+def get_value() -> ListSecurityConfigurationsOutputTypeDef:
+    return {
+        "SecurityConfigurations": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecurityConfigurationsOutputTypeDef(TypedDict):
+    SecurityConfigurations: List[SecurityConfigurationSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityConfigurations`:
-  `List`\[[SecurityConfigurationSummaryTypeDef](./type_defs.md#securityconfigurationsummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SecurityConfigurationSummaryTypeDef](./type_defs.md#securityconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStepsInputListStepsPaginateTypeDef
 
-<a id="liststepsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListStepsInputListStepsPaginateTypeDef
 
+def get_value() -> ListStepsInputListStepsPaginateTypeDef:
+    return {
+        "ClusterId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStepsInputListStepsPaginateTypeDef(TypedDict):
+    ClusterId: str,
+    StepStates: NotRequired[Sequence[StepStateType]],  # (1)
+    StepIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: StepStateType](./literals.md#stepstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStepsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStepsInputRequestTypeDef
+
+def get_value() -> ListStepsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStepsInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    StepStates: NotRequired[Sequence[StepStateType]],  # (1)
+    StepIds: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+```
 
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `Sequence`\[`str`\]
-- `Marker`: `str`
-
-<a id="liststepsoutputtypedef"></a>
-
+1. See [:material-code-brackets: StepStateType](./literals.md#stepstatetype) 
 ## ListStepsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStepsOutputTypeDef
+
+def get_value() -> ListStepsOutputTypeDef:
+    return {
+        "Steps": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStepsOutputTypeDef(TypedDict):
+    Steps: List[StepSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Steps`: `List`\[[StepSummaryTypeDef](./type_defs.md#stepsummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StepSummaryTypeDef](./type_defs.md#stepsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef
 
-<a id="liststudiosessionmappingsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef
 
+def get_value() -> ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef:
+    return {
+        "StudioId": ...,
+    }
+```
+
+```python title="Definition"
+class ListStudioSessionMappingsInputListStudioSessionMappingsPaginateTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    IdentityType: NotRequired[IdentityTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStudioSessionMappingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStudioSessionMappingsInputRequestTypeDef
+
+def get_value() -> ListStudioSessionMappingsInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListStudioSessionMappingsInputRequestTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    IdentityType: NotRequired[IdentityTypeType],  # (1)
+    Marker: NotRequired[str],
+```
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `Marker`: `str`
-
-<a id="liststudiosessionmappingsoutputtypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## ListStudioSessionMappingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStudioSessionMappingsOutputTypeDef
+
+def get_value() -> ListStudioSessionMappingsOutputTypeDef:
+    return {
+        "SessionMappings": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStudioSessionMappingsOutputTypeDef(TypedDict):
+    SessionMappings: List[SessionMappingSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SessionMappings`:
-  `List`\[[SessionMappingSummaryTypeDef](./type_defs.md#sessionmappingsummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SessionMappingSummaryTypeDef](./type_defs.md#sessionmappingsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListStudiosInputListStudiosPaginateTypeDef
 
-<a id="liststudiosinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_emr.type_defs import ListStudiosInputListStudiosPaginateTypeDef
 
+def get_value() -> ListStudiosInputListStudiosPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListStudiosInputListStudiosPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListStudiosInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStudiosInputRequestTypeDef
+
+def get_value() -> ListStudiosInputRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="liststudiosoutputtypedef"></a>
+```python title="Definition"
+class ListStudiosInputRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+```
 
 ## ListStudiosOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ListStudiosOutputTypeDef
+
+def get_value() -> ListStudiosOutputTypeDef:
+    return {
+        "Studios": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStudiosOutputTypeDef(TypedDict):
+    Studios: List[StudioSummaryTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Studios`:
-  `List`\[[StudioSummaryTypeDef](./type_defs.md#studiosummarytypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="managedscalingpolicytypedef"></a>
-
+1. See [:material-code-braces: StudioSummaryTypeDef](./type_defs.md#studiosummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ManagedScalingPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ManagedScalingPolicyTypeDef
+
+def get_value() -> ManagedScalingPolicyTypeDef:
+    return {
+        "ComputeLimits": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedScalingPolicyTypeDef(TypedDict):
+    ComputeLimits: NotRequired[ComputeLimitsTypeDef],  # (1)
+```
 
-- `ComputeLimits`: [ComputeLimitsTypeDef](./type_defs.md#computelimitstypedef)
-
-<a id="metricdimensiontypedef"></a>
-
+1. See [:material-code-braces: ComputeLimitsTypeDef](./type_defs.md#computelimitstypedef) 
 ## MetricDimensionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import MetricDimensionTypeDef
+
+def get_value() -> MetricDimensionTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="modifyclusterinputrequesttypedef"></a>
+```python title="Definition"
+class MetricDimensionTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## ModifyClusterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ModifyClusterInputRequestTypeDef
+
+def get_value() -> ModifyClusterInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `StepConcurrencyLevel`: `int`
-
-<a id="modifyclusteroutputtypedef"></a>
+```python title="Definition"
+class ModifyClusterInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    StepConcurrencyLevel: NotRequired[int],
+```
 
 ## ModifyClusterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ModifyClusterOutputTypeDef
+
+def get_value() -> ModifyClusterOutputTypeDef:
+    return {
+        "StepConcurrencyLevel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyClusterOutputTypeDef(TypedDict):
+    StepConcurrencyLevel: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StepConcurrencyLevel`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyinstancefleetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyInstanceFleetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ModifyInstanceFleetInputRequestTypeDef
+
+def get_value() -> ModifyInstanceFleetInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceFleet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyInstanceFleetInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceFleet: InstanceFleetModifyConfigTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `InstanceFleet`:
-  [InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef)
-
-<a id="modifyinstancegroupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef) 
 ## ModifyInstanceGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ModifyInstanceGroupsInputRequestTypeDef
+
+def get_value() -> ModifyInstanceGroupsInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModifyInstanceGroupsInputRequestTypeDef(TypedDict):
+    ClusterId: NotRequired[str],
+    InstanceGroups: NotRequired[Sequence[InstanceGroupModifyConfigTypeDef]],  # (1)
+```
 
-- `ClusterId`: `str`
-- `InstanceGroups`:
-  `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
-
-<a id="notebookexecutionsummarytypedef"></a>
-
+1. See [:material-code-braces: InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef) 
 ## NotebookExecutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import NotebookExecutionSummaryTypeDef
+
+def get_value() -> NotebookExecutionSummaryTypeDef:
+    return {
+        "NotebookExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotebookExecutionSummaryTypeDef(TypedDict):
+    NotebookExecutionId: NotRequired[str],
+    EditorId: NotRequired[str],
+    NotebookExecutionName: NotRequired[str],
+    Status: NotRequired[NotebookExecutionStatusType],  # (1)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+```
 
-- `NotebookExecutionId`: `str`
-- `EditorId`: `str`
-- `NotebookExecutionName`: `str`
-- `Status`:
-  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-
-<a id="notebookexecutiontypedef"></a>
-
+1. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
 ## NotebookExecutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import NotebookExecutionTypeDef
+
+def get_value() -> NotebookExecutionTypeDef:
+    return {
+        "NotebookExecutionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotebookExecutionTypeDef(TypedDict):
+    NotebookExecutionId: NotRequired[str],
+    EditorId: NotRequired[str],
+    ExecutionEngine: NotRequired[ExecutionEngineConfigTypeDef],  # (1)
+    NotebookExecutionName: NotRequired[str],
+    NotebookParams: NotRequired[str],
+    Status: NotRequired[NotebookExecutionStatusType],  # (2)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Arn: NotRequired[str],
+    OutputNotebookURI: NotRequired[str],
+    LastStateChangeReason: NotRequired[str],
+    NotebookInstanceSecurityGroupId: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+```
 
-- `NotebookExecutionId`: `str`
-- `EditorId`: `str`
-- `ExecutionEngine`:
-  [ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef)
-- `NotebookExecutionName`: `str`
-- `NotebookParams`: `str`
-- `Status`:
-  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `Arn`: `str`
-- `OutputNotebookURI`: `str`
-- `LastStateChangeReason`: `str`
-- `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="ondemandcapacityreservationoptionstypedef"></a>
-
+1. See [:material-code-braces: ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef) 
+2. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## OnDemandCapacityReservationOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import OnDemandCapacityReservationOptionsTypeDef
+
+def get_value() -> OnDemandCapacityReservationOptionsTypeDef:
+    return {
+        "UsageStrategy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnDemandCapacityReservationOptionsTypeDef(TypedDict):
+    UsageStrategy: NotRequired[OnDemandCapacityReservationUsageStrategyType],  # (1)
+    CapacityReservationPreference: NotRequired[OnDemandCapacityReservationPreferenceType],  # (2)
+    CapacityReservationResourceGroupArn: NotRequired[str],
+```
 
-- `UsageStrategy`: `Literal['use-capacity-reservations-first']` (see
-  [OnDemandCapacityReservationUsageStrategyType](./literals.md#ondemandcapacityreservationusagestrategytype))
-- `CapacityReservationPreference`:
-  [OnDemandCapacityReservationPreferenceType](./literals.md#ondemandcapacityreservationpreferencetype)
-- `CapacityReservationResourceGroupArn`: `str`
-
-<a id="ondemandprovisioningspecificationtypedef"></a>
-
+1. See [:material-code-brackets: OnDemandCapacityReservationUsageStrategyType](./literals.md#ondemandcapacityreservationusagestrategytype) 
+2. See [:material-code-brackets: OnDemandCapacityReservationPreferenceType](./literals.md#ondemandcapacityreservationpreferencetype) 
 ## OnDemandProvisioningSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import OnDemandProvisioningSpecificationTypeDef
+
+def get_value() -> OnDemandProvisioningSpecificationTypeDef:
+    return {
+        "AllocationStrategy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OnDemandProvisioningSpecificationTypeDef(TypedDict):
+    AllocationStrategy: OnDemandProvisioningAllocationStrategyType,  # (1)
+    CapacityReservationOptions: NotRequired[OnDemandCapacityReservationOptionsTypeDef],  # (2)
+```
 
-- `AllocationStrategy`: `Literal['lowest-price']` (see
-  [OnDemandProvisioningAllocationStrategyType](./literals.md#ondemandprovisioningallocationstrategytype))
-
-Optional fields:
-
-- `CapacityReservationOptions`:
-  [OnDemandCapacityReservationOptionsTypeDef](./type_defs.md#ondemandcapacityreservationoptionstypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OnDemandProvisioningAllocationStrategyType](./literals.md#ondemandprovisioningallocationstrategytype) 
+2. See [:material-code-braces: OnDemandCapacityReservationOptionsTypeDef](./type_defs.md#ondemandcapacityreservationoptionstypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="placementgroupconfigtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlacementGroupConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PlacementGroupConfigTypeDef
+
+def get_value() -> PlacementGroupConfigTypeDef:
+    return {
+        "InstanceRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PlacementGroupConfigTypeDef(TypedDict):
+    InstanceRole: InstanceRoleTypeType,  # (1)
+    PlacementStrategy: NotRequired[PlacementGroupStrategyType],  # (2)
+```
 
-- `InstanceRole`: [InstanceRoleTypeType](./literals.md#instanceroletypetype)
-
-Optional fields:
-
-- `PlacementStrategy`:
-  [PlacementGroupStrategyType](./literals.md#placementgroupstrategytype)
-
-<a id="placementtypetypedef"></a>
-
+1. See [:material-code-brackets: InstanceRoleTypeType](./literals.md#instanceroletypetype) 
+2. See [:material-code-brackets: PlacementGroupStrategyType](./literals.md#placementgroupstrategytype) 
 ## PlacementTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PlacementTypeTypeDef
+
+def get_value() -> PlacementTypeTypeDef:
+    return {
+        "AvailabilityZone": ...,
+    }
 ```
 
-Optional fields:
-
-- `AvailabilityZone`: `str`
-- `AvailabilityZones`: `List`\[`str`\]
-
-<a id="portrangetypedef"></a>
+```python title="Definition"
+class PlacementTypeTypeDef(TypedDict):
+    AvailabilityZone: NotRequired[str],
+    AvailabilityZones: NotRequired[List[str]],
+```
 
 ## PortRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PortRangeTypeDef
+
+def get_value() -> PortRangeTypeDef:
+    return {
+        "MinRange": ...,
+    }
 ```
 
-Required fields:
-
-- `MinRange`: `int`
-
-Optional fields:
-
-- `MaxRange`: `int`
-
-<a id="putautoscalingpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class PortRangeTypeDef(TypedDict):
+    MinRange: int,
+    MaxRange: NotRequired[int],
+```
 
 ## PutAutoScalingPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PutAutoScalingPolicyInputRequestTypeDef
+
+def get_value() -> PutAutoScalingPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceGroupId": ...,
+        "AutoScalingPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAutoScalingPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceGroupId: str,
+    AutoScalingPolicy: AutoScalingPolicyTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `InstanceGroupId`: `str`
-- `AutoScalingPolicy`:
-  [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
-
-<a id="putautoscalingpolicyoutputtypedef"></a>
-
+1. See [:material-code-braces: AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef) 
 ## PutAutoScalingPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PutAutoScalingPolicyOutputTypeDef
+
+def get_value() -> PutAutoScalingPolicyOutputTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceGroupId": ...,
+        "AutoScalingPolicy": ...,
+        "ClusterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAutoScalingPolicyOutputTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceGroupId: str,
+    AutoScalingPolicy: AutoScalingPolicyDescriptionTypeDef,  # (1)
+    ClusterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ClusterId`: `str`
-- `InstanceGroupId`: `str`
-- `AutoScalingPolicy`:
-  [AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)
-- `ClusterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putautoterminationpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutAutoTerminationPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PutAutoTerminationPolicyInputRequestTypeDef
+
+def get_value() -> PutAutoTerminationPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAutoTerminationPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    AutoTerminationPolicy: NotRequired[AutoTerminationPolicyTypeDef],  # (1)
+```
 
-- `ClusterId`: `str`
-
-Optional fields:
-
-- `AutoTerminationPolicy`:
-  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
-
-<a id="putblockpublicaccessconfigurationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef) 
 ## PutBlockPublicAccessConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PutBlockPublicAccessConfigurationInputRequestTypeDef
+
+def get_value() -> PutBlockPublicAccessConfigurationInputRequestTypeDef:
+    return {
+        "BlockPublicAccessConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutBlockPublicAccessConfigurationInputRequestTypeDef(TypedDict):
+    BlockPublicAccessConfiguration: BlockPublicAccessConfigurationTypeDef,  # (1)
+```
 
-- `BlockPublicAccessConfiguration`:
-  [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
-
-<a id="putmanagedscalingpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef) 
 ## PutManagedScalingPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import PutManagedScalingPolicyInputRequestTypeDef
+
+def get_value() -> PutManagedScalingPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "ManagedScalingPolicy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutManagedScalingPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    ManagedScalingPolicy: ManagedScalingPolicyTypeDef,  # (1)
+```
 
-- `ClusterId`: `str`
-- `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
-
-<a id="releaselabelfiltertypedef"></a>
-
+1. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
 ## ReleaseLabelFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ReleaseLabelFilterTypeDef
+
+def get_value() -> ReleaseLabelFilterTypeDef:
+    return {
+        "Prefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `Prefix`: `str`
-- `Application`: `str`
-
-<a id="removeautoscalingpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class ReleaseLabelFilterTypeDef(TypedDict):
+    Prefix: NotRequired[str],
+    Application: NotRequired[str],
+```
 
 ## RemoveAutoScalingPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RemoveAutoScalingPolicyInputRequestTypeDef
+
+def get_value() -> RemoveAutoScalingPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+        "InstanceGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-- `InstanceGroupId`: `str`
-
-<a id="removeautoterminationpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class RemoveAutoScalingPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+    InstanceGroupId: str,
+```
 
 ## RemoveAutoTerminationPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RemoveAutoTerminationPolicyInputRequestTypeDef
+
+def get_value() -> RemoveAutoTerminationPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="removemanagedscalingpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class RemoveAutoTerminationPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## RemoveManagedScalingPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RemoveManagedScalingPolicyInputRequestTypeDef
+
+def get_value() -> RemoveManagedScalingPolicyInputRequestTypeDef:
+    return {
+        "ClusterId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterId`: `str`
-
-<a id="removetagsinputrequesttypedef"></a>
+```python title="Definition"
+class RemoveManagedScalingPolicyInputRequestTypeDef(TypedDict):
+    ClusterId: str,
+```
 
 ## RemoveTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RemoveTagsInputRequestTypeDef
+
+def get_value() -> RemoveTagsInputRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceId`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemoveTagsInputRequestTypeDef(TypedDict):
+    ResourceId: str,
+    TagKeys: Sequence[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="runjobflowinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RunJobFlowInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RunJobFlowInputRequestTypeDef
+
+def get_value() -> RunJobFlowInputRequestTypeDef:
+    return {
+        "Name": ...,
+        "Instances": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunJobFlowInputRequestTypeDef(TypedDict):
+    Name: str,
+    Instances: JobFlowInstancesConfigTypeDef,  # (1)
+    LogUri: NotRequired[str],
+    LogEncryptionKmsKeyId: NotRequired[str],
+    AdditionalInfo: NotRequired[str],
+    AmiVersion: NotRequired[str],
+    ReleaseLabel: NotRequired[str],
+    Steps: NotRequired[Sequence[StepConfigTypeDef]],  # (2)
+    BootstrapActions: NotRequired[Sequence[BootstrapActionConfigTypeDef]],  # (3)
+    SupportedProducts: NotRequired[Sequence[str]],
+    NewSupportedProducts: NotRequired[Sequence[SupportedProductConfigTypeDef]],  # (4)
+    Applications: NotRequired[Sequence[ApplicationTypeDef]],  # (5)
+    Configurations: NotRequired[Sequence[ConfigurationTypeDef]],  # (6)
+    VisibleToAllUsers: NotRequired[bool],
+    JobFlowRole: NotRequired[str],
+    ServiceRole: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+    SecurityConfiguration: NotRequired[str],
+    AutoScalingRole: NotRequired[str],
+    ScaleDownBehavior: NotRequired[ScaleDownBehaviorType],  # (8)
+    CustomAmiId: NotRequired[str],
+    EbsRootVolumeSize: NotRequired[int],
+    RepoUpgradeOnBoot: NotRequired[RepoUpgradeOnBootType],  # (9)
+    KerberosAttributes: NotRequired[KerberosAttributesTypeDef],  # (10)
+    StepConcurrencyLevel: NotRequired[int],
+    ManagedScalingPolicy: NotRequired[ManagedScalingPolicyTypeDef],  # (11)
+    PlacementGroupConfigs: NotRequired[Sequence[PlacementGroupConfigTypeDef]],  # (12)
+    AutoTerminationPolicy: NotRequired[AutoTerminationPolicyTypeDef],  # (13)
+```
 
-- `Name`: `str`
-- `Instances`:
-  [JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef)
-
-Optional fields:
-
-- `LogUri`: `str`
-- `LogEncryptionKmsKeyId`: `str`
-- `AdditionalInfo`: `str`
-- `AmiVersion`: `str`
-- `ReleaseLabel`: `str`
-- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
-- `BootstrapActions`:
-  `Sequence`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
-- `SupportedProducts`: `Sequence`\[`str`\]
-- `NewSupportedProducts`:
-  `Sequence`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
-- `Applications`:
-  `Sequence`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `VisibleToAllUsers`: `bool`
-- `JobFlowRole`: `str`
-- `ServiceRole`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SecurityConfiguration`: `str`
-- `AutoScalingRole`: `str`
-- `ScaleDownBehavior`:
-  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
-- `CustomAmiId`: `str`
-- `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`:
-  [RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype)
-- `KerberosAttributes`:
-  [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
-- `StepConcurrencyLevel`: `int`
-- `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
-- `PlacementGroupConfigs`:
-  `Sequence`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
-- `AutoTerminationPolicy`:
-  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
-
-<a id="runjobflowoutputtypedef"></a>
-
+1. See [:material-code-braces: JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef) 
+2. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
+3. See [:material-code-braces: BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef) 
+4. See [:material-code-braces: SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef) 
+5. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+6. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-brackets: ScaleDownBehaviorType](./literals.md#scaledownbehaviortype) 
+9. See [:material-code-brackets: RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype) 
+10. See [:material-code-braces: KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef) 
+11. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
+12. See [:material-code-braces: PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef) 
+13. See [:material-code-braces: AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef) 
 ## RunJobFlowOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import RunJobFlowOutputTypeDef
+
+def get_value() -> RunJobFlowOutputTypeDef:
+    return {
+        "JobFlowId": ...,
+        "ClusterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunJobFlowOutputTypeDef(TypedDict):
+    JobFlowId: str,
+    ClusterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobFlowId`: `str`
-- `ClusterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="scalingactiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ScalingActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ScalingActionTypeDef
+
+def get_value() -> ScalingActionTypeDef:
+    return {
+        "SimpleScalingPolicyConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingActionTypeDef(TypedDict):
+    SimpleScalingPolicyConfiguration: SimpleScalingPolicyConfigurationTypeDef,  # (2)
+    Market: NotRequired[MarketTypeType],  # (1)
+```
 
-- `SimpleScalingPolicyConfiguration`:
-  [SimpleScalingPolicyConfigurationTypeDef](./type_defs.md#simplescalingpolicyconfigurationtypedef)
-
-Optional fields:
-
-- `Market`: [MarketTypeType](./literals.md#markettypetype)
-
-<a id="scalingconstraintstypedef"></a>
-
+1. See [:material-code-brackets: MarketTypeType](./literals.md#markettypetype) 
+2. See [:material-code-braces: SimpleScalingPolicyConfigurationTypeDef](./type_defs.md#simplescalingpolicyconfigurationtypedef) 
 ## ScalingConstraintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ScalingConstraintsTypeDef
+
+def get_value() -> ScalingConstraintsTypeDef:
+    return {
+        "MinCapacity": ...,
+        "MaxCapacity": ...,
+    }
 ```
 
-Required fields:
-
-- `MinCapacity`: `int`
-- `MaxCapacity`: `int`
-
-<a id="scalingruletypedef"></a>
+```python title="Definition"
+class ScalingConstraintsTypeDef(TypedDict):
+    MinCapacity: int,
+    MaxCapacity: int,
+```
 
 ## ScalingRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ScalingRuleTypeDef
+
+def get_value() -> ScalingRuleTypeDef:
+    return {
+        "Name": ...,
+        "Action": ...,
+        "Trigger": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingRuleTypeDef(TypedDict):
+    Name: str,
+    Action: ScalingActionTypeDef,  # (1)
+    Trigger: ScalingTriggerTypeDef,  # (2)
+    Description: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Action`: [ScalingActionTypeDef](./type_defs.md#scalingactiontypedef)
-- `Trigger`: [ScalingTriggerTypeDef](./type_defs.md#scalingtriggertypedef)
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="scalingtriggertypedef"></a>
-
+1. See [:material-code-braces: ScalingActionTypeDef](./type_defs.md#scalingactiontypedef) 
+2. See [:material-code-braces: ScalingTriggerTypeDef](./type_defs.md#scalingtriggertypedef) 
 ## ScalingTriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ScalingTriggerTypeDef
+
+def get_value() -> ScalingTriggerTypeDef:
+    return {
+        "CloudWatchAlarmDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingTriggerTypeDef(TypedDict):
+    CloudWatchAlarmDefinition: CloudWatchAlarmDefinitionTypeDef,  # (1)
+```
 
-- `CloudWatchAlarmDefinition`:
-  [CloudWatchAlarmDefinitionTypeDef](./type_defs.md#cloudwatchalarmdefinitiontypedef)
-
-<a id="scriptbootstrapactionconfigtypedef"></a>
-
+1. See [:material-code-braces: CloudWatchAlarmDefinitionTypeDef](./type_defs.md#cloudwatchalarmdefinitiontypedef) 
 ## ScriptBootstrapActionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ScriptBootstrapActionConfigTypeDef
+
+def get_value() -> ScriptBootstrapActionConfigTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Required fields:
-
-- `Path`: `str`
-
-Optional fields:
-
-- `Args`: `List`\[`str`\]
-
-<a id="securityconfigurationsummarytypedef"></a>
+```python title="Definition"
+class ScriptBootstrapActionConfigTypeDef(TypedDict):
+    Path: str,
+    Args: NotRequired[List[str]],
+```
 
 ## SecurityConfigurationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SecurityConfigurationSummaryTypeDef
+
+def get_value() -> SecurityConfigurationSummaryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `CreationDateTime`: `datetime`
-
-<a id="sessionmappingdetailtypedef"></a>
+```python title="Definition"
+class SecurityConfigurationSummaryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    CreationDateTime: NotRequired[datetime],
+```
 
 ## SessionMappingDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SessionMappingDetailTypeDef
+
+def get_value() -> SessionMappingDetailTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionMappingDetailTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+    IdentityType: NotRequired[IdentityTypeType],  # (1)
+    SessionPolicyArn: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `StudioId`: `str`
-- `IdentityId`: `str`
-- `IdentityName`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `SessionPolicyArn`: `str`
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-
-<a id="sessionmappingsummarytypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## SessionMappingSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SessionMappingSummaryTypeDef
+
+def get_value() -> SessionMappingSummaryTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SessionMappingSummaryTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+    IdentityType: NotRequired[IdentityTypeType],  # (1)
+    SessionPolicyArn: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+```
 
-- `StudioId`: `str`
-- `IdentityId`: `str`
-- `IdentityName`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `SessionPolicyArn`: `str`
-- `CreationTime`: `datetime`
-
-<a id="setterminationprotectioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## SetTerminationProtectionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SetTerminationProtectionInputRequestTypeDef
+
+def get_value() -> SetTerminationProtectionInputRequestTypeDef:
+    return {
+        "JobFlowIds": ...,
+        "TerminationProtected": ...,
+    }
 ```
 
-Required fields:
-
-- `JobFlowIds`: `Sequence`\[`str`\]
-- `TerminationProtected`: `bool`
-
-<a id="setvisibletoallusersinputrequesttypedef"></a>
+```python title="Definition"
+class SetTerminationProtectionInputRequestTypeDef(TypedDict):
+    JobFlowIds: Sequence[str],
+    TerminationProtected: bool,
+```
 
 ## SetVisibleToAllUsersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SetVisibleToAllUsersInputRequestTypeDef
+
+def get_value() -> SetVisibleToAllUsersInputRequestTypeDef:
+    return {
+        "JobFlowIds": ...,
+        "VisibleToAllUsers": ...,
+    }
 ```
 
-Required fields:
-
-- `JobFlowIds`: `Sequence`\[`str`\]
-- `VisibleToAllUsers`: `bool`
-
-<a id="shrinkpolicytypedef"></a>
+```python title="Definition"
+class SetVisibleToAllUsersInputRequestTypeDef(TypedDict):
+    JobFlowIds: Sequence[str],
+    VisibleToAllUsers: bool,
+```
 
 ## ShrinkPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import ShrinkPolicyTypeDef
+
+def get_value() -> ShrinkPolicyTypeDef:
+    return {
+        "DecommissionTimeout": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShrinkPolicyTypeDef(TypedDict):
+    DecommissionTimeout: NotRequired[int],
+    InstanceResizePolicy: NotRequired[InstanceResizePolicyTypeDef],  # (1)
+```
 
-- `DecommissionTimeout`: `int`
-- `InstanceResizePolicy`:
-  [InstanceResizePolicyTypeDef](./type_defs.md#instanceresizepolicytypedef)
-
-<a id="simplescalingpolicyconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InstanceResizePolicyTypeDef](./type_defs.md#instanceresizepolicytypedef) 
 ## SimpleScalingPolicyConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SimpleScalingPolicyConfigurationTypeDef
+
+def get_value() -> SimpleScalingPolicyConfigurationTypeDef:
+    return {
+        "ScalingAdjustment": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimpleScalingPolicyConfigurationTypeDef(TypedDict):
+    ScalingAdjustment: int,
+    AdjustmentType: NotRequired[AdjustmentTypeType],  # (1)
+    CoolDown: NotRequired[int],
+```
 
-- `ScalingAdjustment`: `int`
-
-Optional fields:
-
-- `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
-- `CoolDown`: `int`
-
-<a id="simplifiedapplicationtypedef"></a>
-
+1. See [:material-code-brackets: AdjustmentTypeType](./literals.md#adjustmenttypetype) 
 ## SimplifiedApplicationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SimplifiedApplicationTypeDef
+
+def get_value() -> SimplifiedApplicationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="spotprovisioningspecificationtypedef"></a>
+```python title="Definition"
+class SimplifiedApplicationTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## SpotProvisioningSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SpotProvisioningSpecificationTypeDef
+
+def get_value() -> SpotProvisioningSpecificationTypeDef:
+    return {
+        "TimeoutDurationMinutes": ...,
+        "TimeoutAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SpotProvisioningSpecificationTypeDef(TypedDict):
+    TimeoutDurationMinutes: int,
+    TimeoutAction: SpotProvisioningTimeoutActionType,  # (1)
+    BlockDurationMinutes: NotRequired[int],
+    AllocationStrategy: NotRequired[SpotProvisioningAllocationStrategyType],  # (2)
+```
 
-- `TimeoutDurationMinutes`: `int`
-- `TimeoutAction`:
-  [SpotProvisioningTimeoutActionType](./literals.md#spotprovisioningtimeoutactiontype)
-
-Optional fields:
-
-- `BlockDurationMinutes`: `int`
-- `AllocationStrategy`: `Literal['capacity-optimized']` (see
-  [SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype))
-
-<a id="startnotebookexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: SpotProvisioningTimeoutActionType](./literals.md#spotprovisioningtimeoutactiontype) 
+2. See [:material-code-brackets: SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype) 
 ## StartNotebookExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StartNotebookExecutionInputRequestTypeDef
+
+def get_value() -> StartNotebookExecutionInputRequestTypeDef:
+    return {
+        "EditorId": ...,
+        "RelativePath": ...,
+        "ExecutionEngine": ...,
+        "ServiceRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartNotebookExecutionInputRequestTypeDef(TypedDict):
+    EditorId: str,
+    RelativePath: str,
+    ExecutionEngine: ExecutionEngineConfigTypeDef,  # (1)
+    ServiceRole: str,
+    NotebookExecutionName: NotRequired[str],
+    NotebookParams: NotRequired[str],
+    NotebookInstanceSecurityGroupId: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `EditorId`: `str`
-- `RelativePath`: `str`
-- `ExecutionEngine`:
-  [ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef)
-- `ServiceRole`: `str`
-
-Optional fields:
-
-- `NotebookExecutionName`: `str`
-- `NotebookParams`: `str`
-- `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="startnotebookexecutionoutputtypedef"></a>
-
+1. See [:material-code-braces: ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartNotebookExecutionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StartNotebookExecutionOutputTypeDef
+
+def get_value() -> StartNotebookExecutionOutputTypeDef:
+    return {
+        "NotebookExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartNotebookExecutionOutputTypeDef(TypedDict):
+    NotebookExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NotebookExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stepconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StepConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepConfigTypeDef
+
+def get_value() -> StepConfigTypeDef:
+    return {
+        "Name": ...,
+        "HadoopJarStep": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StepConfigTypeDef(TypedDict):
+    Name: str,
+    HadoopJarStep: HadoopJarStepConfigTypeDef,  # (2)
+    ActionOnFailure: NotRequired[ActionOnFailureType],  # (1)
+```
 
-- `Name`: `str`
-- `HadoopJarStep`:
-  [HadoopJarStepConfigTypeDef](./type_defs.md#hadoopjarstepconfigtypedef)
-
-Optional fields:
-
-- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
-
-<a id="stepdetailtypedef"></a>
-
+1. See [:material-code-brackets: ActionOnFailureType](./literals.md#actiononfailuretype) 
+2. See [:material-code-braces: HadoopJarStepConfigTypeDef](./type_defs.md#hadoopjarstepconfigtypedef) 
 ## StepDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepDetailTypeDef
+
+def get_value() -> StepDetailTypeDef:
+    return {
+        "StepConfig": ...,
+        "ExecutionStatusDetail": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StepDetailTypeDef(TypedDict):
+    StepConfig: StepConfigTypeDef,  # (1)
+    ExecutionStatusDetail: StepExecutionStatusDetailTypeDef,  # (2)
+```
 
-- `StepConfig`: [StepConfigTypeDef](./type_defs.md#stepconfigtypedef)
-- `ExecutionStatusDetail`:
-  [StepExecutionStatusDetailTypeDef](./type_defs.md#stepexecutionstatusdetailtypedef)
-
-<a id="stepexecutionstatusdetailtypedef"></a>
-
+1. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
+2. See [:material-code-braces: StepExecutionStatusDetailTypeDef](./type_defs.md#stepexecutionstatusdetailtypedef) 
 ## StepExecutionStatusDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepExecutionStatusDetailTypeDef
+
+def get_value() -> StepExecutionStatusDetailTypeDef:
+    return {
+        "State": ...,
+        "CreationDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StepExecutionStatusDetailTypeDef(TypedDict):
+    State: StepExecutionStateType,  # (1)
+    CreationDateTime: datetime,
+    StartDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+    LastStateChangeReason: NotRequired[str],
+```
 
-- `State`: [StepExecutionStateType](./literals.md#stepexecutionstatetype)
-- `CreationDateTime`: `datetime`
-
-Optional fields:
-
-- `StartDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-- `LastStateChangeReason`: `str`
-
-<a id="stepstatechangereasontypedef"></a>
-
+1. See [:material-code-brackets: StepExecutionStateType](./literals.md#stepexecutionstatetype) 
 ## StepStateChangeReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepStateChangeReasonTypeDef
+
+def get_value() -> StepStateChangeReasonTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepStateChangeReasonTypeDef(TypedDict):
+    Code: NotRequired[StepStateChangeReasonCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`: `Literal['NONE']` (see
-  [StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype))
-- `Message`: `str`
-
-<a id="stepstatustypedef"></a>
-
+1. See [:material-code-brackets: StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype) 
 ## StepStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepStatusTypeDef
+
+def get_value() -> StepStatusTypeDef:
+    return {
+        "State": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepStatusTypeDef(TypedDict):
+    State: NotRequired[StepStateType],  # (1)
+    StateChangeReason: NotRequired[StepStateChangeReasonTypeDef],  # (2)
+    FailureDetails: NotRequired[FailureDetailsTypeDef],  # (3)
+    Timeline: NotRequired[StepTimelineTypeDef],  # (4)
+```
 
-- `State`: [StepStateType](./literals.md#stepstatetype)
-- `StateChangeReason`:
-  [StepStateChangeReasonTypeDef](./type_defs.md#stepstatechangereasontypedef)
-- `FailureDetails`:
-  [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
-- `Timeline`: [StepTimelineTypeDef](./type_defs.md#steptimelinetypedef)
-
-<a id="stepsummarytypedef"></a>
-
+1. See [:material-code-brackets: StepStateType](./literals.md#stepstatetype) 
+2. See [:material-code-braces: StepStateChangeReasonTypeDef](./type_defs.md#stepstatechangereasontypedef) 
+3. See [:material-code-braces: FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef) 
+4. See [:material-code-braces: StepTimelineTypeDef](./type_defs.md#steptimelinetypedef) 
 ## StepSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepSummaryTypeDef
+
+def get_value() -> StepSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Config: NotRequired[HadoopStepConfigTypeDef],  # (1)
+    ActionOnFailure: NotRequired[ActionOnFailureType],  # (2)
+    Status: NotRequired[StepStatusTypeDef],  # (3)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Config`: [HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef)
-- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
-- `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
-
-<a id="steptimelinetypedef"></a>
-
+1. See [:material-code-braces: HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef) 
+2. See [:material-code-brackets: ActionOnFailureType](./literals.md#actiononfailuretype) 
+3. See [:material-code-braces: StepStatusTypeDef](./type_defs.md#stepstatustypedef) 
 ## StepTimelineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepTimelineTypeDef
+
+def get_value() -> StepTimelineTypeDef:
+    return {
+        "CreationDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `CreationDateTime`: `datetime`
-- `StartDateTime`: `datetime`
-- `EndDateTime`: `datetime`
-
-<a id="steptypedef"></a>
+```python title="Definition"
+class StepTimelineTypeDef(TypedDict):
+    CreationDateTime: NotRequired[datetime],
+    StartDateTime: NotRequired[datetime],
+    EndDateTime: NotRequired[datetime],
+```
 
 ## StepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StepTypeDef
+
+def get_value() -> StepTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StepTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Config: NotRequired[HadoopStepConfigTypeDef],  # (1)
+    ActionOnFailure: NotRequired[ActionOnFailureType],  # (2)
+    Status: NotRequired[StepStatusTypeDef],  # (3)
+```
 
-- `Id`: `str`
-- `Name`: `str`
-- `Config`: [HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef)
-- `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
-- `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
-
-<a id="stopnotebookexecutioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: HadoopStepConfigTypeDef](./type_defs.md#hadoopstepconfigtypedef) 
+2. See [:material-code-brackets: ActionOnFailureType](./literals.md#actiononfailuretype) 
+3. See [:material-code-braces: StepStatusTypeDef](./type_defs.md#stepstatustypedef) 
 ## StopNotebookExecutionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StopNotebookExecutionInputRequestTypeDef
+
+def get_value() -> StopNotebookExecutionInputRequestTypeDef:
+    return {
+        "NotebookExecutionId": ...,
+    }
 ```
 
-Required fields:
-
-- `NotebookExecutionId`: `str`
-
-<a id="studiosummarytypedef"></a>
+```python title="Definition"
+class StopNotebookExecutionInputRequestTypeDef(TypedDict):
+    NotebookExecutionId: str,
+```
 
 ## StudioSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StudioSummaryTypeDef
+
+def get_value() -> StudioSummaryTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StudioSummaryTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    Name: NotRequired[str],
+    VpcId: NotRequired[str],
+    Description: NotRequired[str],
+    Url: NotRequired[str],
+    AuthMode: NotRequired[AuthModeType],  # (1)
+    CreationTime: NotRequired[datetime],
+```
 
-- `StudioId`: `str`
-- `Name`: `str`
-- `VpcId`: `str`
-- `Description`: `str`
-- `Url`: `str`
-- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `CreationTime`: `datetime`
-
-<a id="studiotypedef"></a>
-
+1. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
 ## StudioTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import StudioTypeDef
+
+def get_value() -> StudioTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StudioTypeDef(TypedDict):
+    StudioId: NotRequired[str],
+    StudioArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    AuthMode: NotRequired[AuthModeType],  # (1)
+    VpcId: NotRequired[str],
+    SubnetIds: NotRequired[List[str]],
+    ServiceRole: NotRequired[str],
+    UserRole: NotRequired[str],
+    WorkspaceSecurityGroupId: NotRequired[str],
+    EngineSecurityGroupId: NotRequired[str],
+    Url: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    DefaultS3Location: NotRequired[str],
+    IdpAuthUrl: NotRequired[str],
+    IdpRelayStateParameterName: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `StudioId`: `str`
-- `StudioArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `AuthMode`: [AuthModeType](./literals.md#authmodetype)
-- `VpcId`: `str`
-- `SubnetIds`: `List`\[`str`\]
-- `ServiceRole`: `str`
-- `UserRole`: `str`
-- `WorkspaceSecurityGroupId`: `str`
-- `EngineSecurityGroupId`: `str`
-- `Url`: `str`
-- `CreationTime`: `datetime`
-- `DefaultS3Location`: `str`
-- `IdpAuthUrl`: `str`
-- `IdpRelayStateParameterName`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="supportedproductconfigtypedef"></a>
-
+1. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## SupportedProductConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import SupportedProductConfigTypeDef
+
+def get_value() -> SupportedProductConfigTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Args`: `Sequence`\[`str`\]
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class SupportedProductConfigTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Args: NotRequired[Sequence[str]],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="terminatejobflowsinputrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TerminateJobFlowsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import TerminateJobFlowsInputRequestTypeDef
+
+def get_value() -> TerminateJobFlowsInputRequestTypeDef:
+    return {
+        "JobFlowIds": ...,
+    }
 ```
 
-Required fields:
-
-- `JobFlowIds`: `Sequence`\[`str`\]
-
-<a id="updatestudioinputrequesttypedef"></a>
+```python title="Definition"
+class TerminateJobFlowsInputRequestTypeDef(TypedDict):
+    JobFlowIds: Sequence[str],
+```
 
 ## UpdateStudioInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import UpdateStudioInputRequestTypeDef
+
+def get_value() -> UpdateStudioInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+    }
 ```
 
-Required fields:
-
-- `StudioId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-- `DefaultS3Location`: `str`
-
-<a id="updatestudiosessionmappinginputrequesttypedef"></a>
+```python title="Definition"
+class UpdateStudioInputRequestTypeDef(TypedDict):
+    StudioId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    SubnetIds: NotRequired[Sequence[str]],
+    DefaultS3Location: NotRequired[str],
+```
 
 ## UpdateStudioSessionMappingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import UpdateStudioSessionMappingInputRequestTypeDef
+
+def get_value() -> UpdateStudioSessionMappingInputRequestTypeDef:
+    return {
+        "StudioId": ...,
+        "IdentityType": ...,
+        "SessionPolicyArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateStudioSessionMappingInputRequestTypeDef(TypedDict):
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    SessionPolicyArn: str,
+    IdentityId: NotRequired[str],
+    IdentityName: NotRequired[str],
+```
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `SessionPolicyArn`: `str`
-
-Optional fields:
-
-- `IdentityId`: `str`
-- `IdentityName`: `str`
-
-<a id="volumespecificationtypedef"></a>
-
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 ## VolumeSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import VolumeSpecificationTypeDef
+
+def get_value() -> VolumeSpecificationTypeDef:
+    return {
+        "VolumeType": ...,
+        "SizeInGB": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeType`: `str`
-- `SizeInGB`: `int`
-
-Optional fields:
-
-- `Iops`: `int`
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VolumeSpecificationTypeDef(TypedDict):
+    VolumeType: str,
+    SizeInGB: int,
+    Iops: NotRequired[int],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_emr.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

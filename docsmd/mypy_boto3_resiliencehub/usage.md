@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-resiliencehub-module"></a>
-
-# Examples for boto3 ResilienceHub module
+# Examples
 
 > [Index](../README.md) > [ResilienceHub](./README.md) > Examples
 
-- [Examples for boto3 ResilienceHub module](#examples-for-boto3-resiliencehub-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
+    type annotations stubs module [mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[resiliencehub]` package installed.
 
-Write your `ResilienceHub` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ResilienceHub` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ResilienceHubClient
-# and provides type checking and code completion
-client = session.client("resiliencehub")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AddDraftAppVersionResourceMappingsResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_draft_app_version_resource_mappings()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("resiliencehub")  # (1)
+    result = client.add_draft_app_version_resource_mappings()  # (2)
+    ```
+
+    1. client: [ResilienceHubClient](./client.md)
+    2. result: [:material-code-braces: AddDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#adddraftappversionresourcemappingsresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[resiliencehub]` or a standalone
-`mypy_boto3_resiliencehub` package, you have to explicitly specify
-`client: ResilienceHubClient` type annotation.
+With `boto3-stubs-lite[resiliencehub]`
+or a standalone `mypy_boto3_resiliencehub` package, you have to explicitly specify `client: ResilienceHubClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_resiliencehub.client import ResilienceHubClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_resiliencehub.client import ResilienceHubClient
+    from mypy_boto3_resiliencehub.type_defs import AddDraftAppVersionResourceMappingsResponseTypeDef
+    from mypy_boto3_resiliencehub.type_defs import AddDraftAppVersionResourceMappingsRequestRequestTypeDef
 
 
-from mypy_boto3_resiliencehub.type_defs import AddDraftAppVersionResourceMappingsResponseTypeDef
+    session = Session()
+
+    client: ResilienceHubClient = session.client("resiliencehub")
+
+    kwargs: AddDraftAppVersionResourceMappingsRequestRequestTypeDef = {...}
+    result: AddDraftAppVersionResourceMappingsResponseTypeDef = client.add_draft_app_version_resource_mappings(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ResilienceHubClient = session.client("resiliencehub")
 
-result: AddDraftAppVersionResourceMappingsResponseTypeDef = client.add_draft_app_version_resource_mappings()
-```
+

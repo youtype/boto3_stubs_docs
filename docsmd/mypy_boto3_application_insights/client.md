@@ -1,59 +1,18 @@
-<a id="applicationinsightsclient-for-boto3-applicationinsights-module"></a>
+# ApplicationInsightsClient
 
-# ApplicationInsightsClient for boto3 ApplicationInsights module
+> [Index](../README.md) > [ApplicationInsights](./README.md) > ApplicationInsightsClient
 
-> [Index](../README.md) > [ApplicationInsights](./README.md) >
-> ApplicationInsightsClient
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
-type annotations stubs module
-[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
-
-- [ApplicationInsightsClient for boto3 ApplicationInsights module](#applicationinsightsclient-for-boto3-applicationinsights-module)
-  - [ApplicationInsightsClient](#applicationinsightsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_application](#create_application)
-    - [create_component](#create_component)
-    - [create_log_pattern](#create_log_pattern)
-    - [delete_application](#delete_application)
-    - [delete_component](#delete_component)
-    - [delete_log_pattern](#delete_log_pattern)
-    - [describe_application](#describe_application)
-    - [describe_component](#describe_component)
-    - [describe_component_configuration](#describe_component_configuration)
-    - [describe_component_configuration_recommendation](#describe_component_configuration_recommendation)
-    - [describe_log_pattern](#describe_log_pattern)
-    - [describe_observation](#describe_observation)
-    - [describe_problem](#describe_problem)
-    - [describe_problem_observations](#describe_problem_observations)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_applications](#list_applications)
-    - [list_components](#list_components)
-    - [list_configuration_history](#list_configuration_history)
-    - [list_log_pattern_sets](#list_log_pattern_sets)
-    - [list_log_patterns](#list_log_patterns)
-    - [list_problems](#list_problems)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_application](#update_application)
-    - [update_component](#update_component)
-    - [update_component_configuration](#update_component_configuration)
-    - [update_log_pattern](#update_log_pattern)
-
-<a id="applicationinsightsclient"></a>
+    Auto-generated documentation for [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
+    type annotations stubs module [mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 ## ApplicationInsightsClient
 
-Type annotations for `boto3.client("application-insights")`
+Type annotations and code completion for `#!python boto3.client("application-insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_application_insights.client import ApplicationInsightsClient
 
@@ -61,737 +20,940 @@ def get_application-insights_client() -> ApplicationInsightsClient:
     return Session().client("application-insights")
 ```
 
-Boto3 documentation:
-[ApplicationInsights.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("application-insights").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("application-insights")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.TagsAlreadyExistException,
+    client.TooManyTagsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_application_insights.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TagsAlreadyExistException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ApplicationInsightsClient exceptions.
-
-Type annotations for `boto3.client("application-insights").exceptions` method.
-
-Boto3 documentation:
-[ApplicationInsights.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("application-insights").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate)
 
-Boto3 documentation:
-[ApplicationInsights.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_application"></a>
-
-### create_application
+### create\_application
 
 Adds an application that is created from a resource group.
 
-Type annotations for `boto3.client("application-insights").create_application`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
 
-Boto3 documentation:
-[ApplicationInsights.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    ResourceGroupName: str = ...,
+    OpsCenterEnabled: bool = ...,
+    CWEMonitorEnabled: bool = ...,
+    OpsItemSNSTopicArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    AutoConfigEnabled: bool = ...,
+    AutoCreate: bool = ...,
+) -> CreateApplicationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str`
-- `OpsCenterEnabled`: `bool`
-- `CWEMonitorEnabled`: `bool`
-- `OpsItemSNSTopicArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AutoConfigEnabled`: `bool`
-- `AutoCreate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
+parent.create_application(**kwargs)
+```
 
-<a id="create\_component"></a>
+1. See [:material-code-braces: CreateApplicationRequestRequestTypeDef](./type_defs.md#createapplicationrequestrequesttypedef) 
 
-### create_component
+### create\_component
 
 Creates a custom component by grouping similar standalone instances to monitor.
 
-Type annotations for `boto3.client("application-insights").create_component`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").create_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
 
-Boto3 documentation:
-[ApplicationInsights.Client.create_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_component)
+```python title="Method definition"
+def create_component(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+    ResourceList: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateComponentRequestRequestTypeDef](./type_defs.md#createcomponentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
-- `ResourceList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateComponentRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+    "ResourceList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_component(**kwargs)
+```
 
-<a id="create\_log\_pattern"></a>
+1. See [:material-code-braces: CreateComponentRequestRequestTypeDef](./type_defs.md#createcomponentrequestrequesttypedef) 
 
-### create_log_pattern
+### create\_log\_pattern
 
 Adds an log pattern to a `LogPatternSet` .
 
-Type annotations for `boto3.client("application-insights").create_log_pattern`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").create_log_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
 
-Boto3 documentation:
-[ApplicationInsights.Client.create_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.create_log_pattern)
+```python title="Method definition"
+def create_log_pattern(
+    self,
+    *,
+    ResourceGroupName: str,
+    PatternSetName: str,
+    PatternName: str,
+    Pattern: str,
+    Rank: int,
+) -> CreateLogPatternResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateLogPatternRequestRequestTypeDef](./type_defs.md#createlogpatternrequestrequesttypedef).
+1. See [:material-code-braces: CreateLogPatternResponseTypeDef](./type_defs.md#createlogpatternresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `PatternSetName`: `str` *(required)*
-- `PatternName`: `str` *(required)*
-- `Pattern`: `str` *(required)*
-- `Rank`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLogPatternRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "PatternSetName": ...,
+    "PatternName": ...,
+    "Pattern": ...,
+    "Rank": ...,
+}
 
-Returns
-[CreateLogPatternResponseTypeDef](./type_defs.md#createlogpatternresponsetypedef).
+parent.create_log_pattern(**kwargs)
+```
 
-<a id="delete\_application"></a>
+1. See [:material-code-braces: CreateLogPatternRequestRequestTypeDef](./type_defs.md#createlogpatternrequestrequesttypedef) 
 
-### delete_application
+### delete\_application
 
 Removes the specified application from monitoring.
 
-Type annotations for `boto3.client("application-insights").delete_application`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
 
-Boto3 documentation:
-[ApplicationInsights.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_application)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    ResourceGroupName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_application(**kwargs)
+```
 
-<a id="delete\_component"></a>
+1. See [:material-code-braces: DeleteApplicationRequestRequestTypeDef](./type_defs.md#deleteapplicationrequestrequesttypedef) 
 
-### delete_component
+### delete\_component
 
 Ungroups a custom component.
 
-Type annotations for `boto3.client("application-insights").delete_component`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").delete_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
 
-Boto3 documentation:
-[ApplicationInsights.Client.delete_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_component)
+```python title="Method definition"
+def delete_component(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteComponentRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_component(**kwargs)
+```
 
-<a id="delete\_log\_pattern"></a>
+1. See [:material-code-braces: DeleteComponentRequestRequestTypeDef](./type_defs.md#deletecomponentrequestrequesttypedef) 
 
-### delete_log_pattern
+### delete\_log\_pattern
 
 Removes the specified log pattern from a `LogPatternSet` .
 
-Type annotations for `boto3.client("application-insights").delete_log_pattern`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").delete_log_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
 
-Boto3 documentation:
-[ApplicationInsights.Client.delete_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.delete_log_pattern)
+```python title="Method definition"
+def delete_log_pattern(
+    self,
+    *,
+    ResourceGroupName: str,
+    PatternSetName: str,
+    PatternName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLogPatternRequestRequestTypeDef](./type_defs.md#deletelogpatternrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `PatternSetName`: `str` *(required)*
-- `PatternName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLogPatternRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "PatternSetName": ...,
+    "PatternName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_log_pattern(**kwargs)
+```
 
-<a id="describe\_application"></a>
+1. See [:material-code-braces: DeleteLogPatternRequestRequestTypeDef](./type_defs.md#deletelogpatternrequestrequesttypedef) 
 
-### describe_application
+### describe\_application
 
 Describes the application.
 
-Type annotations for
-`boto3.client("application-insights").describe_application` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_application)
+```python title="Method definition"
+def describe_application(
+    self,
+    *,
+    ResourceGroupName: str,
+) -> DescribeApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+parent.describe_application(**kwargs)
+```
 
-<a id="describe\_component"></a>
+1. See [:material-code-braces: DescribeApplicationRequestRequestTypeDef](./type_defs.md#describeapplicationrequestrequesttypedef) 
 
-### describe_component
+### describe\_component
 
 Describes a component and lists the resources that are grouped together in a
 component.
 
-Type annotations for `boto3.client("application-insights").describe_component`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component)
+```python title="Method definition"
+def describe_component(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+) -> DescribeComponentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeComponentRequestRequestTypeDef](./type_defs.md#describecomponentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeComponentRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+}
 
-Returns
-[DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
+parent.describe_component(**kwargs)
+```
 
-<a id="describe\_component\_configuration"></a>
+1. See [:material-code-braces: DescribeComponentRequestRequestTypeDef](./type_defs.md#describecomponentrequestrequesttypedef) 
 
-### describe_component_configuration
+### describe\_component\_configuration
 
 Describes the monitoring configuration of the component.
 
-Type annotations for
-`boto3.client("application-insights").describe_component_configuration` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_component_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration)
+```python title="Method definition"
+def describe_component_configuration(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+) -> DescribeComponentConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeComponentConfigurationRequestRequestTypeDef](./type_defs.md#describecomponentconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeComponentConfigurationResponseTypeDef](./type_defs.md#describecomponentconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeComponentConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+}
 
-Returns
-[DescribeComponentConfigurationResponseTypeDef](./type_defs.md#describecomponentconfigurationresponsetypedef).
+parent.describe_component_configuration(**kwargs)
+```
 
-<a id="describe\_component\_configuration\_recommendation"></a>
+1. See [:material-code-braces: DescribeComponentConfigurationRequestRequestTypeDef](./type_defs.md#describecomponentconfigurationrequestrequesttypedef) 
 
-### describe_component_configuration_recommendation
+### describe\_component\_configuration\_recommendation
 
 Describes the recommended monitoring configuration of the component.
 
-Type annotations for
-`boto3.client("application-insights").describe_component_configuration_recommendation`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_component_configuration_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_component_configuration_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_component_configuration_recommendation)
+```python title="Method definition"
+def describe_component_configuration_recommendation(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+    Tier: TierType,  # (1)
+) -> DescribeComponentConfigurationRecommendationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeComponentConfigurationRecommendationRequestRequestTypeDef](./type_defs.md#describecomponentconfigurationrecommendationrequestrequesttypedef).
+1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
+2. See [:material-code-braces: DescribeComponentConfigurationRecommendationResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
-- `Tier`: [TierType](./literals.md#tiertype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeComponentConfigurationRecommendationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+    "Tier": ...,
+}
 
-Returns
-[DescribeComponentConfigurationRecommendationResponseTypeDef](./type_defs.md#describecomponentconfigurationrecommendationresponsetypedef).
+parent.describe_component_configuration_recommendation(**kwargs)
+```
 
-<a id="describe\_log\_pattern"></a>
+1. See [:material-code-braces: DescribeComponentConfigurationRecommendationRequestRequestTypeDef](./type_defs.md#describecomponentconfigurationrecommendationrequestrequesttypedef) 
 
-### describe_log_pattern
+### describe\_log\_pattern
 
 Describe a specific log pattern from a `LogPatternSet` .
 
-Type annotations for
-`boto3.client("application-insights").describe_log_pattern` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_log_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_log_pattern)
+```python title="Method definition"
+def describe_log_pattern(
+    self,
+    *,
+    ResourceGroupName: str,
+    PatternSetName: str,
+    PatternName: str,
+) -> DescribeLogPatternResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLogPatternRequestRequestTypeDef](./type_defs.md#describelogpatternrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLogPatternResponseTypeDef](./type_defs.md#describelogpatternresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `PatternSetName`: `str` *(required)*
-- `PatternName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLogPatternRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "PatternSetName": ...,
+    "PatternName": ...,
+}
 
-Returns
-[DescribeLogPatternResponseTypeDef](./type_defs.md#describelogpatternresponsetypedef).
+parent.describe_log_pattern(**kwargs)
+```
 
-<a id="describe\_observation"></a>
+1. See [:material-code-braces: DescribeLogPatternRequestRequestTypeDef](./type_defs.md#describelogpatternrequestrequesttypedef) 
 
-### describe_observation
+### describe\_observation
 
 Describes an anomaly or error with the application.
 
-Type annotations for
-`boto3.client("application-insights").describe_observation` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_observation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_observation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_observation)
+```python title="Method definition"
+def describe_observation(
+    self,
+    *,
+    ObservationId: str,
+) -> DescribeObservationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeObservationRequestRequestTypeDef](./type_defs.md#describeobservationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeObservationResponseTypeDef](./type_defs.md#describeobservationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ObservationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeObservationRequestRequestTypeDef = {  # (1)
+    "ObservationId": ...,
+}
 
-Returns
-[DescribeObservationResponseTypeDef](./type_defs.md#describeobservationresponsetypedef).
+parent.describe_observation(**kwargs)
+```
 
-<a id="describe\_problem"></a>
+1. See [:material-code-braces: DescribeObservationRequestRequestTypeDef](./type_defs.md#describeobservationrequestrequesttypedef) 
 
-### describe_problem
+### describe\_problem
 
 Describes an application problem.
 
-Type annotations for `boto3.client("application-insights").describe_problem`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_problem` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_problem](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem)
+```python title="Method definition"
+def describe_problem(
+    self,
+    *,
+    ProblemId: str,
+) -> DescribeProblemResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProblemRequestRequestTypeDef](./type_defs.md#describeproblemrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProblemResponseTypeDef](./type_defs.md#describeproblemresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProblemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProblemRequestRequestTypeDef = {  # (1)
+    "ProblemId": ...,
+}
 
-Returns
-[DescribeProblemResponseTypeDef](./type_defs.md#describeproblemresponsetypedef).
+parent.describe_problem(**kwargs)
+```
 
-<a id="describe\_problem\_observations"></a>
+1. See [:material-code-braces: DescribeProblemRequestRequestTypeDef](./type_defs.md#describeproblemrequestrequesttypedef) 
 
-### describe_problem_observations
+### describe\_problem\_observations
 
 Describes the anomalies or errors associated with the problem.
 
-Type annotations for
-`boto3.client("application-insights").describe_problem_observations` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").describe_problem_observations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
 
-Boto3 documentation:
-[ApplicationInsights.Client.describe_problem_observations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.describe_problem_observations)
+```python title="Method definition"
+def describe_problem_observations(
+    self,
+    *,
+    ProblemId: str,
+) -> DescribeProblemObservationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProblemObservationsRequestRequestTypeDef](./type_defs.md#describeproblemobservationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProblemObservationsResponseTypeDef](./type_defs.md#describeproblemobservationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProblemId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProblemObservationsRequestRequestTypeDef = {  # (1)
+    "ProblemId": ...,
+}
 
-Returns
-[DescribeProblemObservationsResponseTypeDef](./type_defs.md#describeproblemobservationsresponsetypedef).
+parent.describe_problem_observations(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeProblemObservationsRequestRequestTypeDef](./type_defs.md#describeproblemobservationsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("application-insights").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ApplicationInsights.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_applications"></a>
-
-### list_applications
+### list\_applications
 
 Lists the IDs of the applications that you are monitoring.
 
-Type annotations for `boto3.client("application-insights").list_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_applications)
+```python title="Method definition"
+def list_applications(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListApplicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+parent.list_applications(**kwargs)
+```
 
-<a id="list\_components"></a>
+1. See [:material-code-braces: ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef) 
 
-### list_components
+### list\_components
 
 Lists the auto-grouped, standalone, and custom components of the application.
 
-Type annotations for `boto3.client("application-insights").list_components`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_components` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_components](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_components)
+```python title="Method definition"
+def list_components(
+    self,
+    *,
+    ResourceGroupName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListComponentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef).
+1. See [:material-code-braces: ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentsRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
+parent.list_components(**kwargs)
+```
 
-<a id="list\_configuration\_history"></a>
+1. See [:material-code-braces: ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef) 
 
-### list_configuration_history
+### list\_configuration\_history
 
 Lists the INFO, WARN, and ERROR events for periodic configuration updates
 performed by Application Insights.
 
-Type annotations for
-`boto3.client("application-insights").list_configuration_history` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_configuration_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_configuration_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_configuration_history)
+```python title="Method definition"
+def list_configuration_history(
+    self,
+    *,
+    ResourceGroupName: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    EventStatus: ConfigurationEventStatusType = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConfigurationHistoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationHistoryRequestRequestTypeDef](./type_defs.md#listconfigurationhistoryrequestrequesttypedef).
+1. See [:material-code-brackets: ConfigurationEventStatusType](./literals.md#configurationeventstatustype) 
+2. See [:material-code-braces: ListConfigurationHistoryResponseTypeDef](./type_defs.md#listconfigurationhistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `EventStatus`:
-  [ConfigurationEventStatusType](./literals.md#configurationeventstatustype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationHistoryRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[ListConfigurationHistoryResponseTypeDef](./type_defs.md#listconfigurationhistoryresponsetypedef).
+parent.list_configuration_history(**kwargs)
+```
 
-<a id="list\_log\_pattern\_sets"></a>
+1. See [:material-code-braces: ListConfigurationHistoryRequestRequestTypeDef](./type_defs.md#listconfigurationhistoryrequestrequesttypedef) 
 
-### list_log_pattern_sets
+### list\_log\_pattern\_sets
 
 Lists the log pattern sets in the specific application.
 
-Type annotations for
-`boto3.client("application-insights").list_log_pattern_sets` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_log_pattern_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_log_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_pattern_sets)
+```python title="Method definition"
+def list_log_pattern_sets(
+    self,
+    *,
+    ResourceGroupName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLogPatternSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLogPatternSetsRequestRequestTypeDef](./type_defs.md#listlogpatternsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListLogPatternSetsResponseTypeDef](./type_defs.md#listlogpatternsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLogPatternSetsRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[ListLogPatternSetsResponseTypeDef](./type_defs.md#listlogpatternsetsresponsetypedef).
+parent.list_log_pattern_sets(**kwargs)
+```
 
-<a id="list\_log\_patterns"></a>
+1. See [:material-code-braces: ListLogPatternSetsRequestRequestTypeDef](./type_defs.md#listlogpatternsetsrequestrequesttypedef) 
 
-### list_log_patterns
+### list\_log\_patterns
 
 Lists the log patterns in the specific log `LogPatternSet` .
 
-Type annotations for `boto3.client("application-insights").list_log_patterns`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_log_patterns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_log_patterns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_log_patterns)
+```python title="Method definition"
+def list_log_patterns(
+    self,
+    *,
+    ResourceGroupName: str,
+    PatternSetName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLogPatternsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLogPatternsRequestRequestTypeDef](./type_defs.md#listlogpatternsrequestrequesttypedef).
+1. See [:material-code-braces: ListLogPatternsResponseTypeDef](./type_defs.md#listlogpatternsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `PatternSetName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLogPatternsRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[ListLogPatternsResponseTypeDef](./type_defs.md#listlogpatternsresponsetypedef).
+parent.list_log_patterns(**kwargs)
+```
 
-<a id="list\_problems"></a>
+1. See [:material-code-braces: ListLogPatternsRequestRequestTypeDef](./type_defs.md#listlogpatternsrequestrequesttypedef) 
 
-### list_problems
+### list\_problems
 
 Lists the problems with your application.
 
-Type annotations for `boto3.client("application-insights").list_problems`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_problems` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_problems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_problems)
+```python title="Method definition"
+def list_problems(
+    self,
+    *,
+    ResourceGroupName: str = ...,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ComponentName: str = ...,
+) -> ListProblemsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProblemsRequestRequestTypeDef](./type_defs.md#listproblemsrequestrequesttypedef).
+1. See [:material-code-braces: ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ComponentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProblemsRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[ListProblemsResponseTypeDef](./type_defs.md#listproblemsresponsetypedef).
+parent.list_problems(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProblemsRequestRequestTypeDef](./type_defs.md#listproblemsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieve a list of the tags (keys and values) that are associated with a
 specified application.
 
-Type annotations for
-`boto3.client("application-insights").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ApplicationInsights.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add one or more tags (keys and values) to a specified application.
 
-Type annotations for `boto3.client("application-insights").tag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
 
-Boto3 documentation:
-[ApplicationInsights.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove one or more tags (keys and values) from a specified application.
 
-Type annotations for `boto3.client("application-insights").untag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
 
-Boto3 documentation:
-[ApplicationInsights.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_application"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_application
+### update\_application
 
 Updates the application.
 
-Type annotations for `boto3.client("application-insights").update_application`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
 
-Boto3 documentation:
-[ApplicationInsights.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    ResourceGroupName: str,
+    OpsCenterEnabled: bool = ...,
+    CWEMonitorEnabled: bool = ...,
+    OpsItemSNSTopicArn: str = ...,
+    RemoveSNSTopic: bool = ...,
+    AutoConfigEnabled: bool = ...,
+) -> UpdateApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `OpsCenterEnabled`: `bool`
-- `CWEMonitorEnabled`: `bool`
-- `OpsItemSNSTopicArn`: `str`
-- `RemoveSNSTopic`: `bool`
-- `AutoConfigEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+}
 
-Returns
-[UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+parent.update_application(**kwargs)
+```
 
-<a id="update\_component"></a>
+1. See [:material-code-braces: UpdateApplicationRequestRequestTypeDef](./type_defs.md#updateapplicationrequestrequesttypedef) 
 
-### update_component
+### update\_component
 
 Updates the custom component name and/or the list of resources that make up the
 component.
 
-Type annotations for `boto3.client("application-insights").update_component`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").update_component` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
 
-Boto3 documentation:
-[ApplicationInsights.Client.update_component](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component)
+```python title="Method definition"
+def update_component(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+    NewComponentName: str = ...,
+    ResourceList: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateComponentRequestRequestTypeDef](./type_defs.md#updatecomponentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
-- `NewComponentName`: `str`
-- `ResourceList`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateComponentRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_component(**kwargs)
+```
 
-<a id="update\_component\_configuration"></a>
+1. See [:material-code-braces: UpdateComponentRequestRequestTypeDef](./type_defs.md#updatecomponentrequestrequesttypedef) 
 
-### update_component_configuration
+### update\_component\_configuration
 
 Updates the monitoring configurations for the component.
 
-Type annotations for
-`boto3.client("application-insights").update_component_configuration` method.
+Type annotations and code completion for `#!python boto3.client("application-insights").update_component_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
 
-Boto3 documentation:
-[ApplicationInsights.Client.update_component_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_component_configuration)
+```python title="Method definition"
+def update_component_configuration(
+    self,
+    *,
+    ResourceGroupName: str,
+    ComponentName: str,
+    Monitor: bool = ...,
+    Tier: TierType = ...,  # (1)
+    ComponentConfiguration: str = ...,
+    AutoConfigEnabled: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateComponentConfigurationRequestRequestTypeDef](./type_defs.md#updatecomponentconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: TierType](./literals.md#tiertype) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `ComponentName`: `str` *(required)*
-- `Monitor`: `bool`
-- `Tier`: [TierType](./literals.md#tiertype)
-- `ComponentConfiguration`: `str`
-- `AutoConfigEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateComponentConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "ComponentName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_component_configuration(**kwargs)
+```
 
-<a id="update\_log\_pattern"></a>
+1. See [:material-code-braces: UpdateComponentConfigurationRequestRequestTypeDef](./type_defs.md#updatecomponentconfigurationrequestrequesttypedef) 
 
-### update_log_pattern
+### update\_log\_pattern
 
 Adds a log pattern to a `LogPatternSet` .
 
-Type annotations for `boto3.client("application-insights").update_log_pattern`
-method.
+Type annotations and code completion for `#!python boto3.client("application-insights").update_log_pattern` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
 
-Boto3 documentation:
-[ApplicationInsights.Client.update_log_pattern](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights.Client.update_log_pattern)
+```python title="Method definition"
+def update_log_pattern(
+    self,
+    *,
+    ResourceGroupName: str,
+    PatternSetName: str,
+    PatternName: str,
+    Pattern: str = ...,
+    Rank: int = ...,
+) -> UpdateLogPatternResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLogPatternRequestRequestTypeDef](./type_defs.md#updatelogpatternrequestrequesttypedef).
+1. See [:material-code-braces: UpdateLogPatternResponseTypeDef](./type_defs.md#updatelogpatternresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceGroupName`: `str` *(required)*
-- `PatternSetName`: `str` *(required)*
-- `PatternName`: `str` *(required)*
-- `Pattern`: `str`
-- `Rank`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateLogPatternRequestRequestTypeDef = {  # (1)
+    "ResourceGroupName": ...,
+    "PatternSetName": ...,
+    "PatternName": ...,
+}
 
-Returns
-[UpdateLogPatternResponseTypeDef](./type_defs.md#updatelogpatternresponsetypedef).
+parent.update_log_pattern(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLogPatternRequestRequestTypeDef](./type_defs.md#updatelogpatternrequestrequesttypedef) 
+
+
+
+

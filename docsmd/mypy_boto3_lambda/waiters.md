@@ -1,30 +1,18 @@
-<a id="waiters-for-boto3-lambda-module"></a>
-
-# Waiters for boto3 Lambda module
+# Waiters
 
 > [Index](../README.md) > [Lambda](./README.md) > Waiters
 
-Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
-type annotations stubs module
-[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
+!!! note ""
 
-- [Waiters for boto3 Lambda module](#waiters-for-boto3-lambda-module)
-  - [FunctionActiveWaiter](#functionactivewaiter)
-  - [FunctionActiveV2Waiter](#functionactivev2waiter)
-  - [FunctionExistsWaiter](#functionexistswaiter)
-  - [FunctionUpdatedWaiter](#functionupdatedwaiter)
-  - [FunctionUpdatedV2Waiter](#functionupdatedv2waiter)
-
-<a id="functionactivewaiter"></a>
+    Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+    type annotations stubs module [mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 ## FunctionActiveWaiter
 
-Type annotations for `boto3.client("lambda").get_waiter("function_active")`.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("function_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionActiveWaiter
@@ -33,24 +21,40 @@ def get_function_active_waiter() -> FunctionActiveWaiter:
     return Session().client("lambda").get_waiter("function_active")
 ```
 
-Boto3 documentation:
-[Lambda.Waiter.function_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActive)
 
-Arguments for `FunctionActiveWaiter.wait` method:
+### wait
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FunctionActiveWaiter.wait` method.
 
-<a id="functionactivev2waiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionConfigurationRequestFunctionActiveWaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionConfigurationRequestFunctionActiveWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestfunctionactivewaittypedef) 
 ## FunctionActiveV2Waiter
 
-Type annotations for `boto3.client("lambda").get_waiter("function_active_v2")`.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("function_active_v2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActiveV2)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionActiveV2Waiter
@@ -59,24 +63,40 @@ def get_function_active_v2_waiter() -> FunctionActiveV2Waiter:
     return Session().client("lambda").get_waiter("function_active_v2")
 ```
 
-Boto3 documentation:
-[Lambda.Waiter.function_active_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActiveV2)
 
-Arguments for `FunctionActiveV2Waiter.wait` method:
+### wait
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FunctionActiveV2Waiter.wait` method.
 
-<a id="functionexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestFunctionActiveV2WaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionRequestFunctionActiveV2WaitTypeDef](./type_defs.md#getfunctionrequestfunctionactivev2waittypedef) 
 ## FunctionExistsWaiter
 
-Type annotations for `boto3.client("lambda").get_waiter("function_exists")`.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("function_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionExistsWaiter
@@ -85,24 +105,40 @@ def get_function_exists_waiter() -> FunctionExistsWaiter:
     return Session().client("lambda").get_waiter("function_exists")
 ```
 
-Boto3 documentation:
-[Lambda.Waiter.function_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionExists)
 
-Arguments for `FunctionExistsWaiter.wait` method:
+### wait
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FunctionExistsWaiter.wait` method.
 
-<a id="functionupdatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestFunctionExistsWaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionRequestFunctionExistsWaitTypeDef](./type_defs.md#getfunctionrequestfunctionexistswaittypedef) 
 ## FunctionUpdatedWaiter
 
-Type annotations for `boto3.client("lambda").get_waiter("function_updated")`.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("function_updated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionUpdatedWaiter
@@ -111,25 +147,40 @@ def get_function_updated_waiter() -> FunctionUpdatedWaiter:
     return Session().client("lambda").get_waiter("function_updated")
 ```
 
-Boto3 documentation:
-[Lambda.Waiter.function_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdated)
 
-Arguments for `FunctionUpdatedWaiter.wait` method:
+### wait
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FunctionUpdatedWaiter.wait` method.
 
-<a id="functionupdatedv2waiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef](./type_defs.md#getfunctionconfigurationrequestfunctionupdatedwaittypedef) 
 ## FunctionUpdatedV2Waiter
 
-Type annotations for
-`boto3.client("lambda").get_waiter("function_updated_v2")`.
+Type annotations and code completion for `#!python boto3.client("lambda").get_waiter("function_updated_v2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdatedV2)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_lambda.waiter import FunctionUpdatedV2Waiter
@@ -138,11 +189,31 @@ def get_function_updated_v2_waiter() -> FunctionUpdatedV2Waiter:
     return Session().client("lambda").get_waiter("function_updated_v2")
 ```
 
-Boto3 documentation:
-[Lambda.Waiter.function_updated_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdatedV2)
 
-Arguments for `FunctionUpdatedV2Waiter.wait` method:
+### wait
 
-- `FunctionName`: `str` *(required)*
-- `Qualifier`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FunctionUpdatedV2Waiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FunctionName: str,
+    Qualifier: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestFunctionUpdatedV2WaitTypeDef = {  # (1)
+    "FunctionName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetFunctionRequestFunctionUpdatedV2WaitTypeDef](./type_defs.md#getfunctionrequestfunctionupdatedv2waittypedef) 

@@ -1,69 +1,18 @@
-<a id="inspectorclient-for-boto3-inspector-module"></a>
-
-# InspectorClient for boto3 Inspector module
+# InspectorClient
 
 > [Index](../README.md) > [Inspector](./README.md) > InspectorClient
 
-Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module
-[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
+!!! note ""
 
-- [InspectorClient for boto3 Inspector module](#inspectorclient-for-boto3-inspector-module)
-  - [InspectorClient](#inspectorclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_attributes_to_findings](#add_attributes_to_findings)
-    - [can_paginate](#can_paginate)
-    - [create_assessment_target](#create_assessment_target)
-    - [create_assessment_template](#create_assessment_template)
-    - [create_exclusions_preview](#create_exclusions_preview)
-    - [create_resource_group](#create_resource_group)
-    - [delete_assessment_run](#delete_assessment_run)
-    - [delete_assessment_target](#delete_assessment_target)
-    - [delete_assessment_template](#delete_assessment_template)
-    - [describe_assessment_runs](#describe_assessment_runs)
-    - [describe_assessment_targets](#describe_assessment_targets)
-    - [describe_assessment_templates](#describe_assessment_templates)
-    - [describe_cross_account_access_role](#describe_cross_account_access_role)
-    - [describe_exclusions](#describe_exclusions)
-    - [describe_findings](#describe_findings)
-    - [describe_resource_groups](#describe_resource_groups)
-    - [describe_rules_packages](#describe_rules_packages)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_assessment_report](#get_assessment_report)
-    - [get_exclusions_preview](#get_exclusions_preview)
-    - [get_telemetry_metadata](#get_telemetry_metadata)
-    - [list_assessment_run_agents](#list_assessment_run_agents)
-    - [list_assessment_runs](#list_assessment_runs)
-    - [list_assessment_targets](#list_assessment_targets)
-    - [list_assessment_templates](#list_assessment_templates)
-    - [list_event_subscriptions](#list_event_subscriptions)
-    - [list_exclusions](#list_exclusions)
-    - [list_findings](#list_findings)
-    - [list_rules_packages](#list_rules_packages)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [preview_agents](#preview_agents)
-    - [register_cross_account_access_role](#register_cross_account_access_role)
-    - [remove_attributes_from_findings](#remove_attributes_from_findings)
-    - [set_tags_for_resource](#set_tags_for_resource)
-    - [start_assessment_run](#start_assessment_run)
-    - [stop_assessment_run](#stop_assessment_run)
-    - [subscribe_to_event](#subscribe_to_event)
-    - [unsubscribe_from_event](#unsubscribe_from_event)
-    - [update_assessment_target](#update_assessment_target)
-    - [get_paginator](#get_paginator)
-
-<a id="inspectorclient"></a>
+    Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+    type annotations stubs module [mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ## InspectorClient
 
-Type annotations for `boto3.client("inspector")`
+Type annotations and code completion for `#!python boto3.client("inspector")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_inspector.client import InspectorClient
 
@@ -71,960 +20,1251 @@ def get_inspector_client() -> InspectorClient:
     return Session().client("inspector")
 ```
 
-Boto3 documentation:
-[Inspector.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("inspector").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("inspector")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AgentsAlreadyRunningAssessmentException,
+    client.AssessmentRunInProgressException,
+    client.ClientError,
+    client.InternalException,
+    client.InvalidCrossAccountRoleException,
+    client.InvalidInputException,
+    client.LimitExceededException,
+    client.NoSuchEntityException,
+    client.PreviewGenerationInProgressException,
+    client.ServiceTemporarilyUnavailableException,
+    client.UnsupportedFeatureException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_inspector.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AgentsAlreadyRunningAssessmentException`
-- `Exceptions.AssessmentRunInProgressException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidCrossAccountRoleException`
-- `Exceptions.InvalidInputException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NoSuchEntityException`
-- `Exceptions.PreviewGenerationInProgressException`
-- `Exceptions.ServiceTemporarilyUnavailableException`
-- `Exceptions.UnsupportedFeatureException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-InspectorClient exceptions.
-
-Type annotations for `boto3.client("inspector").exceptions` method.
-
-Boto3 documentation:
-[Inspector.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_attributes\_to\_findings"></a>
-
-### add_attributes_to_findings
+### add\_attributes\_to\_findings
 
 Assigns attributes (key and value pairs) to the findings that are specified by
 the ARNs of the findings.
 
-Type annotations for `boto3.client("inspector").add_attributes_to_findings`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").add_attributes_to_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
 
-Boto3 documentation:
-[Inspector.Client.add_attributes_to_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.add_attributes_to_findings)
+```python title="Method definition"
+def add_attributes_to_findings(
+    self,
+    *,
+    findingArns: Sequence[str],
+    attributes: Sequence[AttributeTypeDef],  # (1)
+) -> AddAttributesToFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddAttributesToFindingsRequestRequestTypeDef](./type_defs.md#addattributestofindingsrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: AddAttributesToFindingsResponseTypeDef](./type_defs.md#addattributestofindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingArns`: `Sequence`\[`str`\] *(required)*
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddAttributesToFindingsRequestRequestTypeDef = {  # (1)
+    "findingArns": ...,
+    "attributes": ...,
+}
 
-Returns
-[AddAttributesToFindingsResponseTypeDef](./type_defs.md#addattributestofindingsresponsetypedef).
+parent.add_attributes_to_findings(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddAttributesToFindingsRequestRequestTypeDef](./type_defs.md#addattributestofindingsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("inspector").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("inspector").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate)
 
-Boto3 documentation:
-[Inspector.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_assessment\_target"></a>
-
-### create_assessment_target
+### create\_assessment\_target
 
 Creates a new assessment target using the ARN of the resource group that is
-generated by CreateResourceGroup.
+generated by  CreateResourceGroup.
 
-Type annotations for `boto3.client("inspector").create_assessment_target`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").create_assessment_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
 
-Boto3 documentation:
-[Inspector.Client.create_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_target)
+```python title="Method definition"
+def create_assessment_target(
+    self,
+    *,
+    assessmentTargetName: str,
+    resourceGroupArn: str = ...,
+) -> CreateAssessmentTargetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssessmentTargetRequestRequestTypeDef](./type_defs.md#createassessmenttargetrequestrequesttypedef).
+1. See [:material-code-braces: CreateAssessmentTargetResponseTypeDef](./type_defs.md#createassessmenttargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTargetName`: `str` *(required)*
-- `resourceGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAssessmentTargetRequestRequestTypeDef = {  # (1)
+    "assessmentTargetName": ...,
+}
 
-Returns
-[CreateAssessmentTargetResponseTypeDef](./type_defs.md#createassessmenttargetresponsetypedef).
+parent.create_assessment_target(**kwargs)
+```
 
-<a id="create\_assessment\_template"></a>
+1. See [:material-code-braces: CreateAssessmentTargetRequestRequestTypeDef](./type_defs.md#createassessmenttargetrequestrequesttypedef) 
 
-### create_assessment_template
+### create\_assessment\_template
 
 Creates an assessment template for the assessment target that is specified by
 the ARN of the assessment target.
 
-Type annotations for `boto3.client("inspector").create_assessment_template`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").create_assessment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
 
-Boto3 documentation:
-[Inspector.Client.create_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_assessment_template)
+```python title="Method definition"
+def create_assessment_template(
+    self,
+    *,
+    assessmentTargetArn: str,
+    assessmentTemplateName: str,
+    durationInSeconds: int,
+    rulesPackageArns: Sequence[str],
+    userAttributesForFindings: Sequence[AttributeTypeDef] = ...,  # (1)
+) -> CreateAssessmentTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssessmentTemplateRequestRequestTypeDef](./type_defs.md#createassessmenttemplaterequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTargetArn`: `str` *(required)*
-- `assessmentTemplateName`: `str` *(required)*
-- `durationInSeconds`: `int` *(required)*
-- `rulesPackageArns`: `Sequence`\[`str`\] *(required)*
-- `userAttributesForFindings`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssessmentTemplateRequestRequestTypeDef = {  # (1)
+    "assessmentTargetArn": ...,
+    "assessmentTemplateName": ...,
+    "durationInSeconds": ...,
+    "rulesPackageArns": ...,
+}
 
-Returns
-[CreateAssessmentTemplateResponseTypeDef](./type_defs.md#createassessmenttemplateresponsetypedef).
+parent.create_assessment_template(**kwargs)
+```
 
-<a id="create\_exclusions\_preview"></a>
+1. See [:material-code-braces: CreateAssessmentTemplateRequestRequestTypeDef](./type_defs.md#createassessmenttemplaterequestrequesttypedef) 
 
-### create_exclusions_preview
+### create\_exclusions\_preview
 
 Starts the generation of an exclusions preview for the specified assessment
 template.
 
-Type annotations for `boto3.client("inspector").create_exclusions_preview`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").create_exclusions_preview` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
 
-Boto3 documentation:
-[Inspector.Client.create_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_exclusions_preview)
+```python title="Method definition"
+def create_exclusions_preview(
+    self,
+    *,
+    assessmentTemplateArn: str,
+) -> CreateExclusionsPreviewResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateExclusionsPreviewRequestRequestTypeDef](./type_defs.md#createexclusionspreviewrequestrequesttypedef).
+1. See [:material-code-braces: CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTemplateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateExclusionsPreviewRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArn": ...,
+}
 
-Returns
-[CreateExclusionsPreviewResponseTypeDef](./type_defs.md#createexclusionspreviewresponsetypedef).
+parent.create_exclusions_preview(**kwargs)
+```
 
-<a id="create\_resource\_group"></a>
+1. See [:material-code-braces: CreateExclusionsPreviewRequestRequestTypeDef](./type_defs.md#createexclusionspreviewrequestrequesttypedef) 
 
-### create_resource_group
+### create\_resource\_group
 
 Creates a resource group using the specified set of tags (key and value pairs)
 that are used to select the EC2 instances to be included in an Amazon Inspector
 assessment target.
 
-Type annotations for `boto3.client("inspector").create_resource_group` method.
+Type annotations and code completion for `#!python boto3.client("inspector").create_resource_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
 
-Boto3 documentation:
-[Inspector.Client.create_resource_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.create_resource_group)
+```python title="Method definition"
+def create_resource_group(
+    self,
+    *,
+    resourceGroupTags: Sequence[ResourceGroupTagTypeDef],  # (1)
+) -> CreateResourceGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceGroupRequestRequestTypeDef](./type_defs.md#createresourcegrouprequestrequesttypedef).
+1. See [:material-code-braces: ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef) 
+2. See [:material-code-braces: CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceGroupTags`:
-  `Sequence`\[[ResourceGroupTagTypeDef](./type_defs.md#resourcegrouptagtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateResourceGroupRequestRequestTypeDef = {  # (1)
+    "resourceGroupTags": ...,
+}
 
-Returns
-[CreateResourceGroupResponseTypeDef](./type_defs.md#createresourcegroupresponsetypedef).
+parent.create_resource_group(**kwargs)
+```
 
-<a id="delete\_assessment\_run"></a>
+1. See [:material-code-braces: CreateResourceGroupRequestRequestTypeDef](./type_defs.md#createresourcegrouprequestrequesttypedef) 
 
-### delete_assessment_run
+### delete\_assessment\_run
 
 Deletes the assessment run that is specified by the ARN of the assessment run.
 
-Type annotations for `boto3.client("inspector").delete_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("inspector").delete_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
 
-Boto3 documentation:
-[Inspector.Client.delete_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_run)
+```python title="Method definition"
+def delete_assessment_run(
+    self,
+    *,
+    assessmentRunArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentRunRequestRequestTypeDef](./type_defs.md#deleteassessmentrunrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentRunRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
 
-<a id="delete\_assessment\_target"></a>
+parent.delete_assessment_run(**kwargs)
+```
 
-### delete_assessment_target
+1. See [:material-code-braces: DeleteAssessmentRunRequestRequestTypeDef](./type_defs.md#deleteassessmentrunrequestrequesttypedef) 
+
+### delete\_assessment\_target
 
 Deletes the assessment target that is specified by the ARN of the assessment
 target.
 
-Type annotations for `boto3.client("inspector").delete_assessment_target`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").delete_assessment_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
 
-Boto3 documentation:
-[Inspector.Client.delete_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_target)
+```python title="Method definition"
+def delete_assessment_target(
+    self,
+    *,
+    assessmentTargetArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentTargetRequestRequestTypeDef](./type_defs.md#deleteassessmenttargetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentTargetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentTargetRequestRequestTypeDef = {  # (1)
+    "assessmentTargetArn": ...,
+}
 
-<a id="delete\_assessment\_template"></a>
+parent.delete_assessment_target(**kwargs)
+```
 
-### delete_assessment_template
+1. See [:material-code-braces: DeleteAssessmentTargetRequestRequestTypeDef](./type_defs.md#deleteassessmenttargetrequestrequesttypedef) 
+
+### delete\_assessment\_template
 
 Deletes the assessment template that is specified by the ARN of the assessment
 template.
 
-Type annotations for `boto3.client("inspector").delete_assessment_template`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").delete_assessment_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
 
-Boto3 documentation:
-[Inspector.Client.delete_assessment_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.delete_assessment_template)
+```python title="Method definition"
+def delete_assessment_template(
+    self,
+    *,
+    assessmentTemplateArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssessmentTemplateRequestRequestTypeDef](./type_defs.md#deleteassessmenttemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentTemplateArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssessmentTemplateRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArn": ...,
+}
 
-<a id="describe\_assessment\_runs"></a>
+parent.delete_assessment_template(**kwargs)
+```
 
-### describe_assessment_runs
+1. See [:material-code-braces: DeleteAssessmentTemplateRequestRequestTypeDef](./type_defs.md#deleteassessmenttemplaterequestrequesttypedef) 
+
+### describe\_assessment\_runs
 
 Describes the assessment runs that are specified by the ARNs of the assessment
 runs.
 
-Type annotations for `boto3.client("inspector").describe_assessment_runs`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_assessment_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
 
-Boto3 documentation:
-[Inspector.Client.describe_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_runs)
+```python title="Method definition"
+def describe_assessment_runs(
+    self,
+    *,
+    assessmentRunArns: Sequence[str],
+) -> DescribeAssessmentRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssessmentRunsRequestRequestTypeDef](./type_defs.md#describeassessmentrunsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssessmentRunsRequestRequestTypeDef = {  # (1)
+    "assessmentRunArns": ...,
+}
 
-Returns
-[DescribeAssessmentRunsResponseTypeDef](./type_defs.md#describeassessmentrunsresponsetypedef).
+parent.describe_assessment_runs(**kwargs)
+```
 
-<a id="describe\_assessment\_targets"></a>
+1. See [:material-code-braces: DescribeAssessmentRunsRequestRequestTypeDef](./type_defs.md#describeassessmentrunsrequestrequesttypedef) 
 
-### describe_assessment_targets
+### describe\_assessment\_targets
 
 Describes the assessment targets that are specified by the ARNs of the
 assessment targets.
 
-Type annotations for `boto3.client("inspector").describe_assessment_targets`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_assessment_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
 
-Boto3 documentation:
-[Inspector.Client.describe_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_targets)
+```python title="Method definition"
+def describe_assessment_targets(
+    self,
+    *,
+    assessmentTargetArns: Sequence[str],
+) -> DescribeAssessmentTargetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssessmentTargetsRequestRequestTypeDef](./type_defs.md#describeassessmenttargetsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTargetArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssessmentTargetsRequestRequestTypeDef = {  # (1)
+    "assessmentTargetArns": ...,
+}
 
-Returns
-[DescribeAssessmentTargetsResponseTypeDef](./type_defs.md#describeassessmenttargetsresponsetypedef).
+parent.describe_assessment_targets(**kwargs)
+```
 
-<a id="describe\_assessment\_templates"></a>
+1. See [:material-code-braces: DescribeAssessmentTargetsRequestRequestTypeDef](./type_defs.md#describeassessmenttargetsrequestrequesttypedef) 
 
-### describe_assessment_templates
+### describe\_assessment\_templates
 
 Describes the assessment templates that are specified by the ARNs of the
 assessment templates.
 
-Type annotations for `boto3.client("inspector").describe_assessment_templates`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_assessment_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
 
-Boto3 documentation:
-[Inspector.Client.describe_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_assessment_templates)
+```python title="Method definition"
+def describe_assessment_templates(
+    self,
+    *,
+    assessmentTemplateArns: Sequence[str],
+) -> DescribeAssessmentTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#describeassessmenttemplatesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTemplateArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAssessmentTemplatesRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArns": ...,
+}
 
-Returns
-[DescribeAssessmentTemplatesResponseTypeDef](./type_defs.md#describeassessmenttemplatesresponsetypedef).
+parent.describe_assessment_templates(**kwargs)
+```
 
-<a id="describe\_cross\_account\_access\_role"></a>
+1. See [:material-code-braces: DescribeAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#describeassessmenttemplatesrequestrequesttypedef) 
 
-### describe_cross_account_access_role
+### describe\_cross\_account\_access\_role
 
-Describes the IAM role that enables Amazon Inspector to access your AWS
-account.
+Describes the IAM role that enables Amazon Inspector to access your AWS account.
 
-Type annotations for
-`boto3.client("inspector").describe_cross_account_access_role` method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_cross_account_access_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
 
-Boto3 documentation:
-[Inspector.Client.describe_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_cross_account_access_role)
+```python title="Method definition"
+def describe_cross_account_access_role(
+    self,
+) -> DescribeCrossAccountAccessRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef).
+1. See [:material-code-braces: DescribeCrossAccountAccessRoleResponseTypeDef](./type_defs.md#describecrossaccountaccessroleresponsetypedef) 
 
-<a id="describe\_exclusions"></a>
-
-### describe_exclusions
+### describe\_exclusions
 
 Describes the exclusions that are specified by the exclusions' ARNs.
 
-Type annotations for `boto3.client("inspector").describe_exclusions` method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_exclusions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
 
-Boto3 documentation:
-[Inspector.Client.describe_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_exclusions)
+```python title="Method definition"
+def describe_exclusions(
+    self,
+    *,
+    exclusionArns: Sequence[str],
+    locale: LocaleType = ...,  # (1)
+) -> DescribeExclusionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExclusionsRequestRequestTypeDef](./type_defs.md#describeexclusionsrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exclusionArns`: `Sequence`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+```python title="Usage example with kwargs"
+kwargs: DescribeExclusionsRequestRequestTypeDef = {  # (1)
+    "exclusionArns": ...,
+}
 
-Returns
-[DescribeExclusionsResponseTypeDef](./type_defs.md#describeexclusionsresponsetypedef).
+parent.describe_exclusions(**kwargs)
+```
 
-<a id="describe\_findings"></a>
+1. See [:material-code-braces: DescribeExclusionsRequestRequestTypeDef](./type_defs.md#describeexclusionsrequestrequesttypedef) 
 
-### describe_findings
+### describe\_findings
 
 Describes the findings that are specified by the ARNs of the findings.
 
-Type annotations for `boto3.client("inspector").describe_findings` method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
 
-Boto3 documentation:
-[Inspector.Client.describe_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_findings)
+```python title="Method definition"
+def describe_findings(
+    self,
+    *,
+    findingArns: Sequence[str],
+    locale: LocaleType = ...,  # (1)
+) -> DescribeFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFindingsRequestRequestTypeDef](./type_defs.md#describefindingsrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingArns`: `Sequence`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+```python title="Usage example with kwargs"
+kwargs: DescribeFindingsRequestRequestTypeDef = {  # (1)
+    "findingArns": ...,
+}
 
-Returns
-[DescribeFindingsResponseTypeDef](./type_defs.md#describefindingsresponsetypedef).
+parent.describe_findings(**kwargs)
+```
 
-<a id="describe\_resource\_groups"></a>
+1. See [:material-code-braces: DescribeFindingsRequestRequestTypeDef](./type_defs.md#describefindingsrequestrequesttypedef) 
 
-### describe_resource_groups
+### describe\_resource\_groups
 
 Describes the resource groups that are specified by the ARNs of the resource
 groups.
 
-Type annotations for `boto3.client("inspector").describe_resource_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_resource_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
 
-Boto3 documentation:
-[Inspector.Client.describe_resource_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_resource_groups)
+```python title="Method definition"
+def describe_resource_groups(
+    self,
+    *,
+    resourceGroupArns: Sequence[str],
+) -> DescribeResourceGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourceGroupsRequestRequestTypeDef](./type_defs.md#describeresourcegroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceGroupArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResourceGroupsRequestRequestTypeDef = {  # (1)
+    "resourceGroupArns": ...,
+}
 
-Returns
-[DescribeResourceGroupsResponseTypeDef](./type_defs.md#describeresourcegroupsresponsetypedef).
+parent.describe_resource_groups(**kwargs)
+```
 
-<a id="describe\_rules\_packages"></a>
+1. See [:material-code-braces: DescribeResourceGroupsRequestRequestTypeDef](./type_defs.md#describeresourcegroupsrequestrequesttypedef) 
 
-### describe_rules_packages
+### describe\_rules\_packages
 
 Describes the rules packages that are specified by the ARNs of the rules
 packages.
 
-Type annotations for `boto3.client("inspector").describe_rules_packages`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").describe_rules_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
 
-Boto3 documentation:
-[Inspector.Client.describe_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.describe_rules_packages)
+```python title="Method definition"
+def describe_rules_packages(
+    self,
+    *,
+    rulesPackageArns: Sequence[str],
+    locale: LocaleType = ...,  # (1)
+) -> DescribeRulesPackagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRulesPackagesRequestRequestTypeDef](./type_defs.md#describerulespackagesrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `rulesPackageArns`: `Sequence`\[`str`\] *(required)*
-- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+```python title="Usage example with kwargs"
+kwargs: DescribeRulesPackagesRequestRequestTypeDef = {  # (1)
+    "rulesPackageArns": ...,
+}
 
-Returns
-[DescribeRulesPackagesResponseTypeDef](./type_defs.md#describerulespackagesresponsetypedef).
+parent.describe_rules_packages(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeRulesPackagesRequestRequestTypeDef](./type_defs.md#describerulespackagesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("inspector").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("inspector").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Inspector.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_assessment\_report"></a>
-
-### get_assessment_report
+### get\_assessment\_report
 
 Produces an assessment report that includes detailed and comprehensive results
 of a specified assessment run.
 
-Type annotations for `boto3.client("inspector").get_assessment_report` method.
+Type annotations and code completion for `#!python boto3.client("inspector").get_assessment_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
 
-Boto3 documentation:
-[Inspector.Client.get_assessment_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_assessment_report)
+```python title="Method definition"
+def get_assessment_report(
+    self,
+    *,
+    assessmentRunArn: str,
+    reportFileFormat: ReportFileFormatType,  # (1)
+    reportType: ReportTypeType,  # (2)
+) -> GetAssessmentReportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetAssessmentReportRequestRequestTypeDef](./type_defs.md#getassessmentreportrequestrequesttypedef).
+1. See [:material-code-brackets: ReportFileFormatType](./literals.md#reportfileformattype) 
+2. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+3. See [:material-code-braces: GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
-- `reportFileFormat`:
-  [ReportFileFormatType](./literals.md#reportfileformattype) *(required)*
-- `reportType`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssessmentReportRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+    "reportFileFormat": ...,
+    "reportType": ...,
+}
 
-Returns
-[GetAssessmentReportResponseTypeDef](./type_defs.md#getassessmentreportresponsetypedef).
+parent.get_assessment_report(**kwargs)
+```
 
-<a id="get\_exclusions\_preview"></a>
+1. See [:material-code-braces: GetAssessmentReportRequestRequestTypeDef](./type_defs.md#getassessmentreportrequestrequesttypedef) 
 
-### get_exclusions_preview
+### get\_exclusions\_preview
 
 Retrieves the exclusions preview (a list of ExclusionPreview objects) specified
 by the preview token.
 
-Type annotations for `boto3.client("inspector").get_exclusions_preview` method.
+Type annotations and code completion for `#!python boto3.client("inspector").get_exclusions_preview` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
 
-Boto3 documentation:
-[Inspector.Client.get_exclusions_preview](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_exclusions_preview)
+```python title="Method definition"
+def get_exclusions_preview(
+    self,
+    *,
+    assessmentTemplateArn: str,
+    previewToken: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    locale: LocaleType = ...,  # (1)
+) -> GetExclusionsPreviewResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetExclusionsPreviewRequestRequestTypeDef](./type_defs.md#getexclusionspreviewrequestrequesttypedef).
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTemplateArn`: `str` *(required)*
-- `previewToken`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `locale`: `Literal['EN_US']` (see [LocaleType](./literals.md#localetype))
+```python title="Usage example with kwargs"
+kwargs: GetExclusionsPreviewRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArn": ...,
+    "previewToken": ...,
+}
 
-Returns
-[GetExclusionsPreviewResponseTypeDef](./type_defs.md#getexclusionspreviewresponsetypedef).
+parent.get_exclusions_preview(**kwargs)
+```
 
-<a id="get\_telemetry\_metadata"></a>
+1. See [:material-code-braces: GetExclusionsPreviewRequestRequestTypeDef](./type_defs.md#getexclusionspreviewrequestrequesttypedef) 
 
-### get_telemetry_metadata
+### get\_telemetry\_metadata
 
 Information about the data that is collected for the specified assessment run.
 
-Type annotations for `boto3.client("inspector").get_telemetry_metadata` method.
+Type annotations and code completion for `#!python boto3.client("inspector").get_telemetry_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
 
-Boto3 documentation:
-[Inspector.Client.get_telemetry_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.get_telemetry_metadata)
+```python title="Method definition"
+def get_telemetry_metadata(
+    self,
+    *,
+    assessmentRunArn: str,
+) -> GetTelemetryMetadataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTelemetryMetadataRequestRequestTypeDef](./type_defs.md#gettelemetrymetadatarequestrequesttypedef).
+1. See [:material-code-braces: GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTelemetryMetadataRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
 
-Returns
-[GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef).
+parent.get_telemetry_metadata(**kwargs)
+```
 
-<a id="list\_assessment\_run\_agents"></a>
+1. See [:material-code-braces: GetTelemetryMetadataRequestRequestTypeDef](./type_defs.md#gettelemetrymetadatarequestrequesttypedef) 
 
-### list_assessment_run_agents
+### list\_assessment\_run\_agents
 
 Lists the agents of the assessment runs that are specified by the ARNs of the
 assessment runs.
 
-Type annotations for `boto3.client("inspector").list_assessment_run_agents`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_assessment_run_agents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
 
-Boto3 documentation:
-[Inspector.Client.list_assessment_run_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_run_agents)
+```python title="Method definition"
+def list_assessment_run_agents(
+    self,
+    *,
+    assessmentRunArn: str,
+    filter: AgentFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentRunAgentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentRunAgentsRequestRequestTypeDef](./type_defs.md#listassessmentrunagentsrequestrequesttypedef).
+1. See [:material-code-braces: AgentFilterTypeDef](./type_defs.md#agentfiltertypedef) 
+2. See [:material-code-braces: ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
-- `filter`: [AgentFilterTypeDef](./type_defs.md#agentfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentRunAgentsRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
 
-Returns
-[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef).
+parent.list_assessment_run_agents(**kwargs)
+```
 
-<a id="list\_assessment\_runs"></a>
+1. See [:material-code-braces: ListAssessmentRunAgentsRequestRequestTypeDef](./type_defs.md#listassessmentrunagentsrequestrequesttypedef) 
 
-### list_assessment_runs
+### list\_assessment\_runs
 
 Lists the assessment runs that correspond to the assessment templates that are
 specified by the ARNs of the assessment templates.
 
-Type annotations for `boto3.client("inspector").list_assessment_runs` method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_assessment_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
 
-Boto3 documentation:
-[Inspector.Client.list_assessment_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_runs)
+```python title="Method definition"
+def list_assessment_runs(
+    self,
+    *,
+    assessmentTemplateArns: Sequence[str] = ...,
+    filter: AssessmentRunFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentRunsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentRunsRequestRequestTypeDef](./type_defs.md#listassessmentrunsrequestrequesttypedef).
+1. See [:material-code-braces: AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef) 
+2. See [:material-code-braces: ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTemplateArns`: `Sequence`\[`str`\]
-- `filter`:
-  [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentRunsRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArns": ...,
+}
 
-Returns
-[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef).
+parent.list_assessment_runs(**kwargs)
+```
 
-<a id="list\_assessment\_targets"></a>
+1. See [:material-code-braces: ListAssessmentRunsRequestRequestTypeDef](./type_defs.md#listassessmentrunsrequestrequesttypedef) 
 
-### list_assessment_targets
+### list\_assessment\_targets
 
 Lists the ARNs of the assessment targets within this AWS account.
 
-Type annotations for `boto3.client("inspector").list_assessment_targets`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_assessment_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
 
-Boto3 documentation:
-[Inspector.Client.list_assessment_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_targets)
+```python title="Method definition"
+def list_assessment_targets(
+    self,
+    *,
+    filter: AssessmentTargetFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentTargetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentTargetsRequestRequestTypeDef](./type_defs.md#listassessmenttargetsrequestrequesttypedef).
+1. See [:material-code-braces: AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef) 
+2. See [:material-code-braces: ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filter`:
-  [AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentTargetsRequestRequestTypeDef = {  # (1)
+    "filter": ...,
+}
 
-Returns
-[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef).
+parent.list_assessment_targets(**kwargs)
+```
 
-<a id="list\_assessment\_templates"></a>
+1. See [:material-code-braces: ListAssessmentTargetsRequestRequestTypeDef](./type_defs.md#listassessmenttargetsrequestrequesttypedef) 
 
-### list_assessment_templates
+### list\_assessment\_templates
 
 Lists the assessment templates that correspond to the assessment targets that
 are specified by the ARNs of the assessment targets.
 
-Type annotations for `boto3.client("inspector").list_assessment_templates`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_assessment_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
 
-Boto3 documentation:
-[Inspector.Client.list_assessment_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_assessment_templates)
+```python title="Method definition"
+def list_assessment_templates(
+    self,
+    *,
+    assessmentTargetArns: Sequence[str] = ...,
+    filter: AssessmentTemplateFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAssessmentTemplatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#listassessmenttemplatesrequestrequesttypedef).
+1. See [:material-code-braces: AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef) 
+2. See [:material-code-braces: ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTargetArns`: `Sequence`\[`str`\]
-- `filter`:
-  [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentTemplatesRequestRequestTypeDef = {  # (1)
+    "assessmentTargetArns": ...,
+}
 
-Returns
-[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef).
+parent.list_assessment_templates(**kwargs)
+```
 
-<a id="list\_event\_subscriptions"></a>
+1. See [:material-code-braces: ListAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#listassessmenttemplatesrequestrequesttypedef) 
 
-### list_event_subscriptions
+### list\_event\_subscriptions
 
 Lists all the event subscriptions for the assessment template that is specified
 by the ARN of the assessment template.
 
-Type annotations for `boto3.client("inspector").list_event_subscriptions`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_event_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
 
-Boto3 documentation:
-[Inspector.Client.list_event_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_event_subscriptions)
+```python title="Method definition"
+def list_event_subscriptions(
+    self,
+    *,
+    resourceArn: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListEventSubscriptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventSubscriptionsRequestRequestTypeDef](./type_defs.md#listeventsubscriptionsrequestrequesttypedef).
+1. See [:material-code-braces: ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventSubscriptionsRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef).
+parent.list_event_subscriptions(**kwargs)
+```
 
-<a id="list\_exclusions"></a>
+1. See [:material-code-braces: ListEventSubscriptionsRequestRequestTypeDef](./type_defs.md#listeventsubscriptionsrequestrequesttypedef) 
 
-### list_exclusions
+### list\_exclusions
 
 List exclusions that are generated by the assessment run.
 
-Type annotations for `boto3.client("inspector").list_exclusions` method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_exclusions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
 
-Boto3 documentation:
-[Inspector.Client.list_exclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_exclusions)
+```python title="Method definition"
+def list_exclusions(
+    self,
+    *,
+    assessmentRunArn: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListExclusionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExclusionsRequestRequestTypeDef](./type_defs.md#listexclusionsrequestrequesttypedef).
+1. See [:material-code-braces: ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListExclusionsRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
 
-Returns
-[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef).
+parent.list_exclusions(**kwargs)
+```
 
-<a id="list\_findings"></a>
+1. See [:material-code-braces: ListExclusionsRequestRequestTypeDef](./type_defs.md#listexclusionsrequestrequesttypedef) 
 
-### list_findings
+### list\_findings
 
 Lists findings that are generated by the assessment runs that are specified by
 the ARNs of the assessment runs.
 
-Type annotations for `boto3.client("inspector").list_findings` method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
 
-Boto3 documentation:
-[Inspector.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_findings)
+```python title="Method definition"
+def list_findings(
+    self,
+    *,
+    assessmentRunArns: Sequence[str] = ...,
+    filter: FindingFilterTypeDef = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
+1. See [:material-code-braces: FindingFilterTypeDef](./type_defs.md#findingfiltertypedef) 
+2. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentRunArns`: `Sequence`\[`str`\]
-- `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestRequestTypeDef = {  # (1)
+    "assessmentRunArns": ...,
+}
 
-Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+parent.list_findings(**kwargs)
+```
 
-<a id="list\_rules\_packages"></a>
+1. See [:material-code-braces: ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef) 
 
-### list_rules_packages
+### list\_rules\_packages
 
 Lists all available Amazon Inspector rules packages.
 
-Type annotations for `boto3.client("inspector").list_rules_packages` method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_rules_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
 
-Boto3 documentation:
-[Inspector.Client.list_rules_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_rules_packages)
+```python title="Method definition"
+def list_rules_packages(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListRulesPackagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRulesPackagesRequestRequestTypeDef](./type_defs.md#listrulespackagesrequestrequesttypedef).
+1. See [:material-code-braces: ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRulesPackagesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef).
+parent.list_rules_packages(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRulesPackagesRequestRequestTypeDef](./type_defs.md#listrulespackagesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags associated with an assessment template.
 
-Type annotations for `boto3.client("inspector").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("inspector").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Inspector.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="preview\_agents"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### preview_agents
+### preview\_agents
 
 Previews the agents installed on the EC2 instances that are part of the
 specified assessment target.
 
-Type annotations for `boto3.client("inspector").preview_agents` method.
+Type annotations and code completion for `#!python boto3.client("inspector").preview_agents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
 
-Boto3 documentation:
-[Inspector.Client.preview_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.preview_agents)
+```python title="Method definition"
+def preview_agents(
+    self,
+    *,
+    previewAgentsArn: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> PreviewAgentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PreviewAgentsRequestRequestTypeDef](./type_defs.md#previewagentsrequestrequesttypedef).
+1. See [:material-code-braces: PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `previewAgentsArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: PreviewAgentsRequestRequestTypeDef = {  # (1)
+    "previewAgentsArn": ...,
+}
 
-Returns
-[PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef).
+parent.preview_agents(**kwargs)
+```
 
-<a id="register\_cross\_account\_access\_role"></a>
+1. See [:material-code-braces: PreviewAgentsRequestRequestTypeDef](./type_defs.md#previewagentsrequestrequesttypedef) 
 
-### register_cross_account_access_role
+### register\_cross\_account\_access\_role
 
 Registers the IAM role that grants Amazon Inspector access to AWS Services
 needed to perform security assessments.
 
-Type annotations for
-`boto3.client("inspector").register_cross_account_access_role` method.
+Type annotations and code completion for `#!python boto3.client("inspector").register_cross_account_access_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
 
-Boto3 documentation:
-[Inspector.Client.register_cross_account_access_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.register_cross_account_access_role)
+```python title="Method definition"
+def register_cross_account_access_role(
+    self,
+    *,
+    roleArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RegisterCrossAccountAccessRoleRequestRequestTypeDef](./type_defs.md#registercrossaccountaccessrolerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterCrossAccountAccessRoleRequestRequestTypeDef = {  # (1)
+    "roleArn": ...,
+}
 
-<a id="remove\_attributes\_from\_findings"></a>
+parent.register_cross_account_access_role(**kwargs)
+```
 
-### remove_attributes_from_findings
+1. See [:material-code-braces: RegisterCrossAccountAccessRoleRequestRequestTypeDef](./type_defs.md#registercrossaccountaccessrolerequestrequesttypedef) 
+
+### remove\_attributes\_from\_findings
 
 Removes entire attributes (key and value pairs) from the findings that are
 specified by the ARNs of the findings where an attribute with the specified key
 exists.
 
-Type annotations for
-`boto3.client("inspector").remove_attributes_from_findings` method.
+Type annotations and code completion for `#!python boto3.client("inspector").remove_attributes_from_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
 
-Boto3 documentation:
-[Inspector.Client.remove_attributes_from_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.remove_attributes_from_findings)
+```python title="Method definition"
+def remove_attributes_from_findings(
+    self,
+    *,
+    findingArns: Sequence[str],
+    attributeKeys: Sequence[str],
+) -> RemoveAttributesFromFindingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveAttributesFromFindingsRequestRequestTypeDef](./type_defs.md#removeattributesfromfindingsrequestrequesttypedef).
+1. See [:material-code-braces: RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingArns`: `Sequence`\[`str`\] *(required)*
-- `attributeKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAttributesFromFindingsRequestRequestTypeDef = {  # (1)
+    "findingArns": ...,
+    "attributeKeys": ...,
+}
 
-Returns
-[RemoveAttributesFromFindingsResponseTypeDef](./type_defs.md#removeattributesfromfindingsresponsetypedef).
+parent.remove_attributes_from_findings(**kwargs)
+```
 
-<a id="set\_tags\_for\_resource"></a>
+1. See [:material-code-braces: RemoveAttributesFromFindingsRequestRequestTypeDef](./type_defs.md#removeattributesfromfindingsrequestrequesttypedef) 
 
-### set_tags_for_resource
+### set\_tags\_for\_resource
 
 Sets tags (key and value pairs) to the assessment template that is specified by
 the ARN of the assessment template.
 
-Type annotations for `boto3.client("inspector").set_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("inspector").set_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
 
-Boto3 documentation:
-[Inspector.Client.set_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.set_tags_for_resource)
+```python title="Method definition"
+def set_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetTagsForResourceRequestRequestTypeDef](./type_defs.md#settagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SetTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-<a id="start\_assessment\_run"></a>
+parent.set_tags_for_resource(**kwargs)
+```
 
-### start_assessment_run
+1. See [:material-code-braces: SetTagsForResourceRequestRequestTypeDef](./type_defs.md#settagsforresourcerequestrequesttypedef) 
+
+### start\_assessment\_run
 
 Starts the assessment run specified by the ARN of the assessment template.
 
-Type annotations for `boto3.client("inspector").start_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("inspector").start_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
 
-Boto3 documentation:
-[Inspector.Client.start_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.start_assessment_run)
+```python title="Method definition"
+def start_assessment_run(
+    self,
+    *,
+    assessmentTemplateArn: str,
+    assessmentRunName: str = ...,
+) -> StartAssessmentRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAssessmentRunRequestRequestTypeDef](./type_defs.md#startassessmentrunrequestrequesttypedef).
+1. See [:material-code-braces: StartAssessmentRunResponseTypeDef](./type_defs.md#startassessmentrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assessmentTemplateArn`: `str` *(required)*
-- `assessmentRunName`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartAssessmentRunRequestRequestTypeDef = {  # (1)
+    "assessmentTemplateArn": ...,
+}
 
-Returns
-[StartAssessmentRunResponseTypeDef](./type_defs.md#startassessmentrunresponsetypedef).
+parent.start_assessment_run(**kwargs)
+```
 
-<a id="stop\_assessment\_run"></a>
+1. See [:material-code-braces: StartAssessmentRunRequestRequestTypeDef](./type_defs.md#startassessmentrunrequestrequesttypedef) 
 
-### stop_assessment_run
+### stop\_assessment\_run
 
 Stops the assessment run that is specified by the ARN of the assessment run.
 
-Type annotations for `boto3.client("inspector").stop_assessment_run` method.
+Type annotations and code completion for `#!python boto3.client("inspector").stop_assessment_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
 
-Boto3 documentation:
-[Inspector.Client.stop_assessment_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.stop_assessment_run)
+```python title="Method definition"
+def stop_assessment_run(
+    self,
+    *,
+    assessmentRunArn: str,
+    stopAction: StopActionType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopAssessmentRunRequestRequestTypeDef](./type_defs.md#stopassessmentrunrequestrequesttypedef).
+1. See [:material-code-brackets: StopActionType](./literals.md#stopactiontype) 
 
-Keyword-only arguments:
 
-- `assessmentRunArn`: `str` *(required)*
-- `stopAction`: [StopActionType](./literals.md#stopactiontype)
+```python title="Usage example with kwargs"
+kwargs: StopAssessmentRunRequestRequestTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
 
-<a id="subscribe\_to\_event"></a>
+parent.stop_assessment_run(**kwargs)
+```
 
-### subscribe_to_event
+1. See [:material-code-braces: StopAssessmentRunRequestRequestTypeDef](./type_defs.md#stopassessmentrunrequestrequesttypedef) 
+
+### subscribe\_to\_event
 
 Enables the process of sending Amazon Simple Notification Service (SNS)
 notifications about a specified event to a specified SNS topic.
 
-Type annotations for `boto3.client("inspector").subscribe_to_event` method.
+Type annotations and code completion for `#!python boto3.client("inspector").subscribe_to_event` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
 
-Boto3 documentation:
-[Inspector.Client.subscribe_to_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.subscribe_to_event)
+```python title="Method definition"
+def subscribe_to_event(
+    self,
+    *,
+    resourceArn: str,
+    event: InspectorEventType,  # (1)
+    topicArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SubscribeToEventRequestRequestTypeDef](./type_defs.md#subscribetoeventrequestrequesttypedef).
+1. See [:material-code-brackets: InspectorEventType](./literals.md#inspectoreventtype) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
-- `topicArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SubscribeToEventRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "event": ...,
+    "topicArn": ...,
+}
 
-<a id="unsubscribe\_from\_event"></a>
+parent.subscribe_to_event(**kwargs)
+```
 
-### unsubscribe_from_event
+1. See [:material-code-braces: SubscribeToEventRequestRequestTypeDef](./type_defs.md#subscribetoeventrequestrequesttypedef) 
+
+### unsubscribe\_from\_event
 
 Disables the process of sending Amazon Simple Notification Service (SNS)
 notifications about a specified event to a specified SNS topic.
 
-Type annotations for `boto3.client("inspector").unsubscribe_from_event` method.
+Type annotations and code completion for `#!python boto3.client("inspector").unsubscribe_from_event` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
 
-Boto3 documentation:
-[Inspector.Client.unsubscribe_from_event](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.unsubscribe_from_event)
+```python title="Method definition"
+def unsubscribe_from_event(
+    self,
+    *,
+    resourceArn: str,
+    event: InspectorEventType,  # (1)
+    topicArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UnsubscribeFromEventRequestRequestTypeDef](./type_defs.md#unsubscribefromeventrequestrequesttypedef).
+1. See [:material-code-brackets: InspectorEventType](./literals.md#inspectoreventtype) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `event`: [InspectorEventType](./literals.md#inspectoreventtype) *(required)*
-- `topicArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnsubscribeFromEventRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "event": ...,
+    "topicArn": ...,
+}
 
-<a id="update\_assessment\_target"></a>
+parent.unsubscribe_from_event(**kwargs)
+```
 
-### update_assessment_target
+1. See [:material-code-braces: UnsubscribeFromEventRequestRequestTypeDef](./type_defs.md#unsubscribefromeventrequestrequesttypedef) 
+
+### update\_assessment\_target
 
 Updates the assessment target that is specified by the ARN of the assessment
 target.
 
-Type annotations for `boto3.client("inspector").update_assessment_target`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector").update_assessment_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
 
-Boto3 documentation:
-[Inspector.Client.update_assessment_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client.update_assessment_target)
+```python title="Method definition"
+def update_assessment_target(
+    self,
+    *,
+    assessmentTargetArn: str,
+    assessmentTargetName: str,
+    resourceGroupArn: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssessmentTargetRequestRequestTypeDef](./type_defs.md#updateassessmenttargetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assessmentTargetArn`: `str` *(required)*
-- `assessmentTargetName`: `str` *(required)*
-- `resourceGroupArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAssessmentTargetRequestRequestTypeDef = {  # (1)
+    "assessmentTargetArn": ...,
+    "assessmentTargetName": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_assessment_target(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateAssessmentTargetRequestRequestTypeDef](./type_defs.md#updateassessmenttargetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("inspector").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator` method with overloads.
 
-- `client.get_paginator("list_assessment_run_agents")` ->
-  [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
-- `client.get_paginator("list_assessment_runs")` ->
-  [ListAssessmentRunsPaginator](./paginators.md#listassessmentrunspaginator)
-- `client.get_paginator("list_assessment_targets")` ->
-  [ListAssessmentTargetsPaginator](./paginators.md#listassessmenttargetspaginator)
-- `client.get_paginator("list_assessment_templates")` ->
-  [ListAssessmentTemplatesPaginator](./paginators.md#listassessmenttemplatespaginator)
-- `client.get_paginator("list_event_subscriptions")` ->
-  [ListEventSubscriptionsPaginator](./paginators.md#listeventsubscriptionspaginator)
-- `client.get_paginator("list_exclusions")` ->
-  [ListExclusionsPaginator](./paginators.md#listexclusionspaginator)
-- `client.get_paginator("list_findings")` ->
-  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_rules_packages")` ->
-  [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
-- `client.get_paginator("preview_agents")` ->
-  [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
+- `client.get_paginator("list_assessment_run_agents")` -> [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
+- `client.get_paginator("list_assessment_runs")` -> [ListAssessmentRunsPaginator](./paginators.md#listassessmentrunspaginator)
+- `client.get_paginator("list_assessment_targets")` -> [ListAssessmentTargetsPaginator](./paginators.md#listassessmenttargetspaginator)
+- `client.get_paginator("list_assessment_templates")` -> [ListAssessmentTemplatesPaginator](./paginators.md#listassessmenttemplatespaginator)
+- `client.get_paginator("list_event_subscriptions")` -> [ListEventSubscriptionsPaginator](./paginators.md#listeventsubscriptionspaginator)
+- `client.get_paginator("list_exclusions")` -> [ListExclusionsPaginator](./paginators.md#listexclusionspaginator)
+- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_rules_packages")` -> [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
+- `client.get_paginator("preview_agents")` -> [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
+
+
+

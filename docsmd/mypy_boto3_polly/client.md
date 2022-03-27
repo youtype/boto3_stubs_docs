@@ -1,41 +1,18 @@
-<a id="pollyclient-for-boto3-polly-module"></a>
-
-# PollyClient for boto3 Polly module
+# PollyClient
 
 > [Index](../README.md) > [Polly](./README.md) > PollyClient
 
-Auto-generated documentation for
-[Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
-type annotations stubs module
-[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
+!!! note ""
 
-- [PollyClient for boto3 Polly module](#pollyclient-for-boto3-polly-module)
-  - [PollyClient](#pollyclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [delete_lexicon](#delete_lexicon)
-    - [describe_voices](#describe_voices)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_lexicon](#get_lexicon)
-    - [get_speech_synthesis_task](#get_speech_synthesis_task)
-    - [list_lexicons](#list_lexicons)
-    - [list_speech_synthesis_tasks](#list_speech_synthesis_tasks)
-    - [put_lexicon](#put_lexicon)
-    - [start_speech_synthesis_task](#start_speech_synthesis_task)
-    - [synthesize_speech](#synthesize_speech)
-    - [get_paginator](#get_paginator)
-
-<a id="pollyclient"></a>
+    Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+    type annotations stubs module [mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 ## PollyClient
 
-Type annotations for `boto3.client("polly")`
+Type annotations and code completion for `#!python boto3.client("polly")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_polly.client import PollyClient
 
@@ -43,333 +20,409 @@ def get_polly_client() -> PollyClient:
     return Session().client("polly")
 ```
 
-Boto3 documentation:
-[Polly.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("polly").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("polly")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.EngineNotSupportedException,
+    client.InvalidLexiconException,
+    client.InvalidNextTokenException,
+    client.InvalidS3BucketException,
+    client.InvalidS3KeyException,
+    client.InvalidSampleRateException,
+    client.InvalidSnsTopicArnException,
+    client.InvalidSsmlException,
+    client.InvalidTaskIdException,
+    client.LanguageNotSupportedException,
+    client.LexiconNotFoundException,
+    client.LexiconSizeExceededException,
+    client.MarksNotSupportedForFormatException,
+    client.MaxLexemeLengthExceededException,
+    client.MaxLexiconsNumberExceededException,
+    client.ServiceFailureException,
+    client.SsmlMarksNotSupportedForTextTypeException,
+    client.SynthesisTaskNotFoundException,
+    client.TextLengthExceededException,
+    client.UnsupportedPlsAlphabetException,
+    client.UnsupportedPlsLanguageException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_polly.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.EngineNotSupportedException`
-- `Exceptions.InvalidLexiconException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidS3BucketException`
-- `Exceptions.InvalidS3KeyException`
-- `Exceptions.InvalidSampleRateException`
-- `Exceptions.InvalidSnsTopicArnException`
-- `Exceptions.InvalidSsmlException`
-- `Exceptions.InvalidTaskIdException`
-- `Exceptions.LanguageNotSupportedException`
-- `Exceptions.LexiconNotFoundException`
-- `Exceptions.LexiconSizeExceededException`
-- `Exceptions.MarksNotSupportedForFormatException`
-- `Exceptions.MaxLexemeLengthExceededException`
-- `Exceptions.MaxLexiconsNumberExceededException`
-- `Exceptions.ServiceFailureException`
-- `Exceptions.SsmlMarksNotSupportedForTextTypeException`
-- `Exceptions.SynthesisTaskNotFoundException`
-- `Exceptions.TextLengthExceededException`
-- `Exceptions.UnsupportedPlsAlphabetException`
-- `Exceptions.UnsupportedPlsLanguageException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PollyClient exceptions.
-
-Type annotations for `boto3.client("polly").exceptions` method.
-
-Boto3 documentation:
-[Polly.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("polly").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("polly").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate)
 
-Boto3 documentation:
-[Polly.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_lexicon"></a>
-
-### delete_lexicon
+### delete\_lexicon
 
 Deletes the specified pronunciation lexicon stored in an Amazon Web Services
 Region.
 
-Type annotations for `boto3.client("polly").delete_lexicon` method.
+Type annotations and code completion for `#!python boto3.client("polly").delete_lexicon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
 
-Boto3 documentation:
-[Polly.Client.delete_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.delete_lexicon)
+```python title="Method definition"
+def delete_lexicon(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLexiconInputRequestTypeDef](./type_defs.md#deletelexiconinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLexiconInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_lexicon(**kwargs)
+```
 
-<a id="describe\_voices"></a>
+1. See [:material-code-braces: DeleteLexiconInputRequestTypeDef](./type_defs.md#deletelexiconinputrequesttypedef) 
 
-### describe_voices
+### describe\_voices
 
 Returns the list of voices that are available for use when requesting speech
 synthesis.
 
-Type annotations for `boto3.client("polly").describe_voices` method.
+Type annotations and code completion for `#!python boto3.client("polly").describe_voices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
 
-Boto3 documentation:
-[Polly.Client.describe_voices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.describe_voices)
+```python title="Method definition"
+def describe_voices(
+    self,
+    *,
+    Engine: EngineType = ...,  # (1)
+    LanguageCode: LanguageCodeType = ...,  # (2)
+    IncludeAdditionalLanguageCodes: bool = ...,
+    NextToken: str = ...,
+) -> DescribeVoicesOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVoicesInputRequestTypeDef](./type_defs.md#describevoicesinputrequesttypedef).
+1. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-braces: DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `IncludeAdditionalLanguageCodes`: `bool`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeVoicesInputRequestTypeDef = {  # (1)
+    "Engine": ...,
+}
 
-Returns
-[DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
+parent.describe_voices(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeVoicesInputRequestTypeDef](./type_defs.md#describevoicesinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("polly").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("polly").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Polly.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_lexicon"></a>
-
-### get_lexicon
+### get\_lexicon
 
 Returns the content of the specified pronunciation lexicon stored in an Amazon
 Web Services Region.
 
-Type annotations for `boto3.client("polly").get_lexicon` method.
+Type annotations and code completion for `#!python boto3.client("polly").get_lexicon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
 
-Boto3 documentation:
-[Polly.Client.get_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_lexicon)
+```python title="Method definition"
+def get_lexicon(
+    self,
+    *,
+    Name: str,
+) -> GetLexiconOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLexiconInputRequestTypeDef](./type_defs.md#getlexiconinputrequesttypedef).
+1. See [:material-code-braces: GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLexiconInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
+parent.get_lexicon(**kwargs)
+```
 
-<a id="get\_speech\_synthesis\_task"></a>
+1. See [:material-code-braces: GetLexiconInputRequestTypeDef](./type_defs.md#getlexiconinputrequesttypedef) 
 
-### get_speech_synthesis_task
+### get\_speech\_synthesis\_task
 
 Retrieves a specific SpeechSynthesisTask object based on its TaskID.
 
-Type annotations for `boto3.client("polly").get_speech_synthesis_task` method.
+Type annotations and code completion for `#!python boto3.client("polly").get_speech_synthesis_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
 
-Boto3 documentation:
-[Polly.Client.get_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.get_speech_synthesis_task)
+```python title="Method definition"
+def get_speech_synthesis_task(
+    self,
+    *,
+    TaskId: str,
+) -> GetSpeechSynthesisTaskOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#getspeechsynthesistaskinputrequesttypedef).
+1. See [:material-code-braces: GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TaskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSpeechSynthesisTaskInputRequestTypeDef = {  # (1)
+    "TaskId": ...,
+}
 
-Returns
-[GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
+parent.get_speech_synthesis_task(**kwargs)
+```
 
-<a id="list\_lexicons"></a>
+1. See [:material-code-braces: GetSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#getspeechsynthesistaskinputrequesttypedef) 
 
-### list_lexicons
+### list\_lexicons
 
 Returns a list of pronunciation lexicons stored in an Amazon Web Services
 Region.
 
-Type annotations for `boto3.client("polly").list_lexicons` method.
+Type annotations and code completion for `#!python boto3.client("polly").list_lexicons` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
 
-Boto3 documentation:
-[Polly.Client.list_lexicons](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_lexicons)
+```python title="Method definition"
+def list_lexicons(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListLexiconsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLexiconsInputRequestTypeDef](./type_defs.md#listlexiconsinputrequesttypedef).
+1. See [:material-code-braces: ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLexiconsInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
+parent.list_lexicons(**kwargs)
+```
 
-<a id="list\_speech\_synthesis\_tasks"></a>
+1. See [:material-code-braces: ListLexiconsInputRequestTypeDef](./type_defs.md#listlexiconsinputrequesttypedef) 
 
-### list_speech_synthesis_tasks
+### list\_speech\_synthesis\_tasks
 
 Returns a list of SpeechSynthesisTask objects ordered by their creation date.
 
-Type annotations for `boto3.client("polly").list_speech_synthesis_tasks`
-method.
+Type annotations and code completion for `#!python boto3.client("polly").list_speech_synthesis_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
 
-Boto3 documentation:
-[Polly.Client.list_speech_synthesis_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.list_speech_synthesis_tasks)
+```python title="Method definition"
+def list_speech_synthesis_tasks(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Status: TaskStatusType = ...,  # (1)
+) -> ListSpeechSynthesisTasksOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSpeechSynthesisTasksInputRequestTypeDef](./type_defs.md#listspeechsynthesistasksinputrequesttypedef).
+1. See [:material-code-brackets: TaskStatusType](./literals.md#taskstatustype) 
+2. See [:material-code-braces: ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Status`: [TaskStatusType](./literals.md#taskstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListSpeechSynthesisTasksInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
+parent.list_speech_synthesis_tasks(**kwargs)
+```
 
-<a id="put\_lexicon"></a>
+1. See [:material-code-braces: ListSpeechSynthesisTasksInputRequestTypeDef](./type_defs.md#listspeechsynthesistasksinputrequesttypedef) 
 
-### put_lexicon
+### put\_lexicon
 
 Stores a pronunciation lexicon in an Amazon Web Services Region.
 
-Type annotations for `boto3.client("polly").put_lexicon` method.
+Type annotations and code completion for `#!python boto3.client("polly").put_lexicon` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
 
-Boto3 documentation:
-[Polly.Client.put_lexicon](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.put_lexicon)
+```python title="Method definition"
+def put_lexicon(
+    self,
+    *,
+    Name: str,
+    Content: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutLexiconInputRequestTypeDef](./type_defs.md#putlexiconinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Content`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutLexiconInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Content": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_lexicon(**kwargs)
+```
 
-<a id="start\_speech\_synthesis\_task"></a>
+1. See [:material-code-braces: PutLexiconInputRequestTypeDef](./type_defs.md#putlexiconinputrequesttypedef) 
 
-### start_speech_synthesis_task
+### start\_speech\_synthesis\_task
 
 Allows the creation of an asynchronous synthesis task, by starting a new
 `SpeechSynthesisTask`.
 
-Type annotations for `boto3.client("polly").start_speech_synthesis_task`
-method.
+Type annotations and code completion for `#!python boto3.client("polly").start_speech_synthesis_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
 
-Boto3 documentation:
-[Polly.Client.start_speech_synthesis_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.start_speech_synthesis_task)
+```python title="Method definition"
+def start_speech_synthesis_task(
+    self,
+    *,
+    OutputFormat: OutputFormatType,  # (1)
+    OutputS3BucketName: str,
+    Text: str,
+    VoiceId: VoiceIdType,  # (2)
+    Engine: EngineType = ...,  # (3)
+    LanguageCode: LanguageCodeType = ...,  # (4)
+    LexiconNames: Sequence[str] = ...,
+    OutputS3KeyPrefix: str = ...,
+    SampleRate: str = ...,
+    SnsTopicArn: str = ...,
+    SpeechMarkTypes: Sequence[SpeechMarkTypeType] = ...,  # (5)
+    TextType: TextTypeType = ...,  # (6)
+) -> StartSpeechSynthesisTaskOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[StartSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#startspeechsynthesistaskinputrequesttypedef).
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+3. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-brackets: SpeechMarkTypeType](./literals.md#speechmarktypetype) 
+6. See [:material-code-brackets: TextTypeType](./literals.md#texttypetype) 
+7. See [:material-code-braces: StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-  *(required)*
-- `OutputS3BucketName`: `str` *(required)*
-- `Text`: `str` *(required)*
-- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `Sequence`\[`str`\]
-- `OutputS3KeyPrefix`: `str`
-- `SampleRate`: `str`
-- `SnsTopicArn`: `str`
-- `SpeechMarkTypes`:
-  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
-- `TextType`: [TextTypeType](./literals.md#texttypetype)
+```python title="Usage example with kwargs"
+kwargs: StartSpeechSynthesisTaskInputRequestTypeDef = {  # (1)
+    "OutputFormat": ...,
+    "OutputS3BucketName": ...,
+    "Text": ...,
+    "VoiceId": ...,
+}
 
-Returns
-[StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
+parent.start_speech_synthesis_task(**kwargs)
+```
 
-<a id="synthesize\_speech"></a>
+1. See [:material-code-braces: StartSpeechSynthesisTaskInputRequestTypeDef](./type_defs.md#startspeechsynthesistaskinputrequesttypedef) 
 
-### synthesize_speech
+### synthesize\_speech
 
 Synthesizes UTF-8 input, plain text or SSML, to a stream of bytes.
 
-Type annotations for `boto3.client("polly").synthesize_speech` method.
+Type annotations and code completion for `#!python boto3.client("polly").synthesize_speech` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
 
-Boto3 documentation:
-[Polly.Client.synthesize_speech](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly.Client.synthesize_speech)
+```python title="Method definition"
+def synthesize_speech(
+    self,
+    *,
+    OutputFormat: OutputFormatType,  # (1)
+    Text: str,
+    VoiceId: VoiceIdType,  # (2)
+    Engine: EngineType = ...,  # (3)
+    LanguageCode: LanguageCodeType = ...,  # (4)
+    LexiconNames: Sequence[str] = ...,
+    SampleRate: str = ...,
+    SpeechMarkTypes: Sequence[SpeechMarkTypeType] = ...,  # (5)
+    TextType: TextTypeType = ...,  # (6)
+) -> SynthesizeSpeechOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[SynthesizeSpeechInputRequestTypeDef](./type_defs.md#synthesizespeechinputrequesttypedef).
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-brackets: VoiceIdType](./literals.md#voiceidtype) 
+3. See [:material-code-brackets: EngineType](./literals.md#enginetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+5. See [:material-code-brackets: SpeechMarkTypeType](./literals.md#speechmarktypetype) 
+6. See [:material-code-brackets: TextTypeType](./literals.md#texttypetype) 
+7. See [:material-code-braces: SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef) 
 
-Keyword-only arguments:
 
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
-  *(required)*
-- `Text`: `str` *(required)*
-- `VoiceId`: [VoiceIdType](./literals.md#voiceidtype) *(required)*
-- `Engine`: [EngineType](./literals.md#enginetype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LexiconNames`: `Sequence`\[`str`\]
-- `SampleRate`: `str`
-- `SpeechMarkTypes`:
-  `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
-- `TextType`: [TextTypeType](./literals.md#texttypetype)
+```python title="Usage example with kwargs"
+kwargs: SynthesizeSpeechInputRequestTypeDef = {  # (1)
+    "OutputFormat": ...,
+    "Text": ...,
+    "VoiceId": ...,
+}
 
-Returns
-[SynthesizeSpeechOutputTypeDef](./type_defs.md#synthesizespeechoutputtypedef).
+parent.synthesize_speech(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: SynthesizeSpeechInputRequestTypeDef](./type_defs.md#synthesizespeechinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("polly").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("polly").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_voices")` ->
-  [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
-- `client.get_paginator("list_lexicons")` ->
-  [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
-- `client.get_paginator("list_speech_synthesis_tasks")` ->
-  [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
+- `client.get_paginator("describe_voices")` -> [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
+- `client.get_paginator("list_lexicons")` -> [ListLexiconsPaginator](./paginators.md#listlexiconspaginator)
+- `client.get_paginator("list_speech_synthesis_tasks")` -> [ListSpeechSynthesisTasksPaginator](./paginators.md#listspeechsynthesistaskspaginator)
+
+
+

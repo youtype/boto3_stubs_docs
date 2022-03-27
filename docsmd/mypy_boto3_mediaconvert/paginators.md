@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-mediaconvert-module"></a>
-
-# Paginators for boto3 MediaConvert module
+# Paginators
 
 > [Index](../README.md) > [MediaConvert](./README.md) > Paginators
 
-Auto-generated documentation for
-[MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
-type annotations stubs module
-[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+!!! note ""
 
-- [Paginators for boto3 MediaConvert module](#paginators-for-boto3-mediaconvert-module)
-  - [DescribeEndpointsPaginator](#describeendpointspaginator)
-  - [ListJobTemplatesPaginator](#listjobtemplatespaginator)
-  - [ListJobsPaginator](#listjobspaginator)
-  - [ListPresetsPaginator](#listpresetspaginator)
-  - [ListQueuesPaginator](#listqueuespaginator)
-
-<a id="describeendpointspaginator"></a>
+    Auto-generated documentation for [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
+    type annotations stubs module [mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 ## DescribeEndpointsPaginator
 
-Type annotations for
-`boto3.client("mediaconvert").get_paginator("describe_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator("describe_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediaconvert.paginator import DescribeEndpointsPaginator
@@ -34,28 +21,41 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return Session().client("mediaconvert").get_paginator("describe_endpoints")
 ```
 
-Boto3 documentation:
-[MediaConvert.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.DescribeEndpoints)
 
-Arguments for `DescribeEndpointsPaginator.paginate` method:
+### paginate
 
-- `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEndpointsPaginator.paginate` method.
 
-`DescribeEndpointsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Mode: DescribeEndpointsModeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEndpointsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listjobtemplatespaginator"></a>
+1. See [:material-code-brackets: DescribeEndpointsModeType](./literals.md#describeendpointsmodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef = {  # (1)
+    "Mode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointsRequestDescribeEndpointsPaginateTypeDef](./type_defs.md#describeendpointsrequestdescribeendpointspaginatetypedef) 
 ## ListJobTemplatesPaginator
 
-Type annotations for
-`boto3.client("mediaconvert").get_paginator("list_job_templates")`.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator("list_job_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediaconvert.paginator import ListJobTemplatesPaginator
@@ -64,29 +64,44 @@ def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
     return Session().client("mediaconvert").get_paginator("list_job_templates")
 ```
 
-Boto3 documentation:
-[MediaConvert.Paginator.ListJobTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobTemplates)
 
-Arguments for `ListJobTemplatesPaginator.paginate` method:
+### paginate
 
-- `Category`: `str`
-- `ListBy`: [JobTemplateListByType](./literals.md#jobtemplatelistbytype)
-- `Order`: [OrderType](./literals.md#ordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobTemplatesPaginator.paginate` method.
 
-`ListJobTemplatesPaginator.paginate` returns
-`_PageIterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Category: str = ...,
+    ListBy: JobTemplateListByType = ...,  # (1)
+    Order: OrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListJobTemplatesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listjobspaginator"></a>
+1. See [:material-code-brackets: JobTemplateListByType](./literals.md#jobtemplatelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobTemplatesRequestListJobTemplatesPaginateTypeDef = {  # (1)
+    "Category": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobTemplatesRequestListJobTemplatesPaginateTypeDef](./type_defs.md#listjobtemplatesrequestlistjobtemplatespaginatetypedef) 
 ## ListJobsPaginator
 
-Type annotations for `boto3.client("mediaconvert").get_paginator("list_jobs")`.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator("list_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediaconvert.paginator import ListJobsPaginator
@@ -95,30 +110,44 @@ def get_list_jobs_paginator() -> ListJobsPaginator:
     return Session().client("mediaconvert").get_paginator("list_jobs")
 ```
 
-Boto3 documentation:
-[MediaConvert.Paginator.ListJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListJobs)
 
-Arguments for `ListJobsPaginator.paginate` method:
+### paginate
 
-- `Order`: [OrderType](./literals.md#ordertype)
-- `Queue`: `str`
-- `Status`: [JobStatusType](./literals.md#jobstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsPaginator.paginate` method.
 
-`ListJobsPaginator.paginate` returns
-`_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Order: OrderType = ...,  # (1)
+    Queue: str = ...,
+    Status: JobStatusType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListJobsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listpresetspaginator"></a>
+1. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestListJobsPaginateTypeDef = {  # (1)
+    "Order": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef) 
 ## ListPresetsPaginator
 
-Type annotations for
-`boto3.client("mediaconvert").get_paginator("list_presets")`.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator("list_presets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediaconvert.paginator import ListPresetsPaginator
@@ -127,30 +156,44 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
     return Session().client("mediaconvert").get_paginator("list_presets")
 ```
 
-Boto3 documentation:
-[MediaConvert.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListPresets)
 
-Arguments for `ListPresetsPaginator.paginate` method:
+### paginate
 
-- `Category`: `str`
-- `ListBy`: [PresetListByType](./literals.md#presetlistbytype)
-- `Order`: [OrderType](./literals.md#ordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPresetsPaginator.paginate` method.
 
-`ListPresetsPaginator.paginate` returns
-`_PageIterator`\[[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Category: str = ...,
+    ListBy: PresetListByType = ...,  # (1)
+    Order: OrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListPresetsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listqueuespaginator"></a>
+1. See [:material-code-brackets: PresetListByType](./literals.md#presetlistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPresetsRequestListPresetsPaginateTypeDef = {  # (1)
+    "Category": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPresetsRequestListPresetsPaginateTypeDef](./type_defs.md#listpresetsrequestlistpresetspaginatetypedef) 
 ## ListQueuesPaginator
 
-Type annotations for
-`boto3.client("mediaconvert").get_paginator("list_queues")`.
+Type annotations and code completion for `#!python boto3.client("mediaconvert").get_paginator("list_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mediaconvert.paginator import ListQueuesPaginator
@@ -159,15 +202,34 @@ def get_list_queues_paginator() -> ListQueuesPaginator:
     return Session().client("mediaconvert").get_paginator("list_queues")
 ```
 
-Boto3 documentation:
-[MediaConvert.Paginator.ListQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Paginator.ListQueues)
 
-Arguments for `ListQueuesPaginator.paginate` method:
+### paginate
 
-- `ListBy`: [QueueListByType](./literals.md#queuelistbytype)
-- `Order`: [OrderType](./literals.md#ordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueuesPaginator.paginate` method.
 
-`ListQueuesPaginator.paginate` returns
-`_PageIterator`\[[ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ListBy: QueueListByType = ...,  # (1)
+    Order: OrderType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListQueuesResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: QueueListByType](./literals.md#queuelistbytype) 
+2. See [:material-code-brackets: OrderType](./literals.md#ordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListQueuesRequestListQueuesPaginateTypeDef = {  # (1)
+    "ListBy": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueuesRequestListQueuesPaginateTypeDef](./type_defs.md#listqueuesrequestlistqueuespaginatetypedef) 

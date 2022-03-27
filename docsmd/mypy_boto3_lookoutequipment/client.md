@@ -1,54 +1,18 @@
-<a id="lookoutequipmentclient-for-boto3-lookoutequipment-module"></a>
+# LookoutEquipmentClient
 
-# LookoutEquipmentClient for boto3 LookoutEquipment module
+> [Index](../README.md) > [LookoutEquipment](./README.md) > LookoutEquipmentClient
 
-> [Index](../README.md) > [LookoutEquipment](./README.md) >
-> LookoutEquipmentClient
+!!! note ""
 
-Auto-generated documentation for
-[LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
-type annotations stubs module
-[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
-
-- [LookoutEquipmentClient for boto3 LookoutEquipment module](#lookoutequipmentclient-for-boto3-lookoutequipment-module)
-  - [LookoutEquipmentClient](#lookoutequipmentclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_dataset](#create_dataset)
-    - [create_inference_scheduler](#create_inference_scheduler)
-    - [create_model](#create_model)
-    - [delete_dataset](#delete_dataset)
-    - [delete_inference_scheduler](#delete_inference_scheduler)
-    - [delete_model](#delete_model)
-    - [describe_data_ingestion_job](#describe_data_ingestion_job)
-    - [describe_dataset](#describe_dataset)
-    - [describe_inference_scheduler](#describe_inference_scheduler)
-    - [describe_model](#describe_model)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_data_ingestion_jobs](#list_data_ingestion_jobs)
-    - [list_datasets](#list_datasets)
-    - [list_inference_executions](#list_inference_executions)
-    - [list_inference_schedulers](#list_inference_schedulers)
-    - [list_models](#list_models)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_data_ingestion_job](#start_data_ingestion_job)
-    - [start_inference_scheduler](#start_inference_scheduler)
-    - [stop_inference_scheduler](#stop_inference_scheduler)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_inference_scheduler](#update_inference_scheduler)
-
-<a id="lookoutequipmentclient"></a>
+    Auto-generated documentation for [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
+    type annotations stubs module [mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 ## LookoutEquipmentClient
 
-Type annotations for `boto3.client("lookoutequipment")`
+Type annotations and code completion for `#!python boto3.client("lookoutequipment")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 
@@ -56,623 +20,805 @@ def get_lookoutequipment_client() -> LookoutEquipmentClient:
     return Session().client("lookoutequipment")
 ```
 
-Boto3 documentation:
-[LookoutEquipment.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lookoutequipment").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lookoutequipment")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lookoutequipment.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LookoutEquipmentClient exceptions.
-
-Type annotations for `boto3.client("lookoutequipment").exceptions` method.
-
-Boto3 documentation:
-[LookoutEquipment.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lookoutequipment").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate)
 
-Boto3 documentation:
-[LookoutEquipment.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_dataset"></a>
-
-### create_dataset
+### create\_dataset
 
 Creates a container for a collection of data being ingested for analysis.
 
-Type annotations for `boto3.client("lookoutequipment").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset)
 
-Boto3 documentation:
-[LookoutEquipment.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    DatasetName: str,
+    DatasetSchema: DatasetSchemaTypeDef,  # (1)
+    ClientToken: str,
+    ServerSideKmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDatasetResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
-- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
-  *(required)*
-- `ClientToken`: `str` *(required)*
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+    "DatasetSchema": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_inference\_scheduler"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_inference_scheduler
+### create\_inference\_scheduler
 
 Creates a scheduled inference.
 
-Type annotations for
-`boto3.client("lookoutequipment").create_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").create_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.create_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_inference_scheduler)
+```python title="Method definition"
+def create_inference_scheduler(
+    self,
+    *,
+    ModelName: str,
+    InferenceSchedulerName: str,
+    DataUploadFrequency: DataUploadFrequencyType,  # (1)
+    DataInputConfiguration: InferenceInputConfigurationTypeDef,  # (2)
+    DataOutputConfiguration: InferenceOutputConfigurationTypeDef,  # (3)
+    RoleArn: str,
+    ClientToken: str,
+    DataDelayOffsetInMinutes: int = ...,
+    ServerSideKmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateInferenceSchedulerResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#createinferenceschedulerrequestrequesttypedef).
+1. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+2. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+3. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
-- `InferenceSchedulerName`: `str` *(required)*
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype) *(required)*
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-  *(required)*
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `DataDelayOffsetInMinutes`: `int`
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+    "InferenceSchedulerName": ...,
+    "DataUploadFrequency": ...,
+    "DataInputConfiguration": ...,
+    "DataOutputConfiguration": ...,
+    "RoleArn": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
+parent.create_inference_scheduler(**kwargs)
+```
 
-<a id="create\_model"></a>
+1. See [:material-code-braces: CreateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#createinferenceschedulerrequestrequesttypedef) 
 
-### create_model
+### create\_model
 
 Creates an ML model for data inference.
 
-Type annotations for `boto3.client("lookoutequipment").create_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").create_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model)
 
-Boto3 documentation:
-[LookoutEquipment.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.create_model)
+```python title="Method definition"
+def create_model(
+    self,
+    *,
+    ModelName: str,
+    DatasetName: str,
+    ClientToken: str,
+    DatasetSchema: DatasetSchemaTypeDef = ...,  # (1)
+    LabelsInputConfiguration: LabelsInputConfigurationTypeDef = ...,  # (2)
+    TrainingDataStartTime: Union[datetime, str] = ...,
+    TrainingDataEndTime: Union[datetime, str] = ...,
+    EvaluationDataStartTime: Union[datetime, str] = ...,
+    EvaluationDataEndTime: Union[datetime, str] = ...,
+    RoleArn: str = ...,
+    DataPreProcessingConfiguration: DataPreProcessingConfigurationTypeDef = ...,  # (3)
+    ServerSideKmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    OffCondition: str = ...,
+) -> CreateModelResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
+1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef) 
+3. See [:material-code-braces: DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `DatasetSchema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
-- `LabelsInputConfiguration`:
-  [LabelsInputConfigurationTypeDef](./type_defs.md#labelsinputconfigurationtypedef)
-- `TrainingDataStartTime`: `Union`\[`datetime`, `str`\]
-- `TrainingDataEndTime`: `Union`\[`datetime`, `str`\]
-- `EvaluationDataStartTime`: `Union`\[`datetime`, `str`\]
-- `EvaluationDataEndTime`: `Union`\[`datetime`, `str`\]
-- `RoleArn`: `str`
-- `DataPreProcessingConfiguration`:
-  [DataPreProcessingConfigurationTypeDef](./type_defs.md#datapreprocessingconfigurationtypedef)
-- `ServerSideKmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `OffCondition`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateModelRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+    "DatasetName": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
+parent.create_model(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
 Deletes a dataset and associated artifacts.
 
-Type annotations for `boto3.client("lookoutequipment").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset)
 
-Boto3 documentation:
-[LookoutEquipment.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    DatasetName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+}
 
-<a id="delete\_inference\_scheduler"></a>
+parent.delete_dataset(**kwargs)
+```
 
-### delete_inference_scheduler
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
+
+### delete\_inference\_scheduler
 
 Deletes an inference scheduler that has been set up.
 
-Type annotations for
-`boto3.client("lookoutequipment").delete_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").delete_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.delete_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_inference_scheduler)
+```python title="Method definition"
+def delete_inference_scheduler(
+    self,
+    *,
+    InferenceSchedulerName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInferenceSchedulerRequestRequestTypeDef](./type_defs.md#deleteinferenceschedulerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
 
-<a id="delete\_model"></a>
+parent.delete_inference_scheduler(**kwargs)
+```
 
-### delete_model
+1. See [:material-code-braces: DeleteInferenceSchedulerRequestRequestTypeDef](./type_defs.md#deleteinferenceschedulerrequestrequesttypedef) 
+
+### delete\_model
 
 Deletes an ML model currently available for Amazon Lookout for Equipment.
 
-Type annotations for `boto3.client("lookoutequipment").delete_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").delete_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model)
 
-Boto3 documentation:
-[LookoutEquipment.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.delete_model)
+```python title="Method definition"
+def delete_model(
+    self,
+    *,
+    ModelName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteModelRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+}
 
-<a id="describe\_data\_ingestion\_job"></a>
+parent.delete_model(**kwargs)
+```
 
-### describe_data_ingestion_job
+1. See [:material-code-braces: DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef) 
+
+### describe\_data\_ingestion\_job
 
 Provides information on a specific data ingestion job such as creation time,
 dataset ARN, status, and so on.
 
-Type annotations for
-`boto3.client("lookoutequipment").describe_data_ingestion_job` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_data_ingestion_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
 
-Boto3 documentation:
-[LookoutEquipment.Client.describe_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_data_ingestion_job)
+```python title="Method definition"
+def describe_data_ingestion_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeDataIngestionJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataIngestionJobRequestRequestTypeDef](./type_defs.md#describedataingestionjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataIngestionJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef).
+parent.describe_data_ingestion_job(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DescribeDataIngestionJobRequestRequestTypeDef](./type_defs.md#describedataingestionjobrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Provides a JSON description of the data that is in each time series dataset,
 including names, column names, and data types.
 
-Type annotations for `boto3.client("lookoutequipment").describe_dataset`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
 
-Boto3 documentation:
-[LookoutEquipment.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    DatasetName: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_inference\_scheduler"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_inference_scheduler
+### describe\_inference\_scheduler
 
 Specifies information about the inference scheduler being used, including name,
-model, status, and associated metadata See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/lookoutequipment-2020-12-15/DescribeInferenceScheduler).
+model, status, and associated metadata See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/lookoutequipment-2020-12-15/DescribeInferenceScheduler).
 
-Type annotations for
-`boto3.client("lookoutequipment").describe_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.describe_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_inference_scheduler)
+```python title="Method definition"
+def describe_inference_scheduler(
+    self,
+    *,
+    InferenceSchedulerName: str,
+) -> DescribeInferenceSchedulerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInferenceSchedulerRequestRequestTypeDef](./type_defs.md#describeinferenceschedulerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
 
-Returns
-[DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef).
+parent.describe_inference_scheduler(**kwargs)
+```
 
-<a id="describe\_model"></a>
+1. See [:material-code-braces: DescribeInferenceSchedulerRequestRequestTypeDef](./type_defs.md#describeinferenceschedulerrequestrequesttypedef) 
 
-### describe_model
+### describe\_model
 
 Provides a JSON containing the overall information about a specific ML model,
 including model name and ARN, dataset, training and evaluation information,
 status, and so on.
 
-Type annotations for `boto3.client("lookoutequipment").describe_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").describe_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model)
 
-Boto3 documentation:
-[LookoutEquipment.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.describe_model)
+```python title="Method definition"
+def describe_model(
+    self,
+    *,
+    ModelName: str,
+) -> DescribeModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ModelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeModelRequestRequestTypeDef = {  # (1)
+    "ModelName": ...,
+}
 
-Returns
-[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
+parent.describe_model(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lookoutequipment").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LookoutEquipment.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_data\_ingestion\_jobs"></a>
-
-### list_data_ingestion_jobs
+### list\_data\_ingestion\_jobs
 
 Provides a list of all data ingestion jobs, including dataset name and ARN, S3
 location of the input data, status, and so on.
 
-Type annotations for
-`boto3.client("lookoutequipment").list_data_ingestion_jobs` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_data_ingestion_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_data_ingestion_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_data_ingestion_jobs)
+```python title="Method definition"
+def list_data_ingestion_jobs(
+    self,
+    *,
+    DatasetName: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Status: IngestionJobStatusType = ...,  # (1)
+) -> ListDataIngestionJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDataIngestionJobsRequestRequestTypeDef](./type_defs.md#listdataingestionjobsrequestrequesttypedef).
+1. See [:material-code-brackets: IngestionJobStatusType](./literals.md#ingestionjobstatustype) 
+2. See [:material-code-braces: ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListDataIngestionJobsRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+}
 
-Returns
-[ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef).
+parent.list_data_ingestion_jobs(**kwargs)
+```
 
-<a id="list\_datasets"></a>
+1. See [:material-code-braces: ListDataIngestionJobsRequestRequestTypeDef](./type_defs.md#listdataingestionjobsrequestrequesttypedef) 
 
-### list_datasets
+### list\_datasets
 
-Lists all datasets currently available in your account, filtering on the
-dataset name.
+Lists all datasets currently available in your account, filtering on the dataset
+name.
 
-Type annotations for `boto3.client("lookoutequipment").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    DatasetNameBeginsWith: str = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `DatasetNameBeginsWith`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_inference\_executions"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_inference_executions
+### list\_inference\_executions
 
 Lists all inference executions that have been performed by the specified
 inference scheduler.
 
-Type annotations for
-`boto3.client("lookoutequipment").list_inference_executions` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_inference_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_inference_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_executions)
+```python title="Method definition"
+def list_inference_executions(
+    self,
+    *,
+    InferenceSchedulerName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    DataStartTimeAfter: Union[datetime, str] = ...,
+    DataEndTimeBefore: Union[datetime, str] = ...,
+    Status: InferenceExecutionStatusType = ...,  # (1)
+) -> ListInferenceExecutionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListInferenceExecutionsRequestRequestTypeDef](./type_defs.md#listinferenceexecutionsrequestrequesttypedef).
+1. See [:material-code-brackets: InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype) 
+2. See [:material-code-braces: ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `DataStartTimeAfter`: `Union`\[`datetime`, `str`\]
-- `DataEndTimeBefore`: `Union`\[`datetime`, `str`\]
-- `Status`:
-  [InferenceExecutionStatusType](./literals.md#inferenceexecutionstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListInferenceExecutionsRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
 
-Returns
-[ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef).
+parent.list_inference_executions(**kwargs)
+```
 
-<a id="list\_inference\_schedulers"></a>
+1. See [:material-code-braces: ListInferenceExecutionsRequestRequestTypeDef](./type_defs.md#listinferenceexecutionsrequestrequesttypedef) 
 
-### list_inference_schedulers
+### list\_inference\_schedulers
 
 Retrieves a list of all inference schedulers currently available for your
 account.
 
-Type annotations for
-`boto3.client("lookoutequipment").list_inference_schedulers` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_inference_schedulers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_inference_schedulers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_inference_schedulers)
+```python title="Method definition"
+def list_inference_schedulers(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    InferenceSchedulerNameBeginsWith: str = ...,
+    ModelName: str = ...,
+) -> ListInferenceSchedulersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInferenceSchedulersRequestRequestTypeDef](./type_defs.md#listinferenceschedulersrequestrequesttypedef).
+1. See [:material-code-braces: ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `InferenceSchedulerNameBeginsWith`: `str`
-- `ModelName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInferenceSchedulersRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef).
+parent.list_inference_schedulers(**kwargs)
+```
 
-<a id="list\_models"></a>
+1. See [:material-code-braces: ListInferenceSchedulersRequestRequestTypeDef](./type_defs.md#listinferenceschedulersrequestrequesttypedef) 
 
-### list_models
+### list\_models
 
 Generates a list of all models in the account, including model name and ARN,
 dataset, and status.
 
-Type annotations for `boto3.client("lookoutequipment").list_models` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_models)
+```python title="Method definition"
+def list_models(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Status: ModelStatusType = ...,  # (1)
+    ModelNameBeginsWith: str = ...,
+    DatasetNameBeginsWith: str = ...,
+) -> ListModelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef).
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+2. See [:material-code-braces: ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Status`: [ModelStatusType](./literals.md#modelstatustype)
-- `ModelNameBeginsWith`: `str`
-- `DatasetNameBeginsWith`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListModelsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
+parent.list_models(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all the tags for a specified resource, including key and value.
 
-Type annotations for `boto3.client("lookoutequipment").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LookoutEquipment.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_data\_ingestion\_job"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_data_ingestion_job
+### start\_data\_ingestion\_job
 
 Starts a data ingestion job.
 
-Type annotations for
-`boto3.client("lookoutequipment").start_data_ingestion_job` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").start_data_ingestion_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job)
 
-Boto3 documentation:
-[LookoutEquipment.Client.start_data_ingestion_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_data_ingestion_job)
+```python title="Method definition"
+def start_data_ingestion_job(
+    self,
+    *,
+    DatasetName: str,
+    IngestionInputConfiguration: IngestionInputConfigurationTypeDef,  # (1)
+    RoleArn: str,
+    ClientToken: str,
+) -> StartDataIngestionJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartDataIngestionJobRequestRequestTypeDef](./type_defs.md#startdataingestionjobrequestrequesttypedef).
+1. See [:material-code-braces: IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef) 
+2. See [:material-code-braces: StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatasetName`: `str` *(required)*
-- `IngestionInputConfiguration`:
-  [IngestionInputConfigurationTypeDef](./type_defs.md#ingestioninputconfigurationtypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDataIngestionJobRequestRequestTypeDef = {  # (1)
+    "DatasetName": ...,
+    "IngestionInputConfiguration": ...,
+    "RoleArn": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef).
+parent.start_data_ingestion_job(**kwargs)
+```
 
-<a id="start\_inference\_scheduler"></a>
+1. See [:material-code-braces: StartDataIngestionJobRequestRequestTypeDef](./type_defs.md#startdataingestionjobrequestrequesttypedef) 
 
-### start_inference_scheduler
+### start\_inference\_scheduler
 
 Starts an inference scheduler.
 
-Type annotations for
-`boto3.client("lookoutequipment").start_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").start_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.start_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.start_inference_scheduler)
+```python title="Method definition"
+def start_inference_scheduler(
+    self,
+    *,
+    InferenceSchedulerName: str,
+) -> StartInferenceSchedulerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartInferenceSchedulerRequestRequestTypeDef](./type_defs.md#startinferenceschedulerrequestrequesttypedef).
+1. See [:material-code-braces: StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
 
-Returns
-[StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef).
+parent.start_inference_scheduler(**kwargs)
+```
 
-<a id="stop\_inference\_scheduler"></a>
+1. See [:material-code-braces: StartInferenceSchedulerRequestRequestTypeDef](./type_defs.md#startinferenceschedulerrequestrequesttypedef) 
 
-### stop_inference_scheduler
+### stop\_inference\_scheduler
 
 Stops an inference scheduler.
 
-Type annotations for
-`boto3.client("lookoutequipment").stop_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").stop_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.stop_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.stop_inference_scheduler)
+```python title="Method definition"
+def stop_inference_scheduler(
+    self,
+    *,
+    InferenceSchedulerName: str,
+) -> StopInferenceSchedulerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopInferenceSchedulerRequestRequestTypeDef](./type_defs.md#stopinferenceschedulerrequestrequesttypedef).
+1. See [:material-code-braces: StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
 
-Returns
-[StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef).
+parent.stop_inference_scheduler(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopInferenceSchedulerRequestRequestTypeDef](./type_defs.md#stopinferenceschedulerrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates a given tag to a resource in your account.
 
-Type annotations for `boto3.client("lookoutequipment").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource)
 
-Boto3 documentation:
-[LookoutEquipment.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a specific tag from a given resource.
 
-Type annotations for `boto3.client("lookoutequipment").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource)
 
-Boto3 documentation:
-[LookoutEquipment.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_inference\_scheduler"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_inference_scheduler
+### update\_inference\_scheduler
 
 Updates an inference scheduler.
 
-Type annotations for
-`boto3.client("lookoutequipment").update_inference_scheduler` method.
+Type annotations and code completion for `#!python boto3.client("lookoutequipment").update_inference_scheduler` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler)
 
-Boto3 documentation:
-[LookoutEquipment.Client.update_inference_scheduler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.update_inference_scheduler)
+```python title="Method definition"
+def update_inference_scheduler(
+    self,
+    *,
+    InferenceSchedulerName: str,
+    DataDelayOffsetInMinutes: int = ...,
+    DataUploadFrequency: DataUploadFrequencyType = ...,  # (1)
+    DataInputConfiguration: InferenceInputConfigurationTypeDef = ...,  # (2)
+    DataOutputConfiguration: InferenceOutputConfigurationTypeDef = ...,  # (3)
+    RoleArn: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#updateinferenceschedulerrequestrequesttypedef).
+1. See [:material-code-brackets: DataUploadFrequencyType](./literals.md#datauploadfrequencytype) 
+2. See [:material-code-braces: InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef) 
+3. See [:material-code-braces: InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `InferenceSchedulerName`: `str` *(required)*
-- `DataDelayOffsetInMinutes`: `int`
-- `DataUploadFrequency`:
-  [DataUploadFrequencyType](./literals.md#datauploadfrequencytype)
-- `DataInputConfiguration`:
-  [InferenceInputConfigurationTypeDef](./type_defs.md#inferenceinputconfigurationtypedef)
-- `DataOutputConfiguration`:
-  [InferenceOutputConfigurationTypeDef](./type_defs.md#inferenceoutputconfigurationtypedef)
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateInferenceSchedulerRequestRequestTypeDef = {  # (1)
+    "InferenceSchedulerName": ...,
+}
+
+parent.update_inference_scheduler(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateInferenceSchedulerRequestRequestTypeDef](./type_defs.md#updateinferenceschedulerrequestrequesttypedef) 
+
+
+
+

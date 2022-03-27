@@ -1,50 +1,18 @@
-<a id="signerclient-for-boto3-signer-module"></a>
-
-# signerClient for boto3 signer module
+# signerClient
 
 > [Index](../README.md) > [signer](./README.md) > signerClient
 
-Auto-generated documentation for
-[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
-type annotations stubs module
-[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
+!!! note ""
 
-- [signerClient for boto3 signer module](#signerclient-for-boto3-signer-module)
-  - [signerClient](#signerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_profile_permission](#add_profile_permission)
-    - [can_paginate](#can_paginate)
-    - [cancel_signing_profile](#cancel_signing_profile)
-    - [describe_signing_job](#describe_signing_job)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_signing_platform](#get_signing_platform)
-    - [get_signing_profile](#get_signing_profile)
-    - [list_profile_permissions](#list_profile_permissions)
-    - [list_signing_jobs](#list_signing_jobs)
-    - [list_signing_platforms](#list_signing_platforms)
-    - [list_signing_profiles](#list_signing_profiles)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_signing_profile](#put_signing_profile)
-    - [remove_profile_permission](#remove_profile_permission)
-    - [revoke_signature](#revoke_signature)
-    - [revoke_signing_profile](#revoke_signing_profile)
-    - [start_signing_job](#start_signing_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="signerclient"></a>
+    Auto-generated documentation for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
+    type annotations stubs module [mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ## signerClient
 
-Type annotations for `boto3.client("signer")`
+Type annotations and code completion for `#!python boto3.client("signer")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_signer.client import signerClient
 
@@ -52,504 +20,648 @@ def get_signer_client() -> signerClient:
     return Session().client("signer")
 ```
 
-Boto3 documentation:
-[signer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("signer").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("signer")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServiceErrorException,
+    client.NotFoundException,
+    client.ResourceNotFoundException,
+    client.ServiceLimitExceededException,
+    client.ThrottlingException,
+    client.TooManyRequestsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_signer.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceLimitExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-signerClient exceptions.
-
-Type annotations for `boto3.client("signer").exceptions` method.
-
-Boto3 documentation:
-[signer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_profile\_permission"></a>
-
-### add_profile_permission
+### add\_profile\_permission
 
 Adds cross-account permissions to a signing profile.
 
-Type annotations for `boto3.client("signer").add_profile_permission` method.
+Type annotations and code completion for `#!python boto3.client("signer").add_profile_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.add_profile_permission)
 
-Boto3 documentation:
-[signer.Client.add_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.add_profile_permission)
+```python title="Method definition"
+def add_profile_permission(
+    self,
+    *,
+    profileName: str,
+    action: str,
+    principal: str,
+    statementId: str,
+    profileVersion: str = ...,
+    revisionId: str = ...,
+) -> AddProfilePermissionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddProfilePermissionRequestRequestTypeDef](./type_defs.md#addprofilepermissionrequestrequesttypedef).
+1. See [:material-code-braces: AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `action`: `str` *(required)*
-- `principal`: `str` *(required)*
-- `statementId`: `str` *(required)*
-- `profileVersion`: `str`
-- `revisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddProfilePermissionRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+    "action": ...,
+    "principal": ...,
+    "statementId": ...,
+}
 
-Returns
-[AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
+parent.add_profile_permission(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddProfilePermissionRequestRequestTypeDef](./type_defs.md#addprofilepermissionrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("signer").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("signer").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.can_paginate)
 
-Boto3 documentation:
-[signer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_signing\_profile"></a>
-
-### cancel_signing_profile
+### cancel\_signing\_profile
 
 Changes the state of an `ACTIVE` signing profile to `CANCELED`.
 
-Type annotations for `boto3.client("signer").cancel_signing_profile` method.
+Type annotations and code completion for `#!python boto3.client("signer").cancel_signing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.cancel_signing_profile)
 
-Boto3 documentation:
-[signer.Client.cancel_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.cancel_signing_profile)
+```python title="Method definition"
+def cancel_signing_profile(
+    self,
+    *,
+    profileName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelSigningProfileRequestRequestTypeDef](./type_defs.md#cancelsigningprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelSigningProfileRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+}
 
-<a id="describe\_signing\_job"></a>
+parent.cancel_signing_profile(**kwargs)
+```
 
-### describe_signing_job
+1. See [:material-code-braces: CancelSigningProfileRequestRequestTypeDef](./type_defs.md#cancelsigningprofilerequestrequesttypedef) 
+
+### describe\_signing\_job
 
 Returns information about a specific code signing job.
 
-Type annotations for `boto3.client("signer").describe_signing_job` method.
+Type annotations and code completion for `#!python boto3.client("signer").describe_signing_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.describe_signing_job)
 
-Boto3 documentation:
-[signer.Client.describe_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.describe_signing_job)
+```python title="Method definition"
+def describe_signing_job(
+    self,
+    *,
+    jobId: str,
+) -> DescribeSigningJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSigningJobRequestRequestTypeDef](./type_defs.md#describesigningjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSigningJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
+parent.describe_signing_job(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSigningJobRequestRequestTypeDef](./type_defs.md#describesigningjobrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("signer").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("signer").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.generate_presigned_url)
 
-Boto3 documentation:
-[signer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_signing\_platform"></a>
-
-### get_signing_platform
+### get\_signing\_platform
 
 Returns information on a specific signing platform.
 
-Type annotations for `boto3.client("signer").get_signing_platform` method.
+Type annotations and code completion for `#!python boto3.client("signer").get_signing_platform` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_platform)
 
-Boto3 documentation:
-[signer.Client.get_signing_platform](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_platform)
+```python title="Method definition"
+def get_signing_platform(
+    self,
+    *,
+    platformId: str,
+) -> GetSigningPlatformResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSigningPlatformRequestRequestTypeDef](./type_defs.md#getsigningplatformrequestrequesttypedef).
+1. See [:material-code-braces: GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef) 
 
-Keyword-only arguments:
 
-- `platformId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSigningPlatformRequestRequestTypeDef = {  # (1)
+    "platformId": ...,
+}
 
-Returns
-[GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
+parent.get_signing_platform(**kwargs)
+```
 
-<a id="get\_signing\_profile"></a>
+1. See [:material-code-braces: GetSigningPlatformRequestRequestTypeDef](./type_defs.md#getsigningplatformrequestrequesttypedef) 
 
-### get_signing_profile
+### get\_signing\_profile
 
 Returns information on a specific signing profile.
 
-Type annotations for `boto3.client("signer").get_signing_profile` method.
+Type annotations and code completion for `#!python boto3.client("signer").get_signing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_profile)
 
-Boto3 documentation:
-[signer.Client.get_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.get_signing_profile)
+```python title="Method definition"
+def get_signing_profile(
+    self,
+    *,
+    profileName: str,
+    profileOwner: str = ...,
+) -> GetSigningProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSigningProfileRequestRequestTypeDef](./type_defs.md#getsigningprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `profileOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSigningProfileRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+}
 
-Returns
-[GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
+parent.get_signing_profile(**kwargs)
+```
 
-<a id="list\_profile\_permissions"></a>
+1. See [:material-code-braces: GetSigningProfileRequestRequestTypeDef](./type_defs.md#getsigningprofilerequestrequesttypedef) 
 
-### list_profile_permissions
+### list\_profile\_permissions
 
 Lists the cross-account permissions associated with a signing profile.
 
-Type annotations for `boto3.client("signer").list_profile_permissions` method.
+Type annotations and code completion for `#!python boto3.client("signer").list_profile_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_profile_permissions)
 
-Boto3 documentation:
-[signer.Client.list_profile_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_profile_permissions)
+```python title="Method definition"
+def list_profile_permissions(
+    self,
+    *,
+    profileName: str,
+    nextToken: str = ...,
+) -> ListProfilePermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProfilePermissionsRequestRequestTypeDef](./type_defs.md#listprofilepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProfilePermissionsRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+}
 
-Returns
-[ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
+parent.list_profile_permissions(**kwargs)
+```
 
-<a id="list\_signing\_jobs"></a>
+1. See [:material-code-braces: ListProfilePermissionsRequestRequestTypeDef](./type_defs.md#listprofilepermissionsrequestrequesttypedef) 
 
-### list_signing_jobs
+### list\_signing\_jobs
 
 Lists all your signing jobs.
 
-Type annotations for `boto3.client("signer").list_signing_jobs` method.
+Type annotations and code completion for `#!python boto3.client("signer").list_signing_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_jobs)
 
-Boto3 documentation:
-[signer.Client.list_signing_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_jobs)
+```python title="Method definition"
+def list_signing_jobs(
+    self,
+    *,
+    status: SigningStatusType = ...,  # (1)
+    platformId: str = ...,
+    requestedBy: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    isRevoked: bool = ...,
+    signatureExpiresBefore: Union[datetime, str] = ...,
+    signatureExpiresAfter: Union[datetime, str] = ...,
+    jobInvoker: str = ...,
+) -> ListSigningJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSigningJobsRequestRequestTypeDef](./type_defs.md#listsigningjobsrequestrequesttypedef).
+1. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
+2. See [:material-code-braces: ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `status`: [SigningStatusType](./literals.md#signingstatustype)
-- `platformId`: `str`
-- `requestedBy`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `isRevoked`: `bool`
-- `signatureExpiresBefore`: `Union`\[`datetime`, `str`\]
-- `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
-- `jobInvoker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSigningJobsRequestRequestTypeDef = {  # (1)
+    "status": ...,
+}
 
-Returns
-[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
+parent.list_signing_jobs(**kwargs)
+```
 
-<a id="list\_signing\_platforms"></a>
+1. See [:material-code-braces: ListSigningJobsRequestRequestTypeDef](./type_defs.md#listsigningjobsrequestrequesttypedef) 
 
-### list_signing_platforms
+### list\_signing\_platforms
 
 Lists all signing platforms available in code signing that match the request
 parameters.
 
-Type annotations for `boto3.client("signer").list_signing_platforms` method.
+Type annotations and code completion for `#!python boto3.client("signer").list_signing_platforms` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_platforms)
 
-Boto3 documentation:
-[signer.Client.list_signing_platforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_platforms)
+```python title="Method definition"
+def list_signing_platforms(
+    self,
+    *,
+    category: str = ...,
+    partner: str = ...,
+    target: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSigningPlatformsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSigningPlatformsRequestRequestTypeDef](./type_defs.md#listsigningplatformsrequestrequesttypedef).
+1. See [:material-code-braces: ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `category`: `str`
-- `partner`: `str`
-- `target`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSigningPlatformsRequestRequestTypeDef = {  # (1)
+    "category": ...,
+}
 
-Returns
-[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
+parent.list_signing_platforms(**kwargs)
+```
 
-<a id="list\_signing\_profiles"></a>
+1. See [:material-code-braces: ListSigningPlatformsRequestRequestTypeDef](./type_defs.md#listsigningplatformsrequestrequesttypedef) 
 
-### list_signing_profiles
+### list\_signing\_profiles
 
 Lists all available signing profiles in your AWS account.
 
-Type annotations for `boto3.client("signer").list_signing_profiles` method.
+Type annotations and code completion for `#!python boto3.client("signer").list_signing_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_profiles)
 
-Boto3 documentation:
-[signer.Client.list_signing_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_signing_profiles)
+```python title="Method definition"
+def list_signing_profiles(
+    self,
+    *,
+    includeCanceled: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    platformId: str = ...,
+    statuses: Sequence[SigningProfileStatusType] = ...,  # (1)
+) -> ListSigningProfilesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSigningProfilesRequestRequestTypeDef](./type_defs.md#listsigningprofilesrequestrequesttypedef).
+1. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
+2. See [:material-code-braces: ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `includeCanceled`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `platformId`: `str`
-- `statuses`:
-  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
+```python title="Usage example with kwargs"
+kwargs: ListSigningProfilesRequestRequestTypeDef = {  # (1)
+    "includeCanceled": ...,
+}
 
-Returns
-[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
+parent.list_signing_profiles(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSigningProfilesRequestRequestTypeDef](./type_defs.md#listsigningprofilesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of the tags associated with a signing profile resource.
 
-Type annotations for `boto3.client("signer").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("signer").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[signer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_signing\_profile"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_signing_profile
+### put\_signing\_profile
 
 Creates a signing profile.
 
-Type annotations for `boto3.client("signer").put_signing_profile` method.
+Type annotations and code completion for `#!python boto3.client("signer").put_signing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.put_signing_profile)
 
-Boto3 documentation:
-[signer.Client.put_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.put_signing_profile)
+```python title="Method definition"
+def put_signing_profile(
+    self,
+    *,
+    profileName: str,
+    platformId: str,
+    signingMaterial: SigningMaterialTypeDef = ...,  # (1)
+    signatureValidityPeriod: SignatureValidityPeriodTypeDef = ...,  # (2)
+    overrides: SigningPlatformOverridesTypeDef = ...,  # (3)
+    signingParameters: Mapping[str, str] = ...,
+    tags: Mapping[str, str] = ...,
+) -> PutSigningProfileResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[PutSigningProfileRequestRequestTypeDef](./type_defs.md#putsigningprofilerequestrequesttypedef).
+1. See [:material-code-braces: SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef) 
+2. See [:material-code-braces: SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef) 
+3. See [:material-code-braces: SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef) 
+4. See [:material-code-braces: PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `platformId`: `str` *(required)*
-- `signingMaterial`:
-  [SigningMaterialTypeDef](./type_defs.md#signingmaterialtypedef)
-- `signatureValidityPeriod`:
-  [SignatureValidityPeriodTypeDef](./type_defs.md#signaturevalidityperiodtypedef)
-- `overrides`:
-  [SigningPlatformOverridesTypeDef](./type_defs.md#signingplatformoverridestypedef)
-- `signingParameters`: `Mapping`\[`str`, `str`\]
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PutSigningProfileRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+    "platformId": ...,
+}
 
-Returns
-[PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
+parent.put_signing_profile(**kwargs)
+```
 
-<a id="remove\_profile\_permission"></a>
+1. See [:material-code-braces: PutSigningProfileRequestRequestTypeDef](./type_defs.md#putsigningprofilerequestrequesttypedef) 
 
-### remove_profile_permission
+### remove\_profile\_permission
 
 Removes cross-account permissions from a signing profile.
 
-Type annotations for `boto3.client("signer").remove_profile_permission` method.
+Type annotations and code completion for `#!python boto3.client("signer").remove_profile_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.remove_profile_permission)
 
-Boto3 documentation:
-[signer.Client.remove_profile_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.remove_profile_permission)
+```python title="Method definition"
+def remove_profile_permission(
+    self,
+    *,
+    profileName: str,
+    revisionId: str,
+    statementId: str,
+) -> RemoveProfilePermissionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveProfilePermissionRequestRequestTypeDef](./type_defs.md#removeprofilepermissionrequestrequesttypedef).
+1. See [:material-code-braces: RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `revisionId`: `str` *(required)*
-- `statementId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveProfilePermissionRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+    "revisionId": ...,
+    "statementId": ...,
+}
 
-Returns
-[RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
+parent.remove_profile_permission(**kwargs)
+```
 
-<a id="revoke\_signature"></a>
+1. See [:material-code-braces: RemoveProfilePermissionRequestRequestTypeDef](./type_defs.md#removeprofilepermissionrequestrequesttypedef) 
 
-### revoke_signature
+### revoke\_signature
 
 Changes the state of a signing job to REVOKED.
 
-Type annotations for `boto3.client("signer").revoke_signature` method.
+Type annotations and code completion for `#!python boto3.client("signer").revoke_signature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signature)
 
-Boto3 documentation:
-[signer.Client.revoke_signature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signature)
+```python title="Method definition"
+def revoke_signature(
+    self,
+    *,
+    jobId: str,
+    reason: str,
+    jobOwner: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RevokeSignatureRequestRequestTypeDef](./type_defs.md#revokesignaturerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `reason`: `str` *(required)*
-- `jobOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: RevokeSignatureRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "reason": ...,
+}
 
-<a id="revoke\_signing\_profile"></a>
+parent.revoke_signature(**kwargs)
+```
 
-### revoke_signing_profile
+1. See [:material-code-braces: RevokeSignatureRequestRequestTypeDef](./type_defs.md#revokesignaturerequestrequesttypedef) 
+
+### revoke\_signing\_profile
 
 Changes the state of a signing profile to REVOKED.
 
-Type annotations for `boto3.client("signer").revoke_signing_profile` method.
+Type annotations and code completion for `#!python boto3.client("signer").revoke_signing_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signing_profile)
 
-Boto3 documentation:
-[signer.Client.revoke_signing_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.revoke_signing_profile)
+```python title="Method definition"
+def revoke_signing_profile(
+    self,
+    *,
+    profileName: str,
+    profileVersion: str,
+    reason: str,
+    effectiveTime: Union[datetime, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RevokeSigningProfileRequestRequestTypeDef](./type_defs.md#revokesigningprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `profileName`: `str` *(required)*
-- `profileVersion`: `str` *(required)*
-- `reason`: `str` *(required)*
-- `effectiveTime`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RevokeSigningProfileRequestRequestTypeDef = {  # (1)
+    "profileName": ...,
+    "profileVersion": ...,
+    "reason": ...,
+    "effectiveTime": ...,
+}
 
-<a id="start\_signing\_job"></a>
+parent.revoke_signing_profile(**kwargs)
+```
 
-### start_signing_job
+1. See [:material-code-braces: RevokeSigningProfileRequestRequestTypeDef](./type_defs.md#revokesigningprofilerequestrequesttypedef) 
+
+### start\_signing\_job
 
 Initiates a signing job to be performed on the code provided.
 
-Type annotations for `boto3.client("signer").start_signing_job` method.
+Type annotations and code completion for `#!python boto3.client("signer").start_signing_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.start_signing_job)
 
-Boto3 documentation:
-[signer.Client.start_signing_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.start_signing_job)
+```python title="Method definition"
+def start_signing_job(
+    self,
+    *,
+    source: SourceTypeDef,  # (1)
+    destination: DestinationTypeDef,  # (2)
+    profileName: str,
+    clientRequestToken: str,
+    profileOwner: str = ...,
+) -> StartSigningJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartSigningJobRequestRequestTypeDef](./type_defs.md#startsigningjobrequestrequesttypedef).
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `source`: [SourceTypeDef](./type_defs.md#sourcetypedef) *(required)*
-- `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-  *(required)*
-- `profileName`: `str` *(required)*
-- `clientRequestToken`: `str` *(required)*
-- `profileOwner`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartSigningJobRequestRequestTypeDef = {  # (1)
+    "source": ...,
+    "destination": ...,
+    "profileName": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
+parent.start_signing_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartSigningJobRequestRequestTypeDef](./type_defs.md#startsigningjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to a signing profile.
 
-Type annotations for `boto3.client("signer").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("signer").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.tag_resource)
 
-Boto3 documentation:
-[signer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a signing profile.
 
-Type annotations for `boto3.client("signer").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("signer").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.untag_resource)
 
-Boto3 documentation:
-[signer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("signer").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("signer").get_paginator` method with overloads.
 
-- `client.get_paginator("list_signing_jobs")` ->
-  [ListSigningJobsPaginator](./paginators.md#listsigningjobspaginator)
-- `client.get_paginator("list_signing_platforms")` ->
-  [ListSigningPlatformsPaginator](./paginators.md#listsigningplatformspaginator)
-- `client.get_paginator("list_signing_profiles")` ->
-  [ListSigningProfilesPaginator](./paginators.md#listsigningprofilespaginator)
+- `client.get_paginator("list_signing_jobs")` -> [ListSigningJobsPaginator](./paginators.md#listsigningjobspaginator)
+- `client.get_paginator("list_signing_platforms")` -> [ListSigningPlatformsPaginator](./paginators.md#listsigningplatformspaginator)
+- `client.get_paginator("list_signing_profiles")` -> [ListSigningProfilesPaginator](./paginators.md#listsigningprofilespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("signer").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("signer").get_waiter` method with overloads.
 
-- `client.get_waiter("successful_signing_job")` ->
-  [SuccessfulSigningJobWaiter](./waiters.md#successfulsigningjobwaiter)
+- `client.get_waiter("successful_signing_job")` -> [SuccessfulSigningJobWaiter](./waiters.md#successfulsigningjobwaiter)
+

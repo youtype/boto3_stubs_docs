@@ -1,459 +1,561 @@
-<a id="typed-dictionaries-for-boto3-pi-module"></a>
-
-# Typed dictionaries for boto3 PI module
+# Typed dictionaries
 
 > [Index](../README.md) > [PI](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module
-[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
+!!! note ""
 
-- [Typed dictionaries for boto3 PI module](#typed-dictionaries-for-boto3-pi-module)
-  - [DataPointTypeDef](#datapointtypedef)
-  - [DescribeDimensionKeysRequestRequestTypeDef](#describedimensionkeysrequestrequesttypedef)
-  - [DescribeDimensionKeysResponseTypeDef](#describedimensionkeysresponsetypedef)
-  - [DimensionDetailTypeDef](#dimensiondetailtypedef)
-  - [DimensionGroupDetailTypeDef](#dimensiongroupdetailtypedef)
-  - [DimensionGroupTypeDef](#dimensiongrouptypedef)
-  - [DimensionKeyDescriptionTypeDef](#dimensionkeydescriptiontypedef)
-  - [DimensionKeyDetailTypeDef](#dimensionkeydetailtypedef)
-  - [FeatureMetadataTypeDef](#featuremetadatatypedef)
-  - [GetDimensionKeyDetailsRequestRequestTypeDef](#getdimensionkeydetailsrequestrequesttypedef)
-  - [GetDimensionKeyDetailsResponseTypeDef](#getdimensionkeydetailsresponsetypedef)
-  - [GetResourceMetadataRequestRequestTypeDef](#getresourcemetadatarequestrequesttypedef)
-  - [GetResourceMetadataResponseTypeDef](#getresourcemetadataresponsetypedef)
-  - [GetResourceMetricsRequestRequestTypeDef](#getresourcemetricsrequestrequesttypedef)
-  - [GetResourceMetricsResponseTypeDef](#getresourcemetricsresponsetypedef)
-  - [ListAvailableResourceDimensionsRequestRequestTypeDef](#listavailableresourcedimensionsrequestrequesttypedef)
-  - [ListAvailableResourceDimensionsResponseTypeDef](#listavailableresourcedimensionsresponsetypedef)
-  - [ListAvailableResourceMetricsRequestRequestTypeDef](#listavailableresourcemetricsrequestrequesttypedef)
-  - [ListAvailableResourceMetricsResponseTypeDef](#listavailableresourcemetricsresponsetypedef)
-  - [MetricDimensionGroupsTypeDef](#metricdimensiongroupstypedef)
-  - [MetricKeyDataPointsTypeDef](#metrickeydatapointstypedef)
-  - [MetricQueryTypeDef](#metricquerytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResponsePartitionKeyTypeDef](#responsepartitionkeytypedef)
-  - [ResponseResourceMetricKeyTypeDef](#responseresourcemetrickeytypedef)
-  - [ResponseResourceMetricTypeDef](#responseresourcemetrictypedef)
-
-<a id="datapointtypedef"></a>
+    Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+    type annotations stubs module [mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 ## DataPointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DataPointTypeDef
+
+def get_value() -> DataPointTypeDef:
+    return {
+        "Timestamp": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Timestamp`: `datetime`
-- `Value`: `float`
-
-<a id="describedimensionkeysrequestrequesttypedef"></a>
+```python title="Definition"
+class DataPointTypeDef(TypedDict):
+    Timestamp: datetime,
+    Value: float,
+```
 
 ## DescribeDimensionKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DescribeDimensionKeysRequestRequestTypeDef
+
+def get_value() -> DescribeDimensionKeysRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Metric": ...,
+        "GroupBy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDimensionKeysRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Metric: str,
+    GroupBy: DimensionGroupTypeDef,  # (2)
+    PeriodInSeconds: NotRequired[int],
+    AdditionalMetrics: NotRequired[Sequence[str]],
+    PartitionBy: NotRequired[DimensionGroupTypeDef],  # (2)
+    Filter: NotRequired[Mapping[str, str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Metric`: `str`
-- `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-
-Optional fields:
-
-- `PeriodInSeconds`: `int`
-- `AdditionalMetrics`: `Sequence`\[`str`\]
-- `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Mapping`\[`str`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describedimensionkeysresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef) 
+3. See [:material-code-braces: DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef) 
 ## DescribeDimensionKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DescribeDimensionKeysResponseTypeDef
+
+def get_value() -> DescribeDimensionKeysResponseTypeDef:
+    return {
+        "AlignedStartTime": ...,
+        "AlignedEndTime": ...,
+        "PartitionKeys": ...,
+        "Keys": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDimensionKeysResponseTypeDef(TypedDict):
+    AlignedStartTime: datetime,
+    AlignedEndTime: datetime,
+    PartitionKeys: List[ResponsePartitionKeyTypeDef],  # (1)
+    Keys: List[DimensionKeyDescriptionTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AlignedStartTime`: `datetime`
-- `AlignedEndTime`: `datetime`
-- `PartitionKeys`:
-  `List`\[[ResponsePartitionKeyTypeDef](./type_defs.md#responsepartitionkeytypedef)\]
-- `Keys`:
-  `List`\[[DimensionKeyDescriptionTypeDef](./type_defs.md#dimensionkeydescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensiondetailtypedef"></a>
-
+1. See [:material-code-braces: ResponsePartitionKeyTypeDef](./type_defs.md#responsepartitionkeytypedef) 
+2. See [:material-code-braces: DimensionKeyDescriptionTypeDef](./type_defs.md#dimensionkeydescriptiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DimensionDetailTypeDef
+
+def get_value() -> DimensionDetailTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `Identifier`: `str`
-
-<a id="dimensiongroupdetailtypedef"></a>
+```python title="Definition"
+class DimensionDetailTypeDef(TypedDict):
+    Identifier: NotRequired[str],
+```
 
 ## DimensionGroupDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DimensionGroupDetailTypeDef
+
+def get_value() -> DimensionGroupDetailTypeDef:
+    return {
+        "Group": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DimensionGroupDetailTypeDef(TypedDict):
+    Group: NotRequired[str],
+    Dimensions: NotRequired[List[DimensionDetailTypeDef]],  # (1)
+```
 
-- `Group`: `str`
-- `Dimensions`:
-  `List`\[[DimensionDetailTypeDef](./type_defs.md#dimensiondetailtypedef)\]
-
-<a id="dimensiongrouptypedef"></a>
-
+1. See [:material-code-braces: DimensionDetailTypeDef](./type_defs.md#dimensiondetailtypedef) 
 ## DimensionGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DimensionGroupTypeDef
+
+def get_value() -> DimensionGroupTypeDef:
+    return {
+        "Group": ...,
+    }
 ```
 
-Required fields:
-
-- `Group`: `str`
-
-Optional fields:
-
-- `Dimensions`: `Sequence`\[`str`\]
-- `Limit`: `int`
-
-<a id="dimensionkeydescriptiontypedef"></a>
+```python title="Definition"
+class DimensionGroupTypeDef(TypedDict):
+    Group: str,
+    Dimensions: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+```
 
 ## DimensionKeyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DimensionKeyDescriptionTypeDef
+
+def get_value() -> DimensionKeyDescriptionTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Optional fields:
-
-- `Dimensions`: `Dict`\[`str`, `str`\]
-- `Total`: `float`
-- `AdditionalMetrics`: `Dict`\[`str`, `float`\]
-- `Partitions`: `List`\[`float`\]
-
-<a id="dimensionkeydetailtypedef"></a>
+```python title="Definition"
+class DimensionKeyDescriptionTypeDef(TypedDict):
+    Dimensions: NotRequired[Dict[str, str]],
+    Total: NotRequired[float],
+    AdditionalMetrics: NotRequired[Dict[str, float]],
+    Partitions: NotRequired[List[float]],
+```
 
 ## DimensionKeyDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import DimensionKeyDetailTypeDef
+
+def get_value() -> DimensionKeyDetailTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DimensionKeyDetailTypeDef(TypedDict):
+    Value: NotRequired[str],
+    Dimension: NotRequired[str],
+    Status: NotRequired[DetailStatusType],  # (1)
+```
 
-- `Value`: `str`
-- `Dimension`: `str`
-- `Status`: [DetailStatusType](./literals.md#detailstatustype)
-
-<a id="featuremetadatatypedef"></a>
-
+1. See [:material-code-brackets: DetailStatusType](./literals.md#detailstatustype) 
 ## FeatureMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import FeatureMetadataTypeDef
+
+def get_value() -> FeatureMetadataTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FeatureMetadataTypeDef(TypedDict):
+    Status: NotRequired[FeatureStatusType],  # (1)
+```
 
-- `Status`: [FeatureStatusType](./literals.md#featurestatustype)
-
-<a id="getdimensionkeydetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FeatureStatusType](./literals.md#featurestatustype) 
 ## GetDimensionKeyDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsRequestRequestTypeDef
+
+def get_value() -> GetDimensionKeyDetailsRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+        "Group": ...,
+        "GroupIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDimensionKeyDetailsRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    Group: str,
+    GroupIdentifier: str,
+    RequestedDimensions: NotRequired[Sequence[str]],
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `Group`: `str`
-- `GroupIdentifier`: `str`
-
-Optional fields:
-
-- `RequestedDimensions`: `Sequence`\[`str`\]
-
-<a id="getdimensionkeydetailsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 ## GetDimensionKeyDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetDimensionKeyDetailsResponseTypeDef
+
+def get_value() -> GetDimensionKeyDetailsResponseTypeDef:
+    return {
+        "Dimensions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDimensionKeyDetailsResponseTypeDef(TypedDict):
+    Dimensions: List[DimensionKeyDetailTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Dimensions`:
-  `List`\[[DimensionKeyDetailTypeDef](./type_defs.md#dimensionkeydetailtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcemetadatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DimensionKeyDetailTypeDef](./type_defs.md#dimensionkeydetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetResourceMetadataRequestRequestTypeDef
+
+def get_value() -> GetResourceMetadataRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceMetadataRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-
-<a id="getresourcemetadataresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 ## GetResourceMetadataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetResourceMetadataResponseTypeDef
+
+def get_value() -> GetResourceMetadataResponseTypeDef:
+    return {
+        "Identifier": ...,
+        "Features": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceMetadataResponseTypeDef(TypedDict):
+    Identifier: str,
+    Features: Dict[str, FeatureMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Identifier`: `str`
-- `Features`: `Dict`\[`str`,
-  [FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcemetricsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourceMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetResourceMetricsRequestRequestTypeDef
+
+def get_value() -> GetResourceMetricsRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+        "MetricQueries": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceMetricsRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    MetricQueries: Sequence[MetricQueryTypeDef],  # (2)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    PeriodInSeconds: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `MetricQueries`:
-  `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `PeriodInSeconds`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getresourcemetricsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: MetricQueryTypeDef](./type_defs.md#metricquerytypedef) 
 ## GetResourceMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import GetResourceMetricsResponseTypeDef
+
+def get_value() -> GetResourceMetricsResponseTypeDef:
+    return {
+        "AlignedStartTime": ...,
+        "AlignedEndTime": ...,
+        "Identifier": ...,
+        "MetricList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceMetricsResponseTypeDef(TypedDict):
+    AlignedStartTime: datetime,
+    AlignedEndTime: datetime,
+    Identifier: str,
+    MetricList: List[MetricKeyDataPointsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AlignedStartTime`: `datetime`
-- `AlignedEndTime`: `datetime`
-- `Identifier`: `str`
-- `MetricList`:
-  `List`\[[MetricKeyDataPointsTypeDef](./type_defs.md#metrickeydatapointstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listavailableresourcedimensionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricKeyDataPointsTypeDef](./type_defs.md#metrickeydatapointstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAvailableResourceDimensionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ListAvailableResourceDimensionsRequestRequestTypeDef
+
+def get_value() -> ListAvailableResourceDimensionsRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+        "Metrics": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableResourceDimensionsRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    Metrics: Sequence[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `Metrics`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listavailableresourcedimensionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 ## ListAvailableResourceDimensionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ListAvailableResourceDimensionsResponseTypeDef
+
+def get_value() -> ListAvailableResourceDimensionsResponseTypeDef:
+    return {
+        "MetricDimensions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableResourceDimensionsResponseTypeDef(TypedDict):
+    MetricDimensions: List[MetricDimensionGroupsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MetricDimensions`:
-  `List`\[[MetricDimensionGroupsTypeDef](./type_defs.md#metricdimensiongroupstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listavailableresourcemetricsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricDimensionGroupsTypeDef](./type_defs.md#metricdimensiongroupstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAvailableResourceMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ListAvailableResourceMetricsRequestRequestTypeDef
+
+def get_value() -> ListAvailableResourceMetricsRequestRequestTypeDef:
+    return {
+        "ServiceType": ...,
+        "Identifier": ...,
+        "MetricTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableResourceMetricsRequestRequestTypeDef(TypedDict):
+    ServiceType: ServiceTypeType,  # (1)
+    Identifier: str,
+    MetricTypes: Sequence[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `Identifier`: `str`
-- `MetricTypes`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listavailableresourcemetricsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
 ## ListAvailableResourceMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ListAvailableResourceMetricsResponseTypeDef
+
+def get_value() -> ListAvailableResourceMetricsResponseTypeDef:
+    return {
+        "Metrics": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableResourceMetricsResponseTypeDef(TypedDict):
+    Metrics: List[ResponseResourceMetricTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Metrics`:
-  `List`\[[ResponseResourceMetricTypeDef](./type_defs.md#responseresourcemetrictypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metricdimensiongroupstypedef"></a>
-
+1. See [:material-code-braces: ResponseResourceMetricTypeDef](./type_defs.md#responseresourcemetrictypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricDimensionGroupsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import MetricDimensionGroupsTypeDef
+
+def get_value() -> MetricDimensionGroupsTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricDimensionGroupsTypeDef(TypedDict):
+    Metric: NotRequired[str],
+    Groups: NotRequired[List[DimensionGroupDetailTypeDef]],  # (1)
+```
 
-- `Metric`: `str`
-- `Groups`:
-  `List`\[[DimensionGroupDetailTypeDef](./type_defs.md#dimensiongroupdetailtypedef)\]
-
-<a id="metrickeydatapointstypedef"></a>
-
+1. See [:material-code-braces: DimensionGroupDetailTypeDef](./type_defs.md#dimensiongroupdetailtypedef) 
 ## MetricKeyDataPointsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import MetricKeyDataPointsTypeDef
+
+def get_value() -> MetricKeyDataPointsTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricKeyDataPointsTypeDef(TypedDict):
+    Key: NotRequired[ResponseResourceMetricKeyTypeDef],  # (1)
+    DataPoints: NotRequired[List[DataPointTypeDef]],  # (2)
+```
 
-- `Key`:
-  [ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef)
-- `DataPoints`: `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]
-
-<a id="metricquerytypedef"></a>
-
+1. See [:material-code-braces: ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef) 
+2. See [:material-code-braces: DataPointTypeDef](./type_defs.md#datapointtypedef) 
 ## MetricQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import MetricQueryTypeDef
+
+def get_value() -> MetricQueryTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricQueryTypeDef(TypedDict):
+    Metric: str,
+    GroupBy: NotRequired[DimensionGroupTypeDef],  # (1)
+    Filter: NotRequired[Mapping[str, str]],
+```
 
-- `Metric`: `str`
-
-Optional fields:
-
-- `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
-- `Filter`: `Mapping`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="responsepartitionkeytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResponsePartitionKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ResponsePartitionKeyTypeDef
+
+def get_value() -> ResponsePartitionKeyTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Required fields:
-
-- `Dimensions`: `Dict`\[`str`, `str`\]
-
-<a id="responseresourcemetrickeytypedef"></a>
+```python title="Definition"
+class ResponsePartitionKeyTypeDef(TypedDict):
+    Dimensions: Dict[str, str],
+```
 
 ## ResponseResourceMetricKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ResponseResourceMetricKeyTypeDef
+
+def get_value() -> ResponseResourceMetricKeyTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Required fields:
-
-- `Metric`: `str`
-
-Optional fields:
-
-- `Dimensions`: `Dict`\[`str`, `str`\]
-
-<a id="responseresourcemetrictypedef"></a>
+```python title="Definition"
+class ResponseResourceMetricKeyTypeDef(TypedDict):
+    Metric: str,
+    Dimensions: NotRequired[Dict[str, str]],
+```
 
 ## ResponseResourceMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_pi.type_defs import ResponseResourceMetricTypeDef
+
+def get_value() -> ResponseResourceMetricTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResponseResourceMetricTypeDef(TypedDict):
+    Metric: NotRequired[str],
+    Description: NotRequired[str],
+    Unit: NotRequired[str],
+```
 
-- `Metric`: `str`
-- `Description`: `str`
-- `Unit`: `str`

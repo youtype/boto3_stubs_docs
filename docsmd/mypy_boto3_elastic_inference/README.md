@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-elasticinference-module"></a>
-
-# Type annotations for boto3 ElasticInference module
+#  ElasticInference module
 
 > [Index](../README.md) > ElasticInference
 
-Auto-generated documentation for
-[ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
-type annotations stubs module
-[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+!!! note ""
 
-- [Type annotations for boto3 ElasticInference module](#type-annotations-for-boto3-elasticinference-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElasticInferenceClient](#elasticinferenceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
+    type annotations stubs module [mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElasticInference`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[elastic-inference]'
 python -m pip install mypy-boto3-elastic-inference
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,76 +42,58 @@ python -m pip install mypy-boto3-elastic-inference
 python -m pip uninstall -y mypy-boto3-elastic-inference
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elasticinferenceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElasticInferenceClient
 
-Type annotations for `boto3.client("elastic-inference")` as
-[ElasticInferenceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("elastic-inference")` as [ElasticInferenceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_elastic_inference.client import ElasticInferenceClient
+
+def get_client() -> ElasticInferenceClient:
+    return Session().cleint("elastic-inference")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [describe_accelerator_offerings](./client.md#describe_accelerator_offerings)
-- [describe_accelerator_types](./client.md#describe_accelerator_types)
-- [describe_accelerators](./client.md#describe_accelerators)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElasticInferenceClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- InternalServerException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("elastic-inference").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("elastic-inference").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator, ...
+from mypy_boto3_elastic_inference.paginator import DescribeAcceleratorsPaginator
+
+def get_describe_accelerators_paginator() -> DescribeAcceleratorsPaginator:
+    return Session().client("elastic-inference").get_paginator("describe_accelerators"))
 ```
 
 - [DescribeAcceleratorsPaginator](./paginators.md#describeacceleratorspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorName
 
-```python
-from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorName, ...
+def get_value() -> DescribeAcceleratorsPaginatorName:
+    return "describe_accelerators"
 ```
 
 - [DescribeAcceleratorsPaginatorName](./literals.md#describeacceleratorspaginatorname)
@@ -142,18 +102,22 @@ from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorN
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDef
 
-```python
-from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDef, ...
+def get_value() -> AcceleratorTypeOfferingTypeDef:
+    return {
+        "acceleratorType": ...,
+    }
 ```
 
 - [AcceleratorTypeOfferingTypeDef](./type_defs.md#acceleratortypeofferingtypedef)
@@ -161,6 +125,7 @@ from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDe
 - [DescribeAcceleratorOfferingsRequestRequestTypeDef](./type_defs.md#describeacceleratorofferingsrequestrequesttypedef)
 - [DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef)
 - [DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef)
+- [DescribeAcceleratorsRequestDescribeAcceleratorsPaginateTypeDef](./type_defs.md#describeacceleratorsrequestdescribeacceleratorspaginatetypedef)
 - [DescribeAcceleratorsRequestRequestTypeDef](./type_defs.md#describeacceleratorsrequestrequesttypedef)
 - [DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef)
 - [ElasticInferenceAcceleratorHealthTypeDef](./type_defs.md#elasticinferenceacceleratorhealthtypedef)
@@ -174,3 +139,4 @@ from mypy_boto3_elastic_inference.type_defs import AcceleratorTypeOfferingTypeDe
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+

@@ -1,1624 +1,1714 @@
-<a id="literals-for-boto3-connect-module"></a>
-
-# Literals for boto3 Connect module
+# Literals
 
 > [Index](../README.md) > [Connect](./README.md) > Literals
 
-Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module
-[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
+!!! note ""
 
-- [Literals for boto3 Connect module](#literals-for-boto3-connect-module)
-  - [AgentStatusStateType](#agentstatusstatetype)
-  - [AgentStatusTypeType](#agentstatustypetype)
-  - [ChannelType](#channeltype)
-  - [ComparisonType](#comparisontype)
-  - [ContactFlowModuleStateType](#contactflowmodulestatetype)
-  - [ContactFlowModuleStatusType](#contactflowmodulestatustype)
-  - [ContactFlowStateType](#contactflowstatetype)
-  - [ContactFlowTypeType](#contactflowtypetype)
-  - [ContactInitiationMethodType](#contactinitiationmethodtype)
-  - [CurrentMetricNameType](#currentmetricnametype)
-  - [DirectoryTypeType](#directorytypetype)
-  - [EncryptionTypeType](#encryptiontypetype)
-  - [GetMetricDataPaginatorName](#getmetricdatapaginatorname)
-  - [GroupingType](#groupingtype)
-  - [HistoricalMetricNameType](#historicalmetricnametype)
-  - [HoursOfOperationDaysType](#hoursofoperationdaystype)
-  - [InstanceAttributeTypeType](#instanceattributetypetype)
-  - [InstanceStatusType](#instancestatustype)
-  - [InstanceStorageResourceTypeType](#instancestorageresourcetypetype)
-  - [IntegrationTypeType](#integrationtypetype)
-  - [LexVersionType](#lexversiontype)
-  - [ListAgentStatusesPaginatorName](#listagentstatusespaginatorname)
-  - [ListApprovedOriginsPaginatorName](#listapprovedoriginspaginatorname)
-  - [ListBotsPaginatorName](#listbotspaginatorname)
-  - [ListContactFlowModulesPaginatorName](#listcontactflowmodulespaginatorname)
-  - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
-  - [ListContactReferencesPaginatorName](#listcontactreferencespaginatorname)
-  - [ListDefaultVocabulariesPaginatorName](#listdefaultvocabulariespaginatorname)
-  - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
-  - [ListInstanceAttributesPaginatorName](#listinstanceattributespaginatorname)
-  - [ListInstanceStorageConfigsPaginatorName](#listinstancestorageconfigspaginatorname)
-  - [ListInstancesPaginatorName](#listinstancespaginatorname)
-  - [ListIntegrationAssociationsPaginatorName](#listintegrationassociationspaginatorname)
-  - [ListLambdaFunctionsPaginatorName](#listlambdafunctionspaginatorname)
-  - [ListLexBotsPaginatorName](#listlexbotspaginatorname)
-  - [ListPhoneNumbersPaginatorName](#listphonenumberspaginatorname)
-  - [ListPromptsPaginatorName](#listpromptspaginatorname)
-  - [ListQueueQuickConnectsPaginatorName](#listqueuequickconnectspaginatorname)
-  - [ListQueuesPaginatorName](#listqueuespaginatorname)
-  - [ListQuickConnectsPaginatorName](#listquickconnectspaginatorname)
-  - [ListRoutingProfileQueuesPaginatorName](#listroutingprofilequeuespaginatorname)
-  - [ListRoutingProfilesPaginatorName](#listroutingprofilespaginatorname)
-  - [ListSecurityKeysPaginatorName](#listsecuritykeyspaginatorname)
-  - [ListSecurityProfilePermissionsPaginatorName](#listsecurityprofilepermissionspaginatorname)
-  - [ListSecurityProfilesPaginatorName](#listsecurityprofilespaginatorname)
-  - [ListUseCasesPaginatorName](#listusecasespaginatorname)
-  - [ListUserHierarchyGroupsPaginatorName](#listuserhierarchygroupspaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [PhoneNumberCountryCodeType](#phonenumbercountrycodetype)
-  - [PhoneNumberTypeType](#phonenumbertypetype)
-  - [PhoneTypeType](#phonetypetype)
-  - [QueueStatusType](#queuestatustype)
-  - [QueueTypeType](#queuetypetype)
-  - [QuickConnectTypeType](#quickconnecttypetype)
-  - [ReferenceStatusType](#referencestatustype)
-  - [ReferenceTypeType](#referencetypetype)
-  - [SearchVocabulariesPaginatorName](#searchvocabulariespaginatorname)
-  - [SourceTypeType](#sourcetypetype)
-  - [StatisticType](#statistictype)
-  - [StorageTypeType](#storagetypetype)
-  - [TrafficTypeType](#traffictypetype)
-  - [UnitType](#unittype)
-  - [UseCaseTypeType](#usecasetypetype)
-  - [VocabularyLanguageCodeType](#vocabularylanguagecodetype)
-  - [VocabularyStateType](#vocabularystatetype)
-  - [VoiceRecordingTrackType](#voicerecordingtracktype)
-  - [ConnectServiceName](#connectservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="agentstatusstatetype"></a>
+    Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+    type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ## AgentStatusStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import AgentStatusStateType
+
+def get_value() -> AgentStatusStateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="agentstatustypetype"></a>
-
+```python title="Definition"
+AgentStatusStateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AgentStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import AgentStatusTypeType
+
+def get_value() -> AgentStatusTypeType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `OFFLINE`
-- `ROUTABLE`
-
-<a id="channeltype"></a>
-
+```python title="Definition"
+AgentStatusTypeType = Literal[
+    "CUSTOM",
+    "OFFLINE",
+    "ROUTABLE",
+]
+```
 ## ChannelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ChannelType
+
+def get_value() -> ChannelType:
+    return "CHAT"
 ```
 
-Values:
-
-- `CHAT`
-- `TASK`
-- `VOICE`
-
-<a id="comparisontype"></a>
-
+```python title="Definition"
+ChannelType = Literal[
+    "CHAT",
+    "TASK",
+    "VOICE",
+]
+```
 ## ComparisonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ComparisonType
+
+def get_value() -> ComparisonType:
+    return "LT"
 ```
 
-Values:
-
-- `LT`
-
-<a id="contactflowmodulestatetype"></a>
-
+```python title="Definition"
+ComparisonType = Literal[
+    "LT",
+]
+```
 ## ContactFlowModuleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ContactFlowModuleStateType
+
+def get_value() -> ContactFlowModuleStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `ARCHIVED`
-
-<a id="contactflowmodulestatustype"></a>
-
+```python title="Definition"
+ContactFlowModuleStateType = Literal[
+    "ACTIVE",
+    "ARCHIVED",
+]
+```
 ## ContactFlowModuleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ContactFlowModuleStatusType
+
+def get_value() -> ContactFlowModuleStatusType:
+    return "PUBLISHED"
 ```
 
-Values:
-
-- `PUBLISHED`
-- `SAVED`
-
-<a id="contactflowstatetype"></a>
-
+```python title="Definition"
+ContactFlowModuleStatusType = Literal[
+    "PUBLISHED",
+    "SAVED",
+]
+```
 ## ContactFlowStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ContactFlowStateType
+
+def get_value() -> ContactFlowStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `ARCHIVED`
-
-<a id="contactflowtypetype"></a>
-
+```python title="Definition"
+ContactFlowStateType = Literal[
+    "ACTIVE",
+    "ARCHIVED",
+]
+```
 ## ContactFlowTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ContactFlowTypeType
+
+def get_value() -> ContactFlowTypeType:
+    return "AGENT_HOLD"
 ```
 
-Values:
-
-- `AGENT_HOLD`
-- `AGENT_TRANSFER`
-- `AGENT_WHISPER`
-- `CONTACT_FLOW`
-- `CUSTOMER_HOLD`
-- `CUSTOMER_QUEUE`
-- `CUSTOMER_WHISPER`
-- `OUTBOUND_WHISPER`
-- `QUEUE_TRANSFER`
-
-<a id="contactinitiationmethodtype"></a>
-
+```python title="Definition"
+ContactFlowTypeType = Literal[
+    "AGENT_HOLD",
+    "AGENT_TRANSFER",
+    "AGENT_WHISPER",
+    "CONTACT_FLOW",
+    "CUSTOMER_HOLD",
+    "CUSTOMER_QUEUE",
+    "CUSTOMER_WHISPER",
+    "OUTBOUND_WHISPER",
+    "QUEUE_TRANSFER",
+]
+```
 ## ContactInitiationMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ContactInitiationMethodType
+
+def get_value() -> ContactInitiationMethodType:
+    return "API"
 ```
 
-Values:
-
-- `API`
-- `CALLBACK`
-- `INBOUND`
-- `OUTBOUND`
-- `QUEUE_TRANSFER`
-- `TRANSFER`
-
-<a id="currentmetricnametype"></a>
-
+```python title="Definition"
+ContactInitiationMethodType = Literal[
+    "API",
+    "CALLBACK",
+    "INBOUND",
+    "OUTBOUND",
+    "QUEUE_TRANSFER",
+    "TRANSFER",
+]
+```
 ## CurrentMetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import CurrentMetricNameType
+
+def get_value() -> CurrentMetricNameType:
+    return "AGENTS_AFTER_CONTACT_WORK"
 ```
 
-Values:
-
-- `AGENTS_AFTER_CONTACT_WORK`
-- `AGENTS_AVAILABLE`
-- `AGENTS_ERROR`
-- `AGENTS_NON_PRODUCTIVE`
-- `AGENTS_ON_CALL`
-- `AGENTS_ON_CONTACT`
-- `AGENTS_ONLINE`
-- `AGENTS_STAFFED`
-- `CONTACTS_IN_QUEUE`
-- `CONTACTS_SCHEDULED`
-- `OLDEST_CONTACT_AGE`
-- `SLOTS_ACTIVE`
-- `SLOTS_AVAILABLE`
-
-<a id="directorytypetype"></a>
-
+```python title="Definition"
+CurrentMetricNameType = Literal[
+    "AGENTS_AFTER_CONTACT_WORK",
+    "AGENTS_AVAILABLE",
+    "AGENTS_ERROR",
+    "AGENTS_NON_PRODUCTIVE",
+    "AGENTS_ON_CALL",
+    "AGENTS_ON_CONTACT",
+    "AGENTS_ONLINE",
+    "AGENTS_STAFFED",
+    "CONTACTS_IN_QUEUE",
+    "CONTACTS_SCHEDULED",
+    "OLDEST_CONTACT_AGE",
+    "SLOTS_ACTIVE",
+    "SLOTS_AVAILABLE",
+]
+```
 ## DirectoryTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import DirectoryTypeType
+
+def get_value() -> DirectoryTypeType:
+    return "CONNECT_MANAGED"
 ```
 
-Values:
-
-- `CONNECT_MANAGED`
-- `EXISTING_DIRECTORY`
-- `SAML`
-
-<a id="encryptiontypetype"></a>
-
+```python title="Definition"
+DirectoryTypeType = Literal[
+    "CONNECT_MANAGED",
+    "EXISTING_DIRECTORY",
+    "SAML",
+]
+```
 ## EncryptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import EncryptionTypeType
+
+def get_value() -> EncryptionTypeType:
+    return "KMS"
 ```
 
-Values:
-
-- `KMS`
-
-<a id="getmetricdatapaginatorname"></a>
-
+```python title="Definition"
+EncryptionTypeType = Literal[
+    "KMS",
+]
+```
 ## GetMetricDataPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import GetMetricDataPaginatorName
+
+def get_value() -> GetMetricDataPaginatorName:
+    return "get_metric_data"
 ```
 
-Values:
-
-- `get_metric_data`
-
-<a id="groupingtype"></a>
-
+```python title="Definition"
+GetMetricDataPaginatorName = Literal[
+    "get_metric_data",
+]
+```
 ## GroupingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import GroupingType
+
+def get_value() -> GroupingType:
+    return "CHANNEL"
 ```
 
-Values:
-
-- `CHANNEL`
-- `QUEUE`
-
-<a id="historicalmetricnametype"></a>
-
+```python title="Definition"
+GroupingType = Literal[
+    "CHANNEL",
+    "QUEUE",
+]
+```
 ## HistoricalMetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import HistoricalMetricNameType
+
+def get_value() -> HistoricalMetricNameType:
+    return "ABANDON_TIME"
 ```
 
-Values:
-
-- `ABANDON_TIME`
-- `AFTER_CONTACT_WORK_TIME`
-- `API_CONTACTS_HANDLED`
-- `CALLBACK_CONTACTS_HANDLED`
-- `CONTACTS_ABANDONED`
-- `CONTACTS_AGENT_HUNG_UP_FIRST`
-- `CONTACTS_CONSULTED`
-- `CONTACTS_HANDLED`
-- `CONTACTS_HANDLED_INCOMING`
-- `CONTACTS_HANDLED_OUTBOUND`
-- `CONTACTS_HOLD_ABANDONS`
-- `CONTACTS_MISSED`
-- `CONTACTS_QUEUED`
-- `CONTACTS_TRANSFERRED_IN`
-- `CONTACTS_TRANSFERRED_IN_FROM_QUEUE`
-- `CONTACTS_TRANSFERRED_OUT`
-- `CONTACTS_TRANSFERRED_OUT_FROM_QUEUE`
-- `HANDLE_TIME`
-- `HOLD_TIME`
-- `INTERACTION_AND_HOLD_TIME`
-- `INTERACTION_TIME`
-- `OCCUPANCY`
-- `QUEUE_ANSWER_TIME`
-- `QUEUED_TIME`
-- `SERVICE_LEVEL`
-
-<a id="hoursofoperationdaystype"></a>
-
+```python title="Definition"
+HistoricalMetricNameType = Literal[
+    "ABANDON_TIME",
+    "AFTER_CONTACT_WORK_TIME",
+    "API_CONTACTS_HANDLED",
+    "CALLBACK_CONTACTS_HANDLED",
+    "CONTACTS_ABANDONED",
+    "CONTACTS_AGENT_HUNG_UP_FIRST",
+    "CONTACTS_CONSULTED",
+    "CONTACTS_HANDLED",
+    "CONTACTS_HANDLED_INCOMING",
+    "CONTACTS_HANDLED_OUTBOUND",
+    "CONTACTS_HOLD_ABANDONS",
+    "CONTACTS_MISSED",
+    "CONTACTS_QUEUED",
+    "CONTACTS_TRANSFERRED_IN",
+    "CONTACTS_TRANSFERRED_IN_FROM_QUEUE",
+    "CONTACTS_TRANSFERRED_OUT",
+    "CONTACTS_TRANSFERRED_OUT_FROM_QUEUE",
+    "HANDLE_TIME",
+    "HOLD_TIME",
+    "INTERACTION_AND_HOLD_TIME",
+    "INTERACTION_TIME",
+    "OCCUPANCY",
+    "QUEUE_ANSWER_TIME",
+    "QUEUED_TIME",
+    "SERVICE_LEVEL",
+]
+```
 ## HoursOfOperationDaysType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import HoursOfOperationDaysType
+
+def get_value() -> HoursOfOperationDaysType:
+    return "FRIDAY"
 ```
 
-Values:
-
-- `FRIDAY`
-- `MONDAY`
-- `SATURDAY`
-- `SUNDAY`
-- `THURSDAY`
-- `TUESDAY`
-- `WEDNESDAY`
-
-<a id="instanceattributetypetype"></a>
-
+```python title="Definition"
+HoursOfOperationDaysType = Literal[
+    "FRIDAY",
+    "MONDAY",
+    "SATURDAY",
+    "SUNDAY",
+    "THURSDAY",
+    "TUESDAY",
+    "WEDNESDAY",
+]
+```
 ## InstanceAttributeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import InstanceAttributeTypeType
+
+def get_value() -> InstanceAttributeTypeType:
+    return "AUTO_RESOLVE_BEST_VOICES"
 ```
 
-Values:
-
-- `AUTO_RESOLVE_BEST_VOICES`
-- `CONTACT_LENS`
-- `CONTACTFLOW_LOGS`
-- `EARLY_MEDIA`
-- `INBOUND_CALLS`
-- `OUTBOUND_CALLS`
-- `USE_CUSTOM_TTS_VOICES`
-
-<a id="instancestatustype"></a>
-
+```python title="Definition"
+InstanceAttributeTypeType = Literal[
+    "AUTO_RESOLVE_BEST_VOICES",
+    "CONTACT_LENS",
+    "CONTACTFLOW_LOGS",
+    "EARLY_MEDIA",
+    "INBOUND_CALLS",
+    "OUTBOUND_CALLS",
+    "USE_CUSTOM_TTS_VOICES",
+]
+```
 ## InstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import InstanceStatusType
+
+def get_value() -> InstanceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATION_FAILED`
-- `CREATION_IN_PROGRESS`
-
-<a id="instancestorageresourcetypetype"></a>
-
+```python title="Definition"
+InstanceStatusType = Literal[
+    "ACTIVE",
+    "CREATION_FAILED",
+    "CREATION_IN_PROGRESS",
+]
+```
 ## InstanceStorageResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import InstanceStorageResourceTypeType
+
+def get_value() -> InstanceStorageResourceTypeType:
+    return "AGENT_EVENTS"
 ```
 
-Values:
-
-- `AGENT_EVENTS`
-- `CALL_RECORDINGS`
-- `CHAT_TRANSCRIPTS`
-- `CONTACT_TRACE_RECORDS`
-- `MEDIA_STREAMS`
-- `REAL_TIME_CONTACT_ANALYSIS_SEGMENTS`
-- `SCHEDULED_REPORTS`
-
-<a id="integrationtypetype"></a>
-
+```python title="Definition"
+InstanceStorageResourceTypeType = Literal[
+    "AGENT_EVENTS",
+    "CALL_RECORDINGS",
+    "CHAT_TRANSCRIPTS",
+    "CONTACT_TRACE_RECORDS",
+    "MEDIA_STREAMS",
+    "REAL_TIME_CONTACT_ANALYSIS_SEGMENTS",
+    "SCHEDULED_REPORTS",
+]
+```
 ## IntegrationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import IntegrationTypeType
+
+def get_value() -> IntegrationTypeType:
+    return "EVENT"
 ```
 
-Values:
-
-- `EVENT`
-- `PINPOINT_APP`
-- `VOICE_ID`
-- `WISDOM_ASSISTANT`
-- `WISDOM_KNOWLEDGE_BASE`
-
-<a id="lexversiontype"></a>
-
+```python title="Definition"
+IntegrationTypeType = Literal[
+    "EVENT",
+    "PINPOINT_APP",
+    "VOICE_ID",
+    "WISDOM_ASSISTANT",
+    "WISDOM_KNOWLEDGE_BASE",
+]
+```
 ## LexVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import LexVersionType
+
+def get_value() -> LexVersionType:
+    return "V1"
 ```
 
-Values:
-
-- `V1`
-- `V2`
-
-<a id="listagentstatusespaginatorname"></a>
-
+```python title="Definition"
+LexVersionType = Literal[
+    "V1",
+    "V2",
+]
+```
 ## ListAgentStatusesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListAgentStatusesPaginatorName
+
+def get_value() -> ListAgentStatusesPaginatorName:
+    return "list_agent_statuses"
 ```
 
-Values:
-
-- `list_agent_statuses`
-
-<a id="listapprovedoriginspaginatorname"></a>
-
+```python title="Definition"
+ListAgentStatusesPaginatorName = Literal[
+    "list_agent_statuses",
+]
+```
 ## ListApprovedOriginsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListApprovedOriginsPaginatorName
+
+def get_value() -> ListApprovedOriginsPaginatorName:
+    return "list_approved_origins"
 ```
 
-Values:
-
-- `list_approved_origins`
-
-<a id="listbotspaginatorname"></a>
-
+```python title="Definition"
+ListApprovedOriginsPaginatorName = Literal[
+    "list_approved_origins",
+]
+```
 ## ListBotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListBotsPaginatorName
+
+def get_value() -> ListBotsPaginatorName:
+    return "list_bots"
 ```
 
-Values:
-
-- `list_bots`
-
-<a id="listcontactflowmodulespaginatorname"></a>
-
+```python title="Definition"
+ListBotsPaginatorName = Literal[
+    "list_bots",
+]
+```
 ## ListContactFlowModulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListContactFlowModulesPaginatorName
+
+def get_value() -> ListContactFlowModulesPaginatorName:
+    return "list_contact_flow_modules"
 ```
 
-Values:
-
-- `list_contact_flow_modules`
-
-<a id="listcontactflowspaginatorname"></a>
-
+```python title="Definition"
+ListContactFlowModulesPaginatorName = Literal[
+    "list_contact_flow_modules",
+]
+```
 ## ListContactFlowsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListContactFlowsPaginatorName
+
+def get_value() -> ListContactFlowsPaginatorName:
+    return "list_contact_flows"
 ```
 
-Values:
-
-- `list_contact_flows`
-
-<a id="listcontactreferencespaginatorname"></a>
-
+```python title="Definition"
+ListContactFlowsPaginatorName = Literal[
+    "list_contact_flows",
+]
+```
 ## ListContactReferencesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListContactReferencesPaginatorName
+
+def get_value() -> ListContactReferencesPaginatorName:
+    return "list_contact_references"
 ```
 
-Values:
-
-- `list_contact_references`
-
-<a id="listdefaultvocabulariespaginatorname"></a>
-
+```python title="Definition"
+ListContactReferencesPaginatorName = Literal[
+    "list_contact_references",
+]
+```
 ## ListDefaultVocabulariesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListDefaultVocabulariesPaginatorName
+
+def get_value() -> ListDefaultVocabulariesPaginatorName:
+    return "list_default_vocabularies"
 ```
 
-Values:
-
-- `list_default_vocabularies`
-
-<a id="listhoursofoperationspaginatorname"></a>
-
+```python title="Definition"
+ListDefaultVocabulariesPaginatorName = Literal[
+    "list_default_vocabularies",
+]
+```
 ## ListHoursOfOperationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListHoursOfOperationsPaginatorName
+
+def get_value() -> ListHoursOfOperationsPaginatorName:
+    return "list_hours_of_operations"
 ```
 
-Values:
-
-- `list_hours_of_operations`
-
-<a id="listinstanceattributespaginatorname"></a>
-
+```python title="Definition"
+ListHoursOfOperationsPaginatorName = Literal[
+    "list_hours_of_operations",
+]
+```
 ## ListInstanceAttributesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListInstanceAttributesPaginatorName
+
+def get_value() -> ListInstanceAttributesPaginatorName:
+    return "list_instance_attributes"
 ```
 
-Values:
-
-- `list_instance_attributes`
-
-<a id="listinstancestorageconfigspaginatorname"></a>
-
+```python title="Definition"
+ListInstanceAttributesPaginatorName = Literal[
+    "list_instance_attributes",
+]
+```
 ## ListInstanceStorageConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListInstanceStorageConfigsPaginatorName
+
+def get_value() -> ListInstanceStorageConfigsPaginatorName:
+    return "list_instance_storage_configs"
 ```
 
-Values:
-
-- `list_instance_storage_configs`
-
-<a id="listinstancespaginatorname"></a>
-
+```python title="Definition"
+ListInstanceStorageConfigsPaginatorName = Literal[
+    "list_instance_storage_configs",
+]
+```
 ## ListInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListInstancesPaginatorName
+
+def get_value() -> ListInstancesPaginatorName:
+    return "list_instances"
 ```
 
-Values:
-
-- `list_instances`
-
-<a id="listintegrationassociationspaginatorname"></a>
-
+```python title="Definition"
+ListInstancesPaginatorName = Literal[
+    "list_instances",
+]
+```
 ## ListIntegrationAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListIntegrationAssociationsPaginatorName
+
+def get_value() -> ListIntegrationAssociationsPaginatorName:
+    return "list_integration_associations"
 ```
 
-Values:
-
-- `list_integration_associations`
-
-<a id="listlambdafunctionspaginatorname"></a>
-
+```python title="Definition"
+ListIntegrationAssociationsPaginatorName = Literal[
+    "list_integration_associations",
+]
+```
 ## ListLambdaFunctionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListLambdaFunctionsPaginatorName
+
+def get_value() -> ListLambdaFunctionsPaginatorName:
+    return "list_lambda_functions"
 ```
 
-Values:
-
-- `list_lambda_functions`
-
-<a id="listlexbotspaginatorname"></a>
-
+```python title="Definition"
+ListLambdaFunctionsPaginatorName = Literal[
+    "list_lambda_functions",
+]
+```
 ## ListLexBotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListLexBotsPaginatorName
+
+def get_value() -> ListLexBotsPaginatorName:
+    return "list_lex_bots"
 ```
 
-Values:
-
-- `list_lex_bots`
-
-<a id="listphonenumberspaginatorname"></a>
-
+```python title="Definition"
+ListLexBotsPaginatorName = Literal[
+    "list_lex_bots",
+]
+```
 ## ListPhoneNumbersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListPhoneNumbersPaginatorName
+
+def get_value() -> ListPhoneNumbersPaginatorName:
+    return "list_phone_numbers"
 ```
 
-Values:
-
-- `list_phone_numbers`
-
-<a id="listpromptspaginatorname"></a>
-
+```python title="Definition"
+ListPhoneNumbersPaginatorName = Literal[
+    "list_phone_numbers",
+]
+```
 ## ListPromptsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListPromptsPaginatorName
+
+def get_value() -> ListPromptsPaginatorName:
+    return "list_prompts"
 ```
 
-Values:
-
-- `list_prompts`
-
-<a id="listqueuequickconnectspaginatorname"></a>
-
+```python title="Definition"
+ListPromptsPaginatorName = Literal[
+    "list_prompts",
+]
+```
 ## ListQueueQuickConnectsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListQueueQuickConnectsPaginatorName
+
+def get_value() -> ListQueueQuickConnectsPaginatorName:
+    return "list_queue_quick_connects"
 ```
 
-Values:
-
-- `list_queue_quick_connects`
-
-<a id="listqueuespaginatorname"></a>
-
+```python title="Definition"
+ListQueueQuickConnectsPaginatorName = Literal[
+    "list_queue_quick_connects",
+]
+```
 ## ListQueuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListQueuesPaginatorName
+
+def get_value() -> ListQueuesPaginatorName:
+    return "list_queues"
 ```
 
-Values:
-
-- `list_queues`
-
-<a id="listquickconnectspaginatorname"></a>
-
+```python title="Definition"
+ListQueuesPaginatorName = Literal[
+    "list_queues",
+]
+```
 ## ListQuickConnectsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListQuickConnectsPaginatorName
+
+def get_value() -> ListQuickConnectsPaginatorName:
+    return "list_quick_connects"
 ```
 
-Values:
-
-- `list_quick_connects`
-
-<a id="listroutingprofilequeuespaginatorname"></a>
-
+```python title="Definition"
+ListQuickConnectsPaginatorName = Literal[
+    "list_quick_connects",
+]
+```
 ## ListRoutingProfileQueuesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListRoutingProfileQueuesPaginatorName
+
+def get_value() -> ListRoutingProfileQueuesPaginatorName:
+    return "list_routing_profile_queues"
 ```
 
-Values:
-
-- `list_routing_profile_queues`
-
-<a id="listroutingprofilespaginatorname"></a>
-
+```python title="Definition"
+ListRoutingProfileQueuesPaginatorName = Literal[
+    "list_routing_profile_queues",
+]
+```
 ## ListRoutingProfilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListRoutingProfilesPaginatorName
+
+def get_value() -> ListRoutingProfilesPaginatorName:
+    return "list_routing_profiles"
 ```
 
-Values:
-
-- `list_routing_profiles`
-
-<a id="listsecuritykeyspaginatorname"></a>
-
+```python title="Definition"
+ListRoutingProfilesPaginatorName = Literal[
+    "list_routing_profiles",
+]
+```
 ## ListSecurityKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListSecurityKeysPaginatorName
+
+def get_value() -> ListSecurityKeysPaginatorName:
+    return "list_security_keys"
 ```
 
-Values:
-
-- `list_security_keys`
-
-<a id="listsecurityprofilepermissionspaginatorname"></a>
-
+```python title="Definition"
+ListSecurityKeysPaginatorName = Literal[
+    "list_security_keys",
+]
+```
 ## ListSecurityProfilePermissionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListSecurityProfilePermissionsPaginatorName
+
+def get_value() -> ListSecurityProfilePermissionsPaginatorName:
+    return "list_security_profile_permissions"
 ```
 
-Values:
-
-- `list_security_profile_permissions`
-
-<a id="listsecurityprofilespaginatorname"></a>
-
+```python title="Definition"
+ListSecurityProfilePermissionsPaginatorName = Literal[
+    "list_security_profile_permissions",
+]
+```
 ## ListSecurityProfilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListSecurityProfilesPaginatorName
+
+def get_value() -> ListSecurityProfilesPaginatorName:
+    return "list_security_profiles"
 ```
 
-Values:
-
-- `list_security_profiles`
-
-<a id="listusecasespaginatorname"></a>
-
+```python title="Definition"
+ListSecurityProfilesPaginatorName = Literal[
+    "list_security_profiles",
+]
+```
 ## ListUseCasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListUseCasesPaginatorName
+
+def get_value() -> ListUseCasesPaginatorName:
+    return "list_use_cases"
 ```
 
-Values:
-
-- `list_use_cases`
-
-<a id="listuserhierarchygroupspaginatorname"></a>
-
+```python title="Definition"
+ListUseCasesPaginatorName = Literal[
+    "list_use_cases",
+]
+```
 ## ListUserHierarchyGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListUserHierarchyGroupsPaginatorName
+
+def get_value() -> ListUserHierarchyGroupsPaginatorName:
+    return "list_user_hierarchy_groups"
 ```
 
-Values:
-
-- `list_user_hierarchy_groups`
-
-<a id="listuserspaginatorname"></a>
-
+```python title="Definition"
+ListUserHierarchyGroupsPaginatorName = Literal[
+    "list_user_hierarchy_groups",
+]
+```
 ## ListUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ListUsersPaginatorName
+
+def get_value() -> ListUsersPaginatorName:
+    return "list_users"
 ```
 
-Values:
-
-- `list_users`
-
-<a id="phonenumbercountrycodetype"></a>
-
+```python title="Definition"
+ListUsersPaginatorName = Literal[
+    "list_users",
+]
+```
 ## PhoneNumberCountryCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import PhoneNumberCountryCodeType
+
+def get_value() -> PhoneNumberCountryCodeType:
+    return "AD"
 ```
 
-Values:
-
-- `AD`
-- `AE`
-- `AF`
-- `AG`
-- `AI`
-- `AL`
-- `AM`
-- `AN`
-- `AO`
-- `AQ`
-- `AR`
-- `AS`
-- `AT`
-- `AU`
-- `AW`
-- `AZ`
-- `BA`
-- `BB`
-- `BD`
-- `BE`
-- `BF`
-- `BG`
-- `BH`
-- `BI`
-- `BJ`
-- `BL`
-- `BM`
-- `BN`
-- `BO`
-- `BR`
-- `BS`
-- `BT`
-- `BW`
-- `BY`
-- `BZ`
-- `CA`
-- `CC`
-- `CD`
-- `CF`
-- `CG`
-- `CH`
-- `CI`
-- `CK`
-- `CL`
-- `CM`
-- `CN`
-- `CO`
-- `CR`
-- `CU`
-- `CV`
-- `CW`
-- `CX`
-- `CY`
-- `CZ`
-- `DE`
-- `DJ`
-- `DK`
-- `DM`
-- `DO`
-- `DZ`
-- `EC`
-- `EE`
-- `EG`
-- `EH`
-- `ER`
-- `ES`
-- `ET`
-- `FI`
-- `FJ`
-- `FK`
-- `FM`
-- `FO`
-- `FR`
-- `GA`
-- `GB`
-- `GD`
-- `GE`
-- `GG`
-- `GH`
-- `GI`
-- `GL`
-- `GM`
-- `GN`
-- `GQ`
-- `GR`
-- `GT`
-- `GU`
-- `GW`
-- `GY`
-- `HK`
-- `HN`
-- `HR`
-- `HT`
-- `HU`
-- `ID`
-- `IE`
-- `IL`
-- `IM`
-- `IN`
-- `IO`
-- `IQ`
-- `IR`
-- `IS`
-- `IT`
-- `JE`
-- `JM`
-- `JO`
-- `JP`
-- `KE`
-- `KG`
-- `KH`
-- `KI`
-- `KM`
-- `KN`
-- `KP`
-- `KR`
-- `KW`
-- `KY`
-- `KZ`
-- `LA`
-- `LB`
-- `LC`
-- `LI`
-- `LK`
-- `LR`
-- `LS`
-- `LT`
-- `LU`
-- `LV`
-- `LY`
-- `MA`
-- `MC`
-- `MD`
-- `ME`
-- `MF`
-- `MG`
-- `MH`
-- `MK`
-- `ML`
-- `MM`
-- `MN`
-- `MO`
-- `MP`
-- `MR`
-- `MS`
-- `MT`
-- `MU`
-- `MV`
-- `MW`
-- `MX`
-- `MY`
-- `MZ`
-- `NA`
-- `NC`
-- `NE`
-- `NG`
-- `NI`
-- `NL`
-- `NO`
-- `NP`
-- `NR`
-- `NU`
-- `NZ`
-- `OM`
-- `PA`
-- `PE`
-- `PF`
-- `PG`
-- `PH`
-- `PK`
-- `PL`
-- `PM`
-- `PN`
-- `PR`
-- `PT`
-- `PW`
-- `PY`
-- `QA`
-- `RE`
-- `RO`
-- `RS`
-- `RU`
-- `RW`
-- `SA`
-- `SB`
-- `SC`
-- `SD`
-- `SE`
-- `SG`
-- `SH`
-- `SI`
-- `SJ`
-- `SK`
-- `SL`
-- `SM`
-- `SN`
-- `SO`
-- `SR`
-- `ST`
-- `SV`
-- `SX`
-- `SY`
-- `SZ`
-- `TC`
-- `TD`
-- `TG`
-- `TH`
-- `TJ`
-- `TK`
-- `TL`
-- `TM`
-- `TN`
-- `TO`
-- `TR`
-- `TT`
-- `TV`
-- `TW`
-- `TZ`
-- `UA`
-- `UG`
-- `US`
-- `UY`
-- `UZ`
-- `VA`
-- `VC`
-- `VE`
-- `VG`
-- `VI`
-- `VN`
-- `VU`
-- `WF`
-- `WS`
-- `YE`
-- `YT`
-- `ZA`
-- `ZM`
-- `ZW`
-
-<a id="phonenumbertypetype"></a>
-
+```python title="Definition"
+PhoneNumberCountryCodeType = Literal[
+    "AD",
+    "AE",
+    "AF",
+    "AG",
+    "AI",
+    "AL",
+    "AM",
+    "AN",
+    "AO",
+    "AQ",
+    "AR",
+    "AS",
+    "AT",
+    "AU",
+    "AW",
+    "AZ",
+    "BA",
+    "BB",
+    "BD",
+    "BE",
+    "BF",
+    "BG",
+    "BH",
+    "BI",
+    "BJ",
+    "BL",
+    "BM",
+    "BN",
+    "BO",
+    "BR",
+    "BS",
+    "BT",
+    "BW",
+    "BY",
+    "BZ",
+    "CA",
+    "CC",
+    "CD",
+    "CF",
+    "CG",
+    "CH",
+    "CI",
+    "CK",
+    "CL",
+    "CM",
+    "CN",
+    "CO",
+    "CR",
+    "CU",
+    "CV",
+    "CW",
+    "CX",
+    "CY",
+    "CZ",
+    "DE",
+    "DJ",
+    "DK",
+    "DM",
+    "DO",
+    "DZ",
+    "EC",
+    "EE",
+    "EG",
+    "EH",
+    "ER",
+    "ES",
+    "ET",
+    "FI",
+    "FJ",
+    "FK",
+    "FM",
+    "FO",
+    "FR",
+    "GA",
+    "GB",
+    "GD",
+    "GE",
+    "GG",
+    "GH",
+    "GI",
+    "GL",
+    "GM",
+    "GN",
+    "GQ",
+    "GR",
+    "GT",
+    "GU",
+    "GW",
+    "GY",
+    "HK",
+    "HN",
+    "HR",
+    "HT",
+    "HU",
+    "ID",
+    "IE",
+    "IL",
+    "IM",
+    "IN",
+    "IO",
+    "IQ",
+    "IR",
+    "IS",
+    "IT",
+    "JE",
+    "JM",
+    "JO",
+    "JP",
+    "KE",
+    "KG",
+    "KH",
+    "KI",
+    "KM",
+    "KN",
+    "KP",
+    "KR",
+    "KW",
+    "KY",
+    "KZ",
+    "LA",
+    "LB",
+    "LC",
+    "LI",
+    "LK",
+    "LR",
+    "LS",
+    "LT",
+    "LU",
+    "LV",
+    "LY",
+    "MA",
+    "MC",
+    "MD",
+    "ME",
+    "MF",
+    "MG",
+    "MH",
+    "MK",
+    "ML",
+    "MM",
+    "MN",
+    "MO",
+    "MP",
+    "MR",
+    "MS",
+    "MT",
+    "MU",
+    "MV",
+    "MW",
+    "MX",
+    "MY",
+    "MZ",
+    "NA",
+    "NC",
+    "NE",
+    "NG",
+    "NI",
+    "NL",
+    "NO",
+    "NP",
+    "NR",
+    "NU",
+    "NZ",
+    "OM",
+    "PA",
+    "PE",
+    "PF",
+    "PG",
+    "PH",
+    "PK",
+    "PL",
+    "PM",
+    "PN",
+    "PR",
+    "PT",
+    "PW",
+    "PY",
+    "QA",
+    "RE",
+    "RO",
+    "RS",
+    "RU",
+    "RW",
+    "SA",
+    "SB",
+    "SC",
+    "SD",
+    "SE",
+    "SG",
+    "SH",
+    "SI",
+    "SJ",
+    "SK",
+    "SL",
+    "SM",
+    "SN",
+    "SO",
+    "SR",
+    "ST",
+    "SV",
+    "SX",
+    "SY",
+    "SZ",
+    "TC",
+    "TD",
+    "TG",
+    "TH",
+    "TJ",
+    "TK",
+    "TL",
+    "TM",
+    "TN",
+    "TO",
+    "TR",
+    "TT",
+    "TV",
+    "TW",
+    "TZ",
+    "UA",
+    "UG",
+    "US",
+    "UY",
+    "UZ",
+    "VA",
+    "VC",
+    "VE",
+    "VG",
+    "VI",
+    "VN",
+    "VU",
+    "WF",
+    "WS",
+    "YE",
+    "YT",
+    "ZA",
+    "ZM",
+    "ZW",
+]
+```
 ## PhoneNumberTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import PhoneNumberTypeType
+
+def get_value() -> PhoneNumberTypeType:
+    return "DID"
 ```
 
-Values:
-
-- `DID`
-- `TOLL_FREE`
-
-<a id="phonetypetype"></a>
-
+```python title="Definition"
+PhoneNumberTypeType = Literal[
+    "DID",
+    "TOLL_FREE",
+]
+```
 ## PhoneTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import PhoneTypeType
+
+def get_value() -> PhoneTypeType:
+    return "DESK_PHONE"
 ```
 
-Values:
-
-- `DESK_PHONE`
-- `SOFT_PHONE`
-
-<a id="queuestatustype"></a>
-
+```python title="Definition"
+PhoneTypeType = Literal[
+    "DESK_PHONE",
+    "SOFT_PHONE",
+]
+```
 ## QueueStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import QueueStatusType
+
+def get_value() -> QueueStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="queuetypetype"></a>
-
+```python title="Definition"
+QueueStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## QueueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import QueueTypeType
+
+def get_value() -> QueueTypeType:
+    return "AGENT"
 ```
 
-Values:
-
-- `AGENT`
-- `STANDARD`
-
-<a id="quickconnecttypetype"></a>
-
+```python title="Definition"
+QueueTypeType = Literal[
+    "AGENT",
+    "STANDARD",
+]
+```
 ## QuickConnectTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import QuickConnectTypeType
+
+def get_value() -> QuickConnectTypeType:
+    return "PHONE_NUMBER"
 ```
 
-Values:
-
-- `PHONE_NUMBER`
-- `QUEUE`
-- `USER`
-
-<a id="referencestatustype"></a>
-
+```python title="Definition"
+QuickConnectTypeType = Literal[
+    "PHONE_NUMBER",
+    "QUEUE",
+    "USER",
+]
+```
 ## ReferenceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ReferenceStatusType
+
+def get_value() -> ReferenceStatusType:
+    return "APPROVED"
 ```
 
-Values:
-
-- `APPROVED`
-- `REJECTED`
-
-<a id="referencetypetype"></a>
-
+```python title="Definition"
+ReferenceStatusType = Literal[
+    "APPROVED",
+    "REJECTED",
+]
+```
 ## ReferenceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ReferenceTypeType
+
+def get_value() -> ReferenceTypeType:
+    return "ATTACHMENT"
 ```
 
-Values:
-
-- `ATTACHMENT`
-- `URL`
-
-<a id="searchvocabulariespaginatorname"></a>
-
+```python title="Definition"
+ReferenceTypeType = Literal[
+    "ATTACHMENT",
+    "URL",
+]
+```
 ## SearchVocabulariesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import SearchVocabulariesPaginatorName
+
+def get_value() -> SearchVocabulariesPaginatorName:
+    return "search_vocabularies"
 ```
 
-Values:
-
-- `search_vocabularies`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+SearchVocabulariesPaginatorName = Literal[
+    "search_vocabularies",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "SALESFORCE"
 ```
 
-Values:
-
-- `SALESFORCE`
-- `ZENDESK`
-
-<a id="statistictype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "SALESFORCE",
+    "ZENDESK",
+]
+```
 ## StatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import StatisticType
+
+def get_value() -> StatisticType:
+    return "AVG"
 ```
 
-Values:
-
-- `AVG`
-- `MAX`
-- `SUM`
-
-<a id="storagetypetype"></a>
-
+```python title="Definition"
+StatisticType = Literal[
+    "AVG",
+    "MAX",
+    "SUM",
+]
+```
 ## StorageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import StorageTypeType
+
+def get_value() -> StorageTypeType:
+    return "KINESIS_FIREHOSE"
 ```
 
-Values:
-
-- `KINESIS_FIREHOSE`
-- `KINESIS_STREAM`
-- `KINESIS_VIDEO_STREAM`
-- `S3`
-
-<a id="traffictypetype"></a>
-
+```python title="Definition"
+StorageTypeType = Literal[
+    "KINESIS_FIREHOSE",
+    "KINESIS_STREAM",
+    "KINESIS_VIDEO_STREAM",
+    "S3",
+]
+```
 ## TrafficTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import TrafficTypeType
+
+def get_value() -> TrafficTypeType:
+    return "CAMPAIGN"
 ```
 
-Values:
-
-- `CAMPAIGN`
-- `GENERAL`
-
-<a id="unittype"></a>
-
+```python title="Definition"
+TrafficTypeType = Literal[
+    "CAMPAIGN",
+    "GENERAL",
+]
+```
 ## UnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import UnitType
+
+def get_value() -> UnitType:
+    return "COUNT"
 ```
 
-Values:
-
-- `COUNT`
-- `PERCENT`
-- `SECONDS`
-
-<a id="usecasetypetype"></a>
-
+```python title="Definition"
+UnitType = Literal[
+    "COUNT",
+    "PERCENT",
+    "SECONDS",
+]
+```
 ## UseCaseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import UseCaseTypeType
+
+def get_value() -> UseCaseTypeType:
+    return "CONNECT_CAMPAIGNS"
 ```
 
-Values:
-
-- `CONNECT_CAMPAIGNS`
-- `RULES_EVALUATION`
-
-<a id="vocabularylanguagecodetype"></a>
-
+```python title="Definition"
+UseCaseTypeType = Literal[
+    "CONNECT_CAMPAIGNS",
+    "RULES_EVALUATION",
+]
+```
 ## VocabularyLanguageCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import VocabularyLanguageCodeType
+
+def get_value() -> VocabularyLanguageCodeType:
+    return "ar-AE"
 ```
 
-Values:
-
-- `ar-AE`
-- `de-CH`
-- `de-DE`
-- `en-AB`
-- `en-AU`
-- `en-GB`
-- `en-IE`
-- `en-IN`
-- `en-US`
-- `en-WL`
-- `es-ES`
-- `es-US`
-- `fr-CA`
-- `fr-FR`
-- `hi-IN`
-- `it-IT`
-- `ja-JP`
-- `ko-KR`
-- `pt-BR`
-- `pt-PT`
-- `zh-CN`
-
-<a id="vocabularystatetype"></a>
-
+```python title="Definition"
+VocabularyLanguageCodeType = Literal[
+    "ar-AE",
+    "de-CH",
+    "de-DE",
+    "en-AB",
+    "en-AU",
+    "en-GB",
+    "en-IE",
+    "en-IN",
+    "en-US",
+    "en-WL",
+    "es-ES",
+    "es-US",
+    "fr-CA",
+    "fr-FR",
+    "hi-IN",
+    "it-IT",
+    "ja-JP",
+    "ko-KR",
+    "pt-BR",
+    "pt-PT",
+    "zh-CN",
+]
+```
 ## VocabularyStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import VocabularyStateType
+
+def get_value() -> VocabularyStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATION_FAILED`
-- `CREATION_IN_PROGRESS`
-- `DELETE_IN_PROGRESS`
-
-<a id="voicerecordingtracktype"></a>
-
+```python title="Definition"
+VocabularyStateType = Literal[
+    "ACTIVE",
+    "CREATION_FAILED",
+    "CREATION_IN_PROGRESS",
+    "DELETE_IN_PROGRESS",
+]
+```
 ## VoiceRecordingTrackType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import VoiceRecordingTrackType
+
+def get_value() -> VoiceRecordingTrackType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `FROM_AGENT`
-- `TO_AGENT`
-
-<a id="connectservicename"></a>
-
+```python title="Definition"
+VoiceRecordingTrackType = Literal[
+    "ALL",
+    "FROM_AGENT",
+    "TO_AGENT",
+]
+```
 ## ConnectServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ConnectServiceName
+
+def get_value() -> ConnectServiceName:
+    return "connect"
 ```
 
-Values:
-
-- `connect`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ConnectServiceName = Literal[
+    "connect",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_metric_data"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_metric_data",
+    "list_agent_statuses",
+    "list_approved_origins",
+    "list_bots",
+    "list_contact_flow_modules",
+    "list_contact_flows",
+    "list_contact_references",
+    "list_default_vocabularies",
+    "list_hours_of_operations",
+    "list_instance_attributes",
+    "list_instance_storage_configs",
+    "list_instances",
+    "list_integration_associations",
+    "list_lambda_functions",
+    "list_lex_bots",
+    "list_phone_numbers",
+    "list_prompts",
+    "list_queue_quick_connects",
+    "list_queues",
+    "list_quick_connects",
+    "list_routing_profile_queues",
+    "list_routing_profiles",
+    "list_security_keys",
+    "list_security_profile_permissions",
+    "list_security_profiles",
+    "list_use_cases",
+    "list_user_hierarchy_groups",
+    "list_users",
+    "search_vocabularies",
+]
+```
+## RegionName
 
-- `get_metric_data`
-- `list_agent_statuses`
-- `list_approved_origins`
-- `list_bots`
-- `list_contact_flow_modules`
-- `list_contact_flows`
-- `list_contact_references`
-- `list_default_vocabularies`
-- `list_hours_of_operations`
-- `list_instance_attributes`
-- `list_instance_storage_configs`
-- `list_instances`
-- `list_integration_associations`
-- `list_lambda_functions`
-- `list_lex_bots`
-- `list_phone_numbers`
-- `list_prompts`
-- `list_queue_quick_connects`
-- `list_queues`
-- `list_quick_connects`
-- `list_routing_profile_queues`
-- `list_routing_profiles`
-- `list_security_keys`
-- `list_security_profile_permissions`
-- `list_security_profiles`
-- `list_use_cases`
-- `list_user_hierarchy_groups`
-- `list_users`
-- `search_vocabularies`
+```python title="Usage Example"
+from mypy_boto3_connect.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-2",
+    "us-east-1",
+    "us-west-2",
+]
+```

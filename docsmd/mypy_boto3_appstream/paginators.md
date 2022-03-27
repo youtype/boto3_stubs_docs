@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-appstream-module"></a>
-
-# Paginators for boto3 AppStream module
+# Paginators
 
 > [Index](../README.md) > [AppStream](./README.md) > Paginators
 
-Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
-type annotations stubs module
-[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
+!!! note ""
 
-- [Paginators for boto3 AppStream module](#paginators-for-boto3-appstream-module)
-  - [DescribeDirectoryConfigsPaginator](#describedirectoryconfigspaginator)
-  - [DescribeFleetsPaginator](#describefleetspaginator)
-  - [DescribeImageBuildersPaginator](#describeimagebuilderspaginator)
-  - [DescribeImagesPaginator](#describeimagespaginator)
-  - [DescribeSessionsPaginator](#describesessionspaginator)
-  - [DescribeStacksPaginator](#describestackspaginator)
-  - [DescribeUserStackAssociationsPaginator](#describeuserstackassociationspaginator)
-  - [DescribeUsersPaginator](#describeuserspaginator)
-  - [ListAssociatedFleetsPaginator](#listassociatedfleetspaginator)
-  - [ListAssociatedStacksPaginator](#listassociatedstackspaginator)
-
-<a id="describedirectoryconfigspaginator"></a>
+    Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+    type annotations stubs module [mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 ## DescribeDirectoryConfigsPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_directory_configs")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_directory_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator
@@ -39,28 +21,40 @@ def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPagina
     return Session().client("appstream").get_paginator("describe_directory_configs")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeDirectoryConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeDirectoryConfigs)
 
-Arguments for `DescribeDirectoryConfigsPaginator.paginate` method:
+### paginate
 
-- `DirectoryNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDirectoryConfigsPaginator.paginate` method.
 
-`DescribeDirectoryConfigsPaginator.paginate` returns
-`_PageIterator`\[[DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DirectoryNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDirectoryConfigsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describefleetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef = {  # (1)
+    "DirectoryNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef](./type_defs.md#describedirectoryconfigsrequestdescribedirectoryconfigspaginatetypedef) 
 ## DescribeFleetsPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_fleets")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeFleetsPaginator
@@ -69,28 +63,40 @@ def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
     return Session().client("appstream").get_paginator("describe_fleets")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeFleets)
 
-Arguments for `DescribeFleetsPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetsPaginator.paginate` method.
 
-`DescribeFleetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeFleetsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeimagebuilderspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetsRequestDescribeFleetsPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetsRequestDescribeFleetsPaginateTypeDef](./type_defs.md#describefleetsrequestdescribefleetspaginatetypedef) 
 ## DescribeImageBuildersPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_image_builders")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_image_builders")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeImageBuildersPaginator
@@ -99,28 +105,40 @@ def get_describe_image_builders_paginator() -> DescribeImageBuildersPaginator:
     return Session().client("appstream").get_paginator("describe_image_builders")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeImageBuilders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImageBuilders)
 
-Arguments for `DescribeImageBuildersPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImageBuildersPaginator.paginate` method.
 
-`DescribeImageBuildersPaginator.paginate` returns
-`_PageIterator`\[[DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeImageBuildersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeimagespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef](./type_defs.md#describeimagebuildersrequestdescribeimagebuilderspaginatetypedef) 
 ## DescribeImagesPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_images")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeImagesPaginator
@@ -129,30 +147,43 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
     return Session().client("appstream").get_paginator("describe_images")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeImages)
 
-Arguments for `DescribeImagesPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `Arns`: `Sequence`\[`str`\]
-- `Type`: [VisibilityTypeType](./literals.md#visibilitytypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImagesPaginator.paginate` method.
 
-`DescribeImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    Arns: Sequence[str] = ...,
+    Type: VisibilityTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeImagesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesessionspaginator"></a>
+1. See [:material-code-brackets: VisibilityTypeType](./literals.md#visibilitytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestDescribeImagesPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImagesRequestDescribeImagesPaginateTypeDef](./type_defs.md#describeimagesrequestdescribeimagespaginatetypedef) 
 ## DescribeSessionsPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_sessions")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeSessionsPaginator
@@ -161,32 +192,45 @@ def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return Session().client("appstream").get_paginator("describe_sessions")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeSessions)
 
-Arguments for `DescribeSessionsPaginator.paginate` method:
+### paginate
 
-- `StackName`: `str` *(required)*
-- `FleetName`: `str` *(required)*
-- `UserId`: `str`
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSessionsPaginator.paginate` method.
 
-`DescribeSessionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StackName: str,
+    FleetName: str,
+    UserId: str = ...,
+    AuthenticationType: AuthenticationTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeSessionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describestackspaginator"></a>
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSessionsRequestDescribeSessionsPaginateTypeDef = {  # (1)
+    "StackName": ...,
+    "FleetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSessionsRequestDescribeSessionsPaginateTypeDef](./type_defs.md#describesessionsrequestdescribesessionspaginatetypedef) 
 ## DescribeStacksPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_stacks")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_stacks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeStacksPaginator
@@ -195,28 +239,40 @@ def get_describe_stacks_paginator() -> DescribeStacksPaginator:
     return Session().client("appstream").get_paginator("describe_stacks")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeStacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeStacks)
 
-Arguments for `DescribeStacksPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeStacksPaginator.paginate` method.
 
-`DescribeStacksPaginator.paginate` returns
-`_PageIterator`\[[DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeStacksResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeuserstackassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeStacksRequestDescribeStacksPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeStacksRequestDescribeStacksPaginateTypeDef](./type_defs.md#describestacksrequestdescribestackspaginatetypedef) 
 ## DescribeUserStackAssociationsPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_user_stack_associations")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_user_stack_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeUserStackAssociationsPaginator
@@ -225,31 +281,43 @@ def get_describe_user_stack_associations_paginator() -> DescribeUserStackAssocia
     return Session().client("appstream").get_paginator("describe_user_stack_associations")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeUserStackAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUserStackAssociations)
 
-Arguments for `DescribeUserStackAssociationsPaginator.paginate` method:
+### paginate
 
-- `StackName`: `str`
-- `UserName`: `str`
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUserStackAssociationsPaginator.paginate` method.
 
-`DescribeUserStackAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StackName: str = ...,
+    UserName: str = ...,
+    AuthenticationType: AuthenticationTypeType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeUserStackAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeuserspaginator"></a>
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef](./type_defs.md#describeuserstackassociationsrequestdescribeuserstackassociationspaginatetypedef) 
 ## DescribeUsersPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("describe_users")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("describe_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import DescribeUsersPaginator
@@ -258,29 +326,41 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return Session().client("appstream").get_paginator("describe_users")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.DescribeUsers)
 
-Arguments for `DescribeUsersPaginator.paginate` method:
+### paginate
 
-- `AuthenticationType`:
-  [AuthenticationTypeType](./literals.md#authenticationtypetype) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUsersPaginator.paginate` method.
 
-`DescribeUsersPaginator.paginate` returns
-`_PageIterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AuthenticationType: AuthenticationTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeUsersResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listassociatedfleetspaginator"></a>
+1. See [:material-code-brackets: AuthenticationTypeType](./literals.md#authenticationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUsersRequestDescribeUsersPaginateTypeDef = {  # (1)
+    "AuthenticationType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUsersRequestDescribeUsersPaginateTypeDef](./type_defs.md#describeusersrequestdescribeuserspaginatetypedef) 
 ## ListAssociatedFleetsPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("list_associated_fleets")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("list_associated_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import ListAssociatedFleetsPaginator
@@ -289,28 +369,40 @@ def get_list_associated_fleets_paginator() -> ListAssociatedFleetsPaginator:
     return Session().client("appstream").get_paginator("list_associated_fleets")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.ListAssociatedFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedFleets)
 
-Arguments for `ListAssociatedFleetsPaginator.paginate` method:
+### paginate
 
-- `StackName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociatedFleetsPaginator.paginate` method.
 
-`ListAssociatedFleetsPaginator.paginate` returns
-`_PageIterator`\[[ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StackName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssociatedFleetsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listassociatedstackspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef = {  # (1)
+    "StackName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef](./type_defs.md#listassociatedfleetsrequestlistassociatedfleetspaginatetypedef) 
 ## ListAssociatedStacksPaginator
 
-Type annotations for
-`boto3.client("appstream").get_paginator("list_associated_stacks")`.
+Type annotations and code completion for `#!python boto3.client("appstream").get_paginator("list_associated_stacks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_appstream.paginator import ListAssociatedStacksPaginator
@@ -319,14 +411,31 @@ def get_list_associated_stacks_paginator() -> ListAssociatedStacksPaginator:
     return Session().client("appstream").get_paginator("list_associated_stacks")
 ```
 
-Boto3 documentation:
-[AppStream.Paginator.ListAssociatedStacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Paginator.ListAssociatedStacks)
 
-Arguments for `ListAssociatedStacksPaginator.paginate` method:
+### paginate
 
-- `FleetName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociatedStacksPaginator.paginate` method.
 
-`ListAssociatedStacksPaginator.paginate` returns
-`_PageIterator`\[[ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssociatedStacksResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef = {  # (1)
+    "FleetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef](./type_defs.md#listassociatedstacksrequestlistassociatedstackspaginatetypedef) 

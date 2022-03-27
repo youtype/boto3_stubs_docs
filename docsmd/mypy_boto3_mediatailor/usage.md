@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-mediatailor-module"></a>
-
-# Examples for boto3 MediaTailor module
+# Examples
 
 > [Index](../README.md) > [MediaTailor](./README.md) > Examples
 
-- [Examples for boto3 MediaTailor module](#examples-for-boto3-mediatailor-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+    type annotations stubs module [mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mediatailor]` package installed.
 
-Write your `MediaTailor` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `MediaTailor` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MediaTailorClient
-# and provides type checking and code completion
-client = session.client("mediatailor")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetChannelSchedulePaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_channel_schedule")
-for item in paginator.paginate(...):
-    # item has type GetChannelScheduleResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mediatailor")  # (1)
+    result = client.configure_logs_for_playback_configuration()  # (2)
+    ```
+
+    1. client: [MediaTailorClient](./client.md)
+    2. result: [:material-code-braces: ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mediatailor")  # (1)
+
+    paginator = client.get_paginator("get_channel_schedule")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MediaTailorClient](./client.md)
+    2. paginator: [GetChannelSchedulePaginator](./paginators.md#getchannelschedulepaginator)
+    3. item: [:material-code-braces: GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mediatailor]` or a standalone `mypy_boto3_mediatailor`
-package, you have to explicitly specify `client: MediaTailorClient` type
-annotation.
+With `boto3-stubs-lite[mediatailor]`
+or a standalone `mypy_boto3_mediatailor` package, you have to explicitly specify `client: MediaTailorClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mediatailor.client import MediaTailorClient
-from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator
-
-from mypy_boto3_mediatailor.literals import PaginatorName
-
-from mypy_boto3_mediatailor.type_defs import bool
-from mypy_boto3_mediatailor.type_defs import GetChannelScheduleResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MediaTailorClient = session.client("mediatailor")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_mediatailor.client import MediaTailorClient
+    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationResponseTypeDef
+    from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_channel_schedule"
-paginator: GetChannelSchedulePaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetChannelScheduleResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MediaTailorClient = session.client("mediatailor")
+
+    kwargs: ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef = {...}
+    result: ConfigureLogsForPlaybackConfigurationResponseTypeDef = client.configure_logs_for_playback_configuration(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mediatailor.client import MediaTailorClient
+    from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator
+    from mypy_boto3_mediatailor.type_defs import GetChannelScheduleResponseTypeDef
+
+
+    session = Session()
+    client: MediaTailorClient = session.client("mediatailor")
+
+    paginator: GetChannelSchedulePaginator = client.get_paginator("get_channel_schedule")
+    for item in paginator.paginate(...):
+        item: GetChannelScheduleResponseTypeDef
+        print(item)
+    ```
+
+
+
+

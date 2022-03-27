@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-dax-module"></a>
-
-# Type annotations for boto3 DAX module
+#  DAX module
 
 > [Index](../README.md) > DAX
 
-Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module
-[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
+!!! note ""
 
-- [Type annotations for boto3 DAX module](#type-annotations-for-boto3-dax-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DAXClient](#daxclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+    type annotations stubs module [mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DAX`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[dax]'
 python -m pip install mypy-boto3-dax
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,100 +42,37 @@ python -m pip install mypy-boto3-dax
 python -m pip uninstall -y mypy-boto3-dax
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="daxclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DAXClient
 
-Type annotations for `boto3.client("dax")` as [DAXClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dax")` as [DAXClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dax.client import DAXClient
+
+def get_client() -> DAXClient:
+    return Session().cleint("dax")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_cluster](./client.md#create_cluster)
-- [create_parameter_group](./client.md#create_parameter_group)
-- [create_subnet_group](./client.md#create_subnet_group)
-- [decrease_replication_factor](./client.md#decrease_replication_factor)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_parameter_group](./client.md#delete_parameter_group)
-- [delete_subnet_group](./client.md#delete_subnet_group)
-- [describe_clusters](./client.md#describe_clusters)
-- [describe_default_parameters](./client.md#describe_default_parameters)
-- [describe_events](./client.md#describe_events)
-- [describe_parameter_groups](./client.md#describe_parameter_groups)
-- [describe_parameters](./client.md#describe_parameters)
-- [describe_subnet_groups](./client.md#describe_subnet_groups)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [increase_replication_factor](./client.md#increase_replication_factor)
-- [list_tags](./client.md#list_tags)
-- [reboot_node](./client.md#reboot_node)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_cluster](./client.md#update_cluster)
-- [update_parameter_group](./client.md#update_parameter_group)
-- [update_subnet_group](./client.md#update_subnet_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DAXClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ClusterAlreadyExistsFault
-- ClusterNotFoundFault
-- ClusterQuotaForCustomerExceededFault
-- InsufficientClusterCapacityFault
-- InvalidARNFault
-- InvalidClusterStateFault
-- InvalidParameterCombinationException
-- InvalidParameterGroupStateFault
-- InvalidParameterValueException
-- InvalidSubnet
-- InvalidVPCNetworkStateFault
-- NodeNotFoundFault
-- NodeQuotaForClusterExceededFault
-- NodeQuotaForCustomerExceededFault
-- ParameterGroupAlreadyExistsFault
-- ParameterGroupNotFoundFault
-- ParameterGroupQuotaExceededFault
-- ServiceLinkedRoleNotFoundFault
-- ServiceQuotaExceededException
-- SubnetGroupAlreadyExistsFault
-- SubnetGroupInUseFault
-- SubnetGroupNotFoundFault
-- SubnetGroupQuotaExceededFault
-- SubnetInUse
-- SubnetQuotaExceededFault
-- TagNotFoundFault
-- TagQuotaPerResourceExceeded
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("dax").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("dax").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dax.paginator import DescribeClustersPaginator, ...
+from mypy_boto3_dax.paginator import DescribeClustersPaginator
+
+def get_describe_clusters_paginator() -> DescribeClustersPaginator:
+    return Session().client("dax").get_paginator("describe_clusters"))
 ```
 
 - [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
@@ -168,16 +83,23 @@ from mypy_boto3_dax.paginator import DescribeClustersPaginator, ...
 - [DescribeSubnetGroupsPaginator](./paginators.md#describesubnetgroupspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dax.literals import ChangeTypeType
 
-```python
-from mypy_boto3_dax.literals import ChangeTypeType, ...
+def get_value() -> ChangeTypeType:
+    return "IMMEDIATE"
 ```
 
 - [ChangeTypeType](./literals.md#changetypetype)
@@ -197,18 +119,22 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dax.type_defs import ClusterTypeDef
 
-```python
-from mypy_boto3_dax.type_defs import ClusterTypeDef, ...
+def get_value() -> ClusterTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
 - [ClusterTypeDef](./type_defs.md#clustertypedef)
@@ -226,22 +152,29 @@ from mypy_boto3_dax.type_defs import ClusterTypeDef, ...
 - [DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef)
 - [DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef)
 - [DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef)
+- [DescribeClustersRequestDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersrequestdescribeclusterspaginatetypedef)
 - [DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef)
 - [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)
+- [DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef](./type_defs.md#describedefaultparametersrequestdescribedefaultparameterspaginatetypedef)
 - [DescribeDefaultParametersRequestRequestTypeDef](./type_defs.md#describedefaultparametersrequestrequesttypedef)
 - [DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef)
+- [DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef)
 - [DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef)
 - [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)
+- [DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef](./type_defs.md#describeparametergroupsrequestdescribeparametergroupspaginatetypedef)
 - [DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef)
 - [DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef)
+- [DescribeParametersRequestDescribeParametersPaginateTypeDef](./type_defs.md#describeparametersrequestdescribeparameterspaginatetypedef)
 - [DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef)
 - [DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef)
+- [DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef](./type_defs.md#describesubnetgroupsrequestdescribesubnetgroupspaginatetypedef)
 - [DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef)
 - [DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [EventTypeDef](./type_defs.md#eventtypedef)
 - [IncreaseReplicationFactorRequestRequestTypeDef](./type_defs.md#increasereplicationfactorrequestrequesttypedef)
 - [IncreaseReplicationFactorResponseTypeDef](./type_defs.md#increasereplicationfactorresponsetypedef)
+- [ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
 - [NodeTypeDef](./type_defs.md#nodetypedef)
@@ -271,3 +204,4 @@ from mypy_boto3_dax.type_defs import ClusterTypeDef, ...
 - [UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef)
 - [UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef)
 - [UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef)
+

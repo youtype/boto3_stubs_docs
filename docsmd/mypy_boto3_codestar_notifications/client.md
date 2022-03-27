@@ -1,46 +1,18 @@
-<a id="codestarnotificationsclient-for-boto3-codestarnotifications-module"></a>
+# CodeStarNotificationsClient
 
-# CodeStarNotificationsClient for boto3 CodeStarNotifications module
+> [Index](../README.md) > [CodeStarNotifications](./README.md) > CodeStarNotificationsClient
 
-> [Index](../README.md) > [CodeStarNotifications](./README.md) >
-> CodeStarNotificationsClient
+!!! note ""
 
-Auto-generated documentation for
-[CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
-type annotations stubs module
-[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
-
-- [CodeStarNotificationsClient for boto3 CodeStarNotifications module](#codestarnotificationsclient-for-boto3-codestarnotifications-module)
-  - [CodeStarNotificationsClient](#codestarnotificationsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_notification_rule](#create_notification_rule)
-    - [delete_notification_rule](#delete_notification_rule)
-    - [delete_target](#delete_target)
-    - [describe_notification_rule](#describe_notification_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_event_types](#list_event_types)
-    - [list_notification_rules](#list_notification_rules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_targets](#list_targets)
-    - [subscribe](#subscribe)
-    - [tag_resource](#tag_resource)
-    - [unsubscribe](#unsubscribe)
-    - [untag_resource](#untag_resource)
-    - [update_notification_rule](#update_notification_rule)
-    - [get_paginator](#get_paginator)
-
-<a id="codestarnotificationsclient"></a>
+    Auto-generated documentation for [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
+    type annotations stubs module [mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 ## CodeStarNotificationsClient
 
-Type annotations for `boto3.client("codestar-notifications")`
+Type annotations and code completion for `#!python boto3.client("codestar-notifications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codestar_notifications.client import CodeStarNotificationsClient
 
@@ -48,287 +20,332 @@ def get_codestar-notifications_client() -> CodeStarNotificationsClient:
     return Session().client("codestar-notifications")
 ```
 
-Boto3 documentation:
-[CodeStarNotifications.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codestar-notifications").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codestar-notifications")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.ConfigurationException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codestar_notifications.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.ConfigurationException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeStarNotificationsClient exceptions.
-
-Type annotations for `boto3.client("codestar-notifications").exceptions`
-method.
-
-Boto3 documentation:
-[CodeStarNotifications.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codestar-notifications").can_paginate`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.can_paginate)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_notification\_rule"></a>
-
-### create_notification_rule
+### create\_notification\_rule
 
 Creates a notification rule for a resource.
 
-Type annotations for
-`boto3.client("codestar-notifications").create_notification_rule` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").create_notification_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.create_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.create_notification_rule)
+```python title="Method definition"
+def create_notification_rule(
+    self,
+    *,
+    Name: str,
+    EventTypeIds: Sequence[str],
+    Resource: str,
+    Targets: Sequence[TargetTypeDef],  # (1)
+    DetailType: DetailTypeType,  # (2)
+    ClientRequestToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+    Status: NotificationRuleStatusType = ...,  # (3)
+) -> CreateNotificationRuleResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateNotificationRuleRequestRequestTypeDef](./type_defs.md#createnotificationrulerequestrequesttypedef).
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: DetailTypeType](./literals.md#detailtypetype) 
+3. See [:material-code-brackets: NotificationRuleStatusType](./literals.md#notificationrulestatustype) 
+4. See [:material-code-braces: CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `EventTypeIds`: `Sequence`\[`str`\] *(required)*
-- `Resource`: `str` *(required)*
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-  *(required)*
-- `DetailType`: [DetailTypeType](./literals.md#detailtypetype) *(required)*
-- `ClientRequestToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Status`:
-  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
+```python title="Usage example with kwargs"
+kwargs: CreateNotificationRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "EventTypeIds": ...,
+    "Resource": ...,
+    "Targets": ...,
+    "DetailType": ...,
+}
 
-Returns
-[CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
+parent.create_notification_rule(**kwargs)
+```
 
-<a id="delete\_notification\_rule"></a>
+1. See [:material-code-braces: CreateNotificationRuleRequestRequestTypeDef](./type_defs.md#createnotificationrulerequestrequesttypedef) 
 
-### delete_notification_rule
+### delete\_notification\_rule
 
 Deletes a notification rule for a resource.
 
-Type annotations for
-`boto3.client("codestar-notifications").delete_notification_rule` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").delete_notification_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.delete_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_notification_rule)
+```python title="Method definition"
+def delete_notification_rule(
+    self,
+    *,
+    Arn: str,
+) -> DeleteNotificationRuleResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteNotificationRuleRequestRequestTypeDef](./type_defs.md#deletenotificationrulerequestrequesttypedef).
+1. See [:material-code-braces: DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNotificationRuleRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
+parent.delete_notification_rule(**kwargs)
+```
 
-<a id="delete\_target"></a>
+1. See [:material-code-braces: DeleteNotificationRuleRequestRequestTypeDef](./type_defs.md#deletenotificationrulerequestrequesttypedef) 
 
-### delete_target
+### delete\_target
 
 Deletes a specified target for notifications.
 
-Type annotations for `boto3.client("codestar-notifications").delete_target`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").delete_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.delete_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.delete_target)
+```python title="Method definition"
+def delete_target(
+    self,
+    *,
+    TargetAddress: str,
+    ForceUnsubscribeAll: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTargetRequestRequestTypeDef](./type_defs.md#deletetargetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TargetAddress`: `str` *(required)*
-- `ForceUnsubscribeAll`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteTargetRequestRequestTypeDef = {  # (1)
+    "TargetAddress": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_target(**kwargs)
+```
 
-<a id="describe\_notification\_rule"></a>
+1. See [:material-code-braces: DeleteTargetRequestRequestTypeDef](./type_defs.md#deletetargetrequestrequesttypedef) 
 
-### describe_notification_rule
+### describe\_notification\_rule
 
 Returns information about a specified notification rule.
 
-Type annotations for
-`boto3.client("codestar-notifications").describe_notification_rule` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").describe_notification_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.describe_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.describe_notification_rule)
+```python title="Method definition"
+def describe_notification_rule(
+    self,
+    *,
+    Arn: str,
+) -> DescribeNotificationRuleResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNotificationRuleRequestRequestTypeDef](./type_defs.md#describenotificationrulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNotificationRuleRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
+parent.describe_notification_rule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeNotificationRuleRequestRequestTypeDef](./type_defs.md#describenotificationrulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("codestar-notifications").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_event\_types"></a>
-
-### list_event_types
+### list\_event\_types
 
 Returns information about the event types available for configuring
 notifications.
 
-Type annotations for `boto3.client("codestar-notifications").list_event_types`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_event_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.list_event_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_event_types)
+```python title="Method definition"
+def list_event_types(
+    self,
+    *,
+    Filters: Sequence[ListEventTypesFilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEventTypesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListEventTypesRequestRequestTypeDef](./type_defs.md#listeventtypesrequestrequesttypedef).
+1. See [:material-code-braces: ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef) 
+2. See [:material-code-braces: ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEventTypesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
+parent.list_event_types(**kwargs)
+```
 
-<a id="list\_notification\_rules"></a>
+1. See [:material-code-braces: ListEventTypesRequestRequestTypeDef](./type_defs.md#listeventtypesrequestrequesttypedef) 
 
-### list_notification_rules
+### list\_notification\_rules
 
 Returns a list of the notification rules for an AWS account.
 
-Type annotations for
-`boto3.client("codestar-notifications").list_notification_rules` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_notification_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.list_notification_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_notification_rules)
+```python title="Method definition"
+def list_notification_rules(
+    self,
+    *,
+    Filters: Sequence[ListNotificationRulesFilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListNotificationRulesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNotificationRulesRequestRequestTypeDef](./type_defs.md#listnotificationrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef) 
+2. See [:material-code-braces: ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListNotificationRulesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
+parent.list_notification_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListNotificationRulesRequestRequestTypeDef](./type_defs.md#listnotificationrulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of the tags associated with a notification rule.
 
-Type annotations for
-`boto3.client("codestar-notifications").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    Arn: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_targets"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_targets
+### list\_targets
 
 Returns a list of the notification rule targets for an AWS account.
 
-Type annotations for `boto3.client("codestar-notifications").list_targets`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").list_targets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.list_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.list_targets)
+```python title="Method definition"
+def list_targets(
+    self,
+    *,
+    Filters: Sequence[ListTargetsFilterTypeDef] = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTargetsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetsRequestRequestTypeDef](./type_defs.md#listtargetsrequestrequesttypedef).
+1. See [:material-code-braces: ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef) 
+2. See [:material-code-braces: ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTargetsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns [ListTargetsResultTypeDef](./type_defs.md#listtargetsresulttypedef).
+parent.list_targets(**kwargs)
+```
 
-<a id="subscribe"></a>
+1. See [:material-code-braces: ListTargetsRequestRequestTypeDef](./type_defs.md#listtargetsrequestrequesttypedef) 
 
 ### subscribe
 
@@ -336,45 +353,65 @@ Creates an association between a notification rule and an SNS topic so that the
 associated target can receive notifications when the events described in the
 rule are triggered.
 
-Type annotations for `boto3.client("codestar-notifications").subscribe` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").subscribe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.subscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.subscribe)
+```python title="Method definition"
+def subscribe(
+    self,
+    *,
+    Arn: str,
+    Target: TargetTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+) -> SubscribeResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SubscribeRequestRequestTypeDef](./type_defs.md#subscriberequestrequesttypedef).
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-braces: SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef) *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SubscribeRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "Target": ...,
+}
 
-Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
+parent.subscribe(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SubscribeRequestRequestTypeDef](./type_defs.md#subscriberequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates a set of provided tags with a notification rule.
 
-Type annotations for `boto3.client("codestar-notifications").tag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Arn: str,
+    Tags: Mapping[str, str],
+) -> TagResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "Tags": ...,
+}
 
-Returns [TagResourceResultTypeDef](./type_defs.md#tagresourceresulttypedef).
+parent.tag_resource(**kwargs)
+```
 
-<a id="unsubscribe"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
 ### unsubscribe
 
@@ -382,82 +419,109 @@ Removes an association between a notification rule and an Amazon SNS topic so
 that subscribers to that topic stop receiving notifications when the events
 described in the rule are triggered.
 
-Type annotations for `boto3.client("codestar-notifications").unsubscribe`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").unsubscribe` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.unsubscribe](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.unsubscribe)
+```python title="Method definition"
+def unsubscribe(
+    self,
+    *,
+    Arn: str,
+    TargetAddress: str,
+) -> UnsubscribeResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UnsubscribeRequestRequestTypeDef](./type_defs.md#unsubscriberequestrequesttypedef).
+1. See [:material-code-braces: UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `TargetAddress`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnsubscribeRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "TargetAddress": ...,
+}
 
-Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
+parent.unsubscribe(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: UnsubscribeRequestRequestTypeDef](./type_defs.md#unsubscriberequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the association between one or more provided tags and a notification
 rule.
 
-Type annotations for `boto3.client("codestar-notifications").untag_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Arn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_notification\_rule"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_notification_rule
+### update\_notification\_rule
 
 Updates a notification rule for a resource.
 
-Type annotations for
-`boto3.client("codestar-notifications").update_notification_rule` method.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").update_notification_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
 
-Boto3 documentation:
-[CodeStarNotifications.Client.update_notification_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications.Client.update_notification_rule)
+```python title="Method definition"
+def update_notification_rule(
+    self,
+    *,
+    Arn: str,
+    Name: str = ...,
+    Status: NotificationRuleStatusType = ...,  # (1)
+    EventTypeIds: Sequence[str] = ...,
+    Targets: Sequence[TargetTypeDef] = ...,  # (2)
+    DetailType: DetailTypeType = ...,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNotificationRuleRequestRequestTypeDef](./type_defs.md#updatenotificationrulerequestrequesttypedef).
+1. See [:material-code-brackets: NotificationRuleStatusType](./literals.md#notificationrulestatustype) 
+2. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+3. See [:material-code-brackets: DetailTypeType](./literals.md#detailtypetype) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Name`: `str`
-- `Status`:
-  [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
-- `EventTypeIds`: `Sequence`\[`str`\]
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `DetailType`: [DetailTypeType](./literals.md#detailtypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateNotificationRuleRequestRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_notification_rule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateNotificationRuleRequestRequestTypeDef](./type_defs.md#updatenotificationrulerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codestar-notifications").get_paginator`
-method with overloads.
+Type annotations and code completion for `#!python boto3.client("codestar-notifications").get_paginator` method with overloads.
 
-- `client.get_paginator("list_event_types")` ->
-  [ListEventTypesPaginator](./paginators.md#listeventtypespaginator)
-- `client.get_paginator("list_notification_rules")` ->
-  [ListNotificationRulesPaginator](./paginators.md#listnotificationrulespaginator)
-- `client.get_paginator("list_targets")` ->
-  [ListTargetsPaginator](./paginators.md#listtargetspaginator)
+- `client.get_paginator("list_event_types")` -> [ListEventTypesPaginator](./paginators.md#listeventtypespaginator)
+- `client.get_paginator("list_notification_rules")` -> [ListNotificationRulesPaginator](./paginators.md#listnotificationrulespaginator)
+- `client.get_paginator("list_targets")` -> [ListTargetsPaginator](./paginators.md#listtargetspaginator)
+
+
+

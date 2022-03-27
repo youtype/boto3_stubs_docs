@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-appconfig-module"></a>
-
-# Type annotations for boto3 AppConfig module
+#  AppConfig module
 
 > [Index](../README.md) > AppConfig
 
-Auto-generated documentation for
-[AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
-type annotations stubs module
-[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+!!! note ""
 
-- [Type annotations for boto3 AppConfig module](#type-annotations-for-boto3-appconfig-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppConfigClient](#appconfigclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
+    type annotations stubs module [mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppConfig`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[appconfig]'
 python -m pip install mypy-boto3-appconfig
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,90 +42,41 @@ python -m pip install mypy-boto3-appconfig
 python -m pip uninstall -y mypy-boto3-appconfig
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="appconfigclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppConfigClient
 
-Type annotations for `boto3.client("appconfig")` as
-[AppConfigClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("appconfig")` as [AppConfigClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_appconfig.client import AppConfigClient
+
+def get_client() -> AppConfigClient:
+    return Session().cleint("appconfig")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_configuration_profile](./client.md#create_configuration_profile)
-- [create_deployment_strategy](./client.md#create_deployment_strategy)
-- [create_environment](./client.md#create_environment)
-- [create_hosted_configuration_version](./client.md#create_hosted_configuration_version)
-- [delete_application](./client.md#delete_application)
-- [delete_configuration_profile](./client.md#delete_configuration_profile)
-- [delete_deployment_strategy](./client.md#delete_deployment_strategy)
-- [delete_environment](./client.md#delete_environment)
-- [delete_hosted_configuration_version](./client.md#delete_hosted_configuration_version)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application](./client.md#get_application)
-- [get_configuration](./client.md#get_configuration)
-- [get_configuration_profile](./client.md#get_configuration_profile)
-- [get_deployment](./client.md#get_deployment)
-- [get_deployment_strategy](./client.md#get_deployment_strategy)
-- [get_environment](./client.md#get_environment)
-- [get_hosted_configuration_version](./client.md#get_hosted_configuration_version)
-- [list_applications](./client.md#list_applications)
-- [list_configuration_profiles](./client.md#list_configuration_profiles)
-- [list_deployment_strategies](./client.md#list_deployment_strategies)
-- [list_deployments](./client.md#list_deployments)
-- [list_environments](./client.md#list_environments)
-- [list_hosted_configuration_versions](./client.md#list_hosted_configuration_versions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_deployment](./client.md#start_deployment)
-- [stop_deployment](./client.md#stop_deployment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_configuration_profile](./client.md#update_configuration_profile)
-- [update_deployment_strategy](./client.md#update_deployment_strategy)
-- [update_environment](./client.md#update_environment)
-- [validate_configuration](./client.md#validate_configuration)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-AppConfigClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ConflictException
-- InternalServerException
-- PayloadTooLargeException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appconfig.literals import DeploymentEventTypeType
 
-```python
-from mypy_boto3_appconfig.literals import DeploymentEventTypeType, ...
+def get_value() -> DeploymentEventTypeType:
+    return "BAKE_TIME_STARTED"
 ```
 
 - [DeploymentEventTypeType](./literals.md#deploymenteventtypetype)
@@ -160,17 +90,23 @@ from mypy_boto3_appconfig.literals import DeploymentEventTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appconfig.type_defs import ApplicationResponseMetadataTypeDef
 
-```python
-from mypy_boto3_appconfig.type_defs import ApplicationResponseMetadataTypeDef, ...
+def get_value() -> ApplicationResponseMetadataTypeDef:
+    return {
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
 - [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef)
@@ -230,3 +166,4 @@ from mypy_boto3_appconfig.type_defs import ApplicationResponseMetadataTypeDef, .
 - [UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef)
 - [ValidateConfigurationRequestRequestTypeDef](./type_defs.md#validateconfigurationrequestrequesttypedef)
 - [ValidatorTypeDef](./type_defs.md#validatortypedef)
+

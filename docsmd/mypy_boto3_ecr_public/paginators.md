@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-ecrpublic-module"></a>
-
-# Paginators for boto3 ECRPublic module
+# Paginators
 
 > [Index](../README.md) > [ECRPublic](./README.md) > Paginators
 
-Auto-generated documentation for
-[ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
-type annotations stubs module
-[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
+!!! note ""
 
-- [Paginators for boto3 ECRPublic module](#paginators-for-boto3-ecrpublic-module)
-  - [DescribeImageTagsPaginator](#describeimagetagspaginator)
-  - [DescribeImagesPaginator](#describeimagespaginator)
-  - [DescribeRegistriesPaginator](#describeregistriespaginator)
-  - [DescribeRepositoriesPaginator](#describerepositoriespaginator)
-
-<a id="describeimagetagspaginator"></a>
+    Auto-generated documentation for [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
+    type annotations stubs module [mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 ## DescribeImageTagsPaginator
 
-Type annotations for
-`boto3.client("ecr-public").get_paginator("describe_image_tags")`.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_paginator("describe_image_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr_public.paginator import DescribeImageTagsPaginator
@@ -33,29 +21,41 @@ def get_describe_image_tags_paginator() -> DescribeImageTagsPaginator:
     return Session().client("ecr-public").get_paginator("describe_image_tags")
 ```
 
-Boto3 documentation:
-[ECRPublic.Paginator.DescribeImageTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImageTags)
 
-Arguments for `DescribeImageTagsPaginator.paginate` method:
+### paginate
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImageTagsPaginator.paginate` method.
 
-`DescribeImageTagsPaginator.paginate` returns
-`_PageIterator`\[[DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeImageTagsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeimagespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageTagsRequestDescribeImageTagsPaginateTypeDef = {  # (1)
+    "repositoryName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageTagsRequestDescribeImageTagsPaginateTypeDef](./type_defs.md#describeimagetagsrequestdescribeimagetagspaginatetypedef) 
 ## DescribeImagesPaginator
 
-Type annotations for
-`boto3.client("ecr-public").get_paginator("describe_images")`.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_paginator("describe_images")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr_public.paginator import DescribeImagesPaginator
@@ -64,31 +64,43 @@ def get_describe_images_paginator() -> DescribeImagesPaginator:
     return Session().client("ecr-public").get_paginator("describe_images")
 ```
 
-Boto3 documentation:
-[ECRPublic.Paginator.DescribeImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeImages)
 
-Arguments for `DescribeImagesPaginator.paginate` method:
+### paginate
 
-- `repositoryName`: `str` *(required)*
-- `registryId`: `str`
-- `imageIds`:
-  `Sequence`\[[ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeImagesPaginator.paginate` method.
 
-`DescribeImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    repositoryName: str,
+    registryId: str = ...,
+    imageIds: Sequence[ImageIdentifierTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeImagesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeregistriespaginator"></a>
+1. See [:material-code-braces: ImageIdentifierTypeDef](./type_defs.md#imageidentifiertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImagesRequestDescribeImagesPaginateTypeDef = {  # (1)
+    "repositoryName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImagesRequestDescribeImagesPaginateTypeDef](./type_defs.md#describeimagesrequestdescribeimagespaginatetypedef) 
 ## DescribeRegistriesPaginator
 
-Type annotations for
-`boto3.client("ecr-public").get_paginator("describe_registries")`.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_paginator("describe_registries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr_public.paginator import DescribeRegistriesPaginator
@@ -97,27 +109,39 @@ def get_describe_registries_paginator() -> DescribeRegistriesPaginator:
     return Session().client("ecr-public").get_paginator("describe_registries")
 ```
 
-Boto3 documentation:
-[ECRPublic.Paginator.DescribeRegistries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRegistries)
 
-Arguments for `DescribeRegistriesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRegistriesPaginator.paginate` method.
 
-`DescribeRegistriesPaginator.paginate` returns
-`_PageIterator`\[[DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeRegistriesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describerepositoriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRegistriesRequestDescribeRegistriesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRegistriesRequestDescribeRegistriesPaginateTypeDef](./type_defs.md#describeregistriesrequestdescriberegistriespaginatetypedef) 
 ## DescribeRepositoriesPaginator
 
-Type annotations for
-`boto3.client("ecr-public").get_paginator("describe_repositories")`.
+Type annotations and code completion for `#!python boto3.client("ecr-public").get_paginator("describe_repositories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ecr_public.paginator import DescribeRepositoriesPaginator
@@ -126,15 +150,32 @@ def get_describe_repositories_paginator() -> DescribeRepositoriesPaginator:
     return Session().client("ecr-public").get_paginator("describe_repositories")
 ```
 
-Boto3 documentation:
-[ECRPublic.Paginator.DescribeRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic.Paginator.DescribeRepositories)
 
-Arguments for `DescribeRepositoriesPaginator.paginate` method:
+### paginate
 
-- `registryId`: `str`
-- `repositoryNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeRepositoriesPaginator.paginate` method.
 
-`DescribeRepositoriesPaginator.paginate` returns
-`_PageIterator`\[[DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    registryId: str = ...,
+    repositoryNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeRepositoriesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRepositoriesRequestDescribeRepositoriesPaginateTypeDef = {  # (1)
+    "registryId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRepositoriesRequestDescribeRepositoriesPaginateTypeDef](./type_defs.md#describerepositoriesrequestdescriberepositoriespaginatetypedef) 

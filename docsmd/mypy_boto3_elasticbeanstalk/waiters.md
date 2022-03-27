@@ -1,29 +1,18 @@
-<a id="waiters-for-boto3-elasticbeanstalk-module"></a>
-
-# Waiters for boto3 ElasticBeanstalk module
+# Waiters
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Waiters
 
-Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module
-[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+!!! note ""
 
-- [Waiters for boto3 ElasticBeanstalk module](#waiters-for-boto3-elasticbeanstalk-module)
-  - [EnvironmentExistsWaiter](#environmentexistswaiter)
-  - [EnvironmentTerminatedWaiter](#environmentterminatedwaiter)
-  - [EnvironmentUpdatedWaiter](#environmentupdatedwaiter)
-
-<a id="environmentexistswaiter"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## EnvironmentExistsWaiter
 
-Type annotations for
-`boto3.client("elasticbeanstalk").get_waiter("environment_exists")`.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").get_waiter("environment_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
@@ -32,31 +21,46 @@ def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
     return Session().client("elasticbeanstalk").get_waiter("environment_exists")
 ```
 
-Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentExists)
 
-Arguments for `EnvironmentExistsWaiter.wait` method:
+### wait
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `EnvironmentIds`: `Sequence`\[`str`\]
-- `EnvironmentNames`: `Sequence`\[`str`\]
-- `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EnvironmentExistsWaiter.wait` method.
 
-<a id="environmentterminatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabel: str = ...,
+    EnvironmentIds: Sequence[str] = ...,
+    EnvironmentNames: Sequence[str] = ...,
+    IncludeDeleted: bool = ...,
+    IncludedDeletedBackTo: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentexistswaittypedef) 
 ## EnvironmentTerminatedWaiter
 
-Type annotations for
-`boto3.client("elasticbeanstalk").get_waiter("environment_terminated")`.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").get_waiter("environment_terminated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentTerminated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentTerminatedWaiter
@@ -65,31 +69,46 @@ def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
     return Session().client("elasticbeanstalk").get_waiter("environment_terminated")
 ```
 
-Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_terminated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentTerminated)
 
-Arguments for `EnvironmentTerminatedWaiter.wait` method:
+### wait
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `EnvironmentIds`: `Sequence`\[`str`\]
-- `EnvironmentNames`: `Sequence`\[`str`\]
-- `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EnvironmentTerminatedWaiter.wait` method.
 
-<a id="environmentupdatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabel: str = ...,
+    EnvironmentIds: Sequence[str] = ...,
+    EnvironmentNames: Sequence[str] = ...,
+    IncludeDeleted: bool = ...,
+    IncludedDeletedBackTo: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentterminatedwaittypedef) 
 ## EnvironmentUpdatedWaiter
 
-Type annotations for
-`boto3.client("elasticbeanstalk").get_waiter("environment_updated")`.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").get_waiter("environment_updated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentUpdated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentUpdatedWaiter
@@ -98,17 +117,37 @@ def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
     return Session().client("elasticbeanstalk").get_waiter("environment_updated")
 ```
 
-Boto3 documentation:
-[ElasticBeanstalk.Waiter.environment_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Waiter.EnvironmentUpdated)
 
-Arguments for `EnvironmentUpdatedWaiter.wait` method:
+### wait
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `EnvironmentIds`: `Sequence`\[`str`\]
-- `EnvironmentNames`: `Sequence`\[`str`\]
-- `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EnvironmentUpdatedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabel: str = ...,
+    EnvironmentIds: Sequence[str] = ...,
+    EnvironmentNames: Sequence[str] = ...,
+    IncludeDeleted: bool = ...,
+    IncludedDeletedBackTo: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef](./type_defs.md#describeenvironmentsmessageenvironmentupdatedwaittypedef) 

@@ -1,51 +1,18 @@
-<a id="prometheusserviceclient-for-boto3-prometheusservice-module"></a>
+# PrometheusServiceClient
 
-# PrometheusServiceClient for boto3 PrometheusService module
+> [Index](../README.md) > [PrometheusService](./README.md) > PrometheusServiceClient
 
-> [Index](../README.md) > [PrometheusService](./README.md) >
-> PrometheusServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
-type annotations stubs module
-[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
-
-- [PrometheusServiceClient for boto3 PrometheusService module](#prometheusserviceclient-for-boto3-prometheusservice-module)
-  - [PrometheusServiceClient](#prometheusserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_alert_manager_definition](#create_alert_manager_definition)
-    - [create_rule_groups_namespace](#create_rule_groups_namespace)
-    - [create_workspace](#create_workspace)
-    - [delete_alert_manager_definition](#delete_alert_manager_definition)
-    - [delete_rule_groups_namespace](#delete_rule_groups_namespace)
-    - [delete_workspace](#delete_workspace)
-    - [describe_alert_manager_definition](#describe_alert_manager_definition)
-    - [describe_rule_groups_namespace](#describe_rule_groups_namespace)
-    - [describe_workspace](#describe_workspace)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_rule_groups_namespaces](#list_rule_groups_namespaces)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_workspaces](#list_workspaces)
-    - [put_alert_manager_definition](#put_alert_manager_definition)
-    - [put_rule_groups_namespace](#put_rule_groups_namespace)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_workspace_alias](#update_workspace_alias)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="prometheusserviceclient"></a>
+    Auto-generated documentation for [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
+    type annotations stubs module [mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 ## PrometheusServiceClient
 
-Type annotations for `boto3.client("amp")`
+Type annotations and code completion for `#!python boto3.client("amp")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_amp.client import PrometheusServiceClient
 
@@ -53,480 +20,616 @@ def get_amp_client() -> PrometheusServiceClient:
     return Session().client("amp")
 ```
 
-Boto3 documentation:
-[PrometheusService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("amp").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("amp")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_amp.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PrometheusServiceClient exceptions.
-
-Type annotations for `boto3.client("amp").exceptions` method.
-
-Boto3 documentation:
-[PrometheusService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("amp").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("amp").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate)
 
-Boto3 documentation:
-[PrometheusService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_alert\_manager\_definition"></a>
-
-### create_alert_manager_definition
+### create\_alert\_manager\_definition
 
 Create an alert manager definition.
 
-Type annotations for `boto3.client("amp").create_alert_manager_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("amp").create_alert_manager_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_alert_manager_definition)
 
-Boto3 documentation:
-[PrometheusService.Client.create_alert_manager_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_alert_manager_definition)
+```python title="Method definition"
+def create_alert_manager_definition(
+    self,
+    *,
+    data: Union[bytes, IO[bytes], StreamingBody],
+    workspaceId: str,
+    clientToken: str = ...,
+) -> CreateAlertManagerDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#createalertmanagerdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: CreateAlertManagerDefinitionResponseTypeDef](./type_defs.md#createalertmanagerdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAlertManagerDefinitionRequestRequestTypeDef = {  # (1)
+    "data": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateAlertManagerDefinitionResponseTypeDef](./type_defs.md#createalertmanagerdefinitionresponsetypedef).
+parent.create_alert_manager_definition(**kwargs)
+```
 
-<a id="create\_rule\_groups\_namespace"></a>
+1. See [:material-code-braces: CreateAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#createalertmanagerdefinitionrequestrequesttypedef) 
 
-### create_rule_groups_namespace
+### create\_rule\_groups\_namespace
 
 Create a rule group namespace.
 
-Type annotations for `boto3.client("amp").create_rule_groups_namespace` method.
+Type annotations and code completion for `#!python boto3.client("amp").create_rule_groups_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_rule_groups_namespace)
 
-Boto3 documentation:
-[PrometheusService.Client.create_rule_groups_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_rule_groups_namespace)
+```python title="Method definition"
+def create_rule_groups_namespace(
+    self,
+    *,
+    data: Union[bytes, IO[bytes], StreamingBody],
+    name: str,
+    workspaceId: str,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateRuleGroupsNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#createrulegroupsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: CreateRuleGroupsNamespaceResponseTypeDef](./type_defs.md#createrulegroupsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `name`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRuleGroupsNamespaceRequestRequestTypeDef = {  # (1)
+    "data": ...,
+    "name": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateRuleGroupsNamespaceResponseTypeDef](./type_defs.md#createrulegroupsnamespaceresponsetypedef).
+parent.create_rule_groups_namespace(**kwargs)
+```
 
-<a id="create\_workspace"></a>
+1. See [:material-code-braces: CreateRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#createrulegroupsnamespacerequestrequesttypedef) 
 
-### create_workspace
+### create\_workspace
 
 Creates a new AMP workspace.
 
-Type annotations for `boto3.client("amp").create_workspace` method.
+Type annotations and code completion for `#!python boto3.client("amp").create_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
 
-Boto3 documentation:
-[PrometheusService.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.create_workspace)
+```python title="Method definition"
+def create_workspace(
+    self,
+    *,
+    alias: str = ...,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef).
+1. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `alias`: `str`
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+}
 
-Returns
-[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
+parent.create_workspace(**kwargs)
+```
 
-<a id="delete\_alert\_manager\_definition"></a>
+1. See [:material-code-braces: CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef) 
 
-### delete_alert_manager_definition
+### delete\_alert\_manager\_definition
 
 Deletes an alert manager definition.
 
-Type annotations for `boto3.client("amp").delete_alert_manager_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("amp").delete_alert_manager_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_alert_manager_definition)
 
-Boto3 documentation:
-[PrometheusService.Client.delete_alert_manager_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_alert_manager_definition)
+```python title="Method definition"
+def delete_alert_manager_definition(
+    self,
+    *,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#deletealertmanagerdefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAlertManagerDefinitionRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-<a id="delete\_rule\_groups\_namespace"></a>
+parent.delete_alert_manager_definition(**kwargs)
+```
 
-### delete_rule_groups_namespace
+1. See [:material-code-braces: DeleteAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#deletealertmanagerdefinitionrequestrequesttypedef) 
+
+### delete\_rule\_groups\_namespace
 
 Delete a rule groups namespace.
 
-Type annotations for `boto3.client("amp").delete_rule_groups_namespace` method.
+Type annotations and code completion for `#!python boto3.client("amp").delete_rule_groups_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_rule_groups_namespace)
 
-Boto3 documentation:
-[PrometheusService.Client.delete_rule_groups_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_rule_groups_namespace)
+```python title="Method definition"
+def delete_rule_groups_namespace(
+    self,
+    *,
+    name: str,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#deleterulegroupsnamespacerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleGroupsNamespaceRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "workspaceId": ...,
+}
 
-<a id="delete\_workspace"></a>
+parent.delete_rule_groups_namespace(**kwargs)
+```
 
-### delete_workspace
+1. See [:material-code-braces: DeleteRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#deleterulegroupsnamespacerequestrequesttypedef) 
+
+### delete\_workspace
 
 Deletes an AMP workspace.
 
-Type annotations for `boto3.client("amp").delete_workspace` method.
+Type annotations and code completion for `#!python boto3.client("amp").delete_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
 
-Boto3 documentation:
-[PrometheusService.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.delete_workspace)
+```python title="Method definition"
+def delete_workspace(
+    self,
+    *,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-<a id="describe\_alert\_manager\_definition"></a>
+parent.delete_workspace(**kwargs)
+```
 
-### describe_alert_manager_definition
+1. See [:material-code-braces: DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef) 
+
+### describe\_alert\_manager\_definition
 
 Describes an alert manager definition.
 
-Type annotations for `boto3.client("amp").describe_alert_manager_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("amp").describe_alert_manager_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_alert_manager_definition)
 
-Boto3 documentation:
-[PrometheusService.Client.describe_alert_manager_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_alert_manager_definition)
+```python title="Method definition"
+def describe_alert_manager_definition(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeAlertManagerDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#describealertmanagerdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAlertManagerDefinitionResponseTypeDef](./type_defs.md#describealertmanagerdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAlertManagerDefinitionRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[DescribeAlertManagerDefinitionResponseTypeDef](./type_defs.md#describealertmanagerdefinitionresponsetypedef).
+parent.describe_alert_manager_definition(**kwargs)
+```
 
-<a id="describe\_rule\_groups\_namespace"></a>
+1. See [:material-code-braces: DescribeAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#describealertmanagerdefinitionrequestrequesttypedef) 
 
-### describe_rule_groups_namespace
+### describe\_rule\_groups\_namespace
 
 Describe a rule groups namespace.
 
-Type annotations for `boto3.client("amp").describe_rule_groups_namespace`
-method.
+Type annotations and code completion for `#!python boto3.client("amp").describe_rule_groups_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_rule_groups_namespace)
 
-Boto3 documentation:
-[PrometheusService.Client.describe_rule_groups_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_rule_groups_namespace)
+```python title="Method definition"
+def describe_rule_groups_namespace(
+    self,
+    *,
+    name: str,
+    workspaceId: str,
+) -> DescribeRuleGroupsNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#describerulegroupsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRuleGroupsNamespaceRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef).
+parent.describe_rule_groups_namespace(**kwargs)
+```
 
-<a id="describe\_workspace"></a>
+1. See [:material-code-braces: DescribeRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#describerulegroupsnamespacerequestrequesttypedef) 
 
-### describe_workspace
+### describe\_workspace
 
 Describes an existing AMP workspace.
 
-Type annotations for `boto3.client("amp").describe_workspace` method.
+Type annotations and code completion for `#!python boto3.client("amp").describe_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
 
-Boto3 documentation:
-[PrometheusService.Client.describe_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.describe_workspace)
+```python title="Method definition"
+def describe_workspace(
+    self,
+    *,
+    workspaceId: str,
+) -> DescribeWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
+parent.describe_workspace(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeWorkspaceRequestRequestTypeDef](./type_defs.md#describeworkspacerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("amp").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("amp").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[PrometheusService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_rule\_groups\_namespaces"></a>
-
-### list_rule_groups_namespaces
+### list\_rule\_groups\_namespaces
 
 Lists rule groups namespaces.
 
-Type annotations for `boto3.client("amp").list_rule_groups_namespaces` method.
+Type annotations and code completion for `#!python boto3.client("amp").list_rule_groups_namespaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_rule_groups_namespaces)
 
-Boto3 documentation:
-[PrometheusService.Client.list_rule_groups_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_rule_groups_namespaces)
+```python title="Method definition"
+def list_rule_groups_namespaces(
+    self,
+    *,
+    workspaceId: str,
+    maxResults: int = ...,
+    name: str = ...,
+    nextToken: str = ...,
+) -> ListRuleGroupsNamespacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRuleGroupsNamespacesRequestRequestTypeDef](./type_defs.md#listrulegroupsnamespacesrequestrequesttypedef).
+1. See [:material-code-braces: ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `maxResults`: `int`
-- `name`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRuleGroupsNamespacesRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef).
+parent.list_rule_groups_namespaces(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRuleGroupsNamespacesRequestRequestTypeDef](./type_defs.md#listrulegroupsnamespacesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags you have assigned to the resource.
 
-Type annotations for `boto3.client("amp").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("amp").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[PrometheusService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_workspaces"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_workspaces
+### list\_workspaces
 
 Lists all AMP workspaces, including workspaces being created or deleted.
 
-Type annotations for `boto3.client("amp").list_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("amp").list_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
 
-Boto3 documentation:
-[PrometheusService.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.list_workspaces)
+```python title="Method definition"
+def list_workspaces(
+    self,
+    *,
+    alias: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListWorkspacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `alias`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListWorkspacesRequestRequestTypeDef = {  # (1)
+    "alias": ...,
+}
 
-Returns
-[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+parent.list_workspaces(**kwargs)
+```
 
-<a id="put\_alert\_manager\_definition"></a>
+1. See [:material-code-braces: ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef) 
 
-### put_alert_manager_definition
+### put\_alert\_manager\_definition
 
 Update an alert manager definition.
 
-Type annotations for `boto3.client("amp").put_alert_manager_definition` method.
+Type annotations and code completion for `#!python boto3.client("amp").put_alert_manager_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.put_alert_manager_definition)
 
-Boto3 documentation:
-[PrometheusService.Client.put_alert_manager_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.put_alert_manager_definition)
+```python title="Method definition"
+def put_alert_manager_definition(
+    self,
+    *,
+    data: Union[bytes, IO[bytes], StreamingBody],
+    workspaceId: str,
+    clientToken: str = ...,
+) -> PutAlertManagerDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#putalertmanagerdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: PutAlertManagerDefinitionResponseTypeDef](./type_defs.md#putalertmanagerdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutAlertManagerDefinitionRequestRequestTypeDef = {  # (1)
+    "data": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[PutAlertManagerDefinitionResponseTypeDef](./type_defs.md#putalertmanagerdefinitionresponsetypedef).
+parent.put_alert_manager_definition(**kwargs)
+```
 
-<a id="put\_rule\_groups\_namespace"></a>
+1. See [:material-code-braces: PutAlertManagerDefinitionRequestRequestTypeDef](./type_defs.md#putalertmanagerdefinitionrequestrequesttypedef) 
 
-### put_rule_groups_namespace
+### put\_rule\_groups\_namespace
 
 Update a rule groups namespace.
 
-Type annotations for `boto3.client("amp").put_rule_groups_namespace` method.
+Type annotations and code completion for `#!python boto3.client("amp").put_rule_groups_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.put_rule_groups_namespace)
 
-Boto3 documentation:
-[PrometheusService.Client.put_rule_groups_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.put_rule_groups_namespace)
+```python title="Method definition"
+def put_rule_groups_namespace(
+    self,
+    *,
+    data: Union[bytes, IO[bytes], StreamingBody],
+    name: str,
+    workspaceId: str,
+    clientToken: str = ...,
+) -> PutRuleGroupsNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#putrulegroupsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: PutRuleGroupsNamespaceResponseTypeDef](./type_defs.md#putrulegroupsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `name`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRuleGroupsNamespaceRequestRequestTypeDef = {  # (1)
+    "data": ...,
+    "name": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[PutRuleGroupsNamespaceResponseTypeDef](./type_defs.md#putrulegroupsnamespaceresponsetypedef).
+parent.put_rule_groups_namespace(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutRuleGroupsNamespaceRequestRequestTypeDef](./type_defs.md#putrulegroupsnamespacerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Creates tags for the specified resource.
 
-Type annotations for `boto3.client("amp").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("amp").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.tag_resource)
 
-Boto3 documentation:
-[PrometheusService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes tags from the specified resource.
 
-Type annotations for `boto3.client("amp").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("amp").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.untag_resource)
 
-Boto3 documentation:
-[PrometheusService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_workspace\_alias"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_workspace_alias
+### update\_workspace\_alias
 
 Updates an AMP workspace alias.
 
-Type annotations for `boto3.client("amp").update_workspace_alias` method.
+Type annotations and code completion for `#!python boto3.client("amp").update_workspace_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
 
-Boto3 documentation:
-[PrometheusService.Client.update_workspace_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.update_workspace_alias)
+```python title="Method definition"
+def update_workspace_alias(
+    self,
+    *,
+    workspaceId: str,
+    alias: str = ...,
+    clientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceAliasRequestRequestTypeDef](./type_defs.md#updateworkspacealiasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `alias`: `str`
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceAliasRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_workspace_alias(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWorkspaceAliasRequestRequestTypeDef](./type_defs.md#updateworkspacealiasrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("amp").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("amp").get_paginator` method with overloads.
 
-- `client.get_paginator("list_rule_groups_namespaces")` ->
-  [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
-- `client.get_paginator("list_workspaces")` ->
-  [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+- `client.get_paginator("list_rule_groups_namespaces")` -> [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
+- `client.get_paginator("list_workspaces")` -> [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("amp").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("amp").get_waiter` method with overloads.
 
-- `client.get_waiter("workspace_active")` ->
-  [WorkspaceActiveWaiter](./waiters.md#workspaceactivewaiter)
-- `client.get_waiter("workspace_deleted")` ->
-  [WorkspaceDeletedWaiter](./waiters.md#workspacedeletedwaiter)
+- `client.get_waiter("workspace_active")` -> [WorkspaceActiveWaiter](./waiters.md#workspaceactivewaiter)
+- `client.get_waiter("workspace_deleted")` -> [WorkspaceDeletedWaiter](./waiters.md#workspacedeletedwaiter)
+

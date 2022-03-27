@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cognitoidentityprovider-module"></a>
-
-# Type annotations for boto3 CognitoIdentityProvider module
+#  CognitoIdentityProvider module
 
 > [Index](../README.md) > CognitoIdentityProvider
 
-Auto-generated documentation for
-[CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
-type annotations stubs module
-[mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
+!!! note ""
 
-- [Type annotations for boto3 CognitoIdentityProvider module](#type-annotations-for-boto3-cognitoidentityprovider-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CognitoIdentityProviderClient](#cognitoidentityproviderclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CognitoIdentityProvider](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider)
+    type annotations stubs module [mypy-boto3-cognito-idp](https://pypi.org/project/mypy-boto3-cognito-idp/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CognitoIdentityProvider`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cognito-idp]'
 python -m pip install mypy-boto3-cognito-idp
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,194 +42,37 @@ python -m pip install mypy-boto3-cognito-idp
 python -m pip uninstall -y mypy-boto3-cognito-idp
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cognitoidentityproviderclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CognitoIdentityProviderClient
 
-Type annotations for `boto3.client("cognito-idp")` as
-[CognitoIdentityProviderClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cognito-idp")` as [CognitoIdentityProviderClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-idp.html#CognitoIdentityProvider.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cognito_idp.client import CognitoIdentityProviderClient
+
+def get_client() -> CognitoIdentityProviderClient:
+    return Session().cleint("cognito-idp")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_custom_attributes](./client.md#add_custom_attributes)
-- [admin_add_user_to_group](./client.md#admin_add_user_to_group)
-- [admin_confirm_sign_up](./client.md#admin_confirm_sign_up)
-- [admin_create_user](./client.md#admin_create_user)
-- [admin_delete_user](./client.md#admin_delete_user)
-- [admin_delete_user_attributes](./client.md#admin_delete_user_attributes)
-- [admin_disable_provider_for_user](./client.md#admin_disable_provider_for_user)
-- [admin_disable_user](./client.md#admin_disable_user)
-- [admin_enable_user](./client.md#admin_enable_user)
-- [admin_forget_device](./client.md#admin_forget_device)
-- [admin_get_device](./client.md#admin_get_device)
-- [admin_get_user](./client.md#admin_get_user)
-- [admin_initiate_auth](./client.md#admin_initiate_auth)
-- [admin_link_provider_for_user](./client.md#admin_link_provider_for_user)
-- [admin_list_devices](./client.md#admin_list_devices)
-- [admin_list_groups_for_user](./client.md#admin_list_groups_for_user)
-- [admin_list_user_auth_events](./client.md#admin_list_user_auth_events)
-- [admin_remove_user_from_group](./client.md#admin_remove_user_from_group)
-- [admin_reset_user_password](./client.md#admin_reset_user_password)
-- [admin_respond_to_auth_challenge](./client.md#admin_respond_to_auth_challenge)
-- [admin_set_user_mfa_preference](./client.md#admin_set_user_mfa_preference)
-- [admin_set_user_password](./client.md#admin_set_user_password)
-- [admin_set_user_settings](./client.md#admin_set_user_settings)
-- [admin_update_auth_event_feedback](./client.md#admin_update_auth_event_feedback)
-- [admin_update_device_status](./client.md#admin_update_device_status)
-- [admin_update_user_attributes](./client.md#admin_update_user_attributes)
-- [admin_user_global_sign_out](./client.md#admin_user_global_sign_out)
-- [associate_software_token](./client.md#associate_software_token)
-- [can_paginate](./client.md#can_paginate)
-- [change_password](./client.md#change_password)
-- [confirm_device](./client.md#confirm_device)
-- [confirm_forgot_password](./client.md#confirm_forgot_password)
-- [confirm_sign_up](./client.md#confirm_sign_up)
-- [create_group](./client.md#create_group)
-- [create_identity_provider](./client.md#create_identity_provider)
-- [create_resource_server](./client.md#create_resource_server)
-- [create_user_import_job](./client.md#create_user_import_job)
-- [create_user_pool](./client.md#create_user_pool)
-- [create_user_pool_client](./client.md#create_user_pool_client)
-- [create_user_pool_domain](./client.md#create_user_pool_domain)
-- [delete_group](./client.md#delete_group)
-- [delete_identity_provider](./client.md#delete_identity_provider)
-- [delete_resource_server](./client.md#delete_resource_server)
-- [delete_user](./client.md#delete_user)
-- [delete_user_attributes](./client.md#delete_user_attributes)
-- [delete_user_pool](./client.md#delete_user_pool)
-- [delete_user_pool_client](./client.md#delete_user_pool_client)
-- [delete_user_pool_domain](./client.md#delete_user_pool_domain)
-- [describe_identity_provider](./client.md#describe_identity_provider)
-- [describe_resource_server](./client.md#describe_resource_server)
-- [describe_risk_configuration](./client.md#describe_risk_configuration)
-- [describe_user_import_job](./client.md#describe_user_import_job)
-- [describe_user_pool](./client.md#describe_user_pool)
-- [describe_user_pool_client](./client.md#describe_user_pool_client)
-- [describe_user_pool_domain](./client.md#describe_user_pool_domain)
-- [exceptions](./client.md#exceptions)
-- [forget_device](./client.md#forget_device)
-- [forgot_password](./client.md#forgot_password)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_csv_header](./client.md#get_csv_header)
-- [get_device](./client.md#get_device)
-- [get_group](./client.md#get_group)
-- [get_identity_provider_by_identifier](./client.md#get_identity_provider_by_identifier)
-- [get_paginator](./client.md#get_paginator)
-- [get_signing_certificate](./client.md#get_signing_certificate)
-- [get_ui_customization](./client.md#get_ui_customization)
-- [get_user](./client.md#get_user)
-- [get_user_attribute_verification_code](./client.md#get_user_attribute_verification_code)
-- [get_user_pool_mfa_config](./client.md#get_user_pool_mfa_config)
-- [global_sign_out](./client.md#global_sign_out)
-- [initiate_auth](./client.md#initiate_auth)
-- [list_devices](./client.md#list_devices)
-- [list_groups](./client.md#list_groups)
-- [list_identity_providers](./client.md#list_identity_providers)
-- [list_resource_servers](./client.md#list_resource_servers)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_user_import_jobs](./client.md#list_user_import_jobs)
-- [list_user_pool_clients](./client.md#list_user_pool_clients)
-- [list_user_pools](./client.md#list_user_pools)
-- [list_users](./client.md#list_users)
-- [list_users_in_group](./client.md#list_users_in_group)
-- [resend_confirmation_code](./client.md#resend_confirmation_code)
-- [respond_to_auth_challenge](./client.md#respond_to_auth_challenge)
-- [revoke_token](./client.md#revoke_token)
-- [set_risk_configuration](./client.md#set_risk_configuration)
-- [set_ui_customization](./client.md#set_ui_customization)
-- [set_user_mfa_preference](./client.md#set_user_mfa_preference)
-- [set_user_pool_mfa_config](./client.md#set_user_pool_mfa_config)
-- [set_user_settings](./client.md#set_user_settings)
-- [sign_up](./client.md#sign_up)
-- [start_user_import_job](./client.md#start_user_import_job)
-- [stop_user_import_job](./client.md#stop_user_import_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_auth_event_feedback](./client.md#update_auth_event_feedback)
-- [update_device_status](./client.md#update_device_status)
-- [update_group](./client.md#update_group)
-- [update_identity_provider](./client.md#update_identity_provider)
-- [update_resource_server](./client.md#update_resource_server)
-- [update_user_attributes](./client.md#update_user_attributes)
-- [update_user_pool](./client.md#update_user_pool)
-- [update_user_pool_client](./client.md#update_user_pool_client)
-- [update_user_pool_domain](./client.md#update_user_pool_domain)
-- [verify_software_token](./client.md#verify_software_token)
-- [verify_user_attribute](./client.md#verify_user_attribute)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CognitoIdentityProviderClient [exceptions](./client.md#exceptions)
-
-- AliasExistsException
-- ClientError
-- CodeDeliveryFailureException
-- CodeMismatchException
-- ConcurrentModificationException
-- DuplicateProviderException
-- EnableSoftwareTokenMFAException
-- ExpiredCodeException
-- GroupExistsException
-- InternalErrorException
-- InvalidEmailRoleAccessPolicyException
-- InvalidLambdaResponseException
-- InvalidOAuthFlowException
-- InvalidParameterException
-- InvalidPasswordException
-- InvalidSmsRoleAccessPolicyException
-- InvalidSmsRoleTrustRelationshipException
-- InvalidUserPoolConfigurationException
-- LimitExceededException
-- MFAMethodNotFoundException
-- NotAuthorizedException
-- PasswordResetRequiredException
-- PreconditionNotMetException
-- ResourceNotFoundException
-- ScopeDoesNotExistException
-- SoftwareTokenMFANotFoundException
-- TooManyFailedAttemptsException
-- TooManyRequestsException
-- UnauthorizedException
-- UnexpectedLambdaException
-- UnsupportedIdentityProviderException
-- UnsupportedOperationException
-- UnsupportedTokenTypeException
-- UnsupportedUserStateException
-- UserImportInProgressException
-- UserLambdaValidationException
-- UserNotConfirmedException
-- UserNotFoundException
-- UserPoolAddOnNotEnabledException
-- UserPoolTaggingException
-- UsernameExistsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cognito-idp").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cognito-idp").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator, ...
+from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator
+
+def get_admin_list_groups_for_user_paginator() -> AdminListGroupsForUserPaginator:
+    return Session().client("cognito-idp").get_paginator("admin_list_groups_for_user"))
 ```
 
 - [AdminListGroupsForUserPaginator](./paginators.md#adminlistgroupsforuserpaginator)
@@ -264,16 +85,23 @@ from mypy_boto3_cognito_idp.paginator import AdminListGroupsForUserPaginator, ..
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [ListUsersInGroupPaginator](./paginators.md#listusersingrouppaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType
 
-```python
-from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType, ...
+def get_value() -> AccountTakeoverEventActionTypeType:
+    return "BLOCK"
 ```
 
 - [AccountTakeoverEventActionTypeType](./literals.md#accounttakeovereventactiontypetype)
@@ -325,18 +153,22 @@ from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType, 
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef
 
-```python
-from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef, ...
+def get_value() -> AccountRecoverySettingTypeTypeDef:
+    return {
+        "RecoveryMechanisms": ...,
+    }
 ```
 
 - [AccountRecoverySettingTypeTypeDef](./type_defs.md#accountrecoverysettingtypetypedef)
@@ -364,8 +196,10 @@ from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef, 
 - [AdminLinkProviderForUserRequestRequestTypeDef](./type_defs.md#adminlinkproviderforuserrequestrequesttypedef)
 - [AdminListDevicesRequestRequestTypeDef](./type_defs.md#adminlistdevicesrequestrequesttypedef)
 - [AdminListDevicesResponseTypeDef](./type_defs.md#adminlistdevicesresponsetypedef)
+- [AdminListGroupsForUserRequestAdminListGroupsForUserPaginateTypeDef](./type_defs.md#adminlistgroupsforuserrequestadminlistgroupsforuserpaginatetypedef)
 - [AdminListGroupsForUserRequestRequestTypeDef](./type_defs.md#adminlistgroupsforuserrequestrequesttypedef)
 - [AdminListGroupsForUserResponseTypeDef](./type_defs.md#adminlistgroupsforuserresponsetypedef)
+- [AdminListUserAuthEventsRequestAdminListUserAuthEventsPaginateTypeDef](./type_defs.md#adminlistuserautheventsrequestadminlistuserautheventspaginatetypedef)
 - [AdminListUserAuthEventsRequestRequestTypeDef](./type_defs.md#adminlistuserautheventsrequestrequesttypedef)
 - [AdminListUserAuthEventsResponseTypeDef](./type_defs.md#adminlistuserautheventsresponsetypedef)
 - [AdminRemoveUserFromGroupRequestRequestTypeDef](./type_defs.md#adminremoveuserfromgrouprequestrequesttypedef)
@@ -473,22 +307,29 @@ from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef, 
 - [LambdaConfigTypeTypeDef](./type_defs.md#lambdaconfigtypetypedef)
 - [ListDevicesRequestRequestTypeDef](./type_defs.md#listdevicesrequestrequesttypedef)
 - [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef)
+- [ListGroupsRequestListGroupsPaginateTypeDef](./type_defs.md#listgroupsrequestlistgroupspaginatetypedef)
 - [ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef)
 - [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)
+- [ListIdentityProvidersRequestListIdentityProvidersPaginateTypeDef](./type_defs.md#listidentityprovidersrequestlistidentityproviderspaginatetypedef)
 - [ListIdentityProvidersRequestRequestTypeDef](./type_defs.md#listidentityprovidersrequestrequesttypedef)
 - [ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef)
+- [ListResourceServersRequestListResourceServersPaginateTypeDef](./type_defs.md#listresourceserversrequestlistresourceserverspaginatetypedef)
 - [ListResourceServersRequestRequestTypeDef](./type_defs.md#listresourceserversrequestrequesttypedef)
 - [ListResourceServersResponseTypeDef](./type_defs.md#listresourceserversresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [ListUserImportJobsRequestRequestTypeDef](./type_defs.md#listuserimportjobsrequestrequesttypedef)
 - [ListUserImportJobsResponseTypeDef](./type_defs.md#listuserimportjobsresponsetypedef)
+- [ListUserPoolClientsRequestListUserPoolClientsPaginateTypeDef](./type_defs.md#listuserpoolclientsrequestlistuserpoolclientspaginatetypedef)
 - [ListUserPoolClientsRequestRequestTypeDef](./type_defs.md#listuserpoolclientsrequestrequesttypedef)
 - [ListUserPoolClientsResponseTypeDef](./type_defs.md#listuserpoolclientsresponsetypedef)
+- [ListUserPoolsRequestListUserPoolsPaginateTypeDef](./type_defs.md#listuserpoolsrequestlistuserpoolspaginatetypedef)
 - [ListUserPoolsRequestRequestTypeDef](./type_defs.md#listuserpoolsrequestrequesttypedef)
 - [ListUserPoolsResponseTypeDef](./type_defs.md#listuserpoolsresponsetypedef)
+- [ListUsersInGroupRequestListUsersInGroupPaginateTypeDef](./type_defs.md#listusersingrouprequestlistusersingrouppaginatetypedef)
 - [ListUsersInGroupRequestRequestTypeDef](./type_defs.md#listusersingrouprequestrequesttypedef)
 - [ListUsersInGroupResponseTypeDef](./type_defs.md#listusersingroupresponsetypedef)
+- [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [MFAOptionTypeTypeDef](./type_defs.md#mfaoptiontypetypedef)
@@ -566,3 +407,4 @@ from mypy_boto3_cognito_idp.type_defs import AccountRecoverySettingTypeTypeDef, 
 - [VerifySoftwareTokenRequestRequestTypeDef](./type_defs.md#verifysoftwaretokenrequestrequesttypedef)
 - [VerifySoftwareTokenResponseTypeDef](./type_defs.md#verifysoftwaretokenresponsetypedef)
 - [VerifyUserAttributeRequestRequestTypeDef](./type_defs.md#verifyuserattributerequestrequesttypedef)
+

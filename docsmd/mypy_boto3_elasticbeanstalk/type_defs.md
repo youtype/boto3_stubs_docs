@@ -1,2296 +1,2960 @@
-<a id="typed-dictionaries-for-boto3-elasticbeanstalk-module"></a>
-
-# Typed dictionaries for boto3 ElasticBeanstalk module
+# Typed dictionaries
 
 > [Index](../README.md) > [ElasticBeanstalk](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module
-[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ElasticBeanstalk module](#typed-dictionaries-for-boto3-elasticbeanstalk-module)
-  - [AbortEnvironmentUpdateMessageRequestTypeDef](#abortenvironmentupdatemessagerequesttypedef)
-  - [ApplicationDescriptionMessageTypeDef](#applicationdescriptionmessagetypedef)
-  - [ApplicationDescriptionTypeDef](#applicationdescriptiontypedef)
-  - [ApplicationDescriptionsMessageTypeDef](#applicationdescriptionsmessagetypedef)
-  - [ApplicationMetricsTypeDef](#applicationmetricstypedef)
-  - [ApplicationResourceLifecycleConfigTypeDef](#applicationresourcelifecycleconfigtypedef)
-  - [ApplicationResourceLifecycleDescriptionMessageTypeDef](#applicationresourcelifecycledescriptionmessagetypedef)
-  - [ApplicationVersionDescriptionMessageTypeDef](#applicationversiondescriptionmessagetypedef)
-  - [ApplicationVersionDescriptionTypeDef](#applicationversiondescriptiontypedef)
-  - [ApplicationVersionDescriptionsMessageTypeDef](#applicationversiondescriptionsmessagetypedef)
-  - [ApplicationVersionLifecycleConfigTypeDef](#applicationversionlifecycleconfigtypedef)
-  - [ApplyEnvironmentManagedActionRequestRequestTypeDef](#applyenvironmentmanagedactionrequestrequesttypedef)
-  - [ApplyEnvironmentManagedActionResultTypeDef](#applyenvironmentmanagedactionresulttypedef)
-  - [AssociateEnvironmentOperationsRoleMessageRequestTypeDef](#associateenvironmentoperationsrolemessagerequesttypedef)
-  - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
-  - [BuildConfigurationTypeDef](#buildconfigurationtypedef)
-  - [BuilderTypeDef](#buildertypedef)
-  - [CPUUtilizationTypeDef](#cpuutilizationtypedef)
-  - [CheckDNSAvailabilityMessageRequestTypeDef](#checkdnsavailabilitymessagerequesttypedef)
-  - [CheckDNSAvailabilityResultMessageTypeDef](#checkdnsavailabilityresultmessagetypedef)
-  - [ComposeEnvironmentsMessageRequestTypeDef](#composeenvironmentsmessagerequesttypedef)
-  - [ConfigurationOptionDescriptionTypeDef](#configurationoptiondescriptiontypedef)
-  - [ConfigurationOptionSettingTypeDef](#configurationoptionsettingtypedef)
-  - [ConfigurationOptionsDescriptionTypeDef](#configurationoptionsdescriptiontypedef)
-  - [ConfigurationSettingsDescriptionResponseMetadataTypeDef](#configurationsettingsdescriptionresponsemetadatatypedef)
-  - [ConfigurationSettingsDescriptionTypeDef](#configurationsettingsdescriptiontypedef)
-  - [ConfigurationSettingsDescriptionsTypeDef](#configurationsettingsdescriptionstypedef)
-  - [ConfigurationSettingsValidationMessagesTypeDef](#configurationsettingsvalidationmessagestypedef)
-  - [CreateApplicationMessageRequestTypeDef](#createapplicationmessagerequesttypedef)
-  - [CreateApplicationVersionMessageRequestTypeDef](#createapplicationversionmessagerequesttypedef)
-  - [CreateConfigurationTemplateMessageRequestTypeDef](#createconfigurationtemplatemessagerequesttypedef)
-  - [CreateEnvironmentMessageRequestTypeDef](#createenvironmentmessagerequesttypedef)
-  - [CreatePlatformVersionRequestRequestTypeDef](#createplatformversionrequestrequesttypedef)
-  - [CreatePlatformVersionResultTypeDef](#createplatformversionresulttypedef)
-  - [CreateStorageLocationResultMessageTypeDef](#createstoragelocationresultmessagetypedef)
-  - [CustomAmiTypeDef](#customamitypedef)
-  - [DeleteApplicationMessageRequestTypeDef](#deleteapplicationmessagerequesttypedef)
-  - [DeleteApplicationVersionMessageRequestTypeDef](#deleteapplicationversionmessagerequesttypedef)
-  - [DeleteConfigurationTemplateMessageRequestTypeDef](#deleteconfigurationtemplatemessagerequesttypedef)
-  - [DeleteEnvironmentConfigurationMessageRequestTypeDef](#deleteenvironmentconfigurationmessagerequesttypedef)
-  - [DeletePlatformVersionRequestRequestTypeDef](#deleteplatformversionrequestrequesttypedef)
-  - [DeletePlatformVersionResultTypeDef](#deleteplatformversionresulttypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DescribeAccountAttributesResultTypeDef](#describeaccountattributesresulttypedef)
-  - [DescribeApplicationVersionsMessageRequestTypeDef](#describeapplicationversionsmessagerequesttypedef)
-  - [DescribeApplicationsMessageRequestTypeDef](#describeapplicationsmessagerequesttypedef)
-  - [DescribeConfigurationOptionsMessageRequestTypeDef](#describeconfigurationoptionsmessagerequesttypedef)
-  - [DescribeConfigurationSettingsMessageRequestTypeDef](#describeconfigurationsettingsmessagerequesttypedef)
-  - [DescribeEnvironmentHealthRequestRequestTypeDef](#describeenvironmenthealthrequestrequesttypedef)
-  - [DescribeEnvironmentHealthResultTypeDef](#describeenvironmenthealthresulttypedef)
-  - [DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](#describeenvironmentmanagedactionhistoryrequestrequesttypedef)
-  - [DescribeEnvironmentManagedActionHistoryResultTypeDef](#describeenvironmentmanagedactionhistoryresulttypedef)
-  - [DescribeEnvironmentManagedActionsRequestRequestTypeDef](#describeenvironmentmanagedactionsrequestrequesttypedef)
-  - [DescribeEnvironmentManagedActionsResultTypeDef](#describeenvironmentmanagedactionsresulttypedef)
-  - [DescribeEnvironmentResourcesMessageRequestTypeDef](#describeenvironmentresourcesmessagerequesttypedef)
-  - [DescribeEnvironmentsMessageRequestTypeDef](#describeenvironmentsmessagerequesttypedef)
-  - [DescribeEventsMessageRequestTypeDef](#describeeventsmessagerequesttypedef)
-  - [DescribeInstancesHealthRequestRequestTypeDef](#describeinstanceshealthrequestrequesttypedef)
-  - [DescribeInstancesHealthResultTypeDef](#describeinstanceshealthresulttypedef)
-  - [DescribePlatformVersionRequestRequestTypeDef](#describeplatformversionrequestrequesttypedef)
-  - [DescribePlatformVersionResultTypeDef](#describeplatformversionresulttypedef)
-  - [DisassociateEnvironmentOperationsRoleMessageRequestTypeDef](#disassociateenvironmentoperationsrolemessagerequesttypedef)
-  - [EnvironmentDescriptionResponseMetadataTypeDef](#environmentdescriptionresponsemetadatatypedef)
-  - [EnvironmentDescriptionTypeDef](#environmentdescriptiontypedef)
-  - [EnvironmentDescriptionsMessageTypeDef](#environmentdescriptionsmessagetypedef)
-  - [EnvironmentInfoDescriptionTypeDef](#environmentinfodescriptiontypedef)
-  - [EnvironmentLinkTypeDef](#environmentlinktypedef)
-  - [EnvironmentResourceDescriptionTypeDef](#environmentresourcedescriptiontypedef)
-  - [EnvironmentResourceDescriptionsMessageTypeDef](#environmentresourcedescriptionsmessagetypedef)
-  - [EnvironmentResourcesDescriptionTypeDef](#environmentresourcesdescriptiontypedef)
-  - [EnvironmentTierTypeDef](#environmenttiertypedef)
-  - [EventDescriptionTypeDef](#eventdescriptiontypedef)
-  - [EventDescriptionsMessageTypeDef](#eventdescriptionsmessagetypedef)
-  - [InstanceHealthSummaryTypeDef](#instancehealthsummarytypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [LatencyTypeDef](#latencytypedef)
-  - [LaunchConfigurationTypeDef](#launchconfigurationtypedef)
-  - [LaunchTemplateTypeDef](#launchtemplatetypedef)
-  - [ListAvailableSolutionStacksResultMessageTypeDef](#listavailablesolutionstacksresultmessagetypedef)
-  - [ListPlatformBranchesRequestRequestTypeDef](#listplatformbranchesrequestrequesttypedef)
-  - [ListPlatformBranchesResultTypeDef](#listplatformbranchesresulttypedef)
-  - [ListPlatformVersionsRequestRequestTypeDef](#listplatformversionsrequestrequesttypedef)
-  - [ListPlatformVersionsResultTypeDef](#listplatformversionsresulttypedef)
-  - [ListTagsForResourceMessageRequestTypeDef](#listtagsforresourcemessagerequesttypedef)
-  - [ListenerTypeDef](#listenertypedef)
-  - [LoadBalancerDescriptionTypeDef](#loadbalancerdescriptiontypedef)
-  - [LoadBalancerTypeDef](#loadbalancertypedef)
-  - [ManagedActionHistoryItemTypeDef](#managedactionhistoryitemtypedef)
-  - [ManagedActionTypeDef](#managedactiontypedef)
-  - [MaxAgeRuleTypeDef](#maxageruletypedef)
-  - [MaxCountRuleTypeDef](#maxcountruletypedef)
-  - [OptionRestrictionRegexTypeDef](#optionrestrictionregextypedef)
-  - [OptionSpecificationTypeDef](#optionspecificationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlatformBranchSummaryTypeDef](#platformbranchsummarytypedef)
-  - [PlatformDescriptionTypeDef](#platformdescriptiontypedef)
-  - [PlatformFilterTypeDef](#platformfiltertypedef)
-  - [PlatformFrameworkTypeDef](#platformframeworktypedef)
-  - [PlatformProgrammingLanguageTypeDef](#platformprogramminglanguagetypedef)
-  - [PlatformSummaryTypeDef](#platformsummarytypedef)
-  - [QueueTypeDef](#queuetypedef)
-  - [RebuildEnvironmentMessageRequestTypeDef](#rebuildenvironmentmessagerequesttypedef)
-  - [RequestEnvironmentInfoMessageRequestTypeDef](#requestenvironmentinfomessagerequesttypedef)
-  - [ResourceQuotaTypeDef](#resourcequotatypedef)
-  - [ResourceQuotasTypeDef](#resourcequotastypedef)
-  - [ResourceTagsDescriptionMessageTypeDef](#resourcetagsdescriptionmessagetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestartAppServerMessageRequestTypeDef](#restartappservermessagerequesttypedef)
-  - [RetrieveEnvironmentInfoMessageRequestTypeDef](#retrieveenvironmentinfomessagerequesttypedef)
-  - [RetrieveEnvironmentInfoResultMessageTypeDef](#retrieveenvironmentinforesultmessagetypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SearchFilterTypeDef](#searchfiltertypedef)
-  - [SingleInstanceHealthTypeDef](#singleinstancehealthtypedef)
-  - [SolutionStackDescriptionTypeDef](#solutionstackdescriptiontypedef)
-  - [SourceBuildInformationTypeDef](#sourcebuildinformationtypedef)
-  - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
-  - [StatusCodesTypeDef](#statuscodestypedef)
-  - [SwapEnvironmentCNAMEsMessageRequestTypeDef](#swapenvironmentcnamesmessagerequesttypedef)
-  - [SystemStatusTypeDef](#systemstatustypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TerminateEnvironmentMessageRequestTypeDef](#terminateenvironmentmessagerequesttypedef)
-  - [TriggerTypeDef](#triggertypedef)
-  - [UpdateApplicationMessageRequestTypeDef](#updateapplicationmessagerequesttypedef)
-  - [UpdateApplicationResourceLifecycleMessageRequestTypeDef](#updateapplicationresourcelifecyclemessagerequesttypedef)
-  - [UpdateApplicationVersionMessageRequestTypeDef](#updateapplicationversionmessagerequesttypedef)
-  - [UpdateConfigurationTemplateMessageRequestTypeDef](#updateconfigurationtemplatemessagerequesttypedef)
-  - [UpdateEnvironmentMessageRequestTypeDef](#updateenvironmentmessagerequesttypedef)
-  - [UpdateTagsForResourceMessageRequestTypeDef](#updatetagsforresourcemessagerequesttypedef)
-  - [ValidateConfigurationSettingsMessageRequestTypeDef](#validateconfigurationsettingsmessagerequesttypedef)
-  - [ValidationMessageTypeDef](#validationmessagetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="abortenvironmentupdatemessagerequesttypedef"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## AbortEnvironmentUpdateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import AbortEnvironmentUpdateMessageRequestTypeDef
+
+def get_value() -> AbortEnvironmentUpdateMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-
-<a id="applicationdescriptionmessagetypedef"></a>
+```python title="Definition"
+class AbortEnvironmentUpdateMessageRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
 ## ApplicationDescriptionMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionMessageTypeDef
+
+def get_value() -> ApplicationDescriptionMessageTypeDef:
+    return {
+        "Application": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationDescriptionMessageTypeDef(TypedDict):
+    Application: ApplicationDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Application`:
-  [ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionTypeDef
+
+def get_value() -> ApplicationDescriptionTypeDef:
+    return {
+        "ApplicationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationDescriptionTypeDef(TypedDict):
+    ApplicationArn: NotRequired[str],
+    ApplicationName: NotRequired[str],
+    Description: NotRequired[str],
+    DateCreated: NotRequired[datetime],
+    DateUpdated: NotRequired[datetime],
+    Versions: NotRequired[List[str]],
+    ConfigurationTemplates: NotRequired[List[str]],
+    ResourceLifecycleConfig: NotRequired[ApplicationResourceLifecycleConfigTypeDef],  # (1)
+```
 
-- `ApplicationArn`: `str`
-- `ApplicationName`: `str`
-- `Description`: `str`
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `Versions`: `List`\[`str`\]
-- `ConfigurationTemplates`: `List`\[`str`\]
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-
-<a id="applicationdescriptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
 ## ApplicationDescriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationDescriptionsMessageTypeDef
+
+def get_value() -> ApplicationDescriptionsMessageTypeDef:
+    return {
+        "Applications": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationDescriptionsMessageTypeDef(TypedDict):
+    Applications: List[ApplicationDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Applications`:
-  `List`\[[ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationmetricstypedef"></a>
-
+1. See [:material-code-braces: ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationMetricsTypeDef
+
+def get_value() -> ApplicationMetricsTypeDef:
+    return {
+        "Duration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationMetricsTypeDef(TypedDict):
+    Duration: NotRequired[int],
+    RequestCount: NotRequired[int],
+    StatusCodes: NotRequired[StatusCodesTypeDef],  # (1)
+    Latency: NotRequired[LatencyTypeDef],  # (2)
+```
 
-- `Duration`: `int`
-- `RequestCount`: `int`
-- `StatusCodes`: [StatusCodesTypeDef](./type_defs.md#statuscodestypedef)
-- `Latency`: [LatencyTypeDef](./type_defs.md#latencytypedef)
-
-<a id="applicationresourcelifecycleconfigtypedef"></a>
-
+1. See [:material-code-braces: StatusCodesTypeDef](./type_defs.md#statuscodestypedef) 
+2. See [:material-code-braces: LatencyTypeDef](./type_defs.md#latencytypedef) 
 ## ApplicationResourceLifecycleConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleConfigTypeDef
+
+def get_value() -> ApplicationResourceLifecycleConfigTypeDef:
+    return {
+        "ServiceRole": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationResourceLifecycleConfigTypeDef(TypedDict):
+    ServiceRole: NotRequired[str],
+    VersionLifecycleConfig: NotRequired[ApplicationVersionLifecycleConfigTypeDef],  # (1)
+```
 
-- `ServiceRole`: `str`
-- `VersionLifecycleConfig`:
-  [ApplicationVersionLifecycleConfigTypeDef](./type_defs.md#applicationversionlifecycleconfigtypedef)
-
-<a id="applicationresourcelifecycledescriptionmessagetypedef"></a>
-
+1. See [:material-code-braces: ApplicationVersionLifecycleConfigTypeDef](./type_defs.md#applicationversionlifecycleconfigtypedef) 
 ## ApplicationResourceLifecycleDescriptionMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationResourceLifecycleDescriptionMessageTypeDef
+
+def get_value() -> ApplicationResourceLifecycleDescriptionMessageTypeDef:
+    return {
+        "ApplicationName": ...,
+        "ResourceLifecycleConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationResourceLifecycleDescriptionMessageTypeDef(TypedDict):
+    ApplicationName: str,
+    ResourceLifecycleConfig: ApplicationResourceLifecycleConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationName`: `str`
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationversiondescriptionmessagetypedef"></a>
-
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationVersionDescriptionMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionMessageTypeDef
+
+def get_value() -> ApplicationVersionDescriptionMessageTypeDef:
+    return {
+        "ApplicationVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationVersionDescriptionMessageTypeDef(TypedDict):
+    ApplicationVersion: ApplicationVersionDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationVersion`:
-  [ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationversiondescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationVersionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionTypeDef
+
+def get_value() -> ApplicationVersionDescriptionTypeDef:
+    return {
+        "ApplicationVersionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationVersionDescriptionTypeDef(TypedDict):
+    ApplicationVersionArn: NotRequired[str],
+    ApplicationName: NotRequired[str],
+    Description: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    SourceBuildInformation: NotRequired[SourceBuildInformationTypeDef],  # (1)
+    BuildArn: NotRequired[str],
+    SourceBundle: NotRequired[S3LocationTypeDef],  # (2)
+    DateCreated: NotRequired[datetime],
+    DateUpdated: NotRequired[datetime],
+    Status: NotRequired[ApplicationVersionStatusType],  # (3)
+```
 
-- `ApplicationVersionArn`: `str`
-- `ApplicationName`: `str`
-- `Description`: `str`
-- `VersionLabel`: `str`
-- `SourceBuildInformation`:
-  [SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef)
-- `BuildArn`: `str`
-- `SourceBundle`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `Status`:
-  [ApplicationVersionStatusType](./literals.md#applicationversionstatustype)
-
-<a id="applicationversiondescriptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+3. See [:material-code-brackets: ApplicationVersionStatusType](./literals.md#applicationversionstatustype) 
 ## ApplicationVersionDescriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionDescriptionsMessageTypeDef
+
+def get_value() -> ApplicationVersionDescriptionsMessageTypeDef:
+    return {
+        "ApplicationVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplicationVersionDescriptionsMessageTypeDef(TypedDict):
+    ApplicationVersions: List[ApplicationVersionDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationVersions`:
-  `List`\[[ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="applicationversionlifecycleconfigtypedef"></a>
-
+1. See [:material-code-braces: ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ApplicationVersionLifecycleConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplicationVersionLifecycleConfigTypeDef
+
+def get_value() -> ApplicationVersionLifecycleConfigTypeDef:
+    return {
+        "MaxCountRule": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationVersionLifecycleConfigTypeDef(TypedDict):
+    MaxCountRule: NotRequired[MaxCountRuleTypeDef],  # (1)
+    MaxAgeRule: NotRequired[MaxAgeRuleTypeDef],  # (2)
+```
 
-- `MaxCountRule`: [MaxCountRuleTypeDef](./type_defs.md#maxcountruletypedef)
-- `MaxAgeRule`: [MaxAgeRuleTypeDef](./type_defs.md#maxageruletypedef)
-
-<a id="applyenvironmentmanagedactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MaxCountRuleTypeDef](./type_defs.md#maxcountruletypedef) 
+2. See [:material-code-braces: MaxAgeRuleTypeDef](./type_defs.md#maxageruletypedef) 
 ## ApplyEnvironmentManagedActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionRequestRequestTypeDef
+
+def get_value() -> ApplyEnvironmentManagedActionRequestRequestTypeDef:
+    return {
+        "ActionId": ...,
+    }
 ```
 
-Required fields:
-
-- `ActionId`: `str`
-
-Optional fields:
-
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-
-<a id="applyenvironmentmanagedactionresulttypedef"></a>
+```python title="Definition"
+class ApplyEnvironmentManagedActionRequestRequestTypeDef(TypedDict):
+    ActionId: str,
+    EnvironmentName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+```
 
 ## ApplyEnvironmentManagedActionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ApplyEnvironmentManagedActionResultTypeDef
+
+def get_value() -> ApplyEnvironmentManagedActionResultTypeDef:
+    return {
+        "ActionId": ...,
+        "ActionDescription": ...,
+        "ActionType": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ApplyEnvironmentManagedActionResultTypeDef(TypedDict):
+    ActionId: str,
+    ActionDescription: str,
+    ActionType: ActionTypeType,  # (1)
+    Status: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ActionId`: `str`
-- `ActionDescription`: `str`
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
-- `Status`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associateenvironmentoperationsrolemessagerequesttypedef"></a>
-
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateEnvironmentOperationsRoleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import AssociateEnvironmentOperationsRoleMessageRequestTypeDef
+
+def get_value() -> AssociateEnvironmentOperationsRoleMessageRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+        "OperationsRole": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentName`: `str`
-- `OperationsRole`: `str`
-
-<a id="autoscalinggrouptypedef"></a>
+```python title="Definition"
+class AssociateEnvironmentOperationsRoleMessageRequestTypeDef(TypedDict):
+    EnvironmentName: str,
+    OperationsRole: str,
+```
 
 ## AutoScalingGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import AutoScalingGroupTypeDef
+
+def get_value() -> AutoScalingGroupTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="buildconfigurationtypedef"></a>
+```python title="Definition"
+class AutoScalingGroupTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## BuildConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import BuildConfigurationTypeDef
+
+def get_value() -> BuildConfigurationTypeDef:
+    return {
+        "CodeBuildServiceRole": ...,
+        "Image": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BuildConfigurationTypeDef(TypedDict):
+    CodeBuildServiceRole: str,
+    Image: str,
+    ArtifactName: NotRequired[str],
+    ComputeType: NotRequired[ComputeTypeType],  # (1)
+    TimeoutInMinutes: NotRequired[int],
+```
 
-- `CodeBuildServiceRole`: `str`
-- `Image`: `str`
-
-Optional fields:
-
-- `ArtifactName`: `str`
-- `ComputeType`: [ComputeTypeType](./literals.md#computetypetype)
-- `TimeoutInMinutes`: `int`
-
-<a id="buildertypedef"></a>
-
+1. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
 ## BuilderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import BuilderTypeDef
+
+def get_value() -> BuilderTypeDef:
+    return {
+        "ARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `ARN`: `str`
-
-<a id="cpuutilizationtypedef"></a>
+```python title="Definition"
+class BuilderTypeDef(TypedDict):
+    ARN: NotRequired[str],
+```
 
 ## CPUUtilizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CPUUtilizationTypeDef
+
+def get_value() -> CPUUtilizationTypeDef:
+    return {
+        "User": ...,
+    }
 ```
 
-Optional fields:
-
-- `User`: `float`
-- `Nice`: `float`
-- `System`: `float`
-- `Idle`: `float`
-- `IOWait`: `float`
-- `IRQ`: `float`
-- `SoftIRQ`: `float`
-- `Privileged`: `float`
-
-<a id="checkdnsavailabilitymessagerequesttypedef"></a>
+```python title="Definition"
+class CPUUtilizationTypeDef(TypedDict):
+    User: NotRequired[float],
+    Nice: NotRequired[float],
+    System: NotRequired[float],
+    Idle: NotRequired[float],
+    IOWait: NotRequired[float],
+    IRQ: NotRequired[float],
+    SoftIRQ: NotRequired[float],
+    Privileged: NotRequired[float],
+```
 
 ## CheckDNSAvailabilityMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityMessageRequestTypeDef
+
+def get_value() -> CheckDNSAvailabilityMessageRequestTypeDef:
+    return {
+        "CNAMEPrefix": ...,
+    }
 ```
 
-Required fields:
-
-- `CNAMEPrefix`: `str`
-
-<a id="checkdnsavailabilityresultmessagetypedef"></a>
+```python title="Definition"
+class CheckDNSAvailabilityMessageRequestTypeDef(TypedDict):
+    CNAMEPrefix: str,
+```
 
 ## CheckDNSAvailabilityResultMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityResultMessageTypeDef
+
+def get_value() -> CheckDNSAvailabilityResultMessageTypeDef:
+    return {
+        "Available": ...,
+        "FullyQualifiedCNAME": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckDNSAvailabilityResultMessageTypeDef(TypedDict):
+    Available: bool,
+    FullyQualifiedCNAME: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Available`: `bool`
-- `FullyQualifiedCNAME`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="composeenvironmentsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ComposeEnvironmentsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ComposeEnvironmentsMessageRequestTypeDef
+
+def get_value() -> ComposeEnvironmentsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationName`: `str`
-- `GroupName`: `str`
-- `VersionLabels`: `Sequence`\[`str`\]
-
-<a id="configurationoptiondescriptiontypedef"></a>
+```python title="Definition"
+class ComposeEnvironmentsMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    GroupName: NotRequired[str],
+    VersionLabels: NotRequired[Sequence[str]],
+```
 
 ## ConfigurationOptionDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionDescriptionTypeDef
+
+def get_value() -> ConfigurationOptionDescriptionTypeDef:
+    return {
+        "Namespace": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationOptionDescriptionTypeDef(TypedDict):
+    Namespace: NotRequired[str],
+    Name: NotRequired[str],
+    DefaultValue: NotRequired[str],
+    ChangeSeverity: NotRequired[str],
+    UserDefined: NotRequired[bool],
+    ValueType: NotRequired[ConfigurationOptionValueTypeType],  # (1)
+    ValueOptions: NotRequired[List[str]],
+    MinValue: NotRequired[int],
+    MaxValue: NotRequired[int],
+    MaxLength: NotRequired[int],
+    Regex: NotRequired[OptionRestrictionRegexTypeDef],  # (2)
+```
 
-- `Namespace`: `str`
-- `Name`: `str`
-- `DefaultValue`: `str`
-- `ChangeSeverity`: `str`
-- `UserDefined`: `bool`
-- `ValueType`:
-  [ConfigurationOptionValueTypeType](./literals.md#configurationoptionvaluetypetype)
-- `ValueOptions`: `List`\[`str`\]
-- `MinValue`: `int`
-- `MaxValue`: `int`
-- `MaxLength`: `int`
-- `Regex`:
-  [OptionRestrictionRegexTypeDef](./type_defs.md#optionrestrictionregextypedef)
-
-<a id="configurationoptionsettingtypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationOptionValueTypeType](./literals.md#configurationoptionvaluetypetype) 
+2. See [:material-code-braces: OptionRestrictionRegexTypeDef](./type_defs.md#optionrestrictionregextypedef) 
 ## ConfigurationOptionSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionSettingTypeDef
+
+def get_value() -> ConfigurationOptionSettingTypeDef:
+    return {
+        "ResourceName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceName`: `str`
-- `Namespace`: `str`
-- `OptionName`: `str`
-- `Value`: `str`
-
-<a id="configurationoptionsdescriptiontypedef"></a>
+```python title="Definition"
+class ConfigurationOptionSettingTypeDef(TypedDict):
+    ResourceName: NotRequired[str],
+    Namespace: NotRequired[str],
+    OptionName: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## ConfigurationOptionsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationOptionsDescriptionTypeDef
+
+def get_value() -> ConfigurationOptionsDescriptionTypeDef:
+    return {
+        "SolutionStackName": ...,
+        "PlatformArn": ...,
+        "Options": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationOptionsDescriptionTypeDef(TypedDict):
+    SolutionStackName: str,
+    PlatformArn: str,
+    Options: List[ConfigurationOptionDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `Options`:
-  `List`\[[ConfigurationOptionDescriptionTypeDef](./type_defs.md#configurationoptiondescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationsettingsdescriptionresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ConfigurationOptionDescriptionTypeDef](./type_defs.md#configurationoptiondescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationSettingsDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionResponseMetadataTypeDef
+
+def get_value() -> ConfigurationSettingsDescriptionResponseMetadataTypeDef:
+    return {
+        "SolutionStackName": ...,
+        "PlatformArn": ...,
+        "ApplicationName": ...,
+        "TemplateName": ...,
+        "Description": ...,
+        "EnvironmentName": ...,
+        "DeploymentStatus": ...,
+        "DateCreated": ...,
+        "DateUpdated": ...,
+        "OptionSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationSettingsDescriptionResponseMetadataTypeDef(TypedDict):
+    SolutionStackName: str,
+    PlatformArn: str,
+    ApplicationName: str,
+    TemplateName: str,
+    Description: str,
+    EnvironmentName: str,
+    DeploymentStatus: ConfigurationDeploymentStatusType,  # (1)
+    DateCreated: datetime,
+    DateUpdated: datetime,
+    OptionSettings: List[ConfigurationOptionSettingTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-- `Description`: `str`
-- `EnvironmentName`: `str`
-- `DeploymentStatus`:
-  [ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype)
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationsettingsdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationSettingsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionTypeDef
+
+def get_value() -> ConfigurationSettingsDescriptionTypeDef:
+    return {
+        "SolutionStackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationSettingsDescriptionTypeDef(TypedDict):
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    ApplicationName: NotRequired[str],
+    TemplateName: NotRequired[str],
+    Description: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    DeploymentStatus: NotRequired[ConfigurationDeploymentStatusType],  # (1)
+    DateCreated: NotRequired[datetime],
+    DateUpdated: NotRequired[datetime],
+    OptionSettings: NotRequired[List[ConfigurationOptionSettingTypeDef]],  # (2)
+```
 
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-- `Description`: `str`
-- `EnvironmentName`: `str`
-- `DeploymentStatus`:
-  [ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype)
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `OptionSettings`:
-  `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-
-<a id="configurationsettingsdescriptionstypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationDeploymentStatusType](./literals.md#configurationdeploymentstatustype) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
 ## ConfigurationSettingsDescriptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsDescriptionsTypeDef
+
+def get_value() -> ConfigurationSettingsDescriptionsTypeDef:
+    return {
+        "ConfigurationSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationSettingsDescriptionsTypeDef(TypedDict):
+    ConfigurationSettings: List[ConfigurationSettingsDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationSettings`:
-  `List`\[[ConfigurationSettingsDescriptionTypeDef](./type_defs.md#configurationsettingsdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationsettingsvalidationmessagestypedef"></a>
-
+1. See [:material-code-braces: ConfigurationSettingsDescriptionTypeDef](./type_defs.md#configurationsettingsdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationSettingsValidationMessagesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ConfigurationSettingsValidationMessagesTypeDef
+
+def get_value() -> ConfigurationSettingsValidationMessagesTypeDef:
+    return {
+        "Messages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigurationSettingsValidationMessagesTypeDef(TypedDict):
+    Messages: List[ValidationMessageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Messages`:
-  `List`\[[ValidationMessageTypeDef](./type_defs.md#validationmessagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createapplicationmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ValidationMessageTypeDef](./type_defs.md#validationmessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateApplicationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationMessageRequestTypeDef
+
+def get_value() -> CreateApplicationMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    Description: NotRequired[str],
+    ResourceLifecycleConfig: NotRequired[ApplicationResourceLifecycleConfigTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createapplicationversionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateApplicationVersionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreateApplicationVersionMessageRequestTypeDef
+
+def get_value() -> CreateApplicationVersionMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "VersionLabel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationVersionMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    VersionLabel: str,
+    Description: NotRequired[str],
+    SourceBuildInformation: NotRequired[SourceBuildInformationTypeDef],  # (1)
+    SourceBundle: NotRequired[S3LocationTypeDef],  # (2)
+    BuildConfiguration: NotRequired[BuildConfigurationTypeDef],  # (3)
+    AutoCreateApplication: NotRequired[bool],
+    Process: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SourceBuildInformation`:
-  [SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef)
-- `SourceBundle`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `BuildConfiguration`:
-  [BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef)
-- `AutoCreateApplication`: `bool`
-- `Process`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createconfigurationtemplatemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+3. See [:material-code-braces: BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateConfigurationTemplateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreateConfigurationTemplateMessageRequestTypeDef
+
+def get_value() -> CreateConfigurationTemplateMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "TemplateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConfigurationTemplateMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    TemplateName: str,
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
+    EnvironmentId: NotRequired[str],
+    Description: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[ConfigurationOptionSettingTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-
-Optional fields:
-
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `EnvironmentId`: `str`
-- `Description`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createenvironmentmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateEnvironmentMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreateEnvironmentMessageRequestTypeDef
+
+def get_value() -> CreateEnvironmentMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    EnvironmentName: NotRequired[str],
+    GroupName: NotRequired[str],
+    Description: NotRequired[str],
+    CNAMEPrefix: NotRequired[str],
+    Tier: NotRequired[EnvironmentTierTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+    VersionLabel: NotRequired[str],
+    TemplateName: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[ConfigurationOptionSettingTypeDef]],  # (3)
+    OptionsToRemove: NotRequired[Sequence[OptionSpecificationTypeDef]],  # (4)
+    OperationsRole: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `EnvironmentName`: `str`
-- `GroupName`: `str`
-- `Description`: `str`
-- `CNAMEPrefix`: `str`
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
-- `OperationsRole`: `str`
-
-<a id="createplatformversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+4. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
 ## CreatePlatformVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionRequestRequestTypeDef
+
+def get_value() -> CreatePlatformVersionRequestRequestTypeDef:
+    return {
+        "PlatformName": ...,
+        "PlatformVersion": ...,
+        "PlatformDefinitionBundle": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePlatformVersionRequestRequestTypeDef(TypedDict):
+    PlatformName: str,
+    PlatformVersion: str,
+    PlatformDefinitionBundle: S3LocationTypeDef,  # (1)
+    EnvironmentName: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[ConfigurationOptionSettingTypeDef]],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `PlatformName`: `str`
-- `PlatformVersion`: `str`
-- `PlatformDefinitionBundle`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-Optional fields:
-
-- `EnvironmentName`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createplatformversionresulttypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePlatformVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreatePlatformVersionResultTypeDef
+
+def get_value() -> CreatePlatformVersionResultTypeDef:
+    return {
+        "PlatformSummary": ...,
+        "Builder": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePlatformVersionResultTypeDef(TypedDict):
+    PlatformSummary: PlatformSummaryTypeDef,  # (1)
+    Builder: BuilderTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `PlatformSummary`:
-  [PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef)
-- `Builder`: [BuilderTypeDef](./type_defs.md#buildertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstoragelocationresultmessagetypedef"></a>
-
+1. See [:material-code-braces: PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef) 
+2. See [:material-code-braces: BuilderTypeDef](./type_defs.md#buildertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStorageLocationResultMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CreateStorageLocationResultMessageTypeDef
+
+def get_value() -> CreateStorageLocationResultMessageTypeDef:
+    return {
+        "S3Bucket": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStorageLocationResultMessageTypeDef(TypedDict):
+    S3Bucket: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `S3Bucket`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customamitypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomAmiTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import CustomAmiTypeDef
+
+def get_value() -> CustomAmiTypeDef:
+    return {
+        "VirtualizationType": ...,
+    }
 ```
 
-Optional fields:
-
-- `VirtualizationType`: `str`
-- `ImageId`: `str`
-
-<a id="deleteapplicationmessagerequesttypedef"></a>
+```python title="Definition"
+class CustomAmiTypeDef(TypedDict):
+    VirtualizationType: NotRequired[str],
+    ImageId: NotRequired[str],
+```
 
 ## DeleteApplicationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationMessageRequestTypeDef
+
+def get_value() -> DeleteApplicationMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `TerminateEnvByForce`: `bool`
-
-<a id="deleteapplicationversionmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    TerminateEnvByForce: NotRequired[bool],
+```
 
 ## DeleteApplicationVersionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeleteApplicationVersionMessageRequestTypeDef
+
+def get_value() -> DeleteApplicationVersionMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "VersionLabel": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-
-Optional fields:
-
-- `DeleteSourceBundle`: `bool`
-
-<a id="deleteconfigurationtemplatemessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationVersionMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    VersionLabel: str,
+    DeleteSourceBundle: NotRequired[bool],
+```
 
 ## DeleteConfigurationTemplateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeleteConfigurationTemplateMessageRequestTypeDef
+
+def get_value() -> DeleteConfigurationTemplateMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "TemplateName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-
-<a id="deleteenvironmentconfigurationmessagerequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationTemplateMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    TemplateName: str,
+```
 
 ## DeleteEnvironmentConfigurationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeleteEnvironmentConfigurationMessageRequestTypeDef
+
+def get_value() -> DeleteEnvironmentConfigurationMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "EnvironmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `EnvironmentName`: `str`
-
-<a id="deleteplatformversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentConfigurationMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    EnvironmentName: str,
+```
 
 ## DeletePlatformVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionRequestRequestTypeDef
+
+def get_value() -> DeletePlatformVersionRequestRequestTypeDef:
+    return {
+        "PlatformArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `PlatformArn`: `str`
-
-<a id="deleteplatformversionresulttypedef"></a>
+```python title="Definition"
+class DeletePlatformVersionRequestRequestTypeDef(TypedDict):
+    PlatformArn: NotRequired[str],
+```
 
 ## DeletePlatformVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionResultTypeDef
+
+def get_value() -> DeletePlatformVersionResultTypeDef:
+    return {
+        "PlatformSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeletePlatformVersionResultTypeDef(TypedDict):
+    PlatformSummary: PlatformSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PlatformSummary`:
-  [PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deploymenttypedef"></a>
-
+1. See [:material-code-braces: PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "VersionLabel": ...,
+    }
 ```
 
-Optional fields:
-
-- `VersionLabel`: `str`
-- `DeploymentId`: `int`
-- `Status`: `str`
-- `DeploymentTime`: `datetime`
-
-<a id="describeaccountattributesresulttypedef"></a>
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    VersionLabel: NotRequired[str],
+    DeploymentId: NotRequired[int],
+    Status: NotRequired[str],
+    DeploymentTime: NotRequired[datetime],
+```
 
 ## DescribeAccountAttributesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeAccountAttributesResultTypeDef
+
+def get_value() -> DescribeAccountAttributesResultTypeDef:
+    return {
+        "ResourceQuotas": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAccountAttributesResultTypeDef(TypedDict):
+    ResourceQuotas: ResourceQuotasTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceQuotas`:
-  [ResourceQuotasTypeDef](./type_defs.md#resourcequotastypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceQuotasTypeDef](./type_defs.md#resourcequotastypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeApplicationVersionsMessageDescribeApplicationVersionsPaginateTypeDef
 
-<a id="describeapplicationversionsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationVersionsMessageDescribeApplicationVersionsPaginateTypeDef
 
+def get_value() -> DescribeApplicationVersionsMessageDescribeApplicationVersionsPaginateTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeApplicationVersionsMessageDescribeApplicationVersionsPaginateTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabels: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeApplicationVersionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationVersionsMessageRequestTypeDef
+
+def get_value() -> DescribeApplicationVersionsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationName`: `str`
-- `VersionLabels`: `Sequence`\[`str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-
-<a id="describeapplicationsmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeApplicationVersionsMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabels: NotRequired[Sequence[str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeApplicationsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationsMessageRequestTypeDef
+
+def get_value() -> DescribeApplicationsMessageRequestTypeDef:
+    return {
+        "ApplicationNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationNames`: `Sequence`\[`str`\]
-
-<a id="describeconfigurationoptionsmessagerequesttypedef"></a>
+```python title="Definition"
+class DescribeApplicationsMessageRequestTypeDef(TypedDict):
+    ApplicationNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeConfigurationOptionsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationOptionsMessageRequestTypeDef
+
+def get_value() -> DescribeConfigurationOptionsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeConfigurationOptionsMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    TemplateName: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    Options: NotRequired[Sequence[OptionSpecificationTypeDef]],  # (1)
+```
 
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `Options`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
-
-<a id="describeconfigurationsettingsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
 ## DescribeConfigurationSettingsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeConfigurationSettingsMessageRequestTypeDef
+
+def get_value() -> DescribeConfigurationSettingsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
-
-<a id="describeenvironmenthealthrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeConfigurationSettingsMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    TemplateName: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
 ## DescribeEnvironmentHealthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentHealthRequestRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEnvironmentHealthRequestRequestTypeDef(TypedDict):
+    EnvironmentName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    AttributeNames: NotRequired[Sequence[EnvironmentHealthAttributeType]],  # (1)
+```
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `AttributeNames`:
-  `Sequence`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
-
-<a id="describeenvironmenthealthresulttypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype) 
 ## DescribeEnvironmentHealthResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentHealthResultTypeDef
+
+def get_value() -> DescribeEnvironmentHealthResultTypeDef:
+    return {
+        "EnvironmentName": ...,
+        "HealthStatus": ...,
+        "Status": ...,
+        "Color": ...,
+        "Causes": ...,
+        "ApplicationMetrics": ...,
+        "InstancesHealth": ...,
+        "RefreshedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentHealthResultTypeDef(TypedDict):
+    EnvironmentName: str,
+    HealthStatus: str,
+    Status: EnvironmentHealthType,  # (1)
+    Color: str,
+    Causes: List[str],
+    ApplicationMetrics: ApplicationMetricsTypeDef,  # (2)
+    InstancesHealth: InstanceHealthSummaryTypeDef,  # (3)
+    RefreshedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `EnvironmentName`: `str`
-- `HealthStatus`: `str`
-- `Status`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
-- `Color`: `str`
-- `Causes`: `List`\[`str`\]
-- `ApplicationMetrics`:
-  [ApplicationMetricsTypeDef](./type_defs.md#applicationmetricstypedef)
-- `InstancesHealth`:
-  [InstanceHealthSummaryTypeDef](./type_defs.md#instancehealthsummarytypedef)
-- `RefreshedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: EnvironmentHealthType](./literals.md#environmenthealthtype) 
+2. See [:material-code-braces: ApplicationMetricsTypeDef](./type_defs.md#applicationmetricstypedef) 
+3. See [:material-code-braces: InstanceHealthSummaryTypeDef](./type_defs.md#instancehealthsummarytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEnvironmentManagedActionHistoryRequestDescribeEnvironmentManagedActionHistoryPaginateTypeDef
 
-<a id="describeenvironmentmanagedactionhistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryRequestDescribeEnvironmentManagedActionHistoryPaginateTypeDef
 
+def get_value() -> DescribeEnvironmentManagedActionHistoryRequestDescribeEnvironmentManagedActionHistoryPaginateTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentManagedActionHistoryRequestDescribeEnvironmentManagedActionHistoryPaginateTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `NextToken`: `str`
-- `MaxItems`: `int`
-
-<a id="describeenvironmentmanagedactionhistoryresulttypedef"></a>
+```python title="Definition"
+class DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## DescribeEnvironmentManagedActionHistoryResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionHistoryResultTypeDef
+
+def get_value() -> DescribeEnvironmentManagedActionHistoryResultTypeDef:
+    return {
+        "ManagedActionHistoryItems": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentManagedActionHistoryResultTypeDef(TypedDict):
+    ManagedActionHistoryItems: List[ManagedActionHistoryItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ManagedActionHistoryItems`:
-  `List`\[[ManagedActionHistoryItemTypeDef](./type_defs.md#managedactionhistoryitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeenvironmentmanagedactionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ManagedActionHistoryItemTypeDef](./type_defs.md#managedactionhistoryitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEnvironmentManagedActionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsRequestRequestTypeDef
+
+def get_value() -> DescribeEnvironmentManagedActionsRequestRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEnvironmentManagedActionsRequestRequestTypeDef(TypedDict):
+    EnvironmentName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    Status: NotRequired[ActionStatusType],  # (1)
+```
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `Status`: [ActionStatusType](./literals.md#actionstatustype)
-
-<a id="describeenvironmentmanagedactionsresulttypedef"></a>
-
+1. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
 ## DescribeEnvironmentManagedActionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentManagedActionsResultTypeDef
+
+def get_value() -> DescribeEnvironmentManagedActionsResultTypeDef:
+    return {
+        "ManagedActions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEnvironmentManagedActionsResultTypeDef(TypedDict):
+    ManagedActions: List[ManagedActionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ManagedActions`:
-  `List`\[[ManagedActionTypeDef](./type_defs.md#managedactiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeenvironmentresourcesmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ManagedActionTypeDef](./type_defs.md#managedactiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEnvironmentResourcesMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentResourcesMessageRequestTypeDef
+
+def get_value() -> DescribeEnvironmentResourcesMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEnvironmentResourcesMessageRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
+## DescribeEnvironmentsMessageDescribeEnvironmentsPaginateTypeDef
 
-<a id="describeenvironmentsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageDescribeEnvironmentsPaginateTypeDef
 
+def get_value() -> DescribeEnvironmentsMessageDescribeEnvironmentsPaginateTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentsMessageDescribeEnvironmentsPaginateTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    EnvironmentIds: NotRequired[Sequence[str]],
+    EnvironmentNames: NotRequired[Sequence[str]],
+    IncludeDeleted: NotRequired[bool],
+    IncludedDeletedBackTo: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef
+
+def get_value() -> DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentsMessageEnvironmentExistsWaitTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    EnvironmentIds: NotRequired[Sequence[str]],
+    EnvironmentNames: NotRequired[Sequence[str]],
+    IncludeDeleted: NotRequired[bool],
+    IncludedDeletedBackTo: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef
+
+def get_value() -> DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentsMessageEnvironmentTerminatedWaitTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    EnvironmentIds: NotRequired[Sequence[str]],
+    EnvironmentNames: NotRequired[Sequence[str]],
+    IncludeDeleted: NotRequired[bool],
+    IncludedDeletedBackTo: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef
+
+def get_value() -> DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEnvironmentsMessageEnvironmentUpdatedWaitTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    EnvironmentIds: NotRequired[Sequence[str]],
+    EnvironmentNames: NotRequired[Sequence[str]],
+    IncludeDeleted: NotRequired[bool],
+    IncludedDeletedBackTo: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeEnvironmentsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEnvironmentsMessageRequestTypeDef
+
+def get_value() -> DescribeEnvironmentsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEnvironmentsMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    EnvironmentIds: NotRequired[Sequence[str]],
+    EnvironmentNames: NotRequired[Sequence[str]],
+    IncludeDeleted: NotRequired[bool],
+    IncludedDeletedBackTo: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `EnvironmentIds`: `Sequence`\[`str`\]
-- `EnvironmentNames`: `Sequence`\[`str`\]
-- `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+## DescribeEventsMessageDescribeEventsPaginateTypeDef
 
-<a id="describeeventsmessagerequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import DescribeEventsMessageDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsMessageDescribeEventsPaginateTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsMessageDescribeEventsPaginateTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    TemplateName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    RequestId: NotRequired[str],
+    Severity: NotRequired[EventSeverityType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EventSeverityType](./literals.md#eventseveritytype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeEventsMessageRequestTypeDef
+
+def get_value() -> DescribeEventsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    TemplateName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    RequestId: NotRequired[str],
+    Severity: NotRequired[EventSeverityType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `PlatformArn`: `str`
-- `RequestId`: `str`
-- `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-
-<a id="describeinstanceshealthrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EventSeverityType](./literals.md#eventseveritytype) 
 ## DescribeInstancesHealthRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthRequestRequestTypeDef
+
+def get_value() -> DescribeInstancesHealthRequestRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeInstancesHealthRequestRequestTypeDef(TypedDict):
+    EnvironmentName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    AttributeNames: NotRequired[Sequence[InstancesHealthAttributeType]],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `AttributeNames`:
-  `Sequence`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
-- `NextToken`: `str`
-
-<a id="describeinstanceshealthresulttypedef"></a>
-
+1. See [:material-code-brackets: InstancesHealthAttributeType](./literals.md#instanceshealthattributetype) 
 ## DescribeInstancesHealthResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribeInstancesHealthResultTypeDef
+
+def get_value() -> DescribeInstancesHealthResultTypeDef:
+    return {
+        "InstanceHealthList": ...,
+        "RefreshedAt": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstancesHealthResultTypeDef(TypedDict):
+    InstanceHealthList: List[SingleInstanceHealthTypeDef],  # (1)
+    RefreshedAt: datetime,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceHealthList`:
-  `List`\[[SingleInstanceHealthTypeDef](./type_defs.md#singleinstancehealthtypedef)\]
-- `RefreshedAt`: `datetime`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeplatformversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SingleInstanceHealthTypeDef](./type_defs.md#singleinstancehealthtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePlatformVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionRequestRequestTypeDef
+
+def get_value() -> DescribePlatformVersionRequestRequestTypeDef:
+    return {
+        "PlatformArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `PlatformArn`: `str`
-
-<a id="describeplatformversionresulttypedef"></a>
+```python title="Definition"
+class DescribePlatformVersionRequestRequestTypeDef(TypedDict):
+    PlatformArn: NotRequired[str],
+```
 
 ## DescribePlatformVersionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionResultTypeDef
+
+def get_value() -> DescribePlatformVersionResultTypeDef:
+    return {
+        "PlatformDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePlatformVersionResultTypeDef(TypedDict):
+    PlatformDescription: PlatformDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PlatformDescription`:
-  [PlatformDescriptionTypeDef](./type_defs.md#platformdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateenvironmentoperationsrolemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: PlatformDescriptionTypeDef](./type_defs.md#platformdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateEnvironmentOperationsRoleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import DisassociateEnvironmentOperationsRoleMessageRequestTypeDef
+
+def get_value() -> DisassociateEnvironmentOperationsRoleMessageRequestTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentName`: `str`
-
-<a id="environmentdescriptionresponsemetadatatypedef"></a>
+```python title="Definition"
+class DisassociateEnvironmentOperationsRoleMessageRequestTypeDef(TypedDict):
+    EnvironmentName: str,
+```
 
 ## EnvironmentDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionResponseMetadataTypeDef
+
+def get_value() -> EnvironmentDescriptionResponseMetadataTypeDef:
+    return {
+        "EnvironmentName": ...,
+        "EnvironmentId": ...,
+        "ApplicationName": ...,
+        "VersionLabel": ...,
+        "SolutionStackName": ...,
+        "PlatformArn": ...,
+        "TemplateName": ...,
+        "Description": ...,
+        "EndpointURL": ...,
+        "CNAME": ...,
+        "DateCreated": ...,
+        "DateUpdated": ...,
+        "Status": ...,
+        "AbortableOperationInProgress": ...,
+        "Health": ...,
+        "HealthStatus": ...,
+        "Resources": ...,
+        "Tier": ...,
+        "EnvironmentLinks": ...,
+        "EnvironmentArn": ...,
+        "OperationsRole": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentDescriptionResponseMetadataTypeDef(TypedDict):
+    EnvironmentName: str,
+    EnvironmentId: str,
+    ApplicationName: str,
+    VersionLabel: str,
+    SolutionStackName: str,
+    PlatformArn: str,
+    TemplateName: str,
+    Description: str,
+    EndpointURL: str,
+    CNAME: str,
+    DateCreated: datetime,
+    DateUpdated: datetime,
+    Status: EnvironmentStatusType,  # (1)
+    AbortableOperationInProgress: bool,
+    Health: EnvironmentHealthType,  # (2)
+    HealthStatus: EnvironmentHealthStatusType,  # (3)
+    Resources: EnvironmentResourcesDescriptionTypeDef,  # (4)
+    Tier: EnvironmentTierTypeDef,  # (5)
+    EnvironmentLinks: List[EnvironmentLinkTypeDef],  # (6)
+    EnvironmentArn: str,
+    OperationsRole: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `TemplateName`: `str`
-- `Description`: `str`
-- `EndpointURL`: `str`
-- `CNAME`: `str`
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
-- `AbortableOperationInProgress`: `bool`
-- `Health`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
-- `HealthStatus`:
-  [EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype)
-- `Resources`:
-  [EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef)
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `EnvironmentLinks`:
-  `List`\[[EnvironmentLinkTypeDef](./type_defs.md#environmentlinktypedef)\]
-- `EnvironmentArn`: `str`
-- `OperationsRole`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
+2. See [:material-code-brackets: EnvironmentHealthType](./literals.md#environmenthealthtype) 
+3. See [:material-code-brackets: EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype) 
+4. See [:material-code-braces: EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef) 
+5. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+6. See [:material-code-braces: EnvironmentLinkTypeDef](./type_defs.md#environmentlinktypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionTypeDef
+
+def get_value() -> EnvironmentDescriptionTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentDescriptionTypeDef(TypedDict):
+    EnvironmentName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    TemplateName: NotRequired[str],
+    Description: NotRequired[str],
+    EndpointURL: NotRequired[str],
+    CNAME: NotRequired[str],
+    DateCreated: NotRequired[datetime],
+    DateUpdated: NotRequired[datetime],
+    Status: NotRequired[EnvironmentStatusType],  # (1)
+    AbortableOperationInProgress: NotRequired[bool],
+    Health: NotRequired[EnvironmentHealthType],  # (2)
+    HealthStatus: NotRequired[EnvironmentHealthStatusType],  # (3)
+    Resources: NotRequired[EnvironmentResourcesDescriptionTypeDef],  # (4)
+    Tier: NotRequired[EnvironmentTierTypeDef],  # (5)
+    EnvironmentLinks: NotRequired[List[EnvironmentLinkTypeDef]],  # (6)
+    EnvironmentArn: NotRequired[str],
+    OperationsRole: NotRequired[str],
+```
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `TemplateName`: `str`
-- `Description`: `str`
-- `EndpointURL`: `str`
-- `CNAME`: `str`
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `Status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
-- `AbortableOperationInProgress`: `bool`
-- `Health`: [EnvironmentHealthType](./literals.md#environmenthealthtype)
-- `HealthStatus`:
-  [EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype)
-- `Resources`:
-  [EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef)
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `EnvironmentLinks`:
-  `List`\[[EnvironmentLinkTypeDef](./type_defs.md#environmentlinktypedef)\]
-- `EnvironmentArn`: `str`
-- `OperationsRole`: `str`
-
-<a id="environmentdescriptionsmessagetypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
+2. See [:material-code-brackets: EnvironmentHealthType](./literals.md#environmenthealthtype) 
+3. See [:material-code-brackets: EnvironmentHealthStatusType](./literals.md#environmenthealthstatustype) 
+4. See [:material-code-braces: EnvironmentResourcesDescriptionTypeDef](./type_defs.md#environmentresourcesdescriptiontypedef) 
+5. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+6. See [:material-code-braces: EnvironmentLinkTypeDef](./type_defs.md#environmentlinktypedef) 
 ## EnvironmentDescriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentDescriptionsMessageTypeDef
+
+def get_value() -> EnvironmentDescriptionsMessageTypeDef:
+    return {
+        "Environments": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentDescriptionsMessageTypeDef(TypedDict):
+    Environments: List[EnvironmentDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Environments`:
-  `List`\[[EnvironmentDescriptionTypeDef](./type_defs.md#environmentdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentinfodescriptiontypedef"></a>
-
+1. See [:material-code-braces: EnvironmentDescriptionTypeDef](./type_defs.md#environmentdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentInfoDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentInfoDescriptionTypeDef
+
+def get_value() -> EnvironmentInfoDescriptionTypeDef:
+    return {
+        "InfoType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentInfoDescriptionTypeDef(TypedDict):
+    InfoType: NotRequired[EnvironmentInfoTypeType],  # (1)
+    Ec2InstanceId: NotRequired[str],
+    SampleTimestamp: NotRequired[datetime],
+    Message: NotRequired[str],
+```
 
-- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
-- `Ec2InstanceId`: `str`
-- `SampleTimestamp`: `datetime`
-- `Message`: `str`
-
-<a id="environmentlinktypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentInfoTypeType](./literals.md#environmentinfotypetype) 
 ## EnvironmentLinkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentLinkTypeDef
+
+def get_value() -> EnvironmentLinkTypeDef:
+    return {
+        "LinkName": ...,
+    }
 ```
 
-Optional fields:
-
-- `LinkName`: `str`
-- `EnvironmentName`: `str`
-
-<a id="environmentresourcedescriptiontypedef"></a>
+```python title="Definition"
+class EnvironmentLinkTypeDef(TypedDict):
+    LinkName: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
 ## EnvironmentResourceDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionTypeDef
+
+def get_value() -> EnvironmentResourceDescriptionTypeDef:
+    return {
+        "EnvironmentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentResourceDescriptionTypeDef(TypedDict):
+    EnvironmentName: NotRequired[str],
+    AutoScalingGroups: NotRequired[List[AutoScalingGroupTypeDef]],  # (1)
+    Instances: NotRequired[List[InstanceTypeDef]],  # (2)
+    LaunchConfigurations: NotRequired[List[LaunchConfigurationTypeDef]],  # (3)
+    LaunchTemplates: NotRequired[List[LaunchTemplateTypeDef]],  # (4)
+    LoadBalancers: NotRequired[List[LoadBalancerTypeDef]],  # (5)
+    Triggers: NotRequired[List[TriggerTypeDef]],  # (6)
+    Queues: NotRequired[List[QueueTypeDef]],  # (7)
+```
 
-- `EnvironmentName`: `str`
-- `AutoScalingGroups`:
-  `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
-- `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
-- `LaunchConfigurations`:
-  `List`\[[LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef)\]
-- `LaunchTemplates`:
-  `List`\[[LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef)\]
-- `LoadBalancers`:
-  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
-- `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
-
-<a id="environmentresourcedescriptionsmessagetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+2. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+3. See [:material-code-braces: LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef) 
+4. See [:material-code-braces: LaunchTemplateTypeDef](./type_defs.md#launchtemplatetypedef) 
+5. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+6. See [:material-code-braces: TriggerTypeDef](./type_defs.md#triggertypedef) 
+7. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
 ## EnvironmentResourceDescriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourceDescriptionsMessageTypeDef
+
+def get_value() -> EnvironmentResourceDescriptionsMessageTypeDef:
+    return {
+        "EnvironmentResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentResourceDescriptionsMessageTypeDef(TypedDict):
+    EnvironmentResources: EnvironmentResourceDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EnvironmentResources`:
-  [EnvironmentResourceDescriptionTypeDef](./type_defs.md#environmentresourcedescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentresourcesdescriptiontypedef"></a>
-
+1. See [:material-code-braces: EnvironmentResourceDescriptionTypeDef](./type_defs.md#environmentresourcedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentResourcesDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentResourcesDescriptionTypeDef
+
+def get_value() -> EnvironmentResourcesDescriptionTypeDef:
+    return {
+        "LoadBalancer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentResourcesDescriptionTypeDef(TypedDict):
+    LoadBalancer: NotRequired[LoadBalancerDescriptionTypeDef],  # (1)
+```
 
-- `LoadBalancer`:
-  [LoadBalancerDescriptionTypeDef](./type_defs.md#loadbalancerdescriptiontypedef)
-
-<a id="environmenttiertypedef"></a>
-
+1. See [:material-code-braces: LoadBalancerDescriptionTypeDef](./type_defs.md#loadbalancerdescriptiontypedef) 
 ## EnvironmentTierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EnvironmentTierTypeDef
+
+def get_value() -> EnvironmentTierTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Type`: `str`
-- `Version`: `str`
-
-<a id="eventdescriptiontypedef"></a>
+```python title="Definition"
+class EnvironmentTierTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## EventDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionTypeDef
+
+def get_value() -> EventDescriptionTypeDef:
+    return {
+        "EventDate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventDescriptionTypeDef(TypedDict):
+    EventDate: NotRequired[datetime],
+    Message: NotRequired[str],
+    ApplicationName: NotRequired[str],
+    VersionLabel: NotRequired[str],
+    TemplateName: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    RequestId: NotRequired[str],
+    Severity: NotRequired[EventSeverityType],  # (1)
+```
 
-- `EventDate`: `datetime`
-- `Message`: `str`
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
-- `PlatformArn`: `str`
-- `RequestId`: `str`
-- `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
-
-<a id="eventdescriptionsmessagetypedef"></a>
-
+1. See [:material-code-brackets: EventSeverityType](./literals.md#eventseveritytype) 
 ## EventDescriptionsMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import EventDescriptionsMessageTypeDef
+
+def get_value() -> EventDescriptionsMessageTypeDef:
+    return {
+        "Events": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventDescriptionsMessageTypeDef(TypedDict):
+    Events: List[EventDescriptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Events`:
-  `List`\[[EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="instancehealthsummarytypedef"></a>
-
+1. See [:material-code-braces: EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstanceHealthSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import InstanceHealthSummaryTypeDef
+
+def get_value() -> InstanceHealthSummaryTypeDef:
+    return {
+        "NoData": ...,
+    }
 ```
 
-Optional fields:
-
-- `NoData`: `int`
-- `Unknown`: `int`
-- `Pending`: `int`
-- `Ok`: `int`
-- `Info`: `int`
-- `Warning`: `int`
-- `Degraded`: `int`
-- `Severe`: `int`
-
-<a id="instancetypedef"></a>
+```python title="Definition"
+class InstanceHealthSummaryTypeDef(TypedDict):
+    NoData: NotRequired[int],
+    Unknown: NotRequired[int],
+    Pending: NotRequired[int],
+    Ok: NotRequired[int],
+    Info: NotRequired[int],
+    Warning: NotRequired[int],
+    Degraded: NotRequired[int],
+    Severe: NotRequired[int],
+```
 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-
-<a id="latencytypedef"></a>
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    Id: NotRequired[str],
+```
 
 ## LatencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import LatencyTypeDef
+
+def get_value() -> LatencyTypeDef:
+    return {
+        "P999": ...,
+    }
 ```
 
-Optional fields:
-
-- `P999`: `float`
-- `P99`: `float`
-- `P95`: `float`
-- `P90`: `float`
-- `P85`: `float`
-- `P75`: `float`
-- `P50`: `float`
-- `P10`: `float`
-
-<a id="launchconfigurationtypedef"></a>
+```python title="Definition"
+class LatencyTypeDef(TypedDict):
+    P999: NotRequired[float],
+    P99: NotRequired[float],
+    P95: NotRequired[float],
+    P90: NotRequired[float],
+    P85: NotRequired[float],
+    P75: NotRequired[float],
+    P50: NotRequired[float],
+    P10: NotRequired[float],
+```
 
 ## LaunchConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import LaunchConfigurationTypeDef
+
+def get_value() -> LaunchConfigurationTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="launchtemplatetypedef"></a>
+```python title="Definition"
+class LaunchConfigurationTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## LaunchTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import LaunchTemplateTypeDef
+
+def get_value() -> LaunchTemplateTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-
-<a id="listavailablesolutionstacksresultmessagetypedef"></a>
+```python title="Definition"
+class LaunchTemplateTypeDef(TypedDict):
+    Id: NotRequired[str],
+```
 
 ## ListAvailableSolutionStacksResultMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListAvailableSolutionStacksResultMessageTypeDef
+
+def get_value() -> ListAvailableSolutionStacksResultMessageTypeDef:
+    return {
+        "SolutionStacks": ...,
+        "SolutionStackDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAvailableSolutionStacksResultMessageTypeDef(TypedDict):
+    SolutionStacks: List[str],
+    SolutionStackDetails: List[SolutionStackDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SolutionStacks`: `List`\[`str`\]
-- `SolutionStackDetails`:
-  `List`\[[SolutionStackDescriptionTypeDef](./type_defs.md#solutionstackdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listplatformbranchesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SolutionStackDescriptionTypeDef](./type_defs.md#solutionstackdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPlatformBranchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesRequestRequestTypeDef
+
+def get_value() -> ListPlatformBranchesRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPlatformBranchesRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[SearchFilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-
-<a id="listplatformbranchesresulttypedef"></a>
-
+1. See [:material-code-braces: SearchFilterTypeDef](./type_defs.md#searchfiltertypedef) 
 ## ListPlatformBranchesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformBranchesResultTypeDef
+
+def get_value() -> ListPlatformBranchesResultTypeDef:
+    return {
+        "PlatformBranchSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlatformBranchesResultTypeDef(TypedDict):
+    PlatformBranchSummaryList: List[PlatformBranchSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PlatformBranchSummaryList`:
-  `List`\[[PlatformBranchSummaryTypeDef](./type_defs.md#platformbranchsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PlatformBranchSummaryTypeDef](./type_defs.md#platformbranchsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPlatformVersionsRequestListPlatformVersionsPaginateTypeDef
 
-<a id="listplatformversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsRequestListPlatformVersionsPaginateTypeDef
 
+def get_value() -> ListPlatformVersionsRequestListPlatformVersionsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlatformVersionsRequestListPlatformVersionsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PlatformFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlatformVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsRequestRequestTypeDef
+
+def get_value() -> ListPlatformVersionsRequestRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPlatformVersionsRequestRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[PlatformFilterTypeDef]],  # (1)
+    MaxRecords: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-
-<a id="listplatformversionsresulttypedef"></a>
-
+1. See [:material-code-braces: PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef) 
 ## ListPlatformVersionsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListPlatformVersionsResultTypeDef
+
+def get_value() -> ListPlatformVersionsResultTypeDef:
+    return {
+        "PlatformSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlatformVersionsResultTypeDef(TypedDict):
+    PlatformSummaryList: List[PlatformSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PlatformSummaryList`:
-  `List`\[[PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: PlatformSummaryTypeDef](./type_defs.md#platformsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListTagsForResourceMessageRequestTypeDef
+
+def get_value() -> ListTagsForResourceMessageRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listenertypedef"></a>
+```python title="Definition"
+class ListTagsForResourceMessageRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ListenerTypeDef
+
+def get_value() -> ListenerTypeDef:
+    return {
+        "Protocol": ...,
+    }
 ```
 
-Optional fields:
-
-- `Protocol`: `str`
-- `Port`: `int`
-
-<a id="loadbalancerdescriptiontypedef"></a>
+```python title="Definition"
+class ListenerTypeDef(TypedDict):
+    Protocol: NotRequired[str],
+    Port: NotRequired[int],
+```
 
 ## LoadBalancerDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import LoadBalancerDescriptionTypeDef
+
+def get_value() -> LoadBalancerDescriptionTypeDef:
+    return {
+        "LoadBalancerName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoadBalancerDescriptionTypeDef(TypedDict):
+    LoadBalancerName: NotRequired[str],
+    Domain: NotRequired[str],
+    Listeners: NotRequired[List[ListenerTypeDef]],  # (1)
+```
 
-- `LoadBalancerName`: `str`
-- `Domain`: `str`
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
-
-<a id="loadbalancertypedef"></a>
-
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
 ## LoadBalancerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import LoadBalancerTypeDef
+
+def get_value() -> LoadBalancerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="managedactionhistoryitemtypedef"></a>
+```python title="Definition"
+class LoadBalancerTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## ManagedActionHistoryItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ManagedActionHistoryItemTypeDef
+
+def get_value() -> ManagedActionHistoryItemTypeDef:
+    return {
+        "ActionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedActionHistoryItemTypeDef(TypedDict):
+    ActionId: NotRequired[str],
+    ActionType: NotRequired[ActionTypeType],  # (1)
+    ActionDescription: NotRequired[str],
+    FailureType: NotRequired[FailureTypeType],  # (2)
+    Status: NotRequired[ActionHistoryStatusType],  # (3)
+    FailureDescription: NotRequired[str],
+    ExecutedTime: NotRequired[datetime],
+    FinishedTime: NotRequired[datetime],
+```
 
-- `ActionId`: `str`
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
-- `ActionDescription`: `str`
-- `FailureType`: [FailureTypeType](./literals.md#failuretypetype)
-- `Status`: [ActionHistoryStatusType](./literals.md#actionhistorystatustype)
-- `FailureDescription`: `str`
-- `ExecutedTime`: `datetime`
-- `FinishedTime`: `datetime`
-
-<a id="managedactiontypedef"></a>
-
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-brackets: FailureTypeType](./literals.md#failuretypetype) 
+3. See [:material-code-brackets: ActionHistoryStatusType](./literals.md#actionhistorystatustype) 
 ## ManagedActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ManagedActionTypeDef
+
+def get_value() -> ManagedActionTypeDef:
+    return {
+        "ActionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedActionTypeDef(TypedDict):
+    ActionId: NotRequired[str],
+    ActionDescription: NotRequired[str],
+    ActionType: NotRequired[ActionTypeType],  # (1)
+    Status: NotRequired[ActionStatusType],  # (2)
+    WindowStartTime: NotRequired[datetime],
+```
 
-- `ActionId`: `str`
-- `ActionDescription`: `str`
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
-- `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `WindowStartTime`: `datetime`
-
-<a id="maxageruletypedef"></a>
-
+1. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+2. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
 ## MaxAgeRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import MaxAgeRuleTypeDef
+
+def get_value() -> MaxAgeRuleTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `MaxAgeInDays`: `int`
-- `DeleteSourceFromS3`: `bool`
-
-<a id="maxcountruletypedef"></a>
+```python title="Definition"
+class MaxAgeRuleTypeDef(TypedDict):
+    Enabled: bool,
+    MaxAgeInDays: NotRequired[int],
+    DeleteSourceFromS3: NotRequired[bool],
+```
 
 ## MaxCountRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import MaxCountRuleTypeDef
+
+def get_value() -> MaxCountRuleTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-
-Optional fields:
-
-- `MaxCount`: `int`
-- `DeleteSourceFromS3`: `bool`
-
-<a id="optionrestrictionregextypedef"></a>
+```python title="Definition"
+class MaxCountRuleTypeDef(TypedDict):
+    Enabled: bool,
+    MaxCount: NotRequired[int],
+    DeleteSourceFromS3: NotRequired[bool],
+```
 
 ## OptionRestrictionRegexTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import OptionRestrictionRegexTypeDef
+
+def get_value() -> OptionRestrictionRegexTypeDef:
+    return {
+        "Pattern": ...,
+    }
 ```
 
-Optional fields:
-
-- `Pattern`: `str`
-- `Label`: `str`
-
-<a id="optionspecificationtypedef"></a>
+```python title="Definition"
+class OptionRestrictionRegexTypeDef(TypedDict):
+    Pattern: NotRequired[str],
+    Label: NotRequired[str],
+```
 
 ## OptionSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import OptionSpecificationTypeDef
+
+def get_value() -> OptionSpecificationTypeDef:
+    return {
+        "ResourceName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceName`: `str`
-- `Namespace`: `str`
-- `OptionName`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OptionSpecificationTypeDef(TypedDict):
+    ResourceName: NotRequired[str],
+    Namespace: NotRequired[str],
+    OptionName: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="platformbranchsummarytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlatformBranchSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformBranchSummaryTypeDef
+
+def get_value() -> PlatformBranchSummaryTypeDef:
+    return {
+        "PlatformName": ...,
+    }
 ```
 
-Optional fields:
-
-- `PlatformName`: `str`
-- `BranchName`: `str`
-- `LifecycleState`: `str`
-- `BranchOrder`: `int`
-- `SupportedTierList`: `List`\[`str`\]
-
-<a id="platformdescriptiontypedef"></a>
+```python title="Definition"
+class PlatformBranchSummaryTypeDef(TypedDict):
+    PlatformName: NotRequired[str],
+    BranchName: NotRequired[str],
+    LifecycleState: NotRequired[str],
+    BranchOrder: NotRequired[int],
+    SupportedTierList: NotRequired[List[str]],
+```
 
 ## PlatformDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformDescriptionTypeDef
+
+def get_value() -> PlatformDescriptionTypeDef:
+    return {
+        "PlatformArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlatformDescriptionTypeDef(TypedDict):
+    PlatformArn: NotRequired[str],
+    PlatformOwner: NotRequired[str],
+    PlatformName: NotRequired[str],
+    PlatformVersion: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    PlatformStatus: NotRequired[PlatformStatusType],  # (1)
+    DateCreated: NotRequired[datetime],
+    DateUpdated: NotRequired[datetime],
+    PlatformCategory: NotRequired[str],
+    Description: NotRequired[str],
+    Maintainer: NotRequired[str],
+    OperatingSystemName: NotRequired[str],
+    OperatingSystemVersion: NotRequired[str],
+    ProgrammingLanguages: NotRequired[List[PlatformProgrammingLanguageTypeDef]],  # (2)
+    Frameworks: NotRequired[List[PlatformFrameworkTypeDef]],  # (3)
+    CustomAmiList: NotRequired[List[CustomAmiTypeDef]],  # (4)
+    SupportedTierList: NotRequired[List[str]],
+    SupportedAddonList: NotRequired[List[str]],
+    PlatformLifecycleState: NotRequired[str],
+    PlatformBranchName: NotRequired[str],
+    PlatformBranchLifecycleState: NotRequired[str],
+```
 
-- `PlatformArn`: `str`
-- `PlatformOwner`: `str`
-- `PlatformName`: `str`
-- `PlatformVersion`: `str`
-- `SolutionStackName`: `str`
-- `PlatformStatus`: [PlatformStatusType](./literals.md#platformstatustype)
-- `DateCreated`: `datetime`
-- `DateUpdated`: `datetime`
-- `PlatformCategory`: `str`
-- `Description`: `str`
-- `Maintainer`: `str`
-- `OperatingSystemName`: `str`
-- `OperatingSystemVersion`: `str`
-- `ProgrammingLanguages`:
-  `List`\[[PlatformProgrammingLanguageTypeDef](./type_defs.md#platformprogramminglanguagetypedef)\]
-- `Frameworks`:
-  `List`\[[PlatformFrameworkTypeDef](./type_defs.md#platformframeworktypedef)\]
-- `CustomAmiList`:
-  `List`\[[CustomAmiTypeDef](./type_defs.md#customamitypedef)\]
-- `SupportedTierList`: `List`\[`str`\]
-- `SupportedAddonList`: `List`\[`str`\]
-- `PlatformLifecycleState`: `str`
-- `PlatformBranchName`: `str`
-- `PlatformBranchLifecycleState`: `str`
-
-<a id="platformfiltertypedef"></a>
-
+1. See [:material-code-brackets: PlatformStatusType](./literals.md#platformstatustype) 
+2. See [:material-code-braces: PlatformProgrammingLanguageTypeDef](./type_defs.md#platformprogramminglanguagetypedef) 
+3. See [:material-code-braces: PlatformFrameworkTypeDef](./type_defs.md#platformframeworktypedef) 
+4. See [:material-code-braces: CustomAmiTypeDef](./type_defs.md#customamitypedef) 
 ## PlatformFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformFilterTypeDef
+
+def get_value() -> PlatformFilterTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
-
-- `Type`: `str`
-- `Operator`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="platformframeworktypedef"></a>
+```python title="Definition"
+class PlatformFilterTypeDef(TypedDict):
+    Type: NotRequired[str],
+    Operator: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## PlatformFrameworkTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformFrameworkTypeDef
+
+def get_value() -> PlatformFrameworkTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="platformprogramminglanguagetypedef"></a>
+```python title="Definition"
+class PlatformFrameworkTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## PlatformProgrammingLanguageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformProgrammingLanguageTypeDef
+
+def get_value() -> PlatformProgrammingLanguageTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Version`: `str`
-
-<a id="platformsummarytypedef"></a>
+```python title="Definition"
+class PlatformProgrammingLanguageTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Version: NotRequired[str],
+```
 
 ## PlatformSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import PlatformSummaryTypeDef
+
+def get_value() -> PlatformSummaryTypeDef:
+    return {
+        "PlatformArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlatformSummaryTypeDef(TypedDict):
+    PlatformArn: NotRequired[str],
+    PlatformOwner: NotRequired[str],
+    PlatformStatus: NotRequired[PlatformStatusType],  # (1)
+    PlatformCategory: NotRequired[str],
+    OperatingSystemName: NotRequired[str],
+    OperatingSystemVersion: NotRequired[str],
+    SupportedTierList: NotRequired[List[str]],
+    SupportedAddonList: NotRequired[List[str]],
+    PlatformLifecycleState: NotRequired[str],
+    PlatformVersion: NotRequired[str],
+    PlatformBranchName: NotRequired[str],
+    PlatformBranchLifecycleState: NotRequired[str],
+```
 
-- `PlatformArn`: `str`
-- `PlatformOwner`: `str`
-- `PlatformStatus`: [PlatformStatusType](./literals.md#platformstatustype)
-- `PlatformCategory`: `str`
-- `OperatingSystemName`: `str`
-- `OperatingSystemVersion`: `str`
-- `SupportedTierList`: `List`\[`str`\]
-- `SupportedAddonList`: `List`\[`str`\]
-- `PlatformLifecycleState`: `str`
-- `PlatformVersion`: `str`
-- `PlatformBranchName`: `str`
-- `PlatformBranchLifecycleState`: `str`
-
-<a id="queuetypedef"></a>
-
+1. See [:material-code-brackets: PlatformStatusType](./literals.md#platformstatustype) 
 ## QueueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import QueueTypeDef
+
+def get_value() -> QueueTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `URL`: `str`
-
-<a id="rebuildenvironmentmessagerequesttypedef"></a>
+```python title="Definition"
+class QueueTypeDef(TypedDict):
+    Name: NotRequired[str],
+    URL: NotRequired[str],
+```
 
 ## RebuildEnvironmentMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import RebuildEnvironmentMessageRequestTypeDef
+
+def get_value() -> RebuildEnvironmentMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-
-<a id="requestenvironmentinfomessagerequesttypedef"></a>
+```python title="Definition"
+class RebuildEnvironmentMessageRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
 ## RequestEnvironmentInfoMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import RequestEnvironmentInfoMessageRequestTypeDef
+
+def get_value() -> RequestEnvironmentInfoMessageRequestTypeDef:
+    return {
+        "InfoType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RequestEnvironmentInfoMessageRequestTypeDef(TypedDict):
+    InfoType: EnvironmentInfoTypeType,  # (1)
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
-- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
-
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-
-<a id="resourcequotatypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentInfoTypeType](./literals.md#environmentinfotypetype) 
 ## ResourceQuotaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotaTypeDef
+
+def get_value() -> ResourceQuotaTypeDef:
+    return {
+        "Maximum": ...,
+    }
 ```
 
-Optional fields:
-
-- `Maximum`: `int`
-
-<a id="resourcequotastypedef"></a>
+```python title="Definition"
+class ResourceQuotaTypeDef(TypedDict):
+    Maximum: NotRequired[int],
+```
 
 ## ResourceQuotasTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotasTypeDef
+
+def get_value() -> ResourceQuotasTypeDef:
+    return {
+        "ApplicationQuota": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceQuotasTypeDef(TypedDict):
+    ApplicationQuota: NotRequired[ResourceQuotaTypeDef],  # (1)
+    ApplicationVersionQuota: NotRequired[ResourceQuotaTypeDef],  # (1)
+    EnvironmentQuota: NotRequired[ResourceQuotaTypeDef],  # (1)
+    ConfigurationTemplateQuota: NotRequired[ResourceQuotaTypeDef],  # (1)
+    CustomPlatformQuota: NotRequired[ResourceQuotaTypeDef],  # (1)
+```
 
-- `ApplicationQuota`:
-  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-- `ApplicationVersionQuota`:
-  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-- `EnvironmentQuota`:
-  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-- `ConfigurationTemplateQuota`:
-  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-- `CustomPlatformQuota`:
-  [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
-
-<a id="resourcetagsdescriptionmessagetypedef"></a>
-
+1. See [:material-code-braces: ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef) 
+2. See [:material-code-braces: ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef) 
+3. See [:material-code-braces: ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef) 
+4. See [:material-code-braces: ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef) 
+5. See [:material-code-braces: ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef) 
 ## ResourceTagsDescriptionMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ResourceTagsDescriptionMessageTypeDef
+
+def get_value() -> ResourceTagsDescriptionMessageTypeDef:
+    return {
+        "ResourceArn": ...,
+        "ResourceTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceTagsDescriptionMessageTypeDef(TypedDict):
+    ResourceArn: str,
+    ResourceTags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceArn`: `str`
-- `ResourceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restartappservermessagerequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestartAppServerMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import RestartAppServerMessageRequestTypeDef
+
+def get_value() -> RestartAppServerMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-
-<a id="retrieveenvironmentinfomessagerequesttypedef"></a>
+```python title="Definition"
+class RestartAppServerMessageRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
 ## RetrieveEnvironmentInfoMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoMessageRequestTypeDef
+
+def get_value() -> RetrieveEnvironmentInfoMessageRequestTypeDef:
+    return {
+        "InfoType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetrieveEnvironmentInfoMessageRequestTypeDef(TypedDict):
+    InfoType: EnvironmentInfoTypeType,  # (1)
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
-- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
-
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-
-<a id="retrieveenvironmentinforesultmessagetypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentInfoTypeType](./literals.md#environmentinfotypetype) 
 ## RetrieveEnvironmentInfoResultMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import RetrieveEnvironmentInfoResultMessageTypeDef
+
+def get_value() -> RetrieveEnvironmentInfoResultMessageTypeDef:
+    return {
+        "EnvironmentInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetrieveEnvironmentInfoResultMessageTypeDef(TypedDict):
+    EnvironmentInfo: List[EnvironmentInfoDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EnvironmentInfo`:
-  `List`\[[EnvironmentInfoDescriptionTypeDef](./type_defs.md#environmentinfodescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="s3locationtypedef"></a>
-
+1. See [:material-code-braces: EnvironmentInfoDescriptionTypeDef](./type_defs.md#environmentinfodescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3Bucket`: `str`
-- `S3Key`: `str`
-
-<a id="searchfiltertypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    S3Bucket: NotRequired[str],
+    S3Key: NotRequired[str],
+```
 
 ## SearchFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SearchFilterTypeDef
+
+def get_value() -> SearchFilterTypeDef:
+    return {
+        "Attribute": ...,
+    }
 ```
 
-Optional fields:
-
-- `Attribute`: `str`
-- `Operator`: `str`
-- `Values`: `Sequence`\[`str`\]
-
-<a id="singleinstancehealthtypedef"></a>
+```python title="Definition"
+class SearchFilterTypeDef(TypedDict):
+    Attribute: NotRequired[str],
+    Operator: NotRequired[str],
+    Values: NotRequired[Sequence[str]],
+```
 
 ## SingleInstanceHealthTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SingleInstanceHealthTypeDef
+
+def get_value() -> SingleInstanceHealthTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SingleInstanceHealthTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    HealthStatus: NotRequired[str],
+    Color: NotRequired[str],
+    Causes: NotRequired[List[str]],
+    LaunchedAt: NotRequired[datetime],
+    ApplicationMetrics: NotRequired[ApplicationMetricsTypeDef],  # (1)
+    System: NotRequired[SystemStatusTypeDef],  # (2)
+    Deployment: NotRequired[DeploymentTypeDef],  # (3)
+    AvailabilityZone: NotRequired[str],
+    InstanceType: NotRequired[str],
+```
 
-- `InstanceId`: `str`
-- `HealthStatus`: `str`
-- `Color`: `str`
-- `Causes`: `List`\[`str`\]
-- `LaunchedAt`: `datetime`
-- `ApplicationMetrics`:
-  [ApplicationMetricsTypeDef](./type_defs.md#applicationmetricstypedef)
-- `System`: [SystemStatusTypeDef](./type_defs.md#systemstatustypedef)
-- `Deployment`: [DeploymentTypeDef](./type_defs.md#deploymenttypedef)
-- `AvailabilityZone`: `str`
-- `InstanceType`: `str`
-
-<a id="solutionstackdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ApplicationMetricsTypeDef](./type_defs.md#applicationmetricstypedef) 
+2. See [:material-code-braces: SystemStatusTypeDef](./type_defs.md#systemstatustypedef) 
+3. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
 ## SolutionStackDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SolutionStackDescriptionTypeDef
+
+def get_value() -> SolutionStackDescriptionTypeDef:
+    return {
+        "SolutionStackName": ...,
+    }
 ```
 
-Optional fields:
-
-- `SolutionStackName`: `str`
-- `PermittedFileTypes`: `List`\[`str`\]
-
-<a id="sourcebuildinformationtypedef"></a>
+```python title="Definition"
+class SolutionStackDescriptionTypeDef(TypedDict):
+    SolutionStackName: NotRequired[str],
+    PermittedFileTypes: NotRequired[List[str]],
+```
 
 ## SourceBuildInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SourceBuildInformationTypeDef
+
+def get_value() -> SourceBuildInformationTypeDef:
+    return {
+        "SourceType": ...,
+        "SourceRepository": ...,
+        "SourceLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceBuildInformationTypeDef(TypedDict):
+    SourceType: SourceTypeType,  # (1)
+    SourceRepository: SourceRepositoryType,  # (2)
+    SourceLocation: str,
+```
 
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `SourceRepository`:
-  [SourceRepositoryType](./literals.md#sourcerepositorytype)
-- `SourceLocation`: `str`
-
-<a id="sourceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-brackets: SourceRepositoryType](./literals.md#sourcerepositorytype) 
 ## SourceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SourceConfigurationTypeDef
+
+def get_value() -> SourceConfigurationTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-
-<a id="statuscodestypedef"></a>
+```python title="Definition"
+class SourceConfigurationTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    TemplateName: NotRequired[str],
+```
 
 ## StatusCodesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import StatusCodesTypeDef
+
+def get_value() -> StatusCodesTypeDef:
+    return {
+        "Status2xx": ...,
+    }
 ```
 
-Optional fields:
-
-- `Status2xx`: `int`
-- `Status3xx`: `int`
-- `Status4xx`: `int`
-- `Status5xx`: `int`
-
-<a id="swapenvironmentcnamesmessagerequesttypedef"></a>
+```python title="Definition"
+class StatusCodesTypeDef(TypedDict):
+    Status2xx: NotRequired[int],
+    Status3xx: NotRequired[int],
+    Status4xx: NotRequired[int],
+    Status5xx: NotRequired[int],
+```
 
 ## SwapEnvironmentCNAMEsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SwapEnvironmentCNAMEsMessageRequestTypeDef
+
+def get_value() -> SwapEnvironmentCNAMEsMessageRequestTypeDef:
+    return {
+        "SourceEnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `SourceEnvironmentId`: `str`
-- `SourceEnvironmentName`: `str`
-- `DestinationEnvironmentId`: `str`
-- `DestinationEnvironmentName`: `str`
-
-<a id="systemstatustypedef"></a>
+```python title="Definition"
+class SwapEnvironmentCNAMEsMessageRequestTypeDef(TypedDict):
+    SourceEnvironmentId: NotRequired[str],
+    SourceEnvironmentName: NotRequired[str],
+    DestinationEnvironmentId: NotRequired[str],
+    DestinationEnvironmentName: NotRequired[str],
+```
 
 ## SystemStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import SystemStatusTypeDef
+
+def get_value() -> SystemStatusTypeDef:
+    return {
+        "CPUUtilization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SystemStatusTypeDef(TypedDict):
+    CPUUtilization: NotRequired[CPUUtilizationTypeDef],  # (1)
+    LoadAverage: NotRequired[List[float]],
+```
 
-- `CPUUtilization`:
-  [CPUUtilizationTypeDef](./type_defs.md#cpuutilizationtypedef)
-- `LoadAverage`: `List`\[`float`\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: CPUUtilizationTypeDef](./type_defs.md#cpuutilizationtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="terminateenvironmentmessagerequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TerminateEnvironmentMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import TerminateEnvironmentMessageRequestTypeDef
+
+def get_value() -> TerminateEnvironmentMessageRequestTypeDef:
+    return {
+        "EnvironmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `TerminateResources`: `bool`
-- `ForceTerminate`: `bool`
-
-<a id="triggertypedef"></a>
+```python title="Definition"
+class TerminateEnvironmentMessageRequestTypeDef(TypedDict):
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    TerminateResources: NotRequired[bool],
+    ForceTerminate: NotRequired[bool],
+```
 
 ## TriggerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import TriggerTypeDef
+
+def get_value() -> TriggerTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="updateapplicationmessagerequesttypedef"></a>
+```python title="Definition"
+class TriggerTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## UpdateApplicationMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationMessageRequestTypeDef
+
+def get_value() -> UpdateApplicationMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updateapplicationresourcelifecyclemessagerequesttypedef"></a>
+```python title="Definition"
+class UpdateApplicationMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateApplicationResourceLifecycleMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationResourceLifecycleMessageRequestTypeDef
+
+def get_value() -> UpdateApplicationResourceLifecycleMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "ResourceLifecycleConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationResourceLifecycleMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    ResourceLifecycleConfig: ApplicationResourceLifecycleConfigTypeDef,  # (1)
+```
 
-- `ApplicationName`: `str`
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-
-<a id="updateapplicationversionmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
 ## UpdateApplicationVersionMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateApplicationVersionMessageRequestTypeDef
+
+def get_value() -> UpdateApplicationVersionMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "VersionLabel": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updateconfigurationtemplatemessagerequesttypedef"></a>
+```python title="Definition"
+class UpdateApplicationVersionMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    VersionLabel: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateConfigurationTemplateMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateConfigurationTemplateMessageRequestTypeDef
+
+def get_value() -> UpdateConfigurationTemplateMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "TemplateName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConfigurationTemplateMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    TemplateName: str,
+    Description: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[ConfigurationOptionSettingTypeDef]],  # (1)
+    OptionsToRemove: NotRequired[Sequence[OptionSpecificationTypeDef]],  # (2)
+```
 
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
-
-<a id="updateenvironmentmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+2. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
 ## UpdateEnvironmentMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateEnvironmentMessageRequestTypeDef
+
+def get_value() -> UpdateEnvironmentMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateEnvironmentMessageRequestTypeDef(TypedDict):
+    ApplicationName: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+    GroupName: NotRequired[str],
+    Description: NotRequired[str],
+    Tier: NotRequired[EnvironmentTierTypeDef],  # (1)
+    VersionLabel: NotRequired[str],
+    TemplateName: NotRequired[str],
+    SolutionStackName: NotRequired[str],
+    PlatformArn: NotRequired[str],
+    OptionSettings: NotRequired[Sequence[ConfigurationOptionSettingTypeDef]],  # (2)
+    OptionsToRemove: NotRequired[Sequence[OptionSpecificationTypeDef]],  # (3)
+```
 
-- `ApplicationName`: `str`
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `GroupName`: `str`
-- `Description`: `str`
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
-
-<a id="updatetagsforresourcemessagerequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
 ## UpdateTagsForResourceMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import UpdateTagsForResourceMessageRequestTypeDef
+
+def get_value() -> UpdateTagsForResourceMessageRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTagsForResourceMessageRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagsToAdd: NotRequired[Sequence[TagTypeDef]],  # (1)
+    TagsToRemove: NotRequired[Sequence[str]],
+```
 
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TagsToRemove`: `Sequence`\[`str`\]
-
-<a id="validateconfigurationsettingsmessagerequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ValidateConfigurationSettingsMessageRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ValidateConfigurationSettingsMessageRequestTypeDef
+
+def get_value() -> ValidateConfigurationSettingsMessageRequestTypeDef:
+    return {
+        "ApplicationName": ...,
+        "OptionSettings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidateConfigurationSettingsMessageRequestTypeDef(TypedDict):
+    ApplicationName: str,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef],  # (1)
+    TemplateName: NotRequired[str],
+    EnvironmentName: NotRequired[str],
+```
 
-- `ApplicationName`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-
-Optional fields:
-
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
-
-<a id="validationmessagetypedef"></a>
-
+1. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
 ## ValidationMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import ValidationMessageTypeDef
+
+def get_value() -> ValidationMessageTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValidationMessageTypeDef(TypedDict):
+    Message: NotRequired[str],
+    Severity: NotRequired[ValidationSeverityType],  # (1)
+    Namespace: NotRequired[str],
+    OptionName: NotRequired[str],
+```
 
-- `Message`: `str`
-- `Severity`: [ValidationSeverityType](./literals.md#validationseveritytype)
-- `Namespace`: `str`
-- `OptionName`: `str`
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: ValidationSeverityType](./literals.md#validationseveritytype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticbeanstalk.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

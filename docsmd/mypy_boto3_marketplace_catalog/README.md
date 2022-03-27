@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-marketplacecatalog-module"></a>
-
-# Type annotations for boto3 MarketplaceCatalog module
+#  MarketplaceCatalog module
 
 > [Index](../README.md) > MarketplaceCatalog
 
-Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
-type annotations stubs module
-[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+!!! note ""
 
-- [Type annotations for boto3 MarketplaceCatalog module](#type-annotations-for-boto3-marketplacecatalog-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MarketplaceCatalogClient](#marketplacecatalogclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+    type annotations stubs module [mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MarketplaceCatalog`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[marketplace-catalog]'
 python -m pip install mypy-boto3-marketplace-catalog
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,65 +42,41 @@ python -m pip install mypy-boto3-marketplace-catalog
 python -m pip uninstall -y mypy-boto3-marketplace-catalog
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="marketplacecatalogclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MarketplaceCatalogClient
 
-Type annotations for `boto3.client("marketplace-catalog")` as
-[MarketplaceCatalogClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("marketplace-catalog")` as [MarketplaceCatalogClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
+
+def get_client() -> MarketplaceCatalogClient:
+    return Session().cleint("marketplace-catalog")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [cancel_change_set](./client.md#cancel_change_set)
-- [describe_change_set](./client.md#describe_change_set)
-- [describe_entity](./client.md#describe_entity)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_change_sets](./client.md#list_change_sets)
-- [list_entities](./client.md#list_entities)
-- [start_change_set](./client.md#start_change_set)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-MarketplaceCatalogClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- InternalServiceException
-- ResourceInUseException
-- ResourceNotFoundException
-- ResourceNotSupportedException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_marketplace_catalog.literals import ChangeStatusType
 
-```python
-from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
+def get_value() -> ChangeStatusType:
+    return "APPLYING"
 ```
 
 - [ChangeStatusType](./literals.md#changestatustype)
@@ -131,17 +86,21 @@ from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestRequestTypeDef
 
-```python
-from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestRequestTypeDef, ...
+def get_value() -> CancelChangeSetRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "ChangeSetId": ...,
+    }
 ```
 
 - [CancelChangeSetRequestRequestTypeDef](./type_defs.md#cancelchangesetrequestrequesttypedef)
@@ -165,3 +124,4 @@ from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestReque
 - [SortTypeDef](./type_defs.md#sorttypedef)
 - [StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef)
 - [StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef)
+

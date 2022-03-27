@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-amplifyuibuilder-module"></a>
-
-# Examples for boto3 AmplifyUIBuilder module
+# Examples
 
 > [Index](../README.md) > [AmplifyUIBuilder](./README.md) > Examples
 
-- [Examples for boto3 AmplifyUIBuilder module](#examples-for-boto3-amplifyuibuilder-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
+    type annotations stubs module [mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[amplifyuibuilder]` package installed.
 
-Write your `AmplifyUIBuilder` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `AmplifyUIBuilder` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AmplifyUIBuilderClient
-# and provides type checking and code completion
-client = session.client("amplifyuibuilder")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ExportComponentsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("export_components")
-for item in paginator.paginate(...):
-    # item has type ExportComponentsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("amplifyuibuilder")  # (1)
+    result = client.create_component()  # (2)
+    ```
+
+    1. client: [AmplifyUIBuilderClient](./client.md)
+    2. result: [:material-code-braces: CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("amplifyuibuilder")  # (1)
+
+    paginator = client.get_paginator("export_components")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [AmplifyUIBuilderClient](./client.md)
+    2. paginator: [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
+    3. item: [:material-code-braces: ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[amplifyuibuilder]` or a standalone
-`mypy_boto3_amplifyuibuilder` package, you have to explicitly specify
-`client: AmplifyUIBuilderClient` type annotation.
+With `boto3-stubs-lite[amplifyuibuilder]`
+or a standalone `mypy_boto3_amplifyuibuilder` package, you have to explicitly specify `client: AmplifyUIBuilderClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
-from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator
-
-from mypy_boto3_amplifyuibuilder.literals import PaginatorName
-
-from mypy_boto3_amplifyuibuilder.type_defs import bool
-from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: AmplifyUIBuilderClient = session.client("amplifyuibuilder")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
+    from mypy_boto3_amplifyuibuilder.type_defs import CreateComponentResponseTypeDef
+    from mypy_boto3_amplifyuibuilder.type_defs import CreateComponentRequestRequestTypeDef
 
-paginator_name: PaginatorName = "export_components"
-paginator: ExportComponentsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ExportComponentsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: AmplifyUIBuilderClient = session.client("amplifyuibuilder")
+
+    kwargs: CreateComponentRequestRequestTypeDef = {...}
+    result: CreateComponentResponseTypeDef = client.create_component(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
+    from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator
+    from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsResponseTypeDef
+
+
+    session = Session()
+    client: AmplifyUIBuilderClient = session.client("amplifyuibuilder")
+
+    paginator: ExportComponentsPaginator = client.get_paginator("export_components")
+    for item in paginator.paginate(...):
+        item: ExportComponentsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

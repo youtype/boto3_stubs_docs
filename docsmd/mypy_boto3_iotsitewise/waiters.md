@@ -1,31 +1,18 @@
-<a id="waiters-for-boto3-iotsitewise-module"></a>
-
-# Waiters for boto3 IoTSiteWise module
+# Waiters
 
 > [Index](../README.md) > [IoTSiteWise](./README.md) > Waiters
 
-Auto-generated documentation for
-[IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
-type annotations stubs module
-[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+!!! note ""
 
-- [Waiters for boto3 IoTSiteWise module](#waiters-for-boto3-iotsitewise-module)
-  - [AssetActiveWaiter](#assetactivewaiter)
-  - [AssetModelActiveWaiter](#assetmodelactivewaiter)
-  - [AssetModelNotExistsWaiter](#assetmodelnotexistswaiter)
-  - [AssetNotExistsWaiter](#assetnotexistswaiter)
-  - [PortalActiveWaiter](#portalactivewaiter)
-  - [PortalNotExistsWaiter](#portalnotexistswaiter)
-
-<a id="assetactivewaiter"></a>
+    Auto-generated documentation for [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
+    type annotations stubs module [mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 ## AssetActiveWaiter
 
-Type annotations for `boto3.client("iotsitewise").get_waiter("asset_active")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("asset_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetActiveWaiter
@@ -34,24 +21,39 @@ def get_asset_active_waiter() -> AssetActiveWaiter:
     return Session().client("iotsitewise").get_waiter("asset_active")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.asset_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetActive)
 
-Arguments for `AssetActiveWaiter.wait` method:
+### wait
 
-- `assetId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AssetActiveWaiter.wait` method.
 
-<a id="assetmodelactivewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    assetId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetRequestAssetActiveWaitTypeDef = {  # (1)
+    "assetId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssetRequestAssetActiveWaitTypeDef](./type_defs.md#describeassetrequestassetactivewaittypedef) 
 ## AssetModelActiveWaiter
 
-Type annotations for
-`boto3.client("iotsitewise").get_waiter("asset_model_active")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("asset_model_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetModelActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetModelActiveWaiter
@@ -60,24 +62,39 @@ def get_asset_model_active_waiter() -> AssetModelActiveWaiter:
     return Session().client("iotsitewise").get_waiter("asset_model_active")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.asset_model_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetModelActive)
 
-Arguments for `AssetModelActiveWaiter.wait` method:
+### wait
 
-- `assetModelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AssetModelActiveWaiter.wait` method.
 
-<a id="assetmodelnotexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    assetModelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetModelRequestAssetModelActiveWaitTypeDef = {  # (1)
+    "assetModelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssetModelRequestAssetModelActiveWaitTypeDef](./type_defs.md#describeassetmodelrequestassetmodelactivewaittypedef) 
 ## AssetModelNotExistsWaiter
 
-Type annotations for
-`boto3.client("iotsitewise").get_waiter("asset_model_not_exists")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("asset_model_not_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetModelNotExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetModelNotExistsWaiter
@@ -86,24 +103,39 @@ def get_asset_model_not_exists_waiter() -> AssetModelNotExistsWaiter:
     return Session().client("iotsitewise").get_waiter("asset_model_not_exists")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.asset_model_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetModelNotExists)
 
-Arguments for `AssetModelNotExistsWaiter.wait` method:
+### wait
 
-- `assetModelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AssetModelNotExistsWaiter.wait` method.
 
-<a id="assetnotexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    assetModelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef = {  # (1)
+    "assetModelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssetModelRequestAssetModelNotExistsWaitTypeDef](./type_defs.md#describeassetmodelrequestassetmodelnotexistswaittypedef) 
 ## AssetNotExistsWaiter
 
-Type annotations for
-`boto3.client("iotsitewise").get_waiter("asset_not_exists")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("asset_not_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetNotExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import AssetNotExistsWaiter
@@ -112,23 +144,39 @@ def get_asset_not_exists_waiter() -> AssetNotExistsWaiter:
     return Session().client("iotsitewise").get_waiter("asset_not_exists")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.asset_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.AssetNotExists)
 
-Arguments for `AssetNotExistsWaiter.wait` method:
+### wait
 
-- `assetId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AssetNotExistsWaiter.wait` method.
 
-<a id="portalactivewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    assetId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssetRequestAssetNotExistsWaitTypeDef = {  # (1)
+    "assetId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssetRequestAssetNotExistsWaitTypeDef](./type_defs.md#describeassetrequestassetnotexistswaittypedef) 
 ## PortalActiveWaiter
 
-Type annotations for `boto3.client("iotsitewise").get_waiter("portal_active")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("portal_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.PortalActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import PortalActiveWaiter
@@ -137,24 +185,39 @@ def get_portal_active_waiter() -> PortalActiveWaiter:
     return Session().client("iotsitewise").get_waiter("portal_active")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.portal_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.PortalActive)
 
-Arguments for `PortalActiveWaiter.wait` method:
+### wait
 
-- `portalId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python PortalActiveWaiter.wait` method.
 
-<a id="portalnotexistswaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    portalId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribePortalRequestPortalActiveWaitTypeDef = {  # (1)
+    "portalId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePortalRequestPortalActiveWaitTypeDef](./type_defs.md#describeportalrequestportalactivewaittypedef) 
 ## PortalNotExistsWaiter
 
-Type annotations for
-`boto3.client("iotsitewise").get_waiter("portal_not_exists")`.
+Type annotations and code completion for `#!python boto3.client("iotsitewise").get_waiter("portal_not_exists")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.PortalNotExists)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotsitewise.waiter import PortalNotExistsWaiter
@@ -163,10 +226,30 @@ def get_portal_not_exists_waiter() -> PortalNotExistsWaiter:
     return Session().client("iotsitewise").get_waiter("portal_not_exists")
 ```
 
-Boto3 documentation:
-[IoTSiteWise.Waiter.portal_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Waiter.PortalNotExists)
 
-Arguments for `PortalNotExistsWaiter.wait` method:
+### wait
 
-- `portalId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python PortalNotExistsWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    portalId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribePortalRequestPortalNotExistsWaitTypeDef = {  # (1)
+    "portalId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePortalRequestPortalNotExistsWaitTypeDef](./type_defs.md#describeportalrequestportalnotexistswaittypedef) 

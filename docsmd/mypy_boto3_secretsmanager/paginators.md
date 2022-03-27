@@ -1,27 +1,18 @@
-<a id="paginators-for-boto3-secretsmanager-module"></a>
-
-# Paginators for boto3 SecretsManager module
+# Paginators
 
 > [Index](../README.md) > [SecretsManager](./README.md) > Paginators
 
-Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module
-[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+!!! note ""
 
-- [Paginators for boto3 SecretsManager module](#paginators-for-boto3-secretsmanager-module)
-  - [ListSecretsPaginator](#listsecretspaginator)
-
-<a id="listsecretspaginator"></a>
+    Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+    type annotations stubs module [mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 ## ListSecretsPaginator
 
-Type annotations for
-`boto3.client("secretsmanager").get_paginator("list_secrets")`.
+Type annotations and code completion for `#!python boto3.client("secretsmanager").get_paginator("list_secrets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_secretsmanager.paginator import ListSecretsPaginator
@@ -30,15 +21,34 @@ def get_list_secrets_paginator() -> ListSecretsPaginator:
     return Session().client("secretsmanager").get_paginator("list_secrets")
 ```
 
-Boto3 documentation:
-[SecretsManager.Paginator.ListSecrets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Paginator.ListSecrets)
 
-Arguments for `ListSecretsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSecretsPaginator.paginate` method.
 
-`ListSecretsPaginator.paginate` returns
-`_PageIterator`\[[ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    SortOrder: SortOrderTypeType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListSecretsResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSecretsRequestListSecretsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSecretsRequestListSecretsPaginateTypeDef](./type_defs.md#listsecretsrequestlistsecretspaginatetypedef) 

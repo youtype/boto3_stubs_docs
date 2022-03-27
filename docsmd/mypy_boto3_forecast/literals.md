@@ -1,652 +1,695 @@
-<a id="literals-for-boto3-forecastservice-module"></a>
-
-# Literals for boto3 ForecastService module
+# Literals
 
 > [Index](../README.md) > [ForecastService](./README.md) > Literals
 
-Auto-generated documentation for
-[ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
-type annotations stubs module
-[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
+!!! note ""
 
-- [Literals for boto3 ForecastService module](#literals-for-boto3-forecastservice-module)
-  - [AttributeTypeType](#attributetypetype)
-  - [AutoMLOverrideStrategyType](#automloverridestrategytype)
-  - [DatasetTypeType](#datasettypetype)
-  - [DomainType](#domaintype)
-  - [EvaluationTypeType](#evaluationtypetype)
-  - [FeaturizationMethodNameType](#featurizationmethodnametype)
-  - [FilterConditionStringType](#filterconditionstringtype)
-  - [ListDatasetGroupsPaginatorName](#listdatasetgroupspaginatorname)
-  - [ListDatasetImportJobsPaginatorName](#listdatasetimportjobspaginatorname)
-  - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
-  - [ListForecastExportJobsPaginatorName](#listforecastexportjobspaginatorname)
-  - [ListForecastsPaginatorName](#listforecastspaginatorname)
-  - [ListPredictorBacktestExportJobsPaginatorName](#listpredictorbacktestexportjobspaginatorname)
-  - [ListPredictorsPaginatorName](#listpredictorspaginatorname)
-  - [OptimizationMetricType](#optimizationmetrictype)
-  - [ScalingTypeType](#scalingtypetype)
-  - [StateType](#statetype)
-  - [TimePointGranularityType](#timepointgranularitytype)
-  - [TimeSeriesGranularityType](#timeseriesgranularitytype)
-  - [ForecastServiceServiceName](#forecastserviceservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="attributetypetype"></a>
+    Auto-generated documentation for [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
+    type annotations stubs module [mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 ## AttributeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import AttributeTypeType
+
+def get_value() -> AttributeTypeType:
+    return "float"
 ```
 
-Values:
-
-- `float`
-- `geolocation`
-- `integer`
-- `string`
-- `timestamp`
-
-<a id="automloverridestrategytype"></a>
-
+```python title="Definition"
+AttributeTypeType = Literal[
+    "float",
+    "geolocation",
+    "integer",
+    "string",
+    "timestamp",
+]
+```
 ## AutoMLOverrideStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import AutoMLOverrideStrategyType
+
+def get_value() -> AutoMLOverrideStrategyType:
+    return "AccuracyOptimized"
 ```
 
-Values:
-
-- `AccuracyOptimized`
-- `LatencyOptimized`
-
-<a id="datasettypetype"></a>
-
+```python title="Definition"
+AutoMLOverrideStrategyType = Literal[
+    "AccuracyOptimized",
+    "LatencyOptimized",
+]
+```
 ## DatasetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import DatasetTypeType
+
+def get_value() -> DatasetTypeType:
+    return "ITEM_METADATA"
 ```
 
-Values:
-
-- `ITEM_METADATA`
-- `RELATED_TIME_SERIES`
-- `TARGET_TIME_SERIES`
-
-<a id="domaintype"></a>
-
+```python title="Definition"
+DatasetTypeType = Literal[
+    "ITEM_METADATA",
+    "RELATED_TIME_SERIES",
+    "TARGET_TIME_SERIES",
+]
+```
 ## DomainType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import DomainType
+
+def get_value() -> DomainType:
+    return "CUSTOM"
 ```
 
-Values:
-
-- `CUSTOM`
-- `EC2_CAPACITY`
-- `INVENTORY_PLANNING`
-- `METRICS`
-- `RETAIL`
-- `WEB_TRAFFIC`
-- `WORK_FORCE`
-
-<a id="evaluationtypetype"></a>
-
+```python title="Definition"
+DomainType = Literal[
+    "CUSTOM",
+    "EC2_CAPACITY",
+    "INVENTORY_PLANNING",
+    "METRICS",
+    "RETAIL",
+    "WEB_TRAFFIC",
+    "WORK_FORCE",
+]
+```
 ## EvaluationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import EvaluationTypeType
+
+def get_value() -> EvaluationTypeType:
+    return "COMPUTED"
 ```
 
-Values:
-
-- `COMPUTED`
-- `SUMMARY`
-
-<a id="featurizationmethodnametype"></a>
-
+```python title="Definition"
+EvaluationTypeType = Literal[
+    "COMPUTED",
+    "SUMMARY",
+]
+```
 ## FeaturizationMethodNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import FeaturizationMethodNameType
+
+def get_value() -> FeaturizationMethodNameType:
+    return "filling"
 ```
 
-Values:
-
-- `filling`
-
-<a id="filterconditionstringtype"></a>
-
+```python title="Definition"
+FeaturizationMethodNameType = Literal[
+    "filling",
+]
+```
 ## FilterConditionStringType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import FilterConditionStringType
+
+def get_value() -> FilterConditionStringType:
+    return "IS"
 ```
 
-Values:
-
-- `IS`
-- `IS_NOT`
-
-<a id="listdatasetgroupspaginatorname"></a>
-
+```python title="Definition"
+FilterConditionStringType = Literal[
+    "IS",
+    "IS_NOT",
+]
+```
 ## ListDatasetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListDatasetGroupsPaginatorName
+
+def get_value() -> ListDatasetGroupsPaginatorName:
+    return "list_dataset_groups"
 ```
 
-Values:
-
-- `list_dataset_groups`
-
-<a id="listdatasetimportjobspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetGroupsPaginatorName = Literal[
+    "list_dataset_groups",
+]
+```
 ## ListDatasetImportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListDatasetImportJobsPaginatorName
+
+def get_value() -> ListDatasetImportJobsPaginatorName:
+    return "list_dataset_import_jobs"
 ```
 
-Values:
-
-- `list_dataset_import_jobs`
-
-<a id="listdatasetspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetImportJobsPaginatorName = Literal[
+    "list_dataset_import_jobs",
+]
+```
 ## ListDatasetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListDatasetsPaginatorName
+
+def get_value() -> ListDatasetsPaginatorName:
+    return "list_datasets"
 ```
 
-Values:
-
-- `list_datasets`
-
-<a id="listforecastexportjobspaginatorname"></a>
-
+```python title="Definition"
+ListDatasetsPaginatorName = Literal[
+    "list_datasets",
+]
+```
 ## ListForecastExportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListForecastExportJobsPaginatorName
+
+def get_value() -> ListForecastExportJobsPaginatorName:
+    return "list_forecast_export_jobs"
 ```
 
-Values:
-
-- `list_forecast_export_jobs`
-
-<a id="listforecastspaginatorname"></a>
-
+```python title="Definition"
+ListForecastExportJobsPaginatorName = Literal[
+    "list_forecast_export_jobs",
+]
+```
 ## ListForecastsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListForecastsPaginatorName
+
+def get_value() -> ListForecastsPaginatorName:
+    return "list_forecasts"
 ```
 
-Values:
-
-- `list_forecasts`
-
-<a id="listpredictorbacktestexportjobspaginatorname"></a>
-
+```python title="Definition"
+ListForecastsPaginatorName = Literal[
+    "list_forecasts",
+]
+```
 ## ListPredictorBacktestExportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListPredictorBacktestExportJobsPaginatorName
+
+def get_value() -> ListPredictorBacktestExportJobsPaginatorName:
+    return "list_predictor_backtest_export_jobs"
 ```
 
-Values:
-
-- `list_predictor_backtest_export_jobs`
-
-<a id="listpredictorspaginatorname"></a>
-
+```python title="Definition"
+ListPredictorBacktestExportJobsPaginatorName = Literal[
+    "list_predictor_backtest_export_jobs",
+]
+```
 ## ListPredictorsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ListPredictorsPaginatorName
+
+def get_value() -> ListPredictorsPaginatorName:
+    return "list_predictors"
 ```
 
-Values:
-
-- `list_predictors`
-
-<a id="optimizationmetrictype"></a>
-
+```python title="Definition"
+ListPredictorsPaginatorName = Literal[
+    "list_predictors",
+]
+```
 ## OptimizationMetricType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import OptimizationMetricType
+
+def get_value() -> OptimizationMetricType:
+    return "AverageWeightedQuantileLoss"
 ```
 
-Values:
-
-- `AverageWeightedQuantileLoss`
-- `MAPE`
-- `MASE`
-- `RMSE`
-- `WAPE`
-
-<a id="scalingtypetype"></a>
-
+```python title="Definition"
+OptimizationMetricType = Literal[
+    "AverageWeightedQuantileLoss",
+    "MAPE",
+    "MASE",
+    "RMSE",
+    "WAPE",
+]
+```
 ## ScalingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ScalingTypeType
+
+def get_value() -> ScalingTypeType:
+    return "Auto"
 ```
 
-Values:
-
-- `Auto`
-- `Linear`
-- `Logarithmic`
-- `ReverseLogarithmic`
-
-<a id="statetype"></a>
-
+```python title="Definition"
+ScalingTypeType = Literal[
+    "Auto",
+    "Linear",
+    "Logarithmic",
+    "ReverseLogarithmic",
+]
+```
 ## StateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import StateType
+
+def get_value() -> StateType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Deleted`
-
-<a id="timepointgranularitytype"></a>
-
+```python title="Definition"
+StateType = Literal[
+    "Active",
+    "Deleted",
+]
+```
 ## TimePointGranularityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import TimePointGranularityType
+
+def get_value() -> TimePointGranularityType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `SPECIFIC`
-
-<a id="timeseriesgranularitytype"></a>
-
+```python title="Definition"
+TimePointGranularityType = Literal[
+    "ALL",
+    "SPECIFIC",
+]
+```
 ## TimeSeriesGranularityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import TimeSeriesGranularityType
+
+def get_value() -> TimeSeriesGranularityType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `SPECIFIC`
-
-<a id="forecastserviceservicename"></a>
-
+```python title="Definition"
+TimeSeriesGranularityType = Literal[
+    "ALL",
+    "SPECIFIC",
+]
+```
 ## ForecastServiceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ForecastServiceServiceName
+
+def get_value() -> ForecastServiceServiceName:
+    return "forecast"
 ```
 
-Values:
-
-- `forecast`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ForecastServiceServiceName = Literal[
+    "forecast",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_forecast.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_dataset_groups"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_dataset_groups",
+    "list_dataset_import_jobs",
+    "list_datasets",
+    "list_forecast_export_jobs",
+    "list_forecasts",
+    "list_predictor_backtest_export_jobs",
+    "list_predictors",
+]
+```
+## RegionName
 
-- `list_dataset_groups`
-- `list_dataset_import_jobs`
-- `list_datasets`
-- `list_forecast_export_jobs`
-- `list_forecasts`
-- `list_predictor_backtest_export_jobs`
-- `list_predictors`
+```python title="Usage Example"
+from mypy_boto3_forecast.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

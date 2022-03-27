@@ -1,116 +1,153 @@
-<a id="typed-dictionaries-for-boto3-marketplaceentitlementservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MarketplaceEntitlementService module
+> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MarketplaceEntitlementService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
-type annotations stubs module
-[mypy-boto3-marketplace-entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
-
-- [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
-  - [EntitlementTypeDef](#entitlementtypedef)
-  - [EntitlementValueTypeDef](#entitlementvaluetypedef)
-  - [GetEntitlementsRequestRequestTypeDef](#getentitlementsrequestrequesttypedef)
-  - [GetEntitlementsResultTypeDef](#getentitlementsresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="entitlementtypedef"></a>
+    Auto-generated documentation for [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
+    type annotations stubs module [mypy-boto3-marketplace-entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 ## EntitlementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import EntitlementTypeDef
+
+def get_value() -> EntitlementTypeDef:
+    return {
+        "ProductCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EntitlementTypeDef(TypedDict):
+    ProductCode: NotRequired[str],
+    Dimension: NotRequired[str],
+    CustomerIdentifier: NotRequired[str],
+    Value: NotRequired[EntitlementValueTypeDef],  # (1)
+    ExpirationDate: NotRequired[datetime],
+```
 
-- `ProductCode`: `str`
-- `Dimension`: `str`
-- `CustomerIdentifier`: `str`
-- `Value`: [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
-- `ExpirationDate`: `datetime`
-
-<a id="entitlementvaluetypedef"></a>
-
+1. See [:material-code-braces: EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef) 
 ## EntitlementValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import EntitlementValueTypeDef
+
+def get_value() -> EntitlementValueTypeDef:
+    return {
+        "IntegerValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EntitlementValueTypeDef(TypedDict):
+    IntegerValue: NotRequired[int],
+    DoubleValue: NotRequired[float],
+    BooleanValue: NotRequired[bool],
+    StringValue: NotRequired[str],
+```
 
-- `IntegerValue`: `int`
-- `DoubleValue`: `float`
-- `BooleanValue`: `bool`
-- `StringValue`: `str`
+## GetEntitlementsRequestGetEntitlementsPaginateTypeDef
 
-<a id="getentitlementsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsRequestGetEntitlementsPaginateTypeDef
 
+def get_value() -> GetEntitlementsRequestGetEntitlementsPaginateTypeDef:
+    return {
+        "ProductCode": ...,
+    }
+```
+
+```python title="Definition"
+class GetEntitlementsRequestGetEntitlementsPaginateTypeDef(TypedDict):
+    ProductCode: str,
+    Filter: NotRequired[Mapping[GetEntitlementFilterNameType, Sequence[str]]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetEntitlementsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsRequestRequestTypeDef
+
+def get_value() -> GetEntitlementsRequestRequestTypeDef:
+    return {
+        "ProductCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEntitlementsRequestRequestTypeDef(TypedDict):
+    ProductCode: str,
+    Filter: NotRequired[Mapping[GetEntitlementFilterNameType, Sequence[str]]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `ProductCode`: `str`
-
-Optional fields:
-
-- `Filter`:
-  `Mapping`\[[GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype),
-  `Sequence`\[`str`\]\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getentitlementsresulttypedef"></a>
-
+1. See [:material-code-brackets: GetEntitlementFilterNameType](./literals.md#getentitlementfilternametype) 
 ## GetEntitlementsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import GetEntitlementsResultTypeDef
+
+def get_value() -> GetEntitlementsResultTypeDef:
+    return {
+        "Entitlements": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEntitlementsResultTypeDef(TypedDict):
+    Entitlements: List[EntitlementTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Entitlements`:
-  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: EntitlementTypeDef](./type_defs.md#entitlementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_entitlement.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

@@ -1,32 +1,18 @@
-<a id="qldbsessionclient-for-boto3-qldbsession-module"></a>
-
-# QLDBSessionClient for boto3 QLDBSession module
+# QLDBSessionClient
 
 > [Index](../README.md) > [QLDBSession](./README.md) > QLDBSessionClient
 
-Auto-generated documentation for
-[QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
-type annotations stubs module
-[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
+!!! note ""
 
-- [QLDBSessionClient for boto3 QLDBSession module](#qldbsessionclient-for-boto3-qldbsession-module)
-  - [QLDBSessionClient](#qldbsessionclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [send_command](#send_command)
-
-<a id="qldbsessionclient"></a>
+    Auto-generated documentation for [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
+    type annotations stubs module [mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 ## QLDBSessionClient
 
-Type annotations for `boto3.client("qldb-session")`
+Type annotations and code completion for `#!python boto3.client("qldb-session")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_qldb_session.client import QLDBSessionClient
 
@@ -34,115 +20,115 @@ def get_qldb-session_client() -> QLDBSessionClient:
     return Session().client("qldb-session")
 ```
 
-Boto3 documentation:
-[QLDBSession.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("qldb-session").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("qldb-session")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.CapacityExceededException,
+    client.ClientError,
+    client.InvalidSessionException,
+    client.LimitExceededException,
+    client.OccConflictException,
+    client.RateExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_qldb_session.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.CapacityExceededException`
-- `Exceptions.ClientError`
-- `Exceptions.InvalidSessionException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.OccConflictException`
-- `Exceptions.RateExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-QLDBSessionClient exceptions.
-
-Type annotations for `boto3.client("qldb-session").exceptions` method.
-
-Boto3 documentation:
-[QLDBSession.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("qldb-session").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("qldb-session").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.can_paginate)
 
-Boto3 documentation:
-[QLDBSession.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("qldb-session").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("qldb-session").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url)
 
-Boto3 documentation:
-[QLDBSession.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="send\_command"></a>
-
-### send_command
+### send\_command
 
 Sends a command to an Amazon QLDB ledger.
 
-Type annotations for `boto3.client("qldb-session").send_command` method.
+Type annotations and code completion for `#!python boto3.client("qldb-session").send_command` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
 
-Boto3 documentation:
-[QLDBSession.Client.send_command](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession.Client.send_command)
+```python title="Method definition"
+def send_command(
+    self,
+    *,
+    SessionToken: str = ...,
+    StartSession: StartSessionRequestTypeDef = ...,  # (1)
+    StartTransaction: Mapping[str, Any] = ...,
+    EndSession: Mapping[str, Any] = ...,
+    CommitTransaction: CommitTransactionRequestTypeDef = ...,  # (2)
+    AbortTransaction: Mapping[str, Any] = ...,
+    ExecuteStatement: ExecuteStatementRequestTypeDef = ...,  # (3)
+    FetchPage: FetchPageRequestTypeDef = ...,  # (4)
+) -> SendCommandResultTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef).
+1. See [:material-code-braces: StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef) 
+2. See [:material-code-braces: CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef) 
+3. See [:material-code-braces: ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef) 
+4. See [:material-code-braces: FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef) 
+5. See [:material-code-braces: SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef) 
 
-Keyword-only arguments:
 
-- `SessionToken`: `str`
-- `StartSession`:
-  [StartSessionRequestTypeDef](./type_defs.md#startsessionrequesttypedef)
-- `StartTransaction`: `Mapping`\[`str`, `Any`\]
-- `EndSession`: `Mapping`\[`str`, `Any`\]
-- `CommitTransaction`:
-  [CommitTransactionRequestTypeDef](./type_defs.md#committransactionrequesttypedef)
-- `AbortTransaction`: `Mapping`\[`str`, `Any`\]
-- `ExecuteStatement`:
-  [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
-- `FetchPage`:
-  [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: SendCommandRequestRequestTypeDef = {  # (1)
+    "SessionToken": ...,
+}
 
-Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).
+parent.send_command(**kwargs)
+```
+
+1. See [:material-code-braces: SendCommandRequestRequestTypeDef](./type_defs.md#sendcommandrequestrequesttypedef) 
+
+
+
+

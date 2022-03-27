@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-wellarchitected-module"></a>
-
-# Type annotations for boto3 WellArchitected module
+#  WellArchitected module
 
 > [Index](../README.md) > WellArchitected
 
-Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module
-[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+!!! note ""
 
-- [Type annotations for boto3 WellArchitected module](#type-annotations-for-boto3-wellarchitected-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WellArchitectedClient](#wellarchitectedclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+    type annotations stubs module [mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WellArchitected`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[wellarchitected]'
 python -m pip install mypy-boto3-wellarchitected
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,97 +42,41 @@ python -m pip install mypy-boto3-wellarchitected
 python -m pip uninstall -y mypy-boto3-wellarchitected
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="wellarchitectedclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WellArchitectedClient
 
-Type annotations for `boto3.client("wellarchitected")` as
-[WellArchitectedClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("wellarchitected")` as [WellArchitectedClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
+
+def get_client() -> WellArchitectedClient:
+    return Session().cleint("wellarchitected")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_lenses](./client.md#associate_lenses)
-- [can_paginate](./client.md#can_paginate)
-- [create_lens_share](./client.md#create_lens_share)
-- [create_lens_version](./client.md#create_lens_version)
-- [create_milestone](./client.md#create_milestone)
-- [create_workload](./client.md#create_workload)
-- [create_workload_share](./client.md#create_workload_share)
-- [delete_lens](./client.md#delete_lens)
-- [delete_lens_share](./client.md#delete_lens_share)
-- [delete_workload](./client.md#delete_workload)
-- [delete_workload_share](./client.md#delete_workload_share)
-- [disassociate_lenses](./client.md#disassociate_lenses)
-- [exceptions](./client.md#exceptions)
-- [export_lens](./client.md#export_lens)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_answer](./client.md#get_answer)
-- [get_lens](./client.md#get_lens)
-- [get_lens_review](./client.md#get_lens_review)
-- [get_lens_review_report](./client.md#get_lens_review_report)
-- [get_lens_version_difference](./client.md#get_lens_version_difference)
-- [get_milestone](./client.md#get_milestone)
-- [get_workload](./client.md#get_workload)
-- [import_lens](./client.md#import_lens)
-- [list_answers](./client.md#list_answers)
-- [list_lens_review_improvements](./client.md#list_lens_review_improvements)
-- [list_lens_reviews](./client.md#list_lens_reviews)
-- [list_lens_shares](./client.md#list_lens_shares)
-- [list_lenses](./client.md#list_lenses)
-- [list_milestones](./client.md#list_milestones)
-- [list_notifications](./client.md#list_notifications)
-- [list_share_invitations](./client.md#list_share_invitations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_workload_shares](./client.md#list_workload_shares)
-- [list_workloads](./client.md#list_workloads)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_answer](./client.md#update_answer)
-- [update_lens_review](./client.md#update_lens_review)
-- [update_share_invitation](./client.md#update_share_invitation)
-- [update_workload](./client.md#update_workload)
-- [update_workload_share](./client.md#update_workload_share)
-- [upgrade_lens_review](./client.md#upgrade_lens_review)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-WellArchitectedClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wellarchitected.literals import AnswerReasonType
 
-```python
-from mypy_boto3_wellarchitected.literals import AnswerReasonType, ...
+def get_value() -> AnswerReasonType:
+    return "ARCHITECTURE_CONSTRAINTS"
 ```
 
 - [AnswerReasonType](./literals.md#answerreasontype)
@@ -176,17 +99,20 @@ from mypy_boto3_wellarchitected.literals import AnswerReasonType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef
 
-```python
-from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef, ...
+def get_value() -> AnswerSummaryTypeDef:
+    return {
+        "QuestionId": ...,
+    }
 ```
 
 - [AnswerSummaryTypeDef](./type_defs.md#answersummarytypedef)
@@ -288,3 +214,4 @@ from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef, ...
 - [WorkloadShareTypeDef](./type_defs.md#workloadsharetypedef)
 - [WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef)
 - [WorkloadTypeDef](./type_defs.md#workloadtypedef)
+

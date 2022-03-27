@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-mobile-module"></a>
-
-# Examples for boto3 Mobile module
+# Examples
 
 > [Index](../README.md) > [Mobile](./README.md) > Examples
 
-- [Examples for boto3 Mobile module](#examples-for-boto3-mobile-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+    type annotations stubs module [mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[mobile]` package installed.
 
-Write your `Mobile` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Mobile` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type MobileClient
-# and provides type checking and code completion
-client = session.client("mobile")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListBundlesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_bundles")
-for item in paginator.paginate(...):
-    # item has type ListBundlesResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("mobile")  # (1)
+    result = client.create_project()  # (2)
+    ```
+
+    1. client: [MobileClient](./client.md)
+    2. result: [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("mobile")  # (1)
+
+    paginator = client.get_paginator("list_bundles")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [MobileClient](./client.md)
+    2. paginator: [ListBundlesPaginator](./paginators.md#listbundlespaginator)
+    3. item: [:material-code-braces: ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[mobile]` or a standalone `mypy_boto3_mobile` package,
-you have to explicitly specify `client: MobileClient` type annotation.
+With `boto3-stubs-lite[mobile]`
+or a standalone `mypy_boto3_mobile` package, you have to explicitly specify `client: MobileClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_mobile.client import MobileClient
-from mypy_boto3_mobile.paginator import ListBundlesPaginator
-
-from mypy_boto3_mobile.literals import PaginatorName
-
-from mypy_boto3_mobile.type_defs import bool
-from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: MobileClient = session.client("mobile")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_mobile.client import MobileClient
+    from mypy_boto3_mobile.type_defs import CreateProjectResultTypeDef
+    from mypy_boto3_mobile.type_defs import CreateProjectRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_bundles"
-paginator: ListBundlesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListBundlesResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: MobileClient = session.client("mobile")
+
+    kwargs: CreateProjectRequestRequestTypeDef = {...}
+    result: CreateProjectResultTypeDef = client.create_project(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_mobile.client import MobileClient
+    from mypy_boto3_mobile.paginator import ListBundlesPaginator
+    from mypy_boto3_mobile.type_defs import ListBundlesResultTypeDef
+
+
+    session = Session()
+    client: MobileClient = session.client("mobile")
+
+    paginator: ListBundlesPaginator = client.get_paginator("list_bundles")
+    for item in paginator.paginate(...):
+        item: ListBundlesResultTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,46 +1,18 @@
-<a id="timestreamqueryclient-for-boto3-timestreamquery-module"></a>
+# TimestreamQueryClient
 
-# TimestreamQueryClient for boto3 TimestreamQuery module
+> [Index](../README.md) > [TimestreamQuery](./README.md) > TimestreamQueryClient
 
-> [Index](../README.md) > [TimestreamQuery](./README.md) >
-> TimestreamQueryClient
+!!! note ""
 
-Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
-type annotations stubs module
-[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
-
-- [TimestreamQueryClient for boto3 TimestreamQuery module](#timestreamqueryclient-for-boto3-timestreamquery-module)
-  - [TimestreamQueryClient](#timestreamqueryclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_query](#cancel_query)
-    - [create_scheduled_query](#create_scheduled_query)
-    - [delete_scheduled_query](#delete_scheduled_query)
-    - [describe_endpoints](#describe_endpoints)
-    - [describe_scheduled_query](#describe_scheduled_query)
-    - [execute_scheduled_query](#execute_scheduled_query)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_scheduled_queries](#list_scheduled_queries)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [prepare_query](#prepare_query)
-    - [query](#query)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_scheduled_query](#update_scheduled_query)
-    - [get_paginator](#get_paginator)
-
-<a id="timestreamqueryclient"></a>
+    Auto-generated documentation for [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+    type annotations stubs module [mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 ## TimestreamQueryClient
 
-Type annotations for `boto3.client("timestream-query")`
+Type annotations and code completion for `#!python boto3.client("timestream-query")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 
@@ -48,396 +20,487 @@ def get_timestream-query_client() -> TimestreamQueryClient:
     return Session().client("timestream-query")
 ```
 
-Boto3 documentation:
-[TimestreamQuery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("timestream-query").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("timestream-query")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.InvalidEndpointException,
+    client.QueryExecutionException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_timestream_query.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidEndpointException`
-- `Exceptions.QueryExecutionException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TimestreamQueryClient exceptions.
-
-Type annotations for `boto3.client("timestream-query").exceptions` method.
-
-Boto3 documentation:
-[TimestreamQuery.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("timestream-query").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate)
 
-Boto3 documentation:
-[TimestreamQuery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_query"></a>
-
-### cancel_query
+### cancel\_query
 
 Cancels a query that has been issued.
 
-Type annotations for `boto3.client("timestream-query").cancel_query` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").cancel_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.cancel_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.cancel_query)
+```python title="Method definition"
+def cancel_query(
+    self,
+    *,
+    QueryId: str,
+) -> CancelQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef).
+1. See [:material-code-braces: CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelQueryRequestRequestTypeDef = {  # (1)
+    "QueryId": ...,
+}
 
-Returns
-[CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
+parent.cancel_query(**kwargs)
+```
 
-<a id="create\_scheduled\_query"></a>
+1. See [:material-code-braces: CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef) 
 
-### create_scheduled_query
+### create\_scheduled\_query
 
 Create a scheduled query that will be run on your behalf at the configured
 schedule.
 
-Type annotations for `boto3.client("timestream-query").create_scheduled_query`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").create_scheduled_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.create_scheduled_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.create_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.create_scheduled_query)
+```python title="Method definition"
+def create_scheduled_query(
+    self,
+    *,
+    Name: str,
+    QueryString: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    NotificationConfiguration: NotificationConfigurationTypeDef,  # (2)
+    ScheduledQueryExecutionRoleArn: str,
+    ErrorReportConfiguration: ErrorReportConfigurationTypeDef,  # (3)
+    TargetConfiguration: TargetConfigurationTypeDef = ...,  # (4)
+    ClientToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    KmsKeyId: str = ...,
+) -> CreateScheduledQueryResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateScheduledQueryRequestRequestTypeDef](./type_defs.md#createscheduledqueryrequestrequesttypedef).
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+3. See [:material-code-braces: ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef) 
+4. See [:material-code-braces: TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CreateScheduledQueryResponseTypeDef](./type_defs.md#createscheduledqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `QueryString`: `str` *(required)*
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-  *(required)*
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-  *(required)*
-- `ScheduledQueryExecutionRoleArn`: `str` *(required)*
-- `ErrorReportConfiguration`:
-  [ErrorReportConfigurationTypeDef](./type_defs.md#errorreportconfigurationtypedef)
-  *(required)*
-- `TargetConfiguration`:
-  [TargetConfigurationTypeDef](./type_defs.md#targetconfigurationtypedef)
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `KmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateScheduledQueryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "QueryString": ...,
+    "ScheduleConfiguration": ...,
+    "NotificationConfiguration": ...,
+    "ScheduledQueryExecutionRoleArn": ...,
+    "ErrorReportConfiguration": ...,
+}
 
-Returns
-[CreateScheduledQueryResponseTypeDef](./type_defs.md#createscheduledqueryresponsetypedef).
+parent.create_scheduled_query(**kwargs)
+```
 
-<a id="delete\_scheduled\_query"></a>
+1. See [:material-code-braces: CreateScheduledQueryRequestRequestTypeDef](./type_defs.md#createscheduledqueryrequestrequesttypedef) 
 
-### delete_scheduled_query
+### delete\_scheduled\_query
 
 Deletes a given scheduled query.
 
-Type annotations for `boto3.client("timestream-query").delete_scheduled_query`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").delete_scheduled_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.delete_scheduled_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.delete_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.delete_scheduled_query)
+```python title="Method definition"
+def delete_scheduled_query(
+    self,
+    *,
+    ScheduledQueryArn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduledQueryRequestRequestTypeDef](./type_defs.md#deletescheduledqueryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ScheduledQueryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduledQueryRequestRequestTypeDef = {  # (1)
+    "ScheduledQueryArn": ...,
+}
 
-<a id="describe\_endpoints"></a>
+parent.delete_scheduled_query(**kwargs)
+```
 
-### describe_endpoints
+1. See [:material-code-braces: DeleteScheduledQueryRequestRequestTypeDef](./type_defs.md#deletescheduledqueryrequestrequesttypedef) 
+
+### describe\_endpoints
 
 DescribeEndpoints returns a list of available endpoints to make Timestream API
 calls against.
 
-Type annotations for `boto3.client("timestream-query").describe_endpoints`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").describe_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
 
-Boto3 documentation:
-[TimestreamQuery.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_endpoints)
+```python title="Method definition"
+def describe_endpoints(
+    self,
+) -> DescribeEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+1. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
-<a id="describe\_scheduled\_query"></a>
-
-### describe_scheduled_query
+### describe\_scheduled\_query
 
 Provides detailed information about a scheduled query.
 
-Type annotations for
-`boto3.client("timestream-query").describe_scheduled_query` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").describe_scheduled_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_scheduled_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.describe_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.describe_scheduled_query)
+```python title="Method definition"
+def describe_scheduled_query(
+    self,
+    *,
+    ScheduledQueryArn: str,
+) -> DescribeScheduledQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduledQueryRequestRequestTypeDef](./type_defs.md#describescheduledqueryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeScheduledQueryResponseTypeDef](./type_defs.md#describescheduledqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ScheduledQueryArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledQueryRequestRequestTypeDef = {  # (1)
+    "ScheduledQueryArn": ...,
+}
 
-Returns
-[DescribeScheduledQueryResponseTypeDef](./type_defs.md#describescheduledqueryresponsetypedef).
+parent.describe_scheduled_query(**kwargs)
+```
 
-<a id="execute\_scheduled\_query"></a>
+1. See [:material-code-braces: DescribeScheduledQueryRequestRequestTypeDef](./type_defs.md#describescheduledqueryrequestrequesttypedef) 
 
-### execute_scheduled_query
+### execute\_scheduled\_query
 
 You can use this API to run a scheduled query manually.
 
-Type annotations for `boto3.client("timestream-query").execute_scheduled_query`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").execute_scheduled_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.execute_scheduled_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.execute_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.execute_scheduled_query)
+```python title="Method definition"
+def execute_scheduled_query(
+    self,
+    *,
+    ScheduledQueryArn: str,
+    InvocationTime: Union[datetime, str],
+    ClientToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ExecuteScheduledQueryRequestRequestTypeDef](./type_defs.md#executescheduledqueryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ScheduledQueryArn`: `str` *(required)*
-- `InvocationTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExecuteScheduledQueryRequestRequestTypeDef = {  # (1)
+    "ScheduledQueryArn": ...,
+    "InvocationTime": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.execute_scheduled_query(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: ExecuteScheduledQueryRequestRequestTypeDef](./type_defs.md#executescheduledqueryrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("timestream-query").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url)
 
-Boto3 documentation:
-[TimestreamQuery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_scheduled\_queries"></a>
-
-### list_scheduled_queries
+### list\_scheduled\_queries
 
 Gets a list of all scheduled queries in the caller's Amazon account and Region.
 
-Type annotations for `boto3.client("timestream-query").list_scheduled_queries`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").list_scheduled_queries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_scheduled_queries)
 
-Boto3 documentation:
-[TimestreamQuery.Client.list_scheduled_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_scheduled_queries)
+```python title="Method definition"
+def list_scheduled_queries(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListScheduledQueriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListScheduledQueriesRequestRequestTypeDef](./type_defs.md#listscheduledqueriesrequestrequesttypedef).
+1. See [:material-code-braces: ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListScheduledQueriesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef).
+parent.list_scheduled_queries(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListScheduledQueriesRequestRequestTypeDef](./type_defs.md#listscheduledqueriesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags on a Timestream query resource.
 
-Type annotations for `boto3.client("timestream-query").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[TimestreamQuery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="prepare\_query"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### prepare_query
+### prepare\_query
 
 A synchronous operation that allows you to submit a query with parameters to be
 stored by Timestream for later running.
 
-Type annotations for `boto3.client("timestream-query").prepare_query` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").prepare_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.prepare_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.prepare_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.prepare_query)
+```python title="Method definition"
+def prepare_query(
+    self,
+    *,
+    QueryString: str,
+    ValidateOnly: bool = ...,
+) -> PrepareQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PrepareQueryRequestRequestTypeDef](./type_defs.md#preparequeryrequestrequesttypedef).
+1. See [:material-code-braces: PrepareQueryResponseTypeDef](./type_defs.md#preparequeryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryString`: `str` *(required)*
-- `ValidateOnly`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PrepareQueryRequestRequestTypeDef = {  # (1)
+    "QueryString": ...,
+}
 
-Returns
-[PrepareQueryResponseTypeDef](./type_defs.md#preparequeryresponsetypedef).
+parent.prepare_query(**kwargs)
+```
 
-<a id="query"></a>
+1. See [:material-code-braces: PrepareQueryRequestRequestTypeDef](./type_defs.md#preparequeryrequestrequesttypedef) 
 
 ### query
 
 `Query` is a synchronous operation that enables you to run a query against your
 Amazon Timestream data.
 
-Type annotations for `boto3.client("timestream-query").query` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.query)
+```python title="Method definition"
+def query(
+    self,
+    *,
+    QueryString: str,
+    ClientToken: str = ...,
+    NextToken: str = ...,
+    MaxRows: int = ...,
+) -> QueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef).
+1. See [:material-code-braces: QueryResponseTypeDef](./type_defs.md#queryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QueryString`: `str` *(required)*
-- `ClientToken`: `str`
-- `NextToken`: `str`
-- `MaxRows`: `int`
+```python title="Usage example with kwargs"
+kwargs: QueryRequestRequestTypeDef = {  # (1)
+    "QueryString": ...,
+}
 
-Returns [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef).
+parent.query(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associate a set of tags with a Timestream resource.
 
-Type annotations for `boto3.client("timestream-query").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.tag_resource)
 
-Boto3 documentation:
-[TimestreamQuery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the association of tags from a Timestream query resource.
 
-Type annotations for `boto3.client("timestream-query").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.untag_resource)
 
-Boto3 documentation:
-[TimestreamQuery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_scheduled\_query"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_scheduled_query
+### update\_scheduled\_query
 
 Update a scheduled query.
 
-Type annotations for `boto3.client("timestream-query").update_scheduled_query`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-query").update_scheduled_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.update_scheduled_query)
 
-Boto3 documentation:
-[TimestreamQuery.Client.update_scheduled_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.update_scheduled_query)
+```python title="Method definition"
+def update_scheduled_query(
+    self,
+    *,
+    ScheduledQueryArn: str,
+    State: ScheduledQueryStateType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateScheduledQueryRequestRequestTypeDef](./type_defs.md#updatescheduledqueryrequestrequesttypedef).
+1. See [:material-code-brackets: ScheduledQueryStateType](./literals.md#scheduledquerystatetype) 
 
-Keyword-only arguments:
 
-- `ScheduledQueryArn`: `str` *(required)*
-- `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateScheduledQueryRequestRequestTypeDef = {  # (1)
+    "ScheduledQueryArn": ...,
+    "State": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_scheduled_query(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateScheduledQueryRequestRequestTypeDef](./type_defs.md#updatescheduledqueryrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("timestream-query").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("timestream-query").get_paginator` method with overloads.
 
-- `client.get_paginator("list_scheduled_queries")` ->
-  [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("query")` ->
-  [QueryPaginator](./paginators.md#querypaginator)
+- `client.get_paginator("list_scheduled_queries")` -> [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("query")` -> [QueryPaginator](./paginators.md#querypaginator)
+
+
+

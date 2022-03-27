@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-mobile-module"></a>
-
-# Type annotations for boto3 Mobile module
+#  Mobile module
 
 > [Index](../README.md) > Mobile
 
-Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module
-[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
+!!! note ""
 
-- [Type annotations for boto3 Mobile module](#type-annotations-for-boto3-mobile-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MobileClient](#mobileclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+    type annotations stubs module [mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Mobile`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mobile]'
 python -m pip install mypy-boto3-mobile
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,84 +42,59 @@ python -m pip install mypy-boto3-mobile
 python -m pip uninstall -y mypy-boto3-mobile
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="mobileclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MobileClient
 
-Type annotations for `boto3.client("mobile")` as [MobileClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mobile")` as [MobileClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mobile.client import MobileClient
+
+def get_client() -> MobileClient:
+    return Session().cleint("mobile")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_project](./client.md#create_project)
-- [delete_project](./client.md#delete_project)
-- [describe_bundle](./client.md#describe_bundle)
-- [describe_project](./client.md#describe_project)
-- [exceptions](./client.md#exceptions)
-- [export_bundle](./client.md#export_bundle)
-- [export_project](./client.md#export_project)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_bundles](./client.md#list_bundles)
-- [list_projects](./client.md#list_projects)
-- [update_project](./client.md#update_project)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MobileClient [exceptions](./client.md#exceptions)
-
-- AccountActionRequiredException
-- BadRequestException
-- ClientError
-- InternalFailureException
-- LimitExceededException
-- NotFoundException
-- ServiceUnavailableException
-- TooManyRequestsException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mobile").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mobile").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mobile.paginator import ListBundlesPaginator, ...
+from mypy_boto3_mobile.paginator import ListBundlesPaginator
+
+def get_list_bundles_paginator() -> ListBundlesPaginator:
+    return Session().client("mobile").get_paginator("list_bundles"))
 ```
 
 - [ListBundlesPaginator](./paginators.md#listbundlespaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mobile.literals import ListBundlesPaginatorName
 
-```python
-from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
+def get_value() -> ListBundlesPaginatorName:
+    return "list_bundles"
 ```
 
 - [ListBundlesPaginatorName](./literals.md#listbundlespaginatorname)
@@ -153,17 +106,20 @@ from mypy_boto3_mobile.literals import ListBundlesPaginatorName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mobile.type_defs import BundleDetailsTypeDef
 
-```python
-from mypy_boto3_mobile.type_defs import BundleDetailsTypeDef, ...
+def get_value() -> BundleDetailsTypeDef:
+    return {
+        "bundleId": ...,
+    }
 ```
 
 - [BundleDetailsTypeDef](./type_defs.md#bundledetailstypedef)
@@ -179,8 +135,10 @@ from mypy_boto3_mobile.type_defs import BundleDetailsTypeDef, ...
 - [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef)
 - [ExportProjectRequestRequestTypeDef](./type_defs.md#exportprojectrequestrequesttypedef)
 - [ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef)
+- [ListBundlesRequestListBundlesPaginateTypeDef](./type_defs.md#listbundlesrequestlistbundlespaginatetypedef)
 - [ListBundlesRequestRequestTypeDef](./type_defs.md#listbundlesrequestrequesttypedef)
 - [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef)
+- [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -190,3 +148,4 @@ from mypy_boto3_mobile.type_defs import BundleDetailsTypeDef, ...
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef)
 - [UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef)
+

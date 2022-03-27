@@ -1,79 +1,18 @@
-<a id="wafv2client-for-boto3-wafv2-module"></a>
-
-# WAFV2Client for boto3 WAFV2 module
+# WAFV2Client
 
 > [Index](../README.md) > [WAFV2](./README.md) > WAFV2Client
 
-Auto-generated documentation for
-[WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
-type annotations stubs module
-[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+!!! note ""
 
-- [WAFV2Client for boto3 WAFV2 module](#wafv2client-for-boto3-wafv2-module)
-  - [WAFV2Client](#wafv2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_web_acl](#associate_web_acl)
-    - [can_paginate](#can_paginate)
-    - [check_capacity](#check_capacity)
-    - [create_ip_set](#create_ip_set)
-    - [create_regex_pattern_set](#create_regex_pattern_set)
-    - [create_rule_group](#create_rule_group)
-    - [create_web_acl](#create_web_acl)
-    - [delete_firewall_manager_rule_groups](#delete_firewall_manager_rule_groups)
-    - [delete_ip_set](#delete_ip_set)
-    - [delete_logging_configuration](#delete_logging_configuration)
-    - [delete_permission_policy](#delete_permission_policy)
-    - [delete_regex_pattern_set](#delete_regex_pattern_set)
-    - [delete_rule_group](#delete_rule_group)
-    - [delete_web_acl](#delete_web_acl)
-    - [describe_managed_rule_group](#describe_managed_rule_group)
-    - [disassociate_web_acl](#disassociate_web_acl)
-    - [generate_mobile_sdk_release_url](#generate_mobile_sdk_release_url)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_ip_set](#get_ip_set)
-    - [get_logging_configuration](#get_logging_configuration)
-    - [get_managed_rule_set](#get_managed_rule_set)
-    - [get_mobile_sdk_release](#get_mobile_sdk_release)
-    - [get_permission_policy](#get_permission_policy)
-    - [get_rate_based_statement_managed_keys](#get_rate_based_statement_managed_keys)
-    - [get_regex_pattern_set](#get_regex_pattern_set)
-    - [get_rule_group](#get_rule_group)
-    - [get_sampled_requests](#get_sampled_requests)
-    - [get_web_acl](#get_web_acl)
-    - [get_web_acl_for_resource](#get_web_acl_for_resource)
-    - [list_available_managed_rule_group_versions](#list_available_managed_rule_group_versions)
-    - [list_available_managed_rule_groups](#list_available_managed_rule_groups)
-    - [list_ip_sets](#list_ip_sets)
-    - [list_logging_configurations](#list_logging_configurations)
-    - [list_managed_rule_sets](#list_managed_rule_sets)
-    - [list_mobile_sdk_releases](#list_mobile_sdk_releases)
-    - [list_regex_pattern_sets](#list_regex_pattern_sets)
-    - [list_resources_for_web_acl](#list_resources_for_web_acl)
-    - [list_rule_groups](#list_rule_groups)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_web_acls](#list_web_acls)
-    - [put_logging_configuration](#put_logging_configuration)
-    - [put_managed_rule_set_versions](#put_managed_rule_set_versions)
-    - [put_permission_policy](#put_permission_policy)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_ip_set](#update_ip_set)
-    - [update_managed_rule_set_version_expiry_date](#update_managed_rule_set_version_expiry_date)
-    - [update_regex_pattern_set](#update_regex_pattern_set)
-    - [update_rule_group](#update_rule_group)
-    - [update_web_acl](#update_web_acl)
-
-<a id="wafv2client"></a>
+    Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+    type annotations stubs module [mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 ## WAFV2Client
 
-Type annotations for `boto3.client("wafv2")`
+Type annotations and code completion for `#!python boto3.client("wafv2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_wafv2.client import WAFV2Client
 
@@ -81,1260 +20,1746 @@ def get_wafv2_client() -> WAFV2Client:
     return Session().client("wafv2")
 ```
 
-Boto3 documentation:
-[WAFV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("wafv2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("wafv2")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.WAFAssociatedItemException,
+    client.WAFDuplicateItemException,
+    client.WAFExpiredManagedRuleGroupVersionException,
+    client.WAFInternalErrorException,
+    client.WAFInvalidOperationException,
+    client.WAFInvalidParameterException,
+    client.WAFInvalidPermissionPolicyException,
+    client.WAFInvalidResourceException,
+    client.WAFLimitsExceededException,
+    client.WAFLogDestinationPermissionIssueException,
+    client.WAFNonexistentItemException,
+    client.WAFOptimisticLockException,
+    client.WAFServiceLinkedRoleErrorException,
+    client.WAFSubscriptionNotFoundException,
+    client.WAFTagOperationException,
+    client.WAFTagOperationInternalErrorException,
+    client.WAFUnavailableEntityException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_wafv2.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.WAFAssociatedItemException`
-- `Exceptions.WAFDuplicateItemException`
-- `Exceptions.WAFExpiredManagedRuleGroupVersionException`
-- `Exceptions.WAFInternalErrorException`
-- `Exceptions.WAFInvalidOperationException`
-- `Exceptions.WAFInvalidParameterException`
-- `Exceptions.WAFInvalidPermissionPolicyException`
-- `Exceptions.WAFInvalidResourceException`
-- `Exceptions.WAFLimitsExceededException`
-- `Exceptions.WAFLogDestinationPermissionIssueException`
-- `Exceptions.WAFNonexistentItemException`
-- `Exceptions.WAFOptimisticLockException`
-- `Exceptions.WAFServiceLinkedRoleErrorException`
-- `Exceptions.WAFSubscriptionNotFoundException`
-- `Exceptions.WAFTagOperationException`
-- `Exceptions.WAFTagOperationInternalErrorException`
-- `Exceptions.WAFUnavailableEntityException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WAFV2Client exceptions.
-
-Type annotations for `boto3.client("wafv2").exceptions` method.
-
-Boto3 documentation:
-[WAFV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_web\_acl"></a>
-
-### associate_web_acl
+### associate\_web\_acl
 
 Associates a web ACL with a regional application resource, to protect the
 resource.
 
-Type annotations for `boto3.client("wafv2").associate_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").associate_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.associate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.associate_web_acl)
+```python title="Method definition"
+def associate_web_acl(
+    self,
+    *,
+    WebACLArn: str,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateWebACLRequestRequestTypeDef](./type_defs.md#associatewebaclrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WebACLArn`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateWebACLRequestRequestTypeDef = {  # (1)
+    "WebACLArn": ...,
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_web_acl(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateWebACLRequestRequestTypeDef](./type_defs.md#associatewebaclrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("wafv2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate)
 
-Boto3 documentation:
-[WAFV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="check\_capacity"></a>
-
-### check_capacity
+### check\_capacity
 
 Returns the web ACL capacity unit (WCU) requirements for a specified scope and
 set of rules.
 
-Type annotations for `boto3.client("wafv2").check_capacity` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").check_capacity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
 
-Boto3 documentation:
-[WAFV2.Client.check_capacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.check_capacity)
+```python title="Method definition"
+def check_capacity(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    Rules: Sequence[RuleTypeDef],  # (2)
+) -> CheckCapacityResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CheckCapacityRequestRequestTypeDef](./type_defs.md#checkcapacityrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+3. See [:material-code-braces: CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CheckCapacityRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+    "Rules": ...,
+}
 
-Returns
-[CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef).
+parent.check_capacity(**kwargs)
+```
 
-<a id="create\_ip\_set"></a>
+1. See [:material-code-braces: CheckCapacityRequestRequestTypeDef](./type_defs.md#checkcapacityrequestrequesttypedef) 
 
-### create_ip_set
+### create\_ip\_set
 
-Creates an IPSet , which you use to identify web requests that originate from
+Creates an  IPSet , which you use to identify web requests that originate from
 specific IP addresses or ranges of IP addresses.
 
-Type annotations for `boto3.client("wafv2").create_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").create_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
 
-Boto3 documentation:
-[WAFV2.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_ip_set)
+```python title="Method definition"
+def create_ip_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    IPAddressVersion: IPAddressVersionType,  # (2)
+    Addresses: Sequence[str],
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateIPSetResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-brackets: IPAddressVersionType](./literals.md#ipaddressversiontype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `IPAddressVersion`:
-  [IPAddressVersionType](./literals.md#ipaddressversiontype) *(required)*
-- `Addresses`: `Sequence`\[`str`\] *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateIPSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "IPAddressVersion": ...,
+    "Addresses": ...,
+}
 
-Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+parent.create_ip_set(**kwargs)
+```
 
-<a id="create\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef) 
 
-### create_regex_pattern_set
+### create\_regex\_pattern\_set
 
-Creates a RegexPatternSet , which you reference in a
+Creates a  RegexPatternSet , which you reference in a
 RegexPatternSetReferenceStatement , to have WAF inspect a web request component
 for the specified patterns.
 
-Type annotations for `boto3.client("wafv2").create_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").create_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
 
-Boto3 documentation:
-[WAFV2.Client.create_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_regex_pattern_set)
+```python title="Method definition"
+def create_regex_pattern_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    RegularExpressionList: Sequence[RegexTypeDef],  # (2)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateRegexPatternSetResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateRegexPatternSetRequestRequestTypeDef](./type_defs.md#createregexpatternsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: RegexTypeDef](./type_defs.md#regextypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `RegularExpressionList`:
-  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "RegularExpressionList": ...,
+}
 
-Returns
-[CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
+parent.create_regex_pattern_set(**kwargs)
+```
 
-<a id="create\_rule\_group"></a>
+1. See [:material-code-braces: CreateRegexPatternSetRequestRequestTypeDef](./type_defs.md#createregexpatternsetrequestrequesttypedef) 
 
-### create_rule_group
+### create\_rule\_group
 
-Creates a RuleGroup per the specifications provided.
+Creates a  RuleGroup per the specifications provided.
 
-Type annotations for `boto3.client("wafv2").create_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").create_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
 
-Boto3 documentation:
-[WAFV2.Client.create_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_rule_group)
+```python title="Method definition"
+def create_rule_group(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Capacity: int,
+    VisibilityConfig: VisibilityConfigTypeDef,  # (2)
+    Description: str = ...,
+    Rules: Sequence[RuleTypeDef] = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (5)
+) -> CreateRuleGroupResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
+3. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
+6. See [:material-code-braces: CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Capacity`: `int` *(required)*
-- `VisibilityConfig`:
-  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
-  *(required)*
-- `Description`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Mapping`\[`str`,
-  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRuleGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Capacity": ...,
+    "VisibilityConfig": ...,
+}
 
-Returns
-[CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
+parent.create_rule_group(**kwargs)
+```
 
-<a id="create\_web\_acl"></a>
+1. See [:material-code-braces: CreateRuleGroupRequestRequestTypeDef](./type_defs.md#createrulegrouprequestrequesttypedef) 
 
-### create_web_acl
+### create\_web\_acl
 
-Creates a WebACL per the specifications provided.
+Creates a  WebACL per the specifications provided.
 
-Type annotations for `boto3.client("wafv2").create_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").create_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.create_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.create_web_acl)
+```python title="Method definition"
+def create_web_acl(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    DefaultAction: DefaultActionTypeDef,  # (2)
+    VisibilityConfig: VisibilityConfigTypeDef,  # (3)
+    Description: str = ...,
+    Rules: Sequence[RuleTypeDef] = ...,  # (4)
+    Tags: Sequence[TagTypeDef] = ...,  # (5)
+    CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (6)
+    CaptchaConfig: CaptchaConfigTypeDef = ...,  # (7)
+) -> CreateWebACLResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateWebACLRequestRequestTypeDef](./type_defs.md#createwebaclrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: DefaultActionTypeDef](./type_defs.md#defaultactiontypedef) 
+3. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
+4. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
+7. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
+8. See [:material-code-braces: CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
-  *(required)*
-- `VisibilityConfig`:
-  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
-  *(required)*
-- `Description`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CustomResponseBodies`: `Mapping`\[`str`,
-  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
-- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateWebACLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "DefaultAction": ...,
+    "VisibilityConfig": ...,
+}
 
-Returns
-[CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
+parent.create_web_acl(**kwargs)
+```
 
-<a id="delete\_firewall\_manager\_rule\_groups"></a>
+1. See [:material-code-braces: CreateWebACLRequestRequestTypeDef](./type_defs.md#createwebaclrequestrequesttypedef) 
 
-### delete_firewall_manager_rule_groups
+### delete\_firewall\_manager\_rule\_groups
 
 Deletes all rule groups that are managed by Firewall Manager for the specified
 web ACL.
 
-Type annotations for
-`boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_firewall_manager_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
 
-Boto3 documentation:
-[WAFV2.Client.delete_firewall_manager_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_firewall_manager_rule_groups)
+```python title="Method definition"
+def delete_firewall_manager_rule_groups(
+    self,
+    *,
+    WebACLArn: str,
+    WebACLLockToken: str,
+) -> DeleteFirewallManagerRuleGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFirewallManagerRuleGroupsRequestRequestTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLArn`: `str` *(required)*
-- `WebACLLockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFirewallManagerRuleGroupsRequestRequestTypeDef = {  # (1)
+    "WebACLArn": ...,
+    "WebACLLockToken": ...,
+}
 
-Returns
-[DeleteFirewallManagerRuleGroupsResponseTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsresponsetypedef).
+parent.delete_firewall_manager_rule_groups(**kwargs)
+```
 
-<a id="delete\_ip\_set"></a>
+1. See [:material-code-braces: DeleteFirewallManagerRuleGroupsRequestRequestTypeDef](./type_defs.md#deletefirewallmanagerrulegroupsrequestrequesttypedef) 
 
-### delete_ip_set
+### delete\_ip\_set
 
-Deletes the specified IPSet .
+Deletes the specified  IPSet .
 
-Type annotations for `boto3.client("wafv2").delete_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
 
-Boto3 documentation:
-[WAFV2.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_ip_set)
+```python title="Method definition"
+def delete_ip_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIPSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_ip_set(**kwargs)
+```
 
-<a id="delete\_logging\_configuration"></a>
+1. See [:material-code-braces: DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef) 
 
-### delete_logging_configuration
+### delete\_logging\_configuration
 
-Deletes the LoggingConfiguration from the specified web ACL.
+Deletes the  LoggingConfiguration from the specified web ACL.
 
-Type annotations for `boto3.client("wafv2").delete_logging_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
 
-Boto3 documentation:
-[WAFV2.Client.delete_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_logging_configuration)
+```python title="Method definition"
+def delete_logging_configuration(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_logging_configuration(**kwargs)
+```
 
-<a id="delete\_permission\_policy"></a>
+1. See [:material-code-braces: DeleteLoggingConfigurationRequestRequestTypeDef](./type_defs.md#deleteloggingconfigurationrequestrequesttypedef) 
 
-### delete_permission_policy
+### delete\_permission\_policy
 
 Permanently deletes an IAM policy from the specified rule group.
 
-Type annotations for `boto3.client("wafv2").delete_permission_policy` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
 
-Boto3 documentation:
-[WAFV2.Client.delete_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_permission_policy)
+```python title="Method definition"
+def delete_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePermissionPolicyRequestRequestTypeDef](./type_defs.md#deletepermissionpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_permission_policy(**kwargs)
+```
 
-<a id="delete\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: DeletePermissionPolicyRequestRequestTypeDef](./type_defs.md#deletepermissionpolicyrequestrequesttypedef) 
 
-### delete_regex_pattern_set
+### delete\_regex\_pattern\_set
 
-Deletes the specified RegexPatternSet .
+Deletes the specified  RegexPatternSet .
 
-Type annotations for `boto3.client("wafv2").delete_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
 
-Boto3 documentation:
-[WAFV2.Client.delete_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_regex_pattern_set)
+```python title="Method definition"
+def delete_regex_pattern_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRegexPatternSetRequestRequestTypeDef](./type_defs.md#deleteregexpatternsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_regex_pattern_set(**kwargs)
+```
 
-<a id="delete\_rule\_group"></a>
+1. See [:material-code-braces: DeleteRegexPatternSetRequestRequestTypeDef](./type_defs.md#deleteregexpatternsetrequestrequesttypedef) 
 
-### delete_rule_group
+### delete\_rule\_group
 
-Deletes the specified RuleGroup .
+Deletes the specified  RuleGroup .
 
-Type annotations for `boto3.client("wafv2").delete_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
 
-Boto3 documentation:
-[WAFV2.Client.delete_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_rule_group)
+```python title="Method definition"
+def delete_rule_group(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_rule_group(**kwargs)
+```
 
-<a id="delete\_web\_acl"></a>
+1. See [:material-code-braces: DeleteRuleGroupRequestRequestTypeDef](./type_defs.md#deleterulegrouprequestrequesttypedef) 
 
-### delete_web_acl
+### delete\_web\_acl
 
-Deletes the specified WebACL .
+Deletes the specified  WebACL .
 
-Type annotations for `boto3.client("wafv2").delete_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").delete_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.delete_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.delete_web_acl)
+```python title="Method definition"
+def delete_web_acl(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWebACLRequestRequestTypeDef](./type_defs.md#deletewebaclrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWebACLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_web_acl(**kwargs)
+```
 
-<a id="describe\_managed\_rule\_group"></a>
+1. See [:material-code-braces: DeleteWebACLRequestRequestTypeDef](./type_defs.md#deletewebaclrequestrequesttypedef) 
 
-### describe_managed_rule_group
+### describe\_managed\_rule\_group
 
-Provides high-level information for a managed rule group, including
-descriptions of the rules.
+Provides high-level information for a managed rule group, including descriptions
+of the rules.
 
-Type annotations for `boto3.client("wafv2").describe_managed_rule_group`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").describe_managed_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
 
-Boto3 documentation:
-[WAFV2.Client.describe_managed_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.describe_managed_rule_group)
+```python title="Method definition"
+def describe_managed_rule_group(
+    self,
+    *,
+    VendorName: str,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    VersionName: str = ...,
+) -> DescribeManagedRuleGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeManagedRuleGroupRequestRequestTypeDef](./type_defs.md#describemanagedrulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VendorName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `VersionName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeManagedRuleGroupRequestRequestTypeDef = {  # (1)
+    "VendorName": ...,
+    "Name": ...,
+    "Scope": ...,
+}
 
-Returns
-[DescribeManagedRuleGroupResponseTypeDef](./type_defs.md#describemanagedrulegroupresponsetypedef).
+parent.describe_managed_rule_group(**kwargs)
+```
 
-<a id="disassociate\_web\_acl"></a>
+1. See [:material-code-braces: DescribeManagedRuleGroupRequestRequestTypeDef](./type_defs.md#describemanagedrulegrouprequestrequesttypedef) 
 
-### disassociate_web_acl
+### disassociate\_web\_acl
 
 Disassociates a web ACL from a regional application resource.
 
-Type annotations for `boto3.client("wafv2").disassociate_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").disassociate_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.disassociate_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.disassociate_web_acl)
+```python title="Method definition"
+def disassociate_web_acl(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateWebACLRequestRequestTypeDef](./type_defs.md#disassociatewebaclrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateWebACLRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_web_acl(**kwargs)
+```
 
-<a id="generate\_mobile\_sdk\_release\_url"></a>
+1. See [:material-code-braces: DisassociateWebACLRequestRequestTypeDef](./type_defs.md#disassociatewebaclrequestrequesttypedef) 
 
-### generate_mobile_sdk_release_url
+### generate\_mobile\_sdk\_release\_url
 
 Generates a presigned download URL for the specified release of the mobile SDK.
 
-Type annotations for `boto3.client("wafv2").generate_mobile_sdk_release_url`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").generate_mobile_sdk_release_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_mobile_sdk_release_url)
 
-Boto3 documentation:
-[WAFV2.Client.generate_mobile_sdk_release_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_mobile_sdk_release_url)
+```python title="Method definition"
+def generate_mobile_sdk_release_url(
+    self,
+    *,
+    Platform: PlatformType,  # (1)
+    ReleaseVersion: str,
+) -> GenerateMobileSdkReleaseUrlResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateMobileSdkReleaseUrlRequestRequestTypeDef](./type_defs.md#generatemobilesdkreleaseurlrequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: GenerateMobileSdkReleaseUrlResponseTypeDef](./type_defs.md#generatemobilesdkreleaseurlresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `ReleaseVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GenerateMobileSdkReleaseUrlRequestRequestTypeDef = {  # (1)
+    "Platform": ...,
+    "ReleaseVersion": ...,
+}
 
-Returns
-[GenerateMobileSdkReleaseUrlResponseTypeDef](./type_defs.md#generatemobilesdkreleaseurlresponsetypedef).
+parent.generate_mobile_sdk_release_url(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateMobileSdkReleaseUrlRequestRequestTypeDef](./type_defs.md#generatemobilesdkreleaseurlrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("wafv2").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WAFV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_ip\_set
 
-Returns `str`.
+Retrieves the specified  IPSet .
 
-<a id="get\_ip\_set"></a>
+Type annotations and code completion for `#!python boto3.client("wafv2").get_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
 
-### get_ip_set
+```python title="Method definition"
+def get_ip_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+) -> GetIPSetResponseTypeDef:  # (2)
+    ...
+```
 
-Retrieves the specified IPSet .
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef) 
 
-Type annotations for `boto3.client("wafv2").get_ip_set` method.
 
-Boto3 documentation:
-[WAFV2.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_ip_set)
+```python title="Usage example with kwargs"
+kwargs: GetIPSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+}
 
-Arguments mapping described in
-[GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef).
+parent.get_ip_set(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef) 
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
+### get\_logging\_configuration
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+Returns the  LoggingConfiguration for the specified web ACL.
 
-<a id="get\_logging\_configuration"></a>
+Type annotations and code completion for `#!python boto3.client("wafv2").get_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
 
-### get_logging_configuration
+```python title="Method definition"
+def get_logging_configuration(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetLoggingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns the LoggingConfiguration for the specified web ACL.
+1. See [:material-code-braces: GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef) 
 
-Type annotations for `boto3.client("wafv2").get_logging_configuration` method.
 
-Boto3 documentation:
-[WAFV2.Client.get_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_logging_configuration)
+```python title="Usage example with kwargs"
+kwargs: GetLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Arguments mapping described in
-[GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef).
+parent.get_logging_configuration(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetLoggingConfigurationRequestRequestTypeDef](./type_defs.md#getloggingconfigurationrequestrequesttypedef) 
 
-- `ResourceArn`: `str` *(required)*
-
-Returns
-[GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
-
-<a id="get\_managed\_rule\_set"></a>
-
-### get_managed_rule_set
+### get\_managed\_rule\_set
 
 Retrieves the specified managed rule set.
 
-Type annotations for `boto3.client("wafv2").get_managed_rule_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_managed_rule_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_managed_rule_set)
 
-Boto3 documentation:
-[WAFV2.Client.get_managed_rule_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_managed_rule_set)
+```python title="Method definition"
+def get_managed_rule_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+) -> GetManagedRuleSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetManagedRuleSetRequestRequestTypeDef](./type_defs.md#getmanagedrulesetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetManagedRuleSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+}
 
-Returns
-[GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef).
+parent.get_managed_rule_set(**kwargs)
+```
 
-<a id="get\_mobile\_sdk\_release"></a>
+1. See [:material-code-braces: GetManagedRuleSetRequestRequestTypeDef](./type_defs.md#getmanagedrulesetrequestrequesttypedef) 
 
-### get_mobile_sdk_release
+### get\_mobile\_sdk\_release
 
 Retrieves information for the specified mobile SDK release, including release
 notes and tags.
 
-Type annotations for `boto3.client("wafv2").get_mobile_sdk_release` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_mobile_sdk_release` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_mobile_sdk_release)
 
-Boto3 documentation:
-[WAFV2.Client.get_mobile_sdk_release](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_mobile_sdk_release)
+```python title="Method definition"
+def get_mobile_sdk_release(
+    self,
+    *,
+    Platform: PlatformType,  # (1)
+    ReleaseVersion: str,
+) -> GetMobileSdkReleaseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetMobileSdkReleaseRequestRequestTypeDef](./type_defs.md#getmobilesdkreleaserequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: GetMobileSdkReleaseResponseTypeDef](./type_defs.md#getmobilesdkreleaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `ReleaseVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMobileSdkReleaseRequestRequestTypeDef = {  # (1)
+    "Platform": ...,
+    "ReleaseVersion": ...,
+}
 
-Returns
-[GetMobileSdkReleaseResponseTypeDef](./type_defs.md#getmobilesdkreleaseresponsetypedef).
+parent.get_mobile_sdk_release(**kwargs)
+```
 
-<a id="get\_permission\_policy"></a>
+1. See [:material-code-braces: GetMobileSdkReleaseRequestRequestTypeDef](./type_defs.md#getmobilesdkreleaserequestrequesttypedef) 
 
-### get_permission_policy
+### get\_permission\_policy
 
 Returns the IAM policy that is attached to the specified rule group.
 
-Type annotations for `boto3.client("wafv2").get_permission_policy` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
 
-Boto3 documentation:
-[WAFV2.Client.get_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_permission_policy)
+```python title="Method definition"
+def get_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetPermissionPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
+parent.get_permission_policy(**kwargs)
+```
 
-<a id="get\_rate\_based\_statement\_managed\_keys"></a>
+1. See [:material-code-braces: GetPermissionPolicyRequestRequestTypeDef](./type_defs.md#getpermissionpolicyrequestrequesttypedef) 
 
-### get_rate_based_statement_managed_keys
+### get\_rate\_based\_statement\_managed\_keys
 
 Retrieves the keys that are currently blocked by a rate-based rule instance.
 
-Type annotations for
-`boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_rate_based_statement_managed_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
 
-Boto3 documentation:
-[WAFV2.Client.get_rate_based_statement_managed_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rate_based_statement_managed_keys)
+```python title="Method definition"
+def get_rate_based_statement_managed_keys(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    WebACLName: str,
+    WebACLId: str,
+    RuleName: str,
+    RuleGroupRuleName: str = ...,
+) -> GetRateBasedStatementManagedKeysResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRateBasedStatementManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedstatementmanagedkeysrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `WebACLName`: `str` *(required)*
-- `WebACLId`: `str` *(required)*
-- `RuleName`: `str` *(required)*
-- `RuleGroupRuleName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRateBasedStatementManagedKeysRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+    "WebACLName": ...,
+    "WebACLId": ...,
+    "RuleName": ...,
+}
 
-Returns
-[GetRateBasedStatementManagedKeysResponseTypeDef](./type_defs.md#getratebasedstatementmanagedkeysresponsetypedef).
+parent.get_rate_based_statement_managed_keys(**kwargs)
+```
 
-<a id="get\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: GetRateBasedStatementManagedKeysRequestRequestTypeDef](./type_defs.md#getratebasedstatementmanagedkeysrequestrequesttypedef) 
 
-### get_regex_pattern_set
+### get\_regex\_pattern\_set
 
-Retrieves the specified RegexPatternSet .
+Retrieves the specified  RegexPatternSet .
 
-Type annotations for `boto3.client("wafv2").get_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
 
-Boto3 documentation:
-[WAFV2.Client.get_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_regex_pattern_set)
+```python title="Method definition"
+def get_regex_pattern_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+) -> GetRegexPatternSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRegexPatternSetRequestRequestTypeDef](./type_defs.md#getregexpatternsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+}
 
-Returns
-[GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
+parent.get_regex_pattern_set(**kwargs)
+```
 
-<a id="get\_rule\_group"></a>
+1. See [:material-code-braces: GetRegexPatternSetRequestRequestTypeDef](./type_defs.md#getregexpatternsetrequestrequesttypedef) 
 
-### get_rule_group
+### get\_rule\_group
 
-Retrieves the specified RuleGroup .
+Retrieves the specified  RuleGroup .
 
-Type annotations for `boto3.client("wafv2").get_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
 
-Boto3 documentation:
-[WAFV2.Client.get_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_rule_group)
+```python title="Method definition"
+def get_rule_group(
+    self,
+    *,
+    Name: str = ...,
+    Scope: ScopeType = ...,  # (1)
+    Id: str = ...,
+    ARN: str = ...,
+) -> GetRuleGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetRuleGroupRequestRequestTypeDef](./type_defs.md#getrulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `Scope`: [ScopeType](./literals.md#scopetype)
-- `Id`: `str`
-- `ARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRuleGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+parent.get_rule_group(**kwargs)
+```
 
-<a id="get\_sampled\_requests"></a>
+1. See [:material-code-braces: GetRuleGroupRequestRequestTypeDef](./type_defs.md#getrulegrouprequestrequesttypedef) 
 
-### get_sampled_requests
+### get\_sampled\_requests
 
 Gets detailed information about a specified number of requests--a sample--that
 WAF randomly selects from among the first 5,000 requests that your Amazon Web
 Services resource received during a time range that you choose.
 
-Type annotations for `boto3.client("wafv2").get_sampled_requests` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_sampled_requests` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
 
-Boto3 documentation:
-[WAFV2.Client.get_sampled_requests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_sampled_requests)
+```python title="Method definition"
+def get_sampled_requests(
+    self,
+    *,
+    WebAclArn: str,
+    RuleMetricName: str,
+    Scope: ScopeType,  # (1)
+    TimeWindow: TimeWindowTypeDef,  # (2)
+    MaxItems: int,
+) -> GetSampledRequestsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetSampledRequestsRequestRequestTypeDef](./type_defs.md#getsampledrequestsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: TimeWindowTypeDef](./type_defs.md#timewindowtypedef) 
+3. See [:material-code-braces: GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebAclArn`: `str` *(required)*
-- `RuleMetricName`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `TimeWindow`: [TimeWindowTypeDef](./type_defs.md#timewindowtypedef)
-  *(required)*
-- `MaxItems`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSampledRequestsRequestRequestTypeDef = {  # (1)
+    "WebAclArn": ...,
+    "RuleMetricName": ...,
+    "Scope": ...,
+    "TimeWindow": ...,
+    "MaxItems": ...,
+}
 
-Returns
-[GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
+parent.get_sampled_requests(**kwargs)
+```
 
-<a id="get\_web\_acl"></a>
+1. See [:material-code-braces: GetSampledRequestsRequestRequestTypeDef](./type_defs.md#getsampledrequestsrequestrequesttypedef) 
 
-### get_web_acl
+### get\_web\_acl
 
-Retrieves the specified WebACL .
+Retrieves the specified  WebACL .
 
-Type annotations for `boto3.client("wafv2").get_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.get_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl)
+```python title="Method definition"
+def get_web_acl(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+) -> GetWebACLResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetWebACLRequestRequestTypeDef](./type_defs.md#getwebaclrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWebACLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+}
 
-Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
+parent.get_web_acl(**kwargs)
+```
 
-<a id="get\_web\_acl\_for\_resource"></a>
+1. See [:material-code-braces: GetWebACLRequestRequestTypeDef](./type_defs.md#getwebaclrequestrequesttypedef) 
 
-### get_web_acl_for_resource
+### get\_web\_acl\_for\_resource
 
-Retrieves the WebACL for the specified resource.
+Retrieves the  WebACL for the specified resource.
 
-Type annotations for `boto3.client("wafv2").get_web_acl_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").get_web_acl_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
 
-Boto3 documentation:
-[WAFV2.Client.get_web_acl_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_web_acl_for_resource)
+```python title="Method definition"
+def get_web_acl_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetWebACLForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWebACLForResourceRequestRequestTypeDef](./type_defs.md#getwebaclforresourcerequestrequesttypedef).
+1. See [:material-code-braces: GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWebACLForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
+parent.get_web_acl_for_resource(**kwargs)
+```
 
-<a id="list\_available\_managed\_rule\_group\_versions"></a>
+1. See [:material-code-braces: GetWebACLForResourceRequestRequestTypeDef](./type_defs.md#getwebaclforresourcerequestrequesttypedef) 
 
-### list_available_managed_rule_group_versions
+### list\_available\_managed\_rule\_group\_versions
 
 Returns a list of the available versions for the specified managed rule group.
 
-Type annotations for
-`boto3.client("wafv2").list_available_managed_rule_group_versions` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_available_managed_rule_group_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_group_versions)
 
-Boto3 documentation:
-[WAFV2.Client.list_available_managed_rule_group_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_group_versions)
+```python title="Method definition"
+def list_available_managed_rule_group_versions(
+    self,
+    *,
+    VendorName: str,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListAvailableManagedRuleGroupVersionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListAvailableManagedRuleGroupVersionsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `VendorName`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef = {  # (1)
+    "VendorName": ...,
+    "Name": ...,
+    "Scope": ...,
+}
 
-Returns
-[ListAvailableManagedRuleGroupVersionsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsresponsetypedef).
+parent.list_available_managed_rule_group_versions(**kwargs)
+```
 
-<a id="list\_available\_managed\_rule\_groups"></a>
+1. See [:material-code-braces: ListAvailableManagedRuleGroupVersionsRequestRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupversionsrequestrequesttypedef) 
 
-### list_available_managed_rule_groups
+### list\_available\_managed\_rule\_groups
 
 Retrieves an array of managed rule groups that are available for you to use.
 
-Type annotations for `boto3.client("wafv2").list_available_managed_rule_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_available_managed_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
 
-Boto3 documentation:
-[WAFV2.Client.list_available_managed_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_available_managed_rule_groups)
+```python title="Method definition"
+def list_available_managed_rule_groups(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListAvailableManagedRuleGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAvailableManagedRuleGroupsRequestRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListAvailableManagedRuleGroupsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAvailableManagedRuleGroupsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListAvailableManagedRuleGroupsResponseTypeDef](./type_defs.md#listavailablemanagedrulegroupsresponsetypedef).
+parent.list_available_managed_rule_groups(**kwargs)
+```
 
-<a id="list\_ip\_sets"></a>
+1. See [:material-code-braces: ListAvailableManagedRuleGroupsRequestRequestTypeDef](./type_defs.md#listavailablemanagedrulegroupsrequestrequesttypedef) 
 
-### list_ip_sets
+### list\_ip\_sets
 
-Retrieves an array of IPSetSummary objects for the IP sets that you manage.
+Retrieves an array of  IPSetSummary objects for the IP sets that you manage.
 
-Type annotations for `boto3.client("wafv2").list_ip_sets` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_ip_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
 
-Boto3 documentation:
-[WAFV2.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_ip_sets)
+```python title="Method definition"
+def list_ip_sets(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListIPSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIPSetsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+parent.list_ip_sets(**kwargs)
+```
 
-<a id="list\_logging\_configurations"></a>
+1. See [:material-code-braces: ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef) 
 
-### list_logging_configurations
+### list\_logging\_configurations
 
-Retrieves an array of your LoggingConfiguration objects.
+Retrieves an array of your  LoggingConfiguration objects.
 
-Type annotations for `boto3.client("wafv2").list_logging_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_logging_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
 
-Boto3 documentation:
-[WAFV2.Client.list_logging_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_logging_configurations)
+```python title="Method definition"
+def list_logging_configurations(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListLoggingConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLoggingConfigurationsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
+parent.list_logging_configurations(**kwargs)
+```
 
-<a id="list\_managed\_rule\_sets"></a>
+1. See [:material-code-braces: ListLoggingConfigurationsRequestRequestTypeDef](./type_defs.md#listloggingconfigurationsrequestrequesttypedef) 
 
-### list_managed_rule_sets
+### list\_managed\_rule\_sets
 
 Retrieves the managed rule sets that you own.
 
-Type annotations for `boto3.client("wafv2").list_managed_rule_sets` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_managed_rule_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_managed_rule_sets)
 
-Boto3 documentation:
-[WAFV2.Client.list_managed_rule_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_managed_rule_sets)
+```python title="Method definition"
+def list_managed_rule_sets(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListManagedRuleSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedRuleSetsRequestRequestTypeDef](./type_defs.md#listmanagedrulesetsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListManagedRuleSetsResponseTypeDef](./type_defs.md#listmanagedrulesetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListManagedRuleSetsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListManagedRuleSetsResponseTypeDef](./type_defs.md#listmanagedrulesetsresponsetypedef).
+parent.list_managed_rule_sets(**kwargs)
+```
 
-<a id="list\_mobile\_sdk\_releases"></a>
+1. See [:material-code-braces: ListManagedRuleSetsRequestRequestTypeDef](./type_defs.md#listmanagedrulesetsrequestrequesttypedef) 
 
-### list_mobile_sdk_releases
+### list\_mobile\_sdk\_releases
 
 Retrieves a list of the available releases for the mobile SDK and the specified
 device platform.
 
-Type annotations for `boto3.client("wafv2").list_mobile_sdk_releases` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_mobile_sdk_releases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_mobile_sdk_releases)
 
-Boto3 documentation:
-[WAFV2.Client.list_mobile_sdk_releases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_mobile_sdk_releases)
+```python title="Method definition"
+def list_mobile_sdk_releases(
+    self,
+    *,
+    Platform: PlatformType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListMobileSdkReleasesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListMobileSdkReleasesRequestRequestTypeDef](./type_defs.md#listmobilesdkreleasesrequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: ListMobileSdkReleasesResponseTypeDef](./type_defs.md#listmobilesdkreleasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMobileSdkReleasesRequestRequestTypeDef = {  # (1)
+    "Platform": ...,
+}
 
-Returns
-[ListMobileSdkReleasesResponseTypeDef](./type_defs.md#listmobilesdkreleasesresponsetypedef).
+parent.list_mobile_sdk_releases(**kwargs)
+```
 
-<a id="list\_regex\_pattern\_sets"></a>
+1. See [:material-code-braces: ListMobileSdkReleasesRequestRequestTypeDef](./type_defs.md#listmobilesdkreleasesrequestrequesttypedef) 
 
-### list_regex_pattern_sets
+### list\_regex\_pattern\_sets
 
-Retrieves an array of RegexPatternSetSummary objects for the regex pattern sets
+Retrieves an array of  RegexPatternSetSummary objects for the regex pattern sets
 that you manage.
 
-Type annotations for `boto3.client("wafv2").list_regex_pattern_sets` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_regex_pattern_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
 
-Boto3 documentation:
-[WAFV2.Client.list_regex_pattern_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_regex_pattern_sets)
+```python title="Method definition"
+def list_regex_pattern_sets(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRegexPatternSetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRegexPatternSetsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
+parent.list_regex_pattern_sets(**kwargs)
+```
 
-<a id="list\_resources\_for\_web\_acl"></a>
+1. See [:material-code-braces: ListRegexPatternSetsRequestRequestTypeDef](./type_defs.md#listregexpatternsetsrequestrequesttypedef) 
 
-### list_resources_for_web_acl
+### list\_resources\_for\_web\_acl
 
 Retrieves an array of the Amazon Resource Names (ARNs) for the regional
 resources that are associated with the specified web ACL.
 
-Type annotations for `boto3.client("wafv2").list_resources_for_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_resources_for_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.list_resources_for_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_resources_for_web_acl)
+```python title="Method definition"
+def list_resources_for_web_acl(
+    self,
+    *,
+    WebACLArn: str,
+    ResourceType: ResourceTypeType = ...,  # (1)
+) -> ListResourcesForWebACLResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesForWebACLRequestRequestTypeDef](./type_defs.md#listresourcesforwebaclrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `WebACLArn`: `str` *(required)*
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListResourcesForWebACLRequestRequestTypeDef = {  # (1)
+    "WebACLArn": ...,
+}
 
-Returns
-[ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
+parent.list_resources_for_web_acl(**kwargs)
+```
 
-<a id="list\_rule\_groups"></a>
+1. See [:material-code-braces: ListResourcesForWebACLRequestRequestTypeDef](./type_defs.md#listresourcesforwebaclrequestrequesttypedef) 
 
-### list_rule_groups
+### list\_rule\_groups
 
-Retrieves an array of RuleGroupSummary objects for the rule groups that you
+Retrieves an array of  RuleGroupSummary objects for the rule groups that you
 manage.
 
-Type annotations for `boto3.client("wafv2").list_rule_groups` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_rule_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
 
-Boto3 documentation:
-[WAFV2.Client.list_rule_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_rule_groups)
+```python title="Method definition"
+def list_rule_groups(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListRuleGroupsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRuleGroupsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
+parent.list_rule_groups(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRuleGroupsRequestRequestTypeDef](./type_defs.md#listrulegroupsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-Retrieves the TagInfoForResource for the specified resource.
+Retrieves the  TagInfoForResource for the specified resource.
 
-Type annotations for `boto3.client("wafv2").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[WAFV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_web\_acls"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_web_acls
+### list\_web\_acls
 
-Retrieves an array of WebACLSummary objects for the web ACLs that you manage.
+Retrieves an array of  WebACLSummary objects for the web ACLs that you manage.
 
-Type annotations for `boto3.client("wafv2").list_web_acls` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").list_web_acls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
 
-Boto3 documentation:
-[WAFV2.Client.list_web_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_web_acls)
+```python title="Method definition"
+def list_web_acls(
+    self,
+    *,
+    Scope: ScopeType,  # (1)
+    NextMarker: str = ...,
+    Limit: int = ...,
+) -> ListWebACLsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWebACLsRequestRequestTypeDef = {  # (1)
+    "Scope": ...,
+}
 
-Returns
-[ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
+parent.list_web_acls(**kwargs)
+```
 
-<a id="put\_logging\_configuration"></a>
+1. See [:material-code-braces: ListWebACLsRequestRequestTypeDef](./type_defs.md#listwebaclsrequestrequesttypedef) 
 
-### put_logging_configuration
+### put\_logging\_configuration
 
-Enables the specified LoggingConfiguration , to start logging from a web ACL,
+Enables the specified  LoggingConfiguration , to start logging from a web ACL,
 according to the configuration provided.
 
-Type annotations for `boto3.client("wafv2").put_logging_configuration` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").put_logging_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
 
-Boto3 documentation:
-[WAFV2.Client.put_logging_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_logging_configuration)
+```python title="Method definition"
+def put_logging_configuration(
+    self,
+    *,
+    LoggingConfiguration: LoggingConfigurationTypeDef,  # (1)
+) -> PutLoggingConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef) 
+2. See [:material-code-braces: PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggingConfiguration`:
-  [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutLoggingConfigurationRequestRequestTypeDef = {  # (1)
+    "LoggingConfiguration": ...,
+}
 
-Returns
-[PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
+parent.put_logging_configuration(**kwargs)
+```
 
-<a id="put\_managed\_rule\_set\_versions"></a>
+1. See [:material-code-braces: PutLoggingConfigurationRequestRequestTypeDef](./type_defs.md#putloggingconfigurationrequestrequesttypedef) 
 
-### put_managed_rule_set_versions
+### put\_managed\_rule\_set\_versions
 
 Defines the versions of your managed rule set that you are offering to the
 customers.
 
-Type annotations for `boto3.client("wafv2").put_managed_rule_set_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("wafv2").put_managed_rule_set_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_managed_rule_set_versions)
 
-Boto3 documentation:
-[WAFV2.Client.put_managed_rule_set_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_managed_rule_set_versions)
+```python title="Method definition"
+def put_managed_rule_set_versions(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+    RecommendedVersion: str = ...,
+    VersionsToPublish: Mapping[str, VersionToPublishTypeDef] = ...,  # (2)
+) -> PutManagedRuleSetVersionsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[PutManagedRuleSetVersionsRequestRequestTypeDef](./type_defs.md#putmanagedrulesetversionsrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef) 
+3. See [:material-code-braces: PutManagedRuleSetVersionsResponseTypeDef](./type_defs.md#putmanagedrulesetversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
-- `RecommendedVersion`: `str`
-- `VersionsToPublish`: `Mapping`\[`str`,
-  [VersionToPublishTypeDef](./type_defs.md#versiontopublishtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutManagedRuleSetVersionsRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+}
 
-Returns
-[PutManagedRuleSetVersionsResponseTypeDef](./type_defs.md#putmanagedrulesetversionsresponsetypedef).
+parent.put_managed_rule_set_versions(**kwargs)
+```
 
-<a id="put\_permission\_policy"></a>
+1. See [:material-code-braces: PutManagedRuleSetVersionsRequestRequestTypeDef](./type_defs.md#putmanagedrulesetversionsrequestrequesttypedef) 
 
-### put_permission_policy
+### put\_permission\_policy
 
 Attaches an IAM policy to the specified resource.
 
-Type annotations for `boto3.client("wafv2").put_permission_policy` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").put_permission_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
 
-Boto3 documentation:
-[WAFV2.Client.put_permission_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.put_permission_policy)
+```python title="Method definition"
+def put_permission_policy(
+    self,
+    *,
+    ResourceArn: str,
+    Policy: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutPermissionPolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Policy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_permission_policy(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutPermissionPolicyRequestRequestTypeDef](./type_defs.md#putpermissionpolicyrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates tags with the specified Amazon Web Services resource.
 
-Type annotations for `boto3.client("wafv2").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
 
-Boto3 documentation:
-[WAFV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Disassociates tags from an Amazon Web Services resource.
 
-Type annotations for `boto3.client("wafv2").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
 
-Boto3 documentation:
-[WAFV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_ip\_set"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_ip_set
+### update\_ip\_set
 
-Updates the specified IPSet .
+Updates the specified  IPSet .
 
-Type annotations for `boto3.client("wafv2").update_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").update_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
 
-Boto3 documentation:
-[WAFV2.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_ip_set)
+```python title="Method definition"
+def update_ip_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    Addresses: Sequence[str],
+    LockToken: str,
+    Description: str = ...,
+) -> UpdateIPSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `Addresses`: `Sequence`\[`str`\] *(required)*
-- `LockToken`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateIPSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "Addresses": ...,
+    "LockToken": ...,
+}
 
-Returns
-[UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+parent.update_ip_set(**kwargs)
+```
 
-<a id="update\_managed\_rule\_set\_version\_expiry\_date"></a>
+1. See [:material-code-braces: UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef) 
 
-### update_managed_rule_set_version_expiry_date
+### update\_managed\_rule\_set\_version\_expiry\_date
 
 Updates the expiration information for your managed rule set.
 
-Type annotations for
-`boto3.client("wafv2").update_managed_rule_set_version_expiry_date` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").update_managed_rule_set_version_expiry_date` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_managed_rule_set_version_expiry_date)
 
-Boto3 documentation:
-[WAFV2.Client.update_managed_rule_set_version_expiry_date](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_managed_rule_set_version_expiry_date)
+```python title="Method definition"
+def update_managed_rule_set_version_expiry_date(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    LockToken: str,
+    VersionToExpire: str,
+    ExpiryTimestamp: Union[datetime, str],
+) -> UpdateManagedRuleSetVersionExpiryDateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydaterequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: UpdateManagedRuleSetVersionExpiryDateResponseTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `LockToken`: `str` *(required)*
-- `VersionToExpire`: `str` *(required)*
-- `ExpiryTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "LockToken": ...,
+    "VersionToExpire": ...,
+    "ExpiryTimestamp": ...,
+}
 
-Returns
-[UpdateManagedRuleSetVersionExpiryDateResponseTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydateresponsetypedef).
+parent.update_managed_rule_set_version_expiry_date(**kwargs)
+```
 
-<a id="update\_regex\_pattern\_set"></a>
+1. See [:material-code-braces: UpdateManagedRuleSetVersionExpiryDateRequestRequestTypeDef](./type_defs.md#updatemanagedrulesetversionexpirydaterequestrequesttypedef) 
 
-### update_regex_pattern_set
+### update\_regex\_pattern\_set
 
-Updates the specified RegexPatternSet .
+Updates the specified  RegexPatternSet .
 
-Type annotations for `boto3.client("wafv2").update_regex_pattern_set` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").update_regex_pattern_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
 
-Boto3 documentation:
-[WAFV2.Client.update_regex_pattern_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_regex_pattern_set)
+```python title="Method definition"
+def update_regex_pattern_set(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    RegularExpressionList: Sequence[RegexTypeDef],  # (2)
+    LockToken: str,
+    Description: str = ...,
+) -> UpdateRegexPatternSetResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRegexPatternSetRequestRequestTypeDef](./type_defs.md#updateregexpatternsetrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: RegexTypeDef](./type_defs.md#regextypedef) 
+3. See [:material-code-braces: UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `RegularExpressionList`:
-  `Sequence`\[[RegexTypeDef](./type_defs.md#regextypedef)\] *(required)*
-- `LockToken`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRegexPatternSetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "RegularExpressionList": ...,
+    "LockToken": ...,
+}
 
-Returns
-[UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
+parent.update_regex_pattern_set(**kwargs)
+```
 
-<a id="update\_rule\_group"></a>
+1. See [:material-code-braces: UpdateRegexPatternSetRequestRequestTypeDef](./type_defs.md#updateregexpatternsetrequestrequesttypedef) 
 
-### update_rule_group
+### update\_rule\_group
 
-Updates the specified RuleGroup .
+Updates the specified  RuleGroup .
 
-Type annotations for `boto3.client("wafv2").update_rule_group` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").update_rule_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
 
-Boto3 documentation:
-[WAFV2.Client.update_rule_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_rule_group)
+```python title="Method definition"
+def update_rule_group(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    VisibilityConfig: VisibilityConfigTypeDef,  # (2)
+    LockToken: str,
+    Description: str = ...,
+    Rules: Sequence[RuleTypeDef] = ...,  # (3)
+    CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (4)
+) -> UpdateRuleGroupResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
+3. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+4. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
+5. See [:material-code-braces: UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `VisibilityConfig`:
-  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
-  *(required)*
-- `LockToken`: `str` *(required)*
-- `Description`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Mapping`\[`str`,
-  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRuleGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "VisibilityConfig": ...,
+    "LockToken": ...,
+}
 
-Returns
-[UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
+parent.update_rule_group(**kwargs)
+```
 
-<a id="update\_web\_acl"></a>
+1. See [:material-code-braces: UpdateRuleGroupRequestRequestTypeDef](./type_defs.md#updaterulegrouprequestrequesttypedef) 
 
-### update_web_acl
+### update\_web\_acl
 
-Updates the specified WebACL .
+Updates the specified  WebACL .
 
-Type annotations for `boto3.client("wafv2").update_web_acl` method.
+Type annotations and code completion for `#!python boto3.client("wafv2").update_web_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
 
-Boto3 documentation:
-[WAFV2.Client.update_web_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.update_web_acl)
+```python title="Method definition"
+def update_web_acl(
+    self,
+    *,
+    Name: str,
+    Scope: ScopeType,  # (1)
+    Id: str,
+    DefaultAction: DefaultActionTypeDef,  # (2)
+    VisibilityConfig: VisibilityConfigTypeDef,  # (3)
+    LockToken: str,
+    Description: str = ...,
+    Rules: Sequence[RuleTypeDef] = ...,  # (4)
+    CustomResponseBodies: Mapping[str, CustomResponseBodyTypeDef] = ...,  # (5)
+    CaptchaConfig: CaptchaConfigTypeDef = ...,  # (6)
+) -> UpdateWebACLResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef).
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
+2. See [:material-code-braces: DefaultActionTypeDef](./type_defs.md#defaultactiontypedef) 
+3. See [:material-code-braces: VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef) 
+4. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
+5. See [:material-code-braces: CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef) 
+6. See [:material-code-braces: CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef) 
+7. See [:material-code-braces: UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [ScopeType](./literals.md#scopetype) *(required)*
-- `Id`: `str` *(required)*
-- `DefaultAction`: [DefaultActionTypeDef](./type_defs.md#defaultactiontypedef)
-  *(required)*
-- `VisibilityConfig`:
-  [VisibilityConfigTypeDef](./type_defs.md#visibilityconfigtypedef)
-  *(required)*
-- `LockToken`: `str` *(required)*
-- `Description`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CustomResponseBodies`: `Mapping`\[`str`,
-  [CustomResponseBodyTypeDef](./type_defs.md#customresponsebodytypedef)\]
-- `CaptchaConfig`: [CaptchaConfigTypeDef](./type_defs.md#captchaconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateWebACLRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Id": ...,
+    "DefaultAction": ...,
+    "VisibilityConfig": ...,
+    "LockToken": ...,
+}
 
-Returns
-[UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
+parent.update_web_acl(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWebACLRequestRequestTypeDef](./type_defs.md#updatewebaclrequestrequesttypedef) 
+
+
+
+

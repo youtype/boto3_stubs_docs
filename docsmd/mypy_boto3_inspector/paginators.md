@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-inspector-module"></a>
-
-# Paginators for boto3 Inspector module
+# Paginators
 
 > [Index](../README.md) > [Inspector](./README.md) > Paginators
 
-Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module
-[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
+!!! note ""
 
-- [Paginators for boto3 Inspector module](#paginators-for-boto3-inspector-module)
-  - [ListAssessmentRunAgentsPaginator](#listassessmentrunagentspaginator)
-  - [ListAssessmentRunsPaginator](#listassessmentrunspaginator)
-  - [ListAssessmentTargetsPaginator](#listassessmenttargetspaginator)
-  - [ListAssessmentTemplatesPaginator](#listassessmenttemplatespaginator)
-  - [ListEventSubscriptionsPaginator](#listeventsubscriptionspaginator)
-  - [ListExclusionsPaginator](#listexclusionspaginator)
-  - [ListFindingsPaginator](#listfindingspaginator)
-  - [ListRulesPackagesPaginator](#listrulespackagespaginator)
-  - [PreviewAgentsPaginator](#previewagentspaginator)
-
-<a id="listassessmentrunagentspaginator"></a>
+    Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+    type annotations stubs module [mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ## ListAssessmentRunAgentsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_assessment_run_agents")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_assessment_run_agents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator
@@ -38,29 +21,42 @@ def get_list_assessment_run_agents_paginator() -> ListAssessmentRunAgentsPaginat
     return Session().client("inspector").get_paginator("list_assessment_run_agents")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListAssessmentRunAgents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRunAgents)
 
-Arguments for `ListAssessmentRunAgentsPaginator.paginate` method:
+### paginate
 
-- `assessmentRunArn`: `str` *(required)*
-- `filter`: [AgentFilterTypeDef](./type_defs.md#agentfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssessmentRunAgentsPaginator.paginate` method.
 
-`ListAssessmentRunAgentsPaginator.paginate` returns
-`_PageIterator`\[[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assessmentRunArn: str,
+    filter: AgentFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssessmentRunAgentsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listassessmentrunspaginator"></a>
+1. See [:material-code-braces: AgentFilterTypeDef](./type_defs.md#agentfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentRunAgentsRequestListAssessmentRunAgentsPaginateTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssessmentRunAgentsRequestListAssessmentRunAgentsPaginateTypeDef](./type_defs.md#listassessmentrunagentsrequestlistassessmentrunagentspaginatetypedef) 
 ## ListAssessmentRunsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_assessment_runs")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_assessment_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListAssessmentRunsPaginator
@@ -69,30 +65,42 @@ def get_list_assessment_runs_paginator() -> ListAssessmentRunsPaginator:
     return Session().client("inspector").get_paginator("list_assessment_runs")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListAssessmentRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentRuns)
 
-Arguments for `ListAssessmentRunsPaginator.paginate` method:
+### paginate
 
-- `assessmentTemplateArns`: `Sequence`\[`str`\]
-- `filter`:
-  [AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssessmentRunsPaginator.paginate` method.
 
-`ListAssessmentRunsPaginator.paginate` returns
-`_PageIterator`\[[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assessmentTemplateArns: Sequence[str] = ...,
+    filter: AssessmentRunFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssessmentRunsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listassessmenttargetspaginator"></a>
+1. See [:material-code-braces: AssessmentRunFilterTypeDef](./type_defs.md#assessmentrunfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentRunsRequestListAssessmentRunsPaginateTypeDef = {  # (1)
+    "assessmentTemplateArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssessmentRunsRequestListAssessmentRunsPaginateTypeDef](./type_defs.md#listassessmentrunsrequestlistassessmentrunspaginatetypedef) 
 ## ListAssessmentTargetsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_assessment_targets")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_assessment_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListAssessmentTargetsPaginator
@@ -101,29 +109,41 @@ def get_list_assessment_targets_paginator() -> ListAssessmentTargetsPaginator:
     return Session().client("inspector").get_paginator("list_assessment_targets")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListAssessmentTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTargets)
 
-Arguments for `ListAssessmentTargetsPaginator.paginate` method:
+### paginate
 
-- `filter`:
-  [AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssessmentTargetsPaginator.paginate` method.
 
-`ListAssessmentTargetsPaginator.paginate` returns
-`_PageIterator`\[[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filter: AssessmentTargetFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssessmentTargetsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listassessmenttemplatespaginator"></a>
+1. See [:material-code-braces: AssessmentTargetFilterTypeDef](./type_defs.md#assessmenttargetfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentTargetsRequestListAssessmentTargetsPaginateTypeDef = {  # (1)
+    "filter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssessmentTargetsRequestListAssessmentTargetsPaginateTypeDef](./type_defs.md#listassessmenttargetsrequestlistassessmenttargetspaginatetypedef) 
 ## ListAssessmentTemplatesPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_assessment_templates")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_assessment_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListAssessmentTemplatesPaginator
@@ -132,30 +152,42 @@ def get_list_assessment_templates_paginator() -> ListAssessmentTemplatesPaginato
     return Session().client("inspector").get_paginator("list_assessment_templates")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListAssessmentTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListAssessmentTemplates)
 
-Arguments for `ListAssessmentTemplatesPaginator.paginate` method:
+### paginate
 
-- `assessmentTargetArns`: `Sequence`\[`str`\]
-- `filter`:
-  [AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssessmentTemplatesPaginator.paginate` method.
 
-`ListAssessmentTemplatesPaginator.paginate` returns
-`_PageIterator`\[[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assessmentTargetArns: Sequence[str] = ...,
+    filter: AssessmentTemplateFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssessmentTemplatesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listeventsubscriptionspaginator"></a>
+1. See [:material-code-braces: AssessmentTemplateFilterTypeDef](./type_defs.md#assessmenttemplatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssessmentTemplatesRequestListAssessmentTemplatesPaginateTypeDef = {  # (1)
+    "assessmentTargetArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssessmentTemplatesRequestListAssessmentTemplatesPaginateTypeDef](./type_defs.md#listassessmenttemplatesrequestlistassessmenttemplatespaginatetypedef) 
 ## ListEventSubscriptionsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_event_subscriptions")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_event_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListEventSubscriptionsPaginator
@@ -164,28 +196,40 @@ def get_list_event_subscriptions_paginator() -> ListEventSubscriptionsPaginator:
     return Session().client("inspector").get_paginator("list_event_subscriptions")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListEventSubscriptions)
 
-Arguments for `ListEventSubscriptionsPaginator.paginate` method:
+### paginate
 
-- `resourceArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEventSubscriptionsPaginator.paginate` method.
 
-`ListEventSubscriptionsPaginator.paginate` returns
-`_PageIterator`\[[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEventSubscriptionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listexclusionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEventSubscriptionsRequestListEventSubscriptionsPaginateTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEventSubscriptionsRequestListEventSubscriptionsPaginateTypeDef](./type_defs.md#listeventsubscriptionsrequestlisteventsubscriptionspaginatetypedef) 
 ## ListExclusionsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_exclusions")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_exclusions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListExclusionsPaginator
@@ -194,28 +238,40 @@ def get_list_exclusions_paginator() -> ListExclusionsPaginator:
     return Session().client("inspector").get_paginator("list_exclusions")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListExclusions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListExclusions)
 
-Arguments for `ListExclusionsPaginator.paginate` method:
+### paginate
 
-- `assessmentRunArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListExclusionsPaginator.paginate` method.
 
-`ListExclusionsPaginator.paginate` returns
-`_PageIterator`\[[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assessmentRunArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListExclusionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfindingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListExclusionsRequestListExclusionsPaginateTypeDef = {  # (1)
+    "assessmentRunArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListExclusionsRequestListExclusionsPaginateTypeDef](./type_defs.md#listexclusionsrequestlistexclusionspaginatetypedef) 
 ## ListFindingsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_findings")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_findings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListFindings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListFindingsPaginator
@@ -224,29 +280,42 @@ def get_list_findings_paginator() -> ListFindingsPaginator:
     return Session().client("inspector").get_paginator("list_findings")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListFindings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListFindings)
 
-Arguments for `ListFindingsPaginator.paginate` method:
+### paginate
 
-- `assessmentRunArns`: `Sequence`\[`str`\]
-- `filter`: [FindingFilterTypeDef](./type_defs.md#findingfiltertypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFindingsPaginator.paginate` method.
 
-`ListFindingsPaginator.paginate` returns
-`_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assessmentRunArns: Sequence[str] = ...,
+    filter: FindingFilterTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListFindingsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrulespackagespaginator"></a>
+1. See [:material-code-braces: FindingFilterTypeDef](./type_defs.md#findingfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestListFindingsPaginateTypeDef = {  # (1)
+    "assessmentRunArns": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef) 
 ## ListRulesPackagesPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("list_rules_packages")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("list_rules_packages")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import ListRulesPackagesPaginator
@@ -255,27 +324,39 @@ def get_list_rules_packages_paginator() -> ListRulesPackagesPaginator:
     return Session().client("inspector").get_paginator("list_rules_packages")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.ListRulesPackages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.ListRulesPackages)
 
-Arguments for `ListRulesPackagesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRulesPackagesPaginator.paginate` method.
 
-`ListRulesPackagesPaginator.paginate` returns
-`_PageIterator`\[[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRulesPackagesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="previewagentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRulesPackagesRequestListRulesPackagesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRulesPackagesRequestListRulesPackagesPaginateTypeDef](./type_defs.md#listrulespackagesrequestlistrulespackagespaginatetypedef) 
 ## PreviewAgentsPaginator
 
-Type annotations for
-`boto3.client("inspector").get_paginator("preview_agents")`.
+Type annotations and code completion for `#!python boto3.client("inspector").get_paginator("preview_agents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_inspector.paginator import PreviewAgentsPaginator
@@ -284,14 +365,31 @@ def get_preview_agents_paginator() -> PreviewAgentsPaginator:
     return Session().client("inspector").get_paginator("preview_agents")
 ```
 
-Boto3 documentation:
-[Inspector.Paginator.PreviewAgents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Paginator.PreviewAgents)
 
-Arguments for `PreviewAgentsPaginator.paginate` method:
+### paginate
 
-- `previewAgentsArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python PreviewAgentsPaginator.paginate` method.
 
-`PreviewAgentsPaginator.paginate` returns
-`_PageIterator`\[[PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    previewAgentsArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[PreviewAgentsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PreviewAgentsRequestPreviewAgentsPaginateTypeDef = {  # (1)
+    "previewAgentsArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: PreviewAgentsRequestPreviewAgentsPaginateTypeDef](./type_defs.md#previewagentsrequestpreviewagentspaginatetypedef) 

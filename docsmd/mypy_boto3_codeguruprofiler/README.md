@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-codeguruprofiler-module"></a>
-
-# Type annotations for boto3 CodeGuruProfiler module
+#  CodeGuruProfiler module
 
 > [Index](../README.md) > CodeGuruProfiler
 
-Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
-type annotations stubs module
-[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+!!! note ""
 
-- [Type annotations for boto3 CodeGuruProfiler module](#type-annotations-for-boto3-codeguruprofiler-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CodeGuruProfilerClient](#codeguruprofilerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+    type annotations stubs module [mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CodeGuruProfiler`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[codeguruprofiler]'
 python -m pip install mypy-boto3-codeguruprofiler
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,96 +42,58 @@ python -m pip install mypy-boto3-codeguruprofiler
 python -m pip uninstall -y mypy-boto3-codeguruprofiler
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="codeguruprofilerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CodeGuruProfilerClient
 
-Type annotations for `boto3.client("codeguruprofiler")` as
-[CodeGuruProfilerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("codeguruprofiler")` as [CodeGuruProfilerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_codeguruprofiler.client import CodeGuruProfilerClient
+
+def get_client() -> CodeGuruProfilerClient:
+    return Session().cleint("codeguruprofiler")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_notification_channels](./client.md#add_notification_channels)
-- [batch_get_frame_metric_data](./client.md#batch_get_frame_metric_data)
-- [can_paginate](./client.md#can_paginate)
-- [configure_agent](./client.md#configure_agent)
-- [create_profiling_group](./client.md#create_profiling_group)
-- [delete_profiling_group](./client.md#delete_profiling_group)
-- [describe_profiling_group](./client.md#describe_profiling_group)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_findings_report_account_summary](./client.md#get_findings_report_account_summary)
-- [get_notification_configuration](./client.md#get_notification_configuration)
-- [get_paginator](./client.md#get_paginator)
-- [get_policy](./client.md#get_policy)
-- [get_profile](./client.md#get_profile)
-- [get_recommendations](./client.md#get_recommendations)
-- [list_findings_reports](./client.md#list_findings_reports)
-- [list_profile_times](./client.md#list_profile_times)
-- [list_profiling_groups](./client.md#list_profiling_groups)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [post_agent_profile](./client.md#post_agent_profile)
-- [put_permission](./client.md#put_permission)
-- [remove_notification_channel](./client.md#remove_notification_channel)
-- [remove_permission](./client.md#remove_permission)
-- [submit_feedback](./client.md#submit_feedback)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_profiling_group](./client.md#update_profiling_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CodeGuruProfilerClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("codeguruprofiler").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("codeguruprofiler").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codeguruprofiler.paginator import ListProfileTimesPaginator, ...
+from mypy_boto3_codeguruprofiler.paginator import ListProfileTimesPaginator
+
+def get_list_profile_times_paginator() -> ListProfileTimesPaginator:
+    return Session().client("codeguruprofiler").get_paginator("list_profile_times"))
 ```
 
 - [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codeguruprofiler.literals import ActionGroupType
 
-```python
-from mypy_boto3_codeguruprofiler.literals import ActionGroupType, ...
+def get_value() -> ActionGroupType:
+    return "agentPermissions"
 ```
 
 - [ActionGroupType](./literals.md#actiongrouptype)
@@ -171,17 +111,21 @@ from mypy_boto3_codeguruprofiler.literals import ActionGroupType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestRequestTypeDef
 
-```python
-from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequestRequestTypeDef, ...
+def get_value() -> AddNotificationChannelsRequestRequestTypeDef:
+    return {
+        "channels": ...,
+        "profilingGroupName": ...,
+    }
 ```
 
 - [AddNotificationChannelsRequestRequestTypeDef](./type_defs.md#addnotificationchannelsrequestrequesttypedef)
@@ -216,6 +160,7 @@ from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequest
 - [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef)
 - [ListFindingsReportsRequestRequestTypeDef](./type_defs.md#listfindingsreportsrequestrequesttypedef)
 - [ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef)
+- [ListProfileTimesRequestListProfileTimesPaginateTypeDef](./type_defs.md#listprofiletimesrequestlistprofiletimespaginatetypedef)
 - [ListProfileTimesRequestRequestTypeDef](./type_defs.md#listprofiletimesrequestrequesttypedef)
 - [ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef)
 - [ListProfilingGroupsRequestRequestTypeDef](./type_defs.md#listprofilinggroupsrequestrequesttypedef)
@@ -246,3 +191,4 @@ from mypy_boto3_codeguruprofiler.type_defs import AddNotificationChannelsRequest
 - [UpdateProfilingGroupRequestRequestTypeDef](./type_defs.md#updateprofilinggrouprequestrequesttypedef)
 - [UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef)
 - [UserFeedbackTypeDef](./type_defs.md#userfeedbacktypedef)
+

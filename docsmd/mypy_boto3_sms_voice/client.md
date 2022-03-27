@@ -1,40 +1,18 @@
-<a id="pinpointsmsvoiceclient-for-boto3-pinpointsmsvoice-module"></a>
+# PinpointSMSVoiceClient
 
-# PinpointSMSVoiceClient for boto3 PinpointSMSVoice module
+> [Index](../README.md) > [PinpointSMSVoice](./README.md) > PinpointSMSVoiceClient
 
-> [Index](../README.md) > [PinpointSMSVoice](./README.md) >
-> PinpointSMSVoiceClient
+!!! note ""
 
-Auto-generated documentation for
-[PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice)
-type annotations stubs module
-[mypy-boto3-sms-voice](https://pypi.org/project/mypy-boto3-sms-voice/).
-
-- [PinpointSMSVoiceClient for boto3 PinpointSMSVoice module](#pinpointsmsvoiceclient-for-boto3-pinpointsmsvoice-module)
-  - [PinpointSMSVoiceClient](#pinpointsmsvoiceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_configuration_set](#create_configuration_set)
-    - [create_configuration_set_event_destination](#create_configuration_set_event_destination)
-    - [delete_configuration_set](#delete_configuration_set)
-    - [delete_configuration_set_event_destination](#delete_configuration_set_event_destination)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_configuration_set_event_destinations](#get_configuration_set_event_destinations)
-    - [list_configuration_sets](#list_configuration_sets)
-    - [send_voice_message](#send_voice_message)
-    - [update_configuration_set_event_destination](#update_configuration_set_event_destination)
-
-<a id="pinpointsmsvoiceclient"></a>
+    Auto-generated documentation for [PinpointSMSVoice](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice)
+    type annotations stubs module [mypy-boto3-sms-voice](https://pypi.org/project/mypy-boto3-sms-voice/).
 
 ## PinpointSMSVoiceClient
 
-Type annotations for `boto3.client("sms-voice")`
+Type annotations and code completion for `#!python boto3.client("sms-voice")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sms_voice.client import PinpointSMSVoiceClient
 
@@ -42,269 +20,320 @@ def get_sms-voice_client() -> PinpointSMSVoiceClient:
     return Session().client("sms-voice")
 ```
 
-Boto3 documentation:
-[PinpointSMSVoice.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sms-voice").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sms-voice")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyExistsException,
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalServiceErrorException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sms_voice.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyExistsException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyExistsException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServiceErrorException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PinpointSMSVoiceClient exceptions.
-
-Type annotations for `boto3.client("sms-voice").exceptions` method.
-
-Boto3 documentation:
-[PinpointSMSVoice.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sms-voice").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.can_paginate)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_configuration\_set"></a>
-
-### create_configuration_set
+### create\_configuration\_set
 
 Create a new configuration set.
 
-Type annotations for `boto3.client("sms-voice").create_configuration_set`
-method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").create_configuration_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.create_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.create_configuration_set)
+```python title="Method definition"
+def create_configuration_set(
+    self,
+    *,
+    ConfigurationSetName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationSetRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_configuration_set(**kwargs)
+```
 
-<a id="create\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: CreateConfigurationSetRequestRequestTypeDef](./type_defs.md#createconfigurationsetrequestrequesttypedef) 
 
-### create_configuration_set_event_destination
+### create\_configuration\_set\_event\_destination
 
 Create a new event destination in a configuration set.
 
-Type annotations for
-`boto3.client("sms-voice").create_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").create_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.create_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.create_configuration_set_event_destination)
+```python title="Method definition"
+def create_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestination: EventDestinationDefinitionTypeDef = ...,  # (1)
+    EventDestinationName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef).
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
-- `EventDestinationName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_configuration_set_event_destination(**kwargs)
+```
 
-<a id="delete\_configuration\_set"></a>
+1. See [:material-code-braces: CreateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#createconfigurationseteventdestinationrequestrequesttypedef) 
 
-### delete_configuration_set
+### delete\_configuration\_set
 
 Deletes an existing configuration set.
 
-Type annotations for `boto3.client("sms-voice").delete_configuration_set`
-method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").delete_configuration_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.delete_configuration_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set)
+```python title="Method definition"
+def delete_configuration_set(
+    self,
+    *,
+    ConfigurationSetName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationSetRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_configuration_set(**kwargs)
+```
 
-<a id="delete\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: DeleteConfigurationSetRequestRequestTypeDef](./type_defs.md#deleteconfigurationsetrequestrequesttypedef) 
 
-### delete_configuration_set_event_destination
+### delete\_configuration\_set\_event\_destination
 
 Deletes an event destination in a configuration set.
 
-Type annotations for
-`boto3.client("sms-voice").delete_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").delete_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.delete_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.delete_configuration_set_event_destination)
+```python title="Method definition"
+def delete_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestinationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+    "EventDestinationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_configuration_set_event_destination(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#deleteconfigurationseteventdestinationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sms-voice").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_configuration\_set\_event\_destinations"></a>
-
-### get_configuration_set_event_destinations
+### get\_configuration\_set\_event\_destinations
 
 Obtain information about an event destination, including the types of events it
 reports, the Amazon Resource Name (ARN) of the destination, and the name of the
 event destination.
 
-Type annotations for
-`boto3.client("sms-voice").get_configuration_set_event_destinations` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").get_configuration_set_event_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.get_configuration_set_event_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.get_configuration_set_event_destinations)
+```python title="Method definition"
+def get_configuration_set_event_destinations(
+    self,
+    *,
+    ConfigurationSetName: str,
+) -> GetConfigurationSetEventDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef).
+1. See [:material-code-braces: GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConfigurationSetEventDestinationsRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+}
 
-Returns
-[GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
+parent.get_configuration_set_event_destinations(**kwargs)
+```
 
-<a id="list\_configuration\_sets"></a>
+1. See [:material-code-braces: GetConfigurationSetEventDestinationsRequestRequestTypeDef](./type_defs.md#getconfigurationseteventdestinationsrequestrequesttypedef) 
 
-### list_configuration_sets
+### list\_configuration\_sets
 
 List all of the configuration sets associated with your Amazon Pinpoint account
 in the current region.
 
-Type annotations for `boto3.client("sms-voice").list_configuration_sets`
-method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").list_configuration_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.list_configuration_sets)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.list_configuration_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.list_configuration_sets)
+```python title="Method definition"
+def list_configuration_sets(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: str = ...,
+) -> ListConfigurationSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationSetsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
+parent.list_configuration_sets(**kwargs)
+```
 
-<a id="send\_voice\_message"></a>
+1. See [:material-code-braces: ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef) 
 
-### send_voice_message
+### send\_voice\_message
 
 Create a new voice message and send it to a recipient's phone number.
 
-Type annotations for `boto3.client("sms-voice").send_voice_message` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").send_voice_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.send_voice_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.send_voice_message)
+```python title="Method definition"
+def send_voice_message(
+    self,
+    *,
+    CallerId: str = ...,
+    ConfigurationSetName: str = ...,
+    Content: VoiceMessageContentTypeDef = ...,  # (1)
+    DestinationPhoneNumber: str = ...,
+    OriginationPhoneNumber: str = ...,
+) -> SendVoiceMessageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SendVoiceMessageRequestRequestTypeDef](./type_defs.md#sendvoicemessagerequestrequesttypedef).
+1. See [:material-code-braces: VoiceMessageContentTypeDef](./type_defs.md#voicemessagecontenttypedef) 
+2. See [:material-code-braces: SendVoiceMessageResponseTypeDef](./type_defs.md#sendvoicemessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CallerId`: `str`
-- `ConfigurationSetName`: `str`
-- `Content`:
-  [VoiceMessageContentTypeDef](./type_defs.md#voicemessagecontenttypedef)
-- `DestinationPhoneNumber`: `str`
-- `OriginationPhoneNumber`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendVoiceMessageRequestRequestTypeDef = {  # (1)
+    "CallerId": ...,
+}
 
-Returns
-[SendVoiceMessageResponseTypeDef](./type_defs.md#sendvoicemessageresponsetypedef).
+parent.send_voice_message(**kwargs)
+```
 
-<a id="update\_configuration\_set\_event\_destination"></a>
+1. See [:material-code-braces: SendVoiceMessageRequestRequestTypeDef](./type_defs.md#sendvoicemessagerequestrequesttypedef) 
 
-### update_configuration_set_event_destination
+### update\_configuration\_set\_event\_destination
 
 Update an event destination in a configuration set.
 
-Type annotations for
-`boto3.client("sms-voice").update_configuration_set_event_destination` method.
+Type annotations and code completion for `#!python boto3.client("sms-voice").update_configuration_set_event_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
 
-Boto3 documentation:
-[PinpointSMSVoice.Client.update_configuration_set_event_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms-voice.html#PinpointSMSVoice.Client.update_configuration_set_event_destination)
+```python title="Method definition"
+def update_configuration_set_event_destination(
+    self,
+    *,
+    ConfigurationSetName: str,
+    EventDestinationName: str,
+    EventDestination: EventDestinationDefinitionTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef).
+1. See [:material-code-braces: EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef) 
 
-Keyword-only arguments:
 
-- `ConfigurationSetName`: `str` *(required)*
-- `EventDestinationName`: `str` *(required)*
-- `EventDestination`:
-  [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationSetEventDestinationRequestRequestTypeDef = {  # (1)
+    "ConfigurationSetName": ...,
+    "EventDestinationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_configuration_set_event_destination(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef) 
+
+
+
+

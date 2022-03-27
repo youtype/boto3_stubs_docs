@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-route53-module"></a>
-
-# Type annotations for boto3 Route53 module
+#  Route53 module
 
 > [Index](../README.md) > Route53
 
-Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module
-[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
+!!! note ""
 
-- [Type annotations for boto3 Route53 module](#type-annotations-for-boto3-route53-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Route53Client](#route53client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Route53`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[route53]'
 python -m pip install mypy-boto3-route53
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,180 +42,37 @@ python -m pip install mypy-boto3-route53
 python -m pip uninstall -y mypy-boto3-route53
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="route53client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Route53Client
 
-Type annotations for `boto3.client("route53")` as [Route53Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("route53")` as [Route53Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_route53.client import Route53Client
+
+def get_client() -> Route53Client:
+    return Session().cleint("route53")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [activate_key_signing_key](./client.md#activate_key_signing_key)
-- [associate_vpc_with_hosted_zone](./client.md#associate_vpc_with_hosted_zone)
-- [can_paginate](./client.md#can_paginate)
-- [change_resource_record_sets](./client.md#change_resource_record_sets)
-- [change_tags_for_resource](./client.md#change_tags_for_resource)
-- [create_health_check](./client.md#create_health_check)
-- [create_hosted_zone](./client.md#create_hosted_zone)
-- [create_key_signing_key](./client.md#create_key_signing_key)
-- [create_query_logging_config](./client.md#create_query_logging_config)
-- [create_reusable_delegation_set](./client.md#create_reusable_delegation_set)
-- [create_traffic_policy](./client.md#create_traffic_policy)
-- [create_traffic_policy_instance](./client.md#create_traffic_policy_instance)
-- [create_traffic_policy_version](./client.md#create_traffic_policy_version)
-- [create_vpc_association_authorization](./client.md#create_vpc_association_authorization)
-- [deactivate_key_signing_key](./client.md#deactivate_key_signing_key)
-- [delete_health_check](./client.md#delete_health_check)
-- [delete_hosted_zone](./client.md#delete_hosted_zone)
-- [delete_key_signing_key](./client.md#delete_key_signing_key)
-- [delete_query_logging_config](./client.md#delete_query_logging_config)
-- [delete_reusable_delegation_set](./client.md#delete_reusable_delegation_set)
-- [delete_traffic_policy](./client.md#delete_traffic_policy)
-- [delete_traffic_policy_instance](./client.md#delete_traffic_policy_instance)
-- [delete_vpc_association_authorization](./client.md#delete_vpc_association_authorization)
-- [disable_hosted_zone_dnssec](./client.md#disable_hosted_zone_dnssec)
-- [disassociate_vpc_from_hosted_zone](./client.md#disassociate_vpc_from_hosted_zone)
-- [enable_hosted_zone_dnssec](./client.md#enable_hosted_zone_dnssec)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account_limit](./client.md#get_account_limit)
-- [get_change](./client.md#get_change)
-- [get_checker_ip_ranges](./client.md#get_checker_ip_ranges)
-- [get_dnssec](./client.md#get_dnssec)
-- [get_geo_location](./client.md#get_geo_location)
-- [get_health_check](./client.md#get_health_check)
-- [get_health_check_count](./client.md#get_health_check_count)
-- [get_health_check_last_failure_reason](./client.md#get_health_check_last_failure_reason)
-- [get_health_check_status](./client.md#get_health_check_status)
-- [get_hosted_zone](./client.md#get_hosted_zone)
-- [get_hosted_zone_count](./client.md#get_hosted_zone_count)
-- [get_hosted_zone_limit](./client.md#get_hosted_zone_limit)
-- [get_paginator](./client.md#get_paginator)
-- [get_query_logging_config](./client.md#get_query_logging_config)
-- [get_reusable_delegation_set](./client.md#get_reusable_delegation_set)
-- [get_reusable_delegation_set_limit](./client.md#get_reusable_delegation_set_limit)
-- [get_traffic_policy](./client.md#get_traffic_policy)
-- [get_traffic_policy_instance](./client.md#get_traffic_policy_instance)
-- [get_traffic_policy_instance_count](./client.md#get_traffic_policy_instance_count)
-- [get_waiter](./client.md#get_waiter)
-- [list_geo_locations](./client.md#list_geo_locations)
-- [list_health_checks](./client.md#list_health_checks)
-- [list_hosted_zones](./client.md#list_hosted_zones)
-- [list_hosted_zones_by_name](./client.md#list_hosted_zones_by_name)
-- [list_hosted_zones_by_vpc](./client.md#list_hosted_zones_by_vpc)
-- [list_query_logging_configs](./client.md#list_query_logging_configs)
-- [list_resource_record_sets](./client.md#list_resource_record_sets)
-- [list_reusable_delegation_sets](./client.md#list_reusable_delegation_sets)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_tags_for_resources](./client.md#list_tags_for_resources)
-- [list_traffic_policies](./client.md#list_traffic_policies)
-- [list_traffic_policy_instances](./client.md#list_traffic_policy_instances)
-- [list_traffic_policy_instances_by_hosted_zone](./client.md#list_traffic_policy_instances_by_hosted_zone)
-- [list_traffic_policy_instances_by_policy](./client.md#list_traffic_policy_instances_by_policy)
-- [list_traffic_policy_versions](./client.md#list_traffic_policy_versions)
-- [list_vpc_association_authorizations](./client.md#list_vpc_association_authorizations)
-- [test_dns_answer](./client.md#test_dns_answer)
-- [update_health_check](./client.md#update_health_check)
-- [update_hosted_zone_comment](./client.md#update_hosted_zone_comment)
-- [update_traffic_policy_comment](./client.md#update_traffic_policy_comment)
-- [update_traffic_policy_instance](./client.md#update_traffic_policy_instance)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Route53Client [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModification
-- ConflictingDomainExists
-- ConflictingTypes
-- DNSSECNotFound
-- DelegationSetAlreadyCreated
-- DelegationSetAlreadyReusable
-- DelegationSetInUse
-- DelegationSetNotAvailable
-- DelegationSetNotReusable
-- HealthCheckAlreadyExists
-- HealthCheckInUse
-- HealthCheckVersionMismatch
-- HostedZoneAlreadyExists
-- HostedZoneNotEmpty
-- HostedZoneNotFound
-- HostedZoneNotPrivate
-- HostedZonePartiallyDelegated
-- IncompatibleVersion
-- InsufficientCloudWatchLogsResourcePolicy
-- InvalidArgument
-- InvalidChangeBatch
-- InvalidDomainName
-- InvalidInput
-- InvalidKMSArn
-- InvalidKeySigningKeyName
-- InvalidKeySigningKeyStatus
-- InvalidPaginationToken
-- InvalidSigningStatus
-- InvalidTrafficPolicyDocument
-- InvalidVPCId
-- KeySigningKeyAlreadyExists
-- KeySigningKeyInParentDSRecord
-- KeySigningKeyInUse
-- KeySigningKeyWithActiveStatusNotFound
-- LastVPCAssociation
-- LimitsExceeded
-- NoSuchChange
-- NoSuchCloudWatchLogsLogGroup
-- NoSuchDelegationSet
-- NoSuchGeoLocation
-- NoSuchHealthCheck
-- NoSuchHostedZone
-- NoSuchKeySigningKey
-- NoSuchQueryLoggingConfig
-- NoSuchTrafficPolicy
-- NoSuchTrafficPolicyInstance
-- NotAuthorizedException
-- PriorRequestNotComplete
-- PublicZoneVPCAssociation
-- QueryLoggingConfigAlreadyExists
-- ThrottlingException
-- TooManyHealthChecks
-- TooManyHostedZones
-- TooManyKeySigningKeys
-- TooManyTrafficPolicies
-- TooManyTrafficPolicyInstances
-- TooManyTrafficPolicyVersionsForCurrentPolicy
-- TooManyVPCAssociationAuthorizations
-- TrafficPolicyAlreadyExists
-- TrafficPolicyInUse
-- TrafficPolicyInstanceAlreadyExists
-- VPCAssociationAuthorizationNotFound
-- VPCAssociationNotFound
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("route53").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_route53.paginator import ListHealthChecksPaginator, ...
+from mypy_boto3_route53.paginator import ListHealthChecksPaginator
+
+def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
+    return Session().client("route53").get_paginator("list_health_checks"))
 ```
 
 - [ListHealthChecksPaginator](./paginators.md#listhealthcheckspaginator)
@@ -247,31 +81,40 @@ from mypy_boto3_route53.paginator import ListHealthChecksPaginator, ...
 - [ListResourceRecordSetsPaginator](./paginators.md#listresourcerecordsetspaginator)
 - [ListVPCAssociationAuthorizationsPaginator](./paginators.md#listvpcassociationauthorizationspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("route53").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("route53").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter, ...
+from mypy_boto3_route53.waiter import ResourceRecordSetsChangedWaiter
+
+def get_resource_record_sets_changed_waiter() -> ResourceRecordSetsChangedWaiter:
+    return Session().client("route53").get_waiter("resource_record_sets_changed")
 ```
 
 - [ResourceRecordSetsChangedWaiter](./waiters.md#resourcerecordsetschangedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53.literals import AccountLimitTypeType
 
-```python
-from mypy_boto3_route53.literals import AccountLimitTypeType, ...
+def get_value() -> AccountLimitTypeType:
+    return "MAX_HEALTH_CHECKS_BY_OWNER"
 ```
 
 - [AccountLimitTypeType](./literals.md#accountlimittypetype)
@@ -303,17 +146,21 @@ from mypy_boto3_route53.literals import AccountLimitTypeType, ...
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53.type_defs import AccountLimitTypeDef
 
-```python
-from mypy_boto3_route53.type_defs import AccountLimitTypeDef, ...
+def get_value() -> AccountLimitTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
 - [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
@@ -374,6 +221,7 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef, ...
 - [GetAccountLimitRequestRequestTypeDef](./type_defs.md#getaccountlimitrequestrequesttypedef)
 - [GetAccountLimitResponseTypeDef](./type_defs.md#getaccountlimitresponsetypedef)
 - [GetChangeRequestRequestTypeDef](./type_defs.md#getchangerequestrequesttypedef)
+- [GetChangeRequestResourceRecordSetsChangedWaitTypeDef](./type_defs.md#getchangerequestresourcerecordsetschangedwaittypedef)
 - [GetChangeResponseTypeDef](./type_defs.md#getchangeresponsetypedef)
 - [GetCheckerIpRangesResponseTypeDef](./type_defs.md#getcheckeriprangesresponsetypedef)
 - [GetDNSSECRequestRequestTypeDef](./type_defs.md#getdnssecrequestrequesttypedef)
@@ -415,16 +263,20 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef, ...
 - [LinkedServiceTypeDef](./type_defs.md#linkedservicetypedef)
 - [ListGeoLocationsRequestRequestTypeDef](./type_defs.md#listgeolocationsrequestrequesttypedef)
 - [ListGeoLocationsResponseTypeDef](./type_defs.md#listgeolocationsresponsetypedef)
+- [ListHealthChecksRequestListHealthChecksPaginateTypeDef](./type_defs.md#listhealthchecksrequestlisthealthcheckspaginatetypedef)
 - [ListHealthChecksRequestRequestTypeDef](./type_defs.md#listhealthchecksrequestrequesttypedef)
 - [ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)
 - [ListHostedZonesByNameRequestRequestTypeDef](./type_defs.md#listhostedzonesbynamerequestrequesttypedef)
 - [ListHostedZonesByNameResponseTypeDef](./type_defs.md#listhostedzonesbynameresponsetypedef)
 - [ListHostedZonesByVPCRequestRequestTypeDef](./type_defs.md#listhostedzonesbyvpcrequestrequesttypedef)
 - [ListHostedZonesByVPCResponseTypeDef](./type_defs.md#listhostedzonesbyvpcresponsetypedef)
+- [ListHostedZonesRequestListHostedZonesPaginateTypeDef](./type_defs.md#listhostedzonesrequestlisthostedzonespaginatetypedef)
 - [ListHostedZonesRequestRequestTypeDef](./type_defs.md#listhostedzonesrequestrequesttypedef)
 - [ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)
+- [ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef](./type_defs.md#listqueryloggingconfigsrequestlistqueryloggingconfigspaginatetypedef)
 - [ListQueryLoggingConfigsRequestRequestTypeDef](./type_defs.md#listqueryloggingconfigsrequestrequesttypedef)
 - [ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)
+- [ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef](./type_defs.md#listresourcerecordsetsrequestlistresourcerecordsetspaginatetypedef)
 - [ListResourceRecordSetsRequestRequestTypeDef](./type_defs.md#listresourcerecordsetsrequestrequesttypedef)
 - [ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)
 - [ListReusableDelegationSetsRequestRequestTypeDef](./type_defs.md#listreusabledelegationsetsrequestrequesttypedef)
@@ -443,6 +295,7 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef, ...
 - [ListTrafficPolicyInstancesResponseTypeDef](./type_defs.md#listtrafficpolicyinstancesresponsetypedef)
 - [ListTrafficPolicyVersionsRequestRequestTypeDef](./type_defs.md#listtrafficpolicyversionsrequestrequesttypedef)
 - [ListTrafficPolicyVersionsResponseTypeDef](./type_defs.md#listtrafficpolicyversionsresponsetypedef)
+- [ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestlistvpcassociationauthorizationspaginatetypedef)
 - [ListVPCAssociationAuthorizationsRequestRequestTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestrequesttypedef)
 - [ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -469,3 +322,4 @@ from mypy_boto3_route53.type_defs import AccountLimitTypeDef, ...
 - [UpdateTrafficPolicyInstanceResponseTypeDef](./type_defs.md#updatetrafficpolicyinstanceresponsetypedef)
 - [VPCTypeDef](./type_defs.md#vpctypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

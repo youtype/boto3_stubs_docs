@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-route53-module"></a>
-
-# Paginators for boto3 Route53 module
+# Paginators
 
 > [Index](../README.md) > [Route53](./README.md) > Paginators
 
-Auto-generated documentation for
-[Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
-type annotations stubs module
-[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
+!!! note ""
 
-- [Paginators for boto3 Route53 module](#paginators-for-boto3-route53-module)
-  - [ListHealthChecksPaginator](#listhealthcheckspaginator)
-  - [ListHostedZonesPaginator](#listhostedzonespaginator)
-  - [ListQueryLoggingConfigsPaginator](#listqueryloggingconfigspaginator)
-  - [ListResourceRecordSetsPaginator](#listresourcerecordsetspaginator)
-  - [ListVPCAssociationAuthorizationsPaginator](#listvpcassociationauthorizationspaginator)
-
-<a id="listhealthcheckspaginator"></a>
+    Auto-generated documentation for [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
+    type annotations stubs module [mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 ## ListHealthChecksPaginator
 
-Type annotations for
-`boto3.client("route53").get_paginator("list_health_checks")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_health_checks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.paginator import ListHealthChecksPaginator
@@ -34,27 +21,39 @@ def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
     return Session().client("route53").get_paginator("list_health_checks")
 ```
 
-Boto3 documentation:
-[Route53.Paginator.ListHealthChecks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHealthChecks)
 
-Arguments for `ListHealthChecksPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHealthChecksPaginator.paginate` method.
 
-`ListHealthChecksPaginator.paginate` returns
-`_PageIterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListHealthChecksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listhostedzonespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHealthChecksRequestListHealthChecksPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHealthChecksRequestListHealthChecksPaginateTypeDef](./type_defs.md#listhealthchecksrequestlisthealthcheckspaginatetypedef) 
 ## ListHostedZonesPaginator
 
-Type annotations for
-`boto3.client("route53").get_paginator("list_hosted_zones")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_hosted_zones")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.paginator import ListHostedZonesPaginator
@@ -63,28 +62,40 @@ def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
     return Session().client("route53").get_paginator("list_hosted_zones")
 ```
 
-Boto3 documentation:
-[Route53.Paginator.ListHostedZones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListHostedZones)
 
-Arguments for `ListHostedZonesPaginator.paginate` method:
+### paginate
 
-- `DelegationSetId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHostedZonesPaginator.paginate` method.
 
-`ListHostedZonesPaginator.paginate` returns
-`_PageIterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DelegationSetId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListHostedZonesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqueryloggingconfigspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHostedZonesRequestListHostedZonesPaginateTypeDef = {  # (1)
+    "DelegationSetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHostedZonesRequestListHostedZonesPaginateTypeDef](./type_defs.md#listhostedzonesrequestlisthostedzonespaginatetypedef) 
 ## ListQueryLoggingConfigsPaginator
 
-Type annotations for
-`boto3.client("route53").get_paginator("list_query_logging_configs")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_query_logging_configs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.paginator import ListQueryLoggingConfigsPaginator
@@ -93,28 +104,40 @@ def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginat
     return Session().client("route53").get_paginator("list_query_logging_configs")
 ```
 
-Boto3 documentation:
-[Route53.Paginator.ListQueryLoggingConfigs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListQueryLoggingConfigs)
 
-Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
+### paginate
 
-- `HostedZoneId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueryLoggingConfigsPaginator.paginate` method.
 
-`ListQueryLoggingConfigsPaginator.paginate` returns
-`_PageIterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HostedZoneId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQueryLoggingConfigsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listresourcerecordsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueryLoggingConfigsRequestListQueryLoggingConfigsPaginateTypeDef](./type_defs.md#listqueryloggingconfigsrequestlistqueryloggingconfigspaginatetypedef) 
 ## ListResourceRecordSetsPaginator
 
-Type annotations for
-`boto3.client("route53").get_paginator("list_resource_record_sets")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_resource_record_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.paginator import ListResourceRecordSetsPaginator
@@ -123,28 +146,40 @@ def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator
     return Session().client("route53").get_paginator("list_resource_record_sets")
 ```
 
-Boto3 documentation:
-[Route53.Paginator.ListResourceRecordSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListResourceRecordSets)
 
-Arguments for `ListResourceRecordSetsPaginator.paginate` method:
+### paginate
 
-- `HostedZoneId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceRecordSetsPaginator.paginate` method.
 
-`ListResourceRecordSetsPaginator.paginate` returns
-`_PageIterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HostedZoneId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceRecordSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvpcassociationauthorizationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceRecordSetsRequestListResourceRecordSetsPaginateTypeDef](./type_defs.md#listresourcerecordsetsrequestlistresourcerecordsetspaginatetypedef) 
 ## ListVPCAssociationAuthorizationsPaginator
 
-Type annotations for
-`boto3.client("route53").get_paginator("list_vpc_association_authorizations")`.
+Type annotations and code completion for `#!python boto3.client("route53").get_paginator("list_vpc_association_authorizations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_route53.paginator import ListVPCAssociationAuthorizationsPaginator
@@ -153,15 +188,32 @@ def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAut
     return Session().client("route53").get_paginator("list_vpc_association_authorizations")
 ```
 
-Boto3 documentation:
-[Route53.Paginator.ListVPCAssociationAuthorizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53.Paginator.ListVPCAssociationAuthorizations)
 
-Arguments for `ListVPCAssociationAuthorizationsPaginator.paginate` method:
+### paginate
 
-- `HostedZoneId`: `str` *(required)*
-- `MaxResults`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVPCAssociationAuthorizationsPaginator.paginate` method.
 
-`ListVPCAssociationAuthorizationsPaginator.paginate` returns
-`_PageIterator`\[[ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HostedZoneId: str,
+    MaxResults: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVPCAssociationAuthorizationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVPCAssociationAuthorizationsResponseTypeDef](./type_defs.md#listvpcassociationauthorizationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef = {  # (1)
+    "HostedZoneId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVPCAssociationAuthorizationsRequestListVPCAssociationAuthorizationsPaginateTypeDef](./type_defs.md#listvpcassociationauthorizationsrequestlistvpcassociationauthorizationspaginatetypedef) 

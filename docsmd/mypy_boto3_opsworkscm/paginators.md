@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-opsworkscm-module"></a>
-
-# Paginators for boto3 OpsWorksCM module
+# Paginators
 
 > [Index](../README.md) > [OpsWorksCM](./README.md) > Paginators
 
-Auto-generated documentation for
-[OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
-type annotations stubs module
-[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+!!! note ""
 
-- [Paginators for boto3 OpsWorksCM module](#paginators-for-boto3-opsworkscm-module)
-  - [DescribeBackupsPaginator](#describebackupspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeServersPaginator](#describeserverspaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="describebackupspaginator"></a>
+    Auto-generated documentation for [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
+    type annotations stubs module [mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 ## DescribeBackupsPaginator
 
-Type annotations for
-`boto3.client("opsworkscm").get_paginator("describe_backups")`.
+Type annotations and code completion for `#!python boto3.client("opsworkscm").get_paginator("describe_backups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeBackups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
@@ -33,29 +21,41 @@ def get_describe_backups_paginator() -> DescribeBackupsPaginator:
     return Session().client("opsworkscm").get_paginator("describe_backups")
 ```
 
-Boto3 documentation:
-[OpsWorksCM.Paginator.DescribeBackups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeBackups)
 
-Arguments for `DescribeBackupsPaginator.paginate` method:
+### paginate
 
-- `BackupId`: `str`
-- `ServerName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeBackupsPaginator.paginate` method.
 
-`DescribeBackupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BackupId: str = ...,
+    ServerName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeBackupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBackupsRequestDescribeBackupsPaginateTypeDef = {  # (1)
+    "BackupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBackupsRequestDescribeBackupsPaginateTypeDef](./type_defs.md#describebackupsrequestdescribebackupspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for
-`boto3.client("opsworkscm").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("opsworkscm").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_opsworkscm.paginator import DescribeEventsPaginator
@@ -64,28 +64,40 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("opsworkscm").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[OpsWorksCM.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `ServerName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServerName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeEventsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeserverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestDescribeEventsPaginateTypeDef = {  # (1)
+    "ServerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef) 
 ## DescribeServersPaginator
 
-Type annotations for
-`boto3.client("opsworkscm").get_paginator("describe_servers")`.
+Type annotations and code completion for `#!python boto3.client("opsworkscm").get_paginator("describe_servers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeServers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_opsworkscm.paginator import DescribeServersPaginator
@@ -94,28 +106,40 @@ def get_describe_servers_paginator() -> DescribeServersPaginator:
     return Session().client("opsworkscm").get_paginator("describe_servers")
 ```
 
-Boto3 documentation:
-[OpsWorksCM.Paginator.DescribeServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.DescribeServers)
 
-Arguments for `DescribeServersPaginator.paginate` method:
+### paginate
 
-- `ServerName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeServersPaginator.paginate` method.
 
-`DescribeServersPaginator.paginate` returns
-`_PageIterator`\[[DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServerName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeServersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeServersRequestDescribeServersPaginateTypeDef = {  # (1)
+    "ServerName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeServersRequestDescribeServersPaginateTypeDef](./type_defs.md#describeserversrequestdescribeserverspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("opsworkscm").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("opsworkscm").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_opsworkscm.paginator import ListTagsForResourcePaginator
@@ -124,14 +148,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("opsworkscm").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[OpsWorksCM.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-inspector-module"></a>
-
-# Type annotations for boto3 Inspector module
+#  Inspector module
 
 > [Index](../README.md) > Inspector
 
-Auto-generated documentation for
-[Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
-type annotations stubs module
-[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
+!!! note ""
 
-- [Type annotations for boto3 Inspector module](#type-annotations-for-boto3-inspector-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [InspectorClient](#inspectorclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
+    type annotations stubs module [mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Inspector`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[inspector]'
 python -m pip install mypy-boto3-inspector
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,101 +42,37 @@ python -m pip install mypy-boto3-inspector
 python -m pip uninstall -y mypy-boto3-inspector
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="inspectorclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## InspectorClient
 
-Type annotations for `boto3.client("inspector")` as
-[InspectorClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("inspector")` as [InspectorClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_inspector.client import InspectorClient
+
+def get_client() -> InspectorClient:
+    return Session().cleint("inspector")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_attributes_to_findings](./client.md#add_attributes_to_findings)
-- [can_paginate](./client.md#can_paginate)
-- [create_assessment_target](./client.md#create_assessment_target)
-- [create_assessment_template](./client.md#create_assessment_template)
-- [create_exclusions_preview](./client.md#create_exclusions_preview)
-- [create_resource_group](./client.md#create_resource_group)
-- [delete_assessment_run](./client.md#delete_assessment_run)
-- [delete_assessment_target](./client.md#delete_assessment_target)
-- [delete_assessment_template](./client.md#delete_assessment_template)
-- [describe_assessment_runs](./client.md#describe_assessment_runs)
-- [describe_assessment_targets](./client.md#describe_assessment_targets)
-- [describe_assessment_templates](./client.md#describe_assessment_templates)
-- [describe_cross_account_access_role](./client.md#describe_cross_account_access_role)
-- [describe_exclusions](./client.md#describe_exclusions)
-- [describe_findings](./client.md#describe_findings)
-- [describe_resource_groups](./client.md#describe_resource_groups)
-- [describe_rules_packages](./client.md#describe_rules_packages)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_assessment_report](./client.md#get_assessment_report)
-- [get_exclusions_preview](./client.md#get_exclusions_preview)
-- [get_paginator](./client.md#get_paginator)
-- [get_telemetry_metadata](./client.md#get_telemetry_metadata)
-- [list_assessment_run_agents](./client.md#list_assessment_run_agents)
-- [list_assessment_runs](./client.md#list_assessment_runs)
-- [list_assessment_targets](./client.md#list_assessment_targets)
-- [list_assessment_templates](./client.md#list_assessment_templates)
-- [list_event_subscriptions](./client.md#list_event_subscriptions)
-- [list_exclusions](./client.md#list_exclusions)
-- [list_findings](./client.md#list_findings)
-- [list_rules_packages](./client.md#list_rules_packages)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [preview_agents](./client.md#preview_agents)
-- [register_cross_account_access_role](./client.md#register_cross_account_access_role)
-- [remove_attributes_from_findings](./client.md#remove_attributes_from_findings)
-- [set_tags_for_resource](./client.md#set_tags_for_resource)
-- [start_assessment_run](./client.md#start_assessment_run)
-- [stop_assessment_run](./client.md#stop_assessment_run)
-- [subscribe_to_event](./client.md#subscribe_to_event)
-- [unsubscribe_from_event](./client.md#unsubscribe_from_event)
-- [update_assessment_target](./client.md#update_assessment_target)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-InspectorClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AgentsAlreadyRunningAssessmentException
-- AssessmentRunInProgressException
-- ClientError
-- InternalException
-- InvalidCrossAccountRoleException
-- InvalidInputException
-- LimitExceededException
-- NoSuchEntityException
-- PreviewGenerationInProgressException
-- ServiceTemporarilyUnavailableException
-- UnsupportedFeatureException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("inspector").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("inspector").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator, ...
+from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator
+
+def get_list_assessment_run_agents_paginator() -> ListAssessmentRunAgentsPaginator:
+    return Session().client("inspector").get_paginator("list_assessment_run_agents"))
 ```
 
 - [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
@@ -171,16 +85,23 @@ from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator, ...
 - [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
 - [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_inspector.literals import AgentHealthCodeType
 
-```python
-from mypy_boto3_inspector.literals import AgentHealthCodeType, ...
+def get_value() -> AgentHealthCodeType:
+    return "IDLE"
 ```
 
 - [AgentHealthCodeType](./literals.md#agenthealthcodetype)
@@ -211,18 +132,23 @@ from mypy_boto3_inspector.literals import AgentHealthCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequestTypeDef
 
-```python
-from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequestTypeDef, ...
+def get_value() -> AddAttributesToFindingsRequestRequestTypeDef:
+    return {
+        "findingArns": ...,
+        "attributes": ...,
+    }
 ```
 
 - [AddAttributesToFindingsRequestRequestTypeDef](./type_defs.md#addattributestofindingsrequestrequesttypedef)
@@ -280,26 +206,35 @@ from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequest
 - [GetTelemetryMetadataRequestRequestTypeDef](./type_defs.md#gettelemetrymetadatarequestrequesttypedef)
 - [GetTelemetryMetadataResponseTypeDef](./type_defs.md#gettelemetrymetadataresponsetypedef)
 - [InspectorServiceAttributesTypeDef](./type_defs.md#inspectorserviceattributestypedef)
+- [ListAssessmentRunAgentsRequestListAssessmentRunAgentsPaginateTypeDef](./type_defs.md#listassessmentrunagentsrequestlistassessmentrunagentspaginatetypedef)
 - [ListAssessmentRunAgentsRequestRequestTypeDef](./type_defs.md#listassessmentrunagentsrequestrequesttypedef)
 - [ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef)
+- [ListAssessmentRunsRequestListAssessmentRunsPaginateTypeDef](./type_defs.md#listassessmentrunsrequestlistassessmentrunspaginatetypedef)
 - [ListAssessmentRunsRequestRequestTypeDef](./type_defs.md#listassessmentrunsrequestrequesttypedef)
 - [ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef)
+- [ListAssessmentTargetsRequestListAssessmentTargetsPaginateTypeDef](./type_defs.md#listassessmenttargetsrequestlistassessmenttargetspaginatetypedef)
 - [ListAssessmentTargetsRequestRequestTypeDef](./type_defs.md#listassessmenttargetsrequestrequesttypedef)
 - [ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef)
+- [ListAssessmentTemplatesRequestListAssessmentTemplatesPaginateTypeDef](./type_defs.md#listassessmenttemplatesrequestlistassessmenttemplatespaginatetypedef)
 - [ListAssessmentTemplatesRequestRequestTypeDef](./type_defs.md#listassessmenttemplatesrequestrequesttypedef)
 - [ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef)
+- [ListEventSubscriptionsRequestListEventSubscriptionsPaginateTypeDef](./type_defs.md#listeventsubscriptionsrequestlisteventsubscriptionspaginatetypedef)
 - [ListEventSubscriptionsRequestRequestTypeDef](./type_defs.md#listeventsubscriptionsrequestrequesttypedef)
 - [ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef)
+- [ListExclusionsRequestListExclusionsPaginateTypeDef](./type_defs.md#listexclusionsrequestlistexclusionspaginatetypedef)
 - [ListExclusionsRequestRequestTypeDef](./type_defs.md#listexclusionsrequestrequesttypedef)
 - [ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef)
+- [ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef)
 - [ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
+- [ListRulesPackagesRequestListRulesPackagesPaginateTypeDef](./type_defs.md#listrulespackagesrequestlistrulespackagespaginatetypedef)
 - [ListRulesPackagesRequestRequestTypeDef](./type_defs.md#listrulespackagesrequestrequesttypedef)
 - [ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [PreviewAgentsRequestPreviewAgentsPaginateTypeDef](./type_defs.md#previewagentsrequestpreviewagentspaginatetypedef)
 - [PreviewAgentsRequestRequestTypeDef](./type_defs.md#previewagentsrequestrequesttypedef)
 - [PreviewAgentsResponseTypeDef](./type_defs.md#previewagentsresponsetypedef)
 - [PrivateIpTypeDef](./type_defs.md#privateiptypedef)
@@ -323,3 +258,4 @@ from mypy_boto3_inspector.type_defs import AddAttributesToFindingsRequestRequest
 - [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 - [UnsubscribeFromEventRequestRequestTypeDef](./type_defs.md#unsubscribefromeventrequestrequesttypedef)
 - [UpdateAssessmentTargetRequestRequestTypeDef](./type_defs.md#updateassessmenttargetrequestrequesttypedef)
+

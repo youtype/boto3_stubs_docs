@@ -1,51 +1,18 @@
-<a id="servicequotasclient-for-boto3-servicequotas-module"></a>
-
-# ServiceQuotasClient for boto3 ServiceQuotas module
+# ServiceQuotasClient
 
 > [Index](../README.md) > [ServiceQuotas](./README.md) > ServiceQuotasClient
 
-Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
-type annotations stubs module
-[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+!!! note ""
 
-- [ServiceQuotasClient for boto3 ServiceQuotas module](#servicequotasclient-for-boto3-servicequotas-module)
-  - [ServiceQuotasClient](#servicequotasclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_service_quota_template](#associate_service_quota_template)
-    - [can_paginate](#can_paginate)
-    - [delete_service_quota_increase_request_from_template](#delete_service_quota_increase_request_from_template)
-    - [disassociate_service_quota_template](#disassociate_service_quota_template)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_association_for_service_quota_template](#get_association_for_service_quota_template)
-    - [get_aws_default_service_quota](#get_aws_default_service_quota)
-    - [get_requested_service_quota_change](#get_requested_service_quota_change)
-    - [get_service_quota](#get_service_quota)
-    - [get_service_quota_increase_request_from_template](#get_service_quota_increase_request_from_template)
-    - [list_aws_default_service_quotas](#list_aws_default_service_quotas)
-    - [list_requested_service_quota_change_history](#list_requested_service_quota_change_history)
-    - [list_requested_service_quota_change_history_by_quota](#list_requested_service_quota_change_history_by_quota)
-    - [list_service_quota_increase_requests_in_template](#list_service_quota_increase_requests_in_template)
-    - [list_service_quotas](#list_service_quotas)
-    - [list_services](#list_services)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_service_quota_increase_request_into_template](#put_service_quota_increase_request_into_template)
-    - [request_service_quota_increase](#request_service_quota_increase)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="servicequotasclient"></a>
+    Auto-generated documentation for [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+    type annotations stubs module [mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 ## ServiceQuotasClient
 
-Type annotations for `boto3.client("service-quotas")`
+Type annotations and code completion for `#!python boto3.client("service-quotas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_service_quotas.client import ServiceQuotasClient
 
@@ -53,541 +20,652 @@ def get_service-quotas_client() -> ServiceQuotasClient:
     return Session().client("service-quotas")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("service-quotas").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("service-quotas")
+
+try:
+    do_something(client)
+except (
+    client.AWSServiceAccessNotEnabledException,
+    client.AccessDeniedException,
+    client.ClientError,
+    client.DependencyAccessDeniedException,
+    client.IllegalArgumentException,
+    client.InvalidPaginationTokenException,
+    client.InvalidResourceStateException,
+    client.NoAvailableOrganizationException,
+    client.NoSuchResourceException,
+    client.OrganizationNotInAllFeaturesModeException,
+    client.QuotaExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ServiceException,
+    client.ServiceQuotaTemplateNotInUseException,
+    client.TagPolicyViolationException,
+    client.TemplatesNotAvailableInRegionException,
+    client.TooManyRequestsException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_service_quotas.client import Exceptions
 
 def handle_error(exc: Exceptions.AWSServiceAccessNotEnabledException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AWSServiceAccessNotEnabledException`
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.DependencyAccessDeniedException`
-- `Exceptions.IllegalArgumentException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidResourceStateException`
-- `Exceptions.NoAvailableOrganizationException`
-- `Exceptions.NoSuchResourceException`
-- `Exceptions.OrganizationNotInAllFeaturesModeException`
-- `Exceptions.QuotaExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ServiceException`
-- `Exceptions.ServiceQuotaTemplateNotInUseException`
-- `Exceptions.TagPolicyViolationException`
-- `Exceptions.TemplatesNotAvailableInRegionException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ServiceQuotasClient exceptions.
-
-Type annotations for `boto3.client("service-quotas").exceptions` method.
-
-Boto3 documentation:
-[ServiceQuotas.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_service\_quota\_template"></a>
-
-### associate_service_quota_template
+### associate\_service\_quota\_template
 
 Associates your quota request template with your organization.
 
-Type annotations for
-`boto3.client("service-quotas").associate_service_quota_template` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").associate_service_quota_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.associate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.associate_service_quota_template)
+```python title="Method definition"
+def associate_service_quota_template(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("service-quotas").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate)
 
-Boto3 documentation:
-[ServiceQuotas.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_service\_quota\_increase\_request\_from\_template"></a>
-
-### delete_service_quota_increase_request_from_template
+### delete\_service\_quota\_increase\_request\_from\_template
 
 Deletes the quota increase request for the specified quota from your quota
 request template.
 
-Type annotations for
-`boto3.client("service-quotas").delete_service_quota_increase_request_from_template`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").delete_service_quota_increase_request_from_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.delete_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.delete_service_quota_increase_request_from_template)
+```python title="Method definition"
+def delete_service_quota_increase_request_from_template(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+    AwsRegion: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#deleteservicequotaincreaserequestfromtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
-- `AwsRegion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+    "AwsRegion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_service_quota_increase_request_from_template(**kwargs)
+```
 
-<a id="disassociate\_service\_quota\_template"></a>
+1. See [:material-code-braces: DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#deleteservicequotaincreaserequestfromtemplaterequestrequesttypedef) 
 
-### disassociate_service_quota_template
+### disassociate\_service\_quota\_template
 
 Disables your quota request template.
 
-Type annotations for
-`boto3.client("service-quotas").disassociate_service_quota_template` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").disassociate_service_quota_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.disassociate_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.disassociate_service_quota_template)
+```python title="Method definition"
+def disassociate_service_quota_template(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("service-quotas").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ServiceQuotas.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_association\_for\_service\_quota\_template"></a>
-
-### get_association_for_service_quota_template
+### get\_association\_for\_service\_quota\_template
 
 Retrieves the status of the association for the quota request template.
 
-Type annotations for
-`boto3.client("service-quotas").get_association_for_service_quota_template`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_association_for_service_quota_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.get_association_for_service_quota_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_association_for_service_quota_template)
+```python title="Method definition"
+def get_association_for_service_quota_template(
+    self,
+) -> GetAssociationForServiceQuotaTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef).
+1. See [:material-code-braces: GetAssociationForServiceQuotaTemplateResponseTypeDef](./type_defs.md#getassociationforservicequotatemplateresponsetypedef) 
 
-<a id="get\_aws\_default\_service\_quota"></a>
-
-### get_aws_default_service_quota
+### get\_aws\_default\_service\_quota
 
 Retrieves the default value for the specified quota.
 
-Type annotations for
-`boto3.client("service-quotas").get_aws_default_service_quota` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_aws_default_service_quota` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
 
-Boto3 documentation:
-[ServiceQuotas.Client.get_aws_default_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_aws_default_service_quota)
+```python title="Method definition"
+def get_aws_default_service_quota(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+) -> GetAWSDefaultServiceQuotaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAWSDefaultServiceQuotaRequestRequestTypeDef](./type_defs.md#getawsdefaultservicequotarequestrequesttypedef).
+1. See [:material-code-braces: GetAWSDefaultServiceQuotaResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAWSDefaultServiceQuotaRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+}
 
-Returns
-[GetAWSDefaultServiceQuotaResponseTypeDef](./type_defs.md#getawsdefaultservicequotaresponsetypedef).
+parent.get_aws_default_service_quota(**kwargs)
+```
 
-<a id="get\_requested\_service\_quota\_change"></a>
+1. See [:material-code-braces: GetAWSDefaultServiceQuotaRequestRequestTypeDef](./type_defs.md#getawsdefaultservicequotarequestrequesttypedef) 
 
-### get_requested_service_quota_change
+### get\_requested\_service\_quota\_change
 
 Retrieves information about the specified quota increase request.
 
-Type annotations for
-`boto3.client("service-quotas").get_requested_service_quota_change` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_requested_service_quota_change` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
 
-Boto3 documentation:
-[ServiceQuotas.Client.get_requested_service_quota_change](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_requested_service_quota_change)
+```python title="Method definition"
+def get_requested_service_quota_change(
+    self,
+    *,
+    RequestId: str,
+) -> GetRequestedServiceQuotaChangeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRequestedServiceQuotaChangeRequestRequestTypeDef](./type_defs.md#getrequestedservicequotachangerequestrequesttypedef).
+1. See [:material-code-braces: GetRequestedServiceQuotaChangeResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRequestedServiceQuotaChangeRequestRequestTypeDef = {  # (1)
+    "RequestId": ...,
+}
 
-Returns
-[GetRequestedServiceQuotaChangeResponseTypeDef](./type_defs.md#getrequestedservicequotachangeresponsetypedef).
+parent.get_requested_service_quota_change(**kwargs)
+```
 
-<a id="get\_service\_quota"></a>
+1. See [:material-code-braces: GetRequestedServiceQuotaChangeRequestRequestTypeDef](./type_defs.md#getrequestedservicequotachangerequestrequesttypedef) 
 
-### get_service_quota
+### get\_service\_quota
 
 Retrieves the applied quota value for the specified quota.
 
-Type annotations for `boto3.client("service-quotas").get_service_quota` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_service_quota` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
 
-Boto3 documentation:
-[ServiceQuotas.Client.get_service_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota)
+```python title="Method definition"
+def get_service_quota(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+) -> GetServiceQuotaResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceQuotaRequestRequestTypeDef](./type_defs.md#getservicequotarequestrequesttypedef).
+1. See [:material-code-braces: GetServiceQuotaResponseTypeDef](./type_defs.md#getservicequotaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceQuotaRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+}
 
-Returns
-[GetServiceQuotaResponseTypeDef](./type_defs.md#getservicequotaresponsetypedef).
+parent.get_service_quota(**kwargs)
+```
 
-<a id="get\_service\_quota\_increase\_request\_from\_template"></a>
+1. See [:material-code-braces: GetServiceQuotaRequestRequestTypeDef](./type_defs.md#getservicequotarequestrequesttypedef) 
 
-### get_service_quota_increase_request_from_template
+### get\_service\_quota\_increase\_request\_from\_template
 
 Retrieves information about the specified quota increase request in your quota
 request template.
 
-Type annotations for
-`boto3.client("service-quotas").get_service_quota_increase_request_from_template`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_service_quota_increase_request_from_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.get_service_quota_increase_request_from_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.get_service_quota_increase_request_from_template)
+```python title="Method definition"
+def get_service_quota_increase_request_from_template(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+    AwsRegion: str,
+) -> GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
-- `AwsRegion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+    "AwsRegion": ...,
+}
 
-Returns
-[GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplateresponsetypedef).
+parent.get_service_quota_increase_request_from_template(**kwargs)
+```
 
-<a id="list\_aws\_default\_service\_quotas"></a>
+1. See [:material-code-braces: GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](./type_defs.md#getservicequotaincreaserequestfromtemplaterequestrequesttypedef) 
 
-### list_aws_default_service_quotas
+### list\_aws\_default\_service\_quotas
 
 Lists the default values for the quotas for the specified AWS service.
 
-Type annotations for
-`boto3.client("service-quotas").list_aws_default_service_quotas` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_aws_default_service_quotas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_aws_default_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_aws_default_service_quotas)
+```python title="Method definition"
+def list_aws_default_service_quotas(
+    self,
+    *,
+    ServiceCode: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAWSDefaultServiceQuotasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAWSDefaultServiceQuotasRequestRequestTypeDef](./type_defs.md#listawsdefaultservicequotasrequestrequesttypedef).
+1. See [:material-code-braces: ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAWSDefaultServiceQuotasRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
 
-Returns
-[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef).
+parent.list_aws_default_service_quotas(**kwargs)
+```
 
-<a id="list\_requested\_service\_quota\_change\_history"></a>
+1. See [:material-code-braces: ListAWSDefaultServiceQuotasRequestRequestTypeDef](./type_defs.md#listawsdefaultservicequotasrequestrequesttypedef) 
 
-### list_requested_service_quota_change_history
+### list\_requested\_service\_quota\_change\_history
 
 Retrieves the quota increase requests for the specified service.
 
-Type annotations for
-`boto3.client("service-quotas").list_requested_service_quota_change_history`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_requested_service_quota_change_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_requested_service_quota_change_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history)
+```python title="Method definition"
+def list_requested_service_quota_change_history(
+    self,
+    *,
+    ServiceCode: str = ...,
+    Status: RequestStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRequestedServiceQuotaChangeHistoryResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistoryrequestrequesttypedef).
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
+2. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str`
-- `Status`: [RequestStatusType](./literals.md#requeststatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
 
-Returns
-[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef).
+parent.list_requested_service_quota_change_history(**kwargs)
+```
 
-<a id="list\_requested\_service\_quota\_change\_history\_by\_quota"></a>
+1. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistoryrequestrequesttypedef) 
 
-### list_requested_service_quota_change_history_by_quota
+### list\_requested\_service\_quota\_change\_history\_by\_quota
 
 Retrieves the quota increase requests for the specified quota.
 
-Type annotations for
-`boto3.client("service-quotas").list_requested_service_quota_change_history_by_quota`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_requested_service_quota_change_history_by_quota` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_requested_service_quota_change_history_by_quota)
+```python title="Method definition"
+def list_requested_service_quota_change_history_by_quota(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+    Status: RequestStatusType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotarequestrequesttypedef).
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
+2. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
-- `Status`: [RequestStatusType](./literals.md#requeststatustype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+}
 
-Returns
-[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef).
+parent.list_requested_service_quota_change_history_by_quota(**kwargs)
+```
 
-<a id="list\_service\_quota\_increase\_requests\_in\_template"></a>
+1. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotarequestrequesttypedef) 
 
-### list_service_quota_increase_requests_in_template
+### list\_service\_quota\_increase\_requests\_in\_template
 
 Lists the quota increase requests in the specified quota request template.
 
-Type annotations for
-`boto3.client("service-quotas").list_service_quota_increase_requests_in_template`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_service_quota_increase_requests_in_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_service_quota_increase_requests_in_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quota_increase_requests_in_template)
+```python title="Method definition"
+def list_service_quota_increase_requests_in_template(
+    self,
+    *,
+    ServiceCode: str = ...,
+    AwsRegion: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplaterequestrequesttypedef).
+1. See [:material-code-braces: ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str`
-- `AwsRegion`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
 
-Returns
-[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef).
+parent.list_service_quota_increase_requests_in_template(**kwargs)
+```
 
-<a id="list\_service\_quotas"></a>
+1. See [:material-code-braces: ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplaterequestrequesttypedef) 
 
-### list_service_quotas
+### list\_service\_quotas
 
 Lists the applied quota values for the specified AWS service.
 
-Type annotations for `boto3.client("service-quotas").list_service_quotas`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_service_quotas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_service_quotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_service_quotas)
+```python title="Method definition"
+def list_service_quotas(
+    self,
+    *,
+    ServiceCode: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListServiceQuotasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServiceQuotasRequestRequestTypeDef](./type_defs.md#listservicequotasrequestrequesttypedef).
+1. See [:material-code-braces: ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServiceQuotasRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
 
-Returns
-[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef).
+parent.list_service_quotas(**kwargs)
+```
 
-<a id="list\_services"></a>
+1. See [:material-code-braces: ListServiceQuotasRequestRequestTypeDef](./type_defs.md#listservicequotasrequestrequesttypedef) 
 
-### list_services
+### list\_services
 
 Lists the names and codes for the services integrated with Service Quotas.
 
-Type annotations for `boto3.client("service-quotas").list_services` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_services)
+```python title="Method definition"
+def list_services(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListServicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
+1. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
+parent.list_services(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of the tags assigned to the specified applied quota.
 
-Type annotations for `boto3.client("service-quotas").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ServiceQuotas.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_service\_quota\_increase\_request\_into\_template"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_service_quota_increase_request_into_template
+### put\_service\_quota\_increase\_request\_into\_template
 
 Adds a quota increase request to your quota request template.
 
-Type annotations for
-`boto3.client("service-quotas").put_service_quota_increase_request_into_template`
-method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").put_service_quota_increase_request_into_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
 
-Boto3 documentation:
-[ServiceQuotas.Client.put_service_quota_increase_request_into_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.put_service_quota_increase_request_into_template)
+```python title="Method definition"
+def put_service_quota_increase_request_into_template(
+    self,
+    *,
+    QuotaCode: str,
+    ServiceCode: str,
+    AwsRegion: str,
+    DesiredValue: float,
+) -> PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplaterequestrequesttypedef).
+1. See [:material-code-braces: PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `QuotaCode`: `str` *(required)*
-- `ServiceCode`: `str` *(required)*
-- `AwsRegion`: `str` *(required)*
-- `DesiredValue`: `float` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef = {  # (1)
+    "QuotaCode": ...,
+    "ServiceCode": ...,
+    "AwsRegion": ...,
+    "DesiredValue": ...,
+}
 
-Returns
-[PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplateresponsetypedef).
+parent.put_service_quota_increase_request_into_template(**kwargs)
+```
 
-<a id="request\_service\_quota\_increase"></a>
+1. See [:material-code-braces: PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef](./type_defs.md#putservicequotaincreaserequestintotemplaterequestrequesttypedef) 
 
-### request_service_quota_increase
+### request\_service\_quota\_increase
 
 Submits a quota increase request for the specified quota.
 
-Type annotations for
-`boto3.client("service-quotas").request_service_quota_increase` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").request_service_quota_increase` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
 
-Boto3 documentation:
-[ServiceQuotas.Client.request_service_quota_increase](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.request_service_quota_increase)
+```python title="Method definition"
+def request_service_quota_increase(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+    DesiredValue: float,
+) -> RequestServiceQuotaIncreaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RequestServiceQuotaIncreaseRequestRequestTypeDef](./type_defs.md#requestservicequotaincreaserequestrequesttypedef).
+1. See [:material-code-braces: RequestServiceQuotaIncreaseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
-- `DesiredValue`: `float` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RequestServiceQuotaIncreaseRequestRequestTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+    "DesiredValue": ...,
+}
 
-Returns
-[RequestServiceQuotaIncreaseResponseTypeDef](./type_defs.md#requestservicequotaincreaseresponsetypedef).
+parent.request_service_quota_increase(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RequestServiceQuotaIncreaseRequestRequestTypeDef](./type_defs.md#requestservicequotaincreaserequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to the specified applied quota.
 
-Type annotations for `boto3.client("service-quotas").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
 
-Boto3 documentation:
-[ServiceQuotas.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from the specified applied quota.
 
-Type annotations for `boto3.client("service-quotas").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("service-quotas").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
 
-Boto3 documentation:
-[ServiceQuotas.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("service-quotas").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator` method with overloads.
 
-- `client.get_paginator("list_aws_default_service_quotas")` ->
-  [ListAWSDefaultServiceQuotasPaginator](./paginators.md#listawsdefaultservicequotaspaginator)
-- `client.get_paginator("list_requested_service_quota_change_history")` ->
-  [ListRequestedServiceQuotaChangeHistoryPaginator](./paginators.md#listrequestedservicequotachangehistorypaginator)
-- `client.get_paginator("list_requested_service_quota_change_history_by_quota")`
-  ->
-  [ListRequestedServiceQuotaChangeHistoryByQuotaPaginator](./paginators.md#listrequestedservicequotachangehistorybyquotapaginator)
-- `client.get_paginator("list_service_quota_increase_requests_in_template")` ->
-  [ListServiceQuotaIncreaseRequestsInTemplatePaginator](./paginators.md#listservicequotaincreaserequestsintemplatepaginator)
-- `client.get_paginator("list_service_quotas")` ->
-  [ListServiceQuotasPaginator](./paginators.md#listservicequotaspaginator)
-- `client.get_paginator("list_services")` ->
-  [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_aws_default_service_quotas")` -> [ListAWSDefaultServiceQuotasPaginator](./paginators.md#listawsdefaultservicequotaspaginator)
+- `client.get_paginator("list_requested_service_quota_change_history")` -> [ListRequestedServiceQuotaChangeHistoryPaginator](./paginators.md#listrequestedservicequotachangehistorypaginator)
+- `client.get_paginator("list_requested_service_quota_change_history_by_quota")` -> [ListRequestedServiceQuotaChangeHistoryByQuotaPaginator](./paginators.md#listrequestedservicequotachangehistorybyquotapaginator)
+- `client.get_paginator("list_service_quota_increase_requests_in_template")` -> [ListServiceQuotaIncreaseRequestsInTemplatePaginator](./paginators.md#listservicequotaincreaserequestsintemplatepaginator)
+- `client.get_paginator("list_service_quotas")` -> [ListServiceQuotasPaginator](./paginators.md#listservicequotaspaginator)
+- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
+
+
+

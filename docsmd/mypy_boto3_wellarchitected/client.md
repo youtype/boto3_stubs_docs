@@ -1,71 +1,18 @@
-<a id="wellarchitectedclient-for-boto3-wellarchitected-module"></a>
+# WellArchitectedClient
 
-# WellArchitectedClient for boto3 WellArchitected module
+> [Index](../README.md) > [WellArchitected](./README.md) > WellArchitectedClient
 
-> [Index](../README.md) > [WellArchitected](./README.md) >
-> WellArchitectedClient
+!!! note ""
 
-Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module
-[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
-
-- [WellArchitectedClient for boto3 WellArchitected module](#wellarchitectedclient-for-boto3-wellarchitected-module)
-  - [WellArchitectedClient](#wellarchitectedclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_lenses](#associate_lenses)
-    - [can_paginate](#can_paginate)
-    - [create_lens_share](#create_lens_share)
-    - [create_lens_version](#create_lens_version)
-    - [create_milestone](#create_milestone)
-    - [create_workload](#create_workload)
-    - [create_workload_share](#create_workload_share)
-    - [delete_lens](#delete_lens)
-    - [delete_lens_share](#delete_lens_share)
-    - [delete_workload](#delete_workload)
-    - [delete_workload_share](#delete_workload_share)
-    - [disassociate_lenses](#disassociate_lenses)
-    - [export_lens](#export_lens)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_answer](#get_answer)
-    - [get_lens](#get_lens)
-    - [get_lens_review](#get_lens_review)
-    - [get_lens_review_report](#get_lens_review_report)
-    - [get_lens_version_difference](#get_lens_version_difference)
-    - [get_milestone](#get_milestone)
-    - [get_workload](#get_workload)
-    - [import_lens](#import_lens)
-    - [list_answers](#list_answers)
-    - [list_lens_review_improvements](#list_lens_review_improvements)
-    - [list_lens_reviews](#list_lens_reviews)
-    - [list_lens_shares](#list_lens_shares)
-    - [list_lenses](#list_lenses)
-    - [list_milestones](#list_milestones)
-    - [list_notifications](#list_notifications)
-    - [list_share_invitations](#list_share_invitations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_workload_shares](#list_workload_shares)
-    - [list_workloads](#list_workloads)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_answer](#update_answer)
-    - [update_lens_review](#update_lens_review)
-    - [update_share_invitation](#update_share_invitation)
-    - [update_workload](#update_workload)
-    - [update_workload_share](#update_workload_share)
-    - [upgrade_lens_review](#upgrade_lens_review)
-
-<a id="wellarchitectedclient"></a>
+    Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+    type annotations stubs module [mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ## WellArchitectedClient
 
-Type annotations for `boto3.client("wellarchitected")`
+Type annotations and code completion for `#!python boto3.client("wellarchitected")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
 
@@ -73,1013 +20,1364 @@ def get_wellarchitected_client() -> WellArchitectedClient:
     return Session().client("wellarchitected")
 ```
 
-Boto3 documentation:
-[WellArchitected.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("wellarchitected").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("wellarchitected")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_wellarchitected.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WellArchitectedClient exceptions.
-
-Type annotations for `boto3.client("wellarchitected").exceptions` method.
-
-Boto3 documentation:
-[WellArchitected.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_lenses"></a>
-
-### associate_lenses
+### associate\_lenses
 
 Associate a lens to a workload.
 
-Type annotations for `boto3.client("wellarchitected").associate_lenses` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").associate_lenses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
 
-Boto3 documentation:
-[WellArchitected.Client.associate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.associate_lenses)
+```python title="Method definition"
+def associate_lenses(
+    self,
+    *,
+    WorkloadId: str,
+    LensAliases: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateLensesInputRequestTypeDef](./type_defs.md#associatelensesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAliases`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateLensesInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAliases": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.associate_lenses(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AssociateLensesInputRequestTypeDef](./type_defs.md#associatelensesinputrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("wellarchitected").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
 
-Boto3 documentation:
-[WellArchitected.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_lens\_share"></a>
-
-### create_lens_share
+### create\_lens\_share
 
 Create a lens share.
 
-Type annotations for `boto3.client("wellarchitected").create_lens_share`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").create_lens_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_share)
 
-Boto3 documentation:
-[WellArchitected.Client.create_lens_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_share)
+```python title="Method definition"
+def create_lens_share(
+    self,
+    *,
+    LensAlias: str,
+    SharedWith: str,
+    ClientRequestToken: str,
+) -> CreateLensShareOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateLensShareInputRequestTypeDef](./type_defs.md#createlensshareinputrequesttypedef).
+1. See [:material-code-braces: CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `SharedWith`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLensShareInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+    "SharedWith": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef).
+parent.create_lens_share(**kwargs)
+```
 
-<a id="create\_lens\_version"></a>
+1. See [:material-code-braces: CreateLensShareInputRequestTypeDef](./type_defs.md#createlensshareinputrequesttypedef) 
 
-### create_lens_version
+### create\_lens\_version
 
 Create a new lens version.
 
-Type annotations for `boto3.client("wellarchitected").create_lens_version`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").create_lens_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_version)
 
-Boto3 documentation:
-[WellArchitected.Client.create_lens_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_lens_version)
+```python title="Method definition"
+def create_lens_version(
+    self,
+    *,
+    LensAlias: str,
+    LensVersion: str,
+    ClientRequestToken: str,
+    IsMajorVersion: bool = ...,
+) -> CreateLensVersionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateLensVersionInputRequestTypeDef](./type_defs.md#createlensversioninputrequesttypedef).
+1. See [:material-code-braces: CreateLensVersionOutputTypeDef](./type_defs.md#createlensversionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `LensVersion`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `IsMajorVersion`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateLensVersionInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+    "LensVersion": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateLensVersionOutputTypeDef](./type_defs.md#createlensversionoutputtypedef).
+parent.create_lens_version(**kwargs)
+```
 
-<a id="create\_milestone"></a>
+1. See [:material-code-braces: CreateLensVersionInputRequestTypeDef](./type_defs.md#createlensversioninputrequesttypedef) 
 
-### create_milestone
+### create\_milestone
 
 Create a milestone for an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").create_milestone` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").create_milestone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
 
-Boto3 documentation:
-[WellArchitected.Client.create_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_milestone)
+```python title="Method definition"
+def create_milestone(
+    self,
+    *,
+    WorkloadId: str,
+    MilestoneName: str,
+    ClientRequestToken: str,
+) -> CreateMilestoneOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateMilestoneInputRequestTypeDef](./type_defs.md#createmilestoneinputrequesttypedef).
+1. See [:material-code-braces: CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `MilestoneName`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMilestoneInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "MilestoneName": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef).
+parent.create_milestone(**kwargs)
+```
 
-<a id="create\_workload"></a>
+1. See [:material-code-braces: CreateMilestoneInputRequestTypeDef](./type_defs.md#createmilestoneinputrequesttypedef) 
 
-### create_workload
+### create\_workload
 
 Create a new workload.
 
-Type annotations for `boto3.client("wellarchitected").create_workload` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").create_workload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
 
-Boto3 documentation:
-[WellArchitected.Client.create_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload)
+```python title="Method definition"
+def create_workload(
+    self,
+    *,
+    WorkloadName: str,
+    Description: str,
+    Environment: WorkloadEnvironmentType,  # (1)
+    ReviewOwner: str,
+    Lenses: Sequence[str],
+    ClientRequestToken: str,
+    AccountIds: Sequence[str] = ...,
+    AwsRegions: Sequence[str] = ...,
+    NonAwsRegions: Sequence[str] = ...,
+    PillarPriorities: Sequence[str] = ...,
+    ArchitecturalDesign: str = ...,
+    IndustryType: str = ...,
+    Industry: str = ...,
+    Notes: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateWorkloadOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkloadInputRequestTypeDef](./type_defs.md#createworkloadinputrequesttypedef).
+1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
+2. See [:material-code-braces: CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadName`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `Environment`:
-  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) *(required)*
-- `ReviewOwner`: `str` *(required)*
-- `Lenses`: `Sequence`\[`str`\] *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\]
-- `AwsRegions`: `Sequence`\[`str`\]
-- `NonAwsRegions`: `Sequence`\[`str`\]
-- `PillarPriorities`: `Sequence`\[`str`\]
-- `ArchitecturalDesign`: `str`
-- `IndustryType`: `str`
-- `Industry`: `str`
-- `Notes`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkloadInputRequestTypeDef = {  # (1)
+    "WorkloadName": ...,
+    "Description": ...,
+    "Environment": ...,
+    "ReviewOwner": ...,
+    "Lenses": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef).
+parent.create_workload(**kwargs)
+```
 
-<a id="create\_workload\_share"></a>
+1. See [:material-code-braces: CreateWorkloadInputRequestTypeDef](./type_defs.md#createworkloadinputrequesttypedef) 
 
-### create_workload_share
+### create\_workload\_share
 
 Create a workload share.
 
-Type annotations for `boto3.client("wellarchitected").create_workload_share`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").create_workload_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
 
-Boto3 documentation:
-[WellArchitected.Client.create_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.create_workload_share)
+```python title="Method definition"
+def create_workload_share(
+    self,
+    *,
+    WorkloadId: str,
+    SharedWith: str,
+    PermissionType: PermissionTypeType,  # (1)
+    ClientRequestToken: str,
+) -> CreateWorkloadShareOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkloadShareInputRequestTypeDef](./type_defs.md#createworkloadshareinputrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `SharedWith`: `str` *(required)*
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-  *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateWorkloadShareInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "SharedWith": ...,
+    "PermissionType": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns
-[CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef).
+parent.create_workload_share(**kwargs)
+```
 
-<a id="delete\_lens"></a>
+1. See [:material-code-braces: CreateWorkloadShareInputRequestTypeDef](./type_defs.md#createworkloadshareinputrequesttypedef) 
 
-### delete_lens
+### delete\_lens
 
 Delete an existing lens.
 
-Type annotations for `boto3.client("wellarchitected").delete_lens` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").delete_lens` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens)
 
-Boto3 documentation:
-[WellArchitected.Client.delete_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens)
+```python title="Method definition"
+def delete_lens(
+    self,
+    *,
+    LensAlias: str,
+    ClientRequestToken: str,
+    LensStatus: LensStatusTypeType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLensInputRequestTypeDef](./type_defs.md#deletelensinputrequesttypedef).
+1. See [:material-code-brackets: LensStatusTypeType](./literals.md#lensstatustypetype) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLensInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+    "ClientRequestToken": ...,
+    "LensStatus": ...,
+}
 
-<a id="delete\_lens\_share"></a>
+parent.delete_lens(**kwargs)
+```
 
-### delete_lens_share
+1. See [:material-code-braces: DeleteLensInputRequestTypeDef](./type_defs.md#deletelensinputrequesttypedef) 
+
+### delete\_lens\_share
 
 Delete a lens share.
 
-Type annotations for `boto3.client("wellarchitected").delete_lens_share`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").delete_lens_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens_share)
 
-Boto3 documentation:
-[WellArchitected.Client.delete_lens_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_lens_share)
+```python title="Method definition"
+def delete_lens_share(
+    self,
+    *,
+    ShareId: str,
+    LensAlias: str,
+    ClientRequestToken: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLensShareInputRequestTypeDef](./type_defs.md#deletelensshareinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ShareId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLensShareInputRequestTypeDef = {  # (1)
+    "ShareId": ...,
+    "LensAlias": ...,
+    "ClientRequestToken": ...,
+}
 
-<a id="delete\_workload"></a>
+parent.delete_lens_share(**kwargs)
+```
 
-### delete_workload
+1. See [:material-code-braces: DeleteLensShareInputRequestTypeDef](./type_defs.md#deletelensshareinputrequesttypedef) 
+
+### delete\_workload
 
 Delete an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").delete_workload` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").delete_workload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
 
-Boto3 documentation:
-[WellArchitected.Client.delete_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload)
+```python title="Method definition"
+def delete_workload(
+    self,
+    *,
+    WorkloadId: str,
+    ClientRequestToken: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkloadInputRequestTypeDef](./type_defs.md#deleteworkloadinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkloadInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "ClientRequestToken": ...,
+}
 
-<a id="delete\_workload\_share"></a>
+parent.delete_workload(**kwargs)
+```
 
-### delete_workload_share
+1. See [:material-code-braces: DeleteWorkloadInputRequestTypeDef](./type_defs.md#deleteworkloadinputrequesttypedef) 
+
+### delete\_workload\_share
 
 Delete a workload share.
 
-Type annotations for `boto3.client("wellarchitected").delete_workload_share`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").delete_workload_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
 
-Boto3 documentation:
-[WellArchitected.Client.delete_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.delete_workload_share)
+```python title="Method definition"
+def delete_workload_share(
+    self,
+    *,
+    ShareId: str,
+    WorkloadId: str,
+    ClientRequestToken: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkloadShareInputRequestTypeDef](./type_defs.md#deleteworkloadshareinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ShareId`: `str` *(required)*
-- `WorkloadId`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkloadShareInputRequestTypeDef = {  # (1)
+    "ShareId": ...,
+    "WorkloadId": ...,
+    "ClientRequestToken": ...,
+}
 
-<a id="disassociate\_lenses"></a>
+parent.delete_workload_share(**kwargs)
+```
 
-### disassociate_lenses
+1. See [:material-code-braces: DeleteWorkloadShareInputRequestTypeDef](./type_defs.md#deleteworkloadshareinputrequesttypedef) 
+
+### disassociate\_lenses
 
 Disassociate a lens from a workload.
 
-Type annotations for `boto3.client("wellarchitected").disassociate_lenses`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").disassociate_lenses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
 
-Boto3 documentation:
-[WellArchitected.Client.disassociate_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.disassociate_lenses)
+```python title="Method definition"
+def disassociate_lenses(
+    self,
+    *,
+    WorkloadId: str,
+    LensAliases: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateLensesInputRequestTypeDef](./type_defs.md#disassociatelensesinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAliases`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateLensesInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAliases": ...,
+}
 
-<a id="export\_lens"></a>
+parent.disassociate_lenses(**kwargs)
+```
 
-### export_lens
+1. See [:material-code-braces: DisassociateLensesInputRequestTypeDef](./type_defs.md#disassociatelensesinputrequesttypedef) 
+
+### export\_lens
 
 Export an existing lens.
 
-Type annotations for `boto3.client("wellarchitected").export_lens` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").export_lens` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.export_lens)
 
-Boto3 documentation:
-[WellArchitected.Client.export_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.export_lens)
+```python title="Method definition"
+def export_lens(
+    self,
+    *,
+    LensAlias: str,
+    LensVersion: str = ...,
+) -> ExportLensOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportLensInputRequestTypeDef](./type_defs.md#exportlensinputrequesttypedef).
+1. See [:material-code-braces: ExportLensOutputTypeDef](./type_defs.md#exportlensoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `LensVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: ExportLensInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+}
 
-Returns [ExportLensOutputTypeDef](./type_defs.md#exportlensoutputtypedef).
+parent.export_lens(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportLensInputRequestTypeDef](./type_defs.md#exportlensinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("wellarchitected").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WellArchitected.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_answer"></a>
-
-### get_answer
+### get\_answer
 
 Get the answer to a specific question in a workload review.
 
-Type annotations for `boto3.client("wellarchitected").get_answer` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_answer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
 
-Boto3 documentation:
-[WellArchitected.Client.get_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_answer)
+```python title="Method definition"
+def get_answer(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    QuestionId: str,
+    MilestoneNumber: int = ...,
+) -> GetAnswerOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAnswerInputRequestTypeDef](./type_defs.md#getanswerinputrequesttypedef).
+1. See [:material-code-braces: GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `QuestionId`: `str` *(required)*
-- `MilestoneNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetAnswerInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+    "QuestionId": ...,
+}
 
-Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
+parent.get_answer(**kwargs)
+```
 
-<a id="get\_lens"></a>
+1. See [:material-code-braces: GetAnswerInputRequestTypeDef](./type_defs.md#getanswerinputrequesttypedef) 
 
-### get_lens
+### get\_lens
 
 Get an existing lens.
 
-Type annotations for `boto3.client("wellarchitected").get_lens` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_lens` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens)
 
-Boto3 documentation:
-[WellArchitected.Client.get_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens)
+```python title="Method definition"
+def get_lens(
+    self,
+    *,
+    LensAlias: str,
+    LensVersion: str = ...,
+) -> GetLensOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLensInputRequestTypeDef](./type_defs.md#getlensinputrequesttypedef).
+1. See [:material-code-braces: GetLensOutputTypeDef](./type_defs.md#getlensoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `LensVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLensInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+}
 
-Returns [GetLensOutputTypeDef](./type_defs.md#getlensoutputtypedef).
+parent.get_lens(**kwargs)
+```
 
-<a id="get\_lens\_review"></a>
+1. See [:material-code-braces: GetLensInputRequestTypeDef](./type_defs.md#getlensinputrequesttypedef) 
 
-### get_lens_review
+### get\_lens\_review
 
 Get lens review.
 
-Type annotations for `boto3.client("wellarchitected").get_lens_review` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_lens_review` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
 
-Boto3 documentation:
-[WellArchitected.Client.get_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review)
+```python title="Method definition"
+def get_lens_review(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneNumber: int = ...,
+) -> GetLensReviewOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLensReviewInputRequestTypeDef](./type_defs.md#getlensreviewinputrequesttypedef).
+1. See [:material-code-braces: GetLensReviewOutputTypeDef](./type_defs.md#getlensreviewoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `MilestoneNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetLensReviewInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+}
 
-Returns
-[GetLensReviewOutputTypeDef](./type_defs.md#getlensreviewoutputtypedef).
+parent.get_lens_review(**kwargs)
+```
 
-<a id="get\_lens\_review\_report"></a>
+1. See [:material-code-braces: GetLensReviewInputRequestTypeDef](./type_defs.md#getlensreviewinputrequesttypedef) 
 
-### get_lens_review_report
+### get\_lens\_review\_report
 
 Get lens review report.
 
-Type annotations for `boto3.client("wellarchitected").get_lens_review_report`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_lens_review_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
 
-Boto3 documentation:
-[WellArchitected.Client.get_lens_review_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_review_report)
+```python title="Method definition"
+def get_lens_review_report(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneNumber: int = ...,
+) -> GetLensReviewReportOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLensReviewReportInputRequestTypeDef](./type_defs.md#getlensreviewreportinputrequesttypedef).
+1. See [:material-code-braces: GetLensReviewReportOutputTypeDef](./type_defs.md#getlensreviewreportoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `MilestoneNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetLensReviewReportInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+}
 
-Returns
-[GetLensReviewReportOutputTypeDef](./type_defs.md#getlensreviewreportoutputtypedef).
+parent.get_lens_review_report(**kwargs)
+```
 
-<a id="get\_lens\_version\_difference"></a>
+1. See [:material-code-braces: GetLensReviewReportInputRequestTypeDef](./type_defs.md#getlensreviewreportinputrequesttypedef) 
 
-### get_lens_version_difference
+### get\_lens\_version\_difference
 
 Get lens version differences.
 
-Type annotations for
-`boto3.client("wellarchitected").get_lens_version_difference` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_lens_version_difference` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
 
-Boto3 documentation:
-[WellArchitected.Client.get_lens_version_difference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_lens_version_difference)
+```python title="Method definition"
+def get_lens_version_difference(
+    self,
+    *,
+    LensAlias: str,
+    BaseLensVersion: str = ...,
+    TargetLensVersion: str = ...,
+) -> GetLensVersionDifferenceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLensVersionDifferenceInputRequestTypeDef](./type_defs.md#getlensversiondifferenceinputrequesttypedef).
+1. See [:material-code-braces: GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `BaseLensVersion`: `str`
-- `TargetLensVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLensVersionDifferenceInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+}
 
-Returns
-[GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef).
+parent.get_lens_version_difference(**kwargs)
+```
 
-<a id="get\_milestone"></a>
+1. See [:material-code-braces: GetLensVersionDifferenceInputRequestTypeDef](./type_defs.md#getlensversiondifferenceinputrequesttypedef) 
 
-### get_milestone
+### get\_milestone
 
 Get a milestone for an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").get_milestone` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_milestone` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
 
-Boto3 documentation:
-[WellArchitected.Client.get_milestone](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_milestone)
+```python title="Method definition"
+def get_milestone(
+    self,
+    *,
+    WorkloadId: str,
+    MilestoneNumber: int,
+) -> GetMilestoneOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMilestoneInputRequestTypeDef](./type_defs.md#getmilestoneinputrequesttypedef).
+1. See [:material-code-braces: GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `MilestoneNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMilestoneInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "MilestoneNumber": ...,
+}
 
-Returns [GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef).
+parent.get_milestone(**kwargs)
+```
 
-<a id="get\_workload"></a>
+1. See [:material-code-braces: GetMilestoneInputRequestTypeDef](./type_defs.md#getmilestoneinputrequesttypedef) 
 
-### get_workload
+### get\_workload
 
 Get an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").get_workload` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").get_workload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
 
-Boto3 documentation:
-[WellArchitected.Client.get_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.get_workload)
+```python title="Method definition"
+def get_workload(
+    self,
+    *,
+    WorkloadId: str,
+) -> GetWorkloadOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkloadInputRequestTypeDef](./type_defs.md#getworkloadinputrequesttypedef).
+1. See [:material-code-braces: GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWorkloadInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
+parent.get_workload(**kwargs)
+```
 
-<a id="import\_lens"></a>
+1. See [:material-code-braces: GetWorkloadInputRequestTypeDef](./type_defs.md#getworkloadinputrequesttypedef) 
 
-### import_lens
+### import\_lens
 
 Import a new lens.
 
-Type annotations for `boto3.client("wellarchitected").import_lens` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").import_lens` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.import_lens)
 
-Boto3 documentation:
-[WellArchitected.Client.import_lens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.import_lens)
+```python title="Method definition"
+def import_lens(
+    self,
+    *,
+    JSONString: str,
+    ClientRequestToken: str,
+    LensAlias: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> ImportLensOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportLensInputRequestTypeDef](./type_defs.md#importlensinputrequesttypedef).
+1. See [:material-code-braces: ImportLensOutputTypeDef](./type_defs.md#importlensoutputtypedef) 
 
-Keyword-only arguments:
 
-- `JSONString`: `str` *(required)*
-- `ClientRequestToken`: `str` *(required)*
-- `LensAlias`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ImportLensInputRequestTypeDef = {  # (1)
+    "JSONString": ...,
+    "ClientRequestToken": ...,
+}
 
-Returns [ImportLensOutputTypeDef](./type_defs.md#importlensoutputtypedef).
+parent.import_lens(**kwargs)
+```
 
-<a id="list\_answers"></a>
+1. See [:material-code-braces: ImportLensInputRequestTypeDef](./type_defs.md#importlensinputrequesttypedef) 
 
-### list_answers
+### list\_answers
 
 List of answers.
 
-Type annotations for `boto3.client("wellarchitected").list_answers` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_answers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
 
-Boto3 documentation:
-[WellArchitected.Client.list_answers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_answers)
+```python title="Method definition"
+def list_answers(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    PillarId: str = ...,
+    MilestoneNumber: int = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAnswersOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAnswersInputRequestTypeDef](./type_defs.md#listanswersinputrequesttypedef).
+1. See [:material-code-braces: ListAnswersOutputTypeDef](./type_defs.md#listanswersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `PillarId`: `str`
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAnswersInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+}
 
-Returns [ListAnswersOutputTypeDef](./type_defs.md#listanswersoutputtypedef).
+parent.list_answers(**kwargs)
+```
 
-<a id="list\_lens\_review\_improvements"></a>
+1. See [:material-code-braces: ListAnswersInputRequestTypeDef](./type_defs.md#listanswersinputrequesttypedef) 
 
-### list_lens_review_improvements
+### list\_lens\_review\_improvements
 
 List lens review improvements.
 
-Type annotations for
-`boto3.client("wellarchitected").list_lens_review_improvements` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_lens_review_improvements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
 
-Boto3 documentation:
-[WellArchitected.Client.list_lens_review_improvements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_review_improvements)
+```python title="Method definition"
+def list_lens_review_improvements(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    PillarId: str = ...,
+    MilestoneNumber: int = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLensReviewImprovementsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLensReviewImprovementsInputRequestTypeDef](./type_defs.md#listlensreviewimprovementsinputrequesttypedef).
+1. See [:material-code-braces: ListLensReviewImprovementsOutputTypeDef](./type_defs.md#listlensreviewimprovementsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `PillarId`: `str`
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLensReviewImprovementsInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+}
 
-Returns
-[ListLensReviewImprovementsOutputTypeDef](./type_defs.md#listlensreviewimprovementsoutputtypedef).
+parent.list_lens_review_improvements(**kwargs)
+```
 
-<a id="list\_lens\_reviews"></a>
+1. See [:material-code-braces: ListLensReviewImprovementsInputRequestTypeDef](./type_defs.md#listlensreviewimprovementsinputrequesttypedef) 
 
-### list_lens_reviews
+### list\_lens\_reviews
 
 List lens reviews.
 
-Type annotations for `boto3.client("wellarchitected").list_lens_reviews`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_lens_reviews` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
 
-Boto3 documentation:
-[WellArchitected.Client.list_lens_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_reviews)
+```python title="Method definition"
+def list_lens_reviews(
+    self,
+    *,
+    WorkloadId: str,
+    MilestoneNumber: int = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLensReviewsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLensReviewsInputRequestTypeDef](./type_defs.md#listlensreviewsinputrequesttypedef).
+1. See [:material-code-braces: ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLensReviewsInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns
-[ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef).
+parent.list_lens_reviews(**kwargs)
+```
 
-<a id="list\_lens\_shares"></a>
+1. See [:material-code-braces: ListLensReviewsInputRequestTypeDef](./type_defs.md#listlensreviewsinputrequesttypedef) 
 
-### list_lens_shares
+### list\_lens\_shares
 
 List the lens shares associated with the lens.
 
-Type annotations for `boto3.client("wellarchitected").list_lens_shares` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_lens_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_shares)
 
-Boto3 documentation:
-[WellArchitected.Client.list_lens_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lens_shares)
+```python title="Method definition"
+def list_lens_shares(
+    self,
+    *,
+    LensAlias: str,
+    SharedWithPrefix: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListLensSharesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLensSharesInputRequestTypeDef](./type_defs.md#listlenssharesinputrequesttypedef).
+1. See [:material-code-braces: ListLensSharesOutputTypeDef](./type_defs.md#listlenssharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `LensAlias`: `str` *(required)*
-- `SharedWithPrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLensSharesInputRequestTypeDef = {  # (1)
+    "LensAlias": ...,
+}
 
-Returns
-[ListLensSharesOutputTypeDef](./type_defs.md#listlenssharesoutputtypedef).
+parent.list_lens_shares(**kwargs)
+```
 
-<a id="list\_lenses"></a>
+1. See [:material-code-braces: ListLensSharesInputRequestTypeDef](./type_defs.md#listlenssharesinputrequesttypedef) 
 
-### list_lenses
+### list\_lenses
 
 List the available lenses.
 
-Type annotations for `boto3.client("wellarchitected").list_lenses` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_lenses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
 
-Boto3 documentation:
-[WellArchitected.Client.list_lenses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_lenses)
+```python title="Method definition"
+def list_lenses(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    LensType: LensTypeType = ...,  # (1)
+    LensStatus: LensStatusTypeType = ...,  # (2)
+    LensName: str = ...,
+) -> ListLensesOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListLensesInputRequestTypeDef](./type_defs.md#listlensesinputrequesttypedef).
+1. See [:material-code-brackets: LensTypeType](./literals.md#lenstypetype) 
+2. See [:material-code-brackets: LensStatusTypeType](./literals.md#lensstatustypetype) 
+3. See [:material-code-braces: ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `LensType`: [LensTypeType](./literals.md#lenstypetype)
-- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
-- `LensName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLensesInputRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
+parent.list_lenses(**kwargs)
+```
 
-<a id="list\_milestones"></a>
+1. See [:material-code-braces: ListLensesInputRequestTypeDef](./type_defs.md#listlensesinputrequesttypedef) 
 
-### list_milestones
+### list\_milestones
 
 List all milestones for an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").list_milestones` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_milestones` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
 
-Boto3 documentation:
-[WellArchitected.Client.list_milestones](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_milestones)
+```python title="Method definition"
+def list_milestones(
+    self,
+    *,
+    WorkloadId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMilestonesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMilestonesInputRequestTypeDef](./type_defs.md#listmilestonesinputrequesttypedef).
+1. See [:material-code-braces: ListMilestonesOutputTypeDef](./type_defs.md#listmilestonesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMilestonesInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns
-[ListMilestonesOutputTypeDef](./type_defs.md#listmilestonesoutputtypedef).
+parent.list_milestones(**kwargs)
+```
 
-<a id="list\_notifications"></a>
+1. See [:material-code-braces: ListMilestonesInputRequestTypeDef](./type_defs.md#listmilestonesinputrequesttypedef) 
 
-### list_notifications
+### list\_notifications
 
 List lens notifications.
 
-Type annotations for `boto3.client("wellarchitected").list_notifications`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
 
-Boto3 documentation:
-[WellArchitected.Client.list_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_notifications)
+```python title="Method definition"
+def list_notifications(
+    self,
+    *,
+    WorkloadId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListNotificationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListNotificationsInputRequestTypeDef](./type_defs.md#listnotificationsinputrequesttypedef).
+1. See [:material-code-braces: ListNotificationsOutputTypeDef](./type_defs.md#listnotificationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListNotificationsInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns
-[ListNotificationsOutputTypeDef](./type_defs.md#listnotificationsoutputtypedef).
+parent.list_notifications(**kwargs)
+```
 
-<a id="list\_share\_invitations"></a>
+1. See [:material-code-braces: ListNotificationsInputRequestTypeDef](./type_defs.md#listnotificationsinputrequesttypedef) 
 
-### list_share_invitations
+### list\_share\_invitations
 
 List the workload invitations.
 
-Type annotations for `boto3.client("wellarchitected").list_share_invitations`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_share_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
 
-Boto3 documentation:
-[WellArchitected.Client.list_share_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_share_invitations)
+```python title="Method definition"
+def list_share_invitations(
+    self,
+    *,
+    WorkloadNamePrefix: str = ...,
+    LensNamePrefix: str = ...,
+    ShareResourceType: ShareResourceTypeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListShareInvitationsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListShareInvitationsInputRequestTypeDef](./type_defs.md#listshareinvitationsinputrequesttypedef).
+1. See [:material-code-brackets: ShareResourceTypeType](./literals.md#shareresourcetypetype) 
+2. See [:material-code-braces: ListShareInvitationsOutputTypeDef](./type_defs.md#listshareinvitationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadNamePrefix`: `str`
-- `LensNamePrefix`: `str`
-- `ShareResourceType`:
-  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListShareInvitationsInputRequestTypeDef = {  # (1)
+    "WorkloadNamePrefix": ...,
+}
 
-Returns
-[ListShareInvitationsOutputTypeDef](./type_defs.md#listshareinvitationsoutputtypedef).
+parent.list_share_invitations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListShareInvitationsInputRequestTypeDef](./type_defs.md#listshareinvitationsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List the tags for a resource.
 
-Type annotations for `boto3.client("wellarchitected").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[WellArchitected.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    WorkloadArn: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "WorkloadArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_workload\_shares"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_workload_shares
+### list\_workload\_shares
 
 List the workload shares associated with the workload.
 
-Type annotations for `boto3.client("wellarchitected").list_workload_shares`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_workload_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
 
-Boto3 documentation:
-[WellArchitected.Client.list_workload_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workload_shares)
+```python title="Method definition"
+def list_workload_shares(
+    self,
+    *,
+    WorkloadId: str,
+    SharedWithPrefix: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkloadSharesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkloadSharesInputRequestTypeDef](./type_defs.md#listworkloadsharesinputrequesttypedef).
+1. See [:material-code-braces: ListWorkloadSharesOutputTypeDef](./type_defs.md#listworkloadsharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `SharedWithPrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkloadSharesInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns
-[ListWorkloadSharesOutputTypeDef](./type_defs.md#listworkloadsharesoutputtypedef).
+parent.list_workload_shares(**kwargs)
+```
 
-<a id="list\_workloads"></a>
+1. See [:material-code-braces: ListWorkloadSharesInputRequestTypeDef](./type_defs.md#listworkloadsharesinputrequesttypedef) 
 
-### list_workloads
+### list\_workloads
 
 List workloads.
 
-Type annotations for `boto3.client("wellarchitected").list_workloads` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").list_workloads` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
 
-Boto3 documentation:
-[WellArchitected.Client.list_workloads](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.list_workloads)
+```python title="Method definition"
+def list_workloads(
+    self,
+    *,
+    WorkloadNamePrefix: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListWorkloadsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkloadsInputRequestTypeDef](./type_defs.md#listworkloadsinputrequesttypedef).
+1. See [:material-code-braces: ListWorkloadsOutputTypeDef](./type_defs.md#listworkloadsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadNamePrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorkloadsInputRequestTypeDef = {  # (1)
+    "WorkloadNamePrefix": ...,
+}
 
-Returns
-[ListWorkloadsOutputTypeDef](./type_defs.md#listworkloadsoutputtypedef).
+parent.list_workloads(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListWorkloadsInputRequestTypeDef](./type_defs.md#listworkloadsinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to the specified resource.
 
-Type annotations for `boto3.client("wellarchitected").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
 
-Boto3 documentation:
-[WellArchitected.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    WorkloadArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "WorkloadArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("wellarchitected").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
 
-Boto3 documentation:
-[WellArchitected.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    WorkloadArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "WorkloadArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_answer"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_answer
+### update\_answer
 
 Update the answer to a specific question in a workload review.
 
-Type annotations for `boto3.client("wellarchitected").update_answer` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").update_answer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
 
-Boto3 documentation:
-[WellArchitected.Client.update_answer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_answer)
+```python title="Method definition"
+def update_answer(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    QuestionId: str,
+    SelectedChoices: Sequence[str] = ...,
+    ChoiceUpdates: Mapping[str, ChoiceUpdateTypeDef] = ...,  # (1)
+    Notes: str = ...,
+    IsApplicable: bool = ...,
+    Reason: AnswerReasonType = ...,  # (2)
+) -> UpdateAnswerOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAnswerInputRequestTypeDef](./type_defs.md#updateanswerinputrequesttypedef).
+1. See [:material-code-braces: ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef) 
+2. See [:material-code-brackets: AnswerReasonType](./literals.md#answerreasontype) 
+3. See [:material-code-braces: UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `QuestionId`: `str` *(required)*
-- `SelectedChoices`: `Sequence`\[`str`\]
-- `ChoiceUpdates`: `Mapping`\[`str`,
-  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
-- `Notes`: `str`
-- `IsApplicable`: `bool`
-- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
+```python title="Usage example with kwargs"
+kwargs: UpdateAnswerInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+    "QuestionId": ...,
+}
 
-Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
+parent.update_answer(**kwargs)
+```
 
-<a id="update\_lens\_review"></a>
+1. See [:material-code-braces: UpdateAnswerInputRequestTypeDef](./type_defs.md#updateanswerinputrequesttypedef) 
 
-### update_lens_review
+### update\_lens\_review
 
 Update lens review.
 
-Type annotations for `boto3.client("wellarchitected").update_lens_review`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").update_lens_review` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
 
-Boto3 documentation:
-[WellArchitected.Client.update_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_lens_review)
+```python title="Method definition"
+def update_lens_review(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    LensNotes: str = ...,
+    PillarNotes: Mapping[str, str] = ...,
+) -> UpdateLensReviewOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLensReviewInputRequestTypeDef](./type_defs.md#updatelensreviewinputrequesttypedef).
+1. See [:material-code-braces: UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `LensNotes`: `str`
-- `PillarNotes`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLensReviewInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+}
 
-Returns
-[UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef).
+parent.update_lens_review(**kwargs)
+```
 
-<a id="update\_share\_invitation"></a>
+1. See [:material-code-braces: UpdateLensReviewInputRequestTypeDef](./type_defs.md#updatelensreviewinputrequesttypedef) 
 
-### update_share_invitation
+### update\_share\_invitation
 
 Update a workload invitation.
 
-Type annotations for `boto3.client("wellarchitected").update_share_invitation`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").update_share_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
 
-Boto3 documentation:
-[WellArchitected.Client.update_share_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_share_invitation)
+```python title="Method definition"
+def update_share_invitation(
+    self,
+    *,
+    ShareInvitationId: str,
+    ShareInvitationAction: ShareInvitationActionType,  # (1)
+) -> UpdateShareInvitationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateShareInvitationInputRequestTypeDef](./type_defs.md#updateshareinvitationinputrequesttypedef).
+1. See [:material-code-brackets: ShareInvitationActionType](./literals.md#shareinvitationactiontype) 
+2. See [:material-code-braces: UpdateShareInvitationOutputTypeDef](./type_defs.md#updateshareinvitationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ShareInvitationId`: `str` *(required)*
-- `ShareInvitationAction`:
-  [ShareInvitationActionType](./literals.md#shareinvitationactiontype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateShareInvitationInputRequestTypeDef = {  # (1)
+    "ShareInvitationId": ...,
+    "ShareInvitationAction": ...,
+}
 
-Returns
-[UpdateShareInvitationOutputTypeDef](./type_defs.md#updateshareinvitationoutputtypedef).
+parent.update_share_invitation(**kwargs)
+```
 
-<a id="update\_workload"></a>
+1. See [:material-code-braces: UpdateShareInvitationInputRequestTypeDef](./type_defs.md#updateshareinvitationinputrequesttypedef) 
 
-### update_workload
+### update\_workload
 
 Update an existing workload.
 
-Type annotations for `boto3.client("wellarchitected").update_workload` method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").update_workload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
 
-Boto3 documentation:
-[WellArchitected.Client.update_workload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload)
+```python title="Method definition"
+def update_workload(
+    self,
+    *,
+    WorkloadId: str,
+    WorkloadName: str = ...,
+    Description: str = ...,
+    Environment: WorkloadEnvironmentType = ...,  # (1)
+    AccountIds: Sequence[str] = ...,
+    AwsRegions: Sequence[str] = ...,
+    NonAwsRegions: Sequence[str] = ...,
+    PillarPriorities: Sequence[str] = ...,
+    ArchitecturalDesign: str = ...,
+    ReviewOwner: str = ...,
+    IsReviewOwnerUpdateAcknowledged: bool = ...,
+    IndustryType: str = ...,
+    Industry: str = ...,
+    Notes: str = ...,
+    ImprovementStatus: WorkloadImprovementStatusType = ...,  # (2)
+) -> UpdateWorkloadOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkloadInputRequestTypeDef](./type_defs.md#updateworkloadinputrequesttypedef).
+1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
+2. See [:material-code-brackets: WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype) 
+3. See [:material-code-braces: UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef) 
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `WorkloadName`: `str`
-- `Description`: `str`
-- `Environment`:
-  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `AccountIds`: `Sequence`\[`str`\]
-- `AwsRegions`: `Sequence`\[`str`\]
-- `NonAwsRegions`: `Sequence`\[`str`\]
-- `PillarPriorities`: `Sequence`\[`str`\]
-- `ArchitecturalDesign`: `str`
-- `ReviewOwner`: `str`
-- `IsReviewOwnerUpdateAcknowledged`: `bool`
-- `IndustryType`: `str`
-- `Industry`: `str`
-- `Notes`: `str`
-- `ImprovementStatus`:
-  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkloadInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+}
 
-Returns
-[UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef).
+parent.update_workload(**kwargs)
+```
 
-<a id="update\_workload\_share"></a>
+1. See [:material-code-braces: UpdateWorkloadInputRequestTypeDef](./type_defs.md#updateworkloadinputrequesttypedef) 
 
-### update_workload_share
+### update\_workload\_share
 
 Update a workload share.
 
-Type annotations for `boto3.client("wellarchitected").update_workload_share`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").update_workload_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
 
-Boto3 documentation:
-[WellArchitected.Client.update_workload_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.update_workload_share)
+```python title="Method definition"
+def update_workload_share(
+    self,
+    *,
+    ShareId: str,
+    WorkloadId: str,
+    PermissionType: PermissionTypeType,  # (1)
+) -> UpdateWorkloadShareOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkloadShareInputRequestTypeDef](./type_defs.md#updateworkloadshareinputrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-braces: UpdateWorkloadShareOutputTypeDef](./type_defs.md#updateworkloadshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ShareId`: `str` *(required)*
-- `WorkloadId`: `str` *(required)*
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkloadShareInputRequestTypeDef = {  # (1)
+    "ShareId": ...,
+    "WorkloadId": ...,
+    "PermissionType": ...,
+}
 
-Returns
-[UpdateWorkloadShareOutputTypeDef](./type_defs.md#updateworkloadshareoutputtypedef).
+parent.update_workload_share(**kwargs)
+```
 
-<a id="upgrade\_lens\_review"></a>
+1. See [:material-code-braces: UpdateWorkloadShareInputRequestTypeDef](./type_defs.md#updateworkloadshareinputrequesttypedef) 
 
-### upgrade_lens_review
+### upgrade\_lens\_review
 
 Upgrade lens review.
 
-Type annotations for `boto3.client("wellarchitected").upgrade_lens_review`
-method.
+Type annotations and code completion for `#!python boto3.client("wellarchitected").upgrade_lens_review` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
 
-Boto3 documentation:
-[WellArchitected.Client.upgrade_lens_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.upgrade_lens_review)
+```python title="Method definition"
+def upgrade_lens_review(
+    self,
+    *,
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneName: str,
+    ClientRequestToken: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpgradeLensReviewInputRequestTypeDef](./type_defs.md#upgradelensreviewinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkloadId`: `str` *(required)*
-- `LensAlias`: `str` *(required)*
-- `MilestoneName`: `str` *(required)*
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpgradeLensReviewInputRequestTypeDef = {  # (1)
+    "WorkloadId": ...,
+    "LensAlias": ...,
+    "MilestoneName": ...,
+}
+
+parent.upgrade_lens_review(**kwargs)
+```
+
+1. See [:material-code-braces: UpgradeLensReviewInputRequestTypeDef](./type_defs.md#upgradelensreviewinputrequesttypedef) 
+
+
+
+

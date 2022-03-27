@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-servicequotas-module"></a>
-
-# Paginators for boto3 ServiceQuotas module
+# Paginators
 
 > [Index](../README.md) > [ServiceQuotas](./README.md) > Paginators
 
-Auto-generated documentation for
-[ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
-type annotations stubs module
-[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+!!! note ""
 
-- [Paginators for boto3 ServiceQuotas module](#paginators-for-boto3-servicequotas-module)
-  - [ListAWSDefaultServiceQuotasPaginator](#listawsdefaultservicequotaspaginator)
-  - [ListRequestedServiceQuotaChangeHistoryPaginator](#listrequestedservicequotachangehistorypaginator)
-  - [ListRequestedServiceQuotaChangeHistoryByQuotaPaginator](#listrequestedservicequotachangehistorybyquotapaginator)
-  - [ListServiceQuotaIncreaseRequestsInTemplatePaginator](#listservicequotaincreaserequestsintemplatepaginator)
-  - [ListServiceQuotasPaginator](#listservicequotaspaginator)
-  - [ListServicesPaginator](#listservicespaginator)
-
-<a id="listawsdefaultservicequotaspaginator"></a>
+    Auto-generated documentation for [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
+    type annotations stubs module [mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 ## ListAWSDefaultServiceQuotasPaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_aws_default_service_quotas")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_aws_default_service_quotas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListAWSDefaultServiceQuotasPaginator
@@ -35,28 +21,40 @@ def get_list_aws_default_service_quotas_paginator() -> ListAWSDefaultServiceQuot
     return Session().client("service-quotas").get_paginator("list_aws_default_service_quotas")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListAWSDefaultServiceQuotas)
 
-Arguments for `ListAWSDefaultServiceQuotasPaginator.paginate` method:
+### paginate
 
-- `ServiceCode`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAWSDefaultServiceQuotasPaginator.paginate` method.
 
-`ListAWSDefaultServiceQuotasPaginator.paginate` returns
-`_PageIterator`\[[ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAWSDefaultServiceQuotasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrequestedservicequotachangehistorypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAWSDefaultServiceQuotasResponseTypeDef](./type_defs.md#listawsdefaultservicequotasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAWSDefaultServiceQuotasRequestListAWSDefaultServiceQuotasPaginateTypeDef](./type_defs.md#listawsdefaultservicequotasrequestlistawsdefaultservicequotaspaginatetypedef) 
 ## ListRequestedServiceQuotaChangeHistoryPaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeHistoryPaginator
@@ -65,30 +63,42 @@ def get_list_requested_service_quota_change_history_paginator() -> ListRequested
     return Session().client("service-quotas").get_paginator("list_requested_service_quota_change_history")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistory)
 
-Arguments for `ListRequestedServiceQuotaChangeHistoryPaginator.paginate`
-method:
+### paginate
 
-- `ServiceCode`: `str`
-- `Status`: [RequestStatusType](./literals.md#requeststatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRequestedServiceQuotaChangeHistoryPaginator.paginate` method.
 
-`ListRequestedServiceQuotaChangeHistoryPaginator.paginate` returns
-`_PageIterator`\[[ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str = ...,
+    Status: RequestStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRequestedServiceQuotaChangeHistoryResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrequestedservicequotachangehistorybyquotapaginator"></a>
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistoryresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryRequestListRequestedServiceQuotaChangeHistoryPaginateTypeDef](./type_defs.md#listrequestedservicequotachangehistoryrequestlistrequestedservicequotachangehistorypaginatetypedef) 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaPaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history_by_quota")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_requested_service_quota_change_history_by_quota")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListRequestedServiceQuotaChangeHistoryByQuotaPaginator
@@ -97,31 +107,44 @@ def get_list_requested_service_quota_change_history_by_quota_paginator() -> List
     return Session().client("service-quotas").get_paginator("list_requested_service_quota_change_history_by_quota")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListRequestedServiceQuotaChangeHistoryByQuota)
 
-Arguments for `ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate`
-method:
+### paginate
 
-- `ServiceCode`: `str` *(required)*
-- `QuotaCode`: `str` *(required)*
-- `Status`: [RequestStatusType](./literals.md#requeststatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate` method.
 
-`ListRequestedServiceQuotaChangeHistoryByQuotaPaginator.paginate` returns
-`_PageIterator`\[[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    QuotaCode: str,
+    Status: RequestStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listservicequotaincreaserequestsintemplatepaginator"></a>
+1. See [:material-code-brackets: RequestStatusType](./literals.md#requeststatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotaresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+    "QuotaCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRequestedServiceQuotaChangeHistoryByQuotaRequestListRequestedServiceQuotaChangeHistoryByQuotaPaginateTypeDef](./type_defs.md#listrequestedservicequotachangehistorybyquotarequestlistrequestedservicequotachangehistorybyquotapaginatetypedef) 
 ## ListServiceQuotaIncreaseRequestsInTemplatePaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_service_quota_increase_requests_in_template")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_service_quota_increase_requests_in_template")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListServiceQuotaIncreaseRequestsInTemplatePaginator
@@ -130,30 +153,41 @@ def get_list_service_quota_increase_requests_in_template_paginator() -> ListServ
     return Session().client("service-quotas").get_paginator("list_service_quota_increase_requests_in_template")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotaIncreaseRequestsInTemplate)
 
-Arguments for `ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate`
-method:
+### paginate
 
-- `ServiceCode`: `str`
-- `AwsRegion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate` method.
 
-`ListServiceQuotaIncreaseRequestsInTemplatePaginator.paginate` returns
-`_PageIterator`\[[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str = ...,
+    AwsRegion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicequotaspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplateresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceQuotaIncreaseRequestsInTemplateRequestListServiceQuotaIncreaseRequestsInTemplatePaginateTypeDef](./type_defs.md#listservicequotaincreaserequestsintemplaterequestlistservicequotaincreaserequestsintemplatepaginatetypedef) 
 ## ListServiceQuotasPaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_service_quotas")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_service_quotas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListServiceQuotasPaginator
@@ -162,28 +196,40 @@ def get_list_service_quotas_paginator() -> ListServiceQuotasPaginator:
     return Session().client("service-quotas").get_paginator("list_service_quotas")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServiceQuotas)
 
-Arguments for `ListServiceQuotasPaginator.paginate` method:
+### paginate
 
-- `ServiceCode`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceQuotasPaginator.paginate` method.
 
-`ListServiceQuotasPaginator.paginate` returns
-`_PageIterator`\[[ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceCode: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceQuotasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceQuotasResponseTypeDef](./type_defs.md#listservicequotasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceQuotasRequestListServiceQuotasPaginateTypeDef = {  # (1)
+    "ServiceCode": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceQuotasRequestListServiceQuotasPaginateTypeDef](./type_defs.md#listservicequotasrequestlistservicequotaspaginatetypedef) 
 ## ListServicesPaginator
 
-Type annotations for
-`boto3.client("service-quotas").get_paginator("list_services")`.
+Type annotations and code completion for `#!python boto3.client("service-quotas").get_paginator("list_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_service_quotas.paginator import ListServicesPaginator
@@ -192,13 +238,30 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("service-quotas").get_paginator("list_services")
 ```
 
-Boto3 documentation:
-[ServiceQuotas.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas.Paginator.ListServices)
 
-Arguments for `ListServicesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicesPaginator.paginate` method.
 
-`ListServicesPaginator.paginate` returns
-`_PageIterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestListServicesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef) 

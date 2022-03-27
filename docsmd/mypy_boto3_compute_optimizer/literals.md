@@ -1,1085 +1,1151 @@
-<a id="literals-for-boto3-computeoptimizer-module"></a>
-
-# Literals for boto3 ComputeOptimizer module
+# Literals
 
 > [Index](../README.md) > [ComputeOptimizer](./README.md) > Literals
 
-Auto-generated documentation for
-[ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
-type annotations stubs module
-[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+!!! note ""
 
-- [Literals for boto3 ComputeOptimizer module](#literals-for-boto3-computeoptimizer-module)
-  - [CpuVendorArchitectureType](#cpuvendorarchitecturetype)
-  - [CurrencyType](#currencytype)
-  - [CurrentPerformanceRiskType](#currentperformancerisktype)
-  - [EBSFilterNameType](#ebsfilternametype)
-  - [EBSFindingType](#ebsfindingtype)
-  - [EBSMetricNameType](#ebsmetricnametype)
-  - [EnhancedInfrastructureMetricsType](#enhancedinfrastructuremetricstype)
-  - [EnrollmentFilterNameType](#enrollmentfilternametype)
-  - [ExportableAutoScalingGroupFieldType](#exportableautoscalinggroupfieldtype)
-  - [ExportableInstanceFieldType](#exportableinstancefieldtype)
-  - [ExportableLambdaFunctionFieldType](#exportablelambdafunctionfieldtype)
-  - [ExportableVolumeFieldType](#exportablevolumefieldtype)
-  - [FileFormatType](#fileformattype)
-  - [FilterNameType](#filternametype)
-  - [FindingReasonCodeType](#findingreasoncodetype)
-  - [FindingType](#findingtype)
-  - [InferredWorkloadTypeType](#inferredworkloadtypetype)
-  - [InferredWorkloadTypesPreferenceType](#inferredworkloadtypespreferencetype)
-  - [InstanceRecommendationFindingReasonCodeType](#instancerecommendationfindingreasoncodetype)
-  - [JobFilterNameType](#jobfilternametype)
-  - [JobStatusType](#jobstatustype)
-  - [LambdaFunctionMemoryMetricNameType](#lambdafunctionmemorymetricnametype)
-  - [LambdaFunctionMemoryMetricStatisticType](#lambdafunctionmemorymetricstatistictype)
-  - [LambdaFunctionMetricNameType](#lambdafunctionmetricnametype)
-  - [LambdaFunctionMetricStatisticType](#lambdafunctionmetricstatistictype)
-  - [LambdaFunctionRecommendationFilterNameType](#lambdafunctionrecommendationfilternametype)
-  - [LambdaFunctionRecommendationFindingReasonCodeType](#lambdafunctionrecommendationfindingreasoncodetype)
-  - [LambdaFunctionRecommendationFindingType](#lambdafunctionrecommendationfindingtype)
-  - [MetricNameType](#metricnametype)
-  - [MetricStatisticType](#metricstatistictype)
-  - [MigrationEffortType](#migrationefforttype)
-  - [PlatformDifferenceType](#platformdifferencetype)
-  - [RecommendationPreferenceNameType](#recommendationpreferencenametype)
-  - [RecommendationSourceTypeType](#recommendationsourcetypetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ScopeNameType](#scopenametype)
-  - [StatusType](#statustype)
-  - [ComputeOptimizerServiceName](#computeoptimizerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="cpuvendorarchitecturetype"></a>
+    Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+    type annotations stubs module [mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 ## CpuVendorArchitectureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType
+
+def get_value() -> CpuVendorArchitectureType:
+    return "AWS_ARM64"
 ```
 
-Values:
-
-- `AWS_ARM64`
-- `CURRENT`
-
-<a id="currencytype"></a>
-
+```python title="Definition"
+CpuVendorArchitectureType = Literal[
+    "AWS_ARM64",
+    "CURRENT",
+]
+```
 ## CurrencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import CurrencyType
+
+def get_value() -> CurrencyType:
+    return "CNY"
 ```
 
-Values:
-
-- `CNY`
-- `USD`
-
-<a id="currentperformancerisktype"></a>
-
+```python title="Definition"
+CurrencyType = Literal[
+    "CNY",
+    "USD",
+]
+```
 ## CurrentPerformanceRiskType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import CurrentPerformanceRiskType
+
+def get_value() -> CurrentPerformanceRiskType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Low`
-- `Medium`
-- `VeryLow`
-
-<a id="ebsfilternametype"></a>
-
+```python title="Definition"
+CurrentPerformanceRiskType = Literal[
+    "High",
+    "Low",
+    "Medium",
+    "VeryLow",
+]
+```
 ## EBSFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import EBSFilterNameType
+
+def get_value() -> EBSFilterNameType:
+    return "Finding"
 ```
 
-Values:
-
-- `Finding`
-
-<a id="ebsfindingtype"></a>
-
+```python title="Definition"
+EBSFilterNameType = Literal[
+    "Finding",
+]
+```
 ## EBSFindingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import EBSFindingType
+
+def get_value() -> EBSFindingType:
+    return "NotOptimized"
 ```
 
-Values:
-
-- `NotOptimized`
-- `Optimized`
-
-<a id="ebsmetricnametype"></a>
-
+```python title="Definition"
+EBSFindingType = Literal[
+    "NotOptimized",
+    "Optimized",
+]
+```
 ## EBSMetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import EBSMetricNameType
+
+def get_value() -> EBSMetricNameType:
+    return "VolumeReadBytesPerSecond"
 ```
 
-Values:
-
-- `VolumeReadBytesPerSecond`
-- `VolumeReadOpsPerSecond`
-- `VolumeWriteBytesPerSecond`
-- `VolumeWriteOpsPerSecond`
-
-<a id="enhancedinfrastructuremetricstype"></a>
-
+```python title="Definition"
+EBSMetricNameType = Literal[
+    "VolumeReadBytesPerSecond",
+    "VolumeReadOpsPerSecond",
+    "VolumeWriteBytesPerSecond",
+    "VolumeWriteOpsPerSecond",
+]
+```
 ## EnhancedInfrastructureMetricsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import EnhancedInfrastructureMetricsType
+
+def get_value() -> EnhancedInfrastructureMetricsType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Inactive`
-
-<a id="enrollmentfilternametype"></a>
-
+```python title="Definition"
+EnhancedInfrastructureMetricsType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## EnrollmentFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import EnrollmentFilterNameType
+
+def get_value() -> EnrollmentFilterNameType:
+    return "Status"
 ```
 
-Values:
-
-- `Status`
-
-<a id="exportableautoscalinggroupfieldtype"></a>
-
+```python title="Definition"
+EnrollmentFilterNameType = Literal[
+    "Status",
+]
+```
 ## ExportableAutoScalingGroupFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ExportableAutoScalingGroupFieldType
+
+def get_value() -> ExportableAutoScalingGroupFieldType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `AutoScalingGroupArn`
-- `AutoScalingGroupName`
-- `CurrentConfigurationDesiredCapacity`
-- `CurrentConfigurationInstanceType`
-- `CurrentConfigurationMaxSize`
-- `CurrentConfigurationMinSize`
-- `CurrentMemory`
-- `CurrentNetwork`
-- `CurrentOnDemandPrice`
-- `CurrentPerformanceRisk`
-- `CurrentStandardOneYearNoUpfrontReservedPrice`
-- `CurrentStandardThreeYearNoUpfrontReservedPrice`
-- `CurrentStorage`
-- `CurrentVCpus`
-- `EffectiveRecommendationPreferencesCpuVendorArchitectures`
-- `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
-- `EffectiveRecommendationPreferencesInferredWorkloadTypes`
-- `Finding`
-- `InferredWorkloadTypes`
-- `LastRefreshTimestamp`
-- `LookbackPeriodInDays`
-- `RecommendationOptionsConfigurationDesiredCapacity`
-- `RecommendationOptionsConfigurationInstanceType`
-- `RecommendationOptionsConfigurationMaxSize`
-- `RecommendationOptionsConfigurationMinSize`
-- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
-- `RecommendationOptionsEstimatedMonthlySavingsValue`
-- `RecommendationOptionsMemory`
-- `RecommendationOptionsMigrationEffort`
-- `RecommendationOptionsNetwork`
-- `RecommendationOptionsOnDemandPrice`
-- `RecommendationOptionsPerformanceRisk`
-- `RecommendationOptionsProjectedUtilizationMetricsCpuMaximum`
-- `RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum`
-- `RecommendationOptionsSavingsOpportunityPercentage`
-- `RecommendationOptionsStandardOneYearNoUpfrontReservedPrice`
-- `RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice`
-- `RecommendationOptionsStorage`
-- `RecommendationOptionsVcpus`
-- `UtilizationMetricsCpuMaximum`
-- `UtilizationMetricsDiskReadBytesPerSecondMaximum`
-- `UtilizationMetricsDiskReadOpsPerSecondMaximum`
-- `UtilizationMetricsDiskWriteBytesPerSecondMaximum`
-- `UtilizationMetricsDiskWriteOpsPerSecondMaximum`
-- `UtilizationMetricsEbsReadBytesPerSecondMaximum`
-- `UtilizationMetricsEbsReadOpsPerSecondMaximum`
-- `UtilizationMetricsEbsWriteBytesPerSecondMaximum`
-- `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
-- `UtilizationMetricsMemoryMaximum`
-- `UtilizationMetricsNetworkInBytesPerSecondMaximum`
-- `UtilizationMetricsNetworkOutBytesPerSecondMaximum`
-- `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
-- `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
-
-<a id="exportableinstancefieldtype"></a>
-
+```python title="Definition"
+ExportableAutoScalingGroupFieldType = Literal[
+    "AccountId",
+    "AutoScalingGroupArn",
+    "AutoScalingGroupName",
+    "CurrentConfigurationDesiredCapacity",
+    "CurrentConfigurationInstanceType",
+    "CurrentConfigurationMaxSize",
+    "CurrentConfigurationMinSize",
+    "CurrentMemory",
+    "CurrentNetwork",
+    "CurrentOnDemandPrice",
+    "CurrentPerformanceRisk",
+    "CurrentStandardOneYearNoUpfrontReservedPrice",
+    "CurrentStandardThreeYearNoUpfrontReservedPrice",
+    "CurrentStorage",
+    "CurrentVCpus",
+    "EffectiveRecommendationPreferencesCpuVendorArchitectures",
+    "EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics",
+    "EffectiveRecommendationPreferencesInferredWorkloadTypes",
+    "Finding",
+    "InferredWorkloadTypes",
+    "LastRefreshTimestamp",
+    "LookbackPeriodInDays",
+    "RecommendationOptionsConfigurationDesiredCapacity",
+    "RecommendationOptionsConfigurationInstanceType",
+    "RecommendationOptionsConfigurationMaxSize",
+    "RecommendationOptionsConfigurationMinSize",
+    "RecommendationOptionsEstimatedMonthlySavingsCurrency",
+    "RecommendationOptionsEstimatedMonthlySavingsValue",
+    "RecommendationOptionsMemory",
+    "RecommendationOptionsMigrationEffort",
+    "RecommendationOptionsNetwork",
+    "RecommendationOptionsOnDemandPrice",
+    "RecommendationOptionsPerformanceRisk",
+    "RecommendationOptionsProjectedUtilizationMetricsCpuMaximum",
+    "RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum",
+    "RecommendationOptionsSavingsOpportunityPercentage",
+    "RecommendationOptionsStandardOneYearNoUpfrontReservedPrice",
+    "RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice",
+    "RecommendationOptionsStorage",
+    "RecommendationOptionsVcpus",
+    "UtilizationMetricsCpuMaximum",
+    "UtilizationMetricsDiskReadBytesPerSecondMaximum",
+    "UtilizationMetricsDiskReadOpsPerSecondMaximum",
+    "UtilizationMetricsDiskWriteBytesPerSecondMaximum",
+    "UtilizationMetricsDiskWriteOpsPerSecondMaximum",
+    "UtilizationMetricsEbsReadBytesPerSecondMaximum",
+    "UtilizationMetricsEbsReadOpsPerSecondMaximum",
+    "UtilizationMetricsEbsWriteBytesPerSecondMaximum",
+    "UtilizationMetricsEbsWriteOpsPerSecondMaximum",
+    "UtilizationMetricsMemoryMaximum",
+    "UtilizationMetricsNetworkInBytesPerSecondMaximum",
+    "UtilizationMetricsNetworkOutBytesPerSecondMaximum",
+    "UtilizationMetricsNetworkPacketsInPerSecondMaximum",
+    "UtilizationMetricsNetworkPacketsOutPerSecondMaximum",
+]
+```
 ## ExportableInstanceFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ExportableInstanceFieldType
+
+def get_value() -> ExportableInstanceFieldType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `CurrentInstanceType`
-- `CurrentMemory`
-- `CurrentNetwork`
-- `CurrentOnDemandPrice`
-- `CurrentPerformanceRisk`
-- `CurrentStandardOneYearNoUpfrontReservedPrice`
-- `CurrentStandardThreeYearNoUpfrontReservedPrice`
-- `CurrentStorage`
-- `CurrentVCpus`
-- `EffectiveRecommendationPreferencesCpuVendorArchitectures`
-- `EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics`
-- `EffectiveRecommendationPreferencesInferredWorkloadTypes`
-- `Finding`
-- `FindingReasonCodes`
-- `InferredWorkloadTypes`
-- `InstanceArn`
-- `InstanceName`
-- `LastRefreshTimestamp`
-- `LookbackPeriodInDays`
-- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
-- `RecommendationOptionsEstimatedMonthlySavingsValue`
-- `RecommendationOptionsInstanceType`
-- `RecommendationOptionsMemory`
-- `RecommendationOptionsMigrationEffort`
-- `RecommendationOptionsNetwork`
-- `RecommendationOptionsOnDemandPrice`
-- `RecommendationOptionsPerformanceRisk`
-- `RecommendationOptionsPlatformDifferences`
-- `RecommendationOptionsProjectedUtilizationMetricsCpuMaximum`
-- `RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum`
-- `RecommendationOptionsSavingsOpportunityPercentage`
-- `RecommendationOptionsStandardOneYearNoUpfrontReservedPrice`
-- `RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice`
-- `RecommendationOptionsStorage`
-- `RecommendationOptionsVcpus`
-- `RecommendationsSourcesRecommendationSourceArn`
-- `RecommendationsSourcesRecommendationSourceType`
-- `UtilizationMetricsCpuMaximum`
-- `UtilizationMetricsDiskReadBytesPerSecondMaximum`
-- `UtilizationMetricsDiskReadOpsPerSecondMaximum`
-- `UtilizationMetricsDiskWriteBytesPerSecondMaximum`
-- `UtilizationMetricsDiskWriteOpsPerSecondMaximum`
-- `UtilizationMetricsEbsReadBytesPerSecondMaximum`
-- `UtilizationMetricsEbsReadOpsPerSecondMaximum`
-- `UtilizationMetricsEbsWriteBytesPerSecondMaximum`
-- `UtilizationMetricsEbsWriteOpsPerSecondMaximum`
-- `UtilizationMetricsMemoryMaximum`
-- `UtilizationMetricsNetworkInBytesPerSecondMaximum`
-- `UtilizationMetricsNetworkOutBytesPerSecondMaximum`
-- `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
-- `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
-
-<a id="exportablelambdafunctionfieldtype"></a>
-
+```python title="Definition"
+ExportableInstanceFieldType = Literal[
+    "AccountId",
+    "CurrentInstanceType",
+    "CurrentMemory",
+    "CurrentNetwork",
+    "CurrentOnDemandPrice",
+    "CurrentPerformanceRisk",
+    "CurrentStandardOneYearNoUpfrontReservedPrice",
+    "CurrentStandardThreeYearNoUpfrontReservedPrice",
+    "CurrentStorage",
+    "CurrentVCpus",
+    "EffectiveRecommendationPreferencesCpuVendorArchitectures",
+    "EffectiveRecommendationPreferencesEnhancedInfrastructureMetrics",
+    "EffectiveRecommendationPreferencesInferredWorkloadTypes",
+    "Finding",
+    "FindingReasonCodes",
+    "InferredWorkloadTypes",
+    "InstanceArn",
+    "InstanceName",
+    "LastRefreshTimestamp",
+    "LookbackPeriodInDays",
+    "RecommendationOptionsEstimatedMonthlySavingsCurrency",
+    "RecommendationOptionsEstimatedMonthlySavingsValue",
+    "RecommendationOptionsInstanceType",
+    "RecommendationOptionsMemory",
+    "RecommendationOptionsMigrationEffort",
+    "RecommendationOptionsNetwork",
+    "RecommendationOptionsOnDemandPrice",
+    "RecommendationOptionsPerformanceRisk",
+    "RecommendationOptionsPlatformDifferences",
+    "RecommendationOptionsProjectedUtilizationMetricsCpuMaximum",
+    "RecommendationOptionsProjectedUtilizationMetricsMemoryMaximum",
+    "RecommendationOptionsSavingsOpportunityPercentage",
+    "RecommendationOptionsStandardOneYearNoUpfrontReservedPrice",
+    "RecommendationOptionsStandardThreeYearNoUpfrontReservedPrice",
+    "RecommendationOptionsStorage",
+    "RecommendationOptionsVcpus",
+    "RecommendationsSourcesRecommendationSourceArn",
+    "RecommendationsSourcesRecommendationSourceType",
+    "UtilizationMetricsCpuMaximum",
+    "UtilizationMetricsDiskReadBytesPerSecondMaximum",
+    "UtilizationMetricsDiskReadOpsPerSecondMaximum",
+    "UtilizationMetricsDiskWriteBytesPerSecondMaximum",
+    "UtilizationMetricsDiskWriteOpsPerSecondMaximum",
+    "UtilizationMetricsEbsReadBytesPerSecondMaximum",
+    "UtilizationMetricsEbsReadOpsPerSecondMaximum",
+    "UtilizationMetricsEbsWriteBytesPerSecondMaximum",
+    "UtilizationMetricsEbsWriteOpsPerSecondMaximum",
+    "UtilizationMetricsMemoryMaximum",
+    "UtilizationMetricsNetworkInBytesPerSecondMaximum",
+    "UtilizationMetricsNetworkOutBytesPerSecondMaximum",
+    "UtilizationMetricsNetworkPacketsInPerSecondMaximum",
+    "UtilizationMetricsNetworkPacketsOutPerSecondMaximum",
+]
+```
 ## ExportableLambdaFunctionFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ExportableLambdaFunctionFieldType
+
+def get_value() -> ExportableLambdaFunctionFieldType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `CurrentConfigurationMemorySize`
-- `CurrentConfigurationTimeout`
-- `CurrentCostAverage`
-- `CurrentCostTotal`
-- `CurrentPerformanceRisk`
-- `Finding`
-- `FindingReasonCodes`
-- `FunctionArn`
-- `FunctionVersion`
-- `LastRefreshTimestamp`
-- `LookbackPeriodInDays`
-- `NumberOfInvocations`
-- `RecommendationOptionsConfigurationMemorySize`
-- `RecommendationOptionsCostHigh`
-- `RecommendationOptionsCostLow`
-- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
-- `RecommendationOptionsEstimatedMonthlySavingsValue`
-- `RecommendationOptionsProjectedUtilizationMetricsDurationExpected`
-- `RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound`
-- `RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound`
-- `RecommendationOptionsSavingsOpportunityPercentage`
-- `UtilizationMetricsDurationAverage`
-- `UtilizationMetricsDurationMaximum`
-- `UtilizationMetricsMemoryAverage`
-- `UtilizationMetricsMemoryMaximum`
-
-<a id="exportablevolumefieldtype"></a>
-
+```python title="Definition"
+ExportableLambdaFunctionFieldType = Literal[
+    "AccountId",
+    "CurrentConfigurationMemorySize",
+    "CurrentConfigurationTimeout",
+    "CurrentCostAverage",
+    "CurrentCostTotal",
+    "CurrentPerformanceRisk",
+    "Finding",
+    "FindingReasonCodes",
+    "FunctionArn",
+    "FunctionVersion",
+    "LastRefreshTimestamp",
+    "LookbackPeriodInDays",
+    "NumberOfInvocations",
+    "RecommendationOptionsConfigurationMemorySize",
+    "RecommendationOptionsCostHigh",
+    "RecommendationOptionsCostLow",
+    "RecommendationOptionsEstimatedMonthlySavingsCurrency",
+    "RecommendationOptionsEstimatedMonthlySavingsValue",
+    "RecommendationOptionsProjectedUtilizationMetricsDurationExpected",
+    "RecommendationOptionsProjectedUtilizationMetricsDurationLowerBound",
+    "RecommendationOptionsProjectedUtilizationMetricsDurationUpperBound",
+    "RecommendationOptionsSavingsOpportunityPercentage",
+    "UtilizationMetricsDurationAverage",
+    "UtilizationMetricsDurationMaximum",
+    "UtilizationMetricsMemoryAverage",
+    "UtilizationMetricsMemoryMaximum",
+]
+```
 ## ExportableVolumeFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ExportableVolumeFieldType
+
+def get_value() -> ExportableVolumeFieldType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `CurrentConfigurationVolumeBaselineIOPS`
-- `CurrentConfigurationVolumeBaselineThroughput`
-- `CurrentConfigurationVolumeBurstIOPS`
-- `CurrentConfigurationVolumeBurstThroughput`
-- `CurrentConfigurationVolumeSize`
-- `CurrentConfigurationVolumeType`
-- `CurrentMonthlyPrice`
-- `CurrentPerformanceRisk`
-- `Finding`
-- `LastRefreshTimestamp`
-- `LookbackPeriodInDays`
-- `RecommendationOptionsConfigurationVolumeBaselineIOPS`
-- `RecommendationOptionsConfigurationVolumeBaselineThroughput`
-- `RecommendationOptionsConfigurationVolumeBurstIOPS`
-- `RecommendationOptionsConfigurationVolumeBurstThroughput`
-- `RecommendationOptionsConfigurationVolumeSize`
-- `RecommendationOptionsConfigurationVolumeType`
-- `RecommendationOptionsEstimatedMonthlySavingsCurrency`
-- `RecommendationOptionsEstimatedMonthlySavingsValue`
-- `RecommendationOptionsMonthlyPrice`
-- `RecommendationOptionsPerformanceRisk`
-- `RecommendationOptionsSavingsOpportunityPercentage`
-- `UtilizationMetricsVolumeReadBytesPerSecondMaximum`
-- `UtilizationMetricsVolumeReadOpsPerSecondMaximum`
-- `UtilizationMetricsVolumeWriteBytesPerSecondMaximum`
-- `UtilizationMetricsVolumeWriteOpsPerSecondMaximum`
-- `VolumeArn`
-
-<a id="fileformattype"></a>
-
+```python title="Definition"
+ExportableVolumeFieldType = Literal[
+    "AccountId",
+    "CurrentConfigurationVolumeBaselineIOPS",
+    "CurrentConfigurationVolumeBaselineThroughput",
+    "CurrentConfigurationVolumeBurstIOPS",
+    "CurrentConfigurationVolumeBurstThroughput",
+    "CurrentConfigurationVolumeSize",
+    "CurrentConfigurationVolumeType",
+    "CurrentMonthlyPrice",
+    "CurrentPerformanceRisk",
+    "Finding",
+    "LastRefreshTimestamp",
+    "LookbackPeriodInDays",
+    "RecommendationOptionsConfigurationVolumeBaselineIOPS",
+    "RecommendationOptionsConfigurationVolumeBaselineThroughput",
+    "RecommendationOptionsConfigurationVolumeBurstIOPS",
+    "RecommendationOptionsConfigurationVolumeBurstThroughput",
+    "RecommendationOptionsConfigurationVolumeSize",
+    "RecommendationOptionsConfigurationVolumeType",
+    "RecommendationOptionsEstimatedMonthlySavingsCurrency",
+    "RecommendationOptionsEstimatedMonthlySavingsValue",
+    "RecommendationOptionsMonthlyPrice",
+    "RecommendationOptionsPerformanceRisk",
+    "RecommendationOptionsSavingsOpportunityPercentage",
+    "UtilizationMetricsVolumeReadBytesPerSecondMaximum",
+    "UtilizationMetricsVolumeReadOpsPerSecondMaximum",
+    "UtilizationMetricsVolumeWriteBytesPerSecondMaximum",
+    "UtilizationMetricsVolumeWriteOpsPerSecondMaximum",
+    "VolumeArn",
+]
+```
 ## FileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import FileFormatType
+
+def get_value() -> FileFormatType:
+    return "Csv"
 ```
 
-Values:
-
-- `Csv`
-
-<a id="filternametype"></a>
-
+```python title="Definition"
+FileFormatType = Literal[
+    "Csv",
+]
+```
 ## FilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import FilterNameType
+
+def get_value() -> FilterNameType:
+    return "Finding"
 ```
 
-Values:
-
-- `Finding`
-- `FindingReasonCodes`
-- `RecommendationSourceType`
-
-<a id="findingreasoncodetype"></a>
-
+```python title="Definition"
+FilterNameType = Literal[
+    "Finding",
+    "FindingReasonCodes",
+    "RecommendationSourceType",
+]
+```
 ## FindingReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import FindingReasonCodeType
+
+def get_value() -> FindingReasonCodeType:
+    return "MemoryOverprovisioned"
 ```
 
-Values:
-
-- `MemoryOverprovisioned`
-- `MemoryUnderprovisioned`
-
-<a id="findingtype"></a>
-
+```python title="Definition"
+FindingReasonCodeType = Literal[
+    "MemoryOverprovisioned",
+    "MemoryUnderprovisioned",
+]
+```
 ## FindingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import FindingType
+
+def get_value() -> FindingType:
+    return "NotOptimized"
 ```
 
-Values:
-
-- `NotOptimized`
-- `Optimized`
-- `Overprovisioned`
-- `Underprovisioned`
-
-<a id="inferredworkloadtypetype"></a>
-
+```python title="Definition"
+FindingType = Literal[
+    "NotOptimized",
+    "Optimized",
+    "Overprovisioned",
+    "Underprovisioned",
+]
+```
 ## InferredWorkloadTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import InferredWorkloadTypeType
+
+def get_value() -> InferredWorkloadTypeType:
+    return "AmazonEmr"
 ```
 
-Values:
-
-- `AmazonEmr`
-- `ApacheCassandra`
-- `ApacheHadoop`
-- `Memcached`
-- `Nginx`
-- `PostgreSql`
-- `Redis`
-
-<a id="inferredworkloadtypespreferencetype"></a>
-
+```python title="Definition"
+InferredWorkloadTypeType = Literal[
+    "AmazonEmr",
+    "ApacheCassandra",
+    "ApacheHadoop",
+    "Memcached",
+    "Nginx",
+    "PostgreSql",
+    "Redis",
+]
+```
 ## InferredWorkloadTypesPreferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import InferredWorkloadTypesPreferenceType
+
+def get_value() -> InferredWorkloadTypesPreferenceType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Inactive`
-
-<a id="instancerecommendationfindingreasoncodetype"></a>
-
+```python title="Definition"
+InferredWorkloadTypesPreferenceType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## InstanceRecommendationFindingReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import InstanceRecommendationFindingReasonCodeType
+
+def get_value() -> InstanceRecommendationFindingReasonCodeType:
+    return "CPUOverprovisioned"
 ```
 
-Values:
-
-- `CPUOverprovisioned`
-- `CPUUnderprovisioned`
-- `DiskIOPSOverprovisioned`
-- `DiskIOPSUnderprovisioned`
-- `DiskThroughputOverprovisioned`
-- `DiskThroughputUnderprovisioned`
-- `EBSIOPSOverprovisioned`
-- `EBSIOPSUnderprovisioned`
-- `EBSThroughputOverprovisioned`
-- `EBSThroughputUnderprovisioned`
-- `MemoryOverprovisioned`
-- `MemoryUnderprovisioned`
-- `NetworkBandwidthOverprovisioned`
-- `NetworkBandwidthUnderprovisioned`
-- `NetworkPPSOverprovisioned`
-- `NetworkPPSUnderprovisioned`
-
-<a id="jobfilternametype"></a>
-
+```python title="Definition"
+InstanceRecommendationFindingReasonCodeType = Literal[
+    "CPUOverprovisioned",
+    "CPUUnderprovisioned",
+    "DiskIOPSOverprovisioned",
+    "DiskIOPSUnderprovisioned",
+    "DiskThroughputOverprovisioned",
+    "DiskThroughputUnderprovisioned",
+    "EBSIOPSOverprovisioned",
+    "EBSIOPSUnderprovisioned",
+    "EBSThroughputOverprovisioned",
+    "EBSThroughputUnderprovisioned",
+    "MemoryOverprovisioned",
+    "MemoryUnderprovisioned",
+    "NetworkBandwidthOverprovisioned",
+    "NetworkBandwidthUnderprovisioned",
+    "NetworkPPSOverprovisioned",
+    "NetworkPPSUnderprovisioned",
+]
+```
 ## JobFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import JobFilterNameType
+
+def get_value() -> JobFilterNameType:
+    return "JobStatus"
 ```
 
-Values:
-
-- `JobStatus`
-- `ResourceType`
-
-<a id="jobstatustype"></a>
-
+```python title="Definition"
+JobFilterNameType = Literal[
+    "JobStatus",
+    "ResourceType",
+]
+```
 ## JobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import JobStatusType
+
+def get_value() -> JobStatusType:
+    return "Complete"
 ```
 
-Values:
-
-- `Complete`
-- `Failed`
-- `InProgress`
-- `Queued`
-
-<a id="lambdafunctionmemorymetricnametype"></a>
-
+```python title="Definition"
+JobStatusType = Literal[
+    "Complete",
+    "Failed",
+    "InProgress",
+    "Queued",
+]
+```
 ## LambdaFunctionMemoryMetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricNameType
+
+def get_value() -> LambdaFunctionMemoryMetricNameType:
+    return "Duration"
 ```
 
-Values:
-
-- `Duration`
-
-<a id="lambdafunctionmemorymetricstatistictype"></a>
-
+```python title="Definition"
+LambdaFunctionMemoryMetricNameType = Literal[
+    "Duration",
+]
+```
 ## LambdaFunctionMemoryMetricStatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricStatisticType
+
+def get_value() -> LambdaFunctionMemoryMetricStatisticType:
+    return "Expected"
 ```
 
-Values:
-
-- `Expected`
-- `LowerBound`
-- `UpperBound`
-
-<a id="lambdafunctionmetricnametype"></a>
-
+```python title="Definition"
+LambdaFunctionMemoryMetricStatisticType = Literal[
+    "Expected",
+    "LowerBound",
+    "UpperBound",
+]
+```
 ## LambdaFunctionMetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricNameType
+
+def get_value() -> LambdaFunctionMetricNameType:
+    return "Duration"
 ```
 
-Values:
-
-- `Duration`
-- `Memory`
-
-<a id="lambdafunctionmetricstatistictype"></a>
-
+```python title="Definition"
+LambdaFunctionMetricNameType = Literal[
+    "Duration",
+    "Memory",
+]
+```
 ## LambdaFunctionMetricStatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionMetricStatisticType
+
+def get_value() -> LambdaFunctionMetricStatisticType:
+    return "Average"
 ```
 
-Values:
-
-- `Average`
-- `Maximum`
-
-<a id="lambdafunctionrecommendationfilternametype"></a>
-
+```python title="Definition"
+LambdaFunctionMetricStatisticType = Literal[
+    "Average",
+    "Maximum",
+]
+```
 ## LambdaFunctionRecommendationFilterNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFilterNameType
+
+def get_value() -> LambdaFunctionRecommendationFilterNameType:
+    return "Finding"
 ```
 
-Values:
-
-- `Finding`
-- `FindingReasonCode`
-
-<a id="lambdafunctionrecommendationfindingreasoncodetype"></a>
-
+```python title="Definition"
+LambdaFunctionRecommendationFilterNameType = Literal[
+    "Finding",
+    "FindingReasonCode",
+]
+```
 ## LambdaFunctionRecommendationFindingReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFindingReasonCodeType
+
+def get_value() -> LambdaFunctionRecommendationFindingReasonCodeType:
+    return "Inconclusive"
 ```
 
-Values:
-
-- `Inconclusive`
-- `InsufficientData`
-- `MemoryOverprovisioned`
-- `MemoryUnderprovisioned`
-
-<a id="lambdafunctionrecommendationfindingtype"></a>
-
+```python title="Definition"
+LambdaFunctionRecommendationFindingReasonCodeType = Literal[
+    "Inconclusive",
+    "InsufficientData",
+    "MemoryOverprovisioned",
+    "MemoryUnderprovisioned",
+]
+```
 ## LambdaFunctionRecommendationFindingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import LambdaFunctionRecommendationFindingType
+
+def get_value() -> LambdaFunctionRecommendationFindingType:
+    return "NotOptimized"
 ```
 
-Values:
-
-- `NotOptimized`
-- `Optimized`
-- `Unavailable`
-
-<a id="metricnametype"></a>
-
+```python title="Definition"
+LambdaFunctionRecommendationFindingType = Literal[
+    "NotOptimized",
+    "Optimized",
+    "Unavailable",
+]
+```
 ## MetricNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import MetricNameType
+
+def get_value() -> MetricNameType:
+    return "Cpu"
 ```
 
-Values:
-
-- `Cpu`
-- `DISK_READ_BYTES_PER_SECOND`
-- `DISK_READ_OPS_PER_SECOND`
-- `DISK_WRITE_BYTES_PER_SECOND`
-- `DISK_WRITE_OPS_PER_SECOND`
-- `EBS_READ_BYTES_PER_SECOND`
-- `EBS_READ_OPS_PER_SECOND`
-- `EBS_WRITE_BYTES_PER_SECOND`
-- `EBS_WRITE_OPS_PER_SECOND`
-- `Memory`
-- `NETWORK_IN_BYTES_PER_SECOND`
-- `NETWORK_OUT_BYTES_PER_SECOND`
-- `NETWORK_PACKETS_IN_PER_SECOND`
-- `NETWORK_PACKETS_OUT_PER_SECOND`
-
-<a id="metricstatistictype"></a>
-
+```python title="Definition"
+MetricNameType = Literal[
+    "Cpu",
+    "DISK_READ_BYTES_PER_SECOND",
+    "DISK_READ_OPS_PER_SECOND",
+    "DISK_WRITE_BYTES_PER_SECOND",
+    "DISK_WRITE_OPS_PER_SECOND",
+    "EBS_READ_BYTES_PER_SECOND",
+    "EBS_READ_OPS_PER_SECOND",
+    "EBS_WRITE_BYTES_PER_SECOND",
+    "EBS_WRITE_OPS_PER_SECOND",
+    "Memory",
+    "NETWORK_IN_BYTES_PER_SECOND",
+    "NETWORK_OUT_BYTES_PER_SECOND",
+    "NETWORK_PACKETS_IN_PER_SECOND",
+    "NETWORK_PACKETS_OUT_PER_SECOND",
+]
+```
 ## MetricStatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import MetricStatisticType
+
+def get_value() -> MetricStatisticType:
+    return "Average"
 ```
 
-Values:
-
-- `Average`
-- `Maximum`
-
-<a id="migrationefforttype"></a>
-
+```python title="Definition"
+MetricStatisticType = Literal[
+    "Average",
+    "Maximum",
+]
+```
 ## MigrationEffortType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import MigrationEffortType
+
+def get_value() -> MigrationEffortType:
+    return "High"
 ```
 
-Values:
-
-- `High`
-- `Low`
-- `Medium`
-- `VeryLow`
-
-<a id="platformdifferencetype"></a>
-
+```python title="Definition"
+MigrationEffortType = Literal[
+    "High",
+    "Low",
+    "Medium",
+    "VeryLow",
+]
+```
 ## PlatformDifferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import PlatformDifferenceType
+
+def get_value() -> PlatformDifferenceType:
+    return "Architecture"
 ```
 
-Values:
-
-- `Architecture`
-- `Hypervisor`
-- `InstanceStoreAvailability`
-- `NetworkInterface`
-- `StorageInterface`
-- `VirtualizationType`
-
-<a id="recommendationpreferencenametype"></a>
-
+```python title="Definition"
+PlatformDifferenceType = Literal[
+    "Architecture",
+    "Hypervisor",
+    "InstanceStoreAvailability",
+    "NetworkInterface",
+    "StorageInterface",
+    "VirtualizationType",
+]
+```
 ## RecommendationPreferenceNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import RecommendationPreferenceNameType
+
+def get_value() -> RecommendationPreferenceNameType:
+    return "EnhancedInfrastructureMetrics"
 ```
 
-Values:
-
-- `EnhancedInfrastructureMetrics`
-- `InferredWorkloadTypes`
-
-<a id="recommendationsourcetypetype"></a>
-
+```python title="Definition"
+RecommendationPreferenceNameType = Literal[
+    "EnhancedInfrastructureMetrics",
+    "InferredWorkloadTypes",
+]
+```
 ## RecommendationSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import RecommendationSourceTypeType
+
+def get_value() -> RecommendationSourceTypeType:
+    return "AutoScalingGroup"
 ```
 
-Values:
-
-- `AutoScalingGroup`
-- `EbsVolume`
-- `Ec2Instance`
-- `LambdaFunction`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+RecommendationSourceTypeType = Literal[
+    "AutoScalingGroup",
+    "EbsVolume",
+    "Ec2Instance",
+    "LambdaFunction",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "AutoScalingGroup"
 ```
 
-Values:
-
-- `AutoScalingGroup`
-- `EbsVolume`
-- `Ec2Instance`
-- `LambdaFunction`
-- `NotApplicable`
-
-<a id="scopenametype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "AutoScalingGroup",
+    "EbsVolume",
+    "Ec2Instance",
+    "LambdaFunction",
+    "NotApplicable",
+]
+```
 ## ScopeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ScopeNameType
+
+def get_value() -> ScopeNameType:
+    return "AccountId"
 ```
 
-Values:
-
-- `AccountId`
-- `Organization`
-- `ResourceArn`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+ScopeNameType = Literal[
+    "AccountId",
+    "Organization",
+    "ResourceArn",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import StatusType
+
+def get_value() -> StatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Failed`
-- `Inactive`
-- `Pending`
-
-<a id="computeoptimizerservicename"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "Active",
+    "Failed",
+    "Inactive",
+    "Pending",
+]
+```
 ## ComputeOptimizerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ComputeOptimizerServiceName
+
+def get_value() -> ComputeOptimizerServiceName:
+    return "compute-optimizer"
 ```
 
-Values:
-
-- `compute-optimizer`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ComputeOptimizerServiceName = Literal[
+    "compute-optimizer",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_compute_optimizer.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
+## RegionName
 
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Usage Example"
+from mypy_boto3_compute_optimizer.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

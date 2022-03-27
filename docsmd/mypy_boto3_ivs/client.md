@@ -1,60 +1,18 @@
-<a id="ivsclient-for-boto3-ivs-module"></a>
-
-# IVSClient for boto3 IVS module
+# IVSClient
 
 > [Index](../README.md) > [IVS](./README.md) > IVSClient
 
-Auto-generated documentation for
-[IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
-type annotations stubs module
-[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
+!!! note ""
 
-- [IVSClient for boto3 IVS module](#ivsclient-for-boto3-ivs-module)
-  - [IVSClient](#ivsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_get_channel](#batch_get_channel)
-    - [batch_get_stream_key](#batch_get_stream_key)
-    - [can_paginate](#can_paginate)
-    - [create_channel](#create_channel)
-    - [create_recording_configuration](#create_recording_configuration)
-    - [create_stream_key](#create_stream_key)
-    - [delete_channel](#delete_channel)
-    - [delete_playback_key_pair](#delete_playback_key_pair)
-    - [delete_recording_configuration](#delete_recording_configuration)
-    - [delete_stream_key](#delete_stream_key)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_channel](#get_channel)
-    - [get_playback_key_pair](#get_playback_key_pair)
-    - [get_recording_configuration](#get_recording_configuration)
-    - [get_stream](#get_stream)
-    - [get_stream_key](#get_stream_key)
-    - [get_stream_session](#get_stream_session)
-    - [import_playback_key_pair](#import_playback_key_pair)
-    - [list_channels](#list_channels)
-    - [list_playback_key_pairs](#list_playback_key_pairs)
-    - [list_recording_configurations](#list_recording_configurations)
-    - [list_stream_keys](#list_stream_keys)
-    - [list_stream_sessions](#list_stream_sessions)
-    - [list_streams](#list_streams)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_metadata](#put_metadata)
-    - [stop_stream](#stop_stream)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_channel](#update_channel)
-    - [get_paginator](#get_paginator)
-
-<a id="ivsclient"></a>
+    Auto-generated documentation for [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
+    type annotations stubs module [mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 ## IVSClient
 
-Type annotations for `boto3.client("ivs")`
+Type annotations and code completion for `#!python boto3.client("ivs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ivs.client import IVSClient
 
@@ -62,719 +20,943 @@ def get_ivs_client() -> IVSClient:
     return Session().client("ivs")
 ```
 
-Boto3 documentation:
-[IVS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ivs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ivs")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ChannelNotBroadcasting,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.PendingVerification,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.StreamUnavailable,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ivs.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ChannelNotBroadcasting`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.PendingVerification`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.StreamUnavailable`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### batch\_get\_channel
 
-IVSClient exceptions.
+Performs  GetChannel on multiple ARNs simultaneously.
 
-Type annotations for `boto3.client("ivs").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("ivs").batch_get_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel)
 
-Boto3 documentation:
-[IVS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.exceptions)
+```python title="Method definition"
+def batch_get_channel(
+    self,
+    *,
+    arns: Sequence[str],
+) -> BatchGetChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef) 
 
-<a id="batch\_get\_channel"></a>
 
-### batch_get_channel
+```python title="Usage example with kwargs"
+kwargs: BatchGetChannelRequestRequestTypeDef = {  # (1)
+    "arns": ...,
+}
 
-Performs GetChannel on multiple ARNs simultaneously.
+parent.batch_get_channel(**kwargs)
+```
 
-Type annotations for `boto3.client("ivs").batch_get_channel` method.
+1. See [:material-code-braces: BatchGetChannelRequestRequestTypeDef](./type_defs.md#batchgetchannelrequestrequesttypedef) 
 
-Boto3 documentation:
-[IVS.Client.batch_get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_channel)
+### batch\_get\_stream\_key
 
-Arguments mapping described in
-[BatchGetChannelRequestRequestTypeDef](./type_defs.md#batchgetchannelrequestrequesttypedef).
+Performs  GetStreamKey on multiple ARNs simultaneously.
 
-Keyword-only arguments:
+Type annotations and code completion for `#!python boto3.client("ivs").batch_get_stream_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
 
-- `arns`: `Sequence`\[`str`\] *(required)*
+```python title="Method definition"
+def batch_get_stream_key(
+    self,
+    *,
+    arns: Sequence[str],
+) -> BatchGetStreamKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
+1. See [:material-code-braces: BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef) 
 
-<a id="batch\_get\_stream\_key"></a>
 
-### batch_get_stream_key
+```python title="Usage example with kwargs"
+kwargs: BatchGetStreamKeyRequestRequestTypeDef = {  # (1)
+    "arns": ...,
+}
 
-Performs GetStreamKey on multiple ARNs simultaneously.
+parent.batch_get_stream_key(**kwargs)
+```
 
-Type annotations for `boto3.client("ivs").batch_get_stream_key` method.
+1. See [:material-code-braces: BatchGetStreamKeyRequestRequestTypeDef](./type_defs.md#batchgetstreamkeyrequestrequesttypedef) 
 
-Boto3 documentation:
-[IVS.Client.batch_get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.batch_get_stream_key)
-
-Arguments mapping described in
-[BatchGetStreamKeyRequestRequestTypeDef](./type_defs.md#batchgetstreamkeyrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `arns`: `Sequence`\[`str`\] *(required)*
-
-Returns
-[BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ivs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ivs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.can_paginate)
 
-Boto3 documentation:
-[IVS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_channel"></a>
-
-### create_channel
+### create\_channel
 
 Creates a new channel and an associated stream key to start streaming.
 
-Type annotations for `boto3.client("ivs").create_channel` method.
+Type annotations and code completion for `#!python boto3.client("ivs").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel)
 
-Boto3 documentation:
-[IVS.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_channel)
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    authorized: bool = ...,
+    latencyMode: ChannelLatencyModeType = ...,  # (1)
+    name: str = ...,
+    recordingConfigurationArn: str = ...,
+    tags: Mapping[str, str] = ...,
+    type: ChannelTypeType = ...,  # (2)
+) -> CreateChannelResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
+2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+3. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorized`: `bool`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `name`: `str`
-- `recordingConfigurationArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "authorized": ...,
+}
 
-Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+parent.create_channel(**kwargs)
+```
 
-<a id="create\_recording\_configuration"></a>
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
 
-### create_recording_configuration
+### create\_recording\_configuration
 
 Creates a new recording configuration, used to enable recording to Amazon S3.
 
-Type annotations for `boto3.client("ivs").create_recording_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("ivs").create_recording_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration)
 
-Boto3 documentation:
-[IVS.Client.create_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_recording_configuration)
+```python title="Method definition"
+def create_recording_configuration(
+    self,
+    *,
+    destinationConfiguration: DestinationConfigurationTypeDef,  # (1)
+    name: str = ...,
+    tags: Mapping[str, str] = ...,
+    thumbnailConfiguration: ThumbnailConfigurationTypeDef = ...,  # (2)
+) -> CreateRecordingConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecordingConfigurationRequestRequestTypeDef](./type_defs.md#createrecordingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef) 
+2. See [:material-code-braces: ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef) 
+3. See [:material-code-braces: CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `destinationConfiguration`:
-  [DestinationConfigurationTypeDef](./type_defs.md#destinationconfigurationtypedef)
-  *(required)*
-- `name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `thumbnailConfiguration`:
-  [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateRecordingConfigurationRequestRequestTypeDef = {  # (1)
+    "destinationConfiguration": ...,
+}
 
-Returns
-[CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
+parent.create_recording_configuration(**kwargs)
+```
 
-<a id="create\_stream\_key"></a>
+1. See [:material-code-braces: CreateRecordingConfigurationRequestRequestTypeDef](./type_defs.md#createrecordingconfigurationrequestrequesttypedef) 
 
-### create_stream_key
+### create\_stream\_key
 
 Creates a stream key, used to initiate a stream, for the specified channel ARN.
 
-Type annotations for `boto3.client("ivs").create_stream_key` method.
+Type annotations and code completion for `#!python boto3.client("ivs").create_stream_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key)
 
-Boto3 documentation:
-[IVS.Client.create_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.create_stream_key)
+```python title="Method definition"
+def create_stream_key(
+    self,
+    *,
+    channelArn: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateStreamKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamKeyRequestRequestTypeDef](./type_defs.md#createstreamkeyrequestrequesttypedef).
+1. See [:material-code-braces: CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamKeyRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns
-[CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
+parent.create_stream_key(**kwargs)
+```
 
-<a id="delete\_channel"></a>
+1. See [:material-code-braces: CreateStreamKeyRequestRequestTypeDef](./type_defs.md#createstreamkeyrequestrequesttypedef) 
 
-### delete_channel
+### delete\_channel
 
 Deletes the specified channel and its associated stream keys.
 
-Type annotations for `boto3.client("ivs").delete_channel` method.
+Type annotations and code completion for `#!python boto3.client("ivs").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel)
 
-Boto3 documentation:
-[IVS.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_channel)
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    arn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-<a id="delete\_playback\_key\_pair"></a>
+parent.delete_channel(**kwargs)
+```
 
-### delete_playback_key_pair
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
+
+### delete\_playback\_key\_pair
 
 Deletes a specified authorization key pair.
 
-Type annotations for `boto3.client("ivs").delete_playback_key_pair` method.
+Type annotations and code completion for `#!python boto3.client("ivs").delete_playback_key_pair` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
 
-Boto3 documentation:
-[IVS.Client.delete_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_playback_key_pair)
+```python title="Method definition"
+def delete_playback_key_pair(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePlaybackKeyPairRequestRequestTypeDef](./type_defs.md#deleteplaybackkeypairrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePlaybackKeyPairRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_playback_key_pair(**kwargs)
+```
 
-<a id="delete\_recording\_configuration"></a>
+1. See [:material-code-braces: DeletePlaybackKeyPairRequestRequestTypeDef](./type_defs.md#deleteplaybackkeypairrequestrequesttypedef) 
 
-### delete_recording_configuration
+### delete\_recording\_configuration
 
 Deletes the recording configuration for the specified ARN.
 
-Type annotations for `boto3.client("ivs").delete_recording_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("ivs").delete_recording_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
 
-Boto3 documentation:
-[IVS.Client.delete_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_recording_configuration)
+```python title="Method definition"
+def delete_recording_configuration(
+    self,
+    *,
+    arn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecordingConfigurationRequestRequestTypeDef](./type_defs.md#deleterecordingconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecordingConfigurationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-<a id="delete\_stream\_key"></a>
+parent.delete_recording_configuration(**kwargs)
+```
 
-### delete_stream_key
+1. See [:material-code-braces: DeleteRecordingConfigurationRequestRequestTypeDef](./type_defs.md#deleterecordingconfigurationrequestrequesttypedef) 
+
+### delete\_stream\_key
 
 Deletes the stream key for the specified ARN, so it can no longer be used to
 stream.
 
-Type annotations for `boto3.client("ivs").delete_stream_key` method.
+Type annotations and code completion for `#!python boto3.client("ivs").delete_stream_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key)
 
-Boto3 documentation:
-[IVS.Client.delete_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.delete_stream_key)
+```python title="Method definition"
+def delete_stream_key(
+    self,
+    *,
+    arn: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamKeyRequestRequestTypeDef](./type_defs.md#deletestreamkeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamKeyRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_stream_key(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteStreamKeyRequestRequestTypeDef](./type_defs.md#deletestreamkeyrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ivs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("ivs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IVS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_channel"></a>
-
-### get_channel
+### get\_channel
 
 Gets the channel configuration for the specified channel ARN.
 
-Type annotations for `boto3.client("ivs").get_channel` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel)
 
-Boto3 documentation:
-[IVS.Client.get_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_channel)
+```python title="Method definition"
+def get_channel(
+    self,
+    *,
+    arn: str,
+) -> GetChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
+parent.get_channel(**kwargs)
+```
 
-<a id="get\_playback\_key\_pair"></a>
+1. See [:material-code-braces: GetChannelRequestRequestTypeDef](./type_defs.md#getchannelrequestrequesttypedef) 
 
-### get_playback_key_pair
+### get\_playback\_key\_pair
 
 Gets a specified playback authorization key pair and returns the `arn` and
 `fingerprint`.
 
-Type annotations for `boto3.client("ivs").get_playback_key_pair` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_playback_key_pair` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
 
-Boto3 documentation:
-[IVS.Client.get_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_playback_key_pair)
+```python title="Method definition"
+def get_playback_key_pair(
+    self,
+    *,
+    arn: str,
+) -> GetPlaybackKeyPairResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#getplaybackkeypairrequestrequesttypedef).
+1. See [:material-code-braces: GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPlaybackKeyPairRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef).
+parent.get_playback_key_pair(**kwargs)
+```
 
-<a id="get\_recording\_configuration"></a>
+1. See [:material-code-braces: GetPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#getplaybackkeypairrequestrequesttypedef) 
 
-### get_recording_configuration
+### get\_recording\_configuration
 
 Gets the recording configuration for the specified ARN.
 
-Type annotations for `boto3.client("ivs").get_recording_configuration` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_recording_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration)
 
-Boto3 documentation:
-[IVS.Client.get_recording_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_recording_configuration)
+```python title="Method definition"
+def get_recording_configuration(
+    self,
+    *,
+    arn: str,
+) -> GetRecordingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecordingConfigurationRequestRequestTypeDef](./type_defs.md#getrecordingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRecordingConfigurationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef).
+parent.get_recording_configuration(**kwargs)
+```
 
-<a id="get\_stream"></a>
+1. See [:material-code-braces: GetRecordingConfigurationRequestRequestTypeDef](./type_defs.md#getrecordingconfigurationrequestrequesttypedef) 
 
-### get_stream
+### get\_stream
 
 Gets information about the active (live) stream on a specified channel.
 
-Type annotations for `boto3.client("ivs").get_stream` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream)
 
-Boto3 documentation:
-[IVS.Client.get_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream)
+```python title="Method definition"
+def get_stream(
+    self,
+    *,
+    channelArn: str,
+) -> GetStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamRequestRequestTypeDef](./type_defs.md#getstreamrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
+parent.get_stream(**kwargs)
+```
 
-<a id="get\_stream\_key"></a>
+1. See [:material-code-braces: GetStreamRequestRequestTypeDef](./type_defs.md#getstreamrequestrequesttypedef) 
 
-### get_stream_key
+### get\_stream\_key
 
 Gets stream-key information for a specified ARN.
 
-Type annotations for `boto3.client("ivs").get_stream_key` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_stream_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key)
 
-Boto3 documentation:
-[IVS.Client.get_stream_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_key)
+```python title="Method definition"
+def get_stream_key(
+    self,
+    *,
+    arn: str,
+) -> GetStreamKeyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamKeyRequestRequestTypeDef](./type_defs.md#getstreamkeyrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamKeyRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
+parent.get_stream_key(**kwargs)
+```
 
-<a id="get\_stream\_session"></a>
+1. See [:material-code-braces: GetStreamKeyRequestRequestTypeDef](./type_defs.md#getstreamkeyrequestrequesttypedef) 
 
-### get_stream_session
+### get\_stream\_session
 
 Gets metadata on a specified stream.
 
-Type annotations for `boto3.client("ivs").get_stream_session` method.
+Type annotations and code completion for `#!python boto3.client("ivs").get_stream_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_session)
 
-Boto3 documentation:
-[IVS.Client.get_stream_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.get_stream_session)
+```python title="Method definition"
+def get_stream_session(
+    self,
+    *,
+    channelArn: str,
+    streamId: str = ...,
+) -> GetStreamSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamSessionRequestRequestTypeDef](./type_defs.md#getstreamsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
-- `streamId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStreamSessionRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns
-[GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef).
+parent.get_stream_session(**kwargs)
+```
 
-<a id="import\_playback\_key\_pair"></a>
+1. See [:material-code-braces: GetStreamSessionRequestRequestTypeDef](./type_defs.md#getstreamsessionrequestrequesttypedef) 
 
-### import_playback_key_pair
+### import\_playback\_key\_pair
 
 Imports the public portion of a new key pair and returns its `arn` and
 `fingerprint`.
 
-Type annotations for `boto3.client("ivs").import_playback_key_pair` method.
+Type annotations and code completion for `#!python boto3.client("ivs").import_playback_key_pair` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
 
-Boto3 documentation:
-[IVS.Client.import_playback_key_pair](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.import_playback_key_pair)
+```python title="Method definition"
+def import_playback_key_pair(
+    self,
+    *,
+    publicKeyMaterial: str,
+    name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ImportPlaybackKeyPairResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#importplaybackkeypairrequestrequesttypedef).
+1. See [:material-code-braces: ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef) 
 
-Keyword-only arguments:
 
-- `publicKeyMaterial`: `str` *(required)*
-- `name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ImportPlaybackKeyPairRequestRequestTypeDef = {  # (1)
+    "publicKeyMaterial": ...,
+}
 
-Returns
-[ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
+parent.import_playback_key_pair(**kwargs)
+```
 
-<a id="list\_channels"></a>
+1. See [:material-code-braces: ImportPlaybackKeyPairRequestRequestTypeDef](./type_defs.md#importplaybackkeypairrequestrequesttypedef) 
 
-### list_channels
+### list\_channels
 
 Gets summary information about all channels in your account, in the Amazon Web
 Services region where the API request is processed.
 
-Type annotations for `boto3.client("ivs").list_channels` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels)
 
-Boto3 documentation:
-[IVS.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_channels)
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    filterByName: str = ...,
+    filterByRecordingConfigurationArn: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListChannelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
+1. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterByName`: `str`
-- `filterByRecordingConfigurationArn`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "filterByName": ...,
+}
 
-Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+parent.list_channels(**kwargs)
+```
 
-<a id="list\_playback\_key\_pairs"></a>
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
-### list_playback_key_pairs
+### list\_playback\_key\_pairs
 
 Gets summary information about playback key pairs.
 
-Type annotations for `boto3.client("ivs").list_playback_key_pairs` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_playback_key_pairs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
 
-Boto3 documentation:
-[IVS.Client.list_playback_key_pairs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_playback_key_pairs)
+```python title="Method definition"
+def list_playback_key_pairs(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListPlaybackKeyPairsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPlaybackKeyPairsRequestRequestTypeDef](./type_defs.md#listplaybackkeypairsrequestrequesttypedef).
+1. See [:material-code-braces: ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPlaybackKeyPairsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
+parent.list_playback_key_pairs(**kwargs)
+```
 
-<a id="list\_recording\_configurations"></a>
+1. See [:material-code-braces: ListPlaybackKeyPairsRequestRequestTypeDef](./type_defs.md#listplaybackkeypairsrequestrequesttypedef) 
 
-### list_recording_configurations
+### list\_recording\_configurations
 
 Gets summary information about all recording configurations in your account, in
 the Amazon Web Services region where the API request is processed.
 
-Type annotations for `boto3.client("ivs").list_recording_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_recording_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations)
 
-Boto3 documentation:
-[IVS.Client.list_recording_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_recording_configurations)
+```python title="Method definition"
+def list_recording_configurations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListRecordingConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecordingConfigurationsRequestRequestTypeDef](./type_defs.md#listrecordingconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecordingConfigurationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
+parent.list_recording_configurations(**kwargs)
+```
 
-<a id="list\_stream\_keys"></a>
+1. See [:material-code-braces: ListRecordingConfigurationsRequestRequestTypeDef](./type_defs.md#listrecordingconfigurationsrequestrequesttypedef) 
 
-### list_stream_keys
+### list\_stream\_keys
 
 Gets summary information about stream keys for the specified channel.
 
-Type annotations for `boto3.client("ivs").list_stream_keys` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_stream_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys)
 
-Boto3 documentation:
-[IVS.Client.list_stream_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_keys)
+```python title="Method definition"
+def list_stream_keys(
+    self,
+    *,
+    channelArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStreamKeysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamKeysRequestRequestTypeDef](./type_defs.md#liststreamkeysrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamKeysRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns
-[ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
+parent.list_stream_keys(**kwargs)
+```
 
-<a id="list\_stream\_sessions"></a>
+1. See [:material-code-braces: ListStreamKeysRequestRequestTypeDef](./type_defs.md#liststreamkeysrequestrequesttypedef) 
 
-### list_stream_sessions
+### list\_stream\_sessions
 
 Gets a summary of current and previous streams for a specified channel in your
 account, in the AWS region where the API request is processed.
 
-Type annotations for `boto3.client("ivs").list_stream_sessions` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_stream_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_sessions)
 
-Boto3 documentation:
-[IVS.Client.list_stream_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_stream_sessions)
+```python title="Method definition"
+def list_stream_sessions(
+    self,
+    *,
+    channelArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStreamSessionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamSessionsRequestRequestTypeDef](./type_defs.md#liststreamsessionsrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamSessionsRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns
-[ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef).
+parent.list_stream_sessions(**kwargs)
+```
 
-<a id="list\_streams"></a>
+1. See [:material-code-braces: ListStreamSessionsRequestRequestTypeDef](./type_defs.md#liststreamsessionsrequestrequesttypedef) 
 
-### list_streams
+### list\_streams
 
 Gets summary information about live streams in your account, in the Amazon Web
 Services region where the API request is processed.
 
-Type annotations for `boto3.client("ivs").list_streams` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams)
 
-Boto3 documentation:
-[IVS.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_streams)
+```python title="Method definition"
+def list_streams(
+    self,
+    *,
+    filterBy: StreamFiltersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListStreamsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef).
+1. See [:material-code-braces: StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef) 
+2. See [:material-code-braces: ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterBy`: [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamsRequestRequestTypeDef = {  # (1)
+    "filterBy": ...,
+}
 
-Returns
-[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
+parent.list_streams(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets information about Amazon Web Services tags for the specified ARN.
 
-Type annotations for `boto3.client("ivs").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("ivs").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IVS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_metadata"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_metadata
+### put\_metadata
 
 Inserts metadata into the active stream of the specified channel.
 
-Type annotations for `boto3.client("ivs").put_metadata` method.
+Type annotations and code completion for `#!python boto3.client("ivs").put_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata)
 
-Boto3 documentation:
-[IVS.Client.put_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.put_metadata)
+```python title="Method definition"
+def put_metadata(
+    self,
+    *,
+    channelArn: str,
+    metadata: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutMetadataRequestRequestTypeDef](./type_defs.md#putmetadatarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
-- `metadata`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutMetadataRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+    "metadata": ...,
+}
 
-<a id="stop\_stream"></a>
+parent.put_metadata(**kwargs)
+```
 
-### stop_stream
+1. See [:material-code-braces: PutMetadataRequestRequestTypeDef](./type_defs.md#putmetadatarequestrequesttypedef) 
+
+### stop\_stream
 
 Disconnects the incoming RTMPS stream for the specified channel.
 
-Type annotations for `boto3.client("ivs").stop_stream` method.
+Type annotations and code completion for `#!python boto3.client("ivs").stop_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream)
 
-Boto3 documentation:
-[IVS.Client.stop_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.stop_stream)
+```python title="Method definition"
+def stop_stream(
+    self,
+    *,
+    channelArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopStreamRequestRequestTypeDef](./type_defs.md#stopstreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `channelArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopStreamRequestRequestTypeDef = {  # (1)
+    "channelArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_stream(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopStreamRequestRequestTypeDef](./type_defs.md#stopstreamrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates tags for the Amazon Web Services resource with the specified
 ARN.
 
-Type annotations for `boto3.client("ivs").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ivs").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource)
 
-Boto3 documentation:
-[IVS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from the resource with the specified ARN.
 
-Type annotations for `boto3.client("ivs").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("ivs").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource)
 
-Boto3 documentation:
-[IVS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_channel"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_channel
+### update\_channel
 
 Updates a channel's configuration.
 
-Type annotations for `boto3.client("ivs").update_channel` method.
+Type annotations and code completion for `#!python boto3.client("ivs").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel)
 
-Boto3 documentation:
-[IVS.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS.Client.update_channel)
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    arn: str,
+    authorized: bool = ...,
+    latencyMode: ChannelLatencyModeType = ...,  # (1)
+    name: str = ...,
+    recordingConfigurationArn: str = ...,
+    type: ChannelTypeType = ...,  # (2)
+) -> UpdateChannelResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelLatencyModeType](./literals.md#channellatencymodetype) 
+2. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+3. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `authorized`: `bool`
-- `latencyMode`: [ChannelLatencyModeType](./literals.md#channellatencymodetype)
-- `name`: `str`
-- `recordingConfigurationArn`: `str`
-- `type`: [ChannelTypeType](./literals.md#channeltypetype)
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+parent.update_channel(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("ivs").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("ivs").get_paginator` method with overloads.
 
-- `client.get_paginator("list_channels")` ->
-  [ListChannelsPaginator](./paginators.md#listchannelspaginator)
-- `client.get_paginator("list_playback_key_pairs")` ->
-  [ListPlaybackKeyPairsPaginator](./paginators.md#listplaybackkeypairspaginator)
-- `client.get_paginator("list_recording_configurations")` ->
-  [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
-- `client.get_paginator("list_stream_keys")` ->
-  [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
-- `client.get_paginator("list_streams")` ->
-  [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+- `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_playback_key_pairs")` -> [ListPlaybackKeyPairsPaginator](./paginators.md#listplaybackkeypairspaginator)
+- `client.get_paginator("list_recording_configurations")` -> [ListRecordingConfigurationsPaginator](./paginators.md#listrecordingconfigurationspaginator)
+- `client.get_paginator("list_stream_keys")` -> [ListStreamKeysPaginator](./paginators.md#liststreamkeyspaginator)
+- `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+
+
+

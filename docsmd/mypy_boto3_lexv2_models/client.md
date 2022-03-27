@@ -1,98 +1,18 @@
-<a id="lexmodelsv2client-for-boto3-lexmodelsv2-module"></a>
-
-# LexModelsV2Client for boto3 LexModelsV2 module
+# LexModelsV2Client
 
 > [Index](../README.md) > [LexModelsV2](./README.md) > LexModelsV2Client
 
-Auto-generated documentation for
-[LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
-type annotations stubs module
-[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+!!! note ""
 
-- [LexModelsV2Client for boto3 LexModelsV2 module](#lexmodelsv2client-for-boto3-lexmodelsv2-module)
-  - [LexModelsV2Client](#lexmodelsv2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [build_bot_locale](#build_bot_locale)
-    - [can_paginate](#can_paginate)
-    - [create_bot](#create_bot)
-    - [create_bot_alias](#create_bot_alias)
-    - [create_bot_locale](#create_bot_locale)
-    - [create_bot_version](#create_bot_version)
-    - [create_export](#create_export)
-    - [create_intent](#create_intent)
-    - [create_resource_policy](#create_resource_policy)
-    - [create_resource_policy_statement](#create_resource_policy_statement)
-    - [create_slot](#create_slot)
-    - [create_slot_type](#create_slot_type)
-    - [create_upload_url](#create_upload_url)
-    - [delete_bot](#delete_bot)
-    - [delete_bot_alias](#delete_bot_alias)
-    - [delete_bot_locale](#delete_bot_locale)
-    - [delete_bot_version](#delete_bot_version)
-    - [delete_custom_vocabulary](#delete_custom_vocabulary)
-    - [delete_export](#delete_export)
-    - [delete_import](#delete_import)
-    - [delete_intent](#delete_intent)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_resource_policy_statement](#delete_resource_policy_statement)
-    - [delete_slot](#delete_slot)
-    - [delete_slot_type](#delete_slot_type)
-    - [delete_utterances](#delete_utterances)
-    - [describe_bot](#describe_bot)
-    - [describe_bot_alias](#describe_bot_alias)
-    - [describe_bot_locale](#describe_bot_locale)
-    - [describe_bot_recommendation](#describe_bot_recommendation)
-    - [describe_bot_version](#describe_bot_version)
-    - [describe_custom_vocabulary_metadata](#describe_custom_vocabulary_metadata)
-    - [describe_export](#describe_export)
-    - [describe_import](#describe_import)
-    - [describe_intent](#describe_intent)
-    - [describe_resource_policy](#describe_resource_policy)
-    - [describe_slot](#describe_slot)
-    - [describe_slot_type](#describe_slot_type)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_aggregated_utterances](#list_aggregated_utterances)
-    - [list_bot_aliases](#list_bot_aliases)
-    - [list_bot_locales](#list_bot_locales)
-    - [list_bot_recommendations](#list_bot_recommendations)
-    - [list_bot_versions](#list_bot_versions)
-    - [list_bots](#list_bots)
-    - [list_built_in_intents](#list_built_in_intents)
-    - [list_built_in_slot_types](#list_built_in_slot_types)
-    - [list_exports](#list_exports)
-    - [list_imports](#list_imports)
-    - [list_intents](#list_intents)
-    - [list_recommended_intents](#list_recommended_intents)
-    - [list_slot_types](#list_slot_types)
-    - [list_slots](#list_slots)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [search_associated_transcripts](#search_associated_transcripts)
-    - [start_bot_recommendation](#start_bot_recommendation)
-    - [start_import](#start_import)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_bot](#update_bot)
-    - [update_bot_alias](#update_bot_alias)
-    - [update_bot_locale](#update_bot_locale)
-    - [update_bot_recommendation](#update_bot_recommendation)
-    - [update_export](#update_export)
-    - [update_intent](#update_intent)
-    - [update_resource_policy](#update_resource_policy)
-    - [update_slot](#update_slot)
-    - [update_slot_type](#update_slot_type)
-    - [get_waiter](#get_waiter)
-
-<a id="lexmodelsv2client"></a>
+    Auto-generated documentation for [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
+    type annotations stubs module [mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ## LexModelsV2Client
 
-Type annotations for `boto3.client("lexv2-models")`
+Type annotations and code completion for `#!python boto3.client("lexv2-models")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 
@@ -100,1810 +20,2426 @@ def get_lexv2-models_client() -> LexModelsV2Client:
     return Session().client("lexv2-models")
 ```
 
-Boto3 documentation:
-[LexModelsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lexv2-models").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lexv2-models")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.PreconditionFailedException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lexv2_models.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LexModelsV2Client exceptions.
-
-Type annotations for `boto3.client("lexv2-models").exceptions` method.
-
-Boto3 documentation:
-[LexModelsV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="build\_bot\_locale"></a>
-
-### build_bot_locale
+### build\_bot\_locale
 
 Builds a bot, its intents, and its slot types into a specific locale.
 
-Type annotations for `boto3.client("lexv2-models").build_bot_locale` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").build_bot_locale` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
 
-Boto3 documentation:
-[LexModelsV2.Client.build_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.build_bot_locale)
+```python title="Method definition"
+def build_bot_locale(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> BuildBotLocaleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BuildBotLocaleRequestRequestTypeDef](./type_defs.md#buildbotlocalerequestrequesttypedef).
+1. See [:material-code-braces: BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BuildBotLocaleRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef).
+parent.build_bot_locale(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BuildBotLocaleRequestRequestTypeDef](./type_defs.md#buildbotlocalerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lexv2-models").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate)
 
-Boto3 documentation:
-[LexModelsV2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_bot"></a>
-
-### create_bot
+### create\_bot
 
 Creates an Amazon Lex conversational bot.
 
-Type annotations for `boto3.client("lexv2-models").create_bot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot)
+```python title="Method definition"
+def create_bot(
+    self,
+    *,
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: str = ...,
+    botTags: Mapping[str, str] = ...,
+    testBotAliasTags: Mapping[str, str] = ...,
+) -> CreateBotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotRequestRequestTypeDef](./type_defs.md#createbotrequestrequesttypedef).
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-braces: CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botName`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-  *(required)*
-- `idleSessionTTLInSeconds`: `int` *(required)*
-- `description`: `str`
-- `botTags`: `Mapping`\[`str`, `str`\]
-- `testBotAliasTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateBotRequestRequestTypeDef = {  # (1)
+    "botName": ...,
+    "roleArn": ...,
+    "dataPrivacy": ...,
+    "idleSessionTTLInSeconds": ...,
+}
 
-Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+parent.create_bot(**kwargs)
+```
 
-<a id="create\_bot\_alias"></a>
+1. See [:material-code-braces: CreateBotRequestRequestTypeDef](./type_defs.md#createbotrequestrequesttypedef) 
 
-### create_bot_alias
+### create\_bot\_alias
 
 Creates an alias for the specified version of a bot.
 
-Type annotations for `boto3.client("lexv2-models").create_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_alias)
+```python title="Method definition"
+def create_bot_alias(
+    self,
+    *,
+    botAliasName: str,
+    botId: str,
+    description: str = ...,
+    botVersion: str = ...,
+    botAliasLocaleSettings: Mapping[str, BotAliasLocaleSettingsTypeDef] = ...,  # (1)
+    conversationLogSettings: ConversationLogSettingsTypeDef = ...,  # (2)
+    sentimentAnalysisSettings: SentimentAnalysisSettingsTypeDef = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+) -> CreateBotAliasResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotAliasRequestRequestTypeDef](./type_defs.md#createbotaliasrequestrequesttypedef).
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
+4. See [:material-code-braces: CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botAliasName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Mapping`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateBotAliasRequestRequestTypeDef = {  # (1)
+    "botAliasName": ...,
+    "botId": ...,
+}
 
-Returns
-[CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
+parent.create_bot_alias(**kwargs)
+```
 
-<a id="create\_bot\_locale"></a>
+1. See [:material-code-braces: CreateBotAliasRequestRequestTypeDef](./type_defs.md#createbotaliasrequestrequesttypedef) 
 
-### create_bot_locale
+### create\_bot\_locale
 
 Creates a locale in the bot.
 
-Type annotations for `boto3.client("lexv2-models").create_bot_locale` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_bot_locale` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_locale)
+```python title="Method definition"
+def create_bot_locale(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    nluIntentConfidenceThreshold: float,
+    description: str = ...,
+    voiceSettings: VoiceSettingsTypeDef = ...,  # (1)
+) -> CreateBotLocaleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotLocaleRequestRequestTypeDef](./type_defs.md#createbotlocalerequestrequesttypedef).
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
+2. See [:material-code-braces: CreateBotLocaleResponseTypeDef](./type_defs.md#createbotlocaleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `nluIntentConfidenceThreshold`: `float` *(required)*
-- `description`: `str`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateBotLocaleRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "nluIntentConfidenceThreshold": ...,
+}
 
-Returns
-[CreateBotLocaleResponseTypeDef](./type_defs.md#createbotlocaleresponsetypedef).
+parent.create_bot_locale(**kwargs)
+```
 
-<a id="create\_bot\_version"></a>
+1. See [:material-code-braces: CreateBotLocaleRequestRequestTypeDef](./type_defs.md#createbotlocalerequestrequesttypedef) 
 
-### create_bot_version
+### create\_bot\_version
 
 Creates a new version of the bot based on the `DRAFT` version.
 
-Type annotations for `boto3.client("lexv2-models").create_bot_version` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_bot_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_bot_version)
+```python title="Method definition"
+def create_bot_version(
+    self,
+    *,
+    botId: str,
+    botVersionLocaleSpecification: Mapping[str, BotVersionLocaleDetailsTypeDef],  # (1)
+    description: str = ...,
+) -> CreateBotVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBotVersionRequestRequestTypeDef](./type_defs.md#createbotversionrequestrequesttypedef).
+1. See [:material-code-braces: BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef) 
+2. See [:material-code-braces: CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersionLocaleSpecification`: `Mapping`\[`str`,
-  [BotVersionLocaleDetailsTypeDef](./type_defs.md#botversionlocaledetailstypedef)\]
-  *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBotVersionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersionLocaleSpecification": ...,
+}
 
-Returns
-[CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
+parent.create_bot_version(**kwargs)
+```
 
-<a id="create\_export"></a>
+1. See [:material-code-braces: CreateBotVersionRequestRequestTypeDef](./type_defs.md#createbotversionrequestrequesttypedef) 
 
-### create_export
+### create\_export
 
 Creates a zip archive containing the contents of a bot or a bot locale.
 
-Type annotations for `boto3.client("lexv2-models").create_export` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_export)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_export)
+```python title="Method definition"
+def create_export(
+    self,
+    *,
+    resourceSpecification: ExportResourceSpecificationTypeDef,  # (1)
+    fileFormat: ImportExportFileFormatType,  # (2)
+    filePassword: str = ...,
+) -> CreateExportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateExportRequestRequestTypeDef](./type_defs.md#createexportrequestrequesttypedef).
+1. See [:material-code-braces: ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef) 
+2. See [:material-code-brackets: ImportExportFileFormatType](./literals.md#importexportfileformattype) 
+3. See [:material-code-braces: CreateExportResponseTypeDef](./type_defs.md#createexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceSpecification`:
-  [ExportResourceSpecificationTypeDef](./type_defs.md#exportresourcespecificationtypedef)
-  *(required)*
-- `fileFormat`:
-  [ImportExportFileFormatType](./literals.md#importexportfileformattype)
-  *(required)*
-- `filePassword`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateExportRequestRequestTypeDef = {  # (1)
+    "resourceSpecification": ...,
+    "fileFormat": ...,
+}
 
-Returns
-[CreateExportResponseTypeDef](./type_defs.md#createexportresponsetypedef).
+parent.create_export(**kwargs)
+```
 
-<a id="create\_intent"></a>
+1. See [:material-code-braces: CreateExportRequestRequestTypeDef](./type_defs.md#createexportrequestrequesttypedef) 
 
-### create_intent
+### create\_intent
 
 Creates an intent.
 
-Type annotations for `boto3.client("lexv2-models").create_intent` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_intent)
+```python title="Method definition"
+def create_intent(
+    self,
+    *,
+    intentName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: str = ...,
+    parentIntentSignature: str = ...,
+    sampleUtterances: Sequence[SampleUtteranceTypeDef] = ...,  # (1)
+    dialogCodeHook: DialogCodeHookSettingsTypeDef = ...,  # (2)
+    fulfillmentCodeHook: FulfillmentCodeHookSettingsTypeDef = ...,  # (3)
+    intentConfirmationSetting: IntentConfirmationSettingTypeDef = ...,  # (4)
+    intentClosingSetting: IntentClosingSettingTypeDef = ...,  # (5)
+    inputContexts: Sequence[InputContextTypeDef] = ...,  # (6)
+    outputContexts: Sequence[OutputContextTypeDef] = ...,  # (7)
+    kendraConfiguration: KendraConfigurationTypeDef = ...,  # (8)
+) -> CreateIntentResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateIntentRequestRequestTypeDef](./type_defs.md#createintentrequestrequesttypedef).
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+5. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+6. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+7. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+8. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+9. See [:material-code-braces: CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `intentName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateIntentRequestRequestTypeDef = {  # (1)
+    "intentName": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef).
+parent.create_intent(**kwargs)
+```
 
-<a id="create\_resource\_policy"></a>
+1. See [:material-code-braces: CreateIntentRequestRequestTypeDef](./type_defs.md#createintentrequestrequesttypedef) 
 
-### create_resource_policy
+### create\_resource\_policy
 
 Creates a new resource policy with the specified policy statements.
 
-Type annotations for `boto3.client("lexv2-models").create_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy)
+```python title="Method definition"
+def create_resource_policy(
+    self,
+    *,
+    resourceArn: str,
+    policy: str,
+) -> CreateResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourcePolicyRequestRequestTypeDef](./type_defs.md#createresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `policy`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateResourcePolicyRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "policy": ...,
+}
 
-Returns
-[CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef).
+parent.create_resource_policy(**kwargs)
+```
 
-<a id="create\_resource\_policy\_statement"></a>
+1. See [:material-code-braces: CreateResourcePolicyRequestRequestTypeDef](./type_defs.md#createresourcepolicyrequestrequesttypedef) 
 
-### create_resource_policy_statement
+### create\_resource\_policy\_statement
 
 Adds a new resource policy statement to a bot or bot alias.
 
-Type annotations for
-`boto3.client("lexv2-models").create_resource_policy_statement` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_resource_policy_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy_statement)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_resource_policy_statement)
+```python title="Method definition"
+def create_resource_policy_statement(
+    self,
+    *,
+    resourceArn: str,
+    statementId: str,
+    effect: EffectType,  # (1)
+    principal: Sequence[PrincipalTypeDef],  # (2)
+    action: Sequence[str],
+    condition: Mapping[str, Mapping[str, str]] = ...,
+    expectedRevisionId: str = ...,
+) -> CreateResourcePolicyStatementResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourcePolicyStatementRequestRequestTypeDef](./type_defs.md#createresourcepolicystatementrequestrequesttypedef).
+1. See [:material-code-brackets: EffectType](./literals.md#effecttype) 
+2. See [:material-code-braces: PrincipalTypeDef](./type_defs.md#principaltypedef) 
+3. See [:material-code-braces: CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `statementId`: `str` *(required)*
-- `effect`: [EffectType](./literals.md#effecttype) *(required)*
-- `principal`:
-  `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
-  *(required)*
-- `action`: `Sequence`\[`str`\] *(required)*
-- `condition`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `expectedRevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateResourcePolicyStatementRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "statementId": ...,
+    "effect": ...,
+    "principal": ...,
+    "action": ...,
+}
 
-Returns
-[CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef).
+parent.create_resource_policy_statement(**kwargs)
+```
 
-<a id="create\_slot"></a>
+1. See [:material-code-braces: CreateResourcePolicyStatementRequestRequestTypeDef](./type_defs.md#createresourcepolicystatementrequestrequesttypedef) 
 
-### create_slot
+### create\_slot
 
 Creates a slot in an intent.
 
-Type annotations for `boto3.client("lexv2-models").create_slot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_slot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot)
+```python title="Method definition"
+def create_slot(
+    self,
+    *,
+    slotName: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    description: str = ...,
+    slotTypeId: str = ...,
+    obfuscationSetting: ObfuscationSettingTypeDef = ...,  # (2)
+    multipleValuesSetting: MultipleValuesSettingTypeDef = ...,  # (3)
+) -> CreateSlotResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSlotRequestRequestTypeDef](./type_defs.md#createslotrequestrequesttypedef).
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotName`: `str` *(required)*
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-  *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `intentId`: `str` *(required)*
-- `description`: `str`
-- `slotTypeId`: `str`
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSlotRequestRequestTypeDef = {  # (1)
+    "slotName": ...,
+    "valueElicitationSetting": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "intentId": ...,
+}
 
-Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
+parent.create_slot(**kwargs)
+```
 
-<a id="create\_slot\_type"></a>
+1. See [:material-code-braces: CreateSlotRequestRequestTypeDef](./type_defs.md#createslotrequestrequesttypedef) 
 
-### create_slot_type
+### create\_slot\_type
 
 Creates a custom slot type To create a custom slot type, specify a name for the
 slot type and a set of enumeration values, the values that a slot of this type
 can assume.
 
-Type annotations for `boto3.client("lexv2-models").create_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_slot_type)
+```python title="Method definition"
+def create_slot_type(
+    self,
+    *,
+    slotTypeName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: str = ...,
+    slotTypeValues: Sequence[SlotTypeValueTypeDef] = ...,  # (1)
+    valueSelectionSetting: SlotValueSelectionSettingTypeDef = ...,  # (2)
+    parentSlotTypeSignature: str = ...,
+    externalSourceSetting: ExternalSourceSettingTypeDef = ...,  # (3)
+) -> CreateSlotTypeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateSlotTypeRequestRequestTypeDef](./type_defs.md#createslottyperequestrequesttypedef).
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotTypeName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `description`: `str`
-- `slotTypeValues`:
-  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSlotTypeRequestRequestTypeDef = {  # (1)
+    "slotTypeName": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef).
+parent.create_slot_type(**kwargs)
+```
 
-<a id="create\_upload\_url"></a>
+1. See [:material-code-braces: CreateSlotTypeRequestRequestTypeDef](./type_defs.md#createslottyperequestrequesttypedef) 
 
-### create_upload_url
+### create\_upload\_url
 
 Gets a pre-signed S3 write URL that you use to upload the zip archive when
 importing a bot or a bot locale.
 
-Type annotations for `boto3.client("lexv2-models").create_upload_url` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").create_upload_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_upload_url)
 
-Boto3 documentation:
-[LexModelsV2.Client.create_upload_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.create_upload_url)
+```python title="Method definition"
+def create_upload_url(
+    self,
+) -> CreateUploadUrlResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef).
+1. See [:material-code-braces: CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef) 
 
-<a id="delete\_bot"></a>
-
-### delete_bot
+### delete\_bot
 
 Deletes all versions of a bot, including the `Draft` version.
 
-Type annotations for `boto3.client("lexv2-models").delete_bot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot)
+```python title="Method definition"
+def delete_bot(
+    self,
+    *,
+    botId: str,
+    skipResourceInUseCheck: bool = ...,
+) -> DeleteBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotRequestRequestTypeDef](./type_defs.md#deletebotrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `skipResourceInUseCheck`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteBotRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef).
+parent.delete_bot(**kwargs)
+```
 
-<a id="delete\_bot\_alias"></a>
+1. See [:material-code-braces: DeleteBotRequestRequestTypeDef](./type_defs.md#deletebotrequestrequesttypedef) 
 
-### delete_bot_alias
+### delete\_bot\_alias
 
 Deletes the specified bot alias.
 
-Type annotations for `boto3.client("lexv2-models").delete_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_alias)
+```python title="Method definition"
+def delete_bot_alias(
+    self,
+    *,
+    botAliasId: str,
+    botId: str,
+    skipResourceInUseCheck: bool = ...,
+) -> DeleteBotAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBotAliasResponseTypeDef](./type_defs.md#deletebotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botAliasId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `skipResourceInUseCheck`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteBotAliasRequestRequestTypeDef = {  # (1)
+    "botAliasId": ...,
+    "botId": ...,
+}
 
-Returns
-[DeleteBotAliasResponseTypeDef](./type_defs.md#deletebotaliasresponsetypedef).
+parent.delete_bot_alias(**kwargs)
+```
 
-<a id="delete\_bot\_locale"></a>
+1. See [:material-code-braces: DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef) 
 
-### delete_bot_locale
+### delete\_bot\_locale
 
 Removes a locale from a bot.
 
-Type annotations for `boto3.client("lexv2-models").delete_bot_locale` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_bot_locale` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_locale)
+```python title="Method definition"
+def delete_bot_locale(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DeleteBotLocaleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotLocaleRequestRequestTypeDef](./type_defs.md#deletebotlocalerequestrequesttypedef).
+1. See [:material-code-braces: DeleteBotLocaleResponseTypeDef](./type_defs.md#deletebotlocaleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBotLocaleRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DeleteBotLocaleResponseTypeDef](./type_defs.md#deletebotlocaleresponsetypedef).
+parent.delete_bot_locale(**kwargs)
+```
 
-<a id="delete\_bot\_version"></a>
+1. See [:material-code-braces: DeleteBotLocaleRequestRequestTypeDef](./type_defs.md#deletebotlocalerequestrequesttypedef) 
 
-### delete_bot_version
+### delete\_bot\_version
 
 Deletes a specific version of a bot.
 
-Type annotations for `boto3.client("lexv2-models").delete_bot_version` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_bot_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_bot_version)
+```python title="Method definition"
+def delete_bot_version(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    skipResourceInUseCheck: bool = ...,
+) -> DeleteBotVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `skipResourceInUseCheck`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteBotVersionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+}
 
-Returns
-[DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef).
+parent.delete_bot_version(**kwargs)
+```
 
-<a id="delete\_custom\_vocabulary"></a>
+1. See [:material-code-braces: DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef) 
 
-### delete_custom_vocabulary
+### delete\_custom\_vocabulary
 
 Removes a custom vocabulary from the specified locale in the specified bot.
 
-Type annotations for `boto3.client("lexv2-models").delete_custom_vocabulary`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_custom_vocabulary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_custom_vocabulary)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_custom_vocabulary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_custom_vocabulary)
+```python title="Method definition"
+def delete_custom_vocabulary(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DeleteCustomVocabularyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomVocabularyRequestRequestTypeDef](./type_defs.md#deletecustomvocabularyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCustomVocabularyResponseTypeDef](./type_defs.md#deletecustomvocabularyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomVocabularyRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DeleteCustomVocabularyResponseTypeDef](./type_defs.md#deletecustomvocabularyresponsetypedef).
+parent.delete_custom_vocabulary(**kwargs)
+```
 
-<a id="delete\_export"></a>
+1. See [:material-code-braces: DeleteCustomVocabularyRequestRequestTypeDef](./type_defs.md#deletecustomvocabularyrequestrequesttypedef) 
 
-### delete_export
+### delete\_export
 
 Removes a previous export and the associated files stored in an S3 bucket.
 
-Type annotations for `boto3.client("lexv2-models").delete_export` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_export)
+```python title="Method definition"
+def delete_export(
+    self,
+    *,
+    exportId: str,
+) -> DeleteExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteExportRequestRequestTypeDef](./type_defs.md#deleteexportrequestrequesttypedef).
+1. See [:material-code-braces: DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExportRequestRequestTypeDef = {  # (1)
+    "exportId": ...,
+}
 
-Returns
-[DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef).
+parent.delete_export(**kwargs)
+```
 
-<a id="delete\_import"></a>
+1. See [:material-code-braces: DeleteExportRequestRequestTypeDef](./type_defs.md#deleteexportrequestrequesttypedef) 
 
-### delete_import
+### delete\_import
 
 Removes a previous import and the associated file stored in an S3 bucket.
 
-Type annotations for `boto3.client("lexv2-models").delete_import` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_import)
+```python title="Method definition"
+def delete_import(
+    self,
+    *,
+    importId: str,
+) -> DeleteImportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteImportRequestRequestTypeDef](./type_defs.md#deleteimportrequestrequesttypedef).
+1. See [:material-code-braces: DeleteImportResponseTypeDef](./type_defs.md#deleteimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `importId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteImportRequestRequestTypeDef = {  # (1)
+    "importId": ...,
+}
 
-Returns
-[DeleteImportResponseTypeDef](./type_defs.md#deleteimportresponsetypedef).
+parent.delete_import(**kwargs)
+```
 
-<a id="delete\_intent"></a>
+1. See [:material-code-braces: DeleteImportRequestRequestTypeDef](./type_defs.md#deleteimportrequestrequesttypedef) 
 
-### delete_intent
+### delete\_intent
 
 Removes the specified intent.
 
-Type annotations for `boto3.client("lexv2-models").delete_intent` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_intent)
+```python title="Method definition"
+def delete_intent(
+    self,
+    *,
+    intentId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntentRequestRequestTypeDef](./type_defs.md#deleteintentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `intentId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntentRequestRequestTypeDef = {  # (1)
+    "intentId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-<a id="delete\_resource\_policy"></a>
+parent.delete_intent(**kwargs)
+```
 
-### delete_resource_policy
+1. See [:material-code-braces: DeleteIntentRequestRequestTypeDef](./type_defs.md#deleteintentrequestrequesttypedef) 
+
+### delete\_resource\_policy
 
 Removes an existing policy from a bot or bot alias.
 
-Type annotations for `boto3.client("lexv2-models").delete_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    resourceArn: str,
+    expectedRevisionId: str = ...,
+) -> DeleteResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `expectedRevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+parent.delete_resource_policy(**kwargs)
+```
 
-<a id="delete\_resource\_policy\_statement"></a>
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
-### delete_resource_policy_statement
+### delete\_resource\_policy\_statement
 
 Deletes a policy statement from a resource policy.
 
-Type annotations for
-`boto3.client("lexv2-models").delete_resource_policy_statement` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_resource_policy_statement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy_statement)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_resource_policy_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_resource_policy_statement)
+```python title="Method definition"
+def delete_resource_policy_statement(
+    self,
+    *,
+    resourceArn: str,
+    statementId: str,
+    expectedRevisionId: str = ...,
+) -> DeleteResourcePolicyStatementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyStatementRequestRequestTypeDef](./type_defs.md#deleteresourcepolicystatementrequestrequesttypedef).
+1. See [:material-code-braces: DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `statementId`: `str` *(required)*
-- `expectedRevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyStatementRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "statementId": ...,
+}
 
-Returns
-[DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef).
+parent.delete_resource_policy_statement(**kwargs)
+```
 
-<a id="delete\_slot"></a>
+1. See [:material-code-braces: DeleteResourcePolicyStatementRequestRequestTypeDef](./type_defs.md#deleteresourcepolicystatementrequestrequesttypedef) 
 
-### delete_slot
+### delete\_slot
 
 Deletes the specified slot from an intent.
 
-Type annotations for `boto3.client("lexv2-models").delete_slot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_slot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot)
+```python title="Method definition"
+def delete_slot(
+    self,
+    *,
+    slotId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSlotRequestRequestTypeDef](./type_defs.md#deleteslotrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `slotId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `intentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSlotRequestRequestTypeDef = {  # (1)
+    "slotId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "intentId": ...,
+}
 
-<a id="delete\_slot\_type"></a>
+parent.delete_slot(**kwargs)
+```
 
-### delete_slot_type
+1. See [:material-code-braces: DeleteSlotRequestRequestTypeDef](./type_defs.md#deleteslotrequestrequesttypedef) 
+
+### delete\_slot\_type
 
 Deletes a slot type from a bot locale.
 
-Type annotations for `boto3.client("lexv2-models").delete_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_slot_type)
+```python title="Method definition"
+def delete_slot_type(
+    self,
+    *,
+    slotTypeId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    skipResourceInUseCheck: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `slotTypeId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `skipResourceInUseCheck`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteSlotTypeRequestRequestTypeDef = {  # (1)
+    "slotTypeId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-<a id="delete\_utterances"></a>
+parent.delete_slot_type(**kwargs)
+```
 
-### delete_utterances
+1. See [:material-code-braces: DeleteSlotTypeRequestRequestTypeDef](./type_defs.md#deleteslottyperequestrequesttypedef) 
+
+### delete\_utterances
 
 Deletes stored utterances.
 
-Type annotations for `boto3.client("lexv2-models").delete_utterances` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").delete_utterances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_utterances)
 
-Boto3 documentation:
-[LexModelsV2.Client.delete_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.delete_utterances)
+```python title="Method definition"
+def delete_utterances(
+    self,
+    *,
+    botId: str,
+    localeId: str = ...,
+    sessionId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `localeId`: `str`
-- `sessionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteUtterancesRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_utterances(**kwargs)
+```
 
-<a id="describe\_bot"></a>
+1. See [:material-code-braces: DeleteUtterancesRequestRequestTypeDef](./type_defs.md#deleteutterancesrequestrequesttypedef) 
 
-### describe_bot
+### describe\_bot
 
 Provides metadata information about a bot.
 
-Type annotations for `boto3.client("lexv2-models").describe_bot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot)
+```python title="Method definition"
+def describe_bot(
+    self,
+    *,
+    botId: str,
+) -> DescribeBotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBotRequestRequestTypeDef](./type_defs.md#describebotrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBotRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns
-[DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef).
+parent.describe_bot(**kwargs)
+```
 
-<a id="describe\_bot\_alias"></a>
+1. See [:material-code-braces: DescribeBotRequestRequestTypeDef](./type_defs.md#describebotrequestrequesttypedef) 
 
-### describe_bot_alias
+### describe\_bot\_alias
 
 Get information about a specific bot alias.
 
-Type annotations for `boto3.client("lexv2-models").describe_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_alias)
+```python title="Method definition"
+def describe_bot_alias(
+    self,
+    *,
+    botAliasId: str,
+    botId: str,
+) -> DescribeBotAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBotAliasRequestRequestTypeDef](./type_defs.md#describebotaliasrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botAliasId`: `str` *(required)*
-- `botId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBotAliasRequestRequestTypeDef = {  # (1)
+    "botAliasId": ...,
+    "botId": ...,
+}
 
-Returns
-[DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef).
+parent.describe_bot_alias(**kwargs)
+```
 
-<a id="describe\_bot\_locale"></a>
+1. See [:material-code-braces: DescribeBotAliasRequestRequestTypeDef](./type_defs.md#describebotaliasrequestrequesttypedef) 
 
-### describe_bot_locale
+### describe\_bot\_locale
 
 Describes the settings that a bot has for a specific locale.
 
-Type annotations for `boto3.client("lexv2-models").describe_bot_locale` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_bot_locale` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_locale)
+```python title="Method definition"
+def describe_bot_locale(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DescribeBotLocaleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBotLocaleRequestRequestTypeDef](./type_defs.md#describebotlocalerequestrequesttypedef).
+1. See [:material-code-braces: DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBotLocaleRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef).
+parent.describe_bot_locale(**kwargs)
+```
 
-<a id="describe\_bot\_recommendation"></a>
+1. See [:material-code-braces: DescribeBotLocaleRequestRequestTypeDef](./type_defs.md#describebotlocalerequestrequesttypedef) 
 
-### describe_bot_recommendation
+### describe\_bot\_recommendation
 
 Provides metadata information about a bot recommendation.
 
-Type annotations for `boto3.client("lexv2-models").describe_bot_recommendation`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_bot_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_recommendation)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_recommendation)
+```python title="Method definition"
+def describe_bot_recommendation(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+) -> DescribeBotRecommendationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBotRecommendationRequestRequestTypeDef](./type_defs.md#describebotrecommendationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBotRecommendationResponseTypeDef](./type_defs.md#describebotrecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `botRecommendationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBotRecommendationRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "botRecommendationId": ...,
+}
 
-Returns
-[DescribeBotRecommendationResponseTypeDef](./type_defs.md#describebotrecommendationresponsetypedef).
+parent.describe_bot_recommendation(**kwargs)
+```
 
-<a id="describe\_bot\_version"></a>
+1. See [:material-code-braces: DescribeBotRecommendationRequestRequestTypeDef](./type_defs.md#describebotrecommendationrequestrequesttypedef) 
 
-### describe_bot_version
+### describe\_bot\_version
 
 Provides metadata about a version of a bot.
 
-Type annotations for `boto3.client("lexv2-models").describe_bot_version`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_bot_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_bot_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_bot_version)
+```python title="Method definition"
+def describe_bot_version(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+) -> DescribeBotVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBotVersionRequestRequestTypeDef](./type_defs.md#describebotversionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBotVersionRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+}
 
-Returns
-[DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef).
+parent.describe_bot_version(**kwargs)
+```
 
-<a id="describe\_custom\_vocabulary\_metadata"></a>
+1. See [:material-code-braces: DescribeBotVersionRequestRequestTypeDef](./type_defs.md#describebotversionrequestrequesttypedef) 
 
-### describe_custom_vocabulary_metadata
+### describe\_custom\_vocabulary\_metadata
 
 Provides metadata information about a custom vocabulary.
 
-Type annotations for
-`boto3.client("lexv2-models").describe_custom_vocabulary_metadata` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_custom_vocabulary_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_custom_vocabulary_metadata)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_custom_vocabulary_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_custom_vocabulary_metadata)
+```python title="Method definition"
+def describe_custom_vocabulary_metadata(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DescribeCustomVocabularyMetadataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomVocabularyMetadataRequestRequestTypeDef](./type_defs.md#describecustomvocabularymetadatarequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomVocabularyMetadataRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef).
+parent.describe_custom_vocabulary_metadata(**kwargs)
+```
 
-<a id="describe\_export"></a>
+1. See [:material-code-braces: DescribeCustomVocabularyMetadataRequestRequestTypeDef](./type_defs.md#describecustomvocabularymetadatarequestrequesttypedef) 
 
-### describe_export
+### describe\_export
 
 Gets information about a specific export.
 
-Type annotations for `boto3.client("lexv2-models").describe_export` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_export)
+```python title="Method definition"
+def describe_export(
+    self,
+    *,
+    exportId: str,
+) -> DescribeExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExportRequestRequestTypeDef](./type_defs.md#describeexportrequestrequesttypedef).
+1. See [:material-code-braces: DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExportRequestRequestTypeDef = {  # (1)
+    "exportId": ...,
+}
 
-Returns
-[DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef).
+parent.describe_export(**kwargs)
+```
 
-<a id="describe\_import"></a>
+1. See [:material-code-braces: DescribeExportRequestRequestTypeDef](./type_defs.md#describeexportrequestrequesttypedef) 
 
-### describe_import
+### describe\_import
 
 Gets information about a specific import.
 
-Type annotations for `boto3.client("lexv2-models").describe_import` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_import)
+```python title="Method definition"
+def describe_import(
+    self,
+    *,
+    importId: str,
+) -> DescribeImportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeImportRequestRequestTypeDef](./type_defs.md#describeimportrequestrequesttypedef).
+1. See [:material-code-braces: DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `importId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeImportRequestRequestTypeDef = {  # (1)
+    "importId": ...,
+}
 
-Returns
-[DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef).
+parent.describe_import(**kwargs)
+```
 
-<a id="describe\_intent"></a>
+1. See [:material-code-braces: DescribeImportRequestRequestTypeDef](./type_defs.md#describeimportrequestrequesttypedef) 
 
-### describe_intent
+### describe\_intent
 
 Returns metadata about an intent.
 
-Type annotations for `boto3.client("lexv2-models").describe_intent` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_intent)
+```python title="Method definition"
+def describe_intent(
+    self,
+    *,
+    intentId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DescribeIntentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIntentRequestRequestTypeDef](./type_defs.md#describeintentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `intentId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIntentRequestRequestTypeDef = {  # (1)
+    "intentId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef).
+parent.describe_intent(**kwargs)
+```
 
-<a id="describe\_resource\_policy"></a>
+1. See [:material-code-braces: DescribeIntentRequestRequestTypeDef](./type_defs.md#describeintentrequestrequesttypedef) 
 
-### describe_resource_policy
+### describe\_resource\_policy
 
 Gets the resource policy and policy revision for a bot or bot alias.
 
-Type annotations for `boto3.client("lexv2-models").describe_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_resource_policy)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_resource_policy)
+```python title="Method definition"
+def describe_resource_policy(
+    self,
+    *,
+    resourceArn: str,
+) -> DescribeResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourcePolicyRequestRequestTypeDef](./type_defs.md#describeresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResourcePolicyRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
+parent.describe_resource_policy(**kwargs)
+```
 
-<a id="describe\_slot"></a>
+1. See [:material-code-braces: DescribeResourcePolicyRequestRequestTypeDef](./type_defs.md#describeresourcepolicyrequestrequesttypedef) 
 
-### describe_slot
+### describe\_slot
 
 Gets metadata information about a slot.
 
-Type annotations for `boto3.client("lexv2-models").describe_slot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_slot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot)
+```python title="Method definition"
+def describe_slot(
+    self,
+    *,
+    slotId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+) -> DescribeSlotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSlotRequestRequestTypeDef](./type_defs.md#describeslotrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `intentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSlotRequestRequestTypeDef = {  # (1)
+    "slotId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "intentId": ...,
+}
 
-Returns
-[DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef).
+parent.describe_slot(**kwargs)
+```
 
-<a id="describe\_slot\_type"></a>
+1. See [:material-code-braces: DescribeSlotRequestRequestTypeDef](./type_defs.md#describeslotrequestrequesttypedef) 
 
-### describe_slot_type
+### describe\_slot\_type
 
 Gets metadata information about a slot type.
 
-Type annotations for `boto3.client("lexv2-models").describe_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").describe_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
 
-Boto3 documentation:
-[LexModelsV2.Client.describe_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.describe_slot_type)
+```python title="Method definition"
+def describe_slot_type(
+    self,
+    *,
+    slotTypeId: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+) -> DescribeSlotTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSlotTypeRequestRequestTypeDef](./type_defs.md#describeslottyperequestrequesttypedef).
+1. See [:material-code-braces: DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotTypeId`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSlotTypeRequestRequestTypeDef = {  # (1)
+    "slotTypeId": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef).
+parent.describe_slot_type(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSlotTypeRequestRequestTypeDef](./type_defs.md#describeslottyperequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lexv2-models").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LexModelsV2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_aggregated\_utterances"></a>
-
-### list_aggregated_utterances
+### list\_aggregated\_utterances
 
 Provides a list of utterances that users have sent to the bot.
 
-Type annotations for `boto3.client("lexv2-models").list_aggregated_utterances`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_aggregated_utterances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_aggregated_utterances)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_aggregated_utterances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_aggregated_utterances)
+```python title="Method definition"
+def list_aggregated_utterances(
+    self,
+    *,
+    botId: str,
+    localeId: str,
+    aggregationDuration: UtteranceAggregationDurationTypeDef,  # (1)
+    botAliasId: str = ...,
+    botVersion: str = ...,
+    sortBy: AggregatedUtterancesSortByTypeDef = ...,  # (2)
+    filters: Sequence[AggregatedUtterancesFilterTypeDef] = ...,  # (3)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAggregatedUtterancesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListAggregatedUtterancesRequestRequestTypeDef](./type_defs.md#listaggregatedutterancesrequestrequesttypedef).
+1. See [:material-code-braces: UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef) 
+2. See [:material-code-braces: AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef) 
+3. See [:material-code-braces: AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef) 
+4. See [:material-code-braces: ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `aggregationDuration`:
-  [UtteranceAggregationDurationTypeDef](./type_defs.md#utteranceaggregationdurationtypedef)
-  *(required)*
-- `botAliasId`: `str`
-- `botVersion`: `str`
-- `sortBy`:
-  [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
-- `filters`:
-  `Sequence`\[[AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAggregatedUtterancesRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "localeId": ...,
+    "aggregationDuration": ...,
+}
 
-Returns
-[ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef).
+parent.list_aggregated_utterances(**kwargs)
+```
 
-<a id="list\_bot\_aliases"></a>
+1. See [:material-code-braces: ListAggregatedUtterancesRequestRequestTypeDef](./type_defs.md#listaggregatedutterancesrequestrequesttypedef) 
 
-### list_bot_aliases
+### list\_bot\_aliases
 
 Gets a list of aliases for the specified bot.
 
-Type annotations for `boto3.client("lexv2-models").list_bot_aliases` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_bot_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_bot_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_aliases)
+```python title="Method definition"
+def list_bot_aliases(
+    self,
+    *,
+    botId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBotAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBotAliasesRequestRequestTypeDef](./type_defs.md#listbotaliasesrequestrequesttypedef).
+1. See [:material-code-braces: ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotAliasesRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns
-[ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef).
+parent.list_bot_aliases(**kwargs)
+```
 
-<a id="list\_bot\_locales"></a>
+1. See [:material-code-braces: ListBotAliasesRequestRequestTypeDef](./type_defs.md#listbotaliasesrequestrequesttypedef) 
 
-### list_bot_locales
+### list\_bot\_locales
 
 Gets a list of locales for the specified bot.
 
-Type annotations for `boto3.client("lexv2-models").list_bot_locales` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_bot_locales` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_bot_locales](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_locales)
+```python title="Method definition"
+def list_bot_locales(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    sortBy: BotLocaleSortByTypeDef = ...,  # (1)
+    filters: Sequence[BotLocaleFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBotLocalesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListBotLocalesRequestRequestTypeDef](./type_defs.md#listbotlocalesrequestrequesttypedef).
+1. See [:material-code-braces: BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef) 
+2. See [:material-code-braces: BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef) 
+3. See [:material-code-braces: ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `sortBy`: [BotLocaleSortByTypeDef](./type_defs.md#botlocalesortbytypedef)
-- `filters`:
-  `Sequence`\[[BotLocaleFilterTypeDef](./type_defs.md#botlocalefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotLocalesRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+}
 
-Returns
-[ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef).
+parent.list_bot_locales(**kwargs)
+```
 
-<a id="list\_bot\_recommendations"></a>
+1. See [:material-code-braces: ListBotLocalesRequestRequestTypeDef](./type_defs.md#listbotlocalesrequestrequesttypedef) 
 
-### list_bot_recommendations
+### list\_bot\_recommendations
 
 Get a list of bot recommendations that meet the specified criteria.
 
-Type annotations for `boto3.client("lexv2-models").list_bot_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_bot_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_recommendations)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_bot_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_recommendations)
+```python title="Method definition"
+def list_bot_recommendations(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBotRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBotRecommendationsRequestRequestTypeDef](./type_defs.md#listbotrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListBotRecommendationsResponseTypeDef](./type_defs.md#listbotrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotRecommendationsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[ListBotRecommendationsResponseTypeDef](./type_defs.md#listbotrecommendationsresponsetypedef).
+parent.list_bot_recommendations(**kwargs)
+```
 
-<a id="list\_bot\_versions"></a>
+1. See [:material-code-braces: ListBotRecommendationsRequestRequestTypeDef](./type_defs.md#listbotrecommendationsrequestrequesttypedef) 
 
-### list_bot_versions
+### list\_bot\_versions
 
 Gets information about all of the versions of a bot.
 
-Type annotations for `boto3.client("lexv2-models").list_bot_versions` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_bot_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_bot_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bot_versions)
+```python title="Method definition"
+def list_bot_versions(
+    self,
+    *,
+    botId: str,
+    sortBy: BotVersionSortByTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBotVersionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBotVersionsRequestRequestTypeDef](./type_defs.md#listbotversionsrequestrequesttypedef).
+1. See [:material-code-braces: BotVersionSortByTypeDef](./type_defs.md#botversionsortbytypedef) 
+2. See [:material-code-braces: ListBotVersionsResponseTypeDef](./type_defs.md#listbotversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `sortBy`: [BotVersionSortByTypeDef](./type_defs.md#botversionsortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotVersionsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns
-[ListBotVersionsResponseTypeDef](./type_defs.md#listbotversionsresponsetypedef).
+parent.list_bot_versions(**kwargs)
+```
 
-<a id="list\_bots"></a>
+1. See [:material-code-braces: ListBotVersionsRequestRequestTypeDef](./type_defs.md#listbotversionsrequestrequesttypedef) 
 
-### list_bots
+### list\_bots
 
 Gets a list of available bots.
 
-Type annotations for `boto3.client("lexv2-models").list_bots` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_bots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_bots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_bots)
+```python title="Method definition"
+def list_bots(
+    self,
+    *,
+    sortBy: BotSortByTypeDef = ...,  # (1)
+    filters: Sequence[BotFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBotsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef).
+1. See [:material-code-braces: BotSortByTypeDef](./type_defs.md#botsortbytypedef) 
+2. See [:material-code-braces: BotFilterTypeDef](./type_defs.md#botfiltertypedef) 
+3. See [:material-code-braces: ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sortBy`: [BotSortByTypeDef](./type_defs.md#botsortbytypedef)
-- `filters`: `Sequence`\[[BotFilterTypeDef](./type_defs.md#botfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBotsRequestRequestTypeDef = {  # (1)
+    "sortBy": ...,
+}
 
-Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+parent.list_bots(**kwargs)
+```
 
-<a id="list\_built\_in\_intents"></a>
+1. See [:material-code-braces: ListBotsRequestRequestTypeDef](./type_defs.md#listbotsrequestrequesttypedef) 
 
-### list_built_in_intents
+### list\_built\_in\_intents
 
 Gets a list of built-in intents provided by Amazon Lex that you can use in your
 bot.
 
-Type annotations for `boto3.client("lexv2-models").list_built_in_intents`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_built_in_intents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_built_in_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_intents)
+```python title="Method definition"
+def list_built_in_intents(
+    self,
+    *,
+    localeId: str,
+    sortBy: BuiltInIntentSortByTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBuiltInIntentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBuiltInIntentsRequestRequestTypeDef](./type_defs.md#listbuiltinintentsrequestrequesttypedef).
+1. See [:material-code-braces: BuiltInIntentSortByTypeDef](./type_defs.md#builtinintentsortbytypedef) 
+2. See [:material-code-braces: ListBuiltInIntentsResponseTypeDef](./type_defs.md#listbuiltinintentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `localeId`: `str` *(required)*
-- `sortBy`:
-  [BuiltInIntentSortByTypeDef](./type_defs.md#builtinintentsortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBuiltInIntentsRequestRequestTypeDef = {  # (1)
+    "localeId": ...,
+}
 
-Returns
-[ListBuiltInIntentsResponseTypeDef](./type_defs.md#listbuiltinintentsresponsetypedef).
+parent.list_built_in_intents(**kwargs)
+```
 
-<a id="list\_built\_in\_slot\_types"></a>
+1. See [:material-code-braces: ListBuiltInIntentsRequestRequestTypeDef](./type_defs.md#listbuiltinintentsrequestrequesttypedef) 
 
-### list_built_in_slot_types
+### list\_built\_in\_slot\_types
 
 Gets a list of built-in slot types that meet the specified criteria.
 
-Type annotations for `boto3.client("lexv2-models").list_built_in_slot_types`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_built_in_slot_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_built_in_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_built_in_slot_types)
+```python title="Method definition"
+def list_built_in_slot_types(
+    self,
+    *,
+    localeId: str,
+    sortBy: BuiltInSlotTypeSortByTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBuiltInSlotTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBuiltInSlotTypesRequestRequestTypeDef](./type_defs.md#listbuiltinslottypesrequestrequesttypedef).
+1. See [:material-code-braces: BuiltInSlotTypeSortByTypeDef](./type_defs.md#builtinslottypesortbytypedef) 
+2. See [:material-code-braces: ListBuiltInSlotTypesResponseTypeDef](./type_defs.md#listbuiltinslottypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `localeId`: `str` *(required)*
-- `sortBy`:
-  [BuiltInSlotTypeSortByTypeDef](./type_defs.md#builtinslottypesortbytypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBuiltInSlotTypesRequestRequestTypeDef = {  # (1)
+    "localeId": ...,
+}
 
-Returns
-[ListBuiltInSlotTypesResponseTypeDef](./type_defs.md#listbuiltinslottypesresponsetypedef).
+parent.list_built_in_slot_types(**kwargs)
+```
 
-<a id="list\_exports"></a>
+1. See [:material-code-braces: ListBuiltInSlotTypesRequestRequestTypeDef](./type_defs.md#listbuiltinslottypesrequestrequesttypedef) 
 
-### list_exports
+### list\_exports
 
 Lists the exports for a bot, bot locale, or custom vocabulary.
 
-Type annotations for `boto3.client("lexv2-models").list_exports` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_exports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_exports)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_exports)
+```python title="Method definition"
+def list_exports(
+    self,
+    *,
+    botId: str = ...,
+    botVersion: str = ...,
+    sortBy: ExportSortByTypeDef = ...,  # (1)
+    filters: Sequence[ExportFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    localeId: str = ...,
+) -> ListExportsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListExportsRequestRequestTypeDef](./type_defs.md#listexportsrequestrequesttypedef).
+1. See [:material-code-braces: ExportSortByTypeDef](./type_defs.md#exportsortbytypedef) 
+2. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
+3. See [:material-code-braces: ListExportsResponseTypeDef](./type_defs.md#listexportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `sortBy`: [ExportSortByTypeDef](./type_defs.md#exportsortbytypedef)
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `localeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExportsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns
-[ListExportsResponseTypeDef](./type_defs.md#listexportsresponsetypedef).
+parent.list_exports(**kwargs)
+```
 
-<a id="list\_imports"></a>
+1. See [:material-code-braces: ListExportsRequestRequestTypeDef](./type_defs.md#listexportsrequestrequesttypedef) 
 
-### list_imports
+### list\_imports
 
 Lists the imports for a bot, bot locale, or custom vocabulary.
 
-Type annotations for `boto3.client("lexv2-models").list_imports` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_imports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_imports)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_imports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_imports)
+```python title="Method definition"
+def list_imports(
+    self,
+    *,
+    botId: str = ...,
+    botVersion: str = ...,
+    sortBy: ImportSortByTypeDef = ...,  # (1)
+    filters: Sequence[ImportFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    localeId: str = ...,
+) -> ListImportsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListImportsRequestRequestTypeDef](./type_defs.md#listimportsrequestrequesttypedef).
+1. See [:material-code-braces: ImportSortByTypeDef](./type_defs.md#importsortbytypedef) 
+2. See [:material-code-braces: ImportFilterTypeDef](./type_defs.md#importfiltertypedef) 
+3. See [:material-code-braces: ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str`
-- `botVersion`: `str`
-- `sortBy`: [ImportSortByTypeDef](./type_defs.md#importsortbytypedef)
-- `filters`:
-  `Sequence`\[[ImportFilterTypeDef](./type_defs.md#importfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `localeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListImportsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+}
 
-Returns
-[ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef).
+parent.list_imports(**kwargs)
+```
 
-<a id="list\_intents"></a>
+1. See [:material-code-braces: ListImportsRequestRequestTypeDef](./type_defs.md#listimportsrequestrequesttypedef) 
 
-### list_intents
+### list\_intents
 
 Get a list of intents that meet the specified criteria.
 
-Type annotations for `boto3.client("lexv2-models").list_intents` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_intents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_intents)
+```python title="Method definition"
+def list_intents(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    sortBy: IntentSortByTypeDef = ...,  # (1)
+    filters: Sequence[IntentFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListIntentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListIntentsRequestRequestTypeDef](./type_defs.md#listintentsrequestrequesttypedef).
+1. See [:material-code-braces: IntentSortByTypeDef](./type_defs.md#intentsortbytypedef) 
+2. See [:material-code-braces: IntentFilterTypeDef](./type_defs.md#intentfiltertypedef) 
+3. See [:material-code-braces: ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sortBy`: [IntentSortByTypeDef](./type_defs.md#intentsortbytypedef)
-- `filters`:
-  `Sequence`\[[IntentFilterTypeDef](./type_defs.md#intentfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIntentsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef).
+parent.list_intents(**kwargs)
+```
 
-<a id="list\_recommended\_intents"></a>
+1. See [:material-code-braces: ListIntentsRequestRequestTypeDef](./type_defs.md#listintentsrequestrequesttypedef) 
 
-### list_recommended_intents
+### list\_recommended\_intents
 
 Gets a list of recommended intents provided by the bot recommendation that you
 can use in your bot.
 
-Type annotations for `boto3.client("lexv2-models").list_recommended_intents`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_recommended_intents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_recommended_intents)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_recommended_intents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_recommended_intents)
+```python title="Method definition"
+def list_recommended_intents(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListRecommendedIntentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecommendedIntentsRequestRequestTypeDef](./type_defs.md#listrecommendedintentsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecommendedIntentsResponseTypeDef](./type_defs.md#listrecommendedintentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `botRecommendationId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRecommendedIntentsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "botRecommendationId": ...,
+}
 
-Returns
-[ListRecommendedIntentsResponseTypeDef](./type_defs.md#listrecommendedintentsresponsetypedef).
+parent.list_recommended_intents(**kwargs)
+```
 
-<a id="list\_slot\_types"></a>
+1. See [:material-code-braces: ListRecommendedIntentsRequestRequestTypeDef](./type_defs.md#listrecommendedintentsrequestrequesttypedef) 
 
-### list_slot_types
+### list\_slot\_types
 
 Gets a list of slot types that match the specified criteria.
 
-Type annotations for `boto3.client("lexv2-models").list_slot_types` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_slot_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_slot_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slot_types)
+```python title="Method definition"
+def list_slot_types(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    sortBy: SlotTypeSortByTypeDef = ...,  # (1)
+    filters: Sequence[SlotTypeFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSlotTypesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListSlotTypesRequestRequestTypeDef](./type_defs.md#listslottypesrequestrequesttypedef).
+1. See [:material-code-braces: SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef) 
+2. See [:material-code-braces: SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef) 
+3. See [:material-code-braces: ListSlotTypesResponseTypeDef](./type_defs.md#listslottypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `sortBy`: [SlotTypeSortByTypeDef](./type_defs.md#slottypesortbytypedef)
-- `filters`:
-  `Sequence`\[[SlotTypeFilterTypeDef](./type_defs.md#slottypefiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSlotTypesRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[ListSlotTypesResponseTypeDef](./type_defs.md#listslottypesresponsetypedef).
+parent.list_slot_types(**kwargs)
+```
 
-<a id="list\_slots"></a>
+1. See [:material-code-braces: ListSlotTypesRequestRequestTypeDef](./type_defs.md#listslottypesrequestrequesttypedef) 
 
-### list_slots
+### list\_slots
 
 Gets a list of slots that match the specified criteria.
 
-Type annotations for `boto3.client("lexv2-models").list_slots` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_slots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_slots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_slots)
+```python title="Method definition"
+def list_slots(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    sortBy: SlotSortByTypeDef = ...,  # (1)
+    filters: Sequence[SlotFilterTypeDef] = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSlotsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListSlotsRequestRequestTypeDef](./type_defs.md#listslotsrequestrequesttypedef).
+1. See [:material-code-braces: SlotSortByTypeDef](./type_defs.md#slotsortbytypedef) 
+2. See [:material-code-braces: SlotFilterTypeDef](./type_defs.md#slotfiltertypedef) 
+3. See [:material-code-braces: ListSlotsResponseTypeDef](./type_defs.md#listslotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `intentId`: `str` *(required)*
-- `sortBy`: [SlotSortByTypeDef](./type_defs.md#slotsortbytypedef)
-- `filters`:
-  `Sequence`\[[SlotFilterTypeDef](./type_defs.md#slotfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSlotsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "intentId": ...,
+}
 
-Returns [ListSlotsResponseTypeDef](./type_defs.md#listslotsresponsetypedef).
+parent.list_slots(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSlotsRequestRequestTypeDef](./type_defs.md#listslotsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets a list of tags associated with a resource.
 
-Type annotations for `boto3.client("lexv2-models").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LexModelsV2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="search\_associated\_transcripts"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### search_associated_transcripts
+### search\_associated\_transcripts
 
 Search for associated transcripts that meet the specified criteria.
 
-Type annotations for
-`boto3.client("lexv2-models").search_associated_transcripts` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").search_associated_transcripts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.search_associated_transcripts)
 
-Boto3 documentation:
-[LexModelsV2.Client.search_associated_transcripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.search_associated_transcripts)
+```python title="Method definition"
+def search_associated_transcripts(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    filters: Sequence[AssociatedTranscriptFilterTypeDef],  # (1)
+    searchOrder: SearchOrderType = ...,  # (2)
+    maxResults: int = ...,
+    nextIndex: int = ...,
+) -> SearchAssociatedTranscriptsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchAssociatedTranscriptsRequestRequestTypeDef](./type_defs.md#searchassociatedtranscriptsrequestrequesttypedef).
+1. See [:material-code-braces: AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef) 
+2. See [:material-code-brackets: SearchOrderType](./literals.md#searchordertype) 
+3. See [:material-code-braces: SearchAssociatedTranscriptsResponseTypeDef](./type_defs.md#searchassociatedtranscriptsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `botRecommendationId`: `str` *(required)*
-- `filters`:
-  `Sequence`\[[AssociatedTranscriptFilterTypeDef](./type_defs.md#associatedtranscriptfiltertypedef)\]
-  *(required)*
-- `searchOrder`: [SearchOrderType](./literals.md#searchordertype)
-- `maxResults`: `int`
-- `nextIndex`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchAssociatedTranscriptsRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "botRecommendationId": ...,
+    "filters": ...,
+}
 
-Returns
-[SearchAssociatedTranscriptsResponseTypeDef](./type_defs.md#searchassociatedtranscriptsresponsetypedef).
+parent.search_associated_transcripts(**kwargs)
+```
 
-<a id="start\_bot\_recommendation"></a>
+1. See [:material-code-braces: SearchAssociatedTranscriptsRequestRequestTypeDef](./type_defs.md#searchassociatedtranscriptsrequestrequesttypedef) 
 
-### start_bot_recommendation
+### start\_bot\_recommendation
 
 Use this to provide your transcript data, and to start the bot recommendation
 process.
 
-Type annotations for `boto3.client("lexv2-models").start_bot_recommendation`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").start_bot_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_bot_recommendation)
 
-Boto3 documentation:
-[LexModelsV2.Client.start_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_bot_recommendation)
+```python title="Method definition"
+def start_bot_recommendation(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    transcriptSourceSetting: TranscriptSourceSettingTypeDef,  # (1)
+    encryptionSetting: EncryptionSettingTypeDef = ...,  # (2)
+) -> StartBotRecommendationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartBotRecommendationRequestRequestTypeDef](./type_defs.md#startbotrecommendationrequestrequesttypedef).
+1. See [:material-code-braces: TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef) 
+2. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+3. See [:material-code-braces: StartBotRecommendationResponseTypeDef](./type_defs.md#startbotrecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `transcriptSourceSetting`:
-  [TranscriptSourceSettingTypeDef](./type_defs.md#transcriptsourcesettingtypedef)
-  *(required)*
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
+```python title="Usage example with kwargs"
+kwargs: StartBotRecommendationRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "transcriptSourceSetting": ...,
+}
 
-Returns
-[StartBotRecommendationResponseTypeDef](./type_defs.md#startbotrecommendationresponsetypedef).
+parent.start_bot_recommendation(**kwargs)
+```
 
-<a id="start\_import"></a>
+1. See [:material-code-braces: StartBotRecommendationRequestRequestTypeDef](./type_defs.md#startbotrecommendationrequestrequesttypedef) 
 
-### start_import
+### start\_import
 
-Starts importing a bot, bot locale, or custom vocabulary from a zip archive
-that you uploaded to an S3 bucket.
+Starts importing a bot, bot locale, or custom vocabulary from a zip archive that
+you uploaded to an S3 bucket.
 
-Type annotations for `boto3.client("lexv2-models").start_import` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").start_import` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_import)
 
-Boto3 documentation:
-[LexModelsV2.Client.start_import](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.start_import)
+```python title="Method definition"
+def start_import(
+    self,
+    *,
+    importId: str,
+    resourceSpecification: ImportResourceSpecificationTypeDef,  # (1)
+    mergeStrategy: MergeStrategyType,  # (2)
+    filePassword: str = ...,
+) -> StartImportResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef).
+1. See [:material-code-braces: ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef) 
+2. See [:material-code-brackets: MergeStrategyType](./literals.md#mergestrategytype) 
+3. See [:material-code-braces: StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `importId`: `str` *(required)*
-- `resourceSpecification`:
-  [ImportResourceSpecificationTypeDef](./type_defs.md#importresourcespecificationtypedef)
-  *(required)*
-- `mergeStrategy`: [MergeStrategyType](./literals.md#mergestrategytype)
-  *(required)*
-- `filePassword`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartImportRequestRequestTypeDef = {  # (1)
+    "importId": ...,
+    "resourceSpecification": ...,
+    "mergeStrategy": ...,
+}
 
-Returns
-[StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
+parent.start_import(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartImportRequestRequestTypeDef](./type_defs.md#startimportrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("lexv2-models").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
 
-Boto3 documentation:
-[LexModelsV2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceARN: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a bot, bot alias, or bot channel.
 
-Type annotations for `boto3.client("lexv2-models").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
 
-Boto3 documentation:
-[LexModelsV2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceARN: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_bot"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_bot
+### update\_bot
 
 Updates the configuration of an existing bot.
 
-Type annotations for `boto3.client("lexv2-models").update_bot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_bot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_bot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot)
+```python title="Method definition"
+def update_bot(
+    self,
+    *,
+    botId: str,
+    botName: str,
+    roleArn: str,
+    dataPrivacy: DataPrivacyTypeDef,  # (1)
+    idleSessionTTLInSeconds: int,
+    description: str = ...,
+) -> UpdateBotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBotRequestRequestTypeDef](./type_defs.md#updatebotrequestrequesttypedef).
+1. See [:material-code-braces: DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef) 
+2. See [:material-code-braces: UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botName`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `dataPrivacy`: [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
-  *(required)*
-- `idleSessionTTLInSeconds`: `int` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBotRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botName": ...,
+    "roleArn": ...,
+    "dataPrivacy": ...,
+    "idleSessionTTLInSeconds": ...,
+}
 
-Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+parent.update_bot(**kwargs)
+```
 
-<a id="update\_bot\_alias"></a>
+1. See [:material-code-braces: UpdateBotRequestRequestTypeDef](./type_defs.md#updatebotrequestrequesttypedef) 
 
-### update_bot_alias
+### update\_bot\_alias
 
 Updates the configuration of an existing bot alias.
 
-Type annotations for `boto3.client("lexv2-models").update_bot_alias` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_bot_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_bot_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_alias)
+```python title="Method definition"
+def update_bot_alias(
+    self,
+    *,
+    botAliasId: str,
+    botAliasName: str,
+    botId: str,
+    description: str = ...,
+    botVersion: str = ...,
+    botAliasLocaleSettings: Mapping[str, BotAliasLocaleSettingsTypeDef] = ...,  # (1)
+    conversationLogSettings: ConversationLogSettingsTypeDef = ...,  # (2)
+    sentimentAnalysisSettings: SentimentAnalysisSettingsTypeDef = ...,  # (3)
+) -> UpdateBotAliasResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBotAliasRequestRequestTypeDef](./type_defs.md#updatebotaliasrequestrequesttypedef).
+1. See [:material-code-braces: BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef) 
+2. See [:material-code-braces: ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef) 
+3. See [:material-code-braces: SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef) 
+4. See [:material-code-braces: UpdateBotAliasResponseTypeDef](./type_defs.md#updatebotaliasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botAliasId`: `str` *(required)*
-- `botAliasName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `description`: `str`
-- `botVersion`: `str`
-- `botAliasLocaleSettings`: `Mapping`\[`str`,
-  [BotAliasLocaleSettingsTypeDef](./type_defs.md#botaliaslocalesettingstypedef)\]
-- `conversationLogSettings`:
-  [ConversationLogSettingsTypeDef](./type_defs.md#conversationlogsettingstypedef)
-- `sentimentAnalysisSettings`:
-  [SentimentAnalysisSettingsTypeDef](./type_defs.md#sentimentanalysissettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateBotAliasRequestRequestTypeDef = {  # (1)
+    "botAliasId": ...,
+    "botAliasName": ...,
+    "botId": ...,
+}
 
-Returns
-[UpdateBotAliasResponseTypeDef](./type_defs.md#updatebotaliasresponsetypedef).
+parent.update_bot_alias(**kwargs)
+```
 
-<a id="update\_bot\_locale"></a>
+1. See [:material-code-braces: UpdateBotAliasRequestRequestTypeDef](./type_defs.md#updatebotaliasrequestrequesttypedef) 
 
-### update_bot_locale
+### update\_bot\_locale
 
 Updates the settings that a bot has for a specific locale.
 
-Type annotations for `boto3.client("lexv2-models").update_bot_locale` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_bot_locale` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_bot_locale](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_locale)
+```python title="Method definition"
+def update_bot_locale(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    nluIntentConfidenceThreshold: float,
+    description: str = ...,
+    voiceSettings: VoiceSettingsTypeDef = ...,  # (1)
+) -> UpdateBotLocaleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBotLocaleRequestRequestTypeDef](./type_defs.md#updatebotlocalerequestrequesttypedef).
+1. See [:material-code-braces: VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef) 
+2. See [:material-code-braces: UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `nluIntentConfidenceThreshold`: `float` *(required)*
-- `description`: `str`
-- `voiceSettings`: [VoiceSettingsTypeDef](./type_defs.md#voicesettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateBotLocaleRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "nluIntentConfidenceThreshold": ...,
+}
 
-Returns
-[UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef).
+parent.update_bot_locale(**kwargs)
+```
 
-<a id="update\_bot\_recommendation"></a>
+1. See [:material-code-braces: UpdateBotLocaleRequestRequestTypeDef](./type_defs.md#updatebotlocalerequestrequesttypedef) 
 
-### update_bot_recommendation
+### update\_bot\_recommendation
 
 Updates an existing bot recommendation request.
 
-Type annotations for `boto3.client("lexv2-models").update_bot_recommendation`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_bot_recommendation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_recommendation)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_bot_recommendation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_bot_recommendation)
+```python title="Method definition"
+def update_bot_recommendation(
+    self,
+    *,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    botRecommendationId: str,
+    encryptionSetting: EncryptionSettingTypeDef,  # (1)
+) -> UpdateBotRecommendationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBotRecommendationRequestRequestTypeDef](./type_defs.md#updatebotrecommendationrequestrequesttypedef).
+1. See [:material-code-braces: EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef) 
+2. See [:material-code-braces: UpdateBotRecommendationResponseTypeDef](./type_defs.md#updatebotrecommendationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `botRecommendationId`: `str` *(required)*
-- `encryptionSetting`:
-  [EncryptionSettingTypeDef](./type_defs.md#encryptionsettingtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBotRecommendationRequestRequestTypeDef = {  # (1)
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "botRecommendationId": ...,
+    "encryptionSetting": ...,
+}
 
-Returns
-[UpdateBotRecommendationResponseTypeDef](./type_defs.md#updatebotrecommendationresponsetypedef).
+parent.update_bot_recommendation(**kwargs)
+```
 
-<a id="update\_export"></a>
+1. See [:material-code-braces: UpdateBotRecommendationRequestRequestTypeDef](./type_defs.md#updatebotrecommendationrequestrequesttypedef) 
 
-### update_export
+### update\_export
 
 Updates the password used to protect an export zip archive.
 
-Type annotations for `boto3.client("lexv2-models").update_export` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_export)
+```python title="Method definition"
+def update_export(
+    self,
+    *,
+    exportId: str,
+    filePassword: str = ...,
+) -> UpdateExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateExportRequestRequestTypeDef](./type_defs.md#updateexportrequestrequesttypedef).
+1. See [:material-code-braces: UpdateExportResponseTypeDef](./type_defs.md#updateexportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `exportId`: `str` *(required)*
-- `filePassword`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateExportRequestRequestTypeDef = {  # (1)
+    "exportId": ...,
+}
 
-Returns
-[UpdateExportResponseTypeDef](./type_defs.md#updateexportresponsetypedef).
+parent.update_export(**kwargs)
+```
 
-<a id="update\_intent"></a>
+1. See [:material-code-braces: UpdateExportRequestRequestTypeDef](./type_defs.md#updateexportrequestrequesttypedef) 
 
-### update_intent
+### update\_intent
 
 Updates the settings for an intent.
 
-Type annotations for `boto3.client("lexv2-models").update_intent` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_intent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_intent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_intent)
+```python title="Method definition"
+def update_intent(
+    self,
+    *,
+    intentId: str,
+    intentName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: str = ...,
+    parentIntentSignature: str = ...,
+    sampleUtterances: Sequence[SampleUtteranceTypeDef] = ...,  # (1)
+    dialogCodeHook: DialogCodeHookSettingsTypeDef = ...,  # (2)
+    fulfillmentCodeHook: FulfillmentCodeHookSettingsTypeDef = ...,  # (3)
+    slotPriorities: Sequence[SlotPriorityTypeDef] = ...,  # (4)
+    intentConfirmationSetting: IntentConfirmationSettingTypeDef = ...,  # (5)
+    intentClosingSetting: IntentClosingSettingTypeDef = ...,  # (6)
+    inputContexts: Sequence[InputContextTypeDef] = ...,  # (7)
+    outputContexts: Sequence[OutputContextTypeDef] = ...,  # (8)
+    kendraConfiguration: KendraConfigurationTypeDef = ...,  # (9)
+) -> UpdateIntentResponseTypeDef:  # (10)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIntentRequestRequestTypeDef](./type_defs.md#updateintentrequestrequesttypedef).
+1. See [:material-code-braces: SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef) 
+2. See [:material-code-braces: DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef) 
+3. See [:material-code-braces: FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef) 
+4. See [:material-code-braces: SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef) 
+5. See [:material-code-braces: IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef) 
+6. See [:material-code-braces: IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef) 
+7. See [:material-code-braces: InputContextTypeDef](./type_defs.md#inputcontexttypedef) 
+8. See [:material-code-braces: OutputContextTypeDef](./type_defs.md#outputcontexttypedef) 
+9. See [:material-code-braces: KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef) 
+10. See [:material-code-braces: UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `intentId`: `str` *(required)*
-- `intentName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `description`: `str`
-- `parentIntentSignature`: `str`
-- `sampleUtterances`:
-  `Sequence`\[[SampleUtteranceTypeDef](./type_defs.md#sampleutterancetypedef)\]
-- `dialogCodeHook`:
-  [DialogCodeHookSettingsTypeDef](./type_defs.md#dialogcodehooksettingstypedef)
-- `fulfillmentCodeHook`:
-  [FulfillmentCodeHookSettingsTypeDef](./type_defs.md#fulfillmentcodehooksettingstypedef)
-- `slotPriorities`:
-  `Sequence`\[[SlotPriorityTypeDef](./type_defs.md#slotprioritytypedef)\]
-- `intentConfirmationSetting`:
-  [IntentConfirmationSettingTypeDef](./type_defs.md#intentconfirmationsettingtypedef)
-- `intentClosingSetting`:
-  [IntentClosingSettingTypeDef](./type_defs.md#intentclosingsettingtypedef)
-- `inputContexts`:
-  `Sequence`\[[InputContextTypeDef](./type_defs.md#inputcontexttypedef)\]
-- `outputContexts`:
-  `Sequence`\[[OutputContextTypeDef](./type_defs.md#outputcontexttypedef)\]
-- `kendraConfiguration`:
-  [KendraConfigurationTypeDef](./type_defs.md#kendraconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateIntentRequestRequestTypeDef = {  # (1)
+    "intentId": ...,
+    "intentName": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef).
+parent.update_intent(**kwargs)
+```
 
-<a id="update\_resource\_policy"></a>
+1. See [:material-code-braces: UpdateIntentRequestRequestTypeDef](./type_defs.md#updateintentrequestrequesttypedef) 
 
-### update_resource_policy
+### update\_resource\_policy
 
 Replaces the existing resource policy for a bot or bot alias with a new one.
 
-Type annotations for `boto3.client("lexv2-models").update_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_resource_policy)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_resource_policy)
+```python title="Method definition"
+def update_resource_policy(
+    self,
+    *,
+    resourceArn: str,
+    policy: str,
+    expectedRevisionId: str = ...,
+) -> UpdateResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourcePolicyRequestRequestTypeDef](./type_defs.md#updateresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `policy`: `str` *(required)*
-- `expectedRevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateResourcePolicyRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "policy": ...,
+}
 
-Returns
-[UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef).
+parent.update_resource_policy(**kwargs)
+```
 
-<a id="update\_slot"></a>
+1. See [:material-code-braces: UpdateResourcePolicyRequestRequestTypeDef](./type_defs.md#updateresourcepolicyrequestrequesttypedef) 
 
-### update_slot
+### update\_slot
 
 Updates the settings for a slot.
 
-Type annotations for `boto3.client("lexv2-models").update_slot` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_slot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_slot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot)
+```python title="Method definition"
+def update_slot(
+    self,
+    *,
+    slotId: str,
+    slotName: str,
+    valueElicitationSetting: SlotValueElicitationSettingTypeDef,  # (1)
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    intentId: str,
+    description: str = ...,
+    slotTypeId: str = ...,
+    obfuscationSetting: ObfuscationSettingTypeDef = ...,  # (2)
+    multipleValuesSetting: MultipleValuesSettingTypeDef = ...,  # (3)
+) -> UpdateSlotResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSlotRequestRequestTypeDef](./type_defs.md#updateslotrequestrequesttypedef).
+1. See [:material-code-braces: SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef) 
+2. See [:material-code-braces: ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef) 
+3. See [:material-code-braces: MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef) 
+4. See [:material-code-braces: UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotId`: `str` *(required)*
-- `slotName`: `str` *(required)*
-- `valueElicitationSetting`:
-  [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
-  *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `intentId`: `str` *(required)*
-- `description`: `str`
-- `slotTypeId`: `str`
-- `obfuscationSetting`:
-  [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
-- `multipleValuesSetting`:
-  [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSlotRequestRequestTypeDef = {  # (1)
+    "slotId": ...,
+    "slotName": ...,
+    "valueElicitationSetting": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+    "intentId": ...,
+}
 
-Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
+parent.update_slot(**kwargs)
+```
 
-<a id="update\_slot\_type"></a>
+1. See [:material-code-braces: UpdateSlotRequestRequestTypeDef](./type_defs.md#updateslotrequestrequesttypedef) 
 
-### update_slot_type
+### update\_slot\_type
 
 Updates the configuration of an existing slot type.
 
-Type annotations for `boto3.client("lexv2-models").update_slot_type` method.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").update_slot_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
 
-Boto3 documentation:
-[LexModelsV2.Client.update_slot_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.update_slot_type)
+```python title="Method definition"
+def update_slot_type(
+    self,
+    *,
+    slotTypeId: str,
+    slotTypeName: str,
+    botId: str,
+    botVersion: str,
+    localeId: str,
+    description: str = ...,
+    slotTypeValues: Sequence[SlotTypeValueTypeDef] = ...,  # (1)
+    valueSelectionSetting: SlotValueSelectionSettingTypeDef = ...,  # (2)
+    parentSlotTypeSignature: str = ...,
+    externalSourceSetting: ExternalSourceSettingTypeDef = ...,  # (3)
+) -> UpdateSlotTypeResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSlotTypeRequestRequestTypeDef](./type_defs.md#updateslottyperequestrequesttypedef).
+1. See [:material-code-braces: SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef) 
+2. See [:material-code-braces: SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef) 
+3. See [:material-code-braces: ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef) 
+4. See [:material-code-braces: UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `slotTypeId`: `str` *(required)*
-- `slotTypeName`: `str` *(required)*
-- `botId`: `str` *(required)*
-- `botVersion`: `str` *(required)*
-- `localeId`: `str` *(required)*
-- `description`: `str`
-- `slotTypeValues`:
-  `Sequence`\[[SlotTypeValueTypeDef](./type_defs.md#slottypevaluetypedef)\]
-- `valueSelectionSetting`:
-  [SlotValueSelectionSettingTypeDef](./type_defs.md#slotvalueselectionsettingtypedef)
-- `parentSlotTypeSignature`: `str`
-- `externalSourceSetting`:
-  [ExternalSourceSettingTypeDef](./type_defs.md#externalsourcesettingtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSlotTypeRequestRequestTypeDef = {  # (1)
+    "slotTypeId": ...,
+    "slotTypeName": ...,
+    "botId": ...,
+    "botVersion": ...,
+    "localeId": ...,
+}
 
-Returns
-[UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).
+parent.update_slot_type(**kwargs)
+```
 
-<a id="get_waiter"></a>
+1. See [:material-code-braces: UpdateSlotTypeRequestRequestTypeDef](./type_defs.md#updateslottyperequestrequesttypedef) 
+
+
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("lexv2-models").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("lexv2-models").get_waiter` method with overloads.
 
-- `client.get_waiter("bot_alias_available")` ->
-  [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
-- `client.get_waiter("bot_available")` ->
-  [BotAvailableWaiter](./waiters.md#botavailablewaiter)
-- `client.get_waiter("bot_export_completed")` ->
-  [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
-- `client.get_waiter("bot_import_completed")` ->
-  [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
-- `client.get_waiter("bot_locale_built")` ->
-  [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
-- `client.get_waiter("bot_locale_created")` ->
-  [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
-- `client.get_waiter("bot_locale_express_testing_available")` ->
-  [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
-- `client.get_waiter("bot_version_available")` ->
-  [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
+- `client.get_waiter("bot_alias_available")` -> [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
+- `client.get_waiter("bot_available")` -> [BotAvailableWaiter](./waiters.md#botavailablewaiter)
+- `client.get_waiter("bot_export_completed")` -> [BotExportCompletedWaiter](./waiters.md#botexportcompletedwaiter)
+- `client.get_waiter("bot_import_completed")` -> [BotImportCompletedWaiter](./waiters.md#botimportcompletedwaiter)
+- `client.get_waiter("bot_locale_built")` -> [BotLocaleBuiltWaiter](./waiters.md#botlocalebuiltwaiter)
+- `client.get_waiter("bot_locale_created")` -> [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
+- `client.get_waiter("bot_locale_express_testing_available")` -> [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
+- `client.get_waiter("bot_version_available")` -> [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
+

@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-dynamodbstreams-module"></a>
-
-# Type annotations for boto3 DynamoDBStreams module
+#  DynamoDBStreams module
 
 > [Index](../README.md) > DynamoDBStreams
 
-Auto-generated documentation for
-[DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
-type annotations stubs module
-[mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+!!! note ""
 
-- [Type annotations for boto3 DynamoDBStreams module](#type-annotations-for-boto3-dynamodbstreams-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DynamoDBStreamsClient](#dynamodbstreamsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
+    type annotations stubs module [mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DynamoDBStreams`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[dynamodbstreams]'
 python -m pip install mypy-boto3-dynamodbstreams
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,60 +42,41 @@ python -m pip install mypy-boto3-dynamodbstreams
 python -m pip uninstall -y mypy-boto3-dynamodbstreams
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="dynamodbstreamsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DynamoDBStreamsClient
 
-Type annotations for `boto3.client("dynamodbstreams")` as
-[DynamoDBStreamsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dynamodbstreams")` as [DynamoDBStreamsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
+
+def get_client() -> DynamoDBStreamsClient:
+    return Session().cleint("dynamodbstreams")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [describe_stream](./client.md#describe_stream)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_records](./client.md#get_records)
-- [get_shard_iterator](./client.md#get_shard_iterator)
-- [list_streams](./client.md#list_streams)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-DynamoDBStreamsClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ExpiredIteratorException
-- InternalServerError
-- LimitExceededException
-- ResourceNotFoundException
-- TrimmedDataAccessException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dynamodbstreams.literals import KeyTypeType
 
-```python
-from mypy_boto3_dynamodbstreams.literals import KeyTypeType, ...
+def get_value() -> KeyTypeType:
+    return "HASH"
 ```
 
 - [KeyTypeType](./literals.md#keytypetype)
@@ -127,18 +87,22 @@ from mypy_boto3_dynamodbstreams.literals import KeyTypeType, ...
 - [DynamoDBStreamsServiceName](./literals.md#dynamodbstreamsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dynamodbstreams.type_defs import AttributeValueTypeDef
 
-```python
-from mypy_boto3_dynamodbstreams.type_defs import AttributeValueTypeDef, ...
+def get_value() -> AttributeValueTypeDef:
+    return {
+        "S": ...,
+    }
 ```
 
 - [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
@@ -159,3 +123,4 @@ from mypy_boto3_dynamodbstreams.type_defs import AttributeValueTypeDef, ...
 - [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)
 - [StreamRecordTypeDef](./type_defs.md#streamrecordtypedef)
 - [StreamTypeDef](./type_defs.md#streamtypedef)
+

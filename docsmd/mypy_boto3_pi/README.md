@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-pi-module"></a>
-
-# Type annotations for boto3 PI module
+#  PI module
 
 > [Index](../README.md) > PI
 
-Auto-generated documentation for
-[PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
-type annotations stubs module
-[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
+!!! note ""
 
-- [Type annotations for boto3 PI module](#type-annotations-for-boto3-pi-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PIClient](#piclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
+    type annotations stubs module [mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `PI`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[pi]'
 python -m pip install mypy-boto3-pi
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,59 +42,41 @@ python -m pip install mypy-boto3-pi
 python -m pip uninstall -y mypy-boto3-pi
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="piclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PIClient
 
-Type annotations for `boto3.client("pi")` as [PIClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("pi")` as [PIClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_pi.client import PIClient
+
+def get_client() -> PIClient:
+    return Session().cleint("pi")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [describe_dimension_keys](./client.md#describe_dimension_keys)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_dimension_key_details](./client.md#get_dimension_key_details)
-- [get_resource_metadata](./client.md#get_resource_metadata)
-- [get_resource_metrics](./client.md#get_resource_metrics)
-- [list_available_resource_dimensions](./client.md#list_available_resource_dimensions)
-- [list_available_resource_metrics](./client.md#list_available_resource_metrics)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-PIClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalServiceError
-- InvalidArgumentException
-- NotAuthorizedException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pi.literals import DetailStatusType
 
-```python
-from mypy_boto3_pi.literals import DetailStatusType, ...
+def get_value() -> DetailStatusType:
+    return "AVAILABLE"
 ```
 
 - [DetailStatusType](./literals.md#detailstatustype)
@@ -124,18 +85,23 @@ from mypy_boto3_pi.literals import DetailStatusType, ...
 - [PIServiceName](./literals.md#piservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pi.type_defs import DataPointTypeDef
 
-```python
-from mypy_boto3_pi.type_defs import DataPointTypeDef, ...
+def get_value() -> DataPointTypeDef:
+    return {
+        "Timestamp": ...,
+        "Value": ...,
+    }
 ```
 
 - [DataPointTypeDef](./type_defs.md#datapointtypedef)
@@ -164,3 +130,4 @@ from mypy_boto3_pi.type_defs import DataPointTypeDef, ...
 - [ResponsePartitionKeyTypeDef](./type_defs.md#responsepartitionkeytypedef)
 - [ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef)
 - [ResponseResourceMetricTypeDef](./type_defs.md#responseresourcemetrictypedef)
+

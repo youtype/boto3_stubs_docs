@@ -1,41 +1,18 @@
-<a id="mobileclient-for-boto3-mobile-module"></a>
-
-# MobileClient for boto3 Mobile module
+# MobileClient
 
 > [Index](../README.md) > [Mobile](./README.md) > MobileClient
 
-Auto-generated documentation for
-[Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
-type annotations stubs module
-[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
+!!! note ""
 
-- [MobileClient for boto3 Mobile module](#mobileclient-for-boto3-mobile-module)
-  - [MobileClient](#mobileclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_project](#create_project)
-    - [delete_project](#delete_project)
-    - [describe_bundle](#describe_bundle)
-    - [describe_project](#describe_project)
-    - [export_bundle](#export_bundle)
-    - [export_project](#export_project)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_bundles](#list_bundles)
-    - [list_projects](#list_projects)
-    - [update_project](#update_project)
-    - [get_paginator](#get_paginator)
-
-<a id="mobileclient"></a>
+    Auto-generated documentation for [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
+    type annotations stubs module [mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 ## MobileClient
 
-Type annotations for `boto3.client("mobile")`
+Type annotations and code completion for `#!python boto3.client("mobile")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mobile.client import MobileClient
 
@@ -43,293 +20,357 @@ def get_mobile_client() -> MobileClient:
     return Session().client("mobile")
 ```
 
-Boto3 documentation:
-[Mobile.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mobile").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mobile")
+
+try:
+    do_something(client)
+except (
+    client.AccountActionRequiredException,
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalFailureException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mobile.client import Exceptions
 
 def handle_error(exc: Exceptions.AccountActionRequiredException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccountActionRequiredException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalFailureException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MobileClient exceptions.
-
-Type annotations for `boto3.client("mobile").exceptions` method.
-
-Boto3 documentation:
-[Mobile.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mobile").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mobile").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate)
 
-Boto3 documentation:
-[Mobile.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_project"></a>
-
-### create_project
+### create\_project
 
 Creates an AWS Mobile Hub project.
 
-Type annotations for `boto3.client("mobile").create_project` method.
+Type annotations and code completion for `#!python boto3.client("mobile").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
 
-Boto3 documentation:
-[Mobile.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    name: str = ...,
+    region: str = ...,
+    contents: Union[bytes, IO[bytes], StreamingBody] = ...,
+    snapshotId: str = ...,
+) -> CreateProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str`
-- `region`: `str`
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `snapshotId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Delets a project in AWS Mobile Hub.
 
-Type annotations for `boto3.client("mobile").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("mobile").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
 
-Boto3 documentation:
-[Mobile.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    projectId: str,
+) -> DeleteProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
+parent.delete_project(**kwargs)
+```
 
-<a id="describe\_bundle"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### describe_bundle
+### describe\_bundle
 
 Get the bundle details for the requested bundle id.
 
-Type annotations for `boto3.client("mobile").describe_bundle` method.
+Type annotations and code completion for `#!python boto3.client("mobile").describe_bundle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
 
-Boto3 documentation:
-[Mobile.Client.describe_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_bundle)
+```python title="Method definition"
+def describe_bundle(
+    self,
+    *,
+    bundleId: str,
+) -> DescribeBundleResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBundleRequestRequestTypeDef](./type_defs.md#describebundlerequestrequesttypedef).
+1. See [:material-code-braces: DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef) 
 
-Keyword-only arguments:
 
-- `bundleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBundleRequestRequestTypeDef = {  # (1)
+    "bundleId": ...,
+}
 
-Returns
-[DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef).
+parent.describe_bundle(**kwargs)
+```
 
-<a id="describe\_project"></a>
+1. See [:material-code-braces: DescribeBundleRequestRequestTypeDef](./type_defs.md#describebundlerequestrequesttypedef) 
 
-### describe_project
+### describe\_project
 
 Gets details about a project in AWS Mobile Hub.
 
-Type annotations for `boto3.client("mobile").describe_project` method.
+Type annotations and code completion for `#!python boto3.client("mobile").describe_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
 
-Boto3 documentation:
-[Mobile.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.describe_project)
+```python title="Method definition"
+def describe_project(
+    self,
+    *,
+    projectId: str,
+    syncFromResources: bool = ...,
+) -> DescribeProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `syncFromResources`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
+parent.describe_project(**kwargs)
+```
 
-<a id="export\_bundle"></a>
+1. See [:material-code-braces: DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef) 
 
-### export_bundle
+### export\_bundle
 
-Generates customized software development kit (SDK) and or tool packages used
-to integrate mobile web or mobile app clients with backend AWS resources.
+Generates customized software development kit (SDK) and or tool packages used to
+integrate mobile web or mobile app clients with backend AWS resources.
 
-Type annotations for `boto3.client("mobile").export_bundle` method.
+Type annotations and code completion for `#!python boto3.client("mobile").export_bundle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
 
-Boto3 documentation:
-[Mobile.Client.export_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_bundle)
+```python title="Method definition"
+def export_bundle(
+    self,
+    *,
+    bundleId: str,
+    projectId: str = ...,
+    platform: PlatformType = ...,  # (1)
+) -> ExportBundleResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ExportBundleRequestRequestTypeDef](./type_defs.md#exportbundlerequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef) 
 
-Keyword-only arguments:
 
-- `bundleId`: `str` *(required)*
-- `projectId`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
+```python title="Usage example with kwargs"
+kwargs: ExportBundleRequestRequestTypeDef = {  # (1)
+    "bundleId": ...,
+}
 
-Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
+parent.export_bundle(**kwargs)
+```
 
-<a id="export\_project"></a>
+1. See [:material-code-braces: ExportBundleRequestRequestTypeDef](./type_defs.md#exportbundlerequestrequesttypedef) 
 
-### export_project
+### export\_project
 
 Exports project configuration to a snapshot which can be downloaded and shared.
 
-Type annotations for `boto3.client("mobile").export_project` method.
+Type annotations and code completion for `#!python boto3.client("mobile").export_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
 
-Boto3 documentation:
-[Mobile.Client.export_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.export_project)
+```python title="Method definition"
+def export_project(
+    self,
+    *,
+    projectId: str,
+) -> ExportProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ExportProjectRequestRequestTypeDef](./type_defs.md#exportprojectrequestrequesttypedef).
+1. See [:material-code-braces: ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExportProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef).
+parent.export_project(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportProjectRequestRequestTypeDef](./type_defs.md#exportprojectrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mobile").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mobile").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Mobile.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_bundles"></a>
-
-### list_bundles
+### list\_bundles
 
 List all available bundles.
 
-Type annotations for `boto3.client("mobile").list_bundles` method.
+Type annotations and code completion for `#!python boto3.client("mobile").list_bundles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
 
-Boto3 documentation:
-[Mobile.Client.list_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_bundles)
+```python title="Method definition"
+def list_bundles(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListBundlesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBundlesRequestRequestTypeDef](./type_defs.md#listbundlesrequestrequesttypedef).
+1. See [:material-code-braces: ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBundlesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
+parent.list_bundles(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListBundlesRequestRequestTypeDef](./type_defs.md#listbundlesrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Lists projects in AWS Mobile Hub.
 
-Type annotations for `boto3.client("mobile").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("mobile").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
 
-Boto3 documentation:
-[Mobile.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListProjectsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Update an existing project.
 
-Type annotations for `boto3.client("mobile").update_project` method.
+Type annotations and code completion for `#!python boto3.client("mobile").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
 
-Boto3 documentation:
-[Mobile.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    projectId: str,
+    contents: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> UpdateProjectResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
+1. See [:material-code-braces: UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef) 
 
-Keyword-only arguments:
 
-- `projectId`: `str` *(required)*
-- `contents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "projectId": ...,
+}
 
-Returns
-[UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
+parent.update_project(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mobile").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mobile").get_paginator` method with overloads.
 
-- `client.get_paginator("list_bundles")` ->
-  [ListBundlesPaginator](./paginators.md#listbundlespaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_bundles")` -> [ListBundlesPaginator](./paginators.md#listbundlespaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+
+

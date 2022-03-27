@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-lightsail-module"></a>
-
-# Examples for boto3 Lightsail module
+# Examples
 
 > [Index](../README.md) > [Lightsail](./README.md) > Examples
 
-- [Examples for boto3 Lightsail module](#examples-for-boto3-lightsail-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
+    type annotations stubs module [mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[lightsail]` package installed.
 
-Write your `Lightsail` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Lightsail` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type LightsailClient
-# and provides type checking and code completion
-client = session.client("lightsail")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AllocateStaticIpResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.allocate_static_ip()
 
-# paginator has type GetActiveNamesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_active_names")
-for item in paginator.paginate(...):
-    # item has type GetActiveNamesResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("lightsail")  # (1)
+    result = client.allocate_static_ip()  # (2)
+    ```
+
+    1. client: [LightsailClient](./client.md)
+    2. result: [:material-code-braces: AllocateStaticIpResultTypeDef](./type_defs.md#allocatestaticipresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("lightsail")  # (1)
+
+    paginator = client.get_paginator("get_active_names")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [LightsailClient](./client.md)
+    2. paginator: [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
+    3. item: [:material-code-braces: GetActiveNamesResultTypeDef](./type_defs.md#getactivenamesresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[lightsail]` or a standalone `mypy_boto3_lightsail`
-package, you have to explicitly specify `client: LightsailClient` type
-annotation.
+With `boto3-stubs-lite[lightsail]`
+or a standalone `mypy_boto3_lightsail` package, you have to explicitly specify `client: LightsailClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_lightsail.client import LightsailClient
-from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
-
-from mypy_boto3_lightsail.literals import PaginatorName
-
-from mypy_boto3_lightsail.type_defs import AllocateStaticIpResultTypeDef
-from mypy_boto3_lightsail.type_defs import GetActiveNamesResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: LightsailClient = session.client("lightsail")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AllocateStaticIpResultTypeDef = client.allocate_static_ip()
+    from mypy_boto3_lightsail.client import LightsailClient
+    from mypy_boto3_lightsail.type_defs import AllocateStaticIpResultTypeDef
+    from mypy_boto3_lightsail.type_defs import AllocateStaticIpRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_active_names"
-paginator: GetActiveNamesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetActiveNamesResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: LightsailClient = session.client("lightsail")
+
+    kwargs: AllocateStaticIpRequestRequestTypeDef = {...}
+    result: AllocateStaticIpResultTypeDef = client.allocate_static_ip(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_lightsail.client import LightsailClient
+    from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator
+    from mypy_boto3_lightsail.type_defs import GetActiveNamesResultTypeDef
+
+
+    session = Session()
+    client: LightsailClient = session.client("lightsail")
+
+    paginator: GetActiveNamesPaginator = client.get_paginator("get_active_names")
+    for item in paginator.paginate(...):
+        item: GetActiveNamesResultTypeDef
+        print(item)
+    ```
+
+
+
+

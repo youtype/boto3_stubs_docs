@@ -1,34 +1,18 @@
-<a id="paginators-for-boto3-globalaccelerator-module"></a>
-
-# Paginators for boto3 GlobalAccelerator module
+# Paginators
 
 > [Index](../README.md) > [GlobalAccelerator](./README.md) > Paginators
 
-Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module
-[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+!!! note ""
 
-- [Paginators for boto3 GlobalAccelerator module](#paginators-for-boto3-globalaccelerator-module)
-  - [ListAcceleratorsPaginator](#listacceleratorspaginator)
-  - [ListByoipCidrsPaginator](#listbyoipcidrspaginator)
-  - [ListCustomRoutingAcceleratorsPaginator](#listcustomroutingacceleratorspaginator)
-  - [ListCustomRoutingListenersPaginator](#listcustomroutinglistenerspaginator)
-  - [ListCustomRoutingPortMappingsPaginator](#listcustomroutingportmappingspaginator)
-  - [ListCustomRoutingPortMappingsByDestinationPaginator](#listcustomroutingportmappingsbydestinationpaginator)
-  - [ListEndpointGroupsPaginator](#listendpointgroupspaginator)
-  - [ListListenersPaginator](#listlistenerspaginator)
-
-<a id="listacceleratorspaginator"></a>
+    Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+    type annotations stubs module [mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ## ListAcceleratorsPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_accelerators")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_accelerators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator
@@ -37,27 +21,39 @@ def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_accelerators")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListAccelerators)
 
-Arguments for `ListAcceleratorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAcceleratorsPaginator.paginate` method.
 
-`ListAcceleratorsPaginator.paginate` returns
-`_PageIterator`\[[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAcceleratorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listbyoipcidrspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAcceleratorsRequestListAcceleratorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAcceleratorsRequestListAcceleratorsPaginateTypeDef](./type_defs.md#listacceleratorsrequestlistacceleratorspaginatetypedef) 
 ## ListByoipCidrsPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListByoipCidrsPaginator
@@ -66,27 +62,39 @@ def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_byoip_cidrs")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListByoipCidrs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListByoipCidrs)
 
-Arguments for `ListByoipCidrsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListByoipCidrsPaginator.paginate` method.
 
-`ListByoipCidrsPaginator.paginate` returns
-`_PageIterator`\[[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListByoipCidrsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcustomroutingacceleratorspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListByoipCidrsRequestListByoipCidrsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListByoipCidrsRequestListByoipCidrsPaginateTypeDef](./type_defs.md#listbyoipcidrsrequestlistbyoipcidrspaginatetypedef) 
 ## ListCustomRoutingAcceleratorsPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingAcceleratorsPaginator
@@ -95,27 +103,39 @@ def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceler
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingAccelerators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingAccelerators)
 
-Arguments for `ListCustomRoutingAcceleratorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomRoutingAcceleratorsPaginator.paginate` method.
 
-`ListCustomRoutingAcceleratorsPaginator.paginate` returns
-`_PageIterator`\[[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomRoutingAcceleratorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcustomroutinglistenerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef](./type_defs.md#listcustomroutingacceleratorsrequestlistcustomroutingacceleratorspaginatetypedef) 
 ## ListCustomRoutingListenersPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingListenersPaginator
@@ -124,28 +144,40 @@ def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersP
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_listeners")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingListeners)
 
-Arguments for `ListCustomRoutingListenersPaginator.paginate` method:
+### paginate
 
-- `AcceleratorArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomRoutingListenersPaginator.paginate` method.
 
-`ListCustomRoutingListenersPaginator.paginate` returns
-`_PageIterator`\[[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AcceleratorArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomRoutingListenersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcustomroutingportmappingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef](./type_defs.md#listcustomroutinglistenersrequestlistcustomroutinglistenerspaginatetypedef) 
 ## ListCustomRoutingPortMappingsPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsPaginator
@@ -154,29 +186,41 @@ def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMa
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingPortMappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappings)
 
-Arguments for `ListCustomRoutingPortMappingsPaginator.paginate` method:
+### paginate
 
-- `AcceleratorArn`: `str` *(required)*
-- `EndpointGroupArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomRoutingPortMappingsPaginator.paginate` method.
 
-`ListCustomRoutingPortMappingsPaginator.paginate` returns
-`_PageIterator`\[[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AcceleratorArn: str,
+    EndpointGroupArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomRoutingPortMappingsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcustomroutingportmappingsbydestinationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef](./type_defs.md#listcustomroutingportmappingsrequestlistcustomroutingportmappingspaginatetypedef) 
 ## ListCustomRoutingPortMappingsByDestinationPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsByDestinationPaginator
@@ -185,30 +229,42 @@ def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCust
     return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListCustomRoutingPortMappingsByDestination)
 
-Arguments for `ListCustomRoutingPortMappingsByDestinationPaginator.paginate`
-method:
+### paginate
 
-- `EndpointId`: `str` *(required)*
-- `DestinationAddress`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCustomRoutingPortMappingsByDestinationPaginator.paginate` method.
 
-`ListCustomRoutingPortMappingsByDestinationPaginator.paginate` returns
-`_PageIterator`\[[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EndpointId: str,
+    DestinationAddress: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCustomRoutingPortMappingsByDestinationResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listendpointgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef = {  # (1)
+    "EndpointId": ...,
+    "DestinationAddress": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationrequestlistcustomroutingportmappingsbydestinationpaginatetypedef) 
 ## ListEndpointGroupsPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListEndpointGroupsPaginator
@@ -217,28 +273,40 @@ def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
     return Session().client("globalaccelerator").get_paginator("list_endpoint_groups")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListEndpointGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListEndpointGroups)
 
-Arguments for `ListEndpointGroupsPaginator.paginate` method:
+### paginate
 
-- `ListenerArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEndpointGroupsPaginator.paginate` method.
 
-`ListEndpointGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ListenerArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEndpointGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listlistenerspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef = {  # (1)
+    "ListenerArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef](./type_defs.md#listendpointgroupsrequestlistendpointgroupspaginatetypedef) 
 ## ListListenersPaginator
 
-Type annotations for
-`boto3.client("globalaccelerator").get_paginator("list_listeners")`.
+Type annotations and code completion for `#!python boto3.client("globalaccelerator").get_paginator("list_listeners")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_globalaccelerator.paginator import ListListenersPaginator
@@ -247,14 +315,31 @@ def get_list_listeners_paginator() -> ListListenersPaginator:
     return Session().client("globalaccelerator").get_paginator("list_listeners")
 ```
 
-Boto3 documentation:
-[GlobalAccelerator.Paginator.ListListeners](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator.Paginator.ListListeners)
 
-Arguments for `ListListenersPaginator.paginate` method:
+### paginate
 
-- `AcceleratorArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListListenersPaginator.paginate` method.
 
-`ListListenersPaginator.paginate` returns
-`_PageIterator`\[[ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AcceleratorArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListListenersResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListListenersResponseTypeDef](./type_defs.md#listlistenersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListListenersRequestListListenersPaginateTypeDef = {  # (1)
+    "AcceleratorArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListListenersRequestListListenersPaginateTypeDef](./type_defs.md#listlistenersrequestlistlistenerspaginatetypedef) 

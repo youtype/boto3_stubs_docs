@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-computeoptimizer-module"></a>
-
-# Examples for boto3 ComputeOptimizer module
+# Examples
 
 > [Index](../README.md) > [ComputeOptimizer](./README.md) > Examples
 
-- [Examples for boto3 ComputeOptimizer module](#examples-for-boto3-computeoptimizer-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
+    type annotations stubs module [mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[compute-optimizer]` package installed.
 
-Write your `ComputeOptimizer` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ComputeOptimizer` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ComputeOptimizerClient
-# and provides type checking and code completion
-client = session.client("compute-optimizer")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("compute-optimizer")  # (1)
+    result = client.describe_recommendation_export_jobs()  # (2)
+    ```
+
+    1. client: [ComputeOptimizerClient](./client.md)
+    2. result: [:material-code-braces: DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[compute-optimizer]` or a standalone
-`mypy_boto3_compute_optimizer` package, you have to explicitly specify
-`client: ComputeOptimizerClient` type annotation.
+With `boto3-stubs-lite[compute-optimizer]`
+or a standalone `mypy_boto3_compute_optimizer` package, you have to explicitly specify `client: ComputeOptimizerClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_compute_optimizer.client import ComputeOptimizerClient
+    from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsResponseTypeDef
+    from mypy_boto3_compute_optimizer.type_defs import DescribeRecommendationExportJobsRequestRequestTypeDef
 
 
-from mypy_boto3_compute_optimizer.type_defs import bool
+    session = Session()
+
+    client: ComputeOptimizerClient = session.client("compute-optimizer")
+
+    kwargs: DescribeRecommendationExportJobsRequestRequestTypeDef = {...}
+    result: DescribeRecommendationExportJobsResponseTypeDef = client.describe_recommendation_export_jobs(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ComputeOptimizerClient = session.client("compute-optimizer")
 
-result: bool = client.can_paginate()
-```
+

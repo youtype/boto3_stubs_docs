@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-dax-module"></a>
-
-# Paginators for boto3 DAX module
+# Paginators
 
 > [Index](../README.md) > [DAX](./README.md) > Paginators
 
-Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module
-[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
+!!! note ""
 
-- [Paginators for boto3 DAX module](#paginators-for-boto3-dax-module)
-  - [DescribeClustersPaginator](#describeclusterspaginator)
-  - [DescribeDefaultParametersPaginator](#describedefaultparameterspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeParameterGroupsPaginator](#describeparametergroupspaginator)
-  - [DescribeParametersPaginator](#describeparameterspaginator)
-  - [DescribeSubnetGroupsPaginator](#describesubnetgroupspaginator)
-  - [ListTagsPaginator](#listtagspaginator)
-
-<a id="describeclusterspaginator"></a>
+    Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+    type annotations stubs module [mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ## DescribeClustersPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_clusters")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeClustersPaginator
@@ -35,28 +21,40 @@ def get_describe_clusters_paginator() -> DescribeClustersPaginator:
     return Session().client("dax").get_paginator("describe_clusters")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeClusters)
 
-Arguments for `DescribeClustersPaginator.paginate` method:
+### paginate
 
-- `ClusterNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeClustersPaginator.paginate` method.
 
-`DescribeClustersPaginator.paginate` returns
-`_PageIterator`\[[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ClusterNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeClustersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describedefaultparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersRequestDescribeClustersPaginateTypeDef = {  # (1)
+    "ClusterNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClustersRequestDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersrequestdescribeclusterspaginatetypedef) 
 ## DescribeDefaultParametersPaginator
 
-Type annotations for
-`boto3.client("dax").get_paginator("describe_default_parameters")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_default_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeDefaultParametersPaginator
@@ -65,26 +63,39 @@ def get_describe_default_parameters_paginator() -> DescribeDefaultParametersPagi
     return Session().client("dax").get_paginator("describe_default_parameters")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeDefaultParameters)
 
-Arguments for `DescribeDefaultParametersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDefaultParametersPaginator.paginate` method.
 
-`DescribeDefaultParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDefaultParametersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDefaultParametersResponseTypeDef](./type_defs.md#describedefaultparametersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef](./type_defs.md#describedefaultparametersrequestdescribedefaultparameterspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeEventsPaginator
@@ -93,32 +104,45 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("dax").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceName: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEventsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeparametergroupspaginator"></a>
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestDescribeEventsPaginateTypeDef = {  # (1)
+    "SourceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsRequestDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsrequestdescribeeventspaginatetypedef) 
 ## DescribeParameterGroupsPaginator
 
-Type annotations for
-`boto3.client("dax").get_paginator("describe_parameter_groups")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_parameter_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeParameterGroupsPaginator
@@ -127,28 +151,40 @@ def get_describe_parameter_groups_paginator() -> DescribeParameterGroupsPaginato
     return Session().client("dax").get_paginator("describe_parameter_groups")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameterGroups)
 
-Arguments for `DescribeParameterGroupsPaginator.paginate` method:
+### paginate
 
-- `ParameterGroupNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeParameterGroupsPaginator.paginate` method.
 
-`DescribeParameterGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParameterGroupNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeParameterGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef = {  # (1)
+    "ParameterGroupNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef](./type_defs.md#describeparametergroupsrequestdescribeparametergroupspaginatetypedef) 
 ## DescribeParametersPaginator
 
-Type annotations for
-`boto3.client("dax").get_paginator("describe_parameters")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeParametersPaginator
@@ -157,29 +193,41 @@ def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return Session().client("dax").get_paginator("describe_parameters")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeParameters)
 
-Arguments for `DescribeParametersPaginator.paginate` method:
+### paginate
 
-- `ParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeParametersPaginator.paginate` method.
 
-`DescribeParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ParameterGroupName: str,
+    Source: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeParametersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describesubnetgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeParametersRequestDescribeParametersPaginateTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeParametersRequestDescribeParametersPaginateTypeDef](./type_defs.md#describeparametersrequestdescribeparameterspaginatetypedef) 
 ## DescribeSubnetGroupsPaginator
 
-Type annotations for
-`boto3.client("dax").get_paginator("describe_subnet_groups")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("describe_subnet_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import DescribeSubnetGroupsPaginator
@@ -188,27 +236,40 @@ def get_describe_subnet_groups_paginator() -> DescribeSubnetGroupsPaginator:
     return Session().client("dax").get_paginator("describe_subnet_groups")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.DescribeSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.DescribeSubnetGroups)
 
-Arguments for `DescribeSubnetGroupsPaginator.paginate` method:
+### paginate
 
-- `SubnetGroupNames`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSubnetGroupsPaginator.paginate` method.
 
-`DescribeSubnetGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubnetGroupNames: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSubnetGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef = {  # (1)
+    "SubnetGroupNames": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef](./type_defs.md#describesubnetgroupsrequestdescribesubnetgroupspaginatetypedef) 
 ## ListTagsPaginator
 
-Type annotations for `boto3.client("dax").get_paginator("list_tags")`.
+Type annotations and code completion for `#!python boto3.client("dax").get_paginator("list_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dax.paginator import ListTagsPaginator
@@ -217,14 +278,31 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("dax").get_paginator("list_tags")
 ```
 
-Boto3 documentation:
-[DAX.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX.Paginator.ListTags)
 
-Arguments for `ListTagsPaginator.paginate` method:
+### paginate
 
-- `ResourceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsPaginator.paginate` method.
 
-`ListTagsPaginator.paginate` returns
-`_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestListTagsPaginateTypeDef = {  # (1)
+    "ResourceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef) 

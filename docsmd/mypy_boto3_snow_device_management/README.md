@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-snowdevicemanagement-module"></a>
-
-# Type annotations for boto3 SnowDeviceManagement module
+#  SnowDeviceManagement module
 
 > [Index](../README.md) > SnowDeviceManagement
 
-Auto-generated documentation for
-[SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
-type annotations stubs module
-[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+!!! note ""
 
-- [Type annotations for boto3 SnowDeviceManagement module](#type-annotations-for-boto3-snowdevicemanagement-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SnowDeviceManagementClient](#snowdevicemanagementclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
+    type annotations stubs module [mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SnowDeviceManagement`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[snow-device-management]'
 python -m pip install mypy-boto3-snow-device-management
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,72 +42,37 @@ python -m pip install mypy-boto3-snow-device-management
 python -m pip uninstall -y mypy-boto3-snow-device-management
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="snowdevicemanagementclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SnowDeviceManagementClient
 
-Type annotations for `boto3.client("snow-device-management")` as
-[SnowDeviceManagementClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("snow-device-management")` as [SnowDeviceManagementClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_snow_device_management.client import SnowDeviceManagementClient
+
+def get_client() -> SnowDeviceManagementClient:
+    return Session().cleint("snow-device-management")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_task](./client.md#cancel_task)
-- [create_task](./client.md#create_task)
-- [describe_device](./client.md#describe_device)
-- [describe_device_ec2_instances](./client.md#describe_device_ec2_instances)
-- [describe_execution](./client.md#describe_execution)
-- [describe_task](./client.md#describe_task)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_device_resources](./client.md#list_device_resources)
-- [list_devices](./client.md#list_devices)
-- [list_executions](./client.md#list_executions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_tasks](./client.md#list_tasks)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SnowDeviceManagementClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("snow-device-management").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("snow-device-management").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPaginator, ...
+from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPaginator
+
+def get_list_device_resources_paginator() -> ListDeviceResourcesPaginator:
+    return Session().client("snow-device-management").get_paginator("list_device_resources"))
 ```
 
 - [ListDeviceResourcesPaginator](./paginators.md#listdeviceresourcespaginator)
@@ -137,16 +80,23 @@ from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPagin
 - [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
 - [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_snow_device_management.literals import AttachmentStatusType
 
-```python
-from mypy_boto3_snow_device_management.literals import AttachmentStatusType, ...
+def get_value() -> AttachmentStatusType:
+    return "ATTACHED"
 ```
 
 - [AttachmentStatusType](./literals.md#attachmentstatustype)
@@ -165,17 +115,20 @@ from mypy_boto3_snow_device_management.literals import AttachmentStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_snow_device_management.type_defs import CancelTaskInputRequestTypeDef
 
-```python
-from mypy_boto3_snow_device_management.type_defs import CancelTaskInputRequestTypeDef, ...
+def get_value() -> CancelTaskInputRequestTypeDef:
+    return {
+        "taskId": ...,
+    }
 ```
 
 - [CancelTaskInputRequestTypeDef](./type_defs.md#canceltaskinputrequesttypedef)
@@ -200,14 +153,18 @@ from mypy_boto3_snow_device_management.type_defs import CancelTaskInputRequestTy
 - [InstanceStateTypeDef](./type_defs.md#instancestatetypedef)
 - [InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
+- [ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef](./type_defs.md#listdeviceresourcesinputlistdeviceresourcespaginatetypedef)
 - [ListDeviceResourcesInputRequestTypeDef](./type_defs.md#listdeviceresourcesinputrequesttypedef)
 - [ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef)
+- [ListDevicesInputListDevicesPaginateTypeDef](./type_defs.md#listdevicesinputlistdevicespaginatetypedef)
 - [ListDevicesInputRequestTypeDef](./type_defs.md#listdevicesinputrequesttypedef)
 - [ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef)
+- [ListExecutionsInputListExecutionsPaginateTypeDef](./type_defs.md#listexecutionsinputlistexecutionspaginatetypedef)
 - [ListExecutionsInputRequestTypeDef](./type_defs.md#listexecutionsinputrequesttypedef)
 - [ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
+- [ListTasksInputListTasksPaginateTypeDef](./type_defs.md#listtasksinputlisttaskspaginatetypedef)
 - [ListTasksInputRequestTypeDef](./type_defs.md#listtasksinputrequesttypedef)
 - [ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -219,3 +176,4 @@ from mypy_boto3_snow_device_management.type_defs import CancelTaskInputRequestTy
 - [TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef)
 - [TaskSummaryTypeDef](./type_defs.md#tasksummarytypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
+

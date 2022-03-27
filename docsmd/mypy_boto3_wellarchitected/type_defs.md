@@ -1,1761 +1,2162 @@
-<a id="typed-dictionaries-for-boto3-wellarchitected-module"></a>
-
-# Typed dictionaries for boto3 WellArchitected module
+# Typed dictionaries
 
 > [Index](../README.md) > [WellArchitected](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
-type annotations stubs module
-[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+!!! note ""
 
-- [Typed dictionaries for boto3 WellArchitected module](#typed-dictionaries-for-boto3-wellarchitected-module)
-  - [AnswerSummaryTypeDef](#answersummarytypedef)
-  - [AnswerTypeDef](#answertypedef)
-  - [AssociateLensesInputRequestTypeDef](#associatelensesinputrequesttypedef)
-  - [ChoiceAnswerSummaryTypeDef](#choiceanswersummarytypedef)
-  - [ChoiceAnswerTypeDef](#choiceanswertypedef)
-  - [ChoiceContentTypeDef](#choicecontenttypedef)
-  - [ChoiceImprovementPlanTypeDef](#choiceimprovementplantypedef)
-  - [ChoiceTypeDef](#choicetypedef)
-  - [ChoiceUpdateTypeDef](#choiceupdatetypedef)
-  - [CreateLensShareInputRequestTypeDef](#createlensshareinputrequesttypedef)
-  - [CreateLensShareOutputTypeDef](#createlensshareoutputtypedef)
-  - [CreateLensVersionInputRequestTypeDef](#createlensversioninputrequesttypedef)
-  - [CreateLensVersionOutputTypeDef](#createlensversionoutputtypedef)
-  - [CreateMilestoneInputRequestTypeDef](#createmilestoneinputrequesttypedef)
-  - [CreateMilestoneOutputTypeDef](#createmilestoneoutputtypedef)
-  - [CreateWorkloadInputRequestTypeDef](#createworkloadinputrequesttypedef)
-  - [CreateWorkloadOutputTypeDef](#createworkloadoutputtypedef)
-  - [CreateWorkloadShareInputRequestTypeDef](#createworkloadshareinputrequesttypedef)
-  - [CreateWorkloadShareOutputTypeDef](#createworkloadshareoutputtypedef)
-  - [DeleteLensInputRequestTypeDef](#deletelensinputrequesttypedef)
-  - [DeleteLensShareInputRequestTypeDef](#deletelensshareinputrequesttypedef)
-  - [DeleteWorkloadInputRequestTypeDef](#deleteworkloadinputrequesttypedef)
-  - [DeleteWorkloadShareInputRequestTypeDef](#deleteworkloadshareinputrequesttypedef)
-  - [DisassociateLensesInputRequestTypeDef](#disassociatelensesinputrequesttypedef)
-  - [ExportLensInputRequestTypeDef](#exportlensinputrequesttypedef)
-  - [ExportLensOutputTypeDef](#exportlensoutputtypedef)
-  - [GetAnswerInputRequestTypeDef](#getanswerinputrequesttypedef)
-  - [GetAnswerOutputTypeDef](#getansweroutputtypedef)
-  - [GetLensInputRequestTypeDef](#getlensinputrequesttypedef)
-  - [GetLensOutputTypeDef](#getlensoutputtypedef)
-  - [GetLensReviewInputRequestTypeDef](#getlensreviewinputrequesttypedef)
-  - [GetLensReviewOutputTypeDef](#getlensreviewoutputtypedef)
-  - [GetLensReviewReportInputRequestTypeDef](#getlensreviewreportinputrequesttypedef)
-  - [GetLensReviewReportOutputTypeDef](#getlensreviewreportoutputtypedef)
-  - [GetLensVersionDifferenceInputRequestTypeDef](#getlensversiondifferenceinputrequesttypedef)
-  - [GetLensVersionDifferenceOutputTypeDef](#getlensversiondifferenceoutputtypedef)
-  - [GetMilestoneInputRequestTypeDef](#getmilestoneinputrequesttypedef)
-  - [GetMilestoneOutputTypeDef](#getmilestoneoutputtypedef)
-  - [GetWorkloadInputRequestTypeDef](#getworkloadinputrequesttypedef)
-  - [GetWorkloadOutputTypeDef](#getworkloadoutputtypedef)
-  - [ImportLensInputRequestTypeDef](#importlensinputrequesttypedef)
-  - [ImportLensOutputTypeDef](#importlensoutputtypedef)
-  - [ImprovementSummaryTypeDef](#improvementsummarytypedef)
-  - [LensReviewReportTypeDef](#lensreviewreporttypedef)
-  - [LensReviewSummaryTypeDef](#lensreviewsummarytypedef)
-  - [LensReviewTypeDef](#lensreviewtypedef)
-  - [LensShareSummaryTypeDef](#lenssharesummarytypedef)
-  - [LensSummaryTypeDef](#lenssummarytypedef)
-  - [LensTypeDef](#lenstypedef)
-  - [LensUpgradeSummaryTypeDef](#lensupgradesummarytypedef)
-  - [ListAnswersInputRequestTypeDef](#listanswersinputrequesttypedef)
-  - [ListAnswersOutputTypeDef](#listanswersoutputtypedef)
-  - [ListLensReviewImprovementsInputRequestTypeDef](#listlensreviewimprovementsinputrequesttypedef)
-  - [ListLensReviewImprovementsOutputTypeDef](#listlensreviewimprovementsoutputtypedef)
-  - [ListLensReviewsInputRequestTypeDef](#listlensreviewsinputrequesttypedef)
-  - [ListLensReviewsOutputTypeDef](#listlensreviewsoutputtypedef)
-  - [ListLensSharesInputRequestTypeDef](#listlenssharesinputrequesttypedef)
-  - [ListLensSharesOutputTypeDef](#listlenssharesoutputtypedef)
-  - [ListLensesInputRequestTypeDef](#listlensesinputrequesttypedef)
-  - [ListLensesOutputTypeDef](#listlensesoutputtypedef)
-  - [ListMilestonesInputRequestTypeDef](#listmilestonesinputrequesttypedef)
-  - [ListMilestonesOutputTypeDef](#listmilestonesoutputtypedef)
-  - [ListNotificationsInputRequestTypeDef](#listnotificationsinputrequesttypedef)
-  - [ListNotificationsOutputTypeDef](#listnotificationsoutputtypedef)
-  - [ListShareInvitationsInputRequestTypeDef](#listshareinvitationsinputrequesttypedef)
-  - [ListShareInvitationsOutputTypeDef](#listshareinvitationsoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ListWorkloadSharesInputRequestTypeDef](#listworkloadsharesinputrequesttypedef)
-  - [ListWorkloadSharesOutputTypeDef](#listworkloadsharesoutputtypedef)
-  - [ListWorkloadsInputRequestTypeDef](#listworkloadsinputrequesttypedef)
-  - [ListWorkloadsOutputTypeDef](#listworkloadsoutputtypedef)
-  - [MilestoneSummaryTypeDef](#milestonesummarytypedef)
-  - [MilestoneTypeDef](#milestonetypedef)
-  - [NotificationSummaryTypeDef](#notificationsummarytypedef)
-  - [PillarDifferenceTypeDef](#pillardifferencetypedef)
-  - [PillarReviewSummaryTypeDef](#pillarreviewsummarytypedef)
-  - [QuestionDifferenceTypeDef](#questiondifferencetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ShareInvitationSummaryTypeDef](#shareinvitationsummarytypedef)
-  - [ShareInvitationTypeDef](#shareinvitationtypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateAnswerInputRequestTypeDef](#updateanswerinputrequesttypedef)
-  - [UpdateAnswerOutputTypeDef](#updateansweroutputtypedef)
-  - [UpdateLensReviewInputRequestTypeDef](#updatelensreviewinputrequesttypedef)
-  - [UpdateLensReviewOutputTypeDef](#updatelensreviewoutputtypedef)
-  - [UpdateShareInvitationInputRequestTypeDef](#updateshareinvitationinputrequesttypedef)
-  - [UpdateShareInvitationOutputTypeDef](#updateshareinvitationoutputtypedef)
-  - [UpdateWorkloadInputRequestTypeDef](#updateworkloadinputrequesttypedef)
-  - [UpdateWorkloadOutputTypeDef](#updateworkloadoutputtypedef)
-  - [UpdateWorkloadShareInputRequestTypeDef](#updateworkloadshareinputrequesttypedef)
-  - [UpdateWorkloadShareOutputTypeDef](#updateworkloadshareoutputtypedef)
-  - [UpgradeLensReviewInputRequestTypeDef](#upgradelensreviewinputrequesttypedef)
-  - [VersionDifferencesTypeDef](#versiondifferencestypedef)
-  - [WorkloadShareSummaryTypeDef](#workloadsharesummarytypedef)
-  - [WorkloadShareTypeDef](#workloadsharetypedef)
-  - [WorkloadSummaryTypeDef](#workloadsummarytypedef)
-  - [WorkloadTypeDef](#workloadtypedef)
-
-<a id="answersummarytypedef"></a>
+    Auto-generated documentation for [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
+    type annotations stubs module [mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ## AnswerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import AnswerSummaryTypeDef
+
+def get_value() -> AnswerSummaryTypeDef:
+    return {
+        "QuestionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnswerSummaryTypeDef(TypedDict):
+    QuestionId: NotRequired[str],
+    PillarId: NotRequired[str],
+    QuestionTitle: NotRequired[str],
+    Choices: NotRequired[List[ChoiceTypeDef]],  # (1)
+    SelectedChoices: NotRequired[List[str]],
+    ChoiceAnswerSummaries: NotRequired[List[ChoiceAnswerSummaryTypeDef]],  # (2)
+    IsApplicable: NotRequired[bool],
+    Risk: NotRequired[RiskType],  # (3)
+    Reason: NotRequired[AnswerReasonType],  # (4)
+```
 
-- `QuestionId`: `str`
-- `PillarId`: `str`
-- `QuestionTitle`: `str`
-- `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
-- `SelectedChoices`: `List`\[`str`\]
-- `ChoiceAnswerSummaries`:
-  `List`\[[ChoiceAnswerSummaryTypeDef](./type_defs.md#choiceanswersummarytypedef)\]
-- `IsApplicable`: `bool`
-- `Risk`: [RiskType](./literals.md#risktype)
-- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
-
-<a id="answertypedef"></a>
-
+1. See [:material-code-braces: ChoiceTypeDef](./type_defs.md#choicetypedef) 
+2. See [:material-code-braces: ChoiceAnswerSummaryTypeDef](./type_defs.md#choiceanswersummarytypedef) 
+3. See [:material-code-brackets: RiskType](./literals.md#risktype) 
+4. See [:material-code-brackets: AnswerReasonType](./literals.md#answerreasontype) 
 ## AnswerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import AnswerTypeDef
+
+def get_value() -> AnswerTypeDef:
+    return {
+        "QuestionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnswerTypeDef(TypedDict):
+    QuestionId: NotRequired[str],
+    PillarId: NotRequired[str],
+    QuestionTitle: NotRequired[str],
+    QuestionDescription: NotRequired[str],
+    ImprovementPlanUrl: NotRequired[str],
+    HelpfulResourceUrl: NotRequired[str],
+    HelpfulResourceDisplayText: NotRequired[str],
+    Choices: NotRequired[List[ChoiceTypeDef]],  # (1)
+    SelectedChoices: NotRequired[List[str]],
+    ChoiceAnswers: NotRequired[List[ChoiceAnswerTypeDef]],  # (2)
+    IsApplicable: NotRequired[bool],
+    Risk: NotRequired[RiskType],  # (3)
+    Notes: NotRequired[str],
+    Reason: NotRequired[AnswerReasonType],  # (4)
+```
 
-- `QuestionId`: `str`
-- `PillarId`: `str`
-- `QuestionTitle`: `str`
-- `QuestionDescription`: `str`
-- `ImprovementPlanUrl`: `str`
-- `HelpfulResourceUrl`: `str`
-- `HelpfulResourceDisplayText`: `str`
-- `Choices`: `List`\[[ChoiceTypeDef](./type_defs.md#choicetypedef)\]
-- `SelectedChoices`: `List`\[`str`\]
-- `ChoiceAnswers`:
-  `List`\[[ChoiceAnswerTypeDef](./type_defs.md#choiceanswertypedef)\]
-- `IsApplicable`: `bool`
-- `Risk`: [RiskType](./literals.md#risktype)
-- `Notes`: `str`
-- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
-
-<a id="associatelensesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ChoiceTypeDef](./type_defs.md#choicetypedef) 
+2. See [:material-code-braces: ChoiceAnswerTypeDef](./type_defs.md#choiceanswertypedef) 
+3. See [:material-code-brackets: RiskType](./literals.md#risktype) 
+4. See [:material-code-brackets: AnswerReasonType](./literals.md#answerreasontype) 
 ## AssociateLensesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import AssociateLensesInputRequestTypeDef
+
+def get_value() -> AssociateLensesInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAliases": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAliases`: `Sequence`\[`str`\]
-
-<a id="choiceanswersummarytypedef"></a>
+```python title="Definition"
+class AssociateLensesInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAliases: Sequence[str],
+```
 
 ## ChoiceAnswerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerSummaryTypeDef
+
+def get_value() -> ChoiceAnswerSummaryTypeDef:
+    return {
+        "ChoiceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChoiceAnswerSummaryTypeDef(TypedDict):
+    ChoiceId: NotRequired[str],
+    Status: NotRequired[ChoiceStatusType],  # (1)
+    Reason: NotRequired[ChoiceReasonType],  # (2)
+```
 
-- `ChoiceId`: `str`
-- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
-- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
-
-<a id="choiceanswertypedef"></a>
-
+1. See [:material-code-brackets: ChoiceStatusType](./literals.md#choicestatustype) 
+2. See [:material-code-brackets: ChoiceReasonType](./literals.md#choicereasontype) 
 ## ChoiceAnswerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceAnswerTypeDef
+
+def get_value() -> ChoiceAnswerTypeDef:
+    return {
+        "ChoiceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChoiceAnswerTypeDef(TypedDict):
+    ChoiceId: NotRequired[str],
+    Status: NotRequired[ChoiceStatusType],  # (1)
+    Reason: NotRequired[ChoiceReasonType],  # (2)
+    Notes: NotRequired[str],
+```
 
-- `ChoiceId`: `str`
-- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
-- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
-- `Notes`: `str`
-
-<a id="choicecontenttypedef"></a>
-
+1. See [:material-code-brackets: ChoiceStatusType](./literals.md#choicestatustype) 
+2. See [:material-code-brackets: ChoiceReasonType](./literals.md#choicereasontype) 
 ## ChoiceContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceContentTypeDef
+
+def get_value() -> ChoiceContentTypeDef:
+    return {
+        "DisplayText": ...,
+    }
 ```
 
-Optional fields:
-
-- `DisplayText`: `str`
-- `Url`: `str`
-
-<a id="choiceimprovementplantypedef"></a>
+```python title="Definition"
+class ChoiceContentTypeDef(TypedDict):
+    DisplayText: NotRequired[str],
+    Url: NotRequired[str],
+```
 
 ## ChoiceImprovementPlanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceImprovementPlanTypeDef
+
+def get_value() -> ChoiceImprovementPlanTypeDef:
+    return {
+        "ChoiceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ChoiceId`: `str`
-- `DisplayText`: `str`
-- `ImprovementPlanUrl`: `str`
-
-<a id="choicetypedef"></a>
+```python title="Definition"
+class ChoiceImprovementPlanTypeDef(TypedDict):
+    ChoiceId: NotRequired[str],
+    DisplayText: NotRequired[str],
+    ImprovementPlanUrl: NotRequired[str],
+```
 
 ## ChoiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceTypeDef
+
+def get_value() -> ChoiceTypeDef:
+    return {
+        "ChoiceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChoiceTypeDef(TypedDict):
+    ChoiceId: NotRequired[str],
+    Title: NotRequired[str],
+    Description: NotRequired[str],
+    HelpfulResource: NotRequired[ChoiceContentTypeDef],  # (1)
+    ImprovementPlan: NotRequired[ChoiceContentTypeDef],  # (1)
+```
 
-- `ChoiceId`: `str`
-- `Title`: `str`
-- `Description`: `str`
-- `HelpfulResource`:
-  [ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef)
-- `ImprovementPlan`:
-  [ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef)
-
-<a id="choiceupdatetypedef"></a>
-
+1. See [:material-code-braces: ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef) 
+2. See [:material-code-braces: ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef) 
 ## ChoiceUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ChoiceUpdateTypeDef
+
+def get_value() -> ChoiceUpdateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChoiceUpdateTypeDef(TypedDict):
+    Status: ChoiceStatusType,  # (1)
+    Reason: NotRequired[ChoiceReasonType],  # (2)
+    Notes: NotRequired[str],
+```
 
-- `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
-
-Optional fields:
-
-- `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
-- `Notes`: `str`
-
-<a id="createlensshareinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChoiceStatusType](./literals.md#choicestatustype) 
+2. See [:material-code-brackets: ChoiceReasonType](./literals.md#choicereasontype) 
 ## CreateLensShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateLensShareInputRequestTypeDef
+
+def get_value() -> CreateLensShareInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+        "SharedWith": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-- `SharedWith`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="createlensshareoutputtypedef"></a>
+```python title="Definition"
+class CreateLensShareInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    SharedWith: str,
+    ClientRequestToken: str,
+```
 
 ## CreateLensShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateLensShareOutputTypeDef
+
+def get_value() -> CreateLensShareOutputTypeDef:
+    return {
+        "ShareId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLensShareOutputTypeDef(TypedDict):
+    ShareId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ShareId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlensversioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLensVersionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateLensVersionInputRequestTypeDef
+
+def get_value() -> CreateLensVersionInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+        "LensVersion": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-- `LensVersion`: `str`
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `IsMajorVersion`: `bool`
-
-<a id="createlensversionoutputtypedef"></a>
+```python title="Definition"
+class CreateLensVersionInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    LensVersion: str,
+    ClientRequestToken: str,
+    IsMajorVersion: NotRequired[bool],
+```
 
 ## CreateLensVersionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateLensVersionOutputTypeDef
+
+def get_value() -> CreateLensVersionOutputTypeDef:
+    return {
+        "LensArn": ...,
+        "LensVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLensVersionOutputTypeDef(TypedDict):
+    LensArn: str,
+    LensVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LensArn`: `str`
-- `LensVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmilestoneinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMilestoneInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateMilestoneInputRequestTypeDef
+
+def get_value() -> CreateMilestoneInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneName": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `MilestoneName`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="createmilestoneoutputtypedef"></a>
+```python title="Definition"
+class CreateMilestoneInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneName: str,
+    ClientRequestToken: str,
+```
 
 ## CreateMilestoneOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateMilestoneOutputTypeDef
+
+def get_value() -> CreateMilestoneOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMilestoneOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkloadinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkloadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadInputRequestTypeDef
+
+def get_value() -> CreateWorkloadInputRequestTypeDef:
+    return {
+        "WorkloadName": ...,
+        "Description": ...,
+        "Environment": ...,
+        "ReviewOwner": ...,
+        "Lenses": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkloadInputRequestTypeDef(TypedDict):
+    WorkloadName: str,
+    Description: str,
+    Environment: WorkloadEnvironmentType,  # (1)
+    ReviewOwner: str,
+    Lenses: Sequence[str],
+    ClientRequestToken: str,
+    AccountIds: NotRequired[Sequence[str]],
+    AwsRegions: NotRequired[Sequence[str]],
+    NonAwsRegions: NotRequired[Sequence[str]],
+    PillarPriorities: NotRequired[Sequence[str]],
+    ArchitecturalDesign: NotRequired[str],
+    IndustryType: NotRequired[str],
+    Industry: NotRequired[str],
+    Notes: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `WorkloadName`: `str`
-- `Description`: `str`
-- `Environment`:
-  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `ReviewOwner`: `str`
-- `Lenses`: `Sequence`\[`str`\]
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `AccountIds`: `Sequence`\[`str`\]
-- `AwsRegions`: `Sequence`\[`str`\]
-- `NonAwsRegions`: `Sequence`\[`str`\]
-- `PillarPriorities`: `Sequence`\[`str`\]
-- `ArchitecturalDesign`: `str`
-- `IndustryType`: `str`
-- `Industry`: `str`
-- `Notes`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createworkloadoutputtypedef"></a>
-
+1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
 ## CreateWorkloadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadOutputTypeDef
+
+def get_value() -> CreateWorkloadOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "WorkloadArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkloadOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    WorkloadArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WorkloadId`: `str`
-- `WorkloadArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworkloadshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorkloadShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadShareInputRequestTypeDef
+
+def get_value() -> CreateWorkloadShareInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "SharedWith": ...,
+        "PermissionType": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkloadShareInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    SharedWith: str,
+    PermissionType: PermissionTypeType,  # (1)
+    ClientRequestToken: str,
+```
 
-- `WorkloadId`: `str`
-- `SharedWith`: `str`
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-- `ClientRequestToken`: `str`
-
-<a id="createworkloadshareoutputtypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
 ## CreateWorkloadShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import CreateWorkloadShareOutputTypeDef
+
+def get_value() -> CreateWorkloadShareOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "ShareId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorkloadShareOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    ShareId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `WorkloadId`: `str`
-- `ShareId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletelensinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteLensInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import DeleteLensInputRequestTypeDef
+
+def get_value() -> DeleteLensInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+        "ClientRequestToken": ...,
+        "LensStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteLensInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    ClientRequestToken: str,
+    LensStatus: LensStatusTypeType,  # (1)
+```
 
-- `LensAlias`: `str`
-- `ClientRequestToken`: `str`
-- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
-
-<a id="deletelensshareinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: LensStatusTypeType](./literals.md#lensstatustypetype) 
 ## DeleteLensShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import DeleteLensShareInputRequestTypeDef
+
+def get_value() -> DeleteLensShareInputRequestTypeDef:
+    return {
+        "ShareId": ...,
+        "LensAlias": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `ShareId`: `str`
-- `LensAlias`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="deleteworkloadinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteLensShareInputRequestTypeDef(TypedDict):
+    ShareId: str,
+    LensAlias: str,
+    ClientRequestToken: str,
+```
 
 ## DeleteWorkloadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import DeleteWorkloadInputRequestTypeDef
+
+def get_value() -> DeleteWorkloadInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="deleteworkloadshareinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteWorkloadInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    ClientRequestToken: str,
+```
 
 ## DeleteWorkloadShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import DeleteWorkloadShareInputRequestTypeDef
+
+def get_value() -> DeleteWorkloadShareInputRequestTypeDef:
+    return {
+        "ShareId": ...,
+        "WorkloadId": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `ShareId`: `str`
-- `WorkloadId`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="disassociatelensesinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteWorkloadShareInputRequestTypeDef(TypedDict):
+    ShareId: str,
+    WorkloadId: str,
+    ClientRequestToken: str,
+```
 
 ## DisassociateLensesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import DisassociateLensesInputRequestTypeDef
+
+def get_value() -> DisassociateLensesInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAliases": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAliases`: `Sequence`\[`str`\]
-
-<a id="exportlensinputrequesttypedef"></a>
+```python title="Definition"
+class DisassociateLensesInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAliases: Sequence[str],
+```
 
 ## ExportLensInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ExportLensInputRequestTypeDef
+
+def get_value() -> ExportLensInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `LensVersion`: `str`
-
-<a id="exportlensoutputtypedef"></a>
+```python title="Definition"
+class ExportLensInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    LensVersion: NotRequired[str],
+```
 
 ## ExportLensOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ExportLensOutputTypeDef
+
+def get_value() -> ExportLensOutputTypeDef:
+    return {
+        "LensJSON": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportLensOutputTypeDef(TypedDict):
+    LensJSON: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LensJSON`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getanswerinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnswerInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetAnswerInputRequestTypeDef
+
+def get_value() -> GetAnswerInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+        "QuestionId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-- `QuestionId`: `str`
-
-Optional fields:
-
-- `MilestoneNumber`: `int`
-
-<a id="getansweroutputtypedef"></a>
+```python title="Definition"
+class GetAnswerInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    QuestionId: str,
+    MilestoneNumber: NotRequired[int],
+```
 
 ## GetAnswerOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetAnswerOutputTypeDef
+
+def get_value() -> GetAnswerOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensAlias": ...,
+        "LensArn": ...,
+        "Answer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnswerOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensAlias: str,
+    LensArn: str,
+    Answer: AnswerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `Answer`: [AnswerTypeDef](./type_defs.md#answertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlensinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AnswerTypeDef](./type_defs.md#answertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLensInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensInputRequestTypeDef
+
+def get_value() -> GetLensInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `LensVersion`: `str`
-
-<a id="getlensoutputtypedef"></a>
+```python title="Definition"
+class GetLensInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    LensVersion: NotRequired[str],
+```
 
 ## GetLensOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensOutputTypeDef
+
+def get_value() -> GetLensOutputTypeDef:
+    return {
+        "Lens": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLensOutputTypeDef(TypedDict):
+    Lens: LensTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Lens`: [LensTypeDef](./type_defs.md#lenstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlensreviewinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensTypeDef](./type_defs.md#lenstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLensReviewInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewInputRequestTypeDef
+
+def get_value() -> GetLensReviewInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `MilestoneNumber`: `int`
-
-<a id="getlensreviewoutputtypedef"></a>
+```python title="Definition"
+class GetLensReviewInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneNumber: NotRequired[int],
+```
 
 ## GetLensReviewOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewOutputTypeDef
+
+def get_value() -> GetLensReviewOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensReview": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLensReviewOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensReview: LensReviewTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensReview`: [LensReviewTypeDef](./type_defs.md#lensreviewtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlensreviewreportinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensReviewTypeDef](./type_defs.md#lensreviewtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLensReviewReportInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewReportInputRequestTypeDef
+
+def get_value() -> GetLensReviewReportInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `MilestoneNumber`: `int`
-
-<a id="getlensreviewreportoutputtypedef"></a>
+```python title="Definition"
+class GetLensReviewReportInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneNumber: NotRequired[int],
+```
 
 ## GetLensReviewReportOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensReviewReportOutputTypeDef
+
+def get_value() -> GetLensReviewReportOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensReviewReport": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLensReviewReportOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensReviewReport: LensReviewReportTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensReviewReport`:
-  [LensReviewReportTypeDef](./type_defs.md#lensreviewreporttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlensversiondifferenceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensReviewReportTypeDef](./type_defs.md#lensreviewreporttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLensVersionDifferenceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceInputRequestTypeDef
+
+def get_value() -> GetLensVersionDifferenceInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `BaseLensVersion`: `str`
-- `TargetLensVersion`: `str`
-
-<a id="getlensversiondifferenceoutputtypedef"></a>
+```python title="Definition"
+class GetLensVersionDifferenceInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    BaseLensVersion: NotRequired[str],
+    TargetLensVersion: NotRequired[str],
+```
 
 ## GetLensVersionDifferenceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetLensVersionDifferenceOutputTypeDef
+
+def get_value() -> GetLensVersionDifferenceOutputTypeDef:
+    return {
+        "LensAlias": ...,
+        "LensArn": ...,
+        "BaseLensVersion": ...,
+        "TargetLensVersion": ...,
+        "LatestLensVersion": ...,
+        "VersionDifferences": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLensVersionDifferenceOutputTypeDef(TypedDict):
+    LensAlias: str,
+    LensArn: str,
+    BaseLensVersion: str,
+    TargetLensVersion: str,
+    LatestLensVersion: str,
+    VersionDifferences: VersionDifferencesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `BaseLensVersion`: `str`
-- `TargetLensVersion`: `str`
-- `LatestLensVersion`: `str`
-- `VersionDifferences`:
-  [VersionDifferencesTypeDef](./type_defs.md#versiondifferencestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmilestoneinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VersionDifferencesTypeDef](./type_defs.md#versiondifferencestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMilestoneInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetMilestoneInputRequestTypeDef
+
+def get_value() -> GetMilestoneInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-
-<a id="getmilestoneoutputtypedef"></a>
+```python title="Definition"
+class GetMilestoneInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+```
 
 ## GetMilestoneOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetMilestoneOutputTypeDef
+
+def get_value() -> GetMilestoneOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "Milestone": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMilestoneOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    Milestone: MilestoneTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `Milestone`: [MilestoneTypeDef](./type_defs.md#milestonetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkloadinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MilestoneTypeDef](./type_defs.md#milestonetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetWorkloadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetWorkloadInputRequestTypeDef
+
+def get_value() -> GetWorkloadInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-
-<a id="getworkloadoutputtypedef"></a>
+```python title="Definition"
+class GetWorkloadInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+```
 
 ## GetWorkloadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import GetWorkloadOutputTypeDef
+
+def get_value() -> GetWorkloadOutputTypeDef:
+    return {
+        "Workload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorkloadOutputTypeDef(TypedDict):
+    Workload: WorkloadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importlensinputrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkloadTypeDef](./type_defs.md#workloadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportLensInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ImportLensInputRequestTypeDef
+
+def get_value() -> ImportLensInputRequestTypeDef:
+    return {
+        "JSONString": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
-
-- `JSONString`: `str`
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `LensAlias`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="importlensoutputtypedef"></a>
+```python title="Definition"
+class ImportLensInputRequestTypeDef(TypedDict):
+    JSONString: str,
+    ClientRequestToken: str,
+    LensAlias: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ImportLensOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ImportLensOutputTypeDef
+
+def get_value() -> ImportLensOutputTypeDef:
+    return {
+        "LensArn": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportLensOutputTypeDef(TypedDict):
+    LensArn: str,
+    Status: ImportLensStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LensArn`: `str`
-- `Status`: [ImportLensStatusType](./literals.md#importlensstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="improvementsummarytypedef"></a>
-
+1. See [:material-code-brackets: ImportLensStatusType](./literals.md#importlensstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImprovementSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ImprovementSummaryTypeDef
+
+def get_value() -> ImprovementSummaryTypeDef:
+    return {
+        "QuestionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImprovementSummaryTypeDef(TypedDict):
+    QuestionId: NotRequired[str],
+    PillarId: NotRequired[str],
+    QuestionTitle: NotRequired[str],
+    Risk: NotRequired[RiskType],  # (1)
+    ImprovementPlanUrl: NotRequired[str],
+    ImprovementPlans: NotRequired[List[ChoiceImprovementPlanTypeDef]],  # (2)
+```
 
-- `QuestionId`: `str`
-- `PillarId`: `str`
-- `QuestionTitle`: `str`
-- `Risk`: [RiskType](./literals.md#risktype)
-- `ImprovementPlanUrl`: `str`
-- `ImprovementPlans`:
-  `List`\[[ChoiceImprovementPlanTypeDef](./type_defs.md#choiceimprovementplantypedef)\]
-
-<a id="lensreviewreporttypedef"></a>
-
+1. See [:material-code-brackets: RiskType](./literals.md#risktype) 
+2. See [:material-code-braces: ChoiceImprovementPlanTypeDef](./type_defs.md#choiceimprovementplantypedef) 
 ## LensReviewReportTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensReviewReportTypeDef
+
+def get_value() -> LensReviewReportTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Optional fields:
-
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `Base64String`: `str`
-
-<a id="lensreviewsummarytypedef"></a>
+```python title="Definition"
+class LensReviewReportTypeDef(TypedDict):
+    LensAlias: NotRequired[str],
+    LensArn: NotRequired[str],
+    Base64String: NotRequired[str],
+```
 
 ## LensReviewSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensReviewSummaryTypeDef
+
+def get_value() -> LensReviewSummaryTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LensReviewSummaryTypeDef(TypedDict):
+    LensAlias: NotRequired[str],
+    LensArn: NotRequired[str],
+    LensVersion: NotRequired[str],
+    LensName: NotRequired[str],
+    LensStatus: NotRequired[LensStatusType],  # (1)
+    UpdatedAt: NotRequired[datetime],
+    RiskCounts: NotRequired[Dict[RiskType, int]],  # (2)
+```
 
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `LensVersion`: `str`
-- `LensName`: `str`
-- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
-- `UpdatedAt`: `datetime`
-- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
-
-<a id="lensreviewtypedef"></a>
-
+1. See [:material-code-brackets: LensStatusType](./literals.md#lensstatustype) 
+2. See [:material-code-brackets: RiskType](./literals.md#risktype) 
 ## LensReviewTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensReviewTypeDef
+
+def get_value() -> LensReviewTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LensReviewTypeDef(TypedDict):
+    LensAlias: NotRequired[str],
+    LensArn: NotRequired[str],
+    LensVersion: NotRequired[str],
+    LensName: NotRequired[str],
+    LensStatus: NotRequired[LensStatusType],  # (1)
+    PillarReviewSummaries: NotRequired[List[PillarReviewSummaryTypeDef]],  # (2)
+    UpdatedAt: NotRequired[datetime],
+    Notes: NotRequired[str],
+    RiskCounts: NotRequired[Dict[RiskType, int]],  # (3)
+    NextToken: NotRequired[str],
+```
 
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `LensVersion`: `str`
-- `LensName`: `str`
-- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
-- `PillarReviewSummaries`:
-  `List`\[[PillarReviewSummaryTypeDef](./type_defs.md#pillarreviewsummarytypedef)\]
-- `UpdatedAt`: `datetime`
-- `Notes`: `str`
-- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
-- `NextToken`: `str`
-
-<a id="lenssharesummarytypedef"></a>
-
+1. See [:material-code-brackets: LensStatusType](./literals.md#lensstatustype) 
+2. See [:material-code-braces: PillarReviewSummaryTypeDef](./type_defs.md#pillarreviewsummarytypedef) 
+3. See [:material-code-brackets: RiskType](./literals.md#risktype) 
 ## LensShareSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensShareSummaryTypeDef
+
+def get_value() -> LensShareSummaryTypeDef:
+    return {
+        "ShareId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LensShareSummaryTypeDef(TypedDict):
+    ShareId: NotRequired[str],
+    SharedWith: NotRequired[str],
+    Status: NotRequired[ShareStatusType],  # (1)
+```
 
-- `ShareId`: `str`
-- `SharedWith`: `str`
-- `Status`: [ShareStatusType](./literals.md#sharestatustype)
-
-<a id="lenssummarytypedef"></a>
-
+1. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## LensSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensSummaryTypeDef
+
+def get_value() -> LensSummaryTypeDef:
+    return {
+        "LensArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LensSummaryTypeDef(TypedDict):
+    LensArn: NotRequired[str],
+    LensAlias: NotRequired[str],
+    LensName: NotRequired[str],
+    LensType: NotRequired[LensTypeType],  # (1)
+    Description: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+    LensVersion: NotRequired[str],
+    Owner: NotRequired[str],
+    LensStatus: NotRequired[LensStatusType],  # (2)
+```
 
-- `LensArn`: `str`
-- `LensAlias`: `str`
-- `LensName`: `str`
-- `LensType`: [LensTypeType](./literals.md#lenstypetype)
-- `Description`: `str`
-- `CreatedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-- `LensVersion`: `str`
-- `Owner`: `str`
-- `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
-
-<a id="lenstypedef"></a>
-
+1. See [:material-code-brackets: LensTypeType](./literals.md#lenstypetype) 
+2. See [:material-code-brackets: LensStatusType](./literals.md#lensstatustype) 
 ## LensTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensTypeDef
+
+def get_value() -> LensTypeDef:
+    return {
+        "LensArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `LensArn`: `str`
-- `LensVersion`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Owner`: `str`
-- `ShareInvitationId`: `str`
-
-<a id="lensupgradesummarytypedef"></a>
+```python title="Definition"
+class LensTypeDef(TypedDict):
+    LensArn: NotRequired[str],
+    LensVersion: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Owner: NotRequired[str],
+    ShareInvitationId: NotRequired[str],
+```
 
 ## LensUpgradeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import LensUpgradeSummaryTypeDef
+
+def get_value() -> LensUpgradeSummaryTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkloadId`: `str`
-- `WorkloadName`: `str`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `CurrentLensVersion`: `str`
-- `LatestLensVersion`: `str`
-
-<a id="listanswersinputrequesttypedef"></a>
+```python title="Definition"
+class LensUpgradeSummaryTypeDef(TypedDict):
+    WorkloadId: NotRequired[str],
+    WorkloadName: NotRequired[str],
+    LensAlias: NotRequired[str],
+    LensArn: NotRequired[str],
+    CurrentLensVersion: NotRequired[str],
+    LatestLensVersion: NotRequired[str],
+```
 
 ## ListAnswersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListAnswersInputRequestTypeDef
+
+def get_value() -> ListAnswersInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `PillarId`: `str`
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listanswersoutputtypedef"></a>
+```python title="Definition"
+class ListAnswersInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    PillarId: NotRequired[str],
+    MilestoneNumber: NotRequired[int],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListAnswersOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListAnswersOutputTypeDef
+
+def get_value() -> ListAnswersOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensAlias": ...,
+        "LensArn": ...,
+        "AnswerSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnswersOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensAlias: str,
+    LensArn: str,
+    AnswerSummaries: List[AnswerSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `AnswerSummaries`:
-  `List`\[[AnswerSummaryTypeDef](./type_defs.md#answersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlensreviewimprovementsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AnswerSummaryTypeDef](./type_defs.md#answersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLensReviewImprovementsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewImprovementsInputRequestTypeDef
+
+def get_value() -> ListLensReviewImprovementsInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `PillarId`: `str`
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlensreviewimprovementsoutputtypedef"></a>
+```python title="Definition"
+class ListLensReviewImprovementsInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    PillarId: NotRequired[str],
+    MilestoneNumber: NotRequired[int],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListLensReviewImprovementsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewImprovementsOutputTypeDef
+
+def get_value() -> ListLensReviewImprovementsOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensAlias": ...,
+        "LensArn": ...,
+        "ImprovementSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLensReviewImprovementsOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensAlias: str,
+    LensArn: str,
+    ImprovementSummaries: List[ImprovementSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `ImprovementSummaries`:
-  `List`\[[ImprovementSummaryTypeDef](./type_defs.md#improvementsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlensreviewsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ImprovementSummaryTypeDef](./type_defs.md#improvementsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLensReviewsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewsInputRequestTypeDef
+
+def get_value() -> ListLensReviewsInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-
-Optional fields:
-
-- `MilestoneNumber`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlensreviewsoutputtypedef"></a>
+```python title="Definition"
+class ListLensReviewsInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: NotRequired[int],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListLensReviewsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensReviewsOutputTypeDef
+
+def get_value() -> ListLensReviewsOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneNumber": ...,
+        "LensReviewSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLensReviewsOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneNumber: int,
+    LensReviewSummaries: List[LensReviewSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneNumber`: `int`
-- `LensReviewSummaries`:
-  `List`\[[LensReviewSummaryTypeDef](./type_defs.md#lensreviewsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlenssharesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensReviewSummaryTypeDef](./type_defs.md#lensreviewsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLensSharesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensSharesInputRequestTypeDef
+
+def get_value() -> ListLensSharesInputRequestTypeDef:
+    return {
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `SharedWithPrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlenssharesoutputtypedef"></a>
+```python title="Definition"
+class ListLensSharesInputRequestTypeDef(TypedDict):
+    LensAlias: str,
+    SharedWithPrefix: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListLensSharesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensSharesOutputTypeDef
+
+def get_value() -> ListLensSharesOutputTypeDef:
+    return {
+        "LensShareSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLensSharesOutputTypeDef(TypedDict):
+    LensShareSummaries: List[LensShareSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LensShareSummaries`:
-  `List`\[[LensShareSummaryTypeDef](./type_defs.md#lenssharesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlensesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensShareSummaryTypeDef](./type_defs.md#lenssharesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLensesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensesInputRequestTypeDef
+
+def get_value() -> ListLensesInputRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListLensesInputRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    LensType: NotRequired[LensTypeType],  # (1)
+    LensStatus: NotRequired[LensStatusTypeType],  # (2)
+    LensName: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `LensType`: [LensTypeType](./literals.md#lenstypetype)
-- `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
-- `LensName`: `str`
-
-<a id="listlensesoutputtypedef"></a>
-
+1. See [:material-code-brackets: LensTypeType](./literals.md#lenstypetype) 
+2. See [:material-code-brackets: LensStatusTypeType](./literals.md#lensstatustypetype) 
 ## ListLensesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListLensesOutputTypeDef
+
+def get_value() -> ListLensesOutputTypeDef:
+    return {
+        "LensSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLensesOutputTypeDef(TypedDict):
+    LensSummaries: List[LensSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LensSummaries`:
-  `List`\[[LensSummaryTypeDef](./type_defs.md#lenssummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmilestonesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensSummaryTypeDef](./type_defs.md#lenssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMilestonesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListMilestonesInputRequestTypeDef
+
+def get_value() -> ListMilestonesInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmilestonesoutputtypedef"></a>
+```python title="Definition"
+class ListMilestonesInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListMilestonesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListMilestonesOutputTypeDef
+
+def get_value() -> ListMilestonesOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "MilestoneSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMilestonesOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    MilestoneSummaries: List[MilestoneSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `MilestoneSummaries`:
-  `List`\[[MilestoneSummaryTypeDef](./type_defs.md#milestonesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listnotificationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MilestoneSummaryTypeDef](./type_defs.md#milestonesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListNotificationsInputRequestTypeDef
+
+def get_value() -> ListNotificationsInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkloadId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listnotificationsoutputtypedef"></a>
+```python title="Definition"
+class ListNotificationsInputRequestTypeDef(TypedDict):
+    WorkloadId: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListNotificationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListNotificationsOutputTypeDef
+
+def get_value() -> ListNotificationsOutputTypeDef:
+    return {
+        "NotificationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListNotificationsOutputTypeDef(TypedDict):
+    NotificationSummaries: List[NotificationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NotificationSummaries`:
-  `List`\[[NotificationSummaryTypeDef](./type_defs.md#notificationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listshareinvitationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationSummaryTypeDef](./type_defs.md#notificationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListShareInvitationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListShareInvitationsInputRequestTypeDef
+
+def get_value() -> ListShareInvitationsInputRequestTypeDef:
+    return {
+        "WorkloadNamePrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListShareInvitationsInputRequestTypeDef(TypedDict):
+    WorkloadNamePrefix: NotRequired[str],
+    LensNamePrefix: NotRequired[str],
+    ShareResourceType: NotRequired[ShareResourceTypeType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `WorkloadNamePrefix`: `str`
-- `LensNamePrefix`: `str`
-- `ShareResourceType`:
-  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listshareinvitationsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ShareResourceTypeType](./literals.md#shareresourcetypetype) 
 ## ListShareInvitationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListShareInvitationsOutputTypeDef
+
+def get_value() -> ListShareInvitationsOutputTypeDef:
+    return {
+        "ShareInvitationSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListShareInvitationsOutputTypeDef(TypedDict):
+    ShareInvitationSummaries: List[ShareInvitationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ShareInvitationSummaries`:
-  `List`\[[ShareInvitationSummaryTypeDef](./type_defs.md#shareinvitationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ShareInvitationSummaryTypeDef](./type_defs.md#shareinvitationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "WorkloadArn": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadArn`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    WorkloadArn: str,
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkloadsharesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkloadSharesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadSharesInputRequestTypeDef
+
+def get_value() -> ListWorkloadSharesInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-
-Optional fields:
-
-- `SharedWithPrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkloadsharesoutputtypedef"></a>
+```python title="Definition"
+class ListWorkloadSharesInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    SharedWithPrefix: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWorkloadSharesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadSharesOutputTypeDef
+
+def get_value() -> ListWorkloadSharesOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "WorkloadShareSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkloadSharesOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    WorkloadShareSummaries: List[WorkloadShareSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `WorkloadShareSummaries`:
-  `List`\[[WorkloadShareSummaryTypeDef](./type_defs.md#workloadsharesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkloadsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkloadShareSummaryTypeDef](./type_defs.md#workloadsharesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListWorkloadsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadsInputRequestTypeDef
+
+def get_value() -> ListWorkloadsInputRequestTypeDef:
+    return {
+        "WorkloadNamePrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `WorkloadNamePrefix`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkloadsoutputtypedef"></a>
+```python title="Definition"
+class ListWorkloadsInputRequestTypeDef(TypedDict):
+    WorkloadNamePrefix: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListWorkloadsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ListWorkloadsOutputTypeDef
+
+def get_value() -> ListWorkloadsOutputTypeDef:
+    return {
+        "WorkloadSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorkloadsOutputTypeDef(TypedDict):
+    WorkloadSummaries: List[WorkloadSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadSummaries`:
-  `List`\[[WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="milestonesummarytypedef"></a>
-
+1. See [:material-code-braces: WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MilestoneSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import MilestoneSummaryTypeDef
+
+def get_value() -> MilestoneSummaryTypeDef:
+    return {
+        "MilestoneNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MilestoneSummaryTypeDef(TypedDict):
+    MilestoneNumber: NotRequired[int],
+    MilestoneName: NotRequired[str],
+    RecordedAt: NotRequired[datetime],
+    WorkloadSummary: NotRequired[WorkloadSummaryTypeDef],  # (1)
+```
 
-- `MilestoneNumber`: `int`
-- `MilestoneName`: `str`
-- `RecordedAt`: `datetime`
-- `WorkloadSummary`:
-  [WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef)
-
-<a id="milestonetypedef"></a>
-
+1. See [:material-code-braces: WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef) 
 ## MilestoneTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import MilestoneTypeDef
+
+def get_value() -> MilestoneTypeDef:
+    return {
+        "MilestoneNumber": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MilestoneTypeDef(TypedDict):
+    MilestoneNumber: NotRequired[int],
+    MilestoneName: NotRequired[str],
+    RecordedAt: NotRequired[datetime],
+    Workload: NotRequired[WorkloadTypeDef],  # (1)
+```
 
-- `MilestoneNumber`: `int`
-- `MilestoneName`: `str`
-- `RecordedAt`: `datetime`
-- `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
-
-<a id="notificationsummarytypedef"></a>
-
+1. See [:material-code-braces: WorkloadTypeDef](./type_defs.md#workloadtypedef) 
 ## NotificationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import NotificationSummaryTypeDef
+
+def get_value() -> NotificationSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NotificationSummaryTypeDef(TypedDict):
+    Type: NotRequired[NotificationTypeType],  # (1)
+    LensUpgradeSummary: NotRequired[LensUpgradeSummaryTypeDef],  # (2)
+```
 
-- `Type`: [NotificationTypeType](./literals.md#notificationtypetype)
-- `LensUpgradeSummary`:
-  [LensUpgradeSummaryTypeDef](./type_defs.md#lensupgradesummarytypedef)
-
-<a id="pillardifferencetypedef"></a>
-
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-braces: LensUpgradeSummaryTypeDef](./type_defs.md#lensupgradesummarytypedef) 
 ## PillarDifferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import PillarDifferenceTypeDef
+
+def get_value() -> PillarDifferenceTypeDef:
+    return {
+        "PillarId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PillarDifferenceTypeDef(TypedDict):
+    PillarId: NotRequired[str],
+    PillarName: NotRequired[str],
+    DifferenceStatus: NotRequired[DifferenceStatusType],  # (1)
+    QuestionDifferences: NotRequired[List[QuestionDifferenceTypeDef]],  # (2)
+```
 
-- `PillarId`: `str`
-- `PillarName`: `str`
-- `DifferenceStatus`:
-  [DifferenceStatusType](./literals.md#differencestatustype)
-- `QuestionDifferences`:
-  `List`\[[QuestionDifferenceTypeDef](./type_defs.md#questiondifferencetypedef)\]
-
-<a id="pillarreviewsummarytypedef"></a>
-
+1. See [:material-code-brackets: DifferenceStatusType](./literals.md#differencestatustype) 
+2. See [:material-code-braces: QuestionDifferenceTypeDef](./type_defs.md#questiondifferencetypedef) 
 ## PillarReviewSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import PillarReviewSummaryTypeDef
+
+def get_value() -> PillarReviewSummaryTypeDef:
+    return {
+        "PillarId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PillarReviewSummaryTypeDef(TypedDict):
+    PillarId: NotRequired[str],
+    PillarName: NotRequired[str],
+    Notes: NotRequired[str],
+    RiskCounts: NotRequired[Dict[RiskType, int]],  # (1)
+```
 
-- `PillarId`: `str`
-- `PillarName`: `str`
-- `Notes`: `str`
-- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
-
-<a id="questiondifferencetypedef"></a>
-
+1. See [:material-code-brackets: RiskType](./literals.md#risktype) 
 ## QuestionDifferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import QuestionDifferenceTypeDef
+
+def get_value() -> QuestionDifferenceTypeDef:
+    return {
+        "QuestionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QuestionDifferenceTypeDef(TypedDict):
+    QuestionId: NotRequired[str],
+    QuestionTitle: NotRequired[str],
+    DifferenceStatus: NotRequired[DifferenceStatusType],  # (1)
+```
 
-- `QuestionId`: `str`
-- `QuestionTitle`: `str`
-- `DifferenceStatus`:
-  [DifferenceStatusType](./literals.md#differencestatustype)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: DifferenceStatusType](./literals.md#differencestatustype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="shareinvitationsummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ShareInvitationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ShareInvitationSummaryTypeDef
+
+def get_value() -> ShareInvitationSummaryTypeDef:
+    return {
+        "ShareInvitationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShareInvitationSummaryTypeDef(TypedDict):
+    ShareInvitationId: NotRequired[str],
+    SharedBy: NotRequired[str],
+    SharedWith: NotRequired[str],
+    PermissionType: NotRequired[PermissionTypeType],  # (1)
+    ShareResourceType: NotRequired[ShareResourceTypeType],  # (2)
+    WorkloadName: NotRequired[str],
+    WorkloadId: NotRequired[str],
+    LensName: NotRequired[str],
+    LensArn: NotRequired[str],
+```
 
-- `ShareInvitationId`: `str`
-- `SharedBy`: `str`
-- `SharedWith`: `str`
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-- `ShareResourceType`:
-  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
-- `WorkloadName`: `str`
-- `WorkloadId`: `str`
-- `LensName`: `str`
-- `LensArn`: `str`
-
-<a id="shareinvitationtypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-brackets: ShareResourceTypeType](./literals.md#shareresourcetypetype) 
 ## ShareInvitationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import ShareInvitationTypeDef
+
+def get_value() -> ShareInvitationTypeDef:
+    return {
+        "ShareInvitationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ShareInvitationTypeDef(TypedDict):
+    ShareInvitationId: NotRequired[str],
+    ShareResourceType: NotRequired[ShareResourceTypeType],  # (1)
+    WorkloadId: NotRequired[str],
+    LensAlias: NotRequired[str],
+    LensArn: NotRequired[str],
+```
 
-- `ShareInvitationId`: `str`
-- `ShareResourceType`:
-  [ShareResourceTypeType](./literals.md#shareresourcetypetype)
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ShareResourceTypeType](./literals.md#shareresourcetypetype) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "WorkloadArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    WorkloadArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "WorkloadArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateanswerinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    WorkloadArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAnswerInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateAnswerInputRequestTypeDef
+
+def get_value() -> UpdateAnswerInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+        "QuestionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnswerInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    QuestionId: str,
+    SelectedChoices: NotRequired[Sequence[str]],
+    ChoiceUpdates: NotRequired[Mapping[str, ChoiceUpdateTypeDef]],  # (1)
+    Notes: NotRequired[str],
+    IsApplicable: NotRequired[bool],
+    Reason: NotRequired[AnswerReasonType],  # (2)
+```
 
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-- `QuestionId`: `str`
-
-Optional fields:
-
-- `SelectedChoices`: `Sequence`\[`str`\]
-- `ChoiceUpdates`: `Mapping`\[`str`,
-  [ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef)\]
-- `Notes`: `str`
-- `IsApplicable`: `bool`
-- `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
-
-<a id="updateansweroutputtypedef"></a>
-
+1. See [:material-code-braces: ChoiceUpdateTypeDef](./type_defs.md#choiceupdatetypedef) 
+2. See [:material-code-brackets: AnswerReasonType](./literals.md#answerreasontype) 
 ## UpdateAnswerOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateAnswerOutputTypeDef
+
+def get_value() -> UpdateAnswerOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+        "LensArn": ...,
+        "Answer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnswerOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    LensArn: str,
+    Answer: AnswerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-- `LensArn`: `str`
-- `Answer`: [AnswerTypeDef](./type_defs.md#answertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatelensreviewinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AnswerTypeDef](./type_defs.md#answertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateLensReviewInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateLensReviewInputRequestTypeDef
+
+def get_value() -> UpdateLensReviewInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-
-Optional fields:
-
-- `LensNotes`: `str`
-- `PillarNotes`: `Mapping`\[`str`, `str`\]
-
-<a id="updatelensreviewoutputtypedef"></a>
+```python title="Definition"
+class UpdateLensReviewInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    LensNotes: NotRequired[str],
+    PillarNotes: NotRequired[Mapping[str, str]],
+```
 
 ## UpdateLensReviewOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateLensReviewOutputTypeDef
+
+def get_value() -> UpdateLensReviewOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensReview": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLensReviewOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    LensReview: LensReviewTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `LensReview`: [LensReviewTypeDef](./type_defs.md#lensreviewtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateshareinvitationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LensReviewTypeDef](./type_defs.md#lensreviewtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateShareInvitationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateShareInvitationInputRequestTypeDef
+
+def get_value() -> UpdateShareInvitationInputRequestTypeDef:
+    return {
+        "ShareInvitationId": ...,
+        "ShareInvitationAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateShareInvitationInputRequestTypeDef(TypedDict):
+    ShareInvitationId: str,
+    ShareInvitationAction: ShareInvitationActionType,  # (1)
+```
 
-- `ShareInvitationId`: `str`
-- `ShareInvitationAction`:
-  [ShareInvitationActionType](./literals.md#shareinvitationactiontype)
-
-<a id="updateshareinvitationoutputtypedef"></a>
-
+1. See [:material-code-brackets: ShareInvitationActionType](./literals.md#shareinvitationactiontype) 
 ## UpdateShareInvitationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateShareInvitationOutputTypeDef
+
+def get_value() -> UpdateShareInvitationOutputTypeDef:
+    return {
+        "ShareInvitation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateShareInvitationOutputTypeDef(TypedDict):
+    ShareInvitation: ShareInvitationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ShareInvitation`:
-  [ShareInvitationTypeDef](./type_defs.md#shareinvitationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateworkloadinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ShareInvitationTypeDef](./type_defs.md#shareinvitationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWorkloadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadInputRequestTypeDef
+
+def get_value() -> UpdateWorkloadInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkloadInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    WorkloadName: NotRequired[str],
+    Description: NotRequired[str],
+    Environment: NotRequired[WorkloadEnvironmentType],  # (1)
+    AccountIds: NotRequired[Sequence[str]],
+    AwsRegions: NotRequired[Sequence[str]],
+    NonAwsRegions: NotRequired[Sequence[str]],
+    PillarPriorities: NotRequired[Sequence[str]],
+    ArchitecturalDesign: NotRequired[str],
+    ReviewOwner: NotRequired[str],
+    IsReviewOwnerUpdateAcknowledged: NotRequired[bool],
+    IndustryType: NotRequired[str],
+    Industry: NotRequired[str],
+    Notes: NotRequired[str],
+    ImprovementStatus: NotRequired[WorkloadImprovementStatusType],  # (2)
+```
 
-- `WorkloadId`: `str`
-
-Optional fields:
-
-- `WorkloadName`: `str`
-- `Description`: `str`
-- `Environment`:
-  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `AccountIds`: `Sequence`\[`str`\]
-- `AwsRegions`: `Sequence`\[`str`\]
-- `NonAwsRegions`: `Sequence`\[`str`\]
-- `PillarPriorities`: `Sequence`\[`str`\]
-- `ArchitecturalDesign`: `str`
-- `ReviewOwner`: `str`
-- `IsReviewOwnerUpdateAcknowledged`: `bool`
-- `IndustryType`: `str`
-- `Industry`: `str`
-- `Notes`: `str`
-- `ImprovementStatus`:
-  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
-
-<a id="updateworkloadoutputtypedef"></a>
-
+1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
+2. See [:material-code-brackets: WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype) 
 ## UpdateWorkloadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadOutputTypeDef
+
+def get_value() -> UpdateWorkloadOutputTypeDef:
+    return {
+        "Workload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkloadOutputTypeDef(TypedDict):
+    Workload: WorkloadTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateworkloadshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkloadTypeDef](./type_defs.md#workloadtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWorkloadShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadShareInputRequestTypeDef
+
+def get_value() -> UpdateWorkloadShareInputRequestTypeDef:
+    return {
+        "ShareId": ...,
+        "WorkloadId": ...,
+        "PermissionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkloadShareInputRequestTypeDef(TypedDict):
+    ShareId: str,
+    WorkloadId: str,
+    PermissionType: PermissionTypeType,  # (1)
+```
 
-- `ShareId`: `str`
-- `WorkloadId`: `str`
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-
-<a id="updateworkloadshareoutputtypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
 ## UpdateWorkloadShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpdateWorkloadShareOutputTypeDef
+
+def get_value() -> UpdateWorkloadShareOutputTypeDef:
+    return {
+        "WorkloadId": ...,
+        "WorkloadShare": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorkloadShareOutputTypeDef(TypedDict):
+    WorkloadId: str,
+    WorkloadShare: WorkloadShareTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `WorkloadId`: `str`
-- `WorkloadShare`: [WorkloadShareTypeDef](./type_defs.md#workloadsharetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="upgradelensreviewinputrequesttypedef"></a>
-
+1. See [:material-code-braces: WorkloadShareTypeDef](./type_defs.md#workloadsharetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpgradeLensReviewInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import UpgradeLensReviewInputRequestTypeDef
+
+def get_value() -> UpgradeLensReviewInputRequestTypeDef:
+    return {
+        "WorkloadId": ...,
+        "LensAlias": ...,
+        "MilestoneName": ...,
+    }
 ```
 
-Required fields:
-
-- `WorkloadId`: `str`
-- `LensAlias`: `str`
-- `MilestoneName`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-
-<a id="versiondifferencestypedef"></a>
+```python title="Definition"
+class UpgradeLensReviewInputRequestTypeDef(TypedDict):
+    WorkloadId: str,
+    LensAlias: str,
+    MilestoneName: str,
+    ClientRequestToken: NotRequired[str],
+```
 
 ## VersionDifferencesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import VersionDifferencesTypeDef
+
+def get_value() -> VersionDifferencesTypeDef:
+    return {
+        "PillarDifferences": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VersionDifferencesTypeDef(TypedDict):
+    PillarDifferences: NotRequired[List[PillarDifferenceTypeDef]],  # (1)
+```
 
-- `PillarDifferences`:
-  `List`\[[PillarDifferenceTypeDef](./type_defs.md#pillardifferencetypedef)\]
-
-<a id="workloadsharesummarytypedef"></a>
-
+1. See [:material-code-braces: PillarDifferenceTypeDef](./type_defs.md#pillardifferencetypedef) 
 ## WorkloadShareSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import WorkloadShareSummaryTypeDef
+
+def get_value() -> WorkloadShareSummaryTypeDef:
+    return {
+        "ShareId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkloadShareSummaryTypeDef(TypedDict):
+    ShareId: NotRequired[str],
+    SharedWith: NotRequired[str],
+    PermissionType: NotRequired[PermissionTypeType],  # (1)
+    Status: NotRequired[ShareStatusType],  # (2)
+```
 
-- `ShareId`: `str`
-- `SharedWith`: `str`
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-- `Status`: [ShareStatusType](./literals.md#sharestatustype)
-
-<a id="workloadsharetypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## WorkloadShareTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import WorkloadShareTypeDef
+
+def get_value() -> WorkloadShareTypeDef:
+    return {
+        "ShareId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkloadShareTypeDef(TypedDict):
+    ShareId: NotRequired[str],
+    SharedBy: NotRequired[str],
+    SharedWith: NotRequired[str],
+    PermissionType: NotRequired[PermissionTypeType],  # (1)
+    Status: NotRequired[ShareStatusType],  # (2)
+    WorkloadName: NotRequired[str],
+    WorkloadId: NotRequired[str],
+```
 
-- `ShareId`: `str`
-- `SharedBy`: `str`
-- `SharedWith`: `str`
-- `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
-- `Status`: [ShareStatusType](./literals.md#sharestatustype)
-- `WorkloadName`: `str`
-- `WorkloadId`: `str`
-
-<a id="workloadsummarytypedef"></a>
-
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
+2. See [:material-code-brackets: ShareStatusType](./literals.md#sharestatustype) 
 ## WorkloadSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import WorkloadSummaryTypeDef
+
+def get_value() -> WorkloadSummaryTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkloadSummaryTypeDef(TypedDict):
+    WorkloadId: NotRequired[str],
+    WorkloadArn: NotRequired[str],
+    WorkloadName: NotRequired[str],
+    Owner: NotRequired[str],
+    UpdatedAt: NotRequired[datetime],
+    Lenses: NotRequired[List[str]],
+    RiskCounts: NotRequired[Dict[RiskType, int]],  # (1)
+    ImprovementStatus: NotRequired[WorkloadImprovementStatusType],  # (2)
+```
 
-- `WorkloadId`: `str`
-- `WorkloadArn`: `str`
-- `WorkloadName`: `str`
-- `Owner`: `str`
-- `UpdatedAt`: `datetime`
-- `Lenses`: `List`\[`str`\]
-- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
-- `ImprovementStatus`:
-  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
-
-<a id="workloadtypedef"></a>
-
+1. See [:material-code-brackets: RiskType](./literals.md#risktype) 
+2. See [:material-code-brackets: WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype) 
 ## WorkloadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_wellarchitected.type_defs import WorkloadTypeDef
+
+def get_value() -> WorkloadTypeDef:
+    return {
+        "WorkloadId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorkloadTypeDef(TypedDict):
+    WorkloadId: NotRequired[str],
+    WorkloadArn: NotRequired[str],
+    WorkloadName: NotRequired[str],
+    Description: NotRequired[str],
+    Environment: NotRequired[WorkloadEnvironmentType],  # (1)
+    UpdatedAt: NotRequired[datetime],
+    AccountIds: NotRequired[List[str]],
+    AwsRegions: NotRequired[List[str]],
+    NonAwsRegions: NotRequired[List[str]],
+    ArchitecturalDesign: NotRequired[str],
+    ReviewOwner: NotRequired[str],
+    ReviewRestrictionDate: NotRequired[datetime],
+    IsReviewOwnerUpdateAcknowledged: NotRequired[bool],
+    IndustryType: NotRequired[str],
+    Industry: NotRequired[str],
+    Notes: NotRequired[str],
+    ImprovementStatus: NotRequired[WorkloadImprovementStatusType],  # (2)
+    RiskCounts: NotRequired[Dict[RiskType, int]],  # (3)
+    PillarPriorities: NotRequired[List[str]],
+    Lenses: NotRequired[List[str]],
+    Owner: NotRequired[str],
+    ShareInvitationId: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `WorkloadId`: `str`
-- `WorkloadArn`: `str`
-- `WorkloadName`: `str`
-- `Description`: `str`
-- `Environment`:
-  [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
-- `UpdatedAt`: `datetime`
-- `AccountIds`: `List`\[`str`\]
-- `AwsRegions`: `List`\[`str`\]
-- `NonAwsRegions`: `List`\[`str`\]
-- `ArchitecturalDesign`: `str`
-- `ReviewOwner`: `str`
-- `ReviewRestrictionDate`: `datetime`
-- `IsReviewOwnerUpdateAcknowledged`: `bool`
-- `IndustryType`: `str`
-- `Industry`: `str`
-- `Notes`: `str`
-- `ImprovementStatus`:
-  [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
-- `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
-- `PillarPriorities`: `List`\[`str`\]
-- `Lenses`: `List`\[`str`\]
-- `Owner`: `str`
-- `ShareInvitationId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
+1. See [:material-code-brackets: WorkloadEnvironmentType](./literals.md#workloadenvironmenttype) 
+2. See [:material-code-brackets: WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype) 
+3. See [:material-code-brackets: RiskType](./literals.md#risktype) 

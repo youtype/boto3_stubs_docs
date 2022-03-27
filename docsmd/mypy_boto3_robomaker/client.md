@@ -1,89 +1,18 @@
-<a id="robomakerclient-for-boto3-robomaker-module"></a>
-
-# RoboMakerClient for boto3 RoboMaker module
+# RoboMakerClient
 
 > [Index](../README.md) > [RoboMaker](./README.md) > RoboMakerClient
 
-Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module
-[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+!!! note ""
 
-- [RoboMakerClient for boto3 RoboMaker module](#robomakerclient-for-boto3-robomaker-module)
-  - [RoboMakerClient](#robomakerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_delete_worlds](#batch_delete_worlds)
-    - [batch_describe_simulation_job](#batch_describe_simulation_job)
-    - [can_paginate](#can_paginate)
-    - [cancel_deployment_job](#cancel_deployment_job)
-    - [cancel_simulation_job](#cancel_simulation_job)
-    - [cancel_simulation_job_batch](#cancel_simulation_job_batch)
-    - [cancel_world_export_job](#cancel_world_export_job)
-    - [cancel_world_generation_job](#cancel_world_generation_job)
-    - [create_deployment_job](#create_deployment_job)
-    - [create_fleet](#create_fleet)
-    - [create_robot](#create_robot)
-    - [create_robot_application](#create_robot_application)
-    - [create_robot_application_version](#create_robot_application_version)
-    - [create_simulation_application](#create_simulation_application)
-    - [create_simulation_application_version](#create_simulation_application_version)
-    - [create_simulation_job](#create_simulation_job)
-    - [create_world_export_job](#create_world_export_job)
-    - [create_world_generation_job](#create_world_generation_job)
-    - [create_world_template](#create_world_template)
-    - [delete_fleet](#delete_fleet)
-    - [delete_robot](#delete_robot)
-    - [delete_robot_application](#delete_robot_application)
-    - [delete_simulation_application](#delete_simulation_application)
-    - [delete_world_template](#delete_world_template)
-    - [deregister_robot](#deregister_robot)
-    - [describe_deployment_job](#describe_deployment_job)
-    - [describe_fleet](#describe_fleet)
-    - [describe_robot](#describe_robot)
-    - [describe_robot_application](#describe_robot_application)
-    - [describe_simulation_application](#describe_simulation_application)
-    - [describe_simulation_job](#describe_simulation_job)
-    - [describe_simulation_job_batch](#describe_simulation_job_batch)
-    - [describe_world](#describe_world)
-    - [describe_world_export_job](#describe_world_export_job)
-    - [describe_world_generation_job](#describe_world_generation_job)
-    - [describe_world_template](#describe_world_template)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_world_template_body](#get_world_template_body)
-    - [list_deployment_jobs](#list_deployment_jobs)
-    - [list_fleets](#list_fleets)
-    - [list_robot_applications](#list_robot_applications)
-    - [list_robots](#list_robots)
-    - [list_simulation_applications](#list_simulation_applications)
-    - [list_simulation_job_batches](#list_simulation_job_batches)
-    - [list_simulation_jobs](#list_simulation_jobs)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_world_export_jobs](#list_world_export_jobs)
-    - [list_world_generation_jobs](#list_world_generation_jobs)
-    - [list_world_templates](#list_world_templates)
-    - [list_worlds](#list_worlds)
-    - [register_robot](#register_robot)
-    - [restart_simulation_job](#restart_simulation_job)
-    - [start_simulation_job_batch](#start_simulation_job_batch)
-    - [sync_deployment_job](#sync_deployment_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_robot_application](#update_robot_application)
-    - [update_simulation_application](#update_simulation_application)
-    - [update_world_template](#update_world_template)
-    - [get_paginator](#get_paginator)
-
-<a id="robomakerclient"></a>
+    Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+    type annotations stubs module [mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ## RoboMakerClient
 
-Type annotations for `boto3.client("robomaker")`
+Type annotations and code completion for `#!python boto3.client("robomaker")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_robomaker.client import RoboMakerClient
 
@@ -91,1453 +20,1893 @@ def get_robomaker_client() -> RoboMakerClient:
     return Session().client("robomaker")
 ```
 
-Boto3 documentation:
-[RoboMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("robomaker").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("robomaker")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentDeploymentException,
+    client.IdempotentParameterMismatchException,
+    client.InternalServerException,
+    client.InvalidParameterException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_robomaker.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentDeploymentException`
-- `Exceptions.IdempotentParameterMismatchException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RoboMakerClient exceptions.
-
-Type annotations for `boto3.client("robomaker").exceptions` method.
-
-Boto3 documentation:
-[RoboMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_delete\_worlds"></a>
-
-### batch_delete_worlds
+### batch\_delete\_worlds
 
 Deletes one or more worlds in a batch operation.
 
-Type annotations for `boto3.client("robomaker").batch_delete_worlds` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").batch_delete_worlds` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
 
-Boto3 documentation:
-[RoboMaker.Client.batch_delete_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_delete_worlds)
+```python title="Method definition"
+def batch_delete_worlds(
+    self,
+    *,
+    worlds: Sequence[str],
+) -> BatchDeleteWorldsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteWorldsRequestRequestTypeDef](./type_defs.md#batchdeleteworldsrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `worlds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteWorldsRequestRequestTypeDef = {  # (1)
+    "worlds": ...,
+}
 
-Returns
-[BatchDeleteWorldsResponseTypeDef](./type_defs.md#batchdeleteworldsresponsetypedef).
+parent.batch_delete_worlds(**kwargs)
+```
 
-<a id="batch\_describe\_simulation\_job"></a>
+1. See [:material-code-braces: BatchDeleteWorldsRequestRequestTypeDef](./type_defs.md#batchdeleteworldsrequestrequesttypedef) 
 
-### batch_describe_simulation_job
+### batch\_describe\_simulation\_job
 
 Describes one or more simulation jobs.
 
-Type annotations for `boto3.client("robomaker").batch_describe_simulation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").batch_describe_simulation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.batch_describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.batch_describe_simulation_job)
+```python title="Method definition"
+def batch_describe_simulation_job(
+    self,
+    *,
+    jobs: Sequence[str],
+) -> BatchDescribeSimulationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDescribeSimulationJobRequestRequestTypeDef](./type_defs.md#batchdescribesimulationjobrequestrequesttypedef).
+1. See [:material-code-braces: BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchDescribeSimulationJobRequestRequestTypeDef = {  # (1)
+    "jobs": ...,
+}
 
-Returns
-[BatchDescribeSimulationJobResponseTypeDef](./type_defs.md#batchdescribesimulationjobresponsetypedef).
+parent.batch_describe_simulation_job(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDescribeSimulationJobRequestRequestTypeDef](./type_defs.md#batchdescribesimulationjobrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("robomaker").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
 
-Boto3 documentation:
-[RoboMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_deployment\_job"></a>
-
-### cancel_deployment_job
+### cancel\_deployment\_job
 
 Cancels the specified deployment job.
 
-Type annotations for `boto3.client("robomaker").cancel_deployment_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").cancel_deployment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
 
-Boto3 documentation:
-[RoboMaker.Client.cancel_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_deployment_job)
+```python title="Method definition"
+def cancel_deployment_job(
+    self,
+    *,
+    job: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelDeploymentJobRequestRequestTypeDef](./type_defs.md#canceldeploymentjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelDeploymentJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_deployment_job(**kwargs)
+```
 
-<a id="cancel\_simulation\_job"></a>
+1. See [:material-code-braces: CancelDeploymentJobRequestRequestTypeDef](./type_defs.md#canceldeploymentjobrequestrequesttypedef) 
 
-### cancel_simulation_job
+### cancel\_simulation\_job
 
 Cancels the specified simulation job.
 
-Type annotations for `boto3.client("robomaker").cancel_simulation_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").cancel_simulation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.cancel_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job)
+```python title="Method definition"
+def cancel_simulation_job(
+    self,
+    *,
+    job: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelSimulationJobRequestRequestTypeDef](./type_defs.md#cancelsimulationjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelSimulationJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_simulation_job(**kwargs)
+```
 
-<a id="cancel\_simulation\_job\_batch"></a>
+1. See [:material-code-braces: CancelSimulationJobRequestRequestTypeDef](./type_defs.md#cancelsimulationjobrequestrequesttypedef) 
 
-### cancel_simulation_job_batch
+### cancel\_simulation\_job\_batch
 
 Cancels a simulation job batch.
 
-Type annotations for `boto3.client("robomaker").cancel_simulation_job_batch`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").cancel_simulation_job_batch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
 
-Boto3 documentation:
-[RoboMaker.Client.cancel_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_simulation_job_batch)
+```python title="Method definition"
+def cancel_simulation_job_batch(
+    self,
+    *,
+    batch: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelSimulationJobBatchRequestRequestTypeDef](./type_defs.md#cancelsimulationjobbatchrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `batch`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelSimulationJobBatchRequestRequestTypeDef = {  # (1)
+    "batch": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_simulation_job_batch(**kwargs)
+```
 
-<a id="cancel\_world\_export\_job"></a>
+1. See [:material-code-braces: CancelSimulationJobBatchRequestRequestTypeDef](./type_defs.md#cancelsimulationjobbatchrequestrequesttypedef) 
 
-### cancel_world_export_job
+### cancel\_world\_export\_job
 
 Cancels the specified export job.
 
-Type annotations for `boto3.client("robomaker").cancel_world_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").cancel_world_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
 
-Boto3 documentation:
-[RoboMaker.Client.cancel_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_export_job)
+```python title="Method definition"
+def cancel_world_export_job(
+    self,
+    *,
+    job: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelWorldExportJobRequestRequestTypeDef](./type_defs.md#cancelworldexportjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelWorldExportJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_world_export_job(**kwargs)
+```
 
-<a id="cancel\_world\_generation\_job"></a>
+1. See [:material-code-braces: CancelWorldExportJobRequestRequestTypeDef](./type_defs.md#cancelworldexportjobrequestrequesttypedef) 
 
-### cancel_world_generation_job
+### cancel\_world\_generation\_job
 
 Cancels the specified world generator job.
 
-Type annotations for `boto3.client("robomaker").cancel_world_generation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").cancel_world_generation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.cancel_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.cancel_world_generation_job)
+```python title="Method definition"
+def cancel_world_generation_job(
+    self,
+    *,
+    job: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelWorldGenerationJobRequestRequestTypeDef](./type_defs.md#cancelworldgenerationjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelWorldGenerationJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_world_generation_job(**kwargs)
+```
 
-<a id="create\_deployment\_job"></a>
+1. See [:material-code-braces: CancelWorldGenerationJobRequestRequestTypeDef](./type_defs.md#cancelworldgenerationjobrequestrequesttypedef) 
 
-### create_deployment_job
+### create\_deployment\_job
 
 Deploys a specific version of a robot application to robots in a fleet.
 
-Type annotations for `boto3.client("robomaker").create_deployment_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_deployment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
 
-Boto3 documentation:
-[RoboMaker.Client.create_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_deployment_job)
+```python title="Method definition"
+def create_deployment_job(
+    self,
+    *,
+    clientRequestToken: str,
+    fleet: str,
+    deploymentApplicationConfigs: Sequence[DeploymentApplicationConfigTypeDef],  # (1)
+    deploymentConfig: DeploymentConfigTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateDeploymentJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeploymentJobRequestRequestTypeDef](./type_defs.md#createdeploymentjobrequestrequesttypedef).
+1. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+2. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+3. See [:material-code-braces: CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientRequestToken`: `str` *(required)*
-- `fleet`: `str` *(required)*
-- `deploymentApplicationConfigs`:
-  `Sequence`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-  *(required)*
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeploymentJobRequestRequestTypeDef = {  # (1)
+    "clientRequestToken": ...,
+    "fleet": ...,
+    "deploymentApplicationConfigs": ...,
+}
 
-Returns
-[CreateDeploymentJobResponseTypeDef](./type_defs.md#createdeploymentjobresponsetypedef).
+parent.create_deployment_job(**kwargs)
+```
 
-<a id="create\_fleet"></a>
+1. See [:material-code-braces: CreateDeploymentJobRequestRequestTypeDef](./type_defs.md#createdeploymentjobrequestrequesttypedef) 
 
-### create_fleet
+### create\_fleet
 
 Creates a fleet, a logical group of robots running the same robot application.
 
-Type annotations for `boto3.client("robomaker").create_fleet` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
 
-Boto3 documentation:
-[RoboMaker.Client.create_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_fleet)
+```python title="Method definition"
+def create_fleet(
+    self,
+    *,
+    name: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateFleetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef).
+1. See [:material-code-braces: CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFleetRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
+parent.create_fleet(**kwargs)
+```
 
-<a id="create\_robot"></a>
+1. See [:material-code-braces: CreateFleetRequestRequestTypeDef](./type_defs.md#createfleetrequestrequesttypedef) 
 
-### create_robot
+### create\_robot
 
 Creates a robot.
 
-Type annotations for `boto3.client("robomaker").create_robot` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_robot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
 
-Boto3 documentation:
-[RoboMaker.Client.create_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot)
+```python title="Method definition"
+def create_robot(
+    self,
+    *,
+    name: str,
+    architecture: ArchitectureType,  # (1)
+    greengrassGroupId: str,
+    tags: Mapping[str, str] = ...,
+) -> CreateRobotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRobotRequestRequestTypeDef](./type_defs.md#createrobotrequestrequesttypedef).
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+2. See [:material-code-braces: CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-  *(required)*
-- `greengrassGroupId`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRobotRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "architecture": ...,
+    "greengrassGroupId": ...,
+}
 
-Returns
-[CreateRobotResponseTypeDef](./type_defs.md#createrobotresponsetypedef).
+parent.create_robot(**kwargs)
+```
 
-<a id="create\_robot\_application"></a>
+1. See [:material-code-braces: CreateRobotRequestRequestTypeDef](./type_defs.md#createrobotrequestrequesttypedef) 
 
-### create_robot_application
+### create\_robot\_application
 
 Creates a robot application.
 
-Type annotations for `boto3.client("robomaker").create_robot_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_robot_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
 
-Boto3 documentation:
-[RoboMaker.Client.create_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application)
+```python title="Method definition"
+def create_robot_application(
+    self,
+    *,
+    name: str,
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (1)
+    sources: Sequence[SourceConfigTypeDef] = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+    environment: EnvironmentTypeDef = ...,  # (3)
+) -> CreateRobotApplicationResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateRobotApplicationRequestRequestTypeDef](./type_defs.md#createrobotapplicationrequestrequesttypedef).
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+2. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-  *(required)*
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateRobotApplicationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "robotSoftwareSuite": ...,
+}
 
-Returns
-[CreateRobotApplicationResponseTypeDef](./type_defs.md#createrobotapplicationresponsetypedef).
+parent.create_robot_application(**kwargs)
+```
 
-<a id="create\_robot\_application\_version"></a>
+1. See [:material-code-braces: CreateRobotApplicationRequestRequestTypeDef](./type_defs.md#createrobotapplicationrequestrequesttypedef) 
 
-### create_robot_application_version
+### create\_robot\_application\_version
 
 Creates a version of a robot application.
 
-Type annotations for
-`boto3.client("robomaker").create_robot_application_version` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_robot_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
 
-Boto3 documentation:
-[RoboMaker.Client.create_robot_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_robot_application_version)
+```python title="Method definition"
+def create_robot_application_version(
+    self,
+    *,
+    application: str,
+    currentRevisionId: str = ...,
+    s3Etags: Sequence[str] = ...,
+    imageDigest: str = ...,
+) -> CreateRobotApplicationVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRobotApplicationVersionRequestRequestTypeDef](./type_defs.md#createrobotapplicationversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `currentRevisionId`: `str`
-- `s3Etags`: `Sequence`\[`str`\]
-- `imageDigest`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateRobotApplicationVersionRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns
-[CreateRobotApplicationVersionResponseTypeDef](./type_defs.md#createrobotapplicationversionresponsetypedef).
+parent.create_robot_application_version(**kwargs)
+```
 
-<a id="create\_simulation\_application"></a>
+1. See [:material-code-braces: CreateRobotApplicationVersionRequestRequestTypeDef](./type_defs.md#createrobotapplicationversionrequestrequesttypedef) 
 
-### create_simulation_application
+### create\_simulation\_application
 
 Creates a simulation application.
 
-Type annotations for `boto3.client("robomaker").create_simulation_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_simulation_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
 
-Boto3 documentation:
-[RoboMaker.Client.create_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application)
+```python title="Method definition"
+def create_simulation_application(
+    self,
+    *,
+    name: str,
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    sources: Sequence[SourceConfigTypeDef] = ...,  # (3)
+    renderingEngine: RenderingEngineTypeDef = ...,  # (4)
+    tags: Mapping[str, str] = ...,
+    environment: EnvironmentTypeDef = ...,  # (5)
+) -> CreateSimulationApplicationResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateSimulationApplicationRequestRequestTypeDef](./type_defs.md#createsimulationapplicationrequestrequesttypedef).
+1. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-  *(required)*
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-  *(required)*
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSimulationApplicationRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "simulationSoftwareSuite": ...,
+    "robotSoftwareSuite": ...,
+}
 
-Returns
-[CreateSimulationApplicationResponseTypeDef](./type_defs.md#createsimulationapplicationresponsetypedef).
+parent.create_simulation_application(**kwargs)
+```
 
-<a id="create\_simulation\_application\_version"></a>
+1. See [:material-code-braces: CreateSimulationApplicationRequestRequestTypeDef](./type_defs.md#createsimulationapplicationrequestrequesttypedef) 
 
-### create_simulation_application_version
+### create\_simulation\_application\_version
 
 Creates a simulation application with a specific revision id.
 
-Type annotations for
-`boto3.client("robomaker").create_simulation_application_version` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_simulation_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
 
-Boto3 documentation:
-[RoboMaker.Client.create_simulation_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_application_version)
+```python title="Method definition"
+def create_simulation_application_version(
+    self,
+    *,
+    application: str,
+    currentRevisionId: str = ...,
+    s3Etags: Sequence[str] = ...,
+    imageDigest: str = ...,
+) -> CreateSimulationApplicationVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSimulationApplicationVersionRequestRequestTypeDef](./type_defs.md#createsimulationapplicationversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `currentRevisionId`: `str`
-- `s3Etags`: `Sequence`\[`str`\]
-- `imageDigest`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSimulationApplicationVersionRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns
-[CreateSimulationApplicationVersionResponseTypeDef](./type_defs.md#createsimulationapplicationversionresponsetypedef).
+parent.create_simulation_application_version(**kwargs)
+```
 
-<a id="create\_simulation\_job"></a>
+1. See [:material-code-braces: CreateSimulationApplicationVersionRequestRequestTypeDef](./type_defs.md#createsimulationapplicationversionrequestrequesttypedef) 
 
-### create_simulation_job
+### create\_simulation\_job
 
 Creates a simulation job.
 
-Type annotations for `boto3.client("robomaker").create_simulation_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_simulation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.create_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_simulation_job)
+```python title="Method definition"
+def create_simulation_job(
+    self,
+    *,
+    maxJobDurationInSeconds: int,
+    iamRole: str,
+    clientRequestToken: str = ...,
+    outputLocation: OutputLocationTypeDef = ...,  # (1)
+    loggingConfig: LoggingConfigTypeDef = ...,  # (2)
+    failureBehavior: FailureBehaviorType = ...,  # (3)
+    robotApplications: Sequence[RobotApplicationConfigTypeDef] = ...,  # (4)
+    simulationApplications: Sequence[SimulationApplicationConfigTypeDef] = ...,  # (5)
+    dataSources: Sequence[DataSourceConfigTypeDef] = ...,  # (6)
+    tags: Mapping[str, str] = ...,
+    vpcConfig: VPCConfigTypeDef = ...,  # (7)
+    compute: ComputeTypeDef = ...,  # (8)
+) -> CreateSimulationJobResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateSimulationJobRequestRequestTypeDef](./type_defs.md#createsimulationjobrequestrequesttypedef).
+1. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+4. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+5. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+6. See [:material-code-braces: DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef) 
+7. See [:material-code-braces: VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+8. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
+9. See [:material-code-braces: CreateSimulationJobResponseTypeDef](./type_defs.md#createsimulationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxJobDurationInSeconds`: `int` *(required)*
-- `iamRole`: `str` *(required)*
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `robotApplications`:
-  `Sequence`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `Sequence`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `Sequence`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateSimulationJobRequestRequestTypeDef = {  # (1)
+    "maxJobDurationInSeconds": ...,
+    "iamRole": ...,
+}
 
-Returns
-[CreateSimulationJobResponseTypeDef](./type_defs.md#createsimulationjobresponsetypedef).
+parent.create_simulation_job(**kwargs)
+```
 
-<a id="create\_world\_export\_job"></a>
+1. See [:material-code-braces: CreateSimulationJobRequestRequestTypeDef](./type_defs.md#createsimulationjobrequestrequesttypedef) 
 
-### create_world_export_job
+### create\_world\_export\_job
 
 Creates a world export job.
 
-Type annotations for `boto3.client("robomaker").create_world_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_world_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
 
-Boto3 documentation:
-[RoboMaker.Client.create_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_export_job)
+```python title="Method definition"
+def create_world_export_job(
+    self,
+    *,
+    worlds: Sequence[str],
+    outputLocation: OutputLocationTypeDef,  # (1)
+    iamRole: str,
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateWorldExportJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorldExportJobRequestRequestTypeDef](./type_defs.md#createworldexportjobrequestrequesttypedef).
+1. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+2. See [:material-code-braces: CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `worlds`: `Sequence`\[`str`\] *(required)*
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) *(required)*
-- `iamRole`: `str` *(required)*
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorldExportJobRequestRequestTypeDef = {  # (1)
+    "worlds": ...,
+    "outputLocation": ...,
+    "iamRole": ...,
+}
 
-Returns
-[CreateWorldExportJobResponseTypeDef](./type_defs.md#createworldexportjobresponsetypedef).
+parent.create_world_export_job(**kwargs)
+```
 
-<a id="create\_world\_generation\_job"></a>
+1. See [:material-code-braces: CreateWorldExportJobRequestRequestTypeDef](./type_defs.md#createworldexportjobrequestrequesttypedef) 
 
-### create_world_generation_job
+### create\_world\_generation\_job
 
 Creates worlds using the specified template.
 
-Type annotations for `boto3.client("robomaker").create_world_generation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_world_generation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.create_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_generation_job)
+```python title="Method definition"
+def create_world_generation_job(
+    self,
+    *,
+    template: str,
+    worldCount: WorldCountTypeDef,  # (1)
+    clientRequestToken: str = ...,
+    tags: Mapping[str, str] = ...,
+    worldTags: Mapping[str, str] = ...,
+) -> CreateWorldGenerationJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorldGenerationJobRequestRequestTypeDef](./type_defs.md#createworldgenerationjobrequestrequesttypedef).
+1. See [:material-code-braces: WorldCountTypeDef](./type_defs.md#worldcounttypedef) 
+2. See [:material-code-braces: CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `template`: `str` *(required)*
-- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
-  *(required)*
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `worldTags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorldGenerationJobRequestRequestTypeDef = {  # (1)
+    "template": ...,
+    "worldCount": ...,
+}
 
-Returns
-[CreateWorldGenerationJobResponseTypeDef](./type_defs.md#createworldgenerationjobresponsetypedef).
+parent.create_world_generation_job(**kwargs)
+```
 
-<a id="create\_world\_template"></a>
+1. See [:material-code-braces: CreateWorldGenerationJobRequestRequestTypeDef](./type_defs.md#createworldgenerationjobrequestrequesttypedef) 
 
-### create_world_template
+### create\_world\_template
 
 Creates a world template.
 
-Type annotations for `boto3.client("robomaker").create_world_template` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").create_world_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
 
-Boto3 documentation:
-[RoboMaker.Client.create_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.create_world_template)
+```python title="Method definition"
+def create_world_template(
+    self,
+    *,
+    clientRequestToken: str = ...,
+    name: str = ...,
+    templateBody: str = ...,
+    templateLocation: TemplateLocationTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateWorldTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorldTemplateRequestRequestTypeDef](./type_defs.md#createworldtemplaterequestrequesttypedef).
+1. See [:material-code-braces: TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef) 
+2. See [:material-code-braces: CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientRequestToken`: `str`
-- `name`: `str`
-- `templateBody`: `str`
-- `templateLocation`:
-  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorldTemplateRequestRequestTypeDef = {  # (1)
+    "clientRequestToken": ...,
+}
 
-Returns
-[CreateWorldTemplateResponseTypeDef](./type_defs.md#createworldtemplateresponsetypedef).
+parent.create_world_template(**kwargs)
+```
 
-<a id="delete\_fleet"></a>
+1. See [:material-code-braces: CreateWorldTemplateRequestRequestTypeDef](./type_defs.md#createworldtemplaterequestrequesttypedef) 
 
-### delete_fleet
+### delete\_fleet
 
 Deletes a fleet.
 
-Type annotations for `boto3.client("robomaker").delete_fleet` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").delete_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
 
-Boto3 documentation:
-[RoboMaker.Client.delete_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_fleet)
+```python title="Method definition"
+def delete_fleet(
+    self,
+    *,
+    fleet: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `fleet`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFleetRequestRequestTypeDef = {  # (1)
+    "fleet": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_fleet(**kwargs)
+```
 
-<a id="delete\_robot"></a>
+1. See [:material-code-braces: DeleteFleetRequestRequestTypeDef](./type_defs.md#deletefleetrequestrequesttypedef) 
 
-### delete_robot
+### delete\_robot
 
 Deletes a robot.
 
-Type annotations for `boto3.client("robomaker").delete_robot` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").delete_robot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
 
-Boto3 documentation:
-[RoboMaker.Client.delete_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot)
+```python title="Method definition"
+def delete_robot(
+    self,
+    *,
+    robot: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRobotRequestRequestTypeDef](./type_defs.md#deleterobotrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `robot`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRobotRequestRequestTypeDef = {  # (1)
+    "robot": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_robot(**kwargs)
+```
 
-<a id="delete\_robot\_application"></a>
+1. See [:material-code-braces: DeleteRobotRequestRequestTypeDef](./type_defs.md#deleterobotrequestrequesttypedef) 
 
-### delete_robot_application
+### delete\_robot\_application
 
 Deletes a robot application.
 
-Type annotations for `boto3.client("robomaker").delete_robot_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").delete_robot_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
 
-Boto3 documentation:
-[RoboMaker.Client.delete_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_robot_application)
+```python title="Method definition"
+def delete_robot_application(
+    self,
+    *,
+    application: str,
+    applicationVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRobotApplicationRequestRequestTypeDef](./type_defs.md#deleterobotapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `applicationVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRobotApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_robot_application(**kwargs)
+```
 
-<a id="delete\_simulation\_application"></a>
+1. See [:material-code-braces: DeleteRobotApplicationRequestRequestTypeDef](./type_defs.md#deleterobotapplicationrequestrequesttypedef) 
 
-### delete_simulation_application
+### delete\_simulation\_application
 
 Deletes a simulation application.
 
-Type annotations for `boto3.client("robomaker").delete_simulation_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").delete_simulation_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
 
-Boto3 documentation:
-[RoboMaker.Client.delete_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_simulation_application)
+```python title="Method definition"
+def delete_simulation_application(
+    self,
+    *,
+    application: str,
+    applicationVersion: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSimulationApplicationRequestRequestTypeDef](./type_defs.md#deletesimulationapplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `applicationVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSimulationApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_simulation_application(**kwargs)
+```
 
-<a id="delete\_world\_template"></a>
+1. See [:material-code-braces: DeleteSimulationApplicationRequestRequestTypeDef](./type_defs.md#deletesimulationapplicationrequestrequesttypedef) 
 
-### delete_world_template
+### delete\_world\_template
 
 Deletes a world template.
 
-Type annotations for `boto3.client("robomaker").delete_world_template` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").delete_world_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
 
-Boto3 documentation:
-[RoboMaker.Client.delete_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.delete_world_template)
+```python title="Method definition"
+def delete_world_template(
+    self,
+    *,
+    template: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorldTemplateRequestRequestTypeDef](./type_defs.md#deleteworldtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `template`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorldTemplateRequestRequestTypeDef = {  # (1)
+    "template": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_world_template(**kwargs)
+```
 
-<a id="deregister\_robot"></a>
+1. See [:material-code-braces: DeleteWorldTemplateRequestRequestTypeDef](./type_defs.md#deleteworldtemplaterequestrequesttypedef) 
 
-### deregister_robot
+### deregister\_robot
 
 Deregisters a robot.
 
-Type annotations for `boto3.client("robomaker").deregister_robot` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").deregister_robot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
 
-Boto3 documentation:
-[RoboMaker.Client.deregister_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.deregister_robot)
+```python title="Method definition"
+def deregister_robot(
+    self,
+    *,
+    fleet: str,
+    robot: str,
+) -> DeregisterRobotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterRobotRequestRequestTypeDef](./type_defs.md#deregisterrobotrequestrequesttypedef).
+1. See [:material-code-braces: DeregisterRobotResponseTypeDef](./type_defs.md#deregisterrobotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `fleet`: `str` *(required)*
-- `robot`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterRobotRequestRequestTypeDef = {  # (1)
+    "fleet": ...,
+    "robot": ...,
+}
 
-Returns
-[DeregisterRobotResponseTypeDef](./type_defs.md#deregisterrobotresponsetypedef).
+parent.deregister_robot(**kwargs)
+```
 
-<a id="describe\_deployment\_job"></a>
+1. See [:material-code-braces: DeregisterRobotRequestRequestTypeDef](./type_defs.md#deregisterrobotrequestrequesttypedef) 
 
-### describe_deployment_job
+### describe\_deployment\_job
 
 Describes a deployment job.
 
-Type annotations for `boto3.client("robomaker").describe_deployment_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_deployment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_deployment_job)
+```python title="Method definition"
+def describe_deployment_job(
+    self,
+    *,
+    job: str,
+) -> DescribeDeploymentJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDeploymentJobRequestRequestTypeDef](./type_defs.md#describedeploymentjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDeploymentJobResponseTypeDef](./type_defs.md#describedeploymentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDeploymentJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns
-[DescribeDeploymentJobResponseTypeDef](./type_defs.md#describedeploymentjobresponsetypedef).
+parent.describe_deployment_job(**kwargs)
+```
 
-<a id="describe\_fleet"></a>
+1. See [:material-code-braces: DescribeDeploymentJobRequestRequestTypeDef](./type_defs.md#describedeploymentjobrequestrequesttypedef) 
 
-### describe_fleet
+### describe\_fleet
 
 Describes a fleet.
 
-Type annotations for `boto3.client("robomaker").describe_fleet` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_fleet)
+```python title="Method definition"
+def describe_fleet(
+    self,
+    *,
+    fleet: str,
+) -> DescribeFleetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetRequestRequestTypeDef](./type_defs.md#describefleetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFleetResponseTypeDef](./type_defs.md#describefleetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `fleet`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetRequestRequestTypeDef = {  # (1)
+    "fleet": ...,
+}
 
-Returns
-[DescribeFleetResponseTypeDef](./type_defs.md#describefleetresponsetypedef).
+parent.describe_fleet(**kwargs)
+```
 
-<a id="describe\_robot"></a>
+1. See [:material-code-braces: DescribeFleetRequestRequestTypeDef](./type_defs.md#describefleetrequestrequesttypedef) 
 
-### describe_robot
+### describe\_robot
 
 Describes a robot.
 
-Type annotations for `boto3.client("robomaker").describe_robot` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_robot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot)
+```python title="Method definition"
+def describe_robot(
+    self,
+    *,
+    robot: str,
+) -> DescribeRobotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRobotRequestRequestTypeDef](./type_defs.md#describerobotrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRobotResponseTypeDef](./type_defs.md#describerobotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `robot`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRobotRequestRequestTypeDef = {  # (1)
+    "robot": ...,
+}
 
-Returns
-[DescribeRobotResponseTypeDef](./type_defs.md#describerobotresponsetypedef).
+parent.describe_robot(**kwargs)
+```
 
-<a id="describe\_robot\_application"></a>
+1. See [:material-code-braces: DescribeRobotRequestRequestTypeDef](./type_defs.md#describerobotrequestrequesttypedef) 
 
-### describe_robot_application
+### describe\_robot\_application
 
 Describes a robot application.
 
-Type annotations for `boto3.client("robomaker").describe_robot_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_robot_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_robot_application)
+```python title="Method definition"
+def describe_robot_application(
+    self,
+    *,
+    application: str,
+    applicationVersion: str = ...,
+) -> DescribeRobotApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRobotApplicationRequestRequestTypeDef](./type_defs.md#describerobotapplicationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRobotApplicationResponseTypeDef](./type_defs.md#describerobotapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `applicationVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRobotApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns
-[DescribeRobotApplicationResponseTypeDef](./type_defs.md#describerobotapplicationresponsetypedef).
+parent.describe_robot_application(**kwargs)
+```
 
-<a id="describe\_simulation\_application"></a>
+1. See [:material-code-braces: DescribeRobotApplicationRequestRequestTypeDef](./type_defs.md#describerobotapplicationrequestrequesttypedef) 
 
-### describe_simulation_application
+### describe\_simulation\_application
 
 Describes a simulation application.
 
-Type annotations for
-`boto3.client("robomaker").describe_simulation_application` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_simulation_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_application)
+```python title="Method definition"
+def describe_simulation_application(
+    self,
+    *,
+    application: str,
+    applicationVersion: str = ...,
+) -> DescribeSimulationApplicationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSimulationApplicationRequestRequestTypeDef](./type_defs.md#describesimulationapplicationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSimulationApplicationResponseTypeDef](./type_defs.md#describesimulationapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `applicationVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSimulationApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+}
 
-Returns
-[DescribeSimulationApplicationResponseTypeDef](./type_defs.md#describesimulationapplicationresponsetypedef).
+parent.describe_simulation_application(**kwargs)
+```
 
-<a id="describe\_simulation\_job"></a>
+1. See [:material-code-braces: DescribeSimulationApplicationRequestRequestTypeDef](./type_defs.md#describesimulationapplicationrequestrequesttypedef) 
 
-### describe_simulation_job
+### describe\_simulation\_job
 
 Describes a simulation job.
 
-Type annotations for `boto3.client("robomaker").describe_simulation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_simulation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job)
+```python title="Method definition"
+def describe_simulation_job(
+    self,
+    *,
+    job: str,
+) -> DescribeSimulationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSimulationJobRequestRequestTypeDef](./type_defs.md#describesimulationjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSimulationJobResponseTypeDef](./type_defs.md#describesimulationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSimulationJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns
-[DescribeSimulationJobResponseTypeDef](./type_defs.md#describesimulationjobresponsetypedef).
+parent.describe_simulation_job(**kwargs)
+```
 
-<a id="describe\_simulation\_job\_batch"></a>
+1. See [:material-code-braces: DescribeSimulationJobRequestRequestTypeDef](./type_defs.md#describesimulationjobrequestrequesttypedef) 
 
-### describe_simulation_job_batch
+### describe\_simulation\_job\_batch
 
 Describes a simulation job batch.
 
-Type annotations for `boto3.client("robomaker").describe_simulation_job_batch`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_simulation_job_batch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_simulation_job_batch)
+```python title="Method definition"
+def describe_simulation_job_batch(
+    self,
+    *,
+    batch: str,
+) -> DescribeSimulationJobBatchResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSimulationJobBatchRequestRequestTypeDef](./type_defs.md#describesimulationjobbatchrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSimulationJobBatchResponseTypeDef](./type_defs.md#describesimulationjobbatchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `batch`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSimulationJobBatchRequestRequestTypeDef = {  # (1)
+    "batch": ...,
+}
 
-Returns
-[DescribeSimulationJobBatchResponseTypeDef](./type_defs.md#describesimulationjobbatchresponsetypedef).
+parent.describe_simulation_job_batch(**kwargs)
+```
 
-<a id="describe\_world"></a>
+1. See [:material-code-braces: DescribeSimulationJobBatchRequestRequestTypeDef](./type_defs.md#describesimulationjobbatchrequestrequesttypedef) 
 
-### describe_world
+### describe\_world
 
 Describes a world.
 
-Type annotations for `boto3.client("robomaker").describe_world` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_world` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_world](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world)
+```python title="Method definition"
+def describe_world(
+    self,
+    *,
+    world: str,
+) -> DescribeWorldResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorldRequestRequestTypeDef](./type_defs.md#describeworldrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef) 
 
-Keyword-only arguments:
 
-- `world`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorldRequestRequestTypeDef = {  # (1)
+    "world": ...,
+}
 
-Returns
-[DescribeWorldResponseTypeDef](./type_defs.md#describeworldresponsetypedef).
+parent.describe_world(**kwargs)
+```
 
-<a id="describe\_world\_export\_job"></a>
+1. See [:material-code-braces: DescribeWorldRequestRequestTypeDef](./type_defs.md#describeworldrequestrequesttypedef) 
 
-### describe_world_export_job
+### describe\_world\_export\_job
 
 Describes a world export job.
 
-Type annotations for `boto3.client("robomaker").describe_world_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_world_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_world_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_export_job)
+```python title="Method definition"
+def describe_world_export_job(
+    self,
+    *,
+    job: str,
+) -> DescribeWorldExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorldExportJobRequestRequestTypeDef](./type_defs.md#describeworldexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorldExportJobResponseTypeDef](./type_defs.md#describeworldexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorldExportJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns
-[DescribeWorldExportJobResponseTypeDef](./type_defs.md#describeworldexportjobresponsetypedef).
+parent.describe_world_export_job(**kwargs)
+```
 
-<a id="describe\_world\_generation\_job"></a>
+1. See [:material-code-braces: DescribeWorldExportJobRequestRequestTypeDef](./type_defs.md#describeworldexportjobrequestrequesttypedef) 
 
-### describe_world_generation_job
+### describe\_world\_generation\_job
 
 Describes a world generation job.
 
-Type annotations for `boto3.client("robomaker").describe_world_generation_job`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_world_generation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_world_generation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_generation_job)
+```python title="Method definition"
+def describe_world_generation_job(
+    self,
+    *,
+    job: str,
+) -> DescribeWorldGenerationJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorldGenerationJobRequestRequestTypeDef](./type_defs.md#describeworldgenerationjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorldGenerationJobResponseTypeDef](./type_defs.md#describeworldgenerationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorldGenerationJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns
-[DescribeWorldGenerationJobResponseTypeDef](./type_defs.md#describeworldgenerationjobresponsetypedef).
+parent.describe_world_generation_job(**kwargs)
+```
 
-<a id="describe\_world\_template"></a>
+1. See [:material-code-braces: DescribeWorldGenerationJobRequestRequestTypeDef](./type_defs.md#describeworldgenerationjobrequestrequesttypedef) 
 
-### describe_world_template
+### describe\_world\_template
 
 Describes a world template.
 
-Type annotations for `boto3.client("robomaker").describe_world_template`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").describe_world_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
 
-Boto3 documentation:
-[RoboMaker.Client.describe_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.describe_world_template)
+```python title="Method definition"
+def describe_world_template(
+    self,
+    *,
+    template: str,
+) -> DescribeWorldTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorldTemplateRequestRequestTypeDef](./type_defs.md#describeworldtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `template`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorldTemplateRequestRequestTypeDef = {  # (1)
+    "template": ...,
+}
 
-Returns
-[DescribeWorldTemplateResponseTypeDef](./type_defs.md#describeworldtemplateresponsetypedef).
+parent.describe_world_template(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeWorldTemplateRequestRequestTypeDef](./type_defs.md#describeworldtemplaterequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("robomaker").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
 
-Boto3 documentation:
-[RoboMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_world\_template\_body"></a>
-
-### get_world_template_body
+### get\_world\_template\_body
 
 Gets the world template body.
 
-Type annotations for `boto3.client("robomaker").get_world_template_body`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_world_template_body` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
 
-Boto3 documentation:
-[RoboMaker.Client.get_world_template_body](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.get_world_template_body)
+```python title="Method definition"
+def get_world_template_body(
+    self,
+    *,
+    template: str = ...,
+    generationJob: str = ...,
+) -> GetWorldTemplateBodyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorldTemplateBodyRequestRequestTypeDef](./type_defs.md#getworldtemplatebodyrequestrequesttypedef).
+1. See [:material-code-braces: GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `template`: `str`
-- `generationJob`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetWorldTemplateBodyRequestRequestTypeDef = {  # (1)
+    "template": ...,
+}
 
-Returns
-[GetWorldTemplateBodyResponseTypeDef](./type_defs.md#getworldtemplatebodyresponsetypedef).
+parent.get_world_template_body(**kwargs)
+```
 
-<a id="list\_deployment\_jobs"></a>
+1. See [:material-code-braces: GetWorldTemplateBodyRequestRequestTypeDef](./type_defs.md#getworldtemplatebodyrequestrequesttypedef) 
 
-### list_deployment_jobs
+### list\_deployment\_jobs
 
 Returns a list of deployment jobs for a fleet.
 
-Type annotations for `boto3.client("robomaker").list_deployment_jobs` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_deployment_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
 
-Boto3 documentation:
-[RoboMaker.Client.list_deployment_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_deployment_jobs)
+```python title="Method definition"
+def list_deployment_jobs(
+    self,
+    *,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDeploymentJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDeploymentJobsRequestRequestTypeDef](./type_defs.md#listdeploymentjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentJobsRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[ListDeploymentJobsResponseTypeDef](./type_defs.md#listdeploymentjobsresponsetypedef).
+parent.list_deployment_jobs(**kwargs)
+```
 
-<a id="list\_fleets"></a>
+1. See [:material-code-braces: ListDeploymentJobsRequestRequestTypeDef](./type_defs.md#listdeploymentjobsrequestrequesttypedef) 
 
-### list_fleets
+### list\_fleets
 
 Returns a list of fleets.
 
-Type annotations for `boto3.client("robomaker").list_fleets` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_fleets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
 
-Boto3 documentation:
-[RoboMaker.Client.list_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_fleets)
+```python title="Method definition"
+def list_fleets(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListFleetsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFleetsRequestRequestTypeDef](./type_defs.md#listfleetsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListFleetsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
+parent.list_fleets(**kwargs)
+```
 
-<a id="list\_robot\_applications"></a>
+1. See [:material-code-braces: ListFleetsRequestRequestTypeDef](./type_defs.md#listfleetsrequestrequesttypedef) 
 
-### list_robot_applications
+### list\_robot\_applications
 
 Returns a list of robot application.
 
-Type annotations for `boto3.client("robomaker").list_robot_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_robot_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
 
-Boto3 documentation:
-[RoboMaker.Client.list_robot_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robot_applications)
+```python title="Method definition"
+def list_robot_applications(
+    self,
+    *,
+    versionQualifier: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListRobotApplicationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRobotApplicationsRequestRequestTypeDef](./type_defs.md#listrobotapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `versionQualifier`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListRobotApplicationsRequestRequestTypeDef = {  # (1)
+    "versionQualifier": ...,
+}
 
-Returns
-[ListRobotApplicationsResponseTypeDef](./type_defs.md#listrobotapplicationsresponsetypedef).
+parent.list_robot_applications(**kwargs)
+```
 
-<a id="list\_robots"></a>
+1. See [:material-code-braces: ListRobotApplicationsRequestRequestTypeDef](./type_defs.md#listrobotapplicationsrequestrequesttypedef) 
 
-### list_robots
+### list\_robots
 
 Returns a list of robots.
 
-Type annotations for `boto3.client("robomaker").list_robots` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_robots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
 
-Boto3 documentation:
-[RoboMaker.Client.list_robots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_robots)
+```python title="Method definition"
+def list_robots(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListRobotsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListRobotsRequestRequestTypeDef](./type_defs.md#listrobotsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListRobotsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListRobotsResponseTypeDef](./type_defs.md#listrobotsresponsetypedef).
+parent.list_robots(**kwargs)
+```
 
-<a id="list\_simulation\_applications"></a>
+1. See [:material-code-braces: ListRobotsRequestRequestTypeDef](./type_defs.md#listrobotsrequestrequesttypedef) 
 
-### list_simulation_applications
+### list\_simulation\_applications
 
 Returns a list of simulation applications.
 
-Type annotations for `boto3.client("robomaker").list_simulation_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_simulation_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
 
-Boto3 documentation:
-[RoboMaker.Client.list_simulation_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_applications)
+```python title="Method definition"
+def list_simulation_applications(
+    self,
+    *,
+    versionQualifier: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListSimulationApplicationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSimulationApplicationsRequestRequestTypeDef](./type_defs.md#listsimulationapplicationsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `versionQualifier`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListSimulationApplicationsRequestRequestTypeDef = {  # (1)
+    "versionQualifier": ...,
+}
 
-Returns
-[ListSimulationApplicationsResponseTypeDef](./type_defs.md#listsimulationapplicationsresponsetypedef).
+parent.list_simulation_applications(**kwargs)
+```
 
-<a id="list\_simulation\_job\_batches"></a>
+1. See [:material-code-braces: ListSimulationApplicationsRequestRequestTypeDef](./type_defs.md#listsimulationapplicationsrequestrequesttypedef) 
 
-### list_simulation_job_batches
+### list\_simulation\_job\_batches
 
 Returns a list simulation job batches.
 
-Type annotations for `boto3.client("robomaker").list_simulation_job_batches`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_simulation_job_batches` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
 
-Boto3 documentation:
-[RoboMaker.Client.list_simulation_job_batches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_job_batches)
+```python title="Method definition"
+def list_simulation_job_batches(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListSimulationJobBatchesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSimulationJobBatchesRequestRequestTypeDef](./type_defs.md#listsimulationjobbatchesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListSimulationJobBatchesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListSimulationJobBatchesResponseTypeDef](./type_defs.md#listsimulationjobbatchesresponsetypedef).
+parent.list_simulation_job_batches(**kwargs)
+```
 
-<a id="list\_simulation\_jobs"></a>
+1. See [:material-code-braces: ListSimulationJobBatchesRequestRequestTypeDef](./type_defs.md#listsimulationjobbatchesrequestrequesttypedef) 
 
-### list_simulation_jobs
+### list\_simulation\_jobs
 
 Returns a list of simulation jobs.
 
-Type annotations for `boto3.client("robomaker").list_simulation_jobs` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_simulation_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
 
-Boto3 documentation:
-[RoboMaker.Client.list_simulation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_simulation_jobs)
+```python title="Method definition"
+def list_simulation_jobs(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListSimulationJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListSimulationJobsRequestRequestTypeDef](./type_defs.md#listsimulationjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListSimulationJobsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListSimulationJobsResponseTypeDef](./type_defs.md#listsimulationjobsresponsetypedef).
+parent.list_simulation_jobs(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSimulationJobsRequestRequestTypeDef](./type_defs.md#listsimulationjobsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags on a AWS RoboMaker resource.
 
-Type annotations for `boto3.client("robomaker").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[RoboMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_world\_export\_jobs"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_world_export_jobs
+### list\_world\_export\_jobs
 
 Lists world export jobs.
 
-Type annotations for `boto3.client("robomaker").list_world_export_jobs` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_world_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
 
-Boto3 documentation:
-[RoboMaker.Client.list_world_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_export_jobs)
+```python title="Method definition"
+def list_world_export_jobs(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListWorldExportJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListWorldExportJobsRequestRequestTypeDef](./type_defs.md#listworldexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListWorldExportJobsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListWorldExportJobsResponseTypeDef](./type_defs.md#listworldexportjobsresponsetypedef).
+parent.list_world_export_jobs(**kwargs)
+```
 
-<a id="list\_world\_generation\_jobs"></a>
+1. See [:material-code-braces: ListWorldExportJobsRequestRequestTypeDef](./type_defs.md#listworldexportjobsrequestrequesttypedef) 
 
-### list_world_generation_jobs
+### list\_world\_generation\_jobs
 
 Lists world generator jobs.
 
-Type annotations for `boto3.client("robomaker").list_world_generation_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_world_generation_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
 
-Boto3 documentation:
-[RoboMaker.Client.list_world_generation_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_generation_jobs)
+```python title="Method definition"
+def list_world_generation_jobs(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListWorldGenerationJobsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListWorldGenerationJobsRequestRequestTypeDef](./type_defs.md#listworldgenerationjobsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListWorldGenerationJobsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListWorldGenerationJobsResponseTypeDef](./type_defs.md#listworldgenerationjobsresponsetypedef).
+parent.list_world_generation_jobs(**kwargs)
+```
 
-<a id="list\_world\_templates"></a>
+1. See [:material-code-braces: ListWorldGenerationJobsRequestRequestTypeDef](./type_defs.md#listworldgenerationjobsrequestrequesttypedef) 
 
-### list_world_templates
+### list\_world\_templates
 
 Lists world templates.
 
-Type annotations for `boto3.client("robomaker").list_world_templates` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_world_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
 
-Boto3 documentation:
-[RoboMaker.Client.list_world_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_world_templates)
+```python title="Method definition"
+def list_world_templates(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListWorldTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorldTemplatesRequestRequestTypeDef](./type_defs.md#listworldtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListWorldTemplatesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListWorldTemplatesResponseTypeDef](./type_defs.md#listworldtemplatesresponsetypedef).
+parent.list_world_templates(**kwargs)
+```
 
-<a id="list\_worlds"></a>
+1. See [:material-code-braces: ListWorldTemplatesRequestRequestTypeDef](./type_defs.md#listworldtemplatesrequestrequesttypedef) 
 
-### list_worlds
+### list\_worlds
 
 Lists worlds.
 
-Type annotations for `boto3.client("robomaker").list_worlds` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").list_worlds` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
 
-Boto3 documentation:
-[RoboMaker.Client.list_worlds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.list_worlds)
+```python title="Method definition"
+def list_worlds(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    filters: Sequence[FilterTypeDef] = ...,  # (1)
+) -> ListWorldsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListWorldsRequestRequestTypeDef](./type_defs.md#listworldsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListWorldsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListWorldsResponseTypeDef](./type_defs.md#listworldsresponsetypedef).
+parent.list_worlds(**kwargs)
+```
 
-<a id="register\_robot"></a>
+1. See [:material-code-braces: ListWorldsRequestRequestTypeDef](./type_defs.md#listworldsrequestrequesttypedef) 
 
-### register_robot
+### register\_robot
 
 Registers a robot with a fleet.
 
-Type annotations for `boto3.client("robomaker").register_robot` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").register_robot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
 
-Boto3 documentation:
-[RoboMaker.Client.register_robot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.register_robot)
+```python title="Method definition"
+def register_robot(
+    self,
+    *,
+    fleet: str,
+    robot: str,
+) -> RegisterRobotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterRobotRequestRequestTypeDef](./type_defs.md#registerrobotrequestrequesttypedef).
+1. See [:material-code-braces: RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `fleet`: `str` *(required)*
-- `robot`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterRobotRequestRequestTypeDef = {  # (1)
+    "fleet": ...,
+    "robot": ...,
+}
 
-Returns
-[RegisterRobotResponseTypeDef](./type_defs.md#registerrobotresponsetypedef).
+parent.register_robot(**kwargs)
+```
 
-<a id="restart\_simulation\_job"></a>
+1. See [:material-code-braces: RegisterRobotRequestRequestTypeDef](./type_defs.md#registerrobotrequestrequesttypedef) 
 
-### restart_simulation_job
+### restart\_simulation\_job
 
 Restarts a running simulation job.
 
-Type annotations for `boto3.client("robomaker").restart_simulation_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").restart_simulation_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
 
-Boto3 documentation:
-[RoboMaker.Client.restart_simulation_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.restart_simulation_job)
+```python title="Method definition"
+def restart_simulation_job(
+    self,
+    *,
+    job: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RestartSimulationJobRequestRequestTypeDef](./type_defs.md#restartsimulationjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `job`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestartSimulationJobRequestRequestTypeDef = {  # (1)
+    "job": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.restart_simulation_job(**kwargs)
+```
 
-<a id="start\_simulation\_job\_batch"></a>
+1. See [:material-code-braces: RestartSimulationJobRequestRequestTypeDef](./type_defs.md#restartsimulationjobrequestrequesttypedef) 
 
-### start_simulation_job_batch
+### start\_simulation\_job\_batch
 
 Starts a new simulation job batch.
 
-Type annotations for `boto3.client("robomaker").start_simulation_job_batch`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").start_simulation_job_batch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
 
-Boto3 documentation:
-[RoboMaker.Client.start_simulation_job_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.start_simulation_job_batch)
+```python title="Method definition"
+def start_simulation_job_batch(
+    self,
+    *,
+    createSimulationJobRequests: Sequence[SimulationJobRequestTypeDef],  # (1)
+    clientRequestToken: str = ...,
+    batchPolicy: BatchPolicyTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> StartSimulationJobBatchResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartSimulationJobBatchRequestRequestTypeDef](./type_defs.md#startsimulationjobbatchrequestrequesttypedef).
+1. See [:material-code-braces: SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef) 
+2. See [:material-code-braces: BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef) 
+3. See [:material-code-braces: StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `createSimulationJobRequests`:
-  `Sequence`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
-  *(required)*
-- `clientRequestToken`: `str`
-- `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartSimulationJobBatchRequestRequestTypeDef = {  # (1)
+    "createSimulationJobRequests": ...,
+}
 
-Returns
-[StartSimulationJobBatchResponseTypeDef](./type_defs.md#startsimulationjobbatchresponsetypedef).
+parent.start_simulation_job_batch(**kwargs)
+```
 
-<a id="sync\_deployment\_job"></a>
+1. See [:material-code-braces: StartSimulationJobBatchRequestRequestTypeDef](./type_defs.md#startsimulationjobbatchrequestrequesttypedef) 
 
-### sync_deployment_job
+### sync\_deployment\_job
 
 Syncrhonizes robots in a fleet to the latest deployment.
 
-Type annotations for `boto3.client("robomaker").sync_deployment_job` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").sync_deployment_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
 
-Boto3 documentation:
-[RoboMaker.Client.sync_deployment_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.sync_deployment_job)
+```python title="Method definition"
+def sync_deployment_job(
+    self,
+    *,
+    clientRequestToken: str,
+    fleet: str,
+) -> SyncDeploymentJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SyncDeploymentJobRequestRequestTypeDef](./type_defs.md#syncdeploymentjobrequestrequesttypedef).
+1. See [:material-code-braces: SyncDeploymentJobResponseTypeDef](./type_defs.md#syncdeploymentjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientRequestToken`: `str` *(required)*
-- `fleet`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SyncDeploymentJobRequestRequestTypeDef = {  # (1)
+    "clientRequestToken": ...,
+    "fleet": ...,
+}
 
-Returns
-[SyncDeploymentJobResponseTypeDef](./type_defs.md#syncdeploymentjobresponsetypedef).
+parent.sync_deployment_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SyncDeploymentJobRequestRequestTypeDef](./type_defs.md#syncdeploymentjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or edits tags for a AWS RoboMaker resource.
 
-Type annotations for `boto3.client("robomaker").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
 
-Boto3 documentation:
-[RoboMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 .
 
-Type annotations for `boto3.client("robomaker").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
 
-Boto3 documentation:
-[RoboMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_robot\_application"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_robot_application
+### update\_robot\_application
 
 Updates a robot application.
 
-Type annotations for `boto3.client("robomaker").update_robot_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").update_robot_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
 
-Boto3 documentation:
-[RoboMaker.Client.update_robot_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_robot_application)
+```python title="Method definition"
+def update_robot_application(
+    self,
+    *,
+    application: str,
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (1)
+    sources: Sequence[SourceConfigTypeDef] = ...,  # (2)
+    currentRevisionId: str = ...,
+    environment: EnvironmentTypeDef = ...,  # (3)
+) -> UpdateRobotApplicationResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRobotApplicationRequestRequestTypeDef](./type_defs.md#updaterobotapplicationrequestrequesttypedef).
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+2. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-  *(required)*
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `currentRevisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateRobotApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+    "robotSoftwareSuite": ...,
+}
 
-Returns
-[UpdateRobotApplicationResponseTypeDef](./type_defs.md#updaterobotapplicationresponsetypedef).
+parent.update_robot_application(**kwargs)
+```
 
-<a id="update\_simulation\_application"></a>
+1. See [:material-code-braces: UpdateRobotApplicationRequestRequestTypeDef](./type_defs.md#updaterobotapplicationrequestrequesttypedef) 
 
-### update_simulation_application
+### update\_simulation\_application
 
 Updates a simulation application.
 
-Type annotations for `boto3.client("robomaker").update_simulation_application`
-method.
+Type annotations and code completion for `#!python boto3.client("robomaker").update_simulation_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
 
-Boto3 documentation:
-[RoboMaker.Client.update_simulation_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_simulation_application)
+```python title="Method definition"
+def update_simulation_application(
+    self,
+    *,
+    application: str,
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    sources: Sequence[SourceConfigTypeDef] = ...,  # (3)
+    renderingEngine: RenderingEngineTypeDef = ...,  # (4)
+    currentRevisionId: str = ...,
+    environment: EnvironmentTypeDef = ...,  # (5)
+) -> UpdateSimulationApplicationResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSimulationApplicationRequestRequestTypeDef](./type_defs.md#updatesimulationapplicationrequestrequesttypedef).
+1. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `application`: `str` *(required)*
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-  *(required)*
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-  *(required)*
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `currentRevisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSimulationApplicationRequestRequestTypeDef = {  # (1)
+    "application": ...,
+    "simulationSoftwareSuite": ...,
+    "robotSoftwareSuite": ...,
+}
 
-Returns
-[UpdateSimulationApplicationResponseTypeDef](./type_defs.md#updatesimulationapplicationresponsetypedef).
+parent.update_simulation_application(**kwargs)
+```
 
-<a id="update\_world\_template"></a>
+1. See [:material-code-braces: UpdateSimulationApplicationRequestRequestTypeDef](./type_defs.md#updatesimulationapplicationrequestrequesttypedef) 
 
-### update_world_template
+### update\_world\_template
 
 Updates a world template.
 
-Type annotations for `boto3.client("robomaker").update_world_template` method.
+Type annotations and code completion for `#!python boto3.client("robomaker").update_world_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
 
-Boto3 documentation:
-[RoboMaker.Client.update_world_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker.Client.update_world_template)
+```python title="Method definition"
+def update_world_template(
+    self,
+    *,
+    template: str,
+    name: str = ...,
+    templateBody: str = ...,
+    templateLocation: TemplateLocationTypeDef = ...,  # (1)
+) -> UpdateWorldTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorldTemplateRequestRequestTypeDef](./type_defs.md#updateworldtemplaterequestrequesttypedef).
+1. See [:material-code-braces: TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef) 
+2. See [:material-code-braces: UpdateWorldTemplateResponseTypeDef](./type_defs.md#updateworldtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `template`: `str` *(required)*
-- `name`: `str`
-- `templateBody`: `str`
-- `templateLocation`:
-  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateWorldTemplateRequestRequestTypeDef = {  # (1)
+    "template": ...,
+}
 
-Returns
-[UpdateWorldTemplateResponseTypeDef](./type_defs.md#updateworldtemplateresponsetypedef).
+parent.update_world_template(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateWorldTemplateRequestRequestTypeDef](./type_defs.md#updateworldtemplaterequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("robomaker").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("robomaker").get_paginator` method with overloads.
 
-- `client.get_paginator("list_deployment_jobs")` ->
-  [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
-- `client.get_paginator("list_fleets")` ->
-  [ListFleetsPaginator](./paginators.md#listfleetspaginator)
-- `client.get_paginator("list_robot_applications")` ->
-  [ListRobotApplicationsPaginator](./paginators.md#listrobotapplicationspaginator)
-- `client.get_paginator("list_robots")` ->
-  [ListRobotsPaginator](./paginators.md#listrobotspaginator)
-- `client.get_paginator("list_simulation_applications")` ->
-  [ListSimulationApplicationsPaginator](./paginators.md#listsimulationapplicationspaginator)
-- `client.get_paginator("list_simulation_job_batches")` ->
-  [ListSimulationJobBatchesPaginator](./paginators.md#listsimulationjobbatchespaginator)
-- `client.get_paginator("list_simulation_jobs")` ->
-  [ListSimulationJobsPaginator](./paginators.md#listsimulationjobspaginator)
-- `client.get_paginator("list_world_export_jobs")` ->
-  [ListWorldExportJobsPaginator](./paginators.md#listworldexportjobspaginator)
-- `client.get_paginator("list_world_generation_jobs")` ->
-  [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
-- `client.get_paginator("list_world_templates")` ->
-  [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
-- `client.get_paginator("list_worlds")` ->
-  [ListWorldsPaginator](./paginators.md#listworldspaginator)
+- `client.get_paginator("list_deployment_jobs")` -> [ListDeploymentJobsPaginator](./paginators.md#listdeploymentjobspaginator)
+- `client.get_paginator("list_fleets")` -> [ListFleetsPaginator](./paginators.md#listfleetspaginator)
+- `client.get_paginator("list_robot_applications")` -> [ListRobotApplicationsPaginator](./paginators.md#listrobotapplicationspaginator)
+- `client.get_paginator("list_robots")` -> [ListRobotsPaginator](./paginators.md#listrobotspaginator)
+- `client.get_paginator("list_simulation_applications")` -> [ListSimulationApplicationsPaginator](./paginators.md#listsimulationapplicationspaginator)
+- `client.get_paginator("list_simulation_job_batches")` -> [ListSimulationJobBatchesPaginator](./paginators.md#listsimulationjobbatchespaginator)
+- `client.get_paginator("list_simulation_jobs")` -> [ListSimulationJobsPaginator](./paginators.md#listsimulationjobspaginator)
+- `client.get_paginator("list_world_export_jobs")` -> [ListWorldExportJobsPaginator](./paginators.md#listworldexportjobspaginator)
+- `client.get_paginator("list_world_generation_jobs")` -> [ListWorldGenerationJobsPaginator](./paginators.md#listworldgenerationjobspaginator)
+- `client.get_paginator("list_world_templates")` -> [ListWorldTemplatesPaginator](./paginators.md#listworldtemplatespaginator)
+- `client.get_paginator("list_worlds")` -> [ListWorldsPaginator](./paginators.md#listworldspaginator)
+
+
+

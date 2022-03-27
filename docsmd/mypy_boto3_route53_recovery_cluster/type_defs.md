@@ -1,112 +1,128 @@
-<a id="typed-dictionaries-for-boto3-route53recoverycluster-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 Route53RecoveryCluster module
+> [Index](../README.md) > [Route53RecoveryCluster](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [Route53RecoveryCluster](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
-type annotations stubs module
-[mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
-
-- [Typed dictionaries for boto3 Route53RecoveryCluster module](#typed-dictionaries-for-boto3-route53recoverycluster-module)
-  - [GetRoutingControlStateRequestRequestTypeDef](#getroutingcontrolstaterequestrequesttypedef)
-  - [GetRoutingControlStateResponseTypeDef](#getroutingcontrolstateresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateRoutingControlStateEntryTypeDef](#updateroutingcontrolstateentrytypedef)
-  - [UpdateRoutingControlStateRequestRequestTypeDef](#updateroutingcontrolstaterequestrequesttypedef)
-  - [UpdateRoutingControlStatesRequestRequestTypeDef](#updateroutingcontrolstatesrequestrequesttypedef)
-
-<a id="getroutingcontrolstaterequestrequesttypedef"></a>
+    Auto-generated documentation for [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
+    type annotations stubs module [mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 ## GetRoutingControlStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateRequestRequestTypeDef
+
+def get_value() -> GetRoutingControlStateRequestRequestTypeDef:
+    return {
+        "RoutingControlArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoutingControlArn`: `str`
-
-<a id="getroutingcontrolstateresponsetypedef"></a>
+```python title="Definition"
+class GetRoutingControlStateRequestRequestTypeDef(TypedDict):
+    RoutingControlArn: str,
+```
 
 ## GetRoutingControlStateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateResponseTypeDef
+
+def get_value() -> GetRoutingControlStateResponseTypeDef:
+    return {
+        "RoutingControlArn": ...,
+        "RoutingControlState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoutingControlStateResponseTypeDef(TypedDict):
+    RoutingControlArn: str,
+    RoutingControlState: RoutingControlStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RoutingControlArn`: `str`
-- `RoutingControlState`:
-  [RoutingControlStateType](./literals.md#routingcontrolstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="updateroutingcontrolstateentrytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## UpdateRoutingControlStateEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import UpdateRoutingControlStateEntryTypeDef
+
+def get_value() -> UpdateRoutingControlStateEntryTypeDef:
+    return {
+        "RoutingControlArn": ...,
+        "RoutingControlState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoutingControlStateEntryTypeDef(TypedDict):
+    RoutingControlArn: str,
+    RoutingControlState: RoutingControlStateType,  # (1)
+```
 
-- `RoutingControlArn`: `str`
-- `RoutingControlState`:
-  [RoutingControlStateType](./literals.md#routingcontrolstatetype)
-
-<a id="updateroutingcontrolstaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
 ## UpdateRoutingControlStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import UpdateRoutingControlStateRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingControlStateRequestRequestTypeDef:
+    return {
+        "RoutingControlArn": ...,
+        "RoutingControlState": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoutingControlStateRequestRequestTypeDef(TypedDict):
+    RoutingControlArn: str,
+    RoutingControlState: RoutingControlStateType,  # (1)
+    SafetyRulesToOverride: NotRequired[Sequence[str]],
+```
 
-- `RoutingControlArn`: `str`
-- `RoutingControlState`:
-  [RoutingControlStateType](./literals.md#routingcontrolstatetype)
-
-Optional fields:
-
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
-
-<a id="updateroutingcontrolstatesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RoutingControlStateType](./literals.md#routingcontrolstatetype) 
 ## UpdateRoutingControlStatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53_recovery_cluster.type_defs import UpdateRoutingControlStatesRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingControlStatesRequestRequestTypeDef:
+    return {
+        "UpdateRoutingControlStateEntries": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoutingControlStatesRequestRequestTypeDef(TypedDict):
+    UpdateRoutingControlStateEntries: Sequence[UpdateRoutingControlStateEntryTypeDef],  # (1)
+    SafetyRulesToOverride: NotRequired[Sequence[str]],
+```
 
-- `UpdateRoutingControlStateEntries`:
-  `Sequence`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]
-
-Optional fields:
-
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
+1. See [:material-code-braces: UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef) 

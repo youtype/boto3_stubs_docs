@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-eventbridge-module"></a>
-
-# Type annotations for boto3 EventBridge module
+#  EventBridge module
 
 > [Index](../README.md) > EventBridge
 
-Auto-generated documentation for
-[EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
-type annotations stubs module
-[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
+!!! note ""
 
-- [Type annotations for boto3 EventBridge module](#type-annotations-for-boto3-eventbridge-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [EventBridgeClient](#eventbridgeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
+    type annotations stubs module [mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `EventBridge`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[events]'
 python -m pip install mypy-boto3-events
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,131 +42,60 @@ python -m pip install mypy-boto3-events
 python -m pip uninstall -y mypy-boto3-events
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="eventbridgeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## EventBridgeClient
 
-Type annotations for `boto3.client("events")` as
-[EventBridgeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("events")` as [EventBridgeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_events.client import EventBridgeClient
+
+def get_client() -> EventBridgeClient:
+    return Session().cleint("events")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [activate_event_source](./client.md#activate_event_source)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_replay](./client.md#cancel_replay)
-- [create_api_destination](./client.md#create_api_destination)
-- [create_archive](./client.md#create_archive)
-- [create_connection](./client.md#create_connection)
-- [create_event_bus](./client.md#create_event_bus)
-- [create_partner_event_source](./client.md#create_partner_event_source)
-- [deactivate_event_source](./client.md#deactivate_event_source)
-- [deauthorize_connection](./client.md#deauthorize_connection)
-- [delete_api_destination](./client.md#delete_api_destination)
-- [delete_archive](./client.md#delete_archive)
-- [delete_connection](./client.md#delete_connection)
-- [delete_event_bus](./client.md#delete_event_bus)
-- [delete_partner_event_source](./client.md#delete_partner_event_source)
-- [delete_rule](./client.md#delete_rule)
-- [describe_api_destination](./client.md#describe_api_destination)
-- [describe_archive](./client.md#describe_archive)
-- [describe_connection](./client.md#describe_connection)
-- [describe_event_bus](./client.md#describe_event_bus)
-- [describe_event_source](./client.md#describe_event_source)
-- [describe_partner_event_source](./client.md#describe_partner_event_source)
-- [describe_replay](./client.md#describe_replay)
-- [describe_rule](./client.md#describe_rule)
-- [disable_rule](./client.md#disable_rule)
-- [enable_rule](./client.md#enable_rule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_api_destinations](./client.md#list_api_destinations)
-- [list_archives](./client.md#list_archives)
-- [list_connections](./client.md#list_connections)
-- [list_event_buses](./client.md#list_event_buses)
-- [list_event_sources](./client.md#list_event_sources)
-- [list_partner_event_source_accounts](./client.md#list_partner_event_source_accounts)
-- [list_partner_event_sources](./client.md#list_partner_event_sources)
-- [list_replays](./client.md#list_replays)
-- [list_rule_names_by_target](./client.md#list_rule_names_by_target)
-- [list_rules](./client.md#list_rules)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_targets_by_rule](./client.md#list_targets_by_rule)
-- [put_events](./client.md#put_events)
-- [put_partner_events](./client.md#put_partner_events)
-- [put_permission](./client.md#put_permission)
-- [put_rule](./client.md#put_rule)
-- [put_targets](./client.md#put_targets)
-- [remove_permission](./client.md#remove_permission)
-- [remove_targets](./client.md#remove_targets)
-- [start_replay](./client.md#start_replay)
-- [tag_resource](./client.md#tag_resource)
-- [test_event_pattern](./client.md#test_event_pattern)
-- [untag_resource](./client.md#untag_resource)
-- [update_api_destination](./client.md#update_api_destination)
-- [update_archive](./client.md#update_archive)
-- [update_connection](./client.md#update_connection)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-EventBridgeClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- IllegalStatusException
-- InternalException
-- InvalidEventPatternException
-- InvalidStateException
-- LimitExceededException
-- ManagedRuleException
-- OperationDisabledException
-- PolicyLengthExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("events").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("events").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator, ...
+from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator
+
+def get_list_rule_names_by_target_paginator() -> ListRuleNamesByTargetPaginator:
+    return Session().client("events").get_paginator("list_rule_names_by_target"))
 ```
 
 - [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
 - [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_events.literals import ApiDestinationHttpMethodType
 
-```python
-from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
+def get_value() -> ApiDestinationHttpMethodType:
+    return "DELETE"
 ```
 
 - [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
@@ -212,18 +119,22 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
 
-```python
-from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef, ...
+def get_value() -> ActivateEventSourceRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [ActivateEventSourceRequestRequestTypeDef](./type_defs.md#activateeventsourcerequestrequesttypedef)
@@ -313,12 +224,15 @@ from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
 - [ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef)
 - [ListReplaysRequestRequestTypeDef](./type_defs.md#listreplaysrequestrequesttypedef)
 - [ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef)
+- [ListRuleNamesByTargetRequestListRuleNamesByTargetPaginateTypeDef](./type_defs.md#listrulenamesbytargetrequestlistrulenamesbytargetpaginatetypedef)
 - [ListRuleNamesByTargetRequestRequestTypeDef](./type_defs.md#listrulenamesbytargetrequestrequesttypedef)
 - [ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef)
+- [ListRulesRequestListRulesPaginateTypeDef](./type_defs.md#listrulesrequestlistrulespaginatetypedef)
 - [ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef)
 - [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTargetsByRuleRequestListTargetsByRulePaginateTypeDef](./type_defs.md#listtargetsbyrulerequestlisttargetsbyrulepaginatetypedef)
 - [ListTargetsByRuleRequestRequestTypeDef](./type_defs.md#listtargetsbyrulerequestrequesttypedef)
 - [ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef)
 - [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
@@ -375,3 +289,4 @@ from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
 - [UpdateConnectionOAuthRequestParametersTypeDef](./type_defs.md#updateconnectionoauthrequestparameterstypedef)
 - [UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef)
 - [UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef)
+

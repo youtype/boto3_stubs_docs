@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-iot1clickprojects-module"></a>
-
-# Type annotations for boto3 IoT1ClickProjects module
+#  IoT1ClickProjects module
 
 > [Index](../README.md) > IoT1ClickProjects
 
-Auto-generated documentation for
-[IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
-type annotations stubs module
-[mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+!!! note ""
 
-- [Type annotations for boto3 IoT1ClickProjects module](#type-annotations-for-boto3-iot1clickprojects-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoT1ClickProjectsClient](#iot1clickprojectsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
+    type annotations stubs module [mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoT1ClickProjects`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iot1click-projects]'
 python -m pip install mypy-boto3-iot1click-projects
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,59 @@ python -m pip install mypy-boto3-iot1click-projects
 python -m pip uninstall -y mypy-boto3-iot1click-projects
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iot1clickprojectsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoT1ClickProjectsClient
 
-Type annotations for `boto3.client("iot1click-projects")` as
-[IoT1ClickProjectsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iot1click-projects")` as [IoT1ClickProjectsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
+
+def get_client() -> IoT1ClickProjectsClient:
+    return Session().cleint("iot1click-projects")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_device_with_placement](./client.md#associate_device_with_placement)
-- [can_paginate](./client.md#can_paginate)
-- [create_placement](./client.md#create_placement)
-- [create_project](./client.md#create_project)
-- [delete_placement](./client.md#delete_placement)
-- [delete_project](./client.md#delete_project)
-- [describe_placement](./client.md#describe_placement)
-- [describe_project](./client.md#describe_project)
-- [disassociate_device_from_placement](./client.md#disassociate_device_from_placement)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_devices_in_placement](./client.md#get_devices_in_placement)
-- [get_paginator](./client.md#get_paginator)
-- [list_placements](./client.md#list_placements)
-- [list_projects](./client.md#list_projects)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_placement](./client.md#update_placement)
-- [update_project](./client.md#update_project)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-IoT1ClickProjectsClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalFailureException
-- InvalidRequestException
-- ResourceConflictException
-- ResourceNotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("iot1click-projects").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("iot1click-projects").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_iot1click_projects.paginator import ListPlacementsPaginator, ...
+from mypy_boto3_iot1click_projects.paginator import ListPlacementsPaginator
+
+def get_list_placements_paginator() -> ListPlacementsPaginator:
+    return Session().client("iot1click-projects").get_paginator("list_placements"))
 ```
 
 - [ListPlacementsPaginator](./paginators.md#listplacementspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName
 
-```python
-from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, ...
+def get_value() -> ListPlacementsPaginatorName:
+    return "list_placements"
 ```
 
 - [ListPlacementsPaginatorName](./literals.md#listplacementspaginatorname)
@@ -155,18 +103,25 @@ from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, 
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestRequestTypeDef
 
-```python
-from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacementRequestRequestTypeDef, ...
+def get_value() -> AssociateDeviceWithPlacementRequestRequestTypeDef:
+    return {
+        "projectName": ...,
+        "placementName": ...,
+        "deviceId": ...,
+        "deviceTemplateName": ...,
+    }
 ```
 
 - [AssociateDeviceWithPlacementRequestRequestTypeDef](./type_defs.md#associatedevicewithplacementrequestrequesttypedef)
@@ -182,8 +137,10 @@ from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacement
 - [DisassociateDeviceFromPlacementRequestRequestTypeDef](./type_defs.md#disassociatedevicefromplacementrequestrequesttypedef)
 - [GetDevicesInPlacementRequestRequestTypeDef](./type_defs.md#getdevicesinplacementrequestrequesttypedef)
 - [GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef)
+- [ListPlacementsRequestListPlacementsPaginateTypeDef](./type_defs.md#listplacementsrequestlistplacementspaginatetypedef)
 - [ListPlacementsRequestRequestTypeDef](./type_defs.md#listplacementsrequestrequesttypedef)
 - [ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef)
+- [ListProjectsRequestListProjectsPaginateTypeDef](./type_defs.md#listprojectsrequestlistprojectspaginatetypedef)
 - [ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef)
 - [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -199,3 +156,4 @@ from mypy_boto3_iot1click_projects.type_defs import AssociateDeviceWithPlacement
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdatePlacementRequestRequestTypeDef](./type_defs.md#updateplacementrequestrequesttypedef)
 - [UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef)
+

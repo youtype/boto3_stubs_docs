@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-polly-module"></a>
-
-# Examples for boto3 Polly module
+# Examples
 
 > [Index](../README.md) > [Polly](./README.md) > Examples
 
-- [Examples for boto3 Polly module](#examples-for-boto3-polly-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
+    type annotations stubs module [mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[polly]` package installed.
 
-Write your `Polly` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `Polly` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type PollyClient
-# and provides type checking and code completion
-client = session.client("polly")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type DescribeVoicesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_voices")
-for item in paginator.paginate(...):
-    # item has type DescribeVoicesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("polly")  # (1)
+    result = client.describe_voices()  # (2)
+    ```
+
+    1. client: [PollyClient](./client.md)
+    2. result: [:material-code-braces: DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("polly")  # (1)
+
+    paginator = client.get_paginator("describe_voices")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [PollyClient](./client.md)
+    2. paginator: [DescribeVoicesPaginator](./paginators.md#describevoicespaginator)
+    3. item: [:material-code-braces: DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[polly]` or a standalone `mypy_boto3_polly` package, you
-have to explicitly specify `client: PollyClient` type annotation.
+With `boto3-stubs-lite[polly]`
+or a standalone `mypy_boto3_polly` package, you have to explicitly specify `client: PollyClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_polly.client import PollyClient
-from mypy_boto3_polly.paginator import DescribeVoicesPaginator
-
-from mypy_boto3_polly.literals import PaginatorName
-
-from mypy_boto3_polly.type_defs import bool
-from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: PollyClient = session.client("polly")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_polly.client import PollyClient
+    from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
+    from mypy_boto3_polly.type_defs import DescribeVoicesInputRequestTypeDef
 
-paginator_name: PaginatorName = "describe_voices"
-paginator: DescribeVoicesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeVoicesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: PollyClient = session.client("polly")
+
+    kwargs: DescribeVoicesInputRequestTypeDef = {...}
+    result: DescribeVoicesOutputTypeDef = client.describe_voices(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_polly.client import PollyClient
+    from mypy_boto3_polly.paginator import DescribeVoicesPaginator
+    from mypy_boto3_polly.type_defs import DescribeVoicesOutputTypeDef
+
+
+    session = Session()
+    client: PollyClient = session.client("polly")
+
+    paginator: DescribeVoicesPaginator = client.get_paginator("describe_voices")
+    for item in paginator.paginate(...):
+        item: DescribeVoicesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

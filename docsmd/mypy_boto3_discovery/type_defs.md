@@ -1,1007 +1,1356 @@
-<a id="typed-dictionaries-for-boto3-applicationdiscoveryservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 ApplicationDiscoveryService module
+> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [ApplicationDiscoveryService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
-type annotations stubs module
-[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
-
-- [Typed dictionaries for boto3 ApplicationDiscoveryService module](#typed-dictionaries-for-boto3-applicationdiscoveryservice-module)
-  - [AgentConfigurationStatusTypeDef](#agentconfigurationstatustypedef)
-  - [AgentInfoTypeDef](#agentinfotypedef)
-  - [AgentNetworkInfoTypeDef](#agentnetworkinfotypedef)
-  - [AssociateConfigurationItemsToApplicationRequestRequestTypeDef](#associateconfigurationitemstoapplicationrequestrequesttypedef)
-  - [BatchDeleteImportDataErrorTypeDef](#batchdeleteimportdataerrortypedef)
-  - [BatchDeleteImportDataRequestRequestTypeDef](#batchdeleteimportdatarequestrequesttypedef)
-  - [BatchDeleteImportDataResponseTypeDef](#batchdeleteimportdataresponsetypedef)
-  - [ConfigurationTagTypeDef](#configurationtagtypedef)
-  - [ContinuousExportDescriptionTypeDef](#continuousexportdescriptiontypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
-  - [CustomerAgentInfoTypeDef](#customeragentinfotypedef)
-  - [CustomerConnectorInfoTypeDef](#customerconnectorinfotypedef)
-  - [DeleteApplicationsRequestRequestTypeDef](#deleteapplicationsrequestrequesttypedef)
-  - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
-  - [DescribeAgentsRequestRequestTypeDef](#describeagentsrequestrequesttypedef)
-  - [DescribeAgentsResponseTypeDef](#describeagentsresponsetypedef)
-  - [DescribeConfigurationsRequestRequestTypeDef](#describeconfigurationsrequestrequesttypedef)
-  - [DescribeConfigurationsResponseTypeDef](#describeconfigurationsresponsetypedef)
-  - [DescribeContinuousExportsRequestRequestTypeDef](#describecontinuousexportsrequestrequesttypedef)
-  - [DescribeContinuousExportsResponseTypeDef](#describecontinuousexportsresponsetypedef)
-  - [DescribeExportConfigurationsRequestRequestTypeDef](#describeexportconfigurationsrequestrequesttypedef)
-  - [DescribeExportConfigurationsResponseTypeDef](#describeexportconfigurationsresponsetypedef)
-  - [DescribeExportTasksRequestRequestTypeDef](#describeexporttasksrequestrequesttypedef)
-  - [DescribeExportTasksResponseTypeDef](#describeexporttasksresponsetypedef)
-  - [DescribeImportTasksRequestRequestTypeDef](#describeimporttasksrequestrequesttypedef)
-  - [DescribeImportTasksResponseTypeDef](#describeimporttasksresponsetypedef)
-  - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
-  - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
-  - [DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef](#disassociateconfigurationitemsfromapplicationrequestrequesttypedef)
-  - [ExportConfigurationsResponseTypeDef](#exportconfigurationsresponsetypedef)
-  - [ExportFilterTypeDef](#exportfiltertypedef)
-  - [ExportInfoTypeDef](#exportinfotypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetDiscoverySummaryResponseTypeDef](#getdiscoverysummaryresponsetypedef)
-  - [ImportTaskFilterTypeDef](#importtaskfiltertypedef)
-  - [ImportTaskTypeDef](#importtasktypedef)
-  - [ListConfigurationsRequestRequestTypeDef](#listconfigurationsrequestrequesttypedef)
-  - [ListConfigurationsResponseTypeDef](#listconfigurationsresponsetypedef)
-  - [ListServerNeighborsRequestRequestTypeDef](#listserverneighborsrequestrequesttypedef)
-  - [ListServerNeighborsResponseTypeDef](#listserverneighborsresponsetypedef)
-  - [NeighborConnectionDetailTypeDef](#neighborconnectiondetailtypedef)
-  - [OrderByElementTypeDef](#orderbyelementtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartContinuousExportResponseTypeDef](#startcontinuousexportresponsetypedef)
-  - [StartDataCollectionByAgentIdsRequestRequestTypeDef](#startdatacollectionbyagentidsrequestrequesttypedef)
-  - [StartDataCollectionByAgentIdsResponseTypeDef](#startdatacollectionbyagentidsresponsetypedef)
-  - [StartExportTaskRequestRequestTypeDef](#startexporttaskrequestrequesttypedef)
-  - [StartExportTaskResponseTypeDef](#startexporttaskresponsetypedef)
-  - [StartImportTaskRequestRequestTypeDef](#startimporttaskrequestrequesttypedef)
-  - [StartImportTaskResponseTypeDef](#startimporttaskresponsetypedef)
-  - [StopContinuousExportRequestRequestTypeDef](#stopcontinuousexportrequestrequesttypedef)
-  - [StopContinuousExportResponseTypeDef](#stopcontinuousexportresponsetypedef)
-  - [StopDataCollectionByAgentIdsRequestRequestTypeDef](#stopdatacollectionbyagentidsrequestrequesttypedef)
-  - [StopDataCollectionByAgentIdsResponseTypeDef](#stopdatacollectionbyagentidsresponsetypedef)
-  - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
-
-<a id="agentconfigurationstatustypedef"></a>
+    Auto-generated documentation for [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
+    type annotations stubs module [mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 ## AgentConfigurationStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import AgentConfigurationStatusTypeDef
+
+def get_value() -> AgentConfigurationStatusTypeDef:
+    return {
+        "agentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `agentId`: `str`
-- `operationSucceeded`: `bool`
-- `description`: `str`
-
-<a id="agentinfotypedef"></a>
+```python title="Definition"
+class AgentConfigurationStatusTypeDef(TypedDict):
+    agentId: NotRequired[str],
+    operationSucceeded: NotRequired[bool],
+    description: NotRequired[str],
+```
 
 ## AgentInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import AgentInfoTypeDef
+
+def get_value() -> AgentInfoTypeDef:
+    return {
+        "agentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AgentInfoTypeDef(TypedDict):
+    agentId: NotRequired[str],
+    hostName: NotRequired[str],
+    agentNetworkInfoList: NotRequired[List[AgentNetworkInfoTypeDef]],  # (1)
+    connectorId: NotRequired[str],
+    version: NotRequired[str],
+    health: NotRequired[AgentStatusType],  # (2)
+    lastHealthPingTime: NotRequired[str],
+    collectionStatus: NotRequired[str],
+    agentType: NotRequired[str],
+    registeredTime: NotRequired[str],
+```
 
-- `agentId`: `str`
-- `hostName`: `str`
-- `agentNetworkInfoList`:
-  `List`\[[AgentNetworkInfoTypeDef](./type_defs.md#agentnetworkinfotypedef)\]
-- `connectorId`: `str`
-- `version`: `str`
-- `health`: [AgentStatusType](./literals.md#agentstatustype)
-- `lastHealthPingTime`: `str`
-- `collectionStatus`: `str`
-- `agentType`: `str`
-- `registeredTime`: `str`
-
-<a id="agentnetworkinfotypedef"></a>
-
+1. See [:material-code-braces: AgentNetworkInfoTypeDef](./type_defs.md#agentnetworkinfotypedef) 
+2. See [:material-code-brackets: AgentStatusType](./literals.md#agentstatustype) 
 ## AgentNetworkInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import AgentNetworkInfoTypeDef
+
+def get_value() -> AgentNetworkInfoTypeDef:
+    return {
+        "ipAddress": ...,
+    }
 ```
 
-Optional fields:
-
-- `ipAddress`: `str`
-- `macAddress`: `str`
-
-<a id="associateconfigurationitemstoapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class AgentNetworkInfoTypeDef(TypedDict):
+    ipAddress: NotRequired[str],
+    macAddress: NotRequired[str],
+```
 
 ## AssociateConfigurationItemsToApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import AssociateConfigurationItemsToApplicationRequestRequestTypeDef
+
+def get_value() -> AssociateConfigurationItemsToApplicationRequestRequestTypeDef:
+    return {
+        "applicationConfigurationId": ...,
+        "configurationIds": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationConfigurationId`: `str`
-- `configurationIds`: `Sequence`\[`str`\]
-
-<a id="batchdeleteimportdataerrortypedef"></a>
+```python title="Definition"
+class AssociateConfigurationItemsToApplicationRequestRequestTypeDef(TypedDict):
+    applicationConfigurationId: str,
+    configurationIds: Sequence[str],
+```
 
 ## BatchDeleteImportDataErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import BatchDeleteImportDataErrorTypeDef
+
+def get_value() -> BatchDeleteImportDataErrorTypeDef:
+    return {
+        "importTaskId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchDeleteImportDataErrorTypeDef(TypedDict):
+    importTaskId: NotRequired[str],
+    errorCode: NotRequired[BatchDeleteImportDataErrorCodeType],  # (1)
+    errorDescription: NotRequired[str],
+```
 
-- `importTaskId`: `str`
-- `errorCode`:
-  [BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype)
-- `errorDescription`: `str`
-
-<a id="batchdeleteimportdatarequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: BatchDeleteImportDataErrorCodeType](./literals.md#batchdeleteimportdataerrorcodetype) 
 ## BatchDeleteImportDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import BatchDeleteImportDataRequestRequestTypeDef
+
+def get_value() -> BatchDeleteImportDataRequestRequestTypeDef:
+    return {
+        "importTaskIds": ...,
+    }
 ```
 
-Required fields:
-
-- `importTaskIds`: `Sequence`\[`str`\]
-
-<a id="batchdeleteimportdataresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteImportDataRequestRequestTypeDef(TypedDict):
+    importTaskIds: Sequence[str],
+```
 
 ## BatchDeleteImportDataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import BatchDeleteImportDataResponseTypeDef
+
+def get_value() -> BatchDeleteImportDataResponseTypeDef:
+    return {
+        "errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteImportDataResponseTypeDef(TypedDict):
+    errors: List[BatchDeleteImportDataErrorTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errors`:
-  `List`\[[BatchDeleteImportDataErrorTypeDef](./type_defs.md#batchdeleteimportdataerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="configurationtagtypedef"></a>
-
+1. See [:material-code-braces: BatchDeleteImportDataErrorTypeDef](./type_defs.md#batchdeleteimportdataerrortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConfigurationTagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ConfigurationTagTypeDef
+
+def get_value() -> ConfigurationTagTypeDef:
+    return {
+        "configurationType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationTagTypeDef(TypedDict):
+    configurationType: NotRequired[ConfigurationItemTypeType],  # (1)
+    configurationId: NotRequired[str],
+    key: NotRequired[str],
+    value: NotRequired[str],
+    timeOfCreation: NotRequired[datetime],
+```
 
-- `configurationType`:
-  [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
-- `configurationId`: `str`
-- `key`: `str`
-- `value`: `str`
-- `timeOfCreation`: `datetime`
-
-<a id="continuousexportdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationItemTypeType](./literals.md#configurationitemtypetype) 
 ## ContinuousExportDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ContinuousExportDescriptionTypeDef
+
+def get_value() -> ContinuousExportDescriptionTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContinuousExportDescriptionTypeDef(TypedDict):
+    exportId: NotRequired[str],
+    status: NotRequired[ContinuousExportStatusType],  # (1)
+    statusDetail: NotRequired[str],
+    s3Bucket: NotRequired[str],
+    startTime: NotRequired[datetime],
+    stopTime: NotRequired[datetime],
+    dataSource: NotRequired[DataSourceType],  # (2)
+    schemaStorageConfig: NotRequired[Dict[str, str]],
+```
 
-- `exportId`: `str`
-- `status`:
-  [ContinuousExportStatusType](./literals.md#continuousexportstatustype)
-- `statusDetail`: `str`
-- `s3Bucket`: `str`
-- `startTime`: `datetime`
-- `stopTime`: `datetime`
-- `dataSource`: `Literal['AGENT']` (see
-  [DataSourceType](./literals.md#datasourcetype))
-- `schemaStorageConfig`: `Dict`\[`str`, `str`\]
-
-<a id="createapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContinuousExportStatusType](./literals.md#continuousexportstatustype) 
+2. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="createapplicationresponsetypedef"></a>
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+```
 
 ## CreateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "configurationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    configurationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `configurationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import CreateTagsRequestRequestTypeDef
+
+def get_value() -> CreateTagsRequestRequestTypeDef:
+    return {
+        "configurationIds": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTagsRequestRequestTypeDef(TypedDict):
+    configurationIds: Sequence[str],
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `configurationIds`: `Sequence`\[`str`\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="customeragentinfotypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CustomerAgentInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import CustomerAgentInfoTypeDef
+
+def get_value() -> CustomerAgentInfoTypeDef:
+    return {
+        "activeAgents": ...,
+        "healthyAgents": ...,
+        "blackListedAgents": ...,
+        "shutdownAgents": ...,
+        "unhealthyAgents": ...,
+        "totalAgents": ...,
+        "unknownAgents": ...,
+    }
 ```
 
-Required fields:
-
-- `activeAgents`: `int`
-- `healthyAgents`: `int`
-- `blackListedAgents`: `int`
-- `shutdownAgents`: `int`
-- `unhealthyAgents`: `int`
-- `totalAgents`: `int`
-- `unknownAgents`: `int`
-
-<a id="customerconnectorinfotypedef"></a>
+```python title="Definition"
+class CustomerAgentInfoTypeDef(TypedDict):
+    activeAgents: int,
+    healthyAgents: int,
+    blackListedAgents: int,
+    shutdownAgents: int,
+    unhealthyAgents: int,
+    totalAgents: int,
+    unknownAgents: int,
+```
 
 ## CustomerConnectorInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import CustomerConnectorInfoTypeDef
+
+def get_value() -> CustomerConnectorInfoTypeDef:
+    return {
+        "activeConnectors": ...,
+        "healthyConnectors": ...,
+        "blackListedConnectors": ...,
+        "shutdownConnectors": ...,
+        "unhealthyConnectors": ...,
+        "totalConnectors": ...,
+        "unknownConnectors": ...,
+    }
 ```
 
-Required fields:
-
-- `activeConnectors`: `int`
-- `healthyConnectors`: `int`
-- `blackListedConnectors`: `int`
-- `shutdownConnectors`: `int`
-- `unhealthyConnectors`: `int`
-- `totalConnectors`: `int`
-- `unknownConnectors`: `int`
-
-<a id="deleteapplicationsrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomerConnectorInfoTypeDef(TypedDict):
+    activeConnectors: int,
+    healthyConnectors: int,
+    blackListedConnectors: int,
+    shutdownConnectors: int,
+    unhealthyConnectors: int,
+    totalConnectors: int,
+    unknownConnectors: int,
+```
 
 ## DeleteApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DeleteApplicationsRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationsRequestRequestTypeDef:
+    return {
+        "configurationIds": ...,
+    }
 ```
 
-Required fields:
-
-- `configurationIds`: `Sequence`\[`str`\]
-
-<a id="deletetagsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationsRequestRequestTypeDef(TypedDict):
+    configurationIds: Sequence[str],
+```
 
 ## DeleteTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DeleteTagsRequestRequestTypeDef
+
+def get_value() -> DeleteTagsRequestRequestTypeDef:
+    return {
+        "configurationIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTagsRequestRequestTypeDef(TypedDict):
+    configurationIds: Sequence[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `configurationIds`: `Sequence`\[`str`\]
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## DescribeAgentsRequestDescribeAgentsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import DescribeAgentsRequestDescribeAgentsPaginateTypeDef
 
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+def get_value() -> DescribeAgentsRequestDescribeAgentsPaginateTypeDef:
+    return {
+        "agentIds": ...,
+    }
+```
 
-<a id="describeagentsrequestrequesttypedef"></a>
+```python title="Definition"
+class DescribeAgentsRequestDescribeAgentsPaginateTypeDef(TypedDict):
+    agentIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAgentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeAgentsRequestRequestTypeDef
+
+def get_value() -> DescribeAgentsRequestRequestTypeDef:
+    return {
+        "agentIds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeAgentsRequestRequestTypeDef(TypedDict):
+    agentIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `agentIds`: `Sequence`\[`str`\]
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeagentsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## DescribeAgentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeAgentsResponseTypeDef
+
+def get_value() -> DescribeAgentsResponseTypeDef:
+    return {
+        "agentsInfo": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAgentsResponseTypeDef(TypedDict):
+    agentsInfo: List[AgentInfoTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `agentsInfo`: `List`\[[AgentInfoTypeDef](./type_defs.md#agentinfotypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AgentInfoTypeDef](./type_defs.md#agentinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeConfigurationsRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationsRequestRequestTypeDef:
+    return {
+        "configurationIds": ...,
+    }
 ```
 
-Required fields:
-
-- `configurationIds`: `Sequence`\[`str`\]
-
-<a id="describeconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigurationsRequestRequestTypeDef(TypedDict):
+    configurationIds: Sequence[str],
+```
 
 ## DescribeConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeConfigurationsResponseTypeDef
+
+def get_value() -> DescribeConfigurationsResponseTypeDef:
+    return {
+        "configurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationsResponseTypeDef(TypedDict):
+    configurations: List[Dict[str, str]],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `configurations`: `List`\[`Dict`\[`str`, `str`\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeContinuousExportsRequestDescribeContinuousExportsPaginateTypeDef
 
-<a id="describecontinuousexportsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import DescribeContinuousExportsRequestDescribeContinuousExportsPaginateTypeDef
 
+def get_value() -> DescribeContinuousExportsRequestDescribeContinuousExportsPaginateTypeDef:
+    return {
+        "exportIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeContinuousExportsRequestDescribeContinuousExportsPaginateTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeContinuousExportsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeContinuousExportsRequestRequestTypeDef
+
+def get_value() -> DescribeContinuousExportsRequestRequestTypeDef:
+    return {
+        "exportIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `exportIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describecontinuousexportsresponsetypedef"></a>
+```python title="Definition"
+class DescribeContinuousExportsRequestRequestTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeContinuousExportsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeContinuousExportsResponseTypeDef
+
+def get_value() -> DescribeContinuousExportsResponseTypeDef:
+    return {
+        "descriptions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContinuousExportsResponseTypeDef(TypedDict):
+    descriptions: List[ContinuousExportDescriptionTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `descriptions`:
-  `List`\[[ContinuousExportDescriptionTypeDef](./type_defs.md#continuousexportdescriptiontypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContinuousExportDescriptionTypeDef](./type_defs.md#continuousexportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExportConfigurationsRequestDescribeExportConfigurationsPaginateTypeDef
 
-<a id="describeexportconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsRequestDescribeExportConfigurationsPaginateTypeDef
 
+def get_value() -> DescribeExportConfigurationsRequestDescribeExportConfigurationsPaginateTypeDef:
+    return {
+        "exportIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExportConfigurationsRequestDescribeExportConfigurationsPaginateTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeExportConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsRequestRequestTypeDef
+
+def get_value() -> DescribeExportConfigurationsRequestRequestTypeDef:
+    return {
+        "exportIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `exportIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeexportconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeExportConfigurationsRequestRequestTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## DescribeExportConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeExportConfigurationsResponseTypeDef
+
+def get_value() -> DescribeExportConfigurationsResponseTypeDef:
+    return {
+        "exportsInfo": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExportConfigurationsResponseTypeDef(TypedDict):
+    exportsInfo: List[ExportInfoTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `exportsInfo`:
-  `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ExportInfoTypeDef](./type_defs.md#exportinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
 
-<a id="describeexporttasksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef
 
+def get_value() -> DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef:
+    return {
+        "exportIds": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeExportTasksRequestDescribeExportTasksPaginateTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[ExportFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeExportTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeExportTasksRequestRequestTypeDef
+
+def get_value() -> DescribeExportTasksRequestRequestTypeDef:
+    return {
+        "exportIds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeExportTasksRequestRequestTypeDef(TypedDict):
+    exportIds: NotRequired[Sequence[str]],
+    filters: NotRequired[Sequence[ExportFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `exportIds`: `Sequence`\[`str`\]
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeexporttasksresponsetypedef"></a>
-
+1. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
 ## DescribeExportTasksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeExportTasksResponseTypeDef
+
+def get_value() -> DescribeExportTasksResponseTypeDef:
+    return {
+        "exportsInfo": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExportTasksResponseTypeDef(TypedDict):
+    exportsInfo: List[ExportInfoTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `exportsInfo`:
-  `List`\[[ExportInfoTypeDef](./type_defs.md#exportinfotypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeimporttasksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportInfoTypeDef](./type_defs.md#exportinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeImportTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeImportTasksRequestRequestTypeDef
+
+def get_value() -> DescribeImportTasksRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeImportTasksRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[ImportTaskFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `filters`:
-  `Sequence`\[[ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeimporttasksresponsetypedef"></a>
-
+1. See [:material-code-braces: ImportTaskFilterTypeDef](./type_defs.md#importtaskfiltertypedef) 
 ## DescribeImportTasksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeImportTasksResponseTypeDef
+
+def get_value() -> DescribeImportTasksResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "tasks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeImportTasksResponseTypeDef(TypedDict):
+    nextToken: str,
+    tasks: List[ImportTaskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `tasks`: `List`\[[ImportTaskTypeDef](./type_defs.md#importtasktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ImportTaskTypeDef](./type_defs.md#importtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTagsRequestDescribeTagsPaginateTypeDef
 
-<a id="describetagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import DescribeTagsRequestDescribeTagsPaginateTypeDef
 
+def get_value() -> DescribeTagsRequestDescribeTagsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTagsRequestDescribeTagsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[TagFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeTagsRequestRequestTypeDef
+
+def get_value() -> DescribeTagsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeTagsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[TagFilterTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `filters`: `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describetagsresponsetypedef"></a>
-
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
 ## DescribeTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DescribeTagsResponseTypeDef
+
+def get_value() -> DescribeTagsResponseTypeDef:
+    return {
+        "tags": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTagsResponseTypeDef(TypedDict):
+    tags: List[ConfigurationTagTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`:
-  `List`\[[ConfigurationTagTypeDef](./type_defs.md#configurationtagtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateconfigurationitemsfromapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationTagTypeDef](./type_defs.md#configurationtagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef
+
+def get_value() -> DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef:
+    return {
+        "applicationConfigurationId": ...,
+        "configurationIds": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationConfigurationId`: `str`
-- `configurationIds`: `Sequence`\[`str`\]
-
-<a id="exportconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class DisassociateConfigurationItemsFromApplicationRequestRequestTypeDef(TypedDict):
+    applicationConfigurationId: str,
+    configurationIds: Sequence[str],
+```
 
 ## ExportConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ExportConfigurationsResponseTypeDef
+
+def get_value() -> ExportConfigurationsResponseTypeDef:
+    return {
+        "exportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportConfigurationsResponseTypeDef(TypedDict):
+    exportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `exportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="exportfiltertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExportFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ExportFilterTypeDef
+
+def get_value() -> ExportFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "condition": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `values`: `Sequence`\[`str`\]
-- `condition`: `str`
-
-<a id="exportinfotypedef"></a>
+```python title="Definition"
+class ExportFilterTypeDef(TypedDict):
+    name: str,
+    values: Sequence[str],
+    condition: str,
+```
 
 ## ExportInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ExportInfoTypeDef
+
+def get_value() -> ExportInfoTypeDef:
+    return {
+        "exportId": ...,
+        "exportStatus": ...,
+        "statusMessage": ...,
+        "exportRequestTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportInfoTypeDef(TypedDict):
+    exportId: str,
+    exportStatus: ExportStatusType,  # (1)
+    statusMessage: str,
+    exportRequestTime: datetime,
+    configurationsDownloadUrl: NotRequired[str],
+    isTruncated: NotRequired[bool],
+    requestedStartTime: NotRequired[datetime],
+    requestedEndTime: NotRequired[datetime],
+```
 
-- `exportId`: `str`
-- `exportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `statusMessage`: `str`
-- `exportRequestTime`: `datetime`
-
-Optional fields:
-
-- `configurationsDownloadUrl`: `str`
-- `isTruncated`: `bool`
-- `requestedStartTime`: `datetime`
-- `requestedEndTime`: `datetime`
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+        "condition": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `values`: `Sequence`\[`str`\]
-- `condition`: `str`
-
-<a id="getdiscoverysummaryresponsetypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    name: str,
+    values: Sequence[str],
+    condition: str,
+```
 
 ## GetDiscoverySummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import GetDiscoverySummaryResponseTypeDef
+
+def get_value() -> GetDiscoverySummaryResponseTypeDef:
+    return {
+        "servers": ...,
+        "applications": ...,
+        "serversMappedToApplications": ...,
+        "serversMappedtoTags": ...,
+        "agentSummary": ...,
+        "connectorSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDiscoverySummaryResponseTypeDef(TypedDict):
+    servers: int,
+    applications: int,
+    serversMappedToApplications: int,
+    serversMappedtoTags: int,
+    agentSummary: CustomerAgentInfoTypeDef,  # (1)
+    connectorSummary: CustomerConnectorInfoTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `servers`: `int`
-- `applications`: `int`
-- `serversMappedToApplications`: `int`
-- `serversMappedtoTags`: `int`
-- `agentSummary`:
-  [CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef)
-- `connectorSummary`:
-  [CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importtaskfiltertypedef"></a>
-
+1. See [:material-code-braces: CustomerAgentInfoTypeDef](./type_defs.md#customeragentinfotypedef) 
+2. See [:material-code-braces: CustomerConnectorInfoTypeDef](./type_defs.md#customerconnectorinfotypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportTaskFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ImportTaskFilterTypeDef
+
+def get_value() -> ImportTaskFilterTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImportTaskFilterTypeDef(TypedDict):
+    name: NotRequired[ImportTaskFilterNameType],  # (1)
+    values: NotRequired[Sequence[str]],
+```
 
-- `name`: [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
-- `values`: `Sequence`\[`str`\]
-
-<a id="importtasktypedef"></a>
-
+1. See [:material-code-brackets: ImportTaskFilterNameType](./literals.md#importtaskfilternametype) 
 ## ImportTaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ImportTaskTypeDef
+
+def get_value() -> ImportTaskTypeDef:
+    return {
+        "importTaskId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImportTaskTypeDef(TypedDict):
+    importTaskId: NotRequired[str],
+    clientRequestToken: NotRequired[str],
+    name: NotRequired[str],
+    importUrl: NotRequired[str],
+    status: NotRequired[ImportStatusType],  # (1)
+    importRequestTime: NotRequired[datetime],
+    importCompletionTime: NotRequired[datetime],
+    importDeletedTime: NotRequired[datetime],
+    serverImportSuccess: NotRequired[int],
+    serverImportFailure: NotRequired[int],
+    applicationImportSuccess: NotRequired[int],
+    applicationImportFailure: NotRequired[int],
+    errorsAndFailedEntriesZip: NotRequired[str],
+```
 
-- `importTaskId`: `str`
-- `clientRequestToken`: `str`
-- `name`: `str`
-- `importUrl`: `str`
-- `status`: [ImportStatusType](./literals.md#importstatustype)
-- `importRequestTime`: `datetime`
-- `importCompletionTime`: `datetime`
-- `importDeletedTime`: `datetime`
-- `serverImportSuccess`: `int`
-- `serverImportFailure`: `int`
-- `applicationImportSuccess`: `int`
-- `applicationImportFailure`: `int`
-- `errorsAndFailedEntriesZip`: `str`
+1. See [:material-code-brackets: ImportStatusType](./literals.md#importstatustype) 
+## ListConfigurationsRequestListConfigurationsPaginateTypeDef
 
-<a id="listconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_discovery.type_defs import ListConfigurationsRequestListConfigurationsPaginateTypeDef
 
+def get_value() -> ListConfigurationsRequestListConfigurationsPaginateTypeDef:
+    return {
+        "configurationType": ...,
+    }
+```
+
+```python title="Definition"
+class ListConfigurationsRequestListConfigurationsPaginateTypeDef(TypedDict):
+    configurationType: ConfigurationItemTypeType,  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    orderBy: NotRequired[Sequence[OrderByElementTypeDef]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ConfigurationItemTypeType](./literals.md#configurationitemtypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ListConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListConfigurationsRequestRequestTypeDef:
+    return {
+        "configurationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConfigurationsRequestRequestTypeDef(TypedDict):
+    configurationType: ConfigurationItemTypeType,  # (1)
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    orderBy: NotRequired[Sequence[OrderByElementTypeDef]],  # (3)
+```
 
-- `configurationType`:
-  [ConfigurationItemTypeType](./literals.md#configurationitemtypetype)
-
-Optional fields:
-
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `orderBy`:
-  `Sequence`\[[OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef)\]
-
-<a id="listconfigurationsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationItemTypeType](./literals.md#configurationitemtypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: OrderByElementTypeDef](./type_defs.md#orderbyelementtypedef) 
 ## ListConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ListConfigurationsResponseTypeDef
+
+def get_value() -> ListConfigurationsResponseTypeDef:
+    return {
+        "configurations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConfigurationsResponseTypeDef(TypedDict):
+    configurations: List[Dict[str, str]],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `configurations`: `List`\[`Dict`\[`str`, `str`\]\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listserverneighborsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListServerNeighborsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ListServerNeighborsRequestRequestTypeDef
+
+def get_value() -> ListServerNeighborsRequestRequestTypeDef:
+    return {
+        "configurationId": ...,
+    }
 ```
 
-Required fields:
-
-- `configurationId`: `str`
-
-Optional fields:
-
-- `portInformationNeeded`: `bool`
-- `neighborConfigurationIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listserverneighborsresponsetypedef"></a>
+```python title="Definition"
+class ListServerNeighborsRequestRequestTypeDef(TypedDict):
+    configurationId: str,
+    portInformationNeeded: NotRequired[bool],
+    neighborConfigurationIds: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListServerNeighborsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ListServerNeighborsResponseTypeDef
+
+def get_value() -> ListServerNeighborsResponseTypeDef:
+    return {
+        "neighbors": ...,
+        "nextToken": ...,
+        "knownDependencyCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServerNeighborsResponseTypeDef(TypedDict):
+    neighbors: List[NeighborConnectionDetailTypeDef],  # (1)
+    nextToken: str,
+    knownDependencyCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `neighbors`:
-  `List`\[[NeighborConnectionDetailTypeDef](./type_defs.md#neighborconnectiondetailtypedef)\]
-- `nextToken`: `str`
-- `knownDependencyCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="neighborconnectiondetailtypedef"></a>
-
+1. See [:material-code-braces: NeighborConnectionDetailTypeDef](./type_defs.md#neighborconnectiondetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NeighborConnectionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import NeighborConnectionDetailTypeDef
+
+def get_value() -> NeighborConnectionDetailTypeDef:
+    return {
+        "sourceServerId": ...,
+        "destinationServerId": ...,
+        "connectionsCount": ...,
+    }
 ```
 
-Required fields:
-
-- `sourceServerId`: `str`
-- `destinationServerId`: `str`
-- `connectionsCount`: `int`
-
-Optional fields:
-
-- `destinationPort`: `int`
-- `transportProtocol`: `str`
-
-<a id="orderbyelementtypedef"></a>
+```python title="Definition"
+class NeighborConnectionDetailTypeDef(TypedDict):
+    sourceServerId: str,
+    destinationServerId: str,
+    connectionsCount: int,
+    destinationPort: NotRequired[int],
+    transportProtocol: NotRequired[str],
+```
 
 ## OrderByElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import OrderByElementTypeDef
+
+def get_value() -> OrderByElementTypeDef:
+    return {
+        "fieldName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrderByElementTypeDef(TypedDict):
+    fieldName: str,
+    sortOrder: NotRequired[orderStringType],  # (1)
+```
 
-- `fieldName`: `str`
-
-Optional fields:
-
-- `sortOrder`: [orderStringType](./literals.md#orderstringtype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: orderStringType](./literals.md#orderstringtype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startcontinuousexportresponsetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartContinuousExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartContinuousExportResponseTypeDef
+
+def get_value() -> StartContinuousExportResponseTypeDef:
+    return {
+        "exportId": ...,
+        "s3Bucket": ...,
+        "startTime": ...,
+        "dataSource": ...,
+        "schemaStorageConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContinuousExportResponseTypeDef(TypedDict):
+    exportId: str,
+    s3Bucket: str,
+    startTime: datetime,
+    dataSource: DataSourceType,  # (1)
+    schemaStorageConfig: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `exportId`: `str`
-- `s3Bucket`: `str`
-- `startTime`: `datetime`
-- `dataSource`: `Literal['AGENT']` (see
-  [DataSourceType](./literals.md#datasourcetype))
-- `schemaStorageConfig`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startdatacollectionbyagentidsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DataSourceType](./literals.md#datasourcetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartDataCollectionByAgentIdsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsRequestRequestTypeDef
+
+def get_value() -> StartDataCollectionByAgentIdsRequestRequestTypeDef:
+    return {
+        "agentIds": ...,
+    }
 ```
 
-Required fields:
-
-- `agentIds`: `Sequence`\[`str`\]
-
-<a id="startdatacollectionbyagentidsresponsetypedef"></a>
+```python title="Definition"
+class StartDataCollectionByAgentIdsRequestRequestTypeDef(TypedDict):
+    agentIds: Sequence[str],
+```
 
 ## StartDataCollectionByAgentIdsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartDataCollectionByAgentIdsResponseTypeDef
+
+def get_value() -> StartDataCollectionByAgentIdsResponseTypeDef:
+    return {
+        "agentsConfigurationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDataCollectionByAgentIdsResponseTypeDef(TypedDict):
+    agentsConfigurationStatus: List[AgentConfigurationStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `agentsConfigurationStatus`:
-  `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startexporttaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartExportTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartExportTaskRequestRequestTypeDef
+
+def get_value() -> StartExportTaskRequestRequestTypeDef:
+    return {
+        "exportDataFormat": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StartExportTaskRequestRequestTypeDef(TypedDict):
+    exportDataFormat: NotRequired[Sequence[ExportDataFormatType]],  # (1)
+    filters: NotRequired[Sequence[ExportFilterTypeDef]],  # (2)
+    startTime: NotRequired[Union[datetime, str]],
+    endTime: NotRequired[Union[datetime, str]],
+```
 
-- `exportDataFormat`:
-  `Sequence`\[[ExportDataFormatType](./literals.md#exportdataformattype)\]
-- `filters`:
-  `Sequence`\[[ExportFilterTypeDef](./type_defs.md#exportfiltertypedef)\]
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-
-<a id="startexporttaskresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExportDataFormatType](./literals.md#exportdataformattype) 
+2. See [:material-code-braces: ExportFilterTypeDef](./type_defs.md#exportfiltertypedef) 
 ## StartExportTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartExportTaskResponseTypeDef
+
+def get_value() -> StartExportTaskResponseTypeDef:
+    return {
+        "exportId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartExportTaskResponseTypeDef(TypedDict):
+    exportId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `exportId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startimporttaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartImportTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartImportTaskRequestRequestTypeDef
+
+def get_value() -> StartImportTaskRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "importUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `importUrl`: `str`
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="startimporttaskresponsetypedef"></a>
+```python title="Definition"
+class StartImportTaskRequestRequestTypeDef(TypedDict):
+    name: str,
+    importUrl: str,
+    clientRequestToken: NotRequired[str],
+```
 
 ## StartImportTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StartImportTaskResponseTypeDef
+
+def get_value() -> StartImportTaskResponseTypeDef:
+    return {
+        "task": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartImportTaskResponseTypeDef(TypedDict):
+    task: ImportTaskTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `task`: [ImportTaskTypeDef](./type_defs.md#importtasktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopcontinuousexportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ImportTaskTypeDef](./type_defs.md#importtasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopContinuousExportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StopContinuousExportRequestRequestTypeDef
+
+def get_value() -> StopContinuousExportRequestRequestTypeDef:
+    return {
+        "exportId": ...,
+    }
 ```
 
-Required fields:
-
-- `exportId`: `str`
-
-<a id="stopcontinuousexportresponsetypedef"></a>
+```python title="Definition"
+class StopContinuousExportRequestRequestTypeDef(TypedDict):
+    exportId: str,
+```
 
 ## StopContinuousExportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StopContinuousExportResponseTypeDef
+
+def get_value() -> StopContinuousExportResponseTypeDef:
+    return {
+        "startTime": ...,
+        "stopTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopContinuousExportResponseTypeDef(TypedDict):
+    startTime: datetime,
+    stopTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `startTime`: `datetime`
-- `stopTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopdatacollectionbyagentidsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopDataCollectionByAgentIdsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsRequestRequestTypeDef
+
+def get_value() -> StopDataCollectionByAgentIdsRequestRequestTypeDef:
+    return {
+        "agentIds": ...,
+    }
 ```
 
-Required fields:
-
-- `agentIds`: `Sequence`\[`str`\]
-
-<a id="stopdatacollectionbyagentidsresponsetypedef"></a>
+```python title="Definition"
+class StopDataCollectionByAgentIdsRequestRequestTypeDef(TypedDict):
+    agentIds: Sequence[str],
+```
 
 ## StopDataCollectionByAgentIdsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import StopDataCollectionByAgentIdsResponseTypeDef
+
+def get_value() -> StopDataCollectionByAgentIdsResponseTypeDef:
+    return {
+        "agentsConfigurationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopDataCollectionByAgentIdsResponseTypeDef(TypedDict):
+    agentsConfigurationStatus: List[AgentConfigurationStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `agentsConfigurationStatus`:
-  `List`\[[AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagfiltertypedef"></a>
-
+1. See [:material-code-braces: AgentConfigurationStatusTypeDef](./type_defs.md#agentconfigurationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import TagFilterTypeDef
+
+def get_value() -> TagFilterTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `values`: `Sequence`\[`str`\]
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class TagFilterTypeDef(TypedDict):
+    name: str,
+    values: Sequence[str],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="updateapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## UpdateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_discovery.type_defs import UpdateApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateApplicationRequestRequestTypeDef:
+    return {
+        "configurationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateApplicationRequestRequestTypeDef(TypedDict):
+    configurationId: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+```
 
-- `configurationId`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`

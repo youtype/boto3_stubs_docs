@@ -1,1344 +1,1641 @@
-<a id="typed-dictionaries-for-boto3-cloudsearch-module"></a>
-
-# Typed dictionaries for boto3 CloudSearch module
+# Typed dictionaries
 
 > [Index](../README.md) > [CloudSearch](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module
-[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CloudSearch module](#typed-dictionaries-for-boto3-cloudsearch-module)
-  - [AccessPoliciesStatusTypeDef](#accesspoliciesstatustypedef)
-  - [AnalysisOptionsTypeDef](#analysisoptionstypedef)
-  - [AnalysisSchemeStatusTypeDef](#analysisschemestatustypedef)
-  - [AnalysisSchemeTypeDef](#analysisschemetypedef)
-  - [AvailabilityOptionsStatusTypeDef](#availabilityoptionsstatustypedef)
-  - [BuildSuggestersRequestRequestTypeDef](#buildsuggestersrequestrequesttypedef)
-  - [BuildSuggestersResponseTypeDef](#buildsuggestersresponsetypedef)
-  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
-  - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
-  - [DateArrayOptionsTypeDef](#datearrayoptionstypedef)
-  - [DateOptionsTypeDef](#dateoptionstypedef)
-  - [DefineAnalysisSchemeRequestRequestTypeDef](#defineanalysisschemerequestrequesttypedef)
-  - [DefineAnalysisSchemeResponseTypeDef](#defineanalysisschemeresponsetypedef)
-  - [DefineExpressionRequestRequestTypeDef](#defineexpressionrequestrequesttypedef)
-  - [DefineExpressionResponseTypeDef](#defineexpressionresponsetypedef)
-  - [DefineIndexFieldRequestRequestTypeDef](#defineindexfieldrequestrequesttypedef)
-  - [DefineIndexFieldResponseTypeDef](#defineindexfieldresponsetypedef)
-  - [DefineSuggesterRequestRequestTypeDef](#definesuggesterrequestrequesttypedef)
-  - [DefineSuggesterResponseTypeDef](#definesuggesterresponsetypedef)
-  - [DeleteAnalysisSchemeRequestRequestTypeDef](#deleteanalysisschemerequestrequesttypedef)
-  - [DeleteAnalysisSchemeResponseTypeDef](#deleteanalysisschemeresponsetypedef)
-  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
-  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
-  - [DeleteExpressionRequestRequestTypeDef](#deleteexpressionrequestrequesttypedef)
-  - [DeleteExpressionResponseTypeDef](#deleteexpressionresponsetypedef)
-  - [DeleteIndexFieldRequestRequestTypeDef](#deleteindexfieldrequestrequesttypedef)
-  - [DeleteIndexFieldResponseTypeDef](#deleteindexfieldresponsetypedef)
-  - [DeleteSuggesterRequestRequestTypeDef](#deletesuggesterrequestrequesttypedef)
-  - [DeleteSuggesterResponseTypeDef](#deletesuggesterresponsetypedef)
-  - [DescribeAnalysisSchemesRequestRequestTypeDef](#describeanalysisschemesrequestrequesttypedef)
-  - [DescribeAnalysisSchemesResponseTypeDef](#describeanalysisschemesresponsetypedef)
-  - [DescribeAvailabilityOptionsRequestRequestTypeDef](#describeavailabilityoptionsrequestrequesttypedef)
-  - [DescribeAvailabilityOptionsResponseTypeDef](#describeavailabilityoptionsresponsetypedef)
-  - [DescribeDomainEndpointOptionsRequestRequestTypeDef](#describedomainendpointoptionsrequestrequesttypedef)
-  - [DescribeDomainEndpointOptionsResponseTypeDef](#describedomainendpointoptionsresponsetypedef)
-  - [DescribeDomainsRequestRequestTypeDef](#describedomainsrequestrequesttypedef)
-  - [DescribeDomainsResponseTypeDef](#describedomainsresponsetypedef)
-  - [DescribeExpressionsRequestRequestTypeDef](#describeexpressionsrequestrequesttypedef)
-  - [DescribeExpressionsResponseTypeDef](#describeexpressionsresponsetypedef)
-  - [DescribeIndexFieldsRequestRequestTypeDef](#describeindexfieldsrequestrequesttypedef)
-  - [DescribeIndexFieldsResponseTypeDef](#describeindexfieldsresponsetypedef)
-  - [DescribeScalingParametersRequestRequestTypeDef](#describescalingparametersrequestrequesttypedef)
-  - [DescribeScalingParametersResponseTypeDef](#describescalingparametersresponsetypedef)
-  - [DescribeServiceAccessPoliciesRequestRequestTypeDef](#describeserviceaccesspoliciesrequestrequesttypedef)
-  - [DescribeServiceAccessPoliciesResponseTypeDef](#describeserviceaccesspoliciesresponsetypedef)
-  - [DescribeSuggestersRequestRequestTypeDef](#describesuggestersrequestrequesttypedef)
-  - [DescribeSuggestersResponseTypeDef](#describesuggestersresponsetypedef)
-  - [DocumentSuggesterOptionsTypeDef](#documentsuggesteroptionstypedef)
-  - [DomainEndpointOptionsStatusTypeDef](#domainendpointoptionsstatustypedef)
-  - [DomainEndpointOptionsTypeDef](#domainendpointoptionstypedef)
-  - [DomainStatusTypeDef](#domainstatustypedef)
-  - [DoubleArrayOptionsTypeDef](#doublearrayoptionstypedef)
-  - [DoubleOptionsTypeDef](#doubleoptionstypedef)
-  - [ExpressionStatusTypeDef](#expressionstatustypedef)
-  - [ExpressionTypeDef](#expressiontypedef)
-  - [IndexDocumentsRequestRequestTypeDef](#indexdocumentsrequestrequesttypedef)
-  - [IndexDocumentsResponseTypeDef](#indexdocumentsresponsetypedef)
-  - [IndexFieldStatusTypeDef](#indexfieldstatustypedef)
-  - [IndexFieldTypeDef](#indexfieldtypedef)
-  - [IntArrayOptionsTypeDef](#intarrayoptionstypedef)
-  - [IntOptionsTypeDef](#intoptionstypedef)
-  - [LatLonOptionsTypeDef](#latlonoptionstypedef)
-  - [LimitsTypeDef](#limitstypedef)
-  - [ListDomainNamesResponseTypeDef](#listdomainnamesresponsetypedef)
-  - [LiteralArrayOptionsTypeDef](#literalarrayoptionstypedef)
-  - [LiteralOptionsTypeDef](#literaloptionstypedef)
-  - [OptionStatusTypeDef](#optionstatustypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScalingParametersStatusTypeDef](#scalingparametersstatustypedef)
-  - [ScalingParametersTypeDef](#scalingparameterstypedef)
-  - [ServiceEndpointTypeDef](#serviceendpointtypedef)
-  - [SuggesterStatusTypeDef](#suggesterstatustypedef)
-  - [SuggesterTypeDef](#suggestertypedef)
-  - [TextArrayOptionsTypeDef](#textarrayoptionstypedef)
-  - [TextOptionsTypeDef](#textoptionstypedef)
-  - [UpdateAvailabilityOptionsRequestRequestTypeDef](#updateavailabilityoptionsrequestrequesttypedef)
-  - [UpdateAvailabilityOptionsResponseTypeDef](#updateavailabilityoptionsresponsetypedef)
-  - [UpdateDomainEndpointOptionsRequestRequestTypeDef](#updatedomainendpointoptionsrequestrequesttypedef)
-  - [UpdateDomainEndpointOptionsResponseTypeDef](#updatedomainendpointoptionsresponsetypedef)
-  - [UpdateScalingParametersRequestRequestTypeDef](#updatescalingparametersrequestrequesttypedef)
-  - [UpdateScalingParametersResponseTypeDef](#updatescalingparametersresponsetypedef)
-  - [UpdateServiceAccessPoliciesRequestRequestTypeDef](#updateserviceaccesspoliciesrequestrequesttypedef)
-  - [UpdateServiceAccessPoliciesResponseTypeDef](#updateserviceaccesspoliciesresponsetypedef)
-
-<a id="accesspoliciesstatustypedef"></a>
+    Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+    type annotations stubs module [mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 ## AccessPoliciesStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import AccessPoliciesStatusTypeDef
+
+def get_value() -> AccessPoliciesStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPoliciesStatusTypeDef(TypedDict):
+    Options: str,
+    Status: OptionStatusTypeDef,  # (1)
+```
 
-- `Options`: `str`
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="analysisoptionstypedef"></a>
-
+1. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## AnalysisOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import AnalysisOptionsTypeDef
+
+def get_value() -> AnalysisOptionsTypeDef:
+    return {
+        "Synonyms": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnalysisOptionsTypeDef(TypedDict):
+    Synonyms: NotRequired[str],
+    Stopwords: NotRequired[str],
+    StemmingDictionary: NotRequired[str],
+    JapaneseTokenizationDictionary: NotRequired[str],
+    AlgorithmicStemming: NotRequired[AlgorithmicStemmingType],  # (1)
+```
 
-- `Synonyms`: `str`
-- `Stopwords`: `str`
-- `StemmingDictionary`: `str`
-- `JapaneseTokenizationDictionary`: `str`
-- `AlgorithmicStemming`:
-  [AlgorithmicStemmingType](./literals.md#algorithmicstemmingtype)
-
-<a id="analysisschemestatustypedef"></a>
-
+1. See [:material-code-brackets: AlgorithmicStemmingType](./literals.md#algorithmicstemmingtype) 
 ## AnalysisSchemeStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import AnalysisSchemeStatusTypeDef
+
+def get_value() -> AnalysisSchemeStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalysisSchemeStatusTypeDef(TypedDict):
+    Options: AnalysisSchemeTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`: [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="analysisschemetypedef"></a>
-
+1. See [:material-code-braces: AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## AnalysisSchemeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import AnalysisSchemeTypeDef
+
+def get_value() -> AnalysisSchemeTypeDef:
+    return {
+        "AnalysisSchemeName": ...,
+        "AnalysisSchemeLanguage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalysisSchemeTypeDef(TypedDict):
+    AnalysisSchemeName: str,
+    AnalysisSchemeLanguage: AnalysisSchemeLanguageType,  # (1)
+    AnalysisOptions: NotRequired[AnalysisOptionsTypeDef],  # (2)
+```
 
-- `AnalysisSchemeName`: `str`
-- `AnalysisSchemeLanguage`:
-  [AnalysisSchemeLanguageType](./literals.md#analysisschemelanguagetype)
-
-Optional fields:
-
-- `AnalysisOptions`:
-  [AnalysisOptionsTypeDef](./type_defs.md#analysisoptionstypedef)
-
-<a id="availabilityoptionsstatustypedef"></a>
-
+1. See [:material-code-brackets: AnalysisSchemeLanguageType](./literals.md#analysisschemelanguagetype) 
+2. See [:material-code-braces: AnalysisOptionsTypeDef](./type_defs.md#analysisoptionstypedef) 
 ## AvailabilityOptionsStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import AvailabilityOptionsStatusTypeDef
+
+def get_value() -> AvailabilityOptionsStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AvailabilityOptionsStatusTypeDef(TypedDict):
+    Options: bool,
+    Status: OptionStatusTypeDef,  # (1)
+```
 
-- `Options`: `bool`
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="buildsuggestersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## BuildSuggestersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import BuildSuggestersRequestRequestTypeDef
+
+def get_value() -> BuildSuggestersRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="buildsuggestersresponsetypedef"></a>
+```python title="Definition"
+class BuildSuggestersRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## BuildSuggestersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import BuildSuggestersResponseTypeDef
+
+def get_value() -> BuildSuggestersResponseTypeDef:
+    return {
+        "FieldNames": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BuildSuggestersResponseTypeDef(TypedDict):
+    FieldNames: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FieldNames`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import CreateDomainRequestRequestTypeDef
+
+def get_value() -> CreateDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="createdomainresponsetypedef"></a>
+```python title="Definition"
+class CreateDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## CreateDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import CreateDomainResponseTypeDef
+
+def get_value() -> CreateDomainResponseTypeDef:
+    return {
+        "DomainStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDomainResponseTypeDef(TypedDict):
+    DomainStatus: DomainStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datearrayoptionstypedef"></a>
-
+1. See [:material-code-braces: DomainStatusTypeDef](./type_defs.md#domainstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DateArrayOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DateArrayOptionsTypeDef
+
+def get_value() -> DateArrayOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceFields`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-
-<a id="dateoptionstypedef"></a>
+```python title="Definition"
+class DateArrayOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceFields: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+```
 
 ## DateOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DateOptionsTypeDef
+
+def get_value() -> DateOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceField`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-
-<a id="defineanalysisschemerequestrequesttypedef"></a>
+```python title="Definition"
+class DateOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceField: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+```
 
 ## DefineAnalysisSchemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeRequestRequestTypeDef
+
+def get_value() -> DefineAnalysisSchemeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "AnalysisScheme": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineAnalysisSchemeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AnalysisScheme: AnalysisSchemeTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `AnalysisScheme`:
-  [AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef)
-
-<a id="defineanalysisschemeresponsetypedef"></a>
-
+1. See [:material-code-braces: AnalysisSchemeTypeDef](./type_defs.md#analysisschemetypedef) 
 ## DefineAnalysisSchemeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineAnalysisSchemeResponseTypeDef
+
+def get_value() -> DefineAnalysisSchemeResponseTypeDef:
+    return {
+        "AnalysisScheme": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineAnalysisSchemeResponseTypeDef(TypedDict):
+    AnalysisScheme: AnalysisSchemeStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnalysisScheme`:
-  [AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="defineexpressionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefineExpressionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineExpressionRequestRequestTypeDef
+
+def get_value() -> DefineExpressionRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Expression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineExpressionRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Expression: ExpressionTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `Expression`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-
-<a id="defineexpressionresponsetypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
 ## DefineExpressionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineExpressionResponseTypeDef
+
+def get_value() -> DefineExpressionResponseTypeDef:
+    return {
+        "Expression": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineExpressionResponseTypeDef(TypedDict):
+    Expression: ExpressionStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Expression`:
-  [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="defineindexfieldrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefineIndexFieldRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldRequestRequestTypeDef
+
+def get_value() -> DefineIndexFieldRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "IndexField": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineIndexFieldRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    IndexField: IndexFieldTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `IndexField`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
-
-<a id="defineindexfieldresponsetypedef"></a>
-
+1. See [:material-code-braces: IndexFieldTypeDef](./type_defs.md#indexfieldtypedef) 
 ## DefineIndexFieldResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineIndexFieldResponseTypeDef
+
+def get_value() -> DefineIndexFieldResponseTypeDef:
+    return {
+        "IndexField": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineIndexFieldResponseTypeDef(TypedDict):
+    IndexField: IndexFieldStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IndexField`:
-  [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="definesuggesterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DefineSuggesterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineSuggesterRequestRequestTypeDef
+
+def get_value() -> DefineSuggesterRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Suggester": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineSuggesterRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Suggester: SuggesterTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `Suggester`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
-
-<a id="definesuggesterresponsetypedef"></a>
-
+1. See [:material-code-braces: SuggesterTypeDef](./type_defs.md#suggestertypedef) 
 ## DefineSuggesterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DefineSuggesterResponseTypeDef
+
+def get_value() -> DefineSuggesterResponseTypeDef:
+    return {
+        "Suggester": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefineSuggesterResponseTypeDef(TypedDict):
+    Suggester: SuggesterStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Suggester`: [SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteanalysisschemerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAnalysisSchemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeRequestRequestTypeDef
+
+def get_value() -> DeleteAnalysisSchemeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "AnalysisSchemeName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `AnalysisSchemeName`: `str`
-
-<a id="deleteanalysisschemeresponsetypedef"></a>
+```python title="Definition"
+class DeleteAnalysisSchemeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AnalysisSchemeName: str,
+```
 
 ## DeleteAnalysisSchemeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteAnalysisSchemeResponseTypeDef
+
+def get_value() -> DeleteAnalysisSchemeResponseTypeDef:
+    return {
+        "AnalysisScheme": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAnalysisSchemeResponseTypeDef(TypedDict):
+    AnalysisScheme: AnalysisSchemeStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnalysisScheme`:
-  [AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="deletedomainresponsetypedef"></a>
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DeleteDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteDomainResponseTypeDef
+
+def get_value() -> DeleteDomainResponseTypeDef:
+    return {
+        "DomainStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDomainResponseTypeDef(TypedDict):
+    DomainStatus: DomainStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainStatus`: [DomainStatusTypeDef](./type_defs.md#domainstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteexpressionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainStatusTypeDef](./type_defs.md#domainstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteExpressionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteExpressionRequestRequestTypeDef
+
+def get_value() -> DeleteExpressionRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ExpressionName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `ExpressionName`: `str`
-
-<a id="deleteexpressionresponsetypedef"></a>
+```python title="Definition"
+class DeleteExpressionRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ExpressionName: str,
+```
 
 ## DeleteExpressionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteExpressionResponseTypeDef
+
+def get_value() -> DeleteExpressionResponseTypeDef:
+    return {
+        "Expression": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteExpressionResponseTypeDef(TypedDict):
+    Expression: ExpressionStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Expression`:
-  [ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteindexfieldrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteIndexFieldRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldRequestRequestTypeDef
+
+def get_value() -> DeleteIndexFieldRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "IndexFieldName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `IndexFieldName`: `str`
-
-<a id="deleteindexfieldresponsetypedef"></a>
+```python title="Definition"
+class DeleteIndexFieldRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    IndexFieldName: str,
+```
 
 ## DeleteIndexFieldResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteIndexFieldResponseTypeDef
+
+def get_value() -> DeleteIndexFieldResponseTypeDef:
+    return {
+        "IndexField": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteIndexFieldResponseTypeDef(TypedDict):
+    IndexField: IndexFieldStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IndexField`:
-  [IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesuggesterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSuggesterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterRequestRequestTypeDef
+
+def get_value() -> DeleteSuggesterRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "SuggesterName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `SuggesterName`: `str`
-
-<a id="deletesuggesterresponsetypedef"></a>
+```python title="Definition"
+class DeleteSuggesterRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    SuggesterName: str,
+```
 
 ## DeleteSuggesterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DeleteSuggesterResponseTypeDef
+
+def get_value() -> DeleteSuggesterResponseTypeDef:
+    return {
+        "Suggester": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSuggesterResponseTypeDef(TypedDict):
+    Suggester: SuggesterStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Suggester`: [SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeanalysisschemesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAnalysisSchemesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesRequestRequestTypeDef
+
+def get_value() -> DescribeAnalysisSchemesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AnalysisSchemeNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
-
-<a id="describeanalysisschemesresponsetypedef"></a>
+```python title="Definition"
+class DescribeAnalysisSchemesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AnalysisSchemeNames: NotRequired[Sequence[str]],
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeAnalysisSchemesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeAnalysisSchemesResponseTypeDef
+
+def get_value() -> DescribeAnalysisSchemesResponseTypeDef:
+    return {
+        "AnalysisSchemes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAnalysisSchemesResponseTypeDef(TypedDict):
+    AnalysisSchemes: List[AnalysisSchemeStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnalysisSchemes`:
-  `List`\[[AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeavailabilityoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalysisSchemeStatusTypeDef](./type_defs.md#analysisschemestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAvailabilityOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsRequestRequestTypeDef
+
+def get_value() -> DescribeAvailabilityOptionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `Deployed`: `bool`
-
-<a id="describeavailabilityoptionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeAvailabilityOptionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeAvailabilityOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeAvailabilityOptionsResponseTypeDef
+
+def get_value() -> DescribeAvailabilityOptionsResponseTypeDef:
+    return {
+        "AvailabilityOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAvailabilityOptionsResponseTypeDef(TypedDict):
+    AvailabilityOptions: AvailabilityOptionsStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AvailabilityOptions`:
-  [AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedomainendpointoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDomainEndpointOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsRequestRequestTypeDef
+
+def get_value() -> DescribeDomainEndpointOptionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `Deployed`: `bool`
-
-<a id="describedomainendpointoptionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeDomainEndpointOptionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeDomainEndpointOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeDomainEndpointOptionsResponseTypeDef
+
+def get_value() -> DescribeDomainEndpointOptionsResponseTypeDef:
+    return {
+        "DomainEndpointOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDomainEndpointOptionsResponseTypeDef(TypedDict):
+    DomainEndpointOptions: DomainEndpointOptionsStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedomainsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeDomainsRequestRequestTypeDef
+
+def get_value() -> DescribeDomainsRequestRequestTypeDef:
+    return {
+        "DomainNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `DomainNames`: `Sequence`\[`str`\]
-
-<a id="describedomainsresponsetypedef"></a>
+```python title="Definition"
+class DescribeDomainsRequestRequestTypeDef(TypedDict):
+    DomainNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeDomainsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeDomainsResponseTypeDef
+
+def get_value() -> DescribeDomainsResponseTypeDef:
+    return {
+        "DomainStatusList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDomainsResponseTypeDef(TypedDict):
+    DomainStatusList: List[DomainStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainStatusList`:
-  `List`\[[DomainStatusTypeDef](./type_defs.md#domainstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeexpressionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainStatusTypeDef](./type_defs.md#domainstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExpressionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsRequestRequestTypeDef
+
+def get_value() -> DescribeExpressionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `ExpressionNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
-
-<a id="describeexpressionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeExpressionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ExpressionNames: NotRequired[Sequence[str]],
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeExpressionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeExpressionsResponseTypeDef
+
+def get_value() -> DescribeExpressionsResponseTypeDef:
+    return {
+        "Expressions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExpressionsResponseTypeDef(TypedDict):
+    Expressions: List[ExpressionStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Expressions`:
-  `List`\[[ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeindexfieldsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExpressionStatusTypeDef](./type_defs.md#expressionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeIndexFieldsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsRequestRequestTypeDef
+
+def get_value() -> DescribeIndexFieldsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `FieldNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
-
-<a id="describeindexfieldsresponsetypedef"></a>
+```python title="Definition"
+class DescribeIndexFieldsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    FieldNames: NotRequired[Sequence[str]],
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeIndexFieldsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeIndexFieldsResponseTypeDef
+
+def get_value() -> DescribeIndexFieldsResponseTypeDef:
+    return {
+        "IndexFields": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeIndexFieldsResponseTypeDef(TypedDict):
+    IndexFields: List[IndexFieldStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IndexFields`:
-  `List`\[[IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describescalingparametersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IndexFieldStatusTypeDef](./type_defs.md#indexfieldstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeScalingParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersRequestRequestTypeDef
+
+def get_value() -> DescribeScalingParametersRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="describescalingparametersresponsetypedef"></a>
+```python title="Definition"
+class DescribeScalingParametersRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DescribeScalingParametersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeScalingParametersResponseTypeDef
+
+def get_value() -> DescribeScalingParametersResponseTypeDef:
+    return {
+        "ScalingParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeScalingParametersResponseTypeDef(TypedDict):
+    ScalingParameters: ScalingParametersStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScalingParameters`:
-  [ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeserviceaccesspoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceAccessPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesRequestRequestTypeDef
+
+def get_value() -> DescribeServiceAccessPoliciesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `Deployed`: `bool`
-
-<a id="describeserviceaccesspoliciesresponsetypedef"></a>
+```python title="Definition"
+class DescribeServiceAccessPoliciesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeServiceAccessPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeServiceAccessPoliciesResponseTypeDef
+
+def get_value() -> DescribeServiceAccessPoliciesResponseTypeDef:
+    return {
+        "AccessPolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServiceAccessPoliciesResponseTypeDef(TypedDict):
+    AccessPolicies: AccessPoliciesStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccessPolicies`:
-  [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesuggestersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSuggestersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersRequestRequestTypeDef
+
+def get_value() -> DescribeSuggestersRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `SuggesterNames`: `Sequence`\[`str`\]
-- `Deployed`: `bool`
-
-<a id="describesuggestersresponsetypedef"></a>
+```python title="Definition"
+class DescribeSuggestersRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    SuggesterNames: NotRequired[Sequence[str]],
+    Deployed: NotRequired[bool],
+```
 
 ## DescribeSuggestersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DescribeSuggestersResponseTypeDef
+
+def get_value() -> DescribeSuggestersResponseTypeDef:
+    return {
+        "Suggesters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSuggestersResponseTypeDef(TypedDict):
+    Suggesters: List[SuggesterStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Suggesters`:
-  `List`\[[SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="documentsuggesteroptionstypedef"></a>
-
+1. See [:material-code-braces: SuggesterStatusTypeDef](./type_defs.md#suggesterstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DocumentSuggesterOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DocumentSuggesterOptionsTypeDef
+
+def get_value() -> DocumentSuggesterOptionsTypeDef:
+    return {
+        "SourceField": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DocumentSuggesterOptionsTypeDef(TypedDict):
+    SourceField: str,
+    FuzzyMatching: NotRequired[SuggesterFuzzyMatchingType],  # (1)
+    SortExpression: NotRequired[str],
+```
 
-- `SourceField`: `str`
-
-Optional fields:
-
-- `FuzzyMatching`:
-  [SuggesterFuzzyMatchingType](./literals.md#suggesterfuzzymatchingtype)
-- `SortExpression`: `str`
-
-<a id="domainendpointoptionsstatustypedef"></a>
-
+1. See [:material-code-brackets: SuggesterFuzzyMatchingType](./literals.md#suggesterfuzzymatchingtype) 
 ## DomainEndpointOptionsStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DomainEndpointOptionsStatusTypeDef
+
+def get_value() -> DomainEndpointOptionsStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DomainEndpointOptionsStatusTypeDef(TypedDict):
+    Options: DomainEndpointOptionsTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="domainendpointoptionstypedef"></a>
-
+1. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## DomainEndpointOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DomainEndpointOptionsTypeDef
+
+def get_value() -> DomainEndpointOptionsTypeDef:
+    return {
+        "EnforceHTTPS": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainEndpointOptionsTypeDef(TypedDict):
+    EnforceHTTPS: NotRequired[bool],
+    TLSSecurityPolicy: NotRequired[TLSSecurityPolicyType],  # (1)
+```
 
-- `EnforceHTTPS`: `bool`
-- `TLSSecurityPolicy`:
-  [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
-
-<a id="domainstatustypedef"></a>
-
+1. See [:material-code-brackets: TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype) 
 ## DomainStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DomainStatusTypeDef
+
+def get_value() -> DomainStatusTypeDef:
+    return {
+        "DomainId": ...,
+        "DomainName": ...,
+        "RequiresIndexDocuments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DomainStatusTypeDef(TypedDict):
+    DomainId: str,
+    DomainName: str,
+    RequiresIndexDocuments: bool,
+    ARN: NotRequired[str],
+    Created: NotRequired[bool],
+    Deleted: NotRequired[bool],
+    DocService: NotRequired[ServiceEndpointTypeDef],  # (1)
+    SearchService: NotRequired[ServiceEndpointTypeDef],  # (1)
+    Processing: NotRequired[bool],
+    SearchInstanceType: NotRequired[str],
+    SearchPartitionCount: NotRequired[int],
+    SearchInstanceCount: NotRequired[int],
+    Limits: NotRequired[LimitsTypeDef],  # (3)
+```
 
-- `DomainId`: `str`
-- `DomainName`: `str`
-- `RequiresIndexDocuments`: `bool`
-
-Optional fields:
-
-- `ARN`: `str`
-- `Created`: `bool`
-- `Deleted`: `bool`
-- `DocService`: [ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef)
-- `SearchService`:
-  [ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef)
-- `Processing`: `bool`
-- `SearchInstanceType`: `str`
-- `SearchPartitionCount`: `int`
-- `SearchInstanceCount`: `int`
-- `Limits`: [LimitsTypeDef](./type_defs.md#limitstypedef)
-
-<a id="doublearrayoptionstypedef"></a>
-
+1. See [:material-code-braces: ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef) 
+2. See [:material-code-braces: ServiceEndpointTypeDef](./type_defs.md#serviceendpointtypedef) 
+3. See [:material-code-braces: LimitsTypeDef](./type_defs.md#limitstypedef) 
 ## DoubleArrayOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DoubleArrayOptionsTypeDef
+
+def get_value() -> DoubleArrayOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `float`
-- `SourceFields`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-
-<a id="doubleoptionstypedef"></a>
+```python title="Definition"
+class DoubleArrayOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[float],
+    SourceFields: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+```
 
 ## DoubleOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import DoubleOptionsTypeDef
+
+def get_value() -> DoubleOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `float`
-- `SourceField`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-
-<a id="expressionstatustypedef"></a>
+```python title="Definition"
+class DoubleOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[float],
+    SourceField: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+```
 
 ## ExpressionStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ExpressionStatusTypeDef
+
+def get_value() -> ExpressionStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExpressionStatusTypeDef(TypedDict):
+    Options: ExpressionTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="expressiontypedef"></a>
-
+1. See [:material-code-braces: ExpressionTypeDef](./type_defs.md#expressiontypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## ExpressionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ExpressionTypeDef
+
+def get_value() -> ExpressionTypeDef:
+    return {
+        "ExpressionName": ...,
+        "ExpressionValue": ...,
+    }
 ```
 
-Required fields:
-
-- `ExpressionName`: `str`
-- `ExpressionValue`: `str`
-
-<a id="indexdocumentsrequestrequesttypedef"></a>
+```python title="Definition"
+class ExpressionTypeDef(TypedDict):
+    ExpressionName: str,
+    ExpressionValue: str,
+```
 
 ## IndexDocumentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IndexDocumentsRequestRequestTypeDef
+
+def get_value() -> IndexDocumentsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="indexdocumentsresponsetypedef"></a>
+```python title="Definition"
+class IndexDocumentsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## IndexDocumentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IndexDocumentsResponseTypeDef
+
+def get_value() -> IndexDocumentsResponseTypeDef:
+    return {
+        "FieldNames": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexDocumentsResponseTypeDef(TypedDict):
+    FieldNames: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FieldNames`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="indexfieldstatustypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IndexFieldStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IndexFieldStatusTypeDef
+
+def get_value() -> IndexFieldStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexFieldStatusTypeDef(TypedDict):
+    Options: IndexFieldTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`: [IndexFieldTypeDef](./type_defs.md#indexfieldtypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="indexfieldtypedef"></a>
-
+1. See [:material-code-braces: IndexFieldTypeDef](./type_defs.md#indexfieldtypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## IndexFieldTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IndexFieldTypeDef
+
+def get_value() -> IndexFieldTypeDef:
+    return {
+        "IndexFieldName": ...,
+        "IndexFieldType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IndexFieldTypeDef(TypedDict):
+    IndexFieldName: str,
+    IndexFieldType: IndexFieldTypeType,  # (1)
+    IntOptions: NotRequired[IntOptionsTypeDef],  # (2)
+    DoubleOptions: NotRequired[DoubleOptionsTypeDef],  # (3)
+    LiteralOptions: NotRequired[LiteralOptionsTypeDef],  # (4)
+    TextOptions: NotRequired[TextOptionsTypeDef],  # (5)
+    DateOptions: NotRequired[DateOptionsTypeDef],  # (6)
+    LatLonOptions: NotRequired[LatLonOptionsTypeDef],  # (7)
+    IntArrayOptions: NotRequired[IntArrayOptionsTypeDef],  # (8)
+    DoubleArrayOptions: NotRequired[DoubleArrayOptionsTypeDef],  # (9)
+    LiteralArrayOptions: NotRequired[LiteralArrayOptionsTypeDef],  # (10)
+    TextArrayOptions: NotRequired[TextArrayOptionsTypeDef],  # (11)
+    DateArrayOptions: NotRequired[DateArrayOptionsTypeDef],  # (12)
+```
 
-- `IndexFieldName`: `str`
-- `IndexFieldType`: [IndexFieldTypeType](./literals.md#indexfieldtypetype)
-
-Optional fields:
-
-- `IntOptions`: [IntOptionsTypeDef](./type_defs.md#intoptionstypedef)
-- `DoubleOptions`: [DoubleOptionsTypeDef](./type_defs.md#doubleoptionstypedef)
-- `LiteralOptions`:
-  [LiteralOptionsTypeDef](./type_defs.md#literaloptionstypedef)
-- `TextOptions`: [TextOptionsTypeDef](./type_defs.md#textoptionstypedef)
-- `DateOptions`: [DateOptionsTypeDef](./type_defs.md#dateoptionstypedef)
-- `LatLonOptions`: [LatLonOptionsTypeDef](./type_defs.md#latlonoptionstypedef)
-- `IntArrayOptions`:
-  [IntArrayOptionsTypeDef](./type_defs.md#intarrayoptionstypedef)
-- `DoubleArrayOptions`:
-  [DoubleArrayOptionsTypeDef](./type_defs.md#doublearrayoptionstypedef)
-- `LiteralArrayOptions`:
-  [LiteralArrayOptionsTypeDef](./type_defs.md#literalarrayoptionstypedef)
-- `TextArrayOptions`:
-  [TextArrayOptionsTypeDef](./type_defs.md#textarrayoptionstypedef)
-- `DateArrayOptions`:
-  [DateArrayOptionsTypeDef](./type_defs.md#datearrayoptionstypedef)
-
-<a id="intarrayoptionstypedef"></a>
-
+1. See [:material-code-brackets: IndexFieldTypeType](./literals.md#indexfieldtypetype) 
+2. See [:material-code-braces: IntOptionsTypeDef](./type_defs.md#intoptionstypedef) 
+3. See [:material-code-braces: DoubleOptionsTypeDef](./type_defs.md#doubleoptionstypedef) 
+4. See [:material-code-braces: LiteralOptionsTypeDef](./type_defs.md#literaloptionstypedef) 
+5. See [:material-code-braces: TextOptionsTypeDef](./type_defs.md#textoptionstypedef) 
+6. See [:material-code-braces: DateOptionsTypeDef](./type_defs.md#dateoptionstypedef) 
+7. See [:material-code-braces: LatLonOptionsTypeDef](./type_defs.md#latlonoptionstypedef) 
+8. See [:material-code-braces: IntArrayOptionsTypeDef](./type_defs.md#intarrayoptionstypedef) 
+9. See [:material-code-braces: DoubleArrayOptionsTypeDef](./type_defs.md#doublearrayoptionstypedef) 
+10. See [:material-code-braces: LiteralArrayOptionsTypeDef](./type_defs.md#literalarrayoptionstypedef) 
+11. See [:material-code-braces: TextArrayOptionsTypeDef](./type_defs.md#textarrayoptionstypedef) 
+12. See [:material-code-braces: DateArrayOptionsTypeDef](./type_defs.md#datearrayoptionstypedef) 
 ## IntArrayOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IntArrayOptionsTypeDef
+
+def get_value() -> IntArrayOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `int`
-- `SourceFields`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-
-<a id="intoptionstypedef"></a>
+```python title="Definition"
+class IntArrayOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[int],
+    SourceFields: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+```
 
 ## IntOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import IntOptionsTypeDef
+
+def get_value() -> IntOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `int`
-- `SourceField`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-
-<a id="latlonoptionstypedef"></a>
+```python title="Definition"
+class IntOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[int],
+    SourceField: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+```
 
 ## LatLonOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import LatLonOptionsTypeDef
+
+def get_value() -> LatLonOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceField`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-
-<a id="limitstypedef"></a>
+```python title="Definition"
+class LatLonOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceField: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+```
 
 ## LimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import LimitsTypeDef
+
+def get_value() -> LimitsTypeDef:
+    return {
+        "MaximumReplicationCount": ...,
+        "MaximumPartitionCount": ...,
+    }
 ```
 
-Required fields:
-
-- `MaximumReplicationCount`: `int`
-- `MaximumPartitionCount`: `int`
-
-<a id="listdomainnamesresponsetypedef"></a>
+```python title="Definition"
+class LimitsTypeDef(TypedDict):
+    MaximumReplicationCount: int,
+    MaximumPartitionCount: int,
+```
 
 ## ListDomainNamesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ListDomainNamesResponseTypeDef
+
+def get_value() -> ListDomainNamesResponseTypeDef:
+    return {
+        "DomainNames": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainNamesResponseTypeDef(TypedDict):
+    DomainNames: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DomainNames`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="literalarrayoptionstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LiteralArrayOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import LiteralArrayOptionsTypeDef
+
+def get_value() -> LiteralArrayOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceFields`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-
-<a id="literaloptionstypedef"></a>
+```python title="Definition"
+class LiteralArrayOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceFields: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+```
 
 ## LiteralOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import LiteralOptionsTypeDef
+
+def get_value() -> LiteralOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceField`: `str`
-- `FacetEnabled`: `bool`
-- `SearchEnabled`: `bool`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-
-<a id="optionstatustypedef"></a>
+```python title="Definition"
+class LiteralOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceField: NotRequired[str],
+    FacetEnabled: NotRequired[bool],
+    SearchEnabled: NotRequired[bool],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+```
 
 ## OptionStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import OptionStatusTypeDef
+
+def get_value() -> OptionStatusTypeDef:
+    return {
+        "CreationDate": ...,
+        "UpdateDate": ...,
+        "State": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OptionStatusTypeDef(TypedDict):
+    CreationDate: datetime,
+    UpdateDate: datetime,
+    State: OptionStateType,  # (1)
+    UpdateVersion: NotRequired[int],
+    PendingDeletion: NotRequired[bool],
+```
 
-- `CreationDate`: `datetime`
-- `UpdateDate`: `datetime`
-- `State`: [OptionStateType](./literals.md#optionstatetype)
-
-Optional fields:
-
-- `UpdateVersion`: `int`
-- `PendingDeletion`: `bool`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: OptionStateType](./literals.md#optionstatetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scalingparametersstatustypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ScalingParametersStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ScalingParametersStatusTypeDef
+
+def get_value() -> ScalingParametersStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScalingParametersStatusTypeDef(TypedDict):
+    Options: ScalingParametersTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`:
-  [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="scalingparameterstypedef"></a>
-
+1. See [:material-code-braces: ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## ScalingParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ScalingParametersTypeDef
+
+def get_value() -> ScalingParametersTypeDef:
+    return {
+        "DesiredInstanceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScalingParametersTypeDef(TypedDict):
+    DesiredInstanceType: NotRequired[PartitionInstanceTypeType],  # (1)
+    DesiredReplicationCount: NotRequired[int],
+    DesiredPartitionCount: NotRequired[int],
+```
 
-- `DesiredInstanceType`:
-  [PartitionInstanceTypeType](./literals.md#partitioninstancetypetype)
-- `DesiredReplicationCount`: `int`
-- `DesiredPartitionCount`: `int`
-
-<a id="serviceendpointtypedef"></a>
-
+1. See [:material-code-brackets: PartitionInstanceTypeType](./literals.md#partitioninstancetypetype) 
 ## ServiceEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import ServiceEndpointTypeDef
+
+def get_value() -> ServiceEndpointTypeDef:
+    return {
+        "Endpoint": ...,
+    }
 ```
 
-Optional fields:
-
-- `Endpoint`: `str`
-
-<a id="suggesterstatustypedef"></a>
+```python title="Definition"
+class ServiceEndpointTypeDef(TypedDict):
+    Endpoint: NotRequired[str],
+```
 
 ## SuggesterStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import SuggesterStatusTypeDef
+
+def get_value() -> SuggesterStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SuggesterStatusTypeDef(TypedDict):
+    Options: SuggesterTypeDef,  # (1)
+    Status: OptionStatusTypeDef,  # (2)
+```
 
-- `Options`: [SuggesterTypeDef](./type_defs.md#suggestertypedef)
-- `Status`: [OptionStatusTypeDef](./type_defs.md#optionstatustypedef)
-
-<a id="suggestertypedef"></a>
-
+1. See [:material-code-braces: SuggesterTypeDef](./type_defs.md#suggestertypedef) 
+2. See [:material-code-braces: OptionStatusTypeDef](./type_defs.md#optionstatustypedef) 
 ## SuggesterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import SuggesterTypeDef
+
+def get_value() -> SuggesterTypeDef:
+    return {
+        "SuggesterName": ...,
+        "DocumentSuggesterOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SuggesterTypeDef(TypedDict):
+    SuggesterName: str,
+    DocumentSuggesterOptions: DocumentSuggesterOptionsTypeDef,  # (1)
+```
 
-- `SuggesterName`: `str`
-- `DocumentSuggesterOptions`:
-  [DocumentSuggesterOptionsTypeDef](./type_defs.md#documentsuggesteroptionstypedef)
-
-<a id="textarrayoptionstypedef"></a>
-
+1. See [:material-code-braces: DocumentSuggesterOptionsTypeDef](./type_defs.md#documentsuggesteroptionstypedef) 
 ## TextArrayOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import TextArrayOptionsTypeDef
+
+def get_value() -> TextArrayOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceFields`: `str`
-- `ReturnEnabled`: `bool`
-- `HighlightEnabled`: `bool`
-- `AnalysisScheme`: `str`
-
-<a id="textoptionstypedef"></a>
+```python title="Definition"
+class TextArrayOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceFields: NotRequired[str],
+    ReturnEnabled: NotRequired[bool],
+    HighlightEnabled: NotRequired[bool],
+    AnalysisScheme: NotRequired[str],
+```
 
 ## TextOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import TextOptionsTypeDef
+
+def get_value() -> TextOptionsTypeDef:
+    return {
+        "DefaultValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DefaultValue`: `str`
-- `SourceField`: `str`
-- `ReturnEnabled`: `bool`
-- `SortEnabled`: `bool`
-- `HighlightEnabled`: `bool`
-- `AnalysisScheme`: `str`
-
-<a id="updateavailabilityoptionsrequestrequesttypedef"></a>
+```python title="Definition"
+class TextOptionsTypeDef(TypedDict):
+    DefaultValue: NotRequired[str],
+    SourceField: NotRequired[str],
+    ReturnEnabled: NotRequired[bool],
+    SortEnabled: NotRequired[bool],
+    HighlightEnabled: NotRequired[bool],
+    AnalysisScheme: NotRequired[str],
+```
 
 ## UpdateAvailabilityOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsRequestRequestTypeDef
+
+def get_value() -> UpdateAvailabilityOptionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "MultiAZ": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `MultiAZ`: `bool`
-
-<a id="updateavailabilityoptionsresponsetypedef"></a>
+```python title="Definition"
+class UpdateAvailabilityOptionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    MultiAZ: bool,
+```
 
 ## UpdateAvailabilityOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateAvailabilityOptionsResponseTypeDef
+
+def get_value() -> UpdateAvailabilityOptionsResponseTypeDef:
+    return {
+        "AvailabilityOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAvailabilityOptionsResponseTypeDef(TypedDict):
+    AvailabilityOptions: AvailabilityOptionsStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AvailabilityOptions`:
-  [AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedomainendpointoptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AvailabilityOptionsStatusTypeDef](./type_defs.md#availabilityoptionsstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDomainEndpointOptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsRequestRequestTypeDef
+
+def get_value() -> UpdateDomainEndpointOptionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "DomainEndpointOptions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainEndpointOptionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-
-<a id="updatedomainendpointoptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
 ## UpdateDomainEndpointOptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateDomainEndpointOptionsResponseTypeDef
+
+def get_value() -> UpdateDomainEndpointOptionsResponseTypeDef:
+    return {
+        "DomainEndpointOptions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainEndpointOptionsResponseTypeDef(TypedDict):
+    DomainEndpointOptions: DomainEndpointOptionsStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatescalingparametersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainEndpointOptionsStatusTypeDef](./type_defs.md#domainendpointoptionsstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateScalingParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersRequestRequestTypeDef
+
+def get_value() -> UpdateScalingParametersRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ScalingParameters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateScalingParametersRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ScalingParameters: ScalingParametersTypeDef,  # (1)
+```
 
-- `DomainName`: `str`
-- `ScalingParameters`:
-  [ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef)
-
-<a id="updatescalingparametersresponsetypedef"></a>
-
+1. See [:material-code-braces: ScalingParametersTypeDef](./type_defs.md#scalingparameterstypedef) 
 ## UpdateScalingParametersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateScalingParametersResponseTypeDef
+
+def get_value() -> UpdateScalingParametersResponseTypeDef:
+    return {
+        "ScalingParameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateScalingParametersResponseTypeDef(TypedDict):
+    ScalingParameters: ScalingParametersStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ScalingParameters`:
-  [ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateserviceaccesspoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScalingParametersStatusTypeDef](./type_defs.md#scalingparametersstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceAccessPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesRequestRequestTypeDef
+
+def get_value() -> UpdateServiceAccessPoliciesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "AccessPolicies": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `AccessPolicies`: `str`
-
-<a id="updateserviceaccesspoliciesresponsetypedef"></a>
+```python title="Definition"
+class UpdateServiceAccessPoliciesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AccessPolicies: str,
+```
 
 ## UpdateServiceAccessPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloudsearch.type_defs import UpdateServiceAccessPoliciesResponseTypeDef
+
+def get_value() -> UpdateServiceAccessPoliciesResponseTypeDef:
+    return {
+        "AccessPolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceAccessPoliciesResponseTypeDef(TypedDict):
+    AccessPolicies: AccessPoliciesStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccessPolicies`:
-  [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

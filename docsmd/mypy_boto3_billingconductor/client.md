@@ -1,63 +1,18 @@
-<a id="billingconductorclient-for-boto3-billingconductor-module"></a>
+# BillingConductorClient
 
-# BillingConductorClient for boto3 BillingConductor module
+> [Index](../README.md) > [BillingConductor](./README.md) > BillingConductorClient
 
-> [Index](../README.md) > [BillingConductor](./README.md) >
-> BillingConductorClient
+!!! note ""
 
-Auto-generated documentation for
-[BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
-type annotations stubs module
-[mypy-boto3-billingconductor](https://pypi.org/project/mypy-boto3-billingconductor/).
-
-- [BillingConductorClient for boto3 BillingConductor module](#billingconductorclient-for-boto3-billingconductor-module)
-  - [BillingConductorClient](#billingconductorclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_accounts](#associate_accounts)
-    - [associate_pricing_rules](#associate_pricing_rules)
-    - [batch_associate_resources_to_custom_line_item](#batch_associate_resources_to_custom_line_item)
-    - [batch_disassociate_resources_from_custom_line_item](#batch_disassociate_resources_from_custom_line_item)
-    - [can_paginate](#can_paginate)
-    - [create_billing_group](#create_billing_group)
-    - [create_custom_line_item](#create_custom_line_item)
-    - [create_pricing_plan](#create_pricing_plan)
-    - [create_pricing_rule](#create_pricing_rule)
-    - [delete_billing_group](#delete_billing_group)
-    - [delete_custom_line_item](#delete_custom_line_item)
-    - [delete_pricing_plan](#delete_pricing_plan)
-    - [delete_pricing_rule](#delete_pricing_rule)
-    - [disassociate_accounts](#disassociate_accounts)
-    - [disassociate_pricing_rules](#disassociate_pricing_rules)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_account_associations](#list_account_associations)
-    - [list_billing_group_cost_reports](#list_billing_group_cost_reports)
-    - [list_billing_groups](#list_billing_groups)
-    - [list_custom_line_items](#list_custom_line_items)
-    - [list_pricing_plans](#list_pricing_plans)
-    - [list_pricing_plans_associated_with_pricing_rule](#list_pricing_plans_associated_with_pricing_rule)
-    - [list_pricing_rules](#list_pricing_rules)
-    - [list_pricing_rules_associated_to_pricing_plan](#list_pricing_rules_associated_to_pricing_plan)
-    - [list_resources_associated_to_custom_line_item](#list_resources_associated_to_custom_line_item)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_billing_group](#update_billing_group)
-    - [update_custom_line_item](#update_custom_line_item)
-    - [update_pricing_plan](#update_pricing_plan)
-    - [update_pricing_rule](#update_pricing_rule)
-    - [get_paginator](#get_paginator)
-
-<a id="billingconductorclient"></a>
+    Auto-generated documentation for [BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
+    type annotations stubs module [mypy-boto3-billingconductor](https://pypi.org/project/mypy-boto3-billingconductor/).
 
 ## BillingConductorClient
 
-Type annotations for `boto3.client("billingconductor")`
+Type annotations and code completion for `#!python boto3.client("billingconductor")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_billingconductor.client import BillingConductorClient
 
@@ -65,881 +20,1084 @@ def get_billingconductor_client() -> BillingConductorClient:
     return Session().client("billingconductor")
 ```
 
-Boto3 documentation:
-[BillingConductor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("billingconductor").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("billingconductor")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceLimitExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_billingconductor.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceLimitExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-BillingConductorClient exceptions.
-
-Type annotations for `boto3.client("billingconductor").exceptions` method.
-
-Boto3 documentation:
-[BillingConductor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_accounts"></a>
-
-### associate_accounts
+### associate\_accounts
 
 Connects an array of account IDs in a consolidated billing family to a
 predefined billing group.
 
-Type annotations for `boto3.client("billingconductor").associate_accounts`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").associate_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.associate_accounts)
 
-Boto3 documentation:
-[BillingConductor.Client.associate_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.associate_accounts)
+```python title="Method definition"
+def associate_accounts(
+    self,
+    *,
+    Arn: str,
+    AccountIds: Sequence[str],
+) -> AssociateAccountsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateAccountsInputRequestTypeDef](./type_defs.md#associateaccountsinputrequesttypedef).
+1. See [:material-code-braces: AssociateAccountsOutputTypeDef](./type_defs.md#associateaccountsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateAccountsInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[AssociateAccountsOutputTypeDef](./type_defs.md#associateaccountsoutputtypedef).
+parent.associate_accounts(**kwargs)
+```
 
-<a id="associate\_pricing\_rules"></a>
+1. See [:material-code-braces: AssociateAccountsInputRequestTypeDef](./type_defs.md#associateaccountsinputrequesttypedef) 
 
-### associate_pricing_rules
+### associate\_pricing\_rules
 
 Connects an array of `PricingRuleArns` to a defined `PricingPlan`.
 
-Type annotations for `boto3.client("billingconductor").associate_pricing_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").associate_pricing_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.associate_pricing_rules)
 
-Boto3 documentation:
-[BillingConductor.Client.associate_pricing_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.associate_pricing_rules)
+```python title="Method definition"
+def associate_pricing_rules(
+    self,
+    *,
+    Arn: str,
+    PricingRuleArns: Sequence[str],
+) -> AssociatePricingRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePricingRulesInputRequestTypeDef](./type_defs.md#associatepricingrulesinputrequesttypedef).
+1. See [:material-code-braces: AssociatePricingRulesOutputTypeDef](./type_defs.md#associatepricingrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `PricingRuleArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociatePricingRulesInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "PricingRuleArns": ...,
+}
 
-Returns
-[AssociatePricingRulesOutputTypeDef](./type_defs.md#associatepricingrulesoutputtypedef).
+parent.associate_pricing_rules(**kwargs)
+```
 
-<a id="batch\_associate\_resources\_to\_custom\_line\_item"></a>
+1. See [:material-code-braces: AssociatePricingRulesInputRequestTypeDef](./type_defs.md#associatepricingrulesinputrequesttypedef) 
 
-### batch_associate_resources_to_custom_line_item
+### batch\_associate\_resources\_to\_custom\_line\_item
 
 Associates a batch of resources to a percentage custom line item.
 
-Type annotations for
-`boto3.client("billingconductor").batch_associate_resources_to_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").batch_associate_resources_to_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.batch_associate_resources_to_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.batch_associate_resources_to_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.batch_associate_resources_to_custom_line_item)
+```python title="Method definition"
+def batch_associate_resources_to_custom_line_item(
+    self,
+    *,
+    TargetArn: str,
+    ResourceArns: Sequence[str],
+    BillingPeriodRange: CustomLineItemBillingPeriodRangeTypeDef = ...,  # (1)
+) -> BatchAssociateResourcesToCustomLineItemOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchAssociateResourcesToCustomLineItemInputRequestTypeDef](./type_defs.md#batchassociateresourcestocustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+2. See [:material-code-braces: BatchAssociateResourcesToCustomLineItemOutputTypeDef](./type_defs.md#batchassociateresourcestocustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetArn`: `str` *(required)*
-- `ResourceArns`: `Sequence`\[`str`\] *(required)*
-- `BillingPeriodRange`:
-  [CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchAssociateResourcesToCustomLineItemInputRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+    "ResourceArns": ...,
+}
 
-Returns
-[BatchAssociateResourcesToCustomLineItemOutputTypeDef](./type_defs.md#batchassociateresourcestocustomlineitemoutputtypedef).
+parent.batch_associate_resources_to_custom_line_item(**kwargs)
+```
 
-<a id="batch\_disassociate\_resources\_from\_custom\_line\_item"></a>
+1. See [:material-code-braces: BatchAssociateResourcesToCustomLineItemInputRequestTypeDef](./type_defs.md#batchassociateresourcestocustomlineiteminputrequesttypedef) 
 
-### batch_disassociate_resources_from_custom_line_item
+### batch\_disassociate\_resources\_from\_custom\_line\_item
 
 Disassociates a batch of resources from a percentage custom line item.
 
-Type annotations for
-`boto3.client("billingconductor").batch_disassociate_resources_from_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").batch_disassociate_resources_from_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.batch_disassociate_resources_from_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.batch_disassociate_resources_from_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.batch_disassociate_resources_from_custom_line_item)
+```python title="Method definition"
+def batch_disassociate_resources_from_custom_line_item(
+    self,
+    *,
+    TargetArn: str,
+    ResourceArns: Sequence[str],
+    BillingPeriodRange: CustomLineItemBillingPeriodRangeTypeDef = ...,  # (1)
+) -> BatchDisassociateResourcesFromCustomLineItemOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDisassociateResourcesFromCustomLineItemInputRequestTypeDef](./type_defs.md#batchdisassociateresourcesfromcustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+2. See [:material-code-braces: BatchDisassociateResourcesFromCustomLineItemOutputTypeDef](./type_defs.md#batchdisassociateresourcesfromcustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetArn`: `str` *(required)*
-- `ResourceArns`: `Sequence`\[`str`\] *(required)*
-- `BillingPeriodRange`:
-  [CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchDisassociateResourcesFromCustomLineItemInputRequestTypeDef = {  # (1)
+    "TargetArn": ...,
+    "ResourceArns": ...,
+}
 
-Returns
-[BatchDisassociateResourcesFromCustomLineItemOutputTypeDef](./type_defs.md#batchdisassociateresourcesfromcustomlineitemoutputtypedef).
+parent.batch_disassociate_resources_from_custom_line_item(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchDisassociateResourcesFromCustomLineItemInputRequestTypeDef](./type_defs.md#batchdisassociateresourcesfromcustomlineiteminputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("billingconductor").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.can_paginate)
 
-Boto3 documentation:
-[BillingConductor.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_billing\_group
 
-Returns `bool`.
+Creates a billing group that resembles a consolidated billing family that Amazon
+Web Services charges, based off of the predefined pricing plan computation.
 
-<a id="create\_billing\_group"></a>
+Type annotations and code completion for `#!python boto3.client("billingconductor").create_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_billing_group)
 
-### create_billing_group
+```python title="Method definition"
+def create_billing_group(
+    self,
+    *,
+    Name: str,
+    AccountGrouping: AccountGroupingTypeDef,  # (1)
+    ComputationPreference: ComputationPreferenceTypeDef,  # (2)
+    ClientToken: str = ...,
+    PrimaryAccountId: str = ...,
+    Description: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateBillingGroupOutputTypeDef:  # (3)
+    ...
+```
 
-Creates a billing group that resembles a consolidated billing family that
-Amazon Web Services charges, based off of the predefined pricing plan
-computation.
+1. See [:material-code-braces: AccountGroupingTypeDef](./type_defs.md#accountgroupingtypedef) 
+2. See [:material-code-braces: ComputationPreferenceTypeDef](./type_defs.md#computationpreferencetypedef) 
+3. See [:material-code-braces: CreateBillingGroupOutputTypeDef](./type_defs.md#createbillinggroupoutputtypedef) 
 
-Type annotations for `boto3.client("billingconductor").create_billing_group`
-method.
 
-Boto3 documentation:
-[BillingConductor.Client.create_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_billing_group)
+```python title="Usage example with kwargs"
+kwargs: CreateBillingGroupInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "AccountGrouping": ...,
+    "ComputationPreference": ...,
+}
 
-Arguments mapping described in
-[CreateBillingGroupInputRequestTypeDef](./type_defs.md#createbillinggroupinputrequesttypedef).
+parent.create_billing_group(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateBillingGroupInputRequestTypeDef](./type_defs.md#createbillinggroupinputrequesttypedef) 
 
-- `Name`: `str` *(required)*
-- `AccountGrouping`:
-  [AccountGroupingTypeDef](./type_defs.md#accountgroupingtypedef) *(required)*
-- `ComputationPreference`:
-  [ComputationPreferenceTypeDef](./type_defs.md#computationpreferencetypedef)
-  *(required)*
-- `ClientToken`: `str`
-- `PrimaryAccountId`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-Returns
-[CreateBillingGroupOutputTypeDef](./type_defs.md#createbillinggroupoutputtypedef).
-
-<a id="create\_custom\_line\_item"></a>
-
-### create_custom_line_item
+### create\_custom\_line\_item
 
 Creates a custom line item that can be used to create a one-time fixed charge
 that can be applied to a single billing group for the current or previous
 billing period.
 
-Type annotations for `boto3.client("billingconductor").create_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").create_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.create_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_custom_line_item)
+```python title="Method definition"
+def create_custom_line_item(
+    self,
+    *,
+    Name: str,
+    Description: str,
+    BillingGroupArn: str,
+    ChargeDetails: CustomLineItemChargeDetailsTypeDef,  # (1)
+    ClientToken: str = ...,
+    BillingPeriodRange: CustomLineItemBillingPeriodRangeTypeDef = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateCustomLineItemOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomLineItemInputRequestTypeDef](./type_defs.md#createcustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: CustomLineItemChargeDetailsTypeDef](./type_defs.md#customlineitemchargedetailstypedef) 
+2. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+3. See [:material-code-braces: CreateCustomLineItemOutputTypeDef](./type_defs.md#createcustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `BillingGroupArn`: `str` *(required)*
-- `ChargeDetails`:
-  [CustomLineItemChargeDetailsTypeDef](./type_defs.md#customlineitemchargedetailstypedef)
-  *(required)*
-- `ClientToken`: `str`
-- `BillingPeriodRange`:
-  [CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomLineItemInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Description": ...,
+    "BillingGroupArn": ...,
+    "ChargeDetails": ...,
+}
 
-Returns
-[CreateCustomLineItemOutputTypeDef](./type_defs.md#createcustomlineitemoutputtypedef).
+parent.create_custom_line_item(**kwargs)
+```
 
-<a id="create\_pricing\_plan"></a>
+1. See [:material-code-braces: CreateCustomLineItemInputRequestTypeDef](./type_defs.md#createcustomlineiteminputrequesttypedef) 
 
-### create_pricing_plan
+### create\_pricing\_plan
 
 Creates a pricing plan that is used for computing Amazon Web Services charges
 for billing groups.
 
-Type annotations for `boto3.client("billingconductor").create_pricing_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").create_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_pricing_plan)
 
-Boto3 documentation:
-[BillingConductor.Client.create_pricing_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_pricing_plan)
+```python title="Method definition"
+def create_pricing_plan(
+    self,
+    *,
+    Name: str,
+    ClientToken: str = ...,
+    Description: str = ...,
+    PricingRuleArns: Sequence[str] = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreatePricingPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePricingPlanInputRequestTypeDef](./type_defs.md#createpricingplaninputrequesttypedef).
+1. See [:material-code-braces: CreatePricingPlanOutputTypeDef](./type_defs.md#createpricingplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `PricingRuleArns`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePricingPlanInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreatePricingPlanOutputTypeDef](./type_defs.md#createpricingplanoutputtypedef).
+parent.create_pricing_plan(**kwargs)
+```
 
-<a id="create\_pricing\_rule"></a>
+1. See [:material-code-braces: CreatePricingPlanInputRequestTypeDef](./type_defs.md#createpricingplaninputrequesttypedef) 
 
-### create_pricing_rule
+### create\_pricing\_rule
 
 Creates a pricing rule can be associated to a pricing plan, or a set of pricing
 plans.
 
-Type annotations for `boto3.client("billingconductor").create_pricing_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").create_pricing_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_pricing_rule)
 
-Boto3 documentation:
-[BillingConductor.Client.create_pricing_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.create_pricing_rule)
+```python title="Method definition"
+def create_pricing_rule(
+    self,
+    *,
+    Name: str,
+    Scope: PricingRuleScopeType,  # (1)
+    Type: PricingRuleTypeType,  # (2)
+    ModifierPercentage: float,
+    ClientToken: str = ...,
+    Description: str = ...,
+    Service: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreatePricingRuleOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePricingRuleInputRequestTypeDef](./type_defs.md#createpricingruleinputrequesttypedef).
+1. See [:material-code-brackets: PricingRuleScopeType](./literals.md#pricingrulescopetype) 
+2. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+3. See [:material-code-braces: CreatePricingRuleOutputTypeDef](./type_defs.md#createpricingruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Scope`: [PricingRuleScopeType](./literals.md#pricingrulescopetype)
-  *(required)*
-- `Type`: [PricingRuleTypeType](./literals.md#pricingruletypetype) *(required)*
-- `ModifierPercentage`: `float` *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Service`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePricingRuleInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Scope": ...,
+    "Type": ...,
+    "ModifierPercentage": ...,
+}
 
-Returns
-[CreatePricingRuleOutputTypeDef](./type_defs.md#createpricingruleoutputtypedef).
+parent.create_pricing_rule(**kwargs)
+```
 
-<a id="delete\_billing\_group"></a>
+1. See [:material-code-braces: CreatePricingRuleInputRequestTypeDef](./type_defs.md#createpricingruleinputrequesttypedef) 
 
-### delete_billing_group
+### delete\_billing\_group
 
 Deletes a billing group.
 
-Type annotations for `boto3.client("billingconductor").delete_billing_group`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").delete_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_billing_group)
 
-Boto3 documentation:
-[BillingConductor.Client.delete_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_billing_group)
+```python title="Method definition"
+def delete_billing_group(
+    self,
+    *,
+    Arn: str,
+) -> DeleteBillingGroupOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBillingGroupInputRequestTypeDef](./type_defs.md#deletebillinggroupinputrequesttypedef).
+1. See [:material-code-braces: DeleteBillingGroupOutputTypeDef](./type_defs.md#deletebillinggroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBillingGroupInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DeleteBillingGroupOutputTypeDef](./type_defs.md#deletebillinggroupoutputtypedef).
+parent.delete_billing_group(**kwargs)
+```
 
-<a id="delete\_custom\_line\_item"></a>
+1. See [:material-code-braces: DeleteBillingGroupInputRequestTypeDef](./type_defs.md#deletebillinggroupinputrequesttypedef) 
 
-### delete_custom_line_item
+### delete\_custom\_line\_item
 
 Deletes the custom line item identified by the given ARN in the current, or
 previous billing period.
 
-Type annotations for `boto3.client("billingconductor").delete_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").delete_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.delete_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_custom_line_item)
+```python title="Method definition"
+def delete_custom_line_item(
+    self,
+    *,
+    Arn: str,
+    BillingPeriodRange: CustomLineItemBillingPeriodRangeTypeDef = ...,  # (1)
+) -> DeleteCustomLineItemOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomLineItemInputRequestTypeDef](./type_defs.md#deletecustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+2. See [:material-code-braces: DeleteCustomLineItemOutputTypeDef](./type_defs.md#deletecustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `BillingPeriodRange`:
-  [CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomLineItemInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DeleteCustomLineItemOutputTypeDef](./type_defs.md#deletecustomlineitemoutputtypedef).
+parent.delete_custom_line_item(**kwargs)
+```
 
-<a id="delete\_pricing\_plan"></a>
+1. See [:material-code-braces: DeleteCustomLineItemInputRequestTypeDef](./type_defs.md#deletecustomlineiteminputrequesttypedef) 
 
-### delete_pricing_plan
+### delete\_pricing\_plan
 
 Deletes a pricing plan.
 
-Type annotations for `boto3.client("billingconductor").delete_pricing_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").delete_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_pricing_plan)
 
-Boto3 documentation:
-[BillingConductor.Client.delete_pricing_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_pricing_plan)
+```python title="Method definition"
+def delete_pricing_plan(
+    self,
+    *,
+    Arn: str,
+) -> DeletePricingPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePricingPlanInputRequestTypeDef](./type_defs.md#deletepricingplaninputrequesttypedef).
+1. See [:material-code-braces: DeletePricingPlanOutputTypeDef](./type_defs.md#deletepricingplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePricingPlanInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DeletePricingPlanOutputTypeDef](./type_defs.md#deletepricingplanoutputtypedef).
+parent.delete_pricing_plan(**kwargs)
+```
 
-<a id="delete\_pricing\_rule"></a>
+1. See [:material-code-braces: DeletePricingPlanInputRequestTypeDef](./type_defs.md#deletepricingplaninputrequesttypedef) 
 
-### delete_pricing_rule
+### delete\_pricing\_rule
 
 Deletes the pricing rule identified by the input Amazon Resource Name (ARN).
 
-Type annotations for `boto3.client("billingconductor").delete_pricing_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").delete_pricing_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_pricing_rule)
 
-Boto3 documentation:
-[BillingConductor.Client.delete_pricing_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.delete_pricing_rule)
+```python title="Method definition"
+def delete_pricing_rule(
+    self,
+    *,
+    Arn: str,
+) -> DeletePricingRuleOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePricingRuleInputRequestTypeDef](./type_defs.md#deletepricingruleinputrequesttypedef).
+1. See [:material-code-braces: DeletePricingRuleOutputTypeDef](./type_defs.md#deletepricingruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePricingRuleInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[DeletePricingRuleOutputTypeDef](./type_defs.md#deletepricingruleoutputtypedef).
+parent.delete_pricing_rule(**kwargs)
+```
 
-<a id="disassociate\_accounts"></a>
+1. See [:material-code-braces: DeletePricingRuleInputRequestTypeDef](./type_defs.md#deletepricingruleinputrequesttypedef) 
 
-### disassociate_accounts
+### disassociate\_accounts
 
 Removes the specified list of account IDs from the given billing group.
 
-Type annotations for `boto3.client("billingconductor").disassociate_accounts`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").disassociate_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.disassociate_accounts)
 
-Boto3 documentation:
-[BillingConductor.Client.disassociate_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.disassociate_accounts)
+```python title="Method definition"
+def disassociate_accounts(
+    self,
+    *,
+    Arn: str,
+    AccountIds: Sequence[str],
+) -> DisassociateAccountsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateAccountsInputRequestTypeDef](./type_defs.md#disassociateaccountsinputrequesttypedef).
+1. See [:material-code-braces: DisassociateAccountsOutputTypeDef](./type_defs.md#disassociateaccountsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateAccountsInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[DisassociateAccountsOutputTypeDef](./type_defs.md#disassociateaccountsoutputtypedef).
+parent.disassociate_accounts(**kwargs)
+```
 
-<a id="disassociate\_pricing\_rules"></a>
+1. See [:material-code-braces: DisassociateAccountsInputRequestTypeDef](./type_defs.md#disassociateaccountsinputrequesttypedef) 
 
-### disassociate_pricing_rules
+### disassociate\_pricing\_rules
 
 Disassociates a list of pricing rules from a pricing plan.
 
-Type annotations for
-`boto3.client("billingconductor").disassociate_pricing_rules` method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").disassociate_pricing_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.disassociate_pricing_rules)
 
-Boto3 documentation:
-[BillingConductor.Client.disassociate_pricing_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.disassociate_pricing_rules)
+```python title="Method definition"
+def disassociate_pricing_rules(
+    self,
+    *,
+    Arn: str,
+    PricingRuleArns: Sequence[str],
+) -> DisassociatePricingRulesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePricingRulesInputRequestTypeDef](./type_defs.md#disassociatepricingrulesinputrequesttypedef).
+1. See [:material-code-braces: DisassociatePricingRulesOutputTypeDef](./type_defs.md#disassociatepricingrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `PricingRuleArns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociatePricingRulesInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+    "PricingRuleArns": ...,
+}
 
-Returns
-[DisassociatePricingRulesOutputTypeDef](./type_defs.md#disassociatepricingrulesoutputtypedef).
+parent.disassociate_pricing_rules(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociatePricingRulesInputRequestTypeDef](./type_defs.md#disassociatepricingrulesinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("billingconductor").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.generate_presigned_url)
 
-Boto3 documentation:
-[BillingConductor.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### list\_account\_associations
 
-Returns `str`.
+* **Amazon Web Services Billing Conductor is in beta release and is subject to
+change.
 
-<a id="list\_account\_associations"></a>
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_account_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_account_associations)
 
-### list_account_associations
+```python title="Method definition"
+def list_account_associations(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListAccountAssociationsFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+) -> ListAccountAssociationsOutputTypeDef:  # (2)
+    ...
+```
 
-- \*\*Amazon Web Services Billing Conductor is in beta release and is subject
-  to change.
+1. See [:material-code-braces: ListAccountAssociationsFilterTypeDef](./type_defs.md#listaccountassociationsfiltertypedef) 
+2. See [:material-code-braces: ListAccountAssociationsOutputTypeDef](./type_defs.md#listaccountassociationsoutputtypedef) 
 
-Type annotations for
-`boto3.client("billingconductor").list_account_associations` method.
 
-Boto3 documentation:
-[BillingConductor.Client.list_account_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_account_associations)
+```python title="Usage example with kwargs"
+kwargs: ListAccountAssociationsInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Arguments mapping described in
-[ListAccountAssociationsInputRequestTypeDef](./type_defs.md#listaccountassociationsinputrequesttypedef).
+parent.list_account_associations(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ListAccountAssociationsInputRequestTypeDef](./type_defs.md#listaccountassociationsinputrequesttypedef) 
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListAccountAssociationsFilterTypeDef](./type_defs.md#listaccountassociationsfiltertypedef)
-- `NextToken`: `str`
-
-Returns
-[ListAccountAssociationsOutputTypeDef](./type_defs.md#listaccountassociationsoutputtypedef).
-
-<a id="list\_billing\_group\_cost\_reports"></a>
-
-### list_billing_group_cost_reports
+### list\_billing\_group\_cost\_reports
 
 A paginated call to retrieve a summary report of actual Amazon Web Services
 charges and the calculated Amazon Web Services charges based on the associated
 pricing plan of a billing group.
 
-Type annotations for
-`boto3.client("billingconductor").list_billing_group_cost_reports` method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_billing_group_cost_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_billing_group_cost_reports)
 
-Boto3 documentation:
-[BillingConductor.Client.list_billing_group_cost_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_billing_group_cost_reports)
+```python title="Method definition"
+def list_billing_group_cost_reports(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: ListBillingGroupCostReportsFilterTypeDef = ...,  # (1)
+) -> ListBillingGroupCostReportsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBillingGroupCostReportsInputRequestTypeDef](./type_defs.md#listbillinggroupcostreportsinputrequesttypedef).
+1. See [:material-code-braces: ListBillingGroupCostReportsFilterTypeDef](./type_defs.md#listbillinggroupcostreportsfiltertypedef) 
+2. See [:material-code-braces: ListBillingGroupCostReportsOutputTypeDef](./type_defs.md#listbillinggroupcostreportsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  [ListBillingGroupCostReportsFilterTypeDef](./type_defs.md#listbillinggroupcostreportsfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListBillingGroupCostReportsInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Returns
-[ListBillingGroupCostReportsOutputTypeDef](./type_defs.md#listbillinggroupcostreportsoutputtypedef).
+parent.list_billing_group_cost_reports(**kwargs)
+```
 
-<a id="list\_billing\_groups"></a>
+1. See [:material-code-braces: ListBillingGroupCostReportsInputRequestTypeDef](./type_defs.md#listbillinggroupcostreportsinputrequesttypedef) 
 
-### list_billing_groups
+### list\_billing\_groups
 
 A paginated call to retrieve a list of billing groups for the given billing
 period.
 
-Type annotations for `boto3.client("billingconductor").list_billing_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_billing_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_billing_groups)
 
-Boto3 documentation:
-[BillingConductor.Client.list_billing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_billing_groups)
+```python title="Method definition"
+def list_billing_groups(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: ListBillingGroupsFilterTypeDef = ...,  # (1)
+) -> ListBillingGroupsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListBillingGroupsInputRequestTypeDef](./type_defs.md#listbillinggroupsinputrequesttypedef).
+1. See [:material-code-braces: ListBillingGroupsFilterTypeDef](./type_defs.md#listbillinggroupsfiltertypedef) 
+2. See [:material-code-braces: ListBillingGroupsOutputTypeDef](./type_defs.md#listbillinggroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  [ListBillingGroupsFilterTypeDef](./type_defs.md#listbillinggroupsfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListBillingGroupsInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Returns
-[ListBillingGroupsOutputTypeDef](./type_defs.md#listbillinggroupsoutputtypedef).
+parent.list_billing_groups(**kwargs)
+```
 
-<a id="list\_custom\_line\_items"></a>
+1. See [:material-code-braces: ListBillingGroupsInputRequestTypeDef](./type_defs.md#listbillinggroupsinputrequesttypedef) 
 
-### list_custom_line_items
+### list\_custom\_line\_items
 
 A paginated call to get a list of all custom line items (FFLIs) for the given
 billing period.
 
-Type annotations for `boto3.client("billingconductor").list_custom_line_items`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_custom_line_items` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_custom_line_items)
 
-Boto3 documentation:
-[BillingConductor.Client.list_custom_line_items](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_custom_line_items)
+```python title="Method definition"
+def list_custom_line_items(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: ListCustomLineItemsFilterTypeDef = ...,  # (1)
+) -> ListCustomLineItemsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomLineItemsInputRequestTypeDef](./type_defs.md#listcustomlineitemsinputrequesttypedef).
+1. See [:material-code-braces: ListCustomLineItemsFilterTypeDef](./type_defs.md#listcustomlineitemsfiltertypedef) 
+2. See [:material-code-braces: ListCustomLineItemsOutputTypeDef](./type_defs.md#listcustomlineitemsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  [ListCustomLineItemsFilterTypeDef](./type_defs.md#listcustomlineitemsfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListCustomLineItemsInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Returns
-[ListCustomLineItemsOutputTypeDef](./type_defs.md#listcustomlineitemsoutputtypedef).
+parent.list_custom_line_items(**kwargs)
+```
 
-<a id="list\_pricing\_plans"></a>
+1. See [:material-code-braces: ListCustomLineItemsInputRequestTypeDef](./type_defs.md#listcustomlineitemsinputrequesttypedef) 
 
-### list_pricing_plans
+### list\_pricing\_plans
 
 A paginated call to get pricing plans for the given billing period.
 
-Type annotations for `boto3.client("billingconductor").list_pricing_plans`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_plans)
 
-Boto3 documentation:
-[BillingConductor.Client.list_pricing_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_plans)
+```python title="Method definition"
+def list_pricing_plans(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListPricingPlansFilterTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPricingPlansOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPricingPlansInputRequestTypeDef](./type_defs.md#listpricingplansinputrequesttypedef).
+1. See [:material-code-braces: ListPricingPlansFilterTypeDef](./type_defs.md#listpricingplansfiltertypedef) 
+2. See [:material-code-braces: ListPricingPlansOutputTypeDef](./type_defs.md#listpricingplansoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListPricingPlansFilterTypeDef](./type_defs.md#listpricingplansfiltertypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPricingPlansInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Returns
-[ListPricingPlansOutputTypeDef](./type_defs.md#listpricingplansoutputtypedef).
+parent.list_pricing_plans(**kwargs)
+```
 
-<a id="list\_pricing\_plans\_associated\_with\_pricing\_rule"></a>
+1. See [:material-code-braces: ListPricingPlansInputRequestTypeDef](./type_defs.md#listpricingplansinputrequesttypedef) 
 
-### list_pricing_plans_associated_with_pricing_rule
+### list\_pricing\_plans\_associated\_with\_pricing\_rule
 
 A list of the pricing plans associated with a pricing rule.
 
-Type annotations for
-`boto3.client("billingconductor").list_pricing_plans_associated_with_pricing_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_plans_associated_with_pricing_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_plans_associated_with_pricing_rule)
 
-Boto3 documentation:
-[BillingConductor.Client.list_pricing_plans_associated_with_pricing_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_plans_associated_with_pricing_rule)
+```python title="Method definition"
+def list_pricing_plans_associated_with_pricing_rule(
+    self,
+    *,
+    PricingRuleArn: str,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPricingPlansAssociatedWithPricingRuleOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPricingPlansAssociatedWithPricingRuleInputRequestTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleinputrequesttypedef).
+1. See [:material-code-braces: ListPricingPlansAssociatedWithPricingRuleOutputTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PricingRuleArn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPricingPlansAssociatedWithPricingRuleInputRequestTypeDef = {  # (1)
+    "PricingRuleArn": ...,
+}
 
-Returns
-[ListPricingPlansAssociatedWithPricingRuleOutputTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleoutputtypedef).
+parent.list_pricing_plans_associated_with_pricing_rule(**kwargs)
+```
 
-<a id="list\_pricing\_rules"></a>
+1. See [:material-code-braces: ListPricingPlansAssociatedWithPricingRuleInputRequestTypeDef](./type_defs.md#listpricingplansassociatedwithpricingruleinputrequesttypedef) 
 
-### list_pricing_rules
+### list\_pricing\_rules
 
 Describes a pricing rule that can be associated to a pricing plan, or set of
 pricing plans.
 
-Type annotations for `boto3.client("billingconductor").list_pricing_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_rules)
 
-Boto3 documentation:
-[BillingConductor.Client.list_pricing_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_rules)
+```python title="Method definition"
+def list_pricing_rules(
+    self,
+    *,
+    BillingPeriod: str = ...,
+    Filters: ListPricingRulesFilterTypeDef = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPricingRulesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPricingRulesInputRequestTypeDef](./type_defs.md#listpricingrulesinputrequesttypedef).
+1. See [:material-code-braces: ListPricingRulesFilterTypeDef](./type_defs.md#listpricingrulesfiltertypedef) 
+2. See [:material-code-braces: ListPricingRulesOutputTypeDef](./type_defs.md#listpricingrulesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `BillingPeriod`: `str`
-- `Filters`:
-  [ListPricingRulesFilterTypeDef](./type_defs.md#listpricingrulesfiltertypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPricingRulesInputRequestTypeDef = {  # (1)
+    "BillingPeriod": ...,
+}
 
-Returns
-[ListPricingRulesOutputTypeDef](./type_defs.md#listpricingrulesoutputtypedef).
+parent.list_pricing_rules(**kwargs)
+```
 
-<a id="list\_pricing\_rules\_associated\_to\_pricing\_plan"></a>
+1. See [:material-code-braces: ListPricingRulesInputRequestTypeDef](./type_defs.md#listpricingrulesinputrequesttypedef) 
 
-### list_pricing_rules_associated_to_pricing_plan
+### list\_pricing\_rules\_associated\_to\_pricing\_plan
 
 Lists the pricing rules associated with a pricing plan.
 
-Type annotations for
-`boto3.client("billingconductor").list_pricing_rules_associated_to_pricing_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_pricing_rules_associated_to_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_rules_associated_to_pricing_plan)
 
-Boto3 documentation:
-[BillingConductor.Client.list_pricing_rules_associated_to_pricing_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_pricing_rules_associated_to_pricing_plan)
+```python title="Method definition"
+def list_pricing_rules_associated_to_pricing_plan(
+    self,
+    *,
+    PricingPlanArn: str,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPricingRulesAssociatedToPricingPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPricingRulesAssociatedToPricingPlanInputRequestTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplaninputrequesttypedef).
+1. See [:material-code-braces: ListPricingRulesAssociatedToPricingPlanOutputTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PricingPlanArn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPricingRulesAssociatedToPricingPlanInputRequestTypeDef = {  # (1)
+    "PricingPlanArn": ...,
+}
 
-Returns
-[ListPricingRulesAssociatedToPricingPlanOutputTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplanoutputtypedef).
+parent.list_pricing_rules_associated_to_pricing_plan(**kwargs)
+```
 
-<a id="list\_resources\_associated\_to\_custom\_line\_item"></a>
+1. See [:material-code-braces: ListPricingRulesAssociatedToPricingPlanInputRequestTypeDef](./type_defs.md#listpricingrulesassociatedtopricingplaninputrequesttypedef) 
 
-### list_resources_associated_to_custom_line_item
+### list\_resources\_associated\_to\_custom\_line\_item
 
 List the resources associated to a custom line item.
 
-Type annotations for
-`boto3.client("billingconductor").list_resources_associated_to_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_resources_associated_to_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_resources_associated_to_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.list_resources_associated_to_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_resources_associated_to_custom_line_item)
+```python title="Method definition"
+def list_resources_associated_to_custom_line_item(
+    self,
+    *,
+    Arn: str,
+    BillingPeriod: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: ListResourcesAssociatedToCustomLineItemFilterTypeDef = ...,  # (1)
+) -> ListResourcesAssociatedToCustomLineItemOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesAssociatedToCustomLineItemInputRequestTypeDef](./type_defs.md#listresourcesassociatedtocustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemFilterTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemfiltertypedef) 
+2. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemOutputTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `BillingPeriod`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  [ListResourcesAssociatedToCustomLineItemFilterTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemfiltertypedef)
+```python title="Usage example with kwargs"
+kwargs: ListResourcesAssociatedToCustomLineItemInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[ListResourcesAssociatedToCustomLineItemOutputTypeDef](./type_defs.md#listresourcesassociatedtocustomlineitemoutputtypedef).
+parent.list_resources_associated_to_custom_line_item(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResourcesAssociatedToCustomLineItemInputRequestTypeDef](./type_defs.md#listresourcesassociatedtocustomlineiteminputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 A list the tags for a resource.
 
-Type annotations for `boto3.client("billingconductor").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[BillingConductor.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("billingconductor").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.tag_resource)
 
-Boto3 documentation:
-[BillingConductor.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("billingconductor").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.untag_resource)
 
-Boto3 documentation:
-[BillingConductor.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_billing\_group"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_billing_group
+### update\_billing\_group
 
 This updates an existing billing group.
 
-Type annotations for `boto3.client("billingconductor").update_billing_group`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").update_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_billing_group)
 
-Boto3 documentation:
-[BillingConductor.Client.update_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_billing_group)
+```python title="Method definition"
+def update_billing_group(
+    self,
+    *,
+    Arn: str,
+    Name: str = ...,
+    Status: BillingGroupStatusType = ...,  # (1)
+    ComputationPreference: ComputationPreferenceTypeDef = ...,  # (2)
+    Description: str = ...,
+) -> UpdateBillingGroupOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBillingGroupInputRequestTypeDef](./type_defs.md#updatebillinggroupinputrequesttypedef).
+1. See [:material-code-brackets: BillingGroupStatusType](./literals.md#billinggroupstatustype) 
+2. See [:material-code-braces: ComputationPreferenceTypeDef](./type_defs.md#computationpreferencetypedef) 
+3. See [:material-code-braces: UpdateBillingGroupOutputTypeDef](./type_defs.md#updatebillinggroupoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Name`: `str`
-- `Status`: [BillingGroupStatusType](./literals.md#billinggroupstatustype)
-- `ComputationPreference`:
-  [ComputationPreferenceTypeDef](./type_defs.md#computationpreferencetypedef)
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBillingGroupInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[UpdateBillingGroupOutputTypeDef](./type_defs.md#updatebillinggroupoutputtypedef).
+parent.update_billing_group(**kwargs)
+```
 
-<a id="update\_custom\_line\_item"></a>
+1. See [:material-code-braces: UpdateBillingGroupInputRequestTypeDef](./type_defs.md#updatebillinggroupinputrequesttypedef) 
 
-### update_custom_line_item
+### update\_custom\_line\_item
 
 Update an existing custom line item in the current or previous billing period.
 
-Type annotations for `boto3.client("billingconductor").update_custom_line_item`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").update_custom_line_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_custom_line_item)
 
-Boto3 documentation:
-[BillingConductor.Client.update_custom_line_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_custom_line_item)
+```python title="Method definition"
+def update_custom_line_item(
+    self,
+    *,
+    Arn: str,
+    Name: str = ...,
+    Description: str = ...,
+    ChargeDetails: UpdateCustomLineItemChargeDetailsTypeDef = ...,  # (1)
+    BillingPeriodRange: CustomLineItemBillingPeriodRangeTypeDef = ...,  # (2)
+) -> UpdateCustomLineItemOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomLineItemInputRequestTypeDef](./type_defs.md#updatecustomlineiteminputrequesttypedef).
+1. See [:material-code-braces: UpdateCustomLineItemChargeDetailsTypeDef](./type_defs.md#updatecustomlineitemchargedetailstypedef) 
+2. See [:material-code-braces: CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef) 
+3. See [:material-code-braces: UpdateCustomLineItemOutputTypeDef](./type_defs.md#updatecustomlineitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `ChargeDetails`:
-  [UpdateCustomLineItemChargeDetailsTypeDef](./type_defs.md#updatecustomlineitemchargedetailstypedef)
-- `BillingPeriodRange`:
-  [CustomLineItemBillingPeriodRangeTypeDef](./type_defs.md#customlineitembillingperiodrangetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomLineItemInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[UpdateCustomLineItemOutputTypeDef](./type_defs.md#updatecustomlineitemoutputtypedef).
+parent.update_custom_line_item(**kwargs)
+```
 
-<a id="update\_pricing\_plan"></a>
+1. See [:material-code-braces: UpdateCustomLineItemInputRequestTypeDef](./type_defs.md#updatecustomlineiteminputrequesttypedef) 
 
-### update_pricing_plan
+### update\_pricing\_plan
 
 This updates an existing pricing plan.
 
-Type annotations for `boto3.client("billingconductor").update_pricing_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").update_pricing_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_pricing_plan)
 
-Boto3 documentation:
-[BillingConductor.Client.update_pricing_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_pricing_plan)
+```python title="Method definition"
+def update_pricing_plan(
+    self,
+    *,
+    Arn: str,
+    Name: str = ...,
+    Description: str = ...,
+) -> UpdatePricingPlanOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePricingPlanInputRequestTypeDef](./type_defs.md#updatepricingplaninputrequesttypedef).
+1. See [:material-code-braces: UpdatePricingPlanOutputTypeDef](./type_defs.md#updatepricingplanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePricingPlanInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[UpdatePricingPlanOutputTypeDef](./type_defs.md#updatepricingplanoutputtypedef).
+parent.update_pricing_plan(**kwargs)
+```
 
-<a id="update\_pricing\_rule"></a>
+1. See [:material-code-braces: UpdatePricingPlanInputRequestTypeDef](./type_defs.md#updatepricingplaninputrequesttypedef) 
 
-### update_pricing_rule
+### update\_pricing\_rule
 
 Updates an existing pricing rule.
 
-Type annotations for `boto3.client("billingconductor").update_pricing_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("billingconductor").update_pricing_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_pricing_rule)
 
-Boto3 documentation:
-[BillingConductor.Client.update_pricing_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor.Client.update_pricing_rule)
+```python title="Method definition"
+def update_pricing_rule(
+    self,
+    *,
+    Arn: str,
+    Name: str = ...,
+    Description: str = ...,
+    Type: PricingRuleTypeType = ...,  # (1)
+    ModifierPercentage: float = ...,
+) -> UpdatePricingRuleOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePricingRuleInputRequestTypeDef](./type_defs.md#updatepricingruleinputrequesttypedef).
+1. See [:material-code-brackets: PricingRuleTypeType](./literals.md#pricingruletypetype) 
+2. See [:material-code-braces: UpdatePricingRuleOutputTypeDef](./type_defs.md#updatepricingruleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Arn`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `Type`: [PricingRuleTypeType](./literals.md#pricingruletypetype)
-- `ModifierPercentage`: `float`
+```python title="Usage example with kwargs"
+kwargs: UpdatePricingRuleInputRequestTypeDef = {  # (1)
+    "Arn": ...,
+}
 
-Returns
-[UpdatePricingRuleOutputTypeDef](./type_defs.md#updatepricingruleoutputtypedef).
+parent.update_pricing_rule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdatePricingRuleInputRequestTypeDef](./type_defs.md#updatepricingruleinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("billingconductor").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("billingconductor").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_associations")` ->
-  [ListAccountAssociationsPaginator](./paginators.md#listaccountassociationspaginator)
-- `client.get_paginator("list_billing_group_cost_reports")` ->
-  [ListBillingGroupCostReportsPaginator](./paginators.md#listbillinggroupcostreportspaginator)
-- `client.get_paginator("list_billing_groups")` ->
-  [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
-- `client.get_paginator("list_custom_line_items")` ->
-  [ListCustomLineItemsPaginator](./paginators.md#listcustomlineitemspaginator)
-- `client.get_paginator("list_pricing_plans")` ->
-  [ListPricingPlansPaginator](./paginators.md#listpricingplanspaginator)
-- `client.get_paginator("list_pricing_plans_associated_with_pricing_rule")` ->
-  [ListPricingPlansAssociatedWithPricingRulePaginator](./paginators.md#listpricingplansassociatedwithpricingrulepaginator)
-- `client.get_paginator("list_pricing_rules")` ->
-  [ListPricingRulesPaginator](./paginators.md#listpricingrulespaginator)
-- `client.get_paginator("list_pricing_rules_associated_to_pricing_plan")` ->
-  [ListPricingRulesAssociatedToPricingPlanPaginator](./paginators.md#listpricingrulesassociatedtopricingplanpaginator)
-- `client.get_paginator("list_resources_associated_to_custom_line_item")` ->
-  [ListResourcesAssociatedToCustomLineItemPaginator](./paginators.md#listresourcesassociatedtocustomlineitempaginator)
+- `client.get_paginator("list_account_associations")` -> [ListAccountAssociationsPaginator](./paginators.md#listaccountassociationspaginator)
+- `client.get_paginator("list_billing_group_cost_reports")` -> [ListBillingGroupCostReportsPaginator](./paginators.md#listbillinggroupcostreportspaginator)
+- `client.get_paginator("list_billing_groups")` -> [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
+- `client.get_paginator("list_custom_line_items")` -> [ListCustomLineItemsPaginator](./paginators.md#listcustomlineitemspaginator)
+- `client.get_paginator("list_pricing_plans")` -> [ListPricingPlansPaginator](./paginators.md#listpricingplanspaginator)
+- `client.get_paginator("list_pricing_plans_associated_with_pricing_rule")` -> [ListPricingPlansAssociatedWithPricingRulePaginator](./paginators.md#listpricingplansassociatedwithpricingrulepaginator)
+- `client.get_paginator("list_pricing_rules")` -> [ListPricingRulesPaginator](./paginators.md#listpricingrulespaginator)
+- `client.get_paginator("list_pricing_rules_associated_to_pricing_plan")` -> [ListPricingRulesAssociatedToPricingPlanPaginator](./paginators.md#listpricingrulesassociatedtopricingplanpaginator)
+- `client.get_paginator("list_resources_associated_to_custom_line_item")` -> [ListResourcesAssociatedToCustomLineItemPaginator](./paginators.md#listresourcesassociatedtocustomlineitempaginator)
+
+
+

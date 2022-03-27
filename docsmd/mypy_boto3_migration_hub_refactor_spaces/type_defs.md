@@ -1,1165 +1,1614 @@
-<a id="typed-dictionaries-for-boto3-migrationhubrefactorspaces-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MigrationHubRefactorSpaces module
+> [Index](../README.md) > [MigrationHubRefactorSpaces](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MigrationHubRefactorSpaces](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
-type annotations stubs module
-[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
-
-- [Typed dictionaries for boto3 MigrationHubRefactorSpaces module](#typed-dictionaries-for-boto3-migrationhubrefactorspaces-module)
-  - [ApiGatewayProxyConfigTypeDef](#apigatewayproxyconfigtypedef)
-  - [ApiGatewayProxyInputTypeDef](#apigatewayproxyinputtypedef)
-  - [ApiGatewayProxySummaryTypeDef](#apigatewayproxysummarytypedef)
-  - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
-  - [CreateApplicationRequestRequestTypeDef](#createapplicationrequestrequesttypedef)
-  - [CreateApplicationResponseTypeDef](#createapplicationresponsetypedef)
-  - [CreateEnvironmentRequestRequestTypeDef](#createenvironmentrequestrequesttypedef)
-  - [CreateEnvironmentResponseTypeDef](#createenvironmentresponsetypedef)
-  - [CreateRouteRequestRequestTypeDef](#createrouterequestrequesttypedef)
-  - [CreateRouteResponseTypeDef](#createrouteresponsetypedef)
-  - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
-  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
-  - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
-  - [DeleteApplicationResponseTypeDef](#deleteapplicationresponsetypedef)
-  - [DeleteEnvironmentRequestRequestTypeDef](#deleteenvironmentrequestrequesttypedef)
-  - [DeleteEnvironmentResponseTypeDef](#deleteenvironmentresponsetypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteRouteRequestRequestTypeDef](#deleterouterequestrequesttypedef)
-  - [DeleteRouteResponseTypeDef](#deleterouteresponsetypedef)
-  - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
-  - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
-  - [EnvironmentSummaryTypeDef](#environmentsummarytypedef)
-  - [EnvironmentVpcTypeDef](#environmentvpctypedef)
-  - [ErrorResponseTypeDef](#errorresponsetypedef)
-  - [GetApplicationRequestRequestTypeDef](#getapplicationrequestrequesttypedef)
-  - [GetApplicationResponseTypeDef](#getapplicationresponsetypedef)
-  - [GetEnvironmentRequestRequestTypeDef](#getenvironmentrequestrequesttypedef)
-  - [GetEnvironmentResponseTypeDef](#getenvironmentresponsetypedef)
-  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
-  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
-  - [GetRouteRequestRequestTypeDef](#getrouterequestrequesttypedef)
-  - [GetRouteResponseTypeDef](#getrouteresponsetypedef)
-  - [GetServiceRequestRequestTypeDef](#getservicerequestrequesttypedef)
-  - [GetServiceResponseTypeDef](#getserviceresponsetypedef)
-  - [LambdaEndpointConfigTypeDef](#lambdaendpointconfigtypedef)
-  - [LambdaEndpointInputTypeDef](#lambdaendpointinputtypedef)
-  - [LambdaEndpointSummaryTypeDef](#lambdaendpointsummarytypedef)
-  - [ListApplicationsRequestRequestTypeDef](#listapplicationsrequestrequesttypedef)
-  - [ListApplicationsResponseTypeDef](#listapplicationsresponsetypedef)
-  - [ListEnvironmentVpcsRequestRequestTypeDef](#listenvironmentvpcsrequestrequesttypedef)
-  - [ListEnvironmentVpcsResponseTypeDef](#listenvironmentvpcsresponsetypedef)
-  - [ListEnvironmentsRequestRequestTypeDef](#listenvironmentsrequestrequesttypedef)
-  - [ListEnvironmentsResponseTypeDef](#listenvironmentsresponsetypedef)
-  - [ListRoutesRequestRequestTypeDef](#listroutesrequestrequesttypedef)
-  - [ListRoutesResponseTypeDef](#listroutesresponsetypedef)
-  - [ListServicesRequestRequestTypeDef](#listservicesrequestrequesttypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteSummaryTypeDef](#routesummarytypedef)
-  - [ServiceSummaryTypeDef](#servicesummarytypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UriPathRouteInputTypeDef](#uripathrouteinputtypedef)
-  - [UrlEndpointConfigTypeDef](#urlendpointconfigtypedef)
-  - [UrlEndpointInputTypeDef](#urlendpointinputtypedef)
-  - [UrlEndpointSummaryTypeDef](#urlendpointsummarytypedef)
-
-<a id="apigatewayproxyconfigtypedef"></a>
+    Auto-generated documentation for [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
+    type annotations stubs module [mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 ## ApiGatewayProxyConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyConfigTypeDef
+
+def get_value() -> ApiGatewayProxyConfigTypeDef:
+    return {
+        "ApiGatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApiGatewayProxyConfigTypeDef(TypedDict):
+    ApiGatewayId: NotRequired[str],
+    EndpointType: NotRequired[ApiGatewayEndpointTypeType],  # (1)
+    NlbArn: NotRequired[str],
+    NlbName: NotRequired[str],
+    ProxyUrl: NotRequired[str],
+    StageName: NotRequired[str],
+    VpcLinkId: NotRequired[str],
+```
 
-- `ApiGatewayId`: `str`
-- `EndpointType`:
-  [ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype)
-- `NlbArn`: `str`
-- `NlbName`: `str`
-- `ProxyUrl`: `str`
-- `StageName`: `str`
-- `VpcLinkId`: `str`
-
-<a id="apigatewayproxyinputtypedef"></a>
-
+1. See [:material-code-brackets: ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype) 
 ## ApiGatewayProxyInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyInputTypeDef
+
+def get_value() -> ApiGatewayProxyInputTypeDef:
+    return {
+        "EndpointType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApiGatewayProxyInputTypeDef(TypedDict):
+    EndpointType: NotRequired[ApiGatewayEndpointTypeType],  # (1)
+    StageName: NotRequired[str],
+```
 
-- `EndpointType`:
-  [ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype)
-- `StageName`: `str`
-
-<a id="apigatewayproxysummarytypedef"></a>
-
+1. See [:material-code-brackets: ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype) 
 ## ApiGatewayProxySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxySummaryTypeDef
+
+def get_value() -> ApiGatewayProxySummaryTypeDef:
+    return {
+        "ApiGatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApiGatewayProxySummaryTypeDef(TypedDict):
+    ApiGatewayId: NotRequired[str],
+    EndpointType: NotRequired[ApiGatewayEndpointTypeType],  # (1)
+    NlbArn: NotRequired[str],
+    NlbName: NotRequired[str],
+    ProxyUrl: NotRequired[str],
+    StageName: NotRequired[str],
+    VpcLinkId: NotRequired[str],
+```
 
-- `ApiGatewayId`: `str`
-- `EndpointType`:
-  [ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype)
-- `NlbArn`: `str`
-- `NlbName`: `str`
-- `ProxyUrl`: `str`
-- `StageName`: `str`
-- `VpcLinkId`: `str`
-
-<a id="applicationsummarytypedef"></a>
-
+1. See [:material-code-brackets: ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype) 
 ## ApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApplicationSummaryTypeDef
+
+def get_value() -> ApplicationSummaryTypeDef:
+    return {
+        "ApiGatewayProxy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationSummaryTypeDef(TypedDict):
+    ApiGatewayProxy: NotRequired[ApiGatewayProxySummaryTypeDef],  # (1)
+    ApplicationId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedByAccountId: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    EnvironmentId: NotRequired[str],
+    Error: NotRequired[ErrorResponseTypeDef],  # (2)
+    LastUpdatedTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    ProxyType: NotRequired[ProxyTypeType],  # (3)
+    State: NotRequired[ApplicationStateType],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+    VpcId: NotRequired[str],
+```
 
-- `ApiGatewayProxy`:
-  [ApiGatewayProxySummaryTypeDef](./type_defs.md#apigatewayproxysummarytypedef)
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ProxyType`: `Literal['API_GATEWAY']` (see
-  [ProxyTypeType](./literals.md#proxytypetype))
-- `State`: [ApplicationStateType](./literals.md#applicationstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VpcId`: `str`
-
-<a id="createapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApiGatewayProxySummaryTypeDef](./type_defs.md#apigatewayproxysummarytypedef) 
+2. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+3. See [:material-code-brackets: ProxyTypeType](./literals.md#proxytypetype) 
+4. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
 ## CreateApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateApplicationRequestRequestTypeDef
+
+def get_value() -> CreateApplicationRequestRequestTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+        "Name": ...,
+        "ProxyType": ...,
+        "VpcId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationRequestRequestTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+    Name: str,
+    ProxyType: ProxyTypeType,  # (1)
+    VpcId: str,
+    ApiGatewayProxy: NotRequired[ApiGatewayProxyInputTypeDef],  # (2)
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `EnvironmentIdentifier`: `str`
-- `Name`: `str`
-- `ProxyType`: `Literal['API_GATEWAY']` (see
-  [ProxyTypeType](./literals.md#proxytypetype))
-- `VpcId`: `str`
-
-Optional fields:
-
-- `ApiGatewayProxy`:
-  [ApiGatewayProxyInputTypeDef](./type_defs.md#apigatewayproxyinputtypedef)
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createapplicationresponsetypedef"></a>
-
+1. See [:material-code-brackets: ProxyTypeType](./literals.md#proxytypetype) 
+2. See [:material-code-braces: ApiGatewayProxyInputTypeDef](./type_defs.md#apigatewayproxyinputtypedef) 
 ## CreateApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateApplicationResponseTypeDef
+
+def get_value() -> CreateApplicationResponseTypeDef:
+    return {
+        "ApiGatewayProxy": ...,
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "EnvironmentId": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "OwnerAccountId": ...,
+        "ProxyType": ...,
+        "State": ...,
+        "Tags": ...,
+        "VpcId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationResponseTypeDef(TypedDict):
+    ApiGatewayProxy: ApiGatewayProxyInputTypeDef,  # (1)
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    EnvironmentId: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    OwnerAccountId: str,
+    ProxyType: ProxyTypeType,  # (2)
+    State: ApplicationStateType,  # (3)
+    Tags: Dict[str, str],
+    VpcId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ApiGatewayProxy`:
-  [ApiGatewayProxyInputTypeDef](./type_defs.md#apigatewayproxyinputtypedef)
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ProxyType`: `Literal['API_GATEWAY']` (see
-  [ProxyTypeType](./literals.md#proxytypetype))
-- `State`: [ApplicationStateType](./literals.md#applicationstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VpcId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApiGatewayProxyInputTypeDef](./type_defs.md#apigatewayproxyinputtypedef) 
+2. See [:material-code-brackets: ProxyTypeType](./literals.md#proxytypetype) 
+3. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateEnvironmentRequestRequestTypeDef
+
+def get_value() -> CreateEnvironmentRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "NetworkFabricType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentRequestRequestTypeDef(TypedDict):
+    Name: str,
+    NetworkFabricType: NetworkFabricTypeType,  # (1)
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `NetworkFabricType`: `Literal['TRANSIT_GATEWAY']` (see
-  [NetworkFabricTypeType](./literals.md#networkfabrictypetype))
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createenvironmentresponsetypedef"></a>
-
+1. See [:material-code-brackets: NetworkFabricTypeType](./literals.md#networkfabrictypetype) 
 ## CreateEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateEnvironmentResponseTypeDef
+
+def get_value() -> CreateEnvironmentResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreatedTime": ...,
+        "Description": ...,
+        "EnvironmentId": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "NetworkFabricType": ...,
+        "OwnerAccountId": ...,
+        "State": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentResponseTypeDef(TypedDict):
+    Arn: str,
+    CreatedTime: datetime,
+    Description: str,
+    EnvironmentId: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    NetworkFabricType: NetworkFabricTypeType,  # (1)
+    OwnerAccountId: str,
+    State: EnvironmentStateType,  # (2)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `NetworkFabricType`: `Literal['TRANSIT_GATEWAY']` (see
-  [NetworkFabricTypeType](./literals.md#networkfabrictypetype))
-- `OwnerAccountId`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrouterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: NetworkFabricTypeType](./literals.md#networkfabrictypetype) 
+2. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRouteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateRouteRequestRequestTypeDef
+
+def get_value() -> CreateRouteRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "RouteType": ...,
+        "ServiceIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    RouteType: RouteTypeType,  # (1)
+    ServiceIdentifier: str,
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    UriPathRoute: NotRequired[UriPathRouteInputTypeDef],  # (2)
+```
 
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
-- `ServiceIdentifier`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `UriPathRoute`:
-  [UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef)
-
-<a id="createrouteresponsetypedef"></a>
-
+1. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+2. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
 ## CreateRouteResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateRouteResponseTypeDef
+
+def get_value() -> CreateRouteResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "LastUpdatedTime": ...,
+        "OwnerAccountId": ...,
+        "RouteId": ...,
+        "RouteType": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "Tags": ...,
+        "UriPathRoute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    LastUpdatedTime: datetime,
+    OwnerAccountId: str,
+    RouteId: str,
+    RouteType: RouteTypeType,  # (1)
+    ServiceId: str,
+    State: RouteStateType,  # (2)
+    Tags: Dict[str, str],
+    UriPathRoute: UriPathRouteInputTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-- `OwnerAccountId`: `str`
-- `RouteId`: `str`
-- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
-- `ServiceId`: `str`
-- `State`: [RouteStateType](./literals.md#routestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UriPathRoute`:
-  [UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+3. See [:material-code-braces: UriPathRouteInputTypeDef](./type_defs.md#uripathrouteinputtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateServiceRequestRequestTypeDef
+
+def get_value() -> CreateServiceRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EndpointType": ...,
+        "EnvironmentIdentifier": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EndpointType: ServiceEndpointTypeType,  # (1)
+    EnvironmentIdentifier: str,
+    Name: str,
+    ClientToken: NotRequired[str],
+    Description: NotRequired[str],
+    LambdaEndpoint: NotRequired[LambdaEndpointInputTypeDef],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+    UrlEndpoint: NotRequired[UrlEndpointInputTypeDef],  # (3)
+    VpcId: NotRequired[str],
+```
 
-- `ApplicationIdentifier`: `str`
-- `EndpointType`:
-  [ServiceEndpointTypeType](./literals.md#serviceendpointtypetype)
-- `EnvironmentIdentifier`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Description`: `str`
-- `LambdaEndpoint`:
-  [LambdaEndpointInputTypeDef](./type_defs.md#lambdaendpointinputtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `UrlEndpoint`:
-  [UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef)
-- `VpcId`: `str`
-
-<a id="createserviceresponsetypedef"></a>
-
+1. See [:material-code-brackets: ServiceEndpointTypeType](./literals.md#serviceendpointtypetype) 
+2. See [:material-code-braces: LambdaEndpointInputTypeDef](./type_defs.md#lambdaendpointinputtypedef) 
+3. See [:material-code-braces: UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef) 
 ## CreateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import CreateServiceResponseTypeDef
+
+def get_value() -> CreateServiceResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "Description": ...,
+        "EndpointType": ...,
+        "EnvironmentId": ...,
+        "LambdaEndpoint": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "OwnerAccountId": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "Tags": ...,
+        "UrlEndpoint": ...,
+        "VpcId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    Description: str,
+    EndpointType: ServiceEndpointTypeType,  # (1)
+    EnvironmentId: str,
+    LambdaEndpoint: LambdaEndpointInputTypeDef,  # (2)
+    LastUpdatedTime: datetime,
+    Name: str,
+    OwnerAccountId: str,
+    ServiceId: str,
+    State: ServiceStateType,  # (3)
+    Tags: Dict[str, str],
+    UrlEndpoint: UrlEndpointInputTypeDef,  # (4)
+    VpcId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EndpointType`:
-  [ServiceEndpointTypeType](./literals.md#serviceendpointtypetype)
-- `EnvironmentId`: `str`
-- `LambdaEndpoint`:
-  [LambdaEndpointInputTypeDef](./type_defs.md#lambdaendpointinputtypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ServiceId`: `str`
-- `State`: [ServiceStateType](./literals.md#servicestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UrlEndpoint`:
-  [UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef)
-- `VpcId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceEndpointTypeType](./literals.md#serviceendpointtypetype) 
+2. See [:material-code-braces: LambdaEndpointInputTypeDef](./type_defs.md#lambdaendpointinputtypedef) 
+3. See [:material-code-brackets: ServiceStateType](./literals.md#servicestatetype) 
+4. See [:material-code-braces: UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-
-<a id="deleteapplicationresponsetypedef"></a>
+```python title="Definition"
+class DeleteApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+```
 
 ## DeleteApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteApplicationResponseTypeDef
+
+def get_value() -> DeleteApplicationResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "EnvironmentId": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteApplicationResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    EnvironmentId: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    State: ApplicationStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `State`: [ApplicationStateType](./literals.md#applicationstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteEnvironmentRequestRequestTypeDef
+
+def get_value() -> DeleteEnvironmentRequestRequestTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentIdentifier`: `str`
-
-<a id="deleteenvironmentresponsetypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentRequestRequestTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+```
 
 ## DeleteEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteEnvironmentResponseTypeDef
+
+def get_value() -> DeleteEnvironmentResponseTypeDef:
+    return {
+        "Arn": ...,
+        "EnvironmentId": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEnvironmentResponseTypeDef(TypedDict):
+    Arn: str,
+    EnvironmentId: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    State: EnvironmentStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-<a id="deleterouterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
 
 ## DeleteRouteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteRouteRequestRequestTypeDef
+
+def get_value() -> DeleteRouteRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "RouteIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `RouteIdentifier`: `str`
-
-<a id="deleterouteresponsetypedef"></a>
+```python title="Definition"
+class DeleteRouteRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    RouteIdentifier: str,
+```
 
 ## DeleteRouteResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteRouteResponseTypeDef
+
+def get_value() -> DeleteRouteResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "LastUpdatedTime": ...,
+        "RouteId": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRouteResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    LastUpdatedTime: datetime,
+    RouteId: str,
+    ServiceId: str,
+    State: RouteStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `LastUpdatedTime`: `datetime`
-- `RouteId`: `str`
-- `ServiceId`: `str`
-- `State`: [RouteStateType](./literals.md#routestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteServiceRequestRequestTypeDef
+
+def get_value() -> DeleteServiceRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "ServiceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `ServiceIdentifier`: `str`
-
-<a id="deleteserviceresponsetypedef"></a>
+```python title="Definition"
+class DeleteServiceRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    ServiceIdentifier: str,
+```
 
 ## DeleteServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import DeleteServiceResponseTypeDef
+
+def get_value() -> DeleteServiceResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "EnvironmentId": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    EnvironmentId: str,
+    LastUpdatedTime: datetime,
+    Name: str,
+    ServiceId: str,
+    State: ServiceStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `ServiceId`: `str`
-- `State`: [ServiceStateType](./literals.md#servicestatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmentsummarytypedef"></a>
-
+1. See [:material-code-brackets: ServiceStateType](./literals.md#servicestatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import EnvironmentSummaryTypeDef
+
+def get_value() -> EnvironmentSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    Description: NotRequired[str],
+    EnvironmentId: NotRequired[str],
+    Error: NotRequired[ErrorResponseTypeDef],  # (1)
+    LastUpdatedTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    NetworkFabricType: NotRequired[NetworkFabricTypeType],  # (2)
+    OwnerAccountId: NotRequired[str],
+    State: NotRequired[EnvironmentStateType],  # (3)
+    Tags: NotRequired[Dict[str, str]],
+    TransitGatewayId: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `NetworkFabricType`: `Literal['TRANSIT_GATEWAY']` (see
-  [NetworkFabricTypeType](./literals.md#networkfabrictypetype))
-- `OwnerAccountId`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TransitGatewayId`: `str`
-
-<a id="environmentvpctypedef"></a>
-
+1. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+2. See [:material-code-brackets: NetworkFabricTypeType](./literals.md#networkfabrictypetype) 
+3. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
 ## EnvironmentVpcTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import EnvironmentVpcTypeDef
+
+def get_value() -> EnvironmentVpcTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `CidrBlocks`: `List`\[`str`\]
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `LastUpdatedTime`: `datetime`
-- `VpcId`: `str`
-- `VpcName`: `str`
-
-<a id="errorresponsetypedef"></a>
+```python title="Definition"
+class EnvironmentVpcTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    CidrBlocks: NotRequired[List[str]],
+    CreatedTime: NotRequired[datetime],
+    EnvironmentId: NotRequired[str],
+    LastUpdatedTime: NotRequired[datetime],
+    VpcId: NotRequired[str],
+    VpcName: NotRequired[str],
+```
 
 ## ErrorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ErrorResponseTypeDef
+
+def get_value() -> ErrorResponseTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorResponseTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    AdditionalDetails: NotRequired[Dict[str, str]],
+    Code: NotRequired[ErrorCodeType],  # (1)
+    Message: NotRequired[str],
+    ResourceIdentifier: NotRequired[str],
+    ResourceType: NotRequired[ErrorResourceTypeType],  # (2)
+```
 
-- `AccountId`: `str`
-- `AdditionalDetails`: `Dict`\[`str`, `str`\]
-- `Code`: [ErrorCodeType](./literals.md#errorcodetype)
-- `Message`: `str`
-- `ResourceIdentifier`: `str`
-- `ResourceType`: [ErrorResourceTypeType](./literals.md#errorresourcetypetype)
-
-<a id="getapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+2. See [:material-code-brackets: ErrorResourceTypeType](./literals.md#errorresourcetypetype) 
 ## GetApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetApplicationRequestRequestTypeDef
+
+def get_value() -> GetApplicationRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-
-<a id="getapplicationresponsetypedef"></a>
+```python title="Definition"
+class GetApplicationRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+```
 
 ## GetApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetApplicationResponseTypeDef
+
+def get_value() -> GetApplicationResponseTypeDef:
+    return {
+        "ApiGatewayProxy": ...,
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "EnvironmentId": ...,
+        "Error": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "OwnerAccountId": ...,
+        "ProxyType": ...,
+        "State": ...,
+        "Tags": ...,
+        "VpcId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationResponseTypeDef(TypedDict):
+    ApiGatewayProxy: ApiGatewayProxyConfigTypeDef,  # (1)
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    EnvironmentId: str,
+    Error: ErrorResponseTypeDef,  # (2)
+    LastUpdatedTime: datetime,
+    Name: str,
+    OwnerAccountId: str,
+    ProxyType: ProxyTypeType,  # (3)
+    State: ApplicationStateType,  # (4)
+    Tags: Dict[str, str],
+    VpcId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ApiGatewayProxy`:
-  [ApiGatewayProxyConfigTypeDef](./type_defs.md#apigatewayproxyconfigtypedef)
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ProxyType`: `Literal['API_GATEWAY']` (see
-  [ProxyTypeType](./literals.md#proxytypetype))
-- `State`: [ApplicationStateType](./literals.md#applicationstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VpcId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ApiGatewayProxyConfigTypeDef](./type_defs.md#apigatewayproxyconfigtypedef) 
+2. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+3. See [:material-code-brackets: ProxyTypeType](./literals.md#proxytypetype) 
+4. See [:material-code-brackets: ApplicationStateType](./literals.md#applicationstatetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetEnvironmentRequestRequestTypeDef
+
+def get_value() -> GetEnvironmentRequestRequestTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentIdentifier`: `str`
-
-<a id="getenvironmentresponsetypedef"></a>
+```python title="Definition"
+class GetEnvironmentRequestRequestTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+```
 
 ## GetEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetEnvironmentResponseTypeDef
+
+def get_value() -> GetEnvironmentResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreatedTime": ...,
+        "Description": ...,
+        "EnvironmentId": ...,
+        "Error": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "NetworkFabricType": ...,
+        "OwnerAccountId": ...,
+        "State": ...,
+        "Tags": ...,
+        "TransitGatewayId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentResponseTypeDef(TypedDict):
+    Arn: str,
+    CreatedTime: datetime,
+    Description: str,
+    EnvironmentId: str,
+    Error: ErrorResponseTypeDef,  # (1)
+    LastUpdatedTime: datetime,
+    Name: str,
+    NetworkFabricType: NetworkFabricTypeType,  # (2)
+    OwnerAccountId: str,
+    State: EnvironmentStateType,  # (3)
+    Tags: Dict[str, str],
+    TransitGatewayId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `NetworkFabricType`: `Literal['TRANSIT_GATEWAY']` (see
-  [NetworkFabricTypeType](./literals.md#networkfabrictypetype))
-- `OwnerAccountId`: `str`
-- `State`: [EnvironmentStateType](./literals.md#environmentstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TransitGatewayId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+2. See [:material-code-brackets: NetworkFabricTypeType](./literals.md#networkfabrictypetype) 
+3. See [:material-code-brackets: EnvironmentStateType](./literals.md#environmentstatetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetResourcePolicyRequestRequestTypeDef
+
+def get_value() -> GetResourcePolicyRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-<a id="getresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePolicyRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
 
 ## GetResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrouterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRouteRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetRouteRequestRequestTypeDef
+
+def get_value() -> GetRouteRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "RouteIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `RouteIdentifier`: `str`
-
-<a id="getrouteresponsetypedef"></a>
+```python title="Definition"
+class GetRouteRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    RouteIdentifier: str,
+```
 
 ## GetRouteResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetRouteResponseTypeDef
+
+def get_value() -> GetRouteResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "EnvironmentId": ...,
+        "Error": ...,
+        "IncludeChildPaths": ...,
+        "LastUpdatedTime": ...,
+        "Methods": ...,
+        "OwnerAccountId": ...,
+        "PathResourceToId": ...,
+        "RouteId": ...,
+        "RouteType": ...,
+        "ServiceId": ...,
+        "SourcePath": ...,
+        "State": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRouteResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    EnvironmentId: str,
+    Error: ErrorResponseTypeDef,  # (1)
+    IncludeChildPaths: bool,
+    LastUpdatedTime: datetime,
+    Methods: List[HttpMethodType],  # (2)
+    OwnerAccountId: str,
+    PathResourceToId: Dict[str, str],
+    RouteId: str,
+    RouteType: RouteTypeType,  # (3)
+    ServiceId: str,
+    SourcePath: str,
+    State: RouteStateType,  # (4)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `IncludeChildPaths`: `bool`
-- `LastUpdatedTime`: `datetime`
-- `Methods`: `List`\[[HttpMethodType](./literals.md#httpmethodtype)\]
-- `OwnerAccountId`: `str`
-- `PathResourceToId`: `Dict`\[`str`, `str`\]
-- `RouteId`: `str`
-- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
-- `ServiceId`: `str`
-- `SourcePath`: `str`
-- `State`: [RouteStateType](./literals.md#routestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+2. See [:material-code-brackets: HttpMethodType](./literals.md#httpmethodtype) 
+3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+4. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetServiceRequestRequestTypeDef
+
+def get_value() -> GetServiceRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+        "ServiceIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-- `ServiceIdentifier`: `str`
-
-<a id="getserviceresponsetypedef"></a>
+```python title="Definition"
+class GetServiceRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    ServiceIdentifier: str,
+```
 
 ## GetServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import GetServiceResponseTypeDef
+
+def get_value() -> GetServiceResponseTypeDef:
+    return {
+        "ApplicationId": ...,
+        "Arn": ...,
+        "CreatedByAccountId": ...,
+        "CreatedTime": ...,
+        "Description": ...,
+        "EndpointType": ...,
+        "EnvironmentId": ...,
+        "Error": ...,
+        "LambdaEndpoint": ...,
+        "LastUpdatedTime": ...,
+        "Name": ...,
+        "OwnerAccountId": ...,
+        "ServiceId": ...,
+        "State": ...,
+        "Tags": ...,
+        "UrlEndpoint": ...,
+        "VpcId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceResponseTypeDef(TypedDict):
+    ApplicationId: str,
+    Arn: str,
+    CreatedByAccountId: str,
+    CreatedTime: datetime,
+    Description: str,
+    EndpointType: ServiceEndpointTypeType,  # (1)
+    EnvironmentId: str,
+    Error: ErrorResponseTypeDef,  # (2)
+    LambdaEndpoint: LambdaEndpointConfigTypeDef,  # (3)
+    LastUpdatedTime: datetime,
+    Name: str,
+    OwnerAccountId: str,
+    ServiceId: str,
+    State: ServiceStateType,  # (4)
+    Tags: Dict[str, str],
+    UrlEndpoint: UrlEndpointConfigTypeDef,  # (5)
+    VpcId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EndpointType`:
-  [ServiceEndpointTypeType](./literals.md#serviceendpointtypetype)
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LambdaEndpoint`:
-  [LambdaEndpointConfigTypeDef](./type_defs.md#lambdaendpointconfigtypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ServiceId`: `str`
-- `State`: [ServiceStateType](./literals.md#servicestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UrlEndpoint`:
-  [UrlEndpointConfigTypeDef](./type_defs.md#urlendpointconfigtypedef)
-- `VpcId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lambdaendpointconfigtypedef"></a>
-
+1. See [:material-code-brackets: ServiceEndpointTypeType](./literals.md#serviceendpointtypetype) 
+2. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+3. See [:material-code-braces: LambdaEndpointConfigTypeDef](./type_defs.md#lambdaendpointconfigtypedef) 
+4. See [:material-code-brackets: ServiceStateType](./literals.md#servicestatetype) 
+5. See [:material-code-braces: UrlEndpointConfigTypeDef](./type_defs.md#urlendpointconfigtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LambdaEndpointConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import LambdaEndpointConfigTypeDef
+
+def get_value() -> LambdaEndpointConfigTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="lambdaendpointinputtypedef"></a>
+```python title="Definition"
+class LambdaEndpointConfigTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## LambdaEndpointInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import LambdaEndpointInputTypeDef
+
+def get_value() -> LambdaEndpointInputTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="lambdaendpointsummarytypedef"></a>
+```python title="Definition"
+class LambdaEndpointInputTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## LambdaEndpointSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import LambdaEndpointSummaryTypeDef
+
+def get_value() -> LambdaEndpointSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaEndpointSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
-- `Arn`: `str`
+## ListApplicationsRequestListApplicationsPaginateTypeDef
 
-<a id="listapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListApplicationsRequestListApplicationsPaginateTypeDef
 
+def get_value() -> ListApplicationsRequestListApplicationsPaginateTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsRequestListApplicationsPaginateTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListApplicationsRequestRequestTypeDef
+
+def get_value() -> ListApplicationsRequestRequestTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentIdentifier`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listapplicationsresponsetypedef"></a>
+```python title="Definition"
+class ListApplicationsRequestRequestTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListApplicationsResponseTypeDef
+
+def get_value() -> ListApplicationsResponseTypeDef:
+    return {
+        "ApplicationSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationsResponseTypeDef(TypedDict):
+    ApplicationSummaryList: List[ApplicationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ApplicationSummaryList`:
-  `List`\[[ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ApplicationSummaryTypeDef](./type_defs.md#applicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef
 
-<a id="listenvironmentvpcsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef
 
+def get_value() -> ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentVpcsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentVpcsRequestRequestTypeDef
+
+def get_value() -> ListEnvironmentVpcsRequestRequestTypeDef:
+    return {
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `EnvironmentIdentifier`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listenvironmentvpcsresponsetypedef"></a>
+```python title="Definition"
+class ListEnvironmentVpcsRequestRequestTypeDef(TypedDict):
+    EnvironmentIdentifier: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListEnvironmentVpcsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentVpcsResponseTypeDef
+
+def get_value() -> ListEnvironmentVpcsResponseTypeDef:
+    return {
+        "EnvironmentVpcList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentVpcsResponseTypeDef(TypedDict):
+    EnvironmentVpcList: List[EnvironmentVpcTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EnvironmentVpcList`:
-  `List`\[[EnvironmentVpcTypeDef](./type_defs.md#environmentvpctypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentVpcTypeDef](./type_defs.md#environmentvpctypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEnvironmentsRequestListEnvironmentsPaginateTypeDef
 
-<a id="listenvironmentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentsRequestListEnvironmentsPaginateTypeDef
 
+def get_value() -> ListEnvironmentsRequestListEnvironmentsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListEnvironmentsRequestListEnvironmentsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentsRequestRequestTypeDef
+
+def get_value() -> ListEnvironmentsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listenvironmentsresponsetypedef"></a>
+```python title="Definition"
+class ListEnvironmentsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListEnvironmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListEnvironmentsResponseTypeDef
+
+def get_value() -> ListEnvironmentsResponseTypeDef:
+    return {
+        "EnvironmentSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentsResponseTypeDef(TypedDict):
+    EnvironmentSummaryList: List[EnvironmentSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EnvironmentSummaryList`:
-  `List`\[[EnvironmentSummaryTypeDef](./type_defs.md#environmentsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentSummaryTypeDef](./type_defs.md#environmentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutesRequestListRoutesPaginateTypeDef
 
-<a id="listroutesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListRoutesRequestListRoutesPaginateTypeDef
 
+def get_value() -> ListRoutesRequestListRoutesPaginateTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutesRequestListRoutesPaginateTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRoutesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListRoutesRequestRequestTypeDef
+
+def get_value() -> ListRoutesRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listroutesresponsetypedef"></a>
+```python title="Definition"
+class ListRoutesRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListRoutesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListRoutesResponseTypeDef
+
+def get_value() -> ListRoutesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RouteSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRoutesResponseTypeDef(TypedDict):
+    NextToken: str,
+    RouteSummaryList: List[RouteSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `RouteSummaryList`:
-  `List`\[[RouteSummaryTypeDef](./type_defs.md#routesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RouteSummaryTypeDef](./type_defs.md#routesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicesRequestListServicesPaginateTypeDef
 
-<a id="listservicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListServicesRequestListServicesPaginateTypeDef
 
+def get_value() -> ListServicesRequestListServicesPaginateTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesRequestListServicesPaginateTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListServicesRequestRequestTypeDef
+
+def get_value() -> ListServicesRequestRequestTypeDef:
+    return {
+        "ApplicationIdentifier": ...,
+        "EnvironmentIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `ApplicationIdentifier`: `str`
-- `EnvironmentIdentifier`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listservicesresponsetypedef"></a>
+```python title="Definition"
+class ListServicesRequestRequestTypeDef(TypedDict):
+    ApplicationIdentifier: str,
+    EnvironmentIdentifier: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListServicesResponseTypeDef
+
+def get_value() -> ListServicesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ServiceSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicesResponseTypeDef(TypedDict):
+    NextToken: str,
+    ServiceSummaryList: List[ServiceSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ServiceSummaryList`:
-  `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putresourcepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "Policy": ...,
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `Policy`: `str`
-- `ResourceArn`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    Policy: str,
+    ResourceArn: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routesummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RouteSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import RouteSummaryTypeDef
+
+def get_value() -> RouteSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RouteSummaryTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedByAccountId: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    EnvironmentId: NotRequired[str],
+    Error: NotRequired[ErrorResponseTypeDef],  # (1)
+    IncludeChildPaths: NotRequired[bool],
+    LastUpdatedTime: NotRequired[datetime],
+    Methods: NotRequired[List[HttpMethodType]],  # (2)
+    OwnerAccountId: NotRequired[str],
+    PathResourceToId: NotRequired[Dict[str, str]],
+    RouteId: NotRequired[str],
+    RouteType: NotRequired[RouteTypeType],  # (3)
+    ServiceId: NotRequired[str],
+    SourcePath: NotRequired[str],
+    State: NotRequired[RouteStateType],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `IncludeChildPaths`: `bool`
-- `LastUpdatedTime`: `datetime`
-- `Methods`: `List`\[[HttpMethodType](./literals.md#httpmethodtype)\]
-- `OwnerAccountId`: `str`
-- `PathResourceToId`: `Dict`\[`str`, `str`\]
-- `RouteId`: `str`
-- `RouteType`: [RouteTypeType](./literals.md#routetypetype)
-- `ServiceId`: `str`
-- `SourcePath`: `str`
-- `State`: [RouteStateType](./literals.md#routestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="servicesummarytypedef"></a>
-
+1. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+2. See [:material-code-brackets: HttpMethodType](./literals.md#httpmethodtype) 
+3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+4. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
 ## ServiceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import ServiceSummaryTypeDef
+
+def get_value() -> ServiceSummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceSummaryTypeDef(TypedDict):
+    ApplicationId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreatedByAccountId: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    Description: NotRequired[str],
+    EndpointType: NotRequired[ServiceEndpointTypeType],  # (1)
+    EnvironmentId: NotRequired[str],
+    Error: NotRequired[ErrorResponseTypeDef],  # (2)
+    LambdaEndpoint: NotRequired[LambdaEndpointSummaryTypeDef],  # (3)
+    LastUpdatedTime: NotRequired[datetime],
+    Name: NotRequired[str],
+    OwnerAccountId: NotRequired[str],
+    ServiceId: NotRequired[str],
+    State: NotRequired[ServiceStateType],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+    UrlEndpoint: NotRequired[UrlEndpointSummaryTypeDef],  # (5)
+    VpcId: NotRequired[str],
+```
 
-- `ApplicationId`: `str`
-- `Arn`: `str`
-- `CreatedByAccountId`: `str`
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `EndpointType`:
-  [ServiceEndpointTypeType](./literals.md#serviceendpointtypetype)
-- `EnvironmentId`: `str`
-- `Error`: [ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef)
-- `LambdaEndpoint`:
-  [LambdaEndpointSummaryTypeDef](./type_defs.md#lambdaendpointsummarytypedef)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
-- `OwnerAccountId`: `str`
-- `ServiceId`: `str`
-- `State`: [ServiceStateType](./literals.md#servicestatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `UrlEndpoint`:
-  [UrlEndpointSummaryTypeDef](./type_defs.md#urlendpointsummarytypedef)
-- `VpcId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ServiceEndpointTypeType](./literals.md#serviceendpointtypetype) 
+2. See [:material-code-braces: ErrorResponseTypeDef](./type_defs.md#errorresponsetypedef) 
+3. See [:material-code-braces: LambdaEndpointSummaryTypeDef](./type_defs.md#lambdaendpointsummarytypedef) 
+4. See [:material-code-brackets: ServiceStateType](./literals.md#servicestatetype) 
+5. See [:material-code-braces: UrlEndpointSummaryTypeDef](./type_defs.md#urlendpointsummarytypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="uripathrouteinputtypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UriPathRouteInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import UriPathRouteInputTypeDef
+
+def get_value() -> UriPathRouteInputTypeDef:
+    return {
+        "ActivationState": ...,
+        "SourcePath": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UriPathRouteInputTypeDef(TypedDict):
+    ActivationState: RouteActivationStateType,  # (1)
+    SourcePath: str,
+    IncludeChildPaths: NotRequired[bool],
+    Methods: NotRequired[Sequence[HttpMethodType]],  # (2)
+```
 
-- `ActivationState`: `Literal['ACTIVE']` (see
-  [RouteActivationStateType](./literals.md#routeactivationstatetype))
-- `SourcePath`: `str`
-
-Optional fields:
-
-- `IncludeChildPaths`: `bool`
-- `Methods`: `Sequence`\[[HttpMethodType](./literals.md#httpmethodtype)\]
-
-<a id="urlendpointconfigtypedef"></a>
-
+1. See [:material-code-brackets: RouteActivationStateType](./literals.md#routeactivationstatetype) 
+2. See [:material-code-brackets: HttpMethodType](./literals.md#httpmethodtype) 
 ## UrlEndpointConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import UrlEndpointConfigTypeDef
+
+def get_value() -> UrlEndpointConfigTypeDef:
+    return {
+        "HealthUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `HealthUrl`: `str`
-- `Url`: `str`
-
-<a id="urlendpointinputtypedef"></a>
+```python title="Definition"
+class UrlEndpointConfigTypeDef(TypedDict):
+    HealthUrl: NotRequired[str],
+    Url: NotRequired[str],
+```
 
 ## UrlEndpointInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import UrlEndpointInputTypeDef
+
+def get_value() -> UrlEndpointInputTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Required fields:
-
-- `Url`: `str`
-
-Optional fields:
-
-- `HealthUrl`: `str`
-
-<a id="urlendpointsummarytypedef"></a>
+```python title="Definition"
+class UrlEndpointInputTypeDef(TypedDict):
+    Url: str,
+    HealthUrl: NotRequired[str],
+```
 
 ## UrlEndpointSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migration_hub_refactor_spaces.type_defs import UrlEndpointSummaryTypeDef
+
+def get_value() -> UrlEndpointSummaryTypeDef:
+    return {
+        "HealthUrl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UrlEndpointSummaryTypeDef(TypedDict):
+    HealthUrl: NotRequired[str],
+    Url: NotRequired[str],
+```
 
-- `HealthUrl`: `str`
-- `Url`: `str`

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-dataexchange-module"></a>
-
-# Type annotations for boto3 DataExchange module
+#  DataExchange module
 
 > [Index](../README.md) > DataExchange
 
-Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
-type annotations stubs module
-[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+!!! note ""
 
-- [Type annotations for boto3 DataExchange module](#type-annotations-for-boto3-dataexchange-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DataExchangeClient](#dataexchangeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+    type annotations stubs module [mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DataExchange`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[dataexchange]'
 python -m pip install mypy-boto3-dataexchange
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-dataexchange
 python -m pip uninstall -y mypy-boto3-dataexchange
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="dataexchangeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DataExchangeClient
 
-Type annotations for `boto3.client("dataexchange")` as
-[DataExchangeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dataexchange")` as [DataExchangeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dataexchange.client import DataExchangeClient
+
+def get_client() -> DataExchangeClient:
+    return Session().cleint("dataexchange")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job](./client.md#cancel_job)
-- [create_data_set](./client.md#create_data_set)
-- [create_event_action](./client.md#create_event_action)
-- [create_job](./client.md#create_job)
-- [create_revision](./client.md#create_revision)
-- [delete_asset](./client.md#delete_asset)
-- [delete_data_set](./client.md#delete_data_set)
-- [delete_event_action](./client.md#delete_event_action)
-- [delete_revision](./client.md#delete_revision)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_asset](./client.md#get_asset)
-- [get_data_set](./client.md#get_data_set)
-- [get_event_action](./client.md#get_event_action)
-- [get_job](./client.md#get_job)
-- [get_paginator](./client.md#get_paginator)
-- [get_revision](./client.md#get_revision)
-- [list_data_set_revisions](./client.md#list_data_set_revisions)
-- [list_data_sets](./client.md#list_data_sets)
-- [list_event_actions](./client.md#list_event_actions)
-- [list_jobs](./client.md#list_jobs)
-- [list_revision_assets](./client.md#list_revision_assets)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [revoke_revision](./client.md#revoke_revision)
-- [send_api_asset](./client.md#send_api_asset)
-- [start_job](./client.md#start_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_asset](./client.md#update_asset)
-- [update_data_set](./client.md#update_data_set)
-- [update_event_action](./client.md#update_event_action)
-- [update_revision](./client.md#update_revision)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DataExchangeClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceLimitExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("dataexchange").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("dataexchange").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator, ...
+from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
+
+def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
+    return Session().client("dataexchange").get_paginator("list_data_set_revisions"))
 ```
 
 - [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
@@ -155,16 +81,23 @@ from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator, ...
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dataexchange.literals import AssetTypeType
 
-```python
-from mypy_boto3_dataexchange.literals import AssetTypeType, ...
+def get_value() -> AssetTypeType:
+    return "API_GATEWAY_API"
 ```
 
 - [AssetTypeType](./literals.md#assettypetype)
@@ -185,18 +118,22 @@ from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dataexchange.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_dataexchange.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "ExportRevisionToS3": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -252,14 +189,19 @@ from mypy_boto3_dataexchange.type_defs import ActionTypeDef, ...
 - [ImportAssetsFromS3ResponseDetailsTypeDef](./type_defs.md#importassetsfroms3responsedetailstypedef)
 - [JobEntryTypeDef](./type_defs.md#jobentrytypedef)
 - [JobErrorTypeDef](./type_defs.md#joberrortypedef)
+- [ListDataSetRevisionsRequestListDataSetRevisionsPaginateTypeDef](./type_defs.md#listdatasetrevisionsrequestlistdatasetrevisionspaginatetypedef)
 - [ListDataSetRevisionsRequestRequestTypeDef](./type_defs.md#listdatasetrevisionsrequestrequesttypedef)
 - [ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)
+- [ListDataSetsRequestListDataSetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef)
 - [ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef)
 - [ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)
+- [ListEventActionsRequestListEventActionsPaginateTypeDef](./type_defs.md#listeventactionsrequestlisteventactionspaginatetypedef)
 - [ListEventActionsRequestRequestTypeDef](./type_defs.md#listeventactionsrequestrequesttypedef)
 - [ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
+- [ListRevisionAssetsRequestListRevisionAssetsPaginateTypeDef](./type_defs.md#listrevisionassetsrequestlistrevisionassetspaginatetypedef)
 - [ListRevisionAssetsRequestRequestTypeDef](./type_defs.md#listrevisionassetsrequestrequesttypedef)
 - [ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -290,3 +232,4 @@ from mypy_boto3_dataexchange.type_defs import ActionTypeDef, ...
 - [UpdateEventActionResponseTypeDef](./type_defs.md#updateeventactionresponsetypedef)
 - [UpdateRevisionRequestRequestTypeDef](./type_defs.md#updaterevisionrequestrequesttypedef)
 - [UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef)
+

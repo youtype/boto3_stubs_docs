@@ -1,735 +1,793 @@
-<a id="literals-for-boto3-kms-module"></a>
-
-# Literals for boto3 KMS module
+# Literals
 
 > [Index](../README.md) > [KMS](./README.md) > Literals
 
-Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module
-[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
+!!! note ""
 
-- [Literals for boto3 KMS module](#literals-for-boto3-kms-module)
-  - [AlgorithmSpecType](#algorithmspectype)
-  - [ConnectionErrorCodeTypeType](#connectionerrorcodetypetype)
-  - [ConnectionStateTypeType](#connectionstatetypetype)
-  - [CustomerMasterKeySpecType](#customermasterkeyspectype)
-  - [DataKeyPairSpecType](#datakeypairspectype)
-  - [DataKeySpecType](#datakeyspectype)
-  - [EncryptionAlgorithmSpecType](#encryptionalgorithmspectype)
-  - [ExpirationModelTypeType](#expirationmodeltypetype)
-  - [GrantOperationType](#grantoperationtype)
-  - [KeyManagerTypeType](#keymanagertypetype)
-  - [KeySpecType](#keyspectype)
-  - [KeyStateType](#keystatetype)
-  - [KeyUsageTypeType](#keyusagetypetype)
-  - [ListAliasesPaginatorName](#listaliasespaginatorname)
-  - [ListGrantsPaginatorName](#listgrantspaginatorname)
-  - [ListKeyPoliciesPaginatorName](#listkeypoliciespaginatorname)
-  - [ListKeysPaginatorName](#listkeyspaginatorname)
-  - [MessageTypeType](#messagetypetype)
-  - [MultiRegionKeyTypeType](#multiregionkeytypetype)
-  - [OriginTypeType](#origintypetype)
-  - [SigningAlgorithmSpecType](#signingalgorithmspectype)
-  - [WrappingKeySpecType](#wrappingkeyspectype)
-  - [KMSServiceName](#kmsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="algorithmspectype"></a>
+    Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+    type annotations stubs module [mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 ## AlgorithmSpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import AlgorithmSpecType
+
+def get_value() -> AlgorithmSpecType:
+    return "RSAES_OAEP_SHA_1"
 ```
 
-Values:
-
-- `RSAES_OAEP_SHA_1`
-- `RSAES_OAEP_SHA_256`
-- `RSAES_PKCS1_V1_5`
-
-<a id="connectionerrorcodetypetype"></a>
-
+```python title="Definition"
+AlgorithmSpecType = Literal[
+    "RSAES_OAEP_SHA_1",
+    "RSAES_OAEP_SHA_256",
+    "RSAES_PKCS1_V1_5",
+]
+```
 ## ConnectionErrorCodeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ConnectionErrorCodeTypeType
+
+def get_value() -> ConnectionErrorCodeTypeType:
+    return "CLUSTER_NOT_FOUND"
 ```
 
-Values:
-
-- `CLUSTER_NOT_FOUND`
-- `INSUFFICIENT_CLOUDHSM_HSMS`
-- `INTERNAL_ERROR`
-- `INVALID_CREDENTIALS`
-- `NETWORK_ERRORS`
-- `SUBNET_NOT_FOUND`
-- `USER_LOCKED_OUT`
-- `USER_LOGGED_IN`
-- `USER_NOT_FOUND`
-
-<a id="connectionstatetypetype"></a>
-
+```python title="Definition"
+ConnectionErrorCodeTypeType = Literal[
+    "CLUSTER_NOT_FOUND",
+    "INSUFFICIENT_CLOUDHSM_HSMS",
+    "INTERNAL_ERROR",
+    "INVALID_CREDENTIALS",
+    "NETWORK_ERRORS",
+    "SUBNET_NOT_FOUND",
+    "USER_LOCKED_OUT",
+    "USER_LOGGED_IN",
+    "USER_NOT_FOUND",
+]
+```
 ## ConnectionStateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ConnectionStateTypeType
+
+def get_value() -> ConnectionStateTypeType:
+    return "CONNECTED"
 ```
 
-Values:
-
-- `CONNECTED`
-- `CONNECTING`
-- `DISCONNECTED`
-- `DISCONNECTING`
-- `FAILED`
-
-<a id="customermasterkeyspectype"></a>
-
+```python title="Definition"
+ConnectionStateTypeType = Literal[
+    "CONNECTED",
+    "CONNECTING",
+    "DISCONNECTED",
+    "DISCONNECTING",
+    "FAILED",
+]
+```
 ## CustomerMasterKeySpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import CustomerMasterKeySpecType
+
+def get_value() -> CustomerMasterKeySpecType:
+    return "ECC_NIST_P256"
 ```
 
-Values:
-
-- `ECC_NIST_P256`
-- `ECC_NIST_P384`
-- `ECC_NIST_P521`
-- `ECC_SECG_P256K1`
-- `RSA_2048`
-- `RSA_3072`
-- `RSA_4096`
-- `SYMMETRIC_DEFAULT`
-
-<a id="datakeypairspectype"></a>
-
+```python title="Definition"
+CustomerMasterKeySpecType = Literal[
+    "ECC_NIST_P256",
+    "ECC_NIST_P384",
+    "ECC_NIST_P521",
+    "ECC_SECG_P256K1",
+    "RSA_2048",
+    "RSA_3072",
+    "RSA_4096",
+    "SYMMETRIC_DEFAULT",
+]
+```
 ## DataKeyPairSpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import DataKeyPairSpecType
+
+def get_value() -> DataKeyPairSpecType:
+    return "ECC_NIST_P256"
 ```
 
-Values:
-
-- `ECC_NIST_P256`
-- `ECC_NIST_P384`
-- `ECC_NIST_P521`
-- `ECC_SECG_P256K1`
-- `RSA_2048`
-- `RSA_3072`
-- `RSA_4096`
-
-<a id="datakeyspectype"></a>
-
+```python title="Definition"
+DataKeyPairSpecType = Literal[
+    "ECC_NIST_P256",
+    "ECC_NIST_P384",
+    "ECC_NIST_P521",
+    "ECC_SECG_P256K1",
+    "RSA_2048",
+    "RSA_3072",
+    "RSA_4096",
+]
+```
 ## DataKeySpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import DataKeySpecType
+
+def get_value() -> DataKeySpecType:
+    return "AES_128"
 ```
 
-Values:
-
-- `AES_128`
-- `AES_256`
-
-<a id="encryptionalgorithmspectype"></a>
-
+```python title="Definition"
+DataKeySpecType = Literal[
+    "AES_128",
+    "AES_256",
+]
+```
 ## EncryptionAlgorithmSpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import EncryptionAlgorithmSpecType
+
+def get_value() -> EncryptionAlgorithmSpecType:
+    return "RSAES_OAEP_SHA_1"
 ```
 
-Values:
-
-- `RSAES_OAEP_SHA_1`
-- `RSAES_OAEP_SHA_256`
-- `SYMMETRIC_DEFAULT`
-
-<a id="expirationmodeltypetype"></a>
-
+```python title="Definition"
+EncryptionAlgorithmSpecType = Literal[
+    "RSAES_OAEP_SHA_1",
+    "RSAES_OAEP_SHA_256",
+    "SYMMETRIC_DEFAULT",
+]
+```
 ## ExpirationModelTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ExpirationModelTypeType
+
+def get_value() -> ExpirationModelTypeType:
+    return "KEY_MATERIAL_DOES_NOT_EXPIRE"
 ```
 
-Values:
-
-- `KEY_MATERIAL_DOES_NOT_EXPIRE`
-- `KEY_MATERIAL_EXPIRES`
-
-<a id="grantoperationtype"></a>
-
+```python title="Definition"
+ExpirationModelTypeType = Literal[
+    "KEY_MATERIAL_DOES_NOT_EXPIRE",
+    "KEY_MATERIAL_EXPIRES",
+]
+```
 ## GrantOperationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import GrantOperationType
+
+def get_value() -> GrantOperationType:
+    return "CreateGrant"
 ```
 
-Values:
-
-- `CreateGrant`
-- `Decrypt`
-- `DescribeKey`
-- `Encrypt`
-- `GenerateDataKey`
-- `GenerateDataKeyPair`
-- `GenerateDataKeyPairWithoutPlaintext`
-- `GenerateDataKeyWithoutPlaintext`
-- `GetPublicKey`
-- `ReEncryptFrom`
-- `ReEncryptTo`
-- `RetireGrant`
-- `Sign`
-- `Verify`
-
-<a id="keymanagertypetype"></a>
-
+```python title="Definition"
+GrantOperationType = Literal[
+    "CreateGrant",
+    "Decrypt",
+    "DescribeKey",
+    "Encrypt",
+    "GenerateDataKey",
+    "GenerateDataKeyPair",
+    "GenerateDataKeyPairWithoutPlaintext",
+    "GenerateDataKeyWithoutPlaintext",
+    "GetPublicKey",
+    "ReEncryptFrom",
+    "ReEncryptTo",
+    "RetireGrant",
+    "Sign",
+    "Verify",
+]
+```
 ## KeyManagerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import KeyManagerTypeType
+
+def get_value() -> KeyManagerTypeType:
+    return "AWS"
 ```
 
-Values:
-
-- `AWS`
-- `CUSTOMER`
-
-<a id="keyspectype"></a>
-
+```python title="Definition"
+KeyManagerTypeType = Literal[
+    "AWS",
+    "CUSTOMER",
+]
+```
 ## KeySpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import KeySpecType
+
+def get_value() -> KeySpecType:
+    return "ECC_NIST_P256"
 ```
 
-Values:
-
-- `ECC_NIST_P256`
-- `ECC_NIST_P384`
-- `ECC_NIST_P521`
-- `ECC_SECG_P256K1`
-- `RSA_2048`
-- `RSA_3072`
-- `RSA_4096`
-- `SYMMETRIC_DEFAULT`
-
-<a id="keystatetype"></a>
-
+```python title="Definition"
+KeySpecType = Literal[
+    "ECC_NIST_P256",
+    "ECC_NIST_P384",
+    "ECC_NIST_P521",
+    "ECC_SECG_P256K1",
+    "RSA_2048",
+    "RSA_3072",
+    "RSA_4096",
+    "SYMMETRIC_DEFAULT",
+]
+```
 ## KeyStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import KeyStateType
+
+def get_value() -> KeyStateType:
+    return "Creating"
 ```
 
-Values:
-
-- `Creating`
-- `Disabled`
-- `Enabled`
-- `PendingDeletion`
-- `PendingImport`
-- `PendingReplicaDeletion`
-- `Unavailable`
-- `Updating`
-
-<a id="keyusagetypetype"></a>
-
+```python title="Definition"
+KeyStateType = Literal[
+    "Creating",
+    "Disabled",
+    "Enabled",
+    "PendingDeletion",
+    "PendingImport",
+    "PendingReplicaDeletion",
+    "Unavailable",
+    "Updating",
+]
+```
 ## KeyUsageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import KeyUsageTypeType
+
+def get_value() -> KeyUsageTypeType:
+    return "ENCRYPT_DECRYPT"
 ```
 
-Values:
-
-- `ENCRYPT_DECRYPT`
-- `SIGN_VERIFY`
-
-<a id="listaliasespaginatorname"></a>
-
+```python title="Definition"
+KeyUsageTypeType = Literal[
+    "ENCRYPT_DECRYPT",
+    "SIGN_VERIFY",
+]
+```
 ## ListAliasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ListAliasesPaginatorName
+
+def get_value() -> ListAliasesPaginatorName:
+    return "list_aliases"
 ```
 
-Values:
-
-- `list_aliases`
-
-<a id="listgrantspaginatorname"></a>
-
+```python title="Definition"
+ListAliasesPaginatorName = Literal[
+    "list_aliases",
+]
+```
 ## ListGrantsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ListGrantsPaginatorName
+
+def get_value() -> ListGrantsPaginatorName:
+    return "list_grants"
 ```
 
-Values:
-
-- `list_grants`
-
-<a id="listkeypoliciespaginatorname"></a>
-
+```python title="Definition"
+ListGrantsPaginatorName = Literal[
+    "list_grants",
+]
+```
 ## ListKeyPoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ListKeyPoliciesPaginatorName
+
+def get_value() -> ListKeyPoliciesPaginatorName:
+    return "list_key_policies"
 ```
 
-Values:
-
-- `list_key_policies`
-
-<a id="listkeyspaginatorname"></a>
-
+```python title="Definition"
+ListKeyPoliciesPaginatorName = Literal[
+    "list_key_policies",
+]
+```
 ## ListKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ListKeysPaginatorName
+
+def get_value() -> ListKeysPaginatorName:
+    return "list_keys"
 ```
 
-Values:
-
-- `list_keys`
-
-<a id="messagetypetype"></a>
-
+```python title="Definition"
+ListKeysPaginatorName = Literal[
+    "list_keys",
+]
+```
 ## MessageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import MessageTypeType
+
+def get_value() -> MessageTypeType:
+    return "DIGEST"
 ```
 
-Values:
-
-- `DIGEST`
-- `RAW`
-
-<a id="multiregionkeytypetype"></a>
-
+```python title="Definition"
+MessageTypeType = Literal[
+    "DIGEST",
+    "RAW",
+]
+```
 ## MultiRegionKeyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import MultiRegionKeyTypeType
+
+def get_value() -> MultiRegionKeyTypeType:
+    return "PRIMARY"
 ```
 
-Values:
-
-- `PRIMARY`
-- `REPLICA`
-
-<a id="origintypetype"></a>
-
+```python title="Definition"
+MultiRegionKeyTypeType = Literal[
+    "PRIMARY",
+    "REPLICA",
+]
+```
 ## OriginTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import OriginTypeType
+
+def get_value() -> OriginTypeType:
+    return "AWS_CLOUDHSM"
 ```
 
-Values:
-
-- `AWS_CLOUDHSM`
-- `AWS_KMS`
-- `EXTERNAL`
-
-<a id="signingalgorithmspectype"></a>
-
+```python title="Definition"
+OriginTypeType = Literal[
+    "AWS_CLOUDHSM",
+    "AWS_KMS",
+    "EXTERNAL",
+]
+```
 ## SigningAlgorithmSpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import SigningAlgorithmSpecType
+
+def get_value() -> SigningAlgorithmSpecType:
+    return "ECDSA_SHA_256"
 ```
 
-Values:
-
-- `ECDSA_SHA_256`
-- `ECDSA_SHA_384`
-- `ECDSA_SHA_512`
-- `RSASSA_PKCS1_V1_5_SHA_256`
-- `RSASSA_PKCS1_V1_5_SHA_384`
-- `RSASSA_PKCS1_V1_5_SHA_512`
-- `RSASSA_PSS_SHA_256`
-- `RSASSA_PSS_SHA_384`
-- `RSASSA_PSS_SHA_512`
-
-<a id="wrappingkeyspectype"></a>
-
+```python title="Definition"
+SigningAlgorithmSpecType = Literal[
+    "ECDSA_SHA_256",
+    "ECDSA_SHA_384",
+    "ECDSA_SHA_512",
+    "RSASSA_PKCS1_V1_5_SHA_256",
+    "RSASSA_PKCS1_V1_5_SHA_384",
+    "RSASSA_PKCS1_V1_5_SHA_512",
+    "RSASSA_PSS_SHA_256",
+    "RSASSA_PSS_SHA_384",
+    "RSASSA_PSS_SHA_512",
+]
+```
 ## WrappingKeySpecType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import WrappingKeySpecType
+
+def get_value() -> WrappingKeySpecType:
+    return "RSA_2048"
 ```
 
-Values:
-
-- `RSA_2048`
-
-<a id="kmsservicename"></a>
-
+```python title="Definition"
+WrappingKeySpecType = Literal[
+    "RSA_2048",
+]
+```
 ## KMSServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import KMSServiceName
+
+def get_value() -> KMSServiceName:
+    return "kms"
 ```
 
-Values:
-
-- `kms`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+KMSServiceName = Literal[
+    "kms",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kms.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_aliases"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_aliases",
+    "list_grants",
+    "list_key_policies",
+    "list_keys",
+]
+```
+## RegionName
 
-- `list_aliases`
-- `list_grants`
-- `list_key_policies`
-- `list_keys`
+```python title="Usage Example"
+from mypy_boto3_kms.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

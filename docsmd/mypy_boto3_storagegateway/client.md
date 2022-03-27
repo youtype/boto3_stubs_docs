@@ -1,122 +1,18 @@
-<a id="storagegatewayclient-for-boto3-storagegateway-module"></a>
-
-# StorageGatewayClient for boto3 StorageGateway module
+# StorageGatewayClient
 
 > [Index](../README.md) > [StorageGateway](./README.md) > StorageGatewayClient
 
-Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module
-[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+!!! note ""
 
-- [StorageGatewayClient for boto3 StorageGateway module](#storagegatewayclient-for-boto3-storagegateway-module)
-  - [StorageGatewayClient](#storagegatewayclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [activate_gateway](#activate_gateway)
-    - [add_cache](#add_cache)
-    - [add_tags_to_resource](#add_tags_to_resource)
-    - [add_upload_buffer](#add_upload_buffer)
-    - [add_working_storage](#add_working_storage)
-    - [assign_tape_pool](#assign_tape_pool)
-    - [associate_file_system](#associate_file_system)
-    - [attach_volume](#attach_volume)
-    - [can_paginate](#can_paginate)
-    - [cancel_archival](#cancel_archival)
-    - [cancel_retrieval](#cancel_retrieval)
-    - [create_cached_iscsi_volume](#create_cached_iscsi_volume)
-    - [create_nfs_file_share](#create_nfs_file_share)
-    - [create_smb_file_share](#create_smb_file_share)
-    - [create_snapshot](#create_snapshot)
-    - [create_snapshot_from_volume_recovery_point](#create_snapshot_from_volume_recovery_point)
-    - [create_stored_iscsi_volume](#create_stored_iscsi_volume)
-    - [create_tape_pool](#create_tape_pool)
-    - [create_tape_with_barcode](#create_tape_with_barcode)
-    - [create_tapes](#create_tapes)
-    - [delete_automatic_tape_creation_policy](#delete_automatic_tape_creation_policy)
-    - [delete_bandwidth_rate_limit](#delete_bandwidth_rate_limit)
-    - [delete_chap_credentials](#delete_chap_credentials)
-    - [delete_file_share](#delete_file_share)
-    - [delete_gateway](#delete_gateway)
-    - [delete_snapshot_schedule](#delete_snapshot_schedule)
-    - [delete_tape](#delete_tape)
-    - [delete_tape_archive](#delete_tape_archive)
-    - [delete_tape_pool](#delete_tape_pool)
-    - [delete_volume](#delete_volume)
-    - [describe_availability_monitor_test](#describe_availability_monitor_test)
-    - [describe_bandwidth_rate_limit](#describe_bandwidth_rate_limit)
-    - [describe_bandwidth_rate_limit_schedule](#describe_bandwidth_rate_limit_schedule)
-    - [describe_cache](#describe_cache)
-    - [describe_cached_iscsi_volumes](#describe_cached_iscsi_volumes)
-    - [describe_chap_credentials](#describe_chap_credentials)
-    - [describe_file_system_associations](#describe_file_system_associations)
-    - [describe_gateway_information](#describe_gateway_information)
-    - [describe_maintenance_start_time](#describe_maintenance_start_time)
-    - [describe_nfs_file_shares](#describe_nfs_file_shares)
-    - [describe_smb_file_shares](#describe_smb_file_shares)
-    - [describe_smb_settings](#describe_smb_settings)
-    - [describe_snapshot_schedule](#describe_snapshot_schedule)
-    - [describe_stored_iscsi_volumes](#describe_stored_iscsi_volumes)
-    - [describe_tape_archives](#describe_tape_archives)
-    - [describe_tape_recovery_points](#describe_tape_recovery_points)
-    - [describe_tapes](#describe_tapes)
-    - [describe_upload_buffer](#describe_upload_buffer)
-    - [describe_vtl_devices](#describe_vtl_devices)
-    - [describe_working_storage](#describe_working_storage)
-    - [detach_volume](#detach_volume)
-    - [disable_gateway](#disable_gateway)
-    - [disassociate_file_system](#disassociate_file_system)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [join_domain](#join_domain)
-    - [list_automatic_tape_creation_policies](#list_automatic_tape_creation_policies)
-    - [list_file_shares](#list_file_shares)
-    - [list_file_system_associations](#list_file_system_associations)
-    - [list_gateways](#list_gateways)
-    - [list_local_disks](#list_local_disks)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_tape_pools](#list_tape_pools)
-    - [list_tapes](#list_tapes)
-    - [list_volume_initiators](#list_volume_initiators)
-    - [list_volume_recovery_points](#list_volume_recovery_points)
-    - [list_volumes](#list_volumes)
-    - [notify_when_uploaded](#notify_when_uploaded)
-    - [refresh_cache](#refresh_cache)
-    - [remove_tags_from_resource](#remove_tags_from_resource)
-    - [reset_cache](#reset_cache)
-    - [retrieve_tape_archive](#retrieve_tape_archive)
-    - [retrieve_tape_recovery_point](#retrieve_tape_recovery_point)
-    - [set_local_console_password](#set_local_console_password)
-    - [set_smb_guest_password](#set_smb_guest_password)
-    - [shutdown_gateway](#shutdown_gateway)
-    - [start_availability_monitor_test](#start_availability_monitor_test)
-    - [start_gateway](#start_gateway)
-    - [update_automatic_tape_creation_policy](#update_automatic_tape_creation_policy)
-    - [update_bandwidth_rate_limit](#update_bandwidth_rate_limit)
-    - [update_bandwidth_rate_limit_schedule](#update_bandwidth_rate_limit_schedule)
-    - [update_chap_credentials](#update_chap_credentials)
-    - [update_file_system_association](#update_file_system_association)
-    - [update_gateway_information](#update_gateway_information)
-    - [update_gateway_software_now](#update_gateway_software_now)
-    - [update_maintenance_start_time](#update_maintenance_start_time)
-    - [update_nfs_file_share](#update_nfs_file_share)
-    - [update_smb_file_share](#update_smb_file_share)
-    - [update_smb_file_share_visibility](#update_smb_file_share_visibility)
-    - [update_smb_local_groups](#update_smb_local_groups)
-    - [update_smb_security_strategy](#update_smb_security_strategy)
-    - [update_snapshot_schedule](#update_snapshot_schedule)
-    - [update_vtl_device_type](#update_vtl_device_type)
-    - [get_paginator](#get_paginator)
-
-<a id="storagegatewayclient"></a>
+    Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+    type annotations stubs module [mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ## StorageGatewayClient
 
-Type annotations for `boto3.client("storagegateway")`
+Type annotations and code completion for `#!python boto3.client("storagegateway")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_storagegateway.client import StorageGatewayClient
 
@@ -124,2312 +20,3042 @@ def get_storagegateway_client() -> StorageGatewayClient:
     return Session().client("storagegateway")
 ```
 
-Boto3 documentation:
-[StorageGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("storagegateway").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("storagegateway")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerError,
+    client.InvalidGatewayRequestException,
+    client.ServiceUnavailableError,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_storagegateway.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidGatewayRequestException`
-- `Exceptions.ServiceUnavailableError`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-StorageGatewayClient exceptions.
-
-Type annotations for `boto3.client("storagegateway").exceptions` method.
-
-Boto3 documentation:
-[StorageGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="activate\_gateway"></a>
-
-### activate_gateway
+### activate\_gateway
 
 Activates the gateway you previously deployed on your host.
 
-Type annotations for `boto3.client("storagegateway").activate_gateway` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").activate_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.activate_gateway)
 
-Boto3 documentation:
-[StorageGateway.Client.activate_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.activate_gateway)
+```python title="Method definition"
+def activate_gateway(
+    self,
+    *,
+    ActivationKey: str,
+    GatewayName: str,
+    GatewayTimezone: str,
+    GatewayRegion: str,
+    GatewayType: str = ...,
+    TapeDriveType: str = ...,
+    MediumChangerType: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> ActivateGatewayOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ActivateGatewayInputRequestTypeDef](./type_defs.md#activategatewayinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ActivationKey`: `str` *(required)*
-- `GatewayName`: `str` *(required)*
-- `GatewayTimezone`: `str` *(required)*
-- `GatewayRegion`: `str` *(required)*
-- `GatewayType`: `str`
-- `TapeDriveType`: `str`
-- `MediumChangerType`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ActivateGatewayInputRequestTypeDef = {  # (1)
+    "ActivationKey": ...,
+    "GatewayName": ...,
+    "GatewayTimezone": ...,
+    "GatewayRegion": ...,
+}
 
-Returns
-[ActivateGatewayOutputTypeDef](./type_defs.md#activategatewayoutputtypedef).
+parent.activate_gateway(**kwargs)
+```
 
-<a id="add\_cache"></a>
+1. See [:material-code-braces: ActivateGatewayInputRequestTypeDef](./type_defs.md#activategatewayinputrequesttypedef) 
 
-### add_cache
+### add\_cache
 
 Configures one or more gateway local disks as cache for a gateway.
 
-Type annotations for `boto3.client("storagegateway").add_cache` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").add_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache)
 
-Boto3 documentation:
-[StorageGateway.Client.add_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_cache)
+```python title="Method definition"
+def add_cache(
+    self,
+    *,
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+) -> AddCacheOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddCacheInputRequestTypeDef](./type_defs.md#addcacheinputrequesttypedef).
+1. See [:material-code-braces: AddCacheOutputTypeDef](./type_defs.md#addcacheoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `DiskIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddCacheInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "DiskIds": ...,
+}
 
-Returns [AddCacheOutputTypeDef](./type_defs.md#addcacheoutputtypedef).
+parent.add_cache(**kwargs)
+```
 
-<a id="add\_tags\_to\_resource"></a>
+1. See [:material-code-braces: AddCacheInputRequestTypeDef](./type_defs.md#addcacheinputrequesttypedef) 
 
-### add_tags_to_resource
+### add\_tags\_to\_resource
 
 Adds one or more tags to the specified resource.
 
-Type annotations for `boto3.client("storagegateway").add_tags_to_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").add_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource)
 
-Boto3 documentation:
-[StorageGateway.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_tags_to_resource)
+```python title="Method definition"
+def add_tags_to_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> AddTagsToResourceOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToResourceInputRequestTypeDef](./type_defs.md#addtagstoresourceinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: AddTagsToResourceOutputTypeDef](./type_defs.md#addtagstoresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns
-[AddTagsToResourceOutputTypeDef](./type_defs.md#addtagstoresourceoutputtypedef).
+parent.add_tags_to_resource(**kwargs)
+```
 
-<a id="add\_upload\_buffer"></a>
+1. See [:material-code-braces: AddTagsToResourceInputRequestTypeDef](./type_defs.md#addtagstoresourceinputrequesttypedef) 
 
-### add_upload_buffer
+### add\_upload\_buffer
 
 Configures one or more gateway local disks as upload buffer for a specified
 gateway.
 
-Type annotations for `boto3.client("storagegateway").add_upload_buffer` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").add_upload_buffer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer)
 
-Boto3 documentation:
-[StorageGateway.Client.add_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_upload_buffer)
+```python title="Method definition"
+def add_upload_buffer(
+    self,
+    *,
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+) -> AddUploadBufferOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddUploadBufferInputRequestTypeDef](./type_defs.md#adduploadbufferinputrequesttypedef).
+1. See [:material-code-braces: AddUploadBufferOutputTypeDef](./type_defs.md#adduploadbufferoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `DiskIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddUploadBufferInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "DiskIds": ...,
+}
 
-Returns
-[AddUploadBufferOutputTypeDef](./type_defs.md#adduploadbufferoutputtypedef).
+parent.add_upload_buffer(**kwargs)
+```
 
-<a id="add\_working\_storage"></a>
+1. See [:material-code-braces: AddUploadBufferInputRequestTypeDef](./type_defs.md#adduploadbufferinputrequesttypedef) 
 
-### add_working_storage
+### add\_working\_storage
 
 Configures one or more gateway local disks as working storage for a gateway.
 
-Type annotations for `boto3.client("storagegateway").add_working_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").add_working_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage)
 
-Boto3 documentation:
-[StorageGateway.Client.add_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.add_working_storage)
+```python title="Method definition"
+def add_working_storage(
+    self,
+    *,
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+) -> AddWorkingStorageOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddWorkingStorageInputRequestTypeDef](./type_defs.md#addworkingstorageinputrequesttypedef).
+1. See [:material-code-braces: AddWorkingStorageOutputTypeDef](./type_defs.md#addworkingstorageoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `DiskIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddWorkingStorageInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "DiskIds": ...,
+}
 
-Returns
-[AddWorkingStorageOutputTypeDef](./type_defs.md#addworkingstorageoutputtypedef).
+parent.add_working_storage(**kwargs)
+```
 
-<a id="assign\_tape\_pool"></a>
+1. See [:material-code-braces: AddWorkingStorageInputRequestTypeDef](./type_defs.md#addworkingstorageinputrequesttypedef) 
 
-### assign_tape_pool
+### assign\_tape\_pool
 
 Assigns a tape to a tape pool for archiving.
 
-Type annotations for `boto3.client("storagegateway").assign_tape_pool` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").assign_tape_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.assign_tape_pool)
 
-Boto3 documentation:
-[StorageGateway.Client.assign_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.assign_tape_pool)
+```python title="Method definition"
+def assign_tape_pool(
+    self,
+    *,
+    TapeARN: str,
+    PoolId: str,
+    BypassGovernanceRetention: bool = ...,
+) -> AssignTapePoolOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssignTapePoolInputRequestTypeDef](./type_defs.md#assigntapepoolinputrequesttypedef).
+1. See [:material-code-braces: AssignTapePoolOutputTypeDef](./type_defs.md#assigntapepooloutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARN`: `str` *(required)*
-- `PoolId`: `str` *(required)*
-- `BypassGovernanceRetention`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssignTapePoolInputRequestTypeDef = {  # (1)
+    "TapeARN": ...,
+    "PoolId": ...,
+}
 
-Returns
-[AssignTapePoolOutputTypeDef](./type_defs.md#assigntapepooloutputtypedef).
+parent.assign_tape_pool(**kwargs)
+```
 
-<a id="associate\_file\_system"></a>
+1. See [:material-code-braces: AssignTapePoolInputRequestTypeDef](./type_defs.md#assigntapepoolinputrequesttypedef) 
 
-### associate_file_system
+### associate\_file\_system
 
 Associate an Amazon FSx file system with the FSx File Gateway.
 
-Type annotations for `boto3.client("storagegateway").associate_file_system`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").associate_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.associate_file_system)
 
-Boto3 documentation:
-[StorageGateway.Client.associate_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.associate_file_system)
+```python title="Method definition"
+def associate_file_system(
+    self,
+    *,
+    UserName: str,
+    Password: str,
+    ClientToken: str,
+    GatewayARN: str,
+    LocationARN: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    AuditDestinationARN: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (2)
+    EndpointNetworkConfiguration: EndpointNetworkConfigurationTypeDef = ...,  # (3)
+) -> AssociateFileSystemOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[AssociateFileSystemInputRequestTypeDef](./type_defs.md#associatefilesysteminputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+3. See [:material-code-braces: EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef) 
+4. See [:material-code-braces: AssociateFileSystemOutputTypeDef](./type_defs.md#associatefilesystemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `GatewayARN`: `str` *(required)*
-- `LocationARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AuditDestinationARN`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `EndpointNetworkConfiguration`:
-  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: AssociateFileSystemInputRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "Password": ...,
+    "ClientToken": ...,
+    "GatewayARN": ...,
+    "LocationARN": ...,
+}
 
-Returns
-[AssociateFileSystemOutputTypeDef](./type_defs.md#associatefilesystemoutputtypedef).
+parent.associate_file_system(**kwargs)
+```
 
-<a id="attach\_volume"></a>
+1. See [:material-code-braces: AssociateFileSystemInputRequestTypeDef](./type_defs.md#associatefilesysteminputrequesttypedef) 
 
-### attach_volume
+### attach\_volume
 
 Connects a volume to an iSCSI connection and then attaches the volume to the
 specified gateway.
 
-Type annotations for `boto3.client("storagegateway").attach_volume` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").attach_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.attach_volume)
 
-Boto3 documentation:
-[StorageGateway.Client.attach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.attach_volume)
+```python title="Method definition"
+def attach_volume(
+    self,
+    *,
+    GatewayARN: str,
+    VolumeARN: str,
+    NetworkInterfaceId: str,
+    TargetName: str = ...,
+    DiskId: str = ...,
+) -> AttachVolumeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AttachVolumeInputRequestTypeDef](./type_defs.md#attachvolumeinputrequesttypedef).
+1. See [:material-code-braces: AttachVolumeOutputTypeDef](./type_defs.md#attachvolumeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `VolumeARN`: `str` *(required)*
-- `NetworkInterfaceId`: `str` *(required)*
-- `TargetName`: `str`
-- `DiskId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AttachVolumeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "VolumeARN": ...,
+    "NetworkInterfaceId": ...,
+}
 
-Returns [AttachVolumeOutputTypeDef](./type_defs.md#attachvolumeoutputtypedef).
+parent.attach_volume(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AttachVolumeInputRequestTypeDef](./type_defs.md#attachvolumeinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("storagegateway").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.can_paginate)
 
-Boto3 documentation:
-[StorageGateway.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_archival"></a>
-
-### cancel_archival
+### cancel\_archival
 
 Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the
 archiving process is initiated.
 
-Type annotations for `boto3.client("storagegateway").cancel_archival` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").cancel_archival` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival)
 
-Boto3 documentation:
-[StorageGateway.Client.cancel_archival](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_archival)
+```python title="Method definition"
+def cancel_archival(
+    self,
+    *,
+    GatewayARN: str,
+    TapeARN: str,
+) -> CancelArchivalOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelArchivalInputRequestTypeDef](./type_defs.md#cancelarchivalinputrequesttypedef).
+1. See [:material-code-braces: CancelArchivalOutputTypeDef](./type_defs.md#cancelarchivaloutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelArchivalInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "TapeARN": ...,
+}
 
-Returns
-[CancelArchivalOutputTypeDef](./type_defs.md#cancelarchivaloutputtypedef).
+parent.cancel_archival(**kwargs)
+```
 
-<a id="cancel\_retrieval"></a>
+1. See [:material-code-braces: CancelArchivalInputRequestTypeDef](./type_defs.md#cancelarchivalinputrequesttypedef) 
 
-### cancel_retrieval
+### cancel\_retrieval
 
 Cancels retrieval of a virtual tape from the virtual tape shelf (VTS) to a
 gateway after the retrieval process is initiated.
 
-Type annotations for `boto3.client("storagegateway").cancel_retrieval` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").cancel_retrieval` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval)
 
-Boto3 documentation:
-[StorageGateway.Client.cancel_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.cancel_retrieval)
+```python title="Method definition"
+def cancel_retrieval(
+    self,
+    *,
+    GatewayARN: str,
+    TapeARN: str,
+) -> CancelRetrievalOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelRetrievalInputRequestTypeDef](./type_defs.md#cancelretrievalinputrequesttypedef).
+1. See [:material-code-braces: CancelRetrievalOutputTypeDef](./type_defs.md#cancelretrievaloutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelRetrievalInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "TapeARN": ...,
+}
 
-Returns
-[CancelRetrievalOutputTypeDef](./type_defs.md#cancelretrievaloutputtypedef).
+parent.cancel_retrieval(**kwargs)
+```
 
-<a id="create\_cached\_iscsi\_volume"></a>
+1. See [:material-code-braces: CancelRetrievalInputRequestTypeDef](./type_defs.md#cancelretrievalinputrequesttypedef) 
 
-### create_cached_iscsi_volume
+### create\_cached\_iscsi\_volume
 
 Creates a cached volume on a specified cached volume gateway.
 
-Type annotations for
-`boto3.client("storagegateway").create_cached_iscsi_volume` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_cached_iscsi_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_cached_iscsi_volume)
 
-Boto3 documentation:
-[StorageGateway.Client.create_cached_iscsi_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_cached_iscsi_volume)
+```python title="Method definition"
+def create_cached_iscsi_volume(
+    self,
+    *,
+    GatewayARN: str,
+    VolumeSizeInBytes: int,
+    TargetName: str,
+    NetworkInterfaceId: str,
+    ClientToken: str,
+    SnapshotId: str = ...,
+    SourceVolumeARN: str = ...,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateCachediSCSIVolumeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCachediSCSIVolumeInputRequestTypeDef](./type_defs.md#createcachediscsivolumeinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateCachediSCSIVolumeOutputTypeDef](./type_defs.md#createcachediscsivolumeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `VolumeSizeInBytes`: `int` *(required)*
-- `TargetName`: `str` *(required)*
-- `NetworkInterfaceId`: `str` *(required)*
-- `ClientToken`: `str` *(required)*
-- `SnapshotId`: `str`
-- `SourceVolumeARN`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCachediSCSIVolumeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "VolumeSizeInBytes": ...,
+    "TargetName": ...,
+    "NetworkInterfaceId": ...,
+    "ClientToken": ...,
+}
 
-Returns
-[CreateCachediSCSIVolumeOutputTypeDef](./type_defs.md#createcachediscsivolumeoutputtypedef).
+parent.create_cached_iscsi_volume(**kwargs)
+```
 
-<a id="create\_nfs\_file\_share"></a>
+1. See [:material-code-braces: CreateCachediSCSIVolumeInputRequestTypeDef](./type_defs.md#createcachediscsivolumeinputrequesttypedef) 
 
-### create_nfs_file_share
+### create\_nfs\_file\_share
 
 Creates a Network File System (NFS) file share on an existing S3 File Gateway.
 
-Type annotations for `boto3.client("storagegateway").create_nfs_file_share`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_nfs_file_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_nfs_file_share)
 
-Boto3 documentation:
-[StorageGateway.Client.create_nfs_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_nfs_file_share)
+```python title="Method definition"
+def create_nfs_file_share(
+    self,
+    *,
+    ClientToken: str,
+    GatewayARN: str,
+    Role: str,
+    LocationARN: str,
+    NFSFileShareDefaults: NFSFileShareDefaultsTypeDef = ...,  # (1)
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    DefaultStorageClass: str = ...,
+    ObjectACL: ObjectACLType = ...,  # (2)
+    ClientList: Sequence[str] = ...,
+    Squash: str = ...,
+    ReadOnly: bool = ...,
+    GuessMIMETypeEnabled: bool = ...,
+    RequesterPays: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    FileShareName: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (4)
+    NotificationPolicy: str = ...,
+    VPCEndpointDNSName: str = ...,
+    BucketRegion: str = ...,
+    AuditDestinationARN: str = ...,
+) -> CreateNFSFileShareOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateNFSFileShareInputRequestTypeDef](./type_defs.md#createnfsfileshareinputrequesttypedef).
+1. See [:material-code-braces: NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef) 
+2. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+5. See [:material-code-braces: CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `GatewayARN`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `LocationARN`: `str` *(required)*
-- `NFSFileShareDefaults`:
-  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `Sequence`\[`str`\]
-- `Squash`: `str`
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `AuditDestinationARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateNFSFileShareInputRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "GatewayARN": ...,
+    "Role": ...,
+    "LocationARN": ...,
+}
 
-Returns
-[CreateNFSFileShareOutputTypeDef](./type_defs.md#createnfsfileshareoutputtypedef).
+parent.create_nfs_file_share(**kwargs)
+```
 
-<a id="create\_smb\_file\_share"></a>
+1. See [:material-code-braces: CreateNFSFileShareInputRequestTypeDef](./type_defs.md#createnfsfileshareinputrequesttypedef) 
 
-### create_smb_file_share
+### create\_smb\_file\_share
 
 Creates a Server Message Block (SMB) file share on an existing S3 File Gateway.
 
-Type annotations for `boto3.client("storagegateway").create_smb_file_share`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_smb_file_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_smb_file_share)
 
-Boto3 documentation:
-[StorageGateway.Client.create_smb_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_smb_file_share)
+```python title="Method definition"
+def create_smb_file_share(
+    self,
+    *,
+    ClientToken: str,
+    GatewayARN: str,
+    Role: str,
+    LocationARN: str,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    DefaultStorageClass: str = ...,
+    ObjectACL: ObjectACLType = ...,  # (1)
+    ReadOnly: bool = ...,
+    GuessMIMETypeEnabled: bool = ...,
+    RequesterPays: bool = ...,
+    SMBACLEnabled: bool = ...,
+    AccessBasedEnumeration: bool = ...,
+    AdminUserList: Sequence[str] = ...,
+    ValidUserList: Sequence[str] = ...,
+    InvalidUserList: Sequence[str] = ...,
+    AuditDestinationARN: str = ...,
+    Authentication: str = ...,
+    CaseSensitivity: CaseSensitivityType = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    FileShareName: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (4)
+    NotificationPolicy: str = ...,
+    VPCEndpointDNSName: str = ...,
+    BucketRegion: str = ...,
+    OplocksEnabled: bool = ...,
+) -> CreateSMBFileShareOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateSMBFileShareInputRequestTypeDef](./type_defs.md#createsmbfileshareinputrequesttypedef).
+1. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+2. See [:material-code-brackets: CaseSensitivityType](./literals.md#casesensitivitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+5. See [:material-code-braces: CreateSMBFileShareOutputTypeDef](./type_defs.md#createsmbfileshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `GatewayARN`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `LocationARN`: `str` *(required)*
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `SMBACLEnabled`: `bool`
-- `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `Sequence`\[`str`\]
-- `ValidUserList`: `Sequence`\[`str`\]
-- `InvalidUserList`: `Sequence`\[`str`\]
-- `AuditDestinationARN`: `str`
-- `Authentication`: `str`
-- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `OplocksEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateSMBFileShareInputRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "GatewayARN": ...,
+    "Role": ...,
+    "LocationARN": ...,
+}
 
-Returns
-[CreateSMBFileShareOutputTypeDef](./type_defs.md#createsmbfileshareoutputtypedef).
+parent.create_smb_file_share(**kwargs)
+```
 
-<a id="create\_snapshot"></a>
+1. See [:material-code-braces: CreateSMBFileShareInputRequestTypeDef](./type_defs.md#createsmbfileshareinputrequesttypedef) 
 
-### create_snapshot
+### create\_snapshot
 
 Initiates a snapshot of a volume.
 
-Type annotations for `boto3.client("storagegateway").create_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot)
 
-Boto3 documentation:
-[StorageGateway.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot)
+```python title="Method definition"
+def create_snapshot(
+    self,
+    *,
+    VolumeARN: str,
+    SnapshotDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSnapshotOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotInputRequestTypeDef](./type_defs.md#createsnapshotinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSnapshotOutputTypeDef](./type_defs.md#createsnapshotoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
-- `SnapshotDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+    "SnapshotDescription": ...,
+}
 
-Returns
-[CreateSnapshotOutputTypeDef](./type_defs.md#createsnapshotoutputtypedef).
+parent.create_snapshot(**kwargs)
+```
 
-<a id="create\_snapshot\_from\_volume\_recovery\_point"></a>
+1. See [:material-code-braces: CreateSnapshotInputRequestTypeDef](./type_defs.md#createsnapshotinputrequesttypedef) 
 
-### create_snapshot_from_volume_recovery_point
+### create\_snapshot\_from\_volume\_recovery\_point
 
 Initiates a snapshot of a gateway from a volume recovery point.
 
-Type annotations for
-`boto3.client("storagegateway").create_snapshot_from_volume_recovery_point`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_snapshot_from_volume_recovery_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot_from_volume_recovery_point)
 
-Boto3 documentation:
-[StorageGateway.Client.create_snapshot_from_volume_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_snapshot_from_volume_recovery_point)
+```python title="Method definition"
+def create_snapshot_from_volume_recovery_point(
+    self,
+    *,
+    VolumeARN: str,
+    SnapshotDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSnapshotFromVolumeRecoveryPointOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
-- `SnapshotDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+    "SnapshotDescription": ...,
+}
 
-Returns
-[CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointoutputtypedef).
+parent.create_snapshot_from_volume_recovery_point(**kwargs)
+```
 
-<a id="create\_stored\_iscsi\_volume"></a>
+1. See [:material-code-braces: CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef](./type_defs.md#createsnapshotfromvolumerecoverypointinputrequesttypedef) 
 
-### create_stored_iscsi_volume
+### create\_stored\_iscsi\_volume
 
 Creates a volume on a specified gateway.
 
-Type annotations for
-`boto3.client("storagegateway").create_stored_iscsi_volume` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_stored_iscsi_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_stored_iscsi_volume)
 
-Boto3 documentation:
-[StorageGateway.Client.create_stored_iscsi_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_stored_iscsi_volume)
+```python title="Method definition"
+def create_stored_iscsi_volume(
+    self,
+    *,
+    GatewayARN: str,
+    DiskId: str,
+    PreserveExistingData: bool,
+    TargetName: str,
+    NetworkInterfaceId: str,
+    SnapshotId: str = ...,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateStorediSCSIVolumeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateStorediSCSIVolumeInputRequestTypeDef](./type_defs.md#createstorediscsivolumeinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateStorediSCSIVolumeOutputTypeDef](./type_defs.md#createstorediscsivolumeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `DiskId`: `str` *(required)*
-- `PreserveExistingData`: `bool` *(required)*
-- `TargetName`: `str` *(required)*
-- `NetworkInterfaceId`: `str` *(required)*
-- `SnapshotId`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateStorediSCSIVolumeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "DiskId": ...,
+    "PreserveExistingData": ...,
+    "TargetName": ...,
+    "NetworkInterfaceId": ...,
+}
 
-Returns
-[CreateStorediSCSIVolumeOutputTypeDef](./type_defs.md#createstorediscsivolumeoutputtypedef).
+parent.create_stored_iscsi_volume(**kwargs)
+```
 
-<a id="create\_tape\_pool"></a>
+1. See [:material-code-braces: CreateStorediSCSIVolumeInputRequestTypeDef](./type_defs.md#createstorediscsivolumeinputrequesttypedef) 
 
-### create_tape_pool
+### create\_tape\_pool
 
 Creates a new custom tape pool.
 
-Type annotations for `boto3.client("storagegateway").create_tape_pool` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_tape_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_pool)
 
-Boto3 documentation:
-[StorageGateway.Client.create_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_pool)
+```python title="Method definition"
+def create_tape_pool(
+    self,
+    *,
+    PoolName: str,
+    StorageClass: TapeStorageClassType,  # (1)
+    RetentionLockType: RetentionLockTypeType = ...,  # (2)
+    RetentionLockTimeInDays: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateTapePoolOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateTapePoolInputRequestTypeDef](./type_defs.md#createtapepoolinputrequesttypedef).
+1. See [:material-code-brackets: TapeStorageClassType](./literals.md#tapestorageclasstype) 
+2. See [:material-code-brackets: RetentionLockTypeType](./literals.md#retentionlocktypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateTapePoolOutputTypeDef](./type_defs.md#createtapepooloutputtypedef) 
 
-Keyword-only arguments:
 
-- `PoolName`: `str` *(required)*
-- `StorageClass`: [TapeStorageClassType](./literals.md#tapestorageclasstype)
-  *(required)*
-- `RetentionLockType`:
-  [RetentionLockTypeType](./literals.md#retentionlocktypetype)
-- `RetentionLockTimeInDays`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTapePoolInputRequestTypeDef = {  # (1)
+    "PoolName": ...,
+    "StorageClass": ...,
+}
 
-Returns
-[CreateTapePoolOutputTypeDef](./type_defs.md#createtapepooloutputtypedef).
+parent.create_tape_pool(**kwargs)
+```
 
-<a id="create\_tape\_with\_barcode"></a>
+1. See [:material-code-braces: CreateTapePoolInputRequestTypeDef](./type_defs.md#createtapepoolinputrequesttypedef) 
 
-### create_tape_with_barcode
+### create\_tape\_with\_barcode
 
 Creates a virtual tape by using your own barcode.
 
-Type annotations for `boto3.client("storagegateway").create_tape_with_barcode`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_tape_with_barcode` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_with_barcode)
 
-Boto3 documentation:
-[StorageGateway.Client.create_tape_with_barcode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tape_with_barcode)
+```python title="Method definition"
+def create_tape_with_barcode(
+    self,
+    *,
+    GatewayARN: str,
+    TapeSizeInBytes: int,
+    TapeBarcode: str,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    PoolId: str = ...,
+    Worm: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateTapeWithBarcodeOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTapeWithBarcodeInputRequestTypeDef](./type_defs.md#createtapewithbarcodeinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTapeWithBarcodeOutputTypeDef](./type_defs.md#createtapewithbarcodeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeSizeInBytes`: `int` *(required)*
-- `TapeBarcode`: `str` *(required)*
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTapeWithBarcodeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "TapeSizeInBytes": ...,
+    "TapeBarcode": ...,
+}
 
-Returns
-[CreateTapeWithBarcodeOutputTypeDef](./type_defs.md#createtapewithbarcodeoutputtypedef).
+parent.create_tape_with_barcode(**kwargs)
+```
 
-<a id="create\_tapes"></a>
+1. See [:material-code-braces: CreateTapeWithBarcodeInputRequestTypeDef](./type_defs.md#createtapewithbarcodeinputrequesttypedef) 
 
-### create_tapes
+### create\_tapes
 
 Creates one or more virtual tapes.
 
-Type annotations for `boto3.client("storagegateway").create_tapes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").create_tapes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tapes)
 
-Boto3 documentation:
-[StorageGateway.Client.create_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.create_tapes)
+```python title="Method definition"
+def create_tapes(
+    self,
+    *,
+    GatewayARN: str,
+    TapeSizeInBytes: int,
+    ClientToken: str,
+    NumTapesToCreate: int,
+    TapeBarcodePrefix: str,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    PoolId: str = ...,
+    Worm: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateTapesOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTapesInputRequestTypeDef](./type_defs.md#createtapesinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateTapesOutputTypeDef](./type_defs.md#createtapesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeSizeInBytes`: `int` *(required)*
-- `ClientToken`: `str` *(required)*
-- `NumTapesToCreate`: `int` *(required)*
-- `TapeBarcodePrefix`: `str` *(required)*
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTapesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "TapeSizeInBytes": ...,
+    "ClientToken": ...,
+    "NumTapesToCreate": ...,
+    "TapeBarcodePrefix": ...,
+}
 
-Returns [CreateTapesOutputTypeDef](./type_defs.md#createtapesoutputtypedef).
+parent.create_tapes(**kwargs)
+```
 
-<a id="delete\_automatic\_tape\_creation\_policy"></a>
+1. See [:material-code-braces: CreateTapesInputRequestTypeDef](./type_defs.md#createtapesinputrequesttypedef) 
 
-### delete_automatic_tape_creation_policy
+### delete\_automatic\_tape\_creation\_policy
 
 Deletes the automatic tape creation policy of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").delete_automatic_tape_creation_policy` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_automatic_tape_creation_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_automatic_tape_creation_policy)
+```python title="Method definition"
+def delete_automatic_tape_creation_policy(
+    self,
+    *,
+    GatewayARN: str,
+) -> DeleteAutomaticTapeCreationPolicyOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAutomaticTapeCreationPolicyInputRequestTypeDef](./type_defs.md#deleteautomatictapecreationpolicyinputrequesttypedef).
+1. See [:material-code-braces: DeleteAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#deleteautomatictapecreationpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAutomaticTapeCreationPolicyInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DeleteAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#deleteautomatictapecreationpolicyoutputtypedef).
+parent.delete_automatic_tape_creation_policy(**kwargs)
+```
 
-<a id="delete\_bandwidth\_rate\_limit"></a>
+1. See [:material-code-braces: DeleteAutomaticTapeCreationPolicyInputRequestTypeDef](./type_defs.md#deleteautomatictapecreationpolicyinputrequesttypedef) 
 
-### delete_bandwidth_rate_limit
+### delete\_bandwidth\_rate\_limit
 
 Deletes the bandwidth rate limits of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").delete_bandwidth_rate_limit` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_bandwidth_rate_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_bandwidth_rate_limit)
+```python title="Method definition"
+def delete_bandwidth_rate_limit(
+    self,
+    *,
+    GatewayARN: str,
+    BandwidthType: str,
+) -> DeleteBandwidthRateLimitOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBandwidthRateLimitInputRequestTypeDef](./type_defs.md#deletebandwidthratelimitinputrequesttypedef).
+1. See [:material-code-braces: DeleteBandwidthRateLimitOutputTypeDef](./type_defs.md#deletebandwidthratelimitoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `BandwidthType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBandwidthRateLimitInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "BandwidthType": ...,
+}
 
-Returns
-[DeleteBandwidthRateLimitOutputTypeDef](./type_defs.md#deletebandwidthratelimitoutputtypedef).
+parent.delete_bandwidth_rate_limit(**kwargs)
+```
 
-<a id="delete\_chap\_credentials"></a>
+1. See [:material-code-braces: DeleteBandwidthRateLimitInputRequestTypeDef](./type_defs.md#deletebandwidthratelimitinputrequesttypedef) 
 
-### delete_chap_credentials
+### delete\_chap\_credentials
 
 Deletes Challenge-Handshake Authentication Protocol (CHAP) credentials for a
 specified iSCSI target and initiator pair.
 
-Type annotations for `boto3.client("storagegateway").delete_chap_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_chap_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_chap_credentials)
+```python title="Method definition"
+def delete_chap_credentials(
+    self,
+    *,
+    TargetARN: str,
+    InitiatorName: str,
+) -> DeleteChapCredentialsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteChapCredentialsInputRequestTypeDef](./type_defs.md#deletechapcredentialsinputrequesttypedef).
+1. See [:material-code-braces: DeleteChapCredentialsOutputTypeDef](./type_defs.md#deletechapcredentialsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetARN`: `str` *(required)*
-- `InitiatorName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChapCredentialsInputRequestTypeDef = {  # (1)
+    "TargetARN": ...,
+    "InitiatorName": ...,
+}
 
-Returns
-[DeleteChapCredentialsOutputTypeDef](./type_defs.md#deletechapcredentialsoutputtypedef).
+parent.delete_chap_credentials(**kwargs)
+```
 
-<a id="delete\_file\_share"></a>
+1. See [:material-code-braces: DeleteChapCredentialsInputRequestTypeDef](./type_defs.md#deletechapcredentialsinputrequesttypedef) 
 
-### delete_file_share
+### delete\_file\_share
 
 Deletes a file share from an S3 File Gateway.
 
-Type annotations for `boto3.client("storagegateway").delete_file_share` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_file_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_file_share)
+```python title="Method definition"
+def delete_file_share(
+    self,
+    *,
+    FileShareARN: str,
+    ForceDelete: bool = ...,
+) -> DeleteFileShareOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFileShareInputRequestTypeDef](./type_defs.md#deletefileshareinputrequesttypedef).
+1. See [:material-code-braces: DeleteFileShareOutputTypeDef](./type_defs.md#deletefileshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARN`: `str` *(required)*
-- `ForceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteFileShareInputRequestTypeDef = {  # (1)
+    "FileShareARN": ...,
+}
 
-Returns
-[DeleteFileShareOutputTypeDef](./type_defs.md#deletefileshareoutputtypedef).
+parent.delete_file_share(**kwargs)
+```
 
-<a id="delete\_gateway"></a>
+1. See [:material-code-braces: DeleteFileShareInputRequestTypeDef](./type_defs.md#deletefileshareinputrequesttypedef) 
 
-### delete_gateway
+### delete\_gateway
 
 Deletes a gateway.
 
-Type annotations for `boto3.client("storagegateway").delete_gateway` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_gateway)
+```python title="Method definition"
+def delete_gateway(
+    self,
+    *,
+    GatewayARN: str,
+) -> DeleteGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGatewayInputRequestTypeDef](./type_defs.md#deletegatewayinputrequesttypedef).
+1. See [:material-code-braces: DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
+parent.delete_gateway(**kwargs)
+```
 
-<a id="delete\_snapshot\_schedule"></a>
+1. See [:material-code-braces: DeleteGatewayInputRequestTypeDef](./type_defs.md#deletegatewayinputrequesttypedef) 
 
-### delete_snapshot_schedule
+### delete\_snapshot\_schedule
 
 Deletes a snapshot of a volume.
 
-Type annotations for `boto3.client("storagegateway").delete_snapshot_schedule`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_snapshot_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_snapshot_schedule)
+```python title="Method definition"
+def delete_snapshot_schedule(
+    self,
+    *,
+    VolumeARN: str,
+) -> DeleteSnapshotScheduleOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSnapshotScheduleInputRequestTypeDef](./type_defs.md#deletesnapshotscheduleinputrequesttypedef).
+1. See [:material-code-braces: DeleteSnapshotScheduleOutputTypeDef](./type_defs.md#deletesnapshotscheduleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSnapshotScheduleInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+}
 
-Returns
-[DeleteSnapshotScheduleOutputTypeDef](./type_defs.md#deletesnapshotscheduleoutputtypedef).
+parent.delete_snapshot_schedule(**kwargs)
+```
 
-<a id="delete\_tape"></a>
+1. See [:material-code-braces: DeleteSnapshotScheduleInputRequestTypeDef](./type_defs.md#deletesnapshotscheduleinputrequesttypedef) 
 
-### delete_tape
+### delete\_tape
 
 Deletes the specified virtual tape.
 
-Type annotations for `boto3.client("storagegateway").delete_tape` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_tape` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_tape](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape)
+```python title="Method definition"
+def delete_tape(
+    self,
+    *,
+    GatewayARN: str,
+    TapeARN: str,
+    BypassGovernanceRetention: bool = ...,
+) -> DeleteTapeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTapeInputRequestTypeDef](./type_defs.md#deletetapeinputrequesttypedef).
+1. See [:material-code-braces: DeleteTapeOutputTypeDef](./type_defs.md#deletetapeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeARN`: `str` *(required)*
-- `BypassGovernanceRetention`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteTapeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "TapeARN": ...,
+}
 
-Returns [DeleteTapeOutputTypeDef](./type_defs.md#deletetapeoutputtypedef).
+parent.delete_tape(**kwargs)
+```
 
-<a id="delete\_tape\_archive"></a>
+1. See [:material-code-braces: DeleteTapeInputRequestTypeDef](./type_defs.md#deletetapeinputrequesttypedef) 
 
-### delete_tape_archive
+### delete\_tape\_archive
 
 Deletes the specified virtual tape from the virtual tape shelf (VTS).
 
-Type annotations for `boto3.client("storagegateway").delete_tape_archive`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_tape_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_archive)
+```python title="Method definition"
+def delete_tape_archive(
+    self,
+    *,
+    TapeARN: str,
+    BypassGovernanceRetention: bool = ...,
+) -> DeleteTapeArchiveOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTapeArchiveInputRequestTypeDef](./type_defs.md#deletetapearchiveinputrequesttypedef).
+1. See [:material-code-braces: DeleteTapeArchiveOutputTypeDef](./type_defs.md#deletetapearchiveoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARN`: `str` *(required)*
-- `BypassGovernanceRetention`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteTapeArchiveInputRequestTypeDef = {  # (1)
+    "TapeARN": ...,
+}
 
-Returns
-[DeleteTapeArchiveOutputTypeDef](./type_defs.md#deletetapearchiveoutputtypedef).
+parent.delete_tape_archive(**kwargs)
+```
 
-<a id="delete\_tape\_pool"></a>
+1. See [:material-code-braces: DeleteTapeArchiveInputRequestTypeDef](./type_defs.md#deletetapearchiveinputrequesttypedef) 
 
-### delete_tape_pool
+### delete\_tape\_pool
 
 Delete a custom tape pool.
 
-Type annotations for `boto3.client("storagegateway").delete_tape_pool` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_tape_pool` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_tape_pool](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_tape_pool)
+```python title="Method definition"
+def delete_tape_pool(
+    self,
+    *,
+    PoolARN: str,
+) -> DeleteTapePoolOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTapePoolInputRequestTypeDef](./type_defs.md#deletetapepoolinputrequesttypedef).
+1. See [:material-code-braces: DeleteTapePoolOutputTypeDef](./type_defs.md#deletetapepooloutputtypedef) 
 
-Keyword-only arguments:
 
-- `PoolARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTapePoolInputRequestTypeDef = {  # (1)
+    "PoolARN": ...,
+}
 
-Returns
-[DeleteTapePoolOutputTypeDef](./type_defs.md#deletetapepooloutputtypedef).
+parent.delete_tape_pool(**kwargs)
+```
 
-<a id="delete\_volume"></a>
+1. See [:material-code-braces: DeleteTapePoolInputRequestTypeDef](./type_defs.md#deletetapepoolinputrequesttypedef) 
 
-### delete_volume
+### delete\_volume
 
 Deletes the specified storage volume that you previously created using the
-CreateCachediSCSIVolume or CreateStorediSCSIVolume API.
+CreateCachediSCSIVolume or  CreateStorediSCSIVolume API.
 
-Type annotations for `boto3.client("storagegateway").delete_volume` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").delete_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume)
 
-Boto3 documentation:
-[StorageGateway.Client.delete_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.delete_volume)
+```python title="Method definition"
+def delete_volume(
+    self,
+    *,
+    VolumeARN: str,
+) -> DeleteVolumeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVolumeInputRequestTypeDef](./type_defs.md#deletevolumeinputrequesttypedef).
+1. See [:material-code-braces: DeleteVolumeOutputTypeDef](./type_defs.md#deletevolumeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVolumeInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+}
 
-Returns [DeleteVolumeOutputTypeDef](./type_defs.md#deletevolumeoutputtypedef).
+parent.delete_volume(**kwargs)
+```
 
-<a id="describe\_availability\_monitor\_test"></a>
+1. See [:material-code-braces: DeleteVolumeInputRequestTypeDef](./type_defs.md#deletevolumeinputrequesttypedef) 
 
-### describe_availability_monitor_test
+### describe\_availability\_monitor\_test
 
-Returns information about the most recent high availability monitoring test
-that was performed on the host in a cluster.
+Returns information about the most recent high availability monitoring test that
+was performed on the host in a cluster.
 
-Type annotations for
-`boto3.client("storagegateway").describe_availability_monitor_test` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_availability_monitor_test` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_availability_monitor_test)
+```python title="Method definition"
+def describe_availability_monitor_test(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeAvailabilityMonitorTestOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAvailabilityMonitorTestInputRequestTypeDef](./type_defs.md#describeavailabilitymonitortestinputrequesttypedef).
+1. See [:material-code-braces: DescribeAvailabilityMonitorTestOutputTypeDef](./type_defs.md#describeavailabilitymonitortestoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAvailabilityMonitorTestInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeAvailabilityMonitorTestOutputTypeDef](./type_defs.md#describeavailabilitymonitortestoutputtypedef).
+parent.describe_availability_monitor_test(**kwargs)
+```
 
-<a id="describe\_bandwidth\_rate\_limit"></a>
+1. See [:material-code-braces: DescribeAvailabilityMonitorTestInputRequestTypeDef](./type_defs.md#describeavailabilitymonitortestinputrequesttypedef) 
 
-### describe_bandwidth_rate_limit
+### describe\_bandwidth\_rate\_limit
 
 Returns the bandwidth rate limits of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").describe_bandwidth_rate_limit` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_bandwidth_rate_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit)
+```python title="Method definition"
+def describe_bandwidth_rate_limit(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeBandwidthRateLimitOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBandwidthRateLimitInputRequestTypeDef](./type_defs.md#describebandwidthratelimitinputrequesttypedef).
+1. See [:material-code-braces: DescribeBandwidthRateLimitOutputTypeDef](./type_defs.md#describebandwidthratelimitoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBandwidthRateLimitInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeBandwidthRateLimitOutputTypeDef](./type_defs.md#describebandwidthratelimitoutputtypedef).
+parent.describe_bandwidth_rate_limit(**kwargs)
+```
 
-<a id="describe\_bandwidth\_rate\_limit\_schedule"></a>
+1. See [:material-code-braces: DescribeBandwidthRateLimitInputRequestTypeDef](./type_defs.md#describebandwidthratelimitinputrequesttypedef) 
 
-### describe_bandwidth_rate_limit_schedule
+### describe\_bandwidth\_rate\_limit\_schedule
 
 Returns information about the bandwidth rate limit schedule of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").describe_bandwidth_rate_limit_schedule` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_bandwidth_rate_limit_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_bandwidth_rate_limit_schedule)
+```python title="Method definition"
+def describe_bandwidth_rate_limit_schedule(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeBandwidthRateLimitScheduleOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#describebandwidthratelimitscheduleinputrequesttypedef).
+1. See [:material-code-braces: DescribeBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#describebandwidthratelimitscheduleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBandwidthRateLimitScheduleInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#describebandwidthratelimitscheduleoutputtypedef).
+parent.describe_bandwidth_rate_limit_schedule(**kwargs)
+```
 
-<a id="describe\_cache"></a>
+1. See [:material-code-braces: DescribeBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#describebandwidthratelimitscheduleinputrequesttypedef) 
 
-### describe_cache
+### describe\_cache
 
 Returns information about the cache of a gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_cache` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cache)
+```python title="Method definition"
+def describe_cache(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeCacheOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCacheInputRequestTypeDef](./type_defs.md#describecacheinputrequesttypedef).
+1. See [:material-code-braces: DescribeCacheOutputTypeDef](./type_defs.md#describecacheoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeCacheOutputTypeDef](./type_defs.md#describecacheoutputtypedef).
+parent.describe_cache(**kwargs)
+```
 
-<a id="describe\_cached\_iscsi\_volumes"></a>
+1. See [:material-code-braces: DescribeCacheInputRequestTypeDef](./type_defs.md#describecacheinputrequesttypedef) 
 
-### describe_cached_iscsi_volumes
+### describe\_cached\_iscsi\_volumes
 
 Returns a description of the gateway volumes specified in the request.
 
-Type annotations for
-`boto3.client("storagegateway").describe_cached_iscsi_volumes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_cached_iscsi_volumes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_cached_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_cached_iscsi_volumes)
+```python title="Method definition"
+def describe_cached_iscsi_volumes(
+    self,
+    *,
+    VolumeARNs: Sequence[str],
+) -> DescribeCachediSCSIVolumesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCachediSCSIVolumesInputRequestTypeDef](./type_defs.md#describecachediscsivolumesinputrequesttypedef).
+1. See [:material-code-braces: DescribeCachediSCSIVolumesOutputTypeDef](./type_defs.md#describecachediscsivolumesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARNs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCachediSCSIVolumesInputRequestTypeDef = {  # (1)
+    "VolumeARNs": ...,
+}
 
-Returns
-[DescribeCachediSCSIVolumesOutputTypeDef](./type_defs.md#describecachediscsivolumesoutputtypedef).
+parent.describe_cached_iscsi_volumes(**kwargs)
+```
 
-<a id="describe\_chap\_credentials"></a>
+1. See [:material-code-braces: DescribeCachediSCSIVolumesInputRequestTypeDef](./type_defs.md#describecachediscsivolumesinputrequesttypedef) 
 
-### describe_chap_credentials
+### describe\_chap\_credentials
 
 Returns an array of Challenge-Handshake Authentication Protocol (CHAP)
 credentials information for a specified iSCSI target, one for each target-
 initiator pair.
 
-Type annotations for `boto3.client("storagegateway").describe_chap_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_chap_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_chap_credentials)
+```python title="Method definition"
+def describe_chap_credentials(
+    self,
+    *,
+    TargetARN: str,
+) -> DescribeChapCredentialsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChapCredentialsInputRequestTypeDef](./type_defs.md#describechapcredentialsinputrequesttypedef).
+1. See [:material-code-braces: DescribeChapCredentialsOutputTypeDef](./type_defs.md#describechapcredentialsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChapCredentialsInputRequestTypeDef = {  # (1)
+    "TargetARN": ...,
+}
 
-Returns
-[DescribeChapCredentialsOutputTypeDef](./type_defs.md#describechapcredentialsoutputtypedef).
+parent.describe_chap_credentials(**kwargs)
+```
 
-<a id="describe\_file\_system\_associations"></a>
+1. See [:material-code-braces: DescribeChapCredentialsInputRequestTypeDef](./type_defs.md#describechapcredentialsinputrequesttypedef) 
 
-### describe_file_system_associations
+### describe\_file\_system\_associations
 
 Gets the file system association information.
 
-Type annotations for
-`boto3.client("storagegateway").describe_file_system_associations` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_file_system_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_file_system_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_file_system_associations)
+```python title="Method definition"
+def describe_file_system_associations(
+    self,
+    *,
+    FileSystemAssociationARNList: Sequence[str],
+) -> DescribeFileSystemAssociationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFileSystemAssociationsInputRequestTypeDef](./type_defs.md#describefilesystemassociationsinputrequesttypedef).
+1. See [:material-code-braces: DescribeFileSystemAssociationsOutputTypeDef](./type_defs.md#describefilesystemassociationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemAssociationARNList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFileSystemAssociationsInputRequestTypeDef = {  # (1)
+    "FileSystemAssociationARNList": ...,
+}
 
-Returns
-[DescribeFileSystemAssociationsOutputTypeDef](./type_defs.md#describefilesystemassociationsoutputtypedef).
+parent.describe_file_system_associations(**kwargs)
+```
 
-<a id="describe\_gateway\_information"></a>
+1. See [:material-code-braces: DescribeFileSystemAssociationsInputRequestTypeDef](./type_defs.md#describefilesystemassociationsinputrequesttypedef) 
 
-### describe_gateway_information
+### describe\_gateway\_information
 
 Returns metadata about a gateway such as its name, network interfaces,
 configured time zone, and the state (whether the gateway is running or not).
 
-Type annotations for
-`boto3.client("storagegateway").describe_gateway_information` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_gateway_information` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_gateway_information)
+```python title="Method definition"
+def describe_gateway_information(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeGatewayInformationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGatewayInformationInputRequestTypeDef](./type_defs.md#describegatewayinformationinputrequesttypedef).
+1. See [:material-code-braces: DescribeGatewayInformationOutputTypeDef](./type_defs.md#describegatewayinformationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGatewayInformationInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeGatewayInformationOutputTypeDef](./type_defs.md#describegatewayinformationoutputtypedef).
+parent.describe_gateway_information(**kwargs)
+```
 
-<a id="describe\_maintenance\_start\_time"></a>
+1. See [:material-code-braces: DescribeGatewayInformationInputRequestTypeDef](./type_defs.md#describegatewayinformationinputrequesttypedef) 
 
-### describe_maintenance_start_time
+### describe\_maintenance\_start\_time
 
 Returns your gateway's weekly maintenance start time including the day and time
 of the week.
 
-Type annotations for
-`boto3.client("storagegateway").describe_maintenance_start_time` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_maintenance_start_time` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_maintenance_start_time)
+```python title="Method definition"
+def describe_maintenance_start_time(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeMaintenanceStartTimeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#describemaintenancestarttimeinputrequesttypedef).
+1. See [:material-code-braces: DescribeMaintenanceStartTimeOutputTypeDef](./type_defs.md#describemaintenancestarttimeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceStartTimeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeMaintenanceStartTimeOutputTypeDef](./type_defs.md#describemaintenancestarttimeoutputtypedef).
+parent.describe_maintenance_start_time(**kwargs)
+```
 
-<a id="describe\_nfs\_file\_shares"></a>
+1. See [:material-code-braces: DescribeMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#describemaintenancestarttimeinputrequesttypedef) 
 
-### describe_nfs_file_shares
+### describe\_nfs\_file\_shares
 
-Gets a description for one or more Network File System (NFS) file shares from
-an S3 File Gateway.
+Gets a description for one or more Network File System (NFS) file shares from an
+S3 File Gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_nfs_file_shares`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_nfs_file_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_nfs_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_nfs_file_shares)
+```python title="Method definition"
+def describe_nfs_file_shares(
+    self,
+    *,
+    FileShareARNList: Sequence[str],
+) -> DescribeNFSFileSharesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNFSFileSharesInputRequestTypeDef](./type_defs.md#describenfsfilesharesinputrequesttypedef).
+1. See [:material-code-braces: DescribeNFSFileSharesOutputTypeDef](./type_defs.md#describenfsfilesharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARNList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNFSFileSharesInputRequestTypeDef = {  # (1)
+    "FileShareARNList": ...,
+}
 
-Returns
-[DescribeNFSFileSharesOutputTypeDef](./type_defs.md#describenfsfilesharesoutputtypedef).
+parent.describe_nfs_file_shares(**kwargs)
+```
 
-<a id="describe\_smb\_file\_shares"></a>
+1. See [:material-code-braces: DescribeNFSFileSharesInputRequestTypeDef](./type_defs.md#describenfsfilesharesinputrequesttypedef) 
 
-### describe_smb_file_shares
+### describe\_smb\_file\_shares
 
-Gets a description for one or more Server Message Block (SMB) file shares from
-a S3 File Gateway.
+Gets a description for one or more Server Message Block (SMB) file shares from a
+S3 File Gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_smb_file_shares`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_smb_file_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_smb_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_file_shares)
+```python title="Method definition"
+def describe_smb_file_shares(
+    self,
+    *,
+    FileShareARNList: Sequence[str],
+) -> DescribeSMBFileSharesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSMBFileSharesInputRequestTypeDef](./type_defs.md#describesmbfilesharesinputrequesttypedef).
+1. See [:material-code-braces: DescribeSMBFileSharesOutputTypeDef](./type_defs.md#describesmbfilesharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARNList`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSMBFileSharesInputRequestTypeDef = {  # (1)
+    "FileShareARNList": ...,
+}
 
-Returns
-[DescribeSMBFileSharesOutputTypeDef](./type_defs.md#describesmbfilesharesoutputtypedef).
+parent.describe_smb_file_shares(**kwargs)
+```
 
-<a id="describe\_smb\_settings"></a>
+1. See [:material-code-braces: DescribeSMBFileSharesInputRequestTypeDef](./type_defs.md#describesmbfilesharesinputrequesttypedef) 
 
-### describe_smb_settings
+### describe\_smb\_settings
 
 Gets a description of a Server Message Block (SMB) file share settings from a
 file gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_smb_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_smb_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_smb_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_smb_settings)
+```python title="Method definition"
+def describe_smb_settings(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeSMBSettingsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSMBSettingsInputRequestTypeDef](./type_defs.md#describesmbsettingsinputrequesttypedef).
+1. See [:material-code-braces: DescribeSMBSettingsOutputTypeDef](./type_defs.md#describesmbsettingsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSMBSettingsInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeSMBSettingsOutputTypeDef](./type_defs.md#describesmbsettingsoutputtypedef).
+parent.describe_smb_settings(**kwargs)
+```
 
-<a id="describe\_snapshot\_schedule"></a>
+1. See [:material-code-braces: DescribeSMBSettingsInputRequestTypeDef](./type_defs.md#describesmbsettingsinputrequesttypedef) 
 
-### describe_snapshot_schedule
+### describe\_snapshot\_schedule
 
 Describes the snapshot schedule for the specified gateway volume.
 
-Type annotations for
-`boto3.client("storagegateway").describe_snapshot_schedule` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_snapshot_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_snapshot_schedule)
+```python title="Method definition"
+def describe_snapshot_schedule(
+    self,
+    *,
+    VolumeARN: str,
+) -> DescribeSnapshotScheduleOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSnapshotScheduleInputRequestTypeDef](./type_defs.md#describesnapshotscheduleinputrequesttypedef).
+1. See [:material-code-braces: DescribeSnapshotScheduleOutputTypeDef](./type_defs.md#describesnapshotscheduleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotScheduleInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+}
 
-Returns
-[DescribeSnapshotScheduleOutputTypeDef](./type_defs.md#describesnapshotscheduleoutputtypedef).
+parent.describe_snapshot_schedule(**kwargs)
+```
 
-<a id="describe\_stored\_iscsi\_volumes"></a>
+1. See [:material-code-braces: DescribeSnapshotScheduleInputRequestTypeDef](./type_defs.md#describesnapshotscheduleinputrequesttypedef) 
 
-### describe_stored_iscsi_volumes
+### describe\_stored\_iscsi\_volumes
 
 Returns the description of the gateway volumes specified in the request.
 
-Type annotations for
-`boto3.client("storagegateway").describe_stored_iscsi_volumes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_stored_iscsi_volumes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_stored_iscsi_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_stored_iscsi_volumes)
+```python title="Method definition"
+def describe_stored_iscsi_volumes(
+    self,
+    *,
+    VolumeARNs: Sequence[str],
+) -> DescribeStorediSCSIVolumesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStorediSCSIVolumesInputRequestTypeDef](./type_defs.md#describestorediscsivolumesinputrequesttypedef).
+1. See [:material-code-braces: DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARNs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStorediSCSIVolumesInputRequestTypeDef = {  # (1)
+    "VolumeARNs": ...,
+}
 
-Returns
-[DescribeStorediSCSIVolumesOutputTypeDef](./type_defs.md#describestorediscsivolumesoutputtypedef).
+parent.describe_stored_iscsi_volumes(**kwargs)
+```
 
-<a id="describe\_tape\_archives"></a>
+1. See [:material-code-braces: DescribeStorediSCSIVolumesInputRequestTypeDef](./type_defs.md#describestorediscsivolumesinputrequesttypedef) 
 
-### describe_tape_archives
+### describe\_tape\_archives
 
 Returns a description of specified virtual tapes in the virtual tape shelf
 (VTS).
 
-Type annotations for `boto3.client("storagegateway").describe_tape_archives`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_tape_archives` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_archives)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_tape_archives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_archives)
+```python title="Method definition"
+def describe_tape_archives(
+    self,
+    *,
+    TapeARNs: Sequence[str] = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeTapeArchivesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTapeArchivesInputRequestTypeDef](./type_defs.md#describetapearchivesinputrequesttypedef).
+1. See [:material-code-braces: DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTapeArchivesInputRequestTypeDef = {  # (1)
+    "TapeARNs": ...,
+}
 
-Returns
-[DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef).
+parent.describe_tape_archives(**kwargs)
+```
 
-<a id="describe\_tape\_recovery\_points"></a>
+1. See [:material-code-braces: DescribeTapeArchivesInputRequestTypeDef](./type_defs.md#describetapearchivesinputrequesttypedef) 
 
-### describe_tape_recovery_points
+### describe\_tape\_recovery\_points
 
 Returns a list of virtual tape recovery points that are available for the
 specified tape gateway.
 
-Type annotations for
-`boto3.client("storagegateway").describe_tape_recovery_points` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_tape_recovery_points` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_recovery_points)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_tape_recovery_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tape_recovery_points)
+```python title="Method definition"
+def describe_tape_recovery_points(
+    self,
+    *,
+    GatewayARN: str,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeTapeRecoveryPointsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTapeRecoveryPointsInputRequestTypeDef](./type_defs.md#describetaperecoverypointsinputrequesttypedef).
+1. See [:material-code-braces: DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTapeRecoveryPointsInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef).
+parent.describe_tape_recovery_points(**kwargs)
+```
 
-<a id="describe\_tapes"></a>
+1. See [:material-code-braces: DescribeTapeRecoveryPointsInputRequestTypeDef](./type_defs.md#describetaperecoverypointsinputrequesttypedef) 
 
-### describe_tapes
+### describe\_tapes
 
 Returns a description of the specified Amazon Resource Name (ARN) of virtual
 tapes.
 
-Type annotations for `boto3.client("storagegateway").describe_tapes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_tapes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tapes)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_tapes)
+```python title="Method definition"
+def describe_tapes(
+    self,
+    *,
+    GatewayARN: str,
+    TapeARNs: Sequence[str] = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeTapesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTapesInputRequestTypeDef](./type_defs.md#describetapesinputrequesttypedef).
+1. See [:material-code-braces: DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTapesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef).
+parent.describe_tapes(**kwargs)
+```
 
-<a id="describe\_upload\_buffer"></a>
+1. See [:material-code-braces: DescribeTapesInputRequestTypeDef](./type_defs.md#describetapesinputrequesttypedef) 
 
-### describe_upload_buffer
+### describe\_upload\_buffer
 
 Returns information about the upload buffer of a gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_upload_buffer`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_upload_buffer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_upload_buffer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_upload_buffer)
+```python title="Method definition"
+def describe_upload_buffer(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeUploadBufferOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUploadBufferInputRequestTypeDef](./type_defs.md#describeuploadbufferinputrequesttypedef).
+1. See [:material-code-braces: DescribeUploadBufferOutputTypeDef](./type_defs.md#describeuploadbufferoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUploadBufferInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeUploadBufferOutputTypeDef](./type_defs.md#describeuploadbufferoutputtypedef).
+parent.describe_upload_buffer(**kwargs)
+```
 
-<a id="describe\_vtl\_devices"></a>
+1. See [:material-code-braces: DescribeUploadBufferInputRequestTypeDef](./type_defs.md#describeuploadbufferinputrequesttypedef) 
 
-### describe_vtl_devices
+### describe\_vtl\_devices
 
 Returns a description of virtual tape library (VTL) devices for the specified
 tape gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_vtl_devices`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_vtl_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_vtl_devices)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_vtl_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_vtl_devices)
+```python title="Method definition"
+def describe_vtl_devices(
+    self,
+    *,
+    GatewayARN: str,
+    VTLDeviceARNs: Sequence[str] = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> DescribeVTLDevicesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeVTLDevicesInputRequestTypeDef](./type_defs.md#describevtldevicesinputrequesttypedef).
+1. See [:material-code-braces: DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `VTLDeviceARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeVTLDevicesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef).
+parent.describe_vtl_devices(**kwargs)
+```
 
-<a id="describe\_working\_storage"></a>
+1. See [:material-code-braces: DescribeVTLDevicesInputRequestTypeDef](./type_defs.md#describevtldevicesinputrequesttypedef) 
 
-### describe_working_storage
+### describe\_working\_storage
 
 Returns information about the working storage of a gateway.
 
-Type annotations for `boto3.client("storagegateway").describe_working_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").describe_working_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage)
 
-Boto3 documentation:
-[StorageGateway.Client.describe_working_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.describe_working_storage)
+```python title="Method definition"
+def describe_working_storage(
+    self,
+    *,
+    GatewayARN: str,
+) -> DescribeWorkingStorageOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkingStorageInputRequestTypeDef](./type_defs.md#describeworkingstorageinputrequesttypedef).
+1. See [:material-code-braces: DescribeWorkingStorageOutputTypeDef](./type_defs.md#describeworkingstorageoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkingStorageInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DescribeWorkingStorageOutputTypeDef](./type_defs.md#describeworkingstorageoutputtypedef).
+parent.describe_working_storage(**kwargs)
+```
 
-<a id="detach\_volume"></a>
+1. See [:material-code-braces: DescribeWorkingStorageInputRequestTypeDef](./type_defs.md#describeworkingstorageinputrequesttypedef) 
 
-### detach_volume
+### detach\_volume
 
 Disconnects a volume from an iSCSI connection and then detaches the volume from
 the specified gateway.
 
-Type annotations for `boto3.client("storagegateway").detach_volume` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").detach_volume` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume)
 
-Boto3 documentation:
-[StorageGateway.Client.detach_volume](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.detach_volume)
+```python title="Method definition"
+def detach_volume(
+    self,
+    *,
+    VolumeARN: str,
+    ForceDetach: bool = ...,
+) -> DetachVolumeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetachVolumeInputRequestTypeDef](./type_defs.md#detachvolumeinputrequesttypedef).
+1. See [:material-code-braces: DetachVolumeOutputTypeDef](./type_defs.md#detachvolumeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
-- `ForceDetach`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DetachVolumeInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+}
 
-Returns [DetachVolumeOutputTypeDef](./type_defs.md#detachvolumeoutputtypedef).
+parent.detach_volume(**kwargs)
+```
 
-<a id="disable\_gateway"></a>
+1. See [:material-code-braces: DetachVolumeInputRequestTypeDef](./type_defs.md#detachvolumeinputrequesttypedef) 
 
-### disable_gateway
+### disable\_gateway
 
 Disables a tape gateway when the gateway is no longer functioning.
 
-Type annotations for `boto3.client("storagegateway").disable_gateway` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").disable_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway)
 
-Boto3 documentation:
-[StorageGateway.Client.disable_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disable_gateway)
+```python title="Method definition"
+def disable_gateway(
+    self,
+    *,
+    GatewayARN: str,
+) -> DisableGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableGatewayInputRequestTypeDef](./type_defs.md#disablegatewayinputrequesttypedef).
+1. See [:material-code-braces: DisableGatewayOutputTypeDef](./type_defs.md#disablegatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableGatewayInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[DisableGatewayOutputTypeDef](./type_defs.md#disablegatewayoutputtypedef).
+parent.disable_gateway(**kwargs)
+```
 
-<a id="disassociate\_file\_system"></a>
+1. See [:material-code-braces: DisableGatewayInputRequestTypeDef](./type_defs.md#disablegatewayinputrequesttypedef) 
 
-### disassociate_file_system
+### disassociate\_file\_system
 
 Disassociates an Amazon FSx file system from the specified gateway.
 
-Type annotations for `boto3.client("storagegateway").disassociate_file_system`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").disassociate_file_system` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system)
 
-Boto3 documentation:
-[StorageGateway.Client.disassociate_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.disassociate_file_system)
+```python title="Method definition"
+def disassociate_file_system(
+    self,
+    *,
+    FileSystemAssociationARN: str,
+    ForceDelete: bool = ...,
+) -> DisassociateFileSystemOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateFileSystemInputRequestTypeDef](./type_defs.md#disassociatefilesysteminputrequesttypedef).
+1. See [:material-code-braces: DisassociateFileSystemOutputTypeDef](./type_defs.md#disassociatefilesystemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemAssociationARN`: `str` *(required)*
-- `ForceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DisassociateFileSystemInputRequestTypeDef = {  # (1)
+    "FileSystemAssociationARN": ...,
+}
 
-Returns
-[DisassociateFileSystemOutputTypeDef](./type_defs.md#disassociatefilesystemoutputtypedef).
+parent.disassociate_file_system(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateFileSystemInputRequestTypeDef](./type_defs.md#disassociatefilesysteminputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("storagegateway").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.generate_presigned_url)
 
-Boto3 documentation:
-[StorageGateway.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="join\_domain"></a>
-
-### join_domain
+### join\_domain
 
 Adds a file gateway to an Active Directory domain.
 
-Type annotations for `boto3.client("storagegateway").join_domain` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").join_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.join_domain)
 
-Boto3 documentation:
-[StorageGateway.Client.join_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.join_domain)
+```python title="Method definition"
+def join_domain(
+    self,
+    *,
+    GatewayARN: str,
+    DomainName: str,
+    UserName: str,
+    Password: str,
+    OrganizationalUnit: str = ...,
+    DomainControllers: Sequence[str] = ...,
+    TimeoutInSeconds: int = ...,
+) -> JoinDomainOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[JoinDomainInputRequestTypeDef](./type_defs.md#joindomaininputrequesttypedef).
+1. See [:material-code-braces: JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `DomainName`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `OrganizationalUnit`: `str`
-- `DomainControllers`: `Sequence`\[`str`\]
-- `TimeoutInSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: JoinDomainInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "DomainName": ...,
+    "UserName": ...,
+    "Password": ...,
+}
 
-Returns [JoinDomainOutputTypeDef](./type_defs.md#joindomainoutputtypedef).
+parent.join_domain(**kwargs)
+```
 
-<a id="list\_automatic\_tape\_creation\_policies"></a>
+1. See [:material-code-braces: JoinDomainInputRequestTypeDef](./type_defs.md#joindomaininputrequesttypedef) 
 
-### list_automatic_tape_creation_policies
+### list\_automatic\_tape\_creation\_policies
 
 Lists the automatic tape creation policies for a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").list_automatic_tape_creation_policies` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_automatic_tape_creation_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies)
 
-Boto3 documentation:
-[StorageGateway.Client.list_automatic_tape_creation_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_automatic_tape_creation_policies)
+```python title="Method definition"
+def list_automatic_tape_creation_policies(
+    self,
+    *,
+    GatewayARN: str = ...,
+) -> ListAutomaticTapeCreationPoliciesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAutomaticTapeCreationPoliciesInputRequestTypeDef](./type_defs.md#listautomatictapecreationpoliciesinputrequesttypedef).
+1. See [:material-code-braces: ListAutomaticTapeCreationPoliciesOutputTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAutomaticTapeCreationPoliciesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ListAutomaticTapeCreationPoliciesOutputTypeDef](./type_defs.md#listautomatictapecreationpoliciesoutputtypedef).
+parent.list_automatic_tape_creation_policies(**kwargs)
+```
 
-<a id="list\_file\_shares"></a>
+1. See [:material-code-braces: ListAutomaticTapeCreationPoliciesInputRequestTypeDef](./type_defs.md#listautomatictapecreationpoliciesinputrequesttypedef) 
 
-### list_file_shares
+### list\_file\_shares
 
 Gets a list of the file shares for a specific S3 File Gateway, or the list of
 file shares that belong to the calling user account.
 
-Type annotations for `boto3.client("storagegateway").list_file_shares` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_file_shares` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_shares)
 
-Boto3 documentation:
-[StorageGateway.Client.list_file_shares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_shares)
+```python title="Method definition"
+def list_file_shares(
+    self,
+    *,
+    GatewayARN: str = ...,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> ListFileSharesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFileSharesInputRequestTypeDef](./type_defs.md#listfilesharesinputrequesttypedef).
+1. See [:material-code-braces: ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFileSharesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef).
+parent.list_file_shares(**kwargs)
+```
 
-<a id="list\_file\_system\_associations"></a>
+1. See [:material-code-braces: ListFileSharesInputRequestTypeDef](./type_defs.md#listfilesharesinputrequesttypedef) 
 
-### list_file_system_associations
+### list\_file\_system\_associations
 
 Gets a list of `FileSystemAssociationSummary` objects.
 
-Type annotations for
-`boto3.client("storagegateway").list_file_system_associations` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_file_system_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_system_associations)
 
-Boto3 documentation:
-[StorageGateway.Client.list_file_system_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_file_system_associations)
+```python title="Method definition"
+def list_file_system_associations(
+    self,
+    *,
+    GatewayARN: str = ...,
+    Limit: int = ...,
+    Marker: str = ...,
+) -> ListFileSystemAssociationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFileSystemAssociationsInputRequestTypeDef](./type_defs.md#listfilesystemassociationsinputrequesttypedef).
+1. See [:material-code-braces: ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFileSystemAssociationsInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef).
+parent.list_file_system_associations(**kwargs)
+```
 
-<a id="list\_gateways"></a>
+1. See [:material-code-braces: ListFileSystemAssociationsInputRequestTypeDef](./type_defs.md#listfilesystemassociationsinputrequesttypedef) 
 
-### list_gateways
+### list\_gateways
 
-Lists gateways owned by an Amazon Web Services account in an Amazon Web
-Services Region specified in the request.
+Lists gateways owned by an Amazon Web Services account in an Amazon Web Services
+Region specified in the request.
 
-Type annotations for `boto3.client("storagegateway").list_gateways` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_gateways` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways)
 
-Boto3 documentation:
-[StorageGateway.Client.list_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_gateways)
+```python title="Method definition"
+def list_gateways(
+    self,
+    *,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> ListGatewaysOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef).
+1. See [:material-code-braces: ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGatewaysInputRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
+parent.list_gateways(**kwargs)
+```
 
-<a id="list\_local\_disks"></a>
+1. See [:material-code-braces: ListGatewaysInputRequestTypeDef](./type_defs.md#listgatewaysinputrequesttypedef) 
 
-### list_local_disks
+### list\_local\_disks
 
 Returns a list of the gateway's local disks.
 
-Type annotations for `boto3.client("storagegateway").list_local_disks` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_local_disks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks)
 
-Boto3 documentation:
-[StorageGateway.Client.list_local_disks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_local_disks)
+```python title="Method definition"
+def list_local_disks(
+    self,
+    *,
+    GatewayARN: str,
+) -> ListLocalDisksOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLocalDisksInputRequestTypeDef](./type_defs.md#listlocaldisksinputrequesttypedef).
+1. See [:material-code-braces: ListLocalDisksOutputTypeDef](./type_defs.md#listlocaldisksoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListLocalDisksInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ListLocalDisksOutputTypeDef](./type_defs.md#listlocaldisksoutputtypedef).
+parent.list_local_disks(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListLocalDisksInputRequestTypeDef](./type_defs.md#listlocaldisksinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags that have been added to the specified resource.
 
-Type annotations for `boto3.client("storagegateway").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[StorageGateway.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_tape\_pools"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### list_tape_pools
+### list\_tape\_pools
 
 Lists custom tape pools.
 
-Type annotations for `boto3.client("storagegateway").list_tape_pools` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_tape_pools` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tape_pools)
 
-Boto3 documentation:
-[StorageGateway.Client.list_tape_pools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tape_pools)
+```python title="Method definition"
+def list_tape_pools(
+    self,
+    *,
+    PoolARNs: Sequence[str] = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> ListTapePoolsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTapePoolsInputRequestTypeDef](./type_defs.md#listtapepoolsinputrequesttypedef).
+1. See [:material-code-braces: ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `PoolARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTapePoolsInputRequestTypeDef = {  # (1)
+    "PoolARNs": ...,
+}
 
-Returns
-[ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef).
+parent.list_tape_pools(**kwargs)
+```
 
-<a id="list\_tapes"></a>
+1. See [:material-code-braces: ListTapePoolsInputRequestTypeDef](./type_defs.md#listtapepoolsinputrequesttypedef) 
 
-### list_tapes
+### list\_tapes
 
 Lists virtual tapes in your virtual tape library (VTL) and your virtual tape
 shelf (VTS).
 
-Type annotations for `boto3.client("storagegateway").list_tapes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_tapes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tapes)
 
-Boto3 documentation:
-[StorageGateway.Client.list_tapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_tapes)
+```python title="Method definition"
+def list_tapes(
+    self,
+    *,
+    TapeARNs: Sequence[str] = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> ListTapesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTapesInputRequestTypeDef](./type_defs.md#listtapesinputrequesttypedef).
+1. See [:material-code-braces: ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTapesInputRequestTypeDef = {  # (1)
+    "TapeARNs": ...,
+}
 
-Returns [ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef).
+parent.list_tapes(**kwargs)
+```
 
-<a id="list\_volume\_initiators"></a>
+1. See [:material-code-braces: ListTapesInputRequestTypeDef](./type_defs.md#listtapesinputrequesttypedef) 
 
-### list_volume_initiators
+### list\_volume\_initiators
 
 Lists iSCSI initiators that are connected to a volume.
 
-Type annotations for `boto3.client("storagegateway").list_volume_initiators`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_volume_initiators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators)
 
-Boto3 documentation:
-[StorageGateway.Client.list_volume_initiators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_initiators)
+```python title="Method definition"
+def list_volume_initiators(
+    self,
+    *,
+    VolumeARN: str,
+) -> ListVolumeInitiatorsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVolumeInitiatorsInputRequestTypeDef](./type_defs.md#listvolumeinitiatorsinputrequesttypedef).
+1. See [:material-code-braces: ListVolumeInitiatorsOutputTypeDef](./type_defs.md#listvolumeinitiatorsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListVolumeInitiatorsInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+}
 
-Returns
-[ListVolumeInitiatorsOutputTypeDef](./type_defs.md#listvolumeinitiatorsoutputtypedef).
+parent.list_volume_initiators(**kwargs)
+```
 
-<a id="list\_volume\_recovery\_points"></a>
+1. See [:material-code-braces: ListVolumeInitiatorsInputRequestTypeDef](./type_defs.md#listvolumeinitiatorsinputrequesttypedef) 
 
-### list_volume_recovery_points
+### list\_volume\_recovery\_points
 
 Lists the recovery points for a specified gateway.
 
-Type annotations for
-`boto3.client("storagegateway").list_volume_recovery_points` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_volume_recovery_points` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points)
 
-Boto3 documentation:
-[StorageGateway.Client.list_volume_recovery_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volume_recovery_points)
+```python title="Method definition"
+def list_volume_recovery_points(
+    self,
+    *,
+    GatewayARN: str,
+) -> ListVolumeRecoveryPointsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVolumeRecoveryPointsInputRequestTypeDef](./type_defs.md#listvolumerecoverypointsinputrequesttypedef).
+1. See [:material-code-braces: ListVolumeRecoveryPointsOutputTypeDef](./type_defs.md#listvolumerecoverypointsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListVolumeRecoveryPointsInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ListVolumeRecoveryPointsOutputTypeDef](./type_defs.md#listvolumerecoverypointsoutputtypedef).
+parent.list_volume_recovery_points(**kwargs)
+```
 
-<a id="list\_volumes"></a>
+1. See [:material-code-braces: ListVolumeRecoveryPointsInputRequestTypeDef](./type_defs.md#listvolumerecoverypointsinputrequesttypedef) 
 
-### list_volumes
+### list\_volumes
 
 Lists the iSCSI stored volumes of a gateway.
 
-Type annotations for `boto3.client("storagegateway").list_volumes` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").list_volumes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volumes)
 
-Boto3 documentation:
-[StorageGateway.Client.list_volumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.list_volumes)
+```python title="Method definition"
+def list_volumes(
+    self,
+    *,
+    GatewayARN: str = ...,
+    Marker: str = ...,
+    Limit: int = ...,
+) -> ListVolumesOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListVolumesInputRequestTypeDef](./type_defs.md#listvolumesinputrequesttypedef).
+1. See [:material-code-braces: ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListVolumesInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns [ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef).
+parent.list_volumes(**kwargs)
+```
 
-<a id="notify\_when\_uploaded"></a>
+1. See [:material-code-braces: ListVolumesInputRequestTypeDef](./type_defs.md#listvolumesinputrequesttypedef) 
 
-### notify_when_uploaded
+### notify\_when\_uploaded
 
 Sends you notification through CloudWatch Events when all files written to your
 file share have been uploaded to Amazon S3.
 
-Type annotations for `boto3.client("storagegateway").notify_when_uploaded`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").notify_when_uploaded` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)
 
-Boto3 documentation:
-[StorageGateway.Client.notify_when_uploaded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.notify_when_uploaded)
+```python title="Method definition"
+def notify_when_uploaded(
+    self,
+    *,
+    FileShareARN: str,
+) -> NotifyWhenUploadedOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[NotifyWhenUploadedInputRequestTypeDef](./type_defs.md#notifywhenuploadedinputrequesttypedef).
+1. See [:material-code-braces: NotifyWhenUploadedOutputTypeDef](./type_defs.md#notifywhenuploadedoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: NotifyWhenUploadedInputRequestTypeDef = {  # (1)
+    "FileShareARN": ...,
+}
 
-Returns
-[NotifyWhenUploadedOutputTypeDef](./type_defs.md#notifywhenuploadedoutputtypedef).
+parent.notify_when_uploaded(**kwargs)
+```
 
-<a id="refresh\_cache"></a>
+1. See [:material-code-braces: NotifyWhenUploadedInputRequestTypeDef](./type_defs.md#notifywhenuploadedinputrequesttypedef) 
 
-### refresh_cache
+### refresh\_cache
 
 Refreshes the cached inventory of objects for the specified file share.
 
-Type annotations for `boto3.client("storagegateway").refresh_cache` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").refresh_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.refresh_cache)
 
-Boto3 documentation:
-[StorageGateway.Client.refresh_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.refresh_cache)
+```python title="Method definition"
+def refresh_cache(
+    self,
+    *,
+    FileShareARN: str,
+    FolderList: Sequence[str] = ...,
+    Recursive: bool = ...,
+) -> RefreshCacheOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RefreshCacheInputRequestTypeDef](./type_defs.md#refreshcacheinputrequesttypedef).
+1. See [:material-code-braces: RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARN`: `str` *(required)*
-- `FolderList`: `Sequence`\[`str`\]
-- `Recursive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RefreshCacheInputRequestTypeDef = {  # (1)
+    "FileShareARN": ...,
+}
 
-Returns [RefreshCacheOutputTypeDef](./type_defs.md#refreshcacheoutputtypedef).
+parent.refresh_cache(**kwargs)
+```
 
-<a id="remove\_tags\_from\_resource"></a>
+1. See [:material-code-braces: RefreshCacheInputRequestTypeDef](./type_defs.md#refreshcacheinputrequesttypedef) 
 
-### remove_tags_from_resource
+### remove\_tags\_from\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("storagegateway").remove_tags_from_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").remove_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource)
 
-Boto3 documentation:
-[StorageGateway.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.remove_tags_from_resource)
+```python title="Method definition"
+def remove_tags_from_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> RemoveTagsFromResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromResourceInputRequestTypeDef](./type_defs.md#removetagsfromresourceinputrequesttypedef).
+1. See [:material-code-braces: RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromResourceInputRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[RemoveTagsFromResourceOutputTypeDef](./type_defs.md#removetagsfromresourceoutputtypedef).
+parent.remove_tags_from_resource(**kwargs)
+```
 
-<a id="reset\_cache"></a>
+1. See [:material-code-braces: RemoveTagsFromResourceInputRequestTypeDef](./type_defs.md#removetagsfromresourceinputrequesttypedef) 
 
-### reset_cache
+### reset\_cache
 
 Resets all cache disks that have encountered an error and makes the disks
 available for reconfiguration as cache storage.
 
-Type annotations for `boto3.client("storagegateway").reset_cache` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").reset_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache)
 
-Boto3 documentation:
-[StorageGateway.Client.reset_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.reset_cache)
+```python title="Method definition"
+def reset_cache(
+    self,
+    *,
+    GatewayARN: str,
+) -> ResetCacheOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetCacheInputRequestTypeDef](./type_defs.md#resetcacheinputrequesttypedef).
+1. See [:material-code-braces: ResetCacheOutputTypeDef](./type_defs.md#resetcacheoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResetCacheInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns [ResetCacheOutputTypeDef](./type_defs.md#resetcacheoutputtypedef).
+parent.reset_cache(**kwargs)
+```
 
-<a id="retrieve\_tape\_archive"></a>
+1. See [:material-code-braces: ResetCacheInputRequestTypeDef](./type_defs.md#resetcacheinputrequesttypedef) 
 
-### retrieve_tape_archive
+### retrieve\_tape\_archive
 
 Retrieves an archived virtual tape from the virtual tape shelf (VTS) to a tape
 gateway.
 
-Type annotations for `boto3.client("storagegateway").retrieve_tape_archive`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").retrieve_tape_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive)
 
-Boto3 documentation:
-[StorageGateway.Client.retrieve_tape_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_archive)
+```python title="Method definition"
+def retrieve_tape_archive(
+    self,
+    *,
+    TapeARN: str,
+    GatewayARN: str,
+) -> RetrieveTapeArchiveOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RetrieveTapeArchiveInputRequestTypeDef](./type_defs.md#retrievetapearchiveinputrequesttypedef).
+1. See [:material-code-braces: RetrieveTapeArchiveOutputTypeDef](./type_defs.md#retrievetapearchiveoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARN`: `str` *(required)*
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RetrieveTapeArchiveInputRequestTypeDef = {  # (1)
+    "TapeARN": ...,
+    "GatewayARN": ...,
+}
 
-Returns
-[RetrieveTapeArchiveOutputTypeDef](./type_defs.md#retrievetapearchiveoutputtypedef).
+parent.retrieve_tape_archive(**kwargs)
+```
 
-<a id="retrieve\_tape\_recovery\_point"></a>
+1. See [:material-code-braces: RetrieveTapeArchiveInputRequestTypeDef](./type_defs.md#retrievetapearchiveinputrequesttypedef) 
 
-### retrieve_tape_recovery_point
+### retrieve\_tape\_recovery\_point
 
 Retrieves the recovery point for the specified virtual tape.
 
-Type annotations for
-`boto3.client("storagegateway").retrieve_tape_recovery_point` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").retrieve_tape_recovery_point` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point)
 
-Boto3 documentation:
-[StorageGateway.Client.retrieve_tape_recovery_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.retrieve_tape_recovery_point)
+```python title="Method definition"
+def retrieve_tape_recovery_point(
+    self,
+    *,
+    TapeARN: str,
+    GatewayARN: str,
+) -> RetrieveTapeRecoveryPointOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RetrieveTapeRecoveryPointInputRequestTypeDef](./type_defs.md#retrievetaperecoverypointinputrequesttypedef).
+1. See [:material-code-braces: RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TapeARN`: `str` *(required)*
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RetrieveTapeRecoveryPointInputRequestTypeDef = {  # (1)
+    "TapeARN": ...,
+    "GatewayARN": ...,
+}
 
-Returns
-[RetrieveTapeRecoveryPointOutputTypeDef](./type_defs.md#retrievetaperecoverypointoutputtypedef).
+parent.retrieve_tape_recovery_point(**kwargs)
+```
 
-<a id="set\_local\_console\_password"></a>
+1. See [:material-code-braces: RetrieveTapeRecoveryPointInputRequestTypeDef](./type_defs.md#retrievetaperecoverypointinputrequesttypedef) 
 
-### set_local_console_password
+### set\_local\_console\_password
 
 Sets the password for your VM local console.
 
-Type annotations for
-`boto3.client("storagegateway").set_local_console_password` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").set_local_console_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password)
 
-Boto3 documentation:
-[StorageGateway.Client.set_local_console_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_local_console_password)
+```python title="Method definition"
+def set_local_console_password(
+    self,
+    *,
+    GatewayARN: str,
+    LocalConsolePassword: str,
+) -> SetLocalConsolePasswordOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetLocalConsolePasswordInputRequestTypeDef](./type_defs.md#setlocalconsolepasswordinputrequesttypedef).
+1. See [:material-code-braces: SetLocalConsolePasswordOutputTypeDef](./type_defs.md#setlocalconsolepasswordoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `LocalConsolePassword`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetLocalConsolePasswordInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "LocalConsolePassword": ...,
+}
 
-Returns
-[SetLocalConsolePasswordOutputTypeDef](./type_defs.md#setlocalconsolepasswordoutputtypedef).
+parent.set_local_console_password(**kwargs)
+```
 
-<a id="set\_smb\_guest\_password"></a>
+1. See [:material-code-braces: SetLocalConsolePasswordInputRequestTypeDef](./type_defs.md#setlocalconsolepasswordinputrequesttypedef) 
 
-### set_smb_guest_password
+### set\_smb\_guest\_password
 
 Sets the password for the guest user `smbguest`.
 
-Type annotations for `boto3.client("storagegateway").set_smb_guest_password`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").set_smb_guest_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password)
 
-Boto3 documentation:
-[StorageGateway.Client.set_smb_guest_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.set_smb_guest_password)
+```python title="Method definition"
+def set_smb_guest_password(
+    self,
+    *,
+    GatewayARN: str,
+    Password: str,
+) -> SetSMBGuestPasswordOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetSMBGuestPasswordInputRequestTypeDef](./type_defs.md#setsmbguestpasswordinputrequesttypedef).
+1. See [:material-code-braces: SetSMBGuestPasswordOutputTypeDef](./type_defs.md#setsmbguestpasswordoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `Password`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetSMBGuestPasswordInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "Password": ...,
+}
 
-Returns
-[SetSMBGuestPasswordOutputTypeDef](./type_defs.md#setsmbguestpasswordoutputtypedef).
+parent.set_smb_guest_password(**kwargs)
+```
 
-<a id="shutdown\_gateway"></a>
+1. See [:material-code-braces: SetSMBGuestPasswordInputRequestTypeDef](./type_defs.md#setsmbguestpasswordinputrequesttypedef) 
 
-### shutdown_gateway
+### shutdown\_gateway
 
 Shuts down a gateway.
 
-Type annotations for `boto3.client("storagegateway").shutdown_gateway` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").shutdown_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway)
 
-Boto3 documentation:
-[StorageGateway.Client.shutdown_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.shutdown_gateway)
+```python title="Method definition"
+def shutdown_gateway(
+    self,
+    *,
+    GatewayARN: str,
+) -> ShutdownGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ShutdownGatewayInputRequestTypeDef](./type_defs.md#shutdowngatewayinputrequesttypedef).
+1. See [:material-code-braces: ShutdownGatewayOutputTypeDef](./type_defs.md#shutdowngatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ShutdownGatewayInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[ShutdownGatewayOutputTypeDef](./type_defs.md#shutdowngatewayoutputtypedef).
+parent.shutdown_gateway(**kwargs)
+```
 
-<a id="start\_availability\_monitor\_test"></a>
+1. See [:material-code-braces: ShutdownGatewayInputRequestTypeDef](./type_defs.md#shutdowngatewayinputrequesttypedef) 
 
-### start_availability_monitor_test
+### start\_availability\_monitor\_test
 
 Start a test that verifies that the specified gateway is configured for High
 Availability monitoring in your host environment.
 
-Type annotations for
-`boto3.client("storagegateway").start_availability_monitor_test` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").start_availability_monitor_test` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test)
 
-Boto3 documentation:
-[StorageGateway.Client.start_availability_monitor_test](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_availability_monitor_test)
+```python title="Method definition"
+def start_availability_monitor_test(
+    self,
+    *,
+    GatewayARN: str,
+) -> StartAvailabilityMonitorTestOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartAvailabilityMonitorTestInputRequestTypeDef](./type_defs.md#startavailabilitymonitortestinputrequesttypedef).
+1. See [:material-code-braces: StartAvailabilityMonitorTestOutputTypeDef](./type_defs.md#startavailabilitymonitortestoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartAvailabilityMonitorTestInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[StartAvailabilityMonitorTestOutputTypeDef](./type_defs.md#startavailabilitymonitortestoutputtypedef).
+parent.start_availability_monitor_test(**kwargs)
+```
 
-<a id="start\_gateway"></a>
+1. See [:material-code-braces: StartAvailabilityMonitorTestInputRequestTypeDef](./type_defs.md#startavailabilitymonitortestinputrequesttypedef) 
 
-### start_gateway
+### start\_gateway
 
-Starts a gateway that you previously shut down (see ShutdownGateway ).
+Starts a gateway that you previously shut down (see  ShutdownGateway ).
 
-Type annotations for `boto3.client("storagegateway").start_gateway` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").start_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway)
 
-Boto3 documentation:
-[StorageGateway.Client.start_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.start_gateway)
+```python title="Method definition"
+def start_gateway(
+    self,
+    *,
+    GatewayARN: str,
+) -> StartGatewayOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartGatewayInputRequestTypeDef](./type_defs.md#startgatewayinputrequesttypedef).
+1. See [:material-code-braces: StartGatewayOutputTypeDef](./type_defs.md#startgatewayoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartGatewayInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns [StartGatewayOutputTypeDef](./type_defs.md#startgatewayoutputtypedef).
+parent.start_gateway(**kwargs)
+```
 
-<a id="update\_automatic\_tape\_creation\_policy"></a>
+1. See [:material-code-braces: StartGatewayInputRequestTypeDef](./type_defs.md#startgatewayinputrequesttypedef) 
 
-### update_automatic_tape_creation_policy
+### update\_automatic\_tape\_creation\_policy
 
 Updates the automatic tape creation policy of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").update_automatic_tape_creation_policy` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_automatic_tape_creation_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy)
 
-Boto3 documentation:
-[StorageGateway.Client.update_automatic_tape_creation_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_automatic_tape_creation_policy)
+```python title="Method definition"
+def update_automatic_tape_creation_policy(
+    self,
+    *,
+    AutomaticTapeCreationRules: Sequence[AutomaticTapeCreationRuleTypeDef],  # (1)
+    GatewayARN: str,
+) -> UpdateAutomaticTapeCreationPolicyOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAutomaticTapeCreationPolicyInputRequestTypeDef](./type_defs.md#updateautomatictapecreationpolicyinputrequesttypedef).
+1. See [:material-code-braces: AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef) 
+2. See [:material-code-braces: UpdateAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#updateautomatictapecreationpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AutomaticTapeCreationRules`:
-  `Sequence`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
-  *(required)*
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAutomaticTapeCreationPolicyInputRequestTypeDef = {  # (1)
+    "AutomaticTapeCreationRules": ...,
+    "GatewayARN": ...,
+}
 
-Returns
-[UpdateAutomaticTapeCreationPolicyOutputTypeDef](./type_defs.md#updateautomatictapecreationpolicyoutputtypedef).
+parent.update_automatic_tape_creation_policy(**kwargs)
+```
 
-<a id="update\_bandwidth\_rate\_limit"></a>
+1. See [:material-code-braces: UpdateAutomaticTapeCreationPolicyInputRequestTypeDef](./type_defs.md#updateautomatictapecreationpolicyinputrequesttypedef) 
 
-### update_bandwidth_rate_limit
+### update\_bandwidth\_rate\_limit
 
 Updates the bandwidth rate limits of a gateway.
 
-Type annotations for
-`boto3.client("storagegateway").update_bandwidth_rate_limit` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_bandwidth_rate_limit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit)
 
-Boto3 documentation:
-[StorageGateway.Client.update_bandwidth_rate_limit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit)
+```python title="Method definition"
+def update_bandwidth_rate_limit(
+    self,
+    *,
+    GatewayARN: str,
+    AverageUploadRateLimitInBitsPerSec: int = ...,
+    AverageDownloadRateLimitInBitsPerSec: int = ...,
+) -> UpdateBandwidthRateLimitOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBandwidthRateLimitInputRequestTypeDef](./type_defs.md#updatebandwidthratelimitinputrequesttypedef).
+1. See [:material-code-braces: UpdateBandwidthRateLimitOutputTypeDef](./type_defs.md#updatebandwidthratelimitoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `AverageUploadRateLimitInBitsPerSec`: `int`
-- `AverageDownloadRateLimitInBitsPerSec`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateBandwidthRateLimitInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[UpdateBandwidthRateLimitOutputTypeDef](./type_defs.md#updatebandwidthratelimitoutputtypedef).
+parent.update_bandwidth_rate_limit(**kwargs)
+```
 
-<a id="update\_bandwidth\_rate\_limit\_schedule"></a>
+1. See [:material-code-braces: UpdateBandwidthRateLimitInputRequestTypeDef](./type_defs.md#updatebandwidthratelimitinputrequesttypedef) 
 
-### update_bandwidth_rate_limit_schedule
+### update\_bandwidth\_rate\_limit\_schedule
 
 Updates the bandwidth rate limit schedule for a specified gateway.
 
-Type annotations for
-`boto3.client("storagegateway").update_bandwidth_rate_limit_schedule` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_bandwidth_rate_limit_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule)
 
-Boto3 documentation:
-[StorageGateway.Client.update_bandwidth_rate_limit_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_bandwidth_rate_limit_schedule)
+```python title="Method definition"
+def update_bandwidth_rate_limit_schedule(
+    self,
+    *,
+    GatewayARN: str,
+    BandwidthRateLimitIntervals: Sequence[BandwidthRateLimitIntervalTypeDef],  # (1)
+) -> UpdateBandwidthRateLimitScheduleOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#updatebandwidthratelimitscheduleinputrequesttypedef).
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
+2. See [:material-code-braces: UpdateBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#updatebandwidthratelimitscheduleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `BandwidthRateLimitIntervals`:
-  `Sequence`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBandwidthRateLimitScheduleInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "BandwidthRateLimitIntervals": ...,
+}
 
-Returns
-[UpdateBandwidthRateLimitScheduleOutputTypeDef](./type_defs.md#updatebandwidthratelimitscheduleoutputtypedef).
+parent.update_bandwidth_rate_limit_schedule(**kwargs)
+```
 
-<a id="update\_chap\_credentials"></a>
+1. See [:material-code-braces: UpdateBandwidthRateLimitScheduleInputRequestTypeDef](./type_defs.md#updatebandwidthratelimitscheduleinputrequesttypedef) 
 
-### update_chap_credentials
+### update\_chap\_credentials
 
-Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for
-a specified iSCSI target.
+Updates the Challenge-Handshake Authentication Protocol (CHAP) credentials for a
+specified iSCSI target.
 
-Type annotations for `boto3.client("storagegateway").update_chap_credentials`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_chap_credentials` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_chap_credentials)
 
-Boto3 documentation:
-[StorageGateway.Client.update_chap_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_chap_credentials)
+```python title="Method definition"
+def update_chap_credentials(
+    self,
+    *,
+    TargetARN: str,
+    SecretToAuthenticateInitiator: str,
+    InitiatorName: str,
+    SecretToAuthenticateTarget: str = ...,
+) -> UpdateChapCredentialsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChapCredentialsInputRequestTypeDef](./type_defs.md#updatechapcredentialsinputrequesttypedef).
+1. See [:material-code-braces: UpdateChapCredentialsOutputTypeDef](./type_defs.md#updatechapcredentialsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `TargetARN`: `str` *(required)*
-- `SecretToAuthenticateInitiator`: `str` *(required)*
-- `InitiatorName`: `str` *(required)*
-- `SecretToAuthenticateTarget`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChapCredentialsInputRequestTypeDef = {  # (1)
+    "TargetARN": ...,
+    "SecretToAuthenticateInitiator": ...,
+    "InitiatorName": ...,
+}
 
-Returns
-[UpdateChapCredentialsOutputTypeDef](./type_defs.md#updatechapcredentialsoutputtypedef).
+parent.update_chap_credentials(**kwargs)
+```
 
-<a id="update\_file\_system\_association"></a>
+1. See [:material-code-braces: UpdateChapCredentialsInputRequestTypeDef](./type_defs.md#updatechapcredentialsinputrequesttypedef) 
 
-### update_file_system_association
+### update\_file\_system\_association
 
 Updates a file system association.
 
-Type annotations for
-`boto3.client("storagegateway").update_file_system_association` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_file_system_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_file_system_association)
 
-Boto3 documentation:
-[StorageGateway.Client.update_file_system_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_file_system_association)
+```python title="Method definition"
+def update_file_system_association(
+    self,
+    *,
+    FileSystemAssociationARN: str,
+    UserName: str = ...,
+    Password: str = ...,
+    AuditDestinationARN: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (1)
+) -> UpdateFileSystemAssociationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFileSystemAssociationInputRequestTypeDef](./type_defs.md#updatefilesystemassociationinputrequesttypedef).
+1. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+2. See [:material-code-braces: UpdateFileSystemAssociationOutputTypeDef](./type_defs.md#updatefilesystemassociationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileSystemAssociationARN`: `str` *(required)*
-- `UserName`: `str`
-- `Password`: `str`
-- `AuditDestinationARN`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFileSystemAssociationInputRequestTypeDef = {  # (1)
+    "FileSystemAssociationARN": ...,
+}
 
-Returns
-[UpdateFileSystemAssociationOutputTypeDef](./type_defs.md#updatefilesystemassociationoutputtypedef).
+parent.update_file_system_association(**kwargs)
+```
 
-<a id="update\_gateway\_information"></a>
+1. See [:material-code-braces: UpdateFileSystemAssociationInputRequestTypeDef](./type_defs.md#updatefilesystemassociationinputrequesttypedef) 
 
-### update_gateway_information
+### update\_gateway\_information
 
 Updates a gateway's metadata, which includes the gateway's name and time zone.
 
-Type annotations for
-`boto3.client("storagegateway").update_gateway_information` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_gateway_information` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_information)
 
-Boto3 documentation:
-[StorageGateway.Client.update_gateway_information](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_information)
+```python title="Method definition"
+def update_gateway_information(
+    self,
+    *,
+    GatewayARN: str,
+    GatewayName: str = ...,
+    GatewayTimezone: str = ...,
+    CloudWatchLogGroupARN: str = ...,
+    GatewayCapacity: GatewayCapacityType = ...,  # (1)
+) -> UpdateGatewayInformationOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewayInformationInputRequestTypeDef](./type_defs.md#updategatewayinformationinputrequesttypedef).
+1. See [:material-code-brackets: GatewayCapacityType](./literals.md#gatewaycapacitytype) 
+2. See [:material-code-braces: UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `GatewayName`: `str`
-- `GatewayTimezone`: `str`
-- `CloudWatchLogGroupARN`: `str`
-- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayInformationInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
+parent.update_gateway_information(**kwargs)
+```
 
-<a id="update\_gateway\_software\_now"></a>
+1. See [:material-code-braces: UpdateGatewayInformationInputRequestTypeDef](./type_defs.md#updategatewayinformationinputrequesttypedef) 
 
-### update_gateway_software_now
+### update\_gateway\_software\_now
 
 Updates the gateway virtual machine (VM) software.
 
-Type annotations for
-`boto3.client("storagegateway").update_gateway_software_now` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_gateway_software_now` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now)
 
-Boto3 documentation:
-[StorageGateway.Client.update_gateway_software_now](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_gateway_software_now)
+```python title="Method definition"
+def update_gateway_software_now(
+    self,
+    *,
+    GatewayARN: str,
+) -> UpdateGatewaySoftwareNowOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGatewaySoftwareNowInputRequestTypeDef](./type_defs.md#updategatewaysoftwarenowinputrequesttypedef).
+1. See [:material-code-braces: UpdateGatewaySoftwareNowOutputTypeDef](./type_defs.md#updategatewaysoftwarenowoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewaySoftwareNowInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
 
-Returns
-[UpdateGatewaySoftwareNowOutputTypeDef](./type_defs.md#updategatewaysoftwarenowoutputtypedef).
+parent.update_gateway_software_now(**kwargs)
+```
 
-<a id="update\_maintenance\_start\_time"></a>
+1. See [:material-code-braces: UpdateGatewaySoftwareNowInputRequestTypeDef](./type_defs.md#updategatewaysoftwarenowinputrequesttypedef) 
 
-### update_maintenance_start_time
+### update\_maintenance\_start\_time
 
-Updates a gateway's weekly maintenance start time information, including day
-and time of the week.
+Updates a gateway's weekly maintenance start time information, including day and
+time of the week.
 
-Type annotations for
-`boto3.client("storagegateway").update_maintenance_start_time` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_maintenance_start_time` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_maintenance_start_time)
 
-Boto3 documentation:
-[StorageGateway.Client.update_maintenance_start_time](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_maintenance_start_time)
+```python title="Method definition"
+def update_maintenance_start_time(
+    self,
+    *,
+    GatewayARN: str,
+    HourOfDay: int,
+    MinuteOfHour: int,
+    DayOfWeek: int = ...,
+    DayOfMonth: int = ...,
+) -> UpdateMaintenanceStartTimeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#updatemaintenancestarttimeinputrequesttypedef).
+1. See [:material-code-braces: UpdateMaintenanceStartTimeOutputTypeDef](./type_defs.md#updatemaintenancestarttimeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `HourOfDay`: `int` *(required)*
-- `MinuteOfHour`: `int` *(required)*
-- `DayOfWeek`: `int`
-- `DayOfMonth`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateMaintenanceStartTimeInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "HourOfDay": ...,
+    "MinuteOfHour": ...,
+}
 
-Returns
-[UpdateMaintenanceStartTimeOutputTypeDef](./type_defs.md#updatemaintenancestarttimeoutputtypedef).
+parent.update_maintenance_start_time(**kwargs)
+```
 
-<a id="update\_nfs\_file\_share"></a>
+1. See [:material-code-braces: UpdateMaintenanceStartTimeInputRequestTypeDef](./type_defs.md#updatemaintenancestarttimeinputrequesttypedef) 
 
-### update_nfs_file_share
+### update\_nfs\_file\_share
 
 Updates a Network File System (NFS) file share.
 
-Type annotations for `boto3.client("storagegateway").update_nfs_file_share`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_nfs_file_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_nfs_file_share)
 
-Boto3 documentation:
-[StorageGateway.Client.update_nfs_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_nfs_file_share)
+```python title="Method definition"
+def update_nfs_file_share(
+    self,
+    *,
+    FileShareARN: str,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    NFSFileShareDefaults: NFSFileShareDefaultsTypeDef = ...,  # (1)
+    DefaultStorageClass: str = ...,
+    ObjectACL: ObjectACLType = ...,  # (2)
+    ClientList: Sequence[str] = ...,
+    Squash: str = ...,
+    ReadOnly: bool = ...,
+    GuessMIMETypeEnabled: bool = ...,
+    RequesterPays: bool = ...,
+    FileShareName: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (3)
+    NotificationPolicy: str = ...,
+    AuditDestinationARN: str = ...,
+) -> UpdateNFSFileShareOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNFSFileShareInputRequestTypeDef](./type_defs.md#updatenfsfileshareinputrequesttypedef).
+1. See [:material-code-braces: NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef) 
+2. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+3. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+4. See [:material-code-braces: UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARN`: `str` *(required)*
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `NFSFileShareDefaults`:
-  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `Sequence`\[`str`\]
-- `Squash`: `str`
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `AuditDestinationARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateNFSFileShareInputRequestTypeDef = {  # (1)
+    "FileShareARN": ...,
+}
 
-Returns
-[UpdateNFSFileShareOutputTypeDef](./type_defs.md#updatenfsfileshareoutputtypedef).
+parent.update_nfs_file_share(**kwargs)
+```
 
-<a id="update\_smb\_file\_share"></a>
+1. See [:material-code-braces: UpdateNFSFileShareInputRequestTypeDef](./type_defs.md#updatenfsfileshareinputrequesttypedef) 
 
-### update_smb_file_share
+### update\_smb\_file\_share
 
 Updates a Server Message Block (SMB) file share.
 
-Type annotations for `boto3.client("storagegateway").update_smb_file_share`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_smb_file_share` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share)
 
-Boto3 documentation:
-[StorageGateway.Client.update_smb_file_share](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share)
+```python title="Method definition"
+def update_smb_file_share(
+    self,
+    *,
+    FileShareARN: str,
+    KMSEncrypted: bool = ...,
+    KMSKey: str = ...,
+    DefaultStorageClass: str = ...,
+    ObjectACL: ObjectACLType = ...,  # (1)
+    ReadOnly: bool = ...,
+    GuessMIMETypeEnabled: bool = ...,
+    RequesterPays: bool = ...,
+    SMBACLEnabled: bool = ...,
+    AccessBasedEnumeration: bool = ...,
+    AdminUserList: Sequence[str] = ...,
+    ValidUserList: Sequence[str] = ...,
+    InvalidUserList: Sequence[str] = ...,
+    AuditDestinationARN: str = ...,
+    CaseSensitivity: CaseSensitivityType = ...,  # (2)
+    FileShareName: str = ...,
+    CacheAttributes: CacheAttributesTypeDef = ...,  # (3)
+    NotificationPolicy: str = ...,
+    OplocksEnabled: bool = ...,
+) -> UpdateSMBFileShareOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSMBFileShareInputRequestTypeDef](./type_defs.md#updatesmbfileshareinputrequesttypedef).
+1. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+2. See [:material-code-brackets: CaseSensitivityType](./literals.md#casesensitivitytype) 
+3. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+4. See [:material-code-braces: UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef) 
 
-Keyword-only arguments:
 
-- `FileShareARN`: `str` *(required)*
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `SMBACLEnabled`: `bool`
-- `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `Sequence`\[`str`\]
-- `ValidUserList`: `Sequence`\[`str`\]
-- `InvalidUserList`: `Sequence`\[`str`\]
-- `AuditDestinationARN`: `str`
-- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `OplocksEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateSMBFileShareInputRequestTypeDef = {  # (1)
+    "FileShareARN": ...,
+}
 
-Returns
-[UpdateSMBFileShareOutputTypeDef](./type_defs.md#updatesmbfileshareoutputtypedef).
+parent.update_smb_file_share(**kwargs)
+```
 
-<a id="update\_smb\_file\_share\_visibility"></a>
+1. See [:material-code-braces: UpdateSMBFileShareInputRequestTypeDef](./type_defs.md#updatesmbfileshareinputrequesttypedef) 
 
-### update_smb_file_share_visibility
+### update\_smb\_file\_share\_visibility
 
 Controls whether the shares on an S3 File Gateway are visible in a net view or
 browse list.
 
-Type annotations for
-`boto3.client("storagegateway").update_smb_file_share_visibility` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_smb_file_share_visibility` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility)
 
-Boto3 documentation:
-[StorageGateway.Client.update_smb_file_share_visibility](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_file_share_visibility)
+```python title="Method definition"
+def update_smb_file_share_visibility(
+    self,
+    *,
+    GatewayARN: str,
+    FileSharesVisible: bool,
+) -> UpdateSMBFileShareVisibilityOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSMBFileShareVisibilityInputRequestTypeDef](./type_defs.md#updatesmbfilesharevisibilityinputrequesttypedef).
+1. See [:material-code-braces: UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `FileSharesVisible`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSMBFileShareVisibilityInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "FileSharesVisible": ...,
+}
 
-Returns
-[UpdateSMBFileShareVisibilityOutputTypeDef](./type_defs.md#updatesmbfilesharevisibilityoutputtypedef).
+parent.update_smb_file_share_visibility(**kwargs)
+```
 
-<a id="update\_smb\_local\_groups"></a>
+1. See [:material-code-braces: UpdateSMBFileShareVisibilityInputRequestTypeDef](./type_defs.md#updatesmbfilesharevisibilityinputrequesttypedef) 
 
-### update_smb_local_groups
+### update\_smb\_local\_groups
 
 Updates the list of Active Directory users and groups that have special
 permissions for SMB file shares on the gateway.
 
-Type annotations for `boto3.client("storagegateway").update_smb_local_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_smb_local_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_local_groups)
 
-Boto3 documentation:
-[StorageGateway.Client.update_smb_local_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_local_groups)
+```python title="Method definition"
+def update_smb_local_groups(
+    self,
+    *,
+    GatewayARN: str,
+    SMBLocalGroups: SMBLocalGroupsTypeDef,  # (1)
+) -> UpdateSMBLocalGroupsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSMBLocalGroupsInputRequestTypeDef](./type_defs.md#updatesmblocalgroupsinputrequesttypedef).
+1. See [:material-code-braces: SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) 
+2. See [:material-code-braces: UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `SMBLocalGroups`:
-  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSMBLocalGroupsInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "SMBLocalGroups": ...,
+}
 
-Returns
-[UpdateSMBLocalGroupsOutputTypeDef](./type_defs.md#updatesmblocalgroupsoutputtypedef).
+parent.update_smb_local_groups(**kwargs)
+```
 
-<a id="update\_smb\_security\_strategy"></a>
+1. See [:material-code-braces: UpdateSMBLocalGroupsInputRequestTypeDef](./type_defs.md#updatesmblocalgroupsinputrequesttypedef) 
 
-### update_smb_security_strategy
+### update\_smb\_security\_strategy
 
 Updates the SMB security strategy on a file gateway.
 
-Type annotations for
-`boto3.client("storagegateway").update_smb_security_strategy` method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_smb_security_strategy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy)
 
-Boto3 documentation:
-[StorageGateway.Client.update_smb_security_strategy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_smb_security_strategy)
+```python title="Method definition"
+def update_smb_security_strategy(
+    self,
+    *,
+    GatewayARN: str,
+    SMBSecurityStrategy: SMBSecurityStrategyType,  # (1)
+) -> UpdateSMBSecurityStrategyOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSMBSecurityStrategyInputRequestTypeDef](./type_defs.md#updatesmbsecuritystrategyinputrequesttypedef).
+1. See [:material-code-brackets: SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype) 
+2. See [:material-code-braces: UpdateSMBSecurityStrategyOutputTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `GatewayARN`: `str` *(required)*
-- `SMBSecurityStrategy`:
-  [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSMBSecurityStrategyInputRequestTypeDef = {  # (1)
+    "GatewayARN": ...,
+    "SMBSecurityStrategy": ...,
+}
 
-Returns
-[UpdateSMBSecurityStrategyOutputTypeDef](./type_defs.md#updatesmbsecuritystrategyoutputtypedef).
+parent.update_smb_security_strategy(**kwargs)
+```
 
-<a id="update\_snapshot\_schedule"></a>
+1. See [:material-code-braces: UpdateSMBSecurityStrategyInputRequestTypeDef](./type_defs.md#updatesmbsecuritystrategyinputrequesttypedef) 
 
-### update_snapshot_schedule
+### update\_snapshot\_schedule
 
 Updates a snapshot schedule configured for a gateway volume.
 
-Type annotations for `boto3.client("storagegateway").update_snapshot_schedule`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_snapshot_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_snapshot_schedule)
 
-Boto3 documentation:
-[StorageGateway.Client.update_snapshot_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_snapshot_schedule)
+```python title="Method definition"
+def update_snapshot_schedule(
+    self,
+    *,
+    VolumeARN: str,
+    StartAt: int,
+    RecurrenceInHours: int,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> UpdateSnapshotScheduleOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSnapshotScheduleInputRequestTypeDef](./type_defs.md#updatesnapshotscheduleinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: UpdateSnapshotScheduleOutputTypeDef](./type_defs.md#updatesnapshotscheduleoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VolumeARN`: `str` *(required)*
-- `StartAt`: `int` *(required)*
-- `RecurrenceInHours`: `int` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSnapshotScheduleInputRequestTypeDef = {  # (1)
+    "VolumeARN": ...,
+    "StartAt": ...,
+    "RecurrenceInHours": ...,
+}
 
-Returns
-[UpdateSnapshotScheduleOutputTypeDef](./type_defs.md#updatesnapshotscheduleoutputtypedef).
+parent.update_snapshot_schedule(**kwargs)
+```
 
-<a id="update\_vtl\_device\_type"></a>
+1. See [:material-code-braces: UpdateSnapshotScheduleInputRequestTypeDef](./type_defs.md#updatesnapshotscheduleinputrequesttypedef) 
 
-### update_vtl_device_type
+### update\_vtl\_device\_type
 
 Updates the type of medium changer in a tape gateway.
 
-Type annotations for `boto3.client("storagegateway").update_vtl_device_type`
-method.
+Type annotations and code completion for `#!python boto3.client("storagegateway").update_vtl_device_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type)
 
-Boto3 documentation:
-[StorageGateway.Client.update_vtl_device_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Client.update_vtl_device_type)
+```python title="Method definition"
+def update_vtl_device_type(
+    self,
+    *,
+    VTLDeviceARN: str,
+    DeviceType: str,
+) -> UpdateVTLDeviceTypeOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVTLDeviceTypeInputRequestTypeDef](./type_defs.md#updatevtldevicetypeinputrequesttypedef).
+1. See [:material-code-braces: UpdateVTLDeviceTypeOutputTypeDef](./type_defs.md#updatevtldevicetypeoutputtypedef) 
 
-Keyword-only arguments:
 
-- `VTLDeviceARN`: `str` *(required)*
-- `DeviceType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateVTLDeviceTypeInputRequestTypeDef = {  # (1)
+    "VTLDeviceARN": ...,
+    "DeviceType": ...,
+}
 
-Returns
-[UpdateVTLDeviceTypeOutputTypeDef](./type_defs.md#updatevtldevicetypeoutputtypedef).
+parent.update_vtl_device_type(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVTLDeviceTypeInputRequestTypeDef](./type_defs.md#updatevtldevicetypeinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("storagegateway").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_tape_archives")` ->
-  [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
-- `client.get_paginator("describe_tape_recovery_points")` ->
-  [DescribeTapeRecoveryPointsPaginator](./paginators.md#describetaperecoverypointspaginator)
-- `client.get_paginator("describe_tapes")` ->
-  [DescribeTapesPaginator](./paginators.md#describetapespaginator)
-- `client.get_paginator("describe_vtl_devices")` ->
-  [DescribeVTLDevicesPaginator](./paginators.md#describevtldevicespaginator)
-- `client.get_paginator("list_file_shares")` ->
-  [ListFileSharesPaginator](./paginators.md#listfilesharespaginator)
-- `client.get_paginator("list_file_system_associations")` ->
-  [ListFileSystemAssociationsPaginator](./paginators.md#listfilesystemassociationspaginator)
-- `client.get_paginator("list_gateways")` ->
-  [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_tape_pools")` ->
-  [ListTapePoolsPaginator](./paginators.md#listtapepoolspaginator)
-- `client.get_paginator("list_tapes")` ->
-  [ListTapesPaginator](./paginators.md#listtapespaginator)
-- `client.get_paginator("list_volumes")` ->
-  [ListVolumesPaginator](./paginators.md#listvolumespaginator)
+- `client.get_paginator("describe_tape_archives")` -> [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
+- `client.get_paginator("describe_tape_recovery_points")` -> [DescribeTapeRecoveryPointsPaginator](./paginators.md#describetaperecoverypointspaginator)
+- `client.get_paginator("describe_tapes")` -> [DescribeTapesPaginator](./paginators.md#describetapespaginator)
+- `client.get_paginator("describe_vtl_devices")` -> [DescribeVTLDevicesPaginator](./paginators.md#describevtldevicespaginator)
+- `client.get_paginator("list_file_shares")` -> [ListFileSharesPaginator](./paginators.md#listfilesharespaginator)
+- `client.get_paginator("list_file_system_associations")` -> [ListFileSystemAssociationsPaginator](./paginators.md#listfilesystemassociationspaginator)
+- `client.get_paginator("list_gateways")` -> [ListGatewaysPaginator](./paginators.md#listgatewayspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_tape_pools")` -> [ListTapePoolsPaginator](./paginators.md#listtapepoolspaginator)
+- `client.get_paginator("list_tapes")` -> [ListTapesPaginator](./paginators.md#listtapespaginator)
+- `client.get_paginator("list_volumes")` -> [ListVolumesPaginator](./paginators.md#listvolumespaginator)
+
+
+

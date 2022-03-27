@@ -1,72 +1,18 @@
-<a id="datasyncclient-for-boto3-datasync-module"></a>
-
-# DataSyncClient for boto3 DataSync module
+# DataSyncClient
 
 > [Index](../README.md) > [DataSync](./README.md) > DataSyncClient
 
-Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module
-[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
+!!! note ""
 
-- [DataSyncClient for boto3 DataSync module](#datasyncclient-for-boto3-datasync-module)
-  - [DataSyncClient](#datasyncclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_task_execution](#cancel_task_execution)
-    - [create_agent](#create_agent)
-    - [create_location_efs](#create_location_efs)
-    - [create_location_fsx_lustre](#create_location_fsx_lustre)
-    - [create_location_fsx_windows](#create_location_fsx_windows)
-    - [create_location_hdfs](#create_location_hdfs)
-    - [create_location_nfs](#create_location_nfs)
-    - [create_location_object_storage](#create_location_object_storage)
-    - [create_location_s3](#create_location_s3)
-    - [create_location_smb](#create_location_smb)
-    - [create_task](#create_task)
-    - [delete_agent](#delete_agent)
-    - [delete_location](#delete_location)
-    - [delete_task](#delete_task)
-    - [describe_agent](#describe_agent)
-    - [describe_location_efs](#describe_location_efs)
-    - [describe_location_fsx_lustre](#describe_location_fsx_lustre)
-    - [describe_location_fsx_windows](#describe_location_fsx_windows)
-    - [describe_location_hdfs](#describe_location_hdfs)
-    - [describe_location_nfs](#describe_location_nfs)
-    - [describe_location_object_storage](#describe_location_object_storage)
-    - [describe_location_s3](#describe_location_s3)
-    - [describe_location_smb](#describe_location_smb)
-    - [describe_task](#describe_task)
-    - [describe_task_execution](#describe_task_execution)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_agents](#list_agents)
-    - [list_locations](#list_locations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_task_executions](#list_task_executions)
-    - [list_tasks](#list_tasks)
-    - [start_task_execution](#start_task_execution)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_agent](#update_agent)
-    - [update_location_hdfs](#update_location_hdfs)
-    - [update_location_nfs](#update_location_nfs)
-    - [update_location_object_storage](#update_location_object_storage)
-    - [update_location_smb](#update_location_smb)
-    - [update_task](#update_task)
-    - [update_task_execution](#update_task_execution)
-    - [get_paginator](#get_paginator)
-
-<a id="datasyncclient"></a>
+    Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+    type annotations stubs module [mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 ## DataSyncClient
 
-Type annotations for `boto3.client("datasync")`
+Type annotations and code completion for `#!python boto3.client("datasync")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_datasync.client import DataSyncClient
 
@@ -74,1084 +20,1412 @@ def get_datasync_client() -> DataSyncClient:
     return Session().client("datasync")
 ```
 
-Boto3 documentation:
-[DataSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("datasync").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("datasync")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalException,
+    client.InvalidRequestException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_datasync.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidRequestException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DataSyncClient exceptions.
-
-Type annotations for `boto3.client("datasync").exceptions` method.
-
-Boto3 documentation:
-[DataSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("datasync").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("datasync").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate)
 
-Boto3 documentation:
-[DataSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_task\_execution"></a>
-
-### cancel_task_execution
+### cancel\_task\_execution
 
 Cancels execution of a task.
 
-Type annotations for `boto3.client("datasync").cancel_task_execution` method.
+Type annotations and code completion for `#!python boto3.client("datasync").cancel_task_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
 
-Boto3 documentation:
-[DataSync.Client.cancel_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.cancel_task_execution)
+```python title="Method definition"
+def cancel_task_execution(
+    self,
+    *,
+    TaskExecutionArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelTaskExecutionRequestRequestTypeDef](./type_defs.md#canceltaskexecutionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TaskExecutionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelTaskExecutionRequestRequestTypeDef = {  # (1)
+    "TaskExecutionArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_task_execution(**kwargs)
+```
 
-<a id="create\_agent"></a>
+1. See [:material-code-braces: CancelTaskExecutionRequestRequestTypeDef](./type_defs.md#canceltaskexecutionrequestrequesttypedef) 
 
-### create_agent
+### create\_agent
 
 Activates an DataSync agent that you have deployed on your host.
 
-Type annotations for `boto3.client("datasync").create_agent` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
 
-Boto3 documentation:
-[DataSync.Client.create_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_agent)
+```python title="Method definition"
+def create_agent(
+    self,
+    *,
+    ActivationKey: str,
+    AgentName: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (1)
+    VpcEndpointId: str = ...,
+    SubnetArns: Sequence[str] = ...,
+    SecurityGroupArns: Sequence[str] = ...,
+) -> CreateAgentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAgentRequestRequestTypeDef](./type_defs.md#createagentrequestrequesttypedef).
+1. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+2. See [:material-code-braces: CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ActivationKey`: `str` *(required)*
-- `AgentName`: `str`
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
-- `VpcEndpointId`: `str`
-- `SubnetArns`: `Sequence`\[`str`\]
-- `SecurityGroupArns`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAgentRequestRequestTypeDef = {  # (1)
+    "ActivationKey": ...,
+}
 
-Returns
-[CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
+parent.create_agent(**kwargs)
+```
 
-<a id="create\_location\_efs"></a>
+1. See [:material-code-braces: CreateAgentRequestRequestTypeDef](./type_defs.md#createagentrequestrequesttypedef) 
 
-### create_location_efs
+### create\_location\_efs
 
 Creates an endpoint for an Amazon EFS file system.
 
-Type annotations for `boto3.client("datasync").create_location_efs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_efs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
 
-Boto3 documentation:
-[DataSync.Client.create_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_efs)
+```python title="Method definition"
+def create_location_efs(
+    self,
+    *,
+    EfsFilesystemArn: str,
+    Ec2Config: Ec2ConfigTypeDef,  # (1)
+    Subdirectory: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
+) -> CreateLocationEfsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationEfsRequestRequestTypeDef](./type_defs.md#createlocationefsrequestrequesttypedef).
+1. See [:material-code-braces: Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+3. See [:material-code-braces: CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EfsFilesystemArn`: `str` *(required)*
-- `Ec2Config`: [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef) *(required)*
-- `Subdirectory`: `str`
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationEfsRequestRequestTypeDef = {  # (1)
+    "EfsFilesystemArn": ...,
+    "Ec2Config": ...,
+}
 
-Returns
-[CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
+parent.create_location_efs(**kwargs)
+```
 
-<a id="create\_location\_fsx\_lustre"></a>
+1. See [:material-code-braces: CreateLocationEfsRequestRequestTypeDef](./type_defs.md#createlocationefsrequestrequesttypedef) 
 
-### create_location_fsx_lustre
+### create\_location\_fsx\_lustre
 
 Creates an endpoint for an Amazon FSx for Lustre file system.
 
-Type annotations for `boto3.client("datasync").create_location_fsx_lustre`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_fsx_lustre` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_lustre)
 
-Boto3 documentation:
-[DataSync.Client.create_location_fsx_lustre](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_lustre)
+```python title="Method definition"
+def create_location_fsx_lustre(
+    self,
+    *,
+    FsxFilesystemArn: str,
+    SecurityGroupArns: Sequence[str],
+    Subdirectory: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (1)
+) -> CreateLocationFsxLustreResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationFsxLustreRequestRequestTypeDef](./type_defs.md#createlocationfsxlustrerequestrequesttypedef).
+1. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+2. See [:material-code-braces: CreateLocationFsxLustreResponseTypeDef](./type_defs.md#createlocationfsxlustreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FsxFilesystemArn`: `str` *(required)*
-- `SecurityGroupArns`: `Sequence`\[`str`\] *(required)*
-- `Subdirectory`: `str`
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationFsxLustreRequestRequestTypeDef = {  # (1)
+    "FsxFilesystemArn": ...,
+    "SecurityGroupArns": ...,
+}
 
-Returns
-[CreateLocationFsxLustreResponseTypeDef](./type_defs.md#createlocationfsxlustreresponsetypedef).
+parent.create_location_fsx_lustre(**kwargs)
+```
 
-<a id="create\_location\_fsx\_windows"></a>
+1. See [:material-code-braces: CreateLocationFsxLustreRequestRequestTypeDef](./type_defs.md#createlocationfsxlustrerequestrequesttypedef) 
 
-### create_location_fsx_windows
+### create\_location\_fsx\_windows
 
 Creates an endpoint for an Amazon FSx for Windows File Server file system.
 
-Type annotations for `boto3.client("datasync").create_location_fsx_windows`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_fsx_windows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
 
-Boto3 documentation:
-[DataSync.Client.create_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_fsx_windows)
+```python title="Method definition"
+def create_location_fsx_windows(
+    self,
+    *,
+    FsxFilesystemArn: str,
+    SecurityGroupArns: Sequence[str],
+    User: str,
+    Password: str,
+    Subdirectory: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (1)
+    Domain: str = ...,
+) -> CreateLocationFsxWindowsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#createlocationfsxwindowsrequestrequesttypedef).
+1. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+2. See [:material-code-braces: CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FsxFilesystemArn`: `str` *(required)*
-- `SecurityGroupArns`: `Sequence`\[`str`\] *(required)*
-- `User`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `Subdirectory`: `str`
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
-- `Domain`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLocationFsxWindowsRequestRequestTypeDef = {  # (1)
+    "FsxFilesystemArn": ...,
+    "SecurityGroupArns": ...,
+    "User": ...,
+    "Password": ...,
+}
 
-Returns
-[CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
+parent.create_location_fsx_windows(**kwargs)
+```
 
-<a id="create\_location\_hdfs"></a>
+1. See [:material-code-braces: CreateLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#createlocationfsxwindowsrequestrequesttypedef) 
 
-### create_location_hdfs
+### create\_location\_hdfs
 
 Creates an endpoint for a Hadoop Distributed File System (HDFS).
 
-Type annotations for `boto3.client("datasync").create_location_hdfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_hdfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_hdfs)
 
-Boto3 documentation:
-[DataSync.Client.create_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_hdfs)
+```python title="Method definition"
+def create_location_hdfs(
+    self,
+    *,
+    NameNodes: Sequence[HdfsNameNodeTypeDef],  # (1)
+    AuthenticationType: HdfsAuthenticationTypeType,  # (2)
+    AgentArns: Sequence[str],
+    Subdirectory: str = ...,
+    BlockSize: int = ...,
+    ReplicationFactor: int = ...,
+    KmsKeyProviderUri: str = ...,
+    QopConfiguration: QopConfigurationTypeDef = ...,  # (3)
+    SimpleUser: str = ...,
+    KerberosPrincipal: str = ...,
+    KerberosKeytab: Union[bytes, IO[bytes], StreamingBody] = ...,
+    KerberosKrb5Conf: Union[bytes, IO[bytes], StreamingBody] = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (4)
+) -> CreateLocationHdfsResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationHdfsRequestRequestTypeDef](./type_defs.md#createlocationhdfsrequestrequesttypedef).
+1. See [:material-code-braces: HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef) 
+2. See [:material-code-brackets: HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype) 
+3. See [:material-code-braces: QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef) 
+4. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+5. See [:material-code-braces: CreateLocationHdfsResponseTypeDef](./type_defs.md#createlocationhdfsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NameNodes`:
-  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
-  *(required)*
-- `AuthenticationType`:
-  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
-  *(required)*
-- `AgentArns`: `Sequence`\[`str`\] *(required)*
-- `Subdirectory`: `str`
-- `BlockSize`: `int`
-- `ReplicationFactor`: `int`
-- `KmsKeyProviderUri`: `str`
-- `QopConfiguration`:
-  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
-- `SimpleUser`: `str`
-- `KerberosPrincipal`: `str`
-- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationHdfsRequestRequestTypeDef = {  # (1)
+    "NameNodes": ...,
+    "AuthenticationType": ...,
+    "AgentArns": ...,
+}
 
-Returns
-[CreateLocationHdfsResponseTypeDef](./type_defs.md#createlocationhdfsresponsetypedef).
+parent.create_location_hdfs(**kwargs)
+```
 
-<a id="create\_location\_nfs"></a>
+1. See [:material-code-braces: CreateLocationHdfsRequestRequestTypeDef](./type_defs.md#createlocationhdfsrequestrequesttypedef) 
 
-### create_location_nfs
+### create\_location\_nfs
 
 Defines a file system on a Network File System (NFS) server that can be read
 from or written to.
 
-Type annotations for `boto3.client("datasync").create_location_nfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_nfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
 
-Boto3 documentation:
-[DataSync.Client.create_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_nfs)
+```python title="Method definition"
+def create_location_nfs(
+    self,
+    *,
+    Subdirectory: str,
+    ServerHostname: str,
+    OnPremConfig: OnPremConfigTypeDef,  # (1)
+    MountOptions: NfsMountOptionsTypeDef = ...,  # (2)
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (3)
+) -> CreateLocationNfsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationNfsRequestRequestTypeDef](./type_defs.md#createlocationnfsrequestrequesttypedef).
+1. See [:material-code-braces: OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef) 
+2. See [:material-code-braces: NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef) 
+3. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+4. See [:material-code-braces: CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Subdirectory`: `str` *(required)*
-- `ServerHostname`: `str` *(required)*
-- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
-  *(required)*
-- `MountOptions`:
-  [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationNfsRequestRequestTypeDef = {  # (1)
+    "Subdirectory": ...,
+    "ServerHostname": ...,
+    "OnPremConfig": ...,
+}
 
-Returns
-[CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
+parent.create_location_nfs(**kwargs)
+```
 
-<a id="create\_location\_object\_storage"></a>
+1. See [:material-code-braces: CreateLocationNfsRequestRequestTypeDef](./type_defs.md#createlocationnfsrequestrequesttypedef) 
 
-### create_location_object_storage
+### create\_location\_object\_storage
 
 Creates an endpoint for a self-managed object storage bucket.
 
-Type annotations for `boto3.client("datasync").create_location_object_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_object_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
 
-Boto3 documentation:
-[DataSync.Client.create_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_object_storage)
+```python title="Method definition"
+def create_location_object_storage(
+    self,
+    *,
+    ServerHostname: str,
+    BucketName: str,
+    AgentArns: Sequence[str],
+    ServerPort: int = ...,
+    ServerProtocol: ObjectStorageServerProtocolType = ...,  # (1)
+    Subdirectory: str = ...,
+    AccessKey: str = ...,
+    SecretKey: str = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
+) -> CreateLocationObjectStorageResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#createlocationobjectstoragerequestrequesttypedef).
+1. See [:material-code-brackets: ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+3. See [:material-code-braces: CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServerHostname`: `str` *(required)*
-- `BucketName`: `str` *(required)*
-- `AgentArns`: `Sequence`\[`str`\] *(required)*
-- `ServerPort`: `int`
-- `ServerProtocol`:
-  [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
-- `Subdirectory`: `str`
-- `AccessKey`: `str`
-- `SecretKey`: `str`
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationObjectStorageRequestRequestTypeDef = {  # (1)
+    "ServerHostname": ...,
+    "BucketName": ...,
+    "AgentArns": ...,
+}
 
-Returns
-[CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
+parent.create_location_object_storage(**kwargs)
+```
 
-<a id="create\_location\_s3"></a>
+1. See [:material-code-braces: CreateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#createlocationobjectstoragerequestrequesttypedef) 
 
-### create_location_s3
+### create\_location\_s3
 
 Creates an endpoint for an Amazon S3 bucket.
 
-Type annotations for `boto3.client("datasync").create_location_s3` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
 
-Boto3 documentation:
-[DataSync.Client.create_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_s3)
+```python title="Method definition"
+def create_location_s3(
+    self,
+    *,
+    S3BucketArn: str,
+    S3Config: S3ConfigTypeDef,  # (1)
+    Subdirectory: str = ...,
+    S3StorageClass: S3StorageClassType = ...,  # (2)
+    AgentArns: Sequence[str] = ...,
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (3)
+) -> CreateLocationS3ResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationS3RequestRequestTypeDef](./type_defs.md#createlocations3requestrequesttypedef).
+1. See [:material-code-braces: S3ConfigTypeDef](./type_defs.md#s3configtypedef) 
+2. See [:material-code-brackets: S3StorageClassType](./literals.md#s3storageclasstype) 
+3. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+4. See [:material-code-braces: CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef) 
 
-Keyword-only arguments:
 
-- `S3BucketArn`: `str` *(required)*
-- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef) *(required)*
-- `Subdirectory`: `str`
-- `S3StorageClass`: [S3StorageClassType](./literals.md#s3storageclasstype)
-- `AgentArns`: `Sequence`\[`str`\]
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationS3RequestRequestTypeDef = {  # (1)
+    "S3BucketArn": ...,
+    "S3Config": ...,
+}
 
-Returns
-[CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
+parent.create_location_s3(**kwargs)
+```
 
-<a id="create\_location\_smb"></a>
+1. See [:material-code-braces: CreateLocationS3RequestRequestTypeDef](./type_defs.md#createlocations3requestrequesttypedef) 
 
-### create_location_smb
+### create\_location\_smb
 
 Defines a file system on a Server Message Block (SMB) server that can be read
 from or written to.
 
-Type annotations for `boto3.client("datasync").create_location_smb` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_location_smb` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
 
-Boto3 documentation:
-[DataSync.Client.create_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_location_smb)
+```python title="Method definition"
+def create_location_smb(
+    self,
+    *,
+    Subdirectory: str,
+    ServerHostname: str,
+    User: str,
+    Password: str,
+    AgentArns: Sequence[str],
+    Domain: str = ...,
+    MountOptions: SmbMountOptionsTypeDef = ...,  # (1)
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (2)
+) -> CreateLocationSmbResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLocationSmbRequestRequestTypeDef](./type_defs.md#createlocationsmbrequestrequesttypedef).
+1. See [:material-code-braces: SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef) 
+2. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+3. See [:material-code-braces: CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Subdirectory`: `str` *(required)*
-- `ServerHostname`: `str` *(required)*
-- `User`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `AgentArns`: `Sequence`\[`str`\] *(required)*
-- `Domain`: `str`
-- `MountOptions`:
-  [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLocationSmbRequestRequestTypeDef = {  # (1)
+    "Subdirectory": ...,
+    "ServerHostname": ...,
+    "User": ...,
+    "Password": ...,
+    "AgentArns": ...,
+}
 
-Returns
-[CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
+parent.create_location_smb(**kwargs)
+```
 
-<a id="create\_task"></a>
+1. See [:material-code-braces: CreateLocationSmbRequestRequestTypeDef](./type_defs.md#createlocationsmbrequestrequesttypedef) 
 
-### create_task
+### create\_task
 
 Creates a task.
 
-Type annotations for `boto3.client("datasync").create_task` method.
+Type annotations and code completion for `#!python boto3.client("datasync").create_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
 
-Boto3 documentation:
-[DataSync.Client.create_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.create_task)
+```python title="Method definition"
+def create_task(
+    self,
+    *,
+    SourceLocationArn: str,
+    DestinationLocationArn: str,
+    CloudWatchLogGroupArn: str = ...,
+    Name: str = ...,
+    Options: OptionsTypeDef = ...,  # (1)
+    Excludes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+    Schedule: TaskScheduleTypeDef = ...,  # (3)
+    Tags: Sequence[TagListEntryTypeDef] = ...,  # (4)
+    Includes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+) -> CreateTaskResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateTaskRequestRequestTypeDef](./type_defs.md#createtaskrequestrequesttypedef).
+1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
+2. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+3. See [:material-code-braces: TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef) 
+4. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
+5. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+6. See [:material-code-braces: CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceLocationArn`: `str` *(required)*
-- `DestinationLocationArn`: `str` *(required)*
-- `CloudWatchLogGroupArn`: `str`
-- `Name`: `str`
-- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
-- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
-- `Includes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateTaskRequestRequestTypeDef = {  # (1)
+    "SourceLocationArn": ...,
+    "DestinationLocationArn": ...,
+}
 
-Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
+parent.create_task(**kwargs)
+```
 
-<a id="delete\_agent"></a>
+1. See [:material-code-braces: CreateTaskRequestRequestTypeDef](./type_defs.md#createtaskrequestrequesttypedef) 
 
-### delete_agent
+### delete\_agent
 
 Deletes an agent.
 
-Type annotations for `boto3.client("datasync").delete_agent` method.
+Type annotations and code completion for `#!python boto3.client("datasync").delete_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
 
-Boto3 documentation:
-[DataSync.Client.delete_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_agent)
+```python title="Method definition"
+def delete_agent(
+    self,
+    *,
+    AgentArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAgentRequestRequestTypeDef](./type_defs.md#deleteagentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AgentArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAgentRequestRequestTypeDef = {  # (1)
+    "AgentArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_agent(**kwargs)
+```
 
-<a id="delete\_location"></a>
+1. See [:material-code-braces: DeleteAgentRequestRequestTypeDef](./type_defs.md#deleteagentrequestrequesttypedef) 
 
-### delete_location
+### delete\_location
 
 Deletes the configuration of a location used by DataSync.
 
-Type annotations for `boto3.client("datasync").delete_location` method.
+Type annotations and code completion for `#!python boto3.client("datasync").delete_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
 
-Boto3 documentation:
-[DataSync.Client.delete_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_location)
+```python title="Method definition"
+def delete_location(
+    self,
+    *,
+    LocationArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLocationRequestRequestTypeDef](./type_defs.md#deletelocationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLocationRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_location(**kwargs)
+```
 
-<a id="delete\_task"></a>
+1. See [:material-code-braces: DeleteLocationRequestRequestTypeDef](./type_defs.md#deletelocationrequestrequesttypedef) 
 
-### delete_task
+### delete\_task
 
 Deletes a task.
 
-Type annotations for `boto3.client("datasync").delete_task` method.
+Type annotations and code completion for `#!python boto3.client("datasync").delete_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
 
-Boto3 documentation:
-[DataSync.Client.delete_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.delete_task)
+```python title="Method definition"
+def delete_task(
+    self,
+    *,
+    TaskArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTaskRequestRequestTypeDef](./type_defs.md#deletetaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TaskArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTaskRequestRequestTypeDef = {  # (1)
+    "TaskArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_task(**kwargs)
+```
 
-<a id="describe\_agent"></a>
+1. See [:material-code-braces: DeleteTaskRequestRequestTypeDef](./type_defs.md#deletetaskrequestrequesttypedef) 
 
-### describe_agent
+### describe\_agent
 
 Returns metadata such as the name, the network interfaces, and the status (that
 is, whether the agent is running or not) for an agent.
 
-Type annotations for `boto3.client("datasync").describe_agent` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
 
-Boto3 documentation:
-[DataSync.Client.describe_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_agent)
+```python title="Method definition"
+def describe_agent(
+    self,
+    *,
+    AgentArn: str,
+) -> DescribeAgentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAgentRequestRequestTypeDef](./type_defs.md#describeagentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AgentArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAgentRequestRequestTypeDef = {  # (1)
+    "AgentArn": ...,
+}
 
-Returns
-[DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef).
+parent.describe_agent(**kwargs)
+```
 
-<a id="describe\_location\_efs"></a>
+1. See [:material-code-braces: DescribeAgentRequestRequestTypeDef](./type_defs.md#describeagentrequestrequesttypedef) 
 
-### describe_location_efs
+### describe\_location\_efs
 
 Returns metadata, such as the path information about an Amazon EFS location.
 
-Type annotations for `boto3.client("datasync").describe_location_efs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_efs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_efs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_efs)
+```python title="Method definition"
+def describe_location_efs(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationEfsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationEfsRequestRequestTypeDef](./type_defs.md#describelocationefsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationEfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
+parent.describe_location_efs(**kwargs)
+```
 
-<a id="describe\_location\_fsx\_lustre"></a>
+1. See [:material-code-braces: DescribeLocationEfsRequestRequestTypeDef](./type_defs.md#describelocationefsrequestrequesttypedef) 
 
-### describe_location_fsx_lustre
+### describe\_location\_fsx\_lustre
 
 Returns metadata, such as the path information about an Amazon FSx for Lustre
 location.
 
-Type annotations for `boto3.client("datasync").describe_location_fsx_lustre`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_lustre` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_lustre)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_fsx_lustre](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_lustre)
+```python title="Method definition"
+def describe_location_fsx_lustre(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationFsxLustreResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationFsxLustreRequestRequestTypeDef](./type_defs.md#describelocationfsxlustrerequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationFsxLustreResponseTypeDef](./type_defs.md#describelocationfsxlustreresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationFsxLustreRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationFsxLustreResponseTypeDef](./type_defs.md#describelocationfsxlustreresponsetypedef).
+parent.describe_location_fsx_lustre(**kwargs)
+```
 
-<a id="describe\_location\_fsx\_windows"></a>
+1. See [:material-code-braces: DescribeLocationFsxLustreRequestRequestTypeDef](./type_defs.md#describelocationfsxlustrerequestrequesttypedef) 
 
-### describe_location_fsx_windows
+### describe\_location\_fsx\_windows
 
 Returns metadata, such as the path information about an Amazon FSx for Windows
 File Server location.
 
-Type annotations for `boto3.client("datasync").describe_location_fsx_windows`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_fsx_windows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_fsx_windows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_fsx_windows)
+```python title="Method definition"
+def describe_location_fsx_windows(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationFsxWindowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#describelocationfsxwindowsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationFsxWindowsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
+parent.describe_location_fsx_windows(**kwargs)
+```
 
-<a id="describe\_location\_hdfs"></a>
+1. See [:material-code-braces: DescribeLocationFsxWindowsRequestRequestTypeDef](./type_defs.md#describelocationfsxwindowsrequestrequesttypedef) 
 
-### describe_location_hdfs
+### describe\_location\_hdfs
 
 Returns metadata, such as the authentication information about the Hadoop
 Distributed File System (HDFS) location.
 
-Type annotations for `boto3.client("datasync").describe_location_hdfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_hdfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_hdfs)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_hdfs)
+```python title="Method definition"
+def describe_location_hdfs(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationHdfsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationHdfsRequestRequestTypeDef](./type_defs.md#describelocationhdfsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationHdfsResponseTypeDef](./type_defs.md#describelocationhdfsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationHdfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationHdfsResponseTypeDef](./type_defs.md#describelocationhdfsresponsetypedef).
+parent.describe_location_hdfs(**kwargs)
+```
 
-<a id="describe\_location\_nfs"></a>
+1. See [:material-code-braces: DescribeLocationHdfsRequestRequestTypeDef](./type_defs.md#describelocationhdfsrequestrequesttypedef) 
 
-### describe_location_nfs
+### describe\_location\_nfs
 
 Returns metadata, such as the path information, about an NFS location.
 
-Type annotations for `boto3.client("datasync").describe_location_nfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_nfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_nfs)
+```python title="Method definition"
+def describe_location_nfs(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationNfsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationNfsRequestRequestTypeDef](./type_defs.md#describelocationnfsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationNfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef).
+parent.describe_location_nfs(**kwargs)
+```
 
-<a id="describe\_location\_object\_storage"></a>
+1. See [:material-code-braces: DescribeLocationNfsRequestRequestTypeDef](./type_defs.md#describelocationnfsrequestrequesttypedef) 
 
-### describe_location_object_storage
+### describe\_location\_object\_storage
 
 Returns metadata about a self-managed object storage server location.
 
-Type annotations for
-`boto3.client("datasync").describe_location_object_storage` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_object_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_object_storage)
+```python title="Method definition"
+def describe_location_object_storage(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationObjectStorageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationObjectStorageRequestRequestTypeDef](./type_defs.md#describelocationobjectstoragerequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationObjectStorageRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef).
+parent.describe_location_object_storage(**kwargs)
+```
 
-<a id="describe\_location\_s3"></a>
+1. See [:material-code-braces: DescribeLocationObjectStorageRequestRequestTypeDef](./type_defs.md#describelocationobjectstoragerequestrequesttypedef) 
 
-### describe_location_s3
+### describe\_location\_s3
 
 Returns metadata, such as bucket name, about an Amazon S3 bucket location.
 
-Type annotations for `boto3.client("datasync").describe_location_s3` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_s3)
+```python title="Method definition"
+def describe_location_s3(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationS3ResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationS3RequestRequestTypeDef](./type_defs.md#describelocations3requestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationS3RequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef).
+parent.describe_location_s3(**kwargs)
+```
 
-<a id="describe\_location\_smb"></a>
+1. See [:material-code-braces: DescribeLocationS3RequestRequestTypeDef](./type_defs.md#describelocations3requestrequesttypedef) 
 
-### describe_location_smb
+### describe\_location\_smb
 
 Returns metadata, such as the path and user information about an SMB location.
 
-Type annotations for `boto3.client("datasync").describe_location_smb` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_location_smb` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
 
-Boto3 documentation:
-[DataSync.Client.describe_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_location_smb)
+```python title="Method definition"
+def describe_location_smb(
+    self,
+    *,
+    LocationArn: str,
+) -> DescribeLocationSmbResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLocationSmbRequestRequestTypeDef](./type_defs.md#describelocationsmbrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLocationSmbRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns
-[DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef).
+parent.describe_location_smb(**kwargs)
+```
 
-<a id="describe\_task"></a>
+1. See [:material-code-braces: DescribeLocationSmbRequestRequestTypeDef](./type_defs.md#describelocationsmbrequestrequesttypedef) 
 
-### describe_task
+### describe\_task
 
 Returns metadata about a task.
 
-Type annotations for `boto3.client("datasync").describe_task` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
 
-Boto3 documentation:
-[DataSync.Client.describe_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task)
+```python title="Method definition"
+def describe_task(
+    self,
+    *,
+    TaskArn: str,
+) -> DescribeTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTaskRequestRequestTypeDef](./type_defs.md#describetaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTaskRequestRequestTypeDef = {  # (1)
+    "TaskArn": ...,
+}
 
-Returns
-[DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef).
+parent.describe_task(**kwargs)
+```
 
-<a id="describe\_task\_execution"></a>
+1. See [:material-code-braces: DescribeTaskRequestRequestTypeDef](./type_defs.md#describetaskrequestrequesttypedef) 
 
-### describe_task_execution
+### describe\_task\_execution
 
 Returns detailed metadata about a task that is being executed.
 
-Type annotations for `boto3.client("datasync").describe_task_execution` method.
+Type annotations and code completion for `#!python boto3.client("datasync").describe_task_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
 
-Boto3 documentation:
-[DataSync.Client.describe_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.describe_task_execution)
+```python title="Method definition"
+def describe_task_execution(
+    self,
+    *,
+    TaskExecutionArn: str,
+) -> DescribeTaskExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTaskExecutionRequestRequestTypeDef](./type_defs.md#describetaskexecutionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskExecutionArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTaskExecutionRequestRequestTypeDef = {  # (1)
+    "TaskExecutionArn": ...,
+}
 
-Returns
-[DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef).
+parent.describe_task_execution(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTaskExecutionRequestRequestTypeDef](./type_defs.md#describetaskexecutionrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("datasync").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("datasync").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DataSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_agents"></a>
-
-### list_agents
+### list\_agents
 
 Returns a list of agents owned by an Amazon Web Services account in the Amazon
 Web Services Region specified in the request.
 
-Type annotations for `boto3.client("datasync").list_agents` method.
+Type annotations and code completion for `#!python boto3.client("datasync").list_agents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
 
-Boto3 documentation:
-[DataSync.Client.list_agents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_agents)
+```python title="Method definition"
+def list_agents(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAgentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAgentsRequestRequestTypeDef](./type_defs.md#listagentsrequestrequesttypedef).
+1. See [:material-code-braces: ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAgentsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
+parent.list_agents(**kwargs)
+```
 
-<a id="list\_locations"></a>
+1. See [:material-code-braces: ListAgentsRequestRequestTypeDef](./type_defs.md#listagentsrequestrequesttypedef) 
 
-### list_locations
+### list\_locations
 
 Returns a list of source and destination locations.
 
-Type annotations for `boto3.client("datasync").list_locations` method.
+Type annotations and code completion for `#!python boto3.client("datasync").list_locations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
 
-Boto3 documentation:
-[DataSync.Client.list_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_locations)
+```python title="Method definition"
+def list_locations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[LocationFilterTypeDef] = ...,  # (1)
+) -> ListLocationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLocationsRequestRequestTypeDef](./type_defs.md#listlocationsrequestrequesttypedef).
+1. See [:material-code-braces: LocationFilterTypeDef](./type_defs.md#locationfiltertypedef) 
+2. See [:material-code-braces: ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListLocationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
+parent.list_locations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListLocationsRequestRequestTypeDef](./type_defs.md#listlocationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns all the tags associated with a specified resource.
 
-Type annotations for `boto3.client("datasync").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("datasync").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DataSync.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_task\_executions"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_task_executions
+### list\_task\_executions
 
 Returns a list of executed tasks.
 
-Type annotations for `boto3.client("datasync").list_task_executions` method.
+Type annotations and code completion for `#!python boto3.client("datasync").list_task_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
 
-Boto3 documentation:
-[DataSync.Client.list_task_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_task_executions)
+```python title="Method definition"
+def list_task_executions(
+    self,
+    *,
+    TaskArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListTaskExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTaskExecutionsRequestRequestTypeDef](./type_defs.md#listtaskexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTaskExecutionsRequestRequestTypeDef = {  # (1)
+    "TaskArn": ...,
+}
 
-Returns
-[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef).
+parent.list_task_executions(**kwargs)
+```
 
-<a id="list\_tasks"></a>
+1. See [:material-code-braces: ListTaskExecutionsRequestRequestTypeDef](./type_defs.md#listtaskexecutionsrequestrequesttypedef) 
 
-### list_tasks
+### list\_tasks
 
 Returns a list of all the tasks.
 
-Type annotations for `boto3.client("datasync").list_tasks` method.
+Type annotations and code completion for `#!python boto3.client("datasync").list_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
 
-Boto3 documentation:
-[DataSync.Client.list_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.list_tasks)
+```python title="Method definition"
+def list_tasks(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Filters: Sequence[TaskFilterTypeDef] = ...,  # (1)
+) -> ListTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef).
+1. See [:material-code-braces: TaskFilterTypeDef](./type_defs.md#taskfiltertypedef) 
+2. See [:material-code-braces: ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`:
-  `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListTasksRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
+parent.list_tasks(**kwargs)
+```
 
-<a id="start\_task\_execution"></a>
+1. See [:material-code-braces: ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef) 
 
-### start_task_execution
+### start\_task\_execution
 
 Starts a specific invocation of a task.
 
-Type annotations for `boto3.client("datasync").start_task_execution` method.
+Type annotations and code completion for `#!python boto3.client("datasync").start_task_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
 
-Boto3 documentation:
-[DataSync.Client.start_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.start_task_execution)
+```python title="Method definition"
+def start_task_execution(
+    self,
+    *,
+    TaskArn: str,
+    OverrideOptions: OptionsTypeDef = ...,  # (1)
+    Includes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+    Excludes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+) -> StartTaskExecutionResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartTaskExecutionRequestRequestTypeDef](./type_defs.md#starttaskexecutionrequestrequesttypedef).
+1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
+2. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+3. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+4. See [:material-code-braces: StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TaskArn`: `str` *(required)*
-- `OverrideOptions`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Includes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
-- `Excludes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartTaskExecutionRequestRequestTypeDef = {  # (1)
+    "TaskArn": ...,
+}
 
-Returns
-[StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
+parent.start_task_execution(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartTaskExecutionRequestRequestTypeDef](./type_defs.md#starttaskexecutionrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies a key-value pair to an Amazon Web Services resource.
 
-Type annotations for `boto3.client("datasync").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("datasync").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
 
-Boto3 documentation:
-[DataSync.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagListEntryTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagListEntryTypeDef](./type_defs.md#taglistentrytypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`:
-  `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from an Amazon Web Services resource.
 
-Type annotations for `boto3.client("datasync").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("datasync").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
 
-Boto3 documentation:
-[DataSync.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Keys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Keys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Keys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_agent"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_agent
+### update\_agent
 
 Updates the name of an agent.
 
-Type annotations for `boto3.client("datasync").update_agent` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
 
-Boto3 documentation:
-[DataSync.Client.update_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_agent)
+```python title="Method definition"
+def update_agent(
+    self,
+    *,
+    AgentArn: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAgentRequestRequestTypeDef](./type_defs.md#updateagentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AgentArn`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAgentRequestRequestTypeDef = {  # (1)
+    "AgentArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_agent(**kwargs)
+```
 
-<a id="update\_location\_hdfs"></a>
+1. See [:material-code-braces: UpdateAgentRequestRequestTypeDef](./type_defs.md#updateagentrequestrequesttypedef) 
 
-### update_location_hdfs
+### update\_location\_hdfs
 
 Updates some parameters of a previously created location for a Hadoop
 Distributed File System cluster.
 
-Type annotations for `boto3.client("datasync").update_location_hdfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_location_hdfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_hdfs)
 
-Boto3 documentation:
-[DataSync.Client.update_location_hdfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_hdfs)
+```python title="Method definition"
+def update_location_hdfs(
+    self,
+    *,
+    LocationArn: str,
+    Subdirectory: str = ...,
+    NameNodes: Sequence[HdfsNameNodeTypeDef] = ...,  # (1)
+    BlockSize: int = ...,
+    ReplicationFactor: int = ...,
+    KmsKeyProviderUri: str = ...,
+    QopConfiguration: QopConfigurationTypeDef = ...,  # (2)
+    AuthenticationType: HdfsAuthenticationTypeType = ...,  # (3)
+    SimpleUser: str = ...,
+    KerberosPrincipal: str = ...,
+    KerberosKeytab: Union[bytes, IO[bytes], StreamingBody] = ...,
+    KerberosKrb5Conf: Union[bytes, IO[bytes], StreamingBody] = ...,
+    AgentArns: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLocationHdfsRequestRequestTypeDef](./type_defs.md#updatelocationhdfsrequestrequesttypedef).
+1. See [:material-code-braces: HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef) 
+2. See [:material-code-braces: QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef) 
+3. See [:material-code-brackets: HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
-- `Subdirectory`: `str`
-- `NameNodes`:
-  `Sequence`\[[HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)\]
-- `BlockSize`: `int`
-- `ReplicationFactor`: `int`
-- `KmsKeyProviderUri`: `str`
-- `QopConfiguration`:
-  [QopConfigurationTypeDef](./type_defs.md#qopconfigurationtypedef)
-- `AuthenticationType`:
-  [HdfsAuthenticationTypeType](./literals.md#hdfsauthenticationtypetype)
-- `SimpleUser`: `str`
-- `KerberosPrincipal`: `str`
-- `KerberosKeytab`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `AgentArns`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLocationHdfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_location_hdfs(**kwargs)
+```
 
-<a id="update\_location\_nfs"></a>
+1. See [:material-code-braces: UpdateLocationHdfsRequestRequestTypeDef](./type_defs.md#updatelocationhdfsrequestrequesttypedef) 
 
-### update_location_nfs
+### update\_location\_nfs
 
-Updates some of the parameters of a previously created location for Network
-File System (NFS) access.
+Updates some of the parameters of a previously created location for Network File
+System (NFS) access.
 
-Type annotations for `boto3.client("datasync").update_location_nfs` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_location_nfs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
 
-Boto3 documentation:
-[DataSync.Client.update_location_nfs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_nfs)
+```python title="Method definition"
+def update_location_nfs(
+    self,
+    *,
+    LocationArn: str,
+    Subdirectory: str = ...,
+    OnPremConfig: OnPremConfigTypeDef = ...,  # (1)
+    MountOptions: NfsMountOptionsTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLocationNfsRequestRequestTypeDef](./type_defs.md#updatelocationnfsrequestrequesttypedef).
+1. See [:material-code-braces: OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef) 
+2. See [:material-code-braces: NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
-- `Subdirectory`: `str`
-- `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
-- `MountOptions`:
-  [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateLocationNfsRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_location_nfs(**kwargs)
+```
 
-<a id="update\_location\_object\_storage"></a>
+1. See [:material-code-braces: UpdateLocationNfsRequestRequestTypeDef](./type_defs.md#updatelocationnfsrequestrequesttypedef) 
 
-### update_location_object_storage
+### update\_location\_object\_storage
 
-Updates some of the parameters of a previously created location for
-self-managed object storage server access.
+Updates some of the parameters of a previously created location for self-managed
+object storage server access.
 
-Type annotations for `boto3.client("datasync").update_location_object_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_location_object_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
 
-Boto3 documentation:
-[DataSync.Client.update_location_object_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_object_storage)
+```python title="Method definition"
+def update_location_object_storage(
+    self,
+    *,
+    LocationArn: str,
+    ServerPort: int = ...,
+    ServerProtocol: ObjectStorageServerProtocolType = ...,  # (1)
+    Subdirectory: str = ...,
+    AccessKey: str = ...,
+    SecretKey: str = ...,
+    AgentArns: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#updatelocationobjectstoragerequestrequesttypedef).
+1. See [:material-code-brackets: ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
-- `ServerPort`: `int`
-- `ServerProtocol`:
-  [ObjectStorageServerProtocolType](./literals.md#objectstorageserverprotocoltype)
-- `Subdirectory`: `str`
-- `AccessKey`: `str`
-- `SecretKey`: `str`
-- `AgentArns`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateLocationObjectStorageRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_location_object_storage(**kwargs)
+```
 
-<a id="update\_location\_smb"></a>
+1. See [:material-code-braces: UpdateLocationObjectStorageRequestRequestTypeDef](./type_defs.md#updatelocationobjectstoragerequestrequesttypedef) 
 
-### update_location_smb
+### update\_location\_smb
 
 Updates some of the parameters of a previously created location for Server
 Message Block (SMB) file system access.
 
-Type annotations for `boto3.client("datasync").update_location_smb` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_location_smb` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
 
-Boto3 documentation:
-[DataSync.Client.update_location_smb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_location_smb)
+```python title="Method definition"
+def update_location_smb(
+    self,
+    *,
+    LocationArn: str,
+    Subdirectory: str = ...,
+    User: str = ...,
+    Domain: str = ...,
+    Password: str = ...,
+    AgentArns: Sequence[str] = ...,
+    MountOptions: SmbMountOptionsTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLocationSmbRequestRequestTypeDef](./type_defs.md#updatelocationsmbrequestrequesttypedef).
+1. See [:material-code-braces: SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef) 
 
-Keyword-only arguments:
 
-- `LocationArn`: `str` *(required)*
-- `Subdirectory`: `str`
-- `User`: `str`
-- `Domain`: `str`
-- `Password`: `str`
-- `AgentArns`: `Sequence`\[`str`\]
-- `MountOptions`:
-  [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateLocationSmbRequestRequestTypeDef = {  # (1)
+    "LocationArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_location_smb(**kwargs)
+```
 
-<a id="update\_task"></a>
+1. See [:material-code-braces: UpdateLocationSmbRequestRequestTypeDef](./type_defs.md#updatelocationsmbrequestrequesttypedef) 
 
-### update_task
+### update\_task
 
 Updates the metadata associated with a task.
 
-Type annotations for `boto3.client("datasync").update_task` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
 
-Boto3 documentation:
-[DataSync.Client.update_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task)
+```python title="Method definition"
+def update_task(
+    self,
+    *,
+    TaskArn: str,
+    Options: OptionsTypeDef = ...,  # (1)
+    Excludes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+    Schedule: TaskScheduleTypeDef = ...,  # (3)
+    Name: str = ...,
+    CloudWatchLogGroupArn: str = ...,
+    Includes: Sequence[FilterRuleTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTaskRequestRequestTypeDef](./type_defs.md#updatetaskrequestrequesttypedef).
+1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
+2. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
+3. See [:material-code-braces: TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef) 
+4. See [:material-code-braces: FilterRuleTypeDef](./type_defs.md#filterruletypedef) 
 
-Keyword-only arguments:
 
-- `TaskArn`: `str` *(required)*
-- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
-- `Excludes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
-- `Schedule`: [TaskScheduleTypeDef](./type_defs.md#taskscheduletypedef)
-- `Name`: `str`
-- `CloudWatchLogGroupArn`: `str`
-- `Includes`:
-  `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateTaskRequestRequestTypeDef = {  # (1)
+    "TaskArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_task(**kwargs)
+```
 
-<a id="update\_task\_execution"></a>
+1. See [:material-code-braces: UpdateTaskRequestRequestTypeDef](./type_defs.md#updatetaskrequestrequesttypedef) 
 
-### update_task_execution
+### update\_task\_execution
 
 Updates execution of a task.
 
-Type annotations for `boto3.client("datasync").update_task_execution` method.
+Type annotations and code completion for `#!python boto3.client("datasync").update_task_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
 
-Boto3 documentation:
-[DataSync.Client.update_task_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.update_task_execution)
+```python title="Method definition"
+def update_task_execution(
+    self,
+    *,
+    TaskExecutionArn: str,
+    Options: OptionsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTaskExecutionRequestRequestTypeDef](./type_defs.md#updatetaskexecutionrequestrequesttypedef).
+1. See [:material-code-braces: OptionsTypeDef](./type_defs.md#optionstypedef) 
 
-Keyword-only arguments:
 
-- `TaskExecutionArn`: `str` *(required)*
-- `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTaskExecutionRequestRequestTypeDef = {  # (1)
+    "TaskExecutionArn": ...,
+    "Options": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_task_execution(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateTaskExecutionRequestRequestTypeDef](./type_defs.md#updatetaskexecutionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("datasync").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("datasync").get_paginator` method with overloads.
 
-- `client.get_paginator("list_agents")` ->
-  [ListAgentsPaginator](./paginators.md#listagentspaginator)
-- `client.get_paginator("list_locations")` ->
-  [ListLocationsPaginator](./paginators.md#listlocationspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_task_executions")` ->
-  [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
-- `client.get_paginator("list_tasks")` ->
-  [ListTasksPaginator](./paginators.md#listtaskspaginator)
+- `client.get_paginator("list_agents")` -> [ListAgentsPaginator](./paginators.md#listagentspaginator)
+- `client.get_paginator("list_locations")` -> [ListLocationsPaginator](./paginators.md#listlocationspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_task_executions")` -> [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
+- `client.get_paginator("list_tasks")` -> [ListTasksPaginator](./paginators.md#listtaskspaginator)
+
+
+

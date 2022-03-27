@@ -1,48 +1,18 @@
-<a id="codegurureviewerclient-for-boto3-codegurureviewer-module"></a>
+# CodeGuruReviewerClient
 
-# CodeGuruReviewerClient for boto3 CodeGuruReviewer module
+> [Index](../README.md) > [CodeGuruReviewer](./README.md) > CodeGuruReviewerClient
 
-> [Index](../README.md) > [CodeGuruReviewer](./README.md) >
-> CodeGuruReviewerClient
+!!! note ""
 
-Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module
-[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
-
-- [CodeGuruReviewerClient for boto3 CodeGuruReviewer module](#codegurureviewerclient-for-boto3-codegurureviewer-module)
-  - [CodeGuruReviewerClient](#codegurureviewerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_repository](#associate_repository)
-    - [can_paginate](#can_paginate)
-    - [create_code_review](#create_code_review)
-    - [describe_code_review](#describe_code_review)
-    - [describe_recommendation_feedback](#describe_recommendation_feedback)
-    - [describe_repository_association](#describe_repository_association)
-    - [disassociate_repository](#disassociate_repository)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_code_reviews](#list_code_reviews)
-    - [list_recommendation_feedback](#list_recommendation_feedback)
-    - [list_recommendations](#list_recommendations)
-    - [list_repository_associations](#list_repository_associations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_recommendation_feedback](#put_recommendation_feedback)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="codegurureviewerclient"></a>
+    Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+    type annotations stubs module [mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 ## CodeGuruReviewerClient
 
-Type annotations for `boto3.client("codeguru-reviewer")`
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 
@@ -50,444 +20,538 @@ def get_codeguru-reviewer_client() -> CodeGuruReviewerClient:
     return Session().client("codeguru-reviewer")
 ```
 
-Boto3 documentation:
-[CodeGuruReviewer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codeguru-reviewer").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codeguru-reviewer")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.NotFoundException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codeguru_reviewer.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeGuruReviewerClient exceptions.
-
-Type annotations for `boto3.client("codeguru-reviewer").exceptions` method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_repository"></a>
-
-### associate_repository
+### associate\_repository
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").associate_repository`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").associate_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.associate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.associate_repository)
+```python title="Method definition"
+def associate_repository(
+    self,
+    *,
+    Repository: RepositoryTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+    KMSKeyDetails: KMSKeyDetailsTypeDef = ...,  # (2)
+) -> AssociateRepositoryResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[AssociateRepositoryRequestRequestTypeDef](./type_defs.md#associaterepositoryrequestrequesttypedef).
+1. See [:material-code-braces: RepositoryTypeDef](./type_defs.md#repositorytypedef) 
+2. See [:material-code-braces: KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef) 
+3. See [:material-code-braces: AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Repository`: [RepositoryTypeDef](./type_defs.md#repositorytypedef)
-  *(required)*
-- `ClientRequestToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
+```python title="Usage example with kwargs"
+kwargs: AssociateRepositoryRequestRequestTypeDef = {  # (1)
+    "Repository": ...,
+}
 
-Returns
-[AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
+parent.associate_repository(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateRepositoryRequestRequestTypeDef](./type_defs.md#associaterepositoryrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codeguru-reviewer").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.can_paginate)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_code\_review"></a>
-
-### create_code_review
-
-.
-
-Type annotations for `boto3.client("codeguru-reviewer").create_code_review`
-method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.create_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
-
-Arguments mapping described in
-[CreateCodeReviewRequestRequestTypeDef](./type_defs.md#createcodereviewrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Name`: `str` *(required)*
-- `RepositoryAssociationArn`: `str` *(required)*
-- `Type`: [CodeReviewTypeTypeDef](./type_defs.md#codereviewtypetypedef)
-  *(required)*
-- `ClientRequestToken`: `str`
-
-Returns
-[CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
-
-<a id="describe\_code\_review"></a>
-
-### describe_code_review
+### create\_code\_review
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").describe_code_review`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").create_code_review` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.create_code_review)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.describe_code_review](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
+```python title="Method definition"
+def create_code_review(
+    self,
+    *,
+    Name: str,
+    RepositoryAssociationArn: str,
+    Type: CodeReviewTypeTypeDef,  # (1)
+    ClientRequestToken: str = ...,
+) -> CreateCodeReviewResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCodeReviewRequestRequestTypeDef](./type_defs.md#describecodereviewrequestrequesttypedef).
+1. See [:material-code-braces: CodeReviewTypeTypeDef](./type_defs.md#codereviewtypetypedef) 
+2. See [:material-code-braces: CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeReviewArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCodeReviewRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RepositoryAssociationArn": ...,
+    "Type": ...,
+}
 
-Returns
-[DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
+parent.create_code_review(**kwargs)
+```
 
-<a id="describe\_recommendation\_feedback"></a>
+1. See [:material-code-braces: CreateCodeReviewRequestRequestTypeDef](./type_defs.md#createcodereviewrequestrequesttypedef) 
 
-### describe_recommendation_feedback
-
-.
-
-Type annotations for
-`boto3.client("codeguru-reviewer").describe_recommendation_feedback` method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.describe_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
-
-Arguments mapping described in
-[DescribeRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `CodeReviewArn`: `str` *(required)*
-- `RecommendationId`: `str` *(required)*
-- `UserId`: `str`
-
-Returns
-[DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
-
-<a id="describe\_repository\_association"></a>
-
-### describe_repository_association
+### describe\_code\_review
 
 .
 
-Type annotations for
-`boto3.client("codeguru-reviewer").describe_repository_association` method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_code_review` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_code_review)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.describe_repository_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
+```python title="Method definition"
+def describe_code_review(
+    self,
+    *,
+    CodeReviewArn: str,
+) -> DescribeCodeReviewResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRepositoryAssociationRequestRequestTypeDef](./type_defs.md#describerepositoryassociationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssociationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCodeReviewRequestRequestTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+}
 
-Returns
-[DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
+parent.describe_code_review(**kwargs)
+```
 
-<a id="disassociate\_repository"></a>
+1. See [:material-code-braces: DescribeCodeReviewRequestRequestTypeDef](./type_defs.md#describecodereviewrequestrequesttypedef) 
 
-### disassociate_repository
+### describe\_recommendation\_feedback
 
 .
 
-Type annotations for
-`boto3.client("codeguru-reviewer").disassociate_repository` method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_recommendation_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_recommendation_feedback)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.disassociate_repository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
+```python title="Method definition"
+def describe_recommendation_feedback(
+    self,
+    *,
+    CodeReviewArn: str,
+    RecommendationId: str,
+    UserId: str = ...,
+) -> DescribeRecommendationFeedbackResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateRepositoryRequestRequestTypeDef](./type_defs.md#disassociaterepositoryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssociationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRecommendationFeedbackRequestRequestTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+    "RecommendationId": ...,
+}
 
-Returns
-[DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
+parent.describe_recommendation_feedback(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequestrequesttypedef) 
 
-### generate_presigned_url
+### describe\_repository\_association
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").describe_repository_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.describe_repository_association)
+
+```python title="Method definition"
+def describe_repository_association(
+    self,
+    *,
+    AssociationArn: str,
+) -> DescribeRepositoryAssociationResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRepositoryAssociationRequestRequestTypeDef = {  # (1)
+    "AssociationArn": ...,
+}
+
+parent.describe_repository_association(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRepositoryAssociationRequestRequestTypeDef](./type_defs.md#describerepositoryassociationrequestrequesttypedef) 
+
+### disassociate\_repository
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").disassociate_repository` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.disassociate_repository)
+
+```python title="Method definition"
+def disassociate_repository(
+    self,
+    *,
+    AssociationArn: str,
+) -> DisassociateRepositoryResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DisassociateRepositoryRequestRequestTypeDef = {  # (1)
+    "AssociationArn": ...,
+}
+
+parent.disassociate_repository(**kwargs)
+```
+
+1. See [:material-code-braces: DisassociateRepositoryRequestRequestTypeDef](./type_defs.md#disassociaterepositoryrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("codeguru-reviewer").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_code\_reviews"></a>
-
-### list_code_reviews
+### list\_code\_reviews
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").list_code_reviews`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_code_reviews` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.list_code_reviews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_code_reviews)
+```python title="Method definition"
+def list_code_reviews(
+    self,
+    *,
+    Type: TypeType,  # (1)
+    ProviderTypes: Sequence[ProviderTypeType] = ...,  # (2)
+    States: Sequence[JobStateType] = ...,  # (3)
+    RepositoryNames: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCodeReviewsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListCodeReviewsRequestRequestTypeDef](./type_defs.md#listcodereviewsrequestrequesttypedef).
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+3. See [:material-code-brackets: JobStateType](./literals.md#jobstatetype) 
+4. See [:material-code-braces: ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [TypeType](./literals.md#typetype) *(required)*
-- `ProviderTypes`:
-  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
-- `States`: `Sequence`\[[JobStateType](./literals.md#jobstatetype)\]
-- `RepositoryNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCodeReviewsRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
+parent.list_code_reviews(**kwargs)
+```
 
-<a id="list\_recommendation\_feedback"></a>
+1. See [:material-code-braces: ListCodeReviewsRequestRequestTypeDef](./type_defs.md#listcodereviewsrequestrequesttypedef) 
 
-### list_recommendation_feedback
-
-.
-
-Type annotations for
-`boto3.client("codeguru-reviewer").list_recommendation_feedback` method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.list_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
-
-Arguments mapping described in
-[ListRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#listrecommendationfeedbackrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `CodeReviewArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `UserIds`: `Sequence`\[`str`\]
-- `RecommendationIds`: `Sequence`\[`str`\]
-
-Returns
-[ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
-
-<a id="list\_recommendations"></a>
-
-### list_recommendations
+### list\_recommendation\_feedback
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").list_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_recommendation_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendation_feedback)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.list_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
+```python title="Method definition"
+def list_recommendation_feedback(
+    self,
+    *,
+    CodeReviewArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    UserIds: Sequence[str] = ...,
+    RecommendationIds: Sequence[str] = ...,
+) -> ListRecommendationFeedbackResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CodeReviewArn`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListRecommendationFeedbackRequestRequestTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+}
 
-Returns
-[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
+parent.list_recommendation_feedback(**kwargs)
+```
 
-<a id="list\_repository\_associations"></a>
+1. See [:material-code-braces: ListRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#listrecommendationfeedbackrequestrequesttypedef) 
 
-### list_repository_associations
-
-.
-
-Type annotations for
-`boto3.client("codeguru-reviewer").list_repository_associations` method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.list_repository_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
-
-Arguments mapping described in
-[ListRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#listrepositoryassociationsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ProviderTypes`:
-  `Sequence`\[[ProviderTypeType](./literals.md#providertypetype)\]
-- `States`:
-  `Sequence`\[[RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)\]
-- `Names`: `Sequence`\[`str`\]
-- `Owners`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-Returns
-[ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_recommendations
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_recommendations)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_recommendations(
+    self,
+    *,
+    CodeReviewArn: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListRecommendationsRequestRequestTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_recommendations(**kwargs)
+```
 
-<a id="put\_recommendation\_feedback"></a>
+1. See [:material-code-braces: ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef) 
 
-### put_recommendation_feedback
-
-.
-
-Type annotations for
-`boto3.client("codeguru-reviewer").put_recommendation_feedback` method.
-
-Boto3 documentation:
-[CodeGuruReviewer.Client.put_recommendation_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
-
-Arguments mapping described in
-[PutRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#putrecommendationfeedbackrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `CodeReviewArn`: `str` *(required)*
-- `RecommendationId`: `str` *(required)*
-- `Reactions`: `Sequence`\[[ReactionType](./literals.md#reactiontype)\]
-  *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="tag\_resource"></a>
-
-### tag_resource
+### list\_repository\_associations
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_repository_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_repository_associations)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
+```python title="Method definition"
+def list_repository_associations(
+    self,
+    *,
+    ProviderTypes: Sequence[ProviderTypeType] = ...,  # (1)
+    States: Sequence[RepositoryAssociationStateType] = ...,  # (2)
+    Names: Sequence[str] = ...,
+    Owners: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRepositoryAssociationsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-brackets: RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype) 
+3. See [:material-code-braces: ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListRepositoryAssociationsRequestRequestTypeDef = {  # (1)
+    "ProviderTypes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.list_repository_associations(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: ListRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#listrepositoryassociationsrequestrequesttypedef) 
 
-### untag_resource
+### list\_tags\_for\_resource
 
 .
 
-Type annotations for `boto3.client("codeguru-reviewer").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodeGuruReviewer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
+
+### put\_recommendation\_feedback
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").put_recommendation_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.put_recommendation_feedback)
+
+```python title="Method definition"
+def put_recommendation_feedback(
+    self,
+    *,
+    CodeReviewArn: str,
+    RecommendationId: str,
+    Reactions: Sequence[ReactionType],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: ReactionType](./literals.md#reactiontype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: PutRecommendationFeedbackRequestRequestTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+    "RecommendationId": ...,
+    "Reactions": ...,
+}
+
+parent.put_recommendation_feedback(**kwargs)
+```
+
+1. See [:material-code-braces: PutRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#putrecommendationfeedbackrequestrequesttypedef) 
+
+### tag\_resource
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.tag_resource)
+
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "Tags": ...,
+}
+
+parent.tag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.untag_resource)
+
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "TagKeys": ...,
+}
+
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codeguru-reviewer").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").get_paginator` method with overloads.
 
-- `client.get_paginator("list_repository_associations")` ->
-  [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
+- `client.get_paginator("list_repository_associations")` -> [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("codeguru-reviewer").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").get_waiter` method with overloads.
 
-- `client.get_waiter("code_review_completed")` ->
-  [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
-- `client.get_waiter("repository_association_succeeded")` ->
-  [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
+- `client.get_waiter("code_review_completed")` -> [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
+- `client.get_waiter("repository_association_succeeded")` -> [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
+

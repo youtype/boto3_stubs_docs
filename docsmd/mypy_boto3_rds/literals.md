@@ -1,1282 +1,1381 @@
-<a id="literals-for-boto3-rds-module"></a>
-
-# Literals for boto3 RDS module
+# Literals
 
 > [Index](../README.md) > [RDS](./README.md) > Literals
 
-Auto-generated documentation for
-[RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
-type annotations stubs module
-[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
+!!! note ""
 
-- [Literals for boto3 RDS module](#literals-for-boto3-rds-module)
-  - [ActivityStreamModeType](#activitystreammodetype)
-  - [ActivityStreamStatusType](#activitystreamstatustype)
-  - [ApplyMethodType](#applymethodtype)
-  - [AuthSchemeType](#authschemetype)
-  - [AutomationModeType](#automationmodetype)
-  - [CustomEngineVersionStatusType](#customengineversionstatustype)
-  - [DBClusterSnapshotAvailableWaiterName](#dbclustersnapshotavailablewaitername)
-  - [DBClusterSnapshotDeletedWaiterName](#dbclustersnapshotdeletedwaitername)
-  - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
-  - [DBInstanceDeletedWaiterName](#dbinstancedeletedwaitername)
-  - [DBProxyEndpointStatusType](#dbproxyendpointstatustype)
-  - [DBProxyEndpointTargetRoleType](#dbproxyendpointtargetroletype)
-  - [DBProxyStatusType](#dbproxystatustype)
-  - [DBSnapshotAvailableWaiterName](#dbsnapshotavailablewaitername)
-  - [DBSnapshotCompletedWaiterName](#dbsnapshotcompletedwaitername)
-  - [DBSnapshotDeletedWaiterName](#dbsnapshotdeletedwaitername)
-  - [DescribeCertificatesPaginatorName](#describecertificatespaginatorname)
-  - [DescribeCustomAvailabilityZonesPaginatorName](#describecustomavailabilityzonespaginatorname)
-  - [DescribeDBClusterBacktracksPaginatorName](#describedbclusterbacktrackspaginatorname)
-  - [DescribeDBClusterEndpointsPaginatorName](#describedbclusterendpointspaginatorname)
-  - [DescribeDBClusterParameterGroupsPaginatorName](#describedbclusterparametergroupspaginatorname)
-  - [DescribeDBClusterParametersPaginatorName](#describedbclusterparameterspaginatorname)
-  - [DescribeDBClusterSnapshotsPaginatorName](#describedbclustersnapshotspaginatorname)
-  - [DescribeDBClustersPaginatorName](#describedbclusterspaginatorname)
-  - [DescribeDBEngineVersionsPaginatorName](#describedbengineversionspaginatorname)
-  - [DescribeDBInstanceAutomatedBackupsPaginatorName](#describedbinstanceautomatedbackupspaginatorname)
-  - [DescribeDBInstancesPaginatorName](#describedbinstancespaginatorname)
-  - [DescribeDBLogFilesPaginatorName](#describedblogfilespaginatorname)
-  - [DescribeDBParameterGroupsPaginatorName](#describedbparametergroupspaginatorname)
-  - [DescribeDBParametersPaginatorName](#describedbparameterspaginatorname)
-  - [DescribeDBProxiesPaginatorName](#describedbproxiespaginatorname)
-  - [DescribeDBProxyEndpointsPaginatorName](#describedbproxyendpointspaginatorname)
-  - [DescribeDBProxyTargetGroupsPaginatorName](#describedbproxytargetgroupspaginatorname)
-  - [DescribeDBProxyTargetsPaginatorName](#describedbproxytargetspaginatorname)
-  - [DescribeDBSecurityGroupsPaginatorName](#describedbsecuritygroupspaginatorname)
-  - [DescribeDBSnapshotsPaginatorName](#describedbsnapshotspaginatorname)
-  - [DescribeDBSubnetGroupsPaginatorName](#describedbsubnetgroupspaginatorname)
-  - [DescribeEngineDefaultClusterParametersPaginatorName](#describeenginedefaultclusterparameterspaginatorname)
-  - [DescribeEngineDefaultParametersPaginatorName](#describeenginedefaultparameterspaginatorname)
-  - [DescribeEventSubscriptionsPaginatorName](#describeeventsubscriptionspaginatorname)
-  - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [DescribeExportTasksPaginatorName](#describeexporttaskspaginatorname)
-  - [DescribeGlobalClustersPaginatorName](#describeglobalclusterspaginatorname)
-  - [DescribeInstallationMediaPaginatorName](#describeinstallationmediapaginatorname)
-  - [DescribeOptionGroupOptionsPaginatorName](#describeoptiongroupoptionspaginatorname)
-  - [DescribeOptionGroupsPaginatorName](#describeoptiongroupspaginatorname)
-  - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
-  - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
-  - [DescribeReservedDBInstancesOfferingsPaginatorName](#describereserveddbinstancesofferingspaginatorname)
-  - [DescribeReservedDBInstancesPaginatorName](#describereserveddbinstancespaginatorname)
-  - [DescribeSourceRegionsPaginatorName](#describesourceregionspaginatorname)
-  - [DownloadDBLogFilePortionPaginatorName](#downloaddblogfileportionpaginatorname)
-  - [EngineFamilyType](#enginefamilytype)
-  - [FailoverStatusType](#failoverstatustype)
-  - [IAMAuthModeType](#iamauthmodetype)
-  - [ReplicaModeType](#replicamodetype)
-  - [SourceTypeType](#sourcetypetype)
-  - [TargetHealthReasonType](#targethealthreasontype)
-  - [TargetRoleType](#targetroletype)
-  - [TargetStateType](#targetstatetype)
-  - [TargetTypeType](#targettypetype)
-  - [WriteForwardingStatusType](#writeforwardingstatustype)
-  - [RDSServiceName](#rdsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="activitystreammodetype"></a>
+    Auto-generated documentation for [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
+    type annotations stubs module [mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 ## ActivityStreamModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ActivityStreamModeType
+
+def get_value() -> ActivityStreamModeType:
+    return "async"
 ```
 
-Values:
-
-- `async`
-- `sync`
-
-<a id="activitystreamstatustype"></a>
-
+```python title="Definition"
+ActivityStreamModeType = Literal[
+    "async",
+    "sync",
+]
+```
 ## ActivityStreamStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ActivityStreamStatusType
+
+def get_value() -> ActivityStreamStatusType:
+    return "started"
 ```
 
-Values:
-
-- `started`
-- `starting`
-- `stopped`
-- `stopping`
-
-<a id="applymethodtype"></a>
-
+```python title="Definition"
+ActivityStreamStatusType = Literal[
+    "started",
+    "starting",
+    "stopped",
+    "stopping",
+]
+```
 ## ApplyMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ApplyMethodType
+
+def get_value() -> ApplyMethodType:
+    return "immediate"
 ```
 
-Values:
-
-- `immediate`
-- `pending-reboot`
-
-<a id="authschemetype"></a>
-
+```python title="Definition"
+ApplyMethodType = Literal[
+    "immediate",
+    "pending-reboot",
+]
+```
 ## AuthSchemeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import AuthSchemeType
+
+def get_value() -> AuthSchemeType:
+    return "SECRETS"
 ```
 
-Values:
-
-- `SECRETS`
-
-<a id="automationmodetype"></a>
-
+```python title="Definition"
+AuthSchemeType = Literal[
+    "SECRETS",
+]
+```
 ## AutomationModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import AutomationModeType
+
+def get_value() -> AutomationModeType:
+    return "all-paused"
 ```
 
-Values:
-
-- `all-paused`
-- `full`
-
-<a id="customengineversionstatustype"></a>
-
+```python title="Definition"
+AutomationModeType = Literal[
+    "all-paused",
+    "full",
+]
+```
 ## CustomEngineVersionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import CustomEngineVersionStatusType
+
+def get_value() -> CustomEngineVersionStatusType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `inactive`
-- `inactive-except-restore`
-
-<a id="dbclustersnapshotavailablewaitername"></a>
-
+```python title="Definition"
+CustomEngineVersionStatusType = Literal[
+    "available",
+    "inactive",
+    "inactive-except-restore",
+]
+```
 ## DBClusterSnapshotAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBClusterSnapshotAvailableWaiterName
+
+def get_value() -> DBClusterSnapshotAvailableWaiterName:
+    return "db_cluster_snapshot_available"
 ```
 
-Values:
-
-- `db_cluster_snapshot_available`
-
-<a id="dbclustersnapshotdeletedwaitername"></a>
-
+```python title="Definition"
+DBClusterSnapshotAvailableWaiterName = Literal[
+    "db_cluster_snapshot_available",
+]
+```
 ## DBClusterSnapshotDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBClusterSnapshotDeletedWaiterName
+
+def get_value() -> DBClusterSnapshotDeletedWaiterName:
+    return "db_cluster_snapshot_deleted"
 ```
 
-Values:
-
-- `db_cluster_snapshot_deleted`
-
-<a id="dbinstanceavailablewaitername"></a>
-
+```python title="Definition"
+DBClusterSnapshotDeletedWaiterName = Literal[
+    "db_cluster_snapshot_deleted",
+]
+```
 ## DBInstanceAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBInstanceAvailableWaiterName
+
+def get_value() -> DBInstanceAvailableWaiterName:
+    return "db_instance_available"
 ```
 
-Values:
-
-- `db_instance_available`
-
-<a id="dbinstancedeletedwaitername"></a>
-
+```python title="Definition"
+DBInstanceAvailableWaiterName = Literal[
+    "db_instance_available",
+]
+```
 ## DBInstanceDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBInstanceDeletedWaiterName
+
+def get_value() -> DBInstanceDeletedWaiterName:
+    return "db_instance_deleted"
 ```
 
-Values:
-
-- `db_instance_deleted`
-
-<a id="dbproxyendpointstatustype"></a>
-
+```python title="Definition"
+DBInstanceDeletedWaiterName = Literal[
+    "db_instance_deleted",
+]
+```
 ## DBProxyEndpointStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBProxyEndpointStatusType
+
+def get_value() -> DBProxyEndpointStatusType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `creating`
-- `deleting`
-- `incompatible-network`
-- `insufficient-resource-limits`
-- `modifying`
-
-<a id="dbproxyendpointtargetroletype"></a>
-
+```python title="Definition"
+DBProxyEndpointStatusType = Literal[
+    "available",
+    "creating",
+    "deleting",
+    "incompatible-network",
+    "insufficient-resource-limits",
+    "modifying",
+]
+```
 ## DBProxyEndpointTargetRoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBProxyEndpointTargetRoleType
+
+def get_value() -> DBProxyEndpointTargetRoleType:
+    return "READ_ONLY"
 ```
 
-Values:
-
-- `READ_ONLY`
-- `READ_WRITE`
-
-<a id="dbproxystatustype"></a>
-
+```python title="Definition"
+DBProxyEndpointTargetRoleType = Literal[
+    "READ_ONLY",
+    "READ_WRITE",
+]
+```
 ## DBProxyStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBProxyStatusType
+
+def get_value() -> DBProxyStatusType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `creating`
-- `deleting`
-- `incompatible-network`
-- `insufficient-resource-limits`
-- `modifying`
-- `reactivating`
-- `suspended`
-- `suspending`
-
-<a id="dbsnapshotavailablewaitername"></a>
-
+```python title="Definition"
+DBProxyStatusType = Literal[
+    "available",
+    "creating",
+    "deleting",
+    "incompatible-network",
+    "insufficient-resource-limits",
+    "modifying",
+    "reactivating",
+    "suspended",
+    "suspending",
+]
+```
 ## DBSnapshotAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBSnapshotAvailableWaiterName
+
+def get_value() -> DBSnapshotAvailableWaiterName:
+    return "db_snapshot_available"
 ```
 
-Values:
-
-- `db_snapshot_available`
-
-<a id="dbsnapshotcompletedwaitername"></a>
-
+```python title="Definition"
+DBSnapshotAvailableWaiterName = Literal[
+    "db_snapshot_available",
+]
+```
 ## DBSnapshotCompletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBSnapshotCompletedWaiterName
+
+def get_value() -> DBSnapshotCompletedWaiterName:
+    return "db_snapshot_completed"
 ```
 
-Values:
-
-- `db_snapshot_completed`
-
-<a id="dbsnapshotdeletedwaitername"></a>
-
+```python title="Definition"
+DBSnapshotCompletedWaiterName = Literal[
+    "db_snapshot_completed",
+]
+```
 ## DBSnapshotDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DBSnapshotDeletedWaiterName
+
+def get_value() -> DBSnapshotDeletedWaiterName:
+    return "db_snapshot_deleted"
 ```
 
-Values:
-
-- `db_snapshot_deleted`
-
-<a id="describecertificatespaginatorname"></a>
-
+```python title="Definition"
+DBSnapshotDeletedWaiterName = Literal[
+    "db_snapshot_deleted",
+]
+```
 ## DescribeCertificatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeCertificatesPaginatorName
+
+def get_value() -> DescribeCertificatesPaginatorName:
+    return "describe_certificates"
 ```
 
-Values:
-
-- `describe_certificates`
-
-<a id="describecustomavailabilityzonespaginatorname"></a>
-
+```python title="Definition"
+DescribeCertificatesPaginatorName = Literal[
+    "describe_certificates",
+]
+```
 ## DescribeCustomAvailabilityZonesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeCustomAvailabilityZonesPaginatorName
+
+def get_value() -> DescribeCustomAvailabilityZonesPaginatorName:
+    return "describe_custom_availability_zones"
 ```
 
-Values:
-
-- `describe_custom_availability_zones`
-
-<a id="describedbclusterbacktrackspaginatorname"></a>
-
+```python title="Definition"
+DescribeCustomAvailabilityZonesPaginatorName = Literal[
+    "describe_custom_availability_zones",
+]
+```
 ## DescribeDBClusterBacktracksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClusterBacktracksPaginatorName
+
+def get_value() -> DescribeDBClusterBacktracksPaginatorName:
+    return "describe_db_cluster_backtracks"
 ```
 
-Values:
-
-- `describe_db_cluster_backtracks`
-
-<a id="describedbclusterendpointspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterBacktracksPaginatorName = Literal[
+    "describe_db_cluster_backtracks",
+]
+```
 ## DescribeDBClusterEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClusterEndpointsPaginatorName
+
+def get_value() -> DescribeDBClusterEndpointsPaginatorName:
+    return "describe_db_cluster_endpoints"
 ```
 
-Values:
-
-- `describe_db_cluster_endpoints`
-
-<a id="describedbclusterparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterEndpointsPaginatorName = Literal[
+    "describe_db_cluster_endpoints",
+]
+```
 ## DescribeDBClusterParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClusterParameterGroupsPaginatorName
+
+def get_value() -> DescribeDBClusterParameterGroupsPaginatorName:
+    return "describe_db_cluster_parameter_groups"
 ```
 
-Values:
-
-- `describe_db_cluster_parameter_groups`
-
-<a id="describedbclusterparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterParameterGroupsPaginatorName = Literal[
+    "describe_db_cluster_parameter_groups",
+]
+```
 ## DescribeDBClusterParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClusterParametersPaginatorName
+
+def get_value() -> DescribeDBClusterParametersPaginatorName:
+    return "describe_db_cluster_parameters"
 ```
 
-Values:
-
-- `describe_db_cluster_parameters`
-
-<a id="describedbclustersnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterParametersPaginatorName = Literal[
+    "describe_db_cluster_parameters",
+]
+```
 ## DescribeDBClusterSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClusterSnapshotsPaginatorName
+
+def get_value() -> DescribeDBClusterSnapshotsPaginatorName:
+    return "describe_db_cluster_snapshots"
 ```
 
-Values:
-
-- `describe_db_cluster_snapshots`
-
-<a id="describedbclusterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterSnapshotsPaginatorName = Literal[
+    "describe_db_cluster_snapshots",
+]
+```
 ## DescribeDBClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBClustersPaginatorName
+
+def get_value() -> DescribeDBClustersPaginatorName:
+    return "describe_db_clusters"
 ```
 
-Values:
-
-- `describe_db_clusters`
-
-<a id="describedbengineversionspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClustersPaginatorName = Literal[
+    "describe_db_clusters",
+]
+```
 ## DescribeDBEngineVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBEngineVersionsPaginatorName
+
+def get_value() -> DescribeDBEngineVersionsPaginatorName:
+    return "describe_db_engine_versions"
 ```
 
-Values:
-
-- `describe_db_engine_versions`
-
-<a id="describedbinstanceautomatedbackupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBEngineVersionsPaginatorName = Literal[
+    "describe_db_engine_versions",
+]
+```
 ## DescribeDBInstanceAutomatedBackupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBInstanceAutomatedBackupsPaginatorName
+
+def get_value() -> DescribeDBInstanceAutomatedBackupsPaginatorName:
+    return "describe_db_instance_automated_backups"
 ```
 
-Values:
-
-- `describe_db_instance_automated_backups`
-
-<a id="describedbinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeDBInstanceAutomatedBackupsPaginatorName = Literal[
+    "describe_db_instance_automated_backups",
+]
+```
 ## DescribeDBInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBInstancesPaginatorName
+
+def get_value() -> DescribeDBInstancesPaginatorName:
+    return "describe_db_instances"
 ```
 
-Values:
-
-- `describe_db_instances`
-
-<a id="describedblogfilespaginatorname"></a>
-
+```python title="Definition"
+DescribeDBInstancesPaginatorName = Literal[
+    "describe_db_instances",
+]
+```
 ## DescribeDBLogFilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBLogFilesPaginatorName
+
+def get_value() -> DescribeDBLogFilesPaginatorName:
+    return "describe_db_log_files"
 ```
 
-Values:
-
-- `describe_db_log_files`
-
-<a id="describedbparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBLogFilesPaginatorName = Literal[
+    "describe_db_log_files",
+]
+```
 ## DescribeDBParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBParameterGroupsPaginatorName
+
+def get_value() -> DescribeDBParameterGroupsPaginatorName:
+    return "describe_db_parameter_groups"
 ```
 
-Values:
-
-- `describe_db_parameter_groups`
-
-<a id="describedbparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBParameterGroupsPaginatorName = Literal[
+    "describe_db_parameter_groups",
+]
+```
 ## DescribeDBParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBParametersPaginatorName
+
+def get_value() -> DescribeDBParametersPaginatorName:
+    return "describe_db_parameters"
 ```
 
-Values:
-
-- `describe_db_parameters`
-
-<a id="describedbproxiespaginatorname"></a>
-
+```python title="Definition"
+DescribeDBParametersPaginatorName = Literal[
+    "describe_db_parameters",
+]
+```
 ## DescribeDBProxiesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBProxiesPaginatorName
+
+def get_value() -> DescribeDBProxiesPaginatorName:
+    return "describe_db_proxies"
 ```
 
-Values:
-
-- `describe_db_proxies`
-
-<a id="describedbproxyendpointspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBProxiesPaginatorName = Literal[
+    "describe_db_proxies",
+]
+```
 ## DescribeDBProxyEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBProxyEndpointsPaginatorName
+
+def get_value() -> DescribeDBProxyEndpointsPaginatorName:
+    return "describe_db_proxy_endpoints"
 ```
 
-Values:
-
-- `describe_db_proxy_endpoints`
-
-<a id="describedbproxytargetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBProxyEndpointsPaginatorName = Literal[
+    "describe_db_proxy_endpoints",
+]
+```
 ## DescribeDBProxyTargetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBProxyTargetGroupsPaginatorName
+
+def get_value() -> DescribeDBProxyTargetGroupsPaginatorName:
+    return "describe_db_proxy_target_groups"
 ```
 
-Values:
-
-- `describe_db_proxy_target_groups`
-
-<a id="describedbproxytargetspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBProxyTargetGroupsPaginatorName = Literal[
+    "describe_db_proxy_target_groups",
+]
+```
 ## DescribeDBProxyTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBProxyTargetsPaginatorName
+
+def get_value() -> DescribeDBProxyTargetsPaginatorName:
+    return "describe_db_proxy_targets"
 ```
 
-Values:
-
-- `describe_db_proxy_targets`
-
-<a id="describedbsecuritygroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBProxyTargetsPaginatorName = Literal[
+    "describe_db_proxy_targets",
+]
+```
 ## DescribeDBSecurityGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBSecurityGroupsPaginatorName
+
+def get_value() -> DescribeDBSecurityGroupsPaginatorName:
+    return "describe_db_security_groups"
 ```
 
-Values:
-
-- `describe_db_security_groups`
-
-<a id="describedbsnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBSecurityGroupsPaginatorName = Literal[
+    "describe_db_security_groups",
+]
+```
 ## DescribeDBSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBSnapshotsPaginatorName
+
+def get_value() -> DescribeDBSnapshotsPaginatorName:
+    return "describe_db_snapshots"
 ```
 
-Values:
-
-- `describe_db_snapshots`
-
-<a id="describedbsubnetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBSnapshotsPaginatorName = Literal[
+    "describe_db_snapshots",
+]
+```
 ## DescribeDBSubnetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeDBSubnetGroupsPaginatorName
+
+def get_value() -> DescribeDBSubnetGroupsPaginatorName:
+    return "describe_db_subnet_groups"
 ```
 
-Values:
-
-- `describe_db_subnet_groups`
-
-<a id="describeenginedefaultclusterparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBSubnetGroupsPaginatorName = Literal[
+    "describe_db_subnet_groups",
+]
+```
 ## DescribeEngineDefaultClusterParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeEngineDefaultClusterParametersPaginatorName
+
+def get_value() -> DescribeEngineDefaultClusterParametersPaginatorName:
+    return "describe_engine_default_cluster_parameters"
 ```
 
-Values:
-
-- `describe_engine_default_cluster_parameters`
-
-<a id="describeenginedefaultparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeEngineDefaultClusterParametersPaginatorName = Literal[
+    "describe_engine_default_cluster_parameters",
+]
+```
 ## DescribeEngineDefaultParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeEngineDefaultParametersPaginatorName
+
+def get_value() -> DescribeEngineDefaultParametersPaginatorName:
+    return "describe_engine_default_parameters"
 ```
 
-Values:
-
-- `describe_engine_default_parameters`
-
-<a id="describeeventsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeEngineDefaultParametersPaginatorName = Literal[
+    "describe_engine_default_parameters",
+]
+```
 ## DescribeEventSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeEventSubscriptionsPaginatorName
+
+def get_value() -> DescribeEventSubscriptionsPaginatorName:
+    return "describe_event_subscriptions"
 ```
 
-Values:
-
-- `describe_event_subscriptions`
-
-<a id="describeeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventSubscriptionsPaginatorName = Literal[
+    "describe_event_subscriptions",
+]
+```
 ## DescribeEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
 ```
 
-Values:
-
-- `describe_events`
-
-<a id="describeexporttaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
 ## DescribeExportTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeExportTasksPaginatorName
+
+def get_value() -> DescribeExportTasksPaginatorName:
+    return "describe_export_tasks"
 ```
 
-Values:
-
-- `describe_export_tasks`
-
-<a id="describeglobalclusterspaginatorname"></a>
-
+```python title="Definition"
+DescribeExportTasksPaginatorName = Literal[
+    "describe_export_tasks",
+]
+```
 ## DescribeGlobalClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeGlobalClustersPaginatorName
+
+def get_value() -> DescribeGlobalClustersPaginatorName:
+    return "describe_global_clusters"
 ```
 
-Values:
-
-- `describe_global_clusters`
-
-<a id="describeinstallationmediapaginatorname"></a>
-
+```python title="Definition"
+DescribeGlobalClustersPaginatorName = Literal[
+    "describe_global_clusters",
+]
+```
 ## DescribeInstallationMediaPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeInstallationMediaPaginatorName
+
+def get_value() -> DescribeInstallationMediaPaginatorName:
+    return "describe_installation_media"
 ```
 
-Values:
-
-- `describe_installation_media`
-
-<a id="describeoptiongroupoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstallationMediaPaginatorName = Literal[
+    "describe_installation_media",
+]
+```
 ## DescribeOptionGroupOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeOptionGroupOptionsPaginatorName
+
+def get_value() -> DescribeOptionGroupOptionsPaginatorName:
+    return "describe_option_group_options"
 ```
 
-Values:
-
-- `describe_option_group_options`
-
-<a id="describeoptiongroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeOptionGroupOptionsPaginatorName = Literal[
+    "describe_option_group_options",
+]
+```
 ## DescribeOptionGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeOptionGroupsPaginatorName
+
+def get_value() -> DescribeOptionGroupsPaginatorName:
+    return "describe_option_groups"
 ```
 
-Values:
-
-- `describe_option_groups`
-
-<a id="describeorderabledbinstanceoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeOptionGroupsPaginatorName = Literal[
+    "describe_option_groups",
+]
+```
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeOrderableDBInstanceOptionsPaginatorName
+
+def get_value() -> DescribeOrderableDBInstanceOptionsPaginatorName:
+    return "describe_orderable_db_instance_options"
 ```
 
-Values:
-
-- `describe_orderable_db_instance_options`
-
-<a id="describependingmaintenanceactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeOrderableDBInstanceOptionsPaginatorName = Literal[
+    "describe_orderable_db_instance_options",
+]
+```
 ## DescribePendingMaintenanceActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribePendingMaintenanceActionsPaginatorName
+
+def get_value() -> DescribePendingMaintenanceActionsPaginatorName:
+    return "describe_pending_maintenance_actions"
 ```
 
-Values:
-
-- `describe_pending_maintenance_actions`
-
-<a id="describereserveddbinstancesofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribePendingMaintenanceActionsPaginatorName = Literal[
+    "describe_pending_maintenance_actions",
+]
+```
 ## DescribeReservedDBInstancesOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeReservedDBInstancesOfferingsPaginatorName
+
+def get_value() -> DescribeReservedDBInstancesOfferingsPaginatorName:
+    return "describe_reserved_db_instances_offerings"
 ```
 
-Values:
-
-- `describe_reserved_db_instances_offerings`
-
-<a id="describereserveddbinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedDBInstancesOfferingsPaginatorName = Literal[
+    "describe_reserved_db_instances_offerings",
+]
+```
 ## DescribeReservedDBInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeReservedDBInstancesPaginatorName
+
+def get_value() -> DescribeReservedDBInstancesPaginatorName:
+    return "describe_reserved_db_instances"
 ```
 
-Values:
-
-- `describe_reserved_db_instances`
-
-<a id="describesourceregionspaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedDBInstancesPaginatorName = Literal[
+    "describe_reserved_db_instances",
+]
+```
 ## DescribeSourceRegionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DescribeSourceRegionsPaginatorName
+
+def get_value() -> DescribeSourceRegionsPaginatorName:
+    return "describe_source_regions"
 ```
 
-Values:
-
-- `describe_source_regions`
-
-<a id="downloaddblogfileportionpaginatorname"></a>
-
+```python title="Definition"
+DescribeSourceRegionsPaginatorName = Literal[
+    "describe_source_regions",
+]
+```
 ## DownloadDBLogFilePortionPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import DownloadDBLogFilePortionPaginatorName
+
+def get_value() -> DownloadDBLogFilePortionPaginatorName:
+    return "download_db_log_file_portion"
 ```
 
-Values:
-
-- `download_db_log_file_portion`
-
-<a id="enginefamilytype"></a>
-
+```python title="Definition"
+DownloadDBLogFilePortionPaginatorName = Literal[
+    "download_db_log_file_portion",
+]
+```
 ## EngineFamilyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import EngineFamilyType
+
+def get_value() -> EngineFamilyType:
+    return "MYSQL"
 ```
 
-Values:
-
-- `MYSQL`
-- `POSTGRESQL`
-
-<a id="failoverstatustype"></a>
-
+```python title="Definition"
+EngineFamilyType = Literal[
+    "MYSQL",
+    "POSTGRESQL",
+]
+```
 ## FailoverStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import FailoverStatusType
+
+def get_value() -> FailoverStatusType:
+    return "cancelling"
 ```
 
-Values:
-
-- `cancelling`
-- `failing-over`
-- `pending`
-
-<a id="iamauthmodetype"></a>
-
+```python title="Definition"
+FailoverStatusType = Literal[
+    "cancelling",
+    "failing-over",
+    "pending",
+]
+```
 ## IAMAuthModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import IAMAuthModeType
+
+def get_value() -> IAMAuthModeType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `REQUIRED`
-
-<a id="replicamodetype"></a>
-
+```python title="Definition"
+IAMAuthModeType = Literal[
+    "DISABLED",
+    "REQUIRED",
+]
+```
 ## ReplicaModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ReplicaModeType
+
+def get_value() -> ReplicaModeType:
+    return "mounted"
 ```
 
-Values:
-
-- `mounted`
-- `open-read-only`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+ReplicaModeType = Literal[
+    "mounted",
+    "open-read-only",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "custom-engine-version"
 ```
 
-Values:
-
-- `custom-engine-version`
-- `db-cluster`
-- `db-cluster-snapshot`
-- `db-instance`
-- `db-parameter-group`
-- `db-proxy`
-- `db-security-group`
-- `db-snapshot`
-
-<a id="targethealthreasontype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "custom-engine-version",
+    "db-cluster",
+    "db-cluster-snapshot",
+    "db-instance",
+    "db-parameter-group",
+    "db-proxy",
+    "db-security-group",
+    "db-snapshot",
+]
+```
 ## TargetHealthReasonType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import TargetHealthReasonType
+
+def get_value() -> TargetHealthReasonType:
+    return "AUTH_FAILURE"
 ```
 
-Values:
-
-- `AUTH_FAILURE`
-- `CONNECTION_FAILED`
-- `INVALID_REPLICATION_STATE`
-- `PENDING_PROXY_CAPACITY`
-- `UNREACHABLE`
-
-<a id="targetroletype"></a>
-
+```python title="Definition"
+TargetHealthReasonType = Literal[
+    "AUTH_FAILURE",
+    "CONNECTION_FAILED",
+    "INVALID_REPLICATION_STATE",
+    "PENDING_PROXY_CAPACITY",
+    "UNREACHABLE",
+]
+```
 ## TargetRoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import TargetRoleType
+
+def get_value() -> TargetRoleType:
+    return "READ_ONLY"
 ```
 
-Values:
-
-- `READ_ONLY`
-- `READ_WRITE`
-- `UNKNOWN`
-
-<a id="targetstatetype"></a>
-
+```python title="Definition"
+TargetRoleType = Literal[
+    "READ_ONLY",
+    "READ_WRITE",
+    "UNKNOWN",
+]
+```
 ## TargetStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import TargetStateType
+
+def get_value() -> TargetStateType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `REGISTERING`
-- `UNAVAILABLE`
-
-<a id="targettypetype"></a>
-
+```python title="Definition"
+TargetStateType = Literal[
+    "AVAILABLE",
+    "REGISTERING",
+    "UNAVAILABLE",
+]
+```
 ## TargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import TargetTypeType
+
+def get_value() -> TargetTypeType:
+    return "RDS_INSTANCE"
 ```
 
-Values:
-
-- `RDS_INSTANCE`
-- `RDS_SERVERLESS_ENDPOINT`
-- `TRACKED_CLUSTER`
-
-<a id="writeforwardingstatustype"></a>
-
+```python title="Definition"
+TargetTypeType = Literal[
+    "RDS_INSTANCE",
+    "RDS_SERVERLESS_ENDPOINT",
+    "TRACKED_CLUSTER",
+]
+```
 ## WriteForwardingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import WriteForwardingStatusType
+
+def get_value() -> WriteForwardingStatusType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `disabling`
-- `enabled`
-- `enabling`
-- `unknown`
-
-<a id="rdsservicename"></a>
-
+```python title="Definition"
+WriteForwardingStatusType = Literal[
+    "disabled",
+    "disabling",
+    "enabled",
+    "enabling",
+    "unknown",
+]
+```
 ## RDSServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import RDSServiceName
+
+def get_value() -> RDSServiceName:
+    return "rds"
 ```
 
-Values:
-
-- `rds`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+RDSServiceName = Literal[
+    "rds",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_certificates"
 ```
 
-Values:
-
-- `describe_certificates`
-- `describe_custom_availability_zones`
-- `describe_db_cluster_backtracks`
-- `describe_db_cluster_endpoints`
-- `describe_db_cluster_parameter_groups`
-- `describe_db_cluster_parameters`
-- `describe_db_cluster_snapshots`
-- `describe_db_clusters`
-- `describe_db_engine_versions`
-- `describe_db_instance_automated_backups`
-- `describe_db_instances`
-- `describe_db_log_files`
-- `describe_db_parameter_groups`
-- `describe_db_parameters`
-- `describe_db_proxies`
-- `describe_db_proxy_endpoints`
-- `describe_db_proxy_target_groups`
-- `describe_db_proxy_targets`
-- `describe_db_security_groups`
-- `describe_db_snapshots`
-- `describe_db_subnet_groups`
-- `describe_engine_default_cluster_parameters`
-- `describe_engine_default_parameters`
-- `describe_event_subscriptions`
-- `describe_events`
-- `describe_export_tasks`
-- `describe_global_clusters`
-- `describe_installation_media`
-- `describe_option_group_options`
-- `describe_option_groups`
-- `describe_orderable_db_instance_options`
-- `describe_pending_maintenance_actions`
-- `describe_reserved_db_instances`
-- `describe_reserved_db_instances_offerings`
-- `describe_source_regions`
-- `download_db_log_file_portion`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_certificates",
+    "describe_custom_availability_zones",
+    "describe_db_cluster_backtracks",
+    "describe_db_cluster_endpoints",
+    "describe_db_cluster_parameter_groups",
+    "describe_db_cluster_parameters",
+    "describe_db_cluster_snapshots",
+    "describe_db_clusters",
+    "describe_db_engine_versions",
+    "describe_db_instance_automated_backups",
+    "describe_db_instances",
+    "describe_db_log_files",
+    "describe_db_parameter_groups",
+    "describe_db_parameters",
+    "describe_db_proxies",
+    "describe_db_proxy_endpoints",
+    "describe_db_proxy_target_groups",
+    "describe_db_proxy_targets",
+    "describe_db_security_groups",
+    "describe_db_snapshots",
+    "describe_db_subnet_groups",
+    "describe_engine_default_cluster_parameters",
+    "describe_engine_default_parameters",
+    "describe_event_subscriptions",
+    "describe_events",
+    "describe_export_tasks",
+    "describe_global_clusters",
+    "describe_installation_media",
+    "describe_option_group_options",
+    "describe_option_groups",
+    "describe_orderable_db_instance_options",
+    "describe_pending_maintenance_actions",
+    "describe_reserved_db_instances",
+    "describe_reserved_db_instances_offerings",
+    "describe_source_regions",
+    "download_db_log_file_portion",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_rds.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "db_cluster_snapshot_available"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "db_cluster_snapshot_available",
+    "db_cluster_snapshot_deleted",
+    "db_instance_available",
+    "db_instance_deleted",
+    "db_snapshot_available",
+    "db_snapshot_completed",
+    "db_snapshot_deleted",
+]
+```
+## RegionName
 
-- `db_cluster_snapshot_available`
-- `db_cluster_snapshot_deleted`
-- `db_instance_available`
-- `db_instance_deleted`
-- `db_snapshot_available`
-- `db_snapshot_completed`
-- `db_snapshot_deleted`
+```python title="Usage Example"
+from mypy_boto3_rds.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

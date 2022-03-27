@@ -1,62 +1,18 @@
-<a id="inspector2client-for-boto3-inspector2-module"></a>
-
-# Inspector2Client for boto3 Inspector2 module
+# Inspector2Client
 
 > [Index](../README.md) > [Inspector2](./README.md) > Inspector2Client
 
-Auto-generated documentation for
-[Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
-type annotations stubs module
-[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+!!! note ""
 
-- [Inspector2Client for boto3 Inspector2 module](#inspector2client-for-boto3-inspector2-module)
-  - [Inspector2Client](#inspector2client)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_member](#associate_member)
-    - [batch_get_account_status](#batch_get_account_status)
-    - [batch_get_free_trial_info](#batch_get_free_trial_info)
-    - [can_paginate](#can_paginate)
-    - [cancel_findings_report](#cancel_findings_report)
-    - [create_filter](#create_filter)
-    - [create_findings_report](#create_findings_report)
-    - [delete_filter](#delete_filter)
-    - [describe_organization_configuration](#describe_organization_configuration)
-    - [disable](#disable)
-    - [disable_delegated_admin_account](#disable_delegated_admin_account)
-    - [disassociate_member](#disassociate_member)
-    - [enable](#enable)
-    - [enable_delegated_admin_account](#enable_delegated_admin_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_delegated_admin_account](#get_delegated_admin_account)
-    - [get_findings_report_status](#get_findings_report_status)
-    - [get_member](#get_member)
-    - [list_account_permissions](#list_account_permissions)
-    - [list_coverage](#list_coverage)
-    - [list_coverage_statistics](#list_coverage_statistics)
-    - [list_delegated_admin_accounts](#list_delegated_admin_accounts)
-    - [list_filters](#list_filters)
-    - [list_finding_aggregations](#list_finding_aggregations)
-    - [list_findings](#list_findings)
-    - [list_members](#list_members)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_usage_totals](#list_usage_totals)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_filter](#update_filter)
-    - [update_organization_configuration](#update_organization_configuration)
-    - [get_paginator](#get_paginator)
-
-<a id="inspector2client"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## Inspector2Client
 
-Type annotations for `boto3.client("inspector2")`
+Type annotations and code completion for `#!python boto3.client("inspector2")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_inspector2.client import Inspector2Client
 
@@ -64,800 +20,1005 @@ def get_inspector2_client() -> Inspector2Client:
     return Session().client("inspector2")
 ```
 
-Boto3 documentation:
-[Inspector2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("inspector2").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("inspector2")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_inspector2.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-Inspector2Client exceptions.
-
-Type annotations for `boto3.client("inspector2").exceptions` method.
-
-Boto3 documentation:
-[Inspector2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_member"></a>
-
-### associate_member
+### associate\_member
 
 Associates an Amazon Web Services account with an Amazon Inspector delegated
 administrator.
 
-Type annotations for `boto3.client("inspector2").associate_member` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").associate_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.associate_member)
 
-Boto3 documentation:
-[Inspector2.Client.associate_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.associate_member)
+```python title="Method definition"
+def associate_member(
+    self,
+    *,
+    accountId: str,
+) -> AssociateMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateMemberRequestRequestTypeDef](./type_defs.md#associatememberrequestrequesttypedef).
+1. See [:material-code-braces: AssociateMemberResponseTypeDef](./type_defs.md#associatememberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateMemberRequestRequestTypeDef = {  # (1)
+    "accountId": ...,
+}
 
-Returns
-[AssociateMemberResponseTypeDef](./type_defs.md#associatememberresponsetypedef).
+parent.associate_member(**kwargs)
+```
 
-<a id="batch\_get\_account\_status"></a>
+1. See [:material-code-braces: AssociateMemberRequestRequestTypeDef](./type_defs.md#associatememberrequestrequesttypedef) 
 
-### batch_get_account_status
+### batch\_get\_account\_status
 
 Retrieves the Amazon Inspector status of multiple Amazon Web Services accounts
 within your environment.
 
-Type annotations for `boto3.client("inspector2").batch_get_account_status`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").batch_get_account_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.batch_get_account_status)
 
-Boto3 documentation:
-[Inspector2.Client.batch_get_account_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.batch_get_account_status)
+```python title="Method definition"
+def batch_get_account_status(
+    self,
+    *,
+    accountIds: Sequence[str] = ...,
+) -> BatchGetAccountStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetAccountStatusRequestRequestTypeDef](./type_defs.md#batchgetaccountstatusrequestrequesttypedef).
+1. See [:material-code-braces: BatchGetAccountStatusResponseTypeDef](./type_defs.md#batchgetaccountstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: BatchGetAccountStatusRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[BatchGetAccountStatusResponseTypeDef](./type_defs.md#batchgetaccountstatusresponsetypedef).
+parent.batch_get_account_status(**kwargs)
+```
 
-<a id="batch\_get\_free\_trial\_info"></a>
+1. See [:material-code-braces: BatchGetAccountStatusRequestRequestTypeDef](./type_defs.md#batchgetaccountstatusrequestrequesttypedef) 
 
-### batch_get_free_trial_info
+### batch\_get\_free\_trial\_info
 
 Gets free trial status for multiple Amazon Web Services accounts.
 
-Type annotations for `boto3.client("inspector2").batch_get_free_trial_info`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").batch_get_free_trial_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.batch_get_free_trial_info)
 
-Boto3 documentation:
-[Inspector2.Client.batch_get_free_trial_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.batch_get_free_trial_info)
+```python title="Method definition"
+def batch_get_free_trial_info(
+    self,
+    *,
+    accountIds: Sequence[str],
+) -> BatchGetFreeTrialInfoResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetFreeTrialInfoRequestRequestTypeDef](./type_defs.md#batchgetfreetrialinforequestrequesttypedef).
+1. See [:material-code-braces: BatchGetFreeTrialInfoResponseTypeDef](./type_defs.md#batchgetfreetrialinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetFreeTrialInfoRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[BatchGetFreeTrialInfoResponseTypeDef](./type_defs.md#batchgetfreetrialinforesponsetypedef).
+parent.batch_get_free_trial_info(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchGetFreeTrialInfoRequestRequestTypeDef](./type_defs.md#batchgetfreetrialinforequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("inspector2").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.can_paginate)
 
-Boto3 documentation:
-[Inspector2.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_findings\_report"></a>
-
-### cancel_findings_report
+### cancel\_findings\_report
 
 Cancels the given findings report.
 
-Type annotations for `boto3.client("inspector2").cancel_findings_report`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").cancel_findings_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.cancel_findings_report)
 
-Boto3 documentation:
-[Inspector2.Client.cancel_findings_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.cancel_findings_report)
+```python title="Method definition"
+def cancel_findings_report(
+    self,
+    *,
+    reportId: str,
+) -> CancelFindingsReportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelFindingsReportRequestRequestTypeDef](./type_defs.md#cancelfindingsreportrequestrequesttypedef).
+1. See [:material-code-braces: CancelFindingsReportResponseTypeDef](./type_defs.md#cancelfindingsreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelFindingsReportRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+}
 
-Returns
-[CancelFindingsReportResponseTypeDef](./type_defs.md#cancelfindingsreportresponsetypedef).
+parent.cancel_findings_report(**kwargs)
+```
 
-<a id="create\_filter"></a>
+1. See [:material-code-braces: CancelFindingsReportRequestRequestTypeDef](./type_defs.md#cancelfindingsreportrequestrequesttypedef) 
 
-### create_filter
+### create\_filter
 
 Creates a filter resource using specified filter criteria.
 
-Type annotations for `boto3.client("inspector2").create_filter` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").create_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.create_filter)
 
-Boto3 documentation:
-[Inspector2.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.create_filter)
+```python title="Method definition"
+def create_filter(
+    self,
+    *,
+    action: FilterActionType,  # (1)
+    filterCriteria: FilterCriteriaTypeDef,  # (2)
+    name: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef).
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+3. See [:material-code-braces: CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `action`: [FilterActionType](./literals.md#filteractiontype) *(required)*
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) *(required)*
-- `name`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFilterRequestRequestTypeDef = {  # (1)
+    "action": ...,
+    "filterCriteria": ...,
+    "name": ...,
+}
 
-Returns
-[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+parent.create_filter(**kwargs)
+```
 
-<a id="create\_findings\_report"></a>
+1. See [:material-code-braces: CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef) 
 
-### create_findings_report
+### create\_findings\_report
 
 Creates a finding report.
 
-Type annotations for `boto3.client("inspector2").create_findings_report`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").create_findings_report` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.create_findings_report)
 
-Boto3 documentation:
-[Inspector2.Client.create_findings_report](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.create_findings_report)
+```python title="Method definition"
+def create_findings_report(
+    self,
+    *,
+    reportFormat: ReportFormatType,  # (1)
+    s3Destination: DestinationTypeDef,  # (2)
+    filterCriteria: FilterCriteriaTypeDef = ...,  # (3)
+) -> CreateFindingsReportResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFindingsReportRequestRequestTypeDef](./type_defs.md#createfindingsreportrequestrequesttypedef).
+1. See [:material-code-brackets: ReportFormatType](./literals.md#reportformattype) 
+2. See [:material-code-braces: DestinationTypeDef](./type_defs.md#destinationtypedef) 
+3. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+4. See [:material-code-braces: CreateFindingsReportResponseTypeDef](./type_defs.md#createfindingsreportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `reportFormat`: [ReportFormatType](./literals.md#reportformattype)
-  *(required)*
-- `s3Destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
-  *(required)*
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateFindingsReportRequestRequestTypeDef = {  # (1)
+    "reportFormat": ...,
+    "s3Destination": ...,
+}
 
-Returns
-[CreateFindingsReportResponseTypeDef](./type_defs.md#createfindingsreportresponsetypedef).
+parent.create_findings_report(**kwargs)
+```
 
-<a id="delete\_filter"></a>
+1. See [:material-code-braces: CreateFindingsReportRequestRequestTypeDef](./type_defs.md#createfindingsreportrequestrequesttypedef) 
 
-### delete_filter
+### delete\_filter
 
 Deletes a filter resource.
 
-Type annotations for `boto3.client("inspector2").delete_filter` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").delete_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.delete_filter)
 
-Boto3 documentation:
-[Inspector2.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.delete_filter)
+```python title="Method definition"
+def delete_filter(
+    self,
+    *,
+    arn: str,
+) -> DeleteFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFilterResponseTypeDef](./type_defs.md#deletefilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFilterRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[DeleteFilterResponseTypeDef](./type_defs.md#deletefilterresponsetypedef).
+parent.delete_filter(**kwargs)
+```
 
-<a id="describe\_organization\_configuration"></a>
+1. See [:material-code-braces: DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef) 
 
-### describe_organization_configuration
+### describe\_organization\_configuration
 
 Describe Amazon Inspector configuration settings for an Amazon Web Services
-organization See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/inspector2-2020-06-08/DescribeOrganizationConfiguration).
+organization See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/inspector2-2020-06-08/DescribeOrganizationConfiguration).
 
-Type annotations for
-`boto3.client("inspector2").describe_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").describe_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.describe_organization_configuration)
 
-Boto3 documentation:
-[Inspector2.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.describe_organization_configuration)
+```python title="Method definition"
+def describe_organization_configuration(
+    self,
+) -> DescribeOrganizationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
-
-<a id="disable"></a>
+1. See [:material-code-braces: DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef) 
 
 ### disable
 
 Disables Amazon Inspector scans for one or more Amazon Web Services accounts.
 
-Type annotations for `boto3.client("inspector2").disable` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").disable` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disable)
 
-Boto3 documentation:
-[Inspector2.Client.disable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disable)
+```python title="Method definition"
+def disable(
+    self,
+    *,
+    accountIds: Sequence[str] = ...,
+    resourceTypes: Sequence[ResourceScanTypeType] = ...,  # (1)
+) -> DisableResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisableRequestRequestTypeDef](./type_defs.md#disablerequestrequesttypedef).
+1. See [:material-code-brackets: ResourceScanTypeType](./literals.md#resourcescantypetype) 
+2. See [:material-code-braces: DisableResponseTypeDef](./type_defs.md#disableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\]
-- `resourceTypes`:
-  `Sequence`\[[ResourceScanTypeType](./literals.md#resourcescantypetype)\]
+```python title="Usage example with kwargs"
+kwargs: DisableRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns [DisableResponseTypeDef](./type_defs.md#disableresponsetypedef).
+parent.disable(**kwargs)
+```
 
-<a id="disable\_delegated\_admin\_account"></a>
+1. See [:material-code-braces: DisableRequestRequestTypeDef](./type_defs.md#disablerequestrequesttypedef) 
 
-### disable_delegated_admin_account
+### disable\_delegated\_admin\_account
 
 Disables the Amazon Inspector delegated administrator for your organization.
 
-Type annotations for
-`boto3.client("inspector2").disable_delegated_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").disable_delegated_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disable_delegated_admin_account)
 
-Boto3 documentation:
-[Inspector2.Client.disable_delegated_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disable_delegated_admin_account)
+```python title="Method definition"
+def disable_delegated_admin_account(
+    self,
+    *,
+    delegatedAdminAccountId: str,
+) -> DisableDelegatedAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisableDelegatedAdminAccountRequestRequestTypeDef](./type_defs.md#disabledelegatedadminaccountrequestrequesttypedef).
+1. See [:material-code-braces: DisableDelegatedAdminAccountResponseTypeDef](./type_defs.md#disabledelegatedadminaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `delegatedAdminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableDelegatedAdminAccountRequestRequestTypeDef = {  # (1)
+    "delegatedAdminAccountId": ...,
+}
 
-Returns
-[DisableDelegatedAdminAccountResponseTypeDef](./type_defs.md#disabledelegatedadminaccountresponsetypedef).
+parent.disable_delegated_admin_account(**kwargs)
+```
 
-<a id="disassociate\_member"></a>
+1. See [:material-code-braces: DisableDelegatedAdminAccountRequestRequestTypeDef](./type_defs.md#disabledelegatedadminaccountrequestrequesttypedef) 
 
-### disassociate_member
+### disassociate\_member
 
-Disassociates a member account from an Amazon Inspector delegated
-administrator.
+Disassociates a member account from an Amazon Inspector delegated administrator.
 
-Type annotations for `boto3.client("inspector2").disassociate_member` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").disassociate_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disassociate_member)
 
-Boto3 documentation:
-[Inspector2.Client.disassociate_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.disassociate_member)
+```python title="Method definition"
+def disassociate_member(
+    self,
+    *,
+    accountId: str,
+) -> DisassociateMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateMemberResponseTypeDef](./type_defs.md#disassociatememberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMemberRequestRequestTypeDef = {  # (1)
+    "accountId": ...,
+}
 
-Returns
-[DisassociateMemberResponseTypeDef](./type_defs.md#disassociatememberresponsetypedef).
+parent.disassociate_member(**kwargs)
+```
 
-<a id="enable"></a>
+1. See [:material-code-braces: DisassociateMemberRequestRequestTypeDef](./type_defs.md#disassociatememberrequestrequesttypedef) 
 
 ### enable
 
 Enables Amazon Inspector scans for one or more Amazon Web Services accounts.
 
-Type annotations for `boto3.client("inspector2").enable` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").enable` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.enable)
 
-Boto3 documentation:
-[Inspector2.Client.enable](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.enable)
+```python title="Method definition"
+def enable(
+    self,
+    *,
+    resourceTypes: Sequence[ResourceScanTypeType],  # (1)
+    accountIds: Sequence[str] = ...,
+    clientToken: str = ...,
+) -> EnableResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[EnableRequestRequestTypeDef](./type_defs.md#enablerequestrequesttypedef).
+1. See [:material-code-brackets: ResourceScanTypeType](./literals.md#resourcescantypetype) 
+2. See [:material-code-braces: EnableResponseTypeDef](./type_defs.md#enableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceTypes`:
-  `Sequence`\[[ResourceScanTypeType](./literals.md#resourcescantypetype)\]
-  *(required)*
-- `accountIds`: `Sequence`\[`str`\]
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableRequestRequestTypeDef = {  # (1)
+    "resourceTypes": ...,
+}
 
-Returns [EnableResponseTypeDef](./type_defs.md#enableresponsetypedef).
+parent.enable(**kwargs)
+```
 
-<a id="enable\_delegated\_admin\_account"></a>
+1. See [:material-code-braces: EnableRequestRequestTypeDef](./type_defs.md#enablerequestrequesttypedef) 
 
-### enable_delegated_admin_account
+### enable\_delegated\_admin\_account
 
 Enables the Amazon Inspector delegated administrator for your Organizations
 organization.
 
-Type annotations for
-`boto3.client("inspector2").enable_delegated_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").enable_delegated_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.enable_delegated_admin_account)
 
-Boto3 documentation:
-[Inspector2.Client.enable_delegated_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.enable_delegated_admin_account)
+```python title="Method definition"
+def enable_delegated_admin_account(
+    self,
+    *,
+    delegatedAdminAccountId: str,
+    clientToken: str = ...,
+) -> EnableDelegatedAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EnableDelegatedAdminAccountRequestRequestTypeDef](./type_defs.md#enabledelegatedadminaccountrequestrequesttypedef).
+1. See [:material-code-braces: EnableDelegatedAdminAccountResponseTypeDef](./type_defs.md#enabledelegatedadminaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `delegatedAdminAccountId`: `str` *(required)*
-- `clientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableDelegatedAdminAccountRequestRequestTypeDef = {  # (1)
+    "delegatedAdminAccountId": ...,
+}
 
-Returns
-[EnableDelegatedAdminAccountResponseTypeDef](./type_defs.md#enabledelegatedadminaccountresponsetypedef).
+parent.enable_delegated_admin_account(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableDelegatedAdminAccountRequestRequestTypeDef](./type_defs.md#enabledelegatedadminaccountrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("inspector2").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Inspector2.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_delegated\_admin\_account"></a>
-
-### get_delegated_admin_account
+### get\_delegated\_admin\_account
 
 Retrieves information about the Amazon Inspector delegated administrator for
 your organization.
 
-Type annotations for `boto3.client("inspector2").get_delegated_admin_account`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_delegated_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_delegated_admin_account)
 
-Boto3 documentation:
-[Inspector2.Client.get_delegated_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_delegated_admin_account)
+```python title="Method definition"
+def get_delegated_admin_account(
+    self,
+) -> GetDelegatedAdminAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetDelegatedAdminAccountResponseTypeDef](./type_defs.md#getdelegatedadminaccountresponsetypedef).
+1. See [:material-code-braces: GetDelegatedAdminAccountResponseTypeDef](./type_defs.md#getdelegatedadminaccountresponsetypedef) 
 
-<a id="get\_findings\_report\_status"></a>
-
-### get_findings_report_status
+### get\_findings\_report\_status
 
 Gets the status of a findings report.
 
-Type annotations for `boto3.client("inspector2").get_findings_report_status`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_findings_report_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_findings_report_status)
 
-Boto3 documentation:
-[Inspector2.Client.get_findings_report_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_findings_report_status)
+```python title="Method definition"
+def get_findings_report_status(
+    self,
+    *,
+    reportId: str = ...,
+) -> GetFindingsReportStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsReportStatusRequestRequestTypeDef](./type_defs.md#getfindingsreportstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetFindingsReportStatusResponseTypeDef](./type_defs.md#getfindingsreportstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `reportId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFindingsReportStatusRequestRequestTypeDef = {  # (1)
+    "reportId": ...,
+}
 
-Returns
-[GetFindingsReportStatusResponseTypeDef](./type_defs.md#getfindingsreportstatusresponsetypedef).
+parent.get_findings_report_status(**kwargs)
+```
 
-<a id="get\_member"></a>
+1. See [:material-code-braces: GetFindingsReportStatusRequestRequestTypeDef](./type_defs.md#getfindingsreportstatusrequestrequesttypedef) 
 
-### get_member
+### get\_member
 
 Gets member information for your organization.
 
-Type annotations for `boto3.client("inspector2").get_member` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_member` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_member)
 
-Boto3 documentation:
-[Inspector2.Client.get_member](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.get_member)
+```python title="Method definition"
+def get_member(
+    self,
+    *,
+    accountId: str,
+) -> GetMemberResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef).
+1. See [:material-code-braces: GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMemberRequestRequestTypeDef = {  # (1)
+    "accountId": ...,
+}
 
-Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
+parent.get_member(**kwargs)
+```
 
-<a id="list\_account\_permissions"></a>
+1. See [:material-code-braces: GetMemberRequestRequestTypeDef](./type_defs.md#getmemberrequestrequesttypedef) 
 
-### list_account_permissions
+### list\_account\_permissions
 
 Lists the permissions an account has to configure Amazon Inspector.
 
-Type annotations for `boto3.client("inspector2").list_account_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_account_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_account_permissions)
 
-Boto3 documentation:
-[Inspector2.Client.list_account_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_account_permissions)
+```python title="Method definition"
+def list_account_permissions(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    service: ServiceType = ...,  # (1)
+) -> ListAccountPermissionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAccountPermissionsRequestRequestTypeDef](./type_defs.md#listaccountpermissionsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceType](./literals.md#servicetype) 
+2. See [:material-code-braces: ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `service`: [ServiceType](./literals.md#servicetype)
+```python title="Usage example with kwargs"
+kwargs: ListAccountPermissionsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef).
+parent.list_account_permissions(**kwargs)
+```
 
-<a id="list\_coverage"></a>
+1. See [:material-code-braces: ListAccountPermissionsRequestRequestTypeDef](./type_defs.md#listaccountpermissionsrequestrequesttypedef) 
 
-### list_coverage
+### list\_coverage
 
 Lists coverage details for you environment.
 
-Type annotations for `boto3.client("inspector2").list_coverage` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_coverage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_coverage)
 
-Boto3 documentation:
-[Inspector2.Client.list_coverage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_coverage)
+```python title="Method definition"
+def list_coverage(
+    self,
+    *,
+    filterCriteria: CoverageFilterCriteriaTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListCoverageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCoverageRequestRequestTypeDef](./type_defs.md#listcoveragerequestrequesttypedef).
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-braces: ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoverageRequestRequestTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
 
-Returns
-[ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef).
+parent.list_coverage(**kwargs)
+```
 
-<a id="list\_coverage\_statistics"></a>
+1. See [:material-code-braces: ListCoverageRequestRequestTypeDef](./type_defs.md#listcoveragerequestrequesttypedef) 
 
-### list_coverage_statistics
+### list\_coverage\_statistics
 
 Lists Amazon Inspector coverage statistics for your environment.
 
-Type annotations for `boto3.client("inspector2").list_coverage_statistics`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_coverage_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_coverage_statistics)
 
-Boto3 documentation:
-[Inspector2.Client.list_coverage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_coverage_statistics)
+```python title="Method definition"
+def list_coverage_statistics(
+    self,
+    *,
+    filterCriteria: CoverageFilterCriteriaTypeDef = ...,  # (1)
+    groupBy: GroupKeyType = ...,  # (2)
+    nextToken: str = ...,
+) -> ListCoverageStatisticsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListCoverageStatisticsRequestRequestTypeDef](./type_defs.md#listcoveragestatisticsrequestrequesttypedef).
+1. See [:material-code-braces: CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef) 
+2. See [:material-code-brackets: GroupKeyType](./literals.md#groupkeytype) 
+3. See [:material-code-braces: ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterCriteria`:
-  [CoverageFilterCriteriaTypeDef](./type_defs.md#coveragefiltercriteriatypedef)
-- `groupBy`: [GroupKeyType](./literals.md#groupkeytype)
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoverageStatisticsRequestRequestTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
 
-Returns
-[ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef).
+parent.list_coverage_statistics(**kwargs)
+```
 
-<a id="list\_delegated\_admin\_accounts"></a>
+1. See [:material-code-braces: ListCoverageStatisticsRequestRequestTypeDef](./type_defs.md#listcoveragestatisticsrequestrequesttypedef) 
 
-### list_delegated_admin_accounts
+### list\_delegated\_admin\_accounts
 
 Lists information about the Amazon Inspector delegated administrator of your
 organization.
 
-Type annotations for `boto3.client("inspector2").list_delegated_admin_accounts`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_delegated_admin_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_delegated_admin_accounts)
 
-Boto3 documentation:
-[Inspector2.Client.list_delegated_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_delegated_admin_accounts)
+```python title="Method definition"
+def list_delegated_admin_accounts(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDelegatedAdminAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDelegatedAdminAccountsRequestRequestTypeDef](./type_defs.md#listdelegatedadminaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDelegatedAdminAccountsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef).
+parent.list_delegated_admin_accounts(**kwargs)
+```
 
-<a id="list\_filters"></a>
+1. See [:material-code-braces: ListDelegatedAdminAccountsRequestRequestTypeDef](./type_defs.md#listdelegatedadminaccountsrequestrequesttypedef) 
 
-### list_filters
+### list\_filters
 
 Lists the filters associated with your account.
 
-Type annotations for `boto3.client("inspector2").list_filters` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_filters)
 
-Boto3 documentation:
-[Inspector2.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_filters)
+```python title="Method definition"
+def list_filters(
+    self,
+    *,
+    action: FilterActionType = ...,  # (1)
+    arns: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFiltersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef).
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `arns`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFiltersRequestRequestTypeDef = {  # (1)
+    "action": ...,
+}
 
-Returns
-[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+parent.list_filters(**kwargs)
+```
 
-<a id="list\_finding\_aggregations"></a>
+1. See [:material-code-braces: ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef) 
 
-### list_finding_aggregations
+### list\_finding\_aggregations
 
 Lists aggregated finding data for your environment based on specific criteria.
 
-Type annotations for `boto3.client("inspector2").list_finding_aggregations`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_finding_aggregations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_finding_aggregations)
 
-Boto3 documentation:
-[Inspector2.Client.list_finding_aggregations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_finding_aggregations)
+```python title="Method definition"
+def list_finding_aggregations(
+    self,
+    *,
+    aggregationType: AggregationTypeType,  # (1)
+    accountIds: Sequence[StringFilterTypeDef] = ...,  # (2)
+    aggregationRequest: AggregationRequestTypeDef = ...,  # (3)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFindingAggregationsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingAggregationsRequestRequestTypeDef](./type_defs.md#listfindingaggregationsrequestrequesttypedef).
+1. See [:material-code-brackets: AggregationTypeType](./literals.md#aggregationtypetype) 
+2. See [:material-code-braces: StringFilterTypeDef](./type_defs.md#stringfiltertypedef) 
+3. See [:material-code-braces: AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef) 
+4. See [:material-code-braces: ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `aggregationType`: [AggregationTypeType](./literals.md#aggregationtypetype)
-  *(required)*
-- `accountIds`:
-  `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `aggregationRequest`:
-  [AggregationRequestTypeDef](./type_defs.md#aggregationrequesttypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFindingAggregationsRequestRequestTypeDef = {  # (1)
+    "aggregationType": ...,
+}
 
-Returns
-[ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef).
+parent.list_finding_aggregations(**kwargs)
+```
 
-<a id="list\_findings"></a>
+1. See [:material-code-braces: ListFindingAggregationsRequestRequestTypeDef](./type_defs.md#listfindingaggregationsrequestrequesttypedef) 
 
-### list_findings
+### list\_findings
 
 Lists findings for your environment.
 
-Type annotations for `boto3.client("inspector2").list_findings` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_findings)
 
-Boto3 documentation:
-[Inspector2.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_findings)
+```python title="Method definition"
+def list_findings(
+    self,
+    *,
+    filterCriteria: FilterCriteriaTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    sortCriteria: SortCriteriaTypeDef = ...,  # (2)
+) -> ListFindingsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestRequestTypeDef = {  # (1)
+    "filterCriteria": ...,
+}
 
-Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+parent.list_findings(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef) 
 
-### list_members
+### list\_members
 
 List members associated with the Amazon Inspector delegated administrator for
 your organization.
 
-Type annotations for `boto3.client("inspector2").list_members` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_members)
 
-Boto3 documentation:
-[Inspector2.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    onlyAssociated: bool = ...,
+) -> ListMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `onlyAssociated`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags attached to a given resource.
 
-Type annotations for `boto3.client("inspector2").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Inspector2.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_usage\_totals"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_usage_totals
+### list\_usage\_totals
 
 Lists the Amazon Inspector usage totals over the last 30 days.
 
-Type annotations for `boto3.client("inspector2").list_usage_totals` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").list_usage_totals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_usage_totals)
 
-Boto3 documentation:
-[Inspector2.Client.list_usage_totals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.list_usage_totals)
+```python title="Method definition"
+def list_usage_totals(
+    self,
+    *,
+    accountIds: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListUsageTotalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsageTotalsRequestRequestTypeDef](./type_defs.md#listusagetotalsrequestrequesttypedef).
+1. See [:material-code-braces: ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `accountIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListUsageTotalsRequestRequestTypeDef = {  # (1)
+    "accountIds": ...,
+}
 
-Returns
-[ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef).
+parent.list_usage_totals(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListUsageTotalsRequestRequestTypeDef](./type_defs.md#listusagetotalsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a resource.
 
-Type annotations for `boto3.client("inspector2").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.tag_resource)
 
-Boto3 documentation:
-[Inspector2.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("inspector2").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.untag_resource)
 
-Boto3 documentation:
-[Inspector2.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_filter"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_filter
+### update\_filter
 
 Specifies the action that is to be applied to the findings that match the
 filter.
 
-Type annotations for `boto3.client("inspector2").update_filter` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").update_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.update_filter)
 
-Boto3 documentation:
-[Inspector2.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.update_filter)
+```python title="Method definition"
+def update_filter(
+    self,
+    *,
+    filterArn: str,
+    action: FilterActionType = ...,  # (1)
+    description: str = ...,
+    filterCriteria: FilterCriteriaTypeDef = ...,  # (2)
+    name: str = ...,
+) -> UpdateFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFilterRequestRequestTypeDef](./type_defs.md#updatefilterrequestrequesttypedef).
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+3. See [:material-code-braces: UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterArn`: `str` *(required)*
-- `action`: [FilterActionType](./literals.md#filteractiontype)
-- `description`: `str`
-- `filterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFilterRequestRequestTypeDef = {  # (1)
+    "filterArn": ...,
+}
 
-Returns
-[UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
+parent.update_filter(**kwargs)
+```
 
-<a id="update\_organization\_configuration"></a>
+1. See [:material-code-braces: UpdateFilterRequestRequestTypeDef](./type_defs.md#updatefilterrequestrequesttypedef) 
 
-### update_organization_configuration
+### update\_organization\_configuration
 
 Updates the configurations for your Amazon Inspector organization.
 
-Type annotations for
-`boto3.client("inspector2").update_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("inspector2").update_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.update_organization_configuration)
 
-Boto3 documentation:
-[Inspector2.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.update_organization_configuration)
+```python title="Method definition"
+def update_organization_configuration(
+    self,
+    *,
+    autoEnable: AutoEnableTypeDef,  # (1)
+) -> UpdateOrganizationConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: AutoEnableTypeDef](./type_defs.md#autoenabletypedef) 
+2. See [:material-code-braces: UpdateOrganizationConfigurationResponseTypeDef](./type_defs.md#updateorganizationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `autoEnable`: [AutoEnableTypeDef](./type_defs.md#autoenabletypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "autoEnable": ...,
+}
 
-Returns
-[UpdateOrganizationConfigurationResponseTypeDef](./type_defs.md#updateorganizationconfigurationresponsetypedef).
+parent.update_organization_configuration(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("inspector2").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("inspector2").get_paginator` method with overloads.
 
-- `client.get_paginator("list_account_permissions")` ->
-  [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
-- `client.get_paginator("list_coverage")` ->
-  [ListCoveragePaginator](./paginators.md#listcoveragepaginator)
-- `client.get_paginator("list_coverage_statistics")` ->
-  [ListCoverageStatisticsPaginator](./paginators.md#listcoveragestatisticspaginator)
-- `client.get_paginator("list_delegated_admin_accounts")` ->
-  [ListDelegatedAdminAccountsPaginator](./paginators.md#listdelegatedadminaccountspaginator)
-- `client.get_paginator("list_filters")` ->
-  [ListFiltersPaginator](./paginators.md#listfilterspaginator)
-- `client.get_paginator("list_finding_aggregations")` ->
-  [ListFindingAggregationsPaginator](./paginators.md#listfindingaggregationspaginator)
-- `client.get_paginator("list_findings")` ->
-  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_members")` ->
-  [ListMembersPaginator](./paginators.md#listmemberspaginator)
-- `client.get_paginator("list_usage_totals")` ->
-  [ListUsageTotalsPaginator](./paginators.md#listusagetotalspaginator)
+- `client.get_paginator("list_account_permissions")` -> [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
+- `client.get_paginator("list_coverage")` -> [ListCoveragePaginator](./paginators.md#listcoveragepaginator)
+- `client.get_paginator("list_coverage_statistics")` -> [ListCoverageStatisticsPaginator](./paginators.md#listcoveragestatisticspaginator)
+- `client.get_paginator("list_delegated_admin_accounts")` -> [ListDelegatedAdminAccountsPaginator](./paginators.md#listdelegatedadminaccountspaginator)
+- `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_finding_aggregations")` -> [ListFindingAggregationsPaginator](./paginators.md#listfindingaggregationspaginator)
+- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_usage_totals")` -> [ListUsageTotalsPaginator](./paginators.md#listusagetotalspaginator)
+
+
+

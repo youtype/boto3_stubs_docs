@@ -1,65 +1,18 @@
-<a id="cloudwatchevidentlyclient-for-boto3-cloudwatchevidently-module"></a>
+# CloudWatchEvidentlyClient
 
-# CloudWatchEvidentlyClient for boto3 CloudWatchEvidently module
+> [Index](../README.md) > [CloudWatchEvidently](./README.md) > CloudWatchEvidentlyClient
 
-> [Index](../README.md) > [CloudWatchEvidently](./README.md) >
-> CloudWatchEvidentlyClient
+!!! note ""
 
-Auto-generated documentation for
-[CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
-type annotations stubs module
-[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
-
-- [CloudWatchEvidentlyClient for boto3 CloudWatchEvidently module](#cloudwatchevidentlyclient-for-boto3-cloudwatchevidently-module)
-  - [CloudWatchEvidentlyClient](#cloudwatchevidentlyclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_evaluate_feature](#batch_evaluate_feature)
-    - [can_paginate](#can_paginate)
-    - [create_experiment](#create_experiment)
-    - [create_feature](#create_feature)
-    - [create_launch](#create_launch)
-    - [create_project](#create_project)
-    - [delete_experiment](#delete_experiment)
-    - [delete_feature](#delete_feature)
-    - [delete_launch](#delete_launch)
-    - [delete_project](#delete_project)
-    - [evaluate_feature](#evaluate_feature)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_experiment](#get_experiment)
-    - [get_experiment_results](#get_experiment_results)
-    - [get_feature](#get_feature)
-    - [get_launch](#get_launch)
-    - [get_project](#get_project)
-    - [list_experiments](#list_experiments)
-    - [list_features](#list_features)
-    - [list_launches](#list_launches)
-    - [list_projects](#list_projects)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_project_events](#put_project_events)
-    - [start_experiment](#start_experiment)
-    - [start_launch](#start_launch)
-    - [stop_experiment](#stop_experiment)
-    - [stop_launch](#stop_launch)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_experiment](#update_experiment)
-    - [update_feature](#update_feature)
-    - [update_launch](#update_launch)
-    - [update_project](#update_project)
-    - [update_project_data_delivery](#update_project_data_delivery)
-    - [get_paginator](#get_paginator)
-
-<a id="cloudwatchevidentlyclient"></a>
+    Auto-generated documentation for [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
+    type annotations stubs module [mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 ## CloudWatchEvidentlyClient
 
-Type annotations for `boto3.client("evidently")`
+Type annotations and code completion for `#!python boto3.client("evidently")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_evidently.client import CloudWatchEvidentlyClient
 
@@ -67,887 +20,1159 @@ def get_evidently_client() -> CloudWatchEvidentlyClient:
     return Session().client("evidently")
 ```
 
-Boto3 documentation:
-[CloudWatchEvidently.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("evidently").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("evidently")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_evidently.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudWatchEvidentlyClient exceptions.
-
-Type annotations for `boto3.client("evidently").exceptions` method.
-
-Boto3 documentation:
-[CloudWatchEvidently.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_evaluate\_feature"></a>
-
-### batch_evaluate_feature
+### batch\_evaluate\_feature
 
 This operation assigns feature variation to user sessions.
 
-Type annotations for `boto3.client("evidently").batch_evaluate_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").batch_evaluate_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.batch_evaluate_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.batch_evaluate_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.batch_evaluate_feature)
+```python title="Method definition"
+def batch_evaluate_feature(
+    self,
+    *,
+    project: str,
+    requests: Sequence[EvaluationRequestTypeDef],  # (1)
+) -> BatchEvaluateFeatureResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchEvaluateFeatureRequestRequestTypeDef](./type_defs.md#batchevaluatefeaturerequestrequesttypedef).
+1. See [:material-code-braces: EvaluationRequestTypeDef](./type_defs.md#evaluationrequesttypedef) 
+2. See [:material-code-braces: BatchEvaluateFeatureResponseTypeDef](./type_defs.md#batchevaluatefeatureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `requests`:
-  `Sequence`\[[EvaluationRequestTypeDef](./type_defs.md#evaluationrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchEvaluateFeatureRequestRequestTypeDef = {  # (1)
+    "project": ...,
+    "requests": ...,
+}
 
-Returns
-[BatchEvaluateFeatureResponseTypeDef](./type_defs.md#batchevaluatefeatureresponsetypedef).
+parent.batch_evaluate_feature(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchEvaluateFeatureRequestRequestTypeDef](./type_defs.md#batchevaluatefeaturerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("evidently").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("evidently").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.can_paginate)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_experiment"></a>
-
-### create_experiment
+### create\_experiment
 
 Creates an Evidently *experiment*.
 
-Type annotations for `boto3.client("evidently").create_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").create_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.create_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_experiment)
+```python title="Method definition"
+def create_experiment(
+    self,
+    *,
+    metricGoals: Sequence[MetricGoalConfigTypeDef],  # (1)
+    name: str,
+    project: str,
+    treatments: Sequence[TreatmentConfigTypeDef],  # (2)
+    description: str = ...,
+    onlineAbConfig: OnlineAbConfigTypeDef = ...,  # (3)
+    randomizationSalt: str = ...,
+    samplingRate: int = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateExperimentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateExperimentRequestRequestTypeDef](./type_defs.md#createexperimentrequestrequesttypedef).
+1. See [:material-code-braces: MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef) 
+2. See [:material-code-braces: TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef) 
+3. See [:material-code-braces: OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef) 
+4. See [:material-code-braces: CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricGoals`:
-  `Sequence`\[[MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef)\]
-  *(required)*
-- `name`: `str` *(required)*
-- `project`: `str` *(required)*
-- `treatments`:
-  `Sequence`\[[TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)\]
-  *(required)*
-- `description`: `str`
-- `onlineAbConfig`:
-  [OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef)
-- `randomizationSalt`: `str`
-- `samplingRate`: `int`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateExperimentRequestRequestTypeDef = {  # (1)
+    "metricGoals": ...,
+    "name": ...,
+    "project": ...,
+    "treatments": ...,
+}
 
-Returns
-[CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
+parent.create_experiment(**kwargs)
+```
 
-<a id="create\_feature"></a>
+1. See [:material-code-braces: CreateExperimentRequestRequestTypeDef](./type_defs.md#createexperimentrequestrequesttypedef) 
 
-### create_feature
+### create\_feature
 
 Creates an Evidently *feature* that you want to launch or test.
 
-Type annotations for `boto3.client("evidently").create_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").create_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.create_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_feature)
+```python title="Method definition"
+def create_feature(
+    self,
+    *,
+    name: str,
+    project: str,
+    variations: Sequence[VariationConfigTypeDef],  # (1)
+    defaultVariation: str = ...,
+    description: str = ...,
+    entityOverrides: Mapping[str, str] = ...,
+    evaluationStrategy: FeatureEvaluationStrategyType = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateFeatureResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateFeatureRequestRequestTypeDef](./type_defs.md#createfeaturerequestrequesttypedef).
+1. See [:material-code-braces: VariationConfigTypeDef](./type_defs.md#variationconfigtypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
+3. See [:material-code-braces: CreateFeatureResponseTypeDef](./type_defs.md#createfeatureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `project`: `str` *(required)*
-- `variations`:
-  `Sequence`\[[VariationConfigTypeDef](./type_defs.md#variationconfigtypedef)\]
-  *(required)*
-- `defaultVariation`: `str`
-- `description`: `str`
-- `entityOverrides`: `Mapping`\[`str`, `str`\]
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFeatureRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "project": ...,
+    "variations": ...,
+}
 
-Returns
-[CreateFeatureResponseTypeDef](./type_defs.md#createfeatureresponsetypedef).
+parent.create_feature(**kwargs)
+```
 
-<a id="create\_launch"></a>
+1. See [:material-code-braces: CreateFeatureRequestRequestTypeDef](./type_defs.md#createfeaturerequestrequesttypedef) 
 
-### create_launch
+### create\_launch
 
 Creates a *launch* of a given feature.
 
-Type annotations for `boto3.client("evidently").create_launch` method.
+Type annotations and code completion for `#!python boto3.client("evidently").create_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.create_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_launch)
+```python title="Method definition"
+def create_launch(
+    self,
+    *,
+    groups: Sequence[LaunchGroupConfigTypeDef],  # (1)
+    name: str,
+    project: str,
+    description: str = ...,
+    metricMonitors: Sequence[MetricMonitorConfigTypeDef] = ...,  # (2)
+    randomizationSalt: str = ...,
+    scheduledSplitsConfig: ScheduledSplitsLaunchConfigTypeDef = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+) -> CreateLaunchResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateLaunchRequestRequestTypeDef](./type_defs.md#createlaunchrequestrequesttypedef).
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
+4. See [:material-code-braces: CreateLaunchResponseTypeDef](./type_defs.md#createlaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `groups`:
-  `Sequence`\[[LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef)\]
-  *(required)*
-- `name`: `str` *(required)*
-- `project`: `str` *(required)*
-- `description`: `str`
-- `metricMonitors`:
-  `Sequence`\[[MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef)\]
-- `randomizationSalt`: `str`
-- `scheduledSplitsConfig`:
-  [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateLaunchRequestRequestTypeDef = {  # (1)
+    "groups": ...,
+    "name": ...,
+    "project": ...,
+}
 
-Returns
-[CreateLaunchResponseTypeDef](./type_defs.md#createlaunchresponsetypedef).
+parent.create_launch(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreateLaunchRequestRequestTypeDef](./type_defs.md#createlaunchrequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates a project, which is the logical object in Evidently that can contain
 features, launches, and experiments.
 
-Type annotations for `boto3.client("evidently").create_project` method.
+Type annotations and code completion for `#!python boto3.client("evidently").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_project)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    name: str,
+    dataDelivery: ProjectDataDeliveryConfigTypeDef = ...,  # (1)
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateProjectResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef) 
+2. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `dataDelivery`:
-  [ProjectDataDeliveryConfigTypeDef](./type_defs.md#projectdatadeliveryconfigtypedef)
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="delete\_experiment"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### delete_experiment
+### delete\_experiment
 
 Deletes an Evidently experiment.
 
-Type annotations for `boto3.client("evidently").delete_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").delete_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.delete_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_experiment)
+```python title="Method definition"
+def delete_experiment(
+    self,
+    *,
+    experiment: str,
+    project: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteExperimentRequestRequestTypeDef](./type_defs.md#deleteexperimentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `experiment`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExperimentRequestRequestTypeDef = {  # (1)
+    "experiment": ...,
+    "project": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_experiment(**kwargs)
+```
 
-<a id="delete\_feature"></a>
+1. See [:material-code-braces: DeleteExperimentRequestRequestTypeDef](./type_defs.md#deleteexperimentrequestrequesttypedef) 
 
-### delete_feature
+### delete\_feature
 
 Deletes an Evidently feature.
 
-Type annotations for `boto3.client("evidently").delete_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").delete_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.delete_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_feature)
+```python title="Method definition"
+def delete_feature(
+    self,
+    *,
+    feature: str,
+    project: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFeatureRequestRequestTypeDef](./type_defs.md#deletefeaturerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `feature`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFeatureRequestRequestTypeDef = {  # (1)
+    "feature": ...,
+    "project": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_feature(**kwargs)
+```
 
-<a id="delete\_launch"></a>
+1. See [:material-code-braces: DeleteFeatureRequestRequestTypeDef](./type_defs.md#deletefeaturerequestrequesttypedef) 
 
-### delete_launch
+### delete\_launch
 
 Deletes an Evidently launch.
 
-Type annotations for `boto3.client("evidently").delete_launch` method.
+Type annotations and code completion for `#!python boto3.client("evidently").delete_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.delete_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_launch)
+```python title="Method definition"
+def delete_launch(
+    self,
+    *,
+    launch: str,
+    project: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLaunchRequestRequestTypeDef](./type_defs.md#deletelaunchrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `launch`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLaunchRequestRequestTypeDef = {  # (1)
+    "launch": ...,
+    "project": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_launch(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeleteLaunchRequestRequestTypeDef](./type_defs.md#deletelaunchrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes an Evidently project.
 
-Type annotations for `boto3.client("evidently").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("evidently").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_project)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    project: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_project(**kwargs)
+```
 
-<a id="evaluate\_feature"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### evaluate_feature
+### evaluate\_feature
 
 This operation assigns a feature variation to one given user session.
 
-Type annotations for `boto3.client("evidently").evaluate_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").evaluate_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.evaluate_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.evaluate_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.evaluate_feature)
+```python title="Method definition"
+def evaluate_feature(
+    self,
+    *,
+    entityId: str,
+    feature: str,
+    project: str,
+    evaluationContext: str = ...,
+) -> EvaluateFeatureResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[EvaluateFeatureRequestRequestTypeDef](./type_defs.md#evaluatefeaturerequestrequesttypedef).
+1. See [:material-code-braces: EvaluateFeatureResponseTypeDef](./type_defs.md#evaluatefeatureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityId`: `str` *(required)*
-- `feature`: `str` *(required)*
-- `project`: `str` *(required)*
-- `evaluationContext`: `str`
+```python title="Usage example with kwargs"
+kwargs: EvaluateFeatureRequestRequestTypeDef = {  # (1)
+    "entityId": ...,
+    "feature": ...,
+    "project": ...,
+}
 
-Returns
-[EvaluateFeatureResponseTypeDef](./type_defs.md#evaluatefeatureresponsetypedef).
+parent.evaluate_feature(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EvaluateFeatureRequestRequestTypeDef](./type_defs.md#evaluatefeaturerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("evidently").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("evidently").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_experiment"></a>
-
-### get_experiment
+### get\_experiment
 
 Returns the details about one experiment.
 
-Type annotations for `boto3.client("evidently").get_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").get_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.get_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_experiment)
+```python title="Method definition"
+def get_experiment(
+    self,
+    *,
+    experiment: str,
+    project: str,
+) -> GetExperimentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExperimentRequestRequestTypeDef](./type_defs.md#getexperimentrequestrequesttypedef).
+1. See [:material-code-braces: GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `experiment`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExperimentRequestRequestTypeDef = {  # (1)
+    "experiment": ...,
+    "project": ...,
+}
 
-Returns
-[GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
+parent.get_experiment(**kwargs)
+```
 
-<a id="get\_experiment\_results"></a>
+1. See [:material-code-braces: GetExperimentRequestRequestTypeDef](./type_defs.md#getexperimentrequestrequesttypedef) 
 
-### get_experiment_results
+### get\_experiment\_results
 
 Retrieves the results of a running or completed experiment.
 
-Type annotations for `boto3.client("evidently").get_experiment_results` method.
+Type annotations and code completion for `#!python boto3.client("evidently").get_experiment_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_experiment_results)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.get_experiment_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_experiment_results)
+```python title="Method definition"
+def get_experiment_results(
+    self,
+    *,
+    experiment: str,
+    metricNames: Sequence[str],
+    project: str,
+    treatmentNames: Sequence[str],
+    baseStat: ExperimentBaseStatType = ...,  # (1)
+    endTime: Union[datetime, str] = ...,
+    period: int = ...,
+    reportNames: Sequence[ExperimentReportNameType] = ...,  # (2)
+    resultStats: Sequence[ExperimentResultRequestTypeType] = ...,  # (3)
+    startTime: Union[datetime, str] = ...,
+) -> GetExperimentResultsResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetExperimentResultsRequestRequestTypeDef](./type_defs.md#getexperimentresultsrequestrequesttypedef).
+1. See [:material-code-brackets: ExperimentBaseStatType](./literals.md#experimentbasestattype) 
+2. See [:material-code-brackets: ExperimentReportNameType](./literals.md#experimentreportnametype) 
+3. See [:material-code-brackets: ExperimentResultRequestTypeType](./literals.md#experimentresultrequesttypetype) 
+4. See [:material-code-braces: GetExperimentResultsResponseTypeDef](./type_defs.md#getexperimentresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `experiment`: `str` *(required)*
-- `metricNames`: `Sequence`\[`str`\] *(required)*
-- `project`: `str` *(required)*
-- `treatmentNames`: `Sequence`\[`str`\] *(required)*
-- `baseStat`: `Literal['Mean']` (see
-  [ExperimentBaseStatType](./literals.md#experimentbasestattype))
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `period`: `int`
-- `reportNames`: `Sequence`\[`Literal['BayesianInference']` (see
-  [ExperimentReportNameType](./literals.md#experimentreportnametype))\]
-- `resultStats`:
-  `Sequence`\[[ExperimentResultRequestTypeType](./literals.md#experimentresultrequesttypetype)\]
-- `startTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetExperimentResultsRequestRequestTypeDef = {  # (1)
+    "experiment": ...,
+    "metricNames": ...,
+    "project": ...,
+    "treatmentNames": ...,
+}
 
-Returns
-[GetExperimentResultsResponseTypeDef](./type_defs.md#getexperimentresultsresponsetypedef).
+parent.get_experiment_results(**kwargs)
+```
 
-<a id="get\_feature"></a>
+1. See [:material-code-braces: GetExperimentResultsRequestRequestTypeDef](./type_defs.md#getexperimentresultsrequestrequesttypedef) 
 
-### get_feature
+### get\_feature
 
 Returns the details about one feature.
 
-Type annotations for `boto3.client("evidently").get_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").get_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.get_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_feature)
+```python title="Method definition"
+def get_feature(
+    self,
+    *,
+    feature: str,
+    project: str,
+) -> GetFeatureResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFeatureRequestRequestTypeDef](./type_defs.md#getfeaturerequestrequesttypedef).
+1. See [:material-code-braces: GetFeatureResponseTypeDef](./type_defs.md#getfeatureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `feature`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFeatureRequestRequestTypeDef = {  # (1)
+    "feature": ...,
+    "project": ...,
+}
 
-Returns [GetFeatureResponseTypeDef](./type_defs.md#getfeatureresponsetypedef).
+parent.get_feature(**kwargs)
+```
 
-<a id="get\_launch"></a>
+1. See [:material-code-braces: GetFeatureRequestRequestTypeDef](./type_defs.md#getfeaturerequestrequesttypedef) 
 
-### get_launch
-
-Returns the details about one launch.
-
-Type annotations for `boto3.client("evidently").get_launch` method.
-
-Boto3 documentation:
-[CloudWatchEvidently.Client.get_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_launch)
-
-Arguments mapping described in
-[GetLaunchRequestRequestTypeDef](./type_defs.md#getlaunchrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `launch`: `str` *(required)*
-- `project`: `str` *(required)*
-
-Returns [GetLaunchResponseTypeDef](./type_defs.md#getlaunchresponsetypedef).
-
-<a id="get\_project"></a>
-
-### get_project
+### get\_launch
 
 Returns the details about one launch.
 
-Type annotations for `boto3.client("evidently").get_project` method.
+Type annotations and code completion for `#!python boto3.client("evidently").get_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.get_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_project)
+```python title="Method definition"
+def get_launch(
+    self,
+    *,
+    launch: str,
+    project: str,
+) -> GetLaunchResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef).
+1. See [:material-code-braces: GetLaunchResponseTypeDef](./type_defs.md#getlaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLaunchRequestRequestTypeDef = {  # (1)
+    "launch": ...,
+    "project": ...,
+}
 
-Returns [GetProjectResponseTypeDef](./type_defs.md#getprojectresponsetypedef).
+parent.get_launch(**kwargs)
+```
 
-<a id="list\_experiments"></a>
+1. See [:material-code-braces: GetLaunchRequestRequestTypeDef](./type_defs.md#getlaunchrequestrequesttypedef) 
 
-### list_experiments
+### get\_project
+
+Returns the details about one launch.
+
+Type annotations and code completion for `#!python boto3.client("evidently").get_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.get_project)
+
+```python title="Method definition"
+def get_project(
+    self,
+    *,
+    project: str,
+) -> GetProjectResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetProjectResponseTypeDef](./type_defs.md#getprojectresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetProjectRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
+
+parent.get_project(**kwargs)
+```
+
+1. See [:material-code-braces: GetProjectRequestRequestTypeDef](./type_defs.md#getprojectrequestrequesttypedef) 
+
+### list\_experiments
 
 Returns configuration details about all the experiments in the specified
 project.
 
-Type annotations for `boto3.client("evidently").list_experiments` method.
+Type annotations and code completion for `#!python boto3.client("evidently").list_experiments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_experiments)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.list_experiments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_experiments)
+```python title="Method definition"
+def list_experiments(
+    self,
+    *,
+    project: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    status: ExperimentStatusType = ...,  # (1)
+) -> ListExperimentsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef).
+1. See [:material-code-brackets: ExperimentStatusType](./literals.md#experimentstatustype) 
+2. See [:material-code-braces: ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListExperimentsRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns
-[ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
+parent.list_experiments(**kwargs)
+```
 
-<a id="list\_features"></a>
+1. See [:material-code-braces: ListExperimentsRequestRequestTypeDef](./type_defs.md#listexperimentsrequestrequesttypedef) 
 
-### list_features
+### list\_features
 
 Returns configuration details about all the features in the specified project.
 
-Type annotations for `boto3.client("evidently").list_features` method.
+Type annotations and code completion for `#!python boto3.client("evidently").list_features` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_features)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.list_features](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_features)
+```python title="Method definition"
+def list_features(
+    self,
+    *,
+    project: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFeaturesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFeaturesRequestRequestTypeDef](./type_defs.md#listfeaturesrequestrequesttypedef).
+1. See [:material-code-braces: ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFeaturesRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns
-[ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef).
+parent.list_features(**kwargs)
+```
 
-<a id="list\_launches"></a>
+1. See [:material-code-braces: ListFeaturesRequestRequestTypeDef](./type_defs.md#listfeaturesrequestrequesttypedef) 
 
-### list_launches
+### list\_launches
 
 Returns configuration details about all the launches in the specified project.
 
-Type annotations for `boto3.client("evidently").list_launches` method.
+Type annotations and code completion for `#!python boto3.client("evidently").list_launches` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_launches)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.list_launches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_launches)
+```python title="Method definition"
+def list_launches(
+    self,
+    *,
+    project: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    status: LaunchStatusType = ...,  # (1)
+) -> ListLaunchesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListLaunchesRequestRequestTypeDef](./type_defs.md#listlaunchesrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchStatusType](./literals.md#launchstatustype) 
+2. See [:material-code-braces: ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `status`: [LaunchStatusType](./literals.md#launchstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListLaunchesRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns
-[ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef).
+parent.list_launches(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListLaunchesRequestRequestTypeDef](./type_defs.md#listlaunchesrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Returns configuration details about all the projects in the current Region in
 your account.
 
-Type annotations for `boto3.client("evidently").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("evidently").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_projects)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListProjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Displays the tags associated with an Evidently resource.
 
-Type annotations for `boto3.client("evidently").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("evidently").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_project\_events"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_project_events
+### put\_project\_events
 
 Sends performance events to Evidently.
 
-Type annotations for `boto3.client("evidently").put_project_events` method.
+Type annotations and code completion for `#!python boto3.client("evidently").put_project_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.put_project_events)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.put_project_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.put_project_events)
+```python title="Method definition"
+def put_project_events(
+    self,
+    *,
+    events: Sequence[EventTypeDef],  # (1)
+    project: str,
+) -> PutProjectEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutProjectEventsRequestRequestTypeDef](./type_defs.md#putprojecteventsrequestrequesttypedef).
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: PutProjectEventsResponseTypeDef](./type_defs.md#putprojecteventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-  *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutProjectEventsRequestRequestTypeDef = {  # (1)
+    "events": ...,
+    "project": ...,
+}
 
-Returns
-[PutProjectEventsResponseTypeDef](./type_defs.md#putprojecteventsresponsetypedef).
+parent.put_project_events(**kwargs)
+```
 
-<a id="start\_experiment"></a>
+1. See [:material-code-braces: PutProjectEventsRequestRequestTypeDef](./type_defs.md#putprojecteventsrequestrequesttypedef) 
 
-### start_experiment
+### start\_experiment
 
 Starts an existing experiment.
 
-Type annotations for `boto3.client("evidently").start_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").start_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.start_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.start_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.start_experiment)
+```python title="Method definition"
+def start_experiment(
+    self,
+    *,
+    analysisCompleteTime: Union[datetime, str],
+    experiment: str,
+    project: str,
+) -> StartExperimentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef).
+1. See [:material-code-braces: StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `analysisCompleteTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `experiment`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartExperimentRequestRequestTypeDef = {  # (1)
+    "analysisCompleteTime": ...,
+    "experiment": ...,
+    "project": ...,
+}
 
-Returns
-[StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
+parent.start_experiment(**kwargs)
+```
 
-<a id="start\_launch"></a>
+1. See [:material-code-braces: StartExperimentRequestRequestTypeDef](./type_defs.md#startexperimentrequestrequesttypedef) 
 
-### start_launch
+### start\_launch
 
 Starts an existing launch.
 
-Type annotations for `boto3.client("evidently").start_launch` method.
+Type annotations and code completion for `#!python boto3.client("evidently").start_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.start_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.start_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.start_launch)
+```python title="Method definition"
+def start_launch(
+    self,
+    *,
+    launch: str,
+    project: str,
+) -> StartLaunchResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartLaunchRequestRequestTypeDef](./type_defs.md#startlaunchrequestrequesttypedef).
+1. See [:material-code-braces: StartLaunchResponseTypeDef](./type_defs.md#startlaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launch`: `str` *(required)*
-- `project`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartLaunchRequestRequestTypeDef = {  # (1)
+    "launch": ...,
+    "project": ...,
+}
 
-Returns
-[StartLaunchResponseTypeDef](./type_defs.md#startlaunchresponsetypedef).
+parent.start_launch(**kwargs)
+```
 
-<a id="stop\_experiment"></a>
+1. See [:material-code-braces: StartLaunchRequestRequestTypeDef](./type_defs.md#startlaunchrequestrequesttypedef) 
 
-### stop_experiment
+### stop\_experiment
 
 Stops an experiment that is currently running.
 
-Type annotations for `boto3.client("evidently").stop_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").stop_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.stop_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.stop_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.stop_experiment)
+```python title="Method definition"
+def stop_experiment(
+    self,
+    *,
+    experiment: str,
+    project: str,
+    desiredState: ExperimentStopDesiredStateType = ...,  # (1)
+    reason: str = ...,
+) -> StopExperimentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef).
+1. See [:material-code-brackets: ExperimentStopDesiredStateType](./literals.md#experimentstopdesiredstatetype) 
+2. See [:material-code-braces: StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `experiment`: `str` *(required)*
-- `project`: `str` *(required)*
-- `desiredState`:
-  [ExperimentStopDesiredStateType](./literals.md#experimentstopdesiredstatetype)
-- `reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopExperimentRequestRequestTypeDef = {  # (1)
+    "experiment": ...,
+    "project": ...,
+}
 
-Returns
-[StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
+parent.stop_experiment(**kwargs)
+```
 
-<a id="stop\_launch"></a>
+1. See [:material-code-braces: StopExperimentRequestRequestTypeDef](./type_defs.md#stopexperimentrequestrequesttypedef) 
 
-### stop_launch
+### stop\_launch
 
 Stops a launch that is currently running.
 
-Type annotations for `boto3.client("evidently").stop_launch` method.
+Type annotations and code completion for `#!python boto3.client("evidently").stop_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.stop_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.stop_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.stop_launch)
+```python title="Method definition"
+def stop_launch(
+    self,
+    *,
+    launch: str,
+    project: str,
+    desiredState: LaunchStopDesiredStateType = ...,  # (1)
+    reason: str = ...,
+) -> StopLaunchResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StopLaunchRequestRequestTypeDef](./type_defs.md#stoplaunchrequestrequesttypedef).
+1. See [:material-code-brackets: LaunchStopDesiredStateType](./literals.md#launchstopdesiredstatetype) 
+2. See [:material-code-braces: StopLaunchResponseTypeDef](./type_defs.md#stoplaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launch`: `str` *(required)*
-- `project`: `str` *(required)*
-- `desiredState`:
-  [LaunchStopDesiredStateType](./literals.md#launchstopdesiredstatetype)
-- `reason`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopLaunchRequestRequestTypeDef = {  # (1)
+    "launch": ...,
+    "project": ...,
+}
 
-Returns [StopLaunchResponseTypeDef](./type_defs.md#stoplaunchresponsetypedef).
+parent.stop_launch(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopLaunchRequestRequestTypeDef](./type_defs.md#stoplaunchrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
-Assigns one or more tags (key-value pairs) to the specified CloudWatch
-Evidently resource.
+Assigns one or more tags (key-value pairs) to the specified CloudWatch Evidently
+resource.
 
-Type annotations for `boto3.client("evidently").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("evidently").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.tag_resource)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("evidently").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("evidently").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.untag_resource)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_experiment"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_experiment
+### update\_experiment
 
 Updates an Evidently experiment.
 
-Type annotations for `boto3.client("evidently").update_experiment` method.
+Type annotations and code completion for `#!python boto3.client("evidently").update_experiment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_experiment)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.update_experiment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_experiment)
+```python title="Method definition"
+def update_experiment(
+    self,
+    *,
+    experiment: str,
+    project: str,
+    description: str = ...,
+    metricGoals: Sequence[MetricGoalConfigTypeDef] = ...,  # (1)
+    onlineAbConfig: OnlineAbConfigTypeDef = ...,  # (2)
+    randomizationSalt: str = ...,
+    samplingRate: int = ...,
+    treatments: Sequence[TreatmentConfigTypeDef] = ...,  # (3)
+) -> UpdateExperimentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateExperimentRequestRequestTypeDef](./type_defs.md#updateexperimentrequestrequesttypedef).
+1. See [:material-code-braces: MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef) 
+2. See [:material-code-braces: OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef) 
+3. See [:material-code-braces: TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef) 
+4. See [:material-code-braces: UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `experiment`: `str` *(required)*
-- `project`: `str` *(required)*
-- `description`: `str`
-- `metricGoals`:
-  `Sequence`\[[MetricGoalConfigTypeDef](./type_defs.md#metricgoalconfigtypedef)\]
-- `onlineAbConfig`:
-  [OnlineAbConfigTypeDef](./type_defs.md#onlineabconfigtypedef)
-- `randomizationSalt`: `str`
-- `samplingRate`: `int`
-- `treatments`:
-  `Sequence`\[[TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateExperimentRequestRequestTypeDef = {  # (1)
+    "experiment": ...,
+    "project": ...,
+}
 
-Returns
-[UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
+parent.update_experiment(**kwargs)
+```
 
-<a id="update\_feature"></a>
+1. See [:material-code-braces: UpdateExperimentRequestRequestTypeDef](./type_defs.md#updateexperimentrequestrequesttypedef) 
 
-### update_feature
+### update\_feature
 
 Updates an existing feature.
 
-Type annotations for `boto3.client("evidently").update_feature` method.
+Type annotations and code completion for `#!python boto3.client("evidently").update_feature` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_feature)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.update_feature](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_feature)
+```python title="Method definition"
+def update_feature(
+    self,
+    *,
+    feature: str,
+    project: str,
+    addOrUpdateVariations: Sequence[VariationConfigTypeDef] = ...,  # (1)
+    defaultVariation: str = ...,
+    description: str = ...,
+    entityOverrides: Mapping[str, str] = ...,
+    evaluationStrategy: FeatureEvaluationStrategyType = ...,  # (2)
+    removeVariations: Sequence[str] = ...,
+) -> UpdateFeatureResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFeatureRequestRequestTypeDef](./type_defs.md#updatefeaturerequestrequesttypedef).
+1. See [:material-code-braces: VariationConfigTypeDef](./type_defs.md#variationconfigtypedef) 
+2. See [:material-code-brackets: FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype) 
+3. See [:material-code-braces: UpdateFeatureResponseTypeDef](./type_defs.md#updatefeatureresponsetypedef) 
 
-Keyword-only arguments:
 
-- `feature`: `str` *(required)*
-- `project`: `str` *(required)*
-- `addOrUpdateVariations`:
-  `Sequence`\[[VariationConfigTypeDef](./type_defs.md#variationconfigtypedef)\]
-- `defaultVariation`: `str`
-- `description`: `str`
-- `entityOverrides`: `Mapping`\[`str`, `str`\]
-- `evaluationStrategy`:
-  [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
-- `removeVariations`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFeatureRequestRequestTypeDef = {  # (1)
+    "feature": ...,
+    "project": ...,
+}
 
-Returns
-[UpdateFeatureResponseTypeDef](./type_defs.md#updatefeatureresponsetypedef).
+parent.update_feature(**kwargs)
+```
 
-<a id="update\_launch"></a>
+1. See [:material-code-braces: UpdateFeatureRequestRequestTypeDef](./type_defs.md#updatefeaturerequestrequesttypedef) 
 
-### update_launch
+### update\_launch
 
 Updates a launch of a given feature.
 
-Type annotations for `boto3.client("evidently").update_launch` method.
+Type annotations and code completion for `#!python boto3.client("evidently").update_launch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_launch)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.update_launch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_launch)
+```python title="Method definition"
+def update_launch(
+    self,
+    *,
+    launch: str,
+    project: str,
+    description: str = ...,
+    groups: Sequence[LaunchGroupConfigTypeDef] = ...,  # (1)
+    metricMonitors: Sequence[MetricMonitorConfigTypeDef] = ...,  # (2)
+    randomizationSalt: str = ...,
+    scheduledSplitsConfig: ScheduledSplitsLaunchConfigTypeDef = ...,  # (3)
+) -> UpdateLaunchResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLaunchRequestRequestTypeDef](./type_defs.md#updatelaunchrequestrequesttypedef).
+1. See [:material-code-braces: LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef) 
+2. See [:material-code-braces: MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef) 
+3. See [:material-code-braces: ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef) 
+4. See [:material-code-braces: UpdateLaunchResponseTypeDef](./type_defs.md#updatelaunchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `launch`: `str` *(required)*
-- `project`: `str` *(required)*
-- `description`: `str`
-- `groups`:
-  `Sequence`\[[LaunchGroupConfigTypeDef](./type_defs.md#launchgroupconfigtypedef)\]
-- `metricMonitors`:
-  `Sequence`\[[MetricMonitorConfigTypeDef](./type_defs.md#metricmonitorconfigtypedef)\]
-- `randomizationSalt`: `str`
-- `scheduledSplitsConfig`:
-  [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateLaunchRequestRequestTypeDef = {  # (1)
+    "launch": ...,
+    "project": ...,
+}
 
-Returns
-[UpdateLaunchResponseTypeDef](./type_defs.md#updatelaunchresponsetypedef).
+parent.update_launch(**kwargs)
+```
 
-<a id="update\_project"></a>
+1. See [:material-code-braces: UpdateLaunchRequestRequestTypeDef](./type_defs.md#updatelaunchrequestrequesttypedef) 
 
-### update_project
+### update\_project
 
 Updates the description of an existing project.
 
-Type annotations for `boto3.client("evidently").update_project` method.
+Type annotations and code completion for `#!python boto3.client("evidently").update_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_project)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.update_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_project)
+```python title="Method definition"
+def update_project(
+    self,
+    *,
+    project: str,
+    description: str = ...,
+) -> UpdateProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef).
+1. See [:material-code-braces: UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns
-[UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
+parent.update_project(**kwargs)
+```
 
-<a id="update\_project\_data\_delivery"></a>
+1. See [:material-code-braces: UpdateProjectRequestRequestTypeDef](./type_defs.md#updateprojectrequestrequesttypedef) 
 
-### update_project_data_delivery
+### update\_project\_data\_delivery
 
 Updates the data storage options for this project.
 
-Type annotations for `boto3.client("evidently").update_project_data_delivery`
-method.
+Type annotations and code completion for `#!python boto3.client("evidently").update_project_data_delivery` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_project_data_delivery)
 
-Boto3 documentation:
-[CloudWatchEvidently.Client.update_project_data_delivery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently.Client.update_project_data_delivery)
+```python title="Method definition"
+def update_project_data_delivery(
+    self,
+    *,
+    project: str,
+    cloudWatchLogs: CloudWatchLogsDestinationConfigTypeDef = ...,  # (1)
+    s3Destination: S3DestinationConfigTypeDef = ...,  # (2)
+) -> UpdateProjectDataDeliveryResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProjectDataDeliveryRequestRequestTypeDef](./type_defs.md#updateprojectdatadeliveryrequestrequesttypedef).
+1. See [:material-code-braces: CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef) 
+2. See [:material-code-braces: S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef) 
+3. See [:material-code-braces: UpdateProjectDataDeliveryResponseTypeDef](./type_defs.md#updateprojectdatadeliveryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `project`: `str` *(required)*
-- `cloudWatchLogs`:
-  [CloudWatchLogsDestinationConfigTypeDef](./type_defs.md#cloudwatchlogsdestinationconfigtypedef)
-- `s3Destination`:
-  [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateProjectDataDeliveryRequestRequestTypeDef = {  # (1)
+    "project": ...,
+}
 
-Returns
-[UpdateProjectDataDeliveryResponseTypeDef](./type_defs.md#updateprojectdatadeliveryresponsetypedef).
+parent.update_project_data_delivery(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateProjectDataDeliveryRequestRequestTypeDef](./type_defs.md#updateprojectdatadeliveryrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("evidently").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("evidently").get_paginator` method with overloads.
 
-- `client.get_paginator("list_experiments")` ->
-  [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
-- `client.get_paginator("list_features")` ->
-  [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
-- `client.get_paginator("list_launches")` ->
-  [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_experiments")` -> [ListExperimentsPaginator](./paginators.md#listexperimentspaginator)
+- `client.get_paginator("list_features")` -> [ListFeaturesPaginator](./paginators.md#listfeaturespaginator)
+- `client.get_paginator("list_launches")` -> [ListLaunchesPaginator](./paginators.md#listlaunchespaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+
+

@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-ssmincidents-module"></a>
-
-# Type annotations for boto3 SSMIncidents module
+#  SSMIncidents module
 
 > [Index](../README.md) > SSMIncidents
 
-Auto-generated documentation for
-[SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
-type annotations stubs module
-[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+!!! note ""
 
-- [Type annotations for boto3 SSMIncidents module](#type-annotations-for-boto3-ssmincidents-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SSMIncidentsClient](#ssmincidentsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
+    type annotations stubs module [mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SSMIncidents`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ssm-incidents]'
 python -m pip install mypy-boto3-ssm-incidents
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,90 +42,37 @@ python -m pip install mypy-boto3-ssm-incidents
 python -m pip uninstall -y mypy-boto3-ssm-incidents
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ssmincidentsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SSMIncidentsClient
 
-Type annotations for `boto3.client("ssm-incidents")` as
-[SSMIncidentsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ssm-incidents")` as [SSMIncidentsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
+
+def get_client() -> SSMIncidentsClient:
+    return Session().cleint("ssm-incidents")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_replication_set](./client.md#create_replication_set)
-- [create_response_plan](./client.md#create_response_plan)
-- [create_timeline_event](./client.md#create_timeline_event)
-- [delete_incident_record](./client.md#delete_incident_record)
-- [delete_replication_set](./client.md#delete_replication_set)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_response_plan](./client.md#delete_response_plan)
-- [delete_timeline_event](./client.md#delete_timeline_event)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_incident_record](./client.md#get_incident_record)
-- [get_paginator](./client.md#get_paginator)
-- [get_replication_set](./client.md#get_replication_set)
-- [get_resource_policies](./client.md#get_resource_policies)
-- [get_response_plan](./client.md#get_response_plan)
-- [get_timeline_event](./client.md#get_timeline_event)
-- [get_waiter](./client.md#get_waiter)
-- [list_incident_records](./client.md#list_incident_records)
-- [list_related_items](./client.md#list_related_items)
-- [list_replication_sets](./client.md#list_replication_sets)
-- [list_response_plans](./client.md#list_response_plans)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_timeline_events](./client.md#list_timeline_events)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [start_incident](./client.md#start_incident)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_deletion_protection](./client.md#update_deletion_protection)
-- [update_incident_record](./client.md#update_incident_record)
-- [update_related_items](./client.md#update_related_items)
-- [update_replication_set](./client.md#update_replication_set)
-- [update_response_plan](./client.md#update_response_plan)
-- [update_timeline_event](./client.md#update_timeline_event)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SSMIncidentsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ssm-incidents").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ssm-incidents").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator, ...
+from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator
+
+def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
+    return Session().client("ssm-incidents").get_paginator("get_resource_policies"))
 ```
 
 - [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
@@ -158,32 +82,41 @@ from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator, ...
 - [ListResponsePlansPaginator](./paginators.md#listresponseplanspaginator)
 - [ListTimelineEventsPaginator](./paginators.md#listtimelineeventspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("ssm-incidents").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("ssm-incidents").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter, ...
+from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter
+
+def get_wait_for_replication_set_active_waiter() -> WaitForReplicationSetActiveWaiter:
+    return Session().client("ssm-incidents").get_waiter("wait_for_replication_set_active")
 ```
 
 - [WaitForReplicationSetActiveWaiter](./waiters.md#waitforreplicationsetactivewaiter)
 - [WaitForReplicationSetDeletedWaiter](./waiters.md#waitforreplicationsetdeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName
 
-```python
-from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName, ...
+def get_value() -> GetResourcePoliciesPaginatorName:
+    return "get_resource_policies"
 ```
 
 - [GetResourcePoliciesPaginatorName](./literals.md#getresourcepoliciespaginatorname)
@@ -206,18 +139,22 @@ from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName, 
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "ssmAutomation": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -243,7 +180,10 @@ from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef, ...
 - [GetIncidentRecordInputRequestTypeDef](./type_defs.md#getincidentrecordinputrequesttypedef)
 - [GetIncidentRecordOutputTypeDef](./type_defs.md#getincidentrecordoutputtypedef)
 - [GetReplicationSetInputRequestTypeDef](./type_defs.md#getreplicationsetinputrequesttypedef)
+- [GetReplicationSetInputWaitForReplicationSetActiveWaitTypeDef](./type_defs.md#getreplicationsetinputwaitforreplicationsetactivewaittypedef)
+- [GetReplicationSetInputWaitForReplicationSetDeletedWaitTypeDef](./type_defs.md#getreplicationsetinputwaitforreplicationsetdeletedwaittypedef)
 - [GetReplicationSetOutputTypeDef](./type_defs.md#getreplicationsetoutputtypedef)
+- [GetResourcePoliciesInputGetResourcePoliciesPaginateTypeDef](./type_defs.md#getresourcepoliciesinputgetresourcepoliciespaginatetypedef)
 - [GetResourcePoliciesInputRequestTypeDef](./type_defs.md#getresourcepoliciesinputrequesttypedef)
 - [GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef)
 - [GetResponsePlanInputRequestTypeDef](./type_defs.md#getresponseplaninputrequesttypedef)
@@ -256,16 +196,21 @@ from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef, ...
 - [IncidentTemplateTypeDef](./type_defs.md#incidenttemplatetypedef)
 - [ItemIdentifierTypeDef](./type_defs.md#itemidentifiertypedef)
 - [ItemValueTypeDef](./type_defs.md#itemvaluetypedef)
+- [ListIncidentRecordsInputListIncidentRecordsPaginateTypeDef](./type_defs.md#listincidentrecordsinputlistincidentrecordspaginatetypedef)
 - [ListIncidentRecordsInputRequestTypeDef](./type_defs.md#listincidentrecordsinputrequesttypedef)
 - [ListIncidentRecordsOutputTypeDef](./type_defs.md#listincidentrecordsoutputtypedef)
+- [ListRelatedItemsInputListRelatedItemsPaginateTypeDef](./type_defs.md#listrelateditemsinputlistrelateditemspaginatetypedef)
 - [ListRelatedItemsInputRequestTypeDef](./type_defs.md#listrelateditemsinputrequesttypedef)
 - [ListRelatedItemsOutputTypeDef](./type_defs.md#listrelateditemsoutputtypedef)
+- [ListReplicationSetsInputListReplicationSetsPaginateTypeDef](./type_defs.md#listreplicationsetsinputlistreplicationsetspaginatetypedef)
 - [ListReplicationSetsInputRequestTypeDef](./type_defs.md#listreplicationsetsinputrequesttypedef)
 - [ListReplicationSetsOutputTypeDef](./type_defs.md#listreplicationsetsoutputtypedef)
+- [ListResponsePlansInputListResponsePlansPaginateTypeDef](./type_defs.md#listresponseplansinputlistresponseplanspaginatetypedef)
 - [ListResponsePlansInputRequestTypeDef](./type_defs.md#listresponseplansinputrequesttypedef)
 - [ListResponsePlansOutputTypeDef](./type_defs.md#listresponseplansoutputtypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTimelineEventsInputListTimelineEventsPaginateTypeDef](./type_defs.md#listtimelineeventsinputlisttimelineeventspaginatetypedef)
 - [ListTimelineEventsInputRequestTypeDef](./type_defs.md#listtimelineeventsinputrequesttypedef)
 - [ListTimelineEventsOutputTypeDef](./type_defs.md#listtimelineeventsoutputtypedef)
 - [NotificationTargetItemTypeDef](./type_defs.md#notificationtargetitemtypedef)
@@ -295,3 +240,4 @@ from mypy_boto3_ssm_incidents.type_defs import ActionTypeDef, ...
 - [UpdateResponsePlanInputRequestTypeDef](./type_defs.md#updateresponseplaninputrequesttypedef)
 - [UpdateTimelineEventInputRequestTypeDef](./type_defs.md#updatetimelineeventinputrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

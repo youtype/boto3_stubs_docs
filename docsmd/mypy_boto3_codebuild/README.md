@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-codebuild-module"></a>
-
-# Type annotations for boto3 CodeBuild module
+#  CodeBuild module
 
 > [Index](../README.md) > CodeBuild
 
-Auto-generated documentation for
-[CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
-type annotations stubs module
-[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+!!! note ""
 
-- [Type annotations for boto3 CodeBuild module](#type-annotations-for-boto3-codebuild-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CodeBuildClient](#codebuildclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
+    type annotations stubs module [mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CodeBuild`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[codebuild]'
 python -m pip install mypy-boto3-codebuild
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,103 +42,37 @@ python -m pip install mypy-boto3-codebuild
 python -m pip uninstall -y mypy-boto3-codebuild
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="codebuildclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CodeBuildClient
 
-Type annotations for `boto3.client("codebuild")` as
-[CodeBuildClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("codebuild")` as [CodeBuildClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_codebuild.client import CodeBuildClient
+
+def get_client() -> CodeBuildClient:
+    return Session().cleint("codebuild")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_delete_builds](./client.md#batch_delete_builds)
-- [batch_get_build_batches](./client.md#batch_get_build_batches)
-- [batch_get_builds](./client.md#batch_get_builds)
-- [batch_get_projects](./client.md#batch_get_projects)
-- [batch_get_report_groups](./client.md#batch_get_report_groups)
-- [batch_get_reports](./client.md#batch_get_reports)
-- [can_paginate](./client.md#can_paginate)
-- [create_project](./client.md#create_project)
-- [create_report_group](./client.md#create_report_group)
-- [create_webhook](./client.md#create_webhook)
-- [delete_build_batch](./client.md#delete_build_batch)
-- [delete_project](./client.md#delete_project)
-- [delete_report](./client.md#delete_report)
-- [delete_report_group](./client.md#delete_report_group)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_source_credentials](./client.md#delete_source_credentials)
-- [delete_webhook](./client.md#delete_webhook)
-- [describe_code_coverages](./client.md#describe_code_coverages)
-- [describe_test_cases](./client.md#describe_test_cases)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_report_group_trend](./client.md#get_report_group_trend)
-- [get_resource_policy](./client.md#get_resource_policy)
-- [import_source_credentials](./client.md#import_source_credentials)
-- [invalidate_project_cache](./client.md#invalidate_project_cache)
-- [list_build_batches](./client.md#list_build_batches)
-- [list_build_batches_for_project](./client.md#list_build_batches_for_project)
-- [list_builds](./client.md#list_builds)
-- [list_builds_for_project](./client.md#list_builds_for_project)
-- [list_curated_environment_images](./client.md#list_curated_environment_images)
-- [list_projects](./client.md#list_projects)
-- [list_report_groups](./client.md#list_report_groups)
-- [list_reports](./client.md#list_reports)
-- [list_reports_for_report_group](./client.md#list_reports_for_report_group)
-- [list_shared_projects](./client.md#list_shared_projects)
-- [list_shared_report_groups](./client.md#list_shared_report_groups)
-- [list_source_credentials](./client.md#list_source_credentials)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [retry_build](./client.md#retry_build)
-- [retry_build_batch](./client.md#retry_build_batch)
-- [start_build](./client.md#start_build)
-- [start_build_batch](./client.md#start_build_batch)
-- [stop_build](./client.md#stop_build)
-- [stop_build_batch](./client.md#stop_build_batch)
-- [update_project](./client.md#update_project)
-- [update_project_visibility](./client.md#update_project_visibility)
-- [update_report_group](./client.md#update_report_group)
-- [update_webhook](./client.md#update_webhook)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CodeBuildClient [exceptions](./client.md#exceptions)
-
-- AccountLimitExceededException
-- ClientError
-- InvalidInputException
-- OAuthProviderException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("codebuild").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("codebuild").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator, ...
+from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator
+
+def get_describe_code_coverages_paginator() -> DescribeCodeCoveragesPaginator:
+    return Session().client("codebuild").get_paginator("describe_code_coverages"))
 ```
 
 - [DescribeCodeCoveragesPaginator](./paginators.md#describecodecoveragespaginator)
@@ -176,16 +88,23 @@ from mypy_boto3_codebuild.paginator import DescribeCodeCoveragesPaginator, ...
 - [ListSharedProjectsPaginator](./paginators.md#listsharedprojectspaginator)
 - [ListSharedReportGroupsPaginator](./paginators.md#listsharedreportgroupspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codebuild.literals import ArtifactNamespaceType
 
-```python
-from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
+def get_value() -> ArtifactNamespaceType:
+    return "BUILD_ID"
 ```
 
 - [ArtifactNamespaceType](./literals.md#artifactnamespacetype)
@@ -242,18 +161,22 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef
 
-```python
-from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef, ...
+def get_value() -> BatchDeleteBuildsInputRequestTypeDef:
+    return {
+        "ids": ...,
+    }
 ```
 
 - [BatchDeleteBuildsInputRequestTypeDef](./type_defs.md#batchdeletebuildsinputrequesttypedef)
@@ -298,8 +221,10 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef,
 - [DeleteSourceCredentialsInputRequestTypeDef](./type_defs.md#deletesourcecredentialsinputrequesttypedef)
 - [DeleteSourceCredentialsOutputTypeDef](./type_defs.md#deletesourcecredentialsoutputtypedef)
 - [DeleteWebhookInputRequestTypeDef](./type_defs.md#deletewebhookinputrequesttypedef)
+- [DescribeCodeCoveragesInputDescribeCodeCoveragesPaginateTypeDef](./type_defs.md#describecodecoveragesinputdescribecodecoveragespaginatetypedef)
 - [DescribeCodeCoveragesInputRequestTypeDef](./type_defs.md#describecodecoveragesinputrequesttypedef)
 - [DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef)
+- [DescribeTestCasesInputDescribeTestCasesPaginateTypeDef](./type_defs.md#describetestcasesinputdescribetestcasespaginatetypedef)
 - [DescribeTestCasesInputRequestTypeDef](./type_defs.md#describetestcasesinputrequesttypedef)
 - [DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef)
 - [EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef)
@@ -315,25 +240,35 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef,
 - [ImportSourceCredentialsInputRequestTypeDef](./type_defs.md#importsourcecredentialsinputrequesttypedef)
 - [ImportSourceCredentialsOutputTypeDef](./type_defs.md#importsourcecredentialsoutputtypedef)
 - [InvalidateProjectCacheInputRequestTypeDef](./type_defs.md#invalidateprojectcacheinputrequesttypedef)
+- [ListBuildBatchesForProjectInputListBuildBatchesForProjectPaginateTypeDef](./type_defs.md#listbuildbatchesforprojectinputlistbuildbatchesforprojectpaginatetypedef)
 - [ListBuildBatchesForProjectInputRequestTypeDef](./type_defs.md#listbuildbatchesforprojectinputrequesttypedef)
 - [ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef)
+- [ListBuildBatchesInputListBuildBatchesPaginateTypeDef](./type_defs.md#listbuildbatchesinputlistbuildbatchespaginatetypedef)
 - [ListBuildBatchesInputRequestTypeDef](./type_defs.md#listbuildbatchesinputrequesttypedef)
 - [ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef)
+- [ListBuildsForProjectInputListBuildsForProjectPaginateTypeDef](./type_defs.md#listbuildsforprojectinputlistbuildsforprojectpaginatetypedef)
 - [ListBuildsForProjectInputRequestTypeDef](./type_defs.md#listbuildsforprojectinputrequesttypedef)
 - [ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef)
+- [ListBuildsInputListBuildsPaginateTypeDef](./type_defs.md#listbuildsinputlistbuildspaginatetypedef)
 - [ListBuildsInputRequestTypeDef](./type_defs.md#listbuildsinputrequesttypedef)
 - [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)
 - [ListCuratedEnvironmentImagesOutputTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputtypedef)
+- [ListProjectsInputListProjectsPaginateTypeDef](./type_defs.md#listprojectsinputlistprojectspaginatetypedef)
 - [ListProjectsInputRequestTypeDef](./type_defs.md#listprojectsinputrequesttypedef)
 - [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef)
+- [ListReportGroupsInputListReportGroupsPaginateTypeDef](./type_defs.md#listreportgroupsinputlistreportgroupspaginatetypedef)
 - [ListReportGroupsInputRequestTypeDef](./type_defs.md#listreportgroupsinputrequesttypedef)
 - [ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef)
+- [ListReportsForReportGroupInputListReportsForReportGroupPaginateTypeDef](./type_defs.md#listreportsforreportgroupinputlistreportsforreportgrouppaginatetypedef)
 - [ListReportsForReportGroupInputRequestTypeDef](./type_defs.md#listreportsforreportgroupinputrequesttypedef)
 - [ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef)
+- [ListReportsInputListReportsPaginateTypeDef](./type_defs.md#listreportsinputlistreportspaginatetypedef)
 - [ListReportsInputRequestTypeDef](./type_defs.md#listreportsinputrequesttypedef)
 - [ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef)
+- [ListSharedProjectsInputListSharedProjectsPaginateTypeDef](./type_defs.md#listsharedprojectsinputlistsharedprojectspaginatetypedef)
 - [ListSharedProjectsInputRequestTypeDef](./type_defs.md#listsharedprojectsinputrequesttypedef)
 - [ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef)
+- [ListSharedReportGroupsInputListSharedReportGroupsPaginateTypeDef](./type_defs.md#listsharedreportgroupsinputlistsharedreportgroupspaginatetypedef)
 - [ListSharedReportGroupsInputRequestTypeDef](./type_defs.md#listsharedreportgroupsinputrequesttypedef)
 - [ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef)
 - [ListSourceCredentialsOutputTypeDef](./type_defs.md#listsourcecredentialsoutputtypedef)
@@ -393,3 +328,4 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef,
 - [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - [WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)
 - [WebhookTypeDef](./type_defs.md#webhooktypedef)
+

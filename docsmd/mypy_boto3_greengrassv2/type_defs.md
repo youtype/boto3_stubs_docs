@@ -1,1515 +1,1975 @@
-<a id="typed-dictionaries-for-boto3-greengrassv2-module"></a>
-
-# Typed dictionaries for boto3 GreengrassV2 module
+# Typed dictionaries
 
 > [Index](../README.md) > [GreengrassV2](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
-type annotations stubs module
-[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+!!! note ""
 
-- [Typed dictionaries for boto3 GreengrassV2 module](#typed-dictionaries-for-boto3-greengrassv2-module)
-  - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](#associateclientdevicewithcoredeviceentrytypedef)
-  - [AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](#associateclientdevicewithcoredeviceerrorentrytypedef)
-  - [AssociateServiceRoleToAccountRequestRequestTypeDef](#associateserviceroletoaccountrequestrequesttypedef)
-  - [AssociateServiceRoleToAccountResponseTypeDef](#associateserviceroletoaccountresponsetypedef)
-  - [AssociatedClientDeviceTypeDef](#associatedclientdevicetypedef)
-  - [BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef](#batchassociateclientdevicewithcoredevicerequestrequesttypedef)
-  - [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](#batchassociateclientdevicewithcoredeviceresponsetypedef)
-  - [BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef](#batchdisassociateclientdevicefromcoredevicerequestrequesttypedef)
-  - [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](#batchdisassociateclientdevicefromcoredeviceresponsetypedef)
-  - [CancelDeploymentRequestRequestTypeDef](#canceldeploymentrequestrequesttypedef)
-  - [CancelDeploymentResponseTypeDef](#canceldeploymentresponsetypedef)
-  - [CloudComponentStatusTypeDef](#cloudcomponentstatustypedef)
-  - [ComponentCandidateTypeDef](#componentcandidatetypedef)
-  - [ComponentConfigurationUpdateTypeDef](#componentconfigurationupdatetypedef)
-  - [ComponentDependencyRequirementTypeDef](#componentdependencyrequirementtypedef)
-  - [ComponentDeploymentSpecificationTypeDef](#componentdeploymentspecificationtypedef)
-  - [ComponentLatestVersionTypeDef](#componentlatestversiontypedef)
-  - [ComponentPlatformTypeDef](#componentplatformtypedef)
-  - [ComponentRunWithTypeDef](#componentrunwithtypedef)
-  - [ComponentTypeDef](#componenttypedef)
-  - [ComponentVersionListItemTypeDef](#componentversionlistitemtypedef)
-  - [ConnectivityInfoTypeDef](#connectivityinfotypedef)
-  - [CoreDeviceTypeDef](#coredevicetypedef)
-  - [CreateComponentVersionRequestRequestTypeDef](#createcomponentversionrequestrequesttypedef)
-  - [CreateComponentVersionResponseTypeDef](#createcomponentversionresponsetypedef)
-  - [CreateDeploymentRequestRequestTypeDef](#createdeploymentrequestrequesttypedef)
-  - [CreateDeploymentResponseTypeDef](#createdeploymentresponsetypedef)
-  - [DeleteComponentRequestRequestTypeDef](#deletecomponentrequestrequesttypedef)
-  - [DeleteCoreDeviceRequestRequestTypeDef](#deletecoredevicerequestrequesttypedef)
-  - [DeploymentComponentUpdatePolicyTypeDef](#deploymentcomponentupdatepolicytypedef)
-  - [DeploymentConfigurationValidationPolicyTypeDef](#deploymentconfigurationvalidationpolicytypedef)
-  - [DeploymentIoTJobConfigurationTypeDef](#deploymentiotjobconfigurationtypedef)
-  - [DeploymentPoliciesTypeDef](#deploymentpoliciestypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DescribeComponentRequestRequestTypeDef](#describecomponentrequestrequesttypedef)
-  - [DescribeComponentResponseTypeDef](#describecomponentresponsetypedef)
-  - [DisassociateClientDeviceFromCoreDeviceEntryTypeDef](#disassociateclientdevicefromcoredeviceentrytypedef)
-  - [DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](#disassociateclientdevicefromcoredeviceerrorentrytypedef)
-  - [DisassociateServiceRoleFromAccountResponseTypeDef](#disassociateservicerolefromaccountresponsetypedef)
-  - [EffectiveDeploymentTypeDef](#effectivedeploymenttypedef)
-  - [GetComponentRequestRequestTypeDef](#getcomponentrequestrequesttypedef)
-  - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
-  - [GetComponentVersionArtifactRequestRequestTypeDef](#getcomponentversionartifactrequestrequesttypedef)
-  - [GetComponentVersionArtifactResponseTypeDef](#getcomponentversionartifactresponsetypedef)
-  - [GetConnectivityInfoRequestRequestTypeDef](#getconnectivityinforequestrequesttypedef)
-  - [GetConnectivityInfoResponseTypeDef](#getconnectivityinforesponsetypedef)
-  - [GetCoreDeviceRequestRequestTypeDef](#getcoredevicerequestrequesttypedef)
-  - [GetCoreDeviceResponseTypeDef](#getcoredeviceresponsetypedef)
-  - [GetDeploymentRequestRequestTypeDef](#getdeploymentrequestrequesttypedef)
-  - [GetDeploymentResponseTypeDef](#getdeploymentresponsetypedef)
-  - [GetServiceRoleForAccountResponseTypeDef](#getserviceroleforaccountresponsetypedef)
-  - [InstalledComponentTypeDef](#installedcomponenttypedef)
-  - [IoTJobAbortConfigTypeDef](#iotjobabortconfigtypedef)
-  - [IoTJobAbortCriteriaTypeDef](#iotjobabortcriteriatypedef)
-  - [IoTJobExecutionsRolloutConfigTypeDef](#iotjobexecutionsrolloutconfigtypedef)
-  - [IoTJobExponentialRolloutRateTypeDef](#iotjobexponentialrolloutratetypedef)
-  - [IoTJobRateIncreaseCriteriaTypeDef](#iotjobrateincreasecriteriatypedef)
-  - [IoTJobTimeoutConfigTypeDef](#iotjobtimeoutconfigtypedef)
-  - [LambdaContainerParamsTypeDef](#lambdacontainerparamstypedef)
-  - [LambdaDeviceMountTypeDef](#lambdadevicemounttypedef)
-  - [LambdaEventSourceTypeDef](#lambdaeventsourcetypedef)
-  - [LambdaExecutionParametersTypeDef](#lambdaexecutionparameterstypedef)
-  - [LambdaFunctionRecipeSourceTypeDef](#lambdafunctionrecipesourcetypedef)
-  - [LambdaLinuxProcessParamsTypeDef](#lambdalinuxprocessparamstypedef)
-  - [LambdaVolumeMountTypeDef](#lambdavolumemounttypedef)
-  - [ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef](#listclientdevicesassociatedwithcoredevicerequestrequesttypedef)
-  - [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](#listclientdevicesassociatedwithcoredeviceresponsetypedef)
-  - [ListComponentVersionsRequestRequestTypeDef](#listcomponentversionsrequestrequesttypedef)
-  - [ListComponentVersionsResponseTypeDef](#listcomponentversionsresponsetypedef)
-  - [ListComponentsRequestRequestTypeDef](#listcomponentsrequestrequesttypedef)
-  - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
-  - [ListCoreDevicesRequestRequestTypeDef](#listcoredevicesrequestrequesttypedef)
-  - [ListCoreDevicesResponseTypeDef](#listcoredevicesresponsetypedef)
-  - [ListDeploymentsRequestRequestTypeDef](#listdeploymentsrequestrequesttypedef)
-  - [ListDeploymentsResponseTypeDef](#listdeploymentsresponsetypedef)
-  - [ListEffectiveDeploymentsRequestRequestTypeDef](#listeffectivedeploymentsrequestrequesttypedef)
-  - [ListEffectiveDeploymentsResponseTypeDef](#listeffectivedeploymentsresponsetypedef)
-  - [ListInstalledComponentsRequestRequestTypeDef](#listinstalledcomponentsrequestrequesttypedef)
-  - [ListInstalledComponentsResponseTypeDef](#listinstalledcomponentsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResolveComponentCandidatesRequestRequestTypeDef](#resolvecomponentcandidatesrequestrequesttypedef)
-  - [ResolveComponentCandidatesResponseTypeDef](#resolvecomponentcandidatesresponsetypedef)
-  - [ResolvedComponentVersionTypeDef](#resolvedcomponentversiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SystemResourceLimitsTypeDef](#systemresourcelimitstypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateConnectivityInfoRequestRequestTypeDef](#updateconnectivityinforequestrequesttypedef)
-  - [UpdateConnectivityInfoResponseTypeDef](#updateconnectivityinforesponsetypedef)
-
-<a id="associateclientdevicewithcoredeviceentrytypedef"></a>
+    Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+    type annotations stubs module [mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ## AssociateClientDeviceWithCoreDeviceEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceEntryTypeDef
+
+def get_value() -> AssociateClientDeviceWithCoreDeviceEntryTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-<a id="associateclientdevicewithcoredeviceerrorentrytypedef"></a>
+```python title="Definition"
+class AssociateClientDeviceWithCoreDeviceEntryTypeDef(TypedDict):
+    thingName: str,
+```
 
 ## AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef
+
+def get_value() -> AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingName`: `str`
-- `code`: `str`
-- `message`: `str`
-
-<a id="associateserviceroletoaccountrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    code: NotRequired[str],
+    message: NotRequired[str],
+```
 
 ## AssociateServiceRoleToAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountRequestRequestTypeDef
+
+def get_value() -> AssociateServiceRoleToAccountRequestRequestTypeDef:
+    return {
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `roleArn`: `str`
-
-<a id="associateserviceroletoaccountresponsetypedef"></a>
+```python title="Definition"
+class AssociateServiceRoleToAccountRequestRequestTypeDef(TypedDict):
+    roleArn: str,
+```
 
 ## AssociateServiceRoleToAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountResponseTypeDef
+
+def get_value() -> AssociateServiceRoleToAccountResponseTypeDef:
+    return {
+        "associatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateServiceRoleToAccountResponseTypeDef(TypedDict):
+    associatedAt: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `associatedAt`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatedclientdevicetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociatedClientDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import AssociatedClientDeviceTypeDef
+
+def get_value() -> AssociatedClientDeviceTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingName`: `str`
-- `associationTimestamp`: `datetime`
-
-<a id="batchassociateclientdevicewithcoredevicerequestrequesttypedef"></a>
+```python title="Definition"
+class AssociatedClientDeviceTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    associationTimestamp: NotRequired[datetime],
+```
 
 ## BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef
+
+def get_value() -> BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    entries: NotRequired[Sequence[AssociateClientDeviceWithCoreDeviceEntryTypeDef]],  # (1)
+```
 
-- `coreDeviceThingName`: `str`
-
-Optional fields:
-
-- `entries`:
-  `Sequence`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
-
-<a id="batchassociateclientdevicewithcoredeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef) 
 ## BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
+
+def get_value() -> BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef(TypedDict):
+    errorEntries: List[AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errorEntries`:
-  `List`\[[AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdisassociateclientdevicefromcoredevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef
+
+def get_value() -> BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    entries: NotRequired[Sequence[DisassociateClientDeviceFromCoreDeviceEntryTypeDef]],  # (1)
+```
 
-- `coreDeviceThingName`: `str`
-
-Optional fields:
-
-- `entries`:
-  `Sequence`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
-
-<a id="batchdisassociateclientdevicefromcoredeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef) 
 ## BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
+
+def get_value() -> BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef:
+    return {
+        "errorEntries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef(TypedDict):
+    errorEntries: List[DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `errorEntries`:
-  `List`\[[DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceerrorentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="canceldeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceerrorentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CancelDeploymentRequestRequestTypeDef
+
+def get_value() -> CancelDeploymentRequestRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-
-<a id="canceldeploymentresponsetypedef"></a>
+```python title="Definition"
+class CancelDeploymentRequestRequestTypeDef(TypedDict):
+    deploymentId: str,
+```
 
 ## CancelDeploymentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CancelDeploymentResponseTypeDef
+
+def get_value() -> CancelDeploymentResponseTypeDef:
+    return {
+        "message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelDeploymentResponseTypeDef(TypedDict):
+    message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cloudcomponentstatustypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CloudComponentStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CloudComponentStatusTypeDef
+
+def get_value() -> CloudComponentStatusTypeDef:
+    return {
+        "componentState": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudComponentStatusTypeDef(TypedDict):
+    componentState: NotRequired[CloudComponentStateType],  # (1)
+    message: NotRequired[str],
+    errors: NotRequired[Dict[str, str]],
+```
 
-- `componentState`:
-  [CloudComponentStateType](./literals.md#cloudcomponentstatetype)
-- `message`: `str`
-- `errors`: `Dict`\[`str`, `str`\]
-
-<a id="componentcandidatetypedef"></a>
-
+1. See [:material-code-brackets: CloudComponentStateType](./literals.md#cloudcomponentstatetype) 
 ## ComponentCandidateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentCandidateTypeDef
+
+def get_value() -> ComponentCandidateTypeDef:
+    return {
+        "componentName": ...,
+    }
 ```
 
-Optional fields:
-
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `versionRequirements`: `Mapping`\[`str`, `str`\]
-
-<a id="componentconfigurationupdatetypedef"></a>
+```python title="Definition"
+class ComponentCandidateTypeDef(TypedDict):
+    componentName: NotRequired[str],
+    componentVersion: NotRequired[str],
+    versionRequirements: NotRequired[Mapping[str, str]],
+```
 
 ## ComponentConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentConfigurationUpdateTypeDef
+
+def get_value() -> ComponentConfigurationUpdateTypeDef:
+    return {
+        "merge": ...,
+    }
 ```
 
-Optional fields:
-
-- `merge`: `str`
-- `reset`: `Sequence`\[`str`\]
-
-<a id="componentdependencyrequirementtypedef"></a>
+```python title="Definition"
+class ComponentConfigurationUpdateTypeDef(TypedDict):
+    merge: NotRequired[str],
+    reset: NotRequired[Sequence[str]],
+```
 
 ## ComponentDependencyRequirementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentDependencyRequirementTypeDef
+
+def get_value() -> ComponentDependencyRequirementTypeDef:
+    return {
+        "versionRequirement": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentDependencyRequirementTypeDef(TypedDict):
+    versionRequirement: NotRequired[str],
+    dependencyType: NotRequired[ComponentDependencyTypeType],  # (1)
+```
 
-- `versionRequirement`: `str`
-- `dependencyType`:
-  [ComponentDependencyTypeType](./literals.md#componentdependencytypetype)
-
-<a id="componentdeploymentspecificationtypedef"></a>
-
+1. See [:material-code-brackets: ComponentDependencyTypeType](./literals.md#componentdependencytypetype) 
 ## ComponentDeploymentSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentDeploymentSpecificationTypeDef
+
+def get_value() -> ComponentDeploymentSpecificationTypeDef:
+    return {
+        "componentVersion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentDeploymentSpecificationTypeDef(TypedDict):
+    componentVersion: NotRequired[str],
+    configurationUpdate: NotRequired[ComponentConfigurationUpdateTypeDef],  # (1)
+    runWith: NotRequired[ComponentRunWithTypeDef],  # (2)
+```
 
-- `componentVersion`: `str`
-- `configurationUpdate`:
-  [ComponentConfigurationUpdateTypeDef](./type_defs.md#componentconfigurationupdatetypedef)
-- `runWith`: [ComponentRunWithTypeDef](./type_defs.md#componentrunwithtypedef)
-
-<a id="componentlatestversiontypedef"></a>
-
+1. See [:material-code-braces: ComponentConfigurationUpdateTypeDef](./type_defs.md#componentconfigurationupdatetypedef) 
+2. See [:material-code-braces: ComponentRunWithTypeDef](./type_defs.md#componentrunwithtypedef) 
 ## ComponentLatestVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentLatestVersionTypeDef
+
+def get_value() -> ComponentLatestVersionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentLatestVersionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    componentVersion: NotRequired[str],
+    creationTimestamp: NotRequired[datetime],
+    description: NotRequired[str],
+    publisher: NotRequired[str],
+    platforms: NotRequired[List[ComponentPlatformTypeDef]],  # (1)
+```
 
-- `arn`: `str`
-- `componentVersion`: `str`
-- `creationTimestamp`: `datetime`
-- `description`: `str`
-- `publisher`: `str`
-- `platforms`:
-  `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
-
-<a id="componentplatformtypedef"></a>
-
+1. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 
 ## ComponentPlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentPlatformTypeDef
+
+def get_value() -> ComponentPlatformTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="componentrunwithtypedef"></a>
+```python title="Definition"
+class ComponentPlatformTypeDef(TypedDict):
+    name: NotRequired[str],
+    attributes: NotRequired[Mapping[str, str]],
+```
 
 ## ComponentRunWithTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentRunWithTypeDef
+
+def get_value() -> ComponentRunWithTypeDef:
+    return {
+        "posixUser": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentRunWithTypeDef(TypedDict):
+    posixUser: NotRequired[str],
+    systemResourceLimits: NotRequired[SystemResourceLimitsTypeDef],  # (1)
+    windowsUser: NotRequired[str],
+```
 
-- `posixUser`: `str`
-- `systemResourceLimits`:
-  [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
-- `windowsUser`: `str`
-
-<a id="componenttypedef"></a>
-
+1. See [:material-code-braces: SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef) 
 ## ComponentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentTypeDef
+
+def get_value() -> ComponentTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentTypeDef(TypedDict):
+    arn: NotRequired[str],
+    componentName: NotRequired[str],
+    latestVersion: NotRequired[ComponentLatestVersionTypeDef],  # (1)
+```
 
-- `arn`: `str`
-- `componentName`: `str`
-- `latestVersion`:
-  [ComponentLatestVersionTypeDef](./type_defs.md#componentlatestversiontypedef)
-
-<a id="componentversionlistitemtypedef"></a>
-
+1. See [:material-code-braces: ComponentLatestVersionTypeDef](./type_defs.md#componentlatestversiontypedef) 
 ## ComponentVersionListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ComponentVersionListItemTypeDef
+
+def get_value() -> ComponentVersionListItemTypeDef:
+    return {
+        "componentName": ...,
+    }
 ```
 
-Optional fields:
-
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `arn`: `str`
-
-<a id="connectivityinfotypedef"></a>
+```python title="Definition"
+class ComponentVersionListItemTypeDef(TypedDict):
+    componentName: NotRequired[str],
+    componentVersion: NotRequired[str],
+    arn: NotRequired[str],
+```
 
 ## ConnectivityInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ConnectivityInfoTypeDef
+
+def get_value() -> ConnectivityInfoTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `hostAddress`: `str`
-- `portNumber`: `int`
-- `metadata`: `str`
-
-<a id="coredevicetypedef"></a>
+```python title="Definition"
+class ConnectivityInfoTypeDef(TypedDict):
+    id: NotRequired[str],
+    hostAddress: NotRequired[str],
+    portNumber: NotRequired[int],
+    metadata: NotRequired[str],
+```
 
 ## CoreDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CoreDeviceTypeDef
+
+def get_value() -> CoreDeviceTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CoreDeviceTypeDef(TypedDict):
+    coreDeviceThingName: NotRequired[str],
+    status: NotRequired[CoreDeviceStatusType],  # (1)
+    lastStatusUpdateTimestamp: NotRequired[datetime],
+```
 
-- `coreDeviceThingName`: `str`
-- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
-- `lastStatusUpdateTimestamp`: `datetime`
-
-<a id="createcomponentversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CoreDeviceStatusType](./literals.md#coredevicestatustype) 
 ## CreateComponentVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionRequestRequestTypeDef
+
+def get_value() -> CreateComponentVersionRequestRequestTypeDef:
+    return {
+        "inlineRecipe": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateComponentVersionRequestRequestTypeDef(TypedDict):
+    inlineRecipe: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    lambdaFunction: NotRequired[LambdaFunctionRecipeSourceTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+    clientToken: NotRequired[str],
+```
 
-- `inlineRecipe`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `lambdaFunction`:
-  [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
-
-<a id="createcomponentversionresponsetypedef"></a>
-
+1. See [:material-code-braces: LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef) 
 ## CreateComponentVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CreateComponentVersionResponseTypeDef
+
+def get_value() -> CreateComponentVersionResponseTypeDef:
+    return {
+        "arn": ...,
+        "componentName": ...,
+        "componentVersion": ...,
+        "creationTimestamp": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentVersionResponseTypeDef(TypedDict):
+    arn: str,
+    componentName: str,
+    componentVersion: str,
+    creationTimestamp: datetime,
+    status: CloudComponentStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `creationTimestamp`: `datetime`
-- `status`:
-  [CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CreateDeploymentRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentRequestRequestTypeDef:
+    return {
+        "targetArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentRequestRequestTypeDef(TypedDict):
+    targetArn: str,
+    deploymentName: NotRequired[str],
+    components: NotRequired[Mapping[str, ComponentDeploymentSpecificationTypeDef]],  # (1)
+    iotJobConfiguration: NotRequired[DeploymentIoTJobConfigurationTypeDef],  # (2)
+    deploymentPolicies: NotRequired[DeploymentPoliciesTypeDef],  # (3)
+    tags: NotRequired[Mapping[str, str]],
+    clientToken: NotRequired[str],
+```
 
-- `targetArn`: `str`
-
-Optional fields:
-
-- `deploymentName`: `str`
-- `components`: `Mapping`\[`str`,
-  [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
-- `iotJobConfiguration`:
-  [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
-- `deploymentPolicies`:
-  [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `clientToken`: `str`
-
-<a id="createdeploymentresponsetypedef"></a>
-
+1. See [:material-code-braces: ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef) 
+2. See [:material-code-braces: DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef) 
+3. See [:material-code-braces: DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef) 
 ## CreateDeploymentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import CreateDeploymentResponseTypeDef
+
+def get_value() -> CreateDeploymentResponseTypeDef:
+    return {
+        "deploymentId": ...,
+        "iotJobId": ...,
+        "iotJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentResponseTypeDef(TypedDict):
+    deploymentId: str,
+    iotJobId: str,
+    iotJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deploymentId`: `str`
-- `iotJobId`: `str`
-- `iotJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeleteComponentRequestRequestTypeDef
+
+def get_value() -> DeleteComponentRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="deletecoredevicerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteComponentRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DeleteCoreDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeleteCoreDeviceRequestRequestTypeDef
+
+def get_value() -> DeleteCoreDeviceRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-<a id="deploymentcomponentupdatepolicytypedef"></a>
+```python title="Definition"
+class DeleteCoreDeviceRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+```
 
 ## DeploymentComponentUpdatePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeploymentComponentUpdatePolicyTypeDef
+
+def get_value() -> DeploymentComponentUpdatePolicyTypeDef:
+    return {
+        "timeoutInSeconds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentComponentUpdatePolicyTypeDef(TypedDict):
+    timeoutInSeconds: NotRequired[int],
+    action: NotRequired[DeploymentComponentUpdatePolicyActionType],  # (1)
+```
 
-- `timeoutInSeconds`: `int`
-- `action`:
-  [DeploymentComponentUpdatePolicyActionType](./literals.md#deploymentcomponentupdatepolicyactiontype)
-
-<a id="deploymentconfigurationvalidationpolicytypedef"></a>
-
+1. See [:material-code-brackets: DeploymentComponentUpdatePolicyActionType](./literals.md#deploymentcomponentupdatepolicyactiontype) 
 ## DeploymentConfigurationValidationPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeploymentConfigurationValidationPolicyTypeDef
+
+def get_value() -> DeploymentConfigurationValidationPolicyTypeDef:
+    return {
+        "timeoutInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `timeoutInSeconds`: `int`
-
-<a id="deploymentiotjobconfigurationtypedef"></a>
+```python title="Definition"
+class DeploymentConfigurationValidationPolicyTypeDef(TypedDict):
+    timeoutInSeconds: NotRequired[int],
+```
 
 ## DeploymentIoTJobConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeploymentIoTJobConfigurationTypeDef
+
+def get_value() -> DeploymentIoTJobConfigurationTypeDef:
+    return {
+        "jobExecutionsRolloutConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentIoTJobConfigurationTypeDef(TypedDict):
+    jobExecutionsRolloutConfig: NotRequired[IoTJobExecutionsRolloutConfigTypeDef],  # (1)
+    abortConfig: NotRequired[IoTJobAbortConfigTypeDef],  # (2)
+    timeoutConfig: NotRequired[IoTJobTimeoutConfigTypeDef],  # (3)
+```
 
-- `jobExecutionsRolloutConfig`:
-  [IoTJobExecutionsRolloutConfigTypeDef](./type_defs.md#iotjobexecutionsrolloutconfigtypedef)
-- `abortConfig`:
-  [IoTJobAbortConfigTypeDef](./type_defs.md#iotjobabortconfigtypedef)
-- `timeoutConfig`:
-  [IoTJobTimeoutConfigTypeDef](./type_defs.md#iotjobtimeoutconfigtypedef)
-
-<a id="deploymentpoliciestypedef"></a>
-
+1. See [:material-code-braces: IoTJobExecutionsRolloutConfigTypeDef](./type_defs.md#iotjobexecutionsrolloutconfigtypedef) 
+2. See [:material-code-braces: IoTJobAbortConfigTypeDef](./type_defs.md#iotjobabortconfigtypedef) 
+3. See [:material-code-braces: IoTJobTimeoutConfigTypeDef](./type_defs.md#iotjobtimeoutconfigtypedef) 
 ## DeploymentPoliciesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeploymentPoliciesTypeDef
+
+def get_value() -> DeploymentPoliciesTypeDef:
+    return {
+        "failureHandlingPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentPoliciesTypeDef(TypedDict):
+    failureHandlingPolicy: NotRequired[DeploymentFailureHandlingPolicyType],  # (1)
+    componentUpdatePolicy: NotRequired[DeploymentComponentUpdatePolicyTypeDef],  # (2)
+    configurationValidationPolicy: NotRequired[DeploymentConfigurationValidationPolicyTypeDef],  # (3)
+```
 
-- `failureHandlingPolicy`:
-  [DeploymentFailureHandlingPolicyType](./literals.md#deploymentfailurehandlingpolicytype)
-- `componentUpdatePolicy`:
-  [DeploymentComponentUpdatePolicyTypeDef](./type_defs.md#deploymentcomponentupdatepolicytypedef)
-- `configurationValidationPolicy`:
-  [DeploymentConfigurationValidationPolicyTypeDef](./type_defs.md#deploymentconfigurationvalidationpolicytypedef)
-
-<a id="deploymenttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentFailureHandlingPolicyType](./literals.md#deploymentfailurehandlingpolicytype) 
+2. See [:material-code-braces: DeploymentComponentUpdatePolicyTypeDef](./type_defs.md#deploymentcomponentupdatepolicytypedef) 
+3. See [:material-code-braces: DeploymentConfigurationValidationPolicyTypeDef](./type_defs.md#deploymentconfigurationvalidationpolicytypedef) 
 ## DeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "targetArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    targetArn: NotRequired[str],
+    revisionId: NotRequired[str],
+    deploymentId: NotRequired[str],
+    deploymentName: NotRequired[str],
+    creationTimestamp: NotRequired[datetime],
+    deploymentStatus: NotRequired[DeploymentStatusType],  # (1)
+    isLatestForTarget: NotRequired[bool],
+```
 
-- `targetArn`: `str`
-- `revisionId`: `str`
-- `deploymentId`: `str`
-- `deploymentName`: `str`
-- `creationTimestamp`: `datetime`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `isLatestForTarget`: `bool`
-
-<a id="describecomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## DescribeComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DescribeComponentRequestRequestTypeDef
+
+def get_value() -> DescribeComponentRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="describecomponentresponsetypedef"></a>
+```python title="Definition"
+class DescribeComponentRequestRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## DescribeComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DescribeComponentResponseTypeDef
+
+def get_value() -> DescribeComponentResponseTypeDef:
+    return {
+        "arn": ...,
+        "componentName": ...,
+        "componentVersion": ...,
+        "creationTimestamp": ...,
+        "publisher": ...,
+        "description": ...,
+        "status": ...,
+        "platforms": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeComponentResponseTypeDef(TypedDict):
+    arn: str,
+    componentName: str,
+    componentVersion: str,
+    creationTimestamp: datetime,
+    publisher: str,
+    description: str,
+    status: CloudComponentStatusTypeDef,  # (1)
+    platforms: List[ComponentPlatformTypeDef],  # (2)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `arn`: `str`
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `creationTimestamp`: `datetime`
-- `publisher`: `str`
-- `description`: `str`
-- `status`:
-  [CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef)
-- `platforms`:
-  `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociateclientdevicefromcoredeviceentrytypedef"></a>
-
+1. See [:material-code-braces: CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef) 
+2. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateClientDeviceFromCoreDeviceEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DisassociateClientDeviceFromCoreDeviceEntryTypeDef
+
+def get_value() -> DisassociateClientDeviceFromCoreDeviceEntryTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-<a id="disassociateclientdevicefromcoredeviceerrorentrytypedef"></a>
+```python title="Definition"
+class DisassociateClientDeviceFromCoreDeviceEntryTypeDef(TypedDict):
+    thingName: str,
+```
 
 ## DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef
+
+def get_value() -> DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Optional fields:
-
-- `thingName`: `str`
-- `code`: `str`
-- `message`: `str`
-
-<a id="disassociateservicerolefromaccountresponsetypedef"></a>
+```python title="Definition"
+class DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef(TypedDict):
+    thingName: NotRequired[str],
+    code: NotRequired[str],
+    message: NotRequired[str],
+```
 
 ## DisassociateServiceRoleFromAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import DisassociateServiceRoleFromAccountResponseTypeDef
+
+def get_value() -> DisassociateServiceRoleFromAccountResponseTypeDef:
+    return {
+        "disassociatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateServiceRoleFromAccountResponseTypeDef(TypedDict):
+    disassociatedAt: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `disassociatedAt`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="effectivedeploymenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EffectiveDeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import EffectiveDeploymentTypeDef
+
+def get_value() -> EffectiveDeploymentTypeDef:
+    return {
+        "deploymentId": ...,
+        "deploymentName": ...,
+        "targetArn": ...,
+        "coreDeviceExecutionStatus": ...,
+        "creationTimestamp": ...,
+        "modifiedTimestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EffectiveDeploymentTypeDef(TypedDict):
+    deploymentId: str,
+    deploymentName: str,
+    targetArn: str,
+    coreDeviceExecutionStatus: EffectiveDeploymentExecutionStatusType,  # (1)
+    creationTimestamp: datetime,
+    modifiedTimestamp: datetime,
+    iotJobId: NotRequired[str],
+    iotJobArn: NotRequired[str],
+    description: NotRequired[str],
+    reason: NotRequired[str],
+```
 
-- `deploymentId`: `str`
-- `deploymentName`: `str`
-- `targetArn`: `str`
-- `coreDeviceExecutionStatus`:
-  [EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype)
-- `creationTimestamp`: `datetime`
-- `modifiedTimestamp`: `datetime`
-
-Optional fields:
-
-- `iotJobId`: `str`
-- `iotJobArn`: `str`
-- `description`: `str`
-- `reason`: `str`
-
-<a id="getcomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: EffectiveDeploymentExecutionStatusType](./literals.md#effectivedeploymentexecutionstatustype) 
 ## GetComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetComponentRequestRequestTypeDef
+
+def get_value() -> GetComponentRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComponentRequestRequestTypeDef(TypedDict):
+    arn: str,
+    recipeOutputFormat: NotRequired[RecipeOutputFormatType],  # (1)
+```
 
-- `arn`: `str`
-
-Optional fields:
-
-- `recipeOutputFormat`:
-  [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
-
-<a id="getcomponentresponsetypedef"></a>
-
+1. See [:material-code-brackets: RecipeOutputFormatType](./literals.md#recipeoutputformattype) 
 ## GetComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetComponentResponseTypeDef
+
+def get_value() -> GetComponentResponseTypeDef:
+    return {
+        "recipeOutputFormat": ...,
+        "recipe": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComponentResponseTypeDef(TypedDict):
+    recipeOutputFormat: RecipeOutputFormatType,  # (1)
+    recipe: bytes,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recipeOutputFormat`:
-  [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
-- `recipe`: `bytes`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcomponentversionartifactrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecipeOutputFormatType](./literals.md#recipeoutputformattype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetComponentVersionArtifactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactRequestRequestTypeDef
+
+def get_value() -> GetComponentVersionArtifactRequestRequestTypeDef:
+    return {
+        "arn": ...,
+        "artifactName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `artifactName`: `str`
-
-<a id="getcomponentversionartifactresponsetypedef"></a>
+```python title="Definition"
+class GetComponentVersionArtifactRequestRequestTypeDef(TypedDict):
+    arn: str,
+    artifactName: str,
+```
 
 ## GetComponentVersionArtifactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetComponentVersionArtifactResponseTypeDef
+
+def get_value() -> GetComponentVersionArtifactResponseTypeDef:
+    return {
+        "preSignedUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComponentVersionArtifactResponseTypeDef(TypedDict):
+    preSignedUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `preSignedUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconnectivityinforequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConnectivityInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetConnectivityInfoRequestRequestTypeDef
+
+def get_value() -> GetConnectivityInfoRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+    }
 ```
 
-Required fields:
-
-- `thingName`: `str`
-
-<a id="getconnectivityinforesponsetypedef"></a>
+```python title="Definition"
+class GetConnectivityInfoRequestRequestTypeDef(TypedDict):
+    thingName: str,
+```
 
 ## GetConnectivityInfoResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetConnectivityInfoResponseTypeDef
+
+def get_value() -> GetConnectivityInfoResponseTypeDef:
+    return {
+        "connectivityInfo": ...,
+        "message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConnectivityInfoResponseTypeDef(TypedDict):
+    connectivityInfo: List[ConnectivityInfoTypeDef],  # (1)
+    message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `connectivityInfo`:
-  `List`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
-- `message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcoredevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCoreDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceRequestRequestTypeDef
+
+def get_value() -> GetCoreDeviceRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-<a id="getcoredeviceresponsetypedef"></a>
+```python title="Definition"
+class GetCoreDeviceRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+```
 
 ## GetCoreDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceResponseTypeDef
+
+def get_value() -> GetCoreDeviceResponseTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+        "coreVersion": ...,
+        "platform": ...,
+        "architecture": ...,
+        "status": ...,
+        "lastStatusUpdateTimestamp": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCoreDeviceResponseTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    coreVersion: str,
+    platform: str,
+    architecture: str,
+    status: CoreDeviceStatusType,  # (1)
+    lastStatusUpdateTimestamp: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `coreDeviceThingName`: `str`
-- `coreVersion`: `str`
-- `platform`: `str`
-- `architecture`: `str`
-- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
-- `lastStatusUpdateTimestamp`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CoreDeviceStatusType](./literals.md#coredevicestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetDeploymentRequestRequestTypeDef
+
+def get_value() -> GetDeploymentRequestRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-
-<a id="getdeploymentresponsetypedef"></a>
+```python title="Definition"
+class GetDeploymentRequestRequestTypeDef(TypedDict):
+    deploymentId: str,
+```
 
 ## GetDeploymentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetDeploymentResponseTypeDef
+
+def get_value() -> GetDeploymentResponseTypeDef:
+    return {
+        "targetArn": ...,
+        "revisionId": ...,
+        "deploymentId": ...,
+        "deploymentName": ...,
+        "deploymentStatus": ...,
+        "iotJobId": ...,
+        "iotJobArn": ...,
+        "components": ...,
+        "deploymentPolicies": ...,
+        "iotJobConfiguration": ...,
+        "creationTimestamp": ...,
+        "isLatestForTarget": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentResponseTypeDef(TypedDict):
+    targetArn: str,
+    revisionId: str,
+    deploymentId: str,
+    deploymentName: str,
+    deploymentStatus: DeploymentStatusType,  # (1)
+    iotJobId: str,
+    iotJobArn: str,
+    components: Dict[str, ComponentDeploymentSpecificationTypeDef],  # (2)
+    deploymentPolicies: DeploymentPoliciesTypeDef,  # (3)
+    iotJobConfiguration: DeploymentIoTJobConfigurationTypeDef,  # (4)
+    creationTimestamp: datetime,
+    isLatestForTarget: bool,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `targetArn`: `str`
-- `revisionId`: `str`
-- `deploymentId`: `str`
-- `deploymentName`: `str`
-- `deploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `iotJobId`: `str`
-- `iotJobArn`: `str`
-- `components`: `Dict`\[`str`,
-  [ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef)\]
-- `deploymentPolicies`:
-  [DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef)
-- `iotJobConfiguration`:
-  [DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef)
-- `creationTimestamp`: `datetime`
-- `isLatestForTarget`: `bool`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getserviceroleforaccountresponsetypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: ComponentDeploymentSpecificationTypeDef](./type_defs.md#componentdeploymentspecificationtypedef) 
+3. See [:material-code-braces: DeploymentPoliciesTypeDef](./type_defs.md#deploymentpoliciestypedef) 
+4. See [:material-code-braces: DeploymentIoTJobConfigurationTypeDef](./type_defs.md#deploymentiotjobconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceRoleForAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import GetServiceRoleForAccountResponseTypeDef
+
+def get_value() -> GetServiceRoleForAccountResponseTypeDef:
+    return {
+        "associatedAt": ...,
+        "roleArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceRoleForAccountResponseTypeDef(TypedDict):
+    associatedAt: str,
+    roleArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `associatedAt`: `str`
-- `roleArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="installedcomponenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InstalledComponentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import InstalledComponentTypeDef
+
+def get_value() -> InstalledComponentTypeDef:
+    return {
+        "componentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstalledComponentTypeDef(TypedDict):
+    componentName: NotRequired[str],
+    componentVersion: NotRequired[str],
+    lifecycleState: NotRequired[InstalledComponentLifecycleStateType],  # (1)
+    lifecycleStateDetails: NotRequired[str],
+    isRoot: NotRequired[bool],
+```
 
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `lifecycleState`:
-  [InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype)
-- `lifecycleStateDetails`: `str`
-- `isRoot`: `bool`
-
-<a id="iotjobabortconfigtypedef"></a>
-
+1. See [:material-code-brackets: InstalledComponentLifecycleStateType](./literals.md#installedcomponentlifecyclestatetype) 
 ## IoTJobAbortConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobAbortConfigTypeDef
+
+def get_value() -> IoTJobAbortConfigTypeDef:
+    return {
+        "criteriaList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IoTJobAbortConfigTypeDef(TypedDict):
+    criteriaList: Sequence[IoTJobAbortCriteriaTypeDef],  # (1)
+```
 
-- `criteriaList`:
-  `Sequence`\[[IoTJobAbortCriteriaTypeDef](./type_defs.md#iotjobabortcriteriatypedef)\]
-
-<a id="iotjobabortcriteriatypedef"></a>
-
+1. See [:material-code-braces: IoTJobAbortCriteriaTypeDef](./type_defs.md#iotjobabortcriteriatypedef) 
 ## IoTJobAbortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobAbortCriteriaTypeDef
+
+def get_value() -> IoTJobAbortCriteriaTypeDef:
+    return {
+        "failureType": ...,
+        "action": ...,
+        "thresholdPercentage": ...,
+        "minNumberOfExecutedThings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IoTJobAbortCriteriaTypeDef(TypedDict):
+    failureType: IoTJobExecutionFailureTypeType,  # (1)
+    action: IoTJobAbortActionType,  # (2)
+    thresholdPercentage: float,
+    minNumberOfExecutedThings: int,
+```
 
-- `failureType`:
-  [IoTJobExecutionFailureTypeType](./literals.md#iotjobexecutionfailuretypetype)
-- `action`: `Literal['CANCEL']` (see
-  [IoTJobAbortActionType](./literals.md#iotjobabortactiontype))
-- `thresholdPercentage`: `float`
-- `minNumberOfExecutedThings`: `int`
-
-<a id="iotjobexecutionsrolloutconfigtypedef"></a>
-
+1. See [:material-code-brackets: IoTJobExecutionFailureTypeType](./literals.md#iotjobexecutionfailuretypetype) 
+2. See [:material-code-brackets: IoTJobAbortActionType](./literals.md#iotjobabortactiontype) 
 ## IoTJobExecutionsRolloutConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobExecutionsRolloutConfigTypeDef
+
+def get_value() -> IoTJobExecutionsRolloutConfigTypeDef:
+    return {
+        "exponentialRate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IoTJobExecutionsRolloutConfigTypeDef(TypedDict):
+    exponentialRate: NotRequired[IoTJobExponentialRolloutRateTypeDef],  # (1)
+    maximumPerMinute: NotRequired[int],
+```
 
-- `exponentialRate`:
-  [IoTJobExponentialRolloutRateTypeDef](./type_defs.md#iotjobexponentialrolloutratetypedef)
-- `maximumPerMinute`: `int`
-
-<a id="iotjobexponentialrolloutratetypedef"></a>
-
+1. See [:material-code-braces: IoTJobExponentialRolloutRateTypeDef](./type_defs.md#iotjobexponentialrolloutratetypedef) 
 ## IoTJobExponentialRolloutRateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobExponentialRolloutRateTypeDef
+
+def get_value() -> IoTJobExponentialRolloutRateTypeDef:
+    return {
+        "baseRatePerMinute": ...,
+        "incrementFactor": ...,
+        "rateIncreaseCriteria": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IoTJobExponentialRolloutRateTypeDef(TypedDict):
+    baseRatePerMinute: int,
+    incrementFactor: float,
+    rateIncreaseCriteria: IoTJobRateIncreaseCriteriaTypeDef,  # (1)
+```
 
-- `baseRatePerMinute`: `int`
-- `incrementFactor`: `float`
-- `rateIncreaseCriteria`:
-  [IoTJobRateIncreaseCriteriaTypeDef](./type_defs.md#iotjobrateincreasecriteriatypedef)
-
-<a id="iotjobrateincreasecriteriatypedef"></a>
-
+1. See [:material-code-braces: IoTJobRateIncreaseCriteriaTypeDef](./type_defs.md#iotjobrateincreasecriteriatypedef) 
 ## IoTJobRateIncreaseCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobRateIncreaseCriteriaTypeDef
+
+def get_value() -> IoTJobRateIncreaseCriteriaTypeDef:
+    return {
+        "numberOfNotifiedThings": ...,
+    }
 ```
 
-Optional fields:
-
-- `numberOfNotifiedThings`: `int`
-- `numberOfSucceededThings`: `int`
-
-<a id="iotjobtimeoutconfigtypedef"></a>
+```python title="Definition"
+class IoTJobRateIncreaseCriteriaTypeDef(TypedDict):
+    numberOfNotifiedThings: NotRequired[int],
+    numberOfSucceededThings: NotRequired[int],
+```
 
 ## IoTJobTimeoutConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import IoTJobTimeoutConfigTypeDef
+
+def get_value() -> IoTJobTimeoutConfigTypeDef:
+    return {
+        "inProgressTimeoutInMinutes": ...,
+    }
 ```
 
-Optional fields:
-
-- `inProgressTimeoutInMinutes`: `int`
-
-<a id="lambdacontainerparamstypedef"></a>
+```python title="Definition"
+class IoTJobTimeoutConfigTypeDef(TypedDict):
+    inProgressTimeoutInMinutes: NotRequired[int],
+```
 
 ## LambdaContainerParamsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaContainerParamsTypeDef
+
+def get_value() -> LambdaContainerParamsTypeDef:
+    return {
+        "memorySizeInKB": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaContainerParamsTypeDef(TypedDict):
+    memorySizeInKB: NotRequired[int],
+    mountROSysfs: NotRequired[bool],
+    volumes: NotRequired[Sequence[LambdaVolumeMountTypeDef]],  # (1)
+    devices: NotRequired[Sequence[LambdaDeviceMountTypeDef]],  # (2)
+```
 
-- `memorySizeInKB`: `int`
-- `mountROSysfs`: `bool`
-- `volumes`:
-  `Sequence`\[[LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)\]
-- `devices`:
-  `Sequence`\[[LambdaDeviceMountTypeDef](./type_defs.md#lambdadevicemounttypedef)\]
-
-<a id="lambdadevicemounttypedef"></a>
-
+1. See [:material-code-braces: LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef) 
+2. See [:material-code-braces: LambdaDeviceMountTypeDef](./type_defs.md#lambdadevicemounttypedef) 
 ## LambdaDeviceMountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaDeviceMountTypeDef
+
+def get_value() -> LambdaDeviceMountTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaDeviceMountTypeDef(TypedDict):
+    path: str,
+    permission: NotRequired[LambdaFilesystemPermissionType],  # (1)
+    addGroupOwner: NotRequired[bool],
+```
 
-- `path`: `str`
-
-Optional fields:
-
-- `permission`:
-  [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
-- `addGroupOwner`: `bool`
-
-<a id="lambdaeventsourcetypedef"></a>
-
+1. See [:material-code-brackets: LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype) 
 ## LambdaEventSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaEventSourceTypeDef
+
+def get_value() -> LambdaEventSourceTypeDef:
+    return {
+        "topic": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaEventSourceTypeDef(TypedDict):
+    topic: str,
+    type: LambdaEventSourceTypeType,  # (1)
+```
 
-- `topic`: `str`
-- `type`: [LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype)
-
-<a id="lambdaexecutionparameterstypedef"></a>
-
+1. See [:material-code-brackets: LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype) 
 ## LambdaExecutionParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaExecutionParametersTypeDef
+
+def get_value() -> LambdaExecutionParametersTypeDef:
+    return {
+        "eventSources": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaExecutionParametersTypeDef(TypedDict):
+    eventSources: NotRequired[Sequence[LambdaEventSourceTypeDef]],  # (1)
+    maxQueueSize: NotRequired[int],
+    maxInstancesCount: NotRequired[int],
+    maxIdleTimeInSeconds: NotRequired[int],
+    timeoutInSeconds: NotRequired[int],
+    statusTimeoutInSeconds: NotRequired[int],
+    pinned: NotRequired[bool],
+    inputPayloadEncodingType: NotRequired[LambdaInputPayloadEncodingTypeType],  # (2)
+    execArgs: NotRequired[Sequence[str]],
+    environmentVariables: NotRequired[Mapping[str, str]],
+    linuxProcessParams: NotRequired[LambdaLinuxProcessParamsTypeDef],  # (3)
+```
 
-- `eventSources`:
-  `Sequence`\[[LambdaEventSourceTypeDef](./type_defs.md#lambdaeventsourcetypedef)\]
-- `maxQueueSize`: `int`
-- `maxInstancesCount`: `int`
-- `maxIdleTimeInSeconds`: `int`
-- `timeoutInSeconds`: `int`
-- `statusTimeoutInSeconds`: `int`
-- `pinned`: `bool`
-- `inputPayloadEncodingType`:
-  [LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype)
-- `execArgs`: `Sequence`\[`str`\]
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-- `linuxProcessParams`:
-  [LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef)
-
-<a id="lambdafunctionrecipesourcetypedef"></a>
-
+1. See [:material-code-braces: LambdaEventSourceTypeDef](./type_defs.md#lambdaeventsourcetypedef) 
+2. See [:material-code-brackets: LambdaInputPayloadEncodingTypeType](./literals.md#lambdainputpayloadencodingtypetype) 
+3. See [:material-code-braces: LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef) 
 ## LambdaFunctionRecipeSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaFunctionRecipeSourceTypeDef
+
+def get_value() -> LambdaFunctionRecipeSourceTypeDef:
+    return {
+        "lambdaArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaFunctionRecipeSourceTypeDef(TypedDict):
+    lambdaArn: str,
+    componentName: NotRequired[str],
+    componentVersion: NotRequired[str],
+    componentPlatforms: NotRequired[Sequence[ComponentPlatformTypeDef]],  # (1)
+    componentDependencies: NotRequired[Mapping[str, ComponentDependencyRequirementTypeDef]],  # (2)
+    componentLambdaParameters: NotRequired[LambdaExecutionParametersTypeDef],  # (3)
+```
 
-- `lambdaArn`: `str`
-
-Optional fields:
-
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `componentPlatforms`:
-  `Sequence`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
-- `componentDependencies`: `Mapping`\[`str`,
-  [ComponentDependencyRequirementTypeDef](./type_defs.md#componentdependencyrequirementtypedef)\]
-- `componentLambdaParameters`:
-  [LambdaExecutionParametersTypeDef](./type_defs.md#lambdaexecutionparameterstypedef)
-
-<a id="lambdalinuxprocessparamstypedef"></a>
-
+1. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 
+2. See [:material-code-braces: ComponentDependencyRequirementTypeDef](./type_defs.md#componentdependencyrequirementtypedef) 
+3. See [:material-code-braces: LambdaExecutionParametersTypeDef](./type_defs.md#lambdaexecutionparameterstypedef) 
 ## LambdaLinuxProcessParamsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaLinuxProcessParamsTypeDef
+
+def get_value() -> LambdaLinuxProcessParamsTypeDef:
+    return {
+        "isolationMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaLinuxProcessParamsTypeDef(TypedDict):
+    isolationMode: NotRequired[LambdaIsolationModeType],  # (1)
+    containerParams: NotRequired[LambdaContainerParamsTypeDef],  # (2)
+```
 
-- `isolationMode`:
-  [LambdaIsolationModeType](./literals.md#lambdaisolationmodetype)
-- `containerParams`:
-  [LambdaContainerParamsTypeDef](./type_defs.md#lambdacontainerparamstypedef)
-
-<a id="lambdavolumemounttypedef"></a>
-
+1. See [:material-code-brackets: LambdaIsolationModeType](./literals.md#lambdaisolationmodetype) 
+2. See [:material-code-braces: LambdaContainerParamsTypeDef](./type_defs.md#lambdacontainerparamstypedef) 
 ## LambdaVolumeMountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import LambdaVolumeMountTypeDef
+
+def get_value() -> LambdaVolumeMountTypeDef:
+    return {
+        "sourcePath": ...,
+        "destinationPath": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaVolumeMountTypeDef(TypedDict):
+    sourcePath: str,
+    destinationPath: str,
+    permission: NotRequired[LambdaFilesystemPermissionType],  # (1)
+    addGroupOwner: NotRequired[bool],
+```
 
-- `sourcePath`: `str`
-- `destinationPath`: `str`
+1. See [:material-code-brackets: LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype) 
+## ListClientDevicesAssociatedWithCoreDeviceRequestListClientDevicesAssociatedWithCoreDevicePaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceRequestListClientDevicesAssociatedWithCoreDevicePaginateTypeDef
 
-- `permission`:
-  [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
-- `addGroupOwner`: `bool`
+def get_value() -> ListClientDevicesAssociatedWithCoreDeviceRequestListClientDevicesAssociatedWithCoreDevicePaginateTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
+```
 
-<a id="listclientdevicesassociatedwithcoredevicerequestrequesttypedef"></a>
+```python title="Definition"
+class ListClientDevicesAssociatedWithCoreDeviceRequestListClientDevicesAssociatedWithCoreDevicePaginateTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef
+
+def get_value() -> ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listclientdevicesassociatedwithcoredeviceresponsetypedef"></a>
+```python title="Definition"
+class ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+
+def get_value() -> ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef:
+    return {
+        "associatedClientDevices": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef(TypedDict):
+    associatedClientDevices: List[AssociatedClientDeviceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `associatedClientDevices`:
-  `List`\[[AssociatedClientDeviceTypeDef](./type_defs.md#associatedclientdevicetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AssociatedClientDeviceTypeDef](./type_defs.md#associatedclientdevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComponentVersionsRequestListComponentVersionsPaginateTypeDef
 
-<a id="listcomponentversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsRequestListComponentVersionsPaginateTypeDef
 
+def get_value() -> ListComponentVersionsRequestListComponentVersionsPaginateTypeDef:
+    return {
+        "arn": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentVersionsRequestListComponentVersionsPaginateTypeDef(TypedDict):
+    arn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComponentVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsRequestRequestTypeDef
+
+def get_value() -> ListComponentVersionsRequestRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcomponentversionsresponsetypedef"></a>
+```python title="Definition"
+class ListComponentVersionsRequestRequestTypeDef(TypedDict):
+    arn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListComponentVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListComponentVersionsResponseTypeDef
+
+def get_value() -> ListComponentVersionsResponseTypeDef:
+    return {
+        "componentVersions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComponentVersionsResponseTypeDef(TypedDict):
+    componentVersions: List[ComponentVersionListItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `componentVersions`:
-  `List`\[[ComponentVersionListItemTypeDef](./type_defs.md#componentversionlistitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComponentVersionListItemTypeDef](./type_defs.md#componentversionlistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComponentsRequestListComponentsPaginateTypeDef
 
-<a id="listcomponentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListComponentsRequestListComponentsPaginateTypeDef
 
+def get_value() -> ListComponentsRequestListComponentsPaginateTypeDef:
+    return {
+        "scope": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsRequestListComponentsPaginateTypeDef(TypedDict):
+    scope: NotRequired[ComponentVisibilityScopeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComponentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListComponentsRequestRequestTypeDef
+
+def get_value() -> ListComponentsRequestRequestTypeDef:
+    return {
+        "scope": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListComponentsRequestRequestTypeDef(TypedDict):
+    scope: NotRequired[ComponentVisibilityScopeType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `scope`:
-  [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcomponentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype) 
 ## ListComponentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListComponentsResponseTypeDef
+
+def get_value() -> ListComponentsResponseTypeDef:
+    return {
+        "components": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComponentsResponseTypeDef(TypedDict):
+    components: List[ComponentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `components`: `List`\[[ComponentTypeDef](./type_defs.md#componenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCoreDevicesRequestListCoreDevicesPaginateTypeDef
 
-<a id="listcoredevicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesRequestListCoreDevicesPaginateTypeDef
 
+def get_value() -> ListCoreDevicesRequestListCoreDevicesPaginateTypeDef:
+    return {
+        "thingGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCoreDevicesRequestListCoreDevicesPaginateTypeDef(TypedDict):
+    thingGroupArn: NotRequired[str],
+    status: NotRequired[CoreDeviceStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: CoreDeviceStatusType](./literals.md#coredevicestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCoreDevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesRequestRequestTypeDef
+
+def get_value() -> ListCoreDevicesRequestRequestTypeDef:
+    return {
+        "thingGroupArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCoreDevicesRequestRequestTypeDef(TypedDict):
+    thingGroupArn: NotRequired[str],
+    status: NotRequired[CoreDeviceStatusType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `thingGroupArn`: `str`
-- `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcoredevicesresponsetypedef"></a>
-
+1. See [:material-code-brackets: CoreDeviceStatusType](./literals.md#coredevicestatustype) 
 ## ListCoreDevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListCoreDevicesResponseTypeDef
+
+def get_value() -> ListCoreDevicesResponseTypeDef:
+    return {
+        "coreDevices": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCoreDevicesResponseTypeDef(TypedDict):
+    coreDevices: List[CoreDeviceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `coreDevices`:
-  `List`\[[CoreDeviceTypeDef](./type_defs.md#coredevicetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CoreDeviceTypeDef](./type_defs.md#coredevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentsRequestListDeploymentsPaginateTypeDef
 
-<a id="listdeploymentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListDeploymentsRequestListDeploymentsPaginateTypeDef
 
+def get_value() -> ListDeploymentsRequestListDeploymentsPaginateTypeDef:
+    return {
+        "targetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentsRequestListDeploymentsPaginateTypeDef(TypedDict):
+    targetArn: NotRequired[str],
+    historyFilter: NotRequired[DeploymentHistoryFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListDeploymentsRequestRequestTypeDef
+
+def get_value() -> ListDeploymentsRequestRequestTypeDef:
+    return {
+        "targetArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDeploymentsRequestRequestTypeDef(TypedDict):
+    targetArn: NotRequired[str],
+    historyFilter: NotRequired[DeploymentHistoryFilterType],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `targetArn`: `str`
-- `historyFilter`:
-  [DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listdeploymentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: DeploymentHistoryFilterType](./literals.md#deploymenthistoryfiltertype) 
 ## ListDeploymentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListDeploymentsResponseTypeDef
+
+def get_value() -> ListDeploymentsResponseTypeDef:
+    return {
+        "deployments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentsResponseTypeDef(TypedDict):
+    deployments: List[DeploymentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deployments`:
-  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEffectiveDeploymentsRequestListEffectiveDeploymentsPaginateTypeDef
 
-<a id="listeffectivedeploymentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsRequestListEffectiveDeploymentsPaginateTypeDef
 
+def get_value() -> ListEffectiveDeploymentsRequestListEffectiveDeploymentsPaginateTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListEffectiveDeploymentsRequestListEffectiveDeploymentsPaginateTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEffectiveDeploymentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsRequestRequestTypeDef
+
+def get_value() -> ListEffectiveDeploymentsRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listeffectivedeploymentsresponsetypedef"></a>
+```python title="Definition"
+class ListEffectiveDeploymentsRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListEffectiveDeploymentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListEffectiveDeploymentsResponseTypeDef
+
+def get_value() -> ListEffectiveDeploymentsResponseTypeDef:
+    return {
+        "effectiveDeployments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEffectiveDeploymentsResponseTypeDef(TypedDict):
+    effectiveDeployments: List[EffectiveDeploymentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `effectiveDeployments`:
-  `List`\[[EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EffectiveDeploymentTypeDef](./type_defs.md#effectivedeploymenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef
 
-<a id="listinstalledcomponentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef
 
+def get_value() -> ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstalledComponentsRequestListInstalledComponentsPaginateTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstalledComponentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsRequestRequestTypeDef
+
+def get_value() -> ListInstalledComponentsRequestRequestTypeDef:
+    return {
+        "coreDeviceThingName": ...,
+    }
 ```
 
-Required fields:
-
-- `coreDeviceThingName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listinstalledcomponentsresponsetypedef"></a>
+```python title="Definition"
+class ListInstalledComponentsRequestRequestTypeDef(TypedDict):
+    coreDeviceThingName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListInstalledComponentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListInstalledComponentsResponseTypeDef
+
+def get_value() -> ListInstalledComponentsResponseTypeDef:
+    return {
+        "installedComponents": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstalledComponentsResponseTypeDef(TypedDict):
+    installedComponents: List[InstalledComponentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `installedComponents`:
-  `List`\[[InstalledComponentTypeDef](./type_defs.md#installedcomponenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstalledComponentTypeDef](./type_defs.md#installedcomponenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="resolvecomponentcandidatesrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResolveComponentCandidatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesRequestRequestTypeDef
+
+def get_value() -> ResolveComponentCandidatesRequestRequestTypeDef:
+    return {
+        "platform": ...,
+        "componentCandidates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveComponentCandidatesRequestRequestTypeDef(TypedDict):
+    platform: ComponentPlatformTypeDef,  # (1)
+    componentCandidates: Sequence[ComponentCandidateTypeDef],  # (2)
+```
 
-- `platform`:
-  [ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)
-- `componentCandidates`:
-  `Sequence`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
-
-<a id="resolvecomponentcandidatesresponsetypedef"></a>
-
+1. See [:material-code-braces: ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef) 
+2. See [:material-code-braces: ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef) 
 ## ResolveComponentCandidatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ResolveComponentCandidatesResponseTypeDef
+
+def get_value() -> ResolveComponentCandidatesResponseTypeDef:
+    return {
+        "resolvedComponentVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveComponentCandidatesResponseTypeDef(TypedDict):
+    resolvedComponentVersions: List[ResolvedComponentVersionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resolvedComponentVersions`:
-  `List`\[[ResolvedComponentVersionTypeDef](./type_defs.md#resolvedcomponentversiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resolvedcomponentversiontypedef"></a>
-
+1. See [:material-code-braces: ResolvedComponentVersionTypeDef](./type_defs.md#resolvedcomponentversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResolvedComponentVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ResolvedComponentVersionTypeDef
+
+def get_value() -> ResolvedComponentVersionTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `componentName`: `str`
-- `componentVersion`: `str`
-- `recipe`: `bytes`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResolvedComponentVersionTypeDef(TypedDict):
+    arn: NotRequired[str],
+    componentName: NotRequired[str],
+    componentVersion: NotRequired[str],
+    recipe: NotRequired[bytes],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="systemresourcelimitstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SystemResourceLimitsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import SystemResourceLimitsTypeDef
+
+def get_value() -> SystemResourceLimitsTypeDef:
+    return {
+        "memory": ...,
+    }
 ```
 
-Optional fields:
-
-- `memory`: `int`
-- `cpus`: `float`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SystemResourceLimitsTypeDef(TypedDict):
+    memory: NotRequired[int],
+    cpus: NotRequired[float],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateconnectivityinforequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateConnectivityInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import UpdateConnectivityInfoRequestRequestTypeDef
+
+def get_value() -> UpdateConnectivityInfoRequestRequestTypeDef:
+    return {
+        "thingName": ...,
+        "connectivityInfo": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectivityInfoRequestRequestTypeDef(TypedDict):
+    thingName: str,
+    connectivityInfo: Sequence[ConnectivityInfoTypeDef],  # (1)
+```
 
-- `thingName`: `str`
-- `connectivityInfo`:
-  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
-
-<a id="updateconnectivityinforesponsetypedef"></a>
-
+1. See [:material-code-braces: ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef) 
 ## UpdateConnectivityInfoResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_greengrassv2.type_defs import UpdateConnectivityInfoResponseTypeDef
+
+def get_value() -> UpdateConnectivityInfoResponseTypeDef:
+    return {
+        "version": ...,
+        "message": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateConnectivityInfoResponseTypeDef(TypedDict):
+    version: str,
+    message: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `version`: `str`
-- `message`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

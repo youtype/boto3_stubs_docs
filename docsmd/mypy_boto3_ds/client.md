@@ -1,96 +1,18 @@
-<a id="directoryserviceclient-for-boto3-directoryservice-module"></a>
+# DirectoryServiceClient
 
-# DirectoryServiceClient for boto3 DirectoryService module
+> [Index](../README.md) > [DirectoryService](./README.md) > DirectoryServiceClient
 
-> [Index](../README.md) > [DirectoryService](./README.md) >
-> DirectoryServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
-type annotations stubs module
-[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
-
-- [DirectoryServiceClient for boto3 DirectoryService module](#directoryserviceclient-for-boto3-directoryservice-module)
-  - [DirectoryServiceClient](#directoryserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_shared_directory](#accept_shared_directory)
-    - [add_ip_routes](#add_ip_routes)
-    - [add_region](#add_region)
-    - [add_tags_to_resource](#add_tags_to_resource)
-    - [can_paginate](#can_paginate)
-    - [cancel_schema_extension](#cancel_schema_extension)
-    - [connect_directory](#connect_directory)
-    - [create_alias](#create_alias)
-    - [create_computer](#create_computer)
-    - [create_conditional_forwarder](#create_conditional_forwarder)
-    - [create_directory](#create_directory)
-    - [create_log_subscription](#create_log_subscription)
-    - [create_microsoft_ad](#create_microsoft_ad)
-    - [create_snapshot](#create_snapshot)
-    - [create_trust](#create_trust)
-    - [delete_conditional_forwarder](#delete_conditional_forwarder)
-    - [delete_directory](#delete_directory)
-    - [delete_log_subscription](#delete_log_subscription)
-    - [delete_snapshot](#delete_snapshot)
-    - [delete_trust](#delete_trust)
-    - [deregister_certificate](#deregister_certificate)
-    - [deregister_event_topic](#deregister_event_topic)
-    - [describe_certificate](#describe_certificate)
-    - [describe_client_authentication_settings](#describe_client_authentication_settings)
-    - [describe_conditional_forwarders](#describe_conditional_forwarders)
-    - [describe_directories](#describe_directories)
-    - [describe_domain_controllers](#describe_domain_controllers)
-    - [describe_event_topics](#describe_event_topics)
-    - [describe_ldaps_settings](#describe_ldaps_settings)
-    - [describe_regions](#describe_regions)
-    - [describe_shared_directories](#describe_shared_directories)
-    - [describe_snapshots](#describe_snapshots)
-    - [describe_trusts](#describe_trusts)
-    - [disable_client_authentication](#disable_client_authentication)
-    - [disable_ldaps](#disable_ldaps)
-    - [disable_radius](#disable_radius)
-    - [disable_sso](#disable_sso)
-    - [enable_client_authentication](#enable_client_authentication)
-    - [enable_ldaps](#enable_ldaps)
-    - [enable_radius](#enable_radius)
-    - [enable_sso](#enable_sso)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_directory_limits](#get_directory_limits)
-    - [get_snapshot_limits](#get_snapshot_limits)
-    - [list_certificates](#list_certificates)
-    - [list_ip_routes](#list_ip_routes)
-    - [list_log_subscriptions](#list_log_subscriptions)
-    - [list_schema_extensions](#list_schema_extensions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_certificate](#register_certificate)
-    - [register_event_topic](#register_event_topic)
-    - [reject_shared_directory](#reject_shared_directory)
-    - [remove_ip_routes](#remove_ip_routes)
-    - [remove_region](#remove_region)
-    - [remove_tags_from_resource](#remove_tags_from_resource)
-    - [reset_user_password](#reset_user_password)
-    - [restore_from_snapshot](#restore_from_snapshot)
-    - [share_directory](#share_directory)
-    - [start_schema_extension](#start_schema_extension)
-    - [unshare_directory](#unshare_directory)
-    - [update_conditional_forwarder](#update_conditional_forwarder)
-    - [update_number_of_domain_controllers](#update_number_of_domain_controllers)
-    - [update_radius](#update_radius)
-    - [update_trust](#update_trust)
-    - [verify_trust](#verify_trust)
-    - [get_paginator](#get_paginator)
-
-<a id="directoryserviceclient"></a>
+    Auto-generated documentation for [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
+    type annotations stubs module [mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 ## DirectoryServiceClient
 
-Type annotations for `boto3.client("ds")`
+Type annotations and code completion for `#!python boto3.client("ds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_ds.client import DirectoryServiceClient
 
@@ -98,1582 +20,2116 @@ def get_ds_client() -> DirectoryServiceClient:
     return Session().client("ds")
 ```
 
-Boto3 documentation:
-[DirectoryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("ds").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("ds")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AuthenticationFailedException,
+    client.CertificateAlreadyExistsException,
+    client.CertificateDoesNotExistException,
+    client.CertificateInUseException,
+    client.CertificateLimitExceededException,
+    client.ClientError,
+    client.ClientException,
+    client.DirectoryAlreadyInRegionException,
+    client.DirectoryAlreadySharedException,
+    client.DirectoryDoesNotExistException,
+    client.DirectoryLimitExceededException,
+    client.DirectoryNotSharedException,
+    client.DirectoryUnavailableException,
+    client.DomainControllerLimitExceededException,
+    client.EntityAlreadyExistsException,
+    client.EntityDoesNotExistException,
+    client.InsufficientPermissionsException,
+    client.InvalidCertificateException,
+    client.InvalidClientAuthStatusException,
+    client.InvalidLDAPSStatusException,
+    client.InvalidNextTokenException,
+    client.InvalidParameterException,
+    client.InvalidPasswordException,
+    client.InvalidTargetException,
+    client.IpRouteLimitExceededException,
+    client.NoAvailableCertificateException,
+    client.OrganizationsException,
+    client.RegionLimitExceededException,
+    client.ServiceException,
+    client.ShareLimitExceededException,
+    client.SnapshotLimitExceededException,
+    client.TagLimitExceededException,
+    client.UnsupportedOperationException,
+    client.UserDoesNotExistException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_ds.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AuthenticationFailedException`
-- `Exceptions.CertificateAlreadyExistsException`
-- `Exceptions.CertificateDoesNotExistException`
-- `Exceptions.CertificateInUseException`
-- `Exceptions.CertificateLimitExceededException`
-- `Exceptions.ClientError`
-- `Exceptions.ClientException`
-- `Exceptions.DirectoryAlreadyInRegionException`
-- `Exceptions.DirectoryAlreadySharedException`
-- `Exceptions.DirectoryDoesNotExistException`
-- `Exceptions.DirectoryLimitExceededException`
-- `Exceptions.DirectoryNotSharedException`
-- `Exceptions.DirectoryUnavailableException`
-- `Exceptions.DomainControllerLimitExceededException`
-- `Exceptions.EntityAlreadyExistsException`
-- `Exceptions.EntityDoesNotExistException`
-- `Exceptions.InsufficientPermissionsException`
-- `Exceptions.InvalidCertificateException`
-- `Exceptions.InvalidClientAuthStatusException`
-- `Exceptions.InvalidLDAPSStatusException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidPasswordException`
-- `Exceptions.InvalidTargetException`
-- `Exceptions.IpRouteLimitExceededException`
-- `Exceptions.NoAvailableCertificateException`
-- `Exceptions.OrganizationsException`
-- `Exceptions.RegionLimitExceededException`
-- `Exceptions.ServiceException`
-- `Exceptions.ShareLimitExceededException`
-- `Exceptions.SnapshotLimitExceededException`
-- `Exceptions.TagLimitExceededException`
-- `Exceptions.UnsupportedOperationException`
-- `Exceptions.UserDoesNotExistException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DirectoryServiceClient exceptions.
-
-Type annotations for `boto3.client("ds").exceptions` method.
-
-Boto3 documentation:
-[DirectoryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_shared\_directory"></a>
-
-### accept_shared_directory
+### accept\_shared\_directory
 
 Accepts a directory sharing request that was sent from the directory owner
 account.
 
-Type annotations for `boto3.client("ds").accept_shared_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").accept_shared_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.accept_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.accept_shared_directory)
+```python title="Method definition"
+def accept_shared_directory(
+    self,
+    *,
+    SharedDirectoryId: str,
+) -> AcceptSharedDirectoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptSharedDirectoryRequestRequestTypeDef](./type_defs.md#acceptshareddirectoryrequestrequesttypedef).
+1. See [:material-code-braces: AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `SharedDirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptSharedDirectoryRequestRequestTypeDef = {  # (1)
+    "SharedDirectoryId": ...,
+}
 
-Returns
-[AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef).
+parent.accept_shared_directory(**kwargs)
+```
 
-<a id="add\_ip\_routes"></a>
+1. See [:material-code-braces: AcceptSharedDirectoryRequestRequestTypeDef](./type_defs.md#acceptshareddirectoryrequestrequesttypedef) 
 
-### add_ip_routes
+### add\_ip\_routes
 
 If the DNS server for your self-managed domain uses a publicly addressable IP
 address, you must add a CIDR address block to correctly route traffic to and
 from your Microsoft AD on Amazon Web Services.
 
-Type annotations for `boto3.client("ds").add_ip_routes` method.
+Type annotations and code completion for `#!python boto3.client("ds").add_ip_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
 
-Boto3 documentation:
-[DirectoryService.Client.add_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_ip_routes)
+```python title="Method definition"
+def add_ip_routes(
+    self,
+    *,
+    DirectoryId: str,
+    IpRoutes: Sequence[IpRouteTypeDef],  # (1)
+    UpdateSecurityGroupForDirectoryControllers: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddIpRoutesRequestRequestTypeDef](./type_defs.md#addiproutesrequestrequesttypedef).
+1. See [:material-code-braces: IpRouteTypeDef](./type_defs.md#iproutetypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `IpRoutes`: `Sequence`\[[IpRouteTypeDef](./type_defs.md#iproutetypedef)\]
-  *(required)*
-- `UpdateSecurityGroupForDirectoryControllers`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AddIpRoutesRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "IpRoutes": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_ip_routes(**kwargs)
+```
 
-<a id="add\_region"></a>
+1. See [:material-code-braces: AddIpRoutesRequestRequestTypeDef](./type_defs.md#addiproutesrequestrequesttypedef) 
 
-### add_region
+### add\_region
 
-Adds two domain controllers in the specified Region for the specified
-directory.
+Adds two domain controllers in the specified Region for the specified directory.
 
-Type annotations for `boto3.client("ds").add_region` method.
+Type annotations and code completion for `#!python boto3.client("ds").add_region` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region)
 
-Boto3 documentation:
-[DirectoryService.Client.add_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_region)
+```python title="Method definition"
+def add_region(
+    self,
+    *,
+    DirectoryId: str,
+    RegionName: str,
+    VPCSettings: DirectoryVpcSettingsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddRegionRequestRequestTypeDef](./type_defs.md#addregionrequestrequesttypedef).
+1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RegionName`: `str` *(required)*
-- `VPCSettings`:
-  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddRegionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RegionName": ...,
+    "VPCSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_region(**kwargs)
+```
 
-<a id="add\_tags\_to\_resource"></a>
+1. See [:material-code-braces: AddRegionRequestRequestTypeDef](./type_defs.md#addregionrequestrequesttypedef) 
 
-### add_tags_to_resource
+### add\_tags\_to\_resource
 
 Adds or overwrites one or more tags for the specified directory.
 
-Type annotations for `boto3.client("ds").add_tags_to_resource` method.
+Type annotations and code completion for `#!python boto3.client("ds").add_tags_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
 
-Boto3 documentation:
-[DirectoryService.Client.add_tags_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.add_tags_to_resource)
+```python title="Method definition"
+def add_tags_to_resource(
+    self,
+    *,
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsToResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags_to_resource(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsToResourceRequestRequestTypeDef](./type_defs.md#addtagstoresourcerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("ds").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("ds").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate)
 
-Boto3 documentation:
-[DirectoryService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_schema\_extension"></a>
-
-### cancel_schema_extension
+### cancel\_schema\_extension
 
 Cancels an in-progress schema extension to a Microsoft AD directory.
 
-Type annotations for `boto3.client("ds").cancel_schema_extension` method.
+Type annotations and code completion for `#!python boto3.client("ds").cancel_schema_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
 
-Boto3 documentation:
-[DirectoryService.Client.cancel_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.cancel_schema_extension)
+```python title="Method definition"
+def cancel_schema_extension(
+    self,
+    *,
+    DirectoryId: str,
+    SchemaExtensionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelSchemaExtensionRequestRequestTypeDef](./type_defs.md#cancelschemaextensionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `SchemaExtensionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelSchemaExtensionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "SchemaExtensionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_schema_extension(**kwargs)
+```
 
-<a id="connect\_directory"></a>
+1. See [:material-code-braces: CancelSchemaExtensionRequestRequestTypeDef](./type_defs.md#cancelschemaextensionrequestrequesttypedef) 
 
-### connect_directory
+### connect\_directory
 
 Creates an AD Connector to connect to a self-managed directory.
 
-Type annotations for `boto3.client("ds").connect_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").connect_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.connect_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.connect_directory)
+```python title="Method definition"
+def connect_directory(
+    self,
+    *,
+    Name: str,
+    Password: str,
+    Size: DirectorySizeType,  # (1)
+    ConnectSettings: DirectoryConnectSettingsTypeDef,  # (2)
+    ShortName: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> ConnectDirectoryResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ConnectDirectoryRequestRequestTypeDef](./type_defs.md#connectdirectoryrequestrequesttypedef).
+1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
+2. See [:material-code-braces: DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `Size`: [DirectorySizeType](./literals.md#directorysizetype) *(required)*
-- `ConnectSettings`:
-  [DirectoryConnectSettingsTypeDef](./type_defs.md#directoryconnectsettingstypedef)
-  *(required)*
-- `ShortName`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ConnectDirectoryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Password": ...,
+    "Size": ...,
+    "ConnectSettings": ...,
+}
 
-Returns
-[ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
+parent.connect_directory(**kwargs)
+```
 
-<a id="create\_alias"></a>
+1. See [:material-code-braces: ConnectDirectoryRequestRequestTypeDef](./type_defs.md#connectdirectoryrequestrequesttypedef) 
 
-### create_alias
+### create\_alias
 
 Creates an alias for a directory and assigns the alias to the directory.
 
-Type annotations for `boto3.client("ds").create_alias` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
 
-Boto3 documentation:
-[DirectoryService.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_alias)
+```python title="Method definition"
+def create_alias(
+    self,
+    *,
+    DirectoryId: str,
+    Alias: str,
+) -> CreateAliasResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
+1. See [:material-code-braces: CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Alias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAliasRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Alias": ...,
+}
 
-Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
+parent.create_alias(**kwargs)
+```
 
-<a id="create\_computer"></a>
+1. See [:material-code-braces: CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef) 
 
-### create_computer
+### create\_computer
 
 Creates an Active Directory computer object in the specified directory.
 
-Type annotations for `boto3.client("ds").create_computer` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_computer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer)
 
-Boto3 documentation:
-[DirectoryService.Client.create_computer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_computer)
+```python title="Method definition"
+def create_computer(
+    self,
+    *,
+    DirectoryId: str,
+    ComputerName: str,
+    Password: str,
+    OrganizationalUnitDistinguishedName: str = ...,
+    ComputerAttributes: Sequence[AttributeTypeDef] = ...,  # (1)
+) -> CreateComputerResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateComputerRequestRequestTypeDef](./type_defs.md#createcomputerrequestrequesttypedef).
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `ComputerName`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `OrganizationalUnitDistinguishedName`: `str`
-- `ComputerAttributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateComputerRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "ComputerName": ...,
+    "Password": ...,
+}
 
-Returns
-[CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
+parent.create_computer(**kwargs)
+```
 
-<a id="create\_conditional\_forwarder"></a>
+1. See [:material-code-braces: CreateComputerRequestRequestTypeDef](./type_defs.md#createcomputerrequestrequesttypedef) 
 
-### create_conditional_forwarder
+### create\_conditional\_forwarder
 
 Creates a conditional forwarder associated with your Amazon Web Services
 directory.
 
-Type annotations for `boto3.client("ds").create_conditional_forwarder` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_conditional_forwarder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
 
-Boto3 documentation:
-[DirectoryService.Client.create_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_conditional_forwarder)
+```python title="Method definition"
+def create_conditional_forwarder(
+    self,
+    *,
+    DirectoryId: str,
+    RemoteDomainName: str,
+    DnsIpAddrs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateConditionalForwarderRequestRequestTypeDef](./type_defs.md#createconditionalforwarderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateConditionalForwarderRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RemoteDomainName": ...,
+    "DnsIpAddrs": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_conditional_forwarder(**kwargs)
+```
 
-<a id="create\_directory"></a>
+1. See [:material-code-braces: CreateConditionalForwarderRequestRequestTypeDef](./type_defs.md#createconditionalforwarderrequestrequesttypedef) 
 
-### create_directory
+### create\_directory
 
 Creates a Simple AD directory.
 
-Type annotations for `boto3.client("ds").create_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.create_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_directory)
+```python title="Method definition"
+def create_directory(
+    self,
+    *,
+    Name: str,
+    Password: str,
+    Size: DirectorySizeType,  # (1)
+    ShortName: str = ...,
+    Description: str = ...,
+    VpcSettings: DirectoryVpcSettingsTypeDef = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDirectoryResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef).
+1. See [:material-code-brackets: DirectorySizeType](./literals.md#directorysizetype) 
+2. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `Size`: [DirectorySizeType](./literals.md#directorysizetype) *(required)*
-- `ShortName`: `str`
-- `Description`: `str`
-- `VpcSettings`:
-  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDirectoryRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Password": ...,
+    "Size": ...,
+}
 
-Returns
-[CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
+parent.create_directory(**kwargs)
+```
 
-<a id="create\_log\_subscription"></a>
+1. See [:material-code-braces: CreateDirectoryRequestRequestTypeDef](./type_defs.md#createdirectoryrequestrequesttypedef) 
 
-### create_log_subscription
+### create\_log\_subscription
 
 Creates a subscription to forward real-time Directory Service domain controller
 security logs to the specified Amazon CloudWatch log group in your Amazon Web
 Services account.
 
-Type annotations for `boto3.client("ds").create_log_subscription` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_log_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
 
-Boto3 documentation:
-[DirectoryService.Client.create_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_log_subscription)
+```python title="Method definition"
+def create_log_subscription(
+    self,
+    *,
+    DirectoryId: str,
+    LogGroupName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateLogSubscriptionRequestRequestTypeDef](./type_defs.md#createlogsubscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `LogGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLogSubscriptionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "LogGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_log_subscription(**kwargs)
+```
 
-<a id="create\_microsoft\_ad"></a>
+1. See [:material-code-braces: CreateLogSubscriptionRequestRequestTypeDef](./type_defs.md#createlogsubscriptionrequestrequesttypedef) 
 
-### create_microsoft_ad
+### create\_microsoft\_ad
 
 Creates a Microsoft AD directory in the Amazon Web Services Cloud.
 
-Type annotations for `boto3.client("ds").create_microsoft_ad` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_microsoft_ad` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
 
-Boto3 documentation:
-[DirectoryService.Client.create_microsoft_ad](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_microsoft_ad)
+```python title="Method definition"
+def create_microsoft_ad(
+    self,
+    *,
+    Name: str,
+    Password: str,
+    VpcSettings: DirectoryVpcSettingsTypeDef,  # (1)
+    ShortName: str = ...,
+    Description: str = ...,
+    Edition: DirectoryEditionType = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateMicrosoftADResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateMicrosoftADRequestRequestTypeDef](./type_defs.md#createmicrosoftadrequestrequesttypedef).
+1. See [:material-code-braces: DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef) 
+2. See [:material-code-brackets: DirectoryEditionType](./literals.md#directoryeditiontype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Password`: `str` *(required)*
-- `VpcSettings`:
-  [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
-  *(required)*
-- `ShortName`: `str`
-- `Description`: `str`
-- `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMicrosoftADRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Password": ...,
+    "VpcSettings": ...,
+}
 
-Returns
-[CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
+parent.create_microsoft_ad(**kwargs)
+```
 
-<a id="create\_snapshot"></a>
+1. See [:material-code-braces: CreateMicrosoftADRequestRequestTypeDef](./type_defs.md#createmicrosoftadrequestrequesttypedef) 
 
-### create_snapshot
+### create\_snapshot
 
 Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web
 Services cloud.
 
-Type annotations for `boto3.client("ds").create_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
 
-Boto3 documentation:
-[DirectoryService.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_snapshot)
+```python title="Method definition"
+def create_snapshot(
+    self,
+    *,
+    DirectoryId: str,
+    Name: str = ...,
+) -> CreateSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
+parent.create_snapshot(**kwargs)
+```
 
-<a id="create\_trust"></a>
+1. See [:material-code-braces: CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef) 
 
-### create_trust
+### create\_trust
 
 Directory Service for Microsoft Active Directory allows you to configure trust
 relationships.
 
-Type annotations for `boto3.client("ds").create_trust` method.
+Type annotations and code completion for `#!python boto3.client("ds").create_trust` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust)
 
-Boto3 documentation:
-[DirectoryService.Client.create_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.create_trust)
+```python title="Method definition"
+def create_trust(
+    self,
+    *,
+    DirectoryId: str,
+    RemoteDomainName: str,
+    TrustPassword: str,
+    TrustDirection: TrustDirectionType,  # (1)
+    TrustType: TrustTypeType = ...,  # (2)
+    ConditionalForwarderIpAddrs: Sequence[str] = ...,
+    SelectiveAuth: SelectiveAuthType = ...,  # (3)
+) -> CreateTrustResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateTrustRequestRequestTypeDef](./type_defs.md#createtrustrequestrequesttypedef).
+1. See [:material-code-brackets: TrustDirectionType](./literals.md#trustdirectiontype) 
+2. See [:material-code-brackets: TrustTypeType](./literals.md#trusttypetype) 
+3. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
+4. See [:material-code-braces: CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RemoteDomainName`: `str` *(required)*
-- `TrustPassword`: `str` *(required)*
-- `TrustDirection`: [TrustDirectionType](./literals.md#trustdirectiontype)
-  *(required)*
-- `TrustType`: [TrustTypeType](./literals.md#trusttypetype)
-- `ConditionalForwarderIpAddrs`: `Sequence`\[`str`\]
-- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
+```python title="Usage example with kwargs"
+kwargs: CreateTrustRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RemoteDomainName": ...,
+    "TrustPassword": ...,
+    "TrustDirection": ...,
+}
 
-Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
+parent.create_trust(**kwargs)
+```
 
-<a id="delete\_conditional\_forwarder"></a>
+1. See [:material-code-braces: CreateTrustRequestRequestTypeDef](./type_defs.md#createtrustrequestrequesttypedef) 
 
-### delete_conditional_forwarder
+### delete\_conditional\_forwarder
 
 Deletes a conditional forwarder that has been set up for your Amazon Web
 Services directory.
 
-Type annotations for `boto3.client("ds").delete_conditional_forwarder` method.
+Type annotations and code completion for `#!python boto3.client("ds").delete_conditional_forwarder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
 
-Boto3 documentation:
-[DirectoryService.Client.delete_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_conditional_forwarder)
+```python title="Method definition"
+def delete_conditional_forwarder(
+    self,
+    *,
+    DirectoryId: str,
+    RemoteDomainName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConditionalForwarderRequestRequestTypeDef](./type_defs.md#deleteconditionalforwarderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RemoteDomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConditionalForwarderRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RemoteDomainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_conditional_forwarder(**kwargs)
+```
 
-<a id="delete\_directory"></a>
+1. See [:material-code-braces: DeleteConditionalForwarderRequestRequestTypeDef](./type_defs.md#deleteconditionalforwarderrequestrequesttypedef) 
 
-### delete_directory
+### delete\_directory
 
 Deletes an Directory Service directory.
 
-Type annotations for `boto3.client("ds").delete_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").delete_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.delete_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_directory)
+```python title="Method definition"
+def delete_directory(
+    self,
+    *,
+    DirectoryId: str,
+) -> DeleteDirectoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef).
+parent.delete_directory(**kwargs)
+```
 
-<a id="delete\_log\_subscription"></a>
+1. See [:material-code-braces: DeleteDirectoryRequestRequestTypeDef](./type_defs.md#deletedirectoryrequestrequesttypedef) 
 
-### delete_log_subscription
+### delete\_log\_subscription
 
 Deletes the specified log subscription.
 
-Type annotations for `boto3.client("ds").delete_log_subscription` method.
+Type annotations and code completion for `#!python boto3.client("ds").delete_log_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
 
-Boto3 documentation:
-[DirectoryService.Client.delete_log_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_log_subscription)
+```python title="Method definition"
+def delete_log_subscription(
+    self,
+    *,
+    DirectoryId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLogSubscriptionRequestRequestTypeDef](./type_defs.md#deletelogsubscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLogSubscriptionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_log_subscription(**kwargs)
+```
 
-<a id="delete\_snapshot"></a>
+1. See [:material-code-braces: DeleteLogSubscriptionRequestRequestTypeDef](./type_defs.md#deletelogsubscriptionrequestrequesttypedef) 
 
-### delete_snapshot
+### delete\_snapshot
 
 Deletes a directory snapshot.
 
-Type annotations for `boto3.client("ds").delete_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("ds").delete_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
 
-Boto3 documentation:
-[DirectoryService.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_snapshot)
+```python title="Method definition"
+def delete_snapshot(
+    self,
+    *,
+    SnapshotId: str,
+) -> DeleteSnapshotResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSnapshotRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+}
 
-Returns
-[DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
+parent.delete_snapshot(**kwargs)
+```
 
-<a id="delete\_trust"></a>
+1. See [:material-code-braces: DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef) 
 
-### delete_trust
+### delete\_trust
 
 Deletes an existing trust relationship between your Managed Microsoft AD
 directory and an external domain.
 
-Type annotations for `boto3.client("ds").delete_trust` method.
+Type annotations and code completion for `#!python boto3.client("ds").delete_trust` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
 
-Boto3 documentation:
-[DirectoryService.Client.delete_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.delete_trust)
+```python title="Method definition"
+def delete_trust(
+    self,
+    *,
+    TrustId: str,
+    DeleteAssociatedConditionalForwarder: bool = ...,
+) -> DeleteTrustResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTrustRequestRequestTypeDef](./type_defs.md#deletetrustrequestrequesttypedef).
+1. See [:material-code-braces: DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef) 
 
-Keyword-only arguments:
 
-- `TrustId`: `str` *(required)*
-- `DeleteAssociatedConditionalForwarder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteTrustRequestRequestTypeDef = {  # (1)
+    "TrustId": ...,
+}
 
-Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
+parent.delete_trust(**kwargs)
+```
 
-<a id="deregister\_certificate"></a>
+1. See [:material-code-braces: DeleteTrustRequestRequestTypeDef](./type_defs.md#deletetrustrequestrequesttypedef) 
 
-### deregister_certificate
+### deregister\_certificate
 
 Deletes from the system the certificate that was registered for secure LDAP or
 client certificate authentication.
 
-Type annotations for `boto3.client("ds").deregister_certificate` method.
+Type annotations and code completion for `#!python boto3.client("ds").deregister_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
 
-Boto3 documentation:
-[DirectoryService.Client.deregister_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_certificate)
+```python title="Method definition"
+def deregister_certificate(
+    self,
+    *,
+    DirectoryId: str,
+    CertificateId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterCertificateRequestRequestTypeDef](./type_defs.md#deregistercertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `CertificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterCertificateRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "CertificateId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_certificate(**kwargs)
+```
 
-<a id="deregister\_event\_topic"></a>
+1. See [:material-code-braces: DeregisterCertificateRequestRequestTypeDef](./type_defs.md#deregistercertificaterequestrequesttypedef) 
 
-### deregister_event_topic
+### deregister\_event\_topic
 
 Removes the specified directory as a publisher to the specified Amazon SNS
 topic.
 
-Type annotations for `boto3.client("ds").deregister_event_topic` method.
+Type annotations and code completion for `#!python boto3.client("ds").deregister_event_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
 
-Boto3 documentation:
-[DirectoryService.Client.deregister_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.deregister_event_topic)
+```python title="Method definition"
+def deregister_event_topic(
+    self,
+    *,
+    DirectoryId: str,
+    TopicName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterEventTopicRequestRequestTypeDef](./type_defs.md#deregistereventtopicrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `TopicName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterEventTopicRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "TopicName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_event_topic(**kwargs)
+```
 
-<a id="describe\_certificate"></a>
+1. See [:material-code-braces: DeregisterEventTopicRequestRequestTypeDef](./type_defs.md#deregistereventtopicrequestrequesttypedef) 
 
-### describe_certificate
+### describe\_certificate
 
 Displays information about the certificate registered for secure LDAP or client
 certificate authentication.
 
-Type annotations for `boto3.client("ds").describe_certificate` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_certificate)
+```python title="Method definition"
+def describe_certificate(
+    self,
+    *,
+    DirectoryId: str,
+    CertificateId: str,
+) -> DescribeCertificateResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `CertificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "CertificateId": ...,
+}
 
-Returns
-[DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
+parent.describe_certificate(**kwargs)
+```
 
-<a id="describe\_client\_authentication\_settings"></a>
+1. See [:material-code-braces: DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef) 
 
-### describe_client_authentication_settings
+### describe\_client\_authentication\_settings
 
 Retrieves information about the type of client authentication for the specified
 directory, if the type is specified.
 
-Type annotations for
-`boto3.client("ds").describe_client_authentication_settings` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_client_authentication_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_client_authentication_settings)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_client_authentication_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_client_authentication_settings)
+```python title="Method definition"
+def describe_client_authentication_settings(
+    self,
+    *,
+    DirectoryId: str,
+    Type: ClientAuthenticationTypeType = ...,  # (1)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeClientAuthenticationSettingsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClientAuthenticationSettingsRequestRequestTypeDef](./type_defs.md#describeclientauthenticationsettingsrequestrequesttypedef).
+1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
+2. See [:material-code-braces: DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['SmartCard']` (see
-  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeClientAuthenticationSettingsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef).
+parent.describe_client_authentication_settings(**kwargs)
+```
 
-<a id="describe\_conditional\_forwarders"></a>
+1. See [:material-code-braces: DescribeClientAuthenticationSettingsRequestRequestTypeDef](./type_defs.md#describeclientauthenticationsettingsrequestrequesttypedef) 
 
-### describe_conditional_forwarders
+### describe\_conditional\_forwarders
 
 Obtains information about the conditional forwarders for this account.
 
-Type annotations for `boto3.client("ds").describe_conditional_forwarders`
-method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_conditional_forwarders` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_conditional_forwarders](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_conditional_forwarders)
+```python title="Method definition"
+def describe_conditional_forwarders(
+    self,
+    *,
+    DirectoryId: str,
+    RemoteDomainNames: Sequence[str] = ...,
+) -> DescribeConditionalForwardersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConditionalForwardersRequestRequestTypeDef](./type_defs.md#describeconditionalforwardersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RemoteDomainNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeConditionalForwardersRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
+parent.describe_conditional_forwarders(**kwargs)
+```
 
-<a id="describe\_directories"></a>
+1. See [:material-code-braces: DescribeConditionalForwardersRequestRequestTypeDef](./type_defs.md#describeconditionalforwardersrequestrequesttypedef) 
 
-### describe_directories
+### describe\_directories
 
 Obtains information about the directories that belong to this account.
 
-Type annotations for `boto3.client("ds").describe_directories` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_directories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_directories)
+```python title="Method definition"
+def describe_directories(
+    self,
+    *,
+    DirectoryIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeDirectoriesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDirectoriesRequestRequestTypeDef](./type_defs.md#describedirectoriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectoriesRequestRequestTypeDef = {  # (1)
+    "DirectoryIds": ...,
+}
 
-Returns
-[DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef).
+parent.describe_directories(**kwargs)
+```
 
-<a id="describe\_domain\_controllers"></a>
+1. See [:material-code-braces: DescribeDirectoriesRequestRequestTypeDef](./type_defs.md#describedirectoriesrequestrequesttypedef) 
 
-### describe_domain_controllers
+### describe\_domain\_controllers
 
 Provides information about any domain controllers in your directory.
 
-Type annotations for `boto3.client("ds").describe_domain_controllers` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_domain_controllers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_domain_controllers)
+```python title="Method definition"
+def describe_domain_controllers(
+    self,
+    *,
+    DirectoryId: str,
+    DomainControllerIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeDomainControllersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainControllersRequestRequestTypeDef](./type_defs.md#describedomaincontrollersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `DomainControllerIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainControllersRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef).
+parent.describe_domain_controllers(**kwargs)
+```
 
-<a id="describe\_event\_topics"></a>
+1. See [:material-code-braces: DescribeDomainControllersRequestRequestTypeDef](./type_defs.md#describedomaincontrollersrequestrequesttypedef) 
 
-### describe_event_topics
+### describe\_event\_topics
 
 Obtains information about which Amazon SNS topics receive status messages from
 the specified directory.
 
-Type annotations for `boto3.client("ds").describe_event_topics` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_event_topics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_event_topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_event_topics)
+```python title="Method definition"
+def describe_event_topics(
+    self,
+    *,
+    DirectoryId: str = ...,
+    TopicNames: Sequence[str] = ...,
+) -> DescribeEventTopicsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventTopicsRequestRequestTypeDef](./type_defs.md#describeeventtopicsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str`
-- `TopicNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEventTopicsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
+parent.describe_event_topics(**kwargs)
+```
 
-<a id="describe\_ldaps\_settings"></a>
+1. See [:material-code-braces: DescribeEventTopicsRequestRequestTypeDef](./type_defs.md#describeeventtopicsrequestrequesttypedef) 
 
-### describe_ldaps_settings
+### describe\_ldaps\_settings
 
 Describes the status of LDAP security for the specified directory.
 
-Type annotations for `boto3.client("ds").describe_ldaps_settings` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_ldaps_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_ldaps_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_ldaps_settings)
+```python title="Method definition"
+def describe_ldaps_settings(
+    self,
+    *,
+    DirectoryId: str,
+    Type: LDAPSTypeType = ...,  # (1)
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeLDAPSSettingsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLDAPSSettingsRequestRequestTypeDef](./type_defs.md#describeldapssettingsrequestrequesttypedef).
+1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
+2. See [:material-code-braces: DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see
-  [LDAPSTypeType](./literals.md#ldapstypetype))
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLDAPSSettingsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef).
+parent.describe_ldaps_settings(**kwargs)
+```
 
-<a id="describe\_regions"></a>
+1. See [:material-code-braces: DescribeLDAPSSettingsRequestRequestTypeDef](./type_defs.md#describeldapssettingsrequestrequesttypedef) 
 
-### describe_regions
+### describe\_regions
 
 Provides information about the Regions that are configured for multi-Region
 replication.
 
-Type annotations for `boto3.client("ds").describe_regions` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_regions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_regions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_regions)
+```python title="Method definition"
+def describe_regions(
+    self,
+    *,
+    DirectoryId: str,
+    RegionName: str = ...,
+    NextToken: str = ...,
+) -> DescribeRegionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RegionName`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeRegionsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
+parent.describe_regions(**kwargs)
+```
 
-<a id="describe\_shared\_directories"></a>
+1. See [:material-code-braces: DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef) 
 
-### describe_shared_directories
+### describe\_shared\_directories
 
 Returns the shared directories in your account.
 
-Type annotations for `boto3.client("ds").describe_shared_directories` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_shared_directories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_shared_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_shared_directories)
+```python title="Method definition"
+def describe_shared_directories(
+    self,
+    *,
+    OwnerDirectoryId: str,
+    SharedDirectoryIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeSharedDirectoriesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSharedDirectoriesRequestRequestTypeDef](./type_defs.md#describeshareddirectoriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef) 
 
-Keyword-only arguments:
 
-- `OwnerDirectoryId`: `str` *(required)*
-- `SharedDirectoryIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSharedDirectoriesRequestRequestTypeDef = {  # (1)
+    "OwnerDirectoryId": ...,
+}
 
-Returns
-[DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef).
+parent.describe_shared_directories(**kwargs)
+```
 
-<a id="describe\_snapshots"></a>
+1. See [:material-code-braces: DescribeSharedDirectoriesRequestRequestTypeDef](./type_defs.md#describeshareddirectoriesrequestrequesttypedef) 
 
-### describe_snapshots
+### describe\_snapshots
 
 Obtains information about the directory snapshots that belong to this account.
 
-Type annotations for `boto3.client("ds").describe_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_snapshots)
+```python title="Method definition"
+def describe_snapshots(
+    self,
+    *,
+    DirectoryId: str = ...,
+    SnapshotIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeSnapshotsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str`
-- `SnapshotIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
+parent.describe_snapshots(**kwargs)
+```
 
-<a id="describe\_trusts"></a>
+1. See [:material-code-braces: DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef) 
 
-### describe_trusts
+### describe\_trusts
 
 Obtains information about the trust relationships for this account.
 
-Type annotations for `boto3.client("ds").describe_trusts` method.
+Type annotations and code completion for `#!python boto3.client("ds").describe_trusts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts)
 
-Boto3 documentation:
-[DirectoryService.Client.describe_trusts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.describe_trusts)
+```python title="Method definition"
+def describe_trusts(
+    self,
+    *,
+    DirectoryId: str = ...,
+    TrustIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> DescribeTrustsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrustsRequestRequestTypeDef](./type_defs.md#describetrustsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str`
-- `TrustIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeTrustsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef).
+parent.describe_trusts(**kwargs)
+```
 
-<a id="disable\_client\_authentication"></a>
+1. See [:material-code-braces: DescribeTrustsRequestRequestTypeDef](./type_defs.md#describetrustsrequestrequesttypedef) 
 
-### disable_client_authentication
+### disable\_client\_authentication
 
 Disables alternative client authentication methods for the specified directory.
 
-Type annotations for `boto3.client("ds").disable_client_authentication` method.
+Type annotations and code completion for `#!python boto3.client("ds").disable_client_authentication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
 
-Boto3 documentation:
-[DirectoryService.Client.disable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_client_authentication)
+```python title="Method definition"
+def disable_client_authentication(
+    self,
+    *,
+    DirectoryId: str,
+    Type: ClientAuthenticationTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableClientAuthenticationRequestRequestTypeDef](./type_defs.md#disableclientauthenticationrequestrequesttypedef).
+1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['SmartCard']` (see
-  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableClientAuthenticationRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_client_authentication(**kwargs)
+```
 
-<a id="disable\_ldaps"></a>
+1. See [:material-code-braces: DisableClientAuthenticationRequestRequestTypeDef](./type_defs.md#disableclientauthenticationrequestrequesttypedef) 
 
-### disable_ldaps
+### disable\_ldaps
 
 Deactivates LDAP secure calls for the specified directory.
 
-Type annotations for `boto3.client("ds").disable_ldaps` method.
+Type annotations and code completion for `#!python boto3.client("ds").disable_ldaps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
 
-Boto3 documentation:
-[DirectoryService.Client.disable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_ldaps)
+```python title="Method definition"
+def disable_ldaps(
+    self,
+    *,
+    DirectoryId: str,
+    Type: LDAPSTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableLDAPSRequestRequestTypeDef](./type_defs.md#disableldapsrequestrequesttypedef).
+1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see
-  [LDAPSTypeType](./literals.md#ldapstypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableLDAPSRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_ldaps(**kwargs)
+```
 
-<a id="disable\_radius"></a>
+1. See [:material-code-braces: DisableLDAPSRequestRequestTypeDef](./type_defs.md#disableldapsrequestrequesttypedef) 
 
-### disable_radius
+### disable\_radius
 
 Disables multi-factor authentication (MFA) with the Remote Authentication Dial
 In User Service (RADIUS) server for an AD Connector or Microsoft AD directory.
 
-Type annotations for `boto3.client("ds").disable_radius` method.
+Type annotations and code completion for `#!python boto3.client("ds").disable_radius` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
 
-Boto3 documentation:
-[DirectoryService.Client.disable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_radius)
+```python title="Method definition"
+def disable_radius(
+    self,
+    *,
+    DirectoryId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableRadiusRequestRequestTypeDef](./type_defs.md#disableradiusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableRadiusRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_radius(**kwargs)
+```
 
-<a id="disable\_sso"></a>
+1. See [:material-code-braces: DisableRadiusRequestRequestTypeDef](./type_defs.md#disableradiusrequestrequesttypedef) 
 
-### disable_sso
+### disable\_sso
 
 Disables single-sign on for a directory.
 
-Type annotations for `boto3.client("ds").disable_sso` method.
+Type annotations and code completion for `#!python boto3.client("ds").disable_sso` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso)
 
-Boto3 documentation:
-[DirectoryService.Client.disable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.disable_sso)
+```python title="Method definition"
+def disable_sso(
+    self,
+    *,
+    DirectoryId: str,
+    UserName: str = ...,
+    Password: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableSsoRequestRequestTypeDef](./type_defs.md#disablessorequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `UserName`: `str`
-- `Password`: `str`
+```python title="Usage example with kwargs"
+kwargs: DisableSsoRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_sso(**kwargs)
+```
 
-<a id="enable\_client\_authentication"></a>
+1. See [:material-code-braces: DisableSsoRequestRequestTypeDef](./type_defs.md#disablessorequestrequesttypedef) 
 
-### enable_client_authentication
+### enable\_client\_authentication
 
 Enables alternative client authentication methods for the specified directory.
 
-Type annotations for `boto3.client("ds").enable_client_authentication` method.
+Type annotations and code completion for `#!python boto3.client("ds").enable_client_authentication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
 
-Boto3 documentation:
-[DirectoryService.Client.enable_client_authentication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_client_authentication)
+```python title="Method definition"
+def enable_client_authentication(
+    self,
+    *,
+    DirectoryId: str,
+    Type: ClientAuthenticationTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableClientAuthenticationRequestRequestTypeDef](./type_defs.md#enableclientauthenticationrequestrequesttypedef).
+1. See [:material-code-brackets: ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['SmartCard']` (see
-  [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableClientAuthenticationRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_client_authentication(**kwargs)
+```
 
-<a id="enable\_ldaps"></a>
+1. See [:material-code-braces: EnableClientAuthenticationRequestRequestTypeDef](./type_defs.md#enableclientauthenticationrequestrequesttypedef) 
 
-### enable_ldaps
+### enable\_ldaps
 
-Activates the switch for the specific directory to always use LDAP secure
-calls.
+Activates the switch for the specific directory to always use LDAP secure calls.
 
-Type annotations for `boto3.client("ds").enable_ldaps` method.
+Type annotations and code completion for `#!python boto3.client("ds").enable_ldaps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
 
-Boto3 documentation:
-[DirectoryService.Client.enable_ldaps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_ldaps)
+```python title="Method definition"
+def enable_ldaps(
+    self,
+    *,
+    DirectoryId: str,
+    Type: LDAPSTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableLDAPSRequestRequestTypeDef](./type_defs.md#enableldapsrequestrequesttypedef).
+1. See [:material-code-brackets: LDAPSTypeType](./literals.md#ldapstypetype) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `Type`: `Literal['Client']` (see
-  [LDAPSTypeType](./literals.md#ldapstypetype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableLDAPSRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "Type": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_ldaps(**kwargs)
+```
 
-<a id="enable\_radius"></a>
+1. See [:material-code-braces: EnableLDAPSRequestRequestTypeDef](./type_defs.md#enableldapsrequestrequesttypedef) 
 
-### enable_radius
+### enable\_radius
 
-Enables multi-factor authentication (MFA) with the Remote Authentication Dial
-In User Service (RADIUS) server for an AD Connector or Microsoft AD directory.
+Enables multi-factor authentication (MFA) with the Remote Authentication Dial In
+User Service (RADIUS) server for an AD Connector or Microsoft AD directory.
 
-Type annotations for `boto3.client("ds").enable_radius` method.
+Type annotations and code completion for `#!python boto3.client("ds").enable_radius` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
 
-Boto3 documentation:
-[DirectoryService.Client.enable_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_radius)
+```python title="Method definition"
+def enable_radius(
+    self,
+    *,
+    DirectoryId: str,
+    RadiusSettings: RadiusSettingsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableRadiusRequestRequestTypeDef](./type_defs.md#enableradiusrequestrequesttypedef).
+1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RadiusSettings`:
-  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableRadiusRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RadiusSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_radius(**kwargs)
+```
 
-<a id="enable\_sso"></a>
+1. See [:material-code-braces: EnableRadiusRequestRequestTypeDef](./type_defs.md#enableradiusrequestrequesttypedef) 
 
-### enable_sso
+### enable\_sso
 
 Enables single sign-on for a directory.
 
-Type annotations for `boto3.client("ds").enable_sso` method.
+Type annotations and code completion for `#!python boto3.client("ds").enable_sso` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso)
 
-Boto3 documentation:
-[DirectoryService.Client.enable_sso](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.enable_sso)
+```python title="Method definition"
+def enable_sso(
+    self,
+    *,
+    DirectoryId: str,
+    UserName: str = ...,
+    Password: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableSsoRequestRequestTypeDef](./type_defs.md#enablessorequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `UserName`: `str`
-- `Password`: `str`
+```python title="Usage example with kwargs"
+kwargs: EnableSsoRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_sso(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableSsoRequestRequestTypeDef](./type_defs.md#enablessorequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("ds").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("ds").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DirectoryService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_directory\_limits"></a>
-
-### get_directory_limits
+### get\_directory\_limits
 
 Obtains directory limit information for the current Region.
 
-Type annotations for `boto3.client("ds").get_directory_limits` method.
+Type annotations and code completion for `#!python boto3.client("ds").get_directory_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
 
-Boto3 documentation:
-[DirectoryService.Client.get_directory_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_directory_limits)
+```python title="Method definition"
+def get_directory_limits(
+    self,
+) -> GetDirectoryLimitsResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
+1. See [:material-code-braces: GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef) 
 
-<a id="get\_snapshot\_limits"></a>
-
-### get_snapshot_limits
+### get\_snapshot\_limits
 
 Obtains the manual snapshot limits for a directory.
 
-Type annotations for `boto3.client("ds").get_snapshot_limits` method.
+Type annotations and code completion for `#!python boto3.client("ds").get_snapshot_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
 
-Boto3 documentation:
-[DirectoryService.Client.get_snapshot_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.get_snapshot_limits)
+```python title="Method definition"
+def get_snapshot_limits(
+    self,
+    *,
+    DirectoryId: str,
+) -> GetSnapshotLimitsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSnapshotLimitsRequestRequestTypeDef](./type_defs.md#getsnapshotlimitsrequestrequesttypedef).
+1. See [:material-code-braces: GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSnapshotLimitsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef).
+parent.get_snapshot_limits(**kwargs)
+```
 
-<a id="list\_certificates"></a>
+1. See [:material-code-braces: GetSnapshotLimitsRequestRequestTypeDef](./type_defs.md#getsnapshotlimitsrequestrequesttypedef) 
 
-### list_certificates
+### list\_certificates
 
 For the specified directory, lists all the certificates registered for a secure
 LDAP or client certificate authentication.
 
-Type annotations for `boto3.client("ds").list_certificates` method.
+Type annotations and code completion for `#!python boto3.client("ds").list_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates)
 
-Boto3 documentation:
-[DirectoryService.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_certificates)
+```python title="Method definition"
+def list_certificates(
+    self,
+    *,
+    DirectoryId: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListCertificatesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef).
+parent.list_certificates(**kwargs)
+```
 
-<a id="list\_ip\_routes"></a>
+1. See [:material-code-braces: ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef) 
 
-### list_ip_routes
+### list\_ip\_routes
 
 Lists the address blocks that you have added to a directory.
 
-Type annotations for `boto3.client("ds").list_ip_routes` method.
+Type annotations and code completion for `#!python boto3.client("ds").list_ip_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
 
-Boto3 documentation:
-[DirectoryService.Client.list_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_ip_routes)
+```python title="Method definition"
+def list_ip_routes(
+    self,
+    *,
+    DirectoryId: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListIpRoutesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIpRoutesRequestRequestTypeDef](./type_defs.md#listiproutesrequestrequesttypedef).
+1. See [:material-code-braces: ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIpRoutesRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
+parent.list_ip_routes(**kwargs)
+```
 
-<a id="list\_log\_subscriptions"></a>
+1. See [:material-code-braces: ListIpRoutesRequestRequestTypeDef](./type_defs.md#listiproutesrequestrequesttypedef) 
 
-### list_log_subscriptions
+### list\_log\_subscriptions
 
 Lists the active log subscriptions for the Amazon Web Services account.
 
-Type annotations for `boto3.client("ds").list_log_subscriptions` method.
+Type annotations and code completion for `#!python boto3.client("ds").list_log_subscriptions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
 
-Boto3 documentation:
-[DirectoryService.Client.list_log_subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_log_subscriptions)
+```python title="Method definition"
+def list_log_subscriptions(
+    self,
+    *,
+    DirectoryId: str = ...,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListLogSubscriptionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLogSubscriptionsRequestRequestTypeDef](./type_defs.md#listlogsubscriptionsrequestrequesttypedef).
+1. See [:material-code-braces: ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str`
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListLogSubscriptionsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef).
+parent.list_log_subscriptions(**kwargs)
+```
 
-<a id="list\_schema\_extensions"></a>
+1. See [:material-code-braces: ListLogSubscriptionsRequestRequestTypeDef](./type_defs.md#listlogsubscriptionsrequestrequesttypedef) 
 
-### list_schema_extensions
+### list\_schema\_extensions
 
 Lists all schema extensions applied to a Microsoft AD Directory.
 
-Type annotations for `boto3.client("ds").list_schema_extensions` method.
+Type annotations and code completion for `#!python boto3.client("ds").list_schema_extensions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
 
-Boto3 documentation:
-[DirectoryService.Client.list_schema_extensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_schema_extensions)
+```python title="Method definition"
+def list_schema_extensions(
+    self,
+    *,
+    DirectoryId: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListSchemaExtensionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchemaExtensionsRequestRequestTypeDef](./type_defs.md#listschemaextensionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListSchemaExtensionsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns
-[ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef).
+parent.list_schema_extensions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSchemaExtensionsRequestRequestTypeDef](./type_defs.md#listschemaextensionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags on a directory.
 
-Type annotations for `boto3.client("ds").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("ds").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DirectoryService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceId: str,
+    NextToken: str = ...,
+    Limit: int = ...,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `NextToken`: `str`
-- `Limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="register\_certificate"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### register_certificate
+### register\_certificate
 
 Registers a certificate for a secure LDAP or client certificate authentication.
 
-Type annotations for `boto3.client("ds").register_certificate` method.
+Type annotations and code completion for `#!python boto3.client("ds").register_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate)
 
-Boto3 documentation:
-[DirectoryService.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_certificate)
+```python title="Method definition"
+def register_certificate(
+    self,
+    *,
+    DirectoryId: str,
+    CertificateData: str,
+    Type: CertificateTypeType = ...,  # (1)
+    ClientCertAuthSettings: ClientCertAuthSettingsTypeDef = ...,  # (2)
+) -> RegisterCertificateResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RegisterCertificateRequestRequestTypeDef](./type_defs.md#registercertificaterequestrequesttypedef).
+1. See [:material-code-brackets: CertificateTypeType](./literals.md#certificatetypetype) 
+2. See [:material-code-braces: ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef) 
+3. See [:material-code-braces: RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `CertificateData`: `str` *(required)*
-- `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
-- `ClientCertAuthSettings`:
-  [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: RegisterCertificateRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "CertificateData": ...,
+}
 
-Returns
-[RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef).
+parent.register_certificate(**kwargs)
+```
 
-<a id="register\_event\_topic"></a>
+1. See [:material-code-braces: RegisterCertificateRequestRequestTypeDef](./type_defs.md#registercertificaterequestrequesttypedef) 
 
-### register_event_topic
+### register\_event\_topic
 
 Associates a directory with an Amazon SNS topic.
 
-Type annotations for `boto3.client("ds").register_event_topic` method.
+Type annotations and code completion for `#!python boto3.client("ds").register_event_topic` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
 
-Boto3 documentation:
-[DirectoryService.Client.register_event_topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.register_event_topic)
+```python title="Method definition"
+def register_event_topic(
+    self,
+    *,
+    DirectoryId: str,
+    TopicName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterEventTopicRequestRequestTypeDef](./type_defs.md#registereventtopicrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `TopicName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterEventTopicRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "TopicName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_event_topic(**kwargs)
+```
 
-<a id="reject\_shared\_directory"></a>
+1. See [:material-code-braces: RegisterEventTopicRequestRequestTypeDef](./type_defs.md#registereventtopicrequestrequesttypedef) 
 
-### reject_shared_directory
+### reject\_shared\_directory
 
 Rejects a directory sharing request that was sent from the directory owner
 account.
 
-Type annotations for `boto3.client("ds").reject_shared_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").reject_shared_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.reject_shared_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reject_shared_directory)
+```python title="Method definition"
+def reject_shared_directory(
+    self,
+    *,
+    SharedDirectoryId: str,
+) -> RejectSharedDirectoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectSharedDirectoryRequestRequestTypeDef](./type_defs.md#rejectshareddirectoryrequestrequesttypedef).
+1. See [:material-code-braces: RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `SharedDirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectSharedDirectoryRequestRequestTypeDef = {  # (1)
+    "SharedDirectoryId": ...,
+}
 
-Returns
-[RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef).
+parent.reject_shared_directory(**kwargs)
+```
 
-<a id="remove\_ip\_routes"></a>
+1. See [:material-code-braces: RejectSharedDirectoryRequestRequestTypeDef](./type_defs.md#rejectshareddirectoryrequestrequesttypedef) 
 
-### remove_ip_routes
+### remove\_ip\_routes
 
 Removes IP address blocks from a directory.
 
-Type annotations for `boto3.client("ds").remove_ip_routes` method.
+Type annotations and code completion for `#!python boto3.client("ds").remove_ip_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
 
-Boto3 documentation:
-[DirectoryService.Client.remove_ip_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_ip_routes)
+```python title="Method definition"
+def remove_ip_routes(
+    self,
+    *,
+    DirectoryId: str,
+    CidrIps: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveIpRoutesRequestRequestTypeDef](./type_defs.md#removeiproutesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `CidrIps`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveIpRoutesRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "CidrIps": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_ip_routes(**kwargs)
+```
 
-<a id="remove\_region"></a>
+1. See [:material-code-braces: RemoveIpRoutesRequestRequestTypeDef](./type_defs.md#removeiproutesrequestrequesttypedef) 
 
-### remove_region
+### remove\_region
 
 Stops all replication and removes the domain controllers from the specified
 Region.
 
-Type annotations for `boto3.client("ds").remove_region` method.
+Type annotations and code completion for `#!python boto3.client("ds").remove_region` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
 
-Boto3 documentation:
-[DirectoryService.Client.remove_region](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_region)
+```python title="Method definition"
+def remove_region(
+    self,
+    *,
+    DirectoryId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveRegionRequestRequestTypeDef](./type_defs.md#removeregionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveRegionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_region(**kwargs)
+```
 
-<a id="remove\_tags\_from\_resource"></a>
+1. See [:material-code-braces: RemoveRegionRequestRequestTypeDef](./type_defs.md#removeregionrequestrequesttypedef) 
 
-### remove_tags_from_resource
+### remove\_tags\_from\_resource
 
 Removes tags from a directory.
 
-Type annotations for `boto3.client("ds").remove_tags_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("ds").remove_tags_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
 
-Boto3 documentation:
-[DirectoryService.Client.remove_tags_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.remove_tags_from_resource)
+```python title="Method definition"
+def remove_tags_from_resource(
+    self,
+    *,
+    ResourceId: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsFromResourceRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags_from_resource(**kwargs)
+```
 
-<a id="reset\_user\_password"></a>
+1. See [:material-code-braces: RemoveTagsFromResourceRequestRequestTypeDef](./type_defs.md#removetagsfromresourcerequestrequesttypedef) 
 
-### reset_user_password
+### reset\_user\_password
 
 Resets the password for any user in your Managed Microsoft AD or Simple AD
 directory.
 
-Type annotations for `boto3.client("ds").reset_user_password` method.
+Type annotations and code completion for `#!python boto3.client("ds").reset_user_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password)
 
-Boto3 documentation:
-[DirectoryService.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.reset_user_password)
+```python title="Method definition"
+def reset_user_password(
+    self,
+    *,
+    DirectoryId: str,
+    UserName: str,
+    NewPassword: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `UserName`: `str` *(required)*
-- `NewPassword`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResetUserPasswordRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "UserName": ...,
+    "NewPassword": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reset_user_password(**kwargs)
+```
 
-<a id="restore\_from\_snapshot"></a>
+1. See [:material-code-braces: ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef) 
 
-### restore_from_snapshot
+### restore\_from\_snapshot
 
 Restores a directory using an existing directory snapshot.
 
-Type annotations for `boto3.client("ds").restore_from_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("ds").restore_from_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
 
-Boto3 documentation:
-[DirectoryService.Client.restore_from_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.restore_from_snapshot)
+```python title="Method definition"
+def restore_from_snapshot(
+    self,
+    *,
+    SnapshotId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RestoreFromSnapshotRequestRequestTypeDef](./type_defs.md#restorefromsnapshotrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SnapshotId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreFromSnapshotRequestRequestTypeDef = {  # (1)
+    "SnapshotId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.restore_from_snapshot(**kwargs)
+```
 
-<a id="share\_directory"></a>
+1. See [:material-code-braces: RestoreFromSnapshotRequestRequestTypeDef](./type_defs.md#restorefromsnapshotrequestrequesttypedef) 
 
-### share_directory
+### share\_directory
 
 Shares a specified directory (`DirectoryId` ) in your Amazon Web Services
 account (directory owner) with another Amazon Web Services account (directory
 consumer).
 
-Type annotations for `boto3.client("ds").share_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").share_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.share_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.share_directory)
+```python title="Method definition"
+def share_directory(
+    self,
+    *,
+    DirectoryId: str,
+    ShareTarget: ShareTargetTypeDef,  # (1)
+    ShareMethod: ShareMethodType,  # (2)
+    ShareNotes: str = ...,
+) -> ShareDirectoryResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ShareDirectoryRequestRequestTypeDef](./type_defs.md#sharedirectoryrequestrequesttypedef).
+1. See [:material-code-braces: ShareTargetTypeDef](./type_defs.md#sharetargettypedef) 
+2. See [:material-code-brackets: ShareMethodType](./literals.md#sharemethodtype) 
+3. See [:material-code-braces: ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `ShareTarget`: [ShareTargetTypeDef](./type_defs.md#sharetargettypedef)
-  *(required)*
-- `ShareMethod`: [ShareMethodType](./literals.md#sharemethodtype) *(required)*
-- `ShareNotes`: `str`
+```python title="Usage example with kwargs"
+kwargs: ShareDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "ShareTarget": ...,
+    "ShareMethod": ...,
+}
 
-Returns
-[ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef).
+parent.share_directory(**kwargs)
+```
 
-<a id="start\_schema\_extension"></a>
+1. See [:material-code-braces: ShareDirectoryRequestRequestTypeDef](./type_defs.md#sharedirectoryrequestrequesttypedef) 
 
-### start_schema_extension
+### start\_schema\_extension
 
 Applies a schema extension to a Microsoft AD directory.
 
-Type annotations for `boto3.client("ds").start_schema_extension` method.
+Type annotations and code completion for `#!python boto3.client("ds").start_schema_extension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
 
-Boto3 documentation:
-[DirectoryService.Client.start_schema_extension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.start_schema_extension)
+```python title="Method definition"
+def start_schema_extension(
+    self,
+    *,
+    DirectoryId: str,
+    CreateSnapshotBeforeSchemaExtension: bool,
+    LdifContent: str,
+    Description: str,
+) -> StartSchemaExtensionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartSchemaExtensionRequestRequestTypeDef](./type_defs.md#startschemaextensionrequestrequesttypedef).
+1. See [:material-code-braces: StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `CreateSnapshotBeforeSchemaExtension`: `bool` *(required)*
-- `LdifContent`: `str` *(required)*
-- `Description`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartSchemaExtensionRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "CreateSnapshotBeforeSchemaExtension": ...,
+    "LdifContent": ...,
+    "Description": ...,
+}
 
-Returns
-[StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef).
+parent.start_schema_extension(**kwargs)
+```
 
-<a id="unshare\_directory"></a>
+1. See [:material-code-braces: StartSchemaExtensionRequestRequestTypeDef](./type_defs.md#startschemaextensionrequestrequesttypedef) 
 
-### unshare_directory
+### unshare\_directory
 
 Stops the directory sharing between the directory owner and consumer accounts.
 
-Type annotations for `boto3.client("ds").unshare_directory` method.
+Type annotations and code completion for `#!python boto3.client("ds").unshare_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
 
-Boto3 documentation:
-[DirectoryService.Client.unshare_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.unshare_directory)
+```python title="Method definition"
+def unshare_directory(
+    self,
+    *,
+    DirectoryId: str,
+    UnshareTarget: UnshareTargetTypeDef,  # (1)
+) -> UnshareDirectoryResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UnshareDirectoryRequestRequestTypeDef](./type_defs.md#unsharedirectoryrequestrequesttypedef).
+1. See [:material-code-braces: UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef) 
+2. See [:material-code-braces: UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `UnshareTarget`: [UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnshareDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "UnshareTarget": ...,
+}
 
-Returns
-[UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef).
+parent.unshare_directory(**kwargs)
+```
 
-<a id="update\_conditional\_forwarder"></a>
+1. See [:material-code-braces: UnshareDirectoryRequestRequestTypeDef](./type_defs.md#unsharedirectoryrequestrequesttypedef) 
 
-### update_conditional_forwarder
+### update\_conditional\_forwarder
 
 Updates a conditional forwarder that has been set up for your Amazon Web
 Services directory.
 
-Type annotations for `boto3.client("ds").update_conditional_forwarder` method.
+Type annotations and code completion for `#!python boto3.client("ds").update_conditional_forwarder` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
 
-Boto3 documentation:
-[DirectoryService.Client.update_conditional_forwarder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_conditional_forwarder)
+```python title="Method definition"
+def update_conditional_forwarder(
+    self,
+    *,
+    DirectoryId: str,
+    RemoteDomainName: str,
+    DnsIpAddrs: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConditionalForwarderRequestRequestTypeDef](./type_defs.md#updateconditionalforwarderrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RemoteDomainName`: `str` *(required)*
-- `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConditionalForwarderRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RemoteDomainName": ...,
+    "DnsIpAddrs": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_conditional_forwarder(**kwargs)
+```
 
-<a id="update\_number\_of\_domain\_controllers"></a>
+1. See [:material-code-braces: UpdateConditionalForwarderRequestRequestTypeDef](./type_defs.md#updateconditionalforwarderrequestrequesttypedef) 
 
-### update_number_of_domain_controllers
+### update\_number\_of\_domain\_controllers
 
 Adds or removes domain controllers to or from the directory.
 
-Type annotations for `boto3.client("ds").update_number_of_domain_controllers`
-method.
+Type annotations and code completion for `#!python boto3.client("ds").update_number_of_domain_controllers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
 
-Boto3 documentation:
-[DirectoryService.Client.update_number_of_domain_controllers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_number_of_domain_controllers)
+```python title="Method definition"
+def update_number_of_domain_controllers(
+    self,
+    *,
+    DirectoryId: str,
+    DesiredNumber: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateNumberOfDomainControllersRequestRequestTypeDef](./type_defs.md#updatenumberofdomaincontrollersrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `DesiredNumber`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateNumberOfDomainControllersRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "DesiredNumber": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_number_of_domain_controllers(**kwargs)
+```
 
-<a id="update\_radius"></a>
+1. See [:material-code-braces: UpdateNumberOfDomainControllersRequestRequestTypeDef](./type_defs.md#updatenumberofdomaincontrollersrequestrequesttypedef) 
 
-### update_radius
+### update\_radius
 
 Updates the Remote Authentication Dial In User Service (RADIUS) server
 information for an AD Connector or Microsoft AD directory.
 
-Type annotations for `boto3.client("ds").update_radius` method.
+Type annotations and code completion for `#!python boto3.client("ds").update_radius` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
 
-Boto3 documentation:
-[DirectoryService.Client.update_radius](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_radius)
+```python title="Method definition"
+def update_radius(
+    self,
+    *,
+    DirectoryId: str,
+    RadiusSettings: RadiusSettingsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRadiusRequestRequestTypeDef](./type_defs.md#updateradiusrequestrequesttypedef).
+1. See [:material-code-braces: RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `RadiusSettings`:
-  [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRadiusRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "RadiusSettings": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_radius(**kwargs)
+```
 
-<a id="update\_trust"></a>
+1. See [:material-code-braces: UpdateRadiusRequestRequestTypeDef](./type_defs.md#updateradiusrequestrequesttypedef) 
 
-### update_trust
+### update\_trust
 
 Updates the trust that has been set up between your Managed Microsoft AD
 directory and an self-managed Active Directory.
 
-Type annotations for `boto3.client("ds").update_trust` method.
+Type annotations and code completion for `#!python boto3.client("ds").update_trust` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
 
-Boto3 documentation:
-[DirectoryService.Client.update_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.update_trust)
+```python title="Method definition"
+def update_trust(
+    self,
+    *,
+    TrustId: str,
+    SelectiveAuth: SelectiveAuthType = ...,  # (1)
+) -> UpdateTrustResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTrustRequestRequestTypeDef](./type_defs.md#updatetrustrequestrequesttypedef).
+1. See [:material-code-brackets: SelectiveAuthType](./literals.md#selectiveauthtype) 
+2. See [:material-code-braces: UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef) 
 
-Keyword-only arguments:
 
-- `TrustId`: `str` *(required)*
-- `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
+```python title="Usage example with kwargs"
+kwargs: UpdateTrustRequestRequestTypeDef = {  # (1)
+    "TrustId": ...,
+}
 
-Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
+parent.update_trust(**kwargs)
+```
 
-<a id="verify\_trust"></a>
+1. See [:material-code-braces: UpdateTrustRequestRequestTypeDef](./type_defs.md#updatetrustrequestrequesttypedef) 
 
-### verify_trust
+### verify\_trust
 
 Directory Service for Microsoft Active Directory allows you to configure and
 verify trust relationships.
 
-Type annotations for `boto3.client("ds").verify_trust` method.
+Type annotations and code completion for `#!python boto3.client("ds").verify_trust` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
 
-Boto3 documentation:
-[DirectoryService.Client.verify_trust](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.verify_trust)
+```python title="Method definition"
+def verify_trust(
+    self,
+    *,
+    TrustId: str,
+) -> VerifyTrustResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[VerifyTrustRequestRequestTypeDef](./type_defs.md#verifytrustrequestrequesttypedef).
+1. See [:material-code-braces: VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef) 
 
-Keyword-only arguments:
 
-- `TrustId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VerifyTrustRequestRequestTypeDef = {  # (1)
+    "TrustId": ...,
+}
 
-Returns [VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef).
+parent.verify_trust(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: VerifyTrustRequestRequestTypeDef](./type_defs.md#verifytrustrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("ds").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("ds").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_directories")` ->
-  [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
-- `client.get_paginator("describe_domain_controllers")` ->
-  [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
-- `client.get_paginator("describe_shared_directories")` ->
-  [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
-- `client.get_paginator("describe_snapshots")` ->
-  [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
-- `client.get_paginator("describe_trusts")` ->
-  [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
-- `client.get_paginator("list_ip_routes")` ->
-  [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
-- `client.get_paginator("list_log_subscriptions")` ->
-  [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
-- `client.get_paginator("list_schema_extensions")` ->
-  [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("describe_directories")` -> [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
+- `client.get_paginator("describe_domain_controllers")` -> [DescribeDomainControllersPaginator](./paginators.md#describedomaincontrollerspaginator)
+- `client.get_paginator("describe_shared_directories")` -> [DescribeSharedDirectoriesPaginator](./paginators.md#describeshareddirectoriespaginator)
+- `client.get_paginator("describe_snapshots")` -> [DescribeSnapshotsPaginator](./paginators.md#describesnapshotspaginator)
+- `client.get_paginator("describe_trusts")` -> [DescribeTrustsPaginator](./paginators.md#describetrustspaginator)
+- `client.get_paginator("list_ip_routes")` -> [ListIpRoutesPaginator](./paginators.md#listiproutespaginator)
+- `client.get_paginator("list_log_subscriptions")` -> [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
+- `client.get_paginator("list_schema_extensions")` -> [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+
+

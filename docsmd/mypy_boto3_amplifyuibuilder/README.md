@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-amplifyuibuilder-module"></a>
-
-# Type annotations for boto3 AmplifyUIBuilder module
+#  AmplifyUIBuilder module
 
 > [Index](../README.md) > AmplifyUIBuilder
 
-Auto-generated documentation for
-[AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
-type annotations stubs module
-[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+!!! note ""
 
-- [Type annotations for boto3 AmplifyUIBuilder module](#type-annotations-for-boto3-amplifyuibuilder-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AmplifyUIBuilderClient](#amplifyuibuilderclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
+    type annotations stubs module [mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AmplifyUIBuilder`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[amplifyuibuilder]'
 python -m pip install mypy-boto3-amplifyuibuilder
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,72 +42,37 @@ python -m pip install mypy-boto3-amplifyuibuilder
 python -m pip uninstall -y mypy-boto3-amplifyuibuilder
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="amplifyuibuilderclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AmplifyUIBuilderClient
 
-Type annotations for `boto3.client("amplifyuibuilder")` as
-[AmplifyUIBuilderClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("amplifyuibuilder")` as [AmplifyUIBuilderClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
+
+def get_client() -> AmplifyUIBuilderClient:
+    return Session().cleint("amplifyuibuilder")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_component](./client.md#create_component)
-- [create_theme](./client.md#create_theme)
-- [delete_component](./client.md#delete_component)
-- [delete_theme](./client.md#delete_theme)
-- [exceptions](./client.md#exceptions)
-- [exchange_code_for_token](./client.md#exchange_code_for_token)
-- [export_components](./client.md#export_components)
-- [export_themes](./client.md#export_themes)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_component](./client.md#get_component)
-- [get_paginator](./client.md#get_paginator)
-- [get_theme](./client.md#get_theme)
-- [list_components](./client.md#list_components)
-- [list_themes](./client.md#list_themes)
-- [refresh_token](./client.md#refresh_token)
-- [update_component](./client.md#update_component)
-- [update_theme](./client.md#update_theme)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AmplifyUIBuilderClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalServerException
-- InvalidParameterException
-- ResourceConflictException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("amplifyuibuilder").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("amplifyuibuilder").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator, ...
+from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator
+
+def get_export_components_paginator() -> ExportComponentsPaginator:
+    return Session().client("amplifyuibuilder").get_paginator("export_components"))
 ```
 
 - [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
@@ -137,16 +80,23 @@ from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator, ...
 - [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListThemesPaginator](./paginators.md#listthemespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName
 
-```python
-from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName, ...
+def get_value() -> ExportComponentsPaginatorName:
+    return "export_components"
 ```
 
 - [ExportComponentsPaginatorName](./literals.md#exportcomponentspaginatorname)
@@ -159,18 +109,22 @@ from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName, 
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef
 
-```python
-from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
+def get_value() -> ActionParametersTypeDef:
+    return {
+        "anchor": ...,
+    }
 ```
 
 - [ActionParametersTypeDef](./type_defs.md#actionparameterstypedef)
@@ -196,8 +150,10 @@ from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
 - [ExchangeCodeForTokenRequestBodyTypeDef](./type_defs.md#exchangecodefortokenrequestbodytypedef)
 - [ExchangeCodeForTokenRequestRequestTypeDef](./type_defs.md#exchangecodefortokenrequestrequesttypedef)
 - [ExchangeCodeForTokenResponseTypeDef](./type_defs.md#exchangecodefortokenresponsetypedef)
+- [ExportComponentsRequestExportComponentsPaginateTypeDef](./type_defs.md#exportcomponentsrequestexportcomponentspaginatetypedef)
 - [ExportComponentsRequestRequestTypeDef](./type_defs.md#exportcomponentsrequestrequesttypedef)
 - [ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef)
+- [ExportThemesRequestExportThemesPaginateTypeDef](./type_defs.md#exportthemesrequestexportthemespaginatetypedef)
 - [ExportThemesRequestRequestTypeDef](./type_defs.md#exportthemesrequestrequesttypedef)
 - [ExportThemesResponseTypeDef](./type_defs.md#exportthemesresponsetypedef)
 - [FormBindingElementTypeDef](./type_defs.md#formbindingelementtypedef)
@@ -205,8 +161,10 @@ from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
 - [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef)
 - [GetThemeRequestRequestTypeDef](./type_defs.md#getthemerequestrequesttypedef)
 - [GetThemeResponseTypeDef](./type_defs.md#getthemeresponsetypedef)
+- [ListComponentsRequestListComponentsPaginateTypeDef](./type_defs.md#listcomponentsrequestlistcomponentspaginatetypedef)
 - [ListComponentsRequestRequestTypeDef](./type_defs.md#listcomponentsrequestrequesttypedef)
 - [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)
+- [ListThemesRequestListThemesPaginateTypeDef](./type_defs.md#listthemesrequestlistthemespaginatetypedef)
 - [ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef)
 - [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef)
 - [MutationActionSetStateParameterTypeDef](./type_defs.md#mutationactionsetstateparametertypedef)
@@ -227,3 +185,4 @@ from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
 - [UpdateThemeDataTypeDef](./type_defs.md#updatethemedatatypedef)
 - [UpdateThemeRequestRequestTypeDef](./type_defs.md#updatethemerequestrequesttypedef)
 - [UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef)
+

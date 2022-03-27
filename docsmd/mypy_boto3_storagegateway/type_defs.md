@@ -1,3589 +1,4610 @@
-<a id="typed-dictionaries-for-boto3-storagegateway-module"></a>
-
-# Typed dictionaries for boto3 StorageGateway module
+# Typed dictionaries
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module
-[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+!!! note ""
 
-- [Typed dictionaries for boto3 StorageGateway module](#typed-dictionaries-for-boto3-storagegateway-module)
-  - [ActivateGatewayInputRequestTypeDef](#activategatewayinputrequesttypedef)
-  - [ActivateGatewayOutputTypeDef](#activategatewayoutputtypedef)
-  - [AddCacheInputRequestTypeDef](#addcacheinputrequesttypedef)
-  - [AddCacheOutputTypeDef](#addcacheoutputtypedef)
-  - [AddTagsToResourceInputRequestTypeDef](#addtagstoresourceinputrequesttypedef)
-  - [AddTagsToResourceOutputTypeDef](#addtagstoresourceoutputtypedef)
-  - [AddUploadBufferInputRequestTypeDef](#adduploadbufferinputrequesttypedef)
-  - [AddUploadBufferOutputTypeDef](#adduploadbufferoutputtypedef)
-  - [AddWorkingStorageInputRequestTypeDef](#addworkingstorageinputrequesttypedef)
-  - [AddWorkingStorageOutputTypeDef](#addworkingstorageoutputtypedef)
-  - [AssignTapePoolInputRequestTypeDef](#assigntapepoolinputrequesttypedef)
-  - [AssignTapePoolOutputTypeDef](#assigntapepooloutputtypedef)
-  - [AssociateFileSystemInputRequestTypeDef](#associatefilesysteminputrequesttypedef)
-  - [AssociateFileSystemOutputTypeDef](#associatefilesystemoutputtypedef)
-  - [AttachVolumeInputRequestTypeDef](#attachvolumeinputrequesttypedef)
-  - [AttachVolumeOutputTypeDef](#attachvolumeoutputtypedef)
-  - [AutomaticTapeCreationPolicyInfoTypeDef](#automatictapecreationpolicyinfotypedef)
-  - [AutomaticTapeCreationRuleTypeDef](#automatictapecreationruletypedef)
-  - [BandwidthRateLimitIntervalTypeDef](#bandwidthratelimitintervaltypedef)
-  - [CacheAttributesTypeDef](#cacheattributestypedef)
-  - [CachediSCSIVolumeTypeDef](#cachediscsivolumetypedef)
-  - [CancelArchivalInputRequestTypeDef](#cancelarchivalinputrequesttypedef)
-  - [CancelArchivalOutputTypeDef](#cancelarchivaloutputtypedef)
-  - [CancelRetrievalInputRequestTypeDef](#cancelretrievalinputrequesttypedef)
-  - [CancelRetrievalOutputTypeDef](#cancelretrievaloutputtypedef)
-  - [ChapInfoTypeDef](#chapinfotypedef)
-  - [CreateCachediSCSIVolumeInputRequestTypeDef](#createcachediscsivolumeinputrequesttypedef)
-  - [CreateCachediSCSIVolumeOutputTypeDef](#createcachediscsivolumeoutputtypedef)
-  - [CreateNFSFileShareInputRequestTypeDef](#createnfsfileshareinputrequesttypedef)
-  - [CreateNFSFileShareOutputTypeDef](#createnfsfileshareoutputtypedef)
-  - [CreateSMBFileShareInputRequestTypeDef](#createsmbfileshareinputrequesttypedef)
-  - [CreateSMBFileShareOutputTypeDef](#createsmbfileshareoutputtypedef)
-  - [CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef](#createsnapshotfromvolumerecoverypointinputrequesttypedef)
-  - [CreateSnapshotFromVolumeRecoveryPointOutputTypeDef](#createsnapshotfromvolumerecoverypointoutputtypedef)
-  - [CreateSnapshotInputRequestTypeDef](#createsnapshotinputrequesttypedef)
-  - [CreateSnapshotOutputTypeDef](#createsnapshotoutputtypedef)
-  - [CreateStorediSCSIVolumeInputRequestTypeDef](#createstorediscsivolumeinputrequesttypedef)
-  - [CreateStorediSCSIVolumeOutputTypeDef](#createstorediscsivolumeoutputtypedef)
-  - [CreateTapePoolInputRequestTypeDef](#createtapepoolinputrequesttypedef)
-  - [CreateTapePoolOutputTypeDef](#createtapepooloutputtypedef)
-  - [CreateTapeWithBarcodeInputRequestTypeDef](#createtapewithbarcodeinputrequesttypedef)
-  - [CreateTapeWithBarcodeOutputTypeDef](#createtapewithbarcodeoutputtypedef)
-  - [CreateTapesInputRequestTypeDef](#createtapesinputrequesttypedef)
-  - [CreateTapesOutputTypeDef](#createtapesoutputtypedef)
-  - [DeleteAutomaticTapeCreationPolicyInputRequestTypeDef](#deleteautomatictapecreationpolicyinputrequesttypedef)
-  - [DeleteAutomaticTapeCreationPolicyOutputTypeDef](#deleteautomatictapecreationpolicyoutputtypedef)
-  - [DeleteBandwidthRateLimitInputRequestTypeDef](#deletebandwidthratelimitinputrequesttypedef)
-  - [DeleteBandwidthRateLimitOutputTypeDef](#deletebandwidthratelimitoutputtypedef)
-  - [DeleteChapCredentialsInputRequestTypeDef](#deletechapcredentialsinputrequesttypedef)
-  - [DeleteChapCredentialsOutputTypeDef](#deletechapcredentialsoutputtypedef)
-  - [DeleteFileShareInputRequestTypeDef](#deletefileshareinputrequesttypedef)
-  - [DeleteFileShareOutputTypeDef](#deletefileshareoutputtypedef)
-  - [DeleteGatewayInputRequestTypeDef](#deletegatewayinputrequesttypedef)
-  - [DeleteGatewayOutputTypeDef](#deletegatewayoutputtypedef)
-  - [DeleteSnapshotScheduleInputRequestTypeDef](#deletesnapshotscheduleinputrequesttypedef)
-  - [DeleteSnapshotScheduleOutputTypeDef](#deletesnapshotscheduleoutputtypedef)
-  - [DeleteTapeArchiveInputRequestTypeDef](#deletetapearchiveinputrequesttypedef)
-  - [DeleteTapeArchiveOutputTypeDef](#deletetapearchiveoutputtypedef)
-  - [DeleteTapeInputRequestTypeDef](#deletetapeinputrequesttypedef)
-  - [DeleteTapeOutputTypeDef](#deletetapeoutputtypedef)
-  - [DeleteTapePoolInputRequestTypeDef](#deletetapepoolinputrequesttypedef)
-  - [DeleteTapePoolOutputTypeDef](#deletetapepooloutputtypedef)
-  - [DeleteVolumeInputRequestTypeDef](#deletevolumeinputrequesttypedef)
-  - [DeleteVolumeOutputTypeDef](#deletevolumeoutputtypedef)
-  - [DescribeAvailabilityMonitorTestInputRequestTypeDef](#describeavailabilitymonitortestinputrequesttypedef)
-  - [DescribeAvailabilityMonitorTestOutputTypeDef](#describeavailabilitymonitortestoutputtypedef)
-  - [DescribeBandwidthRateLimitInputRequestTypeDef](#describebandwidthratelimitinputrequesttypedef)
-  - [DescribeBandwidthRateLimitOutputTypeDef](#describebandwidthratelimitoutputtypedef)
-  - [DescribeBandwidthRateLimitScheduleInputRequestTypeDef](#describebandwidthratelimitscheduleinputrequesttypedef)
-  - [DescribeBandwidthRateLimitScheduleOutputTypeDef](#describebandwidthratelimitscheduleoutputtypedef)
-  - [DescribeCacheInputRequestTypeDef](#describecacheinputrequesttypedef)
-  - [DescribeCacheOutputTypeDef](#describecacheoutputtypedef)
-  - [DescribeCachediSCSIVolumesInputRequestTypeDef](#describecachediscsivolumesinputrequesttypedef)
-  - [DescribeCachediSCSIVolumesOutputTypeDef](#describecachediscsivolumesoutputtypedef)
-  - [DescribeChapCredentialsInputRequestTypeDef](#describechapcredentialsinputrequesttypedef)
-  - [DescribeChapCredentialsOutputTypeDef](#describechapcredentialsoutputtypedef)
-  - [DescribeFileSystemAssociationsInputRequestTypeDef](#describefilesystemassociationsinputrequesttypedef)
-  - [DescribeFileSystemAssociationsOutputTypeDef](#describefilesystemassociationsoutputtypedef)
-  - [DescribeGatewayInformationInputRequestTypeDef](#describegatewayinformationinputrequesttypedef)
-  - [DescribeGatewayInformationOutputTypeDef](#describegatewayinformationoutputtypedef)
-  - [DescribeMaintenanceStartTimeInputRequestTypeDef](#describemaintenancestarttimeinputrequesttypedef)
-  - [DescribeMaintenanceStartTimeOutputTypeDef](#describemaintenancestarttimeoutputtypedef)
-  - [DescribeNFSFileSharesInputRequestTypeDef](#describenfsfilesharesinputrequesttypedef)
-  - [DescribeNFSFileSharesOutputTypeDef](#describenfsfilesharesoutputtypedef)
-  - [DescribeSMBFileSharesInputRequestTypeDef](#describesmbfilesharesinputrequesttypedef)
-  - [DescribeSMBFileSharesOutputTypeDef](#describesmbfilesharesoutputtypedef)
-  - [DescribeSMBSettingsInputRequestTypeDef](#describesmbsettingsinputrequesttypedef)
-  - [DescribeSMBSettingsOutputTypeDef](#describesmbsettingsoutputtypedef)
-  - [DescribeSnapshotScheduleInputRequestTypeDef](#describesnapshotscheduleinputrequesttypedef)
-  - [DescribeSnapshotScheduleOutputTypeDef](#describesnapshotscheduleoutputtypedef)
-  - [DescribeStorediSCSIVolumesInputRequestTypeDef](#describestorediscsivolumesinputrequesttypedef)
-  - [DescribeStorediSCSIVolumesOutputTypeDef](#describestorediscsivolumesoutputtypedef)
-  - [DescribeTapeArchivesInputRequestTypeDef](#describetapearchivesinputrequesttypedef)
-  - [DescribeTapeArchivesOutputTypeDef](#describetapearchivesoutputtypedef)
-  - [DescribeTapeRecoveryPointsInputRequestTypeDef](#describetaperecoverypointsinputrequesttypedef)
-  - [DescribeTapeRecoveryPointsOutputTypeDef](#describetaperecoverypointsoutputtypedef)
-  - [DescribeTapesInputRequestTypeDef](#describetapesinputrequesttypedef)
-  - [DescribeTapesOutputTypeDef](#describetapesoutputtypedef)
-  - [DescribeUploadBufferInputRequestTypeDef](#describeuploadbufferinputrequesttypedef)
-  - [DescribeUploadBufferOutputTypeDef](#describeuploadbufferoutputtypedef)
-  - [DescribeVTLDevicesInputRequestTypeDef](#describevtldevicesinputrequesttypedef)
-  - [DescribeVTLDevicesOutputTypeDef](#describevtldevicesoutputtypedef)
-  - [DescribeWorkingStorageInputRequestTypeDef](#describeworkingstorageinputrequesttypedef)
-  - [DescribeWorkingStorageOutputTypeDef](#describeworkingstorageoutputtypedef)
-  - [DetachVolumeInputRequestTypeDef](#detachvolumeinputrequesttypedef)
-  - [DetachVolumeOutputTypeDef](#detachvolumeoutputtypedef)
-  - [DeviceiSCSIAttributesTypeDef](#deviceiscsiattributestypedef)
-  - [DisableGatewayInputRequestTypeDef](#disablegatewayinputrequesttypedef)
-  - [DisableGatewayOutputTypeDef](#disablegatewayoutputtypedef)
-  - [DisassociateFileSystemInputRequestTypeDef](#disassociatefilesysteminputrequesttypedef)
-  - [DisassociateFileSystemOutputTypeDef](#disassociatefilesystemoutputtypedef)
-  - [DiskTypeDef](#disktypedef)
-  - [EndpointNetworkConfigurationTypeDef](#endpointnetworkconfigurationtypedef)
-  - [FileShareInfoTypeDef](#fileshareinfotypedef)
-  - [FileSystemAssociationInfoTypeDef](#filesystemassociationinfotypedef)
-  - [FileSystemAssociationStatusDetailTypeDef](#filesystemassociationstatusdetailtypedef)
-  - [FileSystemAssociationSummaryTypeDef](#filesystemassociationsummarytypedef)
-  - [GatewayInfoTypeDef](#gatewayinfotypedef)
-  - [JoinDomainInputRequestTypeDef](#joindomaininputrequesttypedef)
-  - [JoinDomainOutputTypeDef](#joindomainoutputtypedef)
-  - [ListAutomaticTapeCreationPoliciesInputRequestTypeDef](#listautomatictapecreationpoliciesinputrequesttypedef)
-  - [ListAutomaticTapeCreationPoliciesOutputTypeDef](#listautomatictapecreationpoliciesoutputtypedef)
-  - [ListFileSharesInputRequestTypeDef](#listfilesharesinputrequesttypedef)
-  - [ListFileSharesOutputTypeDef](#listfilesharesoutputtypedef)
-  - [ListFileSystemAssociationsInputRequestTypeDef](#listfilesystemassociationsinputrequesttypedef)
-  - [ListFileSystemAssociationsOutputTypeDef](#listfilesystemassociationsoutputtypedef)
-  - [ListGatewaysInputRequestTypeDef](#listgatewaysinputrequesttypedef)
-  - [ListGatewaysOutputTypeDef](#listgatewaysoutputtypedef)
-  - [ListLocalDisksInputRequestTypeDef](#listlocaldisksinputrequesttypedef)
-  - [ListLocalDisksOutputTypeDef](#listlocaldisksoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ListTapePoolsInputRequestTypeDef](#listtapepoolsinputrequesttypedef)
-  - [ListTapePoolsOutputTypeDef](#listtapepoolsoutputtypedef)
-  - [ListTapesInputRequestTypeDef](#listtapesinputrequesttypedef)
-  - [ListTapesOutputTypeDef](#listtapesoutputtypedef)
-  - [ListVolumeInitiatorsInputRequestTypeDef](#listvolumeinitiatorsinputrequesttypedef)
-  - [ListVolumeInitiatorsOutputTypeDef](#listvolumeinitiatorsoutputtypedef)
-  - [ListVolumeRecoveryPointsInputRequestTypeDef](#listvolumerecoverypointsinputrequesttypedef)
-  - [ListVolumeRecoveryPointsOutputTypeDef](#listvolumerecoverypointsoutputtypedef)
-  - [ListVolumesInputRequestTypeDef](#listvolumesinputrequesttypedef)
-  - [ListVolumesOutputTypeDef](#listvolumesoutputtypedef)
-  - [NFSFileShareDefaultsTypeDef](#nfsfilesharedefaultstypedef)
-  - [NFSFileShareInfoTypeDef](#nfsfileshareinfotypedef)
-  - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [NotifyWhenUploadedInputRequestTypeDef](#notifywhenuploadedinputrequesttypedef)
-  - [NotifyWhenUploadedOutputTypeDef](#notifywhenuploadedoutputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PoolInfoTypeDef](#poolinfotypedef)
-  - [RefreshCacheInputRequestTypeDef](#refreshcacheinputrequesttypedef)
-  - [RefreshCacheOutputTypeDef](#refreshcacheoutputtypedef)
-  - [RemoveTagsFromResourceInputRequestTypeDef](#removetagsfromresourceinputrequesttypedef)
-  - [RemoveTagsFromResourceOutputTypeDef](#removetagsfromresourceoutputtypedef)
-  - [ResetCacheInputRequestTypeDef](#resetcacheinputrequesttypedef)
-  - [ResetCacheOutputTypeDef](#resetcacheoutputtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetrieveTapeArchiveInputRequestTypeDef](#retrievetapearchiveinputrequesttypedef)
-  - [RetrieveTapeArchiveOutputTypeDef](#retrievetapearchiveoutputtypedef)
-  - [RetrieveTapeRecoveryPointInputRequestTypeDef](#retrievetaperecoverypointinputrequesttypedef)
-  - [RetrieveTapeRecoveryPointOutputTypeDef](#retrievetaperecoverypointoutputtypedef)
-  - [SMBFileShareInfoTypeDef](#smbfileshareinfotypedef)
-  - [SMBLocalGroupsTypeDef](#smblocalgroupstypedef)
-  - [SetLocalConsolePasswordInputRequestTypeDef](#setlocalconsolepasswordinputrequesttypedef)
-  - [SetLocalConsolePasswordOutputTypeDef](#setlocalconsolepasswordoutputtypedef)
-  - [SetSMBGuestPasswordInputRequestTypeDef](#setsmbguestpasswordinputrequesttypedef)
-  - [SetSMBGuestPasswordOutputTypeDef](#setsmbguestpasswordoutputtypedef)
-  - [ShutdownGatewayInputRequestTypeDef](#shutdowngatewayinputrequesttypedef)
-  - [ShutdownGatewayOutputTypeDef](#shutdowngatewayoutputtypedef)
-  - [StartAvailabilityMonitorTestInputRequestTypeDef](#startavailabilitymonitortestinputrequesttypedef)
-  - [StartAvailabilityMonitorTestOutputTypeDef](#startavailabilitymonitortestoutputtypedef)
-  - [StartGatewayInputRequestTypeDef](#startgatewayinputrequesttypedef)
-  - [StartGatewayOutputTypeDef](#startgatewayoutputtypedef)
-  - [StorediSCSIVolumeTypeDef](#storediscsivolumetypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TapeArchiveTypeDef](#tapearchivetypedef)
-  - [TapeInfoTypeDef](#tapeinfotypedef)
-  - [TapeRecoveryPointInfoTypeDef](#taperecoverypointinfotypedef)
-  - [TapeTypeDef](#tapetypedef)
-  - [UpdateAutomaticTapeCreationPolicyInputRequestTypeDef](#updateautomatictapecreationpolicyinputrequesttypedef)
-  - [UpdateAutomaticTapeCreationPolicyOutputTypeDef](#updateautomatictapecreationpolicyoutputtypedef)
-  - [UpdateBandwidthRateLimitInputRequestTypeDef](#updatebandwidthratelimitinputrequesttypedef)
-  - [UpdateBandwidthRateLimitOutputTypeDef](#updatebandwidthratelimitoutputtypedef)
-  - [UpdateBandwidthRateLimitScheduleInputRequestTypeDef](#updatebandwidthratelimitscheduleinputrequesttypedef)
-  - [UpdateBandwidthRateLimitScheduleOutputTypeDef](#updatebandwidthratelimitscheduleoutputtypedef)
-  - [UpdateChapCredentialsInputRequestTypeDef](#updatechapcredentialsinputrequesttypedef)
-  - [UpdateChapCredentialsOutputTypeDef](#updatechapcredentialsoutputtypedef)
-  - [UpdateFileSystemAssociationInputRequestTypeDef](#updatefilesystemassociationinputrequesttypedef)
-  - [UpdateFileSystemAssociationOutputTypeDef](#updatefilesystemassociationoutputtypedef)
-  - [UpdateGatewayInformationInputRequestTypeDef](#updategatewayinformationinputrequesttypedef)
-  - [UpdateGatewayInformationOutputTypeDef](#updategatewayinformationoutputtypedef)
-  - [UpdateGatewaySoftwareNowInputRequestTypeDef](#updategatewaysoftwarenowinputrequesttypedef)
-  - [UpdateGatewaySoftwareNowOutputTypeDef](#updategatewaysoftwarenowoutputtypedef)
-  - [UpdateMaintenanceStartTimeInputRequestTypeDef](#updatemaintenancestarttimeinputrequesttypedef)
-  - [UpdateMaintenanceStartTimeOutputTypeDef](#updatemaintenancestarttimeoutputtypedef)
-  - [UpdateNFSFileShareInputRequestTypeDef](#updatenfsfileshareinputrequesttypedef)
-  - [UpdateNFSFileShareOutputTypeDef](#updatenfsfileshareoutputtypedef)
-  - [UpdateSMBFileShareInputRequestTypeDef](#updatesmbfileshareinputrequesttypedef)
-  - [UpdateSMBFileShareOutputTypeDef](#updatesmbfileshareoutputtypedef)
-  - [UpdateSMBFileShareVisibilityInputRequestTypeDef](#updatesmbfilesharevisibilityinputrequesttypedef)
-  - [UpdateSMBFileShareVisibilityOutputTypeDef](#updatesmbfilesharevisibilityoutputtypedef)
-  - [UpdateSMBLocalGroupsInputRequestTypeDef](#updatesmblocalgroupsinputrequesttypedef)
-  - [UpdateSMBLocalGroupsOutputTypeDef](#updatesmblocalgroupsoutputtypedef)
-  - [UpdateSMBSecurityStrategyInputRequestTypeDef](#updatesmbsecuritystrategyinputrequesttypedef)
-  - [UpdateSMBSecurityStrategyOutputTypeDef](#updatesmbsecuritystrategyoutputtypedef)
-  - [UpdateSnapshotScheduleInputRequestTypeDef](#updatesnapshotscheduleinputrequesttypedef)
-  - [UpdateSnapshotScheduleOutputTypeDef](#updatesnapshotscheduleoutputtypedef)
-  - [UpdateVTLDeviceTypeInputRequestTypeDef](#updatevtldevicetypeinputrequesttypedef)
-  - [UpdateVTLDeviceTypeOutputTypeDef](#updatevtldevicetypeoutputtypedef)
-  - [VTLDeviceTypeDef](#vtldevicetypedef)
-  - [VolumeInfoTypeDef](#volumeinfotypedef)
-  - [VolumeRecoveryPointInfoTypeDef](#volumerecoverypointinfotypedef)
-  - [VolumeiSCSIAttributesTypeDef](#volumeiscsiattributestypedef)
-
-<a id="activategatewayinputrequesttypedef"></a>
+    Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+    type annotations stubs module [mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ## ActivateGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ActivateGatewayInputRequestTypeDef
+
+def get_value() -> ActivateGatewayInputRequestTypeDef:
+    return {
+        "ActivationKey": ...,
+        "GatewayName": ...,
+        "GatewayTimezone": ...,
+        "GatewayRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivateGatewayInputRequestTypeDef(TypedDict):
+    ActivationKey: str,
+    GatewayName: str,
+    GatewayTimezone: str,
+    GatewayRegion: str,
+    GatewayType: NotRequired[str],
+    TapeDriveType: NotRequired[str],
+    MediumChangerType: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ActivationKey`: `str`
-- `GatewayName`: `str`
-- `GatewayTimezone`: `str`
-- `GatewayRegion`: `str`
-
-Optional fields:
-
-- `GatewayType`: `str`
-- `TapeDriveType`: `str`
-- `MediumChangerType`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="activategatewayoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ActivateGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ActivateGatewayOutputTypeDef
+
+def get_value() -> ActivateGatewayOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActivateGatewayOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addcacheinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddCacheInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddCacheInputRequestTypeDef
+
+def get_value() -> AddCacheInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `DiskIds`: `Sequence`\[`str`\]
-
-<a id="addcacheoutputtypedef"></a>
+```python title="Definition"
+class AddCacheInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+```
 
 ## AddCacheOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddCacheOutputTypeDef
+
+def get_value() -> AddCacheOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddCacheOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addtagstoresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddTagsToResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddTagsToResourceInputRequestTypeDef
+
+def get_value() -> AddTagsToResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="addtagstoresourceoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AddTagsToResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddTagsToResourceOutputTypeDef
+
+def get_value() -> AddTagsToResourceOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToResourceOutputTypeDef(TypedDict):
+    ResourceARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="adduploadbufferinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddUploadBufferInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddUploadBufferInputRequestTypeDef
+
+def get_value() -> AddUploadBufferInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `DiskIds`: `Sequence`\[`str`\]
-
-<a id="adduploadbufferoutputtypedef"></a>
+```python title="Definition"
+class AddUploadBufferInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+```
 
 ## AddUploadBufferOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddUploadBufferOutputTypeDef
+
+def get_value() -> AddUploadBufferOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddUploadBufferOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addworkingstorageinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddWorkingStorageInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddWorkingStorageInputRequestTypeDef
+
+def get_value() -> AddWorkingStorageInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `DiskIds`: `Sequence`\[`str`\]
-
-<a id="addworkingstorageoutputtypedef"></a>
+```python title="Definition"
+class AddWorkingStorageInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: Sequence[str],
+```
 
 ## AddWorkingStorageOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AddWorkingStorageOutputTypeDef
+
+def get_value() -> AddWorkingStorageOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddWorkingStorageOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="assigntapepoolinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssignTapePoolInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AssignTapePoolInputRequestTypeDef
+
+def get_value() -> AssignTapePoolInputRequestTypeDef:
+    return {
+        "TapeARN": ...,
+        "PoolId": ...,
+    }
 ```
 
-Required fields:
-
-- `TapeARN`: `str`
-- `PoolId`: `str`
-
-Optional fields:
-
-- `BypassGovernanceRetention`: `bool`
-
-<a id="assigntapepooloutputtypedef"></a>
+```python title="Definition"
+class AssignTapePoolInputRequestTypeDef(TypedDict):
+    TapeARN: str,
+    PoolId: str,
+    BypassGovernanceRetention: NotRequired[bool],
+```
 
 ## AssignTapePoolOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AssignTapePoolOutputTypeDef
+
+def get_value() -> AssignTapePoolOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssignTapePoolOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatefilesysteminputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateFileSystemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AssociateFileSystemInputRequestTypeDef
+
+def get_value() -> AssociateFileSystemInputRequestTypeDef:
+    return {
+        "UserName": ...,
+        "Password": ...,
+        "ClientToken": ...,
+        "GatewayARN": ...,
+        "LocationARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateFileSystemInputRequestTypeDef(TypedDict):
+    UserName: str,
+    Password: str,
+    ClientToken: str,
+    GatewayARN: str,
+    LocationARN: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    AuditDestinationARN: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (2)
+    EndpointNetworkConfiguration: NotRequired[EndpointNetworkConfigurationTypeDef],  # (3)
+```
 
-- `UserName`: `str`
-- `Password`: `str`
-- `ClientToken`: `str`
-- `GatewayARN`: `str`
-- `LocationARN`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AuditDestinationARN`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `EndpointNetworkConfiguration`:
-  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
-
-<a id="associatefilesystemoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+3. See [:material-code-braces: EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef) 
 ## AssociateFileSystemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AssociateFileSystemOutputTypeDef
+
+def get_value() -> AssociateFileSystemOutputTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateFileSystemOutputTypeDef(TypedDict):
+    FileSystemAssociationARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attachvolumeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachVolumeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AttachVolumeInputRequestTypeDef
+
+def get_value() -> AttachVolumeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "VolumeARN": ...,
+        "NetworkInterfaceId": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `VolumeARN`: `str`
-- `NetworkInterfaceId`: `str`
-
-Optional fields:
-
-- `TargetName`: `str`
-- `DiskId`: `str`
-
-<a id="attachvolumeoutputtypedef"></a>
+```python title="Definition"
+class AttachVolumeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    VolumeARN: str,
+    NetworkInterfaceId: str,
+    TargetName: NotRequired[str],
+    DiskId: NotRequired[str],
+```
 
 ## AttachVolumeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AttachVolumeOutputTypeDef
+
+def get_value() -> AttachVolumeOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "TargetARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AttachVolumeOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    TargetARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `TargetARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="automatictapecreationpolicyinfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AutomaticTapeCreationPolicyInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AutomaticTapeCreationPolicyInfoTypeDef
+
+def get_value() -> AutomaticTapeCreationPolicyInfoTypeDef:
+    return {
+        "AutomaticTapeCreationRules": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutomaticTapeCreationPolicyInfoTypeDef(TypedDict):
+    AutomaticTapeCreationRules: NotRequired[List[AutomaticTapeCreationRuleTypeDef]],  # (1)
+    GatewayARN: NotRequired[str],
+```
 
-- `AutomaticTapeCreationRules`:
-  `List`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
-- `GatewayARN`: `str`
-
-<a id="automatictapecreationruletypedef"></a>
-
+1. See [:material-code-braces: AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef) 
 ## AutomaticTapeCreationRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import AutomaticTapeCreationRuleTypeDef
+
+def get_value() -> AutomaticTapeCreationRuleTypeDef:
+    return {
+        "TapeBarcodePrefix": ...,
+        "PoolId": ...,
+        "TapeSizeInBytes": ...,
+        "MinimumNumTapes": ...,
+    }
 ```
 
-Required fields:
-
-- `TapeBarcodePrefix`: `str`
-- `PoolId`: `str`
-- `TapeSizeInBytes`: `int`
-- `MinimumNumTapes`: `int`
-
-Optional fields:
-
-- `Worm`: `bool`
-
-<a id="bandwidthratelimitintervaltypedef"></a>
+```python title="Definition"
+class AutomaticTapeCreationRuleTypeDef(TypedDict):
+    TapeBarcodePrefix: str,
+    PoolId: str,
+    TapeSizeInBytes: int,
+    MinimumNumTapes: int,
+    Worm: NotRequired[bool],
+```
 
 ## BandwidthRateLimitIntervalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import BandwidthRateLimitIntervalTypeDef
+
+def get_value() -> BandwidthRateLimitIntervalTypeDef:
+    return {
+        "StartHourOfDay": ...,
+        "StartMinuteOfHour": ...,
+        "EndHourOfDay": ...,
+        "EndMinuteOfHour": ...,
+        "DaysOfWeek": ...,
+    }
 ```
 
-Required fields:
-
-- `StartHourOfDay`: `int`
-- `StartMinuteOfHour`: `int`
-- `EndHourOfDay`: `int`
-- `EndMinuteOfHour`: `int`
-- `DaysOfWeek`: `List`\[`int`\]
-
-Optional fields:
-
-- `AverageUploadRateLimitInBitsPerSec`: `int`
-- `AverageDownloadRateLimitInBitsPerSec`: `int`
-
-<a id="cacheattributestypedef"></a>
+```python title="Definition"
+class BandwidthRateLimitIntervalTypeDef(TypedDict):
+    StartHourOfDay: int,
+    StartMinuteOfHour: int,
+    EndHourOfDay: int,
+    EndMinuteOfHour: int,
+    DaysOfWeek: List[int],
+    AverageUploadRateLimitInBitsPerSec: NotRequired[int],
+    AverageDownloadRateLimitInBitsPerSec: NotRequired[int],
+```
 
 ## CacheAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CacheAttributesTypeDef
+
+def get_value() -> CacheAttributesTypeDef:
+    return {
+        "CacheStaleTimeoutInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `CacheStaleTimeoutInSeconds`: `int`
-
-<a id="cachediscsivolumetypedef"></a>
+```python title="Definition"
+class CacheAttributesTypeDef(TypedDict):
+    CacheStaleTimeoutInSeconds: NotRequired[int],
+```
 
 ## CachediSCSIVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CachediSCSIVolumeTypeDef
+
+def get_value() -> CachediSCSIVolumeTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CachediSCSIVolumeTypeDef(TypedDict):
+    VolumeARN: NotRequired[str],
+    VolumeId: NotRequired[str],
+    VolumeType: NotRequired[str],
+    VolumeStatus: NotRequired[str],
+    VolumeAttachmentStatus: NotRequired[str],
+    VolumeSizeInBytes: NotRequired[int],
+    VolumeProgress: NotRequired[float],
+    SourceSnapshotId: NotRequired[str],
+    VolumeiSCSIAttributes: NotRequired[VolumeiSCSIAttributesTypeDef],  # (1)
+    CreatedDate: NotRequired[datetime],
+    VolumeUsedInBytes: NotRequired[int],
+    KMSKey: NotRequired[str],
+    TargetName: NotRequired[str],
+```
 
-- `VolumeARN`: `str`
-- `VolumeId`: `str`
-- `VolumeType`: `str`
-- `VolumeStatus`: `str`
-- `VolumeAttachmentStatus`: `str`
-- `VolumeSizeInBytes`: `int`
-- `VolumeProgress`: `float`
-- `SourceSnapshotId`: `str`
-- `VolumeiSCSIAttributes`:
-  [VolumeiSCSIAttributesTypeDef](./type_defs.md#volumeiscsiattributestypedef)
-- `CreatedDate`: `datetime`
-- `VolumeUsedInBytes`: `int`
-- `KMSKey`: `str`
-- `TargetName`: `str`
-
-<a id="cancelarchivalinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VolumeiSCSIAttributesTypeDef](./type_defs.md#volumeiscsiattributestypedef) 
 ## CancelArchivalInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CancelArchivalInputRequestTypeDef
+
+def get_value() -> CancelArchivalInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `TapeARN`: `str`
-
-<a id="cancelarchivaloutputtypedef"></a>
+```python title="Definition"
+class CancelArchivalInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeARN: str,
+```
 
 ## CancelArchivalOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CancelArchivalOutputTypeDef
+
+def get_value() -> CancelArchivalOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelArchivalOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cancelretrievalinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CancelRetrievalInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CancelRetrievalInputRequestTypeDef
+
+def get_value() -> CancelRetrievalInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `TapeARN`: `str`
-
-<a id="cancelretrievaloutputtypedef"></a>
+```python title="Definition"
+class CancelRetrievalInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeARN: str,
+```
 
 ## CancelRetrievalOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CancelRetrievalOutputTypeDef
+
+def get_value() -> CancelRetrievalOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelRetrievalOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="chapinfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChapInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ChapInfoTypeDef
+
+def get_value() -> ChapInfoTypeDef:
+    return {
+        "TargetARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetARN`: `str`
-- `SecretToAuthenticateInitiator`: `str`
-- `InitiatorName`: `str`
-- `SecretToAuthenticateTarget`: `str`
-
-<a id="createcachediscsivolumeinputrequesttypedef"></a>
+```python title="Definition"
+class ChapInfoTypeDef(TypedDict):
+    TargetARN: NotRequired[str],
+    SecretToAuthenticateInitiator: NotRequired[str],
+    InitiatorName: NotRequired[str],
+    SecretToAuthenticateTarget: NotRequired[str],
+```
 
 ## CreateCachediSCSIVolumeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeInputRequestTypeDef
+
+def get_value() -> CreateCachediSCSIVolumeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "VolumeSizeInBytes": ...,
+        "TargetName": ...,
+        "NetworkInterfaceId": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCachediSCSIVolumeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    VolumeSizeInBytes: int,
+    TargetName: str,
+    NetworkInterfaceId: str,
+    ClientToken: str,
+    SnapshotId: NotRequired[str],
+    SourceVolumeARN: NotRequired[str],
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `GatewayARN`: `str`
-- `VolumeSizeInBytes`: `int`
-- `TargetName`: `str`
-- `NetworkInterfaceId`: `str`
-- `ClientToken`: `str`
-
-Optional fields:
-
-- `SnapshotId`: `str`
-- `SourceVolumeARN`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcachediscsivolumeoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCachediSCSIVolumeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateCachediSCSIVolumeOutputTypeDef
+
+def get_value() -> CreateCachediSCSIVolumeOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "TargetARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCachediSCSIVolumeOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    TargetARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `TargetARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createnfsfileshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateNFSFileShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareInputRequestTypeDef
+
+def get_value() -> CreateNFSFileShareInputRequestTypeDef:
+    return {
+        "ClientToken": ...,
+        "GatewayARN": ...,
+        "Role": ...,
+        "LocationARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNFSFileShareInputRequestTypeDef(TypedDict):
+    ClientToken: str,
+    GatewayARN: str,
+    Role: str,
+    LocationARN: str,
+    NFSFileShareDefaults: NotRequired[NFSFileShareDefaultsTypeDef],  # (1)
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (2)
+    ClientList: NotRequired[Sequence[str]],
+    Squash: NotRequired[str],
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (4)
+    NotificationPolicy: NotRequired[str],
+    VPCEndpointDNSName: NotRequired[str],
+    BucketRegion: NotRequired[str],
+    AuditDestinationARN: NotRequired[str],
+```
 
-- `ClientToken`: `str`
-- `GatewayARN`: `str`
-- `Role`: `str`
-- `LocationARN`: `str`
-
-Optional fields:
-
-- `NFSFileShareDefaults`:
-  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `Sequence`\[`str`\]
-- `Squash`: `str`
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `AuditDestinationARN`: `str`
-
-<a id="createnfsfileshareoutputtypedef"></a>
-
+1. See [:material-code-braces: NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef) 
+2. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## CreateNFSFileShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateNFSFileShareOutputTypeDef
+
+def get_value() -> CreateNFSFileShareOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNFSFileShareOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsmbfileshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSMBFileShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareInputRequestTypeDef
+
+def get_value() -> CreateSMBFileShareInputRequestTypeDef:
+    return {
+        "ClientToken": ...,
+        "GatewayARN": ...,
+        "Role": ...,
+        "LocationARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSMBFileShareInputRequestTypeDef(TypedDict):
+    ClientToken: str,
+    GatewayARN: str,
+    Role: str,
+    LocationARN: str,
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (1)
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    SMBACLEnabled: NotRequired[bool],
+    AccessBasedEnumeration: NotRequired[bool],
+    AdminUserList: NotRequired[Sequence[str]],
+    ValidUserList: NotRequired[Sequence[str]],
+    InvalidUserList: NotRequired[Sequence[str]],
+    AuditDestinationARN: NotRequired[str],
+    Authentication: NotRequired[str],
+    CaseSensitivity: NotRequired[CaseSensitivityType],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (4)
+    NotificationPolicy: NotRequired[str],
+    VPCEndpointDNSName: NotRequired[str],
+    BucketRegion: NotRequired[str],
+    OplocksEnabled: NotRequired[bool],
+```
 
-- `ClientToken`: `str`
-- `GatewayARN`: `str`
-- `Role`: `str`
-- `LocationARN`: `str`
-
-Optional fields:
-
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `SMBACLEnabled`: `bool`
-- `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `Sequence`\[`str`\]
-- `ValidUserList`: `Sequence`\[`str`\]
-- `InvalidUserList`: `Sequence`\[`str`\]
-- `AuditDestinationARN`: `str`
-- `Authentication`: `str`
-- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `OplocksEnabled`: `bool`
-
-<a id="createsmbfileshareoutputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+2. See [:material-code-brackets: CaseSensitivityType](./literals.md#casesensitivitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## CreateSMBFileShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSMBFileShareOutputTypeDef
+
+def get_value() -> CreateSMBFileShareOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSMBFileShareOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsnapshotfromvolumerecoverypointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef
+
+def get_value() -> CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+        "SnapshotDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotFromVolumeRecoveryPointInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+    SnapshotDescription: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VolumeARN`: `str`
-- `SnapshotDescription`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsnapshotfromvolumerecoverypointoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotFromVolumeRecoveryPointOutputTypeDef
+
+def get_value() -> CreateSnapshotFromVolumeRecoveryPointOutputTypeDef:
+    return {
+        "SnapshotId": ...,
+        "VolumeARN": ...,
+        "VolumeRecoveryPointTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotFromVolumeRecoveryPointOutputTypeDef(TypedDict):
+    SnapshotId: str,
+    VolumeARN: str,
+    VolumeRecoveryPointTime: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SnapshotId`: `str`
-- `VolumeARN`: `str`
-- `VolumeRecoveryPointTime`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsnapshotinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSnapshotInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotInputRequestTypeDef
+
+def get_value() -> CreateSnapshotInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+        "SnapshotDescription": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+    SnapshotDescription: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VolumeARN`: `str`
-- `SnapshotDescription`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsnapshotoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSnapshotOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateSnapshotOutputTypeDef
+
+def get_value() -> CreateSnapshotOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "SnapshotId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSnapshotOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    SnapshotId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `SnapshotId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createstorediscsivolumeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateStorediSCSIVolumeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeInputRequestTypeDef
+
+def get_value() -> CreateStorediSCSIVolumeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskId": ...,
+        "PreserveExistingData": ...,
+        "TargetName": ...,
+        "NetworkInterfaceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStorediSCSIVolumeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskId: str,
+    PreserveExistingData: bool,
+    TargetName: str,
+    NetworkInterfaceId: str,
+    SnapshotId: NotRequired[str],
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `GatewayARN`: `str`
-- `DiskId`: `str`
-- `PreserveExistingData`: `bool`
-- `TargetName`: `str`
-- `NetworkInterfaceId`: `str`
-
-Optional fields:
-
-- `SnapshotId`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createstorediscsivolumeoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateStorediSCSIVolumeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateStorediSCSIVolumeOutputTypeDef
+
+def get_value() -> CreateStorediSCSIVolumeOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "VolumeSizeInBytes": ...,
+        "TargetARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateStorediSCSIVolumeOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    VolumeSizeInBytes: int,
+    TargetARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `VolumeSizeInBytes`: `int`
-- `TargetARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtapepoolinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTapePoolInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapePoolInputRequestTypeDef
+
+def get_value() -> CreateTapePoolInputRequestTypeDef:
+    return {
+        "PoolName": ...,
+        "StorageClass": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapePoolInputRequestTypeDef(TypedDict):
+    PoolName: str,
+    StorageClass: TapeStorageClassType,  # (1)
+    RetentionLockType: NotRequired[RetentionLockTypeType],  # (2)
+    RetentionLockTimeInDays: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `PoolName`: `str`
-- `StorageClass`: [TapeStorageClassType](./literals.md#tapestorageclasstype)
-
-Optional fields:
-
-- `RetentionLockType`:
-  [RetentionLockTypeType](./literals.md#retentionlocktypetype)
-- `RetentionLockTimeInDays`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtapepooloutputtypedef"></a>
-
+1. See [:material-code-brackets: TapeStorageClassType](./literals.md#tapestorageclasstype) 
+2. See [:material-code-brackets: RetentionLockTypeType](./literals.md#retentionlocktypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTapePoolOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapePoolOutputTypeDef
+
+def get_value() -> CreateTapePoolOutputTypeDef:
+    return {
+        "PoolARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapePoolOutputTypeDef(TypedDict):
+    PoolARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PoolARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtapewithbarcodeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTapeWithBarcodeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeInputRequestTypeDef
+
+def get_value() -> CreateTapeWithBarcodeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeSizeInBytes": ...,
+        "TapeBarcode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapeWithBarcodeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeSizeInBytes: int,
+    TapeBarcode: str,
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    PoolId: NotRequired[str],
+    Worm: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `GatewayARN`: `str`
-- `TapeSizeInBytes`: `int`
-- `TapeBarcode`: `str`
-
-Optional fields:
-
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtapewithbarcodeoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTapeWithBarcodeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapeWithBarcodeOutputTypeDef
+
+def get_value() -> CreateTapeWithBarcodeOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapeWithBarcodeOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtapesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTapesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapesInputRequestTypeDef
+
+def get_value() -> CreateTapesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeSizeInBytes": ...,
+        "ClientToken": ...,
+        "NumTapesToCreate": ...,
+        "TapeBarcodePrefix": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapesInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeSizeInBytes: int,
+    ClientToken: str,
+    NumTapesToCreate: int,
+    TapeBarcodePrefix: str,
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    PoolId: NotRequired[str],
+    Worm: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `GatewayARN`: `str`
-- `TapeSizeInBytes`: `int`
-- `ClientToken`: `str`
-- `NumTapesToCreate`: `int`
-- `TapeBarcodePrefix`: `str`
-
-Optional fields:
-
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtapesoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTapesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import CreateTapesOutputTypeDef
+
+def get_value() -> CreateTapesOutputTypeDef:
+    return {
+        "TapeARNs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTapesOutputTypeDef(TypedDict):
+    TapeARNs: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARNs`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteautomatictapecreationpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAutomaticTapeCreationPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyInputRequestTypeDef
+
+def get_value() -> DeleteAutomaticTapeCreationPolicyInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="deleteautomatictapecreationpolicyoutputtypedef"></a>
+```python title="Definition"
+class DeleteAutomaticTapeCreationPolicyInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DeleteAutomaticTapeCreationPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteAutomaticTapeCreationPolicyOutputTypeDef
+
+def get_value() -> DeleteAutomaticTapeCreationPolicyOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAutomaticTapeCreationPolicyOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebandwidthratelimitinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBandwidthRateLimitInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitInputRequestTypeDef
+
+def get_value() -> DeleteBandwidthRateLimitInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "BandwidthType": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `BandwidthType`: `str`
-
-<a id="deletebandwidthratelimitoutputtypedef"></a>
+```python title="Definition"
+class DeleteBandwidthRateLimitInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    BandwidthType: str,
+```
 
 ## DeleteBandwidthRateLimitOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteBandwidthRateLimitOutputTypeDef
+
+def get_value() -> DeleteBandwidthRateLimitOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBandwidthRateLimitOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletechapcredentialsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteChapCredentialsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsInputRequestTypeDef
+
+def get_value() -> DeleteChapCredentialsInputRequestTypeDef:
+    return {
+        "TargetARN": ...,
+        "InitiatorName": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetARN`: `str`
-- `InitiatorName`: `str`
-
-<a id="deletechapcredentialsoutputtypedef"></a>
+```python title="Definition"
+class DeleteChapCredentialsInputRequestTypeDef(TypedDict):
+    TargetARN: str,
+    InitiatorName: str,
+```
 
 ## DeleteChapCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteChapCredentialsOutputTypeDef
+
+def get_value() -> DeleteChapCredentialsOutputTypeDef:
+    return {
+        "TargetARN": ...,
+        "InitiatorName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteChapCredentialsOutputTypeDef(TypedDict):
+    TargetARN: str,
+    InitiatorName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TargetARN`: `str`
-- `InitiatorName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletefileshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteFileShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteFileShareInputRequestTypeDef
+
+def get_value() -> DeleteFileShareInputRequestTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Required fields:
-
-- `FileShareARN`: `str`
-
-Optional fields:
-
-- `ForceDelete`: `bool`
-
-<a id="deletefileshareoutputtypedef"></a>
+```python title="Definition"
+class DeleteFileShareInputRequestTypeDef(TypedDict):
+    FileShareARN: str,
+    ForceDelete: NotRequired[bool],
+```
 
 ## DeleteFileShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteFileShareOutputTypeDef
+
+def get_value() -> DeleteFileShareOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteFileShareOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteGatewayInputRequestTypeDef
+
+def get_value() -> DeleteGatewayInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="deletegatewayoutputtypedef"></a>
+```python title="Definition"
+class DeleteGatewayInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DeleteGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteGatewayOutputTypeDef
+
+def get_value() -> DeleteGatewayOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGatewayOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesnapshotscheduleinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSnapshotScheduleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleInputRequestTypeDef
+
+def get_value() -> DeleteSnapshotScheduleInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARN`: `str`
-
-<a id="deletesnapshotscheduleoutputtypedef"></a>
+```python title="Definition"
+class DeleteSnapshotScheduleInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+```
 
 ## DeleteSnapshotScheduleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteSnapshotScheduleOutputTypeDef
+
+def get_value() -> DeleteSnapshotScheduleOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSnapshotScheduleOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetapearchiveinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTapeArchiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveInputRequestTypeDef
+
+def get_value() -> DeleteTapeArchiveInputRequestTypeDef:
+    return {
+        "TapeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `TapeARN`: `str`
-
-Optional fields:
-
-- `BypassGovernanceRetention`: `bool`
-
-<a id="deletetapearchiveoutputtypedef"></a>
+```python title="Definition"
+class DeleteTapeArchiveInputRequestTypeDef(TypedDict):
+    TapeARN: str,
+    BypassGovernanceRetention: NotRequired[bool],
+```
 
 ## DeleteTapeArchiveOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapeArchiveOutputTypeDef
+
+def get_value() -> DeleteTapeArchiveOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTapeArchiveOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetapeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTapeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapeInputRequestTypeDef
+
+def get_value() -> DeleteTapeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `TapeARN`: `str`
-
-Optional fields:
-
-- `BypassGovernanceRetention`: `bool`
-
-<a id="deletetapeoutputtypedef"></a>
+```python title="Definition"
+class DeleteTapeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeARN: str,
+    BypassGovernanceRetention: NotRequired[bool],
+```
 
 ## DeleteTapeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapeOutputTypeDef
+
+def get_value() -> DeleteTapeOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTapeOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetapepoolinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTapePoolInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapePoolInputRequestTypeDef
+
+def get_value() -> DeleteTapePoolInputRequestTypeDef:
+    return {
+        "PoolARN": ...,
+    }
 ```
 
-Required fields:
-
-- `PoolARN`: `str`
-
-<a id="deletetapepooloutputtypedef"></a>
+```python title="Definition"
+class DeleteTapePoolInputRequestTypeDef(TypedDict):
+    PoolARN: str,
+```
 
 ## DeleteTapePoolOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteTapePoolOutputTypeDef
+
+def get_value() -> DeleteTapePoolOutputTypeDef:
+    return {
+        "PoolARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTapePoolOutputTypeDef(TypedDict):
+    PoolARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PoolARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevolumeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVolumeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteVolumeInputRequestTypeDef
+
+def get_value() -> DeleteVolumeInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARN`: `str`
-
-<a id="deletevolumeoutputtypedef"></a>
+```python title="Definition"
+class DeleteVolumeInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+```
 
 ## DeleteVolumeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeleteVolumeOutputTypeDef
+
+def get_value() -> DeleteVolumeOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVolumeOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeavailabilitymonitortestinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAvailabilityMonitorTestInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestInputRequestTypeDef
+
+def get_value() -> DescribeAvailabilityMonitorTestInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describeavailabilitymonitortestoutputtypedef"></a>
+```python title="Definition"
+class DescribeAvailabilityMonitorTestInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeAvailabilityMonitorTestOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeAvailabilityMonitorTestOutputTypeDef
+
+def get_value() -> DescribeAvailabilityMonitorTestOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "Status": ...,
+        "StartTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAvailabilityMonitorTestOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    Status: AvailabilityMonitorTestStatusType,  # (1)
+    StartTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `Status`:
-  [AvailabilityMonitorTestStatusType](./literals.md#availabilitymonitorteststatustype)
-- `StartTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebandwidthratelimitinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: AvailabilityMonitorTestStatusType](./literals.md#availabilitymonitorteststatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBandwidthRateLimitInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitInputRequestTypeDef
+
+def get_value() -> DescribeBandwidthRateLimitInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describebandwidthratelimitoutputtypedef"></a>
+```python title="Definition"
+class DescribeBandwidthRateLimitInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeBandwidthRateLimitOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitOutputTypeDef
+
+def get_value() -> DescribeBandwidthRateLimitOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "AverageUploadRateLimitInBitsPerSec": ...,
+        "AverageDownloadRateLimitInBitsPerSec": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBandwidthRateLimitOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    AverageUploadRateLimitInBitsPerSec: int,
+    AverageDownloadRateLimitInBitsPerSec: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `AverageUploadRateLimitInBitsPerSec`: `int`
-- `AverageDownloadRateLimitInBitsPerSec`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebandwidthratelimitscheduleinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBandwidthRateLimitScheduleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleInputRequestTypeDef
+
+def get_value() -> DescribeBandwidthRateLimitScheduleInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describebandwidthratelimitscheduleoutputtypedef"></a>
+```python title="Definition"
+class DescribeBandwidthRateLimitScheduleInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeBandwidthRateLimitScheduleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeBandwidthRateLimitScheduleOutputTypeDef
+
+def get_value() -> DescribeBandwidthRateLimitScheduleOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "BandwidthRateLimitIntervals": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBandwidthRateLimitScheduleOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    BandwidthRateLimitIntervals: List[BandwidthRateLimitIntervalTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `BandwidthRateLimitIntervals`:
-  `List`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecacheinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCacheInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeCacheInputRequestTypeDef
+
+def get_value() -> DescribeCacheInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describecacheoutputtypedef"></a>
+```python title="Definition"
+class DescribeCacheInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeCacheOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeCacheOutputTypeDef
+
+def get_value() -> DescribeCacheOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+        "CacheAllocatedInBytes": ...,
+        "CacheUsedPercentage": ...,
+        "CacheDirtyPercentage": ...,
+        "CacheHitPercentage": ...,
+        "CacheMissPercentage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCacheOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: List[str],
+    CacheAllocatedInBytes: int,
+    CacheUsedPercentage: float,
+    CacheDirtyPercentage: float,
+    CacheHitPercentage: float,
+    CacheMissPercentage: float,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
-- `CacheAllocatedInBytes`: `int`
-- `CacheUsedPercentage`: `float`
-- `CacheDirtyPercentage`: `float`
-- `CacheHitPercentage`: `float`
-- `CacheMissPercentage`: `float`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecachediscsivolumesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCachediSCSIVolumesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesInputRequestTypeDef
+
+def get_value() -> DescribeCachediSCSIVolumesInputRequestTypeDef:
+    return {
+        "VolumeARNs": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARNs`: `Sequence`\[`str`\]
-
-<a id="describecachediscsivolumesoutputtypedef"></a>
+```python title="Definition"
+class DescribeCachediSCSIVolumesInputRequestTypeDef(TypedDict):
+    VolumeARNs: Sequence[str],
+```
 
 ## DescribeCachediSCSIVolumesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeCachediSCSIVolumesOutputTypeDef
+
+def get_value() -> DescribeCachediSCSIVolumesOutputTypeDef:
+    return {
+        "CachediSCSIVolumes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCachediSCSIVolumesOutputTypeDef(TypedDict):
+    CachediSCSIVolumes: List[CachediSCSIVolumeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CachediSCSIVolumes`:
-  `List`\[[CachediSCSIVolumeTypeDef](./type_defs.md#cachediscsivolumetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechapcredentialsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: CachediSCSIVolumeTypeDef](./type_defs.md#cachediscsivolumetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChapCredentialsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsInputRequestTypeDef
+
+def get_value() -> DescribeChapCredentialsInputRequestTypeDef:
+    return {
+        "TargetARN": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetARN`: `str`
-
-<a id="describechapcredentialsoutputtypedef"></a>
+```python title="Definition"
+class DescribeChapCredentialsInputRequestTypeDef(TypedDict):
+    TargetARN: str,
+```
 
 ## DescribeChapCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeChapCredentialsOutputTypeDef
+
+def get_value() -> DescribeChapCredentialsOutputTypeDef:
+    return {
+        "ChapCredentials": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChapCredentialsOutputTypeDef(TypedDict):
+    ChapCredentials: List[ChapInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChapCredentials`:
-  `List`\[[ChapInfoTypeDef](./type_defs.md#chapinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefilesystemassociationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ChapInfoTypeDef](./type_defs.md#chapinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFileSystemAssociationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsInputRequestTypeDef
+
+def get_value() -> DescribeFileSystemAssociationsInputRequestTypeDef:
+    return {
+        "FileSystemAssociationARNList": ...,
+    }
 ```
 
-Required fields:
-
-- `FileSystemAssociationARNList`: `Sequence`\[`str`\]
-
-<a id="describefilesystemassociationsoutputtypedef"></a>
+```python title="Definition"
+class DescribeFileSystemAssociationsInputRequestTypeDef(TypedDict):
+    FileSystemAssociationARNList: Sequence[str],
+```
 
 ## DescribeFileSystemAssociationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeFileSystemAssociationsOutputTypeDef
+
+def get_value() -> DescribeFileSystemAssociationsOutputTypeDef:
+    return {
+        "FileSystemAssociationInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFileSystemAssociationsOutputTypeDef(TypedDict):
+    FileSystemAssociationInfoList: List[FileSystemAssociationInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FileSystemAssociationInfoList`:
-  `List`\[[FileSystemAssociationInfoTypeDef](./type_defs.md#filesystemassociationinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describegatewayinformationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: FileSystemAssociationInfoTypeDef](./type_defs.md#filesystemassociationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGatewayInformationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationInputRequestTypeDef
+
+def get_value() -> DescribeGatewayInformationInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describegatewayinformationoutputtypedef"></a>
+```python title="Definition"
+class DescribeGatewayInformationInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeGatewayInformationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeGatewayInformationOutputTypeDef
+
+def get_value() -> DescribeGatewayInformationOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "GatewayId": ...,
+        "GatewayName": ...,
+        "GatewayTimezone": ...,
+        "GatewayState": ...,
+        "GatewayNetworkInterfaces": ...,
+        "GatewayType": ...,
+        "NextUpdateAvailabilityDate": ...,
+        "LastSoftwareUpdate": ...,
+        "Ec2InstanceId": ...,
+        "Ec2InstanceRegion": ...,
+        "Tags": ...,
+        "VPCEndpoint": ...,
+        "CloudWatchLogGroupARN": ...,
+        "HostEnvironment": ...,
+        "EndpointType": ...,
+        "SoftwareUpdatesEndDate": ...,
+        "DeprecationDate": ...,
+        "GatewayCapacity": ...,
+        "SupportedGatewayCapacities": ...,
+        "HostEnvironmentId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGatewayInformationOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    GatewayId: str,
+    GatewayName: str,
+    GatewayTimezone: str,
+    GatewayState: str,
+    GatewayNetworkInterfaces: List[NetworkInterfaceTypeDef],  # (1)
+    GatewayType: str,
+    NextUpdateAvailabilityDate: str,
+    LastSoftwareUpdate: str,
+    Ec2InstanceId: str,
+    Ec2InstanceRegion: str,
+    Tags: List[TagTypeDef],  # (2)
+    VPCEndpoint: str,
+    CloudWatchLogGroupARN: str,
+    HostEnvironment: HostEnvironmentType,  # (3)
+    EndpointType: str,
+    SoftwareUpdatesEndDate: str,
+    DeprecationDate: str,
+    GatewayCapacity: GatewayCapacityType,  # (4)
+    SupportedGatewayCapacities: List[GatewayCapacityType],  # (5)
+    HostEnvironmentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `GatewayARN`: `str`
-- `GatewayId`: `str`
-- `GatewayName`: `str`
-- `GatewayTimezone`: `str`
-- `GatewayState`: `str`
-- `GatewayNetworkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
-- `GatewayType`: `str`
-- `NextUpdateAvailabilityDate`: `str`
-- `LastSoftwareUpdate`: `str`
-- `Ec2InstanceId`: `str`
-- `Ec2InstanceRegion`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VPCEndpoint`: `str`
-- `CloudWatchLogGroupARN`: `str`
-- `HostEnvironment`: [HostEnvironmentType](./literals.md#hostenvironmenttype)
-- `EndpointType`: `str`
-- `SoftwareUpdatesEndDate`: `str`
-- `DeprecationDate`: `str`
-- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
-- `SupportedGatewayCapacities`:
-  `List`\[[GatewayCapacityType](./literals.md#gatewaycapacitytype)\]
-- `HostEnvironmentId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemaintenancestarttimeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: HostEnvironmentType](./literals.md#hostenvironmenttype) 
+4. See [:material-code-brackets: GatewayCapacityType](./literals.md#gatewaycapacitytype) 
+5. See [:material-code-brackets: GatewayCapacityType](./literals.md#gatewaycapacitytype) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMaintenanceStartTimeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeInputRequestTypeDef
+
+def get_value() -> DescribeMaintenanceStartTimeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describemaintenancestarttimeoutputtypedef"></a>
+```python title="Definition"
+class DescribeMaintenanceStartTimeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeMaintenanceStartTimeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeMaintenanceStartTimeOutputTypeDef
+
+def get_value() -> DescribeMaintenanceStartTimeOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "HourOfDay": ...,
+        "MinuteOfHour": ...,
+        "DayOfWeek": ...,
+        "DayOfMonth": ...,
+        "Timezone": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMaintenanceStartTimeOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    HourOfDay: int,
+    MinuteOfHour: int,
+    DayOfWeek: int,
+    DayOfMonth: int,
+    Timezone: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `HourOfDay`: `int`
-- `MinuteOfHour`: `int`
-- `DayOfWeek`: `int`
-- `DayOfMonth`: `int`
-- `Timezone`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describenfsfilesharesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeNFSFileSharesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesInputRequestTypeDef
+
+def get_value() -> DescribeNFSFileSharesInputRequestTypeDef:
+    return {
+        "FileShareARNList": ...,
+    }
 ```
 
-Required fields:
-
-- `FileShareARNList`: `Sequence`\[`str`\]
-
-<a id="describenfsfilesharesoutputtypedef"></a>
+```python title="Definition"
+class DescribeNFSFileSharesInputRequestTypeDef(TypedDict):
+    FileShareARNList: Sequence[str],
+```
 
 ## DescribeNFSFileSharesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeNFSFileSharesOutputTypeDef
+
+def get_value() -> DescribeNFSFileSharesOutputTypeDef:
+    return {
+        "NFSFileShareInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNFSFileSharesOutputTypeDef(TypedDict):
+    NFSFileShareInfoList: List[NFSFileShareInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NFSFileShareInfoList`:
-  `List`\[[NFSFileShareInfoTypeDef](./type_defs.md#nfsfileshareinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesmbfilesharesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: NFSFileShareInfoTypeDef](./type_defs.md#nfsfileshareinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSMBFileSharesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesInputRequestTypeDef
+
+def get_value() -> DescribeSMBFileSharesInputRequestTypeDef:
+    return {
+        "FileShareARNList": ...,
+    }
 ```
 
-Required fields:
-
-- `FileShareARNList`: `Sequence`\[`str`\]
-
-<a id="describesmbfilesharesoutputtypedef"></a>
+```python title="Definition"
+class DescribeSMBFileSharesInputRequestTypeDef(TypedDict):
+    FileShareARNList: Sequence[str],
+```
 
 ## DescribeSMBFileSharesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSMBFileSharesOutputTypeDef
+
+def get_value() -> DescribeSMBFileSharesOutputTypeDef:
+    return {
+        "SMBFileShareInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSMBFileSharesOutputTypeDef(TypedDict):
+    SMBFileShareInfoList: List[SMBFileShareInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SMBFileShareInfoList`:
-  `List`\[[SMBFileShareInfoTypeDef](./type_defs.md#smbfileshareinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesmbsettingsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: SMBFileShareInfoTypeDef](./type_defs.md#smbfileshareinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSMBSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsInputRequestTypeDef
+
+def get_value() -> DescribeSMBSettingsInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describesmbsettingsoutputtypedef"></a>
+```python title="Definition"
+class DescribeSMBSettingsInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeSMBSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSMBSettingsOutputTypeDef
+
+def get_value() -> DescribeSMBSettingsOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DomainName": ...,
+        "ActiveDirectoryStatus": ...,
+        "SMBGuestPasswordSet": ...,
+        "SMBSecurityStrategy": ...,
+        "FileSharesVisible": ...,
+        "SMBLocalGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSMBSettingsOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    DomainName: str,
+    ActiveDirectoryStatus: ActiveDirectoryStatusType,  # (1)
+    SMBGuestPasswordSet: bool,
+    SMBSecurityStrategy: SMBSecurityStrategyType,  # (2)
+    FileSharesVisible: bool,
+    SMBLocalGroups: SMBLocalGroupsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `GatewayARN`: `str`
-- `DomainName`: `str`
-- `ActiveDirectoryStatus`:
-  [ActiveDirectoryStatusType](./literals.md#activedirectorystatustype)
-- `SMBGuestPasswordSet`: `bool`
-- `SMBSecurityStrategy`:
-  [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
-- `FileSharesVisible`: `bool`
-- `SMBLocalGroups`:
-  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesnapshotscheduleinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ActiveDirectoryStatusType](./literals.md#activedirectorystatustype) 
+2. See [:material-code-brackets: SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype) 
+3. See [:material-code-braces: SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSnapshotScheduleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleInputRequestTypeDef
+
+def get_value() -> DescribeSnapshotScheduleInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARN`: `str`
-
-<a id="describesnapshotscheduleoutputtypedef"></a>
+```python title="Definition"
+class DescribeSnapshotScheduleInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+```
 
 ## DescribeSnapshotScheduleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeSnapshotScheduleOutputTypeDef
+
+def get_value() -> DescribeSnapshotScheduleOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "StartAt": ...,
+        "RecurrenceInHours": ...,
+        "Description": ...,
+        "Timezone": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSnapshotScheduleOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    StartAt: int,
+    RecurrenceInHours: int,
+    Description: str,
+    Timezone: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VolumeARN`: `str`
-- `StartAt`: `int`
-- `RecurrenceInHours`: `int`
-- `Description`: `str`
-- `Timezone`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describestorediscsivolumesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeStorediSCSIVolumesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesInputRequestTypeDef
+
+def get_value() -> DescribeStorediSCSIVolumesInputRequestTypeDef:
+    return {
+        "VolumeARNs": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARNs`: `Sequence`\[`str`\]
-
-<a id="describestorediscsivolumesoutputtypedef"></a>
+```python title="Definition"
+class DescribeStorediSCSIVolumesInputRequestTypeDef(TypedDict):
+    VolumeARNs: Sequence[str],
+```
 
 ## DescribeStorediSCSIVolumesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeStorediSCSIVolumesOutputTypeDef
+
+def get_value() -> DescribeStorediSCSIVolumesOutputTypeDef:
+    return {
+        "StorediSCSIVolumes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeStorediSCSIVolumesOutputTypeDef(TypedDict):
+    StorediSCSIVolumes: List[StorediSCSIVolumeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StorediSCSIVolumes`:
-  `List`\[[StorediSCSIVolumeTypeDef](./type_defs.md#storediscsivolumetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StorediSCSIVolumeTypeDef](./type_defs.md#storediscsivolumetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef
 
-<a id="describetapearchivesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef
 
+def get_value() -> DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef:
+    return {
+        "TapeARNs": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef(TypedDict):
+    TapeARNs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTapeArchivesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesInputRequestTypeDef
+
+def get_value() -> DescribeTapeArchivesInputRequestTypeDef:
+    return {
+        "TapeARNs": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describetapearchivesoutputtypedef"></a>
+```python title="Definition"
+class DescribeTapeArchivesInputRequestTypeDef(TypedDict):
+    TapeARNs: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeTapeArchivesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapeArchivesOutputTypeDef
+
+def get_value() -> DescribeTapeArchivesOutputTypeDef:
+    return {
+        "TapeArchives": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTapeArchivesOutputTypeDef(TypedDict):
+    TapeArchives: List[TapeArchiveTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TapeArchives`:
-  `List`\[[TapeArchiveTypeDef](./type_defs.md#tapearchivetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TapeArchiveTypeDef](./type_defs.md#tapearchivetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef
 
-<a id="describetaperecoverypointsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef
 
+def get_value() -> DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef(TypedDict):
+    GatewayARN: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTapeRecoveryPointsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsInputRequestTypeDef
+
+def get_value() -> DescribeTapeRecoveryPointsInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describetaperecoverypointsoutputtypedef"></a>
+```python title="Definition"
+class DescribeTapeRecoveryPointsInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeTapeRecoveryPointsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapeRecoveryPointsOutputTypeDef
+
+def get_value() -> DescribeTapeRecoveryPointsOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "TapeRecoveryPointInfos": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTapeRecoveryPointsOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeRecoveryPointInfos: List[TapeRecoveryPointInfoTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `TapeRecoveryPointInfos`:
-  `List`\[[TapeRecoveryPointInfoTypeDef](./type_defs.md#taperecoverypointinfotypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TapeRecoveryPointInfoTypeDef](./type_defs.md#taperecoverypointinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeTapesInputDescribeTapesPaginateTypeDef
 
-<a id="describetapesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import DescribeTapesInputDescribeTapesPaginateTypeDef
 
+def get_value() -> DescribeTapesInputDescribeTapesPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTapesInputDescribeTapesPaginateTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeARNs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeTapesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapesInputRequestTypeDef
+
+def get_value() -> DescribeTapesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-Optional fields:
-
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describetapesoutputtypedef"></a>
+```python title="Definition"
+class DescribeTapesInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    TapeARNs: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeTapesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeTapesOutputTypeDef
+
+def get_value() -> DescribeTapesOutputTypeDef:
+    return {
+        "Tapes": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTapesOutputTypeDef(TypedDict):
+    Tapes: List[TapeTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tapes`: `List`\[[TapeTypeDef](./type_defs.md#tapetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuploadbufferinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TapeTypeDef](./type_defs.md#tapetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUploadBufferInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferInputRequestTypeDef
+
+def get_value() -> DescribeUploadBufferInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describeuploadbufferoutputtypedef"></a>
+```python title="Definition"
+class DescribeUploadBufferInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeUploadBufferOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeUploadBufferOutputTypeDef
+
+def get_value() -> DescribeUploadBufferOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+        "UploadBufferUsedInBytes": ...,
+        "UploadBufferAllocatedInBytes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUploadBufferOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: List[str],
+    UploadBufferUsedInBytes: int,
+    UploadBufferAllocatedInBytes: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
-- `UploadBufferUsedInBytes`: `int`
-- `UploadBufferAllocatedInBytes`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef
 
-<a id="describevtldevicesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef
 
+def get_value() -> DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef(TypedDict):
+    GatewayARN: str,
+    VTLDeviceARNs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeVTLDevicesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesInputRequestTypeDef
+
+def get_value() -> DescribeVTLDevicesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-Optional fields:
-
-- `VTLDeviceARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="describevtldevicesoutputtypedef"></a>
+```python title="Definition"
+class DescribeVTLDevicesInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    VTLDeviceARNs: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeVTLDevicesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeVTLDevicesOutputTypeDef
+
+def get_value() -> DescribeVTLDevicesOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "VTLDevices": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVTLDevicesOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    VTLDevices: List[VTLDeviceTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `VTLDevices`: `List`\[[VTLDeviceTypeDef](./type_defs.md#vtldevicetypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworkingstorageinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VTLDeviceTypeDef](./type_defs.md#vtldevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorkingStorageInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageInputRequestTypeDef
+
+def get_value() -> DescribeWorkingStorageInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="describeworkingstorageoutputtypedef"></a>
+```python title="Definition"
+class DescribeWorkingStorageInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DescribeWorkingStorageOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DescribeWorkingStorageOutputTypeDef
+
+def get_value() -> DescribeWorkingStorageOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DiskIds": ...,
+        "WorkingStorageUsedInBytes": ...,
+        "WorkingStorageAllocatedInBytes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorkingStorageOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    DiskIds: List[str],
+    WorkingStorageUsedInBytes: int,
+    WorkingStorageAllocatedInBytes: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `DiskIds`: `List`\[`str`\]
-- `WorkingStorageUsedInBytes`: `int`
-- `WorkingStorageAllocatedInBytes`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="detachvolumeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DetachVolumeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DetachVolumeInputRequestTypeDef
+
+def get_value() -> DetachVolumeInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARN`: `str`
-
-Optional fields:
-
-- `ForceDetach`: `bool`
-
-<a id="detachvolumeoutputtypedef"></a>
+```python title="Definition"
+class DetachVolumeInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+    ForceDetach: NotRequired[bool],
+```
 
 ## DetachVolumeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DetachVolumeOutputTypeDef
+
+def get_value() -> DetachVolumeOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DetachVolumeOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deviceiscsiattributestypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceiSCSIAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DeviceiSCSIAttributesTypeDef
+
+def get_value() -> DeviceiSCSIAttributesTypeDef:
+    return {
+        "TargetARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetARN`: `str`
-- `NetworkInterfaceId`: `str`
-- `NetworkInterfacePort`: `int`
-- `ChapEnabled`: `bool`
-
-<a id="disablegatewayinputrequesttypedef"></a>
+```python title="Definition"
+class DeviceiSCSIAttributesTypeDef(TypedDict):
+    TargetARN: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    NetworkInterfacePort: NotRequired[int],
+    ChapEnabled: NotRequired[bool],
+```
 
 ## DisableGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DisableGatewayInputRequestTypeDef
+
+def get_value() -> DisableGatewayInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="disablegatewayoutputtypedef"></a>
+```python title="Definition"
+class DisableGatewayInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## DisableGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DisableGatewayOutputTypeDef
+
+def get_value() -> DisableGatewayOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableGatewayOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatefilesysteminputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateFileSystemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemInputRequestTypeDef
+
+def get_value() -> DisassociateFileSystemInputRequestTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+    }
 ```
 
-Required fields:
-
-- `FileSystemAssociationARN`: `str`
-
-Optional fields:
-
-- `ForceDelete`: `bool`
-
-<a id="disassociatefilesystemoutputtypedef"></a>
+```python title="Definition"
+class DisassociateFileSystemInputRequestTypeDef(TypedDict):
+    FileSystemAssociationARN: str,
+    ForceDelete: NotRequired[bool],
+```
 
 ## DisassociateFileSystemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DisassociateFileSystemOutputTypeDef
+
+def get_value() -> DisassociateFileSystemOutputTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateFileSystemOutputTypeDef(TypedDict):
+    FileSystemAssociationARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disktypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DiskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import DiskTypeDef
+
+def get_value() -> DiskTypeDef:
+    return {
+        "DiskId": ...,
+    }
 ```
 
-Optional fields:
-
-- `DiskId`: `str`
-- `DiskPath`: `str`
-- `DiskNode`: `str`
-- `DiskStatus`: `str`
-- `DiskSizeInBytes`: `int`
-- `DiskAllocationType`: `str`
-- `DiskAllocationResource`: `str`
-- `DiskAttributeList`: `List`\[`str`\]
-
-<a id="endpointnetworkconfigurationtypedef"></a>
+```python title="Definition"
+class DiskTypeDef(TypedDict):
+    DiskId: NotRequired[str],
+    DiskPath: NotRequired[str],
+    DiskNode: NotRequired[str],
+    DiskStatus: NotRequired[str],
+    DiskSizeInBytes: NotRequired[int],
+    DiskAllocationType: NotRequired[str],
+    DiskAllocationResource: NotRequired[str],
+    DiskAttributeList: NotRequired[List[str]],
+```
 
 ## EndpointNetworkConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import EndpointNetworkConfigurationTypeDef
+
+def get_value() -> EndpointNetworkConfigurationTypeDef:
+    return {
+        "IpAddresses": ...,
+    }
 ```
 
-Optional fields:
-
-- `IpAddresses`: `Sequence`\[`str`\]
-
-<a id="fileshareinfotypedef"></a>
+```python title="Definition"
+class EndpointNetworkConfigurationTypeDef(TypedDict):
+    IpAddresses: NotRequired[Sequence[str]],
+```
 
 ## FileShareInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import FileShareInfoTypeDef
+
+def get_value() -> FileShareInfoTypeDef:
+    return {
+        "FileShareType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FileShareInfoTypeDef(TypedDict):
+    FileShareType: NotRequired[FileShareTypeType],  # (1)
+    FileShareARN: NotRequired[str],
+    FileShareId: NotRequired[str],
+    FileShareStatus: NotRequired[str],
+    GatewayARN: NotRequired[str],
+```
 
-- `FileShareType`: [FileShareTypeType](./literals.md#filesharetypetype)
-- `FileShareARN`: `str`
-- `FileShareId`: `str`
-- `FileShareStatus`: `str`
-- `GatewayARN`: `str`
-
-<a id="filesystemassociationinfotypedef"></a>
-
+1. See [:material-code-brackets: FileShareTypeType](./literals.md#filesharetypetype) 
 ## FileSystemAssociationInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import FileSystemAssociationInfoTypeDef
+
+def get_value() -> FileSystemAssociationInfoTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FileSystemAssociationInfoTypeDef(TypedDict):
+    FileSystemAssociationARN: NotRequired[str],
+    LocationARN: NotRequired[str],
+    FileSystemAssociationStatus: NotRequired[str],
+    AuditDestinationARN: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (2)
+    EndpointNetworkConfiguration: NotRequired[EndpointNetworkConfigurationTypeDef],  # (3)
+    FileSystemAssociationStatusDetails: NotRequired[List[FileSystemAssociationStatusDetailTypeDef]],  # (4)
+```
 
-- `FileSystemAssociationARN`: `str`
-- `LocationARN`: `str`
-- `FileSystemAssociationStatus`: `str`
-- `AuditDestinationARN`: `str`
-- `GatewayARN`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `EndpointNetworkConfiguration`:
-  [EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef)
-- `FileSystemAssociationStatusDetails`:
-  `List`\[[FileSystemAssociationStatusDetailTypeDef](./type_defs.md#filesystemassociationstatusdetailtypedef)\]
-
-<a id="filesystemassociationstatusdetailtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
+3. See [:material-code-braces: EndpointNetworkConfigurationTypeDef](./type_defs.md#endpointnetworkconfigurationtypedef) 
+4. See [:material-code-braces: FileSystemAssociationStatusDetailTypeDef](./type_defs.md#filesystemassociationstatusdetailtypedef) 
 ## FileSystemAssociationStatusDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import FileSystemAssociationStatusDetailTypeDef
+
+def get_value() -> FileSystemAssociationStatusDetailTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-
-<a id="filesystemassociationsummarytypedef"></a>
+```python title="Definition"
+class FileSystemAssociationStatusDetailTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+```
 
 ## FileSystemAssociationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import FileSystemAssociationSummaryTypeDef
+
+def get_value() -> FileSystemAssociationSummaryTypeDef:
+    return {
+        "FileSystemAssociationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `FileSystemAssociationId`: `str`
-- `FileSystemAssociationARN`: `str`
-- `FileSystemAssociationStatus`: `str`
-- `GatewayARN`: `str`
-
-<a id="gatewayinfotypedef"></a>
+```python title="Definition"
+class FileSystemAssociationSummaryTypeDef(TypedDict):
+    FileSystemAssociationId: NotRequired[str],
+    FileSystemAssociationARN: NotRequired[str],
+    FileSystemAssociationStatus: NotRequired[str],
+    GatewayARN: NotRequired[str],
+```
 
 ## GatewayInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import GatewayInfoTypeDef
+
+def get_value() -> GatewayInfoTypeDef:
+    return {
+        "GatewayId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GatewayInfoTypeDef(TypedDict):
+    GatewayId: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    GatewayType: NotRequired[str],
+    GatewayOperationalState: NotRequired[str],
+    GatewayName: NotRequired[str],
+    Ec2InstanceId: NotRequired[str],
+    Ec2InstanceRegion: NotRequired[str],
+    HostEnvironment: NotRequired[HostEnvironmentType],  # (1)
+    HostEnvironmentId: NotRequired[str],
+```
 
-- `GatewayId`: `str`
-- `GatewayARN`: `str`
-- `GatewayType`: `str`
-- `GatewayOperationalState`: `str`
-- `GatewayName`: `str`
-- `Ec2InstanceId`: `str`
-- `Ec2InstanceRegion`: `str`
-- `HostEnvironment`: [HostEnvironmentType](./literals.md#hostenvironmenttype)
-- `HostEnvironmentId`: `str`
-
-<a id="joindomaininputrequesttypedef"></a>
-
+1. See [:material-code-brackets: HostEnvironmentType](./literals.md#hostenvironmenttype) 
 ## JoinDomainInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import JoinDomainInputRequestTypeDef
+
+def get_value() -> JoinDomainInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "DomainName": ...,
+        "UserName": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `DomainName`: `str`
-- `UserName`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `OrganizationalUnit`: `str`
-- `DomainControllers`: `Sequence`\[`str`\]
-- `TimeoutInSeconds`: `int`
-
-<a id="joindomainoutputtypedef"></a>
+```python title="Definition"
+class JoinDomainInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    DomainName: str,
+    UserName: str,
+    Password: str,
+    OrganizationalUnit: NotRequired[str],
+    DomainControllers: NotRequired[Sequence[str]],
+    TimeoutInSeconds: NotRequired[int],
+```
 
 ## JoinDomainOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import JoinDomainOutputTypeDef
+
+def get_value() -> JoinDomainOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ActiveDirectoryStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JoinDomainOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ActiveDirectoryStatus: ActiveDirectoryStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `ActiveDirectoryStatus`:
-  [ActiveDirectoryStatusType](./literals.md#activedirectorystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listautomatictapecreationpoliciesinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ActiveDirectoryStatusType](./literals.md#activedirectorystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAutomaticTapeCreationPoliciesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesInputRequestTypeDef
+
+def get_value() -> ListAutomaticTapeCreationPoliciesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayARN`: `str`
-
-<a id="listautomatictapecreationpoliciesoutputtypedef"></a>
+```python title="Definition"
+class ListAutomaticTapeCreationPoliciesInputRequestTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+```
 
 ## ListAutomaticTapeCreationPoliciesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListAutomaticTapeCreationPoliciesOutputTypeDef
+
+def get_value() -> ListAutomaticTapeCreationPoliciesOutputTypeDef:
+    return {
+        "AutomaticTapeCreationPolicyInfos": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAutomaticTapeCreationPoliciesOutputTypeDef(TypedDict):
+    AutomaticTapeCreationPolicyInfos: List[AutomaticTapeCreationPolicyInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutomaticTapeCreationPolicyInfos`:
-  `List`\[[AutomaticTapeCreationPolicyInfoTypeDef](./type_defs.md#automatictapecreationpolicyinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AutomaticTapeCreationPolicyInfoTypeDef](./type_defs.md#automatictapecreationpolicyinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFileSharesInputListFileSharesPaginateTypeDef
 
-<a id="listfilesharesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListFileSharesInputListFileSharesPaginateTypeDef
 
+def get_value() -> ListFileSharesInputListFileSharesPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListFileSharesInputListFileSharesPaginateTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFileSharesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListFileSharesInputRequestTypeDef
+
+def get_value() -> ListFileSharesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayARN`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="listfilesharesoutputtypedef"></a>
+```python title="Definition"
+class ListFileSharesInputRequestTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## ListFileSharesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListFileSharesOutputTypeDef
+
+def get_value() -> ListFileSharesOutputTypeDef:
+    return {
+        "Marker": ...,
+        "NextMarker": ...,
+        "FileShareInfoList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFileSharesOutputTypeDef(TypedDict):
+    Marker: str,
+    NextMarker: str,
+    FileShareInfoList: List[FileShareInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `NextMarker`: `str`
-- `FileShareInfoList`:
-  `List`\[[FileShareInfoTypeDef](./type_defs.md#fileshareinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FileShareInfoTypeDef](./type_defs.md#fileshareinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef
 
-<a id="listfilesystemassociationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef
 
+def get_value() -> ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFileSystemAssociationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsInputRequestTypeDef
+
+def get_value() -> ListFileSystemAssociationsInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayARN`: `str`
-- `Limit`: `int`
-- `Marker`: `str`
-
-<a id="listfilesystemassociationsoutputtypedef"></a>
+```python title="Definition"
+class ListFileSystemAssociationsInputRequestTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    Limit: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## ListFileSystemAssociationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListFileSystemAssociationsOutputTypeDef
+
+def get_value() -> ListFileSystemAssociationsOutputTypeDef:
+    return {
+        "Marker": ...,
+        "NextMarker": ...,
+        "FileSystemAssociationSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFileSystemAssociationsOutputTypeDef(TypedDict):
+    Marker: str,
+    NextMarker: str,
+    FileSystemAssociationSummaryList: List[FileSystemAssociationSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Marker`: `str`
-- `NextMarker`: `str`
-- `FileSystemAssociationSummaryList`:
-  `List`\[[FileSystemAssociationSummaryTypeDef](./type_defs.md#filesystemassociationsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FileSystemAssociationSummaryTypeDef](./type_defs.md#filesystemassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGatewaysInputListGatewaysPaginateTypeDef
 
-<a id="listgatewaysinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListGatewaysInputListGatewaysPaginateTypeDef
 
+def get_value() -> ListGatewaysInputListGatewaysPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGatewaysInputListGatewaysPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGatewaysInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListGatewaysInputRequestTypeDef
+
+def get_value() -> ListGatewaysInputRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="listgatewaysoutputtypedef"></a>
+```python title="Definition"
+class ListGatewaysInputRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListGatewaysOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListGatewaysOutputTypeDef
+
+def get_value() -> ListGatewaysOutputTypeDef:
+    return {
+        "Gateways": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGatewaysOutputTypeDef(TypedDict):
+    Gateways: List[GatewayInfoTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Gateways`: `List`\[[GatewayInfoTypeDef](./type_defs.md#gatewayinfotypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlocaldisksinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayInfoTypeDef](./type_defs.md#gatewayinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLocalDisksInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListLocalDisksInputRequestTypeDef
+
+def get_value() -> ListLocalDisksInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="listlocaldisksoutputtypedef"></a>
+```python title="Definition"
+class ListLocalDisksInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## ListLocalDisksOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListLocalDisksOutputTypeDef
+
+def get_value() -> ListLocalDisksOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "Disks": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLocalDisksOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    Disks: List[DiskTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `Disks`: `List`\[[DiskTypeDef](./type_defs.md#disktypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DiskTypeDef](./type_defs.md#disktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceInputListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceARN: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Marker": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    ResourceARN: str,
+    Marker: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceARN`: `str`
-- `Marker`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTapePoolsInputListTapePoolsPaginateTypeDef
 
-<a id="listtapepoolsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListTapePoolsInputListTapePoolsPaginateTypeDef
 
+def get_value() -> ListTapePoolsInputListTapePoolsPaginateTypeDef:
+    return {
+        "PoolARNs": ...,
+    }
+```
+
+```python title="Definition"
+class ListTapePoolsInputListTapePoolsPaginateTypeDef(TypedDict):
+    PoolARNs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTapePoolsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTapePoolsInputRequestTypeDef
+
+def get_value() -> ListTapePoolsInputRequestTypeDef:
+    return {
+        "PoolARNs": ...,
+    }
 ```
 
-Optional fields:
-
-- `PoolARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="listtapepoolsoutputtypedef"></a>
+```python title="Definition"
+class ListTapePoolsInputRequestTypeDef(TypedDict):
+    PoolARNs: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTapePoolsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTapePoolsOutputTypeDef
+
+def get_value() -> ListTapePoolsOutputTypeDef:
+    return {
+        "PoolInfos": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTapePoolsOutputTypeDef(TypedDict):
+    PoolInfos: List[PoolInfoTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PoolInfos`: `List`\[[PoolInfoTypeDef](./type_defs.md#poolinfotypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PoolInfoTypeDef](./type_defs.md#poolinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTapesInputListTapesPaginateTypeDef
 
-<a id="listtapesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListTapesInputListTapesPaginateTypeDef
 
+def get_value() -> ListTapesInputListTapesPaginateTypeDef:
+    return {
+        "TapeARNs": ...,
+    }
+```
+
+```python title="Definition"
+class ListTapesInputListTapesPaginateTypeDef(TypedDict):
+    TapeARNs: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTapesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTapesInputRequestTypeDef
+
+def get_value() -> ListTapesInputRequestTypeDef:
+    return {
+        "TapeARNs": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARNs`: `Sequence`\[`str`\]
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="listtapesoutputtypedef"></a>
+```python title="Definition"
+class ListTapesInputRequestTypeDef(TypedDict):
+    TapeARNs: NotRequired[Sequence[str]],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTapesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListTapesOutputTypeDef
+
+def get_value() -> ListTapesOutputTypeDef:
+    return {
+        "TapeInfos": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTapesOutputTypeDef(TypedDict):
+    TapeInfos: List[TapeInfoTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TapeInfos`: `List`\[[TapeInfoTypeDef](./type_defs.md#tapeinfotypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvolumeinitiatorsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TapeInfoTypeDef](./type_defs.md#tapeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVolumeInitiatorsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsInputRequestTypeDef
+
+def get_value() -> ListVolumeInitiatorsInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Required fields:
-
-- `VolumeARN`: `str`
-
-<a id="listvolumeinitiatorsoutputtypedef"></a>
+```python title="Definition"
+class ListVolumeInitiatorsInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+```
 
 ## ListVolumeInitiatorsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumeInitiatorsOutputTypeDef
+
+def get_value() -> ListVolumeInitiatorsOutputTypeDef:
+    return {
+        "Initiators": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVolumeInitiatorsOutputTypeDef(TypedDict):
+    Initiators: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Initiators`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvolumerecoverypointsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVolumeRecoveryPointsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsInputRequestTypeDef
+
+def get_value() -> ListVolumeRecoveryPointsInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="listvolumerecoverypointsoutputtypedef"></a>
+```python title="Definition"
+class ListVolumeRecoveryPointsInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## ListVolumeRecoveryPointsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumeRecoveryPointsOutputTypeDef
+
+def get_value() -> ListVolumeRecoveryPointsOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "VolumeRecoveryPointInfos": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVolumeRecoveryPointsOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    VolumeRecoveryPointInfos: List[VolumeRecoveryPointInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `VolumeRecoveryPointInfos`:
-  `List`\[[VolumeRecoveryPointInfoTypeDef](./type_defs.md#volumerecoverypointinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VolumeRecoveryPointInfoTypeDef](./type_defs.md#volumerecoverypointinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVolumesInputListVolumesPaginateTypeDef
 
-<a id="listvolumesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_storagegateway.type_defs import ListVolumesInputListVolumesPaginateTypeDef
 
+def get_value() -> ListVolumesInputListVolumesPaginateTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
+```
+
+```python title="Definition"
+class ListVolumesInputListVolumesPaginateTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVolumesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumesInputRequestTypeDef
+
+def get_value() -> ListVolumesInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayARN`: `str`
-- `Marker`: `str`
-- `Limit`: `int`
-
-<a id="listvolumesoutputtypedef"></a>
+```python title="Definition"
+class ListVolumesInputRequestTypeDef(TypedDict):
+    GatewayARN: NotRequired[str],
+    Marker: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListVolumesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ListVolumesOutputTypeDef
+
+def get_value() -> ListVolumesOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "Marker": ...,
+        "VolumeInfos": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVolumesOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    Marker: str,
+    VolumeInfos: List[VolumeInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GatewayARN`: `str`
-- `Marker`: `str`
-- `VolumeInfos`:
-  `List`\[[VolumeInfoTypeDef](./type_defs.md#volumeinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="nfsfilesharedefaultstypedef"></a>
-
+1. See [:material-code-braces: VolumeInfoTypeDef](./type_defs.md#volumeinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NFSFileShareDefaultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import NFSFileShareDefaultsTypeDef
+
+def get_value() -> NFSFileShareDefaultsTypeDef:
+    return {
+        "FileMode": ...,
+    }
 ```
 
-Optional fields:
-
-- `FileMode`: `str`
-- `DirectoryMode`: `str`
-- `GroupId`: `int`
-- `OwnerId`: `int`
-
-<a id="nfsfileshareinfotypedef"></a>
+```python title="Definition"
+class NFSFileShareDefaultsTypeDef(TypedDict):
+    FileMode: NotRequired[str],
+    DirectoryMode: NotRequired[str],
+    GroupId: NotRequired[int],
+    OwnerId: NotRequired[int],
+```
 
 ## NFSFileShareInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import NFSFileShareInfoTypeDef
+
+def get_value() -> NFSFileShareInfoTypeDef:
+    return {
+        "NFSFileShareDefaults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NFSFileShareInfoTypeDef(TypedDict):
+    NFSFileShareDefaults: NotRequired[NFSFileShareDefaultsTypeDef],  # (1)
+    FileShareARN: NotRequired[str],
+    FileShareId: NotRequired[str],
+    FileShareStatus: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    Path: NotRequired[str],
+    Role: NotRequired[str],
+    LocationARN: NotRequired[str],
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (2)
+    ClientList: NotRequired[List[str]],
+    Squash: NotRequired[str],
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (4)
+    NotificationPolicy: NotRequired[str],
+    VPCEndpointDNSName: NotRequired[str],
+    BucketRegion: NotRequired[str],
+    AuditDestinationARN: NotRequired[str],
+```
 
-- `NFSFileShareDefaults`:
-  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
-- `FileShareARN`: `str`
-- `FileShareId`: `str`
-- `FileShareStatus`: `str`
-- `GatewayARN`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Path`: `str`
-- `Role`: `str`
-- `LocationARN`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `List`\[`str`\]
-- `Squash`: `str`
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `AuditDestinationARN`: `str`
-
-<a id="networkinterfacetypedef"></a>
-
+1. See [:material-code-braces: NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef) 
+2. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## NetworkInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "Ipv4Address": ...,
+    }
 ```
 
-Optional fields:
-
-- `Ipv4Address`: `str`
-- `MacAddress`: `str`
-- `Ipv6Address`: `str`
-
-<a id="notifywhenuploadedinputrequesttypedef"></a>
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    Ipv4Address: NotRequired[str],
+    MacAddress: NotRequired[str],
+    Ipv6Address: NotRequired[str],
+```
 
 ## NotifyWhenUploadedInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedInputRequestTypeDef
+
+def get_value() -> NotifyWhenUploadedInputRequestTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Required fields:
-
-- `FileShareARN`: `str`
-
-<a id="notifywhenuploadedoutputtypedef"></a>
+```python title="Definition"
+class NotifyWhenUploadedInputRequestTypeDef(TypedDict):
+    FileShareARN: str,
+```
 
 ## NotifyWhenUploadedOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import NotifyWhenUploadedOutputTypeDef
+
+def get_value() -> NotifyWhenUploadedOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "NotificationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotifyWhenUploadedOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    NotificationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `NotificationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="poolinfotypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PoolInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import PoolInfoTypeDef
+
+def get_value() -> PoolInfoTypeDef:
+    return {
+        "PoolARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PoolInfoTypeDef(TypedDict):
+    PoolARN: NotRequired[str],
+    PoolName: NotRequired[str],
+    StorageClass: NotRequired[TapeStorageClassType],  # (1)
+    RetentionLockType: NotRequired[RetentionLockTypeType],  # (2)
+    RetentionLockTimeInDays: NotRequired[int],
+    PoolStatus: NotRequired[PoolStatusType],  # (3)
+```
 
-- `PoolARN`: `str`
-- `PoolName`: `str`
-- `StorageClass`: [TapeStorageClassType](./literals.md#tapestorageclasstype)
-- `RetentionLockType`:
-  [RetentionLockTypeType](./literals.md#retentionlocktypetype)
-- `RetentionLockTimeInDays`: `int`
-- `PoolStatus`: [PoolStatusType](./literals.md#poolstatustype)
-
-<a id="refreshcacheinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: TapeStorageClassType](./literals.md#tapestorageclasstype) 
+2. See [:material-code-brackets: RetentionLockTypeType](./literals.md#retentionlocktypetype) 
+3. See [:material-code-brackets: PoolStatusType](./literals.md#poolstatustype) 
 ## RefreshCacheInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RefreshCacheInputRequestTypeDef
+
+def get_value() -> RefreshCacheInputRequestTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Required fields:
-
-- `FileShareARN`: `str`
-
-Optional fields:
-
-- `FolderList`: `Sequence`\[`str`\]
-- `Recursive`: `bool`
-
-<a id="refreshcacheoutputtypedef"></a>
+```python title="Definition"
+class RefreshCacheInputRequestTypeDef(TypedDict):
+    FileShareARN: str,
+    FolderList: NotRequired[Sequence[str]],
+    Recursive: NotRequired[bool],
+```
 
 ## RefreshCacheOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RefreshCacheOutputTypeDef
+
+def get_value() -> RefreshCacheOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "NotificationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RefreshCacheOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    NotificationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `NotificationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removetagsfromresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveTagsFromResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceInputRequestTypeDef
+
+def get_value() -> RemoveTagsFromResourceInputRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="removetagsfromresourceoutputtypedef"></a>
+```python title="Definition"
+class RemoveTagsFromResourceInputRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## RemoveTagsFromResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RemoveTagsFromResourceOutputTypeDef
+
+def get_value() -> RemoveTagsFromResourceOutputTypeDef:
+    return {
+        "ResourceARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTagsFromResourceOutputTypeDef(TypedDict):
+    ResourceARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResourceARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resetcacheinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResetCacheInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ResetCacheInputRequestTypeDef
+
+def get_value() -> ResetCacheInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="resetcacheoutputtypedef"></a>
+```python title="Definition"
+class ResetCacheInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## ResetCacheOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ResetCacheOutputTypeDef
+
+def get_value() -> ResetCacheOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetCacheOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retrievetapearchiveinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetrieveTapeArchiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveInputRequestTypeDef
+
+def get_value() -> RetrieveTapeArchiveInputRequestTypeDef:
+    return {
+        "TapeARN": ...,
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `TapeARN`: `str`
-- `GatewayARN`: `str`
-
-<a id="retrievetapearchiveoutputtypedef"></a>
+```python title="Definition"
+class RetrieveTapeArchiveInputRequestTypeDef(TypedDict):
+    TapeARN: str,
+    GatewayARN: str,
+```
 
 ## RetrieveTapeArchiveOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeArchiveOutputTypeDef
+
+def get_value() -> RetrieveTapeArchiveOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetrieveTapeArchiveOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="retrievetaperecoverypointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RetrieveTapeRecoveryPointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointInputRequestTypeDef
+
+def get_value() -> RetrieveTapeRecoveryPointInputRequestTypeDef:
+    return {
+        "TapeARN": ...,
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `TapeARN`: `str`
-- `GatewayARN`: `str`
-
-<a id="retrievetaperecoverypointoutputtypedef"></a>
+```python title="Definition"
+class RetrieveTapeRecoveryPointInputRequestTypeDef(TypedDict):
+    TapeARN: str,
+    GatewayARN: str,
+```
 
 ## RetrieveTapeRecoveryPointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import RetrieveTapeRecoveryPointOutputTypeDef
+
+def get_value() -> RetrieveTapeRecoveryPointOutputTypeDef:
+    return {
+        "TapeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetrieveTapeRecoveryPointOutputTypeDef(TypedDict):
+    TapeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TapeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="smbfileshareinfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SMBFileShareInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SMBFileShareInfoTypeDef
+
+def get_value() -> SMBFileShareInfoTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SMBFileShareInfoTypeDef(TypedDict):
+    FileShareARN: NotRequired[str],
+    FileShareId: NotRequired[str],
+    FileShareStatus: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    Path: NotRequired[str],
+    Role: NotRequired[str],
+    LocationARN: NotRequired[str],
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (1)
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    SMBACLEnabled: NotRequired[bool],
+    AccessBasedEnumeration: NotRequired[bool],
+    AdminUserList: NotRequired[List[str]],
+    ValidUserList: NotRequired[List[str]],
+    InvalidUserList: NotRequired[List[str]],
+    AuditDestinationARN: NotRequired[str],
+    Authentication: NotRequired[str],
+    CaseSensitivity: NotRequired[CaseSensitivityType],  # (2)
+    Tags: NotRequired[List[TagTypeDef]],  # (3)
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (4)
+    NotificationPolicy: NotRequired[str],
+    VPCEndpointDNSName: NotRequired[str],
+    BucketRegion: NotRequired[str],
+    OplocksEnabled: NotRequired[bool],
+```
 
-- `FileShareARN`: `str`
-- `FileShareId`: `str`
-- `FileShareStatus`: `str`
-- `GatewayARN`: `str`
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `Path`: `str`
-- `Role`: `str`
-- `LocationARN`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `SMBACLEnabled`: `bool`
-- `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `List`\[`str`\]
-- `ValidUserList`: `List`\[`str`\]
-- `InvalidUserList`: `List`\[`str`\]
-- `AuditDestinationARN`: `str`
-- `Authentication`: `str`
-- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `VPCEndpointDNSName`: `str`
-- `BucketRegion`: `str`
-- `OplocksEnabled`: `bool`
-
-<a id="smblocalgroupstypedef"></a>
-
+1. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+2. See [:material-code-brackets: CaseSensitivityType](./literals.md#casesensitivitytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## SMBLocalGroupsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SMBLocalGroupsTypeDef
+
+def get_value() -> SMBLocalGroupsTypeDef:
+    return {
+        "GatewayAdmins": ...,
+    }
 ```
 
-Optional fields:
-
-- `GatewayAdmins`: `List`\[`str`\]
-
-<a id="setlocalconsolepasswordinputrequesttypedef"></a>
+```python title="Definition"
+class SMBLocalGroupsTypeDef(TypedDict):
+    GatewayAdmins: NotRequired[List[str]],
+```
 
 ## SetLocalConsolePasswordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordInputRequestTypeDef
+
+def get_value() -> SetLocalConsolePasswordInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "LocalConsolePassword": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `LocalConsolePassword`: `str`
-
-<a id="setlocalconsolepasswordoutputtypedef"></a>
+```python title="Definition"
+class SetLocalConsolePasswordInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    LocalConsolePassword: str,
+```
 
 ## SetLocalConsolePasswordOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SetLocalConsolePasswordOutputTypeDef
+
+def get_value() -> SetLocalConsolePasswordOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetLocalConsolePasswordOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="setsmbguestpasswordinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SetSMBGuestPasswordInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordInputRequestTypeDef
+
+def get_value() -> SetSMBGuestPasswordInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `Password`: `str`
-
-<a id="setsmbguestpasswordoutputtypedef"></a>
+```python title="Definition"
+class SetSMBGuestPasswordInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    Password: str,
+```
 
 ## SetSMBGuestPasswordOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import SetSMBGuestPasswordOutputTypeDef
+
+def get_value() -> SetSMBGuestPasswordOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetSMBGuestPasswordOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="shutdowngatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ShutdownGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ShutdownGatewayInputRequestTypeDef
+
+def get_value() -> ShutdownGatewayInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="shutdowngatewayoutputtypedef"></a>
+```python title="Definition"
+class ShutdownGatewayInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## ShutdownGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import ShutdownGatewayOutputTypeDef
+
+def get_value() -> ShutdownGatewayOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ShutdownGatewayOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startavailabilitymonitortestinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartAvailabilityMonitorTestInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestInputRequestTypeDef
+
+def get_value() -> StartAvailabilityMonitorTestInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="startavailabilitymonitortestoutputtypedef"></a>
+```python title="Definition"
+class StartAvailabilityMonitorTestInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## StartAvailabilityMonitorTestOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import StartAvailabilityMonitorTestOutputTypeDef
+
+def get_value() -> StartAvailabilityMonitorTestOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartAvailabilityMonitorTestOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startgatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import StartGatewayInputRequestTypeDef
+
+def get_value() -> StartGatewayInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="startgatewayoutputtypedef"></a>
+```python title="Definition"
+class StartGatewayInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## StartGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import StartGatewayOutputTypeDef
+
+def get_value() -> StartGatewayOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartGatewayOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="storediscsivolumetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StorediSCSIVolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import StorediSCSIVolumeTypeDef
+
+def get_value() -> StorediSCSIVolumeTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StorediSCSIVolumeTypeDef(TypedDict):
+    VolumeARN: NotRequired[str],
+    VolumeId: NotRequired[str],
+    VolumeType: NotRequired[str],
+    VolumeStatus: NotRequired[str],
+    VolumeAttachmentStatus: NotRequired[str],
+    VolumeSizeInBytes: NotRequired[int],
+    VolumeProgress: NotRequired[float],
+    VolumeDiskId: NotRequired[str],
+    SourceSnapshotId: NotRequired[str],
+    PreservedExistingData: NotRequired[bool],
+    VolumeiSCSIAttributes: NotRequired[VolumeiSCSIAttributesTypeDef],  # (1)
+    CreatedDate: NotRequired[datetime],
+    VolumeUsedInBytes: NotRequired[int],
+    KMSKey: NotRequired[str],
+    TargetName: NotRequired[str],
+```
 
-- `VolumeARN`: `str`
-- `VolumeId`: `str`
-- `VolumeType`: `str`
-- `VolumeStatus`: `str`
-- `VolumeAttachmentStatus`: `str`
-- `VolumeSizeInBytes`: `int`
-- `VolumeProgress`: `float`
-- `VolumeDiskId`: `str`
-- `SourceSnapshotId`: `str`
-- `PreservedExistingData`: `bool`
-- `VolumeiSCSIAttributes`:
-  [VolumeiSCSIAttributesTypeDef](./type_defs.md#volumeiscsiattributestypedef)
-- `CreatedDate`: `datetime`
-- `VolumeUsedInBytes`: `int`
-- `KMSKey`: `str`
-- `TargetName`: `str`
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: VolumeiSCSIAttributesTypeDef](./type_defs.md#volumeiscsiattributestypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="tapearchivetypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TapeArchiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import TapeArchiveTypeDef
+
+def get_value() -> TapeArchiveTypeDef:
+    return {
+        "TapeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARN`: `str`
-- `TapeBarcode`: `str`
-- `TapeCreatedDate`: `datetime`
-- `TapeSizeInBytes`: `int`
-- `CompletionTime`: `datetime`
-- `RetrievedTo`: `str`
-- `TapeStatus`: `str`
-- `TapeUsedInBytes`: `int`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `RetentionStartDate`: `datetime`
-- `PoolEntryDate`: `datetime`
-
-<a id="tapeinfotypedef"></a>
+```python title="Definition"
+class TapeArchiveTypeDef(TypedDict):
+    TapeARN: NotRequired[str],
+    TapeBarcode: NotRequired[str],
+    TapeCreatedDate: NotRequired[datetime],
+    TapeSizeInBytes: NotRequired[int],
+    CompletionTime: NotRequired[datetime],
+    RetrievedTo: NotRequired[str],
+    TapeStatus: NotRequired[str],
+    TapeUsedInBytes: NotRequired[int],
+    KMSKey: NotRequired[str],
+    PoolId: NotRequired[str],
+    Worm: NotRequired[bool],
+    RetentionStartDate: NotRequired[datetime],
+    PoolEntryDate: NotRequired[datetime],
+```
 
 ## TapeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import TapeInfoTypeDef
+
+def get_value() -> TapeInfoTypeDef:
+    return {
+        "TapeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARN`: `str`
-- `TapeBarcode`: `str`
-- `TapeSizeInBytes`: `int`
-- `TapeStatus`: `str`
-- `GatewayARN`: `str`
-- `PoolId`: `str`
-- `RetentionStartDate`: `datetime`
-- `PoolEntryDate`: `datetime`
-
-<a id="taperecoverypointinfotypedef"></a>
+```python title="Definition"
+class TapeInfoTypeDef(TypedDict):
+    TapeARN: NotRequired[str],
+    TapeBarcode: NotRequired[str],
+    TapeSizeInBytes: NotRequired[int],
+    TapeStatus: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    PoolId: NotRequired[str],
+    RetentionStartDate: NotRequired[datetime],
+    PoolEntryDate: NotRequired[datetime],
+```
 
 ## TapeRecoveryPointInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import TapeRecoveryPointInfoTypeDef
+
+def get_value() -> TapeRecoveryPointInfoTypeDef:
+    return {
+        "TapeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARN`: `str`
-- `TapeRecoveryPointTime`: `datetime`
-- `TapeSizeInBytes`: `int`
-- `TapeStatus`: `str`
-
-<a id="tapetypedef"></a>
+```python title="Definition"
+class TapeRecoveryPointInfoTypeDef(TypedDict):
+    TapeARN: NotRequired[str],
+    TapeRecoveryPointTime: NotRequired[datetime],
+    TapeSizeInBytes: NotRequired[int],
+    TapeStatus: NotRequired[str],
+```
 
 ## TapeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import TapeTypeDef
+
+def get_value() -> TapeTypeDef:
+    return {
+        "TapeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `TapeARN`: `str`
-- `TapeBarcode`: `str`
-- `TapeCreatedDate`: `datetime`
-- `TapeSizeInBytes`: `int`
-- `TapeStatus`: `str`
-- `VTLDevice`: `str`
-- `Progress`: `float`
-- `TapeUsedInBytes`: `int`
-- `KMSKey`: `str`
-- `PoolId`: `str`
-- `Worm`: `bool`
-- `RetentionStartDate`: `datetime`
-- `PoolEntryDate`: `datetime`
-
-<a id="updateautomatictapecreationpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class TapeTypeDef(TypedDict):
+    TapeARN: NotRequired[str],
+    TapeBarcode: NotRequired[str],
+    TapeCreatedDate: NotRequired[datetime],
+    TapeSizeInBytes: NotRequired[int],
+    TapeStatus: NotRequired[str],
+    VTLDevice: NotRequired[str],
+    Progress: NotRequired[float],
+    TapeUsedInBytes: NotRequired[int],
+    KMSKey: NotRequired[str],
+    PoolId: NotRequired[str],
+    Worm: NotRequired[bool],
+    RetentionStartDate: NotRequired[datetime],
+    PoolEntryDate: NotRequired[datetime],
+```
 
 ## UpdateAutomaticTapeCreationPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyInputRequestTypeDef
+
+def get_value() -> UpdateAutomaticTapeCreationPolicyInputRequestTypeDef:
+    return {
+        "AutomaticTapeCreationRules": ...,
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAutomaticTapeCreationPolicyInputRequestTypeDef(TypedDict):
+    AutomaticTapeCreationRules: Sequence[AutomaticTapeCreationRuleTypeDef],  # (1)
+    GatewayARN: str,
+```
 
-- `AutomaticTapeCreationRules`:
-  `Sequence`\[[AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef)\]
-- `GatewayARN`: `str`
-
-<a id="updateautomatictapecreationpolicyoutputtypedef"></a>
-
+1. See [:material-code-braces: AutomaticTapeCreationRuleTypeDef](./type_defs.md#automatictapecreationruletypedef) 
 ## UpdateAutomaticTapeCreationPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateAutomaticTapeCreationPolicyOutputTypeDef
+
+def get_value() -> UpdateAutomaticTapeCreationPolicyOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAutomaticTapeCreationPolicyOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebandwidthratelimitinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBandwidthRateLimitInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitInputRequestTypeDef
+
+def get_value() -> UpdateBandwidthRateLimitInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-Optional fields:
-
-- `AverageUploadRateLimitInBitsPerSec`: `int`
-- `AverageDownloadRateLimitInBitsPerSec`: `int`
-
-<a id="updatebandwidthratelimitoutputtypedef"></a>
+```python title="Definition"
+class UpdateBandwidthRateLimitInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    AverageUploadRateLimitInBitsPerSec: NotRequired[int],
+    AverageDownloadRateLimitInBitsPerSec: NotRequired[int],
+```
 
 ## UpdateBandwidthRateLimitOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitOutputTypeDef
+
+def get_value() -> UpdateBandwidthRateLimitOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBandwidthRateLimitOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebandwidthratelimitscheduleinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBandwidthRateLimitScheduleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleInputRequestTypeDef
+
+def get_value() -> UpdateBandwidthRateLimitScheduleInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "BandwidthRateLimitIntervals": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBandwidthRateLimitScheduleInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    BandwidthRateLimitIntervals: Sequence[BandwidthRateLimitIntervalTypeDef],  # (1)
+```
 
-- `GatewayARN`: `str`
-- `BandwidthRateLimitIntervals`:
-  `Sequence`\[[BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef)\]
-
-<a id="updatebandwidthratelimitscheduleoutputtypedef"></a>
-
+1. See [:material-code-braces: BandwidthRateLimitIntervalTypeDef](./type_defs.md#bandwidthratelimitintervaltypedef) 
 ## UpdateBandwidthRateLimitScheduleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateBandwidthRateLimitScheduleOutputTypeDef
+
+def get_value() -> UpdateBandwidthRateLimitScheduleOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBandwidthRateLimitScheduleOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatechapcredentialsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChapCredentialsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsInputRequestTypeDef
+
+def get_value() -> UpdateChapCredentialsInputRequestTypeDef:
+    return {
+        "TargetARN": ...,
+        "SecretToAuthenticateInitiator": ...,
+        "InitiatorName": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetARN`: `str`
-- `SecretToAuthenticateInitiator`: `str`
-- `InitiatorName`: `str`
-
-Optional fields:
-
-- `SecretToAuthenticateTarget`: `str`
-
-<a id="updatechapcredentialsoutputtypedef"></a>
+```python title="Definition"
+class UpdateChapCredentialsInputRequestTypeDef(TypedDict):
+    TargetARN: str,
+    SecretToAuthenticateInitiator: str,
+    InitiatorName: str,
+    SecretToAuthenticateTarget: NotRequired[str],
+```
 
 ## UpdateChapCredentialsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateChapCredentialsOutputTypeDef
+
+def get_value() -> UpdateChapCredentialsOutputTypeDef:
+    return {
+        "TargetARN": ...,
+        "InitiatorName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChapCredentialsOutputTypeDef(TypedDict):
+    TargetARN: str,
+    InitiatorName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TargetARN`: `str`
-- `InitiatorName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatefilesystemassociationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateFileSystemAssociationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationInputRequestTypeDef
+
+def get_value() -> UpdateFileSystemAssociationInputRequestTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFileSystemAssociationInputRequestTypeDef(TypedDict):
+    FileSystemAssociationARN: str,
+    UserName: NotRequired[str],
+    Password: NotRequired[str],
+    AuditDestinationARN: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (1)
+```
 
-- `FileSystemAssociationARN`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-- `Password`: `str`
-- `AuditDestinationARN`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-
-<a id="updatefilesystemassociationoutputtypedef"></a>
-
+1. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## UpdateFileSystemAssociationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateFileSystemAssociationOutputTypeDef
+
+def get_value() -> UpdateFileSystemAssociationOutputTypeDef:
+    return {
+        "FileSystemAssociationARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFileSystemAssociationOutputTypeDef(TypedDict):
+    FileSystemAssociationARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileSystemAssociationARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategatewayinformationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGatewayInformationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationInputRequestTypeDef
+
+def get_value() -> UpdateGatewayInformationInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewayInformationInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    GatewayName: NotRequired[str],
+    GatewayTimezone: NotRequired[str],
+    CloudWatchLogGroupARN: NotRequired[str],
+    GatewayCapacity: NotRequired[GatewayCapacityType],  # (1)
+```
 
-- `GatewayARN`: `str`
-
-Optional fields:
-
-- `GatewayName`: `str`
-- `GatewayTimezone`: `str`
-- `CloudWatchLogGroupARN`: `str`
-- `GatewayCapacity`: [GatewayCapacityType](./literals.md#gatewaycapacitytype)
-
-<a id="updategatewayinformationoutputtypedef"></a>
-
+1. See [:material-code-brackets: GatewayCapacityType](./literals.md#gatewaycapacitytype) 
 ## UpdateGatewayInformationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateGatewayInformationOutputTypeDef
+
+def get_value() -> UpdateGatewayInformationOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "GatewayName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewayInformationOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    GatewayName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `GatewayName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategatewaysoftwarenowinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGatewaySoftwareNowInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowInputRequestTypeDef
+
+def get_value() -> UpdateGatewaySoftwareNowInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-
-<a id="updategatewaysoftwarenowoutputtypedef"></a>
+```python title="Definition"
+class UpdateGatewaySoftwareNowInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+```
 
 ## UpdateGatewaySoftwareNowOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateGatewaySoftwareNowOutputTypeDef
+
+def get_value() -> UpdateGatewaySoftwareNowOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewaySoftwareNowOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemaintenancestarttimeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMaintenanceStartTimeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeInputRequestTypeDef
+
+def get_value() -> UpdateMaintenanceStartTimeInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "HourOfDay": ...,
+        "MinuteOfHour": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `HourOfDay`: `int`
-- `MinuteOfHour`: `int`
-
-Optional fields:
-
-- `DayOfWeek`: `int`
-- `DayOfMonth`: `int`
-
-<a id="updatemaintenancestarttimeoutputtypedef"></a>
+```python title="Definition"
+class UpdateMaintenanceStartTimeInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    HourOfDay: int,
+    MinuteOfHour: int,
+    DayOfWeek: NotRequired[int],
+    DayOfMonth: NotRequired[int],
+```
 
 ## UpdateMaintenanceStartTimeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateMaintenanceStartTimeOutputTypeDef
+
+def get_value() -> UpdateMaintenanceStartTimeOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMaintenanceStartTimeOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatenfsfileshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateNFSFileShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareInputRequestTypeDef
+
+def get_value() -> UpdateNFSFileShareInputRequestTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNFSFileShareInputRequestTypeDef(TypedDict):
+    FileShareARN: str,
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    NFSFileShareDefaults: NotRequired[NFSFileShareDefaultsTypeDef],  # (1)
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (2)
+    ClientList: NotRequired[Sequence[str]],
+    Squash: NotRequired[str],
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (3)
+    NotificationPolicy: NotRequired[str],
+    AuditDestinationARN: NotRequired[str],
+```
 
-- `FileShareARN`: `str`
-
-Optional fields:
-
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `NFSFileShareDefaults`:
-  [NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef)
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ClientList`: `Sequence`\[`str`\]
-- `Squash`: `str`
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `AuditDestinationARN`: `str`
-
-<a id="updatenfsfileshareoutputtypedef"></a>
-
+1. See [:material-code-braces: NFSFileShareDefaultsTypeDef](./type_defs.md#nfsfilesharedefaultstypedef) 
+2. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+3. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## UpdateNFSFileShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateNFSFileShareOutputTypeDef
+
+def get_value() -> UpdateNFSFileShareOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNFSFileShareOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesmbfileshareinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSMBFileShareInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareInputRequestTypeDef
+
+def get_value() -> UpdateSMBFileShareInputRequestTypeDef:
+    return {
+        "FileShareARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBFileShareInputRequestTypeDef(TypedDict):
+    FileShareARN: str,
+    KMSEncrypted: NotRequired[bool],
+    KMSKey: NotRequired[str],
+    DefaultStorageClass: NotRequired[str],
+    ObjectACL: NotRequired[ObjectACLType],  # (1)
+    ReadOnly: NotRequired[bool],
+    GuessMIMETypeEnabled: NotRequired[bool],
+    RequesterPays: NotRequired[bool],
+    SMBACLEnabled: NotRequired[bool],
+    AccessBasedEnumeration: NotRequired[bool],
+    AdminUserList: NotRequired[Sequence[str]],
+    ValidUserList: NotRequired[Sequence[str]],
+    InvalidUserList: NotRequired[Sequence[str]],
+    AuditDestinationARN: NotRequired[str],
+    CaseSensitivity: NotRequired[CaseSensitivityType],  # (2)
+    FileShareName: NotRequired[str],
+    CacheAttributes: NotRequired[CacheAttributesTypeDef],  # (3)
+    NotificationPolicy: NotRequired[str],
+    OplocksEnabled: NotRequired[bool],
+```
 
-- `FileShareARN`: `str`
-
-Optional fields:
-
-- `KMSEncrypted`: `bool`
-- `KMSKey`: `str`
-- `DefaultStorageClass`: `str`
-- `ObjectACL`: [ObjectACLType](./literals.md#objectacltype)
-- `ReadOnly`: `bool`
-- `GuessMIMETypeEnabled`: `bool`
-- `RequesterPays`: `bool`
-- `SMBACLEnabled`: `bool`
-- `AccessBasedEnumeration`: `bool`
-- `AdminUserList`: `Sequence`\[`str`\]
-- `ValidUserList`: `Sequence`\[`str`\]
-- `InvalidUserList`: `Sequence`\[`str`\]
-- `AuditDestinationARN`: `str`
-- `CaseSensitivity`: [CaseSensitivityType](./literals.md#casesensitivitytype)
-- `FileShareName`: `str`
-- `CacheAttributes`:
-  [CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef)
-- `NotificationPolicy`: `str`
-- `OplocksEnabled`: `bool`
-
-<a id="updatesmbfileshareoutputtypedef"></a>
-
+1. See [:material-code-brackets: ObjectACLType](./literals.md#objectacltype) 
+2. See [:material-code-brackets: CaseSensitivityType](./literals.md#casesensitivitytype) 
+3. See [:material-code-braces: CacheAttributesTypeDef](./type_defs.md#cacheattributestypedef) 
 ## UpdateSMBFileShareOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareOutputTypeDef
+
+def get_value() -> UpdateSMBFileShareOutputTypeDef:
+    return {
+        "FileShareARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBFileShareOutputTypeDef(TypedDict):
+    FileShareARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `FileShareARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesmbfilesharevisibilityinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSMBFileShareVisibilityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityInputRequestTypeDef
+
+def get_value() -> UpdateSMBFileShareVisibilityInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "FileSharesVisible": ...,
+    }
 ```
 
-Required fields:
-
-- `GatewayARN`: `str`
-- `FileSharesVisible`: `bool`
-
-<a id="updatesmbfilesharevisibilityoutputtypedef"></a>
+```python title="Definition"
+class UpdateSMBFileShareVisibilityInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    FileSharesVisible: bool,
+```
 
 ## UpdateSMBFileShareVisibilityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBFileShareVisibilityOutputTypeDef
+
+def get_value() -> UpdateSMBFileShareVisibilityOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBFileShareVisibilityOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesmblocalgroupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSMBLocalGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsInputRequestTypeDef
+
+def get_value() -> UpdateSMBLocalGroupsInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "SMBLocalGroups": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBLocalGroupsInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    SMBLocalGroups: SMBLocalGroupsTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `SMBLocalGroups`:
-  [SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef)
-
-<a id="updatesmblocalgroupsoutputtypedef"></a>
-
+1. See [:material-code-braces: SMBLocalGroupsTypeDef](./type_defs.md#smblocalgroupstypedef) 
 ## UpdateSMBLocalGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBLocalGroupsOutputTypeDef
+
+def get_value() -> UpdateSMBLocalGroupsOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBLocalGroupsOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesmbsecuritystrategyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSMBSecurityStrategyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyInputRequestTypeDef
+
+def get_value() -> UpdateSMBSecurityStrategyInputRequestTypeDef:
+    return {
+        "GatewayARN": ...,
+        "SMBSecurityStrategy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBSecurityStrategyInputRequestTypeDef(TypedDict):
+    GatewayARN: str,
+    SMBSecurityStrategy: SMBSecurityStrategyType,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `SMBSecurityStrategy`:
-  [SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype)
-
-<a id="updatesmbsecuritystrategyoutputtypedef"></a>
-
+1. See [:material-code-brackets: SMBSecurityStrategyType](./literals.md#smbsecuritystrategytype) 
 ## UpdateSMBSecurityStrategyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSMBSecurityStrategyOutputTypeDef
+
+def get_value() -> UpdateSMBSecurityStrategyOutputTypeDef:
+    return {
+        "GatewayARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSMBSecurityStrategyOutputTypeDef(TypedDict):
+    GatewayARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GatewayARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesnapshotscheduleinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSnapshotScheduleInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleInputRequestTypeDef
+
+def get_value() -> UpdateSnapshotScheduleInputRequestTypeDef:
+    return {
+        "VolumeARN": ...,
+        "StartAt": ...,
+        "RecurrenceInHours": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSnapshotScheduleInputRequestTypeDef(TypedDict):
+    VolumeARN: str,
+    StartAt: int,
+    RecurrenceInHours: int,
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VolumeARN`: `str`
-- `StartAt`: `int`
-- `RecurrenceInHours`: `int`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="updatesnapshotscheduleoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UpdateSnapshotScheduleOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateSnapshotScheduleOutputTypeDef
+
+def get_value() -> UpdateSnapshotScheduleOutputTypeDef:
+    return {
+        "VolumeARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSnapshotScheduleOutputTypeDef(TypedDict):
+    VolumeARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VolumeARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevtldevicetypeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVTLDeviceTypeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeInputRequestTypeDef
+
+def get_value() -> UpdateVTLDeviceTypeInputRequestTypeDef:
+    return {
+        "VTLDeviceARN": ...,
+        "DeviceType": ...,
+    }
 ```
 
-Required fields:
-
-- `VTLDeviceARN`: `str`
-- `DeviceType`: `str`
-
-<a id="updatevtldevicetypeoutputtypedef"></a>
+```python title="Definition"
+class UpdateVTLDeviceTypeInputRequestTypeDef(TypedDict):
+    VTLDeviceARN: str,
+    DeviceType: str,
+```
 
 ## UpdateVTLDeviceTypeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import UpdateVTLDeviceTypeOutputTypeDef
+
+def get_value() -> UpdateVTLDeviceTypeOutputTypeDef:
+    return {
+        "VTLDeviceARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVTLDeviceTypeOutputTypeDef(TypedDict):
+    VTLDeviceARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VTLDeviceARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vtldevicetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VTLDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import VTLDeviceTypeDef
+
+def get_value() -> VTLDeviceTypeDef:
+    return {
+        "VTLDeviceARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VTLDeviceTypeDef(TypedDict):
+    VTLDeviceARN: NotRequired[str],
+    VTLDeviceType: NotRequired[str],
+    VTLDeviceVendor: NotRequired[str],
+    VTLDeviceProductIdentifier: NotRequired[str],
+    DeviceiSCSIAttributes: NotRequired[DeviceiSCSIAttributesTypeDef],  # (1)
+```
 
-- `VTLDeviceARN`: `str`
-- `VTLDeviceType`: `str`
-- `VTLDeviceVendor`: `str`
-- `VTLDeviceProductIdentifier`: `str`
-- `DeviceiSCSIAttributes`:
-  [DeviceiSCSIAttributesTypeDef](./type_defs.md#deviceiscsiattributestypedef)
-
-<a id="volumeinfotypedef"></a>
-
+1. See [:material-code-braces: DeviceiSCSIAttributesTypeDef](./type_defs.md#deviceiscsiattributestypedef) 
 ## VolumeInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import VolumeInfoTypeDef
+
+def get_value() -> VolumeInfoTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `VolumeARN`: `str`
-- `VolumeId`: `str`
-- `GatewayARN`: `str`
-- `GatewayId`: `str`
-- `VolumeType`: `str`
-- `VolumeSizeInBytes`: `int`
-- `VolumeAttachmentStatus`: `str`
-
-<a id="volumerecoverypointinfotypedef"></a>
+```python title="Definition"
+class VolumeInfoTypeDef(TypedDict):
+    VolumeARN: NotRequired[str],
+    VolumeId: NotRequired[str],
+    GatewayARN: NotRequired[str],
+    GatewayId: NotRequired[str],
+    VolumeType: NotRequired[str],
+    VolumeSizeInBytes: NotRequired[int],
+    VolumeAttachmentStatus: NotRequired[str],
+```
 
 ## VolumeRecoveryPointInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import VolumeRecoveryPointInfoTypeDef
+
+def get_value() -> VolumeRecoveryPointInfoTypeDef:
+    return {
+        "VolumeARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `VolumeARN`: `str`
-- `VolumeSizeInBytes`: `int`
-- `VolumeUsageInBytes`: `int`
-- `VolumeRecoveryPointTime`: `str`
-
-<a id="volumeiscsiattributestypedef"></a>
+```python title="Definition"
+class VolumeRecoveryPointInfoTypeDef(TypedDict):
+    VolumeARN: NotRequired[str],
+    VolumeSizeInBytes: NotRequired[int],
+    VolumeUsageInBytes: NotRequired[int],
+    VolumeRecoveryPointTime: NotRequired[str],
+```
 
 ## VolumeiSCSIAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_storagegateway.type_defs import VolumeiSCSIAttributesTypeDef
+
+def get_value() -> VolumeiSCSIAttributesTypeDef:
+    return {
+        "TargetARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VolumeiSCSIAttributesTypeDef(TypedDict):
+    TargetARN: NotRequired[str],
+    NetworkInterfaceId: NotRequired[str],
+    NetworkInterfacePort: NotRequired[int],
+    LunNumber: NotRequired[int],
+    ChapEnabled: NotRequired[bool],
+```
 
-- `TargetARN`: `str`
-- `NetworkInterfaceId`: `str`
-- `NetworkInterfacePort`: `int`
-- `LunNumber`: `int`
-- `ChapEnabled`: `bool`

@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-acmpca-module"></a>
-
-# Paginators for boto3 ACMPCA module
+# Paginators
 
 > [Index](../README.md) > [ACMPCA](./README.md) > Paginators
 
-Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module
-[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+!!! note ""
 
-- [Paginators for boto3 ACMPCA module](#paginators-for-boto3-acmpca-module)
-  - [ListCertificateAuthoritiesPaginator](#listcertificateauthoritiespaginator)
-  - [ListPermissionsPaginator](#listpermissionspaginator)
-  - [ListTagsPaginator](#listtagspaginator)
-
-<a id="listcertificateauthoritiespaginator"></a>
+    Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+    type annotations stubs module [mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ## ListCertificateAuthoritiesPaginator
 
-Type annotations for
-`boto3.client("acm-pca").get_paginator("list_certificate_authorities")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_paginator("list_certificate_authorities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.paginator import ListCertificateAuthoritiesPaginator
@@ -32,28 +21,41 @@ def get_list_certificate_authorities_paginator() -> ListCertificateAuthoritiesPa
     return Session().client("acm-pca").get_paginator("list_certificate_authorities")
 ```
 
-Boto3 documentation:
-[ACMPCA.Paginator.ListCertificateAuthorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListCertificateAuthorities)
 
-Arguments for `ListCertificateAuthoritiesPaginator.paginate` method:
+### paginate
 
-- `ResourceOwner`: [ResourceOwnerType](./literals.md#resourceownertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCertificateAuthoritiesPaginator.paginate` method.
 
-`ListCertificateAuthoritiesPaginator.paginate` returns
-`_PageIterator`\[[ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceOwner: ResourceOwnerType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCertificateAuthoritiesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listpermissionspaginator"></a>
+1. See [:material-code-brackets: ResourceOwnerType](./literals.md#resourceownertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef = {  # (1)
+    "ResourceOwner": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCertificateAuthoritiesRequestListCertificateAuthoritiesPaginateTypeDef](./type_defs.md#listcertificateauthoritiesrequestlistcertificateauthoritiespaginatetypedef) 
 ## ListPermissionsPaginator
 
-Type annotations for
-`boto3.client("acm-pca").get_paginator("list_permissions")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_paginator("list_permissions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.paginator import ListPermissionsPaginator
@@ -62,27 +64,40 @@ def get_list_permissions_paginator() -> ListPermissionsPaginator:
     return Session().client("acm-pca").get_paginator("list_permissions")
 ```
 
-Boto3 documentation:
-[ACMPCA.Paginator.ListPermissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListPermissions)
 
-Arguments for `ListPermissionsPaginator.paginate` method:
+### paginate
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPermissionsPaginator.paginate` method.
 
-`ListPermissionsPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPermissionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionsRequestListPermissionsPaginateTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionsRequestListPermissionsPaginateTypeDef](./type_defs.md#listpermissionsrequestlistpermissionspaginatetypedef) 
 ## ListTagsPaginator
 
-Type annotations for `boto3.client("acm-pca").get_paginator("list_tags")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_paginator("list_tags")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.paginator import ListTagsPaginator
@@ -91,14 +106,31 @@ def get_list_tags_paginator() -> ListTagsPaginator:
     return Session().client("acm-pca").get_paginator("list_tags")
 ```
 
-Boto3 documentation:
-[ACMPCA.Paginator.ListTags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Paginator.ListTags)
 
-Arguments for `ListTagsPaginator.paginate` method:
+### paginate
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsPaginator.paginate` method.
 
-`ListTagsPaginator.paginate` returns
-`_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestListTagsPaginateTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef) 

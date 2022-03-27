@@ -1,150 +1,18 @@
-<a id="pinpointclient-for-boto3-pinpoint-module"></a>
-
-# PinpointClient for boto3 Pinpoint module
+# PinpointClient
 
 > [Index](../README.md) > [Pinpoint](./README.md) > PinpointClient
 
-Auto-generated documentation for
-[Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
-type annotations stubs module
-[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+!!! note ""
 
-- [PinpointClient for boto3 Pinpoint module](#pinpointclient-for-boto3-pinpoint-module)
-  - [PinpointClient](#pinpointclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_app](#create_app)
-    - [create_campaign](#create_campaign)
-    - [create_email_template](#create_email_template)
-    - [create_export_job](#create_export_job)
-    - [create_import_job](#create_import_job)
-    - [create_in_app_template](#create_in_app_template)
-    - [create_journey](#create_journey)
-    - [create_push_template](#create_push_template)
-    - [create_recommender_configuration](#create_recommender_configuration)
-    - [create_segment](#create_segment)
-    - [create_sms_template](#create_sms_template)
-    - [create_voice_template](#create_voice_template)
-    - [delete_adm_channel](#delete_adm_channel)
-    - [delete_apns_channel](#delete_apns_channel)
-    - [delete_apns_sandbox_channel](#delete_apns_sandbox_channel)
-    - [delete_apns_voip_channel](#delete_apns_voip_channel)
-    - [delete_apns_voip_sandbox_channel](#delete_apns_voip_sandbox_channel)
-    - [delete_app](#delete_app)
-    - [delete_baidu_channel](#delete_baidu_channel)
-    - [delete_campaign](#delete_campaign)
-    - [delete_email_channel](#delete_email_channel)
-    - [delete_email_template](#delete_email_template)
-    - [delete_endpoint](#delete_endpoint)
-    - [delete_event_stream](#delete_event_stream)
-    - [delete_gcm_channel](#delete_gcm_channel)
-    - [delete_in_app_template](#delete_in_app_template)
-    - [delete_journey](#delete_journey)
-    - [delete_push_template](#delete_push_template)
-    - [delete_recommender_configuration](#delete_recommender_configuration)
-    - [delete_segment](#delete_segment)
-    - [delete_sms_channel](#delete_sms_channel)
-    - [delete_sms_template](#delete_sms_template)
-    - [delete_user_endpoints](#delete_user_endpoints)
-    - [delete_voice_channel](#delete_voice_channel)
-    - [delete_voice_template](#delete_voice_template)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_adm_channel](#get_adm_channel)
-    - [get_apns_channel](#get_apns_channel)
-    - [get_apns_sandbox_channel](#get_apns_sandbox_channel)
-    - [get_apns_voip_channel](#get_apns_voip_channel)
-    - [get_apns_voip_sandbox_channel](#get_apns_voip_sandbox_channel)
-    - [get_app](#get_app)
-    - [get_application_date_range_kpi](#get_application_date_range_kpi)
-    - [get_application_settings](#get_application_settings)
-    - [get_apps](#get_apps)
-    - [get_baidu_channel](#get_baidu_channel)
-    - [get_campaign](#get_campaign)
-    - [get_campaign_activities](#get_campaign_activities)
-    - [get_campaign_date_range_kpi](#get_campaign_date_range_kpi)
-    - [get_campaign_version](#get_campaign_version)
-    - [get_campaign_versions](#get_campaign_versions)
-    - [get_campaigns](#get_campaigns)
-    - [get_channels](#get_channels)
-    - [get_email_channel](#get_email_channel)
-    - [get_email_template](#get_email_template)
-    - [get_endpoint](#get_endpoint)
-    - [get_event_stream](#get_event_stream)
-    - [get_export_job](#get_export_job)
-    - [get_export_jobs](#get_export_jobs)
-    - [get_gcm_channel](#get_gcm_channel)
-    - [get_import_job](#get_import_job)
-    - [get_import_jobs](#get_import_jobs)
-    - [get_in_app_messages](#get_in_app_messages)
-    - [get_in_app_template](#get_in_app_template)
-    - [get_journey](#get_journey)
-    - [get_journey_date_range_kpi](#get_journey_date_range_kpi)
-    - [get_journey_execution_activity_metrics](#get_journey_execution_activity_metrics)
-    - [get_journey_execution_metrics](#get_journey_execution_metrics)
-    - [get_push_template](#get_push_template)
-    - [get_recommender_configuration](#get_recommender_configuration)
-    - [get_recommender_configurations](#get_recommender_configurations)
-    - [get_segment](#get_segment)
-    - [get_segment_export_jobs](#get_segment_export_jobs)
-    - [get_segment_import_jobs](#get_segment_import_jobs)
-    - [get_segment_version](#get_segment_version)
-    - [get_segment_versions](#get_segment_versions)
-    - [get_segments](#get_segments)
-    - [get_sms_channel](#get_sms_channel)
-    - [get_sms_template](#get_sms_template)
-    - [get_user_endpoints](#get_user_endpoints)
-    - [get_voice_channel](#get_voice_channel)
-    - [get_voice_template](#get_voice_template)
-    - [list_journeys](#list_journeys)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_template_versions](#list_template_versions)
-    - [list_templates](#list_templates)
-    - [phone_number_validate](#phone_number_validate)
-    - [put_event_stream](#put_event_stream)
-    - [put_events](#put_events)
-    - [remove_attributes](#remove_attributes)
-    - [send_messages](#send_messages)
-    - [send_otp_message](#send_otp_message)
-    - [send_users_messages](#send_users_messages)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_adm_channel](#update_adm_channel)
-    - [update_apns_channel](#update_apns_channel)
-    - [update_apns_sandbox_channel](#update_apns_sandbox_channel)
-    - [update_apns_voip_channel](#update_apns_voip_channel)
-    - [update_apns_voip_sandbox_channel](#update_apns_voip_sandbox_channel)
-    - [update_application_settings](#update_application_settings)
-    - [update_baidu_channel](#update_baidu_channel)
-    - [update_campaign](#update_campaign)
-    - [update_email_channel](#update_email_channel)
-    - [update_email_template](#update_email_template)
-    - [update_endpoint](#update_endpoint)
-    - [update_endpoints_batch](#update_endpoints_batch)
-    - [update_gcm_channel](#update_gcm_channel)
-    - [update_in_app_template](#update_in_app_template)
-    - [update_journey](#update_journey)
-    - [update_journey_state](#update_journey_state)
-    - [update_push_template](#update_push_template)
-    - [update_recommender_configuration](#update_recommender_configuration)
-    - [update_segment](#update_segment)
-    - [update_sms_channel](#update_sms_channel)
-    - [update_sms_template](#update_sms_template)
-    - [update_template_active_version](#update_template_active_version)
-    - [update_voice_channel](#update_voice_channel)
-    - [update_voice_template](#update_voice_template)
-    - [verify_otp_message](#verify_otp_message)
-
-<a id="pinpointclient"></a>
+    Auto-generated documentation for [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
+    type annotations stubs module [mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 ## PinpointClient
 
-Type annotations for `boto3.client("pinpoint")`
+Type annotations and code completion for `#!python boto3.client("pinpoint")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_pinpoint.client import PinpointClient
 
@@ -152,2911 +20,3883 @@ def get_pinpoint_client() -> PinpointClient:
     return Session().client("pinpoint")
 ```
 
-Boto3 documentation:
-[Pinpoint.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("pinpoint").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("pinpoint")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.InternalServerErrorException,
+    client.MethodNotAllowedException,
+    client.NotFoundException,
+    client.PayloadTooLargeException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_pinpoint.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.MethodNotAllowedException`
-- `Exceptions.NotFoundException`
-- `Exceptions.PayloadTooLargeException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-PinpointClient exceptions.
-
-Type annotations for `boto3.client("pinpoint").exceptions` method.
-
-Boto3 documentation:
-[Pinpoint.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("pinpoint").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate)
 
-Boto3 documentation:
-[Pinpoint.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_app"></a>
-
-### create_app
+### create\_app
 
 Creates an application.
 
-Type annotations for `boto3.client("pinpoint").create_app` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app)
 
-Boto3 documentation:
-[Pinpoint.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_app)
+```python title="Method definition"
+def create_app(
+    self,
+    *,
+    CreateApplicationRequest: CreateApplicationRequestTypeDef,  # (1)
+) -> CreateAppResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
+1. See [:material-code-braces: CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef) 
+2. See [:material-code-braces: CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreateApplicationRequest`:
-  [CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAppRequestRequestTypeDef = {  # (1)
+    "CreateApplicationRequest": ...,
+}
 
-Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+parent.create_app(**kwargs)
+```
 
-<a id="create\_campaign"></a>
+1. See [:material-code-braces: CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef) 
 
-### create_campaign
+### create\_campaign
 
-Creates a new campaign for an application or updates the settings of an
-existing campaign for an application.
+Creates a new campaign for an application or updates the settings of an existing
+campaign for an application.
 
-Type annotations for `boto3.client("pinpoint").create_campaign` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
 
-Boto3 documentation:
-[Pinpoint.Client.create_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_campaign)
+```python title="Method definition"
+def create_campaign(
+    self,
+    *,
+    ApplicationId: str,
+    WriteCampaignRequest: WriteCampaignRequestTypeDef,  # (1)
+) -> CreateCampaignResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef).
+1. See [:material-code-braces: WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef) 
+2. See [:material-code-braces: CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `WriteCampaignRequest`:
-  [WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCampaignRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "WriteCampaignRequest": ...,
+}
 
-Returns
-[CreateCampaignResponseTypeDef](./type_defs.md#createcampaignresponsetypedef).
+parent.create_campaign(**kwargs)
+```
 
-<a id="create\_email\_template"></a>
+1. See [:material-code-braces: CreateCampaignRequestRequestTypeDef](./type_defs.md#createcampaignrequestrequesttypedef) 
 
-### create_email_template
+### create\_email\_template
 
-Creates a message template for messages that are sent through the email
-channel.
+Creates a message template for messages that are sent through the email channel.
 
-Type annotations for `boto3.client("pinpoint").create_email_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
 
-Boto3 documentation:
-[Pinpoint.Client.create_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_email_template)
+```python title="Method definition"
+def create_email_template(
+    self,
+    *,
+    EmailTemplateRequest: EmailTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+) -> CreateEmailTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef) 
+2. See [:material-code-braces: CreateEmailTemplateResponseTypeDef](./type_defs.md#createemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailTemplateRequest`:
-  [EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEmailTemplateRequestRequestTypeDef = {  # (1)
+    "EmailTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[CreateEmailTemplateResponseTypeDef](./type_defs.md#createemailtemplateresponsetypedef).
+parent.create_email_template(**kwargs)
+```
 
-<a id="create\_export\_job"></a>
+1. See [:material-code-braces: CreateEmailTemplateRequestRequestTypeDef](./type_defs.md#createemailtemplaterequestrequesttypedef) 
 
-### create_export_job
+### create\_export\_job
 
 Creates an export job for an application.
 
-Type annotations for `boto3.client("pinpoint").create_export_job` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
 
-Boto3 documentation:
-[Pinpoint.Client.create_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_export_job)
+```python title="Method definition"
+def create_export_job(
+    self,
+    *,
+    ApplicationId: str,
+    ExportJobRequest: ExportJobRequestTypeDef,  # (1)
+) -> CreateExportJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateExportJobRequestRequestTypeDef](./type_defs.md#createexportjobrequestrequesttypedef).
+1. See [:material-code-braces: ExportJobRequestTypeDef](./type_defs.md#exportjobrequesttypedef) 
+2. See [:material-code-braces: CreateExportJobResponseTypeDef](./type_defs.md#createexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ExportJobRequest`:
-  [ExportJobRequestTypeDef](./type_defs.md#exportjobrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateExportJobRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ExportJobRequest": ...,
+}
 
-Returns
-[CreateExportJobResponseTypeDef](./type_defs.md#createexportjobresponsetypedef).
+parent.create_export_job(**kwargs)
+```
 
-<a id="create\_import\_job"></a>
+1. See [:material-code-braces: CreateExportJobRequestRequestTypeDef](./type_defs.md#createexportjobrequestrequesttypedef) 
 
-### create_import_job
+### create\_import\_job
 
 Creates an import job for an application.
 
-Type annotations for `boto3.client("pinpoint").create_import_job` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
 
-Boto3 documentation:
-[Pinpoint.Client.create_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_import_job)
+```python title="Method definition"
+def create_import_job(
+    self,
+    *,
+    ApplicationId: str,
+    ImportJobRequest: ImportJobRequestTypeDef,  # (1)
+) -> CreateImportJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef).
+1. See [:material-code-braces: ImportJobRequestTypeDef](./type_defs.md#importjobrequesttypedef) 
+2. See [:material-code-braces: CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `ImportJobRequest`:
-  [ImportJobRequestTypeDef](./type_defs.md#importjobrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateImportJobRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "ImportJobRequest": ...,
+}
 
-Returns
-[CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
+parent.create_import_job(**kwargs)
+```
 
-<a id="create\_in\_app\_template"></a>
+1. See [:material-code-braces: CreateImportJobRequestRequestTypeDef](./type_defs.md#createimportjobrequestrequesttypedef) 
 
-### create_in_app_template
+### create\_in\_app\_template
 
 Creates a new message template for messages using the in-app message channel.
 
-Type annotations for `boto3.client("pinpoint").create_in_app_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_in_app_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_in_app_template)
 
-Boto3 documentation:
-[Pinpoint.Client.create_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_in_app_template)
+```python title="Method definition"
+def create_in_app_template(
+    self,
+    *,
+    InAppTemplateRequest: InAppTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+) -> CreateInAppTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInAppTemplateRequestRequestTypeDef](./type_defs.md#createinapptemplaterequestrequesttypedef).
+1. See [:material-code-braces: InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef) 
+2. See [:material-code-braces: CreateInAppTemplateResponseTypeDef](./type_defs.md#createinapptemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InAppTemplateRequest`:
-  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateInAppTemplateRequestRequestTypeDef = {  # (1)
+    "InAppTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[CreateInAppTemplateResponseTypeDef](./type_defs.md#createinapptemplateresponsetypedef).
+parent.create_in_app_template(**kwargs)
+```
 
-<a id="create\_journey"></a>
+1. See [:material-code-braces: CreateInAppTemplateRequestRequestTypeDef](./type_defs.md#createinapptemplaterequestrequesttypedef) 
 
-### create_journey
+### create\_journey
 
 Creates a journey for an application.
 
-Type annotations for `boto3.client("pinpoint").create_journey` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_journey` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
 
-Boto3 documentation:
-[Pinpoint.Client.create_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_journey)
+```python title="Method definition"
+def create_journey(
+    self,
+    *,
+    ApplicationId: str,
+    WriteJourneyRequest: WriteJourneyRequestTypeDef,  # (1)
+) -> CreateJourneyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateJourneyRequestRequestTypeDef](./type_defs.md#createjourneyrequestrequesttypedef).
+1. See [:material-code-braces: WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef) 
+2. See [:material-code-braces: CreateJourneyResponseTypeDef](./type_defs.md#createjourneyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `WriteJourneyRequest`:
-  [WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateJourneyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "WriteJourneyRequest": ...,
+}
 
-Returns
-[CreateJourneyResponseTypeDef](./type_defs.md#createjourneyresponsetypedef).
+parent.create_journey(**kwargs)
+```
 
-<a id="create\_push\_template"></a>
+1. See [:material-code-braces: CreateJourneyRequestRequestTypeDef](./type_defs.md#createjourneyrequestrequesttypedef) 
 
-### create_push_template
+### create\_push\_template
 
 Creates a message template for messages that are sent through a push
 notification channel.
 
-Type annotations for `boto3.client("pinpoint").create_push_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_push_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
 
-Boto3 documentation:
-[Pinpoint.Client.create_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_push_template)
+```python title="Method definition"
+def create_push_template(
+    self,
+    *,
+    PushNotificationTemplateRequest: PushNotificationTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+) -> CreatePushTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePushTemplateRequestRequestTypeDef](./type_defs.md#createpushtemplaterequestrequesttypedef).
+1. See [:material-code-braces: PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef) 
+2. See [:material-code-braces: CreatePushTemplateResponseTypeDef](./type_defs.md#createpushtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PushNotificationTemplateRequest`:
-  [PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePushTemplateRequestRequestTypeDef = {  # (1)
+    "PushNotificationTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[CreatePushTemplateResponseTypeDef](./type_defs.md#createpushtemplateresponsetypedef).
+parent.create_push_template(**kwargs)
+```
 
-<a id="create\_recommender\_configuration"></a>
+1. See [:material-code-braces: CreatePushTemplateRequestRequestTypeDef](./type_defs.md#createpushtemplaterequestrequesttypedef) 
 
-### create_recommender_configuration
+### create\_recommender\_configuration
 
 Creates an Amazon Pinpoint configuration for a recommender model.
 
-Type annotations for
-`boto3.client("pinpoint").create_recommender_configuration` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_recommender_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
 
-Boto3 documentation:
-[Pinpoint.Client.create_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_recommender_configuration)
+```python title="Method definition"
+def create_recommender_configuration(
+    self,
+    *,
+    CreateRecommenderConfiguration: CreateRecommenderConfigurationTypeDef,  # (1)
+) -> CreateRecommenderConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#createrecommenderconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: CreateRecommenderConfigurationTypeDef](./type_defs.md#createrecommenderconfigurationtypedef) 
+2. See [:material-code-braces: CreateRecommenderConfigurationResponseTypeDef](./type_defs.md#createrecommenderconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CreateRecommenderConfiguration`:
-  [CreateRecommenderConfigurationTypeDef](./type_defs.md#createrecommenderconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateRecommenderConfigurationRequestRequestTypeDef = {  # (1)
+    "CreateRecommenderConfiguration": ...,
+}
 
-Returns
-[CreateRecommenderConfigurationResponseTypeDef](./type_defs.md#createrecommenderconfigurationresponsetypedef).
+parent.create_recommender_configuration(**kwargs)
+```
 
-<a id="create\_segment"></a>
+1. See [:material-code-braces: CreateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#createrecommenderconfigurationrequestrequesttypedef) 
 
-### create_segment
+### create\_segment
 
 Creates a new segment for an application or updates the configuration,
 dimension, and other settings for an existing segment that's associated with an
 application.
 
-Type annotations for `boto3.client("pinpoint").create_segment` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
 
-Boto3 documentation:
-[Pinpoint.Client.create_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_segment)
+```python title="Method definition"
+def create_segment(
+    self,
+    *,
+    ApplicationId: str,
+    WriteSegmentRequest: WriteSegmentRequestTypeDef,  # (1)
+) -> CreateSegmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSegmentRequestRequestTypeDef](./type_defs.md#createsegmentrequestrequesttypedef).
+1. See [:material-code-braces: WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef) 
+2. See [:material-code-braces: CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `WriteSegmentRequest`:
-  [WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSegmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "WriteSegmentRequest": ...,
+}
 
-Returns
-[CreateSegmentResponseTypeDef](./type_defs.md#createsegmentresponsetypedef).
+parent.create_segment(**kwargs)
+```
 
-<a id="create\_sms\_template"></a>
+1. See [:material-code-braces: CreateSegmentRequestRequestTypeDef](./type_defs.md#createsegmentrequestrequesttypedef) 
 
-### create_sms_template
+### create\_sms\_template
 
 Creates a message template for messages that are sent through the SMS channel.
 
-Type annotations for `boto3.client("pinpoint").create_sms_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_sms_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
 
-Boto3 documentation:
-[Pinpoint.Client.create_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_sms_template)
+```python title="Method definition"
+def create_sms_template(
+    self,
+    *,
+    SMSTemplateRequest: SMSTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+) -> CreateSmsTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSmsTemplateRequestRequestTypeDef](./type_defs.md#createsmstemplaterequestrequesttypedef).
+1. See [:material-code-braces: SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef) 
+2. See [:material-code-braces: CreateSmsTemplateResponseTypeDef](./type_defs.md#createsmstemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SMSTemplateRequest`:
-  [SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSmsTemplateRequestRequestTypeDef = {  # (1)
+    "SMSTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[CreateSmsTemplateResponseTypeDef](./type_defs.md#createsmstemplateresponsetypedef).
+parent.create_sms_template(**kwargs)
+```
 
-<a id="create\_voice\_template"></a>
+1. See [:material-code-braces: CreateSmsTemplateRequestRequestTypeDef](./type_defs.md#createsmstemplaterequestrequesttypedef) 
 
-### create_voice_template
+### create\_voice\_template
 
-Creates a message template for messages that are sent through the voice
-channel.
+Creates a message template for messages that are sent through the voice channel.
 
-Type annotations for `boto3.client("pinpoint").create_voice_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").create_voice_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
 
-Boto3 documentation:
-[Pinpoint.Client.create_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.create_voice_template)
+```python title="Method definition"
+def create_voice_template(
+    self,
+    *,
+    TemplateName: str,
+    VoiceTemplateRequest: VoiceTemplateRequestTypeDef,  # (1)
+) -> CreateVoiceTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateVoiceTemplateRequestRequestTypeDef](./type_defs.md#createvoicetemplaterequestrequesttypedef).
+1. See [:material-code-braces: VoiceTemplateRequestTypeDef](./type_defs.md#voicetemplaterequesttypedef) 
+2. See [:material-code-braces: CreateVoiceTemplateResponseTypeDef](./type_defs.md#createvoicetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `VoiceTemplateRequest`:
-  [VoiceTemplateRequestTypeDef](./type_defs.md#voicetemplaterequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateVoiceTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "VoiceTemplateRequest": ...,
+}
 
-Returns
-[CreateVoiceTemplateResponseTypeDef](./type_defs.md#createvoicetemplateresponsetypedef).
+parent.create_voice_template(**kwargs)
+```
 
-<a id="delete\_adm\_channel"></a>
+1. See [:material-code-braces: CreateVoiceTemplateRequestRequestTypeDef](./type_defs.md#createvoicetemplaterequestrequesttypedef) 
 
-### delete_adm_channel
+### delete\_adm\_channel
 
 Disables the ADM channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_adm_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_adm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_adm_channel)
+```python title="Method definition"
+def delete_adm_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteAdmChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAdmChannelRequestRequestTypeDef](./type_defs.md#deleteadmchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAdmChannelResponseTypeDef](./type_defs.md#deleteadmchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAdmChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteAdmChannelResponseTypeDef](./type_defs.md#deleteadmchannelresponsetypedef).
+parent.delete_adm_channel(**kwargs)
+```
 
-<a id="delete\_apns\_channel"></a>
+1. See [:material-code-braces: DeleteAdmChannelRequestRequestTypeDef](./type_defs.md#deleteadmchannelrequestrequesttypedef) 
 
-### delete_apns_channel
+### delete\_apns\_channel
 
 Disables the APNs channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_apns_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_apns_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_channel)
+```python title="Method definition"
+def delete_apns_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteApnsChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteApnsChannelRequestRequestTypeDef](./type_defs.md#deleteapnschannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteApnsChannelResponseTypeDef](./type_defs.md#deleteapnschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApnsChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteApnsChannelResponseTypeDef](./type_defs.md#deleteapnschannelresponsetypedef).
+parent.delete_apns_channel(**kwargs)
+```
 
-<a id="delete\_apns\_sandbox\_channel"></a>
+1. See [:material-code-braces: DeleteApnsChannelRequestRequestTypeDef](./type_defs.md#deleteapnschannelrequestrequesttypedef) 
 
-### delete_apns_sandbox_channel
+### delete\_apns\_sandbox\_channel
 
 Disables the APNs sandbox channel for an application and deletes any existing
 settings for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_apns_sandbox_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_apns_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_sandbox_channel)
+```python title="Method definition"
+def delete_apns_sandbox_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteApnsSandboxChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnssandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteApnsSandboxChannelResponseTypeDef](./type_defs.md#deleteapnssandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApnsSandboxChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteApnsSandboxChannelResponseTypeDef](./type_defs.md#deleteapnssandboxchannelresponsetypedef).
+parent.delete_apns_sandbox_channel(**kwargs)
+```
 
-<a id="delete\_apns\_voip\_channel"></a>
+1. See [:material-code-braces: DeleteApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnssandboxchannelrequestrequesttypedef) 
 
-### delete_apns_voip_channel
+### delete\_apns\_voip\_channel
 
 Disables the APNs VoIP channel for an application and deletes any existing
 settings for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_apns_voip_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_apns_voip_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_channel)
+```python title="Method definition"
+def delete_apns_voip_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteApnsVoipChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteApnsVoipChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteApnsVoipChannelResponseTypeDef](./type_defs.md#deleteapnsvoipchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApnsVoipChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteApnsVoipChannelResponseTypeDef](./type_defs.md#deleteapnsvoipchannelresponsetypedef).
+parent.delete_apns_voip_channel(**kwargs)
+```
 
-<a id="delete\_apns\_voip\_sandbox\_channel"></a>
+1. See [:material-code-braces: DeleteApnsVoipChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipchannelrequestrequesttypedef) 
 
-### delete_apns_voip_sandbox_channel
+### delete\_apns\_voip\_sandbox\_channel
 
 Disables the APNs VoIP sandbox channel for an application and deletes any
 existing settings for the channel.
 
-Type annotations for
-`boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_apns_voip_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_apns_voip_sandbox_channel)
+```python title="Method definition"
+def delete_apns_voip_sandbox_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteApnsVoipSandboxChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApnsVoipSandboxChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelresponsetypedef).
+parent.delete_apns_voip_sandbox_channel(**kwargs)
+```
 
-<a id="delete\_app"></a>
+1. See [:material-code-braces: DeleteApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#deleteapnsvoipsandboxchannelrequestrequesttypedef) 
 
-### delete_app
+### delete\_app
 
 Deletes an application.
 
-Type annotations for `boto3.client("pinpoint").delete_app` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_app)
+```python title="Method definition"
+def delete_app(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
+1. See [:material-code-braces: DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
+parent.delete_app(**kwargs)
+```
 
-<a id="delete\_baidu\_channel"></a>
+1. See [:material-code-braces: DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef) 
 
-### delete_baidu_channel
+### delete\_baidu\_channel
 
 Disables the Baidu channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_baidu_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_baidu_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_baidu_channel)
+```python title="Method definition"
+def delete_baidu_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteBaiduChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBaiduChannelRequestRequestTypeDef](./type_defs.md#deletebaiduchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBaiduChannelResponseTypeDef](./type_defs.md#deletebaiduchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBaiduChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteBaiduChannelResponseTypeDef](./type_defs.md#deletebaiduchannelresponsetypedef).
+parent.delete_baidu_channel(**kwargs)
+```
 
-<a id="delete\_campaign"></a>
+1. See [:material-code-braces: DeleteBaiduChannelRequestRequestTypeDef](./type_defs.md#deletebaiduchannelrequestrequesttypedef) 
 
-### delete_campaign
+### delete\_campaign
 
 Deletes a campaign from an application.
 
-Type annotations for `boto3.client("pinpoint").delete_campaign` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_campaign)
+```python title="Method definition"
+def delete_campaign(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+) -> DeleteCampaignResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCampaignResponseTypeDef](./type_defs.md#deletecampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCampaignRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+}
 
-Returns
-[DeleteCampaignResponseTypeDef](./type_defs.md#deletecampaignresponsetypedef).
+parent.delete_campaign(**kwargs)
+```
 
-<a id="delete\_email\_channel"></a>
+1. See [:material-code-braces: DeleteCampaignRequestRequestTypeDef](./type_defs.md#deletecampaignrequestrequesttypedef) 
 
-### delete_email_channel
+### delete\_email\_channel
 
 Disables the email channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_email_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_email_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_channel)
+```python title="Method definition"
+def delete_email_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteEmailChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailChannelRequestRequestTypeDef](./type_defs.md#deleteemailchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteEmailChannelResponseTypeDef](./type_defs.md#deleteemailchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteEmailChannelResponseTypeDef](./type_defs.md#deleteemailchannelresponsetypedef).
+parent.delete_email_channel(**kwargs)
+```
 
-<a id="delete\_email\_template"></a>
+1. See [:material-code-braces: DeleteEmailChannelRequestRequestTypeDef](./type_defs.md#deleteemailchannelrequestrequesttypedef) 
 
-### delete_email_template
+### delete\_email\_template
 
 Deletes a message template for messages that were sent through the email
 channel.
 
-Type annotations for `boto3.client("pinpoint").delete_email_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_email_template)
+```python title="Method definition"
+def delete_email_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> DeleteEmailTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteEmailTemplateResponseTypeDef](./type_defs.md#deleteemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[DeleteEmailTemplateResponseTypeDef](./type_defs.md#deleteemailtemplateresponsetypedef).
+parent.delete_email_template(**kwargs)
+```
 
-<a id="delete\_endpoint"></a>
+1. See [:material-code-braces: DeleteEmailTemplateRequestRequestTypeDef](./type_defs.md#deleteemailtemplaterequestrequesttypedef) 
 
-### delete_endpoint
+### delete\_endpoint
 
 Deletes an endpoint from an application.
 
-Type annotations for `boto3.client("pinpoint").delete_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_endpoint)
+```python title="Method definition"
+def delete_endpoint(
+    self,
+    *,
+    ApplicationId: str,
+    EndpointId: str,
+) -> DeleteEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef).
+1. See [:material-code-braces: DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEndpointRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EndpointId": ...,
+}
 
-Returns
-[DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
+parent.delete_endpoint(**kwargs)
+```
 
-<a id="delete\_event\_stream"></a>
+1. See [:material-code-braces: DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef) 
 
-### delete_event_stream
+### delete\_event\_stream
 
 Deletes the event stream for an application.
 
-Type annotations for `boto3.client("pinpoint").delete_event_stream` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_event_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_event_stream)
+```python title="Method definition"
+def delete_event_stream(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteEventStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventStreamRequestRequestTypeDef](./type_defs.md#deleteeventstreamrequestrequesttypedef).
+1. See [:material-code-braces: DeleteEventStreamResponseTypeDef](./type_defs.md#deleteeventstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventStreamRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteEventStreamResponseTypeDef](./type_defs.md#deleteeventstreamresponsetypedef).
+parent.delete_event_stream(**kwargs)
+```
 
-<a id="delete\_gcm\_channel"></a>
+1. See [:material-code-braces: DeleteEventStreamRequestRequestTypeDef](./type_defs.md#deleteeventstreamrequestrequesttypedef) 
 
-### delete_gcm_channel
+### delete\_gcm\_channel
 
 Disables the GCM channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_gcm_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_gcm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_gcm_channel)
+```python title="Method definition"
+def delete_gcm_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteGcmChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGcmChannelRequestRequestTypeDef](./type_defs.md#deletegcmchannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteGcmChannelResponseTypeDef](./type_defs.md#deletegcmchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGcmChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteGcmChannelResponseTypeDef](./type_defs.md#deletegcmchannelresponsetypedef).
+parent.delete_gcm_channel(**kwargs)
+```
 
-<a id="delete\_in\_app\_template"></a>
+1. See [:material-code-braces: DeleteGcmChannelRequestRequestTypeDef](./type_defs.md#deletegcmchannelrequestrequesttypedef) 
 
-### delete_in_app_template
+### delete\_in\_app\_template
 
 Deletes a message template for messages sent using the in-app message channel.
 
-Type annotations for `boto3.client("pinpoint").delete_in_app_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_in_app_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_in_app_template)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_in_app_template)
+```python title="Method definition"
+def delete_in_app_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> DeleteInAppTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInAppTemplateRequestRequestTypeDef](./type_defs.md#deleteinapptemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteInAppTemplateResponseTypeDef](./type_defs.md#deleteinapptemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteInAppTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[DeleteInAppTemplateResponseTypeDef](./type_defs.md#deleteinapptemplateresponsetypedef).
+parent.delete_in_app_template(**kwargs)
+```
 
-<a id="delete\_journey"></a>
+1. See [:material-code-braces: DeleteInAppTemplateRequestRequestTypeDef](./type_defs.md#deleteinapptemplaterequestrequesttypedef) 
 
-### delete_journey
+### delete\_journey
 
 Deletes a journey from an application.
 
-Type annotations for `boto3.client("pinpoint").delete_journey` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_journey` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_journey)
+```python title="Method definition"
+def delete_journey(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+) -> DeleteJourneyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteJourneyRequestRequestTypeDef](./type_defs.md#deletejourneyrequestrequesttypedef).
+1. See [:material-code-braces: DeleteJourneyResponseTypeDef](./type_defs.md#deletejourneyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJourneyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+}
 
-Returns
-[DeleteJourneyResponseTypeDef](./type_defs.md#deletejourneyresponsetypedef).
+parent.delete_journey(**kwargs)
+```
 
-<a id="delete\_push\_template"></a>
+1. See [:material-code-braces: DeleteJourneyRequestRequestTypeDef](./type_defs.md#deletejourneyrequestrequesttypedef) 
 
-### delete_push_template
+### delete\_push\_template
 
 Deletes a message template for messages that were sent through a push
 notification channel.
 
-Type annotations for `boto3.client("pinpoint").delete_push_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_push_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_push_template)
+```python title="Method definition"
+def delete_push_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> DeletePushTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePushTemplateRequestRequestTypeDef](./type_defs.md#deletepushtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeletePushTemplateResponseTypeDef](./type_defs.md#deletepushtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePushTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[DeletePushTemplateResponseTypeDef](./type_defs.md#deletepushtemplateresponsetypedef).
+parent.delete_push_template(**kwargs)
+```
 
-<a id="delete\_recommender\_configuration"></a>
+1. See [:material-code-braces: DeletePushTemplateRequestRequestTypeDef](./type_defs.md#deletepushtemplaterequestrequesttypedef) 
 
-### delete_recommender_configuration
+### delete\_recommender\_configuration
 
 Deletes an Amazon Pinpoint configuration for a recommender model.
 
-Type annotations for
-`boto3.client("pinpoint").delete_recommender_configuration` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_recommender_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_recommender_configuration)
+```python title="Method definition"
+def delete_recommender_configuration(
+    self,
+    *,
+    RecommenderId: str,
+) -> DeleteRecommenderConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#deleterecommenderconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteRecommenderConfigurationResponseTypeDef](./type_defs.md#deleterecommenderconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecommenderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRecommenderConfigurationRequestRequestTypeDef = {  # (1)
+    "RecommenderId": ...,
+}
 
-Returns
-[DeleteRecommenderConfigurationResponseTypeDef](./type_defs.md#deleterecommenderconfigurationresponsetypedef).
+parent.delete_recommender_configuration(**kwargs)
+```
 
-<a id="delete\_segment"></a>
+1. See [:material-code-braces: DeleteRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#deleterecommenderconfigurationrequestrequesttypedef) 
 
-### delete_segment
+### delete\_segment
 
 Deletes a segment from an application.
 
-Type annotations for `boto3.client("pinpoint").delete_segment` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_segment)
+```python title="Method definition"
+def delete_segment(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+) -> DeleteSegmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSegmentRequestRequestTypeDef](./type_defs.md#deletesegmentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSegmentResponseTypeDef](./type_defs.md#deletesegmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSegmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+}
 
-Returns
-[DeleteSegmentResponseTypeDef](./type_defs.md#deletesegmentresponsetypedef).
+parent.delete_segment(**kwargs)
+```
 
-<a id="delete\_sms\_channel"></a>
+1. See [:material-code-braces: DeleteSegmentRequestRequestTypeDef](./type_defs.md#deletesegmentrequestrequesttypedef) 
 
-### delete_sms_channel
+### delete\_sms\_channel
 
 Disables the SMS channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_sms_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_sms_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_channel)
+```python title="Method definition"
+def delete_sms_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteSmsChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSmsChannelRequestRequestTypeDef](./type_defs.md#deletesmschannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSmsChannelResponseTypeDef](./type_defs.md#deletesmschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSmsChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteSmsChannelResponseTypeDef](./type_defs.md#deletesmschannelresponsetypedef).
+parent.delete_sms_channel(**kwargs)
+```
 
-<a id="delete\_sms\_template"></a>
+1. See [:material-code-braces: DeleteSmsChannelRequestRequestTypeDef](./type_defs.md#deletesmschannelrequestrequesttypedef) 
 
-### delete_sms_template
+### delete\_sms\_template
 
 Deletes a message template for messages that were sent through the SMS channel.
 
-Type annotations for `boto3.client("pinpoint").delete_sms_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_sms_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_sms_template)
+```python title="Method definition"
+def delete_sms_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> DeleteSmsTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSmsTemplateRequestRequestTypeDef](./type_defs.md#deletesmstemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteSmsTemplateResponseTypeDef](./type_defs.md#deletesmstemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSmsTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[DeleteSmsTemplateResponseTypeDef](./type_defs.md#deletesmstemplateresponsetypedef).
+parent.delete_sms_template(**kwargs)
+```
 
-<a id="delete\_user\_endpoints"></a>
+1. See [:material-code-braces: DeleteSmsTemplateRequestRequestTypeDef](./type_defs.md#deletesmstemplaterequestrequesttypedef) 
 
-### delete_user_endpoints
+### delete\_user\_endpoints
 
 Deletes all the endpoints that are associated with a specific user ID.
 
-Type annotations for `boto3.client("pinpoint").delete_user_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_user_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_user_endpoints)
+```python title="Method definition"
+def delete_user_endpoints(
+    self,
+    *,
+    ApplicationId: str,
+    UserId: str,
+) -> DeleteUserEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserEndpointsRequestRequestTypeDef](./type_defs.md#deleteuserendpointsrequestrequesttypedef).
+1. See [:material-code-braces: DeleteUserEndpointsResponseTypeDef](./type_defs.md#deleteuserendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserEndpointsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "UserId": ...,
+}
 
-Returns
-[DeleteUserEndpointsResponseTypeDef](./type_defs.md#deleteuserendpointsresponsetypedef).
+parent.delete_user_endpoints(**kwargs)
+```
 
-<a id="delete\_voice\_channel"></a>
+1. See [:material-code-braces: DeleteUserEndpointsRequestRequestTypeDef](./type_defs.md#deleteuserendpointsrequestrequesttypedef) 
 
-### delete_voice_channel
+### delete\_voice\_channel
 
 Disables the voice channel for an application and deletes any existing settings
 for the channel.
 
-Type annotations for `boto3.client("pinpoint").delete_voice_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_voice_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_channel)
+```python title="Method definition"
+def delete_voice_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> DeleteVoiceChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceChannelRequestRequestTypeDef](./type_defs.md#deletevoicechannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteVoiceChannelResponseTypeDef](./type_defs.md#deletevoicechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DeleteVoiceChannelResponseTypeDef](./type_defs.md#deletevoicechannelresponsetypedef).
+parent.delete_voice_channel(**kwargs)
+```
 
-<a id="delete\_voice\_template"></a>
+1. See [:material-code-braces: DeleteVoiceChannelRequestRequestTypeDef](./type_defs.md#deletevoicechannelrequestrequesttypedef) 
 
-### delete_voice_template
+### delete\_voice\_template
 
 Deletes a message template for messages that were sent through the voice
 channel.
 
-Type annotations for `boto3.client("pinpoint").delete_voice_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").delete_voice_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
 
-Boto3 documentation:
-[Pinpoint.Client.delete_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.delete_voice_template)
+```python title="Method definition"
+def delete_voice_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> DeleteVoiceTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteVoiceTemplateRequestRequestTypeDef](./type_defs.md#deletevoicetemplaterequestrequesttypedef).
+1. See [:material-code-braces: DeleteVoiceTemplateResponseTypeDef](./type_defs.md#deletevoicetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteVoiceTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[DeleteVoiceTemplateResponseTypeDef](./type_defs.md#deletevoicetemplateresponsetypedef).
+parent.delete_voice_template(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteVoiceTemplateRequestRequestTypeDef](./type_defs.md#deletevoicetemplaterequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("pinpoint").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Pinpoint.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_adm\_channel"></a>
-
-### get_adm_channel
+### get\_adm\_channel
 
 Retrieves information about the status and settings of the ADM channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_adm_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_adm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_adm_channel)
+```python title="Method definition"
+def get_adm_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetAdmChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAdmChannelRequestRequestTypeDef](./type_defs.md#getadmchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetAdmChannelResponseTypeDef](./type_defs.md#getadmchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAdmChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetAdmChannelResponseTypeDef](./type_defs.md#getadmchannelresponsetypedef).
+parent.get_adm_channel(**kwargs)
+```
 
-<a id="get\_apns\_channel"></a>
+1. See [:material-code-braces: GetAdmChannelRequestRequestTypeDef](./type_defs.md#getadmchannelrequestrequesttypedef) 
 
-### get_apns_channel
+### get\_apns\_channel
 
 Retrieves information about the status and settings of the APNs channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_apns_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_apns_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_channel)
+```python title="Method definition"
+def get_apns_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApnsChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApnsChannelRequestRequestTypeDef](./type_defs.md#getapnschannelrequestrequesttypedef).
+1. See [:material-code-braces: GetApnsChannelResponseTypeDef](./type_defs.md#getapnschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApnsChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApnsChannelResponseTypeDef](./type_defs.md#getapnschannelresponsetypedef).
+parent.get_apns_channel(**kwargs)
+```
 
-<a id="get\_apns\_sandbox\_channel"></a>
+1. See [:material-code-braces: GetApnsChannelRequestRequestTypeDef](./type_defs.md#getapnschannelrequestrequesttypedef) 
 
-### get_apns_sandbox_channel
+### get\_apns\_sandbox\_channel
 
 Retrieves information about the status and settings of the APNs sandbox channel
 for an application.
 
-Type annotations for `boto3.client("pinpoint").get_apns_sandbox_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_apns_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_sandbox_channel)
+```python title="Method definition"
+def get_apns_sandbox_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApnsSandboxChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnssandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetApnsSandboxChannelResponseTypeDef](./type_defs.md#getapnssandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApnsSandboxChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApnsSandboxChannelResponseTypeDef](./type_defs.md#getapnssandboxchannelresponsetypedef).
+parent.get_apns_sandbox_channel(**kwargs)
+```
 
-<a id="get\_apns\_voip\_channel"></a>
+1. See [:material-code-braces: GetApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnssandboxchannelrequestrequesttypedef) 
 
-### get_apns_voip_channel
+### get\_apns\_voip\_channel
 
-Retrieves information about the status and settings of the APNs VoIP channel
-for an application.
+Retrieves information about the status and settings of the APNs VoIP channel for
+an application.
 
-Type annotations for `boto3.client("pinpoint").get_apns_voip_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_apns_voip_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_channel)
+```python title="Method definition"
+def get_apns_voip_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApnsVoipChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApnsVoipChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetApnsVoipChannelResponseTypeDef](./type_defs.md#getapnsvoipchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApnsVoipChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApnsVoipChannelResponseTypeDef](./type_defs.md#getapnsvoipchannelresponsetypedef).
+parent.get_apns_voip_channel(**kwargs)
+```
 
-<a id="get\_apns\_voip\_sandbox\_channel"></a>
+1. See [:material-code-braces: GetApnsVoipChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipchannelrequestrequesttypedef) 
 
-### get_apns_voip_sandbox_channel
+### get\_apns\_voip\_sandbox\_channel
 
 Retrieves information about the status and settings of the APNs VoIP sandbox
 channel for an application.
 
-Type annotations for `boto3.client("pinpoint").get_apns_voip_sandbox_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_apns_voip_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apns_voip_sandbox_channel)
+```python title="Method definition"
+def get_apns_voip_sandbox_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApnsVoipSandboxChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipsandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#getapnsvoipsandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApnsVoipSandboxChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#getapnsvoipsandboxchannelresponsetypedef).
+parent.get_apns_voip_sandbox_channel(**kwargs)
+```
 
-<a id="get\_app"></a>
+1. See [:material-code-braces: GetApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#getapnsvoipsandboxchannelrequestrequesttypedef) 
 
-### get_app
+### get\_app
 
 Retrieves information about an application.
 
-Type annotations for `boto3.client("pinpoint").get_app` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app)
 
-Boto3 documentation:
-[Pinpoint.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_app)
+```python title="Method definition"
+def get_app(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef).
+1. See [:material-code-braces: GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
+parent.get_app(**kwargs)
+```
 
-<a id="get\_application\_date\_range\_kpi"></a>
+1. See [:material-code-braces: GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef) 
 
-### get_application_date_range_kpi
+### get\_application\_date\_range\_kpi
 
-Retrieves (queries) pre-aggregated data for a standard metric that applies to
-an application.
+Retrieves (queries) pre-aggregated data for a standard metric that applies to an
+application.
 
-Type annotations for `boto3.client("pinpoint").get_application_date_range_kpi`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_application_date_range_kpi` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
 
-Boto3 documentation:
-[Pinpoint.Client.get_application_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_date_range_kpi)
+```python title="Method definition"
+def get_application_date_range_kpi(
+    self,
+    *,
+    ApplicationId: str,
+    KpiName: str,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    PageSize: str = ...,
+    StartTime: Union[datetime, str] = ...,
+) -> GetApplicationDateRangeKpiResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationDateRangeKpiRequestRequestTypeDef](./type_defs.md#getapplicationdaterangekpirequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationDateRangeKpiResponseTypeDef](./type_defs.md#getapplicationdaterangekpiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `KpiName`: `str` *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `PageSize`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetApplicationDateRangeKpiRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "KpiName": ...,
+}
 
-Returns
-[GetApplicationDateRangeKpiResponseTypeDef](./type_defs.md#getapplicationdaterangekpiresponsetypedef).
+parent.get_application_date_range_kpi(**kwargs)
+```
 
-<a id="get\_application\_settings"></a>
+1. See [:material-code-braces: GetApplicationDateRangeKpiRequestRequestTypeDef](./type_defs.md#getapplicationdaterangekpirequestrequesttypedef) 
 
-### get_application_settings
+### get\_application\_settings
 
 Retrieves information about the settings for an application.
 
-Type annotations for `boto3.client("pinpoint").get_application_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_application_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
 
-Boto3 documentation:
-[Pinpoint.Client.get_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_application_settings)
+```python title="Method definition"
+def get_application_settings(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetApplicationSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetApplicationSettingsRequestRequestTypeDef](./type_defs.md#getapplicationsettingsrequestrequesttypedef).
+1. See [:material-code-braces: GetApplicationSettingsResponseTypeDef](./type_defs.md#getapplicationsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetApplicationSettingsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetApplicationSettingsResponseTypeDef](./type_defs.md#getapplicationsettingsresponsetypedef).
+parent.get_application_settings(**kwargs)
+```
 
-<a id="get\_apps"></a>
+1. See [:material-code-braces: GetApplicationSettingsRequestRequestTypeDef](./type_defs.md#getapplicationsettingsrequestrequesttypedef) 
 
-### get_apps
+### get\_apps
 
 Retrieves information about all the applications that are associated with your
 Amazon Pinpoint account.
 
-Type annotations for `boto3.client("pinpoint").get_apps` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_apps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
 
-Boto3 documentation:
-[Pinpoint.Client.get_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_apps)
+```python title="Method definition"
+def get_apps(
+    self,
+    *,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetAppsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppsRequestRequestTypeDef](./type_defs.md#getappsrequestrequesttypedef).
+1. See [:material-code-braces: GetAppsResponseTypeDef](./type_defs.md#getappsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAppsRequestRequestTypeDef = {  # (1)
+    "PageSize": ...,
+}
 
-Returns [GetAppsResponseTypeDef](./type_defs.md#getappsresponsetypedef).
+parent.get_apps(**kwargs)
+```
 
-<a id="get\_baidu\_channel"></a>
+1. See [:material-code-braces: GetAppsRequestRequestTypeDef](./type_defs.md#getappsrequestrequesttypedef) 
 
-### get_baidu_channel
+### get\_baidu\_channel
 
 Retrieves information about the status and settings of the Baidu channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_baidu_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_baidu_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_baidu_channel)
+```python title="Method definition"
+def get_baidu_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetBaiduChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBaiduChannelRequestRequestTypeDef](./type_defs.md#getbaiduchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetBaiduChannelResponseTypeDef](./type_defs.md#getbaiduchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBaiduChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetBaiduChannelResponseTypeDef](./type_defs.md#getbaiduchannelresponsetypedef).
+parent.get_baidu_channel(**kwargs)
+```
 
-<a id="get\_campaign"></a>
+1. See [:material-code-braces: GetBaiduChannelRequestRequestTypeDef](./type_defs.md#getbaiduchannelrequestrequesttypedef) 
 
-### get_campaign
+### get\_campaign
 
 Retrieves information about the status, configuration, and other settings for a
 campaign.
 
-Type annotations for `boto3.client("pinpoint").get_campaign` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign)
+```python title="Method definition"
+def get_campaign(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+) -> GetCampaignResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignRequestRequestTypeDef](./type_defs.md#getcampaignrequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignResponseTypeDef](./type_defs.md#getcampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCampaignRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+}
 
-Returns
-[GetCampaignResponseTypeDef](./type_defs.md#getcampaignresponsetypedef).
+parent.get_campaign(**kwargs)
+```
 
-<a id="get\_campaign\_activities"></a>
+1. See [:material-code-braces: GetCampaignRequestRequestTypeDef](./type_defs.md#getcampaignrequestrequesttypedef) 
 
-### get_campaign_activities
+### get\_campaign\_activities
 
 Retrieves information about all the activities for a campaign.
 
-Type annotations for `boto3.client("pinpoint").get_campaign_activities` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaign_activities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaign_activities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_activities)
+```python title="Method definition"
+def get_campaign_activities(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetCampaignActivitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignActivitiesRequestRequestTypeDef](./type_defs.md#getcampaignactivitiesrequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignActivitiesResponseTypeDef](./type_defs.md#getcampaignactivitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCampaignActivitiesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+}
 
-Returns
-[GetCampaignActivitiesResponseTypeDef](./type_defs.md#getcampaignactivitiesresponsetypedef).
+parent.get_campaign_activities(**kwargs)
+```
 
-<a id="get\_campaign\_date\_range\_kpi"></a>
+1. See [:material-code-braces: GetCampaignActivitiesRequestRequestTypeDef](./type_defs.md#getcampaignactivitiesrequestrequesttypedef) 
 
-### get_campaign_date_range_kpi
+### get\_campaign\_date\_range\_kpi
 
 Retrieves (queries) pre-aggregated data for a standard metric that applies to a
 campaign.
 
-Type annotations for `boto3.client("pinpoint").get_campaign_date_range_kpi`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaign_date_range_kpi` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaign_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_date_range_kpi)
+```python title="Method definition"
+def get_campaign_date_range_kpi(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+    KpiName: str,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    PageSize: str = ...,
+    StartTime: Union[datetime, str] = ...,
+) -> GetCampaignDateRangeKpiResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignDateRangeKpiRequestRequestTypeDef](./type_defs.md#getcampaigndaterangekpirequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignDateRangeKpiResponseTypeDef](./type_defs.md#getcampaigndaterangekpiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
-- `KpiName`: `str` *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `PageSize`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetCampaignDateRangeKpiRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+    "KpiName": ...,
+}
 
-Returns
-[GetCampaignDateRangeKpiResponseTypeDef](./type_defs.md#getcampaigndaterangekpiresponsetypedef).
+parent.get_campaign_date_range_kpi(**kwargs)
+```
 
-<a id="get\_campaign\_version"></a>
+1. See [:material-code-braces: GetCampaignDateRangeKpiRequestRequestTypeDef](./type_defs.md#getcampaigndaterangekpirequestrequesttypedef) 
 
-### get_campaign_version
+### get\_campaign\_version
 
 Retrieves information about the status, configuration, and other settings for a
 specific version of a campaign.
 
-Type annotations for `boto3.client("pinpoint").get_campaign_version` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaign_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaign_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_version)
+```python title="Method definition"
+def get_campaign_version(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+    Version: str,
+) -> GetCampaignVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignVersionRequestRequestTypeDef](./type_defs.md#getcampaignversionrequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignVersionResponseTypeDef](./type_defs.md#getcampaignversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
-- `Version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCampaignVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+    "Version": ...,
+}
 
-Returns
-[GetCampaignVersionResponseTypeDef](./type_defs.md#getcampaignversionresponsetypedef).
+parent.get_campaign_version(**kwargs)
+```
 
-<a id="get\_campaign\_versions"></a>
+1. See [:material-code-braces: GetCampaignVersionRequestRequestTypeDef](./type_defs.md#getcampaignversionrequestrequesttypedef) 
 
-### get_campaign_versions
+### get\_campaign\_versions
 
 Retrieves information about the status, configuration, and other settings for
 all versions of a campaign.
 
-Type annotations for `boto3.client("pinpoint").get_campaign_versions` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaign_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaign_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaign_versions)
+```python title="Method definition"
+def get_campaign_versions(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetCampaignVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignVersionsRequestRequestTypeDef](./type_defs.md#getcampaignversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignVersionsResponseTypeDef](./type_defs.md#getcampaignversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCampaignVersionsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+}
 
-Returns
-[GetCampaignVersionsResponseTypeDef](./type_defs.md#getcampaignversionsresponsetypedef).
+parent.get_campaign_versions(**kwargs)
+```
 
-<a id="get\_campaigns"></a>
+1. See [:material-code-braces: GetCampaignVersionsRequestRequestTypeDef](./type_defs.md#getcampaignversionsrequestrequesttypedef) 
 
-### get_campaigns
+### get\_campaigns
 
 Retrieves information about the status, configuration, and other settings for
 all the campaigns that are associated with an application.
 
-Type annotations for `boto3.client("pinpoint").get_campaigns` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_campaigns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
 
-Boto3 documentation:
-[Pinpoint.Client.get_campaigns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_campaigns)
+```python title="Method definition"
+def get_campaigns(
+    self,
+    *,
+    ApplicationId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetCampaignsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCampaignsRequestRequestTypeDef](./type_defs.md#getcampaignsrequestrequesttypedef).
+1. See [:material-code-braces: GetCampaignsResponseTypeDef](./type_defs.md#getcampaignsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCampaignsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetCampaignsResponseTypeDef](./type_defs.md#getcampaignsresponsetypedef).
+parent.get_campaigns(**kwargs)
+```
 
-<a id="get\_channels"></a>
+1. See [:material-code-braces: GetCampaignsRequestRequestTypeDef](./type_defs.md#getcampaignsrequestrequesttypedef) 
 
-### get_channels
+### get\_channels
 
 Retrieves information about the history and status of each channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_channels` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
 
-Boto3 documentation:
-[Pinpoint.Client.get_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_channels)
+```python title="Method definition"
+def get_channels(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetChannelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetChannelsRequestRequestTypeDef](./type_defs.md#getchannelsrequestrequesttypedef).
+1. See [:material-code-braces: GetChannelsResponseTypeDef](./type_defs.md#getchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetChannelsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetChannelsResponseTypeDef](./type_defs.md#getchannelsresponsetypedef).
+parent.get_channels(**kwargs)
+```
 
-<a id="get\_email\_channel"></a>
+1. See [:material-code-braces: GetChannelsRequestRequestTypeDef](./type_defs.md#getchannelsrequestrequesttypedef) 
 
-### get_email_channel
+### get\_email\_channel
 
 Retrieves information about the status and settings of the email channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_email_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_email_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_channel)
+```python title="Method definition"
+def get_email_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetEmailChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEmailChannelRequestRequestTypeDef](./type_defs.md#getemailchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetEmailChannelResponseTypeDef](./type_defs.md#getemailchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEmailChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetEmailChannelResponseTypeDef](./type_defs.md#getemailchannelresponsetypedef).
+parent.get_email_channel(**kwargs)
+```
 
-<a id="get\_email\_template"></a>
+1. See [:material-code-braces: GetEmailChannelRequestRequestTypeDef](./type_defs.md#getemailchannelrequestrequesttypedef) 
 
-### get_email_template
+### get\_email\_template
 
 Retrieves the content and settings of a message template for messages that are
 sent through the email channel.
 
-Type annotations for `boto3.client("pinpoint").get_email_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
 
-Boto3 documentation:
-[Pinpoint.Client.get_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_email_template)
+```python title="Method definition"
+def get_email_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> GetEmailTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetEmailTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
+parent.get_email_template(**kwargs)
+```
 
-<a id="get\_endpoint"></a>
+1. See [:material-code-braces: GetEmailTemplateRequestRequestTypeDef](./type_defs.md#getemailtemplaterequestrequesttypedef) 
 
-### get_endpoint
+### get\_endpoint
 
 Retrieves information about the settings and attributes of a specific endpoint
 for an application.
 
-Type annotations for `boto3.client("pinpoint").get_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
 
-Boto3 documentation:
-[Pinpoint.Client.get_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_endpoint)
+```python title="Method definition"
+def get_endpoint(
+    self,
+    *,
+    ApplicationId: str,
+    EndpointId: str,
+) -> GetEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef).
+1. See [:material-code-braces: GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEndpointRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EndpointId": ...,
+}
 
-Returns
-[GetEndpointResponseTypeDef](./type_defs.md#getendpointresponsetypedef).
+parent.get_endpoint(**kwargs)
+```
 
-<a id="get\_event\_stream"></a>
+1. See [:material-code-braces: GetEndpointRequestRequestTypeDef](./type_defs.md#getendpointrequestrequesttypedef) 
 
-### get_event_stream
+### get\_event\_stream
 
 Retrieves information about the event stream settings for an application.
 
-Type annotations for `boto3.client("pinpoint").get_event_stream` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_event_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
 
-Boto3 documentation:
-[Pinpoint.Client.get_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_event_stream)
+```python title="Method definition"
+def get_event_stream(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetEventStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventStreamRequestRequestTypeDef](./type_defs.md#geteventstreamrequestrequesttypedef).
+1. See [:material-code-braces: GetEventStreamResponseTypeDef](./type_defs.md#geteventstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventStreamRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetEventStreamResponseTypeDef](./type_defs.md#geteventstreamresponsetypedef).
+parent.get_event_stream(**kwargs)
+```
 
-<a id="get\_export\_job"></a>
+1. See [:material-code-braces: GetEventStreamRequestRequestTypeDef](./type_defs.md#geteventstreamrequestrequesttypedef) 
 
-### get_export_job
+### get\_export\_job
 
-Retrieves information about the status and settings of a specific export job
-for an application.
+Retrieves information about the status and settings of a specific export job for
+an application.
 
-Type annotations for `boto3.client("pinpoint").get_export_job` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
 
-Boto3 documentation:
-[Pinpoint.Client.get_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_job)
+```python title="Method definition"
+def get_export_job(
+    self,
+    *,
+    ApplicationId: str,
+    JobId: str,
+) -> GetExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExportJobRequestRequestTypeDef](./type_defs.md#getexportjobrequestrequesttypedef).
+1. See [:material-code-braces: GetExportJobResponseTypeDef](./type_defs.md#getexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetExportJobRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JobId": ...,
+}
 
-Returns
-[GetExportJobResponseTypeDef](./type_defs.md#getexportjobresponsetypedef).
+parent.get_export_job(**kwargs)
+```
 
-<a id="get\_export\_jobs"></a>
+1. See [:material-code-braces: GetExportJobRequestRequestTypeDef](./type_defs.md#getexportjobrequestrequesttypedef) 
 
-### get_export_jobs
+### get\_export\_jobs
 
 Retrieves information about the status and settings of all the export jobs for
 an application.
 
-Type annotations for `boto3.client("pinpoint").get_export_jobs` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
 
-Boto3 documentation:
-[Pinpoint.Client.get_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_export_jobs)
+```python title="Method definition"
+def get_export_jobs(
+    self,
+    *,
+    ApplicationId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetExportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetExportJobsRequestRequestTypeDef](./type_defs.md#getexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetExportJobsResponseTypeDef](./type_defs.md#getexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetExportJobsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetExportJobsResponseTypeDef](./type_defs.md#getexportjobsresponsetypedef).
+parent.get_export_jobs(**kwargs)
+```
 
-<a id="get\_gcm\_channel"></a>
+1. See [:material-code-braces: GetExportJobsRequestRequestTypeDef](./type_defs.md#getexportjobsrequestrequesttypedef) 
 
-### get_gcm_channel
+### get\_gcm\_channel
 
 Retrieves information about the status and settings of the GCM channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_gcm_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_gcm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_gcm_channel)
+```python title="Method definition"
+def get_gcm_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetGcmChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGcmChannelRequestRequestTypeDef](./type_defs.md#getgcmchannelrequestrequesttypedef).
+1. See [:material-code-braces: GetGcmChannelResponseTypeDef](./type_defs.md#getgcmchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGcmChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetGcmChannelResponseTypeDef](./type_defs.md#getgcmchannelresponsetypedef).
+parent.get_gcm_channel(**kwargs)
+```
 
-<a id="get\_import\_job"></a>
+1. See [:material-code-braces: GetGcmChannelRequestRequestTypeDef](./type_defs.md#getgcmchannelrequestrequesttypedef) 
 
-### get_import_job
+### get\_import\_job
 
-Retrieves information about the status and settings of a specific import job
-for an application.
+Retrieves information about the status and settings of a specific import job for
+an application.
 
-Type annotations for `boto3.client("pinpoint").get_import_job` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
 
-Boto3 documentation:
-[Pinpoint.Client.get_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_job)
+```python title="Method definition"
+def get_import_job(
+    self,
+    *,
+    ApplicationId: str,
+    JobId: str,
+) -> GetImportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef).
+1. See [:material-code-braces: GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetImportJobRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JobId": ...,
+}
 
-Returns
-[GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
+parent.get_import_job(**kwargs)
+```
 
-<a id="get\_import\_jobs"></a>
+1. See [:material-code-braces: GetImportJobRequestRequestTypeDef](./type_defs.md#getimportjobrequestrequesttypedef) 
 
-### get_import_jobs
+### get\_import\_jobs
 
 Retrieves information about the status and settings of all the import jobs for
 an application.
 
-Type annotations for `boto3.client("pinpoint").get_import_jobs` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
 
-Boto3 documentation:
-[Pinpoint.Client.get_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_import_jobs)
+```python title="Method definition"
+def get_import_jobs(
+    self,
+    *,
+    ApplicationId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetImportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetImportJobsRequestRequestTypeDef](./type_defs.md#getimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetImportJobsResponseTypeDef](./type_defs.md#getimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetImportJobsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetImportJobsResponseTypeDef](./type_defs.md#getimportjobsresponsetypedef).
+parent.get_import_jobs(**kwargs)
+```
 
-<a id="get\_in\_app\_messages"></a>
+1. See [:material-code-braces: GetImportJobsRequestRequestTypeDef](./type_defs.md#getimportjobsrequestrequesttypedef) 
 
-### get_in_app_messages
+### get\_in\_app\_messages
 
 Retrieves the in-app messages targeted for the provided endpoint ID.
 
-Type annotations for `boto3.client("pinpoint").get_in_app_messages` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_in_app_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_messages)
 
-Boto3 documentation:
-[Pinpoint.Client.get_in_app_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_messages)
+```python title="Method definition"
+def get_in_app_messages(
+    self,
+    *,
+    ApplicationId: str,
+    EndpointId: str,
+) -> GetInAppMessagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInAppMessagesRequestRequestTypeDef](./type_defs.md#getinappmessagesrequestrequesttypedef).
+1. See [:material-code-braces: GetInAppMessagesResponseTypeDef](./type_defs.md#getinappmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInAppMessagesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EndpointId": ...,
+}
 
-Returns
-[GetInAppMessagesResponseTypeDef](./type_defs.md#getinappmessagesresponsetypedef).
+parent.get_in_app_messages(**kwargs)
+```
 
-<a id="get\_in\_app\_template"></a>
+1. See [:material-code-braces: GetInAppMessagesRequestRequestTypeDef](./type_defs.md#getinappmessagesrequestrequesttypedef) 
 
-### get_in_app_template
+### get\_in\_app\_template
 
 Retrieves the content and settings of a message template for messages sent
 through the in-app channel.
 
-Type annotations for `boto3.client("pinpoint").get_in_app_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_in_app_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_template)
 
-Boto3 documentation:
-[Pinpoint.Client.get_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_in_app_template)
+```python title="Method definition"
+def get_in_app_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> GetInAppTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInAppTemplateRequestRequestTypeDef](./type_defs.md#getinapptemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetInAppTemplateResponseTypeDef](./type_defs.md#getinapptemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInAppTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetInAppTemplateResponseTypeDef](./type_defs.md#getinapptemplateresponsetypedef).
+parent.get_in_app_template(**kwargs)
+```
 
-<a id="get\_journey"></a>
+1. See [:material-code-braces: GetInAppTemplateRequestRequestTypeDef](./type_defs.md#getinapptemplaterequestrequesttypedef) 
 
-### get_journey
+### get\_journey
 
 Retrieves information about the status, configuration, and other settings for a
 journey.
 
-Type annotations for `boto3.client("pinpoint").get_journey` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_journey` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
 
-Boto3 documentation:
-[Pinpoint.Client.get_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey)
+```python title="Method definition"
+def get_journey(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+) -> GetJourneyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJourneyRequestRequestTypeDef](./type_defs.md#getjourneyrequestrequesttypedef).
+1. See [:material-code-braces: GetJourneyResponseTypeDef](./type_defs.md#getjourneyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJourneyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+}
 
-Returns [GetJourneyResponseTypeDef](./type_defs.md#getjourneyresponsetypedef).
+parent.get_journey(**kwargs)
+```
 
-<a id="get\_journey\_date\_range\_kpi"></a>
+1. See [:material-code-braces: GetJourneyRequestRequestTypeDef](./type_defs.md#getjourneyrequestrequesttypedef) 
 
-### get_journey_date_range_kpi
+### get\_journey\_date\_range\_kpi
 
 Retrieves (queries) pre-aggregated data for a standard engagement metric that
 applies to a journey.
 
-Type annotations for `boto3.client("pinpoint").get_journey_date_range_kpi`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_journey_date_range_kpi` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
 
-Boto3 documentation:
-[Pinpoint.Client.get_journey_date_range_kpi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_date_range_kpi)
+```python title="Method definition"
+def get_journey_date_range_kpi(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+    KpiName: str,
+    EndTime: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    PageSize: str = ...,
+    StartTime: Union[datetime, str] = ...,
+) -> GetJourneyDateRangeKpiResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJourneyDateRangeKpiRequestRequestTypeDef](./type_defs.md#getjourneydaterangekpirequestrequesttypedef).
+1. See [:material-code-braces: GetJourneyDateRangeKpiResponseTypeDef](./type_defs.md#getjourneydaterangekpiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
-- `KpiName`: `str` *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `PageSize`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetJourneyDateRangeKpiRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+    "KpiName": ...,
+}
 
-Returns
-[GetJourneyDateRangeKpiResponseTypeDef](./type_defs.md#getjourneydaterangekpiresponsetypedef).
+parent.get_journey_date_range_kpi(**kwargs)
+```
 
-<a id="get\_journey\_execution\_activity\_metrics"></a>
+1. See [:material-code-braces: GetJourneyDateRangeKpiRequestRequestTypeDef](./type_defs.md#getjourneydaterangekpirequestrequesttypedef) 
 
-### get_journey_execution_activity_metrics
+### get\_journey\_execution\_activity\_metrics
 
 Retrieves (queries) pre-aggregated data for a standard execution metric that
 applies to a journey activity.
 
-Type annotations for
-`boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_journey_execution_activity_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
 
-Boto3 documentation:
-[Pinpoint.Client.get_journey_execution_activity_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_activity_metrics)
+```python title="Method definition"
+def get_journey_execution_activity_metrics(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyActivityId: str,
+    JourneyId: str,
+    NextToken: str = ...,
+    PageSize: str = ...,
+) -> GetJourneyExecutionActivityMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJourneyExecutionActivityMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsrequestrequesttypedef).
+1. See [:material-code-braces: GetJourneyExecutionActivityMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyActivityId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
-- `NextToken`: `str`
-- `PageSize`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetJourneyExecutionActivityMetricsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyActivityId": ...,
+    "JourneyId": ...,
+}
 
-Returns
-[GetJourneyExecutionActivityMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsresponsetypedef).
+parent.get_journey_execution_activity_metrics(**kwargs)
+```
 
-<a id="get\_journey\_execution\_metrics"></a>
+1. See [:material-code-braces: GetJourneyExecutionActivityMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionactivitymetricsrequestrequesttypedef) 
 
-### get_journey_execution_metrics
+### get\_journey\_execution\_metrics
 
 Retrieves (queries) pre-aggregated data for a standard execution metric that
 applies to a journey.
 
-Type annotations for `boto3.client("pinpoint").get_journey_execution_metrics`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_journey_execution_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
 
-Boto3 documentation:
-[Pinpoint.Client.get_journey_execution_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_journey_execution_metrics)
+```python title="Method definition"
+def get_journey_execution_metrics(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+    NextToken: str = ...,
+    PageSize: str = ...,
+) -> GetJourneyExecutionMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJourneyExecutionMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionmetricsrequestrequesttypedef).
+1. See [:material-code-braces: GetJourneyExecutionMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionmetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
-- `NextToken`: `str`
-- `PageSize`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetJourneyExecutionMetricsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+}
 
-Returns
-[GetJourneyExecutionMetricsResponseTypeDef](./type_defs.md#getjourneyexecutionmetricsresponsetypedef).
+parent.get_journey_execution_metrics(**kwargs)
+```
 
-<a id="get\_push\_template"></a>
+1. See [:material-code-braces: GetJourneyExecutionMetricsRequestRequestTypeDef](./type_defs.md#getjourneyexecutionmetricsrequestrequesttypedef) 
 
-### get_push_template
+### get\_push\_template
 
 Retrieves the content and settings of a message template for messages that are
 sent through a push notification channel.
 
-Type annotations for `boto3.client("pinpoint").get_push_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_push_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
 
-Boto3 documentation:
-[Pinpoint.Client.get_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_push_template)
+```python title="Method definition"
+def get_push_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> GetPushTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPushTemplateRequestRequestTypeDef](./type_defs.md#getpushtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetPushTemplateResponseTypeDef](./type_defs.md#getpushtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPushTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetPushTemplateResponseTypeDef](./type_defs.md#getpushtemplateresponsetypedef).
+parent.get_push_template(**kwargs)
+```
 
-<a id="get\_recommender\_configuration"></a>
+1. See [:material-code-braces: GetPushTemplateRequestRequestTypeDef](./type_defs.md#getpushtemplaterequestrequesttypedef) 
 
-### get_recommender_configuration
+### get\_recommender\_configuration
 
 Retrieves information about an Amazon Pinpoint configuration for a recommender
 model.
 
-Type annotations for `boto3.client("pinpoint").get_recommender_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_recommender_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
 
-Boto3 documentation:
-[Pinpoint.Client.get_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configuration)
+```python title="Method definition"
+def get_recommender_configuration(
+    self,
+    *,
+    RecommenderId: str,
+) -> GetRecommenderConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetRecommenderConfigurationResponseTypeDef](./type_defs.md#getrecommenderconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecommenderId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRecommenderConfigurationRequestRequestTypeDef = {  # (1)
+    "RecommenderId": ...,
+}
 
-Returns
-[GetRecommenderConfigurationResponseTypeDef](./type_defs.md#getrecommenderconfigurationresponsetypedef).
+parent.get_recommender_configuration(**kwargs)
+```
 
-<a id="get\_recommender\_configurations"></a>
+1. See [:material-code-braces: GetRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationrequestrequesttypedef) 
 
-### get_recommender_configurations
+### get\_recommender\_configurations
 
 Retrieves information about all the recommender model configurations that are
 associated with your Amazon Pinpoint account.
 
-Type annotations for `boto3.client("pinpoint").get_recommender_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_recommender_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
 
-Boto3 documentation:
-[Pinpoint.Client.get_recommender_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_recommender_configurations)
+```python title="Method definition"
+def get_recommender_configurations(
+    self,
+    *,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetRecommenderConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecommenderConfigurationsRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationsrequestrequesttypedef).
+1. See [:material-code-braces: GetRecommenderConfigurationsResponseTypeDef](./type_defs.md#getrecommenderconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRecommenderConfigurationsRequestRequestTypeDef = {  # (1)
+    "PageSize": ...,
+}
 
-Returns
-[GetRecommenderConfigurationsResponseTypeDef](./type_defs.md#getrecommenderconfigurationsresponsetypedef).
+parent.get_recommender_configurations(**kwargs)
+```
 
-<a id="get\_segment"></a>
+1. See [:material-code-braces: GetRecommenderConfigurationsRequestRequestTypeDef](./type_defs.md#getrecommenderconfigurationsrequestrequesttypedef) 
 
-### get_segment
+### get\_segment
 
-Retrieves information about the configuration, dimension, and other settings
-for a specific segment that's associated with an application.
+Retrieves information about the configuration, dimension, and other settings for
+a specific segment that's associated with an application.
 
-Type annotations for `boto3.client("pinpoint").get_segment` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment)
+```python title="Method definition"
+def get_segment(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+) -> GetSegmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentRequestRequestTypeDef](./type_defs.md#getsegmentrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSegmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+}
 
-Returns [GetSegmentResponseTypeDef](./type_defs.md#getsegmentresponsetypedef).
+parent.get_segment(**kwargs)
+```
 
-<a id="get\_segment\_export\_jobs"></a>
+1. See [:material-code-braces: GetSegmentRequestRequestTypeDef](./type_defs.md#getsegmentrequestrequesttypedef) 
 
-### get_segment_export_jobs
+### get\_segment\_export\_jobs
 
 Retrieves information about the status and settings of the export jobs for a
 segment.
 
-Type annotations for `boto3.client("pinpoint").get_segment_export_jobs` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segment_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segment_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_export_jobs)
+```python title="Method definition"
+def get_segment_export_jobs(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetSegmentExportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentExportJobsRequestRequestTypeDef](./type_defs.md#getsegmentexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentExportJobsResponseTypeDef](./type_defs.md#getsegmentexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSegmentExportJobsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+}
 
-Returns
-[GetSegmentExportJobsResponseTypeDef](./type_defs.md#getsegmentexportjobsresponsetypedef).
+parent.get_segment_export_jobs(**kwargs)
+```
 
-<a id="get\_segment\_import\_jobs"></a>
+1. See [:material-code-braces: GetSegmentExportJobsRequestRequestTypeDef](./type_defs.md#getsegmentexportjobsrequestrequesttypedef) 
 
-### get_segment_import_jobs
+### get\_segment\_import\_jobs
 
 Retrieves information about the status and settings of the import jobs for a
 segment.
 
-Type annotations for `boto3.client("pinpoint").get_segment_import_jobs` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segment_import_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segment_import_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_import_jobs)
+```python title="Method definition"
+def get_segment_import_jobs(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetSegmentImportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentImportJobsRequestRequestTypeDef](./type_defs.md#getsegmentimportjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentImportJobsResponseTypeDef](./type_defs.md#getsegmentimportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSegmentImportJobsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+}
 
-Returns
-[GetSegmentImportJobsResponseTypeDef](./type_defs.md#getsegmentimportjobsresponsetypedef).
+parent.get_segment_import_jobs(**kwargs)
+```
 
-<a id="get\_segment\_version"></a>
+1. See [:material-code-braces: GetSegmentImportJobsRequestRequestTypeDef](./type_defs.md#getsegmentimportjobsrequestrequesttypedef) 
 
-### get_segment_version
+### get\_segment\_version
 
-Retrieves information about the configuration, dimension, and other settings
-for a specific version of a segment that's associated with an application.
+Retrieves information about the configuration, dimension, and other settings for
+a specific version of a segment that's associated with an application.
 
-Type annotations for `boto3.client("pinpoint").get_segment_version` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segment_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segment_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_version)
+```python title="Method definition"
+def get_segment_version(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+    Version: str,
+) -> GetSegmentVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentVersionRequestRequestTypeDef](./type_defs.md#getsegmentversionrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentVersionResponseTypeDef](./type_defs.md#getsegmentversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
-- `Version`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSegmentVersionRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+    "Version": ...,
+}
 
-Returns
-[GetSegmentVersionResponseTypeDef](./type_defs.md#getsegmentversionresponsetypedef).
+parent.get_segment_version(**kwargs)
+```
 
-<a id="get\_segment\_versions"></a>
+1. See [:material-code-braces: GetSegmentVersionRequestRequestTypeDef](./type_defs.md#getsegmentversionrequestrequesttypedef) 
 
-### get_segment_versions
+### get\_segment\_versions
 
-Retrieves information about the configuration, dimension, and other settings
-for all the versions of a specific segment that's associated with an
-application.
+Retrieves information about the configuration, dimension, and other settings for
+all the versions of a specific segment that's associated with an application.
 
-Type annotations for `boto3.client("pinpoint").get_segment_versions` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segment_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segment_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segment_versions)
+```python title="Method definition"
+def get_segment_versions(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetSegmentVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentVersionsRequestRequestTypeDef](./type_defs.md#getsegmentversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentVersionsResponseTypeDef](./type_defs.md#getsegmentversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSegmentVersionsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+}
 
-Returns
-[GetSegmentVersionsResponseTypeDef](./type_defs.md#getsegmentversionsresponsetypedef).
+parent.get_segment_versions(**kwargs)
+```
 
-<a id="get\_segments"></a>
+1. See [:material-code-braces: GetSegmentVersionsRequestRequestTypeDef](./type_defs.md#getsegmentversionsrequestrequesttypedef) 
 
-### get_segments
+### get\_segments
 
-Retrieves information about the configuration, dimension, and other settings
-for all the segments that are associated with an application.
+Retrieves information about the configuration, dimension, and other settings for
+all the segments that are associated with an application.
 
-Type annotations for `boto3.client("pinpoint").get_segments` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_segments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
 
-Boto3 documentation:
-[Pinpoint.Client.get_segments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_segments)
+```python title="Method definition"
+def get_segments(
+    self,
+    *,
+    ApplicationId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> GetSegmentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSegmentsRequestRequestTypeDef](./type_defs.md#getsegmentsrequestrequesttypedef).
+1. See [:material-code-braces: GetSegmentsResponseTypeDef](./type_defs.md#getsegmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSegmentsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetSegmentsResponseTypeDef](./type_defs.md#getsegmentsresponsetypedef).
+parent.get_segments(**kwargs)
+```
 
-<a id="get\_sms\_channel"></a>
+1. See [:material-code-braces: GetSegmentsRequestRequestTypeDef](./type_defs.md#getsegmentsrequestrequesttypedef) 
 
-### get_sms_channel
+### get\_sms\_channel
 
 Retrieves information about the status and settings of the SMS channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_sms_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_sms_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_channel)
+```python title="Method definition"
+def get_sms_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetSmsChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSmsChannelRequestRequestTypeDef](./type_defs.md#getsmschannelrequestrequesttypedef).
+1. See [:material-code-braces: GetSmsChannelResponseTypeDef](./type_defs.md#getsmschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSmsChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetSmsChannelResponseTypeDef](./type_defs.md#getsmschannelresponsetypedef).
+parent.get_sms_channel(**kwargs)
+```
 
-<a id="get\_sms\_template"></a>
+1. See [:material-code-braces: GetSmsChannelRequestRequestTypeDef](./type_defs.md#getsmschannelrequestrequesttypedef) 
 
-### get_sms_template
+### get\_sms\_template
 
 Retrieves the content and settings of a message template for messages that are
 sent through the SMS channel.
 
-Type annotations for `boto3.client("pinpoint").get_sms_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_sms_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
 
-Boto3 documentation:
-[Pinpoint.Client.get_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_sms_template)
+```python title="Method definition"
+def get_sms_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> GetSmsTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSmsTemplateRequestRequestTypeDef](./type_defs.md#getsmstemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetSmsTemplateResponseTypeDef](./type_defs.md#getsmstemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSmsTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetSmsTemplateResponseTypeDef](./type_defs.md#getsmstemplateresponsetypedef).
+parent.get_sms_template(**kwargs)
+```
 
-<a id="get\_user\_endpoints"></a>
+1. See [:material-code-braces: GetSmsTemplateRequestRequestTypeDef](./type_defs.md#getsmstemplaterequestrequesttypedef) 
 
-### get_user_endpoints
+### get\_user\_endpoints
 
 Retrieves information about all the endpoints that are associated with a
 specific user ID.
 
-Type annotations for `boto3.client("pinpoint").get_user_endpoints` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_user_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
 
-Boto3 documentation:
-[Pinpoint.Client.get_user_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_user_endpoints)
+```python title="Method definition"
+def get_user_endpoints(
+    self,
+    *,
+    ApplicationId: str,
+    UserId: str,
+) -> GetUserEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUserEndpointsRequestRequestTypeDef](./type_defs.md#getuserendpointsrequestrequesttypedef).
+1. See [:material-code-braces: GetUserEndpointsResponseTypeDef](./type_defs.md#getuserendpointsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUserEndpointsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "UserId": ...,
+}
 
-Returns
-[GetUserEndpointsResponseTypeDef](./type_defs.md#getuserendpointsresponsetypedef).
+parent.get_user_endpoints(**kwargs)
+```
 
-<a id="get\_voice\_channel"></a>
+1. See [:material-code-braces: GetUserEndpointsRequestRequestTypeDef](./type_defs.md#getuserendpointsrequestrequesttypedef) 
 
-### get_voice_channel
+### get\_voice\_channel
 
 Retrieves information about the status and settings of the voice channel for an
 application.
 
-Type annotations for `boto3.client("pinpoint").get_voice_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_voice_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.get_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_channel)
+```python title="Method definition"
+def get_voice_channel(
+    self,
+    *,
+    ApplicationId: str,
+) -> GetVoiceChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceChannelRequestRequestTypeDef](./type_defs.md#getvoicechannelrequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceChannelResponseTypeDef](./type_defs.md#getvoicechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVoiceChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[GetVoiceChannelResponseTypeDef](./type_defs.md#getvoicechannelresponsetypedef).
+parent.get_voice_channel(**kwargs)
+```
 
-<a id="get\_voice\_template"></a>
+1. See [:material-code-braces: GetVoiceChannelRequestRequestTypeDef](./type_defs.md#getvoicechannelrequestrequesttypedef) 
 
-### get_voice_template
+### get\_voice\_template
 
 Retrieves the content and settings of a message template for messages that are
 sent through the voice channel.
 
-Type annotations for `boto3.client("pinpoint").get_voice_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").get_voice_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
 
-Boto3 documentation:
-[Pinpoint.Client.get_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.get_voice_template)
+```python title="Method definition"
+def get_voice_template(
+    self,
+    *,
+    TemplateName: str,
+    Version: str = ...,
+) -> GetVoiceTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVoiceTemplateRequestRequestTypeDef](./type_defs.md#getvoicetemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetVoiceTemplateResponseTypeDef](./type_defs.md#getvoicetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetVoiceTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+}
 
-Returns
-[GetVoiceTemplateResponseTypeDef](./type_defs.md#getvoicetemplateresponsetypedef).
+parent.get_voice_template(**kwargs)
+```
 
-<a id="list\_journeys"></a>
+1. See [:material-code-braces: GetVoiceTemplateRequestRequestTypeDef](./type_defs.md#getvoicetemplaterequestrequesttypedef) 
 
-### list_journeys
+### list\_journeys
 
 Retrieves information about the status, configuration, and other settings for
 all the journeys that are associated with an application.
 
-Type annotations for `boto3.client("pinpoint").list_journeys` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").list_journeys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
 
-Boto3 documentation:
-[Pinpoint.Client.list_journeys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_journeys)
+```python title="Method definition"
+def list_journeys(
+    self,
+    *,
+    ApplicationId: str,
+    PageSize: str = ...,
+    Token: str = ...,
+) -> ListJourneysResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJourneysRequestRequestTypeDef](./type_defs.md#listjourneysrequestrequesttypedef).
+1. See [:material-code-braces: ListJourneysResponseTypeDef](./type_defs.md#listjourneysresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `PageSize`: `str`
-- `Token`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJourneysRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[ListJourneysResponseTypeDef](./type_defs.md#listjourneysresponsetypedef).
+parent.list_journeys(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListJourneysRequestRequestTypeDef](./type_defs.md#listjourneysrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves all the tags (keys and values) that are associated with an
 application, campaign, message template, or segment.
 
-Type annotations for `boto3.client("pinpoint").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Pinpoint.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_template\_versions"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_template_versions
+### list\_template\_versions
 
 Retrieves information about all the versions of a specific message template.
 
-Type annotations for `boto3.client("pinpoint").list_template_versions` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").list_template_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
 
-Boto3 documentation:
-[Pinpoint.Client.list_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_template_versions)
+```python title="Method definition"
+def list_template_versions(
+    self,
+    *,
+    TemplateName: str,
+    TemplateType: str,
+    NextToken: str = ...,
+    PageSize: str = ...,
+) -> ListTemplateVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `TemplateType`: `str` *(required)*
-- `NextToken`: `str`
-- `PageSize`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTemplateVersionsRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "TemplateType": ...,
+}
 
-Returns
-[ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
+parent.list_template_versions(**kwargs)
+```
 
-<a id="list\_templates"></a>
+1. See [:material-code-braces: ListTemplateVersionsRequestRequestTypeDef](./type_defs.md#listtemplateversionsrequestrequesttypedef) 
 
-### list_templates
+### list\_templates
 
 Retrieves information about all the message templates that are associated with
 your Amazon Pinpoint account.
 
-Type annotations for `boto3.client("pinpoint").list_templates` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").list_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
 
-Boto3 documentation:
-[Pinpoint.Client.list_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.list_templates)
+```python title="Method definition"
+def list_templates(
+    self,
+    *,
+    NextToken: str = ...,
+    PageSize: str = ...,
+    Prefix: str = ...,
+    TemplateType: str = ...,
+) -> ListTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `PageSize`: `str`
-- `Prefix`: `str`
-- `TemplateType`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTemplatesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
+parent.list_templates(**kwargs)
+```
 
-<a id="phone\_number\_validate"></a>
+1. See [:material-code-braces: ListTemplatesRequestRequestTypeDef](./type_defs.md#listtemplatesrequestrequesttypedef) 
 
-### phone_number_validate
+### phone\_number\_validate
 
 Retrieves information about a phone number.
 
-Type annotations for `boto3.client("pinpoint").phone_number_validate` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").phone_number_validate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
 
-Boto3 documentation:
-[Pinpoint.Client.phone_number_validate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.phone_number_validate)
+```python title="Method definition"
+def phone_number_validate(
+    self,
+    *,
+    NumberValidateRequest: NumberValidateRequestTypeDef,  # (1)
+) -> PhoneNumberValidateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PhoneNumberValidateRequestRequestTypeDef](./type_defs.md#phonenumbervalidaterequestrequesttypedef).
+1. See [:material-code-braces: NumberValidateRequestTypeDef](./type_defs.md#numbervalidaterequesttypedef) 
+2. See [:material-code-braces: PhoneNumberValidateResponseTypeDef](./type_defs.md#phonenumbervalidateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NumberValidateRequest`:
-  [NumberValidateRequestTypeDef](./type_defs.md#numbervalidaterequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PhoneNumberValidateRequestRequestTypeDef = {  # (1)
+    "NumberValidateRequest": ...,
+}
 
-Returns
-[PhoneNumberValidateResponseTypeDef](./type_defs.md#phonenumbervalidateresponsetypedef).
+parent.phone_number_validate(**kwargs)
+```
 
-<a id="put\_event\_stream"></a>
+1. See [:material-code-braces: PhoneNumberValidateRequestRequestTypeDef](./type_defs.md#phonenumbervalidaterequestrequesttypedef) 
 
-### put_event_stream
+### put\_event\_stream
 
 Creates a new event stream for an application or updates the settings of an
 existing event stream for an application.
 
-Type annotations for `boto3.client("pinpoint").put_event_stream` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").put_event_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
 
-Boto3 documentation:
-[Pinpoint.Client.put_event_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_event_stream)
+```python title="Method definition"
+def put_event_stream(
+    self,
+    *,
+    ApplicationId: str,
+    WriteEventStream: WriteEventStreamTypeDef,  # (1)
+) -> PutEventStreamResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutEventStreamRequestRequestTypeDef](./type_defs.md#puteventstreamrequestrequesttypedef).
+1. See [:material-code-braces: WriteEventStreamTypeDef](./type_defs.md#writeeventstreamtypedef) 
+2. See [:material-code-braces: PutEventStreamResponseTypeDef](./type_defs.md#puteventstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `WriteEventStream`:
-  [WriteEventStreamTypeDef](./type_defs.md#writeeventstreamtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutEventStreamRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "WriteEventStream": ...,
+}
 
-Returns
-[PutEventStreamResponseTypeDef](./type_defs.md#puteventstreamresponsetypedef).
+parent.put_event_stream(**kwargs)
+```
 
-<a id="put\_events"></a>
+1. See [:material-code-braces: PutEventStreamRequestRequestTypeDef](./type_defs.md#puteventstreamrequestrequesttypedef) 
 
-### put_events
+### put\_events
 
-Creates a new event to record for endpoints, or creates or updates endpoint
-data that existing events are associated with.
+Creates a new event to record for endpoints, or creates or updates endpoint data
+that existing events are associated with.
 
-Type annotations for `boto3.client("pinpoint").put_events` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").put_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events)
 
-Boto3 documentation:
-[Pinpoint.Client.put_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.put_events)
+```python title="Method definition"
+def put_events(
+    self,
+    *,
+    ApplicationId: str,
+    EventsRequest: EventsRequestTypeDef,  # (1)
+) -> PutEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef).
+1. See [:material-code-braces: EventsRequestTypeDef](./type_defs.md#eventsrequesttypedef) 
+2. See [:material-code-braces: PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EventsRequest`: [EventsRequestTypeDef](./type_defs.md#eventsrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutEventsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EventsRequest": ...,
+}
 
-Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
+parent.put_events(**kwargs)
+```
 
-<a id="remove\_attributes"></a>
+1. See [:material-code-braces: PutEventsRequestRequestTypeDef](./type_defs.md#puteventsrequestrequesttypedef) 
 
-### remove_attributes
+### remove\_attributes
 
 Removes one or more attributes, of the same attribute type, from all the
 endpoints that are associated with an application.
 
-Type annotations for `boto3.client("pinpoint").remove_attributes` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").remove_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
 
-Boto3 documentation:
-[Pinpoint.Client.remove_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.remove_attributes)
+```python title="Method definition"
+def remove_attributes(
+    self,
+    *,
+    ApplicationId: str,
+    AttributeType: str,
+    UpdateAttributesRequest: UpdateAttributesRequestTypeDef,  # (1)
+) -> RemoveAttributesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RemoveAttributesRequestRequestTypeDef](./type_defs.md#removeattributesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAttributesRequestTypeDef](./type_defs.md#updateattributesrequesttypedef) 
+2. See [:material-code-braces: RemoveAttributesResponseTypeDef](./type_defs.md#removeattributesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `AttributeType`: `str` *(required)*
-- `UpdateAttributesRequest`:
-  [UpdateAttributesRequestTypeDef](./type_defs.md#updateattributesrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAttributesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "AttributeType": ...,
+    "UpdateAttributesRequest": ...,
+}
 
-Returns
-[RemoveAttributesResponseTypeDef](./type_defs.md#removeattributesresponsetypedef).
+parent.remove_attributes(**kwargs)
+```
 
-<a id="send\_messages"></a>
+1. See [:material-code-braces: RemoveAttributesRequestRequestTypeDef](./type_defs.md#removeattributesrequestrequesttypedef) 
 
-### send_messages
+### send\_messages
 
 Creates and sends a direct message.
 
-Type annotations for `boto3.client("pinpoint").send_messages` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").send_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
 
-Boto3 documentation:
-[Pinpoint.Client.send_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_messages)
+```python title="Method definition"
+def send_messages(
+    self,
+    *,
+    ApplicationId: str,
+    MessageRequest: MessageRequestTypeDef,  # (1)
+) -> SendMessagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SendMessagesRequestRequestTypeDef](./type_defs.md#sendmessagesrequestrequesttypedef).
+1. See [:material-code-braces: MessageRequestTypeDef](./type_defs.md#messagerequesttypedef) 
+2. See [:material-code-braces: SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `MessageRequest`:
-  [MessageRequestTypeDef](./type_defs.md#messagerequesttypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendMessagesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "MessageRequest": ...,
+}
 
-Returns
-[SendMessagesResponseTypeDef](./type_defs.md#sendmessagesresponsetypedef).
+parent.send_messages(**kwargs)
+```
 
-<a id="send\_otp\_message"></a>
+1. See [:material-code-braces: SendMessagesRequestRequestTypeDef](./type_defs.md#sendmessagesrequestrequesttypedef) 
 
-### send_otp_message
+### send\_otp\_message
 
-Send an OTP message See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/SendOTPMessage).
+Send an OTP message See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/SendOTPMessage).
 
-Type annotations for `boto3.client("pinpoint").send_otp_message` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").send_otp_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_otp_message)
 
-Boto3 documentation:
-[Pinpoint.Client.send_otp_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_otp_message)
+```python title="Method definition"
+def send_otp_message(
+    self,
+    *,
+    ApplicationId: str,
+    SendOTPMessageRequestParameters: SendOTPMessageRequestParametersTypeDef,  # (1)
+) -> SendOTPMessageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SendOTPMessageRequestRequestTypeDef](./type_defs.md#sendotpmessagerequestrequesttypedef).
+1. See [:material-code-braces: SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef) 
+2. See [:material-code-braces: SendOTPMessageResponseTypeDef](./type_defs.md#sendotpmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SendOTPMessageRequestParameters`:
-  [SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendOTPMessageRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SendOTPMessageRequestParameters": ...,
+}
 
-Returns
-[SendOTPMessageResponseTypeDef](./type_defs.md#sendotpmessageresponsetypedef).
+parent.send_otp_message(**kwargs)
+```
 
-<a id="send\_users\_messages"></a>
+1. See [:material-code-braces: SendOTPMessageRequestRequestTypeDef](./type_defs.md#sendotpmessagerequestrequesttypedef) 
 
-### send_users_messages
+### send\_users\_messages
 
 Creates and sends a message to a list of users.
 
-Type annotations for `boto3.client("pinpoint").send_users_messages` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").send_users_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
 
-Boto3 documentation:
-[Pinpoint.Client.send_users_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.send_users_messages)
+```python title="Method definition"
+def send_users_messages(
+    self,
+    *,
+    ApplicationId: str,
+    SendUsersMessageRequest: SendUsersMessageRequestTypeDef,  # (1)
+) -> SendUsersMessagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SendUsersMessagesRequestRequestTypeDef](./type_defs.md#sendusersmessagesrequestrequesttypedef).
+1. See [:material-code-braces: SendUsersMessageRequestTypeDef](./type_defs.md#sendusersmessagerequesttypedef) 
+2. See [:material-code-braces: SendUsersMessagesResponseTypeDef](./type_defs.md#sendusersmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SendUsersMessageRequest`:
-  [SendUsersMessageRequestTypeDef](./type_defs.md#sendusersmessagerequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SendUsersMessagesRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SendUsersMessageRequest": ...,
+}
 
-Returns
-[SendUsersMessagesResponseTypeDef](./type_defs.md#sendusersmessagesresponsetypedef).
+parent.send_users_messages(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SendUsersMessagesRequestRequestTypeDef](./type_defs.md#sendusersmessagesrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags (keys and values) to an application, campaign, message
 template, or segment.
 
-Type annotations for `boto3.client("pinpoint").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
 
-Boto3 documentation:
-[Pinpoint.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagsModel: TagsModelTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagsModelTypeDef](./type_defs.md#tagsmodeltypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagsModel`: [TagsModelTypeDef](./type_defs.md#tagsmodeltypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagsModel": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Removes one or more tags (keys and values) from an application, campaign,
 message template, or segment.
 
-Type annotations for `boto3.client("pinpoint").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
 
-Boto3 documentation:
-[Pinpoint.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_adm\_channel"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_adm_channel
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-Enables the ADM channel for an application or updates the status and settings
-of the ADM channel for an application.
+### update\_adm\_channel
 
-Type annotations for `boto3.client("pinpoint").update_adm_channel` method.
+Enables the ADM channel for an application or updates the status and settings of
+the ADM channel for an application.
 
-Boto3 documentation:
-[Pinpoint.Client.update_adm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_adm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_adm_channel)
 
-Arguments mapping described in
-[UpdateAdmChannelRequestRequestTypeDef](./type_defs.md#updateadmchannelrequestrequesttypedef).
+```python title="Method definition"
+def update_adm_channel(
+    self,
+    *,
+    ADMChannelRequest: ADMChannelRequestTypeDef,  # (1)
+    ApplicationId: str,
+) -> UpdateAdmChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ADMChannelRequestTypeDef](./type_defs.md#admchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateAdmChannelResponseTypeDef](./type_defs.md#updateadmchannelresponsetypedef) 
 
-- `ADMChannelRequest`:
-  [ADMChannelRequestTypeDef](./type_defs.md#admchannelrequesttypedef)
-  *(required)*
-- `ApplicationId`: `str` *(required)*
 
-Returns
-[UpdateAdmChannelResponseTypeDef](./type_defs.md#updateadmchannelresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateAdmChannelRequestRequestTypeDef = {  # (1)
+    "ADMChannelRequest": ...,
+    "ApplicationId": ...,
+}
 
-<a id="update\_apns\_channel"></a>
+parent.update_adm_channel(**kwargs)
+```
 
-### update_apns_channel
+1. See [:material-code-braces: UpdateAdmChannelRequestRequestTypeDef](./type_defs.md#updateadmchannelrequestrequesttypedef) 
+
+### update\_apns\_channel
 
 Enables the APNs channel for an application or updates the status and settings
 of the APNs channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_apns_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_apns_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_apns_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_channel)
+```python title="Method definition"
+def update_apns_channel(
+    self,
+    *,
+    APNSChannelRequest: APNSChannelRequestTypeDef,  # (1)
+    ApplicationId: str,
+) -> UpdateApnsChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApnsChannelRequestRequestTypeDef](./type_defs.md#updateapnschannelrequestrequesttypedef).
+1. See [:material-code-braces: APNSChannelRequestTypeDef](./type_defs.md#apnschannelrequesttypedef) 
+2. See [:material-code-braces: UpdateApnsChannelResponseTypeDef](./type_defs.md#updateapnschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `APNSChannelRequest`:
-  [APNSChannelRequestTypeDef](./type_defs.md#apnschannelrequesttypedef)
-  *(required)*
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApnsChannelRequestRequestTypeDef = {  # (1)
+    "APNSChannelRequest": ...,
+    "ApplicationId": ...,
+}
 
-Returns
-[UpdateApnsChannelResponseTypeDef](./type_defs.md#updateapnschannelresponsetypedef).
+parent.update_apns_channel(**kwargs)
+```
 
-<a id="update\_apns\_sandbox\_channel"></a>
+1. See [:material-code-braces: UpdateApnsChannelRequestRequestTypeDef](./type_defs.md#updateapnschannelrequestrequesttypedef) 
 
-### update_apns_sandbox_channel
+### update\_apns\_sandbox\_channel
 
 Enables the APNs sandbox channel for an application or updates the status and
 settings of the APNs sandbox channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_apns_sandbox_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_apns_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_apns_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_sandbox_channel)
+```python title="Method definition"
+def update_apns_sandbox_channel(
+    self,
+    *,
+    APNSSandboxChannelRequest: APNSSandboxChannelRequestTypeDef,  # (1)
+    ApplicationId: str,
+) -> UpdateApnsSandboxChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnssandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: APNSSandboxChannelRequestTypeDef](./type_defs.md#apnssandboxchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateApnsSandboxChannelResponseTypeDef](./type_defs.md#updateapnssandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `APNSSandboxChannelRequest`:
-  [APNSSandboxChannelRequestTypeDef](./type_defs.md#apnssandboxchannelrequesttypedef)
-  *(required)*
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApnsSandboxChannelRequestRequestTypeDef = {  # (1)
+    "APNSSandboxChannelRequest": ...,
+    "ApplicationId": ...,
+}
 
-Returns
-[UpdateApnsSandboxChannelResponseTypeDef](./type_defs.md#updateapnssandboxchannelresponsetypedef).
+parent.update_apns_sandbox_channel(**kwargs)
+```
 
-<a id="update\_apns\_voip\_channel"></a>
+1. See [:material-code-braces: UpdateApnsSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnssandboxchannelrequestrequesttypedef) 
 
-### update_apns_voip_channel
+### update\_apns\_voip\_channel
 
 Enables the APNs VoIP channel for an application or updates the status and
 settings of the APNs VoIP channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_apns_voip_channel`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_apns_voip_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_apns_voip_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_channel)
+```python title="Method definition"
+def update_apns_voip_channel(
+    self,
+    *,
+    APNSVoipChannelRequest: APNSVoipChannelRequestTypeDef,  # (1)
+    ApplicationId: str,
+) -> UpdateApnsVoipChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApnsVoipChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipchannelrequestrequesttypedef).
+1. See [:material-code-braces: APNSVoipChannelRequestTypeDef](./type_defs.md#apnsvoipchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateApnsVoipChannelResponseTypeDef](./type_defs.md#updateapnsvoipchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `APNSVoipChannelRequest`:
-  [APNSVoipChannelRequestTypeDef](./type_defs.md#apnsvoipchannelrequesttypedef)
-  *(required)*
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApnsVoipChannelRequestRequestTypeDef = {  # (1)
+    "APNSVoipChannelRequest": ...,
+    "ApplicationId": ...,
+}
 
-Returns
-[UpdateApnsVoipChannelResponseTypeDef](./type_defs.md#updateapnsvoipchannelresponsetypedef).
+parent.update_apns_voip_channel(**kwargs)
+```
 
-<a id="update\_apns\_voip\_sandbox\_channel"></a>
+1. See [:material-code-braces: UpdateApnsVoipChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipchannelrequestrequesttypedef) 
 
-### update_apns_voip_sandbox_channel
+### update\_apns\_voip\_sandbox\_channel
 
 Enables the APNs VoIP sandbox channel for an application or updates the status
 and settings of the APNs VoIP sandbox channel for an application.
 
-Type annotations for
-`boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_apns_voip_sandbox_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_apns_voip_sandbox_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_apns_voip_sandbox_channel)
+```python title="Method definition"
+def update_apns_voip_sandbox_channel(
+    self,
+    *,
+    APNSVoipSandboxChannelRequest: APNSVoipSandboxChannelRequestTypeDef,  # (1)
+    ApplicationId: str,
+) -> UpdateApnsVoipSandboxChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipsandboxchannelrequestrequesttypedef).
+1. See [:material-code-braces: APNSVoipSandboxChannelRequestTypeDef](./type_defs.md#apnsvoipsandboxchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#updateapnsvoipsandboxchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `APNSVoipSandboxChannelRequest`:
-  [APNSVoipSandboxChannelRequestTypeDef](./type_defs.md#apnsvoipsandboxchannelrequesttypedef)
-  *(required)*
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApnsVoipSandboxChannelRequestRequestTypeDef = {  # (1)
+    "APNSVoipSandboxChannelRequest": ...,
+    "ApplicationId": ...,
+}
 
-Returns
-[UpdateApnsVoipSandboxChannelResponseTypeDef](./type_defs.md#updateapnsvoipsandboxchannelresponsetypedef).
+parent.update_apns_voip_sandbox_channel(**kwargs)
+```
 
-<a id="update\_application\_settings"></a>
+1. See [:material-code-braces: UpdateApnsVoipSandboxChannelRequestRequestTypeDef](./type_defs.md#updateapnsvoipsandboxchannelrequestrequesttypedef) 
 
-### update_application_settings
+### update\_application\_settings
 
 Updates the settings for an application.
 
-Type annotations for `boto3.client("pinpoint").update_application_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_application_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
 
-Boto3 documentation:
-[Pinpoint.Client.update_application_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_application_settings)
+```python title="Method definition"
+def update_application_settings(
+    self,
+    *,
+    ApplicationId: str,
+    WriteApplicationSettingsRequest: WriteApplicationSettingsRequestTypeDef,  # (1)
+) -> UpdateApplicationSettingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationSettingsRequestRequestTypeDef](./type_defs.md#updateapplicationsettingsrequestrequesttypedef).
+1. See [:material-code-braces: WriteApplicationSettingsRequestTypeDef](./type_defs.md#writeapplicationsettingsrequesttypedef) 
+2. See [:material-code-braces: UpdateApplicationSettingsResponseTypeDef](./type_defs.md#updateapplicationsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `WriteApplicationSettingsRequest`:
-  [WriteApplicationSettingsRequestTypeDef](./type_defs.md#writeapplicationsettingsrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationSettingsRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "WriteApplicationSettingsRequest": ...,
+}
 
-Returns
-[UpdateApplicationSettingsResponseTypeDef](./type_defs.md#updateapplicationsettingsresponsetypedef).
+parent.update_application_settings(**kwargs)
+```
 
-<a id="update\_baidu\_channel"></a>
+1. See [:material-code-braces: UpdateApplicationSettingsRequestRequestTypeDef](./type_defs.md#updateapplicationsettingsrequestrequesttypedef) 
 
-### update_baidu_channel
+### update\_baidu\_channel
 
 Enables the Baidu channel for an application or updates the status and settings
 of the Baidu channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_baidu_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_baidu_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_baidu_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_baidu_channel)
+```python title="Method definition"
+def update_baidu_channel(
+    self,
+    *,
+    ApplicationId: str,
+    BaiduChannelRequest: BaiduChannelRequestTypeDef,  # (1)
+) -> UpdateBaiduChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBaiduChannelRequestRequestTypeDef](./type_defs.md#updatebaiduchannelrequestrequesttypedef).
+1. See [:material-code-braces: BaiduChannelRequestTypeDef](./type_defs.md#baiduchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateBaiduChannelResponseTypeDef](./type_defs.md#updatebaiduchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `BaiduChannelRequest`:
-  [BaiduChannelRequestTypeDef](./type_defs.md#baiduchannelrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBaiduChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "BaiduChannelRequest": ...,
+}
 
-Returns
-[UpdateBaiduChannelResponseTypeDef](./type_defs.md#updatebaiduchannelresponsetypedef).
+parent.update_baidu_channel(**kwargs)
+```
 
-<a id="update\_campaign"></a>
+1. See [:material-code-braces: UpdateBaiduChannelRequestRequestTypeDef](./type_defs.md#updatebaiduchannelrequestrequesttypedef) 
 
-### update_campaign
+### update\_campaign
 
 Updates the configuration and other settings for a campaign.
 
-Type annotations for `boto3.client("pinpoint").update_campaign` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_campaign` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
 
-Boto3 documentation:
-[Pinpoint.Client.update_campaign](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_campaign)
+```python title="Method definition"
+def update_campaign(
+    self,
+    *,
+    ApplicationId: str,
+    CampaignId: str,
+    WriteCampaignRequest: WriteCampaignRequestTypeDef,  # (1)
+) -> UpdateCampaignResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef).
+1. See [:material-code-braces: WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef) 
+2. See [:material-code-braces: UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `CampaignId`: `str` *(required)*
-- `WriteCampaignRequest`:
-  [WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCampaignRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "CampaignId": ...,
+    "WriteCampaignRequest": ...,
+}
 
-Returns
-[UpdateCampaignResponseTypeDef](./type_defs.md#updatecampaignresponsetypedef).
+parent.update_campaign(**kwargs)
+```
 
-<a id="update\_email\_channel"></a>
+1. See [:material-code-braces: UpdateCampaignRequestRequestTypeDef](./type_defs.md#updatecampaignrequestrequesttypedef) 
 
-### update_email_channel
+### update\_email\_channel
 
 Enables the email channel for an application or updates the status and settings
 of the email channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_email_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_email_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_email_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_channel)
+```python title="Method definition"
+def update_email_channel(
+    self,
+    *,
+    ApplicationId: str,
+    EmailChannelRequest: EmailChannelRequestTypeDef,  # (1)
+) -> UpdateEmailChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEmailChannelRequestRequestTypeDef](./type_defs.md#updateemailchannelrequestrequesttypedef).
+1. See [:material-code-braces: EmailChannelRequestTypeDef](./type_defs.md#emailchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateEmailChannelResponseTypeDef](./type_defs.md#updateemailchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EmailChannelRequest`:
-  [EmailChannelRequestTypeDef](./type_defs.md#emailchannelrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEmailChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EmailChannelRequest": ...,
+}
 
-Returns
-[UpdateEmailChannelResponseTypeDef](./type_defs.md#updateemailchannelresponsetypedef).
+parent.update_email_channel(**kwargs)
+```
 
-<a id="update\_email\_template"></a>
+1. See [:material-code-braces: UpdateEmailChannelRequestRequestTypeDef](./type_defs.md#updateemailchannelrequestrequesttypedef) 
 
-### update_email_template
+### update\_email\_template
 
 Updates an existing message template for messages that are sent through the
 email channel.
 
-Type annotations for `boto3.client("pinpoint").update_email_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_email_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
 
-Boto3 documentation:
-[Pinpoint.Client.update_email_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_email_template)
+```python title="Method definition"
+def update_email_template(
+    self,
+    *,
+    EmailTemplateRequest: EmailTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+    CreateNewVersion: bool = ...,
+    Version: str = ...,
+) -> UpdateEmailTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef).
+1. See [:material-code-braces: EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef) 
+2. See [:material-code-braces: UpdateEmailTemplateResponseTypeDef](./type_defs.md#updateemailtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EmailTemplateRequest`:
-  [EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
-- `CreateNewVersion`: `bool`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateEmailTemplateRequestRequestTypeDef = {  # (1)
+    "EmailTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[UpdateEmailTemplateResponseTypeDef](./type_defs.md#updateemailtemplateresponsetypedef).
+parent.update_email_template(**kwargs)
+```
 
-<a id="update\_endpoint"></a>
+1. See [:material-code-braces: UpdateEmailTemplateRequestRequestTypeDef](./type_defs.md#updateemailtemplaterequestrequesttypedef) 
 
-### update_endpoint
+### update\_endpoint
 
-Creates a new endpoint for an application or updates the settings and
-attributes of an existing endpoint for an application.
+Creates a new endpoint for an application or updates the settings and attributes
+of an existing endpoint for an application.
 
-Type annotations for `boto3.client("pinpoint").update_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
 
-Boto3 documentation:
-[Pinpoint.Client.update_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoint)
+```python title="Method definition"
+def update_endpoint(
+    self,
+    *,
+    ApplicationId: str,
+    EndpointId: str,
+    EndpointRequest: EndpointRequestTypeDef,  # (1)
+) -> UpdateEndpointResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef).
+1. See [:material-code-braces: EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef) 
+2. See [:material-code-braces: UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EndpointId`: `str` *(required)*
-- `EndpointRequest`:
-  [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEndpointRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EndpointId": ...,
+    "EndpointRequest": ...,
+}
 
-Returns
-[UpdateEndpointResponseTypeDef](./type_defs.md#updateendpointresponsetypedef).
+parent.update_endpoint(**kwargs)
+```
 
-<a id="update\_endpoints\_batch"></a>
+1. See [:material-code-braces: UpdateEndpointRequestRequestTypeDef](./type_defs.md#updateendpointrequestrequesttypedef) 
 
-### update_endpoints_batch
+### update\_endpoints\_batch
 
 Creates a new batch of endpoints for an application or updates the settings and
 attributes of a batch of existing endpoints for an application.
 
-Type annotations for `boto3.client("pinpoint").update_endpoints_batch` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_endpoints_batch` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
 
-Boto3 documentation:
-[Pinpoint.Client.update_endpoints_batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_endpoints_batch)
+```python title="Method definition"
+def update_endpoints_batch(
+    self,
+    *,
+    ApplicationId: str,
+    EndpointBatchRequest: EndpointBatchRequestTypeDef,  # (1)
+) -> UpdateEndpointsBatchResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEndpointsBatchRequestRequestTypeDef](./type_defs.md#updateendpointsbatchrequestrequesttypedef).
+1. See [:material-code-braces: EndpointBatchRequestTypeDef](./type_defs.md#endpointbatchrequesttypedef) 
+2. See [:material-code-braces: UpdateEndpointsBatchResponseTypeDef](./type_defs.md#updateendpointsbatchresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `EndpointBatchRequest`:
-  [EndpointBatchRequestTypeDef](./type_defs.md#endpointbatchrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateEndpointsBatchRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "EndpointBatchRequest": ...,
+}
 
-Returns
-[UpdateEndpointsBatchResponseTypeDef](./type_defs.md#updateendpointsbatchresponsetypedef).
+parent.update_endpoints_batch(**kwargs)
+```
 
-<a id="update\_gcm\_channel"></a>
+1. See [:material-code-braces: UpdateEndpointsBatchRequestRequestTypeDef](./type_defs.md#updateendpointsbatchrequestrequesttypedef) 
 
-### update_gcm_channel
+### update\_gcm\_channel
 
-Enables the GCM channel for an application or updates the status and settings
-of the GCM channel for an application.
+Enables the GCM channel for an application or updates the status and settings of
+the GCM channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_gcm_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_gcm_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_gcm_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_gcm_channel)
+```python title="Method definition"
+def update_gcm_channel(
+    self,
+    *,
+    ApplicationId: str,
+    GCMChannelRequest: GCMChannelRequestTypeDef,  # (1)
+) -> UpdateGcmChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGcmChannelRequestRequestTypeDef](./type_defs.md#updategcmchannelrequestrequesttypedef).
+1. See [:material-code-braces: GCMChannelRequestTypeDef](./type_defs.md#gcmchannelrequesttypedef) 
+2. See [:material-code-braces: UpdateGcmChannelResponseTypeDef](./type_defs.md#updategcmchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `GCMChannelRequest`:
-  [GCMChannelRequestTypeDef](./type_defs.md#gcmchannelrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateGcmChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "GCMChannelRequest": ...,
+}
 
-Returns
-[UpdateGcmChannelResponseTypeDef](./type_defs.md#updategcmchannelresponsetypedef).
+parent.update_gcm_channel(**kwargs)
+```
 
-<a id="update\_in\_app\_template"></a>
+1. See [:material-code-braces: UpdateGcmChannelRequestRequestTypeDef](./type_defs.md#updategcmchannelrequestrequesttypedef) 
 
-### update_in_app_template
+### update\_in\_app\_template
 
 Updates an existing message template for messages sent through the in-app
 message channel.
 
-Type annotations for `boto3.client("pinpoint").update_in_app_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_in_app_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_in_app_template)
 
-Boto3 documentation:
-[Pinpoint.Client.update_in_app_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_in_app_template)
+```python title="Method definition"
+def update_in_app_template(
+    self,
+    *,
+    InAppTemplateRequest: InAppTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+    CreateNewVersion: bool = ...,
+    Version: str = ...,
+) -> UpdateInAppTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInAppTemplateRequestRequestTypeDef](./type_defs.md#updateinapptemplaterequestrequesttypedef).
+1. See [:material-code-braces: InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef) 
+2. See [:material-code-braces: UpdateInAppTemplateResponseTypeDef](./type_defs.md#updateinapptemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InAppTemplateRequest`:
-  [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
-- `CreateNewVersion`: `bool`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateInAppTemplateRequestRequestTypeDef = {  # (1)
+    "InAppTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[UpdateInAppTemplateResponseTypeDef](./type_defs.md#updateinapptemplateresponsetypedef).
+parent.update_in_app_template(**kwargs)
+```
 
-<a id="update\_journey"></a>
+1. See [:material-code-braces: UpdateInAppTemplateRequestRequestTypeDef](./type_defs.md#updateinapptemplaterequestrequesttypedef) 
 
-### update_journey
+### update\_journey
 
 Updates the configuration and other settings for a journey.
 
-Type annotations for `boto3.client("pinpoint").update_journey` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_journey` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
 
-Boto3 documentation:
-[Pinpoint.Client.update_journey](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey)
+```python title="Method definition"
+def update_journey(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+    WriteJourneyRequest: WriteJourneyRequestTypeDef,  # (1)
+) -> UpdateJourneyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJourneyRequestRequestTypeDef](./type_defs.md#updatejourneyrequestrequesttypedef).
+1. See [:material-code-braces: WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef) 
+2. See [:material-code-braces: UpdateJourneyResponseTypeDef](./type_defs.md#updatejourneyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
-- `WriteJourneyRequest`:
-  [WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateJourneyRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+    "WriteJourneyRequest": ...,
+}
 
-Returns
-[UpdateJourneyResponseTypeDef](./type_defs.md#updatejourneyresponsetypedef).
+parent.update_journey(**kwargs)
+```
 
-<a id="update\_journey\_state"></a>
+1. See [:material-code-braces: UpdateJourneyRequestRequestTypeDef](./type_defs.md#updatejourneyrequestrequesttypedef) 
 
-### update_journey_state
+### update\_journey\_state
 
 Cancels (stops) an active journey.
 
-Type annotations for `boto3.client("pinpoint").update_journey_state` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_journey_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
 
-Boto3 documentation:
-[Pinpoint.Client.update_journey_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_journey_state)
+```python title="Method definition"
+def update_journey_state(
+    self,
+    *,
+    ApplicationId: str,
+    JourneyId: str,
+    JourneyStateRequest: JourneyStateRequestTypeDef,  # (1)
+) -> UpdateJourneyStateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJourneyStateRequestRequestTypeDef](./type_defs.md#updatejourneystaterequestrequesttypedef).
+1. See [:material-code-braces: JourneyStateRequestTypeDef](./type_defs.md#journeystaterequesttypedef) 
+2. See [:material-code-braces: UpdateJourneyStateResponseTypeDef](./type_defs.md#updatejourneystateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `JourneyId`: `str` *(required)*
-- `JourneyStateRequest`:
-  [JourneyStateRequestTypeDef](./type_defs.md#journeystaterequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateJourneyStateRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "JourneyId": ...,
+    "JourneyStateRequest": ...,
+}
 
-Returns
-[UpdateJourneyStateResponseTypeDef](./type_defs.md#updatejourneystateresponsetypedef).
+parent.update_journey_state(**kwargs)
+```
 
-<a id="update\_push\_template"></a>
+1. See [:material-code-braces: UpdateJourneyStateRequestRequestTypeDef](./type_defs.md#updatejourneystaterequestrequesttypedef) 
 
-### update_push_template
+### update\_push\_template
 
 Updates an existing message template for messages that are sent through a push
 notification channel.
 
-Type annotations for `boto3.client("pinpoint").update_push_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_push_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
 
-Boto3 documentation:
-[Pinpoint.Client.update_push_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_push_template)
+```python title="Method definition"
+def update_push_template(
+    self,
+    *,
+    PushNotificationTemplateRequest: PushNotificationTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+    CreateNewVersion: bool = ...,
+    Version: str = ...,
+) -> UpdatePushTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePushTemplateRequestRequestTypeDef](./type_defs.md#updatepushtemplaterequestrequesttypedef).
+1. See [:material-code-braces: PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef) 
+2. See [:material-code-braces: UpdatePushTemplateResponseTypeDef](./type_defs.md#updatepushtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PushNotificationTemplateRequest`:
-  [PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
-- `CreateNewVersion`: `bool`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePushTemplateRequestRequestTypeDef = {  # (1)
+    "PushNotificationTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[UpdatePushTemplateResponseTypeDef](./type_defs.md#updatepushtemplateresponsetypedef).
+parent.update_push_template(**kwargs)
+```
 
-<a id="update\_recommender\_configuration"></a>
+1. See [:material-code-braces: UpdatePushTemplateRequestRequestTypeDef](./type_defs.md#updatepushtemplaterequestrequesttypedef) 
 
-### update_recommender_configuration
+### update\_recommender\_configuration
 
 Updates an Amazon Pinpoint configuration for a recommender model.
 
-Type annotations for
-`boto3.client("pinpoint").update_recommender_configuration` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_recommender_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
 
-Boto3 documentation:
-[Pinpoint.Client.update_recommender_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_recommender_configuration)
+```python title="Method definition"
+def update_recommender_configuration(
+    self,
+    *,
+    RecommenderId: str,
+    UpdateRecommenderConfiguration: UpdateRecommenderConfigurationTypeDef,  # (1)
+) -> UpdateRecommenderConfigurationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#updaterecommenderconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRecommenderConfigurationTypeDef](./type_defs.md#updaterecommenderconfigurationtypedef) 
+2. See [:material-code-braces: UpdateRecommenderConfigurationResponseTypeDef](./type_defs.md#updaterecommenderconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RecommenderId`: `str` *(required)*
-- `UpdateRecommenderConfiguration`:
-  [UpdateRecommenderConfigurationTypeDef](./type_defs.md#updaterecommenderconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRecommenderConfigurationRequestRequestTypeDef = {  # (1)
+    "RecommenderId": ...,
+    "UpdateRecommenderConfiguration": ...,
+}
 
-Returns
-[UpdateRecommenderConfigurationResponseTypeDef](./type_defs.md#updaterecommenderconfigurationresponsetypedef).
+parent.update_recommender_configuration(**kwargs)
+```
 
-<a id="update\_segment"></a>
+1. See [:material-code-braces: UpdateRecommenderConfigurationRequestRequestTypeDef](./type_defs.md#updaterecommenderconfigurationrequestrequesttypedef) 
 
-### update_segment
+### update\_segment
 
 Creates a new segment for an application or updates the configuration,
 dimension, and other settings for an existing segment that's associated with an
 application.
 
-Type annotations for `boto3.client("pinpoint").update_segment` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_segment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
 
-Boto3 documentation:
-[Pinpoint.Client.update_segment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_segment)
+```python title="Method definition"
+def update_segment(
+    self,
+    *,
+    ApplicationId: str,
+    SegmentId: str,
+    WriteSegmentRequest: WriteSegmentRequestTypeDef,  # (1)
+) -> UpdateSegmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSegmentRequestRequestTypeDef](./type_defs.md#updatesegmentrequestrequesttypedef).
+1. See [:material-code-braces: WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef) 
+2. See [:material-code-braces: UpdateSegmentResponseTypeDef](./type_defs.md#updatesegmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SegmentId`: `str` *(required)*
-- `WriteSegmentRequest`:
-  [WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSegmentRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SegmentId": ...,
+    "WriteSegmentRequest": ...,
+}
 
-Returns
-[UpdateSegmentResponseTypeDef](./type_defs.md#updatesegmentresponsetypedef).
+parent.update_segment(**kwargs)
+```
 
-<a id="update\_sms\_channel"></a>
+1. See [:material-code-braces: UpdateSegmentRequestRequestTypeDef](./type_defs.md#updatesegmentrequestrequesttypedef) 
 
-### update_sms_channel
+### update\_sms\_channel
 
-Enables the SMS channel for an application or updates the status and settings
-of the SMS channel for an application.
+Enables the SMS channel for an application or updates the status and settings of
+the SMS channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_sms_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_sms_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_sms_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_channel)
+```python title="Method definition"
+def update_sms_channel(
+    self,
+    *,
+    ApplicationId: str,
+    SMSChannelRequest: SMSChannelRequestTypeDef,  # (1)
+) -> UpdateSmsChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSmsChannelRequestRequestTypeDef](./type_defs.md#updatesmschannelrequestrequesttypedef).
+1. See [:material-code-braces: SMSChannelRequestTypeDef](./type_defs.md#smschannelrequesttypedef) 
+2. See [:material-code-braces: UpdateSmsChannelResponseTypeDef](./type_defs.md#updatesmschannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `SMSChannelRequest`:
-  [SMSChannelRequestTypeDef](./type_defs.md#smschannelrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateSmsChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "SMSChannelRequest": ...,
+}
 
-Returns
-[UpdateSmsChannelResponseTypeDef](./type_defs.md#updatesmschannelresponsetypedef).
+parent.update_sms_channel(**kwargs)
+```
 
-<a id="update\_sms\_template"></a>
+1. See [:material-code-braces: UpdateSmsChannelRequestRequestTypeDef](./type_defs.md#updatesmschannelrequestrequesttypedef) 
 
-### update_sms_template
+### update\_sms\_template
 
 Updates an existing message template for messages that are sent through the SMS
 channel.
 
-Type annotations for `boto3.client("pinpoint").update_sms_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_sms_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
 
-Boto3 documentation:
-[Pinpoint.Client.update_sms_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_sms_template)
+```python title="Method definition"
+def update_sms_template(
+    self,
+    *,
+    SMSTemplateRequest: SMSTemplateRequestTypeDef,  # (1)
+    TemplateName: str,
+    CreateNewVersion: bool = ...,
+    Version: str = ...,
+) -> UpdateSmsTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSmsTemplateRequestRequestTypeDef](./type_defs.md#updatesmstemplaterequestrequesttypedef).
+1. See [:material-code-braces: SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef) 
+2. See [:material-code-braces: UpdateSmsTemplateResponseTypeDef](./type_defs.md#updatesmstemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SMSTemplateRequest`:
-  [SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
-- `CreateNewVersion`: `bool`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSmsTemplateRequestRequestTypeDef = {  # (1)
+    "SMSTemplateRequest": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[UpdateSmsTemplateResponseTypeDef](./type_defs.md#updatesmstemplateresponsetypedef).
+parent.update_sms_template(**kwargs)
+```
 
-<a id="update\_template\_active\_version"></a>
+1. See [:material-code-braces: UpdateSmsTemplateRequestRequestTypeDef](./type_defs.md#updatesmstemplaterequestrequesttypedef) 
 
-### update_template_active_version
+### update\_template\_active\_version
 
 Changes the status of a specific version of a message template to *active* .
 
-Type annotations for `boto3.client("pinpoint").update_template_active_version`
-method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_template_active_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
 
-Boto3 documentation:
-[Pinpoint.Client.update_template_active_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_template_active_version)
+```python title="Method definition"
+def update_template_active_version(
+    self,
+    *,
+    TemplateActiveVersionRequest: TemplateActiveVersionRequestTypeDef,  # (1)
+    TemplateName: str,
+    TemplateType: str,
+) -> UpdateTemplateActiveVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTemplateActiveVersionRequestRequestTypeDef](./type_defs.md#updatetemplateactiveversionrequestrequesttypedef).
+1. See [:material-code-braces: TemplateActiveVersionRequestTypeDef](./type_defs.md#templateactiveversionrequesttypedef) 
+2. See [:material-code-braces: UpdateTemplateActiveVersionResponseTypeDef](./type_defs.md#updatetemplateactiveversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateActiveVersionRequest`:
-  [TemplateActiveVersionRequestTypeDef](./type_defs.md#templateactiveversionrequesttypedef)
-  *(required)*
-- `TemplateName`: `str` *(required)*
-- `TemplateType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTemplateActiveVersionRequestRequestTypeDef = {  # (1)
+    "TemplateActiveVersionRequest": ...,
+    "TemplateName": ...,
+    "TemplateType": ...,
+}
 
-Returns
-[UpdateTemplateActiveVersionResponseTypeDef](./type_defs.md#updatetemplateactiveversionresponsetypedef).
+parent.update_template_active_version(**kwargs)
+```
 
-<a id="update\_voice\_channel"></a>
+1. See [:material-code-braces: UpdateTemplateActiveVersionRequestRequestTypeDef](./type_defs.md#updatetemplateactiveversionrequestrequesttypedef) 
 
-### update_voice_channel
+### update\_voice\_channel
 
 Enables the voice channel for an application or updates the status and settings
 of the voice channel for an application.
 
-Type annotations for `boto3.client("pinpoint").update_voice_channel` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_voice_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
 
-Boto3 documentation:
-[Pinpoint.Client.update_voice_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_channel)
+```python title="Method definition"
+def update_voice_channel(
+    self,
+    *,
+    ApplicationId: str,
+    VoiceChannelRequest: VoiceChannelRequestTypeDef,  # (1)
+) -> UpdateVoiceChannelResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVoiceChannelRequestRequestTypeDef](./type_defs.md#updatevoicechannelrequestrequesttypedef).
+1. See [:material-code-braces: VoiceChannelRequestTypeDef](./type_defs.md#voicechannelrequesttypedef) 
+2. See [:material-code-braces: UpdateVoiceChannelResponseTypeDef](./type_defs.md#updatevoicechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `VoiceChannelRequest`:
-  [VoiceChannelRequestTypeDef](./type_defs.md#voicechannelrequesttypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateVoiceChannelRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "VoiceChannelRequest": ...,
+}
 
-Returns
-[UpdateVoiceChannelResponseTypeDef](./type_defs.md#updatevoicechannelresponsetypedef).
+parent.update_voice_channel(**kwargs)
+```
 
-<a id="update\_voice\_template"></a>
+1. See [:material-code-braces: UpdateVoiceChannelRequestRequestTypeDef](./type_defs.md#updatevoicechannelrequestrequesttypedef) 
 
-### update_voice_template
+### update\_voice\_template
 
 Updates an existing message template for messages that are sent through the
 voice channel.
 
-Type annotations for `boto3.client("pinpoint").update_voice_template` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").update_voice_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
 
-Boto3 documentation:
-[Pinpoint.Client.update_voice_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.update_voice_template)
+```python title="Method definition"
+def update_voice_template(
+    self,
+    *,
+    TemplateName: str,
+    VoiceTemplateRequest: VoiceTemplateRequestTypeDef,  # (1)
+    CreateNewVersion: bool = ...,
+    Version: str = ...,
+) -> UpdateVoiceTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVoiceTemplateRequestRequestTypeDef](./type_defs.md#updatevoicetemplaterequestrequesttypedef).
+1. See [:material-code-braces: VoiceTemplateRequestTypeDef](./type_defs.md#voicetemplaterequesttypedef) 
+2. See [:material-code-braces: UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TemplateName`: `str` *(required)*
-- `VoiceTemplateRequest`:
-  [VoiceTemplateRequestTypeDef](./type_defs.md#voicetemplaterequesttypedef)
-  *(required)*
-- `CreateNewVersion`: `bool`
-- `Version`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateVoiceTemplateRequestRequestTypeDef = {  # (1)
+    "TemplateName": ...,
+    "VoiceTemplateRequest": ...,
+}
 
-Returns
-[UpdateVoiceTemplateResponseTypeDef](./type_defs.md#updatevoicetemplateresponsetypedef).
+parent.update_voice_template(**kwargs)
+```
 
-<a id="verify\_otp\_message"></a>
+1. See [:material-code-braces: UpdateVoiceTemplateRequestRequestTypeDef](./type_defs.md#updatevoicetemplaterequestrequesttypedef) 
 
-### verify_otp_message
+### verify\_otp\_message
 
-Verify an OTP See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/VerifyOTPMessage).
+Verify an OTP See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/pinpoint-2016-12-01/VerifyOTPMessage).
 
-Type annotations for `boto3.client("pinpoint").verify_otp_message` method.
+Type annotations and code completion for `#!python boto3.client("pinpoint").verify_otp_message` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.verify_otp_message)
 
-Boto3 documentation:
-[Pinpoint.Client.verify_otp_message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint.Client.verify_otp_message)
+```python title="Method definition"
+def verify_otp_message(
+    self,
+    *,
+    ApplicationId: str,
+    VerifyOTPMessageRequestParameters: VerifyOTPMessageRequestParametersTypeDef,  # (1)
+) -> VerifyOTPMessageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[VerifyOTPMessageRequestRequestTypeDef](./type_defs.md#verifyotpmessagerequestrequesttypedef).
+1. See [:material-code-braces: VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef) 
+2. See [:material-code-braces: VerifyOTPMessageResponseTypeDef](./type_defs.md#verifyotpmessageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `VerifyOTPMessageRequestParameters`:
-  [VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: VerifyOTPMessageRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "VerifyOTPMessageRequestParameters": ...,
+}
 
-Returns
-[VerifyOTPMessageResponseTypeDef](./type_defs.md#verifyotpmessageresponsetypedef).
+parent.verify_otp_message(**kwargs)
+```
+
+1. See [:material-code-braces: VerifyOTPMessageRequestRequestTypeDef](./type_defs.md#verifyotpmessagerequestrequesttypedef) 
+
+
+
+

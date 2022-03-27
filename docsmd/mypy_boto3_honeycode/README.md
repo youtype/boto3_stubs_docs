@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-honeycode-module"></a>
-
-# Type annotations for boto3 Honeycode module
+#  Honeycode module
 
 > [Index](../README.md) > Honeycode
 
-Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module
-[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+!!! note ""
 
-- [Type annotations for boto3 Honeycode module](#type-annotations-for-boto3-honeycode-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [HoneycodeClient](#honeycodeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+    type annotations stubs module [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Honeycode`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[honeycode]'
 python -m pip install mypy-boto3-honeycode
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,78 +42,37 @@ python -m pip install mypy-boto3-honeycode
 python -m pip uninstall -y mypy-boto3-honeycode
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="honeycodeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## HoneycodeClient
 
-Type annotations for `boto3.client("honeycode")` as
-[HoneycodeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("honeycode")` as [HoneycodeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_honeycode.client import HoneycodeClient
+
+def get_client() -> HoneycodeClient:
+    return Session().cleint("honeycode")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_create_table_rows](./client.md#batch_create_table_rows)
-- [batch_delete_table_rows](./client.md#batch_delete_table_rows)
-- [batch_update_table_rows](./client.md#batch_update_table_rows)
-- [batch_upsert_table_rows](./client.md#batch_upsert_table_rows)
-- [can_paginate](./client.md#can_paginate)
-- [describe_table_data_import_job](./client.md#describe_table_data_import_job)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_screen_data](./client.md#get_screen_data)
-- [invoke_screen_automation](./client.md#invoke_screen_automation)
-- [list_table_columns](./client.md#list_table_columns)
-- [list_table_rows](./client.md#list_table_rows)
-- [list_tables](./client.md#list_tables)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [query_table_rows](./client.md#query_table_rows)
-- [start_table_data_import_job](./client.md#start_table_data_import_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-HoneycodeClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AutomationExecutionException
-- AutomationExecutionTimeoutException
-- ClientError
-- InternalServerException
-- RequestTimeoutException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ServiceUnavailableException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("honeycode").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("honeycode").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator, ...
+from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator
+
+def get_list_table_columns_paginator() -> ListTableColumnsPaginator:
+    return Session().client("honeycode").get_paginator("list_table_columns"))
 ```
 
 - [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
@@ -143,16 +80,23 @@ from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator, ...
 - [ListTablesPaginator](./paginators.md#listtablespaginator)
 - [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_honeycode.literals import ErrorCodeType
 
-```python
-from mypy_boto3_honeycode.literals import ErrorCodeType, ...
+def get_value() -> ErrorCodeType:
+    return "ACCESS_DENIED"
 ```
 
 - [ErrorCodeType](./literals.md#errorcodetype)
@@ -169,18 +113,24 @@ from mypy_boto3_honeycode.literals import ErrorCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTypeDef
 
-```python
-from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTypeDef, ...
+def get_value() -> BatchCreateTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "rowsToCreate": ...,
+    }
 ```
 
 - [BatchCreateTableRowsRequestRequestTypeDef](./type_defs.md#batchcreatetablerowsrequestrequesttypedef)
@@ -210,15 +160,19 @@ from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTyp
 - [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
 - [InvokeScreenAutomationRequestRequestTypeDef](./type_defs.md#invokescreenautomationrequestrequesttypedef)
 - [InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef)
+- [ListTableColumnsRequestListTableColumnsPaginateTypeDef](./type_defs.md#listtablecolumnsrequestlisttablecolumnspaginatetypedef)
 - [ListTableColumnsRequestRequestTypeDef](./type_defs.md#listtablecolumnsrequestrequesttypedef)
 - [ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef)
+- [ListTableRowsRequestListTableRowsPaginateTypeDef](./type_defs.md#listtablerowsrequestlisttablerowspaginatetypedef)
 - [ListTableRowsRequestRequestTypeDef](./type_defs.md#listtablerowsrequestrequesttypedef)
 - [ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef)
+- [ListTablesRequestListTablesPaginateTypeDef](./type_defs.md#listtablesrequestlisttablespaginatetypedef)
 - [ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef)
 - [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+- [QueryTableRowsRequestQueryTableRowsPaginateTypeDef](./type_defs.md#querytablerowsrequestquerytablerowspaginatetypedef)
 - [QueryTableRowsRequestRequestTypeDef](./type_defs.md#querytablerowsrequestrequesttypedef)
 - [QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -237,3 +191,4 @@ from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTyp
 - [UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)
 - [UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef)
 - [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
+

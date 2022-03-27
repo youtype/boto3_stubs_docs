@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-cloudhsmv2-module"></a>
-
-# Type annotations for boto3 CloudHSMV2 module
+#  CloudHSMV2 module
 
 > [Index](../README.md) > CloudHSMV2
 
-Auto-generated documentation for
-[CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
-type annotations stubs module
-[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+!!! note ""
 
-- [Type annotations for boto3 CloudHSMV2 module](#type-annotations-for-boto3-cloudhsmv2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudHSMV2Client](#cloudhsmv2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
+    type annotations stubs module [mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudHSMV2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudhsmv2]'
 python -m pip install mypy-boto3-cloudhsmv2
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,90 +42,60 @@ python -m pip install mypy-boto3-cloudhsmv2
 python -m pip uninstall -y mypy-boto3-cloudhsmv2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudhsmv2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudHSMV2Client
 
-Type annotations for `boto3.client("cloudhsmv2")` as
-[CloudHSMV2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudhsmv2")` as [CloudHSMV2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
+
+def get_client() -> CloudHSMV2Client:
+    return Session().cleint("cloudhsmv2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [copy_backup_to_region](./client.md#copy_backup_to_region)
-- [create_cluster](./client.md#create_cluster)
-- [create_hsm](./client.md#create_hsm)
-- [delete_backup](./client.md#delete_backup)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_hsm](./client.md#delete_hsm)
-- [describe_backups](./client.md#describe_backups)
-- [describe_clusters](./client.md#describe_clusters)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [initialize_cluster](./client.md#initialize_cluster)
-- [list_tags](./client.md#list_tags)
-- [modify_backup_attributes](./client.md#modify_backup_attributes)
-- [modify_cluster](./client.md#modify_cluster)
-- [restore_backup](./client.md#restore_backup)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudHSMV2Client [exceptions](./client.md#exceptions)
-
-- ClientError
-- CloudHsmAccessDeniedException
-- CloudHsmInternalFailureException
-- CloudHsmInvalidRequestException
-- CloudHsmResourceNotFoundException
-- CloudHsmServiceException
-- CloudHsmTagException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloudhsmv2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudhsmv2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudhsmv2.paginator import DescribeBackupsPaginator, ...
+from mypy_boto3_cloudhsmv2.paginator import DescribeBackupsPaginator
+
+def get_describe_backups_paginator() -> DescribeBackupsPaginator:
+    return Session().client("cloudhsmv2").get_paginator("describe_backups"))
 ```
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudhsmv2.literals import BackupPolicyType
 
-```python
-from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
+def get_value() -> BackupPolicyType:
+    return "DEFAULT"
 ```
 
 - [BackupPolicyType](./literals.md#backuppolicytype)
@@ -162,18 +110,22 @@ from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef
 
-```python
-from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef, ...
+def get_value() -> BackupRetentionPolicyTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
 - [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
@@ -192,14 +144,17 @@ from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef, ...
 - [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef)
 - [DeleteHsmRequestRequestTypeDef](./type_defs.md#deletehsmrequestrequesttypedef)
 - [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef)
+- [DescribeBackupsRequestDescribeBackupsPaginateTypeDef](./type_defs.md#describebackupsrequestdescribebackupspaginatetypedef)
 - [DescribeBackupsRequestRequestTypeDef](./type_defs.md#describebackupsrequestrequesttypedef)
 - [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)
+- [DescribeClustersRequestDescribeClustersPaginateTypeDef](./type_defs.md#describeclustersrequestdescribeclusterspaginatetypedef)
 - [DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef)
 - [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef)
 - [DestinationBackupTypeDef](./type_defs.md#destinationbackuptypedef)
 - [HsmTypeDef](./type_defs.md#hsmtypedef)
 - [InitializeClusterRequestRequestTypeDef](./type_defs.md#initializeclusterrequestrequesttypedef)
 - [InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef)
+- [ListTagsRequestListTagsPaginateTypeDef](./type_defs.md#listtagsrequestlisttagspaginatetypedef)
 - [ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef)
 - [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)
 - [ModifyBackupAttributesRequestRequestTypeDef](./type_defs.md#modifybackupattributesrequestrequesttypedef)
@@ -213,3 +168,4 @@ from mypy_boto3_cloudhsmv2.type_defs import BackupRetentionPolicyTypeDef, ...
 - [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
+

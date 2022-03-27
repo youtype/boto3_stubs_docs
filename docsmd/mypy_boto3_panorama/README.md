@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-panorama-module"></a>
-
-# Type annotations for boto3 Panorama module
+#  Panorama module
 
 > [Index](../README.md) > Panorama
 
-Auto-generated documentation for
-[Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
-type annotations stubs module
-[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
+!!! note ""
 
-- [Type annotations for boto3 Panorama module](#type-annotations-for-boto3-panorama-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PanoramaClient](#panoramaclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
+    type annotations stubs module [mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Panorama`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[panorama]'
 python -m pip install mypy-boto3-panorama
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,90 +42,41 @@ python -m pip install mypy-boto3-panorama
 python -m pip uninstall -y mypy-boto3-panorama
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="panoramaclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PanoramaClient
 
-Type annotations for `boto3.client("panorama")` as
-[PanoramaClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("panorama")` as [PanoramaClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_panorama.client import PanoramaClient
+
+def get_client() -> PanoramaClient:
+    return Session().cleint("panorama")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_application_instance](./client.md#create_application_instance)
-- [create_job_for_devices](./client.md#create_job_for_devices)
-- [create_node_from_template_job](./client.md#create_node_from_template_job)
-- [create_package](./client.md#create_package)
-- [create_package_import_job](./client.md#create_package_import_job)
-- [delete_device](./client.md#delete_device)
-- [delete_package](./client.md#delete_package)
-- [deregister_package_version](./client.md#deregister_package_version)
-- [describe_application_instance](./client.md#describe_application_instance)
-- [describe_application_instance_details](./client.md#describe_application_instance_details)
-- [describe_device](./client.md#describe_device)
-- [describe_device_job](./client.md#describe_device_job)
-- [describe_node](./client.md#describe_node)
-- [describe_node_from_template_job](./client.md#describe_node_from_template_job)
-- [describe_package](./client.md#describe_package)
-- [describe_package_import_job](./client.md#describe_package_import_job)
-- [describe_package_version](./client.md#describe_package_version)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_application_instance_dependencies](./client.md#list_application_instance_dependencies)
-- [list_application_instance_node_instances](./client.md#list_application_instance_node_instances)
-- [list_application_instances](./client.md#list_application_instances)
-- [list_devices](./client.md#list_devices)
-- [list_devices_jobs](./client.md#list_devices_jobs)
-- [list_node_from_template_jobs](./client.md#list_node_from_template_jobs)
-- [list_nodes](./client.md#list_nodes)
-- [list_package_import_jobs](./client.md#list_package_import_jobs)
-- [list_packages](./client.md#list_packages)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [provision_device](./client.md#provision_device)
-- [register_package_version](./client.md#register_package_version)
-- [remove_application_instance](./client.md#remove_application_instance)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_device_metadata](./client.md#update_device_metadata)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-PanoramaClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_panorama.literals import ApplicationInstanceHealthStatusType
 
-```python
-from mypy_boto3_panorama.literals import ApplicationInstanceHealthStatusType, ...
+def get_value() -> ApplicationInstanceHealthStatusType:
+    return "ERROR"
 ```
 
 - [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
@@ -172,17 +102,20 @@ from mypy_boto3_panorama.literals import ApplicationInstanceHealthStatusType, ..
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef
 
-```python
-from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef, ...
+def get_value() -> AlternateSoftwareMetadataTypeDef:
+    return {
+        "Version": ...,
+    }
 ```
 
 - [AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef)
@@ -280,3 +213,4 @@ from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef, ...
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateDeviceMetadataRequestRequestTypeDef](./type_defs.md#updatedevicemetadatarequestrequesttypedef)
 - [UpdateDeviceMetadataResponseTypeDef](./type_defs.md#updatedevicemetadataresponsetypedef)
+

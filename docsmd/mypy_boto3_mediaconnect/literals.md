@@ -1,812 +1,871 @@
-<a id="literals-for-boto3-mediaconnect-module"></a>
-
-# Literals for boto3 MediaConnect module
+# Literals
 
 > [Index](../README.md) > [MediaConnect](./README.md) > Literals
 
-Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
-type annotations stubs module
-[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+!!! note ""
 
-- [Literals for boto3 MediaConnect module](#literals-for-boto3-mediaconnect-module)
-  - [AlgorithmType](#algorithmtype)
-  - [ColorimetryType](#colorimetrytype)
-  - [DurationUnitsType](#durationunitstype)
-  - [EncoderProfileType](#encoderprofiletype)
-  - [EncodingNameType](#encodingnametype)
-  - [EntitlementStatusType](#entitlementstatustype)
-  - [FailoverModeType](#failovermodetype)
-  - [FlowActiveWaiterName](#flowactivewaitername)
-  - [FlowDeletedWaiterName](#flowdeletedwaitername)
-  - [FlowStandbyWaiterName](#flowstandbywaitername)
-  - [KeyTypeType](#keytypetype)
-  - [ListEntitlementsPaginatorName](#listentitlementspaginatorname)
-  - [ListFlowsPaginatorName](#listflowspaginatorname)
-  - [ListOfferingsPaginatorName](#listofferingspaginatorname)
-  - [ListReservationsPaginatorName](#listreservationspaginatorname)
-  - [MaintenanceDayType](#maintenancedaytype)
-  - [MediaStreamTypeType](#mediastreamtypetype)
-  - [NetworkInterfaceTypeType](#networkinterfacetypetype)
-  - [PriceUnitsType](#priceunitstype)
-  - [ProtocolType](#protocoltype)
-  - [RangeType](#rangetype)
-  - [ReservationStateType](#reservationstatetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [ScanModeType](#scanmodetype)
-  - [SourceTypeType](#sourcetypetype)
-  - [StateType](#statetype)
-  - [StatusType](#statustype)
-  - [TcsType](#tcstype)
-  - [MediaConnectServiceName](#mediaconnectservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="algorithmtype"></a>
+    Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+    type annotations stubs module [mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 ## AlgorithmType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import AlgorithmType
+
+def get_value() -> AlgorithmType:
+    return "aes128"
 ```
 
-Values:
-
-- `aes128`
-- `aes192`
-- `aes256`
-
-<a id="colorimetrytype"></a>
-
+```python title="Definition"
+AlgorithmType = Literal[
+    "aes128",
+    "aes192",
+    "aes256",
+]
+```
 ## ColorimetryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ColorimetryType
+
+def get_value() -> ColorimetryType:
+    return "BT2020"
 ```
 
-Values:
-
-- `BT2020`
-- `BT2100`
-- `BT601`
-- `BT709`
-- `ST2065-1`
-- `ST2065-3`
-- `XYZ`
-
-<a id="durationunitstype"></a>
-
+```python title="Definition"
+ColorimetryType = Literal[
+    "BT2020",
+    "BT2100",
+    "BT601",
+    "BT709",
+    "ST2065-1",
+    "ST2065-3",
+    "XYZ",
+]
+```
 ## DurationUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import DurationUnitsType
+
+def get_value() -> DurationUnitsType:
+    return "MONTHS"
 ```
 
-Values:
-
-- `MONTHS`
-
-<a id="encoderprofiletype"></a>
-
+```python title="Definition"
+DurationUnitsType = Literal[
+    "MONTHS",
+]
+```
 ## EncoderProfileType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import EncoderProfileType
+
+def get_value() -> EncoderProfileType:
+    return "high"
 ```
 
-Values:
-
-- `high`
-- `main`
-
-<a id="encodingnametype"></a>
-
+```python title="Definition"
+EncoderProfileType = Literal[
+    "high",
+    "main",
+]
+```
 ## EncodingNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import EncodingNameType
+
+def get_value() -> EncodingNameType:
+    return "jxsv"
 ```
 
-Values:
-
-- `jxsv`
-- `pcm`
-- `raw`
-- `smpte291`
-
-<a id="entitlementstatustype"></a>
-
+```python title="Definition"
+EncodingNameType = Literal[
+    "jxsv",
+    "pcm",
+    "raw",
+    "smpte291",
+]
+```
 ## EntitlementStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import EntitlementStatusType
+
+def get_value() -> EntitlementStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="failovermodetype"></a>
-
+```python title="Definition"
+EntitlementStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## FailoverModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import FailoverModeType
+
+def get_value() -> FailoverModeType:
+    return "FAILOVER"
 ```
 
-Values:
-
-- `FAILOVER`
-- `MERGE`
-
-<a id="flowactivewaitername"></a>
-
+```python title="Definition"
+FailoverModeType = Literal[
+    "FAILOVER",
+    "MERGE",
+]
+```
 ## FlowActiveWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import FlowActiveWaiterName
+
+def get_value() -> FlowActiveWaiterName:
+    return "flow_active"
 ```
 
-Values:
-
-- `flow_active`
-
-<a id="flowdeletedwaitername"></a>
-
+```python title="Definition"
+FlowActiveWaiterName = Literal[
+    "flow_active",
+]
+```
 ## FlowDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import FlowDeletedWaiterName
+
+def get_value() -> FlowDeletedWaiterName:
+    return "flow_deleted"
 ```
 
-Values:
-
-- `flow_deleted`
-
-<a id="flowstandbywaitername"></a>
-
+```python title="Definition"
+FlowDeletedWaiterName = Literal[
+    "flow_deleted",
+]
+```
 ## FlowStandbyWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import FlowStandbyWaiterName
+
+def get_value() -> FlowStandbyWaiterName:
+    return "flow_standby"
 ```
 
-Values:
-
-- `flow_standby`
-
-<a id="keytypetype"></a>
-
+```python title="Definition"
+FlowStandbyWaiterName = Literal[
+    "flow_standby",
+]
+```
 ## KeyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import KeyTypeType
+
+def get_value() -> KeyTypeType:
+    return "speke"
 ```
 
-Values:
-
-- `speke`
-- `srt-password`
-- `static-key`
-
-<a id="listentitlementspaginatorname"></a>
-
+```python title="Definition"
+KeyTypeType = Literal[
+    "speke",
+    "srt-password",
+    "static-key",
+]
+```
 ## ListEntitlementsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ListEntitlementsPaginatorName
+
+def get_value() -> ListEntitlementsPaginatorName:
+    return "list_entitlements"
 ```
 
-Values:
-
-- `list_entitlements`
-
-<a id="listflowspaginatorname"></a>
-
+```python title="Definition"
+ListEntitlementsPaginatorName = Literal[
+    "list_entitlements",
+]
+```
 ## ListFlowsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ListFlowsPaginatorName
+
+def get_value() -> ListFlowsPaginatorName:
+    return "list_flows"
 ```
 
-Values:
-
-- `list_flows`
-
-<a id="listofferingspaginatorname"></a>
-
+```python title="Definition"
+ListFlowsPaginatorName = Literal[
+    "list_flows",
+]
+```
 ## ListOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ListOfferingsPaginatorName
+
+def get_value() -> ListOfferingsPaginatorName:
+    return "list_offerings"
 ```
 
-Values:
-
-- `list_offerings`
-
-<a id="listreservationspaginatorname"></a>
-
+```python title="Definition"
+ListOfferingsPaginatorName = Literal[
+    "list_offerings",
+]
+```
 ## ListReservationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ListReservationsPaginatorName
+
+def get_value() -> ListReservationsPaginatorName:
+    return "list_reservations"
 ```
 
-Values:
-
-- `list_reservations`
-
-<a id="maintenancedaytype"></a>
-
+```python title="Definition"
+ListReservationsPaginatorName = Literal[
+    "list_reservations",
+]
+```
 ## MaintenanceDayType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import MaintenanceDayType
+
+def get_value() -> MaintenanceDayType:
+    return "Friday"
 ```
 
-Values:
-
-- `Friday`
-- `Monday`
-- `Saturday`
-- `Sunday`
-- `Thursday`
-- `Tuesday`
-- `Wednesday`
-
-<a id="mediastreamtypetype"></a>
-
+```python title="Definition"
+MaintenanceDayType = Literal[
+    "Friday",
+    "Monday",
+    "Saturday",
+    "Sunday",
+    "Thursday",
+    "Tuesday",
+    "Wednesday",
+]
+```
 ## MediaStreamTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import MediaStreamTypeType
+
+def get_value() -> MediaStreamTypeType:
+    return "ancillary-data"
 ```
 
-Values:
-
-- `ancillary-data`
-- `audio`
-- `video`
-
-<a id="networkinterfacetypetype"></a>
-
+```python title="Definition"
+MediaStreamTypeType = Literal[
+    "ancillary-data",
+    "audio",
+    "video",
+]
+```
 ## NetworkInterfaceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import NetworkInterfaceTypeType
+
+def get_value() -> NetworkInterfaceTypeType:
+    return "efa"
 ```
 
-Values:
-
-- `efa`
-- `ena`
-
-<a id="priceunitstype"></a>
-
+```python title="Definition"
+NetworkInterfaceTypeType = Literal[
+    "efa",
+    "ena",
+]
+```
 ## PriceUnitsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import PriceUnitsType
+
+def get_value() -> PriceUnitsType:
+    return "HOURLY"
 ```
 
-Values:
-
-- `HOURLY`
-
-<a id="protocoltype"></a>
-
+```python title="Definition"
+PriceUnitsType = Literal[
+    "HOURLY",
+]
+```
 ## ProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "cdi"
 ```
 
-Values:
-
-- `cdi`
-- `fujitsu-qos`
-- `rist`
-- `rtp`
-- `rtp-fec`
-- `srt-listener`
-- `st2110-jpegxs`
-- `zixi-pull`
-- `zixi-push`
-
-<a id="rangetype"></a>
-
+```python title="Definition"
+ProtocolType = Literal[
+    "cdi",
+    "fujitsu-qos",
+    "rist",
+    "rtp",
+    "rtp-fec",
+    "srt-listener",
+    "st2110-jpegxs",
+    "zixi-pull",
+    "zixi-push",
+]
+```
 ## RangeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import RangeType
+
+def get_value() -> RangeType:
+    return "FULL"
 ```
 
-Values:
-
-- `FULL`
-- `FULLPROTECT`
-- `NARROW`
-
-<a id="reservationstatetype"></a>
-
+```python title="Definition"
+RangeType = Literal[
+    "FULL",
+    "FULLPROTECT",
+    "NARROW",
+]
+```
 ## ReservationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ReservationStateType
+
+def get_value() -> ReservationStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CANCELED`
-- `EXPIRED`
-- `PROCESSING`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ReservationStateType = Literal[
+    "ACTIVE",
+    "CANCELED",
+    "EXPIRED",
+    "PROCESSING",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "Mbps_Outbound_Bandwidth"
 ```
 
-Values:
-
-- `Mbps_Outbound_Bandwidth`
-
-<a id="scanmodetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "Mbps_Outbound_Bandwidth",
+]
+```
 ## ScanModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ScanModeType
+
+def get_value() -> ScanModeType:
+    return "interlace"
 ```
 
-Values:
-
-- `interlace`
-- `progressive`
-- `progressive-segmented-frame`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+ScanModeType = Literal[
+    "interlace",
+    "progressive",
+    "progressive-segmented-frame",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "ENTITLED"
 ```
 
-Values:
-
-- `ENTITLED`
-- `OWNED`
-
-<a id="statetype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "ENTITLED",
+    "OWNED",
+]
+```
 ## StateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import StateType
+
+def get_value() -> StateType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+StateType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import StatusType
+
+def get_value() -> StatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `DELETING`
-- `ERROR`
-- `STANDBY`
-- `STARTING`
-- `STOPPING`
-- `UPDATING`
-
-<a id="tcstype"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "ACTIVE",
+    "DELETING",
+    "ERROR",
+    "STANDBY",
+    "STARTING",
+    "STOPPING",
+    "UPDATING",
+]
+```
 ## TcsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import TcsType
+
+def get_value() -> TcsType:
+    return "BT2100LINHLG"
 ```
 
-Values:
-
-- `BT2100LINHLG`
-- `BT2100LINPQ`
-- `DENSITY`
-- `HLG`
-- `LINEAR`
-- `PQ`
-- `SDR`
-- `ST2065-1`
-- `ST428-1`
-
-<a id="mediaconnectservicename"></a>
-
+```python title="Definition"
+TcsType = Literal[
+    "BT2100LINHLG",
+    "BT2100LINPQ",
+    "DENSITY",
+    "HLG",
+    "LINEAR",
+    "PQ",
+    "SDR",
+    "ST2065-1",
+    "ST428-1",
+]
+```
 ## MediaConnectServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import MediaConnectServiceName
+
+def get_value() -> MediaConnectServiceName:
+    return "mediaconnect"
 ```
 
-Values:
-
-- `mediaconnect`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+MediaConnectServiceName = Literal[
+    "mediaconnect",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_entitlements"
 ```
 
-Values:
-
-- `list_entitlements`
-- `list_flows`
-- `list_offerings`
-- `list_reservations`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_entitlements",
+    "list_flows",
+    "list_offerings",
+    "list_reservations",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediaconnect.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "flow_active"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "flow_active",
+    "flow_deleted",
+    "flow_standby",
+]
+```
+## RegionName
 
-- `flow_active`
-- `flow_deleted`
-- `flow_standby`
+```python title="Usage Example"
+from mypy_boto3_mediaconnect.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-east-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

@@ -1,1383 +1,1978 @@
-<a id="typed-dictionaries-for-boto3-machinelearning-module"></a>
-
-# Typed dictionaries for boto3 MachineLearning module
+# Typed dictionaries
 
 > [Index](../README.md) > [MachineLearning](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module
-[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MachineLearning module](#typed-dictionaries-for-boto3-machinelearning-module)
-  - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
-  - [AddTagsOutputTypeDef](#addtagsoutputtypedef)
-  - [BatchPredictionTypeDef](#batchpredictiontypedef)
-  - [CreateBatchPredictionInputRequestTypeDef](#createbatchpredictioninputrequesttypedef)
-  - [CreateBatchPredictionOutputTypeDef](#createbatchpredictionoutputtypedef)
-  - [CreateDataSourceFromRDSInputRequestTypeDef](#createdatasourcefromrdsinputrequesttypedef)
-  - [CreateDataSourceFromRDSOutputTypeDef](#createdatasourcefromrdsoutputtypedef)
-  - [CreateDataSourceFromRedshiftInputRequestTypeDef](#createdatasourcefromredshiftinputrequesttypedef)
-  - [CreateDataSourceFromRedshiftOutputTypeDef](#createdatasourcefromredshiftoutputtypedef)
-  - [CreateDataSourceFromS3InputRequestTypeDef](#createdatasourcefroms3inputrequesttypedef)
-  - [CreateDataSourceFromS3OutputTypeDef](#createdatasourcefroms3outputtypedef)
-  - [CreateEvaluationInputRequestTypeDef](#createevaluationinputrequesttypedef)
-  - [CreateEvaluationOutputTypeDef](#createevaluationoutputtypedef)
-  - [CreateMLModelInputRequestTypeDef](#createmlmodelinputrequesttypedef)
-  - [CreateMLModelOutputTypeDef](#createmlmodeloutputtypedef)
-  - [CreateRealtimeEndpointInputRequestTypeDef](#createrealtimeendpointinputrequesttypedef)
-  - [CreateRealtimeEndpointOutputTypeDef](#createrealtimeendpointoutputtypedef)
-  - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteBatchPredictionInputRequestTypeDef](#deletebatchpredictioninputrequesttypedef)
-  - [DeleteBatchPredictionOutputTypeDef](#deletebatchpredictionoutputtypedef)
-  - [DeleteDataSourceInputRequestTypeDef](#deletedatasourceinputrequesttypedef)
-  - [DeleteDataSourceOutputTypeDef](#deletedatasourceoutputtypedef)
-  - [DeleteEvaluationInputRequestTypeDef](#deleteevaluationinputrequesttypedef)
-  - [DeleteEvaluationOutputTypeDef](#deleteevaluationoutputtypedef)
-  - [DeleteMLModelInputRequestTypeDef](#deletemlmodelinputrequesttypedef)
-  - [DeleteMLModelOutputTypeDef](#deletemlmodeloutputtypedef)
-  - [DeleteRealtimeEndpointInputRequestTypeDef](#deleterealtimeendpointinputrequesttypedef)
-  - [DeleteRealtimeEndpointOutputTypeDef](#deleterealtimeendpointoutputtypedef)
-  - [DeleteTagsInputRequestTypeDef](#deletetagsinputrequesttypedef)
-  - [DeleteTagsOutputTypeDef](#deletetagsoutputtypedef)
-  - [DescribeBatchPredictionsInputRequestTypeDef](#describebatchpredictionsinputrequesttypedef)
-  - [DescribeBatchPredictionsOutputTypeDef](#describebatchpredictionsoutputtypedef)
-  - [DescribeDataSourcesInputRequestTypeDef](#describedatasourcesinputrequesttypedef)
-  - [DescribeDataSourcesOutputTypeDef](#describedatasourcesoutputtypedef)
-  - [DescribeEvaluationsInputRequestTypeDef](#describeevaluationsinputrequesttypedef)
-  - [DescribeEvaluationsOutputTypeDef](#describeevaluationsoutputtypedef)
-  - [DescribeMLModelsInputRequestTypeDef](#describemlmodelsinputrequesttypedef)
-  - [DescribeMLModelsOutputTypeDef](#describemlmodelsoutputtypedef)
-  - [DescribeTagsInputRequestTypeDef](#describetagsinputrequesttypedef)
-  - [DescribeTagsOutputTypeDef](#describetagsoutputtypedef)
-  - [EvaluationTypeDef](#evaluationtypedef)
-  - [GetBatchPredictionInputRequestTypeDef](#getbatchpredictioninputrequesttypedef)
-  - [GetBatchPredictionOutputTypeDef](#getbatchpredictionoutputtypedef)
-  - [GetDataSourceInputRequestTypeDef](#getdatasourceinputrequesttypedef)
-  - [GetDataSourceOutputTypeDef](#getdatasourceoutputtypedef)
-  - [GetEvaluationInputRequestTypeDef](#getevaluationinputrequesttypedef)
-  - [GetEvaluationOutputTypeDef](#getevaluationoutputtypedef)
-  - [GetMLModelInputRequestTypeDef](#getmlmodelinputrequesttypedef)
-  - [GetMLModelOutputTypeDef](#getmlmodeloutputtypedef)
-  - [MLModelTypeDef](#mlmodeltypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PerformanceMetricsTypeDef](#performancemetricstypedef)
-  - [PredictInputRequestTypeDef](#predictinputrequesttypedef)
-  - [PredictOutputTypeDef](#predictoutputtypedef)
-  - [PredictionTypeDef](#predictiontypedef)
-  - [RDSDataSpecTypeDef](#rdsdataspectypedef)
-  - [RDSDatabaseCredentialsTypeDef](#rdsdatabasecredentialstypedef)
-  - [RDSDatabaseTypeDef](#rdsdatabasetypedef)
-  - [RDSMetadataTypeDef](#rdsmetadatatypedef)
-  - [RealtimeEndpointInfoTypeDef](#realtimeendpointinfotypedef)
-  - [RedshiftDataSpecTypeDef](#redshiftdataspectypedef)
-  - [RedshiftDatabaseCredentialsTypeDef](#redshiftdatabasecredentialstypedef)
-  - [RedshiftDatabaseTypeDef](#redshiftdatabasetypedef)
-  - [RedshiftMetadataTypeDef](#redshiftmetadatatypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3DataSpecTypeDef](#s3dataspectypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UpdateBatchPredictionInputRequestTypeDef](#updatebatchpredictioninputrequesttypedef)
-  - [UpdateBatchPredictionOutputTypeDef](#updatebatchpredictionoutputtypedef)
-  - [UpdateDataSourceInputRequestTypeDef](#updatedatasourceinputrequesttypedef)
-  - [UpdateDataSourceOutputTypeDef](#updatedatasourceoutputtypedef)
-  - [UpdateEvaluationInputRequestTypeDef](#updateevaluationinputrequesttypedef)
-  - [UpdateEvaluationOutputTypeDef](#updateevaluationoutputtypedef)
-  - [UpdateMLModelInputRequestTypeDef](#updatemlmodelinputrequesttypedef)
-  - [UpdateMLModelOutputTypeDef](#updatemlmodeloutputtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addtagsinputrequesttypedef"></a>
+    Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+    type annotations stubs module [mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ## AddTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import AddTagsInputRequestTypeDef
+
+def get_value() -> AddTagsInputRequestTypeDef:
+    return {
+        "Tags": ...,
+        "ResourceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsInputRequestTypeDef(TypedDict):
+    Tags: Sequence[TagTypeDef],  # (1)
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (2)
+```
 
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-
-<a id="addtagsoutputtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
 ## AddTagsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import AddTagsOutputTypeDef
+
+def get_value() -> AddTagsOutputTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsOutputTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchpredictiontypedef"></a>
-
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchPredictionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import BatchPredictionTypeDef
+
+def get_value() -> BatchPredictionTypeDef:
+    return {
+        "BatchPredictionId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchPredictionTypeDef(TypedDict):
+    BatchPredictionId: NotRequired[str],
+    MLModelId: NotRequired[str],
+    BatchPredictionDataSourceId: NotRequired[str],
+    InputDataLocationS3: NotRequired[str],
+    CreatedByIamUser: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    Name: NotRequired[str],
+    Status: NotRequired[EntityStatusType],  # (1)
+    OutputUri: NotRequired[str],
+    Message: NotRequired[str],
+    ComputeTime: NotRequired[int],
+    FinishedAt: NotRequired[datetime],
+    StartedAt: NotRequired[datetime],
+    TotalRecordCount: NotRequired[int],
+    InvalidRecordCount: NotRequired[int],
+```
 
-- `BatchPredictionId`: `str`
-- `MLModelId`: `str`
-- `BatchPredictionDataSourceId`: `str`
-- `InputDataLocationS3`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `OutputUri`: `str`
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-- `TotalRecordCount`: `int`
-- `InvalidRecordCount`: `int`
-
-<a id="createbatchpredictioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
 ## CreateBatchPredictionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionInputRequestTypeDef
+
+def get_value() -> CreateBatchPredictionInputRequestTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "MLModelId": ...,
+        "BatchPredictionDataSourceId": ...,
+        "OutputUri": ...,
+    }
 ```
 
-Required fields:
-
-- `BatchPredictionId`: `str`
-- `MLModelId`: `str`
-- `BatchPredictionDataSourceId`: `str`
-- `OutputUri`: `str`
-
-Optional fields:
-
-- `BatchPredictionName`: `str`
-
-<a id="createbatchpredictionoutputtypedef"></a>
+```python title="Definition"
+class CreateBatchPredictionInputRequestTypeDef(TypedDict):
+    BatchPredictionId: str,
+    MLModelId: str,
+    BatchPredictionDataSourceId: str,
+    OutputUri: str,
+    BatchPredictionName: NotRequired[str],
+```
 
 ## CreateBatchPredictionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateBatchPredictionOutputTypeDef
+
+def get_value() -> CreateBatchPredictionOutputTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBatchPredictionOutputTypeDef(TypedDict):
+    BatchPredictionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BatchPredictionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasourcefromrdsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDataSourceFromRDSInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSInputRequestTypeDef
+
+def get_value() -> CreateDataSourceFromRDSInputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+        "RDSData": ...,
+        "RoleARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromRDSInputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+    RDSData: RDSDataSpecTypeDef,  # (1)
+    RoleARN: str,
+    DataSourceName: NotRequired[str],
+    ComputeStatistics: NotRequired[bool],
+```
 
-- `DataSourceId`: `str`
-- `RDSData`: [RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef)
-- `RoleARN`: `str`
-
-Optional fields:
-
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
-
-<a id="createdatasourcefromrdsoutputtypedef"></a>
-
+1. See [:material-code-braces: RDSDataSpecTypeDef](./type_defs.md#rdsdataspectypedef) 
 ## CreateDataSourceFromRDSOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRDSOutputTypeDef
+
+def get_value() -> CreateDataSourceFromRDSOutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromRDSOutputTypeDef(TypedDict):
+    DataSourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DataSourceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasourcefromredshiftinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDataSourceFromRedshiftInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftInputRequestTypeDef
+
+def get_value() -> CreateDataSourceFromRedshiftInputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+        "DataSpec": ...,
+        "RoleARN": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromRedshiftInputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+    DataSpec: RedshiftDataSpecTypeDef,  # (1)
+    RoleARN: str,
+    DataSourceName: NotRequired[str],
+    ComputeStatistics: NotRequired[bool],
+```
 
-- `DataSourceId`: `str`
-- `DataSpec`: [RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef)
-- `RoleARN`: `str`
-
-Optional fields:
-
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
-
-<a id="createdatasourcefromredshiftoutputtypedef"></a>
-
+1. See [:material-code-braces: RedshiftDataSpecTypeDef](./type_defs.md#redshiftdataspectypedef) 
 ## CreateDataSourceFromRedshiftOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromRedshiftOutputTypeDef
+
+def get_value() -> CreateDataSourceFromRedshiftOutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromRedshiftOutputTypeDef(TypedDict):
+    DataSourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DataSourceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasourcefroms3inputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDataSourceFromS3InputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3InputRequestTypeDef
+
+def get_value() -> CreateDataSourceFromS3InputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+        "DataSpec": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromS3InputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+    DataSpec: S3DataSpecTypeDef,  # (1)
+    DataSourceName: NotRequired[str],
+    ComputeStatistics: NotRequired[bool],
+```
 
-- `DataSourceId`: `str`
-- `DataSpec`: [S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef)
-
-Optional fields:
-
-- `DataSourceName`: `str`
-- `ComputeStatistics`: `bool`
-
-<a id="createdatasourcefroms3outputtypedef"></a>
-
+1. See [:material-code-braces: S3DataSpecTypeDef](./type_defs.md#s3dataspectypedef) 
 ## CreateDataSourceFromS3OutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateDataSourceFromS3OutputTypeDef
+
+def get_value() -> CreateDataSourceFromS3OutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataSourceFromS3OutputTypeDef(TypedDict):
+    DataSourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DataSourceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createevaluationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEvaluationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateEvaluationInputRequestTypeDef
+
+def get_value() -> CreateEvaluationInputRequestTypeDef:
+    return {
+        "EvaluationId": ...,
+        "MLModelId": ...,
+        "EvaluationDataSourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `EvaluationId`: `str`
-- `MLModelId`: `str`
-- `EvaluationDataSourceId`: `str`
-
-Optional fields:
-
-- `EvaluationName`: `str`
-
-<a id="createevaluationoutputtypedef"></a>
+```python title="Definition"
+class CreateEvaluationInputRequestTypeDef(TypedDict):
+    EvaluationId: str,
+    MLModelId: str,
+    EvaluationDataSourceId: str,
+    EvaluationName: NotRequired[str],
+```
 
 ## CreateEvaluationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateEvaluationOutputTypeDef
+
+def get_value() -> CreateEvaluationOutputTypeDef:
+    return {
+        "EvaluationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEvaluationOutputTypeDef(TypedDict):
+    EvaluationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EvaluationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmlmodelinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMLModelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateMLModelInputRequestTypeDef
+
+def get_value() -> CreateMLModelInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+        "MLModelType": ...,
+        "TrainingDataSourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMLModelInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+    MLModelType: MLModelTypeType,  # (1)
+    TrainingDataSourceId: str,
+    MLModelName: NotRequired[str],
+    Parameters: NotRequired[Mapping[str, str]],
+    Recipe: NotRequired[str],
+    RecipeUri: NotRequired[str],
+```
 
-- `MLModelId`: `str`
-- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
-- `TrainingDataSourceId`: `str`
-
-Optional fields:
-
-- `MLModelName`: `str`
-- `Parameters`: `Mapping`\[`str`, `str`\]
-- `Recipe`: `str`
-- `RecipeUri`: `str`
-
-<a id="createmlmodeloutputtypedef"></a>
-
+1. See [:material-code-brackets: MLModelTypeType](./literals.md#mlmodeltypetype) 
 ## CreateMLModelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateMLModelOutputTypeDef
+
+def get_value() -> CreateMLModelOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMLModelOutputTypeDef(TypedDict):
+    MLModelId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MLModelId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrealtimeendpointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRealtimeEndpointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointInputRequestTypeDef
+
+def get_value() -> CreateRealtimeEndpointInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-
-<a id="createrealtimeendpointoutputtypedef"></a>
+```python title="Definition"
+class CreateRealtimeEndpointInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+```
 
 ## CreateRealtimeEndpointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointOutputTypeDef
+
+def get_value() -> CreateRealtimeEndpointOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "RealtimeEndpointInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRealtimeEndpointOutputTypeDef(TypedDict):
+    MLModelId: str,
+    RealtimeEndpointInfo: RealtimeEndpointInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MLModelId`: `str`
-- `RealtimeEndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasourcetypedef"></a>
-
+1. See [:material-code-braces: RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "DataSourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    DataSourceId: NotRequired[str],
+    DataLocationS3: NotRequired[str],
+    DataRearrangement: NotRequired[str],
+    CreatedByIamUser: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    DataSizeInBytes: NotRequired[int],
+    NumberOfFiles: NotRequired[int],
+    Name: NotRequired[str],
+    Status: NotRequired[EntityStatusType],  # (1)
+    Message: NotRequired[str],
+    RedshiftMetadata: NotRequired[RedshiftMetadataTypeDef],  # (2)
+    RDSMetadata: NotRequired[RDSMetadataTypeDef],  # (3)
+    RoleARN: NotRequired[str],
+    ComputeStatistics: NotRequired[bool],
+    ComputeTime: NotRequired[int],
+    FinishedAt: NotRequired[datetime],
+    StartedAt: NotRequired[datetime],
+```
 
-- `DataSourceId`: `str`
-- `DataLocationS3`: `str`
-- `DataRearrangement`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `DataSizeInBytes`: `int`
-- `NumberOfFiles`: `int`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `Message`: `str`
-- `RedshiftMetadata`:
-  [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
-- `RDSMetadata`: [RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef)
-- `RoleARN`: `str`
-- `ComputeStatistics`: `bool`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-
-<a id="deletebatchpredictioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef) 
+3. See [:material-code-braces: RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef) 
 ## DeleteBatchPredictionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionInputRequestTypeDef
+
+def get_value() -> DeleteBatchPredictionInputRequestTypeDef:
+    return {
+        "BatchPredictionId": ...,
+    }
 ```
 
-Required fields:
-
-- `BatchPredictionId`: `str`
-
-<a id="deletebatchpredictionoutputtypedef"></a>
+```python title="Definition"
+class DeleteBatchPredictionInputRequestTypeDef(TypedDict):
+    BatchPredictionId: str,
+```
 
 ## DeleteBatchPredictionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionOutputTypeDef
+
+def get_value() -> DeleteBatchPredictionOutputTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBatchPredictionOutputTypeDef(TypedDict):
+    BatchPredictionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BatchPredictionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletedatasourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDataSourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteDataSourceInputRequestTypeDef
+
+def get_value() -> DeleteDataSourceInputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSourceId`: `str`
-
-<a id="deletedatasourceoutputtypedef"></a>
+```python title="Definition"
+class DeleteDataSourceInputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+```
 
 ## DeleteDataSourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteDataSourceOutputTypeDef
+
+def get_value() -> DeleteDataSourceOutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDataSourceOutputTypeDef(TypedDict):
+    DataSourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DataSourceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteevaluationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEvaluationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteEvaluationInputRequestTypeDef
+
+def get_value() -> DeleteEvaluationInputRequestTypeDef:
+    return {
+        "EvaluationId": ...,
+    }
 ```
 
-Required fields:
-
-- `EvaluationId`: `str`
-
-<a id="deleteevaluationoutputtypedef"></a>
+```python title="Definition"
+class DeleteEvaluationInputRequestTypeDef(TypedDict):
+    EvaluationId: str,
+```
 
 ## DeleteEvaluationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteEvaluationOutputTypeDef
+
+def get_value() -> DeleteEvaluationOutputTypeDef:
+    return {
+        "EvaluationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteEvaluationOutputTypeDef(TypedDict):
+    EvaluationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EvaluationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletemlmodelinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMLModelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteMLModelInputRequestTypeDef
+
+def get_value() -> DeleteMLModelInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-
-<a id="deletemlmodeloutputtypedef"></a>
+```python title="Definition"
+class DeleteMLModelInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+```
 
 ## DeleteMLModelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteMLModelOutputTypeDef
+
+def get_value() -> DeleteMLModelOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMLModelOutputTypeDef(TypedDict):
+    MLModelId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MLModelId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterealtimeendpointinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRealtimeEndpointInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointInputRequestTypeDef
+
+def get_value() -> DeleteRealtimeEndpointInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-
-<a id="deleterealtimeendpointoutputtypedef"></a>
+```python title="Definition"
+class DeleteRealtimeEndpointInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+```
 
 ## DeleteRealtimeEndpointOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointOutputTypeDef
+
+def get_value() -> DeleteRealtimeEndpointOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "RealtimeEndpointInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRealtimeEndpointOutputTypeDef(TypedDict):
+    MLModelId: str,
+    RealtimeEndpointInfo: RealtimeEndpointInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MLModelId`: `str`
-- `RealtimeEndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetagsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteTagsInputRequestTypeDef
+
+def get_value() -> DeleteTagsInputRequestTypeDef:
+    return {
+        "TagKeys": ...,
+        "ResourceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTagsInputRequestTypeDef(TypedDict):
+    TagKeys: Sequence[str],
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+```
 
-- `TagKeys`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-
-<a id="deletetagsoutputtypedef"></a>
-
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
 ## DeleteTagsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DeleteTagsOutputTypeDef
+
+def get_value() -> DeleteTagsOutputTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTagsOutputTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef
 
-<a id="describebatchpredictionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef
 
+def get_value() -> DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef(TypedDict):
+    FilterVariable: NotRequired[BatchPredictionFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef
+
+def get_value() -> DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBatchPredictionsInputDescribeBatchPredictionsPaginateTypeDef(TypedDict):
+    FilterVariable: NotRequired[BatchPredictionFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBatchPredictionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsInputRequestTypeDef
+
+def get_value() -> DescribeBatchPredictionsInputRequestTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeBatchPredictionsInputRequestTypeDef(TypedDict):
+    FilterVariable: NotRequired[BatchPredictionFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `FilterVariable`:
-  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describebatchpredictionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## DescribeBatchPredictionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeBatchPredictionsOutputTypeDef
+
+def get_value() -> DescribeBatchPredictionsOutputTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBatchPredictionsOutputTypeDef(TypedDict):
+    Results: List[BatchPredictionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`:
-  `List`\[[BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BatchPredictionTypeDef](./type_defs.md#batchpredictiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDataSourcesInputDataSourceAvailableWaitTypeDef
 
-<a id="describedatasourcesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesInputDataSourceAvailableWaitTypeDef
 
+def get_value() -> DescribeDataSourcesInputDataSourceAvailableWaitTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourcesInputDataSourceAvailableWaitTypeDef(TypedDict):
+    FilterVariable: NotRequired[DataSourceFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef
+
+def get_value() -> DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDataSourcesInputDescribeDataSourcesPaginateTypeDef(TypedDict):
+    FilterVariable: NotRequired[DataSourceFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDataSourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesInputRequestTypeDef
+
+def get_value() -> DescribeDataSourcesInputRequestTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeDataSourcesInputRequestTypeDef(TypedDict):
+    FilterVariable: NotRequired[DataSourceFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `FilterVariable`:
-  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describedatasourcesoutputtypedef"></a>
-
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## DescribeDataSourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeDataSourcesOutputTypeDef
+
+def get_value() -> DescribeDataSourcesOutputTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDataSourcesOutputTypeDef(TypedDict):
+    Results: List[DataSourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`: `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef
 
-<a id="describeevaluationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef
 
+def get_value() -> DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEvaluationsInputDescribeEvaluationsPaginateTypeDef(TypedDict):
+    FilterVariable: NotRequired[EvaluationFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeEvaluationsInputEvaluationAvailableWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsInputEvaluationAvailableWaitTypeDef
+
+def get_value() -> DescribeEvaluationsInputEvaluationAvailableWaitTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEvaluationsInputEvaluationAvailableWaitTypeDef(TypedDict):
+    FilterVariable: NotRequired[EvaluationFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeEvaluationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsInputRequestTypeDef
+
+def get_value() -> DescribeEvaluationsInputRequestTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEvaluationsInputRequestTypeDef(TypedDict):
+    FilterVariable: NotRequired[EvaluationFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `FilterVariable`:
-  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describeevaluationsoutputtypedef"></a>
-
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## DescribeEvaluationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeEvaluationsOutputTypeDef
+
+def get_value() -> DescribeEvaluationsOutputTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEvaluationsOutputTypeDef(TypedDict):
+    Results: List[EvaluationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`: `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EvaluationTypeDef](./type_defs.md#evaluationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeMLModelsInputDescribeMLModelsPaginateTypeDef
 
-<a id="describemlmodelsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeMLModelsInputDescribeMLModelsPaginateTypeDef
 
+def get_value() -> DescribeMLModelsInputDescribeMLModelsPaginateTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMLModelsInputDescribeMLModelsPaginateTypeDef(TypedDict):
+    FilterVariable: NotRequired[MLModelFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+## DescribeMLModelsInputMLModelAvailableWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_machinelearning.type_defs import DescribeMLModelsInputMLModelAvailableWaitTypeDef
+
+def get_value() -> DescribeMLModelsInputMLModelAvailableWaitTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeMLModelsInputMLModelAvailableWaitTypeDef(TypedDict):
+    FilterVariable: NotRequired[MLModelFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeMLModelsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeMLModelsInputRequestTypeDef
+
+def get_value() -> DescribeMLModelsInputRequestTypeDef:
+    return {
+        "FilterVariable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeMLModelsInputRequestTypeDef(TypedDict):
+    FilterVariable: NotRequired[MLModelFilterVariableType],  # (1)
+    EQ: NotRequired[str],
+    GT: NotRequired[str],
+    LT: NotRequired[str],
+    GE: NotRequired[str],
+    LE: NotRequired[str],
+    NE: NotRequired[str],
+    Prefix: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (2)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `FilterVariable`:
-  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describemlmodelsoutputtypedef"></a>
-
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## DescribeMLModelsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeMLModelsOutputTypeDef
+
+def get_value() -> DescribeMLModelsOutputTypeDef:
+    return {
+        "Results": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMLModelsOutputTypeDef(TypedDict):
+    Results: List[MLModelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`: `List`\[[MLModelTypeDef](./type_defs.md#mlmodeltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetagsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MLModelTypeDef](./type_defs.md#mlmodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeTagsInputRequestTypeDef
+
+def get_value() -> DescribeTagsInputRequestTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTagsInputRequestTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+```
 
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-
-<a id="describetagsoutputtypedef"></a>
-
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
 ## DescribeTagsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import DescribeTagsOutputTypeDef
+
+def get_value() -> DescribeTagsOutputTypeDef:
+    return {
+        "ResourceId": ...,
+        "ResourceType": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTagsOutputTypeDef(TypedDict):
+    ResourceId: str,
+    ResourceType: TaggableResourceTypeType,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ResourceId`: `str`
-- `ResourceType`:
-  [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="evaluationtypedef"></a>
-
+1. See [:material-code-brackets: TaggableResourceTypeType](./literals.md#taggableresourcetypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EvaluationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import EvaluationTypeDef
+
+def get_value() -> EvaluationTypeDef:
+    return {
+        "EvaluationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationTypeDef(TypedDict):
+    EvaluationId: NotRequired[str],
+    MLModelId: NotRequired[str],
+    EvaluationDataSourceId: NotRequired[str],
+    InputDataLocationS3: NotRequired[str],
+    CreatedByIamUser: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    Name: NotRequired[str],
+    Status: NotRequired[EntityStatusType],  # (1)
+    PerformanceMetrics: NotRequired[PerformanceMetricsTypeDef],  # (2)
+    Message: NotRequired[str],
+    ComputeTime: NotRequired[int],
+    FinishedAt: NotRequired[datetime],
+    StartedAt: NotRequired[datetime],
+```
 
-- `EvaluationId`: `str`
-- `MLModelId`: `str`
-- `EvaluationDataSourceId`: `str`
-- `InputDataLocationS3`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `PerformanceMetrics`:
-  [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-
-<a id="getbatchpredictioninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef) 
 ## GetBatchPredictionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetBatchPredictionInputRequestTypeDef
+
+def get_value() -> GetBatchPredictionInputRequestTypeDef:
+    return {
+        "BatchPredictionId": ...,
+    }
 ```
 
-Required fields:
-
-- `BatchPredictionId`: `str`
-
-<a id="getbatchpredictionoutputtypedef"></a>
+```python title="Definition"
+class GetBatchPredictionInputRequestTypeDef(TypedDict):
+    BatchPredictionId: str,
+```
 
 ## GetBatchPredictionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetBatchPredictionOutputTypeDef
+
+def get_value() -> GetBatchPredictionOutputTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "MLModelId": ...,
+        "BatchPredictionDataSourceId": ...,
+        "InputDataLocationS3": ...,
+        "CreatedByIamUser": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Name": ...,
+        "Status": ...,
+        "OutputUri": ...,
+        "LogUri": ...,
+        "Message": ...,
+        "ComputeTime": ...,
+        "FinishedAt": ...,
+        "StartedAt": ...,
+        "TotalRecordCount": ...,
+        "InvalidRecordCount": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetBatchPredictionOutputTypeDef(TypedDict):
+    BatchPredictionId: str,
+    MLModelId: str,
+    BatchPredictionDataSourceId: str,
+    InputDataLocationS3: str,
+    CreatedByIamUser: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Name: str,
+    Status: EntityStatusType,  # (1)
+    OutputUri: str,
+    LogUri: str,
+    Message: str,
+    ComputeTime: int,
+    FinishedAt: datetime,
+    StartedAt: datetime,
+    TotalRecordCount: int,
+    InvalidRecordCount: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BatchPredictionId`: `str`
-- `MLModelId`: `str`
-- `BatchPredictionDataSourceId`: `str`
-- `InputDataLocationS3`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `OutputUri`: `str`
-- `LogUri`: `str`
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-- `TotalRecordCount`: `int`
-- `InvalidRecordCount`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdatasourceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDataSourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetDataSourceInputRequestTypeDef
+
+def get_value() -> GetDataSourceInputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSourceId`: `str`
-
-Optional fields:
-
-- `Verbose`: `bool`
-
-<a id="getdatasourceoutputtypedef"></a>
+```python title="Definition"
+class GetDataSourceInputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+    Verbose: NotRequired[bool],
+```
 
 ## GetDataSourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetDataSourceOutputTypeDef
+
+def get_value() -> GetDataSourceOutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "DataLocationS3": ...,
+        "DataRearrangement": ...,
+        "CreatedByIamUser": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "DataSizeInBytes": ...,
+        "NumberOfFiles": ...,
+        "Name": ...,
+        "Status": ...,
+        "LogUri": ...,
+        "Message": ...,
+        "RedshiftMetadata": ...,
+        "RDSMetadata": ...,
+        "RoleARN": ...,
+        "ComputeStatistics": ...,
+        "ComputeTime": ...,
+        "FinishedAt": ...,
+        "StartedAt": ...,
+        "DataSourceSchema": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataSourceOutputTypeDef(TypedDict):
+    DataSourceId: str,
+    DataLocationS3: str,
+    DataRearrangement: str,
+    CreatedByIamUser: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    DataSizeInBytes: int,
+    NumberOfFiles: int,
+    Name: str,
+    Status: EntityStatusType,  # (1)
+    LogUri: str,
+    Message: str,
+    RedshiftMetadata: RedshiftMetadataTypeDef,  # (2)
+    RDSMetadata: RDSMetadataTypeDef,  # (3)
+    RoleARN: str,
+    ComputeStatistics: bool,
+    ComputeTime: int,
+    FinishedAt: datetime,
+    StartedAt: datetime,
+    DataSourceSchema: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `DataSourceId`: `str`
-- `DataLocationS3`: `str`
-- `DataRearrangement`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `DataSizeInBytes`: `int`
-- `NumberOfFiles`: `int`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `LogUri`: `str`
-- `Message`: `str`
-- `RedshiftMetadata`:
-  [RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef)
-- `RDSMetadata`: [RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef)
-- `RoleARN`: `str`
-- `ComputeStatistics`: `bool`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-- `DataSourceSchema`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getevaluationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: RedshiftMetadataTypeDef](./type_defs.md#redshiftmetadatatypedef) 
+3. See [:material-code-braces: RDSMetadataTypeDef](./type_defs.md#rdsmetadatatypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEvaluationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetEvaluationInputRequestTypeDef
+
+def get_value() -> GetEvaluationInputRequestTypeDef:
+    return {
+        "EvaluationId": ...,
+    }
 ```
 
-Required fields:
-
-- `EvaluationId`: `str`
-
-<a id="getevaluationoutputtypedef"></a>
+```python title="Definition"
+class GetEvaluationInputRequestTypeDef(TypedDict):
+    EvaluationId: str,
+```
 
 ## GetEvaluationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetEvaluationOutputTypeDef
+
+def get_value() -> GetEvaluationOutputTypeDef:
+    return {
+        "EvaluationId": ...,
+        "MLModelId": ...,
+        "EvaluationDataSourceId": ...,
+        "InputDataLocationS3": ...,
+        "CreatedByIamUser": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Name": ...,
+        "Status": ...,
+        "PerformanceMetrics": ...,
+        "LogUri": ...,
+        "Message": ...,
+        "ComputeTime": ...,
+        "FinishedAt": ...,
+        "StartedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEvaluationOutputTypeDef(TypedDict):
+    EvaluationId: str,
+    MLModelId: str,
+    EvaluationDataSourceId: str,
+    InputDataLocationS3: str,
+    CreatedByIamUser: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Name: str,
+    Status: EntityStatusType,  # (1)
+    PerformanceMetrics: PerformanceMetricsTypeDef,  # (2)
+    LogUri: str,
+    Message: str,
+    ComputeTime: int,
+    FinishedAt: datetime,
+    StartedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `EvaluationId`: `str`
-- `MLModelId`: `str`
-- `EvaluationDataSourceId`: `str`
-- `InputDataLocationS3`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `PerformanceMetrics`:
-  [PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef)
-- `LogUri`: `str`
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmlmodelinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: PerformanceMetricsTypeDef](./type_defs.md#performancemetricstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMLModelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetMLModelInputRequestTypeDef
+
+def get_value() -> GetMLModelInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-
-Optional fields:
-
-- `Verbose`: `bool`
-
-<a id="getmlmodeloutputtypedef"></a>
+```python title="Definition"
+class GetMLModelInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+    Verbose: NotRequired[bool],
+```
 
 ## GetMLModelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import GetMLModelOutputTypeDef
+
+def get_value() -> GetMLModelOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "TrainingDataSourceId": ...,
+        "CreatedByIamUser": ...,
+        "CreatedAt": ...,
+        "LastUpdatedAt": ...,
+        "Name": ...,
+        "Status": ...,
+        "SizeInBytes": ...,
+        "EndpointInfo": ...,
+        "TrainingParameters": ...,
+        "InputDataLocationS3": ...,
+        "MLModelType": ...,
+        "ScoreThreshold": ...,
+        "ScoreThresholdLastUpdatedAt": ...,
+        "LogUri": ...,
+        "Message": ...,
+        "ComputeTime": ...,
+        "FinishedAt": ...,
+        "StartedAt": ...,
+        "Recipe": ...,
+        "Schema": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMLModelOutputTypeDef(TypedDict):
+    MLModelId: str,
+    TrainingDataSourceId: str,
+    CreatedByIamUser: str,
+    CreatedAt: datetime,
+    LastUpdatedAt: datetime,
+    Name: str,
+    Status: EntityStatusType,  # (1)
+    SizeInBytes: int,
+    EndpointInfo: RealtimeEndpointInfoTypeDef,  # (2)
+    TrainingParameters: Dict[str, str],
+    InputDataLocationS3: str,
+    MLModelType: MLModelTypeType,  # (3)
+    ScoreThreshold: float,
+    ScoreThresholdLastUpdatedAt: datetime,
+    LogUri: str,
+    Message: str,
+    ComputeTime: int,
+    FinishedAt: datetime,
+    StartedAt: datetime,
+    Recipe: str,
+    Schema: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `MLModelId`: `str`
-- `TrainingDataSourceId`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `SizeInBytes`: `int`
-- `EndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
-- `TrainingParameters`: `Dict`\[`str`, `str`\]
-- `InputDataLocationS3`: `str`
-- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
-- `ScoreThreshold`: `float`
-- `ScoreThresholdLastUpdatedAt`: `datetime`
-- `LogUri`: `str`
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-- `Recipe`: `str`
-- `Schema`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mlmodeltypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef) 
+3. See [:material-code-brackets: MLModelTypeType](./literals.md#mlmodeltypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MLModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import MLModelTypeDef
+
+def get_value() -> MLModelTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MLModelTypeDef(TypedDict):
+    MLModelId: NotRequired[str],
+    TrainingDataSourceId: NotRequired[str],
+    CreatedByIamUser: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    LastUpdatedAt: NotRequired[datetime],
+    Name: NotRequired[str],
+    Status: NotRequired[EntityStatusType],  # (1)
+    SizeInBytes: NotRequired[int],
+    EndpointInfo: NotRequired[RealtimeEndpointInfoTypeDef],  # (2)
+    TrainingParameters: NotRequired[Dict[str, str]],
+    InputDataLocationS3: NotRequired[str],
+    Algorithm: NotRequired[AlgorithmType],  # (3)
+    MLModelType: NotRequired[MLModelTypeType],  # (4)
+    ScoreThreshold: NotRequired[float],
+    ScoreThresholdLastUpdatedAt: NotRequired[datetime],
+    Message: NotRequired[str],
+    ComputeTime: NotRequired[int],
+    FinishedAt: NotRequired[datetime],
+    StartedAt: NotRequired[datetime],
+```
 
-- `MLModelId`: `str`
-- `TrainingDataSourceId`: `str`
-- `CreatedByIamUser`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Name`: `str`
-- `Status`: [EntityStatusType](./literals.md#entitystatustype)
-- `SizeInBytes`: `int`
-- `EndpointInfo`:
-  [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
-- `TrainingParameters`: `Dict`\[`str`, `str`\]
-- `InputDataLocationS3`: `str`
-- `Algorithm`: `Literal['sgd']` (see
-  [AlgorithmType](./literals.md#algorithmtype))
-- `MLModelType`: [MLModelTypeType](./literals.md#mlmodeltypetype)
-- `ScoreThreshold`: `float`
-- `ScoreThresholdLastUpdatedAt`: `datetime`
-- `Message`: `str`
-- `ComputeTime`: `int`
-- `FinishedAt`: `datetime`
-- `StartedAt`: `datetime`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: EntityStatusType](./literals.md#entitystatustype) 
+2. See [:material-code-braces: RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef) 
+3. See [:material-code-brackets: AlgorithmType](./literals.md#algorithmtype) 
+4. See [:material-code-brackets: MLModelTypeType](./literals.md#mlmodeltypetype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="performancemetricstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PerformanceMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import PerformanceMetricsTypeDef
+
+def get_value() -> PerformanceMetricsTypeDef:
+    return {
+        "Properties": ...,
+    }
 ```
 
-Optional fields:
-
-- `Properties`: `Dict`\[`str`, `str`\]
-
-<a id="predictinputrequesttypedef"></a>
+```python title="Definition"
+class PerformanceMetricsTypeDef(TypedDict):
+    Properties: NotRequired[Dict[str, str]],
+```
 
 ## PredictInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import PredictInputRequestTypeDef
+
+def get_value() -> PredictInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+        "Record": ...,
+        "PredictEndpoint": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-- `Record`: `Mapping`\[`str`, `str`\]
-- `PredictEndpoint`: `str`
-
-<a id="predictoutputtypedef"></a>
+```python title="Definition"
+class PredictInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+    Record: Mapping[str, str],
+    PredictEndpoint: str,
+```
 
 ## PredictOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import PredictOutputTypeDef
+
+def get_value() -> PredictOutputTypeDef:
+    return {
+        "Prediction": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PredictOutputTypeDef(TypedDict):
+    Prediction: PredictionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Prediction`: [PredictionTypeDef](./type_defs.md#predictiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="predictiontypedef"></a>
-
+1. See [:material-code-braces: PredictionTypeDef](./type_defs.md#predictiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PredictionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import PredictionTypeDef
+
+def get_value() -> PredictionTypeDef:
+    return {
+        "predictedLabel": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredictionTypeDef(TypedDict):
+    predictedLabel: NotRequired[str],
+    predictedValue: NotRequired[float],
+    predictedScores: NotRequired[Dict[str, float]],
+    details: NotRequired[Dict[DetailsAttributesType, str]],  # (1)
+```
 
-- `predictedLabel`: `str`
-- `predictedValue`: `float`
-- `predictedScores`: `Dict`\[`str`, `float`\]
-- `details`:
-  `Dict`\[[DetailsAttributesType](./literals.md#detailsattributestype), `str`\]
-
-<a id="rdsdataspectypedef"></a>
-
+1. See [:material-code-brackets: DetailsAttributesType](./literals.md#detailsattributestype) 
 ## RDSDataSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RDSDataSpecTypeDef
+
+def get_value() -> RDSDataSpecTypeDef:
+    return {
+        "DatabaseInformation": ...,
+        "SelectSqlQuery": ...,
+        "DatabaseCredentials": ...,
+        "S3StagingLocation": ...,
+        "ResourceRole": ...,
+        "ServiceRole": ...,
+        "SubnetId": ...,
+        "SecurityGroupIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RDSDataSpecTypeDef(TypedDict):
+    DatabaseInformation: RDSDatabaseTypeDef,  # (1)
+    SelectSqlQuery: str,
+    DatabaseCredentials: RDSDatabaseCredentialsTypeDef,  # (2)
+    S3StagingLocation: str,
+    ResourceRole: str,
+    ServiceRole: str,
+    SubnetId: str,
+    SecurityGroupIds: Sequence[str],
+    DataRearrangement: NotRequired[str],
+    DataSchema: NotRequired[str],
+    DataSchemaUri: NotRequired[str],
+```
 
-- `DatabaseInformation`:
-  [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
-- `SelectSqlQuery`: `str`
-- `DatabaseCredentials`:
-  [RDSDatabaseCredentialsTypeDef](./type_defs.md#rdsdatabasecredentialstypedef)
-- `S3StagingLocation`: `str`
-- `ResourceRole`: `str`
-- `ServiceRole`: `str`
-- `SubnetId`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `DataRearrangement`: `str`
-- `DataSchema`: `str`
-- `DataSchemaUri`: `str`
-
-<a id="rdsdatabasecredentialstypedef"></a>
-
+1. See [:material-code-braces: RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef) 
+2. See [:material-code-braces: RDSDatabaseCredentialsTypeDef](./type_defs.md#rdsdatabasecredentialstypedef) 
 ## RDSDatabaseCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RDSDatabaseCredentialsTypeDef
+
+def get_value() -> RDSDatabaseCredentialsTypeDef:
+    return {
+        "Username": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `Username`: `str`
-- `Password`: `str`
-
-<a id="rdsdatabasetypedef"></a>
+```python title="Definition"
+class RDSDatabaseCredentialsTypeDef(TypedDict):
+    Username: str,
+    Password: str,
+```
 
 ## RDSDatabaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RDSDatabaseTypeDef
+
+def get_value() -> RDSDatabaseTypeDef:
+    return {
+        "InstanceIdentifier": ...,
+        "DatabaseName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceIdentifier`: `str`
-- `DatabaseName`: `str`
-
-<a id="rdsmetadatatypedef"></a>
+```python title="Definition"
+class RDSDatabaseTypeDef(TypedDict):
+    InstanceIdentifier: str,
+    DatabaseName: str,
+```
 
 ## RDSMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RDSMetadataTypeDef
+
+def get_value() -> RDSMetadataTypeDef:
+    return {
+        "Database": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RDSMetadataTypeDef(TypedDict):
+    Database: NotRequired[RDSDatabaseTypeDef],  # (1)
+    DatabaseUserName: NotRequired[str],
+    SelectSqlQuery: NotRequired[str],
+    ResourceRole: NotRequired[str],
+    ServiceRole: NotRequired[str],
+    DataPipelineId: NotRequired[str],
+```
 
-- `Database`: [RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef)
-- `DatabaseUserName`: `str`
-- `SelectSqlQuery`: `str`
-- `ResourceRole`: `str`
-- `ServiceRole`: `str`
-- `DataPipelineId`: `str`
-
-<a id="realtimeendpointinfotypedef"></a>
-
+1. See [:material-code-braces: RDSDatabaseTypeDef](./type_defs.md#rdsdatabasetypedef) 
 ## RealtimeEndpointInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RealtimeEndpointInfoTypeDef
+
+def get_value() -> RealtimeEndpointInfoTypeDef:
+    return {
+        "PeakRequestsPerSecond": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RealtimeEndpointInfoTypeDef(TypedDict):
+    PeakRequestsPerSecond: NotRequired[int],
+    CreatedAt: NotRequired[datetime],
+    EndpointUrl: NotRequired[str],
+    EndpointStatus: NotRequired[RealtimeEndpointStatusType],  # (1)
+```
 
-- `PeakRequestsPerSecond`: `int`
-- `CreatedAt`: `datetime`
-- `EndpointUrl`: `str`
-- `EndpointStatus`:
-  [RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype)
-
-<a id="redshiftdataspectypedef"></a>
-
+1. See [:material-code-brackets: RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype) 
 ## RedshiftDataSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RedshiftDataSpecTypeDef
+
+def get_value() -> RedshiftDataSpecTypeDef:
+    return {
+        "DatabaseInformation": ...,
+        "SelectSqlQuery": ...,
+        "DatabaseCredentials": ...,
+        "S3StagingLocation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedshiftDataSpecTypeDef(TypedDict):
+    DatabaseInformation: RedshiftDatabaseTypeDef,  # (1)
+    SelectSqlQuery: str,
+    DatabaseCredentials: RedshiftDatabaseCredentialsTypeDef,  # (2)
+    S3StagingLocation: str,
+    DataRearrangement: NotRequired[str],
+    DataSchema: NotRequired[str],
+    DataSchemaUri: NotRequired[str],
+```
 
-- `DatabaseInformation`:
-  [RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef)
-- `SelectSqlQuery`: `str`
-- `DatabaseCredentials`:
-  [RedshiftDatabaseCredentialsTypeDef](./type_defs.md#redshiftdatabasecredentialstypedef)
-- `S3StagingLocation`: `str`
-
-Optional fields:
-
-- `DataRearrangement`: `str`
-- `DataSchema`: `str`
-- `DataSchemaUri`: `str`
-
-<a id="redshiftdatabasecredentialstypedef"></a>
-
+1. See [:material-code-braces: RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef) 
+2. See [:material-code-braces: RedshiftDatabaseCredentialsTypeDef](./type_defs.md#redshiftdatabasecredentialstypedef) 
 ## RedshiftDatabaseCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RedshiftDatabaseCredentialsTypeDef
+
+def get_value() -> RedshiftDatabaseCredentialsTypeDef:
+    return {
+        "Username": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `Username`: `str`
-- `Password`: `str`
-
-<a id="redshiftdatabasetypedef"></a>
+```python title="Definition"
+class RedshiftDatabaseCredentialsTypeDef(TypedDict):
+    Username: str,
+    Password: str,
+```
 
 ## RedshiftDatabaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RedshiftDatabaseTypeDef
+
+def get_value() -> RedshiftDatabaseTypeDef:
+    return {
+        "DatabaseName": ...,
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DatabaseName`: `str`
-- `ClusterIdentifier`: `str`
-
-<a id="redshiftmetadatatypedef"></a>
+```python title="Definition"
+class RedshiftDatabaseTypeDef(TypedDict):
+    DatabaseName: str,
+    ClusterIdentifier: str,
+```
 
 ## RedshiftMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import RedshiftMetadataTypeDef
+
+def get_value() -> RedshiftMetadataTypeDef:
+    return {
+        "RedshiftDatabase": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RedshiftMetadataTypeDef(TypedDict):
+    RedshiftDatabase: NotRequired[RedshiftDatabaseTypeDef],  # (1)
+    DatabaseUserName: NotRequired[str],
+    SelectSqlQuery: NotRequired[str],
+```
 
-- `RedshiftDatabase`:
-  [RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef)
-- `DatabaseUserName`: `str`
-- `SelectSqlQuery`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: RedshiftDatabaseTypeDef](./type_defs.md#redshiftdatabasetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3dataspectypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3DataSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import S3DataSpecTypeDef
+
+def get_value() -> S3DataSpecTypeDef:
+    return {
+        "DataLocationS3": ...,
+    }
 ```
 
-Required fields:
-
-- `DataLocationS3`: `str`
-
-Optional fields:
-
-- `DataRearrangement`: `str`
-- `DataSchema`: `str`
-- `DataSchemaLocationS3`: `str`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class S3DataSpecTypeDef(TypedDict):
+    DataLocationS3: str,
+    DataRearrangement: NotRequired[str],
+    DataSchema: NotRequired[str],
+    DataSchemaLocationS3: NotRequired[str],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="updatebatchpredictioninputrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UpdateBatchPredictionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionInputRequestTypeDef
+
+def get_value() -> UpdateBatchPredictionInputRequestTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "BatchPredictionName": ...,
+    }
 ```
 
-Required fields:
-
-- `BatchPredictionId`: `str`
-- `BatchPredictionName`: `str`
-
-<a id="updatebatchpredictionoutputtypedef"></a>
+```python title="Definition"
+class UpdateBatchPredictionInputRequestTypeDef(TypedDict):
+    BatchPredictionId: str,
+    BatchPredictionName: str,
+```
 
 ## UpdateBatchPredictionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateBatchPredictionOutputTypeDef
+
+def get_value() -> UpdateBatchPredictionOutputTypeDef:
+    return {
+        "BatchPredictionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBatchPredictionOutputTypeDef(TypedDict):
+    BatchPredictionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `BatchPredictionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedatasourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDataSourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateDataSourceInputRequestTypeDef
+
+def get_value() -> UpdateDataSourceInputRequestTypeDef:
+    return {
+        "DataSourceId": ...,
+        "DataSourceName": ...,
+    }
 ```
 
-Required fields:
-
-- `DataSourceId`: `str`
-- `DataSourceName`: `str`
-
-<a id="updatedatasourceoutputtypedef"></a>
+```python title="Definition"
+class UpdateDataSourceInputRequestTypeDef(TypedDict):
+    DataSourceId: str,
+    DataSourceName: str,
+```
 
 ## UpdateDataSourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateDataSourceOutputTypeDef
+
+def get_value() -> UpdateDataSourceOutputTypeDef:
+    return {
+        "DataSourceId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDataSourceOutputTypeDef(TypedDict):
+    DataSourceId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DataSourceId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateevaluationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEvaluationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateEvaluationInputRequestTypeDef
+
+def get_value() -> UpdateEvaluationInputRequestTypeDef:
+    return {
+        "EvaluationId": ...,
+        "EvaluationName": ...,
+    }
 ```
 
-Required fields:
-
-- `EvaluationId`: `str`
-- `EvaluationName`: `str`
-
-<a id="updateevaluationoutputtypedef"></a>
+```python title="Definition"
+class UpdateEvaluationInputRequestTypeDef(TypedDict):
+    EvaluationId: str,
+    EvaluationName: str,
+```
 
 ## UpdateEvaluationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateEvaluationOutputTypeDef
+
+def get_value() -> UpdateEvaluationOutputTypeDef:
+    return {
+        "EvaluationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEvaluationOutputTypeDef(TypedDict):
+    EvaluationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EvaluationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemlmodelinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMLModelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateMLModelInputRequestTypeDef
+
+def get_value() -> UpdateMLModelInputRequestTypeDef:
+    return {
+        "MLModelId": ...,
+    }
 ```
 
-Required fields:
-
-- `MLModelId`: `str`
-
-Optional fields:
-
-- `MLModelName`: `str`
-- `ScoreThreshold`: `float`
-
-<a id="updatemlmodeloutputtypedef"></a>
+```python title="Definition"
+class UpdateMLModelInputRequestTypeDef(TypedDict):
+    MLModelId: str,
+    MLModelName: NotRequired[str],
+    ScoreThreshold: NotRequired[float],
+```
 
 ## UpdateMLModelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import UpdateMLModelOutputTypeDef
+
+def get_value() -> UpdateMLModelOutputTypeDef:
+    return {
+        "MLModelId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMLModelOutputTypeDef(TypedDict):
+    MLModelId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MLModelId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_machinelearning.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

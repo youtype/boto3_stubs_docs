@@ -1,100 +1,18 @@
-<a id="workmailclient-for-boto3-workmail-module"></a>
-
-# WorkMailClient for boto3 WorkMail module
+# WorkMailClient
 
 > [Index](../README.md) > [WorkMail](./README.md) > WorkMailClient
 
-Auto-generated documentation for
-[WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
-type annotations stubs module
-[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
+!!! note ""
 
-- [WorkMailClient for boto3 WorkMail module](#workmailclient-for-boto3-workmail-module)
-  - [WorkMailClient](#workmailclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_delegate_to_resource](#associate_delegate_to_resource)
-    - [associate_member_to_group](#associate_member_to_group)
-    - [can_paginate](#can_paginate)
-    - [cancel_mailbox_export_job](#cancel_mailbox_export_job)
-    - [create_alias](#create_alias)
-    - [create_group](#create_group)
-    - [create_mobile_device_access_rule](#create_mobile_device_access_rule)
-    - [create_organization](#create_organization)
-    - [create_resource](#create_resource)
-    - [create_user](#create_user)
-    - [delete_access_control_rule](#delete_access_control_rule)
-    - [delete_alias](#delete_alias)
-    - [delete_email_monitoring_configuration](#delete_email_monitoring_configuration)
-    - [delete_group](#delete_group)
-    - [delete_mailbox_permissions](#delete_mailbox_permissions)
-    - [delete_mobile_device_access_override](#delete_mobile_device_access_override)
-    - [delete_mobile_device_access_rule](#delete_mobile_device_access_rule)
-    - [delete_organization](#delete_organization)
-    - [delete_resource](#delete_resource)
-    - [delete_retention_policy](#delete_retention_policy)
-    - [delete_user](#delete_user)
-    - [deregister_from_work_mail](#deregister_from_work_mail)
-    - [deregister_mail_domain](#deregister_mail_domain)
-    - [describe_email_monitoring_configuration](#describe_email_monitoring_configuration)
-    - [describe_group](#describe_group)
-    - [describe_inbound_dmarc_settings](#describe_inbound_dmarc_settings)
-    - [describe_mailbox_export_job](#describe_mailbox_export_job)
-    - [describe_organization](#describe_organization)
-    - [describe_resource](#describe_resource)
-    - [describe_user](#describe_user)
-    - [disassociate_delegate_from_resource](#disassociate_delegate_from_resource)
-    - [disassociate_member_from_group](#disassociate_member_from_group)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_access_control_effect](#get_access_control_effect)
-    - [get_default_retention_policy](#get_default_retention_policy)
-    - [get_mail_domain](#get_mail_domain)
-    - [get_mailbox_details](#get_mailbox_details)
-    - [get_mobile_device_access_effect](#get_mobile_device_access_effect)
-    - [get_mobile_device_access_override](#get_mobile_device_access_override)
-    - [list_access_control_rules](#list_access_control_rules)
-    - [list_aliases](#list_aliases)
-    - [list_group_members](#list_group_members)
-    - [list_groups](#list_groups)
-    - [list_mail_domains](#list_mail_domains)
-    - [list_mailbox_export_jobs](#list_mailbox_export_jobs)
-    - [list_mailbox_permissions](#list_mailbox_permissions)
-    - [list_mobile_device_access_overrides](#list_mobile_device_access_overrides)
-    - [list_mobile_device_access_rules](#list_mobile_device_access_rules)
-    - [list_organizations](#list_organizations)
-    - [list_resource_delegates](#list_resource_delegates)
-    - [list_resources](#list_resources)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_users](#list_users)
-    - [put_access_control_rule](#put_access_control_rule)
-    - [put_email_monitoring_configuration](#put_email_monitoring_configuration)
-    - [put_inbound_dmarc_settings](#put_inbound_dmarc_settings)
-    - [put_mailbox_permissions](#put_mailbox_permissions)
-    - [put_mobile_device_access_override](#put_mobile_device_access_override)
-    - [put_retention_policy](#put_retention_policy)
-    - [register_mail_domain](#register_mail_domain)
-    - [register_to_work_mail](#register_to_work_mail)
-    - [reset_password](#reset_password)
-    - [start_mailbox_export_job](#start_mailbox_export_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_default_mail_domain](#update_default_mail_domain)
-    - [update_mailbox_quota](#update_mailbox_quota)
-    - [update_mobile_device_access_rule](#update_mobile_device_access_rule)
-    - [update_primary_email_address](#update_primary_email_address)
-    - [update_resource](#update_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="workmailclient"></a>
+    Auto-generated documentation for [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
+    type annotations stubs module [mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ## WorkMailClient
 
-Type annotations for `boto3.client("workmail")`
+Type annotations and code completion for `#!python boto3.client("workmail")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_workmail.client import WorkMailClient
 
@@ -102,1735 +20,2316 @@ def get_workmail_client() -> WorkMailClient:
     return Session().client("workmail")
 ```
 
-Boto3 documentation:
-[WorkMail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("workmail").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("workmail")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DirectoryInUseException,
+    client.DirectoryServiceAuthenticationFailedException,
+    client.DirectoryUnavailableException,
+    client.EmailAddressInUseException,
+    client.EntityAlreadyRegisteredException,
+    client.EntityNotFoundException,
+    client.EntityStateException,
+    client.InvalidConfigurationException,
+    client.InvalidCustomSesConfigurationException,
+    client.InvalidParameterException,
+    client.InvalidPasswordException,
+    client.LimitExceededException,
+    client.MailDomainInUseException,
+    client.MailDomainNotFoundException,
+    client.MailDomainStateException,
+    client.NameAvailabilityException,
+    client.OrganizationNotFoundException,
+    client.OrganizationStateException,
+    client.ReservedNameException,
+    client.ResourceNotFoundException,
+    client.TooManyTagsException,
+    client.UnsupportedOperationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_workmail.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DirectoryInUseException`
-- `Exceptions.DirectoryServiceAuthenticationFailedException`
-- `Exceptions.DirectoryUnavailableException`
-- `Exceptions.EmailAddressInUseException`
-- `Exceptions.EntityAlreadyRegisteredException`
-- `Exceptions.EntityNotFoundException`
-- `Exceptions.EntityStateException`
-- `Exceptions.InvalidConfigurationException`
-- `Exceptions.InvalidCustomSesConfigurationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidPasswordException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MailDomainInUseException`
-- `Exceptions.MailDomainNotFoundException`
-- `Exceptions.MailDomainStateException`
-- `Exceptions.NameAvailabilityException`
-- `Exceptions.OrganizationNotFoundException`
-- `Exceptions.OrganizationStateException`
-- `Exceptions.ReservedNameException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.UnsupportedOperationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-WorkMailClient exceptions.
-
-Type annotations for `boto3.client("workmail").exceptions` method.
-
-Boto3 documentation:
-[WorkMail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_delegate\_to\_resource"></a>
-
-### associate_delegate_to_resource
+### associate\_delegate\_to\_resource
 
 Adds a member (user or group) to the resource's set of delegates.
 
-Type annotations for `boto3.client("workmail").associate_delegate_to_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").associate_delegate_to_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
 
-Boto3 documentation:
-[WorkMail.Client.associate_delegate_to_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_delegate_to_resource)
+```python title="Method definition"
+def associate_delegate_to_resource(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+    EntityId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDelegateToResourceRequestRequestTypeDef](./type_defs.md#associatedelegatetoresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateDelegateToResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+    "EntityId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_delegate_to_resource(**kwargs)
+```
 
-<a id="associate\_member\_to\_group"></a>
+1. See [:material-code-braces: AssociateDelegateToResourceRequestRequestTypeDef](./type_defs.md#associatedelegatetoresourcerequestrequesttypedef) 
 
-### associate_member_to_group
+### associate\_member\_to\_group
 
 Adds a member (user or group) to the group's set.
 
-Type annotations for `boto3.client("workmail").associate_member_to_group`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").associate_member_to_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
 
-Boto3 documentation:
-[WorkMail.Client.associate_member_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.associate_member_to_group)
+```python title="Method definition"
+def associate_member_to_group(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+    MemberId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateMemberToGroupRequestRequestTypeDef](./type_defs.md#associatemembertogrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateMemberToGroupRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+    "MemberId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_member_to_group(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateMemberToGroupRequestRequestTypeDef](./type_defs.md#associatemembertogrouprequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("workmail").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("workmail").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate)
 
-Boto3 documentation:
-[WorkMail.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_mailbox\_export\_job"></a>
-
-### cancel_mailbox_export_job
+### cancel\_mailbox\_export\_job
 
 Cancels a mailbox export job.
 
-Type annotations for `boto3.client("workmail").cancel_mailbox_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").cancel_mailbox_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
 
-Boto3 documentation:
-[WorkMail.Client.cancel_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.cancel_mailbox_export_job)
+```python title="Method definition"
+def cancel_mailbox_export_job(
+    self,
+    *,
+    ClientToken: str,
+    JobId: str,
+    OrganizationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelMailboxExportJobRequestRequestTypeDef](./type_defs.md#cancelmailboxexportjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelMailboxExportJobRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "JobId": ...,
+    "OrganizationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_mailbox_export_job(**kwargs)
+```
 
-<a id="create\_alias"></a>
+1. See [:material-code-braces: CancelMailboxExportJobRequestRequestTypeDef](./type_defs.md#cancelmailboxexportjobrequestrequesttypedef) 
 
-### create_alias
+### create\_alias
 
 Adds an alias to the set of a given member (user or group) of Amazon WorkMail.
 
-Type annotations for `boto3.client("workmail").create_alias` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
 
-Boto3 documentation:
-[WorkMail.Client.create_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_alias)
+```python title="Method definition"
+def create_alias(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    Alias: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `Alias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAliasRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "Alias": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_alias(**kwargs)
+```
 
-<a id="create\_group"></a>
+1. See [:material-code-braces: CreateAliasRequestRequestTypeDef](./type_defs.md#createaliasrequestrequesttypedef) 
 
-### create_group
+### create\_group
 
 Creates a group that can be used in Amazon WorkMail by calling the
 RegisterToWorkMail operation.
 
-Type annotations for `boto3.client("workmail").create_group` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group)
 
-Boto3 documentation:
-[WorkMail.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+) -> CreateGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_mobile\_device\_access\_rule"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_mobile_device_access_rule
+### create\_mobile\_device\_access\_rule
 
 Creates a new mobile device access rule for the specified Amazon WorkMail
 organization.
 
-Type annotations for
-`boto3.client("workmail").create_mobile_device_access_rule` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_mobile_device_access_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
 
-Boto3 documentation:
-[WorkMail.Client.create_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_mobile_device_access_rule)
+```python title="Method definition"
+def create_mobile_device_access_rule(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+    Effect: MobileDeviceAccessRuleEffectType,  # (1)
+    ClientToken: str = ...,
+    Description: str = ...,
+    DeviceTypes: Sequence[str] = ...,
+    NotDeviceTypes: Sequence[str] = ...,
+    DeviceModels: Sequence[str] = ...,
+    NotDeviceModels: Sequence[str] = ...,
+    DeviceOperatingSystems: Sequence[str] = ...,
+    NotDeviceOperatingSystems: Sequence[str] = ...,
+    DeviceUserAgents: Sequence[str] = ...,
+    NotDeviceUserAgents: Sequence[str] = ...,
+) -> CreateMobileDeviceAccessRuleResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#createmobiledeviceaccessrulerequestrequesttypedef).
+1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
+2. See [:material-code-braces: CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Effect`:
-  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
-  *(required)*
-- `ClientToken`: `str`
-- `Description`: `str`
-- `DeviceTypes`: `Sequence`\[`str`\]
-- `NotDeviceTypes`: `Sequence`\[`str`\]
-- `DeviceModels`: `Sequence`\[`str`\]
-- `NotDeviceModels`: `Sequence`\[`str`\]
-- `DeviceOperatingSystems`: `Sequence`\[`str`\]
-- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
-- `DeviceUserAgents`: `Sequence`\[`str`\]
-- `NotDeviceUserAgents`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMobileDeviceAccessRuleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+    "Effect": ...,
+}
 
-Returns
-[CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
+parent.create_mobile_device_access_rule(**kwargs)
+```
 
-<a id="create\_organization"></a>
+1. See [:material-code-braces: CreateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#createmobiledeviceaccessrulerequestrequesttypedef) 
 
-### create_organization
+### create\_organization
 
 Creates a new Amazon WorkMail organization.
 
-Type annotations for `boto3.client("workmail").create_organization` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
 
-Boto3 documentation:
-[WorkMail.Client.create_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_organization)
+```python title="Method definition"
+def create_organization(
+    self,
+    *,
+    Alias: str,
+    DirectoryId: str = ...,
+    ClientToken: str = ...,
+    Domains: Sequence[DomainTypeDef] = ...,  # (1)
+    KmsKeyArn: str = ...,
+    EnableInteroperability: bool = ...,
+) -> CreateOrganizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef).
+1. See [:material-code-braces: DomainTypeDef](./type_defs.md#domaintypedef) 
+2. See [:material-code-braces: CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Alias`: `str` *(required)*
-- `DirectoryId`: `str`
-- `ClientToken`: `str`
-- `Domains`: `Sequence`\[[DomainTypeDef](./type_defs.md#domaintypedef)\]
-- `KmsKeyArn`: `str`
-- `EnableInteroperability`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateOrganizationRequestRequestTypeDef = {  # (1)
+    "Alias": ...,
+}
 
-Returns
-[CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
+parent.create_organization(**kwargs)
+```
 
-<a id="create\_resource"></a>
+1. See [:material-code-braces: CreateOrganizationRequestRequestTypeDef](./type_defs.md#createorganizationrequestrequesttypedef) 
 
-### create_resource
+### create\_resource
 
 Creates a new Amazon WorkMail resource.
 
-Type annotations for `boto3.client("workmail").create_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
 
-Boto3 documentation:
-[WorkMail.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_resource)
+```python title="Method definition"
+def create_resource(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+    Type: ResourceTypeType,  # (1)
+) -> CreateResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceRequestRequestTypeDef](./type_defs.md#createresourcerequestrequesttypedef).
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: CreateResourceResponseTypeDef](./type_defs.md#createresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Type`: [ResourceTypeType](./literals.md#resourcetypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+    "Type": ...,
+}
 
-Returns
-[CreateResourceResponseTypeDef](./type_defs.md#createresourceresponsetypedef).
+parent.create_resource(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateResourceRequestRequestTypeDef](./type_defs.md#createresourcerequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a user who can be used in Amazon WorkMail by calling the
 RegisterToWorkMail operation.
 
-Type annotations for `boto3.client("workmail").create_user` method.
+Type annotations and code completion for `#!python boto3.client("workmail").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
 
-Boto3 documentation:
-[WorkMail.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+    DisplayName: str,
+    Password: str,
+) -> CreateUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `DisplayName`: `str` *(required)*
-- `Password`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+    "DisplayName": ...,
+    "Password": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_access\_control\_rule"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_access_control_rule
+### delete\_access\_control\_rule
 
 Deletes an access control rule for the specified WorkMail organization.
 
-Type annotations for `boto3.client("workmail").delete_access_control_rule`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_access_control_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
 
-Boto3 documentation:
-[WorkMail.Client.delete_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_access_control_rule)
+```python title="Method definition"
+def delete_access_control_rule(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccessControlRuleRequestRequestTypeDef](./type_defs.md#deleteaccesscontrolrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAccessControlRuleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_access_control_rule(**kwargs)
+```
 
-<a id="delete\_alias"></a>
+1. See [:material-code-braces: DeleteAccessControlRuleRequestRequestTypeDef](./type_defs.md#deleteaccesscontrolrulerequestrequesttypedef) 
 
-### delete_alias
+### delete\_alias
 
 Remove one or more specified aliases from a set of aliases for a given user.
 
-Type annotations for `boto3.client("workmail").delete_alias` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias)
 
-Boto3 documentation:
-[WorkMail.Client.delete_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_alias)
+```python title="Method definition"
+def delete_alias(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    Alias: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `Alias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAliasRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "Alias": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_alias(**kwargs)
+```
 
-<a id="delete\_email\_monitoring\_configuration"></a>
+1. See [:material-code-braces: DeleteAliasRequestRequestTypeDef](./type_defs.md#deletealiasrequestrequesttypedef) 
 
-### delete_email_monitoring_configuration
+### delete\_email\_monitoring\_configuration
 
 Deletes the email monitoring configuration for a specified organization.
 
-Type annotations for
-`boto3.client("workmail").delete_email_monitoring_configuration` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_email_monitoring_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_email_monitoring_configuration)
 
-Boto3 documentation:
-[WorkMail.Client.delete_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_email_monitoring_configuration)
+```python title="Method definition"
+def delete_email_monitoring_configuration(
+    self,
+    *,
+    OrganizationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#deleteemailmonitoringconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEmailMonitoringConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_email_monitoring_configuration(**kwargs)
+```
 
-<a id="delete\_group"></a>
+1. See [:material-code-braces: DeleteEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#deleteemailmonitoringconfigurationrequestrequesttypedef) 
 
-### delete_group
+### delete\_group
 
 Deletes a group from Amazon WorkMail.
 
-Type annotations for `boto3.client("workmail").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group)
 
-Boto3 documentation:
-[WorkMail.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_group(**kwargs)
+```
 
-<a id="delete\_mailbox\_permissions"></a>
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
-### delete_mailbox_permissions
+### delete\_mailbox\_permissions
 
 Deletes permissions granted to a member (user or group).
 
-Type annotations for `boto3.client("workmail").delete_mailbox_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_mailbox_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
 
-Boto3 documentation:
-[WorkMail.Client.delete_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mailbox_permissions)
+```python title="Method definition"
+def delete_mailbox_permissions(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    GranteeId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMailboxPermissionsRequestRequestTypeDef](./type_defs.md#deletemailboxpermissionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `GranteeId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMailboxPermissionsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "GranteeId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_mailbox_permissions(**kwargs)
+```
 
-<a id="delete\_mobile\_device\_access\_override"></a>
+1. See [:material-code-braces: DeleteMailboxPermissionsRequestRequestTypeDef](./type_defs.md#deletemailboxpermissionsrequestrequesttypedef) 
 
-### delete_mobile_device_access_override
+### delete\_mobile\_device\_access\_override
 
 Deletes the mobile device access override for the given WorkMail organization,
 user, and device.
 
-Type annotations for
-`boto3.client("workmail").delete_mobile_device_access_override` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_mobile_device_access_override` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_override)
 
-Boto3 documentation:
-[WorkMail.Client.delete_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_override)
+```python title="Method definition"
+def delete_mobile_device_access_override(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+    DeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessoverriderequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMobileDeviceAccessOverrideRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+    "DeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_mobile_device_access_override(**kwargs)
+```
 
-<a id="delete\_mobile\_device\_access\_rule"></a>
+1. See [:material-code-braces: DeleteMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessoverriderequestrequesttypedef) 
 
-### delete_mobile_device_access_rule
+### delete\_mobile\_device\_access\_rule
 
 Deletes a mobile device access rule for the specified Amazon WorkMail
 organization.
 
-Type annotations for
-`boto3.client("workmail").delete_mobile_device_access_rule` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_mobile_device_access_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
 
-Boto3 documentation:
-[WorkMail.Client.delete_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_mobile_device_access_rule)
+```python title="Method definition"
+def delete_mobile_device_access_rule(
+    self,
+    *,
+    OrganizationId: str,
+    MobileDeviceAccessRuleId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `MobileDeviceAccessRuleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMobileDeviceAccessRuleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "MobileDeviceAccessRuleId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_mobile_device_access_rule(**kwargs)
+```
 
-<a id="delete\_organization"></a>
+1. See [:material-code-braces: DeleteMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#deletemobiledeviceaccessrulerequestrequesttypedef) 
 
-### delete_organization
+### delete\_organization
 
-Deletes an Amazon WorkMail organization and all underlying AWS resources
-managed by Amazon WorkMail as part of the organization.
+Deletes an Amazon WorkMail organization and all underlying AWS resources managed
+by Amazon WorkMail as part of the organization.
 
-Type annotations for `boto3.client("workmail").delete_organization` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
 
-Boto3 documentation:
-[WorkMail.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_organization)
+```python title="Method definition"
+def delete_organization(
+    self,
+    *,
+    OrganizationId: str,
+    DeleteDirectory: bool,
+    ClientToken: str = ...,
+) -> DeleteOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteOrganizationRequestRequestTypeDef](./type_defs.md#deleteorganizationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteOrganizationResponseTypeDef](./type_defs.md#deleteorganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DeleteDirectory`: `bool` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteOrganizationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DeleteDirectory": ...,
+}
 
-Returns
-[DeleteOrganizationResponseTypeDef](./type_defs.md#deleteorganizationresponsetypedef).
+parent.delete_organization(**kwargs)
+```
 
-<a id="delete\_resource"></a>
+1. See [:material-code-braces: DeleteOrganizationRequestRequestTypeDef](./type_defs.md#deleteorganizationrequestrequesttypedef) 
 
-### delete_resource
+### delete\_resource
 
 Deletes the specified resource.
 
-Type annotations for `boto3.client("workmail").delete_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource)
 
-Boto3 documentation:
-[WorkMail.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_resource)
+```python title="Method definition"
+def delete_resource(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceRequestRequestTypeDef](./type_defs.md#deleteresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_resource(**kwargs)
+```
 
-<a id="delete\_retention\_policy"></a>
+1. See [:material-code-braces: DeleteResourceRequestRequestTypeDef](./type_defs.md#deleteresourcerequestrequesttypedef) 
 
-### delete_retention_policy
+### delete\_retention\_policy
 
 Deletes the specified retention policy from the specified organization.
 
-Type annotations for `boto3.client("workmail").delete_retention_policy` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_retention_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
 
-Boto3 documentation:
-[WorkMail.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_retention_policy)
+```python title="Method definition"
+def delete_retention_policy(
+    self,
+    *,
+    OrganizationId: str,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRetentionPolicyRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_retention_policy(**kwargs)
+```
 
-<a id="delete\_user"></a>
+1. See [:material-code-braces: DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef) 
 
-### delete_user
+### delete\_user
 
 Deletes a user from Amazon WorkMail and all subsequent systems.
 
-Type annotations for `boto3.client("workmail").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("workmail").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user)
 
-Boto3 documentation:
-[WorkMail.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_user(**kwargs)
+```
 
-<a id="deregister\_from\_work\_mail"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### deregister_from_work_mail
+### deregister\_from\_work\_mail
 
 Mark a user, group, or resource as no longer used in Amazon WorkMail.
 
-Type annotations for `boto3.client("workmail").deregister_from_work_mail`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").deregister_from_work_mail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
 
-Boto3 documentation:
-[WorkMail.Client.deregister_from_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_from_work_mail)
+```python title="Method definition"
+def deregister_from_work_mail(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterFromWorkMailRequestRequestTypeDef](./type_defs.md#deregisterfromworkmailrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterFromWorkMailRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_from_work_mail(**kwargs)
+```
 
-<a id="deregister\_mail\_domain"></a>
+1. See [:material-code-braces: DeregisterFromWorkMailRequestRequestTypeDef](./type_defs.md#deregisterfromworkmailrequestrequesttypedef) 
 
-### deregister_mail_domain
+### deregister\_mail\_domain
 
 Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and
 removes the authorization allowing WorkMail use.
 
-Type annotations for `boto3.client("workmail").deregister_mail_domain` method.
+Type annotations and code completion for `#!python boto3.client("workmail").deregister_mail_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_mail_domain)
 
-Boto3 documentation:
-[WorkMail.Client.deregister_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.deregister_mail_domain)
+```python title="Method definition"
+def deregister_mail_domain(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterMailDomainRequestRequestTypeDef](./type_defs.md#deregistermaildomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterMailDomainRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_mail_domain(**kwargs)
+```
 
-<a id="describe\_email\_monitoring\_configuration"></a>
+1. See [:material-code-braces: DeregisterMailDomainRequestRequestTypeDef](./type_defs.md#deregistermaildomainrequestrequesttypedef) 
 
-### describe_email_monitoring_configuration
+### describe\_email\_monitoring\_configuration
 
 Describes the current email monitoring configuration for a specified
 organization.
 
-Type annotations for
-`boto3.client("workmail").describe_email_monitoring_configuration` method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_email_monitoring_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_email_monitoring_configuration)
 
-Boto3 documentation:
-[WorkMail.Client.describe_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_email_monitoring_configuration)
+```python title="Method definition"
+def describe_email_monitoring_configuration(
+    self,
+    *,
+    OrganizationId: str,
+) -> DescribeEmailMonitoringConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#describeemailmonitoringconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEmailMonitoringConfigurationResponseTypeDef](./type_defs.md#describeemailmonitoringconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEmailMonitoringConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[DescribeEmailMonitoringConfigurationResponseTypeDef](./type_defs.md#describeemailmonitoringconfigurationresponsetypedef).
+parent.describe_email_monitoring_configuration(**kwargs)
+```
 
-<a id="describe\_group"></a>
+1. See [:material-code-braces: DescribeEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#describeemailmonitoringconfigurationrequestrequesttypedef) 
 
-### describe_group
+### describe\_group
 
 Returns the data available for the group.
 
-Type annotations for `boto3.client("workmail").describe_group` method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group)
 
-Boto3 documentation:
-[WorkMail.Client.describe_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_group)
+```python title="Method definition"
+def describe_group(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+) -> DescribeGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeGroupRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+}
 
-Returns
-[DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+parent.describe_group(**kwargs)
+```
 
-<a id="describe\_inbound\_dmarc\_settings"></a>
+1. See [:material-code-braces: DescribeGroupRequestRequestTypeDef](./type_defs.md#describegrouprequestrequesttypedef) 
 
-### describe_inbound_dmarc_settings
+### describe\_inbound\_dmarc\_settings
 
 Lists the settings in a DMARC policy for a specified organization.
 
-Type annotations for `boto3.client("workmail").describe_inbound_dmarc_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_inbound_dmarc_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_inbound_dmarc_settings)
 
-Boto3 documentation:
-[WorkMail.Client.describe_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_inbound_dmarc_settings)
+```python title="Method definition"
+def describe_inbound_dmarc_settings(
+    self,
+    *,
+    OrganizationId: str,
+) -> DescribeInboundDmarcSettingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#describeinbounddmarcsettingsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeInboundDmarcSettingsResponseTypeDef](./type_defs.md#describeinbounddmarcsettingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInboundDmarcSettingsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[DescribeInboundDmarcSettingsResponseTypeDef](./type_defs.md#describeinbounddmarcsettingsresponsetypedef).
+parent.describe_inbound_dmarc_settings(**kwargs)
+```
 
-<a id="describe\_mailbox\_export\_job"></a>
+1. See [:material-code-braces: DescribeInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#describeinbounddmarcsettingsrequestrequesttypedef) 
 
-### describe_mailbox_export_job
+### describe\_mailbox\_export\_job
 
 Describes the current status of a mailbox export job.
 
-Type annotations for `boto3.client("workmail").describe_mailbox_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_mailbox_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
 
-Boto3 documentation:
-[WorkMail.Client.describe_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_mailbox_export_job)
+```python title="Method definition"
+def describe_mailbox_export_job(
+    self,
+    *,
+    JobId: str,
+    OrganizationId: str,
+) -> DescribeMailboxExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMailboxExportJobRequestRequestTypeDef](./type_defs.md#describemailboxexportjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMailboxExportJobResponseTypeDef](./type_defs.md#describemailboxexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMailboxExportJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+    "OrganizationId": ...,
+}
 
-Returns
-[DescribeMailboxExportJobResponseTypeDef](./type_defs.md#describemailboxexportjobresponsetypedef).
+parent.describe_mailbox_export_job(**kwargs)
+```
 
-<a id="describe\_organization"></a>
+1. See [:material-code-braces: DescribeMailboxExportJobRequestRequestTypeDef](./type_defs.md#describemailboxexportjobrequestrequesttypedef) 
 
-### describe_organization
+### describe\_organization
 
 Provides more information regarding a given organization based on its
 identifier.
 
-Type annotations for `boto3.client("workmail").describe_organization` method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_organization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization)
 
-Boto3 documentation:
-[WorkMail.Client.describe_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_organization)
+```python title="Method definition"
+def describe_organization(
+    self,
+    *,
+    OrganizationId: str,
+) -> DescribeOrganizationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrganizationRequestRequestTypeDef](./type_defs.md#describeorganizationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
+parent.describe_organization(**kwargs)
+```
 
-<a id="describe\_resource"></a>
+1. See [:material-code-braces: DescribeOrganizationRequestRequestTypeDef](./type_defs.md#describeorganizationrequestrequesttypedef) 
 
-### describe_resource
+### describe\_resource
 
 Returns the data available for the resource.
 
-Type annotations for `boto3.client("workmail").describe_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource)
 
-Boto3 documentation:
-[WorkMail.Client.describe_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_resource)
+```python title="Method definition"
+def describe_resource(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+) -> DescribeResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+}
 
-Returns
-[DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
+parent.describe_resource(**kwargs)
+```
 
-<a id="describe\_user"></a>
+1. See [:material-code-braces: DescribeResourceRequestRequestTypeDef](./type_defs.md#describeresourcerequestrequesttypedef) 
 
-### describe_user
+### describe\_user
 
 Provides information regarding the user.
 
-Type annotations for `boto3.client("workmail").describe_user` method.
+Type annotations and code completion for `#!python boto3.client("workmail").describe_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user)
 
-Boto3 documentation:
-[WorkMail.Client.describe_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.describe_user)
+```python title="Method definition"
+def describe_user(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+) -> DescribeUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef).
+1. See [:material-code-braces: DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeUserRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+}
 
-Returns
-[DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+parent.describe_user(**kwargs)
+```
 
-<a id="disassociate\_delegate\_from\_resource"></a>
+1. See [:material-code-braces: DescribeUserRequestRequestTypeDef](./type_defs.md#describeuserrequestrequesttypedef) 
 
-### disassociate_delegate_from_resource
+### disassociate\_delegate\_from\_resource
 
 Removes a member from the resource's set of delegates.
 
-Type annotations for
-`boto3.client("workmail").disassociate_delegate_from_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").disassociate_delegate_from_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
 
-Boto3 documentation:
-[WorkMail.Client.disassociate_delegate_from_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_delegate_from_resource)
+```python title="Method definition"
+def disassociate_delegate_from_resource(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+    EntityId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateDelegateFromResourceRequestRequestTypeDef](./type_defs.md#disassociatedelegatefromresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateDelegateFromResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+    "EntityId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_delegate_from_resource(**kwargs)
+```
 
-<a id="disassociate\_member\_from\_group"></a>
+1. See [:material-code-braces: DisassociateDelegateFromResourceRequestRequestTypeDef](./type_defs.md#disassociatedelegatefromresourcerequestrequesttypedef) 
 
-### disassociate_member_from_group
+### disassociate\_member\_from\_group
 
 Removes a member from a group.
 
-Type annotations for `boto3.client("workmail").disassociate_member_from_group`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").disassociate_member_from_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
 
-Boto3 documentation:
-[WorkMail.Client.disassociate_member_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.disassociate_member_from_group)
+```python title="Method definition"
+def disassociate_member_from_group(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+    MemberId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMemberFromGroupRequestRequestTypeDef](./type_defs.md#disassociatememberfromgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `MemberId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMemberFromGroupRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+    "MemberId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_member_from_group(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateMemberFromGroupRequestRequestTypeDef](./type_defs.md#disassociatememberfromgrouprequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("workmail").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("workmail").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WorkMail.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_access\_control\_effect"></a>
-
-### get_access_control_effect
+### get\_access\_control\_effect
 
 Gets the effects of an organization's access control rules as they apply to a
 specified IPv4 address, access protocol action, or user ID.
 
-Type annotations for `boto3.client("workmail").get_access_control_effect`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_access_control_effect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
 
-Boto3 documentation:
-[WorkMail.Client.get_access_control_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_access_control_effect)
+```python title="Method definition"
+def get_access_control_effect(
+    self,
+    *,
+    OrganizationId: str,
+    IpAddress: str,
+    Action: str,
+    UserId: str,
+) -> GetAccessControlEffectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAccessControlEffectRequestRequestTypeDef](./type_defs.md#getaccesscontroleffectrequestrequesttypedef).
+1. See [:material-code-braces: GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `IpAddress`: `str` *(required)*
-- `Action`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAccessControlEffectRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "IpAddress": ...,
+    "Action": ...,
+    "UserId": ...,
+}
 
-Returns
-[GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef).
+parent.get_access_control_effect(**kwargs)
+```
 
-<a id="get\_default\_retention\_policy"></a>
+1. See [:material-code-braces: GetAccessControlEffectRequestRequestTypeDef](./type_defs.md#getaccesscontroleffectrequestrequesttypedef) 
 
-### get_default_retention_policy
+### get\_default\_retention\_policy
 
 Gets the default retention policy details for the specified organization.
 
-Type annotations for `boto3.client("workmail").get_default_retention_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_default_retention_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
 
-Boto3 documentation:
-[WorkMail.Client.get_default_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_default_retention_policy)
+```python title="Method definition"
+def get_default_retention_policy(
+    self,
+    *,
+    OrganizationId: str,
+) -> GetDefaultRetentionPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDefaultRetentionPolicyRequestRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDefaultRetentionPolicyRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
+parent.get_default_retention_policy(**kwargs)
+```
 
-<a id="get\_mail\_domain"></a>
+1. See [:material-code-braces: GetDefaultRetentionPolicyRequestRequestTypeDef](./type_defs.md#getdefaultretentionpolicyrequestrequesttypedef) 
 
-### get_mail_domain
+### get\_mail\_domain
 
 Gets details for a mail domain, including domain records required to configure
 your domain with recommended security.
 
-Type annotations for `boto3.client("workmail").get_mail_domain` method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_mail_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mail_domain)
 
-Boto3 documentation:
-[WorkMail.Client.get_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mail_domain)
+```python title="Method definition"
+def get_mail_domain(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+) -> GetMailDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMailDomainRequestRequestTypeDef](./type_defs.md#getmaildomainrequestrequesttypedef).
+1. See [:material-code-braces: GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMailDomainRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
 
-Returns
-[GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef).
+parent.get_mail_domain(**kwargs)
+```
 
-<a id="get\_mailbox\_details"></a>
+1. See [:material-code-braces: GetMailDomainRequestRequestTypeDef](./type_defs.md#getmaildomainrequestrequesttypedef) 
 
-### get_mailbox_details
+### get\_mailbox\_details
 
 Requests a user's mailbox details for a specified organization and user.
 
-Type annotations for `boto3.client("workmail").get_mailbox_details` method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_mailbox_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
 
-Boto3 documentation:
-[WorkMail.Client.get_mailbox_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mailbox_details)
+```python title="Method definition"
+def get_mailbox_details(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+) -> GetMailboxDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMailboxDetailsRequestRequestTypeDef](./type_defs.md#getmailboxdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMailboxDetailsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+}
 
-Returns
-[GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef).
+parent.get_mailbox_details(**kwargs)
+```
 
-<a id="get\_mobile\_device\_access\_effect"></a>
+1. See [:material-code-braces: GetMailboxDetailsRequestRequestTypeDef](./type_defs.md#getmailboxdetailsrequestrequesttypedef) 
 
-### get_mobile_device_access_effect
+### get\_mobile\_device\_access\_effect
 
 Simulates the effect of the mobile device access rules for the given attributes
 of a sample access event.
 
-Type annotations for `boto3.client("workmail").get_mobile_device_access_effect`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_mobile_device_access_effect` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
 
-Boto3 documentation:
-[WorkMail.Client.get_mobile_device_access_effect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_effect)
+```python title="Method definition"
+def get_mobile_device_access_effect(
+    self,
+    *,
+    OrganizationId: str,
+    DeviceType: str = ...,
+    DeviceModel: str = ...,
+    DeviceOperatingSystem: str = ...,
+    DeviceUserAgent: str = ...,
+) -> GetMobileDeviceAccessEffectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMobileDeviceAccessEffectRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccesseffectrequestrequesttypedef).
+1. See [:material-code-braces: GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DeviceType`: `str`
-- `DeviceModel`: `str`
-- `DeviceOperatingSystem`: `str`
-- `DeviceUserAgent`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetMobileDeviceAccessEffectRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
+parent.get_mobile_device_access_effect(**kwargs)
+```
 
-<a id="get\_mobile\_device\_access\_override"></a>
+1. See [:material-code-braces: GetMobileDeviceAccessEffectRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccesseffectrequestrequesttypedef) 
 
-### get_mobile_device_access_override
+### get\_mobile\_device\_access\_override
 
 Gets the mobile device access override for the given WorkMail organization,
 user, and device.
 
-Type annotations for
-`boto3.client("workmail").get_mobile_device_access_override` method.
+Type annotations and code completion for `#!python boto3.client("workmail").get_mobile_device_access_override` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_override)
 
-Boto3 documentation:
-[WorkMail.Client.get_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.get_mobile_device_access_override)
+```python title="Method definition"
+def get_mobile_device_access_override(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+    DeviceId: str,
+) -> GetMobileDeviceAccessOverrideResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccessoverriderequestrequesttypedef).
+1. See [:material-code-braces: GetMobileDeviceAccessOverrideResponseTypeDef](./type_defs.md#getmobiledeviceaccessoverrideresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMobileDeviceAccessOverrideRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[GetMobileDeviceAccessOverrideResponseTypeDef](./type_defs.md#getmobiledeviceaccessoverrideresponsetypedef).
+parent.get_mobile_device_access_override(**kwargs)
+```
 
-<a id="list\_access\_control\_rules"></a>
+1. See [:material-code-braces: GetMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#getmobiledeviceaccessoverriderequestrequesttypedef) 
 
-### list_access_control_rules
+### list\_access\_control\_rules
 
 Lists the access control rules for the specified organization.
 
-Type annotations for `boto3.client("workmail").list_access_control_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_access_control_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
 
-Boto3 documentation:
-[WorkMail.Client.list_access_control_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_access_control_rules)
+```python title="Method definition"
+def list_access_control_rules(
+    self,
+    *,
+    OrganizationId: str,
+) -> ListAccessControlRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAccessControlRulesRequestRequestTypeDef](./type_defs.md#listaccesscontrolrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListAccessControlRulesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef).
+parent.list_access_control_rules(**kwargs)
+```
 
-<a id="list\_aliases"></a>
+1. See [:material-code-braces: ListAccessControlRulesRequestRequestTypeDef](./type_defs.md#listaccesscontrolrulesrequestrequesttypedef) 
 
-### list_aliases
+### list\_aliases
 
 Creates a paginated call to list the aliases associated with a given entity.
 
-Type annotations for `boto3.client("workmail").list_aliases` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases)
 
-Boto3 documentation:
-[WorkMail.Client.list_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_aliases)
+```python title="Method definition"
+def list_aliases(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef).
+1. See [:material-code-braces: ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAliasesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+}
 
-Returns
-[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
+parent.list_aliases(**kwargs)
+```
 
-<a id="list\_group\_members"></a>
+1. See [:material-code-braces: ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef) 
 
-### list_group_members
+### list\_group\_members
 
 Returns an overview of the members of a group.
 
-Type annotations for `boto3.client("workmail").list_group_members` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_group_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members)
 
-Boto3 documentation:
-[WorkMail.Client.list_group_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_group_members)
+```python title="Method definition"
+def list_group_members(
+    self,
+    *,
+    OrganizationId: str,
+    GroupId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupMembersRequestRequestTypeDef](./type_defs.md#listgroupmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupMembersRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "GroupId": ...,
+}
 
-Returns
-[ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef).
+parent.list_group_members(**kwargs)
+```
 
-<a id="list\_groups"></a>
+1. See [:material-code-braces: ListGroupMembersRequestRequestTypeDef](./type_defs.md#listgroupmembersrequestrequesttypedef) 
 
-### list_groups
+### list\_groups
 
 Returns summaries of the organization's groups.
 
-Type annotations for `boto3.client("workmail").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups)
 
-Boto3 documentation:
-[WorkMail.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    OrganizationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_mail\_domains"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_mail_domains
+### list\_mail\_domains
 
 Lists the mail domains in a given Amazon WorkMail organization.
 
-Type annotations for `boto3.client("workmail").list_mail_domains` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_mail_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mail_domains)
 
-Boto3 documentation:
-[WorkMail.Client.list_mail_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mail_domains)
+```python title="Method definition"
+def list_mail_domains(
+    self,
+    *,
+    OrganizationId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMailDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef).
+1. See [:material-code-braces: ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMailDomainsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef).
+parent.list_mail_domains(**kwargs)
+```
 
-<a id="list\_mailbox\_export\_jobs"></a>
+1. See [:material-code-braces: ListMailDomainsRequestRequestTypeDef](./type_defs.md#listmaildomainsrequestrequesttypedef) 
 
-### list_mailbox_export_jobs
+### list\_mailbox\_export\_jobs
 
 Lists the mailbox export jobs started for the specified organization within the
 last seven days.
 
-Type annotations for `boto3.client("workmail").list_mailbox_export_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_mailbox_export_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
 
-Boto3 documentation:
-[WorkMail.Client.list_mailbox_export_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_export_jobs)
+```python title="Method definition"
+def list_mailbox_export_jobs(
+    self,
+    *,
+    OrganizationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMailboxExportJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMailboxExportJobsRequestRequestTypeDef](./type_defs.md#listmailboxexportjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMailboxExportJobsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef).
+parent.list_mailbox_export_jobs(**kwargs)
+```
 
-<a id="list\_mailbox\_permissions"></a>
+1. See [:material-code-braces: ListMailboxExportJobsRequestRequestTypeDef](./type_defs.md#listmailboxexportjobsrequestrequesttypedef) 
 
-### list_mailbox_permissions
+### list\_mailbox\_permissions
 
 Lists the mailbox permissions associated with a user, group, or resource
 mailbox.
 
-Type annotations for `boto3.client("workmail").list_mailbox_permissions`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_mailbox_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
 
-Boto3 documentation:
-[WorkMail.Client.list_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mailbox_permissions)
+```python title="Method definition"
+def list_mailbox_permissions(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMailboxPermissionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMailboxPermissionsRequestRequestTypeDef](./type_defs.md#listmailboxpermissionsrequestrequesttypedef).
+1. See [:material-code-braces: ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMailboxPermissionsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+}
 
-Returns
-[ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
+parent.list_mailbox_permissions(**kwargs)
+```
 
-<a id="list\_mobile\_device\_access\_overrides"></a>
+1. See [:material-code-braces: ListMailboxPermissionsRequestRequestTypeDef](./type_defs.md#listmailboxpermissionsrequestrequesttypedef) 
 
-### list_mobile_device_access_overrides
+### list\_mobile\_device\_access\_overrides
 
 Lists all the mobile device access overrides for any given combination of
 WorkMail organization, user, or device.
 
-Type annotations for
-`boto3.client("workmail").list_mobile_device_access_overrides` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_mobile_device_access_overrides` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_overrides)
 
-Boto3 documentation:
-[WorkMail.Client.list_mobile_device_access_overrides](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_overrides)
+```python title="Method definition"
+def list_mobile_device_access_overrides(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str = ...,
+    DeviceId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListMobileDeviceAccessOverridesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMobileDeviceAccessOverridesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessoverridesrequestrequesttypedef).
+1. See [:material-code-braces: ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str`
-- `DeviceId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListMobileDeviceAccessOverridesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef).
+parent.list_mobile_device_access_overrides(**kwargs)
+```
 
-<a id="list\_mobile\_device\_access\_rules"></a>
+1. See [:material-code-braces: ListMobileDeviceAccessOverridesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessoverridesrequestrequesttypedef) 
 
-### list_mobile_device_access_rules
+### list\_mobile\_device\_access\_rules
 
 Lists the mobile device access rules for the specified Amazon WorkMail
 organization.
 
-Type annotations for `boto3.client("workmail").list_mobile_device_access_rules`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_mobile_device_access_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
 
-Boto3 documentation:
-[WorkMail.Client.list_mobile_device_access_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_mobile_device_access_rules)
+```python title="Method definition"
+def list_mobile_device_access_rules(
+    self,
+    *,
+    OrganizationId: str,
+) -> ListMobileDeviceAccessRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMobileDeviceAccessRulesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListMobileDeviceAccessRulesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef).
+parent.list_mobile_device_access_rules(**kwargs)
+```
 
-<a id="list\_organizations"></a>
+1. See [:material-code-braces: ListMobileDeviceAccessRulesRequestRequestTypeDef](./type_defs.md#listmobiledeviceaccessrulesrequestrequesttypedef) 
 
-### list_organizations
+### list\_organizations
 
 Returns summaries of the customer's organizations.
 
-Type annotations for `boto3.client("workmail").list_organizations` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_organizations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations)
 
-Boto3 documentation:
-[WorkMail.Client.list_organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_organizations)
+```python title="Method definition"
+def list_organizations(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListOrganizationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationsRequestRequestTypeDef](./type_defs.md#listorganizationsrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef).
+parent.list_organizations(**kwargs)
+```
 
-<a id="list\_resource\_delegates"></a>
+1. See [:material-code-braces: ListOrganizationsRequestRequestTypeDef](./type_defs.md#listorganizationsrequestrequesttypedef) 
 
-### list_resource_delegates
+### list\_resource\_delegates
 
 Lists the delegates associated with a resource.
 
-Type annotations for `boto3.client("workmail").list_resource_delegates` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_resource_delegates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
 
-Boto3 documentation:
-[WorkMail.Client.list_resource_delegates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resource_delegates)
+```python title="Method definition"
+def list_resource_delegates(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListResourceDelegatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceDelegatesRequestRequestTypeDef](./type_defs.md#listresourcedelegatesrequestrequesttypedef).
+1. See [:material-code-braces: ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResourceDelegatesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+}
 
-Returns
-[ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef).
+parent.list_resource_delegates(**kwargs)
+```
 
-<a id="list\_resources"></a>
+1. See [:material-code-braces: ListResourceDelegatesRequestRequestTypeDef](./type_defs.md#listresourcedelegatesrequestrequesttypedef) 
 
-### list_resources
+### list\_resources
 
 Returns summaries of the organization's resources.
 
-Type annotations for `boto3.client("workmail").list_resources` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources)
 
-Boto3 documentation:
-[WorkMail.Client.list_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_resources)
+```python title="Method definition"
+def list_resources(
+    self,
+    *,
+    OrganizationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListResourcesRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns
-[ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
+parent.list_resources(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListResourcesRequestRequestTypeDef](./type_defs.md#listresourcesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags applied to an Amazon WorkMail organization resource.
 
-Type annotations for `boto3.client("workmail").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[WorkMail.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_users"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_users
+### list\_users
 
 Returns summaries of the organization's users.
 
-Type annotations for `boto3.client("workmail").list_users` method.
+Type annotations and code completion for `#!python boto3.client("workmail").list_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users)
 
-Boto3 documentation:
-[WorkMail.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.list_users)
+```python title="Method definition"
+def list_users(
+    self,
+    *,
+    OrganizationId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListUsersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
+1. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+}
 
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+parent.list_users(**kwargs)
+```
 
-<a id="put\_access\_control\_rule"></a>
+1. See [:material-code-braces: ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef) 
 
-### put_access_control_rule
+### put\_access\_control\_rule
 
 Adds a new access control rule for the specified organization.
 
-Type annotations for `boto3.client("workmail").put_access_control_rule` method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_access_control_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
 
-Boto3 documentation:
-[WorkMail.Client.put_access_control_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_access_control_rule)
+```python title="Method definition"
+def put_access_control_rule(
+    self,
+    *,
+    Name: str,
+    Effect: AccessControlRuleEffectType,  # (1)
+    Description: str,
+    OrganizationId: str,
+    IpRanges: Sequence[str] = ...,
+    NotIpRanges: Sequence[str] = ...,
+    Actions: Sequence[str] = ...,
+    NotActions: Sequence[str] = ...,
+    UserIds: Sequence[str] = ...,
+    NotUserIds: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAccessControlRuleRequestRequestTypeDef](./type_defs.md#putaccesscontrolrulerequestrequesttypedef).
+1. See [:material-code-brackets: AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Effect`:
-  [AccessControlRuleEffectType](./literals.md#accesscontrolruleeffecttype)
-  *(required)*
-- `Description`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
-- `IpRanges`: `Sequence`\[`str`\]
-- `NotIpRanges`: `Sequence`\[`str`\]
-- `Actions`: `Sequence`\[`str`\]
-- `NotActions`: `Sequence`\[`str`\]
-- `UserIds`: `Sequence`\[`str`\]
-- `NotUserIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: PutAccessControlRuleRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Effect": ...,
+    "Description": ...,
+    "OrganizationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_access_control_rule(**kwargs)
+```
 
-<a id="put\_email\_monitoring\_configuration"></a>
+1. See [:material-code-braces: PutAccessControlRuleRequestRequestTypeDef](./type_defs.md#putaccesscontrolrulerequestrequesttypedef) 
 
-### put_email_monitoring_configuration
+### put\_email\_monitoring\_configuration
 
 Creates or updates the email monitoring configuration for a specified
 organization.
 
-Type annotations for
-`boto3.client("workmail").put_email_monitoring_configuration` method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_email_monitoring_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_email_monitoring_configuration)
 
-Boto3 documentation:
-[WorkMail.Client.put_email_monitoring_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_email_monitoring_configuration)
+```python title="Method definition"
+def put_email_monitoring_configuration(
+    self,
+    *,
+    OrganizationId: str,
+    RoleArn: str,
+    LogGroupArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#putemailmonitoringconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `LogGroupArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutEmailMonitoringConfigurationRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "RoleArn": ...,
+    "LogGroupArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_email_monitoring_configuration(**kwargs)
+```
 
-<a id="put\_inbound\_dmarc\_settings"></a>
+1. See [:material-code-braces: PutEmailMonitoringConfigurationRequestRequestTypeDef](./type_defs.md#putemailmonitoringconfigurationrequestrequesttypedef) 
 
-### put_inbound_dmarc_settings
+### put\_inbound\_dmarc\_settings
 
 Enables or disables a DMARC policy for a given organization.
 
-Type annotations for `boto3.client("workmail").put_inbound_dmarc_settings`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_inbound_dmarc_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_inbound_dmarc_settings)
 
-Boto3 documentation:
-[WorkMail.Client.put_inbound_dmarc_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_inbound_dmarc_settings)
+```python title="Method definition"
+def put_inbound_dmarc_settings(
+    self,
+    *,
+    OrganizationId: str,
+    Enforced: bool,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#putinbounddmarcsettingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Enforced`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutInboundDmarcSettingsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Enforced": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_inbound_dmarc_settings(**kwargs)
+```
 
-<a id="put\_mailbox\_permissions"></a>
+1. See [:material-code-braces: PutInboundDmarcSettingsRequestRequestTypeDef](./type_defs.md#putinbounddmarcsettingsrequestrequesttypedef) 
 
-### put_mailbox_permissions
+### put\_mailbox\_permissions
 
 Sets permissions for a user, group, or resource.
 
-Type annotations for `boto3.client("workmail").put_mailbox_permissions` method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_mailbox_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
 
-Boto3 documentation:
-[WorkMail.Client.put_mailbox_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mailbox_permissions)
+```python title="Method definition"
+def put_mailbox_permissions(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    GranteeId: str,
+    PermissionValues: Sequence[PermissionTypeType],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutMailboxPermissionsRequestRequestTypeDef](./type_defs.md#putmailboxpermissionsrequestrequesttypedef).
+1. See [:material-code-brackets: PermissionTypeType](./literals.md#permissiontypetype) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `GranteeId`: `str` *(required)*
-- `PermissionValues`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutMailboxPermissionsRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "GranteeId": ...,
+    "PermissionValues": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_mailbox_permissions(**kwargs)
+```
 
-<a id="put\_mobile\_device\_access\_override"></a>
+1. See [:material-code-braces: PutMailboxPermissionsRequestRequestTypeDef](./type_defs.md#putmailboxpermissionsrequestrequesttypedef) 
 
-### put_mobile_device_access_override
+### put\_mobile\_device\_access\_override
 
 Creates or updates a mobile device access override for the given WorkMail
 organization, user, and device.
 
-Type annotations for
-`boto3.client("workmail").put_mobile_device_access_override` method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_mobile_device_access_override` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mobile_device_access_override)
 
-Boto3 documentation:
-[WorkMail.Client.put_mobile_device_access_override](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_mobile_device_access_override)
+```python title="Method definition"
+def put_mobile_device_access_override(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+    DeviceId: str,
+    Effect: MobileDeviceAccessRuleEffectType,  # (1)
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#putmobiledeviceaccessoverriderequestrequesttypedef).
+1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `Effect`:
-  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
-  *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutMobileDeviceAccessOverrideRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+    "DeviceId": ...,
+    "Effect": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_mobile_device_access_override(**kwargs)
+```
 
-<a id="put\_retention\_policy"></a>
+1. See [:material-code-braces: PutMobileDeviceAccessOverrideRequestRequestTypeDef](./type_defs.md#putmobiledeviceaccessoverriderequestrequesttypedef) 
 
-### put_retention_policy
+### put\_retention\_policy
 
 Puts a retention policy to the specified organization.
 
-Type annotations for `boto3.client("workmail").put_retention_policy` method.
+Type annotations and code completion for `#!python boto3.client("workmail").put_retention_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
 
-Boto3 documentation:
-[WorkMail.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.put_retention_policy)
+```python title="Method definition"
+def put_retention_policy(
+    self,
+    *,
+    OrganizationId: str,
+    Name: str,
+    FolderConfigurations: Sequence[FolderConfigurationTypeDef],  # (1)
+    Id: str = ...,
+    Description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef).
+1. See [:material-code-braces: FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `FolderConfigurations`:
-  `Sequence`\[[FolderConfigurationTypeDef](./type_defs.md#folderconfigurationtypedef)\]
-  *(required)*
-- `Id`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutRetentionPolicyRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "Name": ...,
+    "FolderConfigurations": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_retention_policy(**kwargs)
+```
 
-<a id="register\_mail\_domain"></a>
+1. See [:material-code-braces: PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef) 
 
-### register_mail_domain
+### register\_mail\_domain
 
 Registers a new domain in Amazon WorkMail and SES, and configures it for use by
 WorkMail.
 
-Type annotations for `boto3.client("workmail").register_mail_domain` method.
+Type annotations and code completion for `#!python boto3.client("workmail").register_mail_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_mail_domain)
 
-Boto3 documentation:
-[WorkMail.Client.register_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_mail_domain)
+```python title="Method definition"
+def register_mail_domain(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+    ClientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterMailDomainRequestRequestTypeDef](./type_defs.md#registermaildomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DomainName`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterMailDomainRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_mail_domain(**kwargs)
+```
 
-<a id="register\_to\_work\_mail"></a>
+1. See [:material-code-braces: RegisterMailDomainRequestRequestTypeDef](./type_defs.md#registermaildomainrequestrequesttypedef) 
 
-### register_to_work_mail
+### register\_to\_work\_mail
 
 Registers an existing and disabled user, group, or resource for Amazon WorkMail
 use by associating a mailbox and calendaring capabilities.
 
-Type annotations for `boto3.client("workmail").register_to_work_mail` method.
+Type annotations and code completion for `#!python boto3.client("workmail").register_to_work_mail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
 
-Boto3 documentation:
-[WorkMail.Client.register_to_work_mail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.register_to_work_mail)
+```python title="Method definition"
+def register_to_work_mail(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    Email: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterToWorkMailRequestRequestTypeDef](./type_defs.md#registertoworkmailrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `Email`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterToWorkMailRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "Email": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_to_work_mail(**kwargs)
+```
 
-<a id="reset\_password"></a>
+1. See [:material-code-braces: RegisterToWorkMailRequestRequestTypeDef](./type_defs.md#registertoworkmailrequestrequesttypedef) 
 
-### reset_password
+### reset\_password
 
 Allows the administrator to reset the password for a user.
 
-Type annotations for `boto3.client("workmail").reset_password` method.
+Type annotations and code completion for `#!python boto3.client("workmail").reset_password` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password)
 
-Boto3 documentation:
-[WorkMail.Client.reset_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.reset_password)
+```python title="Method definition"
+def reset_password(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+    Password: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ResetPasswordRequestRequestTypeDef](./type_defs.md#resetpasswordrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `Password`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ResetPasswordRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+    "Password": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reset_password(**kwargs)
+```
 
-<a id="start\_mailbox\_export\_job"></a>
+1. See [:material-code-braces: ResetPasswordRequestRequestTypeDef](./type_defs.md#resetpasswordrequestrequesttypedef) 
 
-### start_mailbox_export_job
+### start\_mailbox\_export\_job
 
 Starts a mailbox export job to export MIME-format email messages and calendar
 items from the specified mailbox to the specified Amazon Simple Storage Service
 (Amazon S3) bucket.
 
-Type annotations for `boto3.client("workmail").start_mailbox_export_job`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").start_mailbox_export_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
 
-Boto3 documentation:
-[WorkMail.Client.start_mailbox_export_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.start_mailbox_export_job)
+```python title="Method definition"
+def start_mailbox_export_job(
+    self,
+    *,
+    ClientToken: str,
+    OrganizationId: str,
+    EntityId: str,
+    RoleArn: str,
+    KmsKeyArn: str,
+    S3BucketName: str,
+    S3Prefix: str,
+    Description: str = ...,
+) -> StartMailboxExportJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartMailboxExportJobRequestRequestTypeDef](./type_defs.md#startmailboxexportjobrequestrequesttypedef).
+1. See [:material-code-braces: StartMailboxExportJobResponseTypeDef](./type_defs.md#startmailboxexportjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClientToken`: `str` *(required)*
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `KmsKeyArn`: `str` *(required)*
-- `S3BucketName`: `str` *(required)*
-- `S3Prefix`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartMailboxExportJobRequestRequestTypeDef = {  # (1)
+    "ClientToken": ...,
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "RoleArn": ...,
+    "KmsKeyArn": ...,
+    "S3BucketName": ...,
+    "S3Prefix": ...,
+}
 
-Returns
-[StartMailboxExportJobResponseTypeDef](./type_defs.md#startmailboxexportjobresponsetypedef).
+parent.start_mailbox_export_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartMailboxExportJobRequestRequestTypeDef](./type_defs.md#startmailboxexportjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Applies the specified tags to the specified Amazon WorkMail organization
 resource.
 
-Type annotations for `boto3.client("workmail").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource)
 
-Boto3 documentation:
-[WorkMail.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Untags the specified tags from the specified Amazon WorkMail organization
 resource.
 
-Type annotations for `boto3.client("workmail").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource)
 
-Boto3 documentation:
-[WorkMail.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_default\_mail\_domain"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_default_mail_domain
+### update\_default\_mail\_domain
 
 Updates the default mail domain for an organization.
 
-Type annotations for `boto3.client("workmail").update_default_mail_domain`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").update_default_mail_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_default_mail_domain)
 
-Boto3 documentation:
-[WorkMail.Client.update_default_mail_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_default_mail_domain)
+```python title="Method definition"
+def update_default_mail_domain(
+    self,
+    *,
+    OrganizationId: str,
+    DomainName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDefaultMailDomainRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "DomainName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_default_mail_domain(**kwargs)
+```
 
-<a id="update\_mailbox\_quota"></a>
+1. See [:material-code-braces: UpdateDefaultMailDomainRequestRequestTypeDef](./type_defs.md#updatedefaultmaildomainrequestrequesttypedef) 
 
-### update_mailbox_quota
+### update\_mailbox\_quota
 
 Updates a user's current mailbox quota for a specified organization and user.
 
-Type annotations for `boto3.client("workmail").update_mailbox_quota` method.
+Type annotations and code completion for `#!python boto3.client("workmail").update_mailbox_quota` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
 
-Boto3 documentation:
-[WorkMail.Client.update_mailbox_quota](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mailbox_quota)
+```python title="Method definition"
+def update_mailbox_quota(
+    self,
+    *,
+    OrganizationId: str,
+    UserId: str,
+    MailboxQuota: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateMailboxQuotaRequestRequestTypeDef](./type_defs.md#updatemailboxquotarequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `UserId`: `str` *(required)*
-- `MailboxQuota`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateMailboxQuotaRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "UserId": ...,
+    "MailboxQuota": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_mailbox_quota(**kwargs)
+```
 
-<a id="update\_mobile\_device\_access\_rule"></a>
+1. See [:material-code-braces: UpdateMailboxQuotaRequestRequestTypeDef](./type_defs.md#updatemailboxquotarequestrequesttypedef) 
 
-### update_mobile_device_access_rule
+### update\_mobile\_device\_access\_rule
 
 Updates a mobile device access rule for the specified Amazon WorkMail
 organization.
 
-Type annotations for
-`boto3.client("workmail").update_mobile_device_access_rule` method.
+Type annotations and code completion for `#!python boto3.client("workmail").update_mobile_device_access_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
 
-Boto3 documentation:
-[WorkMail.Client.update_mobile_device_access_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_mobile_device_access_rule)
+```python title="Method definition"
+def update_mobile_device_access_rule(
+    self,
+    *,
+    OrganizationId: str,
+    MobileDeviceAccessRuleId: str,
+    Name: str,
+    Effect: MobileDeviceAccessRuleEffectType,  # (1)
+    Description: str = ...,
+    DeviceTypes: Sequence[str] = ...,
+    NotDeviceTypes: Sequence[str] = ...,
+    DeviceModels: Sequence[str] = ...,
+    NotDeviceModels: Sequence[str] = ...,
+    DeviceOperatingSystems: Sequence[str] = ...,
+    NotDeviceOperatingSystems: Sequence[str] = ...,
+    DeviceUserAgents: Sequence[str] = ...,
+    NotDeviceUserAgents: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#updatemobiledeviceaccessrulerequestrequesttypedef).
+1. See [:material-code-brackets: MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `MobileDeviceAccessRuleId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Effect`:
-  [MobileDeviceAccessRuleEffectType](./literals.md#mobiledeviceaccessruleeffecttype)
-  *(required)*
-- `Description`: `str`
-- `DeviceTypes`: `Sequence`\[`str`\]
-- `NotDeviceTypes`: `Sequence`\[`str`\]
-- `DeviceModels`: `Sequence`\[`str`\]
-- `NotDeviceModels`: `Sequence`\[`str`\]
-- `DeviceOperatingSystems`: `Sequence`\[`str`\]
-- `NotDeviceOperatingSystems`: `Sequence`\[`str`\]
-- `DeviceUserAgents`: `Sequence`\[`str`\]
-- `NotDeviceUserAgents`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateMobileDeviceAccessRuleRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "MobileDeviceAccessRuleId": ...,
+    "Name": ...,
+    "Effect": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_mobile_device_access_rule(**kwargs)
+```
 
-<a id="update\_primary\_email\_address"></a>
+1. See [:material-code-braces: UpdateMobileDeviceAccessRuleRequestRequestTypeDef](./type_defs.md#updatemobiledeviceaccessrulerequestrequesttypedef) 
 
-### update_primary_email_address
+### update\_primary\_email\_address
 
 Updates the primary email for a user, group, or resource.
 
-Type annotations for `boto3.client("workmail").update_primary_email_address`
-method.
+Type annotations and code completion for `#!python boto3.client("workmail").update_primary_email_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
 
-Boto3 documentation:
-[WorkMail.Client.update_primary_email_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_primary_email_address)
+```python title="Method definition"
+def update_primary_email_address(
+    self,
+    *,
+    OrganizationId: str,
+    EntityId: str,
+    Email: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePrimaryEmailAddressRequestRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `EntityId`: `str` *(required)*
-- `Email`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePrimaryEmailAddressRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "EntityId": ...,
+    "Email": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_primary_email_address(**kwargs)
+```
 
-<a id="update\_resource"></a>
+1. See [:material-code-braces: UpdatePrimaryEmailAddressRequestRequestTypeDef](./type_defs.md#updateprimaryemailaddressrequestrequesttypedef) 
 
-### update_resource
+### update\_resource
 
 Updates data for the resource.
 
-Type annotations for `boto3.client("workmail").update_resource` method.
+Type annotations and code completion for `#!python boto3.client("workmail").update_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource)
 
-Boto3 documentation:
-[WorkMail.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.update_resource)
+```python title="Method definition"
+def update_resource(
+    self,
+    *,
+    OrganizationId: str,
+    ResourceId: str,
+    Name: str = ...,
+    BookingOptions: BookingOptionsTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef).
+1. See [:material-code-braces: BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef) 
 
-Keyword-only arguments:
 
-- `OrganizationId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `Name`: `str`
-- `BookingOptions`:
-  [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceRequestRequestTypeDef = {  # (1)
+    "OrganizationId": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("workmail").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("workmail").get_paginator` method with overloads.
 
-- `client.get_paginator("list_aliases")` ->
-  [ListAliasesPaginator](./paginators.md#listaliasespaginator)
-- `client.get_paginator("list_group_members")` ->
-  [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
-- `client.get_paginator("list_groups")` ->
-  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_mailbox_permissions")` ->
-  [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)
-- `client.get_paginator("list_organizations")` ->
-  [ListOrganizationsPaginator](./paginators.md#listorganizationspaginator)
-- `client.get_paginator("list_resource_delegates")` ->
-  [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
-- `client.get_paginator("list_resources")` ->
-  [ListResourcesPaginator](./paginators.md#listresourcespaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_aliases")` -> [ListAliasesPaginator](./paginators.md#listaliasespaginator)
+- `client.get_paginator("list_group_members")` -> [ListGroupMembersPaginator](./paginators.md#listgroupmemberspaginator)
+- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_mailbox_permissions")` -> [ListMailboxPermissionsPaginator](./paginators.md#listmailboxpermissionspaginator)
+- `client.get_paginator("list_organizations")` -> [ListOrganizationsPaginator](./paginators.md#listorganizationspaginator)
+- `client.get_paginator("list_resource_delegates")` -> [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
+- `client.get_paginator("list_resources")` -> [ListResourcesPaginator](./paginators.md#listresourcespaginator)
+- `client.get_paginator("list_users")` -> [ListUsersPaginator](./paginators.md#listuserspaginator)
+
+
+

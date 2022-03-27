@@ -1,56 +1,18 @@
-<a id="codeguruprofilerclient-for-boto3-codeguruprofiler-module"></a>
+# CodeGuruProfilerClient
 
-# CodeGuruProfilerClient for boto3 CodeGuruProfiler module
+> [Index](../README.md) > [CodeGuruProfiler](./README.md) > CodeGuruProfilerClient
 
-> [Index](../README.md) > [CodeGuruProfiler](./README.md) >
-> CodeGuruProfilerClient
+!!! note ""
 
-Auto-generated documentation for
-[CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
-type annotations stubs module
-[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
-
-- [CodeGuruProfilerClient for boto3 CodeGuruProfiler module](#codeguruprofilerclient-for-boto3-codeguruprofiler-module)
-  - [CodeGuruProfilerClient](#codeguruprofilerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_notification_channels](#add_notification_channels)
-    - [batch_get_frame_metric_data](#batch_get_frame_metric_data)
-    - [can_paginate](#can_paginate)
-    - [configure_agent](#configure_agent)
-    - [create_profiling_group](#create_profiling_group)
-    - [delete_profiling_group](#delete_profiling_group)
-    - [describe_profiling_group](#describe_profiling_group)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_findings_report_account_summary](#get_findings_report_account_summary)
-    - [get_notification_configuration](#get_notification_configuration)
-    - [get_policy](#get_policy)
-    - [get_profile](#get_profile)
-    - [get_recommendations](#get_recommendations)
-    - [list_findings_reports](#list_findings_reports)
-    - [list_profile_times](#list_profile_times)
-    - [list_profiling_groups](#list_profiling_groups)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [post_agent_profile](#post_agent_profile)
-    - [put_permission](#put_permission)
-    - [remove_notification_channel](#remove_notification_channel)
-    - [remove_permission](#remove_permission)
-    - [submit_feedback](#submit_feedback)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_profiling_group](#update_profiling_group)
-    - [get_paginator](#get_paginator)
-
-<a id="codeguruprofilerclient"></a>
+    Auto-generated documentation for [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
+    type annotations stubs module [mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 ## CodeGuruProfilerClient
 
-Type annotations for `boto3.client("codeguruprofiler")`
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_codeguruprofiler.client import CodeGuruProfilerClient
 
@@ -58,650 +20,830 @@ def get_codeguruprofiler_client() -> CodeGuruProfilerClient:
     return Session().client("codeguruprofiler")
 ```
 
-Boto3 documentation:
-[CodeGuruProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("codeguruprofiler").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("codeguruprofiler")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_codeguruprofiler.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CodeGuruProfilerClient exceptions.
-
-Type annotations for `boto3.client("codeguruprofiler").exceptions` method.
-
-Boto3 documentation:
-[CodeGuruProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_notification\_channels"></a>
-
-### add_notification_channels
+### add\_notification\_channels
 
 Add up to 2 anomaly notifications channels for a profiling group.
 
-Type annotations for
-`boto3.client("codeguruprofiler").add_notification_channels` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").add_notification_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.add_notification_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.add_notification_channels)
+```python title="Method definition"
+def add_notification_channels(
+    self,
+    *,
+    channels: Sequence[ChannelTypeDef],  # (1)
+    profilingGroupName: str,
+) -> AddNotificationChannelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddNotificationChannelsRequestRequestTypeDef](./type_defs.md#addnotificationchannelsrequestrequesttypedef).
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: AddNotificationChannelsResponseTypeDef](./type_defs.md#addnotificationchannelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channels`: `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
-  *(required)*
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddNotificationChannelsRequestRequestTypeDef = {  # (1)
+    "channels": ...,
+    "profilingGroupName": ...,
+}
 
-Returns
-[AddNotificationChannelsResponseTypeDef](./type_defs.md#addnotificationchannelsresponsetypedef).
+parent.add_notification_channels(**kwargs)
+```
 
-<a id="batch\_get\_frame\_metric\_data"></a>
+1. See [:material-code-braces: AddNotificationChannelsRequestRequestTypeDef](./type_defs.md#addnotificationchannelsrequestrequesttypedef) 
 
-### batch_get_frame_metric_data
+### batch\_get\_frame\_metric\_data
 
 Returns the time series of values for a requested list of frame metrics from a
 time period.
 
-Type annotations for
-`boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").batch_get_frame_metric_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.batch_get_frame_metric_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.batch_get_frame_metric_data)
+```python title="Method definition"
+def batch_get_frame_metric_data(
+    self,
+    *,
+    profilingGroupName: str,
+    endTime: Union[datetime, str] = ...,
+    frameMetrics: Sequence[FrameMetricTypeDef] = ...,  # (1)
+    period: str = ...,
+    startTime: Union[datetime, str] = ...,
+    targetResolution: AggregationPeriodType = ...,  # (2)
+) -> BatchGetFrameMetricDataResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetFrameMetricDataRequestRequestTypeDef](./type_defs.md#batchgetframemetricdatarequestrequesttypedef).
+1. See [:material-code-braces: FrameMetricTypeDef](./type_defs.md#framemetrictypedef) 
+2. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
+3. See [:material-code-braces: BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `frameMetrics`:
-  `Sequence`\[[FrameMetricTypeDef](./type_defs.md#framemetrictypedef)\]
-- `period`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `targetResolution`:
-  [AggregationPeriodType](./literals.md#aggregationperiodtype)
+```python title="Usage example with kwargs"
+kwargs: BatchGetFrameMetricDataRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns
-[BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef).
+parent.batch_get_frame_metric_data(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchGetFrameMetricDataRequestRequestTypeDef](./type_defs.md#batchgetframemetricdatarequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("codeguruprofiler").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="configure\_agent"></a>
-
-### configure_agent
-
-.
-
-Type annotations for `boto3.client("codeguruprofiler").configure_agent` method.
-
-Boto3 documentation:
-[CodeGuruProfiler.Client.configure_agent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
-
-Arguments mapping described in
-[ConfigureAgentRequestRequestTypeDef](./type_defs.md#configureagentrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `profilingGroupName`: `str` *(required)*
-- `fleetInstanceId`: `str`
-- `metadata`: `Mapping`\[[MetadataFieldType](./literals.md#metadatafieldtype),
-  `str`\]
-
-Returns
-[ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef).
-
-<a id="create\_profiling\_group"></a>
-
-### create_profiling_group
+### configure\_agent
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").create_profiling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").configure_agent` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.configure_agent)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.create_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
+```python title="Method definition"
+def configure_agent(
+    self,
+    *,
+    profilingGroupName: str,
+    fleetInstanceId: str = ...,
+    metadata: Mapping[MetadataFieldType, str] = ...,  # (1)
+) -> ConfigureAgentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateProfilingGroupRequestRequestTypeDef](./type_defs.md#createprofilinggrouprequestrequesttypedef).
+1. See [:material-code-brackets: MetadataFieldType](./literals.md#metadatafieldtype) 
+2. See [:material-code-braces: ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `clientToken`: `str` *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `agentOrchestrationConfig`:
-  [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ConfigureAgentRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns
-[CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef).
+parent.configure_agent(**kwargs)
+```
 
-<a id="delete\_profiling\_group"></a>
+1. See [:material-code-braces: ConfigureAgentRequestRequestTypeDef](./type_defs.md#configureagentrequestrequesttypedef) 
 
-### delete_profiling_group
+### create\_profiling\_group
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").create_profiling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.create_profiling_group)
+
+```python title="Method definition"
+def create_profiling_group(
+    self,
+    *,
+    clientToken: str,
+    profilingGroupName: str,
+    agentOrchestrationConfig: AgentOrchestrationConfigTypeDef = ...,  # (1)
+    computePlatform: ComputePlatformType = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateProfilingGroupResponseTypeDef:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
+2. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+3. See [:material-code-braces: CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateProfilingGroupRequestRequestTypeDef = {  # (1)
+    "clientToken": ...,
+    "profilingGroupName": ...,
+}
+
+parent.create_profiling_group(**kwargs)
+```
+
+1. See [:material-code-braces: CreateProfilingGroupRequestRequestTypeDef](./type_defs.md#createprofilinggrouprequestrequesttypedef) 
+
+### delete\_profiling\_group
 
 Deletes a profiling group.
 
-Type annotations for `boto3.client("codeguruprofiler").delete_profiling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").delete_profiling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.delete_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.delete_profiling_group)
+```python title="Method definition"
+def delete_profiling_group(
+    self,
+    *,
+    profilingGroupName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProfilingGroupRequestRequestTypeDef](./type_defs.md#deleteprofilinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProfilingGroupRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_profiling_group(**kwargs)
+```
 
-<a id="describe\_profiling\_group"></a>
+1. See [:material-code-braces: DeleteProfilingGroupRequestRequestTypeDef](./type_defs.md#deleteprofilinggrouprequestrequesttypedef) 
 
-### describe_profiling_group
+### describe\_profiling\_group
 
 .
 
-Type annotations for
-`boto3.client("codeguruprofiler").describe_profiling_group` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").describe_profiling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.describe_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.describe_profiling_group)
+```python title="Method definition"
+def describe_profiling_group(
+    self,
+    *,
+    profilingGroupName: str,
+) -> DescribeProfilingGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProfilingGroupRequestRequestTypeDef](./type_defs.md#describeprofilinggrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeProfilingGroupResponseTypeDef](./type_defs.md#describeprofilinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProfilingGroupRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns
-[DescribeProfilingGroupResponseTypeDef](./type_defs.md#describeprofilinggroupresponsetypedef).
+parent.describe_profiling_group(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeProfilingGroupRequestRequestTypeDef](./type_defs.md#describeprofilinggrouprequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("codeguruprofiler").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_findings\_report\_account\_summary"></a>
-
-### get_findings_report_account_summary
+### get\_findings\_report\_account\_summary
 
 .
 
-Type annotations for
-`boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_findings_report_account_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.get_findings_report_account_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_findings_report_account_summary)
+```python title="Method definition"
+def get_findings_report_account_summary(
+    self,
+    *,
+    dailyReportsOnly: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> GetFindingsReportAccountSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsReportAccountSummaryRequestRequestTypeDef](./type_defs.md#getfindingsreportaccountsummaryrequestrequesttypedef).
+1. See [:material-code-braces: GetFindingsReportAccountSummaryResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `dailyReportsOnly`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFindingsReportAccountSummaryRequestRequestTypeDef = {  # (1)
+    "dailyReportsOnly": ...,
+}
 
-Returns
-[GetFindingsReportAccountSummaryResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponsetypedef).
+parent.get_findings_report_account_summary(**kwargs)
+```
 
-<a id="get\_notification\_configuration"></a>
+1. See [:material-code-braces: GetFindingsReportAccountSummaryRequestRequestTypeDef](./type_defs.md#getfindingsreportaccountsummaryrequestrequesttypedef) 
 
-### get_notification_configuration
+### get\_notification\_configuration
 
 Get the current configuration for anomaly notifications for a profiling group.
 
-Type annotations for
-`boto3.client("codeguruprofiler").get_notification_configuration` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_notification_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.get_notification_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_notification_configuration)
+```python title="Method definition"
+def get_notification_configuration(
+    self,
+    *,
+    profilingGroupName: str,
+) -> GetNotificationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNotificationConfigurationRequestRequestTypeDef](./type_defs.md#getnotificationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetNotificationConfigurationResponseTypeDef](./type_defs.md#getnotificationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNotificationConfigurationRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns
-[GetNotificationConfigurationResponseTypeDef](./type_defs.md#getnotificationconfigurationresponsetypedef).
+parent.get_notification_configuration(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetNotificationConfigurationRequestRequestTypeDef](./type_defs.md#getnotificationconfigurationrequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
 Returns the JSON-formatted resource-based policy on a profiling group.
 
-Type annotations for `boto3.client("codeguruprofiler").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    profilingGroupName: str,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="get\_profile"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### get_profile
+### get\_profile
 
 Gets the aggregated profile of a profiling group for a specified time range.
 
-Type annotations for `boto3.client("codeguruprofiler").get_profile` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.get_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_profile)
+```python title="Method definition"
+def get_profile(
+    self,
+    *,
+    profilingGroupName: str,
+    accept: str = ...,
+    endTime: Union[datetime, str] = ...,
+    maxDepth: int = ...,
+    period: str = ...,
+    startTime: Union[datetime, str] = ...,
+) -> GetProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `profilingGroupName`: `str` *(required)*
-- `accept`: `str`
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `maxDepth`: `int`
-- `period`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetProfileRequestRequestTypeDef = {  # (1)
+    "profilingGroupName": ...,
+}
 
-Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
+parent.get_profile(**kwargs)
+```
 
-<a id="get\_recommendations"></a>
+1. See [:material-code-braces: GetProfileRequestRequestTypeDef](./type_defs.md#getprofilerequestrequesttypedef) 
 
-### get_recommendations
+### get\_recommendations
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").get_recommendations`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.get_recommendations)
+```python title="Method definition"
+def get_recommendations(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    locale: str = ...,
+) -> GetRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `locale`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRecommendationsRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "profilingGroupName": ...,
+    "startTime": ...,
+}
 
-Returns
-[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
+parent.get_recommendations(**kwargs)
+```
 
-<a id="list\_findings\_reports"></a>
+1. See [:material-code-braces: GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef) 
 
-### list_findings_reports
+### list\_findings\_reports
 
 List the available reports for a given profiling group and time range.
 
-Type annotations for `boto3.client("codeguruprofiler").list_findings_reports`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").list_findings_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.list_findings_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_findings_reports)
+```python title="Method definition"
+def list_findings_reports(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    dailyReportsOnly: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListFindingsReportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsReportsRequestRequestTypeDef](./type_defs.md#listfindingsreportsrequestrequesttypedef).
+1. See [:material-code-braces: ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `dailyReportsOnly`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFindingsReportsRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "profilingGroupName": ...,
+    "startTime": ...,
+}
 
-Returns
-[ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef).
+parent.list_findings_reports(**kwargs)
+```
 
-<a id="list\_profile\_times"></a>
+1. See [:material-code-braces: ListFindingsReportsRequestRequestTypeDef](./type_defs.md#listfindingsreportsrequestrequesttypedef) 
 
-### list_profile_times
+### list\_profile\_times
 
 Lists the start times of the available aggregated profiles of a profiling group
 for an aggregation period within the specified time range.
 
-Type annotations for `boto3.client("codeguruprofiler").list_profile_times`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").list_profile_times` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.list_profile_times](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profile_times)
+```python title="Method definition"
+def list_profile_times(
+    self,
+    *,
+    endTime: Union[datetime, str],
+    period: AggregationPeriodType,  # (1)
+    profilingGroupName: str,
+    startTime: Union[datetime, str],
+    maxResults: int = ...,
+    nextToken: str = ...,
+    orderBy: OrderByType = ...,  # (2)
+) -> ListProfileTimesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListProfileTimesRequestRequestTypeDef](./type_defs.md#listprofiletimesrequestrequesttypedef).
+1. See [:material-code-brackets: AggregationPeriodType](./literals.md#aggregationperiodtype) 
+2. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+3. See [:material-code-braces: ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
-  *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
+```python title="Usage example with kwargs"
+kwargs: ListProfileTimesRequestRequestTypeDef = {  # (1)
+    "endTime": ...,
+    "period": ...,
+    "profilingGroupName": ...,
+    "startTime": ...,
+}
 
-Returns
-[ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef).
+parent.list_profile_times(**kwargs)
+```
 
-<a id="list\_profiling\_groups"></a>
+1. See [:material-code-braces: ListProfileTimesRequestRequestTypeDef](./type_defs.md#listprofiletimesrequestrequesttypedef) 
 
-### list_profiling_groups
+### list\_profiling\_groups
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").list_profiling_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").list_profiling_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.list_profiling_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_profiling_groups)
+```python title="Method definition"
+def list_profiling_groups(
+    self,
+    *,
+    includeDescription: bool = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListProfilingGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProfilingGroupsRequestRequestTypeDef](./type_defs.md#listprofilinggroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListProfilingGroupsResponseTypeDef](./type_defs.md#listprofilinggroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `includeDescription`: `bool`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProfilingGroupsRequestRequestTypeDef = {  # (1)
+    "includeDescription": ...,
+}
 
-Returns
-[ListProfilingGroupsResponseTypeDef](./type_defs.md#listprofilinggroupsresponsetypedef).
+parent.list_profiling_groups(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProfilingGroupsRequestRequestTypeDef](./type_defs.md#listprofilinggroupsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of the tags that are assigned to a specified resource.
 
-Type annotations for `boto3.client("codeguruprofiler").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="post\_agent\_profile"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### post_agent_profile
+### post\_agent\_profile
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").post_agent_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").post_agent_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.post_agent_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.post_agent_profile)
+```python title="Method definition"
+def post_agent_profile(
+    self,
+    *,
+    agentProfile: Union[bytes, IO[bytes], StreamingBody],
+    contentType: str,
+    profilingGroupName: str,
+    profileToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PostAgentProfileRequestRequestTypeDef](./type_defs.md#postagentprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `agentProfile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `contentType`: `str` *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `profileToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PostAgentProfileRequestRequestTypeDef = {  # (1)
+    "agentProfile": ...,
+    "contentType": ...,
+    "profilingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.post_agent_profile(**kwargs)
+```
 
-<a id="put\_permission"></a>
+1. See [:material-code-braces: PostAgentProfileRequestRequestTypeDef](./type_defs.md#postagentprofilerequestrequesttypedef) 
 
-### put_permission
+### put\_permission
 
 Adds permissions to a profiling group's resource-based policy that are provided
 using an action group.
 
-Type annotations for `boto3.client("codeguruprofiler").put_permission` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").put_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.put_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.put_permission)
+```python title="Method definition"
+def put_permission(
+    self,
+    *,
+    actionGroup: ActionGroupType,  # (1)
+    principals: Sequence[str],
+    profilingGroupName: str,
+    revisionId: str = ...,
+) -> PutPermissionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef).
+1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
+2. See [:material-code-braces: PutPermissionResponseTypeDef](./type_defs.md#putpermissionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `actionGroup`: `Literal['agentPermissions']` (see
-  [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
-- `principals`: `Sequence`\[`str`\] *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `revisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutPermissionRequestRequestTypeDef = {  # (1)
+    "actionGroup": ...,
+    "principals": ...,
+    "profilingGroupName": ...,
+}
 
-Returns
-[PutPermissionResponseTypeDef](./type_defs.md#putpermissionresponsetypedef).
+parent.put_permission(**kwargs)
+```
 
-<a id="remove\_notification\_channel"></a>
+1. See [:material-code-braces: PutPermissionRequestRequestTypeDef](./type_defs.md#putpermissionrequestrequesttypedef) 
 
-### remove_notification_channel
+### remove\_notification\_channel
 
 Remove one anomaly notifications channel for a profiling group.
 
-Type annotations for
-`boto3.client("codeguruprofiler").remove_notification_channel` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").remove_notification_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.remove_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_notification_channel)
+```python title="Method definition"
+def remove_notification_channel(
+    self,
+    *,
+    channelId: str,
+    profilingGroupName: str,
+) -> RemoveNotificationChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveNotificationChannelRequestRequestTypeDef](./type_defs.md#removenotificationchannelrequestrequesttypedef).
+1. See [:material-code-braces: RemoveNotificationChannelResponseTypeDef](./type_defs.md#removenotificationchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `channelId`: `str` *(required)*
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveNotificationChannelRequestRequestTypeDef = {  # (1)
+    "channelId": ...,
+    "profilingGroupName": ...,
+}
 
-Returns
-[RemoveNotificationChannelResponseTypeDef](./type_defs.md#removenotificationchannelresponsetypedef).
+parent.remove_notification_channel(**kwargs)
+```
 
-<a id="remove\_permission"></a>
+1. See [:material-code-braces: RemoveNotificationChannelRequestRequestTypeDef](./type_defs.md#removenotificationchannelrequestrequesttypedef) 
 
-### remove_permission
-
-.
-
-Type annotations for `boto3.client("codeguruprofiler").remove_permission`
-method.
-
-Boto3 documentation:
-[CodeGuruProfiler.Client.remove_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
-
-Arguments mapping described in
-[RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `actionGroup`: `Literal['agentPermissions']` (see
-  [ActionGroupType](./literals.md#actiongrouptype)) *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `revisionId`: `str` *(required)*
-
-Returns
-[RemovePermissionResponseTypeDef](./type_defs.md#removepermissionresponsetypedef).
-
-<a id="submit\_feedback"></a>
-
-### submit_feedback
+### remove\_permission
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").submit_feedback` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").remove_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.remove_permission)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
+```python title="Method definition"
+def remove_permission(
+    self,
+    *,
+    actionGroup: ActionGroupType,  # (1)
+    profilingGroupName: str,
+    revisionId: str,
+) -> RemovePermissionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef).
+1. See [:material-code-brackets: ActionGroupType](./literals.md#actiongrouptype) 
+2. See [:material-code-braces: RemovePermissionResponseTypeDef](./type_defs.md#removepermissionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `anomalyInstanceId`: `str` *(required)*
-- `profilingGroupName`: `str` *(required)*
-- `type`: [FeedbackTypeType](./literals.md#feedbacktypetype) *(required)*
-- `comment`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemovePermissionRequestRequestTypeDef = {  # (1)
+    "actionGroup": ...,
+    "profilingGroupName": ...,
+    "revisionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_permission(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RemovePermissionRequestRequestTypeDef](./type_defs.md#removepermissionrequestrequesttypedef) 
 
-### tag_resource
+### submit\_feedback
+
+.
+
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").submit_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.submit_feedback)
+
+```python title="Method definition"
+def submit_feedback(
+    self,
+    *,
+    anomalyInstanceId: str,
+    profilingGroupName: str,
+    type: FeedbackTypeType,  # (1)
+    comment: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
+
+1. See [:material-code-brackets: FeedbackTypeType](./literals.md#feedbacktypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SubmitFeedbackRequestRequestTypeDef = {  # (1)
+    "anomalyInstanceId": ...,
+    "profilingGroupName": ...,
+    "type": ...,
+}
+
+parent.submit_feedback(**kwargs)
+```
+
+1. See [:material-code-braces: SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef) 
+
+### tag\_resource
 
 Use to assign one or more tags to a resource.
 
-Type annotations for `boto3.client("codeguruprofiler").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Use to remove one or more tags from a resource.
 
-Type annotations for `boto3.client("codeguruprofiler").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_profiling\_group"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_profiling_group
+### update\_profiling\_group
 
 .
 
-Type annotations for `boto3.client("codeguruprofiler").update_profiling_group`
-method.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").update_profiling_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
 
-Boto3 documentation:
-[CodeGuruProfiler.Client.update_profiling_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.update_profiling_group)
+```python title="Method definition"
+def update_profiling_group(
+    self,
+    *,
+    agentOrchestrationConfig: AgentOrchestrationConfigTypeDef,  # (1)
+    profilingGroupName: str,
+) -> UpdateProfilingGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateProfilingGroupRequestRequestTypeDef](./type_defs.md#updateprofilinggrouprequestrequesttypedef).
+1. See [:material-code-braces: AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef) 
+2. See [:material-code-braces: UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `agentOrchestrationConfig`:
-  [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
-  *(required)*
-- `profilingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateProfilingGroupRequestRequestTypeDef = {  # (1)
+    "agentOrchestrationConfig": ...,
+    "profilingGroupName": ...,
+}
 
-Returns
-[UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef).
+parent.update_profiling_group(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateProfilingGroupRequestRequestTypeDef](./type_defs.md#updateprofilinggrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("codeguruprofiler").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("codeguruprofiler").get_paginator` method with overloads.
 
-- `client.get_paginator("list_profile_times")` ->
-  [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
+- `client.get_paginator("list_profile_times")` -> [ListProfileTimesPaginator](./paginators.md#listprofiletimespaginator)
+
+
+

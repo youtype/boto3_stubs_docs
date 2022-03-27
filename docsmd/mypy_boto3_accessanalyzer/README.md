@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-accessanalyzer-module"></a>
-
-# Type annotations for boto3 AccessAnalyzer module
+#  AccessAnalyzer module
 
 > [Index](../README.md) > AccessAnalyzer
 
-Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module
-[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+!!! note ""
 
-- [Type annotations for boto3 AccessAnalyzer module](#type-annotations-for-boto3-accessanalyzer-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AccessAnalyzerClient](#accessanalyzerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+    type annotations stubs module [mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AccessAnalyzer`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[accessanalyzer]'
 python -m pip install mypy-boto3-accessanalyzer
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,88 +42,37 @@ python -m pip install mypy-boto3-accessanalyzer
 python -m pip uninstall -y mypy-boto3-accessanalyzer
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="accessanalyzerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AccessAnalyzerClient
 
-Type annotations for `boto3.client("accessanalyzer")` as
-[AccessAnalyzerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("accessanalyzer")` as [AccessAnalyzerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_accessanalyzer.client import AccessAnalyzerClient
+
+def get_client() -> AccessAnalyzerClient:
+    return Session().cleint("accessanalyzer")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [apply_archive_rule](./client.md#apply_archive_rule)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_policy_generation](./client.md#cancel_policy_generation)
-- [create_access_preview](./client.md#create_access_preview)
-- [create_analyzer](./client.md#create_analyzer)
-- [create_archive_rule](./client.md#create_archive_rule)
-- [delete_analyzer](./client.md#delete_analyzer)
-- [delete_archive_rule](./client.md#delete_archive_rule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_access_preview](./client.md#get_access_preview)
-- [get_analyzed_resource](./client.md#get_analyzed_resource)
-- [get_analyzer](./client.md#get_analyzer)
-- [get_archive_rule](./client.md#get_archive_rule)
-- [get_finding](./client.md#get_finding)
-- [get_generated_policy](./client.md#get_generated_policy)
-- [get_paginator](./client.md#get_paginator)
-- [list_access_preview_findings](./client.md#list_access_preview_findings)
-- [list_access_previews](./client.md#list_access_previews)
-- [list_analyzed_resources](./client.md#list_analyzed_resources)
-- [list_analyzers](./client.md#list_analyzers)
-- [list_archive_rules](./client.md#list_archive_rules)
-- [list_findings](./client.md#list_findings)
-- [list_policy_generations](./client.md#list_policy_generations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_policy_generation](./client.md#start_policy_generation)
-- [start_resource_scan](./client.md#start_resource_scan)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_archive_rule](./client.md#update_archive_rule)
-- [update_findings](./client.md#update_findings)
-- [validate_policy](./client.md#validate_policy)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AccessAnalyzerClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("accessanalyzer").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("accessanalyzer").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator, ...
+from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator
+
+def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPaginator:
+    return Session().client("accessanalyzer").get_paginator("list_access_preview_findings"))
 ```
 
 - [ListAccessPreviewFindingsPaginator](./paginators.md#listaccesspreviewfindingspaginator)
@@ -157,16 +84,23 @@ from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginat
 - [ListPolicyGenerationsPaginator](./paginators.md#listpolicygenerationspaginator)
 - [ValidatePolicyPaginator](./paginators.md#validatepolicypaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 
-```python
-from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType, ...
+def get_value() -> AccessPreviewStatusReasonCodeType:
+    return "INTERNAL_ERROR"
 ```
 
 - [AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype)
@@ -200,18 +134,27 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef
 
-```python
-from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef, ...
+def get_value() -> AccessPreviewFindingTypeDef:
+    return {
+        "changeType": ...,
+        "createdAt": ...,
+        "id": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+        "status": ...,
+    }
 ```
 
 - [AccessPreviewFindingTypeDef](./type_defs.md#accesspreviewfindingtypedef)
@@ -262,18 +205,25 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef, ...
 - [KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)
 - [KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef)
 - [KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef)
+- [ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef](./type_defs.md#listaccesspreviewfindingsrequestlistaccesspreviewfindingspaginatetypedef)
 - [ListAccessPreviewFindingsRequestRequestTypeDef](./type_defs.md#listaccesspreviewfindingsrequestrequesttypedef)
 - [ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef)
+- [ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef](./type_defs.md#listaccesspreviewsrequestlistaccesspreviewspaginatetypedef)
 - [ListAccessPreviewsRequestRequestTypeDef](./type_defs.md#listaccesspreviewsrequestrequesttypedef)
 - [ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef)
+- [ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef](./type_defs.md#listanalyzedresourcesrequestlistanalyzedresourcespaginatetypedef)
 - [ListAnalyzedResourcesRequestRequestTypeDef](./type_defs.md#listanalyzedresourcesrequestrequesttypedef)
 - [ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)
+- [ListAnalyzersRequestListAnalyzersPaginateTypeDef](./type_defs.md#listanalyzersrequestlistanalyzerspaginatetypedef)
 - [ListAnalyzersRequestRequestTypeDef](./type_defs.md#listanalyzersrequestrequesttypedef)
 - [ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef)
+- [ListArchiveRulesRequestListArchiveRulesPaginateTypeDef](./type_defs.md#listarchiverulesrequestlistarchiverulespaginatetypedef)
 - [ListArchiveRulesRequestRequestTypeDef](./type_defs.md#listarchiverulesrequestrequesttypedef)
 - [ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef)
+- [ListFindingsRequestListFindingsPaginateTypeDef](./type_defs.md#listfindingsrequestlistfindingspaginatetypedef)
 - [ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef)
 - [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)
+- [ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef](./type_defs.md#listpolicygenerationsrequestlistpolicygenerationspaginatetypedef)
 - [ListPolicyGenerationsRequestRequestTypeDef](./type_defs.md#listpolicygenerationsrequestrequesttypedef)
 - [ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -307,5 +257,7 @@ from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef, ...
 - [UpdateFindingsRequestRequestTypeDef](./type_defs.md#updatefindingsrequestrequesttypedef)
 - [ValidatePolicyFindingTypeDef](./type_defs.md#validatepolicyfindingtypedef)
 - [ValidatePolicyRequestRequestTypeDef](./type_defs.md#validatepolicyrequestrequesttypedef)
+- [ValidatePolicyRequestValidatePolicyPaginateTypeDef](./type_defs.md#validatepolicyrequestvalidatepolicypaginatetypedef)
 - [ValidatePolicyResponseTypeDef](./type_defs.md#validatepolicyresponsetypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+

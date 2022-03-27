@@ -1,5961 +1,7908 @@
-<a id="typed-dictionaries-for-boto3-iam-module"></a>
-
-# Typed dictionaries for boto3 IAM module
+# Typed dictionaries
 
 > [Index](../README.md) > [IAM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
-type annotations stubs module
-[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
+!!! note ""
 
-- [Typed dictionaries for boto3 IAM module](#typed-dictionaries-for-boto3-iam-module)
-  - [AccessDetailTypeDef](#accessdetailtypedef)
-  - [AccessKeyLastUsedTypeDef](#accesskeylastusedtypedef)
-  - [AccessKeyMetadataTypeDef](#accesskeymetadatatypedef)
-  - [AccessKeyTypeDef](#accesskeytypedef)
-  - [AddClientIDToOpenIDConnectProviderRequestRequestTypeDef](#addclientidtoopenidconnectproviderrequestrequesttypedef)
-  - [AddRoleToInstanceProfileRequestInstanceProfileAddRoleTypeDef](#addroletoinstanceprofilerequestinstanceprofileaddroletypedef)
-  - [AddRoleToInstanceProfileRequestRequestTypeDef](#addroletoinstanceprofilerequestrequesttypedef)
-  - [AddUserToGroupRequestGroupAddUserTypeDef](#addusertogrouprequestgroupaddusertypedef)
-  - [AddUserToGroupRequestRequestTypeDef](#addusertogrouprequestrequesttypedef)
-  - [AddUserToGroupRequestUserAddGroupTypeDef](#addusertogrouprequestuseraddgrouptypedef)
-  - [AttachGroupPolicyRequestGroupAttachPolicyTypeDef](#attachgrouppolicyrequestgroupattachpolicytypedef)
-  - [AttachGroupPolicyRequestPolicyAttachGroupTypeDef](#attachgrouppolicyrequestpolicyattachgrouptypedef)
-  - [AttachGroupPolicyRequestRequestTypeDef](#attachgrouppolicyrequestrequesttypedef)
-  - [AttachRolePolicyRequestPolicyAttachRoleTypeDef](#attachrolepolicyrequestpolicyattachroletypedef)
-  - [AttachRolePolicyRequestRequestTypeDef](#attachrolepolicyrequestrequesttypedef)
-  - [AttachRolePolicyRequestRoleAttachPolicyTypeDef](#attachrolepolicyrequestroleattachpolicytypedef)
-  - [AttachUserPolicyRequestPolicyAttachUserTypeDef](#attachuserpolicyrequestpolicyattachusertypedef)
-  - [AttachUserPolicyRequestRequestTypeDef](#attachuserpolicyrequestrequesttypedef)
-  - [AttachUserPolicyRequestUserAttachPolicyTypeDef](#attachuserpolicyrequestuserattachpolicytypedef)
-  - [AttachedPermissionsBoundaryResponseMetadataTypeDef](#attachedpermissionsboundaryresponsemetadatatypedef)
-  - [AttachedPermissionsBoundaryTypeDef](#attachedpermissionsboundarytypedef)
-  - [AttachedPolicyTypeDef](#attachedpolicytypedef)
-  - [ChangePasswordRequestRequestTypeDef](#changepasswordrequestrequesttypedef)
-  - [ChangePasswordRequestServiceResourceChangePasswordTypeDef](#changepasswordrequestserviceresourcechangepasswordtypedef)
-  - [ContextEntryTypeDef](#contextentrytypedef)
-  - [CreateAccessKeyRequestRequestTypeDef](#createaccesskeyrequestrequesttypedef)
-  - [CreateAccessKeyResponseTypeDef](#createaccesskeyresponsetypedef)
-  - [CreateAccountAliasRequestRequestTypeDef](#createaccountaliasrequestrequesttypedef)
-  - [CreateAccountAliasRequestServiceResourceCreateAccountAliasTypeDef](#createaccountaliasrequestserviceresourcecreateaccountaliastypedef)
-  - [CreateGroupRequestGroupCreateTypeDef](#creategrouprequestgroupcreatetypedef)
-  - [CreateGroupRequestRequestTypeDef](#creategrouprequestrequesttypedef)
-  - [CreateGroupRequestServiceResourceCreateGroupTypeDef](#creategrouprequestserviceresourcecreategrouptypedef)
-  - [CreateGroupResponseTypeDef](#creategroupresponsetypedef)
-  - [CreateInstanceProfileRequestRequestTypeDef](#createinstanceprofilerequestrequesttypedef)
-  - [CreateInstanceProfileRequestServiceResourceCreateInstanceProfileTypeDef](#createinstanceprofilerequestserviceresourcecreateinstanceprofiletypedef)
-  - [CreateInstanceProfileResponseTypeDef](#createinstanceprofileresponsetypedef)
-  - [CreateLoginProfileRequestLoginProfileCreateTypeDef](#createloginprofilerequestloginprofilecreatetypedef)
-  - [CreateLoginProfileRequestRequestTypeDef](#createloginprofilerequestrequesttypedef)
-  - [CreateLoginProfileRequestUserCreateLoginProfileTypeDef](#createloginprofilerequestusercreateloginprofiletypedef)
-  - [CreateLoginProfileResponseTypeDef](#createloginprofileresponsetypedef)
-  - [CreateOpenIDConnectProviderRequestRequestTypeDef](#createopenidconnectproviderrequestrequesttypedef)
-  - [CreateOpenIDConnectProviderResponseTypeDef](#createopenidconnectproviderresponsetypedef)
-  - [CreatePolicyRequestRequestTypeDef](#createpolicyrequestrequesttypedef)
-  - [CreatePolicyRequestServiceResourceCreatePolicyTypeDef](#createpolicyrequestserviceresourcecreatepolicytypedef)
-  - [CreatePolicyResponseTypeDef](#createpolicyresponsetypedef)
-  - [CreatePolicyVersionRequestPolicyCreateVersionTypeDef](#createpolicyversionrequestpolicycreateversiontypedef)
-  - [CreatePolicyVersionRequestRequestTypeDef](#createpolicyversionrequestrequesttypedef)
-  - [CreatePolicyVersionResponseTypeDef](#createpolicyversionresponsetypedef)
-  - [CreateRoleRequestRequestTypeDef](#createrolerequestrequesttypedef)
-  - [CreateRoleRequestServiceResourceCreateRoleTypeDef](#createrolerequestserviceresourcecreateroletypedef)
-  - [CreateRoleResponseTypeDef](#createroleresponsetypedef)
-  - [CreateSAMLProviderRequestRequestTypeDef](#createsamlproviderrequestrequesttypedef)
-  - [CreateSAMLProviderRequestServiceResourceCreateSamlProviderTypeDef](#createsamlproviderrequestserviceresourcecreatesamlprovidertypedef)
-  - [CreateSAMLProviderResponseTypeDef](#createsamlproviderresponsetypedef)
-  - [CreateServiceLinkedRoleRequestRequestTypeDef](#createservicelinkedrolerequestrequesttypedef)
-  - [CreateServiceLinkedRoleResponseTypeDef](#createservicelinkedroleresponsetypedef)
-  - [CreateServiceSpecificCredentialRequestRequestTypeDef](#createservicespecificcredentialrequestrequesttypedef)
-  - [CreateServiceSpecificCredentialResponseTypeDef](#createservicespecificcredentialresponsetypedef)
-  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
-  - [CreateUserRequestServiceResourceCreateUserTypeDef](#createuserrequestserviceresourcecreateusertypedef)
-  - [CreateUserRequestUserCreateTypeDef](#createuserrequestusercreatetypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
-  - [CreateVirtualMFADeviceRequestRequestTypeDef](#createvirtualmfadevicerequestrequesttypedef)
-  - [CreateVirtualMFADeviceRequestServiceResourceCreateVirtualMfaDeviceTypeDef](#createvirtualmfadevicerequestserviceresourcecreatevirtualmfadevicetypedef)
-  - [CreateVirtualMFADeviceResponseTypeDef](#createvirtualmfadeviceresponsetypedef)
-  - [DeactivateMFADeviceRequestRequestTypeDef](#deactivatemfadevicerequestrequesttypedef)
-  - [DeleteAccessKeyRequestRequestTypeDef](#deleteaccesskeyrequestrequesttypedef)
-  - [DeleteAccountAliasRequestRequestTypeDef](#deleteaccountaliasrequestrequesttypedef)
-  - [DeleteGroupPolicyRequestRequestTypeDef](#deletegrouppolicyrequestrequesttypedef)
-  - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
-  - [DeleteInstanceProfileRequestRequestTypeDef](#deleteinstanceprofilerequestrequesttypedef)
-  - [DeleteLoginProfileRequestRequestTypeDef](#deleteloginprofilerequestrequesttypedef)
-  - [DeleteOpenIDConnectProviderRequestRequestTypeDef](#deleteopenidconnectproviderrequestrequesttypedef)
-  - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
-  - [DeletePolicyVersionRequestRequestTypeDef](#deletepolicyversionrequestrequesttypedef)
-  - [DeleteRolePermissionsBoundaryRequestRequestTypeDef](#deleterolepermissionsboundaryrequestrequesttypedef)
-  - [DeleteRolePolicyRequestRequestTypeDef](#deleterolepolicyrequestrequesttypedef)
-  - [DeleteRoleRequestRequestTypeDef](#deleterolerequestrequesttypedef)
-  - [DeleteSAMLProviderRequestRequestTypeDef](#deletesamlproviderrequestrequesttypedef)
-  - [DeleteSSHPublicKeyRequestRequestTypeDef](#deletesshpublickeyrequestrequesttypedef)
-  - [DeleteServerCertificateRequestRequestTypeDef](#deleteservercertificaterequestrequesttypedef)
-  - [DeleteServiceLinkedRoleRequestRequestTypeDef](#deleteservicelinkedrolerequestrequesttypedef)
-  - [DeleteServiceLinkedRoleResponseTypeDef](#deleteservicelinkedroleresponsetypedef)
-  - [DeleteServiceSpecificCredentialRequestRequestTypeDef](#deleteservicespecificcredentialrequestrequesttypedef)
-  - [DeleteSigningCertificateRequestRequestTypeDef](#deletesigningcertificaterequestrequesttypedef)
-  - [DeleteUserPermissionsBoundaryRequestRequestTypeDef](#deleteuserpermissionsboundaryrequestrequesttypedef)
-  - [DeleteUserPolicyRequestRequestTypeDef](#deleteuserpolicyrequestrequesttypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DeleteVirtualMFADeviceRequestRequestTypeDef](#deletevirtualmfadevicerequestrequesttypedef)
-  - [DeletionTaskFailureReasonTypeTypeDef](#deletiontaskfailurereasontypetypedef)
-  - [DetachGroupPolicyRequestGroupDetachPolicyTypeDef](#detachgrouppolicyrequestgroupdetachpolicytypedef)
-  - [DetachGroupPolicyRequestPolicyDetachGroupTypeDef](#detachgrouppolicyrequestpolicydetachgrouptypedef)
-  - [DetachGroupPolicyRequestRequestTypeDef](#detachgrouppolicyrequestrequesttypedef)
-  - [DetachRolePolicyRequestPolicyDetachRoleTypeDef](#detachrolepolicyrequestpolicydetachroletypedef)
-  - [DetachRolePolicyRequestRequestTypeDef](#detachrolepolicyrequestrequesttypedef)
-  - [DetachRolePolicyRequestRoleDetachPolicyTypeDef](#detachrolepolicyrequestroledetachpolicytypedef)
-  - [DetachUserPolicyRequestPolicyDetachUserTypeDef](#detachuserpolicyrequestpolicydetachusertypedef)
-  - [DetachUserPolicyRequestRequestTypeDef](#detachuserpolicyrequestrequesttypedef)
-  - [DetachUserPolicyRequestUserDetachPolicyTypeDef](#detachuserpolicyrequestuserdetachpolicytypedef)
-  - [EnableMFADeviceRequestMfaDeviceAssociateTypeDef](#enablemfadevicerequestmfadeviceassociatetypedef)
-  - [EnableMFADeviceRequestRequestTypeDef](#enablemfadevicerequestrequesttypedef)
-  - [EnableMFADeviceRequestUserEnableMfaTypeDef](#enablemfadevicerequestuserenablemfatypedef)
-  - [EntityDetailsTypeDef](#entitydetailstypedef)
-  - [EntityInfoTypeDef](#entityinfotypedef)
-  - [ErrorDetailsTypeDef](#errordetailstypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [GenerateCredentialReportResponseTypeDef](#generatecredentialreportresponsetypedef)
-  - [GenerateOrganizationsAccessReportRequestRequestTypeDef](#generateorganizationsaccessreportrequestrequesttypedef)
-  - [GenerateOrganizationsAccessReportResponseTypeDef](#generateorganizationsaccessreportresponsetypedef)
-  - [GenerateServiceLastAccessedDetailsRequestRequestTypeDef](#generateservicelastaccesseddetailsrequestrequesttypedef)
-  - [GenerateServiceLastAccessedDetailsResponseTypeDef](#generateservicelastaccesseddetailsresponsetypedef)
-  - [GetAccessKeyLastUsedRequestRequestTypeDef](#getaccesskeylastusedrequestrequesttypedef)
-  - [GetAccessKeyLastUsedResponseTypeDef](#getaccesskeylastusedresponsetypedef)
-  - [GetAccountAuthorizationDetailsRequestRequestTypeDef](#getaccountauthorizationdetailsrequestrequesttypedef)
-  - [GetAccountAuthorizationDetailsResponseTypeDef](#getaccountauthorizationdetailsresponsetypedef)
-  - [GetAccountPasswordPolicyResponseTypeDef](#getaccountpasswordpolicyresponsetypedef)
-  - [GetAccountSummaryResponseTypeDef](#getaccountsummaryresponsetypedef)
-  - [GetContextKeysForCustomPolicyRequestRequestTypeDef](#getcontextkeysforcustompolicyrequestrequesttypedef)
-  - [GetContextKeysForPolicyResponseTypeDef](#getcontextkeysforpolicyresponsetypedef)
-  - [GetContextKeysForPrincipalPolicyRequestRequestTypeDef](#getcontextkeysforprincipalpolicyrequestrequesttypedef)
-  - [GetCredentialReportResponseTypeDef](#getcredentialreportresponsetypedef)
-  - [GetGroupPolicyRequestRequestTypeDef](#getgrouppolicyrequestrequesttypedef)
-  - [GetGroupPolicyResponseTypeDef](#getgrouppolicyresponsetypedef)
-  - [GetGroupRequestRequestTypeDef](#getgrouprequestrequesttypedef)
-  - [GetGroupResponseTypeDef](#getgroupresponsetypedef)
-  - [GetInstanceProfileRequestRequestTypeDef](#getinstanceprofilerequestrequesttypedef)
-  - [GetInstanceProfileResponseTypeDef](#getinstanceprofileresponsetypedef)
-  - [GetLoginProfileRequestRequestTypeDef](#getloginprofilerequestrequesttypedef)
-  - [GetLoginProfileResponseTypeDef](#getloginprofileresponsetypedef)
-  - [GetOpenIDConnectProviderRequestRequestTypeDef](#getopenidconnectproviderrequestrequesttypedef)
-  - [GetOpenIDConnectProviderResponseTypeDef](#getopenidconnectproviderresponsetypedef)
-  - [GetOrganizationsAccessReportRequestRequestTypeDef](#getorganizationsaccessreportrequestrequesttypedef)
-  - [GetOrganizationsAccessReportResponseTypeDef](#getorganizationsaccessreportresponsetypedef)
-  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [GetPolicyVersionRequestRequestTypeDef](#getpolicyversionrequestrequesttypedef)
-  - [GetPolicyVersionResponseTypeDef](#getpolicyversionresponsetypedef)
-  - [GetRolePolicyRequestRequestTypeDef](#getrolepolicyrequestrequesttypedef)
-  - [GetRolePolicyResponseTypeDef](#getrolepolicyresponsetypedef)
-  - [GetRoleRequestRequestTypeDef](#getrolerequestrequesttypedef)
-  - [GetRoleResponseTypeDef](#getroleresponsetypedef)
-  - [GetSAMLProviderRequestRequestTypeDef](#getsamlproviderrequestrequesttypedef)
-  - [GetSAMLProviderResponseTypeDef](#getsamlproviderresponsetypedef)
-  - [GetSSHPublicKeyRequestRequestTypeDef](#getsshpublickeyrequestrequesttypedef)
-  - [GetSSHPublicKeyResponseTypeDef](#getsshpublickeyresponsetypedef)
-  - [GetServerCertificateRequestRequestTypeDef](#getservercertificaterequestrequesttypedef)
-  - [GetServerCertificateResponseTypeDef](#getservercertificateresponsetypedef)
-  - [GetServiceLastAccessedDetailsRequestRequestTypeDef](#getservicelastaccesseddetailsrequestrequesttypedef)
-  - [GetServiceLastAccessedDetailsResponseTypeDef](#getservicelastaccesseddetailsresponsetypedef)
-  - [GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef](#getservicelastaccesseddetailswithentitiesrequestrequesttypedef)
-  - [GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](#getservicelastaccesseddetailswithentitiesresponsetypedef)
-  - [GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef](#getservicelinkedroledeletionstatusrequestrequesttypedef)
-  - [GetServiceLinkedRoleDeletionStatusResponseTypeDef](#getservicelinkedroledeletionstatusresponsetypedef)
-  - [GetUserPolicyRequestRequestTypeDef](#getuserpolicyrequestrequesttypedef)
-  - [GetUserPolicyResponseTypeDef](#getuserpolicyresponsetypedef)
-  - [GetUserRequestRequestTypeDef](#getuserrequestrequesttypedef)
-  - [GetUserResponseTypeDef](#getuserresponsetypedef)
-  - [GroupDetailTypeDef](#groupdetailtypedef)
-  - [GroupPolicyRequestTypeDef](#grouppolicyrequesttypedef)
-  - [GroupTypeDef](#grouptypedef)
-  - [InstanceProfileTypeDef](#instanceprofiletypedef)
-  - [ListAccessKeysRequestRequestTypeDef](#listaccesskeysrequestrequesttypedef)
-  - [ListAccessKeysResponseTypeDef](#listaccesskeysresponsetypedef)
-  - [ListAccountAliasesRequestRequestTypeDef](#listaccountaliasesrequestrequesttypedef)
-  - [ListAccountAliasesResponseTypeDef](#listaccountaliasesresponsetypedef)
-  - [ListAttachedGroupPoliciesRequestRequestTypeDef](#listattachedgrouppoliciesrequestrequesttypedef)
-  - [ListAttachedGroupPoliciesResponseTypeDef](#listattachedgrouppoliciesresponsetypedef)
-  - [ListAttachedRolePoliciesRequestRequestTypeDef](#listattachedrolepoliciesrequestrequesttypedef)
-  - [ListAttachedRolePoliciesResponseTypeDef](#listattachedrolepoliciesresponsetypedef)
-  - [ListAttachedUserPoliciesRequestRequestTypeDef](#listattacheduserpoliciesrequestrequesttypedef)
-  - [ListAttachedUserPoliciesResponseTypeDef](#listattacheduserpoliciesresponsetypedef)
-  - [ListEntitiesForPolicyRequestRequestTypeDef](#listentitiesforpolicyrequestrequesttypedef)
-  - [ListEntitiesForPolicyResponseTypeDef](#listentitiesforpolicyresponsetypedef)
-  - [ListGroupPoliciesRequestRequestTypeDef](#listgrouppoliciesrequestrequesttypedef)
-  - [ListGroupPoliciesResponseTypeDef](#listgrouppoliciesresponsetypedef)
-  - [ListGroupsForUserRequestRequestTypeDef](#listgroupsforuserrequestrequesttypedef)
-  - [ListGroupsForUserResponseTypeDef](#listgroupsforuserresponsetypedef)
-  - [ListGroupsRequestRequestTypeDef](#listgroupsrequestrequesttypedef)
-  - [ListGroupsResponseTypeDef](#listgroupsresponsetypedef)
-  - [ListInstanceProfileTagsRequestRequestTypeDef](#listinstanceprofiletagsrequestrequesttypedef)
-  - [ListInstanceProfileTagsResponseTypeDef](#listinstanceprofiletagsresponsetypedef)
-  - [ListInstanceProfilesForRoleRequestRequestTypeDef](#listinstanceprofilesforrolerequestrequesttypedef)
-  - [ListInstanceProfilesForRoleResponseTypeDef](#listinstanceprofilesforroleresponsetypedef)
-  - [ListInstanceProfilesRequestRequestTypeDef](#listinstanceprofilesrequestrequesttypedef)
-  - [ListInstanceProfilesResponseTypeDef](#listinstanceprofilesresponsetypedef)
-  - [ListMFADeviceTagsRequestRequestTypeDef](#listmfadevicetagsrequestrequesttypedef)
-  - [ListMFADeviceTagsResponseTypeDef](#listmfadevicetagsresponsetypedef)
-  - [ListMFADevicesRequestRequestTypeDef](#listmfadevicesrequestrequesttypedef)
-  - [ListMFADevicesResponseTypeDef](#listmfadevicesresponsetypedef)
-  - [ListOpenIDConnectProviderTagsRequestRequestTypeDef](#listopenidconnectprovidertagsrequestrequesttypedef)
-  - [ListOpenIDConnectProviderTagsResponseTypeDef](#listopenidconnectprovidertagsresponsetypedef)
-  - [ListOpenIDConnectProvidersResponseTypeDef](#listopenidconnectprovidersresponsetypedef)
-  - [ListPoliciesGrantingServiceAccessEntryTypeDef](#listpoliciesgrantingserviceaccessentrytypedef)
-  - [ListPoliciesGrantingServiceAccessRequestRequestTypeDef](#listpoliciesgrantingserviceaccessrequestrequesttypedef)
-  - [ListPoliciesGrantingServiceAccessResponseTypeDef](#listpoliciesgrantingserviceaccessresponsetypedef)
-  - [ListPoliciesRequestRequestTypeDef](#listpoliciesrequestrequesttypedef)
-  - [ListPoliciesResponseTypeDef](#listpoliciesresponsetypedef)
-  - [ListPolicyTagsRequestRequestTypeDef](#listpolicytagsrequestrequesttypedef)
-  - [ListPolicyTagsResponseTypeDef](#listpolicytagsresponsetypedef)
-  - [ListPolicyVersionsRequestRequestTypeDef](#listpolicyversionsrequestrequesttypedef)
-  - [ListPolicyVersionsResponseTypeDef](#listpolicyversionsresponsetypedef)
-  - [ListRolePoliciesRequestRequestTypeDef](#listrolepoliciesrequestrequesttypedef)
-  - [ListRolePoliciesResponseTypeDef](#listrolepoliciesresponsetypedef)
-  - [ListRoleTagsRequestRequestTypeDef](#listroletagsrequestrequesttypedef)
-  - [ListRoleTagsResponseTypeDef](#listroletagsresponsetypedef)
-  - [ListRolesRequestRequestTypeDef](#listrolesrequestrequesttypedef)
-  - [ListRolesResponseTypeDef](#listrolesresponsetypedef)
-  - [ListSAMLProviderTagsRequestRequestTypeDef](#listsamlprovidertagsrequestrequesttypedef)
-  - [ListSAMLProviderTagsResponseTypeDef](#listsamlprovidertagsresponsetypedef)
-  - [ListSAMLProvidersResponseTypeDef](#listsamlprovidersresponsetypedef)
-  - [ListSSHPublicKeysRequestRequestTypeDef](#listsshpublickeysrequestrequesttypedef)
-  - [ListSSHPublicKeysResponseTypeDef](#listsshpublickeysresponsetypedef)
-  - [ListServerCertificateTagsRequestRequestTypeDef](#listservercertificatetagsrequestrequesttypedef)
-  - [ListServerCertificateTagsResponseTypeDef](#listservercertificatetagsresponsetypedef)
-  - [ListServerCertificatesRequestRequestTypeDef](#listservercertificatesrequestrequesttypedef)
-  - [ListServerCertificatesResponseTypeDef](#listservercertificatesresponsetypedef)
-  - [ListServiceSpecificCredentialsRequestRequestTypeDef](#listservicespecificcredentialsrequestrequesttypedef)
-  - [ListServiceSpecificCredentialsResponseTypeDef](#listservicespecificcredentialsresponsetypedef)
-  - [ListSigningCertificatesRequestRequestTypeDef](#listsigningcertificatesrequestrequesttypedef)
-  - [ListSigningCertificatesResponseTypeDef](#listsigningcertificatesresponsetypedef)
-  - [ListUserPoliciesRequestRequestTypeDef](#listuserpoliciesrequestrequesttypedef)
-  - [ListUserPoliciesResponseTypeDef](#listuserpoliciesresponsetypedef)
-  - [ListUserTagsRequestRequestTypeDef](#listusertagsrequestrequesttypedef)
-  - [ListUserTagsResponseTypeDef](#listusertagsresponsetypedef)
-  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
-  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
-  - [ListVirtualMFADevicesRequestRequestTypeDef](#listvirtualmfadevicesrequestrequesttypedef)
-  - [ListVirtualMFADevicesResponseTypeDef](#listvirtualmfadevicesresponsetypedef)
-  - [LoginProfileTypeDef](#loginprofiletypedef)
-  - [MFADeviceTypeDef](#mfadevicetypedef)
-  - [ManagedPolicyDetailTypeDef](#managedpolicydetailtypedef)
-  - [OpenIDConnectProviderListEntryTypeDef](#openidconnectproviderlistentrytypedef)
-  - [OrganizationsDecisionDetailTypeDef](#organizationsdecisiondetailtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PasswordPolicyTypeDef](#passwordpolicytypedef)
-  - [PermissionsBoundaryDecisionDetailTypeDef](#permissionsboundarydecisiondetailtypedef)
-  - [PolicyDetailTypeDef](#policydetailtypedef)
-  - [PolicyGrantingServiceAccessTypeDef](#policygrantingserviceaccesstypedef)
-  - [PolicyGroupTypeDef](#policygrouptypedef)
-  - [PolicyRoleTypeDef](#policyroletypedef)
-  - [PolicyTypeDef](#policytypedef)
-  - [PolicyUserTypeDef](#policyusertypedef)
-  - [PolicyVersionTypeDef](#policyversiontypedef)
-  - [PositionTypeDef](#positiontypedef)
-  - [PutGroupPolicyRequestGroupCreatePolicyTypeDef](#putgrouppolicyrequestgroupcreatepolicytypedef)
-  - [PutGroupPolicyRequestGroupPolicyPutTypeDef](#putgrouppolicyrequestgrouppolicyputtypedef)
-  - [PutGroupPolicyRequestRequestTypeDef](#putgrouppolicyrequestrequesttypedef)
-  - [PutRolePermissionsBoundaryRequestRequestTypeDef](#putrolepermissionsboundaryrequestrequesttypedef)
-  - [PutRolePolicyRequestRequestTypeDef](#putrolepolicyrequestrequesttypedef)
-  - [PutRolePolicyRequestRolePolicyPutTypeDef](#putrolepolicyrequestrolepolicyputtypedef)
-  - [PutUserPermissionsBoundaryRequestRequestTypeDef](#putuserpermissionsboundaryrequestrequesttypedef)
-  - [PutUserPolicyRequestRequestTypeDef](#putuserpolicyrequestrequesttypedef)
-  - [PutUserPolicyRequestUserCreatePolicyTypeDef](#putuserpolicyrequestusercreatepolicytypedef)
-  - [PutUserPolicyRequestUserPolicyPutTypeDef](#putuserpolicyrequestuserpolicyputtypedef)
-  - [RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef](#removeclientidfromopenidconnectproviderrequestrequesttypedef)
-  - [RemoveRoleFromInstanceProfileRequestInstanceProfileRemoveRoleTypeDef](#removerolefrominstanceprofilerequestinstanceprofileremoveroletypedef)
-  - [RemoveRoleFromInstanceProfileRequestRequestTypeDef](#removerolefrominstanceprofilerequestrequesttypedef)
-  - [RemoveUserFromGroupRequestGroupRemoveUserTypeDef](#removeuserfromgrouprequestgroupremoveusertypedef)
-  - [RemoveUserFromGroupRequestRequestTypeDef](#removeuserfromgrouprequestrequesttypedef)
-  - [RemoveUserFromGroupRequestUserRemoveGroupTypeDef](#removeuserfromgrouprequestuserremovegrouptypedef)
-  - [ResetServiceSpecificCredentialRequestRequestTypeDef](#resetservicespecificcredentialrequestrequesttypedef)
-  - [ResetServiceSpecificCredentialResponseTypeDef](#resetservicespecificcredentialresponsetypedef)
-  - [ResourceSpecificResultTypeDef](#resourcespecificresulttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResyncMFADeviceRequestMfaDeviceResyncTypeDef](#resyncmfadevicerequestmfadeviceresynctypedef)
-  - [ResyncMFADeviceRequestRequestTypeDef](#resyncmfadevicerequestrequesttypedef)
-  - [RoleDetailTypeDef](#roledetailtypedef)
-  - [RoleLastUsedResponseMetadataTypeDef](#rolelastusedresponsemetadatatypedef)
-  - [RoleLastUsedTypeDef](#rolelastusedtypedef)
-  - [RolePolicyRequestTypeDef](#rolepolicyrequesttypedef)
-  - [RoleTypeDef](#roletypedef)
-  - [RoleUsageTypeTypeDef](#roleusagetypetypedef)
-  - [SAMLProviderListEntryTypeDef](#samlproviderlistentrytypedef)
-  - [SSHPublicKeyMetadataTypeDef](#sshpublickeymetadatatypedef)
-  - [SSHPublicKeyTypeDef](#sshpublickeytypedef)
-  - [ServerCertificateMetadataResponseMetadataTypeDef](#servercertificatemetadataresponsemetadatatypedef)
-  - [ServerCertificateMetadataTypeDef](#servercertificatemetadatatypedef)
-  - [ServerCertificateTypeDef](#servercertificatetypedef)
-  - [ServiceLastAccessedTypeDef](#servicelastaccessedtypedef)
-  - [ServiceResourceAccessKeyPairRequestTypeDef](#serviceresourceaccesskeypairrequesttypedef)
-  - [ServiceResourceAccessKeyRequestTypeDef](#serviceresourceaccesskeyrequesttypedef)
-  - [ServiceResourceAssumeRolePolicyRequestTypeDef](#serviceresourceassumerolepolicyrequesttypedef)
-  - [ServiceResourceGroupPolicyRequestTypeDef](#serviceresourcegrouppolicyrequesttypedef)
-  - [ServiceResourceGroupRequestTypeDef](#serviceresourcegrouprequesttypedef)
-  - [ServiceResourceInstanceProfileRequestTypeDef](#serviceresourceinstanceprofilerequesttypedef)
-  - [ServiceResourceLoginProfileRequestTypeDef](#serviceresourceloginprofilerequesttypedef)
-  - [ServiceResourceMfaDeviceRequestTypeDef](#serviceresourcemfadevicerequesttypedef)
-  - [ServiceResourcePolicyRequestTypeDef](#serviceresourcepolicyrequesttypedef)
-  - [ServiceResourcePolicyVersionRequestTypeDef](#serviceresourcepolicyversionrequesttypedef)
-  - [ServiceResourceRolePolicyRequestTypeDef](#serviceresourcerolepolicyrequesttypedef)
-  - [ServiceResourceRoleRequestTypeDef](#serviceresourcerolerequesttypedef)
-  - [ServiceResourceSamlProviderRequestTypeDef](#serviceresourcesamlproviderrequesttypedef)
-  - [ServiceResourceServerCertificateRequestTypeDef](#serviceresourceservercertificaterequesttypedef)
-  - [ServiceResourceSigningCertificateRequestTypeDef](#serviceresourcesigningcertificaterequesttypedef)
-  - [ServiceResourceUserPolicyRequestTypeDef](#serviceresourceuserpolicyrequesttypedef)
-  - [ServiceResourceUserRequestTypeDef](#serviceresourceuserrequesttypedef)
-  - [ServiceResourceVirtualMfaDeviceRequestTypeDef](#serviceresourcevirtualmfadevicerequesttypedef)
-  - [ServiceSpecificCredentialMetadataTypeDef](#servicespecificcredentialmetadatatypedef)
-  - [ServiceSpecificCredentialTypeDef](#servicespecificcredentialtypedef)
-  - [SetDefaultPolicyVersionRequestRequestTypeDef](#setdefaultpolicyversionrequestrequesttypedef)
-  - [SetSecurityTokenServicePreferencesRequestRequestTypeDef](#setsecuritytokenservicepreferencesrequestrequesttypedef)
-  - [SigningCertificateTypeDef](#signingcertificatetypedef)
-  - [SimulateCustomPolicyRequestRequestTypeDef](#simulatecustompolicyrequestrequesttypedef)
-  - [SimulatePolicyResponseTypeDef](#simulatepolicyresponsetypedef)
-  - [SimulatePrincipalPolicyRequestRequestTypeDef](#simulateprincipalpolicyrequestrequesttypedef)
-  - [StatementTypeDef](#statementtypedef)
-  - [TagInstanceProfileRequestRequestTypeDef](#taginstanceprofilerequestrequesttypedef)
-  - [TagMFADeviceRequestRequestTypeDef](#tagmfadevicerequestrequesttypedef)
-  - [TagOpenIDConnectProviderRequestRequestTypeDef](#tagopenidconnectproviderrequestrequesttypedef)
-  - [TagPolicyRequestRequestTypeDef](#tagpolicyrequestrequesttypedef)
-  - [TagRoleRequestRequestTypeDef](#tagrolerequestrequesttypedef)
-  - [TagSAMLProviderRequestRequestTypeDef](#tagsamlproviderrequestrequesttypedef)
-  - [TagServerCertificateRequestRequestTypeDef](#tagservercertificaterequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TagUserRequestRequestTypeDef](#taguserrequestrequesttypedef)
-  - [TrackedActionLastAccessedTypeDef](#trackedactionlastaccessedtypedef)
-  - [UntagInstanceProfileRequestRequestTypeDef](#untaginstanceprofilerequestrequesttypedef)
-  - [UntagMFADeviceRequestRequestTypeDef](#untagmfadevicerequestrequesttypedef)
-  - [UntagOpenIDConnectProviderRequestRequestTypeDef](#untagopenidconnectproviderrequestrequesttypedef)
-  - [UntagPolicyRequestRequestTypeDef](#untagpolicyrequestrequesttypedef)
-  - [UntagRoleRequestRequestTypeDef](#untagrolerequestrequesttypedef)
-  - [UntagSAMLProviderRequestRequestTypeDef](#untagsamlproviderrequestrequesttypedef)
-  - [UntagServerCertificateRequestRequestTypeDef](#untagservercertificaterequestrequesttypedef)
-  - [UntagUserRequestRequestTypeDef](#untaguserrequestrequesttypedef)
-  - [UpdateAccessKeyRequestAccessKeyActivateTypeDef](#updateaccesskeyrequestaccesskeyactivatetypedef)
-  - [UpdateAccessKeyRequestAccessKeyDeactivateTypeDef](#updateaccesskeyrequestaccesskeydeactivatetypedef)
-  - [UpdateAccessKeyRequestAccessKeyPairActivateTypeDef](#updateaccesskeyrequestaccesskeypairactivatetypedef)
-  - [UpdateAccessKeyRequestAccessKeyPairDeactivateTypeDef](#updateaccesskeyrequestaccesskeypairdeactivatetypedef)
-  - [UpdateAccessKeyRequestRequestTypeDef](#updateaccesskeyrequestrequesttypedef)
-  - [UpdateAccountPasswordPolicyRequestAccountPasswordPolicyUpdateTypeDef](#updateaccountpasswordpolicyrequestaccountpasswordpolicyupdatetypedef)
-  - [UpdateAccountPasswordPolicyRequestRequestTypeDef](#updateaccountpasswordpolicyrequestrequesttypedef)
-  - [UpdateAccountPasswordPolicyRequestServiceResourceCreateAccountPasswordPolicyTypeDef](#updateaccountpasswordpolicyrequestserviceresourcecreateaccountpasswordpolicytypedef)
-  - [UpdateAssumeRolePolicyRequestAssumeRolePolicyUpdateTypeDef](#updateassumerolepolicyrequestassumerolepolicyupdatetypedef)
-  - [UpdateAssumeRolePolicyRequestRequestTypeDef](#updateassumerolepolicyrequestrequesttypedef)
-  - [UpdateGroupRequestGroupUpdateTypeDef](#updategrouprequestgroupupdatetypedef)
-  - [UpdateGroupRequestRequestTypeDef](#updategrouprequestrequesttypedef)
-  - [UpdateLoginProfileRequestLoginProfileUpdateTypeDef](#updateloginprofilerequestloginprofileupdatetypedef)
-  - [UpdateLoginProfileRequestRequestTypeDef](#updateloginprofilerequestrequesttypedef)
-  - [UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef](#updateopenidconnectproviderthumbprintrequestrequesttypedef)
-  - [UpdateRoleDescriptionRequestRequestTypeDef](#updateroledescriptionrequestrequesttypedef)
-  - [UpdateRoleDescriptionResponseTypeDef](#updateroledescriptionresponsetypedef)
-  - [UpdateRoleRequestRequestTypeDef](#updaterolerequestrequesttypedef)
-  - [UpdateSAMLProviderRequestRequestTypeDef](#updatesamlproviderrequestrequesttypedef)
-  - [UpdateSAMLProviderRequestSamlProviderUpdateTypeDef](#updatesamlproviderrequestsamlproviderupdatetypedef)
-  - [UpdateSAMLProviderResponseTypeDef](#updatesamlproviderresponsetypedef)
-  - [UpdateSSHPublicKeyRequestRequestTypeDef](#updatesshpublickeyrequestrequesttypedef)
-  - [UpdateServerCertificateRequestRequestTypeDef](#updateservercertificaterequestrequesttypedef)
-  - [UpdateServerCertificateRequestServerCertificateUpdateTypeDef](#updateservercertificaterequestservercertificateupdatetypedef)
-  - [UpdateServiceSpecificCredentialRequestRequestTypeDef](#updateservicespecificcredentialrequestrequesttypedef)
-  - [UpdateSigningCertificateRequestRequestTypeDef](#updatesigningcertificaterequestrequesttypedef)
-  - [UpdateSigningCertificateRequestSigningCertificateActivateTypeDef](#updatesigningcertificaterequestsigningcertificateactivatetypedef)
-  - [UpdateSigningCertificateRequestSigningCertificateDeactivateTypeDef](#updatesigningcertificaterequestsigningcertificatedeactivatetypedef)
-  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
-  - [UpdateUserRequestUserUpdateTypeDef](#updateuserrequestuserupdatetypedef)
-  - [UploadSSHPublicKeyRequestRequestTypeDef](#uploadsshpublickeyrequestrequesttypedef)
-  - [UploadSSHPublicKeyResponseTypeDef](#uploadsshpublickeyresponsetypedef)
-  - [UploadServerCertificateRequestRequestTypeDef](#uploadservercertificaterequestrequesttypedef)
-  - [UploadServerCertificateRequestServiceResourceCreateServerCertificateTypeDef](#uploadservercertificaterequestserviceresourcecreateservercertificatetypedef)
-  - [UploadServerCertificateResponseTypeDef](#uploadservercertificateresponsetypedef)
-  - [UploadSigningCertificateRequestRequestTypeDef](#uploadsigningcertificaterequestrequesttypedef)
-  - [UploadSigningCertificateRequestServiceResourceCreateSigningCertificateTypeDef](#uploadsigningcertificaterequestserviceresourcecreatesigningcertificatetypedef)
-  - [UploadSigningCertificateResponseTypeDef](#uploadsigningcertificateresponsetypedef)
-  - [UserAccessKeyRequestTypeDef](#useraccesskeyrequesttypedef)
-  - [UserDetailTypeDef](#userdetailtypedef)
-  - [UserMfaDeviceRequestTypeDef](#usermfadevicerequesttypedef)
-  - [UserPolicyRequestTypeDef](#userpolicyrequesttypedef)
-  - [UserResponseMetadataTypeDef](#userresponsemetadatatypedef)
-  - [UserSigningCertificateRequestTypeDef](#usersigningcertificaterequesttypedef)
-  - [UserTypeDef](#usertypedef)
-  - [VirtualMFADeviceTypeDef](#virtualmfadevicetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accessdetailtypedef"></a>
+    Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+    type annotations stubs module [mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ## AccessDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AccessDetailTypeDef
+
+def get_value() -> AccessDetailTypeDef:
+    return {
+        "ServiceName": ...,
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceName`: `str`
-- `ServiceNamespace`: `str`
-
-Optional fields:
-
-- `Region`: `str`
-- `EntityPath`: `str`
-- `LastAuthenticatedTime`: `datetime`
-- `TotalAuthenticatedEntities`: `int`
-
-<a id="accesskeylastusedtypedef"></a>
+```python title="Definition"
+class AccessDetailTypeDef(TypedDict):
+    ServiceName: str,
+    ServiceNamespace: str,
+    Region: NotRequired[str],
+    EntityPath: NotRequired[str],
+    LastAuthenticatedTime: NotRequired[datetime],
+    TotalAuthenticatedEntities: NotRequired[int],
+```
 
 ## AccessKeyLastUsedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AccessKeyLastUsedTypeDef
+
+def get_value() -> AccessKeyLastUsedTypeDef:
+    return {
+        "LastUsedDate": ...,
+        "ServiceName": ...,
+        "Region": ...,
+    }
 ```
 
-Required fields:
-
-- `LastUsedDate`: `datetime`
-- `ServiceName`: `str`
-- `Region`: `str`
-
-<a id="accesskeymetadatatypedef"></a>
+```python title="Definition"
+class AccessKeyLastUsedTypeDef(TypedDict):
+    LastUsedDate: datetime,
+    ServiceName: str,
+    Region: str,
+```
 
 ## AccessKeyMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AccessKeyMetadataTypeDef
+
+def get_value() -> AccessKeyMetadataTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccessKeyMetadataTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    AccessKeyId: NotRequired[str],
+    Status: NotRequired[statusTypeType],  # (1)
+    CreateDate: NotRequired[datetime],
+```
 
-- `UserName`: `str`
-- `AccessKeyId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-- `CreateDate`: `datetime`
-
-<a id="accesskeytypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## AccessKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AccessKeyTypeDef
+
+def get_value() -> AccessKeyTypeDef:
+    return {
+        "UserName": ...,
+        "AccessKeyId": ...,
+        "Status": ...,
+        "SecretAccessKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessKeyTypeDef(TypedDict):
+    UserName: str,
+    AccessKeyId: str,
+    Status: statusTypeType,  # (1)
+    SecretAccessKey: str,
+    CreateDate: NotRequired[datetime],
+```
 
-- `UserName`: `str`
-- `AccessKeyId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-- `SecretAccessKey`: `str`
-
-Optional fields:
-
-- `CreateDate`: `datetime`
-
-<a id="addclientidtoopenidconnectproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## AddClientIDToOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddClientIDToOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> AddClientIDToOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "ClientID": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-- `ClientID`: `str`
-
-<a id="addroletoinstanceprofilerequestinstanceprofileaddroletypedef"></a>
+```python title="Definition"
+class AddClientIDToOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    ClientID: str,
+```
 
 ## AddRoleToInstanceProfileRequestInstanceProfileAddRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddRoleToInstanceProfileRequestInstanceProfileAddRoleTypeDef
+
+def get_value() -> AddRoleToInstanceProfileRequestInstanceProfileAddRoleTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="addroletoinstanceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class AddRoleToInstanceProfileRequestInstanceProfileAddRoleTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## AddRoleToInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddRoleToInstanceProfileRequestRequestTypeDef
+
+def get_value() -> AddRoleToInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-- `RoleName`: `str`
-
-<a id="addusertogrouprequestgroupaddusertypedef"></a>
+```python title="Definition"
+class AddRoleToInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    RoleName: str,
+```
 
 ## AddUserToGroupRequestGroupAddUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddUserToGroupRequestGroupAddUserTypeDef
+
+def get_value() -> AddUserToGroupRequestGroupAddUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="addusertogrouprequestrequesttypedef"></a>
+```python title="Definition"
+class AddUserToGroupRequestGroupAddUserTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## AddUserToGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddUserToGroupRequestRequestTypeDef
+
+def get_value() -> AddUserToGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserName`: `str`
-
-<a id="addusertogrouprequestuseraddgrouptypedef"></a>
+```python title="Definition"
+class AddUserToGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserName: str,
+```
 
 ## AddUserToGroupRequestUserAddGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AddUserToGroupRequestUserAddGroupTypeDef
+
+def get_value() -> AddUserToGroupRequestUserAddGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-<a id="attachgrouppolicyrequestgroupattachpolicytypedef"></a>
+```python title="Definition"
+class AddUserToGroupRequestUserAddGroupTypeDef(TypedDict):
+    GroupName: str,
+```
 
 ## AttachGroupPolicyRequestGroupAttachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachGroupPolicyRequestGroupAttachPolicyTypeDef
+
+def get_value() -> AttachGroupPolicyRequestGroupAttachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="attachgrouppolicyrequestpolicyattachgrouptypedef"></a>
+```python title="Definition"
+class AttachGroupPolicyRequestGroupAttachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## AttachGroupPolicyRequestPolicyAttachGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachGroupPolicyRequestPolicyAttachGroupTypeDef
+
+def get_value() -> AttachGroupPolicyRequestPolicyAttachGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-<a id="attachgrouppolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class AttachGroupPolicyRequestPolicyAttachGroupTypeDef(TypedDict):
+    GroupName: str,
+```
 
 ## AttachGroupPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachGroupPolicyRequestRequestTypeDef
+
+def get_value() -> AttachGroupPolicyRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `PolicyArn`: `str`
-
-<a id="attachrolepolicyrequestpolicyattachroletypedef"></a>
+```python title="Definition"
+class AttachGroupPolicyRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PolicyArn: str,
+```
 
 ## AttachRolePolicyRequestPolicyAttachRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachRolePolicyRequestPolicyAttachRoleTypeDef
+
+def get_value() -> AttachRolePolicyRequestPolicyAttachRoleTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="attachrolepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class AttachRolePolicyRequestPolicyAttachRoleTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## AttachRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachRolePolicyRequestRequestTypeDef
+
+def get_value() -> AttachRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyArn`: `str`
-
-<a id="attachrolepolicyrequestroleattachpolicytypedef"></a>
+```python title="Definition"
+class AttachRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyArn: str,
+```
 
 ## AttachRolePolicyRequestRoleAttachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachRolePolicyRequestRoleAttachPolicyTypeDef
+
+def get_value() -> AttachRolePolicyRequestRoleAttachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="attachuserpolicyrequestpolicyattachusertypedef"></a>
+```python title="Definition"
+class AttachRolePolicyRequestRoleAttachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## AttachUserPolicyRequestPolicyAttachUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachUserPolicyRequestPolicyAttachUserTypeDef
+
+def get_value() -> AttachUserPolicyRequestPolicyAttachUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="attachuserpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class AttachUserPolicyRequestPolicyAttachUserTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## AttachUserPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachUserPolicyRequestRequestTypeDef
+
+def get_value() -> AttachUserPolicyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PolicyArn`: `str`
-
-<a id="attachuserpolicyrequestuserattachpolicytypedef"></a>
+```python title="Definition"
+class AttachUserPolicyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PolicyArn: str,
+```
 
 ## AttachUserPolicyRequestUserAttachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachUserPolicyRequestUserAttachPolicyTypeDef
+
+def get_value() -> AttachUserPolicyRequestUserAttachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="attachedpermissionsboundaryresponsemetadatatypedef"></a>
+```python title="Definition"
+class AttachUserPolicyRequestUserAttachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## AttachedPermissionsBoundaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachedPermissionsBoundaryResponseMetadataTypeDef
+
+def get_value() -> AttachedPermissionsBoundaryResponseMetadataTypeDef:
+    return {
+        "PermissionsBoundaryType": ...,
+        "PermissionsBoundaryArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AttachedPermissionsBoundaryResponseMetadataTypeDef(TypedDict):
+    PermissionsBoundaryType: PermissionsBoundaryAttachmentTypeType,  # (1)
+    PermissionsBoundaryArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']` (see
-  [PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype))
-- `PermissionsBoundaryArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attachedpermissionsboundarytypedef"></a>
-
+1. See [:material-code-brackets: PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachedPermissionsBoundaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachedPermissionsBoundaryTypeDef
+
+def get_value() -> AttachedPermissionsBoundaryTypeDef:
+    return {
+        "PermissionsBoundaryType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachedPermissionsBoundaryTypeDef(TypedDict):
+    PermissionsBoundaryType: NotRequired[PermissionsBoundaryAttachmentTypeType],  # (1)
+    PermissionsBoundaryArn: NotRequired[str],
+```
 
-- `PermissionsBoundaryType`: `Literal['PermissionsBoundaryPolicy']` (see
-  [PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype))
-- `PermissionsBoundaryArn`: `str`
-
-<a id="attachedpolicytypedef"></a>
-
+1. See [:material-code-brackets: PermissionsBoundaryAttachmentTypeType](./literals.md#permissionsboundaryattachmenttypetype) 
 ## AttachedPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import AttachedPolicyTypeDef
+
+def get_value() -> AttachedPolicyTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `PolicyName`: `str`
-- `PolicyArn`: `str`
-
-<a id="changepasswordrequestrequesttypedef"></a>
+```python title="Definition"
+class AttachedPolicyTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyArn: NotRequired[str],
+```
 
 ## ChangePasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ChangePasswordRequestRequestTypeDef
+
+def get_value() -> ChangePasswordRequestRequestTypeDef:
+    return {
+        "OldPassword": ...,
+        "NewPassword": ...,
+    }
 ```
 
-Required fields:
-
-- `OldPassword`: `str`
-- `NewPassword`: `str`
-
-<a id="changepasswordrequestserviceresourcechangepasswordtypedef"></a>
+```python title="Definition"
+class ChangePasswordRequestRequestTypeDef(TypedDict):
+    OldPassword: str,
+    NewPassword: str,
+```
 
 ## ChangePasswordRequestServiceResourceChangePasswordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ChangePasswordRequestServiceResourceChangePasswordTypeDef
+
+def get_value() -> ChangePasswordRequestServiceResourceChangePasswordTypeDef:
+    return {
+        "OldPassword": ...,
+        "NewPassword": ...,
+    }
 ```
 
-Required fields:
-
-- `OldPassword`: `str`
-- `NewPassword`: `str`
-
-<a id="contextentrytypedef"></a>
+```python title="Definition"
+class ChangePasswordRequestServiceResourceChangePasswordTypeDef(TypedDict):
+    OldPassword: str,
+    NewPassword: str,
+```
 
 ## ContextEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ContextEntryTypeDef
+
+def get_value() -> ContextEntryTypeDef:
+    return {
+        "ContextKeyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContextEntryTypeDef(TypedDict):
+    ContextKeyName: NotRequired[str],
+    ContextKeyValues: NotRequired[Sequence[str]],
+    ContextKeyType: NotRequired[ContextKeyTypeEnumType],  # (1)
+```
 
-- `ContextKeyName`: `str`
-- `ContextKeyValues`: `Sequence`\[`str`\]
-- `ContextKeyType`:
-  [ContextKeyTypeEnumType](./literals.md#contextkeytypeenumtype)
-
-<a id="createaccesskeyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContextKeyTypeEnumType](./literals.md#contextkeytypeenumtype) 
 ## CreateAccessKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateAccessKeyRequestRequestTypeDef
+
+def get_value() -> CreateAccessKeyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="createaccesskeyresponsetypedef"></a>
+```python title="Definition"
+class CreateAccessKeyRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+```
 
 ## CreateAccessKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateAccessKeyResponseTypeDef
+
+def get_value() -> CreateAccessKeyResponseTypeDef:
+    return {
+        "AccessKey": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccessKeyResponseTypeDef(TypedDict):
+    AccessKey: AccessKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccessKey`: [AccessKeyTypeDef](./type_defs.md#accesskeytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createaccountaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessKeyTypeDef](./type_defs.md#accesskeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAccountAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateAccountAliasRequestRequestTypeDef
+
+def get_value() -> CreateAccountAliasRequestRequestTypeDef:
+    return {
+        "AccountAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountAlias`: `str`
-
-<a id="createaccountaliasrequestserviceresourcecreateaccountaliastypedef"></a>
+```python title="Definition"
+class CreateAccountAliasRequestRequestTypeDef(TypedDict):
+    AccountAlias: str,
+```
 
 ## CreateAccountAliasRequestServiceResourceCreateAccountAliasTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateAccountAliasRequestServiceResourceCreateAccountAliasTypeDef
+
+def get_value() -> CreateAccountAliasRequestServiceResourceCreateAccountAliasTypeDef:
+    return {
+        "AccountAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountAlias`: `str`
-
-<a id="creategrouprequestgroupcreatetypedef"></a>
+```python title="Definition"
+class CreateAccountAliasRequestServiceResourceCreateAccountAliasTypeDef(TypedDict):
+    AccountAlias: str,
+```
 
 ## CreateGroupRequestGroupCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateGroupRequestGroupCreateTypeDef
+
+def get_value() -> CreateGroupRequestGroupCreateTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
-
-- `Path`: `str`
-
-<a id="creategrouprequestrequesttypedef"></a>
+```python title="Definition"
+class CreateGroupRequestGroupCreateTypeDef(TypedDict):
+    Path: NotRequired[str],
+```
 
 ## CreateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateGroupRequestRequestTypeDef
+
+def get_value() -> CreateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-
-<a id="creategrouprequestserviceresourcecreategrouptypedef"></a>
+```python title="Definition"
+class CreateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    Path: NotRequired[str],
+```
 
 ## CreateGroupRequestServiceResourceCreateGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateGroupRequestServiceResourceCreateGroupTypeDef
+
+def get_value() -> CreateGroupRequestServiceResourceCreateGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-
-<a id="creategroupresponsetypedef"></a>
+```python title="Definition"
+class CreateGroupRequestServiceResourceCreateGroupTypeDef(TypedDict):
+    GroupName: str,
+    Path: NotRequired[str],
+```
 
 ## CreateGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateGroupResponseTypeDef
+
+def get_value() -> CreateGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstanceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateInstanceProfileRequestRequestTypeDef
+
+def get_value() -> CreateInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    Path: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `InstanceProfileName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createinstanceprofilerequestserviceresourcecreateinstanceprofiletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateInstanceProfileRequestServiceResourceCreateInstanceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateInstanceProfileRequestServiceResourceCreateInstanceProfileTypeDef
+
+def get_value() -> CreateInstanceProfileRequestServiceResourceCreateInstanceProfileTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceProfileRequestServiceResourceCreateInstanceProfileTypeDef(TypedDict):
+    InstanceProfileName: str,
+    Path: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `InstanceProfileName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createinstanceprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateInstanceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateInstanceProfileResponseTypeDef
+
+def get_value() -> CreateInstanceProfileResponseTypeDef:
+    return {
+        "InstanceProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceProfileResponseTypeDef(TypedDict):
+    InstanceProfile: InstanceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createloginprofilerequestloginprofilecreatetypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLoginProfileRequestLoginProfileCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateLoginProfileRequestLoginProfileCreateTypeDef
+
+def get_value() -> CreateLoginProfileRequestLoginProfileCreateTypeDef:
+    return {
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `Password`: `str`
-
-Optional fields:
-
-- `PasswordResetRequired`: `bool`
-
-<a id="createloginprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class CreateLoginProfileRequestLoginProfileCreateTypeDef(TypedDict):
+    Password: str,
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## CreateLoginProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateLoginProfileRequestRequestTypeDef
+
+def get_value() -> CreateLoginProfileRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `Password`: `str`
-
-Optional fields:
-
-- `PasswordResetRequired`: `bool`
-
-<a id="createloginprofilerequestusercreateloginprofiletypedef"></a>
+```python title="Definition"
+class CreateLoginProfileRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Password: str,
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## CreateLoginProfileRequestUserCreateLoginProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateLoginProfileRequestUserCreateLoginProfileTypeDef
+
+def get_value() -> CreateLoginProfileRequestUserCreateLoginProfileTypeDef:
+    return {
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `Password`: `str`
-
-Optional fields:
-
-- `PasswordResetRequired`: `bool`
-
-<a id="createloginprofileresponsetypedef"></a>
+```python title="Definition"
+class CreateLoginProfileRequestUserCreateLoginProfileTypeDef(TypedDict):
+    Password: str,
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## CreateLoginProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateLoginProfileResponseTypeDef
+
+def get_value() -> CreateLoginProfileResponseTypeDef:
+    return {
+        "LoginProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLoginProfileResponseTypeDef(TypedDict):
+    LoginProfile: LoginProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoginProfile`: [LoginProfileTypeDef](./type_defs.md#loginprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createopenidconnectproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoginProfileTypeDef](./type_defs.md#loginprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> CreateOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "Url": ...,
+        "ThumbprintList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    Url: str,
+    ThumbprintList: Sequence[str],
+    ClientIDList: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Url`: `str`
-- `ThumbprintList`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `ClientIDList`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createopenidconnectproviderresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateOpenIDConnectProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateOpenIDConnectProviderResponseTypeDef
+
+def get_value() -> CreateOpenIDConnectProviderResponseTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOpenIDConnectProviderResponseTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OpenIDConnectProviderArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyRequestRequestTypeDef
+
+def get_value() -> CreatePolicyRequestRequestTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePolicyRequestRequestTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyDocument: str,
+    Path: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpolicyrequestserviceresourcecreatepolicytypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePolicyRequestServiceResourceCreatePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyRequestServiceResourceCreatePolicyTypeDef
+
+def get_value() -> CreatePolicyRequestServiceResourceCreatePolicyTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePolicyRequestServiceResourceCreatePolicyTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyDocument: str,
+    Path: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreatePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyResponseTypeDef
+
+def get_value() -> CreatePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createpolicyversionrequestpolicycreateversiontypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePolicyVersionRequestPolicyCreateVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyVersionRequestPolicyCreateVersionTypeDef
+
+def get_value() -> CreatePolicyVersionRequestPolicyCreateVersionTypeDef:
+    return {
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyDocument`: `str`
-
-Optional fields:
-
-- `SetAsDefault`: `bool`
-
-<a id="createpolicyversionrequestrequesttypedef"></a>
+```python title="Definition"
+class CreatePolicyVersionRequestPolicyCreateVersionTypeDef(TypedDict):
+    PolicyDocument: str,
+    SetAsDefault: NotRequired[bool],
+```
 
 ## CreatePolicyVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyVersionRequestRequestTypeDef
+
+def get_value() -> CreatePolicyVersionRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-- `PolicyDocument`: `str`
-
-Optional fields:
-
-- `SetAsDefault`: `bool`
-
-<a id="createpolicyversionresponsetypedef"></a>
+```python title="Definition"
+class CreatePolicyVersionRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    PolicyDocument: str,
+    SetAsDefault: NotRequired[bool],
+```
 
 ## CreatePolicyVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreatePolicyVersionResponseTypeDef
+
+def get_value() -> CreatePolicyVersionResponseTypeDef:
+    return {
+        "PolicyVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePolicyVersionResponseTypeDef(TypedDict):
+    PolicyVersion: PolicyVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyVersion`: [PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateRoleRequestRequestTypeDef
+
+def get_value() -> CreateRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "AssumeRolePolicyDocument": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    AssumeRolePolicyDocument: str,
+    Path: NotRequired[str],
+    Description: NotRequired[str],
+    MaxSessionDuration: NotRequired[int],
+    PermissionsBoundary: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `RoleName`: `str`
-- `AssumeRolePolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createrolerequestserviceresourcecreateroletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRoleRequestServiceResourceCreateRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateRoleRequestServiceResourceCreateRoleTypeDef
+
+def get_value() -> CreateRoleRequestServiceResourceCreateRoleTypeDef:
+    return {
+        "RoleName": ...,
+        "AssumeRolePolicyDocument": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoleRequestServiceResourceCreateRoleTypeDef(TypedDict):
+    RoleName: str,
+    AssumeRolePolicyDocument: str,
+    Path: NotRequired[str],
+    Description: NotRequired[str],
+    MaxSessionDuration: NotRequired[int],
+    PermissionsBoundary: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `RoleName`: `str`
-- `AssumeRolePolicyDocument`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createroleresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateRoleResponseTypeDef
+
+def get_value() -> CreateRoleResponseTypeDef:
+    return {
+        "Role": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoleResponseTypeDef(TypedDict):
+    Role: RoleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsamlproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateSAMLProviderRequestRequestTypeDef
+
+def get_value() -> CreateSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLMetadataDocument": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLMetadataDocument: str,
+    Name: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SAMLMetadataDocument`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsamlproviderrequestserviceresourcecreatesamlprovidertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSAMLProviderRequestServiceResourceCreateSamlProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateSAMLProviderRequestServiceResourceCreateSamlProviderTypeDef
+
+def get_value() -> CreateSAMLProviderRequestServiceResourceCreateSamlProviderTypeDef:
+    return {
+        "SAMLMetadataDocument": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSAMLProviderRequestServiceResourceCreateSamlProviderTypeDef(TypedDict):
+    SAMLMetadataDocument: str,
+    Name: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `SAMLMetadataDocument`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsamlproviderresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSAMLProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateSAMLProviderResponseTypeDef
+
+def get_value() -> CreateSAMLProviderResponseTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSAMLProviderResponseTypeDef(TypedDict):
+    SAMLProviderArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SAMLProviderArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicelinkedrolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceLinkedRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleRequestRequestTypeDef
+
+def get_value() -> CreateServiceLinkedRoleRequestRequestTypeDef:
+    return {
+        "AWSServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `AWSServiceName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `CustomSuffix`: `str`
-
-<a id="createservicelinkedroleresponsetypedef"></a>
+```python title="Definition"
+class CreateServiceLinkedRoleRequestRequestTypeDef(TypedDict):
+    AWSServiceName: str,
+    Description: NotRequired[str],
+    CustomSuffix: NotRequired[str],
+```
 
 ## CreateServiceLinkedRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateServiceLinkedRoleResponseTypeDef
+
+def get_value() -> CreateServiceLinkedRoleResponseTypeDef:
+    return {
+        "Role": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceLinkedRoleResponseTypeDef(TypedDict):
+    Role: RoleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicespecificcredentialrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceSpecificCredentialRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialRequestRequestTypeDef
+
+def get_value() -> CreateServiceSpecificCredentialRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "ServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `ServiceName`: `str`
-
-<a id="createservicespecificcredentialresponsetypedef"></a>
+```python title="Definition"
+class CreateServiceSpecificCredentialRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    ServiceName: str,
+```
 
 ## CreateServiceSpecificCredentialResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateServiceSpecificCredentialResponseTypeDef
+
+def get_value() -> CreateServiceSpecificCredentialResponseTypeDef:
+    return {
+        "ServiceSpecificCredential": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceSpecificCredentialResponseTypeDef(TypedDict):
+    ServiceSpecificCredential: ServiceSpecificCredentialTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSpecificCredential`:
-  [ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Path: NotRequired[str],
+    PermissionsBoundary: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `UserName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createuserrequestserviceresourcecreateusertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserRequestServiceResourceCreateUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateUserRequestServiceResourceCreateUserTypeDef
+
+def get_value() -> CreateUserRequestServiceResourceCreateUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestServiceResourceCreateUserTypeDef(TypedDict):
+    UserName: str,
+    Path: NotRequired[str],
+    PermissionsBoundary: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `UserName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createuserrequestusercreatetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserRequestUserCreateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateUserRequestUserCreateTypeDef
+
+def get_value() -> CreateUserRequestUserCreateTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateUserRequestUserCreateTypeDef(TypedDict):
+    Path: NotRequired[str],
+    PermissionsBoundary: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `Path`: `str`
-- `PermissionsBoundary`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createuserresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvirtualmfadevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVirtualMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceRequestRequestTypeDef
+
+def get_value() -> CreateVirtualMFADeviceRequestRequestTypeDef:
+    return {
+        "VirtualMFADeviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualMFADeviceRequestRequestTypeDef(TypedDict):
+    VirtualMFADeviceName: str,
+    Path: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VirtualMFADeviceName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createvirtualmfadevicerequestserviceresourcecreatevirtualmfadevicetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVirtualMFADeviceRequestServiceResourceCreateVirtualMfaDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceRequestServiceResourceCreateVirtualMfaDeviceTypeDef
+
+def get_value() -> CreateVirtualMFADeviceRequestServiceResourceCreateVirtualMfaDeviceTypeDef:
+    return {
+        "VirtualMFADeviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualMFADeviceRequestServiceResourceCreateVirtualMfaDeviceTypeDef(TypedDict):
+    VirtualMFADeviceName: str,
+    Path: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VirtualMFADeviceName`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createvirtualmfadeviceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVirtualMFADeviceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import CreateVirtualMFADeviceResponseTypeDef
+
+def get_value() -> CreateVirtualMFADeviceResponseTypeDef:
+    return {
+        "VirtualMFADevice": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualMFADeviceResponseTypeDef(TypedDict):
+    VirtualMFADevice: VirtualMFADeviceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VirtualMFADevice`:
-  [VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deactivatemfadevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeactivateMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeactivateMFADeviceRequestRequestTypeDef
+
+def get_value() -> DeactivateMFADeviceRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SerialNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SerialNumber`: `str`
-
-<a id="deleteaccesskeyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeactivateMFADeviceRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SerialNumber: str,
+```
 
 ## DeleteAccessKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteAccessKeyRequestRequestTypeDef
+
+def get_value() -> DeleteAccessKeyRequestRequestTypeDef:
+    return {
+        "AccessKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessKeyId`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="deleteaccountaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAccessKeyRequestRequestTypeDef(TypedDict):
+    AccessKeyId: str,
+    UserName: NotRequired[str],
+```
 
 ## DeleteAccountAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteAccountAliasRequestRequestTypeDef
+
+def get_value() -> DeleteAccountAliasRequestRequestTypeDef:
+    return {
+        "AccountAlias": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountAlias`: `str`
-
-<a id="deletegrouppolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAccountAliasRequestRequestTypeDef(TypedDict):
+    AccountAlias: str,
+```
 
 ## DeleteGroupPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteGroupPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteGroupPolicyRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `PolicyName`: `str`
-
-<a id="deletegrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGroupPolicyRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PolicyName: str,
+```
 
 ## DeleteGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-<a id="deleteinstanceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+```
 
 ## DeleteInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteInstanceProfileRequestRequestTypeDef
+
+def get_value() -> DeleteInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-
-<a id="deleteloginprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+```
 
 ## DeleteLoginProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteLoginProfileRequestRequestTypeDef
+
+def get_value() -> DeleteLoginProfileRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="deleteopenidconnectproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLoginProfileRequestRequestTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## DeleteOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> DeleteOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-
-<a id="deletepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+```
 
 ## DeletePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeletePolicyRequestRequestTypeDef
+
+def get_value() -> DeletePolicyRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="deletepolicyversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePolicyRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## DeletePolicyVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeletePolicyVersionRequestRequestTypeDef
+
+def get_value() -> DeletePolicyVersionRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-- `VersionId`: `str`
-
-<a id="deleterolepermissionsboundaryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePolicyVersionRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    VersionId: str,
+```
 
 ## DeleteRolePermissionsBoundaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteRolePermissionsBoundaryRequestRequestTypeDef
+
+def get_value() -> DeleteRolePermissionsBoundaryRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="deleterolepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRolePermissionsBoundaryRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## DeleteRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteRolePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyName`: `str`
-
-<a id="deleterolerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyName: str,
+```
 
 ## DeleteRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteRoleRequestRequestTypeDef
+
+def get_value() -> DeleteRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="deletesamlproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## DeleteSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteSAMLProviderRequestRequestTypeDef
+
+def get_value() -> DeleteSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLProviderArn`: `str`
-
-<a id="deletesshpublickeyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLProviderArn: str,
+```
 
 ## DeleteSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> DeleteSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SSHPublicKeyId`: `str`
-
-<a id="deleteservercertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyId: str,
+```
 
 ## DeleteServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteServerCertificateRequestRequestTypeDef
+
+def get_value() -> DeleteServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerCertificateName`: `str`
-
-<a id="deleteservicelinkedrolerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+```
 
 ## DeleteServiceLinkedRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleRequestRequestTypeDef
+
+def get_value() -> DeleteServiceLinkedRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="deleteservicelinkedroleresponsetypedef"></a>
+```python title="Definition"
+class DeleteServiceLinkedRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## DeleteServiceLinkedRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteServiceLinkedRoleResponseTypeDef
+
+def get_value() -> DeleteServiceLinkedRoleResponseTypeDef:
+    return {
+        "DeletionTaskId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceLinkedRoleResponseTypeDef(TypedDict):
+    DeletionTaskId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeletionTaskId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicespecificcredentialrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceSpecificCredentialRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteServiceSpecificCredentialRequestRequestTypeDef
+
+def get_value() -> DeleteServiceSpecificCredentialRequestRequestTypeDef:
+    return {
+        "ServiceSpecificCredentialId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceSpecificCredentialId`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="deletesigningcertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteServiceSpecificCredentialRequestRequestTypeDef(TypedDict):
+    ServiceSpecificCredentialId: str,
+    UserName: NotRequired[str],
+```
 
 ## DeleteSigningCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteSigningCertificateRequestRequestTypeDef
+
+def get_value() -> DeleteSigningCertificateRequestRequestTypeDef:
+    return {
+        "CertificateId": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateId`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="deleteuserpermissionsboundaryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSigningCertificateRequestRequestTypeDef(TypedDict):
+    CertificateId: str,
+    UserName: NotRequired[str],
+```
 
 ## DeleteUserPermissionsBoundaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteUserPermissionsBoundaryRequestRequestTypeDef
+
+def get_value() -> DeleteUserPermissionsBoundaryRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="deleteuserpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserPermissionsBoundaryRequestRequestTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## DeleteUserPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteUserPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteUserPolicyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PolicyName`: `str`
-
-<a id="deleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserPolicyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PolicyName: str,
+```
 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="deletevirtualmfadevicerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## DeleteVirtualMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeleteVirtualMFADeviceRequestRequestTypeDef
+
+def get_value() -> DeleteVirtualMFADeviceRequestRequestTypeDef:
+    return {
+        "SerialNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `SerialNumber`: `str`
-
-<a id="deletiontaskfailurereasontypetypedef"></a>
+```python title="Definition"
+class DeleteVirtualMFADeviceRequestRequestTypeDef(TypedDict):
+    SerialNumber: str,
+```
 
 ## DeletionTaskFailureReasonTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DeletionTaskFailureReasonTypeTypeDef
+
+def get_value() -> DeletionTaskFailureReasonTypeTypeDef:
+    return {
+        "Reason": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeletionTaskFailureReasonTypeTypeDef(TypedDict):
+    Reason: NotRequired[str],
+    RoleUsageList: NotRequired[List[RoleUsageTypeTypeDef]],  # (1)
+```
 
-- `Reason`: `str`
-- `RoleUsageList`:
-  `List`\[[RoleUsageTypeTypeDef](./type_defs.md#roleusagetypetypedef)\]
-
-<a id="detachgrouppolicyrequestgroupdetachpolicytypedef"></a>
-
+1. See [:material-code-braces: RoleUsageTypeTypeDef](./type_defs.md#roleusagetypetypedef) 
 ## DetachGroupPolicyRequestGroupDetachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachGroupPolicyRequestGroupDetachPolicyTypeDef
+
+def get_value() -> DetachGroupPolicyRequestGroupDetachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="detachgrouppolicyrequestpolicydetachgrouptypedef"></a>
+```python title="Definition"
+class DetachGroupPolicyRequestGroupDetachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## DetachGroupPolicyRequestPolicyDetachGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachGroupPolicyRequestPolicyDetachGroupTypeDef
+
+def get_value() -> DetachGroupPolicyRequestPolicyDetachGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-<a id="detachgrouppolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DetachGroupPolicyRequestPolicyDetachGroupTypeDef(TypedDict):
+    GroupName: str,
+```
 
 ## DetachGroupPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachGroupPolicyRequestRequestTypeDef
+
+def get_value() -> DetachGroupPolicyRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `PolicyArn`: `str`
-
-<a id="detachrolepolicyrequestpolicydetachroletypedef"></a>
+```python title="Definition"
+class DetachGroupPolicyRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PolicyArn: str,
+```
 
 ## DetachRolePolicyRequestPolicyDetachRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachRolePolicyRequestPolicyDetachRoleTypeDef
+
+def get_value() -> DetachRolePolicyRequestPolicyDetachRoleTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="detachrolepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DetachRolePolicyRequestPolicyDetachRoleTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## DetachRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachRolePolicyRequestRequestTypeDef
+
+def get_value() -> DetachRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyArn`: `str`
-
-<a id="detachrolepolicyrequestroledetachpolicytypedef"></a>
+```python title="Definition"
+class DetachRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyArn: str,
+```
 
 ## DetachRolePolicyRequestRoleDetachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachRolePolicyRequestRoleDetachPolicyTypeDef
+
+def get_value() -> DetachRolePolicyRequestRoleDetachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="detachuserpolicyrequestpolicydetachusertypedef"></a>
+```python title="Definition"
+class DetachRolePolicyRequestRoleDetachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## DetachUserPolicyRequestPolicyDetachUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachUserPolicyRequestPolicyDetachUserTypeDef
+
+def get_value() -> DetachUserPolicyRequestPolicyDetachUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="detachuserpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DetachUserPolicyRequestPolicyDetachUserTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## DetachUserPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachUserPolicyRequestRequestTypeDef
+
+def get_value() -> DetachUserPolicyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PolicyArn`: `str`
-
-<a id="detachuserpolicyrequestuserdetachpolicytypedef"></a>
+```python title="Definition"
+class DetachUserPolicyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PolicyArn: str,
+```
 
 ## DetachUserPolicyRequestUserDetachPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import DetachUserPolicyRequestUserDetachPolicyTypeDef
+
+def get_value() -> DetachUserPolicyRequestUserDetachPolicyTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="enablemfadevicerequestmfadeviceassociatetypedef"></a>
+```python title="Definition"
+class DetachUserPolicyRequestUserDetachPolicyTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## EnableMFADeviceRequestMfaDeviceAssociateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EnableMFADeviceRequestMfaDeviceAssociateTypeDef
+
+def get_value() -> EnableMFADeviceRequestMfaDeviceAssociateTypeDef:
+    return {
+        "AuthenticationCode1": ...,
+        "AuthenticationCode2": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationCode1`: `str`
-- `AuthenticationCode2`: `str`
-
-<a id="enablemfadevicerequestrequesttypedef"></a>
+```python title="Definition"
+class EnableMFADeviceRequestMfaDeviceAssociateTypeDef(TypedDict):
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+```
 
 ## EnableMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EnableMFADeviceRequestRequestTypeDef
+
+def get_value() -> EnableMFADeviceRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SerialNumber": ...,
+        "AuthenticationCode1": ...,
+        "AuthenticationCode2": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SerialNumber`: `str`
-- `AuthenticationCode1`: `str`
-- `AuthenticationCode2`: `str`
-
-<a id="enablemfadevicerequestuserenablemfatypedef"></a>
+```python title="Definition"
+class EnableMFADeviceRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SerialNumber: str,
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+```
 
 ## EnableMFADeviceRequestUserEnableMfaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EnableMFADeviceRequestUserEnableMfaTypeDef
+
+def get_value() -> EnableMFADeviceRequestUserEnableMfaTypeDef:
+    return {
+        "SerialNumber": ...,
+        "AuthenticationCode1": ...,
+        "AuthenticationCode2": ...,
+    }
 ```
 
-Required fields:
-
-- `SerialNumber`: `str`
-- `AuthenticationCode1`: `str`
-- `AuthenticationCode2`: `str`
-
-<a id="entitydetailstypedef"></a>
+```python title="Definition"
+class EnableMFADeviceRequestUserEnableMfaTypeDef(TypedDict):
+    SerialNumber: str,
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+```
 
 ## EntityDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EntityDetailsTypeDef
+
+def get_value() -> EntityDetailsTypeDef:
+    return {
+        "EntityInfo": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EntityDetailsTypeDef(TypedDict):
+    EntityInfo: EntityInfoTypeDef,  # (1)
+    LastAuthenticated: NotRequired[datetime],
+```
 
-- `EntityInfo`: [EntityInfoTypeDef](./type_defs.md#entityinfotypedef)
-
-Optional fields:
-
-- `LastAuthenticated`: `datetime`
-
-<a id="entityinfotypedef"></a>
-
+1. See [:material-code-braces: EntityInfoTypeDef](./type_defs.md#entityinfotypedef) 
 ## EntityInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EntityInfoTypeDef
+
+def get_value() -> EntityInfoTypeDef:
+    return {
+        "Arn": ...,
+        "Name": ...,
+        "Type": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EntityInfoTypeDef(TypedDict):
+    Arn: str,
+    Name: str,
+    Type: policyOwnerEntityTypeType,  # (1)
+    Id: str,
+    Path: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`: [policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype)
-- `Id`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-
-<a id="errordetailstypedef"></a>
-
+1. See [:material-code-brackets: policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype) 
 ## ErrorDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ErrorDetailsTypeDef
+
+def get_value() -> ErrorDetailsTypeDef:
+    return {
+        "Message": ...,
+        "Code": ...,
+    }
 ```
 
-Required fields:
-
-- `Message`: `str`
-- `Code`: `str`
-
-<a id="evaluationresulttypedef"></a>
+```python title="Definition"
+class ErrorDetailsTypeDef(TypedDict):
+    Message: str,
+    Code: str,
+```
 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "EvalActionName": ...,
+        "EvalDecision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    EvalActionName: str,
+    EvalDecision: PolicyEvaluationDecisionTypeType,  # (1)
+    EvalResourceName: NotRequired[str],
+    MatchedStatements: NotRequired[List[StatementTypeDef]],  # (2)
+    MissingContextValues: NotRequired[List[str]],
+    OrganizationsDecisionDetail: NotRequired[OrganizationsDecisionDetailTypeDef],  # (3)
+    PermissionsBoundaryDecisionDetail: NotRequired[PermissionsBoundaryDecisionDetailTypeDef],  # (4)
+    EvalDecisionDetails: NotRequired[Dict[str, PolicyEvaluationDecisionTypeType]],  # (5)
+    ResourceSpecificResults: NotRequired[List[ResourceSpecificResultTypeDef]],  # (6)
+```
 
-- `EvalActionName`: `str`
-- `EvalDecision`:
-  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)
-
-Optional fields:
-
-- `EvalResourceName`: `str`
-- `MatchedStatements`:
-  `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
-- `MissingContextValues`: `List`\[`str`\]
-- `OrganizationsDecisionDetail`:
-  [OrganizationsDecisionDetailTypeDef](./type_defs.md#organizationsdecisiondetailtypedef)
-- `PermissionsBoundaryDecisionDetail`:
-  [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
-- `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)\]
-- `ResourceSpecificResults`:
-  `List`\[[ResourceSpecificResultTypeDef](./type_defs.md#resourcespecificresulttypedef)\]
-
-<a id="generatecredentialreportresponsetypedef"></a>
-
+1. See [:material-code-brackets: PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype) 
+2. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+3. See [:material-code-braces: OrganizationsDecisionDetailTypeDef](./type_defs.md#organizationsdecisiondetailtypedef) 
+4. See [:material-code-braces: PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef) 
+5. See [:material-code-brackets: PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype) 
+6. See [:material-code-braces: ResourceSpecificResultTypeDef](./type_defs.md#resourcespecificresulttypedef) 
 ## GenerateCredentialReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GenerateCredentialReportResponseTypeDef
+
+def get_value() -> GenerateCredentialReportResponseTypeDef:
+    return {
+        "State": ...,
+        "Description": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateCredentialReportResponseTypeDef(TypedDict):
+    State: ReportStateTypeType,  # (1)
+    Description: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `State`: [ReportStateTypeType](./literals.md#reportstatetypetype)
-- `Description`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="generateorganizationsaccessreportrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReportStateTypeType](./literals.md#reportstatetypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateOrganizationsAccessReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportRequestRequestTypeDef
+
+def get_value() -> GenerateOrganizationsAccessReportRequestRequestTypeDef:
+    return {
+        "EntityPath": ...,
+    }
 ```
 
-Required fields:
-
-- `EntityPath`: `str`
-
-Optional fields:
-
-- `OrganizationsPolicyId`: `str`
-
-<a id="generateorganizationsaccessreportresponsetypedef"></a>
+```python title="Definition"
+class GenerateOrganizationsAccessReportRequestRequestTypeDef(TypedDict):
+    EntityPath: str,
+    OrganizationsPolicyId: NotRequired[str],
+```
 
 ## GenerateOrganizationsAccessReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GenerateOrganizationsAccessReportResponseTypeDef
+
+def get_value() -> GenerateOrganizationsAccessReportResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateOrganizationsAccessReportResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="generateservicelastaccesseddetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GenerateServiceLastAccessedDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsRequestRequestTypeDef
+
+def get_value() -> GenerateServiceLastAccessedDetailsRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateServiceLastAccessedDetailsRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    Granularity: NotRequired[AccessAdvisorUsageGranularityTypeType],  # (1)
+```
 
-- `Arn`: `str`
-
-Optional fields:
-
-- `Granularity`:
-  [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
-
-<a id="generateservicelastaccesseddetailsresponsetypedef"></a>
-
+1. See [:material-code-brackets: AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype) 
 ## GenerateServiceLastAccessedDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GenerateServiceLastAccessedDetailsResponseTypeDef
+
+def get_value() -> GenerateServiceLastAccessedDetailsResponseTypeDef:
+    return {
+        "JobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GenerateServiceLastAccessedDetailsResponseTypeDef(TypedDict):
+    JobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `JobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaccesskeylastusedrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccessKeyLastUsedRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedRequestRequestTypeDef
+
+def get_value() -> GetAccessKeyLastUsedRequestRequestTypeDef:
+    return {
+        "AccessKeyId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccessKeyId`: `str`
-
-<a id="getaccesskeylastusedresponsetypedef"></a>
+```python title="Definition"
+class GetAccessKeyLastUsedRequestRequestTypeDef(TypedDict):
+    AccessKeyId: str,
+```
 
 ## GetAccessKeyLastUsedResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccessKeyLastUsedResponseTypeDef
+
+def get_value() -> GetAccessKeyLastUsedResponseTypeDef:
+    return {
+        "UserName": ...,
+        "AccessKeyLastUsed": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccessKeyLastUsedResponseTypeDef(TypedDict):
+    UserName: str,
+    AccessKeyLastUsed: AccessKeyLastUsedTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserName`: `str`
-- `AccessKeyLastUsed`:
-  [AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessKeyLastUsedTypeDef](./type_defs.md#accesskeylastusedtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetAccountAuthorizationDetailsRequestGetAccountAuthorizationDetailsPaginateTypeDef
 
-<a id="getaccountauthorizationdetailsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsRequestGetAccountAuthorizationDetailsPaginateTypeDef
 
+def get_value() -> GetAccountAuthorizationDetailsRequestGetAccountAuthorizationDetailsPaginateTypeDef:
+    return {
+        "Filter": ...,
+    }
+```
+
+```python title="Definition"
+class GetAccountAuthorizationDetailsRequestGetAccountAuthorizationDetailsPaginateTypeDef(TypedDict):
+    Filter: NotRequired[Sequence[EntityTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAccountAuthorizationDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsRequestRequestTypeDef
+
+def get_value() -> GetAccountAuthorizationDetailsRequestRequestTypeDef:
+    return {
+        "Filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetAccountAuthorizationDetailsRequestRequestTypeDef(TypedDict):
+    Filter: NotRequired[Sequence[EntityTypeType]],  # (1)
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `Filter`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
-- `MaxItems`: `int`
-- `Marker`: `str`
-
-<a id="getaccountauthorizationdetailsresponsetypedef"></a>
-
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
 ## GetAccountAuthorizationDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseTypeDef
+
+def get_value() -> GetAccountAuthorizationDetailsResponseTypeDef:
+    return {
+        "UserDetailList": ...,
+        "GroupDetailList": ...,
+        "RoleDetailList": ...,
+        "Policies": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountAuthorizationDetailsResponseTypeDef(TypedDict):
+    UserDetailList: List[UserDetailTypeDef],  # (1)
+    GroupDetailList: List[GroupDetailTypeDef],  # (2)
+    RoleDetailList: List[RoleDetailTypeDef],  # (3)
+    Policies: List[ManagedPolicyDetailTypeDef],  # (4)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `UserDetailList`:
-  `List`\[[UserDetailTypeDef](./type_defs.md#userdetailtypedef)\]
-- `GroupDetailList`:
-  `List`\[[GroupDetailTypeDef](./type_defs.md#groupdetailtypedef)\]
-- `RoleDetailList`:
-  `List`\[[RoleDetailTypeDef](./type_defs.md#roledetailtypedef)\]
-- `Policies`:
-  `List`\[[ManagedPolicyDetailTypeDef](./type_defs.md#managedpolicydetailtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaccountpasswordpolicyresponsetypedef"></a>
-
+1. See [:material-code-braces: UserDetailTypeDef](./type_defs.md#userdetailtypedef) 
+2. See [:material-code-braces: GroupDetailTypeDef](./type_defs.md#groupdetailtypedef) 
+3. See [:material-code-braces: RoleDetailTypeDef](./type_defs.md#roledetailtypedef) 
+4. See [:material-code-braces: ManagedPolicyDetailTypeDef](./type_defs.md#managedpolicydetailtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccountPasswordPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccountPasswordPolicyResponseTypeDef
+
+def get_value() -> GetAccountPasswordPolicyResponseTypeDef:
+    return {
+        "PasswordPolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountPasswordPolicyResponseTypeDef(TypedDict):
+    PasswordPolicy: PasswordPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PasswordPolicy`:
-  [PasswordPolicyTypeDef](./type_defs.md#passwordpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaccountsummaryresponsetypedef"></a>
-
+1. See [:material-code-braces: PasswordPolicyTypeDef](./type_defs.md#passwordpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAccountSummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetAccountSummaryResponseTypeDef
+
+def get_value() -> GetAccountSummaryResponseTypeDef:
+    return {
+        "SummaryMap": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountSummaryResponseTypeDef(TypedDict):
+    SummaryMap: Dict[summaryKeyTypeType, int],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SummaryMap`: `Dict`\[[summaryKeyTypeType](./literals.md#summarykeytypetype),
-  `int`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontextkeysforcustompolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: summaryKeyTypeType](./literals.md#summarykeytypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContextKeysForCustomPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetContextKeysForCustomPolicyRequestRequestTypeDef
+
+def get_value() -> GetContextKeysForCustomPolicyRequestRequestTypeDef:
+    return {
+        "PolicyInputList": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyInputList`: `Sequence`\[`str`\]
-
-<a id="getcontextkeysforpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetContextKeysForCustomPolicyRequestRequestTypeDef(TypedDict):
+    PolicyInputList: Sequence[str],
+```
 
 ## GetContextKeysForPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetContextKeysForPolicyResponseTypeDef
+
+def get_value() -> GetContextKeysForPolicyResponseTypeDef:
+    return {
+        "ContextKeyNames": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContextKeysForPolicyResponseTypeDef(TypedDict):
+    ContextKeyNames: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContextKeyNames`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontextkeysforprincipalpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContextKeysForPrincipalPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetContextKeysForPrincipalPolicyRequestRequestTypeDef
+
+def get_value() -> GetContextKeysForPrincipalPolicyRequestRequestTypeDef:
+    return {
+        "PolicySourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicySourceArn`: `str`
-
-Optional fields:
-
-- `PolicyInputList`: `Sequence`\[`str`\]
-
-<a id="getcredentialreportresponsetypedef"></a>
+```python title="Definition"
+class GetContextKeysForPrincipalPolicyRequestRequestTypeDef(TypedDict):
+    PolicySourceArn: str,
+    PolicyInputList: NotRequired[Sequence[str]],
+```
 
 ## GetCredentialReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetCredentialReportResponseTypeDef
+
+def get_value() -> GetCredentialReportResponseTypeDef:
+    return {
+        "Content": ...,
+        "ReportFormat": ...,
+        "GeneratedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCredentialReportResponseTypeDef(TypedDict):
+    Content: bytes,
+    ReportFormat: ReportFormatTypeType,  # (1)
+    GeneratedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Content`: `bytes`
-- `ReportFormat`: `Literal['text/csv']` (see
-  [ReportFormatTypeType](./literals.md#reportformattypetype))
-- `GeneratedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgrouppolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReportFormatTypeType](./literals.md#reportformattypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetGroupPolicyRequestRequestTypeDef
+
+def get_value() -> GetGroupPolicyRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `PolicyName`: `str`
-
-<a id="getgrouppolicyresponsetypedef"></a>
+```python title="Definition"
+class GetGroupPolicyRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PolicyName: str,
+```
 
 ## GetGroupPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetGroupPolicyResponseTypeDef
+
+def get_value() -> GetGroupPolicyResponseTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupPolicyResponseTypeDef(TypedDict):
+    GroupName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `GroupName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetGroupRequestGetGroupPaginateTypeDef
 
-<a id="getgrouprequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetGroupRequestGetGroupPaginateTypeDef
 
+def get_value() -> GetGroupRequestGetGroupPaginateTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class GetGroupRequestGetGroupPaginateTypeDef(TypedDict):
+    GroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetGroupRequestRequestTypeDef
+
+def get_value() -> GetGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="getgroupresponsetypedef"></a>
+```python title="Definition"
+class GetGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## GetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetGroupResponseTypeDef
+
+def get_value() -> GetGroupResponseTypeDef:
+    return {
+        "Group": ...,
+        "Users": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupResponseTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    Users: List[UserTypeDef],  # (2)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetInstanceProfileRequestInstanceProfileExistsWaitTypeDef
 
-<a id="getinstanceprofilerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetInstanceProfileRequestInstanceProfileExistsWaitTypeDef
 
+def get_value() -> GetInstanceProfileRequestInstanceProfileExistsWaitTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
+```
+
+```python title="Definition"
+class GetInstanceProfileRequestInstanceProfileExistsWaitTypeDef(TypedDict):
+    InstanceProfileName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetInstanceProfileRequestRequestTypeDef
+
+def get_value() -> GetInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-
-<a id="getinstanceprofileresponsetypedef"></a>
+```python title="Definition"
+class GetInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+```
 
 ## GetInstanceProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetInstanceProfileResponseTypeDef
+
+def get_value() -> GetInstanceProfileResponseTypeDef:
+    return {
+        "InstanceProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInstanceProfileResponseTypeDef(TypedDict):
+    InstanceProfile: InstanceProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceProfile`:
-  [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getloginprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLoginProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetLoginProfileRequestRequestTypeDef
+
+def get_value() -> GetLoginProfileRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="getloginprofileresponsetypedef"></a>
+```python title="Definition"
+class GetLoginProfileRequestRequestTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## GetLoginProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetLoginProfileResponseTypeDef
+
+def get_value() -> GetLoginProfileResponseTypeDef:
+    return {
+        "LoginProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLoginProfileResponseTypeDef(TypedDict):
+    LoginProfile: LoginProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LoginProfile`: [LoginProfileTypeDef](./type_defs.md#loginprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getopenidconnectproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LoginProfileTypeDef](./type_defs.md#loginprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> GetOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-
-<a id="getopenidconnectproviderresponsetypedef"></a>
+```python title="Definition"
+class GetOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+```
 
 ## GetOpenIDConnectProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetOpenIDConnectProviderResponseTypeDef
+
+def get_value() -> GetOpenIDConnectProviderResponseTypeDef:
+    return {
+        "Url": ...,
+        "ClientIDList": ...,
+        "ThumbprintList": ...,
+        "CreateDate": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOpenIDConnectProviderResponseTypeDef(TypedDict):
+    Url: str,
+    ClientIDList: List[str],
+    ThumbprintList: List[str],
+    CreateDate: datetime,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Url`: `str`
-- `ClientIDList`: `List`\[`str`\]
-- `ThumbprintList`: `List`\[`str`\]
-- `CreateDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getorganizationsaccessreportrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOrganizationsAccessReportRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportRequestRequestTypeDef
+
+def get_value() -> GetOrganizationsAccessReportRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationsAccessReportRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+    SortKey: NotRequired[sortKeyTypeType],  # (1)
+```
 
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxItems`: `int`
-- `Marker`: `str`
-- `SortKey`: [sortKeyTypeType](./literals.md#sortkeytypetype)
-
-<a id="getorganizationsaccessreportresponsetypedef"></a>
-
+1. See [:material-code-brackets: sortKeyTypeType](./literals.md#sortkeytypetype) 
 ## GetOrganizationsAccessReportResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetOrganizationsAccessReportResponseTypeDef
+
+def get_value() -> GetOrganizationsAccessReportResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "JobCreationDate": ...,
+        "JobCompletionDate": ...,
+        "NumberOfServicesAccessible": ...,
+        "NumberOfServicesNotAccessed": ...,
+        "AccessDetails": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ErrorDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationsAccessReportResponseTypeDef(TypedDict):
+    JobStatus: jobStatusTypeType,  # (1)
+    JobCreationDate: datetime,
+    JobCompletionDate: datetime,
+    NumberOfServicesAccessible: int,
+    NumberOfServicesNotAccessed: int,
+    AccessDetails: List[AccessDetailTypeDef],  # (2)
+    IsTruncated: bool,
+    Marker: str,
+    ErrorDetails: ErrorDetailsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
-- `JobCreationDate`: `datetime`
-- `JobCompletionDate`: `datetime`
-- `NumberOfServicesAccessible`: `int`
-- `NumberOfServicesNotAccessed`: `int`
-- `AccessDetails`:
-  `List`\[[AccessDetailTypeDef](./type_defs.md#accessdetailtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ErrorDetails`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: jobStatusTypeType](./literals.md#jobstatustypetype) 
+2. See [:material-code-braces: AccessDetailTypeDef](./type_defs.md#accessdetailtypedef) 
+3. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetPolicyRequestPolicyExistsWaitTypeDef
 
-<a id="getpolicyrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetPolicyRequestPolicyExistsWaitTypeDef
 
+def get_value() -> GetPolicyRequestPolicyExistsWaitTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
+```
+
+```python title="Definition"
+class GetPolicyRequestPolicyExistsWaitTypeDef(TypedDict):
+    PolicyArn: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetPolicyRequestRequestTypeDef
+
+def get_value() -> GetPolicyRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-<a id="getpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetPolicyRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+```
 
 ## GetPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    Policy: PolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpolicyversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetPolicyVersionRequestRequestTypeDef
+
+def get_value() -> GetPolicyVersionRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-- `VersionId`: `str`
-
-<a id="getpolicyversionresponsetypedef"></a>
+```python title="Definition"
+class GetPolicyVersionRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    VersionId: str,
+```
 
 ## GetPolicyVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetPolicyVersionResponseTypeDef
+
+def get_value() -> GetPolicyVersionResponseTypeDef:
+    return {
+        "PolicyVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyVersionResponseTypeDef(TypedDict):
+    PolicyVersion: PolicyVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyVersion`: [PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrolepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetRolePolicyRequestRequestTypeDef
+
+def get_value() -> GetRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyName`: `str`
-
-<a id="getrolepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyName: str,
+```
 
 ## GetRolePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetRolePolicyResponseTypeDef
+
+def get_value() -> GetRolePolicyResponseTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRolePolicyResponseTypeDef(TypedDict):
+    RoleName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RoleName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getrolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetRoleRequestRequestTypeDef
+
+def get_value() -> GetRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+```
 
-- `RoleName`: `str`
+## GetRoleRequestRoleExistsWaitTypeDef
 
-<a id="getroleresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetRoleRequestRoleExistsWaitTypeDef
 
+def get_value() -> GetRoleRequestRoleExistsWaitTypeDef:
+    return {
+        "RoleName": ...,
+    }
+```
+
+```python title="Definition"
+class GetRoleRequestRoleExistsWaitTypeDef(TypedDict):
+    RoleName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetRoleResponseTypeDef
+
+def get_value() -> GetRoleResponseTypeDef:
+    return {
+        "Role": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRoleResponseTypeDef(TypedDict):
+    Role: RoleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsamlproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetSAMLProviderRequestRequestTypeDef
+
+def get_value() -> GetSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLProviderArn`: `str`
-
-<a id="getsamlproviderresponsetypedef"></a>
+```python title="Definition"
+class GetSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLProviderArn: str,
+```
 
 ## GetSAMLProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetSAMLProviderResponseTypeDef
+
+def get_value() -> GetSAMLProviderResponseTypeDef:
+    return {
+        "SAMLMetadataDocument": ...,
+        "CreateDate": ...,
+        "ValidUntil": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSAMLProviderResponseTypeDef(TypedDict):
+    SAMLMetadataDocument: str,
+    CreateDate: datetime,
+    ValidUntil: datetime,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SAMLMetadataDocument`: `str`
-- `CreateDate`: `datetime`
-- `ValidUntil`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsshpublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> GetSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyId": ...,
+        "Encoding": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyId: str,
+    Encoding: encodingTypeType,  # (1)
+```
 
-- `UserName`: `str`
-- `SSHPublicKeyId`: `str`
-- `Encoding`: [encodingTypeType](./literals.md#encodingtypetype)
-
-<a id="getsshpublickeyresponsetypedef"></a>
-
+1. See [:material-code-brackets: encodingTypeType](./literals.md#encodingtypetype) 
 ## GetSSHPublicKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetSSHPublicKeyResponseTypeDef
+
+def get_value() -> GetSSHPublicKeyResponseTypeDef:
+    return {
+        "SSHPublicKey": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSSHPublicKeyResponseTypeDef(TypedDict):
+    SSHPublicKey: SSHPublicKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SSHPublicKey`: [SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservercertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServerCertificateRequestRequestTypeDef
+
+def get_value() -> GetServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerCertificateName`: `str`
-
-<a id="getservercertificateresponsetypedef"></a>
+```python title="Definition"
+class GetServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+```
 
 ## GetServerCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServerCertificateResponseTypeDef
+
+def get_value() -> GetServerCertificateResponseTypeDef:
+    return {
+        "ServerCertificate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServerCertificateResponseTypeDef(TypedDict):
+    ServerCertificate: ServerCertificateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServerCertificate`:
-  [ServerCertificateTypeDef](./type_defs.md#servercertificatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicelastaccesseddetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerCertificateTypeDef](./type_defs.md#servercertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceLastAccessedDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsRequestRequestTypeDef
+
+def get_value() -> GetServiceLastAccessedDetailsRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `MaxItems`: `int`
-- `Marker`: `str`
-
-<a id="getservicelastaccesseddetailsresponsetypedef"></a>
+```python title="Definition"
+class GetServiceLastAccessedDetailsRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## GetServiceLastAccessedDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsResponseTypeDef
+
+def get_value() -> GetServiceLastAccessedDetailsResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "JobType": ...,
+        "JobCreationDate": ...,
+        "ServicesLastAccessed": ...,
+        "JobCompletionDate": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "Error": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceLastAccessedDetailsResponseTypeDef(TypedDict):
+    JobStatus: jobStatusTypeType,  # (1)
+    JobType: AccessAdvisorUsageGranularityTypeType,  # (2)
+    JobCreationDate: datetime,
+    ServicesLastAccessed: List[ServiceLastAccessedTypeDef],  # (3)
+    JobCompletionDate: datetime,
+    IsTruncated: bool,
+    Marker: str,
+    Error: ErrorDetailsTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
-- `JobType`:
-  [AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype)
-- `JobCreationDate`: `datetime`
-- `ServicesLastAccessed`:
-  `List`\[[ServiceLastAccessedTypeDef](./type_defs.md#servicelastaccessedtypedef)\]
-- `JobCompletionDate`: `datetime`
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `Error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicelastaccesseddetailswithentitiesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: jobStatusTypeType](./literals.md#jobstatustypetype) 
+2. See [:material-code-brackets: AccessAdvisorUsageGranularityTypeType](./literals.md#accessadvisorusagegranularitytypetype) 
+3. See [:material-code-braces: ServiceLastAccessedTypeDef](./type_defs.md#servicelastaccessedtypedef) 
+4. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef
+
+def get_value() -> GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef:
+    return {
+        "JobId": ...,
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-- `ServiceNamespace`: `str`
-
-Optional fields:
-
-- `MaxItems`: `int`
-- `Marker`: `str`
-
-<a id="getservicelastaccesseddetailswithentitiesresponsetypedef"></a>
+```python title="Definition"
+class GetServiceLastAccessedDetailsWithEntitiesRequestRequestTypeDef(TypedDict):
+    JobId: str,
+    ServiceNamespace: str,
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
 ## GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef
+
+def get_value() -> GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef:
+    return {
+        "JobStatus": ...,
+        "JobCreationDate": ...,
+        "JobCompletionDate": ...,
+        "EntityDetailsList": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "Error": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef(TypedDict):
+    JobStatus: jobStatusTypeType,  # (1)
+    JobCreationDate: datetime,
+    JobCompletionDate: datetime,
+    EntityDetailsList: List[EntityDetailsTypeDef],  # (2)
+    IsTruncated: bool,
+    Marker: str,
+    Error: ErrorDetailsTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `JobStatus`: [jobStatusTypeType](./literals.md#jobstatustypetype)
-- `JobCreationDate`: `datetime`
-- `JobCompletionDate`: `datetime`
-- `EntityDetailsList`:
-  `List`\[[EntityDetailsTypeDef](./type_defs.md#entitydetailstypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `Error`: [ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getservicelinkedroledeletionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: jobStatusTypeType](./literals.md#jobstatustypetype) 
+2. See [:material-code-braces: EntityDetailsTypeDef](./type_defs.md#entitydetailstypedef) 
+3. See [:material-code-braces: ErrorDetailsTypeDef](./type_defs.md#errordetailstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef
+
+def get_value() -> GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef:
+    return {
+        "DeletionTaskId": ...,
+    }
 ```
 
-Required fields:
-
-- `DeletionTaskId`: `str`
-
-<a id="getservicelinkedroledeletionstatusresponsetypedef"></a>
+```python title="Definition"
+class GetServiceLinkedRoleDeletionStatusRequestRequestTypeDef(TypedDict):
+    DeletionTaskId: str,
+```
 
 ## GetServiceLinkedRoleDeletionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetServiceLinkedRoleDeletionStatusResponseTypeDef
+
+def get_value() -> GetServiceLinkedRoleDeletionStatusResponseTypeDef:
+    return {
+        "Status": ...,
+        "Reason": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceLinkedRoleDeletionStatusResponseTypeDef(TypedDict):
+    Status: DeletionTaskStatusTypeType,  # (1)
+    Reason: DeletionTaskFailureReasonTypeTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [DeletionTaskStatusTypeType](./literals.md#deletiontaskstatustypetype)
-- `Reason`:
-  [DeletionTaskFailureReasonTypeTypeDef](./type_defs.md#deletiontaskfailurereasontypetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeletionTaskStatusTypeType](./literals.md#deletiontaskstatustypetype) 
+2. See [:material-code-braces: DeletionTaskFailureReasonTypeTypeDef](./type_defs.md#deletiontaskfailurereasontypetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetUserPolicyRequestRequestTypeDef
+
+def get_value() -> GetUserPolicyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PolicyName`: `str`
-
-<a id="getuserpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetUserPolicyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PolicyName: str,
+```
 
 ## GetUserPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetUserPolicyResponseTypeDef
+
+def get_value() -> GetUserPolicyResponseTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserPolicyResponseTypeDef(TypedDict):
+    UserName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetUserRequestRequestTypeDef
+
+def get_value() -> GetUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetUserRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+```
 
-- `UserName`: `str`
+## GetUserRequestUserExistsWaitTypeDef
 
-<a id="getuserresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import GetUserRequestUserExistsWaitTypeDef
 
+def get_value() -> GetUserRequestUserExistsWaitTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class GetUserRequestUserExistsWaitTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GetUserResponseTypeDef
+
+def get_value() -> GetUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupdetailtypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GroupDetailTypeDef
+
+def get_value() -> GroupDetailTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupDetailTypeDef(TypedDict):
+    Path: NotRequired[str],
+    GroupName: NotRequired[str],
+    GroupId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    GroupPolicyList: NotRequired[List[PolicyDetailTypeDef]],  # (1)
+    AttachedManagedPolicies: NotRequired[List[AttachedPolicyTypeDef]],  # (2)
+```
 
-- `Path`: `str`
-- `GroupName`: `str`
-- `GroupId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-- `GroupPolicyList`:
-  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
-- `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-
-<a id="grouppolicyrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyDetailTypeDef](./type_defs.md#policydetailtypedef) 
+2. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
 ## GroupPolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GroupPolicyRequestTypeDef
+
+def get_value() -> GroupPolicyRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="grouptypedef"></a>
+```python title="Definition"
+class GroupPolicyRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## GroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "Path": ...,
+        "GroupName": ...,
+        "GroupId": ...,
+        "Arn": ...,
+        "CreateDate": ...,
+    }
 ```
 
-Required fields:
-
-- `Path`: `str`
-- `GroupName`: `str`
-- `GroupId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-
-<a id="instanceprofiletypedef"></a>
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    Path: str,
+    GroupName: str,
+    GroupId: str,
+    Arn: str,
+    CreateDate: datetime,
+```
 
 ## InstanceProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import InstanceProfileTypeDef
+
+def get_value() -> InstanceProfileTypeDef:
+    return {
+        "Path": ...,
+        "InstanceProfileName": ...,
+        "InstanceProfileId": ...,
+        "Arn": ...,
+        "CreateDate": ...,
+        "Roles": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceProfileTypeDef(TypedDict):
+    Path: str,
+    InstanceProfileName: str,
+    InstanceProfileId: str,
+    Arn: str,
+    CreateDate: datetime,
+    Roles: List[RoleTypeDef],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `Path`: `str`
-- `InstanceProfileName`: `str`
-- `InstanceProfileId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-- `Roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+## ListAccessKeysRequestListAccessKeysPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListAccessKeysRequestListAccessKeysPaginateTypeDef
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+def get_value() -> ListAccessKeysRequestListAccessKeysPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
 
-<a id="listaccesskeysrequestrequesttypedef"></a>
+```python title="Definition"
+class ListAccessKeysRequestListAccessKeysPaginateTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccessKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAccessKeysRequestRequestTypeDef
+
+def get_value() -> ListAccessKeysRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listaccesskeysresponsetypedef"></a>
+```python title="Definition"
+class ListAccessKeysRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAccessKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAccessKeysResponseTypeDef
+
+def get_value() -> ListAccessKeysResponseTypeDef:
+    return {
+        "AccessKeyMetadata": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccessKeysResponseTypeDef(TypedDict):
+    AccessKeyMetadata: List[AccessKeyMetadataTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccessKeyMetadata`:
-  `List`\[[AccessKeyMetadataTypeDef](./type_defs.md#accesskeymetadatatypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessKeyMetadataTypeDef](./type_defs.md#accesskeymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccountAliasesRequestListAccountAliasesPaginateTypeDef
 
-<a id="listaccountaliasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListAccountAliasesRequestListAccountAliasesPaginateTypeDef
 
+def get_value() -> ListAccountAliasesRequestListAccountAliasesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountAliasesRequestListAccountAliasesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountAliasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAccountAliasesRequestRequestTypeDef
+
+def get_value() -> ListAccountAliasesRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listaccountaliasesresponsetypedef"></a>
+```python title="Definition"
+class ListAccountAliasesRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAccountAliasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAccountAliasesResponseTypeDef
+
+def get_value() -> ListAccountAliasesResponseTypeDef:
+    return {
+        "AccountAliases": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountAliasesResponseTypeDef(TypedDict):
+    AccountAliases: List[str],
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccountAliases`: `List`\[`str`\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttachedGroupPoliciesRequestListAttachedGroupPoliciesPaginateTypeDef
 
-<a id="listattachedgrouppoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesRequestListAttachedGroupPoliciesPaginateTypeDef
 
+def get_value() -> ListAttachedGroupPoliciesRequestListAttachedGroupPoliciesPaginateTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachedGroupPoliciesRequestListAttachedGroupPoliciesPaginateTypeDef(TypedDict):
+    GroupName: str,
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttachedGroupPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesRequestRequestTypeDef
+
+def get_value() -> ListAttachedGroupPoliciesRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listattachedgrouppoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListAttachedGroupPoliciesRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAttachedGroupPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedGroupPoliciesResponseTypeDef
+
+def get_value() -> ListAttachedGroupPoliciesResponseTypeDef:
+    return {
+        "AttachedPolicies": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttachedGroupPoliciesResponseTypeDef(TypedDict):
+    AttachedPolicies: List[AttachedPolicyTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttachedRolePoliciesRequestListAttachedRolePoliciesPaginateTypeDef
 
-<a id="listattachedrolepoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesRequestListAttachedRolePoliciesPaginateTypeDef
 
+def get_value() -> ListAttachedRolePoliciesRequestListAttachedRolePoliciesPaginateTypeDef:
+    return {
+        "RoleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachedRolePoliciesRequestListAttachedRolePoliciesPaginateTypeDef(TypedDict):
+    RoleName: str,
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttachedRolePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesRequestRequestTypeDef
+
+def get_value() -> ListAttachedRolePoliciesRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listattachedrolepoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListAttachedRolePoliciesRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAttachedRolePoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedRolePoliciesResponseTypeDef
+
+def get_value() -> ListAttachedRolePoliciesResponseTypeDef:
+    return {
+        "AttachedPolicies": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttachedRolePoliciesResponseTypeDef(TypedDict):
+    AttachedPolicies: List[AttachedPolicyTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttachedUserPoliciesRequestListAttachedUserPoliciesPaginateTypeDef
 
-<a id="listattacheduserpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesRequestListAttachedUserPoliciesPaginateTypeDef
 
+def get_value() -> ListAttachedUserPoliciesRequestListAttachedUserPoliciesPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttachedUserPoliciesRequestListAttachedUserPoliciesPaginateTypeDef(TypedDict):
+    UserName: str,
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttachedUserPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesRequestRequestTypeDef
+
+def get_value() -> ListAttachedUserPoliciesRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listattacheduserpoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListAttachedUserPoliciesRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAttachedUserPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListAttachedUserPoliciesResponseTypeDef
+
+def get_value() -> ListAttachedUserPoliciesResponseTypeDef:
+    return {
+        "AttachedPolicies": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttachedUserPoliciesResponseTypeDef(TypedDict):
+    AttachedPolicies: List[AttachedPolicyTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AttachedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEntitiesForPolicyRequestListEntitiesForPolicyPaginateTypeDef
 
-<a id="listentitiesforpolicyrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListEntitiesForPolicyRequestListEntitiesForPolicyPaginateTypeDef
 
+def get_value() -> ListEntitiesForPolicyRequestListEntitiesForPolicyPaginateTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListEntitiesForPolicyRequestListEntitiesForPolicyPaginateTypeDef(TypedDict):
+    PolicyArn: str,
+    EntityFilter: NotRequired[EntityTypeType],  # (1)
+    PathPrefix: NotRequired[str],
+    PolicyUsageFilter: NotRequired[PolicyUsageTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEntitiesForPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListEntitiesForPolicyRequestRequestTypeDef
+
+def get_value() -> ListEntitiesForPolicyRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesForPolicyRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    EntityFilter: NotRequired[EntityTypeType],  # (1)
+    PathPrefix: NotRequired[str],
+    PolicyUsageFilter: NotRequired[PolicyUsageTypeType],  # (2)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `PolicyArn`: `str`
-
-Optional fields:
-
-- `EntityFilter`: [EntityTypeType](./literals.md#entitytypetype)
-- `PathPrefix`: `str`
-- `PolicyUsageFilter`: [PolicyUsageTypeType](./literals.md#policyusagetypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listentitiesforpolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
 ## ListEntitiesForPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListEntitiesForPolicyResponseTypeDef
+
+def get_value() -> ListEntitiesForPolicyResponseTypeDef:
+    return {
+        "PolicyGroups": ...,
+        "PolicyUsers": ...,
+        "PolicyRoles": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesForPolicyResponseTypeDef(TypedDict):
+    PolicyGroups: List[PolicyGroupTypeDef],  # (1)
+    PolicyUsers: List[PolicyUserTypeDef],  # (2)
+    PolicyRoles: List[PolicyRoleTypeDef],  # (3)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `PolicyGroups`:
-  `List`\[[PolicyGroupTypeDef](./type_defs.md#policygrouptypedef)\]
-- `PolicyUsers`:
-  `List`\[[PolicyUserTypeDef](./type_defs.md#policyusertypedef)\]
-- `PolicyRoles`:
-  `List`\[[PolicyRoleTypeDef](./type_defs.md#policyroletypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PolicyGroupTypeDef](./type_defs.md#policygrouptypedef) 
+2. See [:material-code-braces: PolicyUserTypeDef](./type_defs.md#policyusertypedef) 
+3. See [:material-code-braces: PolicyRoleTypeDef](./type_defs.md#policyroletypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupPoliciesRequestListGroupPoliciesPaginateTypeDef
 
-<a id="listgrouppoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListGroupPoliciesRequestListGroupPoliciesPaginateTypeDef
 
+def get_value() -> ListGroupPoliciesRequestListGroupPoliciesPaginateTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupPoliciesRequestListGroupPoliciesPaginateTypeDef(TypedDict):
+    GroupName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupPoliciesRequestRequestTypeDef
+
+def get_value() -> ListGroupPoliciesRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listgrouppoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListGroupPoliciesRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListGroupPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupPoliciesResponseTypeDef
+
+def get_value() -> ListGroupPoliciesResponseTypeDef:
+    return {
+        "PolicyNames": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupPoliciesResponseTypeDef(TypedDict):
+    PolicyNames: List[str],
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyNames`: `List`\[`str`\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsForUserRequestListGroupsForUserPaginateTypeDef
 
-<a id="listgroupsforuserrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListGroupsForUserRequestListGroupsForUserPaginateTypeDef
 
+def get_value() -> ListGroupsForUserRequestListGroupsForUserPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsForUserRequestListGroupsForUserPaginateTypeDef(TypedDict):
+    UserName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupsForUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupsForUserRequestRequestTypeDef
+
+def get_value() -> ListGroupsForUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listgroupsforuserresponsetypedef"></a>
+```python title="Definition"
+class ListGroupsForUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListGroupsForUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupsForUserResponseTypeDef
+
+def get_value() -> ListGroupsForUserResponseTypeDef:
+    return {
+        "Groups": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsForUserResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsRequestListGroupsPaginateTypeDef
 
-<a id="listgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListGroupsRequestListGroupsPaginateTypeDef
 
+def get_value() -> ListGroupsRequestListGroupsPaginateTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsRequestListGroupsPaginateTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupsRequestRequestTypeDef
+
+def get_value() -> ListGroupsRequestRequestTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListGroupsRequestRequestTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListGroupsResponseTypeDef
+
+def get_value() -> ListGroupsResponseTypeDef:
+    return {
+        "Groups": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsResponseTypeDef(TypedDict):
+    Groups: List[GroupTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listinstanceprofiletagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListInstanceProfileTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfileTagsRequestRequestTypeDef
+
+def get_value() -> ListInstanceProfileTagsRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listinstanceprofiletagsresponsetypedef"></a>
+```python title="Definition"
+class ListInstanceProfileTagsRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListInstanceProfileTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfileTagsResponseTypeDef
+
+def get_value() -> ListInstanceProfileTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceProfileTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceProfilesForRoleRequestListInstanceProfilesForRolePaginateTypeDef
 
-<a id="listinstanceprofilesforrolerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleRequestListInstanceProfilesForRolePaginateTypeDef
 
+def get_value() -> ListInstanceProfilesForRoleRequestListInstanceProfilesForRolePaginateTypeDef:
+    return {
+        "RoleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceProfilesForRoleRequestListInstanceProfilesForRolePaginateTypeDef(TypedDict):
+    RoleName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceProfilesForRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleRequestRequestTypeDef
+
+def get_value() -> ListInstanceProfilesForRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listinstanceprofilesforroleresponsetypedef"></a>
+```python title="Definition"
+class ListInstanceProfilesForRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListInstanceProfilesForRoleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfilesForRoleResponseTypeDef
+
+def get_value() -> ListInstanceProfilesForRoleResponseTypeDef:
+    return {
+        "InstanceProfiles": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceProfilesForRoleResponseTypeDef(TypedDict):
+    InstanceProfiles: List[InstanceProfileTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef
 
-<a id="listinstanceprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef
 
+def get_value() -> ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceProfilesRequestListInstanceProfilesPaginateTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfilesRequestRequestTypeDef
+
+def get_value() -> ListInstanceProfilesRequestRequestTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listinstanceprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListInstanceProfilesRequestRequestTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListInstanceProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListInstanceProfilesResponseTypeDef
+
+def get_value() -> ListInstanceProfilesResponseTypeDef:
+    return {
+        "InstanceProfiles": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceProfilesResponseTypeDef(TypedDict):
+    InstanceProfiles: List[InstanceProfileTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceProfiles`:
-  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmfadevicetagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMFADeviceTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListMFADeviceTagsRequestRequestTypeDef
+
+def get_value() -> ListMFADeviceTagsRequestRequestTypeDef:
+    return {
+        "SerialNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `SerialNumber`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listmfadevicetagsresponsetypedef"></a>
+```python title="Definition"
+class ListMFADeviceTagsRequestRequestTypeDef(TypedDict):
+    SerialNumber: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListMFADeviceTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListMFADeviceTagsResponseTypeDef
+
+def get_value() -> ListMFADeviceTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMFADeviceTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMFADevicesRequestListMFADevicesPaginateTypeDef
 
-<a id="listmfadevicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListMFADevicesRequestListMFADevicesPaginateTypeDef
 
+def get_value() -> ListMFADevicesRequestListMFADevicesPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMFADevicesRequestListMFADevicesPaginateTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMFADevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListMFADevicesRequestRequestTypeDef
+
+def get_value() -> ListMFADevicesRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listmfadevicesresponsetypedef"></a>
+```python title="Definition"
+class ListMFADevicesRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListMFADevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListMFADevicesResponseTypeDef
+
+def get_value() -> ListMFADevicesResponseTypeDef:
+    return {
+        "MFADevices": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMFADevicesResponseTypeDef(TypedDict):
+    MFADevices: List[MFADeviceTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MFADevices`: `List`\[[MFADeviceTypeDef](./type_defs.md#mfadevicetypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listopenidconnectprovidertagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MFADeviceTypeDef](./type_defs.md#mfadevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOpenIDConnectProviderTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsRequestRequestTypeDef
+
+def get_value() -> ListOpenIDConnectProviderTagsRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listopenidconnectprovidertagsresponsetypedef"></a>
+```python title="Definition"
+class ListOpenIDConnectProviderTagsRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListOpenIDConnectProviderTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListOpenIDConnectProviderTagsResponseTypeDef
+
+def get_value() -> ListOpenIDConnectProviderTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOpenIDConnectProviderTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listopenidconnectprovidersresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOpenIDConnectProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListOpenIDConnectProvidersResponseTypeDef
+
+def get_value() -> ListOpenIDConnectProvidersResponseTypeDef:
+    return {
+        "OpenIDConnectProviderList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOpenIDConnectProvidersResponseTypeDef(TypedDict):
+    OpenIDConnectProviderList: List[OpenIDConnectProviderListEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OpenIDConnectProviderList`:
-  `List`\[[OpenIDConnectProviderListEntryTypeDef](./type_defs.md#openidconnectproviderlistentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpoliciesgrantingserviceaccessentrytypedef"></a>
-
+1. See [:material-code-braces: OpenIDConnectProviderListEntryTypeDef](./type_defs.md#openidconnectproviderlistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPoliciesGrantingServiceAccessEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessEntryTypeDef
+
+def get_value() -> ListPoliciesGrantingServiceAccessEntryTypeDef:
+    return {
+        "ServiceNamespace": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPoliciesGrantingServiceAccessEntryTypeDef(TypedDict):
+    ServiceNamespace: NotRequired[str],
+    Policies: NotRequired[List[PolicyGrantingServiceAccessTypeDef]],  # (1)
+```
 
-- `ServiceNamespace`: `str`
-- `Policies`:
-  `List`\[[PolicyGrantingServiceAccessTypeDef](./type_defs.md#policygrantingserviceaccesstypedef)\]
-
-<a id="listpoliciesgrantingserviceaccessrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyGrantingServiceAccessTypeDef](./type_defs.md#policygrantingserviceaccesstypedef) 
 ## ListPoliciesGrantingServiceAccessRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessRequestRequestTypeDef
+
+def get_value() -> ListPoliciesGrantingServiceAccessRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+        "ServiceNamespaces": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `ServiceNamespaces`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Marker`: `str`
-
-<a id="listpoliciesgrantingserviceaccessresponsetypedef"></a>
+```python title="Definition"
+class ListPoliciesGrantingServiceAccessRequestRequestTypeDef(TypedDict):
+    Arn: str,
+    ServiceNamespaces: Sequence[str],
+    Marker: NotRequired[str],
+```
 
 ## ListPoliciesGrantingServiceAccessResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPoliciesGrantingServiceAccessResponseTypeDef
+
+def get_value() -> ListPoliciesGrantingServiceAccessResponseTypeDef:
+    return {
+        "PoliciesGrantingServiceAccess": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPoliciesGrantingServiceAccessResponseTypeDef(TypedDict):
+    PoliciesGrantingServiceAccess: List[ListPoliciesGrantingServiceAccessEntryTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PoliciesGrantingServiceAccess`:
-  `List`\[[ListPoliciesGrantingServiceAccessEntryTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessentrytypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListPoliciesGrantingServiceAccessEntryTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPoliciesRequestListPoliciesPaginateTypeDef
 
-<a id="listpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListPoliciesRequestListPoliciesPaginateTypeDef
 
+def get_value() -> ListPoliciesRequestListPoliciesPaginateTypeDef:
+    return {
+        "Scope": ...,
+    }
+```
+
+```python title="Definition"
+class ListPoliciesRequestListPoliciesPaginateTypeDef(TypedDict):
+    Scope: NotRequired[policyScopeTypeType],  # (1)
+    OnlyAttached: NotRequired[bool],
+    PathPrefix: NotRequired[str],
+    PolicyUsageFilter: NotRequired[PolicyUsageTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: policyScopeTypeType](./literals.md#policyscopetypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPoliciesRequestRequestTypeDef
+
+def get_value() -> ListPoliciesRequestRequestTypeDef:
+    return {
+        "Scope": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListPoliciesRequestRequestTypeDef(TypedDict):
+    Scope: NotRequired[policyScopeTypeType],  # (1)
+    OnlyAttached: NotRequired[bool],
+    PathPrefix: NotRequired[str],
+    PolicyUsageFilter: NotRequired[PolicyUsageTypeType],  # (2)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `Scope`: [policyScopeTypeType](./literals.md#policyscopetypetype)
-- `OnlyAttached`: `bool`
-- `PathPrefix`: `str`
-- `PolicyUsageFilter`: [PolicyUsageTypeType](./literals.md#policyusagetypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listpoliciesresponsetypedef"></a>
-
+1. See [:material-code-brackets: policyScopeTypeType](./literals.md#policyscopetypetype) 
+2. See [:material-code-brackets: PolicyUsageTypeType](./literals.md#policyusagetypetype) 
 ## ListPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPoliciesResponseTypeDef
+
+def get_value() -> ListPoliciesResponseTypeDef:
+    return {
+        "Policies": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPoliciesResponseTypeDef(TypedDict):
+    Policies: List[PolicyTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policies`: `List`\[[PolicyTypeDef](./type_defs.md#policytypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listpolicytagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyTypeDef](./type_defs.md#policytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListPolicyTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPolicyTagsRequestRequestTypeDef
+
+def get_value() -> ListPolicyTagsRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listpolicytagsresponsetypedef"></a>
+```python title="Definition"
+class ListPolicyTagsRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListPolicyTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPolicyTagsResponseTypeDef
+
+def get_value() -> ListPolicyTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPolicyTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPolicyVersionsRequestListPolicyVersionsPaginateTypeDef
 
-<a id="listpolicyversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListPolicyVersionsRequestListPolicyVersionsPaginateTypeDef
 
+def get_value() -> ListPolicyVersionsRequestListPolicyVersionsPaginateTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListPolicyVersionsRequestListPolicyVersionsPaginateTypeDef(TypedDict):
+    PolicyArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPolicyVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPolicyVersionsRequestRequestTypeDef
+
+def get_value() -> ListPolicyVersionsRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listpolicyversionsresponsetypedef"></a>
+```python title="Definition"
+class ListPolicyVersionsRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListPolicyVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListPolicyVersionsResponseTypeDef
+
+def get_value() -> ListPolicyVersionsResponseTypeDef:
+    return {
+        "Versions": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPolicyVersionsResponseTypeDef(TypedDict):
+    Versions: List[PolicyVersionTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Versions`:
-  `List`\[[PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRolePoliciesRequestListRolePoliciesPaginateTypeDef
 
-<a id="listrolepoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListRolePoliciesRequestListRolePoliciesPaginateTypeDef
 
+def get_value() -> ListRolePoliciesRequestListRolePoliciesPaginateTypeDef:
+    return {
+        "RoleName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRolePoliciesRequestListRolePoliciesPaginateTypeDef(TypedDict):
+    RoleName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRolePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRolePoliciesRequestRequestTypeDef
+
+def get_value() -> ListRolePoliciesRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listrolepoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListRolePoliciesRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListRolePoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRolePoliciesResponseTypeDef
+
+def get_value() -> ListRolePoliciesResponseTypeDef:
+    return {
+        "PolicyNames": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRolePoliciesResponseTypeDef(TypedDict):
+    PolicyNames: List[str],
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyNames`: `List`\[`str`\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listroletagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRoleTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRoleTagsRequestRequestTypeDef
+
+def get_value() -> ListRoleTagsRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listroletagsresponsetypedef"></a>
+```python title="Definition"
+class ListRoleTagsRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListRoleTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRoleTagsResponseTypeDef
+
+def get_value() -> ListRoleTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRoleTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRolesRequestListRolesPaginateTypeDef
 
-<a id="listrolesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListRolesRequestListRolesPaginateTypeDef
 
+def get_value() -> ListRolesRequestListRolesPaginateTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListRolesRequestListRolesPaginateTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRolesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRolesRequestRequestTypeDef
+
+def get_value() -> ListRolesRequestRequestTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listrolesresponsetypedef"></a>
+```python title="Definition"
+class ListRolesRequestRequestTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListRolesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListRolesResponseTypeDef
+
+def get_value() -> ListRolesResponseTypeDef:
+    return {
+        "Roles": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRolesResponseTypeDef(TypedDict):
+    Roles: List[RoleTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Roles`: `List`\[[RoleTypeDef](./type_defs.md#roletypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsamlprovidertagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSAMLProviderTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSAMLProviderTagsRequestRequestTypeDef
+
+def get_value() -> ListSAMLProviderTagsRequestRequestTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLProviderArn`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listsamlprovidertagsresponsetypedef"></a>
+```python title="Definition"
+class ListSAMLProviderTagsRequestRequestTypeDef(TypedDict):
+    SAMLProviderArn: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListSAMLProviderTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSAMLProviderTagsResponseTypeDef
+
+def get_value() -> ListSAMLProviderTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSAMLProviderTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsamlprovidersresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSAMLProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSAMLProvidersResponseTypeDef
+
+def get_value() -> ListSAMLProvidersResponseTypeDef:
+    return {
+        "SAMLProviderList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSAMLProvidersResponseTypeDef(TypedDict):
+    SAMLProviderList: List[SAMLProviderListEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SAMLProviderList`:
-  `List`\[[SAMLProviderListEntryTypeDef](./type_defs.md#samlproviderlistentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SAMLProviderListEntryTypeDef](./type_defs.md#samlproviderlistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSSHPublicKeysRequestListSSHPublicKeysPaginateTypeDef
 
-<a id="listsshpublickeysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListSSHPublicKeysRequestListSSHPublicKeysPaginateTypeDef
 
+def get_value() -> ListSSHPublicKeysRequestListSSHPublicKeysPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSSHPublicKeysRequestListSSHPublicKeysPaginateTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSSHPublicKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSSHPublicKeysRequestRequestTypeDef
+
+def get_value() -> ListSSHPublicKeysRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listsshpublickeysresponsetypedef"></a>
+```python title="Definition"
+class ListSSHPublicKeysRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListSSHPublicKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSSHPublicKeysResponseTypeDef
+
+def get_value() -> ListSSHPublicKeysResponseTypeDef:
+    return {
+        "SSHPublicKeys": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSSHPublicKeysResponseTypeDef(TypedDict):
+    SSHPublicKeys: List[SSHPublicKeyMetadataTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SSHPublicKeys`:
-  `List`\[[SSHPublicKeyMetadataTypeDef](./type_defs.md#sshpublickeymetadatatypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listservercertificatetagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SSHPublicKeyMetadataTypeDef](./type_defs.md#sshpublickeymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListServerCertificateTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServerCertificateTagsRequestRequestTypeDef
+
+def get_value() -> ListServerCertificateTagsRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerCertificateName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listservercertificatetagsresponsetypedef"></a>
+```python title="Definition"
+class ListServerCertificateTagsRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListServerCertificateTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServerCertificateTagsResponseTypeDef
+
+def get_value() -> ListServerCertificateTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServerCertificateTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServerCertificatesRequestListServerCertificatesPaginateTypeDef
 
-<a id="listservercertificatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListServerCertificatesRequestListServerCertificatesPaginateTypeDef
 
+def get_value() -> ListServerCertificatesRequestListServerCertificatesPaginateTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListServerCertificatesRequestListServerCertificatesPaginateTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServerCertificatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServerCertificatesRequestRequestTypeDef
+
+def get_value() -> ListServerCertificatesRequestRequestTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listservercertificatesresponsetypedef"></a>
+```python title="Definition"
+class ListServerCertificatesRequestRequestTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListServerCertificatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServerCertificatesResponseTypeDef
+
+def get_value() -> ListServerCertificatesResponseTypeDef:
+    return {
+        "ServerCertificateMetadataList": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServerCertificatesResponseTypeDef(TypedDict):
+    ServerCertificateMetadataList: List[ServerCertificateMetadataTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServerCertificateMetadataList`:
-  `List`\[[ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listservicespecificcredentialsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListServiceSpecificCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsRequestRequestTypeDef
+
+def get_value() -> ListServiceSpecificCredentialsRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `ServiceName`: `str`
-
-<a id="listservicespecificcredentialsresponsetypedef"></a>
+```python title="Definition"
+class ListServiceSpecificCredentialsRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    ServiceName: NotRequired[str],
+```
 
 ## ListServiceSpecificCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListServiceSpecificCredentialsResponseTypeDef
+
+def get_value() -> ListServiceSpecificCredentialsResponseTypeDef:
+    return {
+        "ServiceSpecificCredentials": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServiceSpecificCredentialsResponseTypeDef(TypedDict):
+    ServiceSpecificCredentials: List[ServiceSpecificCredentialMetadataTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSpecificCredentials`:
-  `List`\[[ServiceSpecificCredentialMetadataTypeDef](./type_defs.md#servicespecificcredentialmetadatatypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceSpecificCredentialMetadataTypeDef](./type_defs.md#servicespecificcredentialmetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSigningCertificatesRequestListSigningCertificatesPaginateTypeDef
 
-<a id="listsigningcertificatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListSigningCertificatesRequestListSigningCertificatesPaginateTypeDef
 
+def get_value() -> ListSigningCertificatesRequestListSigningCertificatesPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSigningCertificatesRequestListSigningCertificatesPaginateTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSigningCertificatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSigningCertificatesRequestRequestTypeDef
+
+def get_value() -> ListSigningCertificatesRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listsigningcertificatesresponsetypedef"></a>
+```python title="Definition"
+class ListSigningCertificatesRequestRequestTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListSigningCertificatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListSigningCertificatesResponseTypeDef
+
+def get_value() -> ListSigningCertificatesResponseTypeDef:
+    return {
+        "Certificates": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSigningCertificatesResponseTypeDef(TypedDict):
+    Certificates: List[SigningCertificateTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Certificates`:
-  `List`\[[SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserPoliciesRequestListUserPoliciesPaginateTypeDef
 
-<a id="listuserpoliciesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListUserPoliciesRequestListUserPoliciesPaginateTypeDef
 
+def get_value() -> ListUserPoliciesRequestListUserPoliciesPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserPoliciesRequestListUserPoliciesPaginateTypeDef(TypedDict):
+    UserName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUserPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUserPoliciesRequestRequestTypeDef
+
+def get_value() -> ListUserPoliciesRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listuserpoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListUserPoliciesRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListUserPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUserPoliciesResponseTypeDef
+
+def get_value() -> ListUserPoliciesResponseTypeDef:
+    return {
+        "PolicyNames": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserPoliciesResponseTypeDef(TypedDict):
+    PolicyNames: List[str],
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyNames`: `List`\[`str`\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserTagsRequestListUserTagsPaginateTypeDef
 
-<a id="listusertagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListUserTagsRequestListUserTagsPaginateTypeDef
 
+def get_value() -> ListUserTagsRequestListUserTagsPaginateTypeDef:
+    return {
+        "UserName": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserTagsRequestListUserTagsPaginateTypeDef(TypedDict):
+    UserName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUserTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUserTagsRequestRequestTypeDef
+
+def get_value() -> ListUserTagsRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listusertagsresponsetypedef"></a>
+```python title="Definition"
+class ListUserTagsRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListUserTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUserTagsResponseTypeDef
+
+def get_value() -> ListUserTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
 
-<a id="listusersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListUsersRequestListUsersPaginateTypeDef
 
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "PathPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `PathPrefix`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listusersresponsetypedef"></a>
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    PathPrefix: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "Users": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    Users: List[UserTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVirtualMFADevicesRequestListVirtualMFADevicesPaginateTypeDef
 
-<a id="listvirtualmfadevicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import ListVirtualMFADevicesRequestListVirtualMFADevicesPaginateTypeDef
 
+def get_value() -> ListVirtualMFADevicesRequestListVirtualMFADevicesPaginateTypeDef:
+    return {
+        "AssignmentStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualMFADevicesRequestListVirtualMFADevicesPaginateTypeDef(TypedDict):
+    AssignmentStatus: NotRequired[assignmentStatusTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: assignmentStatusTypeType](./literals.md#assignmentstatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualMFADevicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListVirtualMFADevicesRequestRequestTypeDef
+
+def get_value() -> ListVirtualMFADevicesRequestRequestTypeDef:
+    return {
+        "AssignmentStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListVirtualMFADevicesRequestRequestTypeDef(TypedDict):
+    AssignmentStatus: NotRequired[assignmentStatusTypeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `AssignmentStatus`:
-  [assignmentStatusTypeType](./literals.md#assignmentstatustypetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listvirtualmfadevicesresponsetypedef"></a>
-
+1. See [:material-code-brackets: assignmentStatusTypeType](./literals.md#assignmentstatustypetype) 
 ## ListVirtualMFADevicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ListVirtualMFADevicesResponseTypeDef
+
+def get_value() -> ListVirtualMFADevicesResponseTypeDef:
+    return {
+        "VirtualMFADevices": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualMFADevicesResponseTypeDef(TypedDict):
+    VirtualMFADevices: List[VirtualMFADeviceTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VirtualMFADevices`:
-  `List`\[[VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loginprofiletypedef"></a>
-
+1. See [:material-code-braces: VirtualMFADeviceTypeDef](./type_defs.md#virtualmfadevicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoginProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import LoginProfileTypeDef
+
+def get_value() -> LoginProfileTypeDef:
+    return {
+        "UserName": ...,
+        "CreateDate": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `CreateDate`: `datetime`
-
-Optional fields:
-
-- `PasswordResetRequired`: `bool`
-
-<a id="mfadevicetypedef"></a>
+```python title="Definition"
+class LoginProfileTypeDef(TypedDict):
+    UserName: str,
+    CreateDate: datetime,
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## MFADeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import MFADeviceTypeDef
+
+def get_value() -> MFADeviceTypeDef:
+    return {
+        "UserName": ...,
+        "SerialNumber": ...,
+        "EnableDate": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SerialNumber`: `str`
-- `EnableDate`: `datetime`
-
-<a id="managedpolicydetailtypedef"></a>
+```python title="Definition"
+class MFADeviceTypeDef(TypedDict):
+    UserName: str,
+    SerialNumber: str,
+    EnableDate: datetime,
+```
 
 ## ManagedPolicyDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ManagedPolicyDetailTypeDef
+
+def get_value() -> ManagedPolicyDetailTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedPolicyDetailTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyId: NotRequired[str],
+    Arn: NotRequired[str],
+    Path: NotRequired[str],
+    DefaultVersionId: NotRequired[str],
+    AttachmentCount: NotRequired[int],
+    PermissionsBoundaryUsageCount: NotRequired[int],
+    IsAttachable: NotRequired[bool],
+    Description: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    UpdateDate: NotRequired[datetime],
+    PolicyVersionList: NotRequired[List[PolicyVersionTypeDef]],  # (1)
+```
 
-- `PolicyName`: `str`
-- `PolicyId`: `str`
-- `Arn`: `str`
-- `Path`: `str`
-- `DefaultVersionId`: `str`
-- `AttachmentCount`: `int`
-- `PermissionsBoundaryUsageCount`: `int`
-- `IsAttachable`: `bool`
-- `Description`: `str`
-- `CreateDate`: `datetime`
-- `UpdateDate`: `datetime`
-- `PolicyVersionList`:
-  `List`\[[PolicyVersionTypeDef](./type_defs.md#policyversiontypedef)\]
-
-<a id="openidconnectproviderlistentrytypedef"></a>
-
+1. See [:material-code-braces: PolicyVersionTypeDef](./type_defs.md#policyversiontypedef) 
 ## OpenIDConnectProviderListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import OpenIDConnectProviderListEntryTypeDef
+
+def get_value() -> OpenIDConnectProviderListEntryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-
-<a id="organizationsdecisiondetailtypedef"></a>
+```python title="Definition"
+class OpenIDConnectProviderListEntryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+```
 
 ## OrganizationsDecisionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import OrganizationsDecisionDetailTypeDef
+
+def get_value() -> OrganizationsDecisionDetailTypeDef:
+    return {
+        "AllowedByOrganizations": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowedByOrganizations`: `bool`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OrganizationsDecisionDetailTypeDef(TypedDict):
+    AllowedByOrganizations: NotRequired[bool],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="passwordpolicytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PasswordPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PasswordPolicyTypeDef
+
+def get_value() -> PasswordPolicyTypeDef:
+    return {
+        "MinimumPasswordLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `ExpirePasswords`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
-
-<a id="permissionsboundarydecisiondetailtypedef"></a>
+```python title="Definition"
+class PasswordPolicyTypeDef(TypedDict):
+    MinimumPasswordLength: NotRequired[int],
+    RequireSymbols: NotRequired[bool],
+    RequireNumbers: NotRequired[bool],
+    RequireUppercaseCharacters: NotRequired[bool],
+    RequireLowercaseCharacters: NotRequired[bool],
+    AllowUsersToChangePassword: NotRequired[bool],
+    ExpirePasswords: NotRequired[bool],
+    MaxPasswordAge: NotRequired[int],
+    PasswordReusePrevention: NotRequired[int],
+    HardExpiry: NotRequired[bool],
+```
 
 ## PermissionsBoundaryDecisionDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PermissionsBoundaryDecisionDetailTypeDef
+
+def get_value() -> PermissionsBoundaryDecisionDetailTypeDef:
+    return {
+        "AllowedByPermissionsBoundary": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowedByPermissionsBoundary`: `bool`
-
-<a id="policydetailtypedef"></a>
+```python title="Definition"
+class PermissionsBoundaryDecisionDetailTypeDef(TypedDict):
+    AllowedByPermissionsBoundary: NotRequired[bool],
+```
 
 ## PolicyDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyDetailTypeDef
+
+def get_value() -> PolicyDetailTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="policygrantingserviceaccesstypedef"></a>
+```python title="Definition"
+class PolicyDetailTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyDocument: NotRequired[str],
+```
 
 ## PolicyGrantingServiceAccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyGrantingServiceAccessTypeDef
+
+def get_value() -> PolicyGrantingServiceAccessTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PolicyGrantingServiceAccessTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyType: policyTypeType,  # (1)
+    PolicyArn: NotRequired[str],
+    EntityType: NotRequired[policyOwnerEntityTypeType],  # (2)
+    EntityName: NotRequired[str],
+```
 
-- `PolicyName`: `str`
-- `PolicyType`: [policyTypeType](./literals.md#policytypetype)
-
-Optional fields:
-
-- `PolicyArn`: `str`
-- `EntityType`:
-  [policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype)
-- `EntityName`: `str`
-
-<a id="policygrouptypedef"></a>
-
+1. See [:material-code-brackets: policyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-brackets: policyOwnerEntityTypeType](./literals.md#policyownerentitytypetype) 
 ## PolicyGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyGroupTypeDef
+
+def get_value() -> PolicyGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupId`: `str`
-
-<a id="policyroletypedef"></a>
+```python title="Definition"
+class PolicyGroupTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupId: NotRequired[str],
+```
 
 ## PolicyRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyRoleTypeDef
+
+def get_value() -> PolicyRoleTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoleName`: `str`
-- `RoleId`: `str`
-
-<a id="policytypedef"></a>
+```python title="Definition"
+class PolicyRoleTypeDef(TypedDict):
+    RoleName: NotRequired[str],
+    RoleId: NotRequired[str],
+```
 
 ## PolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyTypeDef
+
+def get_value() -> PolicyTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    PolicyId: NotRequired[str],
+    Arn: NotRequired[str],
+    Path: NotRequired[str],
+    DefaultVersionId: NotRequired[str],
+    AttachmentCount: NotRequired[int],
+    PermissionsBoundaryUsageCount: NotRequired[int],
+    IsAttachable: NotRequired[bool],
+    Description: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    UpdateDate: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `PolicyName`: `str`
-- `PolicyId`: `str`
-- `Arn`: `str`
-- `Path`: `str`
-- `DefaultVersionId`: `str`
-- `AttachmentCount`: `int`
-- `PermissionsBoundaryUsageCount`: `int`
-- `IsAttachable`: `bool`
-- `Description`: `str`
-- `CreateDate`: `datetime`
-- `UpdateDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="policyusertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PolicyUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyUserTypeDef
+
+def get_value() -> PolicyUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
-
-- `UserName`: `str`
-- `UserId`: `str`
-
-<a id="policyversiontypedef"></a>
+```python title="Definition"
+class PolicyUserTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    UserId: NotRequired[str],
+```
 
 ## PolicyVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PolicyVersionTypeDef
+
+def get_value() -> PolicyVersionTypeDef:
+    return {
+        "Document": ...,
+    }
 ```
 
-Optional fields:
-
-- `Document`: `str`
-- `VersionId`: `str`
-- `IsDefaultVersion`: `bool`
-- `CreateDate`: `datetime`
-
-<a id="positiontypedef"></a>
+```python title="Definition"
+class PolicyVersionTypeDef(TypedDict):
+    Document: NotRequired[str],
+    VersionId: NotRequired[str],
+    IsDefaultVersion: NotRequired[bool],
+    CreateDate: NotRequired[datetime],
+```
 
 ## PositionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PositionTypeDef
+
+def get_value() -> PositionTypeDef:
+    return {
+        "Line": ...,
+    }
 ```
 
-Optional fields:
-
-- `Line`: `int`
-- `Column`: `int`
-
-<a id="putgrouppolicyrequestgroupcreatepolicytypedef"></a>
+```python title="Definition"
+class PositionTypeDef(TypedDict):
+    Line: NotRequired[int],
+    Column: NotRequired[int],
+```
 
 ## PutGroupPolicyRequestGroupCreatePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutGroupPolicyRequestGroupCreatePolicyTypeDef
+
+def get_value() -> PutGroupPolicyRequestGroupCreatePolicyTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="putgrouppolicyrequestgrouppolicyputtypedef"></a>
+```python title="Definition"
+class PutGroupPolicyRequestGroupCreatePolicyTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyDocument: str,
+```
 
 ## PutGroupPolicyRequestGroupPolicyPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutGroupPolicyRequestGroupPolicyPutTypeDef
+
+def get_value() -> PutGroupPolicyRequestGroupPolicyPutTypeDef:
+    return {
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyDocument`: `str`
-
-<a id="putgrouppolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PutGroupPolicyRequestGroupPolicyPutTypeDef(TypedDict):
+    PolicyDocument: str,
+```
 
 ## PutGroupPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutGroupPolicyRequestRequestTypeDef
+
+def get_value() -> PutGroupPolicyRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="putrolepermissionsboundaryrequestrequesttypedef"></a>
+```python title="Definition"
+class PutGroupPolicyRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+```
 
 ## PutRolePermissionsBoundaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutRolePermissionsBoundaryRequestRequestTypeDef
+
+def get_value() -> PutRolePermissionsBoundaryRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PermissionsBoundary": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PermissionsBoundary`: `str`
-
-<a id="putrolepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PutRolePermissionsBoundaryRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PermissionsBoundary: str,
+```
 
 ## PutRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutRolePolicyRequestRequestTypeDef
+
+def get_value() -> PutRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="putrolepolicyrequestrolepolicyputtypedef"></a>
+```python title="Definition"
+class PutRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+```
 
 ## PutRolePolicyRequestRolePolicyPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutRolePolicyRequestRolePolicyPutTypeDef
+
+def get_value() -> PutRolePolicyRequestRolePolicyPutTypeDef:
+    return {
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyDocument`: `str`
-
-<a id="putuserpermissionsboundaryrequestrequesttypedef"></a>
+```python title="Definition"
+class PutRolePolicyRequestRolePolicyPutTypeDef(TypedDict):
+    PolicyDocument: str,
+```
 
 ## PutUserPermissionsBoundaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutUserPermissionsBoundaryRequestRequestTypeDef
+
+def get_value() -> PutUserPermissionsBoundaryRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PermissionsBoundary": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PermissionsBoundary`: `str`
-
-<a id="putuserpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PutUserPermissionsBoundaryRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PermissionsBoundary: str,
+```
 
 ## PutUserPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutUserPolicyRequestRequestTypeDef
+
+def get_value() -> PutUserPolicyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="putuserpolicyrequestusercreatepolicytypedef"></a>
+```python title="Definition"
+class PutUserPolicyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    PolicyName: str,
+    PolicyDocument: str,
+```
 
 ## PutUserPolicyRequestUserCreatePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutUserPolicyRequestUserCreatePolicyTypeDef
+
+def get_value() -> PutUserPolicyRequestUserCreatePolicyTypeDef:
+    return {
+        "PolicyName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="putuserpolicyrequestuserpolicyputtypedef"></a>
+```python title="Definition"
+class PutUserPolicyRequestUserCreatePolicyTypeDef(TypedDict):
+    PolicyName: str,
+    PolicyDocument: str,
+```
 
 ## PutUserPolicyRequestUserPolicyPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import PutUserPolicyRequestUserPolicyPutTypeDef
+
+def get_value() -> PutUserPolicyRequestUserPolicyPutTypeDef:
+    return {
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyDocument`: `str`
-
-<a id="removeclientidfromopenidconnectproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class PutUserPolicyRequestUserPolicyPutTypeDef(TypedDict):
+    PolicyDocument: str,
+```
 
 ## RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "ClientID": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-- `ClientID`: `str`
-
-<a id="removerolefrominstanceprofilerequestinstanceprofileremoveroletypedef"></a>
+```python title="Definition"
+class RemoveClientIDFromOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    ClientID: str,
+```
 
 ## RemoveRoleFromInstanceProfileRequestInstanceProfileRemoveRoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveRoleFromInstanceProfileRequestInstanceProfileRemoveRoleTypeDef
+
+def get_value() -> RemoveRoleFromInstanceProfileRequestInstanceProfileRemoveRoleTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-<a id="removerolefrominstanceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class RemoveRoleFromInstanceProfileRequestInstanceProfileRemoveRoleTypeDef(TypedDict):
+    RoleName: str,
+```
 
 ## RemoveRoleFromInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveRoleFromInstanceProfileRequestRequestTypeDef
+
+def get_value() -> RemoveRoleFromInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-- `RoleName`: `str`
-
-<a id="removeuserfromgrouprequestgroupremoveusertypedef"></a>
+```python title="Definition"
+class RemoveRoleFromInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    RoleName: str,
+```
 
 ## RemoveUserFromGroupRequestGroupRemoveUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveUserFromGroupRequestGroupRemoveUserTypeDef
+
+def get_value() -> RemoveUserFromGroupRequestGroupRemoveUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-<a id="removeuserfromgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class RemoveUserFromGroupRequestGroupRemoveUserTypeDef(TypedDict):
+    UserName: str,
+```
 
 ## RemoveUserFromGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveUserFromGroupRequestRequestTypeDef
+
+def get_value() -> RemoveUserFromGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-- `UserName`: `str`
-
-<a id="removeuserfromgrouprequestuserremovegrouptypedef"></a>
+```python title="Definition"
+class RemoveUserFromGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    UserName: str,
+```
 
 ## RemoveUserFromGroupRequestUserRemoveGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RemoveUserFromGroupRequestUserRemoveGroupTypeDef
+
+def get_value() -> RemoveUserFromGroupRequestUserRemoveGroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-<a id="resetservicespecificcredentialrequestrequesttypedef"></a>
+```python title="Definition"
+class RemoveUserFromGroupRequestUserRemoveGroupTypeDef(TypedDict):
+    GroupName: str,
+```
 
 ## ResetServiceSpecificCredentialRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialRequestRequestTypeDef
+
+def get_value() -> ResetServiceSpecificCredentialRequestRequestTypeDef:
+    return {
+        "ServiceSpecificCredentialId": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceSpecificCredentialId`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="resetservicespecificcredentialresponsetypedef"></a>
+```python title="Definition"
+class ResetServiceSpecificCredentialRequestRequestTypeDef(TypedDict):
+    ServiceSpecificCredentialId: str,
+    UserName: NotRequired[str],
+```
 
 ## ResetServiceSpecificCredentialResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResetServiceSpecificCredentialResponseTypeDef
+
+def get_value() -> ResetServiceSpecificCredentialResponseTypeDef:
+    return {
+        "ServiceSpecificCredential": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResetServiceSpecificCredentialResponseTypeDef(TypedDict):
+    ServiceSpecificCredential: ServiceSpecificCredentialTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSpecificCredential`:
-  [ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourcespecificresulttypedef"></a>
-
+1. See [:material-code-braces: ServiceSpecificCredentialTypeDef](./type_defs.md#servicespecificcredentialtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceSpecificResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResourceSpecificResultTypeDef
+
+def get_value() -> ResourceSpecificResultTypeDef:
+    return {
+        "EvalResourceName": ...,
+        "EvalResourceDecision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceSpecificResultTypeDef(TypedDict):
+    EvalResourceName: str,
+    EvalResourceDecision: PolicyEvaluationDecisionTypeType,  # (1)
+    MatchedStatements: NotRequired[List[StatementTypeDef]],  # (2)
+    MissingContextValues: NotRequired[List[str]],
+    EvalDecisionDetails: NotRequired[Dict[str, PolicyEvaluationDecisionTypeType]],  # (3)
+    PermissionsBoundaryDecisionDetail: NotRequired[PermissionsBoundaryDecisionDetailTypeDef],  # (4)
+```
 
-- `EvalResourceName`: `str`
-- `EvalResourceDecision`:
-  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)
-
-Optional fields:
-
-- `MatchedStatements`:
-  `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
-- `MissingContextValues`: `List`\[`str`\]
-- `EvalDecisionDetails`: `Dict`\[`str`,
-  [PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype)\]
-- `PermissionsBoundaryDecisionDetail`:
-  [PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype) 
+2. See [:material-code-braces: StatementTypeDef](./type_defs.md#statementtypedef) 
+3. See [:material-code-brackets: PolicyEvaluationDecisionTypeType](./literals.md#policyevaluationdecisiontypetype) 
+4. See [:material-code-braces: PermissionsBoundaryDecisionDetailTypeDef](./type_defs.md#permissionsboundarydecisiondetailtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resyncmfadevicerequestmfadeviceresynctypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResyncMFADeviceRequestMfaDeviceResyncTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResyncMFADeviceRequestMfaDeviceResyncTypeDef
+
+def get_value() -> ResyncMFADeviceRequestMfaDeviceResyncTypeDef:
+    return {
+        "AuthenticationCode1": ...,
+        "AuthenticationCode2": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthenticationCode1`: `str`
-- `AuthenticationCode2`: `str`
-
-<a id="resyncmfadevicerequestrequesttypedef"></a>
+```python title="Definition"
+class ResyncMFADeviceRequestMfaDeviceResyncTypeDef(TypedDict):
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+```
 
 ## ResyncMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ResyncMFADeviceRequestRequestTypeDef
+
+def get_value() -> ResyncMFADeviceRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SerialNumber": ...,
+        "AuthenticationCode1": ...,
+        "AuthenticationCode2": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SerialNumber`: `str`
-- `AuthenticationCode1`: `str`
-- `AuthenticationCode2`: `str`
-
-<a id="roledetailtypedef"></a>
+```python title="Definition"
+class ResyncMFADeviceRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SerialNumber: str,
+    AuthenticationCode1: str,
+    AuthenticationCode2: str,
+```
 
 ## RoleDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RoleDetailTypeDef
+
+def get_value() -> RoleDetailTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RoleDetailTypeDef(TypedDict):
+    Path: NotRequired[str],
+    RoleName: NotRequired[str],
+    RoleId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    AssumeRolePolicyDocument: NotRequired[str],
+    InstanceProfileList: NotRequired[List[InstanceProfileTypeDef]],  # (1)
+    RolePolicyList: NotRequired[List[PolicyDetailTypeDef]],  # (2)
+    AttachedManagedPolicies: NotRequired[List[AttachedPolicyTypeDef]],  # (3)
+    PermissionsBoundary: NotRequired[AttachedPermissionsBoundaryTypeDef],  # (4)
+    Tags: NotRequired[List[TagTypeDef]],  # (5)
+    RoleLastUsed: NotRequired[RoleLastUsedTypeDef],  # (6)
+```
 
-- `Path`: `str`
-- `RoleName`: `str`
-- `RoleId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-- `AssumeRolePolicyDocument`: `str`
-- `InstanceProfileList`:
-  `List`\[[InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)\]
-- `RolePolicyList`:
-  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
-- `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-- `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RoleLastUsed`: [RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef)
-
-<a id="rolelastusedresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef) 
+2. See [:material-code-braces: PolicyDetailTypeDef](./type_defs.md#policydetailtypedef) 
+3. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
+4. See [:material-code-braces: AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef) 
 ## RoleLastUsedResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RoleLastUsedResponseMetadataTypeDef
+
+def get_value() -> RoleLastUsedResponseMetadataTypeDef:
+    return {
+        "LastUsedDate": ...,
+        "Region": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoleLastUsedResponseMetadataTypeDef(TypedDict):
+    LastUsedDate: datetime,
+    Region: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LastUsedDate`: `datetime`
-- `Region`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rolelastusedtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RoleLastUsedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RoleLastUsedTypeDef
+
+def get_value() -> RoleLastUsedTypeDef:
+    return {
+        "LastUsedDate": ...,
+    }
 ```
 
-Optional fields:
-
-- `LastUsedDate`: `datetime`
-- `Region`: `str`
-
-<a id="rolepolicyrequesttypedef"></a>
+```python title="Definition"
+class RoleLastUsedTypeDef(TypedDict):
+    LastUsedDate: NotRequired[datetime],
+    Region: NotRequired[str],
+```
 
 ## RolePolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RolePolicyRequestTypeDef
+
+def get_value() -> RolePolicyRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="roletypedef"></a>
+```python title="Definition"
+class RolePolicyRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## RoleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RoleTypeDef
+
+def get_value() -> RoleTypeDef:
+    return {
+        "Path": ...,
+        "RoleName": ...,
+        "RoleId": ...,
+        "Arn": ...,
+        "CreateDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoleTypeDef(TypedDict):
+    Path: str,
+    RoleName: str,
+    RoleId: str,
+    Arn: str,
+    CreateDate: datetime,
+    AssumeRolePolicyDocument: NotRequired[str],
+    Description: NotRequired[str],
+    MaxSessionDuration: NotRequired[int],
+    PermissionsBoundary: NotRequired[AttachedPermissionsBoundaryTypeDef],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    RoleLastUsed: NotRequired[RoleLastUsedTypeDef],  # (3)
+```
 
-- `Path`: `str`
-- `RoleName`: `str`
-- `RoleId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-
-Optional fields:
-
-- `AssumeRolePolicyDocument`: `str`
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-- `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `RoleLastUsed`: [RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef)
-
-<a id="roleusagetypetypedef"></a>
-
+1. See [:material-code-braces: AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: RoleLastUsedTypeDef](./type_defs.md#rolelastusedtypedef) 
 ## RoleUsageTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import RoleUsageTypeTypeDef
+
+def get_value() -> RoleUsageTypeTypeDef:
+    return {
+        "Region": ...,
+    }
 ```
 
-Optional fields:
-
-- `Region`: `str`
-- `Resources`: `List`\[`str`\]
-
-<a id="samlproviderlistentrytypedef"></a>
+```python title="Definition"
+class RoleUsageTypeTypeDef(TypedDict):
+    Region: NotRequired[str],
+    Resources: NotRequired[List[str]],
+```
 
 ## SAMLProviderListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SAMLProviderListEntryTypeDef
+
+def get_value() -> SAMLProviderListEntryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `ValidUntil`: `datetime`
-- `CreateDate`: `datetime`
-
-<a id="sshpublickeymetadatatypedef"></a>
+```python title="Definition"
+class SAMLProviderListEntryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    ValidUntil: NotRequired[datetime],
+    CreateDate: NotRequired[datetime],
+```
 
 ## SSHPublicKeyMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SSHPublicKeyMetadataTypeDef
+
+def get_value() -> SSHPublicKeyMetadataTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyId": ...,
+        "Status": ...,
+        "UploadDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SSHPublicKeyMetadataTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyId: str,
+    Status: statusTypeType,  # (1)
+    UploadDate: datetime,
+```
 
-- `UserName`: `str`
-- `SSHPublicKeyId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-- `UploadDate`: `datetime`
-
-<a id="sshpublickeytypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## SSHPublicKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SSHPublicKeyTypeDef
+
+def get_value() -> SSHPublicKeyTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyId": ...,
+        "Fingerprint": ...,
+        "SSHPublicKeyBody": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SSHPublicKeyTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyId: str,
+    Fingerprint: str,
+    SSHPublicKeyBody: str,
+    Status: statusTypeType,  # (1)
+    UploadDate: NotRequired[datetime],
+```
 
-- `UserName`: `str`
-- `SSHPublicKeyId`: `str`
-- `Fingerprint`: `str`
-- `SSHPublicKeyBody`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UploadDate`: `datetime`
-
-<a id="servercertificatemetadataresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## ServerCertificateMetadataResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServerCertificateMetadataResponseMetadataTypeDef
+
+def get_value() -> ServerCertificateMetadataResponseMetadataTypeDef:
+    return {
+        "Path": ...,
+        "ServerCertificateName": ...,
+        "ServerCertificateId": ...,
+        "Arn": ...,
+        "UploadDate": ...,
+        "Expiration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServerCertificateMetadataResponseMetadataTypeDef(TypedDict):
+    Path: str,
+    ServerCertificateName: str,
+    ServerCertificateId: str,
+    Arn: str,
+    UploadDate: datetime,
+    Expiration: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Path`: `str`
-- `ServerCertificateName`: `str`
-- `ServerCertificateId`: `str`
-- `Arn`: `str`
-- `UploadDate`: `datetime`
-- `Expiration`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servercertificatemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServerCertificateMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServerCertificateMetadataTypeDef
+
+def get_value() -> ServerCertificateMetadataTypeDef:
+    return {
+        "Path": ...,
+        "ServerCertificateName": ...,
+        "ServerCertificateId": ...,
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Path`: `str`
-- `ServerCertificateName`: `str`
-- `ServerCertificateId`: `str`
-- `Arn`: `str`
-
-Optional fields:
-
-- `UploadDate`: `datetime`
-- `Expiration`: `datetime`
-
-<a id="servercertificatetypedef"></a>
+```python title="Definition"
+class ServerCertificateMetadataTypeDef(TypedDict):
+    Path: str,
+    ServerCertificateName: str,
+    ServerCertificateId: str,
+    Arn: str,
+    UploadDate: NotRequired[datetime],
+    Expiration: NotRequired[datetime],
+```
 
 ## ServerCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServerCertificateTypeDef
+
+def get_value() -> ServerCertificateTypeDef:
+    return {
+        "ServerCertificateMetadata": ...,
+        "CertificateBody": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServerCertificateTypeDef(TypedDict):
+    ServerCertificateMetadata: ServerCertificateMetadataTypeDef,  # (1)
+    CertificateBody: str,
+    CertificateChain: NotRequired[str],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `ServerCertificateMetadata`:
-  [ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)
-- `CertificateBody`: `str`
-
-Optional fields:
-
-- `CertificateChain`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="servicelastaccessedtypedef"></a>
-
+1. See [:material-code-braces: ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ServiceLastAccessedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceLastAccessedTypeDef
+
+def get_value() -> ServiceLastAccessedTypeDef:
+    return {
+        "ServiceName": ...,
+        "ServiceNamespace": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceLastAccessedTypeDef(TypedDict):
+    ServiceName: str,
+    ServiceNamespace: str,
+    LastAuthenticated: NotRequired[datetime],
+    LastAuthenticatedEntity: NotRequired[str],
+    LastAuthenticatedRegion: NotRequired[str],
+    TotalAuthenticatedEntities: NotRequired[int],
+    TrackedActionsLastAccessed: NotRequired[List[TrackedActionLastAccessedTypeDef]],  # (1)
+```
 
-- `ServiceName`: `str`
-- `ServiceNamespace`: `str`
-
-Optional fields:
-
-- `LastAuthenticated`: `datetime`
-- `LastAuthenticatedEntity`: `str`
-- `LastAuthenticatedRegion`: `str`
-- `TotalAuthenticatedEntities`: `int`
-- `TrackedActionsLastAccessed`:
-  `List`\[[TrackedActionLastAccessedTypeDef](./type_defs.md#trackedactionlastaccessedtypedef)\]
-
-<a id="serviceresourceaccesskeypairrequesttypedef"></a>
-
+1. See [:material-code-braces: TrackedActionLastAccessedTypeDef](./type_defs.md#trackedactionlastaccessedtypedef) 
 ## ServiceResourceAccessKeyPairRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceAccessKeyPairRequestTypeDef
+
+def get_value() -> ServiceResourceAccessKeyPairRequestTypeDef:
+    return {
+        "user_name": ...,
+        "id": ...,
+        "secret": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-- `id`: `str`
-- `secret`: `str`
-
-<a id="serviceresourceaccesskeyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceAccessKeyPairRequestTypeDef(TypedDict):
+    user_name: str,
+    id: str,
+    secret: str,
+```
 
 ## ServiceResourceAccessKeyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceAccessKeyRequestTypeDef
+
+def get_value() -> ServiceResourceAccessKeyRequestTypeDef:
+    return {
+        "user_name": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-- `id`: `str`
-
-<a id="serviceresourceassumerolepolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceAccessKeyRequestTypeDef(TypedDict):
+    user_name: str,
+    id: str,
+```
 
 ## ServiceResourceAssumeRolePolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceAssumeRolePolicyRequestTypeDef
+
+def get_value() -> ServiceResourceAssumeRolePolicyRequestTypeDef:
+    return {
+        "role_name": ...,
+    }
 ```
 
-Required fields:
-
-- `role_name`: `str`
-
-<a id="serviceresourcegrouppolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceAssumeRolePolicyRequestTypeDef(TypedDict):
+    role_name: str,
+```
 
 ## ServiceResourceGroupPolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceGroupPolicyRequestTypeDef
+
+def get_value() -> ServiceResourceGroupPolicyRequestTypeDef:
+    return {
+        "group_name": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `group_name`: `str`
-- `name`: `str`
-
-<a id="serviceresourcegrouprequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceGroupPolicyRequestTypeDef(TypedDict):
+    group_name: str,
+    name: str,
+```
 
 ## ServiceResourceGroupRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceGroupRequestTypeDef
+
+def get_value() -> ServiceResourceGroupRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourceinstanceprofilerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceGroupRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceInstanceProfileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceInstanceProfileRequestTypeDef
+
+def get_value() -> ServiceResourceInstanceProfileRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourceloginprofilerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceInstanceProfileRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceLoginProfileRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceLoginProfileRequestTypeDef
+
+def get_value() -> ServiceResourceLoginProfileRequestTypeDef:
+    return {
+        "user_name": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-
-<a id="serviceresourcemfadevicerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceLoginProfileRequestTypeDef(TypedDict):
+    user_name: str,
+```
 
 ## ServiceResourceMfaDeviceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceMfaDeviceRequestTypeDef
+
+def get_value() -> ServiceResourceMfaDeviceRequestTypeDef:
+    return {
+        "user_name": ...,
+        "serial_number": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-- `serial_number`: `str`
-
-<a id="serviceresourcepolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceMfaDeviceRequestTypeDef(TypedDict):
+    user_name: str,
+    serial_number: str,
+```
 
 ## ServiceResourcePolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourcePolicyRequestTypeDef
+
+def get_value() -> ServiceResourcePolicyRequestTypeDef:
+    return {
+        "policy_arn": ...,
+    }
 ```
 
-Required fields:
-
-- `policy_arn`: `str`
-
-<a id="serviceresourcepolicyversionrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourcePolicyRequestTypeDef(TypedDict):
+    policy_arn: str,
+```
 
 ## ServiceResourcePolicyVersionRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourcePolicyVersionRequestTypeDef
+
+def get_value() -> ServiceResourcePolicyVersionRequestTypeDef:
+    return {
+        "arn": ...,
+        "version_id": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `version_id`: `str`
-
-<a id="serviceresourcerolepolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourcePolicyVersionRequestTypeDef(TypedDict):
+    arn: str,
+    version_id: str,
+```
 
 ## ServiceResourceRolePolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceRolePolicyRequestTypeDef
+
+def get_value() -> ServiceResourceRolePolicyRequestTypeDef:
+    return {
+        "role_name": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `role_name`: `str`
-- `name`: `str`
-
-<a id="serviceresourcerolerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceRolePolicyRequestTypeDef(TypedDict):
+    role_name: str,
+    name: str,
+```
 
 ## ServiceResourceRoleRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceRoleRequestTypeDef
+
+def get_value() -> ServiceResourceRoleRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourcesamlproviderrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceRoleRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceSamlProviderRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceSamlProviderRequestTypeDef
+
+def get_value() -> ServiceResourceSamlProviderRequestTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-
-<a id="serviceresourceservercertificaterequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceSamlProviderRequestTypeDef(TypedDict):
+    arn: str,
+```
 
 ## ServiceResourceServerCertificateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceServerCertificateRequestTypeDef
+
+def get_value() -> ServiceResourceServerCertificateRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourcesigningcertificaterequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceServerCertificateRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceSigningCertificateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceSigningCertificateRequestTypeDef
+
+def get_value() -> ServiceResourceSigningCertificateRequestTypeDef:
+    return {
+        "user_name": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-- `id`: `str`
-
-<a id="serviceresourceuserpolicyrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceSigningCertificateRequestTypeDef(TypedDict):
+    user_name: str,
+    id: str,
+```
 
 ## ServiceResourceUserPolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceUserPolicyRequestTypeDef
+
+def get_value() -> ServiceResourceUserPolicyRequestTypeDef:
+    return {
+        "user_name": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `user_name`: `str`
-- `name`: `str`
-
-<a id="serviceresourceuserrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceUserPolicyRequestTypeDef(TypedDict):
+    user_name: str,
+    name: str,
+```
 
 ## ServiceResourceUserRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceUserRequestTypeDef
+
+def get_value() -> ServiceResourceUserRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="serviceresourcevirtualmfadevicerequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceUserRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## ServiceResourceVirtualMfaDeviceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceResourceVirtualMfaDeviceRequestTypeDef
+
+def get_value() -> ServiceResourceVirtualMfaDeviceRequestTypeDef:
+    return {
+        "serial_number": ...,
+    }
 ```
 
-Required fields:
-
-- `serial_number`: `str`
-
-<a id="servicespecificcredentialmetadatatypedef"></a>
+```python title="Definition"
+class ServiceResourceVirtualMfaDeviceRequestTypeDef(TypedDict):
+    serial_number: str,
+```
 
 ## ServiceSpecificCredentialMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceSpecificCredentialMetadataTypeDef
+
+def get_value() -> ServiceSpecificCredentialMetadataTypeDef:
+    return {
+        "UserName": ...,
+        "Status": ...,
+        "ServiceUserName": ...,
+        "CreateDate": ...,
+        "ServiceSpecificCredentialId": ...,
+        "ServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceSpecificCredentialMetadataTypeDef(TypedDict):
+    UserName: str,
+    Status: statusTypeType,  # (1)
+    ServiceUserName: str,
+    CreateDate: datetime,
+    ServiceSpecificCredentialId: str,
+    ServiceName: str,
+```
 
-- `UserName`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-- `ServiceUserName`: `str`
-- `CreateDate`: `datetime`
-- `ServiceSpecificCredentialId`: `str`
-- `ServiceName`: `str`
-
-<a id="servicespecificcredentialtypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## ServiceSpecificCredentialTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import ServiceSpecificCredentialTypeDef
+
+def get_value() -> ServiceSpecificCredentialTypeDef:
+    return {
+        "CreateDate": ...,
+        "ServiceName": ...,
+        "ServiceUserName": ...,
+        "ServicePassword": ...,
+        "ServiceSpecificCredentialId": ...,
+        "UserName": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceSpecificCredentialTypeDef(TypedDict):
+    CreateDate: datetime,
+    ServiceName: str,
+    ServiceUserName: str,
+    ServicePassword: str,
+    ServiceSpecificCredentialId: str,
+    UserName: str,
+    Status: statusTypeType,  # (1)
+```
 
-- `CreateDate`: `datetime`
-- `ServiceName`: `str`
-- `ServiceUserName`: `str`
-- `ServicePassword`: `str`
-- `ServiceSpecificCredentialId`: `str`
-- `UserName`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="setdefaultpolicyversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## SetDefaultPolicyVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SetDefaultPolicyVersionRequestRequestTypeDef
+
+def get_value() -> SetDefaultPolicyVersionRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "VersionId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-- `VersionId`: `str`
-
-<a id="setsecuritytokenservicepreferencesrequestrequesttypedef"></a>
+```python title="Definition"
+class SetDefaultPolicyVersionRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    VersionId: str,
+```
 
 ## SetSecurityTokenServicePreferencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SetSecurityTokenServicePreferencesRequestRequestTypeDef
+
+def get_value() -> SetSecurityTokenServicePreferencesRequestRequestTypeDef:
+    return {
+        "GlobalEndpointTokenVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetSecurityTokenServicePreferencesRequestRequestTypeDef(TypedDict):
+    GlobalEndpointTokenVersion: globalEndpointTokenVersionType,  # (1)
+```
 
-- `GlobalEndpointTokenVersion`:
-  [globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype)
-
-<a id="signingcertificatetypedef"></a>
-
+1. See [:material-code-brackets: globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype) 
 ## SigningCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SigningCertificateTypeDef
+
+def get_value() -> SigningCertificateTypeDef:
+    return {
+        "UserName": ...,
+        "CertificateId": ...,
+        "CertificateBody": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SigningCertificateTypeDef(TypedDict):
+    UserName: str,
+    CertificateId: str,
+    CertificateBody: str,
+    Status: statusTypeType,  # (1)
+    UploadDate: NotRequired[datetime],
+```
 
-- `UserName`: `str`
-- `CertificateId`: `str`
-- `CertificateBody`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UploadDate`: `datetime`
-
-<a id="simulatecustompolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## SimulateCustomPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SimulateCustomPolicyRequestRequestTypeDef
+
+def get_value() -> SimulateCustomPolicyRequestRequestTypeDef:
+    return {
+        "PolicyInputList": ...,
+        "ActionNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimulateCustomPolicyRequestRequestTypeDef(TypedDict):
+    PolicyInputList: Sequence[str],
+    ActionNames: Sequence[str],
+    PermissionsBoundaryPolicyInputList: NotRequired[Sequence[str]],
+    ResourceArns: NotRequired[Sequence[str]],
+    ResourcePolicy: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    CallerArn: NotRequired[str],
+    ContextEntries: NotRequired[Sequence[ContextEntryTypeDef]],  # (1)
+    ResourceHandlingOption: NotRequired[str],
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `PolicyInputList`: `Sequence`\[`str`\]
-- `ActionNames`: `Sequence`\[`str`\]
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+## SimulateCustomPolicyRequestSimulateCustomPolicyPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import SimulateCustomPolicyRequestSimulateCustomPolicyPaginateTypeDef
 
-- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
-- `ResourceArns`: `Sequence`\[`str`\]
-- `ResourcePolicy`: `str`
-- `ResourceOwner`: `str`
-- `CallerArn`: `str`
-- `ContextEntries`:
-  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
-- `ResourceHandlingOption`: `str`
-- `MaxItems`: `int`
-- `Marker`: `str`
+def get_value() -> SimulateCustomPolicyRequestSimulateCustomPolicyPaginateTypeDef:
+    return {
+        "PolicyInputList": ...,
+        "ActionNames": ...,
+    }
+```
 
-<a id="simulatepolicyresponsetypedef"></a>
+```python title="Definition"
+class SimulateCustomPolicyRequestSimulateCustomPolicyPaginateTypeDef(TypedDict):
+    PolicyInputList: Sequence[str],
+    ActionNames: Sequence[str],
+    PermissionsBoundaryPolicyInputList: NotRequired[Sequence[str]],
+    ResourceArns: NotRequired[Sequence[str]],
+    ResourcePolicy: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    CallerArn: NotRequired[str],
+    ContextEntries: NotRequired[Sequence[ContextEntryTypeDef]],  # (1)
+    ResourceHandlingOption: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SimulatePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SimulatePolicyResponseTypeDef
+
+def get_value() -> SimulatePolicyResponseTypeDef:
+    return {
+        "EvaluationResults": ...,
+        "IsTruncated": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimulatePolicyResponseTypeDef(TypedDict):
+    EvaluationResults: List[EvaluationResultTypeDef],  # (1)
+    IsTruncated: bool,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `IsTruncated`: `bool`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="simulateprincipalpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SimulatePrincipalPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import SimulatePrincipalPolicyRequestRequestTypeDef
+
+def get_value() -> SimulatePrincipalPolicyRequestRequestTypeDef:
+    return {
+        "PolicySourceArn": ...,
+        "ActionNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimulatePrincipalPolicyRequestRequestTypeDef(TypedDict):
+    PolicySourceArn: str,
+    ActionNames: Sequence[str],
+    PolicyInputList: NotRequired[Sequence[str]],
+    PermissionsBoundaryPolicyInputList: NotRequired[Sequence[str]],
+    ResourceArns: NotRequired[Sequence[str]],
+    ResourcePolicy: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    CallerArn: NotRequired[str],
+    ContextEntries: NotRequired[Sequence[ContextEntryTypeDef]],  # (1)
+    ResourceHandlingOption: NotRequired[str],
+    MaxItems: NotRequired[int],
+    Marker: NotRequired[str],
+```
 
-- `PolicySourceArn`: `str`
-- `ActionNames`: `Sequence`\[`str`\]
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+## SimulatePrincipalPolicyRequestSimulatePrincipalPolicyPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_iam.type_defs import SimulatePrincipalPolicyRequestSimulatePrincipalPolicyPaginateTypeDef
 
-- `PolicyInputList`: `Sequence`\[`str`\]
-- `PermissionsBoundaryPolicyInputList`: `Sequence`\[`str`\]
-- `ResourceArns`: `Sequence`\[`str`\]
-- `ResourcePolicy`: `str`
-- `ResourceOwner`: `str`
-- `CallerArn`: `str`
-- `ContextEntries`:
-  `Sequence`\[[ContextEntryTypeDef](./type_defs.md#contextentrytypedef)\]
-- `ResourceHandlingOption`: `str`
-- `MaxItems`: `int`
-- `Marker`: `str`
+def get_value() -> SimulatePrincipalPolicyRequestSimulatePrincipalPolicyPaginateTypeDef:
+    return {
+        "PolicySourceArn": ...,
+        "ActionNames": ...,
+    }
+```
 
-<a id="statementtypedef"></a>
+```python title="Definition"
+class SimulatePrincipalPolicyRequestSimulatePrincipalPolicyPaginateTypeDef(TypedDict):
+    PolicySourceArn: str,
+    ActionNames: Sequence[str],
+    PolicyInputList: NotRequired[Sequence[str]],
+    PermissionsBoundaryPolicyInputList: NotRequired[Sequence[str]],
+    ResourceArns: NotRequired[Sequence[str]],
+    ResourcePolicy: NotRequired[str],
+    ResourceOwner: NotRequired[str],
+    CallerArn: NotRequired[str],
+    ContextEntries: NotRequired[Sequence[ContextEntryTypeDef]],  # (1)
+    ResourceHandlingOption: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: ContextEntryTypeDef](./type_defs.md#contextentrytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## StatementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import StatementTypeDef
+
+def get_value() -> StatementTypeDef:
+    return {
+        "SourcePolicyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatementTypeDef(TypedDict):
+    SourcePolicyId: NotRequired[str],
+    SourcePolicyType: NotRequired[PolicySourceTypeType],  # (1)
+    StartPosition: NotRequired[PositionTypeDef],  # (2)
+    EndPosition: NotRequired[PositionTypeDef],  # (2)
+```
 
-- `SourcePolicyId`: `str`
-- `SourcePolicyType`:
-  [PolicySourceTypeType](./literals.md#policysourcetypetype)
-- `StartPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
-- `EndPosition`: [PositionTypeDef](./type_defs.md#positiontypedef)
-
-<a id="taginstanceprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: PolicySourceTypeType](./literals.md#policysourcetypetype) 
+2. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
+3. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
 ## TagInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagInstanceProfileRequestRequestTypeDef
+
+def get_value() -> TagInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `InstanceProfileName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagmfadevicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagMFADeviceRequestRequestTypeDef
+
+def get_value() -> TagMFADeviceRequestRequestTypeDef:
+    return {
+        "SerialNumber": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagMFADeviceRequestRequestTypeDef(TypedDict):
+    SerialNumber: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `SerialNumber`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagopenidconnectproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> TagOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `OpenIDConnectProviderArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagPolicyRequestRequestTypeDef
+
+def get_value() -> TagPolicyRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagPolicyRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `PolicyArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagrolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagRoleRequestRequestTypeDef
+
+def get_value() -> TagRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `RoleName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagsamlproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagSAMLProviderRequestRequestTypeDef
+
+def get_value() -> TagSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLProviderArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `SAMLProviderArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagservercertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagServerCertificateRequestRequestTypeDef
+
+def get_value() -> TagServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ServerCertificateName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="taguserrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TagUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TagUserRequestRequestTypeDef
+
+def get_value() -> TagUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `UserName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="trackedactionlastaccessedtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TrackedActionLastAccessedTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import TrackedActionLastAccessedTypeDef
+
+def get_value() -> TrackedActionLastAccessedTypeDef:
+    return {
+        "ActionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ActionName`: `str`
-- `LastAccessedEntity`: `str`
-- `LastAccessedTime`: `datetime`
-- `LastAccessedRegion`: `str`
-
-<a id="untaginstanceprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class TrackedActionLastAccessedTypeDef(TypedDict):
+    ActionName: NotRequired[str],
+    LastAccessedEntity: NotRequired[str],
+    LastAccessedTime: NotRequired[datetime],
+    LastAccessedRegion: NotRequired[str],
+```
 
 ## UntagInstanceProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagInstanceProfileRequestRequestTypeDef
+
+def get_value() -> UntagInstanceProfileRequestRequestTypeDef:
+    return {
+        "InstanceProfileName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceProfileName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagmfadevicerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagInstanceProfileRequestRequestTypeDef(TypedDict):
+    InstanceProfileName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagMFADeviceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagMFADeviceRequestRequestTypeDef
+
+def get_value() -> UntagMFADeviceRequestRequestTypeDef:
+    return {
+        "SerialNumber": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `SerialNumber`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagopenidconnectproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagMFADeviceRequestRequestTypeDef(TypedDict):
+    SerialNumber: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagOpenIDConnectProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagOpenIDConnectProviderRequestRequestTypeDef
+
+def get_value() -> UntagOpenIDConnectProviderRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagOpenIDConnectProviderRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagPolicyRequestRequestTypeDef
+
+def get_value() -> UntagPolicyRequestRequestTypeDef:
+    return {
+        "PolicyArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagrolerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagPolicyRequestRequestTypeDef(TypedDict):
+    PolicyArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagRoleRequestRequestTypeDef
+
+def get_value() -> UntagRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagsamlproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagSAMLProviderRequestRequestTypeDef
+
+def get_value() -> UntagSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLProviderArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagservercertificaterequestrequesttypedef"></a>
+```python title="Definition"
+class UntagSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLProviderArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagServerCertificateRequestRequestTypeDef
+
+def get_value() -> UntagServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerCertificateName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untaguserrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UntagUserRequestRequestTypeDef
+
+def get_value() -> UntagUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateaccesskeyrequestaccesskeyactivatetypedef"></a>
+```python title="Definition"
+class UntagUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAccessKeyRequestAccessKeyActivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestAccessKeyActivateTypeDef
+
+def get_value() -> UpdateAccessKeyRequestAccessKeyActivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAccessKeyRequestAccessKeyActivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateaccesskeyrequestaccesskeydeactivatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateAccessKeyRequestAccessKeyDeactivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestAccessKeyDeactivateTypeDef
+
+def get_value() -> UpdateAccessKeyRequestAccessKeyDeactivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAccessKeyRequestAccessKeyDeactivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateaccesskeyrequestaccesskeypairactivatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateAccessKeyRequestAccessKeyPairActivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestAccessKeyPairActivateTypeDef
+
+def get_value() -> UpdateAccessKeyRequestAccessKeyPairActivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAccessKeyRequestAccessKeyPairActivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateaccesskeyrequestaccesskeypairdeactivatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateAccessKeyRequestAccessKeyPairDeactivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestAccessKeyPairDeactivateTypeDef
+
+def get_value() -> UpdateAccessKeyRequestAccessKeyPairDeactivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateAccessKeyRequestAccessKeyPairDeactivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateaccesskeyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateAccessKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccessKeyRequestRequestTypeDef
+
+def get_value() -> UpdateAccessKeyRequestRequestTypeDef:
+    return {
+        "AccessKeyId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAccessKeyRequestRequestTypeDef(TypedDict):
+    AccessKeyId: str,
+    Status: statusTypeType,  # (1)
+    UserName: NotRequired[str],
+```
 
-- `AccessKeyId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="updateaccountpasswordpolicyrequestaccountpasswordpolicyupdatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateAccountPasswordPolicyRequestAccountPasswordPolicyUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestAccountPasswordPolicyUpdateTypeDef
+
+def get_value() -> UpdateAccountPasswordPolicyRequestAccountPasswordPolicyUpdateTypeDef:
+    return {
+        "MinimumPasswordLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
-
-<a id="updateaccountpasswordpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateAccountPasswordPolicyRequestAccountPasswordPolicyUpdateTypeDef(TypedDict):
+    MinimumPasswordLength: NotRequired[int],
+    RequireSymbols: NotRequired[bool],
+    RequireNumbers: NotRequired[bool],
+    RequireUppercaseCharacters: NotRequired[bool],
+    RequireLowercaseCharacters: NotRequired[bool],
+    AllowUsersToChangePassword: NotRequired[bool],
+    MaxPasswordAge: NotRequired[int],
+    PasswordReusePrevention: NotRequired[int],
+    HardExpiry: NotRequired[bool],
+```
 
 ## UpdateAccountPasswordPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateAccountPasswordPolicyRequestRequestTypeDef:
+    return {
+        "MinimumPasswordLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
-
-<a id="updateaccountpasswordpolicyrequestserviceresourcecreateaccountpasswordpolicytypedef"></a>
+```python title="Definition"
+class UpdateAccountPasswordPolicyRequestRequestTypeDef(TypedDict):
+    MinimumPasswordLength: NotRequired[int],
+    RequireSymbols: NotRequired[bool],
+    RequireNumbers: NotRequired[bool],
+    RequireUppercaseCharacters: NotRequired[bool],
+    RequireLowercaseCharacters: NotRequired[bool],
+    AllowUsersToChangePassword: NotRequired[bool],
+    MaxPasswordAge: NotRequired[int],
+    PasswordReusePrevention: NotRequired[int],
+    HardExpiry: NotRequired[bool],
+```
 
 ## UpdateAccountPasswordPolicyRequestServiceResourceCreateAccountPasswordPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAccountPasswordPolicyRequestServiceResourceCreateAccountPasswordPolicyTypeDef
+
+def get_value() -> UpdateAccountPasswordPolicyRequestServiceResourceCreateAccountPasswordPolicyTypeDef:
+    return {
+        "MinimumPasswordLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `MinimumPasswordLength`: `int`
-- `RequireSymbols`: `bool`
-- `RequireNumbers`: `bool`
-- `RequireUppercaseCharacters`: `bool`
-- `RequireLowercaseCharacters`: `bool`
-- `AllowUsersToChangePassword`: `bool`
-- `MaxPasswordAge`: `int`
-- `PasswordReusePrevention`: `int`
-- `HardExpiry`: `bool`
-
-<a id="updateassumerolepolicyrequestassumerolepolicyupdatetypedef"></a>
+```python title="Definition"
+class UpdateAccountPasswordPolicyRequestServiceResourceCreateAccountPasswordPolicyTypeDef(TypedDict):
+    MinimumPasswordLength: NotRequired[int],
+    RequireSymbols: NotRequired[bool],
+    RequireNumbers: NotRequired[bool],
+    RequireUppercaseCharacters: NotRequired[bool],
+    RequireLowercaseCharacters: NotRequired[bool],
+    AllowUsersToChangePassword: NotRequired[bool],
+    MaxPasswordAge: NotRequired[int],
+    PasswordReusePrevention: NotRequired[int],
+    HardExpiry: NotRequired[bool],
+```
 
 ## UpdateAssumeRolePolicyRequestAssumeRolePolicyUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAssumeRolePolicyRequestAssumeRolePolicyUpdateTypeDef
+
+def get_value() -> UpdateAssumeRolePolicyRequestAssumeRolePolicyUpdateTypeDef:
+    return {
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyDocument`: `str`
-
-<a id="updateassumerolepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateAssumeRolePolicyRequestAssumeRolePolicyUpdateTypeDef(TypedDict):
+    PolicyDocument: str,
+```
 
 ## UpdateAssumeRolePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateAssumeRolePolicyRequestRequestTypeDef
+
+def get_value() -> UpdateAssumeRolePolicyRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "PolicyDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `PolicyDocument`: `str`
-
-<a id="updategrouprequestgroupupdatetypedef"></a>
+```python title="Definition"
+class UpdateAssumeRolePolicyRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    PolicyDocument: str,
+```
 
 ## UpdateGroupRequestGroupUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateGroupRequestGroupUpdateTypeDef
+
+def get_value() -> UpdateGroupRequestGroupUpdateTypeDef:
+    return {
+        "NewPath": ...,
+    }
 ```
 
-Optional fields:
-
-- `NewPath`: `str`
-- `NewGroupName`: `str`
-
-<a id="updategrouprequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateGroupRequestGroupUpdateTypeDef(TypedDict):
+    NewPath: NotRequired[str],
+    NewGroupName: NotRequired[str],
+```
 
 ## UpdateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateGroupRequestRequestTypeDef
+
+def get_value() -> UpdateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `GroupName`: `str`
-
-Optional fields:
-
-- `NewPath`: `str`
-- `NewGroupName`: `str`
-
-<a id="updateloginprofilerequestloginprofileupdatetypedef"></a>
+```python title="Definition"
+class UpdateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    NewPath: NotRequired[str],
+    NewGroupName: NotRequired[str],
+```
 
 ## UpdateLoginProfileRequestLoginProfileUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateLoginProfileRequestLoginProfileUpdateTypeDef
+
+def get_value() -> UpdateLoginProfileRequestLoginProfileUpdateTypeDef:
+    return {
+        "Password": ...,
+    }
 ```
 
-Optional fields:
-
-- `Password`: `str`
-- `PasswordResetRequired`: `bool`
-
-<a id="updateloginprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateLoginProfileRequestLoginProfileUpdateTypeDef(TypedDict):
+    Password: NotRequired[str],
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## UpdateLoginProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateLoginProfileRequestRequestTypeDef
+
+def get_value() -> UpdateLoginProfileRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `Password`: `str`
-- `PasswordResetRequired`: `bool`
-
-<a id="updateopenidconnectproviderthumbprintrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateLoginProfileRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    Password: NotRequired[str],
+    PasswordResetRequired: NotRequired[bool],
+```
 
 ## UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef
+
+def get_value() -> UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef:
+    return {
+        "OpenIDConnectProviderArn": ...,
+        "ThumbprintList": ...,
+    }
 ```
 
-Required fields:
-
-- `OpenIDConnectProviderArn`: `str`
-- `ThumbprintList`: `Sequence`\[`str`\]
-
-<a id="updateroledescriptionrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateOpenIDConnectProviderThumbprintRequestRequestTypeDef(TypedDict):
+    OpenIDConnectProviderArn: str,
+    ThumbprintList: Sequence[str],
+```
 
 ## UpdateRoleDescriptionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateRoleDescriptionRequestRequestTypeDef
+
+def get_value() -> UpdateRoleDescriptionRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+        "Description": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-- `Description`: `str`
-
-<a id="updateroledescriptionresponsetypedef"></a>
+```python title="Definition"
+class UpdateRoleDescriptionRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Description: str,
+```
 
 ## UpdateRoleDescriptionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateRoleDescriptionResponseTypeDef
+
+def get_value() -> UpdateRoleDescriptionResponseTypeDef:
+    return {
+        "Role": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoleDescriptionResponseTypeDef(TypedDict):
+    Role: RoleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Role`: [RoleTypeDef](./type_defs.md#roletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterolerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoleTypeDef](./type_defs.md#roletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRoleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateRoleRequestRequestTypeDef
+
+def get_value() -> UpdateRoleRequestRequestTypeDef:
+    return {
+        "RoleName": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `MaxSessionDuration`: `int`
-
-<a id="updatesamlproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRoleRequestRequestTypeDef(TypedDict):
+    RoleName: str,
+    Description: NotRequired[str],
+    MaxSessionDuration: NotRequired[int],
+```
 
 ## UpdateSAMLProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSAMLProviderRequestRequestTypeDef
+
+def get_value() -> UpdateSAMLProviderRequestRequestTypeDef:
+    return {
+        "SAMLMetadataDocument": ...,
+        "SAMLProviderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLMetadataDocument`: `str`
-- `SAMLProviderArn`: `str`
-
-<a id="updatesamlproviderrequestsamlproviderupdatetypedef"></a>
+```python title="Definition"
+class UpdateSAMLProviderRequestRequestTypeDef(TypedDict):
+    SAMLMetadataDocument: str,
+    SAMLProviderArn: str,
+```
 
 ## UpdateSAMLProviderRequestSamlProviderUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSAMLProviderRequestSamlProviderUpdateTypeDef
+
+def get_value() -> UpdateSAMLProviderRequestSamlProviderUpdateTypeDef:
+    return {
+        "SAMLMetadataDocument": ...,
+    }
 ```
 
-Required fields:
-
-- `SAMLMetadataDocument`: `str`
-
-<a id="updatesamlproviderresponsetypedef"></a>
+```python title="Definition"
+class UpdateSAMLProviderRequestSamlProviderUpdateTypeDef(TypedDict):
+    SAMLMetadataDocument: str,
+```
 
 ## UpdateSAMLProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSAMLProviderResponseTypeDef
+
+def get_value() -> UpdateSAMLProviderResponseTypeDef:
+    return {
+        "SAMLProviderArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSAMLProviderResponseTypeDef(TypedDict):
+    SAMLProviderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SAMLProviderArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesshpublickeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> UpdateSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyId: str,
+    Status: statusTypeType,  # (1)
+```
 
-- `UserName`: `str`
-- `SSHPublicKeyId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateservercertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateServerCertificateRequestRequestTypeDef
+
+def get_value() -> UpdateServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServerCertificateName`: `str`
-
-Optional fields:
-
-- `NewPath`: `str`
-- `NewServerCertificateName`: `str`
-
-<a id="updateservercertificaterequestservercertificateupdatetypedef"></a>
+```python title="Definition"
+class UpdateServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+    NewPath: NotRequired[str],
+    NewServerCertificateName: NotRequired[str],
+```
 
 ## UpdateServerCertificateRequestServerCertificateUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateServerCertificateRequestServerCertificateUpdateTypeDef
+
+def get_value() -> UpdateServerCertificateRequestServerCertificateUpdateTypeDef:
+    return {
+        "NewPath": ...,
+    }
 ```
 
-Optional fields:
-
-- `NewPath`: `str`
-- `NewServerCertificateName`: `str`
-
-<a id="updateservicespecificcredentialrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateServerCertificateRequestServerCertificateUpdateTypeDef(TypedDict):
+    NewPath: NotRequired[str],
+    NewServerCertificateName: NotRequired[str],
+```
 
 ## UpdateServiceSpecificCredentialRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateServiceSpecificCredentialRequestRequestTypeDef
+
+def get_value() -> UpdateServiceSpecificCredentialRequestRequestTypeDef:
+    return {
+        "ServiceSpecificCredentialId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceSpecificCredentialRequestRequestTypeDef(TypedDict):
+    ServiceSpecificCredentialId: str,
+    Status: statusTypeType,  # (1)
+    UserName: NotRequired[str],
+```
 
-- `ServiceSpecificCredentialId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="updatesigningcertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateSigningCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSigningCertificateRequestRequestTypeDef
+
+def get_value() -> UpdateSigningCertificateRequestRequestTypeDef:
+    return {
+        "CertificateId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSigningCertificateRequestRequestTypeDef(TypedDict):
+    CertificateId: str,
+    Status: statusTypeType,  # (1)
+    UserName: NotRequired[str],
+```
 
-- `CertificateId`: `str`
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="updatesigningcertificaterequestsigningcertificateactivatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateSigningCertificateRequestSigningCertificateActivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSigningCertificateRequestSigningCertificateActivateTypeDef
+
+def get_value() -> UpdateSigningCertificateRequestSigningCertificateActivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateSigningCertificateRequestSigningCertificateActivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updatesigningcertificaterequestsigningcertificatedeactivatetypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateSigningCertificateRequestSigningCertificateDeactivateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateSigningCertificateRequestSigningCertificateDeactivateTypeDef
+
+def get_value() -> UpdateSigningCertificateRequestSigningCertificateDeactivateTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateSigningCertificateRequestSigningCertificateDeactivateTypeDef(TypedDict):
+    Status: NotRequired[statusTypeType],  # (1)
+```
 
-- `Status`: [statusTypeType](./literals.md#statustypetype)
-
-<a id="updateuserrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: statusTypeType](./literals.md#statustypetype) 
 ## UpdateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateUserRequestRequestTypeDef
+
+def get_value() -> UpdateUserRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-
-Optional fields:
-
-- `NewPath`: `str`
-- `NewUserName`: `str`
-
-<a id="updateuserrequestuserupdatetypedef"></a>
+```python title="Definition"
+class UpdateUserRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    NewPath: NotRequired[str],
+    NewUserName: NotRequired[str],
+```
 
 ## UpdateUserRequestUserUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UpdateUserRequestUserUpdateTypeDef
+
+def get_value() -> UpdateUserRequestUserUpdateTypeDef:
+    return {
+        "NewPath": ...,
+    }
 ```
 
-Optional fields:
-
-- `NewPath`: `str`
-- `NewUserName`: `str`
-
-<a id="uploadsshpublickeyrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateUserRequestUserUpdateTypeDef(TypedDict):
+    NewPath: NotRequired[str],
+    NewUserName: NotRequired[str],
+```
 
 ## UploadSSHPublicKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadSSHPublicKeyRequestRequestTypeDef
+
+def get_value() -> UploadSSHPublicKeyRequestRequestTypeDef:
+    return {
+        "UserName": ...,
+        "SSHPublicKeyBody": ...,
+    }
 ```
 
-Required fields:
-
-- `UserName`: `str`
-- `SSHPublicKeyBody`: `str`
-
-<a id="uploadsshpublickeyresponsetypedef"></a>
+```python title="Definition"
+class UploadSSHPublicKeyRequestRequestTypeDef(TypedDict):
+    UserName: str,
+    SSHPublicKeyBody: str,
+```
 
 ## UploadSSHPublicKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadSSHPublicKeyResponseTypeDef
+
+def get_value() -> UploadSSHPublicKeyResponseTypeDef:
+    return {
+        "SSHPublicKey": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadSSHPublicKeyResponseTypeDef(TypedDict):
+    SSHPublicKey: SSHPublicKeyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SSHPublicKey`: [SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadservercertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SSHPublicKeyTypeDef](./type_defs.md#sshpublickeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadServerCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadServerCertificateRequestRequestTypeDef
+
+def get_value() -> UploadServerCertificateRequestRequestTypeDef:
+    return {
+        "ServerCertificateName": ...,
+        "CertificateBody": ...,
+        "PrivateKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadServerCertificateRequestRequestTypeDef(TypedDict):
+    ServerCertificateName: str,
+    CertificateBody: str,
+    PrivateKey: str,
+    Path: NotRequired[str],
+    CertificateChain: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ServerCertificateName`: `str`
-- `CertificateBody`: `str`
-- `PrivateKey`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `CertificateChain`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="uploadservercertificaterequestserviceresourcecreateservercertificatetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UploadServerCertificateRequestServiceResourceCreateServerCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadServerCertificateRequestServiceResourceCreateServerCertificateTypeDef
+
+def get_value() -> UploadServerCertificateRequestServiceResourceCreateServerCertificateTypeDef:
+    return {
+        "ServerCertificateName": ...,
+        "CertificateBody": ...,
+        "PrivateKey": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadServerCertificateRequestServiceResourceCreateServerCertificateTypeDef(TypedDict):
+    ServerCertificateName: str,
+    CertificateBody: str,
+    PrivateKey: str,
+    Path: NotRequired[str],
+    CertificateChain: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `ServerCertificateName`: `str`
-- `CertificateBody`: `str`
-- `PrivateKey`: `str`
-
-Optional fields:
-
-- `Path`: `str`
-- `CertificateChain`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="uploadservercertificateresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UploadServerCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadServerCertificateResponseTypeDef
+
+def get_value() -> UploadServerCertificateResponseTypeDef:
+    return {
+        "ServerCertificateMetadata": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadServerCertificateResponseTypeDef(TypedDict):
+    ServerCertificateMetadata: ServerCertificateMetadataTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ServerCertificateMetadata`:
-  [ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadsigningcertificaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServerCertificateMetadataTypeDef](./type_defs.md#servercertificatemetadatatypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadSigningCertificateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadSigningCertificateRequestRequestTypeDef
+
+def get_value() -> UploadSigningCertificateRequestRequestTypeDef:
+    return {
+        "CertificateBody": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateBody`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="uploadsigningcertificaterequestserviceresourcecreatesigningcertificatetypedef"></a>
+```python title="Definition"
+class UploadSigningCertificateRequestRequestTypeDef(TypedDict):
+    CertificateBody: str,
+    UserName: NotRequired[str],
+```
 
 ## UploadSigningCertificateRequestServiceResourceCreateSigningCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadSigningCertificateRequestServiceResourceCreateSigningCertificateTypeDef
+
+def get_value() -> UploadSigningCertificateRequestServiceResourceCreateSigningCertificateTypeDef:
+    return {
+        "CertificateBody": ...,
+    }
 ```
 
-Required fields:
-
-- `CertificateBody`: `str`
-
-Optional fields:
-
-- `UserName`: `str`
-
-<a id="uploadsigningcertificateresponsetypedef"></a>
+```python title="Definition"
+class UploadSigningCertificateRequestServiceResourceCreateSigningCertificateTypeDef(TypedDict):
+    CertificateBody: str,
+    UserName: NotRequired[str],
+```
 
 ## UploadSigningCertificateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UploadSigningCertificateResponseTypeDef
+
+def get_value() -> UploadSigningCertificateResponseTypeDef:
+    return {
+        "Certificate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadSigningCertificateResponseTypeDef(TypedDict):
+    Certificate: SigningCertificateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Certificate`:
-  [SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="useraccesskeyrequesttypedef"></a>
-
+1. See [:material-code-braces: SigningCertificateTypeDef](./type_defs.md#signingcertificatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UserAccessKeyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserAccessKeyRequestTypeDef
+
+def get_value() -> UserAccessKeyRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="userdetailtypedef"></a>
+```python title="Definition"
+class UserAccessKeyRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## UserDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserDetailTypeDef
+
+def get_value() -> UserDetailTypeDef:
+    return {
+        "Path": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserDetailTypeDef(TypedDict):
+    Path: NotRequired[str],
+    UserName: NotRequired[str],
+    UserId: NotRequired[str],
+    Arn: NotRequired[str],
+    CreateDate: NotRequired[datetime],
+    UserPolicyList: NotRequired[List[PolicyDetailTypeDef]],  # (1)
+    GroupList: NotRequired[List[str]],
+    AttachedManagedPolicies: NotRequired[List[AttachedPolicyTypeDef]],  # (2)
+    PermissionsBoundary: NotRequired[AttachedPermissionsBoundaryTypeDef],  # (3)
+    Tags: NotRequired[List[TagTypeDef]],  # (4)
+```
 
-- `Path`: `str`
-- `UserName`: `str`
-- `UserId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-- `UserPolicyList`:
-  `List`\[[PolicyDetailTypeDef](./type_defs.md#policydetailtypedef)\]
-- `GroupList`: `List`\[`str`\]
-- `AttachedManagedPolicies`:
-  `List`\[[AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef)\]
-- `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="usermfadevicerequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyDetailTypeDef](./type_defs.md#policydetailtypedef) 
+2. See [:material-code-braces: AttachedPolicyTypeDef](./type_defs.md#attachedpolicytypedef) 
+3. See [:material-code-braces: AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UserMfaDeviceRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserMfaDeviceRequestTypeDef
+
+def get_value() -> UserMfaDeviceRequestTypeDef:
+    return {
+        "serial_number": ...,
+    }
 ```
 
-Required fields:
-
-- `serial_number`: `str`
-
-<a id="userpolicyrequesttypedef"></a>
+```python title="Definition"
+class UserMfaDeviceRequestTypeDef(TypedDict):
+    serial_number: str,
+```
 
 ## UserPolicyRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserPolicyRequestTypeDef
+
+def get_value() -> UserPolicyRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="userresponsemetadatatypedef"></a>
+```python title="Definition"
+class UserPolicyRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## UserResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserResponseMetadataTypeDef
+
+def get_value() -> UserResponseMetadataTypeDef:
+    return {
+        "Path": ...,
+        "UserName": ...,
+        "UserId": ...,
+        "Arn": ...,
+        "CreateDate": ...,
+        "PasswordLastUsed": ...,
+        "PermissionsBoundary": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserResponseMetadataTypeDef(TypedDict):
+    Path: str,
+    UserName: str,
+    UserId: str,
+    Arn: str,
+    CreateDate: datetime,
+    PasswordLastUsed: datetime,
+    PermissionsBoundary: AttachedPermissionsBoundaryTypeDef,  # (1)
+    Tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Path`: `str`
-- `UserName`: `str`
-- `UserId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-- `PasswordLastUsed`: `datetime`
-- `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="usersigningcertificaterequesttypedef"></a>
-
+1. See [:material-code-braces: AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UserSigningCertificateRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserSigningCertificateRequestTypeDef
+
+def get_value() -> UserSigningCertificateRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="usertypedef"></a>
+```python title="Definition"
+class UserSigningCertificateRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Path": ...,
+        "UserName": ...,
+        "UserId": ...,
+        "Arn": ...,
+        "CreateDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Path: str,
+    UserName: str,
+    UserId: str,
+    Arn: str,
+    CreateDate: datetime,
+    PasswordLastUsed: NotRequired[datetime],
+    PermissionsBoundary: NotRequired[AttachedPermissionsBoundaryTypeDef],  # (1)
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `Path`: `str`
-- `UserName`: `str`
-- `UserId`: `str`
-- `Arn`: `str`
-- `CreateDate`: `datetime`
-
-Optional fields:
-
-- `PasswordLastUsed`: `datetime`
-- `PermissionsBoundary`:
-  [AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="virtualmfadevicetypedef"></a>
-
+1. See [:material-code-braces: AttachedPermissionsBoundaryTypeDef](./type_defs.md#attachedpermissionsboundarytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## VirtualMFADeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import VirtualMFADeviceTypeDef
+
+def get_value() -> VirtualMFADeviceTypeDef:
+    return {
+        "SerialNumber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualMFADeviceTypeDef(TypedDict):
+    SerialNumber: str,
+    Base32StringSeed: NotRequired[bytes],
+    QRCodePNG: NotRequired[bytes],
+    User: NotRequired[UserTypeDef],  # (1)
+    EnableDate: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+```
 
-- `SerialNumber`: `str`
-
-Optional fields:
-
-- `Base32StringSeed`: `bytes`
-- `QRCodePNG`: `bytes`
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `EnableDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_iam.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

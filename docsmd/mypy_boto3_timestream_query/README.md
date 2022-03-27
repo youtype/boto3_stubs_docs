@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-timestreamquery-module"></a>
-
-# Type annotations for boto3 TimestreamQuery module
+#  TimestreamQuery module
 
 > [Index](../README.md) > TimestreamQuery
 
-Auto-generated documentation for
-[TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
-type annotations stubs module
-[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
+!!! note ""
 
-- [Type annotations for boto3 TimestreamQuery module](#type-annotations-for-boto3-timestreamquery-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [TimestreamQueryClient](#timestreamqueryclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
+    type annotations stubs module [mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `TimestreamQuery`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[timestream-query]'
 python -m pip install mypy-boto3-timestream-query
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,91 +42,60 @@ python -m pip install mypy-boto3-timestream-query
 python -m pip uninstall -y mypy-boto3-timestream-query
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="timestreamqueryclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## TimestreamQueryClient
 
-Type annotations for `boto3.client("timestream-query")` as
-[TimestreamQueryClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("timestream-query")` as [TimestreamQueryClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
+
+def get_client() -> TimestreamQueryClient:
+    return Session().cleint("timestream-query")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_query](./client.md#cancel_query)
-- [create_scheduled_query](./client.md#create_scheduled_query)
-- [delete_scheduled_query](./client.md#delete_scheduled_query)
-- [describe_endpoints](./client.md#describe_endpoints)
-- [describe_scheduled_query](./client.md#describe_scheduled_query)
-- [exceptions](./client.md#exceptions)
-- [execute_scheduled_query](./client.md#execute_scheduled_query)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_scheduled_queries](./client.md#list_scheduled_queries)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [prepare_query](./client.md#prepare_query)
-- [query](./client.md#query)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_scheduled_query](./client.md#update_scheduled_query)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-TimestreamQueryClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- InvalidEndpointException
-- QueryExecutionException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("timestream-query").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("timestream-query").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_timestream_query.paginator import ListScheduledQueriesPaginator, ...
+from mypy_boto3_timestream_query.paginator import ListScheduledQueriesPaginator
+
+def get_list_scheduled_queries_paginator() -> ListScheduledQueriesPaginator:
+    return Session().client("timestream-query").get_paginator("list_scheduled_queries"))
 ```
 
 - [ListScheduledQueriesPaginator](./paginators.md#listscheduledqueriespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [QueryPaginator](./paginators.md#querypaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_timestream_query.literals import DimensionValueTypeType
 
-```python
-from mypy_boto3_timestream_query.literals import DimensionValueTypeType, ...
+def get_value() -> DimensionValueTypeType:
+    return "VARCHAR"
 ```
 
 - [DimensionValueTypeType](./literals.md#dimensionvaluetypetype)
@@ -166,17 +113,20 @@ from mypy_boto3_timestream_query.literals import DimensionValueTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeDef
 
-```python
-from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeDef, ...
+def get_value() -> CancelQueryRequestRequestTypeDef:
+    return {
+        "QueryId": ...,
+    }
 ```
 
 - [CancelQueryRequestRequestTypeDef](./type_defs.md#cancelqueryrequestrequesttypedef)
@@ -195,8 +145,10 @@ from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeD
 - [ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef)
 - [ExecuteScheduledQueryRequestRequestTypeDef](./type_defs.md#executescheduledqueryrequestrequesttypedef)
 - [ExecutionStatsTypeDef](./type_defs.md#executionstatstypedef)
+- [ListScheduledQueriesRequestListScheduledQueriesPaginateTypeDef](./type_defs.md#listscheduledqueriesrequestlistscheduledqueriespaginatetypedef)
 - [ListScheduledQueriesRequestRequestTypeDef](./type_defs.md#listscheduledqueriesrequestrequesttypedef)
 - [ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef)
@@ -207,6 +159,7 @@ from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeD
 - [ParameterMappingTypeDef](./type_defs.md#parametermappingtypedef)
 - [PrepareQueryRequestRequestTypeDef](./type_defs.md#preparequeryrequestrequesttypedef)
 - [PrepareQueryResponseTypeDef](./type_defs.md#preparequeryresponsetypedef)
+- [QueryRequestQueryPaginateTypeDef](./type_defs.md#queryrequestquerypaginatetypedef)
 - [QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef)
 - [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef)
 - [QueryStatusTypeDef](./type_defs.md#querystatustypedef)
@@ -230,3 +183,4 @@ from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeD
 - [TypeTypeDef](./type_defs.md#typetypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateScheduledQueryRequestRequestTypeDef](./type_defs.md#updatescheduledqueryrequestrequesttypedef)
+

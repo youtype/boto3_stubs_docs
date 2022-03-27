@@ -1,1705 +1,2157 @@
-<a id="typed-dictionaries-for-boto3-glacier-module"></a>
-
-# Typed dictionaries for boto3 Glacier module
+# Typed dictionaries
 
 > [Index](../README.md) > [Glacier](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Glacier module](#typed-dictionaries-for-boto3-glacier-module)
-  - [AbortMultipartUploadInputRequestTypeDef](#abortmultipartuploadinputrequesttypedef)
-  - [AbortVaultLockInputRequestTypeDef](#abortvaultlockinputrequesttypedef)
-  - [AccountVaultRequestTypeDef](#accountvaultrequesttypedef)
-  - [AddTagsToVaultInputRequestTypeDef](#addtagstovaultinputrequesttypedef)
-  - [ArchiveCreationOutputTypeDef](#archivecreationoutputtypedef)
-  - [CSVInputTypeDef](#csvinputtypedef)
-  - [CSVOutputTypeDef](#csvoutputtypedef)
-  - [CompleteMultipartUploadInputMultipartUploadCompleteTypeDef](#completemultipartuploadinputmultipartuploadcompletetypedef)
-  - [CompleteMultipartUploadInputRequestTypeDef](#completemultipartuploadinputrequesttypedef)
-  - [CompleteVaultLockInputRequestTypeDef](#completevaultlockinputrequesttypedef)
-  - [CreateVaultInputAccountCreateVaultTypeDef](#createvaultinputaccountcreatevaulttypedef)
-  - [CreateVaultInputRequestTypeDef](#createvaultinputrequesttypedef)
-  - [CreateVaultInputServiceResourceCreateVaultTypeDef](#createvaultinputserviceresourcecreatevaulttypedef)
-  - [CreateVaultOutputTypeDef](#createvaultoutputtypedef)
-  - [DataRetrievalPolicyTypeDef](#dataretrievalpolicytypedef)
-  - [DataRetrievalRuleTypeDef](#dataretrievalruletypedef)
-  - [DeleteArchiveInputRequestTypeDef](#deletearchiveinputrequesttypedef)
-  - [DeleteVaultAccessPolicyInputRequestTypeDef](#deletevaultaccesspolicyinputrequesttypedef)
-  - [DeleteVaultInputRequestTypeDef](#deletevaultinputrequesttypedef)
-  - [DeleteVaultNotificationsInputRequestTypeDef](#deletevaultnotificationsinputrequesttypedef)
-  - [DescribeJobInputRequestTypeDef](#describejobinputrequesttypedef)
-  - [DescribeVaultInputRequestTypeDef](#describevaultinputrequesttypedef)
-  - [DescribeVaultOutputResponseMetadataTypeDef](#describevaultoutputresponsemetadatatypedef)
-  - [DescribeVaultOutputTypeDef](#describevaultoutputtypedef)
-  - [EncryptionTypeDef](#encryptiontypedef)
-  - [GetDataRetrievalPolicyInputRequestTypeDef](#getdataretrievalpolicyinputrequesttypedef)
-  - [GetDataRetrievalPolicyOutputTypeDef](#getdataretrievalpolicyoutputtypedef)
-  - [GetJobOutputInputJobGetOutputTypeDef](#getjoboutputinputjobgetoutputtypedef)
-  - [GetJobOutputInputRequestTypeDef](#getjoboutputinputrequesttypedef)
-  - [GetJobOutputOutputTypeDef](#getjoboutputoutputtypedef)
-  - [GetVaultAccessPolicyInputRequestTypeDef](#getvaultaccesspolicyinputrequesttypedef)
-  - [GetVaultAccessPolicyOutputTypeDef](#getvaultaccesspolicyoutputtypedef)
-  - [GetVaultLockInputRequestTypeDef](#getvaultlockinputrequesttypedef)
-  - [GetVaultLockOutputTypeDef](#getvaultlockoutputtypedef)
-  - [GetVaultNotificationsInputRequestTypeDef](#getvaultnotificationsinputrequesttypedef)
-  - [GetVaultNotificationsOutputTypeDef](#getvaultnotificationsoutputtypedef)
-  - [GlacierJobDescriptionResponseMetadataTypeDef](#glacierjobdescriptionresponsemetadatatypedef)
-  - [GlacierJobDescriptionTypeDef](#glacierjobdescriptiontypedef)
-  - [GrantTypeDef](#granttypedef)
-  - [GranteeTypeDef](#granteetypedef)
-  - [InitiateJobInputRequestTypeDef](#initiatejobinputrequesttypedef)
-  - [InitiateJobOutputTypeDef](#initiatejoboutputtypedef)
-  - [InitiateMultipartUploadInputRequestTypeDef](#initiatemultipartuploadinputrequesttypedef)
-  - [InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef](#initiatemultipartuploadinputvaultinitiatemultipartuploadtypedef)
-  - [InitiateMultipartUploadOutputTypeDef](#initiatemultipartuploadoutputtypedef)
-  - [InitiateVaultLockInputRequestTypeDef](#initiatevaultlockinputrequesttypedef)
-  - [InitiateVaultLockOutputTypeDef](#initiatevaultlockoutputtypedef)
-  - [InputSerializationTypeDef](#inputserializationtypedef)
-  - [InventoryRetrievalJobDescriptionResponseMetadataTypeDef](#inventoryretrievaljobdescriptionresponsemetadatatypedef)
-  - [InventoryRetrievalJobDescriptionTypeDef](#inventoryretrievaljobdescriptiontypedef)
-  - [InventoryRetrievalJobInputTypeDef](#inventoryretrievaljobinputtypedef)
-  - [JobParametersTypeDef](#jobparameterstypedef)
-  - [ListJobsInputRequestTypeDef](#listjobsinputrequesttypedef)
-  - [ListJobsOutputTypeDef](#listjobsoutputtypedef)
-  - [ListMultipartUploadsInputRequestTypeDef](#listmultipartuploadsinputrequesttypedef)
-  - [ListMultipartUploadsOutputTypeDef](#listmultipartuploadsoutputtypedef)
-  - [ListPartsInputMultipartUploadPartsTypeDef](#listpartsinputmultipartuploadpartstypedef)
-  - [ListPartsInputRequestTypeDef](#listpartsinputrequesttypedef)
-  - [ListPartsOutputTypeDef](#listpartsoutputtypedef)
-  - [ListProvisionedCapacityInputRequestTypeDef](#listprovisionedcapacityinputrequesttypedef)
-  - [ListProvisionedCapacityOutputTypeDef](#listprovisionedcapacityoutputtypedef)
-  - [ListTagsForVaultInputRequestTypeDef](#listtagsforvaultinputrequesttypedef)
-  - [ListTagsForVaultOutputTypeDef](#listtagsforvaultoutputtypedef)
-  - [ListVaultsInputRequestTypeDef](#listvaultsinputrequesttypedef)
-  - [ListVaultsOutputTypeDef](#listvaultsoutputtypedef)
-  - [OutputLocationResponseMetadataTypeDef](#outputlocationresponsemetadatatypedef)
-  - [OutputLocationTypeDef](#outputlocationtypedef)
-  - [OutputSerializationTypeDef](#outputserializationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PartListElementTypeDef](#partlistelementtypedef)
-  - [ProvisionedCapacityDescriptionTypeDef](#provisionedcapacitydescriptiontypedef)
-  - [PurchaseProvisionedCapacityInputRequestTypeDef](#purchaseprovisionedcapacityinputrequesttypedef)
-  - [PurchaseProvisionedCapacityOutputTypeDef](#purchaseprovisionedcapacityoutputtypedef)
-  - [RemoveTagsFromVaultInputRequestTypeDef](#removetagsfromvaultinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SelectParametersResponseMetadataTypeDef](#selectparametersresponsemetadatatypedef)
-  - [SelectParametersTypeDef](#selectparameterstypedef)
-  - [ServiceResourceAccountRequestTypeDef](#serviceresourceaccountrequesttypedef)
-  - [ServiceResourceArchiveRequestTypeDef](#serviceresourcearchiverequesttypedef)
-  - [ServiceResourceJobRequestTypeDef](#serviceresourcejobrequesttypedef)
-  - [ServiceResourceMultipartUploadRequestTypeDef](#serviceresourcemultipartuploadrequesttypedef)
-  - [ServiceResourceNotificationRequestTypeDef](#serviceresourcenotificationrequesttypedef)
-  - [ServiceResourceVaultRequestTypeDef](#serviceresourcevaultrequesttypedef)
-  - [SetDataRetrievalPolicyInputRequestTypeDef](#setdataretrievalpolicyinputrequesttypedef)
-  - [SetVaultAccessPolicyInputRequestTypeDef](#setvaultaccesspolicyinputrequesttypedef)
-  - [SetVaultNotificationsInputNotificationSetTypeDef](#setvaultnotificationsinputnotificationsettypedef)
-  - [SetVaultNotificationsInputRequestTypeDef](#setvaultnotificationsinputrequesttypedef)
-  - [UploadArchiveInputRequestTypeDef](#uploadarchiveinputrequesttypedef)
-  - [UploadArchiveInputVaultUploadArchiveTypeDef](#uploadarchiveinputvaultuploadarchivetypedef)
-  - [UploadListElementTypeDef](#uploadlistelementtypedef)
-  - [UploadMultipartPartInputMultipartUploadUploadPartTypeDef](#uploadmultipartpartinputmultipartuploaduploadparttypedef)
-  - [UploadMultipartPartInputRequestTypeDef](#uploadmultipartpartinputrequesttypedef)
-  - [UploadMultipartPartOutputTypeDef](#uploadmultipartpartoutputtypedef)
-  - [VaultAccessPolicyTypeDef](#vaultaccesspolicytypedef)
-  - [VaultArchiveRequestTypeDef](#vaultarchiverequesttypedef)
-  - [VaultJobRequestTypeDef](#vaultjobrequesttypedef)
-  - [VaultLockPolicyTypeDef](#vaultlockpolicytypedef)
-  - [VaultMultipartUploadRequestTypeDef](#vaultmultipartuploadrequesttypedef)
-  - [VaultNotificationConfigTypeDef](#vaultnotificationconfigtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="abortmultipartuploadinputrequesttypedef"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## AbortMultipartUploadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
+
+def get_value() -> AbortMultipartUploadInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "uploadId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `uploadId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="abortvaultlockinputrequesttypedef"></a>
+```python title="Definition"
+class AbortMultipartUploadInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    uploadId: str,
+    accountId: NotRequired[str],
+```
 
 ## AbortVaultLockInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import AbortVaultLockInputRequestTypeDef
+
+def get_value() -> AbortVaultLockInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="accountvaultrequesttypedef"></a>
+```python title="Definition"
+class AbortVaultLockInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## AccountVaultRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import AccountVaultRequestTypeDef
+
+def get_value() -> AccountVaultRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="addtagstovaultinputrequesttypedef"></a>
+```python title="Definition"
+class AccountVaultRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## AddTagsToVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import AddTagsToVaultInputRequestTypeDef
+
+def get_value() -> AddTagsToVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="archivecreationoutputtypedef"></a>
+```python title="Definition"
+class AddTagsToVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## ArchiveCreationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ArchiveCreationOutputTypeDef
+
+def get_value() -> ArchiveCreationOutputTypeDef:
+    return {
+        "location": ...,
+        "checksum": ...,
+        "archiveId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ArchiveCreationOutputTypeDef(TypedDict):
+    location: str,
+    checksum: str,
+    archiveId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `location`: `str`
-- `checksum`: `str`
-- `archiveId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="csvinputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CSVInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CSVInputTypeDef
+
+def get_value() -> CSVInputTypeDef:
+    return {
+        "FileHeaderInfo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CSVInputTypeDef(TypedDict):
+    FileHeaderInfo: NotRequired[FileHeaderInfoType],  # (1)
+    Comments: NotRequired[str],
+    QuoteEscapeCharacter: NotRequired[str],
+    RecordDelimiter: NotRequired[str],
+    FieldDelimiter: NotRequired[str],
+    QuoteCharacter: NotRequired[str],
+```
 
-- `FileHeaderInfo`: [FileHeaderInfoType](./literals.md#fileheaderinfotype)
-- `Comments`: `str`
-- `QuoteEscapeCharacter`: `str`
-- `RecordDelimiter`: `str`
-- `FieldDelimiter`: `str`
-- `QuoteCharacter`: `str`
-
-<a id="csvoutputtypedef"></a>
-
+1. See [:material-code-brackets: FileHeaderInfoType](./literals.md#fileheaderinfotype) 
 ## CSVOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CSVOutputTypeDef
+
+def get_value() -> CSVOutputTypeDef:
+    return {
+        "QuoteFields": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CSVOutputTypeDef(TypedDict):
+    QuoteFields: NotRequired[QuoteFieldsType],  # (1)
+    QuoteEscapeCharacter: NotRequired[str],
+    RecordDelimiter: NotRequired[str],
+    FieldDelimiter: NotRequired[str],
+    QuoteCharacter: NotRequired[str],
+```
 
-- `QuoteFields`: [QuoteFieldsType](./literals.md#quotefieldstype)
-- `QuoteEscapeCharacter`: `str`
-- `RecordDelimiter`: `str`
-- `FieldDelimiter`: `str`
-- `QuoteCharacter`: `str`
-
-<a id="completemultipartuploadinputmultipartuploadcompletetypedef"></a>
-
+1. See [:material-code-brackets: QuoteFieldsType](./literals.md#quotefieldstype) 
 ## CompleteMultipartUploadInputMultipartUploadCompleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CompleteMultipartUploadInputMultipartUploadCompleteTypeDef
+
+def get_value() -> CompleteMultipartUploadInputMultipartUploadCompleteTypeDef:
+    return {
+        "archiveSize": ...,
+    }
 ```
 
-Optional fields:
-
-- `archiveSize`: `str`
-- `checksum`: `str`
-
-<a id="completemultipartuploadinputrequesttypedef"></a>
+```python title="Definition"
+class CompleteMultipartUploadInputMultipartUploadCompleteTypeDef(TypedDict):
+    archiveSize: NotRequired[str],
+    checksum: NotRequired[str],
+```
 
 ## CompleteMultipartUploadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CompleteMultipartUploadInputRequestTypeDef
+
+def get_value() -> CompleteMultipartUploadInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "uploadId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `uploadId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `archiveSize`: `str`
-- `checksum`: `str`
-
-<a id="completevaultlockinputrequesttypedef"></a>
+```python title="Definition"
+class CompleteMultipartUploadInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    uploadId: str,
+    accountId: NotRequired[str],
+    archiveSize: NotRequired[str],
+    checksum: NotRequired[str],
+```
 
 ## CompleteVaultLockInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CompleteVaultLockInputRequestTypeDef
+
+def get_value() -> CompleteVaultLockInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "lockId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `lockId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="createvaultinputaccountcreatevaulttypedef"></a>
+```python title="Definition"
+class CompleteVaultLockInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    lockId: str,
+    accountId: NotRequired[str],
+```
 
 ## CreateVaultInputAccountCreateVaultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CreateVaultInputAccountCreateVaultTypeDef
+
+def get_value() -> CreateVaultInputAccountCreateVaultTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-<a id="createvaultinputrequesttypedef"></a>
+```python title="Definition"
+class CreateVaultInputAccountCreateVaultTypeDef(TypedDict):
+    vaultName: str,
+```
 
 ## CreateVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CreateVaultInputRequestTypeDef
+
+def get_value() -> CreateVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="createvaultinputserviceresourcecreatevaulttypedef"></a>
+```python title="Definition"
+class CreateVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## CreateVaultInputServiceResourceCreateVaultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CreateVaultInputServiceResourceCreateVaultTypeDef
+
+def get_value() -> CreateVaultInputServiceResourceCreateVaultTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="createvaultoutputtypedef"></a>
+```python title="Definition"
+class CreateVaultInputServiceResourceCreateVaultTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## CreateVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import CreateVaultOutputTypeDef
+
+def get_value() -> CreateVaultOutputTypeDef:
+    return {
+        "location": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVaultOutputTypeDef(TypedDict):
+    location: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `location`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataretrievalpolicytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataRetrievalPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DataRetrievalPolicyTypeDef
+
+def get_value() -> DataRetrievalPolicyTypeDef:
+    return {
+        "Rules": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataRetrievalPolicyTypeDef(TypedDict):
+    Rules: NotRequired[List[DataRetrievalRuleTypeDef]],  # (1)
+```
 
-- `Rules`:
-  `List`\[[DataRetrievalRuleTypeDef](./type_defs.md#dataretrievalruletypedef)\]
-
-<a id="dataretrievalruletypedef"></a>
-
+1. See [:material-code-braces: DataRetrievalRuleTypeDef](./type_defs.md#dataretrievalruletypedef) 
 ## DataRetrievalRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DataRetrievalRuleTypeDef
+
+def get_value() -> DataRetrievalRuleTypeDef:
+    return {
+        "Strategy": ...,
+    }
 ```
 
-Optional fields:
-
-- `Strategy`: `str`
-- `BytesPerHour`: `int`
-
-<a id="deletearchiveinputrequesttypedef"></a>
+```python title="Definition"
+class DataRetrievalRuleTypeDef(TypedDict):
+    Strategy: NotRequired[str],
+    BytesPerHour: NotRequired[int],
+```
 
 ## DeleteArchiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DeleteArchiveInputRequestTypeDef
+
+def get_value() -> DeleteArchiveInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "archiveId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `archiveId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="deletevaultaccesspolicyinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteArchiveInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    archiveId: str,
+    accountId: NotRequired[str],
+```
 
 ## DeleteVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DeleteVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> DeleteVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="deletevaultinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## DeleteVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DeleteVaultInputRequestTypeDef
+
+def get_value() -> DeleteVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="deletevaultnotificationsinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## DeleteVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DeleteVaultNotificationsInputRequestTypeDef
+
+def get_value() -> DeleteVaultNotificationsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="describejobinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteVaultNotificationsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## DescribeJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DescribeJobInputRequestTypeDef
+
+def get_value() -> DescribeJobInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `jobId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="describevaultinputrequesttypedef"></a>
+```python title="Definition"
+class DescribeJobInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    jobId: str,
+    accountId: NotRequired[str],
+```
 
 ## DescribeVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DescribeVaultInputRequestTypeDef
+
+def get_value() -> DescribeVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
-- `vaultName`: `str`
+## DescribeVaultInputVaultExistsWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import DescribeVaultInputVaultExistsWaitTypeDef
 
-- `accountId`: `str`
+def get_value() -> DescribeVaultInputVaultExistsWaitTypeDef:
+    return {
+        "accountId": ...,
+        "vaultName": ...,
+    }
+```
 
-<a id="describevaultoutputresponsemetadatatypedef"></a>
+```python title="Definition"
+class DescribeVaultInputVaultExistsWaitTypeDef(TypedDict):
+    accountId: str,
+    vaultName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeVaultInputVaultNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import DescribeVaultInputVaultNotExistsWaitTypeDef
+
+def get_value() -> DescribeVaultInputVaultNotExistsWaitTypeDef:
+    return {
+        "accountId": ...,
+        "vaultName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeVaultInputVaultNotExistsWaitTypeDef(TypedDict):
+    accountId: str,
+    vaultName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeVaultOutputResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DescribeVaultOutputResponseMetadataTypeDef
+
+def get_value() -> DescribeVaultOutputResponseMetadataTypeDef:
+    return {
+        "VaultARN": ...,
+        "VaultName": ...,
+        "CreationDate": ...,
+        "LastInventoryDate": ...,
+        "NumberOfArchives": ...,
+        "SizeInBytes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVaultOutputResponseMetadataTypeDef(TypedDict):
+    VaultARN: str,
+    VaultName: str,
+    CreationDate: str,
+    LastInventoryDate: str,
+    NumberOfArchives: int,
+    SizeInBytes: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `VaultARN`: `str`
-- `VaultName`: `str`
-- `CreationDate`: `str`
-- `LastInventoryDate`: `str`
-- `NumberOfArchives`: `int`
-- `SizeInBytes`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevaultoutputtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import DescribeVaultOutputTypeDef
+
+def get_value() -> DescribeVaultOutputTypeDef:
+    return {
+        "VaultARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `VaultARN`: `str`
-- `VaultName`: `str`
-- `CreationDate`: `str`
-- `LastInventoryDate`: `str`
-- `NumberOfArchives`: `int`
-- `SizeInBytes`: `int`
-
-<a id="encryptiontypedef"></a>
+```python title="Definition"
+class DescribeVaultOutputTypeDef(TypedDict):
+    VaultARN: NotRequired[str],
+    VaultName: NotRequired[str],
+    CreationDate: NotRequired[str],
+    LastInventoryDate: NotRequired[str],
+    NumberOfArchives: NotRequired[int],
+    SizeInBytes: NotRequired[int],
+```
 
 ## EncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import EncryptionTypeDef
+
+def get_value() -> EncryptionTypeDef:
+    return {
+        "EncryptionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EncryptionTypeDef(TypedDict):
+    EncryptionType: NotRequired[EncryptionTypeType],  # (1)
+    KMSKeyId: NotRequired[str],
+    KMSContext: NotRequired[str],
+```
 
-- `EncryptionType`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-- `KMSKeyId`: `str`
-- `KMSContext`: `str`
-
-<a id="getdataretrievalpolicyinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## GetDataRetrievalPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetDataRetrievalPolicyInputRequestTypeDef
+
+def get_value() -> GetDataRetrievalPolicyInputRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="getdataretrievalpolicyoutputtypedef"></a>
+```python title="Definition"
+class GetDataRetrievalPolicyInputRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+```
 
 ## GetDataRetrievalPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetDataRetrievalPolicyOutputTypeDef
+
+def get_value() -> GetDataRetrievalPolicyOutputTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataRetrievalPolicyOutputTypeDef(TypedDict):
+    Policy: DataRetrievalPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`:
-  [DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getjoboutputinputjobgetoutputtypedef"></a>
-
+1. See [:material-code-braces: DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetJobOutputInputJobGetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetJobOutputInputJobGetOutputTypeDef
+
+def get_value() -> GetJobOutputInputJobGetOutputTypeDef:
+    return {
+        "range": ...,
+    }
 ```
 
-Optional fields:
-
-- `range`: `str`
-
-<a id="getjoboutputinputrequesttypedef"></a>
+```python title="Definition"
+class GetJobOutputInputJobGetOutputTypeDef(TypedDict):
+    range: NotRequired[str],
+```
 
 ## GetJobOutputInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetJobOutputInputRequestTypeDef
+
+def get_value() -> GetJobOutputInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `jobId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `range`: `str`
-
-<a id="getjoboutputoutputtypedef"></a>
+```python title="Definition"
+class GetJobOutputInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    jobId: str,
+    accountId: NotRequired[str],
+    range: NotRequired[str],
+```
 
 ## GetJobOutputOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetJobOutputOutputTypeDef
+
+def get_value() -> GetJobOutputOutputTypeDef:
+    return {
+        "body": ...,
+        "checksum": ...,
+        "status": ...,
+        "contentRange": ...,
+        "acceptRanges": ...,
+        "contentType": ...,
+        "archiveDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetJobOutputOutputTypeDef(TypedDict):
+    body: StreamingBody,
+    checksum: str,
+    status: int,
+    contentRange: str,
+    acceptRanges: str,
+    contentType: str,
+    archiveDescription: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `body`: `StreamingBody`
-- `checksum`: `str`
-- `status`: `int`
-- `contentRange`: `str`
-- `acceptRanges`: `str`
-- `contentType`: `str`
-- `archiveDescription`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvaultaccesspolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> GetVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="getvaultaccesspolicyoutputtypedef"></a>
+```python title="Definition"
+class GetVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## GetVaultAccessPolicyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultAccessPolicyOutputTypeDef
+
+def get_value() -> GetVaultAccessPolicyOutputTypeDef:
+    return {
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVaultAccessPolicyOutputTypeDef(TypedDict):
+    policy: VaultAccessPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `policy`: [VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvaultlockinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVaultLockInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultLockInputRequestTypeDef
+
+def get_value() -> GetVaultLockInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="getvaultlockoutputtypedef"></a>
+```python title="Definition"
+class GetVaultLockInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## GetVaultLockOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultLockOutputTypeDef
+
+def get_value() -> GetVaultLockOutputTypeDef:
+    return {
+        "Policy": ...,
+        "State": ...,
+        "ExpirationDate": ...,
+        "CreationDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVaultLockOutputTypeDef(TypedDict):
+    Policy: str,
+    State: str,
+    ExpirationDate: str,
+    CreationDate: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `State`: `str`
-- `ExpirationDate`: `str`
-- `CreationDate`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvaultnotificationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultNotificationsInputRequestTypeDef
+
+def get_value() -> GetVaultNotificationsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="getvaultnotificationsoutputtypedef"></a>
+```python title="Definition"
+class GetVaultNotificationsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## GetVaultNotificationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GetVaultNotificationsOutputTypeDef
+
+def get_value() -> GetVaultNotificationsOutputTypeDef:
+    return {
+        "vaultNotificationConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVaultNotificationsOutputTypeDef(TypedDict):
+    vaultNotificationConfig: VaultNotificationConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="glacierjobdescriptionresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GlacierJobDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GlacierJobDescriptionResponseMetadataTypeDef
+
+def get_value() -> GlacierJobDescriptionResponseMetadataTypeDef:
+    return {
+        "JobId": ...,
+        "JobDescription": ...,
+        "Action": ...,
+        "ArchiveId": ...,
+        "VaultARN": ...,
+        "CreationDate": ...,
+        "Completed": ...,
+        "StatusCode": ...,
+        "StatusMessage": ...,
+        "ArchiveSizeInBytes": ...,
+        "InventorySizeInBytes": ...,
+        "SNSTopic": ...,
+        "CompletionDate": ...,
+        "SHA256TreeHash": ...,
+        "ArchiveSHA256TreeHash": ...,
+        "RetrievalByteRange": ...,
+        "Tier": ...,
+        "InventoryRetrievalParameters": ...,
+        "JobOutputPath": ...,
+        "SelectParameters": ...,
+        "OutputLocation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GlacierJobDescriptionResponseMetadataTypeDef(TypedDict):
+    JobId: str,
+    JobDescription: str,
+    Action: ActionCodeType,  # (1)
+    ArchiveId: str,
+    VaultARN: str,
+    CreationDate: str,
+    Completed: bool,
+    StatusCode: StatusCodeType,  # (2)
+    StatusMessage: str,
+    ArchiveSizeInBytes: int,
+    InventorySizeInBytes: int,
+    SNSTopic: str,
+    CompletionDate: str,
+    SHA256TreeHash: str,
+    ArchiveSHA256TreeHash: str,
+    RetrievalByteRange: str,
+    Tier: str,
+    InventoryRetrievalParameters: InventoryRetrievalJobDescriptionTypeDef,  # (3)
+    JobOutputPath: str,
+    SelectParameters: SelectParametersTypeDef,  # (4)
+    OutputLocation: OutputLocationTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `JobId`: `str`
-- `JobDescription`: `str`
-- `Action`: [ActionCodeType](./literals.md#actioncodetype)
-- `ArchiveId`: `str`
-- `VaultARN`: `str`
-- `CreationDate`: `str`
-- `Completed`: `bool`
-- `StatusCode`: [StatusCodeType](./literals.md#statuscodetype)
-- `StatusMessage`: `str`
-- `ArchiveSizeInBytes`: `int`
-- `InventorySizeInBytes`: `int`
-- `SNSTopic`: `str`
-- `CompletionDate`: `str`
-- `SHA256TreeHash`: `str`
-- `ArchiveSHA256TreeHash`: `str`
-- `RetrievalByteRange`: `str`
-- `Tier`: `str`
-- `InventoryRetrievalParameters`:
-  [InventoryRetrievalJobDescriptionTypeDef](./type_defs.md#inventoryretrievaljobdescriptiontypedef)
-- `JobOutputPath`: `str`
-- `SelectParameters`:
-  [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="glacierjobdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ActionCodeType](./literals.md#actioncodetype) 
+2. See [:material-code-brackets: StatusCodeType](./literals.md#statuscodetype) 
+3. See [:material-code-braces: InventoryRetrievalJobDescriptionTypeDef](./type_defs.md#inventoryretrievaljobdescriptiontypedef) 
+4. See [:material-code-braces: SelectParametersTypeDef](./type_defs.md#selectparameterstypedef) 
+5. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GlacierJobDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GlacierJobDescriptionTypeDef
+
+def get_value() -> GlacierJobDescriptionTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlacierJobDescriptionTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    JobDescription: NotRequired[str],
+    Action: NotRequired[ActionCodeType],  # (1)
+    ArchiveId: NotRequired[str],
+    VaultARN: NotRequired[str],
+    CreationDate: NotRequired[str],
+    Completed: NotRequired[bool],
+    StatusCode: NotRequired[StatusCodeType],  # (2)
+    StatusMessage: NotRequired[str],
+    ArchiveSizeInBytes: NotRequired[int],
+    InventorySizeInBytes: NotRequired[int],
+    SNSTopic: NotRequired[str],
+    CompletionDate: NotRequired[str],
+    SHA256TreeHash: NotRequired[str],
+    ArchiveSHA256TreeHash: NotRequired[str],
+    RetrievalByteRange: NotRequired[str],
+    Tier: NotRequired[str],
+    InventoryRetrievalParameters: NotRequired[InventoryRetrievalJobDescriptionTypeDef],  # (3)
+    JobOutputPath: NotRequired[str],
+    SelectParameters: NotRequired[SelectParametersTypeDef],  # (4)
+    OutputLocation: NotRequired[OutputLocationTypeDef],  # (5)
+```
 
-- `JobId`: `str`
-- `JobDescription`: `str`
-- `Action`: [ActionCodeType](./literals.md#actioncodetype)
-- `ArchiveId`: `str`
-- `VaultARN`: `str`
-- `CreationDate`: `str`
-- `Completed`: `bool`
-- `StatusCode`: [StatusCodeType](./literals.md#statuscodetype)
-- `StatusMessage`: `str`
-- `ArchiveSizeInBytes`: `int`
-- `InventorySizeInBytes`: `int`
-- `SNSTopic`: `str`
-- `CompletionDate`: `str`
-- `SHA256TreeHash`: `str`
-- `ArchiveSHA256TreeHash`: `str`
-- `RetrievalByteRange`: `str`
-- `Tier`: `str`
-- `InventoryRetrievalParameters`:
-  [InventoryRetrievalJobDescriptionTypeDef](./type_defs.md#inventoryretrievaljobdescriptiontypedef)
-- `JobOutputPath`: `str`
-- `SelectParameters`:
-  [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-
-<a id="granttypedef"></a>
-
+1. See [:material-code-brackets: ActionCodeType](./literals.md#actioncodetype) 
+2. See [:material-code-brackets: StatusCodeType](./literals.md#statuscodetype) 
+3. See [:material-code-braces: InventoryRetrievalJobDescriptionTypeDef](./type_defs.md#inventoryretrievaljobdescriptiontypedef) 
+4. See [:material-code-braces: SelectParametersTypeDef](./type_defs.md#selectparameterstypedef) 
+5. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
 ## GrantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GrantTypeDef
+
+def get_value() -> GrantTypeDef:
+    return {
+        "Grantee": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrantTypeDef(TypedDict):
+    Grantee: NotRequired[GranteeTypeDef],  # (1)
+    Permission: NotRequired[PermissionType],  # (2)
+```
 
-- `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
-- `Permission`: [PermissionType](./literals.md#permissiontype)
-
-<a id="granteetypedef"></a>
-
+1. See [:material-code-braces: GranteeTypeDef](./type_defs.md#granteetypedef) 
+2. See [:material-code-brackets: PermissionType](./literals.md#permissiontype) 
 ## GranteeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import GranteeTypeDef
+
+def get_value() -> GranteeTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GranteeTypeDef(TypedDict):
+    Type: TypeType,  # (1)
+    DisplayName: NotRequired[str],
+    URI: NotRequired[str],
+    ID: NotRequired[str],
+    EmailAddress: NotRequired[str],
+```
 
-- `Type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `DisplayName`: `str`
-- `URI`: `str`
-- `ID`: `str`
-- `EmailAddress`: `str`
-
-<a id="initiatejobinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## InitiateJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateJobInputRequestTypeDef
+
+def get_value() -> InitiateJobInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateJobInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    jobParameters: NotRequired[JobParametersTypeDef],  # (1)
+```
 
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
-
-<a id="initiatejoboutputtypedef"></a>
-
+1. See [:material-code-braces: JobParametersTypeDef](./type_defs.md#jobparameterstypedef) 
 ## InitiateJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateJobOutputTypeDef
+
+def get_value() -> InitiateJobOutputTypeDef:
+    return {
+        "location": ...,
+        "jobId": ...,
+        "jobOutputPath": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateJobOutputTypeDef(TypedDict):
+    location: str,
+    jobId: str,
+    jobOutputPath: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `location`: `str`
-- `jobId`: `str`
-- `jobOutputPath`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="initiatemultipartuploadinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InitiateMultipartUploadInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateMultipartUploadInputRequestTypeDef
+
+def get_value() -> InitiateMultipartUploadInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `archiveDescription`: `str`
-- `partSize`: `str`
-
-<a id="initiatemultipartuploadinputvaultinitiatemultipartuploadtypedef"></a>
+```python title="Definition"
+class InitiateMultipartUploadInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    archiveDescription: NotRequired[str],
+    partSize: NotRequired[str],
+```
 
 ## InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef
+
+def get_value() -> InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef:
+    return {
+        "archiveDescription": ...,
+    }
 ```
 
-Optional fields:
-
-- `archiveDescription`: `str`
-- `partSize`: `str`
-
-<a id="initiatemultipartuploadoutputtypedef"></a>
+```python title="Definition"
+class InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef(TypedDict):
+    archiveDescription: NotRequired[str],
+    partSize: NotRequired[str],
+```
 
 ## InitiateMultipartUploadOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateMultipartUploadOutputTypeDef
+
+def get_value() -> InitiateMultipartUploadOutputTypeDef:
+    return {
+        "location": ...,
+        "uploadId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateMultipartUploadOutputTypeDef(TypedDict):
+    location: str,
+    uploadId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `location`: `str`
-- `uploadId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="initiatevaultlockinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InitiateVaultLockInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateVaultLockInputRequestTypeDef
+
+def get_value() -> InitiateVaultLockInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateVaultLockInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    policy: NotRequired[VaultLockPolicyTypeDef],  # (1)
+```
 
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `policy`: [VaultLockPolicyTypeDef](./type_defs.md#vaultlockpolicytypedef)
-
-<a id="initiatevaultlockoutputtypedef"></a>
-
+1. See [:material-code-braces: VaultLockPolicyTypeDef](./type_defs.md#vaultlockpolicytypedef) 
 ## InitiateVaultLockOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InitiateVaultLockOutputTypeDef
+
+def get_value() -> InitiateVaultLockOutputTypeDef:
+    return {
+        "lockId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InitiateVaultLockOutputTypeDef(TypedDict):
+    lockId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `lockId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="inputserializationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InputSerializationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InputSerializationTypeDef
+
+def get_value() -> InputSerializationTypeDef:
+    return {
+        "csv": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InputSerializationTypeDef(TypedDict):
+    csv: NotRequired[CSVInputTypeDef],  # (1)
+```
 
-- `csv`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
-
-<a id="inventoryretrievaljobdescriptionresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: CSVInputTypeDef](./type_defs.md#csvinputtypedef) 
 ## InventoryRetrievalJobDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InventoryRetrievalJobDescriptionResponseMetadataTypeDef
+
+def get_value() -> InventoryRetrievalJobDescriptionResponseMetadataTypeDef:
+    return {
+        "Format": ...,
+        "StartDate": ...,
+        "EndDate": ...,
+        "Limit": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InventoryRetrievalJobDescriptionResponseMetadataTypeDef(TypedDict):
+    Format: str,
+    StartDate: str,
+    EndDate: str,
+    Limit: str,
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Format`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Limit`: `str`
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="inventoryretrievaljobdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InventoryRetrievalJobDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InventoryRetrievalJobDescriptionTypeDef
+
+def get_value() -> InventoryRetrievalJobDescriptionTypeDef:
+    return {
+        "Format": ...,
+    }
 ```
 
-Optional fields:
-
-- `Format`: `str`
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Limit`: `str`
-- `Marker`: `str`
-
-<a id="inventoryretrievaljobinputtypedef"></a>
+```python title="Definition"
+class InventoryRetrievalJobDescriptionTypeDef(TypedDict):
+    Format: NotRequired[str],
+    StartDate: NotRequired[str],
+    EndDate: NotRequired[str],
+    Limit: NotRequired[str],
+    Marker: NotRequired[str],
+```
 
 ## InventoryRetrievalJobInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import InventoryRetrievalJobInputTypeDef
+
+def get_value() -> InventoryRetrievalJobInputTypeDef:
+    return {
+        "StartDate": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartDate`: `str`
-- `EndDate`: `str`
-- `Limit`: `str`
-- `Marker`: `str`
-
-<a id="jobparameterstypedef"></a>
+```python title="Definition"
+class InventoryRetrievalJobInputTypeDef(TypedDict):
+    StartDate: NotRequired[str],
+    EndDate: NotRequired[str],
+    Limit: NotRequired[str],
+    Marker: NotRequired[str],
+```
 
 ## JobParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import JobParametersTypeDef
+
+def get_value() -> JobParametersTypeDef:
+    return {
+        "Format": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobParametersTypeDef(TypedDict):
+    Format: NotRequired[str],
+    Type: NotRequired[str],
+    ArchiveId: NotRequired[str],
+    Description: NotRequired[str],
+    SNSTopic: NotRequired[str],
+    RetrievalByteRange: NotRequired[str],
+    Tier: NotRequired[str],
+    InventoryRetrievalParameters: NotRequired[InventoryRetrievalJobInputTypeDef],  # (1)
+    SelectParameters: NotRequired[SelectParametersTypeDef],  # (2)
+    OutputLocation: NotRequired[OutputLocationTypeDef],  # (3)
+```
 
-- `Format`: `str`
-- `Type`: `str`
-- `ArchiveId`: `str`
-- `Description`: `str`
-- `SNSTopic`: `str`
-- `RetrievalByteRange`: `str`
-- `Tier`: `str`
-- `InventoryRetrievalParameters`:
-  [InventoryRetrievalJobInputTypeDef](./type_defs.md#inventoryretrievaljobinputtypedef)
-- `SelectParameters`:
-  [SelectParametersTypeDef](./type_defs.md#selectparameterstypedef)
-- `OutputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
+1. See [:material-code-braces: InventoryRetrievalJobInputTypeDef](./type_defs.md#inventoryretrievaljobinputtypedef) 
+2. See [:material-code-braces: SelectParametersTypeDef](./type_defs.md#selectparameterstypedef) 
+3. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+## ListJobsInputListJobsPaginateTypeDef
 
-<a id="listjobsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import ListJobsInputListJobsPaginateTypeDef
 
+def get_value() -> ListJobsInputListJobsPaginateTypeDef:
+    return {
+        "accountId": ...,
+        "vaultName": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsInputListJobsPaginateTypeDef(TypedDict):
+    accountId: str,
+    vaultName: str,
+    statuscode: NotRequired[str],
+    completed: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListJobsInputRequestTypeDef
+
+def get_value() -> ListJobsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `limit`: `str`
-- `marker`: `str`
-- `statuscode`: `str`
-- `completed`: `str`
-
-<a id="listjobsoutputtypedef"></a>
+```python title="Definition"
+class ListJobsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    limit: NotRequired[str],
+    marker: NotRequired[str],
+    statuscode: NotRequired[str],
+    completed: NotRequired[str],
+```
 
 ## ListJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListJobsOutputTypeDef
+
+def get_value() -> ListJobsOutputTypeDef:
+    return {
+        "JobList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsOutputTypeDef(TypedDict):
+    JobList: List[GlacierJobDescriptionTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `JobList`:
-  `List`\[[GlacierJobDescriptionTypeDef](./type_defs.md#glacierjobdescriptiontypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GlacierJobDescriptionTypeDef](./type_defs.md#glacierjobdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef
 
-<a id="listmultipartuploadsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef
 
+def get_value() -> ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef:
+    return {
+        "accountId": ...,
+        "vaultName": ...,
+    }
+```
+
+```python title="Definition"
+class ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef(TypedDict):
+    accountId: str,
+    vaultName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMultipartUploadsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListMultipartUploadsInputRequestTypeDef
+
+def get_value() -> ListMultipartUploadsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `marker`: `str`
-- `limit`: `str`
-
-<a id="listmultipartuploadsoutputtypedef"></a>
+```python title="Definition"
+class ListMultipartUploadsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    marker: NotRequired[str],
+    limit: NotRequired[str],
+```
 
 ## ListMultipartUploadsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListMultipartUploadsOutputTypeDef
+
+def get_value() -> ListMultipartUploadsOutputTypeDef:
+    return {
+        "UploadsList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMultipartUploadsOutputTypeDef(TypedDict):
+    UploadsList: List[UploadListElementTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UploadsList`:
-  `List`\[[UploadListElementTypeDef](./type_defs.md#uploadlistelementtypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UploadListElementTypeDef](./type_defs.md#uploadlistelementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPartsInputListPartsPaginateTypeDef
 
-<a id="listpartsinputmultipartuploadpartstypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import ListPartsInputListPartsPaginateTypeDef
 
+def get_value() -> ListPartsInputListPartsPaginateTypeDef:
+    return {
+        "accountId": ...,
+        "vaultName": ...,
+        "uploadId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPartsInputListPartsPaginateTypeDef(TypedDict):
+    accountId: str,
+    vaultName: str,
+    uploadId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPartsInputMultipartUploadPartsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListPartsInputMultipartUploadPartsTypeDef
+
+def get_value() -> ListPartsInputMultipartUploadPartsTypeDef:
+    return {
+        "marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `marker`: `str`
-- `limit`: `str`
-
-<a id="listpartsinputrequesttypedef"></a>
+```python title="Definition"
+class ListPartsInputMultipartUploadPartsTypeDef(TypedDict):
+    marker: NotRequired[str],
+    limit: NotRequired[str],
+```
 
 ## ListPartsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListPartsInputRequestTypeDef
+
+def get_value() -> ListPartsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "uploadId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `uploadId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `marker`: `str`
-- `limit`: `str`
-
-<a id="listpartsoutputtypedef"></a>
+```python title="Definition"
+class ListPartsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    uploadId: str,
+    accountId: NotRequired[str],
+    marker: NotRequired[str],
+    limit: NotRequired[str],
+```
 
 ## ListPartsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListPartsOutputTypeDef
+
+def get_value() -> ListPartsOutputTypeDef:
+    return {
+        "MultipartUploadId": ...,
+        "VaultARN": ...,
+        "ArchiveDescription": ...,
+        "PartSizeInBytes": ...,
+        "CreationDate": ...,
+        "Parts": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPartsOutputTypeDef(TypedDict):
+    MultipartUploadId: str,
+    VaultARN: str,
+    ArchiveDescription: str,
+    PartSizeInBytes: int,
+    CreationDate: str,
+    Parts: List[PartListElementTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MultipartUploadId`: `str`
-- `VaultARN`: `str`
-- `ArchiveDescription`: `str`
-- `PartSizeInBytes`: `int`
-- `CreationDate`: `str`
-- `Parts`:
-  `List`\[[PartListElementTypeDef](./type_defs.md#partlistelementtypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listprovisionedcapacityinputrequesttypedef"></a>
-
+1. See [:material-code-braces: PartListElementTypeDef](./type_defs.md#partlistelementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListProvisionedCapacityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListProvisionedCapacityInputRequestTypeDef
+
+def get_value() -> ListProvisionedCapacityInputRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="listprovisionedcapacityoutputtypedef"></a>
+```python title="Definition"
+class ListProvisionedCapacityInputRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+```
 
 ## ListProvisionedCapacityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListProvisionedCapacityOutputTypeDef
+
+def get_value() -> ListProvisionedCapacityOutputTypeDef:
+    return {
+        "ProvisionedCapacityList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProvisionedCapacityOutputTypeDef(TypedDict):
+    ProvisionedCapacityList: List[ProvisionedCapacityDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProvisionedCapacityList`:
-  `List`\[[ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforvaultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListTagsForVaultInputRequestTypeDef
+
+def get_value() -> ListTagsForVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="listtagsforvaultoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+```
 
 ## ListTagsForVaultOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListTagsForVaultOutputTypeDef
+
+def get_value() -> ListTagsForVaultOutputTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForVaultOutputTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVaultsInputListVaultsPaginateTypeDef
 
-<a id="listvaultsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_glacier.type_defs import ListVaultsInputListVaultsPaginateTypeDef
 
+def get_value() -> ListVaultsInputListVaultsPaginateTypeDef:
+    return {
+        "accountId": ...,
+    }
+```
+
+```python title="Definition"
+class ListVaultsInputListVaultsPaginateTypeDef(TypedDict):
+    accountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVaultsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListVaultsInputRequestTypeDef
+
+def get_value() -> ListVaultsInputRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-- `marker`: `str`
-- `limit`: `str`
-
-<a id="listvaultsoutputtypedef"></a>
+```python title="Definition"
+class ListVaultsInputRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    marker: NotRequired[str],
+    limit: NotRequired[str],
+```
 
 ## ListVaultsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ListVaultsOutputTypeDef
+
+def get_value() -> ListVaultsOutputTypeDef:
+    return {
+        "VaultList": ...,
+        "Marker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVaultsOutputTypeDef(TypedDict):
+    VaultList: List[DescribeVaultOutputTypeDef],  # (1)
+    Marker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VaultList`:
-  `List`\[[DescribeVaultOutputTypeDef](./type_defs.md#describevaultoutputtypedef)\]
-- `Marker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="outputlocationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DescribeVaultOutputTypeDef](./type_defs.md#describevaultoutputtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OutputLocationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import OutputLocationResponseMetadataTypeDef
+
+def get_value() -> OutputLocationResponseMetadataTypeDef:
+    return {
+        "S3": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OutputLocationResponseMetadataTypeDef(TypedDict):
+    S3: S3LocationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="outputlocationtypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OutputLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import OutputLocationTypeDef
+
+def get_value() -> OutputLocationTypeDef:
+    return {
+        "S3": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputLocationTypeDef(TypedDict):
+    S3: NotRequired[S3LocationTypeDef],  # (1)
+```
 
-- `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="outputserializationtypedef"></a>
-
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## OutputSerializationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import OutputSerializationTypeDef
+
+def get_value() -> OutputSerializationTypeDef:
+    return {
+        "csv": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OutputSerializationTypeDef(TypedDict):
+    csv: NotRequired[CSVOutputTypeDef],  # (1)
+```
 
-- `csv`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: CSVOutputTypeDef](./type_defs.md#csvoutputtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="partlistelementtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PartListElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import PartListElementTypeDef
+
+def get_value() -> PartListElementTypeDef:
+    return {
+        "RangeInBytes": ...,
+    }
 ```
 
-Optional fields:
-
-- `RangeInBytes`: `str`
-- `SHA256TreeHash`: `str`
-
-<a id="provisionedcapacitydescriptiontypedef"></a>
+```python title="Definition"
+class PartListElementTypeDef(TypedDict):
+    RangeInBytes: NotRequired[str],
+    SHA256TreeHash: NotRequired[str],
+```
 
 ## ProvisionedCapacityDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ProvisionedCapacityDescriptionTypeDef
+
+def get_value() -> ProvisionedCapacityDescriptionTypeDef:
+    return {
+        "CapacityId": ...,
+    }
 ```
 
-Optional fields:
-
-- `CapacityId`: `str`
-- `StartDate`: `str`
-- `ExpirationDate`: `str`
-
-<a id="purchaseprovisionedcapacityinputrequesttypedef"></a>
+```python title="Definition"
+class ProvisionedCapacityDescriptionTypeDef(TypedDict):
+    CapacityId: NotRequired[str],
+    StartDate: NotRequired[str],
+    ExpirationDate: NotRequired[str],
+```
 
 ## PurchaseProvisionedCapacityInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import PurchaseProvisionedCapacityInputRequestTypeDef
+
+def get_value() -> PurchaseProvisionedCapacityInputRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `accountId`: `str`
-
-<a id="purchaseprovisionedcapacityoutputtypedef"></a>
+```python title="Definition"
+class PurchaseProvisionedCapacityInputRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+```
 
 ## PurchaseProvisionedCapacityOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import PurchaseProvisionedCapacityOutputTypeDef
+
+def get_value() -> PurchaseProvisionedCapacityOutputTypeDef:
+    return {
+        "capacityId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PurchaseProvisionedCapacityOutputTypeDef(TypedDict):
+    capacityId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `capacityId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removetagsfromvaultinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveTagsFromVaultInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import RemoveTagsFromVaultInputRequestTypeDef
+
+def get_value() -> RemoveTagsFromVaultInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemoveTagsFromVaultInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    TagKeys: NotRequired[Sequence[str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "BucketName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    BucketName: NotRequired[str],
+    Prefix: NotRequired[str],
+    Encryption: NotRequired[EncryptionTypeDef],  # (1)
+    CannedACL: NotRequired[CannedACLType],  # (2)
+    AccessControlList: NotRequired[List[GrantTypeDef]],  # (3)
+    Tagging: NotRequired[Dict[str, str]],
+    UserMetadata: NotRequired[Dict[str, str]],
+    StorageClass: NotRequired[StorageClassType],  # (4)
+```
 
-- `BucketName`: `str`
-- `Prefix`: `str`
-- `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
-- `CannedACL`: [CannedACLType](./literals.md#cannedacltype)
-- `AccessControlList`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
-- `Tagging`: `Dict`\[`str`, `str`\]
-- `UserMetadata`: `Dict`\[`str`, `str`\]
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-
-<a id="selectparametersresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EncryptionTypeDef](./type_defs.md#encryptiontypedef) 
+2. See [:material-code-brackets: CannedACLType](./literals.md#cannedacltype) 
+3. See [:material-code-braces: GrantTypeDef](./type_defs.md#granttypedef) 
+4. See [:material-code-brackets: StorageClassType](./literals.md#storageclasstype) 
 ## SelectParametersResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SelectParametersResponseMetadataTypeDef
+
+def get_value() -> SelectParametersResponseMetadataTypeDef:
+    return {
+        "InputSerialization": ...,
+        "ExpressionType": ...,
+        "Expression": ...,
+        "OutputSerialization": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectParametersResponseMetadataTypeDef(TypedDict):
+    InputSerialization: InputSerializationTypeDef,  # (1)
+    ExpressionType: ExpressionTypeType,  # (2)
+    Expression: str,
+    OutputSerialization: OutputSerializationTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `InputSerialization`:
-  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
-- `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionTypeType](./literals.md#expressiontypetype))
-- `Expression`: `str`
-- `OutputSerialization`:
-  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="selectparameterstypedef"></a>
-
+1. See [:material-code-braces: InputSerializationTypeDef](./type_defs.md#inputserializationtypedef) 
+2. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+3. See [:material-code-braces: OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SelectParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SelectParametersTypeDef
+
+def get_value() -> SelectParametersTypeDef:
+    return {
+        "InputSerialization": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SelectParametersTypeDef(TypedDict):
+    InputSerialization: NotRequired[InputSerializationTypeDef],  # (1)
+    ExpressionType: NotRequired[ExpressionTypeType],  # (2)
+    Expression: NotRequired[str],
+    OutputSerialization: NotRequired[OutputSerializationTypeDef],  # (3)
+```
 
-- `InputSerialization`:
-  [InputSerializationTypeDef](./type_defs.md#inputserializationtypedef)
-- `ExpressionType`: `Literal['SQL']` (see
-  [ExpressionTypeType](./literals.md#expressiontypetype))
-- `Expression`: `str`
-- `OutputSerialization`:
-  [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
-
-<a id="serviceresourceaccountrequesttypedef"></a>
-
+1. See [:material-code-braces: InputSerializationTypeDef](./type_defs.md#inputserializationtypedef) 
+2. See [:material-code-brackets: ExpressionTypeType](./literals.md#expressiontypetype) 
+3. See [:material-code-braces: OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef) 
 ## ServiceResourceAccountRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceAccountRequestTypeDef
+
+def get_value() -> ServiceResourceAccountRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="serviceresourcearchiverequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceAccountRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## ServiceResourceArchiveRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceArchiveRequestTypeDef
+
+def get_value() -> ServiceResourceArchiveRequestTypeDef:
+    return {
+        "account_id": ...,
+        "vault_name": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `account_id`: `str`
-- `vault_name`: `str`
-- `id`: `str`
-
-<a id="serviceresourcejobrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceArchiveRequestTypeDef(TypedDict):
+    account_id: str,
+    vault_name: str,
+    id: str,
+```
 
 ## ServiceResourceJobRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceJobRequestTypeDef
+
+def get_value() -> ServiceResourceJobRequestTypeDef:
+    return {
+        "account_id": ...,
+        "vault_name": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `account_id`: `str`
-- `vault_name`: `str`
-- `id`: `str`
-
-<a id="serviceresourcemultipartuploadrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceJobRequestTypeDef(TypedDict):
+    account_id: str,
+    vault_name: str,
+    id: str,
+```
 
 ## ServiceResourceMultipartUploadRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceMultipartUploadRequestTypeDef
+
+def get_value() -> ServiceResourceMultipartUploadRequestTypeDef:
+    return {
+        "account_id": ...,
+        "vault_name": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `account_id`: `str`
-- `vault_name`: `str`
-- `id`: `str`
-
-<a id="serviceresourcenotificationrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceMultipartUploadRequestTypeDef(TypedDict):
+    account_id: str,
+    vault_name: str,
+    id: str,
+```
 
 ## ServiceResourceNotificationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceNotificationRequestTypeDef
+
+def get_value() -> ServiceResourceNotificationRequestTypeDef:
+    return {
+        "account_id": ...,
+        "vault_name": ...,
+    }
 ```
 
-Required fields:
-
-- `account_id`: `str`
-- `vault_name`: `str`
-
-<a id="serviceresourcevaultrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceNotificationRequestTypeDef(TypedDict):
+    account_id: str,
+    vault_name: str,
+```
 
 ## ServiceResourceVaultRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import ServiceResourceVaultRequestTypeDef
+
+def get_value() -> ServiceResourceVaultRequestTypeDef:
+    return {
+        "account_id": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `account_id`: `str`
-- `name`: `str`
-
-<a id="setdataretrievalpolicyinputrequesttypedef"></a>
+```python title="Definition"
+class ServiceResourceVaultRequestTypeDef(TypedDict):
+    account_id: str,
+    name: str,
+```
 
 ## SetDataRetrievalPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SetDataRetrievalPolicyInputRequestTypeDef
+
+def get_value() -> SetDataRetrievalPolicyInputRequestTypeDef:
+    return {
+        "accountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SetDataRetrievalPolicyInputRequestTypeDef(TypedDict):
+    accountId: NotRequired[str],
+    Policy: NotRequired[DataRetrievalPolicyTypeDef],  # (1)
+```
 
-- `accountId`: `str`
-- `Policy`:
-  [DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef)
-
-<a id="setvaultaccesspolicyinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef) 
 ## SetVaultAccessPolicyInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SetVaultAccessPolicyInputRequestTypeDef
+
+def get_value() -> SetVaultAccessPolicyInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetVaultAccessPolicyInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    policy: NotRequired[VaultAccessPolicyTypeDef],  # (1)
+```
 
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `policy`: [VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef)
-
-<a id="setvaultnotificationsinputnotificationsettypedef"></a>
-
+1. See [:material-code-braces: VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef) 
 ## SetVaultNotificationsInputNotificationSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SetVaultNotificationsInputNotificationSetTypeDef
+
+def get_value() -> SetVaultNotificationsInputNotificationSetTypeDef:
+    return {
+        "vaultNotificationConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SetVaultNotificationsInputNotificationSetTypeDef(TypedDict):
+    vaultNotificationConfig: NotRequired[VaultNotificationConfigTypeDef],  # (1)
+```
 
-- `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
-
-<a id="setvaultnotificationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef) 
 ## SetVaultNotificationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import SetVaultNotificationsInputRequestTypeDef
+
+def get_value() -> SetVaultNotificationsInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SetVaultNotificationsInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    vaultNotificationConfig: NotRequired[VaultNotificationConfigTypeDef],  # (1)
+```
 
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
-
-<a id="uploadarchiveinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef) 
 ## UploadArchiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadArchiveInputRequestTypeDef
+
+def get_value() -> UploadArchiveInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `archiveDescription`: `str`
-- `checksum`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="uploadarchiveinputvaultuploadarchivetypedef"></a>
+```python title="Definition"
+class UploadArchiveInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    accountId: NotRequired[str],
+    archiveDescription: NotRequired[str],
+    checksum: NotRequired[str],
+    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## UploadArchiveInputVaultUploadArchiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadArchiveInputVaultUploadArchiveTypeDef
+
+def get_value() -> UploadArchiveInputVaultUploadArchiveTypeDef:
+    return {
+        "archiveDescription": ...,
+    }
 ```
 
-Optional fields:
-
-- `archiveDescription`: `str`
-- `checksum`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="uploadlistelementtypedef"></a>
+```python title="Definition"
+class UploadArchiveInputVaultUploadArchiveTypeDef(TypedDict):
+    archiveDescription: NotRequired[str],
+    checksum: NotRequired[str],
+    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## UploadListElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadListElementTypeDef
+
+def get_value() -> UploadListElementTypeDef:
+    return {
+        "MultipartUploadId": ...,
+    }
 ```
 
-Optional fields:
-
-- `MultipartUploadId`: `str`
-- `VaultARN`: `str`
-- `ArchiveDescription`: `str`
-- `PartSizeInBytes`: `int`
-- `CreationDate`: `str`
-
-<a id="uploadmultipartpartinputmultipartuploaduploadparttypedef"></a>
+```python title="Definition"
+class UploadListElementTypeDef(TypedDict):
+    MultipartUploadId: NotRequired[str],
+    VaultARN: NotRequired[str],
+    ArchiveDescription: NotRequired[str],
+    PartSizeInBytes: NotRequired[int],
+    CreationDate: NotRequired[str],
+```
 
 ## UploadMultipartPartInputMultipartUploadUploadPartTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadMultipartPartInputMultipartUploadUploadPartTypeDef
+
+def get_value() -> UploadMultipartPartInputMultipartUploadUploadPartTypeDef:
+    return {
+        "checksum": ...,
+    }
 ```
 
-Optional fields:
-
-- `checksum`: `str`
-- `range`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="uploadmultipartpartinputrequesttypedef"></a>
+```python title="Definition"
+class UploadMultipartPartInputMultipartUploadUploadPartTypeDef(TypedDict):
+    checksum: NotRequired[str],
+    range: NotRequired[str],
+    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## UploadMultipartPartInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadMultipartPartInputRequestTypeDef
+
+def get_value() -> UploadMultipartPartInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "uploadId": ...,
+    }
 ```
 
-Required fields:
-
-- `vaultName`: `str`
-- `uploadId`: `str`
-
-Optional fields:
-
-- `accountId`: `str`
-- `checksum`: `str`
-- `range`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="uploadmultipartpartoutputtypedef"></a>
+```python title="Definition"
+class UploadMultipartPartInputRequestTypeDef(TypedDict):
+    vaultName: str,
+    uploadId: str,
+    accountId: NotRequired[str],
+    checksum: NotRequired[str],
+    range: NotRequired[str],
+    body: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## UploadMultipartPartOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import UploadMultipartPartOutputTypeDef
+
+def get_value() -> UploadMultipartPartOutputTypeDef:
+    return {
+        "checksum": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadMultipartPartOutputTypeDef(TypedDict):
+    checksum: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `checksum`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vaultaccesspolicytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VaultAccessPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultAccessPolicyTypeDef
+
+def get_value() -> VaultAccessPolicyTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Optional fields:
-
-- `Policy`: `str`
-
-<a id="vaultarchiverequesttypedef"></a>
+```python title="Definition"
+class VaultAccessPolicyTypeDef(TypedDict):
+    Policy: NotRequired[str],
+```
 
 ## VaultArchiveRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultArchiveRequestTypeDef
+
+def get_value() -> VaultArchiveRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="vaultjobrequesttypedef"></a>
+```python title="Definition"
+class VaultArchiveRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## VaultJobRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultJobRequestTypeDef
+
+def get_value() -> VaultJobRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="vaultlockpolicytypedef"></a>
+```python title="Definition"
+class VaultJobRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## VaultLockPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultLockPolicyTypeDef
+
+def get_value() -> VaultLockPolicyTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Optional fields:
-
-- `Policy`: `str`
-
-<a id="vaultmultipartuploadrequesttypedef"></a>
+```python title="Definition"
+class VaultLockPolicyTypeDef(TypedDict):
+    Policy: NotRequired[str],
+```
 
 ## VaultMultipartUploadRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultMultipartUploadRequestTypeDef
+
+def get_value() -> VaultMultipartUploadRequestTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-
-<a id="vaultnotificationconfigtypedef"></a>
+```python title="Definition"
+class VaultMultipartUploadRequestTypeDef(TypedDict):
+    id: str,
+```
 
 ## VaultNotificationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import VaultNotificationConfigTypeDef
+
+def get_value() -> VaultNotificationConfigTypeDef:
+    return {
+        "SNSTopic": ...,
+    }
 ```
 
-Optional fields:
-
-- `SNSTopic`: `str`
-- `Events`: `List`\[`str`\]
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VaultNotificationConfigTypeDef(TypedDict):
+    SNSTopic: NotRequired[str],
+    Events: NotRequired[List[str]],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_glacier.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

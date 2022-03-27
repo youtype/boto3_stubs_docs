@@ -1,163 +1,219 @@
-<a id="typed-dictionaries-for-boto3-costandusagereportservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 CostandUsageReportService module
+> [Index](../README.md) > [CostandUsageReportService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [CostandUsageReportService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
-type annotations stubs module
-[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
-
-- [Typed dictionaries for boto3 CostandUsageReportService module](#typed-dictionaries-for-boto3-costandusagereportservice-module)
-  - [DeleteReportDefinitionRequestRequestTypeDef](#deletereportdefinitionrequestrequesttypedef)
-  - [DeleteReportDefinitionResponseTypeDef](#deletereportdefinitionresponsetypedef)
-  - [DescribeReportDefinitionsRequestRequestTypeDef](#describereportdefinitionsrequestrequesttypedef)
-  - [DescribeReportDefinitionsResponseTypeDef](#describereportdefinitionsresponsetypedef)
-  - [ModifyReportDefinitionRequestRequestTypeDef](#modifyreportdefinitionrequestrequesttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutReportDefinitionRequestRequestTypeDef](#putreportdefinitionrequestrequesttypedef)
-  - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="deletereportdefinitionrequestrequesttypedef"></a>
+    Auto-generated documentation for [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
+    type annotations stubs module [mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 ## DeleteReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef
+
+def get_value() -> DeleteReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReportName`: `str`
-
-<a id="deletereportdefinitionresponsetypedef"></a>
+```python title="Definition"
+class DeleteReportDefinitionRequestRequestTypeDef(TypedDict):
+    ReportName: NotRequired[str],
+```
 
 ## DeleteReportDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import DeleteReportDefinitionResponseTypeDef
+
+def get_value() -> DeleteReportDefinitionResponseTypeDef:
+    return {
+        "ResponseMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteReportDefinitionResponseTypeDef(TypedDict):
+    ResponseMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ResponseMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
 
-<a id="describereportdefinitionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef
 
+def get_value() -> DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeReportDefinitionsRequestDescribeReportDefinitionsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeReportDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import DescribeReportDefinitionsRequestRequestTypeDef
+
+def get_value() -> DescribeReportDefinitionsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describereportdefinitionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeReportDefinitionsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeReportDefinitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import DescribeReportDefinitionsResponseTypeDef
+
+def get_value() -> DescribeReportDefinitionsResponseTypeDef:
+    return {
+        "ReportDefinitions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeReportDefinitionsResponseTypeDef(TypedDict):
+    ReportDefinitions: List[ReportDefinitionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReportDefinitions`:
-  `List`\[[ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modifyreportdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModifyReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import ModifyReportDefinitionRequestRequestTypeDef
+
+def get_value() -> ModifyReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportName": ...,
+        "ReportDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ModifyReportDefinitionRequestRequestTypeDef(TypedDict):
+    ReportName: str,
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+```
 
-- `ReportName`: `str`
-- `ReportDefinition`:
-  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putreportdefinitionrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutReportDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import PutReportDefinitionRequestRequestTypeDef
+
+def get_value() -> PutReportDefinitionRequestRequestTypeDef:
+    return {
+        "ReportDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutReportDefinitionRequestRequestTypeDef(TypedDict):
+    ReportDefinition: ReportDefinitionTypeDef,  # (1)
+```
 
-- `ReportDefinition`:
-  [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
-
-<a id="reportdefinitiontypedef"></a>
-
+1. See [:material-code-braces: ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef) 
 ## ReportDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import ReportDefinitionTypeDef
+
+def get_value() -> ReportDefinitionTypeDef:
+    return {
+        "ReportName": ...,
+        "TimeUnit": ...,
+        "Format": ...,
+        "Compression": ...,
+        "AdditionalSchemaElements": ...,
+        "S3Bucket": ...,
+        "S3Prefix": ...,
+        "S3Region": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReportDefinitionTypeDef(TypedDict):
+    ReportName: str,
+    TimeUnit: TimeUnitType,  # (1)
+    Format: ReportFormatType,  # (2)
+    Compression: CompressionFormatType,  # (3)
+    AdditionalSchemaElements: List[SchemaElementType],  # (4)
+    S3Bucket: str,
+    S3Prefix: str,
+    S3Region: AWSRegionType,  # (5)
+    AdditionalArtifacts: NotRequired[List[AdditionalArtifactType]],  # (6)
+    RefreshClosedReports: NotRequired[bool],
+    ReportVersioning: NotRequired[ReportVersioningType],  # (7)
+    BillingViewArn: NotRequired[str],
+```
 
-- `ReportName`: `str`
-- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
-- `Format`: [ReportFormatType](./literals.md#reportformattype)
-- `Compression`: [CompressionFormatType](./literals.md#compressionformattype)
-- `AdditionalSchemaElements`: `List`\[`Literal['RESOURCES']` (see
-  [SchemaElementType](./literals.md#schemaelementtype))\]
-- `S3Bucket`: `str`
-- `S3Prefix`: `str`
-- `S3Region`: [AWSRegionType](./literals.md#awsregiontype)
-
-Optional fields:
-
-- `AdditionalArtifacts`:
-  `List`\[[AdditionalArtifactType](./literals.md#additionalartifacttype)\]
-- `RefreshClosedReports`: `bool`
-- `ReportVersioning`:
-  [ReportVersioningType](./literals.md#reportversioningtype)
-- `BillingViewArn`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
+2. See [:material-code-brackets: ReportFormatType](./literals.md#reportformattype) 
+3. See [:material-code-brackets: CompressionFormatType](./literals.md#compressionformattype) 
+4. See [:material-code-brackets: SchemaElementType](./literals.md#schemaelementtype) 
+5. See [:material-code-brackets: AWSRegionType](./literals.md#awsregiontype) 
+6. See [:material-code-brackets: AdditionalArtifactType](./literals.md#additionalartifacttype) 
+7. See [:material-code-brackets: ReportVersioningType](./literals.md#reportversioningtype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cur.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

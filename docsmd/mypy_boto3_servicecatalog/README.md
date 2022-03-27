@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-servicecatalog-module"></a>
-
-# Type annotations for boto3 ServiceCatalog module
+#  ServiceCatalog module
 
 > [Index](../README.md) > ServiceCatalog
 
-Auto-generated documentation for
-[ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
-type annotations stubs module
-[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+!!! note ""
 
-- [Type annotations for boto3 ServiceCatalog module](#type-annotations-for-boto3-servicecatalog-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ServiceCatalogClient](#servicecatalogclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
+    type annotations stubs module [mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ServiceCatalog`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[servicecatalog]'
 python -m pip install mypy-boto3-servicecatalog
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,148 +42,37 @@ python -m pip install mypy-boto3-servicecatalog
 python -m pip uninstall -y mypy-boto3-servicecatalog
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="servicecatalogclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ServiceCatalogClient
 
-Type annotations for `boto3.client("servicecatalog")` as
-[ServiceCatalogClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("servicecatalog")` as [ServiceCatalogClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
+
+def get_client() -> ServiceCatalogClient:
+    return Session().cleint("servicecatalog")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_portfolio_share](./client.md#accept_portfolio_share)
-- [associate_budget_with_resource](./client.md#associate_budget_with_resource)
-- [associate_principal_with_portfolio](./client.md#associate_principal_with_portfolio)
-- [associate_product_with_portfolio](./client.md#associate_product_with_portfolio)
-- [associate_service_action_with_provisioning_artifact](./client.md#associate_service_action_with_provisioning_artifact)
-- [associate_tag_option_with_resource](./client.md#associate_tag_option_with_resource)
-- [batch_associate_service_action_with_provisioning_artifact](./client.md#batch_associate_service_action_with_provisioning_artifact)
-- [batch_disassociate_service_action_from_provisioning_artifact](./client.md#batch_disassociate_service_action_from_provisioning_artifact)
-- [can_paginate](./client.md#can_paginate)
-- [copy_product](./client.md#copy_product)
-- [create_constraint](./client.md#create_constraint)
-- [create_portfolio](./client.md#create_portfolio)
-- [create_portfolio_share](./client.md#create_portfolio_share)
-- [create_product](./client.md#create_product)
-- [create_provisioned_product_plan](./client.md#create_provisioned_product_plan)
-- [create_provisioning_artifact](./client.md#create_provisioning_artifact)
-- [create_service_action](./client.md#create_service_action)
-- [create_tag_option](./client.md#create_tag_option)
-- [delete_constraint](./client.md#delete_constraint)
-- [delete_portfolio](./client.md#delete_portfolio)
-- [delete_portfolio_share](./client.md#delete_portfolio_share)
-- [delete_product](./client.md#delete_product)
-- [delete_provisioned_product_plan](./client.md#delete_provisioned_product_plan)
-- [delete_provisioning_artifact](./client.md#delete_provisioning_artifact)
-- [delete_service_action](./client.md#delete_service_action)
-- [delete_tag_option](./client.md#delete_tag_option)
-- [describe_constraint](./client.md#describe_constraint)
-- [describe_copy_product_status](./client.md#describe_copy_product_status)
-- [describe_portfolio](./client.md#describe_portfolio)
-- [describe_portfolio_share_status](./client.md#describe_portfolio_share_status)
-- [describe_portfolio_shares](./client.md#describe_portfolio_shares)
-- [describe_product](./client.md#describe_product)
-- [describe_product_as_admin](./client.md#describe_product_as_admin)
-- [describe_product_view](./client.md#describe_product_view)
-- [describe_provisioned_product](./client.md#describe_provisioned_product)
-- [describe_provisioned_product_plan](./client.md#describe_provisioned_product_plan)
-- [describe_provisioning_artifact](./client.md#describe_provisioning_artifact)
-- [describe_provisioning_parameters](./client.md#describe_provisioning_parameters)
-- [describe_record](./client.md#describe_record)
-- [describe_service_action](./client.md#describe_service_action)
-- [describe_service_action_execution_parameters](./client.md#describe_service_action_execution_parameters)
-- [describe_tag_option](./client.md#describe_tag_option)
-- [disable_aws_organizations_access](./client.md#disable_aws_organizations_access)
-- [disassociate_budget_from_resource](./client.md#disassociate_budget_from_resource)
-- [disassociate_principal_from_portfolio](./client.md#disassociate_principal_from_portfolio)
-- [disassociate_product_from_portfolio](./client.md#disassociate_product_from_portfolio)
-- [disassociate_service_action_from_provisioning_artifact](./client.md#disassociate_service_action_from_provisioning_artifact)
-- [disassociate_tag_option_from_resource](./client.md#disassociate_tag_option_from_resource)
-- [enable_aws_organizations_access](./client.md#enable_aws_organizations_access)
-- [exceptions](./client.md#exceptions)
-- [execute_provisioned_product_plan](./client.md#execute_provisioned_product_plan)
-- [execute_provisioned_product_service_action](./client.md#execute_provisioned_product_service_action)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_aws_organizations_access_status](./client.md#get_aws_organizations_access_status)
-- [get_paginator](./client.md#get_paginator)
-- [get_provisioned_product_outputs](./client.md#get_provisioned_product_outputs)
-- [import_as_provisioned_product](./client.md#import_as_provisioned_product)
-- [list_accepted_portfolio_shares](./client.md#list_accepted_portfolio_shares)
-- [list_budgets_for_resource](./client.md#list_budgets_for_resource)
-- [list_constraints_for_portfolio](./client.md#list_constraints_for_portfolio)
-- [list_launch_paths](./client.md#list_launch_paths)
-- [list_organization_portfolio_access](./client.md#list_organization_portfolio_access)
-- [list_portfolio_access](./client.md#list_portfolio_access)
-- [list_portfolios](./client.md#list_portfolios)
-- [list_portfolios_for_product](./client.md#list_portfolios_for_product)
-- [list_principals_for_portfolio](./client.md#list_principals_for_portfolio)
-- [list_provisioned_product_plans](./client.md#list_provisioned_product_plans)
-- [list_provisioning_artifacts](./client.md#list_provisioning_artifacts)
-- [list_provisioning_artifacts_for_service_action](./client.md#list_provisioning_artifacts_for_service_action)
-- [list_record_history](./client.md#list_record_history)
-- [list_resources_for_tag_option](./client.md#list_resources_for_tag_option)
-- [list_service_actions](./client.md#list_service_actions)
-- [list_service_actions_for_provisioning_artifact](./client.md#list_service_actions_for_provisioning_artifact)
-- [list_stack_instances_for_provisioned_product](./client.md#list_stack_instances_for_provisioned_product)
-- [list_tag_options](./client.md#list_tag_options)
-- [provision_product](./client.md#provision_product)
-- [reject_portfolio_share](./client.md#reject_portfolio_share)
-- [scan_provisioned_products](./client.md#scan_provisioned_products)
-- [search_products](./client.md#search_products)
-- [search_products_as_admin](./client.md#search_products_as_admin)
-- [search_provisioned_products](./client.md#search_provisioned_products)
-- [terminate_provisioned_product](./client.md#terminate_provisioned_product)
-- [update_constraint](./client.md#update_constraint)
-- [update_portfolio](./client.md#update_portfolio)
-- [update_portfolio_share](./client.md#update_portfolio_share)
-- [update_product](./client.md#update_product)
-- [update_provisioned_product](./client.md#update_provisioned_product)
-- [update_provisioned_product_properties](./client.md#update_provisioned_product_properties)
-- [update_provisioning_artifact](./client.md#update_provisioning_artifact)
-- [update_service_action](./client.md#update_service_action)
-- [update_tag_option](./client.md#update_tag_option)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ServiceCatalogClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DuplicateResourceException
-- InvalidParametersException
-- InvalidStateException
-- LimitExceededException
-- OperationNotSupportedException
-- ResourceInUseException
-- ResourceNotFoundException
-- TagOptionNotMigratedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("servicecatalog").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("servicecatalog").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator, ...
+from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator
+
+def get_list_accepted_portfolio_shares_paginator() -> ListAcceptedPortfolioSharesPaginator:
+    return Session().client("servicecatalog").get_paginator("list_accepted_portfolio_shares"))
 ```
 
 - [ListAcceptedPortfolioSharesPaginator](./paginators.md#listacceptedportfoliosharespaginator)
@@ -225,16 +92,23 @@ from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPagin
 - [ScanProvisionedProductsPaginator](./paginators.md#scanprovisionedproductspaginator)
 - [SearchProductsAsAdminPaginator](./paginators.md#searchproductsasadminpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType
 
-```python
-from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType, ...
+def get_value() -> AccessLevelFilterKeyType:
+    return "Account"
 ```
 
 - [AccessLevelFilterKeyType](./literals.md#accesslevelfilterkeytype)
@@ -291,18 +165,22 @@ from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequestTypeDef
 
-```python
-from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequestTypeDef, ...
+def get_value() -> AcceptPortfolioShareInputRequestTypeDef:
+    return {
+        "PortfolioId": ...,
+    }
 ```
 
 - [AcceptPortfolioShareInputRequestTypeDef](./type_defs.md#acceptportfolioshareinputrequesttypedef)
@@ -397,42 +275,56 @@ from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequest
 - [ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef)
 - [LaunchPathSummaryTypeDef](./type_defs.md#launchpathsummarytypedef)
 - [LaunchPathTypeDef](./type_defs.md#launchpathtypedef)
+- [ListAcceptedPortfolioSharesInputListAcceptedPortfolioSharesPaginateTypeDef](./type_defs.md#listacceptedportfoliosharesinputlistacceptedportfoliosharespaginatetypedef)
 - [ListAcceptedPortfolioSharesInputRequestTypeDef](./type_defs.md#listacceptedportfoliosharesinputrequesttypedef)
 - [ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef)
 - [ListBudgetsForResourceInputRequestTypeDef](./type_defs.md#listbudgetsforresourceinputrequesttypedef)
 - [ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef)
+- [ListConstraintsForPortfolioInputListConstraintsForPortfolioPaginateTypeDef](./type_defs.md#listconstraintsforportfolioinputlistconstraintsforportfoliopaginatetypedef)
 - [ListConstraintsForPortfolioInputRequestTypeDef](./type_defs.md#listconstraintsforportfolioinputrequesttypedef)
 - [ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef)
+- [ListLaunchPathsInputListLaunchPathsPaginateTypeDef](./type_defs.md#listlaunchpathsinputlistlaunchpathspaginatetypedef)
 - [ListLaunchPathsInputRequestTypeDef](./type_defs.md#listlaunchpathsinputrequesttypedef)
 - [ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef)
+- [ListOrganizationPortfolioAccessInputListOrganizationPortfolioAccessPaginateTypeDef](./type_defs.md#listorganizationportfolioaccessinputlistorganizationportfolioaccesspaginatetypedef)
 - [ListOrganizationPortfolioAccessInputRequestTypeDef](./type_defs.md#listorganizationportfolioaccessinputrequesttypedef)
 - [ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef)
 - [ListPortfolioAccessInputRequestTypeDef](./type_defs.md#listportfolioaccessinputrequesttypedef)
 - [ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef)
+- [ListPortfoliosForProductInputListPortfoliosForProductPaginateTypeDef](./type_defs.md#listportfoliosforproductinputlistportfoliosforproductpaginatetypedef)
 - [ListPortfoliosForProductInputRequestTypeDef](./type_defs.md#listportfoliosforproductinputrequesttypedef)
 - [ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef)
+- [ListPortfoliosInputListPortfoliosPaginateTypeDef](./type_defs.md#listportfoliosinputlistportfoliospaginatetypedef)
 - [ListPortfoliosInputRequestTypeDef](./type_defs.md#listportfoliosinputrequesttypedef)
 - [ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef)
+- [ListPrincipalsForPortfolioInputListPrincipalsForPortfolioPaginateTypeDef](./type_defs.md#listprincipalsforportfolioinputlistprincipalsforportfoliopaginatetypedef)
 - [ListPrincipalsForPortfolioInputRequestTypeDef](./type_defs.md#listprincipalsforportfolioinputrequesttypedef)
 - [ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef)
+- [ListProvisionedProductPlansInputListProvisionedProductPlansPaginateTypeDef](./type_defs.md#listprovisionedproductplansinputlistprovisionedproductplanspaginatetypedef)
 - [ListProvisionedProductPlansInputRequestTypeDef](./type_defs.md#listprovisionedproductplansinputrequesttypedef)
 - [ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef)
+- [ListProvisioningArtifactsForServiceActionInputListProvisioningArtifactsForServiceActionPaginateTypeDef](./type_defs.md#listprovisioningartifactsforserviceactioninputlistprovisioningartifactsforserviceactionpaginatetypedef)
 - [ListProvisioningArtifactsForServiceActionInputRequestTypeDef](./type_defs.md#listprovisioningartifactsforserviceactioninputrequesttypedef)
 - [ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef)
 - [ListProvisioningArtifactsInputRequestTypeDef](./type_defs.md#listprovisioningartifactsinputrequesttypedef)
 - [ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef)
+- [ListRecordHistoryInputListRecordHistoryPaginateTypeDef](./type_defs.md#listrecordhistoryinputlistrecordhistorypaginatetypedef)
 - [ListRecordHistoryInputRequestTypeDef](./type_defs.md#listrecordhistoryinputrequesttypedef)
 - [ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef)
 - [ListRecordHistorySearchFilterTypeDef](./type_defs.md#listrecordhistorysearchfiltertypedef)
+- [ListResourcesForTagOptionInputListResourcesForTagOptionPaginateTypeDef](./type_defs.md#listresourcesfortagoptioninputlistresourcesfortagoptionpaginatetypedef)
 - [ListResourcesForTagOptionInputRequestTypeDef](./type_defs.md#listresourcesfortagoptioninputrequesttypedef)
 - [ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef)
+- [ListServiceActionsForProvisioningArtifactInputListServiceActionsForProvisioningArtifactPaginateTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactinputlistserviceactionsforprovisioningartifactpaginatetypedef)
 - [ListServiceActionsForProvisioningArtifactInputRequestTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactinputrequesttypedef)
 - [ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef)
+- [ListServiceActionsInputListServiceActionsPaginateTypeDef](./type_defs.md#listserviceactionsinputlistserviceactionspaginatetypedef)
 - [ListServiceActionsInputRequestTypeDef](./type_defs.md#listserviceactionsinputrequesttypedef)
 - [ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef)
 - [ListStackInstancesForProvisionedProductInputRequestTypeDef](./type_defs.md#liststackinstancesforprovisionedproductinputrequesttypedef)
 - [ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef)
 - [ListTagOptionsFiltersTypeDef](./type_defs.md#listtagoptionsfilterstypedef)
+- [ListTagOptionsInputListTagOptionsPaginateTypeDef](./type_defs.md#listtagoptionsinputlisttagoptionspaginatetypedef)
 - [ListTagOptionsInputRequestTypeDef](./type_defs.md#listtagoptionsinputrequesttypedef)
 - [ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef)
 - [OrganizationNodeTypeDef](./type_defs.md#organizationnodetypedef)
@@ -471,8 +363,10 @@ from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequest
 - [ResourceTargetDefinitionTypeDef](./type_defs.md#resourcetargetdefinitiontypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ScanProvisionedProductsInputRequestTypeDef](./type_defs.md#scanprovisionedproductsinputrequesttypedef)
+- [ScanProvisionedProductsInputScanProvisionedProductsPaginateTypeDef](./type_defs.md#scanprovisionedproductsinputscanprovisionedproductspaginatetypedef)
 - [ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef)
 - [SearchProductsAsAdminInputRequestTypeDef](./type_defs.md#searchproductsasadmininputrequesttypedef)
+- [SearchProductsAsAdminInputSearchProductsAsAdminPaginateTypeDef](./type_defs.md#searchproductsasadmininputsearchproductsasadminpaginatetypedef)
 - [SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef)
 - [SearchProductsInputRequestTypeDef](./type_defs.md#searchproductsinputrequesttypedef)
 - [SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef)
@@ -510,3 +404,4 @@ from mypy_boto3_servicecatalog.type_defs import AcceptPortfolioShareInputRequest
 - [UpdateTagOptionInputRequestTypeDef](./type_defs.md#updatetagoptioninputrequesttypedef)
 - [UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef)
 - [UsageInstructionTypeDef](./type_defs.md#usageinstructiontypedef)
+

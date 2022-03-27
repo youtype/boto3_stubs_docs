@@ -1,47 +1,20 @@
-<a id="type-annotations-for-boto3-ec2-module"></a>
-
-# Type annotations for boto3 EC2 module
+#  EC2 module
 
 > [Index](../README.md) > EC2
 
-Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module
-[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
+!!! note ""
 
-- [Type annotations for boto3 EC2 module](#type-annotations-for-boto3-ec2-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-    - [From conda-forge](#from-conda-forge)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [EC2Client](#ec2client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [EC2ServiceResource](#ec2serviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+    type annotations stubs module [mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `EC2`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -61,33 +34,31 @@ python -m pip install 'boto3-stubs-lite[ec2]'
 python -m pip install mypy-boto3-ec2
 ```
 
-<a id="from-conda-forge"></a>
 
 ### From conda-forge
 
-Installing `mypy-boto3-ec2` from the `conda-forge` channel can be achieved by
-adding `conda-forge` to your channels with:
+Installing `mypy-boto3-ec2` from the `conda-forge` channel
+can be achieved by adding `conda-forge` to your channels with:
 
 ```bash
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mypy-boto3-ec2` can be
-installed with:
+Once the `conda-forge` channel has been enabled, `mypy-boto3-ec2`
+can be installed with:
 
 ```bash
 conda install mypy-boto3-ec2
 ```
 
-It is possible to list all of the versions of `mypy-boto3-ec2` available on
-your platform with:
+It is possible to list all of the versions of `mypy-boto3-ec2`
+available on your platform with:
 
 ```bash
 conda search mypy-boto3-ec2 --channel conda-forge
 ```
 
-<a id="how-to-uninstall"></a>
 
 ## How to uninstall
 
@@ -95,652 +66,37 @@ conda search mypy-boto3-ec2 --channel conda-forge
 python -m pip uninstall -y mypy-boto3-ec2
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ec2client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## EC2Client
 
-Type annotations for `boto3.client("ec2")` as [EC2Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ec2")` as [EC2Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ec2.client import EC2Client
+
+def get_client() -> EC2Client:
+    return Session().cleint("ec2")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_reserved_instances_exchange_quote](./client.md#accept_reserved_instances_exchange_quote)
-- [accept_transit_gateway_multicast_domain_associations](./client.md#accept_transit_gateway_multicast_domain_associations)
-- [accept_transit_gateway_peering_attachment](./client.md#accept_transit_gateway_peering_attachment)
-- [accept_transit_gateway_vpc_attachment](./client.md#accept_transit_gateway_vpc_attachment)
-- [accept_vpc_endpoint_connections](./client.md#accept_vpc_endpoint_connections)
-- [accept_vpc_peering_connection](./client.md#accept_vpc_peering_connection)
-- [advertise_byoip_cidr](./client.md#advertise_byoip_cidr)
-- [allocate_address](./client.md#allocate_address)
-- [allocate_hosts](./client.md#allocate_hosts)
-- [allocate_ipam_pool_cidr](./client.md#allocate_ipam_pool_cidr)
-- [apply_security_groups_to_client_vpn_target_network](./client.md#apply_security_groups_to_client_vpn_target_network)
-- [assign_ipv6_addresses](./client.md#assign_ipv6_addresses)
-- [assign_private_ip_addresses](./client.md#assign_private_ip_addresses)
-- [associate_address](./client.md#associate_address)
-- [associate_client_vpn_target_network](./client.md#associate_client_vpn_target_network)
-- [associate_dhcp_options](./client.md#associate_dhcp_options)
-- [associate_enclave_certificate_iam_role](./client.md#associate_enclave_certificate_iam_role)
-- [associate_iam_instance_profile](./client.md#associate_iam_instance_profile)
-- [associate_instance_event_window](./client.md#associate_instance_event_window)
-- [associate_route_table](./client.md#associate_route_table)
-- [associate_subnet_cidr_block](./client.md#associate_subnet_cidr_block)
-- [associate_transit_gateway_multicast_domain](./client.md#associate_transit_gateway_multicast_domain)
-- [associate_transit_gateway_route_table](./client.md#associate_transit_gateway_route_table)
-- [associate_trunk_interface](./client.md#associate_trunk_interface)
-- [associate_vpc_cidr_block](./client.md#associate_vpc_cidr_block)
-- [attach_classic_link_vpc](./client.md#attach_classic_link_vpc)
-- [attach_internet_gateway](./client.md#attach_internet_gateway)
-- [attach_network_interface](./client.md#attach_network_interface)
-- [attach_volume](./client.md#attach_volume)
-- [attach_vpn_gateway](./client.md#attach_vpn_gateway)
-- [authorize_client_vpn_ingress](./client.md#authorize_client_vpn_ingress)
-- [authorize_security_group_egress](./client.md#authorize_security_group_egress)
-- [authorize_security_group_ingress](./client.md#authorize_security_group_ingress)
-- [bundle_instance](./client.md#bundle_instance)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_bundle_task](./client.md#cancel_bundle_task)
-- [cancel_capacity_reservation](./client.md#cancel_capacity_reservation)
-- [cancel_capacity_reservation_fleets](./client.md#cancel_capacity_reservation_fleets)
-- [cancel_conversion_task](./client.md#cancel_conversion_task)
-- [cancel_export_task](./client.md#cancel_export_task)
-- [cancel_import_task](./client.md#cancel_import_task)
-- [cancel_reserved_instances_listing](./client.md#cancel_reserved_instances_listing)
-- [cancel_spot_fleet_requests](./client.md#cancel_spot_fleet_requests)
-- [cancel_spot_instance_requests](./client.md#cancel_spot_instance_requests)
-- [confirm_product_instance](./client.md#confirm_product_instance)
-- [copy_fpga_image](./client.md#copy_fpga_image)
-- [copy_image](./client.md#copy_image)
-- [copy_snapshot](./client.md#copy_snapshot)
-- [create_capacity_reservation](./client.md#create_capacity_reservation)
-- [create_capacity_reservation_fleet](./client.md#create_capacity_reservation_fleet)
-- [create_carrier_gateway](./client.md#create_carrier_gateway)
-- [create_client_vpn_endpoint](./client.md#create_client_vpn_endpoint)
-- [create_client_vpn_route](./client.md#create_client_vpn_route)
-- [create_customer_gateway](./client.md#create_customer_gateway)
-- [create_default_subnet](./client.md#create_default_subnet)
-- [create_default_vpc](./client.md#create_default_vpc)
-- [create_dhcp_options](./client.md#create_dhcp_options)
-- [create_egress_only_internet_gateway](./client.md#create_egress_only_internet_gateway)
-- [create_fleet](./client.md#create_fleet)
-- [create_flow_logs](./client.md#create_flow_logs)
-- [create_fpga_image](./client.md#create_fpga_image)
-- [create_image](./client.md#create_image)
-- [create_instance_event_window](./client.md#create_instance_event_window)
-- [create_instance_export_task](./client.md#create_instance_export_task)
-- [create_internet_gateway](./client.md#create_internet_gateway)
-- [create_ipam](./client.md#create_ipam)
-- [create_ipam_pool](./client.md#create_ipam_pool)
-- [create_ipam_scope](./client.md#create_ipam_scope)
-- [create_key_pair](./client.md#create_key_pair)
-- [create_launch_template](./client.md#create_launch_template)
-- [create_launch_template_version](./client.md#create_launch_template_version)
-- [create_local_gateway_route](./client.md#create_local_gateway_route)
-- [create_local_gateway_route_table_vpc_association](./client.md#create_local_gateway_route_table_vpc_association)
-- [create_managed_prefix_list](./client.md#create_managed_prefix_list)
-- [create_nat_gateway](./client.md#create_nat_gateway)
-- [create_network_acl](./client.md#create_network_acl)
-- [create_network_acl_entry](./client.md#create_network_acl_entry)
-- [create_network_insights_access_scope](./client.md#create_network_insights_access_scope)
-- [create_network_insights_path](./client.md#create_network_insights_path)
-- [create_network_interface](./client.md#create_network_interface)
-- [create_network_interface_permission](./client.md#create_network_interface_permission)
-- [create_placement_group](./client.md#create_placement_group)
-- [create_public_ipv4_pool](./client.md#create_public_ipv4_pool)
-- [create_replace_root_volume_task](./client.md#create_replace_root_volume_task)
-- [create_reserved_instances_listing](./client.md#create_reserved_instances_listing)
-- [create_restore_image_task](./client.md#create_restore_image_task)
-- [create_route](./client.md#create_route)
-- [create_route_table](./client.md#create_route_table)
-- [create_security_group](./client.md#create_security_group)
-- [create_snapshot](./client.md#create_snapshot)
-- [create_snapshots](./client.md#create_snapshots)
-- [create_spot_datafeed_subscription](./client.md#create_spot_datafeed_subscription)
-- [create_store_image_task](./client.md#create_store_image_task)
-- [create_subnet](./client.md#create_subnet)
-- [create_subnet_cidr_reservation](./client.md#create_subnet_cidr_reservation)
-- [create_tags](./client.md#create_tags)
-- [create_traffic_mirror_filter](./client.md#create_traffic_mirror_filter)
-- [create_traffic_mirror_filter_rule](./client.md#create_traffic_mirror_filter_rule)
-- [create_traffic_mirror_session](./client.md#create_traffic_mirror_session)
-- [create_traffic_mirror_target](./client.md#create_traffic_mirror_target)
-- [create_transit_gateway](./client.md#create_transit_gateway)
-- [create_transit_gateway_connect](./client.md#create_transit_gateway_connect)
-- [create_transit_gateway_connect_peer](./client.md#create_transit_gateway_connect_peer)
-- [create_transit_gateway_multicast_domain](./client.md#create_transit_gateway_multicast_domain)
-- [create_transit_gateway_peering_attachment](./client.md#create_transit_gateway_peering_attachment)
-- [create_transit_gateway_prefix_list_reference](./client.md#create_transit_gateway_prefix_list_reference)
-- [create_transit_gateway_route](./client.md#create_transit_gateway_route)
-- [create_transit_gateway_route_table](./client.md#create_transit_gateway_route_table)
-- [create_transit_gateway_vpc_attachment](./client.md#create_transit_gateway_vpc_attachment)
-- [create_volume](./client.md#create_volume)
-- [create_vpc](./client.md#create_vpc)
-- [create_vpc_endpoint](./client.md#create_vpc_endpoint)
-- [create_vpc_endpoint_connection_notification](./client.md#create_vpc_endpoint_connection_notification)
-- [create_vpc_endpoint_service_configuration](./client.md#create_vpc_endpoint_service_configuration)
-- [create_vpc_peering_connection](./client.md#create_vpc_peering_connection)
-- [create_vpn_connection](./client.md#create_vpn_connection)
-- [create_vpn_connection_route](./client.md#create_vpn_connection_route)
-- [create_vpn_gateway](./client.md#create_vpn_gateway)
-- [delete_carrier_gateway](./client.md#delete_carrier_gateway)
-- [delete_client_vpn_endpoint](./client.md#delete_client_vpn_endpoint)
-- [delete_client_vpn_route](./client.md#delete_client_vpn_route)
-- [delete_customer_gateway](./client.md#delete_customer_gateway)
-- [delete_dhcp_options](./client.md#delete_dhcp_options)
-- [delete_egress_only_internet_gateway](./client.md#delete_egress_only_internet_gateway)
-- [delete_fleets](./client.md#delete_fleets)
-- [delete_flow_logs](./client.md#delete_flow_logs)
-- [delete_fpga_image](./client.md#delete_fpga_image)
-- [delete_instance_event_window](./client.md#delete_instance_event_window)
-- [delete_internet_gateway](./client.md#delete_internet_gateway)
-- [delete_ipam](./client.md#delete_ipam)
-- [delete_ipam_pool](./client.md#delete_ipam_pool)
-- [delete_ipam_scope](./client.md#delete_ipam_scope)
-- [delete_key_pair](./client.md#delete_key_pair)
-- [delete_launch_template](./client.md#delete_launch_template)
-- [delete_launch_template_versions](./client.md#delete_launch_template_versions)
-- [delete_local_gateway_route](./client.md#delete_local_gateway_route)
-- [delete_local_gateway_route_table_vpc_association](./client.md#delete_local_gateway_route_table_vpc_association)
-- [delete_managed_prefix_list](./client.md#delete_managed_prefix_list)
-- [delete_nat_gateway](./client.md#delete_nat_gateway)
-- [delete_network_acl](./client.md#delete_network_acl)
-- [delete_network_acl_entry](./client.md#delete_network_acl_entry)
-- [delete_network_insights_access_scope](./client.md#delete_network_insights_access_scope)
-- [delete_network_insights_access_scope_analysis](./client.md#delete_network_insights_access_scope_analysis)
-- [delete_network_insights_analysis](./client.md#delete_network_insights_analysis)
-- [delete_network_insights_path](./client.md#delete_network_insights_path)
-- [delete_network_interface](./client.md#delete_network_interface)
-- [delete_network_interface_permission](./client.md#delete_network_interface_permission)
-- [delete_placement_group](./client.md#delete_placement_group)
-- [delete_public_ipv4_pool](./client.md#delete_public_ipv4_pool)
-- [delete_queued_reserved_instances](./client.md#delete_queued_reserved_instances)
-- [delete_route](./client.md#delete_route)
-- [delete_route_table](./client.md#delete_route_table)
-- [delete_security_group](./client.md#delete_security_group)
-- [delete_snapshot](./client.md#delete_snapshot)
-- [delete_spot_datafeed_subscription](./client.md#delete_spot_datafeed_subscription)
-- [delete_subnet](./client.md#delete_subnet)
-- [delete_subnet_cidr_reservation](./client.md#delete_subnet_cidr_reservation)
-- [delete_tags](./client.md#delete_tags)
-- [delete_traffic_mirror_filter](./client.md#delete_traffic_mirror_filter)
-- [delete_traffic_mirror_filter_rule](./client.md#delete_traffic_mirror_filter_rule)
-- [delete_traffic_mirror_session](./client.md#delete_traffic_mirror_session)
-- [delete_traffic_mirror_target](./client.md#delete_traffic_mirror_target)
-- [delete_transit_gateway](./client.md#delete_transit_gateway)
-- [delete_transit_gateway_connect](./client.md#delete_transit_gateway_connect)
-- [delete_transit_gateway_connect_peer](./client.md#delete_transit_gateway_connect_peer)
-- [delete_transit_gateway_multicast_domain](./client.md#delete_transit_gateway_multicast_domain)
-- [delete_transit_gateway_peering_attachment](./client.md#delete_transit_gateway_peering_attachment)
-- [delete_transit_gateway_prefix_list_reference](./client.md#delete_transit_gateway_prefix_list_reference)
-- [delete_transit_gateway_route](./client.md#delete_transit_gateway_route)
-- [delete_transit_gateway_route_table](./client.md#delete_transit_gateway_route_table)
-- [delete_transit_gateway_vpc_attachment](./client.md#delete_transit_gateway_vpc_attachment)
-- [delete_volume](./client.md#delete_volume)
-- [delete_vpc](./client.md#delete_vpc)
-- [delete_vpc_endpoint_connection_notifications](./client.md#delete_vpc_endpoint_connection_notifications)
-- [delete_vpc_endpoint_service_configurations](./client.md#delete_vpc_endpoint_service_configurations)
-- [delete_vpc_endpoints](./client.md#delete_vpc_endpoints)
-- [delete_vpc_peering_connection](./client.md#delete_vpc_peering_connection)
-- [delete_vpn_connection](./client.md#delete_vpn_connection)
-- [delete_vpn_connection_route](./client.md#delete_vpn_connection_route)
-- [delete_vpn_gateway](./client.md#delete_vpn_gateway)
-- [deprovision_byoip_cidr](./client.md#deprovision_byoip_cidr)
-- [deprovision_ipam_pool_cidr](./client.md#deprovision_ipam_pool_cidr)
-- [deprovision_public_ipv4_pool_cidr](./client.md#deprovision_public_ipv4_pool_cidr)
-- [deregister_image](./client.md#deregister_image)
-- [deregister_instance_event_notification_attributes](./client.md#deregister_instance_event_notification_attributes)
-- [deregister_transit_gateway_multicast_group_members](./client.md#deregister_transit_gateway_multicast_group_members)
-- [deregister_transit_gateway_multicast_group_sources](./client.md#deregister_transit_gateway_multicast_group_sources)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_addresses](./client.md#describe_addresses)
-- [describe_addresses_attribute](./client.md#describe_addresses_attribute)
-- [describe_aggregate_id_format](./client.md#describe_aggregate_id_format)
-- [describe_availability_zones](./client.md#describe_availability_zones)
-- [describe_bundle_tasks](./client.md#describe_bundle_tasks)
-- [describe_byoip_cidrs](./client.md#describe_byoip_cidrs)
-- [describe_capacity_reservation_fleets](./client.md#describe_capacity_reservation_fleets)
-- [describe_capacity_reservations](./client.md#describe_capacity_reservations)
-- [describe_carrier_gateways](./client.md#describe_carrier_gateways)
-- [describe_classic_link_instances](./client.md#describe_classic_link_instances)
-- [describe_client_vpn_authorization_rules](./client.md#describe_client_vpn_authorization_rules)
-- [describe_client_vpn_connections](./client.md#describe_client_vpn_connections)
-- [describe_client_vpn_endpoints](./client.md#describe_client_vpn_endpoints)
-- [describe_client_vpn_routes](./client.md#describe_client_vpn_routes)
-- [describe_client_vpn_target_networks](./client.md#describe_client_vpn_target_networks)
-- [describe_coip_pools](./client.md#describe_coip_pools)
-- [describe_conversion_tasks](./client.md#describe_conversion_tasks)
-- [describe_customer_gateways](./client.md#describe_customer_gateways)
-- [describe_dhcp_options](./client.md#describe_dhcp_options)
-- [describe_egress_only_internet_gateways](./client.md#describe_egress_only_internet_gateways)
-- [describe_elastic_gpus](./client.md#describe_elastic_gpus)
-- [describe_export_image_tasks](./client.md#describe_export_image_tasks)
-- [describe_export_tasks](./client.md#describe_export_tasks)
-- [describe_fast_launch_images](./client.md#describe_fast_launch_images)
-- [describe_fast_snapshot_restores](./client.md#describe_fast_snapshot_restores)
-- [describe_fleet_history](./client.md#describe_fleet_history)
-- [describe_fleet_instances](./client.md#describe_fleet_instances)
-- [describe_fleets](./client.md#describe_fleets)
-- [describe_flow_logs](./client.md#describe_flow_logs)
-- [describe_fpga_image_attribute](./client.md#describe_fpga_image_attribute)
-- [describe_fpga_images](./client.md#describe_fpga_images)
-- [describe_host_reservation_offerings](./client.md#describe_host_reservation_offerings)
-- [describe_host_reservations](./client.md#describe_host_reservations)
-- [describe_hosts](./client.md#describe_hosts)
-- [describe_iam_instance_profile_associations](./client.md#describe_iam_instance_profile_associations)
-- [describe_id_format](./client.md#describe_id_format)
-- [describe_identity_id_format](./client.md#describe_identity_id_format)
-- [describe_image_attribute](./client.md#describe_image_attribute)
-- [describe_images](./client.md#describe_images)
-- [describe_import_image_tasks](./client.md#describe_import_image_tasks)
-- [describe_import_snapshot_tasks](./client.md#describe_import_snapshot_tasks)
-- [describe_instance_attribute](./client.md#describe_instance_attribute)
-- [describe_instance_credit_specifications](./client.md#describe_instance_credit_specifications)
-- [describe_instance_event_notification_attributes](./client.md#describe_instance_event_notification_attributes)
-- [describe_instance_event_windows](./client.md#describe_instance_event_windows)
-- [describe_instance_status](./client.md#describe_instance_status)
-- [describe_instance_type_offerings](./client.md#describe_instance_type_offerings)
-- [describe_instance_types](./client.md#describe_instance_types)
-- [describe_instances](./client.md#describe_instances)
-- [describe_internet_gateways](./client.md#describe_internet_gateways)
-- [describe_ipam_pools](./client.md#describe_ipam_pools)
-- [describe_ipam_scopes](./client.md#describe_ipam_scopes)
-- [describe_ipams](./client.md#describe_ipams)
-- [describe_ipv6_pools](./client.md#describe_ipv6_pools)
-- [describe_key_pairs](./client.md#describe_key_pairs)
-- [describe_launch_template_versions](./client.md#describe_launch_template_versions)
-- [describe_launch_templates](./client.md#describe_launch_templates)
-- [describe_local_gateway_route_table_virtual_interface_group_associations](./client.md#describe_local_gateway_route_table_virtual_interface_group_associations)
-- [describe_local_gateway_route_table_vpc_associations](./client.md#describe_local_gateway_route_table_vpc_associations)
-- [describe_local_gateway_route_tables](./client.md#describe_local_gateway_route_tables)
-- [describe_local_gateway_virtual_interface_groups](./client.md#describe_local_gateway_virtual_interface_groups)
-- [describe_local_gateway_virtual_interfaces](./client.md#describe_local_gateway_virtual_interfaces)
-- [describe_local_gateways](./client.md#describe_local_gateways)
-- [describe_managed_prefix_lists](./client.md#describe_managed_prefix_lists)
-- [describe_moving_addresses](./client.md#describe_moving_addresses)
-- [describe_nat_gateways](./client.md#describe_nat_gateways)
-- [describe_network_acls](./client.md#describe_network_acls)
-- [describe_network_insights_access_scope_analyses](./client.md#describe_network_insights_access_scope_analyses)
-- [describe_network_insights_access_scopes](./client.md#describe_network_insights_access_scopes)
-- [describe_network_insights_analyses](./client.md#describe_network_insights_analyses)
-- [describe_network_insights_paths](./client.md#describe_network_insights_paths)
-- [describe_network_interface_attribute](./client.md#describe_network_interface_attribute)
-- [describe_network_interface_permissions](./client.md#describe_network_interface_permissions)
-- [describe_network_interfaces](./client.md#describe_network_interfaces)
-- [describe_placement_groups](./client.md#describe_placement_groups)
-- [describe_prefix_lists](./client.md#describe_prefix_lists)
-- [describe_principal_id_format](./client.md#describe_principal_id_format)
-- [describe_public_ipv4_pools](./client.md#describe_public_ipv4_pools)
-- [describe_regions](./client.md#describe_regions)
-- [describe_replace_root_volume_tasks](./client.md#describe_replace_root_volume_tasks)
-- [describe_reserved_instances](./client.md#describe_reserved_instances)
-- [describe_reserved_instances_listings](./client.md#describe_reserved_instances_listings)
-- [describe_reserved_instances_modifications](./client.md#describe_reserved_instances_modifications)
-- [describe_reserved_instances_offerings](./client.md#describe_reserved_instances_offerings)
-- [describe_route_tables](./client.md#describe_route_tables)
-- [describe_scheduled_instance_availability](./client.md#describe_scheduled_instance_availability)
-- [describe_scheduled_instances](./client.md#describe_scheduled_instances)
-- [describe_security_group_references](./client.md#describe_security_group_references)
-- [describe_security_group_rules](./client.md#describe_security_group_rules)
-- [describe_security_groups](./client.md#describe_security_groups)
-- [describe_snapshot_attribute](./client.md#describe_snapshot_attribute)
-- [describe_snapshot_tier_status](./client.md#describe_snapshot_tier_status)
-- [describe_snapshots](./client.md#describe_snapshots)
-- [describe_spot_datafeed_subscription](./client.md#describe_spot_datafeed_subscription)
-- [describe_spot_fleet_instances](./client.md#describe_spot_fleet_instances)
-- [describe_spot_fleet_request_history](./client.md#describe_spot_fleet_request_history)
-- [describe_spot_fleet_requests](./client.md#describe_spot_fleet_requests)
-- [describe_spot_instance_requests](./client.md#describe_spot_instance_requests)
-- [describe_spot_price_history](./client.md#describe_spot_price_history)
-- [describe_stale_security_groups](./client.md#describe_stale_security_groups)
-- [describe_store_image_tasks](./client.md#describe_store_image_tasks)
-- [describe_subnets](./client.md#describe_subnets)
-- [describe_tags](./client.md#describe_tags)
-- [describe_traffic_mirror_filters](./client.md#describe_traffic_mirror_filters)
-- [describe_traffic_mirror_sessions](./client.md#describe_traffic_mirror_sessions)
-- [describe_traffic_mirror_targets](./client.md#describe_traffic_mirror_targets)
-- [describe_transit_gateway_attachments](./client.md#describe_transit_gateway_attachments)
-- [describe_transit_gateway_connect_peers](./client.md#describe_transit_gateway_connect_peers)
-- [describe_transit_gateway_connects](./client.md#describe_transit_gateway_connects)
-- [describe_transit_gateway_multicast_domains](./client.md#describe_transit_gateway_multicast_domains)
-- [describe_transit_gateway_peering_attachments](./client.md#describe_transit_gateway_peering_attachments)
-- [describe_transit_gateway_route_tables](./client.md#describe_transit_gateway_route_tables)
-- [describe_transit_gateway_vpc_attachments](./client.md#describe_transit_gateway_vpc_attachments)
-- [describe_transit_gateways](./client.md#describe_transit_gateways)
-- [describe_trunk_interface_associations](./client.md#describe_trunk_interface_associations)
-- [describe_volume_attribute](./client.md#describe_volume_attribute)
-- [describe_volume_status](./client.md#describe_volume_status)
-- [describe_volumes](./client.md#describe_volumes)
-- [describe_volumes_modifications](./client.md#describe_volumes_modifications)
-- [describe_vpc_attribute](./client.md#describe_vpc_attribute)
-- [describe_vpc_classic_link](./client.md#describe_vpc_classic_link)
-- [describe_vpc_classic_link_dns_support](./client.md#describe_vpc_classic_link_dns_support)
-- [describe_vpc_endpoint_connection_notifications](./client.md#describe_vpc_endpoint_connection_notifications)
-- [describe_vpc_endpoint_connections](./client.md#describe_vpc_endpoint_connections)
-- [describe_vpc_endpoint_service_configurations](./client.md#describe_vpc_endpoint_service_configurations)
-- [describe_vpc_endpoint_service_permissions](./client.md#describe_vpc_endpoint_service_permissions)
-- [describe_vpc_endpoint_services](./client.md#describe_vpc_endpoint_services)
-- [describe_vpc_endpoints](./client.md#describe_vpc_endpoints)
-- [describe_vpc_peering_connections](./client.md#describe_vpc_peering_connections)
-- [describe_vpcs](./client.md#describe_vpcs)
-- [describe_vpn_connections](./client.md#describe_vpn_connections)
-- [describe_vpn_gateways](./client.md#describe_vpn_gateways)
-- [detach_classic_link_vpc](./client.md#detach_classic_link_vpc)
-- [detach_internet_gateway](./client.md#detach_internet_gateway)
-- [detach_network_interface](./client.md#detach_network_interface)
-- [detach_volume](./client.md#detach_volume)
-- [detach_vpn_gateway](./client.md#detach_vpn_gateway)
-- [disable_ebs_encryption_by_default](./client.md#disable_ebs_encryption_by_default)
-- [disable_fast_launch](./client.md#disable_fast_launch)
-- [disable_fast_snapshot_restores](./client.md#disable_fast_snapshot_restores)
-- [disable_image_deprecation](./client.md#disable_image_deprecation)
-- [disable_ipam_organization_admin_account](./client.md#disable_ipam_organization_admin_account)
-- [disable_serial_console_access](./client.md#disable_serial_console_access)
-- [disable_transit_gateway_route_table_propagation](./client.md#disable_transit_gateway_route_table_propagation)
-- [disable_vgw_route_propagation](./client.md#disable_vgw_route_propagation)
-- [disable_vpc_classic_link](./client.md#disable_vpc_classic_link)
-- [disable_vpc_classic_link_dns_support](./client.md#disable_vpc_classic_link_dns_support)
-- [disassociate_address](./client.md#disassociate_address)
-- [disassociate_client_vpn_target_network](./client.md#disassociate_client_vpn_target_network)
-- [disassociate_enclave_certificate_iam_role](./client.md#disassociate_enclave_certificate_iam_role)
-- [disassociate_iam_instance_profile](./client.md#disassociate_iam_instance_profile)
-- [disassociate_instance_event_window](./client.md#disassociate_instance_event_window)
-- [disassociate_route_table](./client.md#disassociate_route_table)
-- [disassociate_subnet_cidr_block](./client.md#disassociate_subnet_cidr_block)
-- [disassociate_transit_gateway_multicast_domain](./client.md#disassociate_transit_gateway_multicast_domain)
-- [disassociate_transit_gateway_route_table](./client.md#disassociate_transit_gateway_route_table)
-- [disassociate_trunk_interface](./client.md#disassociate_trunk_interface)
-- [disassociate_vpc_cidr_block](./client.md#disassociate_vpc_cidr_block)
-- [enable_ebs_encryption_by_default](./client.md#enable_ebs_encryption_by_default)
-- [enable_fast_launch](./client.md#enable_fast_launch)
-- [enable_fast_snapshot_restores](./client.md#enable_fast_snapshot_restores)
-- [enable_image_deprecation](./client.md#enable_image_deprecation)
-- [enable_ipam_organization_admin_account](./client.md#enable_ipam_organization_admin_account)
-- [enable_serial_console_access](./client.md#enable_serial_console_access)
-- [enable_transit_gateway_route_table_propagation](./client.md#enable_transit_gateway_route_table_propagation)
-- [enable_vgw_route_propagation](./client.md#enable_vgw_route_propagation)
-- [enable_volume_io](./client.md#enable_volume_io)
-- [enable_vpc_classic_link](./client.md#enable_vpc_classic_link)
-- [enable_vpc_classic_link_dns_support](./client.md#enable_vpc_classic_link_dns_support)
-- [exceptions](./client.md#exceptions)
-- [export_client_vpn_client_certificate_revocation_list](./client.md#export_client_vpn_client_certificate_revocation_list)
-- [export_client_vpn_client_configuration](./client.md#export_client_vpn_client_configuration)
-- [export_image](./client.md#export_image)
-- [export_transit_gateway_routes](./client.md#export_transit_gateway_routes)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_associated_enclave_certificate_iam_roles](./client.md#get_associated_enclave_certificate_iam_roles)
-- [get_associated_ipv6_pool_cidrs](./client.md#get_associated_ipv6_pool_cidrs)
-- [get_capacity_reservation_usage](./client.md#get_capacity_reservation_usage)
-- [get_coip_pool_usage](./client.md#get_coip_pool_usage)
-- [get_console_output](./client.md#get_console_output)
-- [get_console_screenshot](./client.md#get_console_screenshot)
-- [get_default_credit_specification](./client.md#get_default_credit_specification)
-- [get_ebs_default_kms_key_id](./client.md#get_ebs_default_kms_key_id)
-- [get_ebs_encryption_by_default](./client.md#get_ebs_encryption_by_default)
-- [get_flow_logs_integration_template](./client.md#get_flow_logs_integration_template)
-- [get_groups_for_capacity_reservation](./client.md#get_groups_for_capacity_reservation)
-- [get_host_reservation_purchase_preview](./client.md#get_host_reservation_purchase_preview)
-- [get_instance_types_from_instance_requirements](./client.md#get_instance_types_from_instance_requirements)
-- [get_ipam_address_history](./client.md#get_ipam_address_history)
-- [get_ipam_pool_allocations](./client.md#get_ipam_pool_allocations)
-- [get_ipam_pool_cidrs](./client.md#get_ipam_pool_cidrs)
-- [get_ipam_resource_cidrs](./client.md#get_ipam_resource_cidrs)
-- [get_launch_template_data](./client.md#get_launch_template_data)
-- [get_managed_prefix_list_associations](./client.md#get_managed_prefix_list_associations)
-- [get_managed_prefix_list_entries](./client.md#get_managed_prefix_list_entries)
-- [get_network_insights_access_scope_analysis_findings](./client.md#get_network_insights_access_scope_analysis_findings)
-- [get_network_insights_access_scope_content](./client.md#get_network_insights_access_scope_content)
-- [get_paginator](./client.md#get_paginator)
-- [get_password_data](./client.md#get_password_data)
-- [get_reserved_instances_exchange_quote](./client.md#get_reserved_instances_exchange_quote)
-- [get_serial_console_access_status](./client.md#get_serial_console_access_status)
-- [get_spot_placement_scores](./client.md#get_spot_placement_scores)
-- [get_subnet_cidr_reservations](./client.md#get_subnet_cidr_reservations)
-- [get_transit_gateway_attachment_propagations](./client.md#get_transit_gateway_attachment_propagations)
-- [get_transit_gateway_multicast_domain_associations](./client.md#get_transit_gateway_multicast_domain_associations)
-- [get_transit_gateway_prefix_list_references](./client.md#get_transit_gateway_prefix_list_references)
-- [get_transit_gateway_route_table_associations](./client.md#get_transit_gateway_route_table_associations)
-- [get_transit_gateway_route_table_propagations](./client.md#get_transit_gateway_route_table_propagations)
-- [get_vpn_connection_device_sample_configuration](./client.md#get_vpn_connection_device_sample_configuration)
-- [get_vpn_connection_device_types](./client.md#get_vpn_connection_device_types)
-- [get_waiter](./client.md#get_waiter)
-- [import_client_vpn_client_certificate_revocation_list](./client.md#import_client_vpn_client_certificate_revocation_list)
-- [import_image](./client.md#import_image)
-- [import_instance](./client.md#import_instance)
-- [import_key_pair](./client.md#import_key_pair)
-- [import_snapshot](./client.md#import_snapshot)
-- [import_volume](./client.md#import_volume)
-- [list_images_in_recycle_bin](./client.md#list_images_in_recycle_bin)
-- [list_snapshots_in_recycle_bin](./client.md#list_snapshots_in_recycle_bin)
-- [modify_address_attribute](./client.md#modify_address_attribute)
-- [modify_availability_zone_group](./client.md#modify_availability_zone_group)
-- [modify_capacity_reservation](./client.md#modify_capacity_reservation)
-- [modify_capacity_reservation_fleet](./client.md#modify_capacity_reservation_fleet)
-- [modify_client_vpn_endpoint](./client.md#modify_client_vpn_endpoint)
-- [modify_default_credit_specification](./client.md#modify_default_credit_specification)
-- [modify_ebs_default_kms_key_id](./client.md#modify_ebs_default_kms_key_id)
-- [modify_fleet](./client.md#modify_fleet)
-- [modify_fpga_image_attribute](./client.md#modify_fpga_image_attribute)
-- [modify_hosts](./client.md#modify_hosts)
-- [modify_id_format](./client.md#modify_id_format)
-- [modify_identity_id_format](./client.md#modify_identity_id_format)
-- [modify_image_attribute](./client.md#modify_image_attribute)
-- [modify_instance_attribute](./client.md#modify_instance_attribute)
-- [modify_instance_capacity_reservation_attributes](./client.md#modify_instance_capacity_reservation_attributes)
-- [modify_instance_credit_specification](./client.md#modify_instance_credit_specification)
-- [modify_instance_event_start_time](./client.md#modify_instance_event_start_time)
-- [modify_instance_event_window](./client.md#modify_instance_event_window)
-- [modify_instance_metadata_options](./client.md#modify_instance_metadata_options)
-- [modify_instance_placement](./client.md#modify_instance_placement)
-- [modify_ipam](./client.md#modify_ipam)
-- [modify_ipam_pool](./client.md#modify_ipam_pool)
-- [modify_ipam_resource_cidr](./client.md#modify_ipam_resource_cidr)
-- [modify_ipam_scope](./client.md#modify_ipam_scope)
-- [modify_launch_template](./client.md#modify_launch_template)
-- [modify_managed_prefix_list](./client.md#modify_managed_prefix_list)
-- [modify_network_interface_attribute](./client.md#modify_network_interface_attribute)
-- [modify_private_dns_name_options](./client.md#modify_private_dns_name_options)
-- [modify_reserved_instances](./client.md#modify_reserved_instances)
-- [modify_security_group_rules](./client.md#modify_security_group_rules)
-- [modify_snapshot_attribute](./client.md#modify_snapshot_attribute)
-- [modify_snapshot_tier](./client.md#modify_snapshot_tier)
-- [modify_spot_fleet_request](./client.md#modify_spot_fleet_request)
-- [modify_subnet_attribute](./client.md#modify_subnet_attribute)
-- [modify_traffic_mirror_filter_network_services](./client.md#modify_traffic_mirror_filter_network_services)
-- [modify_traffic_mirror_filter_rule](./client.md#modify_traffic_mirror_filter_rule)
-- [modify_traffic_mirror_session](./client.md#modify_traffic_mirror_session)
-- [modify_transit_gateway](./client.md#modify_transit_gateway)
-- [modify_transit_gateway_prefix_list_reference](./client.md#modify_transit_gateway_prefix_list_reference)
-- [modify_transit_gateway_vpc_attachment](./client.md#modify_transit_gateway_vpc_attachment)
-- [modify_volume](./client.md#modify_volume)
-- [modify_volume_attribute](./client.md#modify_volume_attribute)
-- [modify_vpc_attribute](./client.md#modify_vpc_attribute)
-- [modify_vpc_endpoint](./client.md#modify_vpc_endpoint)
-- [modify_vpc_endpoint_connection_notification](./client.md#modify_vpc_endpoint_connection_notification)
-- [modify_vpc_endpoint_service_configuration](./client.md#modify_vpc_endpoint_service_configuration)
-- [modify_vpc_endpoint_service_payer_responsibility](./client.md#modify_vpc_endpoint_service_payer_responsibility)
-- [modify_vpc_endpoint_service_permissions](./client.md#modify_vpc_endpoint_service_permissions)
-- [modify_vpc_peering_connection_options](./client.md#modify_vpc_peering_connection_options)
-- [modify_vpc_tenancy](./client.md#modify_vpc_tenancy)
-- [modify_vpn_connection](./client.md#modify_vpn_connection)
-- [modify_vpn_connection_options](./client.md#modify_vpn_connection_options)
-- [modify_vpn_tunnel_certificate](./client.md#modify_vpn_tunnel_certificate)
-- [modify_vpn_tunnel_options](./client.md#modify_vpn_tunnel_options)
-- [monitor_instances](./client.md#monitor_instances)
-- [move_address_to_vpc](./client.md#move_address_to_vpc)
-- [move_byoip_cidr_to_ipam](./client.md#move_byoip_cidr_to_ipam)
-- [provision_byoip_cidr](./client.md#provision_byoip_cidr)
-- [provision_ipam_pool_cidr](./client.md#provision_ipam_pool_cidr)
-- [provision_public_ipv4_pool_cidr](./client.md#provision_public_ipv4_pool_cidr)
-- [purchase_host_reservation](./client.md#purchase_host_reservation)
-- [purchase_reserved_instances_offering](./client.md#purchase_reserved_instances_offering)
-- [purchase_scheduled_instances](./client.md#purchase_scheduled_instances)
-- [reboot_instances](./client.md#reboot_instances)
-- [register_image](./client.md#register_image)
-- [register_instance_event_notification_attributes](./client.md#register_instance_event_notification_attributes)
-- [register_transit_gateway_multicast_group_members](./client.md#register_transit_gateway_multicast_group_members)
-- [register_transit_gateway_multicast_group_sources](./client.md#register_transit_gateway_multicast_group_sources)
-- [reject_transit_gateway_multicast_domain_associations](./client.md#reject_transit_gateway_multicast_domain_associations)
-- [reject_transit_gateway_peering_attachment](./client.md#reject_transit_gateway_peering_attachment)
-- [reject_transit_gateway_vpc_attachment](./client.md#reject_transit_gateway_vpc_attachment)
-- [reject_vpc_endpoint_connections](./client.md#reject_vpc_endpoint_connections)
-- [reject_vpc_peering_connection](./client.md#reject_vpc_peering_connection)
-- [release_address](./client.md#release_address)
-- [release_hosts](./client.md#release_hosts)
-- [release_ipam_pool_allocation](./client.md#release_ipam_pool_allocation)
-- [replace_iam_instance_profile_association](./client.md#replace_iam_instance_profile_association)
-- [replace_network_acl_association](./client.md#replace_network_acl_association)
-- [replace_network_acl_entry](./client.md#replace_network_acl_entry)
-- [replace_route](./client.md#replace_route)
-- [replace_route_table_association](./client.md#replace_route_table_association)
-- [replace_transit_gateway_route](./client.md#replace_transit_gateway_route)
-- [report_instance_status](./client.md#report_instance_status)
-- [request_spot_fleet](./client.md#request_spot_fleet)
-- [request_spot_instances](./client.md#request_spot_instances)
-- [reset_address_attribute](./client.md#reset_address_attribute)
-- [reset_ebs_default_kms_key_id](./client.md#reset_ebs_default_kms_key_id)
-- [reset_fpga_image_attribute](./client.md#reset_fpga_image_attribute)
-- [reset_image_attribute](./client.md#reset_image_attribute)
-- [reset_instance_attribute](./client.md#reset_instance_attribute)
-- [reset_network_interface_attribute](./client.md#reset_network_interface_attribute)
-- [reset_snapshot_attribute](./client.md#reset_snapshot_attribute)
-- [restore_address_to_classic](./client.md#restore_address_to_classic)
-- [restore_image_from_recycle_bin](./client.md#restore_image_from_recycle_bin)
-- [restore_managed_prefix_list_version](./client.md#restore_managed_prefix_list_version)
-- [restore_snapshot_from_recycle_bin](./client.md#restore_snapshot_from_recycle_bin)
-- [restore_snapshot_tier](./client.md#restore_snapshot_tier)
-- [revoke_client_vpn_ingress](./client.md#revoke_client_vpn_ingress)
-- [revoke_security_group_egress](./client.md#revoke_security_group_egress)
-- [revoke_security_group_ingress](./client.md#revoke_security_group_ingress)
-- [run_instances](./client.md#run_instances)
-- [run_scheduled_instances](./client.md#run_scheduled_instances)
-- [search_local_gateway_routes](./client.md#search_local_gateway_routes)
-- [search_transit_gateway_multicast_groups](./client.md#search_transit_gateway_multicast_groups)
-- [search_transit_gateway_routes](./client.md#search_transit_gateway_routes)
-- [send_diagnostic_interrupt](./client.md#send_diagnostic_interrupt)
-- [start_instances](./client.md#start_instances)
-- [start_network_insights_access_scope_analysis](./client.md#start_network_insights_access_scope_analysis)
-- [start_network_insights_analysis](./client.md#start_network_insights_analysis)
-- [start_vpc_endpoint_service_private_dns_verification](./client.md#start_vpc_endpoint_service_private_dns_verification)
-- [stop_instances](./client.md#stop_instances)
-- [terminate_client_vpn_connections](./client.md#terminate_client_vpn_connections)
-- [terminate_instances](./client.md#terminate_instances)
-- [unassign_ipv6_addresses](./client.md#unassign_ipv6_addresses)
-- [unassign_private_ip_addresses](./client.md#unassign_private_ip_addresses)
-- [unmonitor_instances](./client.md#unmonitor_instances)
-- [update_security_group_rule_descriptions_egress](./client.md#update_security_group_rule_descriptions_egress)
-- [update_security_group_rule_descriptions_ingress](./client.md#update_security_group_rule_descriptions_ingress)
-- [withdraw_byoip_cidr](./client.md#withdraw_byoip_cidr)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-EC2Client [exceptions](./client.md#exceptions)
-
-- ClientError
-
-<a id="ec2serviceresource"></a>
-
-## EC2ServiceResource
-
-Type annotations for `boto3.resource("ec2")` as
-[EC2ServiceResource](./service_resource.md#ec2serviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_ec2.service_resource import EC2ServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("ec2").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesCollection, ...
-```
-
-- [ServiceResourceClassicAddressesCollection](./service_resource.md#ec2serviceresourceclassic_addresses)
-- [ServiceResourceDhcpOptionsSetsCollection](./service_resource.md#ec2serviceresourcedhcp_options_sets)
-- [ServiceResourceImagesCollection](./service_resource.md#ec2serviceresourceimages)
-- [ServiceResourceInstancesCollection](./service_resource.md#ec2serviceresourceinstances)
-- [ServiceResourceInternetGatewaysCollection](./service_resource.md#ec2serviceresourceinternet_gateways)
-- [ServiceResourceKeyPairsCollection](./service_resource.md#ec2serviceresourcekey_pairs)
-- [ServiceResourceNetworkAclsCollection](./service_resource.md#ec2serviceresourcenetwork_acls)
-- [ServiceResourceNetworkInterfacesCollection](./service_resource.md#ec2serviceresourcenetwork_interfaces)
-- [ServiceResourcePlacementGroupsCollection](./service_resource.md#ec2serviceresourceplacement_groups)
-- [ServiceResourceRouteTablesCollection](./service_resource.md#ec2serviceresourceroute_tables)
-- [ServiceResourceSecurityGroupsCollection](./service_resource.md#ec2serviceresourcesecurity_groups)
-- [ServiceResourceSnapshotsCollection](./service_resource.md#ec2serviceresourcesnapshots)
-- [ServiceResourceSubnetsCollection](./service_resource.md#ec2serviceresourcesubnets)
-- [ServiceResourceVolumesCollection](./service_resource.md#ec2serviceresourcevolumes)
-- [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresourcevpc_addresses)
-- [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresourcevpc_peering_connections)
-- [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresourcevpcs)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from `boto3.resource("ec2").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_ec2.service_resource import ClassicAddress, ...
-```
-
-- [ClassicAddress](./service_resource.md#classicaddress)
-- [DhcpOptions](./service_resource.md#dhcpoptions)
-- [Image](./service_resource.md#image)
-- [Instance](./service_resource.md#instance)
-- [InternetGateway](./service_resource.md#internetgateway)
-- [KeyPair](./service_resource.md#keypair)
-- [KeyPairInfo](./service_resource.md#keypairinfo)
-- [NetworkAcl](./service_resource.md#networkacl)
-- [NetworkInterface](./service_resource.md#networkinterface)
-- [NetworkInterfaceAssociation](./service_resource.md#networkinterfaceassociation)
-- [PlacementGroup](./service_resource.md#placementgroup)
-- [Route](./service_resource.md#route)
-- [RouteTable](./service_resource.md#routetable)
-- [RouteTableAssociation](./service_resource.md#routetableassociation)
-- [SecurityGroup](./service_resource.md#securitygroup)
-- [Snapshot](./service_resource.md#snapshot)
-- [Subnet](./service_resource.md#subnet)
-- [Tag](./service_resource.md#tag)
-- [Volume](./service_resource.md#volume)
-- [Vpc](./service_resource.md#vpc)
-- [VpcPeeringConnection](./service_resource.md#vpcpeeringconnection)
-- [VpcAddress](./service_resource.md#vpcaddress)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ec2").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ec2").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator, ...
+from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
+
+def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePaginator:
+    return Session().client("ec2").get_paginator("describe_addresses_attribute"))
 ```
 
 - [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
@@ -864,17 +220,21 @@ from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator, ...
 - [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - [SearchTransitGatewayMulticastGroupsPaginator](./paginators.md#searchtransitgatewaymulticastgroupspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("ec2").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("ec2").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter, ...
+from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter
+
+def get_bundle_task_complete_waiter() -> BundleTaskCompleteWaiter:
+    return Session().client("ec2").get_waiter("bundle_task_complete")
 ```
 
 - [BundleTaskCompleteWaiter](./waiters.md#bundletaskcompletewaiter)
@@ -911,16 +271,111 @@ from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter, ...
 - [VpnConnectionAvailableWaiter](./waiters.md#vpnconnectionavailablewaiter)
 - [VpnConnectionDeletedWaiter](./waiters.md#vpnconnectiondeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+## EC2ServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("ec2")` as
+[EC2ServiceResource](./service_resource.md#ec2serviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.service_resource import EC2ServiceResource
+
+def get_ec2_resource() -> EC2ServiceResource:
+    return Session().resource("ec2")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("ec2").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesCollection
+
+def get_collection() -> ServiceResourceClassicAddressesCollection:
+    return Session().resource("ec2").classic_addresses
+```
+
+- [ServiceResourceClassicAddressesCollection](./service_resource.md#ec2serviceresourceclassic_addresses)
+- [ServiceResourceDhcpOptionsSetsCollection](./service_resource.md#ec2serviceresourcedhcp_options_sets)
+- [ServiceResourceImagesCollection](./service_resource.md#ec2serviceresourceimages)
+- [ServiceResourceInstancesCollection](./service_resource.md#ec2serviceresourceinstances)
+- [ServiceResourceInternetGatewaysCollection](./service_resource.md#ec2serviceresourceinternet_gateways)
+- [ServiceResourceKeyPairsCollection](./service_resource.md#ec2serviceresourcekey_pairs)
+- [ServiceResourceNetworkAclsCollection](./service_resource.md#ec2serviceresourcenetwork_acls)
+- [ServiceResourceNetworkInterfacesCollection](./service_resource.md#ec2serviceresourcenetwork_interfaces)
+- [ServiceResourcePlacementGroupsCollection](./service_resource.md#ec2serviceresourceplacement_groups)
+- [ServiceResourceRouteTablesCollection](./service_resource.md#ec2serviceresourceroute_tables)
+- [ServiceResourceSecurityGroupsCollection](./service_resource.md#ec2serviceresourcesecurity_groups)
+- [ServiceResourceSnapshotsCollection](./service_resource.md#ec2serviceresourcesnapshots)
+- [ServiceResourceSubnetsCollection](./service_resource.md#ec2serviceresourcesubnets)
+- [ServiceResourceVolumesCollection](./service_resource.md#ec2serviceresourcevolumes)
+- [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresourcevpc_addresses)
+- [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresourcevpc_peering_connections)
+- [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresourcevpcs)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("ec2").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_ec2.service_resource import ClassicAddress
+
+def get_resource() -> ClassicAddress:
+    return Session().resource("ec2").ClassicAddress(...)
+```
+
+- [ClassicAddress](./service_resource.md#classicaddress)
+- [DhcpOptions](./service_resource.md#dhcpoptions)
+- [Image](./service_resource.md#image)
+- [Instance](./service_resource.md#instance)
+- [InternetGateway](./service_resource.md#internetgateway)
+- [KeyPair](./service_resource.md#keypair)
+- [KeyPairInfo](./service_resource.md#keypairinfo)
+- [NetworkAcl](./service_resource.md#networkacl)
+- [NetworkInterface](./service_resource.md#networkinterface)
+- [NetworkInterfaceAssociation](./service_resource.md#networkinterfaceassociation)
+- [PlacementGroup](./service_resource.md#placementgroup)
+- [Route](./service_resource.md#route)
+- [RouteTable](./service_resource.md#routetable)
+- [RouteTableAssociation](./service_resource.md#routetableassociation)
+- [SecurityGroup](./service_resource.md#securitygroup)
+- [Snapshot](./service_resource.md#snapshot)
+- [Subnet](./service_resource.md#subnet)
+- [Tag](./service_resource.md#tag)
+- [Volume](./service_resource.md#volume)
+- [Vpc](./service_resource.md#vpc)
+- [VpcPeeringConnection](./service_resource.md#vpcpeeringconnection)
+- [VpcAddress](./service_resource.md#vpcaddress)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ec2.literals import AcceleratorManufacturerType
 
-```python
-from mypy_boto3_ec2.literals import AcceleratorManufacturerType, ...
+def get_value() -> AcceleratorManufacturerType:
+    return "amazon-web-services"
 ```
 
 - [AcceleratorManufacturerType](./literals.md#acceleratormanufacturertype)
@@ -1351,18 +806,22 @@ from mypy_boto3_ec2.literals import AcceleratorManufacturerType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef
 
-```python
-from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
+def get_value() -> AcceleratorCountRequestTypeDef:
+    return {
+        "Min": ...,
+    }
 ```
 
 - [AcceleratorCountRequestTypeDef](./type_defs.md#acceleratorcountrequesttypedef)
@@ -1887,6 +1346,7 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DeregisterTransitGatewayMulticastGroupSourcesResultTypeDef](./type_defs.md#deregistertransitgatewaymulticastgroupsourcesresulttypedef)
 - [DescribeAccountAttributesRequestRequestTypeDef](./type_defs.md#describeaccountattributesrequestrequesttypedef)
 - [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef)
+- [DescribeAddressesAttributeRequestDescribeAddressesAttributePaginateTypeDef](./type_defs.md#describeaddressesattributerequestdescribeaddressesattributepaginatetypedef)
 - [DescribeAddressesAttributeRequestRequestTypeDef](./type_defs.md#describeaddressesattributerequestrequesttypedef)
 - [DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)
 - [DescribeAddressesRequestRequestTypeDef](./type_defs.md#describeaddressesrequestrequesttypedef)
@@ -1895,48 +1355,71 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DescribeAggregateIdFormatResultTypeDef](./type_defs.md#describeaggregateidformatresulttypedef)
 - [DescribeAvailabilityZonesRequestRequestTypeDef](./type_defs.md#describeavailabilityzonesrequestrequesttypedef)
 - [DescribeAvailabilityZonesResultTypeDef](./type_defs.md#describeavailabilityzonesresulttypedef)
+- [DescribeBundleTasksRequestBundleTaskCompleteWaitTypeDef](./type_defs.md#describebundletasksrequestbundletaskcompletewaittypedef)
 - [DescribeBundleTasksRequestRequestTypeDef](./type_defs.md#describebundletasksrequestrequesttypedef)
 - [DescribeBundleTasksResultTypeDef](./type_defs.md#describebundletasksresulttypedef)
+- [DescribeByoipCidrsRequestDescribeByoipCidrsPaginateTypeDef](./type_defs.md#describebyoipcidrsrequestdescribebyoipcidrspaginatetypedef)
 - [DescribeByoipCidrsRequestRequestTypeDef](./type_defs.md#describebyoipcidrsrequestrequesttypedef)
 - [DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)
+- [DescribeCapacityReservationFleetsRequestDescribeCapacityReservationFleetsPaginateTypeDef](./type_defs.md#describecapacityreservationfleetsrequestdescribecapacityreservationfleetspaginatetypedef)
 - [DescribeCapacityReservationFleetsRequestRequestTypeDef](./type_defs.md#describecapacityreservationfleetsrequestrequesttypedef)
 - [DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef)
+- [DescribeCapacityReservationsRequestDescribeCapacityReservationsPaginateTypeDef](./type_defs.md#describecapacityreservationsrequestdescribecapacityreservationspaginatetypedef)
 - [DescribeCapacityReservationsRequestRequestTypeDef](./type_defs.md#describecapacityreservationsrequestrequesttypedef)
 - [DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)
+- [DescribeCarrierGatewaysRequestDescribeCarrierGatewaysPaginateTypeDef](./type_defs.md#describecarriergatewaysrequestdescribecarriergatewayspaginatetypedef)
 - [DescribeCarrierGatewaysRequestRequestTypeDef](./type_defs.md#describecarriergatewaysrequestrequesttypedef)
 - [DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)
+- [DescribeClassicLinkInstancesRequestDescribeClassicLinkInstancesPaginateTypeDef](./type_defs.md#describeclassiclinkinstancesrequestdescribeclassiclinkinstancespaginatetypedef)
 - [DescribeClassicLinkInstancesRequestRequestTypeDef](./type_defs.md#describeclassiclinkinstancesrequestrequesttypedef)
 - [DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)
+- [DescribeClientVpnAuthorizationRulesRequestDescribeClientVpnAuthorizationRulesPaginateTypeDef](./type_defs.md#describeclientvpnauthorizationrulesrequestdescribeclientvpnauthorizationrulespaginatetypedef)
 - [DescribeClientVpnAuthorizationRulesRequestRequestTypeDef](./type_defs.md#describeclientvpnauthorizationrulesrequestrequesttypedef)
 - [DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)
+- [DescribeClientVpnConnectionsRequestDescribeClientVpnConnectionsPaginateTypeDef](./type_defs.md#describeclientvpnconnectionsrequestdescribeclientvpnconnectionspaginatetypedef)
 - [DescribeClientVpnConnectionsRequestRequestTypeDef](./type_defs.md#describeclientvpnconnectionsrequestrequesttypedef)
 - [DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)
+- [DescribeClientVpnEndpointsRequestDescribeClientVpnEndpointsPaginateTypeDef](./type_defs.md#describeclientvpnendpointsrequestdescribeclientvpnendpointspaginatetypedef)
 - [DescribeClientVpnEndpointsRequestRequestTypeDef](./type_defs.md#describeclientvpnendpointsrequestrequesttypedef)
 - [DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)
+- [DescribeClientVpnRoutesRequestDescribeClientVpnRoutesPaginateTypeDef](./type_defs.md#describeclientvpnroutesrequestdescribeclientvpnroutespaginatetypedef)
 - [DescribeClientVpnRoutesRequestRequestTypeDef](./type_defs.md#describeclientvpnroutesrequestrequesttypedef)
 - [DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)
+- [DescribeClientVpnTargetNetworksRequestDescribeClientVpnTargetNetworksPaginateTypeDef](./type_defs.md#describeclientvpntargetnetworksrequestdescribeclientvpntargetnetworkspaginatetypedef)
 - [DescribeClientVpnTargetNetworksRequestRequestTypeDef](./type_defs.md#describeclientvpntargetnetworksrequestrequesttypedef)
 - [DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)
+- [DescribeCoipPoolsRequestDescribeCoipPoolsPaginateTypeDef](./type_defs.md#describecoippoolsrequestdescribecoippoolspaginatetypedef)
 - [DescribeCoipPoolsRequestRequestTypeDef](./type_defs.md#describecoippoolsrequestrequesttypedef)
 - [DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)
+- [DescribeConversionTasksRequestConversionTaskCancelledWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskcancelledwaittypedef)
+- [DescribeConversionTasksRequestConversionTaskCompletedWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskcompletedwaittypedef)
+- [DescribeConversionTasksRequestConversionTaskDeletedWaitTypeDef](./type_defs.md#describeconversiontasksrequestconversiontaskdeletedwaittypedef)
 - [DescribeConversionTasksRequestRequestTypeDef](./type_defs.md#describeconversiontasksrequestrequesttypedef)
 - [DescribeConversionTasksResultTypeDef](./type_defs.md#describeconversiontasksresulttypedef)
+- [DescribeCustomerGatewaysRequestCustomerGatewayAvailableWaitTypeDef](./type_defs.md#describecustomergatewaysrequestcustomergatewayavailablewaittypedef)
 - [DescribeCustomerGatewaysRequestRequestTypeDef](./type_defs.md#describecustomergatewaysrequestrequesttypedef)
 - [DescribeCustomerGatewaysResultTypeDef](./type_defs.md#describecustomergatewaysresulttypedef)
+- [DescribeDhcpOptionsRequestDescribeDhcpOptionsPaginateTypeDef](./type_defs.md#describedhcpoptionsrequestdescribedhcpoptionspaginatetypedef)
 - [DescribeDhcpOptionsRequestRequestTypeDef](./type_defs.md#describedhcpoptionsrequestrequesttypedef)
 - [DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)
+- [DescribeEgressOnlyInternetGatewaysRequestDescribeEgressOnlyInternetGatewaysPaginateTypeDef](./type_defs.md#describeegressonlyinternetgatewaysrequestdescribeegressonlyinternetgatewayspaginatetypedef)
 - [DescribeEgressOnlyInternetGatewaysRequestRequestTypeDef](./type_defs.md#describeegressonlyinternetgatewaysrequestrequesttypedef)
 - [DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)
 - [DescribeElasticGpusRequestRequestTypeDef](./type_defs.md#describeelasticgpusrequestrequesttypedef)
 - [DescribeElasticGpusResultTypeDef](./type_defs.md#describeelasticgpusresulttypedef)
+- [DescribeExportImageTasksRequestDescribeExportImageTasksPaginateTypeDef](./type_defs.md#describeexportimagetasksrequestdescribeexportimagetaskspaginatetypedef)
 - [DescribeExportImageTasksRequestRequestTypeDef](./type_defs.md#describeexportimagetasksrequestrequesttypedef)
 - [DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)
+- [DescribeExportTasksRequestExportTaskCancelledWaitTypeDef](./type_defs.md#describeexporttasksrequestexporttaskcancelledwaittypedef)
+- [DescribeExportTasksRequestExportTaskCompletedWaitTypeDef](./type_defs.md#describeexporttasksrequestexporttaskcompletedwaittypedef)
 - [DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef)
 - [DescribeExportTasksResultTypeDef](./type_defs.md#describeexporttasksresulttypedef)
+- [DescribeFastLaunchImagesRequestDescribeFastLaunchImagesPaginateTypeDef](./type_defs.md#describefastlaunchimagesrequestdescribefastlaunchimagespaginatetypedef)
 - [DescribeFastLaunchImagesRequestRequestTypeDef](./type_defs.md#describefastlaunchimagesrequestrequesttypedef)
 - [DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef)
 - [DescribeFastLaunchImagesSuccessItemTypeDef](./type_defs.md#describefastlaunchimagessuccessitemtypedef)
 - [DescribeFastSnapshotRestoreSuccessItemTypeDef](./type_defs.md#describefastsnapshotrestoresuccessitemtypedef)
+- [DescribeFastSnapshotRestoresRequestDescribeFastSnapshotRestoresPaginateTypeDef](./type_defs.md#describefastsnapshotrestoresrequestdescribefastsnapshotrestorespaginatetypedef)
 - [DescribeFastSnapshotRestoresRequestRequestTypeDef](./type_defs.md#describefastsnapshotrestoresrequestrequesttypedef)
 - [DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)
 - [DescribeFleetErrorTypeDef](./type_defs.md#describefleeterrortypedef)
@@ -1945,20 +1428,27 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DescribeFleetInstancesRequestRequestTypeDef](./type_defs.md#describefleetinstancesrequestrequesttypedef)
 - [DescribeFleetInstancesResultTypeDef](./type_defs.md#describefleetinstancesresulttypedef)
 - [DescribeFleetsInstancesTypeDef](./type_defs.md#describefleetsinstancestypedef)
+- [DescribeFleetsRequestDescribeFleetsPaginateTypeDef](./type_defs.md#describefleetsrequestdescribefleetspaginatetypedef)
 - [DescribeFleetsRequestRequestTypeDef](./type_defs.md#describefleetsrequestrequesttypedef)
 - [DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)
+- [DescribeFlowLogsRequestDescribeFlowLogsPaginateTypeDef](./type_defs.md#describeflowlogsrequestdescribeflowlogspaginatetypedef)
 - [DescribeFlowLogsRequestRequestTypeDef](./type_defs.md#describeflowlogsrequestrequesttypedef)
 - [DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)
 - [DescribeFpgaImageAttributeRequestRequestTypeDef](./type_defs.md#describefpgaimageattributerequestrequesttypedef)
 - [DescribeFpgaImageAttributeResultTypeDef](./type_defs.md#describefpgaimageattributeresulttypedef)
+- [DescribeFpgaImagesRequestDescribeFpgaImagesPaginateTypeDef](./type_defs.md#describefpgaimagesrequestdescribefpgaimagespaginatetypedef)
 - [DescribeFpgaImagesRequestRequestTypeDef](./type_defs.md#describefpgaimagesrequestrequesttypedef)
 - [DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)
+- [DescribeHostReservationOfferingsRequestDescribeHostReservationOfferingsPaginateTypeDef](./type_defs.md#describehostreservationofferingsrequestdescribehostreservationofferingspaginatetypedef)
 - [DescribeHostReservationOfferingsRequestRequestTypeDef](./type_defs.md#describehostreservationofferingsrequestrequesttypedef)
 - [DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)
+- [DescribeHostReservationsRequestDescribeHostReservationsPaginateTypeDef](./type_defs.md#describehostreservationsrequestdescribehostreservationspaginatetypedef)
 - [DescribeHostReservationsRequestRequestTypeDef](./type_defs.md#describehostreservationsrequestrequesttypedef)
 - [DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)
+- [DescribeHostsRequestDescribeHostsPaginateTypeDef](./type_defs.md#describehostsrequestdescribehostspaginatetypedef)
 - [DescribeHostsRequestRequestTypeDef](./type_defs.md#describehostsrequestrequesttypedef)
 - [DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)
+- [DescribeIamInstanceProfileAssociationsRequestDescribeIamInstanceProfileAssociationsPaginateTypeDef](./type_defs.md#describeiaminstanceprofileassociationsrequestdescribeiaminstanceprofileassociationspaginatetypedef)
 - [DescribeIamInstanceProfileAssociationsRequestRequestTypeDef](./type_defs.md#describeiaminstanceprofileassociationsrequestrequesttypedef)
 - [DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)
 - [DescribeIdFormatRequestRequestTypeDef](./type_defs.md#describeidformatrequestrequesttypedef)
@@ -1967,196 +1457,297 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [DescribeIdentityIdFormatResultTypeDef](./type_defs.md#describeidentityidformatresulttypedef)
 - [DescribeImageAttributeRequestImageDescribeAttributeTypeDef](./type_defs.md#describeimageattributerequestimagedescribeattributetypedef)
 - [DescribeImageAttributeRequestRequestTypeDef](./type_defs.md#describeimageattributerequestrequesttypedef)
+- [DescribeImagesRequestImageAvailableWaitTypeDef](./type_defs.md#describeimagesrequestimageavailablewaittypedef)
+- [DescribeImagesRequestImageExistsWaitTypeDef](./type_defs.md#describeimagesrequestimageexistswaittypedef)
 - [DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef)
 - [DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)
+- [DescribeImportImageTasksRequestDescribeImportImageTasksPaginateTypeDef](./type_defs.md#describeimportimagetasksrequestdescribeimportimagetaskspaginatetypedef)
 - [DescribeImportImageTasksRequestRequestTypeDef](./type_defs.md#describeimportimagetasksrequestrequesttypedef)
 - [DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)
+- [DescribeImportSnapshotTasksRequestDescribeImportSnapshotTasksPaginateTypeDef](./type_defs.md#describeimportsnapshottasksrequestdescribeimportsnapshottaskspaginatetypedef)
 - [DescribeImportSnapshotTasksRequestRequestTypeDef](./type_defs.md#describeimportsnapshottasksrequestrequesttypedef)
 - [DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)
 - [DescribeInstanceAttributeRequestInstanceDescribeAttributeTypeDef](./type_defs.md#describeinstanceattributerequestinstancedescribeattributetypedef)
 - [DescribeInstanceAttributeRequestRequestTypeDef](./type_defs.md#describeinstanceattributerequestrequesttypedef)
+- [DescribeInstanceCreditSpecificationsRequestDescribeInstanceCreditSpecificationsPaginateTypeDef](./type_defs.md#describeinstancecreditspecificationsrequestdescribeinstancecreditspecificationspaginatetypedef)
 - [DescribeInstanceCreditSpecificationsRequestRequestTypeDef](./type_defs.md#describeinstancecreditspecificationsrequestrequesttypedef)
 - [DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)
 - [DescribeInstanceEventNotificationAttributesRequestRequestTypeDef](./type_defs.md#describeinstanceeventnotificationattributesrequestrequesttypedef)
 - [DescribeInstanceEventNotificationAttributesResultTypeDef](./type_defs.md#describeinstanceeventnotificationattributesresulttypedef)
+- [DescribeInstanceEventWindowsRequestDescribeInstanceEventWindowsPaginateTypeDef](./type_defs.md#describeinstanceeventwindowsrequestdescribeinstanceeventwindowspaginatetypedef)
 - [DescribeInstanceEventWindowsRequestRequestTypeDef](./type_defs.md#describeinstanceeventwindowsrequestrequesttypedef)
 - [DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef)
+- [DescribeInstanceStatusRequestDescribeInstanceStatusPaginateTypeDef](./type_defs.md#describeinstancestatusrequestdescribeinstancestatuspaginatetypedef)
+- [DescribeInstanceStatusRequestInstanceStatusOkWaitTypeDef](./type_defs.md#describeinstancestatusrequestinstancestatusokwaittypedef)
 - [DescribeInstanceStatusRequestRequestTypeDef](./type_defs.md#describeinstancestatusrequestrequesttypedef)
+- [DescribeInstanceStatusRequestSystemStatusOkWaitTypeDef](./type_defs.md#describeinstancestatusrequestsystemstatusokwaittypedef)
 - [DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)
+- [DescribeInstanceTypeOfferingsRequestDescribeInstanceTypeOfferingsPaginateTypeDef](./type_defs.md#describeinstancetypeofferingsrequestdescribeinstancetypeofferingspaginatetypedef)
 - [DescribeInstanceTypeOfferingsRequestRequestTypeDef](./type_defs.md#describeinstancetypeofferingsrequestrequesttypedef)
 - [DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)
+- [DescribeInstanceTypesRequestDescribeInstanceTypesPaginateTypeDef](./type_defs.md#describeinstancetypesrequestdescribeinstancetypespaginatetypedef)
 - [DescribeInstanceTypesRequestRequestTypeDef](./type_defs.md#describeinstancetypesrequestrequesttypedef)
 - [DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)
+- [DescribeInstancesRequestDescribeInstancesPaginateTypeDef](./type_defs.md#describeinstancesrequestdescribeinstancespaginatetypedef)
+- [DescribeInstancesRequestInstanceExistsWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceexistswaittypedef)
+- [DescribeInstancesRequestInstanceRunningWaitTypeDef](./type_defs.md#describeinstancesrequestinstancerunningwaittypedef)
+- [DescribeInstancesRequestInstanceStoppedWaitTypeDef](./type_defs.md#describeinstancesrequestinstancestoppedwaittypedef)
+- [DescribeInstancesRequestInstanceTerminatedWaitTypeDef](./type_defs.md#describeinstancesrequestinstanceterminatedwaittypedef)
 - [DescribeInstancesRequestRequestTypeDef](./type_defs.md#describeinstancesrequestrequesttypedef)
 - [DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)
+- [DescribeInternetGatewaysRequestDescribeInternetGatewaysPaginateTypeDef](./type_defs.md#describeinternetgatewaysrequestdescribeinternetgatewayspaginatetypedef)
+- [DescribeInternetGatewaysRequestInternetGatewayExistsWaitTypeDef](./type_defs.md#describeinternetgatewaysrequestinternetgatewayexistswaittypedef)
 - [DescribeInternetGatewaysRequestRequestTypeDef](./type_defs.md#describeinternetgatewaysrequestrequesttypedef)
 - [DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)
+- [DescribeIpamPoolsRequestDescribeIpamPoolsPaginateTypeDef](./type_defs.md#describeipampoolsrequestdescribeipampoolspaginatetypedef)
 - [DescribeIpamPoolsRequestRequestTypeDef](./type_defs.md#describeipampoolsrequestrequesttypedef)
 - [DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef)
+- [DescribeIpamScopesRequestDescribeIpamScopesPaginateTypeDef](./type_defs.md#describeipamscopesrequestdescribeipamscopespaginatetypedef)
 - [DescribeIpamScopesRequestRequestTypeDef](./type_defs.md#describeipamscopesrequestrequesttypedef)
 - [DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef)
+- [DescribeIpamsRequestDescribeIpamsPaginateTypeDef](./type_defs.md#describeipamsrequestdescribeipamspaginatetypedef)
 - [DescribeIpamsRequestRequestTypeDef](./type_defs.md#describeipamsrequestrequesttypedef)
 - [DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef)
+- [DescribeIpv6PoolsRequestDescribeIpv6PoolsPaginateTypeDef](./type_defs.md#describeipv6poolsrequestdescribeipv6poolspaginatetypedef)
 - [DescribeIpv6PoolsRequestRequestTypeDef](./type_defs.md#describeipv6poolsrequestrequesttypedef)
 - [DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)
+- [DescribeKeyPairsRequestKeyPairExistsWaitTypeDef](./type_defs.md#describekeypairsrequestkeypairexistswaittypedef)
 - [DescribeKeyPairsRequestRequestTypeDef](./type_defs.md#describekeypairsrequestrequesttypedef)
 - [DescribeKeyPairsResultTypeDef](./type_defs.md#describekeypairsresulttypedef)
+- [DescribeLaunchTemplateVersionsRequestDescribeLaunchTemplateVersionsPaginateTypeDef](./type_defs.md#describelaunchtemplateversionsrequestdescribelaunchtemplateversionspaginatetypedef)
 - [DescribeLaunchTemplateVersionsRequestRequestTypeDef](./type_defs.md#describelaunchtemplateversionsrequestrequesttypedef)
 - [DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)
+- [DescribeLaunchTemplatesRequestDescribeLaunchTemplatesPaginateTypeDef](./type_defs.md#describelaunchtemplatesrequestdescribelaunchtemplatespaginatetypedef)
 - [DescribeLaunchTemplatesRequestRequestTypeDef](./type_defs.md#describelaunchtemplatesrequestrequesttypedef)
 - [DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)
+- [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestDescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsrequestdescribelocalgatewayroutetablevirtualinterfacegroupassociationspaginatetypedef)
 - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsRequestRequestTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsrequestrequesttypedef)
 - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)
+- [DescribeLocalGatewayRouteTableVpcAssociationsRequestDescribeLocalGatewayRouteTableVpcAssociationsPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsrequestdescribelocalgatewayroutetablevpcassociationspaginatetypedef)
 - [DescribeLocalGatewayRouteTableVpcAssociationsRequestRequestTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsrequestrequesttypedef)
 - [DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)
+- [DescribeLocalGatewayRouteTablesRequestDescribeLocalGatewayRouteTablesPaginateTypeDef](./type_defs.md#describelocalgatewayroutetablesrequestdescribelocalgatewayroutetablespaginatetypedef)
 - [DescribeLocalGatewayRouteTablesRequestRequestTypeDef](./type_defs.md#describelocalgatewayroutetablesrequestrequesttypedef)
 - [DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)
+- [DescribeLocalGatewayVirtualInterfaceGroupsRequestDescribeLocalGatewayVirtualInterfaceGroupsPaginateTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsrequestdescribelocalgatewayvirtualinterfacegroupspaginatetypedef)
 - [DescribeLocalGatewayVirtualInterfaceGroupsRequestRequestTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsrequestrequesttypedef)
 - [DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)
+- [DescribeLocalGatewayVirtualInterfacesRequestDescribeLocalGatewayVirtualInterfacesPaginateTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesrequestdescribelocalgatewayvirtualinterfacespaginatetypedef)
 - [DescribeLocalGatewayVirtualInterfacesRequestRequestTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesrequestrequesttypedef)
 - [DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)
+- [DescribeLocalGatewaysRequestDescribeLocalGatewaysPaginateTypeDef](./type_defs.md#describelocalgatewaysrequestdescribelocalgatewayspaginatetypedef)
 - [DescribeLocalGatewaysRequestRequestTypeDef](./type_defs.md#describelocalgatewaysrequestrequesttypedef)
 - [DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)
+- [DescribeManagedPrefixListsRequestDescribeManagedPrefixListsPaginateTypeDef](./type_defs.md#describemanagedprefixlistsrequestdescribemanagedprefixlistspaginatetypedef)
 - [DescribeManagedPrefixListsRequestRequestTypeDef](./type_defs.md#describemanagedprefixlistsrequestrequesttypedef)
 - [DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)
+- [DescribeMovingAddressesRequestDescribeMovingAddressesPaginateTypeDef](./type_defs.md#describemovingaddressesrequestdescribemovingaddressespaginatetypedef)
 - [DescribeMovingAddressesRequestRequestTypeDef](./type_defs.md#describemovingaddressesrequestrequesttypedef)
 - [DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)
+- [DescribeNatGatewaysRequestDescribeNatGatewaysPaginateTypeDef](./type_defs.md#describenatgatewaysrequestdescribenatgatewayspaginatetypedef)
+- [DescribeNatGatewaysRequestNatGatewayAvailableWaitTypeDef](./type_defs.md#describenatgatewaysrequestnatgatewayavailablewaittypedef)
 - [DescribeNatGatewaysRequestRequestTypeDef](./type_defs.md#describenatgatewaysrequestrequesttypedef)
 - [DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)
+- [DescribeNetworkAclsRequestDescribeNetworkAclsPaginateTypeDef](./type_defs.md#describenetworkaclsrequestdescribenetworkaclspaginatetypedef)
 - [DescribeNetworkAclsRequestRequestTypeDef](./type_defs.md#describenetworkaclsrequestrequesttypedef)
 - [DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)
+- [DescribeNetworkInsightsAccessScopeAnalysesRequestDescribeNetworkInsightsAccessScopeAnalysesPaginateTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesrequestdescribenetworkinsightsaccessscopeanalysespaginatetypedef)
 - [DescribeNetworkInsightsAccessScopeAnalysesRequestRequestTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesrequestrequesttypedef)
 - [DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef)
+- [DescribeNetworkInsightsAccessScopesRequestDescribeNetworkInsightsAccessScopesPaginateTypeDef](./type_defs.md#describenetworkinsightsaccessscopesrequestdescribenetworkinsightsaccessscopespaginatetypedef)
 - [DescribeNetworkInsightsAccessScopesRequestRequestTypeDef](./type_defs.md#describenetworkinsightsaccessscopesrequestrequesttypedef)
 - [DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef)
+- [DescribeNetworkInsightsAnalysesRequestDescribeNetworkInsightsAnalysesPaginateTypeDef](./type_defs.md#describenetworkinsightsanalysesrequestdescribenetworkinsightsanalysespaginatetypedef)
 - [DescribeNetworkInsightsAnalysesRequestRequestTypeDef](./type_defs.md#describenetworkinsightsanalysesrequestrequesttypedef)
 - [DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)
+- [DescribeNetworkInsightsPathsRequestDescribeNetworkInsightsPathsPaginateTypeDef](./type_defs.md#describenetworkinsightspathsrequestdescribenetworkinsightspathspaginatetypedef)
 - [DescribeNetworkInsightsPathsRequestRequestTypeDef](./type_defs.md#describenetworkinsightspathsrequestrequesttypedef)
 - [DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)
 - [DescribeNetworkInterfaceAttributeRequestNetworkInterfaceDescribeAttributeTypeDef](./type_defs.md#describenetworkinterfaceattributerequestnetworkinterfacedescribeattributetypedef)
 - [DescribeNetworkInterfaceAttributeRequestRequestTypeDef](./type_defs.md#describenetworkinterfaceattributerequestrequesttypedef)
 - [DescribeNetworkInterfaceAttributeResultTypeDef](./type_defs.md#describenetworkinterfaceattributeresulttypedef)
+- [DescribeNetworkInterfacePermissionsRequestDescribeNetworkInterfacePermissionsPaginateTypeDef](./type_defs.md#describenetworkinterfacepermissionsrequestdescribenetworkinterfacepermissionspaginatetypedef)
 - [DescribeNetworkInterfacePermissionsRequestRequestTypeDef](./type_defs.md#describenetworkinterfacepermissionsrequestrequesttypedef)
 - [DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)
+- [DescribeNetworkInterfacesRequestDescribeNetworkInterfacesPaginateTypeDef](./type_defs.md#describenetworkinterfacesrequestdescribenetworkinterfacespaginatetypedef)
+- [DescribeNetworkInterfacesRequestNetworkInterfaceAvailableWaitTypeDef](./type_defs.md#describenetworkinterfacesrequestnetworkinterfaceavailablewaittypedef)
 - [DescribeNetworkInterfacesRequestRequestTypeDef](./type_defs.md#describenetworkinterfacesrequestrequesttypedef)
 - [DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)
 - [DescribePlacementGroupsRequestRequestTypeDef](./type_defs.md#describeplacementgroupsrequestrequesttypedef)
 - [DescribePlacementGroupsResultTypeDef](./type_defs.md#describeplacementgroupsresulttypedef)
+- [DescribePrefixListsRequestDescribePrefixListsPaginateTypeDef](./type_defs.md#describeprefixlistsrequestdescribeprefixlistspaginatetypedef)
 - [DescribePrefixListsRequestRequestTypeDef](./type_defs.md#describeprefixlistsrequestrequesttypedef)
 - [DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)
+- [DescribePrincipalIdFormatRequestDescribePrincipalIdFormatPaginateTypeDef](./type_defs.md#describeprincipalidformatrequestdescribeprincipalidformatpaginatetypedef)
 - [DescribePrincipalIdFormatRequestRequestTypeDef](./type_defs.md#describeprincipalidformatrequestrequesttypedef)
 - [DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)
+- [DescribePublicIpv4PoolsRequestDescribePublicIpv4PoolsPaginateTypeDef](./type_defs.md#describepublicipv4poolsrequestdescribepublicipv4poolspaginatetypedef)
 - [DescribePublicIpv4PoolsRequestRequestTypeDef](./type_defs.md#describepublicipv4poolsrequestrequesttypedef)
 - [DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)
 - [DescribeRegionsRequestRequestTypeDef](./type_defs.md#describeregionsrequestrequesttypedef)
 - [DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef)
+- [DescribeReplaceRootVolumeTasksRequestDescribeReplaceRootVolumeTasksPaginateTypeDef](./type_defs.md#describereplacerootvolumetasksrequestdescribereplacerootvolumetaskspaginatetypedef)
 - [DescribeReplaceRootVolumeTasksRequestRequestTypeDef](./type_defs.md#describereplacerootvolumetasksrequestrequesttypedef)
 - [DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)
 - [DescribeReservedInstancesListingsRequestRequestTypeDef](./type_defs.md#describereservedinstanceslistingsrequestrequesttypedef)
 - [DescribeReservedInstancesListingsResultTypeDef](./type_defs.md#describereservedinstanceslistingsresulttypedef)
+- [DescribeReservedInstancesModificationsRequestDescribeReservedInstancesModificationsPaginateTypeDef](./type_defs.md#describereservedinstancesmodificationsrequestdescribereservedinstancesmodificationspaginatetypedef)
 - [DescribeReservedInstancesModificationsRequestRequestTypeDef](./type_defs.md#describereservedinstancesmodificationsrequestrequesttypedef)
 - [DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)
+- [DescribeReservedInstancesOfferingsRequestDescribeReservedInstancesOfferingsPaginateTypeDef](./type_defs.md#describereservedinstancesofferingsrequestdescribereservedinstancesofferingspaginatetypedef)
 - [DescribeReservedInstancesOfferingsRequestRequestTypeDef](./type_defs.md#describereservedinstancesofferingsrequestrequesttypedef)
 - [DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)
 - [DescribeReservedInstancesRequestRequestTypeDef](./type_defs.md#describereservedinstancesrequestrequesttypedef)
 - [DescribeReservedInstancesResultTypeDef](./type_defs.md#describereservedinstancesresulttypedef)
+- [DescribeRouteTablesRequestDescribeRouteTablesPaginateTypeDef](./type_defs.md#describeroutetablesrequestdescriberoutetablespaginatetypedef)
 - [DescribeRouteTablesRequestRequestTypeDef](./type_defs.md#describeroutetablesrequestrequesttypedef)
 - [DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)
+- [DescribeScheduledInstanceAvailabilityRequestDescribeScheduledInstanceAvailabilityPaginateTypeDef](./type_defs.md#describescheduledinstanceavailabilityrequestdescribescheduledinstanceavailabilitypaginatetypedef)
 - [DescribeScheduledInstanceAvailabilityRequestRequestTypeDef](./type_defs.md#describescheduledinstanceavailabilityrequestrequesttypedef)
 - [DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)
+- [DescribeScheduledInstancesRequestDescribeScheduledInstancesPaginateTypeDef](./type_defs.md#describescheduledinstancesrequestdescribescheduledinstancespaginatetypedef)
 - [DescribeScheduledInstancesRequestRequestTypeDef](./type_defs.md#describescheduledinstancesrequestrequesttypedef)
 - [DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)
 - [DescribeSecurityGroupReferencesRequestRequestTypeDef](./type_defs.md#describesecuritygroupreferencesrequestrequesttypedef)
 - [DescribeSecurityGroupReferencesResultTypeDef](./type_defs.md#describesecuritygroupreferencesresulttypedef)
+- [DescribeSecurityGroupRulesRequestDescribeSecurityGroupRulesPaginateTypeDef](./type_defs.md#describesecuritygrouprulesrequestdescribesecuritygrouprulespaginatetypedef)
 - [DescribeSecurityGroupRulesRequestRequestTypeDef](./type_defs.md#describesecuritygrouprulesrequestrequesttypedef)
 - [DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)
+- [DescribeSecurityGroupsRequestDescribeSecurityGroupsPaginateTypeDef](./type_defs.md#describesecuritygroupsrequestdescribesecuritygroupspaginatetypedef)
 - [DescribeSecurityGroupsRequestRequestTypeDef](./type_defs.md#describesecuritygroupsrequestrequesttypedef)
+- [DescribeSecurityGroupsRequestSecurityGroupExistsWaitTypeDef](./type_defs.md#describesecuritygroupsrequestsecuritygroupexistswaittypedef)
 - [DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)
 - [DescribeSnapshotAttributeRequestRequestTypeDef](./type_defs.md#describesnapshotattributerequestrequesttypedef)
 - [DescribeSnapshotAttributeRequestSnapshotDescribeAttributeTypeDef](./type_defs.md#describesnapshotattributerequestsnapshotdescribeattributetypedef)
 - [DescribeSnapshotAttributeResultTypeDef](./type_defs.md#describesnapshotattributeresulttypedef)
+- [DescribeSnapshotTierStatusRequestDescribeSnapshotTierStatusPaginateTypeDef](./type_defs.md#describesnapshottierstatusrequestdescribesnapshottierstatuspaginatetypedef)
 - [DescribeSnapshotTierStatusRequestRequestTypeDef](./type_defs.md#describesnapshottierstatusrequestrequesttypedef)
 - [DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef)
+- [DescribeSnapshotsRequestDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsrequestdescribesnapshotspaginatetypedef)
 - [DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef)
+- [DescribeSnapshotsRequestSnapshotCompletedWaitTypeDef](./type_defs.md#describesnapshotsrequestsnapshotcompletedwaittypedef)
 - [DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)
 - [DescribeSpotDatafeedSubscriptionRequestRequestTypeDef](./type_defs.md#describespotdatafeedsubscriptionrequestrequesttypedef)
 - [DescribeSpotDatafeedSubscriptionResultTypeDef](./type_defs.md#describespotdatafeedsubscriptionresulttypedef)
+- [DescribeSpotFleetInstancesRequestDescribeSpotFleetInstancesPaginateTypeDef](./type_defs.md#describespotfleetinstancesrequestdescribespotfleetinstancespaginatetypedef)
 - [DescribeSpotFleetInstancesRequestRequestTypeDef](./type_defs.md#describespotfleetinstancesrequestrequesttypedef)
 - [DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)
 - [DescribeSpotFleetRequestHistoryRequestRequestTypeDef](./type_defs.md#describespotfleetrequesthistoryrequestrequesttypedef)
 - [DescribeSpotFleetRequestHistoryResponseTypeDef](./type_defs.md#describespotfleetrequesthistoryresponsetypedef)
+- [DescribeSpotFleetRequestsRequestDescribeSpotFleetRequestsPaginateTypeDef](./type_defs.md#describespotfleetrequestsrequestdescribespotfleetrequestspaginatetypedef)
 - [DescribeSpotFleetRequestsRequestRequestTypeDef](./type_defs.md#describespotfleetrequestsrequestrequesttypedef)
 - [DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)
+- [DescribeSpotInstanceRequestsRequestDescribeSpotInstanceRequestsPaginateTypeDef](./type_defs.md#describespotinstancerequestsrequestdescribespotinstancerequestspaginatetypedef)
 - [DescribeSpotInstanceRequestsRequestRequestTypeDef](./type_defs.md#describespotinstancerequestsrequestrequesttypedef)
+- [DescribeSpotInstanceRequestsRequestSpotInstanceRequestFulfilledWaitTypeDef](./type_defs.md#describespotinstancerequestsrequestspotinstancerequestfulfilledwaittypedef)
 - [DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)
+- [DescribeSpotPriceHistoryRequestDescribeSpotPriceHistoryPaginateTypeDef](./type_defs.md#describespotpricehistoryrequestdescribespotpricehistorypaginatetypedef)
 - [DescribeSpotPriceHistoryRequestRequestTypeDef](./type_defs.md#describespotpricehistoryrequestrequesttypedef)
 - [DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)
+- [DescribeStaleSecurityGroupsRequestDescribeStaleSecurityGroupsPaginateTypeDef](./type_defs.md#describestalesecuritygroupsrequestdescribestalesecuritygroupspaginatetypedef)
 - [DescribeStaleSecurityGroupsRequestRequestTypeDef](./type_defs.md#describestalesecuritygroupsrequestrequesttypedef)
 - [DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)
+- [DescribeStoreImageTasksRequestDescribeStoreImageTasksPaginateTypeDef](./type_defs.md#describestoreimagetasksrequestdescribestoreimagetaskspaginatetypedef)
 - [DescribeStoreImageTasksRequestRequestTypeDef](./type_defs.md#describestoreimagetasksrequestrequesttypedef)
 - [DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)
+- [DescribeSubnetsRequestDescribeSubnetsPaginateTypeDef](./type_defs.md#describesubnetsrequestdescribesubnetspaginatetypedef)
 - [DescribeSubnetsRequestRequestTypeDef](./type_defs.md#describesubnetsrequestrequesttypedef)
+- [DescribeSubnetsRequestSubnetAvailableWaitTypeDef](./type_defs.md#describesubnetsrequestsubnetavailablewaittypedef)
 - [DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)
+- [DescribeTagsRequestDescribeTagsPaginateTypeDef](./type_defs.md#describetagsrequestdescribetagspaginatetypedef)
 - [DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef)
 - [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)
+- [DescribeTrafficMirrorFiltersRequestDescribeTrafficMirrorFiltersPaginateTypeDef](./type_defs.md#describetrafficmirrorfiltersrequestdescribetrafficmirrorfilterspaginatetypedef)
 - [DescribeTrafficMirrorFiltersRequestRequestTypeDef](./type_defs.md#describetrafficmirrorfiltersrequestrequesttypedef)
 - [DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)
+- [DescribeTrafficMirrorSessionsRequestDescribeTrafficMirrorSessionsPaginateTypeDef](./type_defs.md#describetrafficmirrorsessionsrequestdescribetrafficmirrorsessionspaginatetypedef)
 - [DescribeTrafficMirrorSessionsRequestRequestTypeDef](./type_defs.md#describetrafficmirrorsessionsrequestrequesttypedef)
 - [DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)
+- [DescribeTrafficMirrorTargetsRequestDescribeTrafficMirrorTargetsPaginateTypeDef](./type_defs.md#describetrafficmirrortargetsrequestdescribetrafficmirrortargetspaginatetypedef)
 - [DescribeTrafficMirrorTargetsRequestRequestTypeDef](./type_defs.md#describetrafficmirrortargetsrequestrequesttypedef)
 - [DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)
+- [DescribeTransitGatewayAttachmentsRequestDescribeTransitGatewayAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewayattachmentsrequestdescribetransitgatewayattachmentspaginatetypedef)
 - [DescribeTransitGatewayAttachmentsRequestRequestTypeDef](./type_defs.md#describetransitgatewayattachmentsrequestrequesttypedef)
 - [DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)
+- [DescribeTransitGatewayConnectPeersRequestDescribeTransitGatewayConnectPeersPaginateTypeDef](./type_defs.md#describetransitgatewayconnectpeersrequestdescribetransitgatewayconnectpeerspaginatetypedef)
 - [DescribeTransitGatewayConnectPeersRequestRequestTypeDef](./type_defs.md#describetransitgatewayconnectpeersrequestrequesttypedef)
 - [DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)
+- [DescribeTransitGatewayConnectsRequestDescribeTransitGatewayConnectsPaginateTypeDef](./type_defs.md#describetransitgatewayconnectsrequestdescribetransitgatewayconnectspaginatetypedef)
 - [DescribeTransitGatewayConnectsRequestRequestTypeDef](./type_defs.md#describetransitgatewayconnectsrequestrequesttypedef)
 - [DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)
+- [DescribeTransitGatewayMulticastDomainsRequestDescribeTransitGatewayMulticastDomainsPaginateTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsrequestdescribetransitgatewaymulticastdomainspaginatetypedef)
 - [DescribeTransitGatewayMulticastDomainsRequestRequestTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsrequestrequesttypedef)
 - [DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)
+- [DescribeTransitGatewayPeeringAttachmentsRequestDescribeTransitGatewayPeeringAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsrequestdescribetransitgatewaypeeringattachmentspaginatetypedef)
 - [DescribeTransitGatewayPeeringAttachmentsRequestRequestTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsrequestrequesttypedef)
 - [DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)
+- [DescribeTransitGatewayRouteTablesRequestDescribeTransitGatewayRouteTablesPaginateTypeDef](./type_defs.md#describetransitgatewayroutetablesrequestdescribetransitgatewayroutetablespaginatetypedef)
 - [DescribeTransitGatewayRouteTablesRequestRequestTypeDef](./type_defs.md#describetransitgatewayroutetablesrequestrequesttypedef)
 - [DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)
+- [DescribeTransitGatewayVpcAttachmentsRequestDescribeTransitGatewayVpcAttachmentsPaginateTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsrequestdescribetransitgatewayvpcattachmentspaginatetypedef)
 - [DescribeTransitGatewayVpcAttachmentsRequestRequestTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsrequestrequesttypedef)
 - [DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)
+- [DescribeTransitGatewaysRequestDescribeTransitGatewaysPaginateTypeDef](./type_defs.md#describetransitgatewaysrequestdescribetransitgatewayspaginatetypedef)
 - [DescribeTransitGatewaysRequestRequestTypeDef](./type_defs.md#describetransitgatewaysrequestrequesttypedef)
 - [DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)
+- [DescribeTrunkInterfaceAssociationsRequestDescribeTrunkInterfaceAssociationsPaginateTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequestdescribetrunkinterfaceassociationspaginatetypedef)
 - [DescribeTrunkInterfaceAssociationsRequestRequestTypeDef](./type_defs.md#describetrunkinterfaceassociationsrequestrequesttypedef)
 - [DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef)
 - [DescribeVolumeAttributeRequestRequestTypeDef](./type_defs.md#describevolumeattributerequestrequesttypedef)
 - [DescribeVolumeAttributeRequestVolumeDescribeAttributeTypeDef](./type_defs.md#describevolumeattributerequestvolumedescribeattributetypedef)
 - [DescribeVolumeAttributeResultTypeDef](./type_defs.md#describevolumeattributeresulttypedef)
+- [DescribeVolumeStatusRequestDescribeVolumeStatusPaginateTypeDef](./type_defs.md#describevolumestatusrequestdescribevolumestatuspaginatetypedef)
 - [DescribeVolumeStatusRequestRequestTypeDef](./type_defs.md#describevolumestatusrequestrequesttypedef)
 - [DescribeVolumeStatusRequestVolumeDescribeStatusTypeDef](./type_defs.md#describevolumestatusrequestvolumedescribestatustypedef)
 - [DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)
+- [DescribeVolumesModificationsRequestDescribeVolumesModificationsPaginateTypeDef](./type_defs.md#describevolumesmodificationsrequestdescribevolumesmodificationspaginatetypedef)
 - [DescribeVolumesModificationsRequestRequestTypeDef](./type_defs.md#describevolumesmodificationsrequestrequesttypedef)
 - [DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)
+- [DescribeVolumesRequestDescribeVolumesPaginateTypeDef](./type_defs.md#describevolumesrequestdescribevolumespaginatetypedef)
 - [DescribeVolumesRequestRequestTypeDef](./type_defs.md#describevolumesrequestrequesttypedef)
+- [DescribeVolumesRequestVolumeAvailableWaitTypeDef](./type_defs.md#describevolumesrequestvolumeavailablewaittypedef)
+- [DescribeVolumesRequestVolumeDeletedWaitTypeDef](./type_defs.md#describevolumesrequestvolumedeletedwaittypedef)
+- [DescribeVolumesRequestVolumeInUseWaitTypeDef](./type_defs.md#describevolumesrequestvolumeinusewaittypedef)
 - [DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)
 - [DescribeVpcAttributeRequestRequestTypeDef](./type_defs.md#describevpcattributerequestrequesttypedef)
 - [DescribeVpcAttributeRequestVpcDescribeAttributeTypeDef](./type_defs.md#describevpcattributerequestvpcdescribeattributetypedef)
 - [DescribeVpcAttributeResultTypeDef](./type_defs.md#describevpcattributeresulttypedef)
+- [DescribeVpcClassicLinkDnsSupportRequestDescribeVpcClassicLinkDnsSupportPaginateTypeDef](./type_defs.md#describevpcclassiclinkdnssupportrequestdescribevpcclassiclinkdnssupportpaginatetypedef)
 - [DescribeVpcClassicLinkDnsSupportRequestRequestTypeDef](./type_defs.md#describevpcclassiclinkdnssupportrequestrequesttypedef)
 - [DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)
 - [DescribeVpcClassicLinkRequestRequestTypeDef](./type_defs.md#describevpcclassiclinkrequestrequesttypedef)
 - [DescribeVpcClassicLinkResultTypeDef](./type_defs.md#describevpcclassiclinkresulttypedef)
+- [DescribeVpcEndpointConnectionNotificationsRequestDescribeVpcEndpointConnectionNotificationsPaginateTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsrequestdescribevpcendpointconnectionnotificationspaginatetypedef)
 - [DescribeVpcEndpointConnectionNotificationsRequestRequestTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsrequestrequesttypedef)
 - [DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)
+- [DescribeVpcEndpointConnectionsRequestDescribeVpcEndpointConnectionsPaginateTypeDef](./type_defs.md#describevpcendpointconnectionsrequestdescribevpcendpointconnectionspaginatetypedef)
 - [DescribeVpcEndpointConnectionsRequestRequestTypeDef](./type_defs.md#describevpcendpointconnectionsrequestrequesttypedef)
 - [DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)
+- [DescribeVpcEndpointServiceConfigurationsRequestDescribeVpcEndpointServiceConfigurationsPaginateTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsrequestdescribevpcendpointserviceconfigurationspaginatetypedef)
 - [DescribeVpcEndpointServiceConfigurationsRequestRequestTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsrequestrequesttypedef)
 - [DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)
+- [DescribeVpcEndpointServicePermissionsRequestDescribeVpcEndpointServicePermissionsPaginateTypeDef](./type_defs.md#describevpcendpointservicepermissionsrequestdescribevpcendpointservicepermissionspaginatetypedef)
 - [DescribeVpcEndpointServicePermissionsRequestRequestTypeDef](./type_defs.md#describevpcendpointservicepermissionsrequestrequesttypedef)
 - [DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)
+- [DescribeVpcEndpointServicesRequestDescribeVpcEndpointServicesPaginateTypeDef](./type_defs.md#describevpcendpointservicesrequestdescribevpcendpointservicespaginatetypedef)
 - [DescribeVpcEndpointServicesRequestRequestTypeDef](./type_defs.md#describevpcendpointservicesrequestrequesttypedef)
 - [DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)
+- [DescribeVpcEndpointsRequestDescribeVpcEndpointsPaginateTypeDef](./type_defs.md#describevpcendpointsrequestdescribevpcendpointspaginatetypedef)
 - [DescribeVpcEndpointsRequestRequestTypeDef](./type_defs.md#describevpcendpointsrequestrequesttypedef)
 - [DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)
+- [DescribeVpcPeeringConnectionsRequestDescribeVpcPeeringConnectionsPaginateTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestdescribevpcpeeringconnectionspaginatetypedef)
 - [DescribeVpcPeeringConnectionsRequestRequestTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestrequesttypedef)
+- [DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionDeletedWaitTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestvpcpeeringconnectiondeletedwaittypedef)
+- [DescribeVpcPeeringConnectionsRequestVpcPeeringConnectionExistsWaitTypeDef](./type_defs.md#describevpcpeeringconnectionsrequestvpcpeeringconnectionexistswaittypedef)
 - [DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)
+- [DescribeVpcsRequestDescribeVpcsPaginateTypeDef](./type_defs.md#describevpcsrequestdescribevpcspaginatetypedef)
 - [DescribeVpcsRequestRequestTypeDef](./type_defs.md#describevpcsrequestrequesttypedef)
+- [DescribeVpcsRequestVpcAvailableWaitTypeDef](./type_defs.md#describevpcsrequestvpcavailablewaittypedef)
+- [DescribeVpcsRequestVpcExistsWaitTypeDef](./type_defs.md#describevpcsrequestvpcexistswaittypedef)
 - [DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)
 - [DescribeVpnConnectionsRequestRequestTypeDef](./type_defs.md#describevpnconnectionsrequestrequesttypedef)
+- [DescribeVpnConnectionsRequestVpnConnectionAvailableWaitTypeDef](./type_defs.md#describevpnconnectionsrequestvpnconnectionavailablewaittypedef)
+- [DescribeVpnConnectionsRequestVpnConnectionDeletedWaitTypeDef](./type_defs.md#describevpnconnectionsrequestvpnconnectiondeletedwaittypedef)
 - [DescribeVpnConnectionsResultTypeDef](./type_defs.md#describevpnconnectionsresulttypedef)
 - [DescribeVpnGatewaysRequestRequestTypeDef](./type_defs.md#describevpngatewaysrequestrequesttypedef)
 - [DescribeVpnGatewaysResultTypeDef](./type_defs.md#describevpngatewaysresulttypedef)
@@ -2323,6 +1914,7 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [FpgaInfoTypeDef](./type_defs.md#fpgainfotypedef)
 - [GetAssociatedEnclaveCertificateIamRolesRequestRequestTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesrequestrequesttypedef)
 - [GetAssociatedEnclaveCertificateIamRolesResultTypeDef](./type_defs.md#getassociatedenclavecertificateiamrolesresulttypedef)
+- [GetAssociatedIpv6PoolCidrsRequestGetAssociatedIpv6PoolCidrsPaginateTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequestgetassociatedipv6poolcidrspaginatetypedef)
 - [GetAssociatedIpv6PoolCidrsRequestRequestTypeDef](./type_defs.md#getassociatedipv6poolcidrsrequestrequesttypedef)
 - [GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)
 - [GetCapacityReservationUsageRequestRequestTypeDef](./type_defs.md#getcapacityreservationusagerequestrequesttypedef)
@@ -2342,24 +1934,32 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [GetEbsEncryptionByDefaultResultTypeDef](./type_defs.md#getebsencryptionbydefaultresulttypedef)
 - [GetFlowLogsIntegrationTemplateRequestRequestTypeDef](./type_defs.md#getflowlogsintegrationtemplaterequestrequesttypedef)
 - [GetFlowLogsIntegrationTemplateResultTypeDef](./type_defs.md#getflowlogsintegrationtemplateresulttypedef)
+- [GetGroupsForCapacityReservationRequestGetGroupsForCapacityReservationPaginateTypeDef](./type_defs.md#getgroupsforcapacityreservationrequestgetgroupsforcapacityreservationpaginatetypedef)
 - [GetGroupsForCapacityReservationRequestRequestTypeDef](./type_defs.md#getgroupsforcapacityreservationrequestrequesttypedef)
 - [GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)
 - [GetHostReservationPurchasePreviewRequestRequestTypeDef](./type_defs.md#gethostreservationpurchasepreviewrequestrequesttypedef)
 - [GetHostReservationPurchasePreviewResultTypeDef](./type_defs.md#gethostreservationpurchasepreviewresulttypedef)
+- [GetInstanceTypesFromInstanceRequirementsRequestGetInstanceTypesFromInstanceRequirementsPaginateTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsrequestgetinstancetypesfrominstancerequirementspaginatetypedef)
 - [GetInstanceTypesFromInstanceRequirementsRequestRequestTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsrequestrequesttypedef)
 - [GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef)
+- [GetIpamAddressHistoryRequestGetIpamAddressHistoryPaginateTypeDef](./type_defs.md#getipamaddresshistoryrequestgetipamaddresshistorypaginatetypedef)
 - [GetIpamAddressHistoryRequestRequestTypeDef](./type_defs.md#getipamaddresshistoryrequestrequesttypedef)
 - [GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef)
+- [GetIpamPoolAllocationsRequestGetIpamPoolAllocationsPaginateTypeDef](./type_defs.md#getipampoolallocationsrequestgetipampoolallocationspaginatetypedef)
 - [GetIpamPoolAllocationsRequestRequestTypeDef](./type_defs.md#getipampoolallocationsrequestrequesttypedef)
 - [GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef)
+- [GetIpamPoolCidrsRequestGetIpamPoolCidrsPaginateTypeDef](./type_defs.md#getipampoolcidrsrequestgetipampoolcidrspaginatetypedef)
 - [GetIpamPoolCidrsRequestRequestTypeDef](./type_defs.md#getipampoolcidrsrequestrequesttypedef)
 - [GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef)
+- [GetIpamResourceCidrsRequestGetIpamResourceCidrsPaginateTypeDef](./type_defs.md#getipamresourcecidrsrequestgetipamresourcecidrspaginatetypedef)
 - [GetIpamResourceCidrsRequestRequestTypeDef](./type_defs.md#getipamresourcecidrsrequestrequesttypedef)
 - [GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef)
 - [GetLaunchTemplateDataRequestRequestTypeDef](./type_defs.md#getlaunchtemplatedatarequestrequesttypedef)
 - [GetLaunchTemplateDataResultTypeDef](./type_defs.md#getlaunchtemplatedataresulttypedef)
+- [GetManagedPrefixListAssociationsRequestGetManagedPrefixListAssociationsPaginateTypeDef](./type_defs.md#getmanagedprefixlistassociationsrequestgetmanagedprefixlistassociationspaginatetypedef)
 - [GetManagedPrefixListAssociationsRequestRequestTypeDef](./type_defs.md#getmanagedprefixlistassociationsrequestrequesttypedef)
 - [GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)
+- [GetManagedPrefixListEntriesRequestGetManagedPrefixListEntriesPaginateTypeDef](./type_defs.md#getmanagedprefixlistentriesrequestgetmanagedprefixlistentriespaginatetypedef)
 - [GetManagedPrefixListEntriesRequestRequestTypeDef](./type_defs.md#getmanagedprefixlistentriesrequestrequesttypedef)
 - [GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)
 - [GetNetworkInsightsAccessScopeAnalysisFindingsRequestRequestTypeDef](./type_defs.md#getnetworkinsightsaccessscopeanalysisfindingsrequestrequesttypedef)
@@ -2367,28 +1967,36 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [GetNetworkInsightsAccessScopeContentRequestRequestTypeDef](./type_defs.md#getnetworkinsightsaccessscopecontentrequestrequesttypedef)
 - [GetNetworkInsightsAccessScopeContentResultTypeDef](./type_defs.md#getnetworkinsightsaccessscopecontentresulttypedef)
 - [GetPasswordDataRequestInstancePasswordDataTypeDef](./type_defs.md#getpassworddatarequestinstancepassworddatatypedef)
+- [GetPasswordDataRequestPasswordDataAvailableWaitTypeDef](./type_defs.md#getpassworddatarequestpassworddataavailablewaittypedef)
 - [GetPasswordDataRequestRequestTypeDef](./type_defs.md#getpassworddatarequestrequesttypedef)
 - [GetPasswordDataResultTypeDef](./type_defs.md#getpassworddataresulttypedef)
 - [GetReservedInstancesExchangeQuoteRequestRequestTypeDef](./type_defs.md#getreservedinstancesexchangequoterequestrequesttypedef)
 - [GetReservedInstancesExchangeQuoteResultTypeDef](./type_defs.md#getreservedinstancesexchangequoteresulttypedef)
 - [GetSerialConsoleAccessStatusRequestRequestTypeDef](./type_defs.md#getserialconsoleaccessstatusrequestrequesttypedef)
 - [GetSerialConsoleAccessStatusResultTypeDef](./type_defs.md#getserialconsoleaccessstatusresulttypedef)
+- [GetSpotPlacementScoresRequestGetSpotPlacementScoresPaginateTypeDef](./type_defs.md#getspotplacementscoresrequestgetspotplacementscorespaginatetypedef)
 - [GetSpotPlacementScoresRequestRequestTypeDef](./type_defs.md#getspotplacementscoresrequestrequesttypedef)
 - [GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef)
 - [GetSubnetCidrReservationsRequestRequestTypeDef](./type_defs.md#getsubnetcidrreservationsrequestrequesttypedef)
 - [GetSubnetCidrReservationsResultTypeDef](./type_defs.md#getsubnetcidrreservationsresulttypedef)
+- [GetTransitGatewayAttachmentPropagationsRequestGetTransitGatewayAttachmentPropagationsPaginateTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsrequestgettransitgatewayattachmentpropagationspaginatetypedef)
 - [GetTransitGatewayAttachmentPropagationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsrequestrequesttypedef)
 - [GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)
+- [GetTransitGatewayMulticastDomainAssociationsRequestGetTransitGatewayMulticastDomainAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsrequestgettransitgatewaymulticastdomainassociationspaginatetypedef)
 - [GetTransitGatewayMulticastDomainAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsrequestrequesttypedef)
 - [GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)
+- [GetTransitGatewayPrefixListReferencesRequestGetTransitGatewayPrefixListReferencesPaginateTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesrequestgettransitgatewayprefixlistreferencespaginatetypedef)
 - [GetTransitGatewayPrefixListReferencesRequestRequestTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesrequestrequesttypedef)
 - [GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)
+- [GetTransitGatewayRouteTableAssociationsRequestGetTransitGatewayRouteTableAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsrequestgettransitgatewayroutetableassociationspaginatetypedef)
 - [GetTransitGatewayRouteTableAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsrequestrequesttypedef)
 - [GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)
+- [GetTransitGatewayRouteTablePropagationsRequestGetTransitGatewayRouteTablePropagationsPaginateTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsrequestgettransitgatewayroutetablepropagationspaginatetypedef)
 - [GetTransitGatewayRouteTablePropagationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsrequestrequesttypedef)
 - [GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)
 - [GetVpnConnectionDeviceSampleConfigurationRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationrequestrequesttypedef)
 - [GetVpnConnectionDeviceSampleConfigurationResultTypeDef](./type_defs.md#getvpnconnectiondevicesampleconfigurationresulttypedef)
+- [GetVpnConnectionDeviceTypesRequestGetVpnConnectionDeviceTypesPaginateTypeDef](./type_defs.md#getvpnconnectiondevicetypesrequestgetvpnconnectiondevicetypespaginatetypedef)
 - [GetVpnConnectionDeviceTypesRequestRequestTypeDef](./type_defs.md#getvpnconnectiondevicetypesrequestrequesttypedef)
 - [GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)
 - [GpuDeviceInfoTypeDef](./type_defs.md#gpudeviceinfotypedef)
@@ -2563,8 +2171,10 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [LaunchTemplatesMonitoringTypeDef](./type_defs.md#launchtemplatesmonitoringtypedef)
 - [LicenseConfigurationRequestTypeDef](./type_defs.md#licenseconfigurationrequesttypedef)
 - [LicenseConfigurationTypeDef](./type_defs.md#licenseconfigurationtypedef)
+- [ListImagesInRecycleBinRequestListImagesInRecycleBinPaginateTypeDef](./type_defs.md#listimagesinrecyclebinrequestlistimagesinrecyclebinpaginatetypedef)
 - [ListImagesInRecycleBinRequestRequestTypeDef](./type_defs.md#listimagesinrecyclebinrequestrequesttypedef)
 - [ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef)
+- [ListSnapshotsInRecycleBinRequestListSnapshotsInRecycleBinPaginateTypeDef](./type_defs.md#listsnapshotsinrecyclebinrequestlistsnapshotsinrecyclebinpaginatetypedef)
 - [ListSnapshotsInRecycleBinRequestRequestTypeDef](./type_defs.md#listsnapshotsinrecyclebinrequestrequesttypedef)
 - [ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef)
 - [LoadBalancersConfigTypeDef](./type_defs.md#loadbalancersconfigtypedef)
@@ -2935,8 +2545,10 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [ScheduledInstancesPlacementTypeDef](./type_defs.md#scheduledinstancesplacementtypedef)
 - [ScheduledInstancesPrivateIpAddressConfigTypeDef](./type_defs.md#scheduledinstancesprivateipaddressconfigtypedef)
 - [SearchLocalGatewayRoutesRequestRequestTypeDef](./type_defs.md#searchlocalgatewayroutesrequestrequesttypedef)
+- [SearchLocalGatewayRoutesRequestSearchLocalGatewayRoutesPaginateTypeDef](./type_defs.md#searchlocalgatewayroutesrequestsearchlocalgatewayroutespaginatetypedef)
 - [SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)
 - [SearchTransitGatewayMulticastGroupsRequestRequestTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsrequestrequesttypedef)
+- [SearchTransitGatewayMulticastGroupsRequestSearchTransitGatewayMulticastGroupsPaginateTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsrequestsearchtransitgatewaymulticastgroupspaginatetypedef)
 - [SearchTransitGatewayMulticastGroupsResultTypeDef](./type_defs.md#searchtransitgatewaymulticastgroupsresulttypedef)
 - [SearchTransitGatewayRoutesRequestRequestTypeDef](./type_defs.md#searchtransitgatewayroutesrequestrequesttypedef)
 - [SearchTransitGatewayRoutesResultTypeDef](./type_defs.md#searchtransitgatewayroutesresulttypedef)
@@ -3149,3 +2761,4 @@ from mypy_boto3_ec2.type_defs import AcceleratorCountRequestTypeDef, ...
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WithdrawByoipCidrRequestRequestTypeDef](./type_defs.md#withdrawbyoipcidrrequestrequesttypedef)
 - [WithdrawByoipCidrResultTypeDef](./type_defs.md#withdrawbyoipcidrresulttypedef)
+

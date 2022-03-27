@@ -1,36 +1,18 @@
-<a id="waiters-for-boto3-medialive-module"></a>
-
-# Waiters for boto3 MediaLive module
+# Waiters
 
 > [Index](../README.md) > [MediaLive](./README.md) > Waiters
 
-Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module
-[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
+!!! note ""
 
-- [Waiters for boto3 MediaLive module](#waiters-for-boto3-medialive-module)
-  - [ChannelCreatedWaiter](#channelcreatedwaiter)
-  - [ChannelDeletedWaiter](#channeldeletedwaiter)
-  - [ChannelRunningWaiter](#channelrunningwaiter)
-  - [ChannelStoppedWaiter](#channelstoppedwaiter)
-  - [InputAttachedWaiter](#inputattachedwaiter)
-  - [InputDeletedWaiter](#inputdeletedwaiter)
-  - [InputDetachedWaiter](#inputdetachedwaiter)
-  - [MultiplexCreatedWaiter](#multiplexcreatedwaiter)
-  - [MultiplexDeletedWaiter](#multiplexdeletedwaiter)
-  - [MultiplexRunningWaiter](#multiplexrunningwaiter)
-  - [MultiplexStoppedWaiter](#multiplexstoppedwaiter)
-
-<a id="channelcreatedwaiter"></a>
+    Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+    type annotations stubs module [mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ## ChannelCreatedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("channel_created")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("channel_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
@@ -39,23 +21,39 @@ def get_channel_created_waiter() -> ChannelCreatedWaiter:
     return Session().client("medialive").get_waiter("channel_created")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.channel_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelCreated)
 
-Arguments for `ChannelCreatedWaiter.wait` method:
+### wait
 
-- `ChannelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ChannelCreatedWaiter.wait` method.
 
-<a id="channeldeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ChannelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestChannelCreatedWaitTypeDef = {  # (1)
+    "ChannelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeChannelRequestChannelCreatedWaitTypeDef](./type_defs.md#describechannelrequestchannelcreatedwaittypedef) 
 ## ChannelDeletedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("channel_deleted")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("channel_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelDeletedWaiter
@@ -64,23 +62,39 @@ def get_channel_deleted_waiter() -> ChannelDeletedWaiter:
     return Session().client("medialive").get_waiter("channel_deleted")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.channel_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelDeleted)
 
-Arguments for `ChannelDeletedWaiter.wait` method:
+### wait
 
-- `ChannelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ChannelDeletedWaiter.wait` method.
 
-<a id="channelrunningwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ChannelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestChannelDeletedWaitTypeDef = {  # (1)
+    "ChannelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeChannelRequestChannelDeletedWaitTypeDef](./type_defs.md#describechannelrequestchanneldeletedwaittypedef) 
 ## ChannelRunningWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("channel_running")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("channel_running")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelRunning)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelRunningWaiter
@@ -89,23 +103,39 @@ def get_channel_running_waiter() -> ChannelRunningWaiter:
     return Session().client("medialive").get_waiter("channel_running")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.channel_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelRunning)
 
-Arguments for `ChannelRunningWaiter.wait` method:
+### wait
 
-- `ChannelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ChannelRunningWaiter.wait` method.
 
-<a id="channelstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ChannelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestChannelRunningWaitTypeDef = {  # (1)
+    "ChannelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeChannelRequestChannelRunningWaitTypeDef](./type_defs.md#describechannelrequestchannelrunningwaittypedef) 
 ## ChannelStoppedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("channel_stopped")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("channel_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import ChannelStoppedWaiter
@@ -114,23 +144,39 @@ def get_channel_stopped_waiter() -> ChannelStoppedWaiter:
     return Session().client("medialive").get_waiter("channel_stopped")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.channel_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.ChannelStopped)
 
-Arguments for `ChannelStoppedWaiter.wait` method:
+### wait
 
-- `ChannelId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ChannelStoppedWaiter.wait` method.
 
-<a id="inputattachedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ChannelId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestChannelStoppedWaitTypeDef = {  # (1)
+    "ChannelId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeChannelRequestChannelStoppedWaitTypeDef](./type_defs.md#describechannelrequestchannelstoppedwaittypedef) 
 ## InputAttachedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("input_attached")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("input_attached")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputAttached)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputAttachedWaiter
@@ -139,23 +185,39 @@ def get_input_attached_waiter() -> InputAttachedWaiter:
     return Session().client("medialive").get_waiter("input_attached")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.input_attached](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputAttached)
 
-Arguments for `InputAttachedWaiter.wait` method:
+### wait
 
-- `InputId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InputAttachedWaiter.wait` method.
 
-<a id="inputdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    InputId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInputRequestInputAttachedWaitTypeDef = {  # (1)
+    "InputId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInputRequestInputAttachedWaitTypeDef](./type_defs.md#describeinputrequestinputattachedwaittypedef) 
 ## InputDeletedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("input_deleted")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("input_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputDeletedWaiter
@@ -164,23 +226,39 @@ def get_input_deleted_waiter() -> InputDeletedWaiter:
     return Session().client("medialive").get_waiter("input_deleted")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.input_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputDeleted)
 
-Arguments for `InputDeletedWaiter.wait` method:
+### wait
 
-- `InputId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InputDeletedWaiter.wait` method.
 
-<a id="inputdetachedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    InputId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInputRequestInputDeletedWaitTypeDef = {  # (1)
+    "InputId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInputRequestInputDeletedWaitTypeDef](./type_defs.md#describeinputrequestinputdeletedwaittypedef) 
 ## InputDetachedWaiter
 
-Type annotations for `boto3.client("medialive").get_waiter("input_detached")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("input_detached")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputDetached)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import InputDetachedWaiter
@@ -189,24 +267,39 @@ def get_input_detached_waiter() -> InputDetachedWaiter:
     return Session().client("medialive").get_waiter("input_detached")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.input_detached](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.InputDetached)
 
-Arguments for `InputDetachedWaiter.wait` method:
+### wait
 
-- `InputId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python InputDetachedWaiter.wait` method.
 
-<a id="multiplexcreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    InputId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInputRequestInputDetachedWaitTypeDef = {  # (1)
+    "InputId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInputRequestInputDetachedWaitTypeDef](./type_defs.md#describeinputrequestinputdetachedwaittypedef) 
 ## MultiplexCreatedWaiter
 
-Type annotations for
-`boto3.client("medialive").get_waiter("multiplex_created")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("multiplex_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexCreatedWaiter
@@ -215,24 +308,39 @@ def get_multiplex_created_waiter() -> MultiplexCreatedWaiter:
     return Session().client("medialive").get_waiter("multiplex_created")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.multiplex_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexCreated)
 
-Arguments for `MultiplexCreatedWaiter.wait` method:
+### wait
 
-- `MultiplexId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python MultiplexCreatedWaiter.wait` method.
 
-<a id="multiplexdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    MultiplexId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexRequestMultiplexCreatedWaitTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMultiplexRequestMultiplexCreatedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexcreatedwaittypedef) 
 ## MultiplexDeletedWaiter
 
-Type annotations for
-`boto3.client("medialive").get_waiter("multiplex_deleted")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("multiplex_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexDeletedWaiter
@@ -241,24 +349,39 @@ def get_multiplex_deleted_waiter() -> MultiplexDeletedWaiter:
     return Session().client("medialive").get_waiter("multiplex_deleted")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.multiplex_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexDeleted)
 
-Arguments for `MultiplexDeletedWaiter.wait` method:
+### wait
 
-- `MultiplexId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python MultiplexDeletedWaiter.wait` method.
 
-<a id="multiplexrunningwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    MultiplexId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexRequestMultiplexDeletedWaitTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMultiplexRequestMultiplexDeletedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexdeletedwaittypedef) 
 ## MultiplexRunningWaiter
 
-Type annotations for
-`boto3.client("medialive").get_waiter("multiplex_running")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("multiplex_running")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexRunning)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexRunningWaiter
@@ -267,24 +390,39 @@ def get_multiplex_running_waiter() -> MultiplexRunningWaiter:
     return Session().client("medialive").get_waiter("multiplex_running")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.multiplex_running](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexRunning)
 
-Arguments for `MultiplexRunningWaiter.wait` method:
+### wait
 
-- `MultiplexId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python MultiplexRunningWaiter.wait` method.
 
-<a id="multiplexstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    MultiplexId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexRequestMultiplexRunningWaitTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMultiplexRequestMultiplexRunningWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexrunningwaittypedef) 
 ## MultiplexStoppedWaiter
 
-Type annotations for
-`boto3.client("medialive").get_waiter("multiplex_stopped")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter("multiplex_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.waiter import MultiplexStoppedWaiter
@@ -293,10 +431,30 @@ def get_multiplex_stopped_waiter() -> MultiplexStoppedWaiter:
     return Session().client("medialive").get_waiter("multiplex_stopped")
 ```
 
-Boto3 documentation:
-[MediaLive.Waiter.multiplex_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Waiter.MultiplexStopped)
 
-Arguments for `MultiplexStoppedWaiter.wait` method:
+### wait
 
-- `MultiplexId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python MultiplexStoppedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    MultiplexId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexRequestMultiplexStoppedWaitTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMultiplexRequestMultiplexStoppedWaitTypeDef](./type_defs.md#describemultiplexrequestmultiplexstoppedwaittypedef) 

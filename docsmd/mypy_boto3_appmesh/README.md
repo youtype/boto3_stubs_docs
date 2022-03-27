@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-appmesh-module"></a>
-
-# Type annotations for boto3 AppMesh module
+#  AppMesh module
 
 > [Index](../README.md) > AppMesh
 
-Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module
-[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+!!! note ""
 
-- [Type annotations for boto3 AppMesh module](#type-annotations-for-boto3-appmesh-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppMeshClient](#appmeshclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+    type annotations stubs module [mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppMesh`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[appmesh]'
 python -m pip install mypy-boto3-appmesh
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,100 +42,37 @@ python -m pip install mypy-boto3-appmesh
 python -m pip uninstall -y mypy-boto3-appmesh
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="appmeshclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppMeshClient
 
-Type annotations for `boto3.client("appmesh")` as [AppMeshClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("appmesh")` as [AppMeshClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_appmesh.client import AppMeshClient
+
+def get_client() -> AppMeshClient:
+    return Session().cleint("appmesh")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_gateway_route](./client.md#create_gateway_route)
-- [create_mesh](./client.md#create_mesh)
-- [create_route](./client.md#create_route)
-- [create_virtual_gateway](./client.md#create_virtual_gateway)
-- [create_virtual_node](./client.md#create_virtual_node)
-- [create_virtual_router](./client.md#create_virtual_router)
-- [create_virtual_service](./client.md#create_virtual_service)
-- [delete_gateway_route](./client.md#delete_gateway_route)
-- [delete_mesh](./client.md#delete_mesh)
-- [delete_route](./client.md#delete_route)
-- [delete_virtual_gateway](./client.md#delete_virtual_gateway)
-- [delete_virtual_node](./client.md#delete_virtual_node)
-- [delete_virtual_router](./client.md#delete_virtual_router)
-- [delete_virtual_service](./client.md#delete_virtual_service)
-- [describe_gateway_route](./client.md#describe_gateway_route)
-- [describe_mesh](./client.md#describe_mesh)
-- [describe_route](./client.md#describe_route)
-- [describe_virtual_gateway](./client.md#describe_virtual_gateway)
-- [describe_virtual_node](./client.md#describe_virtual_node)
-- [describe_virtual_router](./client.md#describe_virtual_router)
-- [describe_virtual_service](./client.md#describe_virtual_service)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_gateway_routes](./client.md#list_gateway_routes)
-- [list_meshes](./client.md#list_meshes)
-- [list_routes](./client.md#list_routes)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_virtual_gateways](./client.md#list_virtual_gateways)
-- [list_virtual_nodes](./client.md#list_virtual_nodes)
-- [list_virtual_routers](./client.md#list_virtual_routers)
-- [list_virtual_services](./client.md#list_virtual_services)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_gateway_route](./client.md#update_gateway_route)
-- [update_mesh](./client.md#update_mesh)
-- [update_route](./client.md#update_route)
-- [update_virtual_gateway](./client.md#update_virtual_gateway)
-- [update_virtual_node](./client.md#update_virtual_node)
-- [update_virtual_router](./client.md#update_virtual_router)
-- [update_virtual_service](./client.md#update_virtual_service)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AppMeshClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- LimitExceededException
-- NotFoundException
-- ResourceInUseException
-- ServiceUnavailableException
-- TooManyRequestsException
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("appmesh").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("appmesh").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator, ...
+from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator
+
+def get_list_gateway_routes_paginator() -> ListGatewayRoutesPaginator:
+    return Session().client("appmesh").get_paginator("list_gateway_routes"))
 ```
 
 - [ListGatewayRoutesPaginator](./paginators.md#listgatewayroutespaginator)
@@ -169,16 +84,23 @@ from mypy_boto3_appmesh.paginator import ListGatewayRoutesPaginator, ...
 - [ListVirtualRoutersPaginator](./paginators.md#listvirtualrouterspaginator)
 - [ListVirtualServicesPaginator](./paginators.md#listvirtualservicespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType
 
-```python
-from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
+def get_value() -> DefaultGatewayRouteRewriteType:
+    return "DISABLED"
 ```
 
 - [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
@@ -212,18 +134,22 @@ from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appmesh.type_defs import AccessLogTypeDef
 
-```python
-from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
+def get_value() -> AccessLogTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
 - [AccessLogTypeDef](./type_defs.md#accesslogtypedef)
@@ -318,20 +244,28 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [HttpRouteMatchTypeDef](./type_defs.md#httproutematchtypedef)
 - [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
 - [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
+- [ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef](./type_defs.md#listgatewayroutesinputlistgatewayroutespaginatetypedef)
 - [ListGatewayRoutesInputRequestTypeDef](./type_defs.md#listgatewayroutesinputrequesttypedef)
 - [ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef)
+- [ListMeshesInputListMeshesPaginateTypeDef](./type_defs.md#listmeshesinputlistmeshespaginatetypedef)
 - [ListMeshesInputRequestTypeDef](./type_defs.md#listmeshesinputrequesttypedef)
 - [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef)
+- [ListRoutesInputListRoutesPaginateTypeDef](./type_defs.md#listroutesinputlistroutespaginatetypedef)
 - [ListRoutesInputRequestTypeDef](./type_defs.md#listroutesinputrequesttypedef)
 - [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef)
+- [ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef)
 - [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)
+- [ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef](./type_defs.md#listvirtualgatewaysinputlistvirtualgatewayspaginatetypedef)
 - [ListVirtualGatewaysInputRequestTypeDef](./type_defs.md#listvirtualgatewaysinputrequesttypedef)
 - [ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef)
+- [ListVirtualNodesInputListVirtualNodesPaginateTypeDef](./type_defs.md#listvirtualnodesinputlistvirtualnodespaginatetypedef)
 - [ListVirtualNodesInputRequestTypeDef](./type_defs.md#listvirtualnodesinputrequesttypedef)
 - [ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef)
+- [ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef](./type_defs.md#listvirtualroutersinputlistvirtualrouterspaginatetypedef)
 - [ListVirtualRoutersInputRequestTypeDef](./type_defs.md#listvirtualroutersinputrequesttypedef)
 - [ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef)
+- [ListVirtualServicesInputListVirtualServicesPaginateTypeDef](./type_defs.md#listvirtualservicesinputlistvirtualservicespaginatetypedef)
 - [ListVirtualServicesInputRequestTypeDef](./type_defs.md#listvirtualservicesinputrequesttypedef)
 - [ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef)
 - [ListenerTimeoutTypeDef](./type_defs.md#listenertimeouttypedef)
@@ -440,3 +374,4 @@ from mypy_boto3_appmesh.type_defs import AccessLogTypeDef, ...
 - [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
 - [VirtualServiceStatusTypeDef](./type_defs.md#virtualservicestatustypedef)
 - [WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)
+

@@ -1,906 +1,1134 @@
-<a id="typed-dictionaries-for-boto3-secretsmanager-module"></a>
-
-# Typed dictionaries for boto3 SecretsManager module
+# Typed dictionaries
 
 > [Index](../README.md) > [SecretsManager](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
-type annotations stubs module
-[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SecretsManager module](#typed-dictionaries-for-boto3-secretsmanager-module)
-  - [CancelRotateSecretRequestRequestTypeDef](#cancelrotatesecretrequestrequesttypedef)
-  - [CancelRotateSecretResponseTypeDef](#cancelrotatesecretresponsetypedef)
-  - [CreateSecretRequestRequestTypeDef](#createsecretrequestrequesttypedef)
-  - [CreateSecretResponseTypeDef](#createsecretresponsetypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteResourcePolicyResponseTypeDef](#deleteresourcepolicyresponsetypedef)
-  - [DeleteSecretRequestRequestTypeDef](#deletesecretrequestrequesttypedef)
-  - [DeleteSecretResponseTypeDef](#deletesecretresponsetypedef)
-  - [DescribeSecretRequestRequestTypeDef](#describesecretrequestrequesttypedef)
-  - [DescribeSecretResponseTypeDef](#describesecretresponsetypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetRandomPasswordRequestRequestTypeDef](#getrandompasswordrequestrequesttypedef)
-  - [GetRandomPasswordResponseTypeDef](#getrandompasswordresponsetypedef)
-  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
-  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
-  - [GetSecretValueRequestRequestTypeDef](#getsecretvaluerequestrequesttypedef)
-  - [GetSecretValueResponseTypeDef](#getsecretvalueresponsetypedef)
-  - [ListSecretVersionIdsRequestRequestTypeDef](#listsecretversionidsrequestrequesttypedef)
-  - [ListSecretVersionIdsResponseTypeDef](#listsecretversionidsresponsetypedef)
-  - [ListSecretsRequestRequestTypeDef](#listsecretsrequestrequesttypedef)
-  - [ListSecretsResponseTypeDef](#listsecretsresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
-  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
-  - [PutSecretValueRequestRequestTypeDef](#putsecretvaluerequestrequesttypedef)
-  - [PutSecretValueResponseTypeDef](#putsecretvalueresponsetypedef)
-  - [RemoveRegionsFromReplicationRequestRequestTypeDef](#removeregionsfromreplicationrequestrequesttypedef)
-  - [RemoveRegionsFromReplicationResponseTypeDef](#removeregionsfromreplicationresponsetypedef)
-  - [ReplicaRegionTypeTypeDef](#replicaregiontypetypedef)
-  - [ReplicateSecretToRegionsRequestRequestTypeDef](#replicatesecrettoregionsrequestrequesttypedef)
-  - [ReplicateSecretToRegionsResponseTypeDef](#replicatesecrettoregionsresponsetypedef)
-  - [ReplicationStatusTypeTypeDef](#replicationstatustypetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreSecretRequestRequestTypeDef](#restoresecretrequestrequesttypedef)
-  - [RestoreSecretResponseTypeDef](#restoresecretresponsetypedef)
-  - [RotateSecretRequestRequestTypeDef](#rotatesecretrequestrequesttypedef)
-  - [RotateSecretResponseTypeDef](#rotatesecretresponsetypedef)
-  - [RotationRulesTypeTypeDef](#rotationrulestypetypedef)
-  - [SecretListEntryTypeDef](#secretlistentrytypedef)
-  - [SecretVersionsListEntryTypeDef](#secretversionslistentrytypedef)
-  - [StopReplicationToReplicaRequestRequestTypeDef](#stopreplicationtoreplicarequestrequesttypedef)
-  - [StopReplicationToReplicaResponseTypeDef](#stopreplicationtoreplicaresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateSecretRequestRequestTypeDef](#updatesecretrequestrequesttypedef)
-  - [UpdateSecretResponseTypeDef](#updatesecretresponsetypedef)
-  - [UpdateSecretVersionStageRequestRequestTypeDef](#updatesecretversionstagerequestrequesttypedef)
-  - [UpdateSecretVersionStageResponseTypeDef](#updatesecretversionstageresponsetypedef)
-  - [ValidateResourcePolicyRequestRequestTypeDef](#validateresourcepolicyrequestrequesttypedef)
-  - [ValidateResourcePolicyResponseTypeDef](#validateresourcepolicyresponsetypedef)
-  - [ValidationErrorsEntryTypeDef](#validationerrorsentrytypedef)
-
-<a id="cancelrotatesecretrequestrequesttypedef"></a>
+    Auto-generated documentation for [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
+    type annotations stubs module [mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 ## CancelRotateSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretRequestRequestTypeDef
+
+def get_value() -> CancelRotateSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="cancelrotatesecretresponsetypedef"></a>
+```python title="Definition"
+class CancelRotateSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## CancelRotateSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import CancelRotateSecretResponseTypeDef
+
+def get_value() -> CancelRotateSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelRotateSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsecretrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import CreateSecretRequestRequestTypeDef
+
+def get_value() -> CreateSecretRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecretRequestRequestTypeDef(TypedDict):
+    Name: str,
+    ClientRequestToken: NotRequired[str],
+    Description: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretString: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    AddReplicaRegions: NotRequired[Sequence[ReplicaRegionTypeTypeDef]],  # (2)
+    ForceOverwriteReplicaSecret: NotRequired[bool],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `AddReplicaRegions`:
-  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
-- `ForceOverwriteReplicaSecret`: `bool`
-
-<a id="createsecretresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef) 
 ## CreateSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import CreateSecretResponseTypeDef
+
+def get_value() -> CreateSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "ReplicationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    ReplicationStatus: List[ReplicationStatusTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `ReplicationStatus`:
-  `List`\[[ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="deleteresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## DeleteResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DeleteResourcePolicyResponseTypeDef
+
+def get_value() -> DeleteResourcePolicyResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResourcePolicyResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesecretrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DeleteSecretRequestRequestTypeDef
+
+def get_value() -> DeleteSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-Optional fields:
-
-- `RecoveryWindowInDays`: `int`
-- `ForceDeleteWithoutRecovery`: `bool`
-
-<a id="deletesecretresponsetypedef"></a>
+```python title="Definition"
+class DeleteSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    RecoveryWindowInDays: NotRequired[int],
+    ForceDeleteWithoutRecovery: NotRequired[bool],
+```
 
 ## DeleteSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DeleteSecretResponseTypeDef
+
+def get_value() -> DeleteSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "DeletionDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    DeletionDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `DeletionDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesecretrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DescribeSecretRequestRequestTypeDef
+
+def get_value() -> DescribeSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="describesecretresponsetypedef"></a>
+```python title="Definition"
+class DescribeSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## DescribeSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import DescribeSecretResponseTypeDef
+
+def get_value() -> DescribeSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "Description": ...,
+        "KmsKeyId": ...,
+        "RotationEnabled": ...,
+        "RotationLambdaARN": ...,
+        "RotationRules": ...,
+        "LastRotatedDate": ...,
+        "LastChangedDate": ...,
+        "LastAccessedDate": ...,
+        "DeletedDate": ...,
+        "Tags": ...,
+        "VersionIdsToStages": ...,
+        "OwningService": ...,
+        "CreatedDate": ...,
+        "PrimaryRegion": ...,
+        "ReplicationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    Description: str,
+    KmsKeyId: str,
+    RotationEnabled: bool,
+    RotationLambdaARN: str,
+    RotationRules: RotationRulesTypeTypeDef,  # (1)
+    LastRotatedDate: datetime,
+    LastChangedDate: datetime,
+    LastAccessedDate: datetime,
+    DeletedDate: datetime,
+    Tags: List[TagTypeDef],  # (2)
+    VersionIdsToStages: Dict[str, List[str]],
+    OwningService: str,
+    CreatedDate: datetime,
+    PrimaryRegion: str,
+    ReplicationStatus: List[ReplicationStatusTypeTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `RotationEnabled`: `bool`
-- `RotationLambdaARN`: `str`
-- `RotationRules`:
-  [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
-- `LastRotatedDate`: `datetime`
-- `LastChangedDate`: `datetime`
-- `LastAccessedDate`: `datetime`
-- `DeletedDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VersionIdsToStages`: `Dict`\[`str`, `List`\[`str`\]\]
-- `OwningService`: `str`
-- `CreatedDate`: `datetime`
-- `PrimaryRegion`: `str`
-- `ReplicationStatus`:
-  `List`\[[ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Key: NotRequired[FilterNameStringTypeType],  # (1)
+    Values: NotRequired[Sequence[str]],
+```
 
-- `Key`: [FilterNameStringTypeType](./literals.md#filternamestringtypetype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="getrandompasswordrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: FilterNameStringTypeType](./literals.md#filternamestringtypetype) 
 ## GetRandomPasswordRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordRequestRequestTypeDef
+
+def get_value() -> GetRandomPasswordRequestRequestTypeDef:
+    return {
+        "PasswordLength": ...,
+    }
 ```
 
-Optional fields:
-
-- `PasswordLength`: `int`
-- `ExcludeCharacters`: `str`
-- `ExcludeNumbers`: `bool`
-- `ExcludePunctuation`: `bool`
-- `ExcludeUppercase`: `bool`
-- `ExcludeLowercase`: `bool`
-- `IncludeSpace`: `bool`
-- `RequireEachIncludedType`: `bool`
-
-<a id="getrandompasswordresponsetypedef"></a>
+```python title="Definition"
+class GetRandomPasswordRequestRequestTypeDef(TypedDict):
+    PasswordLength: NotRequired[int],
+    ExcludeCharacters: NotRequired[str],
+    ExcludeNumbers: NotRequired[bool],
+    ExcludePunctuation: NotRequired[bool],
+    ExcludeUppercase: NotRequired[bool],
+    ExcludeLowercase: NotRequired[bool],
+    IncludeSpace: NotRequired[bool],
+    RequireEachIncludedType: NotRequired[bool],
+```
 
 ## GetRandomPasswordResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetRandomPasswordResponseTypeDef
+
+def get_value() -> GetRandomPasswordResponseTypeDef:
+    return {
+        "RandomPassword": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetRandomPasswordResponseTypeDef(TypedDict):
+    RandomPassword: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RandomPassword`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyRequestRequestTypeDef
+
+def get_value() -> GetResourcePolicyRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="getresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePolicyRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## GetResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "ResourcePolicy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    ResourcePolicy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `ResourcePolicy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsecretvaluerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSecretValueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetSecretValueRequestRequestTypeDef
+
+def get_value() -> GetSecretValueRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-Optional fields:
-
-- `VersionId`: `str`
-- `VersionStage`: `str`
-
-<a id="getsecretvalueresponsetypedef"></a>
+```python title="Definition"
+class GetSecretValueRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    VersionId: NotRequired[str],
+    VersionStage: NotRequired[str],
+```
 
 ## GetSecretValueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import GetSecretValueResponseTypeDef
+
+def get_value() -> GetSecretValueResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "SecretBinary": ...,
+        "SecretString": ...,
+        "VersionStages": ...,
+        "CreatedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSecretValueResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    SecretBinary: bytes,
+    SecretString: str,
+    VersionStages: List[str],
+    CreatedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `SecretBinary`: `bytes`
-- `SecretString`: `str`
-- `VersionStages`: `List`\[`str`\]
-- `CreatedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsecretversionidsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSecretVersionIdsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsRequestRequestTypeDef
+
+def get_value() -> ListSecretVersionIdsRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `IncludeDeprecated`: `bool`
-
-<a id="listsecretversionidsresponsetypedef"></a>
+```python title="Definition"
+class ListSecretVersionIdsRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    IncludeDeprecated: NotRequired[bool],
+```
 
 ## ListSecretVersionIdsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ListSecretVersionIdsResponseTypeDef
+
+def get_value() -> ListSecretVersionIdsResponseTypeDef:
+    return {
+        "Versions": ...,
+        "NextToken": ...,
+        "ARN": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecretVersionIdsResponseTypeDef(TypedDict):
+    Versions: List[SecretVersionsListEntryTypeDef],  # (1)
+    NextToken: str,
+    ARN: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Versions`:
-  `List`\[[SecretVersionsListEntryTypeDef](./type_defs.md#secretversionslistentrytypedef)\]
-- `NextToken`: `str`
-- `ARN`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SecretVersionsListEntryTypeDef](./type_defs.md#secretversionslistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecretsRequestListSecretsPaginateTypeDef
 
-<a id="listsecretsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestListSecretsPaginateTypeDef
 
+def get_value() -> ListSecretsRequestListSecretsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecretsRequestListSecretsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortOrder: NotRequired[SortOrderTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecretsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ListSecretsRequestRequestTypeDef
+
+def get_value() -> ListSecretsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSecretsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    SortOrder: NotRequired[SortOrderTypeType],  # (2)
+```
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `SortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
-
-<a id="listsecretsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-brackets: SortOrderTypeType](./literals.md#sortordertypetype) 
 ## ListSecretsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ListSecretsResponseTypeDef
+
+def get_value() -> ListSecretsResponseTypeDef:
+    return {
+        "SecretList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecretsResponseTypeDef(TypedDict):
+    SecretList: List[SecretListEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecretList`:
-  `List`\[[SecretListEntryTypeDef](./type_defs.md#secretlistentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: SecretListEntryTypeDef](./type_defs.md#secretlistentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putresourcepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "ResourcePolicy": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-- `ResourcePolicy`: `str`
-
-Optional fields:
-
-- `BlockPublicPolicy`: `bool`
-
-<a id="putresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    ResourcePolicy: str,
+    BlockPublicPolicy: NotRequired[bool],
+```
 
 ## PutResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putsecretvaluerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutSecretValueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import PutSecretValueRequestRequestTypeDef
+
+def get_value() -> PutSecretValueRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
-- `VersionStages`: `Sequence`\[`str`\]
-
-<a id="putsecretvalueresponsetypedef"></a>
+```python title="Definition"
+class PutSecretValueRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    ClientRequestToken: NotRequired[str],
+    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretString: NotRequired[str],
+    VersionStages: NotRequired[Sequence[str]],
+```
 
 ## PutSecretValueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import PutSecretValueResponseTypeDef
+
+def get_value() -> PutSecretValueResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "VersionStages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutSecretValueResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    VersionStages: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `VersionStages`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removeregionsfromreplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveRegionsFromReplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationRequestRequestTypeDef
+
+def get_value() -> RemoveRegionsFromReplicationRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "RemoveReplicaRegions": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-- `RemoveReplicaRegions`: `Sequence`\[`str`\]
-
-<a id="removeregionsfromreplicationresponsetypedef"></a>
+```python title="Definition"
+class RemoveRegionsFromReplicationRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    RemoveReplicaRegions: Sequence[str],
+```
 
 ## RemoveRegionsFromReplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RemoveRegionsFromReplicationResponseTypeDef
+
+def get_value() -> RemoveRegionsFromReplicationResponseTypeDef:
+    return {
+        "ARN": ...,
+        "ReplicationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveRegionsFromReplicationResponseTypeDef(TypedDict):
+    ARN: str,
+    ReplicationStatus: List[ReplicationStatusTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ARN`: `str`
-- `ReplicationStatus`:
-  `List`\[[ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="replicaregiontypetypedef"></a>
-
+1. See [:material-code-braces: ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReplicaRegionTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ReplicaRegionTypeTypeDef
+
+def get_value() -> ReplicaRegionTypeTypeDef:
+    return {
+        "Region": ...,
+    }
 ```
 
-Optional fields:
-
-- `Region`: `str`
-- `KmsKeyId`: `str`
-
-<a id="replicatesecrettoregionsrequestrequesttypedef"></a>
+```python title="Definition"
+class ReplicaRegionTypeTypeDef(TypedDict):
+    Region: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+```
 
 ## ReplicateSecretToRegionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsRequestRequestTypeDef
+
+def get_value() -> ReplicateSecretToRegionsRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "AddReplicaRegions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicateSecretToRegionsRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    AddReplicaRegions: Sequence[ReplicaRegionTypeTypeDef],  # (1)
+    ForceOverwriteReplicaSecret: NotRequired[bool],
+```
 
-- `SecretId`: `str`
-- `AddReplicaRegions`:
-  `Sequence`\[[ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef)\]
-
-Optional fields:
-
-- `ForceOverwriteReplicaSecret`: `bool`
-
-<a id="replicatesecrettoregionsresponsetypedef"></a>
-
+1. See [:material-code-braces: ReplicaRegionTypeTypeDef](./type_defs.md#replicaregiontypetypedef) 
 ## ReplicateSecretToRegionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ReplicateSecretToRegionsResponseTypeDef
+
+def get_value() -> ReplicateSecretToRegionsResponseTypeDef:
+    return {
+        "ARN": ...,
+        "ReplicationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicateSecretToRegionsResponseTypeDef(TypedDict):
+    ARN: str,
+    ReplicationStatus: List[ReplicationStatusTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ARN`: `str`
-- `ReplicationStatus`:
-  `List`\[[ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="replicationstatustypetypedef"></a>
-
+1. See [:material-code-braces: ReplicationStatusTypeTypeDef](./type_defs.md#replicationstatustypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReplicationStatusTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ReplicationStatusTypeTypeDef
+
+def get_value() -> ReplicationStatusTypeTypeDef:
+    return {
+        "Region": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationStatusTypeTypeDef(TypedDict):
+    Region: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    Status: NotRequired[StatusTypeType],  # (1)
+    StatusMessage: NotRequired[str],
+    LastAccessedDate: NotRequired[datetime],
+```
 
-- `Region`: `str`
-- `KmsKeyId`: `str`
-- `Status`: [StatusTypeType](./literals.md#statustypetype)
-- `StatusMessage`: `str`
-- `LastAccessedDate`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: StatusTypeType](./literals.md#statustypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoresecretrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RestoreSecretRequestRequestTypeDef
+
+def get_value() -> RestoreSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="restoresecretresponsetypedef"></a>
+```python title="Definition"
+class RestoreSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## RestoreSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RestoreSecretResponseTypeDef
+
+def get_value() -> RestoreSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rotatesecretrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RotateSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RotateSecretRequestRequestTypeDef
+
+def get_value() -> RotateSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RotateSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    ClientRequestToken: NotRequired[str],
+    RotationLambdaARN: NotRequired[str],
+    RotationRules: NotRequired[RotationRulesTypeTypeDef],  # (1)
+    RotateImmediately: NotRequired[bool],
+```
 
-- `SecretId`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `RotationLambdaARN`: `str`
-- `RotationRules`:
-  [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
-- `RotateImmediately`: `bool`
-
-<a id="rotatesecretresponsetypedef"></a>
-
+1. See [:material-code-braces: RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef) 
 ## RotateSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RotateSecretResponseTypeDef
+
+def get_value() -> RotateSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RotateSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rotationrulestypetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RotationRulesTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import RotationRulesTypeTypeDef
+
+def get_value() -> RotationRulesTypeTypeDef:
+    return {
+        "AutomaticallyAfterDays": ...,
+    }
 ```
 
-Optional fields:
-
-- `AutomaticallyAfterDays`: `int`
-- `Duration`: `str`
-- `ScheduleExpression`: `str`
-
-<a id="secretlistentrytypedef"></a>
+```python title="Definition"
+class RotationRulesTypeTypeDef(TypedDict):
+    AutomaticallyAfterDays: NotRequired[int],
+    Duration: NotRequired[str],
+    ScheduleExpression: NotRequired[str],
+```
 
 ## SecretListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import SecretListEntryTypeDef
+
+def get_value() -> SecretListEntryTypeDef:
+    return {
+        "ARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SecretListEntryTypeDef(TypedDict):
+    ARN: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    RotationEnabled: NotRequired[bool],
+    RotationLambdaARN: NotRequired[str],
+    RotationRules: NotRequired[RotationRulesTypeTypeDef],  # (1)
+    LastRotatedDate: NotRequired[datetime],
+    LastChangedDate: NotRequired[datetime],
+    LastAccessedDate: NotRequired[datetime],
+    DeletedDate: NotRequired[datetime],
+    Tags: NotRequired[List[TagTypeDef]],  # (2)
+    SecretVersionsToStages: NotRequired[Dict[str, List[str]]],
+    OwningService: NotRequired[str],
+    CreatedDate: NotRequired[datetime],
+    PrimaryRegion: NotRequired[str],
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `RotationEnabled`: `bool`
-- `RotationLambdaARN`: `str`
-- `RotationRules`:
-  [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
-- `LastRotatedDate`: `datetime`
-- `LastChangedDate`: `datetime`
-- `LastAccessedDate`: `datetime`
-- `DeletedDate`: `datetime`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SecretVersionsToStages`: `Dict`\[`str`, `List`\[`str`\]\]
-- `OwningService`: `str`
-- `CreatedDate`: `datetime`
-- `PrimaryRegion`: `str`
-
-<a id="secretversionslistentrytypedef"></a>
-
+1. See [:material-code-braces: RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## SecretVersionsListEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import SecretVersionsListEntryTypeDef
+
+def get_value() -> SecretVersionsListEntryTypeDef:
+    return {
+        "VersionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `VersionId`: `str`
-- `VersionStages`: `List`\[`str`\]
-- `LastAccessedDate`: `datetime`
-- `CreatedDate`: `datetime`
-- `KmsKeyIds`: `List`\[`str`\]
-
-<a id="stopreplicationtoreplicarequestrequesttypedef"></a>
+```python title="Definition"
+class SecretVersionsListEntryTypeDef(TypedDict):
+    VersionId: NotRequired[str],
+    VersionStages: NotRequired[List[str]],
+    LastAccessedDate: NotRequired[datetime],
+    CreatedDate: NotRequired[datetime],
+    KmsKeyIds: NotRequired[List[str]],
+```
 
 ## StopReplicationToReplicaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaRequestRequestTypeDef
+
+def get_value() -> StopReplicationToReplicaRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-<a id="stopreplicationtoreplicaresponsetypedef"></a>
+```python title="Definition"
+class StopReplicationToReplicaRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+```
 
 ## StopReplicationToReplicaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import StopReplicationToReplicaResponseTypeDef
+
+def get_value() -> StopReplicationToReplicaResponseTypeDef:
+    return {
+        "ARN": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopReplicationToReplicaResponseTypeDef(TypedDict):
+    ARN: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `SecretId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatesecretrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateSecretRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretRequestRequestTypeDef
+
+def get_value() -> UpdateSecretRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `Description`: `str`
-- `KmsKeyId`: `str`
-- `SecretBinary`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `SecretString`: `str`
-
-<a id="updatesecretresponsetypedef"></a>
+```python title="Definition"
+class UpdateSecretRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    ClientRequestToken: NotRequired[str],
+    Description: NotRequired[str],
+    KmsKeyId: NotRequired[str],
+    SecretBinary: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    SecretString: NotRequired[str],
+```
 
 ## UpdateSecretResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretResponseTypeDef
+
+def get_value() -> UpdateSecretResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "VersionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSecretResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    VersionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `VersionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesecretversionstagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSecretVersionStageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageRequestRequestTypeDef
+
+def get_value() -> UpdateSecretVersionStageRequestRequestTypeDef:
+    return {
+        "SecretId": ...,
+        "VersionStage": ...,
+    }
 ```
 
-Required fields:
-
-- `SecretId`: `str`
-- `VersionStage`: `str`
-
-Optional fields:
-
-- `RemoveFromVersionId`: `str`
-- `MoveToVersionId`: `str`
-
-<a id="updatesecretversionstageresponsetypedef"></a>
+```python title="Definition"
+class UpdateSecretVersionStageRequestRequestTypeDef(TypedDict):
+    SecretId: str,
+    VersionStage: str,
+    RemoveFromVersionId: NotRequired[str],
+    MoveToVersionId: NotRequired[str],
+```
 
 ## UpdateSecretVersionStageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import UpdateSecretVersionStageResponseTypeDef
+
+def get_value() -> UpdateSecretVersionStageResponseTypeDef:
+    return {
+        "ARN": ...,
+        "Name": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSecretVersionStageResponseTypeDef(TypedDict):
+    ARN: str,
+    Name: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ARN`: `str`
-- `Name`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="validateresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValidateResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyRequestRequestTypeDef
+
+def get_value() -> ValidateResourcePolicyRequestRequestTypeDef:
+    return {
+        "ResourcePolicy": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourcePolicy`: `str`
-
-Optional fields:
-
-- `SecretId`: `str`
-
-<a id="validateresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class ValidateResourcePolicyRequestRequestTypeDef(TypedDict):
+    ResourcePolicy: str,
+    SecretId: NotRequired[str],
+```
 
 ## ValidateResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ValidateResourcePolicyResponseTypeDef
+
+def get_value() -> ValidateResourcePolicyResponseTypeDef:
+    return {
+        "PolicyValidationPassed": ...,
+        "ValidationErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidateResourcePolicyResponseTypeDef(TypedDict):
+    PolicyValidationPassed: bool,
+    ValidationErrors: List[ValidationErrorsEntryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PolicyValidationPassed`: `bool`
-- `ValidationErrors`:
-  `List`\[[ValidationErrorsEntryTypeDef](./type_defs.md#validationerrorsentrytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="validationerrorsentrytypedef"></a>
-
+1. See [:material-code-braces: ValidationErrorsEntryTypeDef](./type_defs.md#validationerrorsentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValidationErrorsEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_secretsmanager.type_defs import ValidationErrorsEntryTypeDef
+
+def get_value() -> ValidationErrorsEntryTypeDef:
+    return {
+        "CheckName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValidationErrorsEntryTypeDef(TypedDict):
+    CheckName: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
-- `CheckName`: `str`
-- `ErrorMessage`: `str`

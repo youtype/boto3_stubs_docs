@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-devicefarm-module"></a>
-
-# Examples for boto3 DeviceFarm module
+# Examples
 
 > [Index](../README.md) > [DeviceFarm](./README.md) > Examples
 
-- [Examples for boto3 DeviceFarm module](#examples-for-boto3-devicefarm-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
+    type annotations stubs module [mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[devicefarm]` package installed.
 
-Write your `DeviceFarm` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `DeviceFarm` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type DeviceFarmClient
-# and provides type checking and code completion
-client = session.client("devicefarm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type GetOfferingStatusPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_offering_status")
-for item in paginator.paginate(...):
-    # item has type GetOfferingStatusResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("devicefarm")  # (1)
+    result = client.create_device_pool()  # (2)
+    ```
+
+    1. client: [DeviceFarmClient](./client.md)
+    2. result: [:material-code-braces: CreateDevicePoolResultTypeDef](./type_defs.md#createdevicepoolresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("devicefarm")  # (1)
+
+    paginator = client.get_paginator("get_offering_status")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [DeviceFarmClient](./client.md)
+    2. paginator: [GetOfferingStatusPaginator](./paginators.md#getofferingstatuspaginator)
+    3. item: [:material-code-braces: GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[devicefarm]` or a standalone `mypy_boto3_devicefarm`
-package, you have to explicitly specify `client: DeviceFarmClient` type
-annotation.
+With `boto3-stubs-lite[devicefarm]`
+or a standalone `mypy_boto3_devicefarm` package, you have to explicitly specify `client: DeviceFarmClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_devicefarm.client import DeviceFarmClient
-from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator
-
-from mypy_boto3_devicefarm.literals import PaginatorName
-
-from mypy_boto3_devicefarm.type_defs import bool
-from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: DeviceFarmClient = session.client("devicefarm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_devicefarm.client import DeviceFarmClient
+    from mypy_boto3_devicefarm.type_defs import CreateDevicePoolResultTypeDef
+    from mypy_boto3_devicefarm.type_defs import CreateDevicePoolRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_offering_status"
-paginator: GetOfferingStatusPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetOfferingStatusResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: DeviceFarmClient = session.client("devicefarm")
+
+    kwargs: CreateDevicePoolRequestRequestTypeDef = {...}
+    result: CreateDevicePoolResultTypeDef = client.create_device_pool(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_devicefarm.client import DeviceFarmClient
+    from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator
+    from mypy_boto3_devicefarm.type_defs import GetOfferingStatusResultTypeDef
+
+
+    session = Session()
+    client: DeviceFarmClient = session.client("devicefarm")
+
+    paginator: GetOfferingStatusPaginator = client.get_paginator("get_offering_status")
+    for item in paginator.paginate(...):
+        item: GetOfferingStatusResultTypeDef
+        print(item)
+    ```
+
+
+
+

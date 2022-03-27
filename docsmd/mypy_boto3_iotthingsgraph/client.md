@@ -1,67 +1,18 @@
-<a id="iotthingsgraphclient-for-boto3-iotthingsgraph-module"></a>
-
-# IoTThingsGraphClient for boto3 IoTThingsGraph module
+# IoTThingsGraphClient
 
 > [Index](../README.md) > [IoTThingsGraph](./README.md) > IoTThingsGraphClient
 
-Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module
-[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+!!! note ""
 
-- [IoTThingsGraphClient for boto3 IoTThingsGraph module](#iotthingsgraphclient-for-boto3-iotthingsgraph-module)
-  - [IoTThingsGraphClient](#iotthingsgraphclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_entity_to_thing](#associate_entity_to_thing)
-    - [can_paginate](#can_paginate)
-    - [create_flow_template](#create_flow_template)
-    - [create_system_instance](#create_system_instance)
-    - [create_system_template](#create_system_template)
-    - [delete_flow_template](#delete_flow_template)
-    - [delete_namespace](#delete_namespace)
-    - [delete_system_instance](#delete_system_instance)
-    - [delete_system_template](#delete_system_template)
-    - [deploy_system_instance](#deploy_system_instance)
-    - [deprecate_flow_template](#deprecate_flow_template)
-    - [deprecate_system_template](#deprecate_system_template)
-    - [describe_namespace](#describe_namespace)
-    - [dissociate_entity_from_thing](#dissociate_entity_from_thing)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_entities](#get_entities)
-    - [get_flow_template](#get_flow_template)
-    - [get_flow_template_revisions](#get_flow_template_revisions)
-    - [get_namespace_deletion_status](#get_namespace_deletion_status)
-    - [get_system_instance](#get_system_instance)
-    - [get_system_template](#get_system_template)
-    - [get_system_template_revisions](#get_system_template_revisions)
-    - [get_upload_status](#get_upload_status)
-    - [list_flow_execution_messages](#list_flow_execution_messages)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [search_entities](#search_entities)
-    - [search_flow_executions](#search_flow_executions)
-    - [search_flow_templates](#search_flow_templates)
-    - [search_system_instances](#search_system_instances)
-    - [search_system_templates](#search_system_templates)
-    - [search_things](#search_things)
-    - [tag_resource](#tag_resource)
-    - [undeploy_system_instance](#undeploy_system_instance)
-    - [untag_resource](#untag_resource)
-    - [update_flow_template](#update_flow_template)
-    - [update_system_template](#update_system_template)
-    - [upload_entity_definitions](#upload_entity_definitions)
-    - [get_paginator](#get_paginator)
-
-<a id="iotthingsgraphclient"></a>
+    Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+    type annotations stubs module [mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 ## IoTThingsGraphClient
 
-Type annotations for `boto3.client("iotthingsgraph")`
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iotthingsgraph.client import IoTThingsGraphClient
 
@@ -69,922 +20,1147 @@ def get_iotthingsgraph_client() -> IoTThingsGraphClient:
     return Session().client("iotthingsgraph")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iotthingsgraph").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iotthingsgraph")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalFailureException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ThrottlingException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iotthingsgraph.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ThrottlingException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTThingsGraphClient exceptions.
-
-Type annotations for `boto3.client("iotthingsgraph").exceptions` method.
-
-Boto3 documentation:
-[IoTThingsGraph.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_entity\_to\_thing"></a>
-
-### associate_entity_to_thing
+### associate\_entity\_to\_thing
 
 Associates a device with a concrete thing that is in the user's registry.
 
-Type annotations for `boto3.client("iotthingsgraph").associate_entity_to_thing`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").associate_entity_to_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.associate_entity_to_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.associate_entity_to_thing)
+```python title="Method definition"
+def associate_entity_to_thing(
+    self,
+    *,
+    thingName: str,
+    entityId: str,
+    namespaceVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateEntityToThingRequestRequestTypeDef](./type_defs.md#associateentitytothingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `entityId`: `str` *(required)*
-- `namespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: AssociateEntityToThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "entityId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_entity_to_thing(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateEntityToThingRequestRequestTypeDef](./type_defs.md#associateentitytothingrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iotthingsgraph").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.can_paginate)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_flow\_template"></a>
-
-### create_flow_template
+### create\_flow\_template
 
 Creates a workflow template.
 
-Type annotations for `boto3.client("iotthingsgraph").create_flow_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").create_flow_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.create_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_flow_template)
+```python title="Method definition"
+def create_flow_template(
+    self,
+    *,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: int = ...,
+) -> CreateFlowTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFlowTemplateRequestRequestTypeDef](./type_defs.md#createflowtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-braces: CreateFlowTemplateResponseTypeDef](./type_defs.md#createflowtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `definition`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-  *(required)*
-- `compatibleNamespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateFlowTemplateRequestRequestTypeDef = {  # (1)
+    "definition": ...,
+}
 
-Returns
-[CreateFlowTemplateResponseTypeDef](./type_defs.md#createflowtemplateresponsetypedef).
+parent.create_flow_template(**kwargs)
+```
 
-<a id="create\_system\_instance"></a>
+1. See [:material-code-braces: CreateFlowTemplateRequestRequestTypeDef](./type_defs.md#createflowtemplaterequestrequesttypedef) 
 
-### create_system_instance
+### create\_system\_instance
 
 Creates a system instance.
 
-Type annotations for `boto3.client("iotthingsgraph").create_system_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").create_system_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.create_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_instance)
+```python title="Method definition"
+def create_system_instance(
+    self,
+    *,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    target: DeploymentTargetType,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+    greengrassGroupName: str = ...,
+    s3BucketName: str = ...,
+    metricsConfiguration: MetricsConfigurationTypeDef = ...,  # (4)
+    flowActionsRoleArn: str = ...,
+) -> CreateSystemInstanceResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateSystemInstanceRequestRequestTypeDef](./type_defs.md#createsysteminstancerequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-brackets: DeploymentTargetType](./literals.md#deploymenttargettype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef) 
+5. See [:material-code-braces: CreateSystemInstanceResponseTypeDef](./type_defs.md#createsysteminstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `definition`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-  *(required)*
-- `target`: [DeploymentTargetType](./literals.md#deploymenttargettype)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `greengrassGroupName`: `str`
-- `s3BucketName`: `str`
-- `metricsConfiguration`:
-  [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
-- `flowActionsRoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSystemInstanceRequestRequestTypeDef = {  # (1)
+    "definition": ...,
+    "target": ...,
+}
 
-Returns
-[CreateSystemInstanceResponseTypeDef](./type_defs.md#createsysteminstanceresponsetypedef).
+parent.create_system_instance(**kwargs)
+```
 
-<a id="create\_system\_template"></a>
+1. See [:material-code-braces: CreateSystemInstanceRequestRequestTypeDef](./type_defs.md#createsysteminstancerequestrequesttypedef) 
 
-### create_system_template
+### create\_system\_template
 
 Creates a system.
 
-Type annotations for `boto3.client("iotthingsgraph").create_system_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").create_system_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.create_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.create_system_template)
+```python title="Method definition"
+def create_system_template(
+    self,
+    *,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: int = ...,
+) -> CreateSystemTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSystemTemplateRequestRequestTypeDef](./type_defs.md#createsystemtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-braces: CreateSystemTemplateResponseTypeDef](./type_defs.md#createsystemtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `definition`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-  *(required)*
-- `compatibleNamespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: CreateSystemTemplateRequestRequestTypeDef = {  # (1)
+    "definition": ...,
+}
 
-Returns
-[CreateSystemTemplateResponseTypeDef](./type_defs.md#createsystemtemplateresponsetypedef).
+parent.create_system_template(**kwargs)
+```
 
-<a id="delete\_flow\_template"></a>
+1. See [:material-code-braces: CreateSystemTemplateRequestRequestTypeDef](./type_defs.md#createsystemtemplaterequestrequesttypedef) 
 
-### delete_flow_template
+### delete\_flow\_template
 
 Deletes a workflow.
 
-Type annotations for `boto3.client("iotthingsgraph").delete_flow_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").delete_flow_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.delete_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_flow_template)
+```python title="Method definition"
+def delete_flow_template(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFlowTemplateRequestRequestTypeDef](./type_defs.md#deleteflowtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFlowTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_flow_template(**kwargs)
+```
 
-<a id="delete\_namespace"></a>
+1. See [:material-code-braces: DeleteFlowTemplateRequestRequestTypeDef](./type_defs.md#deleteflowtemplaterequestrequesttypedef) 
 
-### delete_namespace
+### delete\_namespace
 
 Deletes the specified namespace.
 
-Type annotations for `boto3.client("iotthingsgraph").delete_namespace` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").delete_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_namespace)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_namespace)
+```python title="Method definition"
+def delete_namespace(
+    self,
+) -> DeleteNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+1. See [:material-code-braces: DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef) 
 
-<a id="delete\_system\_instance"></a>
-
-### delete_system_instance
+### delete\_system\_instance
 
 Deletes a system instance.
 
-Type annotations for `boto3.client("iotthingsgraph").delete_system_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").delete_system_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.delete_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_instance)
+```python title="Method definition"
+def delete_system_instance(
+    self,
+    *,
+    id: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSystemInstanceRequestRequestTypeDef](./type_defs.md#deletesysteminstancerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteSystemInstanceRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_system_instance(**kwargs)
+```
 
-<a id="delete\_system\_template"></a>
+1. See [:material-code-braces: DeleteSystemInstanceRequestRequestTypeDef](./type_defs.md#deletesysteminstancerequestrequesttypedef) 
 
-### delete_system_template
+### delete\_system\_template
 
 Deletes a system.
 
-Type annotations for `boto3.client("iotthingsgraph").delete_system_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").delete_system_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.delete_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.delete_system_template)
+```python title="Method definition"
+def delete_system_template(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSystemTemplateRequestRequestTypeDef](./type_defs.md#deletesystemtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSystemTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_system_template(**kwargs)
+```
 
-<a id="deploy\_system\_instance"></a>
+1. See [:material-code-braces: DeleteSystemTemplateRequestRequestTypeDef](./type_defs.md#deletesystemtemplaterequestrequesttypedef) 
 
-### deploy_system_instance
+### deploy\_system\_instance
 
 **Greengrass and Cloud Deployments** Deploys the system instance to the target
 specified in `CreateSystemInstance` .
 
-Type annotations for `boto3.client("iotthingsgraph").deploy_system_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").deploy_system_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.deploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deploy_system_instance)
+```python title="Method definition"
+def deploy_system_instance(
+    self,
+    *,
+    id: str = ...,
+) -> DeploySystemInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeploySystemInstanceRequestRequestTypeDef](./type_defs.md#deploysysteminstancerequestrequesttypedef).
+1. See [:material-code-braces: DeploySystemInstanceResponseTypeDef](./type_defs.md#deploysysteminstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeploySystemInstanceRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[DeploySystemInstanceResponseTypeDef](./type_defs.md#deploysysteminstanceresponsetypedef).
+parent.deploy_system_instance(**kwargs)
+```
 
-<a id="deprecate\_flow\_template"></a>
+1. See [:material-code-braces: DeploySystemInstanceRequestRequestTypeDef](./type_defs.md#deploysysteminstancerequestrequesttypedef) 
 
-### deprecate_flow_template
+### deprecate\_flow\_template
 
 Deprecates the specified workflow.
 
-Type annotations for `boto3.client("iotthingsgraph").deprecate_flow_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").deprecate_flow_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.deprecate_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_flow_template)
+```python title="Method definition"
+def deprecate_flow_template(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeprecateFlowTemplateRequestRequestTypeDef](./type_defs.md#deprecateflowtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeprecateFlowTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deprecate_flow_template(**kwargs)
+```
 
-<a id="deprecate\_system\_template"></a>
+1. See [:material-code-braces: DeprecateFlowTemplateRequestRequestTypeDef](./type_defs.md#deprecateflowtemplaterequestrequesttypedef) 
 
-### deprecate_system_template
+### deprecate\_system\_template
 
 Deprecates the specified system.
 
-Type annotations for `boto3.client("iotthingsgraph").deprecate_system_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").deprecate_system_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.deprecate_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.deprecate_system_template)
+```python title="Method definition"
+def deprecate_system_template(
+    self,
+    *,
+    id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeprecateSystemTemplateRequestRequestTypeDef](./type_defs.md#deprecatesystemtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeprecateSystemTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deprecate_system_template(**kwargs)
+```
 
-<a id="describe\_namespace"></a>
+1. See [:material-code-braces: DeprecateSystemTemplateRequestRequestTypeDef](./type_defs.md#deprecatesystemtemplaterequestrequesttypedef) 
 
-### describe_namespace
+### describe\_namespace
 
 Gets the latest version of the user's namespace and the public version that it
 is tracking.
 
-Type annotations for `boto3.client("iotthingsgraph").describe_namespace`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").describe_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.describe_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.describe_namespace)
+```python title="Method definition"
+def describe_namespace(
+    self,
+    *,
+    namespaceName: str = ...,
+) -> DescribeNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNamespaceRequestRequestTypeDef](./type_defs.md#describenamespacerequestrequesttypedef).
+1. See [:material-code-braces: DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `namespaceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeNamespaceRequestRequestTypeDef = {  # (1)
+    "namespaceName": ...,
+}
 
-Returns
-[DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
+parent.describe_namespace(**kwargs)
+```
 
-<a id="dissociate\_entity\_from\_thing"></a>
+1. See [:material-code-braces: DescribeNamespaceRequestRequestTypeDef](./type_defs.md#describenamespacerequestrequesttypedef) 
 
-### dissociate_entity_from_thing
+### dissociate\_entity\_from\_thing
 
 Dissociates a device entity from a concrete thing.
 
-Type annotations for
-`boto3.client("iotthingsgraph").dissociate_entity_from_thing` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").dissociate_entity_from_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.dissociate_entity_from_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.dissociate_entity_from_thing)
+```python title="Method definition"
+def dissociate_entity_from_thing(
+    self,
+    *,
+    thingName: str,
+    entityType: EntityTypeType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DissociateEntityFromThingRequestRequestTypeDef](./type_defs.md#dissociateentityfromthingrequestrequesttypedef).
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `entityType`: [EntityTypeType](./literals.md#entitytypetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DissociateEntityFromThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "entityType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.dissociate_entity_from_thing(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DissociateEntityFromThingRequestRequestTypeDef](./type_defs.md#dissociateentityfromthingrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iotthingsgraph").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_entities"></a>
-
-### get_entities
+### get\_entities
 
 Gets definitions of the specified entities.
 
-Type annotations for `boto3.client("iotthingsgraph").get_entities` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_entities)
+```python title="Method definition"
+def get_entities(
+    self,
+    *,
+    ids: Sequence[str],
+    namespaceVersion: int = ...,
+) -> GetEntitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEntitiesRequestRequestTypeDef](./type_defs.md#getentitiesrequestrequesttypedef).
+1. See [:material-code-braces: GetEntitiesResponseTypeDef](./type_defs.md#getentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ids`: `Sequence`\[`str`\] *(required)*
-- `namespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetEntitiesRequestRequestTypeDef = {  # (1)
+    "ids": ...,
+}
 
-Returns
-[GetEntitiesResponseTypeDef](./type_defs.md#getentitiesresponsetypedef).
+parent.get_entities(**kwargs)
+```
 
-<a id="get\_flow\_template"></a>
+1. See [:material-code-braces: GetEntitiesRequestRequestTypeDef](./type_defs.md#getentitiesrequestrequesttypedef) 
 
-### get_flow_template
+### get\_flow\_template
 
 Gets the latest version of the `DefinitionDocument` and `FlowTemplateSummary`
 for the specified workflow.
 
-Type annotations for `boto3.client("iotthingsgraph").get_flow_template` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_flow_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template)
+```python title="Method definition"
+def get_flow_template(
+    self,
+    *,
+    id: str,
+    revisionNumber: int = ...,
+) -> GetFlowTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFlowTemplateRequestRequestTypeDef](./type_defs.md#getflowtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetFlowTemplateResponseTypeDef](./type_defs.md#getflowtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `revisionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetFlowTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetFlowTemplateResponseTypeDef](./type_defs.md#getflowtemplateresponsetypedef).
+parent.get_flow_template(**kwargs)
+```
 
-<a id="get\_flow\_template\_revisions"></a>
+1. See [:material-code-braces: GetFlowTemplateRequestRequestTypeDef](./type_defs.md#getflowtemplaterequestrequesttypedef) 
 
-### get_flow_template_revisions
+### get\_flow\_template\_revisions
 
 Gets revisions of the specified workflow.
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_flow_template_revisions` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_flow_template_revisions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_flow_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_flow_template_revisions)
+```python title="Method definition"
+def get_flow_template_revisions(
+    self,
+    *,
+    id: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetFlowTemplateRevisionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFlowTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getflowtemplaterevisionsrequestrequesttypedef).
+1. See [:material-code-braces: GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetFlowTemplateRevisionsRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef).
+parent.get_flow_template_revisions(**kwargs)
+```
 
-<a id="get\_namespace\_deletion\_status"></a>
+1. See [:material-code-braces: GetFlowTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getflowtemplaterevisionsrequestrequesttypedef) 
 
-### get_namespace_deletion_status
+### get\_namespace\_deletion\_status
 
 Gets the status of a namespace deletion task.
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_namespace_deletion_status` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_namespace_deletion_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_namespace_deletion_status)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_namespace_deletion_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_namespace_deletion_status)
+```python title="Method definition"
+def get_namespace_deletion_status(
+    self,
+) -> GetNamespaceDeletionStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetNamespaceDeletionStatusResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponsetypedef).
+1. See [:material-code-braces: GetNamespaceDeletionStatusResponseTypeDef](./type_defs.md#getnamespacedeletionstatusresponsetypedef) 
 
-<a id="get\_system\_instance"></a>
-
-### get_system_instance
+### get\_system\_instance
 
 Gets a system instance.
 
-Type annotations for `boto3.client("iotthingsgraph").get_system_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_system_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_instance)
+```python title="Method definition"
+def get_system_instance(
+    self,
+    *,
+    id: str,
+) -> GetSystemInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSystemInstanceRequestRequestTypeDef](./type_defs.md#getsysteminstancerequestrequesttypedef).
+1. See [:material-code-braces: GetSystemInstanceResponseTypeDef](./type_defs.md#getsysteminstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSystemInstanceRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetSystemInstanceResponseTypeDef](./type_defs.md#getsysteminstanceresponsetypedef).
+parent.get_system_instance(**kwargs)
+```
 
-<a id="get\_system\_template"></a>
+1. See [:material-code-braces: GetSystemInstanceRequestRequestTypeDef](./type_defs.md#getsysteminstancerequestrequesttypedef) 
 
-### get_system_template
+### get\_system\_template
 
 Gets a system.
 
-Type annotations for `boto3.client("iotthingsgraph").get_system_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_system_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template)
+```python title="Method definition"
+def get_system_template(
+    self,
+    *,
+    id: str,
+    revisionNumber: int = ...,
+) -> GetSystemTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSystemTemplateRequestRequestTypeDef](./type_defs.md#getsystemtemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetSystemTemplateResponseTypeDef](./type_defs.md#getsystemtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `revisionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSystemTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetSystemTemplateResponseTypeDef](./type_defs.md#getsystemtemplateresponsetypedef).
+parent.get_system_template(**kwargs)
+```
 
-<a id="get\_system\_template\_revisions"></a>
+1. See [:material-code-braces: GetSystemTemplateRequestRequestTypeDef](./type_defs.md#getsystemtemplaterequestrequesttypedef) 
 
-### get_system_template_revisions
+### get\_system\_template\_revisions
 
 Gets revisions made to the specified system template.
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_system_template_revisions` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_system_template_revisions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_system_template_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_system_template_revisions)
+```python title="Method definition"
+def get_system_template_revisions(
+    self,
+    *,
+    id: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetSystemTemplateRevisionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSystemTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestrequesttypedef).
+1. See [:material-code-braces: GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSystemTemplateRevisionsRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef).
+parent.get_system_template_revisions(**kwargs)
+```
 
-<a id="get\_upload\_status"></a>
+1. See [:material-code-braces: GetSystemTemplateRevisionsRequestRequestTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestrequesttypedef) 
 
-### get_upload_status
+### get\_upload\_status
 
 Gets the status of the specified upload.
 
-Type annotations for `boto3.client("iotthingsgraph").get_upload_status` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_upload_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.get_upload_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.get_upload_status)
+```python title="Method definition"
+def get_upload_status(
+    self,
+    *,
+    uploadId: str,
+) -> GetUploadStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUploadStatusRequestRequestTypeDef](./type_defs.md#getuploadstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetUploadStatusResponseTypeDef](./type_defs.md#getuploadstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `uploadId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUploadStatusRequestRequestTypeDef = {  # (1)
+    "uploadId": ...,
+}
 
-Returns
-[GetUploadStatusResponseTypeDef](./type_defs.md#getuploadstatusresponsetypedef).
+parent.get_upload_status(**kwargs)
+```
 
-<a id="list\_flow\_execution\_messages"></a>
+1. See [:material-code-braces: GetUploadStatusRequestRequestTypeDef](./type_defs.md#getuploadstatusrequestrequesttypedef) 
 
-### list_flow_execution_messages
+### list\_flow\_execution\_messages
 
 Returns a list of objects that contain information about events in a flow
 execution.
 
-Type annotations for
-`boto3.client("iotthingsgraph").list_flow_execution_messages` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").list_flow_execution_messages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.list_flow_execution_messages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_flow_execution_messages)
+```python title="Method definition"
+def list_flow_execution_messages(
+    self,
+    *,
+    flowExecutionId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListFlowExecutionMessagesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFlowExecutionMessagesRequestRequestTypeDef](./type_defs.md#listflowexecutionmessagesrequestrequesttypedef).
+1. See [:material-code-braces: ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `flowExecutionId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFlowExecutionMessagesRequestRequestTypeDef = {  # (1)
+    "flowExecutionId": ...,
+}
 
-Returns
-[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef).
+parent.list_flow_execution_messages(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListFlowExecutionMessagesRequestRequestTypeDef](./type_defs.md#listflowexecutionmessagesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags on an AWS IoT Things Graph resource.
 
-Type annotations for `boto3.client("iotthingsgraph").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="search\_entities"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### search_entities
+### search\_entities
 
 Searches for entities of the specified type.
 
-Type annotations for `boto3.client("iotthingsgraph").search_entities` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_entities)
+```python title="Method definition"
+def search_entities(
+    self,
+    *,
+    entityTypes: Sequence[EntityTypeType],  # (1)
+    filters: Sequence[EntityFilterTypeDef] = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+    namespaceVersion: int = ...,
+) -> SearchEntitiesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SearchEntitiesRequestRequestTypeDef](./type_defs.md#searchentitiesrequestrequesttypedef).
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+3. See [:material-code-braces: SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityTypes`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
-  *(required)*
-- `filters`:
-  `Sequence`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `namespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchEntitiesRequestRequestTypeDef = {  # (1)
+    "entityTypes": ...,
+}
 
-Returns
-[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef).
+parent.search_entities(**kwargs)
+```
 
-<a id="search\_flow\_executions"></a>
+1. See [:material-code-braces: SearchEntitiesRequestRequestTypeDef](./type_defs.md#searchentitiesrequestrequesttypedef) 
 
-### search_flow_executions
+### search\_flow\_executions
 
 Searches for AWS IoT Things Graph workflow execution instances.
 
-Type annotations for `boto3.client("iotthingsgraph").search_flow_executions`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_flow_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_flow_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_executions)
+```python title="Method definition"
+def search_flow_executions(
+    self,
+    *,
+    systemInstanceId: str,
+    flowExecutionId: str = ...,
+    startTime: Union[datetime, str] = ...,
+    endTime: Union[datetime, str] = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> SearchFlowExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchFlowExecutionsRequestRequestTypeDef](./type_defs.md#searchflowexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `systemInstanceId`: `str` *(required)*
-- `flowExecutionId`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchFlowExecutionsRequestRequestTypeDef = {  # (1)
+    "systemInstanceId": ...,
+}
 
-Returns
-[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef).
+parent.search_flow_executions(**kwargs)
+```
 
-<a id="search\_flow\_templates"></a>
+1. See [:material-code-braces: SearchFlowExecutionsRequestRequestTypeDef](./type_defs.md#searchflowexecutionsrequestrequesttypedef) 
 
-### search_flow_templates
+### search\_flow\_templates
 
 Searches for summary information about workflows.
 
-Type annotations for `boto3.client("iotthingsgraph").search_flow_templates`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_flow_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_flow_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_flow_templates)
+```python title="Method definition"
+def search_flow_templates(
+    self,
+    *,
+    filters: Sequence[FlowTemplateFilterTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> SearchFlowTemplatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchFlowTemplatesRequestRequestTypeDef](./type_defs.md#searchflowtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef) 
+2. See [:material-code-braces: SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchFlowTemplatesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef).
+parent.search_flow_templates(**kwargs)
+```
 
-<a id="search\_system\_instances"></a>
+1. See [:material-code-braces: SearchFlowTemplatesRequestRequestTypeDef](./type_defs.md#searchflowtemplatesrequestrequesttypedef) 
 
-### search_system_instances
+### search\_system\_instances
 
 Searches for system instances in the user's account.
 
-Type annotations for `boto3.client("iotthingsgraph").search_system_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_system_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_system_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_instances)
+```python title="Method definition"
+def search_system_instances(
+    self,
+    *,
+    filters: Sequence[SystemInstanceFilterTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> SearchSystemInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchSystemInstancesRequestRequestTypeDef](./type_defs.md#searchsysteminstancesrequestrequesttypedef).
+1. See [:material-code-braces: SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef) 
+2. See [:material-code-braces: SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchSystemInstancesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef).
+parent.search_system_instances(**kwargs)
+```
 
-<a id="search\_system\_templates"></a>
+1. See [:material-code-braces: SearchSystemInstancesRequestRequestTypeDef](./type_defs.md#searchsysteminstancesrequestrequesttypedef) 
 
-### search_system_templates
+### search\_system\_templates
 
 Searches for summary information about systems in the user's account.
 
-Type annotations for `boto3.client("iotthingsgraph").search_system_templates`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_system_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_system_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_system_templates)
+```python title="Method definition"
+def search_system_templates(
+    self,
+    *,
+    filters: Sequence[SystemTemplateFilterTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> SearchSystemTemplatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchSystemTemplatesRequestRequestTypeDef](./type_defs.md#searchsystemtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef) 
+2. See [:material-code-braces: SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filters`:
-  `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchSystemTemplatesRequestRequestTypeDef = {  # (1)
+    "filters": ...,
+}
 
-Returns
-[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef).
+parent.search_system_templates(**kwargs)
+```
 
-<a id="search\_things"></a>
+1. See [:material-code-braces: SearchSystemTemplatesRequestRequestTypeDef](./type_defs.md#searchsystemtemplatesrequestrequesttypedef) 
 
-### search_things
+### search\_things
 
 Searches for things associated with the specified entity.
 
-Type annotations for `boto3.client("iotthingsgraph").search_things` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").search_things` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.search_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.search_things)
+```python title="Method definition"
+def search_things(
+    self,
+    *,
+    entityId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    namespaceVersion: int = ...,
+) -> SearchThingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchThingsRequestRequestTypeDef](./type_defs.md#searchthingsrequestrequesttypedef).
+1. See [:material-code-braces: SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `namespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: SearchThingsRequestRequestTypeDef = {  # (1)
+    "entityId": ...,
+}
 
-Returns
-[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef).
+parent.search_things(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SearchThingsRequestRequestTypeDef](./type_defs.md#searchthingsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Creates a tag for the specified resource.
 
-Type annotations for `boto3.client("iotthingsgraph").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="undeploy\_system\_instance"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### undeploy_system_instance
+### undeploy\_system\_instance
 
 Removes a system instance from its target (Cloud or Greengrass).
 
-Type annotations for `boto3.client("iotthingsgraph").undeploy_system_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").undeploy_system_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.undeploy_system_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.undeploy_system_instance)
+```python title="Method definition"
+def undeploy_system_instance(
+    self,
+    *,
+    id: str = ...,
+) -> UndeploySystemInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UndeploySystemInstanceRequestRequestTypeDef](./type_defs.md#undeploysysteminstancerequestrequesttypedef).
+1. See [:material-code-braces: UndeploySystemInstanceResponseTypeDef](./type_defs.md#undeploysysteminstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str`
+```python title="Usage example with kwargs"
+kwargs: UndeploySystemInstanceRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[UndeploySystemInstanceResponseTypeDef](./type_defs.md#undeploysysteminstanceresponsetypedef).
+parent.undeploy_system_instance(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: UndeploySystemInstanceRequestRequestTypeDef](./type_defs.md#undeploysysteminstancerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from the specified resource.
 
-Type annotations for `boto3.client("iotthingsgraph").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_flow\_template"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_flow_template
+### update\_flow\_template
 
 Updates the specified workflow.
 
-Type annotations for `boto3.client("iotthingsgraph").update_flow_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").update_flow_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.update_flow_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_flow_template)
+```python title="Method definition"
+def update_flow_template(
+    self,
+    *,
+    id: str,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: int = ...,
+) -> UpdateFlowTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowTemplateRequestRequestTypeDef](./type_defs.md#updateflowtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-braces: UpdateFlowTemplateResponseTypeDef](./type_defs.md#updateflowtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `definition`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-  *(required)*
-- `compatibleNamespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "definition": ...,
+}
 
-Returns
-[UpdateFlowTemplateResponseTypeDef](./type_defs.md#updateflowtemplateresponsetypedef).
+parent.update_flow_template(**kwargs)
+```
 
-<a id="update\_system\_template"></a>
+1. See [:material-code-braces: UpdateFlowTemplateRequestRequestTypeDef](./type_defs.md#updateflowtemplaterequestrequesttypedef) 
 
-### update_system_template
+### update\_system\_template
 
 Updates the specified system.
 
-Type annotations for `boto3.client("iotthingsgraph").update_system_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").update_system_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.update_system_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.update_system_template)
+```python title="Method definition"
+def update_system_template(
+    self,
+    *,
+    id: str,
+    definition: DefinitionDocumentTypeDef,  # (1)
+    compatibleNamespaceVersion: int = ...,
+) -> UpdateSystemTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSystemTemplateRequestRequestTypeDef](./type_defs.md#updatesystemtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-braces: UpdateSystemTemplateResponseTypeDef](./type_defs.md#updatesystemtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
-- `definition`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-  *(required)*
-- `compatibleNamespaceVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateSystemTemplateRequestRequestTypeDef = {  # (1)
+    "id": ...,
+    "definition": ...,
+}
 
-Returns
-[UpdateSystemTemplateResponseTypeDef](./type_defs.md#updatesystemtemplateresponsetypedef).
+parent.update_system_template(**kwargs)
+```
 
-<a id="upload\_entity\_definitions"></a>
+1. See [:material-code-braces: UpdateSystemTemplateRequestRequestTypeDef](./type_defs.md#updatesystemtemplaterequestrequesttypedef) 
 
-### upload_entity_definitions
+### upload\_entity\_definitions
 
 Asynchronously uploads one or more entity definitions to the user's namespace.
 
-Type annotations for `boto3.client("iotthingsgraph").upload_entity_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").upload_entity_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions)
 
-Boto3 documentation:
-[IoTThingsGraph.Client.upload_entity_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Client.upload_entity_definitions)
+```python title="Method definition"
+def upload_entity_definitions(
+    self,
+    *,
+    document: DefinitionDocumentTypeDef = ...,  # (1)
+    syncWithPublicNamespace: bool = ...,
+    deprecateExistingEntities: bool = ...,
+) -> UploadEntityDefinitionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UploadEntityDefinitionsRequestRequestTypeDef](./type_defs.md#uploadentitydefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef) 
+2. See [:material-code-braces: UploadEntityDefinitionsResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `document`:
-  [DefinitionDocumentTypeDef](./type_defs.md#definitiondocumenttypedef)
-- `syncWithPublicNamespace`: `bool`
-- `deprecateExistingEntities`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UploadEntityDefinitionsRequestRequestTypeDef = {  # (1)
+    "document": ...,
+}
 
-Returns
-[UploadEntityDefinitionsResponseTypeDef](./type_defs.md#uploadentitydefinitionsresponsetypedef).
+parent.upload_entity_definitions(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UploadEntityDefinitionsRequestRequestTypeDef](./type_defs.md#uploadentitydefinitionsrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iotthingsgraph").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator` method with overloads.
 
-- `client.get_paginator("get_flow_template_revisions")` ->
-  [GetFlowTemplateRevisionsPaginator](./paginators.md#getflowtemplaterevisionspaginator)
-- `client.get_paginator("get_system_template_revisions")` ->
-  [GetSystemTemplateRevisionsPaginator](./paginators.md#getsystemtemplaterevisionspaginator)
-- `client.get_paginator("list_flow_execution_messages")` ->
-  [ListFlowExecutionMessagesPaginator](./paginators.md#listflowexecutionmessagespaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("search_entities")` ->
-  [SearchEntitiesPaginator](./paginators.md#searchentitiespaginator)
-- `client.get_paginator("search_flow_executions")` ->
-  [SearchFlowExecutionsPaginator](./paginators.md#searchflowexecutionspaginator)
-- `client.get_paginator("search_flow_templates")` ->
-  [SearchFlowTemplatesPaginator](./paginators.md#searchflowtemplatespaginator)
-- `client.get_paginator("search_system_instances")` ->
-  [SearchSystemInstancesPaginator](./paginators.md#searchsysteminstancespaginator)
-- `client.get_paginator("search_system_templates")` ->
-  [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
-- `client.get_paginator("search_things")` ->
-  [SearchThingsPaginator](./paginators.md#searchthingspaginator)
+- `client.get_paginator("get_flow_template_revisions")` -> [GetFlowTemplateRevisionsPaginator](./paginators.md#getflowtemplaterevisionspaginator)
+- `client.get_paginator("get_system_template_revisions")` -> [GetSystemTemplateRevisionsPaginator](./paginators.md#getsystemtemplaterevisionspaginator)
+- `client.get_paginator("list_flow_execution_messages")` -> [ListFlowExecutionMessagesPaginator](./paginators.md#listflowexecutionmessagespaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("search_entities")` -> [SearchEntitiesPaginator](./paginators.md#searchentitiespaginator)
+- `client.get_paginator("search_flow_executions")` -> [SearchFlowExecutionsPaginator](./paginators.md#searchflowexecutionspaginator)
+- `client.get_paginator("search_flow_templates")` -> [SearchFlowTemplatesPaginator](./paginators.md#searchflowtemplatespaginator)
+- `client.get_paginator("search_system_instances")` -> [SearchSystemInstancesPaginator](./paginators.md#searchsysteminstancespaginator)
+- `client.get_paginator("search_system_templates")` -> [SearchSystemTemplatesPaginator](./paginators.md#searchsystemtemplatespaginator)
+- `client.get_paginator("search_things")` -> [SearchThingsPaginator](./paginators.md#searchthingspaginator)
+
+
+

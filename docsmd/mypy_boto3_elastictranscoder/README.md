@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-elastictranscoder-module"></a>
-
-# Type annotations for boto3 ElasticTranscoder module
+#  ElasticTranscoder module
 
 > [Index](../README.md) > ElasticTranscoder
 
-Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module
-[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+!!! note ""
 
-- [Type annotations for boto3 ElasticTranscoder module](#type-annotations-for-boto3-elastictranscoder-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ElasticTranscoderClient](#elastictranscoderclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+    type annotations stubs module [mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ElasticTranscoder`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[elastictranscoder]'
 python -m pip install mypy-boto3-elastictranscoder
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,78 +42,37 @@ python -m pip install mypy-boto3-elastictranscoder
 python -m pip uninstall -y mypy-boto3-elastictranscoder
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="elastictranscoderclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ElasticTranscoderClient
 
-Type annotations for `boto3.client("elastictranscoder")` as
-[ElasticTranscoderClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("elastictranscoder")` as [ElasticTranscoderClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
+
+def get_client() -> ElasticTranscoderClient:
+    return Session().cleint("elastictranscoder")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job](./client.md#cancel_job)
-- [create_job](./client.md#create_job)
-- [create_pipeline](./client.md#create_pipeline)
-- [create_preset](./client.md#create_preset)
-- [delete_pipeline](./client.md#delete_pipeline)
-- [delete_preset](./client.md#delete_preset)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_jobs_by_pipeline](./client.md#list_jobs_by_pipeline)
-- [list_jobs_by_status](./client.md#list_jobs_by_status)
-- [list_pipelines](./client.md#list_pipelines)
-- [list_presets](./client.md#list_presets)
-- [read_job](./client.md#read_job)
-- [read_pipeline](./client.md#read_pipeline)
-- [read_preset](./client.md#read_preset)
-- [test_role](./client.md#test_role)
-- [update_pipeline](./client.md#update_pipeline)
-- [update_pipeline_notifications](./client.md#update_pipeline_notifications)
-- [update_pipeline_status](./client.md#update_pipeline_status)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ElasticTranscoderClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- IncompatibleVersionException
-- InternalServiceException
-- LimitExceededException
-- ResourceInUseException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("elastictranscoder").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("elastictranscoder").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator, ...
+from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator
+
+def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
+    return Session().client("elastictranscoder").get_paginator("list_jobs_by_pipeline"))
 ```
 
 - [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
@@ -144,31 +80,40 @@ from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator, 
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("elastictranscoder").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("elastictranscoder").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter, ...
+from mypy_boto3_elastictranscoder.waiter import JobCompleteWaiter
+
+def get_job_complete_waiter() -> JobCompleteWaiter:
+    return Session().client("elastictranscoder").get_waiter("job_complete")
 ```
 
 - [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName
 
-```python
-from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
+def get_value() -> JobCompleteWaiterName:
+    return "job_complete"
 ```
 
 - [JobCompleteWaiterName](./literals.md#jobcompletewaitername)
@@ -181,18 +126,22 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef
 
-```python
-from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef, ...
+def get_value() -> ArtworkTypeDef:
+    return {
+        "InputKey": ...,
+    }
 ```
 
 - [ArtworkTypeDef](./type_defs.md#artworktypedef)
@@ -222,12 +171,16 @@ from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef, ...
 - [JobOutputTypeDef](./type_defs.md#joboutputtypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
 - [JobWatermarkTypeDef](./type_defs.md#jobwatermarktypedef)
+- [ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef](./type_defs.md#listjobsbypipelinerequestlistjobsbypipelinepaginatetypedef)
 - [ListJobsByPipelineRequestRequestTypeDef](./type_defs.md#listjobsbypipelinerequestrequesttypedef)
 - [ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef)
+- [ListJobsByStatusRequestListJobsByStatusPaginateTypeDef](./type_defs.md#listjobsbystatusrequestlistjobsbystatuspaginatetypedef)
 - [ListJobsByStatusRequestRequestTypeDef](./type_defs.md#listjobsbystatusrequestrequesttypedef)
 - [ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef)
+- [ListPipelinesRequestListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesrequestlistpipelinespaginatetypedef)
 - [ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef)
 - [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)
+- [ListPresetsRequestListPresetsPaginateTypeDef](./type_defs.md#listpresetsrequestlistpresetspaginatetypedef)
 - [ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef)
 - [ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)
 - [NotificationsTypeDef](./type_defs.md#notificationstypedef)
@@ -239,6 +192,7 @@ from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef, ...
 - [PlaylistTypeDef](./type_defs.md#playlisttypedef)
 - [PresetTypeDef](./type_defs.md#presettypedef)
 - [PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)
+- [ReadJobRequestJobCompleteWaitTypeDef](./type_defs.md#readjobrequestjobcompletewaittypedef)
 - [ReadJobRequestRequestTypeDef](./type_defs.md#readjobrequestrequesttypedef)
 - [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef)
 - [ReadPipelineRequestRequestTypeDef](./type_defs.md#readpipelinerequestrequesttypedef)
@@ -260,3 +214,4 @@ from mypy_boto3_elastictranscoder.type_defs import ArtworkTypeDef, ...
 - [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WarningTypeDef](./type_defs.md#warningtypedef)
+

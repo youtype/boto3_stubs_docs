@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-opensearchservice-module"></a>
-
-# Examples for boto3 OpenSearchService module
+# Examples
 
 > [Index](../README.md) > [OpenSearchService](./README.md) > Examples
 
-- [Examples for boto3 OpenSearchService module](#examples-for-boto3-opensearchservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
+    type annotations stubs module [mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[opensearch]` package installed.
 
-Write your `OpenSearchService` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `OpenSearchService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type OpenSearchServiceClient
-# and provides type checking and code completion
-client = session.client("opensearch")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AcceptInboundConnectionResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.accept_inbound_connection()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("opensearch")  # (1)
+    result = client.accept_inbound_connection()  # (2)
+    ```
+
+    1. client: [OpenSearchServiceClient](./client.md)
+    2. result: [:material-code-braces: AcceptInboundConnectionResponseTypeDef](./type_defs.md#acceptinboundconnectionresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[opensearch]` or a standalone `mypy_boto3_opensearch`
-package, you have to explicitly specify `client: OpenSearchServiceClient` type
-annotation.
+With `boto3-stubs-lite[opensearch]`
+or a standalone `mypy_boto3_opensearch` package, you have to explicitly specify `client: OpenSearchServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_opensearch.client import OpenSearchServiceClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opensearch.client import OpenSearchServiceClient
+    from mypy_boto3_opensearch.type_defs import AcceptInboundConnectionResponseTypeDef
+    from mypy_boto3_opensearch.type_defs import AcceptInboundConnectionRequestRequestTypeDef
 
 
-from mypy_boto3_opensearch.type_defs import AcceptInboundConnectionResponseTypeDef
+    session = Session()
+
+    client: OpenSearchServiceClient = session.client("opensearch")
+
+    kwargs: AcceptInboundConnectionRequestRequestTypeDef = {...}
+    result: AcceptInboundConnectionResponseTypeDef = client.accept_inbound_connection(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: OpenSearchServiceClient = session.client("opensearch")
 
-result: AcceptInboundConnectionResponseTypeDef = client.accept_inbound_connection()
-```
+

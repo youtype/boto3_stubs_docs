@@ -1,40 +1,18 @@
-<a id="savingsplansclient-for-boto3-savingsplans-module"></a>
-
-# SavingsPlansClient for boto3 SavingsPlans module
+# SavingsPlansClient
 
 > [Index](../README.md) > [SavingsPlans](./README.md) > SavingsPlansClient
 
-Auto-generated documentation for
-[SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
-type annotations stubs module
-[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+!!! note ""
 
-- [SavingsPlansClient for boto3 SavingsPlans module](#savingsplansclient-for-boto3-savingsplans-module)
-  - [SavingsPlansClient](#savingsplansclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_savings_plan](#create_savings_plan)
-    - [delete_queued_savings_plan](#delete_queued_savings_plan)
-    - [describe_savings_plan_rates](#describe_savings_plan_rates)
-    - [describe_savings_plans](#describe_savings_plans)
-    - [describe_savings_plans_offering_rates](#describe_savings_plans_offering_rates)
-    - [describe_savings_plans_offerings](#describe_savings_plans_offerings)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-
-<a id="savingsplansclient"></a>
+    Auto-generated documentation for [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
+    type annotations stubs module [mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 ## SavingsPlansClient
 
-Type annotations for `boto3.client("savingsplans")`
+Type annotations and code completion for `#!python boto3.client("savingsplans")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 
@@ -42,323 +20,383 @@ def get_savingsplans_client() -> SavingsPlansClient:
     return Session().client("savingsplans")
 ```
 
-Boto3 documentation:
-[SavingsPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("savingsplans").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("savingsplans")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_savingsplans.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SavingsPlansClient exceptions.
-
-Type annotations for `boto3.client("savingsplans").exceptions` method.
-
-Boto3 documentation:
-[SavingsPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("savingsplans").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate)
 
-Boto3 documentation:
-[SavingsPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_savings\_plan"></a>
-
-### create_savings_plan
+### create\_savings\_plan
 
 Creates a Savings Plan.
 
-Type annotations for `boto3.client("savingsplans").create_savings_plan` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").create_savings_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
 
-Boto3 documentation:
-[SavingsPlans.Client.create_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.create_savings_plan)
+```python title="Method definition"
+def create_savings_plan(
+    self,
+    *,
+    savingsPlanOfferingId: str,
+    commitment: str,
+    upfrontPaymentAmount: str = ...,
+    purchaseTime: Union[datetime, str] = ...,
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateSavingsPlanResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSavingsPlanRequestRequestTypeDef](./type_defs.md#createsavingsplanrequestrequesttypedef).
+1. See [:material-code-braces: CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `savingsPlanOfferingId`: `str` *(required)*
-- `commitment`: `str` *(required)*
-- `upfrontPaymentAmount`: `str`
-- `purchaseTime`: `Union`\[`datetime`, `str`\]
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSavingsPlanRequestRequestTypeDef = {  # (1)
+    "savingsPlanOfferingId": ...,
+    "commitment": ...,
+}
 
-Returns
-[CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
+parent.create_savings_plan(**kwargs)
+```
 
-<a id="delete\_queued\_savings\_plan"></a>
+1. See [:material-code-braces: CreateSavingsPlanRequestRequestTypeDef](./type_defs.md#createsavingsplanrequestrequesttypedef) 
 
-### delete_queued_savings_plan
+### delete\_queued\_savings\_plan
 
 Deletes the queued purchase for the specified Savings Plan.
 
-Type annotations for `boto3.client("savingsplans").delete_queued_savings_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").delete_queued_savings_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
 
-Boto3 documentation:
-[SavingsPlans.Client.delete_queued_savings_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.delete_queued_savings_plan)
+```python title="Method definition"
+def delete_queued_savings_plan(
+    self,
+    *,
+    savingsPlanId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQueuedSavingsPlanRequestRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `savingsPlanId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQueuedSavingsPlanRequestRequestTypeDef = {  # (1)
+    "savingsPlanId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_queued_savings_plan(**kwargs)
+```
 
-<a id="describe\_savings\_plan\_rates"></a>
+1. See [:material-code-braces: DeleteQueuedSavingsPlanRequestRequestTypeDef](./type_defs.md#deletequeuedsavingsplanrequestrequesttypedef) 
 
-### describe_savings_plan_rates
+### describe\_savings\_plan\_rates
 
 Describes the specified Savings Plans rates.
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plan_rates`
-method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").describe_savings_plan_rates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
 
-Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plan_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plan_rates)
+```python title="Method definition"
+def describe_savings_plan_rates(
+    self,
+    *,
+    savingsPlanId: str,
+    filters: Sequence[SavingsPlanRateFilterTypeDef] = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeSavingsPlanRatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSavingsPlanRatesRequestRequestTypeDef](./type_defs.md#describesavingsplanratesrequestrequesttypedef).
+1. See [:material-code-braces: SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef) 
+2. See [:material-code-braces: DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `savingsPlanId`: `str` *(required)*
-- `filters`:
-  `Sequence`\[[SavingsPlanRateFilterTypeDef](./type_defs.md#savingsplanratefiltertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSavingsPlanRatesRequestRequestTypeDef = {  # (1)
+    "savingsPlanId": ...,
+}
 
-Returns
-[DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef).
+parent.describe_savings_plan_rates(**kwargs)
+```
 
-<a id="describe\_savings\_plans"></a>
+1. See [:material-code-braces: DescribeSavingsPlanRatesRequestRequestTypeDef](./type_defs.md#describesavingsplanratesrequestrequesttypedef) 
 
-### describe_savings_plans
+### describe\_savings\_plans
 
 Describes the specified Savings Plans.
 
-Type annotations for `boto3.client("savingsplans").describe_savings_plans`
-method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").describe_savings_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
 
-Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans)
+```python title="Method definition"
+def describe_savings_plans(
+    self,
+    *,
+    savingsPlanArns: Sequence[str] = ...,
+    savingsPlanIds: Sequence[str] = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    states: Sequence[SavingsPlanStateType] = ...,  # (1)
+    filters: Sequence[SavingsPlanFilterTypeDef] = ...,  # (2)
+) -> DescribeSavingsPlansResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSavingsPlansRequestRequestTypeDef](./type_defs.md#describesavingsplansrequestrequesttypedef).
+1. See [:material-code-brackets: SavingsPlanStateType](./literals.md#savingsplanstatetype) 
+2. See [:material-code-braces: SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef) 
+3. See [:material-code-braces: DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef) 
 
-Keyword-only arguments:
 
-- `savingsPlanArns`: `Sequence`\[`str`\]
-- `savingsPlanIds`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `states`:
-  `Sequence`\[[SavingsPlanStateType](./literals.md#savingsplanstatetype)\]
-- `filters`:
-  `Sequence`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeSavingsPlansRequestRequestTypeDef = {  # (1)
+    "savingsPlanArns": ...,
+}
 
-Returns
-[DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
+parent.describe_savings_plans(**kwargs)
+```
 
-<a id="describe\_savings\_plans\_offering\_rates"></a>
+1. See [:material-code-braces: DescribeSavingsPlansRequestRequestTypeDef](./type_defs.md#describesavingsplansrequestrequesttypedef) 
 
-### describe_savings_plans_offering_rates
+### describe\_savings\_plans\_offering\_rates
 
 Describes the specified Savings Plans offering rates.
 
-Type annotations for
-`boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").describe_savings_plans_offering_rates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
 
-Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans_offering_rates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offering_rates)
+```python title="Method definition"
+def describe_savings_plans_offering_rates(
+    self,
+    *,
+    savingsPlanOfferingIds: Sequence[str] = ...,
+    savingsPlanPaymentOptions: Sequence[SavingsPlanPaymentOptionType] = ...,  # (1)
+    savingsPlanTypes: Sequence[SavingsPlanTypeType] = ...,  # (2)
+    products: Sequence[SavingsPlanProductTypeType] = ...,  # (3)
+    serviceCodes: Sequence[SavingsPlanRateServiceCodeType] = ...,  # (4)
+    usageTypes: Sequence[str] = ...,
+    operations: Sequence[str] = ...,
+    filters: Sequence[SavingsPlanOfferingRateFilterElementTypeDef] = ...,  # (5)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeSavingsPlansOfferingRatesResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSavingsPlansOfferingRatesRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequestrequesttypedef).
+1. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
+2. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
+3. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
+4. See [:material-code-brackets: SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype) 
+5. See [:material-code-braces: SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef) 
+6. See [:material-code-braces: DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `savingsPlanOfferingIds`: `Sequence`\[`str`\]
-- `savingsPlanPaymentOptions`:
-  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
-- `savingsPlanTypes`:
-  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
-- `products`:
-  `Sequence`\[[SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)\]
-- `serviceCodes`:
-  `Sequence`\[[SavingsPlanRateServiceCodeType](./literals.md#savingsplanrateservicecodetype)\]
-- `usageTypes`: `Sequence`\[`str`\]
-- `operations`: `Sequence`\[`str`\]
-- `filters`:
-  `Sequence`\[[SavingsPlanOfferingRateFilterElementTypeDef](./type_defs.md#savingsplanofferingratefilterelementtypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSavingsPlansOfferingRatesRequestRequestTypeDef = {  # (1)
+    "savingsPlanOfferingIds": ...,
+}
 
-Returns
-[DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef).
+parent.describe_savings_plans_offering_rates(**kwargs)
+```
 
-<a id="describe\_savings\_plans\_offerings"></a>
+1. See [:material-code-braces: DescribeSavingsPlansOfferingRatesRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingratesrequestrequesttypedef) 
 
-### describe_savings_plans_offerings
+### describe\_savings\_plans\_offerings
 
 Describes the specified Savings Plans offerings.
 
-Type annotations for
-`boto3.client("savingsplans").describe_savings_plans_offerings` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").describe_savings_plans_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
 
-Boto3 documentation:
-[SavingsPlans.Client.describe_savings_plans_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.describe_savings_plans_offerings)
+```python title="Method definition"
+def describe_savings_plans_offerings(
+    self,
+    *,
+    offeringIds: Sequence[str] = ...,
+    paymentOptions: Sequence[SavingsPlanPaymentOptionType] = ...,  # (1)
+    productType: SavingsPlanProductTypeType = ...,  # (2)
+    planTypes: Sequence[SavingsPlanTypeType] = ...,  # (3)
+    durations: Sequence[int] = ...,
+    currencies: Sequence[CurrencyCodeType] = ...,  # (4)
+    descriptions: Sequence[str] = ...,
+    serviceCodes: Sequence[str] = ...,
+    usageTypes: Sequence[str] = ...,
+    operations: Sequence[str] = ...,
+    filters: Sequence[SavingsPlanOfferingFilterElementTypeDef] = ...,  # (5)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeSavingsPlansOfferingsResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSavingsPlansOfferingsRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequestrequesttypedef).
+1. See [:material-code-brackets: SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype) 
+2. See [:material-code-brackets: SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype) 
+3. See [:material-code-brackets: SavingsPlanTypeType](./literals.md#savingsplantypetype) 
+4. See [:material-code-brackets: CurrencyCodeType](./literals.md#currencycodetype) 
+5. See [:material-code-braces: SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef) 
+6. See [:material-code-braces: DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `offeringIds`: `Sequence`\[`str`\]
-- `paymentOptions`:
-  `Sequence`\[[SavingsPlanPaymentOptionType](./literals.md#savingsplanpaymentoptiontype)\]
-- `productType`:
-  [SavingsPlanProductTypeType](./literals.md#savingsplanproducttypetype)
-- `planTypes`:
-  `Sequence`\[[SavingsPlanTypeType](./literals.md#savingsplantypetype)\]
-- `durations`: `Sequence`\[`int`\]
-- `currencies`:
-  `Sequence`\[[CurrencyCodeType](./literals.md#currencycodetype)\]
-- `descriptions`: `Sequence`\[`str`\]
-- `serviceCodes`: `Sequence`\[`str`\]
-- `usageTypes`: `Sequence`\[`str`\]
-- `operations`: `Sequence`\[`str`\]
-- `filters`:
-  `Sequence`\[[SavingsPlanOfferingFilterElementTypeDef](./type_defs.md#savingsplanofferingfilterelementtypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSavingsPlansOfferingsRequestRequestTypeDef = {  # (1)
+    "offeringIds": ...,
+}
 
-Returns
-[DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef).
+parent.describe_savings_plans_offerings(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSavingsPlansOfferingsRequestRequestTypeDef](./type_defs.md#describesavingsplansofferingsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("savingsplans").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SavingsPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("savingsplans").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[SavingsPlans.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("savingsplans").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
 
-Boto3 documentation:
-[SavingsPlans.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("savingsplans").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("savingsplans").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
 
-Boto3 documentation:
-[SavingsPlans.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
+
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
+
+

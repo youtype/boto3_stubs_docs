@@ -1,1012 +1,1092 @@
-<a id="literals-for-boto3-elasticache-module"></a>
-
-# Literals for boto3 ElastiCache module
+# Literals
 
 > [Index](../README.md) > [ElastiCache](./README.md) > Literals
 
-Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module
-[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+!!! note ""
 
-- [Literals for boto3 ElastiCache module](#literals-for-boto3-elasticache-module)
-  - [AZModeType](#azmodetype)
-  - [AuthTokenUpdateStatusType](#authtokenupdatestatustype)
-  - [AuthTokenUpdateStrategyTypeType](#authtokenupdatestrategytypetype)
-  - [AuthenticationTypeType](#authenticationtypetype)
-  - [AutomaticFailoverStatusType](#automaticfailoverstatustype)
-  - [CacheClusterAvailableWaiterName](#cacheclusteravailablewaitername)
-  - [CacheClusterDeletedWaiterName](#cacheclusterdeletedwaitername)
-  - [ChangeTypeType](#changetypetype)
-  - [DataTieringStatusType](#datatieringstatustype)
-  - [DescribeCacheClustersPaginatorName](#describecacheclusterspaginatorname)
-  - [DescribeCacheEngineVersionsPaginatorName](#describecacheengineversionspaginatorname)
-  - [DescribeCacheParameterGroupsPaginatorName](#describecacheparametergroupspaginatorname)
-  - [DescribeCacheParametersPaginatorName](#describecacheparameterspaginatorname)
-  - [DescribeCacheSecurityGroupsPaginatorName](#describecachesecuritygroupspaginatorname)
-  - [DescribeCacheSubnetGroupsPaginatorName](#describecachesubnetgroupspaginatorname)
-  - [DescribeEngineDefaultParametersPaginatorName](#describeenginedefaultparameterspaginatorname)
-  - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [DescribeGlobalReplicationGroupsPaginatorName](#describeglobalreplicationgroupspaginatorname)
-  - [DescribeReplicationGroupsPaginatorName](#describereplicationgroupspaginatorname)
-  - [DescribeReservedCacheNodesOfferingsPaginatorName](#describereservedcachenodesofferingspaginatorname)
-  - [DescribeReservedCacheNodesPaginatorName](#describereservedcachenodespaginatorname)
-  - [DescribeServiceUpdatesPaginatorName](#describeserviceupdatespaginatorname)
-  - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
-  - [DescribeUpdateActionsPaginatorName](#describeupdateactionspaginatorname)
-  - [DescribeUserGroupsPaginatorName](#describeusergroupspaginatorname)
-  - [DescribeUsersPaginatorName](#describeuserspaginatorname)
-  - [DestinationTypeType](#destinationtypetype)
-  - [LogDeliveryConfigurationStatusType](#logdeliveryconfigurationstatustype)
-  - [LogFormatType](#logformattype)
-  - [LogTypeType](#logtypetype)
-  - [MultiAZStatusType](#multiazstatustype)
-  - [NodeUpdateInitiatedByType](#nodeupdateinitiatedbytype)
-  - [NodeUpdateStatusType](#nodeupdatestatustype)
-  - [OutpostModeType](#outpostmodetype)
-  - [PendingAutomaticFailoverStatusType](#pendingautomaticfailoverstatustype)
-  - [ReplicationGroupAvailableWaiterName](#replicationgroupavailablewaitername)
-  - [ReplicationGroupDeletedWaiterName](#replicationgroupdeletedwaitername)
-  - [ServiceUpdateSeverityType](#serviceupdateseveritytype)
-  - [ServiceUpdateStatusType](#serviceupdatestatustype)
-  - [ServiceUpdateTypeType](#serviceupdatetypetype)
-  - [SlaMetType](#slamettype)
-  - [SourceTypeType](#sourcetypetype)
-  - [UpdateActionStatusType](#updateactionstatustype)
-  - [ElastiCacheServiceName](#elasticacheservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="azmodetype"></a>
+    Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+    type annotations stubs module [mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 ## AZModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import AZModeType
+
+def get_value() -> AZModeType:
+    return "cross-az"
 ```
 
-Values:
-
-- `cross-az`
-- `single-az`
-
-<a id="authtokenupdatestatustype"></a>
-
+```python title="Definition"
+AZModeType = Literal[
+    "cross-az",
+    "single-az",
+]
+```
 ## AuthTokenUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import AuthTokenUpdateStatusType
+
+def get_value() -> AuthTokenUpdateStatusType:
+    return "ROTATING"
 ```
 
-Values:
-
-- `ROTATING`
-- `SETTING`
-
-<a id="authtokenupdatestrategytypetype"></a>
-
+```python title="Definition"
+AuthTokenUpdateStatusType = Literal[
+    "ROTATING",
+    "SETTING",
+]
+```
 ## AuthTokenUpdateStrategyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import AuthTokenUpdateStrategyTypeType
+
+def get_value() -> AuthTokenUpdateStrategyTypeType:
+    return "DELETE"
 ```
 
-Values:
-
-- `DELETE`
-- `ROTATE`
-- `SET`
-
-<a id="authenticationtypetype"></a>
-
+```python title="Definition"
+AuthTokenUpdateStrategyTypeType = Literal[
+    "DELETE",
+    "ROTATE",
+    "SET",
+]
+```
 ## AuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import AuthenticationTypeType
+
+def get_value() -> AuthenticationTypeType:
+    return "no-password"
 ```
 
-Values:
-
-- `no-password`
-- `password`
-
-<a id="automaticfailoverstatustype"></a>
-
+```python title="Definition"
+AuthenticationTypeType = Literal[
+    "no-password",
+    "password",
+]
+```
 ## AutomaticFailoverStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import AutomaticFailoverStatusType
+
+def get_value() -> AutomaticFailoverStatusType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `disabling`
-- `enabled`
-- `enabling`
-
-<a id="cacheclusteravailablewaitername"></a>
-
+```python title="Definition"
+AutomaticFailoverStatusType = Literal[
+    "disabled",
+    "disabling",
+    "enabled",
+    "enabling",
+]
+```
 ## CacheClusterAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import CacheClusterAvailableWaiterName
+
+def get_value() -> CacheClusterAvailableWaiterName:
+    return "cache_cluster_available"
 ```
 
-Values:
-
-- `cache_cluster_available`
-
-<a id="cacheclusterdeletedwaitername"></a>
-
+```python title="Definition"
+CacheClusterAvailableWaiterName = Literal[
+    "cache_cluster_available",
+]
+```
 ## CacheClusterDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import CacheClusterDeletedWaiterName
+
+def get_value() -> CacheClusterDeletedWaiterName:
+    return "cache_cluster_deleted"
 ```
 
-Values:
-
-- `cache_cluster_deleted`
-
-<a id="changetypetype"></a>
-
+```python title="Definition"
+CacheClusterDeletedWaiterName = Literal[
+    "cache_cluster_deleted",
+]
+```
 ## ChangeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ChangeTypeType
+
+def get_value() -> ChangeTypeType:
+    return "immediate"
 ```
 
-Values:
-
-- `immediate`
-- `requires-reboot`
-
-<a id="datatieringstatustype"></a>
-
+```python title="Definition"
+ChangeTypeType = Literal[
+    "immediate",
+    "requires-reboot",
+]
+```
 ## DataTieringStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DataTieringStatusType
+
+def get_value() -> DataTieringStatusType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="describecacheclusterspaginatorname"></a>
-
+```python title="Definition"
+DataTieringStatusType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## DescribeCacheClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheClustersPaginatorName
+
+def get_value() -> DescribeCacheClustersPaginatorName:
+    return "describe_cache_clusters"
 ```
 
-Values:
-
-- `describe_cache_clusters`
-
-<a id="describecacheengineversionspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheClustersPaginatorName = Literal[
+    "describe_cache_clusters",
+]
+```
 ## DescribeCacheEngineVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheEngineVersionsPaginatorName
+
+def get_value() -> DescribeCacheEngineVersionsPaginatorName:
+    return "describe_cache_engine_versions"
 ```
 
-Values:
-
-- `describe_cache_engine_versions`
-
-<a id="describecacheparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheEngineVersionsPaginatorName = Literal[
+    "describe_cache_engine_versions",
+]
+```
 ## DescribeCacheParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheParameterGroupsPaginatorName
+
+def get_value() -> DescribeCacheParameterGroupsPaginatorName:
+    return "describe_cache_parameter_groups"
 ```
 
-Values:
-
-- `describe_cache_parameter_groups`
-
-<a id="describecacheparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheParameterGroupsPaginatorName = Literal[
+    "describe_cache_parameter_groups",
+]
+```
 ## DescribeCacheParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheParametersPaginatorName
+
+def get_value() -> DescribeCacheParametersPaginatorName:
+    return "describe_cache_parameters"
 ```
 
-Values:
-
-- `describe_cache_parameters`
-
-<a id="describecachesecuritygroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheParametersPaginatorName = Literal[
+    "describe_cache_parameters",
+]
+```
 ## DescribeCacheSecurityGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheSecurityGroupsPaginatorName
+
+def get_value() -> DescribeCacheSecurityGroupsPaginatorName:
+    return "describe_cache_security_groups"
 ```
 
-Values:
-
-- `describe_cache_security_groups`
-
-<a id="describecachesubnetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheSecurityGroupsPaginatorName = Literal[
+    "describe_cache_security_groups",
+]
+```
 ## DescribeCacheSubnetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeCacheSubnetGroupsPaginatorName
+
+def get_value() -> DescribeCacheSubnetGroupsPaginatorName:
+    return "describe_cache_subnet_groups"
 ```
 
-Values:
-
-- `describe_cache_subnet_groups`
-
-<a id="describeenginedefaultparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeCacheSubnetGroupsPaginatorName = Literal[
+    "describe_cache_subnet_groups",
+]
+```
 ## DescribeEngineDefaultParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeEngineDefaultParametersPaginatorName
+
+def get_value() -> DescribeEngineDefaultParametersPaginatorName:
+    return "describe_engine_default_parameters"
 ```
 
-Values:
-
-- `describe_engine_default_parameters`
-
-<a id="describeeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeEngineDefaultParametersPaginatorName = Literal[
+    "describe_engine_default_parameters",
+]
+```
 ## DescribeEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
 ```
 
-Values:
-
-- `describe_events`
-
-<a id="describeglobalreplicationgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
 ## DescribeGlobalReplicationGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeGlobalReplicationGroupsPaginatorName
+
+def get_value() -> DescribeGlobalReplicationGroupsPaginatorName:
+    return "describe_global_replication_groups"
 ```
 
-Values:
-
-- `describe_global_replication_groups`
-
-<a id="describereplicationgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeGlobalReplicationGroupsPaginatorName = Literal[
+    "describe_global_replication_groups",
+]
+```
 ## DescribeReplicationGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeReplicationGroupsPaginatorName
+
+def get_value() -> DescribeReplicationGroupsPaginatorName:
+    return "describe_replication_groups"
 ```
 
-Values:
-
-- `describe_replication_groups`
-
-<a id="describereservedcachenodesofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribeReplicationGroupsPaginatorName = Literal[
+    "describe_replication_groups",
+]
+```
 ## DescribeReservedCacheNodesOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeReservedCacheNodesOfferingsPaginatorName
+
+def get_value() -> DescribeReservedCacheNodesOfferingsPaginatorName:
+    return "describe_reserved_cache_nodes_offerings"
 ```
 
-Values:
-
-- `describe_reserved_cache_nodes_offerings`
-
-<a id="describereservedcachenodespaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedCacheNodesOfferingsPaginatorName = Literal[
+    "describe_reserved_cache_nodes_offerings",
+]
+```
 ## DescribeReservedCacheNodesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeReservedCacheNodesPaginatorName
+
+def get_value() -> DescribeReservedCacheNodesPaginatorName:
+    return "describe_reserved_cache_nodes"
 ```
 
-Values:
-
-- `describe_reserved_cache_nodes`
-
-<a id="describeserviceupdatespaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedCacheNodesPaginatorName = Literal[
+    "describe_reserved_cache_nodes",
+]
+```
 ## DescribeServiceUpdatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeServiceUpdatesPaginatorName
+
+def get_value() -> DescribeServiceUpdatesPaginatorName:
+    return "describe_service_updates"
 ```
 
-Values:
-
-- `describe_service_updates`
-
-<a id="describesnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeServiceUpdatesPaginatorName = Literal[
+    "describe_service_updates",
+]
+```
 ## DescribeSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeSnapshotsPaginatorName
+
+def get_value() -> DescribeSnapshotsPaginatorName:
+    return "describe_snapshots"
 ```
 
-Values:
-
-- `describe_snapshots`
-
-<a id="describeupdateactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotsPaginatorName = Literal[
+    "describe_snapshots",
+]
+```
 ## DescribeUpdateActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeUpdateActionsPaginatorName
+
+def get_value() -> DescribeUpdateActionsPaginatorName:
+    return "describe_update_actions"
 ```
 
-Values:
-
-- `describe_update_actions`
-
-<a id="describeusergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeUpdateActionsPaginatorName = Literal[
+    "describe_update_actions",
+]
+```
 ## DescribeUserGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeUserGroupsPaginatorName
+
+def get_value() -> DescribeUserGroupsPaginatorName:
+    return "describe_user_groups"
 ```
 
-Values:
-
-- `describe_user_groups`
-
-<a id="describeuserspaginatorname"></a>
-
+```python title="Definition"
+DescribeUserGroupsPaginatorName = Literal[
+    "describe_user_groups",
+]
+```
 ## DescribeUsersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DescribeUsersPaginatorName
+
+def get_value() -> DescribeUsersPaginatorName:
+    return "describe_users"
 ```
 
-Values:
-
-- `describe_users`
-
-<a id="destinationtypetype"></a>
-
+```python title="Definition"
+DescribeUsersPaginatorName = Literal[
+    "describe_users",
+]
+```
 ## DestinationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import DestinationTypeType
+
+def get_value() -> DestinationTypeType:
+    return "cloudwatch-logs"
 ```
 
-Values:
-
-- `cloudwatch-logs`
-- `kinesis-firehose`
-
-<a id="logdeliveryconfigurationstatustype"></a>
-
+```python title="Definition"
+DestinationTypeType = Literal[
+    "cloudwatch-logs",
+    "kinesis-firehose",
+]
+```
 ## LogDeliveryConfigurationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import LogDeliveryConfigurationStatusType
+
+def get_value() -> LogDeliveryConfigurationStatusType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `disabling`
-- `enabling`
-- `error`
-- `modifying`
-
-<a id="logformattype"></a>
-
+```python title="Definition"
+LogDeliveryConfigurationStatusType = Literal[
+    "active",
+    "disabling",
+    "enabling",
+    "error",
+    "modifying",
+]
+```
 ## LogFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import LogFormatType
+
+def get_value() -> LogFormatType:
+    return "json"
 ```
 
-Values:
-
-- `json`
-- `text`
-
-<a id="logtypetype"></a>
-
+```python title="Definition"
+LogFormatType = Literal[
+    "json",
+    "text",
+]
+```
 ## LogTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import LogTypeType
+
+def get_value() -> LogTypeType:
+    return "engine-log"
 ```
 
-Values:
-
-- `engine-log`
-- `slow-log`
-
-<a id="multiazstatustype"></a>
-
+```python title="Definition"
+LogTypeType = Literal[
+    "engine-log",
+    "slow-log",
+]
+```
 ## MultiAZStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import MultiAZStatusType
+
+def get_value() -> MultiAZStatusType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="nodeupdateinitiatedbytype"></a>
-
+```python title="Definition"
+MultiAZStatusType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## NodeUpdateInitiatedByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import NodeUpdateInitiatedByType
+
+def get_value() -> NodeUpdateInitiatedByType:
+    return "customer"
 ```
 
-Values:
-
-- `customer`
-- `system`
-
-<a id="nodeupdatestatustype"></a>
-
+```python title="Definition"
+NodeUpdateInitiatedByType = Literal[
+    "customer",
+    "system",
+]
+```
 ## NodeUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import NodeUpdateStatusType
+
+def get_value() -> NodeUpdateStatusType:
+    return "complete"
 ```
 
-Values:
-
-- `complete`
-- `in-progress`
-- `not-applied`
-- `stopped`
-- `stopping`
-- `waiting-to-start`
-
-<a id="outpostmodetype"></a>
-
+```python title="Definition"
+NodeUpdateStatusType = Literal[
+    "complete",
+    "in-progress",
+    "not-applied",
+    "stopped",
+    "stopping",
+    "waiting-to-start",
+]
+```
 ## OutpostModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import OutpostModeType
+
+def get_value() -> OutpostModeType:
+    return "cross-outpost"
 ```
 
-Values:
-
-- `cross-outpost`
-- `single-outpost`
-
-<a id="pendingautomaticfailoverstatustype"></a>
-
+```python title="Definition"
+OutpostModeType = Literal[
+    "cross-outpost",
+    "single-outpost",
+]
+```
 ## PendingAutomaticFailoverStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import PendingAutomaticFailoverStatusType
+
+def get_value() -> PendingAutomaticFailoverStatusType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="replicationgroupavailablewaitername"></a>
-
+```python title="Definition"
+PendingAutomaticFailoverStatusType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## ReplicationGroupAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ReplicationGroupAvailableWaiterName
+
+def get_value() -> ReplicationGroupAvailableWaiterName:
+    return "replication_group_available"
 ```
 
-Values:
-
-- `replication_group_available`
-
-<a id="replicationgroupdeletedwaitername"></a>
-
+```python title="Definition"
+ReplicationGroupAvailableWaiterName = Literal[
+    "replication_group_available",
+]
+```
 ## ReplicationGroupDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ReplicationGroupDeletedWaiterName
+
+def get_value() -> ReplicationGroupDeletedWaiterName:
+    return "replication_group_deleted"
 ```
 
-Values:
-
-- `replication_group_deleted`
-
-<a id="serviceupdateseveritytype"></a>
-
+```python title="Definition"
+ReplicationGroupDeletedWaiterName = Literal[
+    "replication_group_deleted",
+]
+```
 ## ServiceUpdateSeverityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ServiceUpdateSeverityType
+
+def get_value() -> ServiceUpdateSeverityType:
+    return "critical"
 ```
 
-Values:
-
-- `critical`
-- `important`
-- `low`
-- `medium`
-
-<a id="serviceupdatestatustype"></a>
-
+```python title="Definition"
+ServiceUpdateSeverityType = Literal[
+    "critical",
+    "important",
+    "low",
+    "medium",
+]
+```
 ## ServiceUpdateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ServiceUpdateStatusType
+
+def get_value() -> ServiceUpdateStatusType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `cancelled`
-- `expired`
-
-<a id="serviceupdatetypetype"></a>
-
+```python title="Definition"
+ServiceUpdateStatusType = Literal[
+    "available",
+    "cancelled",
+    "expired",
+]
+```
 ## ServiceUpdateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ServiceUpdateTypeType
+
+def get_value() -> ServiceUpdateTypeType:
+    return "security-update"
 ```
 
-Values:
-
-- `security-update`
-
-<a id="slamettype"></a>
-
+```python title="Definition"
+ServiceUpdateTypeType = Literal[
+    "security-update",
+]
+```
 ## SlaMetType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import SlaMetType
+
+def get_value() -> SlaMetType:
+    return "n/a"
 ```
 
-Values:
-
-- `n/a`
-- `no`
-- `yes`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+SlaMetType = Literal[
+    "n/a",
+    "no",
+    "yes",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "cache-cluster"
 ```
 
-Values:
-
-- `cache-cluster`
-- `cache-parameter-group`
-- `cache-security-group`
-- `cache-subnet-group`
-- `replication-group`
-- `user`
-- `user-group`
-
-<a id="updateactionstatustype"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "cache-cluster",
+    "cache-parameter-group",
+    "cache-security-group",
+    "cache-subnet-group",
+    "replication-group",
+    "user",
+    "user-group",
+]
+```
 ## UpdateActionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import UpdateActionStatusType
+
+def get_value() -> UpdateActionStatusType:
+    return "complete"
 ```
 
-Values:
-
-- `complete`
-- `in-progress`
-- `not-applicable`
-- `not-applied`
-- `scheduled`
-- `scheduling`
-- `stopped`
-- `stopping`
-- `waiting-to-start`
-
-<a id="elasticacheservicename"></a>
-
+```python title="Definition"
+UpdateActionStatusType = Literal[
+    "complete",
+    "in-progress",
+    "not-applicable",
+    "not-applied",
+    "scheduled",
+    "scheduling",
+    "stopped",
+    "stopping",
+    "waiting-to-start",
+]
+```
 ## ElastiCacheServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ElastiCacheServiceName
+
+def get_value() -> ElastiCacheServiceName:
+    return "elasticache"
 ```
 
-Values:
-
-- `elasticache`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ElastiCacheServiceName = Literal[
+    "elasticache",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_cache_clusters"
 ```
 
-Values:
-
-- `describe_cache_clusters`
-- `describe_cache_engine_versions`
-- `describe_cache_parameter_groups`
-- `describe_cache_parameters`
-- `describe_cache_security_groups`
-- `describe_cache_subnet_groups`
-- `describe_engine_default_parameters`
-- `describe_events`
-- `describe_global_replication_groups`
-- `describe_replication_groups`
-- `describe_reserved_cache_nodes`
-- `describe_reserved_cache_nodes_offerings`
-- `describe_service_updates`
-- `describe_snapshots`
-- `describe_update_actions`
-- `describe_user_groups`
-- `describe_users`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_cache_clusters",
+    "describe_cache_engine_versions",
+    "describe_cache_parameter_groups",
+    "describe_cache_parameters",
+    "describe_cache_security_groups",
+    "describe_cache_subnet_groups",
+    "describe_engine_default_parameters",
+    "describe_events",
+    "describe_global_replication_groups",
+    "describe_replication_groups",
+    "describe_reserved_cache_nodes",
+    "describe_reserved_cache_nodes_offerings",
+    "describe_service_updates",
+    "describe_snapshots",
+    "describe_update_actions",
+    "describe_user_groups",
+    "describe_users",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_elasticache.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "cache_cluster_available"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "cache_cluster_available",
+    "cache_cluster_deleted",
+    "replication_group_available",
+    "replication_group_deleted",
+]
+```
+## RegionName
 
-- `cache_cluster_available`
-- `cache_cluster_deleted`
-- `replication_group_available`
-- `replication_group_deleted`
+```python title="Usage Example"
+from mypy_boto3_elasticache.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

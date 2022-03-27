@@ -1,74 +1,18 @@
-<a id="elasticsearchserviceclient-for-boto3-elasticsearchservice-module"></a>
+# ElasticsearchServiceClient
 
-# ElasticsearchServiceClient for boto3 ElasticsearchService module
+> [Index](../README.md) > [ElasticsearchService](./README.md) > ElasticsearchServiceClient
 
-> [Index](../README.md) > [ElasticsearchService](./README.md) >
-> ElasticsearchServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
-type annotations stubs module
-[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
-
-- [ElasticsearchServiceClient for boto3 ElasticsearchService module](#elasticsearchserviceclient-for-boto3-elasticsearchservice-module)
-  - [ElasticsearchServiceClient](#elasticsearchserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_inbound_cross_cluster_search_connection](#accept_inbound_cross_cluster_search_connection)
-    - [add_tags](#add_tags)
-    - [associate_package](#associate_package)
-    - [can_paginate](#can_paginate)
-    - [cancel_elasticsearch_service_software_update](#cancel_elasticsearch_service_software_update)
-    - [create_elasticsearch_domain](#create_elasticsearch_domain)
-    - [create_outbound_cross_cluster_search_connection](#create_outbound_cross_cluster_search_connection)
-    - [create_package](#create_package)
-    - [delete_elasticsearch_domain](#delete_elasticsearch_domain)
-    - [delete_elasticsearch_service_role](#delete_elasticsearch_service_role)
-    - [delete_inbound_cross_cluster_search_connection](#delete_inbound_cross_cluster_search_connection)
-    - [delete_outbound_cross_cluster_search_connection](#delete_outbound_cross_cluster_search_connection)
-    - [delete_package](#delete_package)
-    - [describe_domain_auto_tunes](#describe_domain_auto_tunes)
-    - [describe_domain_change_progress](#describe_domain_change_progress)
-    - [describe_elasticsearch_domain](#describe_elasticsearch_domain)
-    - [describe_elasticsearch_domain_config](#describe_elasticsearch_domain_config)
-    - [describe_elasticsearch_domains](#describe_elasticsearch_domains)
-    - [describe_elasticsearch_instance_type_limits](#describe_elasticsearch_instance_type_limits)
-    - [describe_inbound_cross_cluster_search_connections](#describe_inbound_cross_cluster_search_connections)
-    - [describe_outbound_cross_cluster_search_connections](#describe_outbound_cross_cluster_search_connections)
-    - [describe_packages](#describe_packages)
-    - [describe_reserved_elasticsearch_instance_offerings](#describe_reserved_elasticsearch_instance_offerings)
-    - [describe_reserved_elasticsearch_instances](#describe_reserved_elasticsearch_instances)
-    - [dissociate_package](#dissociate_package)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_compatible_elasticsearch_versions](#get_compatible_elasticsearch_versions)
-    - [get_package_version_history](#get_package_version_history)
-    - [get_upgrade_history](#get_upgrade_history)
-    - [get_upgrade_status](#get_upgrade_status)
-    - [list_domain_names](#list_domain_names)
-    - [list_domains_for_package](#list_domains_for_package)
-    - [list_elasticsearch_instance_types](#list_elasticsearch_instance_types)
-    - [list_elasticsearch_versions](#list_elasticsearch_versions)
-    - [list_packages_for_domain](#list_packages_for_domain)
-    - [list_tags](#list_tags)
-    - [purchase_reserved_elasticsearch_instance_offering](#purchase_reserved_elasticsearch_instance_offering)
-    - [reject_inbound_cross_cluster_search_connection](#reject_inbound_cross_cluster_search_connection)
-    - [remove_tags](#remove_tags)
-    - [start_elasticsearch_service_software_update](#start_elasticsearch_service_software_update)
-    - [update_elasticsearch_domain_config](#update_elasticsearch_domain_config)
-    - [update_package](#update_package)
-    - [upgrade_elasticsearch_domain](#upgrade_elasticsearch_domain)
-    - [get_paginator](#get_paginator)
-
-<a id="elasticsearchserviceclient"></a>
+    Auto-generated documentation for [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
+    type annotations stubs module [mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 ## ElasticsearchServiceClient
 
-Type annotations for `boto3.client("es")`
+Type annotations and code completion for `#!python boto3.client("es")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_es.client import ElasticsearchServiceClient
 
@@ -76,1093 +20,1403 @@ def get_es_client() -> ElasticsearchServiceClient:
     return Session().client("es")
 ```
 
-Boto3 documentation:
-[ElasticsearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("es").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("es")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.BaseException,
+    client.ClientError,
+    client.ConflictException,
+    client.DisabledOperationException,
+    client.InternalException,
+    client.InvalidPaginationTokenException,
+    client.InvalidTypeException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_es.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.BaseException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.DisabledOperationException`
-- `Exceptions.InternalException`
-- `Exceptions.InvalidPaginationTokenException`
-- `Exceptions.InvalidTypeException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticsearchServiceClient exceptions.
-
-Type annotations for `boto3.client("es").exceptions` method.
-
-Boto3 documentation:
-[ElasticsearchService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_inbound\_cross\_cluster\_search\_connection"></a>
-
-### accept_inbound_cross_cluster_search_connection
+### accept\_inbound\_cross\_cluster\_search\_connection
 
 Allows the destination domain owner to accept an inbound cross-cluster search
 connection request.
 
-Type annotations for
-`boto3.client("es").accept_inbound_cross_cluster_search_connection` method.
+Type annotations and code completion for `#!python boto3.client("es").accept_inbound_cross_cluster_search_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
 
-Boto3 documentation:
-[ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.accept_inbound_cross_cluster_search_connection)
+```python title="Method definition"
+def accept_inbound_cross_cluster_search_connection(
+    self,
+    *,
+    CrossClusterSearchConnectionId: str,
+) -> AcceptInboundCrossClusterSearchConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionrequestrequesttypedef).
+1. See [:material-code-braces: AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrossClusterSearchConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef = {  # (1)
+    "CrossClusterSearchConnectionId": ...,
+}
 
-Returns
-[AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef).
+parent.accept_inbound_cross_cluster_search_connection(**kwargs)
+```
 
-<a id="add\_tags"></a>
+1. See [:material-code-braces: AcceptInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionrequestrequesttypedef) 
 
-### add_tags
+### add\_tags
 
 Attaches tags to an existing Elasticsearch domain.
 
-Type annotations for `boto3.client("es").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("es").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags)
 
-Boto3 documentation:
-[ElasticsearchService.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    ARN: str,
+    TagList: Sequence[TagTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+    "TagList": ...,
+}
 
-<a id="associate\_package"></a>
+parent.add_tags(**kwargs)
+```
 
-### associate_package
+1. See [:material-code-braces: AddTagsRequestRequestTypeDef](./type_defs.md#addtagsrequestrequesttypedef) 
+
+### associate\_package
 
 Associates a package with an Amazon ES domain.
 
-Type annotations for `boto3.client("es").associate_package` method.
+Type annotations and code completion for `#!python boto3.client("es").associate_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.associate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.associate_package)
+```python title="Method definition"
+def associate_package(
+    self,
+    *,
+    PackageID: str,
+    DomainName: str,
+) -> AssociatePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef).
+1. See [:material-code-braces: AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "DomainName": ...,
+}
 
-Returns
-[AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
+parent.associate_package(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociatePackageRequestRequestTypeDef](./type_defs.md#associatepackagerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("es").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("es").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticsearchService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_elasticsearch\_service\_software\_update"></a>
-
-### cancel_elasticsearch_service_software_update
+### cancel\_elasticsearch\_service\_software\_update
 
 Cancels a scheduled service software update for an Amazon ES domain.
 
-Type annotations for
-`boto3.client("es").cancel_elasticsearch_service_software_update` method.
+Type annotations and code completion for `#!python boto3.client("es").cancel_elasticsearch_service_software_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
 
-Boto3 documentation:
-[ElasticsearchService.Client.cancel_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.cancel_elasticsearch_service_software_update)
+```python title="Method definition"
+def cancel_elasticsearch_service_software_update(
+    self,
+    *,
+    DomainName: str,
+) -> CancelElasticsearchServiceSoftwareUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelElasticsearchServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdaterequestrequesttypedef).
+1. See [:material-code-braces: CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelElasticsearchServiceSoftwareUpdateRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponsetypedef).
+parent.cancel_elasticsearch_service_software_update(**kwargs)
+```
 
-<a id="create\_elasticsearch\_domain"></a>
+1. See [:material-code-braces: CancelElasticsearchServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdaterequestrequesttypedef) 
 
-### create_elasticsearch_domain
+### create\_elasticsearch\_domain
 
 Creates a new Elasticsearch domain.
 
-Type annotations for `boto3.client("es").create_elasticsearch_domain` method.
+Type annotations and code completion for `#!python boto3.client("es").create_elasticsearch_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
 
-Boto3 documentation:
-[ElasticsearchService.Client.create_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_elasticsearch_domain)
+```python title="Method definition"
+def create_elasticsearch_domain(
+    self,
+    *,
+    DomainName: str,
+    ElasticsearchVersion: str = ...,
+    ElasticsearchClusterConfig: ElasticsearchClusterConfigTypeDef = ...,  # (1)
+    EBSOptions: EBSOptionsTypeDef = ...,  # (2)
+    AccessPolicies: str = ...,
+    SnapshotOptions: SnapshotOptionsTypeDef = ...,  # (3)
+    VPCOptions: VPCOptionsTypeDef = ...,  # (4)
+    CognitoOptions: CognitoOptionsTypeDef = ...,  # (5)
+    EncryptionAtRestOptions: EncryptionAtRestOptionsTypeDef = ...,  # (6)
+    NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptionsTypeDef = ...,  # (7)
+    AdvancedOptions: Mapping[str, str] = ...,
+    LogPublishingOptions: Mapping[LogTypeType, LogPublishingOptionTypeDef] = ...,  # (8)
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef = ...,  # (9)
+    AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (10)
+    AutoTuneOptions: AutoTuneOptionsInputTypeDef = ...,  # (11)
+    TagList: Sequence[TagTypeDef] = ...,  # (12)
+) -> CreateElasticsearchDomainResponseTypeDef:  # (13)
+    ...
+```
 
-Arguments mapping described in
-[CreateElasticsearchDomainRequestRequestTypeDef](./type_defs.md#createelasticsearchdomainrequestrequesttypedef).
+1. See [:material-code-braces: ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef) 
+2. See [:material-code-braces: EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef) 
+3. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
+4. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+5. See [:material-code-braces: CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef) 
+6. See [:material-code-braces: EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef) 
+7. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
+8. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) [:material-code-braces: LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef) 
+9. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+10. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
+11. See [:material-code-braces: AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef) 
+12. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+13. See [:material-code-braces: CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ElasticsearchVersion`: `str`
-- `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
-- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
-- `AccessPolicies`: `str`
-- `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
-- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
-- `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
-- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
-  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-- `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `AutoTuneOptions`:
-  [AutoTuneOptionsInputTypeDef](./type_defs.md#autotuneoptionsinputtypedef)
-- `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateElasticsearchDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef).
+parent.create_elasticsearch_domain(**kwargs)
+```
 
-<a id="create\_outbound\_cross\_cluster\_search\_connection"></a>
+1. See [:material-code-braces: CreateElasticsearchDomainRequestRequestTypeDef](./type_defs.md#createelasticsearchdomainrequestrequesttypedef) 
 
-### create_outbound_cross_cluster_search_connection
+### create\_outbound\_cross\_cluster\_search\_connection
 
 Creates a new cross-cluster search connection from a source domain to a
 destination domain.
 
-Type annotations for
-`boto3.client("es").create_outbound_cross_cluster_search_connection` method.
+Type annotations and code completion for `#!python boto3.client("es").create_outbound_cross_cluster_search_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
 
-Boto3 documentation:
-[ElasticsearchService.Client.create_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_outbound_cross_cluster_search_connection)
+```python title="Method definition"
+def create_outbound_cross_cluster_search_connection(
+    self,
+    *,
+    SourceDomainInfo: DomainInformationTypeDef,  # (1)
+    DestinationDomainInfo: DomainInformationTypeDef,  # (1)
+    ConnectionAlias: str,
+) -> CreateOutboundCrossClusterSearchConnectionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateOutboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DomainInformationTypeDef](./type_defs.md#domaininformationtypedef) 
+2. See [:material-code-braces: DomainInformationTypeDef](./type_defs.md#domaininformationtypedef) 
+3. See [:material-code-braces: CreateOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceDomainInfo`:
-  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
-  *(required)*
-- `DestinationDomainInfo`:
-  [DomainInformationTypeDef](./type_defs.md#domaininformationtypedef)
-  *(required)*
-- `ConnectionAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateOutboundCrossClusterSearchConnectionRequestRequestTypeDef = {  # (1)
+    "SourceDomainInfo": ...,
+    "DestinationDomainInfo": ...,
+    "ConnectionAlias": ...,
+}
 
-Returns
-[CreateOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponsetypedef).
+parent.create_outbound_cross_cluster_search_connection(**kwargs)
+```
 
-<a id="create\_package"></a>
+1. See [:material-code-braces: CreateOutboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionrequestrequesttypedef) 
 
-### create_package
+### create\_package
 
 Create a package for use with Amazon ES domains.
 
-Type annotations for `boto3.client("es").create_package` method.
+Type annotations and code completion for `#!python boto3.client("es").create_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.create_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.create_package)
+```python title="Method definition"
+def create_package(
+    self,
+    *,
+    PackageName: str,
+    PackageType: PackageTypeType,  # (1)
+    PackageSource: PackageSourceTypeDef,  # (2)
+    PackageDescription: str = ...,
+) -> CreatePackageResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef).
+1. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+2. See [:material-code-braces: PackageSourceTypeDef](./type_defs.md#packagesourcetypedef) 
+3. See [:material-code-braces: CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageName`: `str` *(required)*
-- `PackageType`: `Literal['TXT-DICTIONARY']` (see
-  [PackageTypeType](./literals.md#packagetypetype)) *(required)*
-- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
-  *(required)*
-- `PackageDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePackageRequestRequestTypeDef = {  # (1)
+    "PackageName": ...,
+    "PackageType": ...,
+    "PackageSource": ...,
+}
 
-Returns
-[CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
+parent.create_package(**kwargs)
+```
 
-<a id="delete\_elasticsearch\_domain"></a>
+1. See [:material-code-braces: CreatePackageRequestRequestTypeDef](./type_defs.md#createpackagerequestrequesttypedef) 
 
-### delete_elasticsearch_domain
+### delete\_elasticsearch\_domain
 
 Permanently deletes the specified Elasticsearch domain and all of its data.
 
-Type annotations for `boto3.client("es").delete_elasticsearch_domain` method.
+Type annotations and code completion for `#!python boto3.client("es").delete_elasticsearch_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
 
-Boto3 documentation:
-[ElasticsearchService.Client.delete_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_domain)
+```python title="Method definition"
+def delete_elasticsearch_domain(
+    self,
+    *,
+    DomainName: str,
+) -> DeleteElasticsearchDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteElasticsearchDomainRequestRequestTypeDef](./type_defs.md#deleteelasticsearchdomainrequestrequesttypedef).
+1. See [:material-code-braces: DeleteElasticsearchDomainResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteElasticsearchDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DeleteElasticsearchDomainResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponsetypedef).
+parent.delete_elasticsearch_domain(**kwargs)
+```
 
-<a id="delete\_elasticsearch\_service\_role"></a>
+1. See [:material-code-braces: DeleteElasticsearchDomainRequestRequestTypeDef](./type_defs.md#deleteelasticsearchdomainrequestrequesttypedef) 
 
-### delete_elasticsearch_service_role
+### delete\_elasticsearch\_service\_role
 
 Deletes the service-linked role that Elasticsearch Service uses to manage and
 maintain VPC domains.
 
-Type annotations for `boto3.client("es").delete_elasticsearch_service_role`
-method.
+Type annotations and code completion for `#!python boto3.client("es").delete_elasticsearch_service_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role)
 
-Boto3 documentation:
-[ElasticsearchService.Client.delete_elasticsearch_service_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role)
+```python title="Method definition"
+def delete_elasticsearch_service_role(
+    self,
+) -> None:
+    ...
+```
 
-<a id="delete\_inbound\_cross\_cluster\_search\_connection"></a>
 
-### delete_inbound_cross_cluster_search_connection
+### delete\_inbound\_cross\_cluster\_search\_connection
 
 Allows the destination domain owner to delete an existing inbound cross-cluster
 search connection.
 
-Type annotations for
-`boto3.client("es").delete_inbound_cross_cluster_search_connection` method.
+Type annotations and code completion for `#!python boto3.client("es").delete_inbound_cross_cluster_search_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
 
-Boto3 documentation:
-[ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_inbound_cross_cluster_search_connection)
+```python title="Method definition"
+def delete_inbound_cross_cluster_search_connection(
+    self,
+    *,
+    CrossClusterSearchConnectionId: str,
+) -> DeleteInboundCrossClusterSearchConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrossClusterSearchConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInboundCrossClusterSearchConnectionRequestRequestTypeDef = {  # (1)
+    "CrossClusterSearchConnectionId": ...,
+}
 
-Returns
-[DeleteInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponsetypedef).
+parent.delete_inbound_cross_cluster_search_connection(**kwargs)
+```
 
-<a id="delete\_outbound\_cross\_cluster\_search\_connection"></a>
+1. See [:material-code-braces: DeleteInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionrequestrequesttypedef) 
 
-### delete_outbound_cross_cluster_search_connection
+### delete\_outbound\_cross\_cluster\_search\_connection
 
 Allows the source domain owner to delete an existing outbound cross-cluster
 search connection.
 
-Type annotations for
-`boto3.client("es").delete_outbound_cross_cluster_search_connection` method.
+Type annotations and code completion for `#!python boto3.client("es").delete_outbound_cross_cluster_search_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
 
-Boto3 documentation:
-[ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_outbound_cross_cluster_search_connection)
+```python title="Method definition"
+def delete_outbound_cross_cluster_search_connection(
+    self,
+    *,
+    CrossClusterSearchConnectionId: str,
+) -> DeleteOutboundCrossClusterSearchConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteOutboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrossClusterSearchConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteOutboundCrossClusterSearchConnectionRequestRequestTypeDef = {  # (1)
+    "CrossClusterSearchConnectionId": ...,
+}
 
-Returns
-[DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponsetypedef).
+parent.delete_outbound_cross_cluster_search_connection(**kwargs)
+```
 
-<a id="delete\_package"></a>
+1. See [:material-code-braces: DeleteOutboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionrequestrequesttypedef) 
 
-### delete_package
+### delete\_package
 
 Delete the package.
 
-Type annotations for `boto3.client("es").delete_package` method.
+Type annotations and code completion for `#!python boto3.client("es").delete_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.delete_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_package)
+```python title="Method definition"
+def delete_package(
+    self,
+    *,
+    PackageID: str,
+) -> DeletePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef).
+1. See [:material-code-braces: DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
+parent.delete_package(**kwargs)
+```
 
-<a id="describe\_domain\_auto\_tunes"></a>
+1. See [:material-code-braces: DeletePackageRequestRequestTypeDef](./type_defs.md#deletepackagerequestrequesttypedef) 
 
-### describe_domain_auto_tunes
+### describe\_domain\_auto\_tunes
 
 Provides scheduled Auto-Tune action details for the Elasticsearch domain, such
 as Auto-Tune action type, description, severity, and scheduled date.
 
-Type annotations for `boto3.client("es").describe_domain_auto_tunes` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_domain_auto_tunes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_domain_auto_tunes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_auto_tunes)
+```python title="Method definition"
+def describe_domain_auto_tunes(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeDomainAutoTunesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainAutoTunesRequestRequestTypeDef](./type_defs.md#describedomainautotunesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainAutoTunesRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
+parent.describe_domain_auto_tunes(**kwargs)
+```
 
-<a id="describe\_domain\_change\_progress"></a>
+1. See [:material-code-braces: DescribeDomainAutoTunesRequestRequestTypeDef](./type_defs.md#describedomainautotunesrequestrequesttypedef) 
 
-### describe_domain_change_progress
+### describe\_domain\_change\_progress
 
 Returns information about the current blue/green deployment happening on a
 domain, including a change ID, status, and progress stages.
 
-Type annotations for `boto3.client("es").describe_domain_change_progress`
-method.
+Type annotations and code completion for `#!python boto3.client("es").describe_domain_change_progress` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_change_progress)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_domain_change_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_change_progress)
+```python title="Method definition"
+def describe_domain_change_progress(
+    self,
+    *,
+    DomainName: str,
+    ChangeId: str = ...,
+) -> DescribeDomainChangeProgressResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ChangeId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainChangeProgressRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
+parent.describe_domain_change_progress(**kwargs)
+```
 
-<a id="describe\_elasticsearch\_domain"></a>
+1. See [:material-code-braces: DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef) 
 
-### describe_elasticsearch_domain
+### describe\_elasticsearch\_domain
 
 Returns domain configuration information about the specified Elasticsearch
 domain, including the domain ID, domain endpoint, and domain ARN.
 
-Type annotations for `boto3.client("es").describe_elasticsearch_domain` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_elasticsearch_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain)
+```python title="Method definition"
+def describe_elasticsearch_domain(
+    self,
+    *,
+    DomainName: str,
+) -> DescribeElasticsearchDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeElasticsearchDomainRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainrequestrequesttypedef).
+1. See [:material-code-braces: DescribeElasticsearchDomainResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeElasticsearchDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeElasticsearchDomainResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponsetypedef).
+parent.describe_elasticsearch_domain(**kwargs)
+```
 
-<a id="describe\_elasticsearch\_domain\_config"></a>
+1. See [:material-code-braces: DescribeElasticsearchDomainRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainrequestrequesttypedef) 
 
-### describe_elasticsearch_domain_config
+### describe\_elasticsearch\_domain\_config
 
 Provides cluster configuration information about the specified Elasticsearch
 domain, such as the state, creation date, update version, and update date for
 cluster options.
 
-Type annotations for `boto3.client("es").describe_elasticsearch_domain_config`
-method.
+Type annotations and code completion for `#!python boto3.client("es").describe_elasticsearch_domain_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domain_config)
+```python title="Method definition"
+def describe_elasticsearch_domain_config(
+    self,
+    *,
+    DomainName: str,
+) -> DescribeElasticsearchDomainConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeElasticsearchDomainConfigRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainconfigrequestrequesttypedef).
+1. See [:material-code-braces: DescribeElasticsearchDomainConfigResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeElasticsearchDomainConfigRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[DescribeElasticsearchDomainConfigResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponsetypedef).
+parent.describe_elasticsearch_domain_config(**kwargs)
+```
 
-<a id="describe\_elasticsearch\_domains"></a>
+1. See [:material-code-braces: DescribeElasticsearchDomainConfigRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainconfigrequestrequesttypedef) 
 
-### describe_elasticsearch_domains
+### describe\_elasticsearch\_domains
 
 Returns domain configuration information about the specified Elasticsearch
 domains, including the domain ID, domain endpoint, and domain ARN.
 
-Type annotations for `boto3.client("es").describe_elasticsearch_domains`
-method.
+Type annotations and code completion for `#!python boto3.client("es").describe_elasticsearch_domains` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_domains)
+```python title="Method definition"
+def describe_elasticsearch_domains(
+    self,
+    *,
+    DomainNames: Sequence[str],
+) -> DescribeElasticsearchDomainsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeElasticsearchDomainsRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeElasticsearchDomainsRequestRequestTypeDef = {  # (1)
+    "DomainNames": ...,
+}
 
-Returns
-[DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef).
+parent.describe_elasticsearch_domains(**kwargs)
+```
 
-<a id="describe\_elasticsearch\_instance\_type\_limits"></a>
+1. See [:material-code-braces: DescribeElasticsearchDomainsRequestRequestTypeDef](./type_defs.md#describeelasticsearchdomainsrequestrequesttypedef) 
 
-### describe_elasticsearch_instance_type_limits
+### describe\_elasticsearch\_instance\_type\_limits
 
-Describe Elasticsearch Limits for a given InstanceType and
-ElasticsearchVersion.
+Describe Elasticsearch Limits for a given InstanceType and ElasticsearchVersion.
 
-Type annotations for
-`boto3.client("es").describe_elasticsearch_instance_type_limits` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_elasticsearch_instance_type_limits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_elasticsearch_instance_type_limits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_elasticsearch_instance_type_limits)
+```python title="Method definition"
+def describe_elasticsearch_instance_type_limits(
+    self,
+    *,
+    InstanceType: ESPartitionInstanceTypeType,  # (1)
+    ElasticsearchVersion: str,
+    DomainName: str = ...,
+) -> DescribeElasticsearchInstanceTypeLimitsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeElasticsearchInstanceTypeLimitsRequestRequestTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsrequestrequesttypedef).
+1. See [:material-code-brackets: ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype) 
+2. See [:material-code-braces: DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InstanceType`:
-  [ESPartitionInstanceTypeType](./literals.md#espartitioninstancetypetype)
-  *(required)*
-- `ElasticsearchVersion`: `str` *(required)*
-- `DomainName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeElasticsearchInstanceTypeLimitsRequestRequestTypeDef = {  # (1)
+    "InstanceType": ...,
+    "ElasticsearchVersion": ...,
+}
 
-Returns
-[DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponsetypedef).
+parent.describe_elasticsearch_instance_type_limits(**kwargs)
+```
 
-<a id="describe\_inbound\_cross\_cluster\_search\_connections"></a>
+1. See [:material-code-braces: DescribeElasticsearchInstanceTypeLimitsRequestRequestTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsrequestrequesttypedef) 
 
-### describe_inbound_cross_cluster_search_connections
+### describe\_inbound\_cross\_cluster\_search\_connections
 
-Lists all the inbound cross-cluster search connections for a destination
-domain.
+Lists all the inbound cross-cluster search connections for a destination domain.
 
-Type annotations for
-`boto3.client("es").describe_inbound_cross_cluster_search_connections` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_inbound_cross_cluster_search_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_inbound_cross_cluster_search_connections)
+```python title="Method definition"
+def describe_inbound_cross_cluster_search_connections(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeInboundCrossClusterSearchConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInboundCrossClusterSearchConnectionsRequestRequestTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInboundCrossClusterSearchConnectionsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponsetypedef).
+parent.describe_inbound_cross_cluster_search_connections(**kwargs)
+```
 
-<a id="describe\_outbound\_cross\_cluster\_search\_connections"></a>
+1. See [:material-code-braces: DescribeInboundCrossClusterSearchConnectionsRequestRequestTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsrequestrequesttypedef) 
 
-### describe_outbound_cross_cluster_search_connections
+### describe\_outbound\_cross\_cluster\_search\_connections
 
 Lists all the outbound cross-cluster search connections for a source domain.
 
-Type annotations for
-`boto3.client("es").describe_outbound_cross_cluster_search_connections` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_outbound_cross_cluster_search_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_outbound_cross_cluster_search_connections)
+```python title="Method definition"
+def describe_outbound_cross_cluster_search_connections(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOutboundCrossClusterSearchConnectionsRequestRequestTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeOutboundCrossClusterSearchConnectionsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponsetypedef).
+parent.describe_outbound_cross_cluster_search_connections(**kwargs)
+```
 
-<a id="describe\_packages"></a>
+1. See [:material-code-braces: DescribeOutboundCrossClusterSearchConnectionsRequestRequestTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsrequestrequesttypedef) 
 
-### describe_packages
+### describe\_packages
 
 Describes all packages available to Amazon ES.
 
-Type annotations for `boto3.client("es").describe_packages` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_packages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_packages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_packages)
+```python title="Method definition"
+def describe_packages(
+    self,
+    *,
+    Filters: Sequence[DescribePackagesFilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribePackagesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribePackagesRequestRequestTypeDef](./type_defs.md#describepackagesrequestrequesttypedef).
+1. See [:material-code-braces: DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef) 
+2. See [:material-code-braces: DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[DescribePackagesFilterTypeDef](./type_defs.md#describepackagesfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePackagesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
+parent.describe_packages(**kwargs)
+```
 
-<a id="describe\_reserved\_elasticsearch\_instance\_offerings"></a>
+1. See [:material-code-braces: DescribePackagesRequestRequestTypeDef](./type_defs.md#describepackagesrequestrequesttypedef) 
 
-### describe_reserved_elasticsearch_instance_offerings
+### describe\_reserved\_elasticsearch\_instance\_offerings
 
 Lists available reserved Elasticsearch instance offerings.
 
-Type annotations for
-`boto3.client("es").describe_reserved_elasticsearch_instance_offerings` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_reserved_elasticsearch_instance_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instance_offerings)
+```python title="Method definition"
+def describe_reserved_elasticsearch_instance_offerings(
+    self,
+    *,
+    ReservedElasticsearchInstanceOfferingId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedElasticsearchInstanceOfferingsRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedElasticsearchInstanceOfferingId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedElasticsearchInstanceOfferingsRequestRequestTypeDef = {  # (1)
+    "ReservedElasticsearchInstanceOfferingId": ...,
+}
 
-Returns
-[DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef).
+parent.describe_reserved_elasticsearch_instance_offerings(**kwargs)
+```
 
-<a id="describe\_reserved\_elasticsearch\_instances"></a>
+1. See [:material-code-braces: DescribeReservedElasticsearchInstanceOfferingsRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsrequestrequesttypedef) 
 
-### describe_reserved_elasticsearch_instances
+### describe\_reserved\_elasticsearch\_instances
 
 Returns information about reserved Elasticsearch instances for this account.
 
-Type annotations for
-`boto3.client("es").describe_reserved_elasticsearch_instances` method.
+Type annotations and code completion for `#!python boto3.client("es").describe_reserved_elasticsearch_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
 
-Boto3 documentation:
-[ElasticsearchService.Client.describe_reserved_elasticsearch_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_reserved_elasticsearch_instances)
+```python title="Method definition"
+def describe_reserved_elasticsearch_instances(
+    self,
+    *,
+    ReservedElasticsearchInstanceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeReservedElasticsearchInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservedElasticsearchInstancesRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedElasticsearchInstanceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedElasticsearchInstancesRequestRequestTypeDef = {  # (1)
+    "ReservedElasticsearchInstanceId": ...,
+}
 
-Returns
-[DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef).
+parent.describe_reserved_elasticsearch_instances(**kwargs)
+```
 
-<a id="dissociate\_package"></a>
+1. See [:material-code-braces: DescribeReservedElasticsearchInstancesRequestRequestTypeDef](./type_defs.md#describereservedelasticsearchinstancesrequestrequesttypedef) 
 
-### dissociate_package
+### dissociate\_package
 
 Dissociates a package from the Amazon ES domain.
 
-Type annotations for `boto3.client("es").dissociate_package` method.
+Type annotations and code completion for `#!python boto3.client("es").dissociate_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.dissociate_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.dissociate_package)
+```python title="Method definition"
+def dissociate_package(
+    self,
+    *,
+    PackageID: str,
+    DomainName: str,
+) -> DissociatePackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DissociatePackageRequestRequestTypeDef](./type_defs.md#dissociatepackagerequestrequesttypedef).
+1. See [:material-code-braces: DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DissociatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "DomainName": ...,
+}
 
-Returns
-[DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
+parent.dissociate_package(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DissociatePackageRequestRequestTypeDef](./type_defs.md#dissociatepackagerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("es").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("es").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticsearchService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_compatible\_elasticsearch\_versions"></a>
-
-### get_compatible_elasticsearch_versions
+### get\_compatible\_elasticsearch\_versions
 
 Returns a list of upgrade compatible Elastisearch versions.
 
-Type annotations for `boto3.client("es").get_compatible_elasticsearch_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("es").get_compatible_elasticsearch_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
 
-Boto3 documentation:
-[ElasticsearchService.Client.get_compatible_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_compatible_elasticsearch_versions)
+```python title="Method definition"
+def get_compatible_elasticsearch_versions(
+    self,
+    *,
+    DomainName: str = ...,
+) -> GetCompatibleElasticsearchVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCompatibleElasticsearchVersionsRequestRequestTypeDef](./type_defs.md#getcompatibleelasticsearchversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCompatibleElasticsearchVersionsRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef).
+parent.get_compatible_elasticsearch_versions(**kwargs)
+```
 
-<a id="get\_package\_version\_history"></a>
+1. See [:material-code-braces: GetCompatibleElasticsearchVersionsRequestRequestTypeDef](./type_defs.md#getcompatibleelasticsearchversionsrequestrequesttypedef) 
 
-### get_package_version_history
+### get\_package\_version\_history
 
 Returns a list of versions of the package, along with their creation time and
 commit message.
 
-Type annotations for `boto3.client("es").get_package_version_history` method.
+Type annotations and code completion for `#!python boto3.client("es").get_package_version_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
 
-Boto3 documentation:
-[ElasticsearchService.Client.get_package_version_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_package_version_history)
+```python title="Method definition"
+def get_package_version_history(
+    self,
+    *,
+    PackageID: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetPackageVersionHistoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPackageVersionHistoryRequestRequestTypeDef](./type_defs.md#getpackageversionhistoryrequestrequesttypedef).
+1. See [:material-code-braces: GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPackageVersionHistoryRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
+parent.get_package_version_history(**kwargs)
+```
 
-<a id="get\_upgrade\_history"></a>
+1. See [:material-code-braces: GetPackageVersionHistoryRequestRequestTypeDef](./type_defs.md#getpackageversionhistoryrequestrequesttypedef) 
 
-### get_upgrade_history
+### get\_upgrade\_history
 
 Retrieves the complete history of the last 10 upgrades that were performed on
 the domain.
 
-Type annotations for `boto3.client("es").get_upgrade_history` method.
+Type annotations and code completion for `#!python boto3.client("es").get_upgrade_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
 
-Boto3 documentation:
-[ElasticsearchService.Client.get_upgrade_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_history)
+```python title="Method definition"
+def get_upgrade_history(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetUpgradeHistoryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUpgradeHistoryRequestRequestTypeDef](./type_defs.md#getupgradehistoryrequestrequesttypedef).
+1. See [:material-code-braces: GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUpgradeHistoryRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
+parent.get_upgrade_history(**kwargs)
+```
 
-<a id="get\_upgrade\_status"></a>
+1. See [:material-code-braces: GetUpgradeHistoryRequestRequestTypeDef](./type_defs.md#getupgradehistoryrequestrequesttypedef) 
 
-### get_upgrade_status
+### get\_upgrade\_status
 
 Retrieves the latest status of the last upgrade or upgrade eligibility check
 that was performed on the domain.
 
-Type annotations for `boto3.client("es").get_upgrade_status` method.
+Type annotations and code completion for `#!python boto3.client("es").get_upgrade_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
 
-Boto3 documentation:
-[ElasticsearchService.Client.get_upgrade_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.get_upgrade_status)
+```python title="Method definition"
+def get_upgrade_status(
+    self,
+    *,
+    DomainName: str,
+) -> GetUpgradeStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUpgradeStatusRequestRequestTypeDef](./type_defs.md#getupgradestatusrequestrequesttypedef).
+1. See [:material-code-braces: GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUpgradeStatusRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
+parent.get_upgrade_status(**kwargs)
+```
 
-<a id="list\_domain\_names"></a>
+1. See [:material-code-braces: GetUpgradeStatusRequestRequestTypeDef](./type_defs.md#getupgradestatusrequestrequesttypedef) 
 
-### list_domain_names
+### list\_domain\_names
 
 Returns the name of all Elasticsearch domains owned by the current user's
 account.
 
-Type annotations for `boto3.client("es").list_domain_names` method.
+Type annotations and code completion for `#!python boto3.client("es").list_domain_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domain_names)
+```python title="Method definition"
+def list_domain_names(
+    self,
+    *,
+    EngineType: EngineTypeType = ...,  # (1)
+) -> ListDomainNamesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef).
+1. See [:material-code-brackets: EngineTypeType](./literals.md#enginetypetype) 
+2. See [:material-code-braces: ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineType`: [EngineTypeType](./literals.md#enginetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListDomainNamesRequestRequestTypeDef = {  # (1)
+    "EngineType": ...,
+}
 
-Returns
-[ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+parent.list_domain_names(**kwargs)
+```
 
-<a id="list\_domains\_for\_package"></a>
+1. See [:material-code-braces: ListDomainNamesRequestRequestTypeDef](./type_defs.md#listdomainnamesrequestrequesttypedef) 
 
-### list_domains_for_package
+### list\_domains\_for\_package
 
 Lists all Amazon ES domains associated with the package.
 
-Type annotations for `boto3.client("es").list_domains_for_package` method.
+Type annotations and code completion for `#!python boto3.client("es").list_domains_for_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_domains_for_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_domains_for_package)
+```python title="Method definition"
+def list_domains_for_package(
+    self,
+    *,
+    PackageID: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDomainsForPackageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef).
+1. See [:material-code-braces: ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDomainsForPackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+}
 
-Returns
-[ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
+parent.list_domains_for_package(**kwargs)
+```
 
-<a id="list\_elasticsearch\_instance\_types"></a>
+1. See [:material-code-braces: ListDomainsForPackageRequestRequestTypeDef](./type_defs.md#listdomainsforpackagerequestrequesttypedef) 
 
-### list_elasticsearch_instance_types
+### list\_elasticsearch\_instance\_types
 
 List all Elasticsearch instance types that are supported for given
-ElasticsearchVersion See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchInstanceTypes).
+ElasticsearchVersion See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchInstanceTypes).
 
-Type annotations for `boto3.client("es").list_elasticsearch_instance_types`
-method.
+Type annotations and code completion for `#!python boto3.client("es").list_elasticsearch_instance_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_elasticsearch_instance_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_instance_types)
+```python title="Method definition"
+def list_elasticsearch_instance_types(
+    self,
+    *,
+    ElasticsearchVersion: str,
+    DomainName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListElasticsearchInstanceTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListElasticsearchInstanceTypesRequestRequestTypeDef](./type_defs.md#listelasticsearchinstancetypesrequestrequesttypedef).
+1. See [:material-code-braces: ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ElasticsearchVersion`: `str` *(required)*
-- `DomainName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListElasticsearchInstanceTypesRequestRequestTypeDef = {  # (1)
+    "ElasticsearchVersion": ...,
+}
 
-Returns
-[ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef).
+parent.list_elasticsearch_instance_types(**kwargs)
+```
 
-<a id="list\_elasticsearch\_versions"></a>
+1. See [:material-code-braces: ListElasticsearchInstanceTypesRequestRequestTypeDef](./type_defs.md#listelasticsearchinstancetypesrequestrequesttypedef) 
 
-### list_elasticsearch_versions
+### list\_elasticsearch\_versions
 
-List all supported Elasticsearch versions See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchVersions).
+List all supported Elasticsearch versions See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/es-2015-01-01/ListElasticsearchVersions).
 
-Type annotations for `boto3.client("es").list_elasticsearch_versions` method.
+Type annotations and code completion for `#!python boto3.client("es").list_elasticsearch_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_elasticsearch_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_elasticsearch_versions)
+```python title="Method definition"
+def list_elasticsearch_versions(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListElasticsearchVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListElasticsearchVersionsRequestRequestTypeDef](./type_defs.md#listelasticsearchversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListElasticsearchVersionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef).
+parent.list_elasticsearch_versions(**kwargs)
+```
 
-<a id="list\_packages\_for\_domain"></a>
+1. See [:material-code-braces: ListElasticsearchVersionsRequestRequestTypeDef](./type_defs.md#listelasticsearchversionsrequestrequesttypedef) 
 
-### list_packages_for_domain
+### list\_packages\_for\_domain
 
 Lists all packages associated with the Amazon ES domain.
 
-Type annotations for `boto3.client("es").list_packages_for_domain` method.
+Type annotations and code completion for `#!python boto3.client("es").list_packages_for_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_packages_for_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_packages_for_domain)
+```python title="Method definition"
+def list_packages_for_domain(
+    self,
+    *,
+    DomainName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPackagesForDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef).
+1. See [:material-code-braces: ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPackagesForDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
+parent.list_packages_for_domain(**kwargs)
+```
 
-<a id="list\_tags"></a>
+1. See [:material-code-braces: ListPackagesForDomainRequestRequestTypeDef](./type_defs.md#listpackagesfordomainrequestrequesttypedef) 
 
-### list_tags
+### list\_tags
 
 Returns all tags for the given Elasticsearch domain.
 
-Type annotations for `boto3.client("es").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("es").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags)
 
-Boto3 documentation:
-[ElasticsearchService.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ARN: str,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="purchase\_reserved\_elasticsearch\_instance\_offering"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### purchase_reserved_elasticsearch_instance_offering
+### purchase\_reserved\_elasticsearch\_instance\_offering
 
 Allows you to purchase reserved Elasticsearch instances.
 
-Type annotations for
-`boto3.client("es").purchase_reserved_elasticsearch_instance_offering` method.
+Type annotations and code completion for `#!python boto3.client("es").purchase_reserved_elasticsearch_instance_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
 
-Boto3 documentation:
-[ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.purchase_reserved_elasticsearch_instance_offering)
+```python title="Method definition"
+def purchase_reserved_elasticsearch_instance_offering(
+    self,
+    *,
+    ReservedElasticsearchInstanceOfferingId: str,
+    ReservationName: str,
+    InstanceCount: int = ...,
+) -> PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseReservedElasticsearchInstanceOfferingRequestRequestTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingrequestrequesttypedef).
+1. See [:material-code-braces: PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservedElasticsearchInstanceOfferingId`: `str` *(required)*
-- `ReservationName`: `str` *(required)*
-- `InstanceCount`: `int`
+```python title="Usage example with kwargs"
+kwargs: PurchaseReservedElasticsearchInstanceOfferingRequestRequestTypeDef = {  # (1)
+    "ReservedElasticsearchInstanceOfferingId": ...,
+    "ReservationName": ...,
+}
 
-Returns
-[PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponsetypedef).
+parent.purchase_reserved_elasticsearch_instance_offering(**kwargs)
+```
 
-<a id="reject\_inbound\_cross\_cluster\_search\_connection"></a>
+1. See [:material-code-braces: PurchaseReservedElasticsearchInstanceOfferingRequestRequestTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingrequestrequesttypedef) 
 
-### reject_inbound_cross_cluster_search_connection
+### reject\_inbound\_cross\_cluster\_search\_connection
 
 Allows the destination domain owner to reject an inbound cross-cluster search
 connection request.
 
-Type annotations for
-`boto3.client("es").reject_inbound_cross_cluster_search_connection` method.
+Type annotations and code completion for `#!python boto3.client("es").reject_inbound_cross_cluster_search_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
 
-Boto3 documentation:
-[ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.reject_inbound_cross_cluster_search_connection)
+```python title="Method definition"
+def reject_inbound_cross_cluster_search_connection(
+    self,
+    *,
+    CrossClusterSearchConnectionId: str,
+) -> RejectInboundCrossClusterSearchConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionrequestrequesttypedef).
+1. See [:material-code-braces: RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CrossClusterSearchConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectInboundCrossClusterSearchConnectionRequestRequestTypeDef = {  # (1)
+    "CrossClusterSearchConnectionId": ...,
+}
 
-Returns
-[RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef).
+parent.reject_inbound_cross_cluster_search_connection(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: RejectInboundCrossClusterSearchConnectionRequestRequestTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionrequestrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes the specified set of tags from the specified Elasticsearch domain.
 
-Type annotations for `boto3.client("es").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("es").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags)
 
-Boto3 documentation:
-[ElasticsearchService.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    ARN: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsRequestRequestTypeDef = {  # (1)
+    "ARN": ...,
+    "TagKeys": ...,
+}
 
-<a id="start\_elasticsearch\_service\_software\_update"></a>
+parent.remove_tags(**kwargs)
+```
 
-### start_elasticsearch_service_software_update
+1. See [:material-code-braces: RemoveTagsRequestRequestTypeDef](./type_defs.md#removetagsrequestrequesttypedef) 
+
+### start\_elasticsearch\_service\_software\_update
 
 Schedules a service software update for an Amazon ES domain.
 
-Type annotations for
-`boto3.client("es").start_elasticsearch_service_software_update` method.
+Type annotations and code completion for `#!python boto3.client("es").start_elasticsearch_service_software_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
 
-Boto3 documentation:
-[ElasticsearchService.Client.start_elasticsearch_service_software_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.start_elasticsearch_service_software_update)
+```python title="Method definition"
+def start_elasticsearch_service_software_update(
+    self,
+    *,
+    DomainName: str,
+) -> StartElasticsearchServiceSoftwareUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartElasticsearchServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdaterequestrequesttypedef).
+1. See [:material-code-braces: StartElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartElasticsearchServiceSoftwareUpdateRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[StartElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponsetypedef).
+parent.start_elasticsearch_service_software_update(**kwargs)
+```
 
-<a id="update\_elasticsearch\_domain\_config"></a>
+1. See [:material-code-braces: StartElasticsearchServiceSoftwareUpdateRequestRequestTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdaterequestrequesttypedef) 
 
-### update_elasticsearch_domain_config
+### update\_elasticsearch\_domain\_config
 
 Modifies the cluster configuration of the specified Elasticsearch domain,
 setting as setting the instance type and the number of instances.
 
-Type annotations for `boto3.client("es").update_elasticsearch_domain_config`
-method.
+Type annotations and code completion for `#!python boto3.client("es").update_elasticsearch_domain_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
 
-Boto3 documentation:
-[ElasticsearchService.Client.update_elasticsearch_domain_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_elasticsearch_domain_config)
+```python title="Method definition"
+def update_elasticsearch_domain_config(
+    self,
+    *,
+    DomainName: str,
+    ElasticsearchClusterConfig: ElasticsearchClusterConfigTypeDef = ...,  # (1)
+    EBSOptions: EBSOptionsTypeDef = ...,  # (2)
+    SnapshotOptions: SnapshotOptionsTypeDef = ...,  # (3)
+    VPCOptions: VPCOptionsTypeDef = ...,  # (4)
+    CognitoOptions: CognitoOptionsTypeDef = ...,  # (5)
+    AdvancedOptions: Mapping[str, str] = ...,
+    AccessPolicies: str = ...,
+    LogPublishingOptions: Mapping[LogTypeType, LogPublishingOptionTypeDef] = ...,  # (6)
+    DomainEndpointOptions: DomainEndpointOptionsTypeDef = ...,  # (7)
+    AdvancedSecurityOptions: AdvancedSecurityOptionsInputTypeDef = ...,  # (8)
+    NodeToNodeEncryptionOptions: NodeToNodeEncryptionOptionsTypeDef = ...,  # (9)
+    EncryptionAtRestOptions: EncryptionAtRestOptionsTypeDef = ...,  # (10)
+    AutoTuneOptions: AutoTuneOptionsTypeDef = ...,  # (11)
+    DryRun: bool = ...,
+) -> UpdateElasticsearchDomainConfigResponseTypeDef:  # (12)
+    ...
+```
 
-Arguments mapping described in
-[UpdateElasticsearchDomainConfigRequestRequestTypeDef](./type_defs.md#updateelasticsearchdomainconfigrequestrequesttypedef).
+1. See [:material-code-braces: ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef) 
+2. See [:material-code-braces: EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef) 
+3. See [:material-code-braces: SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef) 
+4. See [:material-code-braces: VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+5. See [:material-code-braces: CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef) 
+6. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) [:material-code-braces: LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef) 
+7. See [:material-code-braces: DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef) 
+8. See [:material-code-braces: AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef) 
+9. See [:material-code-braces: NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef) 
+10. See [:material-code-braces: EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef) 
+11. See [:material-code-braces: AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef) 
+12. See [:material-code-braces: UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `ElasticsearchClusterConfig`:
-  [ElasticsearchClusterConfigTypeDef](./type_defs.md#elasticsearchclusterconfigtypedef)
-- `EBSOptions`: [EBSOptionsTypeDef](./type_defs.md#ebsoptionstypedef)
-- `SnapshotOptions`:
-  [SnapshotOptionsTypeDef](./type_defs.md#snapshotoptionstypedef)
-- `VPCOptions`: [VPCOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
-- `CognitoOptions`:
-  [CognitoOptionsTypeDef](./type_defs.md#cognitooptionstypedef)
-- `AdvancedOptions`: `Mapping`\[`str`, `str`\]
-- `AccessPolicies`: `str`
-- `LogPublishingOptions`: `Mapping`\[[LogTypeType](./literals.md#logtypetype),
-  [LogPublishingOptionTypeDef](./type_defs.md#logpublishingoptiontypedef)\]
-- `DomainEndpointOptions`:
-  [DomainEndpointOptionsTypeDef](./type_defs.md#domainendpointoptionstypedef)
-- `AdvancedSecurityOptions`:
-  [AdvancedSecurityOptionsInputTypeDef](./type_defs.md#advancedsecurityoptionsinputtypedef)
-- `NodeToNodeEncryptionOptions`:
-  [NodeToNodeEncryptionOptionsTypeDef](./type_defs.md#nodetonodeencryptionoptionstypedef)
-- `EncryptionAtRestOptions`:
-  [EncryptionAtRestOptionsTypeDef](./type_defs.md#encryptionatrestoptionstypedef)
-- `AutoTuneOptions`:
-  [AutoTuneOptionsTypeDef](./type_defs.md#autotuneoptionstypedef)
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateElasticsearchDomainConfigRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+}
 
-Returns
-[UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef).
+parent.update_elasticsearch_domain_config(**kwargs)
+```
 
-<a id="update\_package"></a>
+1. See [:material-code-braces: UpdateElasticsearchDomainConfigRequestRequestTypeDef](./type_defs.md#updateelasticsearchdomainconfigrequestrequesttypedef) 
 
-### update_package
+### update\_package
 
 Updates a package for use with Amazon ES domains.
 
-Type annotations for `boto3.client("es").update_package` method.
+Type annotations and code completion for `#!python boto3.client("es").update_package` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package)
 
-Boto3 documentation:
-[ElasticsearchService.Client.update_package](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.update_package)
+```python title="Method definition"
+def update_package(
+    self,
+    *,
+    PackageID: str,
+    PackageSource: PackageSourceTypeDef,  # (1)
+    PackageDescription: str = ...,
+    CommitMessage: str = ...,
+) -> UpdatePackageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef).
+1. See [:material-code-braces: PackageSourceTypeDef](./type_defs.md#packagesourcetypedef) 
+2. See [:material-code-braces: UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PackageID`: `str` *(required)*
-- `PackageSource`: [PackageSourceTypeDef](./type_defs.md#packagesourcetypedef)
-  *(required)*
-- `PackageDescription`: `str`
-- `CommitMessage`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePackageRequestRequestTypeDef = {  # (1)
+    "PackageID": ...,
+    "PackageSource": ...,
+}
 
-Returns
-[UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
+parent.update_package(**kwargs)
+```
 
-<a id="upgrade\_elasticsearch\_domain"></a>
+1. See [:material-code-braces: UpdatePackageRequestRequestTypeDef](./type_defs.md#updatepackagerequestrequesttypedef) 
 
-### upgrade_elasticsearch_domain
+### upgrade\_elasticsearch\_domain
 
-Allows you to either upgrade your domain or perform an Upgrade eligibility
-check to a compatible Elasticsearch version.
+Allows you to either upgrade your domain or perform an Upgrade eligibility check
+to a compatible Elasticsearch version.
 
-Type annotations for `boto3.client("es").upgrade_elasticsearch_domain` method.
+Type annotations and code completion for `#!python boto3.client("es").upgrade_elasticsearch_domain` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
 
-Boto3 documentation:
-[ElasticsearchService.Client.upgrade_elasticsearch_domain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.upgrade_elasticsearch_domain)
+```python title="Method definition"
+def upgrade_elasticsearch_domain(
+    self,
+    *,
+    DomainName: str,
+    TargetVersion: str,
+    PerformCheckOnly: bool = ...,
+) -> UpgradeElasticsearchDomainResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpgradeElasticsearchDomainRequestRequestTypeDef](./type_defs.md#upgradeelasticsearchdomainrequestrequesttypedef).
+1. See [:material-code-braces: UpgradeElasticsearchDomainResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DomainName`: `str` *(required)*
-- `TargetVersion`: `str` *(required)*
-- `PerformCheckOnly`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpgradeElasticsearchDomainRequestRequestTypeDef = {  # (1)
+    "DomainName": ...,
+    "TargetVersion": ...,
+}
 
-Returns
-[UpgradeElasticsearchDomainResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponsetypedef).
+parent.upgrade_elasticsearch_domain(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpgradeElasticsearchDomainRequestRequestTypeDef](./type_defs.md#upgradeelasticsearchdomainrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("es").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("es").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_reserved_elasticsearch_instance_offerings")`
-  ->
-  [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
-- `client.get_paginator("describe_reserved_elasticsearch_instances")` ->
-  [DescribeReservedElasticsearchInstancesPaginator](./paginators.md#describereservedelasticsearchinstancespaginator)
-- `client.get_paginator("get_upgrade_history")` ->
-  [GetUpgradeHistoryPaginator](./paginators.md#getupgradehistorypaginator)
-- `client.get_paginator("list_elasticsearch_instance_types")` ->
-  [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
-- `client.get_paginator("list_elasticsearch_versions")` ->
-  [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
+- `client.get_paginator("describe_reserved_elasticsearch_instance_offerings")` -> [DescribeReservedElasticsearchInstanceOfferingsPaginator](./paginators.md#describereservedelasticsearchinstanceofferingspaginator)
+- `client.get_paginator("describe_reserved_elasticsearch_instances")` -> [DescribeReservedElasticsearchInstancesPaginator](./paginators.md#describereservedelasticsearchinstancespaginator)
+- `client.get_paginator("get_upgrade_history")` -> [GetUpgradeHistoryPaginator](./paginators.md#getupgradehistorypaginator)
+- `client.get_paginator("list_elasticsearch_instance_types")` -> [ListElasticsearchInstanceTypesPaginator](./paginators.md#listelasticsearchinstancetypespaginator)
+- `client.get_paginator("list_elasticsearch_versions")` -> [ListElasticsearchVersionsPaginator](./paginators.md#listelasticsearchversionspaginator)
+
+
+

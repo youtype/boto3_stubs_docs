@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-appstream-module"></a>
-
-# Type annotations for boto3 AppStream module
+#  AppStream module
 
 > [Index](../README.md) > AppStream
 
-Auto-generated documentation for
-[AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
-type annotations stubs module
-[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
+!!! note ""
 
-- [Type annotations for boto3 AppStream module](#type-annotations-for-boto3-appstream-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AppStreamClient](#appstreamclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
+    type annotations stubs module [mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `AppStream`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[appstream]'
 python -m pip install mypy-boto3-appstream
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,133 +42,37 @@ python -m pip install mypy-boto3-appstream
 python -m pip uninstall -y mypy-boto3-appstream
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="appstreamclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AppStreamClient
 
-Type annotations for `boto3.client("appstream")` as
-[AppStreamClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("appstream")` as [AppStreamClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_appstream.client import AppStreamClient
+
+def get_client() -> AppStreamClient:
+    return Session().cleint("appstream")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_application_fleet](./client.md#associate_application_fleet)
-- [associate_application_to_entitlement](./client.md#associate_application_to_entitlement)
-- [associate_fleet](./client.md#associate_fleet)
-- [batch_associate_user_stack](./client.md#batch_associate_user_stack)
-- [batch_disassociate_user_stack](./client.md#batch_disassociate_user_stack)
-- [can_paginate](./client.md#can_paginate)
-- [copy_image](./client.md#copy_image)
-- [create_app_block](./client.md#create_app_block)
-- [create_application](./client.md#create_application)
-- [create_directory_config](./client.md#create_directory_config)
-- [create_entitlement](./client.md#create_entitlement)
-- [create_fleet](./client.md#create_fleet)
-- [create_image_builder](./client.md#create_image_builder)
-- [create_image_builder_streaming_url](./client.md#create_image_builder_streaming_url)
-- [create_stack](./client.md#create_stack)
-- [create_streaming_url](./client.md#create_streaming_url)
-- [create_updated_image](./client.md#create_updated_image)
-- [create_usage_report_subscription](./client.md#create_usage_report_subscription)
-- [create_user](./client.md#create_user)
-- [delete_app_block](./client.md#delete_app_block)
-- [delete_application](./client.md#delete_application)
-- [delete_directory_config](./client.md#delete_directory_config)
-- [delete_entitlement](./client.md#delete_entitlement)
-- [delete_fleet](./client.md#delete_fleet)
-- [delete_image](./client.md#delete_image)
-- [delete_image_builder](./client.md#delete_image_builder)
-- [delete_image_permissions](./client.md#delete_image_permissions)
-- [delete_stack](./client.md#delete_stack)
-- [delete_usage_report_subscription](./client.md#delete_usage_report_subscription)
-- [delete_user](./client.md#delete_user)
-- [describe_app_blocks](./client.md#describe_app_blocks)
-- [describe_application_fleet_associations](./client.md#describe_application_fleet_associations)
-- [describe_applications](./client.md#describe_applications)
-- [describe_directory_configs](./client.md#describe_directory_configs)
-- [describe_entitlements](./client.md#describe_entitlements)
-- [describe_fleets](./client.md#describe_fleets)
-- [describe_image_builders](./client.md#describe_image_builders)
-- [describe_image_permissions](./client.md#describe_image_permissions)
-- [describe_images](./client.md#describe_images)
-- [describe_sessions](./client.md#describe_sessions)
-- [describe_stacks](./client.md#describe_stacks)
-- [describe_usage_report_subscriptions](./client.md#describe_usage_report_subscriptions)
-- [describe_user_stack_associations](./client.md#describe_user_stack_associations)
-- [describe_users](./client.md#describe_users)
-- [disable_user](./client.md#disable_user)
-- [disassociate_application_fleet](./client.md#disassociate_application_fleet)
-- [disassociate_application_from_entitlement](./client.md#disassociate_application_from_entitlement)
-- [disassociate_fleet](./client.md#disassociate_fleet)
-- [enable_user](./client.md#enable_user)
-- [exceptions](./client.md#exceptions)
-- [expire_session](./client.md#expire_session)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_associated_fleets](./client.md#list_associated_fleets)
-- [list_associated_stacks](./client.md#list_associated_stacks)
-- [list_entitled_applications](./client.md#list_entitled_applications)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [start_fleet](./client.md#start_fleet)
-- [start_image_builder](./client.md#start_image_builder)
-- [stop_fleet](./client.md#stop_fleet)
-- [stop_image_builder](./client.md#stop_image_builder)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_application](./client.md#update_application)
-- [update_directory_config](./client.md#update_directory_config)
-- [update_entitlement](./client.md#update_entitlement)
-- [update_fleet](./client.md#update_fleet)
-- [update_image_permissions](./client.md#update_image_permissions)
-- [update_stack](./client.md#update_stack)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AppStreamClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentModificationException
-- EntitlementAlreadyExistsException
-- EntitlementNotFoundException
-- IncompatibleImageException
-- InvalidAccountStatusException
-- InvalidParameterCombinationException
-- InvalidRoleException
-- LimitExceededException
-- OperationNotPermittedException
-- RequestLimitExceededException
-- ResourceAlreadyExistsException
-- ResourceInUseException
-- ResourceNotAvailableException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("appstream").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("appstream").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator, ...
+from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator
+
+def get_describe_directory_configs_paginator() -> DescribeDirectoryConfigsPaginator:
+    return Session().client("appstream").get_paginator("describe_directory_configs"))
 ```
 
 - [DescribeDirectoryConfigsPaginator](./paginators.md#describedirectoryconfigspaginator)
@@ -205,32 +86,41 @@ from mypy_boto3_appstream.paginator import DescribeDirectoryConfigsPaginator, ..
 - [ListAssociatedFleetsPaginator](./paginators.md#listassociatedfleetspaginator)
 - [ListAssociatedStacksPaginator](./paginators.md#listassociatedstackspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("appstream").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("appstream").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_appstream.waiter import FleetStartedWaiter, ...
+from mypy_boto3_appstream.waiter import FleetStartedWaiter
+
+def get_fleet_started_waiter() -> FleetStartedWaiter:
+    return Session().client("appstream").get_waiter("fleet_started")
 ```
 
 - [FleetStartedWaiter](./waiters.md#fleetstartedwaiter)
 - [FleetStoppedWaiter](./waiters.md#fleetstoppedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appstream.literals import AccessEndpointTypeType
 
-```python
-from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
+def get_value() -> AccessEndpointTypeType:
+    return "STREAMING"
 ```
 
 - [AccessEndpointTypeType](./literals.md#accessendpointtypetype)
@@ -276,18 +166,22 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef
 
-```python
-from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef, ...
+def get_value() -> AccessEndpointTypeDef:
+    return {
+        "EndpointType": ...,
+    }
 ```
 
 - [AccessEndpointTypeDef](./type_defs.md#accessendpointtypedef)
@@ -348,26 +242,36 @@ from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef, ...
 - [DescribeApplicationFleetAssociationsResultTypeDef](./type_defs.md#describeapplicationfleetassociationsresulttypedef)
 - [DescribeApplicationsRequestRequestTypeDef](./type_defs.md#describeapplicationsrequestrequesttypedef)
 - [DescribeApplicationsResultTypeDef](./type_defs.md#describeapplicationsresulttypedef)
+- [DescribeDirectoryConfigsRequestDescribeDirectoryConfigsPaginateTypeDef](./type_defs.md#describedirectoryconfigsrequestdescribedirectoryconfigspaginatetypedef)
 - [DescribeDirectoryConfigsRequestRequestTypeDef](./type_defs.md#describedirectoryconfigsrequestrequesttypedef)
 - [DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef)
 - [DescribeEntitlementsRequestRequestTypeDef](./type_defs.md#describeentitlementsrequestrequesttypedef)
 - [DescribeEntitlementsResultTypeDef](./type_defs.md#describeentitlementsresulttypedef)
+- [DescribeFleetsRequestDescribeFleetsPaginateTypeDef](./type_defs.md#describefleetsrequestdescribefleetspaginatetypedef)
+- [DescribeFleetsRequestFleetStartedWaitTypeDef](./type_defs.md#describefleetsrequestfleetstartedwaittypedef)
+- [DescribeFleetsRequestFleetStoppedWaitTypeDef](./type_defs.md#describefleetsrequestfleetstoppedwaittypedef)
 - [DescribeFleetsRequestRequestTypeDef](./type_defs.md#describefleetsrequestrequesttypedef)
 - [DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)
+- [DescribeImageBuildersRequestDescribeImageBuildersPaginateTypeDef](./type_defs.md#describeimagebuildersrequestdescribeimagebuilderspaginatetypedef)
 - [DescribeImageBuildersRequestRequestTypeDef](./type_defs.md#describeimagebuildersrequestrequesttypedef)
 - [DescribeImageBuildersResultTypeDef](./type_defs.md#describeimagebuildersresulttypedef)
 - [DescribeImagePermissionsRequestRequestTypeDef](./type_defs.md#describeimagepermissionsrequestrequesttypedef)
 - [DescribeImagePermissionsResultTypeDef](./type_defs.md#describeimagepermissionsresulttypedef)
+- [DescribeImagesRequestDescribeImagesPaginateTypeDef](./type_defs.md#describeimagesrequestdescribeimagespaginatetypedef)
 - [DescribeImagesRequestRequestTypeDef](./type_defs.md#describeimagesrequestrequesttypedef)
 - [DescribeImagesResultTypeDef](./type_defs.md#describeimagesresulttypedef)
+- [DescribeSessionsRequestDescribeSessionsPaginateTypeDef](./type_defs.md#describesessionsrequestdescribesessionspaginatetypedef)
 - [DescribeSessionsRequestRequestTypeDef](./type_defs.md#describesessionsrequestrequesttypedef)
 - [DescribeSessionsResultTypeDef](./type_defs.md#describesessionsresulttypedef)
+- [DescribeStacksRequestDescribeStacksPaginateTypeDef](./type_defs.md#describestacksrequestdescribestackspaginatetypedef)
 - [DescribeStacksRequestRequestTypeDef](./type_defs.md#describestacksrequestrequesttypedef)
 - [DescribeStacksResultTypeDef](./type_defs.md#describestacksresulttypedef)
 - [DescribeUsageReportSubscriptionsRequestRequestTypeDef](./type_defs.md#describeusagereportsubscriptionsrequestrequesttypedef)
 - [DescribeUsageReportSubscriptionsResultTypeDef](./type_defs.md#describeusagereportsubscriptionsresulttypedef)
+- [DescribeUserStackAssociationsRequestDescribeUserStackAssociationsPaginateTypeDef](./type_defs.md#describeuserstackassociationsrequestdescribeuserstackassociationspaginatetypedef)
 - [DescribeUserStackAssociationsRequestRequestTypeDef](./type_defs.md#describeuserstackassociationsrequestrequesttypedef)
 - [DescribeUserStackAssociationsResultTypeDef](./type_defs.md#describeuserstackassociationsresulttypedef)
+- [DescribeUsersRequestDescribeUsersPaginateTypeDef](./type_defs.md#describeusersrequestdescribeuserspaginatetypedef)
 - [DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef)
 - [DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)
 - [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
@@ -389,8 +293,10 @@ from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef, ...
 - [ImageStateChangeReasonTypeDef](./type_defs.md#imagestatechangereasontypedef)
 - [ImageTypeDef](./type_defs.md#imagetypedef)
 - [LastReportGenerationExecutionErrorTypeDef](./type_defs.md#lastreportgenerationexecutionerrortypedef)
+- [ListAssociatedFleetsRequestListAssociatedFleetsPaginateTypeDef](./type_defs.md#listassociatedfleetsrequestlistassociatedfleetspaginatetypedef)
 - [ListAssociatedFleetsRequestRequestTypeDef](./type_defs.md#listassociatedfleetsrequestrequesttypedef)
 - [ListAssociatedFleetsResultTypeDef](./type_defs.md#listassociatedfleetsresulttypedef)
+- [ListAssociatedStacksRequestListAssociatedStacksPaginateTypeDef](./type_defs.md#listassociatedstacksrequestlistassociatedstackspaginatetypedef)
 - [ListAssociatedStacksRequestRequestTypeDef](./type_defs.md#listassociatedstacksrequestrequesttypedef)
 - [ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef)
 - [ListEntitledApplicationsRequestRequestTypeDef](./type_defs.md#listentitledapplicationsrequestrequesttypedef)
@@ -435,3 +341,4 @@ from mypy_boto3_appstream.type_defs import AccessEndpointTypeDef, ...
 - [UserTypeDef](./type_defs.md#usertypedef)
 - [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

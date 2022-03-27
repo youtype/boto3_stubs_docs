@@ -1,4467 +1,4754 @@
-<a id="literals-for-boto3-sagemaker-module"></a>
-
-# Literals for boto3 SageMaker module
+# Literals
 
 > [Index](../README.md) > [SageMaker](./README.md) > Literals
 
-Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
-type annotations stubs module
-[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+!!! note ""
 
-- [Literals for boto3 SageMaker module](#literals-for-boto3-sagemaker-module)
-  - [ActionStatusType](#actionstatustype)
-  - [AlgorithmSortByType](#algorithmsortbytype)
-  - [AlgorithmStatusType](#algorithmstatustype)
-  - [AppImageConfigSortKeyType](#appimageconfigsortkeytype)
-  - [AppInstanceTypeType](#appinstancetypetype)
-  - [AppNetworkAccessTypeType](#appnetworkaccesstypetype)
-  - [AppSecurityGroupManagementType](#appsecuritygroupmanagementtype)
-  - [AppSortKeyType](#appsortkeytype)
-  - [AppStatusType](#appstatustype)
-  - [AppTypeType](#apptypetype)
-  - [ArtifactSourceIdTypeType](#artifactsourceidtypetype)
-  - [AssemblyTypeType](#assemblytypetype)
-  - [AssociationEdgeTypeType](#associationedgetypetype)
-  - [AthenaResultCompressionTypeType](#athenaresultcompressiontypetype)
-  - [AthenaResultFormatType](#athenaresultformattype)
-  - [AuthModeType](#authmodetype)
-  - [AutoMLJobObjectiveTypeType](#automljobobjectivetypetype)
-  - [AutoMLJobSecondaryStatusType](#automljobsecondarystatustype)
-  - [AutoMLJobStatusType](#automljobstatustype)
-  - [AutoMLMetricEnumType](#automlmetricenumtype)
-  - [AutoMLS3DataTypeType](#automls3datatypetype)
-  - [AutoMLSortByType](#automlsortbytype)
-  - [AutoMLSortOrderType](#automlsortordertype)
-  - [AwsManagedHumanLoopRequestSourceType](#awsmanagedhumanlooprequestsourcetype)
-  - [BatchStrategyType](#batchstrategytype)
-  - [BooleanOperatorType](#booleanoperatortype)
-  - [CandidateSortByType](#candidatesortbytype)
-  - [CandidateStatusType](#candidatestatustype)
-  - [CandidateStepTypeType](#candidatesteptypetype)
-  - [CapacitySizeTypeType](#capacitysizetypetype)
-  - [CaptureModeType](#capturemodetype)
-  - [CaptureStatusType](#capturestatustype)
-  - [CodeRepositorySortByType](#coderepositorysortbytype)
-  - [CodeRepositorySortOrderType](#coderepositorysortordertype)
-  - [CompilationJobStatusType](#compilationjobstatustype)
-  - [CompressionTypeType](#compressiontypetype)
-  - [ConditionOutcomeType](#conditionoutcometype)
-  - [ContainerModeType](#containermodetype)
-  - [ContentClassifierType](#contentclassifiertype)
-  - [DataDistributionTypeType](#datadistributiontypetype)
-  - [DetailedAlgorithmStatusType](#detailedalgorithmstatustype)
-  - [DetailedModelPackageStatusType](#detailedmodelpackagestatustype)
-  - [DirectInternetAccessType](#directinternetaccesstype)
-  - [DirectionType](#directiontype)
-  - [DomainStatusType](#domainstatustype)
-  - [EdgePackagingJobStatusType](#edgepackagingjobstatustype)
-  - [EdgePresetDeploymentStatusType](#edgepresetdeploymentstatustype)
-  - [EdgePresetDeploymentTypeType](#edgepresetdeploymenttypetype)
-  - [EndpointConfigSortKeyType](#endpointconfigsortkeytype)
-  - [EndpointDeletedWaiterName](#endpointdeletedwaitername)
-  - [EndpointInServiceWaiterName](#endpointinservicewaitername)
-  - [EndpointSortKeyType](#endpointsortkeytype)
-  - [EndpointStatusType](#endpointstatustype)
-  - [ExecutionStatusType](#executionstatustype)
-  - [FeatureGroupSortByType](#featuregroupsortbytype)
-  - [FeatureGroupSortOrderType](#featuregroupsortordertype)
-  - [FeatureGroupStatusType](#featuregroupstatustype)
-  - [FeatureTypeType](#featuretypetype)
-  - [FileSystemAccessModeType](#filesystemaccessmodetype)
-  - [FileSystemTypeType](#filesystemtypetype)
-  - [FlowDefinitionStatusType](#flowdefinitionstatustype)
-  - [FrameworkType](#frameworktype)
-  - [HumanTaskUiStatusType](#humantaskuistatustype)
-  - [HyperParameterScalingTypeType](#hyperparameterscalingtypetype)
-  - [HyperParameterTuningJobObjectiveTypeType](#hyperparametertuningjobobjectivetypetype)
-  - [HyperParameterTuningJobSortByOptionsType](#hyperparametertuningjobsortbyoptionstype)
-  - [HyperParameterTuningJobStatusType](#hyperparametertuningjobstatustype)
-  - [HyperParameterTuningJobStrategyTypeType](#hyperparametertuningjobstrategytypetype)
-  - [HyperParameterTuningJobWarmStartTypeType](#hyperparametertuningjobwarmstarttypetype)
-  - [ImageCreatedWaiterName](#imagecreatedwaitername)
-  - [ImageDeletedWaiterName](#imagedeletedwaitername)
-  - [ImageSortByType](#imagesortbytype)
-  - [ImageSortOrderType](#imagesortordertype)
-  - [ImageStatusType](#imagestatustype)
-  - [ImageUpdatedWaiterName](#imageupdatedwaitername)
-  - [ImageVersionCreatedWaiterName](#imageversioncreatedwaitername)
-  - [ImageVersionDeletedWaiterName](#imageversiondeletedwaitername)
-  - [ImageVersionSortByType](#imageversionsortbytype)
-  - [ImageVersionSortOrderType](#imageversionsortordertype)
-  - [ImageVersionStatusType](#imageversionstatustype)
-  - [InferenceExecutionModeType](#inferenceexecutionmodetype)
-  - [InputModeType](#inputmodetype)
-  - [InstanceTypeType](#instancetypetype)
-  - [JoinSourceType](#joinsourcetype)
-  - [LabelingJobStatusType](#labelingjobstatustype)
-  - [LineageTypeType](#lineagetypetype)
-  - [ListActionsPaginatorName](#listactionspaginatorname)
-  - [ListAlgorithmsPaginatorName](#listalgorithmspaginatorname)
-  - [ListAppImageConfigsPaginatorName](#listappimageconfigspaginatorname)
-  - [ListAppsPaginatorName](#listappspaginatorname)
-  - [ListArtifactsPaginatorName](#listartifactspaginatorname)
-  - [ListAssociationsPaginatorName](#listassociationspaginatorname)
-  - [ListAutoMLJobsPaginatorName](#listautomljobspaginatorname)
-  - [ListCandidatesForAutoMLJobPaginatorName](#listcandidatesforautomljobpaginatorname)
-  - [ListCodeRepositoriesPaginatorName](#listcoderepositoriespaginatorname)
-  - [ListCompilationJobsPaginatorName](#listcompilationjobspaginatorname)
-  - [ListCompilationJobsSortByType](#listcompilationjobssortbytype)
-  - [ListContextsPaginatorName](#listcontextspaginatorname)
-  - [ListDataQualityJobDefinitionsPaginatorName](#listdataqualityjobdefinitionspaginatorname)
-  - [ListDeviceFleetsPaginatorName](#listdevicefleetspaginatorname)
-  - [ListDeviceFleetsSortByType](#listdevicefleetssortbytype)
-  - [ListDevicesPaginatorName](#listdevicespaginatorname)
-  - [ListDomainsPaginatorName](#listdomainspaginatorname)
-  - [ListEdgePackagingJobsPaginatorName](#listedgepackagingjobspaginatorname)
-  - [ListEdgePackagingJobsSortByType](#listedgepackagingjobssortbytype)
-  - [ListEndpointConfigsPaginatorName](#listendpointconfigspaginatorname)
-  - [ListEndpointsPaginatorName](#listendpointspaginatorname)
-  - [ListExperimentsPaginatorName](#listexperimentspaginatorname)
-  - [ListFeatureGroupsPaginatorName](#listfeaturegroupspaginatorname)
-  - [ListFlowDefinitionsPaginatorName](#listflowdefinitionspaginatorname)
-  - [ListHumanTaskUisPaginatorName](#listhumantaskuispaginatorname)
-  - [ListHyperParameterTuningJobsPaginatorName](#listhyperparametertuningjobspaginatorname)
-  - [ListImageVersionsPaginatorName](#listimageversionspaginatorname)
-  - [ListImagesPaginatorName](#listimagespaginatorname)
-  - [ListInferenceRecommendationsJobsPaginatorName](#listinferencerecommendationsjobspaginatorname)
-  - [ListInferenceRecommendationsJobsSortByType](#listinferencerecommendationsjobssortbytype)
-  - [ListLabelingJobsForWorkteamPaginatorName](#listlabelingjobsforworkteampaginatorname)
-  - [ListLabelingJobsForWorkteamSortByOptionsType](#listlabelingjobsforworkteamsortbyoptionstype)
-  - [ListLabelingJobsPaginatorName](#listlabelingjobspaginatorname)
-  - [ListLineageGroupsPaginatorName](#listlineagegroupspaginatorname)
-  - [ListModelBiasJobDefinitionsPaginatorName](#listmodelbiasjobdefinitionspaginatorname)
-  - [ListModelExplainabilityJobDefinitionsPaginatorName](#listmodelexplainabilityjobdefinitionspaginatorname)
-  - [ListModelMetadataPaginatorName](#listmodelmetadatapaginatorname)
-  - [ListModelPackageGroupsPaginatorName](#listmodelpackagegroupspaginatorname)
-  - [ListModelPackagesPaginatorName](#listmodelpackagespaginatorname)
-  - [ListModelQualityJobDefinitionsPaginatorName](#listmodelqualityjobdefinitionspaginatorname)
-  - [ListModelsPaginatorName](#listmodelspaginatorname)
-  - [ListMonitoringExecutionsPaginatorName](#listmonitoringexecutionspaginatorname)
-  - [ListMonitoringSchedulesPaginatorName](#listmonitoringschedulespaginatorname)
-  - [ListNotebookInstanceLifecycleConfigsPaginatorName](#listnotebookinstancelifecycleconfigspaginatorname)
-  - [ListNotebookInstancesPaginatorName](#listnotebookinstancespaginatorname)
-  - [ListPipelineExecutionStepsPaginatorName](#listpipelineexecutionstepspaginatorname)
-  - [ListPipelineExecutionsPaginatorName](#listpipelineexecutionspaginatorname)
-  - [ListPipelineParametersForExecutionPaginatorName](#listpipelineparametersforexecutionpaginatorname)
-  - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
-  - [ListProcessingJobsPaginatorName](#listprocessingjobspaginatorname)
-  - [ListStudioLifecycleConfigsPaginatorName](#liststudiolifecycleconfigspaginatorname)
-  - [ListSubscribedWorkteamsPaginatorName](#listsubscribedworkteamspaginatorname)
-  - [ListTagsPaginatorName](#listtagspaginatorname)
-  - [ListTrainingJobsForHyperParameterTuningJobPaginatorName](#listtrainingjobsforhyperparametertuningjobpaginatorname)
-  - [ListTrainingJobsPaginatorName](#listtrainingjobspaginatorname)
-  - [ListTransformJobsPaginatorName](#listtransformjobspaginatorname)
-  - [ListTrialComponentsPaginatorName](#listtrialcomponentspaginatorname)
-  - [ListTrialsPaginatorName](#listtrialspaginatorname)
-  - [ListUserProfilesPaginatorName](#listuserprofilespaginatorname)
-  - [ListWorkforcesPaginatorName](#listworkforcespaginatorname)
-  - [ListWorkforcesSortByOptionsType](#listworkforcessortbyoptionstype)
-  - [ListWorkteamsPaginatorName](#listworkteamspaginatorname)
-  - [ListWorkteamsSortByOptionsType](#listworkteamssortbyoptionstype)
-  - [MetricSetSourceType](#metricsetsourcetype)
-  - [ModelApprovalStatusType](#modelapprovalstatustype)
-  - [ModelCacheSettingType](#modelcachesettingtype)
-  - [ModelMetadataFilterTypeType](#modelmetadatafiltertypetype)
-  - [ModelPackageGroupSortByType](#modelpackagegroupsortbytype)
-  - [ModelPackageGroupStatusType](#modelpackagegroupstatustype)
-  - [ModelPackageSortByType](#modelpackagesortbytype)
-  - [ModelPackageStatusType](#modelpackagestatustype)
-  - [ModelPackageTypeType](#modelpackagetypetype)
-  - [ModelSortKeyType](#modelsortkeytype)
-  - [MonitoringExecutionSortKeyType](#monitoringexecutionsortkeytype)
-  - [MonitoringJobDefinitionSortKeyType](#monitoringjobdefinitionsortkeytype)
-  - [MonitoringProblemTypeType](#monitoringproblemtypetype)
-  - [MonitoringScheduleSortKeyType](#monitoringschedulesortkeytype)
-  - [MonitoringTypeType](#monitoringtypetype)
-  - [NotebookInstanceAcceleratorTypeType](#notebookinstanceacceleratortypetype)
-  - [NotebookInstanceDeletedWaiterName](#notebookinstancedeletedwaitername)
-  - [NotebookInstanceInServiceWaiterName](#notebookinstanceinservicewaitername)
-  - [NotebookInstanceLifecycleConfigSortKeyType](#notebookinstancelifecycleconfigsortkeytype)
-  - [NotebookInstanceLifecycleConfigSortOrderType](#notebookinstancelifecycleconfigsortordertype)
-  - [NotebookInstanceSortKeyType](#notebookinstancesortkeytype)
-  - [NotebookInstanceSortOrderType](#notebookinstancesortordertype)
-  - [NotebookInstanceStatusType](#notebookinstancestatustype)
-  - [NotebookInstanceStoppedWaiterName](#notebookinstancestoppedwaitername)
-  - [NotebookOutputOptionType](#notebookoutputoptiontype)
-  - [ObjectiveStatusType](#objectivestatustype)
-  - [OfflineStoreStatusValueType](#offlinestorestatusvaluetype)
-  - [OperatorType](#operatortype)
-  - [OrderKeyType](#orderkeytype)
-  - [ParameterTypeType](#parametertypetype)
-  - [PipelineExecutionStatusType](#pipelineexecutionstatustype)
-  - [PipelineStatusType](#pipelinestatustype)
-  - [ProblemTypeType](#problemtypetype)
-  - [ProcessingInstanceTypeType](#processinginstancetypetype)
-  - [ProcessingJobCompletedOrStoppedWaiterName](#processingjobcompletedorstoppedwaitername)
-  - [ProcessingJobStatusType](#processingjobstatustype)
-  - [ProcessingS3CompressionTypeType](#processings3compressiontypetype)
-  - [ProcessingS3DataDistributionTypeType](#processings3datadistributiontypetype)
-  - [ProcessingS3DataTypeType](#processings3datatypetype)
-  - [ProcessingS3InputModeType](#processings3inputmodetype)
-  - [ProcessingS3UploadModeType](#processings3uploadmodetype)
-  - [ProductionVariantAcceleratorTypeType](#productionvariantacceleratortypetype)
-  - [ProductionVariantInstanceTypeType](#productionvariantinstancetypetype)
-  - [ProfilingStatusType](#profilingstatustype)
-  - [ProjectSortByType](#projectsortbytype)
-  - [ProjectSortOrderType](#projectsortordertype)
-  - [ProjectStatusType](#projectstatustype)
-  - [RStudioServerProAccessStatusType](#rstudioserverproaccessstatustype)
-  - [RStudioServerProUserGroupType](#rstudioserverprousergrouptype)
-  - [RecommendationJobStatusType](#recommendationjobstatustype)
-  - [RecommendationJobTypeType](#recommendationjobtypetype)
-  - [RecordWrapperType](#recordwrappertype)
-  - [RedshiftResultCompressionTypeType](#redshiftresultcompressiontypetype)
-  - [RedshiftResultFormatType](#redshiftresultformattype)
-  - [RepositoryAccessModeType](#repositoryaccessmodetype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [RetentionTypeType](#retentiontypetype)
-  - [RootAccessType](#rootaccesstype)
-  - [RuleEvaluationStatusType](#ruleevaluationstatustype)
-  - [S3DataDistributionType](#s3datadistributiontype)
-  - [S3DataTypeType](#s3datatypetype)
-  - [SagemakerServicecatalogStatusType](#sagemakerservicecatalogstatustype)
-  - [ScheduleStatusType](#schedulestatustype)
-  - [SearchPaginatorName](#searchpaginatorname)
-  - [SearchSortOrderType](#searchsortordertype)
-  - [SecondaryStatusType](#secondarystatustype)
-  - [SortActionsByType](#sortactionsbytype)
-  - [SortArtifactsByType](#sortartifactsbytype)
-  - [SortAssociationsByType](#sortassociationsbytype)
-  - [SortByType](#sortbytype)
-  - [SortContextsByType](#sortcontextsbytype)
-  - [SortExperimentsByType](#sortexperimentsbytype)
-  - [SortLineageGroupsByType](#sortlineagegroupsbytype)
-  - [SortOrderType](#sortordertype)
-  - [SortPipelineExecutionsByType](#sortpipelineexecutionsbytype)
-  - [SortPipelinesByType](#sortpipelinesbytype)
-  - [SortTrialComponentsByType](#sorttrialcomponentsbytype)
-  - [SortTrialsByType](#sorttrialsbytype)
-  - [SplitTypeType](#splittypetype)
-  - [StepStatusType](#stepstatustype)
-  - [StudioLifecycleConfigAppTypeType](#studiolifecycleconfigapptypetype)
-  - [StudioLifecycleConfigSortKeyType](#studiolifecycleconfigsortkeytype)
-  - [TargetDeviceType](#targetdevicetype)
-  - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
-  - [TargetPlatformArchType](#targetplatformarchtype)
-  - [TargetPlatformOsType](#targetplatformostype)
-  - [TrafficRoutingConfigTypeType](#trafficroutingconfigtypetype)
-  - [TrafficTypeType](#traffictypetype)
-  - [TrainingInputModeType](#traininginputmodetype)
-  - [TrainingInstanceTypeType](#traininginstancetypetype)
-  - [TrainingJobCompletedOrStoppedWaiterName](#trainingjobcompletedorstoppedwaitername)
-  - [TrainingJobEarlyStoppingTypeType](#trainingjobearlystoppingtypetype)
-  - [TrainingJobSortByOptionsType](#trainingjobsortbyoptionstype)
-  - [TrainingJobStatusType](#trainingjobstatustype)
-  - [TransformInstanceTypeType](#transforminstancetypetype)
-  - [TransformJobCompletedOrStoppedWaiterName](#transformjobcompletedorstoppedwaitername)
-  - [TransformJobStatusType](#transformjobstatustype)
-  - [TrialComponentPrimaryStatusType](#trialcomponentprimarystatustype)
-  - [UserProfileSortKeyType](#userprofilesortkeytype)
-  - [UserProfileStatusType](#userprofilestatustype)
-  - [VariantPropertyTypeType](#variantpropertytypetype)
-  - [VariantStatusType](#variantstatustype)
-  - [SageMakerServiceName](#sagemakerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="actionstatustype"></a>
+    Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+    type annotations stubs module [mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 ## ActionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ActionStatusType
+
+def get_value() -> ActionStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-- `Unknown`
-
-<a id="algorithmsortbytype"></a>
-
+```python title="Definition"
+ActionStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+    "Unknown",
+]
+```
 ## AlgorithmSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AlgorithmSortByType
+
+def get_value() -> AlgorithmSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="algorithmstatustype"></a>
-
+```python title="Definition"
+AlgorithmSortByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## AlgorithmStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AlgorithmStatusType
+
+def get_value() -> AlgorithmStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Deleting`
-- `Failed`
-- `InProgress`
-- `Pending`
-
-<a id="appimageconfigsortkeytype"></a>
-
+```python title="Definition"
+AlgorithmStatusType = Literal[
+    "Completed",
+    "Deleting",
+    "Failed",
+    "InProgress",
+    "Pending",
+]
+```
 ## AppImageConfigSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppImageConfigSortKeyType
+
+def get_value() -> AppImageConfigSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LastModifiedTime`
-- `Name`
-
-<a id="appinstancetypetype"></a>
-
+```python title="Definition"
+AppImageConfigSortKeyType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+    "Name",
+]
+```
 ## AppInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppInstanceTypeType
+
+def get_value() -> AppInstanceTypeType:
+    return "ml.c5.12xlarge"
 ```
 
-Values:
-
-- `ml.c5.12xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.24xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.large`
-- `ml.c5.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.16xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.8xlarge`
-- `ml.m5.large`
-- `ml.m5.xlarge`
-- `ml.m5d.12xlarge`
-- `ml.m5d.16xlarge`
-- `ml.m5d.24xlarge`
-- `ml.m5d.2xlarge`
-- `ml.m5d.4xlarge`
-- `ml.m5d.8xlarge`
-- `ml.m5d.large`
-- `ml.m5d.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-- `ml.p3dn.24xlarge`
-- `ml.r5.12xlarge`
-- `ml.r5.16xlarge`
-- `ml.r5.24xlarge`
-- `ml.r5.2xlarge`
-- `ml.r5.4xlarge`
-- `ml.r5.8xlarge`
-- `ml.r5.large`
-- `ml.r5.xlarge`
-- `ml.t3.2xlarge`
-- `ml.t3.large`
-- `ml.t3.medium`
-- `ml.t3.micro`
-- `ml.t3.small`
-- `ml.t3.xlarge`
-- `system`
-
-<a id="appnetworkaccesstypetype"></a>
-
+```python title="Definition"
+AppInstanceTypeType = Literal[
+    "ml.c5.12xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.24xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.large",
+    "ml.c5.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.16xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.8xlarge",
+    "ml.m5.large",
+    "ml.m5.xlarge",
+    "ml.m5d.12xlarge",
+    "ml.m5d.16xlarge",
+    "ml.m5d.24xlarge",
+    "ml.m5d.2xlarge",
+    "ml.m5d.4xlarge",
+    "ml.m5d.8xlarge",
+    "ml.m5d.large",
+    "ml.m5d.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+    "ml.p3dn.24xlarge",
+    "ml.r5.12xlarge",
+    "ml.r5.16xlarge",
+    "ml.r5.24xlarge",
+    "ml.r5.2xlarge",
+    "ml.r5.4xlarge",
+    "ml.r5.8xlarge",
+    "ml.r5.large",
+    "ml.r5.xlarge",
+    "ml.t3.2xlarge",
+    "ml.t3.large",
+    "ml.t3.medium",
+    "ml.t3.micro",
+    "ml.t3.small",
+    "ml.t3.xlarge",
+    "system",
+]
+```
 ## AppNetworkAccessTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppNetworkAccessTypeType
+
+def get_value() -> AppNetworkAccessTypeType:
+    return "PublicInternetOnly"
 ```
 
-Values:
-
-- `PublicInternetOnly`
-- `VpcOnly`
-
-<a id="appsecuritygroupmanagementtype"></a>
-
+```python title="Definition"
+AppNetworkAccessTypeType = Literal[
+    "PublicInternetOnly",
+    "VpcOnly",
+]
+```
 ## AppSecurityGroupManagementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppSecurityGroupManagementType
+
+def get_value() -> AppSecurityGroupManagementType:
+    return "Customer"
 ```
 
-Values:
-
-- `Customer`
-- `Service`
-
-<a id="appsortkeytype"></a>
-
+```python title="Definition"
+AppSecurityGroupManagementType = Literal[
+    "Customer",
+    "Service",
+]
+```
 ## AppSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppSortKeyType
+
+def get_value() -> AppSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-
-<a id="appstatustype"></a>
-
+```python title="Definition"
+AppSortKeyType = Literal[
+    "CreationTime",
+]
+```
 ## AppStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppStatusType
+
+def get_value() -> AppStatusType:
+    return "Deleted"
 ```
 
-Values:
-
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `InService`
-- `Pending`
-
-<a id="apptypetype"></a>
-
+```python title="Definition"
+AppStatusType = Literal[
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "InService",
+    "Pending",
+]
+```
 ## AppTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AppTypeType
+
+def get_value() -> AppTypeType:
+    return "JupyterServer"
 ```
 
-Values:
-
-- `JupyterServer`
-- `KernelGateway`
-- `RSessionGateway`
-- `RStudioServerPro`
-- `TensorBoard`
-
-<a id="artifactsourceidtypetype"></a>
-
+```python title="Definition"
+AppTypeType = Literal[
+    "JupyterServer",
+    "KernelGateway",
+    "RSessionGateway",
+    "RStudioServerPro",
+    "TensorBoard",
+]
+```
 ## ArtifactSourceIdTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ArtifactSourceIdTypeType
+
+def get_value() -> ArtifactSourceIdTypeType:
+    return "Custom"
 ```
 
-Values:
-
-- `Custom`
-- `MD5Hash`
-- `S3ETag`
-- `S3Version`
-
-<a id="assemblytypetype"></a>
-
+```python title="Definition"
+ArtifactSourceIdTypeType = Literal[
+    "Custom",
+    "MD5Hash",
+    "S3ETag",
+    "S3Version",
+]
+```
 ## AssemblyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AssemblyTypeType
+
+def get_value() -> AssemblyTypeType:
+    return "Line"
 ```
 
-Values:
-
-- `Line`
-- `None`
-
-<a id="associationedgetypetype"></a>
-
+```python title="Definition"
+AssemblyTypeType = Literal[
+    "Line",
+    "None",
+]
+```
 ## AssociationEdgeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AssociationEdgeTypeType
+
+def get_value() -> AssociationEdgeTypeType:
+    return "AssociatedWith"
 ```
 
-Values:
-
-- `AssociatedWith`
-- `ContributedTo`
-- `DerivedFrom`
-- `Produced`
-
-<a id="athenaresultcompressiontypetype"></a>
-
+```python title="Definition"
+AssociationEdgeTypeType = Literal[
+    "AssociatedWith",
+    "ContributedTo",
+    "DerivedFrom",
+    "Produced",
+]
+```
 ## AthenaResultCompressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AthenaResultCompressionTypeType
+
+def get_value() -> AthenaResultCompressionTypeType:
+    return "GZIP"
 ```
 
-Values:
-
-- `GZIP`
-- `SNAPPY`
-- `ZLIB`
-
-<a id="athenaresultformattype"></a>
-
+```python title="Definition"
+AthenaResultCompressionTypeType = Literal[
+    "GZIP",
+    "SNAPPY",
+    "ZLIB",
+]
+```
 ## AthenaResultFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AthenaResultFormatType
+
+def get_value() -> AthenaResultFormatType:
+    return "AVRO"
 ```
 
-Values:
-
-- `AVRO`
-- `JSON`
-- `ORC`
-- `PARQUET`
-- `TEXTFILE`
-
-<a id="authmodetype"></a>
-
+```python title="Definition"
+AthenaResultFormatType = Literal[
+    "AVRO",
+    "JSON",
+    "ORC",
+    "PARQUET",
+    "TEXTFILE",
+]
+```
 ## AuthModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AuthModeType
+
+def get_value() -> AuthModeType:
+    return "IAM"
 ```
 
-Values:
-
-- `IAM`
-- `SSO`
-
-<a id="automljobobjectivetypetype"></a>
-
+```python title="Definition"
+AuthModeType = Literal[
+    "IAM",
+    "SSO",
+]
+```
 ## AutoMLJobObjectiveTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLJobObjectiveTypeType
+
+def get_value() -> AutoMLJobObjectiveTypeType:
+    return "Maximize"
 ```
 
-Values:
-
-- `Maximize`
-- `Minimize`
-
-<a id="automljobsecondarystatustype"></a>
-
+```python title="Definition"
+AutoMLJobObjectiveTypeType = Literal[
+    "Maximize",
+    "Minimize",
+]
+```
 ## AutoMLJobSecondaryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLJobSecondaryStatusType
+
+def get_value() -> AutoMLJobSecondaryStatusType:
+    return "AnalyzingData"
 ```
 
-Values:
-
-- `AnalyzingData`
-- `CandidateDefinitionsGenerated`
-- `Completed`
-- `DeployingModel`
-- `ExplainabilityError`
-- `Failed`
-- `FeatureEngineering`
-- `GeneratingExplainabilityReport`
-- `GeneratingModelInsightsReport`
-- `MaxAutoMLJobRuntimeReached`
-- `MaxCandidatesReached`
-- `ModelDeploymentError`
-- `ModelInsightsError`
-- `ModelTuning`
-- `Starting`
-- `Stopped`
-- `Stopping`
-
-<a id="automljobstatustype"></a>
-
+```python title="Definition"
+AutoMLJobSecondaryStatusType = Literal[
+    "AnalyzingData",
+    "CandidateDefinitionsGenerated",
+    "Completed",
+    "DeployingModel",
+    "ExplainabilityError",
+    "Failed",
+    "FeatureEngineering",
+    "GeneratingExplainabilityReport",
+    "GeneratingModelInsightsReport",
+    "MaxAutoMLJobRuntimeReached",
+    "MaxCandidatesReached",
+    "ModelDeploymentError",
+    "ModelInsightsError",
+    "ModelTuning",
+    "Starting",
+    "Stopped",
+    "Stopping",
+]
+```
 ## AutoMLJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLJobStatusType
+
+def get_value() -> AutoMLJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="automlmetricenumtype"></a>
-
+```python title="Definition"
+AutoMLJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## AutoMLMetricEnumType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLMetricEnumType
+
+def get_value() -> AutoMLMetricEnumType:
+    return "AUC"
 ```
 
-Values:
-
-- `Accuracy`
-- `AUC`
-- `F1`
-- `F1macro`
-- `MSE`
-
-<a id="automls3datatypetype"></a>
-
+```python title="Definition"
+AutoMLMetricEnumType = Literal[
+    "Accuracy",
+    "AUC",
+    "F1",
+    "F1macro",
+    "MSE",
+]
+```
 ## AutoMLS3DataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLS3DataTypeType
+
+def get_value() -> AutoMLS3DataTypeType:
+    return "ManifestFile"
 ```
 
-Values:
-
-- `ManifestFile`
-- `S3Prefix`
-
-<a id="automlsortbytype"></a>
-
+```python title="Definition"
+AutoMLS3DataTypeType = Literal[
+    "ManifestFile",
+    "S3Prefix",
+]
+```
 ## AutoMLSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLSortByType
+
+def get_value() -> AutoMLSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="automlsortordertype"></a>
-
+```python title="Definition"
+AutoMLSortByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## AutoMLSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AutoMLSortOrderType
+
+def get_value() -> AutoMLSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="awsmanagedhumanlooprequestsourcetype"></a>
-
+```python title="Definition"
+AutoMLSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## AwsManagedHumanLoopRequestSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import AwsManagedHumanLoopRequestSourceType
+
+def get_value() -> AwsManagedHumanLoopRequestSourceType:
+    return "AWS/Rekognition/DetectModerationLabels/Image/V3"
 ```
 
-Values:
-
-- `AWS/Rekognition/DetectModerationLabels/Image/V3`
-- `AWS/Textract/AnalyzeDocument/Forms/V1`
-
-<a id="batchstrategytype"></a>
-
+```python title="Definition"
+AwsManagedHumanLoopRequestSourceType = Literal[
+    "AWS/Rekognition/DetectModerationLabels/Image/V3",
+    "AWS/Textract/AnalyzeDocument/Forms/V1",
+]
+```
 ## BatchStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import BatchStrategyType
+
+def get_value() -> BatchStrategyType:
+    return "MultiRecord"
 ```
 
-Values:
-
-- `MultiRecord`
-- `SingleRecord`
-
-<a id="booleanoperatortype"></a>
-
+```python title="Definition"
+BatchStrategyType = Literal[
+    "MultiRecord",
+    "SingleRecord",
+]
+```
 ## BooleanOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import BooleanOperatorType
+
+def get_value() -> BooleanOperatorType:
+    return "And"
 ```
 
-Values:
-
-- `And`
-- `Or`
-
-<a id="candidatesortbytype"></a>
-
+```python title="Definition"
+BooleanOperatorType = Literal[
+    "And",
+    "Or",
+]
+```
 ## CandidateSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CandidateSortByType
+
+def get_value() -> CandidateSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `FinalObjectiveMetricValue`
-- `Status`
-
-<a id="candidatestatustype"></a>
-
+```python title="Definition"
+CandidateSortByType = Literal[
+    "CreationTime",
+    "FinalObjectiveMetricValue",
+    "Status",
+]
+```
 ## CandidateStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CandidateStatusType
+
+def get_value() -> CandidateStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="candidatesteptypetype"></a>
-
+```python title="Definition"
+CandidateStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## CandidateStepTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CandidateStepTypeType
+
+def get_value() -> CandidateStepTypeType:
+    return "AWS::SageMaker::ProcessingJob"
 ```
 
-Values:
-
-- `AWS::SageMaker::ProcessingJob`
-- `AWS::SageMaker::TrainingJob`
-- `AWS::SageMaker::TransformJob`
-
-<a id="capacitysizetypetype"></a>
-
+```python title="Definition"
+CandidateStepTypeType = Literal[
+    "AWS::SageMaker::ProcessingJob",
+    "AWS::SageMaker::TrainingJob",
+    "AWS::SageMaker::TransformJob",
+]
+```
 ## CapacitySizeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CapacitySizeTypeType
+
+def get_value() -> CapacitySizeTypeType:
+    return "CAPACITY_PERCENT"
 ```
 
-Values:
-
-- `CAPACITY_PERCENT`
-- `INSTANCE_COUNT`
-
-<a id="capturemodetype"></a>
-
+```python title="Definition"
+CapacitySizeTypeType = Literal[
+    "CAPACITY_PERCENT",
+    "INSTANCE_COUNT",
+]
+```
 ## CaptureModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CaptureModeType
+
+def get_value() -> CaptureModeType:
+    return "Input"
 ```
 
-Values:
-
-- `Input`
-- `Output`
-
-<a id="capturestatustype"></a>
-
+```python title="Definition"
+CaptureModeType = Literal[
+    "Input",
+    "Output",
+]
+```
 ## CaptureStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CaptureStatusType
+
+def get_value() -> CaptureStatusType:
+    return "Started"
 ```
 
-Values:
-
-- `Started`
-- `Stopped`
-
-<a id="coderepositorysortbytype"></a>
-
+```python title="Definition"
+CaptureStatusType = Literal[
+    "Started",
+    "Stopped",
+]
+```
 ## CodeRepositorySortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CodeRepositorySortByType
+
+def get_value() -> CodeRepositorySortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LastModifiedTime`
-- `Name`
-
-<a id="coderepositorysortordertype"></a>
-
+```python title="Definition"
+CodeRepositorySortByType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+    "Name",
+]
+```
 ## CodeRepositorySortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CodeRepositorySortOrderType
+
+def get_value() -> CodeRepositorySortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="compilationjobstatustype"></a>
-
+```python title="Definition"
+CodeRepositorySortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## CompilationJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CompilationJobStatusType
+
+def get_value() -> CompilationJobStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `INPROGRESS`
-- `STARTING`
-- `STOPPED`
-- `STOPPING`
-
-<a id="compressiontypetype"></a>
-
+```python title="Definition"
+CompilationJobStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "INPROGRESS",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## CompressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import CompressionTypeType
+
+def get_value() -> CompressionTypeType:
+    return "Gzip"
 ```
 
-Values:
-
-- `Gzip`
-- `None`
-
-<a id="conditionoutcometype"></a>
-
+```python title="Definition"
+CompressionTypeType = Literal[
+    "Gzip",
+    "None",
+]
+```
 ## ConditionOutcomeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ConditionOutcomeType
+
+def get_value() -> ConditionOutcomeType:
+    return "False"
 ```
 
-Values:
-
-- `False`
-- `True`
-
-<a id="containermodetype"></a>
-
+```python title="Definition"
+ConditionOutcomeType = Literal[
+    "False",
+    "True",
+]
+```
 ## ContainerModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ContainerModeType
+
+def get_value() -> ContainerModeType:
+    return "MultiModel"
 ```
 
-Values:
-
-- `MultiModel`
-- `SingleModel`
-
-<a id="contentclassifiertype"></a>
-
+```python title="Definition"
+ContainerModeType = Literal[
+    "MultiModel",
+    "SingleModel",
+]
+```
 ## ContentClassifierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ContentClassifierType
+
+def get_value() -> ContentClassifierType:
+    return "FreeOfAdultContent"
 ```
 
-Values:
-
-- `FreeOfAdultContent`
-- `FreeOfPersonallyIdentifiableInformation`
-
-<a id="datadistributiontypetype"></a>
-
+```python title="Definition"
+ContentClassifierType = Literal[
+    "FreeOfAdultContent",
+    "FreeOfPersonallyIdentifiableInformation",
+]
+```
 ## DataDistributionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DataDistributionTypeType
+
+def get_value() -> DataDistributionTypeType:
+    return "FullyReplicated"
 ```
 
-Values:
-
-- `FullyReplicated`
-- `ShardedByS3Key`
-
-<a id="detailedalgorithmstatustype"></a>
-
+```python title="Definition"
+DataDistributionTypeType = Literal[
+    "FullyReplicated",
+    "ShardedByS3Key",
+]
+```
 ## DetailedAlgorithmStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DetailedAlgorithmStatusType
+
+def get_value() -> DetailedAlgorithmStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `NotStarted`
-
-<a id="detailedmodelpackagestatustype"></a>
-
+```python title="Definition"
+DetailedAlgorithmStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "NotStarted",
+]
+```
 ## DetailedModelPackageStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DetailedModelPackageStatusType
+
+def get_value() -> DetailedModelPackageStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `NotStarted`
-
-<a id="directinternetaccesstype"></a>
-
+```python title="Definition"
+DetailedModelPackageStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "NotStarted",
+]
+```
 ## DirectInternetAccessType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DirectInternetAccessType
+
+def get_value() -> DirectInternetAccessType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="directiontype"></a>
-
+```python title="Definition"
+DirectInternetAccessType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## DirectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DirectionType
+
+def get_value() -> DirectionType:
+    return "Ascendants"
 ```
 
-Values:
-
-- `Ascendants`
-- `Both`
-- `Descendants`
-
-<a id="domainstatustype"></a>
-
+```python title="Definition"
+DirectionType = Literal[
+    "Ascendants",
+    "Both",
+    "Descendants",
+]
+```
 ## DomainStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import DomainStatusType
+
+def get_value() -> DomainStatusType:
+    return "Delete_Failed"
 ```
 
-Values:
-
-- `Delete_Failed`
-- `Deleting`
-- `Failed`
-- `InService`
-- `Pending`
-- `Update_Failed`
-- `Updating`
-
-<a id="edgepackagingjobstatustype"></a>
-
+```python title="Definition"
+DomainStatusType = Literal[
+    "Delete_Failed",
+    "Deleting",
+    "Failed",
+    "InService",
+    "Pending",
+    "Update_Failed",
+    "Updating",
+]
+```
 ## EdgePackagingJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EdgePackagingJobStatusType
+
+def get_value() -> EdgePackagingJobStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `INPROGRESS`
-- `STARTING`
-- `STOPPED`
-- `STOPPING`
-
-<a id="edgepresetdeploymentstatustype"></a>
-
+```python title="Definition"
+EdgePackagingJobStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "INPROGRESS",
+    "STARTING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## EdgePresetDeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EdgePresetDeploymentStatusType
+
+def get_value() -> EdgePresetDeploymentStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-
-<a id="edgepresetdeploymenttypetype"></a>
-
+```python title="Definition"
+EdgePresetDeploymentStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+]
+```
 ## EdgePresetDeploymentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EdgePresetDeploymentTypeType
+
+def get_value() -> EdgePresetDeploymentTypeType:
+    return "GreengrassV2Component"
 ```
 
-Values:
-
-- `GreengrassV2Component`
-
-<a id="endpointconfigsortkeytype"></a>
-
+```python title="Definition"
+EdgePresetDeploymentTypeType = Literal[
+    "GreengrassV2Component",
+]
+```
 ## EndpointConfigSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EndpointConfigSortKeyType
+
+def get_value() -> EndpointConfigSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="endpointdeletedwaitername"></a>
-
+```python title="Definition"
+EndpointConfigSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## EndpointDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EndpointDeletedWaiterName
+
+def get_value() -> EndpointDeletedWaiterName:
+    return "endpoint_deleted"
 ```
 
-Values:
-
-- `endpoint_deleted`
-
-<a id="endpointinservicewaitername"></a>
-
+```python title="Definition"
+EndpointDeletedWaiterName = Literal[
+    "endpoint_deleted",
+]
+```
 ## EndpointInServiceWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EndpointInServiceWaiterName
+
+def get_value() -> EndpointInServiceWaiterName:
+    return "endpoint_in_service"
 ```
 
-Values:
-
-- `endpoint_in_service`
-
-<a id="endpointsortkeytype"></a>
-
+```python title="Definition"
+EndpointInServiceWaiterName = Literal[
+    "endpoint_in_service",
+]
+```
 ## EndpointSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EndpointSortKeyType
+
+def get_value() -> EndpointSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="endpointstatustype"></a>
-
+```python title="Definition"
+EndpointSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## EndpointStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import EndpointStatusType
+
+def get_value() -> EndpointStatusType:
+    return "Creating"
 ```
 
-Values:
-
-- `Creating`
-- `Deleting`
-- `Failed`
-- `InService`
-- `OutOfService`
-- `RollingBack`
-- `SystemUpdating`
-- `Updating`
-
-<a id="executionstatustype"></a>
-
+```python title="Definition"
+EndpointStatusType = Literal[
+    "Creating",
+    "Deleting",
+    "Failed",
+    "InService",
+    "OutOfService",
+    "RollingBack",
+    "SystemUpdating",
+    "Updating",
+]
+```
 ## ExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ExecutionStatusType
+
+def get_value() -> ExecutionStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `CompletedWithViolations`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Stopped`
-- `Stopping`
-
-<a id="featuregroupsortbytype"></a>
-
+```python title="Definition"
+ExecutionStatusType = Literal[
+    "Completed",
+    "CompletedWithViolations",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Stopped",
+    "Stopping",
+]
+```
 ## FeatureGroupSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FeatureGroupSortByType
+
+def get_value() -> FeatureGroupSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `FeatureGroupStatus`
-- `Name`
-- `OfflineStoreStatus`
-
-<a id="featuregroupsortordertype"></a>
-
+```python title="Definition"
+FeatureGroupSortByType = Literal[
+    "CreationTime",
+    "FeatureGroupStatus",
+    "Name",
+    "OfflineStoreStatus",
+]
+```
 ## FeatureGroupSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FeatureGroupSortOrderType
+
+def get_value() -> FeatureGroupSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="featuregroupstatustype"></a>
-
+```python title="Definition"
+FeatureGroupSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## FeatureGroupStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FeatureGroupStatusType
+
+def get_value() -> FeatureGroupStatusType:
+    return "CreateFailed"
 ```
 
-Values:
-
-- `Created`
-- `CreateFailed`
-- `Creating`
-- `DeleteFailed`
-- `Deleting`
-
-<a id="featuretypetype"></a>
-
+```python title="Definition"
+FeatureGroupStatusType = Literal[
+    "Created",
+    "CreateFailed",
+    "Creating",
+    "DeleteFailed",
+    "Deleting",
+]
+```
 ## FeatureTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FeatureTypeType
+
+def get_value() -> FeatureTypeType:
+    return "Fractional"
 ```
 
-Values:
-
-- `Fractional`
-- `Integral`
-- `String`
-
-<a id="filesystemaccessmodetype"></a>
-
+```python title="Definition"
+FeatureTypeType = Literal[
+    "Fractional",
+    "Integral",
+    "String",
+]
+```
 ## FileSystemAccessModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FileSystemAccessModeType
+
+def get_value() -> FileSystemAccessModeType:
+    return "ro"
 ```
 
-Values:
-
-- `ro`
-- `rw`
-
-<a id="filesystemtypetype"></a>
-
+```python title="Definition"
+FileSystemAccessModeType = Literal[
+    "ro",
+    "rw",
+]
+```
 ## FileSystemTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FileSystemTypeType
+
+def get_value() -> FileSystemTypeType:
+    return "EFS"
 ```
 
-Values:
-
-- `EFS`
-- `FSxLustre`
-
-<a id="flowdefinitionstatustype"></a>
-
+```python title="Definition"
+FileSystemTypeType = Literal[
+    "EFS",
+    "FSxLustre",
+]
+```
 ## FlowDefinitionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FlowDefinitionStatusType
+
+def get_value() -> FlowDefinitionStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Deleting`
-- `Failed`
-- `Initializing`
-
-<a id="frameworktype"></a>
-
+```python title="Definition"
+FlowDefinitionStatusType = Literal[
+    "Active",
+    "Deleting",
+    "Failed",
+    "Initializing",
+]
+```
 ## FrameworkType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import FrameworkType
+
+def get_value() -> FrameworkType:
+    return "DARKNET"
 ```
 
-Values:
-
-- `DARKNET`
-- `KERAS`
-- `MXNET`
-- `ONNX`
-- `PYTORCH`
-- `SKLEARN`
-- `TENSORFLOW`
-- `TFLITE`
-- `XGBOOST`
-
-<a id="humantaskuistatustype"></a>
-
+```python title="Definition"
+FrameworkType = Literal[
+    "DARKNET",
+    "KERAS",
+    "MXNET",
+    "ONNX",
+    "PYTORCH",
+    "SKLEARN",
+    "TENSORFLOW",
+    "TFLITE",
+    "XGBOOST",
+]
+```
 ## HumanTaskUiStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HumanTaskUiStatusType
+
+def get_value() -> HumanTaskUiStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Deleting`
-
-<a id="hyperparameterscalingtypetype"></a>
-
+```python title="Definition"
+HumanTaskUiStatusType = Literal[
+    "Active",
+    "Deleting",
+]
+```
 ## HyperParameterScalingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterScalingTypeType
+
+def get_value() -> HyperParameterScalingTypeType:
+    return "Auto"
 ```
 
-Values:
-
-- `Auto`
-- `Linear`
-- `Logarithmic`
-- `ReverseLogarithmic`
-
-<a id="hyperparametertuningjobobjectivetypetype"></a>
-
+```python title="Definition"
+HyperParameterScalingTypeType = Literal[
+    "Auto",
+    "Linear",
+    "Logarithmic",
+    "ReverseLogarithmic",
+]
+```
 ## HyperParameterTuningJobObjectiveTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterTuningJobObjectiveTypeType
+
+def get_value() -> HyperParameterTuningJobObjectiveTypeType:
+    return "Maximize"
 ```
 
-Values:
-
-- `Maximize`
-- `Minimize`
-
-<a id="hyperparametertuningjobsortbyoptionstype"></a>
-
+```python title="Definition"
+HyperParameterTuningJobObjectiveTypeType = Literal[
+    "Maximize",
+    "Minimize",
+]
+```
 ## HyperParameterTuningJobSortByOptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterTuningJobSortByOptionsType
+
+def get_value() -> HyperParameterTuningJobSortByOptionsType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="hyperparametertuningjobstatustype"></a>
-
+```python title="Definition"
+HyperParameterTuningJobSortByOptionsType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## HyperParameterTuningJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStatusType
+
+def get_value() -> HyperParameterTuningJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="hyperparametertuningjobstrategytypetype"></a>
-
+```python title="Definition"
+HyperParameterTuningJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## HyperParameterTuningJobStrategyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterTuningJobStrategyTypeType
+
+def get_value() -> HyperParameterTuningJobStrategyTypeType:
+    return "Bayesian"
 ```
 
-Values:
-
-- `Bayesian`
-- `Random`
-
-<a id="hyperparametertuningjobwarmstarttypetype"></a>
-
+```python title="Definition"
+HyperParameterTuningJobStrategyTypeType = Literal[
+    "Bayesian",
+    "Random",
+]
+```
 ## HyperParameterTuningJobWarmStartTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import HyperParameterTuningJobWarmStartTypeType
+
+def get_value() -> HyperParameterTuningJobWarmStartTypeType:
+    return "IdenticalDataAndAlgorithm"
 ```
 
-Values:
-
-- `IdenticalDataAndAlgorithm`
-- `TransferLearning`
-
-<a id="imagecreatedwaitername"></a>
-
+```python title="Definition"
+HyperParameterTuningJobWarmStartTypeType = Literal[
+    "IdenticalDataAndAlgorithm",
+    "TransferLearning",
+]
+```
 ## ImageCreatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageCreatedWaiterName
+
+def get_value() -> ImageCreatedWaiterName:
+    return "image_created"
 ```
 
-Values:
-
-- `image_created`
-
-<a id="imagedeletedwaitername"></a>
-
+```python title="Definition"
+ImageCreatedWaiterName = Literal[
+    "image_created",
+]
+```
 ## ImageDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageDeletedWaiterName
+
+def get_value() -> ImageDeletedWaiterName:
+    return "image_deleted"
 ```
 
-Values:
-
-- `image_deleted`
-
-<a id="imagesortbytype"></a>
-
+```python title="Definition"
+ImageDeletedWaiterName = Literal[
+    "image_deleted",
+]
+```
 ## ImageSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageSortByType
+
+def get_value() -> ImageSortByType:
+    return "CREATION_TIME"
 ```
 
-Values:
-
-- `CREATION_TIME`
-- `IMAGE_NAME`
-- `LAST_MODIFIED_TIME`
-
-<a id="imagesortordertype"></a>
-
+```python title="Definition"
+ImageSortByType = Literal[
+    "CREATION_TIME",
+    "IMAGE_NAME",
+    "LAST_MODIFIED_TIME",
+]
+```
 ## ImageSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageSortOrderType
+
+def get_value() -> ImageSortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="imagestatustype"></a>
-
+```python title="Definition"
+ImageSortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ImageStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageStatusType
+
+def get_value() -> ImageStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATED`
-- `CREATING`
-- `DELETE_FAILED`
-- `DELETING`
-- `UPDATE_FAILED`
-- `UPDATING`
-
-<a id="imageupdatedwaitername"></a>
-
+```python title="Definition"
+ImageStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+    "UPDATE_FAILED",
+    "UPDATING",
+]
+```
 ## ImageUpdatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageUpdatedWaiterName
+
+def get_value() -> ImageUpdatedWaiterName:
+    return "image_updated"
 ```
 
-Values:
-
-- `image_updated`
-
-<a id="imageversioncreatedwaitername"></a>
-
+```python title="Definition"
+ImageUpdatedWaiterName = Literal[
+    "image_updated",
+]
+```
 ## ImageVersionCreatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageVersionCreatedWaiterName
+
+def get_value() -> ImageVersionCreatedWaiterName:
+    return "image_version_created"
 ```
 
-Values:
-
-- `image_version_created`
-
-<a id="imageversiondeletedwaitername"></a>
-
+```python title="Definition"
+ImageVersionCreatedWaiterName = Literal[
+    "image_version_created",
+]
+```
 ## ImageVersionDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageVersionDeletedWaiterName
+
+def get_value() -> ImageVersionDeletedWaiterName:
+    return "image_version_deleted"
 ```
 
-Values:
-
-- `image_version_deleted`
-
-<a id="imageversionsortbytype"></a>
-
+```python title="Definition"
+ImageVersionDeletedWaiterName = Literal[
+    "image_version_deleted",
+]
+```
 ## ImageVersionSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageVersionSortByType
+
+def get_value() -> ImageVersionSortByType:
+    return "CREATION_TIME"
 ```
 
-Values:
-
-- `CREATION_TIME`
-- `LAST_MODIFIED_TIME`
-- `VERSION`
-
-<a id="imageversionsortordertype"></a>
-
+```python title="Definition"
+ImageVersionSortByType = Literal[
+    "CREATION_TIME",
+    "LAST_MODIFIED_TIME",
+    "VERSION",
+]
+```
 ## ImageVersionSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageVersionSortOrderType
+
+def get_value() -> ImageVersionSortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="imageversionstatustype"></a>
-
+```python title="Definition"
+ImageVersionSortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ImageVersionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ImageVersionStatusType
+
+def get_value() -> ImageVersionStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATED`
-- `CREATING`
-- `DELETE_FAILED`
-- `DELETING`
-
-<a id="inferenceexecutionmodetype"></a>
-
+```python title="Definition"
+ImageVersionStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+]
+```
 ## InferenceExecutionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import InferenceExecutionModeType
+
+def get_value() -> InferenceExecutionModeType:
+    return "Direct"
 ```
 
-Values:
-
-- `Direct`
-- `Serial`
-
-<a id="inputmodetype"></a>
-
+```python title="Definition"
+InferenceExecutionModeType = Literal[
+    "Direct",
+    "Serial",
+]
+```
 ## InputModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import InputModeType
+
+def get_value() -> InputModeType:
+    return "File"
 ```
 
-Values:
-
-- `File`
-- `Pipe`
-
-<a id="instancetypetype"></a>
-
+```python title="Definition"
+InputModeType = Literal[
+    "File",
+    "Pipe",
+]
+```
 ## InstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import InstanceTypeType
+
+def get_value() -> InstanceTypeType:
+    return "ml.c4.2xlarge"
 ```
 
-Values:
-
-- `ml.c4.2xlarge`
-- `ml.c4.4xlarge`
-- `ml.c4.8xlarge`
-- `ml.c4.xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.xlarge`
-- `ml.c5d.18xlarge`
-- `ml.c5d.2xlarge`
-- `ml.c5d.4xlarge`
-- `ml.c5d.9xlarge`
-- `ml.c5d.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.m4.10xlarge`
-- `ml.m4.16xlarge`
-- `ml.m4.2xlarge`
-- `ml.m4.4xlarge`
-- `ml.m4.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.xlarge`
-- `ml.m5d.12xlarge`
-- `ml.m5d.16xlarge`
-- `ml.m5d.24xlarge`
-- `ml.m5d.2xlarge`
-- `ml.m5d.4xlarge`
-- `ml.m5d.8xlarge`
-- `ml.m5d.large`
-- `ml.m5d.xlarge`
-- `ml.p2.16xlarge`
-- `ml.p2.8xlarge`
-- `ml.p2.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-- `ml.p3dn.24xlarge`
-- `ml.r5.12xlarge`
-- `ml.r5.16xlarge`
-- `ml.r5.24xlarge`
-- `ml.r5.2xlarge`
-- `ml.r5.4xlarge`
-- `ml.r5.8xlarge`
-- `ml.r5.large`
-- `ml.r5.xlarge`
-- `ml.t2.2xlarge`
-- `ml.t2.large`
-- `ml.t2.medium`
-- `ml.t2.xlarge`
-- `ml.t3.2xlarge`
-- `ml.t3.large`
-- `ml.t3.medium`
-- `ml.t3.xlarge`
-
-<a id="joinsourcetype"></a>
-
+```python title="Definition"
+InstanceTypeType = Literal[
+    "ml.c4.2xlarge",
+    "ml.c4.4xlarge",
+    "ml.c4.8xlarge",
+    "ml.c4.xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.xlarge",
+    "ml.c5d.18xlarge",
+    "ml.c5d.2xlarge",
+    "ml.c5d.4xlarge",
+    "ml.c5d.9xlarge",
+    "ml.c5d.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.m4.10xlarge",
+    "ml.m4.16xlarge",
+    "ml.m4.2xlarge",
+    "ml.m4.4xlarge",
+    "ml.m4.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.xlarge",
+    "ml.m5d.12xlarge",
+    "ml.m5d.16xlarge",
+    "ml.m5d.24xlarge",
+    "ml.m5d.2xlarge",
+    "ml.m5d.4xlarge",
+    "ml.m5d.8xlarge",
+    "ml.m5d.large",
+    "ml.m5d.xlarge",
+    "ml.p2.16xlarge",
+    "ml.p2.8xlarge",
+    "ml.p2.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+    "ml.p3dn.24xlarge",
+    "ml.r5.12xlarge",
+    "ml.r5.16xlarge",
+    "ml.r5.24xlarge",
+    "ml.r5.2xlarge",
+    "ml.r5.4xlarge",
+    "ml.r5.8xlarge",
+    "ml.r5.large",
+    "ml.r5.xlarge",
+    "ml.t2.2xlarge",
+    "ml.t2.large",
+    "ml.t2.medium",
+    "ml.t2.xlarge",
+    "ml.t3.2xlarge",
+    "ml.t3.large",
+    "ml.t3.medium",
+    "ml.t3.xlarge",
+]
+```
 ## JoinSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import JoinSourceType
+
+def get_value() -> JoinSourceType:
+    return "Input"
 ```
 
-Values:
-
-- `Input`
-- `None`
-
-<a id="labelingjobstatustype"></a>
-
+```python title="Definition"
+JoinSourceType = Literal[
+    "Input",
+    "None",
+]
+```
 ## LabelingJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import LabelingJobStatusType
+
+def get_value() -> LabelingJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `Initializing`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="lineagetypetype"></a>
-
+```python title="Definition"
+LabelingJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "Initializing",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## LineageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import LineageTypeType
+
+def get_value() -> LineageTypeType:
+    return "Action"
 ```
 
-Values:
-
-- `Action`
-- `Artifact`
-- `Context`
-- `TrialComponent`
-
-<a id="listactionspaginatorname"></a>
-
+```python title="Definition"
+LineageTypeType = Literal[
+    "Action",
+    "Artifact",
+    "Context",
+    "TrialComponent",
+]
+```
 ## ListActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListActionsPaginatorName
+
+def get_value() -> ListActionsPaginatorName:
+    return "list_actions"
 ```
 
-Values:
-
-- `list_actions`
-
-<a id="listalgorithmspaginatorname"></a>
-
+```python title="Definition"
+ListActionsPaginatorName = Literal[
+    "list_actions",
+]
+```
 ## ListAlgorithmsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListAlgorithmsPaginatorName
+
+def get_value() -> ListAlgorithmsPaginatorName:
+    return "list_algorithms"
 ```
 
-Values:
-
-- `list_algorithms`
-
-<a id="listappimageconfigspaginatorname"></a>
-
+```python title="Definition"
+ListAlgorithmsPaginatorName = Literal[
+    "list_algorithms",
+]
+```
 ## ListAppImageConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListAppImageConfigsPaginatorName
+
+def get_value() -> ListAppImageConfigsPaginatorName:
+    return "list_app_image_configs"
 ```
 
-Values:
-
-- `list_app_image_configs`
-
-<a id="listappspaginatorname"></a>
-
+```python title="Definition"
+ListAppImageConfigsPaginatorName = Literal[
+    "list_app_image_configs",
+]
+```
 ## ListAppsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListAppsPaginatorName
+
+def get_value() -> ListAppsPaginatorName:
+    return "list_apps"
 ```
 
-Values:
-
-- `list_apps`
-
-<a id="listartifactspaginatorname"></a>
-
+```python title="Definition"
+ListAppsPaginatorName = Literal[
+    "list_apps",
+]
+```
 ## ListArtifactsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListArtifactsPaginatorName
+
+def get_value() -> ListArtifactsPaginatorName:
+    return "list_artifacts"
 ```
 
-Values:
-
-- `list_artifacts`
-
-<a id="listassociationspaginatorname"></a>
-
+```python title="Definition"
+ListArtifactsPaginatorName = Literal[
+    "list_artifacts",
+]
+```
 ## ListAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListAssociationsPaginatorName
+
+def get_value() -> ListAssociationsPaginatorName:
+    return "list_associations"
 ```
 
-Values:
-
-- `list_associations`
-
-<a id="listautomljobspaginatorname"></a>
-
+```python title="Definition"
+ListAssociationsPaginatorName = Literal[
+    "list_associations",
+]
+```
 ## ListAutoMLJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListAutoMLJobsPaginatorName
+
+def get_value() -> ListAutoMLJobsPaginatorName:
+    return "list_auto_ml_jobs"
 ```
 
-Values:
-
-- `list_auto_ml_jobs`
-
-<a id="listcandidatesforautomljobpaginatorname"></a>
-
+```python title="Definition"
+ListAutoMLJobsPaginatorName = Literal[
+    "list_auto_ml_jobs",
+]
+```
 ## ListCandidatesForAutoMLJobPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListCandidatesForAutoMLJobPaginatorName
+
+def get_value() -> ListCandidatesForAutoMLJobPaginatorName:
+    return "list_candidates_for_auto_ml_job"
 ```
 
-Values:
-
-- `list_candidates_for_auto_ml_job`
-
-<a id="listcoderepositoriespaginatorname"></a>
-
+```python title="Definition"
+ListCandidatesForAutoMLJobPaginatorName = Literal[
+    "list_candidates_for_auto_ml_job",
+]
+```
 ## ListCodeRepositoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListCodeRepositoriesPaginatorName
+
+def get_value() -> ListCodeRepositoriesPaginatorName:
+    return "list_code_repositories"
 ```
 
-Values:
-
-- `list_code_repositories`
-
-<a id="listcompilationjobspaginatorname"></a>
-
+```python title="Definition"
+ListCodeRepositoriesPaginatorName = Literal[
+    "list_code_repositories",
+]
+```
 ## ListCompilationJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListCompilationJobsPaginatorName
+
+def get_value() -> ListCompilationJobsPaginatorName:
+    return "list_compilation_jobs"
 ```
 
-Values:
-
-- `list_compilation_jobs`
-
-<a id="listcompilationjobssortbytype"></a>
-
+```python title="Definition"
+ListCompilationJobsPaginatorName = Literal[
+    "list_compilation_jobs",
+]
+```
 ## ListCompilationJobsSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListCompilationJobsSortByType
+
+def get_value() -> ListCompilationJobsSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="listcontextspaginatorname"></a>
-
+```python title="Definition"
+ListCompilationJobsSortByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## ListContextsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListContextsPaginatorName
+
+def get_value() -> ListContextsPaginatorName:
+    return "list_contexts"
 ```
 
-Values:
-
-- `list_contexts`
-
-<a id="listdataqualityjobdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListContextsPaginatorName = Literal[
+    "list_contexts",
+]
+```
 ## ListDataQualityJobDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListDataQualityJobDefinitionsPaginatorName
+
+def get_value() -> ListDataQualityJobDefinitionsPaginatorName:
+    return "list_data_quality_job_definitions"
 ```
 
-Values:
-
-- `list_data_quality_job_definitions`
-
-<a id="listdevicefleetspaginatorname"></a>
-
+```python title="Definition"
+ListDataQualityJobDefinitionsPaginatorName = Literal[
+    "list_data_quality_job_definitions",
+]
+```
 ## ListDeviceFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListDeviceFleetsPaginatorName
+
+def get_value() -> ListDeviceFleetsPaginatorName:
+    return "list_device_fleets"
 ```
 
-Values:
-
-- `list_device_fleets`
-
-<a id="listdevicefleetssortbytype"></a>
-
+```python title="Definition"
+ListDeviceFleetsPaginatorName = Literal[
+    "list_device_fleets",
+]
+```
 ## ListDeviceFleetsSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListDeviceFleetsSortByType
+
+def get_value() -> ListDeviceFleetsSortByType:
+    return "CREATION_TIME"
 ```
 
-Values:
-
-- `CREATION_TIME`
-- `LAST_MODIFIED_TIME`
-- `NAME`
-
-<a id="listdevicespaginatorname"></a>
-
+```python title="Definition"
+ListDeviceFleetsSortByType = Literal[
+    "CREATION_TIME",
+    "LAST_MODIFIED_TIME",
+    "NAME",
+]
+```
 ## ListDevicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListDevicesPaginatorName
+
+def get_value() -> ListDevicesPaginatorName:
+    return "list_devices"
 ```
 
-Values:
-
-- `list_devices`
-
-<a id="listdomainspaginatorname"></a>
-
+```python title="Definition"
+ListDevicesPaginatorName = Literal[
+    "list_devices",
+]
+```
 ## ListDomainsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListDomainsPaginatorName
+
+def get_value() -> ListDomainsPaginatorName:
+    return "list_domains"
 ```
 
-Values:
-
-- `list_domains`
-
-<a id="listedgepackagingjobspaginatorname"></a>
-
+```python title="Definition"
+ListDomainsPaginatorName = Literal[
+    "list_domains",
+]
+```
 ## ListEdgePackagingJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListEdgePackagingJobsPaginatorName
+
+def get_value() -> ListEdgePackagingJobsPaginatorName:
+    return "list_edge_packaging_jobs"
 ```
 
-Values:
-
-- `list_edge_packaging_jobs`
-
-<a id="listedgepackagingjobssortbytype"></a>
-
+```python title="Definition"
+ListEdgePackagingJobsPaginatorName = Literal[
+    "list_edge_packaging_jobs",
+]
+```
 ## ListEdgePackagingJobsSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListEdgePackagingJobsSortByType
+
+def get_value() -> ListEdgePackagingJobsSortByType:
+    return "CREATION_TIME"
 ```
 
-Values:
-
-- `CREATION_TIME`
-- `LAST_MODIFIED_TIME`
-- `MODEL_NAME`
-- `NAME`
-- `STATUS`
-
-<a id="listendpointconfigspaginatorname"></a>
-
+```python title="Definition"
+ListEdgePackagingJobsSortByType = Literal[
+    "CREATION_TIME",
+    "LAST_MODIFIED_TIME",
+    "MODEL_NAME",
+    "NAME",
+    "STATUS",
+]
+```
 ## ListEndpointConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListEndpointConfigsPaginatorName
+
+def get_value() -> ListEndpointConfigsPaginatorName:
+    return "list_endpoint_configs"
 ```
 
-Values:
-
-- `list_endpoint_configs`
-
-<a id="listendpointspaginatorname"></a>
-
+```python title="Definition"
+ListEndpointConfigsPaginatorName = Literal[
+    "list_endpoint_configs",
+]
+```
 ## ListEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListEndpointsPaginatorName
+
+def get_value() -> ListEndpointsPaginatorName:
+    return "list_endpoints"
 ```
 
-Values:
-
-- `list_endpoints`
-
-<a id="listexperimentspaginatorname"></a>
-
+```python title="Definition"
+ListEndpointsPaginatorName = Literal[
+    "list_endpoints",
+]
+```
 ## ListExperimentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListExperimentsPaginatorName
+
+def get_value() -> ListExperimentsPaginatorName:
+    return "list_experiments"
 ```
 
-Values:
-
-- `list_experiments`
-
-<a id="listfeaturegroupspaginatorname"></a>
-
+```python title="Definition"
+ListExperimentsPaginatorName = Literal[
+    "list_experiments",
+]
+```
 ## ListFeatureGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListFeatureGroupsPaginatorName
+
+def get_value() -> ListFeatureGroupsPaginatorName:
+    return "list_feature_groups"
 ```
 
-Values:
-
-- `list_feature_groups`
-
-<a id="listflowdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListFeatureGroupsPaginatorName = Literal[
+    "list_feature_groups",
+]
+```
 ## ListFlowDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListFlowDefinitionsPaginatorName
+
+def get_value() -> ListFlowDefinitionsPaginatorName:
+    return "list_flow_definitions"
 ```
 
-Values:
-
-- `list_flow_definitions`
-
-<a id="listhumantaskuispaginatorname"></a>
-
+```python title="Definition"
+ListFlowDefinitionsPaginatorName = Literal[
+    "list_flow_definitions",
+]
+```
 ## ListHumanTaskUisPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListHumanTaskUisPaginatorName
+
+def get_value() -> ListHumanTaskUisPaginatorName:
+    return "list_human_task_uis"
 ```
 
-Values:
-
-- `list_human_task_uis`
-
-<a id="listhyperparametertuningjobspaginatorname"></a>
-
+```python title="Definition"
+ListHumanTaskUisPaginatorName = Literal[
+    "list_human_task_uis",
+]
+```
 ## ListHyperParameterTuningJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListHyperParameterTuningJobsPaginatorName
+
+def get_value() -> ListHyperParameterTuningJobsPaginatorName:
+    return "list_hyper_parameter_tuning_jobs"
 ```
 
-Values:
-
-- `list_hyper_parameter_tuning_jobs`
-
-<a id="listimageversionspaginatorname"></a>
-
+```python title="Definition"
+ListHyperParameterTuningJobsPaginatorName = Literal[
+    "list_hyper_parameter_tuning_jobs",
+]
+```
 ## ListImageVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListImageVersionsPaginatorName
+
+def get_value() -> ListImageVersionsPaginatorName:
+    return "list_image_versions"
 ```
 
-Values:
-
-- `list_image_versions`
-
-<a id="listimagespaginatorname"></a>
-
+```python title="Definition"
+ListImageVersionsPaginatorName = Literal[
+    "list_image_versions",
+]
+```
 ## ListImagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListImagesPaginatorName
+
+def get_value() -> ListImagesPaginatorName:
+    return "list_images"
 ```
 
-Values:
-
-- `list_images`
-
-<a id="listinferencerecommendationsjobspaginatorname"></a>
-
+```python title="Definition"
+ListImagesPaginatorName = Literal[
+    "list_images",
+]
+```
 ## ListInferenceRecommendationsJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListInferenceRecommendationsJobsPaginatorName
+
+def get_value() -> ListInferenceRecommendationsJobsPaginatorName:
+    return "list_inference_recommendations_jobs"
 ```
 
-Values:
-
-- `list_inference_recommendations_jobs`
-
-<a id="listinferencerecommendationsjobssortbytype"></a>
-
+```python title="Definition"
+ListInferenceRecommendationsJobsPaginatorName = Literal[
+    "list_inference_recommendations_jobs",
+]
+```
 ## ListInferenceRecommendationsJobsSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListInferenceRecommendationsJobsSortByType
+
+def get_value() -> ListInferenceRecommendationsJobsSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="listlabelingjobsforworkteampaginatorname"></a>
-
+```python title="Definition"
+ListInferenceRecommendationsJobsSortByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## ListLabelingJobsForWorkteamPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListLabelingJobsForWorkteamPaginatorName
+
+def get_value() -> ListLabelingJobsForWorkteamPaginatorName:
+    return "list_labeling_jobs_for_workteam"
 ```
 
-Values:
-
-- `list_labeling_jobs_for_workteam`
-
-<a id="listlabelingjobsforworkteamsortbyoptionstype"></a>
-
+```python title="Definition"
+ListLabelingJobsForWorkteamPaginatorName = Literal[
+    "list_labeling_jobs_for_workteam",
+]
+```
 ## ListLabelingJobsForWorkteamSortByOptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListLabelingJobsForWorkteamSortByOptionsType
+
+def get_value() -> ListLabelingJobsForWorkteamSortByOptionsType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-
-<a id="listlabelingjobspaginatorname"></a>
-
+```python title="Definition"
+ListLabelingJobsForWorkteamSortByOptionsType = Literal[
+    "CreationTime",
+]
+```
 ## ListLabelingJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListLabelingJobsPaginatorName
+
+def get_value() -> ListLabelingJobsPaginatorName:
+    return "list_labeling_jobs"
 ```
 
-Values:
-
-- `list_labeling_jobs`
-
-<a id="listlineagegroupspaginatorname"></a>
-
+```python title="Definition"
+ListLabelingJobsPaginatorName = Literal[
+    "list_labeling_jobs",
+]
+```
 ## ListLineageGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListLineageGroupsPaginatorName
+
+def get_value() -> ListLineageGroupsPaginatorName:
+    return "list_lineage_groups"
 ```
 
-Values:
-
-- `list_lineage_groups`
-
-<a id="listmodelbiasjobdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListLineageGroupsPaginatorName = Literal[
+    "list_lineage_groups",
+]
+```
 ## ListModelBiasJobDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelBiasJobDefinitionsPaginatorName
+
+def get_value() -> ListModelBiasJobDefinitionsPaginatorName:
+    return "list_model_bias_job_definitions"
 ```
 
-Values:
-
-- `list_model_bias_job_definitions`
-
-<a id="listmodelexplainabilityjobdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListModelBiasJobDefinitionsPaginatorName = Literal[
+    "list_model_bias_job_definitions",
+]
+```
 ## ListModelExplainabilityJobDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelExplainabilityJobDefinitionsPaginatorName
+
+def get_value() -> ListModelExplainabilityJobDefinitionsPaginatorName:
+    return "list_model_explainability_job_definitions"
 ```
 
-Values:
-
-- `list_model_explainability_job_definitions`
-
-<a id="listmodelmetadatapaginatorname"></a>
-
+```python title="Definition"
+ListModelExplainabilityJobDefinitionsPaginatorName = Literal[
+    "list_model_explainability_job_definitions",
+]
+```
 ## ListModelMetadataPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelMetadataPaginatorName
+
+def get_value() -> ListModelMetadataPaginatorName:
+    return "list_model_metadata"
 ```
 
-Values:
-
-- `list_model_metadata`
-
-<a id="listmodelpackagegroupspaginatorname"></a>
-
+```python title="Definition"
+ListModelMetadataPaginatorName = Literal[
+    "list_model_metadata",
+]
+```
 ## ListModelPackageGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelPackageGroupsPaginatorName
+
+def get_value() -> ListModelPackageGroupsPaginatorName:
+    return "list_model_package_groups"
 ```
 
-Values:
-
-- `list_model_package_groups`
-
-<a id="listmodelpackagespaginatorname"></a>
-
+```python title="Definition"
+ListModelPackageGroupsPaginatorName = Literal[
+    "list_model_package_groups",
+]
+```
 ## ListModelPackagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelPackagesPaginatorName
+
+def get_value() -> ListModelPackagesPaginatorName:
+    return "list_model_packages"
 ```
 
-Values:
-
-- `list_model_packages`
-
-<a id="listmodelqualityjobdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListModelPackagesPaginatorName = Literal[
+    "list_model_packages",
+]
+```
 ## ListModelQualityJobDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelQualityJobDefinitionsPaginatorName
+
+def get_value() -> ListModelQualityJobDefinitionsPaginatorName:
+    return "list_model_quality_job_definitions"
 ```
 
-Values:
-
-- `list_model_quality_job_definitions`
-
-<a id="listmodelspaginatorname"></a>
-
+```python title="Definition"
+ListModelQualityJobDefinitionsPaginatorName = Literal[
+    "list_model_quality_job_definitions",
+]
+```
 ## ListModelsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListModelsPaginatorName
+
+def get_value() -> ListModelsPaginatorName:
+    return "list_models"
 ```
 
-Values:
-
-- `list_models`
-
-<a id="listmonitoringexecutionspaginatorname"></a>
-
+```python title="Definition"
+ListModelsPaginatorName = Literal[
+    "list_models",
+]
+```
 ## ListMonitoringExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListMonitoringExecutionsPaginatorName
+
+def get_value() -> ListMonitoringExecutionsPaginatorName:
+    return "list_monitoring_executions"
 ```
 
-Values:
-
-- `list_monitoring_executions`
-
-<a id="listmonitoringschedulespaginatorname"></a>
-
+```python title="Definition"
+ListMonitoringExecutionsPaginatorName = Literal[
+    "list_monitoring_executions",
+]
+```
 ## ListMonitoringSchedulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListMonitoringSchedulesPaginatorName
+
+def get_value() -> ListMonitoringSchedulesPaginatorName:
+    return "list_monitoring_schedules"
 ```
 
-Values:
-
-- `list_monitoring_schedules`
-
-<a id="listnotebookinstancelifecycleconfigspaginatorname"></a>
-
+```python title="Definition"
+ListMonitoringSchedulesPaginatorName = Literal[
+    "list_monitoring_schedules",
+]
+```
 ## ListNotebookInstanceLifecycleConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListNotebookInstanceLifecycleConfigsPaginatorName
+
+def get_value() -> ListNotebookInstanceLifecycleConfigsPaginatorName:
+    return "list_notebook_instance_lifecycle_configs"
 ```
 
-Values:
-
-- `list_notebook_instance_lifecycle_configs`
-
-<a id="listnotebookinstancespaginatorname"></a>
-
+```python title="Definition"
+ListNotebookInstanceLifecycleConfigsPaginatorName = Literal[
+    "list_notebook_instance_lifecycle_configs",
+]
+```
 ## ListNotebookInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListNotebookInstancesPaginatorName
+
+def get_value() -> ListNotebookInstancesPaginatorName:
+    return "list_notebook_instances"
 ```
 
-Values:
-
-- `list_notebook_instances`
-
-<a id="listpipelineexecutionstepspaginatorname"></a>
-
+```python title="Definition"
+ListNotebookInstancesPaginatorName = Literal[
+    "list_notebook_instances",
+]
+```
 ## ListPipelineExecutionStepsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListPipelineExecutionStepsPaginatorName
+
+def get_value() -> ListPipelineExecutionStepsPaginatorName:
+    return "list_pipeline_execution_steps"
 ```
 
-Values:
-
-- `list_pipeline_execution_steps`
-
-<a id="listpipelineexecutionspaginatorname"></a>
-
+```python title="Definition"
+ListPipelineExecutionStepsPaginatorName = Literal[
+    "list_pipeline_execution_steps",
+]
+```
 ## ListPipelineExecutionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListPipelineExecutionsPaginatorName
+
+def get_value() -> ListPipelineExecutionsPaginatorName:
+    return "list_pipeline_executions"
 ```
 
-Values:
-
-- `list_pipeline_executions`
-
-<a id="listpipelineparametersforexecutionpaginatorname"></a>
-
+```python title="Definition"
+ListPipelineExecutionsPaginatorName = Literal[
+    "list_pipeline_executions",
+]
+```
 ## ListPipelineParametersForExecutionPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListPipelineParametersForExecutionPaginatorName
+
+def get_value() -> ListPipelineParametersForExecutionPaginatorName:
+    return "list_pipeline_parameters_for_execution"
 ```
 
-Values:
-
-- `list_pipeline_parameters_for_execution`
-
-<a id="listpipelinespaginatorname"></a>
-
+```python title="Definition"
+ListPipelineParametersForExecutionPaginatorName = Literal[
+    "list_pipeline_parameters_for_execution",
+]
+```
 ## ListPipelinesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListPipelinesPaginatorName
+
+def get_value() -> ListPipelinesPaginatorName:
+    return "list_pipelines"
 ```
 
-Values:
-
-- `list_pipelines`
-
-<a id="listprocessingjobspaginatorname"></a>
-
+```python title="Definition"
+ListPipelinesPaginatorName = Literal[
+    "list_pipelines",
+]
+```
 ## ListProcessingJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListProcessingJobsPaginatorName
+
+def get_value() -> ListProcessingJobsPaginatorName:
+    return "list_processing_jobs"
 ```
 
-Values:
-
-- `list_processing_jobs`
-
-<a id="liststudiolifecycleconfigspaginatorname"></a>
-
+```python title="Definition"
+ListProcessingJobsPaginatorName = Literal[
+    "list_processing_jobs",
+]
+```
 ## ListStudioLifecycleConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListStudioLifecycleConfigsPaginatorName
+
+def get_value() -> ListStudioLifecycleConfigsPaginatorName:
+    return "list_studio_lifecycle_configs"
 ```
 
-Values:
-
-- `list_studio_lifecycle_configs`
-
-<a id="listsubscribedworkteamspaginatorname"></a>
-
+```python title="Definition"
+ListStudioLifecycleConfigsPaginatorName = Literal[
+    "list_studio_lifecycle_configs",
+]
+```
 ## ListSubscribedWorkteamsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListSubscribedWorkteamsPaginatorName
+
+def get_value() -> ListSubscribedWorkteamsPaginatorName:
+    return "list_subscribed_workteams"
 ```
 
-Values:
-
-- `list_subscribed_workteams`
-
-<a id="listtagspaginatorname"></a>
-
+```python title="Definition"
+ListSubscribedWorkteamsPaginatorName = Literal[
+    "list_subscribed_workteams",
+]
+```
 ## ListTagsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTagsPaginatorName
+
+def get_value() -> ListTagsPaginatorName:
+    return "list_tags"
 ```
 
-Values:
-
-- `list_tags`
-
-<a id="listtrainingjobsforhyperparametertuningjobpaginatorname"></a>
-
+```python title="Definition"
+ListTagsPaginatorName = Literal[
+    "list_tags",
+]
+```
 ## ListTrainingJobsForHyperParameterTuningJobPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTrainingJobsForHyperParameterTuningJobPaginatorName
+
+def get_value() -> ListTrainingJobsForHyperParameterTuningJobPaginatorName:
+    return "list_training_jobs_for_hyper_parameter_tuning_job"
 ```
 
-Values:
-
-- `list_training_jobs_for_hyper_parameter_tuning_job`
-
-<a id="listtrainingjobspaginatorname"></a>
-
+```python title="Definition"
+ListTrainingJobsForHyperParameterTuningJobPaginatorName = Literal[
+    "list_training_jobs_for_hyper_parameter_tuning_job",
+]
+```
 ## ListTrainingJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTrainingJobsPaginatorName
+
+def get_value() -> ListTrainingJobsPaginatorName:
+    return "list_training_jobs"
 ```
 
-Values:
-
-- `list_training_jobs`
-
-<a id="listtransformjobspaginatorname"></a>
-
+```python title="Definition"
+ListTrainingJobsPaginatorName = Literal[
+    "list_training_jobs",
+]
+```
 ## ListTransformJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTransformJobsPaginatorName
+
+def get_value() -> ListTransformJobsPaginatorName:
+    return "list_transform_jobs"
 ```
 
-Values:
-
-- `list_transform_jobs`
-
-<a id="listtrialcomponentspaginatorname"></a>
-
+```python title="Definition"
+ListTransformJobsPaginatorName = Literal[
+    "list_transform_jobs",
+]
+```
 ## ListTrialComponentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTrialComponentsPaginatorName
+
+def get_value() -> ListTrialComponentsPaginatorName:
+    return "list_trial_components"
 ```
 
-Values:
-
-- `list_trial_components`
-
-<a id="listtrialspaginatorname"></a>
-
+```python title="Definition"
+ListTrialComponentsPaginatorName = Literal[
+    "list_trial_components",
+]
+```
 ## ListTrialsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListTrialsPaginatorName
+
+def get_value() -> ListTrialsPaginatorName:
+    return "list_trials"
 ```
 
-Values:
-
-- `list_trials`
-
-<a id="listuserprofilespaginatorname"></a>
-
+```python title="Definition"
+ListTrialsPaginatorName = Literal[
+    "list_trials",
+]
+```
 ## ListUserProfilesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListUserProfilesPaginatorName
+
+def get_value() -> ListUserProfilesPaginatorName:
+    return "list_user_profiles"
 ```
 
-Values:
-
-- `list_user_profiles`
-
-<a id="listworkforcespaginatorname"></a>
-
+```python title="Definition"
+ListUserProfilesPaginatorName = Literal[
+    "list_user_profiles",
+]
+```
 ## ListWorkforcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListWorkforcesPaginatorName
+
+def get_value() -> ListWorkforcesPaginatorName:
+    return "list_workforces"
 ```
 
-Values:
-
-- `list_workforces`
-
-<a id="listworkforcessortbyoptionstype"></a>
-
+```python title="Definition"
+ListWorkforcesPaginatorName = Literal[
+    "list_workforces",
+]
+```
 ## ListWorkforcesSortByOptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListWorkforcesSortByOptionsType
+
+def get_value() -> ListWorkforcesSortByOptionsType:
+    return "CreateDate"
 ```
 
-Values:
-
-- `CreateDate`
-- `Name`
-
-<a id="listworkteamspaginatorname"></a>
-
+```python title="Definition"
+ListWorkforcesSortByOptionsType = Literal[
+    "CreateDate",
+    "Name",
+]
+```
 ## ListWorkteamsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListWorkteamsPaginatorName
+
+def get_value() -> ListWorkteamsPaginatorName:
+    return "list_workteams"
 ```
 
-Values:
-
-- `list_workteams`
-
-<a id="listworkteamssortbyoptionstype"></a>
-
+```python title="Definition"
+ListWorkteamsPaginatorName = Literal[
+    "list_workteams",
+]
+```
 ## ListWorkteamsSortByOptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ListWorkteamsSortByOptionsType
+
+def get_value() -> ListWorkteamsSortByOptionsType:
+    return "CreateDate"
 ```
 
-Values:
-
-- `CreateDate`
-- `Name`
-
-<a id="metricsetsourcetype"></a>
-
+```python title="Definition"
+ListWorkteamsSortByOptionsType = Literal[
+    "CreateDate",
+    "Name",
+]
+```
 ## MetricSetSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MetricSetSourceType
+
+def get_value() -> MetricSetSourceType:
+    return "Test"
 ```
 
-Values:
-
-- `Test`
-- `Train`
-- `Validation`
-
-<a id="modelapprovalstatustype"></a>
-
+```python title="Definition"
+MetricSetSourceType = Literal[
+    "Test",
+    "Train",
+    "Validation",
+]
+```
 ## ModelApprovalStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelApprovalStatusType
+
+def get_value() -> ModelApprovalStatusType:
+    return "Approved"
 ```
 
-Values:
-
-- `Approved`
-- `PendingManualApproval`
-- `Rejected`
-
-<a id="modelcachesettingtype"></a>
-
+```python title="Definition"
+ModelApprovalStatusType = Literal[
+    "Approved",
+    "PendingManualApproval",
+    "Rejected",
+]
+```
 ## ModelCacheSettingType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelCacheSettingType
+
+def get_value() -> ModelCacheSettingType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="modelmetadatafiltertypetype"></a>
-
+```python title="Definition"
+ModelCacheSettingType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ModelMetadataFilterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelMetadataFilterTypeType
+
+def get_value() -> ModelMetadataFilterTypeType:
+    return "Domain"
 ```
 
-Values:
-
-- `Domain`
-- `Framework`
-- `FrameworkVersion`
-- `Task`
-
-<a id="modelpackagegroupsortbytype"></a>
-
+```python title="Definition"
+ModelMetadataFilterTypeType = Literal[
+    "Domain",
+    "Framework",
+    "FrameworkVersion",
+    "Task",
+]
+```
 ## ModelPackageGroupSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelPackageGroupSortByType
+
+def get_value() -> ModelPackageGroupSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="modelpackagegroupstatustype"></a>
-
+```python title="Definition"
+ModelPackageGroupSortByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## ModelPackageGroupStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelPackageGroupStatusType
+
+def get_value() -> ModelPackageGroupStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `DeleteFailed`
-- `Deleting`
-- `Failed`
-- `InProgress`
-- `Pending`
-
-<a id="modelpackagesortbytype"></a>
-
+```python title="Definition"
+ModelPackageGroupStatusType = Literal[
+    "Completed",
+    "DeleteFailed",
+    "Deleting",
+    "Failed",
+    "InProgress",
+    "Pending",
+]
+```
 ## ModelPackageSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelPackageSortByType
+
+def get_value() -> ModelPackageSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="modelpackagestatustype"></a>
-
+```python title="Definition"
+ModelPackageSortByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## ModelPackageStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelPackageStatusType
+
+def get_value() -> ModelPackageStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Deleting`
-- `Failed`
-- `InProgress`
-- `Pending`
-
-<a id="modelpackagetypetype"></a>
-
+```python title="Definition"
+ModelPackageStatusType = Literal[
+    "Completed",
+    "Deleting",
+    "Failed",
+    "InProgress",
+    "Pending",
+]
+```
 ## ModelPackageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelPackageTypeType
+
+def get_value() -> ModelPackageTypeType:
+    return "Both"
 ```
 
-Values:
-
-- `Both`
-- `Unversioned`
-- `Versioned`
-
-<a id="modelsortkeytype"></a>
-
+```python title="Definition"
+ModelPackageTypeType = Literal[
+    "Both",
+    "Unversioned",
+    "Versioned",
+]
+```
 ## ModelSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ModelSortKeyType
+
+def get_value() -> ModelSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="monitoringexecutionsortkeytype"></a>
-
+```python title="Definition"
+ModelSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## MonitoringExecutionSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MonitoringExecutionSortKeyType
+
+def get_value() -> MonitoringExecutionSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `ScheduledTime`
-- `Status`
-
-<a id="monitoringjobdefinitionsortkeytype"></a>
-
+```python title="Definition"
+MonitoringExecutionSortKeyType = Literal[
+    "CreationTime",
+    "ScheduledTime",
+    "Status",
+]
+```
 ## MonitoringJobDefinitionSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MonitoringJobDefinitionSortKeyType
+
+def get_value() -> MonitoringJobDefinitionSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="monitoringproblemtypetype"></a>
-
+```python title="Definition"
+MonitoringJobDefinitionSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## MonitoringProblemTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MonitoringProblemTypeType
+
+def get_value() -> MonitoringProblemTypeType:
+    return "BinaryClassification"
 ```
 
-Values:
-
-- `BinaryClassification`
-- `MulticlassClassification`
-- `Regression`
-
-<a id="monitoringschedulesortkeytype"></a>
-
+```python title="Definition"
+MonitoringProblemTypeType = Literal[
+    "BinaryClassification",
+    "MulticlassClassification",
+    "Regression",
+]
+```
 ## MonitoringScheduleSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MonitoringScheduleSortKeyType
+
+def get_value() -> MonitoringScheduleSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="monitoringtypetype"></a>
-
+```python title="Definition"
+MonitoringScheduleSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## MonitoringTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import MonitoringTypeType
+
+def get_value() -> MonitoringTypeType:
+    return "DataQuality"
 ```
 
-Values:
-
-- `DataQuality`
-- `ModelBias`
-- `ModelExplainability`
-- `ModelQuality`
-
-<a id="notebookinstanceacceleratortypetype"></a>
-
+```python title="Definition"
+MonitoringTypeType = Literal[
+    "DataQuality",
+    "ModelBias",
+    "ModelExplainability",
+    "ModelQuality",
+]
+```
 ## NotebookInstanceAcceleratorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceAcceleratorTypeType
+
+def get_value() -> NotebookInstanceAcceleratorTypeType:
+    return "ml.eia1.large"
 ```
 
-Values:
-
-- `ml.eia1.large`
-- `ml.eia1.medium`
-- `ml.eia1.xlarge`
-- `ml.eia2.large`
-- `ml.eia2.medium`
-- `ml.eia2.xlarge`
-
-<a id="notebookinstancedeletedwaitername"></a>
-
+```python title="Definition"
+NotebookInstanceAcceleratorTypeType = Literal[
+    "ml.eia1.large",
+    "ml.eia1.medium",
+    "ml.eia1.xlarge",
+    "ml.eia2.large",
+    "ml.eia2.medium",
+    "ml.eia2.xlarge",
+]
+```
 ## NotebookInstanceDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceDeletedWaiterName
+
+def get_value() -> NotebookInstanceDeletedWaiterName:
+    return "notebook_instance_deleted"
 ```
 
-Values:
-
-- `notebook_instance_deleted`
-
-<a id="notebookinstanceinservicewaitername"></a>
-
+```python title="Definition"
+NotebookInstanceDeletedWaiterName = Literal[
+    "notebook_instance_deleted",
+]
+```
 ## NotebookInstanceInServiceWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceInServiceWaiterName
+
+def get_value() -> NotebookInstanceInServiceWaiterName:
+    return "notebook_instance_in_service"
 ```
 
-Values:
-
-- `notebook_instance_in_service`
-
-<a id="notebookinstancelifecycleconfigsortkeytype"></a>
-
+```python title="Definition"
+NotebookInstanceInServiceWaiterName = Literal[
+    "notebook_instance_in_service",
+]
+```
 ## NotebookInstanceLifecycleConfigSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortKeyType
+
+def get_value() -> NotebookInstanceLifecycleConfigSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LastModifiedTime`
-- `Name`
-
-<a id="notebookinstancelifecycleconfigsortordertype"></a>
-
+```python title="Definition"
+NotebookInstanceLifecycleConfigSortKeyType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+    "Name",
+]
+```
 ## NotebookInstanceLifecycleConfigSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceLifecycleConfigSortOrderType
+
+def get_value() -> NotebookInstanceLifecycleConfigSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="notebookinstancesortkeytype"></a>
-
+```python title="Definition"
+NotebookInstanceLifecycleConfigSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## NotebookInstanceSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceSortKeyType
+
+def get_value() -> NotebookInstanceSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="notebookinstancesortordertype"></a>
-
+```python title="Definition"
+NotebookInstanceSortKeyType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## NotebookInstanceSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceSortOrderType
+
+def get_value() -> NotebookInstanceSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="notebookinstancestatustype"></a>
-
+```python title="Definition"
+NotebookInstanceSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## NotebookInstanceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceStatusType
+
+def get_value() -> NotebookInstanceStatusType:
+    return "Deleting"
 ```
 
-Values:
-
-- `Deleting`
-- `Failed`
-- `InService`
-- `Pending`
-- `Stopped`
-- `Stopping`
-- `Updating`
-
-<a id="notebookinstancestoppedwaitername"></a>
-
+```python title="Definition"
+NotebookInstanceStatusType = Literal[
+    "Deleting",
+    "Failed",
+    "InService",
+    "Pending",
+    "Stopped",
+    "Stopping",
+    "Updating",
+]
+```
 ## NotebookInstanceStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookInstanceStoppedWaiterName
+
+def get_value() -> NotebookInstanceStoppedWaiterName:
+    return "notebook_instance_stopped"
 ```
 
-Values:
-
-- `notebook_instance_stopped`
-
-<a id="notebookoutputoptiontype"></a>
-
+```python title="Definition"
+NotebookInstanceStoppedWaiterName = Literal[
+    "notebook_instance_stopped",
+]
+```
 ## NotebookOutputOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import NotebookOutputOptionType
+
+def get_value() -> NotebookOutputOptionType:
+    return "Allowed"
 ```
 
-Values:
-
-- `Allowed`
-- `Disabled`
-
-<a id="objectivestatustype"></a>
-
+```python title="Definition"
+NotebookOutputOptionType = Literal[
+    "Allowed",
+    "Disabled",
+]
+```
 ## ObjectiveStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ObjectiveStatusType
+
+def get_value() -> ObjectiveStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `Pending`
-- `Succeeded`
-
-<a id="offlinestorestatusvaluetype"></a>
-
+```python title="Definition"
+ObjectiveStatusType = Literal[
+    "Failed",
+    "Pending",
+    "Succeeded",
+]
+```
 ## OfflineStoreStatusValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import OfflineStoreStatusValueType
+
+def get_value() -> OfflineStoreStatusValueType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Blocked`
-- `Disabled`
-
-<a id="operatortype"></a>
-
+```python title="Definition"
+OfflineStoreStatusValueType = Literal[
+    "Active",
+    "Blocked",
+    "Disabled",
+]
+```
 ## OperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import OperatorType
+
+def get_value() -> OperatorType:
+    return "Contains"
 ```
 
-Values:
-
-- `Contains`
-- `Equals`
-- `Exists`
-- `GreaterThan`
-- `GreaterThanOrEqualTo`
-- `In`
-- `LessThan`
-- `LessThanOrEqualTo`
-- `NotEquals`
-- `NotExists`
-
-<a id="orderkeytype"></a>
-
+```python title="Definition"
+OperatorType = Literal[
+    "Contains",
+    "Equals",
+    "Exists",
+    "GreaterThan",
+    "GreaterThanOrEqualTo",
+    "In",
+    "LessThan",
+    "LessThanOrEqualTo",
+    "NotEquals",
+    "NotExists",
+]
+```
 ## OrderKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import OrderKeyType
+
+def get_value() -> OrderKeyType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="parametertypetype"></a>
-
+```python title="Definition"
+OrderKeyType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## ParameterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ParameterTypeType
+
+def get_value() -> ParameterTypeType:
+    return "Categorical"
 ```
 
-Values:
-
-- `Categorical`
-- `Continuous`
-- `FreeText`
-- `Integer`
-
-<a id="pipelineexecutionstatustype"></a>
-
+```python title="Definition"
+ParameterTypeType = Literal[
+    "Categorical",
+    "Continuous",
+    "FreeText",
+    "Integer",
+]
+```
 ## PipelineExecutionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import PipelineExecutionStatusType
+
+def get_value() -> PipelineExecutionStatusType:
+    return "Executing"
 ```
 
-Values:
-
-- `Executing`
-- `Failed`
-- `Stopped`
-- `Stopping`
-- `Succeeded`
-
-<a id="pipelinestatustype"></a>
-
+```python title="Definition"
+PipelineExecutionStatusType = Literal[
+    "Executing",
+    "Failed",
+    "Stopped",
+    "Stopping",
+    "Succeeded",
+]
+```
 ## PipelineStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import PipelineStatusType
+
+def get_value() -> PipelineStatusType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-
-<a id="problemtypetype"></a>
-
+```python title="Definition"
+PipelineStatusType = Literal[
+    "Active",
+]
+```
 ## ProblemTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProblemTypeType
+
+def get_value() -> ProblemTypeType:
+    return "BinaryClassification"
 ```
 
-Values:
-
-- `BinaryClassification`
-- `MulticlassClassification`
-- `Regression`
-
-<a id="processinginstancetypetype"></a>
-
+```python title="Definition"
+ProblemTypeType = Literal[
+    "BinaryClassification",
+    "MulticlassClassification",
+    "Regression",
+]
+```
 ## ProcessingInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingInstanceTypeType
+
+def get_value() -> ProcessingInstanceTypeType:
+    return "ml.c4.2xlarge"
 ```
 
-Values:
-
-- `ml.c4.2xlarge`
-- `ml.c4.4xlarge`
-- `ml.c4.8xlarge`
-- `ml.c4.xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.m4.10xlarge`
-- `ml.m4.16xlarge`
-- `ml.m4.2xlarge`
-- `ml.m4.4xlarge`
-- `ml.m4.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.large`
-- `ml.m5.xlarge`
-- `ml.p2.16xlarge`
-- `ml.p2.8xlarge`
-- `ml.p2.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-- `ml.r5.12xlarge`
-- `ml.r5.16xlarge`
-- `ml.r5.24xlarge`
-- `ml.r5.2xlarge`
-- `ml.r5.4xlarge`
-- `ml.r5.8xlarge`
-- `ml.r5.large`
-- `ml.r5.xlarge`
-- `ml.t3.2xlarge`
-- `ml.t3.large`
-- `ml.t3.medium`
-- `ml.t3.xlarge`
-
-<a id="processingjobcompletedorstoppedwaitername"></a>
-
+```python title="Definition"
+ProcessingInstanceTypeType = Literal[
+    "ml.c4.2xlarge",
+    "ml.c4.4xlarge",
+    "ml.c4.8xlarge",
+    "ml.c4.xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.m4.10xlarge",
+    "ml.m4.16xlarge",
+    "ml.m4.2xlarge",
+    "ml.m4.4xlarge",
+    "ml.m4.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.large",
+    "ml.m5.xlarge",
+    "ml.p2.16xlarge",
+    "ml.p2.8xlarge",
+    "ml.p2.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+    "ml.r5.12xlarge",
+    "ml.r5.16xlarge",
+    "ml.r5.24xlarge",
+    "ml.r5.2xlarge",
+    "ml.r5.4xlarge",
+    "ml.r5.8xlarge",
+    "ml.r5.large",
+    "ml.r5.xlarge",
+    "ml.t3.2xlarge",
+    "ml.t3.large",
+    "ml.t3.medium",
+    "ml.t3.xlarge",
+]
+```
 ## ProcessingJobCompletedOrStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingJobCompletedOrStoppedWaiterName
+
+def get_value() -> ProcessingJobCompletedOrStoppedWaiterName:
+    return "processing_job_completed_or_stopped"
 ```
 
-Values:
-
-- `processing_job_completed_or_stopped`
-
-<a id="processingjobstatustype"></a>
-
+```python title="Definition"
+ProcessingJobCompletedOrStoppedWaiterName = Literal[
+    "processing_job_completed_or_stopped",
+]
+```
 ## ProcessingJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingJobStatusType
+
+def get_value() -> ProcessingJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="processings3compressiontypetype"></a>
-
+```python title="Definition"
+ProcessingJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## ProcessingS3CompressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingS3CompressionTypeType
+
+def get_value() -> ProcessingS3CompressionTypeType:
+    return "Gzip"
 ```
 
-Values:
-
-- `Gzip`
-- `None`
-
-<a id="processings3datadistributiontypetype"></a>
-
+```python title="Definition"
+ProcessingS3CompressionTypeType = Literal[
+    "Gzip",
+    "None",
+]
+```
 ## ProcessingS3DataDistributionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingS3DataDistributionTypeType
+
+def get_value() -> ProcessingS3DataDistributionTypeType:
+    return "FullyReplicated"
 ```
 
-Values:
-
-- `FullyReplicated`
-- `ShardedByS3Key`
-
-<a id="processings3datatypetype"></a>
-
+```python title="Definition"
+ProcessingS3DataDistributionTypeType = Literal[
+    "FullyReplicated",
+    "ShardedByS3Key",
+]
+```
 ## ProcessingS3DataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingS3DataTypeType
+
+def get_value() -> ProcessingS3DataTypeType:
+    return "ManifestFile"
 ```
 
-Values:
-
-- `ManifestFile`
-- `S3Prefix`
-
-<a id="processings3inputmodetype"></a>
-
+```python title="Definition"
+ProcessingS3DataTypeType = Literal[
+    "ManifestFile",
+    "S3Prefix",
+]
+```
 ## ProcessingS3InputModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingS3InputModeType
+
+def get_value() -> ProcessingS3InputModeType:
+    return "File"
 ```
 
-Values:
-
-- `File`
-- `Pipe`
-
-<a id="processings3uploadmodetype"></a>
-
+```python title="Definition"
+ProcessingS3InputModeType = Literal[
+    "File",
+    "Pipe",
+]
+```
 ## ProcessingS3UploadModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProcessingS3UploadModeType
+
+def get_value() -> ProcessingS3UploadModeType:
+    return "Continuous"
 ```
 
-Values:
-
-- `Continuous`
-- `EndOfJob`
-
-<a id="productionvariantacceleratortypetype"></a>
-
+```python title="Definition"
+ProcessingS3UploadModeType = Literal[
+    "Continuous",
+    "EndOfJob",
+]
+```
 ## ProductionVariantAcceleratorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProductionVariantAcceleratorTypeType
+
+def get_value() -> ProductionVariantAcceleratorTypeType:
+    return "ml.eia1.large"
 ```
 
-Values:
-
-- `ml.eia1.large`
-- `ml.eia1.medium`
-- `ml.eia1.xlarge`
-- `ml.eia2.large`
-- `ml.eia2.medium`
-- `ml.eia2.xlarge`
-
-<a id="productionvariantinstancetypetype"></a>
-
+```python title="Definition"
+ProductionVariantAcceleratorTypeType = Literal[
+    "ml.eia1.large",
+    "ml.eia1.medium",
+    "ml.eia1.xlarge",
+    "ml.eia2.large",
+    "ml.eia2.medium",
+    "ml.eia2.xlarge",
+]
+```
 ## ProductionVariantInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProductionVariantInstanceTypeType
+
+def get_value() -> ProductionVariantInstanceTypeType:
+    return "ml.c4.2xlarge"
 ```
 
-Values:
-
-- `ml.c4.2xlarge`
-- `ml.c4.4xlarge`
-- `ml.c4.8xlarge`
-- `ml.c4.large`
-- `ml.c4.xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.large`
-- `ml.c5.xlarge`
-- `ml.c5d.18xlarge`
-- `ml.c5d.2xlarge`
-- `ml.c5d.4xlarge`
-- `ml.c5d.9xlarge`
-- `ml.c5d.large`
-- `ml.c5d.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.inf1.24xlarge`
-- `ml.inf1.2xlarge`
-- `ml.inf1.6xlarge`
-- `ml.inf1.xlarge`
-- `ml.m4.10xlarge`
-- `ml.m4.16xlarge`
-- `ml.m4.2xlarge`
-- `ml.m4.4xlarge`
-- `ml.m4.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.large`
-- `ml.m5.xlarge`
-- `ml.m5d.12xlarge`
-- `ml.m5d.24xlarge`
-- `ml.m5d.2xlarge`
-- `ml.m5d.4xlarge`
-- `ml.m5d.large`
-- `ml.m5d.xlarge`
-- `ml.p2.16xlarge`
-- `ml.p2.8xlarge`
-- `ml.p2.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-- `ml.r5.12xlarge`
-- `ml.r5.24xlarge`
-- `ml.r5.2xlarge`
-- `ml.r5.4xlarge`
-- `ml.r5.large`
-- `ml.r5.xlarge`
-- `ml.r5d.12xlarge`
-- `ml.r5d.24xlarge`
-- `ml.r5d.2xlarge`
-- `ml.r5d.4xlarge`
-- `ml.r5d.large`
-- `ml.r5d.xlarge`
-- `ml.t2.2xlarge`
-- `ml.t2.large`
-- `ml.t2.medium`
-- `ml.t2.xlarge`
-
-<a id="profilingstatustype"></a>
-
+```python title="Definition"
+ProductionVariantInstanceTypeType = Literal[
+    "ml.c4.2xlarge",
+    "ml.c4.4xlarge",
+    "ml.c4.8xlarge",
+    "ml.c4.large",
+    "ml.c4.xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.large",
+    "ml.c5.xlarge",
+    "ml.c5d.18xlarge",
+    "ml.c5d.2xlarge",
+    "ml.c5d.4xlarge",
+    "ml.c5d.9xlarge",
+    "ml.c5d.large",
+    "ml.c5d.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.inf1.24xlarge",
+    "ml.inf1.2xlarge",
+    "ml.inf1.6xlarge",
+    "ml.inf1.xlarge",
+    "ml.m4.10xlarge",
+    "ml.m4.16xlarge",
+    "ml.m4.2xlarge",
+    "ml.m4.4xlarge",
+    "ml.m4.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.large",
+    "ml.m5.xlarge",
+    "ml.m5d.12xlarge",
+    "ml.m5d.24xlarge",
+    "ml.m5d.2xlarge",
+    "ml.m5d.4xlarge",
+    "ml.m5d.large",
+    "ml.m5d.xlarge",
+    "ml.p2.16xlarge",
+    "ml.p2.8xlarge",
+    "ml.p2.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+    "ml.r5.12xlarge",
+    "ml.r5.24xlarge",
+    "ml.r5.2xlarge",
+    "ml.r5.4xlarge",
+    "ml.r5.large",
+    "ml.r5.xlarge",
+    "ml.r5d.12xlarge",
+    "ml.r5d.24xlarge",
+    "ml.r5d.2xlarge",
+    "ml.r5d.4xlarge",
+    "ml.r5d.large",
+    "ml.r5d.xlarge",
+    "ml.t2.2xlarge",
+    "ml.t2.large",
+    "ml.t2.medium",
+    "ml.t2.xlarge",
+]
+```
 ## ProfilingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProfilingStatusType
+
+def get_value() -> ProfilingStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="projectsortbytype"></a>
-
+```python title="Definition"
+ProfilingStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ProjectSortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProjectSortByType
+
+def get_value() -> ProjectSortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="projectsortordertype"></a>
-
+```python title="Definition"
+ProjectSortByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## ProjectSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProjectSortOrderType
+
+def get_value() -> ProjectSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="projectstatustype"></a>
-
+```python title="Definition"
+ProjectSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## ProjectStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ProjectStatusType
+
+def get_value() -> ProjectStatusType:
+    return "CreateCompleted"
 ```
 
-Values:
-
-- `CreateCompleted`
-- `CreateFailed`
-- `CreateInProgress`
-- `DeleteCompleted`
-- `DeleteFailed`
-- `DeleteInProgress`
-- `Pending`
-- `UpdateCompleted`
-- `UpdateFailed`
-- `UpdateInProgress`
-
-<a id="rstudioserverproaccessstatustype"></a>
-
+```python title="Definition"
+ProjectStatusType = Literal[
+    "CreateCompleted",
+    "CreateFailed",
+    "CreateInProgress",
+    "DeleteCompleted",
+    "DeleteFailed",
+    "DeleteInProgress",
+    "Pending",
+    "UpdateCompleted",
+    "UpdateFailed",
+    "UpdateInProgress",
+]
+```
 ## RStudioServerProAccessStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RStudioServerProAccessStatusType
+
+def get_value() -> RStudioServerProAccessStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="rstudioserverprousergrouptype"></a>
-
+```python title="Definition"
+RStudioServerProAccessStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## RStudioServerProUserGroupType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RStudioServerProUserGroupType
+
+def get_value() -> RStudioServerProUserGroupType:
+    return "R_STUDIO_ADMIN"
 ```
 
-Values:
-
-- `R_STUDIO_ADMIN`
-- `R_STUDIO_USER`
-
-<a id="recommendationjobstatustype"></a>
-
+```python title="Definition"
+RStudioServerProUserGroupType = Literal[
+    "R_STUDIO_ADMIN",
+    "R_STUDIO_USER",
+]
+```
 ## RecommendationJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RecommendationJobStatusType
+
+def get_value() -> RecommendationJobStatusType:
+    return "COMPLETED"
 ```
 
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `IN_PROGRESS`
-- `PENDING`
-- `STOPPED`
-- `STOPPING`
-
-<a id="recommendationjobtypetype"></a>
-
+```python title="Definition"
+RecommendationJobStatusType = Literal[
+    "COMPLETED",
+    "FAILED",
+    "IN_PROGRESS",
+    "PENDING",
+    "STOPPED",
+    "STOPPING",
+]
+```
 ## RecommendationJobTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RecommendationJobTypeType
+
+def get_value() -> RecommendationJobTypeType:
+    return "Advanced"
 ```
 
-Values:
-
-- `Advanced`
-- `Default`
-
-<a id="recordwrappertype"></a>
-
+```python title="Definition"
+RecommendationJobTypeType = Literal[
+    "Advanced",
+    "Default",
+]
+```
 ## RecordWrapperType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RecordWrapperType
+
+def get_value() -> RecordWrapperType:
+    return "None"
 ```
 
-Values:
-
-- `None`
-- `RecordIO`
-
-<a id="redshiftresultcompressiontypetype"></a>
-
+```python title="Definition"
+RecordWrapperType = Literal[
+    "None",
+    "RecordIO",
+]
+```
 ## RedshiftResultCompressionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RedshiftResultCompressionTypeType
+
+def get_value() -> RedshiftResultCompressionTypeType:
+    return "BZIP2"
 ```
 
-Values:
-
-- `BZIP2`
-- `GZIP`
-- `None`
-- `SNAPPY`
-- `ZSTD`
-
-<a id="redshiftresultformattype"></a>
-
+```python title="Definition"
+RedshiftResultCompressionTypeType = Literal[
+    "BZIP2",
+    "GZIP",
+    "None",
+    "SNAPPY",
+    "ZSTD",
+]
+```
 ## RedshiftResultFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RedshiftResultFormatType
+
+def get_value() -> RedshiftResultFormatType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `PARQUET`
-
-<a id="repositoryaccessmodetype"></a>
-
+```python title="Definition"
+RedshiftResultFormatType = Literal[
+    "CSV",
+    "PARQUET",
+]
+```
 ## RepositoryAccessModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RepositoryAccessModeType
+
+def get_value() -> RepositoryAccessModeType:
+    return "Platform"
 ```
 
-Values:
-
-- `Platform`
-- `Vpc`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+RepositoryAccessModeType = Literal[
+    "Platform",
+    "Vpc",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "Endpoint"
 ```
 
-Values:
-
-- `Endpoint`
-- `Experiment`
-- `ExperimentTrial`
-- `ExperimentTrialComponent`
-- `FeatureGroup`
-- `ModelPackage`
-- `ModelPackageGroup`
-- `Pipeline`
-- `PipelineExecution`
-- `Project`
-- `TrainingJob`
-
-<a id="retentiontypetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "Endpoint",
+    "Experiment",
+    "ExperimentTrial",
+    "ExperimentTrialComponent",
+    "FeatureGroup",
+    "ModelPackage",
+    "ModelPackageGroup",
+    "Pipeline",
+    "PipelineExecution",
+    "Project",
+    "TrainingJob",
+]
+```
 ## RetentionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RetentionTypeType
+
+def get_value() -> RetentionTypeType:
+    return "Delete"
 ```
 
-Values:
-
-- `Delete`
-- `Retain`
-
-<a id="rootaccesstype"></a>
-
+```python title="Definition"
+RetentionTypeType = Literal[
+    "Delete",
+    "Retain",
+]
+```
 ## RootAccessType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RootAccessType
+
+def get_value() -> RootAccessType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="ruleevaluationstatustype"></a>
-
+```python title="Definition"
+RootAccessType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## RuleEvaluationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import RuleEvaluationStatusType
+
+def get_value() -> RuleEvaluationStatusType:
+    return "Error"
 ```
 
-Values:
-
-- `Error`
-- `InProgress`
-- `IssuesFound`
-- `NoIssuesFound`
-- `Stopped`
-- `Stopping`
-
-<a id="s3datadistributiontype"></a>
-
+```python title="Definition"
+RuleEvaluationStatusType = Literal[
+    "Error",
+    "InProgress",
+    "IssuesFound",
+    "NoIssuesFound",
+    "Stopped",
+    "Stopping",
+]
+```
 ## S3DataDistributionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import S3DataDistributionType
+
+def get_value() -> S3DataDistributionType:
+    return "FullyReplicated"
 ```
 
-Values:
-
-- `FullyReplicated`
-- `ShardedByS3Key`
-
-<a id="s3datatypetype"></a>
-
+```python title="Definition"
+S3DataDistributionType = Literal[
+    "FullyReplicated",
+    "ShardedByS3Key",
+]
+```
 ## S3DataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import S3DataTypeType
+
+def get_value() -> S3DataTypeType:
+    return "AugmentedManifestFile"
 ```
 
-Values:
-
-- `AugmentedManifestFile`
-- `ManifestFile`
-- `S3Prefix`
-
-<a id="sagemakerservicecatalogstatustype"></a>
-
+```python title="Definition"
+S3DataTypeType = Literal[
+    "AugmentedManifestFile",
+    "ManifestFile",
+    "S3Prefix",
+]
+```
 ## SagemakerServicecatalogStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SagemakerServicecatalogStatusType
+
+def get_value() -> SagemakerServicecatalogStatusType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="schedulestatustype"></a>
-
+```python title="Definition"
+SagemakerServicecatalogStatusType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ScheduleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ScheduleStatusType
+
+def get_value() -> ScheduleStatusType:
+    return "Failed"
 ```
 
-Values:
-
-- `Failed`
-- `Pending`
-- `Scheduled`
-- `Stopped`
-
-<a id="searchpaginatorname"></a>
-
+```python title="Definition"
+ScheduleStatusType = Literal[
+    "Failed",
+    "Pending",
+    "Scheduled",
+    "Stopped",
+]
+```
 ## SearchPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SearchPaginatorName
+
+def get_value() -> SearchPaginatorName:
+    return "search"
 ```
 
-Values:
-
-- `search`
-
-<a id="searchsortordertype"></a>
-
+```python title="Definition"
+SearchPaginatorName = Literal[
+    "search",
+]
+```
 ## SearchSortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SearchSortOrderType
+
+def get_value() -> SearchSortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="secondarystatustype"></a>
-
+```python title="Definition"
+SearchSortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## SecondaryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SecondaryStatusType
+
+def get_value() -> SecondaryStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Downloading`
-- `DownloadingTrainingImage`
-- `Failed`
-- `Interrupted`
-- `LaunchingMLInstances`
-- `MaxRuntimeExceeded`
-- `MaxWaitTimeExceeded`
-- `PreparingTrainingStack`
-- `Restarting`
-- `Starting`
-- `Stopped`
-- `Stopping`
-- `Training`
-- `Updating`
-- `Uploading`
-
-<a id="sortactionsbytype"></a>
-
+```python title="Definition"
+SecondaryStatusType = Literal[
+    "Completed",
+    "Downloading",
+    "DownloadingTrainingImage",
+    "Failed",
+    "Interrupted",
+    "LaunchingMLInstances",
+    "MaxRuntimeExceeded",
+    "MaxWaitTimeExceeded",
+    "PreparingTrainingStack",
+    "Restarting",
+    "Starting",
+    "Stopped",
+    "Stopping",
+    "Training",
+    "Updating",
+    "Uploading",
+]
+```
 ## SortActionsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortActionsByType
+
+def get_value() -> SortActionsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sortartifactsbytype"></a>
-
+```python title="Definition"
+SortActionsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortArtifactsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortArtifactsByType
+
+def get_value() -> SortArtifactsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-
-<a id="sortassociationsbytype"></a>
-
+```python title="Definition"
+SortArtifactsByType = Literal[
+    "CreationTime",
+]
+```
 ## SortAssociationsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortAssociationsByType
+
+def get_value() -> SortAssociationsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `DestinationArn`
-- `DestinationType`
-- `SourceArn`
-- `SourceType`
-
-<a id="sortbytype"></a>
-
+```python title="Definition"
+SortAssociationsByType = Literal[
+    "CreationTime",
+    "DestinationArn",
+    "DestinationType",
+    "SourceArn",
+    "SourceType",
+]
+```
 ## SortByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortByType
+
+def get_value() -> SortByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-- `Status`
-
-<a id="sortcontextsbytype"></a>
-
+```python title="Definition"
+SortByType = Literal[
+    "CreationTime",
+    "Name",
+    "Status",
+]
+```
 ## SortContextsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortContextsByType
+
+def get_value() -> SortContextsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sortexperimentsbytype"></a>
-
+```python title="Definition"
+SortContextsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortExperimentsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortExperimentsByType
+
+def get_value() -> SortExperimentsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sortlineagegroupsbytype"></a>
-
+```python title="Definition"
+SortExperimentsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortLineageGroupsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortLineageGroupsByType
+
+def get_value() -> SortLineageGroupsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SortLineageGroupsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "Ascending"
 ```
 
-Values:
-
-- `Ascending`
-- `Descending`
-
-<a id="sortpipelineexecutionsbytype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "Ascending",
+    "Descending",
+]
+```
 ## SortPipelineExecutionsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortPipelineExecutionsByType
+
+def get_value() -> SortPipelineExecutionsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `PipelineExecutionArn`
-
-<a id="sortpipelinesbytype"></a>
-
+```python title="Definition"
+SortPipelineExecutionsByType = Literal[
+    "CreationTime",
+    "PipelineExecutionArn",
+]
+```
 ## SortPipelinesByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortPipelinesByType
+
+def get_value() -> SortPipelinesByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sorttrialcomponentsbytype"></a>
-
+```python title="Definition"
+SortPipelinesByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortTrialComponentsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortTrialComponentsByType
+
+def get_value() -> SortTrialComponentsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="sorttrialsbytype"></a>
-
+```python title="Definition"
+SortTrialComponentsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SortTrialsByType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SortTrialsByType
+
+def get_value() -> SortTrialsByType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `Name`
-
-<a id="splittypetype"></a>
-
+```python title="Definition"
+SortTrialsByType = Literal[
+    "CreationTime",
+    "Name",
+]
+```
 ## SplitTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SplitTypeType
+
+def get_value() -> SplitTypeType:
+    return "Line"
 ```
 
-Values:
-
-- `Line`
-- `None`
-- `RecordIO`
-- `TFRecord`
-
-<a id="stepstatustype"></a>
-
+```python title="Definition"
+SplitTypeType = Literal[
+    "Line",
+    "None",
+    "RecordIO",
+    "TFRecord",
+]
+```
 ## StepStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import StepStatusType
+
+def get_value() -> StepStatusType:
+    return "Executing"
 ```
 
-Values:
-
-- `Executing`
-- `Failed`
-- `Starting`
-- `Stopped`
-- `Stopping`
-- `Succeeded`
-
-<a id="studiolifecycleconfigapptypetype"></a>
-
+```python title="Definition"
+StepStatusType = Literal[
+    "Executing",
+    "Failed",
+    "Starting",
+    "Stopped",
+    "Stopping",
+    "Succeeded",
+]
+```
 ## StudioLifecycleConfigAppTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import StudioLifecycleConfigAppTypeType
+
+def get_value() -> StudioLifecycleConfigAppTypeType:
+    return "JupyterServer"
 ```
 
-Values:
-
-- `JupyterServer`
-- `KernelGateway`
-
-<a id="studiolifecycleconfigsortkeytype"></a>
-
+```python title="Definition"
+StudioLifecycleConfigAppTypeType = Literal[
+    "JupyterServer",
+    "KernelGateway",
+]
+```
 ## StudioLifecycleConfigSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import StudioLifecycleConfigSortKeyType
+
+def get_value() -> StudioLifecycleConfigSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LastModifiedTime`
-- `Name`
-
-<a id="targetdevicetype"></a>
-
+```python title="Definition"
+StudioLifecycleConfigSortKeyType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+    "Name",
+]
+```
 ## TargetDeviceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TargetDeviceType
+
+def get_value() -> TargetDeviceType:
+    return "aisage"
 ```
 
-Values:
-
-- `aisage`
-- `amba_cv2`
-- `amba_cv22`
-- `amba_cv25`
-- `coreml`
-- `deeplens`
-- `imx8mplus`
-- `imx8qm`
-- `jacinto_tda4vm`
-- `jetson_nano`
-- `jetson_tx1`
-- `jetson_tx2`
-- `jetson_xavier`
-- `lambda`
-- `ml_c4`
-- `ml_c5`
-- `ml_eia2`
-- `ml_g4dn`
-- `ml_inf1`
-- `ml_m4`
-- `ml_m5`
-- `ml_p2`
-- `ml_p3`
-- `qcs603`
-- `qcs605`
-- `rasp3b`
-- `rk3288`
-- `rk3399`
-- `sbe_c`
-- `sitara_am57x`
-- `x86_win32`
-- `x86_win64`
-
-<a id="targetplatformacceleratortype"></a>
-
+```python title="Definition"
+TargetDeviceType = Literal[
+    "aisage",
+    "amba_cv2",
+    "amba_cv22",
+    "amba_cv25",
+    "coreml",
+    "deeplens",
+    "imx8mplus",
+    "imx8qm",
+    "jacinto_tda4vm",
+    "jetson_nano",
+    "jetson_tx1",
+    "jetson_tx2",
+    "jetson_xavier",
+    "lambda",
+    "ml_c4",
+    "ml_c5",
+    "ml_eia2",
+    "ml_g4dn",
+    "ml_inf1",
+    "ml_m4",
+    "ml_m5",
+    "ml_p2",
+    "ml_p3",
+    "qcs603",
+    "qcs605",
+    "rasp3b",
+    "rk3288",
+    "rk3399",
+    "sbe_c",
+    "sitara_am57x",
+    "x86_win32",
+    "x86_win64",
+]
+```
 ## TargetPlatformAcceleratorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TargetPlatformAcceleratorType
+
+def get_value() -> TargetPlatformAcceleratorType:
+    return "INTEL_GRAPHICS"
 ```
 
-Values:
-
-- `INTEL_GRAPHICS`
-- `MALI`
-- `NNA`
-- `NVIDIA`
-
-<a id="targetplatformarchtype"></a>
-
+```python title="Definition"
+TargetPlatformAcceleratorType = Literal[
+    "INTEL_GRAPHICS",
+    "MALI",
+    "NNA",
+    "NVIDIA",
+]
+```
 ## TargetPlatformArchType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TargetPlatformArchType
+
+def get_value() -> TargetPlatformArchType:
+    return "ARM64"
 ```
 
-Values:
-
-- `ARM64`
-- `ARM_EABI`
-- `ARM_EABIHF`
-- `X86`
-- `X86_64`
-
-<a id="targetplatformostype"></a>
-
+```python title="Definition"
+TargetPlatformArchType = Literal[
+    "ARM64",
+    "ARM_EABI",
+    "ARM_EABIHF",
+    "X86",
+    "X86_64",
+]
+```
 ## TargetPlatformOsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TargetPlatformOsType
+
+def get_value() -> TargetPlatformOsType:
+    return "ANDROID"
 ```
 
-Values:
-
-- `ANDROID`
-- `LINUX`
-
-<a id="trafficroutingconfigtypetype"></a>
-
+```python title="Definition"
+TargetPlatformOsType = Literal[
+    "ANDROID",
+    "LINUX",
+]
+```
 ## TrafficRoutingConfigTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrafficRoutingConfigTypeType
+
+def get_value() -> TrafficRoutingConfigTypeType:
+    return "ALL_AT_ONCE"
 ```
 
-Values:
-
-- `ALL_AT_ONCE`
-- `CANARY`
-- `LINEAR`
-
-<a id="traffictypetype"></a>
-
+```python title="Definition"
+TrafficRoutingConfigTypeType = Literal[
+    "ALL_AT_ONCE",
+    "CANARY",
+    "LINEAR",
+]
+```
 ## TrafficTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrafficTypeType
+
+def get_value() -> TrafficTypeType:
+    return "PHASES"
 ```
 
-Values:
-
-- `PHASES`
-
-<a id="traininginputmodetype"></a>
-
+```python title="Definition"
+TrafficTypeType = Literal[
+    "PHASES",
+]
+```
 ## TrainingInputModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingInputModeType
+
+def get_value() -> TrainingInputModeType:
+    return "FastFile"
 ```
 
-Values:
-
-- `FastFile`
-- `File`
-- `Pipe`
-
-<a id="traininginstancetypetype"></a>
-
+```python title="Definition"
+TrainingInputModeType = Literal[
+    "FastFile",
+    "File",
+    "Pipe",
+]
+```
 ## TrainingInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingInstanceTypeType
+
+def get_value() -> TrainingInstanceTypeType:
+    return "ml.c4.2xlarge"
 ```
 
-Values:
-
-- `ml.c4.2xlarge`
-- `ml.c4.4xlarge`
-- `ml.c4.8xlarge`
-- `ml.c4.xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.xlarge`
-- `ml.c5n.18xlarge`
-- `ml.c5n.2xlarge`
-- `ml.c5n.4xlarge`
-- `ml.c5n.9xlarge`
-- `ml.c5n.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.g5.12xlarge`
-- `ml.g5.16xlarge`
-- `ml.g5.24xlarge`
-- `ml.g5.2xlarge`
-- `ml.g5.48xlarge`
-- `ml.g5.4xlarge`
-- `ml.g5.8xlarge`
-- `ml.g5.xlarge`
-- `ml.m4.10xlarge`
-- `ml.m4.16xlarge`
-- `ml.m4.2xlarge`
-- `ml.m4.4xlarge`
-- `ml.m4.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.large`
-- `ml.m5.xlarge`
-- `ml.p2.16xlarge`
-- `ml.p2.8xlarge`
-- `ml.p2.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-- `ml.p3dn.24xlarge`
-- `ml.p4d.24xlarge`
-
-<a id="trainingjobcompletedorstoppedwaitername"></a>
-
+```python title="Definition"
+TrainingInstanceTypeType = Literal[
+    "ml.c4.2xlarge",
+    "ml.c4.4xlarge",
+    "ml.c4.8xlarge",
+    "ml.c4.xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.xlarge",
+    "ml.c5n.18xlarge",
+    "ml.c5n.2xlarge",
+    "ml.c5n.4xlarge",
+    "ml.c5n.9xlarge",
+    "ml.c5n.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.g5.12xlarge",
+    "ml.g5.16xlarge",
+    "ml.g5.24xlarge",
+    "ml.g5.2xlarge",
+    "ml.g5.48xlarge",
+    "ml.g5.4xlarge",
+    "ml.g5.8xlarge",
+    "ml.g5.xlarge",
+    "ml.m4.10xlarge",
+    "ml.m4.16xlarge",
+    "ml.m4.2xlarge",
+    "ml.m4.4xlarge",
+    "ml.m4.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.large",
+    "ml.m5.xlarge",
+    "ml.p2.16xlarge",
+    "ml.p2.8xlarge",
+    "ml.p2.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+    "ml.p3dn.24xlarge",
+    "ml.p4d.24xlarge",
+]
+```
 ## TrainingJobCompletedOrStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingJobCompletedOrStoppedWaiterName
+
+def get_value() -> TrainingJobCompletedOrStoppedWaiterName:
+    return "training_job_completed_or_stopped"
 ```
 
-Values:
-
-- `training_job_completed_or_stopped`
-
-<a id="trainingjobearlystoppingtypetype"></a>
-
+```python title="Definition"
+TrainingJobCompletedOrStoppedWaiterName = Literal[
+    "training_job_completed_or_stopped",
+]
+```
 ## TrainingJobEarlyStoppingTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingJobEarlyStoppingTypeType
+
+def get_value() -> TrainingJobEarlyStoppingTypeType:
+    return "Auto"
 ```
 
-Values:
-
-- `Auto`
-- `Off`
-
-<a id="trainingjobsortbyoptionstype"></a>
-
+```python title="Definition"
+TrainingJobEarlyStoppingTypeType = Literal[
+    "Auto",
+    "Off",
+]
+```
 ## TrainingJobSortByOptionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingJobSortByOptionsType
+
+def get_value() -> TrainingJobSortByOptionsType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `FinalObjectiveMetricValue`
-- `Name`
-- `Status`
-
-<a id="trainingjobstatustype"></a>
-
+```python title="Definition"
+TrainingJobSortByOptionsType = Literal[
+    "CreationTime",
+    "FinalObjectiveMetricValue",
+    "Name",
+    "Status",
+]
+```
 ## TrainingJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrainingJobStatusType
+
+def get_value() -> TrainingJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="transforminstancetypetype"></a>
-
+```python title="Definition"
+TrainingJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## TransformInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TransformInstanceTypeType
+
+def get_value() -> TransformInstanceTypeType:
+    return "ml.c4.2xlarge"
 ```
 
-Values:
-
-- `ml.c4.2xlarge`
-- `ml.c4.4xlarge`
-- `ml.c4.8xlarge`
-- `ml.c4.xlarge`
-- `ml.c5.18xlarge`
-- `ml.c5.2xlarge`
-- `ml.c5.4xlarge`
-- `ml.c5.9xlarge`
-- `ml.c5.xlarge`
-- `ml.g4dn.12xlarge`
-- `ml.g4dn.16xlarge`
-- `ml.g4dn.2xlarge`
-- `ml.g4dn.4xlarge`
-- `ml.g4dn.8xlarge`
-- `ml.g4dn.xlarge`
-- `ml.m4.10xlarge`
-- `ml.m4.16xlarge`
-- `ml.m4.2xlarge`
-- `ml.m4.4xlarge`
-- `ml.m4.xlarge`
-- `ml.m5.12xlarge`
-- `ml.m5.24xlarge`
-- `ml.m5.2xlarge`
-- `ml.m5.4xlarge`
-- `ml.m5.large`
-- `ml.m5.xlarge`
-- `ml.p2.16xlarge`
-- `ml.p2.8xlarge`
-- `ml.p2.xlarge`
-- `ml.p3.16xlarge`
-- `ml.p3.2xlarge`
-- `ml.p3.8xlarge`
-
-<a id="transformjobcompletedorstoppedwaitername"></a>
-
+```python title="Definition"
+TransformInstanceTypeType = Literal[
+    "ml.c4.2xlarge",
+    "ml.c4.4xlarge",
+    "ml.c4.8xlarge",
+    "ml.c4.xlarge",
+    "ml.c5.18xlarge",
+    "ml.c5.2xlarge",
+    "ml.c5.4xlarge",
+    "ml.c5.9xlarge",
+    "ml.c5.xlarge",
+    "ml.g4dn.12xlarge",
+    "ml.g4dn.16xlarge",
+    "ml.g4dn.2xlarge",
+    "ml.g4dn.4xlarge",
+    "ml.g4dn.8xlarge",
+    "ml.g4dn.xlarge",
+    "ml.m4.10xlarge",
+    "ml.m4.16xlarge",
+    "ml.m4.2xlarge",
+    "ml.m4.4xlarge",
+    "ml.m4.xlarge",
+    "ml.m5.12xlarge",
+    "ml.m5.24xlarge",
+    "ml.m5.2xlarge",
+    "ml.m5.4xlarge",
+    "ml.m5.large",
+    "ml.m5.xlarge",
+    "ml.p2.16xlarge",
+    "ml.p2.8xlarge",
+    "ml.p2.xlarge",
+    "ml.p3.16xlarge",
+    "ml.p3.2xlarge",
+    "ml.p3.8xlarge",
+]
+```
 ## TransformJobCompletedOrStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TransformJobCompletedOrStoppedWaiterName
+
+def get_value() -> TransformJobCompletedOrStoppedWaiterName:
+    return "transform_job_completed_or_stopped"
 ```
 
-Values:
-
-- `transform_job_completed_or_stopped`
-
-<a id="transformjobstatustype"></a>
-
+```python title="Definition"
+TransformJobCompletedOrStoppedWaiterName = Literal[
+    "transform_job_completed_or_stopped",
+]
+```
 ## TransformJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TransformJobStatusType
+
+def get_value() -> TransformJobStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="trialcomponentprimarystatustype"></a>
-
+```python title="Definition"
+TransformJobStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## TrialComponentPrimaryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import TrialComponentPrimaryStatusType
+
+def get_value() -> TrialComponentPrimaryStatusType:
+    return "Completed"
 ```
 
-Values:
-
-- `Completed`
-- `Failed`
-- `InProgress`
-- `Stopped`
-- `Stopping`
-
-<a id="userprofilesortkeytype"></a>
-
+```python title="Definition"
+TrialComponentPrimaryStatusType = Literal[
+    "Completed",
+    "Failed",
+    "InProgress",
+    "Stopped",
+    "Stopping",
+]
+```
 ## UserProfileSortKeyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import UserProfileSortKeyType
+
+def get_value() -> UserProfileSortKeyType:
+    return "CreationTime"
 ```
 
-Values:
-
-- `CreationTime`
-- `LastModifiedTime`
-
-<a id="userprofilestatustype"></a>
-
+```python title="Definition"
+UserProfileSortKeyType = Literal[
+    "CreationTime",
+    "LastModifiedTime",
+]
+```
 ## UserProfileStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import UserProfileStatusType
+
+def get_value() -> UserProfileStatusType:
+    return "Delete_Failed"
 ```
 
-Values:
-
-- `Delete_Failed`
-- `Deleting`
-- `Failed`
-- `InService`
-- `Pending`
-- `Update_Failed`
-- `Updating`
-
-<a id="variantpropertytypetype"></a>
-
+```python title="Definition"
+UserProfileStatusType = Literal[
+    "Delete_Failed",
+    "Deleting",
+    "Failed",
+    "InService",
+    "Pending",
+    "Update_Failed",
+    "Updating",
+]
+```
 ## VariantPropertyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import VariantPropertyTypeType
+
+def get_value() -> VariantPropertyTypeType:
+    return "DataCaptureConfig"
 ```
 
-Values:
-
-- `DataCaptureConfig`
-- `DesiredInstanceCount`
-- `DesiredWeight`
-
-<a id="variantstatustype"></a>
-
+```python title="Definition"
+VariantPropertyTypeType = Literal[
+    "DataCaptureConfig",
+    "DesiredInstanceCount",
+    "DesiredWeight",
+]
+```
 ## VariantStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import VariantStatusType
+
+def get_value() -> VariantStatusType:
+    return "ActivatingTraffic"
 ```
 
-Values:
-
-- `ActivatingTraffic`
-- `Baking`
-- `Creating`
-- `Deleting`
-- `Updating`
-
-<a id="sagemakerservicename"></a>
-
+```python title="Definition"
+VariantStatusType = Literal[
+    "ActivatingTraffic",
+    "Baking",
+    "Creating",
+    "Deleting",
+    "Updating",
+]
+```
 ## SageMakerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import SageMakerServiceName
+
+def get_value() -> SageMakerServiceName:
+    return "sagemaker"
 ```
 
-Values:
-
-- `sagemaker`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+SageMakerServiceName = Literal[
+    "sagemaker",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_actions"
 ```
 
-Values:
-
-- `list_actions`
-- `list_algorithms`
-- `list_app_image_configs`
-- `list_apps`
-- `list_artifacts`
-- `list_associations`
-- `list_auto_ml_jobs`
-- `list_candidates_for_auto_ml_job`
-- `list_code_repositories`
-- `list_compilation_jobs`
-- `list_contexts`
-- `list_data_quality_job_definitions`
-- `list_device_fleets`
-- `list_devices`
-- `list_domains`
-- `list_edge_packaging_jobs`
-- `list_endpoint_configs`
-- `list_endpoints`
-- `list_experiments`
-- `list_feature_groups`
-- `list_flow_definitions`
-- `list_human_task_uis`
-- `list_hyper_parameter_tuning_jobs`
-- `list_image_versions`
-- `list_images`
-- `list_inference_recommendations_jobs`
-- `list_labeling_jobs`
-- `list_labeling_jobs_for_workteam`
-- `list_lineage_groups`
-- `list_model_bias_job_definitions`
-- `list_model_explainability_job_definitions`
-- `list_model_metadata`
-- `list_model_package_groups`
-- `list_model_packages`
-- `list_model_quality_job_definitions`
-- `list_models`
-- `list_monitoring_executions`
-- `list_monitoring_schedules`
-- `list_notebook_instance_lifecycle_configs`
-- `list_notebook_instances`
-- `list_pipeline_execution_steps`
-- `list_pipeline_executions`
-- `list_pipeline_parameters_for_execution`
-- `list_pipelines`
-- `list_processing_jobs`
-- `list_studio_lifecycle_configs`
-- `list_subscribed_workteams`
-- `list_tags`
-- `list_training_jobs`
-- `list_training_jobs_for_hyper_parameter_tuning_job`
-- `list_transform_jobs`
-- `list_trial_components`
-- `list_trials`
-- `list_user_profiles`
-- `list_workforces`
-- `list_workteams`
-- `search`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_actions",
+    "list_algorithms",
+    "list_app_image_configs",
+    "list_apps",
+    "list_artifacts",
+    "list_associations",
+    "list_auto_ml_jobs",
+    "list_candidates_for_auto_ml_job",
+    "list_code_repositories",
+    "list_compilation_jobs",
+    "list_contexts",
+    "list_data_quality_job_definitions",
+    "list_device_fleets",
+    "list_devices",
+    "list_domains",
+    "list_edge_packaging_jobs",
+    "list_endpoint_configs",
+    "list_endpoints",
+    "list_experiments",
+    "list_feature_groups",
+    "list_flow_definitions",
+    "list_human_task_uis",
+    "list_hyper_parameter_tuning_jobs",
+    "list_image_versions",
+    "list_images",
+    "list_inference_recommendations_jobs",
+    "list_labeling_jobs",
+    "list_labeling_jobs_for_workteam",
+    "list_lineage_groups",
+    "list_model_bias_job_definitions",
+    "list_model_explainability_job_definitions",
+    "list_model_metadata",
+    "list_model_package_groups",
+    "list_model_packages",
+    "list_model_quality_job_definitions",
+    "list_models",
+    "list_monitoring_executions",
+    "list_monitoring_schedules",
+    "list_notebook_instance_lifecycle_configs",
+    "list_notebook_instances",
+    "list_pipeline_execution_steps",
+    "list_pipeline_executions",
+    "list_pipeline_parameters_for_execution",
+    "list_pipelines",
+    "list_processing_jobs",
+    "list_studio_lifecycle_configs",
+    "list_subscribed_workteams",
+    "list_tags",
+    "list_training_jobs",
+    "list_training_jobs_for_hyper_parameter_tuning_job",
+    "list_transform_jobs",
+    "list_trial_components",
+    "list_trials",
+    "list_user_profiles",
+    "list_workforces",
+    "list_workteams",
+    "search",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "endpoint_deleted"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "endpoint_deleted",
+    "endpoint_in_service",
+    "image_created",
+    "image_deleted",
+    "image_updated",
+    "image_version_created",
+    "image_version_deleted",
+    "notebook_instance_deleted",
+    "notebook_instance_in_service",
+    "notebook_instance_stopped",
+    "processing_job_completed_or_stopped",
+    "training_job_completed_or_stopped",
+    "transform_job_completed_or_stopped",
+]
+```
+## RegionName
 
-- `endpoint_deleted`
-- `endpoint_in_service`
-- `image_created`
-- `image_deleted`
-- `image_updated`
-- `image_version_created`
-- `image_version_deleted`
-- `notebook_instance_deleted`
-- `notebook_instance_in_service`
-- `notebook_instance_stopped`
-- `processing_job_completed_or_stopped`
-- `training_job_completed_or_stopped`
-- `transform_job_completed_or_stopped`
+```python title="Usage Example"
+from mypy_boto3_sagemaker.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-elastictranscoder-module"></a>
-
-# Paginators for boto3 ElasticTranscoder module
+# Paginators
 
 > [Index](../README.md) > [ElasticTranscoder](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module
-[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+!!! note ""
 
-- [Paginators for boto3 ElasticTranscoder module](#paginators-for-boto3-elastictranscoder-module)
-  - [ListJobsByPipelinePaginator](#listjobsbypipelinepaginator)
-  - [ListJobsByStatusPaginator](#listjobsbystatuspaginator)
-  - [ListPipelinesPaginator](#listpipelinespaginator)
-  - [ListPresetsPaginator](#listpresetspaginator)
-
-<a id="listjobsbypipelinepaginator"></a>
+    Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+    type annotations stubs module [mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ## ListJobsByPipelinePaginator
 
-Type annotations for
-`boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")`.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_paginator("list_jobs_by_pipeline")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elastictranscoder.paginator import ListJobsByPipelinePaginator
@@ -33,29 +21,41 @@ def get_list_jobs_by_pipeline_paginator() -> ListJobsByPipelinePaginator:
     return Session().client("elastictranscoder").get_paginator("list_jobs_by_pipeline")
 ```
 
-Boto3 documentation:
-[ElasticTranscoder.Paginator.ListJobsByPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByPipeline)
 
-Arguments for `ListJobsByPipelinePaginator.paginate` method:
+### paginate
 
-- `PipelineId`: `str` *(required)*
-- `Ascending`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsByPipelinePaginator.paginate` method.
 
-`ListJobsByPipelinePaginator.paginate` returns
-`_PageIterator`\[[ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PipelineId: str,
+    Ascending: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsByPipelineResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listjobsbystatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef = {  # (1)
+    "PipelineId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsByPipelineRequestListJobsByPipelinePaginateTypeDef](./type_defs.md#listjobsbypipelinerequestlistjobsbypipelinepaginatetypedef) 
 ## ListJobsByStatusPaginator
 
-Type annotations for
-`boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")`.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_paginator("list_jobs_by_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elastictranscoder.paginator import ListJobsByStatusPaginator
@@ -64,29 +64,41 @@ def get_list_jobs_by_status_paginator() -> ListJobsByStatusPaginator:
     return Session().client("elastictranscoder").get_paginator("list_jobs_by_status")
 ```
 
-Boto3 documentation:
-[ElasticTranscoder.Paginator.ListJobsByStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListJobsByStatus)
 
-Arguments for `ListJobsByStatusPaginator.paginate` method:
+### paginate
 
-- `Status`: `str` *(required)*
-- `Ascending`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobsByStatusPaginator.paginate` method.
 
-`ListJobsByStatusPaginator.paginate` returns
-`_PageIterator`\[[ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Status: str,
+    Ascending: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListJobsByStatusResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpipelinespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobsByStatusRequestListJobsByStatusPaginateTypeDef = {  # (1)
+    "Status": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobsByStatusRequestListJobsByStatusPaginateTypeDef](./type_defs.md#listjobsbystatusrequestlistjobsbystatuspaginatetypedef) 
 ## ListPipelinesPaginator
 
-Type annotations for
-`boto3.client("elastictranscoder").get_paginator("list_pipelines")`.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_paginator("list_pipelines")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elastictranscoder.paginator import ListPipelinesPaginator
@@ -95,28 +107,40 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("elastictranscoder").get_paginator("list_pipelines")
 ```
 
-Boto3 documentation:
-[ElasticTranscoder.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPipelines)
 
-Arguments for `ListPipelinesPaginator.paginate` method:
+### paginate
 
-- `Ascending`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPipelinesPaginator.paginate` method.
 
-`ListPipelinesPaginator.paginate` returns
-`_PageIterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Ascending: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPipelinesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpresetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesRequestListPipelinesPaginateTypeDef = {  # (1)
+    "Ascending": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPipelinesRequestListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesrequestlistpipelinespaginatetypedef) 
 ## ListPresetsPaginator
 
-Type annotations for
-`boto3.client("elastictranscoder").get_paginator("list_presets")`.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_paginator("list_presets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elastictranscoder.paginator import ListPresetsPaginator
@@ -125,14 +149,31 @@ def get_list_presets_paginator() -> ListPresetsPaginator:
     return Session().client("elastictranscoder").get_paginator("list_presets")
 ```
 
-Boto3 documentation:
-[ElasticTranscoder.Paginator.ListPresets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Paginator.ListPresets)
 
-Arguments for `ListPresetsPaginator.paginate` method:
+### paginate
 
-- `Ascending`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPresetsPaginator.paginate` method.
 
-`ListPresetsPaginator.paginate` returns
-`_PageIterator`\[[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Ascending: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPresetsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPresetsRequestListPresetsPaginateTypeDef = {  # (1)
+    "Ascending": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPresetsRequestListPresetsPaginateTypeDef](./type_defs.md#listpresetsrequestlistpresetspaginatetypedef) 

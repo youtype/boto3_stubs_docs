@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-inspector2-module"></a>
-
-# Examples for boto3 Inspector2 module
+# Examples
 
 > [Index](../README.md) > [Inspector2](./README.md) > Examples
 
-- [Examples for boto3 Inspector2 module](#examples-for-boto3-inspector2-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
+    type annotations stubs module [mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[inspector2]` package installed.
 
-Write your `Inspector2` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Inspector2` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type Inspector2Client
-# and provides type checking and code completion
-client = session.client("inspector2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateMemberResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_member()
 
-# paginator has type ListAccountPermissionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_account_permissions")
-for item in paginator.paginate(...):
-    # item has type ListAccountPermissionsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("inspector2")  # (1)
+    result = client.associate_member()  # (2)
+    ```
+
+    1. client: [Inspector2Client](./client.md)
+    2. result: [:material-code-braces: AssociateMemberResponseTypeDef](./type_defs.md#associatememberresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("inspector2")  # (1)
+
+    paginator = client.get_paginator("list_account_permissions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [Inspector2Client](./client.md)
+    2. paginator: [ListAccountPermissionsPaginator](./paginators.md#listaccountpermissionspaginator)
+    3. item: [:material-code-braces: ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[inspector2]` or a standalone `mypy_boto3_inspector2`
-package, you have to explicitly specify `client: Inspector2Client` type
-annotation.
+With `boto3-stubs-lite[inspector2]`
+or a standalone `mypy_boto3_inspector2` package, you have to explicitly specify `client: Inspector2Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_inspector2.client import Inspector2Client
-from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator
-
-from mypy_boto3_inspector2.literals import PaginatorName
-
-from mypy_boto3_inspector2.type_defs import AssociateMemberResponseTypeDef
-from mypy_boto3_inspector2.type_defs import ListAccountPermissionsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: Inspector2Client = session.client("inspector2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateMemberResponseTypeDef = client.associate_member()
+    from mypy_boto3_inspector2.client import Inspector2Client
+    from mypy_boto3_inspector2.type_defs import AssociateMemberResponseTypeDef
+    from mypy_boto3_inspector2.type_defs import AssociateMemberRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_account_permissions"
-paginator: ListAccountPermissionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccountPermissionsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: Inspector2Client = session.client("inspector2")
+
+    kwargs: AssociateMemberRequestRequestTypeDef = {...}
+    result: AssociateMemberResponseTypeDef = client.associate_member(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_inspector2.client import Inspector2Client
+    from mypy_boto3_inspector2.paginator import ListAccountPermissionsPaginator
+    from mypy_boto3_inspector2.type_defs import ListAccountPermissionsResponseTypeDef
+
+
+    session = Session()
+    client: Inspector2Client = session.client("inspector2")
+
+    paginator: ListAccountPermissionsPaginator = client.get_paginator("list_account_permissions")
+    for item in paginator.paginate(...):
+        item: ListAccountPermissionsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

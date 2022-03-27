@@ -1,525 +1,640 @@
-<a id="typed-dictionaries-for-boto3-appintegrationsservice-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 AppIntegrationsService module
+> [Index](../README.md) > [AppIntegrationsService](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [AppIntegrationsService](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
-type annotations stubs module
-[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
-
-- [Typed dictionaries for boto3 AppIntegrationsService module](#typed-dictionaries-for-boto3-appintegrationsservice-module)
-  - [CreateDataIntegrationRequestRequestTypeDef](#createdataintegrationrequestrequesttypedef)
-  - [CreateDataIntegrationResponseTypeDef](#createdataintegrationresponsetypedef)
-  - [CreateEventIntegrationRequestRequestTypeDef](#createeventintegrationrequestrequesttypedef)
-  - [CreateEventIntegrationResponseTypeDef](#createeventintegrationresponsetypedef)
-  - [DataIntegrationAssociationSummaryTypeDef](#dataintegrationassociationsummarytypedef)
-  - [DataIntegrationSummaryTypeDef](#dataintegrationsummarytypedef)
-  - [DeleteDataIntegrationRequestRequestTypeDef](#deletedataintegrationrequestrequesttypedef)
-  - [DeleteEventIntegrationRequestRequestTypeDef](#deleteeventintegrationrequestrequesttypedef)
-  - [EventFilterTypeDef](#eventfiltertypedef)
-  - [EventIntegrationAssociationTypeDef](#eventintegrationassociationtypedef)
-  - [EventIntegrationTypeDef](#eventintegrationtypedef)
-  - [GetDataIntegrationRequestRequestTypeDef](#getdataintegrationrequestrequesttypedef)
-  - [GetDataIntegrationResponseTypeDef](#getdataintegrationresponsetypedef)
-  - [GetEventIntegrationRequestRequestTypeDef](#geteventintegrationrequestrequesttypedef)
-  - [GetEventIntegrationResponseTypeDef](#geteventintegrationresponsetypedef)
-  - [ListDataIntegrationAssociationsRequestRequestTypeDef](#listdataintegrationassociationsrequestrequesttypedef)
-  - [ListDataIntegrationAssociationsResponseTypeDef](#listdataintegrationassociationsresponsetypedef)
-  - [ListDataIntegrationsRequestRequestTypeDef](#listdataintegrationsrequestrequesttypedef)
-  - [ListDataIntegrationsResponseTypeDef](#listdataintegrationsresponsetypedef)
-  - [ListEventIntegrationAssociationsRequestRequestTypeDef](#listeventintegrationassociationsrequestrequesttypedef)
-  - [ListEventIntegrationAssociationsResponseTypeDef](#listeventintegrationassociationsresponsetypedef)
-  - [ListEventIntegrationsRequestRequestTypeDef](#listeventintegrationsrequestrequesttypedef)
-  - [ListEventIntegrationsResponseTypeDef](#listeventintegrationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDataIntegrationRequestRequestTypeDef](#updatedataintegrationrequestrequesttypedef)
-  - [UpdateEventIntegrationRequestRequestTypeDef](#updateeventintegrationrequestrequesttypedef)
-
-<a id="createdataintegrationrequestrequesttypedef"></a>
+    Auto-generated documentation for [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
+    type annotations stubs module [mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 ## CreateDataIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationRequestRequestTypeDef
+
+def get_value() -> CreateDataIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataIntegrationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    KmsKey: NotRequired[str],
+    SourceURI: NotRequired[str],
+    ScheduleConfig: NotRequired[ScheduleConfigurationTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+    ClientToken: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `KmsKey`: `str`
-- `SourceURI`: `str`
-- `ScheduleConfig`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ClientToken`: `str`
-
-<a id="createdataintegrationresponsetypedef"></a>
-
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
 ## CreateDataIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import CreateDataIntegrationResponseTypeDef
+
+def get_value() -> CreateDataIntegrationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "KmsKey": ...,
+        "SourceURI": ...,
+        "ScheduleConfiguration": ...,
+        "Tags": ...,
+        "ClientToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDataIntegrationResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    Name: str,
+    Description: str,
+    KmsKey: str,
+    SourceURI: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    Tags: Dict[str, str],
+    ClientToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `KmsKey`: `str`
-- `SourceURI`: `str`
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ClientToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationRequestRequestTypeDef
+
+def get_value() -> CreateEventIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "EventFilter": ...,
+        "EventBridgeBus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventIntegrationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    EventFilter: EventFilterTypeDef,  # (1)
+    EventBridgeBus: str,
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Name`: `str`
-- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `EventBridgeBus`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createeventintegrationresponsetypedef"></a>
-
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
 ## CreateEventIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import CreateEventIntegrationResponseTypeDef
+
+def get_value() -> CreateEventIntegrationResponseTypeDef:
+    return {
+        "EventIntegrationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventIntegrationResponseTypeDef(TypedDict):
+    EventIntegrationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EventIntegrationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dataintegrationassociationsummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataIntegrationAssociationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import DataIntegrationAssociationSummaryTypeDef
+
+def get_value() -> DataIntegrationAssociationSummaryTypeDef:
+    return {
+        "DataIntegrationAssociationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `DataIntegrationAssociationArn`: `str`
-- `DataIntegrationArn`: `str`
-- `ClientId`: `str`
-
-<a id="dataintegrationsummarytypedef"></a>
+```python title="Definition"
+class DataIntegrationAssociationSummaryTypeDef(TypedDict):
+    DataIntegrationAssociationArn: NotRequired[str],
+    DataIntegrationArn: NotRequired[str],
+    ClientId: NotRequired[str],
+```
 
 ## DataIntegrationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import DataIntegrationSummaryTypeDef
+
+def get_value() -> DataIntegrationSummaryTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-- `SourceURI`: `str`
-
-<a id="deletedataintegrationrequestrequesttypedef"></a>
+```python title="Definition"
+class DataIntegrationSummaryTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    SourceURI: NotRequired[str],
+```
 
 ## DeleteDataIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import DeleteDataIntegrationRequestRequestTypeDef
+
+def get_value() -> DeleteDataIntegrationRequestRequestTypeDef:
+    return {
+        "DataIntegrationIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DataIntegrationIdentifier`: `str`
-
-<a id="deleteeventintegrationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDataIntegrationRequestRequestTypeDef(TypedDict):
+    DataIntegrationIdentifier: str,
+```
 
 ## DeleteEventIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import DeleteEventIntegrationRequestRequestTypeDef
+
+def get_value() -> DeleteEventIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="eventfiltertypedef"></a>
+```python title="Definition"
+class DeleteEventIntegrationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## EventFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import EventFilterTypeDef
+
+def get_value() -> EventFilterTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Required fields:
-
-- `Source`: `str`
-
-<a id="eventintegrationassociationtypedef"></a>
+```python title="Definition"
+class EventFilterTypeDef(TypedDict):
+    Source: str,
+```
 
 ## EventIntegrationAssociationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import EventIntegrationAssociationTypeDef
+
+def get_value() -> EventIntegrationAssociationTypeDef:
+    return {
+        "EventIntegrationAssociationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventIntegrationAssociationArn`: `str`
-- `EventIntegrationAssociationId`: `str`
-- `EventIntegrationName`: `str`
-- `ClientId`: `str`
-- `EventBridgeRuleName`: `str`
-- `ClientAssociationMetadata`: `Dict`\[`str`, `str`\]
-
-<a id="eventintegrationtypedef"></a>
+```python title="Definition"
+class EventIntegrationAssociationTypeDef(TypedDict):
+    EventIntegrationAssociationArn: NotRequired[str],
+    EventIntegrationAssociationId: NotRequired[str],
+    EventIntegrationName: NotRequired[str],
+    ClientId: NotRequired[str],
+    EventBridgeRuleName: NotRequired[str],
+    ClientAssociationMetadata: NotRequired[Dict[str, str]],
+```
 
 ## EventIntegrationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import EventIntegrationTypeDef
+
+def get_value() -> EventIntegrationTypeDef:
+    return {
+        "EventIntegrationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventIntegrationTypeDef(TypedDict):
+    EventIntegrationArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    EventFilter: NotRequired[EventFilterTypeDef],  # (1)
+    EventBridgeBus: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `EventIntegrationArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `EventBridgeBus`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="getdataintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
 ## GetDataIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import GetDataIntegrationRequestRequestTypeDef
+
+def get_value() -> GetDataIntegrationRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-<a id="getdataintegrationresponsetypedef"></a>
+```python title="Definition"
+class GetDataIntegrationRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+```
 
 ## GetDataIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import GetDataIntegrationResponseTypeDef
+
+def get_value() -> GetDataIntegrationResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Id": ...,
+        "Name": ...,
+        "Description": ...,
+        "KmsKey": ...,
+        "SourceURI": ...,
+        "ScheduleConfiguration": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDataIntegrationResponseTypeDef(TypedDict):
+    Arn: str,
+    Id: str,
+    Name: str,
+    Description: str,
+    KmsKey: str,
+    SourceURI: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `KmsKey`: `str`
-- `SourceURI`: `str`
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="geteventintegrationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEventIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import GetEventIntegrationRequestRequestTypeDef
+
+def get_value() -> GetEventIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="geteventintegrationresponsetypedef"></a>
+```python title="Definition"
+class GetEventIntegrationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetEventIntegrationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import GetEventIntegrationResponseTypeDef
+
+def get_value() -> GetEventIntegrationResponseTypeDef:
+    return {
+        "Name": ...,
+        "Description": ...,
+        "EventIntegrationArn": ...,
+        "EventBridgeBus": ...,
+        "EventFilter": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEventIntegrationResponseTypeDef(TypedDict):
+    Name: str,
+    Description: str,
+    EventIntegrationArn: str,
+    EventBridgeBus: str,
+    EventFilter: EventFilterTypeDef,  # (1)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Name`: `str`
-- `Description`: `str`
-- `EventIntegrationArn`: `str`
-- `EventBridgeBus`: `str`
-- `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdataintegrationassociationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDataIntegrationAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListDataIntegrationAssociationsRequestRequestTypeDef
+
+def get_value() -> ListDataIntegrationAssociationsRequestRequestTypeDef:
+    return {
+        "DataIntegrationIdentifier": ...,
+    }
 ```
 
-Required fields:
-
-- `DataIntegrationIdentifier`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdataintegrationassociationsresponsetypedef"></a>
+```python title="Definition"
+class ListDataIntegrationAssociationsRequestRequestTypeDef(TypedDict):
+    DataIntegrationIdentifier: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDataIntegrationAssociationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListDataIntegrationAssociationsResponseTypeDef
+
+def get_value() -> ListDataIntegrationAssociationsResponseTypeDef:
+    return {
+        "DataIntegrationAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDataIntegrationAssociationsResponseTypeDef(TypedDict):
+    DataIntegrationAssociations: List[DataIntegrationAssociationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataIntegrationAssociations`:
-  `List`\[[DataIntegrationAssociationSummaryTypeDef](./type_defs.md#dataintegrationassociationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listdataintegrationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataIntegrationAssociationSummaryTypeDef](./type_defs.md#dataintegrationassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListDataIntegrationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListDataIntegrationsRequestRequestTypeDef
+
+def get_value() -> ListDataIntegrationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listdataintegrationsresponsetypedef"></a>
+```python title="Definition"
+class ListDataIntegrationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListDataIntegrationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListDataIntegrationsResponseTypeDef
+
+def get_value() -> ListDataIntegrationsResponseTypeDef:
+    return {
+        "DataIntegrations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDataIntegrationsResponseTypeDef(TypedDict):
+    DataIntegrations: List[DataIntegrationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DataIntegrations`:
-  `List`\[[DataIntegrationSummaryTypeDef](./type_defs.md#dataintegrationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listeventintegrationassociationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DataIntegrationSummaryTypeDef](./type_defs.md#dataintegrationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventIntegrationAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsRequestRequestTypeDef
+
+def get_value() -> ListEventIntegrationAssociationsRequestRequestTypeDef:
+    return {
+        "EventIntegrationName": ...,
+    }
 ```
 
-Required fields:
-
-- `EventIntegrationName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listeventintegrationassociationsresponsetypedef"></a>
+```python title="Definition"
+class ListEventIntegrationAssociationsRequestRequestTypeDef(TypedDict):
+    EventIntegrationName: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListEventIntegrationAssociationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListEventIntegrationAssociationsResponseTypeDef
+
+def get_value() -> ListEventIntegrationAssociationsResponseTypeDef:
+    return {
+        "EventIntegrationAssociations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventIntegrationAssociationsResponseTypeDef(TypedDict):
+    EventIntegrationAssociations: List[EventIntegrationAssociationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventIntegrationAssociations`:
-  `List`\[[EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listeventintegrationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventIntegrationAssociationTypeDef](./type_defs.md#eventintegrationassociationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEventIntegrationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsRequestRequestTypeDef
+
+def get_value() -> ListEventIntegrationsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listeventintegrationsresponsetypedef"></a>
+```python title="Definition"
+class ListEventIntegrationsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListEventIntegrationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListEventIntegrationsResponseTypeDef
+
+def get_value() -> ListEventIntegrationsResponseTypeDef:
+    return {
+        "EventIntegrations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventIntegrationsResponseTypeDef(TypedDict):
+    EventIntegrations: List[EventIntegrationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EventIntegrations`:
-  `List`\[[EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventIntegrationTypeDef](./type_defs.md#eventintegrationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scheduleconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ScheduleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import ScheduleConfigurationTypeDef
+
+def get_value() -> ScheduleConfigurationTypeDef:
+    return {
+        "FirstExecutionFrom": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirstExecutionFrom`: `str`
-- `Object`: `str`
-- `ScheduleExpression`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class ScheduleConfigurationTypeDef(TypedDict):
+    FirstExecutionFrom: NotRequired[str],
+    Object: NotRequired[str],
+    ScheduleExpression: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatedataintegrationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateDataIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import UpdateDataIntegrationRequestRequestTypeDef
+
+def get_value() -> UpdateDataIntegrationRequestRequestTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `Identifier`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updateeventintegrationrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateDataIntegrationRequestRequestTypeDef(TypedDict):
+    Identifier: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateEventIntegrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appintegrations.type_defs import UpdateEventIntegrationRequestRequestTypeDef
+
+def get_value() -> UpdateEventIntegrationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEventIntegrationRequestRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`

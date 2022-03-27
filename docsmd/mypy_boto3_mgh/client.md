@@ -1,49 +1,18 @@
-<a id="migrationhubclient-for-boto3-migrationhub-module"></a>
-
-# MigrationHubClient for boto3 MigrationHub module
+# MigrationHubClient
 
 > [Index](../README.md) > [MigrationHub](./README.md) > MigrationHubClient
 
-Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module
-[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
+!!! note ""
 
-- [MigrationHubClient for boto3 MigrationHub module](#migrationhubclient-for-boto3-migrationhub-module)
-  - [MigrationHubClient](#migrationhubclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_created_artifact](#associate_created_artifact)
-    - [associate_discovered_resource](#associate_discovered_resource)
-    - [can_paginate](#can_paginate)
-    - [create_progress_update_stream](#create_progress_update_stream)
-    - [delete_progress_update_stream](#delete_progress_update_stream)
-    - [describe_application_state](#describe_application_state)
-    - [describe_migration_task](#describe_migration_task)
-    - [disassociate_created_artifact](#disassociate_created_artifact)
-    - [disassociate_discovered_resource](#disassociate_discovered_resource)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_migration_task](#import_migration_task)
-    - [list_application_states](#list_application_states)
-    - [list_created_artifacts](#list_created_artifacts)
-    - [list_discovered_resources](#list_discovered_resources)
-    - [list_migration_tasks](#list_migration_tasks)
-    - [list_progress_update_streams](#list_progress_update_streams)
-    - [notify_application_state](#notify_application_state)
-    - [notify_migration_task_state](#notify_migration_task_state)
-    - [put_resource_attributes](#put_resource_attributes)
-    - [get_paginator](#get_paginator)
-
-<a id="migrationhubclient"></a>
+    Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+    type annotations stubs module [mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ## MigrationHubClient
 
-Type annotations for `boto3.client("mgh")`
+Type annotations and code completion for `#!python boto3.client("mgh")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mgh.client import MigrationHubClient
 
@@ -51,513 +20,647 @@ def get_mgh_client() -> MigrationHubClient:
     return Session().client("mgh")
 ```
 
-Boto3 documentation:
-[MigrationHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mgh").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mgh")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.DryRunOperation,
+    client.HomeRegionNotSetException,
+    client.InternalServerError,
+    client.InvalidInputException,
+    client.PolicyErrorException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+    client.UnauthorizedOperation,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mgh.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.DryRunOperation`
-- `Exceptions.HomeRegionNotSetException`
-- `Exceptions.InternalServerError`
-- `Exceptions.InvalidInputException`
-- `Exceptions.PolicyErrorException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.UnauthorizedOperation`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### associate\_created\_artifact
 
-MigrationHubClient exceptions.
+Associates a created artifact of an AWS cloud resource, the target receiving the
+migration, with the migration task performed by a migration tool.
 
-Type annotations for `boto3.client("mgh").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("mgh").associate_created_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
 
-Boto3 documentation:
-[MigrationHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.exceptions)
+```python title="Method definition"
+def associate_created_artifact(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    CreatedArtifact: CreatedArtifactTypeDef,  # (1)
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef) 
 
-<a id="associate\_created\_artifact"></a>
 
-### associate_created_artifact
+```python title="Usage example with kwargs"
+kwargs: AssociateCreatedArtifactRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "CreatedArtifact": ...,
+}
 
-Associates a created artifact of an AWS cloud resource, the target receiving
-the migration, with the migration task performed by a migration tool.
+parent.associate_created_artifact(**kwargs)
+```
 
-Type annotations for `boto3.client("mgh").associate_created_artifact` method.
+1. See [:material-code-braces: AssociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#associatecreatedartifactrequestrequesttypedef) 
 
-Boto3 documentation:
-[MigrationHub.Client.associate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_created_artifact)
-
-Arguments mapping described in
-[AssociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#associatecreatedartifactrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `CreatedArtifact`:
-  [CreatedArtifactTypeDef](./type_defs.md#createdartifacttypedef) *(required)*
-- `DryRun`: `bool`
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="associate\_discovered\_resource"></a>
-
-### associate_discovered_resource
+### associate\_discovered\_resource
 
 Associates a discovered resource ID from Application Discovery Service with a
 migration task.
 
-Type annotations for `boto3.client("mgh").associate_discovered_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("mgh").associate_discovered_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
 
-Boto3 documentation:
-[MigrationHub.Client.associate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.associate_discovered_resource)
+```python title="Method definition"
+def associate_discovered_resource(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    DiscoveredResource: DiscoveredResourceTypeDef,  # (1)
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#associatediscoveredresourcerequestrequesttypedef).
+1. See [:material-code-braces: DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `DiscoveredResource`:
-  [DiscoveredResourceTypeDef](./type_defs.md#discoveredresourcetypedef)
-  *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AssociateDiscoveredResourceRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "DiscoveredResource": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_discovered_resource(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#associatediscoveredresourcerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mgh").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mgh").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate)
 
-Boto3 documentation:
-[MigrationHub.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_progress\_update\_stream"></a>
-
-### create_progress_update_stream
+### create\_progress\_update\_stream
 
 Creates a progress update stream which is an AWS resource used for access
 control as well as a namespace for migration task names that is implicitly
 linked to your AWS account.
 
-Type annotations for `boto3.client("mgh").create_progress_update_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("mgh").create_progress_update_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
 
-Boto3 documentation:
-[MigrationHub.Client.create_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.create_progress_update_stream)
+```python title="Method definition"
+def create_progress_update_stream(
+    self,
+    *,
+    ProgressUpdateStreamName: str,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#createprogressupdatestreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProgressUpdateStreamName`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateProgressUpdateStreamRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStreamName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_progress_update_stream(**kwargs)
+```
 
-<a id="delete\_progress\_update\_stream"></a>
+1. See [:material-code-braces: CreateProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#createprogressupdatestreamrequestrequesttypedef) 
 
-### delete_progress_update_stream
+### delete\_progress\_update\_stream
 
 Deletes a progress update stream, including all of its tasks, which was
 previously created as an AWS resource used for access control.
 
-Type annotations for `boto3.client("mgh").delete_progress_update_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("mgh").delete_progress_update_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
 
-Boto3 documentation:
-[MigrationHub.Client.delete_progress_update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.delete_progress_update_stream)
+```python title="Method definition"
+def delete_progress_update_stream(
+    self,
+    *,
+    ProgressUpdateStreamName: str,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#deleteprogressupdatestreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProgressUpdateStreamName`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteProgressUpdateStreamRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStreamName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_progress_update_stream(**kwargs)
+```
 
-<a id="describe\_application\_state"></a>
+1. See [:material-code-braces: DeleteProgressUpdateStreamRequestRequestTypeDef](./type_defs.md#deleteprogressupdatestreamrequestrequesttypedef) 
 
-### describe_application_state
+### describe\_application\_state
 
 Gets the migration status of an application.
 
-Type annotations for `boto3.client("mgh").describe_application_state` method.
+Type annotations and code completion for `#!python boto3.client("mgh").describe_application_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
 
-Boto3 documentation:
-[MigrationHub.Client.describe_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_application_state)
+```python title="Method definition"
+def describe_application_state(
+    self,
+    *,
+    ApplicationId: str,
+) -> DescribeApplicationStateResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationStateRequestRequestTypeDef](./type_defs.md#describeapplicationstaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationStateRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+}
 
-Returns
-[DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef).
+parent.describe_application_state(**kwargs)
+```
 
-<a id="describe\_migration\_task"></a>
+1. See [:material-code-braces: DescribeApplicationStateRequestRequestTypeDef](./type_defs.md#describeapplicationstaterequestrequesttypedef) 
 
-### describe_migration_task
+### describe\_migration\_task
 
 Retrieves a list of all attributes associated with a specific migration task.
 
-Type annotations for `boto3.client("mgh").describe_migration_task` method.
+Type annotations and code completion for `#!python boto3.client("mgh").describe_migration_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
 
-Boto3 documentation:
-[MigrationHub.Client.describe_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.describe_migration_task)
+```python title="Method definition"
+def describe_migration_task(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+) -> DescribeMigrationTaskResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMigrationTaskRequestRequestTypeDef](./type_defs.md#describemigrationtaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMigrationTaskRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
 
-Returns
-[DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef).
+parent.describe_migration_task(**kwargs)
+```
 
-<a id="disassociate\_created\_artifact"></a>
+1. See [:material-code-braces: DescribeMigrationTaskRequestRequestTypeDef](./type_defs.md#describemigrationtaskrequestrequesttypedef) 
 
-### disassociate_created_artifact
+### disassociate\_created\_artifact
 
 Disassociates a created artifact of an AWS resource with a migration task
 performed by a migration tool that was previously associated.
 
-Type annotations for `boto3.client("mgh").disassociate_created_artifact`
-method.
+Type annotations and code completion for `#!python boto3.client("mgh").disassociate_created_artifact` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
 
-Boto3 documentation:
-[MigrationHub.Client.disassociate_created_artifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_created_artifact)
+```python title="Method definition"
+def disassociate_created_artifact(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    CreatedArtifactName: str,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#disassociatecreatedartifactrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `CreatedArtifactName`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DisassociateCreatedArtifactRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "CreatedArtifactName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_created_artifact(**kwargs)
+```
 
-<a id="disassociate\_discovered\_resource"></a>
+1. See [:material-code-braces: DisassociateCreatedArtifactRequestRequestTypeDef](./type_defs.md#disassociatecreatedartifactrequestrequesttypedef) 
 
-### disassociate_discovered_resource
+### disassociate\_discovered\_resource
 
 Disassociate an Application Discovery Service discovered resource from a
 migration task.
 
-Type annotations for `boto3.client("mgh").disassociate_discovered_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("mgh").disassociate_discovered_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
 
-Boto3 documentation:
-[MigrationHub.Client.disassociate_discovered_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.disassociate_discovered_resource)
+```python title="Method definition"
+def disassociate_discovered_resource(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    ConfigurationId: str,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `ConfigurationId`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DisassociateDiscoveredResourceRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "ConfigurationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_discovered_resource(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateDiscoveredResourceRequestRequestTypeDef](./type_defs.md#disassociatediscoveredresourcerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mgh").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mgh").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MigrationHub.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="import\_migration\_task"></a>
-
-### import_migration_task
+### import\_migration\_task
 
 Registers a new migration task which represents a server, database, etc., being
 migrated to AWS by a migration tool.
 
-Type annotations for `boto3.client("mgh").import_migration_task` method.
+Type annotations and code completion for `#!python boto3.client("mgh").import_migration_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
 
-Boto3 documentation:
-[MigrationHub.Client.import_migration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.import_migration_task)
+```python title="Method definition"
+def import_migration_task(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ImportMigrationTaskRequestRequestTypeDef](./type_defs.md#importmigrationtaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ImportMigrationTaskRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.import_migration_task(**kwargs)
+```
 
-<a id="list\_application\_states"></a>
+1. See [:material-code-braces: ImportMigrationTaskRequestRequestTypeDef](./type_defs.md#importmigrationtaskrequestrequesttypedef) 
 
-### list_application_states
+### list\_application\_states
 
 Lists all the migration statuses for your applications.
 
-Type annotations for `boto3.client("mgh").list_application_states` method.
+Type annotations and code completion for `#!python boto3.client("mgh").list_application_states` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
 
-Boto3 documentation:
-[MigrationHub.Client.list_application_states](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_application_states)
+```python title="Method definition"
+def list_application_states(
+    self,
+    *,
+    ApplicationIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListApplicationStatesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListApplicationStatesRequestRequestTypeDef](./type_defs.md#listapplicationstatesrequestrequesttypedef).
+1. See [:material-code-braces: ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListApplicationStatesRequestRequestTypeDef = {  # (1)
+    "ApplicationIds": ...,
+}
 
-Returns
-[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef).
+parent.list_application_states(**kwargs)
+```
 
-<a id="list\_created\_artifacts"></a>
+1. See [:material-code-braces: ListApplicationStatesRequestRequestTypeDef](./type_defs.md#listapplicationstatesrequestrequesttypedef) 
 
-### list_created_artifacts
+### list\_created\_artifacts
 
 Lists the created artifacts attached to a given migration task in an update
 stream.
 
-Type annotations for `boto3.client("mgh").list_created_artifacts` method.
+Type annotations and code completion for `#!python boto3.client("mgh").list_created_artifacts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
 
-Boto3 documentation:
-[MigrationHub.Client.list_created_artifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_created_artifacts)
+```python title="Method definition"
+def list_created_artifacts(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListCreatedArtifactsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCreatedArtifactsRequestRequestTypeDef](./type_defs.md#listcreatedartifactsrequestrequesttypedef).
+1. See [:material-code-braces: ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCreatedArtifactsRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
 
-Returns
-[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef).
+parent.list_created_artifacts(**kwargs)
+```
 
-<a id="list\_discovered\_resources"></a>
+1. See [:material-code-braces: ListCreatedArtifactsRequestRequestTypeDef](./type_defs.md#listcreatedartifactsrequestrequesttypedef) 
 
-### list_discovered_resources
+### list\_discovered\_resources
 
 Lists discovered resources associated with the given `MigrationTask` .
 
-Type annotations for `boto3.client("mgh").list_discovered_resources` method.
+Type annotations and code completion for `#!python boto3.client("mgh").list_discovered_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
 
-Boto3 documentation:
-[MigrationHub.Client.list_discovered_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_discovered_resources)
+```python title="Method definition"
+def list_discovered_resources(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDiscoveredResourcesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDiscoveredResourcesRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
 
-Returns
-[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef).
+parent.list_discovered_resources(**kwargs)
+```
 
-<a id="list\_migration\_tasks"></a>
+1. See [:material-code-braces: ListDiscoveredResourcesRequestRequestTypeDef](./type_defs.md#listdiscoveredresourcesrequestrequesttypedef) 
 
-### list_migration_tasks
+### list\_migration\_tasks
 
 Lists all, or filtered by resource name, migration tasks associated with the
 user account making this call.
 
-Type annotations for `boto3.client("mgh").list_migration_tasks` method.
+Type annotations and code completion for `#!python boto3.client("mgh").list_migration_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
 
-Boto3 documentation:
-[MigrationHub.Client.list_migration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_migration_tasks)
+```python title="Method definition"
+def list_migration_tasks(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ResourceName: str = ...,
+) -> ListMigrationTasksResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMigrationTasksRequestRequestTypeDef](./type_defs.md#listmigrationtasksrequestrequesttypedef).
+1. See [:material-code-braces: ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ResourceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMigrationTasksRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef).
+parent.list_migration_tasks(**kwargs)
+```
 
-<a id="list\_progress\_update\_streams"></a>
+1. See [:material-code-braces: ListMigrationTasksRequestRequestTypeDef](./type_defs.md#listmigrationtasksrequestrequesttypedef) 
 
-### list_progress_update_streams
+### list\_progress\_update\_streams
 
-Lists progress update streams associated with the user account making this
-call.
+Lists progress update streams associated with the user account making this call.
 
-Type annotations for `boto3.client("mgh").list_progress_update_streams` method.
+Type annotations and code completion for `#!python boto3.client("mgh").list_progress_update_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
 
-Boto3 documentation:
-[MigrationHub.Client.list_progress_update_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.list_progress_update_streams)
+```python title="Method definition"
+def list_progress_update_streams(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProgressUpdateStreamsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProgressUpdateStreamsRequestRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequestrequesttypedef).
+1. See [:material-code-braces: ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProgressUpdateStreamsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef).
+parent.list_progress_update_streams(**kwargs)
+```
 
-<a id="notify\_application\_state"></a>
+1. See [:material-code-braces: ListProgressUpdateStreamsRequestRequestTypeDef](./type_defs.md#listprogressupdatestreamsrequestrequesttypedef) 
 
-### notify_application_state
+### notify\_application\_state
 
 Sets the migration state of an application.
 
-Type annotations for `boto3.client("mgh").notify_application_state` method.
+Type annotations and code completion for `#!python boto3.client("mgh").notify_application_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
 
-Boto3 documentation:
-[MigrationHub.Client.notify_application_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_application_state)
+```python title="Method definition"
+def notify_application_state(
+    self,
+    *,
+    ApplicationId: str,
+    Status: ApplicationStatusType,  # (1)
+    UpdateDateTime: Union[datetime, str] = ...,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[NotifyApplicationStateRequestRequestTypeDef](./type_defs.md#notifyapplicationstaterequestrequesttypedef).
+1. See [:material-code-brackets: ApplicationStatusType](./literals.md#applicationstatustype) 
 
-Keyword-only arguments:
 
-- `ApplicationId`: `str` *(required)*
-- `Status`: [ApplicationStatusType](./literals.md#applicationstatustype)
-  *(required)*
-- `UpdateDateTime`: `Union`\[`datetime`, `str`\]
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: NotifyApplicationStateRequestRequestTypeDef = {  # (1)
+    "ApplicationId": ...,
+    "Status": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.notify_application_state(**kwargs)
+```
 
-<a id="notify\_migration\_task\_state"></a>
+1. See [:material-code-braces: NotifyApplicationStateRequestRequestTypeDef](./type_defs.md#notifyapplicationstaterequestrequesttypedef) 
 
-### notify_migration_task_state
+### notify\_migration\_task\_state
 
 Notifies Migration Hub of the current status, progress, or other detail
 regarding a migration task.
 
-Type annotations for `boto3.client("mgh").notify_migration_task_state` method.
+Type annotations and code completion for `#!python boto3.client("mgh").notify_migration_task_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
 
-Boto3 documentation:
-[MigrationHub.Client.notify_migration_task_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.notify_migration_task_state)
+```python title="Method definition"
+def notify_migration_task_state(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    Task: TaskTypeDef,  # (1)
+    UpdateDateTime: Union[datetime, str],
+    NextUpdateSeconds: int,
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[NotifyMigrationTaskStateRequestRequestTypeDef](./type_defs.md#notifymigrationtaskstaterequestrequesttypedef).
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `Task`: [TaskTypeDef](./type_defs.md#tasktypedef) *(required)*
-- `UpdateDateTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `NextUpdateSeconds`: `int` *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: NotifyMigrationTaskStateRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "Task": ...,
+    "UpdateDateTime": ...,
+    "NextUpdateSeconds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.notify_migration_task_state(**kwargs)
+```
 
-<a id="put\_resource\_attributes"></a>
+1. See [:material-code-braces: NotifyMigrationTaskStateRequestRequestTypeDef](./type_defs.md#notifymigrationtaskstaterequestrequesttypedef) 
 
-### put_resource_attributes
+### put\_resource\_attributes
 
 .
 
-Type annotations for `boto3.client("mgh").put_resource_attributes` method.
+Type annotations and code completion for `#!python boto3.client("mgh").put_resource_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
 
-Boto3 documentation:
-[MigrationHub.Client.put_resource_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.put_resource_attributes)
+```python title="Method definition"
+def put_resource_attributes(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    ResourceAttributeList: Sequence[ResourceAttributeTypeDef],  # (1)
+    DryRun: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutResourceAttributesRequestRequestTypeDef](./type_defs.md#putresourceattributesrequestrequesttypedef).
+1. See [:material-code-braces: ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef) 
 
-Keyword-only arguments:
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `ResourceAttributeList`:
-  `Sequence`\[[ResourceAttributeTypeDef](./type_defs.md#resourceattributetypedef)\]
-  *(required)*
-- `DryRun`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutResourceAttributesRequestRequestTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+    "ResourceAttributeList": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_resource_attributes(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: PutResourceAttributesRequestRequestTypeDef](./type_defs.md#putresourceattributesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mgh").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator` method with overloads.
 
-- `client.get_paginator("list_application_states")` ->
-  [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
-- `client.get_paginator("list_created_artifacts")` ->
-  [ListCreatedArtifactsPaginator](./paginators.md#listcreatedartifactspaginator)
-- `client.get_paginator("list_discovered_resources")` ->
-  [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
-- `client.get_paginator("list_migration_tasks")` ->
-  [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
-- `client.get_paginator("list_progress_update_streams")` ->
-  [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
+- `client.get_paginator("list_application_states")` -> [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
+- `client.get_paginator("list_created_artifacts")` -> [ListCreatedArtifactsPaginator](./paginators.md#listcreatedartifactspaginator)
+- `client.get_paginator("list_discovered_resources")` -> [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
+- `client.get_paginator("list_migration_tasks")` -> [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
+- `client.get_paginator("list_progress_update_streams")` -> [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
+
+
+

@@ -1,57 +1,18 @@
-<a id="snowballclient-for-boto3-snowball-module"></a>
-
-# SnowballClient for boto3 Snowball module
+# SnowballClient
 
 > [Index](../README.md) > [Snowball](./README.md) > SnowballClient
 
-Auto-generated documentation for
-[Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
-type annotations stubs module
-[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
+!!! note ""
 
-- [SnowballClient for boto3 Snowball module](#snowballclient-for-boto3-snowball-module)
-  - [SnowballClient](#snowballclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_cluster](#cancel_cluster)
-    - [cancel_job](#cancel_job)
-    - [create_address](#create_address)
-    - [create_cluster](#create_cluster)
-    - [create_job](#create_job)
-    - [create_long_term_pricing](#create_long_term_pricing)
-    - [create_return_shipping_label](#create_return_shipping_label)
-    - [describe_address](#describe_address)
-    - [describe_addresses](#describe_addresses)
-    - [describe_cluster](#describe_cluster)
-    - [describe_job](#describe_job)
-    - [describe_return_shipping_label](#describe_return_shipping_label)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_job_manifest](#get_job_manifest)
-    - [get_job_unlock_code](#get_job_unlock_code)
-    - [get_snowball_usage](#get_snowball_usage)
-    - [get_software_updates](#get_software_updates)
-    - [list_cluster_jobs](#list_cluster_jobs)
-    - [list_clusters](#list_clusters)
-    - [list_compatible_images](#list_compatible_images)
-    - [list_jobs](#list_jobs)
-    - [list_long_term_pricing](#list_long_term_pricing)
-    - [update_cluster](#update_cluster)
-    - [update_job](#update_job)
-    - [update_job_shipment_state](#update_job_shipment_state)
-    - [update_long_term_pricing](#update_long_term_pricing)
-    - [get_paginator](#get_paginator)
-
-<a id="snowballclient"></a>
+    Auto-generated documentation for [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
+    type annotations stubs module [mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 ## SnowballClient
 
-Type annotations for `boto3.client("snowball")`
+Type annotations and code completion for `#!python boto3.client("snowball")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_snowball.client import SnowballClient
 
@@ -59,704 +20,906 @@ def get_snowball_client() -> SnowballClient:
     return Session().client("snowball")
 ```
 
-Boto3 documentation:
-[Snowball.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("snowball").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("snowball")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ClusterLimitExceededException,
+    client.ConflictException,
+    client.Ec2RequestFailedException,
+    client.InvalidAddressException,
+    client.InvalidInputCombinationException,
+    client.InvalidJobStateException,
+    client.InvalidNextTokenException,
+    client.InvalidResourceException,
+    client.KMSRequestFailedException,
+    client.ReturnShippingLabelAlreadyExistsException,
+    client.UnsupportedAddressException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_snowball.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ClusterLimitExceededException`
-- `Exceptions.ConflictException`
-- `Exceptions.Ec2RequestFailedException`
-- `Exceptions.InvalidAddressException`
-- `Exceptions.InvalidInputCombinationException`
-- `Exceptions.InvalidJobStateException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.InvalidResourceException`
-- `Exceptions.KMSRequestFailedException`
-- `Exceptions.ReturnShippingLabelAlreadyExistsException`
-- `Exceptions.UnsupportedAddressException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SnowballClient exceptions.
-
-Type annotations for `boto3.client("snowball").exceptions` method.
-
-Boto3 documentation:
-[Snowball.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("snowball").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("snowball").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate)
 
-Boto3 documentation:
-[Snowball.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_cluster"></a>
-
-### cancel_cluster
+### cancel\_cluster
 
 Cancels a cluster job.
 
-Type annotations for `boto3.client("snowball").cancel_cluster` method.
+Type annotations and code completion for `#!python boto3.client("snowball").cancel_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
 
-Boto3 documentation:
-[Snowball.Client.cancel_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_cluster)
+```python title="Method definition"
+def cancel_cluster(
+    self,
+    *,
+    ClusterId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelClusterRequestRequestTypeDef](./type_defs.md#cancelclusterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelClusterRequestRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_cluster(**kwargs)
+```
 
-<a id="cancel\_job"></a>
+1. See [:material-code-braces: CancelClusterRequestRequestTypeDef](./type_defs.md#cancelclusterrequestrequesttypedef) 
 
-### cancel_job
+### cancel\_job
 
 Cancels the specified job.
 
-Type annotations for `boto3.client("snowball").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("snowball").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
 
-Boto3 documentation:
-[Snowball.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    JobId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_job(**kwargs)
+```
 
-<a id="create\_address"></a>
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
 
-### create_address
+### create\_address
 
 Creates an address for a Snow device to be shipped to.
 
-Type annotations for `boto3.client("snowball").create_address` method.
+Type annotations and code completion for `#!python boto3.client("snowball").create_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
 
-Boto3 documentation:
-[Snowball.Client.create_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_address)
+```python title="Method definition"
+def create_address(
+    self,
+    *,
+    Address: AddressTypeDef,  # (1)
+) -> CreateAddressResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAddressRequestRequestTypeDef](./type_defs.md#createaddressrequestrequesttypedef).
+1. See [:material-code-braces: AddressTypeDef](./type_defs.md#addresstypedef) 
+2. See [:material-code-braces: CreateAddressResultTypeDef](./type_defs.md#createaddressresulttypedef) 
 
-Keyword-only arguments:
 
-- `Address`: [AddressTypeDef](./type_defs.md#addresstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateAddressRequestRequestTypeDef = {  # (1)
+    "Address": ...,
+}
 
-Returns
-[CreateAddressResultTypeDef](./type_defs.md#createaddressresulttypedef).
+parent.create_address(**kwargs)
+```
 
-<a id="create\_cluster"></a>
+1. See [:material-code-braces: CreateAddressRequestRequestTypeDef](./type_defs.md#createaddressrequestrequesttypedef) 
 
-### create_cluster
+### create\_cluster
 
 Creates an empty cluster.
 
-Type annotations for `boto3.client("snowball").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("snowball").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
 
-Boto3 documentation:
-[Snowball.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    JobType: JobTypeType,  # (1)
+    Resources: JobResourceTypeDef,  # (2)
+    AddressId: str,
+    RoleARN: str,
+    SnowballType: SnowballTypeType,  # (3)
+    ShippingOption: ShippingOptionType,  # (4)
+    OnDeviceServiceConfiguration: OnDeviceServiceConfigurationTypeDef = ...,  # (5)
+    Description: str = ...,
+    KmsKeyARN: str = ...,
+    Notification: NotificationTypeDef = ...,  # (6)
+    ForwardingAddressId: str = ...,
+    TaxDocuments: TaxDocumentsTypeDef = ...,  # (7)
+    RemoteManagement: RemoteManagementType = ...,  # (8)
+) -> CreateClusterResultTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+4. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+5. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+6. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+7. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+8. See [:material-code-brackets: RemoteManagementType](./literals.md#remotemanagementtype) 
+9. See [:material-code-braces: CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobType`: [JobTypeType](./literals.md#jobtypetype) *(required)*
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-  *(required)*
-- `AddressId`: `str` *(required)*
-- `RoleARN`: `str` *(required)*
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-  *(required)*
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-  *(required)*
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `Description`: `str`
-- `KmsKeyARN`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `RemoteManagement`:
-  [RemoteManagementType](./literals.md#remotemanagementtype)
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "JobType": ...,
+    "Resources": ...,
+    "AddressId": ...,
+    "RoleARN": ...,
+    "SnowballType": ...,
+    "ShippingOption": ...,
+}
 
-Returns
-[CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 Creates a job to import or export data between Amazon S3 and your on-premises
 data center.
 
-Type annotations for `boto3.client("snowball").create_job` method.
+Type annotations and code completion for `#!python boto3.client("snowball").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
 
-Boto3 documentation:
-[Snowball.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    JobType: JobTypeType = ...,  # (1)
+    Resources: JobResourceTypeDef = ...,  # (2)
+    OnDeviceServiceConfiguration: OnDeviceServiceConfigurationTypeDef = ...,  # (3)
+    Description: str = ...,
+    AddressId: str = ...,
+    KmsKeyARN: str = ...,
+    RoleARN: str = ...,
+    SnowballCapacityPreference: SnowballCapacityType = ...,  # (4)
+    ShippingOption: ShippingOptionType = ...,  # (5)
+    Notification: NotificationTypeDef = ...,  # (6)
+    ClusterId: str = ...,
+    SnowballType: SnowballTypeType = ...,  # (7)
+    ForwardingAddressId: str = ...,
+    TaxDocuments: TaxDocumentsTypeDef = ...,  # (8)
+    DeviceConfiguration: DeviceConfigurationTypeDef = ...,  # (9)
+    RemoteManagement: RemoteManagementType = ...,  # (10)
+    LongTermPricingId: str = ...,
+) -> CreateJobResultTypeDef:  # (11)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+4. See [:material-code-brackets: SnowballCapacityType](./literals.md#snowballcapacitytype) 
+5. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+6. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+7. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+8. See [:material-code-braces: TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef) 
+9. See [:material-code-braces: DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef) 
+10. See [:material-code-brackets: RemoteManagementType](./literals.md#remotemanagementtype) 
+11. See [:material-code-braces: CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `Description`: `str`
-- `AddressId`: `str`
-- `KmsKeyARN`: `str`
-- `RoleARN`: `str`
-- `SnowballCapacityPreference`:
-  [SnowballCapacityType](./literals.md#snowballcapacitytype)
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ClusterId`: `str`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
-- `ForwardingAddressId`: `str`
-- `TaxDocuments`: [TaxDocumentsTypeDef](./type_defs.md#taxdocumentstypedef)
-- `DeviceConfiguration`:
-  [DeviceConfigurationTypeDef](./type_defs.md#deviceconfigurationtypedef)
-- `RemoteManagement`:
-  [RemoteManagementType](./literals.md#remotemanagementtype)
-- `LongTermPricingId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "JobType": ...,
+}
 
-Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_long\_term\_pricing"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_long_term_pricing
+### create\_long\_term\_pricing
 
 Creates a job with the long-term usage option for a device.
 
-Type annotations for `boto3.client("snowball").create_long_term_pricing`
-method.
+Type annotations and code completion for `#!python boto3.client("snowball").create_long_term_pricing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
 
-Boto3 documentation:
-[Snowball.Client.create_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_long_term_pricing)
+```python title="Method definition"
+def create_long_term_pricing(
+    self,
+    *,
+    LongTermPricingType: LongTermPricingTypeType,  # (1)
+    IsLongTermPricingAutoRenew: bool = ...,
+    SnowballType: SnowballTypeType = ...,  # (2)
+) -> CreateLongTermPricingResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLongTermPricingRequestRequestTypeDef](./type_defs.md#createlongtermpricingrequestrequesttypedef).
+1. See [:material-code-brackets: LongTermPricingTypeType](./literals.md#longtermpricingtypetype) 
+2. See [:material-code-brackets: SnowballTypeType](./literals.md#snowballtypetype) 
+3. See [:material-code-braces: CreateLongTermPricingResultTypeDef](./type_defs.md#createlongtermpricingresulttypedef) 
 
-Keyword-only arguments:
 
-- `LongTermPricingType`:
-  [LongTermPricingTypeType](./literals.md#longtermpricingtypetype) *(required)*
-- `IsLongTermPricingAutoRenew`: `bool`
-- `SnowballType`: [SnowballTypeType](./literals.md#snowballtypetype)
+```python title="Usage example with kwargs"
+kwargs: CreateLongTermPricingRequestRequestTypeDef = {  # (1)
+    "LongTermPricingType": ...,
+}
 
-Returns
-[CreateLongTermPricingResultTypeDef](./type_defs.md#createlongtermpricingresulttypedef).
+parent.create_long_term_pricing(**kwargs)
+```
 
-<a id="create\_return\_shipping\_label"></a>
+1. See [:material-code-braces: CreateLongTermPricingRequestRequestTypeDef](./type_defs.md#createlongtermpricingrequestrequesttypedef) 
 
-### create_return_shipping_label
+### create\_return\_shipping\_label
 
 Creates a shipping label that will be used to return the Snow device to Amazon
 Web Services.
 
-Type annotations for `boto3.client("snowball").create_return_shipping_label`
-method.
+Type annotations and code completion for `#!python boto3.client("snowball").create_return_shipping_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
 
-Boto3 documentation:
-[Snowball.Client.create_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.create_return_shipping_label)
+```python title="Method definition"
+def create_return_shipping_label(
+    self,
+    *,
+    JobId: str,
+    ShippingOption: ShippingOptionType = ...,  # (1)
+) -> CreateReturnShippingLabelResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateReturnShippingLabelRequestRequestTypeDef](./type_defs.md#createreturnshippinglabelrequestrequesttypedef).
+1. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+2. See [:material-code-braces: CreateReturnShippingLabelResultTypeDef](./type_defs.md#createreturnshippinglabelresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
+```python title="Usage example with kwargs"
+kwargs: CreateReturnShippingLabelRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[CreateReturnShippingLabelResultTypeDef](./type_defs.md#createreturnshippinglabelresulttypedef).
+parent.create_return_shipping_label(**kwargs)
+```
 
-<a id="describe\_address"></a>
+1. See [:material-code-braces: CreateReturnShippingLabelRequestRequestTypeDef](./type_defs.md#createreturnshippinglabelrequestrequesttypedef) 
 
-### describe_address
+### describe\_address
 
-Takes an `AddressId` and returns specific details about that address in the
-form of an `Address` object.
+Takes an `AddressId` and returns specific details about that address in the form
+of an `Address` object.
 
-Type annotations for `boto3.client("snowball").describe_address` method.
+Type annotations and code completion for `#!python boto3.client("snowball").describe_address` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
 
-Boto3 documentation:
-[Snowball.Client.describe_address](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_address)
+```python title="Method definition"
+def describe_address(
+    self,
+    *,
+    AddressId: str,
+) -> DescribeAddressResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAddressRequestRequestTypeDef](./type_defs.md#describeaddressrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAddressResultTypeDef](./type_defs.md#describeaddressresulttypedef) 
 
-Keyword-only arguments:
 
-- `AddressId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAddressRequestRequestTypeDef = {  # (1)
+    "AddressId": ...,
+}
 
-Returns
-[DescribeAddressResultTypeDef](./type_defs.md#describeaddressresulttypedef).
+parent.describe_address(**kwargs)
+```
 
-<a id="describe\_addresses"></a>
+1. See [:material-code-braces: DescribeAddressRequestRequestTypeDef](./type_defs.md#describeaddressrequestrequesttypedef) 
 
-### describe_addresses
+### describe\_addresses
 
 Returns a specified number of `ADDRESS` objects.
 
-Type annotations for `boto3.client("snowball").describe_addresses` method.
+Type annotations and code completion for `#!python boto3.client("snowball").describe_addresses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
 
-Boto3 documentation:
-[Snowball.Client.describe_addresses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_addresses)
+```python title="Method definition"
+def describe_addresses(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeAddressesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAddressesRequestRequestTypeDef](./type_defs.md#describeaddressesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeAddressesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef).
+parent.describe_addresses(**kwargs)
+```
 
-<a id="describe\_cluster"></a>
+1. See [:material-code-braces: DescribeAddressesRequestRequestTypeDef](./type_defs.md#describeaddressesrequestrequesttypedef) 
 
-### describe_cluster
+### describe\_cluster
 
 Returns information about a specific cluster including shipping information,
 cluster status, and other important metadata.
 
-Type annotations for `boto3.client("snowball").describe_cluster` method.
+Type annotations and code completion for `#!python boto3.client("snowball").describe_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
 
-Boto3 documentation:
-[Snowball.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_cluster)
+```python title="Method definition"
+def describe_cluster(
+    self,
+    *,
+    ClusterId: str,
+) -> DescribeClusterResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClusterResultTypeDef](./type_defs.md#describeclusterresulttypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterRequestRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[DescribeClusterResultTypeDef](./type_defs.md#describeclusterresulttypedef).
+parent.describe_cluster(**kwargs)
+```
 
-<a id="describe\_job"></a>
+1. See [:material-code-braces: DescribeClusterRequestRequestTypeDef](./type_defs.md#describeclusterrequestrequesttypedef) 
 
-### describe_job
+### describe\_job
 
 Returns information about a specific job including shipping information, job
 status, and other important metadata.
 
-Type annotations for `boto3.client("snowball").describe_job` method.
+Type annotations and code completion for `#!python boto3.client("snowball").describe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
 
-Boto3 documentation:
-[Snowball.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_job)
+```python title="Method definition"
+def describe_job(
+    self,
+    *,
+    JobId: str,
+) -> DescribeJobResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
+parent.describe_job(**kwargs)
+```
 
-<a id="describe\_return\_shipping\_label"></a>
+1. See [:material-code-braces: DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef) 
 
-### describe_return_shipping_label
+### describe\_return\_shipping\_label
 
 Information on the shipping label of a Snow device that is being returned to
 Amazon Web Services.
 
-Type annotations for `boto3.client("snowball").describe_return_shipping_label`
-method.
+Type annotations and code completion for `#!python boto3.client("snowball").describe_return_shipping_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
 
-Boto3 documentation:
-[Snowball.Client.describe_return_shipping_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.describe_return_shipping_label)
+```python title="Method definition"
+def describe_return_shipping_label(
+    self,
+    *,
+    JobId: str,
+) -> DescribeReturnShippingLabelResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReturnShippingLabelRequestRequestTypeDef](./type_defs.md#describereturnshippinglabelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReturnShippingLabelResultTypeDef](./type_defs.md#describereturnshippinglabelresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReturnShippingLabelRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[DescribeReturnShippingLabelResultTypeDef](./type_defs.md#describereturnshippinglabelresulttypedef).
+parent.describe_return_shipping_label(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeReturnShippingLabelRequestRequestTypeDef](./type_defs.md#describereturnshippinglabelrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("snowball").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("snowball").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Snowball.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_job\_manifest"></a>
-
-### get_job_manifest
+### get\_job\_manifest
 
 Returns a link to an Amazon S3 presigned URL for the manifest file associated
 with the specified `JobId` value.
 
-Type annotations for `boto3.client("snowball").get_job_manifest` method.
+Type annotations and code completion for `#!python boto3.client("snowball").get_job_manifest` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
 
-Boto3 documentation:
-[Snowball.Client.get_job_manifest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_manifest)
+```python title="Method definition"
+def get_job_manifest(
+    self,
+    *,
+    JobId: str,
+) -> GetJobManifestResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobManifestRequestRequestTypeDef](./type_defs.md#getjobmanifestrequestrequesttypedef).
+1. See [:material-code-braces: GetJobManifestResultTypeDef](./type_defs.md#getjobmanifestresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobManifestRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetJobManifestResultTypeDef](./type_defs.md#getjobmanifestresulttypedef).
+parent.get_job_manifest(**kwargs)
+```
 
-<a id="get\_job\_unlock\_code"></a>
+1. See [:material-code-braces: GetJobManifestRequestRequestTypeDef](./type_defs.md#getjobmanifestrequestrequesttypedef) 
 
-### get_job_unlock_code
+### get\_job\_unlock\_code
 
 Returns the `UnlockCode` code value for the specified job.
 
-Type annotations for `boto3.client("snowball").get_job_unlock_code` method.
+Type annotations and code completion for `#!python boto3.client("snowball").get_job_unlock_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
 
-Boto3 documentation:
-[Snowball.Client.get_job_unlock_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_job_unlock_code)
+```python title="Method definition"
+def get_job_unlock_code(
+    self,
+    *,
+    JobId: str,
+) -> GetJobUnlockCodeResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobUnlockCodeRequestRequestTypeDef](./type_defs.md#getjobunlockcoderequestrequesttypedef).
+1. See [:material-code-braces: GetJobUnlockCodeResultTypeDef](./type_defs.md#getjobunlockcoderesulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobUnlockCodeRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetJobUnlockCodeResultTypeDef](./type_defs.md#getjobunlockcoderesulttypedef).
+parent.get_job_unlock_code(**kwargs)
+```
 
-<a id="get\_snowball\_usage"></a>
+1. See [:material-code-braces: GetJobUnlockCodeRequestRequestTypeDef](./type_defs.md#getjobunlockcoderequestrequesttypedef) 
 
-### get_snowball_usage
+### get\_snowball\_usage
 
 Returns information about the Snow Family service limit for your account, and
 also the number of Snow devices your account has in use.
 
-Type annotations for `boto3.client("snowball").get_snowball_usage` method.
+Type annotations and code completion for `#!python boto3.client("snowball").get_snowball_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
 
-Boto3 documentation:
-[Snowball.Client.get_snowball_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_snowball_usage)
+```python title="Method definition"
+def get_snowball_usage(
+    self,
+) -> GetSnowballUsageResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetSnowballUsageResultTypeDef](./type_defs.md#getsnowballusageresulttypedef).
+1. See [:material-code-braces: GetSnowballUsageResultTypeDef](./type_defs.md#getsnowballusageresulttypedef) 
 
-<a id="get\_software\_updates"></a>
-
-### get_software_updates
+### get\_software\_updates
 
 Returns an Amazon S3 presigned URL for an update file associated with a
 specified `JobId` .
 
-Type annotations for `boto3.client("snowball").get_software_updates` method.
+Type annotations and code completion for `#!python boto3.client("snowball").get_software_updates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
 
-Boto3 documentation:
-[Snowball.Client.get_software_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.get_software_updates)
+```python title="Method definition"
+def get_software_updates(
+    self,
+    *,
+    JobId: str,
+) -> GetSoftwareUpdatesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSoftwareUpdatesRequestRequestTypeDef](./type_defs.md#getsoftwareupdatesrequestrequesttypedef).
+1. See [:material-code-braces: GetSoftwareUpdatesResultTypeDef](./type_defs.md#getsoftwareupdatesresulttypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSoftwareUpdatesRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns
-[GetSoftwareUpdatesResultTypeDef](./type_defs.md#getsoftwareupdatesresulttypedef).
+parent.get_software_updates(**kwargs)
+```
 
-<a id="list\_cluster\_jobs"></a>
+1. See [:material-code-braces: GetSoftwareUpdatesRequestRequestTypeDef](./type_defs.md#getsoftwareupdatesrequestrequesttypedef) 
 
-### list_cluster_jobs
+### list\_cluster\_jobs
 
 Returns an array of `JobListEntry` objects of the specified length.
 
-Type annotations for `boto3.client("snowball").list_cluster_jobs` method.
+Type annotations and code completion for `#!python boto3.client("snowball").list_cluster_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
 
-Boto3 documentation:
-[Snowball.Client.list_cluster_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_cluster_jobs)
+```python title="Method definition"
+def list_cluster_jobs(
+    self,
+    *,
+    ClusterId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListClusterJobsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClusterJobsRequestRequestTypeDef](./type_defs.md#listclusterjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListClusterJobsRequestRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef).
+parent.list_cluster_jobs(**kwargs)
+```
 
-<a id="list\_clusters"></a>
+1. See [:material-code-braces: ListClusterJobsRequestRequestTypeDef](./type_defs.md#listclusterjobsrequestrequesttypedef) 
 
-### list_clusters
+### list\_clusters
 
 Returns an array of `ClusterListEntry` objects of the specified length.
 
-Type annotations for `boto3.client("snowball").list_clusters` method.
+Type annotations and code completion for `#!python boto3.client("snowball").list_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
 
-Boto3 documentation:
-[Snowball.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_clusters)
+```python title="Method definition"
+def list_clusters(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListClustersResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef).
+1. See [:material-code-braces: ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListClustersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef).
+parent.list_clusters(**kwargs)
+```
 
-<a id="list\_compatible\_images"></a>
+1. See [:material-code-braces: ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef) 
 
-### list_compatible_images
+### list\_compatible\_images
 
 This action returns a list of the different Amazon EC2 Amazon Machine Images
-(AMIs) that are owned by your Amazon Web Services accountthat would be
-supported for use on a Snow device.
+(AMIs) that are owned by your Amazon Web Services accountthat would be supported
+for use on a Snow device.
 
-Type annotations for `boto3.client("snowball").list_compatible_images` method.
+Type annotations and code completion for `#!python boto3.client("snowball").list_compatible_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
 
-Boto3 documentation:
-[Snowball.Client.list_compatible_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_compatible_images)
+```python title="Method definition"
+def list_compatible_images(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCompatibleImagesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCompatibleImagesRequestRequestTypeDef](./type_defs.md#listcompatibleimagesrequestrequesttypedef).
+1. See [:material-code-braces: ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCompatibleImagesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef).
+parent.list_compatible_images(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListCompatibleImagesRequestRequestTypeDef](./type_defs.md#listcompatibleimagesrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Returns an array of `JobListEntry` objects of the specified length.
 
-Type annotations for `boto3.client("snowball").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("snowball").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
 
-Boto3 documentation:
-[Snowball.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListJobsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_long\_term\_pricing"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_long_term_pricing
+### list\_long\_term\_pricing
 
 Lists all long-term pricing types.
 
-Type annotations for `boto3.client("snowball").list_long_term_pricing` method.
+Type annotations and code completion for `#!python boto3.client("snowball").list_long_term_pricing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
 
-Boto3 documentation:
-[Snowball.Client.list_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.list_long_term_pricing)
+```python title="Method definition"
+def list_long_term_pricing(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLongTermPricingResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLongTermPricingRequestRequestTypeDef](./type_defs.md#listlongtermpricingrequestrequesttypedef).
+1. See [:material-code-braces: ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLongTermPricingRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListLongTermPricingResultTypeDef](./type_defs.md#listlongtermpricingresulttypedef).
+parent.list_long_term_pricing(**kwargs)
+```
 
-<a id="update\_cluster"></a>
+1. See [:material-code-braces: ListLongTermPricingRequestRequestTypeDef](./type_defs.md#listlongtermpricingrequestrequesttypedef) 
 
-### update_cluster
+### update\_cluster
 
-While a cluster's `ClusterState` value is in the `AwaitingQuorum` state, you
-can update some of the information associated with a cluster.
+While a cluster's `ClusterState` value is in the `AwaitingQuorum` state, you can
+update some of the information associated with a cluster.
 
-Type annotations for `boto3.client("snowball").update_cluster` method.
+Type annotations and code completion for `#!python boto3.client("snowball").update_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
 
-Boto3 documentation:
-[Snowball.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_cluster)
+```python title="Method definition"
+def update_cluster(
+    self,
+    *,
+    ClusterId: str,
+    RoleARN: str = ...,
+    Description: str = ...,
+    Resources: JobResourceTypeDef = ...,  # (1)
+    OnDeviceServiceConfiguration: OnDeviceServiceConfigurationTypeDef = ...,  # (2)
+    AddressId: str = ...,
+    ShippingOption: ShippingOptionType = ...,  # (3)
+    Notification: NotificationTypeDef = ...,  # (4)
+    ForwardingAddressId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
+1. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+2. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+3. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+4. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `RoleARN`: `str`
-- `Description`: `str`
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `AddressId`: `str`
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `ForwardingAddressId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_cluster(**kwargs)
+```
 
-<a id="update\_job"></a>
+1. See [:material-code-braces: UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef) 
 
-### update_job
+### update\_job
 
-While a job's `JobState` value is `New` , you can update some of the
-information associated with a job.
+While a job's `JobState` value is `New` , you can update some of the information
+associated with a job.
 
-Type annotations for `boto3.client("snowball").update_job` method.
+Type annotations and code completion for `#!python boto3.client("snowball").update_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
 
-Boto3 documentation:
-[Snowball.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job)
+```python title="Method definition"
+def update_job(
+    self,
+    *,
+    JobId: str,
+    RoleARN: str = ...,
+    Notification: NotificationTypeDef = ...,  # (1)
+    Resources: JobResourceTypeDef = ...,  # (2)
+    OnDeviceServiceConfiguration: OnDeviceServiceConfigurationTypeDef = ...,  # (3)
+    AddressId: str = ...,
+    ShippingOption: ShippingOptionType = ...,  # (4)
+    Description: str = ...,
+    SnowballCapacityPreference: SnowballCapacityType = ...,  # (5)
+    ForwardingAddressId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef).
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: JobResourceTypeDef](./type_defs.md#jobresourcetypedef) 
+3. See [:material-code-braces: OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef) 
+4. See [:material-code-brackets: ShippingOptionType](./literals.md#shippingoptiontype) 
+5. See [:material-code-brackets: SnowballCapacityType](./literals.md#snowballcapacitytype) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `RoleARN`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Resources`: [JobResourceTypeDef](./type_defs.md#jobresourcetypedef)
-- `OnDeviceServiceConfiguration`:
-  [OnDeviceServiceConfigurationTypeDef](./type_defs.md#ondeviceserviceconfigurationtypedef)
-- `AddressId`: `str`
-- `ShippingOption`: [ShippingOptionType](./literals.md#shippingoptiontype)
-- `Description`: `str`
-- `SnowballCapacityPreference`:
-  [SnowballCapacityType](./literals.md#snowballcapacitytype)
-- `ForwardingAddressId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_job(**kwargs)
+```
 
-<a id="update\_job\_shipment\_state"></a>
+1. See [:material-code-braces: UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef) 
 
-### update_job_shipment_state
+### update\_job\_shipment\_state
 
 Updates the state when a shipment state changes to a different state.
 
-Type annotations for `boto3.client("snowball").update_job_shipment_state`
-method.
+Type annotations and code completion for `#!python boto3.client("snowball").update_job_shipment_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
 
-Boto3 documentation:
-[Snowball.Client.update_job_shipment_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_job_shipment_state)
+```python title="Method definition"
+def update_job_shipment_state(
+    self,
+    *,
+    JobId: str,
+    ShipmentState: ShipmentStateType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobShipmentStateRequestRequestTypeDef](./type_defs.md#updatejobshipmentstaterequestrequesttypedef).
+1. See [:material-code-brackets: ShipmentStateType](./literals.md#shipmentstatetype) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
-- `ShipmentState`: [ShipmentStateType](./literals.md#shipmentstatetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateJobShipmentStateRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+    "ShipmentState": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_job_shipment_state(**kwargs)
+```
 
-<a id="update\_long\_term\_pricing"></a>
+1. See [:material-code-braces: UpdateJobShipmentStateRequestRequestTypeDef](./type_defs.md#updatejobshipmentstaterequestrequesttypedef) 
 
-### update_long_term_pricing
+### update\_long\_term\_pricing
 
 Updates the long-term pricing type.
 
-Type annotations for `boto3.client("snowball").update_long_term_pricing`
-method.
+Type annotations and code completion for `#!python boto3.client("snowball").update_long_term_pricing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
 
-Boto3 documentation:
-[Snowball.Client.update_long_term_pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball.Client.update_long_term_pricing)
+```python title="Method definition"
+def update_long_term_pricing(
+    self,
+    *,
+    LongTermPricingId: str,
+    ReplacementJob: str = ...,
+    IsLongTermPricingAutoRenew: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLongTermPricingRequestRequestTypeDef](./type_defs.md#updatelongtermpricingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LongTermPricingId`: `str` *(required)*
-- `ReplacementJob`: `str`
-- `IsLongTermPricingAutoRenew`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateLongTermPricingRequestRequestTypeDef = {  # (1)
+    "LongTermPricingId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_long_term_pricing(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateLongTermPricingRequestRequestTypeDef](./type_defs.md#updatelongtermpricingrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("snowball").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("snowball").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_addresses")` ->
-  [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
-- `client.get_paginator("list_cluster_jobs")` ->
-  [ListClusterJobsPaginator](./paginators.md#listclusterjobspaginator)
-- `client.get_paginator("list_clusters")` ->
-  [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_compatible_images")` ->
-  [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("describe_addresses")` -> [DescribeAddressesPaginator](./paginators.md#describeaddressespaginator)
+- `client.get_paginator("list_cluster_jobs")` -> [ListClusterJobsPaginator](./paginators.md#listclusterjobspaginator)
+- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_compatible_images")` -> [ListCompatibleImagesPaginator](./paginators.md#listcompatibleimagespaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+
+
+

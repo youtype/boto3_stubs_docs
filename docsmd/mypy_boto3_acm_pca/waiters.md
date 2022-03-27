@@ -1,29 +1,18 @@
-<a id="waiters-for-boto3-acmpca-module"></a>
-
-# Waiters for boto3 ACMPCA module
+# Waiters
 
 > [Index](../README.md) > [ACMPCA](./README.md) > Waiters
 
-Auto-generated documentation for
-[ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
-type annotations stubs module
-[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+!!! note ""
 
-- [Waiters for boto3 ACMPCA module](#waiters-for-boto3-acmpca-module)
-  - [AuditReportCreatedWaiter](#auditreportcreatedwaiter)
-  - [CertificateAuthorityCSRCreatedWaiter](#certificateauthoritycsrcreatedwaiter)
-  - [CertificateIssuedWaiter](#certificateissuedwaiter)
-
-<a id="auditreportcreatedwaiter"></a>
+    Auto-generated documentation for [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
+    type annotations stubs module [mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 ## AuditReportCreatedWaiter
 
-Type annotations for
-`boto3.client("acm-pca").get_waiter("audit_report_created")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_waiter("audit_report_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.AuditReportCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.waiter import AuditReportCreatedWaiter
@@ -32,25 +21,41 @@ def get_audit_report_created_waiter() -> AuditReportCreatedWaiter:
     return Session().client("acm-pca").get_waiter("audit_report_created")
 ```
 
-Boto3 documentation:
-[ACMPCA.Waiter.audit_report_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.AuditReportCreated)
 
-Arguments for `AuditReportCreatedWaiter.wait` method:
+### wait
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `AuditReportId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AuditReportCreatedWaiter.wait` method.
 
-<a id="certificateauthoritycsrcreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    AuditReportId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "AuditReportId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCertificateAuthorityAuditReportRequestAuditReportCreatedWaitTypeDef](./type_defs.md#describecertificateauthorityauditreportrequestauditreportcreatedwaittypedef) 
 ## CertificateAuthorityCSRCreatedWaiter
 
-Type annotations for
-`boto3.client("acm-pca").get_waiter("certificate_authority_csr_created")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_waiter("certificate_authority_csr_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateAuthorityCSRCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.waiter import CertificateAuthorityCSRCreatedWaiter
@@ -59,24 +64,39 @@ def get_certificate_authority_csr_created_waiter() -> CertificateAuthorityCSRCre
     return Session().client("acm-pca").get_waiter("certificate_authority_csr_created")
 ```
 
-Boto3 documentation:
-[ACMPCA.Waiter.certificate_authority_csr_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateAuthorityCSRCreated)
 
-Arguments for `CertificateAuthorityCSRCreatedWaiter.wait` method:
+### wait
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python CertificateAuthorityCSRCreatedWaiter.wait` method.
 
-<a id="certificateissuedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetCertificateAuthorityCsrRequestCertificateAuthorityCSRCreatedWaitTypeDef](./type_defs.md#getcertificateauthoritycsrrequestcertificateauthoritycsrcreatedwaittypedef) 
 ## CertificateIssuedWaiter
 
-Type annotations for
-`boto3.client("acm-pca").get_waiter("certificate_issued")`.
+Type annotations and code completion for `#!python boto3.client("acm-pca").get_waiter("certificate_issued")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateIssued)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_acm_pca.waiter import CertificateIssuedWaiter
@@ -85,11 +105,32 @@ def get_certificate_issued_waiter() -> CertificateIssuedWaiter:
     return Session().client("acm-pca").get_waiter("certificate_issued")
 ```
 
-Boto3 documentation:
-[ACMPCA.Waiter.certificate_issued](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Waiter.CertificateIssued)
 
-Arguments for `CertificateIssuedWaiter.wait` method:
+### wait
 
-- `CertificateAuthorityArn`: `str` *(required)*
-- `CertificateArn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python CertificateIssuedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    CertificateAuthorityArn: str,
+    CertificateArn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCertificateRequestCertificateIssuedWaitTypeDef = {  # (1)
+    "CertificateAuthorityArn": ...,
+    "CertificateArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetCertificateRequestCertificateIssuedWaitTypeDef](./type_defs.md#getcertificaterequestcertificateissuedwaittypedef) 

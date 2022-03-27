@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-route53resolver-module"></a>
-
-# Examples for boto3 Route53Resolver module
+# Examples
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Examples
 
-- [Examples for boto3 Route53Resolver module](#examples-for-boto3-route53resolver-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+    type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[route53resolver]` package installed.
 
-Write your `Route53Resolver` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `Route53Resolver` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type Route53ResolverClient
-# and provides type checking and code completion
-client = session.client("route53resolver")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateFirewallRuleGroupResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_firewall_rule_group()
 
-# paginator has type ListFirewallConfigsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_firewall_configs")
-for item in paginator.paginate(...):
-    # item has type ListFirewallConfigsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("route53resolver")  # (1)
+    result = client.associate_firewall_rule_group()  # (2)
+    ```
+
+    1. client: [Route53ResolverClient](./client.md)
+    2. result: [:material-code-braces: AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("route53resolver")  # (1)
+
+    paginator = client.get_paginator("list_firewall_configs")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [Route53ResolverClient](./client.md)
+    2. paginator: [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
+    3. item: [:material-code-braces: ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[route53resolver]` or a standalone
-`mypy_boto3_route53resolver` package, you have to explicitly specify
-`client: Route53ResolverClient` type annotation.
+With `boto3-stubs-lite[route53resolver]`
+or a standalone `mypy_boto3_route53resolver` package, you have to explicitly specify `client: Route53ResolverClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_route53resolver.client import Route53ResolverClient
-from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
-
-from mypy_boto3_route53resolver.literals import PaginatorName
-
-from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
-from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: Route53ResolverClient = session.client("route53resolver")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateFirewallRuleGroupResponseTypeDef = client.associate_firewall_rule_group()
+    from mypy_boto3_route53resolver.client import Route53ResolverClient
+    from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupResponseTypeDef
+    from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_firewall_configs"
-paginator: ListFirewallConfigsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListFirewallConfigsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: Route53ResolverClient = session.client("route53resolver")
+
+    kwargs: AssociateFirewallRuleGroupRequestRequestTypeDef = {...}
+    result: AssociateFirewallRuleGroupResponseTypeDef = client.associate_firewall_rule_group(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_route53resolver.client import Route53ResolverClient
+    from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
+    from mypy_boto3_route53resolver.type_defs import ListFirewallConfigsResponseTypeDef
+
+
+    session = Session()
+    client: Route53ResolverClient = session.client("route53resolver")
+
+    paginator: ListFirewallConfigsPaginator = client.get_paginator("list_firewall_configs")
+    for item in paginator.paginate(...):
+        item: ListFirewallConfigsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

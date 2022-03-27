@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-acm-module"></a>
-
-# Examples for boto3 ACM module
+# Examples
 
 > [Index](../README.md) > [ACM](./README.md) > Examples
 
-- [Examples for boto3 ACM module](#examples-for-boto3-acm-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
+    type annotations stubs module [mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[acm]` package installed.
 
-Write your `ACM` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `ACM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ACMClient
-# and provides type checking and code completion
-client = session.client("acm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_tags_to_certificate()
 
-# paginator has type ListCertificatesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_certificates")
-for item in paginator.paginate(...):
-    # item has type ListCertificatesResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type CertificateValidatedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("certificate_validated")
-waiter.wait()
-```
+    client = session.client("acm")  # (1)
+    result = client.describe_certificate()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [ACMClient](./client.md)
+    2. result: [:material-code-braces: DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("acm")  # (1)
+
+    paginator = client.get_paginator("list_certificates")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ACMClient](./client.md)
+    2. paginator: [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+    3. item: [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("acm")  # (1)
+
+    waiter = client.get_waiter("certificate_validated")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [ACMClient](./client.md)
+    2. waiter: [CertificateValidatedWaiter](./waiters.md#certificatevalidatedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[acm]` or a standalone `mypy_boto3_acm` package, you have
-to explicitly specify `client: ACMClient` type annotation.
+With `boto3-stubs-lite[acm]`
+or a standalone `mypy_boto3_acm` package, you have to explicitly specify `client: ACMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_acm.client import ACMClient
-from mypy_boto3_acm.paginator import ListCertificatesPaginator
-from mypy_boto3_acm.waiter import CertificateValidatedWaiter
-from mypy_boto3_acm.literals import PaginatorName
-from mypy_boto3_acm.literals import WaiterName
-from mypy_boto3_acm.type_defs import None
-from mypy_boto3_acm.type_defs import ListCertificatesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ACMClient = session.client("acm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.add_tags_to_certificate()
+    from mypy_boto3_acm.client import ACMClient
+    from mypy_boto3_acm.type_defs import DescribeCertificateResponseTypeDef
+    from mypy_boto3_acm.type_defs import DescribeCertificateRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_certificates"
-paginator: ListCertificatesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListCertificatesResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "certificate_validated"
-waiter: CertificateValidatedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: ACMClient = session.client("acm")
+
+    kwargs: DescribeCertificateRequestRequestTypeDef = {...}
+    result: DescribeCertificateResponseTypeDef = client.describe_certificate(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_acm.client import ACMClient
+    from mypy_boto3_acm.paginator import ListCertificatesPaginator
+    from mypy_boto3_acm.type_defs import ListCertificatesResponseTypeDef
+
+
+    session = Session()
+    client: ACMClient = session.client("acm")
+
+    paginator: ListCertificatesPaginator = client.get_paginator("list_certificates")
+    for item in paginator.paginate(...):
+        item: ListCertificatesResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_acm.client import ACMClient
+    from mypy_boto3_acm.waiter import CertificateValidatedWaiter
+
+    session = Session()
+    client: ACMClient = session.client("acm")
+
+    waiter: CertificateValidatedWaiter = client.get_waiter("certificate_validated")
+    waiter.wait()
+    ```
+
+

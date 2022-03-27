@@ -1,74 +1,18 @@
-<a id="cloudwatchlogsclient-for-boto3-cloudwatchlogs-module"></a>
-
-# CloudWatchLogsClient for boto3 CloudWatchLogs module
+# CloudWatchLogsClient
 
 > [Index](../README.md) > [CloudWatchLogs](./README.md) > CloudWatchLogsClient
 
-Auto-generated documentation for
-[CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
-type annotations stubs module
-[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
+!!! note ""
 
-- [CloudWatchLogsClient for boto3 CloudWatchLogs module](#cloudwatchlogsclient-for-boto3-cloudwatchlogs-module)
-  - [CloudWatchLogsClient](#cloudwatchlogsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_kms_key](#associate_kms_key)
-    - [can_paginate](#can_paginate)
-    - [cancel_export_task](#cancel_export_task)
-    - [create_export_task](#create_export_task)
-    - [create_log_group](#create_log_group)
-    - [create_log_stream](#create_log_stream)
-    - [delete_destination](#delete_destination)
-    - [delete_log_group](#delete_log_group)
-    - [delete_log_stream](#delete_log_stream)
-    - [delete_metric_filter](#delete_metric_filter)
-    - [delete_query_definition](#delete_query_definition)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_retention_policy](#delete_retention_policy)
-    - [delete_subscription_filter](#delete_subscription_filter)
-    - [describe_destinations](#describe_destinations)
-    - [describe_export_tasks](#describe_export_tasks)
-    - [describe_log_groups](#describe_log_groups)
-    - [describe_log_streams](#describe_log_streams)
-    - [describe_metric_filters](#describe_metric_filters)
-    - [describe_queries](#describe_queries)
-    - [describe_query_definitions](#describe_query_definitions)
-    - [describe_resource_policies](#describe_resource_policies)
-    - [describe_subscription_filters](#describe_subscription_filters)
-    - [disassociate_kms_key](#disassociate_kms_key)
-    - [filter_log_events](#filter_log_events)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_log_events](#get_log_events)
-    - [get_log_group_fields](#get_log_group_fields)
-    - [get_log_record](#get_log_record)
-    - [get_query_results](#get_query_results)
-    - [list_tags_log_group](#list_tags_log_group)
-    - [put_destination](#put_destination)
-    - [put_destination_policy](#put_destination_policy)
-    - [put_log_events](#put_log_events)
-    - [put_metric_filter](#put_metric_filter)
-    - [put_query_definition](#put_query_definition)
-    - [put_resource_policy](#put_resource_policy)
-    - [put_retention_policy](#put_retention_policy)
-    - [put_subscription_filter](#put_subscription_filter)
-    - [start_query](#start_query)
-    - [stop_query](#stop_query)
-    - [tag_log_group](#tag_log_group)
-    - [test_metric_filter](#test_metric_filter)
-    - [untag_log_group](#untag_log_group)
-    - [get_paginator](#get_paginator)
-
-<a id="cloudwatchlogsclient"></a>
+    Auto-generated documentation for [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
+    type annotations stubs module [mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ## CloudWatchLogsClient
 
-Type annotations for `boto3.client("logs")`
+Type annotations and code completion for `#!python boto3.client("logs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_logs.client import CloudWatchLogsClient
 
@@ -76,1041 +20,1423 @@ def get_logs_client() -> CloudWatchLogsClient:
     return Session().client("logs")
 ```
 
-Boto3 documentation:
-[CloudWatchLogs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("logs").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("logs")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DataAlreadyAcceptedException,
+    client.InvalidOperationException,
+    client.InvalidParameterException,
+    client.InvalidSequenceTokenException,
+    client.LimitExceededException,
+    client.MalformedQueryException,
+    client.OperationAbortedException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ServiceUnavailableException,
+    client.UnrecognizedClientException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_logs.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DataAlreadyAcceptedException`
-- `Exceptions.InvalidOperationException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.InvalidSequenceTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MalformedQueryException`
-- `Exceptions.OperationAbortedException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.UnrecognizedClientException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudWatchLogsClient exceptions.
-
-Type annotations for `boto3.client("logs").exceptions` method.
-
-Boto3 documentation:
-[CloudWatchLogs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_kms\_key"></a>
-
-### associate_kms_key
+### associate\_kms\_key
 
 Associates the specified Key Management Service customer master key (CMK) with
 the specified log group.
 
-Type annotations for `boto3.client("logs").associate_kms_key` method.
+Type annotations and code completion for `#!python boto3.client("logs").associate_kms_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.associate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.associate_kms_key)
+```python title="Method definition"
+def associate_kms_key(
+    self,
+    *,
+    logGroupName: str,
+    kmsKeyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateKmsKeyRequestRequestTypeDef](./type_defs.md#associatekmskeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `kmsKeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateKmsKeyRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "kmsKeyId": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.associate_kms_key(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AssociateKmsKeyRequestRequestTypeDef](./type_defs.md#associatekmskeyrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("logs").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("logs").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_export\_task"></a>
-
-### cancel_export_task
+### cancel\_export\_task
 
 Cancels the specified export task.
 
-Type annotations for `boto3.client("logs").cancel_export_task` method.
+Type annotations and code completion for `#!python boto3.client("logs").cancel_export_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.cancel_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.cancel_export_task)
+```python title="Method definition"
+def cancel_export_task(
+    self,
+    *,
+    taskId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelExportTaskRequestRequestTypeDef](./type_defs.md#cancelexporttaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelExportTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-<a id="create\_export\_task"></a>
+parent.cancel_export_task(**kwargs)
+```
 
-### create_export_task
+1. See [:material-code-braces: CancelExportTaskRequestRequestTypeDef](./type_defs.md#cancelexporttaskrequestrequesttypedef) 
+
+### create\_export\_task
 
 Creates an export task, which allows you to efficiently export data from a log
 group to an Amazon S3 bucket.
 
-Type annotations for `boto3.client("logs").create_export_task` method.
+Type annotations and code completion for `#!python boto3.client("logs").create_export_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.create_export_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_export_task)
+```python title="Method definition"
+def create_export_task(
+    self,
+    *,
+    logGroupName: str,
+    fromTime: int,
+    to: int,
+    destination: str,
+    taskName: str = ...,
+    logStreamNamePrefix: str = ...,
+    destinationPrefix: str = ...,
+) -> CreateExportTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateExportTaskRequestRequestTypeDef](./type_defs.md#createexporttaskrequestrequesttypedef).
+1. See [:material-code-braces: CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `fromTime`: `int` *(required)*
-- `to`: `int` *(required)*
-- `destination`: `str` *(required)*
-- `taskName`: `str`
-- `logStreamNamePrefix`: `str`
-- `destinationPrefix`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateExportTaskRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "fromTime": ...,
+    "to": ...,
+    "destination": ...,
+}
 
-Returns
-[CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef).
+parent.create_export_task(**kwargs)
+```
 
-<a id="create\_log\_group"></a>
+1. See [:material-code-braces: CreateExportTaskRequestRequestTypeDef](./type_defs.md#createexporttaskrequestrequesttypedef) 
 
-### create_log_group
+### create\_log\_group
 
 Creates a log group with the specified name.
 
-Type annotations for `boto3.client("logs").create_log_group` method.
+Type annotations and code completion for `#!python boto3.client("logs").create_log_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.create_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_group)
+```python title="Method definition"
+def create_log_group(
+    self,
+    *,
+    logGroupName: str,
+    kmsKeyId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateLogGroupRequestRequestTypeDef](./type_defs.md#createloggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `kmsKeyId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateLogGroupRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-<a id="create\_log\_stream"></a>
+parent.create_log_group(**kwargs)
+```
 
-### create_log_stream
+1. See [:material-code-braces: CreateLogGroupRequestRequestTypeDef](./type_defs.md#createloggrouprequestrequesttypedef) 
+
+### create\_log\_stream
 
 Creates a log stream for the specified log group.
 
-Type annotations for `boto3.client("logs").create_log_stream` method.
+Type annotations and code completion for `#!python boto3.client("logs").create_log_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.create_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.create_log_stream)
+```python title="Method definition"
+def create_log_stream(
+    self,
+    *,
+    logGroupName: str,
+    logStreamName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateLogStreamRequestRequestTypeDef](./type_defs.md#createlogstreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateLogStreamRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "logStreamName": ...,
+}
 
-<a id="delete\_destination"></a>
+parent.create_log_stream(**kwargs)
+```
 
-### delete_destination
+1. See [:material-code-braces: CreateLogStreamRequestRequestTypeDef](./type_defs.md#createlogstreamrequestrequesttypedef) 
+
+### delete\_destination
 
 Deletes the specified destination, and eventually disables all the subscription
 filters that publish to it.
 
-Type annotations for `boto3.client("logs").delete_destination` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_destination)
+```python title="Method definition"
+def delete_destination(
+    self,
+    *,
+    destinationName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDestinationRequestRequestTypeDef](./type_defs.md#deletedestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `destinationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDestinationRequestRequestTypeDef = {  # (1)
+    "destinationName": ...,
+}
 
-<a id="delete\_log\_group"></a>
+parent.delete_destination(**kwargs)
+```
 
-### delete_log_group
+1. See [:material-code-braces: DeleteDestinationRequestRequestTypeDef](./type_defs.md#deletedestinationrequestrequesttypedef) 
+
+### delete\_log\_group
 
 Deletes the specified log group and permanently deletes all the archived log
 events associated with the log group.
 
-Type annotations for `boto3.client("logs").delete_log_group` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_log_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_group)
+```python title="Method definition"
+def delete_log_group(
+    self,
+    *,
+    logGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLogGroupRequestRequestTypeDef](./type_defs.md#deleteloggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLogGroupRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-<a id="delete\_log\_stream"></a>
+parent.delete_log_group(**kwargs)
+```
 
-### delete_log_stream
+1. See [:material-code-braces: DeleteLogGroupRequestRequestTypeDef](./type_defs.md#deleteloggrouprequestrequesttypedef) 
+
+### delete\_log\_stream
 
 Deletes the specified log stream and permanently deletes all the archived log
 events associated with the log stream.
 
-Type annotations for `boto3.client("logs").delete_log_stream` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_log_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_log_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_log_stream)
+```python title="Method definition"
+def delete_log_stream(
+    self,
+    *,
+    logGroupName: str,
+    logStreamName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLogStreamRequestRequestTypeDef](./type_defs.md#deletelogstreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLogStreamRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "logStreamName": ...,
+}
 
-<a id="delete\_metric\_filter"></a>
+parent.delete_log_stream(**kwargs)
+```
 
-### delete_metric_filter
+1. See [:material-code-braces: DeleteLogStreamRequestRequestTypeDef](./type_defs.md#deletelogstreamrequestrequesttypedef) 
+
+### delete\_metric\_filter
 
 Deletes the specified metric filter.
 
-Type annotations for `boto3.client("logs").delete_metric_filter` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_metric_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_metric_filter)
+```python title="Method definition"
+def delete_metric_filter(
+    self,
+    *,
+    logGroupName: str,
+    filterName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMetricFilterRequestRequestTypeDef](./type_defs.md#deletemetricfilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `filterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMetricFilterRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "filterName": ...,
+}
 
-<a id="delete\_query\_definition"></a>
+parent.delete_metric_filter(**kwargs)
+```
 
-### delete_query_definition
+1. See [:material-code-braces: DeleteMetricFilterRequestRequestTypeDef](./type_defs.md#deletemetricfilterrequestrequesttypedef) 
+
+### delete\_query\_definition
 
 Deletes a saved CloudWatch Logs Insights query definition.
 
-Type annotations for `boto3.client("logs").delete_query_definition` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_query_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_query_definition)
+```python title="Method definition"
+def delete_query_definition(
+    self,
+    *,
+    queryDefinitionId: str,
+) -> DeleteQueryDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteQueryDefinitionRequestRequestTypeDef](./type_defs.md#deletequerydefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQueryDefinitionRequestRequestTypeDef = {  # (1)
+    "queryDefinitionId": ...,
+}
 
-Returns
-[DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef).
+parent.delete_query_definition(**kwargs)
+```
 
-<a id="delete\_resource\_policy"></a>
+1. See [:material-code-braces: DeleteQueryDefinitionRequestRequestTypeDef](./type_defs.md#deletequerydefinitionrequestrequesttypedef) 
 
-### delete_resource_policy
+### delete\_resource\_policy
 
 Deletes a resource policy from this account.
 
-Type annotations for `boto3.client("logs").delete_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    policyName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-<a id="delete\_retention\_policy"></a>
+parent.delete_resource_policy(**kwargs)
+```
 
-### delete_retention_policy
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
+
+### delete\_retention\_policy
 
 Deletes the specified retention policy.
 
-Type annotations for `boto3.client("logs").delete_retention_policy` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_retention_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_retention_policy)
+```python title="Method definition"
+def delete_retention_policy(
+    self,
+    *,
+    logGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRetentionPolicyRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-<a id="delete\_subscription\_filter"></a>
+parent.delete_retention_policy(**kwargs)
+```
 
-### delete_subscription_filter
+1. See [:material-code-braces: DeleteRetentionPolicyRequestRequestTypeDef](./type_defs.md#deleteretentionpolicyrequestrequesttypedef) 
+
+### delete\_subscription\_filter
 
 Deletes the specified subscription filter.
 
-Type annotations for `boto3.client("logs").delete_subscription_filter` method.
+Type annotations and code completion for `#!python boto3.client("logs").delete_subscription_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.delete_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.delete_subscription_filter)
+```python title="Method definition"
+def delete_subscription_filter(
+    self,
+    *,
+    logGroupName: str,
+    filterName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSubscriptionFilterRequestRequestTypeDef](./type_defs.md#deletesubscriptionfilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `filterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSubscriptionFilterRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "filterName": ...,
+}
 
-<a id="describe\_destinations"></a>
+parent.delete_subscription_filter(**kwargs)
+```
 
-### describe_destinations
+1. See [:material-code-braces: DeleteSubscriptionFilterRequestRequestTypeDef](./type_defs.md#deletesubscriptionfilterrequestrequesttypedef) 
+
+### describe\_destinations
 
 Lists all your destinations.
 
-Type annotations for `boto3.client("logs").describe_destinations` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_destinations)
+```python title="Method definition"
+def describe_destinations(
+    self,
+    *,
+    DestinationNamePrefix: str = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDestinationsRequestRequestTypeDef](./type_defs.md#describedestinationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DestinationNamePrefix`: `str`
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeDestinationsRequestRequestTypeDef = {  # (1)
+    "DestinationNamePrefix": ...,
+}
 
-Returns
-[DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef).
+parent.describe_destinations(**kwargs)
+```
 
-<a id="describe\_export\_tasks"></a>
+1. See [:material-code-braces: DescribeDestinationsRequestRequestTypeDef](./type_defs.md#describedestinationsrequestrequesttypedef) 
 
-### describe_export_tasks
+### describe\_export\_tasks
 
 Lists the specified export tasks.
 
-Type annotations for `boto3.client("logs").describe_export_tasks` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_export_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_export_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_export_tasks)
+```python title="Method definition"
+def describe_export_tasks(
+    self,
+    *,
+    taskId: str = ...,
+    statusCode: ExportTaskStatusCodeType = ...,  # (1)
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeExportTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef).
+1. See [:material-code-brackets: ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype) 
+2. See [:material-code-braces: DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str`
-- `statusCode`:
-  [ExportTaskStatusCodeType](./literals.md#exporttaskstatuscodetype)
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeExportTasksRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
+parent.describe_export_tasks(**kwargs)
+```
 
-<a id="describe\_log\_groups"></a>
+1. See [:material-code-braces: DescribeExportTasksRequestRequestTypeDef](./type_defs.md#describeexporttasksrequestrequesttypedef) 
 
-### describe_log_groups
+### describe\_log\_groups
 
 Lists the specified log groups.
 
-Type annotations for `boto3.client("logs").describe_log_groups` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_log_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_log_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_groups)
+```python title="Method definition"
+def describe_log_groups(
+    self,
+    *,
+    logGroupNamePrefix: str = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeLogGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLogGroupsRequestRequestTypeDef](./type_defs.md#describeloggroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupNamePrefix`: `str`
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLogGroupsRequestRequestTypeDef = {  # (1)
+    "logGroupNamePrefix": ...,
+}
 
-Returns
-[DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef).
+parent.describe_log_groups(**kwargs)
+```
 
-<a id="describe\_log\_streams"></a>
+1. See [:material-code-braces: DescribeLogGroupsRequestRequestTypeDef](./type_defs.md#describeloggroupsrequestrequesttypedef) 
 
-### describe_log_streams
+### describe\_log\_streams
 
 Lists the log streams for the specified log group.
 
-Type annotations for `boto3.client("logs").describe_log_streams` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_log_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_log_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_log_streams)
+```python title="Method definition"
+def describe_log_streams(
+    self,
+    *,
+    logGroupName: str,
+    logStreamNamePrefix: str = ...,
+    orderBy: OrderByType = ...,  # (1)
+    descending: bool = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeLogStreamsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLogStreamsRequestRequestTypeDef](./type_defs.md#describelogstreamsrequestrequesttypedef).
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
+2. See [:material-code-braces: DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamNamePrefix`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-- `descending`: `bool`
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeLogStreamsRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef).
+parent.describe_log_streams(**kwargs)
+```
 
-<a id="describe\_metric\_filters"></a>
+1. See [:material-code-braces: DescribeLogStreamsRequestRequestTypeDef](./type_defs.md#describelogstreamsrequestrequesttypedef) 
 
-### describe_metric_filters
+### describe\_metric\_filters
 
 Lists the specified metric filters.
 
-Type annotations for `boto3.client("logs").describe_metric_filters` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_metric_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_metric_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_metric_filters)
+```python title="Method definition"
+def describe_metric_filters(
+    self,
+    *,
+    logGroupName: str = ...,
+    filterNamePrefix: str = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+    metricName: str = ...,
+    metricNamespace: str = ...,
+) -> DescribeMetricFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMetricFiltersRequestRequestTypeDef](./type_defs.md#describemetricfiltersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str`
-- `filterNamePrefix`: `str`
-- `nextToken`: `str`
-- `limit`: `int`
-- `metricName`: `str`
-- `metricNamespace`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeMetricFiltersRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef).
+parent.describe_metric_filters(**kwargs)
+```
 
-<a id="describe\_queries"></a>
+1. See [:material-code-braces: DescribeMetricFiltersRequestRequestTypeDef](./type_defs.md#describemetricfiltersrequestrequesttypedef) 
 
-### describe_queries
+### describe\_queries
 
 Returns a list of CloudWatch Logs Insights queries that are scheduled,
 executing, or have been executed recently in this account.
 
-Type annotations for `boto3.client("logs").describe_queries` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_queries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_queries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_queries)
+```python title="Method definition"
+def describe_queries(
+    self,
+    *,
+    logGroupName: str = ...,
+    status: QueryStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeQueriesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQueriesRequestRequestTypeDef](./type_defs.md#describequeriesrequestrequesttypedef).
+1. See [:material-code-brackets: QueryStatusType](./literals.md#querystatustype) 
+2. See [:material-code-braces: DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str`
-- `status`: [QueryStatusType](./literals.md#querystatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeQueriesRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef).
+parent.describe_queries(**kwargs)
+```
 
-<a id="describe\_query\_definitions"></a>
+1. See [:material-code-braces: DescribeQueriesRequestRequestTypeDef](./type_defs.md#describequeriesrequestrequesttypedef) 
 
-### describe_query_definitions
+### describe\_query\_definitions
 
 This operation returns a paginated list of your saved CloudWatch Logs Insights
 query definitions.
 
-Type annotations for `boto3.client("logs").describe_query_definitions` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_query_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_query_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_query_definitions)
+```python title="Method definition"
+def describe_query_definitions(
+    self,
+    *,
+    queryDefinitionNamePrefix: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeQueryDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQueryDefinitionsRequestRequestTypeDef](./type_defs.md#describequerydefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryDefinitionNamePrefix`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeQueryDefinitionsRequestRequestTypeDef = {  # (1)
+    "queryDefinitionNamePrefix": ...,
+}
 
-Returns
-[DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef).
+parent.describe_query_definitions(**kwargs)
+```
 
-<a id="describe\_resource\_policies"></a>
+1. See [:material-code-braces: DescribeQueryDefinitionsRequestRequestTypeDef](./type_defs.md#describequerydefinitionsrequestrequesttypedef) 
 
-### describe_resource_policies
+### describe\_resource\_policies
 
 Lists the resource policies in this account.
 
-Type annotations for `boto3.client("logs").describe_resource_policies` method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_resource_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_resource_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_resource_policies)
+```python title="Method definition"
+def describe_resource_policies(
+    self,
+    *,
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeResourcePoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeResourcePoliciesRequestRequestTypeDef](./type_defs.md#describeresourcepoliciesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeResourcePoliciesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef).
+parent.describe_resource_policies(**kwargs)
+```
 
-<a id="describe\_subscription\_filters"></a>
+1. See [:material-code-braces: DescribeResourcePoliciesRequestRequestTypeDef](./type_defs.md#describeresourcepoliciesrequestrequesttypedef) 
 
-### describe_subscription_filters
+### describe\_subscription\_filters
 
 Lists the subscription filters for the specified log group.
 
-Type annotations for `boto3.client("logs").describe_subscription_filters`
-method.
+Type annotations and code completion for `#!python boto3.client("logs").describe_subscription_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.describe_subscription_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.describe_subscription_filters)
+```python title="Method definition"
+def describe_subscription_filters(
+    self,
+    *,
+    logGroupName: str,
+    filterNamePrefix: str = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+) -> DescribeSubscriptionFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSubscriptionFiltersRequestRequestTypeDef](./type_defs.md#describesubscriptionfiltersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `filterNamePrefix`: `str`
-- `nextToken`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeSubscriptionFiltersRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef).
+parent.describe_subscription_filters(**kwargs)
+```
 
-<a id="disassociate\_kms\_key"></a>
+1. See [:material-code-braces: DescribeSubscriptionFiltersRequestRequestTypeDef](./type_defs.md#describesubscriptionfiltersrequestrequesttypedef) 
 
-### disassociate_kms_key
+### disassociate\_kms\_key
 
 Disassociates the associated Key Management Service customer master key (CMK)
 from the specified log group.
 
-Type annotations for `boto3.client("logs").disassociate_kms_key` method.
+Type annotations and code completion for `#!python boto3.client("logs").disassociate_kms_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.disassociate_kms_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.disassociate_kms_key)
+```python title="Method definition"
+def disassociate_kms_key(
+    self,
+    *,
+    logGroupName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateKmsKeyRequestRequestTypeDef](./type_defs.md#disassociatekmskeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateKmsKeyRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-<a id="filter\_log\_events"></a>
+parent.disassociate_kms_key(**kwargs)
+```
 
-### filter_log_events
+1. See [:material-code-braces: DisassociateKmsKeyRequestRequestTypeDef](./type_defs.md#disassociatekmskeyrequestrequesttypedef) 
+
+### filter\_log\_events
 
 Lists log events from the specified log group.
 
-Type annotations for `boto3.client("logs").filter_log_events` method.
+Type annotations and code completion for `#!python boto3.client("logs").filter_log_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.filter_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.filter_log_events)
+```python title="Method definition"
+def filter_log_events(
+    self,
+    *,
+    logGroupName: str,
+    logStreamNames: Sequence[str] = ...,
+    logStreamNamePrefix: str = ...,
+    startTime: int = ...,
+    endTime: int = ...,
+    filterPattern: str = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+    interleaved: bool = ...,
+) -> FilterLogEventsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FilterLogEventsRequestRequestTypeDef](./type_defs.md#filterlogeventsrequestrequesttypedef).
+1. See [:material-code-braces: FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamNames`: `Sequence`\[`str`\]
-- `logStreamNamePrefix`: `str`
-- `startTime`: `int`
-- `endTime`: `int`
-- `filterPattern`: `str`
-- `nextToken`: `str`
-- `limit`: `int`
-- `interleaved`: `bool`
+```python title="Usage example with kwargs"
+kwargs: FilterLogEventsRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef).
+parent.filter_log_events(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: FilterLogEventsRequestRequestTypeDef](./type_defs.md#filterlogeventsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("logs").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("logs").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_log\_events"></a>
-
-### get_log_events
+### get\_log\_events
 
 Lists log events from the specified log stream.
 
-Type annotations for `boto3.client("logs").get_log_events` method.
+Type annotations and code completion for `#!python boto3.client("logs").get_log_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.get_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_events)
+```python title="Method definition"
+def get_log_events(
+    self,
+    *,
+    logGroupName: str,
+    logStreamName: str,
+    startTime: int = ...,
+    endTime: int = ...,
+    nextToken: str = ...,
+    limit: int = ...,
+    startFromHead: bool = ...,
+) -> GetLogEventsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLogEventsRequestRequestTypeDef](./type_defs.md#getlogeventsrequestrequesttypedef).
+1. See [:material-code-braces: GetLogEventsResponseTypeDef](./type_defs.md#getlogeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamName`: `str` *(required)*
-- `startTime`: `int`
-- `endTime`: `int`
-- `nextToken`: `str`
-- `limit`: `int`
-- `startFromHead`: `bool`
+```python title="Usage example with kwargs"
+kwargs: GetLogEventsRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "logStreamName": ...,
+}
 
-Returns
-[GetLogEventsResponseTypeDef](./type_defs.md#getlogeventsresponsetypedef).
+parent.get_log_events(**kwargs)
+```
 
-<a id="get\_log\_group\_fields"></a>
+1. See [:material-code-braces: GetLogEventsRequestRequestTypeDef](./type_defs.md#getlogeventsrequestrequesttypedef) 
 
-### get_log_group_fields
+### get\_log\_group\_fields
 
 Returns a list of the fields that are included in log events in the specified
 log group, along with the percentage of log events that contain each field.
 
-Type annotations for `boto3.client("logs").get_log_group_fields` method.
+Type annotations and code completion for `#!python boto3.client("logs").get_log_group_fields` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.get_log_group_fields](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_group_fields)
+```python title="Method definition"
+def get_log_group_fields(
+    self,
+    *,
+    logGroupName: str,
+    time: int = ...,
+) -> GetLogGroupFieldsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLogGroupFieldsRequestRequestTypeDef](./type_defs.md#getloggroupfieldsrequestrequesttypedef).
+1. See [:material-code-braces: GetLogGroupFieldsResponseTypeDef](./type_defs.md#getloggroupfieldsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `time`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetLogGroupFieldsRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[GetLogGroupFieldsResponseTypeDef](./type_defs.md#getloggroupfieldsresponsetypedef).
+parent.get_log_group_fields(**kwargs)
+```
 
-<a id="get\_log\_record"></a>
+1. See [:material-code-braces: GetLogGroupFieldsRequestRequestTypeDef](./type_defs.md#getloggroupfieldsrequestrequesttypedef) 
 
-### get_log_record
+### get\_log\_record
 
 Retrieves all of the fields and values of a single log event.
 
-Type annotations for `boto3.client("logs").get_log_record` method.
+Type annotations and code completion for `#!python boto3.client("logs").get_log_record` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.get_log_record](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_log_record)
+```python title="Method definition"
+def get_log_record(
+    self,
+    *,
+    logRecordPointer: str,
+) -> GetLogRecordResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLogRecordRequestRequestTypeDef](./type_defs.md#getlogrecordrequestrequesttypedef).
+1. See [:material-code-braces: GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logRecordPointer`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLogRecordRequestRequestTypeDef = {  # (1)
+    "logRecordPointer": ...,
+}
 
-Returns
-[GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef).
+parent.get_log_record(**kwargs)
+```
 
-<a id="get\_query\_results"></a>
+1. See [:material-code-braces: GetLogRecordRequestRequestTypeDef](./type_defs.md#getlogrecordrequestrequesttypedef) 
 
-### get_query_results
+### get\_query\_results
 
 Returns the results from the specified query.
 
-Type annotations for `boto3.client("logs").get_query_results` method.
+Type annotations and code completion for `#!python boto3.client("logs").get_query_results` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.get_query_results](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.get_query_results)
+```python title="Method definition"
+def get_query_results(
+    self,
+    *,
+    queryId: str,
+) -> GetQueryResultsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef).
+1. See [:material-code-braces: GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetQueryResultsRequestRequestTypeDef = {  # (1)
+    "queryId": ...,
+}
 
-Returns
-[GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
+parent.get_query_results(**kwargs)
+```
 
-<a id="list\_tags\_log\_group"></a>
+1. See [:material-code-braces: GetQueryResultsRequestRequestTypeDef](./type_defs.md#getqueryresultsrequestrequesttypedef) 
 
-### list_tags_log_group
+### list\_tags\_log\_group
 
 Lists the tags for the specified log group.
 
-Type annotations for `boto3.client("logs").list_tags_log_group` method.
+Type annotations and code completion for `#!python boto3.client("logs").list_tags_log_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.list_tags_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.list_tags_log_group)
+```python title="Method definition"
+def list_tags_log_group(
+    self,
+    *,
+    logGroupName: str,
+) -> ListTagsLogGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsLogGroupRequestRequestTypeDef](./type_defs.md#listtagsloggrouprequestrequesttypedef).
+1. See [:material-code-braces: ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsLogGroupRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+}
 
-Returns
-[ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef).
+parent.list_tags_log_group(**kwargs)
+```
 
-<a id="put\_destination"></a>
+1. See [:material-code-braces: ListTagsLogGroupRequestRequestTypeDef](./type_defs.md#listtagsloggrouprequestrequesttypedef) 
 
-### put_destination
+### put\_destination
 
 Creates or updates a destination.
 
-Type annotations for `boto3.client("logs").put_destination` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination)
+```python title="Method definition"
+def put_destination(
+    self,
+    *,
+    destinationName: str,
+    targetArn: str,
+    roleArn: str,
+) -> PutDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutDestinationRequestRequestTypeDef](./type_defs.md#putdestinationrequestrequesttypedef).
+1. See [:material-code-braces: PutDestinationResponseTypeDef](./type_defs.md#putdestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `destinationName`: `str` *(required)*
-- `targetArn`: `str` *(required)*
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutDestinationRequestRequestTypeDef = {  # (1)
+    "destinationName": ...,
+    "targetArn": ...,
+    "roleArn": ...,
+}
 
-Returns
-[PutDestinationResponseTypeDef](./type_defs.md#putdestinationresponsetypedef).
+parent.put_destination(**kwargs)
+```
 
-<a id="put\_destination\_policy"></a>
+1. See [:material-code-braces: PutDestinationRequestRequestTypeDef](./type_defs.md#putdestinationrequestrequesttypedef) 
 
-### put_destination_policy
+### put\_destination\_policy
 
 Creates or updates an access policy associated with an existing destination.
 
-Type annotations for `boto3.client("logs").put_destination_policy` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_destination_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_destination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_destination_policy)
+```python title="Method definition"
+def put_destination_policy(
+    self,
+    *,
+    destinationName: str,
+    accessPolicy: str,
+    forceUpdate: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutDestinationPolicyRequestRequestTypeDef](./type_defs.md#putdestinationpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `destinationName`: `str` *(required)*
-- `accessPolicy`: `str` *(required)*
-- `forceUpdate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: PutDestinationPolicyRequestRequestTypeDef = {  # (1)
+    "destinationName": ...,
+    "accessPolicy": ...,
+}
 
-<a id="put\_log\_events"></a>
+parent.put_destination_policy(**kwargs)
+```
 
-### put_log_events
+1. See [:material-code-braces: PutDestinationPolicyRequestRequestTypeDef](./type_defs.md#putdestinationpolicyrequestrequesttypedef) 
+
+### put\_log\_events
 
 Uploads a batch of log events to the specified log stream.
 
-Type annotations for `boto3.client("logs").put_log_events` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_log_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_log_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_log_events)
+```python title="Method definition"
+def put_log_events(
+    self,
+    *,
+    logGroupName: str,
+    logStreamName: str,
+    logEvents: Sequence[InputLogEventTypeDef],  # (1)
+    sequenceToken: str = ...,
+) -> PutLogEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutLogEventsRequestRequestTypeDef](./type_defs.md#putlogeventsrequestrequesttypedef).
+1. See [:material-code-braces: InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef) 
+2. See [:material-code-braces: PutLogEventsResponseTypeDef](./type_defs.md#putlogeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `logStreamName`: `str` *(required)*
-- `logEvents`:
-  `Sequence`\[[InputLogEventTypeDef](./type_defs.md#inputlogeventtypedef)\]
-  *(required)*
-- `sequenceToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutLogEventsRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "logStreamName": ...,
+    "logEvents": ...,
+}
 
-Returns
-[PutLogEventsResponseTypeDef](./type_defs.md#putlogeventsresponsetypedef).
+parent.put_log_events(**kwargs)
+```
 
-<a id="put\_metric\_filter"></a>
+1. See [:material-code-braces: PutLogEventsRequestRequestTypeDef](./type_defs.md#putlogeventsrequestrequesttypedef) 
 
-### put_metric_filter
+### put\_metric\_filter
 
 Creates or updates a metric filter and associates it with the specified log
 group.
 
-Type annotations for `boto3.client("logs").put_metric_filter` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_metric_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_metric_filter)
+```python title="Method definition"
+def put_metric_filter(
+    self,
+    *,
+    logGroupName: str,
+    filterName: str,
+    filterPattern: str,
+    metricTransformations: Sequence[MetricTransformationTypeDef],  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutMetricFilterRequestRequestTypeDef](./type_defs.md#putmetricfilterrequestrequesttypedef).
+1. See [:material-code-braces: MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `filterName`: `str` *(required)*
-- `filterPattern`: `str` *(required)*
-- `metricTransformations`:
-  `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutMetricFilterRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "filterName": ...,
+    "filterPattern": ...,
+    "metricTransformations": ...,
+}
 
-<a id="put\_query\_definition"></a>
+parent.put_metric_filter(**kwargs)
+```
 
-### put_query_definition
+1. See [:material-code-braces: PutMetricFilterRequestRequestTypeDef](./type_defs.md#putmetricfilterrequestrequesttypedef) 
+
+### put\_query\_definition
 
 Creates or updates a query definition for CloudWatch Logs Insights.
 
-Type annotations for `boto3.client("logs").put_query_definition` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_query_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_query_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_query_definition)
+```python title="Method definition"
+def put_query_definition(
+    self,
+    *,
+    name: str,
+    queryString: str,
+    queryDefinitionId: str = ...,
+    logGroupNames: Sequence[str] = ...,
+) -> PutQueryDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutQueryDefinitionRequestRequestTypeDef](./type_defs.md#putquerydefinitionrequestrequesttypedef).
+1. See [:material-code-braces: PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `queryString`: `str` *(required)*
-- `queryDefinitionId`: `str`
-- `logGroupNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: PutQueryDefinitionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "queryString": ...,
+}
 
-Returns
-[PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef).
+parent.put_query_definition(**kwargs)
+```
 
-<a id="put\_resource\_policy"></a>
+1. See [:material-code-braces: PutQueryDefinitionRequestRequestTypeDef](./type_defs.md#putquerydefinitionrequestrequesttypedef) 
 
-### put_resource_policy
+### put\_resource\_policy
 
-Creates or updates a resource policy allowing other Amazon Web Services
-services to put log events to this account, such as Amazon Route 53.
+Creates or updates a resource policy allowing other Amazon Web Services services
+to put log events to this account, such as Amazon Route 53.
 
-Type annotations for `boto3.client("logs").put_resource_policy` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_resource_policy)
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    policyName: str = ...,
+    policyDocument: str = ...,
+) -> PutResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str`
-- `policyDocument`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-Returns
-[PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+parent.put_resource_policy(**kwargs)
+```
 
-<a id="put\_retention\_policy"></a>
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
-### put_retention_policy
+### put\_retention\_policy
 
 Sets the retention of the specified log group.
 
-Type annotations for `boto3.client("logs").put_retention_policy` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_retention_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_retention_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_retention_policy)
+```python title="Method definition"
+def put_retention_policy(
+    self,
+    *,
+    logGroupName: str,
+    retentionInDays: int,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `retentionInDays`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRetentionPolicyRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "retentionInDays": ...,
+}
 
-<a id="put\_subscription\_filter"></a>
+parent.put_retention_policy(**kwargs)
+```
 
-### put_subscription_filter
+1. See [:material-code-braces: PutRetentionPolicyRequestRequestTypeDef](./type_defs.md#putretentionpolicyrequestrequesttypedef) 
+
+### put\_subscription\_filter
 
 Creates or updates a subscription filter and associates it with the specified
 log group.
 
-Type annotations for `boto3.client("logs").put_subscription_filter` method.
+Type annotations and code completion for `#!python boto3.client("logs").put_subscription_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.put_subscription_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.put_subscription_filter)
+```python title="Method definition"
+def put_subscription_filter(
+    self,
+    *,
+    logGroupName: str,
+    filterName: str,
+    filterPattern: str,
+    destinationArn: str,
+    roleArn: str = ...,
+    distribution: DistributionType = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutSubscriptionFilterRequestRequestTypeDef](./type_defs.md#putsubscriptionfilterrequestrequesttypedef).
+1. See [:material-code-brackets: DistributionType](./literals.md#distributiontype) 
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `filterName`: `str` *(required)*
-- `filterPattern`: `str` *(required)*
-- `destinationArn`: `str` *(required)*
-- `roleArn`: `str`
-- `distribution`: [DistributionType](./literals.md#distributiontype)
+```python title="Usage example with kwargs"
+kwargs: PutSubscriptionFilterRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "filterName": ...,
+    "filterPattern": ...,
+    "destinationArn": ...,
+}
 
-<a id="start\_query"></a>
+parent.put_subscription_filter(**kwargs)
+```
 
-### start_query
+1. See [:material-code-braces: PutSubscriptionFilterRequestRequestTypeDef](./type_defs.md#putsubscriptionfilterrequestrequesttypedef) 
+
+### start\_query
 
 Schedules a query of a log group using CloudWatch Logs Insights.
 
-Type annotations for `boto3.client("logs").start_query` method.
+Type annotations and code completion for `#!python boto3.client("logs").start_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.start_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.start_query)
+```python title="Method definition"
+def start_query(
+    self,
+    *,
+    startTime: int,
+    endTime: int,
+    queryString: str,
+    logGroupName: str = ...,
+    logGroupNames: Sequence[str] = ...,
+    limit: int = ...,
+) -> StartQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef).
+1. See [:material-code-braces: StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTime`: `int` *(required)*
-- `endTime`: `int` *(required)*
-- `queryString`: `str` *(required)*
-- `logGroupName`: `str`
-- `logGroupNames`: `Sequence`\[`str`\]
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: StartQueryRequestRequestTypeDef = {  # (1)
+    "startTime": ...,
+    "endTime": ...,
+    "queryString": ...,
+}
 
-Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
+parent.start_query(**kwargs)
+```
 
-<a id="stop\_query"></a>
+1. See [:material-code-braces: StartQueryRequestRequestTypeDef](./type_defs.md#startqueryrequestrequesttypedef) 
 
-### stop_query
+### stop\_query
 
 Stops a CloudWatch Logs Insights query that is in progress.
 
-Type annotations for `boto3.client("logs").stop_query` method.
+Type annotations and code completion for `#!python boto3.client("logs").stop_query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.stop_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.stop_query)
+```python title="Method definition"
+def stop_query(
+    self,
+    *,
+    queryId: str,
+) -> StopQueryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopQueryRequestRequestTypeDef](./type_defs.md#stopqueryrequestrequesttypedef).
+1. See [:material-code-braces: StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopQueryRequestRequestTypeDef = {  # (1)
+    "queryId": ...,
+}
 
-Returns [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef).
+parent.stop_query(**kwargs)
+```
 
-<a id="tag\_log\_group"></a>
+1. See [:material-code-braces: StopQueryRequestRequestTypeDef](./type_defs.md#stopqueryrequestrequesttypedef) 
 
-### tag_log_group
+### tag\_log\_group
 
 Adds or updates the specified tags for the specified log group.
 
-Type annotations for `boto3.client("logs").tag_log_group` method.
+Type annotations and code completion for `#!python boto3.client("logs").tag_log_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.tag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.tag_log_group)
+```python title="Method definition"
+def tag_log_group(
+    self,
+    *,
+    logGroupName: str,
+    tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagLogGroupRequestRequestTypeDef](./type_defs.md#tagloggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagLogGroupRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "tags": ...,
+}
 
-<a id="test\_metric\_filter"></a>
+parent.tag_log_group(**kwargs)
+```
 
-### test_metric_filter
+1. See [:material-code-braces: TagLogGroupRequestRequestTypeDef](./type_defs.md#tagloggrouprequestrequesttypedef) 
+
+### test\_metric\_filter
 
 Tests the filter pattern of a metric filter against a sample of log event
 messages.
 
-Type annotations for `boto3.client("logs").test_metric_filter` method.
+Type annotations and code completion for `#!python boto3.client("logs").test_metric_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.test_metric_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.test_metric_filter)
+```python title="Method definition"
+def test_metric_filter(
+    self,
+    *,
+    filterPattern: str,
+    logEventMessages: Sequence[str],
+) -> TestMetricFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestMetricFilterRequestRequestTypeDef](./type_defs.md#testmetricfilterrequestrequesttypedef).
+1. See [:material-code-braces: TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `filterPattern`: `str` *(required)*
-- `logEventMessages`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TestMetricFilterRequestRequestTypeDef = {  # (1)
+    "filterPattern": ...,
+    "logEventMessages": ...,
+}
 
-Returns
-[TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef).
+parent.test_metric_filter(**kwargs)
+```
 
-<a id="untag\_log\_group"></a>
+1. See [:material-code-braces: TestMetricFilterRequestRequestTypeDef](./type_defs.md#testmetricfilterrequestrequesttypedef) 
 
-### untag_log_group
+### untag\_log\_group
 
 Removes the specified tags from the specified log group.
 
-Type annotations for `boto3.client("logs").untag_log_group` method.
+Type annotations and code completion for `#!python boto3.client("logs").untag_log_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
 
-Boto3 documentation:
-[CloudWatchLogs.Client.untag_log_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.untag_log_group)
+```python title="Method definition"
+def untag_log_group(
+    self,
+    *,
+    logGroupName: str,
+    tags: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `logGroupName`: `str` *(required)*
-- `tags`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagLogGroupRequestRequestTypeDef = {  # (1)
+    "logGroupName": ...,
+    "tags": ...,
+}
 
-<a id="get_paginator"></a>
+parent.untag_log_group(**kwargs)
+```
+
+1. See [:material-code-braces: UntagLogGroupRequestRequestTypeDef](./type_defs.md#untagloggrouprequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("logs").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("logs").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_destinations")` ->
-  [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
-- `client.get_paginator("describe_export_tasks")` ->
-  [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
-- `client.get_paginator("describe_log_groups")` ->
-  [DescribeLogGroupsPaginator](./paginators.md#describeloggroupspaginator)
-- `client.get_paginator("describe_log_streams")` ->
-  [DescribeLogStreamsPaginator](./paginators.md#describelogstreamspaginator)
-- `client.get_paginator("describe_metric_filters")` ->
-  [DescribeMetricFiltersPaginator](./paginators.md#describemetricfilterspaginator)
-- `client.get_paginator("describe_queries")` ->
-  [DescribeQueriesPaginator](./paginators.md#describequeriespaginator)
-- `client.get_paginator("describe_resource_policies")` ->
-  [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
-- `client.get_paginator("describe_subscription_filters")` ->
-  [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
-- `client.get_paginator("filter_log_events")` ->
-  [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
+- `client.get_paginator("describe_destinations")` -> [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
+- `client.get_paginator("describe_export_tasks")` -> [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
+- `client.get_paginator("describe_log_groups")` -> [DescribeLogGroupsPaginator](./paginators.md#describeloggroupspaginator)
+- `client.get_paginator("describe_log_streams")` -> [DescribeLogStreamsPaginator](./paginators.md#describelogstreamspaginator)
+- `client.get_paginator("describe_metric_filters")` -> [DescribeMetricFiltersPaginator](./paginators.md#describemetricfilterspaginator)
+- `client.get_paginator("describe_queries")` -> [DescribeQueriesPaginator](./paginators.md#describequeriespaginator)
+- `client.get_paginator("describe_resource_policies")` -> [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
+- `client.get_paginator("describe_subscription_filters")` -> [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
+- `client.get_paginator("filter_log_events")` -> [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
+
+
+

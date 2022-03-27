@@ -1,57 +1,18 @@
-<a id="iottwinmakerclient-for-boto3-iottwinmaker-module"></a>
-
-# IoTTwinMakerClient for boto3 IoTTwinMaker module
+# IoTTwinMakerClient
 
 > [Index](../README.md) > [IoTTwinMaker](./README.md) > IoTTwinMakerClient
 
-Auto-generated documentation for
-[IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
-type annotations stubs module
-[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+!!! note ""
 
-- [IoTTwinMakerClient for boto3 IoTTwinMaker module](#iottwinmakerclient-for-boto3-iottwinmaker-module)
-  - [IoTTwinMakerClient](#iottwinmakerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_put_property_values](#batch_put_property_values)
-    - [can_paginate](#can_paginate)
-    - [create_component_type](#create_component_type)
-    - [create_entity](#create_entity)
-    - [create_scene](#create_scene)
-    - [create_workspace](#create_workspace)
-    - [delete_component_type](#delete_component_type)
-    - [delete_entity](#delete_entity)
-    - [delete_scene](#delete_scene)
-    - [delete_workspace](#delete_workspace)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_component_type](#get_component_type)
-    - [get_entity](#get_entity)
-    - [get_property_value](#get_property_value)
-    - [get_property_value_history](#get_property_value_history)
-    - [get_scene](#get_scene)
-    - [get_workspace](#get_workspace)
-    - [list_component_types](#list_component_types)
-    - [list_entities](#list_entities)
-    - [list_scenes](#list_scenes)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_workspaces](#list_workspaces)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_component_type](#update_component_type)
-    - [update_entity](#update_entity)
-    - [update_scene](#update_scene)
-    - [update_workspace](#update_workspace)
-
-<a id="iottwinmakerclient"></a>
+    Auto-generated documentation for [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
+    type annotations stubs module [mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 ## IoTTwinMakerClient
 
-Type annotations for `boto3.client("iottwinmaker")`
+Type annotations and code completion for `#!python boto3.client("iottwinmaker")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
 
@@ -59,723 +20,940 @@ def get_iottwinmaker_client() -> IoTTwinMakerClient:
     return Session().client("iottwinmaker")
 ```
 
-Boto3 documentation:
-[IoTTwinMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iottwinmaker").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iottwinmaker")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.ConnectorFailureException,
+    client.ConnectorTimeoutException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.TooManyTagsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iottwinmaker.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ConnectorFailureException`
-- `Exceptions.ConnectorTimeoutException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTTwinMakerClient exceptions.
-
-Type annotations for `boto3.client("iottwinmaker").exceptions` method.
-
-Boto3 documentation:
-[IoTTwinMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_put\_property\_values"></a>
-
-### batch_put_property_values
+### batch\_put\_property\_values
 
 Sets values for multiple time series properties.
 
-Type annotations for `boto3.client("iottwinmaker").batch_put_property_values`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").batch_put_property_values` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.batch_put_property_values)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.batch_put_property_values](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.batch_put_property_values)
+```python title="Method definition"
+def batch_put_property_values(
+    self,
+    *,
+    entries: Sequence[PropertyValueEntryTypeDef],  # (1)
+    workspaceId: str,
+) -> BatchPutPropertyValuesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchPutPropertyValuesRequestRequestTypeDef](./type_defs.md#batchputpropertyvaluesrequestrequesttypedef).
+1. See [:material-code-braces: PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef) 
+2. See [:material-code-braces: BatchPutPropertyValuesResponseTypeDef](./type_defs.md#batchputpropertyvaluesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entries`:
-  `Sequence`\[[PropertyValueEntryTypeDef](./type_defs.md#propertyvalueentrytypedef)\]
-  *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchPutPropertyValuesRequestRequestTypeDef = {  # (1)
+    "entries": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[BatchPutPropertyValuesResponseTypeDef](./type_defs.md#batchputpropertyvaluesresponsetypedef).
+parent.batch_put_property_values(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchPutPropertyValuesRequestRequestTypeDef](./type_defs.md#batchputpropertyvaluesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iottwinmaker").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.can_paginate)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_component\_type"></a>
-
-### create_component_type
+### create\_component\_type
 
 Creates a component type.
 
-Type annotations for `boto3.client("iottwinmaker").create_component_type`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").create_component_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_component_type)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.create_component_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_component_type)
+```python title="Method definition"
+def create_component_type(
+    self,
+    *,
+    componentTypeId: str,
+    workspaceId: str,
+    description: str = ...,
+    extendsFrom: Sequence[str] = ...,
+    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (1)
+    isSingleton: bool = ...,
+    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateComponentTypeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateComponentTypeRequestRequestTypeDef](./type_defs.md#createcomponenttyperequestrequesttypedef).
+1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
+3. See [:material-code-braces: CreateComponentTypeResponseTypeDef](./type_defs.md#createcomponenttyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentTypeId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `description`: `str`
-- `extendsFrom`: `Sequence`\[`str`\]
-- `functions`: `Mapping`\[`str`,
-  [FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef)\]
-- `isSingleton`: `bool`
-- `propertyDefinitions`: `Mapping`\[`str`,
-  [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateComponentTypeRequestRequestTypeDef = {  # (1)
+    "componentTypeId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateComponentTypeResponseTypeDef](./type_defs.md#createcomponenttyperesponsetypedef).
+parent.create_component_type(**kwargs)
+```
 
-<a id="create\_entity"></a>
+1. See [:material-code-braces: CreateComponentTypeRequestRequestTypeDef](./type_defs.md#createcomponenttyperequestrequesttypedef) 
 
-### create_entity
+### create\_entity
 
 Creates an entity.
 
-Type annotations for `boto3.client("iottwinmaker").create_entity` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").create_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_entity)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.create_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_entity)
+```python title="Method definition"
+def create_entity(
+    self,
+    *,
+    entityName: str,
+    workspaceId: str,
+    components: Mapping[str, ComponentRequestTypeDef] = ...,  # (1)
+    description: str = ...,
+    entityId: str = ...,
+    parentEntityId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateEntityResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateEntityRequestRequestTypeDef](./type_defs.md#createentityrequestrequesttypedef).
+1. See [:material-code-braces: ComponentRequestTypeDef](./type_defs.md#componentrequesttypedef) 
+2. See [:material-code-braces: CreateEntityResponseTypeDef](./type_defs.md#createentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityName`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `components`: `Mapping`\[`str`,
-  [ComponentRequestTypeDef](./type_defs.md#componentrequesttypedef)\]
-- `description`: `str`
-- `entityId`: `str`
-- `parentEntityId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateEntityRequestRequestTypeDef = {  # (1)
+    "entityName": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateEntityResponseTypeDef](./type_defs.md#createentityresponsetypedef).
+parent.create_entity(**kwargs)
+```
 
-<a id="create\_scene"></a>
+1. See [:material-code-braces: CreateEntityRequestRequestTypeDef](./type_defs.md#createentityrequestrequesttypedef) 
 
-### create_scene
+### create\_scene
 
 Creates a scene.
 
-Type annotations for `boto3.client("iottwinmaker").create_scene` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").create_scene` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_scene)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.create_scene](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_scene)
+```python title="Method definition"
+def create_scene(
+    self,
+    *,
+    contentLocation: str,
+    sceneId: str,
+    workspaceId: str,
+    capabilities: Sequence[str] = ...,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateSceneResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSceneRequestRequestTypeDef](./type_defs.md#createscenerequestrequesttypedef).
+1. See [:material-code-braces: CreateSceneResponseTypeDef](./type_defs.md#createsceneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentLocation`: `str` *(required)*
-- `sceneId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `capabilities`: `Sequence`\[`str`\]
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSceneRequestRequestTypeDef = {  # (1)
+    "contentLocation": ...,
+    "sceneId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateSceneResponseTypeDef](./type_defs.md#createsceneresponsetypedef).
+parent.create_scene(**kwargs)
+```
 
-<a id="create\_workspace"></a>
+1. See [:material-code-braces: CreateSceneRequestRequestTypeDef](./type_defs.md#createscenerequestrequesttypedef) 
 
-### create_workspace
+### create\_workspace
 
 Creates a workplace.
 
-Type annotations for `boto3.client("iottwinmaker").create_workspace` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").create_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_workspace)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.create_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.create_workspace)
+```python title="Method definition"
+def create_workspace(
+    self,
+    *,
+    role: str,
+    s3Location: str,
+    workspaceId: str,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef).
+1. See [:material-code-braces: CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `role`: `str` *(required)*
-- `s3Location`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceRequestRequestTypeDef = {  # (1)
+    "role": ...,
+    "s3Location": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
+parent.create_workspace(**kwargs)
+```
 
-<a id="delete\_component\_type"></a>
+1. See [:material-code-braces: CreateWorkspaceRequestRequestTypeDef](./type_defs.md#createworkspacerequestrequesttypedef) 
 
-### delete_component_type
+### delete\_component\_type
 
 Deletes a component type.
 
-Type annotations for `boto3.client("iottwinmaker").delete_component_type`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").delete_component_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_component_type)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.delete_component_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_component_type)
+```python title="Method definition"
+def delete_component_type(
+    self,
+    *,
+    componentTypeId: str,
+    workspaceId: str,
+) -> DeleteComponentTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteComponentTypeRequestRequestTypeDef](./type_defs.md#deletecomponenttyperequestrequesttypedef).
+1. See [:material-code-braces: DeleteComponentTypeResponseTypeDef](./type_defs.md#deletecomponenttyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentTypeId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteComponentTypeRequestRequestTypeDef = {  # (1)
+    "componentTypeId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[DeleteComponentTypeResponseTypeDef](./type_defs.md#deletecomponenttyperesponsetypedef).
+parent.delete_component_type(**kwargs)
+```
 
-<a id="delete\_entity"></a>
+1. See [:material-code-braces: DeleteComponentTypeRequestRequestTypeDef](./type_defs.md#deletecomponenttyperequestrequesttypedef) 
 
-### delete_entity
+### delete\_entity
 
 Deletes an entity.
 
-Type annotations for `boto3.client("iottwinmaker").delete_entity` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").delete_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_entity)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.delete_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_entity)
+```python title="Method definition"
+def delete_entity(
+    self,
+    *,
+    entityId: str,
+    workspaceId: str,
+    isRecursive: bool = ...,
+) -> DeleteEntityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteEntityRequestRequestTypeDef](./type_defs.md#deleteentityrequestrequesttypedef).
+1. See [:material-code-braces: DeleteEntityResponseTypeDef](./type_defs.md#deleteentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `isRecursive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteEntityRequestRequestTypeDef = {  # (1)
+    "entityId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[DeleteEntityResponseTypeDef](./type_defs.md#deleteentityresponsetypedef).
+parent.delete_entity(**kwargs)
+```
 
-<a id="delete\_scene"></a>
+1. See [:material-code-braces: DeleteEntityRequestRequestTypeDef](./type_defs.md#deleteentityrequestrequesttypedef) 
 
-### delete_scene
+### delete\_scene
 
 Deletes a scene.
 
-Type annotations for `boto3.client("iottwinmaker").delete_scene` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").delete_scene` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_scene)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.delete_scene](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_scene)
+```python title="Method definition"
+def delete_scene(
+    self,
+    *,
+    sceneId: str,
+    workspaceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSceneRequestRequestTypeDef](./type_defs.md#deletescenerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `sceneId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSceneRequestRequestTypeDef = {  # (1)
+    "sceneId": ...,
+    "workspaceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scene(**kwargs)
+```
 
-<a id="delete\_workspace"></a>
+1. See [:material-code-braces: DeleteSceneRequestRequestTypeDef](./type_defs.md#deletescenerequestrequesttypedef) 
 
-### delete_workspace
+### delete\_workspace
 
 Deletes a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").delete_workspace` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").delete_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_workspace)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.delete_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.delete_workspace)
+```python title="Method definition"
+def delete_workspace(
+    self,
+    *,
+    workspaceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_workspace(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteWorkspaceRequestRequestTypeDef](./type_defs.md#deleteworkspacerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iottwinmaker").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_component\_type"></a>
-
-### get_component_type
+### get\_component\_type
 
 Retrieves information about a component type.
 
-Type annotations for `boto3.client("iottwinmaker").get_component_type` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_component_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_component_type)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_component_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_component_type)
+```python title="Method definition"
+def get_component_type(
+    self,
+    *,
+    componentTypeId: str,
+    workspaceId: str,
+) -> GetComponentTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetComponentTypeRequestRequestTypeDef](./type_defs.md#getcomponenttyperequestrequesttypedef).
+1. See [:material-code-braces: GetComponentTypeResponseTypeDef](./type_defs.md#getcomponenttyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentTypeId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetComponentTypeRequestRequestTypeDef = {  # (1)
+    "componentTypeId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[GetComponentTypeResponseTypeDef](./type_defs.md#getcomponenttyperesponsetypedef).
+parent.get_component_type(**kwargs)
+```
 
-<a id="get\_entity"></a>
+1. See [:material-code-braces: GetComponentTypeRequestRequestTypeDef](./type_defs.md#getcomponenttyperequestrequesttypedef) 
 
-### get_entity
+### get\_entity
 
 Retrieves information about an entity.
 
-Type annotations for `boto3.client("iottwinmaker").get_entity` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_entity)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_entity)
+```python title="Method definition"
+def get_entity(
+    self,
+    *,
+    entityId: str,
+    workspaceId: str,
+) -> GetEntityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEntityRequestRequestTypeDef](./type_defs.md#getentityrequestrequesttypedef).
+1. See [:material-code-braces: GetEntityResponseTypeDef](./type_defs.md#getentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEntityRequestRequestTypeDef = {  # (1)
+    "entityId": ...,
+    "workspaceId": ...,
+}
 
-Returns [GetEntityResponseTypeDef](./type_defs.md#getentityresponsetypedef).
+parent.get_entity(**kwargs)
+```
 
-<a id="get\_property\_value"></a>
+1. See [:material-code-braces: GetEntityRequestRequestTypeDef](./type_defs.md#getentityrequestrequesttypedef) 
 
-### get_property_value
+### get\_property\_value
 
 Gets the property values for a component, component type, entity, or workspace.
 
-Type annotations for `boto3.client("iottwinmaker").get_property_value` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_property_value` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_property_value)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_property_value](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_property_value)
+```python title="Method definition"
+def get_property_value(
+    self,
+    *,
+    selectedProperties: Sequence[str],
+    workspaceId: str,
+    componentName: str = ...,
+    componentTypeId: str = ...,
+    entityId: str = ...,
+) -> GetPropertyValueResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPropertyValueRequestRequestTypeDef](./type_defs.md#getpropertyvaluerequestrequesttypedef).
+1. See [:material-code-braces: GetPropertyValueResponseTypeDef](./type_defs.md#getpropertyvalueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `selectedProperties`: `Sequence`\[`str`\] *(required)*
-- `workspaceId`: `str` *(required)*
-- `componentName`: `str`
-- `componentTypeId`: `str`
-- `entityId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetPropertyValueRequestRequestTypeDef = {  # (1)
+    "selectedProperties": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[GetPropertyValueResponseTypeDef](./type_defs.md#getpropertyvalueresponsetypedef).
+parent.get_property_value(**kwargs)
+```
 
-<a id="get\_property\_value\_history"></a>
+1. See [:material-code-braces: GetPropertyValueRequestRequestTypeDef](./type_defs.md#getpropertyvaluerequestrequesttypedef) 
 
-### get_property_value_history
+### get\_property\_value\_history
 
 Retrieves information about the history of a time series property value for a
 component, component type, entity, or workspace.
 
-Type annotations for `boto3.client("iottwinmaker").get_property_value_history`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_property_value_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_property_value_history)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_property_value_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_property_value_history)
+```python title="Method definition"
+def get_property_value_history(
+    self,
+    *,
+    endDateTime: Union[datetime, str],
+    selectedProperties: Sequence[str],
+    startDateTime: Union[datetime, str],
+    workspaceId: str,
+    componentName: str = ...,
+    componentTypeId: str = ...,
+    entityId: str = ...,
+    interpolation: InterpolationParametersTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    orderByTime: OrderByTimeType = ...,  # (2)
+    propertyFilters: Sequence[PropertyFilterTypeDef] = ...,  # (3)
+) -> GetPropertyValueHistoryResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getpropertyvaluehistoryrequestrequesttypedef).
+1. See [:material-code-braces: InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef) 
+2. See [:material-code-brackets: OrderByTimeType](./literals.md#orderbytimetype) 
+3. See [:material-code-braces: PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef) 
+4. See [:material-code-braces: GetPropertyValueHistoryResponseTypeDef](./type_defs.md#getpropertyvaluehistoryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endDateTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `selectedProperties`: `Sequence`\[`str`\] *(required)*
-- `startDateTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `workspaceId`: `str` *(required)*
-- `componentName`: `str`
-- `componentTypeId`: `str`
-- `entityId`: `str`
-- `interpolation`:
-  [InterpolationParametersTypeDef](./type_defs.md#interpolationparameterstypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `orderByTime`: [OrderByTimeType](./literals.md#orderbytimetype)
-- `propertyFilters`:
-  `Sequence`\[[PropertyFilterTypeDef](./type_defs.md#propertyfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: GetPropertyValueHistoryRequestRequestTypeDef = {  # (1)
+    "endDateTime": ...,
+    "selectedProperties": ...,
+    "startDateTime": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[GetPropertyValueHistoryResponseTypeDef](./type_defs.md#getpropertyvaluehistoryresponsetypedef).
+parent.get_property_value_history(**kwargs)
+```
 
-<a id="get\_scene"></a>
+1. See [:material-code-braces: GetPropertyValueHistoryRequestRequestTypeDef](./type_defs.md#getpropertyvaluehistoryrequestrequesttypedef) 
 
-### get_scene
+### get\_scene
 
 Retrieves information about a scene.
 
-Type annotations for `boto3.client("iottwinmaker").get_scene` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_scene` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_scene)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_scene](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_scene)
+```python title="Method definition"
+def get_scene(
+    self,
+    *,
+    sceneId: str,
+    workspaceId: str,
+) -> GetSceneResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSceneRequestRequestTypeDef](./type_defs.md#getscenerequestrequesttypedef).
+1. See [:material-code-braces: GetSceneResponseTypeDef](./type_defs.md#getsceneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sceneId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSceneRequestRequestTypeDef = {  # (1)
+    "sceneId": ...,
+    "workspaceId": ...,
+}
 
-Returns [GetSceneResponseTypeDef](./type_defs.md#getsceneresponsetypedef).
+parent.get_scene(**kwargs)
+```
 
-<a id="get\_workspace"></a>
+1. See [:material-code-braces: GetSceneRequestRequestTypeDef](./type_defs.md#getscenerequestrequesttypedef) 
 
-### get_workspace
+### get\_workspace
 
 Retrieves information about a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").get_workspace` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").get_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_workspace)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.get_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.get_workspace)
+```python title="Method definition"
+def get_workspace(
+    self,
+    *,
+    workspaceId: str,
+) -> GetWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetWorkspaceRequestRequestTypeDef](./type_defs.md#getworkspacerequestrequesttypedef).
+1. See [:material-code-braces: GetWorkspaceResponseTypeDef](./type_defs.md#getworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[GetWorkspaceResponseTypeDef](./type_defs.md#getworkspaceresponsetypedef).
+parent.get_workspace(**kwargs)
+```
 
-<a id="list\_component\_types"></a>
+1. See [:material-code-braces: GetWorkspaceRequestRequestTypeDef](./type_defs.md#getworkspacerequestrequesttypedef) 
 
-### list_component_types
+### list\_component\_types
 
 Lists all component types in a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").list_component_types`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_component_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_component_types)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.list_component_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_component_types)
+```python title="Method definition"
+def list_component_types(
+    self,
+    *,
+    workspaceId: str,
+    filters: Sequence[ListComponentTypesFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListComponentTypesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListComponentTypesRequestRequestTypeDef](./type_defs.md#listcomponenttypesrequestrequesttypedef).
+1. See [:material-code-braces: ListComponentTypesFilterTypeDef](./type_defs.md#listcomponenttypesfiltertypedef) 
+2. See [:material-code-braces: ListComponentTypesResponseTypeDef](./type_defs.md#listcomponenttypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `filters`:
-  `Sequence`\[[ListComponentTypesFilterTypeDef](./type_defs.md#listcomponenttypesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListComponentTypesRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[ListComponentTypesResponseTypeDef](./type_defs.md#listcomponenttypesresponsetypedef).
+parent.list_component_types(**kwargs)
+```
 
-<a id="list\_entities"></a>
+1. See [:material-code-braces: ListComponentTypesRequestRequestTypeDef](./type_defs.md#listcomponenttypesrequestrequesttypedef) 
 
-### list_entities
+### list\_entities
 
 Lists all entities in a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").list_entities` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_entities)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_entities)
+```python title="Method definition"
+def list_entities(
+    self,
+    *,
+    workspaceId: str,
+    filters: Sequence[ListEntitiesFilterTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListEntitiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef).
+1. See [:material-code-braces: ListEntitiesFilterTypeDef](./type_defs.md#listentitiesfiltertypedef) 
+2. See [:material-code-braces: ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `filters`:
-  `Sequence`\[[ListEntitiesFilterTypeDef](./type_defs.md#listentitiesfiltertypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEntitiesRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
+parent.list_entities(**kwargs)
+```
 
-<a id="list\_scenes"></a>
+1. See [:material-code-braces: ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef) 
 
-### list_scenes
+### list\_scenes
 
 Lists all scenes in a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").list_scenes` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_scenes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_scenes)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.list_scenes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_scenes)
+```python title="Method definition"
+def list_scenes(
+    self,
+    *,
+    workspaceId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListScenesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListScenesRequestRequestTypeDef](./type_defs.md#listscenesrequestrequesttypedef).
+1. See [:material-code-braces: ListScenesResponseTypeDef](./type_defs.md#listscenesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListScenesRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns [ListScenesResponseTypeDef](./type_defs.md#listscenesresponsetypedef).
+parent.list_scenes(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListScenesRequestRequestTypeDef](./type_defs.md#listscenesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists all tags associated with a resource.
 
-Type annotations for `boto3.client("iottwinmaker").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceARN: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_workspaces"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_workspaces
+### list\_workspaces
 
 Retrieves information about workspaces in the current account.
 
-Type annotations for `boto3.client("iottwinmaker").list_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").list_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_workspaces)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.list_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.list_workspaces)
+```python title="Method definition"
+def list_workspaces(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListWorkspacesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListWorkspacesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
+parent.list_workspaces(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListWorkspacesRequestRequestTypeDef](./type_defs.md#listworkspacesrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a resource.
 
-Type annotations for `boto3.client("iottwinmaker").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.tag_resource)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceARN: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("iottwinmaker").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.untag_resource)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceARN: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceARN`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceARN": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_component\_type"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_component_type
+### update\_component\_type
 
 Updates information in a component type.
 
-Type annotations for `boto3.client("iottwinmaker").update_component_type`
-method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").update_component_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_component_type)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.update_component_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_component_type)
+```python title="Method definition"
+def update_component_type(
+    self,
+    *,
+    componentTypeId: str,
+    workspaceId: str,
+    description: str = ...,
+    extendsFrom: Sequence[str] = ...,
+    functions: Mapping[str, FunctionRequestTypeDef] = ...,  # (1)
+    isSingleton: bool = ...,
+    propertyDefinitions: Mapping[str, PropertyDefinitionRequestTypeDef] = ...,  # (2)
+) -> UpdateComponentTypeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateComponentTypeRequestRequestTypeDef](./type_defs.md#updatecomponenttyperequestrequesttypedef).
+1. See [:material-code-braces: FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef) 
+2. See [:material-code-braces: PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef) 
+3. See [:material-code-braces: UpdateComponentTypeResponseTypeDef](./type_defs.md#updatecomponenttyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `componentTypeId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `description`: `str`
-- `extendsFrom`: `Sequence`\[`str`\]
-- `functions`: `Mapping`\[`str`,
-  [FunctionRequestTypeDef](./type_defs.md#functionrequesttypedef)\]
-- `isSingleton`: `bool`
-- `propertyDefinitions`: `Mapping`\[`str`,
-  [PropertyDefinitionRequestTypeDef](./type_defs.md#propertydefinitionrequesttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateComponentTypeRequestRequestTypeDef = {  # (1)
+    "componentTypeId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateComponentTypeResponseTypeDef](./type_defs.md#updatecomponenttyperesponsetypedef).
+parent.update_component_type(**kwargs)
+```
 
-<a id="update\_entity"></a>
+1. See [:material-code-braces: UpdateComponentTypeRequestRequestTypeDef](./type_defs.md#updatecomponenttyperequestrequesttypedef) 
 
-### update_entity
+### update\_entity
 
 Updates an entity.
 
-Type annotations for `boto3.client("iottwinmaker").update_entity` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").update_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_entity)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.update_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_entity)
+```python title="Method definition"
+def update_entity(
+    self,
+    *,
+    entityId: str,
+    workspaceId: str,
+    componentUpdates: Mapping[str, ComponentUpdateRequestTypeDef] = ...,  # (1)
+    description: str = ...,
+    entityName: str = ...,
+    parentEntityUpdate: ParentEntityUpdateRequestTypeDef = ...,  # (2)
+) -> UpdateEntityResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEntityRequestRequestTypeDef](./type_defs.md#updateentityrequestrequesttypedef).
+1. See [:material-code-braces: ComponentUpdateRequestTypeDef](./type_defs.md#componentupdaterequesttypedef) 
+2. See [:material-code-braces: ParentEntityUpdateRequestTypeDef](./type_defs.md#parententityupdaterequesttypedef) 
+3. See [:material-code-braces: UpdateEntityResponseTypeDef](./type_defs.md#updateentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `entityId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `componentUpdates`: `Mapping`\[`str`,
-  [ComponentUpdateRequestTypeDef](./type_defs.md#componentupdaterequesttypedef)\]
-- `description`: `str`
-- `entityName`: `str`
-- `parentEntityUpdate`:
-  [ParentEntityUpdateRequestTypeDef](./type_defs.md#parententityupdaterequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateEntityRequestRequestTypeDef = {  # (1)
+    "entityId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateEntityResponseTypeDef](./type_defs.md#updateentityresponsetypedef).
+parent.update_entity(**kwargs)
+```
 
-<a id="update\_scene"></a>
+1. See [:material-code-braces: UpdateEntityRequestRequestTypeDef](./type_defs.md#updateentityrequestrequesttypedef) 
 
-### update_scene
+### update\_scene
 
 Updates a scene.
 
-Type annotations for `boto3.client("iottwinmaker").update_scene` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").update_scene` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_scene)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.update_scene](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_scene)
+```python title="Method definition"
+def update_scene(
+    self,
+    *,
+    sceneId: str,
+    workspaceId: str,
+    capabilities: Sequence[str] = ...,
+    contentLocation: str = ...,
+    description: str = ...,
+) -> UpdateSceneResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSceneRequestRequestTypeDef](./type_defs.md#updatescenerequestrequesttypedef).
+1. See [:material-code-braces: UpdateSceneResponseTypeDef](./type_defs.md#updatesceneresponsetypedef) 
 
-Keyword-only arguments:
 
-- `sceneId`: `str` *(required)*
-- `workspaceId`: `str` *(required)*
-- `capabilities`: `Sequence`\[`str`\]
-- `contentLocation`: `str`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSceneRequestRequestTypeDef = {  # (1)
+    "sceneId": ...,
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateSceneResponseTypeDef](./type_defs.md#updatesceneresponsetypedef).
+parent.update_scene(**kwargs)
+```
 
-<a id="update\_workspace"></a>
+1. See [:material-code-braces: UpdateSceneRequestRequestTypeDef](./type_defs.md#updatescenerequestrequesttypedef) 
 
-### update_workspace
+### update\_workspace
 
 Updates a workspace.
 
-Type annotations for `boto3.client("iottwinmaker").update_workspace` method.
+Type annotations and code completion for `#!python boto3.client("iottwinmaker").update_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_workspace)
 
-Boto3 documentation:
-[IoTTwinMaker.Client.update_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker.Client.update_workspace)
+```python title="Method definition"
+def update_workspace(
+    self,
+    *,
+    workspaceId: str,
+    description: str = ...,
+    role: str = ...,
+) -> UpdateWorkspaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceRequestRequestTypeDef](./type_defs.md#updateworkspacerequestrequesttypedef).
+1. See [:material-code-braces: UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `workspaceId`: `str` *(required)*
-- `description`: `str`
-- `role`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceRequestRequestTypeDef = {  # (1)
+    "workspaceId": ...,
+}
 
-Returns
-[UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef).
+parent.update_workspace(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateWorkspaceRequestRequestTypeDef](./type_defs.md#updateworkspacerequestrequesttypedef) 
+
+
+
+

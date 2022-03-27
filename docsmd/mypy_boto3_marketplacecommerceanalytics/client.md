@@ -1,34 +1,18 @@
-<a id="marketplacecommerceanalyticsclient-for-boto3-marketplacecommerceanalytics-module"></a>
+# MarketplaceCommerceAnalyticsClient
 
-# MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module
+> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) > MarketplaceCommerceAnalyticsClient
 
-> [Index](../README.md) > [MarketplaceCommerceAnalytics](./README.md) >
-> MarketplaceCommerceAnalyticsClient
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
-type annotations stubs module
-[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
-
-- [MarketplaceCommerceAnalyticsClient for boto3 MarketplaceCommerceAnalytics module](#marketplacecommerceanalyticsclient-for-boto3-marketplacecommerceanalytics-module)
-  - [MarketplaceCommerceAnalyticsClient](#marketplacecommerceanalyticsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [generate_data_set](#generate_data_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [start_support_data_export](#start_support_data_export)
-
-<a id="marketplacecommerceanalyticsclient"></a>
+    Auto-generated documentation for [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
+    type annotations stubs module [mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 ## MarketplaceCommerceAnalyticsClient
 
-Type annotations for `boto3.client("marketplacecommerceanalytics")`
+Type annotations and code completion for `#!python boto3.client("marketplacecommerceanalytics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
 
@@ -36,143 +20,154 @@ def get_marketplacecommerceanalytics_client() -> MarketplaceCommerceAnalyticsCli
     return Session().client("marketplacecommerceanalytics")
 ```
 
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("marketplacecommerceanalytics").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("marketplacecommerceanalytics")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.MarketplaceCommerceAnalyticsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_marketplacecommerceanalytics.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.MarketplaceCommerceAnalyticsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MarketplaceCommerceAnalyticsClient exceptions.
-
-Type annotations for `boto3.client("marketplacecommerceanalytics").exceptions`
-method.
-
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for
-`boto3.client("marketplacecommerceanalytics").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("marketplacecommerceanalytics").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate)
 
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="generate\_data\_set"></a>
-
-### generate_data_set
+### generate\_data\_set
 
 Given a data set type and data set publication date, asynchronously publishes
-the requested data set to the specified S3 bucket and notifies the specified
-SNS topic once the data is available.
+the requested data set to the specified S3 bucket and notifies the specified SNS
+topic once the data is available.
 
-Type annotations for
-`boto3.client("marketplacecommerceanalytics").generate_data_set` method.
+Type annotations and code completion for `#!python boto3.client("marketplacecommerceanalytics").generate_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
 
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.generate_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_data_set)
+```python title="Method definition"
+def generate_data_set(
+    self,
+    *,
+    dataSetType: DataSetTypeType,  # (1)
+    dataSetPublicationDate: Union[datetime, str],
+    roleNameArn: str,
+    destinationS3BucketName: str,
+    snsTopicArn: str,
+    destinationS3Prefix: str = ...,
+    customerDefinedValues: Mapping[str, str] = ...,
+) -> GenerateDataSetResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef).
+1. See [:material-code-brackets: DataSetTypeType](./literals.md#datasettypetype) 
+2. See [:material-code-braces: GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef) 
 
-Keyword-only arguments:
 
-- `dataSetType`: [DataSetTypeType](./literals.md#datasettypetype) *(required)*
-- `dataSetPublicationDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `roleNameArn`: `str` *(required)*
-- `destinationS3BucketName`: `str` *(required)*
-- `snsTopicArn`: `str` *(required)*
-- `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GenerateDataSetRequestRequestTypeDef = {  # (1)
+    "dataSetType": ...,
+    "dataSetPublicationDate": ...,
+    "roleNameArn": ...,
+    "destinationS3BucketName": ...,
+    "snsTopicArn": ...,
+}
 
-Returns
-[GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
+parent.generate_data_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateDataSetRequestRequestTypeDef](./type_defs.md#generatedatasetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("marketplacecommerceanalytics").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("marketplacecommerceanalytics").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="start\_support\_data\_export"></a>
-
-### start_support_data_export
+### start\_support\_data\_export
 
 Given a data set type and a from date, asynchronously publishes the requested
 customer support data to the specified S3 bucket and notifies the specified SNS
 topic once the data is available.
 
-Type annotations for
-`boto3.client("marketplacecommerceanalytics").start_support_data_export`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplacecommerceanalytics").start_support_data_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
 
-Boto3 documentation:
-[MarketplaceCommerceAnalytics.Client.start_support_data_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics.Client.start_support_data_export)
+```python title="Method definition"
+def start_support_data_export(
+    self,
+    *,
+    dataSetType: SupportDataSetTypeType,  # (1)
+    fromDate: Union[datetime, str],
+    roleNameArn: str,
+    destinationS3BucketName: str,
+    snsTopicArn: str,
+    destinationS3Prefix: str = ...,
+    customerDefinedValues: Mapping[str, str] = ...,
+) -> StartSupportDataExportResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef).
+1. See [:material-code-brackets: SupportDataSetTypeType](./literals.md#supportdatasettypetype) 
+2. See [:material-code-braces: StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef) 
 
-Keyword-only arguments:
 
-- `dataSetType`: [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
-  *(required)*
-- `fromDate`: `Union`\[`datetime`, `str`\] *(required)*
-- `roleNameArn`: `str` *(required)*
-- `destinationS3BucketName`: `str` *(required)*
-- `snsTopicArn`: `str` *(required)*
-- `destinationS3Prefix`: `str`
-- `customerDefinedValues`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartSupportDataExportRequestRequestTypeDef = {  # (1)
+    "dataSetType": ...,
+    "fromDate": ...,
+    "roleNameArn": ...,
+    "destinationS3BucketName": ...,
+    "snsTopicArn": ...,
+}
 
-Returns
-[StartSupportDataExportResultTypeDef](./type_defs.md#startsupportdataexportresulttypedef).
+parent.start_support_data_export(**kwargs)
+```
+
+1. See [:material-code-braces: StartSupportDataExportRequestRequestTypeDef](./type_defs.md#startsupportdataexportrequestrequesttypedef) 
+
+
+
+

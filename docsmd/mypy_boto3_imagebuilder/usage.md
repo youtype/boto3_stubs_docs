@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-imagebuilder-module"></a>
-
-# Examples for boto3 imagebuilder module
+# Examples
 
 > [Index](../README.md) > [imagebuilder](./README.md) > Examples
 
-- [Examples for boto3 imagebuilder module](#examples-for-boto3-imagebuilder-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
+    type annotations stubs module [mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[imagebuilder]` package installed.
 
-Write your `imagebuilder` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `imagebuilder` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type imagebuilderClient
-# and provides type checking and code completion
-client = session.client("imagebuilder")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("imagebuilder")  # (1)
+    result = client.cancel_image_creation()  # (2)
+    ```
+
+    1. client: [imagebuilderClient](./client.md)
+    2. result: [:material-code-braces: CancelImageCreationResponseTypeDef](./type_defs.md#cancelimagecreationresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[imagebuilder]` or a standalone `mypy_boto3_imagebuilder`
-package, you have to explicitly specify `client: imagebuilderClient` type
-annotation.
+With `boto3-stubs-lite[imagebuilder]`
+or a standalone `mypy_boto3_imagebuilder` package, you have to explicitly specify `client: imagebuilderClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_imagebuilder.client import imagebuilderClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_imagebuilder.client import imagebuilderClient
+    from mypy_boto3_imagebuilder.type_defs import CancelImageCreationResponseTypeDef
+    from mypy_boto3_imagebuilder.type_defs import CancelImageCreationRequestRequestTypeDef
 
 
-from mypy_boto3_imagebuilder.type_defs import bool
+    session = Session()
+
+    client: imagebuilderClient = session.client("imagebuilder")
+
+    kwargs: CancelImageCreationRequestRequestTypeDef = {...}
+    result: CancelImageCreationResponseTypeDef = client.cancel_image_creation(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: imagebuilderClient = session.client("imagebuilder")
 
-result: bool = client.can_paginate()
-```
+

@@ -1,92 +1,139 @@
-<a id="examples-for-boto3-transfer-module"></a>
-
-# Examples for boto3 Transfer module
+# Examples
 
 > [Index](../README.md) > [Transfer](./README.md) > Examples
 
-- [Examples for boto3 Transfer module](#examples-for-boto3-transfer-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transfer.html#Transfer)
+    type annotations stubs module [mypy-boto3-transfer](https://pypi.org/project/mypy-boto3-transfer/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[transfer]` package installed.
 
-Write your `Transfer` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Transfer` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type TransferClient
-# and provides type checking and code completion
-client = session.client("transfer")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListAccessesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_accesses")
-for item in paginator.paginate(...):
-    # item has type ListAccessesResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type ServerOfflineWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("server_offline")
-waiter.wait()
-```
+    client = session.client("transfer")  # (1)
+    result = client.create_access()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [TransferClient](./client.md)
+    2. result: [:material-code-braces: CreateAccessResponseTypeDef](./type_defs.md#createaccessresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("transfer")  # (1)
+
+    paginator = client.get_paginator("list_accesses")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [TransferClient](./client.md)
+    2. paginator: [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+    3. item: [:material-code-braces: ListAccessesResponseTypeDef](./type_defs.md#listaccessesresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("transfer")  # (1)
+
+    waiter = client.get_waiter("server_offline")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [TransferClient](./client.md)
+    2. waiter: [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[transfer]` or a standalone `mypy_boto3_transfer`
-package, you have to explicitly specify `client: TransferClient` type
-annotation.
+With `boto3-stubs-lite[transfer]`
+or a standalone `mypy_boto3_transfer` package, you have to explicitly specify `client: TransferClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_transfer.client import TransferClient
-from mypy_boto3_transfer.paginator import ListAccessesPaginator
-from mypy_boto3_transfer.waiter import ServerOfflineWaiter
-from mypy_boto3_transfer.literals import PaginatorName
-from mypy_boto3_transfer.literals import WaiterName
-from mypy_boto3_transfer.type_defs import bool
-from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: TransferClient = session.client("transfer")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_transfer.client import TransferClient
+    from mypy_boto3_transfer.type_defs import CreateAccessResponseTypeDef
+    from mypy_boto3_transfer.type_defs import CreateAccessRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_accesses"
-paginator: ListAccessesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAccessesResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "server_offline"
-waiter: ServerOfflineWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: TransferClient = session.client("transfer")
+
+    kwargs: CreateAccessRequestRequestTypeDef = {...}
+    result: CreateAccessResponseTypeDef = client.create_access(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_transfer.client import TransferClient
+    from mypy_boto3_transfer.paginator import ListAccessesPaginator
+    from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
+
+
+    session = Session()
+    client: TransferClient = session.client("transfer")
+
+    paginator: ListAccessesPaginator = client.get_paginator("list_accesses")
+    for item in paginator.paginate(...):
+        item: ListAccessesResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_transfer.client import TransferClient
+    from mypy_boto3_transfer.waiter import ServerOfflineWaiter
+
+    session = Session()
+    client: TransferClient = session.client("transfer")
+
+    waiter: ServerOfflineWaiter = client.get_waiter("server_offline")
+    waiter.wait()
+    ```
+
+

@@ -1,997 +1,1292 @@
-<a id="typed-dictionaries-for-boto3-amplifyuibuilder-module"></a>
-
-# Typed dictionaries for boto3 AmplifyUIBuilder module
+# Typed dictionaries
 
 > [Index](../README.md) > [AmplifyUIBuilder](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
-type annotations stubs module
-[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AmplifyUIBuilder module](#typed-dictionaries-for-boto3-amplifyuibuilder-module)
-  - [ActionParametersTypeDef](#actionparameterstypedef)
-  - [ComponentBindingPropertiesValuePropertiesTypeDef](#componentbindingpropertiesvaluepropertiestypedef)
-  - [ComponentBindingPropertiesValueTypeDef](#componentbindingpropertiesvaluetypedef)
-  - [ComponentChildTypeDef](#componentchildtypedef)
-  - [ComponentConditionPropertyTypeDef](#componentconditionpropertytypedef)
-  - [ComponentDataConfigurationTypeDef](#componentdataconfigurationtypedef)
-  - [ComponentEventTypeDef](#componenteventtypedef)
-  - [ComponentPropertyBindingPropertiesTypeDef](#componentpropertybindingpropertiestypedef)
-  - [ComponentPropertyTypeDef](#componentpropertytypedef)
-  - [ComponentSummaryTypeDef](#componentsummarytypedef)
-  - [ComponentTypeDef](#componenttypedef)
-  - [ComponentVariantTypeDef](#componentvarianttypedef)
-  - [CreateComponentDataTypeDef](#createcomponentdatatypedef)
-  - [CreateComponentRequestRequestTypeDef](#createcomponentrequestrequesttypedef)
-  - [CreateComponentResponseTypeDef](#createcomponentresponsetypedef)
-  - [CreateThemeDataTypeDef](#createthemedatatypedef)
-  - [CreateThemeRequestRequestTypeDef](#createthemerequestrequesttypedef)
-  - [CreateThemeResponseTypeDef](#createthemeresponsetypedef)
-  - [DeleteComponentRequestRequestTypeDef](#deletecomponentrequestrequesttypedef)
-  - [DeleteThemeRequestRequestTypeDef](#deletethemerequestrequesttypedef)
-  - [ExchangeCodeForTokenRequestBodyTypeDef](#exchangecodefortokenrequestbodytypedef)
-  - [ExchangeCodeForTokenRequestRequestTypeDef](#exchangecodefortokenrequestrequesttypedef)
-  - [ExchangeCodeForTokenResponseTypeDef](#exchangecodefortokenresponsetypedef)
-  - [ExportComponentsRequestRequestTypeDef](#exportcomponentsrequestrequesttypedef)
-  - [ExportComponentsResponseTypeDef](#exportcomponentsresponsetypedef)
-  - [ExportThemesRequestRequestTypeDef](#exportthemesrequestrequesttypedef)
-  - [ExportThemesResponseTypeDef](#exportthemesresponsetypedef)
-  - [FormBindingElementTypeDef](#formbindingelementtypedef)
-  - [GetComponentRequestRequestTypeDef](#getcomponentrequestrequesttypedef)
-  - [GetComponentResponseTypeDef](#getcomponentresponsetypedef)
-  - [GetThemeRequestRequestTypeDef](#getthemerequestrequesttypedef)
-  - [GetThemeResponseTypeDef](#getthemeresponsetypedef)
-  - [ListComponentsRequestRequestTypeDef](#listcomponentsrequestrequesttypedef)
-  - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
-  - [ListThemesRequestRequestTypeDef](#listthemesrequestrequesttypedef)
-  - [ListThemesResponseTypeDef](#listthemesresponsetypedef)
-  - [MutationActionSetStateParameterTypeDef](#mutationactionsetstateparametertypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PredicateTypeDef](#predicatetypedef)
-  - [RefreshTokenRequestBodyTypeDef](#refreshtokenrequestbodytypedef)
-  - [RefreshTokenRequestRequestTypeDef](#refreshtokenrequestrequesttypedef)
-  - [RefreshTokenResponseTypeDef](#refreshtokenresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SortPropertyTypeDef](#sortpropertytypedef)
-  - [ThemeSummaryTypeDef](#themesummarytypedef)
-  - [ThemeTypeDef](#themetypedef)
-  - [ThemeValueTypeDef](#themevaluetypedef)
-  - [ThemeValuesTypeDef](#themevaluestypedef)
-  - [UpdateComponentDataTypeDef](#updatecomponentdatatypedef)
-  - [UpdateComponentRequestRequestTypeDef](#updatecomponentrequestrequesttypedef)
-  - [UpdateComponentResponseTypeDef](#updatecomponentresponsetypedef)
-  - [UpdateThemeDataTypeDef](#updatethemedatatypedef)
-  - [UpdateThemeRequestRequestTypeDef](#updatethemerequestrequesttypedef)
-  - [UpdateThemeResponseTypeDef](#updatethemeresponsetypedef)
-
-<a id="actionparameterstypedef"></a>
+    Auto-generated documentation for [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
+    type annotations stubs module [mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 ## ActionParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef
+
+def get_value() -> ActionParametersTypeDef:
+    return {
+        "anchor": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionParametersTypeDef(TypedDict):
+    anchor: NotRequired[ComponentPropertyTypeDef],  # (1)
+    fields: NotRequired[Mapping[str, ComponentPropertyTypeDef]],  # (2)
+    global: NotRequired[ComponentPropertyTypeDef],  # (1)
+    id: NotRequired[ComponentPropertyTypeDef],  # (1)
+    model: NotRequired[str],
+    state: NotRequired[MutationActionSetStateParameterTypeDef],  # (5)
+    target: NotRequired[ComponentPropertyTypeDef],  # (1)
+    type: NotRequired[ComponentPropertyTypeDef],  # (1)
+    url: NotRequired[ComponentPropertyTypeDef],  # (1)
+```
 
-- `anchor`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `fields`: `Mapping`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `global`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `id`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `model`: `str`
-- `state`:
-  [MutationActionSetStateParameterTypeDef](./type_defs.md#mutationactionsetstateparametertypedef)
-- `target`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `type`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `url`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-
-<a id="componentbindingpropertiesvaluepropertiestypedef"></a>
-
+1. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+2. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+3. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+4. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+5. See [:material-code-braces: MutationActionSetStateParameterTypeDef](./type_defs.md#mutationactionsetstateparametertypedef) 
+6. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+7. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+8. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 ## ComponentBindingPropertiesValuePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentBindingPropertiesValuePropertiesTypeDef
+
+def get_value() -> ComponentBindingPropertiesValuePropertiesTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentBindingPropertiesValuePropertiesTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    defaultValue: NotRequired[str],
+    field: NotRequired[str],
+    key: NotRequired[str],
+    model: NotRequired[str],
+    predicates: NotRequired[Sequence[PredicateTypeDef]],  # (1)
+    userAttribute: NotRequired[str],
+```
 
-- `bucket`: `str`
-- `defaultValue`: `str`
-- `field`: `str`
-- `key`: `str`
-- `model`: `str`
-- `predicates`:
-  `Sequence`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-- `userAttribute`: `str`
-
-<a id="componentbindingpropertiesvaluetypedef"></a>
-
+1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
 ## ComponentBindingPropertiesValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentBindingPropertiesValueTypeDef
+
+def get_value() -> ComponentBindingPropertiesValueTypeDef:
+    return {
+        "bindingProperties": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentBindingPropertiesValueTypeDef(TypedDict):
+    bindingProperties: NotRequired[ComponentBindingPropertiesValuePropertiesTypeDef],  # (1)
+    defaultValue: NotRequired[str],
+    type: NotRequired[str],
+```
 
-- `bindingProperties`:
-  [ComponentBindingPropertiesValuePropertiesTypeDef](./type_defs.md#componentbindingpropertiesvaluepropertiestypedef)
-- `defaultValue`: `str`
-- `type`: `str`
-
-<a id="componentchildtypedef"></a>
-
+1. See [:material-code-braces: ComponentBindingPropertiesValuePropertiesTypeDef](./type_defs.md#componentbindingpropertiesvaluepropertiestypedef) 
 ## ComponentChildTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentChildTypeDef
+
+def get_value() -> ComponentChildTypeDef:
+    return {
+        "componentType": ...,
+        "name": ...,
+        "properties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComponentChildTypeDef(TypedDict):
+    componentType: str,
+    name: str,
+    properties: Mapping[str, ComponentPropertyTypeDef],  # (3)
+    children: NotRequired[Sequence[ComponentChildTypeDef]],  # (1)
+    events: NotRequired[Mapping[str, ComponentEventTypeDef]],  # (2)
+```
 
-- `componentType`: `str`
-- `name`: `str`
-- `properties`: `Mapping`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-
-Optional fields:
-
-- `children`:
-  `Sequence`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
-
-<a id="componentconditionpropertytypedef"></a>
-
+1. See [:material-code-braces: ComponentChildTypeDef](./type_defs.md#componentchildtypedef) 
+2. See [:material-code-braces: ComponentEventTypeDef](./type_defs.md#componenteventtypedef) 
+3. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 ## ComponentConditionPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentConditionPropertyTypeDef
+
+def get_value() -> ComponentConditionPropertyTypeDef:
+    return {
+        "else": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentConditionPropertyTypeDef(TypedDict):
+    else: NotRequired[ComponentPropertyTypeDef],  # (1)
+    field: NotRequired[str],
+    operand: NotRequired[str],
+    operandType: NotRequired[str],
+    operator: NotRequired[str],
+    property: NotRequired[str],
+    then: NotRequired[ComponentPropertyTypeDef],  # (1)
+```
 
-- `else`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `field`: `str`
-- `operand`: `str`
-- `operandType`: `str`
-- `operator`: `str`
-- `property`: `str`
-- `then`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-
-<a id="componentdataconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+2. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 ## ComponentDataConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentDataConfigurationTypeDef
+
+def get_value() -> ComponentDataConfigurationTypeDef:
+    return {
+        "model": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComponentDataConfigurationTypeDef(TypedDict):
+    model: str,
+    identifiers: NotRequired[Sequence[str]],
+    predicate: NotRequired[PredicateTypeDef],  # (1)
+    sort: NotRequired[Sequence[SortPropertyTypeDef]],  # (2)
+```
 
-- `model`: `str`
-
-Optional fields:
-
-- `identifiers`: `Sequence`\[`str`\]
-- `predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
-- `sort`:
-  `Sequence`\[[SortPropertyTypeDef](./type_defs.md#sortpropertytypedef)\]
-
-<a id="componenteventtypedef"></a>
-
+1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+2. See [:material-code-braces: SortPropertyTypeDef](./type_defs.md#sortpropertytypedef) 
 ## ComponentEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentEventTypeDef
+
+def get_value() -> ComponentEventTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentEventTypeDef(TypedDict):
+    action: NotRequired[str],
+    parameters: NotRequired[ActionParametersTypeDef],  # (1)
+```
 
-- `action`: `str`
-- `parameters`:
-  [ActionParametersTypeDef](./type_defs.md#actionparameterstypedef)
-
-<a id="componentpropertybindingpropertiestypedef"></a>
-
+1. See [:material-code-braces: ActionParametersTypeDef](./type_defs.md#actionparameterstypedef) 
 ## ComponentPropertyBindingPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentPropertyBindingPropertiesTypeDef
+
+def get_value() -> ComponentPropertyBindingPropertiesTypeDef:
+    return {
+        "property": ...,
+    }
 ```
 
-Required fields:
-
-- `property`: `str`
-
-Optional fields:
-
-- `field`: `str`
-
-<a id="componentpropertytypedef"></a>
+```python title="Definition"
+class ComponentPropertyBindingPropertiesTypeDef(TypedDict):
+    property: str,
+    field: NotRequired[str],
+```
 
 ## ComponentPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentPropertyTypeDef
+
+def get_value() -> ComponentPropertyTypeDef:
+    return {
+        "bindingProperties": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComponentPropertyTypeDef(TypedDict):
+    bindingProperties: NotRequired[ComponentPropertyBindingPropertiesTypeDef],  # (1)
+    bindings: NotRequired[Mapping[str, FormBindingElementTypeDef]],  # (2)
+    collectionBindingProperties: NotRequired[ComponentPropertyBindingPropertiesTypeDef],  # (1)
+    componentName: NotRequired[str],
+    concat: NotRequired[Sequence[ComponentPropertyTypeDef]],  # (4)
+    condition: NotRequired[ComponentConditionPropertyTypeDef],  # (5)
+    configured: NotRequired[bool],
+    defaultValue: NotRequired[str],
+    event: NotRequired[str],
+    importedValue: NotRequired[str],
+    model: NotRequired[str],
+    property: NotRequired[str],
+    type: NotRequired[str],
+    userAttribute: NotRequired[str],
+    value: NotRequired[str],
+```
 
-- `bindingProperties`:
-  [ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef)
-- `bindings`: `Mapping`\[`str`,
-  [FormBindingElementTypeDef](./type_defs.md#formbindingelementtypedef)\]
-- `collectionBindingProperties`:
-  [ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef)
-- `componentName`: `str`
-- `concat`:
-  `Sequence`\[[ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `condition`:
-  [ComponentConditionPropertyTypeDef](./type_defs.md#componentconditionpropertytypedef)
-- `configured`: `bool`
-- `defaultValue`: `str`
-- `event`: `str`
-- `importedValue`: `str`
-- `model`: `str`
-- `property`: `str`
-- `type`: `str`
-- `userAttribute`: `str`
-- `value`: `str`
-
-<a id="componentsummarytypedef"></a>
-
+1. See [:material-code-braces: ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef) 
+2. See [:material-code-braces: FormBindingElementTypeDef](./type_defs.md#formbindingelementtypedef) 
+3. See [:material-code-braces: ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef) 
+4. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+5. See [:material-code-braces: ComponentConditionPropertyTypeDef](./type_defs.md#componentconditionpropertytypedef) 
 ## ComponentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentSummaryTypeDef
+
+def get_value() -> ComponentSummaryTypeDef:
+    return {
+        "appId": ...,
+        "componentType": ...,
+        "environmentName": ...,
+        "id": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `componentType`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `name`: `str`
-
-<a id="componenttypedef"></a>
+```python title="Definition"
+class ComponentSummaryTypeDef(TypedDict):
+    appId: str,
+    componentType: str,
+    environmentName: str,
+    id: str,
+    name: str,
+```
 
 ## ComponentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentTypeDef
+
+def get_value() -> ComponentTypeDef:
+    return {
+        "appId": ...,
+        "bindingProperties": ...,
+        "componentType": ...,
+        "createdAt": ...,
+        "environmentName": ...,
+        "id": ...,
+        "name": ...,
+        "overrides": ...,
+        "properties": ...,
+        "variants": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComponentTypeDef(TypedDict):
+    appId: str,
+    bindingProperties: Dict[str, ComponentBindingPropertiesValueTypeDef],  # (1)
+    componentType: str,
+    createdAt: datetime,
+    environmentName: str,
+    id: str,
+    name: str,
+    overrides: Dict[str, Dict[str, str]],
+    properties: Dict[str, ComponentPropertyTypeDef],  # (5)
+    variants: List[ComponentVariantTypeDef],  # (6)
+    children: NotRequired[List[ComponentChildTypeDef]],  # (2)
+    collectionProperties: NotRequired[Dict[str, ComponentDataConfigurationTypeDef]],  # (3)
+    events: NotRequired[Dict[str, ComponentEventTypeDef]],  # (4)
+    modifiedAt: NotRequired[datetime],
+    schemaVersion: NotRequired[str],
+    sourceId: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `appId`: `str`
-- `bindingProperties`: `Dict`\[`str`,
-  [ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef)\]
-- `componentType`: `str`
-- `createdAt`: `datetime`
-- `environmentName`: `str`
-- `id`: `str`
-- `name`: `str`
-- `overrides`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
-- `properties`: `Dict`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `variants`:
-  `List`\[[ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef)\]
-
-Optional fields:
-
-- `children`:
-  `List`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
-- `collectionProperties`: `Dict`\[`str`,
-  [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
-- `events`: `Dict`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
-- `modifiedAt`: `datetime`
-- `schemaVersion`: `str`
-- `sourceId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="componentvarianttypedef"></a>
-
+1. See [:material-code-braces: ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef) 
+2. See [:material-code-braces: ComponentChildTypeDef](./type_defs.md#componentchildtypedef) 
+3. See [:material-code-braces: ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef) 
+4. See [:material-code-braces: ComponentEventTypeDef](./type_defs.md#componenteventtypedef) 
+5. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+6. See [:material-code-braces: ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef) 
 ## ComponentVariantTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ComponentVariantTypeDef
+
+def get_value() -> ComponentVariantTypeDef:
+    return {
+        "overrides": ...,
+    }
 ```
 
-Optional fields:
-
-- `overrides`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `variantValues`: `Mapping`\[`str`, `str`\]
-
-<a id="createcomponentdatatypedef"></a>
+```python title="Definition"
+class ComponentVariantTypeDef(TypedDict):
+    overrides: NotRequired[Mapping[str, Mapping[str, str]]],
+    variantValues: NotRequired[Mapping[str, str]],
+```
 
 ## CreateComponentDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateComponentDataTypeDef
+
+def get_value() -> CreateComponentDataTypeDef:
+    return {
+        "bindingProperties": ...,
+        "componentType": ...,
+        "name": ...,
+        "overrides": ...,
+        "properties": ...,
+        "variants": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentDataTypeDef(TypedDict):
+    bindingProperties: Mapping[str, ComponentBindingPropertiesValueTypeDef],  # (1)
+    componentType: str,
+    name: str,
+    overrides: Mapping[str, Mapping[str, str]],
+    properties: Mapping[str, ComponentPropertyTypeDef],  # (5)
+    variants: Sequence[ComponentVariantTypeDef],  # (6)
+    children: NotRequired[Sequence[ComponentChildTypeDef]],  # (2)
+    collectionProperties: NotRequired[Mapping[str, ComponentDataConfigurationTypeDef]],  # (3)
+    events: NotRequired[Mapping[str, ComponentEventTypeDef]],  # (4)
+    schemaVersion: NotRequired[str],
+    sourceId: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `bindingProperties`: `Mapping`\[`str`,
-  [ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef)\]
-- `componentType`: `str`
-- `name`: `str`
-- `overrides`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `properties`: `Mapping`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `variants`:
-  `Sequence`\[[ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef)\]
-
-Optional fields:
-
-- `children`:
-  `Sequence`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
-- `collectionProperties`: `Mapping`\[`str`,
-  [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
-- `schemaVersion`: `str`
-- `sourceId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef) 
+2. See [:material-code-braces: ComponentChildTypeDef](./type_defs.md#componentchildtypedef) 
+3. See [:material-code-braces: ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef) 
+4. See [:material-code-braces: ComponentEventTypeDef](./type_defs.md#componenteventtypedef) 
+5. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+6. See [:material-code-braces: ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef) 
 ## CreateComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateComponentRequestRequestTypeDef
+
+def get_value() -> CreateComponentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "componentToCreate": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    componentToCreate: CreateComponentDataTypeDef,  # (1)
+    environmentName: str,
+    clientToken: NotRequired[str],
+```
 
-- `appId`: `str`
-- `componentToCreate`:
-  [CreateComponentDataTypeDef](./type_defs.md#createcomponentdatatypedef)
-- `environmentName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="createcomponentresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateComponentDataTypeDef](./type_defs.md#createcomponentdatatypedef) 
 ## CreateComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateComponentResponseTypeDef
+
+def get_value() -> CreateComponentResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateComponentResponseTypeDef(TypedDict):
+    entity: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entity`: [ComponentTypeDef](./type_defs.md#componenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createthemedatatypedef"></a>
-
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateThemeDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateThemeDataTypeDef
+
+def get_value() -> CreateThemeDataTypeDef:
+    return {
+        "name": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateThemeDataTypeDef(TypedDict):
+    name: str,
+    values: Sequence[ThemeValuesTypeDef],  # (1)
+    overrides: NotRequired[Sequence[ThemeValuesTypeDef]],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `values`:
-  `Sequence`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-
-Optional fields:
-
-- `overrides`:
-  `Sequence`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createthemerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
+2. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
 ## CreateThemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateThemeRequestRequestTypeDef
+
+def get_value() -> CreateThemeRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "themeToCreate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateThemeRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    themeToCreate: CreateThemeDataTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `appId`: `str`
-- `environmentName`: `str`
-- `themeToCreate`:
-  [CreateThemeDataTypeDef](./type_defs.md#createthemedatatypedef)
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="createthemeresponsetypedef"></a>
-
+1. See [:material-code-braces: CreateThemeDataTypeDef](./type_defs.md#createthemedatatypedef) 
 ## CreateThemeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import CreateThemeResponseTypeDef
+
+def get_value() -> CreateThemeResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateThemeResponseTypeDef(TypedDict):
+    entity: ThemeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entity`: [ThemeTypeDef](./type_defs.md#themetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import DeleteComponentRequestRequestTypeDef
+
+def get_value() -> DeleteComponentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-
-<a id="deletethemerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteComponentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
 
 ## DeleteThemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import DeleteThemeRequestRequestTypeDef
+
+def get_value() -> DeleteThemeRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-
-<a id="exchangecodefortokenrequestbodytypedef"></a>
+```python title="Definition"
+class DeleteThemeRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
 
 ## ExchangeCodeForTokenRequestBodyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExchangeCodeForTokenRequestBodyTypeDef
+
+def get_value() -> ExchangeCodeForTokenRequestBodyTypeDef:
+    return {
+        "code": ...,
+        "redirectUri": ...,
+    }
 ```
 
-Required fields:
-
-- `code`: `str`
-- `redirectUri`: `str`
-
-<a id="exchangecodefortokenrequestrequesttypedef"></a>
+```python title="Definition"
+class ExchangeCodeForTokenRequestBodyTypeDef(TypedDict):
+    code: str,
+    redirectUri: str,
+```
 
 ## ExchangeCodeForTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExchangeCodeForTokenRequestRequestTypeDef
+
+def get_value() -> ExchangeCodeForTokenRequestRequestTypeDef:
+    return {
+        "provider": ...,
+        "request": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExchangeCodeForTokenRequestRequestTypeDef(TypedDict):
+    provider: TokenProvidersType,  # (1)
+    request: ExchangeCodeForTokenRequestBodyTypeDef,  # (2)
+```
 
-- `provider`: `Literal['figma']` (see
-  [TokenProvidersType](./literals.md#tokenproviderstype))
-- `request`:
-  [ExchangeCodeForTokenRequestBodyTypeDef](./type_defs.md#exchangecodefortokenrequestbodytypedef)
-
-<a id="exchangecodefortokenresponsetypedef"></a>
-
+1. See [:material-code-brackets: TokenProvidersType](./literals.md#tokenproviderstype) 
+2. See [:material-code-braces: ExchangeCodeForTokenRequestBodyTypeDef](./type_defs.md#exchangecodefortokenrequestbodytypedef) 
 ## ExchangeCodeForTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExchangeCodeForTokenResponseTypeDef
+
+def get_value() -> ExchangeCodeForTokenResponseTypeDef:
+    return {
+        "accessToken": ...,
+        "expiresIn": ...,
+        "refreshToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExchangeCodeForTokenResponseTypeDef(TypedDict):
+    accessToken: str,
+    expiresIn: int,
+    refreshToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `accessToken`: `str`
-- `expiresIn`: `int`
-- `refreshToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportComponentsRequestExportComponentsPaginateTypeDef
 
-<a id="exportcomponentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsRequestExportComponentsPaginateTypeDef
 
+def get_value() -> ExportComponentsRequestExportComponentsPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ExportComponentsRequestExportComponentsPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ExportComponentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsRequestRequestTypeDef
+
+def get_value() -> ExportComponentsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="exportcomponentsresponsetypedef"></a>
+```python title="Definition"
+class ExportComponentsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ExportComponentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsResponseTypeDef
+
+def get_value() -> ExportComponentsResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportComponentsResponseTypeDef(TypedDict):
+    entities: List[ComponentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entities`: `List`\[[ComponentTypeDef](./type_defs.md#componenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ExportThemesRequestExportThemesPaginateTypeDef
 
-<a id="exportthemesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ExportThemesRequestExportThemesPaginateTypeDef
 
+def get_value() -> ExportThemesRequestExportThemesPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ExportThemesRequestExportThemesPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ExportThemesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExportThemesRequestRequestTypeDef
+
+def get_value() -> ExportThemesRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="exportthemesresponsetypedef"></a>
+```python title="Definition"
+class ExportThemesRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ExportThemesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ExportThemesResponseTypeDef
+
+def get_value() -> ExportThemesResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportThemesResponseTypeDef(TypedDict):
+    entities: List[ThemeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entities`: `List`\[[ThemeTypeDef](./type_defs.md#themetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="formbindingelementtypedef"></a>
-
+1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FormBindingElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import FormBindingElementTypeDef
+
+def get_value() -> FormBindingElementTypeDef:
+    return {
+        "element": ...,
+        "property": ...,
+    }
 ```
 
-Required fields:
-
-- `element`: `str`
-- `property`: `str`
-
-<a id="getcomponentrequestrequesttypedef"></a>
+```python title="Definition"
+class FormBindingElementTypeDef(TypedDict):
+    element: str,
+    property: str,
+```
 
 ## GetComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import GetComponentRequestRequestTypeDef
+
+def get_value() -> GetComponentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-
-<a id="getcomponentresponsetypedef"></a>
+```python title="Definition"
+class GetComponentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
 
 ## GetComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import GetComponentResponseTypeDef
+
+def get_value() -> GetComponentResponseTypeDef:
+    return {
+        "component": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComponentResponseTypeDef(TypedDict):
+    component: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `component`: [ComponentTypeDef](./type_defs.md#componenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getthemerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetThemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import GetThemeRequestRequestTypeDef
+
+def get_value() -> GetThemeRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-
-<a id="getthemeresponsetypedef"></a>
+```python title="Definition"
+class GetThemeRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+```
 
 ## GetThemeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import GetThemeResponseTypeDef
+
+def get_value() -> GetThemeResponseTypeDef:
+    return {
+        "theme": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetThemeResponseTypeDef(TypedDict):
+    theme: ThemeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `theme`: [ThemeTypeDef](./type_defs.md#themetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListComponentsRequestListComponentsPaginateTypeDef
 
-<a id="listcomponentsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ListComponentsRequestListComponentsPaginateTypeDef
 
+def get_value() -> ListComponentsRequestListComponentsPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListComponentsRequestListComponentsPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListComponentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ListComponentsRequestRequestTypeDef
+
+def get_value() -> ListComponentsRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listcomponentsresponsetypedef"></a>
+```python title="Definition"
+class ListComponentsRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListComponentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ListComponentsResponseTypeDef
+
+def get_value() -> ListComponentsResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListComponentsResponseTypeDef(TypedDict):
+    entities: List[ComponentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entities`:
-  `List`\[[ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListThemesRequestListThemesPaginateTypeDef
 
-<a id="listthemesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_amplifyuibuilder.type_defs import ListThemesRequestListThemesPaginateTypeDef
 
+def get_value() -> ListThemesRequestListThemesPaginateTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
+```
+
+```python title="Definition"
+class ListThemesRequestListThemesPaginateTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListThemesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ListThemesRequestRequestTypeDef
+
+def get_value() -> ListThemesRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listthemesresponsetypedef"></a>
+```python title="Definition"
+class ListThemesRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListThemesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ListThemesResponseTypeDef
+
+def get_value() -> ListThemesResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListThemesResponseTypeDef(TypedDict):
+    entities: List[ThemeSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entities`:
-  `List`\[[ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mutationactionsetstateparametertypedef"></a>
-
+1. See [:material-code-braces: ThemeSummaryTypeDef](./type_defs.md#themesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MutationActionSetStateParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import MutationActionSetStateParameterTypeDef
+
+def get_value() -> MutationActionSetStateParameterTypeDef:
+    return {
+        "componentName": ...,
+        "property": ...,
+        "set": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MutationActionSetStateParameterTypeDef(TypedDict):
+    componentName: str,
+    property: str,
+    set: ComponentPropertyTypeDef,  # (1)
+```
 
-- `componentName`: `str`
-- `property`: `str`
-- `set`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="predicatetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PredicateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import PredicateTypeDef
+
+def get_value() -> PredicateTypeDef:
+    return {
+        "and": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PredicateTypeDef(TypedDict):
+    and: NotRequired[Sequence[PredicateTypeDef]],  # (1)
+    field: NotRequired[str],
+    operand: NotRequired[str],
+    operator: NotRequired[str],
+    or: NotRequired[Sequence[PredicateTypeDef]],  # (1)
+```
 
-- `and`: `Sequence`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-- `field`: `str`
-- `operand`: `str`
-- `operator`: `str`
-- `or`: `Sequence`\[[PredicateTypeDef](./type_defs.md#predicatetypedef)\]
-
-<a id="refreshtokenrequestbodytypedef"></a>
-
+1. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
+2. See [:material-code-braces: PredicateTypeDef](./type_defs.md#predicatetypedef) 
 ## RefreshTokenRequestBodyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import RefreshTokenRequestBodyTypeDef
+
+def get_value() -> RefreshTokenRequestBodyTypeDef:
+    return {
+        "token": ...,
+    }
 ```
 
-Required fields:
-
-- `token`: `str`
-
-<a id="refreshtokenrequestrequesttypedef"></a>
+```python title="Definition"
+class RefreshTokenRequestBodyTypeDef(TypedDict):
+    token: str,
+```
 
 ## RefreshTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import RefreshTokenRequestRequestTypeDef
+
+def get_value() -> RefreshTokenRequestRequestTypeDef:
+    return {
+        "provider": ...,
+        "refreshTokenBody": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RefreshTokenRequestRequestTypeDef(TypedDict):
+    provider: TokenProvidersType,  # (1)
+    refreshTokenBody: RefreshTokenRequestBodyTypeDef,  # (2)
+```
 
-- `provider`: `Literal['figma']` (see
-  [TokenProvidersType](./literals.md#tokenproviderstype))
-- `refreshTokenBody`:
-  [RefreshTokenRequestBodyTypeDef](./type_defs.md#refreshtokenrequestbodytypedef)
-
-<a id="refreshtokenresponsetypedef"></a>
-
+1. See [:material-code-brackets: TokenProvidersType](./literals.md#tokenproviderstype) 
+2. See [:material-code-braces: RefreshTokenRequestBodyTypeDef](./type_defs.md#refreshtokenrequestbodytypedef) 
 ## RefreshTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import RefreshTokenResponseTypeDef
+
+def get_value() -> RefreshTokenResponseTypeDef:
+    return {
+        "accessToken": ...,
+        "expiresIn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RefreshTokenResponseTypeDef(TypedDict):
+    accessToken: str,
+    expiresIn: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `accessToken`: `str`
-- `expiresIn`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sortpropertytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SortPropertyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import SortPropertyTypeDef
+
+def get_value() -> SortPropertyTypeDef:
+    return {
+        "direction": ...,
+        "field": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SortPropertyTypeDef(TypedDict):
+    direction: SortDirectionType,  # (1)
+    field: str,
+```
 
-- `direction`: [SortDirectionType](./literals.md#sortdirectiontype)
-- `field`: `str`
-
-<a id="themesummarytypedef"></a>
-
+1. See [:material-code-brackets: SortDirectionType](./literals.md#sortdirectiontype) 
 ## ThemeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ThemeSummaryTypeDef
+
+def get_value() -> ThemeSummaryTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `name`: `str`
-
-<a id="themetypedef"></a>
+```python title="Definition"
+class ThemeSummaryTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+    name: str,
+```
 
 ## ThemeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ThemeTypeDef
+
+def get_value() -> ThemeTypeDef:
+    return {
+        "appId": ...,
+        "createdAt": ...,
+        "environmentName": ...,
+        "id": ...,
+        "name": ...,
+        "values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ThemeTypeDef(TypedDict):
+    appId: str,
+    createdAt: datetime,
+    environmentName: str,
+    id: str,
+    name: str,
+    values: List[ThemeValuesTypeDef],  # (1)
+    modifiedAt: NotRequired[datetime],
+    overrides: NotRequired[List[ThemeValuesTypeDef]],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `appId`: `str`
-- `createdAt`: `datetime`
-- `environmentName`: `str`
-- `id`: `str`
-- `name`: `str`
-- `values`: `List`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-
-Optional fields:
-
-- `modifiedAt`: `datetime`
-- `overrides`:
-  `List`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="themevaluetypedef"></a>
-
+1. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
+2. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
 ## ThemeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ThemeValueTypeDef
+
+def get_value() -> ThemeValueTypeDef:
+    return {
+        "children": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ThemeValueTypeDef(TypedDict):
+    children: NotRequired[Sequence[ThemeValuesTypeDef]],  # (1)
+    value: NotRequired[str],
+```
 
-- `children`:
-  `Sequence`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-- `value`: `str`
-
-<a id="themevaluestypedef"></a>
-
+1. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
 ## ThemeValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import ThemeValuesTypeDef
+
+def get_value() -> ThemeValuesTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ThemeValuesTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[ThemeValueTypeDef],  # (1)
+```
 
-- `key`: `str`
-- `value`: [ThemeValueTypeDef](./type_defs.md#themevaluetypedef)
-
-<a id="updatecomponentdatatypedef"></a>
-
+1. See [:material-code-braces: ThemeValueTypeDef](./type_defs.md#themevaluetypedef) 
 ## UpdateComponentDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateComponentDataTypeDef
+
+def get_value() -> UpdateComponentDataTypeDef:
+    return {
+        "bindingProperties": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateComponentDataTypeDef(TypedDict):
+    bindingProperties: NotRequired[Mapping[str, ComponentBindingPropertiesValueTypeDef]],  # (1)
+    children: NotRequired[Sequence[ComponentChildTypeDef]],  # (2)
+    collectionProperties: NotRequired[Mapping[str, ComponentDataConfigurationTypeDef]],  # (3)
+    componentType: NotRequired[str],
+    events: NotRequired[Mapping[str, ComponentEventTypeDef]],  # (4)
+    id: NotRequired[str],
+    name: NotRequired[str],
+    overrides: NotRequired[Mapping[str, Mapping[str, str]]],
+    properties: NotRequired[Mapping[str, ComponentPropertyTypeDef]],  # (5)
+    schemaVersion: NotRequired[str],
+    sourceId: NotRequired[str],
+    variants: NotRequired[Sequence[ComponentVariantTypeDef]],  # (6)
+```
 
-- `bindingProperties`: `Mapping`\[`str`,
-  [ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef)\]
-- `children`:
-  `Sequence`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
-- `collectionProperties`: `Mapping`\[`str`,
-  [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
-- `componentType`: `str`
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
-- `id`: `str`
-- `name`: `str`
-- `overrides`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `properties`: `Mapping`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `schemaVersion`: `str`
-- `sourceId`: `str`
-- `variants`:
-  `Sequence`\[[ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef)\]
-
-<a id="updatecomponentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef) 
+2. See [:material-code-braces: ComponentChildTypeDef](./type_defs.md#componentchildtypedef) 
+3. See [:material-code-braces: ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef) 
+4. See [:material-code-braces: ComponentEventTypeDef](./type_defs.md#componenteventtypedef) 
+5. See [:material-code-braces: ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef) 
+6. See [:material-code-braces: ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef) 
 ## UpdateComponentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateComponentRequestRequestTypeDef
+
+def get_value() -> UpdateComponentRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "updatedComponent": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateComponentRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+    updatedComponent: UpdateComponentDataTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `updatedComponent`:
-  [UpdateComponentDataTypeDef](./type_defs.md#updatecomponentdatatypedef)
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updatecomponentresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateComponentDataTypeDef](./type_defs.md#updatecomponentdatatypedef) 
 ## UpdateComponentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateComponentResponseTypeDef
+
+def get_value() -> UpdateComponentResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateComponentResponseTypeDef(TypedDict):
+    entity: ComponentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entity`: [ComponentTypeDef](./type_defs.md#componenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatethemedatatypedef"></a>
-
+1. See [:material-code-braces: ComponentTypeDef](./type_defs.md#componenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateThemeDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateThemeDataTypeDef
+
+def get_value() -> UpdateThemeDataTypeDef:
+    return {
+        "values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateThemeDataTypeDef(TypedDict):
+    values: Sequence[ThemeValuesTypeDef],  # (1)
+    id: NotRequired[str],
+    name: NotRequired[str],
+    overrides: NotRequired[Sequence[ThemeValuesTypeDef]],  # (1)
+```
 
-- `values`:
-  `Sequence`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-
-Optional fields:
-
-- `id`: `str`
-- `name`: `str`
-- `overrides`:
-  `Sequence`\[[ThemeValuesTypeDef](./type_defs.md#themevaluestypedef)\]
-
-<a id="updatethemerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
+2. See [:material-code-braces: ThemeValuesTypeDef](./type_defs.md#themevaluestypedef) 
 ## UpdateThemeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateThemeRequestRequestTypeDef
+
+def get_value() -> UpdateThemeRequestRequestTypeDef:
+    return {
+        "appId": ...,
+        "environmentName": ...,
+        "id": ...,
+        "updatedTheme": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateThemeRequestRequestTypeDef(TypedDict):
+    appId: str,
+    environmentName: str,
+    id: str,
+    updatedTheme: UpdateThemeDataTypeDef,  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `appId`: `str`
-- `environmentName`: `str`
-- `id`: `str`
-- `updatedTheme`:
-  [UpdateThemeDataTypeDef](./type_defs.md#updatethemedatatypedef)
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updatethemeresponsetypedef"></a>
-
+1. See [:material-code-braces: UpdateThemeDataTypeDef](./type_defs.md#updatethemedatatypedef) 
 ## UpdateThemeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_amplifyuibuilder.type_defs import UpdateThemeResponseTypeDef
+
+def get_value() -> UpdateThemeResponseTypeDef:
+    return {
+        "entity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateThemeResponseTypeDef(TypedDict):
+    entity: ThemeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entity`: [ThemeTypeDef](./type_defs.md#themetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ThemeTypeDef](./type_defs.md#themetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

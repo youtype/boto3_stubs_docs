@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-iotthingsgraph-module"></a>
-
-# Paginators for boto3 IoTThingsGraph module
+# Paginators
 
 > [Index](../README.md) > [IoTThingsGraph](./README.md) > Paginators
 
-Auto-generated documentation for
-[IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
-type annotations stubs module
-[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+!!! note ""
 
-- [Paginators for boto3 IoTThingsGraph module](#paginators-for-boto3-iotthingsgraph-module)
-  - [GetFlowTemplateRevisionsPaginator](#getflowtemplaterevisionspaginator)
-  - [GetSystemTemplateRevisionsPaginator](#getsystemtemplaterevisionspaginator)
-  - [ListFlowExecutionMessagesPaginator](#listflowexecutionmessagespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [SearchEntitiesPaginator](#searchentitiespaginator)
-  - [SearchFlowExecutionsPaginator](#searchflowexecutionspaginator)
-  - [SearchFlowTemplatesPaginator](#searchflowtemplatespaginator)
-  - [SearchSystemInstancesPaginator](#searchsysteminstancespaginator)
-  - [SearchSystemTemplatesPaginator](#searchsystemtemplatespaginator)
-  - [SearchThingsPaginator](#searchthingspaginator)
-
-<a id="getflowtemplaterevisionspaginator"></a>
+    Auto-generated documentation for [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
+    type annotations stubs module [mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 ## GetFlowTemplateRevisionsPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("get_flow_template_revisions")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("get_flow_template_revisions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator
@@ -39,28 +21,40 @@ def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPagin
     return Session().client("iotthingsgraph").get_paginator("get_flow_template_revisions")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.GetFlowTemplateRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetFlowTemplateRevisions)
 
-Arguments for `GetFlowTemplateRevisionsPaginator.paginate` method:
+### paginate
 
-- `id`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetFlowTemplateRevisionsPaginator.paginate` method.
 
-`GetFlowTemplateRevisionsPaginator.paginate` returns
-`_PageIterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    id: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetFlowTemplateRevisionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getsystemtemplaterevisionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetFlowTemplateRevisionsRequestGetFlowTemplateRevisionsPaginateTypeDef](./type_defs.md#getflowtemplaterevisionsrequestgetflowtemplaterevisionspaginatetypedef) 
 ## GetSystemTemplateRevisionsPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("get_system_template_revisions")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("get_system_template_revisions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import GetSystemTemplateRevisionsPaginator
@@ -69,28 +63,40 @@ def get_get_system_template_revisions_paginator() -> GetSystemTemplateRevisionsP
     return Session().client("iotthingsgraph").get_paginator("get_system_template_revisions")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.GetSystemTemplateRevisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.GetSystemTemplateRevisions)
 
-Arguments for `GetSystemTemplateRevisionsPaginator.paginate` method:
+### paginate
 
-- `id`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetSystemTemplateRevisionsPaginator.paginate` method.
 
-`GetSystemTemplateRevisionsPaginator.paginate` returns
-`_PageIterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    id: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetSystemTemplateRevisionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listflowexecutionmessagespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef = {  # (1)
+    "id": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetSystemTemplateRevisionsRequestGetSystemTemplateRevisionsPaginateTypeDef](./type_defs.md#getsystemtemplaterevisionsrequestgetsystemtemplaterevisionspaginatetypedef) 
 ## ListFlowExecutionMessagesPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("list_flow_execution_messages")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("list_flow_execution_messages")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import ListFlowExecutionMessagesPaginator
@@ -99,28 +105,40 @@ def get_list_flow_execution_messages_paginator() -> ListFlowExecutionMessagesPag
     return Session().client("iotthingsgraph").get_paginator("list_flow_execution_messages")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.ListFlowExecutionMessages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListFlowExecutionMessages)
 
-Arguments for `ListFlowExecutionMessagesPaginator.paginate` method:
+### paginate
 
-- `flowExecutionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFlowExecutionMessagesPaginator.paginate` method.
 
-`ListFlowExecutionMessagesPaginator.paginate` returns
-`_PageIterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    flowExecutionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFlowExecutionMessagesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef = {  # (1)
+    "flowExecutionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFlowExecutionMessagesRequestListFlowExecutionMessagesPaginateTypeDef](./type_defs.md#listflowexecutionmessagesrequestlistflowexecutionmessagespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import ListTagsForResourcePaginator
@@ -129,28 +147,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("iotthingsgraph").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `resourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchentitiespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 
 ## SearchEntitiesPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_entities")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_entities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchEntitiesPaginator
@@ -159,32 +189,44 @@ def get_search_entities_paginator() -> SearchEntitiesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_entities")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchEntities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchEntities)
 
-Arguments for `SearchEntitiesPaginator.paginate` method:
+### paginate
 
-- `entityTypes`: `Sequence`\[[EntityTypeType](./literals.md#entitytypetype)\]
-  *(required)*
-- `filters`:
-  `Sequence`\[[EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)\]
-- `namespaceVersion`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchEntitiesPaginator.paginate` method.
 
-`SearchEntitiesPaginator.paginate` returns
-`_PageIterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    entityTypes: Sequence[EntityTypeType],  # (1)
+    filters: Sequence[EntityFilterTypeDef] = ...,  # (2)
+    namespaceVersion: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[SearchEntitiesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="searchflowexecutionspaginator"></a>
+1. See [:material-code-brackets: EntityTypeType](./literals.md#entitytypetype) 
+2. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchEntitiesRequestSearchEntitiesPaginateTypeDef = {  # (1)
+    "entityTypes": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchEntitiesRequestSearchEntitiesPaginateTypeDef](./type_defs.md#searchentitiesrequestsearchentitiespaginatetypedef) 
 ## SearchFlowExecutionsPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_flow_executions")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_flow_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchFlowExecutionsPaginator
@@ -193,31 +235,43 @@ def get_search_flow_executions_paginator() -> SearchFlowExecutionsPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_flow_executions")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchFlowExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowExecutions)
 
-Arguments for `SearchFlowExecutionsPaginator.paginate` method:
+### paginate
 
-- `systemInstanceId`: `str` *(required)*
-- `flowExecutionId`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchFlowExecutionsPaginator.paginate` method.
 
-`SearchFlowExecutionsPaginator.paginate` returns
-`_PageIterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    systemInstanceId: str,
+    flowExecutionId: str = ...,
+    startTime: Union[datetime, str] = ...,
+    endTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SearchFlowExecutionsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchflowtemplatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef = {  # (1)
+    "systemInstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchFlowExecutionsRequestSearchFlowExecutionsPaginateTypeDef](./type_defs.md#searchflowexecutionsrequestsearchflowexecutionspaginatetypedef) 
 ## SearchFlowTemplatesPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_flow_templates")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_flow_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchFlowTemplatesPaginator
@@ -226,29 +280,41 @@ def get_search_flow_templates_paginator() -> SearchFlowTemplatesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_flow_templates")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchFlowTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchFlowTemplates)
 
-Arguments for `SearchFlowTemplatesPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchFlowTemplatesPaginator.paginate` method.
 
-`SearchFlowTemplatesPaginator.paginate` returns
-`_PageIterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[FlowTemplateFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchFlowTemplatesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchsysteminstancespaginator"></a>
+1. See [:material-code-braces: FlowTemplateFilterTypeDef](./type_defs.md#flowtemplatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchFlowTemplatesRequestSearchFlowTemplatesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchFlowTemplatesRequestSearchFlowTemplatesPaginateTypeDef](./type_defs.md#searchflowtemplatesrequestsearchflowtemplatespaginatetypedef) 
 ## SearchSystemInstancesPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_system_instances")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_system_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchSystemInstancesPaginator
@@ -257,29 +323,41 @@ def get_search_system_instances_paginator() -> SearchSystemInstancesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_system_instances")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchSystemInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemInstances)
 
-Arguments for `SearchSystemInstancesPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchSystemInstancesPaginator.paginate` method.
 
-`SearchSystemInstancesPaginator.paginate` returns
-`_PageIterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[SystemInstanceFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchSystemInstancesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchsystemtemplatespaginator"></a>
+1. See [:material-code-braces: SystemInstanceFilterTypeDef](./type_defs.md#systeminstancefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchSystemInstancesRequestSearchSystemInstancesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSystemInstancesRequestSearchSystemInstancesPaginateTypeDef](./type_defs.md#searchsysteminstancesrequestsearchsysteminstancespaginatetypedef) 
 ## SearchSystemTemplatesPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_system_templates")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_system_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchSystemTemplatesPaginator
@@ -288,29 +366,41 @@ def get_search_system_templates_paginator() -> SearchSystemTemplatesPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_system_templates")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchSystemTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchSystemTemplates)
 
-Arguments for `SearchSystemTemplatesPaginator.paginate` method:
+### paginate
 
-- `filters`:
-  `Sequence`\[[SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchSystemTemplatesPaginator.paginate` method.
 
-`SearchSystemTemplatesPaginator.paginate` returns
-`_PageIterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filters: Sequence[SystemTemplateFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchSystemTemplatesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchthingspaginator"></a>
+1. See [:material-code-braces: SystemTemplateFilterTypeDef](./type_defs.md#systemtemplatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchSystemTemplatesRequestSearchSystemTemplatesPaginateTypeDef = {  # (1)
+    "filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSystemTemplatesRequestSearchSystemTemplatesPaginateTypeDef](./type_defs.md#searchsystemtemplatesrequestsearchsystemtemplatespaginatetypedef) 
 ## SearchThingsPaginator
 
-Type annotations for
-`boto3.client("iotthingsgraph").get_paginator("search_things")`.
+Type annotations and code completion for `#!python boto3.client("iotthingsgraph").get_paginator("search_things")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotthingsgraph.paginator import SearchThingsPaginator
@@ -319,15 +409,32 @@ def get_search_things_paginator() -> SearchThingsPaginator:
     return Session().client("iotthingsgraph").get_paginator("search_things")
 ```
 
-Boto3 documentation:
-[IoTThingsGraph.Paginator.SearchThings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph.Paginator.SearchThings)
 
-Arguments for `SearchThingsPaginator.paginate` method:
+### paginate
 
-- `entityId`: `str` *(required)*
-- `namespaceVersion`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchThingsPaginator.paginate` method.
 
-`SearchThingsPaginator.paginate` returns
-`_PageIterator`\[[SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    entityId: str,
+    namespaceVersion: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SearchThingsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SearchThingsResponseTypeDef](./type_defs.md#searchthingsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchThingsRequestSearchThingsPaginateTypeDef = {  # (1)
+    "entityId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchThingsRequestSearchThingsPaginateTypeDef](./type_defs.md#searchthingsrequestsearchthingspaginatetypedef) 

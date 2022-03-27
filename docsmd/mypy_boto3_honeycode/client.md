@@ -1,47 +1,18 @@
-<a id="honeycodeclient-for-boto3-honeycode-module"></a>
-
-# HoneycodeClient for boto3 Honeycode module
+# HoneycodeClient
 
 > [Index](../README.md) > [Honeycode](./README.md) > HoneycodeClient
 
-Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module
-[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+!!! note ""
 
-- [HoneycodeClient for boto3 Honeycode module](#honeycodeclient-for-boto3-honeycode-module)
-  - [HoneycodeClient](#honeycodeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_create_table_rows](#batch_create_table_rows)
-    - [batch_delete_table_rows](#batch_delete_table_rows)
-    - [batch_update_table_rows](#batch_update_table_rows)
-    - [batch_upsert_table_rows](#batch_upsert_table_rows)
-    - [can_paginate](#can_paginate)
-    - [describe_table_data_import_job](#describe_table_data_import_job)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_screen_data](#get_screen_data)
-    - [invoke_screen_automation](#invoke_screen_automation)
-    - [list_table_columns](#list_table_columns)
-    - [list_table_rows](#list_table_rows)
-    - [list_tables](#list_tables)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [query_table_rows](#query_table_rows)
-    - [start_table_data_import_job](#start_table_data_import_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [get_paginator](#get_paginator)
-
-<a id="honeycodeclient"></a>
+    Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+    type annotations stubs module [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ## HoneycodeClient
 
-Type annotations for `boto3.client("honeycode")`
+Type annotations and code completion for `#!python boto3.client("honeycode")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_honeycode.client import HoneycodeClient
 
@@ -49,489 +20,610 @@ def get_honeycode_client() -> HoneycodeClient:
     return Session().client("honeycode")
 ```
 
-Boto3 documentation:
-[Honeycode.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("honeycode").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("honeycode")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.AutomationExecutionException,
+    client.AutomationExecutionTimeoutException,
+    client.ClientError,
+    client.InternalServerException,
+    client.RequestTimeoutException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ServiceUnavailableException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_honeycode.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.AutomationExecutionException`
-- `Exceptions.AutomationExecutionTimeoutException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.RequestTimeoutException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### batch\_create\_table\_rows
 
-HoneycodeClient exceptions.
+The BatchCreateTableRows API allows you to create one or more rows at the end of
+a table in a workbook.
 
-Type annotations for `boto3.client("honeycode").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").batch_create_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.exceptions)
+```python title="Method definition"
+def batch_create_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowsToCreate: Sequence[CreateRowDataTypeDef],  # (1)
+    clientRequestToken: str = ...,
+) -> BatchCreateTableRowsResultTypeDef:  # (2)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef) 
+2. See [:material-code-braces: BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef) 
 
-<a id="batch\_create\_table\_rows"></a>
 
-### batch_create_table_rows
+```python title="Usage example with kwargs"
+kwargs: BatchCreateTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "rowsToCreate": ...,
+}
 
-The BatchCreateTableRows API allows you to create one or more rows at the end
-of a table in a workbook.
+parent.batch_create_table_rows(**kwargs)
+```
 
-Type annotations for `boto3.client("honeycode").batch_create_table_rows`
-method.
+1. See [:material-code-braces: BatchCreateTableRowsRequestRequestTypeDef](./type_defs.md#batchcreatetablerowsrequestrequesttypedef) 
 
-Boto3 documentation:
-[Honeycode.Client.batch_create_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_create_table_rows)
-
-Arguments mapping described in
-[BatchCreateTableRowsRequestRequestTypeDef](./type_defs.md#batchcreatetablerowsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowsToCreate`:
-  `Sequence`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
-  *(required)*
-- `clientRequestToken`: `str`
-
-Returns
-[BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
-
-<a id="batch\_delete\_table\_rows"></a>
-
-### batch_delete_table_rows
+### batch\_delete\_table\_rows
 
 The BatchDeleteTableRows API allows you to delete one or more rows from a table
 in a workbook.
 
-Type annotations for `boto3.client("honeycode").batch_delete_table_rows`
-method.
+Type annotations and code completion for `#!python boto3.client("honeycode").batch_delete_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.batch_delete_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_delete_table_rows)
+```python title="Method definition"
+def batch_delete_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowIds: Sequence[str],
+    clientRequestToken: str = ...,
+) -> BatchDeleteTableRowsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteTableRowsRequestRequestTypeDef](./type_defs.md#batchdeletetablerowsrequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowIds`: `Sequence`\[`str`\] *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "rowIds": ...,
+}
 
-Returns
-[BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
+parent.batch_delete_table_rows(**kwargs)
+```
 
-<a id="batch\_update\_table\_rows"></a>
+1. See [:material-code-braces: BatchDeleteTableRowsRequestRequestTypeDef](./type_defs.md#batchdeletetablerowsrequestrequesttypedef) 
 
-### batch_update_table_rows
+### batch\_update\_table\_rows
 
-The BatchUpdateTableRows API allows you to update one or more rows in a table
-in a workbook.
+The BatchUpdateTableRows API allows you to update one or more rows in a table in
+a workbook.
 
-Type annotations for `boto3.client("honeycode").batch_update_table_rows`
-method.
+Type annotations and code completion for `#!python boto3.client("honeycode").batch_update_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.batch_update_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_update_table_rows)
+```python title="Method definition"
+def batch_update_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowsToUpdate: Sequence[UpdateRowDataTypeDef],  # (1)
+    clientRequestToken: str = ...,
+) -> BatchUpdateTableRowsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateTableRowsRequestRequestTypeDef](./type_defs.md#batchupdatetablerowsrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef) 
+2. See [:material-code-braces: BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowsToUpdate`:
-  `Sequence`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
-  *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "rowsToUpdate": ...,
+}
 
-Returns
-[BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
+parent.batch_update_table_rows(**kwargs)
+```
 
-<a id="batch\_upsert\_table\_rows"></a>
+1. See [:material-code-braces: BatchUpdateTableRowsRequestRequestTypeDef](./type_defs.md#batchupdatetablerowsrequestrequesttypedef) 
 
-### batch_upsert_table_rows
+### batch\_upsert\_table\_rows
 
 The BatchUpsertTableRows API allows you to upsert one or more rows in a table.
 
-Type annotations for `boto3.client("honeycode").batch_upsert_table_rows`
-method.
+Type annotations and code completion for `#!python boto3.client("honeycode").batch_upsert_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.batch_upsert_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.batch_upsert_table_rows)
+```python title="Method definition"
+def batch_upsert_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowsToUpsert: Sequence[UpsertRowDataTypeDef],  # (1)
+    clientRequestToken: str = ...,
+) -> BatchUpsertTableRowsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpsertTableRowsRequestRequestTypeDef](./type_defs.md#batchupserttablerowsrequestrequesttypedef).
+1. See [:material-code-braces: UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef) 
+2. See [:material-code-braces: BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowsToUpsert`:
-  `Sequence`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
-  *(required)*
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: BatchUpsertTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "rowsToUpsert": ...,
+}
 
-Returns
-[BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
+parent.batch_upsert_table_rows(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpsertTableRowsRequestRequestTypeDef](./type_defs.md#batchupserttablerowsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("honeycode").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate)
 
-Boto3 documentation:
-[Honeycode.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### describe\_table\_data\_import\_job
 
-Returns `bool`.
+The DescribeTableDataImportJob API allows you to retrieve the status and details
+of a table data import job.
 
-<a id="describe\_table\_data\_import\_job"></a>
+Type annotations and code completion for `#!python boto3.client("honeycode").describe_table_data_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
 
-### describe_table_data_import_job
+```python title="Method definition"
+def describe_table_data_import_job(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    jobId: str,
+) -> DescribeTableDataImportJobResultTypeDef:  # (1)
+    ...
+```
 
-The DescribeTableDataImportJob API allows you to retrieve the status and
-details of a table data import job.
+1. See [:material-code-braces: DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef) 
 
-Type annotations for `boto3.client("honeycode").describe_table_data_import_job`
-method.
 
-Boto3 documentation:
-[Honeycode.Client.describe_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.describe_table_data_import_job)
+```python title="Usage example with kwargs"
+kwargs: DescribeTableDataImportJobRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "jobId": ...,
+}
 
-Arguments mapping described in
-[DescribeTableDataImportJobRequestRequestTypeDef](./type_defs.md#describetabledataimportjobrequestrequesttypedef).
+parent.describe_table_data_import_job(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DescribeTableDataImportJobRequestRequestTypeDef](./type_defs.md#describetabledataimportjobrequestrequesttypedef) 
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `jobId`: `str` *(required)*
-
-Returns
-[DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
-
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("honeycode").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Honeycode.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_screen\_data
 
-Returns `str`.
+The GetScreenData API allows retrieval of data from a screen in a Honeycode app.
 
-<a id="get\_screen\_data"></a>
+Type annotations and code completion for `#!python boto3.client("honeycode").get_screen_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
 
-### get_screen_data
+```python title="Method definition"
+def get_screen_data(
+    self,
+    *,
+    workbookId: str,
+    appId: str,
+    screenId: str,
+    variables: Mapping[str, VariableValueTypeDef] = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> GetScreenDataResultTypeDef:  # (2)
+    ...
+```
 
-The GetScreenData API allows retrieval of data from a screen in a Honeycode
-app.
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
+2. See [:material-code-braces: GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef) 
 
-Type annotations for `boto3.client("honeycode").get_screen_data` method.
 
-Boto3 documentation:
-[Honeycode.Client.get_screen_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.get_screen_data)
+```python title="Usage example with kwargs"
+kwargs: GetScreenDataRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "appId": ...,
+    "screenId": ...,
+}
 
-Arguments mapping described in
-[GetScreenDataRequestRequestTypeDef](./type_defs.md#getscreendatarequestrequesttypedef).
+parent.get_screen_data(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetScreenDataRequestRequestTypeDef](./type_defs.md#getscreendatarequestrequesttypedef) 
 
-- `workbookId`: `str` *(required)*
-- `appId`: `str` *(required)*
-- `screenId`: `str` *(required)*
-- `variables`: `Mapping`\[`str`,
-  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-Returns
-[GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
-
-<a id="invoke\_screen\_automation"></a>
-
-### invoke_screen_automation
+### invoke\_screen\_automation
 
 The InvokeScreenAutomation API allows invoking an action defined in a screen in
 a Honeycode app.
 
-Type annotations for `boto3.client("honeycode").invoke_screen_automation`
-method.
+Type annotations and code completion for `#!python boto3.client("honeycode").invoke_screen_automation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
 
-Boto3 documentation:
-[Honeycode.Client.invoke_screen_automation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.invoke_screen_automation)
+```python title="Method definition"
+def invoke_screen_automation(
+    self,
+    *,
+    workbookId: str,
+    appId: str,
+    screenId: str,
+    screenAutomationId: str,
+    variables: Mapping[str, VariableValueTypeDef] = ...,  # (1)
+    rowId: str = ...,
+    clientRequestToken: str = ...,
+) -> InvokeScreenAutomationResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[InvokeScreenAutomationRequestRequestTypeDef](./type_defs.md#invokescreenautomationrequestrequesttypedef).
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
+2. See [:material-code-braces: InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `appId`: `str` *(required)*
-- `screenId`: `str` *(required)*
-- `screenAutomationId`: `str` *(required)*
-- `variables`: `Mapping`\[`str`,
-  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
-- `rowId`: `str`
-- `clientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: InvokeScreenAutomationRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "appId": ...,
+    "screenId": ...,
+    "screenAutomationId": ...,
+}
 
-Returns
-[InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
+parent.invoke_screen_automation(**kwargs)
+```
 
-<a id="list\_table\_columns"></a>
+1. See [:material-code-braces: InvokeScreenAutomationRequestRequestTypeDef](./type_defs.md#invokescreenautomationrequestrequesttypedef) 
 
-### list_table_columns
+### list\_table\_columns
 
 The ListTableColumns API allows you to retrieve a list of all the columns in a
 table in a workbook.
 
-Type annotations for `boto3.client("honeycode").list_table_columns` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").list_table_columns` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
 
-Boto3 documentation:
-[Honeycode.Client.list_table_columns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_columns)
+```python title="Method definition"
+def list_table_columns(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    nextToken: str = ...,
+) -> ListTableColumnsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTableColumnsRequestRequestTypeDef](./type_defs.md#listtablecolumnsrequestrequesttypedef).
+1. See [:material-code-braces: ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTableColumnsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+}
 
-Returns
-[ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
+parent.list_table_columns(**kwargs)
+```
 
-<a id="list\_table\_rows"></a>
+1. See [:material-code-braces: ListTableColumnsRequestRequestTypeDef](./type_defs.md#listtablecolumnsrequestrequesttypedef) 
 
-### list_table_rows
+### list\_table\_rows
 
 The ListTableRows API allows you to retrieve a list of all the rows in a table
 in a workbook.
 
-Type annotations for `boto3.client("honeycode").list_table_rows` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").list_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.list_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_table_rows)
+```python title="Method definition"
+def list_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    rowIds: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTableRowsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTableRowsRequestRequestTypeDef](./type_defs.md#listtablerowsrequestrequesttypedef).
+1. See [:material-code-braces: ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `rowIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+}
 
-Returns
-[ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
+parent.list_table_rows(**kwargs)
+```
 
-<a id="list\_tables"></a>
+1. See [:material-code-braces: ListTableRowsRequestRequestTypeDef](./type_defs.md#listtablerowsrequestrequesttypedef) 
 
-### list_tables
+### list\_tables
 
 The ListTables API allows you to retrieve a list of all the tables in a
 workbook.
 
-Type annotations for `boto3.client("honeycode").list_tables` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").list_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
 
-Boto3 documentation:
-[Honeycode.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tables)
+```python title="Method definition"
+def list_tables(
+    self,
+    *,
+    workbookId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTablesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
+1. See [:material-code-braces: ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+}
 
-Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
+parent.list_tables(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 The ListTagsForResource API allows you to return a resource's tags.
 
-Type annotations for `boto3.client("honeycode").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Honeycode.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="query\_table\_rows"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### query_table_rows
+### query\_table\_rows
 
 The QueryTableRows API allows you to use a filter formula to query for specific
 rows in a table.
 
-Type annotations for `boto3.client("honeycode").query_table_rows` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").query_table_rows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
 
-Boto3 documentation:
-[Honeycode.Client.query_table_rows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.query_table_rows)
+```python title="Method definition"
+def query_table_rows(
+    self,
+    *,
+    workbookId: str,
+    tableId: str,
+    filterFormula: FilterTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> QueryTableRowsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[QueryTableRowsRequestRequestTypeDef](./type_defs.md#querytablerowsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `tableId`: `str` *(required)*
-- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef) *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: QueryTableRowsRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "tableId": ...,
+    "filterFormula": ...,
+}
 
-Returns
-[QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
+parent.query_table_rows(**kwargs)
+```
 
-<a id="start\_table\_data\_import\_job"></a>
+1. See [:material-code-braces: QueryTableRowsRequestRequestTypeDef](./type_defs.md#querytablerowsrequestrequesttypedef) 
 
-### start_table_data_import_job
+### start\_table\_data\_import\_job
 
 The StartTableDataImportJob API allows you to start an import job on a table.
 
-Type annotations for `boto3.client("honeycode").start_table_data_import_job`
-method.
+Type annotations and code completion for `#!python boto3.client("honeycode").start_table_data_import_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
 
-Boto3 documentation:
-[Honeycode.Client.start_table_data_import_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.start_table_data_import_job)
+```python title="Method definition"
+def start_table_data_import_job(
+    self,
+    *,
+    workbookId: str,
+    dataSource: ImportDataSourceTypeDef,  # (1)
+    dataFormat: ImportSourceDataFormatType,  # (2)
+    destinationTableId: str,
+    importOptions: ImportOptionsTypeDef,  # (3)
+    clientRequestToken: str,
+) -> StartTableDataImportJobResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[StartTableDataImportJobRequestRequestTypeDef](./type_defs.md#starttabledataimportjobrequestrequesttypedef).
+1. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
+2. See [:material-code-brackets: ImportSourceDataFormatType](./literals.md#importsourcedataformattype) 
+3. See [:material-code-braces: ImportOptionsTypeDef](./type_defs.md#importoptionstypedef) 
+4. See [:material-code-braces: StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef) 
 
-Keyword-only arguments:
 
-- `workbookId`: `str` *(required)*
-- `dataSource`:
-  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
-  *(required)*
-- `dataFormat`: `Literal['DELIMITED_TEXT']` (see
-  [ImportSourceDataFormatType](./literals.md#importsourcedataformattype))
-  *(required)*
-- `destinationTableId`: `str` *(required)*
-- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
-  *(required)*
-- `clientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartTableDataImportJobRequestRequestTypeDef = {  # (1)
+    "workbookId": ...,
+    "dataSource": ...,
+    "dataFormat": ...,
+    "destinationTableId": ...,
+    "importOptions": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
+parent.start_table_data_import_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartTableDataImportJobRequestRequestTypeDef](./type_defs.md#starttabledataimportjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 The TagResource API allows you to add tags to an ARN-able resource.
 
-Type annotations for `boto3.client("honeycode").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.tag_resource)
 
-Boto3 documentation:
-[Honeycode.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 The UntagResource API allows you to removes tags from an ARN-able resource.
 
-Type annotations for `boto3.client("honeycode").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("honeycode").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.untag_resource)
 
-Boto3 documentation:
-[Honeycode.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("honeycode").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("honeycode").get_paginator` method with overloads.
 
-- `client.get_paginator("list_table_columns")` ->
-  [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
-- `client.get_paginator("list_table_rows")` ->
-  [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
-- `client.get_paginator("list_tables")` ->
-  [ListTablesPaginator](./paginators.md#listtablespaginator)
-- `client.get_paginator("query_table_rows")` ->
-  [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
+- `client.get_paginator("list_table_columns")` -> [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
+- `client.get_paginator("list_table_rows")` -> [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
+- `client.get_paginator("list_tables")` -> [ListTablesPaginator](./paginators.md#listtablespaginator)
+- `client.get_paginator("query_table_rows")` -> [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
+
+
+

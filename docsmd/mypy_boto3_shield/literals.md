@@ -1,570 +1,584 @@
-<a id="literals-for-boto3-shield-module"></a>
-
-# Literals for boto3 Shield module
+# Literals
 
 > [Index](../README.md) > [Shield](./README.md) > Literals
 
-Auto-generated documentation for
-[Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
-type annotations stubs module
-[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
+!!! note ""
 
-- [Literals for boto3 Shield module](#literals-for-boto3-shield-module)
-  - [ApplicationLayerAutomaticResponseStatusType](#applicationlayerautomaticresponsestatustype)
-  - [AttackLayerType](#attacklayertype)
-  - [AttackPropertyIdentifierType](#attackpropertyidentifiertype)
-  - [AutoRenewType](#autorenewtype)
-  - [ListAttacksPaginatorName](#listattackspaginatorname)
-  - [ListProtectionsPaginatorName](#listprotectionspaginatorname)
-  - [ProactiveEngagementStatusType](#proactiveengagementstatustype)
-  - [ProtectedResourceTypeType](#protectedresourcetypetype)
-  - [ProtectionGroupAggregationType](#protectiongroupaggregationtype)
-  - [ProtectionGroupPatternType](#protectiongrouppatterntype)
-  - [SubResourceTypeType](#subresourcetypetype)
-  - [SubscriptionStateType](#subscriptionstatetype)
-  - [UnitType](#unittype)
-  - [ShieldServiceName](#shieldservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="applicationlayerautomaticresponsestatustype"></a>
+    Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+    type annotations stubs module [mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ## ApplicationLayerAutomaticResponseStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ApplicationLayerAutomaticResponseStatusType
+
+def get_value() -> ApplicationLayerAutomaticResponseStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="attacklayertype"></a>
-
+```python title="Definition"
+ApplicationLayerAutomaticResponseStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## AttackLayerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import AttackLayerType
+
+def get_value() -> AttackLayerType:
+    return "APPLICATION"
 ```
 
-Values:
-
-- `APPLICATION`
-- `NETWORK`
-
-<a id="attackpropertyidentifiertype"></a>
-
+```python title="Definition"
+AttackLayerType = Literal[
+    "APPLICATION",
+    "NETWORK",
+]
+```
 ## AttackPropertyIdentifierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import AttackPropertyIdentifierType
+
+def get_value() -> AttackPropertyIdentifierType:
+    return "DESTINATION_URL"
 ```
 
-Values:
-
-- `DESTINATION_URL`
-- `REFERRER`
-- `SOURCE_ASN`
-- `SOURCE_COUNTRY`
-- `SOURCE_IP_ADDRESS`
-- `SOURCE_USER_AGENT`
-- `WORDPRESS_PINGBACK_REFLECTOR`
-- `WORDPRESS_PINGBACK_SOURCE`
-
-<a id="autorenewtype"></a>
-
+```python title="Definition"
+AttackPropertyIdentifierType = Literal[
+    "DESTINATION_URL",
+    "REFERRER",
+    "SOURCE_ASN",
+    "SOURCE_COUNTRY",
+    "SOURCE_IP_ADDRESS",
+    "SOURCE_USER_AGENT",
+    "WORDPRESS_PINGBACK_REFLECTOR",
+    "WORDPRESS_PINGBACK_SOURCE",
+]
+```
 ## AutoRenewType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import AutoRenewType
+
+def get_value() -> AutoRenewType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="listattackspaginatorname"></a>
-
+```python title="Definition"
+AutoRenewType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ListAttacksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ListAttacksPaginatorName
+
+def get_value() -> ListAttacksPaginatorName:
+    return "list_attacks"
 ```
 
-Values:
-
-- `list_attacks`
-
-<a id="listprotectionspaginatorname"></a>
-
+```python title="Definition"
+ListAttacksPaginatorName = Literal[
+    "list_attacks",
+]
+```
 ## ListProtectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ListProtectionsPaginatorName
+
+def get_value() -> ListProtectionsPaginatorName:
+    return "list_protections"
 ```
 
-Values:
-
-- `list_protections`
-
-<a id="proactiveengagementstatustype"></a>
-
+```python title="Definition"
+ListProtectionsPaginatorName = Literal[
+    "list_protections",
+]
+```
 ## ProactiveEngagementStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ProactiveEngagementStatusType
+
+def get_value() -> ProactiveEngagementStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-- `PENDING`
-
-<a id="protectedresourcetypetype"></a>
-
+```python title="Definition"
+ProactiveEngagementStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+    "PENDING",
+]
+```
 ## ProtectedResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ProtectedResourceTypeType
+
+def get_value() -> ProtectedResourceTypeType:
+    return "APPLICATION_LOAD_BALANCER"
 ```
 
-Values:
-
-- `APPLICATION_LOAD_BALANCER`
-- `CLASSIC_LOAD_BALANCER`
-- `CLOUDFRONT_DISTRIBUTION`
-- `ELASTIC_IP_ALLOCATION`
-- `GLOBAL_ACCELERATOR`
-- `ROUTE_53_HOSTED_ZONE`
-
-<a id="protectiongroupaggregationtype"></a>
-
+```python title="Definition"
+ProtectedResourceTypeType = Literal[
+    "APPLICATION_LOAD_BALANCER",
+    "CLASSIC_LOAD_BALANCER",
+    "CLOUDFRONT_DISTRIBUTION",
+    "ELASTIC_IP_ALLOCATION",
+    "GLOBAL_ACCELERATOR",
+    "ROUTE_53_HOSTED_ZONE",
+]
+```
 ## ProtectionGroupAggregationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ProtectionGroupAggregationType
+
+def get_value() -> ProtectionGroupAggregationType:
+    return "MAX"
 ```
 
-Values:
-
-- `MAX`
-- `MEAN`
-- `SUM`
-
-<a id="protectiongrouppatterntype"></a>
-
+```python title="Definition"
+ProtectionGroupAggregationType = Literal[
+    "MAX",
+    "MEAN",
+    "SUM",
+]
+```
 ## ProtectionGroupPatternType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ProtectionGroupPatternType
+
+def get_value() -> ProtectionGroupPatternType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `ARBITRARY`
-- `BY_RESOURCE_TYPE`
-
-<a id="subresourcetypetype"></a>
-
+```python title="Definition"
+ProtectionGroupPatternType = Literal[
+    "ALL",
+    "ARBITRARY",
+    "BY_RESOURCE_TYPE",
+]
+```
 ## SubResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import SubResourceTypeType
+
+def get_value() -> SubResourceTypeType:
+    return "IP"
 ```
 
-Values:
-
-- `IP`
-- `URL`
-
-<a id="subscriptionstatetype"></a>
-
+```python title="Definition"
+SubResourceTypeType = Literal[
+    "IP",
+    "URL",
+]
+```
 ## SubscriptionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import SubscriptionStateType
+
+def get_value() -> SubscriptionStateType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `INACTIVE`
-
-<a id="unittype"></a>
-
+```python title="Definition"
+SubscriptionStateType = Literal[
+    "ACTIVE",
+    "INACTIVE",
+]
+```
 ## UnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import UnitType
+
+def get_value() -> UnitType:
+    return "BITS"
 ```
 
-Values:
-
-- `BITS`
-- `BYTES`
-- `PACKETS`
-- `REQUESTS`
-
-<a id="shieldservicename"></a>
-
+```python title="Definition"
+UnitType = Literal[
+    "BITS",
+    "BYTES",
+    "PACKETS",
+    "REQUESTS",
+]
+```
 ## ShieldServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ShieldServiceName
+
+def get_value() -> ShieldServiceName:
+    return "shield"
 ```
 
-Values:
-
-- `shield`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ShieldServiceName = Literal[
+    "shield",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_shield.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_attacks"
 ```
 
-Values:
-
-- `list_attacks`
-- `list_protections`
+```python title="Definition"
+PaginatorName = Literal[
+    "list_attacks",
+    "list_protections",
+]
+```

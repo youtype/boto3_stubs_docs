@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-lookoutmetrics-module"></a>
-
-# Type annotations for boto3 LookoutMetrics module
+#  LookoutMetrics module
 
 > [Index](../README.md) > LookoutMetrics
 
-Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module
-[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+!!! note ""
 
-- [Type annotations for boto3 LookoutMetrics module](#type-annotations-for-boto3-lookoutmetrics-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LookoutMetricsClient](#lookoutmetricsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+    type annotations stubs module [mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LookoutMetrics`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[lookoutmetrics]'
 python -m pip install mypy-boto3-lookoutmetrics
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,85 +42,41 @@ python -m pip install mypy-boto3-lookoutmetrics
 python -m pip uninstall -y mypy-boto3-lookoutmetrics
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="lookoutmetricsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LookoutMetricsClient
 
-Type annotations for `boto3.client("lookoutmetrics")` as
-[LookoutMetricsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("lookoutmetrics")` as [LookoutMetricsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_lookoutmetrics.client import LookoutMetricsClient
+
+def get_client() -> LookoutMetricsClient:
+    return Session().cleint("lookoutmetrics")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [activate_anomaly_detector](./client.md#activate_anomaly_detector)
-- [back_test_anomaly_detector](./client.md#back_test_anomaly_detector)
-- [can_paginate](./client.md#can_paginate)
-- [create_alert](./client.md#create_alert)
-- [create_anomaly_detector](./client.md#create_anomaly_detector)
-- [create_metric_set](./client.md#create_metric_set)
-- [deactivate_anomaly_detector](./client.md#deactivate_anomaly_detector)
-- [delete_alert](./client.md#delete_alert)
-- [delete_anomaly_detector](./client.md#delete_anomaly_detector)
-- [describe_alert](./client.md#describe_alert)
-- [describe_anomaly_detection_executions](./client.md#describe_anomaly_detection_executions)
-- [describe_anomaly_detector](./client.md#describe_anomaly_detector)
-- [describe_metric_set](./client.md#describe_metric_set)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_anomaly_group](./client.md#get_anomaly_group)
-- [get_feedback](./client.md#get_feedback)
-- [get_sample_data](./client.md#get_sample_data)
-- [list_alerts](./client.md#list_alerts)
-- [list_anomaly_detectors](./client.md#list_anomaly_detectors)
-- [list_anomaly_group_related_metrics](./client.md#list_anomaly_group_related_metrics)
-- [list_anomaly_group_summaries](./client.md#list_anomaly_group_summaries)
-- [list_anomaly_group_time_series](./client.md#list_anomaly_group_time_series)
-- [list_metric_sets](./client.md#list_metric_sets)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_feedback](./client.md#put_feedback)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_anomaly_detector](./client.md#update_anomaly_detector)
-- [update_metric_set](./client.md#update_metric_set)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-LookoutMetricsClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- TooManyRequestsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType
 
-```python
-from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
+def get_value() -> AggregationFunctionType:
+    return "AVG"
 ```
 
 - [AggregationFunctionType](./literals.md#aggregationfunctiontype)
@@ -157,18 +92,22 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [LookoutMetricsServiceName](./literals.md#lookoutmetricsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef
 
-```python
-from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef, ...
+def get_value() -> ActionTypeDef:
+    return {
+        "SNSConfiguration": ...,
+    }
 ```
 
 - [ActionTypeDef](./type_defs.md#actiontypedef)
@@ -255,3 +194,4 @@ from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef, ...
 - [UpdateMetricSetRequestRequestTypeDef](./type_defs.md#updatemetricsetrequestrequesttypedef)
 - [UpdateMetricSetResponseTypeDef](./type_defs.md#updatemetricsetresponsetypedef)
 - [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
+

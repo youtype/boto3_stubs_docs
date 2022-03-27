@@ -1,56 +1,18 @@
-<a id="batchclient-for-boto3-batch-module"></a>
-
-# BatchClient for boto3 Batch module
+# BatchClient
 
 > [Index](../README.md) > [Batch](./README.md) > BatchClient
 
-Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module
-[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
+!!! note ""
 
-- [BatchClient for boto3 Batch module](#batchclient-for-boto3-batch-module)
-  - [BatchClient](#batchclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_job](#cancel_job)
-    - [create_compute_environment](#create_compute_environment)
-    - [create_job_queue](#create_job_queue)
-    - [create_scheduling_policy](#create_scheduling_policy)
-    - [delete_compute_environment](#delete_compute_environment)
-    - [delete_job_queue](#delete_job_queue)
-    - [delete_scheduling_policy](#delete_scheduling_policy)
-    - [deregister_job_definition](#deregister_job_definition)
-    - [describe_compute_environments](#describe_compute_environments)
-    - [describe_job_definitions](#describe_job_definitions)
-    - [describe_job_queues](#describe_job_queues)
-    - [describe_jobs](#describe_jobs)
-    - [describe_scheduling_policies](#describe_scheduling_policies)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_jobs](#list_jobs)
-    - [list_scheduling_policies](#list_scheduling_policies)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_job_definition](#register_job_definition)
-    - [submit_job](#submit_job)
-    - [tag_resource](#tag_resource)
-    - [terminate_job](#terminate_job)
-    - [untag_resource](#untag_resource)
-    - [update_compute_environment](#update_compute_environment)
-    - [update_job_queue](#update_job_queue)
-    - [update_scheduling_policy](#update_scheduling_policy)
-    - [get_paginator](#get_paginator)
-
-<a id="batchclient"></a>
+    Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+    type annotations stubs module [mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 ## BatchClient
 
-Type annotations for `boto3.client("batch")`
+Type annotations and code completion for `#!python boto3.client("batch")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_batch.client import BatchClient
 
@@ -58,671 +20,868 @@ def get_batch_client() -> BatchClient:
     return Session().client("batch")
 ```
 
-Boto3 documentation:
-[Batch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("batch").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("batch")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ClientException,
+    client.ServerException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_batch.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ClientException`
-- `Exceptions.ServerException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-BatchClient exceptions.
-
-Type annotations for `boto3.client("batch").exceptions` method.
-
-Boto3 documentation:
-[Batch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("batch").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("batch").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate)
 
-Boto3 documentation:
-[Batch.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_job"></a>
-
-### cancel_job
+### cancel\_job
 
 Cancels a job in an Batch job queue.
 
-Type annotations for `boto3.client("batch").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("batch").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
 
-Boto3 documentation:
-[Batch.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    jobId: str,
+    reason: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `reason`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "reason": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_job(**kwargs)
+```
 
-<a id="create\_compute\_environment"></a>
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
 
-### create_compute_environment
+### create\_compute\_environment
 
 Creates an Batch compute environment.
 
-Type annotations for `boto3.client("batch").create_compute_environment` method.
+Type annotations and code completion for `#!python boto3.client("batch").create_compute_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
 
-Boto3 documentation:
-[Batch.Client.create_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_compute_environment)
+```python title="Method definition"
+def create_compute_environment(
+    self,
+    *,
+    computeEnvironmentName: str,
+    type: CETypeType,  # (1)
+    state: CEStateType = ...,  # (2)
+    unmanagedvCpus: int = ...,
+    computeResources: ComputeResourceTypeDef = ...,  # (3)
+    serviceRole: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateComputeEnvironmentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#createcomputeenvironmentrequestrequesttypedef).
+1. See [:material-code-brackets: CETypeType](./literals.md#cetypetype) 
+2. See [:material-code-brackets: CEStateType](./literals.md#cestatetype) 
+3. See [:material-code-braces: ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef) 
+4. See [:material-code-braces: CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `computeEnvironmentName`: `str` *(required)*
-- `type`: [CETypeType](./literals.md#cetypetype) *(required)*
-- `state`: [CEStateType](./literals.md#cestatetype)
-- `unmanagedvCpus`: `int`
-- `computeResources`:
-  [ComputeResourceTypeDef](./type_defs.md#computeresourcetypedef)
-- `serviceRole`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateComputeEnvironmentRequestRequestTypeDef = {  # (1)
+    "computeEnvironmentName": ...,
+    "type": ...,
+}
 
-Returns
-[CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
+parent.create_compute_environment(**kwargs)
+```
 
-<a id="create\_job\_queue"></a>
+1. See [:material-code-braces: CreateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#createcomputeenvironmentrequestrequesttypedef) 
 
-### create_job_queue
+### create\_job\_queue
 
 Creates an Batch job queue.
 
-Type annotations for `boto3.client("batch").create_job_queue` method.
+Type annotations and code completion for `#!python boto3.client("batch").create_job_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
 
-Boto3 documentation:
-[Batch.Client.create_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_job_queue)
+```python title="Method definition"
+def create_job_queue(
+    self,
+    *,
+    jobQueueName: str,
+    priority: int,
+    computeEnvironmentOrder: Sequence[ComputeEnvironmentOrderTypeDef],  # (1)
+    state: JQStateType = ...,  # (2)
+    schedulingPolicyArn: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateJobQueueResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobQueueRequestRequestTypeDef](./type_defs.md#createjobqueuerequestrequesttypedef).
+1. See [:material-code-braces: ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef) 
+2. See [:material-code-brackets: JQStateType](./literals.md#jqstatetype) 
+3. See [:material-code-braces: CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobQueueName`: `str` *(required)*
-- `priority`: `int` *(required)*
-- `computeEnvironmentOrder`:
-  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
-  *(required)*
-- `state`: [JQStateType](./literals.md#jqstatetype)
-- `schedulingPolicyArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateJobQueueRequestRequestTypeDef = {  # (1)
+    "jobQueueName": ...,
+    "priority": ...,
+    "computeEnvironmentOrder": ...,
+}
 
-Returns
-[CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
+parent.create_job_queue(**kwargs)
+```
 
-<a id="create\_scheduling\_policy"></a>
+1. See [:material-code-braces: CreateJobQueueRequestRequestTypeDef](./type_defs.md#createjobqueuerequestrequesttypedef) 
 
-### create_scheduling_policy
+### create\_scheduling\_policy
 
 Creates an Batch scheduling policy.
 
-Type annotations for `boto3.client("batch").create_scheduling_policy` method.
+Type annotations and code completion for `#!python boto3.client("batch").create_scheduling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_scheduling_policy)
 
-Boto3 documentation:
-[Batch.Client.create_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.create_scheduling_policy)
+```python title="Method definition"
+def create_scheduling_policy(
+    self,
+    *,
+    name: str,
+    fairsharePolicy: FairsharePolicyTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateSchedulingPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#createschedulingpolicyrequestrequesttypedef).
+1. See [:material-code-braces: FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef) 
+2. See [:material-code-braces: CreateSchedulingPolicyResponseTypeDef](./type_defs.md#createschedulingpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `fairsharePolicy`:
-  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSchedulingPolicyRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateSchedulingPolicyResponseTypeDef](./type_defs.md#createschedulingpolicyresponsetypedef).
+parent.create_scheduling_policy(**kwargs)
+```
 
-<a id="delete\_compute\_environment"></a>
+1. See [:material-code-braces: CreateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#createschedulingpolicyrequestrequesttypedef) 
 
-### delete_compute_environment
+### delete\_compute\_environment
 
 Deletes an Batch compute environment.
 
-Type annotations for `boto3.client("batch").delete_compute_environment` method.
+Type annotations and code completion for `#!python boto3.client("batch").delete_compute_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
 
-Boto3 documentation:
-[Batch.Client.delete_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_compute_environment)
+```python title="Method definition"
+def delete_compute_environment(
+    self,
+    *,
+    computeEnvironment: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteComputeEnvironmentRequestRequestTypeDef](./type_defs.md#deletecomputeenvironmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `computeEnvironment`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteComputeEnvironmentRequestRequestTypeDef = {  # (1)
+    "computeEnvironment": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_compute_environment(**kwargs)
+```
 
-<a id="delete\_job\_queue"></a>
+1. See [:material-code-braces: DeleteComputeEnvironmentRequestRequestTypeDef](./type_defs.md#deletecomputeenvironmentrequestrequesttypedef) 
 
-### delete_job_queue
+### delete\_job\_queue
 
 Deletes the specified job queue.
 
-Type annotations for `boto3.client("batch").delete_job_queue` method.
+Type annotations and code completion for `#!python boto3.client("batch").delete_job_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
 
-Boto3 documentation:
-[Batch.Client.delete_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_job_queue)
+```python title="Method definition"
+def delete_job_queue(
+    self,
+    *,
+    jobQueue: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobQueueRequestRequestTypeDef](./type_defs.md#deletejobqueuerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobQueue`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobQueueRequestRequestTypeDef = {  # (1)
+    "jobQueue": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_job_queue(**kwargs)
+```
 
-<a id="delete\_scheduling\_policy"></a>
+1. See [:material-code-braces: DeleteJobQueueRequestRequestTypeDef](./type_defs.md#deletejobqueuerequestrequesttypedef) 
 
-### delete_scheduling_policy
+### delete\_scheduling\_policy
 
 Deletes the specified scheduling policy.
 
-Type annotations for `boto3.client("batch").delete_scheduling_policy` method.
+Type annotations and code completion for `#!python boto3.client("batch").delete_scheduling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_scheduling_policy)
 
-Boto3 documentation:
-[Batch.Client.delete_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.delete_scheduling_policy)
+```python title="Method definition"
+def delete_scheduling_policy(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSchedulingPolicyRequestRequestTypeDef](./type_defs.md#deleteschedulingpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSchedulingPolicyRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scheduling_policy(**kwargs)
+```
 
-<a id="deregister\_job\_definition"></a>
+1. See [:material-code-braces: DeleteSchedulingPolicyRequestRequestTypeDef](./type_defs.md#deleteschedulingpolicyrequestrequesttypedef) 
 
-### deregister_job_definition
+### deregister\_job\_definition
 
 Deregisters an Batch job definition.
 
-Type annotations for `boto3.client("batch").deregister_job_definition` method.
+Type annotations and code completion for `#!python boto3.client("batch").deregister_job_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
 
-Boto3 documentation:
-[Batch.Client.deregister_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.deregister_job_definition)
+```python title="Method definition"
+def deregister_job_definition(
+    self,
+    *,
+    jobDefinition: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterJobDefinitionRequestRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobDefinition`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterJobDefinitionRequestRequestTypeDef = {  # (1)
+    "jobDefinition": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_job_definition(**kwargs)
+```
 
-<a id="describe\_compute\_environments"></a>
+1. See [:material-code-braces: DeregisterJobDefinitionRequestRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequestrequesttypedef) 
 
-### describe_compute_environments
+### describe\_compute\_environments
 
 Describes one or more of your compute environments.
 
-Type annotations for `boto3.client("batch").describe_compute_environments`
-method.
+Type annotations and code completion for `#!python boto3.client("batch").describe_compute_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
 
-Boto3 documentation:
-[Batch.Client.describe_compute_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_compute_environments)
+```python title="Method definition"
+def describe_compute_environments(
+    self,
+    *,
+    computeEnvironments: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeComputeEnvironmentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeComputeEnvironmentsRequestRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `computeEnvironments`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeComputeEnvironmentsRequestRequestTypeDef = {  # (1)
+    "computeEnvironments": ...,
+}
 
-Returns
-[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef).
+parent.describe_compute_environments(**kwargs)
+```
 
-<a id="describe\_job\_definitions"></a>
+1. See [:material-code-braces: DescribeComputeEnvironmentsRequestRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequestrequesttypedef) 
 
-### describe_job_definitions
+### describe\_job\_definitions
 
 Describes a list of job definitions.
 
-Type annotations for `boto3.client("batch").describe_job_definitions` method.
+Type annotations and code completion for `#!python boto3.client("batch").describe_job_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
 
-Boto3 documentation:
-[Batch.Client.describe_job_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_definitions)
+```python title="Method definition"
+def describe_job_definitions(
+    self,
+    *,
+    jobDefinitions: Sequence[str] = ...,
+    maxResults: int = ...,
+    jobDefinitionName: str = ...,
+    status: str = ...,
+    nextToken: str = ...,
+) -> DescribeJobDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobDefinitionsRequestRequestTypeDef](./type_defs.md#describejobdefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobDefinitions`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `jobDefinitionName`: `str`
-- `status`: `str`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobDefinitionsRequestRequestTypeDef = {  # (1)
+    "jobDefinitions": ...,
+}
 
-Returns
-[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef).
+parent.describe_job_definitions(**kwargs)
+```
 
-<a id="describe\_job\_queues"></a>
+1. See [:material-code-braces: DescribeJobDefinitionsRequestRequestTypeDef](./type_defs.md#describejobdefinitionsrequestrequesttypedef) 
 
-### describe_job_queues
+### describe\_job\_queues
 
 Describes one or more of your job queues.
 
-Type annotations for `boto3.client("batch").describe_job_queues` method.
+Type annotations and code completion for `#!python boto3.client("batch").describe_job_queues` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
 
-Boto3 documentation:
-[Batch.Client.describe_job_queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_job_queues)
+```python title="Method definition"
+def describe_job_queues(
+    self,
+    *,
+    jobQueues: Sequence[str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> DescribeJobQueuesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobQueuesRequestRequestTypeDef](./type_defs.md#describejobqueuesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobQueues`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobQueuesRequestRequestTypeDef = {  # (1)
+    "jobQueues": ...,
+}
 
-Returns
-[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef).
+parent.describe_job_queues(**kwargs)
+```
 
-<a id="describe\_jobs"></a>
+1. See [:material-code-braces: DescribeJobQueuesRequestRequestTypeDef](./type_defs.md#describejobqueuesrequestrequesttypedef) 
 
-### describe_jobs
+### describe\_jobs
 
 .
 
-Type annotations for `boto3.client("batch").describe_jobs` method.
+Type annotations and code completion for `#!python boto3.client("batch").describe_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
 
-Boto3 documentation:
-[Batch.Client.describe_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_jobs)
+```python title="Method definition"
+def describe_jobs(
+    self,
+    *,
+    jobs: Sequence[str],
+) -> DescribeJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobs`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobsRequestRequestTypeDef = {  # (1)
+    "jobs": ...,
+}
 
-Returns
-[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
+parent.describe_jobs(**kwargs)
+```
 
-<a id="describe\_scheduling\_policies"></a>
+1. See [:material-code-braces: DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef) 
 
-### describe_scheduling_policies
+### describe\_scheduling\_policies
 
 Describes one or more of your scheduling policies.
 
-Type annotations for `boto3.client("batch").describe_scheduling_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("batch").describe_scheduling_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_scheduling_policies)
 
-Boto3 documentation:
-[Batch.Client.describe_scheduling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.describe_scheduling_policies)
+```python title="Method definition"
+def describe_scheduling_policies(
+    self,
+    *,
+    arns: Sequence[str],
+) -> DescribeSchedulingPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#describeschedulingpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSchedulingPoliciesResponseTypeDef](./type_defs.md#describeschedulingpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arns`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSchedulingPoliciesRequestRequestTypeDef = {  # (1)
+    "arns": ...,
+}
 
-Returns
-[DescribeSchedulingPoliciesResponseTypeDef](./type_defs.md#describeschedulingpoliciesresponsetypedef).
+parent.describe_scheduling_policies(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#describeschedulingpoliciesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("batch").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("batch").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Batch.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_jobs"></a>
-
-### list_jobs
+### list\_jobs
 
 Returns a list of Batch jobs.
 
-Type annotations for `boto3.client("batch").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("batch").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
 
-Boto3 documentation:
-[Batch.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    jobQueue: str = ...,
+    arrayJobId: str = ...,
+    multiNodeJobId: str = ...,
+    jobStatus: JobStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    filters: Sequence[KeyValuesPairTypeDef] = ...,  # (2)
+) -> ListJobsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-braces: KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef) 
+3. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobQueue`: `str`
-- `arrayJobId`: `str`
-- `multiNodeJobId`: `str`
-- `jobStatus`: [JobStatusType](./literals.md#jobstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `filters`:
-  `Sequence`\[[KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "jobQueue": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_scheduling\_policies"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_scheduling_policies
+### list\_scheduling\_policies
 
 Returns a list of Batch scheduling policies.
 
-Type annotations for `boto3.client("batch").list_scheduling_policies` method.
+Type annotations and code completion for `#!python boto3.client("batch").list_scheduling_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_scheduling_policies)
 
-Boto3 documentation:
-[Batch.Client.list_scheduling_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_scheduling_policies)
+```python title="Method definition"
+def list_scheduling_policies(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListSchedulingPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#listschedulingpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSchedulingPoliciesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef).
+parent.list_scheduling_policies(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#listschedulingpoliciesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for an Batch resource.
 
-Type annotations for `boto3.client("batch").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("batch").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Batch.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="register\_job\_definition"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### register_job_definition
+### register\_job\_definition
 
 Registers an Batch job definition.
 
-Type annotations for `boto3.client("batch").register_job_definition` method.
+Type annotations and code completion for `#!python boto3.client("batch").register_job_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
 
-Boto3 documentation:
-[Batch.Client.register_job_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.register_job_definition)
+```python title="Method definition"
+def register_job_definition(
+    self,
+    *,
+    jobDefinitionName: str,
+    type: JobDefinitionTypeType,  # (1)
+    parameters: Mapping[str, str] = ...,
+    schedulingPriority: int = ...,
+    containerProperties: ContainerPropertiesTypeDef = ...,  # (2)
+    nodeProperties: NodePropertiesTypeDef = ...,  # (3)
+    retryStrategy: RetryStrategyTypeDef = ...,  # (4)
+    propagateTags: bool = ...,
+    timeout: JobTimeoutTypeDef = ...,  # (5)
+    tags: Mapping[str, str] = ...,
+    platformCapabilities: Sequence[PlatformCapabilityType] = ...,  # (6)
+) -> RegisterJobDefinitionResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[RegisterJobDefinitionRequestRequestTypeDef](./type_defs.md#registerjobdefinitionrequestrequesttypedef).
+1. See [:material-code-brackets: JobDefinitionTypeType](./literals.md#jobdefinitiontypetype) 
+2. See [:material-code-braces: ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef) 
+3. See [:material-code-braces: NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef) 
+4. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+5. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
+6. See [:material-code-brackets: PlatformCapabilityType](./literals.md#platformcapabilitytype) 
+7. See [:material-code-braces: RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobDefinitionName`: `str` *(required)*
-- `type`: [JobDefinitionTypeType](./literals.md#jobdefinitiontypetype)
-  *(required)*
-- `parameters`: `Mapping`\[`str`, `str`\]
-- `schedulingPriority`: `int`
-- `containerProperties`:
-  [ContainerPropertiesTypeDef](./type_defs.md#containerpropertiestypedef)
-- `nodeProperties`:
-  [NodePropertiesTypeDef](./type_defs.md#nodepropertiestypedef)
-- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
-- `propagateTags`: `bool`
-- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `platformCapabilities`:
-  `Sequence`\[[PlatformCapabilityType](./literals.md#platformcapabilitytype)\]
+```python title="Usage example with kwargs"
+kwargs: RegisterJobDefinitionRequestRequestTypeDef = {  # (1)
+    "jobDefinitionName": ...,
+    "type": ...,
+}
 
-Returns
-[RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
+parent.register_job_definition(**kwargs)
+```
 
-<a id="submit\_job"></a>
+1. See [:material-code-braces: RegisterJobDefinitionRequestRequestTypeDef](./type_defs.md#registerjobdefinitionrequestrequesttypedef) 
 
-### submit_job
+### submit\_job
 
 Submits an Batch job from a job definition.
 
-Type annotations for `boto3.client("batch").submit_job` method.
+Type annotations and code completion for `#!python boto3.client("batch").submit_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
 
-Boto3 documentation:
-[Batch.Client.submit_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.submit_job)
+```python title="Method definition"
+def submit_job(
+    self,
+    *,
+    jobName: str,
+    jobQueue: str,
+    jobDefinition: str,
+    shareIdentifier: str = ...,
+    schedulingPriorityOverride: int = ...,
+    arrayProperties: ArrayPropertiesTypeDef = ...,  # (1)
+    dependsOn: Sequence[JobDependencyTypeDef] = ...,  # (2)
+    parameters: Mapping[str, str] = ...,
+    containerOverrides: ContainerOverridesTypeDef = ...,  # (3)
+    nodeOverrides: NodeOverridesTypeDef = ...,  # (4)
+    retryStrategy: RetryStrategyTypeDef = ...,  # (5)
+    propagateTags: bool = ...,
+    timeout: JobTimeoutTypeDef = ...,  # (6)
+    tags: Mapping[str, str] = ...,
+) -> SubmitJobResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[SubmitJobRequestRequestTypeDef](./type_defs.md#submitjobrequestrequesttypedef).
+1. See [:material-code-braces: ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef) 
+2. See [:material-code-braces: JobDependencyTypeDef](./type_defs.md#jobdependencytypedef) 
+3. See [:material-code-braces: ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef) 
+4. See [:material-code-braces: NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef) 
+5. See [:material-code-braces: RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef) 
+6. See [:material-code-braces: JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef) 
+7. See [:material-code-braces: SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobName`: `str` *(required)*
-- `jobQueue`: `str` *(required)*
-- `jobDefinition`: `str` *(required)*
-- `shareIdentifier`: `str`
-- `schedulingPriorityOverride`: `int`
-- `arrayProperties`:
-  [ArrayPropertiesTypeDef](./type_defs.md#arraypropertiestypedef)
-- `dependsOn`:
-  `Sequence`\[[JobDependencyTypeDef](./type_defs.md#jobdependencytypedef)\]
-- `parameters`: `Mapping`\[`str`, `str`\]
-- `containerOverrides`:
-  [ContainerOverridesTypeDef](./type_defs.md#containeroverridestypedef)
-- `nodeOverrides`: [NodeOverridesTypeDef](./type_defs.md#nodeoverridestypedef)
-- `retryStrategy`: [RetryStrategyTypeDef](./type_defs.md#retrystrategytypedef)
-- `propagateTags`: `bool`
-- `timeout`: [JobTimeoutTypeDef](./type_defs.md#jobtimeouttypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: SubmitJobRequestRequestTypeDef = {  # (1)
+    "jobName": ...,
+    "jobQueue": ...,
+    "jobDefinition": ...,
+}
 
-Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
+parent.submit_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: SubmitJobRequestRequestTypeDef](./type_defs.md#submitjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
 
-Type annotations for `boto3.client("batch").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("batch").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
 
-Boto3 documentation:
-[Batch.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="terminate\_job"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### terminate_job
+### terminate\_job
 
 Terminates a job in a job queue.
 
-Type annotations for `boto3.client("batch").terminate_job` method.
+Type annotations and code completion for `#!python boto3.client("batch").terminate_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
 
-Boto3 documentation:
-[Batch.Client.terminate_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.terminate_job)
+```python title="Method definition"
+def terminate_job(
+    self,
+    *,
+    jobId: str,
+    reason: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TerminateJobRequestRequestTypeDef](./type_defs.md#terminatejobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `reason`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: TerminateJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "reason": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.terminate_job(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TerminateJobRequestRequestTypeDef](./type_defs.md#terminatejobrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Deletes specified tags from an Batch resource.
 
-Type annotations for `boto3.client("batch").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("batch").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
 
-Boto3 documentation:
-[Batch.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_compute\_environment"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_compute_environment
+### update\_compute\_environment
 
 Updates an Batch compute environment.
 
-Type annotations for `boto3.client("batch").update_compute_environment` method.
+Type annotations and code completion for `#!python boto3.client("batch").update_compute_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
 
-Boto3 documentation:
-[Batch.Client.update_compute_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_compute_environment)
+```python title="Method definition"
+def update_compute_environment(
+    self,
+    *,
+    computeEnvironment: str,
+    state: CEStateType = ...,  # (1)
+    unmanagedvCpus: int = ...,
+    computeResources: ComputeResourceUpdateTypeDef = ...,  # (2)
+    serviceRole: str = ...,
+) -> UpdateComputeEnvironmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#updatecomputeenvironmentrequestrequesttypedef).
+1. See [:material-code-brackets: CEStateType](./literals.md#cestatetype) 
+2. See [:material-code-braces: ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef) 
+3. See [:material-code-braces: UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `computeEnvironment`: `str` *(required)*
-- `state`: [CEStateType](./literals.md#cestatetype)
-- `unmanagedvCpus`: `int`
-- `computeResources`:
-  [ComputeResourceUpdateTypeDef](./type_defs.md#computeresourceupdatetypedef)
-- `serviceRole`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateComputeEnvironmentRequestRequestTypeDef = {  # (1)
+    "computeEnvironment": ...,
+}
 
-Returns
-[UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef).
+parent.update_compute_environment(**kwargs)
+```
 
-<a id="update\_job\_queue"></a>
+1. See [:material-code-braces: UpdateComputeEnvironmentRequestRequestTypeDef](./type_defs.md#updatecomputeenvironmentrequestrequesttypedef) 
 
-### update_job_queue
+### update\_job\_queue
 
 Updates a job queue.
 
-Type annotations for `boto3.client("batch").update_job_queue` method.
+Type annotations and code completion for `#!python boto3.client("batch").update_job_queue` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
 
-Boto3 documentation:
-[Batch.Client.update_job_queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_job_queue)
+```python title="Method definition"
+def update_job_queue(
+    self,
+    *,
+    jobQueue: str,
+    state: JQStateType = ...,  # (1)
+    schedulingPolicyArn: str = ...,
+    priority: int = ...,
+    computeEnvironmentOrder: Sequence[ComputeEnvironmentOrderTypeDef] = ...,  # (2)
+) -> UpdateJobQueueResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobQueueRequestRequestTypeDef](./type_defs.md#updatejobqueuerequestrequesttypedef).
+1. See [:material-code-brackets: JQStateType](./literals.md#jqstatetype) 
+2. See [:material-code-braces: ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef) 
+3. See [:material-code-braces: UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobQueue`: `str` *(required)*
-- `state`: [JQStateType](./literals.md#jqstatetype)
-- `schedulingPolicyArn`: `str`
-- `priority`: `int`
-- `computeEnvironmentOrder`:
-  `Sequence`\[[ComputeEnvironmentOrderTypeDef](./type_defs.md#computeenvironmentordertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateJobQueueRequestRequestTypeDef = {  # (1)
+    "jobQueue": ...,
+}
 
-Returns
-[UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
+parent.update_job_queue(**kwargs)
+```
 
-<a id="update\_scheduling\_policy"></a>
+1. See [:material-code-braces: UpdateJobQueueRequestRequestTypeDef](./type_defs.md#updatejobqueuerequestrequesttypedef) 
 
-### update_scheduling_policy
+### update\_scheduling\_policy
 
 Updates a scheduling policy.
 
-Type annotations for `boto3.client("batch").update_scheduling_policy` method.
+Type annotations and code completion for `#!python boto3.client("batch").update_scheduling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_scheduling_policy)
 
-Boto3 documentation:
-[Batch.Client.update_scheduling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.update_scheduling_policy)
+```python title="Method definition"
+def update_scheduling_policy(
+    self,
+    *,
+    arn: str,
+    fairsharePolicy: FairsharePolicyTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#updateschedulingpolicyrequestrequesttypedef).
+1. See [:material-code-braces: FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `fairsharePolicy`:
-  [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSchedulingPolicyRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_scheduling_policy(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#updateschedulingpolicyrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("batch").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("batch").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_compute_environments")` ->
-  [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
-- `client.get_paginator("describe_job_definitions")` ->
-  [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
-- `client.get_paginator("describe_job_queues")` ->
-  [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_scheduling_policies")` ->
-  [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)
+- `client.get_paginator("describe_compute_environments")` -> [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
+- `client.get_paginator("describe_job_definitions")` -> [DescribeJobDefinitionsPaginator](./paginators.md#describejobdefinitionspaginator)
+- `client.get_paginator("describe_job_queues")` -> [DescribeJobQueuesPaginator](./paginators.md#describejobqueuespaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_scheduling_policies")` -> [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)
+
+
+

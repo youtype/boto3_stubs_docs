@@ -1,1775 +1,2297 @@
-<a id="typed-dictionaries-for-boto3-globalaccelerator-module"></a>
-
-# Typed dictionaries for boto3 GlobalAccelerator module
+# Typed dictionaries
 
 > [Index](../README.md) > [GlobalAccelerator](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
-type annotations stubs module
-[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+!!! note ""
 
-- [Typed dictionaries for boto3 GlobalAccelerator module](#typed-dictionaries-for-boto3-globalaccelerator-module)
-  - [AcceleratorAttributesTypeDef](#acceleratorattributestypedef)
-  - [AcceleratorTypeDef](#acceleratortypedef)
-  - [AddCustomRoutingEndpointsRequestRequestTypeDef](#addcustomroutingendpointsrequestrequesttypedef)
-  - [AddCustomRoutingEndpointsResponseTypeDef](#addcustomroutingendpointsresponsetypedef)
-  - [AdvertiseByoipCidrRequestRequestTypeDef](#advertisebyoipcidrrequestrequesttypedef)
-  - [AdvertiseByoipCidrResponseTypeDef](#advertisebyoipcidrresponsetypedef)
-  - [AllowCustomRoutingTrafficRequestRequestTypeDef](#allowcustomroutingtrafficrequestrequesttypedef)
-  - [ByoipCidrEventTypeDef](#byoipcidreventtypedef)
-  - [ByoipCidrTypeDef](#byoipcidrtypedef)
-  - [CidrAuthorizationContextTypeDef](#cidrauthorizationcontexttypedef)
-  - [CreateAcceleratorRequestRequestTypeDef](#createacceleratorrequestrequesttypedef)
-  - [CreateAcceleratorResponseTypeDef](#createacceleratorresponsetypedef)
-  - [CreateCustomRoutingAcceleratorRequestRequestTypeDef](#createcustomroutingacceleratorrequestrequesttypedef)
-  - [CreateCustomRoutingAcceleratorResponseTypeDef](#createcustomroutingacceleratorresponsetypedef)
-  - [CreateCustomRoutingEndpointGroupRequestRequestTypeDef](#createcustomroutingendpointgrouprequestrequesttypedef)
-  - [CreateCustomRoutingEndpointGroupResponseTypeDef](#createcustomroutingendpointgroupresponsetypedef)
-  - [CreateCustomRoutingListenerRequestRequestTypeDef](#createcustomroutinglistenerrequestrequesttypedef)
-  - [CreateCustomRoutingListenerResponseTypeDef](#createcustomroutinglistenerresponsetypedef)
-  - [CreateEndpointGroupRequestRequestTypeDef](#createendpointgrouprequestrequesttypedef)
-  - [CreateEndpointGroupResponseTypeDef](#createendpointgroupresponsetypedef)
-  - [CreateListenerRequestRequestTypeDef](#createlistenerrequestrequesttypedef)
-  - [CreateListenerResponseTypeDef](#createlistenerresponsetypedef)
-  - [CustomRoutingAcceleratorAttributesTypeDef](#customroutingacceleratorattributestypedef)
-  - [CustomRoutingAcceleratorTypeDef](#customroutingacceleratortypedef)
-  - [CustomRoutingDestinationConfigurationTypeDef](#customroutingdestinationconfigurationtypedef)
-  - [CustomRoutingDestinationDescriptionTypeDef](#customroutingdestinationdescriptiontypedef)
-  - [CustomRoutingEndpointConfigurationTypeDef](#customroutingendpointconfigurationtypedef)
-  - [CustomRoutingEndpointDescriptionTypeDef](#customroutingendpointdescriptiontypedef)
-  - [CustomRoutingEndpointGroupTypeDef](#customroutingendpointgrouptypedef)
-  - [CustomRoutingListenerTypeDef](#customroutinglistenertypedef)
-  - [DeleteAcceleratorRequestRequestTypeDef](#deleteacceleratorrequestrequesttypedef)
-  - [DeleteCustomRoutingAcceleratorRequestRequestTypeDef](#deletecustomroutingacceleratorrequestrequesttypedef)
-  - [DeleteCustomRoutingEndpointGroupRequestRequestTypeDef](#deletecustomroutingendpointgrouprequestrequesttypedef)
-  - [DeleteCustomRoutingListenerRequestRequestTypeDef](#deletecustomroutinglistenerrequestrequesttypedef)
-  - [DeleteEndpointGroupRequestRequestTypeDef](#deleteendpointgrouprequestrequesttypedef)
-  - [DeleteListenerRequestRequestTypeDef](#deletelistenerrequestrequesttypedef)
-  - [DenyCustomRoutingTrafficRequestRequestTypeDef](#denycustomroutingtrafficrequestrequesttypedef)
-  - [DeprovisionByoipCidrRequestRequestTypeDef](#deprovisionbyoipcidrrequestrequesttypedef)
-  - [DeprovisionByoipCidrResponseTypeDef](#deprovisionbyoipcidrresponsetypedef)
-  - [DescribeAcceleratorAttributesRequestRequestTypeDef](#describeacceleratorattributesrequestrequesttypedef)
-  - [DescribeAcceleratorAttributesResponseTypeDef](#describeacceleratorattributesresponsetypedef)
-  - [DescribeAcceleratorRequestRequestTypeDef](#describeacceleratorrequestrequesttypedef)
-  - [DescribeAcceleratorResponseTypeDef](#describeacceleratorresponsetypedef)
-  - [DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef](#describecustomroutingacceleratorattributesrequestrequesttypedef)
-  - [DescribeCustomRoutingAcceleratorAttributesResponseTypeDef](#describecustomroutingacceleratorattributesresponsetypedef)
-  - [DescribeCustomRoutingAcceleratorRequestRequestTypeDef](#describecustomroutingacceleratorrequestrequesttypedef)
-  - [DescribeCustomRoutingAcceleratorResponseTypeDef](#describecustomroutingacceleratorresponsetypedef)
-  - [DescribeCustomRoutingEndpointGroupRequestRequestTypeDef](#describecustomroutingendpointgrouprequestrequesttypedef)
-  - [DescribeCustomRoutingEndpointGroupResponseTypeDef](#describecustomroutingendpointgroupresponsetypedef)
-  - [DescribeCustomRoutingListenerRequestRequestTypeDef](#describecustomroutinglistenerrequestrequesttypedef)
-  - [DescribeCustomRoutingListenerResponseTypeDef](#describecustomroutinglistenerresponsetypedef)
-  - [DescribeEndpointGroupRequestRequestTypeDef](#describeendpointgrouprequestrequesttypedef)
-  - [DescribeEndpointGroupResponseTypeDef](#describeendpointgroupresponsetypedef)
-  - [DescribeListenerRequestRequestTypeDef](#describelistenerrequestrequesttypedef)
-  - [DescribeListenerResponseTypeDef](#describelistenerresponsetypedef)
-  - [DestinationPortMappingTypeDef](#destinationportmappingtypedef)
-  - [EndpointConfigurationTypeDef](#endpointconfigurationtypedef)
-  - [EndpointDescriptionTypeDef](#endpointdescriptiontypedef)
-  - [EndpointGroupTypeDef](#endpointgrouptypedef)
-  - [IpSetTypeDef](#ipsettypedef)
-  - [ListAcceleratorsRequestRequestTypeDef](#listacceleratorsrequestrequesttypedef)
-  - [ListAcceleratorsResponseTypeDef](#listacceleratorsresponsetypedef)
-  - [ListByoipCidrsRequestRequestTypeDef](#listbyoipcidrsrequestrequesttypedef)
-  - [ListByoipCidrsResponseTypeDef](#listbyoipcidrsresponsetypedef)
-  - [ListCustomRoutingAcceleratorsRequestRequestTypeDef](#listcustomroutingacceleratorsrequestrequesttypedef)
-  - [ListCustomRoutingAcceleratorsResponseTypeDef](#listcustomroutingacceleratorsresponsetypedef)
-  - [ListCustomRoutingEndpointGroupsRequestRequestTypeDef](#listcustomroutingendpointgroupsrequestrequesttypedef)
-  - [ListCustomRoutingEndpointGroupsResponseTypeDef](#listcustomroutingendpointgroupsresponsetypedef)
-  - [ListCustomRoutingListenersRequestRequestTypeDef](#listcustomroutinglistenersrequestrequesttypedef)
-  - [ListCustomRoutingListenersResponseTypeDef](#listcustomroutinglistenersresponsetypedef)
-  - [ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef](#listcustomroutingportmappingsbydestinationrequestrequesttypedef)
-  - [ListCustomRoutingPortMappingsByDestinationResponseTypeDef](#listcustomroutingportmappingsbydestinationresponsetypedef)
-  - [ListCustomRoutingPortMappingsRequestRequestTypeDef](#listcustomroutingportmappingsrequestrequesttypedef)
-  - [ListCustomRoutingPortMappingsResponseTypeDef](#listcustomroutingportmappingsresponsetypedef)
-  - [ListEndpointGroupsRequestRequestTypeDef](#listendpointgroupsrequestrequesttypedef)
-  - [ListEndpointGroupsResponseTypeDef](#listendpointgroupsresponsetypedef)
-  - [ListListenersRequestRequestTypeDef](#listlistenersrequestrequesttypedef)
-  - [ListListenersResponseTypeDef](#listlistenersresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListenerTypeDef](#listenertypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PortMappingTypeDef](#portmappingtypedef)
-  - [PortOverrideTypeDef](#portoverridetypedef)
-  - [PortRangeTypeDef](#portrangetypedef)
-  - [ProvisionByoipCidrRequestRequestTypeDef](#provisionbyoipcidrrequestrequesttypedef)
-  - [ProvisionByoipCidrResponseTypeDef](#provisionbyoipcidrresponsetypedef)
-  - [RemoveCustomRoutingEndpointsRequestRequestTypeDef](#removecustomroutingendpointsrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SocketAddressTypeDef](#socketaddresstypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAcceleratorAttributesRequestRequestTypeDef](#updateacceleratorattributesrequestrequesttypedef)
-  - [UpdateAcceleratorAttributesResponseTypeDef](#updateacceleratorattributesresponsetypedef)
-  - [UpdateAcceleratorRequestRequestTypeDef](#updateacceleratorrequestrequesttypedef)
-  - [UpdateAcceleratorResponseTypeDef](#updateacceleratorresponsetypedef)
-  - [UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef](#updatecustomroutingacceleratorattributesrequestrequesttypedef)
-  - [UpdateCustomRoutingAcceleratorAttributesResponseTypeDef](#updatecustomroutingacceleratorattributesresponsetypedef)
-  - [UpdateCustomRoutingAcceleratorRequestRequestTypeDef](#updatecustomroutingacceleratorrequestrequesttypedef)
-  - [UpdateCustomRoutingAcceleratorResponseTypeDef](#updatecustomroutingacceleratorresponsetypedef)
-  - [UpdateCustomRoutingListenerRequestRequestTypeDef](#updatecustomroutinglistenerrequestrequesttypedef)
-  - [UpdateCustomRoutingListenerResponseTypeDef](#updatecustomroutinglistenerresponsetypedef)
-  - [UpdateEndpointGroupRequestRequestTypeDef](#updateendpointgrouprequestrequesttypedef)
-  - [UpdateEndpointGroupResponseTypeDef](#updateendpointgroupresponsetypedef)
-  - [UpdateListenerRequestRequestTypeDef](#updatelistenerrequestrequesttypedef)
-  - [UpdateListenerResponseTypeDef](#updatelistenerresponsetypedef)
-  - [WithdrawByoipCidrRequestRequestTypeDef](#withdrawbyoipcidrrequestrequesttypedef)
-  - [WithdrawByoipCidrResponseTypeDef](#withdrawbyoipcidrresponsetypedef)
-
-<a id="acceleratorattributestypedef"></a>
+    Auto-generated documentation for [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
+    type annotations stubs module [mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 ## AcceleratorAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AcceleratorAttributesTypeDef
+
+def get_value() -> AcceleratorAttributesTypeDef:
+    return {
+        "FlowLogsEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
-
-<a id="acceleratortypedef"></a>
+```python title="Definition"
+class AcceleratorAttributesTypeDef(TypedDict):
+    FlowLogsEnabled: NotRequired[bool],
+    FlowLogsS3Bucket: NotRequired[str],
+    FlowLogsS3Prefix: NotRequired[str],
+```
 
 ## AcceleratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AcceleratorTypeDef
+
+def get_value() -> AcceleratorTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AcceleratorTypeDef(TypedDict):
+    AcceleratorArn: NotRequired[str],
+    Name: NotRequired[str],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    Enabled: NotRequired[bool],
+    IpSets: NotRequired[List[IpSetTypeDef]],  # (2)
+    DnsName: NotRequired[str],
+    Status: NotRequired[AcceleratorStatusType],  # (3)
+    CreatedTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `AcceleratorArn`: `str`
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
-- `IpSets`: `List`\[[IpSetTypeDef](./type_defs.md#ipsettypedef)\]
-- `DnsName`: `str`
-- `Status`: [AcceleratorStatusType](./literals.md#acceleratorstatustype)
-- `CreatedTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-
-<a id="addcustomroutingendpointsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: IpSetTypeDef](./type_defs.md#ipsettypedef) 
+3. See [:material-code-brackets: AcceleratorStatusType](./literals.md#acceleratorstatustype) 
 ## AddCustomRoutingEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsRequestRequestTypeDef
+
+def get_value() -> AddCustomRoutingEndpointsRequestRequestTypeDef:
+    return {
+        "EndpointConfigurations": ...,
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddCustomRoutingEndpointsRequestRequestTypeDef(TypedDict):
+    EndpointConfigurations: Sequence[CustomRoutingEndpointConfigurationTypeDef],  # (1)
+    EndpointGroupArn: str,
+```
 
-- `EndpointConfigurations`:
-  `Sequence`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
-- `EndpointGroupArn`: `str`
-
-<a id="addcustomroutingendpointsresponsetypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef) 
 ## AddCustomRoutingEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AddCustomRoutingEndpointsResponseTypeDef
+
+def get_value() -> AddCustomRoutingEndpointsResponseTypeDef:
+    return {
+        "EndpointDescriptions": ...,
+        "EndpointGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddCustomRoutingEndpointsResponseTypeDef(TypedDict):
+    EndpointDescriptions: List[CustomRoutingEndpointDescriptionTypeDef],  # (1)
+    EndpointGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointDescriptions`:
-  `List`\[[CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef)\]
-- `EndpointGroupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="advertisebyoipcidrrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AdvertiseByoipCidrRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrRequestRequestTypeDef
+
+def get_value() -> AdvertiseByoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+    }
 ```
 
-Required fields:
-
-- `Cidr`: `str`
-
-<a id="advertisebyoipcidrresponsetypedef"></a>
+```python title="Definition"
+class AdvertiseByoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+```
 
 ## AdvertiseByoipCidrResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrResponseTypeDef
+
+def get_value() -> AdvertiseByoipCidrResponseTypeDef:
+    return {
+        "ByoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AdvertiseByoipCidrResponseTypeDef(TypedDict):
+    ByoipCidr: ByoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="allowcustomroutingtrafficrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AllowCustomRoutingTrafficRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import AllowCustomRoutingTrafficRequestRequestTypeDef
+
+def get_value() -> AllowCustomRoutingTrafficRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+        "EndpointId": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-- `EndpointId`: `str`
-
-Optional fields:
-
-- `DestinationAddresses`: `Sequence`\[`str`\]
-- `DestinationPorts`: `Sequence`\[`int`\]
-- `AllowAllTrafficToEndpoint`: `bool`
-
-<a id="byoipcidreventtypedef"></a>
+```python title="Definition"
+class AllowCustomRoutingTrafficRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+    EndpointId: str,
+    DestinationAddresses: NotRequired[Sequence[str]],
+    DestinationPorts: NotRequired[Sequence[int]],
+    AllowAllTrafficToEndpoint: NotRequired[bool],
+```
 
 ## ByoipCidrEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ByoipCidrEventTypeDef
+
+def get_value() -> ByoipCidrEventTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Optional fields:
-
-- `Message`: `str`
-- `Timestamp`: `datetime`
-
-<a id="byoipcidrtypedef"></a>
+```python title="Definition"
+class ByoipCidrEventTypeDef(TypedDict):
+    Message: NotRequired[str],
+    Timestamp: NotRequired[datetime],
+```
 
 ## ByoipCidrTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ByoipCidrTypeDef
+
+def get_value() -> ByoipCidrTypeDef:
+    return {
+        "Cidr": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ByoipCidrTypeDef(TypedDict):
+    Cidr: NotRequired[str],
+    State: NotRequired[ByoipCidrStateType],  # (1)
+    Events: NotRequired[List[ByoipCidrEventTypeDef]],  # (2)
+```
 
-- `Cidr`: `str`
-- `State`: [ByoipCidrStateType](./literals.md#byoipcidrstatetype)
-- `Events`:
-  `List`\[[ByoipCidrEventTypeDef](./type_defs.md#byoipcidreventtypedef)\]
-
-<a id="cidrauthorizationcontexttypedef"></a>
-
+1. See [:material-code-brackets: ByoipCidrStateType](./literals.md#byoipcidrstatetype) 
+2. See [:material-code-braces: ByoipCidrEventTypeDef](./type_defs.md#byoipcidreventtypedef) 
 ## CidrAuthorizationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CidrAuthorizationContextTypeDef
+
+def get_value() -> CidrAuthorizationContextTypeDef:
+    return {
+        "Message": ...,
+        "Signature": ...,
+    }
 ```
 
-Required fields:
-
-- `Message`: `str`
-- `Signature`: `str`
-
-<a id="createacceleratorrequestrequesttypedef"></a>
+```python title="Definition"
+class CidrAuthorizationContextTypeDef(TypedDict):
+    Message: str,
+    Signature: str,
+```
 
 ## CreateAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorRequestRequestTypeDef
+
+def get_value() -> CreateAcceleratorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAcceleratorRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IdempotencyToken: str,
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    IpAddresses: NotRequired[Sequence[str]],
+    Enabled: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `IdempotencyToken`: `str`
-
-Optional fields:
-
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createacceleratorresponsetypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateAcceleratorResponseTypeDef
+
+def get_value() -> CreateAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: AcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`: [AcceleratorTypeDef](./type_defs.md#acceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustomroutingacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AcceleratorTypeDef](./type_defs.md#acceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomRoutingAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorRequestRequestTypeDef
+
+def get_value() -> CreateCustomRoutingAcceleratorRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingAcceleratorRequestRequestTypeDef(TypedDict):
+    Name: str,
+    IdempotencyToken: str,
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    IpAddresses: NotRequired[Sequence[str]],
+    Enabled: NotRequired[bool],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-- `IdempotencyToken`: `str`
-
-Optional fields:
-
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `IpAddresses`: `Sequence`\[`str`\]
-- `Enabled`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcustomroutingacceleratorresponsetypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCustomRoutingAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingAcceleratorResponseTypeDef
+
+def get_value() -> CreateCustomRoutingAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: CustomRoutingAcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`:
-  [CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustomroutingendpointgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomRoutingEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupRequestRequestTypeDef
+
+def get_value() -> CreateCustomRoutingEndpointGroupRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+        "EndpointGroupRegion": ...,
+        "DestinationConfigurations": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingEndpointGroupRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    EndpointGroupRegion: str,
+    DestinationConfigurations: Sequence[CustomRoutingDestinationConfigurationTypeDef],  # (1)
+    IdempotencyToken: str,
+```
 
-- `ListenerArn`: `str`
-- `EndpointGroupRegion`: `str`
-- `DestinationConfigurations`:
-  `Sequence`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
-- `IdempotencyToken`: `str`
-
-<a id="createcustomroutingendpointgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef) 
 ## CreateCustomRoutingEndpointGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingEndpointGroupResponseTypeDef
+
+def get_value() -> CreateCustomRoutingEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: CustomRoutingEndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroup`:
-  [CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcustomroutinglistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCustomRoutingListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerRequestRequestTypeDef
+
+def get_value() -> CreateCustomRoutingListenerRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+        "PortRanges": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingListenerRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+    IdempotencyToken: str,
+```
 
-- `AcceleratorArn`: `str`
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `IdempotencyToken`: `str`
-
-<a id="createcustomroutinglistenerresponsetypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
 ## CreateCustomRoutingListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateCustomRoutingListenerResponseTypeDef
+
+def get_value() -> CreateCustomRoutingListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCustomRoutingListenerResponseTypeDef(TypedDict):
+    Listener: CustomRoutingListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`:
-  [CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createendpointgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupRequestRequestTypeDef
+
+def get_value() -> CreateEndpointGroupRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+        "EndpointGroupRegion": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEndpointGroupRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    EndpointGroupRegion: str,
+    IdempotencyToken: str,
+    EndpointConfigurations: NotRequired[Sequence[EndpointConfigurationTypeDef]],  # (1)
+    TrafficDialPercentage: NotRequired[float],
+    HealthCheckPort: NotRequired[int],
+    HealthCheckProtocol: NotRequired[HealthCheckProtocolType],  # (2)
+    HealthCheckPath: NotRequired[str],
+    HealthCheckIntervalSeconds: NotRequired[int],
+    ThresholdCount: NotRequired[int],
+    PortOverrides: NotRequired[Sequence[PortOverrideTypeDef]],  # (3)
+```
 
-- `ListenerArn`: `str`
-- `EndpointGroupRegion`: `str`
-- `IdempotencyToken`: `str`
-
-Optional fields:
-
-- `EndpointConfigurations`:
-  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
-- `TrafficDialPercentage`: `float`
-- `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `ThresholdCount`: `int`
-- `PortOverrides`:
-  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
-
-<a id="createendpointgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
 ## CreateEndpointGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateEndpointGroupResponseTypeDef
+
+def get_value() -> CreateEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroup`: [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateListenerRequestRequestTypeDef
+
+def get_value() -> CreateListenerRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+        "PortRanges": ...,
+        "Protocol": ...,
+        "IdempotencyToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateListenerRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+    Protocol: ProtocolType,  # (2)
+    IdempotencyToken: str,
+    ClientAffinity: NotRequired[ClientAffinityType],  # (3)
+```
 
-- `AcceleratorArn`: `str`
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `IdempotencyToken`: `str`
-
-Optional fields:
-
-- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
-
-<a id="createlistenerresponsetypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: ClientAffinityType](./literals.md#clientaffinitytype) 
 ## CreateListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CreateListenerResponseTypeDef
+
+def get_value() -> CreateListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateListenerResponseTypeDef(TypedDict):
+    Listener: ListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`: [ListenerTypeDef](./type_defs.md#listenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customroutingacceleratorattributestypedef"></a>
-
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomRoutingAcceleratorAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingAcceleratorAttributesTypeDef
+
+def get_value() -> CustomRoutingAcceleratorAttributesTypeDef:
+    return {
+        "FlowLogsEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
-
-<a id="customroutingacceleratortypedef"></a>
+```python title="Definition"
+class CustomRoutingAcceleratorAttributesTypeDef(TypedDict):
+    FlowLogsEnabled: NotRequired[bool],
+    FlowLogsS3Bucket: NotRequired[str],
+    FlowLogsS3Prefix: NotRequired[str],
+```
 
 ## CustomRoutingAcceleratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingAcceleratorTypeDef
+
+def get_value() -> CustomRoutingAcceleratorTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomRoutingAcceleratorTypeDef(TypedDict):
+    AcceleratorArn: NotRequired[str],
+    Name: NotRequired[str],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    Enabled: NotRequired[bool],
+    IpSets: NotRequired[List[IpSetTypeDef]],  # (2)
+    DnsName: NotRequired[str],
+    Status: NotRequired[CustomRoutingAcceleratorStatusType],  # (3)
+    CreatedTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `AcceleratorArn`: `str`
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
-- `IpSets`: `List`\[[IpSetTypeDef](./type_defs.md#ipsettypedef)\]
-- `DnsName`: `str`
-- `Status`:
-  [CustomRoutingAcceleratorStatusType](./literals.md#customroutingacceleratorstatustype)
-- `CreatedTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-
-<a id="customroutingdestinationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+2. See [:material-code-braces: IpSetTypeDef](./type_defs.md#ipsettypedef) 
+3. See [:material-code-brackets: CustomRoutingAcceleratorStatusType](./literals.md#customroutingacceleratorstatustype) 
 ## CustomRoutingDestinationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingDestinationConfigurationTypeDef
+
+def get_value() -> CustomRoutingDestinationConfigurationTypeDef:
+    return {
+        "FromPort": ...,
+        "ToPort": ...,
+        "Protocols": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomRoutingDestinationConfigurationTypeDef(TypedDict):
+    FromPort: int,
+    ToPort: int,
+    Protocols: Sequence[CustomRoutingProtocolType],  # (1)
+```
 
-- `FromPort`: `int`
-- `ToPort`: `int`
-- `Protocols`:
-  `Sequence`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
-
-<a id="customroutingdestinationdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: CustomRoutingProtocolType](./literals.md#customroutingprotocoltype) 
 ## CustomRoutingDestinationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingDestinationDescriptionTypeDef
+
+def get_value() -> CustomRoutingDestinationDescriptionTypeDef:
+    return {
+        "FromPort": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomRoutingDestinationDescriptionTypeDef(TypedDict):
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+    Protocols: NotRequired[List[ProtocolType]],  # (1)
+```
 
-- `FromPort`: `int`
-- `ToPort`: `int`
-- `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
-
-<a id="customroutingendpointconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
 ## CustomRoutingEndpointConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointConfigurationTypeDef
+
+def get_value() -> CustomRoutingEndpointConfigurationTypeDef:
+    return {
+        "EndpointId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndpointId`: `str`
-
-<a id="customroutingendpointdescriptiontypedef"></a>
+```python title="Definition"
+class CustomRoutingEndpointConfigurationTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+```
 
 ## CustomRoutingEndpointDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointDescriptionTypeDef
+
+def get_value() -> CustomRoutingEndpointDescriptionTypeDef:
+    return {
+        "EndpointId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndpointId`: `str`
-
-<a id="customroutingendpointgrouptypedef"></a>
+```python title="Definition"
+class CustomRoutingEndpointDescriptionTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+```
 
 ## CustomRoutingEndpointGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointGroupTypeDef
+
+def get_value() -> CustomRoutingEndpointGroupTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomRoutingEndpointGroupTypeDef(TypedDict):
+    EndpointGroupArn: NotRequired[str],
+    EndpointGroupRegion: NotRequired[str],
+    DestinationDescriptions: NotRequired[List[CustomRoutingDestinationDescriptionTypeDef]],  # (1)
+    EndpointDescriptions: NotRequired[List[CustomRoutingEndpointDescriptionTypeDef]],  # (2)
+```
 
-- `EndpointGroupArn`: `str`
-- `EndpointGroupRegion`: `str`
-- `DestinationDescriptions`:
-  `List`\[[CustomRoutingDestinationDescriptionTypeDef](./type_defs.md#customroutingdestinationdescriptiontypedef)\]
-- `EndpointDescriptions`:
-  `List`\[[CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef)\]
-
-<a id="customroutinglistenertypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingDestinationDescriptionTypeDef](./type_defs.md#customroutingdestinationdescriptiontypedef) 
+2. See [:material-code-braces: CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef) 
 ## CustomRoutingListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import CustomRoutingListenerTypeDef
+
+def get_value() -> CustomRoutingListenerTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CustomRoutingListenerTypeDef(TypedDict):
+    ListenerArn: NotRequired[str],
+    PortRanges: NotRequired[List[PortRangeTypeDef]],  # (1)
+```
 
-- `ListenerArn`: `str`
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-
-<a id="deleteacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
 ## DeleteAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteAcceleratorRequestRequestTypeDef
+
+def get_value() -> DeleteAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="deletecustomroutingacceleratorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DeleteCustomRoutingAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingAcceleratorRequestRequestTypeDef
+
+def get_value() -> DeleteCustomRoutingAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="deletecustomroutingendpointgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCustomRoutingAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DeleteCustomRoutingEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingEndpointGroupRequestRequestTypeDef
+
+def get_value() -> DeleteCustomRoutingEndpointGroupRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-
-<a id="deletecustomroutinglistenerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCustomRoutingEndpointGroupRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+```
 
 ## DeleteCustomRoutingListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingListenerRequestRequestTypeDef
+
+def get_value() -> DeleteCustomRoutingListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-<a id="deleteendpointgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCustomRoutingListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+```
 
 ## DeleteEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteEndpointGroupRequestRequestTypeDef
+
+def get_value() -> DeleteEndpointGroupRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-
-<a id="deletelistenerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEndpointGroupRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+```
 
 ## DeleteListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeleteListenerRequestRequestTypeDef
+
+def get_value() -> DeleteListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-<a id="denycustomroutingtrafficrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+```
 
 ## DenyCustomRoutingTrafficRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DenyCustomRoutingTrafficRequestRequestTypeDef
+
+def get_value() -> DenyCustomRoutingTrafficRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+        "EndpointId": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-- `EndpointId`: `str`
-
-Optional fields:
-
-- `DestinationAddresses`: `Sequence`\[`str`\]
-- `DestinationPorts`: `Sequence`\[`int`\]
-- `DenyAllTrafficToEndpoint`: `bool`
-
-<a id="deprovisionbyoipcidrrequestrequesttypedef"></a>
+```python title="Definition"
+class DenyCustomRoutingTrafficRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+    EndpointId: str,
+    DestinationAddresses: NotRequired[Sequence[str]],
+    DestinationPorts: NotRequired[Sequence[int]],
+    DenyAllTrafficToEndpoint: NotRequired[bool],
+```
 
 ## DeprovisionByoipCidrRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrRequestRequestTypeDef
+
+def get_value() -> DeprovisionByoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+    }
 ```
 
-Required fields:
-
-- `Cidr`: `str`
-
-<a id="deprovisionbyoipcidrresponsetypedef"></a>
+```python title="Definition"
+class DeprovisionByoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+```
 
 ## DeprovisionByoipCidrResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrResponseTypeDef
+
+def get_value() -> DeprovisionByoipCidrResponseTypeDef:
+    return {
+        "ByoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeprovisionByoipCidrResponseTypeDef(TypedDict):
+    ByoipCidr: ByoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeacceleratorattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAcceleratorAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesRequestRequestTypeDef
+
+def get_value() -> DescribeAcceleratorAttributesRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="describeacceleratorattributesresponsetypedef"></a>
+```python title="Definition"
+class DescribeAcceleratorAttributesRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DescribeAcceleratorAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributesResponseTypeDef
+
+def get_value() -> DescribeAcceleratorAttributesResponseTypeDef:
+    return {
+        "AcceleratorAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAcceleratorAttributesResponseTypeDef(TypedDict):
+    AcceleratorAttributes: AcceleratorAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AcceleratorAttributes`:
-  [AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorRequestRequestTypeDef
+
+def get_value() -> DescribeAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="describeacceleratorresponsetypedef"></a>
+```python title="Definition"
+class DescribeAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DescribeAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorResponseTypeDef
+
+def get_value() -> DescribeAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: AcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`: [AcceleratorTypeDef](./type_defs.md#acceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomroutingacceleratorattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AcceleratorTypeDef](./type_defs.md#acceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef
+
+def get_value() -> DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="describecustomroutingacceleratorattributesresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
+
+def get_value() -> DescribeCustomRoutingAcceleratorAttributesResponseTypeDef:
+    return {
+        "AcceleratorAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomRoutingAcceleratorAttributesResponseTypeDef(TypedDict):
+    AcceleratorAttributes: CustomRoutingAcceleratorAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AcceleratorAttributes`:
-  [CustomRoutingAcceleratorAttributesTypeDef](./type_defs.md#customroutingacceleratorattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomroutingacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorAttributesTypeDef](./type_defs.md#customroutingacceleratorattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomRoutingAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorRequestRequestTypeDef
+
+def get_value() -> DescribeCustomRoutingAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-<a id="describecustomroutingacceleratorresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomRoutingAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+```
 
 ## DescribeCustomRoutingAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAcceleratorResponseTypeDef
+
+def get_value() -> DescribeCustomRoutingAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomRoutingAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: CustomRoutingAcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`:
-  [CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomroutingendpointgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomRoutingEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupRequestRequestTypeDef
+
+def get_value() -> DescribeCustomRoutingEndpointGroupRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-
-<a id="describecustomroutingendpointgroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomRoutingEndpointGroupRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+```
 
 ## DescribeCustomRoutingEndpointGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpointGroupResponseTypeDef
+
+def get_value() -> DescribeCustomRoutingEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomRoutingEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: CustomRoutingEndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroup`:
-  [CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomroutinglistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomRoutingListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerRequestRequestTypeDef
+
+def get_value() -> DescribeCustomRoutingListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-<a id="describecustomroutinglistenerresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomRoutingListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+```
 
 ## DescribeCustomRoutingListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListenerResponseTypeDef
+
+def get_value() -> DescribeCustomRoutingListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomRoutingListenerResponseTypeDef(TypedDict):
+    Listener: CustomRoutingListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`:
-  [CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeendpointgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupRequestRequestTypeDef
+
+def get_value() -> DescribeEndpointGroupRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointGroupArn`: `str`
-
-<a id="describeendpointgroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeEndpointGroupRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+```
 
 ## DescribeEndpointGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupResponseTypeDef
+
+def get_value() -> DescribeEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroup`: [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describelistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeListenerRequestRequestTypeDef
+
+def get_value() -> DescribeListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-<a id="describelistenerresponsetypedef"></a>
+```python title="Definition"
+class DescribeListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+```
 
 ## DescribeListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DescribeListenerResponseTypeDef
+
+def get_value() -> DescribeListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeListenerResponseTypeDef(TypedDict):
+    Listener: ListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`: [ListenerTypeDef](./type_defs.md#listenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationportmappingtypedef"></a>
-
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationPortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import DestinationPortMappingTypeDef
+
+def get_value() -> DestinationPortMappingTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationPortMappingTypeDef(TypedDict):
+    AcceleratorArn: NotRequired[str],
+    AcceleratorSocketAddresses: NotRequired[List[SocketAddressTypeDef]],  # (1)
+    EndpointGroupArn: NotRequired[str],
+    EndpointId: NotRequired[str],
+    EndpointGroupRegion: NotRequired[str],
+    DestinationSocketAddress: NotRequired[SocketAddressTypeDef],  # (2)
+    IpAddressType: NotRequired[IpAddressTypeType],  # (3)
+    DestinationTrafficState: NotRequired[CustomRoutingDestinationTrafficStateType],  # (4)
+```
 
-- `AcceleratorArn`: `str`
-- `AcceleratorSocketAddresses`:
-  `List`\[[SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)\]
-- `EndpointGroupArn`: `str`
-- `EndpointId`: `str`
-- `EndpointGroupRegion`: `str`
-- `DestinationSocketAddress`:
-  [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `DestinationTrafficState`:
-  [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
-
-<a id="endpointconfigurationtypedef"></a>
-
+1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
+2. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
+3. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
+4. See [:material-code-brackets: CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype) 
 ## EndpointConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import EndpointConfigurationTypeDef
+
+def get_value() -> EndpointConfigurationTypeDef:
+    return {
+        "EndpointId": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndpointId`: `str`
-- `Weight`: `int`
-- `ClientIPPreservationEnabled`: `bool`
-
-<a id="endpointdescriptiontypedef"></a>
+```python title="Definition"
+class EndpointConfigurationTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+    Weight: NotRequired[int],
+    ClientIPPreservationEnabled: NotRequired[bool],
+```
 
 ## EndpointDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import EndpointDescriptionTypeDef
+
+def get_value() -> EndpointDescriptionTypeDef:
+    return {
+        "EndpointId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndpointDescriptionTypeDef(TypedDict):
+    EndpointId: NotRequired[str],
+    Weight: NotRequired[int],
+    HealthState: NotRequired[HealthStateType],  # (1)
+    HealthReason: NotRequired[str],
+    ClientIPPreservationEnabled: NotRequired[bool],
+```
 
-- `EndpointId`: `str`
-- `Weight`: `int`
-- `HealthState`: [HealthStateType](./literals.md#healthstatetype)
-- `HealthReason`: `str`
-- `ClientIPPreservationEnabled`: `bool`
-
-<a id="endpointgrouptypedef"></a>
-
+1. See [:material-code-brackets: HealthStateType](./literals.md#healthstatetype) 
 ## EndpointGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import EndpointGroupTypeDef
+
+def get_value() -> EndpointGroupTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EndpointGroupTypeDef(TypedDict):
+    EndpointGroupArn: NotRequired[str],
+    EndpointGroupRegion: NotRequired[str],
+    EndpointDescriptions: NotRequired[List[EndpointDescriptionTypeDef]],  # (1)
+    TrafficDialPercentage: NotRequired[float],
+    HealthCheckPort: NotRequired[int],
+    HealthCheckProtocol: NotRequired[HealthCheckProtocolType],  # (2)
+    HealthCheckPath: NotRequired[str],
+    HealthCheckIntervalSeconds: NotRequired[int],
+    ThresholdCount: NotRequired[int],
+    PortOverrides: NotRequired[List[PortOverrideTypeDef]],  # (3)
+```
 
-- `EndpointGroupArn`: `str`
-- `EndpointGroupRegion`: `str`
-- `EndpointDescriptions`:
-  `List`\[[EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef)\]
-- `TrafficDialPercentage`: `float`
-- `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `ThresholdCount`: `int`
-- `PortOverrides`:
-  `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
-
-<a id="ipsettypedef"></a>
-
+1. See [:material-code-braces: EndpointDescriptionTypeDef](./type_defs.md#endpointdescriptiontypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
 ## IpSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import IpSetTypeDef
+
+def get_value() -> IpSetTypeDef:
+    return {
+        "IpFamily": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IpSetTypeDef(TypedDict):
+    IpFamily: NotRequired[str],
+    IpAddresses: NotRequired[List[str]],
+```
 
-- `IpFamily`: `str`
-- `IpAddresses`: `List`\[`str`\]
+## ListAcceleratorsRequestListAcceleratorsPaginateTypeDef
 
-<a id="listacceleratorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsRequestListAcceleratorsPaginateTypeDef
 
+def get_value() -> ListAcceleratorsRequestListAcceleratorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListAcceleratorsRequestListAcceleratorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAcceleratorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsRequestRequestTypeDef
+
+def get_value() -> ListAcceleratorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listacceleratorsresponsetypedef"></a>
+```python title="Definition"
+class ListAcceleratorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAcceleratorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListAcceleratorsResponseTypeDef
+
+def get_value() -> ListAcceleratorsResponseTypeDef:
+    return {
+        "Accelerators": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAcceleratorsResponseTypeDef(TypedDict):
+    Accelerators: List[AcceleratorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerators`:
-  `List`\[[AcceleratorTypeDef](./type_defs.md#acceleratortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AcceleratorTypeDef](./type_defs.md#acceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListByoipCidrsRequestListByoipCidrsPaginateTypeDef
 
-<a id="listbyoipcidrsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsRequestListByoipCidrsPaginateTypeDef
 
+def get_value() -> ListByoipCidrsRequestListByoipCidrsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListByoipCidrsRequestListByoipCidrsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListByoipCidrsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsRequestRequestTypeDef
+
+def get_value() -> ListByoipCidrsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listbyoipcidrsresponsetypedef"></a>
+```python title="Definition"
+class ListByoipCidrsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListByoipCidrsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListByoipCidrsResponseTypeDef
+
+def get_value() -> ListByoipCidrsResponseTypeDef:
+    return {
+        "ByoipCidrs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListByoipCidrsResponseTypeDef(TypedDict):
+    ByoipCidrs: List[ByoipCidrTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByoipCidrs`: `List`\[[ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef
 
-<a id="listcustomroutingacceleratorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef
 
+def get_value() -> ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomRoutingAcceleratorsRequestListCustomRoutingAcceleratorsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomRoutingAcceleratorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsRequestRequestTypeDef
+
+def get_value() -> ListCustomRoutingAcceleratorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcustomroutingacceleratorsresponsetypedef"></a>
+```python title="Definition"
+class ListCustomRoutingAcceleratorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCustomRoutingAcceleratorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingAcceleratorsResponseTypeDef
+
+def get_value() -> ListCustomRoutingAcceleratorsResponseTypeDef:
+    return {
+        "Accelerators": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomRoutingAcceleratorsResponseTypeDef(TypedDict):
+    Accelerators: List[CustomRoutingAcceleratorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerators`:
-  `List`\[[CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcustomroutingendpointgroupsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCustomRoutingEndpointGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsRequestRequestTypeDef
+
+def get_value() -> ListCustomRoutingEndpointGroupsRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcustomroutingendpointgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListCustomRoutingEndpointGroupsRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCustomRoutingEndpointGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingEndpointGroupsResponseTypeDef
+
+def get_value() -> ListCustomRoutingEndpointGroupsResponseTypeDef:
+    return {
+        "EndpointGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomRoutingEndpointGroupsResponseTypeDef(TypedDict):
+    EndpointGroups: List[CustomRoutingEndpointGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroups`:
-  `List`\[[CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef
 
-<a id="listcustomroutinglistenersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef
 
+def get_value() -> ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomRoutingListenersRequestListCustomRoutingListenersPaginateTypeDef(TypedDict):
+    AcceleratorArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomRoutingListenersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersRequestRequestTypeDef
+
+def get_value() -> ListCustomRoutingListenersRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcustomroutinglistenersresponsetypedef"></a>
+```python title="Definition"
+class ListCustomRoutingListenersRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCustomRoutingListenersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingListenersResponseTypeDef
+
+def get_value() -> ListCustomRoutingListenersResponseTypeDef:
+    return {
+        "Listeners": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomRoutingListenersResponseTypeDef(TypedDict):
+    Listeners: List[CustomRoutingListenerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listeners`:
-  `List`\[[CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef
 
-<a id="listcustomroutingportmappingsbydestinationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef
 
+def get_value() -> ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef:
+    return {
+        "EndpointId": ...,
+        "DestinationAddress": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomRoutingPortMappingsByDestinationRequestListCustomRoutingPortMappingsByDestinationPaginateTypeDef(TypedDict):
+    EndpointId: str,
+    DestinationAddress: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef
+
+def get_value() -> ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef:
+    return {
+        "EndpointId": ...,
+        "DestinationAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointId`: `str`
-- `DestinationAddress`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcustomroutingportmappingsbydestinationresponsetypedef"></a>
+```python title="Definition"
+class ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef(TypedDict):
+    EndpointId: str,
+    DestinationAddress: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsByDestinationResponseTypeDef
+
+def get_value() -> ListCustomRoutingPortMappingsByDestinationResponseTypeDef:
+    return {
+        "DestinationPortMappings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomRoutingPortMappingsByDestinationResponseTypeDef(TypedDict):
+    DestinationPortMappings: List[DestinationPortMappingTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DestinationPortMappings`:
-  `List`\[[DestinationPortMappingTypeDef](./type_defs.md#destinationportmappingtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DestinationPortMappingTypeDef](./type_defs.md#destinationportmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef
 
-<a id="listcustomroutingportmappingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef
 
+def get_value() -> ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCustomRoutingPortMappingsRequestListCustomRoutingPortMappingsPaginateTypeDef(TypedDict):
+    AcceleratorArn: str,
+    EndpointGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCustomRoutingPortMappingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsRequestRequestTypeDef
+
+def get_value() -> ListCustomRoutingPortMappingsRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `EndpointGroupArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listcustomroutingportmappingsresponsetypedef"></a>
+```python title="Definition"
+class ListCustomRoutingPortMappingsRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    EndpointGroupArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListCustomRoutingPortMappingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListCustomRoutingPortMappingsResponseTypeDef
+
+def get_value() -> ListCustomRoutingPortMappingsResponseTypeDef:
+    return {
+        "PortMappings": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCustomRoutingPortMappingsResponseTypeDef(TypedDict):
+    PortMappings: List[PortMappingTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PortMappings`:
-  `List`\[[PortMappingTypeDef](./type_defs.md#portmappingtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef
 
-<a id="listendpointgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef
 
+def get_value() -> ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListEndpointGroupsRequestListEndpointGroupsPaginateTypeDef(TypedDict):
+    ListenerArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEndpointGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsRequestRequestTypeDef
+
+def get_value() -> ListEndpointGroupsRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ListenerArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listendpointgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListEndpointGroupsRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListEndpointGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListEndpointGroupsResponseTypeDef
+
+def get_value() -> ListEndpointGroupsResponseTypeDef:
+    return {
+        "EndpointGroups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEndpointGroupsResponseTypeDef(TypedDict):
+    EndpointGroups: List[EndpointGroupTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroups`:
-  `List`\[[EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListListenersRequestListListenersPaginateTypeDef
 
-<a id="listlistenersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_globalaccelerator.type_defs import ListListenersRequestListListenersPaginateTypeDef
 
+def get_value() -> ListListenersRequestListListenersPaginateTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListListenersRequestListListenersPaginateTypeDef(TypedDict):
+    AcceleratorArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListListenersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListListenersRequestRequestTypeDef
+
+def get_value() -> ListListenersRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listlistenersresponsetypedef"></a>
+```python title="Definition"
+class ListListenersRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListListenersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListListenersResponseTypeDef
+
+def get_value() -> ListListenersResponseTypeDef:
+    return {
+        "Listeners": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListListenersResponseTypeDef(TypedDict):
+    Listeners: List[ListenerTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listenertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ListenerTypeDef
+
+def get_value() -> ListenerTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListenerTypeDef(TypedDict):
+    ListenerArn: NotRequired[str],
+    PortRanges: NotRequired[List[PortRangeTypeDef]],  # (1)
+    Protocol: NotRequired[ProtocolType],  # (2)
+    ClientAffinity: NotRequired[ClientAffinityType],  # (3)
+```
 
-- `ListenerArn`: `str`
-- `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: ClientAffinityType](./literals.md#clientaffinitytype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="portmappingtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import PortMappingTypeDef
+
+def get_value() -> PortMappingTypeDef:
+    return {
+        "AcceleratorPort": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PortMappingTypeDef(TypedDict):
+    AcceleratorPort: NotRequired[int],
+    EndpointGroupArn: NotRequired[str],
+    EndpointId: NotRequired[str],
+    DestinationSocketAddress: NotRequired[SocketAddressTypeDef],  # (1)
+    Protocols: NotRequired[List[CustomRoutingProtocolType]],  # (2)
+    DestinationTrafficState: NotRequired[CustomRoutingDestinationTrafficStateType],  # (3)
+```
 
-- `AcceleratorPort`: `int`
-- `EndpointGroupArn`: `str`
-- `EndpointId`: `str`
-- `DestinationSocketAddress`:
-  [SocketAddressTypeDef](./type_defs.md#socketaddresstypedef)
-- `Protocols`:
-  `List`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
-- `DestinationTrafficState`:
-  [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
-
-<a id="portoverridetypedef"></a>
-
+1. See [:material-code-braces: SocketAddressTypeDef](./type_defs.md#socketaddresstypedef) 
+2. See [:material-code-brackets: CustomRoutingProtocolType](./literals.md#customroutingprotocoltype) 
+3. See [:material-code-brackets: CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype) 
 ## PortOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import PortOverrideTypeDef
+
+def get_value() -> PortOverrideTypeDef:
+    return {
+        "ListenerPort": ...,
+    }
 ```
 
-Optional fields:
-
-- `ListenerPort`: `int`
-- `EndpointPort`: `int`
-
-<a id="portrangetypedef"></a>
+```python title="Definition"
+class PortOverrideTypeDef(TypedDict):
+    ListenerPort: NotRequired[int],
+    EndpointPort: NotRequired[int],
+```
 
 ## PortRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import PortRangeTypeDef
+
+def get_value() -> PortRangeTypeDef:
+    return {
+        "FromPort": ...,
+    }
 ```
 
-Optional fields:
-
-- `FromPort`: `int`
-- `ToPort`: `int`
-
-<a id="provisionbyoipcidrrequestrequesttypedef"></a>
+```python title="Definition"
+class PortRangeTypeDef(TypedDict):
+    FromPort: NotRequired[int],
+    ToPort: NotRequired[int],
+```
 
 ## ProvisionByoipCidrRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrRequestRequestTypeDef
+
+def get_value() -> ProvisionByoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+        "CidrAuthorizationContext": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionByoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+    CidrAuthorizationContext: CidrAuthorizationContextTypeDef,  # (1)
+```
 
-- `Cidr`: `str`
-- `CidrAuthorizationContext`:
-  [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
-
-<a id="provisionbyoipcidrresponsetypedef"></a>
-
+1. See [:material-code-braces: CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef) 
 ## ProvisionByoipCidrResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ProvisionByoipCidrResponseTypeDef
+
+def get_value() -> ProvisionByoipCidrResponseTypeDef:
+    return {
+        "ByoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionByoipCidrResponseTypeDef(TypedDict):
+    ByoipCidr: ByoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removecustomroutingendpointsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveCustomRoutingEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import RemoveCustomRoutingEndpointsRequestRequestTypeDef
+
+def get_value() -> RemoveCustomRoutingEndpointsRequestRequestTypeDef:
+    return {
+        "EndpointIds": ...,
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `EndpointIds`: `Sequence`\[`str`\]
-- `EndpointGroupArn`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemoveCustomRoutingEndpointsRequestRequestTypeDef(TypedDict):
+    EndpointIds: Sequence[str],
+    EndpointGroupArn: str,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="socketaddresstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SocketAddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import SocketAddressTypeDef
+
+def get_value() -> SocketAddressTypeDef:
+    return {
+        "IpAddress": ...,
+    }
 ```
 
-Optional fields:
-
-- `IpAddress`: `str`
-- `Port`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SocketAddressTypeDef(TypedDict):
+    IpAddress: NotRequired[str],
+    Port: NotRequired[int],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateacceleratorattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAcceleratorAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateAcceleratorAttributesRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
-
-<a id="updateacceleratorattributesresponsetypedef"></a>
+```python title="Definition"
+class UpdateAcceleratorAttributesRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    FlowLogsEnabled: NotRequired[bool],
+    FlowLogsS3Bucket: NotRequired[str],
+    FlowLogsS3Prefix: NotRequired[str],
+```
 
 ## UpdateAcceleratorAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorAttributesResponseTypeDef
+
+def get_value() -> UpdateAcceleratorAttributesResponseTypeDef:
+    return {
+        "AcceleratorAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAcceleratorAttributesResponseTypeDef(TypedDict):
+    AcceleratorAttributes: AcceleratorAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AcceleratorAttributes`:
-  [AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorRequestRequestTypeDef
+
+def get_value() -> UpdateAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    Name: NotRequired[str],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    Enabled: NotRequired[bool],
+```
 
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
-
-<a id="updateacceleratorresponsetypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
 ## UpdateAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateAcceleratorResponseTypeDef
+
+def get_value() -> UpdateAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: AcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`: [AcceleratorTypeDef](./type_defs.md#acceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecustomroutingacceleratorattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AcceleratorTypeDef](./type_defs.md#acceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `FlowLogsEnabled`: `bool`
-- `FlowLogsS3Bucket`: `str`
-- `FlowLogsS3Prefix`: `str`
-
-<a id="updatecustomroutingacceleratorattributesresponsetypedef"></a>
+```python title="Definition"
+class UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    FlowLogsEnabled: NotRequired[bool],
+    FlowLogsS3Bucket: NotRequired[str],
+    FlowLogsS3Prefix: NotRequired[str],
+```
 
 ## UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
+
+def get_value() -> UpdateCustomRoutingAcceleratorAttributesResponseTypeDef:
+    return {
+        "AcceleratorAttributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCustomRoutingAcceleratorAttributesResponseTypeDef(TypedDict):
+    AcceleratorAttributes: CustomRoutingAcceleratorAttributesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AcceleratorAttributes`:
-  [CustomRoutingAcceleratorAttributesTypeDef](./type_defs.md#customroutingacceleratorattributestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecustomroutingacceleratorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorAttributesTypeDef](./type_defs.md#customroutingacceleratorattributestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCustomRoutingAcceleratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorRequestRequestTypeDef
+
+def get_value() -> UpdateCustomRoutingAcceleratorRequestRequestTypeDef:
+    return {
+        "AcceleratorArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCustomRoutingAcceleratorRequestRequestTypeDef(TypedDict):
+    AcceleratorArn: str,
+    Name: NotRequired[str],
+    IpAddressType: NotRequired[IpAddressTypeType],  # (1)
+    Enabled: NotRequired[bool],
+```
 
-- `AcceleratorArn`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `IpAddressType`: `Literal['IPV4']` (see
-  [IpAddressTypeType](./literals.md#ipaddresstypetype))
-- `Enabled`: `bool`
-
-<a id="updatecustomroutingacceleratorresponsetypedef"></a>
-
+1. See [:material-code-brackets: IpAddressTypeType](./literals.md#ipaddresstypetype) 
 ## UpdateCustomRoutingAcceleratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingAcceleratorResponseTypeDef
+
+def get_value() -> UpdateCustomRoutingAcceleratorResponseTypeDef:
+    return {
+        "Accelerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCustomRoutingAcceleratorResponseTypeDef(TypedDict):
+    Accelerator: CustomRoutingAcceleratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Accelerator`:
-  [CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecustomroutinglistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateCustomRoutingListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerRequestRequestTypeDef
+
+def get_value() -> UpdateCustomRoutingListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+        "PortRanges": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCustomRoutingListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    PortRanges: Sequence[PortRangeTypeDef],  # (1)
+```
 
-- `ListenerArn`: `str`
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-
-<a id="updatecustomroutinglistenerresponsetypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
 ## UpdateCustomRoutingListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateCustomRoutingListenerResponseTypeDef
+
+def get_value() -> UpdateCustomRoutingListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCustomRoutingListenerResponseTypeDef(TypedDict):
+    Listener: CustomRoutingListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`:
-  [CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateendpointgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEndpointGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupRequestRequestTypeDef
+
+def get_value() -> UpdateEndpointGroupRequestRequestTypeDef:
+    return {
+        "EndpointGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEndpointGroupRequestRequestTypeDef(TypedDict):
+    EndpointGroupArn: str,
+    EndpointConfigurations: NotRequired[Sequence[EndpointConfigurationTypeDef]],  # (1)
+    TrafficDialPercentage: NotRequired[float],
+    HealthCheckPort: NotRequired[int],
+    HealthCheckProtocol: NotRequired[HealthCheckProtocolType],  # (2)
+    HealthCheckPath: NotRequired[str],
+    HealthCheckIntervalSeconds: NotRequired[int],
+    ThresholdCount: NotRequired[int],
+    PortOverrides: NotRequired[Sequence[PortOverrideTypeDef]],  # (3)
+```
 
-- `EndpointGroupArn`: `str`
-
-Optional fields:
-
-- `EndpointConfigurations`:
-  `Sequence`\[[EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)\]
-- `TrafficDialPercentage`: `float`
-- `HealthCheckPort`: `int`
-- `HealthCheckProtocol`:
-  [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `HealthCheckPath`: `str`
-- `HealthCheckIntervalSeconds`: `int`
-- `ThresholdCount`: `int`
-- `PortOverrides`:
-  `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
-
-<a id="updateendpointgroupresponsetypedef"></a>
-
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
+3. See [:material-code-braces: PortOverrideTypeDef](./type_defs.md#portoverridetypedef) 
 ## UpdateEndpointGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateEndpointGroupResponseTypeDef
+
+def get_value() -> UpdateEndpointGroupResponseTypeDef:
+    return {
+        "EndpointGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEndpointGroupResponseTypeDef(TypedDict):
+    EndpointGroup: EndpointGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EndpointGroup`: [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatelistenerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateListenerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateListenerRequestRequestTypeDef
+
+def get_value() -> UpdateListenerRequestRequestTypeDef:
+    return {
+        "ListenerArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateListenerRequestRequestTypeDef(TypedDict):
+    ListenerArn: str,
+    PortRanges: NotRequired[Sequence[PortRangeTypeDef]],  # (1)
+    Protocol: NotRequired[ProtocolType],  # (2)
+    ClientAffinity: NotRequired[ClientAffinityType],  # (3)
+```
 
-- `ListenerArn`: `str`
-
-Optional fields:
-
-- `PortRanges`:
-  `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
-
-<a id="updatelistenerresponsetypedef"></a>
-
+1. See [:material-code-braces: PortRangeTypeDef](./type_defs.md#portrangetypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: ClientAffinityType](./literals.md#clientaffinitytype) 
 ## UpdateListenerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import UpdateListenerResponseTypeDef
+
+def get_value() -> UpdateListenerResponseTypeDef:
+    return {
+        "Listener": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateListenerResponseTypeDef(TypedDict):
+    Listener: ListenerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Listener`: [ListenerTypeDef](./type_defs.md#listenertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="withdrawbyoipcidrrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WithdrawByoipCidrRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrRequestRequestTypeDef
+
+def get_value() -> WithdrawByoipCidrRequestRequestTypeDef:
+    return {
+        "Cidr": ...,
+    }
 ```
 
-Required fields:
-
-- `Cidr`: `str`
-
-<a id="withdrawbyoipcidrresponsetypedef"></a>
+```python title="Definition"
+class WithdrawByoipCidrRequestRequestTypeDef(TypedDict):
+    Cidr: str,
+```
 
 ## WithdrawByoipCidrResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrResponseTypeDef
+
+def get_value() -> WithdrawByoipCidrResponseTypeDef:
+    return {
+        "ByoipCidr": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WithdrawByoipCidrResponseTypeDef(TypedDict):
+    ByoipCidr: ByoipCidrTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

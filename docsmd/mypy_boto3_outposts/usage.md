@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-outposts-module"></a>
-
-# Examples for boto3 Outposts module
+# Examples
 
 > [Index](../README.md) > [Outposts](./README.md) > Examples
 
-- [Examples for boto3 Outposts module](#examples-for-boto3-outposts-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
+    type annotations stubs module [mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[outposts]` package installed.
 
-Write your `Outposts` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Outposts` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type OutpostsClient
-# and provides type checking and code completion
-client = session.client("outposts")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("outposts")  # (1)
+    result = client.create_order()  # (2)
+    ```
+
+    1. client: [OutpostsClient](./client.md)
+    2. result: [:material-code-braces: CreateOrderOutputTypeDef](./type_defs.md#createorderoutputtypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[outposts]` or a standalone `mypy_boto3_outposts`
-package, you have to explicitly specify `client: OutpostsClient` type
-annotation.
+With `boto3-stubs-lite[outposts]`
+or a standalone `mypy_boto3_outposts` package, you have to explicitly specify `client: OutpostsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_outposts.client import OutpostsClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_outposts.client import OutpostsClient
+    from mypy_boto3_outposts.type_defs import CreateOrderOutputTypeDef
+    from mypy_boto3_outposts.type_defs import CreateOrderInputRequestTypeDef
 
 
-from mypy_boto3_outposts.type_defs import bool
+    session = Session()
+
+    client: OutpostsClient = session.client("outposts")
+
+    kwargs: CreateOrderInputRequestTypeDef = {...}
+    result: CreateOrderOutputTypeDef = client.create_order(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: OutpostsClient = session.client("outposts")
 
-result: bool = client.can_paginate()
-```
+

@@ -1,702 +1,725 @@
-<a id="literals-for-boto3-budgets-module"></a>
-
-# Literals for boto3 Budgets module
+# Literals
 
 > [Index](../README.md) > [Budgets](./README.md) > Literals
 
-Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module
-[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
+!!! note ""
 
-- [Literals for boto3 Budgets module](#literals-for-boto3-budgets-module)
-  - [ActionStatusType](#actionstatustype)
-  - [ActionSubTypeType](#actionsubtypetype)
-  - [ActionTypeType](#actiontypetype)
-  - [ApprovalModelType](#approvalmodeltype)
-  - [AutoAdjustTypeType](#autoadjusttypetype)
-  - [BudgetTypeType](#budgettypetype)
-  - [ComparisonOperatorType](#comparisonoperatortype)
-  - [DescribeBudgetActionHistoriesPaginatorName](#describebudgetactionhistoriespaginatorname)
-  - [DescribeBudgetActionsForAccountPaginatorName](#describebudgetactionsforaccountpaginatorname)
-  - [DescribeBudgetActionsForBudgetPaginatorName](#describebudgetactionsforbudgetpaginatorname)
-  - [DescribeBudgetNotificationsForAccountPaginatorName](#describebudgetnotificationsforaccountpaginatorname)
-  - [DescribeBudgetPerformanceHistoryPaginatorName](#describebudgetperformancehistorypaginatorname)
-  - [DescribeBudgetsPaginatorName](#describebudgetspaginatorname)
-  - [DescribeNotificationsForBudgetPaginatorName](#describenotificationsforbudgetpaginatorname)
-  - [DescribeSubscribersForNotificationPaginatorName](#describesubscribersfornotificationpaginatorname)
-  - [EventTypeType](#eventtypetype)
-  - [ExecutionTypeType](#executiontypetype)
-  - [NotificationStateType](#notificationstatetype)
-  - [NotificationTypeType](#notificationtypetype)
-  - [SubscriptionTypeType](#subscriptiontypetype)
-  - [ThresholdTypeType](#thresholdtypetype)
-  - [TimeUnitType](#timeunittype)
-  - [BudgetsServiceName](#budgetsservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="actionstatustype"></a>
+    Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+    type annotations stubs module [mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ## ActionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ActionStatusType
+
+def get_value() -> ActionStatusType:
+    return "EXECUTION_FAILURE"
 ```
 
-Values:
-
-- `EXECUTION_FAILURE`
-- `EXECUTION_IN_PROGRESS`
-- `EXECUTION_SUCCESS`
-- `PENDING`
-- `RESET_FAILURE`
-- `RESET_IN_PROGRESS`
-- `REVERSE_FAILURE`
-- `REVERSE_IN_PROGRESS`
-- `REVERSE_SUCCESS`
-- `STANDBY`
-
-<a id="actionsubtypetype"></a>
-
+```python title="Definition"
+ActionStatusType = Literal[
+    "EXECUTION_FAILURE",
+    "EXECUTION_IN_PROGRESS",
+    "EXECUTION_SUCCESS",
+    "PENDING",
+    "RESET_FAILURE",
+    "RESET_IN_PROGRESS",
+    "REVERSE_FAILURE",
+    "REVERSE_IN_PROGRESS",
+    "REVERSE_SUCCESS",
+    "STANDBY",
+]
+```
 ## ActionSubTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ActionSubTypeType
+
+def get_value() -> ActionSubTypeType:
+    return "STOP_EC2_INSTANCES"
 ```
 
-Values:
-
-- `STOP_EC2_INSTANCES`
-- `STOP_RDS_INSTANCES`
-
-<a id="actiontypetype"></a>
-
+```python title="Definition"
+ActionSubTypeType = Literal[
+    "STOP_EC2_INSTANCES",
+    "STOP_RDS_INSTANCES",
+]
+```
 ## ActionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ActionTypeType
+
+def get_value() -> ActionTypeType:
+    return "APPLY_IAM_POLICY"
 ```
 
-Values:
-
-- `APPLY_IAM_POLICY`
-- `APPLY_SCP_POLICY`
-- `RUN_SSM_DOCUMENTS`
-
-<a id="approvalmodeltype"></a>
-
+```python title="Definition"
+ActionTypeType = Literal[
+    "APPLY_IAM_POLICY",
+    "APPLY_SCP_POLICY",
+    "RUN_SSM_DOCUMENTS",
+]
+```
 ## ApprovalModelType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ApprovalModelType
+
+def get_value() -> ApprovalModelType:
+    return "AUTOMATIC"
 ```
 
-Values:
-
-- `AUTOMATIC`
-- `MANUAL`
-
-<a id="autoadjusttypetype"></a>
-
+```python title="Definition"
+ApprovalModelType = Literal[
+    "AUTOMATIC",
+    "MANUAL",
+]
+```
 ## AutoAdjustTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import AutoAdjustTypeType
+
+def get_value() -> AutoAdjustTypeType:
+    return "FORECAST"
 ```
 
-Values:
-
-- `FORECAST`
-- `HISTORICAL`
-
-<a id="budgettypetype"></a>
-
+```python title="Definition"
+AutoAdjustTypeType = Literal[
+    "FORECAST",
+    "HISTORICAL",
+]
+```
 ## BudgetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import BudgetTypeType
+
+def get_value() -> BudgetTypeType:
+    return "COST"
 ```
 
-Values:
-
-- `COST`
-- `RI_COVERAGE`
-- `RI_UTILIZATION`
-- `SAVINGS_PLANS_COVERAGE`
-- `SAVINGS_PLANS_UTILIZATION`
-- `USAGE`
-
-<a id="comparisonoperatortype"></a>
-
+```python title="Definition"
+BudgetTypeType = Literal[
+    "COST",
+    "RI_COVERAGE",
+    "RI_UTILIZATION",
+    "SAVINGS_PLANS_COVERAGE",
+    "SAVINGS_PLANS_UTILIZATION",
+    "USAGE",
+]
+```
 ## ComparisonOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ComparisonOperatorType
+
+def get_value() -> ComparisonOperatorType:
+    return "EQUAL_TO"
 ```
 
-Values:
-
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `LESS_THAN`
-
-<a id="describebudgetactionhistoriespaginatorname"></a>
-
+```python title="Definition"
+ComparisonOperatorType = Literal[
+    "EQUAL_TO",
+    "GREATER_THAN",
+    "LESS_THAN",
+]
+```
 ## DescribeBudgetActionHistoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetActionHistoriesPaginatorName
+
+def get_value() -> DescribeBudgetActionHistoriesPaginatorName:
+    return "describe_budget_action_histories"
 ```
 
-Values:
-
-- `describe_budget_action_histories`
-
-<a id="describebudgetactionsforaccountpaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetActionHistoriesPaginatorName = Literal[
+    "describe_budget_action_histories",
+]
+```
 ## DescribeBudgetActionsForAccountPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetActionsForAccountPaginatorName
+
+def get_value() -> DescribeBudgetActionsForAccountPaginatorName:
+    return "describe_budget_actions_for_account"
 ```
 
-Values:
-
-- `describe_budget_actions_for_account`
-
-<a id="describebudgetactionsforbudgetpaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetActionsForAccountPaginatorName = Literal[
+    "describe_budget_actions_for_account",
+]
+```
 ## DescribeBudgetActionsForBudgetPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetActionsForBudgetPaginatorName
+
+def get_value() -> DescribeBudgetActionsForBudgetPaginatorName:
+    return "describe_budget_actions_for_budget"
 ```
 
-Values:
-
-- `describe_budget_actions_for_budget`
-
-<a id="describebudgetnotificationsforaccountpaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetActionsForBudgetPaginatorName = Literal[
+    "describe_budget_actions_for_budget",
+]
+```
 ## DescribeBudgetNotificationsForAccountPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetNotificationsForAccountPaginatorName
+
+def get_value() -> DescribeBudgetNotificationsForAccountPaginatorName:
+    return "describe_budget_notifications_for_account"
 ```
 
-Values:
-
-- `describe_budget_notifications_for_account`
-
-<a id="describebudgetperformancehistorypaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetNotificationsForAccountPaginatorName = Literal[
+    "describe_budget_notifications_for_account",
+]
+```
 ## DescribeBudgetPerformanceHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetPerformanceHistoryPaginatorName
+
+def get_value() -> DescribeBudgetPerformanceHistoryPaginatorName:
+    return "describe_budget_performance_history"
 ```
 
-Values:
-
-- `describe_budget_performance_history`
-
-<a id="describebudgetspaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetPerformanceHistoryPaginatorName = Literal[
+    "describe_budget_performance_history",
+]
+```
 ## DescribeBudgetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeBudgetsPaginatorName
+
+def get_value() -> DescribeBudgetsPaginatorName:
+    return "describe_budgets"
 ```
 
-Values:
-
-- `describe_budgets`
-
-<a id="describenotificationsforbudgetpaginatorname"></a>
-
+```python title="Definition"
+DescribeBudgetsPaginatorName = Literal[
+    "describe_budgets",
+]
+```
 ## DescribeNotificationsForBudgetPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeNotificationsForBudgetPaginatorName
+
+def get_value() -> DescribeNotificationsForBudgetPaginatorName:
+    return "describe_notifications_for_budget"
 ```
 
-Values:
-
-- `describe_notifications_for_budget`
-
-<a id="describesubscribersfornotificationpaginatorname"></a>
-
+```python title="Definition"
+DescribeNotificationsForBudgetPaginatorName = Literal[
+    "describe_notifications_for_budget",
+]
+```
 ## DescribeSubscribersForNotificationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import DescribeSubscribersForNotificationPaginatorName
+
+def get_value() -> DescribeSubscribersForNotificationPaginatorName:
+    return "describe_subscribers_for_notification"
 ```
 
-Values:
-
-- `describe_subscribers_for_notification`
-
-<a id="eventtypetype"></a>
-
+```python title="Definition"
+DescribeSubscribersForNotificationPaginatorName = Literal[
+    "describe_subscribers_for_notification",
+]
+```
 ## EventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import EventTypeType
+
+def get_value() -> EventTypeType:
+    return "CREATE_ACTION"
 ```
 
-Values:
-
-- `CREATE_ACTION`
-- `DELETE_ACTION`
-- `EXECUTE_ACTION`
-- `SYSTEM`
-- `UPDATE_ACTION`
-
-<a id="executiontypetype"></a>
-
+```python title="Definition"
+EventTypeType = Literal[
+    "CREATE_ACTION",
+    "DELETE_ACTION",
+    "EXECUTE_ACTION",
+    "SYSTEM",
+    "UPDATE_ACTION",
+]
+```
 ## ExecutionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ExecutionTypeType
+
+def get_value() -> ExecutionTypeType:
+    return "APPROVE_BUDGET_ACTION"
 ```
 
-Values:
-
-- `APPROVE_BUDGET_ACTION`
-- `RESET_BUDGET_ACTION`
-- `RETRY_BUDGET_ACTION`
-- `REVERSE_BUDGET_ACTION`
-
-<a id="notificationstatetype"></a>
-
+```python title="Definition"
+ExecutionTypeType = Literal[
+    "APPROVE_BUDGET_ACTION",
+    "RESET_BUDGET_ACTION",
+    "RETRY_BUDGET_ACTION",
+    "REVERSE_BUDGET_ACTION",
+]
+```
 ## NotificationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import NotificationStateType
+
+def get_value() -> NotificationStateType:
+    return "ALARM"
 ```
 
-Values:
-
-- `ALARM`
-- `OK`
-
-<a id="notificationtypetype"></a>
-
+```python title="Definition"
+NotificationStateType = Literal[
+    "ALARM",
+    "OK",
+]
+```
 ## NotificationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import NotificationTypeType
+
+def get_value() -> NotificationTypeType:
+    return "ACTUAL"
 ```
 
-Values:
-
-- `ACTUAL`
-- `FORECASTED`
-
-<a id="subscriptiontypetype"></a>
-
+```python title="Definition"
+NotificationTypeType = Literal[
+    "ACTUAL",
+    "FORECASTED",
+]
+```
 ## SubscriptionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import SubscriptionTypeType
+
+def get_value() -> SubscriptionTypeType:
+    return "EMAIL"
 ```
 
-Values:
-
-- `EMAIL`
-- `SNS`
-
-<a id="thresholdtypetype"></a>
-
+```python title="Definition"
+SubscriptionTypeType = Literal[
+    "EMAIL",
+    "SNS",
+]
+```
 ## ThresholdTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ThresholdTypeType
+
+def get_value() -> ThresholdTypeType:
+    return "ABSOLUTE_VALUE"
 ```
 
-Values:
-
-- `ABSOLUTE_VALUE`
-- `PERCENTAGE`
-
-<a id="timeunittype"></a>
-
+```python title="Definition"
+ThresholdTypeType = Literal[
+    "ABSOLUTE_VALUE",
+    "PERCENTAGE",
+]
+```
 ## TimeUnitType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import TimeUnitType
+
+def get_value() -> TimeUnitType:
+    return "ANNUALLY"
 ```
 
-Values:
-
-- `ANNUALLY`
-- `DAILY`
-- `MONTHLY`
-- `QUARTERLY`
-
-<a id="budgetsservicename"></a>
-
+```python title="Definition"
+TimeUnitType = Literal[
+    "ANNUALLY",
+    "DAILY",
+    "MONTHLY",
+    "QUARTERLY",
+]
+```
 ## BudgetsServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import BudgetsServiceName
+
+def get_value() -> BudgetsServiceName:
+    return "budgets"
 ```
 
-Values:
-
-- `budgets`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+BudgetsServiceName = Literal[
+    "budgets",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_budget_action_histories"
 ```
 
-Values:
-
-- `describe_budget_action_histories`
-- `describe_budget_actions_for_account`
-- `describe_budget_actions_for_budget`
-- `describe_budget_notifications_for_account`
-- `describe_budget_performance_history`
-- `describe_budgets`
-- `describe_notifications_for_budget`
-- `describe_subscribers_for_notification`
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_budget_action_histories",
+    "describe_budget_actions_for_account",
+    "describe_budget_actions_for_budget",
+    "describe_budget_notifications_for_account",
+    "describe_budget_performance_history",
+    "describe_budgets",
+    "describe_notifications_for_budget",
+    "describe_subscribers_for_notification",
+]
+```

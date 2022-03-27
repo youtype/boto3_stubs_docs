@@ -1,959 +1,1000 @@
-<a id="literals-for-boto3-proton-module"></a>
-
-# Literals for boto3 Proton module
+# Literals
 
 > [Index](../README.md) > [Proton](./README.md) > Literals
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [Literals for boto3 Proton module](#literals-for-boto3-proton-module)
-  - [DeploymentStatusType](#deploymentstatustype)
-  - [DeploymentUpdateTypeType](#deploymentupdatetypetype)
-  - [EnvironmentAccountConnectionRequesterAccountTypeType](#environmentaccountconnectionrequesteraccounttypetype)
-  - [EnvironmentAccountConnectionStatusType](#environmentaccountconnectionstatustype)
-  - [EnvironmentDeployedWaiterName](#environmentdeployedwaitername)
-  - [EnvironmentTemplateVersionRegisteredWaiterName](#environmenttemplateversionregisteredwaitername)
-  - [ListEnvironmentAccountConnectionsPaginatorName](#listenvironmentaccountconnectionspaginatorname)
-  - [ListEnvironmentOutputsPaginatorName](#listenvironmentoutputspaginatorname)
-  - [ListEnvironmentProvisionedResourcesPaginatorName](#listenvironmentprovisionedresourcespaginatorname)
-  - [ListEnvironmentTemplateVersionsPaginatorName](#listenvironmenttemplateversionspaginatorname)
-  - [ListEnvironmentTemplatesPaginatorName](#listenvironmenttemplatespaginatorname)
-  - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
-  - [ListRepositoriesPaginatorName](#listrepositoriespaginatorname)
-  - [ListRepositorySyncDefinitionsPaginatorName](#listrepositorysyncdefinitionspaginatorname)
-  - [ListServiceInstanceOutputsPaginatorName](#listserviceinstanceoutputspaginatorname)
-  - [ListServiceInstanceProvisionedResourcesPaginatorName](#listserviceinstanceprovisionedresourcespaginatorname)
-  - [ListServiceInstancesPaginatorName](#listserviceinstancespaginatorname)
-  - [ListServicePipelineOutputsPaginatorName](#listservicepipelineoutputspaginatorname)
-  - [ListServicePipelineProvisionedResourcesPaginatorName](#listservicepipelineprovisionedresourcespaginatorname)
-  - [ListServiceTemplateVersionsPaginatorName](#listservicetemplateversionspaginatorname)
-  - [ListServiceTemplatesPaginatorName](#listservicetemplatespaginatorname)
-  - [ListServicesPaginatorName](#listservicespaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [ProvisionedResourceEngineType](#provisionedresourceenginetype)
-  - [ProvisioningType](#provisioningtype)
-  - [RepositoryProviderType](#repositoryprovidertype)
-  - [RepositorySyncStatusType](#repositorysyncstatustype)
-  - [ResourceDeploymentStatusType](#resourcedeploymentstatustype)
-  - [ResourceSyncStatusType](#resourcesyncstatustype)
-  - [ServiceCreatedWaiterName](#servicecreatedwaitername)
-  - [ServiceDeletedWaiterName](#servicedeletedwaitername)
-  - [ServiceInstanceDeployedWaiterName](#serviceinstancedeployedwaitername)
-  - [ServicePipelineDeployedWaiterName](#servicepipelinedeployedwaitername)
-  - [ServiceStatusType](#servicestatustype)
-  - [ServiceTemplateVersionRegisteredWaiterName](#servicetemplateversionregisteredwaitername)
-  - [ServiceUpdatedWaiterName](#serviceupdatedwaitername)
-  - [SyncTypeType](#synctypetype)
-  - [TemplateTypeType](#templatetypetype)
-  - [TemplateVersionStatusType](#templateversionstatustype)
-  - [ProtonServiceName](#protonservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="deploymentstatustype"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## DeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import DeploymentStatusType
+
+def get_value() -> DeploymentStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `CANCELLING`
-- `DELETE_COMPLETE`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="deploymentupdatetypetype"></a>
-
+```python title="Definition"
+DeploymentStatusType = Literal[
+    "CANCELLED",
+    "CANCELLING",
+    "DELETE_COMPLETE",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## DeploymentUpdateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import DeploymentUpdateTypeType
+
+def get_value() -> DeploymentUpdateTypeType:
+    return "CURRENT_VERSION"
 ```
 
-Values:
-
-- `CURRENT_VERSION`
-- `MAJOR_VERSION`
-- `MINOR_VERSION`
-- `NONE`
-
-<a id="environmentaccountconnectionrequesteraccounttypetype"></a>
-
+```python title="Definition"
+DeploymentUpdateTypeType = Literal[
+    "CURRENT_VERSION",
+    "MAJOR_VERSION",
+    "MINOR_VERSION",
+    "NONE",
+]
+```
 ## EnvironmentAccountConnectionRequesterAccountTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import EnvironmentAccountConnectionRequesterAccountTypeType
+
+def get_value() -> EnvironmentAccountConnectionRequesterAccountTypeType:
+    return "ENVIRONMENT_ACCOUNT"
 ```
 
-Values:
-
-- `ENVIRONMENT_ACCOUNT`
-- `MANAGEMENT_ACCOUNT`
-
-<a id="environmentaccountconnectionstatustype"></a>
-
+```python title="Definition"
+EnvironmentAccountConnectionRequesterAccountTypeType = Literal[
+    "ENVIRONMENT_ACCOUNT",
+    "MANAGEMENT_ACCOUNT",
+]
+```
 ## EnvironmentAccountConnectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import EnvironmentAccountConnectionStatusType
+
+def get_value() -> EnvironmentAccountConnectionStatusType:
+    return "CONNECTED"
 ```
 
-Values:
-
-- `CONNECTED`
-- `PENDING`
-- `REJECTED`
-
-<a id="environmentdeployedwaitername"></a>
-
+```python title="Definition"
+EnvironmentAccountConnectionStatusType = Literal[
+    "CONNECTED",
+    "PENDING",
+    "REJECTED",
+]
+```
 ## EnvironmentDeployedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import EnvironmentDeployedWaiterName
+
+def get_value() -> EnvironmentDeployedWaiterName:
+    return "environment_deployed"
 ```
 
-Values:
-
-- `environment_deployed`
-
-<a id="environmenttemplateversionregisteredwaitername"></a>
-
+```python title="Definition"
+EnvironmentDeployedWaiterName = Literal[
+    "environment_deployed",
+]
+```
 ## EnvironmentTemplateVersionRegisteredWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import EnvironmentTemplateVersionRegisteredWaiterName
+
+def get_value() -> EnvironmentTemplateVersionRegisteredWaiterName:
+    return "environment_template_version_registered"
 ```
 
-Values:
-
-- `environment_template_version_registered`
-
-<a id="listenvironmentaccountconnectionspaginatorname"></a>
-
+```python title="Definition"
+EnvironmentTemplateVersionRegisteredWaiterName = Literal[
+    "environment_template_version_registered",
+]
+```
 ## ListEnvironmentAccountConnectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentAccountConnectionsPaginatorName
+
+def get_value() -> ListEnvironmentAccountConnectionsPaginatorName:
+    return "list_environment_account_connections"
 ```
 
-Values:
-
-- `list_environment_account_connections`
-
-<a id="listenvironmentoutputspaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentAccountConnectionsPaginatorName = Literal[
+    "list_environment_account_connections",
+]
+```
 ## ListEnvironmentOutputsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentOutputsPaginatorName
+
+def get_value() -> ListEnvironmentOutputsPaginatorName:
+    return "list_environment_outputs"
 ```
 
-Values:
-
-- `list_environment_outputs`
-
-<a id="listenvironmentprovisionedresourcespaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentOutputsPaginatorName = Literal[
+    "list_environment_outputs",
+]
+```
 ## ListEnvironmentProvisionedResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentProvisionedResourcesPaginatorName
+
+def get_value() -> ListEnvironmentProvisionedResourcesPaginatorName:
+    return "list_environment_provisioned_resources"
 ```
 
-Values:
-
-- `list_environment_provisioned_resources`
-
-<a id="listenvironmenttemplateversionspaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentProvisionedResourcesPaginatorName = Literal[
+    "list_environment_provisioned_resources",
+]
+```
 ## ListEnvironmentTemplateVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentTemplateVersionsPaginatorName
+
+def get_value() -> ListEnvironmentTemplateVersionsPaginatorName:
+    return "list_environment_template_versions"
 ```
 
-Values:
-
-- `list_environment_template_versions`
-
-<a id="listenvironmenttemplatespaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentTemplateVersionsPaginatorName = Literal[
+    "list_environment_template_versions",
+]
+```
 ## ListEnvironmentTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentTemplatesPaginatorName
+
+def get_value() -> ListEnvironmentTemplatesPaginatorName:
+    return "list_environment_templates"
 ```
 
-Values:
-
-- `list_environment_templates`
-
-<a id="listenvironmentspaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentTemplatesPaginatorName = Literal[
+    "list_environment_templates",
+]
+```
 ## ListEnvironmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListEnvironmentsPaginatorName
+
+def get_value() -> ListEnvironmentsPaginatorName:
+    return "list_environments"
 ```
 
-Values:
-
-- `list_environments`
-
-<a id="listrepositoriespaginatorname"></a>
-
+```python title="Definition"
+ListEnvironmentsPaginatorName = Literal[
+    "list_environments",
+]
+```
 ## ListRepositoriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListRepositoriesPaginatorName
+
+def get_value() -> ListRepositoriesPaginatorName:
+    return "list_repositories"
 ```
 
-Values:
-
-- `list_repositories`
-
-<a id="listrepositorysyncdefinitionspaginatorname"></a>
-
+```python title="Definition"
+ListRepositoriesPaginatorName = Literal[
+    "list_repositories",
+]
+```
 ## ListRepositorySyncDefinitionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListRepositorySyncDefinitionsPaginatorName
+
+def get_value() -> ListRepositorySyncDefinitionsPaginatorName:
+    return "list_repository_sync_definitions"
 ```
 
-Values:
-
-- `list_repository_sync_definitions`
-
-<a id="listserviceinstanceoutputspaginatorname"></a>
-
+```python title="Definition"
+ListRepositorySyncDefinitionsPaginatorName = Literal[
+    "list_repository_sync_definitions",
+]
+```
 ## ListServiceInstanceOutputsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServiceInstanceOutputsPaginatorName
+
+def get_value() -> ListServiceInstanceOutputsPaginatorName:
+    return "list_service_instance_outputs"
 ```
 
-Values:
-
-- `list_service_instance_outputs`
-
-<a id="listserviceinstanceprovisionedresourcespaginatorname"></a>
-
+```python title="Definition"
+ListServiceInstanceOutputsPaginatorName = Literal[
+    "list_service_instance_outputs",
+]
+```
 ## ListServiceInstanceProvisionedResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServiceInstanceProvisionedResourcesPaginatorName
+
+def get_value() -> ListServiceInstanceProvisionedResourcesPaginatorName:
+    return "list_service_instance_provisioned_resources"
 ```
 
-Values:
-
-- `list_service_instance_provisioned_resources`
-
-<a id="listserviceinstancespaginatorname"></a>
-
+```python title="Definition"
+ListServiceInstanceProvisionedResourcesPaginatorName = Literal[
+    "list_service_instance_provisioned_resources",
+]
+```
 ## ListServiceInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServiceInstancesPaginatorName
+
+def get_value() -> ListServiceInstancesPaginatorName:
+    return "list_service_instances"
 ```
 
-Values:
-
-- `list_service_instances`
-
-<a id="listservicepipelineoutputspaginatorname"></a>
-
+```python title="Definition"
+ListServiceInstancesPaginatorName = Literal[
+    "list_service_instances",
+]
+```
 ## ListServicePipelineOutputsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServicePipelineOutputsPaginatorName
+
+def get_value() -> ListServicePipelineOutputsPaginatorName:
+    return "list_service_pipeline_outputs"
 ```
 
-Values:
-
-- `list_service_pipeline_outputs`
-
-<a id="listservicepipelineprovisionedresourcespaginatorname"></a>
-
+```python title="Definition"
+ListServicePipelineOutputsPaginatorName = Literal[
+    "list_service_pipeline_outputs",
+]
+```
 ## ListServicePipelineProvisionedResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServicePipelineProvisionedResourcesPaginatorName
+
+def get_value() -> ListServicePipelineProvisionedResourcesPaginatorName:
+    return "list_service_pipeline_provisioned_resources"
 ```
 
-Values:
-
-- `list_service_pipeline_provisioned_resources`
-
-<a id="listservicetemplateversionspaginatorname"></a>
-
+```python title="Definition"
+ListServicePipelineProvisionedResourcesPaginatorName = Literal[
+    "list_service_pipeline_provisioned_resources",
+]
+```
 ## ListServiceTemplateVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServiceTemplateVersionsPaginatorName
+
+def get_value() -> ListServiceTemplateVersionsPaginatorName:
+    return "list_service_template_versions"
 ```
 
-Values:
-
-- `list_service_template_versions`
-
-<a id="listservicetemplatespaginatorname"></a>
-
+```python title="Definition"
+ListServiceTemplateVersionsPaginatorName = Literal[
+    "list_service_template_versions",
+]
+```
 ## ListServiceTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServiceTemplatesPaginatorName
+
+def get_value() -> ListServiceTemplatesPaginatorName:
+    return "list_service_templates"
 ```
 
-Values:
-
-- `list_service_templates`
-
-<a id="listservicespaginatorname"></a>
-
+```python title="Definition"
+ListServiceTemplatesPaginatorName = Literal[
+    "list_service_templates",
+]
+```
 ## ListServicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListServicesPaginatorName
+
+def get_value() -> ListServicesPaginatorName:
+    return "list_services"
 ```
 
-Values:
-
-- `list_services`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListServicesPaginatorName = Literal[
+    "list_services",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="provisionedresourceenginetype"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## ProvisionedResourceEngineType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ProvisionedResourceEngineType
+
+def get_value() -> ProvisionedResourceEngineType:
+    return "CLOUDFORMATION"
 ```
 
-Values:
-
-- `CLOUDFORMATION`
-- `TERRAFORM`
-
-<a id="provisioningtype"></a>
-
+```python title="Definition"
+ProvisionedResourceEngineType = Literal[
+    "CLOUDFORMATION",
+    "TERRAFORM",
+]
+```
 ## ProvisioningType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ProvisioningType
+
+def get_value() -> ProvisioningType:
+    return "CUSTOMER_MANAGED"
 ```
 
-Values:
-
-- `CUSTOMER_MANAGED`
-
-<a id="repositoryprovidertype"></a>
-
+```python title="Definition"
+ProvisioningType = Literal[
+    "CUSTOMER_MANAGED",
+]
+```
 ## RepositoryProviderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import RepositoryProviderType
+
+def get_value() -> RepositoryProviderType:
+    return "BITBUCKET"
 ```
 
-Values:
-
-- `BITBUCKET`
-- `GITHUB`
-- `GITHUB_ENTERPRISE`
-
-<a id="repositorysyncstatustype"></a>
-
+```python title="Definition"
+RepositoryProviderType = Literal[
+    "BITBUCKET",
+    "GITHUB",
+    "GITHUB_ENTERPRISE",
+]
+```
 ## RepositorySyncStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import RepositorySyncStatusType
+
+def get_value() -> RepositorySyncStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `INITIATED`
-- `QUEUED`
-- `SUCCEEDED`
-
-<a id="resourcedeploymentstatustype"></a>
-
+```python title="Definition"
+RepositorySyncStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "INITIATED",
+    "QUEUED",
+    "SUCCEEDED",
+]
+```
 ## ResourceDeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ResourceDeploymentStatusType
+
+def get_value() -> ResourceDeploymentStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `SUCCEEDED`
-
-<a id="resourcesyncstatustype"></a>
-
+```python title="Definition"
+ResourceDeploymentStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "SUCCEEDED",
+]
+```
 ## ResourceSyncStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ResourceSyncStatusType
+
+def get_value() -> ResourceSyncStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `IN_PROGRESS`
-- `INITIATED`
-- `SUCCEEDED`
-
-<a id="servicecreatedwaitername"></a>
-
+```python title="Definition"
+ResourceSyncStatusType = Literal[
+    "FAILED",
+    "IN_PROGRESS",
+    "INITIATED",
+    "SUCCEEDED",
+]
+```
 ## ServiceCreatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceCreatedWaiterName
+
+def get_value() -> ServiceCreatedWaiterName:
+    return "service_created"
 ```
 
-Values:
-
-- `service_created`
-
-<a id="servicedeletedwaitername"></a>
-
+```python title="Definition"
+ServiceCreatedWaiterName = Literal[
+    "service_created",
+]
+```
 ## ServiceDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceDeletedWaiterName
+
+def get_value() -> ServiceDeletedWaiterName:
+    return "service_deleted"
 ```
 
-Values:
-
-- `service_deleted`
-
-<a id="serviceinstancedeployedwaitername"></a>
-
+```python title="Definition"
+ServiceDeletedWaiterName = Literal[
+    "service_deleted",
+]
+```
 ## ServiceInstanceDeployedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceInstanceDeployedWaiterName
+
+def get_value() -> ServiceInstanceDeployedWaiterName:
+    return "service_instance_deployed"
 ```
 
-Values:
-
-- `service_instance_deployed`
-
-<a id="servicepipelinedeployedwaitername"></a>
-
+```python title="Definition"
+ServiceInstanceDeployedWaiterName = Literal[
+    "service_instance_deployed",
+]
+```
 ## ServicePipelineDeployedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServicePipelineDeployedWaiterName
+
+def get_value() -> ServicePipelineDeployedWaiterName:
+    return "service_pipeline_deployed"
 ```
 
-Values:
-
-- `service_pipeline_deployed`
-
-<a id="servicestatustype"></a>
-
+```python title="Definition"
+ServicePipelineDeployedWaiterName = Literal[
+    "service_pipeline_deployed",
+]
+```
 ## ServiceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceStatusType
+
+def get_value() -> ServiceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATE_FAILED`
-- `CREATE_FAILED_CLEANUP_COMPLETE`
-- `CREATE_FAILED_CLEANUP_FAILED`
-- `CREATE_FAILED_CLEANUP_IN_PROGRESS`
-- `CREATE_IN_PROGRESS`
-- `DELETE_FAILED`
-- `DELETE_IN_PROGRESS`
-- `UPDATE_COMPLETE_CLEANUP_FAILED`
-- `UPDATE_FAILED`
-- `UPDATE_FAILED_CLEANUP_COMPLETE`
-- `UPDATE_FAILED_CLEANUP_FAILED`
-- `UPDATE_FAILED_CLEANUP_IN_PROGRESS`
-- `UPDATE_IN_PROGRESS`
-
-<a id="servicetemplateversionregisteredwaitername"></a>
-
+```python title="Definition"
+ServiceStatusType = Literal[
+    "ACTIVE",
+    "CREATE_FAILED",
+    "CREATE_FAILED_CLEANUP_COMPLETE",
+    "CREATE_FAILED_CLEANUP_FAILED",
+    "CREATE_FAILED_CLEANUP_IN_PROGRESS",
+    "CREATE_IN_PROGRESS",
+    "DELETE_FAILED",
+    "DELETE_IN_PROGRESS",
+    "UPDATE_COMPLETE_CLEANUP_FAILED",
+    "UPDATE_FAILED",
+    "UPDATE_FAILED_CLEANUP_COMPLETE",
+    "UPDATE_FAILED_CLEANUP_FAILED",
+    "UPDATE_FAILED_CLEANUP_IN_PROGRESS",
+    "UPDATE_IN_PROGRESS",
+]
+```
 ## ServiceTemplateVersionRegisteredWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceTemplateVersionRegisteredWaiterName
+
+def get_value() -> ServiceTemplateVersionRegisteredWaiterName:
+    return "service_template_version_registered"
 ```
 
-Values:
-
-- `service_template_version_registered`
-
-<a id="serviceupdatedwaitername"></a>
-
+```python title="Definition"
+ServiceTemplateVersionRegisteredWaiterName = Literal[
+    "service_template_version_registered",
+]
+```
 ## ServiceUpdatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceUpdatedWaiterName
+
+def get_value() -> ServiceUpdatedWaiterName:
+    return "service_updated"
 ```
 
-Values:
-
-- `service_updated`
-
-<a id="synctypetype"></a>
-
+```python title="Definition"
+ServiceUpdatedWaiterName = Literal[
+    "service_updated",
+]
+```
 ## SyncTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import SyncTypeType
+
+def get_value() -> SyncTypeType:
+    return "TEMPLATE_SYNC"
 ```
 
-Values:
-
-- `TEMPLATE_SYNC`
-
-<a id="templatetypetype"></a>
-
+```python title="Definition"
+SyncTypeType = Literal[
+    "TEMPLATE_SYNC",
+]
+```
 ## TemplateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import TemplateTypeType
+
+def get_value() -> TemplateTypeType:
+    return "ENVIRONMENT"
 ```
 
-Values:
-
-- `ENVIRONMENT`
-- `SERVICE`
-
-<a id="templateversionstatustype"></a>
-
+```python title="Definition"
+TemplateTypeType = Literal[
+    "ENVIRONMENT",
+    "SERVICE",
+]
+```
 ## TemplateVersionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import TemplateVersionStatusType
+
+def get_value() -> TemplateVersionStatusType:
+    return "DRAFT"
 ```
 
-Values:
-
-- `DRAFT`
-- `PUBLISHED`
-- `REGISTRATION_FAILED`
-- `REGISTRATION_IN_PROGRESS`
-
-<a id="protonservicename"></a>
-
+```python title="Definition"
+TemplateVersionStatusType = Literal[
+    "DRAFT",
+    "PUBLISHED",
+    "REGISTRATION_FAILED",
+    "REGISTRATION_IN_PROGRESS",
+]
+```
 ## ProtonServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ProtonServiceName
+
+def get_value() -> ProtonServiceName:
+    return "proton"
 ```
 
-Values:
-
-- `proton`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+ProtonServiceName = Literal[
+    "proton",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_environment_account_connections"
 ```
 
-Values:
-
-- `list_environment_account_connections`
-- `list_environment_outputs`
-- `list_environment_provisioned_resources`
-- `list_environment_template_versions`
-- `list_environment_templates`
-- `list_environments`
-- `list_repositories`
-- `list_repository_sync_definitions`
-- `list_service_instance_outputs`
-- `list_service_instance_provisioned_resources`
-- `list_service_instances`
-- `list_service_pipeline_outputs`
-- `list_service_pipeline_provisioned_resources`
-- `list_service_template_versions`
-- `list_service_templates`
-- `list_services`
-- `list_tags_for_resource`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "list_environment_account_connections",
+    "list_environment_outputs",
+    "list_environment_provisioned_resources",
+    "list_environment_template_versions",
+    "list_environment_templates",
+    "list_environments",
+    "list_repositories",
+    "list_repository_sync_definitions",
+    "list_service_instance_outputs",
+    "list_service_instance_provisioned_resources",
+    "list_service_instances",
+    "list_service_pipeline_outputs",
+    "list_service_pipeline_provisioned_resources",
+    "list_service_template_versions",
+    "list_service_templates",
+    "list_services",
+    "list_tags_for_resource",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_proton.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "environment_deployed"
 ```
 
-Values:
-
-- `environment_deployed`
-- `environment_template_version_registered`
-- `service_created`
-- `service_deleted`
-- `service_instance_deployed`
-- `service_pipeline_deployed`
-- `service_template_version_registered`
-- `service_updated`
+```python title="Definition"
+WaiterName = Literal[
+    "environment_deployed",
+    "environment_template_version_registered",
+    "service_created",
+    "service_deleted",
+    "service_instance_deployed",
+    "service_pipeline_deployed",
+    "service_template_version_registered",
+    "service_updated",
+]
+```

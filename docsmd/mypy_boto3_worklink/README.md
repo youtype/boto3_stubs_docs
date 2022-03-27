@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-worklink-module"></a>
-
-# Type annotations for boto3 WorkLink module
+#  WorkLink module
 
 > [Index](../README.md) > WorkLink
 
-Auto-generated documentation for
-[WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
-type annotations stubs module
-[mypy-boto3-worklink](https://pypi.org/project/mypy-boto3-worklink/).
+!!! note ""
 
-- [Type annotations for boto3 WorkLink module](#type-annotations-for-boto3-worklink-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [WorkLinkClient](#worklinkclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
+    type annotations stubs module [mypy-boto3-worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `WorkLink`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[worklink]'
 python -m pip install mypy-boto3-worklink
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,90 +42,41 @@ python -m pip install mypy-boto3-worklink
 python -m pip uninstall -y mypy-boto3-worklink
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="worklinkclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## WorkLinkClient
 
-Type annotations for `boto3.client("worklink")` as
-[WorkLinkClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("worklink")` as [WorkLinkClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_worklink.client import WorkLinkClient
+
+def get_client() -> WorkLinkClient:
+    return Session().cleint("worklink")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [associate_domain](./client.md#associate_domain)
-- [associate_website_authorization_provider](./client.md#associate_website_authorization_provider)
-- [associate_website_certificate_authority](./client.md#associate_website_certificate_authority)
-- [can_paginate](./client.md#can_paginate)
-- [create_fleet](./client.md#create_fleet)
-- [delete_fleet](./client.md#delete_fleet)
-- [describe_audit_stream_configuration](./client.md#describe_audit_stream_configuration)
-- [describe_company_network_configuration](./client.md#describe_company_network_configuration)
-- [describe_device](./client.md#describe_device)
-- [describe_device_policy_configuration](./client.md#describe_device_policy_configuration)
-- [describe_domain](./client.md#describe_domain)
-- [describe_fleet_metadata](./client.md#describe_fleet_metadata)
-- [describe_identity_provider_configuration](./client.md#describe_identity_provider_configuration)
-- [describe_website_certificate_authority](./client.md#describe_website_certificate_authority)
-- [disassociate_domain](./client.md#disassociate_domain)
-- [disassociate_website_authorization_provider](./client.md#disassociate_website_authorization_provider)
-- [disassociate_website_certificate_authority](./client.md#disassociate_website_certificate_authority)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [list_devices](./client.md#list_devices)
-- [list_domains](./client.md#list_domains)
-- [list_fleets](./client.md#list_fleets)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_website_authorization_providers](./client.md#list_website_authorization_providers)
-- [list_website_certificate_authorities](./client.md#list_website_certificate_authorities)
-- [restore_domain_access](./client.md#restore_domain_access)
-- [revoke_domain_access](./client.md#revoke_domain_access)
-- [sign_out_user](./client.md#sign_out_user)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_audit_stream_configuration](./client.md#update_audit_stream_configuration)
-- [update_company_network_configuration](./client.md#update_company_network_configuration)
-- [update_device_policy_configuration](./client.md#update_device_policy_configuration)
-- [update_domain_metadata](./client.md#update_domain_metadata)
-- [update_fleet_metadata](./client.md#update_fleet_metadata)
-- [update_identity_provider_configuration](./client.md#update_identity_provider_configuration)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-WorkLinkClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- InternalServerErrorException
-- InvalidRequestException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- TooManyRequestsException
-- UnauthorizedException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_worklink.literals import AuthorizationProviderTypeType
 
-```python
-from mypy_boto3_worklink.literals import AuthorizationProviderTypeType, ...
+def get_value() -> AuthorizationProviderTypeType:
+    return "SAML"
 ```
 
 - [AuthorizationProviderTypeType](./literals.md#authorizationprovidertypetype)
@@ -158,17 +88,22 @@ from mypy_boto3_worklink.literals import AuthorizationProviderTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_worklink.type_defs import AssociateDomainRequestRequestTypeDef
 
-```python
-from mypy_boto3_worklink.type_defs import AssociateDomainRequestRequestTypeDef, ...
+def get_value() -> AssociateDomainRequestRequestTypeDef:
+    return {
+        "FleetArn": ...,
+        "DomainName": ...,
+        "AcmCertificateArn": ...,
+    }
 ```
 
 - [AssociateDomainRequestRequestTypeDef](./type_defs.md#associatedomainrequestrequesttypedef)
@@ -227,3 +162,4 @@ from mypy_boto3_worklink.type_defs import AssociateDomainRequestRequestTypeDef, 
 - [UpdateIdentityProviderConfigurationRequestRequestTypeDef](./type_defs.md#updateidentityproviderconfigurationrequestrequesttypedef)
 - [WebsiteAuthorizationProviderSummaryTypeDef](./type_defs.md#websiteauthorizationprovidersummarytypedef)
 - [WebsiteCaSummaryTypeDef](./type_defs.md#websitecasummarytypedef)
+

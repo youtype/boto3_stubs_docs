@@ -1,293 +1,357 @@
-<a id="typed-dictionaries-for-boto3-finspace-module"></a>
-
-# Typed dictionaries for boto3 finspace module
+# Typed dictionaries
 
 > [Index](../README.md) > [finspace](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
-type annotations stubs module
-[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
+!!! note ""
 
-- [Typed dictionaries for boto3 finspace module](#typed-dictionaries-for-boto3-finspace-module)
-  - [CreateEnvironmentRequestRequestTypeDef](#createenvironmentrequestrequesttypedef)
-  - [CreateEnvironmentResponseTypeDef](#createenvironmentresponsetypedef)
-  - [DeleteEnvironmentRequestRequestTypeDef](#deleteenvironmentrequestrequesttypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [FederationParametersTypeDef](#federationparameterstypedef)
-  - [GetEnvironmentRequestRequestTypeDef](#getenvironmentrequestrequesttypedef)
-  - [GetEnvironmentResponseTypeDef](#getenvironmentresponsetypedef)
-  - [ListEnvironmentsRequestRequestTypeDef](#listenvironmentsrequestrequesttypedef)
-  - [ListEnvironmentsResponseTypeDef](#listenvironmentsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SuperuserParametersTypeDef](#superuserparameterstypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
-  - [UpdateEnvironmentResponseTypeDef](#updateenvironmentresponsetypedef)
-
-<a id="createenvironmentrequestrequesttypedef"></a>
+    Auto-generated documentation for [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
+    type annotations stubs module [mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 ## CreateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import CreateEnvironmentRequestRequestTypeDef
+
+def get_value() -> CreateEnvironmentRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentRequestRequestTypeDef(TypedDict):
+    name: str,
+    description: NotRequired[str],
+    kmsKeyId: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    federationMode: NotRequired[FederationModeType],  # (1)
+    federationParameters: NotRequired[FederationParametersTypeDef],  # (2)
+    superuserParameters: NotRequired[SuperuserParametersTypeDef],  # (3)
+    dataBundles: NotRequired[Sequence[str]],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `description`: `str`
-- `kmsKeyId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
-- `federationParameters`:
-  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-- `superuserParameters`:
-  [SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef)
-- `dataBundles`: `Sequence`\[`str`\]
-
-<a id="createenvironmentresponsetypedef"></a>
-
+1. See [:material-code-brackets: FederationModeType](./literals.md#federationmodetype) 
+2. See [:material-code-braces: FederationParametersTypeDef](./type_defs.md#federationparameterstypedef) 
+3. See [:material-code-braces: SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef) 
 ## CreateEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import CreateEnvironmentResponseTypeDef
+
+def get_value() -> CreateEnvironmentResponseTypeDef:
+    return {
+        "environmentId": ...,
+        "environmentArn": ...,
+        "environmentUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEnvironmentResponseTypeDef(TypedDict):
+    environmentId: str,
+    environmentArn: str,
+    environmentUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `environmentId`: `str`
-- `environmentArn`: `str`
-- `environmentUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteenvironmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import DeleteEnvironmentRequestRequestTypeDef
+
+def get_value() -> DeleteEnvironmentRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentId`: `str`
-
-<a id="environmenttypedef"></a>
+```python title="Definition"
+class DeleteEnvironmentRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+```
 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    name: NotRequired[str],
+    environmentId: NotRequired[str],
+    awsAccountId: NotRequired[str],
+    status: NotRequired[EnvironmentStatusType],  # (1)
+    environmentUrl: NotRequired[str],
+    description: NotRequired[str],
+    environmentArn: NotRequired[str],
+    sageMakerStudioDomainUrl: NotRequired[str],
+    kmsKeyId: NotRequired[str],
+    dedicatedServiceAccountId: NotRequired[str],
+    federationMode: NotRequired[FederationModeType],  # (2)
+    federationParameters: NotRequired[FederationParametersTypeDef],  # (3)
+```
 
-- `name`: `str`
-- `environmentId`: `str`
-- `awsAccountId`: `str`
-- `status`: [EnvironmentStatusType](./literals.md#environmentstatustype)
-- `environmentUrl`: `str`
-- `description`: `str`
-- `environmentArn`: `str`
-- `sageMakerStudioDomainUrl`: `str`
-- `kmsKeyId`: `str`
-- `dedicatedServiceAccountId`: `str`
-- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
-- `federationParameters`:
-  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-
-<a id="federationparameterstypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentStatusType](./literals.md#environmentstatustype) 
+2. See [:material-code-brackets: FederationModeType](./literals.md#federationmodetype) 
+3. See [:material-code-braces: FederationParametersTypeDef](./type_defs.md#federationparameterstypedef) 
 ## FederationParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import FederationParametersTypeDef
+
+def get_value() -> FederationParametersTypeDef:
+    return {
+        "samlMetadataDocument": ...,
+    }
 ```
 
-Optional fields:
-
-- `samlMetadataDocument`: `str`
-- `samlMetadataURL`: `str`
-- `applicationCallBackURL`: `str`
-- `federationURN`: `str`
-- `federationProviderName`: `str`
-- `attributeMap`: `Mapping`\[`str`, `str`\]
-
-<a id="getenvironmentrequestrequesttypedef"></a>
+```python title="Definition"
+class FederationParametersTypeDef(TypedDict):
+    samlMetadataDocument: NotRequired[str],
+    samlMetadataURL: NotRequired[str],
+    applicationCallBackURL: NotRequired[str],
+    federationURN: NotRequired[str],
+    federationProviderName: NotRequired[str],
+    attributeMap: NotRequired[Mapping[str, str]],
+```
 
 ## GetEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import GetEnvironmentRequestRequestTypeDef
+
+def get_value() -> GetEnvironmentRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
-
-- `environmentId`: `str`
-
-<a id="getenvironmentresponsetypedef"></a>
+```python title="Definition"
+class GetEnvironmentRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+```
 
 ## GetEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import GetEnvironmentResponseTypeDef
+
+def get_value() -> GetEnvironmentResponseTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEnvironmentResponseTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listenvironmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEnvironmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import ListEnvironmentsRequestRequestTypeDef
+
+def get_value() -> ListEnvironmentsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listenvironmentsresponsetypedef"></a>
+```python title="Definition"
+class ListEnvironmentsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListEnvironmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import ListEnvironmentsResponseTypeDef
+
+def get_value() -> ListEnvironmentsResponseTypeDef:
+    return {
+        "environments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEnvironmentsResponseTypeDef(TypedDict):
+    environments: List[EnvironmentTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environments`:
-  `List`\[[EnvironmentTypeDef](./type_defs.md#environmenttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="superuserparameterstypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SuperuserParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import SuperuserParametersTypeDef
+
+def get_value() -> SuperuserParametersTypeDef:
+    return {
+        "emailAddress": ...,
+        "firstName": ...,
+        "lastName": ...,
+    }
 ```
 
-Required fields:
-
-- `emailAddress`: `str`
-- `firstName`: `str`
-- `lastName`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SuperuserParametersTypeDef(TypedDict):
+    emailAddress: str,
+    firstName: str,
+    lastName: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateenvironmentrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateEnvironmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import UpdateEnvironmentRequestRequestTypeDef
+
+def get_value() -> UpdateEnvironmentRequestRequestTypeDef:
+    return {
+        "environmentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentRequestRequestTypeDef(TypedDict):
+    environmentId: str,
+    name: NotRequired[str],
+    description: NotRequired[str],
+    federationMode: NotRequired[FederationModeType],  # (1)
+    federationParameters: NotRequired[FederationParametersTypeDef],  # (2)
+```
 
-- `environmentId`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `description`: `str`
-- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
-- `federationParameters`:
-  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-
-<a id="updateenvironmentresponsetypedef"></a>
-
+1. See [:material-code-brackets: FederationModeType](./literals.md#federationmodetype) 
+2. See [:material-code-braces: FederationParametersTypeDef](./type_defs.md#federationparameterstypedef) 
 ## UpdateEnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_finspace.type_defs import UpdateEnvironmentResponseTypeDef
+
+def get_value() -> UpdateEnvironmentResponseTypeDef:
+    return {
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEnvironmentResponseTypeDef(TypedDict):
+    environment: EnvironmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

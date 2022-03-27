@@ -1,985 +1,1335 @@
-<a id="typed-dictionaries-for-boto3-dax-module"></a>
-
-# Typed dictionaries for boto3 DAX module
+# Typed dictionaries
 
 > [Index](../README.md) > [DAX](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
-type annotations stubs module
-[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DAX module](#typed-dictionaries-for-boto3-dax-module)
-  - [ClusterTypeDef](#clustertypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateParameterGroupRequestRequestTypeDef](#createparametergrouprequestrequesttypedef)
-  - [CreateParameterGroupResponseTypeDef](#createparametergroupresponsetypedef)
-  - [CreateSubnetGroupRequestRequestTypeDef](#createsubnetgrouprequestrequesttypedef)
-  - [CreateSubnetGroupResponseTypeDef](#createsubnetgroupresponsetypedef)
-  - [DecreaseReplicationFactorRequestRequestTypeDef](#decreasereplicationfactorrequestrequesttypedef)
-  - [DecreaseReplicationFactorResponseTypeDef](#decreasereplicationfactorresponsetypedef)
-  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteParameterGroupRequestRequestTypeDef](#deleteparametergrouprequestrequesttypedef)
-  - [DeleteParameterGroupResponseTypeDef](#deleteparametergroupresponsetypedef)
-  - [DeleteSubnetGroupRequestRequestTypeDef](#deletesubnetgrouprequestrequesttypedef)
-  - [DeleteSubnetGroupResponseTypeDef](#deletesubnetgroupresponsetypedef)
-  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
-  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
-  - [DescribeDefaultParametersRequestRequestTypeDef](#describedefaultparametersrequestrequesttypedef)
-  - [DescribeDefaultParametersResponseTypeDef](#describedefaultparametersresponsetypedef)
-  - [DescribeEventsRequestRequestTypeDef](#describeeventsrequestrequesttypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeParameterGroupsRequestRequestTypeDef](#describeparametergroupsrequestrequesttypedef)
-  - [DescribeParameterGroupsResponseTypeDef](#describeparametergroupsresponsetypedef)
-  - [DescribeParametersRequestRequestTypeDef](#describeparametersrequestrequesttypedef)
-  - [DescribeParametersResponseTypeDef](#describeparametersresponsetypedef)
-  - [DescribeSubnetGroupsRequestRequestTypeDef](#describesubnetgroupsrequestrequesttypedef)
-  - [DescribeSubnetGroupsResponseTypeDef](#describesubnetgroupsresponsetypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [IncreaseReplicationFactorRequestRequestTypeDef](#increasereplicationfactorrequestrequesttypedef)
-  - [IncreaseReplicationFactorResponseTypeDef](#increasereplicationfactorresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [NodeTypeDef](#nodetypedef)
-  - [NodeTypeSpecificValueTypeDef](#nodetypespecificvaluetypedef)
-  - [NotificationConfigurationTypeDef](#notificationconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterGroupStatusTypeDef](#parametergroupstatustypedef)
-  - [ParameterGroupTypeDef](#parametergrouptypedef)
-  - [ParameterNameValueTypeDef](#parameternamevaluetypedef)
-  - [ParameterTypeDef](#parametertypedef)
-  - [RebootNodeRequestRequestTypeDef](#rebootnoderequestrequesttypedef)
-  - [RebootNodeResponseTypeDef](#rebootnoderesponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SSEDescriptionTypeDef](#ssedescriptiontypedef)
-  - [SSESpecificationTypeDef](#ssespecificationtypedef)
-  - [SecurityGroupMembershipTypeDef](#securitygroupmembershiptypedef)
-  - [SubnetGroupTypeDef](#subnetgrouptypedef)
-  - [SubnetTypeDef](#subnettypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagResourceResponseTypeDef](#tagresourceresponsetypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UntagResourceResponseTypeDef](#untagresourceresponsetypedef)
-  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
-  - [UpdateClusterResponseTypeDef](#updateclusterresponsetypedef)
-  - [UpdateParameterGroupRequestRequestTypeDef](#updateparametergrouprequestrequesttypedef)
-  - [UpdateParameterGroupResponseTypeDef](#updateparametergroupresponsetypedef)
-  - [UpdateSubnetGroupRequestRequestTypeDef](#updatesubnetgrouprequestrequesttypedef)
-  - [UpdateSubnetGroupResponseTypeDef](#updatesubnetgroupresponsetypedef)
-
-<a id="clustertypedef"></a>
+    Auto-generated documentation for [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
+    type annotations stubs module [mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    ClusterName: NotRequired[str],
+    Description: NotRequired[str],
+    ClusterArn: NotRequired[str],
+    TotalNodes: NotRequired[int],
+    ActiveNodes: NotRequired[int],
+    NodeType: NotRequired[str],
+    Status: NotRequired[str],
+    ClusterDiscoveryEndpoint: NotRequired[EndpointTypeDef],  # (1)
+    NodeIdsToRemove: NotRequired[List[str]],
+    Nodes: NotRequired[List[NodeTypeDef]],  # (2)
+    PreferredMaintenanceWindow: NotRequired[str],
+    NotificationConfiguration: NotRequired[NotificationConfigurationTypeDef],  # (3)
+    SubnetGroup: NotRequired[str],
+    SecurityGroups: NotRequired[List[SecurityGroupMembershipTypeDef]],  # (4)
+    IamRoleArn: NotRequired[str],
+    ParameterGroup: NotRequired[ParameterGroupStatusTypeDef],  # (5)
+    SSEDescription: NotRequired[SSEDescriptionTypeDef],  # (6)
+    ClusterEndpointEncryptionType: NotRequired[ClusterEndpointEncryptionTypeType],  # (7)
+```
 
-- `ClusterName`: `str`
-- `Description`: `str`
-- `ClusterArn`: `str`
-- `TotalNodes`: `int`
-- `ActiveNodes`: `int`
-- `NodeType`: `str`
-- `Status`: `str`
-- `ClusterDiscoveryEndpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- `NodeIdsToRemove`: `List`\[`str`\]
-- `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
-- `PreferredMaintenanceWindow`: `str`
-- `NotificationConfiguration`:
-  [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
-- `SubnetGroup`: `str`
-- `SecurityGroups`:
-  `List`\[[SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef)\]
-- `IamRoleArn`: `str`
-- `ParameterGroup`:
-  [ParameterGroupStatusTypeDef](./type_defs.md#parametergroupstatustypedef)
-- `SSEDescription`:
-  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
-- `ClusterEndpointEncryptionType`:
-  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: NodeTypeDef](./type_defs.md#nodetypedef) 
+3. See [:material-code-braces: NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef) 
+4. See [:material-code-braces: SecurityGroupMembershipTypeDef](./type_defs.md#securitygroupmembershiptypedef) 
+5. See [:material-code-braces: ParameterGroupStatusTypeDef](./type_defs.md#parametergroupstatustypedef) 
+6. See [:material-code-braces: SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef) 
+7. See [:material-code-brackets: ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "NodeType": ...,
+        "ReplicationFactor": ...,
+        "IamRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    NodeType: str,
+    ReplicationFactor: int,
+    IamRoleArn: str,
+    Description: NotRequired[str],
+    AvailabilityZones: NotRequired[Sequence[str]],
+    SubnetGroupName: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+    PreferredMaintenanceWindow: NotRequired[str],
+    NotificationTopicArn: NotRequired[str],
+    ParameterGroupName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (2)
+    ClusterEndpointEncryptionType: NotRequired[ClusterEndpointEncryptionTypeType],  # (3)
+```
 
-- `ClusterName`: `str`
-- `NodeType`: `str`
-- `ReplicationFactor`: `int`
-- `IamRoleArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `PreferredMaintenanceWindow`: `str`
-- `NotificationTopicArn`: `str`
-- `ParameterGroupName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `ClusterEndpointEncryptionType`:
-  [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
-
-<a id="createclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+3. See [:material-code-brackets: ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype) 
 ## CreateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateParameterGroupRequestRequestTypeDef
+
+def get_value() -> CreateParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="createparametergroupresponsetypedef"></a>
+```python title="Definition"
+class CreateParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Description: NotRequired[str],
+```
 
 ## CreateParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateParameterGroupResponseTypeDef
+
+def get_value() -> CreateParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateSubnetGroupRequestRequestTypeDef
+
+def get_value() -> CreateSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+        "SubnetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetGroupName`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="createsubnetgroupresponsetypedef"></a>
+```python title="Definition"
+class CreateSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    Description: NotRequired[str],
+```
 
 ## CreateSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import CreateSubnetGroupResponseTypeDef
+
+def get_value() -> CreateSubnetGroupResponseTypeDef:
+    return {
+        "SubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSubnetGroupResponseTypeDef(TypedDict):
+    SubnetGroup: SubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="decreasereplicationfactorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DecreaseReplicationFactorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DecreaseReplicationFactorRequestRequestTypeDef
+
+def get_value() -> DecreaseReplicationFactorRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "NewReplicationFactor": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-- `NewReplicationFactor`: `int`
-
-Optional fields:
-
-- `AvailabilityZones`: `Sequence`\[`str`\]
-- `NodeIdsToRemove`: `Sequence`\[`str`\]
-
-<a id="decreasereplicationfactorresponsetypedef"></a>
+```python title="Definition"
+class DecreaseReplicationFactorRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    NewReplicationFactor: int,
+    AvailabilityZones: NotRequired[Sequence[str]],
+    NodeIdsToRemove: NotRequired[Sequence[str]],
+```
 
 ## DecreaseReplicationFactorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DecreaseReplicationFactorResponseTypeDef
+
+def get_value() -> DecreaseReplicationFactorResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DecreaseReplicationFactorResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteClusterRequestRequestTypeDef
+
+def get_value() -> DeleteClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-
-<a id="deleteclusterresponsetypedef"></a>
+```python title="Definition"
+class DeleteClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+```
 
 ## DeleteClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteClusterResponseTypeDef
+
+def get_value() -> DeleteClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteParameterGroupRequestRequestTypeDef
+
+def get_value() -> DeleteParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-<a id="deleteparametergroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+```
 
 ## DeleteParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteParameterGroupResponseTypeDef
+
+def get_value() -> DeleteParameterGroupResponseTypeDef:
+    return {
+        "DeletionMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteParameterGroupResponseTypeDef(TypedDict):
+    DeletionMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeletionMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletesubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteSubnetGroupRequestRequestTypeDef
+
+def get_value() -> DeleteSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetGroupName`: `str`
-
-<a id="deletesubnetgroupresponsetypedef"></a>
+```python title="Definition"
+class DeleteSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+```
 
 ## DeleteSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DeleteSubnetGroupResponseTypeDef
+
+def get_value() -> DeleteSubnetGroupResponseTypeDef:
+    return {
+        "DeletionMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSubnetGroupResponseTypeDef(TypedDict):
+    DeletionMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeletionMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeClustersRequestDescribeClustersPaginateTypeDef
 
-<a id="describeclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeClustersRequestDescribeClustersPaginateTypeDef
 
+def get_value() -> DescribeClustersRequestDescribeClustersPaginateTypeDef:
+    return {
+        "ClusterNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeClustersRequestDescribeClustersPaginateTypeDef(TypedDict):
+    ClusterNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeClustersRequestRequestTypeDef
+
+def get_value() -> DescribeClustersRequestRequestTypeDef:
+    return {
+        "ClusterNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ClusterNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeclustersresponsetypedef"></a>
+```python title="Definition"
+class DescribeClustersRequestRequestTypeDef(TypedDict):
+    ClusterNames: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeClustersResponseTypeDef
+
+def get_value() -> DescribeClustersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Clusters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClustersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Clusters: List[ClusterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef
 
-<a id="describedefaultparametersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef
 
+def get_value() -> DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeDefaultParametersRequestDescribeDefaultParametersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeDefaultParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeDefaultParametersRequestRequestTypeDef
+
+def get_value() -> DescribeDefaultParametersRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describedefaultparametersresponsetypedef"></a>
+```python title="Definition"
+class DescribeDefaultParametersRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeDefaultParametersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeDefaultParametersResponseTypeDef
+
+def get_value() -> DescribeDefaultParametersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDefaultParametersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Parameters: List[ParameterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventsRequestDescribeEventsPaginateTypeDef
 
-<a id="describeeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeEventsRequestDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsRequestDescribeEventsPaginateTypeDef:
+    return {
+        "SourceName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsRequestDescribeEventsPaginateTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeEventsRequestRequestTypeDef
+
+def get_value() -> DescribeEventsRequestRequestTypeDef:
+    return {
+        "SourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsRequestRequestTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+    Duration: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeeventsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## DescribeEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeEventsResponseTypeDef
+
+def get_value() -> DescribeEventsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Events": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Events: List[EventTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef
 
-<a id="describeparametergroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef
 
+def get_value() -> DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef:
+    return {
+        "ParameterGroupNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeParameterGroupsRequestDescribeParameterGroupsPaginateTypeDef(TypedDict):
+    ParameterGroupNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeParameterGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeParameterGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeParameterGroupsRequestRequestTypeDef:
+    return {
+        "ParameterGroupNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterGroupNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeparametergroupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeParameterGroupsRequestRequestTypeDef(TypedDict):
+    ParameterGroupNames: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeParameterGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeParameterGroupsResponseTypeDef
+
+def get_value() -> DescribeParameterGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "ParameterGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeParameterGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    ParameterGroups: List[ParameterGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ParameterGroups`:
-  `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeParametersRequestDescribeParametersPaginateTypeDef
 
-<a id="describeparametersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeParametersRequestDescribeParametersPaginateTypeDef
 
+def get_value() -> DescribeParametersRequestDescribeParametersPaginateTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeParametersRequestDescribeParametersPaginateTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Source: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeParametersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeParametersRequestRequestTypeDef
+
+def get_value() -> DescribeParametersRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterGroupName`: `str`
-
-Optional fields:
-
-- `Source`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeparametersresponsetypedef"></a>
+```python title="Definition"
+class DescribeParametersRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    Source: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeParametersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeParametersResponseTypeDef
+
+def get_value() -> DescribeParametersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Parameters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeParametersResponseTypeDef(TypedDict):
+    NextToken: str,
+    Parameters: List[ParameterTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ParameterTypeDef](./type_defs.md#parametertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef
 
-<a id="describesubnetgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef
 
+def get_value() -> DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef:
+    return {
+        "SubnetGroupNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSubnetGroupsRequestDescribeSubnetGroupsPaginateTypeDef(TypedDict):
+    SubnetGroupNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSubnetGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeSubnetGroupsRequestRequestTypeDef
+
+def get_value() -> DescribeSubnetGroupsRequestRequestTypeDef:
+    return {
+        "SubnetGroupNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetGroupNames`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describesubnetgroupsresponsetypedef"></a>
+```python title="Definition"
+class DescribeSubnetGroupsRequestRequestTypeDef(TypedDict):
+    SubnetGroupNames: NotRequired[Sequence[str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeSubnetGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import DescribeSubnetGroupsResponseTypeDef
+
+def get_value() -> DescribeSubnetGroupsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SubnetGroups": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSubnetGroupsResponseTypeDef(TypedDict):
+    NextToken: str,
+    SubnetGroups: List[SubnetGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `SubnetGroups`:
-  `List`\[[SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+    }
 ```
 
-Optional fields:
-
-- `Address`: `str`
-- `Port`: `int`
-- `URL`: `str`
-
-<a id="eventtypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: NotRequired[str],
+    Port: NotRequired[int],
+    URL: NotRequired[str],
+```
 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "SourceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    SourceName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (1)
+    Message: NotRequired[str],
+    Date: NotRequired[datetime],
+```
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Message`: `str`
-- `Date`: `datetime`
-
-<a id="increasereplicationfactorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## IncreaseReplicationFactorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import IncreaseReplicationFactorRequestRequestTypeDef
+
+def get_value() -> IncreaseReplicationFactorRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "NewReplicationFactor": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-- `NewReplicationFactor`: `int`
-
-Optional fields:
-
-- `AvailabilityZones`: `Sequence`\[`str`\]
-
-<a id="increasereplicationfactorresponsetypedef"></a>
+```python title="Definition"
+class IncreaseReplicationFactorRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    NewReplicationFactor: int,
+    AvailabilityZones: NotRequired[Sequence[str]],
+```
 
 ## IncreaseReplicationFactorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import IncreaseReplicationFactorResponseTypeDef
+
+def get_value() -> IncreaseReplicationFactorResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class IncreaseReplicationFactorResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsRequestListTagsPaginateTypeDef
 
-<a id="listtagsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dax.type_defs import ListTagsRequestListTagsPaginateTypeDef
 
+def get_value() -> ListTagsRequestListTagsPaginateTypeDef:
+    return {
+        "ResourceName": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsRequestListTagsPaginateTypeDef(TypedDict):
+    ResourceName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "ResourceName": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceName`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    ResourceName: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="nodetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import NodeTypeDef
+
+def get_value() -> NodeTypeDef:
+    return {
+        "NodeId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NodeTypeDef(TypedDict):
+    NodeId: NotRequired[str],
+    Endpoint: NotRequired[EndpointTypeDef],  # (1)
+    NodeCreateTime: NotRequired[datetime],
+    AvailabilityZone: NotRequired[str],
+    NodeStatus: NotRequired[str],
+    ParameterGroupStatus: NotRequired[str],
+```
 
-- `NodeId`: `str`
-- `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
-- `NodeCreateTime`: `datetime`
-- `AvailabilityZone`: `str`
-- `NodeStatus`: `str`
-- `ParameterGroupStatus`: `str`
-
-<a id="nodetypespecificvaluetypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
 ## NodeTypeSpecificValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import NodeTypeSpecificValueTypeDef
+
+def get_value() -> NodeTypeSpecificValueTypeDef:
+    return {
+        "NodeType": ...,
+    }
 ```
 
-Optional fields:
-
-- `NodeType`: `str`
-- `Value`: `str`
-
-<a id="notificationconfigurationtypedef"></a>
+```python title="Definition"
+class NodeTypeSpecificValueTypeDef(TypedDict):
+    NodeType: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## NotificationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import NotificationConfigurationTypeDef
+
+def get_value() -> NotificationConfigurationTypeDef:
+    return {
+        "TopicArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TopicArn`: `str`
-- `TopicStatus`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NotificationConfigurationTypeDef(TypedDict):
+    TopicArn: NotRequired[str],
+    TopicStatus: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parametergroupstatustypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterGroupStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ParameterGroupStatusTypeDef
+
+def get_value() -> ParameterGroupStatusTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterGroupName`: `str`
-- `ParameterApplyStatus`: `str`
-- `NodeIdsToReboot`: `List`\[`str`\]
-
-<a id="parametergrouptypedef"></a>
+```python title="Definition"
+class ParameterGroupStatusTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    ParameterApplyStatus: NotRequired[str],
+    NodeIdsToReboot: NotRequired[List[str]],
+```
 
 ## ParameterGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ParameterGroupTypeDef
+
+def get_value() -> ParameterGroupTypeDef:
+    return {
+        "ParameterGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterGroupName`: `str`
-- `Description`: `str`
-
-<a id="parameternamevaluetypedef"></a>
+```python title="Definition"
+class ParameterGroupTypeDef(TypedDict):
+    ParameterGroupName: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## ParameterNameValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ParameterNameValueTypeDef
+
+def get_value() -> ParameterNameValueTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-
-<a id="parametertypedef"></a>
+```python title="Definition"
+class ParameterNameValueTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterValue: NotRequired[str],
+```
 
 ## ParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ParameterTypeDef
+
+def get_value() -> ParameterTypeDef:
+    return {
+        "ParameterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ParameterTypeDef(TypedDict):
+    ParameterName: NotRequired[str],
+    ParameterType: NotRequired[ParameterTypeType],  # (1)
+    ParameterValue: NotRequired[str],
+    NodeTypeSpecificValues: NotRequired[List[NodeTypeSpecificValueTypeDef]],  # (2)
+    Description: NotRequired[str],
+    Source: NotRequired[str],
+    DataType: NotRequired[str],
+    AllowedValues: NotRequired[str],
+    IsModifiable: NotRequired[IsModifiableType],  # (3)
+    ChangeType: NotRequired[ChangeTypeType],  # (4)
+```
 
-- `ParameterName`: `str`
-- `ParameterType`: [ParameterTypeType](./literals.md#parametertypetype)
-- `ParameterValue`: `str`
-- `NodeTypeSpecificValues`:
-  `List`\[[NodeTypeSpecificValueTypeDef](./type_defs.md#nodetypespecificvaluetypedef)\]
-- `Description`: `str`
-- `Source`: `str`
-- `DataType`: `str`
-- `AllowedValues`: `str`
-- `IsModifiable`: [IsModifiableType](./literals.md#ismodifiabletype)
-- `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
-
-<a id="rebootnoderequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ParameterTypeType](./literals.md#parametertypetype) 
+2. See [:material-code-braces: NodeTypeSpecificValueTypeDef](./type_defs.md#nodetypespecificvaluetypedef) 
+3. See [:material-code-brackets: IsModifiableType](./literals.md#ismodifiabletype) 
+4. See [:material-code-brackets: ChangeTypeType](./literals.md#changetypetype) 
 ## RebootNodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import RebootNodeRequestRequestTypeDef
+
+def get_value() -> RebootNodeRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+        "NodeId": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-- `NodeId`: `str`
-
-<a id="rebootnoderesponsetypedef"></a>
+```python title="Definition"
+class RebootNodeRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    NodeId: str,
+```
 
 ## RebootNodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import RebootNodeResponseTypeDef
+
+def get_value() -> RebootNodeResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RebootNodeResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="ssedescriptiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SSEDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import SSEDescriptionTypeDef
+
+def get_value() -> SSEDescriptionTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SSEDescriptionTypeDef(TypedDict):
+    Status: NotRequired[SSEStatusType],  # (1)
+```
 
-- `Status`: [SSEStatusType](./literals.md#ssestatustype)
-
-<a id="ssespecificationtypedef"></a>
-
+1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
 ## SSESpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import SSESpecificationTypeDef
+
+def get_value() -> SSESpecificationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-
-<a id="securitygroupmembershiptypedef"></a>
+```python title="Definition"
+class SSESpecificationTypeDef(TypedDict):
+    Enabled: bool,
+```
 
 ## SecurityGroupMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import SecurityGroupMembershipTypeDef
+
+def get_value() -> SecurityGroupMembershipTypeDef:
+    return {
+        "SecurityGroupIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `SecurityGroupIdentifier`: `str`
-- `Status`: `str`
-
-<a id="subnetgrouptypedef"></a>
+```python title="Definition"
+class SecurityGroupMembershipTypeDef(TypedDict):
+    SecurityGroupIdentifier: NotRequired[str],
+    Status: NotRequired[str],
+```
 
 ## SubnetGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import SubnetGroupTypeDef
+
+def get_value() -> SubnetGroupTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubnetGroupTypeDef(TypedDict):
+    SubnetGroupName: NotRequired[str],
+    Description: NotRequired[str],
+    VpcId: NotRequired[str],
+    Subnets: NotRequired[List[SubnetTypeDef]],  # (1)
+```
 
-- `SubnetGroupName`: `str`
-- `Description`: `str`
-- `VpcId`: `str`
-- `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
-
-<a id="subnettypedef"></a>
-
+1. See [:material-code-braces: SubnetTypeDef](./type_defs.md#subnettypedef) 
 ## SubnetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import SubnetTypeDef
+
+def get_value() -> SubnetTypeDef:
+    return {
+        "SubnetIdentifier": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetIdentifier`: `str`
-- `SubnetAvailabilityZone`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SubnetTypeDef(TypedDict):
+    SubnetIdentifier: NotRequired[str],
+    SubnetAvailabilityZone: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceName: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagresourceresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import TagResourceResponseTypeDef
+
+def get_value() -> TagResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceName": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceName`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="untagresourceresponsetypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceName: str,
+    TagKeys: Sequence[str],
+```
 
 ## UntagResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UntagResourceResponseTypeDef
+
+def get_value() -> UntagResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateClusterRequestRequestTypeDef
+
+def get_value() -> UpdateClusterRequestRequestTypeDef:
+    return {
+        "ClusterName": ...,
+    }
 ```
 
-Required fields:
-
-- `ClusterName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `PreferredMaintenanceWindow`: `str`
-- `NotificationTopicArn`: `str`
-- `NotificationTopicStatus`: `str`
-- `ParameterGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-
-<a id="updateclusterresponsetypedef"></a>
+```python title="Definition"
+class UpdateClusterRequestRequestTypeDef(TypedDict):
+    ClusterName: str,
+    Description: NotRequired[str],
+    PreferredMaintenanceWindow: NotRequired[str],
+    NotificationTopicArn: NotRequired[str],
+    NotificationTopicStatus: NotRequired[str],
+    ParameterGroupName: NotRequired[str],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+```
 
 ## UpdateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateClusterResponseTypeDef
+
+def get_value() -> UpdateClusterResponseTypeDef:
+    return {
+        "Cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterResponseTypeDef(TypedDict):
+    Cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateparametergrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateParameterGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateParameterGroupRequestRequestTypeDef
+
+def get_value() -> UpdateParameterGroupRequestRequestTypeDef:
+    return {
+        "ParameterGroupName": ...,
+        "ParameterNameValues": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateParameterGroupRequestRequestTypeDef(TypedDict):
+    ParameterGroupName: str,
+    ParameterNameValues: Sequence[ParameterNameValueTypeDef],  # (1)
+```
 
-- `ParameterGroupName`: `str`
-- `ParameterNameValues`:
-  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
-
-<a id="updateparametergroupresponsetypedef"></a>
-
+1. See [:material-code-braces: ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef) 
 ## UpdateParameterGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateParameterGroupResponseTypeDef
+
+def get_value() -> UpdateParameterGroupResponseTypeDef:
+    return {
+        "ParameterGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateParameterGroupResponseTypeDef(TypedDict):
+    ParameterGroup: ParameterGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ParameterGroup`:
-  [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesubnetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSubnetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateSubnetGroupRequestRequestTypeDef
+
+def get_value() -> UpdateSubnetGroupRequestRequestTypeDef:
+    return {
+        "SubnetGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `SubnetGroupName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-
-<a id="updatesubnetgroupresponsetypedef"></a>
+```python title="Definition"
+class UpdateSubnetGroupRequestRequestTypeDef(TypedDict):
+    SubnetGroupName: str,
+    Description: NotRequired[str],
+    SubnetIds: NotRequired[Sequence[str]],
+```
 
 ## UpdateSubnetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dax.type_defs import UpdateSubnetGroupResponseTypeDef
+
+def get_value() -> UpdateSubnetGroupResponseTypeDef:
+    return {
+        "SubnetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSubnetGroupResponseTypeDef(TypedDict):
+    SubnetGroup: SubnetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

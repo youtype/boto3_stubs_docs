@@ -1,108 +1,18 @@
-<a id="networkmanagerclient-for-boto3-networkmanager-module"></a>
-
-# NetworkManagerClient for boto3 NetworkManager module
+# NetworkManagerClient
 
 > [Index](../README.md) > [NetworkManager](./README.md) > NetworkManagerClient
 
-Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module
-[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+!!! note ""
 
-- [NetworkManagerClient for boto3 NetworkManager module](#networkmanagerclient-for-boto3-networkmanager-module)
-  - [NetworkManagerClient](#networkmanagerclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_attachment](#accept_attachment)
-    - [associate_connect_peer](#associate_connect_peer)
-    - [associate_customer_gateway](#associate_customer_gateway)
-    - [associate_link](#associate_link)
-    - [associate_transit_gateway_connect_peer](#associate_transit_gateway_connect_peer)
-    - [can_paginate](#can_paginate)
-    - [create_connect_attachment](#create_connect_attachment)
-    - [create_connect_peer](#create_connect_peer)
-    - [create_connection](#create_connection)
-    - [create_core_network](#create_core_network)
-    - [create_device](#create_device)
-    - [create_global_network](#create_global_network)
-    - [create_link](#create_link)
-    - [create_site](#create_site)
-    - [create_site_to_site_vpn_attachment](#create_site_to_site_vpn_attachment)
-    - [create_vpc_attachment](#create_vpc_attachment)
-    - [delete_attachment](#delete_attachment)
-    - [delete_connect_peer](#delete_connect_peer)
-    - [delete_connection](#delete_connection)
-    - [delete_core_network](#delete_core_network)
-    - [delete_core_network_policy_version](#delete_core_network_policy_version)
-    - [delete_device](#delete_device)
-    - [delete_global_network](#delete_global_network)
-    - [delete_link](#delete_link)
-    - [delete_resource_policy](#delete_resource_policy)
-    - [delete_site](#delete_site)
-    - [deregister_transit_gateway](#deregister_transit_gateway)
-    - [describe_global_networks](#describe_global_networks)
-    - [disassociate_connect_peer](#disassociate_connect_peer)
-    - [disassociate_customer_gateway](#disassociate_customer_gateway)
-    - [disassociate_link](#disassociate_link)
-    - [disassociate_transit_gateway_connect_peer](#disassociate_transit_gateway_connect_peer)
-    - [execute_core_network_change_set](#execute_core_network_change_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_connect_attachment](#get_connect_attachment)
-    - [get_connect_peer](#get_connect_peer)
-    - [get_connect_peer_associations](#get_connect_peer_associations)
-    - [get_connections](#get_connections)
-    - [get_core_network](#get_core_network)
-    - [get_core_network_change_set](#get_core_network_change_set)
-    - [get_core_network_policy](#get_core_network_policy)
-    - [get_customer_gateway_associations](#get_customer_gateway_associations)
-    - [get_devices](#get_devices)
-    - [get_link_associations](#get_link_associations)
-    - [get_links](#get_links)
-    - [get_network_resource_counts](#get_network_resource_counts)
-    - [get_network_resource_relationships](#get_network_resource_relationships)
-    - [get_network_resources](#get_network_resources)
-    - [get_network_routes](#get_network_routes)
-    - [get_network_telemetry](#get_network_telemetry)
-    - [get_resource_policy](#get_resource_policy)
-    - [get_route_analysis](#get_route_analysis)
-    - [get_site_to_site_vpn_attachment](#get_site_to_site_vpn_attachment)
-    - [get_sites](#get_sites)
-    - [get_transit_gateway_connect_peer_associations](#get_transit_gateway_connect_peer_associations)
-    - [get_transit_gateway_registrations](#get_transit_gateway_registrations)
-    - [get_vpc_attachment](#get_vpc_attachment)
-    - [list_attachments](#list_attachments)
-    - [list_connect_peers](#list_connect_peers)
-    - [list_core_network_policy_versions](#list_core_network_policy_versions)
-    - [list_core_networks](#list_core_networks)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_core_network_policy](#put_core_network_policy)
-    - [put_resource_policy](#put_resource_policy)
-    - [register_transit_gateway](#register_transit_gateway)
-    - [reject_attachment](#reject_attachment)
-    - [restore_core_network_policy_version](#restore_core_network_policy_version)
-    - [start_route_analysis](#start_route_analysis)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_connection](#update_connection)
-    - [update_core_network](#update_core_network)
-    - [update_device](#update_device)
-    - [update_global_network](#update_global_network)
-    - [update_link](#update_link)
-    - [update_network_resource_metadata](#update_network_resource_metadata)
-    - [update_site](#update_site)
-    - [update_vpc_attachment](#update_vpc_attachment)
-    - [get_paginator](#get_paginator)
-
-<a id="networkmanagerclient"></a>
+    Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+    type annotations stubs module [mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 ## NetworkManagerClient
 
-Type annotations for `boto3.client("networkmanager")`
+Type annotations and code completion for `#!python boto3.client("networkmanager")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_networkmanager.client import NetworkManagerClient
 
@@ -110,1986 +20,2592 @@ def get_networkmanager_client() -> NetworkManagerClient:
     return Session().client("networkmanager")
 ```
 
-Boto3 documentation:
-[NetworkManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("networkmanager").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("networkmanager")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.CoreNetworkPolicyException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_networkmanager.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.CoreNetworkPolicyException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-NetworkManagerClient exceptions.
-
-Type annotations for `boto3.client("networkmanager").exceptions` method.
-
-Boto3 documentation:
-[NetworkManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_attachment"></a>
-
-### accept_attachment
+### accept\_attachment
 
 Accepts a core network attachment request.
 
-Type annotations for `boto3.client("networkmanager").accept_attachment` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").accept_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.accept_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.accept_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.accept_attachment)
+```python title="Method definition"
+def accept_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> AcceptAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AcceptAttachmentRequestRequestTypeDef](./type_defs.md#acceptattachmentrequestrequesttypedef).
+1. See [:material-code-braces: AcceptAttachmentResponseTypeDef](./type_defs.md#acceptattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[AcceptAttachmentResponseTypeDef](./type_defs.md#acceptattachmentresponsetypedef).
+parent.accept_attachment(**kwargs)
+```
 
-<a id="associate\_connect\_peer"></a>
+1. See [:material-code-braces: AcceptAttachmentRequestRequestTypeDef](./type_defs.md#acceptattachmentrequestrequesttypedef) 
 
-### associate_connect_peer
+### associate\_connect\_peer
 
 Associates a core network Connect peer with a device and optionally, with a
 link.
 
-Type annotations for `boto3.client("networkmanager").associate_connect_peer`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").associate_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.associate_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_connect_peer)
+```python title="Method definition"
+def associate_connect_peer(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectPeerId: str,
+    DeviceId: str,
+    LinkId: str = ...,
+) -> AssociateConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateConnectPeerRequestRequestTypeDef](./type_defs.md#associateconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: AssociateConnectPeerResponseTypeDef](./type_defs.md#associateconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectPeerId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `LinkId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateConnectPeerRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "ConnectPeerId": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[AssociateConnectPeerResponseTypeDef](./type_defs.md#associateconnectpeerresponsetypedef).
+parent.associate_connect_peer(**kwargs)
+```
 
-<a id="associate\_customer\_gateway"></a>
+1. See [:material-code-braces: AssociateConnectPeerRequestRequestTypeDef](./type_defs.md#associateconnectpeerrequestrequesttypedef) 
 
-### associate_customer_gateway
+### associate\_customer\_gateway
 
 Associates a customer gateway with a device and optionally, with a link.
 
-Type annotations for
-`boto3.client("networkmanager").associate_customer_gateway` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").associate_customer_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
 
-Boto3 documentation:
-[NetworkManager.Client.associate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_customer_gateway)
+```python title="Method definition"
+def associate_customer_gateway(
+    self,
+    *,
+    CustomerGatewayArn: str,
+    GlobalNetworkId: str,
+    DeviceId: str,
+    LinkId: str = ...,
+) -> AssociateCustomerGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#associatecustomergatewayrequestrequesttypedef).
+1. See [:material-code-braces: AssociateCustomerGatewayResponseTypeDef](./type_defs.md#associatecustomergatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CustomerGatewayArn`: `str` *(required)*
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `LinkId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateCustomerGatewayRequestRequestTypeDef = {  # (1)
+    "CustomerGatewayArn": ...,
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[AssociateCustomerGatewayResponseTypeDef](./type_defs.md#associatecustomergatewayresponsetypedef).
+parent.associate_customer_gateway(**kwargs)
+```
 
-<a id="associate\_link"></a>
+1. See [:material-code-braces: AssociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#associatecustomergatewayrequestrequesttypedef) 
 
-### associate_link
+### associate\_link
 
 Associates a link to a device.
 
-Type annotations for `boto3.client("networkmanager").associate_link` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").associate_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
 
-Boto3 documentation:
-[NetworkManager.Client.associate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_link)
+```python title="Method definition"
+def associate_link(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str,
+    LinkId: str,
+) -> AssociateLinkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateLinkRequestRequestTypeDef](./type_defs.md#associatelinkrequestrequesttypedef).
+1. See [:material-code-braces: AssociateLinkResponseTypeDef](./type_defs.md#associatelinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `LinkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateLinkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+    "LinkId": ...,
+}
 
-Returns
-[AssociateLinkResponseTypeDef](./type_defs.md#associatelinkresponsetypedef).
+parent.associate_link(**kwargs)
+```
 
-<a id="associate\_transit\_gateway\_connect\_peer"></a>
+1. See [:material-code-braces: AssociateLinkRequestRequestTypeDef](./type_defs.md#associatelinkrequestrequesttypedef) 
 
-### associate_transit_gateway_connect_peer
+### associate\_transit\_gateway\_connect\_peer
 
 Associates a transit gateway Connect peer with a device, and optionally, with a
 link.
 
-Type annotations for
-`boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").associate_transit_gateway_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.associate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.associate_transit_gateway_connect_peer)
+```python title="Method definition"
+def associate_transit_gateway_connect_peer(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayConnectPeerArn: str,
+    DeviceId: str,
+    LinkId: str = ...,
+) -> AssociateTransitGatewayConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#associatetransitgatewayconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: AssociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#associatetransitgatewayconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArn`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `LinkId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateTransitGatewayConnectPeerRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "TransitGatewayConnectPeerArn": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[AssociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#associatetransitgatewayconnectpeerresponsetypedef).
+parent.associate_transit_gateway_connect_peer(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#associatetransitgatewayconnectpeerrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("networkmanager").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate)
 
-Boto3 documentation:
-[NetworkManager.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_connect\_attachment"></a>
-
-### create_connect_attachment
+### create\_connect\_attachment
 
 Creates a core network Connect attachment from a specified core network
 attachment.
 
-Type annotations for `boto3.client("networkmanager").create_connect_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_connect_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.create_connect_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_attachment)
+```python title="Method definition"
+def create_connect_attachment(
+    self,
+    *,
+    CoreNetworkId: str,
+    EdgeLocation: str,
+    TransportAttachmentId: str,
+    Options: ConnectAttachmentOptionsTypeDef,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    ClientToken: str = ...,
+) -> CreateConnectAttachmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectAttachmentRequestRequestTypeDef](./type_defs.md#createconnectattachmentrequestrequesttypedef).
+1. See [:material-code-braces: ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateConnectAttachmentResponseTypeDef](./type_defs.md#createconnectattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `EdgeLocation`: `str` *(required)*
-- `TransportAttachmentId`: `str` *(required)*
-- `Options`:
-  [ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef)
-  *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConnectAttachmentRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "EdgeLocation": ...,
+    "TransportAttachmentId": ...,
+    "Options": ...,
+}
 
-Returns
-[CreateConnectAttachmentResponseTypeDef](./type_defs.md#createconnectattachmentresponsetypedef).
+parent.create_connect_attachment(**kwargs)
+```
 
-<a id="create\_connect\_peer"></a>
+1. See [:material-code-braces: CreateConnectAttachmentRequestRequestTypeDef](./type_defs.md#createconnectattachmentrequestrequesttypedef) 
 
-### create_connect_peer
+### create\_connect\_peer
 
 Creates a core network connect peer for a specified core network connect
 attachment between a core network and an appliance.
 
-Type annotations for `boto3.client("networkmanager").create_connect_peer`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.create_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connect_peer)
+```python title="Method definition"
+def create_connect_peer(
+    self,
+    *,
+    ConnectAttachmentId: str,
+    PeerAddress: str,
+    InsideCidrBlocks: Sequence[str],
+    CoreNetworkAddress: str = ...,
+    BgpOptions: BgpOptionsTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    ClientToken: str = ...,
+) -> CreateConnectPeerResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectPeerRequestRequestTypeDef](./type_defs.md#createconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateConnectPeerResponseTypeDef](./type_defs.md#createconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectAttachmentId`: `str` *(required)*
-- `PeerAddress`: `str` *(required)*
-- `InsideCidrBlocks`: `Sequence`\[`str`\] *(required)*
-- `CoreNetworkAddress`: `str`
-- `BgpOptions`: [BgpOptionsTypeDef](./type_defs.md#bgpoptionstypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateConnectPeerRequestRequestTypeDef = {  # (1)
+    "ConnectAttachmentId": ...,
+    "PeerAddress": ...,
+    "InsideCidrBlocks": ...,
+}
 
-Returns
-[CreateConnectPeerResponseTypeDef](./type_defs.md#createconnectpeerresponsetypedef).
+parent.create_connect_peer(**kwargs)
+```
 
-<a id="create\_connection"></a>
+1. See [:material-code-braces: CreateConnectPeerRequestRequestTypeDef](./type_defs.md#createconnectpeerrequestrequesttypedef) 
 
-### create_connection
+### create\_connection
 
 Creates a connection between two devices.
 
-Type annotations for `boto3.client("networkmanager").create_connection` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
 
-Boto3 documentation:
-[NetworkManager.Client.create_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_connection)
+```python title="Method definition"
+def create_connection(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str,
+    ConnectedDeviceId: str,
+    LinkId: str = ...,
+    ConnectedLinkId: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateConnectionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `ConnectedDeviceId`: `str` *(required)*
-- `LinkId`: `str`
-- `ConnectedLinkId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+    "ConnectedDeviceId": ...,
+}
 
-Returns
-[CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
+parent.create_connection(**kwargs)
+```
 
-<a id="create\_core\_network"></a>
+1. See [:material-code-braces: CreateConnectionRequestRequestTypeDef](./type_defs.md#createconnectionrequestrequesttypedef) 
 
-### create_core_network
+### create\_core\_network
 
 Creates a core network as part of your global network, and optionally, with a
 core network policy.
 
-Type annotations for `boto3.client("networkmanager").create_core_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_core_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_core_network)
 
-Boto3 documentation:
-[NetworkManager.Client.create_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_core_network)
+```python title="Method definition"
+def create_core_network(
+    self,
+    *,
+    GlobalNetworkId: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    PolicyDocument: str = ...,
+    ClientToken: str = ...,
+) -> CreateCoreNetworkResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCoreNetworkRequestRequestTypeDef](./type_defs.md#createcorenetworkrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateCoreNetworkResponseTypeDef](./type_defs.md#createcorenetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `PolicyDocument`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCoreNetworkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[CreateCoreNetworkResponseTypeDef](./type_defs.md#createcorenetworkresponsetypedef).
+parent.create_core_network(**kwargs)
+```
 
-<a id="create\_device"></a>
+1. See [:material-code-braces: CreateCoreNetworkRequestRequestTypeDef](./type_defs.md#createcorenetworkrequestrequesttypedef) 
 
-### create_device
+### create\_device
 
 Creates a new device in a global network.
 
-Type annotations for `boto3.client("networkmanager").create_device` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device)
 
-Boto3 documentation:
-[NetworkManager.Client.create_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_device)
+```python title="Method definition"
+def create_device(
+    self,
+    *,
+    GlobalNetworkId: str,
+    AWSLocation: AWSLocationTypeDef = ...,  # (1)
+    Description: str = ...,
+    Type: str = ...,
+    Vendor: str = ...,
+    Model: str = ...,
+    SerialNumber: str = ...,
+    Location: LocationTypeDef = ...,  # (2)
+    SiteId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDeviceResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeviceRequestRequestTypeDef](./type_defs.md#createdevicerequestrequesttypedef).
+1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
+2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDeviceResponseTypeDef](./type_defs.md#createdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `AWSLocation`: [AWSLocationTypeDef](./type_defs.md#awslocationtypedef)
-- `Description`: `str`
-- `Type`: `str`
-- `Vendor`: `str`
-- `Model`: `str`
-- `SerialNumber`: `str`
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `SiteId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeviceRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[CreateDeviceResponseTypeDef](./type_defs.md#createdeviceresponsetypedef).
+parent.create_device(**kwargs)
+```
 
-<a id="create\_global\_network"></a>
+1. See [:material-code-braces: CreateDeviceRequestRequestTypeDef](./type_defs.md#createdevicerequestrequesttypedef) 
 
-### create_global_network
+### create\_global\_network
 
 Creates a new, empty global network.
 
-Type annotations for `boto3.client("networkmanager").create_global_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_global_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
 
-Boto3 documentation:
-[NetworkManager.Client.create_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_global_network)
+```python title="Method definition"
+def create_global_network(
+    self,
+    *,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateGlobalNetworkResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGlobalNetworkRequestRequestTypeDef](./type_defs.md#createglobalnetworkrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateGlobalNetworkResponseTypeDef](./type_defs.md#createglobalnetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateGlobalNetworkRequestRequestTypeDef = {  # (1)
+    "Description": ...,
+}
 
-Returns
-[CreateGlobalNetworkResponseTypeDef](./type_defs.md#createglobalnetworkresponsetypedef).
+parent.create_global_network(**kwargs)
+```
 
-<a id="create\_link"></a>
+1. See [:material-code-braces: CreateGlobalNetworkRequestRequestTypeDef](./type_defs.md#createglobalnetworkrequestrequesttypedef) 
 
-### create_link
+### create\_link
 
 Creates a new link for a specified site.
 
-Type annotations for `boto3.client("networkmanager").create_link` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link)
 
-Boto3 documentation:
-[NetworkManager.Client.create_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_link)
+```python title="Method definition"
+def create_link(
+    self,
+    *,
+    GlobalNetworkId: str,
+    Bandwidth: BandwidthTypeDef,  # (1)
+    SiteId: str,
+    Description: str = ...,
+    Type: str = ...,
+    Provider: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateLinkResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateLinkRequestRequestTypeDef](./type_defs.md#createlinkrequestrequesttypedef).
+1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef) *(required)*
-- `SiteId`: `str` *(required)*
-- `Description`: `str`
-- `Type`: `str`
-- `Provider`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLinkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "Bandwidth": ...,
+    "SiteId": ...,
+}
 
-Returns [CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef).
+parent.create_link(**kwargs)
+```
 
-<a id="create\_site"></a>
+1. See [:material-code-braces: CreateLinkRequestRequestTypeDef](./type_defs.md#createlinkrequestrequesttypedef) 
 
-### create_site
+### create\_site
 
 Creates a new site in a global network.
 
-Type annotations for `boto3.client("networkmanager").create_site` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site)
 
-Boto3 documentation:
-[NetworkManager.Client.create_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site)
+```python title="Method definition"
+def create_site(
+    self,
+    *,
+    GlobalNetworkId: str,
+    Description: str = ...,
+    Location: LocationTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateSiteResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateSiteRequestRequestTypeDef](./type_defs.md#createsiterequestrequesttypedef).
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `Description`: `str`
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSiteRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
+parent.create_site(**kwargs)
+```
 
-<a id="create\_site\_to\_site\_vpn\_attachment"></a>
+1. See [:material-code-braces: CreateSiteRequestRequestTypeDef](./type_defs.md#createsiterequestrequesttypedef) 
 
-### create_site_to_site_vpn_attachment
+### create\_site\_to\_site\_vpn\_attachment
 
 Creates a site-to-site VPN attachment on an edge location of a core network.
 
-Type annotations for
-`boto3.client("networkmanager").create_site_to_site_vpn_attachment` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_site_to_site_vpn_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site_to_site_vpn_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.create_site_to_site_vpn_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_site_to_site_vpn_attachment)
+```python title="Method definition"
+def create_site_to_site_vpn_attachment(
+    self,
+    *,
+    CoreNetworkId: str,
+    VpnConnectionArn: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    ClientToken: str = ...,
+) -> CreateSiteToSiteVpnAttachmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#createsitetositevpnattachmentrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#createsitetositevpnattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `VpnConnectionArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateSiteToSiteVpnAttachmentRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "VpnConnectionArn": ...,
+}
 
-Returns
-[CreateSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#createsitetositevpnattachmentresponsetypedef).
+parent.create_site_to_site_vpn_attachment(**kwargs)
+```
 
-<a id="create\_vpc\_attachment"></a>
+1. See [:material-code-braces: CreateSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#createsitetositevpnattachmentrequestrequesttypedef) 
 
-### create_vpc_attachment
+### create\_vpc\_attachment
 
 Creates a VPC attachment on an edge location of a core network.
 
-Type annotations for `boto3.client("networkmanager").create_vpc_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").create_vpc_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_vpc_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.create_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.create_vpc_attachment)
+```python title="Method definition"
+def create_vpc_attachment(
+    self,
+    *,
+    CoreNetworkId: str,
+    VpcArn: str,
+    SubnetArns: Sequence[str],
+    Options: VpcOptionsTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    ClientToken: str = ...,
+) -> CreateVpcAttachmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateVpcAttachmentRequestRequestTypeDef](./type_defs.md#createvpcattachmentrequestrequesttypedef).
+1. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateVpcAttachmentResponseTypeDef](./type_defs.md#createvpcattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `VpcArn`: `str` *(required)*
-- `SubnetArns`: `Sequence`\[`str`\] *(required)*
-- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateVpcAttachmentRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "VpcArn": ...,
+    "SubnetArns": ...,
+}
 
-Returns
-[CreateVpcAttachmentResponseTypeDef](./type_defs.md#createvpcattachmentresponsetypedef).
+parent.create_vpc_attachment(**kwargs)
+```
 
-<a id="delete\_attachment"></a>
+1. See [:material-code-braces: CreateVpcAttachmentRequestRequestTypeDef](./type_defs.md#createvpcattachmentrequestrequesttypedef) 
 
-### delete_attachment
+### delete\_attachment
 
 Deletes an attachment.
 
-Type annotations for `boto3.client("networkmanager").delete_attachment` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_attachment)
+```python title="Method definition"
+def delete_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> DeleteAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteAttachmentRequestRequestTypeDef](./type_defs.md#deleteattachmentrequestrequesttypedef).
+1. See [:material-code-braces: DeleteAttachmentResponseTypeDef](./type_defs.md#deleteattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[DeleteAttachmentResponseTypeDef](./type_defs.md#deleteattachmentresponsetypedef).
+parent.delete_attachment(**kwargs)
+```
 
-<a id="delete\_connect\_peer"></a>
+1. See [:material-code-braces: DeleteAttachmentRequestRequestTypeDef](./type_defs.md#deleteattachmentrequestrequesttypedef) 
 
-### delete_connect_peer
+### delete\_connect\_peer
 
 Deletes a Connect peer.
 
-Type annotations for `boto3.client("networkmanager").delete_connect_peer`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connect_peer)
+```python title="Method definition"
+def delete_connect_peer(
+    self,
+    *,
+    ConnectPeerId: str,
+) -> DeleteConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectPeerRequestRequestTypeDef](./type_defs.md#deleteconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: DeleteConnectPeerResponseTypeDef](./type_defs.md#deleteconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectPeerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectPeerRequestRequestTypeDef = {  # (1)
+    "ConnectPeerId": ...,
+}
 
-Returns
-[DeleteConnectPeerResponseTypeDef](./type_defs.md#deleteconnectpeerresponsetypedef).
+parent.delete_connect_peer(**kwargs)
+```
 
-<a id="delete\_connection"></a>
+1. See [:material-code-braces: DeleteConnectPeerRequestRequestTypeDef](./type_defs.md#deleteconnectpeerrequestrequesttypedef) 
 
-### delete_connection
+### delete\_connection
 
 Deletes the specified connection in your global network.
 
-Type annotations for `boto3.client("networkmanager").delete_connection` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_connection)
+```python title="Method definition"
+def delete_connection(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectionId: str,
+) -> DeleteConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "ConnectionId": ...,
+}
 
-Returns
-[DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
+parent.delete_connection(**kwargs)
+```
 
-<a id="delete\_core\_network"></a>
+1. See [:material-code-braces: DeleteConnectionRequestRequestTypeDef](./type_defs.md#deleteconnectionrequestrequesttypedef) 
 
-### delete_core_network
+### delete\_core\_network
 
 Deletes a core network along with all core network policies.
 
-Type annotations for `boto3.client("networkmanager").delete_core_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_core_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network)
+```python title="Method definition"
+def delete_core_network(
+    self,
+    *,
+    CoreNetworkId: str,
+) -> DeleteCoreNetworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCoreNetworkRequestRequestTypeDef](./type_defs.md#deletecorenetworkrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCoreNetworkResponseTypeDef](./type_defs.md#deletecorenetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCoreNetworkRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[DeleteCoreNetworkResponseTypeDef](./type_defs.md#deletecorenetworkresponsetypedef).
+parent.delete_core_network(**kwargs)
+```
 
-<a id="delete\_core\_network\_policy\_version"></a>
+1. See [:material-code-braces: DeleteCoreNetworkRequestRequestTypeDef](./type_defs.md#deletecorenetworkrequestrequesttypedef) 
 
-### delete_core_network_policy_version
+### delete\_core\_network\_policy\_version
 
 Deletes a policy version from a core network.
 
-Type annotations for
-`boto3.client("networkmanager").delete_core_network_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_core_network_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network_policy_version)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_core_network_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_core_network_policy_version)
+```python title="Method definition"
+def delete_core_network_policy_version(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+) -> DeleteCoreNetworkPolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#deletecorenetworkpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: DeleteCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#deletecorenetworkpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCoreNetworkPolicyVersionRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
 
-Returns
-[DeleteCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#deletecorenetworkpolicyversionresponsetypedef).
+parent.delete_core_network_policy_version(**kwargs)
+```
 
-<a id="delete\_device"></a>
+1. See [:material-code-braces: DeleteCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#deletecorenetworkpolicyversionrequestrequesttypedef) 
 
-### delete_device
+### delete\_device
 
 Deletes an existing device.
 
-Type annotations for `boto3.client("networkmanager").delete_device` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_device)
+```python title="Method definition"
+def delete_device(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str,
+) -> DeleteDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef).
+1. See [:material-code-braces: DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeviceRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef).
+parent.delete_device(**kwargs)
+```
 
-<a id="delete\_global\_network"></a>
+1. See [:material-code-braces: DeleteDeviceRequestRequestTypeDef](./type_defs.md#deletedevicerequestrequesttypedef) 
 
-### delete_global_network
+### delete\_global\_network
 
 Deletes an existing global network.
 
-Type annotations for `boto3.client("networkmanager").delete_global_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_global_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_global_network)
+```python title="Method definition"
+def delete_global_network(
+    self,
+    *,
+    GlobalNetworkId: str,
+) -> DeleteGlobalNetworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteGlobalNetworkRequestRequestTypeDef](./type_defs.md#deleteglobalnetworkrequestrequesttypedef).
+1. See [:material-code-braces: DeleteGlobalNetworkResponseTypeDef](./type_defs.md#deleteglobalnetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGlobalNetworkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[DeleteGlobalNetworkResponseTypeDef](./type_defs.md#deleteglobalnetworkresponsetypedef).
+parent.delete_global_network(**kwargs)
+```
 
-<a id="delete\_link"></a>
+1. See [:material-code-braces: DeleteGlobalNetworkRequestRequestTypeDef](./type_defs.md#deleteglobalnetworkrequestrequesttypedef) 
 
-### delete_link
+### delete\_link
 
 Deletes an existing link.
 
-Type annotations for `boto3.client("networkmanager").delete_link` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_link)
+```python title="Method definition"
+def delete_link(
+    self,
+    *,
+    GlobalNetworkId: str,
+    LinkId: str,
+) -> DeleteLinkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteLinkRequestRequestTypeDef](./type_defs.md#deletelinkrequestrequesttypedef).
+1. See [:material-code-braces: DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `LinkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLinkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "LinkId": ...,
+}
 
-Returns [DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef).
+parent.delete_link(**kwargs)
+```
 
-<a id="delete\_resource\_policy"></a>
+1. See [:material-code-braces: DeleteLinkRequestRequestTypeDef](./type_defs.md#deletelinkrequestrequesttypedef) 
 
-### delete_resource_policy
+### delete\_resource\_policy
 
 Deletes a resource policy for the specified resource.
 
-Type annotations for `boto3.client("networkmanager").delete_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_resource_policy)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_resource_policy)
+```python title="Method definition"
+def delete_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_resource_policy(**kwargs)
+```
 
-<a id="delete\_site"></a>
+1. See [:material-code-braces: DeleteResourcePolicyRequestRequestTypeDef](./type_defs.md#deleteresourcepolicyrequestrequesttypedef) 
 
-### delete_site
+### delete\_site
 
 Deletes an existing site.
 
-Type annotations for `boto3.client("networkmanager").delete_site` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").delete_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
 
-Boto3 documentation:
-[NetworkManager.Client.delete_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.delete_site)
+```python title="Method definition"
+def delete_site(
+    self,
+    *,
+    GlobalNetworkId: str,
+    SiteId: str,
+) -> DeleteSiteResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSiteRequestRequestTypeDef](./type_defs.md#deletesiterequestrequesttypedef).
+1. See [:material-code-braces: DeleteSiteResponseTypeDef](./type_defs.md#deletesiteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `SiteId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSiteRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "SiteId": ...,
+}
 
-Returns [DeleteSiteResponseTypeDef](./type_defs.md#deletesiteresponsetypedef).
+parent.delete_site(**kwargs)
+```
 
-<a id="deregister\_transit\_gateway"></a>
+1. See [:material-code-braces: DeleteSiteRequestRequestTypeDef](./type_defs.md#deletesiterequestrequesttypedef) 
 
-### deregister_transit_gateway
+### deregister\_transit\_gateway
 
 Deregisters a transit gateway from your global network.
 
-Type annotations for
-`boto3.client("networkmanager").deregister_transit_gateway` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").deregister_transit_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
 
-Boto3 documentation:
-[NetworkManager.Client.deregister_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.deregister_transit_gateway)
+```python title="Method definition"
+def deregister_transit_gateway(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayArn: str,
+) -> DeregisterTransitGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterTransitGatewayRequestRequestTypeDef](./type_defs.md#deregistertransitgatewayrequestrequesttypedef).
+1. See [:material-code-braces: DeregisterTransitGatewayResponseTypeDef](./type_defs.md#deregistertransitgatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterTransitGatewayRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "TransitGatewayArn": ...,
+}
 
-Returns
-[DeregisterTransitGatewayResponseTypeDef](./type_defs.md#deregistertransitgatewayresponsetypedef).
+parent.deregister_transit_gateway(**kwargs)
+```
 
-<a id="describe\_global\_networks"></a>
+1. See [:material-code-braces: DeregisterTransitGatewayRequestRequestTypeDef](./type_defs.md#deregistertransitgatewayrequestrequesttypedef) 
 
-### describe_global_networks
+### describe\_global\_networks
 
 Describes one or more global networks.
 
-Type annotations for `boto3.client("networkmanager").describe_global_networks`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").describe_global_networks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
 
-Boto3 documentation:
-[NetworkManager.Client.describe_global_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.describe_global_networks)
+```python title="Method definition"
+def describe_global_networks(
+    self,
+    *,
+    GlobalNetworkIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeGlobalNetworksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeGlobalNetworksRequestRequestTypeDef](./type_defs.md#describeglobalnetworksrequestrequesttypedef).
+1. See [:material-code-braces: DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeGlobalNetworksRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkIds": ...,
+}
 
-Returns
-[DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef).
+parent.describe_global_networks(**kwargs)
+```
 
-<a id="disassociate\_connect\_peer"></a>
+1. See [:material-code-braces: DescribeGlobalNetworksRequestRequestTypeDef](./type_defs.md#describeglobalnetworksrequestrequesttypedef) 
 
-### disassociate_connect_peer
+### disassociate\_connect\_peer
 
 Disassociates a core network Connect peer from a device and a link.
 
-Type annotations for `boto3.client("networkmanager").disassociate_connect_peer`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").disassociate_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.disassociate_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_connect_peer)
+```python title="Method definition"
+def disassociate_connect_peer(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectPeerId: str,
+) -> DisassociateConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateConnectPeerRequestRequestTypeDef](./type_defs.md#disassociateconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateConnectPeerResponseTypeDef](./type_defs.md#disassociateconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectPeerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateConnectPeerRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "ConnectPeerId": ...,
+}
 
-Returns
-[DisassociateConnectPeerResponseTypeDef](./type_defs.md#disassociateconnectpeerresponsetypedef).
+parent.disassociate_connect_peer(**kwargs)
+```
 
-<a id="disassociate\_customer\_gateway"></a>
+1. See [:material-code-braces: DisassociateConnectPeerRequestRequestTypeDef](./type_defs.md#disassociateconnectpeerrequestrequesttypedef) 
 
-### disassociate_customer_gateway
+### disassociate\_customer\_gateway
 
 Disassociates a customer gateway from a device and a link.
 
-Type annotations for
-`boto3.client("networkmanager").disassociate_customer_gateway` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").disassociate_customer_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
 
-Boto3 documentation:
-[NetworkManager.Client.disassociate_customer_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_customer_gateway)
+```python title="Method definition"
+def disassociate_customer_gateway(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CustomerGatewayArn: str,
+) -> DisassociateCustomerGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#disassociatecustomergatewayrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateCustomerGatewayResponseTypeDef](./type_defs.md#disassociatecustomergatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CustomerGatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateCustomerGatewayRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "CustomerGatewayArn": ...,
+}
 
-Returns
-[DisassociateCustomerGatewayResponseTypeDef](./type_defs.md#disassociatecustomergatewayresponsetypedef).
+parent.disassociate_customer_gateway(**kwargs)
+```
 
-<a id="disassociate\_link"></a>
+1. See [:material-code-braces: DisassociateCustomerGatewayRequestRequestTypeDef](./type_defs.md#disassociatecustomergatewayrequestrequesttypedef) 
 
-### disassociate_link
+### disassociate\_link
 
 Disassociates an existing device from a link.
 
-Type annotations for `boto3.client("networkmanager").disassociate_link` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").disassociate_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
 
-Boto3 documentation:
-[NetworkManager.Client.disassociate_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_link)
+```python title="Method definition"
+def disassociate_link(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str,
+    LinkId: str,
+) -> DisassociateLinkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateLinkRequestRequestTypeDef](./type_defs.md#disassociatelinkrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateLinkResponseTypeDef](./type_defs.md#disassociatelinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `LinkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateLinkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+    "LinkId": ...,
+}
 
-Returns
-[DisassociateLinkResponseTypeDef](./type_defs.md#disassociatelinkresponsetypedef).
+parent.disassociate_link(**kwargs)
+```
 
-<a id="disassociate\_transit\_gateway\_connect\_peer"></a>
+1. See [:material-code-braces: DisassociateLinkRequestRequestTypeDef](./type_defs.md#disassociatelinkrequestrequesttypedef) 
 
-### disassociate_transit_gateway_connect_peer
+### disassociate\_transit\_gateway\_connect\_peer
 
 Disassociates a transit gateway Connect peer from a device and link.
 
-Type annotations for
-`boto3.client("networkmanager").disassociate_transit_gateway_connect_peer`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").disassociate_transit_gateway_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.disassociate_transit_gateway_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.disassociate_transit_gateway_connect_peer)
+```python title="Method definition"
+def disassociate_transit_gateway_connect_peer(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayConnectPeerArn: str,
+) -> DisassociateTransitGatewayConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateTransitGatewayConnectPeerRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "TransitGatewayConnectPeerArn": ...,
+}
 
-Returns
-[DisassociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponsetypedef).
+parent.disassociate_transit_gateway_connect_peer(**kwargs)
+```
 
-<a id="execute\_core\_network\_change\_set"></a>
+1. See [:material-code-braces: DisassociateTransitGatewayConnectPeerRequestRequestTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerrequestrequesttypedef) 
 
-### execute_core_network_change_set
+### execute\_core\_network\_change\_set
 
 Executes a change set on your core network.
 
-Type annotations for
-`boto3.client("networkmanager").execute_core_network_change_set` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").execute_core_network_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.execute_core_network_change_set)
 
-Boto3 documentation:
-[NetworkManager.Client.execute_core_network_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.execute_core_network_change_set)
+```python title="Method definition"
+def execute_core_network_change_set(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ExecuteCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#executecorenetworkchangesetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ExecuteCoreNetworkChangeSetRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.execute_core_network_change_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExecuteCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#executecorenetworkchangesetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("networkmanager").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url)
 
-Boto3 documentation:
-[NetworkManager.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_connect\_attachment"></a>
-
-### get_connect_attachment
+### get\_connect\_attachment
 
 Returns information about a core network Connect attachment.
 
-Type annotations for `boto3.client("networkmanager").get_connect_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_connect_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.get_connect_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_attachment)
+```python title="Method definition"
+def get_connect_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> GetConnectAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectAttachmentRequestRequestTypeDef](./type_defs.md#getconnectattachmentrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectAttachmentResponseTypeDef](./type_defs.md#getconnectattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConnectAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[GetConnectAttachmentResponseTypeDef](./type_defs.md#getconnectattachmentresponsetypedef).
+parent.get_connect_attachment(**kwargs)
+```
 
-<a id="get\_connect\_peer"></a>
+1. See [:material-code-braces: GetConnectAttachmentRequestRequestTypeDef](./type_defs.md#getconnectattachmentrequestrequesttypedef) 
 
-### get_connect_peer
+### get\_connect\_peer
 
 Returns information about a core network Connect peer.
 
-Type annotations for `boto3.client("networkmanager").get_connect_peer` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_connect_peer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer)
 
-Boto3 documentation:
-[NetworkManager.Client.get_connect_peer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer)
+```python title="Method definition"
+def get_connect_peer(
+    self,
+    *,
+    ConnectPeerId: str,
+) -> GetConnectPeerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectPeerRequestRequestTypeDef](./type_defs.md#getconnectpeerrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectPeerResponseTypeDef](./type_defs.md#getconnectpeerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectPeerId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConnectPeerRequestRequestTypeDef = {  # (1)
+    "ConnectPeerId": ...,
+}
 
-Returns
-[GetConnectPeerResponseTypeDef](./type_defs.md#getconnectpeerresponsetypedef).
+parent.get_connect_peer(**kwargs)
+```
 
-<a id="get\_connect\_peer\_associations"></a>
+1. See [:material-code-braces: GetConnectPeerRequestRequestTypeDef](./type_defs.md#getconnectpeerrequestrequesttypedef) 
 
-### get_connect_peer_associations
+### get\_connect\_peer\_associations
 
 Returns information about a core network Connect peer associations.
 
-Type annotations for
-`boto3.client("networkmanager").get_connect_peer_associations` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_connect_peer_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer_associations)
 
-Boto3 documentation:
-[NetworkManager.Client.get_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connect_peer_associations)
+```python title="Method definition"
+def get_connect_peer_associations(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectPeerIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetConnectPeerAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#getconnectpeerassociationsrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectPeerIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetConnectPeerAssociationsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef).
+parent.get_connect_peer_associations(**kwargs)
+```
 
-<a id="get\_connections"></a>
+1. See [:material-code-braces: GetConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#getconnectpeerassociationsrequestrequesttypedef) 
 
-### get_connections
+### get\_connections
 
 Gets information about one or more of your connections in a global network.
 
-Type annotations for `boto3.client("networkmanager").get_connections` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_connections` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
 
-Boto3 documentation:
-[NetworkManager.Client.get_connections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_connections)
+```python title="Method definition"
+def get_connections(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectionIds: Sequence[str] = ...,
+    DeviceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetConnectionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectionIds`: `Sequence`\[`str`\]
-- `DeviceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetConnectionsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
+parent.get_connections(**kwargs)
+```
 
-<a id="get\_core\_network"></a>
+1. See [:material-code-braces: GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef) 
 
-### get_core_network
+### get\_core\_network
 
 Returns information about a core network.
 
-Type annotations for `boto3.client("networkmanager").get_core_network` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network)
 
-Boto3 documentation:
-[NetworkManager.Client.get_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network)
+```python title="Method definition"
+def get_core_network(
+    self,
+    *,
+    CoreNetworkId: str,
+) -> GetCoreNetworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCoreNetworkRequestRequestTypeDef](./type_defs.md#getcorenetworkrequestrequesttypedef).
+1. See [:material-code-braces: GetCoreNetworkResponseTypeDef](./type_defs.md#getcorenetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCoreNetworkRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[GetCoreNetworkResponseTypeDef](./type_defs.md#getcorenetworkresponsetypedef).
+parent.get_core_network(**kwargs)
+```
 
-<a id="get\_core\_network\_change\_set"></a>
+1. See [:material-code-braces: GetCoreNetworkRequestRequestTypeDef](./type_defs.md#getcorenetworkrequestrequesttypedef) 
 
-### get_core_network_change_set
+### get\_core\_network\_change\_set
 
 Returns a change set between the LIVE core network policy and a submitted
 policy.
 
-Type annotations for
-`boto3.client("networkmanager").get_core_network_change_set` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_change_set)
 
-Boto3 documentation:
-[NetworkManager.Client.get_core_network_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_change_set)
+```python title="Method definition"
+def get_core_network_change_set(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCoreNetworkChangeSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#getcorenetworkchangesetrequestrequesttypedef).
+1. See [:material-code-braces: GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCoreNetworkChangeSetRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
 
-Returns
-[GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef).
+parent.get_core_network_change_set(**kwargs)
+```
 
-<a id="get\_core\_network\_policy"></a>
+1. See [:material-code-braces: GetCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#getcorenetworkchangesetrequestrequesttypedef) 
 
-### get_core_network_policy
+### get\_core\_network\_policy
 
 Gets details about a core network policy.
 
-Type annotations for `boto3.client("networkmanager").get_core_network_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_core_network_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_policy)
 
-Boto3 documentation:
-[NetworkManager.Client.get_core_network_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_core_network_policy)
+```python title="Method definition"
+def get_core_network_policy(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int = ...,
+    Alias: CoreNetworkPolicyAliasType = ...,  # (1)
+) -> GetCoreNetworkPolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#getcorenetworkpolicyrequestrequesttypedef).
+1. See [:material-code-brackets: CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype) 
+2. See [:material-code-braces: GetCoreNetworkPolicyResponseTypeDef](./type_defs.md#getcorenetworkpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int`
-- `Alias`:
-  [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
+```python title="Usage example with kwargs"
+kwargs: GetCoreNetworkPolicyRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[GetCoreNetworkPolicyResponseTypeDef](./type_defs.md#getcorenetworkpolicyresponsetypedef).
+parent.get_core_network_policy(**kwargs)
+```
 
-<a id="get\_customer\_gateway\_associations"></a>
+1. See [:material-code-braces: GetCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#getcorenetworkpolicyrequestrequesttypedef) 
 
-### get_customer_gateway_associations
+### get\_customer\_gateway\_associations
 
 Gets the association information for customer gateways that are associated with
 devices and links in your global network.
 
-Type annotations for
-`boto3.client("networkmanager").get_customer_gateway_associations` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_customer_gateway_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
 
-Boto3 documentation:
-[NetworkManager.Client.get_customer_gateway_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_customer_gateway_associations)
+```python title="Method definition"
+def get_customer_gateway_associations(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CustomerGatewayArns: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetCustomerGatewayAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCustomerGatewayAssociationsRequestRequestTypeDef](./type_defs.md#getcustomergatewayassociationsrequestrequesttypedef).
+1. See [:material-code-braces: GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CustomerGatewayArns`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCustomerGatewayAssociationsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef).
+parent.get_customer_gateway_associations(**kwargs)
+```
 
-<a id="get\_devices"></a>
+1. See [:material-code-braces: GetCustomerGatewayAssociationsRequestRequestTypeDef](./type_defs.md#getcustomergatewayassociationsrequestrequesttypedef) 
 
-### get_devices
+### get\_devices
 
 Gets information about one or more of your devices in a global network.
 
-Type annotations for `boto3.client("networkmanager").get_devices` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
 
-Boto3 documentation:
-[NetworkManager.Client.get_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_devices)
+```python title="Method definition"
+def get_devices(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceIds: Sequence[str] = ...,
+    SiteId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDevicesRequestRequestTypeDef](./type_defs.md#getdevicesrequestrequesttypedef).
+1. See [:material-code-braces: GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceIds`: `Sequence`\[`str`\]
-- `SiteId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDevicesRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns [GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef).
+parent.get_devices(**kwargs)
+```
 
-<a id="get\_link\_associations"></a>
+1. See [:material-code-braces: GetDevicesRequestRequestTypeDef](./type_defs.md#getdevicesrequestrequesttypedef) 
 
-### get_link_associations
+### get\_link\_associations
 
 Gets the link associations for a device or a link.
 
-Type annotations for `boto3.client("networkmanager").get_link_associations`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_link_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
 
-Boto3 documentation:
-[NetworkManager.Client.get_link_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_link_associations)
+```python title="Method definition"
+def get_link_associations(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str = ...,
+    LinkId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetLinkAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLinkAssociationsRequestRequestTypeDef](./type_defs.md#getlinkassociationsrequestrequesttypedef).
+1. See [:material-code-braces: GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str`
-- `LinkId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLinkAssociationsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef).
+parent.get_link_associations(**kwargs)
+```
 
-<a id="get\_links"></a>
+1. See [:material-code-braces: GetLinkAssociationsRequestRequestTypeDef](./type_defs.md#getlinkassociationsrequestrequesttypedef) 
 
-### get_links
+### get\_links
 
 Gets information about one or more links in a specified global network.
 
-Type annotations for `boto3.client("networkmanager").get_links` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_links` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links)
 
-Boto3 documentation:
-[NetworkManager.Client.get_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_links)
+```python title="Method definition"
+def get_links(
+    self,
+    *,
+    GlobalNetworkId: str,
+    LinkIds: Sequence[str] = ...,
+    SiteId: str = ...,
+    Type: str = ...,
+    Provider: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetLinksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLinksRequestRequestTypeDef](./type_defs.md#getlinksrequestrequesttypedef).
+1. See [:material-code-braces: GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `LinkIds`: `Sequence`\[`str`\]
-- `SiteId`: `str`
-- `Type`: `str`
-- `Provider`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLinksRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef).
+parent.get_links(**kwargs)
+```
 
-<a id="get\_network\_resource\_counts"></a>
+1. See [:material-code-braces: GetLinksRequestRequestTypeDef](./type_defs.md#getlinksrequestrequesttypedef) 
 
-### get_network_resource_counts
+### get\_network\_resource\_counts
 
 Gets the count of network resources, by resource type, for the specified global
 network.
 
-Type annotations for
-`boto3.client("networkmanager").get_network_resource_counts` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_network_resource_counts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_counts)
 
-Boto3 documentation:
-[NetworkManager.Client.get_network_resource_counts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_counts)
+```python title="Method definition"
+def get_network_resource_counts(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ResourceType: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetNetworkResourceCountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkResourceCountsRequestRequestTypeDef](./type_defs.md#getnetworkresourcecountsrequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ResourceType`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourceCountsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef).
+parent.get_network_resource_counts(**kwargs)
+```
 
-<a id="get\_network\_resource\_relationships"></a>
+1. See [:material-code-braces: GetNetworkResourceCountsRequestRequestTypeDef](./type_defs.md#getnetworkresourcecountsrequestrequesttypedef) 
 
-### get_network_resource_relationships
+### get\_network\_resource\_relationships
 
 Gets the network resource relationships for the specified global network.
 
-Type annotations for
-`boto3.client("networkmanager").get_network_resource_relationships` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_network_resource_relationships` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_relationships)
 
-Boto3 documentation:
-[NetworkManager.Client.get_network_resource_relationships](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resource_relationships)
+```python title="Method definition"
+def get_network_resource_relationships(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetNetworkResourceRelationshipsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkResourceRelationshipsRequestRequestTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourceRelationshipsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef).
+parent.get_network_resource_relationships(**kwargs)
+```
 
-<a id="get\_network\_resources"></a>
+1. See [:material-code-braces: GetNetworkResourceRelationshipsRequestRequestTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestrequesttypedef) 
 
-### get_network_resources
+### get\_network\_resources
 
 Describes the network resources for the specified global network.
 
-Type annotations for `boto3.client("networkmanager").get_network_resources`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_network_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resources)
 
-Boto3 documentation:
-[NetworkManager.Client.get_network_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_resources)
+```python title="Method definition"
+def get_network_resources(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetNetworkResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkResourcesRequestRequestTypeDef](./type_defs.md#getnetworkresourcesrequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetNetworkResourcesRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef).
+parent.get_network_resources(**kwargs)
+```
 
-<a id="get\_network\_routes"></a>
+1. See [:material-code-braces: GetNetworkResourcesRequestRequestTypeDef](./type_defs.md#getnetworkresourcesrequestrequesttypedef) 
 
-### get_network_routes
+### get\_network\_routes
 
 Gets the network routes of the specified global network.
 
-Type annotations for `boto3.client("networkmanager").get_network_routes`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_network_routes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_routes)
 
-Boto3 documentation:
-[NetworkManager.Client.get_network_routes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_routes)
+```python title="Method definition"
+def get_network_routes(
+    self,
+    *,
+    GlobalNetworkId: str,
+    RouteTableIdentifier: RouteTableIdentifierTypeDef,  # (1)
+    ExactCidrMatches: Sequence[str] = ...,
+    LongestPrefixMatches: Sequence[str] = ...,
+    SubnetOfMatches: Sequence[str] = ...,
+    SupernetOfMatches: Sequence[str] = ...,
+    PrefixListIds: Sequence[str] = ...,
+    States: Sequence[RouteStateType] = ...,  # (2)
+    Types: Sequence[RouteTypeType] = ...,  # (3)
+    DestinationFilters: Mapping[str, Sequence[str]] = ...,
+) -> GetNetworkRoutesResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkRoutesRequestRequestTypeDef](./type_defs.md#getnetworkroutesrequestrequesttypedef).
+1. See [:material-code-braces: RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef) 
+2. See [:material-code-brackets: RouteStateType](./literals.md#routestatetype) 
+3. See [:material-code-brackets: RouteTypeType](./literals.md#routetypetype) 
+4. See [:material-code-braces: GetNetworkRoutesResponseTypeDef](./type_defs.md#getnetworkroutesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `RouteTableIdentifier`:
-  [RouteTableIdentifierTypeDef](./type_defs.md#routetableidentifiertypedef)
-  *(required)*
-- `ExactCidrMatches`: `Sequence`\[`str`\]
-- `LongestPrefixMatches`: `Sequence`\[`str`\]
-- `SubnetOfMatches`: `Sequence`\[`str`\]
-- `SupernetOfMatches`: `Sequence`\[`str`\]
-- `PrefixListIds`: `Sequence`\[`str`\]
-- `States`: `Sequence`\[[RouteStateType](./literals.md#routestatetype)\]
-- `Types`: `Sequence`\[[RouteTypeType](./literals.md#routetypetype)\]
-- `DestinationFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+```python title="Usage example with kwargs"
+kwargs: GetNetworkRoutesRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "RouteTableIdentifier": ...,
+}
 
-Returns
-[GetNetworkRoutesResponseTypeDef](./type_defs.md#getnetworkroutesresponsetypedef).
+parent.get_network_routes(**kwargs)
+```
 
-<a id="get\_network\_telemetry"></a>
+1. See [:material-code-braces: GetNetworkRoutesRequestRequestTypeDef](./type_defs.md#getnetworkroutesrequestrequesttypedef) 
 
-### get_network_telemetry
+### get\_network\_telemetry
 
 Gets the network telemetry of the specified global network.
 
-Type annotations for `boto3.client("networkmanager").get_network_telemetry`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_network_telemetry` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_telemetry)
 
-Boto3 documentation:
-[NetworkManager.Client.get_network_telemetry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_network_telemetry)
+```python title="Method definition"
+def get_network_telemetry(
+    self,
+    *,
+    GlobalNetworkId: str,
+    CoreNetworkId: str = ...,
+    RegisteredGatewayArn: str = ...,
+    AwsRegion: str = ...,
+    AccountId: str = ...,
+    ResourceType: str = ...,
+    ResourceArn: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetNetworkTelemetryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNetworkTelemetryRequestRequestTypeDef](./type_defs.md#getnetworktelemetryrequestrequesttypedef).
+1. See [:material-code-braces: GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `CoreNetworkId`: `str`
-- `RegisteredGatewayArn`: `str`
-- `AwsRegion`: `str`
-- `AccountId`: `str`
-- `ResourceType`: `str`
-- `ResourceArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetNetworkTelemetryRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef).
+parent.get_network_telemetry(**kwargs)
+```
 
-<a id="get\_resource\_policy"></a>
+1. See [:material-code-braces: GetNetworkTelemetryRequestRequestTypeDef](./type_defs.md#getnetworktelemetryrequestrequesttypedef) 
 
-### get_resource_policy
+### get\_resource\_policy
 
 Returns information about a resource policy.
 
-Type annotations for `boto3.client("networkmanager").get_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_resource_policy)
 
-Boto3 documentation:
-[NetworkManager.Client.get_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_resource_policy)
+```python title="Method definition"
+def get_resource_policy(
+    self,
+    *,
+    ResourceArn: str,
+) -> GetResourcePolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourcePolicyRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+parent.get_resource_policy(**kwargs)
+```
 
-<a id="get\_route\_analysis"></a>
+1. See [:material-code-braces: GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef) 
 
-### get_route_analysis
+### get\_route\_analysis
 
 Gets information about the specified route analysis.
 
-Type annotations for `boto3.client("networkmanager").get_route_analysis`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_route_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_route_analysis)
 
-Boto3 documentation:
-[NetworkManager.Client.get_route_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_route_analysis)
+```python title="Method definition"
+def get_route_analysis(
+    self,
+    *,
+    GlobalNetworkId: str,
+    RouteAnalysisId: str,
+) -> GetRouteAnalysisResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRouteAnalysisRequestRequestTypeDef](./type_defs.md#getrouteanalysisrequestrequesttypedef).
+1. See [:material-code-braces: GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `RouteAnalysisId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRouteAnalysisRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "RouteAnalysisId": ...,
+}
 
-Returns
-[GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef).
+parent.get_route_analysis(**kwargs)
+```
 
-<a id="get\_site\_to\_site\_vpn\_attachment"></a>
+1. See [:material-code-braces: GetRouteAnalysisRequestRequestTypeDef](./type_defs.md#getrouteanalysisrequestrequesttypedef) 
 
-### get_site_to_site_vpn_attachment
+### get\_site\_to\_site\_vpn\_attachment
 
 Returns information about a site-to-site VPN attachment.
 
-Type annotations for
-`boto3.client("networkmanager").get_site_to_site_vpn_attachment` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_site_to_site_vpn_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_site_to_site_vpn_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.get_site_to_site_vpn_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_site_to_site_vpn_attachment)
+```python title="Method definition"
+def get_site_to_site_vpn_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> GetSiteToSiteVpnAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#getsitetositevpnattachmentrequestrequesttypedef).
+1. See [:material-code-braces: GetSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#getsitetositevpnattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSiteToSiteVpnAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[GetSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#getsitetositevpnattachmentresponsetypedef).
+parent.get_site_to_site_vpn_attachment(**kwargs)
+```
 
-<a id="get\_sites"></a>
+1. See [:material-code-braces: GetSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#getsitetositevpnattachmentrequestrequesttypedef) 
 
-### get_sites
+### get\_sites
 
 Gets information about one or more of your sites in a global network.
 
-Type annotations for `boto3.client("networkmanager").get_sites` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_sites` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
 
-Boto3 documentation:
-[NetworkManager.Client.get_sites](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_sites)
+```python title="Method definition"
+def get_sites(
+    self,
+    *,
+    GlobalNetworkId: str,
+    SiteIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetSitesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSitesRequestRequestTypeDef](./type_defs.md#getsitesrequestrequesttypedef).
+1. See [:material-code-braces: GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `SiteIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSitesRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns [GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef).
+parent.get_sites(**kwargs)
+```
 
-<a id="get\_transit\_gateway\_connect\_peer\_associations"></a>
+1. See [:material-code-braces: GetSitesRequestRequestTypeDef](./type_defs.md#getsitesrequestrequesttypedef) 
 
-### get_transit_gateway_connect_peer_associations
+### get\_transit\_gateway\_connect\_peer\_associations
 
 Gets information about one or more of your transit gateway Connect peer
 associations in a global network.
 
-Type annotations for
-`boto3.client("networkmanager").get_transit_gateway_connect_peer_associations`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_transit_gateway_connect_peer_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
 
-Boto3 documentation:
-[NetworkManager.Client.get_transit_gateway_connect_peer_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_connect_peer_associations)
+```python title="Method definition"
+def get_transit_gateway_connect_peer_associations(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayConnectPeerArns: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetTransitGatewayConnectPeerAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestrequesttypedef).
+1. See [:material-code-braces: GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayConnectPeerArns`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef).
+parent.get_transit_gateway_connect_peer_associations(**kwargs)
+```
 
-<a id="get\_transit\_gateway\_registrations"></a>
+1. See [:material-code-braces: GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestrequesttypedef) 
 
-### get_transit_gateway_registrations
+### get\_transit\_gateway\_registrations
 
 Gets information about the transit gateway registrations in a specified global
 network.
 
-Type annotations for
-`boto3.client("networkmanager").get_transit_gateway_registrations` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_transit_gateway_registrations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
 
-Boto3 documentation:
-[NetworkManager.Client.get_transit_gateway_registrations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_transit_gateway_registrations)
+```python title="Method definition"
+def get_transit_gateway_registrations(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayArns: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetTransitGatewayRegistrationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTransitGatewayRegistrationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestrequesttypedef).
+1. See [:material-code-braces: GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArns`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetTransitGatewayRegistrationsRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef).
+parent.get_transit_gateway_registrations(**kwargs)
+```
 
-<a id="get\_vpc\_attachment"></a>
+1. See [:material-code-braces: GetTransitGatewayRegistrationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestrequesttypedef) 
 
-### get_vpc_attachment
+### get\_vpc\_attachment
 
 Returns information about a VPC attachment.
 
-Type annotations for `boto3.client("networkmanager").get_vpc_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_vpc_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_vpc_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.get_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.get_vpc_attachment)
+```python title="Method definition"
+def get_vpc_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> GetVpcAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVpcAttachmentRequestRequestTypeDef](./type_defs.md#getvpcattachmentrequestrequesttypedef).
+1. See [:material-code-braces: GetVpcAttachmentResponseTypeDef](./type_defs.md#getvpcattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVpcAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[GetVpcAttachmentResponseTypeDef](./type_defs.md#getvpcattachmentresponsetypedef).
+parent.get_vpc_attachment(**kwargs)
+```
 
-<a id="list\_attachments"></a>
+1. See [:material-code-braces: GetVpcAttachmentRequestRequestTypeDef](./type_defs.md#getvpcattachmentrequestrequesttypedef) 
 
-### list_attachments
+### list\_attachments
 
 Returns a list of core network attachments.
 
-Type annotations for `boto3.client("networkmanager").list_attachments` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_attachments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_attachments)
 
-Boto3 documentation:
-[NetworkManager.Client.list_attachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_attachments)
+```python title="Method definition"
+def list_attachments(
+    self,
+    *,
+    CoreNetworkId: str = ...,
+    AttachmentType: AttachmentTypeType = ...,  # (1)
+    EdgeLocation: str = ...,
+    State: AttachmentStateType = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAttachmentsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachmentsRequestRequestTypeDef](./type_defs.md#listattachmentsrequestrequesttypedef).
+1. See [:material-code-brackets: AttachmentTypeType](./literals.md#attachmenttypetype) 
+2. See [:material-code-brackets: AttachmentStateType](./literals.md#attachmentstatetype) 
+3. See [:material-code-braces: ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str`
-- `AttachmentType`: [AttachmentTypeType](./literals.md#attachmenttypetype)
-- `EdgeLocation`: `str`
-- `State`: [AttachmentStateType](./literals.md#attachmentstatetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAttachmentsRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef).
+parent.list_attachments(**kwargs)
+```
 
-<a id="list\_connect\_peers"></a>
+1. See [:material-code-braces: ListAttachmentsRequestRequestTypeDef](./type_defs.md#listattachmentsrequestrequesttypedef) 
 
-### list_connect_peers
+### list\_connect\_peers
 
 Returns a list of core network Connect peers.
 
-Type annotations for `boto3.client("networkmanager").list_connect_peers`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_connect_peers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_connect_peers)
 
-Boto3 documentation:
-[NetworkManager.Client.list_connect_peers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_connect_peers)
+```python title="Method definition"
+def list_connect_peers(
+    self,
+    *,
+    CoreNetworkId: str = ...,
+    ConnectAttachmentId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListConnectPeersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectPeersRequestRequestTypeDef](./type_defs.md#listconnectpeersrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str`
-- `ConnectAttachmentId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectPeersRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef).
+parent.list_connect_peers(**kwargs)
+```
 
-<a id="list\_core\_network\_policy\_versions"></a>
+1. See [:material-code-braces: ListConnectPeersRequestRequestTypeDef](./type_defs.md#listconnectpeersrequestrequesttypedef) 
 
-### list_core_network_policy_versions
+### list\_core\_network\_policy\_versions
 
 Returns a list of core network policy versions.
 
-Type annotations for
-`boto3.client("networkmanager").list_core_network_policy_versions` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_core_network_policy_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_network_policy_versions)
 
-Boto3 documentation:
-[NetworkManager.Client.list_core_network_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_network_policy_versions)
+```python title="Method definition"
+def list_core_network_policy_versions(
+    self,
+    *,
+    CoreNetworkId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCoreNetworkPolicyVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCoreNetworkPolicyVersionsRequestRequestTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoreNetworkPolicyVersionsRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef).
+parent.list_core_network_policy_versions(**kwargs)
+```
 
-<a id="list\_core\_networks"></a>
+1. See [:material-code-braces: ListCoreNetworkPolicyVersionsRequestRequestTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestrequesttypedef) 
 
-### list_core_networks
+### list\_core\_networks
 
 Returns a list of owned and shared core networks.
 
-Type annotations for `boto3.client("networkmanager").list_core_networks`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_core_networks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_networks)
 
-Boto3 documentation:
-[NetworkManager.Client.list_core_networks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_core_networks)
+```python title="Method definition"
+def list_core_networks(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListCoreNetworksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCoreNetworksRequestRequestTypeDef](./type_defs.md#listcorenetworksrequestrequesttypedef).
+1. See [:material-code-braces: ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoreNetworksRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef).
+parent.list_core_networks(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListCoreNetworksRequestRequestTypeDef](./type_defs.md#listcorenetworksrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for a specified resource.
 
-Type annotations for `boto3.client("networkmanager").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[NetworkManager.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_core\_network\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_core_network_policy
+### put\_core\_network\_policy
 
 Creates a new, immutable version of a core network policy.
 
-Type annotations for `boto3.client("networkmanager").put_core_network_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").put_core_network_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_core_network_policy)
 
-Boto3 documentation:
-[NetworkManager.Client.put_core_network_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_core_network_policy)
+```python title="Method definition"
+def put_core_network_policy(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyDocument: str,
+    Description: str = ...,
+    LatestVersionId: int = ...,
+    ClientToken: str = ...,
+) -> PutCoreNetworkPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#putcorenetworkpolicyrequestrequesttypedef).
+1. See [:material-code-braces: PutCoreNetworkPolicyResponseTypeDef](./type_defs.md#putcorenetworkpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyDocument`: `str` *(required)*
-- `Description`: `str`
-- `LatestVersionId`: `int`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutCoreNetworkPolicyRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyDocument": ...,
+}
 
-Returns
-[PutCoreNetworkPolicyResponseTypeDef](./type_defs.md#putcorenetworkpolicyresponsetypedef).
+parent.put_core_network_policy(**kwargs)
+```
 
-<a id="put\_resource\_policy"></a>
+1. See [:material-code-braces: PutCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#putcorenetworkpolicyrequestrequesttypedef) 
 
-### put_resource_policy
+### put\_resource\_policy
 
 Creates or updates a resource policy.
 
-Type annotations for `boto3.client("networkmanager").put_resource_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").put_resource_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_resource_policy)
 
-Boto3 documentation:
-[NetworkManager.Client.put_resource_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.put_resource_policy)
+```python title="Method definition"
+def put_resource_policy(
+    self,
+    *,
+    PolicyDocument: str,
+    ResourceArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `PolicyDocument`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutResourcePolicyRequestRequestTypeDef = {  # (1)
+    "PolicyDocument": ...,
+    "ResourceArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_resource_policy(**kwargs)
+```
 
-<a id="register\_transit\_gateway"></a>
+1. See [:material-code-braces: PutResourcePolicyRequestRequestTypeDef](./type_defs.md#putresourcepolicyrequestrequesttypedef) 
 
-### register_transit_gateway
+### register\_transit\_gateway
 
 Registers a transit gateway in your global network.
 
-Type annotations for `boto3.client("networkmanager").register_transit_gateway`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").register_transit_gateway` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
 
-Boto3 documentation:
-[NetworkManager.Client.register_transit_gateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.register_transit_gateway)
+```python title="Method definition"
+def register_transit_gateway(
+    self,
+    *,
+    GlobalNetworkId: str,
+    TransitGatewayArn: str,
+) -> RegisterTransitGatewayResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterTransitGatewayRequestRequestTypeDef](./type_defs.md#registertransitgatewayrequestrequesttypedef).
+1. See [:material-code-braces: RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `TransitGatewayArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterTransitGatewayRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "TransitGatewayArn": ...,
+}
 
-Returns
-[RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef).
+parent.register_transit_gateway(**kwargs)
+```
 
-<a id="reject\_attachment"></a>
+1. See [:material-code-braces: RegisterTransitGatewayRequestRequestTypeDef](./type_defs.md#registertransitgatewayrequestrequesttypedef) 
 
-### reject_attachment
+### reject\_attachment
 
 Rejects a core network attachment request.
 
-Type annotations for `boto3.client("networkmanager").reject_attachment` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").reject_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.reject_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.reject_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.reject_attachment)
+```python title="Method definition"
+def reject_attachment(
+    self,
+    *,
+    AttachmentId: str,
+) -> RejectAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RejectAttachmentRequestRequestTypeDef](./type_defs.md#rejectattachmentrequestrequesttypedef).
+1. See [:material-code-braces: RejectAttachmentResponseTypeDef](./type_defs.md#rejectattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[RejectAttachmentResponseTypeDef](./type_defs.md#rejectattachmentresponsetypedef).
+parent.reject_attachment(**kwargs)
+```
 
-<a id="restore\_core\_network\_policy\_version"></a>
+1. See [:material-code-braces: RejectAttachmentRequestRequestTypeDef](./type_defs.md#rejectattachmentrequestrequesttypedef) 
 
-### restore_core_network_policy_version
+### restore\_core\_network\_policy\_version
 
-Restores a previous policy version as a new, immutable version of a core
-network policy.
+Restores a previous policy version as a new, immutable version of a core network
+policy.
 
-Type annotations for
-`boto3.client("networkmanager").restore_core_network_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").restore_core_network_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.restore_core_network_policy_version)
 
-Boto3 documentation:
-[NetworkManager.Client.restore_core_network_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.restore_core_network_policy_version)
+```python title="Method definition"
+def restore_core_network_policy_version(
+    self,
+    *,
+    CoreNetworkId: str,
+    PolicyVersionId: int,
+) -> RestoreCoreNetworkPolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RestoreCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#restorecorenetworkpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: RestoreCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#restorecorenetworkpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `PolicyVersionId`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreCoreNetworkPolicyVersionRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+    "PolicyVersionId": ...,
+}
 
-Returns
-[RestoreCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#restorecorenetworkpolicyversionresponsetypedef).
+parent.restore_core_network_policy_version(**kwargs)
+```
 
-<a id="start\_route\_analysis"></a>
+1. See [:material-code-braces: RestoreCoreNetworkPolicyVersionRequestRequestTypeDef](./type_defs.md#restorecorenetworkpolicyversionrequestrequesttypedef) 
 
-### start_route_analysis
+### start\_route\_analysis
 
 Starts analyzing the routing path between the specified source and destination.
 
-Type annotations for `boto3.client("networkmanager").start_route_analysis`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").start_route_analysis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_route_analysis)
 
-Boto3 documentation:
-[NetworkManager.Client.start_route_analysis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.start_route_analysis)
+```python title="Method definition"
+def start_route_analysis(
+    self,
+    *,
+    GlobalNetworkId: str,
+    Source: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
+    Destination: RouteAnalysisEndpointOptionsSpecificationTypeDef,  # (1)
+    IncludeReturnPath: bool = ...,
+    UseMiddleboxes: bool = ...,
+) -> StartRouteAnalysisResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartRouteAnalysisRequestRequestTypeDef](./type_defs.md#startrouteanalysisrequestrequesttypedef).
+1. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
+2. See [:material-code-braces: RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef) 
+3. See [:material-code-braces: StartRouteAnalysisResponseTypeDef](./type_defs.md#startrouteanalysisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `Source`:
-  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
-  *(required)*
-- `Destination`:
-  [RouteAnalysisEndpointOptionsSpecificationTypeDef](./type_defs.md#routeanalysisendpointoptionsspecificationtypedef)
-  *(required)*
-- `IncludeReturnPath`: `bool`
-- `UseMiddleboxes`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StartRouteAnalysisRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "Source": ...,
+    "Destination": ...,
+}
 
-Returns
-[StartRouteAnalysisResponseTypeDef](./type_defs.md#startrouteanalysisresponsetypedef).
+parent.start_route_analysis(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartRouteAnalysisRequestRequestTypeDef](./type_defs.md#startrouteanalysisrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Tags a specified resource.
 
-Type annotations for `boto3.client("networkmanager").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
 
-Boto3 documentation:
-[NetworkManager.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a specified resource.
 
-Type annotations for `boto3.client("networkmanager").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
 
-Boto3 documentation:
-[NetworkManager.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_connection"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_connection
+### update\_connection
 
 Updates the information for an existing connection.
 
-Type annotations for `boto3.client("networkmanager").update_connection` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_connection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
 
-Boto3 documentation:
-[NetworkManager.Client.update_connection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_connection)
+```python title="Method definition"
+def update_connection(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ConnectionId: str,
+    LinkId: str = ...,
+    ConnectedLinkId: str = ...,
+    Description: str = ...,
+) -> UpdateConnectionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ConnectionId`: `str` *(required)*
-- `LinkId`: `str`
-- `ConnectedLinkId`: `str`
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectionRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "ConnectionId": ...,
+}
 
-Returns
-[UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
+parent.update_connection(**kwargs)
+```
 
-<a id="update\_core\_network"></a>
+1. See [:material-code-braces: UpdateConnectionRequestRequestTypeDef](./type_defs.md#updateconnectionrequestrequesttypedef) 
 
-### update_core_network
+### update\_core\_network
 
 Updates the description of a core network.
 
-Type annotations for `boto3.client("networkmanager").update_core_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_core_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_core_network)
 
-Boto3 documentation:
-[NetworkManager.Client.update_core_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_core_network)
+```python title="Method definition"
+def update_core_network(
+    self,
+    *,
+    CoreNetworkId: str,
+    Description: str = ...,
+) -> UpdateCoreNetworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCoreNetworkRequestRequestTypeDef](./type_defs.md#updatecorenetworkrequestrequesttypedef).
+1. See [:material-code-braces: UpdateCoreNetworkResponseTypeDef](./type_defs.md#updatecorenetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreNetworkId`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCoreNetworkRequestRequestTypeDef = {  # (1)
+    "CoreNetworkId": ...,
+}
 
-Returns
-[UpdateCoreNetworkResponseTypeDef](./type_defs.md#updatecorenetworkresponsetypedef).
+parent.update_core_network(**kwargs)
+```
 
-<a id="update\_device"></a>
+1. See [:material-code-braces: UpdateCoreNetworkRequestRequestTypeDef](./type_defs.md#updatecorenetworkrequestrequesttypedef) 
 
-### update_device
+### update\_device
 
 Updates the details for an existing device.
 
-Type annotations for `boto3.client("networkmanager").update_device` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device)
 
-Boto3 documentation:
-[NetworkManager.Client.update_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_device)
+```python title="Method definition"
+def update_device(
+    self,
+    *,
+    GlobalNetworkId: str,
+    DeviceId: str,
+    AWSLocation: AWSLocationTypeDef = ...,  # (1)
+    Description: str = ...,
+    Type: str = ...,
+    Vendor: str = ...,
+    Model: str = ...,
+    SerialNumber: str = ...,
+    Location: LocationTypeDef = ...,  # (2)
+    SiteId: str = ...,
+) -> UpdateDeviceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef).
+1. See [:material-code-braces: AWSLocationTypeDef](./type_defs.md#awslocationtypedef) 
+2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+3. See [:material-code-braces: UpdateDeviceResponseTypeDef](./type_defs.md#updatedeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
-- `AWSLocation`: [AWSLocationTypeDef](./type_defs.md#awslocationtypedef)
-- `Description`: `str`
-- `Type`: `str`
-- `Vendor`: `str`
-- `Model`: `str`
-- `SerialNumber`: `str`
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
-- `SiteId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "DeviceId": ...,
+}
 
-Returns
-[UpdateDeviceResponseTypeDef](./type_defs.md#updatedeviceresponsetypedef).
+parent.update_device(**kwargs)
+```
 
-<a id="update\_global\_network"></a>
+1. See [:material-code-braces: UpdateDeviceRequestRequestTypeDef](./type_defs.md#updatedevicerequestrequesttypedef) 
 
-### update_global_network
+### update\_global\_network
 
 Updates an existing global network.
 
-Type annotations for `boto3.client("networkmanager").update_global_network`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_global_network` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
 
-Boto3 documentation:
-[NetworkManager.Client.update_global_network](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_global_network)
+```python title="Method definition"
+def update_global_network(
+    self,
+    *,
+    GlobalNetworkId: str,
+    Description: str = ...,
+) -> UpdateGlobalNetworkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGlobalNetworkRequestRequestTypeDef](./type_defs.md#updateglobalnetworkrequestrequesttypedef).
+1. See [:material-code-braces: UpdateGlobalNetworkResponseTypeDef](./type_defs.md#updateglobalnetworkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGlobalNetworkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+}
 
-Returns
-[UpdateGlobalNetworkResponseTypeDef](./type_defs.md#updateglobalnetworkresponsetypedef).
+parent.update_global_network(**kwargs)
+```
 
-<a id="update\_link"></a>
+1. See [:material-code-braces: UpdateGlobalNetworkRequestRequestTypeDef](./type_defs.md#updateglobalnetworkrequestrequesttypedef) 
 
-### update_link
+### update\_link
 
 Updates the details for an existing link.
 
-Type annotations for `boto3.client("networkmanager").update_link` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link)
 
-Boto3 documentation:
-[NetworkManager.Client.update_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_link)
+```python title="Method definition"
+def update_link(
+    self,
+    *,
+    GlobalNetworkId: str,
+    LinkId: str,
+    Description: str = ...,
+    Type: str = ...,
+    Bandwidth: BandwidthTypeDef = ...,  # (1)
+    Provider: str = ...,
+) -> UpdateLinkResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLinkRequestRequestTypeDef](./type_defs.md#updatelinkrequestrequesttypedef).
+1. See [:material-code-braces: BandwidthTypeDef](./type_defs.md#bandwidthtypedef) 
+2. See [:material-code-braces: UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `LinkId`: `str` *(required)*
-- `Description`: `str`
-- `Type`: `str`
-- `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
-- `Provider`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateLinkRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "LinkId": ...,
+}
 
-Returns [UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef).
+parent.update_link(**kwargs)
+```
 
-<a id="update\_network\_resource\_metadata"></a>
+1. See [:material-code-braces: UpdateLinkRequestRequestTypeDef](./type_defs.md#updatelinkrequestrequesttypedef) 
 
-### update_network_resource_metadata
+### update\_network\_resource\_metadata
 
 Updates the resource metadata for the specified global network.
 
-Type annotations for
-`boto3.client("networkmanager").update_network_resource_metadata` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_network_resource_metadata` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_network_resource_metadata)
 
-Boto3 documentation:
-[NetworkManager.Client.update_network_resource_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_network_resource_metadata)
+```python title="Method definition"
+def update_network_resource_metadata(
+    self,
+    *,
+    GlobalNetworkId: str,
+    ResourceArn: str,
+    Metadata: Mapping[str, str],
+) -> UpdateNetworkResourceMetadataResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateNetworkResourceMetadataRequestRequestTypeDef](./type_defs.md#updatenetworkresourcemetadatarequestrequesttypedef).
+1. See [:material-code-braces: UpdateNetworkResourceMetadataResponseTypeDef](./type_defs.md#updatenetworkresourcemetadataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `ResourceArn`: `str` *(required)*
-- `Metadata`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateNetworkResourceMetadataRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "ResourceArn": ...,
+    "Metadata": ...,
+}
 
-Returns
-[UpdateNetworkResourceMetadataResponseTypeDef](./type_defs.md#updatenetworkresourcemetadataresponsetypedef).
+parent.update_network_resource_metadata(**kwargs)
+```
 
-<a id="update\_site"></a>
+1. See [:material-code-braces: UpdateNetworkResourceMetadataRequestRequestTypeDef](./type_defs.md#updatenetworkresourcemetadatarequestrequesttypedef) 
 
-### update_site
+### update\_site
 
 Updates the information for an existing site.
 
-Type annotations for `boto3.client("networkmanager").update_site` method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_site` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site)
 
-Boto3 documentation:
-[NetworkManager.Client.update_site](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_site)
+```python title="Method definition"
+def update_site(
+    self,
+    *,
+    GlobalNetworkId: str,
+    SiteId: str,
+    Description: str = ...,
+    Location: LocationTypeDef = ...,  # (1)
+) -> UpdateSiteResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSiteRequestRequestTypeDef](./type_defs.md#updatesiterequestrequesttypedef).
+1. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
+2. See [:material-code-braces: UpdateSiteResponseTypeDef](./type_defs.md#updatesiteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GlobalNetworkId`: `str` *(required)*
-- `SiteId`: `str` *(required)*
-- `Description`: `str`
-- `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateSiteRequestRequestTypeDef = {  # (1)
+    "GlobalNetworkId": ...,
+    "SiteId": ...,
+}
 
-Returns [UpdateSiteResponseTypeDef](./type_defs.md#updatesiteresponsetypedef).
+parent.update_site(**kwargs)
+```
 
-<a id="update\_vpc\_attachment"></a>
+1. See [:material-code-braces: UpdateSiteRequestRequestTypeDef](./type_defs.md#updatesiterequestrequesttypedef) 
 
-### update_vpc_attachment
+### update\_vpc\_attachment
 
 Updates a VPC attachment.
 
-Type annotations for `boto3.client("networkmanager").update_vpc_attachment`
-method.
+Type annotations and code completion for `#!python boto3.client("networkmanager").update_vpc_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_vpc_attachment)
 
-Boto3 documentation:
-[NetworkManager.Client.update_vpc_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client.update_vpc_attachment)
+```python title="Method definition"
+def update_vpc_attachment(
+    self,
+    *,
+    AttachmentId: str,
+    AddSubnetArns: Sequence[str] = ...,
+    RemoveSubnetArns: Sequence[str] = ...,
+    Options: VpcOptionsTypeDef = ...,  # (1)
+) -> UpdateVpcAttachmentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVpcAttachmentRequestRequestTypeDef](./type_defs.md#updatevpcattachmentrequestrequesttypedef).
+1. See [:material-code-braces: VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef) 
+2. See [:material-code-braces: UpdateVpcAttachmentResponseTypeDef](./type_defs.md#updatevpcattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AttachmentId`: `str` *(required)*
-- `AddSubnetArns`: `Sequence`\[`str`\]
-- `RemoveSubnetArns`: `Sequence`\[`str`\]
-- `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateVpcAttachmentRequestRequestTypeDef = {  # (1)
+    "AttachmentId": ...,
+}
 
-Returns
-[UpdateVpcAttachmentResponseTypeDef](./type_defs.md#updatevpcattachmentresponsetypedef).
+parent.update_vpc_attachment(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVpcAttachmentRequestRequestTypeDef](./type_defs.md#updatevpcattachmentrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("networkmanager").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("networkmanager").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_global_networks")` ->
-  [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
-- `client.get_paginator("get_connect_peer_associations")` ->
-  [GetConnectPeerAssociationsPaginator](./paginators.md#getconnectpeerassociationspaginator)
-- `client.get_paginator("get_connections")` ->
-  [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
-- `client.get_paginator("get_core_network_change_set")` ->
-  [GetCoreNetworkChangeSetPaginator](./paginators.md#getcorenetworkchangesetpaginator)
-- `client.get_paginator("get_customer_gateway_associations")` ->
-  [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
-- `client.get_paginator("get_devices")` ->
-  [GetDevicesPaginator](./paginators.md#getdevicespaginator)
-- `client.get_paginator("get_link_associations")` ->
-  [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
-- `client.get_paginator("get_links")` ->
-  [GetLinksPaginator](./paginators.md#getlinkspaginator)
-- `client.get_paginator("get_network_resource_counts")` ->
-  [GetNetworkResourceCountsPaginator](./paginators.md#getnetworkresourcecountspaginator)
-- `client.get_paginator("get_network_resource_relationships")` ->
-  [GetNetworkResourceRelationshipsPaginator](./paginators.md#getnetworkresourcerelationshipspaginator)
-- `client.get_paginator("get_network_resources")` ->
-  [GetNetworkResourcesPaginator](./paginators.md#getnetworkresourcespaginator)
-- `client.get_paginator("get_network_telemetry")` ->
-  [GetNetworkTelemetryPaginator](./paginators.md#getnetworktelemetrypaginator)
-- `client.get_paginator("get_sites")` ->
-  [GetSitesPaginator](./paginators.md#getsitespaginator)
-- `client.get_paginator("get_transit_gateway_connect_peer_associations")` ->
-  [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
-- `client.get_paginator("get_transit_gateway_registrations")` ->
-  [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
-- `client.get_paginator("list_attachments")` ->
-  [ListAttachmentsPaginator](./paginators.md#listattachmentspaginator)
-- `client.get_paginator("list_connect_peers")` ->
-  [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
-- `client.get_paginator("list_core_network_policy_versions")` ->
-  [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
-- `client.get_paginator("list_core_networks")` ->
-  [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
+- `client.get_paginator("describe_global_networks")` -> [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
+- `client.get_paginator("get_connect_peer_associations")` -> [GetConnectPeerAssociationsPaginator](./paginators.md#getconnectpeerassociationspaginator)
+- `client.get_paginator("get_connections")` -> [GetConnectionsPaginator](./paginators.md#getconnectionspaginator)
+- `client.get_paginator("get_core_network_change_set")` -> [GetCoreNetworkChangeSetPaginator](./paginators.md#getcorenetworkchangesetpaginator)
+- `client.get_paginator("get_customer_gateway_associations")` -> [GetCustomerGatewayAssociationsPaginator](./paginators.md#getcustomergatewayassociationspaginator)
+- `client.get_paginator("get_devices")` -> [GetDevicesPaginator](./paginators.md#getdevicespaginator)
+- `client.get_paginator("get_link_associations")` -> [GetLinkAssociationsPaginator](./paginators.md#getlinkassociationspaginator)
+- `client.get_paginator("get_links")` -> [GetLinksPaginator](./paginators.md#getlinkspaginator)
+- `client.get_paginator("get_network_resource_counts")` -> [GetNetworkResourceCountsPaginator](./paginators.md#getnetworkresourcecountspaginator)
+- `client.get_paginator("get_network_resource_relationships")` -> [GetNetworkResourceRelationshipsPaginator](./paginators.md#getnetworkresourcerelationshipspaginator)
+- `client.get_paginator("get_network_resources")` -> [GetNetworkResourcesPaginator](./paginators.md#getnetworkresourcespaginator)
+- `client.get_paginator("get_network_telemetry")` -> [GetNetworkTelemetryPaginator](./paginators.md#getnetworktelemetrypaginator)
+- `client.get_paginator("get_sites")` -> [GetSitesPaginator](./paginators.md#getsitespaginator)
+- `client.get_paginator("get_transit_gateway_connect_peer_associations")` -> [GetTransitGatewayConnectPeerAssociationsPaginator](./paginators.md#gettransitgatewayconnectpeerassociationspaginator)
+- `client.get_paginator("get_transit_gateway_registrations")` -> [GetTransitGatewayRegistrationsPaginator](./paginators.md#gettransitgatewayregistrationspaginator)
+- `client.get_paginator("list_attachments")` -> [ListAttachmentsPaginator](./paginators.md#listattachmentspaginator)
+- `client.get_paginator("list_connect_peers")` -> [ListConnectPeersPaginator](./paginators.md#listconnectpeerspaginator)
+- `client.get_paginator("list_core_network_policy_versions")` -> [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
+- `client.get_paginator("list_core_networks")` -> [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
+
+
+

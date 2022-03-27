@@ -1,125 +1,18 @@
-<a id="cloudfrontclient-for-boto3-cloudfront-module"></a>
-
-# CloudFrontClient for boto3 CloudFront module
+# CloudFrontClient
 
 > [Index](../README.md) > [CloudFront](./README.md) > CloudFrontClient
 
-Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module
-[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+!!! note ""
 
-- [CloudFrontClient for boto3 CloudFront module](#cloudfrontclient-for-boto3-cloudfront-module)
-  - [CloudFrontClient](#cloudfrontclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_alias](#associate_alias)
-    - [can_paginate](#can_paginate)
-    - [create_cache_policy](#create_cache_policy)
-    - [create_cloud_front_origin_access_identity](#create_cloud_front_origin_access_identity)
-    - [create_distribution](#create_distribution)
-    - [create_distribution_with_tags](#create_distribution_with_tags)
-    - [create_field_level_encryption_config](#create_field_level_encryption_config)
-    - [create_field_level_encryption_profile](#create_field_level_encryption_profile)
-    - [create_function](#create_function)
-    - [create_invalidation](#create_invalidation)
-    - [create_key_group](#create_key_group)
-    - [create_monitoring_subscription](#create_monitoring_subscription)
-    - [create_origin_request_policy](#create_origin_request_policy)
-    - [create_public_key](#create_public_key)
-    - [create_realtime_log_config](#create_realtime_log_config)
-    - [create_response_headers_policy](#create_response_headers_policy)
-    - [create_streaming_distribution](#create_streaming_distribution)
-    - [create_streaming_distribution_with_tags](#create_streaming_distribution_with_tags)
-    - [delete_cache_policy](#delete_cache_policy)
-    - [delete_cloud_front_origin_access_identity](#delete_cloud_front_origin_access_identity)
-    - [delete_distribution](#delete_distribution)
-    - [delete_field_level_encryption_config](#delete_field_level_encryption_config)
-    - [delete_field_level_encryption_profile](#delete_field_level_encryption_profile)
-    - [delete_function](#delete_function)
-    - [delete_key_group](#delete_key_group)
-    - [delete_monitoring_subscription](#delete_monitoring_subscription)
-    - [delete_origin_request_policy](#delete_origin_request_policy)
-    - [delete_public_key](#delete_public_key)
-    - [delete_realtime_log_config](#delete_realtime_log_config)
-    - [delete_response_headers_policy](#delete_response_headers_policy)
-    - [delete_streaming_distribution](#delete_streaming_distribution)
-    - [describe_function](#describe_function)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_cache_policy](#get_cache_policy)
-    - [get_cache_policy_config](#get_cache_policy_config)
-    - [get_cloud_front_origin_access_identity](#get_cloud_front_origin_access_identity)
-    - [get_cloud_front_origin_access_identity_config](#get_cloud_front_origin_access_identity_config)
-    - [get_distribution](#get_distribution)
-    - [get_distribution_config](#get_distribution_config)
-    - [get_field_level_encryption](#get_field_level_encryption)
-    - [get_field_level_encryption_config](#get_field_level_encryption_config)
-    - [get_field_level_encryption_profile](#get_field_level_encryption_profile)
-    - [get_field_level_encryption_profile_config](#get_field_level_encryption_profile_config)
-    - [get_function](#get_function)
-    - [get_invalidation](#get_invalidation)
-    - [get_key_group](#get_key_group)
-    - [get_key_group_config](#get_key_group_config)
-    - [get_monitoring_subscription](#get_monitoring_subscription)
-    - [get_origin_request_policy](#get_origin_request_policy)
-    - [get_origin_request_policy_config](#get_origin_request_policy_config)
-    - [get_public_key](#get_public_key)
-    - [get_public_key_config](#get_public_key_config)
-    - [get_realtime_log_config](#get_realtime_log_config)
-    - [get_response_headers_policy](#get_response_headers_policy)
-    - [get_response_headers_policy_config](#get_response_headers_policy_config)
-    - [get_streaming_distribution](#get_streaming_distribution)
-    - [get_streaming_distribution_config](#get_streaming_distribution_config)
-    - [list_cache_policies](#list_cache_policies)
-    - [list_cloud_front_origin_access_identities](#list_cloud_front_origin_access_identities)
-    - [list_conflicting_aliases](#list_conflicting_aliases)
-    - [list_distributions](#list_distributions)
-    - [list_distributions_by_cache_policy_id](#list_distributions_by_cache_policy_id)
-    - [list_distributions_by_key_group](#list_distributions_by_key_group)
-    - [list_distributions_by_origin_request_policy_id](#list_distributions_by_origin_request_policy_id)
-    - [list_distributions_by_realtime_log_config](#list_distributions_by_realtime_log_config)
-    - [list_distributions_by_response_headers_policy_id](#list_distributions_by_response_headers_policy_id)
-    - [list_distributions_by_web_acl_id](#list_distributions_by_web_acl_id)
-    - [list_field_level_encryption_configs](#list_field_level_encryption_configs)
-    - [list_field_level_encryption_profiles](#list_field_level_encryption_profiles)
-    - [list_functions](#list_functions)
-    - [list_invalidations](#list_invalidations)
-    - [list_key_groups](#list_key_groups)
-    - [list_origin_request_policies](#list_origin_request_policies)
-    - [list_public_keys](#list_public_keys)
-    - [list_realtime_log_configs](#list_realtime_log_configs)
-    - [list_response_headers_policies](#list_response_headers_policies)
-    - [list_streaming_distributions](#list_streaming_distributions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [publish_function](#publish_function)
-    - [tag_resource](#tag_resource)
-    - [test_function](#test_function)
-    - [untag_resource](#untag_resource)
-    - [update_cache_policy](#update_cache_policy)
-    - [update_cloud_front_origin_access_identity](#update_cloud_front_origin_access_identity)
-    - [update_distribution](#update_distribution)
-    - [update_field_level_encryption_config](#update_field_level_encryption_config)
-    - [update_field_level_encryption_profile](#update_field_level_encryption_profile)
-    - [update_function](#update_function)
-    - [update_key_group](#update_key_group)
-    - [update_origin_request_policy](#update_origin_request_policy)
-    - [update_public_key](#update_public_key)
-    - [update_realtime_log_config](#update_realtime_log_config)
-    - [update_response_headers_policy](#update_response_headers_policy)
-    - [update_streaming_distribution](#update_streaming_distribution)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="cloudfrontclient"></a>
+    Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+    type annotations stubs module [mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ## CloudFrontClient
 
-Type annotations for `boto3.client("cloudfront")`
+Type annotations and code completion for `#!python boto3.client("cloudfront")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cloudfront.client import CloudFrontClient
 
@@ -127,2344 +20,3048 @@ def get_cloudfront_client() -> CloudFrontClient:
     return Session().client("cloudfront")
 ```
 
-Boto3 documentation:
-[CloudFront.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cloudfront").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cloudfront")
+
+try:
+    do_something(client)
+except (
+    client.AccessDenied,
+    client.BatchTooLarge,
+    client.CNAMEAlreadyExists,
+    client.CachePolicyAlreadyExists,
+    client.CachePolicyInUse,
+    client.CannotChangeImmutablePublicKeyFields,
+    client.ClientError,
+    client.CloudFrontOriginAccessIdentityAlreadyExists,
+    client.CloudFrontOriginAccessIdentityInUse,
+    client.DistributionAlreadyExists,
+    client.DistributionNotDisabled,
+    client.FieldLevelEncryptionConfigAlreadyExists,
+    client.FieldLevelEncryptionConfigInUse,
+    client.FieldLevelEncryptionProfileAlreadyExists,
+    client.FieldLevelEncryptionProfileInUse,
+    client.FieldLevelEncryptionProfileSizeExceeded,
+    client.FunctionAlreadyExists,
+    client.FunctionInUse,
+    client.FunctionSizeLimitExceeded,
+    client.IllegalDelete,
+    client.IllegalFieldLevelEncryptionConfigAssociationWithCacheBehavior,
+    client.IllegalUpdate,
+    client.InconsistentQuantities,
+    client.InvalidArgument,
+    client.InvalidDefaultRootObject,
+    client.InvalidErrorCode,
+    client.InvalidForwardCookies,
+    client.InvalidFunctionAssociation,
+    client.InvalidGeoRestrictionParameter,
+    client.InvalidHeadersForS3Origin,
+    client.InvalidIfMatchVersion,
+    client.InvalidLambdaFunctionAssociation,
+    client.InvalidLocationCode,
+    client.InvalidMinimumProtocolVersion,
+    client.InvalidOrigin,
+    client.InvalidOriginAccessIdentity,
+    client.InvalidOriginKeepaliveTimeout,
+    client.InvalidOriginReadTimeout,
+    client.InvalidProtocolSettings,
+    client.InvalidQueryStringParameters,
+    client.InvalidRelativePath,
+    client.InvalidRequiredProtocol,
+    client.InvalidResponseCode,
+    client.InvalidTTLOrder,
+    client.InvalidTagging,
+    client.InvalidViewerCertificate,
+    client.InvalidWebACLId,
+    client.KeyGroupAlreadyExists,
+    client.MissingBody,
+    client.NoSuchCachePolicy,
+    client.NoSuchCloudFrontOriginAccessIdentity,
+    client.NoSuchDistribution,
+    client.NoSuchFieldLevelEncryptionConfig,
+    client.NoSuchFieldLevelEncryptionProfile,
+    client.NoSuchFunctionExists,
+    client.NoSuchInvalidation,
+    client.NoSuchOrigin,
+    client.NoSuchOriginRequestPolicy,
+    client.NoSuchPublicKey,
+    client.NoSuchRealtimeLogConfig,
+    client.NoSuchResource,
+    client.NoSuchResponseHeadersPolicy,
+    client.NoSuchStreamingDistribution,
+    client.OriginRequestPolicyAlreadyExists,
+    client.OriginRequestPolicyInUse,
+    client.PreconditionFailed,
+    client.PublicKeyAlreadyExists,
+    client.PublicKeyInUse,
+    client.QueryArgProfileEmpty,
+    client.RealtimeLogConfigAlreadyExists,
+    client.RealtimeLogConfigInUse,
+    client.RealtimeLogConfigOwnerMismatch,
+    client.ResourceInUse,
+    client.ResponseHeadersPolicyAlreadyExists,
+    client.ResponseHeadersPolicyInUse,
+    client.StreamingDistributionAlreadyExists,
+    client.StreamingDistributionNotDisabled,
+    client.TestFunctionFailed,
+    client.TooManyCacheBehaviors,
+    client.TooManyCachePolicies,
+    client.TooManyCertificates,
+    client.TooManyCloudFrontOriginAccessIdentities,
+    client.TooManyCookieNamesInWhiteList,
+    client.TooManyCookiesInCachePolicy,
+    client.TooManyCookiesInOriginRequestPolicy,
+    client.TooManyCustomHeadersInResponseHeadersPolicy,
+    client.TooManyDistributionCNAMEs,
+    client.TooManyDistributions,
+    client.TooManyDistributionsAssociatedToCachePolicy,
+    client.TooManyDistributionsAssociatedToFieldLevelEncryptionConfig,
+    client.TooManyDistributionsAssociatedToKeyGroup,
+    client.TooManyDistributionsAssociatedToOriginRequestPolicy,
+    client.TooManyDistributionsAssociatedToResponseHeadersPolicy,
+    client.TooManyDistributionsWithFunctionAssociations,
+    client.TooManyDistributionsWithLambdaAssociations,
+    client.TooManyDistributionsWithSingleFunctionARN,
+    client.TooManyFieldLevelEncryptionConfigs,
+    client.TooManyFieldLevelEncryptionContentTypeProfiles,
+    client.TooManyFieldLevelEncryptionEncryptionEntities,
+    client.TooManyFieldLevelEncryptionFieldPatterns,
+    client.TooManyFieldLevelEncryptionProfiles,
+    client.TooManyFieldLevelEncryptionQueryArgProfiles,
+    client.TooManyFunctionAssociations,
+    client.TooManyFunctions,
+    client.TooManyHeadersInCachePolicy,
+    client.TooManyHeadersInForwardedValues,
+    client.TooManyHeadersInOriginRequestPolicy,
+    client.TooManyInvalidationsInProgress,
+    client.TooManyKeyGroups,
+    client.TooManyKeyGroupsAssociatedToDistribution,
+    client.TooManyLambdaFunctionAssociations,
+    client.TooManyOriginCustomHeaders,
+    client.TooManyOriginGroupsPerDistribution,
+    client.TooManyOriginRequestPolicies,
+    client.TooManyOrigins,
+    client.TooManyPublicKeys,
+    client.TooManyPublicKeysInKeyGroup,
+    client.TooManyQueryStringParameters,
+    client.TooManyQueryStringsInCachePolicy,
+    client.TooManyQueryStringsInOriginRequestPolicy,
+    client.TooManyRealtimeLogConfigs,
+    client.TooManyResponseHeadersPolicies,
+    client.TooManyStreamingDistributionCNAMEs,
+    client.TooManyStreamingDistributions,
+    client.TooManyTrustedSigners,
+    client.TrustedKeyGroupDoesNotExist,
+    client.TrustedSignerDoesNotExist,
+    client.UnsupportedOperation,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cloudfront.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDenied) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDenied`
-- `Exceptions.BatchTooLarge`
-- `Exceptions.CNAMEAlreadyExists`
-- `Exceptions.CachePolicyAlreadyExists`
-- `Exceptions.CachePolicyInUse`
-- `Exceptions.CannotChangeImmutablePublicKeyFields`
-- `Exceptions.ClientError`
-- `Exceptions.CloudFrontOriginAccessIdentityAlreadyExists`
-- `Exceptions.CloudFrontOriginAccessIdentityInUse`
-- `Exceptions.DistributionAlreadyExists`
-- `Exceptions.DistributionNotDisabled`
-- `Exceptions.FieldLevelEncryptionConfigAlreadyExists`
-- `Exceptions.FieldLevelEncryptionConfigInUse`
-- `Exceptions.FieldLevelEncryptionProfileAlreadyExists`
-- `Exceptions.FieldLevelEncryptionProfileInUse`
-- `Exceptions.FieldLevelEncryptionProfileSizeExceeded`
-- `Exceptions.FunctionAlreadyExists`
-- `Exceptions.FunctionInUse`
-- `Exceptions.FunctionSizeLimitExceeded`
-- `Exceptions.IllegalDelete`
-- `Exceptions.IllegalFieldLevelEncryptionConfigAssociationWithCacheBehavior`
-- `Exceptions.IllegalUpdate`
-- `Exceptions.InconsistentQuantities`
-- `Exceptions.InvalidArgument`
-- `Exceptions.InvalidDefaultRootObject`
-- `Exceptions.InvalidErrorCode`
-- `Exceptions.InvalidForwardCookies`
-- `Exceptions.InvalidFunctionAssociation`
-- `Exceptions.InvalidGeoRestrictionParameter`
-- `Exceptions.InvalidHeadersForS3Origin`
-- `Exceptions.InvalidIfMatchVersion`
-- `Exceptions.InvalidLambdaFunctionAssociation`
-- `Exceptions.InvalidLocationCode`
-- `Exceptions.InvalidMinimumProtocolVersion`
-- `Exceptions.InvalidOrigin`
-- `Exceptions.InvalidOriginAccessIdentity`
-- `Exceptions.InvalidOriginKeepaliveTimeout`
-- `Exceptions.InvalidOriginReadTimeout`
-- `Exceptions.InvalidProtocolSettings`
-- `Exceptions.InvalidQueryStringParameters`
-- `Exceptions.InvalidRelativePath`
-- `Exceptions.InvalidRequiredProtocol`
-- `Exceptions.InvalidResponseCode`
-- `Exceptions.InvalidTTLOrder`
-- `Exceptions.InvalidTagging`
-- `Exceptions.InvalidViewerCertificate`
-- `Exceptions.InvalidWebACLId`
-- `Exceptions.KeyGroupAlreadyExists`
-- `Exceptions.MissingBody`
-- `Exceptions.NoSuchCachePolicy`
-- `Exceptions.NoSuchCloudFrontOriginAccessIdentity`
-- `Exceptions.NoSuchDistribution`
-- `Exceptions.NoSuchFieldLevelEncryptionConfig`
-- `Exceptions.NoSuchFieldLevelEncryptionProfile`
-- `Exceptions.NoSuchFunctionExists`
-- `Exceptions.NoSuchInvalidation`
-- `Exceptions.NoSuchOrigin`
-- `Exceptions.NoSuchOriginRequestPolicy`
-- `Exceptions.NoSuchPublicKey`
-- `Exceptions.NoSuchRealtimeLogConfig`
-- `Exceptions.NoSuchResource`
-- `Exceptions.NoSuchResponseHeadersPolicy`
-- `Exceptions.NoSuchStreamingDistribution`
-- `Exceptions.OriginRequestPolicyAlreadyExists`
-- `Exceptions.OriginRequestPolicyInUse`
-- `Exceptions.PreconditionFailed`
-- `Exceptions.PublicKeyAlreadyExists`
-- `Exceptions.PublicKeyInUse`
-- `Exceptions.QueryArgProfileEmpty`
-- `Exceptions.RealtimeLogConfigAlreadyExists`
-- `Exceptions.RealtimeLogConfigInUse`
-- `Exceptions.RealtimeLogConfigOwnerMismatch`
-- `Exceptions.ResourceInUse`
-- `Exceptions.ResponseHeadersPolicyAlreadyExists`
-- `Exceptions.ResponseHeadersPolicyInUse`
-- `Exceptions.StreamingDistributionAlreadyExists`
-- `Exceptions.StreamingDistributionNotDisabled`
-- `Exceptions.TestFunctionFailed`
-- `Exceptions.TooManyCacheBehaviors`
-- `Exceptions.TooManyCachePolicies`
-- `Exceptions.TooManyCertificates`
-- `Exceptions.TooManyCloudFrontOriginAccessIdentities`
-- `Exceptions.TooManyCookieNamesInWhiteList`
-- `Exceptions.TooManyCookiesInCachePolicy`
-- `Exceptions.TooManyCookiesInOriginRequestPolicy`
-- `Exceptions.TooManyCustomHeadersInResponseHeadersPolicy`
-- `Exceptions.TooManyDistributionCNAMEs`
-- `Exceptions.TooManyDistributions`
-- `Exceptions.TooManyDistributionsAssociatedToCachePolicy`
-- `Exceptions.TooManyDistributionsAssociatedToFieldLevelEncryptionConfig`
-- `Exceptions.TooManyDistributionsAssociatedToKeyGroup`
-- `Exceptions.TooManyDistributionsAssociatedToOriginRequestPolicy`
-- `Exceptions.TooManyDistributionsAssociatedToResponseHeadersPolicy`
-- `Exceptions.TooManyDistributionsWithFunctionAssociations`
-- `Exceptions.TooManyDistributionsWithLambdaAssociations`
-- `Exceptions.TooManyDistributionsWithSingleFunctionARN`
-- `Exceptions.TooManyFieldLevelEncryptionConfigs`
-- `Exceptions.TooManyFieldLevelEncryptionContentTypeProfiles`
-- `Exceptions.TooManyFieldLevelEncryptionEncryptionEntities`
-- `Exceptions.TooManyFieldLevelEncryptionFieldPatterns`
-- `Exceptions.TooManyFieldLevelEncryptionProfiles`
-- `Exceptions.TooManyFieldLevelEncryptionQueryArgProfiles`
-- `Exceptions.TooManyFunctionAssociations`
-- `Exceptions.TooManyFunctions`
-- `Exceptions.TooManyHeadersInCachePolicy`
-- `Exceptions.TooManyHeadersInForwardedValues`
-- `Exceptions.TooManyHeadersInOriginRequestPolicy`
-- `Exceptions.TooManyInvalidationsInProgress`
-- `Exceptions.TooManyKeyGroups`
-- `Exceptions.TooManyKeyGroupsAssociatedToDistribution`
-- `Exceptions.TooManyLambdaFunctionAssociations`
-- `Exceptions.TooManyOriginCustomHeaders`
-- `Exceptions.TooManyOriginGroupsPerDistribution`
-- `Exceptions.TooManyOriginRequestPolicies`
-- `Exceptions.TooManyOrigins`
-- `Exceptions.TooManyPublicKeys`
-- `Exceptions.TooManyPublicKeysInKeyGroup`
-- `Exceptions.TooManyQueryStringParameters`
-- `Exceptions.TooManyQueryStringsInCachePolicy`
-- `Exceptions.TooManyQueryStringsInOriginRequestPolicy`
-- `Exceptions.TooManyRealtimeLogConfigs`
-- `Exceptions.TooManyResponseHeadersPolicies`
-- `Exceptions.TooManyStreamingDistributionCNAMEs`
-- `Exceptions.TooManyStreamingDistributions`
-- `Exceptions.TooManyTrustedSigners`
-- `Exceptions.TrustedKeyGroupDoesNotExist`
-- `Exceptions.TrustedSignerDoesNotExist`
-- `Exceptions.UnsupportedOperation`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudFrontClient exceptions.
-
-Type annotations for `boto3.client("cloudfront").exceptions` method.
-
-Boto3 documentation:
-[CloudFront.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_alias"></a>
-
-### associate_alias
+### associate\_alias
 
 Associates an alias (also known as a CNAME or an alternate domain name) with a
 CloudFront distribution.
 
-Type annotations for `boto3.client("cloudfront").associate_alias` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").associate_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.associate_alias)
 
-Boto3 documentation:
-[CloudFront.Client.associate_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.associate_alias)
+```python title="Method definition"
+def associate_alias(
+    self,
+    *,
+    TargetDistributionId: str,
+    Alias: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateAliasRequestRequestTypeDef](./type_defs.md#associatealiasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `TargetDistributionId`: `str` *(required)*
-- `Alias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateAliasRequestRequestTypeDef = {  # (1)
+    "TargetDistributionId": ...,
+    "Alias": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.associate_alias(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AssociateAliasRequestRequestTypeDef](./type_defs.md#associatealiasrequestrequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cloudfront").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
 
-Boto3 documentation:
-[CloudFront.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_cache\_policy"></a>
-
-### create_cache_policy
+### create\_cache\_policy
 
 Creates a cache policy.
 
-Type annotations for `boto3.client("cloudfront").create_cache_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_cache_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
 
-Boto3 documentation:
-[CloudFront.Client.create_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cache_policy)
+```python title="Method definition"
+def create_cache_policy(
+    self,
+    *,
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+) -> CreateCachePolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCachePolicyRequestRequestTypeDef](./type_defs.md#createcachepolicyrequestrequesttypedef).
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
+2. See [:material-code-braces: CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCachePolicyRequestRequestTypeDef = {  # (1)
+    "CachePolicyConfig": ...,
+}
 
-Returns
-[CreateCachePolicyResultTypeDef](./type_defs.md#createcachepolicyresulttypedef).
+parent.create_cache_policy(**kwargs)
+```
 
-<a id="create\_cloud\_front\_origin\_access\_identity"></a>
+1. See [:material-code-braces: CreateCachePolicyRequestRequestTypeDef](./type_defs.md#createcachepolicyrequestrequesttypedef) 
 
-### create_cloud_front_origin_access_identity
+### create\_cloud\_front\_origin\_access\_identity
 
 Creates a new origin access identity.
 
-Type annotations for
-`boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_cloud_front_origin_access_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
 
-Boto3 documentation:
-[CloudFront.Client.create_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_cloud_front_origin_access_identity)
+```python title="Method definition"
+def create_cloud_front_origin_access_identity(
+    self,
+    *,
+    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfigTypeDef,  # (1)
+) -> CreateCloudFrontOriginAccessIdentityResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityrequestrequesttypedef).
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
+2. See [:material-code-braces: CreateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityresulttypedef) 
 
-Keyword-only arguments:
 
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef = {  # (1)
+    "CloudFrontOriginAccessIdentityConfig": ...,
+}
 
-Returns
-[CreateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityresulttypedef).
+parent.create_cloud_front_origin_access_identity(**kwargs)
+```
 
-<a id="create\_distribution"></a>
+1. See [:material-code-braces: CreateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#createcloudfrontoriginaccessidentityrequestrequesttypedef) 
 
-### create_distribution
+### create\_distribution
 
 Creates a new web distribution.
 
-Type annotations for `boto3.client("cloudfront").create_distribution` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.create_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution)
+```python title="Method definition"
+def create_distribution(
+    self,
+    *,
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+) -> CreateDistributionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDistributionRequestRequestTypeDef](./type_defs.md#createdistributionrequestrequesttypedef).
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
+2. See [:material-code-braces: CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDistributionRequestRequestTypeDef = {  # (1)
+    "DistributionConfig": ...,
+}
 
-Returns
-[CreateDistributionResultTypeDef](./type_defs.md#createdistributionresulttypedef).
+parent.create_distribution(**kwargs)
+```
 
-<a id="create\_distribution\_with\_tags"></a>
+1. See [:material-code-braces: CreateDistributionRequestRequestTypeDef](./type_defs.md#createdistributionrequestrequesttypedef) 
 
-### create_distribution_with_tags
+### create\_distribution\_with\_tags
 
 Create a new distribution with tags.
 
-Type annotations for `boto3.client("cloudfront").create_distribution_with_tags`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_distribution_with_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
 
-Boto3 documentation:
-[CloudFront.Client.create_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_distribution_with_tags)
+```python title="Method definition"
+def create_distribution_with_tags(
+    self,
+    *,
+    DistributionConfigWithTags: DistributionConfigWithTagsTypeDef,  # (1)
+) -> CreateDistributionWithTagsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDistributionWithTagsRequestRequestTypeDef](./type_defs.md#createdistributionwithtagsrequestrequesttypedef).
+1. See [:material-code-braces: DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef) 
+2. See [:material-code-braces: CreateDistributionWithTagsResultTypeDef](./type_defs.md#createdistributionwithtagsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionConfigWithTags`:
-  [DistributionConfigWithTagsTypeDef](./type_defs.md#distributionconfigwithtagstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDistributionWithTagsRequestRequestTypeDef = {  # (1)
+    "DistributionConfigWithTags": ...,
+}
 
-Returns
-[CreateDistributionWithTagsResultTypeDef](./type_defs.md#createdistributionwithtagsresulttypedef).
+parent.create_distribution_with_tags(**kwargs)
+```
 
-<a id="create\_field\_level\_encryption\_config"></a>
+1. See [:material-code-braces: CreateDistributionWithTagsRequestRequestTypeDef](./type_defs.md#createdistributionwithtagsrequestrequesttypedef) 
 
-### create_field_level_encryption_config
+### create\_field\_level\_encryption\_config
 
 Create a new field-level encryption configuration.
 
-Type annotations for
-`boto3.client("cloudfront").create_field_level_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_field_level_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
 
-Boto3 documentation:
-[CloudFront.Client.create_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_config)
+```python title="Method definition"
+def create_field_level_encryption_config(
+    self,
+    *,
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+) -> CreateFieldLevelEncryptionConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#createfieldlevelencryptionconfigrequestrequesttypedef).
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
+2. See [:material-code-braces: CreateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#createfieldlevelencryptionconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFieldLevelEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "FieldLevelEncryptionConfig": ...,
+}
 
-Returns
-[CreateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#createfieldlevelencryptionconfigresulttypedef).
+parent.create_field_level_encryption_config(**kwargs)
+```
 
-<a id="create\_field\_level\_encryption\_profile"></a>
+1. See [:material-code-braces: CreateFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#createfieldlevelencryptionconfigrequestrequesttypedef) 
 
-### create_field_level_encryption_profile
+### create\_field\_level\_encryption\_profile
 
 Create a field-level encryption profile.
 
-Type annotations for
-`boto3.client("cloudfront").create_field_level_encryption_profile` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_field_level_encryption_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
 
-Boto3 documentation:
-[CloudFront.Client.create_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_field_level_encryption_profile)
+```python title="Method definition"
+def create_field_level_encryption_profile(
+    self,
+    *,
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+) -> CreateFieldLevelEncryptionProfileResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#createfieldlevelencryptionprofilerequestrequesttypedef).
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
+2. See [:material-code-braces: CreateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#createfieldlevelencryptionprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFieldLevelEncryptionProfileRequestRequestTypeDef = {  # (1)
+    "FieldLevelEncryptionProfileConfig": ...,
+}
 
-Returns
-[CreateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#createfieldlevelencryptionprofileresulttypedef).
+parent.create_field_level_encryption_profile(**kwargs)
+```
 
-<a id="create\_function"></a>
+1. See [:material-code-braces: CreateFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#createfieldlevelencryptionprofilerequestrequesttypedef) 
 
-### create_function
+### create\_function
 
 Creates a CloudFront function.
 
-Type annotations for `boto3.client("cloudfront").create_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
 
-Boto3 documentation:
-[CloudFront.Client.create_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_function)
+```python title="Method definition"
+def create_function(
+    self,
+    *,
+    Name: str,
+    FunctionConfig: FunctionConfigTypeDef,  # (1)
+    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+) -> CreateFunctionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
+2. See [:material-code-braces: CreateFunctionResultTypeDef](./type_defs.md#createfunctionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) *(required)*
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "FunctionConfig": ...,
+    "FunctionCode": ...,
+}
 
-Returns
-[CreateFunctionResultTypeDef](./type_defs.md#createfunctionresulttypedef).
+parent.create_function(**kwargs)
+```
 
-<a id="create\_invalidation"></a>
+1. See [:material-code-braces: CreateFunctionRequestRequestTypeDef](./type_defs.md#createfunctionrequestrequesttypedef) 
 
-### create_invalidation
+### create\_invalidation
 
 Create a new invalidation.
 
-Type annotations for `boto3.client("cloudfront").create_invalidation` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_invalidation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
 
-Boto3 documentation:
-[CloudFront.Client.create_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_invalidation)
+```python title="Method definition"
+def create_invalidation(
+    self,
+    *,
+    DistributionId: str,
+    InvalidationBatch: InvalidationBatchTypeDef,  # (1)
+) -> CreateInvalidationResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInvalidationRequestRequestTypeDef](./type_defs.md#createinvalidationrequestrequesttypedef).
+1. See [:material-code-braces: InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef) 
+2. See [:material-code-braces: CreateInvalidationResultTypeDef](./type_defs.md#createinvalidationresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
-- `InvalidationBatch`:
-  [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateInvalidationRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+    "InvalidationBatch": ...,
+}
 
-Returns
-[CreateInvalidationResultTypeDef](./type_defs.md#createinvalidationresulttypedef).
+parent.create_invalidation(**kwargs)
+```
 
-<a id="create\_key\_group"></a>
+1. See [:material-code-braces: CreateInvalidationRequestRequestTypeDef](./type_defs.md#createinvalidationrequestrequesttypedef) 
 
-### create_key_group
+### create\_key\_group
 
-Creates a key group that you can use with
-[CloudFront signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)\_
+Creates a key group that you can use with [CloudFront signed URLs and signed
+cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_
 .
 
-Type annotations for `boto3.client("cloudfront").create_key_group` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_key_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
 
-Boto3 documentation:
-[CloudFront.Client.create_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_key_group)
+```python title="Method definition"
+def create_key_group(
+    self,
+    *,
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+) -> CreateKeyGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateKeyGroupRequestRequestTypeDef](./type_defs.md#createkeygrouprequestrequesttypedef).
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
+2. See [:material-code-braces: CreateKeyGroupResultTypeDef](./type_defs.md#createkeygroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateKeyGroupRequestRequestTypeDef = {  # (1)
+    "KeyGroupConfig": ...,
+}
 
-Returns
-[CreateKeyGroupResultTypeDef](./type_defs.md#createkeygroupresulttypedef).
+parent.create_key_group(**kwargs)
+```
 
-<a id="create\_monitoring\_subscription"></a>
+1. See [:material-code-braces: CreateKeyGroupRequestRequestTypeDef](./type_defs.md#createkeygrouprequestrequesttypedef) 
 
-### create_monitoring_subscription
+### create\_monitoring\_subscription
 
-Enables additional CloudWatch metrics for the specified CloudFront
-distribution.
+Enables additional CloudWatch metrics for the specified CloudFront distribution.
 
-Type annotations for
-`boto3.client("cloudfront").create_monitoring_subscription` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_monitoring_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
 
-Boto3 documentation:
-[CloudFront.Client.create_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_monitoring_subscription)
+```python title="Method definition"
+def create_monitoring_subscription(
+    self,
+    *,
+    DistributionId: str,
+    MonitoringSubscription: MonitoringSubscriptionTypeDef,  # (1)
+) -> CreateMonitoringSubscriptionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#createmonitoringsubscriptionrequestrequesttypedef).
+1. See [:material-code-braces: MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef) 
+2. See [:material-code-braces: CreateMonitoringSubscriptionResultTypeDef](./type_defs.md#createmonitoringsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
-- `MonitoringSubscription`:
-  [MonitoringSubscriptionTypeDef](./type_defs.md#monitoringsubscriptiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMonitoringSubscriptionRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+    "MonitoringSubscription": ...,
+}
 
-Returns
-[CreateMonitoringSubscriptionResultTypeDef](./type_defs.md#createmonitoringsubscriptionresulttypedef).
+parent.create_monitoring_subscription(**kwargs)
+```
 
-<a id="create\_origin\_request\_policy"></a>
+1. See [:material-code-braces: CreateMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#createmonitoringsubscriptionrequestrequesttypedef) 
 
-### create_origin_request_policy
+### create\_origin\_request\_policy
 
 Creates an origin request policy.
 
-Type annotations for `boto3.client("cloudfront").create_origin_request_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_origin_request_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
 
-Boto3 documentation:
-[CloudFront.Client.create_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_origin_request_policy)
+```python title="Method definition"
+def create_origin_request_policy(
+    self,
+    *,
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+) -> CreateOriginRequestPolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#createoriginrequestpolicyrequestrequesttypedef).
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
+2. See [:material-code-braces: CreateOriginRequestPolicyResultTypeDef](./type_defs.md#createoriginrequestpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateOriginRequestPolicyRequestRequestTypeDef = {  # (1)
+    "OriginRequestPolicyConfig": ...,
+}
 
-Returns
-[CreateOriginRequestPolicyResultTypeDef](./type_defs.md#createoriginrequestpolicyresulttypedef).
+parent.create_origin_request_policy(**kwargs)
+```
 
-<a id="create\_public\_key"></a>
+1. See [:material-code-braces: CreateOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#createoriginrequestpolicyrequestrequesttypedef) 
 
-### create_public_key
+### create\_public\_key
 
-Uploads a public key to CloudFront that you can use with
-[signed URLs and signed cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)\_
-, or with
-`field-level encryption <https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level- en...`.
+Uploads a public key to CloudFront that you can use with [signed URLs and signed
+cookies](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PrivateContent.html)_
+, or with `field-level encryption
+<https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/field-level-
+en...`.
 
-Type annotations for `boto3.client("cloudfront").create_public_key` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
 
-Boto3 documentation:
-[CloudFront.Client.create_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_public_key)
+```python title="Method definition"
+def create_public_key(
+    self,
+    *,
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+) -> CreatePublicKeyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePublicKeyRequestRequestTypeDef](./type_defs.md#createpublickeyrequestrequesttypedef).
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
+2. See [:material-code-braces: CreatePublicKeyResultTypeDef](./type_defs.md#createpublickeyresulttypedef) 
 
-Keyword-only arguments:
 
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreatePublicKeyRequestRequestTypeDef = {  # (1)
+    "PublicKeyConfig": ...,
+}
 
-Returns
-[CreatePublicKeyResultTypeDef](./type_defs.md#createpublickeyresulttypedef).
+parent.create_public_key(**kwargs)
+```
 
-<a id="create\_realtime\_log\_config"></a>
+1. See [:material-code-braces: CreatePublicKeyRequestRequestTypeDef](./type_defs.md#createpublickeyrequestrequesttypedef) 
 
-### create_realtime_log_config
+### create\_realtime\_log\_config
 
 Creates a real-time log configuration.
 
-Type annotations for `boto3.client("cloudfront").create_realtime_log_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_realtime_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
 
-Boto3 documentation:
-[CloudFront.Client.create_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_realtime_log_config)
+```python title="Method definition"
+def create_realtime_log_config(
+    self,
+    *,
+    EndPoints: Sequence[EndPointTypeDef],  # (1)
+    Fields: Sequence[str],
+    Name: str,
+    SamplingRate: int,
+) -> CreateRealtimeLogConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#createrealtimelogconfigrequestrequesttypedef).
+1. See [:material-code-braces: EndPointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-  *(required)*
-- `Fields`: `Sequence`\[`str`\] *(required)*
-- `Name`: `str` *(required)*
-- `SamplingRate`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateRealtimeLogConfigRequestRequestTypeDef = {  # (1)
+    "EndPoints": ...,
+    "Fields": ...,
+    "Name": ...,
+    "SamplingRate": ...,
+}
 
-Returns
-[CreateRealtimeLogConfigResultTypeDef](./type_defs.md#createrealtimelogconfigresulttypedef).
+parent.create_realtime_log_config(**kwargs)
+```
 
-<a id="create\_response\_headers\_policy"></a>
+1. See [:material-code-braces: CreateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#createrealtimelogconfigrequestrequesttypedef) 
 
-### create_response_headers_policy
+### create\_response\_headers\_policy
 
 Creates a response headers policy.
 
-Type annotations for
-`boto3.client("cloudfront").create_response_headers_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_response_headers_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_response_headers_policy)
 
-Boto3 documentation:
-[CloudFront.Client.create_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_response_headers_policy)
+```python title="Method definition"
+def create_response_headers_policy(
+    self,
+    *,
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+) -> CreateResponseHeadersPolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#createresponseheaderspolicyrequestrequesttypedef).
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
+2. See [:material-code-braces: CreateResponseHeadersPolicyResultTypeDef](./type_defs.md#createresponseheaderspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateResponseHeadersPolicyRequestRequestTypeDef = {  # (1)
+    "ResponseHeadersPolicyConfig": ...,
+}
 
-Returns
-[CreateResponseHeadersPolicyResultTypeDef](./type_defs.md#createresponseheaderspolicyresulttypedef).
+parent.create_response_headers_policy(**kwargs)
+```
 
-<a id="create\_streaming\_distribution"></a>
+1. See [:material-code-braces: CreateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#createresponseheaderspolicyrequestrequesttypedef) 
 
-### create_streaming_distribution
-
-This API is deprecated.
-
-Type annotations for `boto3.client("cloudfront").create_streaming_distribution`
-method.
-
-Boto3 documentation:
-[CloudFront.Client.create_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
-
-Arguments mapping described in
-[CreateStreamingDistributionRequestRequestTypeDef](./type_defs.md#createstreamingdistributionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-  *(required)*
-
-Returns
-[CreateStreamingDistributionResultTypeDef](./type_defs.md#createstreamingdistributionresulttypedef).
-
-<a id="create\_streaming\_distribution\_with\_tags"></a>
-
-### create_streaming_distribution_with_tags
+### create\_streaming\_distribution
 
 This API is deprecated.
 
-Type annotations for
-`boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_streaming_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.create_streaming_distribution_with_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
+```python title="Method definition"
+def create_streaming_distribution(
+    self,
+    *,
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+) -> CreateStreamingDistributionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamingDistributionWithTagsRequestRequestTypeDef](./type_defs.md#createstreamingdistributionwithtagsrequestrequesttypedef).
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
+2. See [:material-code-braces: CreateStreamingDistributionResultTypeDef](./type_defs.md#createstreamingdistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `StreamingDistributionConfigWithTags`:
-  [StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingDistributionRequestRequestTypeDef = {  # (1)
+    "StreamingDistributionConfig": ...,
+}
 
-Returns
-[CreateStreamingDistributionWithTagsResultTypeDef](./type_defs.md#createstreamingdistributionwithtagsresulttypedef).
+parent.create_streaming_distribution(**kwargs)
+```
 
-<a id="delete\_cache\_policy"></a>
+1. See [:material-code-braces: CreateStreamingDistributionRequestRequestTypeDef](./type_defs.md#createstreamingdistributionrequestrequesttypedef) 
 
-### delete_cache_policy
+### create\_streaming\_distribution\_with\_tags
+
+This API is deprecated.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").create_streaming_distribution_with_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.create_streaming_distribution_with_tags)
+
+```python title="Method definition"
+def create_streaming_distribution_with_tags(
+    self,
+    *,
+    StreamingDistributionConfigWithTags: StreamingDistributionConfigWithTagsTypeDef,  # (1)
+) -> CreateStreamingDistributionWithTagsResultTypeDef:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: StreamingDistributionConfigWithTagsTypeDef](./type_defs.md#streamingdistributionconfigwithtagstypedef) 
+2. See [:material-code-braces: CreateStreamingDistributionWithTagsResultTypeDef](./type_defs.md#createstreamingdistributionwithtagsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: CreateStreamingDistributionWithTagsRequestRequestTypeDef = {  # (1)
+    "StreamingDistributionConfigWithTags": ...,
+}
+
+parent.create_streaming_distribution_with_tags(**kwargs)
+```
+
+1. See [:material-code-braces: CreateStreamingDistributionWithTagsRequestRequestTypeDef](./type_defs.md#createstreamingdistributionwithtagsrequestrequesttypedef) 
+
+### delete\_cache\_policy
 
 Deletes a cache policy.
 
-Type annotations for `boto3.client("cloudfront").delete_cache_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_cache_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
 
-Boto3 documentation:
-[CloudFront.Client.delete_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cache_policy)
+```python title="Method definition"
+def delete_cache_policy(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCachePolicyRequestRequestTypeDef](./type_defs.md#deletecachepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteCachePolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_cloud\_front\_origin\_access\_identity"></a>
+parent.delete_cache_policy(**kwargs)
+```
 
-### delete_cloud_front_origin_access_identity
+1. See [:material-code-braces: DeleteCachePolicyRequestRequestTypeDef](./type_defs.md#deletecachepolicyrequestrequesttypedef) 
+
+### delete\_cloud\_front\_origin\_access\_identity
 
 Delete an origin access identity.
 
-Type annotations for
-`boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_cloud_front_origin_access_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
 
-Boto3 documentation:
-[CloudFront.Client.delete_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_cloud_front_origin_access_identity)
+```python title="Method definition"
+def delete_cloud_front_origin_access_identity(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#deletecloudfrontoriginaccessidentityrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_distribution"></a>
+parent.delete_cloud_front_origin_access_identity(**kwargs)
+```
 
-### delete_distribution
+1. See [:material-code-braces: DeleteCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#deletecloudfrontoriginaccessidentityrequestrequesttypedef) 
+
+### delete\_distribution
 
 Delete a distribution.
 
-Type annotations for `boto3.client("cloudfront").delete_distribution` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.delete_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_distribution)
+```python title="Method definition"
+def delete_distribution(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDistributionRequestRequestTypeDef](./type_defs.md#deletedistributionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_field\_level\_encryption\_config"></a>
+parent.delete_distribution(**kwargs)
+```
 
-### delete_field_level_encryption_config
+1. See [:material-code-braces: DeleteDistributionRequestRequestTypeDef](./type_defs.md#deletedistributionrequestrequesttypedef) 
+
+### delete\_field\_level\_encryption\_config
 
 Remove a field-level encryption configuration.
 
-Type annotations for
-`boto3.client("cloudfront").delete_field_level_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_field_level_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
 
-Boto3 documentation:
-[CloudFront.Client.delete_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_config)
+```python title="Method definition"
+def delete_field_level_encryption_config(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#deletefieldlevelencryptionconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFieldLevelEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_field\_level\_encryption\_profile"></a>
+parent.delete_field_level_encryption_config(**kwargs)
+```
 
-### delete_field_level_encryption_profile
+1. See [:material-code-braces: DeleteFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#deletefieldlevelencryptionconfigrequestrequesttypedef) 
+
+### delete\_field\_level\_encryption\_profile
 
 Remove a field-level encryption profile.
 
-Type annotations for
-`boto3.client("cloudfront").delete_field_level_encryption_profile` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_field_level_encryption_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
 
-Boto3 documentation:
-[CloudFront.Client.delete_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_field_level_encryption_profile)
+```python title="Method definition"
+def delete_field_level_encryption_profile(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#deletefieldlevelencryptionprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteFieldLevelEncryptionProfileRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_function"></a>
+parent.delete_field_level_encryption_profile(**kwargs)
+```
 
-### delete_function
+1. See [:material-code-braces: DeleteFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#deletefieldlevelencryptionprofilerequestrequesttypedef) 
+
+### delete\_function
 
 Deletes a CloudFront function.
 
-Type annotations for `boto3.client("cloudfront").delete_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
 
-Boto3 documentation:
-[CloudFront.Client.delete_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_function)
+```python title="Method definition"
+def delete_function(
+    self,
+    *,
+    Name: str,
+    IfMatch: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IfMatch`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IfMatch": ...,
+}
 
-<a id="delete\_key\_group"></a>
+parent.delete_function(**kwargs)
+```
 
-### delete_key_group
+1. See [:material-code-braces: DeleteFunctionRequestRequestTypeDef](./type_defs.md#deletefunctionrequestrequesttypedef) 
+
+### delete\_key\_group
 
 Deletes a key group.
 
-Type annotations for `boto3.client("cloudfront").delete_key_group` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_key_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
 
-Boto3 documentation:
-[CloudFront.Client.delete_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_key_group)
+```python title="Method definition"
+def delete_key_group(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteKeyGroupRequestRequestTypeDef](./type_defs.md#deletekeygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteKeyGroupRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_monitoring\_subscription"></a>
+parent.delete_key_group(**kwargs)
+```
 
-### delete_monitoring_subscription
+1. See [:material-code-braces: DeleteKeyGroupRequestRequestTypeDef](./type_defs.md#deletekeygrouprequestrequesttypedef) 
+
+### delete\_monitoring\_subscription
 
 Disables additional CloudWatch metrics for the specified CloudFront
 distribution.
 
-Type annotations for
-`boto3.client("cloudfront").delete_monitoring_subscription` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_monitoring_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
 
-Boto3 documentation:
-[CloudFront.Client.delete_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_monitoring_subscription)
+```python title="Method definition"
+def delete_monitoring_subscription(
+    self,
+    *,
+    DistributionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#deletemonitoringsubscriptionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMonitoringSubscriptionRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_monitoring_subscription(**kwargs)
+```
 
-<a id="delete\_origin\_request\_policy"></a>
+1. See [:material-code-braces: DeleteMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#deletemonitoringsubscriptionrequestrequesttypedef) 
 
-### delete_origin_request_policy
+### delete\_origin\_request\_policy
 
 Deletes an origin request policy.
 
-Type annotations for `boto3.client("cloudfront").delete_origin_request_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_origin_request_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
 
-Boto3 documentation:
-[CloudFront.Client.delete_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_origin_request_policy)
+```python title="Method definition"
+def delete_origin_request_policy(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#deleteoriginrequestpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteOriginRequestPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_public\_key"></a>
+parent.delete_origin_request_policy(**kwargs)
+```
 
-### delete_public_key
+1. See [:material-code-braces: DeleteOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#deleteoriginrequestpolicyrequestrequesttypedef) 
+
+### delete\_public\_key
 
 Remove a public key you previously added to CloudFront.
 
-Type annotations for `boto3.client("cloudfront").delete_public_key` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
 
-Boto3 documentation:
-[CloudFront.Client.delete_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_public_key)
+```python title="Method definition"
+def delete_public_key(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePublicKeyRequestRequestTypeDef](./type_defs.md#deletepublickeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePublicKeyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_realtime\_log\_config"></a>
+parent.delete_public_key(**kwargs)
+```
 
-### delete_realtime_log_config
+1. See [:material-code-braces: DeletePublicKeyRequestRequestTypeDef](./type_defs.md#deletepublickeyrequestrequesttypedef) 
+
+### delete\_realtime\_log\_config
 
 Deletes a real-time log configuration.
 
-Type annotations for `boto3.client("cloudfront").delete_realtime_log_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_realtime_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
 
-Boto3 documentation:
-[CloudFront.Client.delete_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_realtime_log_config)
+```python title="Method definition"
+def delete_realtime_log_config(
+    self,
+    *,
+    Name: str = ...,
+    ARN: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#deleterealtimelogconfigrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `ARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteRealtimeLogConfigRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="delete\_response\_headers\_policy"></a>
+parent.delete_realtime_log_config(**kwargs)
+```
 
-### delete_response_headers_policy
+1. See [:material-code-braces: DeleteRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#deleterealtimelogconfigrequestrequesttypedef) 
+
+### delete\_response\_headers\_policy
 
 Deletes a response headers policy.
 
-Type annotations for
-`boto3.client("cloudfront").delete_response_headers_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_response_headers_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_response_headers_policy)
 
-Boto3 documentation:
-[CloudFront.Client.delete_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_response_headers_policy)
+```python title="Method definition"
+def delete_response_headers_policy(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#deleteresponseheaderspolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteResponseHeadersPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_streaming\_distribution"></a>
+parent.delete_response_headers_policy(**kwargs)
+```
 
-### delete_streaming_distribution
+1. See [:material-code-braces: DeleteResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#deleteresponseheaderspolicyrequestrequesttypedef) 
+
+### delete\_streaming\_distribution
 
 Delete a streaming distribution.
 
-Type annotations for `boto3.client("cloudfront").delete_streaming_distribution`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").delete_streaming_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.delete_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.delete_streaming_distribution)
+```python title="Method definition"
+def delete_streaming_distribution(
+    self,
+    *,
+    Id: str,
+    IfMatch: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamingDistributionRequestRequestTypeDef](./type_defs.md#deletestreamingdistributionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamingDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="describe\_function"></a>
+parent.delete_streaming_distribution(**kwargs)
+```
 
-### describe_function
+1. See [:material-code-braces: DeleteStreamingDistributionRequestRequestTypeDef](./type_defs.md#deletestreamingdistributionrequestrequesttypedef) 
 
-Gets configuration information and metadata about a CloudFront function, but
-not the function’s code.
+### describe\_function
 
-Type annotations for `boto3.client("cloudfront").describe_function` method.
+Gets configuration information and metadata about a CloudFront function, but not
+the function’s code.
 
-Boto3 documentation:
-[CloudFront.Client.describe_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
+Type annotations and code completion for `#!python boto3.client("cloudfront").describe_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.describe_function)
 
-Arguments mapping described in
-[DescribeFunctionRequestRequestTypeDef](./type_defs.md#describefunctionrequestrequesttypedef).
+```python title="Method definition"
+def describe_function(
+    self,
+    *,
+    Name: str,
+    Stage: FunctionStageType = ...,  # (1)
+) -> DescribeFunctionResultTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
+2. See [:material-code-braces: DescribeFunctionResultTypeDef](./type_defs.md#describefunctionresulttypedef) 
 
-- `Name`: `str` *(required)*
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
 
-Returns
-[DescribeFunctionResultTypeDef](./type_defs.md#describefunctionresulttypedef).
+```python title="Usage example with kwargs"
+kwargs: DescribeFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.describe_function(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DescribeFunctionRequestRequestTypeDef](./type_defs.md#describefunctionrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cloudfront").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudFront.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_cache\_policy
 
-Returns `str`.
+Gets a cache policy, including the following metadata * The policy’s identifier.
 
-<a id="get\_cache\_policy"></a>
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_cache_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
 
-### get_cache_policy
+```python title="Method definition"
+def get_cache_policy(
+    self,
+    *,
+    Id: str,
+) -> GetCachePolicyResultTypeDef:  # (1)
+    ...
+```
 
-Gets a cache policy, including the following metadata * The policy’s
-identifier.
+1. See [:material-code-braces: GetCachePolicyResultTypeDef](./type_defs.md#getcachepolicyresulttypedef) 
 
-Type annotations for `boto3.client("cloudfront").get_cache_policy` method.
 
-Boto3 documentation:
-[CloudFront.Client.get_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy)
+```python title="Usage example with kwargs"
+kwargs: GetCachePolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Arguments mapping described in
-[GetCachePolicyRequestRequestTypeDef](./type_defs.md#getcachepolicyrequestrequesttypedef).
+parent.get_cache_policy(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: GetCachePolicyRequestRequestTypeDef](./type_defs.md#getcachepolicyrequestrequesttypedef) 
 
-- `Id`: `str` *(required)*
-
-Returns
-[GetCachePolicyResultTypeDef](./type_defs.md#getcachepolicyresulttypedef).
-
-<a id="get\_cache\_policy\_config"></a>
-
-### get_cache_policy_config
+### get\_cache\_policy\_config
 
 Gets a cache policy configuration.
 
-Type annotations for `boto3.client("cloudfront").get_cache_policy_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_cache_policy_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_cache_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cache_policy_config)
+```python title="Method definition"
+def get_cache_policy_config(
+    self,
+    *,
+    Id: str,
+) -> GetCachePolicyConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCachePolicyConfigRequestRequestTypeDef](./type_defs.md#getcachepolicyconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetCachePolicyConfigResultTypeDef](./type_defs.md#getcachepolicyconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCachePolicyConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetCachePolicyConfigResultTypeDef](./type_defs.md#getcachepolicyconfigresulttypedef).
+parent.get_cache_policy_config(**kwargs)
+```
 
-<a id="get\_cloud\_front\_origin\_access\_identity"></a>
+1. See [:material-code-braces: GetCachePolicyConfigRequestRequestTypeDef](./type_defs.md#getcachepolicyconfigrequestrequesttypedef) 
 
-### get_cloud_front_origin_access_identity
+### get\_cloud\_front\_origin\_access\_identity
 
 Get the information about an origin access identity.
 
-Type annotations for
-`boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_cloud_front_origin_access_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
 
-Boto3 documentation:
-[CloudFront.Client.get_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity)
+```python title="Method definition"
+def get_cloud_front_origin_access_identity(
+    self,
+    *,
+    Id: str,
+) -> GetCloudFrontOriginAccessIdentityResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityrequestrequesttypedef).
+1. See [:material-code-braces: GetCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCloudFrontOriginAccessIdentityRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresulttypedef).
+parent.get_cloud_front_origin_access_identity(**kwargs)
+```
 
-<a id="get\_cloud\_front\_origin\_access\_identity\_config"></a>
+1. See [:material-code-braces: GetCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityrequestrequesttypedef) 
 
-### get_cloud_front_origin_access_identity_config
+### get\_cloud\_front\_origin\_access\_identity\_config
 
 Get the configuration information about an origin access identity.
 
-Type annotations for
-`boto3.client("cloudfront").get_cloud_front_origin_access_identity_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_cloud_front_origin_access_identity_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_cloud_front_origin_access_identity_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_cloud_front_origin_access_identity_config)
+```python title="Method definition"
+def get_cloud_front_origin_access_identity_config(
+    self,
+    *,
+    Id: str,
+) -> GetCloudFrontOriginAccessIdentityConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetCloudFrontOriginAccessIdentityConfigResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetCloudFrontOriginAccessIdentityConfigResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigresulttypedef).
+parent.get_cloud_front_origin_access_identity_config(**kwargs)
+```
 
-<a id="get\_distribution"></a>
+1. See [:material-code-braces: GetCloudFrontOriginAccessIdentityConfigRequestRequestTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityconfigrequestrequesttypedef) 
 
-### get_distribution
+### get\_distribution
 
 Get the information about a distribution.
 
-Type annotations for `boto3.client("cloudfront").get_distribution` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.get_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution)
+```python title="Method definition"
+def get_distribution(
+    self,
+    *,
+    Id: str,
+) -> GetDistributionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDistributionRequestRequestTypeDef](./type_defs.md#getdistributionrequestrequesttypedef).
+1. See [:material-code-braces: GetDistributionResultTypeDef](./type_defs.md#getdistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetDistributionResultTypeDef](./type_defs.md#getdistributionresulttypedef).
+parent.get_distribution(**kwargs)
+```
 
-<a id="get\_distribution\_config"></a>
+1. See [:material-code-braces: GetDistributionRequestRequestTypeDef](./type_defs.md#getdistributionrequestrequesttypedef) 
 
-### get_distribution_config
+### get\_distribution\_config
 
 Get the configuration information about a distribution.
 
-Type annotations for `boto3.client("cloudfront").get_distribution_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_distribution_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_distribution_config)
+```python title="Method definition"
+def get_distribution_config(
+    self,
+    *,
+    Id: str,
+) -> GetDistributionConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDistributionConfigRequestRequestTypeDef](./type_defs.md#getdistributionconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetDistributionConfigResultTypeDef](./type_defs.md#getdistributionconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDistributionConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetDistributionConfigResultTypeDef](./type_defs.md#getdistributionconfigresulttypedef).
+parent.get_distribution_config(**kwargs)
+```
 
-<a id="get\_field\_level\_encryption"></a>
+1. See [:material-code-braces: GetDistributionConfigRequestRequestTypeDef](./type_defs.md#getdistributionconfigrequestrequesttypedef) 
 
-### get_field_level_encryption
-
-Get the field-level encryption configuration information.
-
-Type annotations for `boto3.client("cloudfront").get_field_level_encryption`
-method.
-
-Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
-
-Arguments mapping described in
-[GetFieldLevelEncryptionRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Id`: `str` *(required)*
-
-Returns
-[GetFieldLevelEncryptionResultTypeDef](./type_defs.md#getfieldlevelencryptionresulttypedef).
-
-<a id="get\_field\_level\_encryption\_config"></a>
-
-### get_field_level_encryption_config
+### get\_field\_level\_encryption
 
 Get the field-level encryption configuration information.
 
-Type annotations for
-`boto3.client("cloudfront").get_field_level_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_field_level_encryption` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption)
 
-Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
+```python title="Method definition"
+def get_field_level_encryption(
+    self,
+    *,
+    Id: str,
+) -> GetFieldLevelEncryptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetFieldLevelEncryptionResultTypeDef](./type_defs.md#getfieldlevelencryptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFieldLevelEncryptionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionconfigresulttypedef).
+parent.get_field_level_encryption(**kwargs)
+```
 
-<a id="get\_field\_level\_encryption\_profile"></a>
+1. See [:material-code-braces: GetFieldLevelEncryptionRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionrequestrequesttypedef) 
 
-### get_field_level_encryption_profile
+### get\_field\_level\_encryption\_config
+
+Get the field-level encryption configuration information.
+
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_field_level_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_config)
+
+```python title="Method definition"
+def get_field_level_encryption_config(
+    self,
+    *,
+    Id: str,
+) -> GetFieldLevelEncryptionConfigResultTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionconfigresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetFieldLevelEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
+
+parent.get_field_level_encryption_config(**kwargs)
+```
+
+1. See [:material-code-braces: GetFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionconfigrequestrequesttypedef) 
+
+### get\_field\_level\_encryption\_profile
 
 Get the field-level encryption profile information.
 
-Type annotations for
-`boto3.client("cloudfront").get_field_level_encryption_profile` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_field_level_encryption_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
 
-Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile)
+```python title="Method definition"
+def get_field_level_encryption_profile(
+    self,
+    *,
+    Id: str,
+) -> GetFieldLevelEncryptionProfileResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofilerequestrequesttypedef).
+1. See [:material-code-braces: GetFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFieldLevelEncryptionProfileRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileresulttypedef).
+parent.get_field_level_encryption_profile(**kwargs)
+```
 
-<a id="get\_field\_level\_encryption\_profile\_config"></a>
+1. See [:material-code-braces: GetFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofilerequestrequesttypedef) 
 
-### get_field_level_encryption_profile_config
+### get\_field\_level\_encryption\_profile\_config
 
 Get the field-level encryption profile configuration information.
 
-Type annotations for
-`boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_field_level_encryption_profile_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_field_level_encryption_profile_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_field_level_encryption_profile_config)
+```python title="Method definition"
+def get_field_level_encryption_profile_config(
+    self,
+    *,
+    Id: str,
+) -> GetFieldLevelEncryptionProfileConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetFieldLevelEncryptionProfileConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetFieldLevelEncryptionProfileConfigResultTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigresulttypedef).
+parent.get_field_level_encryption_profile_config(**kwargs)
+```
 
-<a id="get\_function"></a>
+1. See [:material-code-braces: GetFieldLevelEncryptionProfileConfigRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionprofileconfigrequestrequesttypedef) 
 
-### get_function
+### get\_function
 
 Gets the code of a CloudFront function.
 
-Type annotations for `boto3.client("cloudfront").get_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
 
-Boto3 documentation:
-[CloudFront.Client.get_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_function)
+```python title="Method definition"
+def get_function(
+    self,
+    *,
+    Name: str,
+    Stage: FunctionStageType = ...,  # (1)
+) -> GetFunctionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef).
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
+2. See [:material-code-braces: GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+```python title="Usage example with kwargs"
+kwargs: GetFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef).
+parent.get_function(**kwargs)
+```
 
-<a id="get\_invalidation"></a>
+1. See [:material-code-braces: GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef) 
 
-### get_invalidation
+### get\_invalidation
 
 Get the information about an invalidation.
 
-Type annotations for `boto3.client("cloudfront").get_invalidation` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_invalidation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
 
-Boto3 documentation:
-[CloudFront.Client.get_invalidation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_invalidation)
+```python title="Method definition"
+def get_invalidation(
+    self,
+    *,
+    DistributionId: str,
+    Id: str,
+) -> GetInvalidationResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInvalidationRequestRequestTypeDef](./type_defs.md#getinvalidationrequestrequesttypedef).
+1. See [:material-code-braces: GetInvalidationResultTypeDef](./type_defs.md#getinvalidationresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInvalidationRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+    "Id": ...,
+}
 
-Returns
-[GetInvalidationResultTypeDef](./type_defs.md#getinvalidationresulttypedef).
+parent.get_invalidation(**kwargs)
+```
 
-<a id="get\_key\_group"></a>
+1. See [:material-code-braces: GetInvalidationRequestRequestTypeDef](./type_defs.md#getinvalidationrequestrequesttypedef) 
 
-### get_key_group
+### get\_key\_group
 
 Gets a key group, including the date and time when the key group was last
 modified.
 
-Type annotations for `boto3.client("cloudfront").get_key_group` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_key_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
 
-Boto3 documentation:
-[CloudFront.Client.get_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group)
+```python title="Method definition"
+def get_key_group(
+    self,
+    *,
+    Id: str,
+) -> GetKeyGroupResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetKeyGroupRequestRequestTypeDef](./type_defs.md#getkeygrouprequestrequesttypedef).
+1. See [:material-code-braces: GetKeyGroupResultTypeDef](./type_defs.md#getkeygroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetKeyGroupRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetKeyGroupResultTypeDef](./type_defs.md#getkeygroupresulttypedef).
+parent.get_key_group(**kwargs)
+```
 
-<a id="get\_key\_group\_config"></a>
+1. See [:material-code-braces: GetKeyGroupRequestRequestTypeDef](./type_defs.md#getkeygrouprequestrequesttypedef) 
 
-### get_key_group_config
+### get\_key\_group\_config
 
 Gets a key group configuration.
 
-Type annotations for `boto3.client("cloudfront").get_key_group_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_key_group_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_key_group_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_key_group_config)
+```python title="Method definition"
+def get_key_group_config(
+    self,
+    *,
+    Id: str,
+) -> GetKeyGroupConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetKeyGroupConfigRequestRequestTypeDef](./type_defs.md#getkeygroupconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetKeyGroupConfigResultTypeDef](./type_defs.md#getkeygroupconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetKeyGroupConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetKeyGroupConfigResultTypeDef](./type_defs.md#getkeygroupconfigresulttypedef).
+parent.get_key_group_config(**kwargs)
+```
 
-<a id="get\_monitoring\_subscription"></a>
+1. See [:material-code-braces: GetKeyGroupConfigRequestRequestTypeDef](./type_defs.md#getkeygroupconfigrequestrequesttypedef) 
 
-### get_monitoring_subscription
+### get\_monitoring\_subscription
 
-Gets information about whether additional CloudWatch metrics are enabled for
-the specified CloudFront distribution.
+Gets information about whether additional CloudWatch metrics are enabled for the
+specified CloudFront distribution.
 
-Type annotations for `boto3.client("cloudfront").get_monitoring_subscription`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_monitoring_subscription` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
 
-Boto3 documentation:
-[CloudFront.Client.get_monitoring_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_monitoring_subscription)
+```python title="Method definition"
+def get_monitoring_subscription(
+    self,
+    *,
+    DistributionId: str,
+) -> GetMonitoringSubscriptionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#getmonitoringsubscriptionrequestrequesttypedef).
+1. See [:material-code-braces: GetMonitoringSubscriptionResultTypeDef](./type_defs.md#getmonitoringsubscriptionresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMonitoringSubscriptionRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+}
 
-Returns
-[GetMonitoringSubscriptionResultTypeDef](./type_defs.md#getmonitoringsubscriptionresulttypedef).
+parent.get_monitoring_subscription(**kwargs)
+```
 
-<a id="get\_origin\_request\_policy"></a>
+1. See [:material-code-braces: GetMonitoringSubscriptionRequestRequestTypeDef](./type_defs.md#getmonitoringsubscriptionrequestrequesttypedef) 
 
-### get_origin_request_policy
+### get\_origin\_request\_policy
 
 Gets an origin request policy, including the following metadata * The policy’s
 identifier.
 
-Type annotations for `boto3.client("cloudfront").get_origin_request_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_request_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
 
-Boto3 documentation:
-[CloudFront.Client.get_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy)
+```python title="Method definition"
+def get_origin_request_policy(
+    self,
+    *,
+    Id: str,
+) -> GetOriginRequestPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#getoriginrequestpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetOriginRequestPolicyResultTypeDef](./type_defs.md#getoriginrequestpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOriginRequestPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetOriginRequestPolicyResultTypeDef](./type_defs.md#getoriginrequestpolicyresulttypedef).
+parent.get_origin_request_policy(**kwargs)
+```
 
-<a id="get\_origin\_request\_policy\_config"></a>
+1. See [:material-code-braces: GetOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#getoriginrequestpolicyrequestrequesttypedef) 
 
-### get_origin_request_policy_config
+### get\_origin\_request\_policy\_config
 
 Gets an origin request policy configuration.
 
-Type annotations for
-`boto3.client("cloudfront").get_origin_request_policy_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_origin_request_policy_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_origin_request_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_origin_request_policy_config)
+```python title="Method definition"
+def get_origin_request_policy_config(
+    self,
+    *,
+    Id: str,
+) -> GetOriginRequestPolicyConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOriginRequestPolicyConfigRequestRequestTypeDef](./type_defs.md#getoriginrequestpolicyconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetOriginRequestPolicyConfigResultTypeDef](./type_defs.md#getoriginrequestpolicyconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOriginRequestPolicyConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetOriginRequestPolicyConfigResultTypeDef](./type_defs.md#getoriginrequestpolicyconfigresulttypedef).
+parent.get_origin_request_policy_config(**kwargs)
+```
 
-<a id="get\_public\_key"></a>
+1. See [:material-code-braces: GetOriginRequestPolicyConfigRequestRequestTypeDef](./type_defs.md#getoriginrequestpolicyconfigrequestrequesttypedef) 
 
-### get_public_key
+### get\_public\_key
 
 Gets a public key.
 
-Type annotations for `boto3.client("cloudfront").get_public_key` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
 
-Boto3 documentation:
-[CloudFront.Client.get_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key)
+```python title="Method definition"
+def get_public_key(
+    self,
+    *,
+    Id: str,
+) -> GetPublicKeyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPublicKeyRequestRequestTypeDef](./type_defs.md#getpublickeyrequestrequesttypedef).
+1. See [:material-code-braces: GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPublicKeyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetPublicKeyResultTypeDef](./type_defs.md#getpublickeyresulttypedef).
+parent.get_public_key(**kwargs)
+```
 
-<a id="get\_public\_key\_config"></a>
+1. See [:material-code-braces: GetPublicKeyRequestRequestTypeDef](./type_defs.md#getpublickeyrequestrequesttypedef) 
 
-### get_public_key_config
+### get\_public\_key\_config
 
 Gets a public key configuration.
 
-Type annotations for `boto3.client("cloudfront").get_public_key_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_public_key_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_public_key_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_public_key_config)
+```python title="Method definition"
+def get_public_key_config(
+    self,
+    *,
+    Id: str,
+) -> GetPublicKeyConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPublicKeyConfigRequestRequestTypeDef](./type_defs.md#getpublickeyconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetPublicKeyConfigResultTypeDef](./type_defs.md#getpublickeyconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPublicKeyConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetPublicKeyConfigResultTypeDef](./type_defs.md#getpublickeyconfigresulttypedef).
+parent.get_public_key_config(**kwargs)
+```
 
-<a id="get\_realtime\_log\_config"></a>
+1. See [:material-code-braces: GetPublicKeyConfigRequestRequestTypeDef](./type_defs.md#getpublickeyconfigrequestrequesttypedef) 
 
-### get_realtime_log_config
+### get\_realtime\_log\_config
 
 Gets a real-time log configuration.
 
-Type annotations for `boto3.client("cloudfront").get_realtime_log_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_realtime_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_realtime_log_config)
+```python title="Method definition"
+def get_realtime_log_config(
+    self,
+    *,
+    Name: str = ...,
+    ARN: str = ...,
+) -> GetRealtimeLogConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#getrealtimelogconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str`
-- `ARN`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetRealtimeLogConfigRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetRealtimeLogConfigResultTypeDef](./type_defs.md#getrealtimelogconfigresulttypedef).
+parent.get_realtime_log_config(**kwargs)
+```
 
-<a id="get\_response\_headers\_policy"></a>
+1. See [:material-code-braces: GetRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#getrealtimelogconfigrequestrequesttypedef) 
 
-### get_response_headers_policy
+### get\_response\_headers\_policy
 
 Gets a response headers policy, including metadata (the policy’s identifier and
 the date and time when the policy was last modified).
 
-Type annotations for `boto3.client("cloudfront").get_response_headers_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_response_headers_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy)
 
-Boto3 documentation:
-[CloudFront.Client.get_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy)
+```python title="Method definition"
+def get_response_headers_policy(
+    self,
+    *,
+    Id: str,
+) -> GetResponseHeadersPolicyResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetResponseHeadersPolicyResultTypeDef](./type_defs.md#getresponseheaderspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResponseHeadersPolicyRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetResponseHeadersPolicyResultTypeDef](./type_defs.md#getresponseheaderspolicyresulttypedef).
+parent.get_response_headers_policy(**kwargs)
+```
 
-<a id="get\_response\_headers\_policy\_config"></a>
+1. See [:material-code-braces: GetResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyrequestrequesttypedef) 
 
-### get_response_headers_policy_config
+### get\_response\_headers\_policy\_config
 
 Gets a response headers policy configuration.
 
-Type annotations for
-`boto3.client("cloudfront").get_response_headers_policy_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_response_headers_policy_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_response_headers_policy_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_response_headers_policy_config)
+```python title="Method definition"
+def get_response_headers_policy_config(
+    self,
+    *,
+    Id: str,
+) -> GetResponseHeadersPolicyConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResponseHeadersPolicyConfigRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetResponseHeadersPolicyConfigResultTypeDef](./type_defs.md#getresponseheaderspolicyconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResponseHeadersPolicyConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetResponseHeadersPolicyConfigResultTypeDef](./type_defs.md#getresponseheaderspolicyconfigresulttypedef).
+parent.get_response_headers_policy_config(**kwargs)
+```
 
-<a id="get\_streaming\_distribution"></a>
+1. See [:material-code-braces: GetResponseHeadersPolicyConfigRequestRequestTypeDef](./type_defs.md#getresponseheaderspolicyconfigrequestrequesttypedef) 
 
-### get_streaming_distribution
+### get\_streaming\_distribution
 
-Gets information about a specified RTMP distribution, including the
-distribution configuration.
+Gets information about a specified RTMP distribution, including the distribution
+configuration.
 
-Type annotations for `boto3.client("cloudfront").get_streaming_distribution`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_streaming_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.get_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution)
+```python title="Method definition"
+def get_streaming_distribution(
+    self,
+    *,
+    Id: str,
+) -> GetStreamingDistributionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamingDistributionRequestRequestTypeDef](./type_defs.md#getstreamingdistributionrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamingDistributionResultTypeDef](./type_defs.md#getstreamingdistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamingDistributionRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetStreamingDistributionResultTypeDef](./type_defs.md#getstreamingdistributionresulttypedef).
+parent.get_streaming_distribution(**kwargs)
+```
 
-<a id="get\_streaming\_distribution\_config"></a>
+1. See [:material-code-braces: GetStreamingDistributionRequestRequestTypeDef](./type_defs.md#getstreamingdistributionrequestrequesttypedef) 
 
-### get_streaming_distribution_config
+### get\_streaming\_distribution\_config
 
 Get the configuration information about a streaming distribution.
 
-Type annotations for
-`boto3.client("cloudfront").get_streaming_distribution_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_streaming_distribution_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
 
-Boto3 documentation:
-[CloudFront.Client.get_streaming_distribution_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.get_streaming_distribution_config)
+```python title="Method definition"
+def get_streaming_distribution_config(
+    self,
+    *,
+    Id: str,
+) -> GetStreamingDistributionConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStreamingDistributionConfigRequestRequestTypeDef](./type_defs.md#getstreamingdistributionconfigrequestrequesttypedef).
+1. See [:material-code-braces: GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStreamingDistributionConfigRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef).
+parent.get_streaming_distribution_config(**kwargs)
+```
 
-<a id="list\_cache\_policies"></a>
+1. See [:material-code-braces: GetStreamingDistributionConfigRequestRequestTypeDef](./type_defs.md#getstreamingdistributionconfigrequestrequesttypedef) 
 
-### list_cache_policies
+### list\_cache\_policies
 
 Gets a list of cache policies.
 
-Type annotations for `boto3.client("cloudfront").list_cache_policies` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_cache_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
 
-Boto3 documentation:
-[CloudFront.Client.list_cache_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cache_policies)
+```python title="Method definition"
+def list_cache_policies(
+    self,
+    *,
+    Type: CachePolicyTypeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListCachePoliciesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListCachePoliciesRequestRequestTypeDef](./type_defs.md#listcachepoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: CachePolicyTypeType](./literals.md#cachepolicytypetype) 
+2. See [:material-code-braces: ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Type`: [CachePolicyTypeType](./literals.md#cachepolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCachePoliciesRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef).
+parent.list_cache_policies(**kwargs)
+```
 
-<a id="list\_cloud\_front\_origin\_access\_identities"></a>
+1. See [:material-code-braces: ListCachePoliciesRequestRequestTypeDef](./type_defs.md#listcachepoliciesrequestrequesttypedef) 
 
-### list_cloud_front_origin_access_identities
+### list\_cloud\_front\_origin\_access\_identities
 
 Lists origin access identities.
 
-Type annotations for
-`boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_cloud_front_origin_access_identities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
 
-Boto3 documentation:
-[CloudFront.Client.list_cloud_front_origin_access_identities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_cloud_front_origin_access_identities)
+```python title="Method definition"
+def list_cloud_front_origin_access_identities(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListCloudFrontOriginAccessIdentitiesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequestrequesttypedef).
+1. See [:material-code-braces: ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef).
+parent.list_cloud_front_origin_access_identities(**kwargs)
+```
 
-<a id="list\_conflicting\_aliases"></a>
+1. See [:material-code-braces: ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequestrequesttypedef) 
 
-### list_conflicting_aliases
+### list\_conflicting\_aliases
 
 Gets a list of aliases (also called CNAMEs or alternate domain names) that
 conflict or overlap with the provided alias, and the associated CloudFront
 distributions and Amazon Web Services accounts for each conflicting alias.
 
-Type annotations for `boto3.client("cloudfront").list_conflicting_aliases`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_conflicting_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_conflicting_aliases)
 
-Boto3 documentation:
-[CloudFront.Client.list_conflicting_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_conflicting_aliases)
+```python title="Method definition"
+def list_conflicting_aliases(
+    self,
+    *,
+    DistributionId: str,
+    Alias: str,
+    Marker: str = ...,
+    MaxItems: int = ...,
+) -> ListConflictingAliasesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef).
+1. See [:material-code-braces: ListConflictingAliasesResultTypeDef](./type_defs.md#listconflictingaliasesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
-- `Alias`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListConflictingAliasesRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+    "Alias": ...,
+}
 
-Returns
-[ListConflictingAliasesResultTypeDef](./type_defs.md#listconflictingaliasesresulttypedef).
+parent.list_conflicting_aliases(**kwargs)
+```
 
-<a id="list\_distributions"></a>
+1. See [:material-code-braces: ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef) 
 
-### list_distributions
+### list\_distributions
 
 List CloudFront distributions.
 
-Type annotations for `boto3.client("cloudfront").list_distributions` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions)
+```python title="Method definition"
+def list_distributions(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsRequestRequestTypeDef](./type_defs.md#listdistributionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef).
+parent.list_distributions(**kwargs)
+```
 
-<a id="list\_distributions\_by\_cache\_policy\_id"></a>
+1. See [:material-code-braces: ListDistributionsRequestRequestTypeDef](./type_defs.md#listdistributionsrequestrequesttypedef) 
 
-### list_distributions_by_cache_policy_id
+### list\_distributions\_by\_cache\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
 that’s associated with the specified cache policy.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_cache_policy_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_cache_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_cache_policy_id)
+```python title="Method definition"
+def list_distributions_by_cache_policy_id(
+    self,
+    *,
+    CachePolicyId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsByCachePolicyIdResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByCachePolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbycachepolicyidrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByCachePolicyIdResultTypeDef](./type_defs.md#listdistributionsbycachepolicyidresulttypedef) 
 
-Keyword-only arguments:
 
-- `CachePolicyId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByCachePolicyIdRequestRequestTypeDef = {  # (1)
+    "CachePolicyId": ...,
+}
 
-Returns
-[ListDistributionsByCachePolicyIdResultTypeDef](./type_defs.md#listdistributionsbycachepolicyidresulttypedef).
+parent.list_distributions_by_cache_policy_id(**kwargs)
+```
 
-<a id="list\_distributions\_by\_key\_group"></a>
+1. See [:material-code-braces: ListDistributionsByCachePolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbycachepolicyidrequestrequesttypedef) 
 
-### list_distributions_by_key_group
+### list\_distributions\_by\_key\_group
 
 Gets a list of distribution IDs for distributions that have a cache behavior
 that references the specified key group.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_key_group` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_key_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_key_group)
+```python title="Method definition"
+def list_distributions_by_key_group(
+    self,
+    *,
+    KeyGroupId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsByKeyGroupResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByKeyGroupRequestRequestTypeDef](./type_defs.md#listdistributionsbykeygrouprequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByKeyGroupResultTypeDef](./type_defs.md#listdistributionsbykeygroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `KeyGroupId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByKeyGroupRequestRequestTypeDef = {  # (1)
+    "KeyGroupId": ...,
+}
 
-Returns
-[ListDistributionsByKeyGroupResultTypeDef](./type_defs.md#listdistributionsbykeygroupresulttypedef).
+parent.list_distributions_by_key_group(**kwargs)
+```
 
-<a id="list\_distributions\_by\_origin\_request\_policy\_id"></a>
+1. See [:material-code-braces: ListDistributionsByKeyGroupRequestRequestTypeDef](./type_defs.md#listdistributionsbykeygrouprequestrequesttypedef) 
 
-### list_distributions_by_origin_request_policy_id
+### list\_distributions\_by\_origin\_request\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
 that’s associated with the specified origin request policy.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_origin_request_policy_id`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_origin_request_policy_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_origin_request_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_origin_request_policy_id)
+```python title="Method definition"
+def list_distributions_by_origin_request_policy_id(
+    self,
+    *,
+    OriginRequestPolicyId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsByOriginRequestPolicyIdResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByOriginRequestPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresulttypedef) 
 
-Keyword-only arguments:
 
-- `OriginRequestPolicyId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef = {  # (1)
+    "OriginRequestPolicyId": ...,
+}
 
-Returns
-[ListDistributionsByOriginRequestPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidresulttypedef).
+parent.list_distributions_by_origin_request_policy_id(**kwargs)
+```
 
-<a id="list\_distributions\_by\_realtime\_log\_config"></a>
+1. See [:material-code-braces: ListDistributionsByOriginRequestPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyoriginrequestpolicyidrequestrequesttypedef) 
 
-### list_distributions_by_realtime_log_config
+### list\_distributions\_by\_realtime\_log\_config
 
 Gets a list of distributions that have a cache behavior that’s associated with
 the specified real-time log configuration.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_realtime_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_realtime_log_config)
+```python title="Method definition"
+def list_distributions_by_realtime_log_config(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+    RealtimeLogConfigName: str = ...,
+    RealtimeLogConfigArn: str = ...,
+) -> ListDistributionsByRealtimeLogConfigResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `RealtimeLogConfigName`: `str`
-- `RealtimeLogConfigArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByRealtimeLogConfigRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListDistributionsByRealtimeLogConfigResultTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigresulttypedef).
+parent.list_distributions_by_realtime_log_config(**kwargs)
+```
 
-<a id="list\_distributions\_by\_response\_headers\_policy\_id"></a>
+1. See [:material-code-braces: ListDistributionsByRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#listdistributionsbyrealtimelogconfigrequestrequesttypedef) 
 
-### list_distributions_by_response_headers_policy_id
+### list\_distributions\_by\_response\_headers\_policy\_id
 
 Gets a list of distribution IDs for distributions that have a cache behavior
 that’s associated with the specified response headers policy.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_response_headers_policy_id`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_response_headers_policy_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_response_headers_policy_id)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_response_headers_policy_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_response_headers_policy_id)
+```python title="Method definition"
+def list_distributions_by_response_headers_policy_id(
+    self,
+    *,
+    ResponseHeadersPolicyId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsByResponseHeadersPolicyIdResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByResponseHeadersPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResponseHeadersPolicyId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef = {  # (1)
+    "ResponseHeadersPolicyId": ...,
+}
 
-Returns
-[ListDistributionsByResponseHeadersPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidresulttypedef).
+parent.list_distributions_by_response_headers_policy_id(**kwargs)
+```
 
-<a id="list\_distributions\_by\_web\_acl\_id"></a>
+1. See [:material-code-braces: ListDistributionsByResponseHeadersPolicyIdRequestRequestTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidrequestrequesttypedef) 
 
-### list_distributions_by_web_acl_id
+### list\_distributions\_by\_web\_acl\_id
 
 List the distributions that are associated with a specified WAF web ACL.
 
-Type annotations for
-`boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_distributions_by_web_acl_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
 
-Boto3 documentation:
-[CloudFront.Client.list_distributions_by_web_acl_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_distributions_by_web_acl_id)
+```python title="Method definition"
+def list_distributions_by_web_acl_id(
+    self,
+    *,
+    WebACLId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListDistributionsByWebACLIdResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDistributionsByWebACLIdRequestRequestTypeDef](./type_defs.md#listdistributionsbywebaclidrequestrequesttypedef).
+1. See [:material-code-braces: ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef) 
 
-Keyword-only arguments:
 
-- `WebACLId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDistributionsByWebACLIdRequestRequestTypeDef = {  # (1)
+    "WebACLId": ...,
+}
 
-Returns
-[ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef).
+parent.list_distributions_by_web_acl_id(**kwargs)
+```
 
-<a id="list\_field\_level\_encryption\_configs"></a>
+1. See [:material-code-braces: ListDistributionsByWebACLIdRequestRequestTypeDef](./type_defs.md#listdistributionsbywebaclidrequestrequesttypedef) 
 
-### list_field_level_encryption_configs
+### list\_field\_level\_encryption\_configs
 
 List all field-level encryption configurations that have been created in
 CloudFront for this account.
 
-Type annotations for
-`boto3.client("cloudfront").list_field_level_encryption_configs` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_field_level_encryption_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
 
-Boto3 documentation:
-[CloudFront.Client.list_field_level_encryption_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_configs)
+```python title="Method definition"
+def list_field_level_encryption_configs(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListFieldLevelEncryptionConfigsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFieldLevelEncryptionConfigsRequestRequestTypeDef](./type_defs.md#listfieldlevelencryptionconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListFieldLevelEncryptionConfigsResultTypeDef](./type_defs.md#listfieldlevelencryptionconfigsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFieldLevelEncryptionConfigsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListFieldLevelEncryptionConfigsResultTypeDef](./type_defs.md#listfieldlevelencryptionconfigsresulttypedef).
+parent.list_field_level_encryption_configs(**kwargs)
+```
 
-<a id="list\_field\_level\_encryption\_profiles"></a>
+1. See [:material-code-braces: ListFieldLevelEncryptionConfigsRequestRequestTypeDef](./type_defs.md#listfieldlevelencryptionconfigsrequestrequesttypedef) 
 
-### list_field_level_encryption_profiles
+### list\_field\_level\_encryption\_profiles
 
 Request a list of field-level encryption profiles that have been created in
 CloudFront for this account.
 
-Type annotations for
-`boto3.client("cloudfront").list_field_level_encryption_profiles` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_field_level_encryption_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
 
-Boto3 documentation:
-[CloudFront.Client.list_field_level_encryption_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_field_level_encryption_profiles)
+```python title="Method definition"
+def list_field_level_encryption_profiles(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListFieldLevelEncryptionProfilesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFieldLevelEncryptionProfilesRequestRequestTypeDef](./type_defs.md#listfieldlevelencryptionprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListFieldLevelEncryptionProfilesResultTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFieldLevelEncryptionProfilesRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListFieldLevelEncryptionProfilesResultTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresulttypedef).
+parent.list_field_level_encryption_profiles(**kwargs)
+```
 
-<a id="list\_functions"></a>
+1. See [:material-code-braces: ListFieldLevelEncryptionProfilesRequestRequestTypeDef](./type_defs.md#listfieldlevelencryptionprofilesrequestrequesttypedef) 
 
-### list_functions
+### list\_functions
 
 Gets a list of all CloudFront functions in your Amazon Web Services account.
 
-Type annotations for `boto3.client("cloudfront").list_functions` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_functions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
 
-Boto3 documentation:
-[CloudFront.Client.list_functions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_functions)
+```python title="Method definition"
+def list_functions(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+    Stage: FunctionStageType = ...,  # (1)
+) -> ListFunctionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef).
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
+2. See [:material-code-braces: ListFunctionsResultTypeDef](./type_defs.md#listfunctionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+```python title="Usage example with kwargs"
+kwargs: ListFunctionsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListFunctionsResultTypeDef](./type_defs.md#listfunctionsresulttypedef).
+parent.list_functions(**kwargs)
+```
 
-<a id="list\_invalidations"></a>
+1. See [:material-code-braces: ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef) 
 
-### list_invalidations
+### list\_invalidations
 
 Lists invalidation batches.
 
-Type annotations for `boto3.client("cloudfront").list_invalidations` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_invalidations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
 
-Boto3 documentation:
-[CloudFront.Client.list_invalidations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_invalidations)
+```python title="Method definition"
+def list_invalidations(
+    self,
+    *,
+    DistributionId: str,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListInvalidationsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvalidationsRequestRequestTypeDef](./type_defs.md#listinvalidationsrequestrequesttypedef).
+1. See [:material-code-braces: ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionId`: `str` *(required)*
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInvalidationsRequestRequestTypeDef = {  # (1)
+    "DistributionId": ...,
+}
 
-Returns
-[ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef).
+parent.list_invalidations(**kwargs)
+```
 
-<a id="list\_key\_groups"></a>
+1. See [:material-code-braces: ListInvalidationsRequestRequestTypeDef](./type_defs.md#listinvalidationsrequestrequesttypedef) 
 
-### list_key_groups
+### list\_key\_groups
 
 Gets a list of key groups.
 
-Type annotations for `boto3.client("cloudfront").list_key_groups` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_key_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
 
-Boto3 documentation:
-[CloudFront.Client.list_key_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_key_groups)
+```python title="Method definition"
+def list_key_groups(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListKeyGroupsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListKeyGroupsRequestRequestTypeDef](./type_defs.md#listkeygroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListKeyGroupsResultTypeDef](./type_defs.md#listkeygroupsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListKeyGroupsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListKeyGroupsResultTypeDef](./type_defs.md#listkeygroupsresulttypedef).
+parent.list_key_groups(**kwargs)
+```
 
-<a id="list\_origin\_request\_policies"></a>
+1. See [:material-code-braces: ListKeyGroupsRequestRequestTypeDef](./type_defs.md#listkeygroupsrequestrequesttypedef) 
 
-### list_origin_request_policies
+### list\_origin\_request\_policies
 
 Gets a list of origin request policies.
 
-Type annotations for `boto3.client("cloudfront").list_origin_request_policies`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_origin_request_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
 
-Boto3 documentation:
-[CloudFront.Client.list_origin_request_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_origin_request_policies)
+```python title="Method definition"
+def list_origin_request_policies(
+    self,
+    *,
+    Type: OriginRequestPolicyTypeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListOriginRequestPoliciesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListOriginRequestPoliciesRequestRequestTypeDef](./type_defs.md#listoriginrequestpoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype) 
+2. See [:material-code-braces: ListOriginRequestPoliciesResultTypeDef](./type_defs.md#listoriginrequestpoliciesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Type`:
-  [OriginRequestPolicyTypeType](./literals.md#originrequestpolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOriginRequestPoliciesRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListOriginRequestPoliciesResultTypeDef](./type_defs.md#listoriginrequestpoliciesresulttypedef).
+parent.list_origin_request_policies(**kwargs)
+```
 
-<a id="list\_public\_keys"></a>
+1. See [:material-code-braces: ListOriginRequestPoliciesRequestRequestTypeDef](./type_defs.md#listoriginrequestpoliciesrequestrequesttypedef) 
 
-### list_public_keys
+### list\_public\_keys
 
 List all public keys that have been added to CloudFront for this account.
 
-Type annotations for `boto3.client("cloudfront").list_public_keys` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_public_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
 
-Boto3 documentation:
-[CloudFront.Client.list_public_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_public_keys)
+```python title="Method definition"
+def list_public_keys(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListPublicKeysResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef).
+1. See [:material-code-braces: ListPublicKeysResultTypeDef](./type_defs.md#listpublickeysresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPublicKeysRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListPublicKeysResultTypeDef](./type_defs.md#listpublickeysresulttypedef).
+parent.list_public_keys(**kwargs)
+```
 
-<a id="list\_realtime\_log\_configs"></a>
+1. See [:material-code-braces: ListPublicKeysRequestRequestTypeDef](./type_defs.md#listpublickeysrequestrequesttypedef) 
 
-### list_realtime_log_configs
+### list\_realtime\_log\_configs
 
 Gets a list of real-time log configurations.
 
-Type annotations for `boto3.client("cloudfront").list_realtime_log_configs`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_realtime_log_configs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
 
-Boto3 documentation:
-[CloudFront.Client.list_realtime_log_configs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_realtime_log_configs)
+```python title="Method definition"
+def list_realtime_log_configs(
+    self,
+    *,
+    MaxItems: str = ...,
+    Marker: str = ...,
+) -> ListRealtimeLogConfigsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRealtimeLogConfigsRequestRequestTypeDef](./type_defs.md#listrealtimelogconfigsrequestrequesttypedef).
+1. See [:material-code-braces: ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef) 
 
-Keyword-only arguments:
 
-- `MaxItems`: `str`
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRealtimeLogConfigsRequestRequestTypeDef = {  # (1)
+    "MaxItems": ...,
+}
 
-Returns
-[ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef).
+parent.list_realtime_log_configs(**kwargs)
+```
 
-<a id="list\_response\_headers\_policies"></a>
+1. See [:material-code-braces: ListRealtimeLogConfigsRequestRequestTypeDef](./type_defs.md#listrealtimelogconfigsrequestrequesttypedef) 
 
-### list_response_headers_policies
+### list\_response\_headers\_policies
 
 Gets a list of response headers policies.
 
-Type annotations for
-`boto3.client("cloudfront").list_response_headers_policies` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_response_headers_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_response_headers_policies)
 
-Boto3 documentation:
-[CloudFront.Client.list_response_headers_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_response_headers_policies)
+```python title="Method definition"
+def list_response_headers_policies(
+    self,
+    *,
+    Type: ResponseHeadersPolicyTypeType = ...,  # (1)
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListResponseHeadersPoliciesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListResponseHeadersPoliciesRequestRequestTypeDef](./type_defs.md#listresponseheaderspoliciesrequestrequesttypedef).
+1. See [:material-code-brackets: ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype) 
+2. See [:material-code-braces: ListResponseHeadersPoliciesResultTypeDef](./type_defs.md#listresponseheaderspoliciesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Type`:
-  [ResponseHeadersPolicyTypeType](./literals.md#responseheaderspolicytypetype)
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResponseHeadersPoliciesRequestRequestTypeDef = {  # (1)
+    "Type": ...,
+}
 
-Returns
-[ListResponseHeadersPoliciesResultTypeDef](./type_defs.md#listresponseheaderspoliciesresulttypedef).
+parent.list_response_headers_policies(**kwargs)
+```
 
-<a id="list\_streaming\_distributions"></a>
+1. See [:material-code-braces: ListResponseHeadersPoliciesRequestRequestTypeDef](./type_defs.md#listresponseheaderspoliciesrequestrequesttypedef) 
 
-### list_streaming_distributions
+### list\_streaming\_distributions
 
 List streaming distributions.
 
-Type annotations for `boto3.client("cloudfront").list_streaming_distributions`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_streaming_distributions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
 
-Boto3 documentation:
-[CloudFront.Client.list_streaming_distributions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_streaming_distributions)
+```python title="Method definition"
+def list_streaming_distributions(
+    self,
+    *,
+    Marker: str = ...,
+    MaxItems: str = ...,
+) -> ListStreamingDistributionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamingDistributionsRequestRequestTypeDef](./type_defs.md#liststreamingdistributionsrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
-- `MaxItems`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStreamingDistributionsRequestRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef).
+parent.list_streaming_distributions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStreamingDistributionsRequestRequestTypeDef](./type_defs.md#liststreamingdistributionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List tags for a CloudFront resource.
 
-Type annotations for `boto3.client("cloudfront").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CloudFront.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    Resource: str,
+) -> ListTagsForResourceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+}
 
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="publish\_function"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### publish_function
+### publish\_function
 
 Publishes a CloudFront function by copying the function code from the
 `DEVELOPMENT` stage to `LIVE`.
 
-Type annotations for `boto3.client("cloudfront").publish_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").publish_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
 
-Boto3 documentation:
-[CloudFront.Client.publish_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.publish_function)
+```python title="Method definition"
+def publish_function(
+    self,
+    *,
+    Name: str,
+    IfMatch: str,
+) -> PublishFunctionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PublishFunctionRequestRequestTypeDef](./type_defs.md#publishfunctionrequestrequesttypedef).
+1. See [:material-code-braces: PublishFunctionResultTypeDef](./type_defs.md#publishfunctionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IfMatch`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PublishFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IfMatch": ...,
+}
 
-Returns
-[PublishFunctionResultTypeDef](./type_defs.md#publishfunctionresulttypedef).
+parent.publish_function(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PublishFunctionRequestRequestTypeDef](./type_defs.md#publishfunctionrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Add tags to a CloudFront resource.
 
-Type annotations for `boto3.client("cloudfront").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
 
-Boto3 documentation:
-[CloudFront.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    Resource: str,
+    Tags: TagsTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
-- `Tags`: [TagsTypeDef](./type_defs.md#tagstypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "Tags": ...,
+}
 
-<a id="test\_function"></a>
+parent.tag_resource(**kwargs)
+```
 
-### test_function
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### test\_function
 
 Tests a CloudFront function.
 
-Type annotations for `boto3.client("cloudfront").test_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").test_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
 
-Boto3 documentation:
-[CloudFront.Client.test_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.test_function)
+```python title="Method definition"
+def test_function(
+    self,
+    *,
+    Name: str,
+    IfMatch: str,
+    EventObject: Union[bytes, IO[bytes], StreamingBody],
+    Stage: FunctionStageType = ...,  # (1)
+) -> TestFunctionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TestFunctionRequestRequestTypeDef](./type_defs.md#testfunctionrequestrequesttypedef).
+1. See [:material-code-brackets: FunctionStageType](./literals.md#functionstagetype) 
+2. See [:material-code-braces: TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IfMatch`: `str` *(required)*
-- `EventObject`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
-- `Stage`: [FunctionStageType](./literals.md#functionstagetype)
+```python title="Usage example with kwargs"
+kwargs: TestFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IfMatch": ...,
+    "EventObject": ...,
+}
 
-Returns [TestFunctionResultTypeDef](./type_defs.md#testfunctionresulttypedef).
+parent.test_function(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestFunctionRequestRequestTypeDef](./type_defs.md#testfunctionrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Remove tags from a CloudFront resource.
 
-Type annotations for `boto3.client("cloudfront").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
 
-Boto3 documentation:
-[CloudFront.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    Resource: str,
+    TagKeys: TagKeysTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagKeysTypeDef](./type_defs.md#tagkeystypedef) 
 
-Keyword-only arguments:
 
-- `Resource`: `str` *(required)*
-- `TagKeys`: [TagKeysTypeDef](./type_defs.md#tagkeystypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "Resource": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_cache\_policy"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_cache_policy
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_cache\_policy
 
 Updates a cache policy configuration.
 
-Type annotations for `boto3.client("cloudfront").update_cache_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_cache_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
 
-Boto3 documentation:
-[CloudFront.Client.update_cache_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cache_policy)
+```python title="Method definition"
+def update_cache_policy(
+    self,
+    *,
+    CachePolicyConfig: CachePolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateCachePolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCachePolicyRequestRequestTypeDef](./type_defs.md#updatecachepolicyrequestrequesttypedef).
+1. See [:material-code-braces: CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef) 
+2. See [:material-code-braces: UpdateCachePolicyResultTypeDef](./type_defs.md#updatecachepolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `CachePolicyConfig`:
-  [CachePolicyConfigTypeDef](./type_defs.md#cachepolicyconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCachePolicyRequestRequestTypeDef = {  # (1)
+    "CachePolicyConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateCachePolicyResultTypeDef](./type_defs.md#updatecachepolicyresulttypedef).
+parent.update_cache_policy(**kwargs)
+```
 
-<a id="update\_cloud\_front\_origin\_access\_identity"></a>
+1. See [:material-code-braces: UpdateCachePolicyRequestRequestTypeDef](./type_defs.md#updatecachepolicyrequestrequesttypedef) 
 
-### update_cloud_front_origin_access_identity
+### update\_cloud\_front\_origin\_access\_identity
 
 Update an origin access identity.
 
-Type annotations for
-`boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_cloud_front_origin_access_identity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
 
-Boto3 documentation:
-[CloudFront.Client.update_cloud_front_origin_access_identity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_cloud_front_origin_access_identity)
+```python title="Method definition"
+def update_cloud_front_origin_access_identity(
+    self,
+    *,
+    CloudFrontOriginAccessIdentityConfig: CloudFrontOriginAccessIdentityConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateCloudFrontOriginAccessIdentityResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityrequestrequesttypedef).
+1. See [:material-code-braces: CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef) 
+2. See [:material-code-braces: UpdateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityresulttypedef) 
 
-Keyword-only arguments:
 
-- `CloudFrontOriginAccessIdentityConfig`:
-  [CloudFrontOriginAccessIdentityConfigTypeDef](./type_defs.md#cloudfrontoriginaccessidentityconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef = {  # (1)
+    "CloudFrontOriginAccessIdentityConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityresulttypedef).
+parent.update_cloud_front_origin_access_identity(**kwargs)
+```
 
-<a id="update\_distribution"></a>
+1. See [:material-code-braces: UpdateCloudFrontOriginAccessIdentityRequestRequestTypeDef](./type_defs.md#updatecloudfrontoriginaccessidentityrequestrequesttypedef) 
 
-### update_distribution
+### update\_distribution
 
 Updates the configuration for a web distribution.
 
-Type annotations for `boto3.client("cloudfront").update_distribution` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.update_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_distribution)
+```python title="Method definition"
+def update_distribution(
+    self,
+    *,
+    DistributionConfig: DistributionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateDistributionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDistributionRequestRequestTypeDef](./type_defs.md#updatedistributionrequestrequesttypedef).
+1. See [:material-code-braces: DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef) 
+2. See [:material-code-braces: UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `DistributionConfig`:
-  [DistributionConfigTypeDef](./type_defs.md#distributionconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDistributionRequestRequestTypeDef = {  # (1)
+    "DistributionConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateDistributionResultTypeDef](./type_defs.md#updatedistributionresulttypedef).
+parent.update_distribution(**kwargs)
+```
 
-<a id="update\_field\_level\_encryption\_config"></a>
+1. See [:material-code-braces: UpdateDistributionRequestRequestTypeDef](./type_defs.md#updatedistributionrequestrequesttypedef) 
 
-### update_field_level_encryption_config
+### update\_field\_level\_encryption\_config
 
 Update a field-level encryption configuration.
 
-Type annotations for
-`boto3.client("cloudfront").update_field_level_encryption_config` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_field_level_encryption_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
 
-Boto3 documentation:
-[CloudFront.Client.update_field_level_encryption_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_config)
+```python title="Method definition"
+def update_field_level_encryption_config(
+    self,
+    *,
+    FieldLevelEncryptionConfig: FieldLevelEncryptionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateFieldLevelEncryptionConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#updatefieldlevelencryptionconfigrequestrequesttypedef).
+1. See [:material-code-braces: FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef) 
+2. See [:material-code-braces: UpdateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#updatefieldlevelencryptionconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `FieldLevelEncryptionConfig`:
-  [FieldLevelEncryptionConfigTypeDef](./type_defs.md#fieldlevelencryptionconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFieldLevelEncryptionConfigRequestRequestTypeDef = {  # (1)
+    "FieldLevelEncryptionConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateFieldLevelEncryptionConfigResultTypeDef](./type_defs.md#updatefieldlevelencryptionconfigresulttypedef).
+parent.update_field_level_encryption_config(**kwargs)
+```
 
-<a id="update\_field\_level\_encryption\_profile"></a>
+1. See [:material-code-braces: UpdateFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#updatefieldlevelencryptionconfigrequestrequesttypedef) 
 
-### update_field_level_encryption_profile
+### update\_field\_level\_encryption\_profile
 
 Update a field-level encryption profile.
 
-Type annotations for
-`boto3.client("cloudfront").update_field_level_encryption_profile` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_field_level_encryption_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
 
-Boto3 documentation:
-[CloudFront.Client.update_field_level_encryption_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_field_level_encryption_profile)
+```python title="Method definition"
+def update_field_level_encryption_profile(
+    self,
+    *,
+    FieldLevelEncryptionProfileConfig: FieldLevelEncryptionProfileConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateFieldLevelEncryptionProfileResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#updatefieldlevelencryptionprofilerequestrequesttypedef).
+1. See [:material-code-braces: FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef) 
+2. See [:material-code-braces: UpdateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#updatefieldlevelencryptionprofileresulttypedef) 
 
-Keyword-only arguments:
 
-- `FieldLevelEncryptionProfileConfig`:
-  [FieldLevelEncryptionProfileConfigTypeDef](./type_defs.md#fieldlevelencryptionprofileconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFieldLevelEncryptionProfileRequestRequestTypeDef = {  # (1)
+    "FieldLevelEncryptionProfileConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateFieldLevelEncryptionProfileResultTypeDef](./type_defs.md#updatefieldlevelencryptionprofileresulttypedef).
+parent.update_field_level_encryption_profile(**kwargs)
+```
 
-<a id="update\_function"></a>
+1. See [:material-code-braces: UpdateFieldLevelEncryptionProfileRequestRequestTypeDef](./type_defs.md#updatefieldlevelencryptionprofilerequestrequesttypedef) 
 
-### update_function
+### update\_function
 
 Updates a CloudFront function.
 
-Type annotations for `boto3.client("cloudfront").update_function` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_function` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
 
-Boto3 documentation:
-[CloudFront.Client.update_function](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_function)
+```python title="Method definition"
+def update_function(
+    self,
+    *,
+    Name: str,
+    IfMatch: str,
+    FunctionConfig: FunctionConfigTypeDef,  # (1)
+    FunctionCode: Union[bytes, IO[bytes], StreamingBody],
+) -> UpdateFunctionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionRequestRequestTypeDef](./type_defs.md#updatefunctionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) 
+2. See [:material-code-braces: UpdateFunctionResultTypeDef](./type_defs.md#updatefunctionresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IfMatch`: `str` *(required)*
-- `FunctionConfig`:
-  [FunctionConfigTypeDef](./type_defs.md#functionconfigtypedef) *(required)*
-- `FunctionCode`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IfMatch": ...,
+    "FunctionConfig": ...,
+    "FunctionCode": ...,
+}
 
-Returns
-[UpdateFunctionResultTypeDef](./type_defs.md#updatefunctionresulttypedef).
+parent.update_function(**kwargs)
+```
 
-<a id="update\_key\_group"></a>
+1. See [:material-code-braces: UpdateFunctionRequestRequestTypeDef](./type_defs.md#updatefunctionrequestrequesttypedef) 
 
-### update_key_group
+### update\_key\_group
 
 Updates a key group.
 
-Type annotations for `boto3.client("cloudfront").update_key_group` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_key_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
 
-Boto3 documentation:
-[CloudFront.Client.update_key_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_key_group)
+```python title="Method definition"
+def update_key_group(
+    self,
+    *,
+    KeyGroupConfig: KeyGroupConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateKeyGroupResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateKeyGroupRequestRequestTypeDef](./type_defs.md#updatekeygrouprequestrequesttypedef).
+1. See [:material-code-braces: KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) 
+2. See [:material-code-braces: UpdateKeyGroupResultTypeDef](./type_defs.md#updatekeygroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `KeyGroupConfig`:
-  [KeyGroupConfigTypeDef](./type_defs.md#keygroupconfigtypedef) *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateKeyGroupRequestRequestTypeDef = {  # (1)
+    "KeyGroupConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateKeyGroupResultTypeDef](./type_defs.md#updatekeygroupresulttypedef).
+parent.update_key_group(**kwargs)
+```
 
-<a id="update\_origin\_request\_policy"></a>
+1. See [:material-code-braces: UpdateKeyGroupRequestRequestTypeDef](./type_defs.md#updatekeygrouprequestrequesttypedef) 
 
-### update_origin_request_policy
+### update\_origin\_request\_policy
 
 Updates an origin request policy configuration.
 
-Type annotations for `boto3.client("cloudfront").update_origin_request_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_origin_request_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
 
-Boto3 documentation:
-[CloudFront.Client.update_origin_request_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_origin_request_policy)
+```python title="Method definition"
+def update_origin_request_policy(
+    self,
+    *,
+    OriginRequestPolicyConfig: OriginRequestPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateOriginRequestPolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#updateoriginrequestpolicyrequestrequesttypedef).
+1. See [:material-code-braces: OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef) 
+2. See [:material-code-braces: UpdateOriginRequestPolicyResultTypeDef](./type_defs.md#updateoriginrequestpolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `OriginRequestPolicyConfig`:
-  [OriginRequestPolicyConfigTypeDef](./type_defs.md#originrequestpolicyconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateOriginRequestPolicyRequestRequestTypeDef = {  # (1)
+    "OriginRequestPolicyConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateOriginRequestPolicyResultTypeDef](./type_defs.md#updateoriginrequestpolicyresulttypedef).
+parent.update_origin_request_policy(**kwargs)
+```
 
-<a id="update\_public\_key"></a>
+1. See [:material-code-braces: UpdateOriginRequestPolicyRequestRequestTypeDef](./type_defs.md#updateoriginrequestpolicyrequestrequesttypedef) 
 
-### update_public_key
+### update\_public\_key
 
 Update public key information.
 
-Type annotations for `boto3.client("cloudfront").update_public_key` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_public_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
 
-Boto3 documentation:
-[CloudFront.Client.update_public_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_public_key)
+```python title="Method definition"
+def update_public_key(
+    self,
+    *,
+    PublicKeyConfig: PublicKeyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdatePublicKeyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePublicKeyRequestRequestTypeDef](./type_defs.md#updatepublickeyrequestrequesttypedef).
+1. See [:material-code-braces: PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) 
+2. See [:material-code-braces: UpdatePublicKeyResultTypeDef](./type_defs.md#updatepublickeyresulttypedef) 
 
-Keyword-only arguments:
 
-- `PublicKeyConfig`:
-  [PublicKeyConfigTypeDef](./type_defs.md#publickeyconfigtypedef) *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePublicKeyRequestRequestTypeDef = {  # (1)
+    "PublicKeyConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdatePublicKeyResultTypeDef](./type_defs.md#updatepublickeyresulttypedef).
+parent.update_public_key(**kwargs)
+```
 
-<a id="update\_realtime\_log\_config"></a>
+1. See [:material-code-braces: UpdatePublicKeyRequestRequestTypeDef](./type_defs.md#updatepublickeyrequestrequesttypedef) 
 
-### update_realtime_log_config
+### update\_realtime\_log\_config
 
 Updates a real-time log configuration.
 
-Type annotations for `boto3.client("cloudfront").update_realtime_log_config`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_realtime_log_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
 
-Boto3 documentation:
-[CloudFront.Client.update_realtime_log_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_realtime_log_config)
+```python title="Method definition"
+def update_realtime_log_config(
+    self,
+    *,
+    EndPoints: Sequence[EndPointTypeDef] = ...,  # (1)
+    Fields: Sequence[str] = ...,
+    Name: str = ...,
+    ARN: str = ...,
+    SamplingRate: int = ...,
+) -> UpdateRealtimeLogConfigResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#updaterealtimelogconfigrequestrequesttypedef).
+1. See [:material-code-braces: EndPointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef) 
 
-Keyword-only arguments:
 
-- `EndPoints`: `Sequence`\[[EndPointTypeDef](./type_defs.md#endpointtypedef)\]
-- `Fields`: `Sequence`\[`str`\]
-- `Name`: `str`
-- `ARN`: `str`
-- `SamplingRate`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateRealtimeLogConfigRequestRequestTypeDef = {  # (1)
+    "EndPoints": ...,
+}
 
-Returns
-[UpdateRealtimeLogConfigResultTypeDef](./type_defs.md#updaterealtimelogconfigresulttypedef).
+parent.update_realtime_log_config(**kwargs)
+```
 
-<a id="update\_response\_headers\_policy"></a>
+1. See [:material-code-braces: UpdateRealtimeLogConfigRequestRequestTypeDef](./type_defs.md#updaterealtimelogconfigrequestrequesttypedef) 
 
-### update_response_headers_policy
+### update\_response\_headers\_policy
 
 Updates a response headers policy.
 
-Type annotations for
-`boto3.client("cloudfront").update_response_headers_policy` method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_response_headers_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_response_headers_policy)
 
-Boto3 documentation:
-[CloudFront.Client.update_response_headers_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_response_headers_policy)
+```python title="Method definition"
+def update_response_headers_policy(
+    self,
+    *,
+    ResponseHeadersPolicyConfig: ResponseHeadersPolicyConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateResponseHeadersPolicyResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#updateresponseheaderspolicyrequestrequesttypedef).
+1. See [:material-code-braces: ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef) 
+2. See [:material-code-braces: UpdateResponseHeadersPolicyResultTypeDef](./type_defs.md#updateresponseheaderspolicyresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResponseHeadersPolicyConfig`:
-  [ResponseHeadersPolicyConfigTypeDef](./type_defs.md#responseheaderspolicyconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateResponseHeadersPolicyRequestRequestTypeDef = {  # (1)
+    "ResponseHeadersPolicyConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateResponseHeadersPolicyResultTypeDef](./type_defs.md#updateresponseheaderspolicyresulttypedef).
+parent.update_response_headers_policy(**kwargs)
+```
 
-<a id="update\_streaming\_distribution"></a>
+1. See [:material-code-braces: UpdateResponseHeadersPolicyRequestRequestTypeDef](./type_defs.md#updateresponseheaderspolicyrequestrequesttypedef) 
 
-### update_streaming_distribution
+### update\_streaming\_distribution
 
 Update a streaming distribution.
 
-Type annotations for `boto3.client("cloudfront").update_streaming_distribution`
-method.
+Type annotations and code completion for `#!python boto3.client("cloudfront").update_streaming_distribution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
 
-Boto3 documentation:
-[CloudFront.Client.update_streaming_distribution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client.update_streaming_distribution)
+```python title="Method definition"
+def update_streaming_distribution(
+    self,
+    *,
+    StreamingDistributionConfig: StreamingDistributionConfigTypeDef,  # (1)
+    Id: str,
+    IfMatch: str = ...,
+) -> UpdateStreamingDistributionResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStreamingDistributionRequestRequestTypeDef](./type_defs.md#updatestreamingdistributionrequestrequesttypedef).
+1. See [:material-code-braces: StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef) 
+2. See [:material-code-braces: UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef) 
 
-Keyword-only arguments:
 
-- `StreamingDistributionConfig`:
-  [StreamingDistributionConfigTypeDef](./type_defs.md#streamingdistributionconfigtypedef)
-  *(required)*
-- `Id`: `str` *(required)*
-- `IfMatch`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStreamingDistributionRequestRequestTypeDef = {  # (1)
+    "StreamingDistributionConfig": ...,
+    "Id": ...,
+}
 
-Returns
-[UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef).
+parent.update_streaming_distribution(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateStreamingDistributionRequestRequestTypeDef](./type_defs.md#updatestreamingdistributionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("cloudfront").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_paginator` method with overloads.
 
-- `client.get_paginator("list_cloud_front_origin_access_identities")` ->
-  [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
-- `client.get_paginator("list_distributions")` ->
-  [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
-- `client.get_paginator("list_invalidations")` ->
-  [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
-- `client.get_paginator("list_streaming_distributions")` ->
-  [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
+- `client.get_paginator("list_cloud_front_origin_access_identities")` -> [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
+- `client.get_paginator("list_distributions")` -> [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
+- `client.get_paginator("list_invalidations")` -> [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
+- `client.get_paginator("list_streaming_distributions")` -> [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("cloudfront").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("cloudfront").get_waiter` method with overloads.
 
-- `client.get_waiter("distribution_deployed")` ->
-  [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
-- `client.get_waiter("invalidation_completed")` ->
-  [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
-- `client.get_waiter("streaming_distribution_deployed")` ->
-  [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
+- `client.get_waiter("distribution_deployed")` -> [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
+- `client.get_waiter("invalidation_completed")` -> [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
+- `client.get_waiter("streaming_distribution_deployed")` -> [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
+

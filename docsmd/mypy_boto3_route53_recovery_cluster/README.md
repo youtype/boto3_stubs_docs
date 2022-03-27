@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-route53recoverycluster-module"></a>
-
-# Type annotations for boto3 Route53RecoveryCluster module
+#  Route53RecoveryCluster module
 
 > [Index](../README.md) > Route53RecoveryCluster
 
-Auto-generated documentation for
-[Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
-type annotations stubs module
-[mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
+!!! note ""
 
-- [Type annotations for boto3 Route53RecoveryCluster module](#type-annotations-for-boto3-route53recoverycluster-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Route53RecoveryClusterClient](#route53recoveryclusterclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
+    type annotations stubs module [mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Route53RecoveryCluster`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[route53-recovery-cluster]'
 python -m pip install mypy-boto3-route53-recovery-cluster
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,61 +42,41 @@ python -m pip install mypy-boto3-route53-recovery-cluster
 python -m pip uninstall -y mypy-boto3-route53-recovery-cluster
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="route53recoveryclusterclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Route53RecoveryClusterClient
 
-Type annotations for `boto3.client("route53-recovery-cluster")` as
-[Route53RecoveryClusterClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("route53-recovery-cluster")` as [Route53RecoveryClusterClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
+
+def get_client() -> Route53RecoveryClusterClient:
+    return Session().cleint("route53-recovery-cluster")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_routing_control_state](./client.md#get_routing_control_state)
-- [update_routing_control_state](./client.md#update_routing_control_state)
-- [update_routing_control_states](./client.md#update_routing_control_states)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-Route53RecoveryClusterClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConflictException
-- EndpointTemporarilyUnavailableException
-- InternalServerException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53_recovery_cluster.literals import RoutingControlStateType
 
-```python
-from mypy_boto3_route53_recovery_cluster.literals import RoutingControlStateType, ...
+def get_value() -> RoutingControlStateType:
+    return "Off"
 ```
 
 - [RoutingControlStateType](./literals.md#routingcontrolstatetype)
@@ -125,17 +84,20 @@ from mypy_boto3_route53_recovery_cluster.literals import RoutingControlStateType
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateRequestRequestTypeDef
 
-```python
-from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateRequestRequestTypeDef, ...
+def get_value() -> GetRoutingControlStateRequestRequestTypeDef:
+    return {
+        "RoutingControlArn": ...,
+    }
 ```
 
 - [GetRoutingControlStateRequestRequestTypeDef](./type_defs.md#getroutingcontrolstaterequestrequesttypedef)
@@ -144,3 +106,4 @@ from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlState
 - [UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)
 - [UpdateRoutingControlStateRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstaterequestrequesttypedef)
 - [UpdateRoutingControlStatesRequestRequestTypeDef](./type_defs.md#updateroutingcontrolstatesrequestrequesttypedef)
+

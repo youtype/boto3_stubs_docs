@@ -1,28 +1,18 @@
-<a id="paginators-for-boto3-cloudwatchrum-module"></a>
-
-# Paginators for boto3 CloudWatchRUM module
+# Paginators
 
 > [Index](../README.md) > [CloudWatchRUM](./README.md) > Paginators
 
-Auto-generated documentation for
-[CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
-type annotations stubs module
-[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
+!!! note ""
 
-- [Paginators for boto3 CloudWatchRUM module](#paginators-for-boto3-cloudwatchrum-module)
-  - [GetAppMonitorDataPaginator](#getappmonitordatapaginator)
-  - [ListAppMonitorsPaginator](#listappmonitorspaginator)
-
-<a id="getappmonitordatapaginator"></a>
+    Auto-generated documentation for [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
+    type annotations stubs module [mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 ## GetAppMonitorDataPaginator
 
-Type annotations for
-`boto3.client("rum").get_paginator("get_app_monitor_data")`.
+Type annotations and code completion for `#!python boto3.client("rum").get_paginator("get_app_monitor_data")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Paginator.GetAppMonitorData)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
@@ -31,30 +21,45 @@ def get_get_app_monitor_data_paginator() -> GetAppMonitorDataPaginator:
     return Session().client("rum").get_paginator("get_app_monitor_data")
 ```
 
-Boto3 documentation:
-[CloudWatchRUM.Paginator.GetAppMonitorData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Paginator.GetAppMonitorData)
 
-Arguments for `GetAppMonitorDataPaginator.paginate` method:
+### paginate
 
-- `Name`: `str` *(required)*
-- `TimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef) *(required)*
-- `Filters`:
-  `Sequence`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetAppMonitorDataPaginator.paginate` method.
 
-`GetAppMonitorDataPaginator.paginate` returns
-`_PageIterator`\[[GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str,
+    TimeRange: TimeRangeTypeDef,  # (1)
+    Filters: Sequence[QueryFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[GetAppMonitorDataResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="listappmonitorspaginator"></a>
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef = {  # (1)
+    "Name": ...,
+    "TimeRange": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetAppMonitorDataRequestGetAppMonitorDataPaginateTypeDef](./type_defs.md#getappmonitordatarequestgetappmonitordatapaginatetypedef) 
 ## ListAppMonitorsPaginator
 
-Type annotations for `boto3.client("rum").get_paginator("list_app_monitors")`.
+Type annotations and code completion for `#!python boto3.client("rum").get_paginator("list_app_monitors")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Paginator.ListAppMonitors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_rum.paginator import ListAppMonitorsPaginator
@@ -63,13 +68,30 @@ def get_list_app_monitors_paginator() -> ListAppMonitorsPaginator:
     return Session().client("rum").get_paginator("list_app_monitors")
 ```
 
-Boto3 documentation:
-[CloudWatchRUM.Paginator.ListAppMonitors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Paginator.ListAppMonitors)
 
-Arguments for `ListAppMonitorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAppMonitorsPaginator.paginate` method.
 
-`ListAppMonitorsPaginator.paginate` returns
-`_PageIterator`\[[ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAppMonitorsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAppMonitorsRequestListAppMonitorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAppMonitorsRequestListAppMonitorsPaginateTypeDef](./type_defs.md#listappmonitorsrequestlistappmonitorspaginatetypedef) 

@@ -1,1135 +1,1528 @@
-<a id="typed-dictionaries-for-boto3-mediapackage-module"></a>
-
-# Typed dictionaries for boto3 MediaPackage module
+# Typed dictionaries
 
 > [Index](../README.md) > [MediaPackage](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
-type annotations stubs module
-[mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MediaPackage module](#typed-dictionaries-for-boto3-mediapackage-module)
-  - [AuthorizationTypeDef](#authorizationtypedef)
-  - [ChannelTypeDef](#channeltypedef)
-  - [CmafEncryptionTypeDef](#cmafencryptiontypedef)
-  - [CmafPackageCreateOrUpdateParametersTypeDef](#cmafpackagecreateorupdateparameterstypedef)
-  - [CmafPackageTypeDef](#cmafpackagetypedef)
-  - [ConfigureLogsRequestRequestTypeDef](#configurelogsrequestrequesttypedef)
-  - [ConfigureLogsResponseTypeDef](#configurelogsresponsetypedef)
-  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
-  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
-  - [CreateHarvestJobRequestRequestTypeDef](#createharvestjobrequestrequesttypedef)
-  - [CreateHarvestJobResponseTypeDef](#createharvestjobresponsetypedef)
-  - [CreateOriginEndpointRequestRequestTypeDef](#createoriginendpointrequestrequesttypedef)
-  - [CreateOriginEndpointResponseTypeDef](#createoriginendpointresponsetypedef)
-  - [DashEncryptionTypeDef](#dashencryptiontypedef)
-  - [DashPackageTypeDef](#dashpackagetypedef)
-  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
-  - [DeleteOriginEndpointRequestRequestTypeDef](#deleteoriginendpointrequestrequesttypedef)
-  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
-  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
-  - [DescribeHarvestJobRequestRequestTypeDef](#describeharvestjobrequestrequesttypedef)
-  - [DescribeHarvestJobResponseTypeDef](#describeharvestjobresponsetypedef)
-  - [DescribeOriginEndpointRequestRequestTypeDef](#describeoriginendpointrequestrequesttypedef)
-  - [DescribeOriginEndpointResponseTypeDef](#describeoriginendpointresponsetypedef)
-  - [EgressAccessLogsTypeDef](#egressaccesslogstypedef)
-  - [EncryptionContractConfigurationTypeDef](#encryptioncontractconfigurationtypedef)
-  - [HarvestJobTypeDef](#harvestjobtypedef)
-  - [HlsEncryptionTypeDef](#hlsencryptiontypedef)
-  - [HlsIngestTypeDef](#hlsingesttypedef)
-  - [HlsManifestCreateOrUpdateParametersTypeDef](#hlsmanifestcreateorupdateparameterstypedef)
-  - [HlsManifestTypeDef](#hlsmanifesttypedef)
-  - [HlsPackageTypeDef](#hlspackagetypedef)
-  - [IngestEndpointTypeDef](#ingestendpointtypedef)
-  - [IngressAccessLogsTypeDef](#ingressaccesslogstypedef)
-  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
-  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
-  - [ListHarvestJobsRequestRequestTypeDef](#listharvestjobsrequestrequesttypedef)
-  - [ListHarvestJobsResponseTypeDef](#listharvestjobsresponsetypedef)
-  - [ListOriginEndpointsRequestRequestTypeDef](#listoriginendpointsrequestrequesttypedef)
-  - [ListOriginEndpointsResponseTypeDef](#listoriginendpointsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MssEncryptionTypeDef](#mssencryptiontypedef)
-  - [MssPackageTypeDef](#msspackagetypedef)
-  - [OriginEndpointTypeDef](#originendpointtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RotateChannelCredentialsRequestRequestTypeDef](#rotatechannelcredentialsrequestrequesttypedef)
-  - [RotateChannelCredentialsResponseTypeDef](#rotatechannelcredentialsresponsetypedef)
-  - [RotateIngestEndpointCredentialsRequestRequestTypeDef](#rotateingestendpointcredentialsrequestrequesttypedef)
-  - [RotateIngestEndpointCredentialsResponseTypeDef](#rotateingestendpointcredentialsresponsetypedef)
-  - [S3DestinationTypeDef](#s3destinationtypedef)
-  - [SpekeKeyProviderTypeDef](#spekekeyprovidertypedef)
-  - [StreamSelectionTypeDef](#streamselectiontypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
-  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
-  - [UpdateOriginEndpointRequestRequestTypeDef](#updateoriginendpointrequestrequesttypedef)
-  - [UpdateOriginEndpointResponseTypeDef](#updateoriginendpointresponsetypedef)
-
-<a id="authorizationtypedef"></a>
+    Auto-generated documentation for [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
+    type annotations stubs module [mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 ## AuthorizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import AuthorizationTypeDef
+
+def get_value() -> AuthorizationTypeDef:
+    return {
+        "CdnIdentifierSecret": ...,
+        "SecretsRoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CdnIdentifierSecret`: `str`
-- `SecretsRoleArn`: `str`
-
-<a id="channeltypedef"></a>
+```python title="Definition"
+class AuthorizationTypeDef(TypedDict):
+    CdnIdentifierSecret: str,
+    SecretsRoleArn: str,
+```
 
 ## ChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Description: NotRequired[str],
+    EgressAccessLogs: NotRequired[EgressAccessLogsTypeDef],  # (1)
+    HlsIngest: NotRequired[HlsIngestTypeDef],  # (2)
+    Id: NotRequired[str],
+    IngressAccessLogs: NotRequired[IngressAccessLogsTypeDef],  # (3)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="cmafencryptiontypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
 ## CmafEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CmafEncryptionTypeDef
+
+def get_value() -> CmafEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CmafEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+    ConstantInitializationVector: NotRequired[str],
+    KeyRotationIntervalSeconds: NotRequired[int],
+```
 
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-Optional fields:
-
-- `ConstantInitializationVector`: `str`
-- `KeyRotationIntervalSeconds`: `int`
-
-<a id="cmafpackagecreateorupdateparameterstypedef"></a>
-
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## CmafPackageCreateOrUpdateParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CmafPackageCreateOrUpdateParametersTypeDef
+
+def get_value() -> CmafPackageCreateOrUpdateParametersTypeDef:
+    return {
+        "Encryption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmafPackageCreateOrUpdateParametersTypeDef(TypedDict):
+    Encryption: NotRequired[CmafEncryptionTypeDef],  # (1)
+    HlsManifests: NotRequired[Sequence[HlsManifestCreateOrUpdateParametersTypeDef]],  # (2)
+    SegmentDurationSeconds: NotRequired[int],
+    SegmentPrefix: NotRequired[str],
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (3)
+```
 
-- `Encryption`: [CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef)
-- `HlsManifests`:
-  `Sequence`\[[HlsManifestCreateOrUpdateParametersTypeDef](./type_defs.md#hlsmanifestcreateorupdateparameterstypedef)\]
-- `SegmentDurationSeconds`: `int`
-- `SegmentPrefix`: `str`
-- `StreamSelection`:
-  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
-
-<a id="cmafpackagetypedef"></a>
-
+1. See [:material-code-braces: CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef) 
+2. See [:material-code-braces: HlsManifestCreateOrUpdateParametersTypeDef](./type_defs.md#hlsmanifestcreateorupdateparameterstypedef) 
+3. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
 ## CmafPackageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CmafPackageTypeDef
+
+def get_value() -> CmafPackageTypeDef:
+    return {
+        "Encryption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CmafPackageTypeDef(TypedDict):
+    Encryption: NotRequired[CmafEncryptionTypeDef],  # (1)
+    HlsManifests: NotRequired[List[HlsManifestTypeDef]],  # (2)
+    SegmentDurationSeconds: NotRequired[int],
+    SegmentPrefix: NotRequired[str],
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (3)
+```
 
-- `Encryption`: [CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef)
-- `HlsManifests`:
-  `List`\[[HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef)\]
-- `SegmentDurationSeconds`: `int`
-- `SegmentPrefix`: `str`
-- `StreamSelection`:
-  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
-
-<a id="configurelogsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CmafEncryptionTypeDef](./type_defs.md#cmafencryptiontypedef) 
+2. See [:material-code-braces: HlsManifestTypeDef](./type_defs.md#hlsmanifesttypedef) 
+3. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
 ## ConfigureLogsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ConfigureLogsRequestRequestTypeDef
+
+def get_value() -> ConfigureLogsRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigureLogsRequestRequestTypeDef(TypedDict):
+    Id: str,
+    EgressAccessLogs: NotRequired[EgressAccessLogsTypeDef],  # (1)
+    IngressAccessLogs: NotRequired[IngressAccessLogsTypeDef],  # (2)
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-
-<a id="configurelogsresponsetypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
 ## ConfigureLogsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ConfigureLogsResponseTypeDef
+
+def get_value() -> ConfigureLogsResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigureLogsResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createchannelresponsetypedef"></a>
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createharvestjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHarvestJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateHarvestJobRequestRequestTypeDef
+
+def get_value() -> CreateHarvestJobRequestRequestTypeDef:
+    return {
+        "EndTime": ...,
+        "Id": ...,
+        "OriginEndpointId": ...,
+        "S3Destination": ...,
+        "StartTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHarvestJobRequestRequestTypeDef(TypedDict):
+    EndTime: str,
+    Id: str,
+    OriginEndpointId: str,
+    S3Destination: S3DestinationTypeDef,  # (1)
+    StartTime: str,
+```
 
-- `EndTime`: `str`
-- `Id`: `str`
-- `OriginEndpointId`: `str`
-- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-- `StartTime`: `str`
-
-<a id="createharvestjobresponsetypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
 ## CreateHarvestJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateHarvestJobResponseTypeDef
+
+def get_value() -> CreateHarvestJobResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelId": ...,
+        "CreatedAt": ...,
+        "EndTime": ...,
+        "Id": ...,
+        "OriginEndpointId": ...,
+        "S3Destination": ...,
+        "StartTime": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHarvestJobResponseTypeDef(TypedDict):
+    Arn: str,
+    ChannelId: str,
+    CreatedAt: str,
+    EndTime: str,
+    Id: str,
+    OriginEndpointId: str,
+    S3Destination: S3DestinationTypeDef,  # (1)
+    StartTime: str,
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `ChannelId`: `str`
-- `CreatedAt`: `str`
-- `EndTime`: `str`
-- `Id`: `str`
-- `OriginEndpointId`: `str`
-- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-- `StartTime`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createoriginendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateOriginEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointRequestRequestTypeDef
+
+def get_value() -> CreateOriginEndpointRequestRequestTypeDef:
+    return {
+        "ChannelId": ...,
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOriginEndpointRequestRequestTypeDef(TypedDict):
+    ChannelId: str,
+    Id: str,
+    Authorization: NotRequired[AuthorizationTypeDef],  # (1)
+    CmafPackage: NotRequired[CmafPackageCreateOrUpdateParametersTypeDef],  # (2)
+    DashPackage: NotRequired[DashPackageTypeDef],  # (3)
+    Description: NotRequired[str],
+    HlsPackage: NotRequired[HlsPackageTypeDef],  # (4)
+    ManifestName: NotRequired[str],
+    MssPackage: NotRequired[MssPackageTypeDef],  # (5)
+    Origination: NotRequired[OriginationType],  # (6)
+    StartoverWindowSeconds: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+    TimeDelaySeconds: NotRequired[int],
+    Whitelist: NotRequired[Sequence[str]],
+```
 
-- `ChannelId`: `str`
-- `Id`: `str`
-
-Optional fields:
-
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `CmafPackage`:
-  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `TimeDelaySeconds`: `int`
-- `Whitelist`: `Sequence`\[`str`\]
-
-<a id="createoriginendpointresponsetypedef"></a>
-
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
 ## CreateOriginEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import CreateOriginEndpointResponseTypeDef
+
+def get_value() -> CreateOriginEndpointResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Authorization": ...,
+        "ChannelId": ...,
+        "CmafPackage": ...,
+        "DashPackage": ...,
+        "Description": ...,
+        "HlsPackage": ...,
+        "Id": ...,
+        "ManifestName": ...,
+        "MssPackage": ...,
+        "Origination": ...,
+        "StartoverWindowSeconds": ...,
+        "Tags": ...,
+        "TimeDelaySeconds": ...,
+        "Url": ...,
+        "Whitelist": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateOriginEndpointResponseTypeDef(TypedDict):
+    Arn: str,
+    Authorization: AuthorizationTypeDef,  # (1)
+    ChannelId: str,
+    CmafPackage: CmafPackageTypeDef,  # (2)
+    DashPackage: DashPackageTypeDef,  # (3)
+    Description: str,
+    HlsPackage: HlsPackageTypeDef,  # (4)
+    Id: str,
+    ManifestName: str,
+    MssPackage: MssPackageTypeDef,  # (5)
+    Origination: OriginationType,  # (6)
+    StartoverWindowSeconds: int,
+    Tags: Dict[str, str],
+    TimeDelaySeconds: int,
+    Url: str,
+    Whitelist: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `Arn`: `str`
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `ChannelId`: `str`
-- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `Id`: `str`
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TimeDelaySeconds`: `int`
-- `Url`: `str`
-- `Whitelist`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dashencryptiontypedef"></a>
-
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DashEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DashEncryptionTypeDef
+
+def get_value() -> DashEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DashEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+    KeyRotationIntervalSeconds: NotRequired[int],
+```
 
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-Optional fields:
-
-- `KeyRotationIntervalSeconds`: `int`
-
-<a id="dashpackagetypedef"></a>
-
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## DashPackageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DashPackageTypeDef
+
+def get_value() -> DashPackageTypeDef:
+    return {
+        "AdTriggers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashPackageTypeDef(TypedDict):
+    AdTriggers: NotRequired[Sequence[AdTriggersElementType]],  # (1)
+    AdsOnDeliveryRestrictions: NotRequired[AdsOnDeliveryRestrictionsType],  # (2)
+    Encryption: NotRequired[DashEncryptionTypeDef],  # (3)
+    ManifestLayout: NotRequired[ManifestLayoutType],  # (4)
+    ManifestWindowSeconds: NotRequired[int],
+    MinBufferTimeSeconds: NotRequired[int],
+    MinUpdatePeriodSeconds: NotRequired[int],
+    PeriodTriggers: NotRequired[Sequence[PeriodTriggersElementType]],  # (5)
+    Profile: NotRequired[ProfileType],  # (6)
+    SegmentDurationSeconds: NotRequired[int],
+    SegmentTemplateFormat: NotRequired[SegmentTemplateFormatType],  # (7)
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (8)
+    SuggestedPresentationDelaySeconds: NotRequired[int],
+    UtcTiming: NotRequired[UtcTimingType],  # (9)
+    UtcTimingUri: NotRequired[str],
+```
 
-- `AdTriggers`:
-  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
-- `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
-- `Encryption`: [DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef)
-- `ManifestLayout`: [ManifestLayoutType](./literals.md#manifestlayouttype)
-- `ManifestWindowSeconds`: `int`
-- `MinBufferTimeSeconds`: `int`
-- `MinUpdatePeriodSeconds`: `int`
-- `PeriodTriggers`: `Sequence`\[`Literal['ADS']` (see
-  [PeriodTriggersElementType](./literals.md#periodtriggerselementtype))\]
-- `Profile`: [ProfileType](./literals.md#profiletype)
-- `SegmentDurationSeconds`: `int`
-- `SegmentTemplateFormat`:
-  [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
-- `StreamSelection`:
-  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
-- `SuggestedPresentationDelaySeconds`: `int`
-- `UtcTiming`: [UtcTimingType](./literals.md#utctimingtype)
-- `UtcTimingUri`: `str`
-
-<a id="deletechannelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AdTriggersElementType](./literals.md#adtriggerselementtype) 
+2. See [:material-code-brackets: AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype) 
+3. See [:material-code-braces: DashEncryptionTypeDef](./type_defs.md#dashencryptiontypedef) 
+4. See [:material-code-brackets: ManifestLayoutType](./literals.md#manifestlayouttype) 
+5. See [:material-code-brackets: PeriodTriggersElementType](./literals.md#periodtriggerselementtype) 
+6. See [:material-code-brackets: ProfileType](./literals.md#profiletype) 
+7. See [:material-code-brackets: SegmentTemplateFormatType](./literals.md#segmenttemplateformattype) 
+8. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
+9. See [:material-code-brackets: UtcTimingType](./literals.md#utctimingtype) 
 ## DeleteChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DeleteChannelRequestRequestTypeDef
+
+def get_value() -> DeleteChannelRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="deleteoriginendpointrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DeleteOriginEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DeleteOriginEndpointRequestRequestTypeDef
+
+def get_value() -> DeleteOriginEndpointRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="describechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOriginEndpointRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DescribeChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeChannelRequestRequestTypeDef
+
+def get_value() -> DescribeChannelRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="describechannelresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DescribeChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeChannelResponseTypeDef
+
+def get_value() -> DescribeChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeharvestjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHarvestJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobRequestRequestTypeDef
+
+def get_value() -> DescribeHarvestJobRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="describeharvestjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeHarvestJobRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DescribeHarvestJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeHarvestJobResponseTypeDef
+
+def get_value() -> DescribeHarvestJobResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelId": ...,
+        "CreatedAt": ...,
+        "EndTime": ...,
+        "Id": ...,
+        "OriginEndpointId": ...,
+        "S3Destination": ...,
+        "StartTime": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHarvestJobResponseTypeDef(TypedDict):
+    Arn: str,
+    ChannelId: str,
+    CreatedAt: str,
+    EndTime: str,
+    Id: str,
+    OriginEndpointId: str,
+    S3Destination: S3DestinationTypeDef,  # (1)
+    StartTime: str,
+    Status: StatusType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `ChannelId`: `str`
-- `CreatedAt`: `str`
-- `EndTime`: `str`
-- `Id`: `str`
-- `OriginEndpointId`: `str`
-- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-- `StartTime`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeoriginendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeOriginEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointRequestRequestTypeDef
+
+def get_value() -> DescribeOriginEndpointRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="describeoriginendpointresponsetypedef"></a>
+```python title="Definition"
+class DescribeOriginEndpointRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## DescribeOriginEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import DescribeOriginEndpointResponseTypeDef
+
+def get_value() -> DescribeOriginEndpointResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Authorization": ...,
+        "ChannelId": ...,
+        "CmafPackage": ...,
+        "DashPackage": ...,
+        "Description": ...,
+        "HlsPackage": ...,
+        "Id": ...,
+        "ManifestName": ...,
+        "MssPackage": ...,
+        "Origination": ...,
+        "StartoverWindowSeconds": ...,
+        "Tags": ...,
+        "TimeDelaySeconds": ...,
+        "Url": ...,
+        "Whitelist": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOriginEndpointResponseTypeDef(TypedDict):
+    Arn: str,
+    Authorization: AuthorizationTypeDef,  # (1)
+    ChannelId: str,
+    CmafPackage: CmafPackageTypeDef,  # (2)
+    DashPackage: DashPackageTypeDef,  # (3)
+    Description: str,
+    HlsPackage: HlsPackageTypeDef,  # (4)
+    Id: str,
+    ManifestName: str,
+    MssPackage: MssPackageTypeDef,  # (5)
+    Origination: OriginationType,  # (6)
+    StartoverWindowSeconds: int,
+    Tags: Dict[str, str],
+    TimeDelaySeconds: int,
+    Url: str,
+    Whitelist: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `Arn`: `str`
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `ChannelId`: `str`
-- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `Id`: `str`
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TimeDelaySeconds`: `int`
-- `Url`: `str`
-- `Whitelist`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="egressaccesslogstypedef"></a>
-
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EgressAccessLogsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import EgressAccessLogsTypeDef
+
+def get_value() -> EgressAccessLogsTypeDef:
+    return {
+        "LogGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `LogGroupName`: `str`
-
-<a id="encryptioncontractconfigurationtypedef"></a>
+```python title="Definition"
+class EgressAccessLogsTypeDef(TypedDict):
+    LogGroupName: NotRequired[str],
+```
 
 ## EncryptionContractConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import EncryptionContractConfigurationTypeDef
+
+def get_value() -> EncryptionContractConfigurationTypeDef:
+    return {
+        "PresetSpeke20Audio": ...,
+        "PresetSpeke20Video": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionContractConfigurationTypeDef(TypedDict):
+    PresetSpeke20Audio: PresetSpeke20AudioType,  # (1)
+    PresetSpeke20Video: PresetSpeke20VideoType,  # (2)
+```
 
-- `PresetSpeke20Audio`: `Literal['PRESET-AUDIO-1']` (see
-  [PresetSpeke20AudioType](./literals.md#presetspeke20audiotype))
-- `PresetSpeke20Video`: `Literal['PRESET-VIDEO-1']` (see
-  [PresetSpeke20VideoType](./literals.md#presetspeke20videotype))
-
-<a id="harvestjobtypedef"></a>
-
+1. See [:material-code-brackets: PresetSpeke20AudioType](./literals.md#presetspeke20audiotype) 
+2. See [:material-code-brackets: PresetSpeke20VideoType](./literals.md#presetspeke20videotype) 
 ## HarvestJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HarvestJobTypeDef
+
+def get_value() -> HarvestJobTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HarvestJobTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    ChannelId: NotRequired[str],
+    CreatedAt: NotRequired[str],
+    EndTime: NotRequired[str],
+    Id: NotRequired[str],
+    OriginEndpointId: NotRequired[str],
+    S3Destination: NotRequired[S3DestinationTypeDef],  # (1)
+    StartTime: NotRequired[str],
+    Status: NotRequired[StatusType],  # (2)
+```
 
-- `Arn`: `str`
-- `ChannelId`: `str`
-- `CreatedAt`: `str`
-- `EndTime`: `str`
-- `Id`: `str`
-- `OriginEndpointId`: `str`
-- `S3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
-- `StartTime`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-
-<a id="hlsencryptiontypedef"></a>
-
+1. See [:material-code-braces: S3DestinationTypeDef](./type_defs.md#s3destinationtypedef) 
+2. See [:material-code-brackets: StatusType](./literals.md#statustype) 
 ## HlsEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HlsEncryptionTypeDef
+
+def get_value() -> HlsEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HlsEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (2)
+    ConstantInitializationVector: NotRequired[str],
+    EncryptionMethod: NotRequired[EncryptionMethodType],  # (1)
+    KeyRotationIntervalSeconds: NotRequired[int],
+    RepeatExtXKey: NotRequired[bool],
+```
 
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-Optional fields:
-
-- `ConstantInitializationVector`: `str`
-- `EncryptionMethod`:
-  [EncryptionMethodType](./literals.md#encryptionmethodtype)
-- `KeyRotationIntervalSeconds`: `int`
-- `RepeatExtXKey`: `bool`
-
-<a id="hlsingesttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionMethodType](./literals.md#encryptionmethodtype) 
+2. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## HlsIngestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HlsIngestTypeDef
+
+def get_value() -> HlsIngestTypeDef:
+    return {
+        "IngestEndpoints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsIngestTypeDef(TypedDict):
+    IngestEndpoints: NotRequired[List[IngestEndpointTypeDef]],  # (1)
+```
 
-- `IngestEndpoints`:
-  `List`\[[IngestEndpointTypeDef](./type_defs.md#ingestendpointtypedef)\]
-
-<a id="hlsmanifestcreateorupdateparameterstypedef"></a>
-
+1. See [:material-code-braces: IngestEndpointTypeDef](./type_defs.md#ingestendpointtypedef) 
 ## HlsManifestCreateOrUpdateParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HlsManifestCreateOrUpdateParametersTypeDef
+
+def get_value() -> HlsManifestCreateOrUpdateParametersTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HlsManifestCreateOrUpdateParametersTypeDef(TypedDict):
+    Id: str,
+    AdMarkers: NotRequired[AdMarkersType],  # (1)
+    AdTriggers: NotRequired[Sequence[AdTriggersElementType]],  # (2)
+    AdsOnDeliveryRestrictions: NotRequired[AdsOnDeliveryRestrictionsType],  # (3)
+    IncludeIframeOnlyStream: NotRequired[bool],
+    ManifestName: NotRequired[str],
+    PlaylistType: NotRequired[PlaylistTypeType],  # (4)
+    PlaylistWindowSeconds: NotRequired[int],
+    ProgramDateTimeIntervalSeconds: NotRequired[int],
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
-- `AdTriggers`:
-  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
-- `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
-- `IncludeIframeOnlyStream`: `bool`
-- `ManifestName`: `str`
-- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
-- `PlaylistWindowSeconds`: `int`
-- `ProgramDateTimeIntervalSeconds`: `int`
-
-<a id="hlsmanifesttypedef"></a>
-
+1. See [:material-code-brackets: AdMarkersType](./literals.md#admarkerstype) 
+2. See [:material-code-brackets: AdTriggersElementType](./literals.md#adtriggerselementtype) 
+3. See [:material-code-brackets: AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype) 
+4. See [:material-code-brackets: PlaylistTypeType](./literals.md#playlisttypetype) 
 ## HlsManifestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HlsManifestTypeDef
+
+def get_value() -> HlsManifestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HlsManifestTypeDef(TypedDict):
+    Id: str,
+    AdMarkers: NotRequired[AdMarkersType],  # (1)
+    IncludeIframeOnlyStream: NotRequired[bool],
+    ManifestName: NotRequired[str],
+    PlaylistType: NotRequired[PlaylistTypeType],  # (2)
+    PlaylistWindowSeconds: NotRequired[int],
+    ProgramDateTimeIntervalSeconds: NotRequired[int],
+    Url: NotRequired[str],
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
-- `IncludeIframeOnlyStream`: `bool`
-- `ManifestName`: `str`
-- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
-- `PlaylistWindowSeconds`: `int`
-- `ProgramDateTimeIntervalSeconds`: `int`
-- `Url`: `str`
-
-<a id="hlspackagetypedef"></a>
-
+1. See [:material-code-brackets: AdMarkersType](./literals.md#admarkerstype) 
+2. See [:material-code-brackets: PlaylistTypeType](./literals.md#playlisttypetype) 
 ## HlsPackageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import HlsPackageTypeDef
+
+def get_value() -> HlsPackageTypeDef:
+    return {
+        "AdMarkers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HlsPackageTypeDef(TypedDict):
+    AdMarkers: NotRequired[AdMarkersType],  # (1)
+    AdTriggers: NotRequired[Sequence[AdTriggersElementType]],  # (2)
+    AdsOnDeliveryRestrictions: NotRequired[AdsOnDeliveryRestrictionsType],  # (3)
+    Encryption: NotRequired[HlsEncryptionTypeDef],  # (4)
+    IncludeDvbSubtitles: NotRequired[bool],
+    IncludeIframeOnlyStream: NotRequired[bool],
+    PlaylistType: NotRequired[PlaylistTypeType],  # (5)
+    PlaylistWindowSeconds: NotRequired[int],
+    ProgramDateTimeIntervalSeconds: NotRequired[int],
+    SegmentDurationSeconds: NotRequired[int],
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (6)
+    UseAudioRenditionGroup: NotRequired[bool],
+```
 
-- `AdMarkers`: [AdMarkersType](./literals.md#admarkerstype)
-- `AdTriggers`:
-  `Sequence`\[[AdTriggersElementType](./literals.md#adtriggerselementtype)\]
-- `AdsOnDeliveryRestrictions`:
-  [AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype)
-- `Encryption`: [HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef)
-- `IncludeDvbSubtitles`: `bool`
-- `IncludeIframeOnlyStream`: `bool`
-- `PlaylistType`: [PlaylistTypeType](./literals.md#playlisttypetype)
-- `PlaylistWindowSeconds`: `int`
-- `ProgramDateTimeIntervalSeconds`: `int`
-- `SegmentDurationSeconds`: `int`
-- `StreamSelection`:
-  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
-- `UseAudioRenditionGroup`: `bool`
-
-<a id="ingestendpointtypedef"></a>
-
+1. See [:material-code-brackets: AdMarkersType](./literals.md#admarkerstype) 
+2. See [:material-code-brackets: AdTriggersElementType](./literals.md#adtriggerselementtype) 
+3. See [:material-code-brackets: AdsOnDeliveryRestrictionsType](./literals.md#adsondeliveryrestrictionstype) 
+4. See [:material-code-braces: HlsEncryptionTypeDef](./type_defs.md#hlsencryptiontypedef) 
+5. See [:material-code-brackets: PlaylistTypeType](./literals.md#playlisttypetype) 
+6. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
 ## IngestEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import IngestEndpointTypeDef
+
+def get_value() -> IngestEndpointTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Password`: `str`
-- `Url`: `str`
-- `Username`: `str`
-
-<a id="ingressaccesslogstypedef"></a>
+```python title="Definition"
+class IngestEndpointTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Password: NotRequired[str],
+    Url: NotRequired[str],
+    Username: NotRequired[str],
+```
 
 ## IngressAccessLogsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import IngressAccessLogsTypeDef
+
+def get_value() -> IngressAccessLogsTypeDef:
+    return {
+        "LogGroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IngressAccessLogsTypeDef(TypedDict):
+    LogGroupName: NotRequired[str],
+```
 
-- `LogGroupName`: `str`
+## ListChannelsRequestListChannelsPaginateTypeDef
 
-<a id="listchannelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediapackage.type_defs import ListChannelsRequestListChannelsPaginateTypeDef
 
+def get_value() -> ListChannelsRequestListChannelsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsRequestListChannelsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelsresponsetypedef"></a>
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListChannelsResponseTypeDef
+
+def get_value() -> ListChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsResponseTypeDef(TypedDict):
+    Channels: List[ChannelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHarvestJobsRequestListHarvestJobsPaginateTypeDef
 
-<a id="listharvestjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediapackage.type_defs import ListHarvestJobsRequestListHarvestJobsPaginateTypeDef
 
+def get_value() -> ListHarvestJobsRequestListHarvestJobsPaginateTypeDef:
+    return {
+        "IncludeChannelId": ...,
+    }
+```
+
+```python title="Definition"
+class ListHarvestJobsRequestListHarvestJobsPaginateTypeDef(TypedDict):
+    IncludeChannelId: NotRequired[str],
+    IncludeStatus: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHarvestJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListHarvestJobsRequestRequestTypeDef
+
+def get_value() -> ListHarvestJobsRequestRequestTypeDef:
+    return {
+        "IncludeChannelId": ...,
+    }
 ```
 
-Optional fields:
-
-- `IncludeChannelId`: `str`
-- `IncludeStatus`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listharvestjobsresponsetypedef"></a>
+```python title="Definition"
+class ListHarvestJobsRequestRequestTypeDef(TypedDict):
+    IncludeChannelId: NotRequired[str],
+    IncludeStatus: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListHarvestJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListHarvestJobsResponseTypeDef
+
+def get_value() -> ListHarvestJobsResponseTypeDef:
+    return {
+        "HarvestJobs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHarvestJobsResponseTypeDef(TypedDict):
+    HarvestJobs: List[HarvestJobTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HarvestJobs`:
-  `List`\[[HarvestJobTypeDef](./type_defs.md#harvestjobtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HarvestJobTypeDef](./type_defs.md#harvestjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOriginEndpointsRequestListOriginEndpointsPaginateTypeDef
 
-<a id="listoriginendpointsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsRequestListOriginEndpointsPaginateTypeDef
 
+def get_value() -> ListOriginEndpointsRequestListOriginEndpointsPaginateTypeDef:
+    return {
+        "ChannelId": ...,
+    }
+```
+
+```python title="Definition"
+class ListOriginEndpointsRequestListOriginEndpointsPaginateTypeDef(TypedDict):
+    ChannelId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOriginEndpointsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsRequestRequestTypeDef
+
+def get_value() -> ListOriginEndpointsRequestRequestTypeDef:
+    return {
+        "ChannelId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ChannelId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listoriginendpointsresponsetypedef"></a>
+```python title="Definition"
+class ListOriginEndpointsRequestRequestTypeDef(TypedDict):
+    ChannelId: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListOriginEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListOriginEndpointsResponseTypeDef
+
+def get_value() -> ListOriginEndpointsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "OriginEndpoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOriginEndpointsResponseTypeDef(TypedDict):
+    NextToken: str,
+    OriginEndpoints: List[OriginEndpointTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `OriginEndpoints`:
-  `List`\[[OriginEndpointTypeDef](./type_defs.md#originendpointtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OriginEndpointTypeDef](./type_defs.md#originendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mssencryptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MssEncryptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import MssEncryptionTypeDef
+
+def get_value() -> MssEncryptionTypeDef:
+    return {
+        "SpekeKeyProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MssEncryptionTypeDef(TypedDict):
+    SpekeKeyProvider: SpekeKeyProviderTypeDef,  # (1)
+```
 
-- `SpekeKeyProvider`:
-  [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
-
-<a id="msspackagetypedef"></a>
-
+1. See [:material-code-braces: SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef) 
 ## MssPackageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import MssPackageTypeDef
+
+def get_value() -> MssPackageTypeDef:
+    return {
+        "Encryption": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MssPackageTypeDef(TypedDict):
+    Encryption: NotRequired[MssEncryptionTypeDef],  # (1)
+    ManifestWindowSeconds: NotRequired[int],
+    SegmentDurationSeconds: NotRequired[int],
+    StreamSelection: NotRequired[StreamSelectionTypeDef],  # (2)
+```
 
-- `Encryption`: [MssEncryptionTypeDef](./type_defs.md#mssencryptiontypedef)
-- `ManifestWindowSeconds`: `int`
-- `SegmentDurationSeconds`: `int`
-- `StreamSelection`:
-  [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
-
-<a id="originendpointtypedef"></a>
-
+1. See [:material-code-braces: MssEncryptionTypeDef](./type_defs.md#mssencryptiontypedef) 
+2. See [:material-code-braces: StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef) 
 ## OriginEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import OriginEndpointTypeDef
+
+def get_value() -> OriginEndpointTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OriginEndpointTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Authorization: NotRequired[AuthorizationTypeDef],  # (1)
+    ChannelId: NotRequired[str],
+    CmafPackage: NotRequired[CmafPackageTypeDef],  # (2)
+    DashPackage: NotRequired[DashPackageTypeDef],  # (3)
+    Description: NotRequired[str],
+    HlsPackage: NotRequired[HlsPackageTypeDef],  # (4)
+    Id: NotRequired[str],
+    ManifestName: NotRequired[str],
+    MssPackage: NotRequired[MssPackageTypeDef],  # (5)
+    Origination: NotRequired[OriginationType],  # (6)
+    StartoverWindowSeconds: NotRequired[int],
+    Tags: NotRequired[Dict[str, str]],
+    TimeDelaySeconds: NotRequired[int],
+    Url: NotRequired[str],
+    Whitelist: NotRequired[List[str]],
+```
 
-- `Arn`: `str`
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `ChannelId`: `str`
-- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `Id`: `str`
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TimeDelaySeconds`: `int`
-- `Url`: `str`
-- `Whitelist`: `List`\[`str`\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="rotatechannelcredentialsrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RotateChannelCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsRequestRequestTypeDef
+
+def get_value() -> RotateChannelCredentialsRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-<a id="rotatechannelcredentialsresponsetypedef"></a>
+```python title="Definition"
+class RotateChannelCredentialsRequestRequestTypeDef(TypedDict):
+    Id: str,
+```
 
 ## RotateChannelCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import RotateChannelCredentialsResponseTypeDef
+
+def get_value() -> RotateChannelCredentialsResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RotateChannelCredentialsResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rotateingestendpointcredentialsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RotateIngestEndpointCredentialsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsRequestRequestTypeDef
+
+def get_value() -> RotateIngestEndpointCredentialsRequestRequestTypeDef:
+    return {
+        "Id": ...,
+        "IngestEndpointId": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-- `IngestEndpointId`: `str`
-
-<a id="rotateingestendpointcredentialsresponsetypedef"></a>
+```python title="Definition"
+class RotateIngestEndpointCredentialsRequestRequestTypeDef(TypedDict):
+    Id: str,
+    IngestEndpointId: str,
+```
 
 ## RotateIngestEndpointCredentialsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import RotateIngestEndpointCredentialsResponseTypeDef
+
+def get_value() -> RotateIngestEndpointCredentialsResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RotateIngestEndpointCredentialsResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="s3destinationtypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## S3DestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import S3DestinationTypeDef
+
+def get_value() -> S3DestinationTypeDef:
+    return {
+        "BucketName": ...,
+        "ManifestKey": ...,
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BucketName`: `str`
-- `ManifestKey`: `str`
-- `RoleArn`: `str`
-
-<a id="spekekeyprovidertypedef"></a>
+```python title="Definition"
+class S3DestinationTypeDef(TypedDict):
+    BucketName: str,
+    ManifestKey: str,
+    RoleArn: str,
+```
 
 ## SpekeKeyProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import SpekeKeyProviderTypeDef
+
+def get_value() -> SpekeKeyProviderTypeDef:
+    return {
+        "ResourceId": ...,
+        "RoleArn": ...,
+        "SystemIds": ...,
+        "Url": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SpekeKeyProviderTypeDef(TypedDict):
+    ResourceId: str,
+    RoleArn: str,
+    SystemIds: Sequence[str],
+    Url: str,
+    CertificateArn: NotRequired[str],
+    EncryptionContractConfiguration: NotRequired[EncryptionContractConfigurationTypeDef],  # (1)
+```
 
-- `ResourceId`: `str`
-- `RoleArn`: `str`
-- `SystemIds`: `Sequence`\[`str`\]
-- `Url`: `str`
-
-Optional fields:
-
-- `CertificateArn`: `str`
-- `EncryptionContractConfiguration`:
-  [EncryptionContractConfigurationTypeDef](./type_defs.md#encryptioncontractconfigurationtypedef)
-
-<a id="streamselectiontypedef"></a>
-
+1. See [:material-code-braces: EncryptionContractConfigurationTypeDef](./type_defs.md#encryptioncontractconfigurationtypedef) 
 ## StreamSelectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import StreamSelectionTypeDef
+
+def get_value() -> StreamSelectionTypeDef:
+    return {
+        "MaxVideoBitsPerSecond": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StreamSelectionTypeDef(TypedDict):
+    MaxVideoBitsPerSecond: NotRequired[int],
+    MinVideoBitsPerSecond: NotRequired[int],
+    StreamOrder: NotRequired[StreamOrderType],  # (1)
+```
 
-- `MaxVideoBitsPerSecond`: `int`
-- `MinVideoBitsPerSecond`: `int`
-- `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: StreamOrderType](./literals.md#streamordertype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updatechannelresponsetypedef"></a>
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import UpdateChannelResponseTypeDef
+
+def get_value() -> UpdateChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Description": ...,
+        "EgressAccessLogs": ...,
+        "HlsIngest": ...,
+        "Id": ...,
+        "IngressAccessLogs": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    Description: str,
+    EgressAccessLogs: EgressAccessLogsTypeDef,  # (1)
+    HlsIngest: HlsIngestTypeDef,  # (2)
+    Id: str,
+    IngressAccessLogs: IngressAccessLogsTypeDef,  # (3)
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `Description`: `str`
-- `EgressAccessLogs`:
-  [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
-- `HlsIngest`: [HlsIngestTypeDef](./type_defs.md#hlsingesttypedef)
-- `Id`: `str`
-- `IngressAccessLogs`:
-  [IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateoriginendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef) 
+2. See [:material-code-braces: HlsIngestTypeDef](./type_defs.md#hlsingesttypedef) 
+3. See [:material-code-braces: IngressAccessLogsTypeDef](./type_defs.md#ingressaccesslogstypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateOriginEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointRequestRequestTypeDef
+
+def get_value() -> UpdateOriginEndpointRequestRequestTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOriginEndpointRequestRequestTypeDef(TypedDict):
+    Id: str,
+    Authorization: NotRequired[AuthorizationTypeDef],  # (1)
+    CmafPackage: NotRequired[CmafPackageCreateOrUpdateParametersTypeDef],  # (2)
+    DashPackage: NotRequired[DashPackageTypeDef],  # (3)
+    Description: NotRequired[str],
+    HlsPackage: NotRequired[HlsPackageTypeDef],  # (4)
+    ManifestName: NotRequired[str],
+    MssPackage: NotRequired[MssPackageTypeDef],  # (5)
+    Origination: NotRequired[OriginationType],  # (6)
+    StartoverWindowSeconds: NotRequired[int],
+    TimeDelaySeconds: NotRequired[int],
+    Whitelist: NotRequired[Sequence[str]],
+```
 
-- `Id`: `str`
-
-Optional fields:
-
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `CmafPackage`:
-  [CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `TimeDelaySeconds`: `int`
-- `Whitelist`: `Sequence`\[`str`\]
-
-<a id="updateoriginendpointresponsetypedef"></a>
-
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageCreateOrUpdateParametersTypeDef](./type_defs.md#cmafpackagecreateorupdateparameterstypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
 ## UpdateOriginEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediapackage.type_defs import UpdateOriginEndpointResponseTypeDef
+
+def get_value() -> UpdateOriginEndpointResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Authorization": ...,
+        "ChannelId": ...,
+        "CmafPackage": ...,
+        "DashPackage": ...,
+        "Description": ...,
+        "HlsPackage": ...,
+        "Id": ...,
+        "ManifestName": ...,
+        "MssPackage": ...,
+        "Origination": ...,
+        "StartoverWindowSeconds": ...,
+        "Tags": ...,
+        "TimeDelaySeconds": ...,
+        "Url": ...,
+        "Whitelist": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateOriginEndpointResponseTypeDef(TypedDict):
+    Arn: str,
+    Authorization: AuthorizationTypeDef,  # (1)
+    ChannelId: str,
+    CmafPackage: CmafPackageTypeDef,  # (2)
+    DashPackage: DashPackageTypeDef,  # (3)
+    Description: str,
+    HlsPackage: HlsPackageTypeDef,  # (4)
+    Id: str,
+    ManifestName: str,
+    MssPackage: MssPackageTypeDef,  # (5)
+    Origination: OriginationType,  # (6)
+    StartoverWindowSeconds: int,
+    Tags: Dict[str, str],
+    TimeDelaySeconds: int,
+    Url: str,
+    Whitelist: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `Arn`: `str`
-- `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
-- `ChannelId`: `str`
-- `CmafPackage`: [CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef)
-- `DashPackage`: [DashPackageTypeDef](./type_defs.md#dashpackagetypedef)
-- `Description`: `str`
-- `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
-- `Id`: `str`
-- `ManifestName`: `str`
-- `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
-- `Origination`: [OriginationType](./literals.md#originationtype)
-- `StartoverWindowSeconds`: `int`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TimeDelaySeconds`: `int`
-- `Url`: `str`
-- `Whitelist`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AuthorizationTypeDef](./type_defs.md#authorizationtypedef) 
+2. See [:material-code-braces: CmafPackageTypeDef](./type_defs.md#cmafpackagetypedef) 
+3. See [:material-code-braces: DashPackageTypeDef](./type_defs.md#dashpackagetypedef) 
+4. See [:material-code-braces: HlsPackageTypeDef](./type_defs.md#hlspackagetypedef) 
+5. See [:material-code-braces: MssPackageTypeDef](./type_defs.md#msspackagetypedef) 
+6. See [:material-code-brackets: OriginationType](./literals.md#originationtype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

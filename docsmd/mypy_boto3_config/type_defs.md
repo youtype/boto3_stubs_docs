@@ -1,4153 +1,5528 @@
-<a id="typed-dictionaries-for-boto3-configservice-module"></a>
-
-# Typed dictionaries for boto3 ConfigService module
+# Typed dictionaries
 
 > [Index](../README.md) > [ConfigService](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
-type annotations stubs module
-[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ConfigService module](#typed-dictionaries-for-boto3-configservice-module)
-  - [AccountAggregationSourceTypeDef](#accountaggregationsourcetypedef)
-  - [AggregateComplianceByConfigRuleTypeDef](#aggregatecompliancebyconfigruletypedef)
-  - [AggregateComplianceByConformancePackTypeDef](#aggregatecompliancebyconformancepacktypedef)
-  - [AggregateComplianceCountTypeDef](#aggregatecompliancecounttypedef)
-  - [AggregateConformancePackComplianceCountTypeDef](#aggregateconformancepackcompliancecounttypedef)
-  - [AggregateConformancePackComplianceFiltersTypeDef](#aggregateconformancepackcompliancefilterstypedef)
-  - [AggregateConformancePackComplianceSummaryFiltersTypeDef](#aggregateconformancepackcompliancesummaryfilterstypedef)
-  - [AggregateConformancePackComplianceSummaryTypeDef](#aggregateconformancepackcompliancesummarytypedef)
-  - [AggregateConformancePackComplianceTypeDef](#aggregateconformancepackcompliancetypedef)
-  - [AggregateEvaluationResultTypeDef](#aggregateevaluationresulttypedef)
-  - [AggregateResourceIdentifierTypeDef](#aggregateresourceidentifiertypedef)
-  - [AggregatedSourceStatusTypeDef](#aggregatedsourcestatustypedef)
-  - [AggregationAuthorizationTypeDef](#aggregationauthorizationtypedef)
-  - [BaseConfigurationItemTypeDef](#baseconfigurationitemtypedef)
-  - [BatchGetAggregateResourceConfigRequestRequestTypeDef](#batchgetaggregateresourceconfigrequestrequesttypedef)
-  - [BatchGetAggregateResourceConfigResponseTypeDef](#batchgetaggregateresourceconfigresponsetypedef)
-  - [BatchGetResourceConfigRequestRequestTypeDef](#batchgetresourceconfigrequestrequesttypedef)
-  - [BatchGetResourceConfigResponseTypeDef](#batchgetresourceconfigresponsetypedef)
-  - [ComplianceByConfigRuleTypeDef](#compliancebyconfigruletypedef)
-  - [ComplianceByResourceTypeDef](#compliancebyresourcetypedef)
-  - [ComplianceContributorCountTypeDef](#compliancecontributorcounttypedef)
-  - [ComplianceSummaryByResourceTypeTypeDef](#compliancesummarybyresourcetypetypedef)
-  - [ComplianceSummaryTypeDef](#compliancesummarytypedef)
-  - [ComplianceTypeDef](#compliancetypedef)
-  - [ConfigExportDeliveryInfoTypeDef](#configexportdeliveryinfotypedef)
-  - [ConfigRuleComplianceFiltersTypeDef](#configrulecompliancefilterstypedef)
-  - [ConfigRuleComplianceSummaryFiltersTypeDef](#configrulecompliancesummaryfilterstypedef)
-  - [ConfigRuleEvaluationStatusTypeDef](#configruleevaluationstatustypedef)
-  - [ConfigRuleTypeDef](#configruletypedef)
-  - [ConfigSnapshotDeliveryPropertiesTypeDef](#configsnapshotdeliverypropertiestypedef)
-  - [ConfigStreamDeliveryInfoTypeDef](#configstreamdeliveryinfotypedef)
-  - [ConfigurationAggregatorTypeDef](#configurationaggregatortypedef)
-  - [ConfigurationItemTypeDef](#configurationitemtypedef)
-  - [ConfigurationRecorderStatusTypeDef](#configurationrecorderstatustypedef)
-  - [ConfigurationRecorderTypeDef](#configurationrecordertypedef)
-  - [ConformancePackComplianceFiltersTypeDef](#conformancepackcompliancefilterstypedef)
-  - [ConformancePackComplianceSummaryTypeDef](#conformancepackcompliancesummarytypedef)
-  - [ConformancePackDetailTypeDef](#conformancepackdetailtypedef)
-  - [ConformancePackEvaluationFiltersTypeDef](#conformancepackevaluationfilterstypedef)
-  - [ConformancePackEvaluationResultTypeDef](#conformancepackevaluationresulttypedef)
-  - [ConformancePackInputParameterTypeDef](#conformancepackinputparametertypedef)
-  - [ConformancePackRuleComplianceTypeDef](#conformancepackrulecompliancetypedef)
-  - [ConformancePackStatusDetailTypeDef](#conformancepackstatusdetailtypedef)
-  - [CustomPolicyDetailsTypeDef](#custompolicydetailstypedef)
-  - [DeleteAggregationAuthorizationRequestRequestTypeDef](#deleteaggregationauthorizationrequestrequesttypedef)
-  - [DeleteConfigRuleRequestRequestTypeDef](#deleteconfigrulerequestrequesttypedef)
-  - [DeleteConfigurationAggregatorRequestRequestTypeDef](#deleteconfigurationaggregatorrequestrequesttypedef)
-  - [DeleteConfigurationRecorderRequestRequestTypeDef](#deleteconfigurationrecorderrequestrequesttypedef)
-  - [DeleteConformancePackRequestRequestTypeDef](#deleteconformancepackrequestrequesttypedef)
-  - [DeleteDeliveryChannelRequestRequestTypeDef](#deletedeliverychannelrequestrequesttypedef)
-  - [DeleteEvaluationResultsRequestRequestTypeDef](#deleteevaluationresultsrequestrequesttypedef)
-  - [DeleteOrganizationConfigRuleRequestRequestTypeDef](#deleteorganizationconfigrulerequestrequesttypedef)
-  - [DeleteOrganizationConformancePackRequestRequestTypeDef](#deleteorganizationconformancepackrequestrequesttypedef)
-  - [DeletePendingAggregationRequestRequestRequestTypeDef](#deletependingaggregationrequestrequestrequesttypedef)
-  - [DeleteRemediationConfigurationRequestRequestTypeDef](#deleteremediationconfigurationrequestrequesttypedef)
-  - [DeleteRemediationExceptionsRequestRequestTypeDef](#deleteremediationexceptionsrequestrequesttypedef)
-  - [DeleteRemediationExceptionsResponseTypeDef](#deleteremediationexceptionsresponsetypedef)
-  - [DeleteResourceConfigRequestRequestTypeDef](#deleteresourceconfigrequestrequesttypedef)
-  - [DeleteRetentionConfigurationRequestRequestTypeDef](#deleteretentionconfigurationrequestrequesttypedef)
-  - [DeleteStoredQueryRequestRequestTypeDef](#deletestoredqueryrequestrequesttypedef)
-  - [DeliverConfigSnapshotRequestRequestTypeDef](#deliverconfigsnapshotrequestrequesttypedef)
-  - [DeliverConfigSnapshotResponseTypeDef](#deliverconfigsnapshotresponsetypedef)
-  - [DeliveryChannelStatusTypeDef](#deliverychannelstatustypedef)
-  - [DeliveryChannelTypeDef](#deliverychanneltypedef)
-  - [DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef](#describeaggregatecompliancebyconfigrulesrequestrequesttypedef)
-  - [DescribeAggregateComplianceByConfigRulesResponseTypeDef](#describeaggregatecompliancebyconfigrulesresponsetypedef)
-  - [DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef](#describeaggregatecompliancebyconformancepacksrequestrequesttypedef)
-  - [DescribeAggregateComplianceByConformancePacksResponseTypeDef](#describeaggregatecompliancebyconformancepacksresponsetypedef)
-  - [DescribeAggregationAuthorizationsRequestRequestTypeDef](#describeaggregationauthorizationsrequestrequesttypedef)
-  - [DescribeAggregationAuthorizationsResponseTypeDef](#describeaggregationauthorizationsresponsetypedef)
-  - [DescribeComplianceByConfigRuleRequestRequestTypeDef](#describecompliancebyconfigrulerequestrequesttypedef)
-  - [DescribeComplianceByConfigRuleResponseTypeDef](#describecompliancebyconfigruleresponsetypedef)
-  - [DescribeComplianceByResourceRequestRequestTypeDef](#describecompliancebyresourcerequestrequesttypedef)
-  - [DescribeComplianceByResourceResponseTypeDef](#describecompliancebyresourceresponsetypedef)
-  - [DescribeConfigRuleEvaluationStatusRequestRequestTypeDef](#describeconfigruleevaluationstatusrequestrequesttypedef)
-  - [DescribeConfigRuleEvaluationStatusResponseTypeDef](#describeconfigruleevaluationstatusresponsetypedef)
-  - [DescribeConfigRulesRequestRequestTypeDef](#describeconfigrulesrequestrequesttypedef)
-  - [DescribeConfigRulesResponseTypeDef](#describeconfigrulesresponsetypedef)
-  - [DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef](#describeconfigurationaggregatorsourcesstatusrequestrequesttypedef)
-  - [DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](#describeconfigurationaggregatorsourcesstatusresponsetypedef)
-  - [DescribeConfigurationAggregatorsRequestRequestTypeDef](#describeconfigurationaggregatorsrequestrequesttypedef)
-  - [DescribeConfigurationAggregatorsResponseTypeDef](#describeconfigurationaggregatorsresponsetypedef)
-  - [DescribeConfigurationRecorderStatusRequestRequestTypeDef](#describeconfigurationrecorderstatusrequestrequesttypedef)
-  - [DescribeConfigurationRecorderStatusResponseTypeDef](#describeconfigurationrecorderstatusresponsetypedef)
-  - [DescribeConfigurationRecordersRequestRequestTypeDef](#describeconfigurationrecordersrequestrequesttypedef)
-  - [DescribeConfigurationRecordersResponseTypeDef](#describeconfigurationrecordersresponsetypedef)
-  - [DescribeConformancePackComplianceRequestRequestTypeDef](#describeconformancepackcompliancerequestrequesttypedef)
-  - [DescribeConformancePackComplianceResponseTypeDef](#describeconformancepackcomplianceresponsetypedef)
-  - [DescribeConformancePackStatusRequestRequestTypeDef](#describeconformancepackstatusrequestrequesttypedef)
-  - [DescribeConformancePackStatusResponseTypeDef](#describeconformancepackstatusresponsetypedef)
-  - [DescribeConformancePacksRequestRequestTypeDef](#describeconformancepacksrequestrequesttypedef)
-  - [DescribeConformancePacksResponseTypeDef](#describeconformancepacksresponsetypedef)
-  - [DescribeDeliveryChannelStatusRequestRequestTypeDef](#describedeliverychannelstatusrequestrequesttypedef)
-  - [DescribeDeliveryChannelStatusResponseTypeDef](#describedeliverychannelstatusresponsetypedef)
-  - [DescribeDeliveryChannelsRequestRequestTypeDef](#describedeliverychannelsrequestrequesttypedef)
-  - [DescribeDeliveryChannelsResponseTypeDef](#describedeliverychannelsresponsetypedef)
-  - [DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef](#describeorganizationconfigrulestatusesrequestrequesttypedef)
-  - [DescribeOrganizationConfigRuleStatusesResponseTypeDef](#describeorganizationconfigrulestatusesresponsetypedef)
-  - [DescribeOrganizationConfigRulesRequestRequestTypeDef](#describeorganizationconfigrulesrequestrequesttypedef)
-  - [DescribeOrganizationConfigRulesResponseTypeDef](#describeorganizationconfigrulesresponsetypedef)
-  - [DescribeOrganizationConformancePackStatusesRequestRequestTypeDef](#describeorganizationconformancepackstatusesrequestrequesttypedef)
-  - [DescribeOrganizationConformancePackStatusesResponseTypeDef](#describeorganizationconformancepackstatusesresponsetypedef)
-  - [DescribeOrganizationConformancePacksRequestRequestTypeDef](#describeorganizationconformancepacksrequestrequesttypedef)
-  - [DescribeOrganizationConformancePacksResponseTypeDef](#describeorganizationconformancepacksresponsetypedef)
-  - [DescribePendingAggregationRequestsRequestRequestTypeDef](#describependingaggregationrequestsrequestrequesttypedef)
-  - [DescribePendingAggregationRequestsResponseTypeDef](#describependingaggregationrequestsresponsetypedef)
-  - [DescribeRemediationConfigurationsRequestRequestTypeDef](#describeremediationconfigurationsrequestrequesttypedef)
-  - [DescribeRemediationConfigurationsResponseTypeDef](#describeremediationconfigurationsresponsetypedef)
-  - [DescribeRemediationExceptionsRequestRequestTypeDef](#describeremediationexceptionsrequestrequesttypedef)
-  - [DescribeRemediationExceptionsResponseTypeDef](#describeremediationexceptionsresponsetypedef)
-  - [DescribeRemediationExecutionStatusRequestRequestTypeDef](#describeremediationexecutionstatusrequestrequesttypedef)
-  - [DescribeRemediationExecutionStatusResponseTypeDef](#describeremediationexecutionstatusresponsetypedef)
-  - [DescribeRetentionConfigurationsRequestRequestTypeDef](#describeretentionconfigurationsrequestrequesttypedef)
-  - [DescribeRetentionConfigurationsResponseTypeDef](#describeretentionconfigurationsresponsetypedef)
-  - [EvaluationResultIdentifierTypeDef](#evaluationresultidentifiertypedef)
-  - [EvaluationResultQualifierTypeDef](#evaluationresultqualifiertypedef)
-  - [EvaluationResultTypeDef](#evaluationresulttypedef)
-  - [EvaluationTypeDef](#evaluationtypedef)
-  - [ExecutionControlsTypeDef](#executioncontrolstypedef)
-  - [ExternalEvaluationTypeDef](#externalevaluationtypedef)
-  - [FailedDeleteRemediationExceptionsBatchTypeDef](#faileddeleteremediationexceptionsbatchtypedef)
-  - [FailedRemediationBatchTypeDef](#failedremediationbatchtypedef)
-  - [FailedRemediationExceptionBatchTypeDef](#failedremediationexceptionbatchtypedef)
-  - [FieldInfoTypeDef](#fieldinfotypedef)
-  - [GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef](#getaggregatecompliancedetailsbyconfigrulerequestrequesttypedef)
-  - [GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](#getaggregatecompliancedetailsbyconfigruleresponsetypedef)
-  - [GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef](#getaggregateconfigrulecompliancesummaryrequestrequesttypedef)
-  - [GetAggregateConfigRuleComplianceSummaryResponseTypeDef](#getaggregateconfigrulecompliancesummaryresponsetypedef)
-  - [GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef](#getaggregateconformancepackcompliancesummaryrequestrequesttypedef)
-  - [GetAggregateConformancePackComplianceSummaryResponseTypeDef](#getaggregateconformancepackcompliancesummaryresponsetypedef)
-  - [GetAggregateDiscoveredResourceCountsRequestRequestTypeDef](#getaggregatediscoveredresourcecountsrequestrequesttypedef)
-  - [GetAggregateDiscoveredResourceCountsResponseTypeDef](#getaggregatediscoveredresourcecountsresponsetypedef)
-  - [GetAggregateResourceConfigRequestRequestTypeDef](#getaggregateresourceconfigrequestrequesttypedef)
-  - [GetAggregateResourceConfigResponseTypeDef](#getaggregateresourceconfigresponsetypedef)
-  - [GetComplianceDetailsByConfigRuleRequestRequestTypeDef](#getcompliancedetailsbyconfigrulerequestrequesttypedef)
-  - [GetComplianceDetailsByConfigRuleResponseTypeDef](#getcompliancedetailsbyconfigruleresponsetypedef)
-  - [GetComplianceDetailsByResourceRequestRequestTypeDef](#getcompliancedetailsbyresourcerequestrequesttypedef)
-  - [GetComplianceDetailsByResourceResponseTypeDef](#getcompliancedetailsbyresourceresponsetypedef)
-  - [GetComplianceSummaryByConfigRuleResponseTypeDef](#getcompliancesummarybyconfigruleresponsetypedef)
-  - [GetComplianceSummaryByResourceTypeRequestRequestTypeDef](#getcompliancesummarybyresourcetyperequestrequesttypedef)
-  - [GetComplianceSummaryByResourceTypeResponseTypeDef](#getcompliancesummarybyresourcetyperesponsetypedef)
-  - [GetConformancePackComplianceDetailsRequestRequestTypeDef](#getconformancepackcompliancedetailsrequestrequesttypedef)
-  - [GetConformancePackComplianceDetailsResponseTypeDef](#getconformancepackcompliancedetailsresponsetypedef)
-  - [GetConformancePackComplianceSummaryRequestRequestTypeDef](#getconformancepackcompliancesummaryrequestrequesttypedef)
-  - [GetConformancePackComplianceSummaryResponseTypeDef](#getconformancepackcompliancesummaryresponsetypedef)
-  - [GetCustomRulePolicyRequestRequestTypeDef](#getcustomrulepolicyrequestrequesttypedef)
-  - [GetCustomRulePolicyResponseTypeDef](#getcustomrulepolicyresponsetypedef)
-  - [GetDiscoveredResourceCountsRequestRequestTypeDef](#getdiscoveredresourcecountsrequestrequesttypedef)
-  - [GetDiscoveredResourceCountsResponseTypeDef](#getdiscoveredresourcecountsresponsetypedef)
-  - [GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef](#getorganizationconfigruledetailedstatusrequestrequesttypedef)
-  - [GetOrganizationConfigRuleDetailedStatusResponseTypeDef](#getorganizationconfigruledetailedstatusresponsetypedef)
-  - [GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef](#getorganizationconformancepackdetailedstatusrequestrequesttypedef)
-  - [GetOrganizationConformancePackDetailedStatusResponseTypeDef](#getorganizationconformancepackdetailedstatusresponsetypedef)
-  - [GetOrganizationCustomRulePolicyRequestRequestTypeDef](#getorganizationcustomrulepolicyrequestrequesttypedef)
-  - [GetOrganizationCustomRulePolicyResponseTypeDef](#getorganizationcustomrulepolicyresponsetypedef)
-  - [GetResourceConfigHistoryRequestRequestTypeDef](#getresourceconfighistoryrequestrequesttypedef)
-  - [GetResourceConfigHistoryResponseTypeDef](#getresourceconfighistoryresponsetypedef)
-  - [GetStoredQueryRequestRequestTypeDef](#getstoredqueryrequestrequesttypedef)
-  - [GetStoredQueryResponseTypeDef](#getstoredqueryresponsetypedef)
-  - [GroupedResourceCountTypeDef](#groupedresourcecounttypedef)
-  - [ListAggregateDiscoveredResourcesRequestRequestTypeDef](#listaggregatediscoveredresourcesrequestrequesttypedef)
-  - [ListAggregateDiscoveredResourcesResponseTypeDef](#listaggregatediscoveredresourcesresponsetypedef)
-  - [ListDiscoveredResourcesRequestRequestTypeDef](#listdiscoveredresourcesrequestrequesttypedef)
-  - [ListDiscoveredResourcesResponseTypeDef](#listdiscoveredresourcesresponsetypedef)
-  - [ListStoredQueriesRequestRequestTypeDef](#liststoredqueriesrequestrequesttypedef)
-  - [ListStoredQueriesResponseTypeDef](#liststoredqueriesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MemberAccountStatusTypeDef](#memberaccountstatustypedef)
-  - [OrganizationAggregationSourceTypeDef](#organizationaggregationsourcetypedef)
-  - [OrganizationConfigRuleStatusTypeDef](#organizationconfigrulestatustypedef)
-  - [OrganizationConfigRuleTypeDef](#organizationconfigruletypedef)
-  - [OrganizationConformancePackDetailedStatusTypeDef](#organizationconformancepackdetailedstatustypedef)
-  - [OrganizationConformancePackStatusTypeDef](#organizationconformancepackstatustypedef)
-  - [OrganizationConformancePackTypeDef](#organizationconformancepacktypedef)
-  - [OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef](#organizationcustompolicyrulemetadatanopolicytypedef)
-  - [OrganizationCustomPolicyRuleMetadataTypeDef](#organizationcustompolicyrulemetadatatypedef)
-  - [OrganizationCustomRuleMetadataTypeDef](#organizationcustomrulemetadatatypedef)
-  - [OrganizationManagedRuleMetadataTypeDef](#organizationmanagedrulemetadatatypedef)
-  - [OrganizationResourceDetailedStatusFiltersTypeDef](#organizationresourcedetailedstatusfilterstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PendingAggregationRequestTypeDef](#pendingaggregationrequesttypedef)
-  - [PutAggregationAuthorizationRequestRequestTypeDef](#putaggregationauthorizationrequestrequesttypedef)
-  - [PutAggregationAuthorizationResponseTypeDef](#putaggregationauthorizationresponsetypedef)
-  - [PutConfigRuleRequestRequestTypeDef](#putconfigrulerequestrequesttypedef)
-  - [PutConfigurationAggregatorRequestRequestTypeDef](#putconfigurationaggregatorrequestrequesttypedef)
-  - [PutConfigurationAggregatorResponseTypeDef](#putconfigurationaggregatorresponsetypedef)
-  - [PutConfigurationRecorderRequestRequestTypeDef](#putconfigurationrecorderrequestrequesttypedef)
-  - [PutConformancePackRequestRequestTypeDef](#putconformancepackrequestrequesttypedef)
-  - [PutConformancePackResponseTypeDef](#putconformancepackresponsetypedef)
-  - [PutDeliveryChannelRequestRequestTypeDef](#putdeliverychannelrequestrequesttypedef)
-  - [PutEvaluationsRequestRequestTypeDef](#putevaluationsrequestrequesttypedef)
-  - [PutEvaluationsResponseTypeDef](#putevaluationsresponsetypedef)
-  - [PutExternalEvaluationRequestRequestTypeDef](#putexternalevaluationrequestrequesttypedef)
-  - [PutOrganizationConfigRuleRequestRequestTypeDef](#putorganizationconfigrulerequestrequesttypedef)
-  - [PutOrganizationConfigRuleResponseTypeDef](#putorganizationconfigruleresponsetypedef)
-  - [PutOrganizationConformancePackRequestRequestTypeDef](#putorganizationconformancepackrequestrequesttypedef)
-  - [PutOrganizationConformancePackResponseTypeDef](#putorganizationconformancepackresponsetypedef)
-  - [PutRemediationConfigurationsRequestRequestTypeDef](#putremediationconfigurationsrequestrequesttypedef)
-  - [PutRemediationConfigurationsResponseTypeDef](#putremediationconfigurationsresponsetypedef)
-  - [PutRemediationExceptionsRequestRequestTypeDef](#putremediationexceptionsrequestrequesttypedef)
-  - [PutRemediationExceptionsResponseTypeDef](#putremediationexceptionsresponsetypedef)
-  - [PutResourceConfigRequestRequestTypeDef](#putresourceconfigrequestrequesttypedef)
-  - [PutRetentionConfigurationRequestRequestTypeDef](#putretentionconfigurationrequestrequesttypedef)
-  - [PutRetentionConfigurationResponseTypeDef](#putretentionconfigurationresponsetypedef)
-  - [PutStoredQueryRequestRequestTypeDef](#putstoredqueryrequestrequesttypedef)
-  - [PutStoredQueryResponseTypeDef](#putstoredqueryresponsetypedef)
-  - [QueryInfoTypeDef](#queryinfotypedef)
-  - [RecordingGroupTypeDef](#recordinggrouptypedef)
-  - [RelationshipTypeDef](#relationshiptypedef)
-  - [RemediationConfigurationTypeDef](#remediationconfigurationtypedef)
-  - [RemediationExceptionResourceKeyTypeDef](#remediationexceptionresourcekeytypedef)
-  - [RemediationExceptionTypeDef](#remediationexceptiontypedef)
-  - [RemediationExecutionStatusTypeDef](#remediationexecutionstatustypedef)
-  - [RemediationExecutionStepTypeDef](#remediationexecutionsteptypedef)
-  - [RemediationParameterValueTypeDef](#remediationparametervaluetypedef)
-  - [ResourceCountFiltersTypeDef](#resourcecountfilterstypedef)
-  - [ResourceCountTypeDef](#resourcecounttypedef)
-  - [ResourceFiltersTypeDef](#resourcefilterstypedef)
-  - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
-  - [ResourceKeyTypeDef](#resourcekeytypedef)
-  - [ResourceValueTypeDef](#resourcevaluetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetentionConfigurationTypeDef](#retentionconfigurationtypedef)
-  - [ScopeTypeDef](#scopetypedef)
-  - [SelectAggregateResourceConfigRequestRequestTypeDef](#selectaggregateresourceconfigrequestrequesttypedef)
-  - [SelectAggregateResourceConfigResponseTypeDef](#selectaggregateresourceconfigresponsetypedef)
-  - [SelectResourceConfigRequestRequestTypeDef](#selectresourceconfigrequestrequesttypedef)
-  - [SelectResourceConfigResponseTypeDef](#selectresourceconfigresponsetypedef)
-  - [SourceDetailTypeDef](#sourcedetailtypedef)
-  - [SourceTypeDef](#sourcetypedef)
-  - [SsmControlsTypeDef](#ssmcontrolstypedef)
-  - [StartConfigRulesEvaluationRequestRequestTypeDef](#startconfigrulesevaluationrequestrequesttypedef)
-  - [StartConfigurationRecorderRequestRequestTypeDef](#startconfigurationrecorderrequestrequesttypedef)
-  - [StartRemediationExecutionRequestRequestTypeDef](#startremediationexecutionrequestrequesttypedef)
-  - [StartRemediationExecutionResponseTypeDef](#startremediationexecutionresponsetypedef)
-  - [StaticValueTypeDef](#staticvaluetypedef)
-  - [StatusDetailFiltersTypeDef](#statusdetailfilterstypedef)
-  - [StopConfigurationRecorderRequestRequestTypeDef](#stopconfigurationrecorderrequestrequesttypedef)
-  - [StoredQueryMetadataTypeDef](#storedquerymetadatatypedef)
-  - [StoredQueryTypeDef](#storedquerytypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-
-<a id="accountaggregationsourcetypedef"></a>
+    Auto-generated documentation for [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
+    type annotations stubs module [mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 ## AccountAggregationSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AccountAggregationSourceTypeDef
+
+def get_value() -> AccountAggregationSourceTypeDef:
+    return {
+        "AccountIds": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountIds`: `List`\[`str`\]
-
-Optional fields:
-
-- `AllAwsRegions`: `bool`
-- `AwsRegions`: `List`\[`str`\]
-
-<a id="aggregatecompliancebyconfigruletypedef"></a>
+```python title="Definition"
+class AccountAggregationSourceTypeDef(TypedDict):
+    AccountIds: List[str],
+    AllAwsRegions: NotRequired[bool],
+    AwsRegions: NotRequired[List[str]],
+```
 
 ## AggregateComplianceByConfigRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateComplianceByConfigRuleTypeDef
+
+def get_value() -> AggregateComplianceByConfigRuleTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateComplianceByConfigRuleTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    Compliance: NotRequired[ComplianceTypeDef],  # (1)
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-- `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="aggregatecompliancebyconformancepacktypedef"></a>
-
+1. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
 ## AggregateComplianceByConformancePackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateComplianceByConformancePackTypeDef
+
+def get_value() -> AggregateComplianceByConformancePackTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateComplianceByConformancePackTypeDef(TypedDict):
+    ConformancePackName: NotRequired[str],
+    Compliance: NotRequired[AggregateConformancePackComplianceTypeDef],  # (1)
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
-- `ConformancePackName`: `str`
-- `Compliance`:
-  [AggregateConformancePackComplianceTypeDef](./type_defs.md#aggregateconformancepackcompliancetypedef)
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="aggregatecompliancecounttypedef"></a>
-
+1. See [:material-code-braces: AggregateConformancePackComplianceTypeDef](./type_defs.md#aggregateconformancepackcompliancetypedef) 
 ## AggregateComplianceCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateComplianceCountTypeDef
+
+def get_value() -> AggregateComplianceCountTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateComplianceCountTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    ComplianceSummary: NotRequired[ComplianceSummaryTypeDef],  # (1)
+```
 
-- `GroupName`: `str`
-- `ComplianceSummary`:
-  [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
-
-<a id="aggregateconformancepackcompliancecounttypedef"></a>
-
+1. See [:material-code-braces: ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef) 
 ## AggregateConformancePackComplianceCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateConformancePackComplianceCountTypeDef
+
+def get_value() -> AggregateConformancePackComplianceCountTypeDef:
+    return {
+        "CompliantConformancePackCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `CompliantConformancePackCount`: `int`
-- `NonCompliantConformancePackCount`: `int`
-
-<a id="aggregateconformancepackcompliancefilterstypedef"></a>
+```python title="Definition"
+class AggregateConformancePackComplianceCountTypeDef(TypedDict):
+    CompliantConformancePackCount: NotRequired[int],
+    NonCompliantConformancePackCount: NotRequired[int],
+```
 
 ## AggregateConformancePackComplianceFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateConformancePackComplianceFiltersTypeDef
+
+def get_value() -> AggregateConformancePackComplianceFiltersTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateConformancePackComplianceFiltersTypeDef(TypedDict):
+    ConformancePackName: NotRequired[str],
+    ComplianceType: NotRequired[ConformancePackComplianceTypeType],  # (1)
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
-- `ConformancePackName`: `str`
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="aggregateconformancepackcompliancesummaryfilterstypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## AggregateConformancePackComplianceSummaryFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateConformancePackComplianceSummaryFiltersTypeDef
+
+def get_value() -> AggregateConformancePackComplianceSummaryFiltersTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="aggregateconformancepackcompliancesummarytypedef"></a>
+```python title="Definition"
+class AggregateConformancePackComplianceSummaryFiltersTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
 ## AggregateConformancePackComplianceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateConformancePackComplianceSummaryTypeDef
+
+def get_value() -> AggregateConformancePackComplianceSummaryTypeDef:
+    return {
+        "ComplianceSummary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateConformancePackComplianceSummaryTypeDef(TypedDict):
+    ComplianceSummary: NotRequired[AggregateConformancePackComplianceCountTypeDef],  # (1)
+    GroupName: NotRequired[str],
+```
 
-- `ComplianceSummary`:
-  [AggregateConformancePackComplianceCountTypeDef](./type_defs.md#aggregateconformancepackcompliancecounttypedef)
-- `GroupName`: `str`
-
-<a id="aggregateconformancepackcompliancetypedef"></a>
-
+1. See [:material-code-braces: AggregateConformancePackComplianceCountTypeDef](./type_defs.md#aggregateconformancepackcompliancecounttypedef) 
 ## AggregateConformancePackComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateConformancePackComplianceTypeDef
+
+def get_value() -> AggregateConformancePackComplianceTypeDef:
+    return {
+        "ComplianceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateConformancePackComplianceTypeDef(TypedDict):
+    ComplianceType: NotRequired[ConformancePackComplianceTypeType],  # (1)
+    CompliantRuleCount: NotRequired[int],
+    NonCompliantRuleCount: NotRequired[int],
+    TotalRuleCount: NotRequired[int],
+```
 
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-- `CompliantRuleCount`: `int`
-- `NonCompliantRuleCount`: `int`
-- `TotalRuleCount`: `int`
-
-<a id="aggregateevaluationresulttypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## AggregateEvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateEvaluationResultTypeDef
+
+def get_value() -> AggregateEvaluationResultTypeDef:
+    return {
+        "EvaluationResultIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregateEvaluationResultTypeDef(TypedDict):
+    EvaluationResultIdentifier: NotRequired[EvaluationResultIdentifierTypeDef],  # (1)
+    ComplianceType: NotRequired[ComplianceTypeType],  # (2)
+    ResultRecordedTime: NotRequired[datetime],
+    ConfigRuleInvokedTime: NotRequired[datetime],
+    Annotation: NotRequired[str],
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
-- `EvaluationResultIdentifier`:
-  [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `ResultRecordedTime`: `datetime`
-- `ConfigRuleInvokedTime`: `datetime`
-- `Annotation`: `str`
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="aggregateresourceidentifiertypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef) 
+2. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## AggregateResourceIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregateResourceIdentifierTypeDef
+
+def get_value() -> AggregateResourceIdentifierTypeDef:
+    return {
+        "SourceAccountId": ...,
+        "SourceRegion": ...,
+        "ResourceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AggregateResourceIdentifierTypeDef(TypedDict):
+    SourceAccountId: str,
+    SourceRegion: str,
+    ResourceId: str,
+    ResourceType: ResourceTypeType,  # (1)
+    ResourceName: NotRequired[str],
+```
 
-- `SourceAccountId`: `str`
-- `SourceRegion`: `str`
-- `ResourceId`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `ResourceName`: `str`
-
-<a id="aggregatedsourcestatustypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## AggregatedSourceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregatedSourceStatusTypeDef
+
+def get_value() -> AggregatedSourceStatusTypeDef:
+    return {
+        "SourceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AggregatedSourceStatusTypeDef(TypedDict):
+    SourceId: NotRequired[str],
+    SourceType: NotRequired[AggregatedSourceTypeType],  # (1)
+    AwsRegion: NotRequired[str],
+    LastUpdateStatus: NotRequired[AggregatedSourceStatusTypeType],  # (2)
+    LastUpdateTime: NotRequired[datetime],
+    LastErrorCode: NotRequired[str],
+    LastErrorMessage: NotRequired[str],
+```
 
-- `SourceId`: `str`
-- `SourceType`:
-  [AggregatedSourceTypeType](./literals.md#aggregatedsourcetypetype)
-- `AwsRegion`: `str`
-- `LastUpdateStatus`:
-  [AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)
-- `LastUpdateTime`: `datetime`
-- `LastErrorCode`: `str`
-- `LastErrorMessage`: `str`
-
-<a id="aggregationauthorizationtypedef"></a>
-
+1. See [:material-code-brackets: AggregatedSourceTypeType](./literals.md#aggregatedsourcetypetype) 
+2. See [:material-code-brackets: AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype) 
 ## AggregationAuthorizationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import AggregationAuthorizationTypeDef
+
+def get_value() -> AggregationAuthorizationTypeDef:
+    return {
+        "AggregationAuthorizationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AggregationAuthorizationArn`: `str`
-- `AuthorizedAccountId`: `str`
-- `AuthorizedAwsRegion`: `str`
-- `CreationTime`: `datetime`
-
-<a id="baseconfigurationitemtypedef"></a>
+```python title="Definition"
+class AggregationAuthorizationTypeDef(TypedDict):
+    AggregationAuthorizationArn: NotRequired[str],
+    AuthorizedAccountId: NotRequired[str],
+    AuthorizedAwsRegion: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+```
 
 ## BaseConfigurationItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import BaseConfigurationItemTypeDef
+
+def get_value() -> BaseConfigurationItemTypeDef:
+    return {
+        "version": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BaseConfigurationItemTypeDef(TypedDict):
+    version: NotRequired[str],
+    accountId: NotRequired[str],
+    configurationItemCaptureTime: NotRequired[datetime],
+    configurationItemStatus: NotRequired[ConfigurationItemStatusType],  # (1)
+    configurationStateId: NotRequired[str],
+    arn: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    resourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+    awsRegion: NotRequired[str],
+    availabilityZone: NotRequired[str],
+    resourceCreationTime: NotRequired[datetime],
+    configuration: NotRequired[str],
+    supplementaryConfiguration: NotRequired[Dict[str, str]],
+```
 
-- `version`: `str`
-- `accountId`: `str`
-- `configurationItemCaptureTime`: `datetime`
-- `configurationItemStatus`:
-  [ConfigurationItemStatusType](./literals.md#configurationitemstatustype)
-- `configurationStateId`: `str`
-- `arn`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `resourceName`: `str`
-- `awsRegion`: `str`
-- `availabilityZone`: `str`
-- `resourceCreationTime`: `datetime`
-- `configuration`: `str`
-- `supplementaryConfiguration`: `Dict`\[`str`, `str`\]
-
-<a id="batchgetaggregateresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationItemStatusType](./literals.md#configurationitemstatustype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## BatchGetAggregateResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import BatchGetAggregateResourceConfigRequestRequestTypeDef
+
+def get_value() -> BatchGetAggregateResourceConfigRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ResourceIdentifiers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetAggregateResourceConfigRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ResourceIdentifiers: Sequence[AggregateResourceIdentifierTypeDef],  # (1)
+```
 
-- `ConfigurationAggregatorName`: `str`
-- `ResourceIdentifiers`:
-  `Sequence`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
-
-<a id="batchgetaggregateresourceconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef) 
 ## BatchGetAggregateResourceConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import BatchGetAggregateResourceConfigResponseTypeDef
+
+def get_value() -> BatchGetAggregateResourceConfigResponseTypeDef:
+    return {
+        "BaseConfigurationItems": ...,
+        "UnprocessedResourceIdentifiers": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetAggregateResourceConfigResponseTypeDef(TypedDict):
+    BaseConfigurationItems: List[BaseConfigurationItemTypeDef],  # (1)
+    UnprocessedResourceIdentifiers: List[AggregateResourceIdentifierTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `BaseConfigurationItems`:
-  `List`\[[BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef)\]
-- `UnprocessedResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef) 
+2. See [:material-code-braces: AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import BatchGetResourceConfigRequestRequestTypeDef
+
+def get_value() -> BatchGetResourceConfigRequestRequestTypeDef:
+    return {
+        "resourceKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetResourceConfigRequestRequestTypeDef(TypedDict):
+    resourceKeys: Sequence[ResourceKeyTypeDef],  # (1)
+```
 
-- `resourceKeys`:
-  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-
-<a id="batchgetresourceconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
 ## BatchGetResourceConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import BatchGetResourceConfigResponseTypeDef
+
+def get_value() -> BatchGetResourceConfigResponseTypeDef:
+    return {
+        "baseConfigurationItems": ...,
+        "unprocessedResourceKeys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetResourceConfigResponseTypeDef(TypedDict):
+    baseConfigurationItems: List[BaseConfigurationItemTypeDef],  # (1)
+    unprocessedResourceKeys: List[ResourceKeyTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `baseConfigurationItems`:
-  `List`\[[BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef)\]
-- `unprocessedResourceKeys`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="compliancebyconfigruletypedef"></a>
-
+1. See [:material-code-braces: BaseConfigurationItemTypeDef](./type_defs.md#baseconfigurationitemtypedef) 
+2. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ComplianceByConfigRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceByConfigRuleTypeDef
+
+def get_value() -> ComplianceByConfigRuleTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceByConfigRuleTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    Compliance: NotRequired[ComplianceTypeDef],  # (1)
+```
 
-- `ConfigRuleName`: `str`
-- `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
-
-<a id="compliancebyresourcetypedef"></a>
-
+1. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
 ## ComplianceByResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceByResourceTypeDef
+
+def get_value() -> ComplianceByResourceTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceByResourceTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    Compliance: NotRequired[ComplianceTypeDef],  # (1)
+```
 
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-- `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
-
-<a id="compliancecontributorcounttypedef"></a>
-
+1. See [:material-code-braces: ComplianceTypeDef](./type_defs.md#compliancetypedef) 
 ## ComplianceContributorCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceContributorCountTypeDef
+
+def get_value() -> ComplianceContributorCountTypeDef:
+    return {
+        "CappedCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `CappedCount`: `int`
-- `CapExceeded`: `bool`
-
-<a id="compliancesummarybyresourcetypetypedef"></a>
+```python title="Definition"
+class ComplianceContributorCountTypeDef(TypedDict):
+    CappedCount: NotRequired[int],
+    CapExceeded: NotRequired[bool],
+```
 
 ## ComplianceSummaryByResourceTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceSummaryByResourceTypeTypeDef
+
+def get_value() -> ComplianceSummaryByResourceTypeTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceSummaryByResourceTypeTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ComplianceSummary: NotRequired[ComplianceSummaryTypeDef],  # (1)
+```
 
-- `ResourceType`: `str`
-- `ComplianceSummary`:
-  [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
-
-<a id="compliancesummarytypedef"></a>
-
+1. See [:material-code-braces: ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef) 
 ## ComplianceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceSummaryTypeDef
+
+def get_value() -> ComplianceSummaryTypeDef:
+    return {
+        "CompliantResourceCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceSummaryTypeDef(TypedDict):
+    CompliantResourceCount: NotRequired[ComplianceContributorCountTypeDef],  # (1)
+    NonCompliantResourceCount: NotRequired[ComplianceContributorCountTypeDef],  # (1)
+    ComplianceSummaryTimestamp: NotRequired[datetime],
+```
 
-- `CompliantResourceCount`:
-  [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
-- `NonCompliantResourceCount`:
-  [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
-- `ComplianceSummaryTimestamp`: `datetime`
-
-<a id="compliancetypedef"></a>
-
+1. See [:material-code-braces: ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef) 
+2. See [:material-code-braces: ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef) 
 ## ComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ComplianceTypeDef
+
+def get_value() -> ComplianceTypeDef:
+    return {
+        "ComplianceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComplianceTypeDef(TypedDict):
+    ComplianceType: NotRequired[ComplianceTypeType],  # (1)
+    ComplianceContributorCount: NotRequired[ComplianceContributorCountTypeDef],  # (2)
+```
 
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `ComplianceContributorCount`:
-  [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
-
-<a id="configexportdeliveryinfotypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef) 
 ## ConfigExportDeliveryInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigExportDeliveryInfoTypeDef
+
+def get_value() -> ConfigExportDeliveryInfoTypeDef:
+    return {
+        "lastStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigExportDeliveryInfoTypeDef(TypedDict):
+    lastStatus: NotRequired[DeliveryStatusType],  # (1)
+    lastErrorCode: NotRequired[str],
+    lastErrorMessage: NotRequired[str],
+    lastAttemptTime: NotRequired[datetime],
+    lastSuccessfulTime: NotRequired[datetime],
+    nextDeliveryTime: NotRequired[datetime],
+```
 
-- `lastStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
-- `lastErrorCode`: `str`
-- `lastErrorMessage`: `str`
-- `lastAttemptTime`: `datetime`
-- `lastSuccessfulTime`: `datetime`
-- `nextDeliveryTime`: `datetime`
-
-<a id="configrulecompliancefilterstypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStatusType](./literals.md#deliverystatustype) 
 ## ConfigRuleComplianceFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigRuleComplianceFiltersTypeDef
+
+def get_value() -> ConfigRuleComplianceFiltersTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigRuleComplianceFiltersTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    ComplianceType: NotRequired[ComplianceTypeType],  # (1)
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="configrulecompliancesummaryfilterstypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## ConfigRuleComplianceSummaryFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigRuleComplianceSummaryFiltersTypeDef
+
+def get_value() -> ConfigRuleComplianceSummaryFiltersTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-<a id="configruleevaluationstatustypedef"></a>
+```python title="Definition"
+class ConfigRuleComplianceSummaryFiltersTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    AwsRegion: NotRequired[str],
+```
 
 ## ConfigRuleEvaluationStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigRuleEvaluationStatusTypeDef
+
+def get_value() -> ConfigRuleEvaluationStatusTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleName`: `str`
-- `ConfigRuleArn`: `str`
-- `ConfigRuleId`: `str`
-- `LastSuccessfulInvocationTime`: `datetime`
-- `LastFailedInvocationTime`: `datetime`
-- `LastSuccessfulEvaluationTime`: `datetime`
-- `LastFailedEvaluationTime`: `datetime`
-- `FirstActivatedTime`: `datetime`
-- `LastDeactivatedTime`: `datetime`
-- `LastErrorCode`: `str`
-- `LastErrorMessage`: `str`
-- `FirstEvaluationStarted`: `bool`
-- `LastDebugLogDeliveryStatus`: `str`
-- `LastDebugLogDeliveryStatusReason`: `str`
-- `LastDebugLogDeliveryTime`: `datetime`
-
-<a id="configruletypedef"></a>
+```python title="Definition"
+class ConfigRuleEvaluationStatusTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    ConfigRuleArn: NotRequired[str],
+    ConfigRuleId: NotRequired[str],
+    LastSuccessfulInvocationTime: NotRequired[datetime],
+    LastFailedInvocationTime: NotRequired[datetime],
+    LastSuccessfulEvaluationTime: NotRequired[datetime],
+    LastFailedEvaluationTime: NotRequired[datetime],
+    FirstActivatedTime: NotRequired[datetime],
+    LastDeactivatedTime: NotRequired[datetime],
+    LastErrorCode: NotRequired[str],
+    LastErrorMessage: NotRequired[str],
+    FirstEvaluationStarted: NotRequired[bool],
+    LastDebugLogDeliveryStatus: NotRequired[str],
+    LastDebugLogDeliveryStatusReason: NotRequired[str],
+    LastDebugLogDeliveryTime: NotRequired[datetime],
+```
 
 ## ConfigRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigRuleTypeDef
+
+def get_value() -> ConfigRuleTypeDef:
+    return {
+        "Source": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigRuleTypeDef(TypedDict):
+    Source: SourceTypeDef,  # (2)
+    ConfigRuleName: NotRequired[str],
+    ConfigRuleArn: NotRequired[str],
+    ConfigRuleId: NotRequired[str],
+    Description: NotRequired[str],
+    Scope: NotRequired[ScopeTypeDef],  # (1)
+    InputParameters: NotRequired[str],
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (3)
+    ConfigRuleState: NotRequired[ConfigRuleStateType],  # (4)
+    CreatedBy: NotRequired[str],
+```
 
-- `Source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
-
-Optional fields:
-
-- `ConfigRuleName`: `str`
-- `ConfigRuleArn`: `str`
-- `ConfigRuleId`: `str`
-- `Description`: `str`
-- `Scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
-- `InputParameters`: `str`
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-- `ConfigRuleState`: [ConfigRuleStateType](./literals.md#configrulestatetype)
-- `CreatedBy`: `str`
-
-<a id="configsnapshotdeliverypropertiestypedef"></a>
-
+1. See [:material-code-braces: ScopeTypeDef](./type_defs.md#scopetypedef) 
+2. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+3. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
+4. See [:material-code-brackets: ConfigRuleStateType](./literals.md#configrulestatetype) 
 ## ConfigSnapshotDeliveryPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigSnapshotDeliveryPropertiesTypeDef
+
+def get_value() -> ConfigSnapshotDeliveryPropertiesTypeDef:
+    return {
+        "deliveryFrequency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigSnapshotDeliveryPropertiesTypeDef(TypedDict):
+    deliveryFrequency: NotRequired[MaximumExecutionFrequencyType],  # (1)
+```
 
-- `deliveryFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-
-<a id="configstreamdeliveryinfotypedef"></a>
-
+1. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## ConfigStreamDeliveryInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigStreamDeliveryInfoTypeDef
+
+def get_value() -> ConfigStreamDeliveryInfoTypeDef:
+    return {
+        "lastStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigStreamDeliveryInfoTypeDef(TypedDict):
+    lastStatus: NotRequired[DeliveryStatusType],  # (1)
+    lastErrorCode: NotRequired[str],
+    lastErrorMessage: NotRequired[str],
+    lastStatusChangeTime: NotRequired[datetime],
+```
 
-- `lastStatus`: [DeliveryStatusType](./literals.md#deliverystatustype)
-- `lastErrorCode`: `str`
-- `lastErrorMessage`: `str`
-- `lastStatusChangeTime`: `datetime`
-
-<a id="configurationaggregatortypedef"></a>
-
+1. See [:material-code-brackets: DeliveryStatusType](./literals.md#deliverystatustype) 
 ## ConfigurationAggregatorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigurationAggregatorTypeDef
+
+def get_value() -> ConfigurationAggregatorTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationAggregatorTypeDef(TypedDict):
+    ConfigurationAggregatorName: NotRequired[str],
+    ConfigurationAggregatorArn: NotRequired[str],
+    AccountAggregationSources: NotRequired[List[AccountAggregationSourceTypeDef]],  # (1)
+    OrganizationAggregationSource: NotRequired[OrganizationAggregationSourceTypeDef],  # (2)
+    CreationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+    CreatedBy: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-- `ConfigurationAggregatorArn`: `str`
-- `AccountAggregationSources`:
-  `List`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
-- `OrganizationAggregationSource`:
-  [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
-- `CreationTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-- `CreatedBy`: `str`
-
-<a id="configurationitemtypedef"></a>
-
+1. See [:material-code-braces: AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef) 
+2. See [:material-code-braces: OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef) 
 ## ConfigurationItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigurationItemTypeDef
+
+def get_value() -> ConfigurationItemTypeDef:
+    return {
+        "version": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationItemTypeDef(TypedDict):
+    version: NotRequired[str],
+    accountId: NotRequired[str],
+    configurationItemCaptureTime: NotRequired[datetime],
+    configurationItemStatus: NotRequired[ConfigurationItemStatusType],  # (1)
+    configurationStateId: NotRequired[str],
+    configurationItemMD5Hash: NotRequired[str],
+    arn: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (2)
+    resourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+    awsRegion: NotRequired[str],
+    availabilityZone: NotRequired[str],
+    resourceCreationTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+    relatedEvents: NotRequired[List[str]],
+    relationships: NotRequired[List[RelationshipTypeDef]],  # (3)
+    configuration: NotRequired[str],
+    supplementaryConfiguration: NotRequired[Dict[str, str]],
+```
 
-- `version`: `str`
-- `accountId`: `str`
-- `configurationItemCaptureTime`: `datetime`
-- `configurationItemStatus`:
-  [ConfigurationItemStatusType](./literals.md#configurationitemstatustype)
-- `configurationStateId`: `str`
-- `configurationItemMD5Hash`: `str`
-- `arn`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `resourceName`: `str`
-- `awsRegion`: `str`
-- `availabilityZone`: `str`
-- `resourceCreationTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `relatedEvents`: `List`\[`str`\]
-- `relationships`:
-  `List`\[[RelationshipTypeDef](./type_defs.md#relationshiptypedef)\]
-- `configuration`: `str`
-- `supplementaryConfiguration`: `Dict`\[`str`, `str`\]
-
-<a id="configurationrecorderstatustypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationItemStatusType](./literals.md#configurationitemstatustype) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: RelationshipTypeDef](./type_defs.md#relationshiptypedef) 
 ## ConfigurationRecorderStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigurationRecorderStatusTypeDef
+
+def get_value() -> ConfigurationRecorderStatusTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationRecorderStatusTypeDef(TypedDict):
+    name: NotRequired[str],
+    lastStartTime: NotRequired[datetime],
+    lastStopTime: NotRequired[datetime],
+    recording: NotRequired[bool],
+    lastStatus: NotRequired[RecorderStatusType],  # (1)
+    lastErrorCode: NotRequired[str],
+    lastErrorMessage: NotRequired[str],
+    lastStatusChangeTime: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `lastStartTime`: `datetime`
-- `lastStopTime`: `datetime`
-- `recording`: `bool`
-- `lastStatus`: [RecorderStatusType](./literals.md#recorderstatustype)
-- `lastErrorCode`: `str`
-- `lastErrorMessage`: `str`
-- `lastStatusChangeTime`: `datetime`
-
-<a id="configurationrecordertypedef"></a>
-
+1. See [:material-code-brackets: RecorderStatusType](./literals.md#recorderstatustype) 
 ## ConfigurationRecorderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConfigurationRecorderTypeDef
+
+def get_value() -> ConfigurationRecorderTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationRecorderTypeDef(TypedDict):
+    name: NotRequired[str],
+    roleARN: NotRequired[str],
+    recordingGroup: NotRequired[RecordingGroupTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `roleARN`: `str`
-- `recordingGroup`:
-  [RecordingGroupTypeDef](./type_defs.md#recordinggrouptypedef)
-
-<a id="conformancepackcompliancefilterstypedef"></a>
-
+1. See [:material-code-braces: RecordingGroupTypeDef](./type_defs.md#recordinggrouptypedef) 
 ## ConformancePackComplianceFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackComplianceFiltersTypeDef
+
+def get_value() -> ConformancePackComplianceFiltersTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConformancePackComplianceFiltersTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    ComplianceType: NotRequired[ConformancePackComplianceTypeType],  # (1)
+```
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-
-<a id="conformancepackcompliancesummarytypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## ConformancePackComplianceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackComplianceSummaryTypeDef
+
+def get_value() -> ConformancePackComplianceSummaryTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackComplianceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConformancePackComplianceSummaryTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackComplianceStatus: ConformancePackComplianceTypeType,  # (1)
+```
 
-- `ConformancePackName`: `str`
-- `ConformancePackComplianceStatus`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-
-<a id="conformancepackdetailtypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## ConformancePackDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackDetailTypeDef
+
+def get_value() -> ConformancePackDetailTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackArn": ...,
+        "ConformancePackId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConformancePackDetailTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackArn: str,
+    ConformancePackId: str,
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[List[ConformancePackInputParameterTypeDef]],  # (1)
+    LastUpdateRequestedTime: NotRequired[datetime],
+    CreatedBy: NotRequired[str],
+```
 
-- `ConformancePackName`: `str`
-- `ConformancePackArn`: `str`
-- `ConformancePackId`: `str`
-
-Optional fields:
-
-- `DeliveryS3Bucket`: `str`
-- `DeliveryS3KeyPrefix`: `str`
-- `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `LastUpdateRequestedTime`: `datetime`
-- `CreatedBy`: `str`
-
-<a id="conformancepackevaluationfilterstypedef"></a>
-
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
 ## ConformancePackEvaluationFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackEvaluationFiltersTypeDef
+
+def get_value() -> ConformancePackEvaluationFiltersTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConformancePackEvaluationFiltersTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    ComplianceType: NotRequired[ConformancePackComplianceTypeType],  # (1)
+    ResourceType: NotRequired[str],
+    ResourceIds: NotRequired[Sequence[str]],
+```
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-- `ResourceType`: `str`
-- `ResourceIds`: `Sequence`\[`str`\]
-
-<a id="conformancepackevaluationresulttypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## ConformancePackEvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackEvaluationResultTypeDef
+
+def get_value() -> ConformancePackEvaluationResultTypeDef:
+    return {
+        "ComplianceType": ...,
+        "EvaluationResultIdentifier": ...,
+        "ConfigRuleInvokedTime": ...,
+        "ResultRecordedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConformancePackEvaluationResultTypeDef(TypedDict):
+    ComplianceType: ConformancePackComplianceTypeType,  # (1)
+    EvaluationResultIdentifier: EvaluationResultIdentifierTypeDef,  # (2)
+    ConfigRuleInvokedTime: datetime,
+    ResultRecordedTime: datetime,
+    Annotation: NotRequired[str],
+```
 
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-- `EvaluationResultIdentifier`:
-  [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
-- `ConfigRuleInvokedTime`: `datetime`
-- `ResultRecordedTime`: `datetime`
-
-Optional fields:
-
-- `Annotation`: `str`
-
-<a id="conformancepackinputparametertypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
+2. See [:material-code-braces: EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef) 
 ## ConformancePackInputParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackInputParameterTypeDef
+
+def get_value() -> ConformancePackInputParameterTypeDef:
+    return {
+        "ParameterName": ...,
+        "ParameterValue": ...,
+    }
 ```
 
-Required fields:
-
-- `ParameterName`: `str`
-- `ParameterValue`: `str`
-
-<a id="conformancepackrulecompliancetypedef"></a>
+```python title="Definition"
+class ConformancePackInputParameterTypeDef(TypedDict):
+    ParameterName: str,
+    ParameterValue: str,
+```
 
 ## ConformancePackRuleComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackRuleComplianceTypeDef
+
+def get_value() -> ConformancePackRuleComplianceTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConformancePackRuleComplianceTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    ComplianceType: NotRequired[ConformancePackComplianceTypeType],  # (1)
+    Controls: NotRequired[List[str]],
+```
 
-- `ConfigRuleName`: `str`
-- `ComplianceType`:
-  [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
-- `Controls`: `List`\[`str`\]
-
-<a id="conformancepackstatusdetailtypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype) 
 ## ConformancePackStatusDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ConformancePackStatusDetailTypeDef
+
+def get_value() -> ConformancePackStatusDetailTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackId": ...,
+        "ConformancePackArn": ...,
+        "ConformancePackState": ...,
+        "StackArn": ...,
+        "LastUpdateRequestedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConformancePackStatusDetailTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackId: str,
+    ConformancePackArn: str,
+    ConformancePackState: ConformancePackStateType,  # (1)
+    StackArn: str,
+    LastUpdateRequestedTime: datetime,
+    ConformancePackStatusReason: NotRequired[str],
+    LastUpdateCompletedTime: NotRequired[datetime],
+```
 
-- `ConformancePackName`: `str`
-- `ConformancePackId`: `str`
-- `ConformancePackArn`: `str`
-- `ConformancePackState`:
-  [ConformancePackStateType](./literals.md#conformancepackstatetype)
-- `StackArn`: `str`
-- `LastUpdateRequestedTime`: `datetime`
-
-Optional fields:
-
-- `ConformancePackStatusReason`: `str`
-- `LastUpdateCompletedTime`: `datetime`
-
-<a id="custompolicydetailstypedef"></a>
-
+1. See [:material-code-brackets: ConformancePackStateType](./literals.md#conformancepackstatetype) 
 ## CustomPolicyDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import CustomPolicyDetailsTypeDef
+
+def get_value() -> CustomPolicyDetailsTypeDef:
+    return {
+        "PolicyRuntime": ...,
+        "PolicyText": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyRuntime`: `str`
-- `PolicyText`: `str`
-
-Optional fields:
-
-- `EnableDebugLogDelivery`: `bool`
-
-<a id="deleteaggregationauthorizationrequestrequesttypedef"></a>
+```python title="Definition"
+class CustomPolicyDetailsTypeDef(TypedDict):
+    PolicyRuntime: str,
+    PolicyText: str,
+    EnableDebugLogDelivery: NotRequired[bool],
+```
 
 ## DeleteAggregationAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteAggregationAuthorizationRequestRequestTypeDef
+
+def get_value() -> DeleteAggregationAuthorizationRequestRequestTypeDef:
+    return {
+        "AuthorizedAccountId": ...,
+        "AuthorizedAwsRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `AuthorizedAccountId`: `str`
-- `AuthorizedAwsRegion`: `str`
-
-<a id="deleteconfigrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAggregationAuthorizationRequestRequestTypeDef(TypedDict):
+    AuthorizedAccountId: str,
+    AuthorizedAwsRegion: str,
+```
 
 ## DeleteConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteConfigRuleRequestRequestTypeDef
+
+def get_value() -> DeleteConfigRuleRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigRuleName`: `str`
-
-<a id="deleteconfigurationaggregatorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigRuleRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+```
 
 ## DeleteConfigurationAggregatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteConfigurationAggregatorRequestRequestTypeDef
+
+def get_value() -> DeleteConfigurationAggregatorRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationAggregatorName`: `str`
-
-<a id="deleteconfigurationrecorderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationAggregatorRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+```
 
 ## DeleteConfigurationRecorderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteConfigurationRecorderRequestRequestTypeDef
+
+def get_value() -> DeleteConfigurationRecorderRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorderName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationRecorderName`: `str`
-
-<a id="deleteconformancepackrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConfigurationRecorderRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorderName: str,
+```
 
 ## DeleteConformancePackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteConformancePackRequestRequestTypeDef
+
+def get_value() -> DeleteConformancePackRequestRequestTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConformancePackName`: `str`
-
-<a id="deletedeliverychannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteConformancePackRequestRequestTypeDef(TypedDict):
+    ConformancePackName: str,
+```
 
 ## DeleteDeliveryChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteDeliveryChannelRequestRequestTypeDef
+
+def get_value() -> DeleteDeliveryChannelRequestRequestTypeDef:
+    return {
+        "DeliveryChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeliveryChannelName`: `str`
-
-<a id="deleteevaluationresultsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDeliveryChannelRequestRequestTypeDef(TypedDict):
+    DeliveryChannelName: str,
+```
 
 ## DeleteEvaluationResultsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteEvaluationResultsRequestRequestTypeDef
+
+def get_value() -> DeleteEvaluationResultsRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigRuleName`: `str`
-
-<a id="deleteorganizationconfigrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEvaluationResultsRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+```
 
 ## DeleteOrganizationConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteOrganizationConfigRuleRequestRequestTypeDef
+
+def get_value() -> DeleteOrganizationConfigRuleRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+    }
 ```
 
-Required fields:
-
-- `OrganizationConfigRuleName`: `str`
-
-<a id="deleteorganizationconformancepackrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOrganizationConfigRuleRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+```
 
 ## DeleteOrganizationConformancePackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteOrganizationConformancePackRequestRequestTypeDef
+
+def get_value() -> DeleteOrganizationConformancePackRequestRequestTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+    }
 ```
 
-Required fields:
-
-- `OrganizationConformancePackName`: `str`
-
-<a id="deletependingaggregationrequestrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteOrganizationConformancePackRequestRequestTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+```
 
 ## DeletePendingAggregationRequestRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeletePendingAggregationRequestRequestRequestTypeDef
+
+def get_value() -> DeletePendingAggregationRequestRequestRequestTypeDef:
+    return {
+        "RequesterAccountId": ...,
+        "RequesterAwsRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `RequesterAccountId`: `str`
-- `RequesterAwsRegion`: `str`
-
-<a id="deleteremediationconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePendingAggregationRequestRequestRequestTypeDef(TypedDict):
+    RequesterAccountId: str,
+    RequesterAwsRegion: str,
+```
 
 ## DeleteRemediationConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteRemediationConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteRemediationConfigurationRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigRuleName`: `str`
-
-Optional fields:
-
-- `ResourceType`: `str`
-
-<a id="deleteremediationexceptionsrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRemediationConfigurationRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceType: NotRequired[str],
+```
 
 ## DeleteRemediationExceptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteRemediationExceptionsRequestRequestTypeDef
+
+def get_value() -> DeleteRemediationExceptionsRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "ResourceKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRemediationExceptionsRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: Sequence[RemediationExceptionResourceKeyTypeDef],  # (1)
+```
 
-- `ConfigRuleName`: `str`
-- `ResourceKeys`:
-  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
-
-<a id="deleteremediationexceptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef) 
 ## DeleteRemediationExceptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteRemediationExceptionsResponseTypeDef
+
+def get_value() -> DeleteRemediationExceptionsResponseTypeDef:
+    return {
+        "FailedBatches": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRemediationExceptionsResponseTypeDef(TypedDict):
+    FailedBatches: List[FailedDeleteRemediationExceptionsBatchTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedBatches`:
-  `List`\[[FailedDeleteRemediationExceptionsBatchTypeDef](./type_defs.md#faileddeleteremediationexceptionsbatchtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedDeleteRemediationExceptionsBatchTypeDef](./type_defs.md#faileddeleteremediationexceptionsbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteResourceConfigRequestRequestTypeDef
+
+def get_value() -> DeleteResourceConfigRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-
-<a id="deleteretentionconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourceConfigRequestRequestTypeDef(TypedDict):
+    ResourceType: str,
+    ResourceId: str,
+```
 
 ## DeleteRetentionConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteRetentionConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteRetentionConfigurationRequestRequestTypeDef:
+    return {
+        "RetentionConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `RetentionConfigurationName`: `str`
-
-<a id="deletestoredqueryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRetentionConfigurationRequestRequestTypeDef(TypedDict):
+    RetentionConfigurationName: str,
+```
 
 ## DeleteStoredQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeleteStoredQueryRequestRequestTypeDef
+
+def get_value() -> DeleteStoredQueryRequestRequestTypeDef:
+    return {
+        "QueryName": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryName`: `str`
-
-<a id="deliverconfigsnapshotrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteStoredQueryRequestRequestTypeDef(TypedDict):
+    QueryName: str,
+```
 
 ## DeliverConfigSnapshotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeliverConfigSnapshotRequestRequestTypeDef
+
+def get_value() -> DeliverConfigSnapshotRequestRequestTypeDef:
+    return {
+        "deliveryChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `deliveryChannelName`: `str`
-
-<a id="deliverconfigsnapshotresponsetypedef"></a>
+```python title="Definition"
+class DeliverConfigSnapshotRequestRequestTypeDef(TypedDict):
+    deliveryChannelName: str,
+```
 
 ## DeliverConfigSnapshotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeliverConfigSnapshotResponseTypeDef
+
+def get_value() -> DeliverConfigSnapshotResponseTypeDef:
+    return {
+        "configSnapshotId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeliverConfigSnapshotResponseTypeDef(TypedDict):
+    configSnapshotId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `configSnapshotId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deliverychannelstatustypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeliveryChannelStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeliveryChannelStatusTypeDef
+
+def get_value() -> DeliveryChannelStatusTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeliveryChannelStatusTypeDef(TypedDict):
+    name: NotRequired[str],
+    configSnapshotDeliveryInfo: NotRequired[ConfigExportDeliveryInfoTypeDef],  # (1)
+    configHistoryDeliveryInfo: NotRequired[ConfigExportDeliveryInfoTypeDef],  # (1)
+    configStreamDeliveryInfo: NotRequired[ConfigStreamDeliveryInfoTypeDef],  # (3)
+```
 
-- `name`: `str`
-- `configSnapshotDeliveryInfo`:
-  [ConfigExportDeliveryInfoTypeDef](./type_defs.md#configexportdeliveryinfotypedef)
-- `configHistoryDeliveryInfo`:
-  [ConfigExportDeliveryInfoTypeDef](./type_defs.md#configexportdeliveryinfotypedef)
-- `configStreamDeliveryInfo`:
-  [ConfigStreamDeliveryInfoTypeDef](./type_defs.md#configstreamdeliveryinfotypedef)
-
-<a id="deliverychanneltypedef"></a>
-
+1. See [:material-code-braces: ConfigExportDeliveryInfoTypeDef](./type_defs.md#configexportdeliveryinfotypedef) 
+2. See [:material-code-braces: ConfigExportDeliveryInfoTypeDef](./type_defs.md#configexportdeliveryinfotypedef) 
+3. See [:material-code-braces: ConfigStreamDeliveryInfoTypeDef](./type_defs.md#configstreamdeliveryinfotypedef) 
 ## DeliveryChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DeliveryChannelTypeDef
+
+def get_value() -> DeliveryChannelTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeliveryChannelTypeDef(TypedDict):
+    name: NotRequired[str],
+    s3BucketName: NotRequired[str],
+    s3KeyPrefix: NotRequired[str],
+    s3KmsKeyArn: NotRequired[str],
+    snsTopicARN: NotRequired[str],
+    configSnapshotDeliveryProperties: NotRequired[ConfigSnapshotDeliveryPropertiesTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `s3BucketName`: `str`
-- `s3KeyPrefix`: `str`
-- `s3KmsKeyArn`: `str`
-- `snsTopicARN`: `str`
-- `configSnapshotDeliveryProperties`:
-  [ConfigSnapshotDeliveryPropertiesTypeDef](./type_defs.md#configsnapshotdeliverypropertiestypedef)
+1. See [:material-code-braces: ConfigSnapshotDeliveryPropertiesTypeDef](./type_defs.md#configsnapshotdeliverypropertiestypedef) 
+## DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef
 
-<a id="describeaggregatecompliancebyconfigrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef
 
+def get_value() -> DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAggregateComplianceByConfigRulesRequestDescribeAggregateComplianceByConfigRulesPaginateTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[ConfigRuleComplianceFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef
+
+def get_value() -> DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[ConfigRuleComplianceFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeaggregatecompliancebyconfigrulesresponsetypedef"></a>
-
+1. See [:material-code-braces: ConfigRuleComplianceFiltersTypeDef](./type_defs.md#configrulecompliancefilterstypedef) 
 ## DescribeAggregateComplianceByConfigRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConfigRulesResponseTypeDef
+
+def get_value() -> DescribeAggregateComplianceByConfigRulesResponseTypeDef:
+    return {
+        "AggregateComplianceByConfigRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAggregateComplianceByConfigRulesResponseTypeDef(TypedDict):
+    AggregateComplianceByConfigRules: List[AggregateComplianceByConfigRuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregateComplianceByConfigRules`:
-  `List`\[[AggregateComplianceByConfigRuleTypeDef](./type_defs.md#aggregatecompliancebyconfigruletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregateComplianceByConfigRuleTypeDef](./type_defs.md#aggregatecompliancebyconfigruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef
 
-<a id="describeaggregatecompliancebyconformancepacksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef
 
+def get_value() -> DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAggregateComplianceByConformancePacksRequestDescribeAggregateComplianceByConformancePacksPaginateTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[AggregateConformancePackComplianceFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef
+
+def get_value() -> DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[AggregateConformancePackComplianceFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeaggregatecompliancebyconformancepacksresponsetypedef"></a>
-
+1. See [:material-code-braces: AggregateConformancePackComplianceFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancefilterstypedef) 
 ## DescribeAggregateComplianceByConformancePacksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregateComplianceByConformancePacksResponseTypeDef
+
+def get_value() -> DescribeAggregateComplianceByConformancePacksResponseTypeDef:
+    return {
+        "AggregateComplianceByConformancePacks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAggregateComplianceByConformancePacksResponseTypeDef(TypedDict):
+    AggregateComplianceByConformancePacks: List[AggregateComplianceByConformancePackTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregateComplianceByConformancePacks`:
-  `List`\[[AggregateComplianceByConformancePackTypeDef](./type_defs.md#aggregatecompliancebyconformancepacktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregateComplianceByConformancePackTypeDef](./type_defs.md#aggregatecompliancebyconformancepacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef
 
-<a id="describeaggregationauthorizationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef
 
+def get_value() -> DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAggregationAuthorizationsRequestDescribeAggregationAuthorizationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAggregationAuthorizationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsRequestRequestTypeDef
+
+def get_value() -> DescribeAggregationAuthorizationsRequestRequestTypeDef:
+    return {
+        "Limit": ...,
+    }
 ```
 
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeaggregationauthorizationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeAggregationAuthorizationsRequestRequestTypeDef(TypedDict):
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeAggregationAuthorizationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeAggregationAuthorizationsResponseTypeDef
+
+def get_value() -> DescribeAggregationAuthorizationsResponseTypeDef:
+    return {
+        "AggregationAuthorizations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAggregationAuthorizationsResponseTypeDef(TypedDict):
+    AggregationAuthorizations: List[AggregationAuthorizationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregationAuthorizations`:
-  `List`\[[AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef
 
-<a id="describecompliancebyconfigrulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef
 
+def get_value() -> DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComplianceByConfigRuleRequestDescribeComplianceByConfigRulePaginateTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeComplianceByConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleRequestRequestTypeDef
+
+def get_value() -> DescribeComplianceByConfigRuleRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeComplianceByConfigRuleRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `NextToken`: `str`
-
-<a id="describecompliancebyconfigruleresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## DescribeComplianceByConfigRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeComplianceByConfigRuleResponseTypeDef
+
+def get_value() -> DescribeComplianceByConfigRuleResponseTypeDef:
+    return {
+        "ComplianceByConfigRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeComplianceByConfigRuleResponseTypeDef(TypedDict):
+    ComplianceByConfigRules: List[ComplianceByConfigRuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceByConfigRules`:
-  `List`\[[ComplianceByConfigRuleTypeDef](./type_defs.md#compliancebyconfigruletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComplianceByConfigRuleTypeDef](./type_defs.md#compliancebyconfigruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef
 
-<a id="describecompliancebyresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef
 
+def get_value() -> DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef:
+    return {
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeComplianceByResourceRequestDescribeComplianceByResourcePaginateTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeComplianceByResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeComplianceByResourceRequestRequestTypeDef
+
+def get_value() -> DescribeComplianceByResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeComplianceByResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describecompliancebyresourceresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## DescribeComplianceByResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeComplianceByResourceResponseTypeDef
+
+def get_value() -> DescribeComplianceByResourceResponseTypeDef:
+    return {
+        "ComplianceByResources": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeComplianceByResourceResponseTypeDef(TypedDict):
+    ComplianceByResources: List[ComplianceByResourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceByResources`:
-  `List`\[[ComplianceByResourceTypeDef](./type_defs.md#compliancebyresourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ComplianceByResourceTypeDef](./type_defs.md#compliancebyresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef
 
-<a id="describeconfigruleevaluationstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef
 
+def get_value() -> DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigRuleEvaluationStatusRequestDescribeConfigRuleEvaluationStatusPaginateTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConfigRuleEvaluationStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusRequestRequestTypeDef
+
+def get_value() -> DescribeConfigRuleEvaluationStatusRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describeconfigruleevaluationstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigRuleEvaluationStatusRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeConfigRuleEvaluationStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigRuleEvaluationStatusResponseTypeDef
+
+def get_value() -> DescribeConfigRuleEvaluationStatusResponseTypeDef:
+    return {
+        "ConfigRulesEvaluationStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigRuleEvaluationStatusResponseTypeDef(TypedDict):
+    ConfigRulesEvaluationStatus: List[ConfigRuleEvaluationStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigRulesEvaluationStatus`:
-  `List`\[[ConfigRuleEvaluationStatusTypeDef](./type_defs.md#configruleevaluationstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConfigRuleEvaluationStatusTypeDef](./type_defs.md#configruleevaluationstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
 
-<a id="describeconfigrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef
 
+def get_value() -> DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigRulesRequestDescribeConfigRulesPaginateTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConfigRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigRulesRequestRequestTypeDef
+
+def get_value() -> DescribeConfigRulesRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-
-<a id="describeconfigrulesresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigRulesRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeConfigRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigRulesResponseTypeDef
+
+def get_value() -> DescribeConfigRulesResponseTypeDef:
+    return {
+        "ConfigRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigRulesResponseTypeDef(TypedDict):
+    ConfigRules: List[ConfigRuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigRules`:
-  `List`\[[ConfigRuleTypeDef](./type_defs.md#configruletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConfigRuleTypeDef](./type_defs.md#configruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef
 
-<a id="describeconfigurationaggregatorsourcesstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef
 
+def get_value() -> DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationAggregatorSourcesStatusRequestDescribeConfigurationAggregatorSourcesStatusPaginateTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    UpdateStatus: NotRequired[Sequence[AggregatedSourceStatusTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    UpdateStatus: NotRequired[Sequence[AggregatedSourceStatusTypeType]],  # (1)
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `UpdateStatus`:
-  `Sequence`\[[AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype)\]
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describeconfigurationaggregatorsourcesstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: AggregatedSourceStatusTypeType](./literals.md#aggregatedsourcestatustypetype) 
 ## DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
+
+def get_value() -> DescribeConfigurationAggregatorSourcesStatusResponseTypeDef:
+    return {
+        "AggregatedSourceStatusList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationAggregatorSourcesStatusResponseTypeDef(TypedDict):
+    AggregatedSourceStatusList: List[AggregatedSourceStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregatedSourceStatusList`:
-  `List`\[[AggregatedSourceStatusTypeDef](./type_defs.md#aggregatedsourcestatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregatedSourceStatusTypeDef](./type_defs.md#aggregatedsourcestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef
 
-<a id="describeconfigurationaggregatorsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef
 
+def get_value() -> DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef:
+    return {
+        "ConfigurationAggregatorNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConfigurationAggregatorsRequestDescribeConfigurationAggregatorsPaginateTypeDef(TypedDict):
+    ConfigurationAggregatorNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConfigurationAggregatorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationAggregatorsRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `Limit`: `int`
-
-<a id="describeconfigurationaggregatorsresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigurationAggregatorsRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## DescribeConfigurationAggregatorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationAggregatorsResponseTypeDef
+
+def get_value() -> DescribeConfigurationAggregatorsResponseTypeDef:
+    return {
+        "ConfigurationAggregators": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationAggregatorsResponseTypeDef(TypedDict):
+    ConfigurationAggregators: List[ConfigurationAggregatorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationAggregators`:
-  `List`\[[ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconfigurationrecorderstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConfigurationRecorderStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationRecorderStatusRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorderNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
-
-<a id="describeconfigurationrecorderstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigurationRecorderStatusRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorderNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeConfigurationRecorderStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusResponseTypeDef
+
+def get_value() -> DescribeConfigurationRecorderStatusResponseTypeDef:
+    return {
+        "ConfigurationRecordersStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationRecorderStatusResponseTypeDef(TypedDict):
+    ConfigurationRecordersStatus: List[ConfigurationRecorderStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationRecordersStatus`:
-  `List`\[[ConfigurationRecorderStatusTypeDef](./type_defs.md#configurationrecorderstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconfigurationrecordersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationRecorderStatusTypeDef](./type_defs.md#configurationrecorderstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConfigurationRecordersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationRecordersRequestRequestTypeDef
+
+def get_value() -> DescribeConfigurationRecordersRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorderNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigurationRecorderNames`: `Sequence`\[`str`\]
-
-<a id="describeconfigurationrecordersresponsetypedef"></a>
+```python title="Definition"
+class DescribeConfigurationRecordersRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorderNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeConfigurationRecordersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConfigurationRecordersResponseTypeDef
+
+def get_value() -> DescribeConfigurationRecordersResponseTypeDef:
+    return {
+        "ConfigurationRecorders": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConfigurationRecordersResponseTypeDef(TypedDict):
+    ConfigurationRecorders: List[ConfigurationRecorderTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationRecorders`:
-  `List`\[[ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeconformancepackcompliancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeConformancePackComplianceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePackComplianceRequestRequestTypeDef
+
+def get_value() -> DescribeConformancePackComplianceRequestRequestTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConformancePackComplianceRequestRequestTypeDef(TypedDict):
+    ConformancePackName: str,
+    Filters: NotRequired[ConformancePackComplianceFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConformancePackName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [ConformancePackComplianceFiltersTypeDef](./type_defs.md#conformancepackcompliancefilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeconformancepackcomplianceresponsetypedef"></a>
-
+1. See [:material-code-braces: ConformancePackComplianceFiltersTypeDef](./type_defs.md#conformancepackcompliancefilterstypedef) 
 ## DescribeConformancePackComplianceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePackComplianceResponseTypeDef
+
+def get_value() -> DescribeConformancePackComplianceResponseTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackRuleComplianceList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConformancePackComplianceResponseTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackRuleComplianceList: List[ConformancePackRuleComplianceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConformancePackName`: `str`
-- `ConformancePackRuleComplianceList`:
-  `List`\[[ConformancePackRuleComplianceTypeDef](./type_defs.md#conformancepackrulecompliancetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConformancePackRuleComplianceTypeDef](./type_defs.md#conformancepackrulecompliancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef
 
-<a id="describeconformancepackstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef
 
+def get_value() -> DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConformancePackStatusRequestDescribeConformancePackStatusPaginateTypeDef(TypedDict):
+    ConformancePackNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConformancePackStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePackStatusRequestRequestTypeDef
+
+def get_value() -> DescribeConformancePackStatusRequestRequestTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConformancePackNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeconformancepackstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeConformancePackStatusRequestRequestTypeDef(TypedDict):
+    ConformancePackNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeConformancePackStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePackStatusResponseTypeDef
+
+def get_value() -> DescribeConformancePackStatusResponseTypeDef:
+    return {
+        "ConformancePackStatusDetails": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConformancePackStatusResponseTypeDef(TypedDict):
+    ConformancePackStatusDetails: List[ConformancePackStatusDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConformancePackStatusDetails`:
-  `List`\[[ConformancePackStatusDetailTypeDef](./type_defs.md#conformancepackstatusdetailtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConformancePackStatusDetailTypeDef](./type_defs.md#conformancepackstatusdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef
 
-<a id="describeconformancepacksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef
 
+def get_value() -> DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeConformancePacksRequestDescribeConformancePacksPaginateTypeDef(TypedDict):
+    ConformancePackNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeConformancePacksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePacksRequestRequestTypeDef
+
+def get_value() -> DescribeConformancePacksRequestRequestTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConformancePackNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeconformancepacksresponsetypedef"></a>
+```python title="Definition"
+class DescribeConformancePacksRequestRequestTypeDef(TypedDict):
+    ConformancePackNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeConformancePacksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeConformancePacksResponseTypeDef
+
+def get_value() -> DescribeConformancePacksResponseTypeDef:
+    return {
+        "ConformancePackDetails": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeConformancePacksResponseTypeDef(TypedDict):
+    ConformancePackDetails: List[ConformancePackDetailTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConformancePackDetails`:
-  `List`\[[ConformancePackDetailTypeDef](./type_defs.md#conformancepackdetailtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedeliverychannelstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConformancePackDetailTypeDef](./type_defs.md#conformancepackdetailtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeliveryChannelStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusRequestRequestTypeDef
+
+def get_value() -> DescribeDeliveryChannelStatusRequestRequestTypeDef:
+    return {
+        "DeliveryChannelNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeliveryChannelNames`: `Sequence`\[`str`\]
-
-<a id="describedeliverychannelstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeliveryChannelStatusRequestRequestTypeDef(TypedDict):
+    DeliveryChannelNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeDeliveryChannelStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusResponseTypeDef
+
+def get_value() -> DescribeDeliveryChannelStatusResponseTypeDef:
+    return {
+        "DeliveryChannelsStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeliveryChannelStatusResponseTypeDef(TypedDict):
+    DeliveryChannelsStatus: List[DeliveryChannelStatusTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeliveryChannelsStatus`:
-  `List`\[[DeliveryChannelStatusTypeDef](./type_defs.md#deliverychannelstatustypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedeliverychannelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeliveryChannelStatusTypeDef](./type_defs.md#deliverychannelstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeliveryChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeDeliveryChannelsRequestRequestTypeDef
+
+def get_value() -> DescribeDeliveryChannelsRequestRequestTypeDef:
+    return {
+        "DeliveryChannelNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `DeliveryChannelNames`: `Sequence`\[`str`\]
-
-<a id="describedeliverychannelsresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeliveryChannelsRequestRequestTypeDef(TypedDict):
+    DeliveryChannelNames: NotRequired[Sequence[str]],
+```
 
 ## DescribeDeliveryChannelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeDeliveryChannelsResponseTypeDef
+
+def get_value() -> DescribeDeliveryChannelsResponseTypeDef:
+    return {
+        "DeliveryChannels": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeliveryChannelsResponseTypeDef(TypedDict):
+    DeliveryChannels: List[DeliveryChannelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DeliveryChannels`:
-  `List`\[[DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef
 
-<a id="describeorganizationconfigrulestatusesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef
 
+def get_value() -> DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef:
+    return {
+        "OrganizationConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConfigRuleStatusesRequestDescribeOrganizationConfigRuleStatusesPaginateTypeDef(TypedDict):
+    OrganizationConfigRuleNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeorganizationconfigrulestatusesresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeOrganizationConfigRuleStatusesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConfigRuleStatusesResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigRuleStatusesResponseTypeDef:
+    return {
+        "OrganizationConfigRuleStatuses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConfigRuleStatusesResponseTypeDef(TypedDict):
+    OrganizationConfigRuleStatuses: List[OrganizationConfigRuleStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConfigRuleStatuses`:
-  `List`\[[OrganizationConfigRuleStatusTypeDef](./type_defs.md#organizationconfigrulestatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OrganizationConfigRuleStatusTypeDef](./type_defs.md#organizationconfigrulestatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef
 
-<a id="describeorganizationconfigrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef
 
+def get_value() -> DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef:
+    return {
+        "OrganizationConfigRuleNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConfigRulesRequestDescribeOrganizationConfigRulesPaginateTypeDef(TypedDict):
+    OrganizationConfigRuleNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrganizationConfigRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationConfigRulesRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeorganizationconfigrulesresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationConfigRulesRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeOrganizationConfigRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConfigRulesResponseTypeDef
+
+def get_value() -> DescribeOrganizationConfigRulesResponseTypeDef:
+    return {
+        "OrganizationConfigRules": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConfigRulesResponseTypeDef(TypedDict):
+    OrganizationConfigRules: List[OrganizationConfigRuleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConfigRules`:
-  `List`\[[OrganizationConfigRuleTypeDef](./type_defs.md#organizationconfigruletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OrganizationConfigRuleTypeDef](./type_defs.md#organizationconfigruletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef
 
-<a id="describeorganizationconformancepackstatusesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef
 
+def get_value() -> DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef:
+    return {
+        "OrganizationConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConformancePackStatusesRequestDescribeOrganizationConformancePackStatusesPaginateTypeDef(TypedDict):
+    OrganizationConformancePackNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrganizationConformancePackStatusesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationConformancePackStatusesRequestRequestTypeDef:
+    return {
+        "OrganizationConformancePackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeorganizationconformancepackstatusesresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationConformancePackStatusesRequestRequestTypeDef(TypedDict):
+    OrganizationConformancePackNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeOrganizationConformancePackStatusesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConformancePackStatusesResponseTypeDef
+
+def get_value() -> DescribeOrganizationConformancePackStatusesResponseTypeDef:
+    return {
+        "OrganizationConformancePackStatuses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConformancePackStatusesResponseTypeDef(TypedDict):
+    OrganizationConformancePackStatuses: List[OrganizationConformancePackStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConformancePackStatuses`:
-  `List`\[[OrganizationConformancePackStatusTypeDef](./type_defs.md#organizationconformancepackstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OrganizationConformancePackStatusTypeDef](./type_defs.md#organizationconformancepackstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef
 
-<a id="describeorganizationconformancepacksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef
 
+def get_value() -> DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef:
+    return {
+        "OrganizationConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeOrganizationConformancePacksRequestDescribeOrganizationConformancePacksPaginateTypeDef(TypedDict):
+    OrganizationConformancePackNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeOrganizationConformancePacksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksRequestRequestTypeDef
+
+def get_value() -> DescribeOrganizationConformancePacksRequestRequestTypeDef:
+    return {
+        "OrganizationConformancePackNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `OrganizationConformancePackNames`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeorganizationconformancepacksresponsetypedef"></a>
+```python title="Definition"
+class DescribeOrganizationConformancePacksRequestRequestTypeDef(TypedDict):
+    OrganizationConformancePackNames: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeOrganizationConformancePacksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeOrganizationConformancePacksResponseTypeDef
+
+def get_value() -> DescribeOrganizationConformancePacksResponseTypeDef:
+    return {
+        "OrganizationConformancePacks": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeOrganizationConformancePacksResponseTypeDef(TypedDict):
+    OrganizationConformancePacks: List[OrganizationConformancePackTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConformancePacks`:
-  `List`\[[OrganizationConformancePackTypeDef](./type_defs.md#organizationconformancepacktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OrganizationConformancePackTypeDef](./type_defs.md#organizationconformancepacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef
 
-<a id="describependingaggregationrequestsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef
 
+def get_value() -> DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class DescribePendingAggregationRequestsRequestDescribePendingAggregationRequestsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribePendingAggregationRequestsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsRequestRequestTypeDef
+
+def get_value() -> DescribePendingAggregationRequestsRequestRequestTypeDef:
+    return {
+        "Limit": ...,
+    }
 ```
 
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describependingaggregationrequestsresponsetypedef"></a>
+```python title="Definition"
+class DescribePendingAggregationRequestsRequestRequestTypeDef(TypedDict):
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribePendingAggregationRequestsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribePendingAggregationRequestsResponseTypeDef
+
+def get_value() -> DescribePendingAggregationRequestsResponseTypeDef:
+    return {
+        "PendingAggregationRequests": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePendingAggregationRequestsResponseTypeDef(TypedDict):
+    PendingAggregationRequests: List[PendingAggregationRequestTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PendingAggregationRequests`:
-  `List`\[[PendingAggregationRequestTypeDef](./type_defs.md#pendingaggregationrequesttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeremediationconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PendingAggregationRequestTypeDef](./type_defs.md#pendingaggregationrequesttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRemediationConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsRequestRequestTypeDef
+
+def get_value() -> DescribeRemediationConfigurationsRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-
-<a id="describeremediationconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeRemediationConfigurationsRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: Sequence[str],
+```
 
 ## DescribeRemediationConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsResponseTypeDef
+
+def get_value() -> DescribeRemediationConfigurationsResponseTypeDef:
+    return {
+        "RemediationConfigurations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRemediationConfigurationsResponseTypeDef(TypedDict):
+    RemediationConfigurations: List[RemediationConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RemediationConfigurations`:
-  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeremediationexceptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRemediationExceptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationExceptionsRequestRequestTypeDef
+
+def get_value() -> DescribeRemediationExceptionsRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRemediationExceptionsRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: NotRequired[Sequence[RemediationExceptionResourceKeyTypeDef]],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-
-Optional fields:
-
-- `ResourceKeys`:
-  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeremediationexceptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef) 
 ## DescribeRemediationExceptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationExceptionsResponseTypeDef
+
+def get_value() -> DescribeRemediationExceptionsResponseTypeDef:
+    return {
+        "RemediationExceptions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRemediationExceptionsResponseTypeDef(TypedDict):
+    RemediationExceptions: List[RemediationExceptionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RemediationExceptions`:
-  `List`\[[RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef
 
-<a id="describeremediationexecutionstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef
 
+def get_value() -> DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRemediationExecutionStatusRequestDescribeRemediationExecutionStatusPaginateTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: NotRequired[Sequence[ResourceKeyTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeRemediationExecutionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusRequestRequestTypeDef
+
+def get_value() -> DescribeRemediationExecutionStatusRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRemediationExecutionStatusRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: NotRequired[Sequence[ResourceKeyTypeDef]],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-
-Optional fields:
-
-- `ResourceKeys`:
-  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="describeremediationexecutionstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
 ## DescribeRemediationExecutionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRemediationExecutionStatusResponseTypeDef
+
+def get_value() -> DescribeRemediationExecutionStatusResponseTypeDef:
+    return {
+        "RemediationExecutionStatuses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRemediationExecutionStatusResponseTypeDef(TypedDict):
+    RemediationExecutionStatuses: List[RemediationExecutionStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RemediationExecutionStatuses`:
-  `List`\[[RemediationExecutionStatusTypeDef](./type_defs.md#remediationexecutionstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RemediationExecutionStatusTypeDef](./type_defs.md#remediationexecutionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef
 
-<a id="describeretentionconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef
 
+def get_value() -> DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef:
+    return {
+        "RetentionConfigurationNames": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeRetentionConfigurationsRequestDescribeRetentionConfigurationsPaginateTypeDef(TypedDict):
+    RetentionConfigurationNames: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeRetentionConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsRequestRequestTypeDef
+
+def get_value() -> DescribeRetentionConfigurationsRequestRequestTypeDef:
+    return {
+        "RetentionConfigurationNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `RetentionConfigurationNames`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-
-<a id="describeretentionconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class DescribeRetentionConfigurationsRequestRequestTypeDef(TypedDict):
+    RetentionConfigurationNames: NotRequired[Sequence[str]],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeRetentionConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import DescribeRetentionConfigurationsResponseTypeDef
+
+def get_value() -> DescribeRetentionConfigurationsResponseTypeDef:
+    return {
+        "RetentionConfigurations": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRetentionConfigurationsResponseTypeDef(TypedDict):
+    RetentionConfigurations: List[RetentionConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RetentionConfigurations`:
-  `List`\[[RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="evaluationresultidentifiertypedef"></a>
-
+1. See [:material-code-braces: RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EvaluationResultIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import EvaluationResultIdentifierTypeDef
+
+def get_value() -> EvaluationResultIdentifierTypeDef:
+    return {
+        "EvaluationResultQualifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationResultIdentifierTypeDef(TypedDict):
+    EvaluationResultQualifier: NotRequired[EvaluationResultQualifierTypeDef],  # (1)
+    OrderingTimestamp: NotRequired[datetime],
+```
 
-- `EvaluationResultQualifier`:
-  [EvaluationResultQualifierTypeDef](./type_defs.md#evaluationresultqualifiertypedef)
-- `OrderingTimestamp`: `datetime`
-
-<a id="evaluationresultqualifiertypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultQualifierTypeDef](./type_defs.md#evaluationresultqualifiertypedef) 
 ## EvaluationResultQualifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import EvaluationResultQualifierTypeDef
+
+def get_value() -> EvaluationResultQualifierTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleName`: `str`
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-
-<a id="evaluationresulttypedef"></a>
+```python title="Definition"
+class EvaluationResultQualifierTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+```
 
 ## EvaluationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import EvaluationResultTypeDef
+
+def get_value() -> EvaluationResultTypeDef:
+    return {
+        "EvaluationResultIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EvaluationResultTypeDef(TypedDict):
+    EvaluationResultIdentifier: NotRequired[EvaluationResultIdentifierTypeDef],  # (1)
+    ComplianceType: NotRequired[ComplianceTypeType],  # (2)
+    ResultRecordedTime: NotRequired[datetime],
+    ConfigRuleInvokedTime: NotRequired[datetime],
+    Annotation: NotRequired[str],
+    ResultToken: NotRequired[str],
+```
 
-- `EvaluationResultIdentifier`:
-  [EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef)
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `ResultRecordedTime`: `datetime`
-- `ConfigRuleInvokedTime`: `datetime`
-- `Annotation`: `str`
-- `ResultToken`: `str`
-
-<a id="evaluationtypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultIdentifierTypeDef](./type_defs.md#evaluationresultidentifiertypedef) 
+2. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## EvaluationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import EvaluationTypeDef
+
+def get_value() -> EvaluationTypeDef:
+    return {
+        "ComplianceResourceType": ...,
+        "ComplianceResourceId": ...,
+        "ComplianceType": ...,
+        "OrderingTimestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EvaluationTypeDef(TypedDict):
+    ComplianceResourceType: str,
+    ComplianceResourceId: str,
+    ComplianceType: ComplianceTypeType,  # (1)
+    OrderingTimestamp: Union[datetime, str],
+    Annotation: NotRequired[str],
+```
 
-- `ComplianceResourceType`: `str`
-- `ComplianceResourceId`: `str`
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `OrderingTimestamp`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `Annotation`: `str`
-
-<a id="executioncontrolstypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## ExecutionControlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ExecutionControlsTypeDef
+
+def get_value() -> ExecutionControlsTypeDef:
+    return {
+        "SsmControls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionControlsTypeDef(TypedDict):
+    SsmControls: NotRequired[SsmControlsTypeDef],  # (1)
+```
 
-- `SsmControls`: [SsmControlsTypeDef](./type_defs.md#ssmcontrolstypedef)
-
-<a id="externalevaluationtypedef"></a>
-
+1. See [:material-code-braces: SsmControlsTypeDef](./type_defs.md#ssmcontrolstypedef) 
 ## ExternalEvaluationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ExternalEvaluationTypeDef
+
+def get_value() -> ExternalEvaluationTypeDef:
+    return {
+        "ComplianceResourceType": ...,
+        "ComplianceResourceId": ...,
+        "ComplianceType": ...,
+        "OrderingTimestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExternalEvaluationTypeDef(TypedDict):
+    ComplianceResourceType: str,
+    ComplianceResourceId: str,
+    ComplianceType: ComplianceTypeType,  # (1)
+    OrderingTimestamp: Union[datetime, str],
+    Annotation: NotRequired[str],
+```
 
-- `ComplianceResourceType`: `str`
-- `ComplianceResourceId`: `str`
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `OrderingTimestamp`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `Annotation`: `str`
-
-<a id="faileddeleteremediationexceptionsbatchtypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## FailedDeleteRemediationExceptionsBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import FailedDeleteRemediationExceptionsBatchTypeDef
+
+def get_value() -> FailedDeleteRemediationExceptionsBatchTypeDef:
+    return {
+        "FailureMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedDeleteRemediationExceptionsBatchTypeDef(TypedDict):
+    FailureMessage: NotRequired[str],
+    FailedItems: NotRequired[List[RemediationExceptionResourceKeyTypeDef]],  # (1)
+```
 
-- `FailureMessage`: `str`
-- `FailedItems`:
-  `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
-
-<a id="failedremediationbatchtypedef"></a>
-
+1. See [:material-code-braces: RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef) 
 ## FailedRemediationBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import FailedRemediationBatchTypeDef
+
+def get_value() -> FailedRemediationBatchTypeDef:
+    return {
+        "FailureMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedRemediationBatchTypeDef(TypedDict):
+    FailureMessage: NotRequired[str],
+    FailedItems: NotRequired[List[RemediationConfigurationTypeDef]],  # (1)
+```
 
-- `FailureMessage`: `str`
-- `FailedItems`:
-  `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
-
-<a id="failedremediationexceptionbatchtypedef"></a>
-
+1. See [:material-code-braces: RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef) 
 ## FailedRemediationExceptionBatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import FailedRemediationExceptionBatchTypeDef
+
+def get_value() -> FailedRemediationExceptionBatchTypeDef:
+    return {
+        "FailureMessage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedRemediationExceptionBatchTypeDef(TypedDict):
+    FailureMessage: NotRequired[str],
+    FailedItems: NotRequired[List[RemediationExceptionTypeDef]],  # (1)
+```
 
-- `FailureMessage`: `str`
-- `FailedItems`:
-  `List`\[[RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef)\]
-
-<a id="fieldinfotypedef"></a>
-
+1. See [:material-code-braces: RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef) 
 ## FieldInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import FieldInfoTypeDef
+
+def get_value() -> FieldInfoTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FieldInfoTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
-- `Name`: `str`
+## GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef
 
-<a id="getaggregatecompliancedetailsbyconfigrulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef
 
+def get_value() -> GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ConfigRuleName": ...,
+        "AccountId": ...,
+        "AwsRegion": ...,
+    }
+```
+
+```python title="Definition"
+class GetAggregateComplianceDetailsByConfigRuleRequestGetAggregateComplianceDetailsByConfigRulePaginateTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ConfigRuleName: str,
+    AccountId: str,
+    AwsRegion: str,
+    ComplianceType: NotRequired[ComplianceTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef
+
+def get_value() -> GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ConfigRuleName": ...,
+        "AccountId": ...,
+        "AwsRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ConfigRuleName: str,
+    AccountId: str,
+    AwsRegion: str,
+    ComplianceType: NotRequired[ComplianceTypeType],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-- `ConfigRuleName`: `str`
-- `AccountId`: `str`
-- `AwsRegion`: `str`
-
-Optional fields:
-
-- `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getaggregatecompliancedetailsbyconfigruleresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## GetAggregateComplianceDetailsByConfigRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateComplianceDetailsByConfigRuleResponseTypeDef
+
+def get_value() -> GetAggregateComplianceDetailsByConfigRuleResponseTypeDef:
+    return {
+        "AggregateEvaluationResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateComplianceDetailsByConfigRuleResponseTypeDef(TypedDict):
+    AggregateEvaluationResults: List[AggregateEvaluationResultTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregateEvaluationResults`:
-  `List`\[[AggregateEvaluationResultTypeDef](./type_defs.md#aggregateevaluationresulttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaggregateconfigrulecompliancesummaryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AggregateEvaluationResultTypeDef](./type_defs.md#aggregateevaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef
+
+def get_value() -> GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[ConfigRuleComplianceSummaryFiltersTypeDef],  # (1)
+    GroupByKey: NotRequired[ConfigRuleComplianceSummaryGroupKeyType],  # (2)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [ConfigRuleComplianceSummaryFiltersTypeDef](./type_defs.md#configrulecompliancesummaryfilterstypedef)
-- `GroupByKey`:
-  [ConfigRuleComplianceSummaryGroupKeyType](./literals.md#configrulecompliancesummarygroupkeytype)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getaggregateconfigrulecompliancesummaryresponsetypedef"></a>
-
+1. See [:material-code-braces: ConfigRuleComplianceSummaryFiltersTypeDef](./type_defs.md#configrulecompliancesummaryfilterstypedef) 
+2. See [:material-code-brackets: ConfigRuleComplianceSummaryGroupKeyType](./literals.md#configrulecompliancesummarygroupkeytype) 
 ## GetAggregateConfigRuleComplianceSummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateConfigRuleComplianceSummaryResponseTypeDef
+
+def get_value() -> GetAggregateConfigRuleComplianceSummaryResponseTypeDef:
+    return {
+        "GroupByKey": ...,
+        "AggregateComplianceCounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateConfigRuleComplianceSummaryResponseTypeDef(TypedDict):
+    GroupByKey: str,
+    AggregateComplianceCounts: List[AggregateComplianceCountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GroupByKey`: `str`
-- `AggregateComplianceCounts`:
-  `List`\[[AggregateComplianceCountTypeDef](./type_defs.md#aggregatecompliancecounttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaggregateconformancepackcompliancesummaryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AggregateComplianceCountTypeDef](./type_defs.md#aggregatecompliancecounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef
+
+def get_value() -> GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[AggregateConformancePackComplianceSummaryFiltersTypeDef],  # (1)
+    GroupByKey: NotRequired[AggregateConformancePackComplianceSummaryGroupKeyType],  # (2)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [AggregateConformancePackComplianceSummaryFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancesummaryfilterstypedef)
-- `GroupByKey`:
-  [AggregateConformancePackComplianceSummaryGroupKeyType](./literals.md#aggregateconformancepackcompliancesummarygroupkeytype)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getaggregateconformancepackcompliancesummaryresponsetypedef"></a>
-
+1. See [:material-code-braces: AggregateConformancePackComplianceSummaryFiltersTypeDef](./type_defs.md#aggregateconformancepackcompliancesummaryfilterstypedef) 
+2. See [:material-code-brackets: AggregateConformancePackComplianceSummaryGroupKeyType](./literals.md#aggregateconformancepackcompliancesummarygroupkeytype) 
 ## GetAggregateConformancePackComplianceSummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateConformancePackComplianceSummaryResponseTypeDef
+
+def get_value() -> GetAggregateConformancePackComplianceSummaryResponseTypeDef:
+    return {
+        "AggregateConformancePackComplianceSummaries": ...,
+        "GroupByKey": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateConformancePackComplianceSummaryResponseTypeDef(TypedDict):
+    AggregateConformancePackComplianceSummaries: List[AggregateConformancePackComplianceSummaryTypeDef],  # (1)
+    GroupByKey: str,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregateConformancePackComplianceSummaries`:
-  `List`\[[AggregateConformancePackComplianceSummaryTypeDef](./type_defs.md#aggregateconformancepackcompliancesummarytypedef)\]
-- `GroupByKey`: `str`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaggregatediscoveredresourcecountsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AggregateConformancePackComplianceSummaryTypeDef](./type_defs.md#aggregateconformancepackcompliancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAggregateDiscoveredResourceCountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateDiscoveredResourceCountsRequestRequestTypeDef
+
+def get_value() -> GetAggregateDiscoveredResourceCountsRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateDiscoveredResourceCountsRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    Filters: NotRequired[ResourceCountFiltersTypeDef],  # (1)
+    GroupByKey: NotRequired[ResourceCountGroupKeyType],  # (2)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [ResourceCountFiltersTypeDef](./type_defs.md#resourcecountfilterstypedef)
-- `GroupByKey`:
-  [ResourceCountGroupKeyType](./literals.md#resourcecountgroupkeytype)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getaggregatediscoveredresourcecountsresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceCountFiltersTypeDef](./type_defs.md#resourcecountfilterstypedef) 
+2. See [:material-code-brackets: ResourceCountGroupKeyType](./literals.md#resourcecountgroupkeytype) 
 ## GetAggregateDiscoveredResourceCountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateDiscoveredResourceCountsResponseTypeDef
+
+def get_value() -> GetAggregateDiscoveredResourceCountsResponseTypeDef:
+    return {
+        "TotalDiscoveredResources": ...,
+        "GroupByKey": ...,
+        "GroupedResourceCounts": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateDiscoveredResourceCountsResponseTypeDef(TypedDict):
+    TotalDiscoveredResources: int,
+    GroupByKey: str,
+    GroupedResourceCounts: List[GroupedResourceCountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TotalDiscoveredResources`: `int`
-- `GroupByKey`: `str`
-- `GroupedResourceCounts`:
-  `List`\[[GroupedResourceCountTypeDef](./type_defs.md#groupedresourcecounttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaggregateresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupedResourceCountTypeDef](./type_defs.md#groupedresourcecounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAggregateResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateResourceConfigRequestRequestTypeDef
+
+def get_value() -> GetAggregateResourceConfigRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ResourceIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateResourceConfigRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ResourceIdentifier: AggregateResourceIdentifierTypeDef,  # (1)
+```
 
-- `ConfigurationAggregatorName`: `str`
-- `ResourceIdentifier`:
-  [AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)
-
-<a id="getaggregateresourceconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef) 
 ## GetAggregateResourceConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetAggregateResourceConfigResponseTypeDef
+
+def get_value() -> GetAggregateResourceConfigResponseTypeDef:
+    return {
+        "ConfigurationItem": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAggregateResourceConfigResponseTypeDef(TypedDict):
+    ConfigurationItem: ConfigurationItemTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationItem`:
-  [ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef
 
-<a id="getcompliancedetailsbyconfigrulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef
 
+def get_value() -> GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
+```
+
+```python title="Definition"
+class GetComplianceDetailsByConfigRuleRequestGetComplianceDetailsByConfigRulePaginateTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetComplianceDetailsByConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleRequestRequestTypeDef
+
+def get_value() -> GetComplianceDetailsByConfigRuleRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceDetailsByConfigRuleRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-
-Optional fields:
-
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getcompliancedetailsbyconfigruleresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## GetComplianceDetailsByConfigRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceDetailsByConfigRuleResponseTypeDef
+
+def get_value() -> GetComplianceDetailsByConfigRuleResponseTypeDef:
+    return {
+        "EvaluationResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceDetailsByConfigRuleResponseTypeDef(TypedDict):
+    EvaluationResults: List[EvaluationResultTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef
 
-<a id="getcompliancedetailsbyresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef
 
+def get_value() -> GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
+```
+
+```python title="Definition"
+class GetComplianceDetailsByResourceRequestGetComplianceDetailsByResourcePaginateTypeDef(TypedDict):
+    ResourceType: str,
+    ResourceId: str,
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetComplianceDetailsByResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceRequestRequestTypeDef
+
+def get_value() -> GetComplianceDetailsByResourceRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceDetailsByResourceRequestRequestTypeDef(TypedDict):
+    ResourceType: str,
+    ResourceId: str,
+    ComplianceTypes: NotRequired[Sequence[ComplianceTypeType]],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `ComplianceTypes`:
-  `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
-- `NextToken`: `str`
-
-<a id="getcompliancedetailsbyresourceresponsetypedef"></a>
-
+1. See [:material-code-brackets: ComplianceTypeType](./literals.md#compliancetypetype) 
 ## GetComplianceDetailsByResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceDetailsByResourceResponseTypeDef
+
+def get_value() -> GetComplianceDetailsByResourceResponseTypeDef:
+    return {
+        "EvaluationResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceDetailsByResourceResponseTypeDef(TypedDict):
+    EvaluationResults: List[EvaluationResultTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EvaluationResults`:
-  `List`\[[EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcompliancesummarybyconfigruleresponsetypedef"></a>
-
+1. See [:material-code-braces: EvaluationResultTypeDef](./type_defs.md#evaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetComplianceSummaryByConfigRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceSummaryByConfigRuleResponseTypeDef
+
+def get_value() -> GetComplianceSummaryByConfigRuleResponseTypeDef:
+    return {
+        "ComplianceSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceSummaryByConfigRuleResponseTypeDef(TypedDict):
+    ComplianceSummary: ComplianceSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceSummary`:
-  [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcompliancesummarybyresourcetyperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetComplianceSummaryByResourceTypeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeRequestRequestTypeDef
+
+def get_value() -> GetComplianceSummaryByResourceTypeRequestRequestTypeDef:
+    return {
+        "ResourceTypes": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceTypes`: `Sequence`\[`str`\]
-
-<a id="getcompliancesummarybyresourcetyperesponsetypedef"></a>
+```python title="Definition"
+class GetComplianceSummaryByResourceTypeRequestRequestTypeDef(TypedDict):
+    ResourceTypes: NotRequired[Sequence[str]],
+```
 
 ## GetComplianceSummaryByResourceTypeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeResponseTypeDef
+
+def get_value() -> GetComplianceSummaryByResourceTypeResponseTypeDef:
+    return {
+        "ComplianceSummariesByResourceType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetComplianceSummaryByResourceTypeResponseTypeDef(TypedDict):
+    ComplianceSummariesByResourceType: List[ComplianceSummaryByResourceTypeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ComplianceSummariesByResourceType`:
-  `List`\[[ComplianceSummaryByResourceTypeTypeDef](./type_defs.md#compliancesummarybyresourcetypetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getconformancepackcompliancedetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComplianceSummaryByResourceTypeTypeDef](./type_defs.md#compliancesummarybyresourcetypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetConformancePackComplianceDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetConformancePackComplianceDetailsRequestRequestTypeDef
+
+def get_value() -> GetConformancePackComplianceDetailsRequestRequestTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConformancePackComplianceDetailsRequestRequestTypeDef(TypedDict):
+    ConformancePackName: str,
+    Filters: NotRequired[ConformancePackEvaluationFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConformancePackName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [ConformancePackEvaluationFiltersTypeDef](./type_defs.md#conformancepackevaluationfilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getconformancepackcompliancedetailsresponsetypedef"></a>
-
+1. See [:material-code-braces: ConformancePackEvaluationFiltersTypeDef](./type_defs.md#conformancepackevaluationfilterstypedef) 
 ## GetConformancePackComplianceDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetConformancePackComplianceDetailsResponseTypeDef
+
+def get_value() -> GetConformancePackComplianceDetailsResponseTypeDef:
+    return {
+        "ConformancePackName": ...,
+        "ConformancePackRuleEvaluationResults": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConformancePackComplianceDetailsResponseTypeDef(TypedDict):
+    ConformancePackName: str,
+    ConformancePackRuleEvaluationResults: List[ConformancePackEvaluationResultTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConformancePackName`: `str`
-- `ConformancePackRuleEvaluationResults`:
-  `List`\[[ConformancePackEvaluationResultTypeDef](./type_defs.md#conformancepackevaluationresulttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ConformancePackEvaluationResultTypeDef](./type_defs.md#conformancepackevaluationresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef
 
-<a id="getconformancepackcompliancesummaryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef
 
+def get_value() -> GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
+```
+
+```python title="Definition"
+class GetConformancePackComplianceSummaryRequestGetConformancePackComplianceSummaryPaginateTypeDef(TypedDict):
+    ConformancePackNames: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetConformancePackComplianceSummaryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryRequestRequestTypeDef
+
+def get_value() -> GetConformancePackComplianceSummaryRequestRequestTypeDef:
+    return {
+        "ConformancePackNames": ...,
+    }
 ```
 
-Required fields:
-
-- `ConformancePackNames`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getconformancepackcompliancesummaryresponsetypedef"></a>
+```python title="Definition"
+class GetConformancePackComplianceSummaryRequestRequestTypeDef(TypedDict):
+    ConformancePackNames: Sequence[str],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetConformancePackComplianceSummaryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetConformancePackComplianceSummaryResponseTypeDef
+
+def get_value() -> GetConformancePackComplianceSummaryResponseTypeDef:
+    return {
+        "ConformancePackComplianceSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetConformancePackComplianceSummaryResponseTypeDef(TypedDict):
+    ConformancePackComplianceSummaryList: List[ConformancePackComplianceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConformancePackComplianceSummaryList`:
-  `List`\[[ConformancePackComplianceSummaryTypeDef](./type_defs.md#conformancepackcompliancesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcustomrulepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConformancePackComplianceSummaryTypeDef](./type_defs.md#conformancepackcompliancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCustomRulePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetCustomRulePolicyRequestRequestTypeDef
+
+def get_value() -> GetCustomRulePolicyRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleName`: `str`
-
-<a id="getcustomrulepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetCustomRulePolicyRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: NotRequired[str],
+```
 
 ## GetCustomRulePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetCustomRulePolicyResponseTypeDef
+
+def get_value() -> GetCustomRulePolicyResponseTypeDef:
+    return {
+        "PolicyText": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCustomRulePolicyResponseTypeDef(TypedDict):
+    PolicyText: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyText`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdiscoveredresourcecountsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDiscoveredResourceCountsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsRequestRequestTypeDef
+
+def get_value() -> GetDiscoveredResourceCountsRequestRequestTypeDef:
+    return {
+        "resourceTypes": ...,
+    }
 ```
 
-Optional fields:
-
-- `resourceTypes`: `Sequence`\[`str`\]
-- `limit`: `int`
-- `nextToken`: `str`
-
-<a id="getdiscoveredresourcecountsresponsetypedef"></a>
+```python title="Definition"
+class GetDiscoveredResourceCountsRequestRequestTypeDef(TypedDict):
+    resourceTypes: NotRequired[Sequence[str]],
+    limit: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## GetDiscoveredResourceCountsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetDiscoveredResourceCountsResponseTypeDef
+
+def get_value() -> GetDiscoveredResourceCountsResponseTypeDef:
+    return {
+        "totalDiscoveredResources": ...,
+        "resourceCounts": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDiscoveredResourceCountsResponseTypeDef(TypedDict):
+    totalDiscoveredResources: int,
+    resourceCounts: List[ResourceCountTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `totalDiscoveredResources`: `int`
-- `resourceCounts`:
-  `List`\[[ResourceCountTypeDef](./type_defs.md#resourcecounttypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResourceCountTypeDef](./type_defs.md#resourcecounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef
 
-<a id="getorganizationconfigruledetailedstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef
 
+def get_value() -> GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+    }
+```
+
+```python title="Definition"
+class GetOrganizationConfigRuleDetailedStatusRequestGetOrganizationConfigRuleDetailedStatusPaginateTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+    Filters: NotRequired[StatusDetailFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef
+
+def get_value() -> GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+    Filters: NotRequired[StatusDetailFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `OrganizationConfigRuleName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getorganizationconfigruledetailedstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: StatusDetailFiltersTypeDef](./type_defs.md#statusdetailfilterstypedef) 
 ## GetOrganizationConfigRuleDetailedStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationConfigRuleDetailedStatusResponseTypeDef
+
+def get_value() -> GetOrganizationConfigRuleDetailedStatusResponseTypeDef:
+    return {
+        "OrganizationConfigRuleDetailedStatus": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationConfigRuleDetailedStatusResponseTypeDef(TypedDict):
+    OrganizationConfigRuleDetailedStatus: List[MemberAccountStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConfigRuleDetailedStatus`:
-  `List`\[[MemberAccountStatusTypeDef](./type_defs.md#memberaccountstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MemberAccountStatusTypeDef](./type_defs.md#memberaccountstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef
 
-<a id="getorganizationconformancepackdetailedstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef
 
+def get_value() -> GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+    }
+```
+
+```python title="Definition"
+class GetOrganizationConformancePackDetailedStatusRequestGetOrganizationConformancePackDetailedStatusPaginateTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+    Filters: NotRequired[OrganizationResourceDetailedStatusFiltersTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef
+
+def get_value() -> GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+    Filters: NotRequired[OrganizationResourceDetailedStatusFiltersTypeDef],  # (1)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `OrganizationConformancePackName`: `str`
-
-Optional fields:
-
-- `Filters`:
-  [OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="getorganizationconformancepackdetailedstatusresponsetypedef"></a>
-
+1. See [:material-code-braces: OrganizationResourceDetailedStatusFiltersTypeDef](./type_defs.md#organizationresourcedetailedstatusfilterstypedef) 
 ## GetOrganizationConformancePackDetailedStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationConformancePackDetailedStatusResponseTypeDef
+
+def get_value() -> GetOrganizationConformancePackDetailedStatusResponseTypeDef:
+    return {
+        "OrganizationConformancePackDetailedStatuses": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationConformancePackDetailedStatusResponseTypeDef(TypedDict):
+    OrganizationConformancePackDetailedStatuses: List[OrganizationConformancePackDetailedStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OrganizationConformancePackDetailedStatuses`:
-  `List`\[[OrganizationConformancePackDetailedStatusTypeDef](./type_defs.md#organizationconformancepackdetailedstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getorganizationcustomrulepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OrganizationConformancePackDetailedStatusTypeDef](./type_defs.md#organizationconformancepackdetailedstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOrganizationCustomRulePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationCustomRulePolicyRequestRequestTypeDef
+
+def get_value() -> GetOrganizationCustomRulePolicyRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+    }
 ```
 
-Required fields:
-
-- `OrganizationConfigRuleName`: `str`
-
-<a id="getorganizationcustomrulepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetOrganizationCustomRulePolicyRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+```
 
 ## GetOrganizationCustomRulePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetOrganizationCustomRulePolicyResponseTypeDef
+
+def get_value() -> GetOrganizationCustomRulePolicyResponseTypeDef:
+    return {
+        "PolicyText": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOrganizationCustomRulePolicyResponseTypeDef(TypedDict):
+    PolicyText: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyText`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef
 
-<a id="getresourceconfighistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef
 
+def get_value() -> GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef:
+    return {
+        "resourceType": ...,
+        "resourceId": ...,
+    }
+```
+
+```python title="Definition"
+class GetResourceConfigHistoryRequestGetResourceConfigHistoryPaginateTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    resourceId: str,
+    laterTime: NotRequired[Union[datetime, str]],
+    earlierTime: NotRequired[Union[datetime, str]],
+    chronologicalOrder: NotRequired[ChronologicalOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: ChronologicalOrderType](./literals.md#chronologicalordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetResourceConfigHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetResourceConfigHistoryRequestRequestTypeDef
+
+def get_value() -> GetResourceConfigHistoryRequestRequestTypeDef:
+    return {
+        "resourceType": ...,
+        "resourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceConfigHistoryRequestRequestTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    resourceId: str,
+    laterTime: NotRequired[Union[datetime, str]],
+    earlierTime: NotRequired[Union[datetime, str]],
+    chronologicalOrder: NotRequired[ChronologicalOrderType],  # (2)
+    limit: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-
-Optional fields:
-
-- `laterTime`: `Union`\[`datetime`, `str`\]
-- `earlierTime`: `Union`\[`datetime`, `str`\]
-- `chronologicalOrder`:
-  [ChronologicalOrderType](./literals.md#chronologicalordertype)
-- `limit`: `int`
-- `nextToken`: `str`
-
-<a id="getresourceconfighistoryresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: ChronologicalOrderType](./literals.md#chronologicalordertype) 
 ## GetResourceConfigHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetResourceConfigHistoryResponseTypeDef
+
+def get_value() -> GetResourceConfigHistoryResponseTypeDef:
+    return {
+        "configurationItems": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourceConfigHistoryResponseTypeDef(TypedDict):
+    configurationItems: List[ConfigurationItemTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `configurationItems`:
-  `List`\[[ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstoredqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStoredQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetStoredQueryRequestRequestTypeDef
+
+def get_value() -> GetStoredQueryRequestRequestTypeDef:
+    return {
+        "QueryName": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryName`: `str`
-
-<a id="getstoredqueryresponsetypedef"></a>
+```python title="Definition"
+class GetStoredQueryRequestRequestTypeDef(TypedDict):
+    QueryName: str,
+```
 
 ## GetStoredQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GetStoredQueryResponseTypeDef
+
+def get_value() -> GetStoredQueryResponseTypeDef:
+    return {
+        "StoredQuery": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStoredQueryResponseTypeDef(TypedDict):
+    StoredQuery: StoredQueryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupedresourcecounttypedef"></a>
-
+1. See [:material-code-braces: StoredQueryTypeDef](./type_defs.md#storedquerytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupedResourceCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import GroupedResourceCountTypeDef
+
+def get_value() -> GroupedResourceCountTypeDef:
+    return {
+        "GroupName": ...,
+        "ResourceCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupedResourceCountTypeDef(TypedDict):
+    GroupName: str,
+    ResourceCount: int,
+```
 
-- `GroupName`: `str`
-- `ResourceCount`: `int`
+## ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef
 
-<a id="listaggregatediscoveredresourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef
 
+def get_value() -> ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListAggregateDiscoveredResourcesRequestListAggregateDiscoveredResourcesPaginateTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ResourceType: ResourceTypeType,  # (1)
+    Filters: NotRequired[ResourceFiltersTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAggregateDiscoveredResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesRequestRequestTypeDef
+
+def get_value() -> ListAggregateDiscoveredResourcesRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAggregateDiscoveredResourcesRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    ResourceType: ResourceTypeType,  # (1)
+    Filters: NotRequired[ResourceFiltersTypeDef],  # (2)
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ConfigurationAggregatorName`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `Filters`: [ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef)
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listaggregatediscoveredresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceFiltersTypeDef](./type_defs.md#resourcefilterstypedef) 
 ## ListAggregateDiscoveredResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListAggregateDiscoveredResourcesResponseTypeDef
+
+def get_value() -> ListAggregateDiscoveredResourcesResponseTypeDef:
+    return {
+        "ResourceIdentifiers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAggregateDiscoveredResourcesResponseTypeDef(TypedDict):
+    ResourceIdentifiers: List[AggregateResourceIdentifierTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceIdentifiers`:
-  `List`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef
 
-<a id="listdiscoveredresourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef
 
+def get_value() -> ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef:
+    return {
+        "resourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    resourceIds: NotRequired[Sequence[str]],
+    resourceName: NotRequired[str],
+    includeDeletedResources: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDiscoveredResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListDiscoveredResourcesRequestRequestTypeDef
+
+def get_value() -> ListDiscoveredResourcesRequestRequestTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDiscoveredResourcesRequestRequestTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    resourceIds: NotRequired[Sequence[str]],
+    resourceName: NotRequired[str],
+    limit: NotRequired[int],
+    includeDeletedResources: NotRequired[bool],
+    nextToken: NotRequired[str],
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-Optional fields:
-
-- `resourceIds`: `Sequence`\[`str`\]
-- `resourceName`: `str`
-- `limit`: `int`
-- `includeDeletedResources`: `bool`
-- `nextToken`: `str`
-
-<a id="listdiscoveredresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ListDiscoveredResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListDiscoveredResourcesResponseTypeDef
+
+def get_value() -> ListDiscoveredResourcesResponseTypeDef:
+    return {
+        "resourceIdentifiers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDiscoveredResourcesResponseTypeDef(TypedDict):
+    resourceIdentifiers: List[ResourceIdentifierTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resourceIdentifiers`:
-  `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="liststoredqueriesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListStoredQueriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListStoredQueriesRequestRequestTypeDef
+
+def get_value() -> ListStoredQueriesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="liststoredqueriesresponsetypedef"></a>
+```python title="Definition"
+class ListStoredQueriesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListStoredQueriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListStoredQueriesResponseTypeDef
+
+def get_value() -> ListStoredQueriesResponseTypeDef:
+    return {
+        "StoredQueryMetadata": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListStoredQueriesResponseTypeDef(TypedDict):
+    StoredQueryMetadata: List[StoredQueryMetadataTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StoredQueryMetadata`:
-  `List`\[[StoredQueryMetadataTypeDef](./type_defs.md#storedquerymetadatatypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: StoredQueryMetadataTypeDef](./type_defs.md#storedquerymetadatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import ListTagsForResourceRequestListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceRequestListTagsForResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceRequestListTagsForResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="memberaccountstatustypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MemberAccountStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import MemberAccountStatusTypeDef
+
+def get_value() -> MemberAccountStatusTypeDef:
+    return {
+        "AccountId": ...,
+        "ConfigRuleName": ...,
+        "MemberAccountRuleStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MemberAccountStatusTypeDef(TypedDict):
+    AccountId: str,
+    ConfigRuleName: str,
+    MemberAccountRuleStatus: MemberAccountRuleStatusType,  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `AccountId`: `str`
-- `ConfigRuleName`: `str`
-- `MemberAccountRuleStatus`:
-  [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
-
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `LastUpdateTime`: `datetime`
-
-<a id="organizationaggregationsourcetypedef"></a>
-
+1. See [:material-code-brackets: MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype) 
 ## OrganizationAggregationSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationAggregationSourceTypeDef
+
+def get_value() -> OrganizationAggregationSourceTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `AwsRegions`: `List`\[`str`\]
-- `AllAwsRegions`: `bool`
-
-<a id="organizationconfigrulestatustypedef"></a>
+```python title="Definition"
+class OrganizationAggregationSourceTypeDef(TypedDict):
+    RoleArn: str,
+    AwsRegions: NotRequired[List[str]],
+    AllAwsRegions: NotRequired[bool],
+```
 
 ## OrganizationConfigRuleStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationConfigRuleStatusTypeDef
+
+def get_value() -> OrganizationConfigRuleStatusTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+        "OrganizationRuleStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationConfigRuleStatusTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+    OrganizationRuleStatus: OrganizationRuleStatusType,  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `OrganizationConfigRuleName`: `str`
-- `OrganizationRuleStatus`:
-  [OrganizationRuleStatusType](./literals.md#organizationrulestatustype)
-
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `LastUpdateTime`: `datetime`
-
-<a id="organizationconfigruletypedef"></a>
-
+1. See [:material-code-brackets: OrganizationRuleStatusType](./literals.md#organizationrulestatustype) 
 ## OrganizationConfigRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationConfigRuleTypeDef
+
+def get_value() -> OrganizationConfigRuleTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+        "OrganizationConfigRuleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationConfigRuleTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+    OrganizationConfigRuleArn: str,
+    OrganizationManagedRuleMetadata: NotRequired[OrganizationManagedRuleMetadataTypeDef],  # (1)
+    OrganizationCustomRuleMetadata: NotRequired[OrganizationCustomRuleMetadataTypeDef],  # (2)
+    ExcludedAccounts: NotRequired[List[str]],
+    LastUpdateTime: NotRequired[datetime],
+    OrganizationCustomPolicyRuleMetadata: NotRequired[OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef],  # (3)
+```
 
-- `OrganizationConfigRuleName`: `str`
-- `OrganizationConfigRuleArn`: `str`
-
-Optional fields:
-
-- `OrganizationManagedRuleMetadata`:
-  [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
-- `OrganizationCustomRuleMetadata`:
-  [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
-- `ExcludedAccounts`: `List`\[`str`\]
-- `LastUpdateTime`: `datetime`
-- `OrganizationCustomPolicyRuleMetadata`:
-  [OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef](./type_defs.md#organizationcustompolicyrulemetadatanopolicytypedef)
-
-<a id="organizationconformancepackdetailedstatustypedef"></a>
-
+1. See [:material-code-braces: OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef) 
+2. See [:material-code-braces: OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef) 
+3. See [:material-code-braces: OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef](./type_defs.md#organizationcustompolicyrulemetadatanopolicytypedef) 
 ## OrganizationConformancePackDetailedStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationConformancePackDetailedStatusTypeDef
+
+def get_value() -> OrganizationConformancePackDetailedStatusTypeDef:
+    return {
+        "AccountId": ...,
+        "ConformancePackName": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationConformancePackDetailedStatusTypeDef(TypedDict):
+    AccountId: str,
+    ConformancePackName: str,
+    Status: OrganizationResourceDetailedStatusType,  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `AccountId`: `str`
-- `ConformancePackName`: `str`
-- `Status`:
-  [OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype)
-
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `LastUpdateTime`: `datetime`
-
-<a id="organizationconformancepackstatustypedef"></a>
-
+1. See [:material-code-brackets: OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype) 
 ## OrganizationConformancePackStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationConformancePackStatusTypeDef
+
+def get_value() -> OrganizationConformancePackStatusTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationConformancePackStatusTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+    Status: OrganizationResourceStatusType,  # (1)
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `OrganizationConformancePackName`: `str`
-- `Status`:
-  [OrganizationResourceStatusType](./literals.md#organizationresourcestatustype)
-
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-- `LastUpdateTime`: `datetime`
-
-<a id="organizationconformancepacktypedef"></a>
-
+1. See [:material-code-brackets: OrganizationResourceStatusType](./literals.md#organizationresourcestatustype) 
 ## OrganizationConformancePackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationConformancePackTypeDef
+
+def get_value() -> OrganizationConformancePackTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+        "OrganizationConformancePackArn": ...,
+        "LastUpdateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationConformancePackTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+    OrganizationConformancePackArn: str,
+    LastUpdateTime: datetime,
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[List[ConformancePackInputParameterTypeDef]],  # (1)
+    ExcludedAccounts: NotRequired[List[str]],
+```
 
-- `OrganizationConformancePackName`: `str`
-- `OrganizationConformancePackArn`: `str`
-- `LastUpdateTime`: `datetime`
-
-Optional fields:
-
-- `DeliveryS3Bucket`: `str`
-- `DeliveryS3KeyPrefix`: `str`
-- `ConformancePackInputParameters`:
-  `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `ExcludedAccounts`: `List`\[`str`\]
-
-<a id="organizationcustompolicyrulemetadatanopolicytypedef"></a>
-
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
 ## OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef
+
+def get_value() -> OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef(TypedDict):
+    Description: NotRequired[str],
+    OrganizationConfigRuleTriggerTypes: NotRequired[List[OrganizationConfigRuleTriggerTypeNoSNType]],  # (1)
+    InputParameters: NotRequired[str],
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (2)
+    ResourceTypesScope: NotRequired[List[str]],
+    ResourceIdScope: NotRequired[str],
+    TagKeyScope: NotRequired[str],
+    TagValueScope: NotRequired[str],
+    PolicyRuntime: NotRequired[str],
+    DebugLogDeliveryAccounts: NotRequired[List[str]],
+```
 
-- `Description`: `str`
-- `OrganizationConfigRuleTriggerTypes`:
-  `List`\[[OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype)\]
-- `InputParameters`: `str`
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-- `ResourceTypesScope`: `List`\[`str`\]
-- `ResourceIdScope`: `str`
-- `TagKeyScope`: `str`
-- `TagValueScope`: `str`
-- `PolicyRuntime`: `str`
-- `DebugLogDeliveryAccounts`: `List`\[`str`\]
-
-<a id="organizationcustompolicyrulemetadatatypedef"></a>
-
+1. See [:material-code-brackets: OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype) 
+2. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## OrganizationCustomPolicyRuleMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationCustomPolicyRuleMetadataTypeDef
+
+def get_value() -> OrganizationCustomPolicyRuleMetadataTypeDef:
+    return {
+        "PolicyRuntime": ...,
+        "PolicyText": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationCustomPolicyRuleMetadataTypeDef(TypedDict):
+    PolicyRuntime: str,
+    PolicyText: str,
+    Description: NotRequired[str],
+    OrganizationConfigRuleTriggerTypes: NotRequired[Sequence[OrganizationConfigRuleTriggerTypeNoSNType]],  # (1)
+    InputParameters: NotRequired[str],
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (2)
+    ResourceTypesScope: NotRequired[Sequence[str]],
+    ResourceIdScope: NotRequired[str],
+    TagKeyScope: NotRequired[str],
+    TagValueScope: NotRequired[str],
+    DebugLogDeliveryAccounts: NotRequired[Sequence[str]],
+```
 
-- `PolicyRuntime`: `str`
-- `PolicyText`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `OrganizationConfigRuleTriggerTypes`:
-  `Sequence`\[[OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype)\]
-- `InputParameters`: `str`
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-- `ResourceTypesScope`: `Sequence`\[`str`\]
-- `ResourceIdScope`: `str`
-- `TagKeyScope`: `str`
-- `TagValueScope`: `str`
-- `DebugLogDeliveryAccounts`: `Sequence`\[`str`\]
-
-<a id="organizationcustomrulemetadatatypedef"></a>
-
+1. See [:material-code-brackets: OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype) 
+2. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## OrganizationCustomRuleMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationCustomRuleMetadataTypeDef
+
+def get_value() -> OrganizationCustomRuleMetadataTypeDef:
+    return {
+        "LambdaFunctionArn": ...,
+        "OrganizationConfigRuleTriggerTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationCustomRuleMetadataTypeDef(TypedDict):
+    LambdaFunctionArn: str,
+    OrganizationConfigRuleTriggerTypes: List[OrganizationConfigRuleTriggerTypeType],  # (1)
+    Description: NotRequired[str],
+    InputParameters: NotRequired[str],
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (2)
+    ResourceTypesScope: NotRequired[List[str]],
+    ResourceIdScope: NotRequired[str],
+    TagKeyScope: NotRequired[str],
+    TagValueScope: NotRequired[str],
+```
 
-- `LambdaFunctionArn`: `str`
-- `OrganizationConfigRuleTriggerTypes`:
-  `List`\[[OrganizationConfigRuleTriggerTypeType](./literals.md#organizationconfigruletriggertypetype)\]
-
-Optional fields:
-
-- `Description`: `str`
-- `InputParameters`: `str`
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-- `ResourceTypesScope`: `List`\[`str`\]
-- `ResourceIdScope`: `str`
-- `TagKeyScope`: `str`
-- `TagValueScope`: `str`
-
-<a id="organizationmanagedrulemetadatatypedef"></a>
-
+1. See [:material-code-brackets: OrganizationConfigRuleTriggerTypeType](./literals.md#organizationconfigruletriggertypetype) 
+2. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## OrganizationManagedRuleMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationManagedRuleMetadataTypeDef
+
+def get_value() -> OrganizationManagedRuleMetadataTypeDef:
+    return {
+        "RuleIdentifier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OrganizationManagedRuleMetadataTypeDef(TypedDict):
+    RuleIdentifier: str,
+    Description: NotRequired[str],
+    InputParameters: NotRequired[str],
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (1)
+    ResourceTypesScope: NotRequired[List[str]],
+    ResourceIdScope: NotRequired[str],
+    TagKeyScope: NotRequired[str],
+    TagValueScope: NotRequired[str],
+```
 
-- `RuleIdentifier`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `InputParameters`: `str`
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-- `ResourceTypesScope`: `List`\[`str`\]
-- `ResourceIdScope`: `str`
-- `TagKeyScope`: `str`
-- `TagValueScope`: `str`
-
-<a id="organizationresourcedetailedstatusfilterstypedef"></a>
-
+1. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## OrganizationResourceDetailedStatusFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import OrganizationResourceDetailedStatusFiltersTypeDef
+
+def get_value() -> OrganizationResourceDetailedStatusFiltersTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrganizationResourceDetailedStatusFiltersTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    Status: NotRequired[OrganizationResourceDetailedStatusType],  # (1)
+```
 
-- `AccountId`: `str`
-- `Status`:
-  [OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pendingaggregationrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PendingAggregationRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PendingAggregationRequestTypeDef
+
+def get_value() -> PendingAggregationRequestTypeDef:
+    return {
+        "RequesterAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `RequesterAccountId`: `str`
-- `RequesterAwsRegion`: `str`
-
-<a id="putaggregationauthorizationrequestrequesttypedef"></a>
+```python title="Definition"
+class PendingAggregationRequestTypeDef(TypedDict):
+    RequesterAccountId: NotRequired[str],
+    RequesterAwsRegion: NotRequired[str],
+```
 
 ## PutAggregationAuthorizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutAggregationAuthorizationRequestRequestTypeDef
+
+def get_value() -> PutAggregationAuthorizationRequestRequestTypeDef:
+    return {
+        "AuthorizedAccountId": ...,
+        "AuthorizedAwsRegion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAggregationAuthorizationRequestRequestTypeDef(TypedDict):
+    AuthorizedAccountId: str,
+    AuthorizedAwsRegion: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `AuthorizedAccountId`: `str`
-- `AuthorizedAwsRegion`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putaggregationauthorizationresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutAggregationAuthorizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutAggregationAuthorizationResponseTypeDef
+
+def get_value() -> PutAggregationAuthorizationResponseTypeDef:
+    return {
+        "AggregationAuthorization": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAggregationAuthorizationResponseTypeDef(TypedDict):
+    AggregationAuthorization: AggregationAuthorizationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AggregationAuthorization`:
-  [AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putconfigrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConfigRuleRequestRequestTypeDef
+
+def get_value() -> PutConfigRuleRequestRequestTypeDef:
+    return {
+        "ConfigRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConfigRuleRequestRequestTypeDef(TypedDict):
+    ConfigRule: ConfigRuleTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putconfigurationaggregatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigRuleTypeDef](./type_defs.md#configruletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutConfigurationAggregatorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConfigurationAggregatorRequestRequestTypeDef
+
+def get_value() -> PutConfigurationAggregatorRequestRequestTypeDef:
+    return {
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConfigurationAggregatorRequestRequestTypeDef(TypedDict):
+    ConfigurationAggregatorName: str,
+    AccountAggregationSources: NotRequired[Sequence[AccountAggregationSourceTypeDef]],  # (1)
+    OrganizationAggregationSource: NotRequired[OrganizationAggregationSourceTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `ConfigurationAggregatorName`: `str`
-
-Optional fields:
-
-- `AccountAggregationSources`:
-  `Sequence`\[[AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef)\]
-- `OrganizationAggregationSource`:
-  [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putconfigurationaggregatorresponsetypedef"></a>
-
+1. See [:material-code-braces: AccountAggregationSourceTypeDef](./type_defs.md#accountaggregationsourcetypedef) 
+2. See [:material-code-braces: OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutConfigurationAggregatorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConfigurationAggregatorResponseTypeDef
+
+def get_value() -> PutConfigurationAggregatorResponseTypeDef:
+    return {
+        "ConfigurationAggregator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConfigurationAggregatorResponseTypeDef(TypedDict):
+    ConfigurationAggregator: ConfigurationAggregatorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConfigurationAggregator`:
-  [ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putconfigurationrecorderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationAggregatorTypeDef](./type_defs.md#configurationaggregatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutConfigurationRecorderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConfigurationRecorderRequestRequestTypeDef
+
+def get_value() -> PutConfigurationRecorderRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorder": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConfigurationRecorderRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorder: ConfigurationRecorderTypeDef,  # (1)
+```
 
-- `ConfigurationRecorder`:
-  [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
-
-<a id="putconformancepackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef) 
 ## PutConformancePackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConformancePackRequestRequestTypeDef
+
+def get_value() -> PutConformancePackRequestRequestTypeDef:
+    return {
+        "ConformancePackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConformancePackRequestRequestTypeDef(TypedDict):
+    ConformancePackName: str,
+    TemplateS3Uri: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[Sequence[ConformancePackInputParameterTypeDef]],  # (1)
+```
 
-- `ConformancePackName`: `str`
-
-Optional fields:
-
-- `TemplateS3Uri`: `str`
-- `TemplateBody`: `str`
-- `DeliveryS3Bucket`: `str`
-- `DeliveryS3KeyPrefix`: `str`
-- `ConformancePackInputParameters`:
-  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-
-<a id="putconformancepackresponsetypedef"></a>
-
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
 ## PutConformancePackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutConformancePackResponseTypeDef
+
+def get_value() -> PutConformancePackResponseTypeDef:
+    return {
+        "ConformancePackArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutConformancePackResponseTypeDef(TypedDict):
+    ConformancePackArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ConformancePackArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putdeliverychannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutDeliveryChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutDeliveryChannelRequestRequestTypeDef
+
+def get_value() -> PutDeliveryChannelRequestRequestTypeDef:
+    return {
+        "DeliveryChannel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDeliveryChannelRequestRequestTypeDef(TypedDict):
+    DeliveryChannel: DeliveryChannelTypeDef,  # (1)
+```
 
-- `DeliveryChannel`:
-  [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)
-
-<a id="putevaluationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef) 
 ## PutEvaluationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutEvaluationsRequestRequestTypeDef
+
+def get_value() -> PutEvaluationsRequestRequestTypeDef:
+    return {
+        "ResultToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEvaluationsRequestRequestTypeDef(TypedDict):
+    ResultToken: str,
+    Evaluations: NotRequired[Sequence[EvaluationTypeDef]],  # (1)
+    TestMode: NotRequired[bool],
+```
 
-- `ResultToken`: `str`
-
-Optional fields:
-
-- `Evaluations`:
-  `Sequence`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
-- `TestMode`: `bool`
-
-<a id="putevaluationsresponsetypedef"></a>
-
+1. See [:material-code-braces: EvaluationTypeDef](./type_defs.md#evaluationtypedef) 
 ## PutEvaluationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutEvaluationsResponseTypeDef
+
+def get_value() -> PutEvaluationsResponseTypeDef:
+    return {
+        "FailedEvaluations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEvaluationsResponseTypeDef(TypedDict):
+    FailedEvaluations: List[EvaluationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedEvaluations`:
-  `List`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putexternalevaluationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EvaluationTypeDef](./type_defs.md#evaluationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutExternalEvaluationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutExternalEvaluationRequestRequestTypeDef
+
+def get_value() -> PutExternalEvaluationRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "ExternalEvaluation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutExternalEvaluationRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ExternalEvaluation: ExternalEvaluationTypeDef,  # (1)
+```
 
-- `ConfigRuleName`: `str`
-- `ExternalEvaluation`:
-  [ExternalEvaluationTypeDef](./type_defs.md#externalevaluationtypedef)
-
-<a id="putorganizationconfigrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExternalEvaluationTypeDef](./type_defs.md#externalevaluationtypedef) 
 ## PutOrganizationConfigRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutOrganizationConfigRuleRequestRequestTypeDef
+
+def get_value() -> PutOrganizationConfigRuleRequestRequestTypeDef:
+    return {
+        "OrganizationConfigRuleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutOrganizationConfigRuleRequestRequestTypeDef(TypedDict):
+    OrganizationConfigRuleName: str,
+    OrganizationManagedRuleMetadata: NotRequired[OrganizationManagedRuleMetadataTypeDef],  # (1)
+    OrganizationCustomRuleMetadata: NotRequired[OrganizationCustomRuleMetadataTypeDef],  # (2)
+    ExcludedAccounts: NotRequired[Sequence[str]],
+    OrganizationCustomPolicyRuleMetadata: NotRequired[OrganizationCustomPolicyRuleMetadataTypeDef],  # (3)
+```
 
-- `OrganizationConfigRuleName`: `str`
-
-Optional fields:
-
-- `OrganizationManagedRuleMetadata`:
-  [OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef)
-- `OrganizationCustomRuleMetadata`:
-  [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
-- `ExcludedAccounts`: `Sequence`\[`str`\]
-- `OrganizationCustomPolicyRuleMetadata`:
-  [OrganizationCustomPolicyRuleMetadataTypeDef](./type_defs.md#organizationcustompolicyrulemetadatatypedef)
-
-<a id="putorganizationconfigruleresponsetypedef"></a>
-
+1. See [:material-code-braces: OrganizationManagedRuleMetadataTypeDef](./type_defs.md#organizationmanagedrulemetadatatypedef) 
+2. See [:material-code-braces: OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef) 
+3. See [:material-code-braces: OrganizationCustomPolicyRuleMetadataTypeDef](./type_defs.md#organizationcustompolicyrulemetadatatypedef) 
 ## PutOrganizationConfigRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutOrganizationConfigRuleResponseTypeDef
+
+def get_value() -> PutOrganizationConfigRuleResponseTypeDef:
+    return {
+        "OrganizationConfigRuleArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutOrganizationConfigRuleResponseTypeDef(TypedDict):
+    OrganizationConfigRuleArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OrganizationConfigRuleArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putorganizationconformancepackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutOrganizationConformancePackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutOrganizationConformancePackRequestRequestTypeDef
+
+def get_value() -> PutOrganizationConformancePackRequestRequestTypeDef:
+    return {
+        "OrganizationConformancePackName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutOrganizationConformancePackRequestRequestTypeDef(TypedDict):
+    OrganizationConformancePackName: str,
+    TemplateS3Uri: NotRequired[str],
+    TemplateBody: NotRequired[str],
+    DeliveryS3Bucket: NotRequired[str],
+    DeliveryS3KeyPrefix: NotRequired[str],
+    ConformancePackInputParameters: NotRequired[Sequence[ConformancePackInputParameterTypeDef]],  # (1)
+    ExcludedAccounts: NotRequired[Sequence[str]],
+```
 
-- `OrganizationConformancePackName`: `str`
-
-Optional fields:
-
-- `TemplateS3Uri`: `str`
-- `TemplateBody`: `str`
-- `DeliveryS3Bucket`: `str`
-- `DeliveryS3KeyPrefix`: `str`
-- `ConformancePackInputParameters`:
-  `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
-- `ExcludedAccounts`: `Sequence`\[`str`\]
-
-<a id="putorganizationconformancepackresponsetypedef"></a>
-
+1. See [:material-code-braces: ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef) 
 ## PutOrganizationConformancePackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutOrganizationConformancePackResponseTypeDef
+
+def get_value() -> PutOrganizationConformancePackResponseTypeDef:
+    return {
+        "OrganizationConformancePackArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutOrganizationConformancePackResponseTypeDef(TypedDict):
+    OrganizationConformancePackArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OrganizationConformancePackArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putremediationconfigurationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRemediationConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRemediationConfigurationsRequestRequestTypeDef
+
+def get_value() -> PutRemediationConfigurationsRequestRequestTypeDef:
+    return {
+        "RemediationConfigurations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRemediationConfigurationsRequestRequestTypeDef(TypedDict):
+    RemediationConfigurations: Sequence[RemediationConfigurationTypeDef],  # (1)
+```
 
-- `RemediationConfigurations`:
-  `Sequence`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
-
-<a id="putremediationconfigurationsresponsetypedef"></a>
-
+1. See [:material-code-braces: RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef) 
 ## PutRemediationConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRemediationConfigurationsResponseTypeDef
+
+def get_value() -> PutRemediationConfigurationsResponseTypeDef:
+    return {
+        "FailedBatches": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRemediationConfigurationsResponseTypeDef(TypedDict):
+    FailedBatches: List[FailedRemediationBatchTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedBatches`:
-  `List`\[[FailedRemediationBatchTypeDef](./type_defs.md#failedremediationbatchtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putremediationexceptionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedRemediationBatchTypeDef](./type_defs.md#failedremediationbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRemediationExceptionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRemediationExceptionsRequestRequestTypeDef
+
+def get_value() -> PutRemediationExceptionsRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "ResourceKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRemediationExceptionsRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: Sequence[RemediationExceptionResourceKeyTypeDef],  # (1)
+    Message: NotRequired[str],
+    ExpirationTime: NotRequired[Union[datetime, str]],
+```
 
-- `ConfigRuleName`: `str`
-- `ResourceKeys`:
-  `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
-
-Optional fields:
-
-- `Message`: `str`
-- `ExpirationTime`: `Union`\[`datetime`, `str`\]
-
-<a id="putremediationexceptionsresponsetypedef"></a>
-
+1. See [:material-code-braces: RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef) 
 ## PutRemediationExceptionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRemediationExceptionsResponseTypeDef
+
+def get_value() -> PutRemediationExceptionsResponseTypeDef:
+    return {
+        "FailedBatches": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRemediationExceptionsResponseTypeDef(TypedDict):
+    FailedBatches: List[FailedRemediationExceptionBatchTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailedBatches`:
-  `List`\[[FailedRemediationExceptionBatchTypeDef](./type_defs.md#failedremediationexceptionbatchtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedRemediationExceptionBatchTypeDef](./type_defs.md#failedremediationexceptionbatchtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutResourceConfigRequestRequestTypeDef
+
+def get_value() -> PutResourceConfigRequestRequestTypeDef:
+    return {
+        "ResourceType": ...,
+        "SchemaVersionId": ...,
+        "ResourceId": ...,
+        "Configuration": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceType`: `str`
-- `SchemaVersionId`: `str`
-- `ResourceId`: `str`
-- `Configuration`: `str`
-
-Optional fields:
-
-- `ResourceName`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="putretentionconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class PutResourceConfigRequestRequestTypeDef(TypedDict):
+    ResourceType: str,
+    SchemaVersionId: str,
+    ResourceId: str,
+    Configuration: str,
+    ResourceName: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## PutRetentionConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRetentionConfigurationRequestRequestTypeDef
+
+def get_value() -> PutRetentionConfigurationRequestRequestTypeDef:
+    return {
+        "RetentionPeriodInDays": ...,
+    }
 ```
 
-Required fields:
-
-- `RetentionPeriodInDays`: `int`
-
-<a id="putretentionconfigurationresponsetypedef"></a>
+```python title="Definition"
+class PutRetentionConfigurationRequestRequestTypeDef(TypedDict):
+    RetentionPeriodInDays: int,
+```
 
 ## PutRetentionConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutRetentionConfigurationResponseTypeDef
+
+def get_value() -> PutRetentionConfigurationResponseTypeDef:
+    return {
+        "RetentionConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutRetentionConfigurationResponseTypeDef(TypedDict):
+    RetentionConfiguration: RetentionConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RetentionConfiguration`:
-  [RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putstoredqueryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutStoredQueryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutStoredQueryRequestRequestTypeDef
+
+def get_value() -> PutStoredQueryRequestRequestTypeDef:
+    return {
+        "StoredQuery": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutStoredQueryRequestRequestTypeDef(TypedDict):
+    StoredQuery: StoredQueryTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `StoredQuery`: [StoredQueryTypeDef](./type_defs.md#storedquerytypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="putstoredqueryresponsetypedef"></a>
-
+1. See [:material-code-braces: StoredQueryTypeDef](./type_defs.md#storedquerytypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## PutStoredQueryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import PutStoredQueryResponseTypeDef
+
+def get_value() -> PutStoredQueryResponseTypeDef:
+    return {
+        "QueryArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutStoredQueryResponseTypeDef(TypedDict):
+    QueryArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `QueryArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="queryinfotypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## QueryInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import QueryInfoTypeDef
+
+def get_value() -> QueryInfoTypeDef:
+    return {
+        "SelectFields": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueryInfoTypeDef(TypedDict):
+    SelectFields: NotRequired[List[FieldInfoTypeDef]],  # (1)
+```
 
-- `SelectFields`: `List`\[[FieldInfoTypeDef](./type_defs.md#fieldinfotypedef)\]
-
-<a id="recordinggrouptypedef"></a>
-
+1. See [:material-code-braces: FieldInfoTypeDef](./type_defs.md#fieldinfotypedef) 
 ## RecordingGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RecordingGroupTypeDef
+
+def get_value() -> RecordingGroupTypeDef:
+    return {
+        "allSupported": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecordingGroupTypeDef(TypedDict):
+    allSupported: NotRequired[bool],
+    includeGlobalResourceTypes: NotRequired[bool],
+    resourceTypes: NotRequired[List[ResourceTypeType]],  # (1)
+```
 
-- `allSupported`: `bool`
-- `includeGlobalResourceTypes`: `bool`
-- `resourceTypes`: `List`\[[ResourceTypeType](./literals.md#resourcetypetype)\]
-
-<a id="relationshiptypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## RelationshipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RelationshipTypeDef
+
+def get_value() -> RelationshipTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RelationshipTypeDef(TypedDict):
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    resourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+    relationshipName: NotRequired[str],
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `resourceName`: `str`
-- `relationshipName`: `str`
-
-<a id="remediationconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## RemediationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationConfigurationTypeDef
+
+def get_value() -> RemediationConfigurationTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "TargetType": ...,
+        "TargetId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemediationConfigurationTypeDef(TypedDict):
+    ConfigRuleName: str,
+    TargetType: RemediationTargetTypeType,  # (1)
+    TargetId: str,
+    TargetVersion: NotRequired[str],
+    Parameters: NotRequired[Dict[str, RemediationParameterValueTypeDef]],  # (2)
+    ResourceType: NotRequired[str],
+    Automatic: NotRequired[bool],
+    ExecutionControls: NotRequired[ExecutionControlsTypeDef],  # (3)
+    MaximumAutomaticAttempts: NotRequired[int],
+    RetryAttemptSeconds: NotRequired[int],
+    Arn: NotRequired[str],
+    CreatedByService: NotRequired[str],
+```
 
-- `ConfigRuleName`: `str`
-- `TargetType`: `Literal['SSM_DOCUMENT']` (see
-  [RemediationTargetTypeType](./literals.md#remediationtargettypetype))
-- `TargetId`: `str`
-
-Optional fields:
-
-- `TargetVersion`: `str`
-- `Parameters`: `Dict`\[`str`,
-  [RemediationParameterValueTypeDef](./type_defs.md#remediationparametervaluetypedef)\]
-- `ResourceType`: `str`
-- `Automatic`: `bool`
-- `ExecutionControls`:
-  [ExecutionControlsTypeDef](./type_defs.md#executioncontrolstypedef)
-- `MaximumAutomaticAttempts`: `int`
-- `RetryAttemptSeconds`: `int`
-- `Arn`: `str`
-- `CreatedByService`: `str`
-
-<a id="remediationexceptionresourcekeytypedef"></a>
-
+1. See [:material-code-brackets: RemediationTargetTypeType](./literals.md#remediationtargettypetype) 
+2. See [:material-code-braces: RemediationParameterValueTypeDef](./type_defs.md#remediationparametervaluetypedef) 
+3. See [:material-code-braces: ExecutionControlsTypeDef](./type_defs.md#executioncontrolstypedef) 
 ## RemediationExceptionResourceKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationExceptionResourceKeyTypeDef
+
+def get_value() -> RemediationExceptionResourceKeyTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-
-<a id="remediationexceptiontypedef"></a>
+```python title="Definition"
+class RemediationExceptionResourceKeyTypeDef(TypedDict):
+    ResourceType: NotRequired[str],
+    ResourceId: NotRequired[str],
+```
 
 ## RemediationExceptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationExceptionTypeDef
+
+def get_value() -> RemediationExceptionTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "ResourceType": ...,
+        "ResourceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigRuleName`: `str`
-- `ResourceType`: `str`
-- `ResourceId`: `str`
-
-Optional fields:
-
-- `Message`: `str`
-- `ExpirationTime`: `datetime`
-
-<a id="remediationexecutionstatustypedef"></a>
+```python title="Definition"
+class RemediationExceptionTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceType: str,
+    ResourceId: str,
+    Message: NotRequired[str],
+    ExpirationTime: NotRequired[datetime],
+```
 
 ## RemediationExecutionStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationExecutionStatusTypeDef
+
+def get_value() -> RemediationExecutionStatusTypeDef:
+    return {
+        "ResourceKey": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationExecutionStatusTypeDef(TypedDict):
+    ResourceKey: NotRequired[ResourceKeyTypeDef],  # (1)
+    State: NotRequired[RemediationExecutionStateType],  # (2)
+    StepDetails: NotRequired[List[RemediationExecutionStepTypeDef]],  # (3)
+    InvocationTime: NotRequired[datetime],
+    LastUpdatedTime: NotRequired[datetime],
+```
 
-- `ResourceKey`: [ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)
-- `State`:
-  [RemediationExecutionStateType](./literals.md#remediationexecutionstatetype)
-- `StepDetails`:
-  `List`\[[RemediationExecutionStepTypeDef](./type_defs.md#remediationexecutionsteptypedef)\]
-- `InvocationTime`: `datetime`
-- `LastUpdatedTime`: `datetime`
-
-<a id="remediationexecutionsteptypedef"></a>
-
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
+2. See [:material-code-brackets: RemediationExecutionStateType](./literals.md#remediationexecutionstatetype) 
+3. See [:material-code-braces: RemediationExecutionStepTypeDef](./type_defs.md#remediationexecutionsteptypedef) 
 ## RemediationExecutionStepTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationExecutionStepTypeDef
+
+def get_value() -> RemediationExecutionStepTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationExecutionStepTypeDef(TypedDict):
+    Name: NotRequired[str],
+    State: NotRequired[RemediationExecutionStepStateType],  # (1)
+    ErrorMessage: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    StopTime: NotRequired[datetime],
+```
 
-- `Name`: `str`
-- `State`:
-  [RemediationExecutionStepStateType](./literals.md#remediationexecutionstepstatetype)
-- `ErrorMessage`: `str`
-- `StartTime`: `datetime`
-- `StopTime`: `datetime`
-
-<a id="remediationparametervaluetypedef"></a>
-
+1. See [:material-code-brackets: RemediationExecutionStepStateType](./literals.md#remediationexecutionstepstatetype) 
 ## RemediationParameterValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RemediationParameterValueTypeDef
+
+def get_value() -> RemediationParameterValueTypeDef:
+    return {
+        "ResourceValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RemediationParameterValueTypeDef(TypedDict):
+    ResourceValue: NotRequired[ResourceValueTypeDef],  # (1)
+    StaticValue: NotRequired[StaticValueTypeDef],  # (2)
+```
 
-- `ResourceValue`: [ResourceValueTypeDef](./type_defs.md#resourcevaluetypedef)
-- `StaticValue`: [StaticValueTypeDef](./type_defs.md#staticvaluetypedef)
-
-<a id="resourcecountfilterstypedef"></a>
-
+1. See [:material-code-braces: ResourceValueTypeDef](./type_defs.md#resourcevaluetypedef) 
+2. See [:material-code-braces: StaticValueTypeDef](./type_defs.md#staticvaluetypedef) 
 ## ResourceCountFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceCountFiltersTypeDef
+
+def get_value() -> ResourceCountFiltersTypeDef:
+    return {
+        "ResourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceCountFiltersTypeDef(TypedDict):
+    ResourceType: NotRequired[ResourceTypeType],  # (1)
+    AccountId: NotRequired[str],
+    Region: NotRequired[str],
+```
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `AccountId`: `str`
-- `Region`: `str`
-
-<a id="resourcecounttypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResourceCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceCountTypeDef
+
+def get_value() -> ResourceCountTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceCountTypeDef(TypedDict):
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    count: NotRequired[int],
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `count`: `int`
-
-<a id="resourcefilterstypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResourceFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceFiltersTypeDef
+
+def get_value() -> ResourceFiltersTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccountId`: `str`
-- `ResourceId`: `str`
-- `ResourceName`: `str`
-- `Region`: `str`
-
-<a id="resourceidentifiertypedef"></a>
+```python title="Definition"
+class ResourceFiltersTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    ResourceId: NotRequired[str],
+    ResourceName: NotRequired[str],
+    Region: NotRequired[str],
+```
 
 ## ResourceIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceIdentifierTypeDef
+
+def get_value() -> ResourceIdentifierTypeDef:
+    return {
+        "resourceType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceIdentifierTypeDef(TypedDict):
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    resourceId: NotRequired[str],
+    resourceName: NotRequired[str],
+    resourceDeletionTime: NotRequired[datetime],
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-- `resourceName`: `str`
-- `resourceDeletionTime`: `datetime`
-
-<a id="resourcekeytypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResourceKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceKeyTypeDef
+
+def get_value() -> ResourceKeyTypeDef:
+    return {
+        "resourceType": ...,
+        "resourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceKeyTypeDef(TypedDict):
+    resourceType: ResourceTypeType,  # (1)
+    resourceId: str,
+```
 
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `resourceId`: `str`
-
-<a id="resourcevaluetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResourceValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResourceValueTypeDef
+
+def get_value() -> ResourceValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceValueTypeDef(TypedDict):
+    Value: ResourceValueTypeType,  # (1)
+```
 
-- `Value`: `Literal['RESOURCE_ID']` (see
-  [ResourceValueTypeType](./literals.md#resourcevaluetypetype))
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceValueTypeType](./literals.md#resourcevaluetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retentionconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetentionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import RetentionConfigurationTypeDef
+
+def get_value() -> RetentionConfigurationTypeDef:
+    return {
+        "Name": ...,
+        "RetentionPeriodInDays": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `RetentionPeriodInDays`: `int`
-
-<a id="scopetypedef"></a>
+```python title="Definition"
+class RetentionConfigurationTypeDef(TypedDict):
+    Name: str,
+    RetentionPeriodInDays: int,
+```
 
 ## ScopeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import ScopeTypeDef
+
+def get_value() -> ScopeTypeDef:
+    return {
+        "ComplianceResourceTypes": ...,
+    }
 ```
 
-Optional fields:
-
-- `ComplianceResourceTypes`: `List`\[`str`\]
-- `TagKey`: `str`
-- `TagValue`: `str`
-- `ComplianceResourceId`: `str`
-
-<a id="selectaggregateresourceconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class ScopeTypeDef(TypedDict):
+    ComplianceResourceTypes: NotRequired[List[str]],
+    TagKey: NotRequired[str],
+    TagValue: NotRequired[str],
+    ComplianceResourceId: NotRequired[str],
+```
 
 ## SelectAggregateResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SelectAggregateResourceConfigRequestRequestTypeDef
+
+def get_value() -> SelectAggregateResourceConfigRequestRequestTypeDef:
+    return {
+        "Expression": ...,
+        "ConfigurationAggregatorName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectAggregateResourceConfigRequestRequestTypeDef(TypedDict):
+    Expression: str,
+    ConfigurationAggregatorName: str,
+    Limit: NotRequired[int],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Expression`: `str`
-- `ConfigurationAggregatorName`: `str`
+## SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef
 
-- `Limit`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+def get_value() -> SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef:
+    return {
+        "Expression": ...,
+        "ConfigurationAggregatorName": ...,
+    }
+```
 
-<a id="selectaggregateresourceconfigresponsetypedef"></a>
+```python title="Definition"
+class SelectAggregateResourceConfigRequestSelectAggregateResourceConfigPaginateTypeDef(TypedDict):
+    Expression: str,
+    ConfigurationAggregatorName: str,
+    MaxResults: NotRequired[int],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SelectAggregateResourceConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SelectAggregateResourceConfigResponseTypeDef
+
+def get_value() -> SelectAggregateResourceConfigResponseTypeDef:
+    return {
+        "Results": ...,
+        "QueryInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectAggregateResourceConfigResponseTypeDef(TypedDict):
+    Results: List[str],
+    QueryInfo: QueryInfoTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`: `List`\[`str`\]
-- `QueryInfo`: [QueryInfoTypeDef](./type_defs.md#queryinfotypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="selectresourceconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueryInfoTypeDef](./type_defs.md#queryinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SelectResourceConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SelectResourceConfigRequestRequestTypeDef
+
+def get_value() -> SelectResourceConfigRequestRequestTypeDef:
+    return {
+        "Expression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectResourceConfigRequestRequestTypeDef(TypedDict):
+    Expression: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Expression`: `str`
+## SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_config.type_defs import SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef
 
-- `Limit`: `int`
-- `NextToken`: `str`
+def get_value() -> SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef:
+    return {
+        "Expression": ...,
+    }
+```
 
-<a id="selectresourceconfigresponsetypedef"></a>
+```python title="Definition"
+class SelectResourceConfigRequestSelectResourceConfigPaginateTypeDef(TypedDict):
+    Expression: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SelectResourceConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SelectResourceConfigResponseTypeDef
+
+def get_value() -> SelectResourceConfigResponseTypeDef:
+    return {
+        "Results": ...,
+        "QueryInfo": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectResourceConfigResponseTypeDef(TypedDict):
+    Results: List[str],
+    QueryInfo: QueryInfoTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Results`: `List`\[`str`\]
-- `QueryInfo`: [QueryInfoTypeDef](./type_defs.md#queryinfotypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sourcedetailtypedef"></a>
-
+1. See [:material-code-braces: QueryInfoTypeDef](./type_defs.md#queryinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SourceDetailTypeDef
+
+def get_value() -> SourceDetailTypeDef:
+    return {
+        "EventSource": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceDetailTypeDef(TypedDict):
+    EventSource: NotRequired[EventSourceType],  # (1)
+    MessageType: NotRequired[MessageTypeType],  # (2)
+    MaximumExecutionFrequency: NotRequired[MaximumExecutionFrequencyType],  # (3)
+```
 
-- `EventSource`: `Literal['aws.config']` (see
-  [EventSourceType](./literals.md#eventsourcetype))
-- `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
-- `MaximumExecutionFrequency`:
-  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
-
-<a id="sourcetypedef"></a>
-
+1. See [:material-code-brackets: EventSourceType](./literals.md#eventsourcetype) 
+2. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
+3. See [:material-code-brackets: MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype) 
 ## SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "Owner": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    Owner: OwnerType,  # (1)
+    SourceIdentifier: NotRequired[str],
+    SourceDetails: NotRequired[List[SourceDetailTypeDef]],  # (2)
+    CustomPolicyDetails: NotRequired[CustomPolicyDetailsTypeDef],  # (3)
+```
 
-- `Owner`: [OwnerType](./literals.md#ownertype)
-
-Optional fields:
-
-- `SourceIdentifier`: `str`
-- `SourceDetails`:
-  `List`\[[SourceDetailTypeDef](./type_defs.md#sourcedetailtypedef)\]
-- `CustomPolicyDetails`:
-  [CustomPolicyDetailsTypeDef](./type_defs.md#custompolicydetailstypedef)
-
-<a id="ssmcontrolstypedef"></a>
-
+1. See [:material-code-brackets: OwnerType](./literals.md#ownertype) 
+2. See [:material-code-braces: SourceDetailTypeDef](./type_defs.md#sourcedetailtypedef) 
+3. See [:material-code-braces: CustomPolicyDetailsTypeDef](./type_defs.md#custompolicydetailstypedef) 
 ## SsmControlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import SsmControlsTypeDef
+
+def get_value() -> SsmControlsTypeDef:
+    return {
+        "ConcurrentExecutionRatePercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConcurrentExecutionRatePercentage`: `int`
-- `ErrorPercentage`: `int`
-
-<a id="startconfigrulesevaluationrequestrequesttypedef"></a>
+```python title="Definition"
+class SsmControlsTypeDef(TypedDict):
+    ConcurrentExecutionRatePercentage: NotRequired[int],
+    ErrorPercentage: NotRequired[int],
+```
 
 ## StartConfigRulesEvaluationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StartConfigRulesEvaluationRequestRequestTypeDef
+
+def get_value() -> StartConfigRulesEvaluationRequestRequestTypeDef:
+    return {
+        "ConfigRuleNames": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConfigRuleNames`: `Sequence`\[`str`\]
-
-<a id="startconfigurationrecorderrequestrequesttypedef"></a>
+```python title="Definition"
+class StartConfigRulesEvaluationRequestRequestTypeDef(TypedDict):
+    ConfigRuleNames: NotRequired[Sequence[str]],
+```
 
 ## StartConfigurationRecorderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StartConfigurationRecorderRequestRequestTypeDef
+
+def get_value() -> StartConfigurationRecorderRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorderName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationRecorderName`: `str`
-
-<a id="startremediationexecutionrequestrequesttypedef"></a>
+```python title="Definition"
+class StartConfigurationRecorderRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorderName: str,
+```
 
 ## StartRemediationExecutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StartRemediationExecutionRequestRequestTypeDef
+
+def get_value() -> StartRemediationExecutionRequestRequestTypeDef:
+    return {
+        "ConfigRuleName": ...,
+        "ResourceKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartRemediationExecutionRequestRequestTypeDef(TypedDict):
+    ConfigRuleName: str,
+    ResourceKeys: Sequence[ResourceKeyTypeDef],  # (1)
+```
 
-- `ConfigRuleName`: `str`
-- `ResourceKeys`:
-  `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-
-<a id="startremediationexecutionresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
 ## StartRemediationExecutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StartRemediationExecutionResponseTypeDef
+
+def get_value() -> StartRemediationExecutionResponseTypeDef:
+    return {
+        "FailureMessage": ...,
+        "FailedItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartRemediationExecutionResponseTypeDef(TypedDict):
+    FailureMessage: str,
+    FailedItems: List[ResourceKeyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FailureMessage`: `str`
-- `FailedItems`:
-  `List`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="staticvaluetypedef"></a>
-
+1. See [:material-code-braces: ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StaticValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StaticValueTypeDef
+
+def get_value() -> StaticValueTypeDef:
+    return {
+        "Values": ...,
+    }
 ```
 
-Required fields:
-
-- `Values`: `List`\[`str`\]
-
-<a id="statusdetailfilterstypedef"></a>
+```python title="Definition"
+class StaticValueTypeDef(TypedDict):
+    Values: List[str],
+```
 
 ## StatusDetailFiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StatusDetailFiltersTypeDef
+
+def get_value() -> StatusDetailFiltersTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class StatusDetailFiltersTypeDef(TypedDict):
+    AccountId: NotRequired[str],
+    MemberAccountRuleStatus: NotRequired[MemberAccountRuleStatusType],  # (1)
+```
 
-- `AccountId`: `str`
-- `MemberAccountRuleStatus`:
-  [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
-
-<a id="stopconfigurationrecorderrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype) 
 ## StopConfigurationRecorderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StopConfigurationRecorderRequestRequestTypeDef
+
+def get_value() -> StopConfigurationRecorderRequestRequestTypeDef:
+    return {
+        "ConfigurationRecorderName": ...,
+    }
 ```
 
-Required fields:
-
-- `ConfigurationRecorderName`: `str`
-
-<a id="storedquerymetadatatypedef"></a>
+```python title="Definition"
+class StopConfigurationRecorderRequestRequestTypeDef(TypedDict):
+    ConfigurationRecorderName: str,
+```
 
 ## StoredQueryMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StoredQueryMetadataTypeDef
+
+def get_value() -> StoredQueryMetadataTypeDef:
+    return {
+        "QueryId": ...,
+        "QueryArn": ...,
+        "QueryName": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryId`: `str`
-- `QueryArn`: `str`
-- `QueryName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="storedquerytypedef"></a>
+```python title="Definition"
+class StoredQueryMetadataTypeDef(TypedDict):
+    QueryId: str,
+    QueryArn: str,
+    QueryName: str,
+    Description: NotRequired[str],
+```
 
 ## StoredQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import StoredQueryTypeDef
+
+def get_value() -> StoredQueryTypeDef:
+    return {
+        "QueryName": ...,
+    }
 ```
 
-Required fields:
-
-- `QueryName`: `str`
-
-Optional fields:
-
-- `QueryId`: `str`
-- `QueryArn`: `str`
-- `Description`: `str`
-- `Expression`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StoredQueryTypeDef(TypedDict):
+    QueryName: str,
+    QueryId: NotRequired[str],
+    QueryArn: NotRequired[str],
+    Description: NotRequired[str],
+    Expression: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_config.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]

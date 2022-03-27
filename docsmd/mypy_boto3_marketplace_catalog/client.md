@@ -1,38 +1,18 @@
-<a id="marketplacecatalogclient-for-boto3-marketplacecatalog-module"></a>
+# MarketplaceCatalogClient
 
-# MarketplaceCatalogClient for boto3 MarketplaceCatalog module
+> [Index](../README.md) > [MarketplaceCatalog](./README.md) > MarketplaceCatalogClient
 
-> [Index](../README.md) > [MarketplaceCatalog](./README.md) >
-> MarketplaceCatalogClient
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
-type annotations stubs module
-[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
-
-- [MarketplaceCatalogClient for boto3 MarketplaceCatalog module](#marketplacecatalogclient-for-boto3-marketplacecatalog-module)
-  - [MarketplaceCatalogClient](#marketplacecatalogclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_change_set](#cancel_change_set)
-    - [describe_change_set](#describe_change_set)
-    - [describe_entity](#describe_entity)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_change_sets](#list_change_sets)
-    - [list_entities](#list_entities)
-    - [start_change_set](#start_change_set)
-
-<a id="marketplacecatalogclient"></a>
+    Auto-generated documentation for [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+    type annotations stubs module [mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 ## MarketplaceCatalogClient
 
-Type annotations for `boto3.client("marketplace-catalog")`
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 
@@ -40,235 +20,277 @@ def get_marketplace-catalog_client() -> MarketplaceCatalogClient:
     return Session().client("marketplace-catalog")
 ```
 
-Boto3 documentation:
-[MarketplaceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("marketplace-catalog").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("marketplace-catalog")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServiceException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceNotSupportedException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_marketplace_catalog.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServiceException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceNotSupportedException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MarketplaceCatalogClient exceptions.
-
-Type annotations for `boto3.client("marketplace-catalog").exceptions` method.
-
-Boto3 documentation:
-[MarketplaceCatalog.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("marketplace-catalog").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_change\_set"></a>
-
-### cancel_change_set
+### cancel\_change\_set
 
 Used to cancel an open change request.
 
-Type annotations for `boto3.client("marketplace-catalog").cancel_change_set`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").cancel_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.cancel_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.cancel_change_set)
+```python title="Method definition"
+def cancel_change_set(
+    self,
+    *,
+    Catalog: str,
+    ChangeSetId: str,
+) -> CancelChangeSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelChangeSetRequestRequestTypeDef](./type_defs.md#cancelchangesetrequestrequesttypedef).
+1. See [:material-code-braces: CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `ChangeSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelChangeSetRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+    "ChangeSetId": ...,
+}
 
-Returns
-[CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef).
+parent.cancel_change_set(**kwargs)
+```
 
-<a id="describe\_change\_set"></a>
+1. See [:material-code-braces: CancelChangeSetRequestRequestTypeDef](./type_defs.md#cancelchangesetrequestrequesttypedef) 
 
-### describe_change_set
+### describe\_change\_set
 
 Provides information about a given change set.
 
-Type annotations for `boto3.client("marketplace-catalog").describe_change_set`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").describe_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.describe_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_change_set)
+```python title="Method definition"
+def describe_change_set(
+    self,
+    *,
+    Catalog: str,
+    ChangeSetId: str,
+) -> DescribeChangeSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeChangeSetRequestRequestTypeDef](./type_defs.md#describechangesetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `ChangeSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeChangeSetRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+    "ChangeSetId": ...,
+}
 
-Returns
-[DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef).
+parent.describe_change_set(**kwargs)
+```
 
-<a id="describe\_entity"></a>
+1. See [:material-code-braces: DescribeChangeSetRequestRequestTypeDef](./type_defs.md#describechangesetrequestrequesttypedef) 
 
-### describe_entity
+### describe\_entity
 
 Returns the metadata and content of the entity.
 
-Type annotations for `boto3.client("marketplace-catalog").describe_entity`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").describe_entity` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.describe_entity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.describe_entity)
+```python title="Method definition"
+def describe_entity(
+    self,
+    *,
+    Catalog: str,
+    EntityId: str,
+) -> DescribeEntityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEntityRequestRequestTypeDef](./type_defs.md#describeentityrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `EntityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeEntityRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+    "EntityId": ...,
+}
 
-Returns
-[DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef).
+parent.describe_entity(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeEntityRequestRequestTypeDef](./type_defs.md#describeentityrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for
-`boto3.client("marketplace-catalog").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_change\_sets"></a>
-
-### list_change_sets
+### list\_change\_sets
 
 Returns the list of change sets owned by the account being used to make the
 call.
 
-Type annotations for `boto3.client("marketplace-catalog").list_change_sets`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").list_change_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.list_change_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_change_sets)
+```python title="Method definition"
+def list_change_sets(
+    self,
+    *,
+    Catalog: str,
+    FilterList: Sequence[FilterTypeDef] = ...,  # (1)
+    Sort: SortTypeDef = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChangeSetsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListChangeSetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListChangeSetsRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+}
 
-Returns
-[ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
+parent.list_change_sets(**kwargs)
+```
 
-<a id="list\_entities"></a>
+1. See [:material-code-braces: ListChangeSetsRequestRequestTypeDef](./type_defs.md#listchangesetsrequestrequesttypedef) 
 
-### list_entities
+### list\_entities
 
 Provides the list of entities of a given type.
 
-Type annotations for `boto3.client("marketplace-catalog").list_entities`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").list_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.list_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.list_entities)
+```python title="Method definition"
+def list_entities(
+    self,
+    *,
+    Catalog: str,
+    EntityType: str,
+    FilterList: Sequence[FilterTypeDef] = ...,  # (1)
+    Sort: SortTypeDef = ...,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEntitiesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
+3. See [:material-code-braces: ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `EntityType`: `str` *(required)*
-- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEntitiesRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+    "EntityType": ...,
+}
 
-Returns
-[ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
+parent.list_entities(**kwargs)
+```
 
-<a id="start\_change\_set"></a>
+1. See [:material-code-braces: ListEntitiesRequestRequestTypeDef](./type_defs.md#listentitiesrequestrequesttypedef) 
 
-### start_change_set
+### start\_change\_set
 
 This operation allows you to request changes for your entities.
 
-Type annotations for `boto3.client("marketplace-catalog").start_change_set`
-method.
+Type annotations and code completion for `#!python boto3.client("marketplace-catalog").start_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
 
-Boto3 documentation:
-[MarketplaceCatalog.Client.start_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.start_change_set)
+```python title="Method definition"
+def start_change_set(
+    self,
+    *,
+    Catalog: str,
+    ChangeSet: Sequence[ChangeTypeDef],  # (1)
+    ChangeSetName: str = ...,
+    ClientRequestToken: str = ...,
+) -> StartChangeSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef).
+1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
+2. See [:material-code-braces: StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Catalog`: `str` *(required)*
-- `ChangeSet`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
-  *(required)*
-- `ChangeSetName`: `str`
-- `ClientRequestToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartChangeSetRequestRequestTypeDef = {  # (1)
+    "Catalog": ...,
+    "ChangeSet": ...,
+}
 
-Returns
-[StartChangeSetResponseTypeDef](./type_defs.md#startchangesetresponsetypedef).
+parent.start_change_set(**kwargs)
+```
+
+1. See [:material-code-braces: StartChangeSetRequestRequestTypeDef](./type_defs.md#startchangesetrequestrequesttypedef) 
+
+
+
+

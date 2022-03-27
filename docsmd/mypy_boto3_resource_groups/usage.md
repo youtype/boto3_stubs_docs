@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-resourcegroups-module"></a>
-
-# Examples for boto3 ResourceGroups module
+# Examples
 
 > [Index](../README.md) > [ResourceGroups](./README.md) > Examples
 
-- [Examples for boto3 ResourceGroups module](#examples-for-boto3-resourcegroups-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+    type annotations stubs module [mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[resource-groups]` package installed.
 
-Write your `ResourceGroups` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ResourceGroups` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ResourceGroupsClient
-# and provides type checking and code completion
-client = session.client("resource-groups")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListGroupResourcesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_group_resources")
-for item in paginator.paginate(...):
-    # item has type ListGroupResourcesOutputTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("resource-groups")  # (1)
+    result = client.create_group()  # (2)
+    ```
+
+    1. client: [ResourceGroupsClient](./client.md)
+    2. result: [:material-code-braces: CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("resource-groups")  # (1)
+
+    paginator = client.get_paginator("list_group_resources")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ResourceGroupsClient](./client.md)
+    2. paginator: [ListGroupResourcesPaginator](./paginators.md#listgroupresourcespaginator)
+    3. item: [:material-code-braces: ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[resource-groups]` or a standalone
-`mypy_boto3_resource_groups` package, you have to explicitly specify
-`client: ResourceGroupsClient` type annotation.
+With `boto3-stubs-lite[resource-groups]`
+or a standalone `mypy_boto3_resource_groups` package, you have to explicitly specify `client: ResourceGroupsClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_resource_groups.client import ResourceGroupsClient
-from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator
-
-from mypy_boto3_resource_groups.literals import PaginatorName
-
-from mypy_boto3_resource_groups.type_defs import bool
-from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ResourceGroupsClient = session.client("resource-groups")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_resource_groups.client import ResourceGroupsClient
+    from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef
+    from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_group_resources"
-paginator: ListGroupResourcesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListGroupResourcesOutputTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ResourceGroupsClient = session.client("resource-groups")
+
+    kwargs: CreateGroupInputRequestTypeDef = {...}
+    result: CreateGroupOutputTypeDef = client.create_group(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_resource_groups.client import ResourceGroupsClient
+    from mypy_boto3_resource_groups.paginator import ListGroupResourcesPaginator
+    from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
+
+
+    session = Session()
+    client: ResourceGroupsClient = session.client("resource-groups")
+
+    paginator: ListGroupResourcesPaginator = client.get_paginator("list_group_resources")
+    for item in paginator.paginate(...):
+        item: ListGroupResourcesOutputTypeDef
+        print(item)
+    ```
+
+
+
+

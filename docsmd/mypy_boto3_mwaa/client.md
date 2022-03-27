@@ -1,43 +1,18 @@
-<a id="mwaaclient-for-boto3-mwaa-module"></a>
-
-# MWAAClient for boto3 MWAA module
+# MWAAClient
 
 > [Index](../README.md) > [MWAA](./README.md) > MWAAClient
 
-Auto-generated documentation for
-[MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
-type annotations stubs module
-[mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+!!! note ""
 
-- [MWAAClient for boto3 MWAA module](#mwaaclient-for-boto3-mwaa-module)
-  - [MWAAClient](#mwaaclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_cli_token](#create_cli_token)
-    - [create_environment](#create_environment)
-    - [create_web_login_token](#create_web_login_token)
-    - [delete_environment](#delete_environment)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_environment](#get_environment)
-    - [list_environments](#list_environments)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [publish_metrics](#publish_metrics)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_environment](#update_environment)
-    - [get_paginator](#get_paginator)
-
-<a id="mwaaclient"></a>
+    Auto-generated documentation for [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
+    type annotations stubs module [mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 ## MWAAClient
 
-Type annotations for `boto3.client("mwaa")`
+Type annotations and code completion for `#!python boto3.client("mwaa")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mwaa.client import MWAAClient
 
@@ -45,370 +20,452 @@ def get_mwaa_client() -> MWAAClient:
     return Session().client("mwaa")
 ```
 
-Boto3 documentation:
-[MWAA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mwaa").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mwaa")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mwaa.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MWAAClient exceptions.
-
-Type annotations for `boto3.client("mwaa").exceptions` method.
-
-Boto3 documentation:
-[MWAA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mwaa").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate)
 
-Boto3 documentation:
-[MWAA.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_cli\_token"></a>
-
-### create_cli_token
+### create\_cli\_token
 
 Creates a CLI token for the Airflow CLI.
 
-Type annotations for `boto3.client("mwaa").create_cli_token` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").create_cli_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
 
-Boto3 documentation:
-[MWAA.Client.create_cli_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_cli_token)
+```python title="Method definition"
+def create_cli_token(
+    self,
+    *,
+    Name: str,
+) -> CreateCliTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCliTokenRequestRequestTypeDef](./type_defs.md#createclitokenrequestrequesttypedef).
+1. See [:material-code-braces: CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateCliTokenRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef).
+parent.create_cli_token(**kwargs)
+```
 
-<a id="create\_environment"></a>
+1. See [:material-code-braces: CreateCliTokenRequestRequestTypeDef](./type_defs.md#createclitokenrequestrequesttypedef) 
 
-### create_environment
+### create\_environment
 
 Creates an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").create_environment` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").create_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
 
-Boto3 documentation:
-[MWAA.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_environment)
+```python title="Method definition"
+def create_environment(
+    self,
+    *,
+    DagS3Path: str,
+    ExecutionRoleArn: str,
+    Name: str,
+    NetworkConfiguration: NetworkConfigurationTypeDef,  # (1)
+    SourceBucketArn: str,
+    AirflowConfigurationOptions: Mapping[str, str] = ...,
+    AirflowVersion: str = ...,
+    EnvironmentClass: str = ...,
+    KmsKey: str = ...,
+    LoggingConfiguration: LoggingConfigurationInputTypeDef = ...,  # (2)
+    MaxWorkers: int = ...,
+    MinWorkers: int = ...,
+    PluginsS3ObjectVersion: str = ...,
+    PluginsS3Path: str = ...,
+    RequirementsS3ObjectVersion: str = ...,
+    RequirementsS3Path: str = ...,
+    Schedulers: int = ...,
+    Tags: Mapping[str, str] = ...,
+    WebserverAccessMode: WebserverAccessModeType = ...,  # (3)
+    WeeklyMaintenanceWindowStart: str = ...,
+) -> CreateEnvironmentOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentInputRequestTypeDef](./type_defs.md#createenvironmentinputrequesttypedef).
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef) 
+3. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
+4. See [:material-code-braces: CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `DagS3Path`: `str` *(required)*
-- `ExecutionRoleArn`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-  *(required)*
-- `SourceBucketArn`: `str` *(required)*
-- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
-- `AirflowVersion`: `str`
-- `EnvironmentClass`: `str`
-- `KmsKey`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
-- `MaxWorkers`: `int`
-- `MinWorkers`: `int`
-- `PluginsS3ObjectVersion`: `str`
-- `PluginsS3Path`: `str`
-- `RequirementsS3ObjectVersion`: `str`
-- `RequirementsS3Path`: `str`
-- `Schedulers`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `WebserverAccessMode`:
-  [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
-- `WeeklyMaintenanceWindowStart`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentInputRequestTypeDef = {  # (1)
+    "DagS3Path": ...,
+    "ExecutionRoleArn": ...,
+    "Name": ...,
+    "NetworkConfiguration": ...,
+    "SourceBucketArn": ...,
+}
 
-Returns
-[CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
+parent.create_environment(**kwargs)
+```
 
-<a id="create\_web\_login\_token"></a>
+1. See [:material-code-braces: CreateEnvironmentInputRequestTypeDef](./type_defs.md#createenvironmentinputrequesttypedef) 
 
-### create_web_login_token
+### create\_web\_login\_token
 
 Creates a web login token for the Airflow Web UI.
 
-Type annotations for `boto3.client("mwaa").create_web_login_token` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").create_web_login_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
 
-Boto3 documentation:
-[MWAA.Client.create_web_login_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.create_web_login_token)
+```python title="Method definition"
+def create_web_login_token(
+    self,
+    *,
+    Name: str,
+) -> CreateWebLoginTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateWebLoginTokenRequestRequestTypeDef](./type_defs.md#createweblogintokenrequestrequesttypedef).
+1. See [:material-code-braces: CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateWebLoginTokenRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef).
+parent.create_web_login_token(**kwargs)
+```
 
-<a id="delete\_environment"></a>
+1. See [:material-code-braces: CreateWebLoginTokenRequestRequestTypeDef](./type_defs.md#createweblogintokenrequestrequesttypedef) 
 
-### delete_environment
+### delete\_environment
 
 Deletes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").delete_environment` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").delete_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
 
-Boto3 documentation:
-[MWAA.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.delete_environment)
+```python title="Method definition"
+def delete_environment(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_environment(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteEnvironmentInputRequestTypeDef](./type_defs.md#deleteenvironmentinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mwaa").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MWAA.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_environment"></a>
-
-### get_environment
+### get\_environment
 
 Describes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").get_environment` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").get_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
 
-Boto3 documentation:
-[MWAA.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.get_environment)
+```python title="Method definition"
+def get_environment(
+    self,
+    *,
+    Name: str,
+) -> GetEnvironmentOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
+parent.get_environment(**kwargs)
+```
 
-<a id="list\_environments"></a>
+1. See [:material-code-braces: GetEnvironmentInputRequestTypeDef](./type_defs.md#getenvironmentinputrequesttypedef) 
 
-### list_environments
+### list\_environments
 
 Lists the Amazon Managed Workflows for Apache Airflow (MWAA) environments.
 
-Type annotations for `boto3.client("mwaa").list_environments` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").list_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
 
-Boto3 documentation:
-[MWAA.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_environments)
+```python title="Method definition"
+def list_environments(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListEnvironmentsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsInputRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
+parent.list_environments(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListEnvironmentsInputRequestTypeDef](./type_defs.md#listenvironmentsinputrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the key-value tag pairs associated to the Amazon Managed Workflows for
 Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[MWAA.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="publish\_metrics"></a>
+1. See [:material-code-braces: ListTagsForResourceInputRequestTypeDef](./type_defs.md#listtagsforresourceinputrequesttypedef) 
 
-### publish_metrics
+### publish\_metrics
 
 **Internal only**.
 
-Type annotations for `boto3.client("mwaa").publish_metrics` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").publish_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
 
-Boto3 documentation:
-[MWAA.Client.publish_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.publish_metrics)
+```python title="Method definition"
+def publish_metrics(
+    self,
+    *,
+    EnvironmentName: str,
+    MetricData: Sequence[MetricDatumTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PublishMetricsInputRequestTypeDef](./type_defs.md#publishmetricsinputrequesttypedef).
+1. See [:material-code-braces: MetricDatumTypeDef](./type_defs.md#metricdatumtypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str` *(required)*
-- `MetricData`:
-  `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PublishMetricsInputRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+    "MetricData": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.publish_metrics(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PublishMetricsInputRequestTypeDef](./type_defs.md#publishmetricsinputrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates key-value tag pairs to your Amazon Managed Workflows for Apache
 Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
 
-Boto3 documentation:
-[MWAA.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceInputRequestTypeDef](./type_defs.md#tagresourceinputrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes key-value tag pairs associated to your Amazon Managed Workflows for
 Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
 
-Boto3 documentation:
-[MWAA.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceInputRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Updates an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
 
-Type annotations for `boto3.client("mwaa").update_environment` method.
+Type annotations and code completion for `#!python boto3.client("mwaa").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
 
-Boto3 documentation:
-[MWAA.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    Name: str,
+    AirflowConfigurationOptions: Mapping[str, str] = ...,
+    AirflowVersion: str = ...,
+    DagS3Path: str = ...,
+    EnvironmentClass: str = ...,
+    ExecutionRoleArn: str = ...,
+    LoggingConfiguration: LoggingConfigurationInputTypeDef = ...,  # (1)
+    MaxWorkers: int = ...,
+    MinWorkers: int = ...,
+    NetworkConfiguration: UpdateNetworkConfigurationInputTypeDef = ...,  # (2)
+    PluginsS3ObjectVersion: str = ...,
+    PluginsS3Path: str = ...,
+    RequirementsS3ObjectVersion: str = ...,
+    RequirementsS3Path: str = ...,
+    Schedulers: int = ...,
+    SourceBucketArn: str = ...,
+    WebserverAccessMode: WebserverAccessModeType = ...,  # (3)
+    WeeklyMaintenanceWindowStart: str = ...,
+) -> UpdateEnvironmentOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentInputRequestTypeDef](./type_defs.md#updateenvironmentinputrequesttypedef).
+1. See [:material-code-braces: LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef) 
+2. See [:material-code-braces: UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef) 
+3. See [:material-code-brackets: WebserverAccessModeType](./literals.md#webserveraccessmodetype) 
+4. See [:material-code-braces: UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AirflowConfigurationOptions`: `Mapping`\[`str`, `str`\]
-- `AirflowVersion`: `str`
-- `DagS3Path`: `str`
-- `EnvironmentClass`: `str`
-- `ExecutionRoleArn`: `str`
-- `LoggingConfiguration`:
-  [LoggingConfigurationInputTypeDef](./type_defs.md#loggingconfigurationinputtypedef)
-- `MaxWorkers`: `int`
-- `MinWorkers`: `int`
-- `NetworkConfiguration`:
-  [UpdateNetworkConfigurationInputTypeDef](./type_defs.md#updatenetworkconfigurationinputtypedef)
-- `PluginsS3ObjectVersion`: `str`
-- `PluginsS3Path`: `str`
-- `RequirementsS3ObjectVersion`: `str`
-- `RequirementsS3Path`: `str`
-- `Schedulers`: `int`
-- `SourceBucketArn`: `str`
-- `WebserverAccessMode`:
-  [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
-- `WeeklyMaintenanceWindowStart`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
+parent.update_environment(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateEnvironmentInputRequestTypeDef](./type_defs.md#updateenvironmentinputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mwaa").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mwaa").get_paginator` method with overloads.
 
-- `client.get_paginator("list_environments")` ->
-  [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+- `client.get_paginator("list_environments")` -> [ListEnvironmentsPaginator](./paginators.md#listenvironmentspaginator)
+
+
+

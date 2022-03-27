@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-amplify-module"></a>
-
-# Type annotations for boto3 Amplify module
+#  Amplify module
 
 > [Index](../README.md) > Amplify
 
-Auto-generated documentation for
-[Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
-type annotations stubs module
-[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
+!!! note ""
 
-- [Type annotations for boto3 Amplify module](#type-annotations-for-boto3-amplify-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [AmplifyClient](#amplifyclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
+    type annotations stubs module [mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Amplify`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[amplify]'
 python -m pip install mypy-boto3-amplify
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,96 +42,37 @@ python -m pip install mypy-boto3-amplify
 python -m pip uninstall -y mypy-boto3-amplify
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="amplifyclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## AmplifyClient
 
-Type annotations for `boto3.client("amplify")` as [AmplifyClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("amplify")` as [AmplifyClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_amplify.client import AmplifyClient
+
+def get_client() -> AmplifyClient:
+    return Session().cleint("amplify")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_app](./client.md#create_app)
-- [create_backend_environment](./client.md#create_backend_environment)
-- [create_branch](./client.md#create_branch)
-- [create_deployment](./client.md#create_deployment)
-- [create_domain_association](./client.md#create_domain_association)
-- [create_webhook](./client.md#create_webhook)
-- [delete_app](./client.md#delete_app)
-- [delete_backend_environment](./client.md#delete_backend_environment)
-- [delete_branch](./client.md#delete_branch)
-- [delete_domain_association](./client.md#delete_domain_association)
-- [delete_job](./client.md#delete_job)
-- [delete_webhook](./client.md#delete_webhook)
-- [exceptions](./client.md#exceptions)
-- [generate_access_logs](./client.md#generate_access_logs)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_app](./client.md#get_app)
-- [get_artifact_url](./client.md#get_artifact_url)
-- [get_backend_environment](./client.md#get_backend_environment)
-- [get_branch](./client.md#get_branch)
-- [get_domain_association](./client.md#get_domain_association)
-- [get_job](./client.md#get_job)
-- [get_paginator](./client.md#get_paginator)
-- [get_webhook](./client.md#get_webhook)
-- [list_apps](./client.md#list_apps)
-- [list_artifacts](./client.md#list_artifacts)
-- [list_backend_environments](./client.md#list_backend_environments)
-- [list_branches](./client.md#list_branches)
-- [list_domain_associations](./client.md#list_domain_associations)
-- [list_jobs](./client.md#list_jobs)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_webhooks](./client.md#list_webhooks)
-- [start_deployment](./client.md#start_deployment)
-- [start_job](./client.md#start_job)
-- [stop_job](./client.md#stop_job)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_app](./client.md#update_app)
-- [update_branch](./client.md#update_branch)
-- [update_domain_association](./client.md#update_domain_association)
-- [update_webhook](./client.md#update_webhook)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-AmplifyClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- DependentServiceFailureException
-- InternalFailureException
-- LimitExceededException
-- NotFoundException
-- ResourceNotFoundException
-- UnauthorizedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("amplify").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("amplify").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_amplify.paginator import ListAppsPaginator, ...
+from mypy_boto3_amplify.paginator import ListAppsPaginator
+
+def get_list_apps_paginator() -> ListAppsPaginator:
+    return Session().client("amplify").get_paginator("list_apps"))
 ```
 
 - [ListAppsPaginator](./paginators.md#listappspaginator)
@@ -161,16 +80,23 @@ from mypy_boto3_amplify.paginator import ListAppsPaginator, ...
 - [ListDomainAssociationsPaginator](./paginators.md#listdomainassociationspaginator)
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplify.literals import DomainStatusType
 
-```python
-from mypy_boto3_amplify.literals import DomainStatusType, ...
+def get_value() -> DomainStatusType:
+    return "AVAILABLE"
 ```
 
 - [DomainStatusType](./literals.md#domainstatustype)
@@ -187,18 +113,33 @@ from mypy_boto3_amplify.literals import DomainStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_amplify.type_defs import AppTypeDef
 
-```python
-from mypy_boto3_amplify.type_defs import AppTypeDef, ...
+def get_value() -> AppTypeDef:
+    return {
+        "appId": ...,
+        "appArn": ...,
+        "name": ...,
+        "description": ...,
+        "repository": ...,
+        "platform": ...,
+        "createTime": ...,
+        "updateTime": ...,
+        "environmentVariables": ...,
+        "defaultDomain": ...,
+        "enableBranchAutoBuild": ...,
+        "enableBasicAuth": ...,
+    }
 ```
 
 - [AppTypeDef](./type_defs.md#apptypedef)
@@ -250,16 +191,20 @@ from mypy_boto3_amplify.type_defs import AppTypeDef, ...
 - [GetWebhookResultTypeDef](./type_defs.md#getwebhookresulttypedef)
 - [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - [JobTypeDef](./type_defs.md#jobtypedef)
+- [ListAppsRequestListAppsPaginateTypeDef](./type_defs.md#listappsrequestlistappspaginatetypedef)
 - [ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef)
 - [ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef)
 - [ListArtifactsRequestRequestTypeDef](./type_defs.md#listartifactsrequestrequesttypedef)
 - [ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef)
 - [ListBackendEnvironmentsRequestRequestTypeDef](./type_defs.md#listbackendenvironmentsrequestrequesttypedef)
 - [ListBackendEnvironmentsResultTypeDef](./type_defs.md#listbackendenvironmentsresulttypedef)
+- [ListBranchesRequestListBranchesPaginateTypeDef](./type_defs.md#listbranchesrequestlistbranchespaginatetypedef)
 - [ListBranchesRequestRequestTypeDef](./type_defs.md#listbranchesrequestrequesttypedef)
 - [ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef)
+- [ListDomainAssociationsRequestListDomainAssociationsPaginateTypeDef](./type_defs.md#listdomainassociationsrequestlistdomainassociationspaginatetypedef)
 - [ListDomainAssociationsRequestRequestTypeDef](./type_defs.md#listdomainassociationsrequestrequesttypedef)
 - [ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -289,3 +234,4 @@ from mypy_boto3_amplify.type_defs import AppTypeDef, ...
 - [UpdateWebhookRequestRequestTypeDef](./type_defs.md#updatewebhookrequestrequesttypedef)
 - [UpdateWebhookResultTypeDef](./type_defs.md#updatewebhookresulttypedef)
 - [WebhookTypeDef](./type_defs.md#webhooktypedef)
+

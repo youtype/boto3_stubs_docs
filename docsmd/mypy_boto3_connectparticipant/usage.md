@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-connectparticipant-module"></a>
-
-# Examples for boto3 ConnectParticipant module
+# Examples
 
 > [Index](../README.md) > [ConnectParticipant](./README.md) > Examples
 
-- [Examples for boto3 ConnectParticipant module](#examples-for-boto3-connectparticipant-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
+    type annotations stubs module [mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[connectparticipant]` package installed.
 
-Write your `ConnectParticipant` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ConnectParticipant` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ConnectParticipantClient
-# and provides type checking and code completion
-client = session.client("connectparticipant")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("connectparticipant")  # (1)
+    result = client.create_participant_connection()  # (2)
+    ```
+
+    1. client: [ConnectParticipantClient](./client.md)
+    2. result: [:material-code-braces: CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[connectparticipant]` or a standalone
-`mypy_boto3_connectparticipant` package, you have to explicitly specify
-`client: ConnectParticipantClient` type annotation.
+With `boto3-stubs-lite[connectparticipant]`
+or a standalone `mypy_boto3_connectparticipant` package, you have to explicitly specify `client: ConnectParticipantClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_connectparticipant.client import ConnectParticipantClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_connectparticipant.client import ConnectParticipantClient
+    from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionResponseTypeDef
+    from mypy_boto3_connectparticipant.type_defs import CreateParticipantConnectionRequestRequestTypeDef
 
 
-from mypy_boto3_connectparticipant.type_defs import bool
+    session = Session()
+
+    client: ConnectParticipantClient = session.client("connectparticipant")
+
+    kwargs: CreateParticipantConnectionRequestRequestTypeDef = {...}
+    result: CreateParticipantConnectionResponseTypeDef = client.create_participant_connection(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: ConnectParticipantClient = session.client("connectparticipant")
 
-result: bool = client.can_paginate()
-```
+

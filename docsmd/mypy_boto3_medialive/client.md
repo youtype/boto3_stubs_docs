@@ -1,90 +1,18 @@
-<a id="medialiveclient-for-boto3-medialive-module"></a>
-
-# MediaLiveClient for boto3 MediaLive module
+# MediaLiveClient
 
 > [Index](../README.md) > [MediaLive](./README.md) > MediaLiveClient
 
-Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module
-[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
+!!! note ""
 
-- [MediaLiveClient for boto3 MediaLive module](#medialiveclient-for-boto3-medialive-module)
-  - [MediaLiveClient](#medialiveclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_input_device_transfer](#accept_input_device_transfer)
-    - [batch_delete](#batch_delete)
-    - [batch_start](#batch_start)
-    - [batch_stop](#batch_stop)
-    - [batch_update_schedule](#batch_update_schedule)
-    - [can_paginate](#can_paginate)
-    - [cancel_input_device_transfer](#cancel_input_device_transfer)
-    - [claim_device](#claim_device)
-    - [create_channel](#create_channel)
-    - [create_input](#create_input)
-    - [create_input_security_group](#create_input_security_group)
-    - [create_multiplex](#create_multiplex)
-    - [create_multiplex_program](#create_multiplex_program)
-    - [create_partner_input](#create_partner_input)
-    - [create_tags](#create_tags)
-    - [delete_channel](#delete_channel)
-    - [delete_input](#delete_input)
-    - [delete_input_security_group](#delete_input_security_group)
-    - [delete_multiplex](#delete_multiplex)
-    - [delete_multiplex_program](#delete_multiplex_program)
-    - [delete_reservation](#delete_reservation)
-    - [delete_schedule](#delete_schedule)
-    - [delete_tags](#delete_tags)
-    - [describe_channel](#describe_channel)
-    - [describe_input](#describe_input)
-    - [describe_input_device](#describe_input_device)
-    - [describe_input_device_thumbnail](#describe_input_device_thumbnail)
-    - [describe_input_security_group](#describe_input_security_group)
-    - [describe_multiplex](#describe_multiplex)
-    - [describe_multiplex_program](#describe_multiplex_program)
-    - [describe_offering](#describe_offering)
-    - [describe_reservation](#describe_reservation)
-    - [describe_schedule](#describe_schedule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_channels](#list_channels)
-    - [list_input_device_transfers](#list_input_device_transfers)
-    - [list_input_devices](#list_input_devices)
-    - [list_input_security_groups](#list_input_security_groups)
-    - [list_inputs](#list_inputs)
-    - [list_multiplex_programs](#list_multiplex_programs)
-    - [list_multiplexes](#list_multiplexes)
-    - [list_offerings](#list_offerings)
-    - [list_reservations](#list_reservations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [purchase_offering](#purchase_offering)
-    - [reject_input_device_transfer](#reject_input_device_transfer)
-    - [start_channel](#start_channel)
-    - [start_multiplex](#start_multiplex)
-    - [stop_channel](#stop_channel)
-    - [stop_multiplex](#stop_multiplex)
-    - [transfer_input_device](#transfer_input_device)
-    - [update_channel](#update_channel)
-    - [update_channel_class](#update_channel_class)
-    - [update_input](#update_input)
-    - [update_input_device](#update_input_device)
-    - [update_input_security_group](#update_input_security_group)
-    - [update_multiplex](#update_multiplex)
-    - [update_multiplex_program](#update_multiplex_program)
-    - [update_reservation](#update_reservation)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="medialiveclient"></a>
+    Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+    type annotations stubs module [mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ## MediaLiveClient
 
-Type annotations for `boto3.client("medialive")`
+Type annotations and code completion for `#!python boto3.client("medialive")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_medialive.client import MediaLiveClient
 
@@ -92,1506 +20,1938 @@ def get_medialive_client() -> MediaLiveClient:
     return Session().client("medialive")
 ```
 
-Boto3 documentation:
-[MediaLive.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("medialive").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("medialive")
+
+try:
+    do_something(client)
+except (
+    client.BadGatewayException,
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.ForbiddenException,
+    client.GatewayTimeoutException,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+    client.UnprocessableEntityException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_medialive.client import Exceptions
 
 def handle_error(exc: Exceptions.BadGatewayException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadGatewayException`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ForbiddenException`
-- `Exceptions.GatewayTimeoutException`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnprocessableEntityException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MediaLiveClient exceptions.
-
-Type annotations for `boto3.client("medialive").exceptions` method.
-
-Boto3 documentation:
-[MediaLive.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_input\_device\_transfer"></a>
-
-### accept_input_device_transfer
+### accept\_input\_device\_transfer
 
 Accept an incoming input device transfer.
 
-Type annotations for `boto3.client("medialive").accept_input_device_transfer`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").accept_input_device_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
 
-Boto3 documentation:
-[MediaLive.Client.accept_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.accept_input_device_transfer)
+```python title="Method definition"
+def accept_input_device_transfer(
+    self,
+    *,
+    InputDeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptInputDeviceTransferRequestRequestTypeDef](./type_defs.md#acceptinputdevicetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInputDeviceTransferRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_input_device_transfer(**kwargs)
+```
 
-<a id="batch\_delete"></a>
+1. See [:material-code-braces: AcceptInputDeviceTransferRequestRequestTypeDef](./type_defs.md#acceptinputdevicetransferrequestrequesttypedef) 
 
-### batch_delete
+### batch\_delete
 
 Starts delete of resources.
 
-Type annotations for `boto3.client("medialive").batch_delete` method.
+Type annotations and code completion for `#!python boto3.client("medialive").batch_delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete)
 
-Boto3 documentation:
-[MediaLive.Client.batch_delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_delete)
+```python title="Method definition"
+def batch_delete(
+    self,
+    *,
+    ChannelIds: Sequence[str] = ...,
+    InputIds: Sequence[str] = ...,
+    InputSecurityGroupIds: Sequence[str] = ...,
+    MultiplexIds: Sequence[str] = ...,
+) -> BatchDeleteResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteRequestRequestTypeDef](./type_defs.md#batchdeleterequestrequesttypedef).
+1. See [:material-code-braces: BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelIds`: `Sequence`\[`str`\]
-- `InputIds`: `Sequence`\[`str`\]
-- `InputSecurityGroupIds`: `Sequence`\[`str`\]
-- `MultiplexIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteRequestRequestTypeDef = {  # (1)
+    "ChannelIds": ...,
+}
 
-Returns
-[BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
+parent.batch_delete(**kwargs)
+```
 
-<a id="batch\_start"></a>
+1. See [:material-code-braces: BatchDeleteRequestRequestTypeDef](./type_defs.md#batchdeleterequestrequesttypedef) 
 
-### batch_start
+### batch\_start
 
-Starts existing resources See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStart).
+Starts existing resources See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStart).
 
-Type annotations for `boto3.client("medialive").batch_start` method.
+Type annotations and code completion for `#!python boto3.client("medialive").batch_start` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
 
-Boto3 documentation:
-[MediaLive.Client.batch_start](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_start)
+```python title="Method definition"
+def batch_start(
+    self,
+    *,
+    ChannelIds: Sequence[str] = ...,
+    MultiplexIds: Sequence[str] = ...,
+) -> BatchStartResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchStartRequestRequestTypeDef](./type_defs.md#batchstartrequestrequesttypedef).
+1. See [:material-code-braces: BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelIds`: `Sequence`\[`str`\]
-- `MultiplexIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: BatchStartRequestRequestTypeDef = {  # (1)
+    "ChannelIds": ...,
+}
 
-Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
+parent.batch_start(**kwargs)
+```
 
-<a id="batch\_stop"></a>
+1. See [:material-code-braces: BatchStartRequestRequestTypeDef](./type_defs.md#batchstartrequestrequesttypedef) 
 
-### batch_stop
+### batch\_stop
 
-Stops running resources See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStop).
+Stops running resources See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchStop).
 
-Type annotations for `boto3.client("medialive").batch_stop` method.
+Type annotations and code completion for `#!python boto3.client("medialive").batch_stop` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
 
-Boto3 documentation:
-[MediaLive.Client.batch_stop](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_stop)
+```python title="Method definition"
+def batch_stop(
+    self,
+    *,
+    ChannelIds: Sequence[str] = ...,
+    MultiplexIds: Sequence[str] = ...,
+) -> BatchStopResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BatchStopRequestRequestTypeDef](./type_defs.md#batchstoprequestrequesttypedef).
+1. See [:material-code-braces: BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelIds`: `Sequence`\[`str`\]
-- `MultiplexIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: BatchStopRequestRequestTypeDef = {  # (1)
+    "ChannelIds": ...,
+}
 
-Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
+parent.batch_stop(**kwargs)
+```
 
-<a id="batch\_update\_schedule"></a>
+1. See [:material-code-braces: BatchStopRequestRequestTypeDef](./type_defs.md#batchstoprequestrequesttypedef) 
 
-### batch_update_schedule
+### batch\_update\_schedule
 
-Update a channel schedule See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchUpdateSchedule).
+Update a channel schedule See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/BatchUpdateSchedule).
 
-Type annotations for `boto3.client("medialive").batch_update_schedule` method.
+Type annotations and code completion for `#!python boto3.client("medialive").batch_update_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
 
-Boto3 documentation:
-[MediaLive.Client.batch_update_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.batch_update_schedule)
+```python title="Method definition"
+def batch_update_schedule(
+    self,
+    *,
+    ChannelId: str,
+    Creates: BatchScheduleActionCreateRequestTypeDef = ...,  # (1)
+    Deletes: BatchScheduleActionDeleteRequestTypeDef = ...,  # (2)
+) -> BatchUpdateScheduleResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateScheduleRequestRequestTypeDef](./type_defs.md#batchupdateschedulerequestrequesttypedef).
+1. See [:material-code-braces: BatchScheduleActionCreateRequestTypeDef](./type_defs.md#batchscheduleactioncreaterequesttypedef) 
+2. See [:material-code-braces: BatchScheduleActionDeleteRequestTypeDef](./type_defs.md#batchscheduleactiondeleterequesttypedef) 
+3. See [:material-code-braces: BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
-- `Creates`:
-  [BatchScheduleActionCreateRequestTypeDef](./type_defs.md#batchscheduleactioncreaterequesttypedef)
-- `Deletes`:
-  [BatchScheduleActionDeleteRequestTypeDef](./type_defs.md#batchscheduleactiondeleterequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateScheduleRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef).
+parent.batch_update_schedule(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdateScheduleRequestRequestTypeDef](./type_defs.md#batchupdateschedulerequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("medialive").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("medialive").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate)
 
-Boto3 documentation:
-[MediaLive.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_input\_device\_transfer"></a>
-
-### cancel_input_device_transfer
+### cancel\_input\_device\_transfer
 
 Cancel an input device transfer that you have requested.
 
-Type annotations for `boto3.client("medialive").cancel_input_device_transfer`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").cancel_input_device_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
 
-Boto3 documentation:
-[MediaLive.Client.cancel_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.cancel_input_device_transfer)
+```python title="Method definition"
+def cancel_input_device_transfer(
+    self,
+    *,
+    InputDeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelInputDeviceTransferRequestRequestTypeDef](./type_defs.md#cancelinputdevicetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelInputDeviceTransferRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_input_device_transfer(**kwargs)
+```
 
-<a id="claim\_device"></a>
+1. See [:material-code-braces: CancelInputDeviceTransferRequestRequestTypeDef](./type_defs.md#cancelinputdevicetransferrequestrequesttypedef) 
 
-### claim_device
+### claim\_device
 
 Send a request to claim an AWS Elemental device that you have purchased from a
 third-party vendor.
 
-Type annotations for `boto3.client("medialive").claim_device` method.
+Type annotations and code completion for `#!python boto3.client("medialive").claim_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.claim_device)
 
-Boto3 documentation:
-[MediaLive.Client.claim_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.claim_device)
+```python title="Method definition"
+def claim_device(
+    self,
+    *,
+    Id: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ClaimDeviceRequestRequestTypeDef](./type_defs.md#claimdevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str`
+```python title="Usage example with kwargs"
+kwargs: ClaimDeviceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.claim_device(**kwargs)
+```
 
-<a id="create\_channel"></a>
+1. See [:material-code-braces: ClaimDeviceRequestRequestTypeDef](./type_defs.md#claimdevicerequestrequesttypedef) 
 
-### create_channel
+### create\_channel
 
-Creates a new channel See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateChannel).
+Creates a new channel See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateChannel).
 
-Type annotations for `boto3.client("medialive").create_channel` method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel)
 
-Boto3 documentation:
-[MediaLive.Client.create_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_channel)
+```python title="Method definition"
+def create_channel(
+    self,
+    *,
+    CdiInputSpecification: CdiInputSpecificationTypeDef = ...,  # (1)
+    ChannelClass: ChannelClassType = ...,  # (2)
+    Destinations: Sequence[OutputDestinationTypeDef] = ...,  # (3)
+    EncoderSettings: EncoderSettingsTypeDef = ...,  # (4)
+    InputAttachments: Sequence[InputAttachmentTypeDef] = ...,  # (5)
+    InputSpecification: InputSpecificationTypeDef = ...,  # (6)
+    LogLevel: LogLevelType = ...,  # (7)
+    Name: str = ...,
+    RequestId: str = ...,
+    Reserved: str = ...,
+    RoleArn: str = ...,
+    Tags: Mapping[str, str] = ...,
+    Vpc: VpcOutputSettingsTypeDef = ...,  # (8)
+) -> CreateChannelResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef).
+1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
+2. See [:material-code-brackets: ChannelClassType](./literals.md#channelclasstype) 
+3. See [:material-code-braces: OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef) 
+4. See [:material-code-braces: EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef) 
+5. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
+6. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
+7. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+8. See [:material-code-braces: VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef) 
+9. See [:material-code-braces: CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CdiInputSpecification`:
-  [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
-- `ChannelClass`: [ChannelClassType](./literals.md#channelclasstype)
-- `Destinations`:
-  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
-- `EncoderSettings`:
-  [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
-- `InputAttachments`:
-  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
-- `InputSpecification`:
-  [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `Name`: `str`
-- `RequestId`: `str`
-- `Reserved`: `str`
-- `RoleArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Vpc`: [VpcOutputSettingsTypeDef](./type_defs.md#vpcoutputsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateChannelRequestRequestTypeDef = {  # (1)
+    "CdiInputSpecification": ...,
+}
 
-Returns
-[CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+parent.create_channel(**kwargs)
+```
 
-<a id="create\_input"></a>
+1. See [:material-code-braces: CreateChannelRequestRequestTypeDef](./type_defs.md#createchannelrequestrequesttypedef) 
 
-### create_input
+### create\_input
 
-Create an input See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInput).
+Create an input See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInput).
 
-Type annotations for `boto3.client("medialive").create_input` method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input)
 
-Boto3 documentation:
-[MediaLive.Client.create_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input)
+```python title="Method definition"
+def create_input(
+    self,
+    *,
+    Destinations: Sequence[InputDestinationRequestTypeDef] = ...,  # (1)
+    InputDevices: Sequence[InputDeviceSettingsTypeDef] = ...,  # (2)
+    InputSecurityGroups: Sequence[str] = ...,
+    MediaConnectFlows: Sequence[MediaConnectFlowRequestTypeDef] = ...,  # (3)
+    Name: str = ...,
+    RequestId: str = ...,
+    RoleArn: str = ...,
+    Sources: Sequence[InputSourceRequestTypeDef] = ...,  # (4)
+    Tags: Mapping[str, str] = ...,
+    Type: InputTypeType = ...,  # (5)
+    Vpc: InputVpcRequestTypeDef = ...,  # (6)
+) -> CreateInputResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateInputRequestRequestTypeDef](./type_defs.md#createinputrequestrequesttypedef).
+1. See [:material-code-braces: InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef) 
+2. See [:material-code-braces: InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef) 
+3. See [:material-code-braces: MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef) 
+4. See [:material-code-braces: InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef) 
+5. See [:material-code-brackets: InputTypeType](./literals.md#inputtypetype) 
+6. See [:material-code-braces: InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef) 
+7. See [:material-code-braces: CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Destinations`:
-  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
-- `InputDevices`:
-  `Sequence`\[[InputDeviceSettingsTypeDef](./type_defs.md#inputdevicesettingstypedef)\]
-- `InputSecurityGroups`: `Sequence`\[`str`\]
-- `MediaConnectFlows`:
-  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
-- `Name`: `str`
-- `RequestId`: `str`
-- `RoleArn`: `str`
-- `Sources`:
-  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Type`: [InputTypeType](./literals.md#inputtypetype)
-- `Vpc`: [InputVpcRequestTypeDef](./type_defs.md#inputvpcrequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateInputRequestRequestTypeDef = {  # (1)
+    "Destinations": ...,
+}
 
-Returns
-[CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
+parent.create_input(**kwargs)
+```
 
-<a id="create\_input\_security\_group"></a>
+1. See [:material-code-braces: CreateInputRequestRequestTypeDef](./type_defs.md#createinputrequestrequesttypedef) 
 
-### create_input_security_group
+### create\_input\_security\_group
 
-Creates a Input Security Group See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInputSecurityGroup).
+Creates a Input Security Group See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateInputSecurityGroup).
 
-Type annotations for `boto3.client("medialive").create_input_security_group`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_input_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
 
-Boto3 documentation:
-[MediaLive.Client.create_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_input_security_group)
+```python title="Method definition"
+def create_input_security_group(
+    self,
+    *,
+    Tags: Mapping[str, str] = ...,
+    WhitelistRules: Sequence[InputWhitelistRuleCidrTypeDef] = ...,  # (1)
+) -> CreateInputSecurityGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#createinputsecuritygrouprequestrequesttypedef).
+1. See [:material-code-braces: InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef) 
+2. See [:material-code-braces: CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `WhitelistRules`:
-  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateInputSecurityGroupRequestRequestTypeDef = {  # (1)
+    "Tags": ...,
+}
 
-Returns
-[CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
+parent.create_input_security_group(**kwargs)
+```
 
-<a id="create\_multiplex"></a>
+1. See [:material-code-braces: CreateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#createinputsecuritygrouprequestrequesttypedef) 
 
-### create_multiplex
+### create\_multiplex
 
 Create a new multiplex.
 
-Type annotations for `boto3.client("medialive").create_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.create_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex)
+```python title="Method definition"
+def create_multiplex(
+    self,
+    *,
+    AvailabilityZones: Sequence[str],
+    MultiplexSettings: MultiplexSettingsTypeDef,  # (1)
+    Name: str,
+    RequestId: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateMultiplexResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMultiplexRequestRequestTypeDef](./type_defs.md#createmultiplexrequestrequesttypedef).
+1. See [:material-code-braces: MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef) 
+2. See [:material-code-braces: CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AvailabilityZones`: `Sequence`\[`str`\] *(required)*
-- `MultiplexSettings`:
-  [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
-  *(required)*
-- `Name`: `str` *(required)*
-- `RequestId`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateMultiplexRequestRequestTypeDef = {  # (1)
+    "AvailabilityZones": ...,
+    "MultiplexSettings": ...,
+    "Name": ...,
+    "RequestId": ...,
+}
 
-Returns
-[CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
+parent.create_multiplex(**kwargs)
+```
 
-<a id="create\_multiplex\_program"></a>
+1. See [:material-code-braces: CreateMultiplexRequestRequestTypeDef](./type_defs.md#createmultiplexrequestrequesttypedef) 
 
-### create_multiplex_program
+### create\_multiplex\_program
 
 Create a new program in the multiplex.
 
-Type annotations for `boto3.client("medialive").create_multiplex_program`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_multiplex_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
 
-Boto3 documentation:
-[MediaLive.Client.create_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_multiplex_program)
+```python title="Method definition"
+def create_multiplex_program(
+    self,
+    *,
+    MultiplexId: str,
+    MultiplexProgramSettings: MultiplexProgramSettingsTypeDef,  # (1)
+    ProgramName: str,
+    RequestId: str,
+) -> CreateMultiplexProgramResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMultiplexProgramRequestRequestTypeDef](./type_defs.md#createmultiplexprogramrequestrequesttypedef).
+1. See [:material-code-braces: MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef) 
+2. See [:material-code-braces: CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `MultiplexProgramSettings`:
-  [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
-  *(required)*
-- `ProgramName`: `str` *(required)*
-- `RequestId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMultiplexProgramRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+    "MultiplexProgramSettings": ...,
+    "ProgramName": ...,
+    "RequestId": ...,
+}
 
-Returns
-[CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef).
+parent.create_multiplex_program(**kwargs)
+```
 
-<a id="create\_partner\_input"></a>
+1. See [:material-code-braces: CreateMultiplexProgramRequestRequestTypeDef](./type_defs.md#createmultiplexprogramrequestrequesttypedef) 
 
-### create_partner_input
+### create\_partner\_input
 
-Create a partner input See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreatePartnerInput).
+Create a partner input See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreatePartnerInput).
 
-Type annotations for `boto3.client("medialive").create_partner_input` method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_partner_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input)
 
-Boto3 documentation:
-[MediaLive.Client.create_partner_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_partner_input)
+```python title="Method definition"
+def create_partner_input(
+    self,
+    *,
+    InputId: str,
+    RequestId: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreatePartnerInputResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePartnerInputRequestRequestTypeDef](./type_defs.md#createpartnerinputrequestrequesttypedef).
+1. See [:material-code-braces: CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputId`: `str` *(required)*
-- `RequestId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreatePartnerInputRequestRequestTypeDef = {  # (1)
+    "InputId": ...,
+}
 
-Returns
-[CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
+parent.create_partner_input(**kwargs)
+```
 
-<a id="create\_tags"></a>
+1. See [:material-code-braces: CreatePartnerInputRequestRequestTypeDef](./type_defs.md#createpartnerinputrequestrequesttypedef) 
 
-### create_tags
+### create\_tags
 
-Create tags for a resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateTags).
+Create tags for a resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/CreateTags).
 
-Type annotations for `boto3.client("medialive").create_tags` method.
+Type annotations and code completion for `#!python boto3.client("medialive").create_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
 
-Boto3 documentation:
-[MediaLive.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.create_tags)
+```python title="Method definition"
+def create_tags(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="delete\_channel"></a>
+parent.create_tags(**kwargs)
+```
 
-### delete_channel
+1. See [:material-code-braces: CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef) 
+
+### delete\_channel
 
 Starts deletion of channel.
 
-Type annotations for `boto3.client("medialive").delete_channel` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
 
-Boto3 documentation:
-[MediaLive.Client.delete_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_channel)
+```python title="Method definition"
+def delete_channel(
+    self,
+    *,
+    ChannelId: str,
+) -> DeleteChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteChannelRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef).
+parent.delete_channel(**kwargs)
+```
 
-<a id="delete\_input"></a>
+1. See [:material-code-braces: DeleteChannelRequestRequestTypeDef](./type_defs.md#deletechannelrequestrequesttypedef) 
 
-### delete_input
+### delete\_input
 
-Deletes the input end point See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInput).
+Deletes the input end point See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInput).
 
-Type annotations for `boto3.client("medialive").delete_input` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
 
-Boto3 documentation:
-[MediaLive.Client.delete_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input)
+```python title="Method definition"
+def delete_input(
+    self,
+    *,
+    InputId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInputRequestRequestTypeDef](./type_defs.md#deleteinputrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInputRequestRequestTypeDef = {  # (1)
+    "InputId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_input(**kwargs)
+```
 
-<a id="delete\_input\_security\_group"></a>
+1. See [:material-code-braces: DeleteInputRequestRequestTypeDef](./type_defs.md#deleteinputrequestrequesttypedef) 
 
-### delete_input_security_group
+### delete\_input\_security\_group
 
-Deletes an Input Security Group See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInputSecurityGroup).
+Deletes an Input Security Group See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteInputSecurityGroup).
 
-Type annotations for `boto3.client("medialive").delete_input_security_group`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_input_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
 
-Boto3 documentation:
-[MediaLive.Client.delete_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_input_security_group)
+```python title="Method definition"
+def delete_input_security_group(
+    self,
+    *,
+    InputSecurityGroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteInputSecurityGroupRequestRequestTypeDef](./type_defs.md#deleteinputsecuritygrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputSecurityGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInputSecurityGroupRequestRequestTypeDef = {  # (1)
+    "InputSecurityGroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_input_security_group(**kwargs)
+```
 
-<a id="delete\_multiplex"></a>
+1. See [:material-code-braces: DeleteInputSecurityGroupRequestRequestTypeDef](./type_defs.md#deleteinputsecuritygrouprequestrequesttypedef) 
 
-### delete_multiplex
+### delete\_multiplex
 
 Delete a multiplex.
 
-Type annotations for `boto3.client("medialive").delete_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.delete_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex)
+```python title="Method definition"
+def delete_multiplex(
+    self,
+    *,
+    MultiplexId: str,
+) -> DeleteMultiplexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMultiplexRequestRequestTypeDef](./type_defs.md#deletemultiplexrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMultiplexRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef).
+parent.delete_multiplex(**kwargs)
+```
 
-<a id="delete\_multiplex\_program"></a>
+1. See [:material-code-braces: DeleteMultiplexRequestRequestTypeDef](./type_defs.md#deletemultiplexrequestrequesttypedef) 
 
-### delete_multiplex_program
+### delete\_multiplex\_program
 
 Delete a program from a multiplex.
 
-Type annotations for `boto3.client("medialive").delete_multiplex_program`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_multiplex_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
 
-Boto3 documentation:
-[MediaLive.Client.delete_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_multiplex_program)
+```python title="Method definition"
+def delete_multiplex_program(
+    self,
+    *,
+    MultiplexId: str,
+    ProgramName: str,
+) -> DeleteMultiplexProgramResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMultiplexProgramRequestRequestTypeDef](./type_defs.md#deletemultiplexprogramrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMultiplexProgramRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+    "ProgramName": ...,
+}
 
-Returns
-[DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef).
+parent.delete_multiplex_program(**kwargs)
+```
 
-<a id="delete\_reservation"></a>
+1. See [:material-code-braces: DeleteMultiplexProgramRequestRequestTypeDef](./type_defs.md#deletemultiplexprogramrequestrequesttypedef) 
 
-### delete_reservation
+### delete\_reservation
 
 Delete an expired reservation.
 
-Type annotations for `boto3.client("medialive").delete_reservation` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_reservation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
 
-Boto3 documentation:
-[MediaLive.Client.delete_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_reservation)
+```python title="Method definition"
+def delete_reservation(
+    self,
+    *,
+    ReservationId: str,
+) -> DeleteReservationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteReservationRequestRequestTypeDef](./type_defs.md#deletereservationrequestrequesttypedef).
+1. See [:material-code-braces: DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReservationRequestRequestTypeDef = {  # (1)
+    "ReservationId": ...,
+}
 
-Returns
-[DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef).
+parent.delete_reservation(**kwargs)
+```
 
-<a id="delete\_schedule"></a>
+1. See [:material-code-braces: DeleteReservationRequestRequestTypeDef](./type_defs.md#deletereservationrequestrequesttypedef) 
 
-### delete_schedule
+### delete\_schedule
 
 Delete all schedule actions on a channel.
 
-Type annotations for `boto3.client("medialive").delete_schedule` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
 
-Boto3 documentation:
-[MediaLive.Client.delete_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_schedule)
+```python title="Method definition"
+def delete_schedule(
+    self,
+    *,
+    ChannelId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduleRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_schedule(**kwargs)
+```
 
-<a id="delete\_tags"></a>
+1. See [:material-code-braces: DeleteScheduleRequestRequestTypeDef](./type_defs.md#deleteschedulerequestrequesttypedef) 
 
-### delete_tags
+### delete\_tags
 
-Removes tags for a resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteTags).
+Removes tags for a resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DeleteTags).
 
-Type annotations for `boto3.client("medialive").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("medialive").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
 
-Boto3 documentation:
-[MediaLive.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="describe\_channel"></a>
+parent.delete_tags(**kwargs)
+```
 
-### describe_channel
+1. See [:material-code-braces: DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef) 
 
-Gets details about a channel See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeChannel).
+### describe\_channel
 
-Type annotations for `boto3.client("medialive").describe_channel` method.
+Gets details about a channel See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeChannel).
 
-Boto3 documentation:
-[MediaLive.Client.describe_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
+Type annotations and code completion for `#!python boto3.client("medialive").describe_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_channel)
 
-Arguments mapping described in
-[DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef).
+```python title="Method definition"
+def describe_channel(
+    self,
+    *,
+    ChannelId: str,
+) -> DescribeChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef) 
 
-- `ChannelId`: `str` *(required)*
 
-Returns
-[DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: DescribeChannelRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-<a id="describe\_input"></a>
+parent.describe_channel(**kwargs)
+```
 
-### describe_input
+1. See [:material-code-braces: DescribeChannelRequestRequestTypeDef](./type_defs.md#describechannelrequestrequesttypedef) 
 
-Produces details about an input See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInput).
+### describe\_input
 
-Type annotations for `boto3.client("medialive").describe_input` method.
+Produces details about an input See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInput).
 
-Boto3 documentation:
-[MediaLive.Client.describe_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
+Type annotations and code completion for `#!python boto3.client("medialive").describe_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input)
 
-Arguments mapping described in
-[DescribeInputRequestRequestTypeDef](./type_defs.md#describeinputrequestrequesttypedef).
+```python title="Method definition"
+def describe_input(
+    self,
+    *,
+    InputId: str,
+) -> DescribeInputResponseTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef) 
 
-- `InputId`: `str` *(required)*
 
-Returns
-[DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: DescribeInputRequestRequestTypeDef = {  # (1)
+    "InputId": ...,
+}
 
-<a id="describe\_input\_device"></a>
+parent.describe_input(**kwargs)
+```
 
-### describe_input_device
+1. See [:material-code-braces: DescribeInputRequestRequestTypeDef](./type_defs.md#describeinputrequestrequesttypedef) 
 
-Gets the details for the input device See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputDevice).
+### describe\_input\_device
 
-Type annotations for `boto3.client("medialive").describe_input_device` method.
+Gets the details for the input device See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputDevice).
 
-Boto3 documentation:
-[MediaLive.Client.describe_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
+Type annotations and code completion for `#!python boto3.client("medialive").describe_input_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device)
 
-Arguments mapping described in
-[DescribeInputDeviceRequestRequestTypeDef](./type_defs.md#describeinputdevicerequestrequesttypedef).
+```python title="Method definition"
+def describe_input_device(
+    self,
+    *,
+    InputDeviceId: str,
+) -> DescribeInputDeviceResponseTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef) 
 
-- `InputDeviceId`: `str` *(required)*
 
-Returns
-[DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: DescribeInputDeviceRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-<a id="describe\_input\_device\_thumbnail"></a>
+parent.describe_input_device(**kwargs)
+```
 
-### describe_input_device_thumbnail
+1. See [:material-code-braces: DescribeInputDeviceRequestRequestTypeDef](./type_defs.md#describeinputdevicerequestrequesttypedef) 
+
+### describe\_input\_device\_thumbnail
 
 Get the latest thumbnail data for the input device.
 
-Type annotations for
-`boto3.client("medialive").describe_input_device_thumbnail` method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_input_device_thumbnail` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
 
-Boto3 documentation:
-[MediaLive.Client.describe_input_device_thumbnail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_device_thumbnail)
+```python title="Method definition"
+def describe_input_device_thumbnail(
+    self,
+    *,
+    InputDeviceId: str,
+    Accept: AcceptHeaderType,  # (1)
+) -> DescribeInputDeviceThumbnailResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInputDeviceThumbnailRequestRequestTypeDef](./type_defs.md#describeinputdevicethumbnailrequestrequesttypedef).
+1. See [:material-code-brackets: AcceptHeaderType](./literals.md#acceptheadertype) 
+2. See [:material-code-braces: DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
-- `Accept`: `Literal['image/jpeg']` (see
-  [AcceptHeaderType](./literals.md#acceptheadertype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInputDeviceThumbnailRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+    "Accept": ...,
+}
 
-Returns
-[DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef).
+parent.describe_input_device_thumbnail(**kwargs)
+```
 
-<a id="describe\_input\_security\_group"></a>
+1. See [:material-code-braces: DescribeInputDeviceThumbnailRequestRequestTypeDef](./type_defs.md#describeinputdevicethumbnailrequestrequesttypedef) 
 
-### describe_input_security_group
+### describe\_input\_security\_group
 
-Produces a summary of an Input Security Group See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputSecurityGroup).
+Produces a summary of an Input Security Group See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeInputSecurityGroup).
 
-Type annotations for `boto3.client("medialive").describe_input_security_group`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_input_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
 
-Boto3 documentation:
-[MediaLive.Client.describe_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_input_security_group)
+```python title="Method definition"
+def describe_input_security_group(
+    self,
+    *,
+    InputSecurityGroupId: str,
+) -> DescribeInputSecurityGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInputSecurityGroupRequestRequestTypeDef](./type_defs.md#describeinputsecuritygrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputSecurityGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeInputSecurityGroupRequestRequestTypeDef = {  # (1)
+    "InputSecurityGroupId": ...,
+}
 
-Returns
-[DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef).
+parent.describe_input_security_group(**kwargs)
+```
 
-<a id="describe\_multiplex"></a>
+1. See [:material-code-braces: DescribeInputSecurityGroupRequestRequestTypeDef](./type_defs.md#describeinputsecuritygrouprequestrequesttypedef) 
 
-### describe_multiplex
+### describe\_multiplex
 
 Gets details about a multiplex.
 
-Type annotations for `boto3.client("medialive").describe_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.describe_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex)
+```python title="Method definition"
+def describe_multiplex(
+    self,
+    *,
+    MultiplexId: str,
+) -> DescribeMultiplexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMultiplexRequestRequestTypeDef](./type_defs.md#describemultiplexrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef).
+parent.describe_multiplex(**kwargs)
+```
 
-<a id="describe\_multiplex\_program"></a>
+1. See [:material-code-braces: DescribeMultiplexRequestRequestTypeDef](./type_defs.md#describemultiplexrequestrequesttypedef) 
 
-### describe_multiplex_program
+### describe\_multiplex\_program
 
 Get the details for a program in a multiplex.
 
-Type annotations for `boto3.client("medialive").describe_multiplex_program`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_multiplex_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
 
-Boto3 documentation:
-[MediaLive.Client.describe_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_multiplex_program)
+```python title="Method definition"
+def describe_multiplex_program(
+    self,
+    *,
+    MultiplexId: str,
+    ProgramName: str,
+) -> DescribeMultiplexProgramResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMultiplexProgramRequestRequestTypeDef](./type_defs.md#describemultiplexprogramrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMultiplexProgramRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+    "ProgramName": ...,
+}
 
-Returns
-[DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef).
+parent.describe_multiplex_program(**kwargs)
+```
 
-<a id="describe\_offering"></a>
+1. See [:material-code-braces: DescribeMultiplexProgramRequestRequestTypeDef](./type_defs.md#describemultiplexprogramrequestrequesttypedef) 
 
-### describe_offering
+### describe\_offering
 
 Get details for an offering.
 
-Type annotations for `boto3.client("medialive").describe_offering` method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
 
-Boto3 documentation:
-[MediaLive.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_offering)
+```python title="Method definition"
+def describe_offering(
+    self,
+    *,
+    OfferingId: str,
+) -> DescribeOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OfferingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOfferingRequestRequestTypeDef = {  # (1)
+    "OfferingId": ...,
+}
 
-Returns
-[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
+parent.describe_offering(**kwargs)
+```
 
-<a id="describe\_reservation"></a>
+1. See [:material-code-braces: DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef) 
 
-### describe_reservation
+### describe\_reservation
 
 Get details for a reservation.
 
-Type annotations for `boto3.client("medialive").describe_reservation` method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_reservation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
 
-Boto3 documentation:
-[MediaLive.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_reservation)
+```python title="Method definition"
+def describe_reservation(
+    self,
+    *,
+    ReservationId: str,
+) -> DescribeReservationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReservationRequestRequestTypeDef = {  # (1)
+    "ReservationId": ...,
+}
 
-Returns
-[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
+parent.describe_reservation(**kwargs)
+```
 
-<a id="describe\_schedule"></a>
+1. See [:material-code-braces: DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef) 
 
-### describe_schedule
+### describe\_schedule
 
-Get a channel schedule See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeSchedule).
+Get a channel schedule See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/DescribeSchedule).
 
-Type annotations for `boto3.client("medialive").describe_schedule` method.
+Type annotations and code completion for `#!python boto3.client("medialive").describe_schedule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule)
 
-Boto3 documentation:
-[MediaLive.Client.describe_schedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.describe_schedule)
+```python title="Method definition"
+def describe_schedule(
+    self,
+    *,
+    ChannelId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScheduleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef).
+1. See [:material-code-braces: DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduleRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
+parent.describe_schedule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeScheduleRequestRequestTypeDef](./type_defs.md#describeschedulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("medialive").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("medialive").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MediaLive.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### list\_channels
 
-Returns `str`.
+Produces list of channels that have been created See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListChannels).
 
-<a id="list\_channels"></a>
+Type annotations and code completion for `#!python boto3.client("medialive").list_channels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
 
-### list_channels
+```python title="Method definition"
+def list_channels(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListChannelsResponseTypeDef:  # (1)
+    ...
+```
 
-Produces list of channels that have been created See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListChannels).
+1. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
-Type annotations for `boto3.client("medialive").list_channels` method.
 
-Boto3 documentation:
-[MediaLive.Client.list_channels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_channels)
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Arguments mapping described in
-[ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef).
+parent.list_channels(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ListChannelsRequestRequestTypeDef](./type_defs.md#listchannelsrequestrequesttypedef) 
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-Returns
-[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
-
-<a id="list\_input\_device\_transfers"></a>
-
-### list_input_device_transfers
+### list\_input\_device\_transfers
 
 List input devices that are currently being transferred.
 
-Type annotations for `boto3.client("medialive").list_input_device_transfers`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_input_device_transfers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
 
-Boto3 documentation:
-[MediaLive.Client.list_input_device_transfers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_device_transfers)
+```python title="Method definition"
+def list_input_device_transfers(
+    self,
+    *,
+    TransferType: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInputDeviceTransfersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInputDeviceTransfersRequestRequestTypeDef](./type_defs.md#listinputdevicetransfersrequestrequesttypedef).
+1. See [:material-code-braces: ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `TransferType`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInputDeviceTransfersRequestRequestTypeDef = {  # (1)
+    "TransferType": ...,
+}
 
-Returns
-[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef).
+parent.list_input_device_transfers(**kwargs)
+```
 
-<a id="list\_input\_devices"></a>
+1. See [:material-code-braces: ListInputDeviceTransfersRequestRequestTypeDef](./type_defs.md#listinputdevicetransfersrequestrequesttypedef) 
 
-### list_input_devices
+### list\_input\_devices
 
-List input devices See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputDevices).
+List input devices See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputDevices).
 
-Type annotations for `boto3.client("medialive").list_input_devices` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_input_devices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
 
-Boto3 documentation:
-[MediaLive.Client.list_input_devices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_devices)
+```python title="Method definition"
+def list_input_devices(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInputDevicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInputDevicesRequestRequestTypeDef](./type_defs.md#listinputdevicesrequestrequesttypedef).
+1. See [:material-code-braces: ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInputDevicesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef).
+parent.list_input_devices(**kwargs)
+```
 
-<a id="list\_input\_security\_groups"></a>
+1. See [:material-code-braces: ListInputDevicesRequestRequestTypeDef](./type_defs.md#listinputdevicesrequestrequesttypedef) 
 
-### list_input_security_groups
+### list\_input\_security\_groups
 
-Produces a list of Input Security Groups for an account See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputSecurityGroups).
+Produces a list of Input Security Groups for an account See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputSecurityGroups).
 
-Type annotations for `boto3.client("medialive").list_input_security_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_input_security_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
 
-Boto3 documentation:
-[MediaLive.Client.list_input_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_input_security_groups)
+```python title="Method definition"
+def list_input_security_groups(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInputSecurityGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInputSecurityGroupsRequestRequestTypeDef](./type_defs.md#listinputsecuritygroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInputSecurityGroupsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef).
+parent.list_input_security_groups(**kwargs)
+```
 
-<a id="list\_inputs"></a>
+1. See [:material-code-braces: ListInputSecurityGroupsRequestRequestTypeDef](./type_defs.md#listinputsecuritygroupsrequestrequesttypedef) 
 
-### list_inputs
+### list\_inputs
 
-Produces list of inputs that have been created See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputs).
+Produces list of inputs that have been created See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListInputs).
 
-Type annotations for `boto3.client("medialive").list_inputs` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_inputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
 
-Boto3 documentation:
-[MediaLive.Client.list_inputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_inputs)
+```python title="Method definition"
+def list_inputs(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInputsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInputsRequestRequestTypeDef](./type_defs.md#listinputsrequestrequesttypedef).
+1. See [:material-code-braces: ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInputsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
+parent.list_inputs(**kwargs)
+```
 
-<a id="list\_multiplex\_programs"></a>
+1. See [:material-code-braces: ListInputsRequestRequestTypeDef](./type_defs.md#listinputsrequestrequesttypedef) 
 
-### list_multiplex_programs
+### list\_multiplex\_programs
 
 List the programs that currently exist for a specific multiplex.
 
-Type annotations for `boto3.client("medialive").list_multiplex_programs`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_multiplex_programs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
 
-Boto3 documentation:
-[MediaLive.Client.list_multiplex_programs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplex_programs)
+```python title="Method definition"
+def list_multiplex_programs(
+    self,
+    *,
+    MultiplexId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMultiplexProgramsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMultiplexProgramsRequestRequestTypeDef](./type_defs.md#listmultiplexprogramsrequestrequesttypedef).
+1. See [:material-code-braces: ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMultiplexProgramsRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef).
+parent.list_multiplex_programs(**kwargs)
+```
 
-<a id="list\_multiplexes"></a>
+1. See [:material-code-braces: ListMultiplexProgramsRequestRequestTypeDef](./type_defs.md#listmultiplexprogramsrequestrequesttypedef) 
 
-### list_multiplexes
+### list\_multiplexes
 
 Retrieve a list of the existing multiplexes.
 
-Type annotations for `boto3.client("medialive").list_multiplexes` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_multiplexes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
 
-Boto3 documentation:
-[MediaLive.Client.list_multiplexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_multiplexes)
+```python title="Method definition"
+def list_multiplexes(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListMultiplexesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMultiplexesRequestRequestTypeDef](./type_defs.md#listmultiplexesrequestrequesttypedef).
+1. See [:material-code-braces: ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMultiplexesRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef).
+parent.list_multiplexes(**kwargs)
+```
 
-<a id="list\_offerings"></a>
+1. See [:material-code-braces: ListMultiplexesRequestRequestTypeDef](./type_defs.md#listmultiplexesrequestrequesttypedef) 
 
-### list_offerings
+### list\_offerings
 
 List offerings available for purchase.
 
-Type annotations for `boto3.client("medialive").list_offerings` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings)
 
-Boto3 documentation:
-[MediaLive.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_offerings)
+```python title="Method definition"
+def list_offerings(
+    self,
+    *,
+    ChannelClass: str = ...,
+    ChannelConfiguration: str = ...,
+    Codec: str = ...,
+    Duration: str = ...,
+    MaxResults: int = ...,
+    MaximumBitrate: str = ...,
+    MaximumFramerate: str = ...,
+    NextToken: str = ...,
+    Resolution: str = ...,
+    ResourceType: str = ...,
+    SpecialFeature: str = ...,
+    VideoQuality: str = ...,
+) -> ListOfferingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
+1. See [:material-code-braces: ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelClass`: `str`
-- `ChannelConfiguration`: `str`
-- `Codec`: `str`
-- `Duration`: `str`
-- `MaxResults`: `int`
-- `MaximumBitrate`: `str`
-- `MaximumFramerate`: `str`
-- `NextToken`: `str`
-- `Resolution`: `str`
-- `ResourceType`: `str`
-- `SpecialFeature`: `str`
-- `VideoQuality`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOfferingsRequestRequestTypeDef = {  # (1)
+    "ChannelClass": ...,
+}
 
-Returns
-[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
+parent.list_offerings(**kwargs)
+```
 
-<a id="list\_reservations"></a>
+1. See [:material-code-braces: ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef) 
 
-### list_reservations
+### list\_reservations
 
 List purchased reservations.
 
-Type annotations for `boto3.client("medialive").list_reservations` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_reservations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations)
 
-Boto3 documentation:
-[MediaLive.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_reservations)
+```python title="Method definition"
+def list_reservations(
+    self,
+    *,
+    ChannelClass: str = ...,
+    Codec: str = ...,
+    MaxResults: int = ...,
+    MaximumBitrate: str = ...,
+    MaximumFramerate: str = ...,
+    NextToken: str = ...,
+    Resolution: str = ...,
+    ResourceType: str = ...,
+    SpecialFeature: str = ...,
+    VideoQuality: str = ...,
+) -> ListReservationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef).
+1. See [:material-code-braces: ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelClass`: `str`
-- `Codec`: `str`
-- `MaxResults`: `int`
-- `MaximumBitrate`: `str`
-- `MaximumFramerate`: `str`
-- `NextToken`: `str`
-- `Resolution`: `str`
-- `ResourceType`: `str`
-- `SpecialFeature`: `str`
-- `VideoQuality`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReservationsRequestRequestTypeDef = {  # (1)
+    "ChannelClass": ...,
+}
 
-Returns
-[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
+parent.list_reservations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-Produces list of tags that have been created for a resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListTagsForResource).
+Produces list of tags that have been created for a resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/ListTagsForResource).
 
-Type annotations for `boto3.client("medialive").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("medialive").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[MediaLive.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="purchase\_offering"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### purchase_offering
+### purchase\_offering
 
 Purchase an offering and create a reservation.
 
-Type annotations for `boto3.client("medialive").purchase_offering` method.
+Type annotations and code completion for `#!python boto3.client("medialive").purchase_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering)
 
-Boto3 documentation:
-[MediaLive.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.purchase_offering)
+```python title="Method definition"
+def purchase_offering(
+    self,
+    *,
+    Count: int,
+    OfferingId: str,
+    Name: str = ...,
+    RequestId: str = ...,
+    Start: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> PurchaseOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
+1. See [:material-code-braces: PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Count`: `int` *(required)*
-- `OfferingId`: `str` *(required)*
-- `Name`: `str`
-- `RequestId`: `str`
-- `Start`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PurchaseOfferingRequestRequestTypeDef = {  # (1)
+    "Count": ...,
+    "OfferingId": ...,
+}
 
-Returns
-[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
+parent.purchase_offering(**kwargs)
+```
 
-<a id="reject\_input\_device\_transfer"></a>
+1. See [:material-code-braces: PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef) 
 
-### reject_input_device_transfer
+### reject\_input\_device\_transfer
 
 Reject the transfer of the specified input device to your AWS account.
 
-Type annotations for `boto3.client("medialive").reject_input_device_transfer`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").reject_input_device_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
 
-Boto3 documentation:
-[MediaLive.Client.reject_input_device_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.reject_input_device_transfer)
+```python title="Method definition"
+def reject_input_device_transfer(
+    self,
+    *,
+    InputDeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RejectInputDeviceTransferRequestRequestTypeDef](./type_defs.md#rejectinputdevicetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RejectInputDeviceTransferRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.reject_input_device_transfer(**kwargs)
+```
 
-<a id="start\_channel"></a>
+1. See [:material-code-braces: RejectInputDeviceTransferRequestRequestTypeDef](./type_defs.md#rejectinputdevicetransferrequestrequesttypedef) 
 
-### start_channel
+### start\_channel
 
-Starts an existing channel See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StartChannel).
+Starts an existing channel See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StartChannel).
 
-Type annotations for `boto3.client("medialive").start_channel` method.
+Type annotations and code completion for `#!python boto3.client("medialive").start_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
 
-Boto3 documentation:
-[MediaLive.Client.start_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_channel)
+```python title="Method definition"
+def start_channel(
+    self,
+    *,
+    ChannelId: str,
+) -> StartChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef).
+1. See [:material-code-braces: StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartChannelRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef).
+parent.start_channel(**kwargs)
+```
 
-<a id="start\_multiplex"></a>
+1. See [:material-code-braces: StartChannelRequestRequestTypeDef](./type_defs.md#startchannelrequestrequesttypedef) 
 
-### start_multiplex
+### start\_multiplex
 
 Start (run) the multiplex.
 
-Type annotations for `boto3.client("medialive").start_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").start_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.start_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.start_multiplex)
+```python title="Method definition"
+def start_multiplex(
+    self,
+    *,
+    MultiplexId: str,
+) -> StartMultiplexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartMultiplexRequestRequestTypeDef](./type_defs.md#startmultiplexrequestrequesttypedef).
+1. See [:material-code-braces: StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMultiplexRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef).
+parent.start_multiplex(**kwargs)
+```
 
-<a id="stop\_channel"></a>
+1. See [:material-code-braces: StartMultiplexRequestRequestTypeDef](./type_defs.md#startmultiplexrequestrequesttypedef) 
 
-### stop_channel
+### stop\_channel
 
-Stops a running channel See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StopChannel).
+Stops a running channel See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/medialive-2017-10-14/StopChannel).
 
-Type annotations for `boto3.client("medialive").stop_channel` method.
+Type annotations and code completion for `#!python boto3.client("medialive").stop_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
 
-Boto3 documentation:
-[MediaLive.Client.stop_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_channel)
+```python title="Method definition"
+def stop_channel(
+    self,
+    *,
+    ChannelId: str,
+) -> StopChannelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef).
+1. See [:material-code-braces: StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopChannelRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef).
+parent.stop_channel(**kwargs)
+```
 
-<a id="stop\_multiplex"></a>
+1. See [:material-code-braces: StopChannelRequestRequestTypeDef](./type_defs.md#stopchannelrequestrequesttypedef) 
 
-### stop_multiplex
+### stop\_multiplex
 
 Stops a running multiplex.
 
-Type annotations for `boto3.client("medialive").stop_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").stop_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.stop_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.stop_multiplex)
+```python title="Method definition"
+def stop_multiplex(
+    self,
+    *,
+    MultiplexId: str,
+) -> StopMultiplexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopMultiplexRequestRequestTypeDef](./type_defs.md#stopmultiplexrequestrequesttypedef).
+1. See [:material-code-braces: StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMultiplexRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef).
+parent.stop_multiplex(**kwargs)
+```
 
-<a id="transfer\_input\_device"></a>
+1. See [:material-code-braces: StopMultiplexRequestRequestTypeDef](./type_defs.md#stopmultiplexrequestrequesttypedef) 
 
-### transfer_input_device
+### transfer\_input\_device
 
 Start an input device transfer to another AWS account.
 
-Type annotations for `boto3.client("medialive").transfer_input_device` method.
+Type annotations and code completion for `#!python boto3.client("medialive").transfer_input_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
 
-Boto3 documentation:
-[MediaLive.Client.transfer_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.transfer_input_device)
+```python title="Method definition"
+def transfer_input_device(
+    self,
+    *,
+    InputDeviceId: str,
+    TargetCustomerId: str = ...,
+    TargetRegion: str = ...,
+    TransferMessage: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TransferInputDeviceRequestRequestTypeDef](./type_defs.md#transferinputdevicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
-- `TargetCustomerId`: `str`
-- `TargetRegion`: `str`
-- `TransferMessage`: `str`
+```python title="Usage example with kwargs"
+kwargs: TransferInputDeviceRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.transfer_input_device(**kwargs)
+```
 
-<a id="update\_channel"></a>
+1. See [:material-code-braces: TransferInputDeviceRequestRequestTypeDef](./type_defs.md#transferinputdevicerequestrequesttypedef) 
 
-### update_channel
+### update\_channel
 
 Updates a channel.
 
-Type annotations for `boto3.client("medialive").update_channel` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_channel` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel)
 
-Boto3 documentation:
-[MediaLive.Client.update_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel)
+```python title="Method definition"
+def update_channel(
+    self,
+    *,
+    ChannelId: str,
+    CdiInputSpecification: CdiInputSpecificationTypeDef = ...,  # (1)
+    Destinations: Sequence[OutputDestinationTypeDef] = ...,  # (2)
+    EncoderSettings: EncoderSettingsTypeDef = ...,  # (3)
+    InputAttachments: Sequence[InputAttachmentTypeDef] = ...,  # (4)
+    InputSpecification: InputSpecificationTypeDef = ...,  # (5)
+    LogLevel: LogLevelType = ...,  # (6)
+    Name: str = ...,
+    RoleArn: str = ...,
+) -> UpdateChannelResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef).
+1. See [:material-code-braces: CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef) 
+2. See [:material-code-braces: OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef) 
+3. See [:material-code-braces: EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef) 
+4. See [:material-code-braces: InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef) 
+5. See [:material-code-braces: InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef) 
+6. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
+7. See [:material-code-braces: UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelId`: `str` *(required)*
-- `CdiInputSpecification`:
-  [CdiInputSpecificationTypeDef](./type_defs.md#cdiinputspecificationtypedef)
-- `Destinations`:
-  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
-- `EncoderSettings`:
-  [EncoderSettingsTypeDef](./type_defs.md#encodersettingstypedef)
-- `InputAttachments`:
-  `Sequence`\[[InputAttachmentTypeDef](./type_defs.md#inputattachmenttypedef)\]
-- `InputSpecification`:
-  [InputSpecificationTypeDef](./type_defs.md#inputspecificationtypedef)
-- `LogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `Name`: `str`
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelRequestRequestTypeDef = {  # (1)
+    "ChannelId": ...,
+}
 
-Returns
-[UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+parent.update_channel(**kwargs)
+```
 
-<a id="update\_channel\_class"></a>
+1. See [:material-code-braces: UpdateChannelRequestRequestTypeDef](./type_defs.md#updatechannelrequestrequesttypedef) 
 
-### update_channel_class
+### update\_channel\_class
 
 Changes the class of the channel.
 
-Type annotations for `boto3.client("medialive").update_channel_class` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_channel_class` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class)
 
-Boto3 documentation:
-[MediaLive.Client.update_channel_class](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_channel_class)
+```python title="Method definition"
+def update_channel_class(
+    self,
+    *,
+    ChannelClass: ChannelClassType,  # (1)
+    ChannelId: str,
+    Destinations: Sequence[OutputDestinationTypeDef] = ...,  # (2)
+) -> UpdateChannelClassResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateChannelClassRequestRequestTypeDef](./type_defs.md#updatechannelclassrequestrequesttypedef).
+1. See [:material-code-brackets: ChannelClassType](./literals.md#channelclasstype) 
+2. See [:material-code-braces: OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef) 
+3. See [:material-code-braces: UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ChannelClass`: [ChannelClassType](./literals.md#channelclasstype)
-  *(required)*
-- `ChannelId`: `str` *(required)*
-- `Destinations`:
-  `Sequence`\[[OutputDestinationTypeDef](./type_defs.md#outputdestinationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateChannelClassRequestRequestTypeDef = {  # (1)
+    "ChannelClass": ...,
+    "ChannelId": ...,
+}
 
-Returns
-[UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
+parent.update_channel_class(**kwargs)
+```
 
-<a id="update\_input"></a>
+1. See [:material-code-braces: UpdateChannelClassRequestRequestTypeDef](./type_defs.md#updatechannelclassrequestrequesttypedef) 
 
-### update_input
+### update\_input
 
 Updates an input.
 
-Type annotations for `boto3.client("medialive").update_input` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_input` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input)
 
-Boto3 documentation:
-[MediaLive.Client.update_input](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input)
+```python title="Method definition"
+def update_input(
+    self,
+    *,
+    InputId: str,
+    Destinations: Sequence[InputDestinationRequestTypeDef] = ...,  # (1)
+    InputDevices: Sequence[InputDeviceRequestTypeDef] = ...,  # (2)
+    InputSecurityGroups: Sequence[str] = ...,
+    MediaConnectFlows: Sequence[MediaConnectFlowRequestTypeDef] = ...,  # (3)
+    Name: str = ...,
+    RoleArn: str = ...,
+    Sources: Sequence[InputSourceRequestTypeDef] = ...,  # (4)
+) -> UpdateInputResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInputRequestRequestTypeDef](./type_defs.md#updateinputrequestrequesttypedef).
+1. See [:material-code-braces: InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef) 
+2. See [:material-code-braces: InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef) 
+3. See [:material-code-braces: MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef) 
+4. See [:material-code-braces: InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef) 
+5. See [:material-code-braces: UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputId`: `str` *(required)*
-- `Destinations`:
-  `Sequence`\[[InputDestinationRequestTypeDef](./type_defs.md#inputdestinationrequesttypedef)\]
-- `InputDevices`:
-  `Sequence`\[[InputDeviceRequestTypeDef](./type_defs.md#inputdevicerequesttypedef)\]
-- `InputSecurityGroups`: `Sequence`\[`str`\]
-- `MediaConnectFlows`:
-  `Sequence`\[[MediaConnectFlowRequestTypeDef](./type_defs.md#mediaconnectflowrequesttypedef)\]
-- `Name`: `str`
-- `RoleArn`: `str`
-- `Sources`:
-  `Sequence`\[[InputSourceRequestTypeDef](./type_defs.md#inputsourcerequesttypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateInputRequestRequestTypeDef = {  # (1)
+    "InputId": ...,
+}
 
-Returns
-[UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
+parent.update_input(**kwargs)
+```
 
-<a id="update\_input\_device"></a>
+1. See [:material-code-braces: UpdateInputRequestRequestTypeDef](./type_defs.md#updateinputrequestrequesttypedef) 
 
-### update_input_device
+### update\_input\_device
 
 Updates the parameters for the input device.
 
-Type annotations for `boto3.client("medialive").update_input_device` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_input_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device)
 
-Boto3 documentation:
-[MediaLive.Client.update_input_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_device)
+```python title="Method definition"
+def update_input_device(
+    self,
+    *,
+    InputDeviceId: str,
+    HdDeviceSettings: InputDeviceConfigurableSettingsTypeDef = ...,  # (1)
+    Name: str = ...,
+    UhdDeviceSettings: InputDeviceConfigurableSettingsTypeDef = ...,  # (1)
+) -> UpdateInputDeviceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInputDeviceRequestRequestTypeDef](./type_defs.md#updateinputdevicerequestrequesttypedef).
+1. See [:material-code-braces: InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef) 
+2. See [:material-code-braces: InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef) 
+3. See [:material-code-braces: UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputDeviceId`: `str` *(required)*
-- `HdDeviceSettings`:
-  [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
-- `Name`: `str`
-- `UhdDeviceSettings`:
-  [InputDeviceConfigurableSettingsTypeDef](./type_defs.md#inputdeviceconfigurablesettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateInputDeviceRequestRequestTypeDef = {  # (1)
+    "InputDeviceId": ...,
+}
 
-Returns
-[UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef).
+parent.update_input_device(**kwargs)
+```
 
-<a id="update\_input\_security\_group"></a>
+1. See [:material-code-braces: UpdateInputDeviceRequestRequestTypeDef](./type_defs.md#updateinputdevicerequestrequesttypedef) 
 
-### update_input_security_group
+### update\_input\_security\_group
 
 Update an Input Security Group's Whilelists.
 
-Type annotations for `boto3.client("medialive").update_input_security_group`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_input_security_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
 
-Boto3 documentation:
-[MediaLive.Client.update_input_security_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_input_security_group)
+```python title="Method definition"
+def update_input_security_group(
+    self,
+    *,
+    InputSecurityGroupId: str,
+    Tags: Mapping[str, str] = ...,
+    WhitelistRules: Sequence[InputWhitelistRuleCidrTypeDef] = ...,  # (1)
+) -> UpdateInputSecurityGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#updateinputsecuritygrouprequestrequesttypedef).
+1. See [:material-code-braces: InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef) 
+2. See [:material-code-braces: UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `InputSecurityGroupId`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `WhitelistRules`:
-  `Sequence`\[[InputWhitelistRuleCidrTypeDef](./type_defs.md#inputwhitelistrulecidrtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateInputSecurityGroupRequestRequestTypeDef = {  # (1)
+    "InputSecurityGroupId": ...,
+}
 
-Returns
-[UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).
+parent.update_input_security_group(**kwargs)
+```
 
-<a id="update\_multiplex"></a>
+1. See [:material-code-braces: UpdateInputSecurityGroupRequestRequestTypeDef](./type_defs.md#updateinputsecuritygrouprequestrequesttypedef) 
 
-### update_multiplex
+### update\_multiplex
 
 Updates a multiplex.
 
-Type annotations for `boto3.client("medialive").update_multiplex` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_multiplex` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex)
 
-Boto3 documentation:
-[MediaLive.Client.update_multiplex](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex)
+```python title="Method definition"
+def update_multiplex(
+    self,
+    *,
+    MultiplexId: str,
+    MultiplexSettings: MultiplexSettingsTypeDef = ...,  # (1)
+    Name: str = ...,
+) -> UpdateMultiplexResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMultiplexRequestRequestTypeDef](./type_defs.md#updatemultiplexrequestrequesttypedef).
+1. See [:material-code-braces: MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef) 
+2. See [:material-code-braces: UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `MultiplexSettings`:
-  [MultiplexSettingsTypeDef](./type_defs.md#multiplexsettingstypedef)
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateMultiplexRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
 
-Returns
-[UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef).
+parent.update_multiplex(**kwargs)
+```
 
-<a id="update\_multiplex\_program"></a>
+1. See [:material-code-braces: UpdateMultiplexRequestRequestTypeDef](./type_defs.md#updatemultiplexrequestrequesttypedef) 
 
-### update_multiplex_program
+### update\_multiplex\_program
 
 Update a program in a multiplex.
 
-Type annotations for `boto3.client("medialive").update_multiplex_program`
-method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_multiplex_program` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
 
-Boto3 documentation:
-[MediaLive.Client.update_multiplex_program](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_multiplex_program)
+```python title="Method definition"
+def update_multiplex_program(
+    self,
+    *,
+    MultiplexId: str,
+    ProgramName: str,
+    MultiplexProgramSettings: MultiplexProgramSettingsTypeDef = ...,  # (1)
+) -> UpdateMultiplexProgramResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMultiplexProgramRequestRequestTypeDef](./type_defs.md#updatemultiplexprogramrequestrequesttypedef).
+1. See [:material-code-braces: MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef) 
+2. See [:material-code-braces: UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MultiplexId`: `str` *(required)*
-- `ProgramName`: `str` *(required)*
-- `MultiplexProgramSettings`:
-  [MultiplexProgramSettingsTypeDef](./type_defs.md#multiplexprogramsettingstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMultiplexProgramRequestRequestTypeDef = {  # (1)
+    "MultiplexId": ...,
+    "ProgramName": ...,
+}
 
-Returns
-[UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef).
+parent.update_multiplex_program(**kwargs)
+```
 
-<a id="update\_reservation"></a>
+1. See [:material-code-braces: UpdateMultiplexProgramRequestRequestTypeDef](./type_defs.md#updatemultiplexprogramrequestrequesttypedef) 
 
-### update_reservation
+### update\_reservation
 
 Update reservation.
 
-Type annotations for `boto3.client("medialive").update_reservation` method.
+Type annotations and code completion for `#!python boto3.client("medialive").update_reservation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
 
-Boto3 documentation:
-[MediaLive.Client.update_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Client.update_reservation)
+```python title="Method definition"
+def update_reservation(
+    self,
+    *,
+    ReservationId: str,
+    Name: str = ...,
+) -> UpdateReservationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateReservationRequestRequestTypeDef](./type_defs.md#updatereservationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservationId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateReservationRequestRequestTypeDef = {  # (1)
+    "ReservationId": ...,
+}
 
-Returns
-[UpdateReservationResponseTypeDef](./type_defs.md#updatereservationresponsetypedef).
+parent.update_reservation(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateReservationRequestRequestTypeDef](./type_defs.md#updatereservationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("medialive").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_schedule")` ->
-  [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
-- `client.get_paginator("list_channels")` ->
-  [ListChannelsPaginator](./paginators.md#listchannelspaginator)
-- `client.get_paginator("list_input_device_transfers")` ->
-  [ListInputDeviceTransfersPaginator](./paginators.md#listinputdevicetransferspaginator)
-- `client.get_paginator("list_input_devices")` ->
-  [ListInputDevicesPaginator](./paginators.md#listinputdevicespaginator)
-- `client.get_paginator("list_input_security_groups")` ->
-  [ListInputSecurityGroupsPaginator](./paginators.md#listinputsecuritygroupspaginator)
-- `client.get_paginator("list_inputs")` ->
-  [ListInputsPaginator](./paginators.md#listinputspaginator)
-- `client.get_paginator("list_multiplex_programs")` ->
-  [ListMultiplexProgramsPaginator](./paginators.md#listmultiplexprogramspaginator)
-- `client.get_paginator("list_multiplexes")` ->
-  [ListMultiplexesPaginator](./paginators.md#listmultiplexespaginator)
-- `client.get_paginator("list_offerings")` ->
-  [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
-- `client.get_paginator("list_reservations")` ->
-  [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+- `client.get_paginator("describe_schedule")` -> [DescribeSchedulePaginator](./paginators.md#describeschedulepaginator)
+- `client.get_paginator("list_channels")` -> [ListChannelsPaginator](./paginators.md#listchannelspaginator)
+- `client.get_paginator("list_input_device_transfers")` -> [ListInputDeviceTransfersPaginator](./paginators.md#listinputdevicetransferspaginator)
+- `client.get_paginator("list_input_devices")` -> [ListInputDevicesPaginator](./paginators.md#listinputdevicespaginator)
+- `client.get_paginator("list_input_security_groups")` -> [ListInputSecurityGroupsPaginator](./paginators.md#listinputsecuritygroupspaginator)
+- `client.get_paginator("list_inputs")` -> [ListInputsPaginator](./paginators.md#listinputspaginator)
+- `client.get_paginator("list_multiplex_programs")` -> [ListMultiplexProgramsPaginator](./paginators.md#listmultiplexprogramspaginator)
+- `client.get_paginator("list_multiplexes")` -> [ListMultiplexesPaginator](./paginators.md#listmultiplexespaginator)
+- `client.get_paginator("list_offerings")` -> [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+- `client.get_paginator("list_reservations")` -> [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("medialive").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("medialive").get_waiter` method with overloads.
 
-- `client.get_waiter("channel_created")` ->
-  [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
-- `client.get_waiter("channel_deleted")` ->
-  [ChannelDeletedWaiter](./waiters.md#channeldeletedwaiter)
-- `client.get_waiter("channel_running")` ->
-  [ChannelRunningWaiter](./waiters.md#channelrunningwaiter)
-- `client.get_waiter("channel_stopped")` ->
-  [ChannelStoppedWaiter](./waiters.md#channelstoppedwaiter)
-- `client.get_waiter("input_attached")` ->
-  [InputAttachedWaiter](./waiters.md#inputattachedwaiter)
-- `client.get_waiter("input_deleted")` ->
-  [InputDeletedWaiter](./waiters.md#inputdeletedwaiter)
-- `client.get_waiter("input_detached")` ->
-  [InputDetachedWaiter](./waiters.md#inputdetachedwaiter)
-- `client.get_waiter("multiplex_created")` ->
-  [MultiplexCreatedWaiter](./waiters.md#multiplexcreatedwaiter)
-- `client.get_waiter("multiplex_deleted")` ->
-  [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
-- `client.get_waiter("multiplex_running")` ->
-  [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
-- `client.get_waiter("multiplex_stopped")` ->
-  [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
+- `client.get_waiter("channel_created")` -> [ChannelCreatedWaiter](./waiters.md#channelcreatedwaiter)
+- `client.get_waiter("channel_deleted")` -> [ChannelDeletedWaiter](./waiters.md#channeldeletedwaiter)
+- `client.get_waiter("channel_running")` -> [ChannelRunningWaiter](./waiters.md#channelrunningwaiter)
+- `client.get_waiter("channel_stopped")` -> [ChannelStoppedWaiter](./waiters.md#channelstoppedwaiter)
+- `client.get_waiter("input_attached")` -> [InputAttachedWaiter](./waiters.md#inputattachedwaiter)
+- `client.get_waiter("input_deleted")` -> [InputDeletedWaiter](./waiters.md#inputdeletedwaiter)
+- `client.get_waiter("input_detached")` -> [InputDetachedWaiter](./waiters.md#inputdetachedwaiter)
+- `client.get_waiter("multiplex_created")` -> [MultiplexCreatedWaiter](./waiters.md#multiplexcreatedwaiter)
+- `client.get_waiter("multiplex_deleted")` -> [MultiplexDeletedWaiter](./waiters.md#multiplexdeletedwaiter)
+- `client.get_waiter("multiplex_running")` -> [MultiplexRunningWaiter](./waiters.md#multiplexrunningwaiter)
+- `client.get_waiter("multiplex_stopped")` -> [MultiplexStoppedWaiter](./waiters.md#multiplexstoppedwaiter)
+

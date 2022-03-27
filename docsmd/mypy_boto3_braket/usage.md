@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-braket-module"></a>
-
-# Examples for boto3 Braket module
+# Examples
 
 > [Index](../README.md) > [Braket](./README.md) > Examples
 
-- [Examples for boto3 Braket module](#examples-for-boto3-braket-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
+    type annotations stubs module [mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[braket]` package installed.
 
-Write your `Braket` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Braket` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type BraketClient
-# and provides type checking and code completion
-client = session.client("braket")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type SearchDevicesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("search_devices")
-for item in paginator.paginate(...):
-    # item has type SearchDevicesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("braket")  # (1)
+    result = client.cancel_job()  # (2)
+    ```
+
+    1. client: [BraketClient](./client.md)
+    2. result: [:material-code-braces: CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("braket")  # (1)
+
+    paginator = client.get_paginator("search_devices")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [BraketClient](./client.md)
+    2. paginator: [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
+    3. item: [:material-code-braces: SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[braket]` or a standalone `mypy_boto3_braket` package,
-you have to explicitly specify `client: BraketClient` type annotation.
+With `boto3-stubs-lite[braket]`
+or a standalone `mypy_boto3_braket` package, you have to explicitly specify `client: BraketClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_braket.client import BraketClient
-from mypy_boto3_braket.paginator import SearchDevicesPaginator
-
-from mypy_boto3_braket.literals import PaginatorName
-
-from mypy_boto3_braket.type_defs import bool
-from mypy_boto3_braket.type_defs import SearchDevicesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: BraketClient = session.client("braket")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_braket.client import BraketClient
+    from mypy_boto3_braket.type_defs import CancelJobResponseTypeDef
+    from mypy_boto3_braket.type_defs import CancelJobRequestRequestTypeDef
 
-paginator_name: PaginatorName = "search_devices"
-paginator: SearchDevicesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: SearchDevicesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: BraketClient = session.client("braket")
+
+    kwargs: CancelJobRequestRequestTypeDef = {...}
+    result: CancelJobResponseTypeDef = client.cancel_job(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_braket.client import BraketClient
+    from mypy_boto3_braket.paginator import SearchDevicesPaginator
+    from mypy_boto3_braket.type_defs import SearchDevicesResponseTypeDef
+
+
+    session = Session()
+    client: BraketClient = session.client("braket")
+
+    paginator: SearchDevicesPaginator = client.get_paginator("search_devices")
+    for item in paginator.paginate(...):
+        item: SearchDevicesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

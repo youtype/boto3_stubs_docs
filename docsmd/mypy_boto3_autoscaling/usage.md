@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-autoscaling-module"></a>
-
-# Examples for boto3 AutoScaling module
+# Examples
 
 > [Index](../README.md) > [AutoScaling](./README.md) > Examples
 
-- [Examples for boto3 AutoScaling module](#examples-for-boto3-autoscaling-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+    type annotations stubs module [mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[autoscaling]` package installed.
 
-Write your `AutoScaling` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `AutoScaling` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AutoScalingClient
-# and provides type checking and code completion
-client = session.client("autoscaling")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.attach_instances()
 
-# paginator has type DescribeAutoScalingGroupsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_auto_scaling_groups")
-for item in paginator.paginate(...):
-    # item has type AutoScalingGroupsTypeTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("autoscaling")  # (1)
+    result = client.batch_delete_scheduled_action()  # (2)
+    ```
+
+    1. client: [AutoScalingClient](./client.md)
+    2. result: [:material-code-braces: BatchDeleteScheduledActionAnswerTypeDef](./type_defs.md#batchdeletescheduledactionanswertypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("autoscaling")  # (1)
+
+    paginator = client.get_paginator("describe_auto_scaling_groups")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [AutoScalingClient](./client.md)
+    2. paginator: [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
+    3. item: [:material-code-braces: AutoScalingGroupsTypeTypeDef](./type_defs.md#autoscalinggroupstypetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[autoscaling]` or a standalone `mypy_boto3_autoscaling`
-package, you have to explicitly specify `client: AutoScalingClient` type
-annotation.
+With `boto3-stubs-lite[autoscaling]`
+or a standalone `mypy_boto3_autoscaling` package, you have to explicitly specify `client: AutoScalingClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_autoscaling.client import AutoScalingClient
-from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator
-
-from mypy_boto3_autoscaling.literals import PaginatorName
-
-from mypy_boto3_autoscaling.type_defs import None
-from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: AutoScalingClient = session.client("autoscaling")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.attach_instances()
+    from mypy_boto3_autoscaling.client import AutoScalingClient
+    from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionAnswerTypeDef
+    from mypy_boto3_autoscaling.type_defs import BatchDeleteScheduledActionTypeRequestTypeDef
 
-paginator_name: PaginatorName = "describe_auto_scaling_groups"
-paginator: DescribeAutoScalingGroupsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: AutoScalingGroupsTypeTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: AutoScalingClient = session.client("autoscaling")
+
+    kwargs: BatchDeleteScheduledActionTypeRequestTypeDef = {...}
+    result: BatchDeleteScheduledActionAnswerTypeDef = client.batch_delete_scheduled_action(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_autoscaling.client import AutoScalingClient
+    from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator
+    from mypy_boto3_autoscaling.type_defs import AutoScalingGroupsTypeTypeDef
+
+
+    session = Session()
+    client: AutoScalingClient = session.client("autoscaling")
+
+    paginator: DescribeAutoScalingGroupsPaginator = client.get_paginator("describe_auto_scaling_groups")
+    for item in paginator.paginate(...):
+        item: AutoScalingGroupsTypeTypeDef
+        print(item)
+    ```
+
+
+
+

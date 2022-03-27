@@ -1,28 +1,18 @@
-<a id="waiters-for-boto3-neptune-module"></a>
-
-# Waiters for boto3 Neptune module
+# Waiters
 
 > [Index](../README.md) > [Neptune](./README.md) > Waiters
 
-Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
-type annotations stubs module
-[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
+!!! note ""
 
-- [Waiters for boto3 Neptune module](#waiters-for-boto3-neptune-module)
-  - [DBInstanceAvailableWaiter](#dbinstanceavailablewaiter)
-  - [DBInstanceDeletedWaiter](#dbinstancedeletedwaiter)
-
-<a id="dbinstanceavailablewaiter"></a>
+    Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+    type annotations stubs module [mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 ## DBInstanceAvailableWaiter
 
-Type annotations for
-`boto3.client("neptune").get_waiter("db_instance_available")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_waiter("db_instance_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.waiter import DBInstanceAvailableWaiter
@@ -31,27 +21,43 @@ def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
     return Session().client("neptune").get_waiter("db_instance_available")
 ```
 
-Boto3 documentation:
-[Neptune.Waiter.db_instance_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceAvailable)
 
-Arguments for `DBInstanceAvailableWaiter.wait` method:
+### wait
 
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python DBInstanceAvailableWaiter.wait` method.
 
-<a id="dbinstancedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DBInstanceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstanceavailablewaittypedef) 
 ## DBInstanceDeletedWaiter
 
-Type annotations for
-`boto3.client("neptune").get_waiter("db_instance_deleted")`.
+Type annotations and code completion for `#!python boto3.client("neptune").get_waiter("db_instance_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_neptune.waiter import DBInstanceDeletedWaiter
@@ -60,13 +66,34 @@ def get_db_instance_deleted_waiter() -> DBInstanceDeletedWaiter:
     return Session().client("neptune").get_waiter("db_instance_deleted")
 ```
 
-Boto3 documentation:
-[Neptune.Waiter.db_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Waiter.DBInstanceDeleted)
 
-Arguments for `DBInstanceDeletedWaiter.wait` method:
+### wait
 
-- `DBInstanceIdentifier`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxRecords`: `int`
-- `Marker`: `str`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python DBInstanceDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    DBInstanceIdentifier: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    Marker: str = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef = {  # (1)
+    "DBInstanceIdentifier": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstancedeletedwaittypedef) 

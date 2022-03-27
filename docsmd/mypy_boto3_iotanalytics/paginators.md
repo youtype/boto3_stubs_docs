@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-iotanalytics-module"></a>
-
-# Paginators for boto3 IoTAnalytics module
+# Paginators
 
 > [Index](../README.md) > [IoTAnalytics](./README.md) > Paginators
 
-Auto-generated documentation for
-[IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
-type annotations stubs module
-[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+!!! note ""
 
-- [Paginators for boto3 IoTAnalytics module](#paginators-for-boto3-iotanalytics-module)
-  - [ListChannelsPaginator](#listchannelspaginator)
-  - [ListDatasetContentsPaginator](#listdatasetcontentspaginator)
-  - [ListDatasetsPaginator](#listdatasetspaginator)
-  - [ListDatastoresPaginator](#listdatastorespaginator)
-  - [ListPipelinesPaginator](#listpipelinespaginator)
-
-<a id="listchannelspaginator"></a>
+    Auto-generated documentation for [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
+    type annotations stubs module [mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 ## ListChannelsPaginator
 
-Type annotations for
-`boto3.client("iotanalytics").get_paginator("list_channels")`.
+Type annotations and code completion for `#!python boto3.client("iotanalytics").get_paginator("list_channels")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
@@ -34,27 +21,39 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return Session().client("iotanalytics").get_paginator("list_channels")
 ```
 
-Boto3 documentation:
-[IoTAnalytics.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListChannels)
 
-Arguments for `ListChannelsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListChannelsPaginator.paginate` method.
 
-`ListChannelsPaginator.paginate` returns
-`_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListChannelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetcontentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestListChannelsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef) 
 ## ListDatasetContentsPaginator
 
-Type annotations for
-`boto3.client("iotanalytics").get_paginator("list_dataset_contents")`.
+Type annotations and code completion for `#!python boto3.client("iotanalytics").get_paginator("list_dataset_contents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotanalytics.paginator import ListDatasetContentsPaginator
@@ -63,30 +62,42 @@ def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
     return Session().client("iotanalytics").get_paginator("list_dataset_contents")
 ```
 
-Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatasetContents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasetContents)
 
-Arguments for `ListDatasetContentsPaginator.paginate` method:
+### paginate
 
-- `datasetName`: `str` *(required)*
-- `scheduledOnOrAfter`: `Union`\[`datetime`, `str`\]
-- `scheduledBefore`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetContentsPaginator.paginate` method.
 
-`ListDatasetContentsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    datasetName: str,
+    scheduledOnOrAfter: Union[datetime, str] = ...,
+    scheduledBefore: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetContentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetContentsRequestListDatasetContentsPaginateTypeDef = {  # (1)
+    "datasetName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetContentsRequestListDatasetContentsPaginateTypeDef](./type_defs.md#listdatasetcontentsrequestlistdatasetcontentspaginatetypedef) 
 ## ListDatasetsPaginator
 
-Type annotations for
-`boto3.client("iotanalytics").get_paginator("list_datasets")`.
+Type annotations and code completion for `#!python boto3.client("iotanalytics").get_paginator("list_datasets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotanalytics.paginator import ListDatasetsPaginator
@@ -95,27 +106,39 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("iotanalytics").get_paginator("list_datasets")
 ```
 
-Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatasets)
 
-Arguments for `ListDatasetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetsPaginator.paginate` method.
 
-`ListDatasetsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatastorespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestListDatasetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef) 
 ## ListDatastoresPaginator
 
-Type annotations for
-`boto3.client("iotanalytics").get_paginator("list_datastores")`.
+Type annotations and code completion for `#!python boto3.client("iotanalytics").get_paginator("list_datastores")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotanalytics.paginator import ListDatastoresPaginator
@@ -124,27 +147,39 @@ def get_list_datastores_paginator() -> ListDatastoresPaginator:
     return Session().client("iotanalytics").get_paginator("list_datastores")
 ```
 
-Boto3 documentation:
-[IoTAnalytics.Paginator.ListDatastores](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListDatastores)
 
-Arguments for `ListDatastoresPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatastoresPaginator.paginate` method.
 
-`ListDatastoresPaginator.paginate` returns
-`_PageIterator`\[[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatastoresResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpipelinespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatastoresRequestListDatastoresPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatastoresRequestListDatastoresPaginateTypeDef](./type_defs.md#listdatastoresrequestlistdatastorespaginatetypedef) 
 ## ListPipelinesPaginator
 
-Type annotations for
-`boto3.client("iotanalytics").get_paginator("list_pipelines")`.
+Type annotations and code completion for `#!python boto3.client("iotanalytics").get_paginator("list_pipelines")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_iotanalytics.paginator import ListPipelinesPaginator
@@ -153,13 +188,30 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("iotanalytics").get_paginator("list_pipelines")
 ```
 
-Boto3 documentation:
-[IoTAnalytics.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Paginator.ListPipelines)
 
-Arguments for `ListPipelinesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPipelinesPaginator.paginate` method.
 
-`ListPipelinesPaginator.paginate` returns
-`_PageIterator`\[[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPipelinesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesRequestListPipelinesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPipelinesRequestListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesrequestlistpipelinespaginatetypedef) 

@@ -1,156 +1,231 @@
-<a id="examples-for-boto3-iam-module"></a>
-
-# Examples for boto3 IAM module
+# Examples
 
 > [Index](../README.md) > [IAM](./README.md) > Examples
 
-- [Examples for boto3 IAM module](#examples-for-boto3-iam-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-  - [Service Resource](#service-resource)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
+    type annotations stubs module [mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 ## Client
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iam]` package installed.
 
-Write your `IAM` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `IAM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IAMClient
-# and provides type checking and code completion
-client = session.client("iam")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_client_id_to_open_id_connect_provider()
 
-# paginator has type GetAccountAuthorizationDetailsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("get_account_authorization_details")
-for item in paginator.paginate(...):
-    # item has type GetAccountAuthorizationDetailsResponseTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type InstanceProfileExistsWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("instance_profile_exists")
-waiter.wait()
-```
+    client = session.client("iam")  # (1)
+    result = client.create_access_key()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [IAMClient](./client.md)
+    2. result: [:material-code-braces: CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("iam")  # (1)
+
+    paginator = client.get_paginator("get_account_authorization_details")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [IAMClient](./client.md)
+    2. paginator: [GetAccountAuthorizationDetailsPaginator](./paginators.md#getaccountauthorizationdetailspaginator)
+    3. item: [:material-code-braces: GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("iam")  # (1)
+
+    waiter = client.get_waiter("instance_profile_exists")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [IAMClient](./client.md)
+    2. waiter: [InstanceProfileExistsWaiter](./waiters.md#instanceprofileexistswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iam]` or a standalone `mypy_boto3_iam` package, you have
-to explicitly specify `client: IAMClient` type annotation.
+With `boto3-stubs-lite[iam]`
+or a standalone `mypy_boto3_iam` package, you have to explicitly specify `client: IAMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iam.client import IAMClient
-from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator
-from mypy_boto3_iam.waiter import InstanceProfileExistsWaiter
-from mypy_boto3_iam.literals import PaginatorName
-from mypy_boto3_iam.literals import WaiterName
-from mypy_boto3_iam.type_defs import None
-from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: IAMClient = session.client("iam")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.add_client_id_to_open_id_connect_provider()
+    from mypy_boto3_iam.client import IAMClient
+    from mypy_boto3_iam.type_defs import CreateAccessKeyResponseTypeDef
+    from mypy_boto3_iam.type_defs import CreateAccessKeyRequestRequestTypeDef
 
-paginator_name: PaginatorName = "get_account_authorization_details"
-paginator: GetAccountAuthorizationDetailsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: GetAccountAuthorizationDetailsResponseTypeDef
-    print(item)
 
-waiter_name: WaiterName = "instance_profile_exists"
-waiter: InstanceProfileExistsWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
 
-<a id="service-resource"></a>
+    client: IAMClient = session.client("iam")
+
+    kwargs: CreateAccessKeyRequestRequestTypeDef = {...}
+    result: CreateAccessKeyResponseTypeDef = client.create_access_key(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iam.client import IAMClient
+    from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator
+    from mypy_boto3_iam.type_defs import GetAccountAuthorizationDetailsResponseTypeDef
+
+
+    session = Session()
+    client: IAMClient = session.client("iam")
+
+    paginator: GetAccountAuthorizationDetailsPaginator = client.get_paginator("get_account_authorization_details")
+    for item in paginator.paginate(...):
+        item: GetAccountAuthorizationDetailsResponseTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iam.client import IAMClient
+    from mypy_boto3_iam.waiter import InstanceProfileExistsWaiter
+
+    session = Session()
+    client: IAMClient = session.client("iam")
+
+    waiter: InstanceProfileExistsWaiter = client.get_waiter("instance_profile_exists")
+    waiter.wait()
+    ```
+
+
 
 ## Service Resource
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iam]` package installed.
 
-```python
-import boto3
+
+=== "ServiceResource"
+
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
 
-session = boto3.Session()
+    session = Session()
 
-# resource has type IAMServiceResource
-# and provides type checking and code completion
-resource = session.resource("iam")
+    resource = session.resource("iam")  # (1)
+    result = resource.AccessKey()  # (2)
+    ```
 
-# result has type AccessKey
-# and provides type checking and code completion
-result = resource.AccessKey()
+    1. resource: [IAMServiceResource](./service_resource.md)
+    2. result: 
 
-# collection has type ServiceResourceGroupsCollection and provides type checking
-# and code completion for all collection methods
-collection = resource.groups
-for item in collection:
-    # item has type Group
-    print(item)
-```
 
-<a id="explicit-type-annotations"></a>
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    resource = session.resource("iam")  # (1)
+
+    collection = resource.groups  # (2)
+    for item in collection:
+        print(item)  # (3)
+    ```
+
+    1. resource: [IAMServiceResource](./service_resource.md)
+    2. collection: [IAMServiceResource](./service_resource.md#iamserviceresourcegroups)
+    3. item: Group
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iam]` or a standalone `mypy_boto3_iam` package, you have
-to explicitly specify `resource: IAMServiceResource` type annotation.
+With `boto3-stubs-lite[iam]`
+or a standalone `mypy_boto3_iam` package, you have to explicitly specify
+`resource: IAMServiceResource` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
-```python
-import boto3
 
-from mypy_boto3_iam.service_resource import IAMServiceResource
-from mypy_boto3_iam.service_resource import AccessKey
-from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection, Group
 
-session = boto3.Session()
+=== "ServiceResource"
 
-resource: IAMServiceResource = session.resource("iam")
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
-result: AccessKey = resource.AccessKey()
+    from mypy_boto3_iam.service_resource import IAMServiceResource
+    from mypy_boto3_iam.service_resource import AccessKey
 
-collection: ServiceResourceGroupsCollection = resource.groups
-for item in collection:
-    item: Group
-    print(item)
-```
+
+    session = Session()
+
+    resource: IAMServiceResource = session.resource("iam")
+    result: AccessKey = resource.AccessKey()
+    ```
+
+
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iam.service_resource import IAMServiceResource
+    from mypy_boto3_iam.service_resource import ServiceResourceGroupsCollection
+    from mypy_boto3_iam.service_resource import Group
+
+
+    session = Session()
+
+    resource: IAMServiceResource = session.resource("iam")
+    
+    collection: ServiceResourceGroupsCollection = resource.groups
+    for item in collection:
+        item: Group
+        print(item)
+    ```
+

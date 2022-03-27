@@ -1,36 +1,18 @@
-<a id="paginators-for-boto3-medialive-module"></a>
-
-# Paginators for boto3 MediaLive module
+# Paginators
 
 > [Index](../README.md) > [MediaLive](./README.md) > Paginators
 
-Auto-generated documentation for
-[MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
-type annotations stubs module
-[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
+!!! note ""
 
-- [Paginators for boto3 MediaLive module](#paginators-for-boto3-medialive-module)
-  - [DescribeSchedulePaginator](#describeschedulepaginator)
-  - [ListChannelsPaginator](#listchannelspaginator)
-  - [ListInputDeviceTransfersPaginator](#listinputdevicetransferspaginator)
-  - [ListInputDevicesPaginator](#listinputdevicespaginator)
-  - [ListInputSecurityGroupsPaginator](#listinputsecuritygroupspaginator)
-  - [ListInputsPaginator](#listinputspaginator)
-  - [ListMultiplexProgramsPaginator](#listmultiplexprogramspaginator)
-  - [ListMultiplexesPaginator](#listmultiplexespaginator)
-  - [ListOfferingsPaginator](#listofferingspaginator)
-  - [ListReservationsPaginator](#listreservationspaginator)
-
-<a id="describeschedulepaginator"></a>
+    Auto-generated documentation for [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
+    type annotations stubs module [mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 ## DescribeSchedulePaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("describe_schedule")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("describe_schedule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import DescribeSchedulePaginator
@@ -39,28 +21,40 @@ def get_describe_schedule_paginator() -> DescribeSchedulePaginator:
     return Session().client("medialive").get_paginator("describe_schedule")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.DescribeSchedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.DescribeSchedule)
 
-Arguments for `DescribeSchedulePaginator.paginate` method:
+### paginate
 
-- `ChannelId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSchedulePaginator.paginate` method.
 
-`DescribeSchedulePaginator.paginate` returns
-`_PageIterator`\[[DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ChannelId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeScheduleResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listchannelspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduleRequestDescribeSchedulePaginateTypeDef = {  # (1)
+    "ChannelId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScheduleRequestDescribeSchedulePaginateTypeDef](./type_defs.md#describeschedulerequestdescribeschedulepaginatetypedef) 
 ## ListChannelsPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_channels")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_channels")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListChannelsPaginator
@@ -69,27 +63,39 @@ def get_list_channels_paginator() -> ListChannelsPaginator:
     return Session().client("medialive").get_paginator("list_channels")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListChannels)
 
-Arguments for `ListChannelsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListChannelsPaginator.paginate` method.
 
-`ListChannelsPaginator.paginate` returns
-`_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListChannelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinputdevicetransferspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListChannelsRequestListChannelsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListChannelsRequestListChannelsPaginateTypeDef](./type_defs.md#listchannelsrequestlistchannelspaginatetypedef) 
 ## ListInputDeviceTransfersPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_input_device_transfers")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_input_device_transfers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListInputDeviceTransfersPaginator
@@ -98,28 +104,40 @@ def get_list_input_device_transfers_paginator() -> ListInputDeviceTransfersPagin
     return Session().client("medialive").get_paginator("list_input_device_transfers")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListInputDeviceTransfers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDeviceTransfers)
 
-Arguments for `ListInputDeviceTransfersPaginator.paginate` method:
+### paginate
 
-- `TransferType`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInputDeviceTransfersPaginator.paginate` method.
 
-`ListInputDeviceTransfersPaginator.paginate` returns
-`_PageIterator`\[[ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TransferType: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInputDeviceTransfersResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinputdevicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInputDeviceTransfersRequestListInputDeviceTransfersPaginateTypeDef = {  # (1)
+    "TransferType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInputDeviceTransfersRequestListInputDeviceTransfersPaginateTypeDef](./type_defs.md#listinputdevicetransfersrequestlistinputdevicetransferspaginatetypedef) 
 ## ListInputDevicesPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_input_devices")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_input_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListInputDevicesPaginator
@@ -128,27 +146,39 @@ def get_list_input_devices_paginator() -> ListInputDevicesPaginator:
     return Session().client("medialive").get_paginator("list_input_devices")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListInputDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputDevices)
 
-Arguments for `ListInputDevicesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInputDevicesPaginator.paginate` method.
 
-`ListInputDevicesPaginator.paginate` returns
-`_PageIterator`\[[ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInputDevicesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinputsecuritygroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInputDevicesRequestListInputDevicesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInputDevicesRequestListInputDevicesPaginateTypeDef](./type_defs.md#listinputdevicesrequestlistinputdevicespaginatetypedef) 
 ## ListInputSecurityGroupsPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_input_security_groups")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_input_security_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListInputSecurityGroupsPaginator
@@ -157,26 +187,39 @@ def get_list_input_security_groups_paginator() -> ListInputSecurityGroupsPaginat
     return Session().client("medialive").get_paginator("list_input_security_groups")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListInputSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputSecurityGroups)
 
-Arguments for `ListInputSecurityGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInputSecurityGroupsPaginator.paginate` method.
 
-`ListInputSecurityGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInputSecurityGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listinputspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInputSecurityGroupsRequestListInputSecurityGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInputSecurityGroupsRequestListInputSecurityGroupsPaginateTypeDef](./type_defs.md#listinputsecuritygroupsrequestlistinputsecuritygroupspaginatetypedef) 
 ## ListInputsPaginator
 
-Type annotations for `boto3.client("medialive").get_paginator("list_inputs")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_inputs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListInputsPaginator
@@ -185,27 +228,39 @@ def get_list_inputs_paginator() -> ListInputsPaginator:
     return Session().client("medialive").get_paginator("list_inputs")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListInputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListInputs)
 
-Arguments for `ListInputsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInputsPaginator.paginate` method.
 
-`ListInputsPaginator.paginate` returns
-`_PageIterator`\[[ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListInputsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmultiplexprogramspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInputsRequestListInputsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInputsRequestListInputsPaginateTypeDef](./type_defs.md#listinputsrequestlistinputspaginatetypedef) 
 ## ListMultiplexProgramsPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_multiplex_programs")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_multiplex_programs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListMultiplexProgramsPaginator
@@ -214,28 +269,40 @@ def get_list_multiplex_programs_paginator() -> ListMultiplexProgramsPaginator:
     return Session().client("medialive").get_paginator("list_multiplex_programs")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListMultiplexPrograms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexPrograms)
 
-Arguments for `ListMultiplexProgramsPaginator.paginate` method:
+### paginate
 
-- `MultiplexId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMultiplexProgramsPaginator.paginate` method.
 
-`ListMultiplexProgramsPaginator.paginate` returns
-`_PageIterator`\[[ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MultiplexId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMultiplexProgramsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmultiplexespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMultiplexProgramsRequestListMultiplexProgramsPaginateTypeDef = {  # (1)
+    "MultiplexId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMultiplexProgramsRequestListMultiplexProgramsPaginateTypeDef](./type_defs.md#listmultiplexprogramsrequestlistmultiplexprogramspaginatetypedef) 
 ## ListMultiplexesPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_multiplexes")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_multiplexes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListMultiplexesPaginator
@@ -244,27 +311,39 @@ def get_list_multiplexes_paginator() -> ListMultiplexesPaginator:
     return Session().client("medialive").get_paginator("list_multiplexes")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListMultiplexes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListMultiplexes)
 
-Arguments for `ListMultiplexesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMultiplexesPaginator.paginate` method.
 
-`ListMultiplexesPaginator.paginate` returns
-`_PageIterator`\[[ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMultiplexesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listofferingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMultiplexesRequestListMultiplexesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMultiplexesRequestListMultiplexesPaginateTypeDef](./type_defs.md#listmultiplexesrequestlistmultiplexespaginatetypedef) 
 ## ListOfferingsPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_offerings")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListOfferingsPaginator
@@ -273,37 +352,49 @@ def get_list_offerings_paginator() -> ListOfferingsPaginator:
     return Session().client("medialive").get_paginator("list_offerings")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListOfferings)
 
-Arguments for `ListOfferingsPaginator.paginate` method:
+### paginate
 
-- `ChannelClass`: `str`
-- `ChannelConfiguration`: `str`
-- `Codec`: `str`
-- `Duration`: `str`
-- `MaximumBitrate`: `str`
-- `MaximumFramerate`: `str`
-- `Resolution`: `str`
-- `ResourceType`: `str`
-- `SpecialFeature`: `str`
-- `VideoQuality`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOfferingsPaginator.paginate` method.
 
-`ListOfferingsPaginator.paginate` returns
-`_PageIterator`\[[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ChannelClass: str = ...,
+    ChannelConfiguration: str = ...,
+    Codec: str = ...,
+    Duration: str = ...,
+    MaximumBitrate: str = ...,
+    MaximumFramerate: str = ...,
+    Resolution: str = ...,
+    ResourceType: str = ...,
+    SpecialFeature: str = ...,
+    VideoQuality: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListOfferingsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listreservationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOfferingsRequestListOfferingsPaginateTypeDef = {  # (1)
+    "ChannelClass": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOfferingsRequestListOfferingsPaginateTypeDef](./type_defs.md#listofferingsrequestlistofferingspaginatetypedef) 
 ## ListReservationsPaginator
 
-Type annotations for
-`boto3.client("medialive").get_paginator("list_reservations")`.
+Type annotations and code completion for `#!python boto3.client("medialive").get_paginator("list_reservations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_medialive.paginator import ListReservationsPaginator
@@ -312,21 +403,38 @@ def get_list_reservations_paginator() -> ListReservationsPaginator:
     return Session().client("medialive").get_paginator("list_reservations")
 ```
 
-Boto3 documentation:
-[MediaLive.Paginator.ListReservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive.Paginator.ListReservations)
 
-Arguments for `ListReservationsPaginator.paginate` method:
+### paginate
 
-- `ChannelClass`: `str`
-- `Codec`: `str`
-- `MaximumBitrate`: `str`
-- `MaximumFramerate`: `str`
-- `Resolution`: `str`
-- `ResourceType`: `str`
-- `SpecialFeature`: `str`
-- `VideoQuality`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListReservationsPaginator.paginate` method.
 
-`ListReservationsPaginator.paginate` returns
-`_PageIterator`\[[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ChannelClass: str = ...,
+    Codec: str = ...,
+    MaximumBitrate: str = ...,
+    MaximumFramerate: str = ...,
+    Resolution: str = ...,
+    ResourceType: str = ...,
+    SpecialFeature: str = ...,
+    VideoQuality: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListReservationsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListReservationsRequestListReservationsPaginateTypeDef = {  # (1)
+    "ChannelClass": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListReservationsRequestListReservationsPaginateTypeDef](./type_defs.md#listreservationsrequestlistreservationspaginatetypedef) 

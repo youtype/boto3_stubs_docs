@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-chimesdkidentity-module"></a>
-
-# Type annotations for boto3 ChimeSDKIdentity module
+#  ChimeSDKIdentity module
 
 > [Index](../README.md) > ChimeSDKIdentity
 
-Auto-generated documentation for
-[ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
-type annotations stubs module
-[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
+!!! note ""
 
-- [Type annotations for boto3 ChimeSDKIdentity module](#type-annotations-for-boto3-chimesdkidentity-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ChimeSDKIdentityClient](#chimesdkidentityclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
+    type annotations stubs module [mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ChimeSDKIdentity`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[chime-sdk-identity]'
 python -m pip install mypy-boto3-chime-sdk-identity
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,83 +42,41 @@ python -m pip install mypy-boto3-chime-sdk-identity
 python -m pip uninstall -y mypy-boto3-chime-sdk-identity
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="chimesdkidentityclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ChimeSDKIdentityClient
 
-Type annotations for `boto3.client("chime-sdk-identity")` as
-[ChimeSDKIdentityClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("chime-sdk-identity")` as [ChimeSDKIdentityClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
+
+def get_client() -> ChimeSDKIdentityClient:
+    return Session().cleint("chime-sdk-identity")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_app_instance](./client.md#create_app_instance)
-- [create_app_instance_admin](./client.md#create_app_instance_admin)
-- [create_app_instance_user](./client.md#create_app_instance_user)
-- [delete_app_instance](./client.md#delete_app_instance)
-- [delete_app_instance_admin](./client.md#delete_app_instance_admin)
-- [delete_app_instance_user](./client.md#delete_app_instance_user)
-- [deregister_app_instance_user_endpoint](./client.md#deregister_app_instance_user_endpoint)
-- [describe_app_instance](./client.md#describe_app_instance)
-- [describe_app_instance_admin](./client.md#describe_app_instance_admin)
-- [describe_app_instance_user](./client.md#describe_app_instance_user)
-- [describe_app_instance_user_endpoint](./client.md#describe_app_instance_user_endpoint)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_app_instance_retention_settings](./client.md#get_app_instance_retention_settings)
-- [list_app_instance_admins](./client.md#list_app_instance_admins)
-- [list_app_instance_user_endpoints](./client.md#list_app_instance_user_endpoints)
-- [list_app_instance_users](./client.md#list_app_instance_users)
-- [list_app_instances](./client.md#list_app_instances)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_app_instance_retention_settings](./client.md#put_app_instance_retention_settings)
-- [register_app_instance_user_endpoint](./client.md#register_app_instance_user_endpoint)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_app_instance](./client.md#update_app_instance)
-- [update_app_instance_user](./client.md#update_app_instance_user)
-- [update_app_instance_user_endpoint](./client.md#update_app_instance_user_endpoint)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-ChimeSDKIdentityClient [exceptions](./client.md#exceptions)
 
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- ResourceLimitExceededException
-- ServiceFailureException
-- ServiceUnavailableException
-- ThrottledClientException
-- UnauthorizedClientException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType
 
-```python
-from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType, ...
+def get_value() -> AllowMessagesType:
+    return "ALL"
 ```
 
 - [AllowMessagesType](./literals.md#allowmessagestype)
@@ -149,18 +86,22 @@ from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType, ...
 - [ChimeSDKIdentityServiceName](./literals.md#chimesdkidentityservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceAdminSummaryTypeDef
 
-```python
-from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceAdminSummaryTypeDef, ...
+def get_value() -> AppInstanceAdminSummaryTypeDef:
+    return {
+        "Admin": ...,
+    }
 ```
 
 - [AppInstanceAdminSummaryTypeDef](./type_defs.md#appinstanceadminsummarytypedef)
@@ -220,3 +161,4 @@ from mypy_boto3_chime_sdk_identity.type_defs import AppInstanceAdminSummaryTypeD
 - [UpdateAppInstanceUserEndpointResponseTypeDef](./type_defs.md#updateappinstanceuserendpointresponsetypedef)
 - [UpdateAppInstanceUserRequestRequestTypeDef](./type_defs.md#updateappinstanceuserrequestrequesttypedef)
 - [UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef)
+

@@ -1,67 +1,18 @@
-<a id="smsclient-for-boto3-sms-module"></a>
-
-# SMSClient for boto3 SMS module
+# SMSClient
 
 > [Index](../README.md) > [SMS](./README.md) > SMSClient
 
-Auto-generated documentation for
-[SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
-type annotations stubs module
-[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
+!!! note ""
 
-- [SMSClient for boto3 SMS module](#smsclient-for-boto3-sms-module)
-  - [SMSClient](#smsclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_app](#create_app)
-    - [create_replication_job](#create_replication_job)
-    - [delete_app](#delete_app)
-    - [delete_app_launch_configuration](#delete_app_launch_configuration)
-    - [delete_app_replication_configuration](#delete_app_replication_configuration)
-    - [delete_app_validation_configuration](#delete_app_validation_configuration)
-    - [delete_replication_job](#delete_replication_job)
-    - [delete_server_catalog](#delete_server_catalog)
-    - [disassociate_connector](#disassociate_connector)
-    - [generate_change_set](#generate_change_set)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [generate_template](#generate_template)
-    - [get_app](#get_app)
-    - [get_app_launch_configuration](#get_app_launch_configuration)
-    - [get_app_replication_configuration](#get_app_replication_configuration)
-    - [get_app_validation_configuration](#get_app_validation_configuration)
-    - [get_app_validation_output](#get_app_validation_output)
-    - [get_connectors](#get_connectors)
-    - [get_replication_jobs](#get_replication_jobs)
-    - [get_replication_runs](#get_replication_runs)
-    - [get_servers](#get_servers)
-    - [import_app_catalog](#import_app_catalog)
-    - [import_server_catalog](#import_server_catalog)
-    - [launch_app](#launch_app)
-    - [list_apps](#list_apps)
-    - [notify_app_validation_output](#notify_app_validation_output)
-    - [put_app_launch_configuration](#put_app_launch_configuration)
-    - [put_app_replication_configuration](#put_app_replication_configuration)
-    - [put_app_validation_configuration](#put_app_validation_configuration)
-    - [start_app_replication](#start_app_replication)
-    - [start_on_demand_app_replication](#start_on_demand_app_replication)
-    - [start_on_demand_replication_run](#start_on_demand_replication_run)
-    - [stop_app_replication](#stop_app_replication)
-    - [terminate_app](#terminate_app)
-    - [update_app](#update_app)
-    - [update_replication_job](#update_replication_job)
-    - [get_paginator](#get_paginator)
-
-<a id="smsclient"></a>
+    Auto-generated documentation for [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
+    type annotations stubs module [mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ## SMSClient
 
-Type annotations for `boto3.client("sms")`
+Type annotations and code completion for `#!python boto3.client("sms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_sms.client import SMSClient
 
@@ -69,876 +20,1133 @@ def get_sms_client() -> SMSClient:
     return Session().client("sms")
 ```
 
-Boto3 documentation:
-[SMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("sms").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("sms")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.DryRunOperationException,
+    client.InternalError,
+    client.InvalidParameterException,
+    client.MissingRequiredParameterException,
+    client.NoConnectorsAvailableException,
+    client.OperationNotPermittedException,
+    client.ReplicationJobAlreadyExistsException,
+    client.ReplicationJobNotFoundException,
+    client.ReplicationRunLimitExceededException,
+    client.ServerCannotBeReplicatedException,
+    client.TemporarilyUnavailableException,
+    client.UnauthorizedOperationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_sms.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.DryRunOperationException`
-- `Exceptions.InternalError`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.MissingRequiredParameterException`
-- `Exceptions.NoConnectorsAvailableException`
-- `Exceptions.OperationNotPermittedException`
-- `Exceptions.ReplicationJobAlreadyExistsException`
-- `Exceptions.ReplicationJobNotFoundException`
-- `Exceptions.ReplicationRunLimitExceededException`
-- `Exceptions.ServerCannotBeReplicatedException`
-- `Exceptions.TemporarilyUnavailableException`
-- `Exceptions.UnauthorizedOperationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SMSClient exceptions.
-
-Type annotations for `boto3.client("sms").exceptions` method.
-
-Boto3 documentation:
-[SMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("sms").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("sms").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.can_paginate)
 
-Boto3 documentation:
-[SMS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_app"></a>
-
-### create_app
+### create\_app
 
 Creates an application.
 
-Type annotations for `boto3.client("sms").create_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").create_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
 
-Boto3 documentation:
-[SMS.Client.create_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_app)
+```python title="Method definition"
+def create_app(
+    self,
+    *,
+    name: str = ...,
+    description: str = ...,
+    roleName: str = ...,
+    clientToken: str = ...,
+    serverGroups: Sequence[ServerGroupTypeDef] = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateAppResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef).
+1. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str`
-- `description`: `str`
-- `roleName`: `str`
-- `clientToken`: `str`
-- `serverGroups`:
-  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+parent.create_app(**kwargs)
+```
 
-<a id="create\_replication\_job"></a>
+1. See [:material-code-braces: CreateAppRequestRequestTypeDef](./type_defs.md#createapprequestrequesttypedef) 
 
-### create_replication_job
+### create\_replication\_job
 
 Creates a replication job.
 
-Type annotations for `boto3.client("sms").create_replication_job` method.
+Type annotations and code completion for `#!python boto3.client("sms").create_replication_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
 
-Boto3 documentation:
-[SMS.Client.create_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.create_replication_job)
+```python title="Method definition"
+def create_replication_job(
+    self,
+    *,
+    serverId: str,
+    seedReplicationTime: Union[datetime, str],
+    frequency: int = ...,
+    runOnce: bool = ...,
+    licenseType: LicenseTypeType = ...,  # (1)
+    roleName: str = ...,
+    description: str = ...,
+    numberOfRecentAmisToKeep: int = ...,
+    encrypted: bool = ...,
+    kmsKeyId: str = ...,
+) -> CreateReplicationJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateReplicationJobRequestRequestTypeDef](./type_defs.md#createreplicationjobrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
+2. See [:material-code-braces: CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `serverId`: `str` *(required)*
-- `seedReplicationTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `frequency`: `int`
-- `runOnce`: `bool`
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `roleName`: `str`
-- `description`: `str`
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateReplicationJobRequestRequestTypeDef = {  # (1)
+    "serverId": ...,
+    "seedReplicationTime": ...,
+}
 
-Returns
-[CreateReplicationJobResponseTypeDef](./type_defs.md#createreplicationjobresponsetypedef).
+parent.create_replication_job(**kwargs)
+```
 
-<a id="delete\_app"></a>
+1. See [:material-code-braces: CreateReplicationJobRequestRequestTypeDef](./type_defs.md#createreplicationjobrequestrequesttypedef) 
 
-### delete_app
+### delete\_app
 
 Deletes the specified application.
 
-Type annotations for `boto3.client("sms").delete_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
 
-Boto3 documentation:
-[SMS.Client.delete_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app)
+```python title="Method definition"
+def delete_app(
+    self,
+    *,
+    appId: str = ...,
+    forceStopAppReplication: bool = ...,
+    forceTerminateApp: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `forceStopAppReplication`: `bool`
-- `forceTerminateApp`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteAppRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app(**kwargs)
+```
 
-<a id="delete\_app\_launch\_configuration"></a>
+1. See [:material-code-braces: DeleteAppRequestRequestTypeDef](./type_defs.md#deleteapprequestrequesttypedef) 
 
-### delete_app_launch_configuration
+### delete\_app\_launch\_configuration
 
 Deletes the launch configuration for the specified application.
 
-Type annotations for `boto3.client("sms").delete_app_launch_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_app_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
 
-Boto3 documentation:
-[SMS.Client.delete_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_launch_configuration)
+```python title="Method definition"
+def delete_app_launch_configuration(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplaunchconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAppLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app_launch_configuration(**kwargs)
+```
 
-<a id="delete\_app\_replication\_configuration"></a>
+1. See [:material-code-braces: DeleteAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#deleteapplaunchconfigurationrequestrequesttypedef) 
 
-### delete_app_replication_configuration
+### delete\_app\_replication\_configuration
 
 Deletes the replication configuration for the specified application.
 
-Type annotations for `boto3.client("sms").delete_app_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_app_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
 
-Boto3 documentation:
-[SMS.Client.delete_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_replication_configuration)
+```python title="Method definition"
+def delete_app_replication_configuration(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappreplicationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteAppReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app_replication_configuration(**kwargs)
+```
 
-<a id="delete\_app\_validation\_configuration"></a>
+1. See [:material-code-braces: DeleteAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappreplicationconfigurationrequestrequesttypedef) 
 
-### delete_app_validation_configuration
+### delete\_app\_validation\_configuration
 
 Deletes the validation configuration for the specified application.
 
-Type annotations for `boto3.client("sms").delete_app_validation_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_app_validation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
 
-Boto3 documentation:
-[SMS.Client.delete_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_app_validation_configuration)
+```python title="Method definition"
+def delete_app_validation_configuration(
+    self,
+    *,
+    appId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappvalidationconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppValidationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app_validation_configuration(**kwargs)
+```
 
-<a id="delete\_replication\_job"></a>
+1. See [:material-code-braces: DeleteAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#deleteappvalidationconfigurationrequestrequesttypedef) 
 
-### delete_replication_job
+### delete\_replication\_job
 
 Deletes the specified replication job.
 
-Type annotations for `boto3.client("sms").delete_replication_job` method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_replication_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job)
 
-Boto3 documentation:
-[SMS.Client.delete_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_replication_job)
+```python title="Method definition"
+def delete_replication_job(
+    self,
+    *,
+    replicationJobId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteReplicationJobRequestRequestTypeDef](./type_defs.md#deletereplicationjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `replicationJobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteReplicationJobRequestRequestTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_replication_job(**kwargs)
+```
 
-<a id="delete\_server\_catalog"></a>
+1. See [:material-code-braces: DeleteReplicationJobRequestRequestTypeDef](./type_defs.md#deletereplicationjobrequestrequesttypedef) 
 
-### delete_server_catalog
+### delete\_server\_catalog
 
 Deletes all servers from your server catalog.
 
-Type annotations for `boto3.client("sms").delete_server_catalog` method.
+Type annotations and code completion for `#!python boto3.client("sms").delete_server_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_server_catalog)
 
-Boto3 documentation:
-[SMS.Client.delete_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.delete_server_catalog)
+```python title="Method definition"
+def delete_server_catalog(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate\_connector"></a>
-
-### disassociate_connector
+### disassociate\_connector
 
 Disassociates the specified connector from Server Migration Service.
 
-Type annotations for `boto3.client("sms").disassociate_connector` method.
+Type annotations and code completion for `#!python boto3.client("sms").disassociate_connector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector)
 
-Boto3 documentation:
-[SMS.Client.disassociate_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.disassociate_connector)
+```python title="Method definition"
+def disassociate_connector(
+    self,
+    *,
+    connectorId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateConnectorRequestRequestTypeDef](./type_defs.md#disassociateconnectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `connectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateConnectorRequestRequestTypeDef = {  # (1)
+    "connectorId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_connector(**kwargs)
+```
 
-<a id="generate\_change\_set"></a>
+1. See [:material-code-braces: DisassociateConnectorRequestRequestTypeDef](./type_defs.md#disassociateconnectorrequestrequesttypedef) 
 
-### generate_change_set
+### generate\_change\_set
 
-Generates a target change set for a currently launched stack and writes it to
-an Amazon S3 object in the customer’s Amazon S3 bucket.
+Generates a target change set for a currently launched stack and writes it to an
+Amazon S3 object in the customer’s Amazon S3 bucket.
 
-Type annotations for `boto3.client("sms").generate_change_set` method.
+Type annotations and code completion for `#!python boto3.client("sms").generate_change_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set)
 
-Boto3 documentation:
-[SMS.Client.generate_change_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_change_set)
+```python title="Method definition"
+def generate_change_set(
+    self,
+    *,
+    appId: str = ...,
+    changesetFormat: OutputFormatType = ...,  # (1)
+) -> GenerateChangeSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateChangeSetRequestRequestTypeDef](./type_defs.md#generatechangesetrequestrequesttypedef).
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-braces: GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `changesetFormat`: [OutputFormatType](./literals.md#outputformattype)
+```python title="Usage example with kwargs"
+kwargs: GenerateChangeSetRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GenerateChangeSetResponseTypeDef](./type_defs.md#generatechangesetresponsetypedef).
+parent.generate_change_set(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateChangeSetRequestRequestTypeDef](./type_defs.md#generatechangesetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("sms").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("sms").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_presigned_url)
 
-Boto3 documentation:
-[SMS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="generate\_template"></a>
-
-### generate_template
+### generate\_template
 
 Generates an CloudFormation template based on the current launch configuration
 and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.
 
-Type annotations for `boto3.client("sms").generate_template` method.
+Type annotations and code completion for `#!python boto3.client("sms").generate_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template)
 
-Boto3 documentation:
-[SMS.Client.generate_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.generate_template)
+```python title="Method definition"
+def generate_template(
+    self,
+    *,
+    appId: str = ...,
+    templateFormat: OutputFormatType = ...,  # (1)
+) -> GenerateTemplateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GenerateTemplateRequestRequestTypeDef](./type_defs.md#generatetemplaterequestrequesttypedef).
+1. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+2. See [:material-code-braces: GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `templateFormat`: [OutputFormatType](./literals.md#outputformattype)
+```python title="Usage example with kwargs"
+kwargs: GenerateTemplateRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GenerateTemplateResponseTypeDef](./type_defs.md#generatetemplateresponsetypedef).
+parent.generate_template(**kwargs)
+```
 
-<a id="get\_app"></a>
+1. See [:material-code-braces: GenerateTemplateRequestRequestTypeDef](./type_defs.md#generatetemplaterequestrequesttypedef) 
 
-### get_app
+### get\_app
 
 Retrieve information about the specified application.
 
-Type annotations for `boto3.client("sms").get_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app)
 
-Boto3 documentation:
-[SMS.Client.get_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app)
+```python title="Method definition"
+def get_app(
+    self,
+    *,
+    appId: str = ...,
+) -> GetAppResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef).
+1. See [:material-code-braces: GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAppRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns [GetAppResponseTypeDef](./type_defs.md#getappresponsetypedef).
+parent.get_app(**kwargs)
+```
 
-<a id="get\_app\_launch\_configuration"></a>
+1. See [:material-code-braces: GetAppRequestRequestTypeDef](./type_defs.md#getapprequestrequesttypedef) 
 
-### get_app_launch_configuration
+### get\_app\_launch\_configuration
 
 Retrieves the application launch configuration associated with the specified
 application.
 
-Type annotations for `boto3.client("sms").get_app_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_app_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
 
-Boto3 documentation:
-[SMS.Client.get_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_launch_configuration)
+```python title="Method definition"
+def get_app_launch_configuration(
+    self,
+    *,
+    appId: str = ...,
+) -> GetAppLaunchConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getapplaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAppLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GetAppLaunchConfigurationResponseTypeDef](./type_defs.md#getapplaunchconfigurationresponsetypedef).
+parent.get_app_launch_configuration(**kwargs)
+```
 
-<a id="get\_app\_replication\_configuration"></a>
+1. See [:material-code-braces: GetAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#getapplaunchconfigurationrequestrequesttypedef) 
 
-### get_app_replication_configuration
+### get\_app\_replication\_configuration
 
 Retrieves the application replication configuration associated with the
 specified application.
 
-Type annotations for `boto3.client("sms").get_app_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").get_app_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
 
-Boto3 documentation:
-[SMS.Client.get_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_replication_configuration)
+```python title="Method definition"
+def get_app_replication_configuration(
+    self,
+    *,
+    appId: str = ...,
+) -> GetAppReplicationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getappreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAppReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GetAppReplicationConfigurationResponseTypeDef](./type_defs.md#getappreplicationconfigurationresponsetypedef).
+parent.get_app_replication_configuration(**kwargs)
+```
 
-<a id="get\_app\_validation\_configuration"></a>
+1. See [:material-code-braces: GetAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#getappreplicationconfigurationrequestrequesttypedef) 
 
-### get_app_validation_configuration
+### get\_app\_validation\_configuration
 
 Retrieves information about a configuration for validating an application.
 
-Type annotations for `boto3.client("sms").get_app_validation_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").get_app_validation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
 
-Boto3 documentation:
-[SMS.Client.get_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_configuration)
+```python title="Method definition"
+def get_app_validation_configuration(
+    self,
+    *,
+    appId: str,
+) -> GetAppValidationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#getappvalidationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppValidationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GetAppValidationConfigurationResponseTypeDef](./type_defs.md#getappvalidationconfigurationresponsetypedef).
+parent.get_app_validation_configuration(**kwargs)
+```
 
-<a id="get\_app\_validation\_output"></a>
+1. See [:material-code-braces: GetAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#getappvalidationconfigurationrequestrequesttypedef) 
 
-### get_app_validation_output
+### get\_app\_validation\_output
 
 Retrieves output from validating an application.
 
-Type annotations for `boto3.client("sms").get_app_validation_output` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_app_validation_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output)
 
-Boto3 documentation:
-[SMS.Client.get_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_app_validation_output)
+```python title="Method definition"
+def get_app_validation_output(
+    self,
+    *,
+    appId: str,
+) -> GetAppValidationOutputResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppValidationOutputRequestRequestTypeDef](./type_defs.md#getappvalidationoutputrequestrequesttypedef).
+1. See [:material-code-braces: GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppValidationOutputRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns
-[GetAppValidationOutputResponseTypeDef](./type_defs.md#getappvalidationoutputresponsetypedef).
+parent.get_app_validation_output(**kwargs)
+```
 
-<a id="get\_connectors"></a>
+1. See [:material-code-braces: GetAppValidationOutputRequestRequestTypeDef](./type_defs.md#getappvalidationoutputrequestrequesttypedef) 
 
-### get_connectors
+### get\_connectors
 
 Describes the connectors registered with the Server Migration Service.
 
-Type annotations for `boto3.client("sms").get_connectors` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_connectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors)
 
-Boto3 documentation:
-[SMS.Client.get_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_connectors)
+```python title="Method definition"
+def get_connectors(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetConnectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectorsRequestRequestTypeDef](./type_defs.md#getconnectorsrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetConnectorsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[GetConnectorsResponseTypeDef](./type_defs.md#getconnectorsresponsetypedef).
+parent.get_connectors(**kwargs)
+```
 
-<a id="get\_replication\_jobs"></a>
+1. See [:material-code-braces: GetConnectorsRequestRequestTypeDef](./type_defs.md#getconnectorsrequestrequesttypedef) 
 
-### get_replication_jobs
+### get\_replication\_jobs
 
 Describes the specified replication job or all of your replication jobs.
 
-Type annotations for `boto3.client("sms").get_replication_jobs` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_replication_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
 
-Boto3 documentation:
-[SMS.Client.get_replication_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_jobs)
+```python title="Method definition"
+def get_replication_jobs(
+    self,
+    *,
+    replicationJobId: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetReplicationJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReplicationJobsRequestRequestTypeDef](./type_defs.md#getreplicationjobsrequestrequesttypedef).
+1. See [:material-code-braces: GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `replicationJobId`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetReplicationJobsRequestRequestTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
 
-Returns
-[GetReplicationJobsResponseTypeDef](./type_defs.md#getreplicationjobsresponsetypedef).
+parent.get_replication_jobs(**kwargs)
+```
 
-<a id="get\_replication\_runs"></a>
+1. See [:material-code-braces: GetReplicationJobsRequestRequestTypeDef](./type_defs.md#getreplicationjobsrequestrequesttypedef) 
 
-### get_replication_runs
+### get\_replication\_runs
 
 Describes the replication runs for the specified replication job.
 
-Type annotations for `boto3.client("sms").get_replication_runs` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_replication_runs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
 
-Boto3 documentation:
-[SMS.Client.get_replication_runs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_replication_runs)
+```python title="Method definition"
+def get_replication_runs(
+    self,
+    *,
+    replicationJobId: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> GetReplicationRunsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetReplicationRunsRequestRequestTypeDef](./type_defs.md#getreplicationrunsrequestrequesttypedef).
+1. See [:material-code-braces: GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `replicationJobId`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetReplicationRunsRequestRequestTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
 
-Returns
-[GetReplicationRunsResponseTypeDef](./type_defs.md#getreplicationrunsresponsetypedef).
+parent.get_replication_runs(**kwargs)
+```
 
-<a id="get\_servers"></a>
+1. See [:material-code-braces: GetReplicationRunsRequestRequestTypeDef](./type_defs.md#getreplicationrunsrequestrequesttypedef) 
 
-### get_servers
+### get\_servers
 
 Describes the servers in your server catalog.
 
-Type annotations for `boto3.client("sms").get_servers` method.
+Type annotations and code completion for `#!python boto3.client("sms").get_servers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
 
-Boto3 documentation:
-[SMS.Client.get_servers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.get_servers)
+```python title="Method definition"
+def get_servers(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    vmServerAddressList: Sequence[VmServerAddressTypeDef] = ...,  # (1)
+) -> GetServersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetServersRequestRequestTypeDef](./type_defs.md#getserversrequestrequesttypedef).
+1. See [:material-code-braces: VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef) 
+2. See [:material-code-braces: GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `vmServerAddressList`:
-  `Sequence`\[[VmServerAddressTypeDef](./type_defs.md#vmserveraddresstypedef)\]
+```python title="Usage example with kwargs"
+kwargs: GetServersRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [GetServersResponseTypeDef](./type_defs.md#getserversresponsetypedef).
+parent.get_servers(**kwargs)
+```
 
-<a id="import\_app\_catalog"></a>
+1. See [:material-code-braces: GetServersRequestRequestTypeDef](./type_defs.md#getserversrequestrequesttypedef) 
 
-### import_app_catalog
+### import\_app\_catalog
 
 Allows application import from Migration Hub.
 
-Type annotations for `boto3.client("sms").import_app_catalog` method.
+Type annotations and code completion for `#!python boto3.client("sms").import_app_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog)
 
-Boto3 documentation:
-[SMS.Client.import_app_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_app_catalog)
+```python title="Method definition"
+def import_app_catalog(
+    self,
+    *,
+    roleName: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ImportAppCatalogRequestRequestTypeDef](./type_defs.md#importappcatalogrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `roleName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportAppCatalogRequestRequestTypeDef = {  # (1)
+    "roleName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.import_app_catalog(**kwargs)
+```
 
-<a id="import\_server\_catalog"></a>
+1. See [:material-code-braces: ImportAppCatalogRequestRequestTypeDef](./type_defs.md#importappcatalogrequestrequesttypedef) 
 
-### import_server_catalog
+### import\_server\_catalog
 
 Gathers a complete list of on-premises servers.
 
-Type annotations for `boto3.client("sms").import_server_catalog` method.
+Type annotations and code completion for `#!python boto3.client("sms").import_server_catalog` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_server_catalog)
 
-Boto3 documentation:
-[SMS.Client.import_server_catalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.import_server_catalog)
+```python title="Method definition"
+def import_server_catalog(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="launch\_app"></a>
-
-### launch_app
+### launch\_app
 
 Launches the specified application as a stack in CloudFormation.
 
-Type annotations for `boto3.client("sms").launch_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").launch_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app)
 
-Boto3 documentation:
-[SMS.Client.launch_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.launch_app)
+```python title="Method definition"
+def launch_app(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[LaunchAppRequestRequestTypeDef](./type_defs.md#launchapprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: LaunchAppRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.launch_app(**kwargs)
+```
 
-<a id="list\_apps"></a>
+1. See [:material-code-braces: LaunchAppRequestRequestTypeDef](./type_defs.md#launchapprequestrequesttypedef) 
 
-### list_apps
+### list\_apps
 
 Retrieves summaries for all applications.
 
-Type annotations for `boto3.client("sms").list_apps` method.
+Type annotations and code completion for `#!python boto3.client("sms").list_apps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
 
-Boto3 documentation:
-[SMS.Client.list_apps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.list_apps)
+```python title="Method definition"
+def list_apps(
+    self,
+    *,
+    appIds: Sequence[str] = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAppsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appIds`: `Sequence`\[`str`\]
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAppsRequestRequestTypeDef = {  # (1)
+    "appIds": ...,
+}
 
-Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
+parent.list_apps(**kwargs)
+```
 
-<a id="notify\_app\_validation\_output"></a>
+1. See [:material-code-braces: ListAppsRequestRequestTypeDef](./type_defs.md#listappsrequestrequesttypedef) 
 
-### notify_app_validation_output
+### notify\_app\_validation\_output
 
 Provides information to Server Migration Service about whether application
 validation is successful.
 
-Type annotations for `boto3.client("sms").notify_app_validation_output` method.
+Type annotations and code completion for `#!python boto3.client("sms").notify_app_validation_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output)
 
-Boto3 documentation:
-[SMS.Client.notify_app_validation_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.notify_app_validation_output)
+```python title="Method definition"
+def notify_app_validation_output(
+    self,
+    *,
+    appId: str,
+    notificationContext: NotificationContextTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[NotifyAppValidationOutputRequestRequestTypeDef](./type_defs.md#notifyappvalidationoutputrequestrequesttypedef).
+1. See [:material-code-braces: NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
-- `notificationContext`:
-  [NotificationContextTypeDef](./type_defs.md#notificationcontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: NotifyAppValidationOutputRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.notify_app_validation_output(**kwargs)
+```
 
-<a id="put\_app\_launch\_configuration"></a>
+1. See [:material-code-braces: NotifyAppValidationOutputRequestRequestTypeDef](./type_defs.md#notifyappvalidationoutputrequestrequesttypedef) 
 
-### put_app_launch_configuration
+### put\_app\_launch\_configuration
 
 Creates or updates the launch configuration for the specified application.
 
-Type annotations for `boto3.client("sms").put_app_launch_configuration` method.
+Type annotations and code completion for `#!python boto3.client("sms").put_app_launch_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
 
-Boto3 documentation:
-[SMS.Client.put_app_launch_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_launch_configuration)
+```python title="Method definition"
+def put_app_launch_configuration(
+    self,
+    *,
+    appId: str = ...,
+    roleName: str = ...,
+    autoLaunch: bool = ...,
+    serverGroupLaunchConfigurations: Sequence[ServerGroupLaunchConfigurationTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#putapplaunchconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `roleName`: `str`
-- `autoLaunch`: `bool`
-- `serverGroupLaunchConfigurations`:
-  `Sequence`\[[ServerGroupLaunchConfigurationTypeDef](./type_defs.md#servergrouplaunchconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutAppLaunchConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_app_launch_configuration(**kwargs)
+```
 
-<a id="put\_app\_replication\_configuration"></a>
+1. See [:material-code-braces: PutAppLaunchConfigurationRequestRequestTypeDef](./type_defs.md#putapplaunchconfigurationrequestrequesttypedef) 
 
-### put_app_replication_configuration
+### put\_app\_replication\_configuration
 
 Creates or updates the replication configuration for the specified application.
 
-Type annotations for `boto3.client("sms").put_app_replication_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").put_app_replication_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
 
-Boto3 documentation:
-[SMS.Client.put_app_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_replication_configuration)
+```python title="Method definition"
+def put_app_replication_configuration(
+    self,
+    *,
+    appId: str = ...,
+    serverGroupReplicationConfigurations: Sequence[ServerGroupReplicationConfigurationTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#putappreplicationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `serverGroupReplicationConfigurations`:
-  `Sequence`\[[ServerGroupReplicationConfigurationTypeDef](./type_defs.md#servergroupreplicationconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutAppReplicationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_app_replication_configuration(**kwargs)
+```
 
-<a id="put\_app\_validation\_configuration"></a>
+1. See [:material-code-braces: PutAppReplicationConfigurationRequestRequestTypeDef](./type_defs.md#putappreplicationconfigurationrequestrequesttypedef) 
 
-### put_app_validation_configuration
+### put\_app\_validation\_configuration
 
 Creates or updates a validation configuration for the specified application.
 
-Type annotations for `boto3.client("sms").put_app_validation_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").put_app_validation_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
 
-Boto3 documentation:
-[SMS.Client.put_app_validation_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.put_app_validation_configuration)
+```python title="Method definition"
+def put_app_validation_configuration(
+    self,
+    *,
+    appId: str,
+    appValidationConfigurations: Sequence[AppValidationConfigurationTypeDef] = ...,  # (1)
+    serverGroupValidationConfigurations: Sequence[ServerGroupValidationConfigurationTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#putappvalidationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef) 
+2. See [:material-code-braces: ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
-- `appValidationConfigurations`:
-  `Sequence`\[[AppValidationConfigurationTypeDef](./type_defs.md#appvalidationconfigurationtypedef)\]
-- `serverGroupValidationConfigurations`:
-  `Sequence`\[[ServerGroupValidationConfigurationTypeDef](./type_defs.md#servergroupvalidationconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: PutAppValidationConfigurationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_app_validation_configuration(**kwargs)
+```
 
-<a id="start\_app\_replication"></a>
+1. See [:material-code-braces: PutAppValidationConfigurationRequestRequestTypeDef](./type_defs.md#putappvalidationconfigurationrequestrequesttypedef) 
 
-### start_app_replication
+### start\_app\_replication
 
 Starts replicating the specified application by creating replication jobs for
 each server in the application.
 
-Type annotations for `boto3.client("sms").start_app_replication` method.
+Type annotations and code completion for `#!python boto3.client("sms").start_app_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication)
 
-Boto3 documentation:
-[SMS.Client.start_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_app_replication)
+```python title="Method definition"
+def start_app_replication(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartAppReplicationRequestRequestTypeDef](./type_defs.md#startappreplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartAppReplicationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_app_replication(**kwargs)
+```
 
-<a id="start\_on\_demand\_app\_replication"></a>
+1. See [:material-code-braces: StartAppReplicationRequestRequestTypeDef](./type_defs.md#startappreplicationrequestrequesttypedef) 
 
-### start_on_demand_app_replication
+### start\_on\_demand\_app\_replication
 
 Starts an on-demand replication run for the specified application.
 
-Type annotations for `boto3.client("sms").start_on_demand_app_replication`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").start_on_demand_app_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
 
-Boto3 documentation:
-[SMS.Client.start_on_demand_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_app_replication)
+```python title="Method definition"
+def start_on_demand_app_replication(
+    self,
+    *,
+    appId: str,
+    description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartOnDemandAppReplicationRequestRequestTypeDef](./type_defs.md#startondemandappreplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartOnDemandAppReplicationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_on_demand_app_replication(**kwargs)
+```
 
-<a id="start\_on\_demand\_replication\_run"></a>
+1. See [:material-code-braces: StartOnDemandAppReplicationRequestRequestTypeDef](./type_defs.md#startondemandappreplicationrequestrequesttypedef) 
 
-### start_on_demand_replication_run
+### start\_on\_demand\_replication\_run
 
 Starts an on-demand replication run for the specified replication job.
 
-Type annotations for `boto3.client("sms").start_on_demand_replication_run`
-method.
+Type annotations and code completion for `#!python boto3.client("sms").start_on_demand_replication_run` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
 
-Boto3 documentation:
-[SMS.Client.start_on_demand_replication_run](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.start_on_demand_replication_run)
+```python title="Method definition"
+def start_on_demand_replication_run(
+    self,
+    *,
+    replicationJobId: str,
+    description: str = ...,
+) -> StartOnDemandReplicationRunResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartOnDemandReplicationRunRequestRequestTypeDef](./type_defs.md#startondemandreplicationrunrequestrequesttypedef).
+1. See [:material-code-braces: StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef) 
 
-Keyword-only arguments:
 
-- `replicationJobId`: `str` *(required)*
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartOnDemandReplicationRunRequestRequestTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
 
-Returns
-[StartOnDemandReplicationRunResponseTypeDef](./type_defs.md#startondemandreplicationrunresponsetypedef).
+parent.start_on_demand_replication_run(**kwargs)
+```
 
-<a id="stop\_app\_replication"></a>
+1. See [:material-code-braces: StartOnDemandReplicationRunRequestRequestTypeDef](./type_defs.md#startondemandreplicationrunrequestrequesttypedef) 
 
-### stop_app_replication
+### stop\_app\_replication
 
 Stops replicating the specified application by deleting the replication job for
 each server in the application.
 
-Type annotations for `boto3.client("sms").stop_app_replication` method.
+Type annotations and code completion for `#!python boto3.client("sms").stop_app_replication` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication)
 
-Boto3 documentation:
-[SMS.Client.stop_app_replication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.stop_app_replication)
+```python title="Method definition"
+def stop_app_replication(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopAppReplicationRequestRequestTypeDef](./type_defs.md#stopappreplicationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopAppReplicationRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_app_replication(**kwargs)
+```
 
-<a id="terminate\_app"></a>
+1. See [:material-code-braces: StopAppReplicationRequestRequestTypeDef](./type_defs.md#stopappreplicationrequestrequesttypedef) 
 
-### terminate_app
+### terminate\_app
 
 Terminates the stack for the specified application.
 
-Type annotations for `boto3.client("sms").terminate_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").terminate_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app)
 
-Boto3 documentation:
-[SMS.Client.terminate_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.terminate_app)
+```python title="Method definition"
+def terminate_app(
+    self,
+    *,
+    appId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TerminateAppRequestRequestTypeDef](./type_defs.md#terminateapprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `appId`: `str`
+```python title="Usage example with kwargs"
+kwargs: TerminateAppRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.terminate_app(**kwargs)
+```
 
-<a id="update\_app"></a>
+1. See [:material-code-braces: TerminateAppRequestRequestTypeDef](./type_defs.md#terminateapprequestrequesttypedef) 
 
-### update_app
+### update\_app
 
 Updates the specified application.
 
-Type annotations for `boto3.client("sms").update_app` method.
+Type annotations and code completion for `#!python boto3.client("sms").update_app` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
 
-Boto3 documentation:
-[SMS.Client.update_app](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_app)
+```python title="Method definition"
+def update_app(
+    self,
+    *,
+    appId: str = ...,
+    name: str = ...,
+    description: str = ...,
+    roleName: str = ...,
+    serverGroups: Sequence[ServerGroupTypeDef] = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> UpdateAppResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef).
+1. See [:material-code-braces: ServerGroupTypeDef](./type_defs.md#servergrouptypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef) 
 
-Keyword-only arguments:
 
-- `appId`: `str`
-- `name`: `str`
-- `description`: `str`
-- `roleName`: `str`
-- `serverGroups`:
-  `Sequence`\[[ServerGroupTypeDef](./type_defs.md#servergrouptypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateAppRequestRequestTypeDef = {  # (1)
+    "appId": ...,
+}
 
-Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
+parent.update_app(**kwargs)
+```
 
-<a id="update\_replication\_job"></a>
+1. See [:material-code-braces: UpdateAppRequestRequestTypeDef](./type_defs.md#updateapprequestrequesttypedef) 
 
-### update_replication_job
+### update\_replication\_job
 
 Updates the specified settings for the specified replication job.
 
-Type annotations for `boto3.client("sms").update_replication_job` method.
+Type annotations and code completion for `#!python boto3.client("sms").update_replication_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
 
-Boto3 documentation:
-[SMS.Client.update_replication_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS.Client.update_replication_job)
+```python title="Method definition"
+def update_replication_job(
+    self,
+    *,
+    replicationJobId: str,
+    frequency: int = ...,
+    nextReplicationRunStartTime: Union[datetime, str] = ...,
+    licenseType: LicenseTypeType = ...,  # (1)
+    roleName: str = ...,
+    description: str = ...,
+    numberOfRecentAmisToKeep: int = ...,
+    encrypted: bool = ...,
+    kmsKeyId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateReplicationJobRequestRequestTypeDef](./type_defs.md#updatereplicationjobrequestrequesttypedef).
+1. See [:material-code-brackets: LicenseTypeType](./literals.md#licensetypetype) 
 
-Keyword-only arguments:
 
-- `replicationJobId`: `str` *(required)*
-- `frequency`: `int`
-- `nextReplicationRunStartTime`: `Union`\[`datetime`, `str`\]
-- `licenseType`: [LicenseTypeType](./literals.md#licensetypetype)
-- `roleName`: `str`
-- `description`: `str`
-- `numberOfRecentAmisToKeep`: `int`
-- `encrypted`: `bool`
-- `kmsKeyId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateReplicationJobRequestRequestTypeDef = {  # (1)
+    "replicationJobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_replication_job(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateReplicationJobRequestRequestTypeDef](./type_defs.md#updatereplicationjobrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("sms").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("sms").get_paginator` method with overloads.
 
-- `client.get_paginator("get_connectors")` ->
-  [GetConnectorsPaginator](./paginators.md#getconnectorspaginator)
-- `client.get_paginator("get_replication_jobs")` ->
-  [GetReplicationJobsPaginator](./paginators.md#getreplicationjobspaginator)
-- `client.get_paginator("get_replication_runs")` ->
-  [GetReplicationRunsPaginator](./paginators.md#getreplicationrunspaginator)
-- `client.get_paginator("get_servers")` ->
-  [GetServersPaginator](./paginators.md#getserverspaginator)
-- `client.get_paginator("list_apps")` ->
-  [ListAppsPaginator](./paginators.md#listappspaginator)
+- `client.get_paginator("get_connectors")` -> [GetConnectorsPaginator](./paginators.md#getconnectorspaginator)
+- `client.get_paginator("get_replication_jobs")` -> [GetReplicationJobsPaginator](./paginators.md#getreplicationjobspaginator)
+- `client.get_paginator("get_replication_runs")` -> [GetReplicationRunsPaginator](./paginators.md#getreplicationrunspaginator)
+- `client.get_paginator("get_servers")` -> [GetServersPaginator](./paginators.md#getserverspaginator)
+- `client.get_paginator("list_apps")` -> [ListAppsPaginator](./paginators.md#listappspaginator)
+
+
+

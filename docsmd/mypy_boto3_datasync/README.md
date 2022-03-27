@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-datasync-module"></a>
-
-# Type annotations for boto3 DataSync module
+#  DataSync module
 
 > [Index](../README.md) > DataSync
 
-Auto-generated documentation for
-[DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
-type annotations stubs module
-[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
+!!! note ""
 
-- [Type annotations for boto3 DataSync module](#type-annotations-for-boto3-datasync-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DataSyncClient](#datasyncclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
+    type annotations stubs module [mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DataSync`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[datasync]'
 python -m pip install mypy-boto3-datasync
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,95 +42,37 @@ python -m pip install mypy-boto3-datasync
 python -m pip uninstall -y mypy-boto3-datasync
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="datasyncclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DataSyncClient
 
-Type annotations for `boto3.client("datasync")` as
-[DataSyncClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("datasync")` as [DataSyncClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_datasync.client import DataSyncClient
+
+def get_client() -> DataSyncClient:
+    return Session().cleint("datasync")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_task_execution](./client.md#cancel_task_execution)
-- [create_agent](./client.md#create_agent)
-- [create_location_efs](./client.md#create_location_efs)
-- [create_location_fsx_lustre](./client.md#create_location_fsx_lustre)
-- [create_location_fsx_windows](./client.md#create_location_fsx_windows)
-- [create_location_hdfs](./client.md#create_location_hdfs)
-- [create_location_nfs](./client.md#create_location_nfs)
-- [create_location_object_storage](./client.md#create_location_object_storage)
-- [create_location_s3](./client.md#create_location_s3)
-- [create_location_smb](./client.md#create_location_smb)
-- [create_task](./client.md#create_task)
-- [delete_agent](./client.md#delete_agent)
-- [delete_location](./client.md#delete_location)
-- [delete_task](./client.md#delete_task)
-- [describe_agent](./client.md#describe_agent)
-- [describe_location_efs](./client.md#describe_location_efs)
-- [describe_location_fsx_lustre](./client.md#describe_location_fsx_lustre)
-- [describe_location_fsx_windows](./client.md#describe_location_fsx_windows)
-- [describe_location_hdfs](./client.md#describe_location_hdfs)
-- [describe_location_nfs](./client.md#describe_location_nfs)
-- [describe_location_object_storage](./client.md#describe_location_object_storage)
-- [describe_location_s3](./client.md#describe_location_s3)
-- [describe_location_smb](./client.md#describe_location_smb)
-- [describe_task](./client.md#describe_task)
-- [describe_task_execution](./client.md#describe_task_execution)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_agents](./client.md#list_agents)
-- [list_locations](./client.md#list_locations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_task_executions](./client.md#list_task_executions)
-- [list_tasks](./client.md#list_tasks)
-- [start_task_execution](./client.md#start_task_execution)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_agent](./client.md#update_agent)
-- [update_location_hdfs](./client.md#update_location_hdfs)
-- [update_location_nfs](./client.md#update_location_nfs)
-- [update_location_object_storage](./client.md#update_location_object_storage)
-- [update_location_smb](./client.md#update_location_smb)
-- [update_task](./client.md#update_task)
-- [update_task_execution](./client.md#update_task_execution)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DataSyncClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InternalException
-- InvalidRequestException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("datasync").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("datasync").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_datasync.paginator import ListAgentsPaginator, ...
+from mypy_boto3_datasync.paginator import ListAgentsPaginator
+
+def get_list_agents_paginator() -> ListAgentsPaginator:
+    return Session().client("datasync").get_paginator("list_agents"))
 ```
 
 - [ListAgentsPaginator](./paginators.md#listagentspaginator)
@@ -161,16 +81,23 @@ from mypy_boto3_datasync.paginator import ListAgentsPaginator, ...
 - [ListTaskExecutionsPaginator](./paginators.md#listtaskexecutionspaginator)
 - [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_datasync.literals import AgentStatusType
 
-```python
-from mypy_boto3_datasync.literals import AgentStatusType, ...
+def get_value() -> AgentStatusType:
+    return "OFFLINE"
 ```
 
 - [AgentStatusType](./literals.md#agentstatustype)
@@ -211,18 +138,22 @@ from mypy_boto3_datasync.literals import AgentStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_datasync.type_defs import AgentListEntryTypeDef
 
-```python
-from mypy_boto3_datasync.type_defs import AgentListEntryTypeDef, ...
+def get_value() -> AgentListEntryTypeDef:
+    return {
+        "AgentArn": ...,
+    }
 ```
 
 - [AgentListEntryTypeDef](./type_defs.md#agentlistentrytypedef)
@@ -275,14 +206,19 @@ from mypy_boto3_datasync.type_defs import AgentListEntryTypeDef, ...
 - [Ec2ConfigTypeDef](./type_defs.md#ec2configtypedef)
 - [FilterRuleTypeDef](./type_defs.md#filterruletypedef)
 - [HdfsNameNodeTypeDef](./type_defs.md#hdfsnamenodetypedef)
+- [ListAgentsRequestListAgentsPaginateTypeDef](./type_defs.md#listagentsrequestlistagentspaginatetypedef)
 - [ListAgentsRequestRequestTypeDef](./type_defs.md#listagentsrequestrequesttypedef)
 - [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef)
+- [ListLocationsRequestListLocationsPaginateTypeDef](./type_defs.md#listlocationsrequestlistlocationspaginatetypedef)
 - [ListLocationsRequestRequestTypeDef](./type_defs.md#listlocationsrequestrequesttypedef)
 - [ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTaskExecutionsRequestListTaskExecutionsPaginateTypeDef](./type_defs.md#listtaskexecutionsrequestlisttaskexecutionspaginatetypedef)
 - [ListTaskExecutionsRequestRequestTypeDef](./type_defs.md#listtaskexecutionsrequestrequesttypedef)
 - [ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef)
+- [ListTasksRequestListTasksPaginateTypeDef](./type_defs.md#listtasksrequestlisttaskspaginatetypedef)
 - [ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef)
 - [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)
 - [LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)
@@ -313,3 +249,4 @@ from mypy_boto3_datasync.type_defs import AgentListEntryTypeDef, ...
 - [UpdateLocationSmbRequestRequestTypeDef](./type_defs.md#updatelocationsmbrequestrequesttypedef)
 - [UpdateTaskExecutionRequestRequestTypeDef](./type_defs.md#updatetaskexecutionrequestrequesttypedef)
 - [UpdateTaskRequestRequestTypeDef](./type_defs.md#updatetaskrequestrequesttypedef)
+

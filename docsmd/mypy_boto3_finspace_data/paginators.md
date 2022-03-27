@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-finspacedata-module"></a>
-
-# Paginators for boto3 FinSpaceData module
+# Paginators
 
 > [Index](../README.md) > [FinSpaceData](./README.md) > Paginators
 
-Auto-generated documentation for
-[FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
-type annotations stubs module
-[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
+!!! note ""
 
-- [Paginators for boto3 FinSpaceData module](#paginators-for-boto3-finspacedata-module)
-  - [ListChangesetsPaginator](#listchangesetspaginator)
-  - [ListDataViewsPaginator](#listdataviewspaginator)
-  - [ListDatasetsPaginator](#listdatasetspaginator)
-  - [ListPermissionGroupsPaginator](#listpermissiongroupspaginator)
-  - [ListUsersPaginator](#listuserspaginator)
-
-<a id="listchangesetspaginator"></a>
+    Auto-generated documentation for [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+    type annotations stubs module [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ## ListChangesetsPaginator
 
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_changesets")`.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator("list_changesets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListChangesets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
@@ -34,28 +21,40 @@ def get_list_changesets_paginator() -> ListChangesetsPaginator:
     return Session().client("finspace-data").get_paginator("list_changesets")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Paginator.ListChangesets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListChangesets)
 
-Arguments for `ListChangesetsPaginator.paginate` method:
+### paginate
 
-- `datasetId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListChangesetsPaginator.paginate` method.
 
-`ListChangesetsPaginator.paginate` returns
-`_PageIterator`\[[ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    datasetId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListChangesetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdataviewspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListChangesetsRequestListChangesetsPaginateTypeDef = {  # (1)
+    "datasetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListChangesetsRequestListChangesetsPaginateTypeDef](./type_defs.md#listchangesetsrequestlistchangesetspaginatetypedef) 
 ## ListDataViewsPaginator
 
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_data_views")`.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator("list_data_views")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListDataViews)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_finspace_data.paginator import ListDataViewsPaginator
@@ -64,28 +63,40 @@ def get_list_data_views_paginator() -> ListDataViewsPaginator:
     return Session().client("finspace-data").get_paginator("list_data_views")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Paginator.ListDataViews](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListDataViews)
 
-Arguments for `ListDataViewsPaginator.paginate` method:
+### paginate
 
-- `datasetId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataViewsPaginator.paginate` method.
 
-`ListDataViewsPaginator.paginate` returns
-`_PageIterator`\[[ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    datasetId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataViewsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatasetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataViewsRequestListDataViewsPaginateTypeDef = {  # (1)
+    "datasetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataViewsRequestListDataViewsPaginateTypeDef](./type_defs.md#listdataviewsrequestlistdataviewspaginatetypedef) 
 ## ListDatasetsPaginator
 
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_datasets")`.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator("list_datasets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListDatasets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_finspace_data.paginator import ListDatasetsPaginator
@@ -94,27 +105,39 @@ def get_list_datasets_paginator() -> ListDatasetsPaginator:
     return Session().client("finspace-data").get_paginator("list_datasets")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Paginator.ListDatasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListDatasets)
 
-Arguments for `ListDatasetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatasetsPaginator.paginate` method.
 
-`ListDatasetsPaginator.paginate` returns
-`_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatasetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpermissiongroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestListDatasetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatasetsRequestListDatasetsPaginateTypeDef](./type_defs.md#listdatasetsrequestlistdatasetspaginatetypedef) 
 ## ListPermissionGroupsPaginator
 
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_permission_groups")`.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator("list_permission_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListPermissionGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_finspace_data.paginator import ListPermissionGroupsPaginator
@@ -123,27 +146,39 @@ def get_list_permission_groups_paginator() -> ListPermissionGroupsPaginator:
     return Session().client("finspace-data").get_paginator("list_permission_groups")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Paginator.ListPermissionGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListPermissionGroups)
 
-Arguments for `ListPermissionGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPermissionGroupsPaginator.paginate` method.
 
-`ListPermissionGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPermissionGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPermissionGroupsRequestListPermissionGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPermissionGroupsRequestListPermissionGroupsPaginateTypeDef](./type_defs.md#listpermissiongroupsrequestlistpermissiongroupspaginatetypedef) 
 ## ListUsersPaginator
 
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_users")`.
+Type annotations and code completion for `#!python boto3.client("finspace-data").get_paginator("list_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_finspace_data.paginator import ListUsersPaginator
@@ -152,13 +187,30 @@ def get_list_users_paginator() -> ListUsersPaginator:
     return Session().client("finspace-data").get_paginator("list_users")
 ```
 
-Boto3 documentation:
-[FinSpaceData.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListUsers)
 
-Arguments for `ListUsersPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListUsersPaginator.paginate` method.
 
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListUsersResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListUsersRequestListUsersPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef) 

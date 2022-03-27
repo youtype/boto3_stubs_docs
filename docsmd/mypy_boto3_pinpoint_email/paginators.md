@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-pinpointemail-module"></a>
-
-# Paginators for boto3 PinpointEmail module
+# Paginators
 
 > [Index](../README.md) > [PinpointEmail](./README.md) > Paginators
 
-Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module
-[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+!!! note ""
 
-- [Paginators for boto3 PinpointEmail module](#paginators-for-boto3-pinpointemail-module)
-  - [GetDedicatedIpsPaginator](#getdedicatedipspaginator)
-  - [ListConfigurationSetsPaginator](#listconfigurationsetspaginator)
-  - [ListDedicatedIpPoolsPaginator](#listdedicatedippoolspaginator)
-  - [ListDeliverabilityTestReportsPaginator](#listdeliverabilitytestreportspaginator)
-  - [ListEmailIdentitiesPaginator](#listemailidentitiespaginator)
-
-<a id="getdedicatedipspaginator"></a>
+    Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+    type annotations stubs module [mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ## GetDedicatedIpsPaginator
 
-Type annotations for
-`boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")`.
+Type annotations and code completion for `#!python boto3.client("pinpoint-email").get_paginator("get_dedicated_ips")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator
@@ -34,28 +21,40 @@ def get_get_dedicated_ips_paginator() -> GetDedicatedIpsPaginator:
     return Session().client("pinpoint-email").get_paginator("get_dedicated_ips")
 ```
 
-Boto3 documentation:
-[PinpointEmail.Paginator.GetDedicatedIps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.GetDedicatedIps)
 
-Arguments for `GetDedicatedIpsPaginator.paginate` method:
+### paginate
 
-- `PoolName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetDedicatedIpsPaginator.paginate` method.
 
-`GetDedicatedIpsPaginator.paginate` returns
-`_PageIterator`\[[GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetDedicatedIpsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listconfigurationsetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef = {  # (1)
+    "PoolName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef](./type_defs.md#getdedicatedipsrequestgetdedicatedipspaginatetypedef) 
 ## ListConfigurationSetsPaginator
 
-Type annotations for
-`boto3.client("pinpoint-email").get_paginator("list_configuration_sets")`.
+Type annotations and code completion for `#!python boto3.client("pinpoint-email").get_paginator("list_configuration_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_pinpoint_email.paginator import ListConfigurationSetsPaginator
@@ -64,27 +63,39 @@ def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
     return Session().client("pinpoint-email").get_paginator("list_configuration_sets")
 ```
 
-Boto3 documentation:
-[PinpointEmail.Paginator.ListConfigurationSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListConfigurationSets)
 
-Arguments for `ListConfigurationSetsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListConfigurationSetsPaginator.paginate` method.
 
-`ListConfigurationSetsPaginator.paginate` returns
-`_PageIterator`\[[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListConfigurationSetsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdedicatedippoolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef](./type_defs.md#listconfigurationsetsrequestlistconfigurationsetspaginatetypedef) 
 ## ListDedicatedIpPoolsPaginator
 
-Type annotations for
-`boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")`.
+Type annotations and code completion for `#!python boto3.client("pinpoint-email").get_paginator("list_dedicated_ip_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_pinpoint_email.paginator import ListDedicatedIpPoolsPaginator
@@ -93,27 +104,39 @@ def get_list_dedicated_ip_pools_paginator() -> ListDedicatedIpPoolsPaginator:
     return Session().client("pinpoint-email").get_paginator("list_dedicated_ip_pools")
 ```
 
-Boto3 documentation:
-[PinpointEmail.Paginator.ListDedicatedIpPools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDedicatedIpPools)
 
-Arguments for `ListDedicatedIpPoolsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDedicatedIpPoolsPaginator.paginate` method.
 
-`ListDedicatedIpPoolsPaginator.paginate` returns
-`_PageIterator`\[[ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDedicatedIpPoolsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdeliverabilitytestreportspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef](./type_defs.md#listdedicatedippoolsrequestlistdedicatedippoolspaginatetypedef) 
 ## ListDeliverabilityTestReportsPaginator
 
-Type annotations for
-`boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")`.
+Type annotations and code completion for `#!python boto3.client("pinpoint-email").get_paginator("list_deliverability_test_reports")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_pinpoint_email.paginator import ListDeliverabilityTestReportsPaginator
@@ -122,27 +145,39 @@ def get_list_deliverability_test_reports_paginator() -> ListDeliverabilityTestRe
     return Session().client("pinpoint-email").get_paginator("list_deliverability_test_reports")
 ```
 
-Boto3 documentation:
-[PinpointEmail.Paginator.ListDeliverabilityTestReports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListDeliverabilityTestReports)
 
-Arguments for `ListDeliverabilityTestReportsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeliverabilityTestReportsPaginator.paginate` method.
 
-`ListDeliverabilityTestReportsPaginator.paginate` returns
-`_PageIterator`\[[ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeliverabilityTestReportsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listemailidentitiespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestlistdeliverabilitytestreportspaginatetypedef) 
 ## ListEmailIdentitiesPaginator
 
-Type annotations for
-`boto3.client("pinpoint-email").get_paginator("list_email_identities")`.
+Type annotations and code completion for `#!python boto3.client("pinpoint-email").get_paginator("list_email_identities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_pinpoint_email.paginator import ListEmailIdentitiesPaginator
@@ -151,13 +186,30 @@ def get_list_email_identities_paginator() -> ListEmailIdentitiesPaginator:
     return Session().client("pinpoint-email").get_paginator("list_email_identities")
 ```
 
-Boto3 documentation:
-[PinpointEmail.Paginator.ListEmailIdentities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Paginator.ListEmailIdentities)
 
-Arguments for `ListEmailIdentitiesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEmailIdentitiesPaginator.paginate` method.
 
-`ListEmailIdentitiesPaginator.paginate` returns
-`_PageIterator`\[[ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEmailIdentitiesResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef](./type_defs.md#listemailidentitiesrequestlistemailidentitiespaginatetypedef) 

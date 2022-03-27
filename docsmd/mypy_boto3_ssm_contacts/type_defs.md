@@ -1,964 +1,1294 @@
-<a id="typed-dictionaries-for-boto3-ssmcontacts-module"></a>
-
-# Typed dictionaries for boto3 SSMContacts module
+# Typed dictionaries
 
 > [Index](../README.md) > [SSMContacts](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
-type annotations stubs module
-[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SSMContacts module](#typed-dictionaries-for-boto3-ssmcontacts-module)
-  - [AcceptPageRequestRequestTypeDef](#acceptpagerequestrequesttypedef)
-  - [ActivateContactChannelRequestRequestTypeDef](#activatecontactchannelrequestrequesttypedef)
-  - [ChannelTargetInfoTypeDef](#channeltargetinfotypedef)
-  - [ContactChannelAddressTypeDef](#contactchanneladdresstypedef)
-  - [ContactChannelTypeDef](#contactchanneltypedef)
-  - [ContactTargetInfoTypeDef](#contacttargetinfotypedef)
-  - [ContactTypeDef](#contacttypedef)
-  - [CreateContactChannelRequestRequestTypeDef](#createcontactchannelrequestrequesttypedef)
-  - [CreateContactChannelResultTypeDef](#createcontactchannelresulttypedef)
-  - [CreateContactRequestRequestTypeDef](#createcontactrequestrequesttypedef)
-  - [CreateContactResultTypeDef](#createcontactresulttypedef)
-  - [DeactivateContactChannelRequestRequestTypeDef](#deactivatecontactchannelrequestrequesttypedef)
-  - [DeleteContactChannelRequestRequestTypeDef](#deletecontactchannelrequestrequesttypedef)
-  - [DeleteContactRequestRequestTypeDef](#deletecontactrequestrequesttypedef)
-  - [DescribeEngagementRequestRequestTypeDef](#describeengagementrequestrequesttypedef)
-  - [DescribeEngagementResultTypeDef](#describeengagementresulttypedef)
-  - [DescribePageRequestRequestTypeDef](#describepagerequestrequesttypedef)
-  - [DescribePageResultTypeDef](#describepageresulttypedef)
-  - [EngagementTypeDef](#engagementtypedef)
-  - [GetContactChannelRequestRequestTypeDef](#getcontactchannelrequestrequesttypedef)
-  - [GetContactChannelResultTypeDef](#getcontactchannelresulttypedef)
-  - [GetContactPolicyRequestRequestTypeDef](#getcontactpolicyrequestrequesttypedef)
-  - [GetContactPolicyResultTypeDef](#getcontactpolicyresulttypedef)
-  - [GetContactRequestRequestTypeDef](#getcontactrequestrequesttypedef)
-  - [GetContactResultTypeDef](#getcontactresulttypedef)
-  - [ListContactChannelsRequestRequestTypeDef](#listcontactchannelsrequestrequesttypedef)
-  - [ListContactChannelsResultTypeDef](#listcontactchannelsresulttypedef)
-  - [ListContactsRequestRequestTypeDef](#listcontactsrequestrequesttypedef)
-  - [ListContactsResultTypeDef](#listcontactsresulttypedef)
-  - [ListEngagementsRequestRequestTypeDef](#listengagementsrequestrequesttypedef)
-  - [ListEngagementsResultTypeDef](#listengagementsresulttypedef)
-  - [ListPageReceiptsRequestRequestTypeDef](#listpagereceiptsrequestrequesttypedef)
-  - [ListPageReceiptsResultTypeDef](#listpagereceiptsresulttypedef)
-  - [ListPagesByContactRequestRequestTypeDef](#listpagesbycontactrequestrequesttypedef)
-  - [ListPagesByContactResultTypeDef](#listpagesbycontactresulttypedef)
-  - [ListPagesByEngagementRequestRequestTypeDef](#listpagesbyengagementrequestrequesttypedef)
-  - [ListPagesByEngagementResultTypeDef](#listpagesbyengagementresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [PageTypeDef](#pagetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlanTypeDef](#plantypedef)
-  - [PutContactPolicyRequestRequestTypeDef](#putcontactpolicyrequestrequesttypedef)
-  - [ReceiptTypeDef](#receipttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendActivationCodeRequestRequestTypeDef](#sendactivationcoderequestrequesttypedef)
-  - [StageTypeDef](#stagetypedef)
-  - [StartEngagementRequestRequestTypeDef](#startengagementrequestrequesttypedef)
-  - [StartEngagementResultTypeDef](#startengagementresulttypedef)
-  - [StopEngagementRequestRequestTypeDef](#stopengagementrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetTypeDef](#targettypedef)
-  - [TimeRangeTypeDef](#timerangetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateContactChannelRequestRequestTypeDef](#updatecontactchannelrequestrequesttypedef)
-  - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
-
-<a id="acceptpagerequestrequesttypedef"></a>
+    Auto-generated documentation for [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
+    type annotations stubs module [mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 ## AcceptPageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import AcceptPageRequestRequestTypeDef
+
+def get_value() -> AcceptPageRequestRequestTypeDef:
+    return {
+        "PageId": ...,
+        "AcceptType": ...,
+        "AcceptCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptPageRequestRequestTypeDef(TypedDict):
+    PageId: str,
+    AcceptType: AcceptTypeType,  # (1)
+    AcceptCode: str,
+    ContactChannelId: NotRequired[str],
+    Note: NotRequired[str],
+    AcceptCodeValidation: NotRequired[AcceptCodeValidationType],  # (2)
+```
 
-- `PageId`: `str`
-- `AcceptType`: [AcceptTypeType](./literals.md#accepttypetype)
-- `AcceptCode`: `str`
-
-Optional fields:
-
-- `ContactChannelId`: `str`
-- `Note`: `str`
-- `AcceptCodeValidation`:
-  [AcceptCodeValidationType](./literals.md#acceptcodevalidationtype)
-
-<a id="activatecontactchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AcceptTypeType](./literals.md#accepttypetype) 
+2. See [:material-code-brackets: AcceptCodeValidationType](./literals.md#acceptcodevalidationtype) 
 ## ActivateContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ActivateContactChannelRequestRequestTypeDef
+
+def get_value() -> ActivateContactChannelRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+        "ActivationCode": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-- `ActivationCode`: `str`
-
-<a id="channeltargetinfotypedef"></a>
+```python title="Definition"
+class ActivateContactChannelRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+    ActivationCode: str,
+```
 
 ## ChannelTargetInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ChannelTargetInfoTypeDef
+
+def get_value() -> ChannelTargetInfoTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-
-Optional fields:
-
-- `RetryIntervalInMinutes`: `int`
-
-<a id="contactchanneladdresstypedef"></a>
+```python title="Definition"
+class ChannelTargetInfoTypeDef(TypedDict):
+    ContactChannelId: str,
+    RetryIntervalInMinutes: NotRequired[int],
+```
 
 ## ContactChannelAddressTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ContactChannelAddressTypeDef
+
+def get_value() -> ContactChannelAddressTypeDef:
+    return {
+        "SimpleAddress": ...,
+    }
 ```
 
-Optional fields:
-
-- `SimpleAddress`: `str`
-
-<a id="contactchanneltypedef"></a>
+```python title="Definition"
+class ContactChannelAddressTypeDef(TypedDict):
+    SimpleAddress: NotRequired[str],
+```
 
 ## ContactChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ContactChannelTypeDef
+
+def get_value() -> ContactChannelTypeDef:
+    return {
+        "ContactChannelArn": ...,
+        "ContactArn": ...,
+        "Name": ...,
+        "DeliveryAddress": ...,
+        "ActivationStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContactChannelTypeDef(TypedDict):
+    ContactChannelArn: str,
+    ContactArn: str,
+    Name: str,
+    DeliveryAddress: ContactChannelAddressTypeDef,  # (2)
+    ActivationStatus: ActivationStatusType,  # (3)
+    Type: NotRequired[ChannelTypeType],  # (1)
+```
 
-- `ContactChannelArn`: `str`
-- `ContactArn`: `str`
-- `Name`: `str`
-- `DeliveryAddress`:
-  [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
-- `ActivationStatus`:
-  [ActivationStatusType](./literals.md#activationstatustype)
-
-Optional fields:
-
-- `Type`: [ChannelTypeType](./literals.md#channeltypetype)
-
-<a id="contacttargetinfotypedef"></a>
-
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-braces: ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef) 
+3. See [:material-code-brackets: ActivationStatusType](./literals.md#activationstatustype) 
 ## ContactTargetInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ContactTargetInfoTypeDef
+
+def get_value() -> ContactTargetInfoTypeDef:
+    return {
+        "IsEssential": ...,
+    }
 ```
 
-Required fields:
-
-- `IsEssential`: `bool`
-
-Optional fields:
-
-- `ContactId`: `str`
-
-<a id="contacttypedef"></a>
+```python title="Definition"
+class ContactTargetInfoTypeDef(TypedDict):
+    IsEssential: bool,
+    ContactId: NotRequired[str],
+```
 
 ## ContactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ContactTypeDef
+
+def get_value() -> ContactTypeDef:
+    return {
+        "ContactArn": ...,
+        "Alias": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContactTypeDef(TypedDict):
+    ContactArn: str,
+    Alias: str,
+    Type: ContactTypeType,  # (1)
+    DisplayName: NotRequired[str],
+```
 
-- `ContactArn`: `str`
-- `Alias`: `str`
-- `Type`: [ContactTypeType](./literals.md#contacttypetype)
-
-Optional fields:
-
-- `DisplayName`: `str`
-
-<a id="createcontactchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
 ## CreateContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelRequestRequestTypeDef
+
+def get_value() -> CreateContactChannelRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+        "Name": ...,
+        "Type": ...,
+        "DeliveryAddress": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactChannelRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    Name: str,
+    Type: ChannelTypeType,  # (1)
+    DeliveryAddress: ContactChannelAddressTypeDef,  # (2)
+    DeferActivation: NotRequired[bool],
+    IdempotencyToken: NotRequired[str],
+```
 
-- `ContactId`: `str`
-- `Name`: `str`
-- `Type`: [ChannelTypeType](./literals.md#channeltypetype)
-- `DeliveryAddress`:
-  [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
-
-Optional fields:
-
-- `DeferActivation`: `bool`
-- `IdempotencyToken`: `str`
-
-<a id="createcontactchannelresulttypedef"></a>
-
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-braces: ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef) 
 ## CreateContactChannelResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import CreateContactChannelResultTypeDef
+
+def get_value() -> CreateContactChannelResultTypeDef:
+    return {
+        "ContactChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactChannelResultTypeDef(TypedDict):
+    ContactChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactChannelArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import CreateContactRequestRequestTypeDef
+
+def get_value() -> CreateContactRequestRequestTypeDef:
+    return {
+        "Alias": ...,
+        "Type": ...,
+        "Plan": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactRequestRequestTypeDef(TypedDict):
+    Alias: str,
+    Type: ContactTypeType,  # (1)
+    Plan: PlanTypeDef,  # (2)
+    DisplayName: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    IdempotencyToken: NotRequired[str],
+```
 
-- `Alias`: `str`
-- `Type`: [ContactTypeType](./literals.md#contacttypetype)
-- `Plan`: [PlanTypeDef](./type_defs.md#plantypedef)
-
-Optional fields:
-
-- `DisplayName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `IdempotencyToken`: `str`
-
-<a id="createcontactresulttypedef"></a>
-
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
+2. See [:material-code-braces: PlanTypeDef](./type_defs.md#plantypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateContactResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import CreateContactResultTypeDef
+
+def get_value() -> CreateContactResultTypeDef:
+    return {
+        "ContactArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactResultTypeDef(TypedDict):
+    ContactArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deactivatecontactchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeactivateContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DeactivateContactChannelRequestRequestTypeDef
+
+def get_value() -> DeactivateContactChannelRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-
-<a id="deletecontactchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeactivateContactChannelRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+```
 
 ## DeleteContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DeleteContactChannelRequestRequestTypeDef
+
+def get_value() -> DeleteContactChannelRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-
-<a id="deletecontactrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContactChannelRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+```
 
 ## DeleteContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DeleteContactRequestRequestTypeDef
+
+def get_value() -> DeleteContactRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-
-<a id="describeengagementrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContactRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+```
 
 ## DescribeEngagementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementRequestRequestTypeDef
+
+def get_value() -> DescribeEngagementRequestRequestTypeDef:
+    return {
+        "EngagementId": ...,
+    }
 ```
 
-Required fields:
-
-- `EngagementId`: `str`
-
-<a id="describeengagementresulttypedef"></a>
+```python title="Definition"
+class DescribeEngagementRequestRequestTypeDef(TypedDict):
+    EngagementId: str,
+```
 
 ## DescribeEngagementResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DescribeEngagementResultTypeDef
+
+def get_value() -> DescribeEngagementResultTypeDef:
+    return {
+        "ContactArn": ...,
+        "EngagementArn": ...,
+        "Sender": ...,
+        "Subject": ...,
+        "Content": ...,
+        "PublicSubject": ...,
+        "PublicContent": ...,
+        "IncidentId": ...,
+        "StartTime": ...,
+        "StopTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEngagementResultTypeDef(TypedDict):
+    ContactArn: str,
+    EngagementArn: str,
+    Sender: str,
+    Subject: str,
+    Content: str,
+    PublicSubject: str,
+    PublicContent: str,
+    IncidentId: str,
+    StartTime: datetime,
+    StopTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactArn`: `str`
-- `EngagementArn`: `str`
-- `Sender`: `str`
-- `Subject`: `str`
-- `Content`: `str`
-- `PublicSubject`: `str`
-- `PublicContent`: `str`
-- `IncidentId`: `str`
-- `StartTime`: `datetime`
-- `StopTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describepagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribePageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DescribePageRequestRequestTypeDef
+
+def get_value() -> DescribePageRequestRequestTypeDef:
+    return {
+        "PageId": ...,
+    }
 ```
 
-Required fields:
-
-- `PageId`: `str`
-
-<a id="describepageresulttypedef"></a>
+```python title="Definition"
+class DescribePageRequestRequestTypeDef(TypedDict):
+    PageId: str,
+```
 
 ## DescribePageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import DescribePageResultTypeDef
+
+def get_value() -> DescribePageResultTypeDef:
+    return {
+        "PageArn": ...,
+        "EngagementArn": ...,
+        "ContactArn": ...,
+        "Sender": ...,
+        "Subject": ...,
+        "Content": ...,
+        "PublicSubject": ...,
+        "PublicContent": ...,
+        "IncidentId": ...,
+        "SentTime": ...,
+        "ReadTime": ...,
+        "DeliveryTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribePageResultTypeDef(TypedDict):
+    PageArn: str,
+    EngagementArn: str,
+    ContactArn: str,
+    Sender: str,
+    Subject: str,
+    Content: str,
+    PublicSubject: str,
+    PublicContent: str,
+    IncidentId: str,
+    SentTime: datetime,
+    ReadTime: datetime,
+    DeliveryTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PageArn`: `str`
-- `EngagementArn`: `str`
-- `ContactArn`: `str`
-- `Sender`: `str`
-- `Subject`: `str`
-- `Content`: `str`
-- `PublicSubject`: `str`
-- `PublicContent`: `str`
-- `IncidentId`: `str`
-- `SentTime`: `datetime`
-- `ReadTime`: `datetime`
-- `DeliveryTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="engagementtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EngagementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import EngagementTypeDef
+
+def get_value() -> EngagementTypeDef:
+    return {
+        "EngagementArn": ...,
+        "ContactArn": ...,
+        "Sender": ...,
+    }
 ```
 
-Required fields:
-
-- `EngagementArn`: `str`
-- `ContactArn`: `str`
-- `Sender`: `str`
-
-Optional fields:
-
-- `IncidentId`: `str`
-- `StartTime`: `datetime`
-- `StopTime`: `datetime`
-
-<a id="getcontactchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class EngagementTypeDef(TypedDict):
+    EngagementArn: str,
+    ContactArn: str,
+    Sender: str,
+    IncidentId: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    StopTime: NotRequired[datetime],
+```
 
 ## GetContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactChannelRequestRequestTypeDef
+
+def get_value() -> GetContactChannelRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-
-<a id="getcontactchannelresulttypedef"></a>
+```python title="Definition"
+class GetContactChannelRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+```
 
 ## GetContactChannelResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactChannelResultTypeDef
+
+def get_value() -> GetContactChannelResultTypeDef:
+    return {
+        "ContactArn": ...,
+        "ContactChannelArn": ...,
+        "Name": ...,
+        "Type": ...,
+        "DeliveryAddress": ...,
+        "ActivationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactChannelResultTypeDef(TypedDict):
+    ContactArn: str,
+    ContactChannelArn: str,
+    Name: str,
+    Type: ChannelTypeType,  # (1)
+    DeliveryAddress: ContactChannelAddressTypeDef,  # (2)
+    ActivationStatus: ActivationStatusType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ContactArn`: `str`
-- `ContactChannelArn`: `str`
-- `Name`: `str`
-- `Type`: [ChannelTypeType](./literals.md#channeltypetype)
-- `DeliveryAddress`:
-  [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
-- `ActivationStatus`:
-  [ActivationStatusType](./literals.md#activationstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontactpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelTypeType](./literals.md#channeltypetype) 
+2. See [:material-code-braces: ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef) 
+3. See [:material-code-brackets: ActivationStatusType](./literals.md#activationstatustype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContactPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyRequestRequestTypeDef
+
+def get_value() -> GetContactPolicyRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-
-<a id="getcontactpolicyresulttypedef"></a>
+```python title="Definition"
+class GetContactPolicyRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+```
 
 ## GetContactPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactPolicyResultTypeDef
+
+def get_value() -> GetContactPolicyResultTypeDef:
+    return {
+        "ContactArn": ...,
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactPolicyResultTypeDef(TypedDict):
+    ContactArn: str,
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactArn`: `str`
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactRequestRequestTypeDef
+
+def get_value() -> GetContactRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-
-<a id="getcontactresulttypedef"></a>
+```python title="Definition"
+class GetContactRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+```
 
 ## GetContactResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import GetContactResultTypeDef
+
+def get_value() -> GetContactResultTypeDef:
+    return {
+        "ContactArn": ...,
+        "Alias": ...,
+        "DisplayName": ...,
+        "Type": ...,
+        "Plan": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactResultTypeDef(TypedDict):
+    ContactArn: str,
+    Alias: str,
+    DisplayName: str,
+    Type: ContactTypeType,  # (1)
+    Plan: PlanTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ContactArn`: `str`
-- `Alias`: `str`
-- `DisplayName`: `str`
-- `Type`: [ContactTypeType](./literals.md#contacttypetype)
-- `Plan`: [PlanTypeDef](./type_defs.md#plantypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
+2. See [:material-code-braces: PlanTypeDef](./type_defs.md#plantypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactChannelsRequestListContactChannelsPaginateTypeDef
 
-<a id="listcontactchannelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsRequestListContactChannelsPaginateTypeDef
 
+def get_value() -> ListContactChannelsRequestListContactChannelsPaginateTypeDef:
+    return {
+        "ContactId": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactChannelsRequestListContactChannelsPaginateTypeDef(TypedDict):
+    ContactId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContactChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsRequestRequestTypeDef
+
+def get_value() -> ListContactChannelsRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcontactchannelsresulttypedef"></a>
+```python title="Definition"
+class ListContactChannelsRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListContactChannelsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListContactChannelsResultTypeDef
+
+def get_value() -> ListContactChannelsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "ContactChannels": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactChannelsResultTypeDef(TypedDict):
+    NextToken: str,
+    ContactChannels: List[ContactChannelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `ContactChannels`:
-  `List`\[[ContactChannelTypeDef](./type_defs.md#contactchanneltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContactChannelTypeDef](./type_defs.md#contactchanneltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactsRequestListContactsPaginateTypeDef
 
-<a id="listcontactsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListContactsRequestListContactsPaginateTypeDef
 
+def get_value() -> ListContactsRequestListContactsPaginateTypeDef:
+    return {
+        "AliasPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactsRequestListContactsPaginateTypeDef(TypedDict):
+    AliasPrefix: NotRequired[str],
+    Type: NotRequired[ContactTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListContactsRequestRequestTypeDef
+
+def get_value() -> ListContactsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListContactsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    AliasPrefix: NotRequired[str],
+    Type: NotRequired[ContactTypeType],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `AliasPrefix`: `str`
-- `Type`: [ContactTypeType](./literals.md#contacttypetype)
-
-<a id="listcontactsresulttypedef"></a>
-
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
 ## ListContactsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListContactsResultTypeDef
+
+def get_value() -> ListContactsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Contacts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactsResultTypeDef(TypedDict):
+    NextToken: str,
+    Contacts: List[ContactTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Contacts`: `List`\[[ContactTypeDef](./type_defs.md#contacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEngagementsRequestListEngagementsPaginateTypeDef
 
-<a id="listengagementsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListEngagementsRequestListEngagementsPaginateTypeDef
 
+def get_value() -> ListEngagementsRequestListEngagementsPaginateTypeDef:
+    return {
+        "IncidentId": ...,
+    }
+```
+
+```python title="Definition"
+class ListEngagementsRequestListEngagementsPaginateTypeDef(TypedDict):
+    IncidentId: NotRequired[str],
+    TimeRangeValue: NotRequired[TimeRangeTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEngagementsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListEngagementsRequestRequestTypeDef
+
+def get_value() -> ListEngagementsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListEngagementsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    IncidentId: NotRequired[str],
+    TimeRangeValue: NotRequired[TimeRangeTypeDef],  # (1)
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `IncidentId`: `str`
-- `TimeRangeValue`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-
-<a id="listengagementsresulttypedef"></a>
-
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 ## ListEngagementsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListEngagementsResultTypeDef
+
+def get_value() -> ListEngagementsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Engagements": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEngagementsResultTypeDef(TypedDict):
+    NextToken: str,
+    Engagements: List[EngagementTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Engagements`:
-  `List`\[[EngagementTypeDef](./type_defs.md#engagementtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EngagementTypeDef](./type_defs.md#engagementtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPageReceiptsRequestListPageReceiptsPaginateTypeDef
 
-<a id="listpagereceiptsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsRequestListPageReceiptsPaginateTypeDef
 
+def get_value() -> ListPageReceiptsRequestListPageReceiptsPaginateTypeDef:
+    return {
+        "PageId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPageReceiptsRequestListPageReceiptsPaginateTypeDef(TypedDict):
+    PageId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPageReceiptsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsRequestRequestTypeDef
+
+def get_value() -> ListPageReceiptsRequestRequestTypeDef:
+    return {
+        "PageId": ...,
+    }
 ```
 
-Required fields:
-
-- `PageId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpagereceiptsresulttypedef"></a>
+```python title="Definition"
+class ListPageReceiptsRequestRequestTypeDef(TypedDict):
+    PageId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPageReceiptsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPageReceiptsResultTypeDef
+
+def get_value() -> ListPageReceiptsResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Receipts": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPageReceiptsResultTypeDef(TypedDict):
+    NextToken: str,
+    Receipts: List[ReceiptTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Receipts`: `List`\[[ReceiptTypeDef](./type_defs.md#receipttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReceiptTypeDef](./type_defs.md#receipttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPagesByContactRequestListPagesByContactPaginateTypeDef
 
-<a id="listpagesbycontactrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactRequestListPagesByContactPaginateTypeDef
 
+def get_value() -> ListPagesByContactRequestListPagesByContactPaginateTypeDef:
+    return {
+        "ContactId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPagesByContactRequestListPagesByContactPaginateTypeDef(TypedDict):
+    ContactId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPagesByContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactRequestRequestTypeDef
+
+def get_value() -> ListPagesByContactRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpagesbycontactresulttypedef"></a>
+```python title="Definition"
+class ListPagesByContactRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPagesByContactResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPagesByContactResultTypeDef
+
+def get_value() -> ListPagesByContactResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Pages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPagesByContactResultTypeDef(TypedDict):
+    NextToken: str,
+    Pages: List[PageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPagesByEngagementRequestListPagesByEngagementPaginateTypeDef
 
-<a id="listpagesbyengagementrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementRequestListPagesByEngagementPaginateTypeDef
 
+def get_value() -> ListPagesByEngagementRequestListPagesByEngagementPaginateTypeDef:
+    return {
+        "EngagementId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPagesByEngagementRequestListPagesByEngagementPaginateTypeDef(TypedDict):
+    EngagementId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPagesByEngagementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementRequestRequestTypeDef
+
+def get_value() -> ListPagesByEngagementRequestRequestTypeDef:
+    return {
+        "EngagementId": ...,
+    }
 ```
 
-Required fields:
-
-- `EngagementId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpagesbyengagementresulttypedef"></a>
+```python title="Definition"
+class ListPagesByEngagementRequestRequestTypeDef(TypedDict):
+    EngagementId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPagesByEngagementResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListPagesByEngagementResultTypeDef
+
+def get_value() -> ListPagesByEngagementResultTypeDef:
+    return {
+        "NextToken": ...,
+        "Pages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPagesByEngagementResultTypeDef(TypedDict):
+    NextToken: str,
+    Pages: List[PageTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Pages`: `List`\[[PageTypeDef](./type_defs.md#pagetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PageTypeDef](./type_defs.md#pagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="pagetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import PageTypeDef
+
+def get_value() -> PageTypeDef:
+    return {
+        "PageArn": ...,
+        "EngagementArn": ...,
+        "ContactArn": ...,
+        "Sender": ...,
+    }
 ```
 
-Required fields:
-
-- `PageArn`: `str`
-- `EngagementArn`: `str`
-- `ContactArn`: `str`
-- `Sender`: `str`
-
-Optional fields:
-
-- `IncidentId`: `str`
-- `SentTime`: `datetime`
-- `DeliveryTime`: `datetime`
-- `ReadTime`: `datetime`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class PageTypeDef(TypedDict):
+    PageArn: str,
+    EngagementArn: str,
+    ContactArn: str,
+    Sender: str,
+    IncidentId: NotRequired[str],
+    SentTime: NotRequired[datetime],
+    DeliveryTime: NotRequired[datetime],
+    ReadTime: NotRequired[datetime],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="plantypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import PlanTypeDef
+
+def get_value() -> PlanTypeDef:
+    return {
+        "Stages": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PlanTypeDef(TypedDict):
+    Stages: Sequence[StageTypeDef],  # (1)
+```
 
-- `Stages`: `Sequence`\[[StageTypeDef](./type_defs.md#stagetypedef)\]
-
-<a id="putcontactpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: StageTypeDef](./type_defs.md#stagetypedef) 
 ## PutContactPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import PutContactPolicyRequestRequestTypeDef
+
+def get_value() -> PutContactPolicyRequestRequestTypeDef:
+    return {
+        "ContactArn": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactArn`: `str`
-- `Policy`: `str`
-
-<a id="receipttypedef"></a>
+```python title="Definition"
+class PutContactPolicyRequestRequestTypeDef(TypedDict):
+    ContactArn: str,
+    Policy: str,
+```
 
 ## ReceiptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ReceiptTypeDef
+
+def get_value() -> ReceiptTypeDef:
+    return {
+        "ReceiptType": ...,
+        "ReceiptTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReceiptTypeDef(TypedDict):
+    ReceiptType: ReceiptTypeType,  # (1)
+    ReceiptTime: datetime,
+    ContactChannelArn: NotRequired[str],
+    ReceiptInfo: NotRequired[str],
+```
 
-- `ReceiptType`: [ReceiptTypeType](./literals.md#receipttypetype)
-- `ReceiptTime`: `datetime`
-
-Optional fields:
-
-- `ContactChannelArn`: `str`
-- `ReceiptInfo`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ReceiptTypeType](./literals.md#receipttypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendactivationcoderequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendActivationCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import SendActivationCodeRequestRequestTypeDef
+
+def get_value() -> SendActivationCodeRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactChannelId`: `str`
-
-<a id="stagetypedef"></a>
+```python title="Definition"
+class SendActivationCodeRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+```
 
 ## StageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import StageTypeDef
+
+def get_value() -> StageTypeDef:
+    return {
+        "DurationInMinutes": ...,
+        "Targets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StageTypeDef(TypedDict):
+    DurationInMinutes: int,
+    Targets: Sequence[TargetTypeDef],  # (1)
+```
 
-- `DurationInMinutes`: `int`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-
-<a id="startengagementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## StartEngagementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import StartEngagementRequestRequestTypeDef
+
+def get_value() -> StartEngagementRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+        "Sender": ...,
+        "Subject": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-- `Sender`: `str`
-- `Subject`: `str`
-- `Content`: `str`
-
-Optional fields:
-
-- `PublicSubject`: `str`
-- `PublicContent`: `str`
-- `IncidentId`: `str`
-- `IdempotencyToken`: `str`
-
-<a id="startengagementresulttypedef"></a>
+```python title="Definition"
+class StartEngagementRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    Sender: str,
+    Subject: str,
+    Content: str,
+    PublicSubject: NotRequired[str],
+    PublicContent: NotRequired[str],
+    IncidentId: NotRequired[str],
+    IdempotencyToken: NotRequired[str],
+```
 
 ## StartEngagementResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import StartEngagementResultTypeDef
+
+def get_value() -> StartEngagementResultTypeDef:
+    return {
+        "EngagementArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartEngagementResultTypeDef(TypedDict):
+    EngagementArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EngagementArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopengagementrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopEngagementRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import StopEngagementRequestRequestTypeDef
+
+def get_value() -> StopEngagementRequestRequestTypeDef:
+    return {
+        "EngagementId": ...,
+    }
 ```
 
-Required fields:
-
-- `EngagementId`: `str`
-
-Optional fields:
-
-- `Reason`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StopEngagementRequestRequestTypeDef(TypedDict):
+    EngagementId: str,
+    Reason: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targettypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import TargetTypeDef
+
+def get_value() -> TargetTypeDef:
+    return {
+        "ChannelTargetInfo": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetTypeDef(TypedDict):
+    ChannelTargetInfo: NotRequired[ChannelTargetInfoTypeDef],  # (1)
+    ContactTargetInfo: NotRequired[ContactTargetInfoTypeDef],  # (2)
+```
 
-- `ChannelTargetInfo`:
-  [ChannelTargetInfoTypeDef](./type_defs.md#channeltargetinfotypedef)
-- `ContactTargetInfo`:
-  [ContactTargetInfoTypeDef](./type_defs.md#contacttargetinfotypedef)
-
-<a id="timerangetypedef"></a>
-
+1. See [:material-code-braces: ChannelTargetInfoTypeDef](./type_defs.md#channeltargetinfotypedef) 
+2. See [:material-code-braces: ContactTargetInfoTypeDef](./type_defs.md#contacttargetinfotypedef) 
 ## TimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import TimeRangeTypeDef
+
+def get_value() -> TimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TimeRangeTypeDef(TypedDict):
+    StartTime: NotRequired[Union[datetime, str]],
+    EndTime: NotRequired[Union[datetime, str]],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecontactchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateContactChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import UpdateContactChannelRequestRequestTypeDef
+
+def get_value() -> UpdateContactChannelRequestRequestTypeDef:
+    return {
+        "ContactChannelId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactChannelRequestRequestTypeDef(TypedDict):
+    ContactChannelId: str,
+    Name: NotRequired[str],
+    DeliveryAddress: NotRequired[ContactChannelAddressTypeDef],  # (1)
+```
 
-- `ContactChannelId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `DeliveryAddress`:
-  [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
-
-<a id="updatecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef) 
 ## UpdateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ssm_contacts.type_defs import UpdateContactRequestRequestTypeDef
+
+def get_value() -> UpdateContactRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    DisplayName: NotRequired[str],
+    Plan: NotRequired[PlanTypeDef],  # (1)
+```
 
-- `ContactId`: `str`
-
-Optional fields:
-
-- `DisplayName`: `str`
-- `Plan`: [PlanTypeDef](./type_defs.md#plantypedef)
+1. See [:material-code-braces: PlanTypeDef](./type_defs.md#plantypedef) 

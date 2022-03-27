@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-pinpointemail-module"></a>
-
-# Type annotations for boto3 PinpointEmail module
+#  PinpointEmail module
 
 > [Index](../README.md) > PinpointEmail
 
-Auto-generated documentation for
-[PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
-type annotations stubs module
-[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+!!! note ""
 
-- [Type annotations for boto3 PinpointEmail module](#type-annotations-for-boto3-pinpointemail-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [PinpointEmailClient](#pinpointemailclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
+    type annotations stubs module [mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `PinpointEmail`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[pinpoint-email]'
 python -m pip install mypy-boto3-pinpoint-email
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,105 +42,37 @@ python -m pip install mypy-boto3-pinpoint-email
 python -m pip uninstall -y mypy-boto3-pinpoint-email
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="pinpointemailclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## PinpointEmailClient
 
-Type annotations for `boto3.client("pinpoint-email")` as
-[PinpointEmailClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("pinpoint-email")` as [PinpointEmailClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_pinpoint_email.client import PinpointEmailClient
+
+def get_client() -> PinpointEmailClient:
+    return Session().cleint("pinpoint-email")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_configuration_set](./client.md#create_configuration_set)
-- [create_configuration_set_event_destination](./client.md#create_configuration_set_event_destination)
-- [create_dedicated_ip_pool](./client.md#create_dedicated_ip_pool)
-- [create_deliverability_test_report](./client.md#create_deliverability_test_report)
-- [create_email_identity](./client.md#create_email_identity)
-- [delete_configuration_set](./client.md#delete_configuration_set)
-- [delete_configuration_set_event_destination](./client.md#delete_configuration_set_event_destination)
-- [delete_dedicated_ip_pool](./client.md#delete_dedicated_ip_pool)
-- [delete_email_identity](./client.md#delete_email_identity)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account](./client.md#get_account)
-- [get_blacklist_reports](./client.md#get_blacklist_reports)
-- [get_configuration_set](./client.md#get_configuration_set)
-- [get_configuration_set_event_destinations](./client.md#get_configuration_set_event_destinations)
-- [get_dedicated_ip](./client.md#get_dedicated_ip)
-- [get_dedicated_ips](./client.md#get_dedicated_ips)
-- [get_deliverability_dashboard_options](./client.md#get_deliverability_dashboard_options)
-- [get_deliverability_test_report](./client.md#get_deliverability_test_report)
-- [get_domain_deliverability_campaign](./client.md#get_domain_deliverability_campaign)
-- [get_domain_statistics_report](./client.md#get_domain_statistics_report)
-- [get_email_identity](./client.md#get_email_identity)
-- [get_paginator](./client.md#get_paginator)
-- [list_configuration_sets](./client.md#list_configuration_sets)
-- [list_dedicated_ip_pools](./client.md#list_dedicated_ip_pools)
-- [list_deliverability_test_reports](./client.md#list_deliverability_test_reports)
-- [list_domain_deliverability_campaigns](./client.md#list_domain_deliverability_campaigns)
-- [list_email_identities](./client.md#list_email_identities)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_account_dedicated_ip_warmup_attributes](./client.md#put_account_dedicated_ip_warmup_attributes)
-- [put_account_sending_attributes](./client.md#put_account_sending_attributes)
-- [put_configuration_set_delivery_options](./client.md#put_configuration_set_delivery_options)
-- [put_configuration_set_reputation_options](./client.md#put_configuration_set_reputation_options)
-- [put_configuration_set_sending_options](./client.md#put_configuration_set_sending_options)
-- [put_configuration_set_tracking_options](./client.md#put_configuration_set_tracking_options)
-- [put_dedicated_ip_in_pool](./client.md#put_dedicated_ip_in_pool)
-- [put_dedicated_ip_warmup_attributes](./client.md#put_dedicated_ip_warmup_attributes)
-- [put_deliverability_dashboard_option](./client.md#put_deliverability_dashboard_option)
-- [put_email_identity_dkim_attributes](./client.md#put_email_identity_dkim_attributes)
-- [put_email_identity_feedback_attributes](./client.md#put_email_identity_feedback_attributes)
-- [put_email_identity_mail_from_attributes](./client.md#put_email_identity_mail_from_attributes)
-- [send_email](./client.md#send_email)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_configuration_set_event_destination](./client.md#update_configuration_set_event_destination)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-PinpointEmailClient [exceptions](./client.md#exceptions)
-
-- AccountSuspendedException
-- AlreadyExistsException
-- BadRequestException
-- ClientError
-- ConcurrentModificationException
-- LimitExceededException
-- MailFromDomainNotVerifiedException
-- MessageRejected
-- NotFoundException
-- SendingPausedException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("pinpoint-email").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("pinpoint-email").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator, ...
+from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator
+
+def get_get_dedicated_ips_paginator() -> GetDedicatedIpsPaginator:
+    return Session().client("pinpoint-email").get_paginator("get_dedicated_ips"))
 ```
 
 - [GetDedicatedIpsPaginator](./paginators.md#getdedicatedipspaginator)
@@ -171,16 +81,23 @@ from mypy_boto3_pinpoint_email.paginator import GetDedicatedIpsPaginator, ...
 - [ListDeliverabilityTestReportsPaginator](./paginators.md#listdeliverabilitytestreportspaginator)
 - [ListEmailIdentitiesPaginator](./paginators.md#listemailidentitiespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType
 
-```python
-from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType, ...
+def get_value() -> BehaviorOnMxFailureType:
+    return "REJECT_MESSAGE"
 ```
 
 - [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
@@ -202,18 +119,22 @@ from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef
 
-```python
-from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef, ...
+def get_value() -> BlacklistEntryTypeDef:
+    return {
+        "RblName": ...,
+    }
 ```
 
 - [BlacklistEntryTypeDef](./type_defs.md#blacklistentrytypedef)
@@ -253,6 +174,7 @@ from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef, ...
 - [GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef)
 - [GetDedicatedIpRequestRequestTypeDef](./type_defs.md#getdedicatediprequestrequesttypedef)
 - [GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef)
+- [GetDedicatedIpsRequestGetDedicatedIpsPaginateTypeDef](./type_defs.md#getdedicatedipsrequestgetdedicatedipspaginatetypedef)
 - [GetDedicatedIpsRequestRequestTypeDef](./type_defs.md#getdedicatedipsrequestrequesttypedef)
 - [GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef)
 - [GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef)
@@ -268,14 +190,18 @@ from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef, ...
 - [InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef)
 - [IspPlacementTypeDef](./type_defs.md#ispplacementtypedef)
 - [KinesisFirehoseDestinationTypeDef](./type_defs.md#kinesisfirehosedestinationtypedef)
+- [ListConfigurationSetsRequestListConfigurationSetsPaginateTypeDef](./type_defs.md#listconfigurationsetsrequestlistconfigurationsetspaginatetypedef)
 - [ListConfigurationSetsRequestRequestTypeDef](./type_defs.md#listconfigurationsetsrequestrequesttypedef)
 - [ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)
+- [ListDedicatedIpPoolsRequestListDedicatedIpPoolsPaginateTypeDef](./type_defs.md#listdedicatedippoolsrequestlistdedicatedippoolspaginatetypedef)
 - [ListDedicatedIpPoolsRequestRequestTypeDef](./type_defs.md#listdedicatedippoolsrequestrequesttypedef)
 - [ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef)
+- [ListDeliverabilityTestReportsRequestListDeliverabilityTestReportsPaginateTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestlistdeliverabilitytestreportspaginatetypedef)
 - [ListDeliverabilityTestReportsRequestRequestTypeDef](./type_defs.md#listdeliverabilitytestreportsrequestrequesttypedef)
 - [ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef)
 - [ListDomainDeliverabilityCampaignsRequestRequestTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsrequestrequesttypedef)
 - [ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef)
+- [ListEmailIdentitiesRequestListEmailIdentitiesPaginateTypeDef](./type_defs.md#listemailidentitiesrequestlistemailidentitiespaginatetypedef)
 - [ListEmailIdentitiesRequestRequestTypeDef](./type_defs.md#listemailidentitiesrequestrequesttypedef)
 - [ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -314,3 +240,4 @@ from mypy_boto3_pinpoint_email.type_defs import BlacklistEntryTypeDef, ...
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateConfigurationSetEventDestinationRequestRequestTypeDef](./type_defs.md#updateconfigurationseteventdestinationrequestrequesttypedef)
 - [VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef)
+

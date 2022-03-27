@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-chime-module"></a>
-
-# Type annotations for boto3 Chime module
+#  Chime module
 
 > [Index](../README.md) > Chime
 
-Auto-generated documentation for
-[Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
-type annotations stubs module
-[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
+!!! note ""
 
-- [Type annotations for boto3 Chime module](#type-annotations-for-boto3-chime-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ChimeClient](#chimeclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
+    type annotations stubs module [mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Chime`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[chime]'
 python -m pip install mypy-boto3-chime
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,268 +42,59 @@ python -m pip install mypy-boto3-chime
 python -m pip uninstall -y mypy-boto3-chime
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="chimeclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ChimeClient
 
-Type annotations for `boto3.client("chime")` as [ChimeClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("chime")` as [ChimeClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_chime.client import ChimeClient
+
+def get_client() -> ChimeClient:
+    return Session().cleint("chime")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_phone_number_with_user](./client.md#associate_phone_number_with_user)
-- [associate_phone_numbers_with_voice_connector](./client.md#associate_phone_numbers_with_voice_connector)
-- [associate_phone_numbers_with_voice_connector_group](./client.md#associate_phone_numbers_with_voice_connector_group)
-- [associate_signin_delegate_groups_with_account](./client.md#associate_signin_delegate_groups_with_account)
-- [batch_create_attendee](./client.md#batch_create_attendee)
-- [batch_create_channel_membership](./client.md#batch_create_channel_membership)
-- [batch_create_room_membership](./client.md#batch_create_room_membership)
-- [batch_delete_phone_number](./client.md#batch_delete_phone_number)
-- [batch_suspend_user](./client.md#batch_suspend_user)
-- [batch_unsuspend_user](./client.md#batch_unsuspend_user)
-- [batch_update_phone_number](./client.md#batch_update_phone_number)
-- [batch_update_user](./client.md#batch_update_user)
-- [can_paginate](./client.md#can_paginate)
-- [create_account](./client.md#create_account)
-- [create_app_instance](./client.md#create_app_instance)
-- [create_app_instance_admin](./client.md#create_app_instance_admin)
-- [create_app_instance_user](./client.md#create_app_instance_user)
-- [create_attendee](./client.md#create_attendee)
-- [create_bot](./client.md#create_bot)
-- [create_channel](./client.md#create_channel)
-- [create_channel_ban](./client.md#create_channel_ban)
-- [create_channel_membership](./client.md#create_channel_membership)
-- [create_channel_moderator](./client.md#create_channel_moderator)
-- [create_media_capture_pipeline](./client.md#create_media_capture_pipeline)
-- [create_meeting](./client.md#create_meeting)
-- [create_meeting_dial_out](./client.md#create_meeting_dial_out)
-- [create_meeting_with_attendees](./client.md#create_meeting_with_attendees)
-- [create_phone_number_order](./client.md#create_phone_number_order)
-- [create_proxy_session](./client.md#create_proxy_session)
-- [create_room](./client.md#create_room)
-- [create_room_membership](./client.md#create_room_membership)
-- [create_sip_media_application](./client.md#create_sip_media_application)
-- [create_sip_media_application_call](./client.md#create_sip_media_application_call)
-- [create_sip_rule](./client.md#create_sip_rule)
-- [create_user](./client.md#create_user)
-- [create_voice_connector](./client.md#create_voice_connector)
-- [create_voice_connector_group](./client.md#create_voice_connector_group)
-- [delete_account](./client.md#delete_account)
-- [delete_app_instance](./client.md#delete_app_instance)
-- [delete_app_instance_admin](./client.md#delete_app_instance_admin)
-- [delete_app_instance_streaming_configurations](./client.md#delete_app_instance_streaming_configurations)
-- [delete_app_instance_user](./client.md#delete_app_instance_user)
-- [delete_attendee](./client.md#delete_attendee)
-- [delete_channel](./client.md#delete_channel)
-- [delete_channel_ban](./client.md#delete_channel_ban)
-- [delete_channel_membership](./client.md#delete_channel_membership)
-- [delete_channel_message](./client.md#delete_channel_message)
-- [delete_channel_moderator](./client.md#delete_channel_moderator)
-- [delete_events_configuration](./client.md#delete_events_configuration)
-- [delete_media_capture_pipeline](./client.md#delete_media_capture_pipeline)
-- [delete_meeting](./client.md#delete_meeting)
-- [delete_phone_number](./client.md#delete_phone_number)
-- [delete_proxy_session](./client.md#delete_proxy_session)
-- [delete_room](./client.md#delete_room)
-- [delete_room_membership](./client.md#delete_room_membership)
-- [delete_sip_media_application](./client.md#delete_sip_media_application)
-- [delete_sip_rule](./client.md#delete_sip_rule)
-- [delete_voice_connector](./client.md#delete_voice_connector)
-- [delete_voice_connector_emergency_calling_configuration](./client.md#delete_voice_connector_emergency_calling_configuration)
-- [delete_voice_connector_group](./client.md#delete_voice_connector_group)
-- [delete_voice_connector_origination](./client.md#delete_voice_connector_origination)
-- [delete_voice_connector_proxy](./client.md#delete_voice_connector_proxy)
-- [delete_voice_connector_streaming_configuration](./client.md#delete_voice_connector_streaming_configuration)
-- [delete_voice_connector_termination](./client.md#delete_voice_connector_termination)
-- [delete_voice_connector_termination_credentials](./client.md#delete_voice_connector_termination_credentials)
-- [describe_app_instance](./client.md#describe_app_instance)
-- [describe_app_instance_admin](./client.md#describe_app_instance_admin)
-- [describe_app_instance_user](./client.md#describe_app_instance_user)
-- [describe_channel](./client.md#describe_channel)
-- [describe_channel_ban](./client.md#describe_channel_ban)
-- [describe_channel_membership](./client.md#describe_channel_membership)
-- [describe_channel_membership_for_app_instance_user](./client.md#describe_channel_membership_for_app_instance_user)
-- [describe_channel_moderated_by_app_instance_user](./client.md#describe_channel_moderated_by_app_instance_user)
-- [describe_channel_moderator](./client.md#describe_channel_moderator)
-- [disassociate_phone_number_from_user](./client.md#disassociate_phone_number_from_user)
-- [disassociate_phone_numbers_from_voice_connector](./client.md#disassociate_phone_numbers_from_voice_connector)
-- [disassociate_phone_numbers_from_voice_connector_group](./client.md#disassociate_phone_numbers_from_voice_connector_group)
-- [disassociate_signin_delegate_groups_from_account](./client.md#disassociate_signin_delegate_groups_from_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_account](./client.md#get_account)
-- [get_account_settings](./client.md#get_account_settings)
-- [get_app_instance_retention_settings](./client.md#get_app_instance_retention_settings)
-- [get_app_instance_streaming_configurations](./client.md#get_app_instance_streaming_configurations)
-- [get_attendee](./client.md#get_attendee)
-- [get_bot](./client.md#get_bot)
-- [get_channel_message](./client.md#get_channel_message)
-- [get_events_configuration](./client.md#get_events_configuration)
-- [get_global_settings](./client.md#get_global_settings)
-- [get_media_capture_pipeline](./client.md#get_media_capture_pipeline)
-- [get_meeting](./client.md#get_meeting)
-- [get_messaging_session_endpoint](./client.md#get_messaging_session_endpoint)
-- [get_paginator](./client.md#get_paginator)
-- [get_phone_number](./client.md#get_phone_number)
-- [get_phone_number_order](./client.md#get_phone_number_order)
-- [get_phone_number_settings](./client.md#get_phone_number_settings)
-- [get_proxy_session](./client.md#get_proxy_session)
-- [get_retention_settings](./client.md#get_retention_settings)
-- [get_room](./client.md#get_room)
-- [get_sip_media_application](./client.md#get_sip_media_application)
-- [get_sip_media_application_logging_configuration](./client.md#get_sip_media_application_logging_configuration)
-- [get_sip_rule](./client.md#get_sip_rule)
-- [get_user](./client.md#get_user)
-- [get_user_settings](./client.md#get_user_settings)
-- [get_voice_connector](./client.md#get_voice_connector)
-- [get_voice_connector_emergency_calling_configuration](./client.md#get_voice_connector_emergency_calling_configuration)
-- [get_voice_connector_group](./client.md#get_voice_connector_group)
-- [get_voice_connector_logging_configuration](./client.md#get_voice_connector_logging_configuration)
-- [get_voice_connector_origination](./client.md#get_voice_connector_origination)
-- [get_voice_connector_proxy](./client.md#get_voice_connector_proxy)
-- [get_voice_connector_streaming_configuration](./client.md#get_voice_connector_streaming_configuration)
-- [get_voice_connector_termination](./client.md#get_voice_connector_termination)
-- [get_voice_connector_termination_health](./client.md#get_voice_connector_termination_health)
-- [invite_users](./client.md#invite_users)
-- [list_accounts](./client.md#list_accounts)
-- [list_app_instance_admins](./client.md#list_app_instance_admins)
-- [list_app_instance_users](./client.md#list_app_instance_users)
-- [list_app_instances](./client.md#list_app_instances)
-- [list_attendee_tags](./client.md#list_attendee_tags)
-- [list_attendees](./client.md#list_attendees)
-- [list_bots](./client.md#list_bots)
-- [list_channel_bans](./client.md#list_channel_bans)
-- [list_channel_memberships](./client.md#list_channel_memberships)
-- [list_channel_memberships_for_app_instance_user](./client.md#list_channel_memberships_for_app_instance_user)
-- [list_channel_messages](./client.md#list_channel_messages)
-- [list_channel_moderators](./client.md#list_channel_moderators)
-- [list_channels](./client.md#list_channels)
-- [list_channels_moderated_by_app_instance_user](./client.md#list_channels_moderated_by_app_instance_user)
-- [list_media_capture_pipelines](./client.md#list_media_capture_pipelines)
-- [list_meeting_tags](./client.md#list_meeting_tags)
-- [list_meetings](./client.md#list_meetings)
-- [list_phone_number_orders](./client.md#list_phone_number_orders)
-- [list_phone_numbers](./client.md#list_phone_numbers)
-- [list_proxy_sessions](./client.md#list_proxy_sessions)
-- [list_room_memberships](./client.md#list_room_memberships)
-- [list_rooms](./client.md#list_rooms)
-- [list_sip_media_applications](./client.md#list_sip_media_applications)
-- [list_sip_rules](./client.md#list_sip_rules)
-- [list_supported_phone_number_countries](./client.md#list_supported_phone_number_countries)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_users](./client.md#list_users)
-- [list_voice_connector_groups](./client.md#list_voice_connector_groups)
-- [list_voice_connector_termination_credentials](./client.md#list_voice_connector_termination_credentials)
-- [list_voice_connectors](./client.md#list_voice_connectors)
-- [logout_user](./client.md#logout_user)
-- [put_app_instance_retention_settings](./client.md#put_app_instance_retention_settings)
-- [put_app_instance_streaming_configurations](./client.md#put_app_instance_streaming_configurations)
-- [put_events_configuration](./client.md#put_events_configuration)
-- [put_retention_settings](./client.md#put_retention_settings)
-- [put_sip_media_application_logging_configuration](./client.md#put_sip_media_application_logging_configuration)
-- [put_voice_connector_emergency_calling_configuration](./client.md#put_voice_connector_emergency_calling_configuration)
-- [put_voice_connector_logging_configuration](./client.md#put_voice_connector_logging_configuration)
-- [put_voice_connector_origination](./client.md#put_voice_connector_origination)
-- [put_voice_connector_proxy](./client.md#put_voice_connector_proxy)
-- [put_voice_connector_streaming_configuration](./client.md#put_voice_connector_streaming_configuration)
-- [put_voice_connector_termination](./client.md#put_voice_connector_termination)
-- [put_voice_connector_termination_credentials](./client.md#put_voice_connector_termination_credentials)
-- [redact_channel_message](./client.md#redact_channel_message)
-- [redact_conversation_message](./client.md#redact_conversation_message)
-- [redact_room_message](./client.md#redact_room_message)
-- [regenerate_security_token](./client.md#regenerate_security_token)
-- [reset_personal_pin](./client.md#reset_personal_pin)
-- [restore_phone_number](./client.md#restore_phone_number)
-- [search_available_phone_numbers](./client.md#search_available_phone_numbers)
-- [send_channel_message](./client.md#send_channel_message)
-- [start_meeting_transcription](./client.md#start_meeting_transcription)
-- [stop_meeting_transcription](./client.md#stop_meeting_transcription)
-- [tag_attendee](./client.md#tag_attendee)
-- [tag_meeting](./client.md#tag_meeting)
-- [tag_resource](./client.md#tag_resource)
-- [untag_attendee](./client.md#untag_attendee)
-- [untag_meeting](./client.md#untag_meeting)
-- [untag_resource](./client.md#untag_resource)
-- [update_account](./client.md#update_account)
-- [update_account_settings](./client.md#update_account_settings)
-- [update_app_instance](./client.md#update_app_instance)
-- [update_app_instance_user](./client.md#update_app_instance_user)
-- [update_bot](./client.md#update_bot)
-- [update_channel](./client.md#update_channel)
-- [update_channel_message](./client.md#update_channel_message)
-- [update_channel_read_marker](./client.md#update_channel_read_marker)
-- [update_global_settings](./client.md#update_global_settings)
-- [update_phone_number](./client.md#update_phone_number)
-- [update_phone_number_settings](./client.md#update_phone_number_settings)
-- [update_proxy_session](./client.md#update_proxy_session)
-- [update_room](./client.md#update_room)
-- [update_room_membership](./client.md#update_room_membership)
-- [update_sip_media_application](./client.md#update_sip_media_application)
-- [update_sip_media_application_call](./client.md#update_sip_media_application_call)
-- [update_sip_rule](./client.md#update_sip_rule)
-- [update_user](./client.md#update_user)
-- [update_user_settings](./client.md#update_user_settings)
-- [update_voice_connector](./client.md#update_voice_connector)
-- [update_voice_connector_group](./client.md#update_voice_connector_group)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ChimeClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- NotFoundException
-- ResourceLimitExceededException
-- ServiceFailureException
-- ServiceUnavailableException
-- ThrottledClientException
-- UnauthorizedClientException
-- UnprocessableEntityException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("chime").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("chime").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_chime.paginator import ListAccountsPaginator, ...
+from mypy_boto3_chime.paginator import ListAccountsPaginator
+
+def get_list_accounts_paginator() -> ListAccountsPaginator:
+    return Session().client("chime").get_paginator("list_accounts"))
 ```
 
 - [ListAccountsPaginator](./paginators.md#listaccountspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime.literals import AccountStatusType
 
-```python
-from mypy_boto3_chime.literals import AccountStatusType, ...
+def get_value() -> AccountStatusType:
+    return "Active"
 ```
 
 - [AccountStatusType](./literals.md#accountstatustype)
@@ -386,17 +155,20 @@ from mypy_boto3_chime.literals import AccountStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_chime.type_defs import AccountSettingsTypeDef
 
-```python
-from mypy_boto3_chime.type_defs import AccountSettingsTypeDef, ...
+def get_value() -> AccountSettingsTypeDef:
+    return {
+        "DisableRemoteControl": ...,
+    }
 ```
 
 - [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef)
@@ -630,6 +402,7 @@ from mypy_boto3_chime.type_defs import AccountSettingsTypeDef, ...
 - [InviteTypeDef](./type_defs.md#invitetypedef)
 - [InviteUsersRequestRequestTypeDef](./type_defs.md#inviteusersrequestrequesttypedef)
 - [InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef)
+- [ListAccountsRequestListAccountsPaginateTypeDef](./type_defs.md#listaccountsrequestlistaccountspaginatetypedef)
 - [ListAccountsRequestRequestTypeDef](./type_defs.md#listaccountsrequestrequesttypedef)
 - [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)
 - [ListAppInstanceAdminsRequestRequestTypeDef](./type_defs.md#listappinstanceadminsrequestrequesttypedef)
@@ -682,6 +455,7 @@ from mypy_boto3_chime.type_defs import AccountSettingsTypeDef, ...
 - [ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListUsersRequestListUsersPaginateTypeDef](./type_defs.md#listusersrequestlistuserspaginatetypedef)
 - [ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef)
 - [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)
 - [ListVoiceConnectorGroupsRequestRequestTypeDef](./type_defs.md#listvoiceconnectorgroupsrequestrequesttypedef)
@@ -827,3 +601,4 @@ from mypy_boto3_chime.type_defs import AccountSettingsTypeDef, ...
 - [VoiceConnectorItemTypeDef](./type_defs.md#voiceconnectoritemtypedef)
 - [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
 - [VoiceConnectorTypeDef](./type_defs.md#voiceconnectortypedef)
+

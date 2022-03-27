@@ -1,38 +1,18 @@
-<a id="paginators-for-boto3-devopsguru-module"></a>
-
-# Paginators for boto3 DevOpsGuru module
+# Paginators
 
 > [Index](../README.md) > [DevOpsGuru](./README.md) > Paginators
 
-Auto-generated documentation for
-[DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
-type annotations stubs module
-[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+!!! note ""
 
-- [Paginators for boto3 DevOpsGuru module](#paginators-for-boto3-devopsguru-module)
-  - [DescribeOrganizationResourceCollectionHealthPaginator](#describeorganizationresourcecollectionhealthpaginator)
-  - [DescribeResourceCollectionHealthPaginator](#describeresourcecollectionhealthpaginator)
-  - [GetCostEstimationPaginator](#getcostestimationpaginator)
-  - [GetResourceCollectionPaginator](#getresourcecollectionpaginator)
-  - [ListAnomaliesForInsightPaginator](#listanomaliesforinsightpaginator)
-  - [ListEventsPaginator](#listeventspaginator)
-  - [ListInsightsPaginator](#listinsightspaginator)
-  - [ListNotificationChannelsPaginator](#listnotificationchannelspaginator)
-  - [ListOrganizationInsightsPaginator](#listorganizationinsightspaginator)
-  - [ListRecommendationsPaginator](#listrecommendationspaginator)
-  - [SearchInsightsPaginator](#searchinsightspaginator)
-  - [SearchOrganizationInsightsPaginator](#searchorganizationinsightspaginator)
-
-<a id="describeorganizationresourcecollectionhealthpaginator"></a>
+    Auto-generated documentation for [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
+    type annotations stubs module [mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 ## DescribeOrganizationResourceCollectionHealthPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("describe_organization_resource_collection_health")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("describe_organization_resource_collection_health")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.DescribeOrganizationResourceCollectionHealth)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator
@@ -41,34 +21,44 @@ def get_describe_organization_resource_collection_health_paginator() -> Describe
     return Session().client("devops-guru").get_paginator("describe_organization_resource_collection_health")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.DescribeOrganizationResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.DescribeOrganizationResourceCollectionHealth)
 
-Arguments for `DescribeOrganizationResourceCollectionHealthPaginator.paginate`
-method:
+### paginate
 
-- `OrganizationResourceCollectionType`:
-  [OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype)
-  *(required)*
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrganizationResourceCollectionHealthPaginator.paginate` method.
 
-`DescribeOrganizationResourceCollectionHealthPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OrganizationResourceCollectionType: OrganizationResourceCollectionTypeType,  # (1)
+    AccountIds: Sequence[str] = ...,
+    OrganizationalUnitIds: Sequence[str] = ...,
+    MaxResults: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeOrganizationResourceCollectionHealthResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeresourcecollectionhealthpaginator"></a>
+1. See [:material-code-brackets: OrganizationResourceCollectionTypeType](./literals.md#organizationresourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef = {  # (1)
+    "OrganizationResourceCollectionType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrganizationResourceCollectionHealthRequestDescribeOrganizationResourceCollectionHealthPaginateTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthrequestdescribeorganizationresourcecollectionhealthpaginatetypedef) 
 ## DescribeResourceCollectionHealthPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("describe_resource_collection_health")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("describe_resource_collection_health")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.DescribeResourceCollectionHealth)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import DescribeResourceCollectionHealthPaginator
@@ -77,30 +67,41 @@ def get_describe_resource_collection_health_paginator() -> DescribeResourceColle
     return Session().client("devops-guru").get_paginator("describe_resource_collection_health")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.DescribeResourceCollectionHealth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.DescribeResourceCollectionHealth)
 
-Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
+### paginate
 
-- `ResourceCollectionType`:
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeResourceCollectionHealthPaginator.paginate` method.
 
-`DescribeResourceCollectionHealthPaginator.paginate` returns
-`_PageIterator`\[[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeResourceCollectionHealthResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="getcostestimationpaginator"></a>
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef = {  # (1)
+    "ResourceCollectionType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeResourceCollectionHealthRequestDescribeResourceCollectionHealthPaginateTypeDef](./type_defs.md#describeresourcecollectionhealthrequestdescriberesourcecollectionhealthpaginatetypedef) 
 ## GetCostEstimationPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("get_cost_estimation")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("get_cost_estimation")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.GetCostEstimation)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import GetCostEstimationPaginator
@@ -109,27 +110,39 @@ def get_get_cost_estimation_paginator() -> GetCostEstimationPaginator:
     return Session().client("devops-guru").get_paginator("get_cost_estimation")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.GetCostEstimation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.GetCostEstimation)
 
-Arguments for `GetCostEstimationPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetCostEstimationPaginator.paginate` method.
 
-`GetCostEstimationPaginator.paginate` returns
-`_PageIterator`\[[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetCostEstimationResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="getresourcecollectionpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetCostEstimationRequestGetCostEstimationPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetCostEstimationRequestGetCostEstimationPaginateTypeDef](./type_defs.md#getcostestimationrequestgetcostestimationpaginatetypedef) 
 ## GetResourceCollectionPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("get_resource_collection")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("get_resource_collection")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.GetResourceCollection)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import GetResourceCollectionPaginator
@@ -138,30 +151,41 @@ def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
     return Session().client("devops-guru").get_paginator("get_resource_collection")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.GetResourceCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.GetResourceCollection)
 
-Arguments for `GetResourceCollectionPaginator.paginate` method:
+### paginate
 
-- `ResourceCollectionType`:
-  [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetResourceCollectionPaginator.paginate` method.
 
-`GetResourceCollectionPaginator.paginate` returns
-`_PageIterator`\[[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceCollectionType: ResourceCollectionTypeType,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetResourceCollectionResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listanomaliesforinsightpaginator"></a>
+1. See [:material-code-brackets: ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef = {  # (1)
+    "ResourceCollectionType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetResourceCollectionRequestGetResourceCollectionPaginateTypeDef](./type_defs.md#getresourcecollectionrequestgetresourcecollectionpaginatetypedef) 
 ## ListAnomaliesForInsightPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListAnomaliesForInsight)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListAnomaliesForInsightPaginator
@@ -170,31 +194,43 @@ def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginat
     return Session().client("devops-guru").get_paginator("list_anomalies_for_insight")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListAnomaliesForInsight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListAnomaliesForInsight)
 
-Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
+### paginate
 
-- `InsightId`: `str` *(required)*
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef)
-- `AccountId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAnomaliesForInsightPaginator.paginate` method.
 
-`ListAnomaliesForInsightPaginator.paginate` returns
-`_PageIterator`\[[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InsightId: str,
+    StartTimeRange: StartTimeRangeTypeDef = ...,  # (1)
+    AccountId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAnomaliesForInsightResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listeventspaginator"></a>
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef = {  # (1)
+    "InsightId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAnomaliesForInsightRequestListAnomaliesForInsightPaginateTypeDef](./type_defs.md#listanomaliesforinsightrequestlistanomaliesforinsightpaginatetypedef) 
 ## ListEventsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_events")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListEventsPaginator
@@ -203,31 +239,42 @@ def get_list_events_paginator() -> ListEventsPaginator:
     return Session().client("devops-guru").get_paginator("list_events")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListEvents)
 
-Arguments for `ListEventsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  [ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef)
-  *(required)*
-- `AccountId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEventsPaginator.paginate` method.
 
-`ListEventsPaginator.paginate` returns
-`_PageIterator`\[[ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: ListEventsFiltersTypeDef,  # (1)
+    AccountId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListEventsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listinsightspaginator"></a>
+1. See [:material-code-braces: ListEventsFiltersTypeDef](./type_defs.md#listeventsfilterstypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEventsRequestListEventsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEventsRequestListEventsPaginateTypeDef](./type_defs.md#listeventsrequestlisteventspaginatetypedef) 
 ## ListInsightsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_insights")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListInsights)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListInsightsPaginator
@@ -236,30 +283,41 @@ def get_list_insights_paginator() -> ListInsightsPaginator:
     return Session().client("devops-guru").get_paginator("list_insights")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListInsights)
 
-Arguments for `ListInsightsPaginator.paginate` method:
+### paginate
 
-- `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListInsightsPaginator.paginate` method.
 
-`ListInsightsPaginator.paginate` returns
-`_PageIterator`\[[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListInsightsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listnotificationchannelspaginator"></a>
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListInsightsRequestListInsightsPaginateTypeDef = {  # (1)
+    "StatusFilter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListInsightsRequestListInsightsPaginateTypeDef](./type_defs.md#listinsightsrequestlistinsightspaginatetypedef) 
 ## ListNotificationChannelsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_notification_channels")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_notification_channels")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListNotificationChannels)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListNotificationChannelsPaginator
@@ -268,27 +326,39 @@ def get_list_notification_channels_paginator() -> ListNotificationChannelsPagina
     return Session().client("devops-guru").get_paginator("list_notification_channels")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListNotificationChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListNotificationChannels)
 
-Arguments for `ListNotificationChannelsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListNotificationChannelsPaginator.paginate` method.
 
-`ListNotificationChannelsPaginator.paginate` returns
-`_PageIterator`\[[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListNotificationChannelsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listorganizationinsightspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListNotificationChannelsRequestListNotificationChannelsPaginateTypeDef](./type_defs.md#listnotificationchannelsrequestlistnotificationchannelspaginatetypedef) 
 ## ListOrganizationInsightsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_organization_insights")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_organization_insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListOrganizationInsights)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListOrganizationInsightsPaginator
@@ -297,32 +367,43 @@ def get_list_organization_insights_paginator() -> ListOrganizationInsightsPagina
     return Session().client("devops-guru").get_paginator("list_organization_insights")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListOrganizationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListOrganizationInsights)
 
-Arguments for `ListOrganizationInsightsPaginator.paginate` method:
+### paginate
 
-- `StatusFilter`:
-  [ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef)
-  *(required)*
-- `AccountIds`: `Sequence`\[`str`\]
-- `OrganizationalUnitIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOrganizationInsightsPaginator.paginate` method.
 
-`ListOrganizationInsightsPaginator.paginate` returns
-`_PageIterator`\[[ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StatusFilter: ListInsightsStatusFilterTypeDef,  # (1)
+    AccountIds: Sequence[str] = ...,
+    OrganizationalUnitIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOrganizationInsightsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrecommendationspaginator"></a>
+1. See [:material-code-braces: ListInsightsStatusFilterTypeDef](./type_defs.md#listinsightsstatusfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef = {  # (1)
+    "StatusFilter": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOrganizationInsightsRequestListOrganizationInsightsPaginateTypeDef](./type_defs.md#listorganizationinsightsrequestlistorganizationinsightspaginatetypedef) 
 ## ListRecommendationsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("list_recommendations")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("list_recommendations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListRecommendations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import ListRecommendationsPaginator
@@ -331,30 +412,43 @@ def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
     return Session().client("devops-guru").get_paginator("list_recommendations")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.ListRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.ListRecommendations)
 
-Arguments for `ListRecommendationsPaginator.paginate` method:
+### paginate
 
-- `InsightId`: `str` *(required)*
-- `Locale`: [LocaleType](./literals.md#localetype)
-- `AccountId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRecommendationsPaginator.paginate` method.
 
-`ListRecommendationsPaginator.paginate` returns
-`_PageIterator`\[[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InsightId: str,
+    Locale: LocaleType = ...,  # (1)
+    AccountId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListRecommendationsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchinsightspaginator"></a>
+1. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRecommendationsRequestListRecommendationsPaginateTypeDef = {  # (1)
+    "InsightId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRecommendationsRequestListRecommendationsPaginateTypeDef](./type_defs.md#listrecommendationsrequestlistrecommendationspaginatetypedef) 
 ## SearchInsightsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("search_insights")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("search_insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.SearchInsights)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import SearchInsightsPaginator
@@ -363,32 +457,46 @@ def get_search_insights_paginator() -> SearchInsightsPaginator:
     return Session().client("devops-guru").get_paginator("search_insights")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.SearchInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.SearchInsights)
 
-Arguments for `SearchInsightsPaginator.paginate` method:
+### paginate
 
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) *(required)*
-- `Type`: [InsightTypeType](./literals.md#insighttypetype) *(required)*
-- `Filters`:
-  [SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchInsightsPaginator.paginate` method.
 
-`SearchInsightsPaginator.paginate` returns
-`_PageIterator`\[[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: SearchInsightsFiltersTypeDef = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[SearchInsightsResponseTypeDef]:  # (5)
+    ...
+```
 
-<a id="searchorganizationinsightspaginator"></a>
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchInsightsFiltersTypeDef](./type_defs.md#searchinsightsfilterstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchInsightsRequestSearchInsightsPaginateTypeDef = {  # (1)
+    "StartTimeRange": ...,
+    "Type": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchInsightsRequestSearchInsightsPaginateTypeDef](./type_defs.md#searchinsightsrequestsearchinsightspaginatetypedef) 
 ## SearchOrganizationInsightsPaginator
 
-Type annotations for
-`boto3.client("devops-guru").get_paginator("search_organization_insights")`.
+Type annotations and code completion for `#!python boto3.client("devops-guru").get_paginator("search_organization_insights")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.SearchOrganizationInsights)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_devops_guru.paginator import SearchOrganizationInsightsPaginator
@@ -397,19 +505,39 @@ def get_search_organization_insights_paginator() -> SearchOrganizationInsightsPa
     return Session().client("devops-guru").get_paginator("search_organization_insights")
 ```
 
-Boto3 documentation:
-[DevOpsGuru.Paginator.SearchOrganizationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Paginator.SearchOrganizationInsights)
 
-Arguments for `SearchOrganizationInsightsPaginator.paginate` method:
+### paginate
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
-- `StartTimeRange`:
-  [StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) *(required)*
-- `Type`: [InsightTypeType](./literals.md#insighttypetype) *(required)*
-- `Filters`:
-  [SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchOrganizationInsightsPaginator.paginate` method.
 
-`SearchOrganizationInsightsPaginator.paginate` returns
-`_PageIterator`\[[SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AccountIds: Sequence[str],
+    StartTimeRange: StartTimeRangeTypeDef,  # (1)
+    Type: InsightTypeType,  # (2)
+    Filters: SearchOrganizationInsightsFiltersTypeDef = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[SearchOrganizationInsightsResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: StartTimeRangeTypeDef](./type_defs.md#starttimerangetypedef) 
+2. See [:material-code-brackets: InsightTypeType](./literals.md#insighttypetype) 
+3. See [:material-code-braces: SearchOrganizationInsightsFiltersTypeDef](./type_defs.md#searchorganizationinsightsfilterstypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef = {  # (1)
+    "AccountIds": ...,
+    "StartTimeRange": ...,
+    "Type": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchOrganizationInsightsRequestSearchOrganizationInsightsPaginateTypeDef](./type_defs.md#searchorganizationinsightsrequestsearchorganizationinsightspaginatetypedef) 

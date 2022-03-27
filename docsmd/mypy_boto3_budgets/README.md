@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-budgets-module"></a>
-
-# Type annotations for boto3 Budgets module
+#  Budgets module
 
 > [Index](../README.md) > Budgets
 
-Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module
-[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
+!!! note ""
 
-- [Type annotations for boto3 Budgets module](#type-annotations-for-boto3-budgets-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [BudgetsClient](#budgetsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+    type annotations stubs module [mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Budgets`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[budgets]'
 python -m pip install mypy-boto3-budgets
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,84 +42,37 @@ python -m pip install mypy-boto3-budgets
 python -m pip uninstall -y mypy-boto3-budgets
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="budgetsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## BudgetsClient
 
-Type annotations for `boto3.client("budgets")` as [BudgetsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("budgets")` as [BudgetsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_budgets.client import BudgetsClient
+
+def get_client() -> BudgetsClient:
+    return Session().cleint("budgets")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_budget](./client.md#create_budget)
-- [create_budget_action](./client.md#create_budget_action)
-- [create_notification](./client.md#create_notification)
-- [create_subscriber](./client.md#create_subscriber)
-- [delete_budget](./client.md#delete_budget)
-- [delete_budget_action](./client.md#delete_budget_action)
-- [delete_notification](./client.md#delete_notification)
-- [delete_subscriber](./client.md#delete_subscriber)
-- [describe_budget](./client.md#describe_budget)
-- [describe_budget_action](./client.md#describe_budget_action)
-- [describe_budget_action_histories](./client.md#describe_budget_action_histories)
-- [describe_budget_actions_for_account](./client.md#describe_budget_actions_for_account)
-- [describe_budget_actions_for_budget](./client.md#describe_budget_actions_for_budget)
-- [describe_budget_notifications_for_account](./client.md#describe_budget_notifications_for_account)
-- [describe_budget_performance_history](./client.md#describe_budget_performance_history)
-- [describe_budgets](./client.md#describe_budgets)
-- [describe_notifications_for_budget](./client.md#describe_notifications_for_budget)
-- [describe_subscribers_for_notification](./client.md#describe_subscribers_for_notification)
-- [exceptions](./client.md#exceptions)
-- [execute_budget_action](./client.md#execute_budget_action)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [update_budget](./client.md#update_budget)
-- [update_budget_action](./client.md#update_budget_action)
-- [update_notification](./client.md#update_notification)
-- [update_subscriber](./client.md#update_subscriber)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-BudgetsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- CreationLimitExceededException
-- DuplicateRecordException
-- ExpiredNextTokenException
-- InternalErrorException
-- InvalidNextTokenException
-- InvalidParameterException
-- NotFoundException
-- ResourceLockedException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("budgets").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("budgets").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator, ...
+from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator
+
+def get_describe_budget_action_histories_paginator() -> DescribeBudgetActionHistoriesPaginator:
+    return Session().client("budgets").get_paginator("describe_budget_action_histories"))
 ```
 
 - [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
@@ -153,16 +84,23 @@ from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator,
 - [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
 - [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_budgets.literals import ActionStatusType
 
-```python
-from mypy_boto3_budgets.literals import ActionStatusType, ...
+def get_value() -> ActionStatusType:
+    return "EXECUTION_FAILURE"
 ```
 
 - [ActionStatusType](./literals.md#actionstatustype)
@@ -192,17 +130,21 @@ from mypy_boto3_budgets.literals import ActionStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef
 
-```python
-from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef, ...
+def get_value() -> ActionHistoryDetailsTypeDef:
+    return {
+        "Message": ...,
+        "Action": ...,
+    }
 ```
 
 - [ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef)
@@ -227,24 +169,32 @@ from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef, ...
 - [DeleteBudgetRequestRequestTypeDef](./type_defs.md#deletebudgetrequestrequesttypedef)
 - [DeleteNotificationRequestRequestTypeDef](./type_defs.md#deletenotificationrequestrequesttypedef)
 - [DeleteSubscriberRequestRequestTypeDef](./type_defs.md#deletesubscriberrequestrequesttypedef)
+- [DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef](./type_defs.md#describebudgetactionhistoriesrequestdescribebudgetactionhistoriespaginatetypedef)
 - [DescribeBudgetActionHistoriesRequestRequestTypeDef](./type_defs.md#describebudgetactionhistoriesrequestrequesttypedef)
 - [DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef)
 - [DescribeBudgetActionRequestRequestTypeDef](./type_defs.md#describebudgetactionrequestrequesttypedef)
 - [DescribeBudgetActionResponseTypeDef](./type_defs.md#describebudgetactionresponsetypedef)
+- [DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef](./type_defs.md#describebudgetactionsforaccountrequestdescribebudgetactionsforaccountpaginatetypedef)
 - [DescribeBudgetActionsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetactionsforaccountrequestrequesttypedef)
 - [DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef)
+- [DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef](./type_defs.md#describebudgetactionsforbudgetrequestdescribebudgetactionsforbudgetpaginatetypedef)
 - [DescribeBudgetActionsForBudgetRequestRequestTypeDef](./type_defs.md#describebudgetactionsforbudgetrequestrequesttypedef)
 - [DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)
+- [DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestdescribebudgetnotificationsforaccountpaginatetypedef)
 - [DescribeBudgetNotificationsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestrequesttypedef)
 - [DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef)
+- [DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef](./type_defs.md#describebudgetperformancehistoryrequestdescribebudgetperformancehistorypaginatetypedef)
 - [DescribeBudgetPerformanceHistoryRequestRequestTypeDef](./type_defs.md#describebudgetperformancehistoryrequestrequesttypedef)
 - [DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef)
 - [DescribeBudgetRequestRequestTypeDef](./type_defs.md#describebudgetrequestrequesttypedef)
 - [DescribeBudgetResponseTypeDef](./type_defs.md#describebudgetresponsetypedef)
+- [DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef](./type_defs.md#describebudgetsrequestdescribebudgetspaginatetypedef)
 - [DescribeBudgetsRequestRequestTypeDef](./type_defs.md#describebudgetsrequestrequesttypedef)
 - [DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef)
+- [DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef](./type_defs.md#describenotificationsforbudgetrequestdescribenotificationsforbudgetpaginatetypedef)
 - [DescribeNotificationsForBudgetRequestRequestTypeDef](./type_defs.md#describenotificationsforbudgetrequestrequesttypedef)
 - [DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef)
+- [DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef](./type_defs.md#describesubscribersfornotificationrequestdescribesubscribersfornotificationpaginatetypedef)
 - [DescribeSubscribersForNotificationRequestRequestTypeDef](./type_defs.md#describesubscribersfornotificationrequestrequesttypedef)
 - [DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef)
 - [ExecuteBudgetActionRequestRequestTypeDef](./type_defs.md#executebudgetactionrequestrequesttypedef)
@@ -265,3 +215,4 @@ from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef, ...
 - [UpdateBudgetRequestRequestTypeDef](./type_defs.md#updatebudgetrequestrequesttypedef)
 - [UpdateNotificationRequestRequestTypeDef](./type_defs.md#updatenotificationrequestrequesttypedef)
 - [UpdateSubscriberRequestRequestTypeDef](./type_defs.md#updatesubscriberrequestrequesttypedef)
+

@@ -1,43 +1,18 @@
-<a id="paginators-for-boto3-elasticache-module"></a>
-
-# Paginators for boto3 ElastiCache module
+# Paginators
 
 > [Index](../README.md) > [ElastiCache](./README.md) > Paginators
 
-Auto-generated documentation for
-[ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
-type annotations stubs module
-[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+!!! note ""
 
-- [Paginators for boto3 ElastiCache module](#paginators-for-boto3-elasticache-module)
-  - [DescribeCacheClustersPaginator](#describecacheclusterspaginator)
-  - [DescribeCacheEngineVersionsPaginator](#describecacheengineversionspaginator)
-  - [DescribeCacheParameterGroupsPaginator](#describecacheparametergroupspaginator)
-  - [DescribeCacheParametersPaginator](#describecacheparameterspaginator)
-  - [DescribeCacheSecurityGroupsPaginator](#describecachesecuritygroupspaginator)
-  - [DescribeCacheSubnetGroupsPaginator](#describecachesubnetgroupspaginator)
-  - [DescribeEngineDefaultParametersPaginator](#describeenginedefaultparameterspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeGlobalReplicationGroupsPaginator](#describeglobalreplicationgroupspaginator)
-  - [DescribeReplicationGroupsPaginator](#describereplicationgroupspaginator)
-  - [DescribeReservedCacheNodesPaginator](#describereservedcachenodespaginator)
-  - [DescribeReservedCacheNodesOfferingsPaginator](#describereservedcachenodesofferingspaginator)
-  - [DescribeServiceUpdatesPaginator](#describeserviceupdatespaginator)
-  - [DescribeSnapshotsPaginator](#describesnapshotspaginator)
-  - [DescribeUpdateActionsPaginator](#describeupdateactionspaginator)
-  - [DescribeUserGroupsPaginator](#describeusergroupspaginator)
-  - [DescribeUsersPaginator](#describeuserspaginator)
-
-<a id="describecacheclusterspaginator"></a>
+    Auto-generated documentation for [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
+    type annotations stubs module [mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 ## DescribeCacheClustersPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_clusters")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator
@@ -46,30 +21,42 @@ def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
     return Session().client("elasticache").get_paginator("describe_cache_clusters")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheClusters)
 
-Arguments for `DescribeCacheClustersPaginator.paginate` method:
+### paginate
 
-- `CacheClusterId`: `str`
-- `ShowCacheNodeInfo`: `bool`
-- `ShowCacheClustersNotInReplicationGroups`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheClustersPaginator.paginate` method.
 
-`DescribeCacheClustersPaginator.paginate` returns
-`_PageIterator`\[[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheClusterId: str = ...,
+    ShowCacheNodeInfo: bool = ...,
+    ShowCacheClustersNotInReplicationGroups: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheClusterMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecacheengineversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheClustersMessageDescribeCacheClustersPaginateTypeDef = {  # (1)
+    "CacheClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheClustersMessageDescribeCacheClustersPaginateTypeDef](./type_defs.md#describecacheclustersmessagedescribecacheclusterspaginatetypedef) 
 ## DescribeCacheEngineVersionsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_engine_versions")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_engine_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheEngineVersionsPaginator
@@ -78,31 +65,43 @@ def get_describe_cache_engine_versions_paginator() -> DescribeCacheEngineVersion
     return Session().client("elasticache").get_paginator("describe_cache_engine_versions")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheEngineVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheEngineVersions)
 
-Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
+### paginate
 
-- `Engine`: `str`
-- `EngineVersion`: `str`
-- `CacheParameterGroupFamily`: `str`
-- `DefaultOnly`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheEngineVersionsPaginator.paginate` method.
 
-`DescribeCacheEngineVersionsPaginator.paginate` returns
-`_PageIterator`\[[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Engine: str = ...,
+    EngineVersion: str = ...,
+    CacheParameterGroupFamily: str = ...,
+    DefaultOnly: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheEngineVersionMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecacheparametergroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheEngineVersionsMessageDescribeCacheEngineVersionsPaginateTypeDef = {  # (1)
+    "Engine": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheEngineVersionsMessageDescribeCacheEngineVersionsPaginateTypeDef](./type_defs.md#describecacheengineversionsmessagedescribecacheengineversionspaginatetypedef) 
 ## DescribeCacheParameterGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheParameterGroupsPaginator
@@ -111,28 +110,40 @@ def get_describe_cache_parameter_groups_paginator() -> DescribeCacheParameterGro
     return Session().client("elasticache").get_paginator("describe_cache_parameter_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheParameterGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameterGroups)
 
-Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
+### paginate
 
-- `CacheParameterGroupName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheParameterGroupsPaginator.paginate` method.
 
-`DescribeCacheParameterGroupsPaginator.paginate` returns
-`_PageIterator`\[[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheParameterGroupName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheParameterGroupsMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecacheparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheParameterGroupsMessageDescribeCacheParameterGroupsPaginateTypeDef = {  # (1)
+    "CacheParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheParameterGroupsMessageDescribeCacheParameterGroupsPaginateTypeDef](./type_defs.md#describecacheparametergroupsmessagedescribecacheparametergroupspaginatetypedef) 
 ## DescribeCacheParametersPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_parameters")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheParametersPaginator
@@ -141,29 +152,41 @@ def get_describe_cache_parameters_paginator() -> DescribeCacheParametersPaginato
     return Session().client("elasticache").get_paginator("describe_cache_parameters")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheParameters)
 
-Arguments for `DescribeCacheParametersPaginator.paginate` method:
+### paginate
 
-- `CacheParameterGroupName`: `str` *(required)*
-- `Source`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheParametersPaginator.paginate` method.
 
-`DescribeCacheParametersPaginator.paginate` returns
-`_PageIterator`\[[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheParameterGroupName: str,
+    Source: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheParameterGroupDetailsTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecachesecuritygroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheParametersMessageDescribeCacheParametersPaginateTypeDef = {  # (1)
+    "CacheParameterGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheParametersMessageDescribeCacheParametersPaginateTypeDef](./type_defs.md#describecacheparametersmessagedescribecacheparameterspaginatetypedef) 
 ## DescribeCacheSecurityGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_security_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_security_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheSecurityGroupsPaginator
@@ -172,28 +195,40 @@ def get_describe_cache_security_groups_paginator() -> DescribeCacheSecurityGroup
     return Session().client("elasticache").get_paginator("describe_cache_security_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheSecurityGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSecurityGroups)
 
-Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
+### paginate
 
-- `CacheSecurityGroupName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheSecurityGroupsPaginator.paginate` method.
 
-`DescribeCacheSecurityGroupsPaginator.paginate` returns
-`_PageIterator`\[[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheSecurityGroupName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheSecurityGroupMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describecachesubnetgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheSecurityGroupsMessageDescribeCacheSecurityGroupsPaginateTypeDef = {  # (1)
+    "CacheSecurityGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheSecurityGroupsMessageDescribeCacheSecurityGroupsPaginateTypeDef](./type_defs.md#describecachesecuritygroupsmessagedescribecachesecuritygroupspaginatetypedef) 
 ## DescribeCacheSubnetGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeCacheSubnetGroupsPaginator
@@ -202,28 +237,40 @@ def get_describe_cache_subnet_groups_paginator() -> DescribeCacheSubnetGroupsPag
     return Session().client("elasticache").get_paginator("describe_cache_subnet_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeCacheSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeCacheSubnetGroups)
 
-Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
+### paginate
 
-- `CacheSubnetGroupName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCacheSubnetGroupsPaginator.paginate` method.
 
-`DescribeCacheSubnetGroupsPaginator.paginate` returns
-`_PageIterator`\[[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheSubnetGroupName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[CacheSubnetGroupMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeenginedefaultparameterspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCacheSubnetGroupsMessageDescribeCacheSubnetGroupsPaginateTypeDef = {  # (1)
+    "CacheSubnetGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCacheSubnetGroupsMessageDescribeCacheSubnetGroupsPaginateTypeDef](./type_defs.md#describecachesubnetgroupsmessagedescribecachesubnetgroupspaginatetypedef) 
 ## DescribeEngineDefaultParametersPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_engine_default_parameters")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_engine_default_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeEngineDefaultParametersPaginator
@@ -232,28 +279,40 @@ def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultP
     return Session().client("elasticache").get_paginator("describe_engine_default_parameters")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeEngineDefaultParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEngineDefaultParameters)
 
-Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
+### paginate
 
-- `CacheParameterGroupFamily`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEngineDefaultParametersPaginator.paginate` method.
 
-`DescribeEngineDefaultParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CacheParameterGroupFamily: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeEngineDefaultParametersResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef = {  # (1)
+    "CacheParameterGroupFamily": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef](./type_defs.md#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeEventsPaginator
@@ -262,32 +321,45 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("elasticache").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `SourceIdentifier`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[EventsMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeglobalreplicationgroupspaginator"></a>
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageDescribeEventsPaginateTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef) 
 ## DescribeGlobalReplicationGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_global_replication_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_global_replication_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeGlobalReplicationGroupsPaginator
@@ -296,29 +368,41 @@ def get_describe_global_replication_groups_paginator() -> DescribeGlobalReplicat
     return Session().client("elasticache").get_paginator("describe_global_replication_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeGlobalReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeGlobalReplicationGroups)
 
-Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
+### paginate
 
-- `GlobalReplicationGroupId`: `str`
-- `ShowMemberInfo`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGlobalReplicationGroupsPaginator.paginate` method.
 
-`DescribeGlobalReplicationGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GlobalReplicationGroupId: str = ...,
+    ShowMemberInfo: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGlobalReplicationGroupsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereplicationgroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGlobalReplicationGroupsMessageDescribeGlobalReplicationGroupsPaginateTypeDef = {  # (1)
+    "GlobalReplicationGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGlobalReplicationGroupsMessageDescribeGlobalReplicationGroupsPaginateTypeDef](./type_defs.md#describeglobalreplicationgroupsmessagedescribeglobalreplicationgroupspaginatetypedef) 
 ## DescribeReplicationGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_replication_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_replication_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeReplicationGroupsPaginator
@@ -327,28 +411,40 @@ def get_describe_replication_groups_paginator() -> DescribeReplicationGroupsPagi
     return Session().client("elasticache").get_paginator("describe_replication_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeReplicationGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReplicationGroups)
 
-Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
+### paginate
 
-- `ReplicationGroupId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplicationGroupsPaginator.paginate` method.
 
-`DescribeReplicationGroupsPaginator.paginate` returns
-`_PageIterator`\[[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReplicationGroupId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ReplicationGroupMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservedcachenodespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationGroupsMessageDescribeReplicationGroupsPaginateTypeDef = {  # (1)
+    "ReplicationGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationGroupsMessageDescribeReplicationGroupsPaginateTypeDef](./type_defs.md#describereplicationgroupsmessagedescribereplicationgroupspaginatetypedef) 
 ## DescribeReservedCacheNodesPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeReservedCacheNodesPaginator
@@ -357,33 +453,45 @@ def get_describe_reserved_cache_nodes_paginator() -> DescribeReservedCacheNodesP
     return Session().client("elasticache").get_paginator("describe_reserved_cache_nodes")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeReservedCacheNodes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodes)
 
-Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
+### paginate
 
-- `ReservedCacheNodeId`: `str`
-- `ReservedCacheNodesOfferingId`: `str`
-- `CacheNodeType`: `str`
-- `Duration`: `str`
-- `ProductDescription`: `str`
-- `OfferingType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedCacheNodesPaginator.paginate` method.
 
-`DescribeReservedCacheNodesPaginator.paginate` returns
-`_PageIterator`\[[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedCacheNodeId: str = ...,
+    ReservedCacheNodesOfferingId: str = ...,
+    CacheNodeType: str = ...,
+    Duration: str = ...,
+    ProductDescription: str = ...,
+    OfferingType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ReservedCacheNodeMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereservedcachenodesofferingspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedCacheNodesMessageDescribeReservedCacheNodesPaginateTypeDef = {  # (1)
+    "ReservedCacheNodeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedCacheNodesMessageDescribeReservedCacheNodesPaginateTypeDef](./type_defs.md#describereservedcachenodesmessagedescribereservedcachenodespaginatetypedef) 
 ## DescribeReservedCacheNodesOfferingsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeReservedCacheNodesOfferingsPaginator
@@ -392,32 +500,44 @@ def get_describe_reserved_cache_nodes_offerings_paginator() -> DescribeReservedC
     return Session().client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeReservedCacheNodesOfferings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeReservedCacheNodesOfferings)
 
-Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
+### paginate
 
-- `ReservedCacheNodesOfferingId`: `str`
-- `CacheNodeType`: `str`
-- `Duration`: `str`
-- `ProductDescription`: `str`
-- `OfferingType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReservedCacheNodesOfferingsPaginator.paginate` method.
 
-`DescribeReservedCacheNodesOfferingsPaginator.paginate` returns
-`_PageIterator`\[[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReservedCacheNodesOfferingId: str = ...,
+    CacheNodeType: str = ...,
+    Duration: str = ...,
+    ProductDescription: str = ...,
+    OfferingType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ReservedCacheNodesOfferingMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeserviceupdatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReservedCacheNodesOfferingsMessageDescribeReservedCacheNodesOfferingsPaginateTypeDef = {  # (1)
+    "ReservedCacheNodesOfferingId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReservedCacheNodesOfferingsMessageDescribeReservedCacheNodesOfferingsPaginateTypeDef](./type_defs.md#describereservedcachenodesofferingsmessagedescribereservedcachenodesofferingspaginatetypedef) 
 ## DescribeServiceUpdatesPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_service_updates")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_service_updates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeServiceUpdatesPaginator
@@ -426,30 +546,42 @@ def get_describe_service_updates_paginator() -> DescribeServiceUpdatesPaginator:
     return Session().client("elasticache").get_paginator("describe_service_updates")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeServiceUpdates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeServiceUpdates)
 
-Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
+### paginate
 
-- `ServiceUpdateName`: `str`
-- `ServiceUpdateStatus`:
-  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeServiceUpdatesPaginator.paginate` method.
 
-`DescribeServiceUpdatesPaginator.paginate` returns
-`_PageIterator`\[[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceUpdateName: str = ...,
+    ServiceUpdateStatus: Sequence[ServiceUpdateStatusType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ServiceUpdatesMessageTypeDef]:  # (3)
+    ...
+```
 
-<a id="describesnapshotspaginator"></a>
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceUpdatesMessageDescribeServiceUpdatesPaginateTypeDef = {  # (1)
+    "ServiceUpdateName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeServiceUpdatesMessageDescribeServiceUpdatesPaginateTypeDef](./type_defs.md#describeserviceupdatesmessagedescribeserviceupdatespaginatetypedef) 
 ## DescribeSnapshotsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_snapshots")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_snapshots")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeSnapshotsPaginator
@@ -458,32 +590,44 @@ def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
     return Session().client("elasticache").get_paginator("describe_snapshots")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeSnapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeSnapshots)
 
-Arguments for `DescribeSnapshotsPaginator.paginate` method:
+### paginate
 
-- `ReplicationGroupId`: `str`
-- `CacheClusterId`: `str`
-- `SnapshotName`: `str`
-- `SnapshotSource`: `str`
-- `ShowNodeGroupConfig`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSnapshotsPaginator.paginate` method.
 
-`DescribeSnapshotsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReplicationGroupId: str = ...,
+    CacheClusterId: str = ...,
+    SnapshotName: str = ...,
+    SnapshotSource: str = ...,
+    ShowNodeGroupConfig: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSnapshotsListMessageTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeupdateactionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsMessageDescribeSnapshotsPaginateTypeDef = {  # (1)
+    "ReplicationGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSnapshotsMessageDescribeSnapshotsPaginateTypeDef](./type_defs.md#describesnapshotsmessagedescribesnapshotspaginatetypedef) 
 ## DescribeUpdateActionsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_update_actions")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_update_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeUpdateActionsPaginator
@@ -492,38 +636,50 @@ def get_describe_update_actions_paginator() -> DescribeUpdateActionsPaginator:
     return Session().client("elasticache").get_paginator("describe_update_actions")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeUpdateActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUpdateActions)
 
-Arguments for `DescribeUpdateActionsPaginator.paginate` method:
+### paginate
 
-- `ServiceUpdateName`: `str`
-- `ReplicationGroupIds`: `Sequence`\[`str`\]
-- `CacheClusterIds`: `Sequence`\[`str`\]
-- `Engine`: `str`
-- `ServiceUpdateStatus`:
-  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
-- `ServiceUpdateTimeRange`:
-  [TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef)
-- `UpdateActionStatus`:
-  `Sequence`\[[UpdateActionStatusType](./literals.md#updateactionstatustype)\]
-- `ShowNodeLevelUpdateStatus`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUpdateActionsPaginator.paginate` method.
 
-`DescribeUpdateActionsPaginator.paginate` returns
-`_PageIterator`\[[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceUpdateName: str = ...,
+    ReplicationGroupIds: Sequence[str] = ...,
+    CacheClusterIds: Sequence[str] = ...,
+    Engine: str = ...,
+    ServiceUpdateStatus: Sequence[ServiceUpdateStatusType] = ...,  # (1)
+    ServiceUpdateTimeRange: TimeRangeFilterTypeDef = ...,  # (2)
+    UpdateActionStatus: Sequence[UpdateActionStatusType] = ...,  # (3)
+    ShowNodeLevelUpdateStatus: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[UpdateActionsMessageTypeDef]:  # (5)
+    ...
+```
 
-<a id="describeusergroupspaginator"></a>
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
+2. See [:material-code-braces: TimeRangeFilterTypeDef](./type_defs.md#timerangefiltertypedef) 
+3. See [:material-code-brackets: UpdateActionStatusType](./literals.md#updateactionstatustype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUpdateActionsMessageDescribeUpdateActionsPaginateTypeDef = {  # (1)
+    "ServiceUpdateName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUpdateActionsMessageDescribeUpdateActionsPaginateTypeDef](./type_defs.md#describeupdateactionsmessagedescribeupdateactionspaginatetypedef) 
 ## DescribeUserGroupsPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_user_groups")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_user_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeUserGroupsPaginator
@@ -532,28 +688,40 @@ def get_describe_user_groups_paginator() -> DescribeUserGroupsPaginator:
     return Session().client("elasticache").get_paginator("describe_user_groups")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeUserGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUserGroups)
 
-Arguments for `DescribeUserGroupsPaginator.paginate` method:
+### paginate
 
-- `UserGroupId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUserGroupsPaginator.paginate` method.
 
-`DescribeUserGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    UserGroupId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeUserGroupsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeuserspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUserGroupsMessageDescribeUserGroupsPaginateTypeDef = {  # (1)
+    "UserGroupId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUserGroupsMessageDescribeUserGroupsPaginateTypeDef](./type_defs.md#describeusergroupsmessagedescribeusergroupspaginatetypedef) 
 ## DescribeUsersPaginator
 
-Type annotations for
-`boto3.client("elasticache").get_paginator("describe_users")`.
+Type annotations and code completion for `#!python boto3.client("elasticache").get_paginator("describe_users")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_elasticache.paginator import DescribeUsersPaginator
@@ -562,16 +730,34 @@ def get_describe_users_paginator() -> DescribeUsersPaginator:
     return Session().client("elasticache").get_paginator("describe_users")
 ```
 
-Boto3 documentation:
-[ElastiCache.Paginator.DescribeUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Paginator.DescribeUsers)
 
-Arguments for `DescribeUsersPaginator.paginate` method:
+### paginate
 
-- `Engine`: `str`
-- `UserId`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeUsersPaginator.paginate` method.
 
-`DescribeUsersPaginator.paginate` returns
-`_PageIterator`\[[DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Engine: str = ...,
+    UserId: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeUsersResultTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeUsersMessageDescribeUsersPaginateTypeDef = {  # (1)
+    "Engine": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeUsersMessageDescribeUsersPaginateTypeDef](./type_defs.md#describeusersmessagedescribeuserspaginatetypedef) 

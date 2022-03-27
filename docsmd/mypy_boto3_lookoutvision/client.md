@@ -1,55 +1,18 @@
-<a id="lookoutforvisionclient-for-boto3-lookoutforvision-module"></a>
+# LookoutforVisionClient
 
-# LookoutforVisionClient for boto3 LookoutforVision module
+> [Index](../README.md) > [LookoutforVision](./README.md) > LookoutforVisionClient
 
-> [Index](../README.md) > [LookoutforVision](./README.md) >
-> LookoutforVisionClient
+!!! note ""
 
-Auto-generated documentation for
-[LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
-type annotations stubs module
-[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
-
-- [LookoutforVisionClient for boto3 LookoutforVision module](#lookoutforvisionclient-for-boto3-lookoutforvision-module)
-  - [LookoutforVisionClient](#lookoutforvisionclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_dataset](#create_dataset)
-    - [create_model](#create_model)
-    - [create_project](#create_project)
-    - [delete_dataset](#delete_dataset)
-    - [delete_model](#delete_model)
-    - [delete_project](#delete_project)
-    - [describe_dataset](#describe_dataset)
-    - [describe_model](#describe_model)
-    - [describe_model_packaging_job](#describe_model_packaging_job)
-    - [describe_project](#describe_project)
-    - [detect_anomalies](#detect_anomalies)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_dataset_entries](#list_dataset_entries)
-    - [list_model_packaging_jobs](#list_model_packaging_jobs)
-    - [list_models](#list_models)
-    - [list_projects](#list_projects)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [start_model](#start_model)
-    - [start_model_packaging_job](#start_model_packaging_job)
-    - [stop_model](#stop_model)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_dataset_entries](#update_dataset_entries)
-    - [get_paginator](#get_paginator)
-
-<a id="lookoutforvisionclient"></a>
+    Auto-generated documentation for [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
+    type annotations stubs module [mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ## LookoutforVisionClient
 
-Type annotations for `boto3.client("lookoutvision")`
+Type annotations and code completion for `#!python boto3.client("lookoutvision")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 
@@ -57,617 +20,795 @@ def get_lookoutvision_client() -> LookoutforVisionClient:
     return Session().client("lookoutvision")
 ```
 
-Boto3 documentation:
-[LookoutforVision.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("lookoutvision").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("lookoutvision")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_lookoutvision.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-LookoutforVisionClient exceptions.
-
-Type annotations for `boto3.client("lookoutvision").exceptions` method.
-
-Boto3 documentation:
-[LookoutforVision.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("lookoutvision").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
 
-Boto3 documentation:
-[LookoutforVision.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_dataset"></a>
-
-### create_dataset
+### create\_dataset
 
 Creates a new dataset in an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").create_dataset` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").create_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
 
-Boto3 documentation:
-[LookoutforVision.Client.create_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_dataset)
+```python title="Method definition"
+def create_dataset(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+    DatasetSource: DatasetSourceTypeDef = ...,  # (1)
+    ClientToken: str = ...,
+) -> CreateDatasetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-braces: DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef) 
+2. See [:material-code-braces: CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
-- `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDatasetRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+}
 
-Returns
-[CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_dataset(**kwargs)
+```
 
-<a id="create\_model"></a>
+1. See [:material-code-braces: CreateDatasetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_model
+### create\_model
 
-Creates a new version of a model within an an Amazon Lookout for Vision
-project.
+Creates a new version of a model within an an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").create_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").create_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
 
-Boto3 documentation:
-[LookoutforVision.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_model)
+```python title="Method definition"
+def create_model(
+    self,
+    *,
+    ProjectName: str,
+    OutputConfig: OutputConfigTypeDef,  # (1)
+    Description: str = ...,
+    ClientToken: str = ...,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateModelResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
+1. See [:material-code-braces: OutputConfigTypeDef](./type_defs.md#outputconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
-  *(required)*
-- `Description`: `str`
-- `ClientToken`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateModelRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "OutputConfig": ...,
+}
 
-Returns
-[CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
+parent.create_model(**kwargs)
+```
 
-<a id="create\_project"></a>
+1. See [:material-code-braces: CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef) 
 
-### create_project
+### create\_project
 
 Creates an empty Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").create_project` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").create_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
 
-Boto3 documentation:
-[LookoutforVision.Client.create_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.create_project)
+```python title="Method definition"
+def create_project(
+    self,
+    *,
+    ProjectName: str,
+    ClientToken: str = ...,
+) -> CreateProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef).
+1. See [:material-code-braces: CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateProjectRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns
-[CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
+parent.create_project(**kwargs)
+```
 
-<a id="delete\_dataset"></a>
+1. See [:material-code-braces: CreateProjectRequestRequestTypeDef](./type_defs.md#createprojectrequestrequesttypedef) 
 
-### delete_dataset
+### delete\_dataset
 
 Deletes an existing Amazon Lookout for Vision `dataset` .
 
-Type annotations for `boto3.client("lookoutvision").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
 
-Boto3 documentation:
-[LookoutforVision.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+    ClientToken: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dataset(**kwargs)
+```
 
-<a id="delete\_model"></a>
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### delete_model
+### delete\_model
 
 Deletes an Amazon Lookout for Vision model.
 
-Type annotations for `boto3.client("lookoutvision").delete_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").delete_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
 
-Boto3 documentation:
-[LookoutforVision.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_model)
+```python title="Method definition"
+def delete_model(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+    ClientToken: str = ...,
+) -> DeleteModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
+1. See [:material-code-braces: DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteModelRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+}
 
-Returns
-[DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef).
+parent.delete_model(**kwargs)
+```
 
-<a id="delete\_project"></a>
+1. See [:material-code-braces: DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef) 
 
-### delete_project
+### delete\_project
 
 Deletes an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").delete_project` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").delete_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
 
-Boto3 documentation:
-[LookoutforVision.Client.delete_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.delete_project)
+```python title="Method definition"
+def delete_project(
+    self,
+    *,
+    ProjectName: str,
+    ClientToken: str = ...,
+) -> DeleteProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef).
+1. See [:material-code-braces: DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteProjectRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns
-[DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+parent.delete_project(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DeleteProjectRequestRequestTypeDef](./type_defs.md#deleteprojectrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Describe an Amazon Lookout for Vision dataset.
 
-Type annotations for `boto3.client("lookoutvision").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
 
-Boto3 documentation:
-[LookoutforVision.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_model"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_model
+### describe\_model
 
 Describes a version of an Amazon Lookout for Vision model.
 
-Type annotations for `boto3.client("lookoutvision").describe_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").describe_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
 
-Boto3 documentation:
-[LookoutforVision.Client.describe_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model)
+```python title="Method definition"
+def describe_model(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+) -> DescribeModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef).
+1. See [:material-code-braces: DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeModelRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+}
 
-Returns
-[DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
+parent.describe_model(**kwargs)
+```
 
-<a id="describe\_model\_packaging\_job"></a>
+1. See [:material-code-braces: DescribeModelRequestRequestTypeDef](./type_defs.md#describemodelrequestrequesttypedef) 
 
-### describe_model_packaging_job
+### describe\_model\_packaging\_job
 
 Describes an Amazon Lookout for Vision model packaging job.
 
-Type annotations for
-`boto3.client("lookoutvision").describe_model_packaging_job` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").describe_model_packaging_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model_packaging_job)
 
-Boto3 documentation:
-[LookoutforVision.Client.describe_model_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_model_packaging_job)
+```python title="Method definition"
+def describe_model_packaging_job(
+    self,
+    *,
+    ProjectName: str,
+    JobName: str,
+) -> DescribeModelPackagingJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeModelPackagingJobRequestRequestTypeDef](./type_defs.md#describemodelpackagingjobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeModelPackagingJobResponseTypeDef](./type_defs.md#describemodelpackagingjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `JobName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeModelPackagingJobRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "JobName": ...,
+}
 
-Returns
-[DescribeModelPackagingJobResponseTypeDef](./type_defs.md#describemodelpackagingjobresponsetypedef).
+parent.describe_model_packaging_job(**kwargs)
+```
 
-<a id="describe\_project"></a>
+1. See [:material-code-braces: DescribeModelPackagingJobRequestRequestTypeDef](./type_defs.md#describemodelpackagingjobrequestrequesttypedef) 
 
-### describe_project
+### describe\_project
 
 Describes an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").describe_project` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").describe_project` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
 
-Boto3 documentation:
-[LookoutforVision.Client.describe_project](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.describe_project)
+```python title="Method definition"
+def describe_project(
+    self,
+    *,
+    ProjectName: str,
+) -> DescribeProjectResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProjectRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns
-[DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+parent.describe_project(**kwargs)
+```
 
-<a id="detect\_anomalies"></a>
+1. See [:material-code-braces: DescribeProjectRequestRequestTypeDef](./type_defs.md#describeprojectrequestrequesttypedef) 
 
-### detect_anomalies
+### detect\_anomalies
 
 Detects anomalies in an image that you supply.
 
-Type annotations for `boto3.client("lookoutvision").detect_anomalies` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").detect_anomalies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
 
-Boto3 documentation:
-[LookoutforVision.Client.detect_anomalies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.detect_anomalies)
+```python title="Method definition"
+def detect_anomalies(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+    Body: Union[bytes, IO[bytes], StreamingBody],
+    ContentType: str,
+) -> DetectAnomaliesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DetectAnomaliesRequestRequestTypeDef](./type_defs.md#detectanomaliesrequestrequesttypedef).
+1. See [:material-code-braces: DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
-- `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `ContentType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetectAnomaliesRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+    "Body": ...,
+    "ContentType": ...,
+}
 
-Returns
-[DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef).
+parent.detect_anomalies(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DetectAnomaliesRequestRequestTypeDef](./type_defs.md#detectanomaliesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("lookoutvision").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
 
-Boto3 documentation:
-[LookoutforVision.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_dataset\_entries"></a>
-
-### list_dataset_entries
+### list\_dataset\_entries
 
 Lists the JSON Lines within a dataset.
 
-Type annotations for `boto3.client("lookoutvision").list_dataset_entries`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").list_dataset_entries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
 
-Boto3 documentation:
-[LookoutforVision.Client.list_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_dataset_entries)
+```python title="Method definition"
+def list_dataset_entries(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+    Labeled: bool = ...,
+    AnomalyClass: str = ...,
+    BeforeCreationDate: Union[datetime, str] = ...,
+    AfterCreationDate: Union[datetime, str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SourceRefContains: str = ...,
+) -> ListDatasetEntriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
-- `Labeled`: `bool`
-- `AnomalyClass`: `str`
-- `BeforeCreationDate`: `Union`\[`datetime`, `str`\]
-- `AfterCreationDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SourceRefContains`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetEntriesRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+}
 
-Returns
-[ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
+parent.list_dataset_entries(**kwargs)
+```
 
-<a id="list\_model\_packaging\_jobs"></a>
+1. See [:material-code-braces: ListDatasetEntriesRequestRequestTypeDef](./type_defs.md#listdatasetentriesrequestrequesttypedef) 
 
-### list_model_packaging_jobs
+### list\_model\_packaging\_jobs
 
-Lists the model packaging jobs created for an Amazon Lookout for Vision
-project.
+Lists the model packaging jobs created for an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").list_model_packaging_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").list_model_packaging_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_model_packaging_jobs)
 
-Boto3 documentation:
-[LookoutforVision.Client.list_model_packaging_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_model_packaging_jobs)
+```python title="Method definition"
+def list_model_packaging_jobs(
+    self,
+    *,
+    ProjectName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListModelPackagingJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListModelPackagingJobsRequestRequestTypeDef](./type_defs.md#listmodelpackagingjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListModelPackagingJobsRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns
-[ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef).
+parent.list_model_packaging_jobs(**kwargs)
+```
 
-<a id="list\_models"></a>
+1. See [:material-code-braces: ListModelPackagingJobsRequestRequestTypeDef](./type_defs.md#listmodelpackagingjobsrequestrequesttypedef) 
 
-### list_models
+### list\_models
 
 Lists the versions of a model in an Amazon Lookout for Vision project.
 
-Type annotations for `boto3.client("lookoutvision").list_models` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").list_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
 
-Boto3 documentation:
-[LookoutforVision.Client.list_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_models)
+```python title="Method definition"
+def list_models(
+    self,
+    *,
+    ProjectName: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListModelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef).
+1. See [:material-code-braces: ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListModelsRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+}
 
-Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
+parent.list_models(**kwargs)
+```
 
-<a id="list\_projects"></a>
+1. See [:material-code-braces: ListModelsRequestRequestTypeDef](./type_defs.md#listmodelsrequestrequesttypedef) 
 
-### list_projects
+### list\_projects
 
 Lists the Amazon Lookout for Vision projects in your AWS account.
 
-Type annotations for `boto3.client("lookoutvision").list_projects` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").list_projects` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
 
-Boto3 documentation:
-[LookoutforVision.Client.list_projects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_projects)
+```python title="Method definition"
+def list_projects(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListProjectsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef).
+1. See [:material-code-braces: ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListProjectsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+parent.list_projects(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListProjectsRequestRequestTypeDef](./type_defs.md#listprojectsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns a list of tags attached to the specified Amazon Lookout for Vision
 model.
 
-Type annotations for `boto3.client("lookoutvision").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[LookoutforVision.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="start\_model"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### start_model
+### start\_model
 
 Starts the running of the version of an Amazon Lookout for Vision model.
 
-Type annotations for `boto3.client("lookoutvision").start_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").start_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
 
-Boto3 documentation:
-[LookoutforVision.Client.start_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model)
+```python title="Method definition"
+def start_model(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+    MinInferenceUnits: int,
+    ClientToken: str = ...,
+) -> StartModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartModelRequestRequestTypeDef](./type_defs.md#startmodelrequestrequesttypedef).
+1. See [:material-code-braces: StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
-- `MinInferenceUnits`: `int` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartModelRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+    "MinInferenceUnits": ...,
+}
 
-Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
+parent.start_model(**kwargs)
+```
 
-<a id="start\_model\_packaging\_job"></a>
+1. See [:material-code-braces: StartModelRequestRequestTypeDef](./type_defs.md#startmodelrequestrequesttypedef) 
 
-### start_model_packaging_job
+### start\_model\_packaging\_job
 
 Starts an Amazon Lookout for Vision model packaging job.
 
-Type annotations for `boto3.client("lookoutvision").start_model_packaging_job`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").start_model_packaging_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model_packaging_job)
 
-Boto3 documentation:
-[LookoutforVision.Client.start_model_packaging_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.start_model_packaging_job)
+```python title="Method definition"
+def start_model_packaging_job(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+    Configuration: ModelPackagingConfigurationTypeDef,  # (1)
+    JobName: str = ...,
+    Description: str = ...,
+    ClientToken: str = ...,
+) -> StartModelPackagingJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartModelPackagingJobRequestRequestTypeDef](./type_defs.md#startmodelpackagingjobrequestrequesttypedef).
+1. See [:material-code-braces: ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef) 
+2. See [:material-code-braces: StartModelPackagingJobResponseTypeDef](./type_defs.md#startmodelpackagingjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
-- `Configuration`:
-  [ModelPackagingConfigurationTypeDef](./type_defs.md#modelpackagingconfigurationtypedef)
-  *(required)*
-- `JobName`: `str`
-- `Description`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StartModelPackagingJobRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+    "Configuration": ...,
+}
 
-Returns
-[StartModelPackagingJobResponseTypeDef](./type_defs.md#startmodelpackagingjobresponsetypedef).
+parent.start_model_packaging_job(**kwargs)
+```
 
-<a id="stop\_model"></a>
+1. See [:material-code-braces: StartModelPackagingJobRequestRequestTypeDef](./type_defs.md#startmodelpackagingjobrequestrequesttypedef) 
 
-### stop_model
+### stop\_model
 
 Stops the hosting of a running model.
 
-Type annotations for `boto3.client("lookoutvision").stop_model` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").stop_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
 
-Boto3 documentation:
-[LookoutforVision.Client.stop_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.stop_model)
+```python title="Method definition"
+def stop_model(
+    self,
+    *,
+    ProjectName: str,
+    ModelVersion: str,
+    ClientToken: str = ...,
+) -> StopModelResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopModelRequestRequestTypeDef](./type_defs.md#stopmodelrequestrequesttypedef).
+1. See [:material-code-braces: StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `ModelVersion`: `str` *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: StopModelRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "ModelVersion": ...,
+}
 
-Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
+parent.stop_model(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopModelRequestRequestTypeDef](./type_defs.md#stopmodelrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more key-value tags to an Amazon Lookout for Vision model.
 
-Type annotations for `boto3.client("lookoutvision").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
 
-Boto3 documentation:
-[LookoutforVision.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from an Amazon Lookout for Vision model.
 
-Type annotations for `boto3.client("lookoutvision").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
 
-Boto3 documentation:
-[LookoutforVision.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_dataset\_entries"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_dataset_entries
+### update\_dataset\_entries
 
 Adds or updates one or more JSON Line entries in a dataset.
 
-Type annotations for `boto3.client("lookoutvision").update_dataset_entries`
-method.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").update_dataset_entries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
 
-Boto3 documentation:
-[LookoutforVision.Client.update_dataset_entries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.update_dataset_entries)
+```python title="Method definition"
+def update_dataset_entries(
+    self,
+    *,
+    ProjectName: str,
+    DatasetType: str,
+    Changes: Union[bytes, IO[bytes], StreamingBody],
+    ClientToken: str = ...,
+) -> UpdateDatasetEntriesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef).
+1. See [:material-code-braces: UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ProjectName`: `str` *(required)*
-- `DatasetType`: `str` *(required)*
-- `Changes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDatasetEntriesRequestRequestTypeDef = {  # (1)
+    "ProjectName": ...,
+    "DatasetType": ...,
+    "Changes": ...,
+}
 
-Returns
-[UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef).
+parent.update_dataset_entries(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateDatasetEntriesRequestRequestTypeDef](./type_defs.md#updatedatasetentriesrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("lookoutvision").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("lookoutvision").get_paginator` method with overloads.
 
-- `client.get_paginator("list_dataset_entries")` ->
-  [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
-- `client.get_paginator("list_model_packaging_jobs")` ->
-  [ListModelPackagingJobsPaginator](./paginators.md#listmodelpackagingjobspaginator)
-- `client.get_paginator("list_models")` ->
-  [ListModelsPaginator](./paginators.md#listmodelspaginator)
-- `client.get_paginator("list_projects")` ->
-  [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+- `client.get_paginator("list_dataset_entries")` -> [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
+- `client.get_paginator("list_model_packaging_jobs")` -> [ListModelPackagingJobsPaginator](./paginators.md#listmodelpackagingjobspaginator)
+- `client.get_paginator("list_models")` -> [ListModelsPaginator](./paginators.md#listmodelspaginator)
+- `client.get_paginator("list_projects")` -> [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+
+

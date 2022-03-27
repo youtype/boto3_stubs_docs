@@ -1,158 +1,231 @@
-<a id="examples-for-boto3-opsworks-module"></a>
-
-# Examples for boto3 OpsWorks module
+# Examples
 
 > [Index](../README.md) > [OpsWorks](./README.md) > Examples
 
-- [Examples for boto3 OpsWorks module](#examples-for-boto3-opsworks-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-  - [Service Resource](#service-resource)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
+    type annotations stubs module [mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 ## Client
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[opsworks]` package installed.
 
-Write your `OpsWorks` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `OpsWorks` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type OpsWorksClient
-# and provides type checking and code completion
-client = session.client("opsworks")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.assign_instance()
 
-# paginator has type DescribeEcsClustersPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_ecs_clusters")
-for item in paginator.paginate(...):
-    # item has type DescribeEcsClustersResultTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type AppExistsWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("app_exists")
-waiter.wait()
-```
+    client = session.client("opsworks")  # (1)
+    result = client.clone_stack()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [OpsWorksClient](./client.md)
+    2. result: [:material-code-braces: CloneStackResultTypeDef](./type_defs.md#clonestackresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("opsworks")  # (1)
+
+    paginator = client.get_paginator("describe_ecs_clusters")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [OpsWorksClient](./client.md)
+    2. paginator: [DescribeEcsClustersPaginator](./paginators.md#describeecsclusterspaginator)
+    3. item: [:material-code-braces: DescribeEcsClustersResultTypeDef](./type_defs.md#describeecsclustersresulttypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("opsworks")  # (1)
+
+    waiter = client.get_waiter("app_exists")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [OpsWorksClient](./client.md)
+    2. waiter: [AppExistsWaiter](./waiters.md#appexistswaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[opsworks]` or a standalone `mypy_boto3_opsworks`
-package, you have to explicitly specify `client: OpsWorksClient` type
-annotation.
+With `boto3-stubs-lite[opsworks]`
+or a standalone `mypy_boto3_opsworks` package, you have to explicitly specify `client: OpsWorksClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_opsworks.client import OpsWorksClient
-from mypy_boto3_opsworks.paginator import DescribeEcsClustersPaginator
-from mypy_boto3_opsworks.waiter import AppExistsWaiter
-from mypy_boto3_opsworks.literals import PaginatorName
-from mypy_boto3_opsworks.literals import WaiterName
-from mypy_boto3_opsworks.type_defs import None
-from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: OpsWorksClient = session.client("opsworks")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.assign_instance()
+    from mypy_boto3_opsworks.client import OpsWorksClient
+    from mypy_boto3_opsworks.type_defs import CloneStackResultTypeDef
+    from mypy_boto3_opsworks.type_defs import CloneStackRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_ecs_clusters"
-paginator: DescribeEcsClustersPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeEcsClustersResultTypeDef
-    print(item)
 
-waiter_name: WaiterName = "app_exists"
-waiter: AppExistsWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
 
-<a id="service-resource"></a>
+    client: OpsWorksClient = session.client("opsworks")
+
+    kwargs: CloneStackRequestRequestTypeDef = {...}
+    result: CloneStackResultTypeDef = client.clone_stack(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opsworks.client import OpsWorksClient
+    from mypy_boto3_opsworks.paginator import DescribeEcsClustersPaginator
+    from mypy_boto3_opsworks.type_defs import DescribeEcsClustersResultTypeDef
+
+
+    session = Session()
+    client: OpsWorksClient = session.client("opsworks")
+
+    paginator: DescribeEcsClustersPaginator = client.get_paginator("describe_ecs_clusters")
+    for item in paginator.paginate(...):
+        item: DescribeEcsClustersResultTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opsworks.client import OpsWorksClient
+    from mypy_boto3_opsworks.waiter import AppExistsWaiter
+
+    session = Session()
+    client: OpsWorksClient = session.client("opsworks")
+
+    waiter: AppExistsWaiter = client.get_waiter("app_exists")
+    waiter.wait()
+    ```
+
+
 
 ## Service Resource
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[opsworks]` package installed.
 
-```python
-import boto3
+
+=== "ServiceResource"
+
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
 
-session = boto3.Session()
+    session = Session()
 
-# resource has type OpsWorksServiceResource
-# and provides type checking and code completion
-resource = session.resource("opsworks")
+    resource = session.resource("opsworks")  # (1)
+    result = resource.Layer()  # (2)
+    ```
 
-# result has type Layer
-# and provides type checking and code completion
-result = resource.Layer()
+    1. resource: [OpsWorksServiceResource](./service_resource.md)
+    2. result: 
 
-# collection has type ServiceResourceStacksCollection and provides type checking
-# and code completion for all collection methods
-collection = resource.stacks
-for item in collection:
-    # item has type Stack
-    print(item)
-```
 
-<a id="explicit-type-annotations"></a>
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    resource = session.resource("opsworks")  # (1)
+
+    collection = resource.stacks  # (2)
+    for item in collection:
+        print(item)  # (3)
+    ```
+
+    1. resource: [OpsWorksServiceResource](./service_resource.md)
+    2. collection: [OpsWorksServiceResource](./service_resource.md#opsworksserviceresourcestacks)
+    3. item: Stack
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[opsworks]` or a standalone `mypy_boto3_opsworks`
-package, you have to explicitly specify `resource: OpsWorksServiceResource`
-type annotation.
+With `boto3-stubs-lite[opsworks]`
+or a standalone `mypy_boto3_opsworks` package, you have to explicitly specify
+`resource: OpsWorksServiceResource` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
-```python
-import boto3
 
-from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
-from mypy_boto3_opsworks.service_resource import Layer
-from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection, Stack
 
-session = boto3.Session()
+=== "ServiceResource"
 
-resource: OpsWorksServiceResource = session.resource("opsworks")
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
-result: Layer = resource.Layer()
+    from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
+    from mypy_boto3_opsworks.service_resource import Layer
 
-collection: ServiceResourceStacksCollection = resource.stacks
-for item in collection:
-    item: Stack
-    print(item)
-```
+
+    session = Session()
+
+    resource: OpsWorksServiceResource = session.resource("opsworks")
+    result: Layer = resource.Layer()
+    ```
+
+
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_opsworks.service_resource import OpsWorksServiceResource
+    from mypy_boto3_opsworks.service_resource import ServiceResourceStacksCollection
+    from mypy_boto3_opsworks.service_resource import Stack
+
+
+    session = Session()
+
+    resource: OpsWorksServiceResource = session.resource("opsworks")
+    
+    collection: ServiceResourceStacksCollection = resource.stacks
+    for item in collection:
+        item: Stack
+        print(item)
+    ```
+

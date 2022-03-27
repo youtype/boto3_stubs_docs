@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-managedgrafana-module"></a>
-
-# Examples for boto3 ManagedGrafana module
+# Examples
 
 > [Index](../README.md) > [ManagedGrafana](./README.md) > Examples
 
-- [Examples for boto3 ManagedGrafana module](#examples-for-boto3-managedgrafana-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
+    type annotations stubs module [mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[grafana]` package installed.
 
-Write your `ManagedGrafana` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `ManagedGrafana` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ManagedGrafanaClient
-# and provides type checking and code completion
-client = session.client("grafana")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateLicenseResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_license()
 
-# paginator has type ListPermissionsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_permissions")
-for item in paginator.paginate(...):
-    # item has type ListPermissionsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("grafana")  # (1)
+    result = client.associate_license()  # (2)
+    ```
+
+    1. client: [ManagedGrafanaClient](./client.md)
+    2. result: [:material-code-braces: AssociateLicenseResponseTypeDef](./type_defs.md#associatelicenseresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("grafana")  # (1)
+
+    paginator = client.get_paginator("list_permissions")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ManagedGrafanaClient](./client.md)
+    2. paginator: [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
+    3. item: [:material-code-braces: ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[grafana]` or a standalone `mypy_boto3_grafana` package,
-you have to explicitly specify `client: ManagedGrafanaClient` type annotation.
+With `boto3-stubs-lite[grafana]`
+or a standalone `mypy_boto3_grafana` package, you have to explicitly specify `client: ManagedGrafanaClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_grafana.client import ManagedGrafanaClient
-from mypy_boto3_grafana.paginator import ListPermissionsPaginator
-
-from mypy_boto3_grafana.literals import PaginatorName
-
-from mypy_boto3_grafana.type_defs import AssociateLicenseResponseTypeDef
-from mypy_boto3_grafana.type_defs import ListPermissionsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ManagedGrafanaClient = session.client("grafana")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateLicenseResponseTypeDef = client.associate_license()
+    from mypy_boto3_grafana.client import ManagedGrafanaClient
+    from mypy_boto3_grafana.type_defs import AssociateLicenseResponseTypeDef
+    from mypy_boto3_grafana.type_defs import AssociateLicenseRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_permissions"
-paginator: ListPermissionsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListPermissionsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ManagedGrafanaClient = session.client("grafana")
+
+    kwargs: AssociateLicenseRequestRequestTypeDef = {...}
+    result: AssociateLicenseResponseTypeDef = client.associate_license(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_grafana.client import ManagedGrafanaClient
+    from mypy_boto3_grafana.paginator import ListPermissionsPaginator
+    from mypy_boto3_grafana.type_defs import ListPermissionsResponseTypeDef
+
+
+    session = Session()
+    client: ManagedGrafanaClient = session.client("grafana")
+
+    paginator: ListPermissionsPaginator = client.get_paginator("list_permissions")
+    for item in paginator.paginate(...):
+        item: ListPermissionsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-mgn-module"></a>
-
-# Type annotations for boto3 mgn module
+#  mgn module
 
 > [Index](../README.md) > mgn
 
-Auto-generated documentation for
-[mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
-type annotations stubs module
-[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
+!!! note ""
 
-- [Type annotations for boto3 mgn module](#type-annotations-for-boto3-mgn-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [mgnClient](#mgnclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
+    type annotations stubs module [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `mgn`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[mgn]'
 python -m pip install mypy-boto3-mgn
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,37 @@ python -m pip install mypy-boto3-mgn
 python -m pip uninstall -y mypy-boto3-mgn
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="mgnclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## mgnClient
 
-Type annotations for `boto3.client("mgn")` as [mgnClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("mgn")` as [mgnClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_mgn.client import mgnClient
+
+def get_client() -> mgnClient:
+    return Session().cleint("mgn")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [change_server_life_cycle_state](./client.md#change_server_life_cycle_state)
-- [create_replication_configuration_template](./client.md#create_replication_configuration_template)
-- [delete_job](./client.md#delete_job)
-- [delete_replication_configuration_template](./client.md#delete_replication_configuration_template)
-- [delete_source_server](./client.md#delete_source_server)
-- [delete_vcenter_client](./client.md#delete_vcenter_client)
-- [describe_job_log_items](./client.md#describe_job_log_items)
-- [describe_jobs](./client.md#describe_jobs)
-- [describe_replication_configuration_templates](./client.md#describe_replication_configuration_templates)
-- [describe_source_servers](./client.md#describe_source_servers)
-- [describe_vcenter_clients](./client.md#describe_vcenter_clients)
-- [disconnect_from_service](./client.md#disconnect_from_service)
-- [exceptions](./client.md#exceptions)
-- [finalize_cutover](./client.md#finalize_cutover)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_launch_configuration](./client.md#get_launch_configuration)
-- [get_paginator](./client.md#get_paginator)
-- [get_replication_configuration](./client.md#get_replication_configuration)
-- [initialize_service](./client.md#initialize_service)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [mark_as_archived](./client.md#mark_as_archived)
-- [retry_data_replication](./client.md#retry_data_replication)
-- [start_cutover](./client.md#start_cutover)
-- [start_replication](./client.md#start_replication)
-- [start_test](./client.md#start_test)
-- [tag_resource](./client.md#tag_resource)
-- [terminate_target_instances](./client.md#terminate_target_instances)
-- [untag_resource](./client.md#untag_resource)
-- [update_launch_configuration](./client.md#update_launch_configuration)
-- [update_replication_configuration](./client.md#update_replication_configuration)
-- [update_replication_configuration_template](./client.md#update_replication_configuration_template)
-- [update_source_server_replication_type](./client.md#update_source_server_replication_type)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-mgnClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- UninitializedAccountException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("mgn").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("mgn").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator, ...
+from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator
+
+def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
+    return Session().client("mgn").get_paginator("describe_job_log_items"))
 ```
 
 - [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
@@ -155,16 +81,23 @@ from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator, ...
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
 - [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mgn.literals import BootModeType
 
-```python
-from mypy_boto3_mgn.literals import BootModeType, ...
+def get_value() -> BootModeType:
+    return "LEGACY_BIOS"
 ```
 
 - [BootModeType](./literals.md#bootmodetype)
@@ -196,18 +129,22 @@ from mypy_boto3_mgn.literals import BootModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_mgn.type_defs import CPUTypeDef
 
-```python
-from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
+def get_value() -> CPUTypeDef:
+    return {
+        "cores": ...,
+    }
 ```
 
 - [CPUTypeDef](./type_defs.md#cputypedef)
@@ -223,16 +160,21 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [DeleteReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationtemplaterequestrequesttypedef)
 - [DeleteSourceServerRequestRequestTypeDef](./type_defs.md#deletesourceserverrequestrequesttypedef)
 - [DeleteVcenterClientRequestRequestTypeDef](./type_defs.md#deletevcenterclientrequestrequesttypedef)
+- [DescribeJobLogItemsRequestDescribeJobLogItemsPaginateTypeDef](./type_defs.md#describejoblogitemsrequestdescribejoblogitemspaginatetypedef)
 - [DescribeJobLogItemsRequestRequestTypeDef](./type_defs.md#describejoblogitemsrequestrequesttypedef)
 - [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)
+- [DescribeJobsRequestDescribeJobsPaginateTypeDef](./type_defs.md#describejobsrequestdescribejobspaginatetypedef)
 - [DescribeJobsRequestFiltersTypeDef](./type_defs.md#describejobsrequestfilterstypedef)
 - [DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef)
 - [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)
+- [DescribeReplicationConfigurationTemplatesRequestDescribeReplicationConfigurationTemplatesPaginateTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestdescribereplicationconfigurationtemplatespaginatetypedef)
 - [DescribeReplicationConfigurationTemplatesRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationtemplatesrequestrequesttypedef)
 - [DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)
+- [DescribeSourceServersRequestDescribeSourceServersPaginateTypeDef](./type_defs.md#describesourceserversrequestdescribesourceserverspaginatetypedef)
 - [DescribeSourceServersRequestFiltersTypeDef](./type_defs.md#describesourceserversrequestfilterstypedef)
 - [DescribeSourceServersRequestRequestTypeDef](./type_defs.md#describesourceserversrequestrequesttypedef)
 - [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef)
+- [DescribeVcenterClientsRequestDescribeVcenterClientsPaginateTypeDef](./type_defs.md#describevcenterclientsrequestdescribevcenterclientspaginatetypedef)
 - [DescribeVcenterClientsRequestRequestTypeDef](./type_defs.md#describevcenterclientsrequestrequesttypedef)
 - [DescribeVcenterClientsResponseTypeDef](./type_defs.md#describevcenterclientsresponsetypedef)
 - [DisconnectFromServiceRequestRequestTypeDef](./type_defs.md#disconnectfromservicerequestrequesttypedef)
@@ -286,3 +228,4 @@ from mypy_boto3_mgn.type_defs import CPUTypeDef, ...
 - [UpdateReplicationConfigurationTemplateRequestRequestTypeDef](./type_defs.md#updatereplicationconfigurationtemplaterequestrequesttypedef)
 - [UpdateSourceServerReplicationTypeRequestRequestTypeDef](./type_defs.md#updatesourceserverreplicationtyperequestrequesttypedef)
 - [VcenterClientTypeDef](./type_defs.md#vcenterclienttypedef)
+

@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-workmailmessageflow-module"></a>
-
-# Examples for boto3 WorkMailMessageFlow module
+# Examples
 
 > [Index](../README.md) > [WorkMailMessageFlow](./README.md) > Examples
 
-- [Examples for boto3 WorkMailMessageFlow module](#examples-for-boto3-workmailmessageflow-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
+    type annotations stubs module [mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[workmailmessageflow]` package installed.
 
-Write your `WorkMailMessageFlow` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `WorkMailMessageFlow` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WorkMailMessageFlowClient
-# and provides type checking and code completion
-client = session.client("workmailmessageflow")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("workmailmessageflow")  # (1)
+    result = client.get_raw_message_content()  # (2)
+    ```
+
+    1. client: [WorkMailMessageFlowClient](./client.md)
+    2. result: [:material-code-braces: GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[workmailmessageflow]` or a standalone
-`mypy_boto3_workmailmessageflow` package, you have to explicitly specify
-`client: WorkMailMessageFlowClient` type annotation.
+With `boto3-stubs-lite[workmailmessageflow]`
+or a standalone `mypy_boto3_workmailmessageflow` package, you have to explicitly specify `client: WorkMailMessageFlowClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
+    from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentResponseTypeDef
+    from mypy_boto3_workmailmessageflow.type_defs import GetRawMessageContentRequestRequestTypeDef
 
 
-from mypy_boto3_workmailmessageflow.type_defs import bool
+    session = Session()
+
+    client: WorkMailMessageFlowClient = session.client("workmailmessageflow")
+
+    kwargs: GetRawMessageContentRequestRequestTypeDef = {...}
+    result: GetRawMessageContentResponseTypeDef = client.get_raw_message_content(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: WorkMailMessageFlowClient = session.client("workmailmessageflow")
 
-result: bool = client.can_paginate()
-```
+

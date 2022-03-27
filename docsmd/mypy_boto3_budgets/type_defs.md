@@ -1,1058 +1,1514 @@
-<a id="typed-dictionaries-for-boto3-budgets-module"></a>
-
-# Typed dictionaries for boto3 Budgets module
+# Typed dictionaries
 
 > [Index](../README.md) > [Budgets](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
-type annotations stubs module
-[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Budgets module](#typed-dictionaries-for-boto3-budgets-module)
-  - [ActionHistoryDetailsTypeDef](#actionhistorydetailstypedef)
-  - [ActionHistoryTypeDef](#actionhistorytypedef)
-  - [ActionThresholdTypeDef](#actionthresholdtypedef)
-  - [ActionTypeDef](#actiontypedef)
-  - [AutoAdjustDataTypeDef](#autoadjustdatatypedef)
-  - [BudgetNotificationsForAccountTypeDef](#budgetnotificationsforaccounttypedef)
-  - [BudgetPerformanceHistoryTypeDef](#budgetperformancehistorytypedef)
-  - [BudgetTypeDef](#budgettypedef)
-  - [BudgetedAndActualAmountsTypeDef](#budgetedandactualamountstypedef)
-  - [CalculatedSpendTypeDef](#calculatedspendtypedef)
-  - [CostTypesTypeDef](#costtypestypedef)
-  - [CreateBudgetActionRequestRequestTypeDef](#createbudgetactionrequestrequesttypedef)
-  - [CreateBudgetActionResponseTypeDef](#createbudgetactionresponsetypedef)
-  - [CreateBudgetRequestRequestTypeDef](#createbudgetrequestrequesttypedef)
-  - [CreateNotificationRequestRequestTypeDef](#createnotificationrequestrequesttypedef)
-  - [CreateSubscriberRequestRequestTypeDef](#createsubscriberrequestrequesttypedef)
-  - [DefinitionTypeDef](#definitiontypedef)
-  - [DeleteBudgetActionRequestRequestTypeDef](#deletebudgetactionrequestrequesttypedef)
-  - [DeleteBudgetActionResponseTypeDef](#deletebudgetactionresponsetypedef)
-  - [DeleteBudgetRequestRequestTypeDef](#deletebudgetrequestrequesttypedef)
-  - [DeleteNotificationRequestRequestTypeDef](#deletenotificationrequestrequesttypedef)
-  - [DeleteSubscriberRequestRequestTypeDef](#deletesubscriberrequestrequesttypedef)
-  - [DescribeBudgetActionHistoriesRequestRequestTypeDef](#describebudgetactionhistoriesrequestrequesttypedef)
-  - [DescribeBudgetActionHistoriesResponseTypeDef](#describebudgetactionhistoriesresponsetypedef)
-  - [DescribeBudgetActionRequestRequestTypeDef](#describebudgetactionrequestrequesttypedef)
-  - [DescribeBudgetActionResponseTypeDef](#describebudgetactionresponsetypedef)
-  - [DescribeBudgetActionsForAccountRequestRequestTypeDef](#describebudgetactionsforaccountrequestrequesttypedef)
-  - [DescribeBudgetActionsForAccountResponseTypeDef](#describebudgetactionsforaccountresponsetypedef)
-  - [DescribeBudgetActionsForBudgetRequestRequestTypeDef](#describebudgetactionsforbudgetrequestrequesttypedef)
-  - [DescribeBudgetActionsForBudgetResponseTypeDef](#describebudgetactionsforbudgetresponsetypedef)
-  - [DescribeBudgetNotificationsForAccountRequestRequestTypeDef](#describebudgetnotificationsforaccountrequestrequesttypedef)
-  - [DescribeBudgetNotificationsForAccountResponseTypeDef](#describebudgetnotificationsforaccountresponsetypedef)
-  - [DescribeBudgetPerformanceHistoryRequestRequestTypeDef](#describebudgetperformancehistoryrequestrequesttypedef)
-  - [DescribeBudgetPerformanceHistoryResponseTypeDef](#describebudgetperformancehistoryresponsetypedef)
-  - [DescribeBudgetRequestRequestTypeDef](#describebudgetrequestrequesttypedef)
-  - [DescribeBudgetResponseTypeDef](#describebudgetresponsetypedef)
-  - [DescribeBudgetsRequestRequestTypeDef](#describebudgetsrequestrequesttypedef)
-  - [DescribeBudgetsResponseTypeDef](#describebudgetsresponsetypedef)
-  - [DescribeNotificationsForBudgetRequestRequestTypeDef](#describenotificationsforbudgetrequestrequesttypedef)
-  - [DescribeNotificationsForBudgetResponseTypeDef](#describenotificationsforbudgetresponsetypedef)
-  - [DescribeSubscribersForNotificationRequestRequestTypeDef](#describesubscribersfornotificationrequestrequesttypedef)
-  - [DescribeSubscribersForNotificationResponseTypeDef](#describesubscribersfornotificationresponsetypedef)
-  - [ExecuteBudgetActionRequestRequestTypeDef](#executebudgetactionrequestrequesttypedef)
-  - [ExecuteBudgetActionResponseTypeDef](#executebudgetactionresponsetypedef)
-  - [HistoricalOptionsTypeDef](#historicaloptionstypedef)
-  - [IamActionDefinitionTypeDef](#iamactiondefinitiontypedef)
-  - [NotificationTypeDef](#notificationtypedef)
-  - [NotificationWithSubscribersTypeDef](#notificationwithsubscriberstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ScpActionDefinitionTypeDef](#scpactiondefinitiontypedef)
-  - [SpendTypeDef](#spendtypedef)
-  - [SsmActionDefinitionTypeDef](#ssmactiondefinitiontypedef)
-  - [SubscriberTypeDef](#subscribertypedef)
-  - [TimePeriodTypeDef](#timeperiodtypedef)
-  - [UpdateBudgetActionRequestRequestTypeDef](#updatebudgetactionrequestrequesttypedef)
-  - [UpdateBudgetActionResponseTypeDef](#updatebudgetactionresponsetypedef)
-  - [UpdateBudgetRequestRequestTypeDef](#updatebudgetrequestrequesttypedef)
-  - [UpdateNotificationRequestRequestTypeDef](#updatenotificationrequestrequesttypedef)
-  - [UpdateSubscriberRequestRequestTypeDef](#updatesubscriberrequestrequesttypedef)
-
-<a id="actionhistorydetailstypedef"></a>
+    Auto-generated documentation for [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
+    type annotations stubs module [mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ## ActionHistoryDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ActionHistoryDetailsTypeDef
+
+def get_value() -> ActionHistoryDetailsTypeDef:
+    return {
+        "Message": ...,
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionHistoryDetailsTypeDef(TypedDict):
+    Message: str,
+    Action: ActionTypeDef,  # (1)
+```
 
-- `Message`: `str`
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-
-<a id="actionhistorytypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 ## ActionHistoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ActionHistoryTypeDef
+
+def get_value() -> ActionHistoryTypeDef:
+    return {
+        "Timestamp": ...,
+        "Status": ...,
+        "EventType": ...,
+        "ActionHistoryDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionHistoryTypeDef(TypedDict):
+    Timestamp: datetime,
+    Status: ActionStatusType,  # (1)
+    EventType: EventTypeType,  # (2)
+    ActionHistoryDetails: ActionHistoryDetailsTypeDef,  # (3)
+```
 
-- `Timestamp`: `datetime`
-- `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `EventType`: [EventTypeType](./literals.md#eventtypetype)
-- `ActionHistoryDetails`:
-  [ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef)
-
-<a id="actionthresholdtypedef"></a>
-
+1. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
+2. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) 
+3. See [:material-code-braces: ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef) 
 ## ActionThresholdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ActionThresholdTypeDef
+
+def get_value() -> ActionThresholdTypeDef:
+    return {
+        "ActionThresholdValue": ...,
+        "ActionThresholdType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionThresholdTypeDef(TypedDict):
+    ActionThresholdValue: float,
+    ActionThresholdType: ThresholdTypeType,  # (1)
+```
 
-- `ActionThresholdValue`: `float`
-- `ActionThresholdType`: [ThresholdTypeType](./literals.md#thresholdtypetype)
-
-<a id="actiontypedef"></a>
-
+1. See [:material-code-brackets: ThresholdTypeType](./literals.md#thresholdtypetype) 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "ActionId": ...,
+        "BudgetName": ...,
+        "NotificationType": ...,
+        "ActionType": ...,
+        "ActionThreshold": ...,
+        "Definition": ...,
+        "ExecutionRoleArn": ...,
+        "ApprovalModel": ...,
+        "Status": ...,
+        "Subscribers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    ActionId: str,
+    BudgetName: str,
+    NotificationType: NotificationTypeType,  # (1)
+    ActionType: ActionTypeType,  # (2)
+    ActionThreshold: ActionThresholdTypeDef,  # (3)
+    Definition: DefinitionTypeDef,  # (4)
+    ExecutionRoleArn: str,
+    ApprovalModel: ApprovalModelType,  # (5)
+    Status: ActionStatusType,  # (6)
+    Subscribers: List[SubscriberTypeDef],  # (7)
+```
 
-- `ActionId`: `str`
-- `BudgetName`: `str`
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
-- `ActionThreshold`:
-  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
-- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
-- `ExecutionRoleArn`: `str`
-- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
-- `Status`: [ActionStatusType](./literals.md#actionstatustype)
-- `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-
-<a id="autoadjustdatatypedef"></a>
-
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+3. See [:material-code-braces: ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) 
+4. See [:material-code-braces: DefinitionTypeDef](./type_defs.md#definitiontypedef) 
+5. See [:material-code-brackets: ApprovalModelType](./literals.md#approvalmodeltype) 
+6. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
+7. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## AutoAdjustDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import AutoAdjustDataTypeDef
+
+def get_value() -> AutoAdjustDataTypeDef:
+    return {
+        "AutoAdjustType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoAdjustDataTypeDef(TypedDict):
+    AutoAdjustType: AutoAdjustTypeType,  # (1)
+    HistoricalOptions: NotRequired[HistoricalOptionsTypeDef],  # (2)
+    LastAutoAdjustTime: NotRequired[Union[datetime, str]],
+```
 
-- `AutoAdjustType`: [AutoAdjustTypeType](./literals.md#autoadjusttypetype)
-
-Optional fields:
-
-- `HistoricalOptions`:
-  [HistoricalOptionsTypeDef](./type_defs.md#historicaloptionstypedef)
-- `LastAutoAdjustTime`: `Union`\[`datetime`, `str`\]
-
-<a id="budgetnotificationsforaccounttypedef"></a>
-
+1. See [:material-code-brackets: AutoAdjustTypeType](./literals.md#autoadjusttypetype) 
+2. See [:material-code-braces: HistoricalOptionsTypeDef](./type_defs.md#historicaloptionstypedef) 
 ## BudgetNotificationsForAccountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import BudgetNotificationsForAccountTypeDef
+
+def get_value() -> BudgetNotificationsForAccountTypeDef:
+    return {
+        "Notifications": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BudgetNotificationsForAccountTypeDef(TypedDict):
+    Notifications: NotRequired[List[NotificationTypeDef]],  # (1)
+    BudgetName: NotRequired[str],
+```
 
-- `Notifications`:
-  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
-- `BudgetName`: `str`
-
-<a id="budgetperformancehistorytypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 ## BudgetPerformanceHistoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import BudgetPerformanceHistoryTypeDef
+
+def get_value() -> BudgetPerformanceHistoryTypeDef:
+    return {
+        "BudgetName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BudgetPerformanceHistoryTypeDef(TypedDict):
+    BudgetName: NotRequired[str],
+    BudgetType: NotRequired[BudgetTypeType],  # (1)
+    CostFilters: NotRequired[Dict[str, List[str]]],
+    CostTypes: NotRequired[CostTypesTypeDef],  # (2)
+    TimeUnit: NotRequired[TimeUnitType],  # (3)
+    BudgetedAndActualAmountsList: NotRequired[List[BudgetedAndActualAmountsTypeDef]],  # (4)
+```
 
-- `BudgetName`: `str`
-- `BudgetType`: [BudgetTypeType](./literals.md#budgettypetype)
-- `CostFilters`: `Dict`\[`str`, `List`\[`str`\]\]
-- `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
-- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
-- `BudgetedAndActualAmountsList`:
-  `List`\[[BudgetedAndActualAmountsTypeDef](./type_defs.md#budgetedandactualamountstypedef)\]
-
-<a id="budgettypedef"></a>
-
+1. See [:material-code-brackets: BudgetTypeType](./literals.md#budgettypetype) 
+2. See [:material-code-braces: CostTypesTypeDef](./type_defs.md#costtypestypedef) 
+3. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
+4. See [:material-code-braces: BudgetedAndActualAmountsTypeDef](./type_defs.md#budgetedandactualamountstypedef) 
 ## BudgetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import BudgetTypeDef
+
+def get_value() -> BudgetTypeDef:
+    return {
+        "BudgetName": ...,
+        "TimeUnit": ...,
+        "BudgetType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BudgetTypeDef(TypedDict):
+    BudgetName: str,
+    TimeUnit: TimeUnitType,  # (4)
+    BudgetType: BudgetTypeType,  # (7)
+    BudgetLimit: NotRequired[SpendTypeDef],  # (1)
+    PlannedBudgetLimits: NotRequired[Mapping[str, SpendTypeDef]],  # (2)
+    CostFilters: NotRequired[Mapping[str, Sequence[str]]],
+    CostTypes: NotRequired[CostTypesTypeDef],  # (3)
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (5)
+    CalculatedSpend: NotRequired[CalculatedSpendTypeDef],  # (6)
+    LastUpdatedTime: NotRequired[Union[datetime, str]],
+    AutoAdjustData: NotRequired[AutoAdjustDataTypeDef],  # (8)
+```
 
-- `BudgetName`: `str`
-- `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
-- `BudgetType`: [BudgetTypeType](./literals.md#budgettypetype)
-
-Optional fields:
-
-- `BudgetLimit`: [SpendTypeDef](./type_defs.md#spendtypedef)
-- `PlannedBudgetLimits`: `Mapping`\[`str`,
-  [SpendTypeDef](./type_defs.md#spendtypedef)\]
-- `CostFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `CostTypes`: [CostTypesTypeDef](./type_defs.md#costtypestypedef)
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `CalculatedSpend`:
-  [CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef)
-- `LastUpdatedTime`: `Union`\[`datetime`, `str`\]
-- `AutoAdjustData`:
-  [AutoAdjustDataTypeDef](./type_defs.md#autoadjustdatatypedef)
-
-<a id="budgetedandactualamountstypedef"></a>
-
+1. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
+2. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
+3. See [:material-code-braces: CostTypesTypeDef](./type_defs.md#costtypestypedef) 
+4. See [:material-code-brackets: TimeUnitType](./literals.md#timeunittype) 
+5. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+6. See [:material-code-braces: CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef) 
+7. See [:material-code-brackets: BudgetTypeType](./literals.md#budgettypetype) 
+8. See [:material-code-braces: AutoAdjustDataTypeDef](./type_defs.md#autoadjustdatatypedef) 
 ## BudgetedAndActualAmountsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import BudgetedAndActualAmountsTypeDef
+
+def get_value() -> BudgetedAndActualAmountsTypeDef:
+    return {
+        "BudgetedAmount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BudgetedAndActualAmountsTypeDef(TypedDict):
+    BudgetedAmount: NotRequired[SpendTypeDef],  # (1)
+    ActualAmount: NotRequired[SpendTypeDef],  # (1)
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (3)
+```
 
-- `BudgetedAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
-- `ActualAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-
-<a id="calculatedspendtypedef"></a>
-
+1. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
+2. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
+3. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
 ## CalculatedSpendTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CalculatedSpendTypeDef
+
+def get_value() -> CalculatedSpendTypeDef:
+    return {
+        "ActualSpend": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CalculatedSpendTypeDef(TypedDict):
+    ActualSpend: SpendTypeDef,  # (1)
+    ForecastedSpend: NotRequired[SpendTypeDef],  # (1)
+```
 
-- `ActualSpend`: [SpendTypeDef](./type_defs.md#spendtypedef)
-
-Optional fields:
-
-- `ForecastedSpend`: [SpendTypeDef](./type_defs.md#spendtypedef)
-
-<a id="costtypestypedef"></a>
-
+1. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
+2. See [:material-code-braces: SpendTypeDef](./type_defs.md#spendtypedef) 
 ## CostTypesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CostTypesTypeDef
+
+def get_value() -> CostTypesTypeDef:
+    return {
+        "IncludeTax": ...,
+    }
 ```
 
-Optional fields:
-
-- `IncludeTax`: `bool`
-- `IncludeSubscription`: `bool`
-- `UseBlended`: `bool`
-- `IncludeRefund`: `bool`
-- `IncludeCredit`: `bool`
-- `IncludeUpfront`: `bool`
-- `IncludeRecurring`: `bool`
-- `IncludeOtherSubscription`: `bool`
-- `IncludeSupport`: `bool`
-- `IncludeDiscount`: `bool`
-- `UseAmortized`: `bool`
-
-<a id="createbudgetactionrequestrequesttypedef"></a>
+```python title="Definition"
+class CostTypesTypeDef(TypedDict):
+    IncludeTax: NotRequired[bool],
+    IncludeSubscription: NotRequired[bool],
+    UseBlended: NotRequired[bool],
+    IncludeRefund: NotRequired[bool],
+    IncludeCredit: NotRequired[bool],
+    IncludeUpfront: NotRequired[bool],
+    IncludeRecurring: NotRequired[bool],
+    IncludeOtherSubscription: NotRequired[bool],
+    IncludeSupport: NotRequired[bool],
+    IncludeDiscount: NotRequired[bool],
+    UseAmortized: NotRequired[bool],
+```
 
 ## CreateBudgetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CreateBudgetActionRequestRequestTypeDef
+
+def get_value() -> CreateBudgetActionRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "NotificationType": ...,
+        "ActionType": ...,
+        "ActionThreshold": ...,
+        "Definition": ...,
+        "ExecutionRoleArn": ...,
+        "ApprovalModel": ...,
+        "Subscribers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBudgetActionRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    NotificationType: NotificationTypeType,  # (1)
+    ActionType: ActionTypeType,  # (2)
+    ActionThreshold: ActionThresholdTypeDef,  # (3)
+    Definition: DefinitionTypeDef,  # (4)
+    ExecutionRoleArn: str,
+    ApprovalModel: ApprovalModelType,  # (5)
+    Subscribers: Sequence[SubscriberTypeDef],  # (6)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-- `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
-- `ActionThreshold`:
-  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
-- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
-- `ExecutionRoleArn`: `str`
-- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-
-<a id="createbudgetactionresponsetypedef"></a>
-
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-brackets: ActionTypeType](./literals.md#actiontypetype) 
+3. See [:material-code-braces: ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) 
+4. See [:material-code-braces: DefinitionTypeDef](./type_defs.md#definitiontypedef) 
+5. See [:material-code-brackets: ApprovalModelType](./literals.md#approvalmodeltype) 
+6. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## CreateBudgetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CreateBudgetActionResponseTypeDef
+
+def get_value() -> CreateBudgetActionResponseTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBudgetActionResponseTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbudgetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CreateBudgetRequestRequestTypeDef
+
+def get_value() -> CreateBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "Budget": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    Budget: BudgetTypeDef,  # (1)
+    NotificationsWithSubscribers: NotRequired[Sequence[NotificationWithSubscribersTypeDef]],  # (2)
+```
 
-- `AccountId`: `str`
-- `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
-
-Optional fields:
-
-- `NotificationsWithSubscribers`:
-  `Sequence`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
-
-<a id="createnotificationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
+2. See [:material-code-braces: NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef) 
 ## CreateNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CreateNotificationRequestRequestTypeDef
+
+def get_value() -> CreateNotificationRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+        "Subscribers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateNotificationRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscribers: Sequence[SubscriberTypeDef],  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-
-<a id="createsubscriberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## CreateSubscriberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import CreateSubscriberRequestRequestTypeDef
+
+def get_value() -> CreateSubscriberRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+        "Subscriber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSubscriberRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscriber: SubscriberTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-
-<a id="definitiontypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## DefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DefinitionTypeDef
+
+def get_value() -> DefinitionTypeDef:
+    return {
+        "IamActionDefinition": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DefinitionTypeDef(TypedDict):
+    IamActionDefinition: NotRequired[IamActionDefinitionTypeDef],  # (1)
+    ScpActionDefinition: NotRequired[ScpActionDefinitionTypeDef],  # (2)
+    SsmActionDefinition: NotRequired[SsmActionDefinitionTypeDef],  # (3)
+```
 
-- `IamActionDefinition`:
-  [IamActionDefinitionTypeDef](./type_defs.md#iamactiondefinitiontypedef)
-- `ScpActionDefinition`:
-  [ScpActionDefinitionTypeDef](./type_defs.md#scpactiondefinitiontypedef)
-- `SsmActionDefinition`:
-  [SsmActionDefinitionTypeDef](./type_defs.md#ssmactiondefinitiontypedef)
-
-<a id="deletebudgetactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IamActionDefinitionTypeDef](./type_defs.md#iamactiondefinitiontypedef) 
+2. See [:material-code-braces: ScpActionDefinitionTypeDef](./type_defs.md#scpactiondefinitiontypedef) 
+3. See [:material-code-braces: SsmActionDefinitionTypeDef](./type_defs.md#ssmactiondefinitiontypedef) 
 ## DeleteBudgetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DeleteBudgetActionRequestRequestTypeDef
+
+def get_value() -> DeleteBudgetActionRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-
-<a id="deletebudgetactionresponsetypedef"></a>
+```python title="Definition"
+class DeleteBudgetActionRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+```
 
 ## DeleteBudgetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DeleteBudgetActionResponseTypeDef
+
+def get_value() -> DeleteBudgetActionResponseTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Action": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBudgetActionResponseTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Action: ActionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebudgetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DeleteBudgetRequestRequestTypeDef
+
+def get_value() -> DeleteBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-
-<a id="deletenotificationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+```
 
 ## DeleteNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DeleteNotificationRequestRequestTypeDef
+
+def get_value() -> DeleteNotificationRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteNotificationRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-
-<a id="deletesubscriberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 ## DeleteSubscriberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DeleteSubscriberRequestRequestTypeDef
+
+def get_value() -> DeleteSubscriberRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+        "Subscriber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSubscriberRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    Subscriber: SubscriberTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+## DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef
 
-<a id="describebudgetactionhistoriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef
 
+def get_value() -> DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetActionHistoriesRequestDescribeBudgetActionHistoriesPaginateTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetActionHistoriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetActionHistoriesRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetActionHistoriesRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-
-Optional fields:
-
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetactionhistoriesresponsetypedef"></a>
-
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
 ## DescribeBudgetActionHistoriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionHistoriesResponseTypeDef
+
+def get_value() -> DescribeBudgetActionHistoriesResponseTypeDef:
+    return {
+        "ActionHistories": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetActionHistoriesResponseTypeDef(TypedDict):
+    ActionHistories: List[ActionHistoryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ActionHistories`:
-  `List`\[[ActionHistoryTypeDef](./type_defs.md#actionhistorytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebudgetactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionHistoryTypeDef](./type_defs.md#actionhistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBudgetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetActionRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-
-<a id="describebudgetactionresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetActionRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+```
 
 ## DescribeBudgetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionResponseTypeDef
+
+def get_value() -> DescribeBudgetActionResponseTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Action": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetActionResponseTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Action: ActionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef
 
-<a id="describebudgetactionsforaccountrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef
 
+def get_value() -> DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetActionsForAccountRequestDescribeBudgetActionsForAccountPaginateTypeDef(TypedDict):
+    AccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetActionsForAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetActionsForAccountRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetactionsforaccountresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetActionsForAccountRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeBudgetActionsForAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForAccountResponseTypeDef
+
+def get_value() -> DescribeBudgetActionsForAccountResponseTypeDef:
+    return {
+        "Actions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetActionsForAccountResponseTypeDef(TypedDict):
+    Actions: List[ActionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef
 
-<a id="describebudgetactionsforbudgetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef
 
+def get_value() -> DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetActionsForBudgetRequestDescribeBudgetActionsForBudgetPaginateTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetActionsForBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetActionsForBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetactionsforbudgetresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetActionsForBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeBudgetActionsForBudgetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetActionsForBudgetResponseTypeDef
+
+def get_value() -> DescribeBudgetActionsForBudgetResponseTypeDef:
+    return {
+        "Actions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetActionsForBudgetResponseTypeDef(TypedDict):
+    Actions: List[ActionTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Actions`: `List`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef
 
-<a id="describebudgetnotificationsforaccountrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef
 
+def get_value() -> DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetNotificationsForAccountRequestDescribeBudgetNotificationsForAccountPaginateTypeDef(TypedDict):
+    AccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetNotificationsForAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetNotificationsForAccountRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetNotificationsForAccountRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetnotificationsforaccountresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetNotificationsForAccountRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeBudgetNotificationsForAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetNotificationsForAccountResponseTypeDef
+
+def get_value() -> DescribeBudgetNotificationsForAccountResponseTypeDef:
+    return {
+        "BudgetNotificationsForAccount": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetNotificationsForAccountResponseTypeDef(TypedDict):
+    BudgetNotificationsForAccount: List[BudgetNotificationsForAccountTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BudgetNotificationsForAccount`:
-  `List`\[[BudgetNotificationsForAccountTypeDef](./type_defs.md#budgetnotificationsforaccounttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BudgetNotificationsForAccountTypeDef](./type_defs.md#budgetnotificationsforaccounttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef
 
-<a id="describebudgetperformancehistoryrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef
 
+def get_value() -> DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetPerformanceHistoryRequestDescribeBudgetPerformanceHistoryPaginateTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetPerformanceHistoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetPerformanceHistoryRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetPerformanceHistoryRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    TimePeriod: NotRequired[TimePeriodTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-
-Optional fields:
-
-- `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetperformancehistoryresponsetypedef"></a>
-
+1. See [:material-code-braces: TimePeriodTypeDef](./type_defs.md#timeperiodtypedef) 
 ## DescribeBudgetPerformanceHistoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetPerformanceHistoryResponseTypeDef
+
+def get_value() -> DescribeBudgetPerformanceHistoryResponseTypeDef:
+    return {
+        "BudgetPerformanceHistory": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetPerformanceHistoryResponseTypeDef(TypedDict):
+    BudgetPerformanceHistory: BudgetPerformanceHistoryTypeDef,  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BudgetPerformanceHistory`:
-  [BudgetPerformanceHistoryTypeDef](./type_defs.md#budgetperformancehistorytypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebudgetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BudgetPerformanceHistoryTypeDef](./type_defs.md#budgetperformancehistorytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-
-<a id="describebudgetresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+```
 
 ## DescribeBudgetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetResponseTypeDef
+
+def get_value() -> DescribeBudgetResponseTypeDef:
+    return {
+        "Budget": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetResponseTypeDef(TypedDict):
+    Budget: BudgetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef
 
-<a id="describebudgetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef
 
+def get_value() -> DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef:
+    return {
+        "AccountId": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeBudgetsRequestDescribeBudgetsPaginateTypeDef(TypedDict):
+    AccountId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeBudgetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetsRequestRequestTypeDef
+
+def get_value() -> DescribeBudgetsRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describebudgetsresponsetypedef"></a>
+```python title="Definition"
+class DescribeBudgetsRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeBudgetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeBudgetsResponseTypeDef
+
+def get_value() -> DescribeBudgetsResponseTypeDef:
+    return {
+        "Budgets": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBudgetsResponseTypeDef(TypedDict):
+    Budgets: List[BudgetTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Budgets`: `List`\[[BudgetTypeDef](./type_defs.md#budgettypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef
 
-<a id="describenotificationsforbudgetrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef
 
+def get_value() -> DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeNotificationsForBudgetRequestDescribeNotificationsForBudgetPaginateTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeNotificationsForBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetRequestRequestTypeDef
+
+def get_value() -> DescribeNotificationsForBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+    }
 ```
 
-Required fields:
-
-- `AccountId`: `str`
-- `BudgetName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describenotificationsforbudgetresponsetypedef"></a>
+```python title="Definition"
+class DescribeNotificationsForBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeNotificationsForBudgetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeNotificationsForBudgetResponseTypeDef
+
+def get_value() -> DescribeNotificationsForBudgetResponseTypeDef:
+    return {
+        "Notifications": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeNotificationsForBudgetResponseTypeDef(TypedDict):
+    Notifications: List[NotificationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Notifications`:
-  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef
 
-<a id="describesubscribersfornotificationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef
 
+def get_value() -> DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeSubscribersForNotificationRequestDescribeSubscribersForNotificationPaginateTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeSubscribersForNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationRequestRequestTypeDef
+
+def get_value() -> DescribeSubscribersForNotificationRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSubscribersForNotificationRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describesubscribersfornotificationresponsetypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 ## DescribeSubscribersForNotificationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import DescribeSubscribersForNotificationResponseTypeDef
+
+def get_value() -> DescribeSubscribersForNotificationResponseTypeDef:
+    return {
+        "Subscribers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSubscribersForNotificationResponseTypeDef(TypedDict):
+    Subscribers: List[SubscriberTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Subscribers`:
-  `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="executebudgetactionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteBudgetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ExecuteBudgetActionRequestRequestTypeDef
+
+def get_value() -> ExecuteBudgetActionRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+        "ExecutionType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteBudgetActionRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    ExecutionType: ExecutionTypeType,  # (1)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-- `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
-
-<a id="executebudgetactionresponsetypedef"></a>
-
+1. See [:material-code-brackets: ExecutionTypeType](./literals.md#executiontypetype) 
 ## ExecuteBudgetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ExecuteBudgetActionResponseTypeDef
+
+def get_value() -> ExecuteBudgetActionResponseTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+        "ExecutionType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteBudgetActionResponseTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    ExecutionType: ExecutionTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-- `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="historicaloptionstypedef"></a>
-
+1. See [:material-code-brackets: ExecutionTypeType](./literals.md#executiontypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HistoricalOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import HistoricalOptionsTypeDef
+
+def get_value() -> HistoricalOptionsTypeDef:
+    return {
+        "BudgetAdjustmentPeriod": ...,
+    }
 ```
 
-Required fields:
-
-- `BudgetAdjustmentPeriod`: `int`
-
-Optional fields:
-
-- `LookBackAvailablePeriods`: `int`
-
-<a id="iamactiondefinitiontypedef"></a>
+```python title="Definition"
+class HistoricalOptionsTypeDef(TypedDict):
+    BudgetAdjustmentPeriod: int,
+    LookBackAvailablePeriods: NotRequired[int],
+```
 
 ## IamActionDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import IamActionDefinitionTypeDef
+
+def get_value() -> IamActionDefinitionTypeDef:
+    return {
+        "PolicyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyArn`: `str`
-
-Optional fields:
-
-- `Roles`: `Sequence`\[`str`\]
-- `Groups`: `Sequence`\[`str`\]
-- `Users`: `Sequence`\[`str`\]
-
-<a id="notificationtypedef"></a>
+```python title="Definition"
+class IamActionDefinitionTypeDef(TypedDict):
+    PolicyArn: str,
+    Roles: NotRequired[Sequence[str]],
+    Groups: NotRequired[Sequence[str]],
+    Users: NotRequired[Sequence[str]],
+```
 
 ## NotificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import NotificationTypeDef
+
+def get_value() -> NotificationTypeDef:
+    return {
+        "NotificationType": ...,
+        "ComparisonOperator": ...,
+        "Threshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationTypeDef(TypedDict):
+    NotificationType: NotificationTypeType,  # (1)
+    ComparisonOperator: ComparisonOperatorType,  # (2)
+    Threshold: float,
+    ThresholdType: NotRequired[ThresholdTypeType],  # (3)
+    NotificationState: NotRequired[NotificationStateType],  # (4)
+```
 
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `Threshold`: `float`
-
-Optional fields:
-
-- `ThresholdType`: [ThresholdTypeType](./literals.md#thresholdtypetype)
-- `NotificationState`:
-  [NotificationStateType](./literals.md#notificationstatetype)
-
-<a id="notificationwithsubscriberstypedef"></a>
-
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+3. See [:material-code-brackets: ThresholdTypeType](./literals.md#thresholdtypetype) 
+4. See [:material-code-brackets: NotificationStateType](./literals.md#notificationstatetype) 
 ## NotificationWithSubscribersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import NotificationWithSubscribersTypeDef
+
+def get_value() -> NotificationWithSubscribersTypeDef:
+    return {
+        "Notification": ...,
+        "Subscribers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class NotificationWithSubscribersTypeDef(TypedDict):
+    Notification: NotificationTypeDef,  # (1)
+    Subscribers: Sequence[SubscriberTypeDef],  # (2)
+```
 
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="scpactiondefinitiontypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ScpActionDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import ScpActionDefinitionTypeDef
+
+def get_value() -> ScpActionDefinitionTypeDef:
+    return {
+        "PolicyId": ...,
+        "TargetIds": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-- `TargetIds`: `Sequence`\[`str`\]
-
-<a id="spendtypedef"></a>
+```python title="Definition"
+class ScpActionDefinitionTypeDef(TypedDict):
+    PolicyId: str,
+    TargetIds: Sequence[str],
+```
 
 ## SpendTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import SpendTypeDef
+
+def get_value() -> SpendTypeDef:
+    return {
+        "Amount": ...,
+        "Unit": ...,
+    }
 ```
 
-Required fields:
-
-- `Amount`: `str`
-- `Unit`: `str`
-
-<a id="ssmactiondefinitiontypedef"></a>
+```python title="Definition"
+class SpendTypeDef(TypedDict):
+    Amount: str,
+    Unit: str,
+```
 
 ## SsmActionDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import SsmActionDefinitionTypeDef
+
+def get_value() -> SsmActionDefinitionTypeDef:
+    return {
+        "ActionSubType": ...,
+        "Region": ...,
+        "InstanceIds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SsmActionDefinitionTypeDef(TypedDict):
+    ActionSubType: ActionSubTypeType,  # (1)
+    Region: str,
+    InstanceIds: Sequence[str],
+```
 
-- `ActionSubType`: [ActionSubTypeType](./literals.md#actionsubtypetype)
-- `Region`: `str`
-- `InstanceIds`: `Sequence`\[`str`\]
-
-<a id="subscribertypedef"></a>
-
+1. See [:material-code-brackets: ActionSubTypeType](./literals.md#actionsubtypetype) 
 ## SubscriberTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import SubscriberTypeDef
+
+def get_value() -> SubscriberTypeDef:
+    return {
+        "SubscriptionType": ...,
+        "Address": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubscriberTypeDef(TypedDict):
+    SubscriptionType: SubscriptionTypeType,  # (1)
+    Address: str,
+```
 
-- `SubscriptionType`:
-  [SubscriptionTypeType](./literals.md#subscriptiontypetype)
-- `Address`: `str`
-
-<a id="timeperiodtypedef"></a>
-
+1. See [:material-code-brackets: SubscriptionTypeType](./literals.md#subscriptiontypetype) 
 ## TimePeriodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import TimePeriodTypeDef
+
+def get_value() -> TimePeriodTypeDef:
+    return {
+        "Start": ...,
+    }
 ```
 
-Optional fields:
-
-- `Start`: `Union`\[`datetime`, `str`\]
-- `End`: `Union`\[`datetime`, `str`\]
-
-<a id="updatebudgetactionrequestrequesttypedef"></a>
+```python title="Definition"
+class TimePeriodTypeDef(TypedDict):
+    Start: NotRequired[Union[datetime, str]],
+    End: NotRequired[Union[datetime, str]],
+```
 
 ## UpdateBudgetActionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import UpdateBudgetActionRequestRequestTypeDef
+
+def get_value() -> UpdateBudgetActionRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "ActionId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBudgetActionRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    ActionId: str,
+    NotificationType: NotRequired[NotificationTypeType],  # (1)
+    ActionThreshold: NotRequired[ActionThresholdTypeDef],  # (2)
+    Definition: NotRequired[DefinitionTypeDef],  # (3)
+    ExecutionRoleArn: NotRequired[str],
+    ApprovalModel: NotRequired[ApprovalModelType],  # (4)
+    Subscribers: NotRequired[Sequence[SubscriberTypeDef]],  # (5)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `ActionId`: `str`
-
-Optional fields:
-
-- `NotificationType`:
-  [NotificationTypeType](./literals.md#notificationtypetype)
-- `ActionThreshold`:
-  [ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef)
-- `Definition`: [DefinitionTypeDef](./type_defs.md#definitiontypedef)
-- `ExecutionRoleArn`: `str`
-- `ApprovalModel`: [ApprovalModelType](./literals.md#approvalmodeltype)
-- `Subscribers`:
-  `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
-
-<a id="updatebudgetactionresponsetypedef"></a>
-
+1. See [:material-code-brackets: NotificationTypeType](./literals.md#notificationtypetype) 
+2. See [:material-code-braces: ActionThresholdTypeDef](./type_defs.md#actionthresholdtypedef) 
+3. See [:material-code-braces: DefinitionTypeDef](./type_defs.md#definitiontypedef) 
+4. See [:material-code-brackets: ApprovalModelType](./literals.md#approvalmodeltype) 
+5. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
 ## UpdateBudgetActionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import UpdateBudgetActionResponseTypeDef
+
+def get_value() -> UpdateBudgetActionResponseTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "OldAction": ...,
+        "NewAction": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBudgetActionResponseTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    OldAction: ActionTypeDef,  # (1)
+    NewAction: ActionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `OldAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `NewAction`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatebudgetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateBudgetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import UpdateBudgetRequestRequestTypeDef
+
+def get_value() -> UpdateBudgetRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "NewBudget": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateBudgetRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    NewBudget: BudgetTypeDef,  # (1)
+```
 
-- `AccountId`: `str`
-- `NewBudget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
-
-<a id="updatenotificationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BudgetTypeDef](./type_defs.md#budgettypedef) 
 ## UpdateNotificationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import UpdateNotificationRequestRequestTypeDef
+
+def get_value() -> UpdateNotificationRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "OldNotification": ...,
+        "NewNotification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateNotificationRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    OldNotification: NotificationTypeDef,  # (1)
+    NewNotification: NotificationTypeDef,  # (1)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `OldNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `NewNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-
-<a id="updatesubscriberrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
 ## UpdateSubscriberRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_budgets.type_defs import UpdateSubscriberRequestRequestTypeDef
+
+def get_value() -> UpdateSubscriberRequestRequestTypeDef:
+    return {
+        "AccountId": ...,
+        "BudgetName": ...,
+        "Notification": ...,
+        "OldSubscriber": ...,
+        "NewSubscriber": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSubscriberRequestRequestTypeDef(TypedDict):
+    AccountId: str,
+    BudgetName: str,
+    Notification: NotificationTypeDef,  # (1)
+    OldSubscriber: SubscriberTypeDef,  # (2)
+    NewSubscriber: SubscriberTypeDef,  # (2)
+```
 
-- `AccountId`: `str`
-- `BudgetName`: `str`
-- `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
-- `OldSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
-- `NewSubscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+1. See [:material-code-braces: NotificationTypeDef](./type_defs.md#notificationtypedef) 
+2. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 
+3. See [:material-code-braces: SubscriberTypeDef](./type_defs.md#subscribertypedef) 

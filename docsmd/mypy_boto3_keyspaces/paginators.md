@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-keyspaces-module"></a>
-
-# Paginators for boto3 Keyspaces module
+# Paginators
 
 > [Index](../README.md) > [Keyspaces](./README.md) > Paginators
 
-Auto-generated documentation for
-[Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces)
-type annotations stubs module
-[mypy-boto3-keyspaces](https://pypi.org/project/mypy-boto3-keyspaces/).
+!!! note ""
 
-- [Paginators for boto3 Keyspaces module](#paginators-for-boto3-keyspaces-module)
-  - [ListKeyspacesPaginator](#listkeyspacespaginator)
-  - [ListTablesPaginator](#listtablespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="listkeyspacespaginator"></a>
+    Auto-generated documentation for [Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces)
+    type annotations stubs module [mypy-boto3-keyspaces](https://pypi.org/project/mypy-boto3-keyspaces/).
 
 ## ListKeyspacesPaginator
 
-Type annotations for
-`boto3.client("keyspaces").get_paginator("list_keyspaces")`.
+Type annotations and code completion for `#!python boto3.client("keyspaces").get_paginator("list_keyspaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListKeyspaces)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_keyspaces.paginator import ListKeyspacesPaginator
@@ -32,26 +21,39 @@ def get_list_keyspaces_paginator() -> ListKeyspacesPaginator:
     return Session().client("keyspaces").get_paginator("list_keyspaces")
 ```
 
-Boto3 documentation:
-[Keyspaces.Paginator.ListKeyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListKeyspaces)
 
-Arguments for `ListKeyspacesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListKeyspacesPaginator.paginate` method.
 
-`ListKeyspacesPaginator.paginate` returns
-`_PageIterator`\[[ListKeyspacesResponseTypeDef](./type_defs.md#listkeyspacesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListKeyspacesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtablespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListKeyspacesResponseTypeDef](./type_defs.md#listkeyspacesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListKeyspacesRequestListKeyspacesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListKeyspacesRequestListKeyspacesPaginateTypeDef](./type_defs.md#listkeyspacesrequestlistkeyspacespaginatetypedef) 
 ## ListTablesPaginator
 
-Type annotations for `boto3.client("keyspaces").get_paginator("list_tables")`.
+Type annotations and code completion for `#!python boto3.client("keyspaces").get_paginator("list_tables")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListTables)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_keyspaces.paginator import ListTablesPaginator
@@ -60,28 +62,40 @@ def get_list_tables_paginator() -> ListTablesPaginator:
     return Session().client("keyspaces").get_paginator("list_tables")
 ```
 
-Boto3 documentation:
-[Keyspaces.Paginator.ListTables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListTables)
 
-Arguments for `ListTablesPaginator.paginate` method:
+### paginate
 
-- `keyspaceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTablesPaginator.paginate` method.
 
-`ListTablesPaginator.paginate` returns
-`_PageIterator`\[[ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    keyspaceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTablesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestListTablesPaginateTypeDef = {  # (1)
+    "keyspaceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTablesRequestListTablesPaginateTypeDef](./type_defs.md#listtablesrequestlisttablespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("keyspaces").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("keyspaces").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_keyspaces.paginator import ListTagsForResourcePaginator
@@ -90,14 +104,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("keyspaces").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[Keyspaces.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `resourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef) 

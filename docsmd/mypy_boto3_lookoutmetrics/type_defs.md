@@ -1,1415 +1,1728 @@
-<a id="typed-dictionaries-for-boto3-lookoutmetrics-module"></a>
-
-# Typed dictionaries for boto3 LookoutMetrics module
+# Typed dictionaries
 
 > [Index](../README.md) > [LookoutMetrics](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
-type annotations stubs module
-[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+!!! note ""
 
-- [Typed dictionaries for boto3 LookoutMetrics module](#typed-dictionaries-for-boto3-lookoutmetrics-module)
-  - [ActionTypeDef](#actiontypedef)
-  - [ActivateAnomalyDetectorRequestRequestTypeDef](#activateanomalydetectorrequestrequesttypedef)
-  - [AlertSummaryTypeDef](#alertsummarytypedef)
-  - [AlertTypeDef](#alerttypedef)
-  - [AnomalyDetectorConfigSummaryTypeDef](#anomalydetectorconfigsummarytypedef)
-  - [AnomalyDetectorConfigTypeDef](#anomalydetectorconfigtypedef)
-  - [AnomalyDetectorSummaryTypeDef](#anomalydetectorsummarytypedef)
-  - [AnomalyGroupStatisticsTypeDef](#anomalygroupstatisticstypedef)
-  - [AnomalyGroupSummaryTypeDef](#anomalygroupsummarytypedef)
-  - [AnomalyGroupTimeSeriesFeedbackTypeDef](#anomalygrouptimeseriesfeedbacktypedef)
-  - [AnomalyGroupTimeSeriesTypeDef](#anomalygrouptimeseriestypedef)
-  - [AnomalyGroupTypeDef](#anomalygrouptypedef)
-  - [AppFlowConfigTypeDef](#appflowconfigtypedef)
-  - [BackTestAnomalyDetectorRequestRequestTypeDef](#backtestanomalydetectorrequestrequesttypedef)
-  - [CloudWatchConfigTypeDef](#cloudwatchconfigtypedef)
-  - [ContributionMatrixTypeDef](#contributionmatrixtypedef)
-  - [CreateAlertRequestRequestTypeDef](#createalertrequestrequesttypedef)
-  - [CreateAlertResponseTypeDef](#createalertresponsetypedef)
-  - [CreateAnomalyDetectorRequestRequestTypeDef](#createanomalydetectorrequestrequesttypedef)
-  - [CreateAnomalyDetectorResponseTypeDef](#createanomalydetectorresponsetypedef)
-  - [CreateMetricSetRequestRequestTypeDef](#createmetricsetrequestrequesttypedef)
-  - [CreateMetricSetResponseTypeDef](#createmetricsetresponsetypedef)
-  - [CsvFormatDescriptorTypeDef](#csvformatdescriptortypedef)
-  - [DeactivateAnomalyDetectorRequestRequestTypeDef](#deactivateanomalydetectorrequestrequesttypedef)
-  - [DeleteAlertRequestRequestTypeDef](#deletealertrequestrequesttypedef)
-  - [DeleteAnomalyDetectorRequestRequestTypeDef](#deleteanomalydetectorrequestrequesttypedef)
-  - [DescribeAlertRequestRequestTypeDef](#describealertrequestrequesttypedef)
-  - [DescribeAlertResponseTypeDef](#describealertresponsetypedef)
-  - [DescribeAnomalyDetectionExecutionsRequestRequestTypeDef](#describeanomalydetectionexecutionsrequestrequesttypedef)
-  - [DescribeAnomalyDetectionExecutionsResponseTypeDef](#describeanomalydetectionexecutionsresponsetypedef)
-  - [DescribeAnomalyDetectorRequestRequestTypeDef](#describeanomalydetectorrequestrequesttypedef)
-  - [DescribeAnomalyDetectorResponseTypeDef](#describeanomalydetectorresponsetypedef)
-  - [DescribeMetricSetRequestRequestTypeDef](#describemetricsetrequestrequesttypedef)
-  - [DescribeMetricSetResponseTypeDef](#describemetricsetresponsetypedef)
-  - [DimensionContributionTypeDef](#dimensioncontributiontypedef)
-  - [DimensionNameValueTypeDef](#dimensionnamevaluetypedef)
-  - [DimensionValueContributionTypeDef](#dimensionvaluecontributiontypedef)
-  - [ExecutionStatusTypeDef](#executionstatustypedef)
-  - [FileFormatDescriptorTypeDef](#fileformatdescriptortypedef)
-  - [GetAnomalyGroupRequestRequestTypeDef](#getanomalygrouprequestrequesttypedef)
-  - [GetAnomalyGroupResponseTypeDef](#getanomalygroupresponsetypedef)
-  - [GetFeedbackRequestRequestTypeDef](#getfeedbackrequestrequesttypedef)
-  - [GetFeedbackResponseTypeDef](#getfeedbackresponsetypedef)
-  - [GetSampleDataRequestRequestTypeDef](#getsampledatarequestrequesttypedef)
-  - [GetSampleDataResponseTypeDef](#getsampledataresponsetypedef)
-  - [InterMetricImpactDetailsTypeDef](#intermetricimpactdetailstypedef)
-  - [ItemizedMetricStatsTypeDef](#itemizedmetricstatstypedef)
-  - [JsonFormatDescriptorTypeDef](#jsonformatdescriptortypedef)
-  - [LambdaConfigurationTypeDef](#lambdaconfigurationtypedef)
-  - [ListAlertsRequestRequestTypeDef](#listalertsrequestrequesttypedef)
-  - [ListAlertsResponseTypeDef](#listalertsresponsetypedef)
-  - [ListAnomalyDetectorsRequestRequestTypeDef](#listanomalydetectorsrequestrequesttypedef)
-  - [ListAnomalyDetectorsResponseTypeDef](#listanomalydetectorsresponsetypedef)
-  - [ListAnomalyGroupRelatedMetricsRequestRequestTypeDef](#listanomalygrouprelatedmetricsrequestrequesttypedef)
-  - [ListAnomalyGroupRelatedMetricsResponseTypeDef](#listanomalygrouprelatedmetricsresponsetypedef)
-  - [ListAnomalyGroupSummariesRequestRequestTypeDef](#listanomalygroupsummariesrequestrequesttypedef)
-  - [ListAnomalyGroupSummariesResponseTypeDef](#listanomalygroupsummariesresponsetypedef)
-  - [ListAnomalyGroupTimeSeriesRequestRequestTypeDef](#listanomalygrouptimeseriesrequestrequesttypedef)
-  - [ListAnomalyGroupTimeSeriesResponseTypeDef](#listanomalygrouptimeseriesresponsetypedef)
-  - [ListMetricSetsRequestRequestTypeDef](#listmetricsetsrequestrequesttypedef)
-  - [ListMetricSetsResponseTypeDef](#listmetricsetsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MetricLevelImpactTypeDef](#metriclevelimpacttypedef)
-  - [MetricSetSummaryTypeDef](#metricsetsummarytypedef)
-  - [MetricSourceTypeDef](#metricsourcetypedef)
-  - [MetricTypeDef](#metrictypedef)
-  - [PutFeedbackRequestRequestTypeDef](#putfeedbackrequestrequesttypedef)
-  - [RDSSourceConfigTypeDef](#rdssourceconfigtypedef)
-  - [RedshiftSourceConfigTypeDef](#redshiftsourceconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3SourceConfigTypeDef](#s3sourceconfigtypedef)
-  - [SNSConfigurationTypeDef](#snsconfigurationtypedef)
-  - [SampleDataS3SourceConfigTypeDef](#sampledatas3sourceconfigtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TimeSeriesFeedbackTypeDef](#timeseriesfeedbacktypedef)
-  - [TimeSeriesTypeDef](#timeseriestypedef)
-  - [TimestampColumnTypeDef](#timestampcolumntypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAnomalyDetectorRequestRequestTypeDef](#updateanomalydetectorrequestrequesttypedef)
-  - [UpdateAnomalyDetectorResponseTypeDef](#updateanomalydetectorresponsetypedef)
-  - [UpdateMetricSetRequestRequestTypeDef](#updatemetricsetrequestrequesttypedef)
-  - [UpdateMetricSetResponseTypeDef](#updatemetricsetresponsetypedef)
-  - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
-
-<a id="actiontypedef"></a>
+    Auto-generated documentation for [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
+    type annotations stubs module [mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "SNSConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    SNSConfiguration: NotRequired[SNSConfigurationTypeDef],  # (1)
+    LambdaConfiguration: NotRequired[LambdaConfigurationTypeDef],  # (2)
+```
 
-- `SNSConfiguration`:
-  [SNSConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef)
-- `LambdaConfiguration`:
-  [LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef)
-
-<a id="activateanomalydetectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SNSConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef) 
+2. See [:material-code-braces: LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef) 
 ## ActivateAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ActivateAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> ActivateAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-<a id="alertsummarytypedef"></a>
+```python title="Definition"
+class ActivateAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+```
 
 ## AlertSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AlertSummaryTypeDef
+
+def get_value() -> AlertSummaryTypeDef:
+    return {
+        "AlertArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlertSummaryTypeDef(TypedDict):
+    AlertArn: NotRequired[str],
+    AnomalyDetectorArn: NotRequired[str],
+    AlertName: NotRequired[str],
+    AlertSensitivityThreshold: NotRequired[int],
+    AlertType: NotRequired[AlertTypeType],  # (1)
+    AlertStatus: NotRequired[AlertStatusType],  # (2)
+    LastModificationTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `AlertArn`: `str`
-- `AnomalyDetectorArn`: `str`
-- `AlertName`: `str`
-- `AlertSensitivityThreshold`: `int`
-- `AlertType`: [AlertTypeType](./literals.md#alerttypetype)
-- `AlertStatus`: [AlertStatusType](./literals.md#alertstatustype)
-- `LastModificationTime`: `datetime`
-- `CreationTime`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="alerttypedef"></a>
-
+1. See [:material-code-brackets: AlertTypeType](./literals.md#alerttypetype) 
+2. See [:material-code-brackets: AlertStatusType](./literals.md#alertstatustype) 
 ## AlertTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AlertTypeDef
+
+def get_value() -> AlertTypeDef:
+    return {
+        "Action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlertTypeDef(TypedDict):
+    Action: NotRequired[ActionTypeDef],  # (1)
+    AlertDescription: NotRequired[str],
+    AlertArn: NotRequired[str],
+    AnomalyDetectorArn: NotRequired[str],
+    AlertName: NotRequired[str],
+    AlertSensitivityThreshold: NotRequired[int],
+    AlertType: NotRequired[AlertTypeType],  # (2)
+    AlertStatus: NotRequired[AlertStatusType],  # (3)
+    LastModificationTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+```
 
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-- `AlertDescription`: `str`
-- `AlertArn`: `str`
-- `AnomalyDetectorArn`: `str`
-- `AlertName`: `str`
-- `AlertSensitivityThreshold`: `int`
-- `AlertType`: [AlertTypeType](./literals.md#alerttypetype)
-- `AlertStatus`: [AlertStatusType](./literals.md#alertstatustype)
-- `LastModificationTime`: `datetime`
-- `CreationTime`: `datetime`
-
-<a id="anomalydetectorconfigsummarytypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-brackets: AlertTypeType](./literals.md#alerttypetype) 
+3. See [:material-code-brackets: AlertStatusType](./literals.md#alertstatustype) 
 ## AnomalyDetectorConfigSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigSummaryTypeDef
+
+def get_value() -> AnomalyDetectorConfigSummaryTypeDef:
+    return {
+        "AnomalyDetectorFrequency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalyDetectorConfigSummaryTypeDef(TypedDict):
+    AnomalyDetectorFrequency: NotRequired[FrequencyType],  # (1)
+```
 
-- `AnomalyDetectorFrequency`: [FrequencyType](./literals.md#frequencytype)
-
-<a id="anomalydetectorconfigtypedef"></a>
-
+1. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 ## AnomalyDetectorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorConfigTypeDef
+
+def get_value() -> AnomalyDetectorConfigTypeDef:
+    return {
+        "AnomalyDetectorFrequency": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalyDetectorConfigTypeDef(TypedDict):
+    AnomalyDetectorFrequency: NotRequired[FrequencyType],  # (1)
+```
 
-- `AnomalyDetectorFrequency`: [FrequencyType](./literals.md#frequencytype)
-
-<a id="anomalydetectorsummarytypedef"></a>
-
+1. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 ## AnomalyDetectorSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyDetectorSummaryTypeDef
+
+def get_value() -> AnomalyDetectorSummaryTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalyDetectorSummaryTypeDef(TypedDict):
+    AnomalyDetectorArn: NotRequired[str],
+    AnomalyDetectorName: NotRequired[str],
+    AnomalyDetectorDescription: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+    Status: NotRequired[AnomalyDetectorStatusType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `AnomalyDetectorArn`: `str`
-- `AnomalyDetectorName`: `str`
-- `AnomalyDetectorDescription`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `Status`:
-  [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="anomalygroupstatisticstypedef"></a>
-
+1. See [:material-code-brackets: AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype) 
 ## AnomalyGroupStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupStatisticsTypeDef
+
+def get_value() -> AnomalyGroupStatisticsTypeDef:
+    return {
+        "EvaluationStartDate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalyGroupStatisticsTypeDef(TypedDict):
+    EvaluationStartDate: NotRequired[str],
+    TotalCount: NotRequired[int],
+    ItemizedMetricStatsList: NotRequired[List[ItemizedMetricStatsTypeDef]],  # (1)
+```
 
-- `EvaluationStartDate`: `str`
-- `TotalCount`: `int`
-- `ItemizedMetricStatsList`:
-  `List`\[[ItemizedMetricStatsTypeDef](./type_defs.md#itemizedmetricstatstypedef)\]
-
-<a id="anomalygroupsummarytypedef"></a>
-
+1. See [:material-code-braces: ItemizedMetricStatsTypeDef](./type_defs.md#itemizedmetricstatstypedef) 
 ## AnomalyGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupSummaryTypeDef
+
+def get_value() -> AnomalyGroupSummaryTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `str`
-- `EndTime`: `str`
-- `AnomalyGroupId`: `str`
-- `AnomalyGroupScore`: `float`
-- `PrimaryMetricName`: `str`
-
-<a id="anomalygrouptimeseriesfeedbacktypedef"></a>
+```python title="Definition"
+class AnomalyGroupSummaryTypeDef(TypedDict):
+    StartTime: NotRequired[str],
+    EndTime: NotRequired[str],
+    AnomalyGroupId: NotRequired[str],
+    AnomalyGroupScore: NotRequired[float],
+    PrimaryMetricName: NotRequired[str],
+```
 
 ## AnomalyGroupTimeSeriesFeedbackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTimeSeriesFeedbackTypeDef
+
+def get_value() -> AnomalyGroupTimeSeriesFeedbackTypeDef:
+    return {
+        "AnomalyGroupId": ...,
+        "TimeSeriesId": ...,
+        "IsAnomaly": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyGroupId`: `str`
-- `TimeSeriesId`: `str`
-- `IsAnomaly`: `bool`
-
-<a id="anomalygrouptimeseriestypedef"></a>
+```python title="Definition"
+class AnomalyGroupTimeSeriesFeedbackTypeDef(TypedDict):
+    AnomalyGroupId: str,
+    TimeSeriesId: str,
+    IsAnomaly: bool,
+```
 
 ## AnomalyGroupTimeSeriesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTimeSeriesTypeDef
+
+def get_value() -> AnomalyGroupTimeSeriesTypeDef:
+    return {
+        "AnomalyGroupId": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyGroupId`: `str`
-
-Optional fields:
-
-- `TimeSeriesId`: `str`
-
-<a id="anomalygrouptypedef"></a>
+```python title="Definition"
+class AnomalyGroupTimeSeriesTypeDef(TypedDict):
+    AnomalyGroupId: str,
+    TimeSeriesId: NotRequired[str],
+```
 
 ## AnomalyGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AnomalyGroupTypeDef
+
+def get_value() -> AnomalyGroupTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalyGroupTypeDef(TypedDict):
+    StartTime: NotRequired[str],
+    EndTime: NotRequired[str],
+    AnomalyGroupId: NotRequired[str],
+    AnomalyGroupScore: NotRequired[float],
+    PrimaryMetricName: NotRequired[str],
+    MetricLevelImpactList: NotRequired[List[MetricLevelImpactTypeDef]],  # (1)
+```
 
-- `StartTime`: `str`
-- `EndTime`: `str`
-- `AnomalyGroupId`: `str`
-- `AnomalyGroupScore`: `float`
-- `PrimaryMetricName`: `str`
-- `MetricLevelImpactList`:
-  `List`\[[MetricLevelImpactTypeDef](./type_defs.md#metriclevelimpacttypedef)\]
-
-<a id="appflowconfigtypedef"></a>
-
+1. See [:material-code-braces: MetricLevelImpactTypeDef](./type_defs.md#metriclevelimpacttypedef) 
 ## AppFlowConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import AppFlowConfigTypeDef
+
+def get_value() -> AppFlowConfigTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoleArn`: `str`
-- `FlowName`: `str`
-
-<a id="backtestanomalydetectorrequestrequesttypedef"></a>
+```python title="Definition"
+class AppFlowConfigTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
+    FlowName: NotRequired[str],
+```
 
 ## BackTestAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import BackTestAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> BackTestAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-<a id="cloudwatchconfigtypedef"></a>
+```python title="Definition"
+class BackTestAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+```
 
 ## CloudWatchConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CloudWatchConfigTypeDef
+
+def get_value() -> CloudWatchConfigTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RoleArn`: `str`
-
-<a id="contributionmatrixtypedef"></a>
+```python title="Definition"
+class CloudWatchConfigTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
+```
 
 ## ContributionMatrixTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ContributionMatrixTypeDef
+
+def get_value() -> ContributionMatrixTypeDef:
+    return {
+        "DimensionContributionList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContributionMatrixTypeDef(TypedDict):
+    DimensionContributionList: NotRequired[List[DimensionContributionTypeDef]],  # (1)
+```
 
-- `DimensionContributionList`:
-  `List`\[[DimensionContributionTypeDef](./type_defs.md#dimensioncontributiontypedef)\]
-
-<a id="createalertrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DimensionContributionTypeDef](./type_defs.md#dimensioncontributiontypedef) 
 ## CreateAlertRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateAlertRequestRequestTypeDef
+
+def get_value() -> CreateAlertRequestRequestTypeDef:
+    return {
+        "AlertName": ...,
+        "AlertSensitivityThreshold": ...,
+        "AnomalyDetectorArn": ...,
+        "Action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAlertRequestRequestTypeDef(TypedDict):
+    AlertName: str,
+    AlertSensitivityThreshold: int,
+    AnomalyDetectorArn: str,
+    Action: ActionTypeDef,  # (1)
+    AlertDescription: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `AlertName`: `str`
-- `AlertSensitivityThreshold`: `int`
-- `AnomalyDetectorArn`: `str`
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
-
-Optional fields:
-
-- `AlertDescription`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createalertresponsetypedef"></a>
-
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 ## CreateAlertResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateAlertResponseTypeDef
+
+def get_value() -> CreateAlertResponseTypeDef:
+    return {
+        "AlertArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAlertResponseTypeDef(TypedDict):
+    AlertArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AlertArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createanomalydetectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> CreateAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorName": ...,
+        "AnomalyDetectorConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorName: str,
+    AnomalyDetectorConfig: AnomalyDetectorConfigTypeDef,  # (1)
+    AnomalyDetectorDescription: NotRequired[str],
+    KmsKeyArn: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `AnomalyDetectorName`: `str`
-- `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
-
-Optional fields:
-
-- `AnomalyDetectorDescription`: `str`
-- `KmsKeyArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createanomalydetectorresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef) 
 ## CreateAnomalyDetectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateAnomalyDetectorResponseTypeDef
+
+def get_value() -> CreateAnomalyDetectorResponseTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnomalyDetectorResponseTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AnomalyDetectorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmetricsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMetricSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetRequestRequestTypeDef
+
+def get_value() -> CreateMetricSetRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "MetricSetName": ...,
+        "MetricList": ...,
+        "MetricSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMetricSetRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    MetricSetName: str,
+    MetricList: Sequence[MetricTypeDef],  # (1)
+    MetricSource: MetricSourceTypeDef,  # (2)
+    MetricSetDescription: NotRequired[str],
+    Offset: NotRequired[int],
+    TimestampColumn: NotRequired[TimestampColumnTypeDef],  # (3)
+    DimensionList: NotRequired[Sequence[str]],
+    MetricSetFrequency: NotRequired[FrequencyType],  # (4)
+    Timezone: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `AnomalyDetectorArn`: `str`
-- `MetricSetName`: `str`
-- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
-- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
-
-Optional fields:
-
-- `MetricSetDescription`: `str`
-- `Offset`: `int`
-- `TimestampColumn`:
-  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `Sequence`\[`str`\]
-- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
-- `Timezone`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createmetricsetresponsetypedef"></a>
-
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
+3. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
+4. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
 ## CreateMetricSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CreateMetricSetResponseTypeDef
+
+def get_value() -> CreateMetricSetResponseTypeDef:
+    return {
+        "MetricSetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMetricSetResponseTypeDef(TypedDict):
+    MetricSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MetricSetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="csvformatdescriptortypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CsvFormatDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import CsvFormatDescriptorTypeDef
+
+def get_value() -> CsvFormatDescriptorTypeDef:
+    return {
+        "FileCompression": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CsvFormatDescriptorTypeDef(TypedDict):
+    FileCompression: NotRequired[CSVFileCompressionType],  # (1)
+    Charset: NotRequired[str],
+    ContainsHeader: NotRequired[bool],
+    Delimiter: NotRequired[str],
+    HeaderList: NotRequired[Sequence[str]],
+    QuoteSymbol: NotRequired[str],
+```
 
-- `FileCompression`:
-  [CSVFileCompressionType](./literals.md#csvfilecompressiontype)
-- `Charset`: `str`
-- `ContainsHeader`: `bool`
-- `Delimiter`: `str`
-- `HeaderList`: `Sequence`\[`str`\]
-- `QuoteSymbol`: `str`
-
-<a id="deactivateanomalydetectorrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CSVFileCompressionType](./literals.md#csvfilecompressiontype) 
 ## DeactivateAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DeactivateAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> DeactivateAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-<a id="deletealertrequestrequesttypedef"></a>
+```python title="Definition"
+class DeactivateAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+```
 
 ## DeleteAlertRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DeleteAlertRequestRequestTypeDef
+
+def get_value() -> DeleteAlertRequestRequestTypeDef:
+    return {
+        "AlertArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AlertArn`: `str`
-
-<a id="deleteanomalydetectorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAlertRequestRequestTypeDef(TypedDict):
+    AlertArn: str,
+```
 
 ## DeleteAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DeleteAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> DeleteAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-<a id="describealertrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+```
 
 ## DescribeAlertRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertRequestRequestTypeDef
+
+def get_value() -> DescribeAlertRequestRequestTypeDef:
+    return {
+        "AlertArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AlertArn`: `str`
-
-<a id="describealertresponsetypedef"></a>
+```python title="Definition"
+class DescribeAlertRequestRequestTypeDef(TypedDict):
+    AlertArn: str,
+```
 
 ## DescribeAlertResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAlertResponseTypeDef
+
+def get_value() -> DescribeAlertResponseTypeDef:
+    return {
+        "Alert": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAlertResponseTypeDef(TypedDict):
+    Alert: AlertTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Alert`: [AlertTypeDef](./type_defs.md#alerttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeanomalydetectionexecutionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlertTypeDef](./type_defs.md#alerttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAnomalyDetectionExecutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsRequestRequestTypeDef
+
+def get_value() -> DescribeAnomalyDetectionExecutionsRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-Optional fields:
-
-- `Timestamp`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describeanomalydetectionexecutionsresponsetypedef"></a>
+```python title="Definition"
+class DescribeAnomalyDetectionExecutionsRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    Timestamp: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## DescribeAnomalyDetectionExecutionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectionExecutionsResponseTypeDef
+
+def get_value() -> DescribeAnomalyDetectionExecutionsResponseTypeDef:
+    return {
+        "ExecutionList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAnomalyDetectionExecutionsResponseTypeDef(TypedDict):
+    ExecutionList: List[ExecutionStatusTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExecutionList`:
-  `List`\[[ExecutionStatusTypeDef](./type_defs.md#executionstatustypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeanomalydetectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ExecutionStatusTypeDef](./type_defs.md#executionstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> DescribeAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-
-<a id="describeanomalydetectorresponsetypedef"></a>
+```python title="Definition"
+class DescribeAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+```
 
 ## DescribeAnomalyDetectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeAnomalyDetectorResponseTypeDef
+
+def get_value() -> DescribeAnomalyDetectorResponseTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AnomalyDetectorName": ...,
+        "AnomalyDetectorDescription": ...,
+        "AnomalyDetectorConfig": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "Status": ...,
+        "FailureReason": ...,
+        "KmsKeyArn": ...,
+        "FailureType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAnomalyDetectorResponseTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AnomalyDetectorName: str,
+    AnomalyDetectorDescription: str,
+    AnomalyDetectorConfig: AnomalyDetectorConfigSummaryTypeDef,  # (1)
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    Status: AnomalyDetectorStatusType,  # (2)
+    FailureReason: str,
+    KmsKeyArn: str,
+    FailureType: AnomalyDetectorFailureTypeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `AnomalyDetectorArn`: `str`
-- `AnomalyDetectorName`: `str`
-- `AnomalyDetectorDescription`: `str`
-- `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigSummaryTypeDef](./type_defs.md#anomalydetectorconfigsummarytypedef)
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `Status`:
-  [AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype)
-- `FailureReason`: `str`
-- `KmsKeyArn`: `str`
-- `FailureType`:
-  [AnomalyDetectorFailureTypeType](./literals.md#anomalydetectorfailuretypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemetricsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyDetectorConfigSummaryTypeDef](./type_defs.md#anomalydetectorconfigsummarytypedef) 
+2. See [:material-code-brackets: AnomalyDetectorStatusType](./literals.md#anomalydetectorstatustype) 
+3. See [:material-code-brackets: AnomalyDetectorFailureTypeType](./literals.md#anomalydetectorfailuretypetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMetricSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetRequestRequestTypeDef
+
+def get_value() -> DescribeMetricSetRequestRequestTypeDef:
+    return {
+        "MetricSetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `MetricSetArn`: `str`
-
-<a id="describemetricsetresponsetypedef"></a>
+```python title="Definition"
+class DescribeMetricSetRequestRequestTypeDef(TypedDict):
+    MetricSetArn: str,
+```
 
 ## DescribeMetricSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DescribeMetricSetResponseTypeDef
+
+def get_value() -> DescribeMetricSetResponseTypeDef:
+    return {
+        "MetricSetArn": ...,
+        "AnomalyDetectorArn": ...,
+        "MetricSetName": ...,
+        "MetricSetDescription": ...,
+        "CreationTime": ...,
+        "LastModificationTime": ...,
+        "Offset": ...,
+        "MetricList": ...,
+        "TimestampColumn": ...,
+        "DimensionList": ...,
+        "MetricSetFrequency": ...,
+        "Timezone": ...,
+        "MetricSource": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMetricSetResponseTypeDef(TypedDict):
+    MetricSetArn: str,
+    AnomalyDetectorArn: str,
+    MetricSetName: str,
+    MetricSetDescription: str,
+    CreationTime: datetime,
+    LastModificationTime: datetime,
+    Offset: int,
+    MetricList: List[MetricTypeDef],  # (1)
+    TimestampColumn: TimestampColumnTypeDef,  # (2)
+    DimensionList: List[str],
+    MetricSetFrequency: FrequencyType,  # (3)
+    Timezone: str,
+    MetricSource: MetricSourceTypeDef,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `MetricSetArn`: `str`
-- `AnomalyDetectorArn`: `str`
-- `MetricSetName`: `str`
-- `MetricSetDescription`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `Offset`: `int`
-- `MetricList`: `List`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
-- `TimestampColumn`:
-  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `List`\[`str`\]
-- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
-- `Timezone`: `str`
-- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensioncontributiontypedef"></a>
-
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
+3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
+4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionContributionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DimensionContributionTypeDef
+
+def get_value() -> DimensionContributionTypeDef:
+    return {
+        "DimensionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DimensionContributionTypeDef(TypedDict):
+    DimensionName: NotRequired[str],
+    DimensionValueContributionList: NotRequired[List[DimensionValueContributionTypeDef]],  # (1)
+```
 
-- `DimensionName`: `str`
-- `DimensionValueContributionList`:
-  `List`\[[DimensionValueContributionTypeDef](./type_defs.md#dimensionvaluecontributiontypedef)\]
-
-<a id="dimensionnamevaluetypedef"></a>
-
+1. See [:material-code-braces: DimensionValueContributionTypeDef](./type_defs.md#dimensionvaluecontributiontypedef) 
 ## DimensionNameValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DimensionNameValueTypeDef
+
+def get_value() -> DimensionNameValueTypeDef:
+    return {
+        "DimensionName": ...,
+        "DimensionValue": ...,
+    }
 ```
 
-Required fields:
-
-- `DimensionName`: `str`
-- `DimensionValue`: `str`
-
-<a id="dimensionvaluecontributiontypedef"></a>
+```python title="Definition"
+class DimensionNameValueTypeDef(TypedDict):
+    DimensionName: str,
+    DimensionValue: str,
+```
 
 ## DimensionValueContributionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import DimensionValueContributionTypeDef
+
+def get_value() -> DimensionValueContributionTypeDef:
+    return {
+        "DimensionValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `DimensionValue`: `str`
-- `ContributionScore`: `float`
-
-<a id="executionstatustypedef"></a>
+```python title="Definition"
+class DimensionValueContributionTypeDef(TypedDict):
+    DimensionValue: NotRequired[str],
+    ContributionScore: NotRequired[float],
+```
 
 ## ExecutionStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ExecutionStatusTypeDef
+
+def get_value() -> ExecutionStatusTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecutionStatusTypeDef(TypedDict):
+    Timestamp: NotRequired[str],
+    Status: NotRequired[AnomalyDetectionTaskStatusType],  # (1)
+    FailureReason: NotRequired[str],
+```
 
-- `Timestamp`: `str`
-- `Status`:
-  [AnomalyDetectionTaskStatusType](./literals.md#anomalydetectiontaskstatustype)
-- `FailureReason`: `str`
-
-<a id="fileformatdescriptortypedef"></a>
-
+1. See [:material-code-brackets: AnomalyDetectionTaskStatusType](./literals.md#anomalydetectiontaskstatustype) 
 ## FileFormatDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import FileFormatDescriptorTypeDef
+
+def get_value() -> FileFormatDescriptorTypeDef:
+    return {
+        "CsvFormatDescriptor": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FileFormatDescriptorTypeDef(TypedDict):
+    CsvFormatDescriptor: NotRequired[CsvFormatDescriptorTypeDef],  # (1)
+    JsonFormatDescriptor: NotRequired[JsonFormatDescriptorTypeDef],  # (2)
+```
 
-- `CsvFormatDescriptor`:
-  [CsvFormatDescriptorTypeDef](./type_defs.md#csvformatdescriptortypedef)
-- `JsonFormatDescriptor`:
-  [JsonFormatDescriptorTypeDef](./type_defs.md#jsonformatdescriptortypedef)
-
-<a id="getanomalygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CsvFormatDescriptorTypeDef](./type_defs.md#csvformatdescriptortypedef) 
+2. See [:material-code-braces: JsonFormatDescriptorTypeDef](./type_defs.md#jsonformatdescriptortypedef) 
 ## GetAnomalyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupRequestRequestTypeDef
+
+def get_value() -> GetAnomalyGroupRequestRequestTypeDef:
+    return {
+        "AnomalyGroupId": ...,
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyGroupId`: `str`
-- `AnomalyDetectorArn`: `str`
-
-<a id="getanomalygroupresponsetypedef"></a>
+```python title="Definition"
+class GetAnomalyGroupRequestRequestTypeDef(TypedDict):
+    AnomalyGroupId: str,
+    AnomalyDetectorArn: str,
+```
 
 ## GetAnomalyGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetAnomalyGroupResponseTypeDef
+
+def get_value() -> GetAnomalyGroupResponseTypeDef:
+    return {
+        "AnomalyGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnomalyGroupResponseTypeDef(TypedDict):
+    AnomalyGroup: AnomalyGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalyGroup`: [AnomalyGroupTypeDef](./type_defs.md#anomalygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfeedbackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyGroupTypeDef](./type_defs.md#anomalygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackRequestRequestTypeDef
+
+def get_value() -> GetFeedbackRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AnomalyGroupTimeSeriesFeedback": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFeedbackRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AnomalyDetectorArn`: `str`
-- `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef)
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getfeedbackresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalyGroupTimeSeriesTypeDef](./type_defs.md#anomalygrouptimeseriestypedef) 
 ## GetFeedbackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetFeedbackResponseTypeDef
+
+def get_value() -> GetFeedbackResponseTypeDef:
+    return {
+        "AnomalyGroupTimeSeriesFeedback": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFeedbackResponseTypeDef(TypedDict):
+    AnomalyGroupTimeSeriesFeedback: List[TimeSeriesFeedbackTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalyGroupTimeSeriesFeedback`:
-  `List`\[[TimeSeriesFeedbackTypeDef](./type_defs.md#timeseriesfeedbacktypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsampledatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TimeSeriesFeedbackTypeDef](./type_defs.md#timeseriesfeedbacktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSampleDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataRequestRequestTypeDef
+
+def get_value() -> GetSampleDataRequestRequestTypeDef:
+    return {
+        "S3SourceConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetSampleDataRequestRequestTypeDef(TypedDict):
+    S3SourceConfig: NotRequired[SampleDataS3SourceConfigTypeDef],  # (1)
+```
 
-- `S3SourceConfig`:
-  [SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef)
-
-<a id="getsampledataresponsetypedef"></a>
-
+1. See [:material-code-braces: SampleDataS3SourceConfigTypeDef](./type_defs.md#sampledatas3sourceconfigtypedef) 
 ## GetSampleDataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import GetSampleDataResponseTypeDef
+
+def get_value() -> GetSampleDataResponseTypeDef:
+    return {
+        "HeaderValues": ...,
+        "SampleRows": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSampleDataResponseTypeDef(TypedDict):
+    HeaderValues: List[str],
+    SampleRows: List[List[str]],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HeaderValues`: `List`\[`str`\]
-- `SampleRows`: `List`\[`List`\[`str`\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="intermetricimpactdetailstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InterMetricImpactDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import InterMetricImpactDetailsTypeDef
+
+def get_value() -> InterMetricImpactDetailsTypeDef:
+    return {
+        "MetricName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InterMetricImpactDetailsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    AnomalyGroupId: NotRequired[str],
+    RelationshipType: NotRequired[RelationshipTypeType],  # (1)
+    ContributionPercentage: NotRequired[float],
+```
 
-- `MetricName`: `str`
-- `AnomalyGroupId`: `str`
-- `RelationshipType`:
-  [RelationshipTypeType](./literals.md#relationshiptypetype)
-- `ContributionPercentage`: `float`
-
-<a id="itemizedmetricstatstypedef"></a>
-
+1. See [:material-code-brackets: RelationshipTypeType](./literals.md#relationshiptypetype) 
 ## ItemizedMetricStatsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ItemizedMetricStatsTypeDef
+
+def get_value() -> ItemizedMetricStatsTypeDef:
+    return {
+        "MetricName": ...,
+    }
 ```
 
-Optional fields:
-
-- `MetricName`: `str`
-- `OccurrenceCount`: `int`
-
-<a id="jsonformatdescriptortypedef"></a>
+```python title="Definition"
+class ItemizedMetricStatsTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    OccurrenceCount: NotRequired[int],
+```
 
 ## JsonFormatDescriptorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import JsonFormatDescriptorTypeDef
+
+def get_value() -> JsonFormatDescriptorTypeDef:
+    return {
+        "FileCompression": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JsonFormatDescriptorTypeDef(TypedDict):
+    FileCompression: NotRequired[JsonFileCompressionType],  # (1)
+    Charset: NotRequired[str],
+```
 
-- `FileCompression`:
-  [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
-- `Charset`: `str`
-
-<a id="lambdaconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: JsonFileCompressionType](./literals.md#jsonfilecompressiontype) 
 ## LambdaConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import LambdaConfigurationTypeDef
+
+def get_value() -> LambdaConfigurationTypeDef:
+    return {
+        "RoleArn": ...,
+        "LambdaArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-- `LambdaArn`: `str`
-
-<a id="listalertsrequestrequesttypedef"></a>
+```python title="Definition"
+class LambdaConfigurationTypeDef(TypedDict):
+    RoleArn: str,
+    LambdaArn: str,
+```
 
 ## ListAlertsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAlertsRequestRequestTypeDef
+
+def get_value() -> ListAlertsRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AnomalyDetectorArn`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listalertsresponsetypedef"></a>
+```python title="Definition"
+class ListAlertsRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListAlertsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAlertsResponseTypeDef
+
+def get_value() -> ListAlertsResponseTypeDef:
+    return {
+        "AlertSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAlertsResponseTypeDef(TypedDict):
+    AlertSummaryList: List[AlertSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AlertSummaryList`:
-  `List`\[[AlertSummaryTypeDef](./type_defs.md#alertsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listanomalydetectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlertSummaryTypeDef](./type_defs.md#alertsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAnomalyDetectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsRequestRequestTypeDef
+
+def get_value() -> ListAnomalyDetectorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listanomalydetectorsresponsetypedef"></a>
+```python title="Definition"
+class ListAnomalyDetectorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAnomalyDetectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyDetectorsResponseTypeDef
+
+def get_value() -> ListAnomalyDetectorsResponseTypeDef:
+    return {
+        "AnomalyDetectorSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomalyDetectorsResponseTypeDef(TypedDict):
+    AnomalyDetectorSummaryList: List[AnomalyDetectorSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalyDetectorSummaryList`:
-  `List`\[[AnomalyDetectorSummaryTypeDef](./type_defs.md#anomalydetectorsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listanomalygrouprelatedmetricsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyDetectorSummaryTypeDef](./type_defs.md#anomalydetectorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAnomalyGroupRelatedMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupRelatedMetricsRequestRequestTypeDef
+
+def get_value() -> ListAnomalyGroupRelatedMetricsRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AnomalyGroupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomalyGroupRelatedMetricsRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AnomalyGroupId: str,
+    RelationshipTypeFilter: NotRequired[RelationshipTypeType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AnomalyDetectorArn`: `str`
-- `AnomalyGroupId`: `str`
-
-Optional fields:
-
-- `RelationshipTypeFilter`:
-  [RelationshipTypeType](./literals.md#relationshiptypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listanomalygrouprelatedmetricsresponsetypedef"></a>
-
+1. See [:material-code-brackets: RelationshipTypeType](./literals.md#relationshiptypetype) 
 ## ListAnomalyGroupRelatedMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupRelatedMetricsResponseTypeDef
+
+def get_value() -> ListAnomalyGroupRelatedMetricsResponseTypeDef:
+    return {
+        "InterMetricImpactList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomalyGroupRelatedMetricsResponseTypeDef(TypedDict):
+    InterMetricImpactList: List[InterMetricImpactDetailsTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InterMetricImpactList`:
-  `List`\[[InterMetricImpactDetailsTypeDef](./type_defs.md#intermetricimpactdetailstypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listanomalygroupsummariesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InterMetricImpactDetailsTypeDef](./type_defs.md#intermetricimpactdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAnomalyGroupSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesRequestRequestTypeDef
+
+def get_value() -> ListAnomalyGroupSummariesRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "SensitivityThreshold": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-- `SensitivityThreshold`: `int`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listanomalygroupsummariesresponsetypedef"></a>
+```python title="Definition"
+class ListAnomalyGroupSummariesRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    SensitivityThreshold: int,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAnomalyGroupSummariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupSummariesResponseTypeDef
+
+def get_value() -> ListAnomalyGroupSummariesResponseTypeDef:
+    return {
+        "AnomalyGroupSummaryList": ...,
+        "AnomalyGroupStatistics": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomalyGroupSummariesResponseTypeDef(TypedDict):
+    AnomalyGroupSummaryList: List[AnomalyGroupSummaryTypeDef],  # (1)
+    AnomalyGroupStatistics: AnomalyGroupStatisticsTypeDef,  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AnomalyGroupSummaryList`:
-  `List`\[[AnomalyGroupSummaryTypeDef](./type_defs.md#anomalygroupsummarytypedef)\]
-- `AnomalyGroupStatistics`:
-  [AnomalyGroupStatisticsTypeDef](./type_defs.md#anomalygroupstatisticstypedef)
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listanomalygrouptimeseriesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnomalyGroupSummaryTypeDef](./type_defs.md#anomalygroupsummarytypedef) 
+2. See [:material-code-braces: AnomalyGroupStatisticsTypeDef](./type_defs.md#anomalygroupstatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAnomalyGroupTimeSeriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesRequestRequestTypeDef
+
+def get_value() -> ListAnomalyGroupTimeSeriesRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AnomalyGroupId": ...,
+        "MetricName": ...,
+    }
 ```
 
-Required fields:
-
-- `AnomalyDetectorArn`: `str`
-- `AnomalyGroupId`: `str`
-- `MetricName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listanomalygrouptimeseriesresponsetypedef"></a>
+```python title="Definition"
+class ListAnomalyGroupTimeSeriesRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AnomalyGroupId: str,
+    MetricName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAnomalyGroupTimeSeriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListAnomalyGroupTimeSeriesResponseTypeDef
+
+def get_value() -> ListAnomalyGroupTimeSeriesResponseTypeDef:
+    return {
+        "AnomalyGroupId": ...,
+        "MetricName": ...,
+        "TimestampList": ...,
+        "NextToken": ...,
+        "TimeSeriesList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnomalyGroupTimeSeriesResponseTypeDef(TypedDict):
+    AnomalyGroupId: str,
+    MetricName: str,
+    TimestampList: List[str],
+    NextToken: str,
+    TimeSeriesList: List[TimeSeriesTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AnomalyGroupId`: `str`
-- `MetricName`: `str`
-- `TimestampList`: `List`\[`str`\]
-- `NextToken`: `str`
-- `TimeSeriesList`:
-  `List`\[[TimeSeriesTypeDef](./type_defs.md#timeseriestypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmetricsetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TimeSeriesTypeDef](./type_defs.md#timeseriestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMetricSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsRequestRequestTypeDef
+
+def get_value() -> ListMetricSetsRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AnomalyDetectorArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listmetricsetsresponsetypedef"></a>
+```python title="Definition"
+class ListMetricSetsRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListMetricSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListMetricSetsResponseTypeDef
+
+def get_value() -> ListMetricSetsResponseTypeDef:
+    return {
+        "MetricSetSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMetricSetsResponseTypeDef(TypedDict):
+    MetricSetSummaryList: List[MetricSetSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MetricSetSummaryList`:
-  `List`\[[MetricSetSummaryTypeDef](./type_defs.md#metricsetsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MetricSetSummaryTypeDef](./type_defs.md#metricsetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="metriclevelimpacttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MetricLevelImpactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import MetricLevelImpactTypeDef
+
+def get_value() -> MetricLevelImpactTypeDef:
+    return {
+        "MetricName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricLevelImpactTypeDef(TypedDict):
+    MetricName: NotRequired[str],
+    NumTimeSeries: NotRequired[int],
+    ContributionMatrix: NotRequired[ContributionMatrixTypeDef],  # (1)
+```
 
-- `MetricName`: `str`
-- `NumTimeSeries`: `int`
-- `ContributionMatrix`:
-  [ContributionMatrixTypeDef](./type_defs.md#contributionmatrixtypedef)
-
-<a id="metricsetsummarytypedef"></a>
-
+1. See [:material-code-braces: ContributionMatrixTypeDef](./type_defs.md#contributionmatrixtypedef) 
 ## MetricSetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import MetricSetSummaryTypeDef
+
+def get_value() -> MetricSetSummaryTypeDef:
+    return {
+        "MetricSetArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `MetricSetArn`: `str`
-- `AnomalyDetectorArn`: `str`
-- `MetricSetDescription`: `str`
-- `MetricSetName`: `str`
-- `CreationTime`: `datetime`
-- `LastModificationTime`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="metricsourcetypedef"></a>
+```python title="Definition"
+class MetricSetSummaryTypeDef(TypedDict):
+    MetricSetArn: NotRequired[str],
+    AnomalyDetectorArn: NotRequired[str],
+    MetricSetDescription: NotRequired[str],
+    MetricSetName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    LastModificationTime: NotRequired[datetime],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## MetricSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import MetricSourceTypeDef
+
+def get_value() -> MetricSourceTypeDef:
+    return {
+        "S3SourceConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MetricSourceTypeDef(TypedDict):
+    S3SourceConfig: NotRequired[S3SourceConfigTypeDef],  # (1)
+    AppFlowConfig: NotRequired[AppFlowConfigTypeDef],  # (2)
+    CloudWatchConfig: NotRequired[CloudWatchConfigTypeDef],  # (3)
+    RDSSourceConfig: NotRequired[RDSSourceConfigTypeDef],  # (4)
+    RedshiftSourceConfig: NotRequired[RedshiftSourceConfigTypeDef],  # (5)
+```
 
-- `S3SourceConfig`:
-  [S3SourceConfigTypeDef](./type_defs.md#s3sourceconfigtypedef)
-- `AppFlowConfig`: [AppFlowConfigTypeDef](./type_defs.md#appflowconfigtypedef)
-- `CloudWatchConfig`:
-  [CloudWatchConfigTypeDef](./type_defs.md#cloudwatchconfigtypedef)
-- `RDSSourceConfig`:
-  [RDSSourceConfigTypeDef](./type_defs.md#rdssourceconfigtypedef)
-- `RedshiftSourceConfig`:
-  [RedshiftSourceConfigTypeDef](./type_defs.md#redshiftsourceconfigtypedef)
-
-<a id="metrictypedef"></a>
-
+1. See [:material-code-braces: S3SourceConfigTypeDef](./type_defs.md#s3sourceconfigtypedef) 
+2. See [:material-code-braces: AppFlowConfigTypeDef](./type_defs.md#appflowconfigtypedef) 
+3. See [:material-code-braces: CloudWatchConfigTypeDef](./type_defs.md#cloudwatchconfigtypedef) 
+4. See [:material-code-braces: RDSSourceConfigTypeDef](./type_defs.md#rdssourceconfigtypedef) 
+5. See [:material-code-braces: RedshiftSourceConfigTypeDef](./type_defs.md#redshiftsourceconfigtypedef) 
 ## MetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import MetricTypeDef
+
+def get_value() -> MetricTypeDef:
+    return {
+        "MetricName": ...,
+        "AggregationFunction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MetricTypeDef(TypedDict):
+    MetricName: str,
+    AggregationFunction: AggregationFunctionType,  # (1)
+    Namespace: NotRequired[str],
+```
 
-- `MetricName`: `str`
-- `AggregationFunction`:
-  [AggregationFunctionType](./literals.md#aggregationfunctiontype)
-
-Optional fields:
-
-- `Namespace`: `str`
-
-<a id="putfeedbackrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AggregationFunctionType](./literals.md#aggregationfunctiontype) 
 ## PutFeedbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import PutFeedbackRequestRequestTypeDef
+
+def get_value() -> PutFeedbackRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "AnomalyGroupTimeSeriesFeedback": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutFeedbackRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    AnomalyGroupTimeSeriesFeedback: AnomalyGroupTimeSeriesFeedbackTypeDef,  # (1)
+```
 
-- `AnomalyDetectorArn`: `str`
-- `AnomalyGroupTimeSeriesFeedback`:
-  [AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef)
-
-<a id="rdssourceconfigtypedef"></a>
-
+1. See [:material-code-braces: AnomalyGroupTimeSeriesFeedbackTypeDef](./type_defs.md#anomalygrouptimeseriesfeedbacktypedef) 
 ## RDSSourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import RDSSourceConfigTypeDef
+
+def get_value() -> RDSSourceConfigTypeDef:
+    return {
+        "DBInstanceIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RDSSourceConfigTypeDef(TypedDict):
+    DBInstanceIdentifier: NotRequired[str],
+    DatabaseHost: NotRequired[str],
+    DatabasePort: NotRequired[int],
+    SecretManagerArn: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    RoleArn: NotRequired[str],
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+```
 
-- `DBInstanceIdentifier`: `str`
-- `DatabaseHost`: `str`
-- `DatabasePort`: `int`
-- `SecretManagerArn`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `RoleArn`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="redshiftsourceconfigtypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## RedshiftSourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import RedshiftSourceConfigTypeDef
+
+def get_value() -> RedshiftSourceConfigTypeDef:
+    return {
+        "ClusterIdentifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RedshiftSourceConfigTypeDef(TypedDict):
+    ClusterIdentifier: NotRequired[str],
+    DatabaseHost: NotRequired[str],
+    DatabasePort: NotRequired[int],
+    SecretManagerArn: NotRequired[str],
+    DatabaseName: NotRequired[str],
+    TableName: NotRequired[str],
+    RoleArn: NotRequired[str],
+    VpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+```
 
-- `ClusterIdentifier`: `str`
-- `DatabaseHost`: `str`
-- `DatabasePort`: `int`
-- `SecretManagerArn`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `RoleArn`: `str`
-- `VpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3sourceconfigtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3SourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import S3SourceConfigTypeDef
+
+def get_value() -> S3SourceConfigTypeDef:
+    return {
+        "RoleArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3SourceConfigTypeDef(TypedDict):
+    RoleArn: NotRequired[str],
+    TemplatedPathList: NotRequired[Sequence[str]],
+    HistoricalDataPathList: NotRequired[Sequence[str]],
+    FileFormatDescriptor: NotRequired[FileFormatDescriptorTypeDef],  # (1)
+```
 
-- `RoleArn`: `str`
-- `TemplatedPathList`: `Sequence`\[`str`\]
-- `HistoricalDataPathList`: `Sequence`\[`str`\]
-- `FileFormatDescriptor`:
-  [FileFormatDescriptorTypeDef](./type_defs.md#fileformatdescriptortypedef)
-
-<a id="snsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: FileFormatDescriptorTypeDef](./type_defs.md#fileformatdescriptortypedef) 
 ## SNSConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import SNSConfigurationTypeDef
+
+def get_value() -> SNSConfigurationTypeDef:
+    return {
+        "RoleArn": ...,
+        "SnsTopicArn": ...,
+    }
 ```
 
-Required fields:
-
-- `RoleArn`: `str`
-- `SnsTopicArn`: `str`
-
-<a id="sampledatas3sourceconfigtypedef"></a>
+```python title="Definition"
+class SNSConfigurationTypeDef(TypedDict):
+    RoleArn: str,
+    SnsTopicArn: str,
+```
 
 ## SampleDataS3SourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import SampleDataS3SourceConfigTypeDef
+
+def get_value() -> SampleDataS3SourceConfigTypeDef:
+    return {
+        "RoleArn": ...,
+        "FileFormatDescriptor": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SampleDataS3SourceConfigTypeDef(TypedDict):
+    RoleArn: str,
+    FileFormatDescriptor: FileFormatDescriptorTypeDef,  # (1)
+    TemplatedPathList: NotRequired[Sequence[str]],
+    HistoricalDataPathList: NotRequired[Sequence[str]],
+```
 
-- `RoleArn`: `str`
-- `FileFormatDescriptor`:
-  [FileFormatDescriptorTypeDef](./type_defs.md#fileformatdescriptortypedef)
-
-Optional fields:
-
-- `TemplatedPathList`: `Sequence`\[`str`\]
-- `HistoricalDataPathList`: `Sequence`\[`str`\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FileFormatDescriptorTypeDef](./type_defs.md#fileformatdescriptortypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="timeseriesfeedbacktypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TimeSeriesFeedbackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import TimeSeriesFeedbackTypeDef
+
+def get_value() -> TimeSeriesFeedbackTypeDef:
+    return {
+        "TimeSeriesId": ...,
+    }
 ```
 
-Optional fields:
-
-- `TimeSeriesId`: `str`
-- `IsAnomaly`: `bool`
-
-<a id="timeseriestypedef"></a>
+```python title="Definition"
+class TimeSeriesFeedbackTypeDef(TypedDict):
+    TimeSeriesId: NotRequired[str],
+    IsAnomaly: NotRequired[bool],
+```
 
 ## TimeSeriesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import TimeSeriesTypeDef
+
+def get_value() -> TimeSeriesTypeDef:
+    return {
+        "TimeSeriesId": ...,
+        "DimensionList": ...,
+        "MetricValueList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TimeSeriesTypeDef(TypedDict):
+    TimeSeriesId: str,
+    DimensionList: List[DimensionNameValueTypeDef],  # (1)
+    MetricValueList: List[float],
+```
 
-- `TimeSeriesId`: `str`
-- `DimensionList`:
-  `List`\[[DimensionNameValueTypeDef](./type_defs.md#dimensionnamevaluetypedef)\]
-- `MetricValueList`: `List`\[`float`\]
-
-<a id="timestampcolumntypedef"></a>
-
+1. See [:material-code-braces: DimensionNameValueTypeDef](./type_defs.md#dimensionnamevaluetypedef) 
 ## TimestampColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import TimestampColumnTypeDef
+
+def get_value() -> TimestampColumnTypeDef:
+    return {
+        "ColumnName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ColumnName`: `str`
-- `ColumnFormat`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TimestampColumnTypeDef(TypedDict):
+    ColumnName: NotRequired[str],
+    ColumnFormat: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateanomalydetectorrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAnomalyDetectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorRequestRequestTypeDef
+
+def get_value() -> UpdateAnomalyDetectorRequestRequestTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnomalyDetectorRequestRequestTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    KmsKeyArn: NotRequired[str],
+    AnomalyDetectorDescription: NotRequired[str],
+    AnomalyDetectorConfig: NotRequired[AnomalyDetectorConfigTypeDef],  # (1)
+```
 
-- `AnomalyDetectorArn`: `str`
-
-Optional fields:
-
-- `KmsKeyArn`: `str`
-- `AnomalyDetectorDescription`: `str`
-- `AnomalyDetectorConfig`:
-  [AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef)
-
-<a id="updateanomalydetectorresponsetypedef"></a>
-
+1. See [:material-code-braces: AnomalyDetectorConfigTypeDef](./type_defs.md#anomalydetectorconfigtypedef) 
 ## UpdateAnomalyDetectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import UpdateAnomalyDetectorResponseTypeDef
+
+def get_value() -> UpdateAnomalyDetectorResponseTypeDef:
+    return {
+        "AnomalyDetectorArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAnomalyDetectorResponseTypeDef(TypedDict):
+    AnomalyDetectorArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AnomalyDetectorArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemetricsetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMetricSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetRequestRequestTypeDef
+
+def get_value() -> UpdateMetricSetRequestRequestTypeDef:
+    return {
+        "MetricSetArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMetricSetRequestRequestTypeDef(TypedDict):
+    MetricSetArn: str,
+    MetricSetDescription: NotRequired[str],
+    MetricList: NotRequired[Sequence[MetricTypeDef]],  # (1)
+    Offset: NotRequired[int],
+    TimestampColumn: NotRequired[TimestampColumnTypeDef],  # (2)
+    DimensionList: NotRequired[Sequence[str]],
+    MetricSetFrequency: NotRequired[FrequencyType],  # (3)
+    MetricSource: NotRequired[MetricSourceTypeDef],  # (4)
+```
 
-- `MetricSetArn`: `str`
-
-Optional fields:
-
-- `MetricSetDescription`: `str`
-- `MetricList`: `Sequence`\[[MetricTypeDef](./type_defs.md#metrictypedef)\]
-- `Offset`: `int`
-- `TimestampColumn`:
-  [TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef)
-- `DimensionList`: `Sequence`\[`str`\]
-- `MetricSetFrequency`: [FrequencyType](./literals.md#frequencytype)
-- `MetricSource`: [MetricSourceTypeDef](./type_defs.md#metricsourcetypedef)
-
-<a id="updatemetricsetresponsetypedef"></a>
-
+1. See [:material-code-braces: MetricTypeDef](./type_defs.md#metrictypedef) 
+2. See [:material-code-braces: TimestampColumnTypeDef](./type_defs.md#timestampcolumntypedef) 
+3. See [:material-code-brackets: FrequencyType](./literals.md#frequencytype) 
+4. See [:material-code-braces: MetricSourceTypeDef](./type_defs.md#metricsourcetypedef) 
 ## UpdateMetricSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import UpdateMetricSetResponseTypeDef
+
+def get_value() -> UpdateMetricSetResponseTypeDef:
+    return {
+        "MetricSetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMetricSetResponseTypeDef(TypedDict):
+    MetricSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MetricSetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lookoutmetrics.type_defs import VpcConfigurationTypeDef
+
+def get_value() -> VpcConfigurationTypeDef:
+    return {
+        "SubnetIdList": ...,
+        "SecurityGroupIdList": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VpcConfigurationTypeDef(TypedDict):
+    SubnetIdList: Sequence[str],
+    SecurityGroupIdList: Sequence[str],
+```
 
-- `SubnetIdList`: `Sequence`\[`str`\]
-- `SecurityGroupIdList`: `Sequence`\[`str`\]

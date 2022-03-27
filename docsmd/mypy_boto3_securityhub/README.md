@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-securityhub-module"></a>
-
-# Type annotations for boto3 SecurityHub module
+#  SecurityHub module
 
 > [Index](../README.md) > SecurityHub
 
-Auto-generated documentation for
-[SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
-type annotations stubs module
-[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+!!! note ""
 
-- [Type annotations for boto3 SecurityHub module](#type-annotations-for-boto3-securityhub-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SecurityHubClient](#securityhubclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
+    type annotations stubs module [mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SecurityHub`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[securityhub]'
 python -m pip install mypy-boto3-securityhub
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,116 +42,37 @@ python -m pip install mypy-boto3-securityhub
 python -m pip uninstall -y mypy-boto3-securityhub
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="securityhubclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SecurityHubClient
 
-Type annotations for `boto3.client("securityhub")` as
-[SecurityHubClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("securityhub")` as [SecurityHubClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_securityhub.client import SecurityHubClient
+
+def get_client() -> SecurityHubClient:
+    return Session().cleint("securityhub")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_administrator_invitation](./client.md#accept_administrator_invitation)
-- [accept_invitation](./client.md#accept_invitation)
-- [batch_disable_standards](./client.md#batch_disable_standards)
-- [batch_enable_standards](./client.md#batch_enable_standards)
-- [batch_import_findings](./client.md#batch_import_findings)
-- [batch_update_findings](./client.md#batch_update_findings)
-- [can_paginate](./client.md#can_paginate)
-- [create_action_target](./client.md#create_action_target)
-- [create_finding_aggregator](./client.md#create_finding_aggregator)
-- [create_insight](./client.md#create_insight)
-- [create_members](./client.md#create_members)
-- [decline_invitations](./client.md#decline_invitations)
-- [delete_action_target](./client.md#delete_action_target)
-- [delete_finding_aggregator](./client.md#delete_finding_aggregator)
-- [delete_insight](./client.md#delete_insight)
-- [delete_invitations](./client.md#delete_invitations)
-- [delete_members](./client.md#delete_members)
-- [describe_action_targets](./client.md#describe_action_targets)
-- [describe_hub](./client.md#describe_hub)
-- [describe_organization_configuration](./client.md#describe_organization_configuration)
-- [describe_products](./client.md#describe_products)
-- [describe_standards](./client.md#describe_standards)
-- [describe_standards_controls](./client.md#describe_standards_controls)
-- [disable_import_findings_for_product](./client.md#disable_import_findings_for_product)
-- [disable_organization_admin_account](./client.md#disable_organization_admin_account)
-- [disable_security_hub](./client.md#disable_security_hub)
-- [disassociate_from_administrator_account](./client.md#disassociate_from_administrator_account)
-- [disassociate_from_master_account](./client.md#disassociate_from_master_account)
-- [disassociate_members](./client.md#disassociate_members)
-- [enable_import_findings_for_product](./client.md#enable_import_findings_for_product)
-- [enable_organization_admin_account](./client.md#enable_organization_admin_account)
-- [enable_security_hub](./client.md#enable_security_hub)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_administrator_account](./client.md#get_administrator_account)
-- [get_enabled_standards](./client.md#get_enabled_standards)
-- [get_finding_aggregator](./client.md#get_finding_aggregator)
-- [get_findings](./client.md#get_findings)
-- [get_insight_results](./client.md#get_insight_results)
-- [get_insights](./client.md#get_insights)
-- [get_invitations_count](./client.md#get_invitations_count)
-- [get_master_account](./client.md#get_master_account)
-- [get_members](./client.md#get_members)
-- [get_paginator](./client.md#get_paginator)
-- [invite_members](./client.md#invite_members)
-- [list_enabled_products_for_import](./client.md#list_enabled_products_for_import)
-- [list_finding_aggregators](./client.md#list_finding_aggregators)
-- [list_invitations](./client.md#list_invitations)
-- [list_members](./client.md#list_members)
-- [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_action_target](./client.md#update_action_target)
-- [update_finding_aggregator](./client.md#update_finding_aggregator)
-- [update_findings](./client.md#update_findings)
-- [update_insight](./client.md#update_insight)
-- [update_organization_configuration](./client.md#update_organization_configuration)
-- [update_security_hub_configuration](./client.md#update_security_hub_configuration)
-- [update_standards_control](./client.md#update_standards_control)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SecurityHubClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- InternalException
-- InvalidAccessException
-- InvalidInputException
-- LimitExceededException
-- ResourceConflictException
-- ResourceNotFoundException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("securityhub").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("securityhub").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator, ...
+from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator
+
+def get_describe_action_targets_paginator() -> DescribeActionTargetsPaginator:
+    return Session().client("securityhub").get_paginator("describe_action_targets"))
 ```
 
 - [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
@@ -189,16 +88,23 @@ from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator, ...
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_securityhub.literals import AdminStatusType
 
-```python
-from mypy_boto3_securityhub.literals import AdminStatusType, ...
+def get_value() -> AdminStatusType:
+    return "DISABLE_IN_PROGRESS"
 ```
 
 - [AdminStatusType](./literals.md#adminstatustype)
@@ -241,18 +147,23 @@ from mypy_boto3_securityhub.literals import AdminStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationRequestRequestTypeDef
 
-```python
-from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationRequestRequestTypeDef, ...
+def get_value() -> AcceptAdministratorInvitationRequestRequestTypeDef:
+    return {
+        "AdministratorId": ...,
+        "InvitationId": ...,
+    }
 ```
 
 - [AcceptAdministratorInvitationRequestRequestTypeDef](./type_defs.md#acceptadministratorinvitationrequestrequesttypedef)
@@ -616,15 +527,19 @@ from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationReques
 - [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef)
 - [DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef)
 - [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef)
+- [DescribeActionTargetsRequestDescribeActionTargetsPaginateTypeDef](./type_defs.md#describeactiontargetsrequestdescribeactiontargetspaginatetypedef)
 - [DescribeActionTargetsRequestRequestTypeDef](./type_defs.md#describeactiontargetsrequestrequesttypedef)
 - [DescribeActionTargetsResponseTypeDef](./type_defs.md#describeactiontargetsresponsetypedef)
 - [DescribeHubRequestRequestTypeDef](./type_defs.md#describehubrequestrequesttypedef)
 - [DescribeHubResponseTypeDef](./type_defs.md#describehubresponsetypedef)
 - [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef)
+- [DescribeProductsRequestDescribeProductsPaginateTypeDef](./type_defs.md#describeproductsrequestdescribeproductspaginatetypedef)
 - [DescribeProductsRequestRequestTypeDef](./type_defs.md#describeproductsrequestrequesttypedef)
 - [DescribeProductsResponseTypeDef](./type_defs.md#describeproductsresponsetypedef)
+- [DescribeStandardsControlsRequestDescribeStandardsControlsPaginateTypeDef](./type_defs.md#describestandardscontrolsrequestdescribestandardscontrolspaginatetypedef)
 - [DescribeStandardsControlsRequestRequestTypeDef](./type_defs.md#describestandardscontrolsrequestrequesttypedef)
 - [DescribeStandardsControlsResponseTypeDef](./type_defs.md#describestandardscontrolsresponsetypedef)
+- [DescribeStandardsRequestDescribeStandardsPaginateTypeDef](./type_defs.md#describestandardsrequestdescribestandardspaginatetypedef)
 - [DescribeStandardsRequestRequestTypeDef](./type_defs.md#describestandardsrequestrequesttypedef)
 - [DescribeStandardsResponseTypeDef](./type_defs.md#describestandardsresponsetypedef)
 - [DisableImportFindingsForProductRequestRequestTypeDef](./type_defs.md#disableimportfindingsforproductrequestrequesttypedef)
@@ -644,14 +559,17 @@ from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationReques
 - [FirewallPolicyStatelessRuleGroupReferencesDetailsTypeDef](./type_defs.md#firewallpolicystatelessrulegroupreferencesdetailstypedef)
 - [GeoLocationTypeDef](./type_defs.md#geolocationtypedef)
 - [GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef)
+- [GetEnabledStandardsRequestGetEnabledStandardsPaginateTypeDef](./type_defs.md#getenabledstandardsrequestgetenabledstandardspaginatetypedef)
 - [GetEnabledStandardsRequestRequestTypeDef](./type_defs.md#getenabledstandardsrequestrequesttypedef)
 - [GetEnabledStandardsResponseTypeDef](./type_defs.md#getenabledstandardsresponsetypedef)
 - [GetFindingAggregatorRequestRequestTypeDef](./type_defs.md#getfindingaggregatorrequestrequesttypedef)
 - [GetFindingAggregatorResponseTypeDef](./type_defs.md#getfindingaggregatorresponsetypedef)
+- [GetFindingsRequestGetFindingsPaginateTypeDef](./type_defs.md#getfindingsrequestgetfindingspaginatetypedef)
 - [GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef)
 - [GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef)
 - [GetInsightResultsRequestRequestTypeDef](./type_defs.md#getinsightresultsrequestrequesttypedef)
 - [GetInsightResultsResponseTypeDef](./type_defs.md#getinsightresultsresponsetypedef)
+- [GetInsightsRequestGetInsightsPaginateTypeDef](./type_defs.md#getinsightsrequestgetinsightspaginatetypedef)
 - [GetInsightsRequestRequestTypeDef](./type_defs.md#getinsightsrequestrequesttypedef)
 - [GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef)
 - [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef)
@@ -670,14 +588,19 @@ from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationReques
 - [IpOrganizationDetailsTypeDef](./type_defs.md#iporganizationdetailstypedef)
 - [Ipv6CidrBlockAssociationTypeDef](./type_defs.md#ipv6cidrblockassociationtypedef)
 - [KeywordFilterTypeDef](./type_defs.md#keywordfiltertypedef)
+- [ListEnabledProductsForImportRequestListEnabledProductsForImportPaginateTypeDef](./type_defs.md#listenabledproductsforimportrequestlistenabledproductsforimportpaginatetypedef)
 - [ListEnabledProductsForImportRequestRequestTypeDef](./type_defs.md#listenabledproductsforimportrequestrequesttypedef)
 - [ListEnabledProductsForImportResponseTypeDef](./type_defs.md#listenabledproductsforimportresponsetypedef)
+- [ListFindingAggregatorsRequestListFindingAggregatorsPaginateTypeDef](./type_defs.md#listfindingaggregatorsrequestlistfindingaggregatorspaginatetypedef)
 - [ListFindingAggregatorsRequestRequestTypeDef](./type_defs.md#listfindingaggregatorsrequestrequesttypedef)
 - [ListFindingAggregatorsResponseTypeDef](./type_defs.md#listfindingaggregatorsresponsetypedef)
+- [ListInvitationsRequestListInvitationsPaginateTypeDef](./type_defs.md#listinvitationsrequestlistinvitationspaginatetypedef)
 - [ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef)
 - [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)
+- [ListMembersRequestListMembersPaginateTypeDef](./type_defs.md#listmembersrequestlistmemberspaginatetypedef)
 - [ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef)
 - [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)
+- [ListOrganizationAdminAccountsRequestListOrganizationAdminAccountsPaginateTypeDef](./type_defs.md#listorganizationadminaccountsrequestlistorganizationadminaccountspaginatetypedef)
 - [ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef)
 - [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -766,3 +689,4 @@ from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationReques
 - [WafOverrideActionTypeDef](./type_defs.md#wafoverrideactiontypedef)
 - [WorkflowTypeDef](./type_defs.md#workflowtypedef)
 - [WorkflowUpdateTypeDef](./type_defs.md#workflowupdatetypedef)
+

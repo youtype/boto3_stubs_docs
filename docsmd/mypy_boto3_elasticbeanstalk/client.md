@@ -1,81 +1,18 @@
-<a id="elasticbeanstalkclient-for-boto3-elasticbeanstalk-module"></a>
+# ElasticBeanstalkClient
 
-# ElasticBeanstalkClient for boto3 ElasticBeanstalk module
+> [Index](../README.md) > [ElasticBeanstalk](./README.md) > ElasticBeanstalkClient
 
-> [Index](../README.md) > [ElasticBeanstalk](./README.md) >
-> ElasticBeanstalkClient
+!!! note ""
 
-Auto-generated documentation for
-[ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
-type annotations stubs module
-[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
-
-- [ElasticBeanstalkClient for boto3 ElasticBeanstalk module](#elasticbeanstalkclient-for-boto3-elasticbeanstalk-module)
-  - [ElasticBeanstalkClient](#elasticbeanstalkclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [abort_environment_update](#abort_environment_update)
-    - [apply_environment_managed_action](#apply_environment_managed_action)
-    - [associate_environment_operations_role](#associate_environment_operations_role)
-    - [can_paginate](#can_paginate)
-    - [check_dns_availability](#check_dns_availability)
-    - [compose_environments](#compose_environments)
-    - [create_application](#create_application)
-    - [create_application_version](#create_application_version)
-    - [create_configuration_template](#create_configuration_template)
-    - [create_environment](#create_environment)
-    - [create_platform_version](#create_platform_version)
-    - [create_storage_location](#create_storage_location)
-    - [delete_application](#delete_application)
-    - [delete_application_version](#delete_application_version)
-    - [delete_configuration_template](#delete_configuration_template)
-    - [delete_environment_configuration](#delete_environment_configuration)
-    - [delete_platform_version](#delete_platform_version)
-    - [describe_account_attributes](#describe_account_attributes)
-    - [describe_application_versions](#describe_application_versions)
-    - [describe_applications](#describe_applications)
-    - [describe_configuration_options](#describe_configuration_options)
-    - [describe_configuration_settings](#describe_configuration_settings)
-    - [describe_environment_health](#describe_environment_health)
-    - [describe_environment_managed_action_history](#describe_environment_managed_action_history)
-    - [describe_environment_managed_actions](#describe_environment_managed_actions)
-    - [describe_environment_resources](#describe_environment_resources)
-    - [describe_environments](#describe_environments)
-    - [describe_events](#describe_events)
-    - [describe_instances_health](#describe_instances_health)
-    - [describe_platform_version](#describe_platform_version)
-    - [disassociate_environment_operations_role](#disassociate_environment_operations_role)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_available_solution_stacks](#list_available_solution_stacks)
-    - [list_platform_branches](#list_platform_branches)
-    - [list_platform_versions](#list_platform_versions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [rebuild_environment](#rebuild_environment)
-    - [request_environment_info](#request_environment_info)
-    - [restart_app_server](#restart_app_server)
-    - [retrieve_environment_info](#retrieve_environment_info)
-    - [swap_environment_cnames](#swap_environment_cnames)
-    - [terminate_environment](#terminate_environment)
-    - [update_application](#update_application)
-    - [update_application_resource_lifecycle](#update_application_resource_lifecycle)
-    - [update_application_version](#update_application_version)
-    - [update_configuration_template](#update_configuration_template)
-    - [update_environment](#update_environment)
-    - [update_tags_for_resource](#update_tags_for_resource)
-    - [validate_configuration_settings](#validate_configuration_settings)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="elasticbeanstalkclient"></a>
+    Auto-generated documentation for [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
+    type annotations stubs module [mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ## ElasticBeanstalkClient
 
-Type annotations for `boto3.client("elasticbeanstalk")`
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 
@@ -83,1279 +20,1611 @@ def get_elasticbeanstalk_client() -> ElasticBeanstalkClient:
     return Session().client("elasticbeanstalk")
 ```
 
-Boto3 documentation:
-[ElasticBeanstalk.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("elasticbeanstalk").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("elasticbeanstalk")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CodeBuildNotInServiceRegionException,
+    client.ElasticBeanstalkServiceException,
+    client.InsufficientPrivilegesException,
+    client.InvalidRequestException,
+    client.ManagedActionInvalidStateException,
+    client.OperationInProgressException,
+    client.PlatformVersionStillReferencedException,
+    client.ResourceNotFoundException,
+    client.ResourceTypeNotSupportedException,
+    client.S3LocationNotInServiceRegionException,
+    client.S3SubscriptionRequiredException,
+    client.SourceBundleDeletionException,
+    client.TooManyApplicationVersionsException,
+    client.TooManyApplicationsException,
+    client.TooManyBucketsException,
+    client.TooManyConfigurationTemplatesException,
+    client.TooManyEnvironmentsException,
+    client.TooManyPlatformsException,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_elasticbeanstalk.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CodeBuildNotInServiceRegionException`
-- `Exceptions.ElasticBeanstalkServiceException`
-- `Exceptions.InsufficientPrivilegesException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ManagedActionInvalidStateException`
-- `Exceptions.OperationInProgressException`
-- `Exceptions.PlatformVersionStillReferencedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceTypeNotSupportedException`
-- `Exceptions.S3LocationNotInServiceRegionException`
-- `Exceptions.S3SubscriptionRequiredException`
-- `Exceptions.SourceBundleDeletionException`
-- `Exceptions.TooManyApplicationVersionsException`
-- `Exceptions.TooManyApplicationsException`
-- `Exceptions.TooManyBucketsException`
-- `Exceptions.TooManyConfigurationTemplatesException`
-- `Exceptions.TooManyEnvironmentsException`
-- `Exceptions.TooManyPlatformsException`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticBeanstalkClient exceptions.
-
-Type annotations for `boto3.client("elasticbeanstalk").exceptions` method.
-
-Boto3 documentation:
-[ElasticBeanstalk.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="abort\_environment\_update"></a>
-
-### abort_environment_update
+### abort\_environment\_update
 
 Cancels in-progress environment configuration update or application version
 deployment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").abort_environment_update` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").abort_environment_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.abort_environment_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.abort_environment_update)
+```python title="Method definition"
+def abort_environment_update(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AbortEnvironmentUpdateMessageRequestTypeDef](./type_defs.md#abortenvironmentupdatemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: AbortEnvironmentUpdateMessageRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-<a id="apply\_environment\_managed\_action"></a>
+parent.abort_environment_update(**kwargs)
+```
 
-### apply_environment_managed_action
+1. See [:material-code-braces: AbortEnvironmentUpdateMessageRequestTypeDef](./type_defs.md#abortenvironmentupdatemessagerequesttypedef) 
+
+### apply\_environment\_managed\_action
 
 Applies a scheduled managed action immediately.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").apply_environment_managed_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.apply_environment_managed_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.apply_environment_managed_action)
+```python title="Method definition"
+def apply_environment_managed_action(
+    self,
+    *,
+    ActionId: str,
+    EnvironmentName: str = ...,
+    EnvironmentId: str = ...,
+) -> ApplyEnvironmentManagedActionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ApplyEnvironmentManagedActionRequestRequestTypeDef](./type_defs.md#applyenvironmentmanagedactionrequestrequesttypedef).
+1. See [:material-code-braces: ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef) 
 
-Keyword-only arguments:
 
-- `ActionId`: `str` *(required)*
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ApplyEnvironmentManagedActionRequestRequestTypeDef = {  # (1)
+    "ActionId": ...,
+}
 
-Returns
-[ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef).
+parent.apply_environment_managed_action(**kwargs)
+```
 
-<a id="associate\_environment\_operations\_role"></a>
+1. See [:material-code-braces: ApplyEnvironmentManagedActionRequestRequestTypeDef](./type_defs.md#applyenvironmentmanagedactionrequestrequesttypedef) 
 
-### associate_environment_operations_role
+### associate\_environment\_operations\_role
 
 Add or change the operations role used by an environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").associate_environment_operations_role`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").associate_environment_operations_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.associate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.associate_environment_operations_role)
+```python title="Method definition"
+def associate_environment_operations_role(
+    self,
+    *,
+    EnvironmentName: str,
+    OperationsRole: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AssociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#associateenvironmentoperationsrolemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str` *(required)*
-- `OperationsRole`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateEnvironmentOperationsRoleMessageRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+    "OperationsRole": ...,
+}
 
-<a id="can\_paginate"></a>
+parent.associate_environment_operations_role(**kwargs)
+```
 
-### can_paginate
+1. See [:material-code-braces: AssociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#associateenvironmentoperationsrolemessagerequesttypedef) 
+
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("elasticbeanstalk").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="check\_dns\_availability"></a>
-
-### check_dns_availability
+### check\_dns\_availability
 
 Checks if the specified CNAME is available.
 
-Type annotations for `boto3.client("elasticbeanstalk").check_dns_availability`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").check_dns_availability` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.check_dns_availability](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.check_dns_availability)
+```python title="Method definition"
+def check_dns_availability(
+    self,
+    *,
+    CNAMEPrefix: str,
+) -> CheckDNSAvailabilityResultMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CheckDNSAvailabilityMessageRequestTypeDef](./type_defs.md#checkdnsavailabilitymessagerequesttypedef).
+1. See [:material-code-braces: CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef) 
 
-Keyword-only arguments:
 
-- `CNAMEPrefix`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CheckDNSAvailabilityMessageRequestTypeDef = {  # (1)
+    "CNAMEPrefix": ...,
+}
 
-Returns
-[CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef).
+parent.check_dns_availability(**kwargs)
+```
 
-<a id="compose\_environments"></a>
+1. See [:material-code-braces: CheckDNSAvailabilityMessageRequestTypeDef](./type_defs.md#checkdnsavailabilitymessagerequesttypedef) 
 
-### compose_environments
+### compose\_environments
 
-Create or update a group of environments that each run a separate component of
-a single application.
+Create or update a group of environments that each run a separate component of a
+single application.
 
-Type annotations for `boto3.client("elasticbeanstalk").compose_environments`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").compose_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.compose_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.compose_environments)
+```python title="Method definition"
+def compose_environments(
+    self,
+    *,
+    ApplicationName: str = ...,
+    GroupName: str = ...,
+    VersionLabels: Sequence[str] = ...,
+) -> EnvironmentDescriptionsMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ComposeEnvironmentsMessageRequestTypeDef](./type_defs.md#composeenvironmentsmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `GroupName`: `str`
-- `VersionLabels`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ComposeEnvironmentsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
+parent.compose_environments(**kwargs)
+```
 
-<a id="create\_application"></a>
+1. See [:material-code-braces: ComposeEnvironmentsMessageRequestTypeDef](./type_defs.md#composeenvironmentsmessagerequesttypedef) 
 
-### create_application
+### create\_application
 
 Creates an application that has one configuration template named `default` and
 no application versions.
 
-Type annotations for `boto3.client("elasticbeanstalk").create_application`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application)
+```python title="Method definition"
+def create_application(
+    self,
+    *,
+    ApplicationName: str,
+    Description: str = ...,
+    ResourceLifecycleConfig: ApplicationResourceLifecycleConfigTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> ApplicationDescriptionMessageTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationMessageRequestTypeDef](./type_defs.md#createapplicationmessagerequesttypedef).
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `Description`: `str`
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
+parent.create_application(**kwargs)
+```
 
-<a id="create\_application\_version"></a>
+1. See [:material-code-braces: CreateApplicationMessageRequestTypeDef](./type_defs.md#createapplicationmessagerequesttypedef) 
 
-### create_application_version
+### create\_application\_version
 
 Creates an application version for the specified application.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").create_application_version` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_application_version)
+```python title="Method definition"
+def create_application_version(
+    self,
+    *,
+    ApplicationName: str,
+    VersionLabel: str,
+    Description: str = ...,
+    SourceBuildInformation: SourceBuildInformationTypeDef = ...,  # (1)
+    SourceBundle: S3LocationTypeDef = ...,  # (2)
+    BuildConfiguration: BuildConfigurationTypeDef = ...,  # (3)
+    AutoCreateApplication: bool = ...,
+    Process: bool = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> ApplicationVersionDescriptionMessageTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateApplicationVersionMessageRequestTypeDef](./type_defs.md#createapplicationversionmessagerequesttypedef).
+1. See [:material-code-braces: SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+3. See [:material-code-braces: BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `VersionLabel`: `str` *(required)*
-- `Description`: `str`
-- `SourceBuildInformation`:
-  [SourceBuildInformationTypeDef](./type_defs.md#sourcebuildinformationtypedef)
-- `SourceBundle`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `BuildConfiguration`:
-  [BuildConfigurationTypeDef](./type_defs.md#buildconfigurationtypedef)
-- `AutoCreateApplication`: `bool`
-- `Process`: `bool`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateApplicationVersionMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "VersionLabel": ...,
+}
 
-Returns
-[ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
+parent.create_application_version(**kwargs)
+```
 
-<a id="create\_configuration\_template"></a>
+1. See [:material-code-braces: CreateApplicationVersionMessageRequestTypeDef](./type_defs.md#createapplicationversionmessagerequesttypedef) 
 
-### create_configuration_template
+### create\_configuration\_template
 
 .
 
-Type annotations for
-`boto3.client("elasticbeanstalk").create_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_configuration_template)
+```python title="Method definition"
+def create_configuration_template(
+    self,
+    *,
+    ApplicationName: str,
+    TemplateName: str,
+    SolutionStackName: str = ...,
+    PlatformArn: str = ...,
+    SourceConfiguration: SourceConfigurationTypeDef = ...,  # (1)
+    EnvironmentId: str = ...,
+    Description: str = ...,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> ConfigurationSettingsDescriptionResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#createconfigurationtemplatemessagerequesttypedef).
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `TemplateName`: `str` *(required)*
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `EnvironmentId`: `str`
-- `Description`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConfigurationTemplateMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
+parent.create_configuration_template(**kwargs)
+```
 
-<a id="create\_environment"></a>
+1. See [:material-code-braces: CreateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#createconfigurationtemplatemessagerequesttypedef) 
 
-### create_environment
+### create\_environment
 
 Launches an AWS Elastic Beanstalk environment for the specified application
 using the specified configuration.
 
-Type annotations for `boto3.client("elasticbeanstalk").create_environment`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_environment)
+```python title="Method definition"
+def create_environment(
+    self,
+    *,
+    ApplicationName: str,
+    EnvironmentName: str = ...,
+    GroupName: str = ...,
+    Description: str = ...,
+    CNAMEPrefix: str = ...,
+    Tier: EnvironmentTierTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    VersionLabel: str = ...,
+    TemplateName: str = ...,
+    SolutionStackName: str = ...,
+    PlatformArn: str = ...,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef] = ...,  # (3)
+    OptionsToRemove: Sequence[OptionSpecificationTypeDef] = ...,  # (4)
+    OperationsRole: str = ...,
+) -> EnvironmentDescriptionResponseMetadataTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentMessageRequestTypeDef](./type_defs.md#createenvironmentmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+4. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
+5. See [:material-code-braces: EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `EnvironmentName`: `str`
-- `GroupName`: `str`
-- `Description`: `str`
-- `CNAMEPrefix`: `str`
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
-- `OperationsRole`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
+parent.create_environment(**kwargs)
+```
 
-<a id="create\_platform\_version"></a>
+1. See [:material-code-braces: CreateEnvironmentMessageRequestTypeDef](./type_defs.md#createenvironmentmessagerequesttypedef) 
 
-### create_platform_version
+### create\_platform\_version
 
 Create a new version of your custom platform.
 
-Type annotations for `boto3.client("elasticbeanstalk").create_platform_version`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_platform_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_platform_version)
+```python title="Method definition"
+def create_platform_version(
+    self,
+    *,
+    PlatformName: str,
+    PlatformVersion: str,
+    PlatformDefinitionBundle: S3LocationTypeDef,  # (1)
+    EnvironmentName: str = ...,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef] = ...,  # (2)
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreatePlatformVersionResultTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreatePlatformVersionRequestRequestTypeDef](./type_defs.md#createplatformversionrequestrequesttypedef).
+1. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef) 
 
-Keyword-only arguments:
 
-- `PlatformName`: `str` *(required)*
-- `PlatformVersion`: `str` *(required)*
-- `PlatformDefinitionBundle`:
-  [S3LocationTypeDef](./type_defs.md#s3locationtypedef) *(required)*
-- `EnvironmentName`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePlatformVersionRequestRequestTypeDef = {  # (1)
+    "PlatformName": ...,
+    "PlatformVersion": ...,
+    "PlatformDefinitionBundle": ...,
+}
 
-Returns
-[CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef).
+parent.create_platform_version(**kwargs)
+```
 
-<a id="create\_storage\_location"></a>
+1. See [:material-code-braces: CreatePlatformVersionRequestRequestTypeDef](./type_defs.md#createplatformversionrequestrequesttypedef) 
 
-### create_storage_location
+### create\_storage\_location
 
 Creates a bucket in Amazon S3 to store application versions, logs, and other
 files used by Elastic Beanstalk environments.
 
-Type annotations for `boto3.client("elasticbeanstalk").create_storage_location`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").create_storage_location` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.create_storage_location](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.create_storage_location)
+```python title="Method definition"
+def create_storage_location(
+    self,
+) -> CreateStorageLocationResultMessageTypeDef:  # (1)
+    ...
+```
 
-Returns
-[CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef).
+1. See [:material-code-braces: CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef) 
 
-<a id="delete\_application"></a>
-
-### delete_application
+### delete\_application
 
 Deletes the specified application along with all associated versions and
 configurations.
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_application`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").delete_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.delete_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application)
+```python title="Method definition"
+def delete_application(
+    self,
+    *,
+    ApplicationName: str,
+    TerminateEnvByForce: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationMessageRequestTypeDef](./type_defs.md#deleteapplicationmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `TerminateEnvByForce`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-<a id="delete\_application\_version"></a>
+parent.delete_application(**kwargs)
+```
 
-### delete_application_version
+1. See [:material-code-braces: DeleteApplicationMessageRequestTypeDef](./type_defs.md#deleteapplicationmessagerequesttypedef) 
+
+### delete\_application\_version
 
 Deletes the specified version from the specified application.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").delete_application_version` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").delete_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.delete_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_application_version)
+```python title="Method definition"
+def delete_application_version(
+    self,
+    *,
+    ApplicationName: str,
+    VersionLabel: str,
+    DeleteSourceBundle: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApplicationVersionMessageRequestTypeDef](./type_defs.md#deleteapplicationversionmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `VersionLabel`: `str` *(required)*
-- `DeleteSourceBundle`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteApplicationVersionMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "VersionLabel": ...,
+}
 
-<a id="delete\_configuration\_template"></a>
+parent.delete_application_version(**kwargs)
+```
 
-### delete_configuration_template
+1. See [:material-code-braces: DeleteApplicationVersionMessageRequestTypeDef](./type_defs.md#deleteapplicationversionmessagerequesttypedef) 
+
+### delete\_configuration\_template
 
 Deletes the specified configuration template.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").delete_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").delete_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.delete_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_configuration_template)
+```python title="Method definition"
+def delete_configuration_template(
+    self,
+    *,
+    ApplicationName: str,
+    TemplateName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConfigurationTemplateMessageRequestTypeDef](./type_defs.md#deleteconfigurationtemplatemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `TemplateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConfigurationTemplateMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "TemplateName": ...,
+}
 
-<a id="delete\_environment\_configuration"></a>
+parent.delete_configuration_template(**kwargs)
+```
 
-### delete_environment_configuration
+1. See [:material-code-braces: DeleteConfigurationTemplateMessageRequestTypeDef](./type_defs.md#deleteconfigurationtemplatemessagerequesttypedef) 
+
+### delete\_environment\_configuration
 
 Deletes the draft configuration associated with the running environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").delete_environment_configuration` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").delete_environment_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.delete_environment_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_environment_configuration)
+```python title="Method definition"
+def delete_environment_configuration(
+    self,
+    *,
+    ApplicationName: str,
+    EnvironmentName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentConfigurationMessageRequestTypeDef](./type_defs.md#deleteenvironmentconfigurationmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `EnvironmentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentConfigurationMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "EnvironmentName": ...,
+}
 
-<a id="delete\_platform\_version"></a>
+parent.delete_environment_configuration(**kwargs)
+```
 
-### delete_platform_version
+1. See [:material-code-braces: DeleteEnvironmentConfigurationMessageRequestTypeDef](./type_defs.md#deleteenvironmentconfigurationmessagerequesttypedef) 
+
+### delete\_platform\_version
 
 Deletes the specified version of a custom platform.
 
-Type annotations for `boto3.client("elasticbeanstalk").delete_platform_version`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").delete_platform_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.delete_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.delete_platform_version)
+```python title="Method definition"
+def delete_platform_version(
+    self,
+    *,
+    PlatformArn: str = ...,
+) -> DeletePlatformVersionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeletePlatformVersionRequestRequestTypeDef](./type_defs.md#deleteplatformversionrequestrequesttypedef).
+1. See [:material-code-braces: DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef) 
 
-Keyword-only arguments:
 
-- `PlatformArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeletePlatformVersionRequestRequestTypeDef = {  # (1)
+    "PlatformArn": ...,
+}
 
-Returns
-[DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef).
+parent.delete_platform_version(**kwargs)
+```
 
-<a id="describe\_account\_attributes"></a>
+1. See [:material-code-braces: DeletePlatformVersionRequestRequestTypeDef](./type_defs.md#deleteplatformversionrequestrequesttypedef) 
 
-### describe_account_attributes
+### describe\_account\_attributes
 
-Returns attributes related to AWS Elastic Beanstalk that are associated with
-the calling AWS account.
+Returns attributes related to AWS Elastic Beanstalk that are associated with the
+calling AWS account.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_account_attributes` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_account_attributes` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_account_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_account_attributes)
+```python title="Method definition"
+def describe_account_attributes(
+    self,
+) -> DescribeAccountAttributesResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
+1. See [:material-code-braces: DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef) 
 
-<a id="describe\_application\_versions"></a>
-
-### describe_application_versions
+### describe\_application\_versions
 
 Retrieve a list of application versions.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_application_versions` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_application_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_application_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_application_versions)
+```python title="Method definition"
+def describe_application_versions(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabels: Sequence[str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> ApplicationVersionDescriptionsMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationVersionsMessageRequestTypeDef](./type_defs.md#describeapplicationversionsmessagerequesttypedef).
+1. See [:material-code-braces: ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `VersionLabels`: `Sequence`\[`str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationVersionsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef).
+parent.describe_application_versions(**kwargs)
+```
 
-<a id="describe\_applications"></a>
+1. See [:material-code-braces: DescribeApplicationVersionsMessageRequestTypeDef](./type_defs.md#describeapplicationversionsmessagerequesttypedef) 
 
-### describe_applications
+### describe\_applications
 
 Returns the descriptions of existing applications.
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_applications`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_applications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_applications)
+```python title="Method definition"
+def describe_applications(
+    self,
+    *,
+    ApplicationNames: Sequence[str] = ...,
+) -> ApplicationDescriptionsMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeApplicationsMessageRequestTypeDef](./type_defs.md#describeapplicationsmessagerequesttypedef).
+1. See [:material-code-braces: ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: DescribeApplicationsMessageRequestTypeDef = {  # (1)
+    "ApplicationNames": ...,
+}
 
-Returns
-[ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef).
+parent.describe_applications(**kwargs)
+```
 
-<a id="describe\_configuration\_options"></a>
+1. See [:material-code-braces: DescribeApplicationsMessageRequestTypeDef](./type_defs.md#describeapplicationsmessagerequesttypedef) 
 
-### describe_configuration_options
+### describe\_configuration\_options
 
 Describes the configuration options that are used in a particular configuration
 template or environment, or that a specified solution stack defines.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_configuration_options` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_configuration_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_configuration_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_options)
+```python title="Method definition"
+def describe_configuration_options(
+    self,
+    *,
+    ApplicationName: str = ...,
+    TemplateName: str = ...,
+    EnvironmentName: str = ...,
+    SolutionStackName: str = ...,
+    PlatformArn: str = ...,
+    Options: Sequence[OptionSpecificationTypeDef] = ...,  # (1)
+) -> ConfigurationOptionsDescriptionTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describeconfigurationoptionsmessagerequesttypedef).
+1. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
+2. See [:material-code-braces: ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `Options`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationOptionsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef).
+parent.describe_configuration_options(**kwargs)
+```
 
-<a id="describe\_configuration\_settings"></a>
+1. See [:material-code-braces: DescribeConfigurationOptionsMessageRequestTypeDef](./type_defs.md#describeconfigurationoptionsmessagerequesttypedef) 
 
-### describe_configuration_settings
+### describe\_configuration\_settings
 
 Returns a description of the settings for the specified configuration set, that
 is, either a configuration template or the configuration set associated with a
 running environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_configuration_settings` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_configuration_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_configuration_settings)
+```python title="Method definition"
+def describe_configuration_settings(
+    self,
+    *,
+    ApplicationName: str,
+    TemplateName: str = ...,
+    EnvironmentName: str = ...,
+) -> ConfigurationSettingsDescriptionsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConfigurationSettingsMessageRequestTypeDef](./type_defs.md#describeconfigurationsettingsmessagerequesttypedef).
+1. See [:material-code-braces: ConfigurationSettingsDescriptionsTypeDef](./type_defs.md#configurationsettingsdescriptionstypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConfigurationSettingsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[ConfigurationSettingsDescriptionsTypeDef](./type_defs.md#configurationsettingsdescriptionstypedef).
+parent.describe_configuration_settings(**kwargs)
+```
 
-<a id="describe\_environment\_health"></a>
+1. See [:material-code-braces: DescribeConfigurationSettingsMessageRequestTypeDef](./type_defs.md#describeconfigurationsettingsmessagerequesttypedef) 
 
-### describe_environment_health
+### describe\_environment\_health
 
 Returns information about the overall health of the specified environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_environment_health` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_environment_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_health)
+```python title="Method definition"
+def describe_environment_health(
+    self,
+    *,
+    EnvironmentName: str = ...,
+    EnvironmentId: str = ...,
+    AttributeNames: Sequence[EnvironmentHealthAttributeType] = ...,  # (1)
+) -> DescribeEnvironmentHealthResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentHealthRequestRequestTypeDef](./type_defs.md#describeenvironmenthealthrequestrequesttypedef).
+1. See [:material-code-brackets: EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype) 
+2. See [:material-code-braces: DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `AttributeNames`:
-  `Sequence`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentHealthRequestRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+}
 
-Returns
-[DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef).
+parent.describe_environment_health(**kwargs)
+```
 
-<a id="describe\_environment\_managed\_action\_history"></a>
+1. See [:material-code-braces: DescribeEnvironmentHealthRequestRequestTypeDef](./type_defs.md#describeenvironmenthealthrequestrequesttypedef) 
 
-### describe_environment_managed_action_history
+### describe\_environment\_managed\_action\_history
 
 Lists an environment's completed and failed managed actions.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_environment_managed_action_history`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_environment_managed_action_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_managed_action_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_action_history)
+```python title="Method definition"
+def describe_environment_managed_action_history(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+    NextToken: str = ...,
+    MaxItems: int = ...,
+) -> DescribeEnvironmentManagedActionHistoryResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `NextToken`: `str`
-- `MaxItems`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-Returns
-[DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef).
+parent.describe_environment_managed_action_history(**kwargs)
+```
 
-<a id="describe\_environment\_managed\_actions"></a>
+1. See [:material-code-braces: DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryrequestrequesttypedef) 
 
-### describe_environment_managed_actions
+### describe\_environment\_managed\_actions
 
 Lists an environment's upcoming and in-progress managed actions.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_environment_managed_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_managed_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_managed_actions)
+```python title="Method definition"
+def describe_environment_managed_actions(
+    self,
+    *,
+    EnvironmentName: str = ...,
+    EnvironmentId: str = ...,
+    Status: ActionStatusType = ...,  # (1)
+) -> DescribeEnvironmentManagedActionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentManagedActionsRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionsrequestrequesttypedef).
+1. See [:material-code-brackets: ActionStatusType](./literals.md#actionstatustype) 
+2. See [:material-code-braces: DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `Status`: [ActionStatusType](./literals.md#actionstatustype)
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentManagedActionsRequestRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+}
 
-Returns
-[DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef).
+parent.describe_environment_managed_actions(**kwargs)
+```
 
-<a id="describe\_environment\_resources"></a>
+1. See [:material-code-braces: DescribeEnvironmentManagedActionsRequestRequestTypeDef](./type_defs.md#describeenvironmentmanagedactionsrequestrequesttypedef) 
 
-### describe_environment_resources
+### describe\_environment\_resources
 
 Returns AWS resources for this environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_environment_resources` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_environment_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environment_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environment_resources)
+```python title="Method definition"
+def describe_environment_resources(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> EnvironmentResourceDescriptionsMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentResourcesMessageRequestTypeDef](./type_defs.md#describeenvironmentresourcesmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentResourceDescriptionsMessageTypeDef](./type_defs.md#environmentresourcedescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentResourcesMessageRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-Returns
-[EnvironmentResourceDescriptionsMessageTypeDef](./type_defs.md#environmentresourcedescriptionsmessagetypedef).
+parent.describe_environment_resources(**kwargs)
+```
 
-<a id="describe\_environments"></a>
+1. See [:material-code-braces: DescribeEnvironmentResourcesMessageRequestTypeDef](./type_defs.md#describeenvironmentresourcesmessagerequesttypedef) 
 
-### describe_environments
+### describe\_environments
 
 Returns descriptions for existing environments.
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_environments`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_environments)
+```python title="Method definition"
+def describe_environments(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabel: str = ...,
+    EnvironmentIds: Sequence[str] = ...,
+    EnvironmentNames: Sequence[str] = ...,
+    IncludeDeleted: bool = ...,
+    IncludedDeletedBackTo: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> EnvironmentDescriptionsMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEnvironmentsMessageRequestTypeDef](./type_defs.md#describeenvironmentsmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `EnvironmentIds`: `Sequence`\[`str`\]
-- `EnvironmentNames`: `Sequence`\[`str`\]
-- `IncludeDeleted`: `bool`
-- `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEnvironmentsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
+parent.describe_environments(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeEnvironmentsMessageRequestTypeDef](./type_defs.md#describeenvironmentsmessagerequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Returns list of event descriptions matching criteria up to the last 6 weeks.
 
-Type annotations for `boto3.client("elasticbeanstalk").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    ApplicationName: str = ...,
+    VersionLabel: str = ...,
+    TemplateName: str = ...,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+    PlatformArn: str = ...,
+    RequestId: str = ...,
+    Severity: EventSeverityType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> EventDescriptionsMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef).
+1. See [:material-code-brackets: EventSeverityType](./literals.md#eventseveritytype) 
+2. See [:material-code-braces: EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `PlatformArn`: `str`
-- `RequestId`: `str`
-- `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_instances\_health"></a>
+1. See [:material-code-braces: DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef) 
 
-### describe_instances_health
+### describe\_instances\_health
 
-Retrieves detailed information about the health of instances in your AWS
-Elastic Beanstalk.
+Retrieves detailed information about the health of instances in your AWS Elastic
+Beanstalk.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_instances_health` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_instances_health` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_instances_health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_instances_health)
+```python title="Method definition"
+def describe_instances_health(
+    self,
+    *,
+    EnvironmentName: str = ...,
+    EnvironmentId: str = ...,
+    AttributeNames: Sequence[InstancesHealthAttributeType] = ...,  # (1)
+    NextToken: str = ...,
+) -> DescribeInstancesHealthResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeInstancesHealthRequestRequestTypeDef](./type_defs.md#describeinstanceshealthrequestrequesttypedef).
+1. See [:material-code-brackets: InstancesHealthAttributeType](./literals.md#instanceshealthattributetype) 
+2. See [:material-code-braces: DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str`
-- `EnvironmentId`: `str`
-- `AttributeNames`:
-  `Sequence`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesHealthRequestRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+}
 
-Returns
-[DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef).
+parent.describe_instances_health(**kwargs)
+```
 
-<a id="describe\_platform\_version"></a>
+1. See [:material-code-braces: DescribeInstancesHealthRequestRequestTypeDef](./type_defs.md#describeinstanceshealthrequestrequesttypedef) 
 
-### describe_platform_version
+### describe\_platform\_version
 
 Describes a platform version.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").describe_platform_version` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").describe_platform_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.describe_platform_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.describe_platform_version)
+```python title="Method definition"
+def describe_platform_version(
+    self,
+    *,
+    PlatformArn: str = ...,
+) -> DescribePlatformVersionResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePlatformVersionRequestRequestTypeDef](./type_defs.md#describeplatformversionrequestrequesttypedef).
+1. See [:material-code-braces: DescribePlatformVersionResultTypeDef](./type_defs.md#describeplatformversionresulttypedef) 
 
-Keyword-only arguments:
 
-- `PlatformArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePlatformVersionRequestRequestTypeDef = {  # (1)
+    "PlatformArn": ...,
+}
 
-Returns
-[DescribePlatformVersionResultTypeDef](./type_defs.md#describeplatformversionresulttypedef).
+parent.describe_platform_version(**kwargs)
+```
 
-<a id="disassociate\_environment\_operations\_role"></a>
+1. See [:material-code-braces: DescribePlatformVersionRequestRequestTypeDef](./type_defs.md#describeplatformversionrequestrequesttypedef) 
 
-### disassociate_environment_operations_role
+### disassociate\_environment\_operations\_role
 
 Disassociate the operations role from an environment.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").disassociate_environment_operations_role`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").disassociate_environment_operations_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.disassociate_environment_operations_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.disassociate_environment_operations_role)
+```python title="Method definition"
+def disassociate_environment_operations_role(
+    self,
+    *,
+    EnvironmentName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#disassociateenvironmentoperationsrolemessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `EnvironmentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateEnvironmentOperationsRoleMessageRequestTypeDef = {  # (1)
+    "EnvironmentName": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.disassociate_environment_operations_role(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DisassociateEnvironmentOperationsRoleMessageRequestTypeDef](./type_defs.md#disassociateenvironmentoperationsrolemessagerequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("elasticbeanstalk").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_available\_solution\_stacks"></a>
-
-### list_available_solution_stacks
+### list\_available\_solution\_stacks
 
 Returns a list of the available solution stack names, with the public version
 first and then in reverse chronological order.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").list_available_solution_stacks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.list_available_solution_stacks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_available_solution_stacks)
+```python title="Method definition"
+def list_available_solution_stacks(
+    self,
+) -> ListAvailableSolutionStacksResultMessageTypeDef:  # (1)
+    ...
+```
 
-Returns
-[ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef).
+1. See [:material-code-braces: ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef) 
 
-<a id="list\_platform\_branches"></a>
-
-### list_platform_branches
+### list\_platform\_branches
 
 Lists the platform branches available for your account in an AWS Region.
 
-Type annotations for `boto3.client("elasticbeanstalk").list_platform_branches`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").list_platform_branches` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.list_platform_branches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_branches)
+```python title="Method definition"
+def list_platform_branches(
+    self,
+    *,
+    Filters: Sequence[SearchFilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> ListPlatformBranchesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPlatformBranchesRequestRequestTypeDef](./type_defs.md#listplatformbranchesrequestrequesttypedef).
+1. See [:material-code-braces: SearchFilterTypeDef](./type_defs.md#searchfiltertypedef) 
+2. See [:material-code-braces: ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPlatformBranchesRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef).
+parent.list_platform_branches(**kwargs)
+```
 
-<a id="list\_platform\_versions"></a>
+1. See [:material-code-braces: ListPlatformBranchesRequestRequestTypeDef](./type_defs.md#listplatformbranchesrequestrequesttypedef) 
 
-### list_platform_versions
+### list\_platform\_versions
 
 Lists the platform versions available for your account in an AWS Region.
 
-Type annotations for `boto3.client("elasticbeanstalk").list_platform_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").list_platform_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.list_platform_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_platform_versions)
+```python title="Method definition"
+def list_platform_versions(
+    self,
+    *,
+    Filters: Sequence[PlatformFilterTypeDef] = ...,  # (1)
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+) -> ListPlatformVersionsResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListPlatformVersionsRequestRequestTypeDef](./type_defs.md#listplatformversionsrequestrequesttypedef).
+1. See [:material-code-braces: PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef) 
+2. See [:material-code-braces: ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPlatformVersionsRequestRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef).
+parent.list_platform_versions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPlatformVersionsRequestRequestTypeDef](./type_defs.md#listplatformversionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Return the tags applied to an AWS Elastic Beanstalk resource.
 
-Type annotations for `boto3.client("elasticbeanstalk").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ResourceTagsDescriptionMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef).
+1. See [:material-code-braces: ResourceTagsDescriptionMessageTypeDef](./type_defs.md#resourcetagsdescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceMessageRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ResourceTagsDescriptionMessageTypeDef](./type_defs.md#resourcetagsdescriptionmessagetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="rebuild\_environment"></a>
+1. See [:material-code-braces: ListTagsForResourceMessageRequestTypeDef](./type_defs.md#listtagsforresourcemessagerequesttypedef) 
 
-### rebuild_environment
+### rebuild\_environment
 
 Deletes and recreates all of the AWS resources (for example: the Auto Scaling
 group, load balancer, etc.) for a specified environment and forces a restart.
 
-Type annotations for `boto3.client("elasticbeanstalk").rebuild_environment`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").rebuild_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.rebuild_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.rebuild_environment)
+```python title="Method definition"
+def rebuild_environment(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RebuildEnvironmentMessageRequestTypeDef](./type_defs.md#rebuildenvironmentmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RebuildEnvironmentMessageRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-<a id="request\_environment\_info"></a>
+parent.rebuild_environment(**kwargs)
+```
 
-### request_environment_info
+1. See [:material-code-braces: RebuildEnvironmentMessageRequestTypeDef](./type_defs.md#rebuildenvironmentmessagerequesttypedef) 
 
-Initiates a request to compile the specified type of information of the
-deployed environment.
+### request\_environment\_info
 
-Type annotations for
-`boto3.client("elasticbeanstalk").request_environment_info` method.
+Initiates a request to compile the specified type of information of the deployed
+environment.
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.request_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").request_environment_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.request_environment_info)
 
-Arguments mapping described in
-[RequestEnvironmentInfoMessageRequestTypeDef](./type_defs.md#requestenvironmentinfomessagerequesttypedef).
+```python title="Method definition"
+def request_environment_info(
+    self,
+    *,
+    InfoType: EnvironmentInfoTypeType,  # (1)
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-brackets: EnvironmentInfoTypeType](./literals.md#environmentinfotypetype) 
 
-- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
-  *(required)*
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
 
-<a id="restart\_app\_server"></a>
+```python title="Usage example with kwargs"
+kwargs: RequestEnvironmentInfoMessageRequestTypeDef = {  # (1)
+    "InfoType": ...,
+}
 
-### restart_app_server
+parent.request_environment_info(**kwargs)
+```
+
+1. See [:material-code-braces: RequestEnvironmentInfoMessageRequestTypeDef](./type_defs.md#requestenvironmentinfomessagerequesttypedef) 
+
+### restart\_app\_server
 
 Causes the environment to restart the application container server running on
 each Amazon EC2 instance.
 
-Type annotations for `boto3.client("elasticbeanstalk").restart_app_server`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").restart_app_server` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.restart_app_server](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.restart_app_server)
+```python title="Method definition"
+def restart_app_server(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RestartAppServerMessageRequestTypeDef](./type_defs.md#restartappservermessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: RestartAppServerMessageRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-<a id="retrieve\_environment\_info"></a>
+parent.restart_app_server(**kwargs)
+```
 
-### retrieve_environment_info
+1. See [:material-code-braces: RestartAppServerMessageRequestTypeDef](./type_defs.md#restartappservermessagerequesttypedef) 
 
-Retrieves the compiled information from a RequestEnvironmentInfo request.
+### retrieve\_environment\_info
 
-Type annotations for
-`boto3.client("elasticbeanstalk").retrieve_environment_info` method.
+Retrieves the compiled information from a  RequestEnvironmentInfo request.
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.retrieve_environment_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").retrieve_environment_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.retrieve_environment_info)
 
-Arguments mapping described in
-[RetrieveEnvironmentInfoMessageRequestTypeDef](./type_defs.md#retrieveenvironmentinfomessagerequesttypedef).
+```python title="Method definition"
+def retrieve_environment_info(
+    self,
+    *,
+    InfoType: EnvironmentInfoTypeType,  # (1)
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+) -> RetrieveEnvironmentInfoResultMessageTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-brackets: EnvironmentInfoTypeType](./literals.md#environmentinfotypetype) 
+2. See [:material-code-braces: RetrieveEnvironmentInfoResultMessageTypeDef](./type_defs.md#retrieveenvironmentinforesultmessagetypedef) 
 
-- `InfoType`: [EnvironmentInfoTypeType](./literals.md#environmentinfotypetype)
-  *(required)*
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
 
-Returns
-[RetrieveEnvironmentInfoResultMessageTypeDef](./type_defs.md#retrieveenvironmentinforesultmessagetypedef).
+```python title="Usage example with kwargs"
+kwargs: RetrieveEnvironmentInfoMessageRequestTypeDef = {  # (1)
+    "InfoType": ...,
+}
 
-<a id="swap\_environment\_cnames"></a>
+parent.retrieve_environment_info(**kwargs)
+```
 
-### swap_environment_cnames
+1. See [:material-code-braces: RetrieveEnvironmentInfoMessageRequestTypeDef](./type_defs.md#retrieveenvironmentinfomessagerequesttypedef) 
+
+### swap\_environment\_cnames
 
 Swaps the CNAMEs of two environments.
 
-Type annotations for `boto3.client("elasticbeanstalk").swap_environment_cnames`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").swap_environment_cnames` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.swap_environment_cnames](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.swap_environment_cnames)
+```python title="Method definition"
+def swap_environment_cnames(
+    self,
+    *,
+    SourceEnvironmentId: str = ...,
+    SourceEnvironmentName: str = ...,
+    DestinationEnvironmentId: str = ...,
+    DestinationEnvironmentName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SwapEnvironmentCNAMEsMessageRequestTypeDef](./type_defs.md#swapenvironmentcnamesmessagerequesttypedef).
 
-Keyword-only arguments:
 
-- `SourceEnvironmentId`: `str`
-- `SourceEnvironmentName`: `str`
-- `DestinationEnvironmentId`: `str`
-- `DestinationEnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: SwapEnvironmentCNAMEsMessageRequestTypeDef = {  # (1)
+    "SourceEnvironmentId": ...,
+}
 
-<a id="terminate\_environment"></a>
+parent.swap_environment_cnames(**kwargs)
+```
 
-### terminate_environment
+1. See [:material-code-braces: SwapEnvironmentCNAMEsMessageRequestTypeDef](./type_defs.md#swapenvironmentcnamesmessagerequesttypedef) 
+
+### terminate\_environment
 
 Terminates the specified environment.
 
-Type annotations for `boto3.client("elasticbeanstalk").terminate_environment`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").terminate_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.terminate_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.terminate_environment)
+```python title="Method definition"
+def terminate_environment(
+    self,
+    *,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+    TerminateResources: bool = ...,
+    ForceTerminate: bool = ...,
+) -> EnvironmentDescriptionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TerminateEnvironmentMessageRequestTypeDef](./type_defs.md#terminateenvironmentmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `TerminateResources`: `bool`
-- `ForceTerminate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: TerminateEnvironmentMessageRequestTypeDef = {  # (1)
+    "EnvironmentId": ...,
+}
 
-Returns
-[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
+parent.terminate_environment(**kwargs)
+```
 
-<a id="update\_application"></a>
+1. See [:material-code-braces: TerminateEnvironmentMessageRequestTypeDef](./type_defs.md#terminateenvironmentmessagerequesttypedef) 
 
-### update_application
+### update\_application
 
 Updates the specified application to have the specified properties.
 
-Type annotations for `boto3.client("elasticbeanstalk").update_application`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_application` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_application](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application)
+```python title="Method definition"
+def update_application(
+    self,
+    *,
+    ApplicationName: str,
+    Description: str = ...,
+) -> ApplicationDescriptionMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationMessageRequestTypeDef](./type_defs.md#updateapplicationmessagerequesttypedef).
+1. See [:material-code-braces: ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
+parent.update_application(**kwargs)
+```
 
-<a id="update\_application\_resource\_lifecycle"></a>
+1. See [:material-code-braces: UpdateApplicationMessageRequestTypeDef](./type_defs.md#updateapplicationmessagerequesttypedef) 
 
-### update_application_resource_lifecycle
+### update\_application\_resource\_lifecycle
 
 Modifies lifecycle settings for an application.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").update_application_resource_lifecycle`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_application_resource_lifecycle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_application_resource_lifecycle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_resource_lifecycle)
+```python title="Method definition"
+def update_application_resource_lifecycle(
+    self,
+    *,
+    ApplicationName: str,
+    ResourceLifecycleConfig: ApplicationResourceLifecycleConfigTypeDef,  # (1)
+) -> ApplicationResourceLifecycleDescriptionMessageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationResourceLifecycleMessageRequestTypeDef](./type_defs.md#updateapplicationresourcelifecyclemessagerequesttypedef).
+1. See [:material-code-braces: ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef) 
+2. See [:material-code-braces: ApplicationResourceLifecycleDescriptionMessageTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `ResourceLifecycleConfig`:
-  [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationResourceLifecycleMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "ResourceLifecycleConfig": ...,
+}
 
-Returns
-[ApplicationResourceLifecycleDescriptionMessageTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessagetypedef).
+parent.update_application_resource_lifecycle(**kwargs)
+```
 
-<a id="update\_application\_version"></a>
+1. See [:material-code-braces: UpdateApplicationResourceLifecycleMessageRequestTypeDef](./type_defs.md#updateapplicationresourcelifecyclemessagerequesttypedef) 
 
-### update_application_version
+### update\_application\_version
 
 Updates the specified application version to have the specified properties.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").update_application_version` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_application_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_application_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_application_version)
+```python title="Method definition"
+def update_application_version(
+    self,
+    *,
+    ApplicationName: str,
+    VersionLabel: str,
+    Description: str = ...,
+) -> ApplicationVersionDescriptionMessageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateApplicationVersionMessageRequestTypeDef](./type_defs.md#updateapplicationversionmessagerequesttypedef).
+1. See [:material-code-braces: ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `VersionLabel`: `str` *(required)*
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateApplicationVersionMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "VersionLabel": ...,
+}
 
-Returns
-[ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
+parent.update_application_version(**kwargs)
+```
 
-<a id="update\_configuration\_template"></a>
+1. See [:material-code-braces: UpdateApplicationVersionMessageRequestTypeDef](./type_defs.md#updateapplicationversionmessagerequesttypedef) 
 
-### update_configuration_template
+### update\_configuration\_template
 
-Updates the specified configuration template to have the specified properties
-or configuration option values.
+Updates the specified configuration template to have the specified properties or
+configuration option values.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").update_configuration_template` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_configuration_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_configuration_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_configuration_template)
+```python title="Method definition"
+def update_configuration_template(
+    self,
+    *,
+    ApplicationName: str,
+    TemplateName: str,
+    Description: str = ...,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef] = ...,  # (1)
+    OptionsToRemove: Sequence[OptionSpecificationTypeDef] = ...,  # (2)
+) -> ConfigurationSettingsDescriptionResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#updateconfigurationtemplatemessagerequesttypedef).
+1. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+2. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
+3. See [:material-code-braces: ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `TemplateName`: `str` *(required)*
-- `Description`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateConfigurationTemplateMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "TemplateName": ...,
+}
 
-Returns
-[ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
+parent.update_configuration_template(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UpdateConfigurationTemplateMessageRequestTypeDef](./type_defs.md#updateconfigurationtemplatemessagerequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Updates the environment description, deploys a new application version, updates
-the configuration settings to an entirely new configuration template, or
-updates select configuration option values in the running environment.
+the configuration settings to an entirely new configuration template, or updates
+select configuration option values in the running environment.
 
-Type annotations for `boto3.client("elasticbeanstalk").update_environment`
-method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    ApplicationName: str = ...,
+    EnvironmentId: str = ...,
+    EnvironmentName: str = ...,
+    GroupName: str = ...,
+    Description: str = ...,
+    Tier: EnvironmentTierTypeDef = ...,  # (1)
+    VersionLabel: str = ...,
+    TemplateName: str = ...,
+    SolutionStackName: str = ...,
+    PlatformArn: str = ...,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef] = ...,  # (2)
+    OptionsToRemove: Sequence[OptionSpecificationTypeDef] = ...,  # (3)
+) -> EnvironmentDescriptionResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentMessageRequestTypeDef](./type_defs.md#updateenvironmentmessagerequesttypedef).
+1. See [:material-code-braces: EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef) 
+2. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+3. See [:material-code-braces: OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef) 
+4. See [:material-code-braces: EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str`
-- `EnvironmentId`: `str`
-- `EnvironmentName`: `str`
-- `GroupName`: `str`
-- `Description`: `str`
-- `Tier`: [EnvironmentTierTypeDef](./type_defs.md#environmenttiertypedef)
-- `VersionLabel`: `str`
-- `TemplateName`: `str`
-- `SolutionStackName`: `str`
-- `PlatformArn`: `str`
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-- `OptionsToRemove`:
-  `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+}
 
-Returns
-[EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
+parent.update_environment(**kwargs)
+```
 
-<a id="update\_tags\_for\_resource"></a>
+1. See [:material-code-braces: UpdateEnvironmentMessageRequestTypeDef](./type_defs.md#updateenvironmentmessagerequesttypedef) 
 
-### update_tags_for_resource
+### update\_tags\_for\_resource
 
 Update the list of tags applied to an AWS Elastic Beanstalk resource.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").update_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").update_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.update_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.update_tags_for_resource)
+```python title="Method definition"
+def update_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagsToAdd: Sequence[TagTypeDef] = ...,  # (1)
+    TagsToRemove: Sequence[str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTagsForResourceMessageRequestTypeDef](./type_defs.md#updatetagsforresourcemessagerequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TagsToRemove`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateTagsForResourceMessageRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="validate\_configuration\_settings"></a>
+parent.update_tags_for_resource(**kwargs)
+```
 
-### validate_configuration_settings
+1. See [:material-code-braces: UpdateTagsForResourceMessageRequestTypeDef](./type_defs.md#updatetagsforresourcemessagerequesttypedef) 
+
+### validate\_configuration\_settings
 
 Takes a set of configuration settings and either a configuration template or
 environment, and determines whether those values are valid.
 
-Type annotations for
-`boto3.client("elasticbeanstalk").validate_configuration_settings` method.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").validate_configuration_settings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
 
-Boto3 documentation:
-[ElasticBeanstalk.Client.validate_configuration_settings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk.Client.validate_configuration_settings)
+```python title="Method definition"
+def validate_configuration_settings(
+    self,
+    *,
+    ApplicationName: str,
+    OptionSettings: Sequence[ConfigurationOptionSettingTypeDef],  # (1)
+    TemplateName: str = ...,
+    EnvironmentName: str = ...,
+) -> ConfigurationSettingsValidationMessagesTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ValidateConfigurationSettingsMessageRequestTypeDef](./type_defs.md#validateconfigurationsettingsmessagerequesttypedef).
+1. See [:material-code-braces: ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef) 
+2. See [:material-code-braces: ConfigurationSettingsValidationMessagesTypeDef](./type_defs.md#configurationsettingsvalidationmessagestypedef) 
 
-Keyword-only arguments:
 
-- `ApplicationName`: `str` *(required)*
-- `OptionSettings`:
-  `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
-  *(required)*
-- `TemplateName`: `str`
-- `EnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ValidateConfigurationSettingsMessageRequestTypeDef = {  # (1)
+    "ApplicationName": ...,
+    "OptionSettings": ...,
+}
 
-Returns
-[ConfigurationSettingsValidationMessagesTypeDef](./type_defs.md#configurationsettingsvalidationmessagestypedef).
+parent.validate_configuration_settings(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidateConfigurationSettingsMessageRequestTypeDef](./type_defs.md#validateconfigurationsettingsmessagerequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("elasticbeanstalk").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_application_versions")` ->
-  [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
-- `client.get_paginator("describe_environment_managed_action_history")` ->
-  [DescribeEnvironmentManagedActionHistoryPaginator](./paginators.md#describeenvironmentmanagedactionhistorypaginator)
-- `client.get_paginator("describe_environments")` ->
-  [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
-- `client.get_paginator("describe_events")` ->
-  [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
-- `client.get_paginator("list_platform_versions")` ->
-  [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
+- `client.get_paginator("describe_application_versions")` -> [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
+- `client.get_paginator("describe_environment_managed_action_history")` -> [DescribeEnvironmentManagedActionHistoryPaginator](./paginators.md#describeenvironmentmanagedactionhistorypaginator)
+- `client.get_paginator("describe_environments")` -> [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
+- `client.get_paginator("describe_events")` -> [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
+- `client.get_paginator("list_platform_versions")` -> [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("elasticbeanstalk").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("elasticbeanstalk").get_waiter` method with overloads.
 
-- `client.get_waiter("environment_exists")` ->
-  [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
-- `client.get_waiter("environment_terminated")` ->
-  [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
-- `client.get_waiter("environment_updated")` ->
-  [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
+- `client.get_waiter("environment_exists")` -> [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
+- `client.get_waiter("environment_terminated")` -> [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
+- `client.get_waiter("environment_updated")` -> [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
+

@@ -1,30 +1,18 @@
-<a id="waiters-for-boto3-machinelearning-module"></a>
-
-# Waiters for boto3 MachineLearning module
+# Waiters
 
 > [Index](../README.md) > [MachineLearning](./README.md) > Waiters
 
-Auto-generated documentation for
-[MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
-type annotations stubs module
-[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+!!! note ""
 
-- [Waiters for boto3 MachineLearning module](#waiters-for-boto3-machinelearning-module)
-  - [BatchPredictionAvailableWaiter](#batchpredictionavailablewaiter)
-  - [DataSourceAvailableWaiter](#datasourceavailablewaiter)
-  - [EvaluationAvailableWaiter](#evaluationavailablewaiter)
-  - [MLModelAvailableWaiter](#mlmodelavailablewaiter)
-
-<a id="batchpredictionavailablewaiter"></a>
+    Auto-generated documentation for [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
+    type annotations stubs module [mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ## BatchPredictionAvailableWaiter
 
-Type annotations for
-`boto3.client("machinelearning").get_waiter("batch_prediction_available")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_waiter("batch_prediction_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.BatchPredictionAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import BatchPredictionAvailableWaiter
@@ -33,35 +21,51 @@ def get_batch_prediction_available_waiter() -> BatchPredictionAvailableWaiter:
     return Session().client("machinelearning").get_waiter("batch_prediction_available")
 ```
 
-Boto3 documentation:
-[MachineLearning.Waiter.batch_prediction_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.BatchPredictionAvailable)
 
-Arguments for `BatchPredictionAvailableWaiter.wait` method:
+### wait
 
-- `FilterVariable`:
-  [BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python BatchPredictionAvailableWaiter.wait` method.
 
-<a id="datasourceavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FilterVariable: BatchPredictionFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
 
+1. See [:material-code-brackets: BatchPredictionFilterVariableType](./literals.md#batchpredictionfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeBatchPredictionsInputBatchPredictionAvailableWaitTypeDef](./type_defs.md#describebatchpredictionsinputbatchpredictionavailablewaittypedef) 
 ## DataSourceAvailableWaiter
 
-Type annotations for
-`boto3.client("machinelearning").get_waiter("data_source_available")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_waiter("data_source_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.DataSourceAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import DataSourceAvailableWaiter
@@ -70,35 +74,51 @@ def get_data_source_available_waiter() -> DataSourceAvailableWaiter:
     return Session().client("machinelearning").get_waiter("data_source_available")
 ```
 
-Boto3 documentation:
-[MachineLearning.Waiter.data_source_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.DataSourceAvailable)
 
-Arguments for `DataSourceAvailableWaiter.wait` method:
+### wait
 
-- `FilterVariable`:
-  [DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python DataSourceAvailableWaiter.wait` method.
 
-<a id="evaluationavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FilterVariable: DataSourceFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
 
+1. See [:material-code-brackets: DataSourceFilterVariableType](./literals.md#datasourcefiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourcesInputDataSourceAvailableWaitTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDataSourcesInputDataSourceAvailableWaitTypeDef](./type_defs.md#describedatasourcesinputdatasourceavailablewaittypedef) 
 ## EvaluationAvailableWaiter
 
-Type annotations for
-`boto3.client("machinelearning").get_waiter("evaluation_available")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_waiter("evaluation_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.EvaluationAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import EvaluationAvailableWaiter
@@ -107,35 +127,51 @@ def get_evaluation_available_waiter() -> EvaluationAvailableWaiter:
     return Session().client("machinelearning").get_waiter("evaluation_available")
 ```
 
-Boto3 documentation:
-[MachineLearning.Waiter.evaluation_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.EvaluationAvailable)
 
-Arguments for `EvaluationAvailableWaiter.wait` method:
+### wait
 
-- `FilterVariable`:
-  [EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EvaluationAvailableWaiter.wait` method.
 
-<a id="mlmodelavailablewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FilterVariable: EvaluationFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
 
+1. See [:material-code-brackets: EvaluationFilterVariableType](./literals.md#evaluationfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEvaluationsInputEvaluationAvailableWaitTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEvaluationsInputEvaluationAvailableWaitTypeDef](./type_defs.md#describeevaluationsinputevaluationavailablewaittypedef) 
 ## MLModelAvailableWaiter
 
-Type annotations for
-`boto3.client("machinelearning").get_waiter("ml_model_available")`.
+Type annotations and code completion for `#!python boto3.client("machinelearning").get_waiter("ml_model_available")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.MLModelAvailable)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_machinelearning.waiter import MLModelAvailableWaiter
@@ -144,21 +180,42 @@ def get_ml_model_available_waiter() -> MLModelAvailableWaiter:
     return Session().client("machinelearning").get_waiter("ml_model_available")
 ```
 
-Boto3 documentation:
-[MachineLearning.Waiter.ml_model_available](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Waiter.MLModelAvailable)
 
-Arguments for `MLModelAvailableWaiter.wait` method:
+### wait
 
-- `FilterVariable`:
-  [MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype)
-- `EQ`: `str`
-- `GT`: `str`
-- `LT`: `str`
-- `GE`: `str`
-- `LE`: `str`
-- `NE`: `str`
-- `Prefix`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NextToken`: `str`
-- `Limit`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python MLModelAvailableWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    FilterVariable: MLModelFilterVariableType = ...,  # (1)
+    EQ: str = ...,
+    GT: str = ...,
+    LT: str = ...,
+    GE: str = ...,
+    LE: str = ...,
+    NE: str = ...,
+    Prefix: str = ...,
+    SortOrder: SortOrderType = ...,  # (2)
+    NextToken: str = ...,
+    Limit: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (3)
+) -> None:
+    ...
+```
+
+1. See [:material-code-brackets: MLModelFilterVariableType](./literals.md#mlmodelfiltervariabletype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMLModelsInputMLModelAvailableWaitTypeDef = {  # (1)
+    "FilterVariable": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMLModelsInputMLModelAvailableWaitTypeDef](./type_defs.md#describemlmodelsinputmlmodelavailablewaittypedef) 

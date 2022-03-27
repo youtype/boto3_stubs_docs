@@ -1,37 +1,18 @@
-<a id="paginators-for-boto3-storagegateway-module"></a>
-
-# Paginators for boto3 StorageGateway module
+# Paginators
 
 > [Index](../README.md) > [StorageGateway](./README.md) > Paginators
 
-Auto-generated documentation for
-[StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
-type annotations stubs module
-[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+!!! note ""
 
-- [Paginators for boto3 StorageGateway module](#paginators-for-boto3-storagegateway-module)
-  - [DescribeTapeArchivesPaginator](#describetapearchivespaginator)
-  - [DescribeTapeRecoveryPointsPaginator](#describetaperecoverypointspaginator)
-  - [DescribeTapesPaginator](#describetapespaginator)
-  - [DescribeVTLDevicesPaginator](#describevtldevicespaginator)
-  - [ListFileSharesPaginator](#listfilesharespaginator)
-  - [ListFileSystemAssociationsPaginator](#listfilesystemassociationspaginator)
-  - [ListGatewaysPaginator](#listgatewayspaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-  - [ListTapePoolsPaginator](#listtapepoolspaginator)
-  - [ListTapesPaginator](#listtapespaginator)
-  - [ListVolumesPaginator](#listvolumespaginator)
-
-<a id="describetapearchivespaginator"></a>
+    Auto-generated documentation for [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
+    type annotations stubs module [mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ## DescribeTapeArchivesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("describe_tape_archives")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("describe_tape_archives")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator
@@ -40,28 +21,40 @@ def get_describe_tape_archives_paginator() -> DescribeTapeArchivesPaginator:
     return Session().client("storagegateway").get_paginator("describe_tape_archives")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapeArchives](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeArchives)
 
-Arguments for `DescribeTapeArchivesPaginator.paginate` method:
+### paginate
 
-- `TapeARNs`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTapeArchivesPaginator.paginate` method.
 
-`DescribeTapeArchivesPaginator.paginate` returns
-`_PageIterator`\[[DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TapeARNs: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeTapeArchivesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describetaperecoverypointspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeTapeArchivesOutputTypeDef](./type_defs.md#describetapearchivesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef = {  # (1)
+    "TapeARNs": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTapeArchivesInputDescribeTapeArchivesPaginateTypeDef](./type_defs.md#describetapearchivesinputdescribetapearchivespaginatetypedef) 
 ## DescribeTapeRecoveryPointsPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("describe_tape_recovery_points")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import DescribeTapeRecoveryPointsPaginator
@@ -70,28 +63,40 @@ def get_describe_tape_recovery_points_paginator() -> DescribeTapeRecoveryPointsP
     return Session().client("storagegateway").get_paginator("describe_tape_recovery_points")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapeRecoveryPoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapeRecoveryPoints)
 
-Arguments for `DescribeTapeRecoveryPointsPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTapeRecoveryPointsPaginator.paginate` method.
 
-`DescribeTapeRecoveryPointsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeTapeRecoveryPointsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describetapespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeTapeRecoveryPointsOutputTypeDef](./type_defs.md#describetaperecoverypointsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTapeRecoveryPointsInputDescribeTapeRecoveryPointsPaginateTypeDef](./type_defs.md#describetaperecoverypointsinputdescribetaperecoverypointspaginatetypedef) 
 ## DescribeTapesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("describe_tapes")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("describe_tapes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import DescribeTapesPaginator
@@ -100,29 +105,41 @@ def get_describe_tapes_paginator() -> DescribeTapesPaginator:
     return Session().client("storagegateway").get_paginator("describe_tapes")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.DescribeTapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeTapes)
 
-Arguments for `DescribeTapesPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str` *(required)*
-- `TapeARNs`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTapesPaginator.paginate` method.
 
-`DescribeTapesPaginator.paginate` returns
-`_PageIterator`\[[DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str,
+    TapeARNs: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeTapesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describevtldevicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeTapesOutputTypeDef](./type_defs.md#describetapesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTapesInputDescribeTapesPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTapesInputDescribeTapesPaginateTypeDef](./type_defs.md#describetapesinputdescribetapespaginatetypedef) 
 ## DescribeVTLDevicesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("describe_vtl_devices")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("describe_vtl_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import DescribeVTLDevicesPaginator
@@ -131,29 +148,41 @@ def get_describe_vtl_devices_paginator() -> DescribeVTLDevicesPaginator:
     return Session().client("storagegateway").get_paginator("describe_vtl_devices")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.DescribeVTLDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.DescribeVTLDevices)
 
-Arguments for `DescribeVTLDevicesPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str` *(required)*
-- `VTLDeviceARNs`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeVTLDevicesPaginator.paginate` method.
 
-`DescribeVTLDevicesPaginator.paginate` returns
-`_PageIterator`\[[DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str,
+    VTLDeviceARNs: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeVTLDevicesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfilesharespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeVTLDevicesOutputTypeDef](./type_defs.md#describevtldevicesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeVTLDevicesInputDescribeVTLDevicesPaginateTypeDef](./type_defs.md#describevtldevicesinputdescribevtldevicespaginatetypedef) 
 ## ListFileSharesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_file_shares")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_file_shares")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListFileSharesPaginator
@@ -162,28 +191,40 @@ def get_list_file_shares_paginator() -> ListFileSharesPaginator:
     return Session().client("storagegateway").get_paginator("list_file_shares")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListFileShares](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileShares)
 
-Arguments for `ListFileSharesPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFileSharesPaginator.paginate` method.
 
-`ListFileSharesPaginator.paginate` returns
-`_PageIterator`\[[ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFileSharesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listfilesystemassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFileSharesOutputTypeDef](./type_defs.md#listfilesharesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFileSharesInputListFileSharesPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFileSharesInputListFileSharesPaginateTypeDef](./type_defs.md#listfilesharesinputlistfilesharespaginatetypedef) 
 ## ListFileSystemAssociationsPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_file_system_associations")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_file_system_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListFileSystemAssociationsPaginator
@@ -192,28 +233,40 @@ def get_list_file_system_associations_paginator() -> ListFileSystemAssociationsP
     return Session().client("storagegateway").get_paginator("list_file_system_associations")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListFileSystemAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListFileSystemAssociations)
 
-Arguments for `ListFileSystemAssociationsPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFileSystemAssociationsPaginator.paginate` method.
 
-`ListFileSystemAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFileSystemAssociationsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgatewayspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFileSystemAssociationsOutputTypeDef](./type_defs.md#listfilesystemassociationsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFileSystemAssociationsInputListFileSystemAssociationsPaginateTypeDef](./type_defs.md#listfilesystemassociationsinputlistfilesystemassociationspaginatetypedef) 
 ## ListGatewaysPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_gateways")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListGatewaysPaginator
@@ -222,27 +275,39 @@ def get_list_gateways_paginator() -> ListGatewaysPaginator:
     return Session().client("storagegateway").get_paginator("list_gateways")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListGateways)
 
-Arguments for `ListGatewaysPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGatewaysPaginator.paginate` method.
 
-`ListGatewaysPaginator.paginate` returns
-`_PageIterator`\[[ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGatewaysOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGatewaysInputListGatewaysPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGatewaysInputListGatewaysPaginateTypeDef](./type_defs.md#listgatewaysinputlistgatewayspaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListTagsForResourcePaginator
@@ -251,28 +316,40 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("storagegateway").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceARN`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceARN: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtapepoolspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef) 
 ## ListTapePoolsPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_tape_pools")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_tape_pools")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListTapePoolsPaginator
@@ -281,28 +358,40 @@ def get_list_tape_pools_paginator() -> ListTapePoolsPaginator:
     return Session().client("storagegateway").get_paginator("list_tape_pools")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListTapePools](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapePools)
 
-Arguments for `ListTapePoolsPaginator.paginate` method:
+### paginate
 
-- `PoolARNs`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTapePoolsPaginator.paginate` method.
 
-`ListTapePoolsPaginator.paginate` returns
-`_PageIterator`\[[ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PoolARNs: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTapePoolsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtapespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTapePoolsOutputTypeDef](./type_defs.md#listtapepoolsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTapePoolsInputListTapePoolsPaginateTypeDef = {  # (1)
+    "PoolARNs": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTapePoolsInputListTapePoolsPaginateTypeDef](./type_defs.md#listtapepoolsinputlisttapepoolspaginatetypedef) 
 ## ListTapesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_tapes")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_tapes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListTapesPaginator
@@ -311,28 +400,40 @@ def get_list_tapes_paginator() -> ListTapesPaginator:
     return Session().client("storagegateway").get_paginator("list_tapes")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListTapes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListTapes)
 
-Arguments for `ListTapesPaginator.paginate` method:
+### paginate
 
-- `TapeARNs`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTapesPaginator.paginate` method.
 
-`ListTapesPaginator.paginate` returns
-`_PageIterator`\[[ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TapeARNs: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTapesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listvolumespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTapesOutputTypeDef](./type_defs.md#listtapesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTapesInputListTapesPaginateTypeDef = {  # (1)
+    "TapeARNs": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTapesInputListTapesPaginateTypeDef](./type_defs.md#listtapesinputlisttapespaginatetypedef) 
 ## ListVolumesPaginator
 
-Type annotations for
-`boto3.client("storagegateway").get_paginator("list_volumes")`.
+Type annotations and code completion for `#!python boto3.client("storagegateway").get_paginator("list_volumes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_storagegateway.paginator import ListVolumesPaginator
@@ -341,14 +442,31 @@ def get_list_volumes_paginator() -> ListVolumesPaginator:
     return Session().client("storagegateway").get_paginator("list_volumes")
 ```
 
-Boto3 documentation:
-[StorageGateway.Paginator.ListVolumes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway.Paginator.ListVolumes)
 
-Arguments for `ListVolumesPaginator.paginate` method:
+### paginate
 
-- `GatewayARN`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVolumesPaginator.paginate` method.
 
-`ListVolumesPaginator.paginate` returns
-`_PageIterator`\[[ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GatewayARN: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListVolumesOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListVolumesOutputTypeDef](./type_defs.md#listvolumesoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVolumesInputListVolumesPaginateTypeDef = {  # (1)
+    "GatewayARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVolumesInputListVolumesPaginateTypeDef](./type_defs.md#listvolumesinputlistvolumespaginatetypedef) 

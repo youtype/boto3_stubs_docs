@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-kafkaconnect-module"></a>
-
-# Examples for boto3 KafkaConnect module
+# Examples
 
 > [Index](../README.md) > [KafkaConnect](./README.md) > Examples
 
-- [Examples for boto3 KafkaConnect module](#examples-for-boto3-kafkaconnect-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
+    type annotations stubs module [mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[kafkaconnect]` package installed.
 
-Write your `KafkaConnect` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `KafkaConnect` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type KafkaConnectClient
-# and provides type checking and code completion
-client = session.client("kafkaconnect")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListConnectorsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_connectors")
-for item in paginator.paginate(...):
-    # item has type ListConnectorsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("kafkaconnect")  # (1)
+    result = client.create_connector()  # (2)
+    ```
+
+    1. client: [KafkaConnectClient](./client.md)
+    2. result: [:material-code-braces: CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("kafkaconnect")  # (1)
+
+    paginator = client.get_paginator("list_connectors")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [KafkaConnectClient](./client.md)
+    2. paginator: [ListConnectorsPaginator](./paginators.md#listconnectorspaginator)
+    3. item: [:material-code-braces: ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[kafkaconnect]` or a standalone `mypy_boto3_kafkaconnect`
-package, you have to explicitly specify `client: KafkaConnectClient` type
-annotation.
+With `boto3-stubs-lite[kafkaconnect]`
+or a standalone `mypy_boto3_kafkaconnect` package, you have to explicitly specify `client: KafkaConnectClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_kafkaconnect.client import KafkaConnectClient
-from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator
-
-from mypy_boto3_kafkaconnect.literals import PaginatorName
-
-from mypy_boto3_kafkaconnect.type_defs import bool
-from mypy_boto3_kafkaconnect.type_defs import ListConnectorsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: KafkaConnectClient = session.client("kafkaconnect")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_kafkaconnect.client import KafkaConnectClient
+    from mypy_boto3_kafkaconnect.type_defs import CreateConnectorResponseTypeDef
+    from mypy_boto3_kafkaconnect.type_defs import CreateConnectorRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_connectors"
-paginator: ListConnectorsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListConnectorsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: KafkaConnectClient = session.client("kafkaconnect")
+
+    kwargs: CreateConnectorRequestRequestTypeDef = {...}
+    result: CreateConnectorResponseTypeDef = client.create_connector(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_kafkaconnect.client import KafkaConnectClient
+    from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator
+    from mypy_boto3_kafkaconnect.type_defs import ListConnectorsResponseTypeDef
+
+
+    session = Session()
+    client: KafkaConnectClient = session.client("kafkaconnect")
+
+    paginator: ListConnectorsPaginator = client.get_paginator("list_connectors")
+    for item in paginator.paginate(...):
+        item: ListConnectorsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

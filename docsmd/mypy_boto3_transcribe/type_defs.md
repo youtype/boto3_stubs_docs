@@ -1,1791 +1,2240 @@
-<a id="typed-dictionaries-for-boto3-transcribeservice-module"></a>
-
-# Typed dictionaries for boto3 TranscribeService module
+# Typed dictionaries
 
 > [Index](../README.md) > [TranscribeService](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
-type annotations stubs module
-[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+!!! note ""
 
-- [Typed dictionaries for boto3 TranscribeService module](#typed-dictionaries-for-boto3-transcribeservice-module)
-  - [AbsoluteTimeRangeTypeDef](#absolutetimerangetypedef)
-  - [CallAnalyticsJobSettingsTypeDef](#callanalyticsjobsettingstypedef)
-  - [CallAnalyticsJobSummaryTypeDef](#callanalyticsjobsummarytypedef)
-  - [CallAnalyticsJobTypeDef](#callanalyticsjobtypedef)
-  - [CategoryPropertiesTypeDef](#categorypropertiestypedef)
-  - [ChannelDefinitionTypeDef](#channeldefinitiontypedef)
-  - [ContentRedactionTypeDef](#contentredactiontypedef)
-  - [CreateCallAnalyticsCategoryRequestRequestTypeDef](#createcallanalyticscategoryrequestrequesttypedef)
-  - [CreateCallAnalyticsCategoryResponseTypeDef](#createcallanalyticscategoryresponsetypedef)
-  - [CreateLanguageModelRequestRequestTypeDef](#createlanguagemodelrequestrequesttypedef)
-  - [CreateLanguageModelResponseTypeDef](#createlanguagemodelresponsetypedef)
-  - [CreateMedicalVocabularyRequestRequestTypeDef](#createmedicalvocabularyrequestrequesttypedef)
-  - [CreateMedicalVocabularyResponseTypeDef](#createmedicalvocabularyresponsetypedef)
-  - [CreateVocabularyFilterRequestRequestTypeDef](#createvocabularyfilterrequestrequesttypedef)
-  - [CreateVocabularyFilterResponseTypeDef](#createvocabularyfilterresponsetypedef)
-  - [CreateVocabularyRequestRequestTypeDef](#createvocabularyrequestrequesttypedef)
-  - [CreateVocabularyResponseTypeDef](#createvocabularyresponsetypedef)
-  - [DeleteCallAnalyticsCategoryRequestRequestTypeDef](#deletecallanalyticscategoryrequestrequesttypedef)
-  - [DeleteCallAnalyticsJobRequestRequestTypeDef](#deletecallanalyticsjobrequestrequesttypedef)
-  - [DeleteLanguageModelRequestRequestTypeDef](#deletelanguagemodelrequestrequesttypedef)
-  - [DeleteMedicalTranscriptionJobRequestRequestTypeDef](#deletemedicaltranscriptionjobrequestrequesttypedef)
-  - [DeleteMedicalVocabularyRequestRequestTypeDef](#deletemedicalvocabularyrequestrequesttypedef)
-  - [DeleteTranscriptionJobRequestRequestTypeDef](#deletetranscriptionjobrequestrequesttypedef)
-  - [DeleteVocabularyFilterRequestRequestTypeDef](#deletevocabularyfilterrequestrequesttypedef)
-  - [DeleteVocabularyRequestRequestTypeDef](#deletevocabularyrequestrequesttypedef)
-  - [DescribeLanguageModelRequestRequestTypeDef](#describelanguagemodelrequestrequesttypedef)
-  - [DescribeLanguageModelResponseTypeDef](#describelanguagemodelresponsetypedef)
-  - [GetCallAnalyticsCategoryRequestRequestTypeDef](#getcallanalyticscategoryrequestrequesttypedef)
-  - [GetCallAnalyticsCategoryResponseTypeDef](#getcallanalyticscategoryresponsetypedef)
-  - [GetCallAnalyticsJobRequestRequestTypeDef](#getcallanalyticsjobrequestrequesttypedef)
-  - [GetCallAnalyticsJobResponseTypeDef](#getcallanalyticsjobresponsetypedef)
-  - [GetMedicalTranscriptionJobRequestRequestTypeDef](#getmedicaltranscriptionjobrequestrequesttypedef)
-  - [GetMedicalTranscriptionJobResponseTypeDef](#getmedicaltranscriptionjobresponsetypedef)
-  - [GetMedicalVocabularyRequestRequestTypeDef](#getmedicalvocabularyrequestrequesttypedef)
-  - [GetMedicalVocabularyResponseTypeDef](#getmedicalvocabularyresponsetypedef)
-  - [GetTranscriptionJobRequestRequestTypeDef](#gettranscriptionjobrequestrequesttypedef)
-  - [GetTranscriptionJobResponseTypeDef](#gettranscriptionjobresponsetypedef)
-  - [GetVocabularyFilterRequestRequestTypeDef](#getvocabularyfilterrequestrequesttypedef)
-  - [GetVocabularyFilterResponseTypeDef](#getvocabularyfilterresponsetypedef)
-  - [GetVocabularyRequestRequestTypeDef](#getvocabularyrequestrequesttypedef)
-  - [GetVocabularyResponseTypeDef](#getvocabularyresponsetypedef)
-  - [InputDataConfigTypeDef](#inputdataconfigtypedef)
-  - [InterruptionFilterTypeDef](#interruptionfiltertypedef)
-  - [JobExecutionSettingsTypeDef](#jobexecutionsettingstypedef)
-  - [LanguageIdSettingsTypeDef](#languageidsettingstypedef)
-  - [LanguageModelTypeDef](#languagemodeltypedef)
-  - [ListCallAnalyticsCategoriesRequestRequestTypeDef](#listcallanalyticscategoriesrequestrequesttypedef)
-  - [ListCallAnalyticsCategoriesResponseTypeDef](#listcallanalyticscategoriesresponsetypedef)
-  - [ListCallAnalyticsJobsRequestRequestTypeDef](#listcallanalyticsjobsrequestrequesttypedef)
-  - [ListCallAnalyticsJobsResponseTypeDef](#listcallanalyticsjobsresponsetypedef)
-  - [ListLanguageModelsRequestRequestTypeDef](#listlanguagemodelsrequestrequesttypedef)
-  - [ListLanguageModelsResponseTypeDef](#listlanguagemodelsresponsetypedef)
-  - [ListMedicalTranscriptionJobsRequestRequestTypeDef](#listmedicaltranscriptionjobsrequestrequesttypedef)
-  - [ListMedicalTranscriptionJobsResponseTypeDef](#listmedicaltranscriptionjobsresponsetypedef)
-  - [ListMedicalVocabulariesRequestRequestTypeDef](#listmedicalvocabulariesrequestrequesttypedef)
-  - [ListMedicalVocabulariesResponseTypeDef](#listmedicalvocabulariesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTranscriptionJobsRequestRequestTypeDef](#listtranscriptionjobsrequestrequesttypedef)
-  - [ListTranscriptionJobsResponseTypeDef](#listtranscriptionjobsresponsetypedef)
-  - [ListVocabulariesRequestRequestTypeDef](#listvocabulariesrequestrequesttypedef)
-  - [ListVocabulariesResponseTypeDef](#listvocabulariesresponsetypedef)
-  - [ListVocabularyFiltersRequestRequestTypeDef](#listvocabularyfiltersrequestrequesttypedef)
-  - [ListVocabularyFiltersResponseTypeDef](#listvocabularyfiltersresponsetypedef)
-  - [MediaTypeDef](#mediatypedef)
-  - [MedicalTranscriptTypeDef](#medicaltranscripttypedef)
-  - [MedicalTranscriptionJobSummaryTypeDef](#medicaltranscriptionjobsummarytypedef)
-  - [MedicalTranscriptionJobTypeDef](#medicaltranscriptionjobtypedef)
-  - [MedicalTranscriptionSettingTypeDef](#medicaltranscriptionsettingtypedef)
-  - [ModelSettingsTypeDef](#modelsettingstypedef)
-  - [NonTalkTimeFilterTypeDef](#nontalktimefiltertypedef)
-  - [RelativeTimeRangeTypeDef](#relativetimerangetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuleTypeDef](#ruletypedef)
-  - [SentimentFilterTypeDef](#sentimentfiltertypedef)
-  - [SettingsTypeDef](#settingstypedef)
-  - [StartCallAnalyticsJobRequestRequestTypeDef](#startcallanalyticsjobrequestrequesttypedef)
-  - [StartCallAnalyticsJobResponseTypeDef](#startcallanalyticsjobresponsetypedef)
-  - [StartMedicalTranscriptionJobRequestRequestTypeDef](#startmedicaltranscriptionjobrequestrequesttypedef)
-  - [StartMedicalTranscriptionJobResponseTypeDef](#startmedicaltranscriptionjobresponsetypedef)
-  - [StartTranscriptionJobRequestRequestTypeDef](#starttranscriptionjobrequestrequesttypedef)
-  - [StartTranscriptionJobResponseTypeDef](#starttranscriptionjobresponsetypedef)
-  - [SubtitlesOutputTypeDef](#subtitlesoutputtypedef)
-  - [SubtitlesTypeDef](#subtitlestypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TranscriptFilterTypeDef](#transcriptfiltertypedef)
-  - [TranscriptTypeDef](#transcripttypedef)
-  - [TranscriptionJobSummaryTypeDef](#transcriptionjobsummarytypedef)
-  - [TranscriptionJobTypeDef](#transcriptionjobtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateCallAnalyticsCategoryRequestRequestTypeDef](#updatecallanalyticscategoryrequestrequesttypedef)
-  - [UpdateCallAnalyticsCategoryResponseTypeDef](#updatecallanalyticscategoryresponsetypedef)
-  - [UpdateMedicalVocabularyRequestRequestTypeDef](#updatemedicalvocabularyrequestrequesttypedef)
-  - [UpdateMedicalVocabularyResponseTypeDef](#updatemedicalvocabularyresponsetypedef)
-  - [UpdateVocabularyFilterRequestRequestTypeDef](#updatevocabularyfilterrequestrequesttypedef)
-  - [UpdateVocabularyFilterResponseTypeDef](#updatevocabularyfilterresponsetypedef)
-  - [UpdateVocabularyRequestRequestTypeDef](#updatevocabularyrequestrequesttypedef)
-  - [UpdateVocabularyResponseTypeDef](#updatevocabularyresponsetypedef)
-  - [VocabularyFilterInfoTypeDef](#vocabularyfilterinfotypedef)
-  - [VocabularyInfoTypeDef](#vocabularyinfotypedef)
-
-<a id="absolutetimerangetypedef"></a>
+    Auto-generated documentation for [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
+    type annotations stubs module [mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 ## AbsoluteTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import AbsoluteTimeRangeTypeDef
+
+def get_value() -> AbsoluteTimeRangeTypeDef:
+    return {
+        "StartTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartTime`: `int`
-- `EndTime`: `int`
-- `First`: `int`
-- `Last`: `int`
-
-<a id="callanalyticsjobsettingstypedef"></a>
+```python title="Definition"
+class AbsoluteTimeRangeTypeDef(TypedDict):
+    StartTime: NotRequired[int],
+    EndTime: NotRequired[int],
+    First: NotRequired[int],
+    Last: NotRequired[int],
+```
 
 ## CallAnalyticsJobSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CallAnalyticsJobSettingsTypeDef
+
+def get_value() -> CallAnalyticsJobSettingsTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CallAnalyticsJobSettingsTypeDef(TypedDict):
+    VocabularyName: NotRequired[str],
+    VocabularyFilterName: NotRequired[str],
+    VocabularyFilterMethod: NotRequired[VocabularyFilterMethodType],  # (1)
+    LanguageModelName: NotRequired[str],
+    ContentRedaction: NotRequired[ContentRedactionTypeDef],  # (2)
+    LanguageOptions: NotRequired[List[LanguageCodeType]],  # (3)
+    LanguageIdSettings: NotRequired[Dict[LanguageCodeType, LanguageIdSettingsTypeDef]],  # (4)
+```
 
-- `VocabularyName`: `str`
-- `VocabularyFilterName`: `str`
-- `VocabularyFilterMethod`:
-  [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
-- `LanguageModelName`: `str`
-- `ContentRedaction`:
-  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
-- `LanguageOptions`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `LanguageIdSettings`:
-  `Dict`\[[LanguageCodeType](./literals.md#languagecodetype),
-  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
-
-<a id="callanalyticsjobsummarytypedef"></a>
-
+1. See [:material-code-brackets: VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype) 
+2. See [:material-code-braces: ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef) 
+3. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+4. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) [:material-code-braces: LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef) 
 ## CallAnalyticsJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CallAnalyticsJobSummaryTypeDef
+
+def get_value() -> CallAnalyticsJobSummaryTypeDef:
+    return {
+        "CallAnalyticsJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CallAnalyticsJobSummaryTypeDef(TypedDict):
+    CallAnalyticsJobName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    StartTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    CallAnalyticsJobStatus: NotRequired[CallAnalyticsJobStatusType],  # (2)
+    FailureReason: NotRequired[str],
+```
 
-- `CallAnalyticsJobName`: `str`
-- `CreationTime`: `datetime`
-- `StartTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `CallAnalyticsJobStatus`:
-  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
-- `FailureReason`: `str`
-
-<a id="callanalyticsjobtypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype) 
 ## CallAnalyticsJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CallAnalyticsJobTypeDef
+
+def get_value() -> CallAnalyticsJobTypeDef:
+    return {
+        "CallAnalyticsJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CallAnalyticsJobTypeDef(TypedDict):
+    CallAnalyticsJobName: NotRequired[str],
+    CallAnalyticsJobStatus: NotRequired[CallAnalyticsJobStatusType],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    MediaSampleRateHertz: NotRequired[int],
+    MediaFormat: NotRequired[MediaFormatType],  # (3)
+    Media: NotRequired[MediaTypeDef],  # (4)
+    Transcript: NotRequired[TranscriptTypeDef],  # (5)
+    StartTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    FailureReason: NotRequired[str],
+    DataAccessRoleArn: NotRequired[str],
+    IdentifiedLanguageScore: NotRequired[float],
+    Settings: NotRequired[CallAnalyticsJobSettingsTypeDef],  # (6)
+    ChannelDefinitions: NotRequired[List[ChannelDefinitionTypeDef]],  # (7)
+```
 
-- `CallAnalyticsJobName`: `str`
-- `CallAnalyticsJobStatus`:
-  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-- `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
-- `StartTime`: `datetime`
-- `CreationTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `FailureReason`: `str`
-- `DataAccessRoleArn`: `str`
-- `IdentifiedLanguageScore`: `float`
-- `Settings`:
-  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
-- `ChannelDefinitions`:
-  `List`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
-
-<a id="categorypropertiestypedef"></a>
-
+1. See [:material-code-brackets: CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+4. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+5. See [:material-code-braces: TranscriptTypeDef](./type_defs.md#transcripttypedef) 
+6. See [:material-code-braces: CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef) 
+7. See [:material-code-braces: ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef) 
 ## CategoryPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CategoryPropertiesTypeDef
+
+def get_value() -> CategoryPropertiesTypeDef:
+    return {
+        "CategoryName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CategoryPropertiesTypeDef(TypedDict):
+    CategoryName: NotRequired[str],
+    Rules: NotRequired[List[RuleTypeDef]],  # (1)
+    CreateTime: NotRequired[datetime],
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `CategoryName`: `str`
-- `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-- `CreateTime`: `datetime`
-- `LastUpdateTime`: `datetime`
-
-<a id="channeldefinitiontypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## ChannelDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ChannelDefinitionTypeDef
+
+def get_value() -> ChannelDefinitionTypeDef:
+    return {
+        "ChannelId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelDefinitionTypeDef(TypedDict):
+    ChannelId: NotRequired[int],
+    ParticipantRole: NotRequired[ParticipantRoleType],  # (1)
+```
 
-- `ChannelId`: `int`
-- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
-
-<a id="contentredactiontypedef"></a>
-
+1. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
 ## ContentRedactionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ContentRedactionTypeDef
+
+def get_value() -> ContentRedactionTypeDef:
+    return {
+        "RedactionType": ...,
+        "RedactionOutput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContentRedactionTypeDef(TypedDict):
+    RedactionType: RedactionTypeType,  # (1)
+    RedactionOutput: RedactionOutputType,  # (2)
+    PiiEntityTypes: NotRequired[List[PiiEntityTypeType]],  # (3)
+```
 
-- `RedactionType`: `Literal['PII']` (see
-  [RedactionTypeType](./literals.md#redactiontypetype))
-- `RedactionOutput`: [RedactionOutputType](./literals.md#redactionoutputtype)
-
-Optional fields:
-
-- `PiiEntityTypes`:
-  `List`\[[PiiEntityTypeType](./literals.md#piientitytypetype)\]
-
-<a id="createcallanalyticscategoryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RedactionTypeType](./literals.md#redactiontypetype) 
+2. See [:material-code-brackets: RedactionOutputType](./literals.md#redactionoutputtype) 
+3. See [:material-code-brackets: PiiEntityTypeType](./literals.md#piientitytypetype) 
 ## CreateCallAnalyticsCategoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateCallAnalyticsCategoryRequestRequestTypeDef
+
+def get_value() -> CreateCallAnalyticsCategoryRequestRequestTypeDef:
+    return {
+        "CategoryName": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
+    CategoryName: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+```
 
-- `CategoryName`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-
-<a id="createcallanalyticscategoryresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## CreateCallAnalyticsCategoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateCallAnalyticsCategoryResponseTypeDef
+
+def get_value() -> CreateCallAnalyticsCategoryResponseTypeDef:
+    return {
+        "CategoryProperties": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCallAnalyticsCategoryResponseTypeDef(TypedDict):
+    CategoryProperties: CategoryPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CategoryProperties`:
-  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createlanguagemodelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateLanguageModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateLanguageModelRequestRequestTypeDef
+
+def get_value() -> CreateLanguageModelRequestRequestTypeDef:
+    return {
+        "LanguageCode": ...,
+        "BaseModelName": ...,
+        "ModelName": ...,
+        "InputDataConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLanguageModelRequestRequestTypeDef(TypedDict):
+    LanguageCode: CLMLanguageCodeType,  # (1)
+    BaseModelName: BaseModelNameType,  # (2)
+    ModelName: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (3)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
-- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
-- `ModelName`: `str`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createlanguagemodelresponsetypedef"></a>
-
+1. See [:material-code-brackets: CLMLanguageCodeType](./literals.md#clmlanguagecodetype) 
+2. See [:material-code-brackets: BaseModelNameType](./literals.md#basemodelnametype) 
+3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateLanguageModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateLanguageModelResponseTypeDef
+
+def get_value() -> CreateLanguageModelResponseTypeDef:
+    return {
+        "LanguageCode": ...,
+        "BaseModelName": ...,
+        "ModelName": ...,
+        "InputDataConfig": ...,
+        "ModelStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLanguageModelResponseTypeDef(TypedDict):
+    LanguageCode: CLMLanguageCodeType,  # (1)
+    BaseModelName: BaseModelNameType,  # (2)
+    ModelName: str,
+    InputDataConfig: InputDataConfigTypeDef,  # (3)
+    ModelStatus: ModelStatusType,  # (4)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
-- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
-- `ModelName`: `str`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-- `ModelStatus`: [ModelStatusType](./literals.md#modelstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmedicalvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CLMLanguageCodeType](./literals.md#clmlanguagecodetype) 
+2. See [:material-code-brackets: BaseModelNameType](./literals.md#basemodelnametype) 
+3. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
+4. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMedicalVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyRequestRequestTypeDef
+
+def get_value() -> CreateMedicalVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "VocabularyFileUri": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMedicalVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyFileUri: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `VocabularyFileUri`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createmedicalvocabularyresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateMedicalVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateMedicalVocabularyResponseTypeDef
+
+def get_value() -> CreateMedicalVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "VocabularyState": ...,
+        "LastModifiedTime": ...,
+        "FailureReason": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMedicalVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyState: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-- `FailureReason`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvocabularyfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVocabularyFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterRequestRequestTypeDef
+
+def get_value() -> CreateVocabularyFilterRequestRequestTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+        "LanguageCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyFilterRequestRequestTypeDef(TypedDict):
+    VocabularyFilterName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Words: NotRequired[Sequence[str]],
+    VocabularyFilterFileUri: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-
-Optional fields:
-
-- `Words`: `Sequence`\[`str`\]
-- `VocabularyFilterFileUri`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createvocabularyfilterresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVocabularyFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateVocabularyFilterResponseTypeDef
+
+def get_value() -> CreateVocabularyFilterResponseTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+        "LanguageCode": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyFilterResponseTypeDef(TypedDict):
+    VocabularyFilterName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateVocabularyRequestRequestTypeDef
+
+def get_value() -> CreateVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Phrases: NotRequired[Sequence[str]],
+    VocabularyFileUri: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-
-Optional fields:
-
-- `Phrases`: `Sequence`\[`str`\]
-- `VocabularyFileUri`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createvocabularyresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import CreateVocabularyResponseTypeDef
+
+def get_value() -> CreateVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "VocabularyState": ...,
+        "LastModifiedTime": ...,
+        "FailureReason": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyState: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-- `FailureReason`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecallanalyticscategoryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCallAnalyticsCategoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteCallAnalyticsCategoryRequestRequestTypeDef
+
+def get_value() -> DeleteCallAnalyticsCategoryRequestRequestTypeDef:
+    return {
+        "CategoryName": ...,
+    }
 ```
 
-Required fields:
-
-- `CategoryName`: `str`
-
-<a id="deletecallanalyticsjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
+    CategoryName: str,
+```
 
 ## DeleteCallAnalyticsJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteCallAnalyticsJobRequestRequestTypeDef
+
+def get_value() -> DeleteCallAnalyticsJobRequestRequestTypeDef:
+    return {
+        "CallAnalyticsJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `CallAnalyticsJobName`: `str`
-
-<a id="deletelanguagemodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCallAnalyticsJobRequestRequestTypeDef(TypedDict):
+    CallAnalyticsJobName: str,
+```
 
 ## DeleteLanguageModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteLanguageModelRequestRequestTypeDef
+
+def get_value() -> DeleteLanguageModelRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ModelName`: `str`
-
-<a id="deletemedicaltranscriptionjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLanguageModelRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+```
 
 ## DeleteMedicalTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteMedicalTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> DeleteMedicalTranscriptionJobRequestRequestTypeDef:
+    return {
+        "MedicalTranscriptionJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `MedicalTranscriptionJobName`: `str`
-
-<a id="deletemedicalvocabularyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteMedicalTranscriptionJobRequestRequestTypeDef(TypedDict):
+    MedicalTranscriptionJobName: str,
+```
 
 ## DeleteMedicalVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteMedicalVocabularyRequestRequestTypeDef
+
+def get_value() -> DeleteMedicalVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyName`: `str`
-
-<a id="deletetranscriptionjobrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteMedicalVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+```
 
 ## DeleteTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> DeleteTranscriptionJobRequestRequestTypeDef:
+    return {
+        "TranscriptionJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `TranscriptionJobName`: `str`
-
-<a id="deletevocabularyfilterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTranscriptionJobRequestRequestTypeDef(TypedDict):
+    TranscriptionJobName: str,
+```
 
 ## DeleteVocabularyFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteVocabularyFilterRequestRequestTypeDef
+
+def get_value() -> DeleteVocabularyFilterRequestRequestTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyFilterName`: `str`
-
-<a id="deletevocabularyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteVocabularyFilterRequestRequestTypeDef(TypedDict):
+    VocabularyFilterName: str,
+```
 
 ## DeleteVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DeleteVocabularyRequestRequestTypeDef
+
+def get_value() -> DeleteVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyName`: `str`
-
-<a id="describelanguagemodelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+```
 
 ## DescribeLanguageModelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DescribeLanguageModelRequestRequestTypeDef
+
+def get_value() -> DescribeLanguageModelRequestRequestTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ModelName`: `str`
-
-<a id="describelanguagemodelresponsetypedef"></a>
+```python title="Definition"
+class DescribeLanguageModelRequestRequestTypeDef(TypedDict):
+    ModelName: str,
+```
 
 ## DescribeLanguageModelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import DescribeLanguageModelResponseTypeDef
+
+def get_value() -> DescribeLanguageModelResponseTypeDef:
+    return {
+        "LanguageModel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLanguageModelResponseTypeDef(TypedDict):
+    LanguageModel: LanguageModelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LanguageModel`: [LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcallanalyticscategoryrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LanguageModelTypeDef](./type_defs.md#languagemodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCallAnalyticsCategoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetCallAnalyticsCategoryRequestRequestTypeDef
+
+def get_value() -> GetCallAnalyticsCategoryRequestRequestTypeDef:
+    return {
+        "CategoryName": ...,
+    }
 ```
 
-Required fields:
-
-- `CategoryName`: `str`
-
-<a id="getcallanalyticscategoryresponsetypedef"></a>
+```python title="Definition"
+class GetCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
+    CategoryName: str,
+```
 
 ## GetCallAnalyticsCategoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetCallAnalyticsCategoryResponseTypeDef
+
+def get_value() -> GetCallAnalyticsCategoryResponseTypeDef:
+    return {
+        "CategoryProperties": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCallAnalyticsCategoryResponseTypeDef(TypedDict):
+    CategoryProperties: CategoryPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CategoryProperties`:
-  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcallanalyticsjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCallAnalyticsJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetCallAnalyticsJobRequestRequestTypeDef
+
+def get_value() -> GetCallAnalyticsJobRequestRequestTypeDef:
+    return {
+        "CallAnalyticsJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `CallAnalyticsJobName`: `str`
-
-<a id="getcallanalyticsjobresponsetypedef"></a>
+```python title="Definition"
+class GetCallAnalyticsJobRequestRequestTypeDef(TypedDict):
+    CallAnalyticsJobName: str,
+```
 
 ## GetCallAnalyticsJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetCallAnalyticsJobResponseTypeDef
+
+def get_value() -> GetCallAnalyticsJobResponseTypeDef:
+    return {
+        "CallAnalyticsJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCallAnalyticsJobResponseTypeDef(TypedDict):
+    CallAnalyticsJob: CallAnalyticsJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CallAnalyticsJob`:
-  [CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmedicaltranscriptionjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMedicalTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetMedicalTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> GetMedicalTranscriptionJobRequestRequestTypeDef:
+    return {
+        "MedicalTranscriptionJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `MedicalTranscriptionJobName`: `str`
-
-<a id="getmedicaltranscriptionjobresponsetypedef"></a>
+```python title="Definition"
+class GetMedicalTranscriptionJobRequestRequestTypeDef(TypedDict):
+    MedicalTranscriptionJobName: str,
+```
 
 ## GetMedicalTranscriptionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetMedicalTranscriptionJobResponseTypeDef
+
+def get_value() -> GetMedicalTranscriptionJobResponseTypeDef:
+    return {
+        "MedicalTranscriptionJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMedicalTranscriptionJobResponseTypeDef(TypedDict):
+    MedicalTranscriptionJob: MedicalTranscriptionJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MedicalTranscriptionJob`:
-  [MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmedicalvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMedicalVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyRequestRequestTypeDef
+
+def get_value() -> GetMedicalVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyName`: `str`
-
-<a id="getmedicalvocabularyresponsetypedef"></a>
+```python title="Definition"
+class GetMedicalVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+```
 
 ## GetMedicalVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetMedicalVocabularyResponseTypeDef
+
+def get_value() -> GetMedicalVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "VocabularyState": ...,
+        "LastModifiedTime": ...,
+        "FailureReason": ...,
+        "DownloadUri": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMedicalVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyState: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: str,
+    DownloadUri: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-- `FailureReason`: `str`
-- `DownloadUri`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettranscriptionjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> GetTranscriptionJobRequestRequestTypeDef:
+    return {
+        "TranscriptionJobName": ...,
+    }
 ```
 
-Required fields:
-
-- `TranscriptionJobName`: `str`
-
-<a id="gettranscriptionjobresponsetypedef"></a>
+```python title="Definition"
+class GetTranscriptionJobRequestRequestTypeDef(TypedDict):
+    TranscriptionJobName: str,
+```
 
 ## GetTranscriptionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetTranscriptionJobResponseTypeDef
+
+def get_value() -> GetTranscriptionJobResponseTypeDef:
+    return {
+        "TranscriptionJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTranscriptionJobResponseTypeDef(TypedDict):
+    TranscriptionJob: TranscriptionJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TranscriptionJob`:
-  [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvocabularyfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVocabularyFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetVocabularyFilterRequestRequestTypeDef
+
+def get_value() -> GetVocabularyFilterRequestRequestTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyFilterName`: `str`
-
-<a id="getvocabularyfilterresponsetypedef"></a>
+```python title="Definition"
+class GetVocabularyFilterRequestRequestTypeDef(TypedDict):
+    VocabularyFilterName: str,
+```
 
 ## GetVocabularyFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetVocabularyFilterResponseTypeDef
+
+def get_value() -> GetVocabularyFilterResponseTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+        "LanguageCode": ...,
+        "LastModifiedTime": ...,
+        "DownloadUri": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVocabularyFilterResponseTypeDef(TypedDict):
+    VocabularyFilterName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    LastModifiedTime: datetime,
+    DownloadUri: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `DownloadUri`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetVocabularyRequestRequestTypeDef
+
+def get_value() -> GetVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyName`: `str`
-
-<a id="getvocabularyresponsetypedef"></a>
+```python title="Definition"
+class GetVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+```
 
 ## GetVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import GetVocabularyResponseTypeDef
+
+def get_value() -> GetVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "VocabularyState": ...,
+        "LastModifiedTime": ...,
+        "FailureReason": ...,
+        "DownloadUri": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyState: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: str,
+    DownloadUri: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-- `FailureReason`: `str`
-- `DownloadUri`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="inputdataconfigtypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## InputDataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import InputDataConfigTypeDef
+
+def get_value() -> InputDataConfigTypeDef:
+    return {
+        "S3Uri": ...,
+        "DataAccessRoleArn": ...,
+    }
 ```
 
-Required fields:
-
-- `S3Uri`: `str`
-- `DataAccessRoleArn`: `str`
-
-Optional fields:
-
-- `TuningDataS3Uri`: `str`
-
-<a id="interruptionfiltertypedef"></a>
+```python title="Definition"
+class InputDataConfigTypeDef(TypedDict):
+    S3Uri: str,
+    DataAccessRoleArn: str,
+    TuningDataS3Uri: NotRequired[str],
+```
 
 ## InterruptionFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import InterruptionFilterTypeDef
+
+def get_value() -> InterruptionFilterTypeDef:
+    return {
+        "Threshold": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InterruptionFilterTypeDef(TypedDict):
+    Threshold: NotRequired[int],
+    ParticipantRole: NotRequired[ParticipantRoleType],  # (1)
+    AbsoluteTimeRange: NotRequired[AbsoluteTimeRangeTypeDef],  # (2)
+    RelativeTimeRange: NotRequired[RelativeTimeRangeTypeDef],  # (3)
+    Negate: NotRequired[bool],
+```
 
-- `Threshold`: `int`
-- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
-- `AbsoluteTimeRange`:
-  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
-- `RelativeTimeRange`:
-  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
-- `Negate`: `bool`
-
-<a id="jobexecutionsettingstypedef"></a>
-
+1. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
+2. See [:material-code-braces: AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef) 
+3. See [:material-code-braces: RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef) 
 ## JobExecutionSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import JobExecutionSettingsTypeDef
+
+def get_value() -> JobExecutionSettingsTypeDef:
+    return {
+        "AllowDeferredExecution": ...,
+    }
 ```
 
-Optional fields:
-
-- `AllowDeferredExecution`: `bool`
-- `DataAccessRoleArn`: `str`
-
-<a id="languageidsettingstypedef"></a>
+```python title="Definition"
+class JobExecutionSettingsTypeDef(TypedDict):
+    AllowDeferredExecution: NotRequired[bool],
+    DataAccessRoleArn: NotRequired[str],
+```
 
 ## LanguageIdSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import LanguageIdSettingsTypeDef
+
+def get_value() -> LanguageIdSettingsTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Optional fields:
-
-- `VocabularyName`: `str`
-- `VocabularyFilterName`: `str`
-- `LanguageModelName`: `str`
-
-<a id="languagemodeltypedef"></a>
+```python title="Definition"
+class LanguageIdSettingsTypeDef(TypedDict):
+    VocabularyName: NotRequired[str],
+    VocabularyFilterName: NotRequired[str],
+    LanguageModelName: NotRequired[str],
+```
 
 ## LanguageModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import LanguageModelTypeDef
+
+def get_value() -> LanguageModelTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LanguageModelTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    CreateTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    LanguageCode: NotRequired[CLMLanguageCodeType],  # (1)
+    BaseModelName: NotRequired[BaseModelNameType],  # (2)
+    ModelStatus: NotRequired[ModelStatusType],  # (3)
+    UpgradeAvailability: NotRequired[bool],
+    FailureReason: NotRequired[str],
+    InputDataConfig: NotRequired[InputDataConfigTypeDef],  # (4)
+```
 
-- `ModelName`: `str`
-- `CreateTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `LanguageCode`: [CLMLanguageCodeType](./literals.md#clmlanguagecodetype)
-- `BaseModelName`: [BaseModelNameType](./literals.md#basemodelnametype)
-- `ModelStatus`: [ModelStatusType](./literals.md#modelstatustype)
-- `UpgradeAvailability`: `bool`
-- `FailureReason`: `str`
-- `InputDataConfig`:
-  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
-
-<a id="listcallanalyticscategoriesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CLMLanguageCodeType](./literals.md#clmlanguagecodetype) 
+2. See [:material-code-brackets: BaseModelNameType](./literals.md#basemodelnametype) 
+3. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
+4. See [:material-code-braces: InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) 
 ## ListCallAnalyticsCategoriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListCallAnalyticsCategoriesRequestRequestTypeDef
+
+def get_value() -> ListCallAnalyticsCategoriesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcallanalyticscategoriesresponsetypedef"></a>
+```python title="Definition"
+class ListCallAnalyticsCategoriesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListCallAnalyticsCategoriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListCallAnalyticsCategoriesResponseTypeDef
+
+def get_value() -> ListCallAnalyticsCategoriesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Categories": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCallAnalyticsCategoriesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Categories: List[CategoryPropertiesTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Categories`:
-  `List`\[[CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcallanalyticsjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListCallAnalyticsJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListCallAnalyticsJobsRequestRequestTypeDef
+
+def get_value() -> ListCallAnalyticsJobsRequestRequestTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListCallAnalyticsJobsRequestRequestTypeDef(TypedDict):
+    Status: NotRequired[CallAnalyticsJobStatusType],  # (1)
+    JobNameContains: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Status`:
-  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcallanalyticsjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype) 
 ## ListCallAnalyticsJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListCallAnalyticsJobsResponseTypeDef
+
+def get_value() -> ListCallAnalyticsJobsResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "CallAnalyticsJobSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCallAnalyticsJobsResponseTypeDef(TypedDict):
+    Status: CallAnalyticsJobStatusType,  # (1)
+    NextToken: str,
+    CallAnalyticsJobSummaries: List[CallAnalyticsJobSummaryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype)
-- `NextToken`: `str`
-- `CallAnalyticsJobSummaries`:
-  `List`\[[CallAnalyticsJobSummaryTypeDef](./type_defs.md#callanalyticsjobsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listlanguagemodelsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CallAnalyticsJobStatusType](./literals.md#callanalyticsjobstatustype) 
+2. See [:material-code-braces: CallAnalyticsJobSummaryTypeDef](./type_defs.md#callanalyticsjobsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListLanguageModelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListLanguageModelsRequestRequestTypeDef
+
+def get_value() -> ListLanguageModelsRequestRequestTypeDef:
+    return {
+        "StatusEquals": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListLanguageModelsRequestRequestTypeDef(TypedDict):
+    StatusEquals: NotRequired[ModelStatusType],  # (1)
+    NameContains: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `StatusEquals`: [ModelStatusType](./literals.md#modelstatustype)
-- `NameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlanguagemodelsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ModelStatusType](./literals.md#modelstatustype) 
 ## ListLanguageModelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListLanguageModelsResponseTypeDef
+
+def get_value() -> ListLanguageModelsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Models": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLanguageModelsResponseTypeDef(TypedDict):
+    NextToken: str,
+    Models: List[LanguageModelTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Models`:
-  `List`\[[LanguageModelTypeDef](./type_defs.md#languagemodeltypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmedicaltranscriptionjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LanguageModelTypeDef](./type_defs.md#languagemodeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMedicalTranscriptionJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsRequestRequestTypeDef
+
+def get_value() -> ListMedicalTranscriptionJobsRequestRequestTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListMedicalTranscriptionJobsRequestRequestTypeDef(TypedDict):
+    Status: NotRequired[TranscriptionJobStatusType],  # (1)
+    JobNameContains: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listmedicaltranscriptionjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
 ## ListMedicalTranscriptionJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListMedicalTranscriptionJobsResponseTypeDef
+
+def get_value() -> ListMedicalTranscriptionJobsResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "MedicalTranscriptionJobSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMedicalTranscriptionJobsResponseTypeDef(TypedDict):
+    Status: TranscriptionJobStatusType,  # (1)
+    NextToken: str,
+    MedicalTranscriptionJobSummaries: List[MedicalTranscriptionJobSummaryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `NextToken`: `str`
-- `MedicalTranscriptionJobSummaries`:
-  `List`\[[MedicalTranscriptionJobSummaryTypeDef](./type_defs.md#medicaltranscriptionjobsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listmedicalvocabulariesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-braces: MedicalTranscriptionJobSummaryTypeDef](./type_defs.md#medicaltranscriptionjobsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListMedicalVocabulariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesRequestRequestTypeDef
+
+def get_value() -> ListMedicalVocabulariesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListMedicalVocabulariesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    StateEquals: NotRequired[VocabularyStateType],  # (1)
+    NameContains: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameContains`: `str`
-
-<a id="listmedicalvocabulariesresponsetypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
 ## ListMedicalVocabulariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListMedicalVocabulariesResponseTypeDef
+
+def get_value() -> ListMedicalVocabulariesResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "Vocabularies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMedicalVocabulariesResponseTypeDef(TypedDict):
+    Status: VocabularyStateType,  # (1)
+    NextToken: str,
+    Vocabularies: List[VocabularyInfoTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NextToken`: `str`
-- `Vocabularies`:
-  `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtranscriptionjobsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTranscriptionJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsRequestRequestTypeDef
+
+def get_value() -> ListTranscriptionJobsRequestRequestTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTranscriptionJobsRequestRequestTypeDef(TypedDict):
+    Status: NotRequired[TranscriptionJobStatusType],  # (1)
+    JobNameContains: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `JobNameContains`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listtranscriptionjobsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
 ## ListTranscriptionJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListTranscriptionJobsResponseTypeDef
+
+def get_value() -> ListTranscriptionJobsResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "TranscriptionJobSummaries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTranscriptionJobsResponseTypeDef(TypedDict):
+    Status: TranscriptionJobStatusType,  # (1)
+    NextToken: str,
+    TranscriptionJobSummaries: List[TranscriptionJobSummaryTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `NextToken`: `str`
-- `TranscriptionJobSummaries`:
-  `List`\[[TranscriptionJobSummaryTypeDef](./type_defs.md#transcriptionjobsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvocabulariesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-braces: TranscriptionJobSummaryTypeDef](./type_defs.md#transcriptionjobsummarytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVocabulariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListVocabulariesRequestRequestTypeDef
+
+def get_value() -> ListVocabulariesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListVocabulariesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    StateEquals: NotRequired[VocabularyStateType],  # (1)
+    NameContains: NotRequired[str],
+```
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StateEquals`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameContains`: `str`
-
-<a id="listvocabulariesresponsetypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
 ## ListVocabulariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListVocabulariesResponseTypeDef
+
+def get_value() -> ListVocabulariesResponseTypeDef:
+    return {
+        "Status": ...,
+        "NextToken": ...,
+        "Vocabularies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVocabulariesResponseTypeDef(TypedDict):
+    Status: VocabularyStateType,  # (1)
+    NextToken: str,
+    Vocabularies: List[VocabularyInfoTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NextToken`: `str`
-- `Vocabularies`:
-  `List`\[[VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvocabularyfiltersrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: VocabularyInfoTypeDef](./type_defs.md#vocabularyinfotypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVocabularyFiltersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListVocabularyFiltersRequestRequestTypeDef
+
+def get_value() -> ListVocabularyFiltersRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `NameContains`: `str`
-
-<a id="listvocabularyfiltersresponsetypedef"></a>
+```python title="Definition"
+class ListVocabularyFiltersRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NameContains: NotRequired[str],
+```
 
 ## ListVocabularyFiltersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ListVocabularyFiltersResponseTypeDef
+
+def get_value() -> ListVocabularyFiltersResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "VocabularyFilters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVocabularyFiltersResponseTypeDef(TypedDict):
+    NextToken: str,
+    VocabularyFilters: List[VocabularyFilterInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `VocabularyFilters`:
-  `List`\[[VocabularyFilterInfoTypeDef](./type_defs.md#vocabularyfilterinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mediatypedef"></a>
-
+1. See [:material-code-braces: VocabularyFilterInfoTypeDef](./type_defs.md#vocabularyfilterinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MediaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import MediaTypeDef
+
+def get_value() -> MediaTypeDef:
+    return {
+        "MediaFileUri": ...,
+    }
 ```
 
-Optional fields:
-
-- `MediaFileUri`: `str`
-- `RedactedMediaFileUri`: `str`
-
-<a id="medicaltranscripttypedef"></a>
+```python title="Definition"
+class MediaTypeDef(TypedDict):
+    MediaFileUri: NotRequired[str],
+    RedactedMediaFileUri: NotRequired[str],
+```
 
 ## MedicalTranscriptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import MedicalTranscriptTypeDef
+
+def get_value() -> MedicalTranscriptTypeDef:
+    return {
+        "TranscriptFileUri": ...,
+    }
 ```
 
-Optional fields:
-
-- `TranscriptFileUri`: `str`
-
-<a id="medicaltranscriptionjobsummarytypedef"></a>
+```python title="Definition"
+class MedicalTranscriptTypeDef(TypedDict):
+    TranscriptFileUri: NotRequired[str],
+```
 
 ## MedicalTranscriptionJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import MedicalTranscriptionJobSummaryTypeDef
+
+def get_value() -> MedicalTranscriptionJobSummaryTypeDef:
+    return {
+        "MedicalTranscriptionJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MedicalTranscriptionJobSummaryTypeDef(TypedDict):
+    MedicalTranscriptionJobName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    StartTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    TranscriptionJobStatus: NotRequired[TranscriptionJobStatusType],  # (2)
+    FailureReason: NotRequired[str],
+    OutputLocationType: NotRequired[OutputLocationTypeType],  # (3)
+    Specialty: NotRequired[SpecialtyType],  # (4)
+    ContentIdentificationType: NotRequired[MedicalContentIdentificationTypeType],  # (5)
+    Type: NotRequired[TypeType],  # (6)
+```
 
-- `MedicalTranscriptionJobName`: `str`
-- `CreationTime`: `datetime`
-- `StartTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `TranscriptionJobStatus`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `FailureReason`: `str`
-- `OutputLocationType`:
-  [OutputLocationTypeType](./literals.md#outputlocationtypetype)
-- `Specialty`: `Literal['PRIMARYCARE']` (see
-  [SpecialtyType](./literals.md#specialtytype))
-- `ContentIdentificationType`: `Literal['PHI']` (see
-  [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="medicaltranscriptionjobtypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+3. See [:material-code-brackets: OutputLocationTypeType](./literals.md#outputlocationtypetype) 
+4. See [:material-code-brackets: SpecialtyType](./literals.md#specialtytype) 
+5. See [:material-code-brackets: MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype) 
+6. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## MedicalTranscriptionJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import MedicalTranscriptionJobTypeDef
+
+def get_value() -> MedicalTranscriptionJobTypeDef:
+    return {
+        "MedicalTranscriptionJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MedicalTranscriptionJobTypeDef(TypedDict):
+    MedicalTranscriptionJobName: NotRequired[str],
+    TranscriptionJobStatus: NotRequired[TranscriptionJobStatusType],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    MediaSampleRateHertz: NotRequired[int],
+    MediaFormat: NotRequired[MediaFormatType],  # (3)
+    Media: NotRequired[MediaTypeDef],  # (4)
+    Transcript: NotRequired[MedicalTranscriptTypeDef],  # (5)
+    StartTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    FailureReason: NotRequired[str],
+    Settings: NotRequired[MedicalTranscriptionSettingTypeDef],  # (6)
+    ContentIdentificationType: NotRequired[MedicalContentIdentificationTypeType],  # (7)
+    Specialty: NotRequired[SpecialtyType],  # (8)
+    Type: NotRequired[TypeType],  # (9)
+    Tags: NotRequired[List[TagTypeDef]],  # (10)
+```
 
-- `MedicalTranscriptionJobName`: `str`
-- `TranscriptionJobStatus`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-- `Transcript`:
-  [MedicalTranscriptTypeDef](./type_defs.md#medicaltranscripttypedef)
-- `StartTime`: `datetime`
-- `CreationTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `FailureReason`: `str`
-- `Settings`:
-  [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
-- `ContentIdentificationType`: `Literal['PHI']` (see
-  [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Specialty`: `Literal['PRIMARYCARE']` (see
-  [SpecialtyType](./literals.md#specialtytype))
-- `Type`: [TypeType](./literals.md#typetype)
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="medicaltranscriptionsettingtypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+4. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+5. See [:material-code-braces: MedicalTranscriptTypeDef](./type_defs.md#medicaltranscripttypedef) 
+6. See [:material-code-braces: MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef) 
+7. See [:material-code-brackets: MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype) 
+8. See [:material-code-brackets: SpecialtyType](./literals.md#specialtytype) 
+9. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## MedicalTranscriptionSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import MedicalTranscriptionSettingTypeDef
+
+def get_value() -> MedicalTranscriptionSettingTypeDef:
+    return {
+        "ShowSpeakerLabels": ...,
+    }
 ```
 
-Optional fields:
-
-- `ShowSpeakerLabels`: `bool`
-- `MaxSpeakerLabels`: `int`
-- `ChannelIdentification`: `bool`
-- `ShowAlternatives`: `bool`
-- `MaxAlternatives`: `int`
-- `VocabularyName`: `str`
-
-<a id="modelsettingstypedef"></a>
+```python title="Definition"
+class MedicalTranscriptionSettingTypeDef(TypedDict):
+    ShowSpeakerLabels: NotRequired[bool],
+    MaxSpeakerLabels: NotRequired[int],
+    ChannelIdentification: NotRequired[bool],
+    ShowAlternatives: NotRequired[bool],
+    MaxAlternatives: NotRequired[int],
+    VocabularyName: NotRequired[str],
+```
 
 ## ModelSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ModelSettingsTypeDef
+
+def get_value() -> ModelSettingsTypeDef:
+    return {
+        "LanguageModelName": ...,
+    }
 ```
 
-Optional fields:
-
-- `LanguageModelName`: `str`
-
-<a id="nontalktimefiltertypedef"></a>
+```python title="Definition"
+class ModelSettingsTypeDef(TypedDict):
+    LanguageModelName: NotRequired[str],
+```
 
 ## NonTalkTimeFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import NonTalkTimeFilterTypeDef
+
+def get_value() -> NonTalkTimeFilterTypeDef:
+    return {
+        "Threshold": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NonTalkTimeFilterTypeDef(TypedDict):
+    Threshold: NotRequired[int],
+    AbsoluteTimeRange: NotRequired[AbsoluteTimeRangeTypeDef],  # (1)
+    RelativeTimeRange: NotRequired[RelativeTimeRangeTypeDef],  # (2)
+    Negate: NotRequired[bool],
+```
 
-- `Threshold`: `int`
-- `AbsoluteTimeRange`:
-  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
-- `RelativeTimeRange`:
-  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
-- `Negate`: `bool`
-
-<a id="relativetimerangetypedef"></a>
-
+1. See [:material-code-braces: AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef) 
+2. See [:material-code-braces: RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef) 
 ## RelativeTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import RelativeTimeRangeTypeDef
+
+def get_value() -> RelativeTimeRangeTypeDef:
+    return {
+        "StartPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `StartPercentage`: `int`
-- `EndPercentage`: `int`
-- `First`: `int`
-- `Last`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RelativeTimeRangeTypeDef(TypedDict):
+    StartPercentage: NotRequired[int],
+    EndPercentage: NotRequired[int],
+    First: NotRequired[int],
+    Last: NotRequired[int],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="ruletypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import RuleTypeDef
+
+def get_value() -> RuleTypeDef:
+    return {
+        "NonTalkTimeFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuleTypeDef(TypedDict):
+    NonTalkTimeFilter: NotRequired[NonTalkTimeFilterTypeDef],  # (1)
+    InterruptionFilter: NotRequired[InterruptionFilterTypeDef],  # (2)
+    TranscriptFilter: NotRequired[TranscriptFilterTypeDef],  # (3)
+    SentimentFilter: NotRequired[SentimentFilterTypeDef],  # (4)
+```
 
-- `NonTalkTimeFilter`:
-  [NonTalkTimeFilterTypeDef](./type_defs.md#nontalktimefiltertypedef)
-- `InterruptionFilter`:
-  [InterruptionFilterTypeDef](./type_defs.md#interruptionfiltertypedef)
-- `TranscriptFilter`:
-  [TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef)
-- `SentimentFilter`:
-  [SentimentFilterTypeDef](./type_defs.md#sentimentfiltertypedef)
-
-<a id="sentimentfiltertypedef"></a>
-
+1. See [:material-code-braces: NonTalkTimeFilterTypeDef](./type_defs.md#nontalktimefiltertypedef) 
+2. See [:material-code-braces: InterruptionFilterTypeDef](./type_defs.md#interruptionfiltertypedef) 
+3. See [:material-code-braces: TranscriptFilterTypeDef](./type_defs.md#transcriptfiltertypedef) 
+4. See [:material-code-braces: SentimentFilterTypeDef](./type_defs.md#sentimentfiltertypedef) 
 ## SentimentFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import SentimentFilterTypeDef
+
+def get_value() -> SentimentFilterTypeDef:
+    return {
+        "Sentiments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SentimentFilterTypeDef(TypedDict):
+    Sentiments: Sequence[SentimentValueType],  # (1)
+    AbsoluteTimeRange: NotRequired[AbsoluteTimeRangeTypeDef],  # (2)
+    RelativeTimeRange: NotRequired[RelativeTimeRangeTypeDef],  # (3)
+    ParticipantRole: NotRequired[ParticipantRoleType],  # (4)
+    Negate: NotRequired[bool],
+```
 
-- `Sentiments`:
-  `Sequence`\[[SentimentValueType](./literals.md#sentimentvaluetype)\]
-
-Optional fields:
-
-- `AbsoluteTimeRange`:
-  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
-- `RelativeTimeRange`:
-  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
-- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
-- `Negate`: `bool`
-
-<a id="settingstypedef"></a>
-
+1. See [:material-code-brackets: SentimentValueType](./literals.md#sentimentvaluetype) 
+2. See [:material-code-braces: AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef) 
+3. See [:material-code-braces: RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef) 
+4. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
 ## SettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import SettingsTypeDef
+
+def get_value() -> SettingsTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SettingsTypeDef(TypedDict):
+    VocabularyName: NotRequired[str],
+    ShowSpeakerLabels: NotRequired[bool],
+    MaxSpeakerLabels: NotRequired[int],
+    ChannelIdentification: NotRequired[bool],
+    ShowAlternatives: NotRequired[bool],
+    MaxAlternatives: NotRequired[int],
+    VocabularyFilterName: NotRequired[str],
+    VocabularyFilterMethod: NotRequired[VocabularyFilterMethodType],  # (1)
+```
 
-- `VocabularyName`: `str`
-- `ShowSpeakerLabels`: `bool`
-- `MaxSpeakerLabels`: `int`
-- `ChannelIdentification`: `bool`
-- `ShowAlternatives`: `bool`
-- `MaxAlternatives`: `int`
-- `VocabularyFilterName`: `str`
-- `VocabularyFilterMethod`:
-  [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
-
-<a id="startcallanalyticsjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype) 
 ## StartCallAnalyticsJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartCallAnalyticsJobRequestRequestTypeDef
+
+def get_value() -> StartCallAnalyticsJobRequestRequestTypeDef:
+    return {
+        "CallAnalyticsJobName": ...,
+        "Media": ...,
+        "DataAccessRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCallAnalyticsJobRequestRequestTypeDef(TypedDict):
+    CallAnalyticsJobName: str,
+    Media: MediaTypeDef,  # (1)
+    DataAccessRoleArn: str,
+    OutputLocation: NotRequired[str],
+    OutputEncryptionKMSKeyId: NotRequired[str],
+    Settings: NotRequired[CallAnalyticsJobSettingsTypeDef],  # (2)
+    ChannelDefinitions: NotRequired[Sequence[ChannelDefinitionTypeDef]],  # (3)
+```
 
-- `CallAnalyticsJobName`: `str`
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-- `DataAccessRoleArn`: `str`
-
-Optional fields:
-
-- `OutputLocation`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `Settings`:
-  [CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef)
-- `ChannelDefinitions`:
-  `Sequence`\[[ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef)\]
-
-<a id="startcallanalyticsjobresponsetypedef"></a>
-
+1. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+2. See [:material-code-braces: CallAnalyticsJobSettingsTypeDef](./type_defs.md#callanalyticsjobsettingstypedef) 
+3. See [:material-code-braces: ChannelDefinitionTypeDef](./type_defs.md#channeldefinitiontypedef) 
 ## StartCallAnalyticsJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartCallAnalyticsJobResponseTypeDef
+
+def get_value() -> StartCallAnalyticsJobResponseTypeDef:
+    return {
+        "CallAnalyticsJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartCallAnalyticsJobResponseTypeDef(TypedDict):
+    CallAnalyticsJob: CallAnalyticsJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CallAnalyticsJob`:
-  [CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startmedicaltranscriptionjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CallAnalyticsJobTypeDef](./type_defs.md#callanalyticsjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartMedicalTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartMedicalTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> StartMedicalTranscriptionJobRequestRequestTypeDef:
+    return {
+        "MedicalTranscriptionJobName": ...,
+        "LanguageCode": ...,
+        "Media": ...,
+        "OutputBucketName": ...,
+        "Specialty": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMedicalTranscriptionJobRequestRequestTypeDef(TypedDict):
+    MedicalTranscriptionJobName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Media: MediaTypeDef,  # (2)
+    OutputBucketName: str,
+    Specialty: SpecialtyType,  # (3)
+    Type: TypeType,  # (4)
+    MediaSampleRateHertz: NotRequired[int],
+    MediaFormat: NotRequired[MediaFormatType],  # (5)
+    OutputKey: NotRequired[str],
+    OutputEncryptionKMSKeyId: NotRequired[str],
+    KMSEncryptionContext: NotRequired[Mapping[str, str]],
+    Settings: NotRequired[MedicalTranscriptionSettingTypeDef],  # (6)
+    ContentIdentificationType: NotRequired[MedicalContentIdentificationTypeType],  # (7)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+```
 
-- `MedicalTranscriptionJobName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-- `OutputBucketName`: `str`
-- `Specialty`: `Literal['PRIMARYCARE']` (see
-  [SpecialtyType](./literals.md#specialtytype))
-- `Type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `OutputKey`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `Settings`:
-  [MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef)
-- `ContentIdentificationType`: `Literal['PHI']` (see
-  [MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype))
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="startmedicaltranscriptionjobresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+3. See [:material-code-brackets: SpecialtyType](./literals.md#specialtytype) 
+4. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+5. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+6. See [:material-code-braces: MedicalTranscriptionSettingTypeDef](./type_defs.md#medicaltranscriptionsettingtypedef) 
+7. See [:material-code-brackets: MedicalContentIdentificationTypeType](./literals.md#medicalcontentidentificationtypetype) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartMedicalTranscriptionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartMedicalTranscriptionJobResponseTypeDef
+
+def get_value() -> StartMedicalTranscriptionJobResponseTypeDef:
+    return {
+        "MedicalTranscriptionJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartMedicalTranscriptionJobResponseTypeDef(TypedDict):
+    MedicalTranscriptionJob: MedicalTranscriptionJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `MedicalTranscriptionJob`:
-  [MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="starttranscriptionjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MedicalTranscriptionJobTypeDef](./type_defs.md#medicaltranscriptionjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTranscriptionJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartTranscriptionJobRequestRequestTypeDef
+
+def get_value() -> StartTranscriptionJobRequestRequestTypeDef:
+    return {
+        "TranscriptionJobName": ...,
+        "Media": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTranscriptionJobRequestRequestTypeDef(TypedDict):
+    TranscriptionJobName: str,
+    Media: MediaTypeDef,  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    MediaSampleRateHertz: NotRequired[int],
+    MediaFormat: NotRequired[MediaFormatType],  # (3)
+    OutputBucketName: NotRequired[str],
+    OutputKey: NotRequired[str],
+    OutputEncryptionKMSKeyId: NotRequired[str],
+    KMSEncryptionContext: NotRequired[Mapping[str, str]],
+    Settings: NotRequired[SettingsTypeDef],  # (4)
+    ModelSettings: NotRequired[ModelSettingsTypeDef],  # (5)
+    JobExecutionSettings: NotRequired[JobExecutionSettingsTypeDef],  # (6)
+    ContentRedaction: NotRequired[ContentRedactionTypeDef],  # (7)
+    IdentifyLanguage: NotRequired[bool],
+    LanguageOptions: NotRequired[Sequence[LanguageCodeType]],  # (8)
+    Subtitles: NotRequired[SubtitlesTypeDef],  # (9)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (10)
+    LanguageIdSettings: NotRequired[Mapping[LanguageCodeType, LanguageIdSettingsTypeDef]],  # (11)
+```
 
-- `TranscriptionJobName`: `str`
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-
-Optional fields:
-
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `OutputBucketName`: `str`
-- `OutputKey`: `str`
-- `OutputEncryptionKMSKeyId`: `str`
-- `KMSEncryptionContext`: `Mapping`\[`str`, `str`\]
-- `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
-- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
-- `JobExecutionSettings`:
-  [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
-- `ContentRedaction`:
-  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
-- `IdentifyLanguage`: `bool`
-- `LanguageOptions`:
-  `Sequence`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `Subtitles`: [SubtitlesTypeDef](./type_defs.md#subtitlestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `LanguageIdSettings`:
-  `Mapping`\[[LanguageCodeType](./literals.md#languagecodetype),
-  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
-
-<a id="starttranscriptionjobresponsetypedef"></a>
-
+1. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+4. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+5. See [:material-code-braces: ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef) 
+6. See [:material-code-braces: JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef) 
+7. See [:material-code-braces: ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef) 
+8. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+9. See [:material-code-braces: SubtitlesTypeDef](./type_defs.md#subtitlestypedef) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) [:material-code-braces: LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef) 
 ## StartTranscriptionJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import StartTranscriptionJobResponseTypeDef
+
+def get_value() -> StartTranscriptionJobResponseTypeDef:
+    return {
+        "TranscriptionJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTranscriptionJobResponseTypeDef(TypedDict):
+    TranscriptionJob: TranscriptionJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TranscriptionJob`:
-  [TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="subtitlesoutputtypedef"></a>
-
+1. See [:material-code-braces: TranscriptionJobTypeDef](./type_defs.md#transcriptionjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubtitlesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import SubtitlesOutputTypeDef
+
+def get_value() -> SubtitlesOutputTypeDef:
+    return {
+        "Formats": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubtitlesOutputTypeDef(TypedDict):
+    Formats: NotRequired[List[SubtitleFormatType]],  # (1)
+    SubtitleFileUris: NotRequired[List[str]],
+    OutputStartIndex: NotRequired[int],
+```
 
-- `Formats`: `List`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
-- `SubtitleFileUris`: `List`\[`str`\]
-- `OutputStartIndex`: `int`
-
-<a id="subtitlestypedef"></a>
-
+1. See [:material-code-brackets: SubtitleFormatType](./literals.md#subtitleformattype) 
 ## SubtitlesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import SubtitlesTypeDef
+
+def get_value() -> SubtitlesTypeDef:
+    return {
+        "Formats": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubtitlesTypeDef(TypedDict):
+    Formats: NotRequired[Sequence[SubtitleFormatType]],  # (1)
+    OutputStartIndex: NotRequired[int],
+```
 
-- `Formats`:
-  `Sequence`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
-- `OutputStartIndex`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SubtitleFormatType](./literals.md#subtitleformattype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="transcriptfiltertypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TranscriptFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TranscriptFilterTypeDef
+
+def get_value() -> TranscriptFilterTypeDef:
+    return {
+        "TranscriptFilterType": ...,
+        "Targets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TranscriptFilterTypeDef(TypedDict):
+    TranscriptFilterType: TranscriptFilterTypeType,  # (1)
+    Targets: Sequence[str],
+    AbsoluteTimeRange: NotRequired[AbsoluteTimeRangeTypeDef],  # (2)
+    RelativeTimeRange: NotRequired[RelativeTimeRangeTypeDef],  # (3)
+    ParticipantRole: NotRequired[ParticipantRoleType],  # (4)
+    Negate: NotRequired[bool],
+```
 
-- `TranscriptFilterType`: `Literal['EXACT']` (see
-  [TranscriptFilterTypeType](./literals.md#transcriptfiltertypetype))
-- `Targets`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `AbsoluteTimeRange`:
-  [AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef)
-- `RelativeTimeRange`:
-  [RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef)
-- `ParticipantRole`: [ParticipantRoleType](./literals.md#participantroletype)
-- `Negate`: `bool`
-
-<a id="transcripttypedef"></a>
-
+1. See [:material-code-brackets: TranscriptFilterTypeType](./literals.md#transcriptfiltertypetype) 
+2. See [:material-code-braces: AbsoluteTimeRangeTypeDef](./type_defs.md#absolutetimerangetypedef) 
+3. See [:material-code-braces: RelativeTimeRangeTypeDef](./type_defs.md#relativetimerangetypedef) 
+4. See [:material-code-brackets: ParticipantRoleType](./literals.md#participantroletype) 
 ## TranscriptTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TranscriptTypeDef
+
+def get_value() -> TranscriptTypeDef:
+    return {
+        "TranscriptFileUri": ...,
+    }
 ```
 
-Optional fields:
-
-- `TranscriptFileUri`: `str`
-- `RedactedTranscriptFileUri`: `str`
-
-<a id="transcriptionjobsummarytypedef"></a>
+```python title="Definition"
+class TranscriptTypeDef(TypedDict):
+    TranscriptFileUri: NotRequired[str],
+    RedactedTranscriptFileUri: NotRequired[str],
+```
 
 ## TranscriptionJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TranscriptionJobSummaryTypeDef
+
+def get_value() -> TranscriptionJobSummaryTypeDef:
+    return {
+        "TranscriptionJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TranscriptionJobSummaryTypeDef(TypedDict):
+    TranscriptionJobName: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+    StartTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    TranscriptionJobStatus: NotRequired[TranscriptionJobStatusType],  # (2)
+    FailureReason: NotRequired[str],
+    OutputLocationType: NotRequired[OutputLocationTypeType],  # (3)
+    ContentRedaction: NotRequired[ContentRedactionTypeDef],  # (4)
+    ModelSettings: NotRequired[ModelSettingsTypeDef],  # (5)
+    IdentifyLanguage: NotRequired[bool],
+    IdentifiedLanguageScore: NotRequired[float],
+```
 
-- `TranscriptionJobName`: `str`
-- `CreationTime`: `datetime`
-- `StartTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `TranscriptionJobStatus`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `FailureReason`: `str`
-- `OutputLocationType`:
-  [OutputLocationTypeType](./literals.md#outputlocationtypetype)
-- `ContentRedaction`:
-  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
-- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
-- `IdentifyLanguage`: `bool`
-- `IdentifiedLanguageScore`: `float`
-
-<a id="transcriptionjobtypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+3. See [:material-code-brackets: OutputLocationTypeType](./literals.md#outputlocationtypetype) 
+4. See [:material-code-braces: ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef) 
+5. See [:material-code-braces: ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef) 
 ## TranscriptionJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import TranscriptionJobTypeDef
+
+def get_value() -> TranscriptionJobTypeDef:
+    return {
+        "TranscriptionJobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TranscriptionJobTypeDef(TypedDict):
+    TranscriptionJobName: NotRequired[str],
+    TranscriptionJobStatus: NotRequired[TranscriptionJobStatusType],  # (1)
+    LanguageCode: NotRequired[LanguageCodeType],  # (2)
+    MediaSampleRateHertz: NotRequired[int],
+    MediaFormat: NotRequired[MediaFormatType],  # (3)
+    Media: NotRequired[MediaTypeDef],  # (4)
+    Transcript: NotRequired[TranscriptTypeDef],  # (5)
+    StartTime: NotRequired[datetime],
+    CreationTime: NotRequired[datetime],
+    CompletionTime: NotRequired[datetime],
+    FailureReason: NotRequired[str],
+    Settings: NotRequired[SettingsTypeDef],  # (6)
+    ModelSettings: NotRequired[ModelSettingsTypeDef],  # (7)
+    JobExecutionSettings: NotRequired[JobExecutionSettingsTypeDef],  # (8)
+    ContentRedaction: NotRequired[ContentRedactionTypeDef],  # (9)
+    IdentifyLanguage: NotRequired[bool],
+    LanguageOptions: NotRequired[List[LanguageCodeType]],  # (10)
+    IdentifiedLanguageScore: NotRequired[float],
+    Tags: NotRequired[List[TagTypeDef]],  # (11)
+    Subtitles: NotRequired[SubtitlesOutputTypeDef],  # (12)
+    LanguageIdSettings: NotRequired[Dict[LanguageCodeType, LanguageIdSettingsTypeDef]],  # (13)
+```
 
-- `TranscriptionJobName`: `str`
-- `TranscriptionJobStatus`:
-  [TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype)
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `MediaSampleRateHertz`: `int`
-- `MediaFormat`: [MediaFormatType](./literals.md#mediaformattype)
-- `Media`: [MediaTypeDef](./type_defs.md#mediatypedef)
-- `Transcript`: [TranscriptTypeDef](./type_defs.md#transcripttypedef)
-- `StartTime`: `datetime`
-- `CreationTime`: `datetime`
-- `CompletionTime`: `datetime`
-- `FailureReason`: `str`
-- `Settings`: [SettingsTypeDef](./type_defs.md#settingstypedef)
-- `ModelSettings`: [ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef)
-- `JobExecutionSettings`:
-  [JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef)
-- `ContentRedaction`:
-  [ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef)
-- `IdentifyLanguage`: `bool`
-- `LanguageOptions`:
-  `List`\[[LanguageCodeType](./literals.md#languagecodetype)\]
-- `IdentifiedLanguageScore`: `float`
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Subtitles`: [SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef)
-- `LanguageIdSettings`:
-  `Dict`\[[LanguageCodeType](./literals.md#languagecodetype),
-  [LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef)\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TranscriptionJobStatusType](./literals.md#transcriptionjobstatustype) 
+2. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+3. See [:material-code-brackets: MediaFormatType](./literals.md#mediaformattype) 
+4. See [:material-code-braces: MediaTypeDef](./type_defs.md#mediatypedef) 
+5. See [:material-code-braces: TranscriptTypeDef](./type_defs.md#transcripttypedef) 
+6. See [:material-code-braces: SettingsTypeDef](./type_defs.md#settingstypedef) 
+7. See [:material-code-braces: ModelSettingsTypeDef](./type_defs.md#modelsettingstypedef) 
+8. See [:material-code-braces: JobExecutionSettingsTypeDef](./type_defs.md#jobexecutionsettingstypedef) 
+9. See [:material-code-braces: ContentRedactionTypeDef](./type_defs.md#contentredactiontypedef) 
+10. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-braces: SubtitlesOutputTypeDef](./type_defs.md#subtitlesoutputtypedef) 
+13. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) [:material-code-braces: LanguageIdSettingsTypeDef](./type_defs.md#languageidsettingstypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecallanalyticscategoryrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateCallAnalyticsCategoryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateCallAnalyticsCategoryRequestRequestTypeDef
+
+def get_value() -> UpdateCallAnalyticsCategoryRequestRequestTypeDef:
+    return {
+        "CategoryName": ...,
+        "Rules": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCallAnalyticsCategoryRequestRequestTypeDef(TypedDict):
+    CategoryName: str,
+    Rules: Sequence[RuleTypeDef],  # (1)
+```
 
-- `CategoryName`: `str`
-- `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
-
-<a id="updatecallanalyticscategoryresponsetypedef"></a>
-
+1. See [:material-code-braces: RuleTypeDef](./type_defs.md#ruletypedef) 
 ## UpdateCallAnalyticsCategoryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateCallAnalyticsCategoryResponseTypeDef
+
+def get_value() -> UpdateCallAnalyticsCategoryResponseTypeDef:
+    return {
+        "CategoryProperties": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCallAnalyticsCategoryResponseTypeDef(TypedDict):
+    CategoryProperties: CategoryPropertiesTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CategoryProperties`:
-  [CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemedicalvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CategoryPropertiesTypeDef](./type_defs.md#categorypropertiestypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMedicalVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyRequestRequestTypeDef
+
+def get_value() -> UpdateMedicalVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMedicalVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    VocabularyFileUri: NotRequired[str],
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-
-Optional fields:
-
-- `VocabularyFileUri`: `str`
-
-<a id="updatemedicalvocabularyresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## UpdateMedicalVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateMedicalVocabularyResponseTypeDef
+
+def get_value() -> UpdateMedicalVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "LastModifiedTime": ...,
+        "VocabularyState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMedicalVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    LastModifiedTime: datetime,
+    VocabularyState: VocabularyStateType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevocabularyfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVocabularyFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterRequestRequestTypeDef
+
+def get_value() -> UpdateVocabularyFilterRequestRequestTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+    }
 ```
 
-Required fields:
-
-- `VocabularyFilterName`: `str`
-
-Optional fields:
-
-- `Words`: `Sequence`\[`str`\]
-- `VocabularyFilterFileUri`: `str`
-
-<a id="updatevocabularyfilterresponsetypedef"></a>
+```python title="Definition"
+class UpdateVocabularyFilterRequestRequestTypeDef(TypedDict):
+    VocabularyFilterName: str,
+    Words: NotRequired[Sequence[str]],
+    VocabularyFilterFileUri: NotRequired[str],
+```
 
 ## UpdateVocabularyFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateVocabularyFilterResponseTypeDef
+
+def get_value() -> UpdateVocabularyFilterResponseTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+        "LanguageCode": ...,
+        "LastModifiedTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVocabularyFilterResponseTypeDef(TypedDict):
+    VocabularyFilterName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    LastModifiedTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateVocabularyRequestRequestTypeDef
+
+def get_value() -> UpdateVocabularyRequestRequestTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVocabularyRequestRequestTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    Phrases: NotRequired[Sequence[str]],
+    VocabularyFileUri: NotRequired[str],
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-
-Optional fields:
-
-- `Phrases`: `Sequence`\[`str`\]
-- `VocabularyFileUri`: `str`
-
-<a id="updatevocabularyresponsetypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## UpdateVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import UpdateVocabularyResponseTypeDef
+
+def get_value() -> UpdateVocabularyResponseTypeDef:
+    return {
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "LastModifiedTime": ...,
+        "VocabularyState": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVocabularyResponseTypeDef(TypedDict):
+    VocabularyName: str,
+    LanguageCode: LanguageCodeType,  # (1)
+    LastModifiedTime: datetime,
+    VocabularyState: VocabularyStateType,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vocabularyfilterinfotypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VocabularyFilterInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import VocabularyFilterInfoTypeDef
+
+def get_value() -> VocabularyFilterInfoTypeDef:
+    return {
+        "VocabularyFilterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VocabularyFilterInfoTypeDef(TypedDict):
+    VocabularyFilterName: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+```
 
-- `VocabularyFilterName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-
-<a id="vocabularyinfotypedef"></a>
-
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
 ## VocabularyInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_transcribe.type_defs import VocabularyInfoTypeDef
+
+def get_value() -> VocabularyInfoTypeDef:
+    return {
+        "VocabularyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VocabularyInfoTypeDef(TypedDict):
+    VocabularyName: NotRequired[str],
+    LanguageCode: NotRequired[LanguageCodeType],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+    VocabularyState: NotRequired[VocabularyStateType],  # (2)
+```
 
-- `VocabularyName`: `str`
-- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
-- `LastModifiedTime`: `datetime`
-- `VocabularyState`: [VocabularyStateType](./literals.md#vocabularystatetype)
+1. See [:material-code-brackets: LanguageCodeType](./literals.md#languagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 

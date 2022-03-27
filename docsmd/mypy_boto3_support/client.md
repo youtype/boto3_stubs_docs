@@ -1,46 +1,18 @@
-<a id="supportclient-for-boto3-support-module"></a>
-
-# SupportClient for boto3 Support module
+# SupportClient
 
 > [Index](../README.md) > [Support](./README.md) > SupportClient
 
-Auto-generated documentation for
-[Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
-type annotations stubs module
-[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
+!!! note ""
 
-- [SupportClient for boto3 Support module](#supportclient-for-boto3-support-module)
-  - [SupportClient](#supportclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_attachments_to_set](#add_attachments_to_set)
-    - [add_communication_to_case](#add_communication_to_case)
-    - [can_paginate](#can_paginate)
-    - [create_case](#create_case)
-    - [describe_attachment](#describe_attachment)
-    - [describe_cases](#describe_cases)
-    - [describe_communications](#describe_communications)
-    - [describe_services](#describe_services)
-    - [describe_severity_levels](#describe_severity_levels)
-    - [describe_trusted_advisor_check_refresh_statuses](#describe_trusted_advisor_check_refresh_statuses)
-    - [describe_trusted_advisor_check_result](#describe_trusted_advisor_check_result)
-    - [describe_trusted_advisor_check_summaries](#describe_trusted_advisor_check_summaries)
-    - [describe_trusted_advisor_checks](#describe_trusted_advisor_checks)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [refresh_trusted_advisor_check](#refresh_trusted_advisor_check)
-    - [resolve_case](#resolve_case)
-    - [get_paginator](#get_paginator)
-
-<a id="supportclient"></a>
+    Auto-generated documentation for [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
+    type annotations stubs module [mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 ## SupportClient
 
-Type annotations for `boto3.client("support")`
+Type annotations and code completion for `#!python boto3.client("support")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_support.client import SupportClient
 
@@ -48,431 +20,525 @@ def get_support_client() -> SupportClient:
     return Session().client("support")
 ```
 
-Boto3 documentation:
-[Support.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("support").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("support")
+
+try:
+    do_something(client)
+except (
+    client.AttachmentIdNotFound,
+    client.AttachmentLimitExceeded,
+    client.AttachmentSetExpired,
+    client.AttachmentSetIdNotFound,
+    client.AttachmentSetSizeLimitExceeded,
+    client.CaseCreationLimitExceeded,
+    client.CaseIdNotFound,
+    client.ClientError,
+    client.DescribeAttachmentLimitExceeded,
+    client.InternalServerError,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_support.client import Exceptions
 
 def handle_error(exc: Exceptions.AttachmentIdNotFound) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AttachmentIdNotFound`
-- `Exceptions.AttachmentLimitExceeded`
-- `Exceptions.AttachmentSetExpired`
-- `Exceptions.AttachmentSetIdNotFound`
-- `Exceptions.AttachmentSetSizeLimitExceeded`
-- `Exceptions.CaseCreationLimitExceeded`
-- `Exceptions.CaseIdNotFound`
-- `Exceptions.ClientError`
-- `Exceptions.DescribeAttachmentLimitExceeded`
-- `Exceptions.InternalServerError`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-SupportClient exceptions.
-
-Type annotations for `boto3.client("support").exceptions` method.
-
-Boto3 documentation:
-[Support.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_attachments\_to\_set"></a>
-
-### add_attachments_to_set
+### add\_attachments\_to\_set
 
 Adds one or more attachments to an attachment set.
 
-Type annotations for `boto3.client("support").add_attachments_to_set` method.
+Type annotations and code completion for `#!python boto3.client("support").add_attachments_to_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set)
 
-Boto3 documentation:
-[Support.Client.add_attachments_to_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_attachments_to_set)
+```python title="Method definition"
+def add_attachments_to_set(
+    self,
+    *,
+    attachments: Sequence[AttachmentTypeDef],  # (1)
+    attachmentSetId: str = ...,
+) -> AddAttachmentsToSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddAttachmentsToSetRequestRequestTypeDef](./type_defs.md#addattachmentstosetrequestrequesttypedef).
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attachments`:
-  `Sequence`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
-  *(required)*
-- `attachmentSetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddAttachmentsToSetRequestRequestTypeDef = {  # (1)
+    "attachments": ...,
+}
 
-Returns
-[AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef).
+parent.add_attachments_to_set(**kwargs)
+```
 
-<a id="add\_communication\_to\_case"></a>
+1. See [:material-code-braces: AddAttachmentsToSetRequestRequestTypeDef](./type_defs.md#addattachmentstosetrequestrequesttypedef) 
 
-### add_communication_to_case
+### add\_communication\_to\_case
 
 Adds additional customer communication to an Amazon Web Services Support case.
 
-Type annotations for `boto3.client("support").add_communication_to_case`
-method.
+Type annotations and code completion for `#!python boto3.client("support").add_communication_to_case` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case)
 
-Boto3 documentation:
-[Support.Client.add_communication_to_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.add_communication_to_case)
+```python title="Method definition"
+def add_communication_to_case(
+    self,
+    *,
+    communicationBody: str,
+    caseId: str = ...,
+    ccEmailAddresses: Sequence[str] = ...,
+    attachmentSetId: str = ...,
+) -> AddCommunicationToCaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AddCommunicationToCaseRequestRequestTypeDef](./type_defs.md#addcommunicationtocaserequestrequesttypedef).
+1. See [:material-code-braces: AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `communicationBody`: `str` *(required)*
-- `caseId`: `str`
-- `ccEmailAddresses`: `Sequence`\[`str`\]
-- `attachmentSetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddCommunicationToCaseRequestRequestTypeDef = {  # (1)
+    "communicationBody": ...,
+}
 
-Returns
-[AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef).
+parent.add_communication_to_case(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddCommunicationToCaseRequestRequestTypeDef](./type_defs.md#addcommunicationtocaserequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("support").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("support").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate)
 
-Boto3 documentation:
-[Support.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_case"></a>
-
-### create_case
+### create\_case
 
 Creates a case in the Amazon Web Services Support Center.
 
-Type annotations for `boto3.client("support").create_case` method.
+Type annotations and code completion for `#!python boto3.client("support").create_case` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case)
 
-Boto3 documentation:
-[Support.Client.create_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.create_case)
+```python title="Method definition"
+def create_case(
+    self,
+    *,
+    subject: str,
+    communicationBody: str,
+    serviceCode: str = ...,
+    severityCode: str = ...,
+    categoryCode: str = ...,
+    ccEmailAddresses: Sequence[str] = ...,
+    language: str = ...,
+    issueType: str = ...,
+    attachmentSetId: str = ...,
+) -> CreateCaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCaseRequestRequestTypeDef](./type_defs.md#createcaserequestrequesttypedef).
+1. See [:material-code-braces: CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `subject`: `str` *(required)*
-- `communicationBody`: `str` *(required)*
-- `serviceCode`: `str`
-- `severityCode`: `str`
-- `categoryCode`: `str`
-- `ccEmailAddresses`: `Sequence`\[`str`\]
-- `language`: `str`
-- `issueType`: `str`
-- `attachmentSetId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateCaseRequestRequestTypeDef = {  # (1)
+    "subject": ...,
+    "communicationBody": ...,
+}
 
-Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
+parent.create_case(**kwargs)
+```
 
-<a id="describe\_attachment"></a>
+1. See [:material-code-braces: CreateCaseRequestRequestTypeDef](./type_defs.md#createcaserequestrequesttypedef) 
 
-### describe_attachment
+### describe\_attachment
 
 Returns the attachment that has the specified ID.
 
-Type annotations for `boto3.client("support").describe_attachment` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_attachment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment)
 
-Boto3 documentation:
-[Support.Client.describe_attachment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_attachment)
+```python title="Method definition"
+def describe_attachment(
+    self,
+    *,
+    attachmentId: str,
+) -> DescribeAttachmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAttachmentRequestRequestTypeDef](./type_defs.md#describeattachmentrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `attachmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAttachmentRequestRequestTypeDef = {  # (1)
+    "attachmentId": ...,
+}
 
-Returns
-[DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef).
+parent.describe_attachment(**kwargs)
+```
 
-<a id="describe\_cases"></a>
+1. See [:material-code-braces: DescribeAttachmentRequestRequestTypeDef](./type_defs.md#describeattachmentrequestrequesttypedef) 
 
-### describe_cases
+### describe\_cases
 
 Returns a list of cases that you specify by passing one or more case IDs.
 
-Type annotations for `boto3.client("support").describe_cases` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_cases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases)
 
-Boto3 documentation:
-[Support.Client.describe_cases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_cases)
+```python title="Method definition"
+def describe_cases(
+    self,
+    *,
+    caseIdList: Sequence[str] = ...,
+    displayId: str = ...,
+    afterTime: str = ...,
+    beforeTime: str = ...,
+    includeResolvedCases: bool = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    language: str = ...,
+    includeCommunications: bool = ...,
+) -> DescribeCasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCasesRequestRequestTypeDef](./type_defs.md#describecasesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `caseIdList`: `Sequence`\[`str`\]
-- `displayId`: `str`
-- `afterTime`: `str`
-- `beforeTime`: `str`
-- `includeResolvedCases`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `language`: `str`
-- `includeCommunications`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeCasesRequestRequestTypeDef = {  # (1)
+    "caseIdList": ...,
+}
 
-Returns
-[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef).
+parent.describe_cases(**kwargs)
+```
 
-<a id="describe\_communications"></a>
+1. See [:material-code-braces: DescribeCasesRequestRequestTypeDef](./type_defs.md#describecasesrequestrequesttypedef) 
 
-### describe_communications
+### describe\_communications
 
 Returns communications and attachments for one or more support cases.
 
-Type annotations for `boto3.client("support").describe_communications` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_communications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications)
 
-Boto3 documentation:
-[Support.Client.describe_communications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_communications)
+```python title="Method definition"
+def describe_communications(
+    self,
+    *,
+    caseId: str,
+    beforeTime: str = ...,
+    afterTime: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> DescribeCommunicationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCommunicationsRequestRequestTypeDef](./type_defs.md#describecommunicationsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `caseId`: `str` *(required)*
-- `beforeTime`: `str`
-- `afterTime`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeCommunicationsRequestRequestTypeDef = {  # (1)
+    "caseId": ...,
+}
 
-Returns
-[DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef).
+parent.describe_communications(**kwargs)
+```
 
-<a id="describe\_services"></a>
+1. See [:material-code-braces: DescribeCommunicationsRequestRequestTypeDef](./type_defs.md#describecommunicationsrequestrequesttypedef) 
 
-### describe_services
+### describe\_services
 
 Returns the current list of Amazon Web Services services and a list of service
 categories for each service.
 
-Type annotations for `boto3.client("support").describe_services` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services)
 
-Boto3 documentation:
-[Support.Client.describe_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_services)
+```python title="Method definition"
+def describe_services(
+    self,
+    *,
+    serviceCodeList: Sequence[str] = ...,
+    language: str = ...,
+) -> DescribeServicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `serviceCodeList`: `Sequence`\[`str`\]
-- `language`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeServicesRequestRequestTypeDef = {  # (1)
+    "serviceCodeList": ...,
+}
 
-Returns
-[DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
+parent.describe_services(**kwargs)
+```
 
-<a id="describe\_severity\_levels"></a>
+1. See [:material-code-braces: DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef) 
 
-### describe_severity_levels
+### describe\_severity\_levels
 
 Returns the list of severity levels that you can assign to a support case.
 
-Type annotations for `boto3.client("support").describe_severity_levels` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_severity_levels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels)
 
-Boto3 documentation:
-[Support.Client.describe_severity_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_severity_levels)
+```python title="Method definition"
+def describe_severity_levels(
+    self,
+    *,
+    language: str = ...,
+) -> DescribeSeverityLevelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSeverityLevelsRequestRequestTypeDef](./type_defs.md#describeseveritylevelsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `language`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSeverityLevelsRequestRequestTypeDef = {  # (1)
+    "language": ...,
+}
 
-Returns
-[DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef).
+parent.describe_severity_levels(**kwargs)
+```
 
-<a id="describe\_trusted\_advisor\_check\_refresh\_statuses"></a>
+1. See [:material-code-braces: DescribeSeverityLevelsRequestRequestTypeDef](./type_defs.md#describeseveritylevelsrequestrequesttypedef) 
 
-### describe_trusted_advisor_check_refresh_statuses
+### describe\_trusted\_advisor\_check\_refresh\_statuses
 
-Returns the refresh status of the Trusted Advisor checks that have the
-specified check IDs.
+Returns the refresh status of the Trusted Advisor checks that have the specified
+check IDs.
 
-Type annotations for
-`boto3.client("support").describe_trusted_advisor_check_refresh_statuses`
-method.
+Type annotations and code completion for `#!python boto3.client("support").describe_trusted_advisor_check_refresh_statuses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
 
-Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_refresh_statuses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_refresh_statuses)
+```python title="Method definition"
+def describe_trusted_advisor_check_refresh_statuses(
+    self,
+    *,
+    checkIds: Sequence[str],
+) -> DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef = {  # (1)
+    "checkIds": ...,
+}
 
-Returns
-[DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
+parent.describe_trusted_advisor_check_refresh_statuses(**kwargs)
+```
 
-<a id="describe\_trusted\_advisor\_check\_result"></a>
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckRefreshStatusesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesrequestrequesttypedef) 
 
-### describe_trusted_advisor_check_result
+### describe\_trusted\_advisor\_check\_result
 
 Returns the results of the Trusted Advisor check that has the specified check
 ID.
 
-Type annotations for
-`boto3.client("support").describe_trusted_advisor_check_result` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_trusted_advisor_check_result` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
 
-Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_result](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_result)
+```python title="Method definition"
+def describe_trusted_advisor_check_result(
+    self,
+    *,
+    checkId: str,
+    language: str = ...,
+) -> DescribeTrustedAdvisorCheckResultResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrustedAdvisorCheckResultRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckresultrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkId`: `str` *(required)*
-- `language`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeTrustedAdvisorCheckResultRequestRequestTypeDef = {  # (1)
+    "checkId": ...,
+}
 
-Returns
-[DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef).
+parent.describe_trusted_advisor_check_result(**kwargs)
+```
 
-<a id="describe\_trusted\_advisor\_check\_summaries"></a>
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckResultRequestRequestTypeDef](./type_defs.md#describetrustedadvisorcheckresultrequestrequesttypedef) 
 
-### describe_trusted_advisor_check_summaries
+### describe\_trusted\_advisor\_check\_summaries
 
 Returns the results for the Trusted Advisor check summaries for the check IDs
 that you specified.
 
-Type annotations for
-`boto3.client("support").describe_trusted_advisor_check_summaries` method.
+Type annotations and code completion for `#!python boto3.client("support").describe_trusted_advisor_check_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
 
-Boto3 documentation:
-[Support.Client.describe_trusted_advisor_check_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_check_summaries)
+```python title="Method definition"
+def describe_trusted_advisor_check_summaries(
+    self,
+    *,
+    checkIds: Sequence[str],
+) -> DescribeTrustedAdvisorCheckSummariesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksummariesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef = {  # (1)
+    "checkIds": ...,
+}
 
-Returns
-[DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
+parent.describe_trusted_advisor_check_summaries(**kwargs)
+```
 
-<a id="describe\_trusted\_advisor\_checks"></a>
+1. See [:material-code-braces: DescribeTrustedAdvisorCheckSummariesRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksummariesrequestrequesttypedef) 
 
-### describe_trusted_advisor_checks
+### describe\_trusted\_advisor\_checks
 
 Returns information about all available Trusted Advisor checks, including the
 name, ID, category, description, and metadata.
 
-Type annotations for `boto3.client("support").describe_trusted_advisor_checks`
-method.
+Type annotations and code completion for `#!python boto3.client("support").describe_trusted_advisor_checks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
 
-Boto3 documentation:
-[Support.Client.describe_trusted_advisor_checks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.describe_trusted_advisor_checks)
+```python title="Method definition"
+def describe_trusted_advisor_checks(
+    self,
+    *,
+    language: str,
+) -> DescribeTrustedAdvisorChecksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTrustedAdvisorChecksRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `language`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTrustedAdvisorChecksRequestRequestTypeDef = {  # (1)
+    "language": ...,
+}
 
-Returns
-[DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef).
+parent.describe_trusted_advisor_checks(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTrustedAdvisorChecksRequestRequestTypeDef](./type_defs.md#describetrustedadvisorchecksrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("support").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("support").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Support.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="refresh\_trusted\_advisor\_check"></a>
-
-### refresh_trusted_advisor_check
+### refresh\_trusted\_advisor\_check
 
 Refreshes the Trusted Advisor check that you specify using the check ID.
 
-Type annotations for `boto3.client("support").refresh_trusted_advisor_check`
-method.
+Type annotations and code completion for `#!python boto3.client("support").refresh_trusted_advisor_check` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
 
-Boto3 documentation:
-[Support.Client.refresh_trusted_advisor_check](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.refresh_trusted_advisor_check)
+```python title="Method definition"
+def refresh_trusted_advisor_check(
+    self,
+    *,
+    checkId: str,
+) -> RefreshTrustedAdvisorCheckResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RefreshTrustedAdvisorCheckRequestRequestTypeDef](./type_defs.md#refreshtrustedadvisorcheckrequestrequesttypedef).
+1. See [:material-code-braces: RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RefreshTrustedAdvisorCheckRequestRequestTypeDef = {  # (1)
+    "checkId": ...,
+}
 
-Returns
-[RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef).
+parent.refresh_trusted_advisor_check(**kwargs)
+```
 
-<a id="resolve\_case"></a>
+1. See [:material-code-braces: RefreshTrustedAdvisorCheckRequestRequestTypeDef](./type_defs.md#refreshtrustedadvisorcheckrequestrequesttypedef) 
 
-### resolve_case
+### resolve\_case
 
 Resolves a support case.
 
-Type annotations for `boto3.client("support").resolve_case` method.
+Type annotations and code completion for `#!python boto3.client("support").resolve_case` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case)
 
-Boto3 documentation:
-[Support.Client.resolve_case](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.resolve_case)
+```python title="Method definition"
+def resolve_case(
+    self,
+    *,
+    caseId: str = ...,
+) -> ResolveCaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResolveCaseRequestRequestTypeDef](./type_defs.md#resolvecaserequestrequesttypedef).
+1. See [:material-code-braces: ResolveCaseResponseTypeDef](./type_defs.md#resolvecaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `caseId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ResolveCaseRequestRequestTypeDef = {  # (1)
+    "caseId": ...,
+}
 
-Returns
-[ResolveCaseResponseTypeDef](./type_defs.md#resolvecaseresponsetypedef).
+parent.resolve_case(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ResolveCaseRequestRequestTypeDef](./type_defs.md#resolvecaserequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("support").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("support").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_cases")` ->
-  [DescribeCasesPaginator](./paginators.md#describecasespaginator)
-- `client.get_paginator("describe_communications")` ->
-  [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
+- `client.get_paginator("describe_cases")` -> [DescribeCasesPaginator](./paginators.md#describecasespaginator)
+- `client.get_paginator("describe_communications")` -> [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
+
+
+

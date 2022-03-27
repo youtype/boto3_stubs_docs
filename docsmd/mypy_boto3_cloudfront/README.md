@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-cloudfront-module"></a>
-
-# Type annotations for boto3 CloudFront module
+#  CloudFront module
 
 > [Index](../README.md) > CloudFront
 
-Auto-generated documentation for
-[CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
-type annotations stubs module
-[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+!!! note ""
 
-- [Type annotations for boto3 CloudFront module](#type-annotations-for-boto3-cloudfront-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudFrontClient](#cloudfrontclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
+    type annotations stubs module [mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudFront`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudfront]'
 python -m pip install mypy-boto3-cloudfront
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,273 +42,37 @@ python -m pip install mypy-boto3-cloudfront
 python -m pip uninstall -y mypy-boto3-cloudfront
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudfrontclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudFrontClient
 
-Type annotations for `boto3.client("cloudfront")` as
-[CloudFrontClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudfront")` as [CloudFrontClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudfront.client import CloudFrontClient
+
+def get_client() -> CloudFrontClient:
+    return Session().cleint("cloudfront")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_alias](./client.md#associate_alias)
-- [can_paginate](./client.md#can_paginate)
-- [create_cache_policy](./client.md#create_cache_policy)
-- [create_cloud_front_origin_access_identity](./client.md#create_cloud_front_origin_access_identity)
-- [create_distribution](./client.md#create_distribution)
-- [create_distribution_with_tags](./client.md#create_distribution_with_tags)
-- [create_field_level_encryption_config](./client.md#create_field_level_encryption_config)
-- [create_field_level_encryption_profile](./client.md#create_field_level_encryption_profile)
-- [create_function](./client.md#create_function)
-- [create_invalidation](./client.md#create_invalidation)
-- [create_key_group](./client.md#create_key_group)
-- [create_monitoring_subscription](./client.md#create_monitoring_subscription)
-- [create_origin_request_policy](./client.md#create_origin_request_policy)
-- [create_public_key](./client.md#create_public_key)
-- [create_realtime_log_config](./client.md#create_realtime_log_config)
-- [create_response_headers_policy](./client.md#create_response_headers_policy)
-- [create_streaming_distribution](./client.md#create_streaming_distribution)
-- [create_streaming_distribution_with_tags](./client.md#create_streaming_distribution_with_tags)
-- [delete_cache_policy](./client.md#delete_cache_policy)
-- [delete_cloud_front_origin_access_identity](./client.md#delete_cloud_front_origin_access_identity)
-- [delete_distribution](./client.md#delete_distribution)
-- [delete_field_level_encryption_config](./client.md#delete_field_level_encryption_config)
-- [delete_field_level_encryption_profile](./client.md#delete_field_level_encryption_profile)
-- [delete_function](./client.md#delete_function)
-- [delete_key_group](./client.md#delete_key_group)
-- [delete_monitoring_subscription](./client.md#delete_monitoring_subscription)
-- [delete_origin_request_policy](./client.md#delete_origin_request_policy)
-- [delete_public_key](./client.md#delete_public_key)
-- [delete_realtime_log_config](./client.md#delete_realtime_log_config)
-- [delete_response_headers_policy](./client.md#delete_response_headers_policy)
-- [delete_streaming_distribution](./client.md#delete_streaming_distribution)
-- [describe_function](./client.md#describe_function)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_cache_policy](./client.md#get_cache_policy)
-- [get_cache_policy_config](./client.md#get_cache_policy_config)
-- [get_cloud_front_origin_access_identity](./client.md#get_cloud_front_origin_access_identity)
-- [get_cloud_front_origin_access_identity_config](./client.md#get_cloud_front_origin_access_identity_config)
-- [get_distribution](./client.md#get_distribution)
-- [get_distribution_config](./client.md#get_distribution_config)
-- [get_field_level_encryption](./client.md#get_field_level_encryption)
-- [get_field_level_encryption_config](./client.md#get_field_level_encryption_config)
-- [get_field_level_encryption_profile](./client.md#get_field_level_encryption_profile)
-- [get_field_level_encryption_profile_config](./client.md#get_field_level_encryption_profile_config)
-- [get_function](./client.md#get_function)
-- [get_invalidation](./client.md#get_invalidation)
-- [get_key_group](./client.md#get_key_group)
-- [get_key_group_config](./client.md#get_key_group_config)
-- [get_monitoring_subscription](./client.md#get_monitoring_subscription)
-- [get_origin_request_policy](./client.md#get_origin_request_policy)
-- [get_origin_request_policy_config](./client.md#get_origin_request_policy_config)
-- [get_paginator](./client.md#get_paginator)
-- [get_public_key](./client.md#get_public_key)
-- [get_public_key_config](./client.md#get_public_key_config)
-- [get_realtime_log_config](./client.md#get_realtime_log_config)
-- [get_response_headers_policy](./client.md#get_response_headers_policy)
-- [get_response_headers_policy_config](./client.md#get_response_headers_policy_config)
-- [get_streaming_distribution](./client.md#get_streaming_distribution)
-- [get_streaming_distribution_config](./client.md#get_streaming_distribution_config)
-- [get_waiter](./client.md#get_waiter)
-- [list_cache_policies](./client.md#list_cache_policies)
-- [list_cloud_front_origin_access_identities](./client.md#list_cloud_front_origin_access_identities)
-- [list_conflicting_aliases](./client.md#list_conflicting_aliases)
-- [list_distributions](./client.md#list_distributions)
-- [list_distributions_by_cache_policy_id](./client.md#list_distributions_by_cache_policy_id)
-- [list_distributions_by_key_group](./client.md#list_distributions_by_key_group)
-- [list_distributions_by_origin_request_policy_id](./client.md#list_distributions_by_origin_request_policy_id)
-- [list_distributions_by_realtime_log_config](./client.md#list_distributions_by_realtime_log_config)
-- [list_distributions_by_response_headers_policy_id](./client.md#list_distributions_by_response_headers_policy_id)
-- [list_distributions_by_web_acl_id](./client.md#list_distributions_by_web_acl_id)
-- [list_field_level_encryption_configs](./client.md#list_field_level_encryption_configs)
-- [list_field_level_encryption_profiles](./client.md#list_field_level_encryption_profiles)
-- [list_functions](./client.md#list_functions)
-- [list_invalidations](./client.md#list_invalidations)
-- [list_key_groups](./client.md#list_key_groups)
-- [list_origin_request_policies](./client.md#list_origin_request_policies)
-- [list_public_keys](./client.md#list_public_keys)
-- [list_realtime_log_configs](./client.md#list_realtime_log_configs)
-- [list_response_headers_policies](./client.md#list_response_headers_policies)
-- [list_streaming_distributions](./client.md#list_streaming_distributions)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [publish_function](./client.md#publish_function)
-- [tag_resource](./client.md#tag_resource)
-- [test_function](./client.md#test_function)
-- [untag_resource](./client.md#untag_resource)
-- [update_cache_policy](./client.md#update_cache_policy)
-- [update_cloud_front_origin_access_identity](./client.md#update_cloud_front_origin_access_identity)
-- [update_distribution](./client.md#update_distribution)
-- [update_field_level_encryption_config](./client.md#update_field_level_encryption_config)
-- [update_field_level_encryption_profile](./client.md#update_field_level_encryption_profile)
-- [update_function](./client.md#update_function)
-- [update_key_group](./client.md#update_key_group)
-- [update_origin_request_policy](./client.md#update_origin_request_policy)
-- [update_public_key](./client.md#update_public_key)
-- [update_realtime_log_config](./client.md#update_realtime_log_config)
-- [update_response_headers_policy](./client.md#update_response_headers_policy)
-- [update_streaming_distribution](./client.md#update_streaming_distribution)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CloudFrontClient [exceptions](./client.md#exceptions)
-
-- AccessDenied
-- BatchTooLarge
-- CNAMEAlreadyExists
-- CachePolicyAlreadyExists
-- CachePolicyInUse
-- CannotChangeImmutablePublicKeyFields
-- ClientError
-- CloudFrontOriginAccessIdentityAlreadyExists
-- CloudFrontOriginAccessIdentityInUse
-- DistributionAlreadyExists
-- DistributionNotDisabled
-- FieldLevelEncryptionConfigAlreadyExists
-- FieldLevelEncryptionConfigInUse
-- FieldLevelEncryptionProfileAlreadyExists
-- FieldLevelEncryptionProfileInUse
-- FieldLevelEncryptionProfileSizeExceeded
-- FunctionAlreadyExists
-- FunctionInUse
-- FunctionSizeLimitExceeded
-- IllegalDelete
-- IllegalFieldLevelEncryptionConfigAssociationWithCacheBehavior
-- IllegalUpdate
-- InconsistentQuantities
-- InvalidArgument
-- InvalidDefaultRootObject
-- InvalidErrorCode
-- InvalidForwardCookies
-- InvalidFunctionAssociation
-- InvalidGeoRestrictionParameter
-- InvalidHeadersForS3Origin
-- InvalidIfMatchVersion
-- InvalidLambdaFunctionAssociation
-- InvalidLocationCode
-- InvalidMinimumProtocolVersion
-- InvalidOrigin
-- InvalidOriginAccessIdentity
-- InvalidOriginKeepaliveTimeout
-- InvalidOriginReadTimeout
-- InvalidProtocolSettings
-- InvalidQueryStringParameters
-- InvalidRelativePath
-- InvalidRequiredProtocol
-- InvalidResponseCode
-- InvalidTTLOrder
-- InvalidTagging
-- InvalidViewerCertificate
-- InvalidWebACLId
-- KeyGroupAlreadyExists
-- MissingBody
-- NoSuchCachePolicy
-- NoSuchCloudFrontOriginAccessIdentity
-- NoSuchDistribution
-- NoSuchFieldLevelEncryptionConfig
-- NoSuchFieldLevelEncryptionProfile
-- NoSuchFunctionExists
-- NoSuchInvalidation
-- NoSuchOrigin
-- NoSuchOriginRequestPolicy
-- NoSuchPublicKey
-- NoSuchRealtimeLogConfig
-- NoSuchResource
-- NoSuchResponseHeadersPolicy
-- NoSuchStreamingDistribution
-- OriginRequestPolicyAlreadyExists
-- OriginRequestPolicyInUse
-- PreconditionFailed
-- PublicKeyAlreadyExists
-- PublicKeyInUse
-- QueryArgProfileEmpty
-- RealtimeLogConfigAlreadyExists
-- RealtimeLogConfigInUse
-- RealtimeLogConfigOwnerMismatch
-- ResourceInUse
-- ResponseHeadersPolicyAlreadyExists
-- ResponseHeadersPolicyInUse
-- StreamingDistributionAlreadyExists
-- StreamingDistributionNotDisabled
-- TestFunctionFailed
-- TooManyCacheBehaviors
-- TooManyCachePolicies
-- TooManyCertificates
-- TooManyCloudFrontOriginAccessIdentities
-- TooManyCookieNamesInWhiteList
-- TooManyCookiesInCachePolicy
-- TooManyCookiesInOriginRequestPolicy
-- TooManyCustomHeadersInResponseHeadersPolicy
-- TooManyDistributionCNAMEs
-- TooManyDistributions
-- TooManyDistributionsAssociatedToCachePolicy
-- TooManyDistributionsAssociatedToFieldLevelEncryptionConfig
-- TooManyDistributionsAssociatedToKeyGroup
-- TooManyDistributionsAssociatedToOriginRequestPolicy
-- TooManyDistributionsAssociatedToResponseHeadersPolicy
-- TooManyDistributionsWithFunctionAssociations
-- TooManyDistributionsWithLambdaAssociations
-- TooManyDistributionsWithSingleFunctionARN
-- TooManyFieldLevelEncryptionConfigs
-- TooManyFieldLevelEncryptionContentTypeProfiles
-- TooManyFieldLevelEncryptionEncryptionEntities
-- TooManyFieldLevelEncryptionFieldPatterns
-- TooManyFieldLevelEncryptionProfiles
-- TooManyFieldLevelEncryptionQueryArgProfiles
-- TooManyFunctionAssociations
-- TooManyFunctions
-- TooManyHeadersInCachePolicy
-- TooManyHeadersInForwardedValues
-- TooManyHeadersInOriginRequestPolicy
-- TooManyInvalidationsInProgress
-- TooManyKeyGroups
-- TooManyKeyGroupsAssociatedToDistribution
-- TooManyLambdaFunctionAssociations
-- TooManyOriginCustomHeaders
-- TooManyOriginGroupsPerDistribution
-- TooManyOriginRequestPolicies
-- TooManyOrigins
-- TooManyPublicKeys
-- TooManyPublicKeysInKeyGroup
-- TooManyQueryStringParameters
-- TooManyQueryStringsInCachePolicy
-- TooManyQueryStringsInOriginRequestPolicy
-- TooManyRealtimeLogConfigs
-- TooManyResponseHeadersPolicies
-- TooManyStreamingDistributionCNAMEs
-- TooManyStreamingDistributions
-- TooManyTrustedSigners
-- TrustedKeyGroupDoesNotExist
-- TrustedSignerDoesNotExist
-- UnsupportedOperation
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("cloudfront").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("cloudfront").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator, ...
+from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator
+
+def get_list_cloud_front_origin_access_identities_paginator() -> ListCloudFrontOriginAccessIdentitiesPaginator:
+    return Session().client("cloudfront").get_paginator("list_cloud_front_origin_access_identities"))
 ```
 
 - [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
@@ -339,33 +80,42 @@ from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentities
 - [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
 - [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("cloudfront").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("cloudfront").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter, ...
+from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
+
+def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
+    return Session().client("cloudfront").get_waiter("distribution_deployed")
 ```
 
 - [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
 - [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
 - [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType
 
-```python
-from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
+def get_value() -> CachePolicyCookieBehaviorType:
+    return "all"
 ```
 
 - [CachePolicyCookieBehaviorType](./literals.md#cachepolicycookiebehaviortype)
@@ -410,17 +160,21 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef
 
-```python
-from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
+def get_value() -> ActiveTrustedKeyGroupsTypeDef:
+    return {
+        "Enabled": ...,
+        "Quantity": ...,
+    }
 ```
 
 - [ActiveTrustedKeyGroupsTypeDef](./type_defs.md#activetrustedkeygroupstypedef)
@@ -538,6 +292,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [GetCloudFrontOriginAccessIdentityResultTypeDef](./type_defs.md#getcloudfrontoriginaccessidentityresulttypedef)
 - [GetDistributionConfigRequestRequestTypeDef](./type_defs.md#getdistributionconfigrequestrequesttypedef)
 - [GetDistributionConfigResultTypeDef](./type_defs.md#getdistributionconfigresulttypedef)
+- [GetDistributionRequestDistributionDeployedWaitTypeDef](./type_defs.md#getdistributionrequestdistributiondeployedwaittypedef)
 - [GetDistributionRequestRequestTypeDef](./type_defs.md#getdistributionrequestrequesttypedef)
 - [GetDistributionResultTypeDef](./type_defs.md#getdistributionresulttypedef)
 - [GetFieldLevelEncryptionConfigRequestRequestTypeDef](./type_defs.md#getfieldlevelencryptionconfigrequestrequesttypedef)
@@ -550,6 +305,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [GetFieldLevelEncryptionResultTypeDef](./type_defs.md#getfieldlevelencryptionresulttypedef)
 - [GetFunctionRequestRequestTypeDef](./type_defs.md#getfunctionrequestrequesttypedef)
 - [GetFunctionResultTypeDef](./type_defs.md#getfunctionresulttypedef)
+- [GetInvalidationRequestInvalidationCompletedWaitTypeDef](./type_defs.md#getinvalidationrequestinvalidationcompletedwaittypedef)
 - [GetInvalidationRequestRequestTypeDef](./type_defs.md#getinvalidationrequestrequesttypedef)
 - [GetInvalidationResultTypeDef](./type_defs.md#getinvalidationresulttypedef)
 - [GetKeyGroupConfigRequestRequestTypeDef](./type_defs.md#getkeygroupconfigrequestrequesttypedef)
@@ -575,6 +331,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [GetStreamingDistributionConfigRequestRequestTypeDef](./type_defs.md#getstreamingdistributionconfigrequestrequesttypedef)
 - [GetStreamingDistributionConfigResultTypeDef](./type_defs.md#getstreamingdistributionconfigresulttypedef)
 - [GetStreamingDistributionRequestRequestTypeDef](./type_defs.md#getstreamingdistributionrequestrequesttypedef)
+- [GetStreamingDistributionRequestStreamingDistributionDeployedWaitTypeDef](./type_defs.md#getstreamingdistributionrequeststreamingdistributiondeployedwaittypedef)
 - [GetStreamingDistributionResultTypeDef](./type_defs.md#getstreamingdistributionresulttypedef)
 - [HeadersTypeDef](./type_defs.md#headerstypedef)
 - [InvalidationBatchTypeDef](./type_defs.md#invalidationbatchtypedef)
@@ -592,6 +349,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [LambdaFunctionAssociationsTypeDef](./type_defs.md#lambdafunctionassociationstypedef)
 - [ListCachePoliciesRequestRequestTypeDef](./type_defs.md#listcachepoliciesrequestrequesttypedef)
 - [ListCachePoliciesResultTypeDef](./type_defs.md#listcachepoliciesresulttypedef)
+- [ListCloudFrontOriginAccessIdentitiesRequestListCloudFrontOriginAccessIdentitiesPaginateTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequestlistcloudfrontoriginaccessidentitiespaginatetypedef)
 - [ListCloudFrontOriginAccessIdentitiesRequestRequestTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesrequestrequesttypedef)
 - [ListCloudFrontOriginAccessIdentitiesResultTypeDef](./type_defs.md#listcloudfrontoriginaccessidentitiesresulttypedef)
 - [ListConflictingAliasesRequestRequestTypeDef](./type_defs.md#listconflictingaliasesrequestrequesttypedef)
@@ -608,6 +366,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListDistributionsByResponseHeadersPolicyIdResultTypeDef](./type_defs.md#listdistributionsbyresponseheaderspolicyidresulttypedef)
 - [ListDistributionsByWebACLIdRequestRequestTypeDef](./type_defs.md#listdistributionsbywebaclidrequestrequesttypedef)
 - [ListDistributionsByWebACLIdResultTypeDef](./type_defs.md#listdistributionsbywebaclidresulttypedef)
+- [ListDistributionsRequestListDistributionsPaginateTypeDef](./type_defs.md#listdistributionsrequestlistdistributionspaginatetypedef)
 - [ListDistributionsRequestRequestTypeDef](./type_defs.md#listdistributionsrequestrequesttypedef)
 - [ListDistributionsResultTypeDef](./type_defs.md#listdistributionsresulttypedef)
 - [ListFieldLevelEncryptionConfigsRequestRequestTypeDef](./type_defs.md#listfieldlevelencryptionconfigsrequestrequesttypedef)
@@ -616,6 +375,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListFieldLevelEncryptionProfilesResultTypeDef](./type_defs.md#listfieldlevelencryptionprofilesresulttypedef)
 - [ListFunctionsRequestRequestTypeDef](./type_defs.md#listfunctionsrequestrequesttypedef)
 - [ListFunctionsResultTypeDef](./type_defs.md#listfunctionsresulttypedef)
+- [ListInvalidationsRequestListInvalidationsPaginateTypeDef](./type_defs.md#listinvalidationsrequestlistinvalidationspaginatetypedef)
 - [ListInvalidationsRequestRequestTypeDef](./type_defs.md#listinvalidationsrequestrequesttypedef)
 - [ListInvalidationsResultTypeDef](./type_defs.md#listinvalidationsresulttypedef)
 - [ListKeyGroupsRequestRequestTypeDef](./type_defs.md#listkeygroupsrequestrequesttypedef)
@@ -628,6 +388,7 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [ListRealtimeLogConfigsResultTypeDef](./type_defs.md#listrealtimelogconfigsresulttypedef)
 - [ListResponseHeadersPoliciesRequestRequestTypeDef](./type_defs.md#listresponseheaderspoliciesrequestrequesttypedef)
 - [ListResponseHeadersPoliciesResultTypeDef](./type_defs.md#listresponseheaderspoliciesresulttypedef)
+- [ListStreamingDistributionsRequestListStreamingDistributionsPaginateTypeDef](./type_defs.md#liststreamingdistributionsrequestliststreamingdistributionspaginatetypedef)
 - [ListStreamingDistributionsRequestRequestTypeDef](./type_defs.md#liststreamingdistributionsrequestrequesttypedef)
 - [ListStreamingDistributionsResultTypeDef](./type_defs.md#liststreamingdistributionsresulttypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -734,3 +495,4 @@ from mypy_boto3_cloudfront.type_defs import ActiveTrustedKeyGroupsTypeDef, ...
 - [UpdateStreamingDistributionResultTypeDef](./type_defs.md#updatestreamingdistributionresulttypedef)
 - [ViewerCertificateTypeDef](./type_defs.md#viewercertificatetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

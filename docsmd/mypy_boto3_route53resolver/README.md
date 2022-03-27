@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-route53resolver-module"></a>
-
-# Type annotations for boto3 Route53Resolver module
+#  Route53Resolver module
 
 > [Index](../README.md) > Route53Resolver
 
-Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module
-[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+!!! note ""
 
-- [Type annotations for boto3 Route53Resolver module](#type-annotations-for-boto3-route53resolver-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [Route53ResolverClient](#route53resolverclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+    type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Route53Resolver`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[route53resolver]'
 python -m pip install mypy-boto3-route53resolver
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,132 +42,37 @@ python -m pip install mypy-boto3-route53resolver
 python -m pip uninstall -y mypy-boto3-route53resolver
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="route53resolverclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## Route53ResolverClient
 
-Type annotations for `boto3.client("route53resolver")` as
-[Route53ResolverClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("route53resolver")` as [Route53ResolverClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_route53resolver.client import Route53ResolverClient
+
+def get_client() -> Route53ResolverClient:
+    return Session().cleint("route53resolver")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_firewall_rule_group](./client.md#associate_firewall_rule_group)
-- [associate_resolver_endpoint_ip_address](./client.md#associate_resolver_endpoint_ip_address)
-- [associate_resolver_query_log_config](./client.md#associate_resolver_query_log_config)
-- [associate_resolver_rule](./client.md#associate_resolver_rule)
-- [can_paginate](./client.md#can_paginate)
-- [create_firewall_domain_list](./client.md#create_firewall_domain_list)
-- [create_firewall_rule](./client.md#create_firewall_rule)
-- [create_firewall_rule_group](./client.md#create_firewall_rule_group)
-- [create_resolver_endpoint](./client.md#create_resolver_endpoint)
-- [create_resolver_query_log_config](./client.md#create_resolver_query_log_config)
-- [create_resolver_rule](./client.md#create_resolver_rule)
-- [delete_firewall_domain_list](./client.md#delete_firewall_domain_list)
-- [delete_firewall_rule](./client.md#delete_firewall_rule)
-- [delete_firewall_rule_group](./client.md#delete_firewall_rule_group)
-- [delete_resolver_endpoint](./client.md#delete_resolver_endpoint)
-- [delete_resolver_query_log_config](./client.md#delete_resolver_query_log_config)
-- [delete_resolver_rule](./client.md#delete_resolver_rule)
-- [disassociate_firewall_rule_group](./client.md#disassociate_firewall_rule_group)
-- [disassociate_resolver_endpoint_ip_address](./client.md#disassociate_resolver_endpoint_ip_address)
-- [disassociate_resolver_query_log_config](./client.md#disassociate_resolver_query_log_config)
-- [disassociate_resolver_rule](./client.md#disassociate_resolver_rule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_firewall_config](./client.md#get_firewall_config)
-- [get_firewall_domain_list](./client.md#get_firewall_domain_list)
-- [get_firewall_rule_group](./client.md#get_firewall_rule_group)
-- [get_firewall_rule_group_association](./client.md#get_firewall_rule_group_association)
-- [get_firewall_rule_group_policy](./client.md#get_firewall_rule_group_policy)
-- [get_paginator](./client.md#get_paginator)
-- [get_resolver_config](./client.md#get_resolver_config)
-- [get_resolver_dnssec_config](./client.md#get_resolver_dnssec_config)
-- [get_resolver_endpoint](./client.md#get_resolver_endpoint)
-- [get_resolver_query_log_config](./client.md#get_resolver_query_log_config)
-- [get_resolver_query_log_config_association](./client.md#get_resolver_query_log_config_association)
-- [get_resolver_query_log_config_policy](./client.md#get_resolver_query_log_config_policy)
-- [get_resolver_rule](./client.md#get_resolver_rule)
-- [get_resolver_rule_association](./client.md#get_resolver_rule_association)
-- [get_resolver_rule_policy](./client.md#get_resolver_rule_policy)
-- [import_firewall_domains](./client.md#import_firewall_domains)
-- [list_firewall_configs](./client.md#list_firewall_configs)
-- [list_firewall_domain_lists](./client.md#list_firewall_domain_lists)
-- [list_firewall_domains](./client.md#list_firewall_domains)
-- [list_firewall_rule_group_associations](./client.md#list_firewall_rule_group_associations)
-- [list_firewall_rule_groups](./client.md#list_firewall_rule_groups)
-- [list_firewall_rules](./client.md#list_firewall_rules)
-- [list_resolver_configs](./client.md#list_resolver_configs)
-- [list_resolver_dnssec_configs](./client.md#list_resolver_dnssec_configs)
-- [list_resolver_endpoint_ip_addresses](./client.md#list_resolver_endpoint_ip_addresses)
-- [list_resolver_endpoints](./client.md#list_resolver_endpoints)
-- [list_resolver_query_log_config_associations](./client.md#list_resolver_query_log_config_associations)
-- [list_resolver_query_log_configs](./client.md#list_resolver_query_log_configs)
-- [list_resolver_rule_associations](./client.md#list_resolver_rule_associations)
-- [list_resolver_rules](./client.md#list_resolver_rules)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_firewall_rule_group_policy](./client.md#put_firewall_rule_group_policy)
-- [put_resolver_query_log_config_policy](./client.md#put_resolver_query_log_config_policy)
-- [put_resolver_rule_policy](./client.md#put_resolver_rule_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_firewall_config](./client.md#update_firewall_config)
-- [update_firewall_domains](./client.md#update_firewall_domains)
-- [update_firewall_rule](./client.md#update_firewall_rule)
-- [update_firewall_rule_group_association](./client.md#update_firewall_rule_group_association)
-- [update_resolver_config](./client.md#update_resolver_config)
-- [update_resolver_dnssec_config](./client.md#update_resolver_dnssec_config)
-- [update_resolver_endpoint](./client.md#update_resolver_endpoint)
-- [update_resolver_rule](./client.md#update_resolver_rule)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-Route53ResolverClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServiceErrorException
-- InvalidNextTokenException
-- InvalidParameterException
-- InvalidPolicyDocument
-- InvalidRequestException
-- InvalidTagException
-- LimitExceededException
-- ResourceExistsException
-- ResourceInUseException
-- ResourceNotFoundException
-- ResourceUnavailableException
-- ThrottlingException
-- UnknownResourceException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("route53resolver").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("route53resolver").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator, ...
+from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
+
+def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
+    return Session().client("route53resolver").get_paginator("list_firewall_configs"))
 ```
 
 - [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
@@ -208,16 +91,23 @@ from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator, .
 - [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53resolver.literals import ActionType
 
-```python
-from mypy_boto3_route53resolver.literals import ActionType, ...
+def get_value() -> ActionType:
+    return "ALERT"
 ```
 
 - [ActionType](./literals.md#actiontype)
@@ -264,18 +154,26 @@ from mypy_boto3_route53resolver.literals import ActionType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestRequestTypeDef
 
-```python
-from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupRequestRequestTypeDef, ...
+def get_value() -> AssociateFirewallRuleGroupRequestRequestTypeDef:
+    return {
+        "CreatorRequestId": ...,
+        "FirewallRuleGroupId": ...,
+        "VpcId": ...,
+        "Priority": ...,
+        "Name": ...,
+    }
 ```
 
 - [AssociateFirewallRuleGroupRequestRequestTypeDef](./type_defs.md#associatefirewallrulegrouprequestrequesttypedef)
@@ -359,34 +257,49 @@ from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupReque
 - [IpAddressRequestTypeDef](./type_defs.md#ipaddressrequesttypedef)
 - [IpAddressResponseTypeDef](./type_defs.md#ipaddressresponsetypedef)
 - [IpAddressUpdateTypeDef](./type_defs.md#ipaddressupdatetypedef)
+- [ListFirewallConfigsRequestListFirewallConfigsPaginateTypeDef](./type_defs.md#listfirewallconfigsrequestlistfirewallconfigspaginatetypedef)
 - [ListFirewallConfigsRequestRequestTypeDef](./type_defs.md#listfirewallconfigsrequestrequesttypedef)
 - [ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef)
+- [ListFirewallDomainListsRequestListFirewallDomainListsPaginateTypeDef](./type_defs.md#listfirewalldomainlistsrequestlistfirewalldomainlistspaginatetypedef)
 - [ListFirewallDomainListsRequestRequestTypeDef](./type_defs.md#listfirewalldomainlistsrequestrequesttypedef)
 - [ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef)
+- [ListFirewallDomainsRequestListFirewallDomainsPaginateTypeDef](./type_defs.md#listfirewalldomainsrequestlistfirewalldomainspaginatetypedef)
 - [ListFirewallDomainsRequestRequestTypeDef](./type_defs.md#listfirewalldomainsrequestrequesttypedef)
 - [ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef)
+- [ListFirewallRuleGroupAssociationsRequestListFirewallRuleGroupAssociationsPaginateTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestlistfirewallrulegroupassociationspaginatetypedef)
 - [ListFirewallRuleGroupAssociationsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupassociationsrequestrequesttypedef)
 - [ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef)
+- [ListFirewallRuleGroupsRequestListFirewallRuleGroupsPaginateTypeDef](./type_defs.md#listfirewallrulegroupsrequestlistfirewallrulegroupspaginatetypedef)
 - [ListFirewallRuleGroupsRequestRequestTypeDef](./type_defs.md#listfirewallrulegroupsrequestrequesttypedef)
 - [ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef)
+- [ListFirewallRulesRequestListFirewallRulesPaginateTypeDef](./type_defs.md#listfirewallrulesrequestlistfirewallrulespaginatetypedef)
 - [ListFirewallRulesRequestRequestTypeDef](./type_defs.md#listfirewallrulesrequestrequesttypedef)
 - [ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)
+- [ListResolverConfigsRequestListResolverConfigsPaginateTypeDef](./type_defs.md#listresolverconfigsrequestlistresolverconfigspaginatetypedef)
 - [ListResolverConfigsRequestRequestTypeDef](./type_defs.md#listresolverconfigsrequestrequesttypedef)
 - [ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef)
+- [ListResolverDnssecConfigsRequestListResolverDnssecConfigsPaginateTypeDef](./type_defs.md#listresolverdnssecconfigsrequestlistresolverdnssecconfigspaginatetypedef)
 - [ListResolverDnssecConfigsRequestRequestTypeDef](./type_defs.md#listresolverdnssecconfigsrequestrequesttypedef)
 - [ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef)
+- [ListResolverEndpointIpAddressesRequestListResolverEndpointIpAddressesPaginateTypeDef](./type_defs.md#listresolverendpointipaddressesrequestlistresolverendpointipaddressespaginatetypedef)
 - [ListResolverEndpointIpAddressesRequestRequestTypeDef](./type_defs.md#listresolverendpointipaddressesrequestrequesttypedef)
 - [ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef)
+- [ListResolverEndpointsRequestListResolverEndpointsPaginateTypeDef](./type_defs.md#listresolverendpointsrequestlistresolverendpointspaginatetypedef)
 - [ListResolverEndpointsRequestRequestTypeDef](./type_defs.md#listresolverendpointsrequestrequesttypedef)
 - [ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef)
+- [ListResolverQueryLogConfigAssociationsRequestListResolverQueryLogConfigAssociationsPaginateTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestlistresolverquerylogconfigassociationspaginatetypedef)
 - [ListResolverQueryLogConfigAssociationsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigassociationsrequestrequesttypedef)
 - [ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef)
+- [ListResolverQueryLogConfigsRequestListResolverQueryLogConfigsPaginateTypeDef](./type_defs.md#listresolverquerylogconfigsrequestlistresolverquerylogconfigspaginatetypedef)
 - [ListResolverQueryLogConfigsRequestRequestTypeDef](./type_defs.md#listresolverquerylogconfigsrequestrequesttypedef)
 - [ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef)
+- [ListResolverRuleAssociationsRequestListResolverRuleAssociationsPaginateTypeDef](./type_defs.md#listresolverruleassociationsrequestlistresolverruleassociationspaginatetypedef)
 - [ListResolverRuleAssociationsRequestRequestTypeDef](./type_defs.md#listresolverruleassociationsrequestrequesttypedef)
 - [ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef)
+- [ListResolverRulesRequestListResolverRulesPaginateTypeDef](./type_defs.md#listresolverrulesrequestlistresolverrulespaginatetypedef)
 - [ListResolverRulesRequestRequestTypeDef](./type_defs.md#listresolverrulesrequestrequesttypedef)
 - [ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef)
+- [ListTagsForResourceRequestListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourcerequestlisttagsforresourcepaginatetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -425,3 +338,4 @@ from mypy_boto3_route53resolver.type_defs import AssociateFirewallRuleGroupReque
 - [UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef)
 - [UpdateResolverRuleRequestRequestTypeDef](./type_defs.md#updateresolverrulerequestrequesttypedef)
 - [UpdateResolverRuleResponseTypeDef](./type_defs.md#updateresolverruleresponsetypedef)
+

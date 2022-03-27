@@ -1,2833 +1,3833 @@
-<a id="typed-dictionaries-for-boto3-robomaker-module"></a>
-
-# Typed dictionaries for boto3 RoboMaker module
+# Typed dictionaries
 
 > [Index](../README.md) > [RoboMaker](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module
-[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+!!! note ""
 
-- [Typed dictionaries for boto3 RoboMaker module](#typed-dictionaries-for-boto3-robomaker-module)
-  - [BatchDeleteWorldsRequestRequestTypeDef](#batchdeleteworldsrequestrequesttypedef)
-  - [BatchDeleteWorldsResponseTypeDef](#batchdeleteworldsresponsetypedef)
-  - [BatchDescribeSimulationJobRequestRequestTypeDef](#batchdescribesimulationjobrequestrequesttypedef)
-  - [BatchDescribeSimulationJobResponseTypeDef](#batchdescribesimulationjobresponsetypedef)
-  - [BatchPolicyTypeDef](#batchpolicytypedef)
-  - [CancelDeploymentJobRequestRequestTypeDef](#canceldeploymentjobrequestrequesttypedef)
-  - [CancelSimulationJobBatchRequestRequestTypeDef](#cancelsimulationjobbatchrequestrequesttypedef)
-  - [CancelSimulationJobRequestRequestTypeDef](#cancelsimulationjobrequestrequesttypedef)
-  - [CancelWorldExportJobRequestRequestTypeDef](#cancelworldexportjobrequestrequesttypedef)
-  - [CancelWorldGenerationJobRequestRequestTypeDef](#cancelworldgenerationjobrequestrequesttypedef)
-  - [ComputeResponseTypeDef](#computeresponsetypedef)
-  - [ComputeTypeDef](#computetypedef)
-  - [CreateDeploymentJobRequestRequestTypeDef](#createdeploymentjobrequestrequesttypedef)
-  - [CreateDeploymentJobResponseTypeDef](#createdeploymentjobresponsetypedef)
-  - [CreateFleetRequestRequestTypeDef](#createfleetrequestrequesttypedef)
-  - [CreateFleetResponseTypeDef](#createfleetresponsetypedef)
-  - [CreateRobotApplicationRequestRequestTypeDef](#createrobotapplicationrequestrequesttypedef)
-  - [CreateRobotApplicationResponseTypeDef](#createrobotapplicationresponsetypedef)
-  - [CreateRobotApplicationVersionRequestRequestTypeDef](#createrobotapplicationversionrequestrequesttypedef)
-  - [CreateRobotApplicationVersionResponseTypeDef](#createrobotapplicationversionresponsetypedef)
-  - [CreateRobotRequestRequestTypeDef](#createrobotrequestrequesttypedef)
-  - [CreateRobotResponseTypeDef](#createrobotresponsetypedef)
-  - [CreateSimulationApplicationRequestRequestTypeDef](#createsimulationapplicationrequestrequesttypedef)
-  - [CreateSimulationApplicationResponseTypeDef](#createsimulationapplicationresponsetypedef)
-  - [CreateSimulationApplicationVersionRequestRequestTypeDef](#createsimulationapplicationversionrequestrequesttypedef)
-  - [CreateSimulationApplicationVersionResponseTypeDef](#createsimulationapplicationversionresponsetypedef)
-  - [CreateSimulationJobRequestRequestTypeDef](#createsimulationjobrequestrequesttypedef)
-  - [CreateSimulationJobResponseTypeDef](#createsimulationjobresponsetypedef)
-  - [CreateWorldExportJobRequestRequestTypeDef](#createworldexportjobrequestrequesttypedef)
-  - [CreateWorldExportJobResponseTypeDef](#createworldexportjobresponsetypedef)
-  - [CreateWorldGenerationJobRequestRequestTypeDef](#createworldgenerationjobrequestrequesttypedef)
-  - [CreateWorldGenerationJobResponseTypeDef](#createworldgenerationjobresponsetypedef)
-  - [CreateWorldTemplateRequestRequestTypeDef](#createworldtemplaterequestrequesttypedef)
-  - [CreateWorldTemplateResponseTypeDef](#createworldtemplateresponsetypedef)
-  - [DataSourceConfigTypeDef](#datasourceconfigtypedef)
-  - [DataSourceTypeDef](#datasourcetypedef)
-  - [DeleteFleetRequestRequestTypeDef](#deletefleetrequestrequesttypedef)
-  - [DeleteRobotApplicationRequestRequestTypeDef](#deleterobotapplicationrequestrequesttypedef)
-  - [DeleteRobotRequestRequestTypeDef](#deleterobotrequestrequesttypedef)
-  - [DeleteSimulationApplicationRequestRequestTypeDef](#deletesimulationapplicationrequestrequesttypedef)
-  - [DeleteWorldTemplateRequestRequestTypeDef](#deleteworldtemplaterequestrequesttypedef)
-  - [DeploymentApplicationConfigTypeDef](#deploymentapplicationconfigtypedef)
-  - [DeploymentConfigTypeDef](#deploymentconfigtypedef)
-  - [DeploymentJobTypeDef](#deploymentjobtypedef)
-  - [DeploymentLaunchConfigTypeDef](#deploymentlaunchconfigtypedef)
-  - [DeregisterRobotRequestRequestTypeDef](#deregisterrobotrequestrequesttypedef)
-  - [DeregisterRobotResponseTypeDef](#deregisterrobotresponsetypedef)
-  - [DescribeDeploymentJobRequestRequestTypeDef](#describedeploymentjobrequestrequesttypedef)
-  - [DescribeDeploymentJobResponseTypeDef](#describedeploymentjobresponsetypedef)
-  - [DescribeFleetRequestRequestTypeDef](#describefleetrequestrequesttypedef)
-  - [DescribeFleetResponseTypeDef](#describefleetresponsetypedef)
-  - [DescribeRobotApplicationRequestRequestTypeDef](#describerobotapplicationrequestrequesttypedef)
-  - [DescribeRobotApplicationResponseTypeDef](#describerobotapplicationresponsetypedef)
-  - [DescribeRobotRequestRequestTypeDef](#describerobotrequestrequesttypedef)
-  - [DescribeRobotResponseTypeDef](#describerobotresponsetypedef)
-  - [DescribeSimulationApplicationRequestRequestTypeDef](#describesimulationapplicationrequestrequesttypedef)
-  - [DescribeSimulationApplicationResponseTypeDef](#describesimulationapplicationresponsetypedef)
-  - [DescribeSimulationJobBatchRequestRequestTypeDef](#describesimulationjobbatchrequestrequesttypedef)
-  - [DescribeSimulationJobBatchResponseTypeDef](#describesimulationjobbatchresponsetypedef)
-  - [DescribeSimulationJobRequestRequestTypeDef](#describesimulationjobrequestrequesttypedef)
-  - [DescribeSimulationJobResponseTypeDef](#describesimulationjobresponsetypedef)
-  - [DescribeWorldExportJobRequestRequestTypeDef](#describeworldexportjobrequestrequesttypedef)
-  - [DescribeWorldExportJobResponseTypeDef](#describeworldexportjobresponsetypedef)
-  - [DescribeWorldGenerationJobRequestRequestTypeDef](#describeworldgenerationjobrequestrequesttypedef)
-  - [DescribeWorldGenerationJobResponseTypeDef](#describeworldgenerationjobresponsetypedef)
-  - [DescribeWorldRequestRequestTypeDef](#describeworldrequestrequesttypedef)
-  - [DescribeWorldResponseTypeDef](#describeworldresponsetypedef)
-  - [DescribeWorldTemplateRequestRequestTypeDef](#describeworldtemplaterequestrequesttypedef)
-  - [DescribeWorldTemplateResponseTypeDef](#describeworldtemplateresponsetypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [FailedCreateSimulationJobRequestTypeDef](#failedcreatesimulationjobrequesttypedef)
-  - [FailureSummaryTypeDef](#failuresummarytypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [FinishedWorldsSummaryTypeDef](#finishedworldssummarytypedef)
-  - [FleetTypeDef](#fleettypedef)
-  - [GetWorldTemplateBodyRequestRequestTypeDef](#getworldtemplatebodyrequestrequesttypedef)
-  - [GetWorldTemplateBodyResponseTypeDef](#getworldtemplatebodyresponsetypedef)
-  - [LaunchConfigTypeDef](#launchconfigtypedef)
-  - [ListDeploymentJobsRequestRequestTypeDef](#listdeploymentjobsrequestrequesttypedef)
-  - [ListDeploymentJobsResponseTypeDef](#listdeploymentjobsresponsetypedef)
-  - [ListFleetsRequestRequestTypeDef](#listfleetsrequestrequesttypedef)
-  - [ListFleetsResponseTypeDef](#listfleetsresponsetypedef)
-  - [ListRobotApplicationsRequestRequestTypeDef](#listrobotapplicationsrequestrequesttypedef)
-  - [ListRobotApplicationsResponseTypeDef](#listrobotapplicationsresponsetypedef)
-  - [ListRobotsRequestRequestTypeDef](#listrobotsrequestrequesttypedef)
-  - [ListRobotsResponseTypeDef](#listrobotsresponsetypedef)
-  - [ListSimulationApplicationsRequestRequestTypeDef](#listsimulationapplicationsrequestrequesttypedef)
-  - [ListSimulationApplicationsResponseTypeDef](#listsimulationapplicationsresponsetypedef)
-  - [ListSimulationJobBatchesRequestRequestTypeDef](#listsimulationjobbatchesrequestrequesttypedef)
-  - [ListSimulationJobBatchesResponseTypeDef](#listsimulationjobbatchesresponsetypedef)
-  - [ListSimulationJobsRequestRequestTypeDef](#listsimulationjobsrequestrequesttypedef)
-  - [ListSimulationJobsResponseTypeDef](#listsimulationjobsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWorldExportJobsRequestRequestTypeDef](#listworldexportjobsrequestrequesttypedef)
-  - [ListWorldExportJobsResponseTypeDef](#listworldexportjobsresponsetypedef)
-  - [ListWorldGenerationJobsRequestRequestTypeDef](#listworldgenerationjobsrequestrequesttypedef)
-  - [ListWorldGenerationJobsResponseTypeDef](#listworldgenerationjobsresponsetypedef)
-  - [ListWorldTemplatesRequestRequestTypeDef](#listworldtemplatesrequestrequesttypedef)
-  - [ListWorldTemplatesResponseTypeDef](#listworldtemplatesresponsetypedef)
-  - [ListWorldsRequestRequestTypeDef](#listworldsrequestrequesttypedef)
-  - [ListWorldsResponseTypeDef](#listworldsresponsetypedef)
-  - [LoggingConfigTypeDef](#loggingconfigtypedef)
-  - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [OutputLocationTypeDef](#outputlocationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PortForwardingConfigTypeDef](#portforwardingconfigtypedef)
-  - [PortMappingTypeDef](#portmappingtypedef)
-  - [ProgressDetailTypeDef](#progressdetailtypedef)
-  - [RegisterRobotRequestRequestTypeDef](#registerrobotrequestrequesttypedef)
-  - [RegisterRobotResponseTypeDef](#registerrobotresponsetypedef)
-  - [RenderingEngineTypeDef](#renderingenginetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestartSimulationJobRequestRequestTypeDef](#restartsimulationjobrequestrequesttypedef)
-  - [RobotApplicationConfigTypeDef](#robotapplicationconfigtypedef)
-  - [RobotApplicationSummaryTypeDef](#robotapplicationsummarytypedef)
-  - [RobotDeploymentTypeDef](#robotdeploymenttypedef)
-  - [RobotSoftwareSuiteTypeDef](#robotsoftwaresuitetypedef)
-  - [RobotTypeDef](#robottypedef)
-  - [S3KeyOutputTypeDef](#s3keyoutputtypedef)
-  - [S3ObjectTypeDef](#s3objecttypedef)
-  - [SimulationApplicationConfigTypeDef](#simulationapplicationconfigtypedef)
-  - [SimulationApplicationSummaryTypeDef](#simulationapplicationsummarytypedef)
-  - [SimulationJobBatchSummaryTypeDef](#simulationjobbatchsummarytypedef)
-  - [SimulationJobRequestTypeDef](#simulationjobrequesttypedef)
-  - [SimulationJobSummaryTypeDef](#simulationjobsummarytypedef)
-  - [SimulationJobTypeDef](#simulationjobtypedef)
-  - [SimulationSoftwareSuiteTypeDef](#simulationsoftwaresuitetypedef)
-  - [SourceConfigTypeDef](#sourceconfigtypedef)
-  - [SourceTypeDef](#sourcetypedef)
-  - [StartSimulationJobBatchRequestRequestTypeDef](#startsimulationjobbatchrequestrequesttypedef)
-  - [StartSimulationJobBatchResponseTypeDef](#startsimulationjobbatchresponsetypedef)
-  - [SyncDeploymentJobRequestRequestTypeDef](#syncdeploymentjobrequestrequesttypedef)
-  - [SyncDeploymentJobResponseTypeDef](#syncdeploymentjobresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TemplateLocationTypeDef](#templatelocationtypedef)
-  - [TemplateSummaryTypeDef](#templatesummarytypedef)
-  - [ToolTypeDef](#tooltypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateRobotApplicationRequestRequestTypeDef](#updaterobotapplicationrequestrequesttypedef)
-  - [UpdateRobotApplicationResponseTypeDef](#updaterobotapplicationresponsetypedef)
-  - [UpdateSimulationApplicationRequestRequestTypeDef](#updatesimulationapplicationrequestrequesttypedef)
-  - [UpdateSimulationApplicationResponseTypeDef](#updatesimulationapplicationresponsetypedef)
-  - [UpdateWorldTemplateRequestRequestTypeDef](#updateworldtemplaterequestrequesttypedef)
-  - [UpdateWorldTemplateResponseTypeDef](#updateworldtemplateresponsetypedef)
-  - [UploadConfigurationTypeDef](#uploadconfigurationtypedef)
-  - [VPCConfigResponseTypeDef](#vpcconfigresponsetypedef)
-  - [VPCConfigTypeDef](#vpcconfigtypedef)
-  - [WorldConfigTypeDef](#worldconfigtypedef)
-  - [WorldCountTypeDef](#worldcounttypedef)
-  - [WorldExportJobSummaryTypeDef](#worldexportjobsummarytypedef)
-  - [WorldFailureTypeDef](#worldfailuretypedef)
-  - [WorldGenerationJobSummaryTypeDef](#worldgenerationjobsummarytypedef)
-  - [WorldSummaryTypeDef](#worldsummarytypedef)
-
-<a id="batchdeleteworldsrequestrequesttypedef"></a>
+    Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+    type annotations stubs module [mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ## BatchDeleteWorldsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDef
+
+def get_value() -> BatchDeleteWorldsRequestRequestTypeDef:
+    return {
+        "worlds": ...,
+    }
 ```
 
-Required fields:
-
-- `worlds`: `Sequence`\[`str`\]
-
-<a id="batchdeleteworldsresponsetypedef"></a>
+```python title="Definition"
+class BatchDeleteWorldsRequestRequestTypeDef(TypedDict):
+    worlds: Sequence[str],
+```
 
 ## BatchDeleteWorldsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsResponseTypeDef
+
+def get_value() -> BatchDeleteWorldsResponseTypeDef:
+    return {
+        "unprocessedWorlds": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteWorldsResponseTypeDef(TypedDict):
+    unprocessedWorlds: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `unprocessedWorlds`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdescribesimulationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDescribeSimulationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import BatchDescribeSimulationJobRequestRequestTypeDef
+
+def get_value() -> BatchDescribeSimulationJobRequestRequestTypeDef:
+    return {
+        "jobs": ...,
+    }
 ```
 
-Required fields:
-
-- `jobs`: `Sequence`\[`str`\]
-
-<a id="batchdescribesimulationjobresponsetypedef"></a>
+```python title="Definition"
+class BatchDescribeSimulationJobRequestRequestTypeDef(TypedDict):
+    jobs: Sequence[str],
+```
 
 ## BatchDescribeSimulationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import BatchDescribeSimulationJobResponseTypeDef
+
+def get_value() -> BatchDescribeSimulationJobResponseTypeDef:
+    return {
+        "jobs": ...,
+        "unprocessedJobs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDescribeSimulationJobResponseTypeDef(TypedDict):
+    jobs: List[SimulationJobTypeDef],  # (1)
+    unprocessedJobs: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobs`: `List`\[[SimulationJobTypeDef](./type_defs.md#simulationjobtypedef)\]
-- `unprocessedJobs`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchpolicytypedef"></a>
-
+1. See [:material-code-braces: SimulationJobTypeDef](./type_defs.md#simulationjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import BatchPolicyTypeDef
+
+def get_value() -> BatchPolicyTypeDef:
+    return {
+        "timeoutInSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `timeoutInSeconds`: `int`
-- `maxConcurrency`: `int`
-
-<a id="canceldeploymentjobrequestrequesttypedef"></a>
+```python title="Definition"
+class BatchPolicyTypeDef(TypedDict):
+    timeoutInSeconds: NotRequired[int],
+    maxConcurrency: NotRequired[int],
+```
 
 ## CancelDeploymentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CancelDeploymentJobRequestRequestTypeDef
+
+def get_value() -> CancelDeploymentJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="cancelsimulationjobbatchrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelDeploymentJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## CancelSimulationJobBatchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CancelSimulationJobBatchRequestRequestTypeDef
+
+def get_value() -> CancelSimulationJobBatchRequestRequestTypeDef:
+    return {
+        "batch": ...,
+    }
 ```
 
-Required fields:
-
-- `batch`: `str`
-
-<a id="cancelsimulationjobrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelSimulationJobBatchRequestRequestTypeDef(TypedDict):
+    batch: str,
+```
 
 ## CancelSimulationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CancelSimulationJobRequestRequestTypeDef
+
+def get_value() -> CancelSimulationJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="cancelworldexportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelSimulationJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## CancelWorldExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CancelWorldExportJobRequestRequestTypeDef
+
+def get_value() -> CancelWorldExportJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="cancelworldgenerationjobrequestrequesttypedef"></a>
+```python title="Definition"
+class CancelWorldExportJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## CancelWorldGenerationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CancelWorldGenerationJobRequestRequestTypeDef
+
+def get_value() -> CancelWorldGenerationJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="computeresponsetypedef"></a>
+```python title="Definition"
+class CancelWorldGenerationJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## ComputeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ComputeResponseTypeDef
+
+def get_value() -> ComputeResponseTypeDef:
+    return {
+        "simulationUnitLimit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComputeResponseTypeDef(TypedDict):
+    simulationUnitLimit: NotRequired[int],
+    computeType: NotRequired[ComputeTypeType],  # (1)
+    gpuUnitLimit: NotRequired[int],
+```
 
-- `simulationUnitLimit`: `int`
-- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
-- `gpuUnitLimit`: `int`
-
-<a id="computetypedef"></a>
-
+1. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
 ## ComputeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ComputeTypeDef
+
+def get_value() -> ComputeTypeDef:
+    return {
+        "simulationUnitLimit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ComputeTypeDef(TypedDict):
+    simulationUnitLimit: NotRequired[int],
+    computeType: NotRequired[ComputeTypeType],  # (1)
+    gpuUnitLimit: NotRequired[int],
+```
 
-- `simulationUnitLimit`: `int`
-- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
-- `gpuUnitLimit`: `int`
-
-<a id="createdeploymentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
 ## CreateDeploymentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateDeploymentJobRequestRequestTypeDef
+
+def get_value() -> CreateDeploymentJobRequestRequestTypeDef:
+    return {
+        "clientRequestToken": ...,
+        "fleet": ...,
+        "deploymentApplicationConfigs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentJobRequestRequestTypeDef(TypedDict):
+    clientRequestToken: str,
+    fleet: str,
+    deploymentApplicationConfigs: Sequence[DeploymentApplicationConfigTypeDef],  # (1)
+    deploymentConfig: NotRequired[DeploymentConfigTypeDef],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `clientRequestToken`: `str`
-- `fleet`: `str`
-- `deploymentApplicationConfigs`:
-  `Sequence`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-
-Optional fields:
-
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createdeploymentjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+2. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
 ## CreateDeploymentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateDeploymentJobResponseTypeDef
+
+def get_value() -> CreateDeploymentJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "fleet": ...,
+        "status": ...,
+        "deploymentApplicationConfigs": ...,
+        "failureReason": ...,
+        "failureCode": ...,
+        "createdAt": ...,
+        "deploymentConfig": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentJobResponseTypeDef(TypedDict):
+    arn: str,
+    fleet: str,
+    status: DeploymentStatusType,  # (1)
+    deploymentApplicationConfigs: List[DeploymentApplicationConfigTypeDef],  # (2)
+    failureReason: str,
+    failureCode: DeploymentJobErrorCodeType,  # (3)
+    createdAt: datetime,
+    deploymentConfig: DeploymentConfigTypeDef,  # (4)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `arn`: `str`
-- `fleet`: `str`
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-- `failureReason`: `str`
-- `failureCode`:
-  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
-- `createdAt`: `datetime`
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfleetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+3. See [:material-code-brackets: DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype) 
+4. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFleetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateFleetRequestRequestTypeDef
+
+def get_value() -> CreateFleetRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createfleetresponsetypedef"></a>
+```python title="Definition"
+class CreateFleetRequestRequestTypeDef(TypedDict):
+    name: str,
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateFleetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateFleetResponseTypeDef
+
+def get_value() -> CreateFleetResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "createdAt": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFleetResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    createdAt: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `createdAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrobotapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRobotApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotApplicationRequestRequestTypeDef
+
+def get_value() -> CreateRobotApplicationRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "robotSoftwareSuite": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRobotApplicationRequestRequestTypeDef(TypedDict):
+    name: str,
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (1)
+    sources: NotRequired[Sequence[SourceConfigTypeDef]],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+    environment: NotRequired[EnvironmentTypeDef],  # (3)
+```
 
-- `name`: `str`
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-
-Optional fields:
-
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-
-<a id="createrobotapplicationresponsetypedef"></a>
-
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+2. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
 ## CreateRobotApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotApplicationResponseTypeDef
+
+def get_value() -> CreateRobotApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "robotSoftwareSuite": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "tags": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRobotApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    tags: Dict[str, str],
+    environment: EnvironmentTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrobotapplicationversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRobotApplicationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotApplicationVersionRequestRequestTypeDef
+
+def get_value() -> CreateRobotApplicationVersionRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `currentRevisionId`: `str`
-- `s3Etags`: `Sequence`\[`str`\]
-- `imageDigest`: `str`
-
-<a id="createrobotapplicationversionresponsetypedef"></a>
+```python title="Definition"
+class CreateRobotApplicationVersionRequestRequestTypeDef(TypedDict):
+    application: str,
+    currentRevisionId: NotRequired[str],
+    s3Etags: NotRequired[Sequence[str]],
+    imageDigest: NotRequired[str],
+```
 
 ## CreateRobotApplicationVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotApplicationVersionResponseTypeDef
+
+def get_value() -> CreateRobotApplicationVersionResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "robotSoftwareSuite": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRobotApplicationVersionResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    environment: EnvironmentTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrobotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRobotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotRequestRequestTypeDef
+
+def get_value() -> CreateRobotRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "architecture": ...,
+        "greengrassGroupId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRobotRequestRequestTypeDef(TypedDict):
+    name: str,
+    architecture: ArchitectureType,  # (1)
+    greengrassGroupId: str,
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `name`: `str`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `greengrassGroupId`: `str`
-
-Optional fields:
-
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createrobotresponsetypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## CreateRobotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateRobotResponseTypeDef
+
+def get_value() -> CreateRobotResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "createdAt": ...,
+        "greengrassGroupId": ...,
+        "architecture": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRobotResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    createdAt: datetime,
+    greengrassGroupId: str,
+    architecture: ArchitectureType,  # (1)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `createdAt`: `datetime`
-- `greengrassGroupId`: `str`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsimulationapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSimulationApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationApplicationRequestRequestTypeDef
+
+def get_value() -> CreateSimulationApplicationRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSimulationApplicationRequestRequestTypeDef(TypedDict):
+    name: str,
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    sources: NotRequired[Sequence[SourceConfigTypeDef]],  # (3)
+    renderingEngine: NotRequired[RenderingEngineTypeDef],  # (4)
+    tags: NotRequired[Mapping[str, str]],
+    environment: NotRequired[EnvironmentTypeDef],  # (5)
+```
 
-- `name`: `str`
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-
-Optional fields:
-
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-
-<a id="createsimulationapplicationresponsetypedef"></a>
-
+1. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
 ## CreateSimulationApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationApplicationResponseTypeDef
+
+def get_value() -> CreateSimulationApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+        "renderingEngine": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "tags": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSimulationApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (2)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (3)
+    renderingEngine: RenderingEngineTypeDef,  # (4)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    tags: Dict[str, str],
+    environment: EnvironmentTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsimulationapplicationversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+3. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSimulationApplicationVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationApplicationVersionRequestRequestTypeDef
+
+def get_value() -> CreateSimulationApplicationVersionRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `currentRevisionId`: `str`
-- `s3Etags`: `Sequence`\[`str`\]
-- `imageDigest`: `str`
-
-<a id="createsimulationapplicationversionresponsetypedef"></a>
+```python title="Definition"
+class CreateSimulationApplicationVersionRequestRequestTypeDef(TypedDict):
+    application: str,
+    currentRevisionId: NotRequired[str],
+    s3Etags: NotRequired[Sequence[str]],
+    imageDigest: NotRequired[str],
+```
 
 ## CreateSimulationApplicationVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationApplicationVersionResponseTypeDef
+
+def get_value() -> CreateSimulationApplicationVersionResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+        "renderingEngine": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSimulationApplicationVersionResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (2)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (3)
+    renderingEngine: RenderingEngineTypeDef,  # (4)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    environment: EnvironmentTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsimulationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+3. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSimulationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationJobRequestRequestTypeDef
+
+def get_value() -> CreateSimulationJobRequestRequestTypeDef:
+    return {
+        "maxJobDurationInSeconds": ...,
+        "iamRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSimulationJobRequestRequestTypeDef(TypedDict):
+    maxJobDurationInSeconds: int,
+    iamRole: str,
+    clientRequestToken: NotRequired[str],
+    outputLocation: NotRequired[OutputLocationTypeDef],  # (1)
+    loggingConfig: NotRequired[LoggingConfigTypeDef],  # (2)
+    failureBehavior: NotRequired[FailureBehaviorType],  # (3)
+    robotApplications: NotRequired[Sequence[RobotApplicationConfigTypeDef]],  # (4)
+    simulationApplications: NotRequired[Sequence[SimulationApplicationConfigTypeDef]],  # (5)
+    dataSources: NotRequired[Sequence[DataSourceConfigTypeDef]],  # (6)
+    tags: NotRequired[Mapping[str, str]],
+    vpcConfig: NotRequired[VPCConfigTypeDef],  # (7)
+    compute: NotRequired[ComputeTypeDef],  # (8)
+```
 
-- `maxJobDurationInSeconds`: `int`
-- `iamRole`: `str`
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `robotApplications`:
-  `Sequence`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `Sequence`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `Sequence`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-- `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
-
-<a id="createsimulationjobresponsetypedef"></a>
-
+1. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+4. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+5. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+6. See [:material-code-braces: DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef) 
+7. See [:material-code-braces: VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+8. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
 ## CreateSimulationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateSimulationJobResponseTypeDef
+
+def get_value() -> CreateSimulationJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "lastStartedAt": ...,
+        "lastUpdatedAt": ...,
+        "failureBehavior": ...,
+        "failureCode": ...,
+        "clientRequestToken": ...,
+        "outputLocation": ...,
+        "loggingConfig": ...,
+        "maxJobDurationInSeconds": ...,
+        "simulationTimeMillis": ...,
+        "iamRole": ...,
+        "robotApplications": ...,
+        "simulationApplications": ...,
+        "dataSources": ...,
+        "tags": ...,
+        "vpcConfig": ...,
+        "compute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSimulationJobResponseTypeDef(TypedDict):
+    arn: str,
+    status: SimulationJobStatusType,  # (1)
+    lastStartedAt: datetime,
+    lastUpdatedAt: datetime,
+    failureBehavior: FailureBehaviorType,  # (2)
+    failureCode: SimulationJobErrorCodeType,  # (3)
+    clientRequestToken: str,
+    outputLocation: OutputLocationTypeDef,  # (4)
+    loggingConfig: LoggingConfigTypeDef,  # (5)
+    maxJobDurationInSeconds: int,
+    simulationTimeMillis: int,
+    iamRole: str,
+    robotApplications: List[RobotApplicationConfigTypeDef],  # (6)
+    simulationApplications: List[SimulationApplicationConfigTypeDef],  # (7)
+    dataSources: List[DataSourceTypeDef],  # (8)
+    tags: Dict[str, str],
+    vpcConfig: VPCConfigResponseTypeDef,  # (9)
+    compute: ComputeResponseTypeDef,  # (10)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (11)
+```
 
-- `arn`: `str`
-- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
-- `lastStartedAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `failureCode`:
-  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `maxJobDurationInSeconds`: `int`
-- `simulationTimeMillis`: `int`
-- `iamRole`: `str`
-- `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `vpcConfig`:
-  [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `compute`: [ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworldexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobStatusType](./literals.md#simulationjobstatustype) 
+2. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+3. See [:material-code-brackets: SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype) 
+4. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+5. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+6. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+7. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+8. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+9. See [:material-code-braces: VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+10. See [:material-code-braces: ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef) 
+11. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorldExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldExportJobRequestRequestTypeDef
+
+def get_value() -> CreateWorldExportJobRequestRequestTypeDef:
+    return {
+        "worlds": ...,
+        "outputLocation": ...,
+        "iamRole": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorldExportJobRequestRequestTypeDef(TypedDict):
+    worlds: Sequence[str],
+    outputLocation: OutputLocationTypeDef,  # (1)
+    iamRole: str,
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `worlds`: `Sequence`\[`str`\]
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `iamRole`: `str`
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createworldexportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
 ## CreateWorldExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldExportJobResponseTypeDef
+
+def get_value() -> CreateWorldExportJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "createdAt": ...,
+        "failureCode": ...,
+        "clientRequestToken": ...,
+        "outputLocation": ...,
+        "iamRole": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorldExportJobResponseTypeDef(TypedDict):
+    arn: str,
+    status: WorldExportJobStatusType,  # (1)
+    createdAt: datetime,
+    failureCode: WorldExportJobErrorCodeType,  # (2)
+    clientRequestToken: str,
+    outputLocation: OutputLocationTypeDef,  # (3)
+    iamRole: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
-- `createdAt`: `datetime`
-- `failureCode`:
-  [WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype)
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `iamRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworldgenerationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorldExportJobStatusType](./literals.md#worldexportjobstatustype) 
+2. See [:material-code-brackets: WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype) 
+3. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorldGenerationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldGenerationJobRequestRequestTypeDef
+
+def get_value() -> CreateWorldGenerationJobRequestRequestTypeDef:
+    return {
+        "template": ...,
+        "worldCount": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorldGenerationJobRequestRequestTypeDef(TypedDict):
+    template: str,
+    worldCount: WorldCountTypeDef,  # (1)
+    clientRequestToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+    worldTags: NotRequired[Mapping[str, str]],
+```
 
-- `template`: `str`
-- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `worldTags`: `Mapping`\[`str`, `str`\]
-
-<a id="createworldgenerationjobresponsetypedef"></a>
-
+1. See [:material-code-braces: WorldCountTypeDef](./type_defs.md#worldcounttypedef) 
 ## CreateWorldGenerationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldGenerationJobResponseTypeDef
+
+def get_value() -> CreateWorldGenerationJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "createdAt": ...,
+        "failureCode": ...,
+        "clientRequestToken": ...,
+        "template": ...,
+        "worldCount": ...,
+        "tags": ...,
+        "worldTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorldGenerationJobResponseTypeDef(TypedDict):
+    arn: str,
+    status: WorldGenerationJobStatusType,  # (1)
+    createdAt: datetime,
+    failureCode: WorldGenerationJobErrorCodeType,  # (2)
+    clientRequestToken: str,
+    template: str,
+    worldCount: WorldCountTypeDef,  # (3)
+    tags: Dict[str, str],
+    worldTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `status`:
-  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
-- `createdAt`: `datetime`
-- `failureCode`:
-  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
-- `clientRequestToken`: `str`
-- `template`: `str`
-- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-- `worldTags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createworldtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype) 
+2. See [:material-code-brackets: WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype) 
+3. See [:material-code-braces: WorldCountTypeDef](./type_defs.md#worldcounttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateWorldTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldTemplateRequestRequestTypeDef
+
+def get_value() -> CreateWorldTemplateRequestRequestTypeDef:
+    return {
+        "clientRequestToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateWorldTemplateRequestRequestTypeDef(TypedDict):
+    clientRequestToken: NotRequired[str],
+    name: NotRequired[str],
+    templateBody: NotRequired[str],
+    templateLocation: NotRequired[TemplateLocationTypeDef],  # (1)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `clientRequestToken`: `str`
-- `name`: `str`
-- `templateBody`: `str`
-- `templateLocation`:
-  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createworldtemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef) 
 ## CreateWorldTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import CreateWorldTemplateResponseTypeDef
+
+def get_value() -> CreateWorldTemplateResponseTypeDef:
+    return {
+        "arn": ...,
+        "clientRequestToken": ...,
+        "createdAt": ...,
+        "name": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateWorldTemplateResponseTypeDef(TypedDict):
+    arn: str,
+    clientRequestToken: str,
+    createdAt: datetime,
+    name: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `clientRequestToken`: `str`
-- `createdAt`: `datetime`
-- `name`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasourceconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DataSourceConfigTypeDef
+
+def get_value() -> DataSourceConfigTypeDef:
+    return {
+        "name": ...,
+        "s3Bucket": ...,
+        "s3Keys": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DataSourceConfigTypeDef(TypedDict):
+    name: str,
+    s3Bucket: str,
+    s3Keys: Sequence[str],
+    type: NotRequired[DataSourceTypeType],  # (1)
+    destination: NotRequired[str],
+```
 
-- `name`: `str`
-- `s3Bucket`: `str`
-- `s3Keys`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
-- `destination`: `str`
-
-<a id="datasourcetypedef"></a>
-
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 ## DataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    name: NotRequired[str],
+    s3Bucket: NotRequired[str],
+    s3Keys: NotRequired[List[S3KeyOutputTypeDef]],  # (1)
+    type: NotRequired[DataSourceTypeType],  # (2)
+    destination: NotRequired[str],
+```
 
-- `name`: `str`
-- `s3Bucket`: `str`
-- `s3Keys`: `List`\[[S3KeyOutputTypeDef](./type_defs.md#s3keyoutputtypedef)\]
-- `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
-- `destination`: `str`
-
-<a id="deletefleetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: S3KeyOutputTypeDef](./type_defs.md#s3keyoutputtypedef) 
+2. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
 ## DeleteFleetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeleteFleetRequestRequestTypeDef
+
+def get_value() -> DeleteFleetRequestRequestTypeDef:
+    return {
+        "fleet": ...,
+    }
 ```
 
-Required fields:
-
-- `fleet`: `str`
-
-<a id="deleterobotapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFleetRequestRequestTypeDef(TypedDict):
+    fleet: str,
+```
 
 ## DeleteRobotApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeleteRobotApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteRobotApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `applicationVersion`: `str`
-
-<a id="deleterobotrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRobotApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    applicationVersion: NotRequired[str],
+```
 
 ## DeleteRobotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeleteRobotRequestRequestTypeDef
+
+def get_value() -> DeleteRobotRequestRequestTypeDef:
+    return {
+        "robot": ...,
+    }
 ```
 
-Required fields:
-
-- `robot`: `str`
-
-<a id="deletesimulationapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRobotRequestRequestTypeDef(TypedDict):
+    robot: str,
+```
 
 ## DeleteSimulationApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeleteSimulationApplicationRequestRequestTypeDef
+
+def get_value() -> DeleteSimulationApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `applicationVersion`: `str`
-
-<a id="deleteworldtemplaterequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSimulationApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    applicationVersion: NotRequired[str],
+```
 
 ## DeleteWorldTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeleteWorldTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteWorldTemplateRequestRequestTypeDef:
+    return {
+        "template": ...,
+    }
 ```
 
-Required fields:
-
-- `template`: `str`
-
-<a id="deploymentapplicationconfigtypedef"></a>
+```python title="Definition"
+class DeleteWorldTemplateRequestRequestTypeDef(TypedDict):
+    template: str,
+```
 
 ## DeploymentApplicationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeploymentApplicationConfigTypeDef
+
+def get_value() -> DeploymentApplicationConfigTypeDef:
+    return {
+        "application": ...,
+        "applicationVersion": ...,
+        "launchConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentApplicationConfigTypeDef(TypedDict):
+    application: str,
+    applicationVersion: str,
+    launchConfig: DeploymentLaunchConfigTypeDef,  # (1)
+```
 
-- `application`: `str`
-- `applicationVersion`: `str`
-- `launchConfig`:
-  [DeploymentLaunchConfigTypeDef](./type_defs.md#deploymentlaunchconfigtypedef)
-
-<a id="deploymentconfigtypedef"></a>
-
+1. See [:material-code-braces: DeploymentLaunchConfigTypeDef](./type_defs.md#deploymentlaunchconfigtypedef) 
 ## DeploymentConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeploymentConfigTypeDef
+
+def get_value() -> DeploymentConfigTypeDef:
+    return {
+        "concurrentDeploymentPercentage": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentConfigTypeDef(TypedDict):
+    concurrentDeploymentPercentage: NotRequired[int],
+    failureThresholdPercentage: NotRequired[int],
+    robotDeploymentTimeoutInSeconds: NotRequired[int],
+    downloadConditionFile: NotRequired[S3ObjectTypeDef],  # (1)
+```
 
-- `concurrentDeploymentPercentage`: `int`
-- `failureThresholdPercentage`: `int`
-- `robotDeploymentTimeoutInSeconds`: `int`
-- `downloadConditionFile`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
-
-<a id="deploymentjobtypedef"></a>
-
+1. See [:material-code-braces: S3ObjectTypeDef](./type_defs.md#s3objecttypedef) 
 ## DeploymentJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeploymentJobTypeDef
+
+def get_value() -> DeploymentJobTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentJobTypeDef(TypedDict):
+    arn: NotRequired[str],
+    fleet: NotRequired[str],
+    status: NotRequired[DeploymentStatusType],  # (1)
+    deploymentApplicationConfigs: NotRequired[List[DeploymentApplicationConfigTypeDef]],  # (2)
+    deploymentConfig: NotRequired[DeploymentConfigTypeDef],  # (3)
+    failureReason: NotRequired[str],
+    failureCode: NotRequired[DeploymentJobErrorCodeType],  # (4)
+    createdAt: NotRequired[datetime],
+```
 
-- `arn`: `str`
-- `fleet`: `str`
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `failureReason`: `str`
-- `failureCode`:
-  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
-- `createdAt`: `datetime`
-
-<a id="deploymentlaunchconfigtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+3. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+4. See [:material-code-brackets: DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype) 
 ## DeploymentLaunchConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeploymentLaunchConfigTypeDef
+
+def get_value() -> DeploymentLaunchConfigTypeDef:
+    return {
+        "packageName": ...,
+        "launchFile": ...,
+    }
 ```
 
-Required fields:
-
-- `packageName`: `str`
-- `launchFile`: `str`
-
-Optional fields:
-
-- `preLaunchFile`: `str`
-- `postLaunchFile`: `str`
-- `environmentVariables`: `Mapping`\[`str`, `str`\]
-
-<a id="deregisterrobotrequestrequesttypedef"></a>
+```python title="Definition"
+class DeploymentLaunchConfigTypeDef(TypedDict):
+    packageName: str,
+    launchFile: str,
+    preLaunchFile: NotRequired[str],
+    postLaunchFile: NotRequired[str],
+    environmentVariables: NotRequired[Mapping[str, str]],
+```
 
 ## DeregisterRobotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeregisterRobotRequestRequestTypeDef
+
+def get_value() -> DeregisterRobotRequestRequestTypeDef:
+    return {
+        "fleet": ...,
+        "robot": ...,
+    }
 ```
 
-Required fields:
-
-- `fleet`: `str`
-- `robot`: `str`
-
-<a id="deregisterrobotresponsetypedef"></a>
+```python title="Definition"
+class DeregisterRobotRequestRequestTypeDef(TypedDict):
+    fleet: str,
+    robot: str,
+```
 
 ## DeregisterRobotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DeregisterRobotResponseTypeDef
+
+def get_value() -> DeregisterRobotResponseTypeDef:
+    return {
+        "fleet": ...,
+        "robot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterRobotResponseTypeDef(TypedDict):
+    fleet: str,
+    robot: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `fleet`: `str`
-- `robot`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedeploymentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDeploymentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeDeploymentJobRequestRequestTypeDef
+
+def get_value() -> DescribeDeploymentJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="describedeploymentjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDeploymentJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## DescribeDeploymentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeDeploymentJobResponseTypeDef
+
+def get_value() -> DescribeDeploymentJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "fleet": ...,
+        "status": ...,
+        "deploymentConfig": ...,
+        "deploymentApplicationConfigs": ...,
+        "failureReason": ...,
+        "failureCode": ...,
+        "createdAt": ...,
+        "robotDeploymentSummary": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDeploymentJobResponseTypeDef(TypedDict):
+    arn: str,
+    fleet: str,
+    status: DeploymentStatusType,  # (1)
+    deploymentConfig: DeploymentConfigTypeDef,  # (2)
+    deploymentApplicationConfigs: List[DeploymentApplicationConfigTypeDef],  # (3)
+    failureReason: str,
+    failureCode: DeploymentJobErrorCodeType,  # (4)
+    createdAt: datetime,
+    robotDeploymentSummary: List[RobotDeploymentTypeDef],  # (5)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `arn`: `str`
-- `fleet`: `str`
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-- `failureReason`: `str`
-- `failureCode`:
-  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
-- `createdAt`: `datetime`
-- `robotDeploymentSummary`:
-  `List`\[[RobotDeploymentTypeDef](./type_defs.md#robotdeploymenttypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefleetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+3. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+4. See [:material-code-brackets: DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype) 
+5. See [:material-code-braces: RobotDeploymentTypeDef](./type_defs.md#robotdeploymenttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFleetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeFleetRequestRequestTypeDef
+
+def get_value() -> DescribeFleetRequestRequestTypeDef:
+    return {
+        "fleet": ...,
+    }
 ```
 
-Required fields:
-
-- `fleet`: `str`
-
-<a id="describefleetresponsetypedef"></a>
+```python title="Definition"
+class DescribeFleetRequestRequestTypeDef(TypedDict):
+    fleet: str,
+```
 
 ## DescribeFleetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeFleetResponseTypeDef
+
+def get_value() -> DescribeFleetResponseTypeDef:
+    return {
+        "name": ...,
+        "arn": ...,
+        "robots": ...,
+        "createdAt": ...,
+        "lastDeploymentStatus": ...,
+        "lastDeploymentJob": ...,
+        "lastDeploymentTime": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFleetResponseTypeDef(TypedDict):
+    name: str,
+    arn: str,
+    robots: List[RobotTypeDef],  # (1)
+    createdAt: datetime,
+    lastDeploymentStatus: DeploymentStatusType,  # (2)
+    lastDeploymentJob: str,
+    lastDeploymentTime: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `robots`: `List`\[[RobotTypeDef](./type_defs.md#robottypedef)\]
-- `createdAt`: `datetime`
-- `lastDeploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `lastDeploymentJob`: `str`
-- `lastDeploymentTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerobotapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RobotTypeDef](./type_defs.md#robottypedef) 
+2. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRobotApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeRobotApplicationRequestRequestTypeDef
+
+def get_value() -> DescribeRobotApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `applicationVersion`: `str`
-
-<a id="describerobotapplicationresponsetypedef"></a>
+```python title="Definition"
+class DescribeRobotApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    applicationVersion: NotRequired[str],
+```
 
 ## DescribeRobotApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeRobotApplicationResponseTypeDef
+
+def get_value() -> DescribeRobotApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "robotSoftwareSuite": ...,
+        "revisionId": ...,
+        "lastUpdatedAt": ...,
+        "tags": ...,
+        "environment": ...,
+        "imageDigest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRobotApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    revisionId: str,
+    lastUpdatedAt: datetime,
+    tags: Dict[str, str],
+    environment: EnvironmentTypeDef,  # (3)
+    imageDigest: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `revisionId`: `str`
-- `lastUpdatedAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `imageDigest`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerobotrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRobotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeRobotRequestRequestTypeDef
+
+def get_value() -> DescribeRobotRequestRequestTypeDef:
+    return {
+        "robot": ...,
+    }
 ```
 
-Required fields:
-
-- `robot`: `str`
-
-<a id="describerobotresponsetypedef"></a>
+```python title="Definition"
+class DescribeRobotRequestRequestTypeDef(TypedDict):
+    robot: str,
+```
 
 ## DescribeRobotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeRobotResponseTypeDef
+
+def get_value() -> DescribeRobotResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "fleetArn": ...,
+        "status": ...,
+        "greengrassGroupId": ...,
+        "createdAt": ...,
+        "architecture": ...,
+        "lastDeploymentJob": ...,
+        "lastDeploymentTime": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRobotResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    fleetArn: str,
+    status: RobotStatusType,  # (1)
+    greengrassGroupId: str,
+    createdAt: datetime,
+    architecture: ArchitectureType,  # (2)
+    lastDeploymentJob: str,
+    lastDeploymentTime: datetime,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `fleetArn`: `str`
-- `status`: [RobotStatusType](./literals.md#robotstatustype)
-- `greengrassGroupId`: `str`
-- `createdAt`: `datetime`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `lastDeploymentJob`: `str`
-- `lastDeploymentTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesimulationapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RobotStatusType](./literals.md#robotstatustype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSimulationApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationApplicationRequestRequestTypeDef
+
+def get_value() -> DescribeSimulationApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+    }
 ```
 
-Required fields:
-
-- `application`: `str`
-
-Optional fields:
-
-- `applicationVersion`: `str`
-
-<a id="describesimulationapplicationresponsetypedef"></a>
+```python title="Definition"
+class DescribeSimulationApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    applicationVersion: NotRequired[str],
+```
 
 ## DescribeSimulationApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationApplicationResponseTypeDef
+
+def get_value() -> DescribeSimulationApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+        "renderingEngine": ...,
+        "revisionId": ...,
+        "lastUpdatedAt": ...,
+        "tags": ...,
+        "environment": ...,
+        "imageDigest": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSimulationApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (2)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (3)
+    renderingEngine: RenderingEngineTypeDef,  # (4)
+    revisionId: str,
+    lastUpdatedAt: datetime,
+    tags: Dict[str, str],
+    environment: EnvironmentTypeDef,  # (5)
+    imageDigest: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `revisionId`: `str`
-- `lastUpdatedAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `imageDigest`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesimulationjobbatchrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+3. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSimulationJobBatchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationJobBatchRequestRequestTypeDef
+
+def get_value() -> DescribeSimulationJobBatchRequestRequestTypeDef:
+    return {
+        "batch": ...,
+    }
 ```
 
-Required fields:
-
-- `batch`: `str`
-
-<a id="describesimulationjobbatchresponsetypedef"></a>
+```python title="Definition"
+class DescribeSimulationJobBatchRequestRequestTypeDef(TypedDict):
+    batch: str,
+```
 
 ## DescribeSimulationJobBatchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationJobBatchResponseTypeDef
+
+def get_value() -> DescribeSimulationJobBatchResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "lastUpdatedAt": ...,
+        "createdAt": ...,
+        "clientRequestToken": ...,
+        "batchPolicy": ...,
+        "failureCode": ...,
+        "failureReason": ...,
+        "failedRequests": ...,
+        "pendingRequests": ...,
+        "createdRequests": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSimulationJobBatchResponseTypeDef(TypedDict):
+    arn: str,
+    status: SimulationJobBatchStatusType,  # (1)
+    lastUpdatedAt: datetime,
+    createdAt: datetime,
+    clientRequestToken: str,
+    batchPolicy: BatchPolicyTypeDef,  # (2)
+    failureCode: SimulationJobBatchErrorCodeType,  # (3)
+    failureReason: str,
+    failedRequests: List[FailedCreateSimulationJobRequestTypeDef],  # (4)
+    pendingRequests: List[SimulationJobRequestTypeDef],  # (5)
+    createdRequests: List[SimulationJobSummaryTypeDef],  # (6)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `arn`: `str`
-- `status`:
-  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
-- `lastUpdatedAt`: `datetime`
-- `createdAt`: `datetime`
-- `clientRequestToken`: `str`
-- `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `failureCode`: `Literal['InternalServiceError']` (see
-  [SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype))
-- `failureReason`: `str`
-- `failedRequests`:
-  `List`\[[FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)\]
-- `pendingRequests`:
-  `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
-- `createdRequests`:
-  `List`\[[SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesimulationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype) 
+2. See [:material-code-braces: BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef) 
+3. See [:material-code-brackets: SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype) 
+4. See [:material-code-braces: FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef) 
+5. See [:material-code-braces: SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef) 
+6. See [:material-code-braces: SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSimulationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationJobRequestRequestTypeDef
+
+def get_value() -> DescribeSimulationJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="describesimulationjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeSimulationJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## DescribeSimulationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeSimulationJobResponseTypeDef
+
+def get_value() -> DescribeSimulationJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "status": ...,
+        "lastStartedAt": ...,
+        "lastUpdatedAt": ...,
+        "failureBehavior": ...,
+        "failureCode": ...,
+        "failureReason": ...,
+        "clientRequestToken": ...,
+        "outputLocation": ...,
+        "loggingConfig": ...,
+        "maxJobDurationInSeconds": ...,
+        "simulationTimeMillis": ...,
+        "iamRole": ...,
+        "robotApplications": ...,
+        "simulationApplications": ...,
+        "dataSources": ...,
+        "tags": ...,
+        "vpcConfig": ...,
+        "networkInterface": ...,
+        "compute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSimulationJobResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    status: SimulationJobStatusType,  # (1)
+    lastStartedAt: datetime,
+    lastUpdatedAt: datetime,
+    failureBehavior: FailureBehaviorType,  # (2)
+    failureCode: SimulationJobErrorCodeType,  # (3)
+    failureReason: str,
+    clientRequestToken: str,
+    outputLocation: OutputLocationTypeDef,  # (4)
+    loggingConfig: LoggingConfigTypeDef,  # (5)
+    maxJobDurationInSeconds: int,
+    simulationTimeMillis: int,
+    iamRole: str,
+    robotApplications: List[RobotApplicationConfigTypeDef],  # (6)
+    simulationApplications: List[SimulationApplicationConfigTypeDef],  # (7)
+    dataSources: List[DataSourceTypeDef],  # (8)
+    tags: Dict[str, str],
+    vpcConfig: VPCConfigResponseTypeDef,  # (9)
+    networkInterface: NetworkInterfaceTypeDef,  # (10)
+    compute: ComputeResponseTypeDef,  # (11)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (12)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
-- `lastStartedAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `failureCode`:
-  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
-- `failureReason`: `str`
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `maxJobDurationInSeconds`: `int`
-- `simulationTimeMillis`: `int`
-- `iamRole`: `str`
-- `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `vpcConfig`:
-  [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `networkInterface`:
-  [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
-- `compute`: [ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworldexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobStatusType](./literals.md#simulationjobstatustype) 
+2. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+3. See [:material-code-brackets: SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype) 
+4. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+5. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+6. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+7. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+8. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+9. See [:material-code-braces: VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+10. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+11. See [:material-code-braces: ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef) 
+12. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorldExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldExportJobRequestRequestTypeDef
+
+def get_value() -> DescribeWorldExportJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="describeworldexportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeWorldExportJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## DescribeWorldExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldExportJobResponseTypeDef
+
+def get_value() -> DescribeWorldExportJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "createdAt": ...,
+        "failureCode": ...,
+        "failureReason": ...,
+        "clientRequestToken": ...,
+        "worlds": ...,
+        "outputLocation": ...,
+        "iamRole": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorldExportJobResponseTypeDef(TypedDict):
+    arn: str,
+    status: WorldExportJobStatusType,  # (1)
+    createdAt: datetime,
+    failureCode: WorldExportJobErrorCodeType,  # (2)
+    failureReason: str,
+    clientRequestToken: str,
+    worlds: List[str],
+    outputLocation: OutputLocationTypeDef,  # (3)
+    iamRole: str,
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
-- `createdAt`: `datetime`
-- `failureCode`:
-  [WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype)
-- `failureReason`: `str`
-- `clientRequestToken`: `str`
-- `worlds`: `List`\[`str`\]
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `iamRole`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworldgenerationjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorldExportJobStatusType](./literals.md#worldexportjobstatustype) 
+2. See [:material-code-brackets: WorldExportJobErrorCodeType](./literals.md#worldexportjoberrorcodetype) 
+3. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorldGenerationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldGenerationJobRequestRequestTypeDef
+
+def get_value() -> DescribeWorldGenerationJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="describeworldgenerationjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeWorldGenerationJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## DescribeWorldGenerationJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldGenerationJobResponseTypeDef
+
+def get_value() -> DescribeWorldGenerationJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "createdAt": ...,
+        "failureCode": ...,
+        "failureReason": ...,
+        "clientRequestToken": ...,
+        "template": ...,
+        "worldCount": ...,
+        "finishedWorldsSummary": ...,
+        "tags": ...,
+        "worldTags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorldGenerationJobResponseTypeDef(TypedDict):
+    arn: str,
+    status: WorldGenerationJobStatusType,  # (1)
+    createdAt: datetime,
+    failureCode: WorldGenerationJobErrorCodeType,  # (2)
+    failureReason: str,
+    clientRequestToken: str,
+    template: str,
+    worldCount: WorldCountTypeDef,  # (3)
+    finishedWorldsSummary: FinishedWorldsSummaryTypeDef,  # (4)
+    tags: Dict[str, str],
+    worldTags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `arn`: `str`
-- `status`:
-  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
-- `createdAt`: `datetime`
-- `failureCode`:
-  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
-- `failureReason`: `str`
-- `clientRequestToken`: `str`
-- `template`: `str`
-- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
-- `finishedWorldsSummary`:
-  [FinishedWorldsSummaryTypeDef](./type_defs.md#finishedworldssummarytypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-- `worldTags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworldrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype) 
+2. See [:material-code-brackets: WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype) 
+3. See [:material-code-braces: WorldCountTypeDef](./type_defs.md#worldcounttypedef) 
+4. See [:material-code-braces: FinishedWorldsSummaryTypeDef](./type_defs.md#finishedworldssummarytypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorldRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldRequestRequestTypeDef
+
+def get_value() -> DescribeWorldRequestRequestTypeDef:
+    return {
+        "world": ...,
+    }
 ```
 
-Required fields:
-
-- `world`: `str`
-
-<a id="describeworldresponsetypedef"></a>
+```python title="Definition"
+class DescribeWorldRequestRequestTypeDef(TypedDict):
+    world: str,
+```
 
 ## DescribeWorldResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldResponseTypeDef
+
+def get_value() -> DescribeWorldResponseTypeDef:
+    return {
+        "arn": ...,
+        "generationJob": ...,
+        "template": ...,
+        "createdAt": ...,
+        "tags": ...,
+        "worldDescriptionBody": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorldResponseTypeDef(TypedDict):
+    arn: str,
+    generationJob: str,
+    template: str,
+    createdAt: datetime,
+    tags: Dict[str, str],
+    worldDescriptionBody: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `generationJob`: `str`
-- `template`: `str`
-- `createdAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `worldDescriptionBody`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeworldtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeWorldTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldTemplateRequestRequestTypeDef
+
+def get_value() -> DescribeWorldTemplateRequestRequestTypeDef:
+    return {
+        "template": ...,
+    }
 ```
 
-Required fields:
-
-- `template`: `str`
-
-<a id="describeworldtemplateresponsetypedef"></a>
+```python title="Definition"
+class DescribeWorldTemplateRequestRequestTypeDef(TypedDict):
+    template: str,
+```
 
 ## DescribeWorldTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import DescribeWorldTemplateResponseTypeDef
+
+def get_value() -> DescribeWorldTemplateResponseTypeDef:
+    return {
+        "arn": ...,
+        "clientRequestToken": ...,
+        "name": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "tags": ...,
+        "version": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeWorldTemplateResponseTypeDef(TypedDict):
+    arn: str,
+    clientRequestToken: str,
+    name: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    tags: Dict[str, str],
+    version: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `clientRequestToken`: `str`
-- `name`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `version`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="environmenttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "uri": ...,
+    }
 ```
 
-Optional fields:
-
-- `uri`: `str`
-
-<a id="failedcreatesimulationjobrequesttypedef"></a>
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    uri: NotRequired[str],
+```
 
 ## FailedCreateSimulationJobRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import FailedCreateSimulationJobRequestTypeDef
+
+def get_value() -> FailedCreateSimulationJobRequestTypeDef:
+    return {
+        "request": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailedCreateSimulationJobRequestTypeDef(TypedDict):
+    request: NotRequired[SimulationJobRequestTypeDef],  # (1)
+    failureReason: NotRequired[str],
+    failureCode: NotRequired[SimulationJobErrorCodeType],  # (2)
+    failedAt: NotRequired[datetime],
+```
 
-- `request`:
-  [SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)
-- `failureReason`: `str`
-- `failureCode`:
-  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
-- `failedAt`: `datetime`
-
-<a id="failuresummarytypedef"></a>
-
+1. See [:material-code-braces: SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef) 
+2. See [:material-code-brackets: SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype) 
 ## FailureSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import FailureSummaryTypeDef
+
+def get_value() -> FailureSummaryTypeDef:
+    return {
+        "totalFailureCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FailureSummaryTypeDef(TypedDict):
+    totalFailureCount: NotRequired[int],
+    failures: NotRequired[List[WorldFailureTypeDef]],  # (1)
+```
 
-- `totalFailureCount`: `int`
-- `failures`:
-  `List`\[[WorldFailureTypeDef](./type_defs.md#worldfailuretypedef)\]
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: WorldFailureTypeDef](./type_defs.md#worldfailuretypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `values`: `Sequence`\[`str`\]
-
-<a id="finishedworldssummarytypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    name: NotRequired[str],
+    values: NotRequired[Sequence[str]],
+```
 
 ## FinishedWorldsSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import FinishedWorldsSummaryTypeDef
+
+def get_value() -> FinishedWorldsSummaryTypeDef:
+    return {
+        "finishedCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FinishedWorldsSummaryTypeDef(TypedDict):
+    finishedCount: NotRequired[int],
+    succeededWorlds: NotRequired[List[str]],
+    failureSummary: NotRequired[FailureSummaryTypeDef],  # (1)
+```
 
-- `finishedCount`: `int`
-- `succeededWorlds`: `List`\[`str`\]
-- `failureSummary`:
-  [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
-
-<a id="fleettypedef"></a>
-
+1. See [:material-code-braces: FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef) 
 ## FleetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import FleetTypeDef
+
+def get_value() -> FleetTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FleetTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    lastDeploymentStatus: NotRequired[DeploymentStatusType],  # (1)
+    lastDeploymentJob: NotRequired[str],
+    lastDeploymentTime: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastDeploymentStatus`:
-  [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `lastDeploymentJob`: `str`
-- `lastDeploymentTime`: `datetime`
-
-<a id="getworldtemplatebodyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## GetWorldTemplateBodyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import GetWorldTemplateBodyRequestRequestTypeDef
+
+def get_value() -> GetWorldTemplateBodyRequestRequestTypeDef:
+    return {
+        "template": ...,
+    }
 ```
 
-Optional fields:
-
-- `template`: `str`
-- `generationJob`: `str`
-
-<a id="getworldtemplatebodyresponsetypedef"></a>
+```python title="Definition"
+class GetWorldTemplateBodyRequestRequestTypeDef(TypedDict):
+    template: NotRequired[str],
+    generationJob: NotRequired[str],
+```
 
 ## GetWorldTemplateBodyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import GetWorldTemplateBodyResponseTypeDef
+
+def get_value() -> GetWorldTemplateBodyResponseTypeDef:
+    return {
+        "templateBody": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetWorldTemplateBodyResponseTypeDef(TypedDict):
+    templateBody: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `templateBody`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="launchconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LaunchConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import LaunchConfigTypeDef
+
+def get_value() -> LaunchConfigTypeDef:
+    return {
+        "packageName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LaunchConfigTypeDef(TypedDict):
+    packageName: NotRequired[str],
+    launchFile: NotRequired[str],
+    environmentVariables: NotRequired[Dict[str, str]],
+    portForwardingConfig: NotRequired[PortForwardingConfigTypeDef],  # (1)
+    streamUI: NotRequired[bool],
+    command: NotRequired[List[str]],
+```
 
-- `packageName`: `str`
-- `launchFile`: `str`
-- `environmentVariables`: `Dict`\[`str`, `str`\]
-- `portForwardingConfig`:
-  [PortForwardingConfigTypeDef](./type_defs.md#portforwardingconfigtypedef)
-- `streamUI`: `bool`
-- `command`: `List`\[`str`\]
+1. See [:material-code-braces: PortForwardingConfigTypeDef](./type_defs.md#portforwardingconfigtypedef) 
+## ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef
 
-<a id="listdeploymentjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef
 
+def get_value() -> ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentJobsRequestListDeploymentJobsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListDeploymentJobsRequestRequestTypeDef
+
+def get_value() -> ListDeploymentJobsRequestRequestTypeDef:
+    return {
+        "filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDeploymentJobsRequestRequestTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdeploymentjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListDeploymentJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListDeploymentJobsResponseTypeDef
+
+def get_value() -> ListDeploymentJobsResponseTypeDef:
+    return {
+        "deploymentJobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentJobsResponseTypeDef(TypedDict):
+    deploymentJobs: List[DeploymentJobTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentJobs`:
-  `List`\[[DeploymentJobTypeDef](./type_defs.md#deploymentjobtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeploymentJobTypeDef](./type_defs.md#deploymentjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFleetsRequestListFleetsPaginateTypeDef
 
-<a id="listfleetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListFleetsRequestListFleetsPaginateTypeDef
 
+def get_value() -> ListFleetsRequestListFleetsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListFleetsRequestListFleetsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFleetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListFleetsRequestRequestTypeDef
+
+def get_value() -> ListFleetsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFleetsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listfleetsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListFleetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListFleetsResponseTypeDef
+
+def get_value() -> ListFleetsResponseTypeDef:
+    return {
+        "fleetDetails": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFleetsResponseTypeDef(TypedDict):
+    fleetDetails: List[FleetTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `fleetDetails`: `List`\[[FleetTypeDef](./type_defs.md#fleettypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FleetTypeDef](./type_defs.md#fleettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef
 
-<a id="listrobotapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef
 
+def get_value() -> ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef:
+    return {
+        "versionQualifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListRobotApplicationsRequestListRobotApplicationsPaginateTypeDef(TypedDict):
+    versionQualifier: NotRequired[str],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRobotApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListRobotApplicationsRequestRequestTypeDef
+
+def get_value() -> ListRobotApplicationsRequestRequestTypeDef:
+    return {
+        "versionQualifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListRobotApplicationsRequestRequestTypeDef(TypedDict):
+    versionQualifier: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `versionQualifier`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listrobotapplicationsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListRobotApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListRobotApplicationsResponseTypeDef
+
+def get_value() -> ListRobotApplicationsResponseTypeDef:
+    return {
+        "robotApplicationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRobotApplicationsResponseTypeDef(TypedDict):
+    robotApplicationSummaries: List[RobotApplicationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `robotApplicationSummaries`:
-  `List`\[[RobotApplicationSummaryTypeDef](./type_defs.md#robotapplicationsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RobotApplicationSummaryTypeDef](./type_defs.md#robotapplicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRobotsRequestListRobotsPaginateTypeDef
 
-<a id="listrobotsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListRobotsRequestListRobotsPaginateTypeDef
 
+def get_value() -> ListRobotsRequestListRobotsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListRobotsRequestListRobotsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRobotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListRobotsRequestRequestTypeDef
+
+def get_value() -> ListRobotsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListRobotsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listrobotsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListRobotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListRobotsResponseTypeDef
+
+def get_value() -> ListRobotsResponseTypeDef:
+    return {
+        "robots": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRobotsResponseTypeDef(TypedDict):
+    robots: List[RobotTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `robots`: `List`\[[RobotTypeDef](./type_defs.md#robottypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RobotTypeDef](./type_defs.md#robottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef
 
-<a id="listsimulationapplicationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef
 
+def get_value() -> ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef:
+    return {
+        "versionQualifier": ...,
+    }
+```
+
+```python title="Definition"
+class ListSimulationApplicationsRequestListSimulationApplicationsPaginateTypeDef(TypedDict):
+    versionQualifier: NotRequired[str],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSimulationApplicationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationApplicationsRequestRequestTypeDef
+
+def get_value() -> ListSimulationApplicationsRequestRequestTypeDef:
+    return {
+        "versionQualifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSimulationApplicationsRequestRequestTypeDef(TypedDict):
+    versionQualifier: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `versionQualifier`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listsimulationapplicationsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListSimulationApplicationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationApplicationsResponseTypeDef
+
+def get_value() -> ListSimulationApplicationsResponseTypeDef:
+    return {
+        "simulationApplicationSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSimulationApplicationsResponseTypeDef(TypedDict):
+    simulationApplicationSummaries: List[SimulationApplicationSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `simulationApplicationSummaries`:
-  `List`\[[SimulationApplicationSummaryTypeDef](./type_defs.md#simulationapplicationsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SimulationApplicationSummaryTypeDef](./type_defs.md#simulationapplicationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef
 
-<a id="listsimulationjobbatchesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef
 
+def get_value() -> ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListSimulationJobBatchesRequestListSimulationJobBatchesPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSimulationJobBatchesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationJobBatchesRequestRequestTypeDef
+
+def get_value() -> ListSimulationJobBatchesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSimulationJobBatchesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listsimulationjobbatchesresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListSimulationJobBatchesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationJobBatchesResponseTypeDef
+
+def get_value() -> ListSimulationJobBatchesResponseTypeDef:
+    return {
+        "simulationJobBatchSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSimulationJobBatchesResponseTypeDef(TypedDict):
+    simulationJobBatchSummaries: List[SimulationJobBatchSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `simulationJobBatchSummaries`:
-  `List`\[[SimulationJobBatchSummaryTypeDef](./type_defs.md#simulationjobbatchsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SimulationJobBatchSummaryTypeDef](./type_defs.md#simulationjobbatchsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSimulationJobsRequestListSimulationJobsPaginateTypeDef
 
-<a id="listsimulationjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListSimulationJobsRequestListSimulationJobsPaginateTypeDef
 
+def get_value() -> ListSimulationJobsRequestListSimulationJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListSimulationJobsRequestListSimulationJobsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSimulationJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationJobsRequestRequestTypeDef
+
+def get_value() -> ListSimulationJobsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListSimulationJobsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listsimulationjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListSimulationJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListSimulationJobsResponseTypeDef
+
+def get_value() -> ListSimulationJobsResponseTypeDef:
+    return {
+        "simulationJobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSimulationJobsResponseTypeDef(TypedDict):
+    simulationJobSummaries: List[SimulationJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `simulationJobSummaries`:
-  `List`\[[SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef
 
-<a id="listworldexportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef
 
+def get_value() -> ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorldExportJobsRequestListWorldExportJobsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorldExportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldExportJobsRequestRequestTypeDef
+
+def get_value() -> ListWorldExportJobsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListWorldExportJobsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listworldexportjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListWorldExportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldExportJobsResponseTypeDef
+
+def get_value() -> ListWorldExportJobsResponseTypeDef:
+    return {
+        "worldExportJobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorldExportJobsResponseTypeDef(TypedDict):
+    worldExportJobSummaries: List[WorldExportJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `worldExportJobSummaries`:
-  `List`\[[WorldExportJobSummaryTypeDef](./type_defs.md#worldexportjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WorldExportJobSummaryTypeDef](./type_defs.md#worldexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef
 
-<a id="listworldgenerationjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef
 
+def get_value() -> ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorldGenerationJobsRequestListWorldGenerationJobsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorldGenerationJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldGenerationJobsRequestRequestTypeDef
+
+def get_value() -> ListWorldGenerationJobsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListWorldGenerationJobsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listworldgenerationjobsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListWorldGenerationJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldGenerationJobsResponseTypeDef
+
+def get_value() -> ListWorldGenerationJobsResponseTypeDef:
+    return {
+        "worldGenerationJobSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorldGenerationJobsResponseTypeDef(TypedDict):
+    worldGenerationJobSummaries: List[WorldGenerationJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `worldGenerationJobSummaries`:
-  `List`\[[WorldGenerationJobSummaryTypeDef](./type_defs.md#worldgenerationjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: WorldGenerationJobSummaryTypeDef](./type_defs.md#worldgenerationjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef
 
-<a id="listworldtemplatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef
 
+def get_value() -> ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorldTemplatesRequestListWorldTemplatesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorldTemplatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldTemplatesRequestRequestTypeDef
+
+def get_value() -> ListWorldTemplatesRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listworldtemplatesresponsetypedef"></a>
+```python title="Definition"
+class ListWorldTemplatesRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListWorldTemplatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldTemplatesResponseTypeDef
+
+def get_value() -> ListWorldTemplatesResponseTypeDef:
+    return {
+        "templateSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorldTemplatesResponseTypeDef(TypedDict):
+    templateSummaries: List[TemplateSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `templateSummaries`:
-  `List`\[[TemplateSummaryTypeDef](./type_defs.md#templatesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TemplateSummaryTypeDef](./type_defs.md#templatesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListWorldsRequestListWorldsPaginateTypeDef
 
-<a id="listworldsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_robomaker.type_defs import ListWorldsRequestListWorldsPaginateTypeDef
 
+def get_value() -> ListWorldsRequestListWorldsPaginateTypeDef:
+    return {
+        "filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListWorldsRequestListWorldsPaginateTypeDef(TypedDict):
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListWorldsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldsRequestRequestTypeDef
+
+def get_value() -> ListWorldsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListWorldsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="listworldsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## ListWorldsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ListWorldsResponseTypeDef
+
+def get_value() -> ListWorldsResponseTypeDef:
+    return {
+        "worldSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListWorldsResponseTypeDef(TypedDict):
+    worldSummaries: List[WorldSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `worldSummaries`:
-  `List`\[[WorldSummaryTypeDef](./type_defs.md#worldsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loggingconfigtypedef"></a>
-
+1. See [:material-code-braces: WorldSummaryTypeDef](./type_defs.md#worldsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoggingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import LoggingConfigTypeDef
+
+def get_value() -> LoggingConfigTypeDef:
+    return {
+        "recordAllRosTopics": ...,
+    }
 ```
 
-Optional fields:
-
-- `recordAllRosTopics`: `bool`
-
-<a id="networkinterfacetypedef"></a>
+```python title="Definition"
+class LoggingConfigTypeDef(TypedDict):
+    recordAllRosTopics: NotRequired[bool],
+```
 
 ## NetworkInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "networkInterfaceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `networkInterfaceId`: `str`
-- `privateIpAddress`: `str`
-- `publicIpAddress`: `str`
-
-<a id="outputlocationtypedef"></a>
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    networkInterfaceId: NotRequired[str],
+    privateIpAddress: NotRequired[str],
+    publicIpAddress: NotRequired[str],
+```
 
 ## OutputLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import OutputLocationTypeDef
+
+def get_value() -> OutputLocationTypeDef:
+    return {
+        "s3Bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `s3Bucket`: `str`
-- `s3Prefix`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutputLocationTypeDef(TypedDict):
+    s3Bucket: NotRequired[str],
+    s3Prefix: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="portforwardingconfigtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PortForwardingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import PortForwardingConfigTypeDef
+
+def get_value() -> PortForwardingConfigTypeDef:
+    return {
+        "portMappings": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PortForwardingConfigTypeDef(TypedDict):
+    portMappings: NotRequired[List[PortMappingTypeDef]],  # (1)
+```
 
-- `portMappings`:
-  `List`\[[PortMappingTypeDef](./type_defs.md#portmappingtypedef)\]
-
-<a id="portmappingtypedef"></a>
-
+1. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
 ## PortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import PortMappingTypeDef
+
+def get_value() -> PortMappingTypeDef:
+    return {
+        "jobPort": ...,
+        "applicationPort": ...,
+    }
 ```
 
-Required fields:
-
-- `jobPort`: `int`
-- `applicationPort`: `int`
-
-Optional fields:
-
-- `enableOnPublicIp`: `bool`
-
-<a id="progressdetailtypedef"></a>
+```python title="Definition"
+class PortMappingTypeDef(TypedDict):
+    jobPort: int,
+    applicationPort: int,
+    enableOnPublicIp: NotRequired[bool],
+```
 
 ## ProgressDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ProgressDetailTypeDef
+
+def get_value() -> ProgressDetailTypeDef:
+    return {
+        "currentProgress": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProgressDetailTypeDef(TypedDict):
+    currentProgress: NotRequired[RobotDeploymentStepType],  # (1)
+    percentDone: NotRequired[float],
+    estimatedTimeRemainingSeconds: NotRequired[int],
+    targetResource: NotRequired[str],
+```
 
-- `currentProgress`:
-  [RobotDeploymentStepType](./literals.md#robotdeploymentsteptype)
-- `percentDone`: `float`
-- `estimatedTimeRemainingSeconds`: `int`
-- `targetResource`: `str`
-
-<a id="registerrobotrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RobotDeploymentStepType](./literals.md#robotdeploymentsteptype) 
 ## RegisterRobotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RegisterRobotRequestRequestTypeDef
+
+def get_value() -> RegisterRobotRequestRequestTypeDef:
+    return {
+        "fleet": ...,
+        "robot": ...,
+    }
 ```
 
-Required fields:
-
-- `fleet`: `str`
-- `robot`: `str`
-
-<a id="registerrobotresponsetypedef"></a>
+```python title="Definition"
+class RegisterRobotRequestRequestTypeDef(TypedDict):
+    fleet: str,
+    robot: str,
+```
 
 ## RegisterRobotResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RegisterRobotResponseTypeDef
+
+def get_value() -> RegisterRobotResponseTypeDef:
+    return {
+        "fleet": ...,
+        "robot": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterRobotResponseTypeDef(TypedDict):
+    fleet: str,
+    robot: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `fleet`: `str`
-- `robot`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="renderingenginetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RenderingEngineTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RenderingEngineTypeDef
+
+def get_value() -> RenderingEngineTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RenderingEngineTypeDef(TypedDict):
+    name: NotRequired[RenderingEngineTypeType],  # (1)
+    version: NotRequired[str],
+```
 
-- `name`: `Literal['OGRE']` (see
-  [RenderingEngineTypeType](./literals.md#renderingenginetypetype))
-- `version`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: RenderingEngineTypeType](./literals.md#renderingenginetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restartsimulationjobrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestartSimulationJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RestartSimulationJobRequestRequestTypeDef
+
+def get_value() -> RestartSimulationJobRequestRequestTypeDef:
+    return {
+        "job": ...,
+    }
 ```
 
-Required fields:
-
-- `job`: `str`
-
-<a id="robotapplicationconfigtypedef"></a>
+```python title="Definition"
+class RestartSimulationJobRequestRequestTypeDef(TypedDict):
+    job: str,
+```
 
 ## RobotApplicationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RobotApplicationConfigTypeDef
+
+def get_value() -> RobotApplicationConfigTypeDef:
+    return {
+        "application": ...,
+        "launchConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RobotApplicationConfigTypeDef(TypedDict):
+    application: str,
+    launchConfig: LaunchConfigTypeDef,  # (1)
+    applicationVersion: NotRequired[str],
+    uploadConfigurations: NotRequired[List[UploadConfigurationTypeDef]],  # (2)
+    useDefaultUploadConfigurations: NotRequired[bool],
+    tools: NotRequired[List[ToolTypeDef]],  # (3)
+    useDefaultTools: NotRequired[bool],
+```
 
-- `application`: `str`
-- `launchConfig`: [LaunchConfigTypeDef](./type_defs.md#launchconfigtypedef)
-
-Optional fields:
-
-- `applicationVersion`: `str`
-- `uploadConfigurations`:
-  `List`\[[UploadConfigurationTypeDef](./type_defs.md#uploadconfigurationtypedef)\]
-- `useDefaultUploadConfigurations`: `bool`
-- `tools`: `List`\[[ToolTypeDef](./type_defs.md#tooltypedef)\]
-- `useDefaultTools`: `bool`
-
-<a id="robotapplicationsummarytypedef"></a>
-
+1. See [:material-code-braces: LaunchConfigTypeDef](./type_defs.md#launchconfigtypedef) 
+2. See [:material-code-braces: UploadConfigurationTypeDef](./type_defs.md#uploadconfigurationtypedef) 
+3. See [:material-code-braces: ToolTypeDef](./type_defs.md#tooltypedef) 
 ## RobotApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RobotApplicationSummaryTypeDef
+
+def get_value() -> RobotApplicationSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RobotApplicationSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    version: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    robotSoftwareSuite: NotRequired[RobotSoftwareSuiteTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `version`: `str`
-- `lastUpdatedAt`: `datetime`
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-
-<a id="robotdeploymenttypedef"></a>
-
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
 ## RobotDeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RobotDeploymentTypeDef
+
+def get_value() -> RobotDeploymentTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RobotDeploymentTypeDef(TypedDict):
+    arn: NotRequired[str],
+    deploymentStartTime: NotRequired[datetime],
+    deploymentFinishTime: NotRequired[datetime],
+    status: NotRequired[RobotStatusType],  # (1)
+    progressDetail: NotRequired[ProgressDetailTypeDef],  # (2)
+    failureReason: NotRequired[str],
+    failureCode: NotRequired[DeploymentJobErrorCodeType],  # (3)
+```
 
-- `arn`: `str`
-- `deploymentStartTime`: `datetime`
-- `deploymentFinishTime`: `datetime`
-- `status`: [RobotStatusType](./literals.md#robotstatustype)
-- `progressDetail`:
-  [ProgressDetailTypeDef](./type_defs.md#progressdetailtypedef)
-- `failureReason`: `str`
-- `failureCode`:
-  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
-
-<a id="robotsoftwaresuitetypedef"></a>
-
+1. See [:material-code-brackets: RobotStatusType](./literals.md#robotstatustype) 
+2. See [:material-code-braces: ProgressDetailTypeDef](./type_defs.md#progressdetailtypedef) 
+3. See [:material-code-brackets: DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype) 
 ## RobotSoftwareSuiteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RobotSoftwareSuiteTypeDef
+
+def get_value() -> RobotSoftwareSuiteTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RobotSoftwareSuiteTypeDef(TypedDict):
+    name: NotRequired[RobotSoftwareSuiteTypeType],  # (1)
+    version: NotRequired[RobotSoftwareSuiteVersionTypeType],  # (2)
+```
 
-- `name`:
-  [RobotSoftwareSuiteTypeType](./literals.md#robotsoftwaresuitetypetype)
-- `version`:
-  [RobotSoftwareSuiteVersionTypeType](./literals.md#robotsoftwaresuiteversiontypetype)
-
-<a id="robottypedef"></a>
-
+1. See [:material-code-brackets: RobotSoftwareSuiteTypeType](./literals.md#robotsoftwaresuitetypetype) 
+2. See [:material-code-brackets: RobotSoftwareSuiteVersionTypeType](./literals.md#robotsoftwaresuiteversiontypetype) 
 ## RobotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import RobotTypeDef
+
+def get_value() -> RobotTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RobotTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    fleetArn: NotRequired[str],
+    status: NotRequired[RobotStatusType],  # (1)
+    greenGrassGroupId: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    architecture: NotRequired[ArchitectureType],  # (2)
+    lastDeploymentJob: NotRequired[str],
+    lastDeploymentTime: NotRequired[datetime],
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `fleetArn`: `str`
-- `status`: [RobotStatusType](./literals.md#robotstatustype)
-- `greenGrassGroupId`: `str`
-- `createdAt`: `datetime`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-- `lastDeploymentJob`: `str`
-- `lastDeploymentTime`: `datetime`
-
-<a id="s3keyoutputtypedef"></a>
-
+1. See [:material-code-brackets: RobotStatusType](./literals.md#robotstatustype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## S3KeyOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import S3KeyOutputTypeDef
+
+def get_value() -> S3KeyOutputTypeDef:
+    return {
+        "s3Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `s3Key`: `str`
-- `etag`: `str`
-
-<a id="s3objecttypedef"></a>
+```python title="Definition"
+class S3KeyOutputTypeDef(TypedDict):
+    s3Key: NotRequired[str],
+    etag: NotRequired[str],
+```
 
 ## S3ObjectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import S3ObjectTypeDef
+
+def get_value() -> S3ObjectTypeDef:
+    return {
+        "bucket": ...,
+        "key": ...,
+    }
 ```
 
-Required fields:
-
-- `bucket`: `str`
-- `key`: `str`
-
-Optional fields:
-
-- `etag`: `str`
-
-<a id="simulationapplicationconfigtypedef"></a>
+```python title="Definition"
+class S3ObjectTypeDef(TypedDict):
+    bucket: str,
+    key: str,
+    etag: NotRequired[str],
+```
 
 ## SimulationApplicationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationApplicationConfigTypeDef
+
+def get_value() -> SimulationApplicationConfigTypeDef:
+    return {
+        "application": ...,
+        "launchConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimulationApplicationConfigTypeDef(TypedDict):
+    application: str,
+    launchConfig: LaunchConfigTypeDef,  # (1)
+    applicationVersion: NotRequired[str],
+    uploadConfigurations: NotRequired[List[UploadConfigurationTypeDef]],  # (2)
+    worldConfigs: NotRequired[List[WorldConfigTypeDef]],  # (3)
+    useDefaultUploadConfigurations: NotRequired[bool],
+    tools: NotRequired[List[ToolTypeDef]],  # (4)
+    useDefaultTools: NotRequired[bool],
+```
 
-- `application`: `str`
-- `launchConfig`: [LaunchConfigTypeDef](./type_defs.md#launchconfigtypedef)
-
-Optional fields:
-
-- `applicationVersion`: `str`
-- `uploadConfigurations`:
-  `List`\[[UploadConfigurationTypeDef](./type_defs.md#uploadconfigurationtypedef)\]
-- `worldConfigs`:
-  `List`\[[WorldConfigTypeDef](./type_defs.md#worldconfigtypedef)\]
-- `useDefaultUploadConfigurations`: `bool`
-- `tools`: `List`\[[ToolTypeDef](./type_defs.md#tooltypedef)\]
-- `useDefaultTools`: `bool`
-
-<a id="simulationapplicationsummarytypedef"></a>
-
+1. See [:material-code-braces: LaunchConfigTypeDef](./type_defs.md#launchconfigtypedef) 
+2. See [:material-code-braces: UploadConfigurationTypeDef](./type_defs.md#uploadconfigurationtypedef) 
+3. See [:material-code-braces: WorldConfigTypeDef](./type_defs.md#worldconfigtypedef) 
+4. See [:material-code-braces: ToolTypeDef](./type_defs.md#tooltypedef) 
 ## SimulationApplicationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationApplicationSummaryTypeDef
+
+def get_value() -> SimulationApplicationSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimulationApplicationSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    arn: NotRequired[str],
+    version: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    robotSoftwareSuite: NotRequired[RobotSoftwareSuiteTypeDef],  # (1)
+    simulationSoftwareSuite: NotRequired[SimulationSoftwareSuiteTypeDef],  # (2)
+```
 
-- `name`: `str`
-- `arn`: `str`
-- `version`: `str`
-- `lastUpdatedAt`: `datetime`
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-
-<a id="simulationjobbatchsummarytypedef"></a>
-
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+2. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
 ## SimulationJobBatchSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationJobBatchSummaryTypeDef
+
+def get_value() -> SimulationJobBatchSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimulationJobBatchSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    createdAt: NotRequired[datetime],
+    status: NotRequired[SimulationJobBatchStatusType],  # (1)
+    failedRequestCount: NotRequired[int],
+    pendingRequestCount: NotRequired[int],
+    createdRequestCount: NotRequired[int],
+```
 
-- `arn`: `str`
-- `lastUpdatedAt`: `datetime`
-- `createdAt`: `datetime`
-- `status`:
-  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
-- `failedRequestCount`: `int`
-- `pendingRequestCount`: `int`
-- `createdRequestCount`: `int`
-
-<a id="simulationjobrequesttypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype) 
 ## SimulationJobRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationJobRequestTypeDef
+
+def get_value() -> SimulationJobRequestTypeDef:
+    return {
+        "maxJobDurationInSeconds": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SimulationJobRequestTypeDef(TypedDict):
+    maxJobDurationInSeconds: int,
+    outputLocation: NotRequired[OutputLocationTypeDef],  # (1)
+    loggingConfig: NotRequired[LoggingConfigTypeDef],  # (2)
+    iamRole: NotRequired[str],
+    failureBehavior: NotRequired[FailureBehaviorType],  # (3)
+    useDefaultApplications: NotRequired[bool],
+    robotApplications: NotRequired[List[RobotApplicationConfigTypeDef]],  # (4)
+    simulationApplications: NotRequired[List[SimulationApplicationConfigTypeDef]],  # (5)
+    dataSources: NotRequired[List[DataSourceConfigTypeDef]],  # (6)
+    vpcConfig: NotRequired[VPCConfigTypeDef],  # (7)
+    compute: NotRequired[ComputeTypeDef],  # (8)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `maxJobDurationInSeconds`: `int`
-
-Optional fields:
-
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `iamRole`: `str`
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `useDefaultApplications`: `bool`
-- `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `List`\[[DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef)\]
-- `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="simulationjobsummarytypedef"></a>
-
+1. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+2. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+3. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+4. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+5. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+6. See [:material-code-braces: DataSourceConfigTypeDef](./type_defs.md#datasourceconfigtypedef) 
+7. See [:material-code-braces: VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+8. See [:material-code-braces: ComputeTypeDef](./type_defs.md#computetypedef) 
 ## SimulationJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationJobSummaryTypeDef
+
+def get_value() -> SimulationJobSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimulationJobSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    name: NotRequired[str],
+    status: NotRequired[SimulationJobStatusType],  # (1)
+    simulationApplicationNames: NotRequired[List[str]],
+    robotApplicationNames: NotRequired[List[str]],
+    dataSourceNames: NotRequired[List[str]],
+    computeType: NotRequired[ComputeTypeType],  # (2)
+```
 
-- `arn`: `str`
-- `lastUpdatedAt`: `datetime`
-- `name`: `str`
-- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
-- `simulationApplicationNames`: `List`\[`str`\]
-- `robotApplicationNames`: `List`\[`str`\]
-- `dataSourceNames`: `List`\[`str`\]
-- `computeType`: [ComputeTypeType](./literals.md#computetypetype)
-
-<a id="simulationjobtypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobStatusType](./literals.md#simulationjobstatustype) 
+2. See [:material-code-brackets: ComputeTypeType](./literals.md#computetypetype) 
 ## SimulationJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationJobTypeDef
+
+def get_value() -> SimulationJobTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimulationJobTypeDef(TypedDict):
+    arn: NotRequired[str],
+    name: NotRequired[str],
+    status: NotRequired[SimulationJobStatusType],  # (1)
+    lastStartedAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    failureBehavior: NotRequired[FailureBehaviorType],  # (2)
+    failureCode: NotRequired[SimulationJobErrorCodeType],  # (3)
+    failureReason: NotRequired[str],
+    clientRequestToken: NotRequired[str],
+    outputLocation: NotRequired[OutputLocationTypeDef],  # (4)
+    loggingConfig: NotRequired[LoggingConfigTypeDef],  # (5)
+    maxJobDurationInSeconds: NotRequired[int],
+    simulationTimeMillis: NotRequired[int],
+    iamRole: NotRequired[str],
+    robotApplications: NotRequired[List[RobotApplicationConfigTypeDef]],  # (6)
+    simulationApplications: NotRequired[List[SimulationApplicationConfigTypeDef]],  # (7)
+    dataSources: NotRequired[List[DataSourceTypeDef]],  # (8)
+    tags: NotRequired[Dict[str, str]],
+    vpcConfig: NotRequired[VPCConfigResponseTypeDef],  # (9)
+    networkInterface: NotRequired[NetworkInterfaceTypeDef],  # (10)
+    compute: NotRequired[ComputeResponseTypeDef],  # (11)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `status`: [SimulationJobStatusType](./literals.md#simulationjobstatustype)
-- `lastStartedAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `failureBehavior`: [FailureBehaviorType](./literals.md#failurebehaviortype)
-- `failureCode`:
-  [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
-- `failureReason`: `str`
-- `clientRequestToken`: `str`
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-- `loggingConfig`: [LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef)
-- `maxJobDurationInSeconds`: `int`
-- `simulationTimeMillis`: `int`
-- `iamRole`: `str`
-- `robotApplications`:
-  `List`\[[RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef)\]
-- `simulationApplications`:
-  `List`\[[SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef)\]
-- `dataSources`:
-  `List`\[[DataSourceTypeDef](./type_defs.md#datasourcetypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `vpcConfig`:
-  [VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `networkInterface`:
-  [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
-- `compute`: [ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef)
-
-<a id="simulationsoftwaresuitetypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobStatusType](./literals.md#simulationjobstatustype) 
+2. See [:material-code-brackets: FailureBehaviorType](./literals.md#failurebehaviortype) 
+3. See [:material-code-brackets: SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype) 
+4. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
+5. See [:material-code-braces: LoggingConfigTypeDef](./type_defs.md#loggingconfigtypedef) 
+6. See [:material-code-braces: RobotApplicationConfigTypeDef](./type_defs.md#robotapplicationconfigtypedef) 
+7. See [:material-code-braces: SimulationApplicationConfigTypeDef](./type_defs.md#simulationapplicationconfigtypedef) 
+8. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
+9. See [:material-code-braces: VPCConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+10. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+11. See [:material-code-braces: ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef) 
 ## SimulationSoftwareSuiteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SimulationSoftwareSuiteTypeDef
+
+def get_value() -> SimulationSoftwareSuiteTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SimulationSoftwareSuiteTypeDef(TypedDict):
+    name: NotRequired[SimulationSoftwareSuiteTypeType],  # (1)
+    version: NotRequired[str],
+```
 
-- `name`:
-  [SimulationSoftwareSuiteTypeType](./literals.md#simulationsoftwaresuitetypetype)
-- `version`: `str`
-
-<a id="sourceconfigtypedef"></a>
-
+1. See [:material-code-brackets: SimulationSoftwareSuiteTypeType](./literals.md#simulationsoftwaresuitetypetype) 
 ## SourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SourceConfigTypeDef
+
+def get_value() -> SourceConfigTypeDef:
+    return {
+        "s3Bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceConfigTypeDef(TypedDict):
+    s3Bucket: NotRequired[str],
+    s3Key: NotRequired[str],
+    architecture: NotRequired[ArchitectureType],  # (1)
+```
 
-- `s3Bucket`: `str`
-- `s3Key`: `str`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-
-<a id="sourcetypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## SourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SourceTypeDef
+
+def get_value() -> SourceTypeDef:
+    return {
+        "s3Bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceTypeDef(TypedDict):
+    s3Bucket: NotRequired[str],
+    s3Key: NotRequired[str],
+    etag: NotRequired[str],
+    architecture: NotRequired[ArchitectureType],  # (1)
+```
 
-- `s3Bucket`: `str`
-- `s3Key`: `str`
-- `etag`: `str`
-- `architecture`: [ArchitectureType](./literals.md#architecturetype)
-
-<a id="startsimulationjobbatchrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## StartSimulationJobBatchRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import StartSimulationJobBatchRequestRequestTypeDef
+
+def get_value() -> StartSimulationJobBatchRequestRequestTypeDef:
+    return {
+        "createSimulationJobRequests": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSimulationJobBatchRequestRequestTypeDef(TypedDict):
+    createSimulationJobRequests: Sequence[SimulationJobRequestTypeDef],  # (1)
+    clientRequestToken: NotRequired[str],
+    batchPolicy: NotRequired[BatchPolicyTypeDef],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `createSimulationJobRequests`:
-  `Sequence`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-- `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="startsimulationjobbatchresponsetypedef"></a>
-
+1. See [:material-code-braces: SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef) 
+2. See [:material-code-braces: BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef) 
 ## StartSimulationJobBatchResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import StartSimulationJobBatchResponseTypeDef
+
+def get_value() -> StartSimulationJobBatchResponseTypeDef:
+    return {
+        "arn": ...,
+        "status": ...,
+        "createdAt": ...,
+        "clientRequestToken": ...,
+        "batchPolicy": ...,
+        "failureCode": ...,
+        "failureReason": ...,
+        "failedRequests": ...,
+        "pendingRequests": ...,
+        "createdRequests": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSimulationJobBatchResponseTypeDef(TypedDict):
+    arn: str,
+    status: SimulationJobBatchStatusType,  # (1)
+    createdAt: datetime,
+    clientRequestToken: str,
+    batchPolicy: BatchPolicyTypeDef,  # (2)
+    failureCode: SimulationJobBatchErrorCodeType,  # (3)
+    failureReason: str,
+    failedRequests: List[FailedCreateSimulationJobRequestTypeDef],  # (4)
+    pendingRequests: List[SimulationJobRequestTypeDef],  # (5)
+    createdRequests: List[SimulationJobSummaryTypeDef],  # (6)
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `arn`: `str`
-- `status`:
-  [SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype)
-- `createdAt`: `datetime`
-- `clientRequestToken`: `str`
-- `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
-- `failureCode`: `Literal['InternalServiceError']` (see
-  [SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype))
-- `failureReason`: `str`
-- `failedRequests`:
-  `List`\[[FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef)\]
-- `pendingRequests`:
-  `List`\[[SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef)\]
-- `createdRequests`:
-  `List`\[[SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef)\]
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="syncdeploymentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SimulationJobBatchStatusType](./literals.md#simulationjobbatchstatustype) 
+2. See [:material-code-braces: BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef) 
+3. See [:material-code-brackets: SimulationJobBatchErrorCodeType](./literals.md#simulationjobbatcherrorcodetype) 
+4. See [:material-code-braces: FailedCreateSimulationJobRequestTypeDef](./type_defs.md#failedcreatesimulationjobrequesttypedef) 
+5. See [:material-code-braces: SimulationJobRequestTypeDef](./type_defs.md#simulationjobrequesttypedef) 
+6. See [:material-code-braces: SimulationJobSummaryTypeDef](./type_defs.md#simulationjobsummarytypedef) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SyncDeploymentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SyncDeploymentJobRequestRequestTypeDef
+
+def get_value() -> SyncDeploymentJobRequestRequestTypeDef:
+    return {
+        "clientRequestToken": ...,
+        "fleet": ...,
+    }
 ```
 
-Required fields:
-
-- `clientRequestToken`: `str`
-- `fleet`: `str`
-
-<a id="syncdeploymentjobresponsetypedef"></a>
+```python title="Definition"
+class SyncDeploymentJobRequestRequestTypeDef(TypedDict):
+    clientRequestToken: str,
+    fleet: str,
+```
 
 ## SyncDeploymentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import SyncDeploymentJobResponseTypeDef
+
+def get_value() -> SyncDeploymentJobResponseTypeDef:
+    return {
+        "arn": ...,
+        "fleet": ...,
+        "status": ...,
+        "deploymentConfig": ...,
+        "deploymentApplicationConfigs": ...,
+        "failureReason": ...,
+        "failureCode": ...,
+        "createdAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SyncDeploymentJobResponseTypeDef(TypedDict):
+    arn: str,
+    fleet: str,
+    status: DeploymentStatusType,  # (1)
+    deploymentConfig: DeploymentConfigTypeDef,  # (2)
+    deploymentApplicationConfigs: List[DeploymentApplicationConfigTypeDef],  # (3)
+    failureReason: str,
+    failureCode: DeploymentJobErrorCodeType,  # (4)
+    createdAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `arn`: `str`
-- `fleet`: `str`
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `deploymentConfig`:
-  [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
-- `deploymentApplicationConfigs`:
-  `List`\[[DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef)\]
-- `failureReason`: `str`
-- `failureCode`:
-  [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
-- `createdAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef) 
+3. See [:material-code-braces: DeploymentApplicationConfigTypeDef](./type_defs.md#deploymentapplicationconfigtypedef) 
+4. See [:material-code-brackets: DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="templatelocationtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TemplateLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import TemplateLocationTypeDef
+
+def get_value() -> TemplateLocationTypeDef:
+    return {
+        "s3Bucket": ...,
+        "s3Key": ...,
+    }
 ```
 
-Required fields:
-
-- `s3Bucket`: `str`
-- `s3Key`: `str`
-
-<a id="templatesummarytypedef"></a>
+```python title="Definition"
+class TemplateLocationTypeDef(TypedDict):
+    s3Bucket: str,
+    s3Key: str,
+```
 
 ## TemplateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import TemplateSummaryTypeDef
+
+def get_value() -> TemplateSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `name`: `str`
-- `version`: `str`
-
-<a id="tooltypedef"></a>
+```python title="Definition"
+class TemplateSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    lastUpdatedAt: NotRequired[datetime],
+    name: NotRequired[str],
+    version: NotRequired[str],
+```
 
 ## ToolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import ToolTypeDef
+
+def get_value() -> ToolTypeDef:
+    return {
+        "name": ...,
+        "command": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ToolTypeDef(TypedDict):
+    name: str,
+    command: str,
+    streamUI: NotRequired[bool],
+    streamOutputToCloudWatch: NotRequired[bool],
+    exitBehavior: NotRequired[ExitBehaviorType],  # (1)
+```
 
-- `name`: `str`
-- `command`: `str`
-
-Optional fields:
-
-- `streamUI`: `bool`
-- `streamOutputToCloudWatch`: `bool`
-- `exitBehavior`: [ExitBehaviorType](./literals.md#exitbehaviortype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExitBehaviorType](./literals.md#exitbehaviortype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updaterobotapplicationrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateRobotApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateRobotApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateRobotApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+        "robotSoftwareSuite": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRobotApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (1)
+    sources: NotRequired[Sequence[SourceConfigTypeDef]],  # (2)
+    currentRevisionId: NotRequired[str],
+    environment: NotRequired[EnvironmentTypeDef],  # (3)
+```
 
-- `application`: `str`
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-
-Optional fields:
-
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `currentRevisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-
-<a id="updaterobotapplicationresponsetypedef"></a>
-
+1. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+2. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
 ## UpdateRobotApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateRobotApplicationResponseTypeDef
+
+def get_value() -> UpdateRobotApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "robotSoftwareSuite": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRobotApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    environment: EnvironmentTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesimulationapplicationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSimulationApplicationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateSimulationApplicationRequestRequestTypeDef
+
+def get_value() -> UpdateSimulationApplicationRequestRequestTypeDef:
+    return {
+        "application": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSimulationApplicationRequestRequestTypeDef(TypedDict):
+    application: str,
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (1)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (2)
+    sources: NotRequired[Sequence[SourceConfigTypeDef]],  # (3)
+    renderingEngine: NotRequired[RenderingEngineTypeDef],  # (4)
+    currentRevisionId: NotRequired[str],
+    environment: NotRequired[EnvironmentTypeDef],  # (5)
+```
 
-- `application`: `str`
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-
-Optional fields:
-
-- `sources`:
-  `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `currentRevisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-
-<a id="updatesimulationapplicationresponsetypedef"></a>
-
+1. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+2. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+3. See [:material-code-braces: SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
 ## UpdateSimulationApplicationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateSimulationApplicationResponseTypeDef
+
+def get_value() -> UpdateSimulationApplicationResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "version": ...,
+        "sources": ...,
+        "simulationSoftwareSuite": ...,
+        "robotSoftwareSuite": ...,
+        "renderingEngine": ...,
+        "lastUpdatedAt": ...,
+        "revisionId": ...,
+        "environment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSimulationApplicationResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    version: str,
+    sources: List[SourceTypeDef],  # (1)
+    simulationSoftwareSuite: SimulationSoftwareSuiteTypeDef,  # (2)
+    robotSoftwareSuite: RobotSoftwareSuiteTypeDef,  # (3)
+    renderingEngine: RenderingEngineTypeDef,  # (4)
+    lastUpdatedAt: datetime,
+    revisionId: str,
+    environment: EnvironmentTypeDef,  # (5)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (6)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `version`: `str`
-- `sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
-- `simulationSoftwareSuite`:
-  [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
-- `robotSoftwareSuite`:
-  [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
-- `renderingEngine`:
-  [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
-- `lastUpdatedAt`: `datetime`
-- `revisionId`: `str`
-- `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateworldtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceTypeDef](./type_defs.md#sourcetypedef) 
+2. See [:material-code-braces: SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef) 
+3. See [:material-code-braces: RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef) 
+4. See [:material-code-braces: RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef) 
+5. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+6. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateWorldTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateWorldTemplateRequestRequestTypeDef
+
+def get_value() -> UpdateWorldTemplateRequestRequestTypeDef:
+    return {
+        "template": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorldTemplateRequestRequestTypeDef(TypedDict):
+    template: str,
+    name: NotRequired[str],
+    templateBody: NotRequired[str],
+    templateLocation: NotRequired[TemplateLocationTypeDef],  # (1)
+```
 
-- `template`: `str`
-
-Optional fields:
-
-- `name`: `str`
-- `templateBody`: `str`
-- `templateLocation`:
-  [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
-
-<a id="updateworldtemplateresponsetypedef"></a>
-
+1. See [:material-code-braces: TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef) 
 ## UpdateWorldTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UpdateWorldTemplateResponseTypeDef
+
+def get_value() -> UpdateWorldTemplateResponseTypeDef:
+    return {
+        "arn": ...,
+        "name": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateWorldTemplateResponseTypeDef(TypedDict):
+    arn: str,
+    name: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `name`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="uploadconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UploadConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import UploadConfigurationTypeDef
+
+def get_value() -> UploadConfigurationTypeDef:
+    return {
+        "name": ...,
+        "path": ...,
+        "uploadBehavior": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UploadConfigurationTypeDef(TypedDict):
+    name: str,
+    path: str,
+    uploadBehavior: UploadBehaviorType,  # (1)
+```
 
-- `name`: `str`
-- `path`: `str`
-- `uploadBehavior`: [UploadBehaviorType](./literals.md#uploadbehaviortype)
-
-<a id="vpcconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: UploadBehaviorType](./literals.md#uploadbehaviortype) 
 ## VPCConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import VPCConfigResponseTypeDef
+
+def get_value() -> VPCConfigResponseTypeDef:
+    return {
+        "subnets": ...,
+    }
 ```
 
-Optional fields:
-
-- `subnets`: `List`\[`str`\]
-- `securityGroups`: `List`\[`str`\]
-- `vpcId`: `str`
-- `assignPublicIp`: `bool`
-
-<a id="vpcconfigtypedef"></a>
+```python title="Definition"
+class VPCConfigResponseTypeDef(TypedDict):
+    subnets: NotRequired[List[str]],
+    securityGroups: NotRequired[List[str]],
+    vpcId: NotRequired[str],
+    assignPublicIp: NotRequired[bool],
+```
 
 ## VPCConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import VPCConfigTypeDef
+
+def get_value() -> VPCConfigTypeDef:
+    return {
+        "subnets": ...,
+    }
 ```
 
-Required fields:
-
-- `subnets`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `securityGroups`: `Sequence`\[`str`\]
-- `assignPublicIp`: `bool`
-
-<a id="worldconfigtypedef"></a>
+```python title="Definition"
+class VPCConfigTypeDef(TypedDict):
+    subnets: Sequence[str],
+    securityGroups: NotRequired[Sequence[str]],
+    assignPublicIp: NotRequired[bool],
+```
 
 ## WorldConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldConfigTypeDef
+
+def get_value() -> WorldConfigTypeDef:
+    return {
+        "world": ...,
+    }
 ```
 
-Optional fields:
-
-- `world`: `str`
-
-<a id="worldcounttypedef"></a>
+```python title="Definition"
+class WorldConfigTypeDef(TypedDict):
+    world: NotRequired[str],
+```
 
 ## WorldCountTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldCountTypeDef
+
+def get_value() -> WorldCountTypeDef:
+    return {
+        "floorplanCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `floorplanCount`: `int`
-- `interiorCountPerFloorplan`: `int`
-
-<a id="worldexportjobsummarytypedef"></a>
+```python title="Definition"
+class WorldCountTypeDef(TypedDict):
+    floorplanCount: NotRequired[int],
+    interiorCountPerFloorplan: NotRequired[int],
+```
 
 ## WorldExportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldExportJobSummaryTypeDef
+
+def get_value() -> WorldExportJobSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorldExportJobSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    status: NotRequired[WorldExportJobStatusType],  # (1)
+    createdAt: NotRequired[datetime],
+    worlds: NotRequired[List[str]],
+    outputLocation: NotRequired[OutputLocationTypeDef],  # (2)
+```
 
-- `arn`: `str`
-- `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
-- `createdAt`: `datetime`
-- `worlds`: `List`\[`str`\]
-- `outputLocation`:
-  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
-
-<a id="worldfailuretypedef"></a>
-
+1. See [:material-code-brackets: WorldExportJobStatusType](./literals.md#worldexportjobstatustype) 
+2. See [:material-code-braces: OutputLocationTypeDef](./type_defs.md#outputlocationtypedef) 
 ## WorldFailureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldFailureTypeDef
+
+def get_value() -> WorldFailureTypeDef:
+    return {
+        "failureCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorldFailureTypeDef(TypedDict):
+    failureCode: NotRequired[WorldGenerationJobErrorCodeType],  # (1)
+    sampleFailureReason: NotRequired[str],
+    failureCount: NotRequired[int],
+```
 
-- `failureCode`:
-  [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
-- `sampleFailureReason`: `str`
-- `failureCount`: `int`
-
-<a id="worldgenerationjobsummarytypedef"></a>
-
+1. See [:material-code-brackets: WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype) 
 ## WorldGenerationJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldGenerationJobSummaryTypeDef
+
+def get_value() -> WorldGenerationJobSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorldGenerationJobSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    template: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    status: NotRequired[WorldGenerationJobStatusType],  # (1)
+    worldCount: NotRequired[WorldCountTypeDef],  # (2)
+    succeededWorldCount: NotRequired[int],
+    failedWorldCount: NotRequired[int],
+```
 
-- `arn`: `str`
-- `template`: `str`
-- `createdAt`: `datetime`
-- `status`:
-  [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
-- `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
-- `succeededWorldCount`: `int`
-- `failedWorldCount`: `int`
-
-<a id="worldsummarytypedef"></a>
-
+1. See [:material-code-brackets: WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype) 
+2. See [:material-code-braces: WorldCountTypeDef](./type_defs.md#worldcounttypedef) 
 ## WorldSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.type_defs import WorldSummaryTypeDef
+
+def get_value() -> WorldSummaryTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WorldSummaryTypeDef(TypedDict):
+    arn: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    generationJob: NotRequired[str],
+    template: NotRequired[str],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `generationJob`: `str`
-- `template`: `str`

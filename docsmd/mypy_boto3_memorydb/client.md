@@ -1,66 +1,18 @@
-<a id="memorydbclient-for-boto3-memorydb-module"></a>
-
-# MemoryDBClient for boto3 MemoryDB module
+# MemoryDBClient
 
 > [Index](../README.md) > [MemoryDB](./README.md) > MemoryDBClient
 
-Auto-generated documentation for
-[MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
-type annotations stubs module
-[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+!!! note ""
 
-- [MemoryDBClient for boto3 MemoryDB module](#memorydbclient-for-boto3-memorydb-module)
-  - [MemoryDBClient](#memorydbclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [batch_update_cluster](#batch_update_cluster)
-    - [can_paginate](#can_paginate)
-    - [copy_snapshot](#copy_snapshot)
-    - [create_acl](#create_acl)
-    - [create_cluster](#create_cluster)
-    - [create_parameter_group](#create_parameter_group)
-    - [create_snapshot](#create_snapshot)
-    - [create_subnet_group](#create_subnet_group)
-    - [create_user](#create_user)
-    - [delete_acl](#delete_acl)
-    - [delete_cluster](#delete_cluster)
-    - [delete_parameter_group](#delete_parameter_group)
-    - [delete_snapshot](#delete_snapshot)
-    - [delete_subnet_group](#delete_subnet_group)
-    - [delete_user](#delete_user)
-    - [describe_acls](#describe_acls)
-    - [describe_clusters](#describe_clusters)
-    - [describe_engine_versions](#describe_engine_versions)
-    - [describe_events](#describe_events)
-    - [describe_parameter_groups](#describe_parameter_groups)
-    - [describe_parameters](#describe_parameters)
-    - [describe_service_updates](#describe_service_updates)
-    - [describe_snapshots](#describe_snapshots)
-    - [describe_subnet_groups](#describe_subnet_groups)
-    - [describe_users](#describe_users)
-    - [failover_shard](#failover_shard)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_allowed_node_type_updates](#list_allowed_node_type_updates)
-    - [list_tags](#list_tags)
-    - [reset_parameter_group](#reset_parameter_group)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_acl](#update_acl)
-    - [update_cluster](#update_cluster)
-    - [update_parameter_group](#update_parameter_group)
-    - [update_subnet_group](#update_subnet_group)
-    - [update_user](#update_user)
-
-<a id="memorydbclient"></a>
+    Auto-generated documentation for [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
+    type annotations stubs module [mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 ## MemoryDBClient
 
-Type annotations for `boto3.client("memorydb")`
+Type annotations and code completion for `#!python boto3.client("memorydb")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_memorydb.client import MemoryDBClient
 
@@ -68,972 +20,1267 @@ def get_memorydb_client() -> MemoryDBClient:
     return Session().client("memorydb")
 ```
 
-Boto3 documentation:
-[MemoryDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("memorydb").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("memorydb")
+
+try:
+    do_something(client)
+except (
+    client.ACLAlreadyExistsFault,
+    client.ACLNotFoundFault,
+    client.ACLQuotaExceededFault,
+    client.APICallRateForCustomerExceededFault,
+    client.ClientError,
+    client.ClusterAlreadyExistsFault,
+    client.ClusterNotFoundFault,
+    client.ClusterQuotaForCustomerExceededFault,
+    client.DefaultUserRequired,
+    client.DuplicateUserNameFault,
+    client.InsufficientClusterCapacityFault,
+    client.InvalidACLStateFault,
+    client.InvalidARNFault,
+    client.InvalidClusterStateFault,
+    client.InvalidCredentialsException,
+    client.InvalidKMSKeyFault,
+    client.InvalidNodeStateFault,
+    client.InvalidParameterCombinationException,
+    client.InvalidParameterGroupStateFault,
+    client.InvalidParameterValueException,
+    client.InvalidSnapshotStateFault,
+    client.InvalidSubnet,
+    client.InvalidUserStateFault,
+    client.InvalidVPCNetworkStateFault,
+    client.NoOperationFault,
+    client.NodeQuotaForClusterExceededFault,
+    client.NodeQuotaForCustomerExceededFault,
+    client.ParameterGroupAlreadyExistsFault,
+    client.ParameterGroupNotFoundFault,
+    client.ParameterGroupQuotaExceededFault,
+    client.ServiceLinkedRoleNotFoundFault,
+    client.ServiceUpdateNotFoundFault,
+    client.ShardNotFoundFault,
+    client.ShardsPerClusterQuotaExceededFault,
+    client.SnapshotAlreadyExistsFault,
+    client.SnapshotNotFoundFault,
+    client.SnapshotQuotaExceededFault,
+    client.SubnetGroupAlreadyExistsFault,
+    client.SubnetGroupInUseFault,
+    client.SubnetGroupNotFoundFault,
+    client.SubnetGroupQuotaExceededFault,
+    client.SubnetInUse,
+    client.SubnetNotAllowedFault,
+    client.SubnetQuotaExceededFault,
+    client.TagNotFoundFault,
+    client.TagQuotaPerResourceExceeded,
+    client.TestFailoverNotAvailableFault,
+    client.UserAlreadyExistsFault,
+    client.UserNotFoundFault,
+    client.UserQuotaExceededFault,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_memorydb.client import Exceptions
 
 def handle_error(exc: Exceptions.ACLAlreadyExistsFault) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ACLAlreadyExistsFault`
-- `Exceptions.ACLNotFoundFault`
-- `Exceptions.ACLQuotaExceededFault`
-- `Exceptions.APICallRateForCustomerExceededFault`
-- `Exceptions.ClientError`
-- `Exceptions.ClusterAlreadyExistsFault`
-- `Exceptions.ClusterNotFoundFault`
-- `Exceptions.ClusterQuotaForCustomerExceededFault`
-- `Exceptions.DefaultUserRequired`
-- `Exceptions.DuplicateUserNameFault`
-- `Exceptions.InsufficientClusterCapacityFault`
-- `Exceptions.InvalidACLStateFault`
-- `Exceptions.InvalidARNFault`
-- `Exceptions.InvalidClusterStateFault`
-- `Exceptions.InvalidCredentialsException`
-- `Exceptions.InvalidKMSKeyFault`
-- `Exceptions.InvalidNodeStateFault`
-- `Exceptions.InvalidParameterCombinationException`
-- `Exceptions.InvalidParameterGroupStateFault`
-- `Exceptions.InvalidParameterValueException`
-- `Exceptions.InvalidSnapshotStateFault`
-- `Exceptions.InvalidSubnet`
-- `Exceptions.InvalidUserStateFault`
-- `Exceptions.InvalidVPCNetworkStateFault`
-- `Exceptions.NoOperationFault`
-- `Exceptions.NodeQuotaForClusterExceededFault`
-- `Exceptions.NodeQuotaForCustomerExceededFault`
-- `Exceptions.ParameterGroupAlreadyExistsFault`
-- `Exceptions.ParameterGroupNotFoundFault`
-- `Exceptions.ParameterGroupQuotaExceededFault`
-- `Exceptions.ServiceLinkedRoleNotFoundFault`
-- `Exceptions.ServiceUpdateNotFoundFault`
-- `Exceptions.ShardNotFoundFault`
-- `Exceptions.ShardsPerClusterQuotaExceededFault`
-- `Exceptions.SnapshotAlreadyExistsFault`
-- `Exceptions.SnapshotNotFoundFault`
-- `Exceptions.SnapshotQuotaExceededFault`
-- `Exceptions.SubnetGroupAlreadyExistsFault`
-- `Exceptions.SubnetGroupInUseFault`
-- `Exceptions.SubnetGroupNotFoundFault`
-- `Exceptions.SubnetGroupQuotaExceededFault`
-- `Exceptions.SubnetInUse`
-- `Exceptions.SubnetNotAllowedFault`
-- `Exceptions.SubnetQuotaExceededFault`
-- `Exceptions.TagNotFoundFault`
-- `Exceptions.TagQuotaPerResourceExceeded`
-- `Exceptions.TestFailoverNotAvailableFault`
-- `Exceptions.UserAlreadyExistsFault`
-- `Exceptions.UserNotFoundFault`
-- `Exceptions.UserQuotaExceededFault`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MemoryDBClient exceptions.
-
-Type annotations for `boto3.client("memorydb").exceptions` method.
-
-Boto3 documentation:
-[MemoryDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="batch\_update\_cluster"></a>
-
-### batch_update_cluster
+### batch\_update\_cluster
 
 Apply the service update to a list of clusters supplied.
 
-Type annotations for `boto3.client("memorydb").batch_update_cluster` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").batch_update_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.batch_update_cluster)
 
-Boto3 documentation:
-[MemoryDB.Client.batch_update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.batch_update_cluster)
+```python title="Method definition"
+def batch_update_cluster(
+    self,
+    *,
+    ClusterNames: Sequence[str],
+    ServiceUpdate: ServiceUpdateRequestTypeDef = ...,  # (1)
+) -> BatchUpdateClusterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchUpdateClusterRequestRequestTypeDef](./type_defs.md#batchupdateclusterrequestrequesttypedef).
+1. See [:material-code-braces: ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef) 
+2. See [:material-code-braces: BatchUpdateClusterResponseTypeDef](./type_defs.md#batchupdateclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterNames`: `Sequence`\[`str`\] *(required)*
-- `ServiceUpdate`:
-  [ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchUpdateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterNames": ...,
+}
 
-Returns
-[BatchUpdateClusterResponseTypeDef](./type_defs.md#batchupdateclusterresponsetypedef).
+parent.batch_update_cluster(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchUpdateClusterRequestRequestTypeDef](./type_defs.md#batchupdateclusterrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("memorydb").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.can_paginate)
 
-Boto3 documentation:
-[MemoryDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="copy\_snapshot"></a>
-
-### copy_snapshot
+### copy\_snapshot
 
 Makes a copy of an existing snapshot.
 
-Type annotations for `boto3.client("memorydb").copy_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").copy_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.copy_snapshot)
 
-Boto3 documentation:
-[MemoryDB.Client.copy_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.copy_snapshot)
+```python title="Method definition"
+def copy_snapshot(
+    self,
+    *,
+    SourceSnapshotName: str,
+    TargetSnapshotName: str,
+    TargetBucket: str = ...,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopySnapshotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopySnapshotRequestRequestTypeDef](./type_defs.md#copysnapshotrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopySnapshotResponseTypeDef](./type_defs.md#copysnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceSnapshotName`: `str` *(required)*
-- `TargetSnapshotName`: `str` *(required)*
-- `TargetBucket`: `str`
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopySnapshotRequestRequestTypeDef = {  # (1)
+    "SourceSnapshotName": ...,
+    "TargetSnapshotName": ...,
+}
 
-Returns
-[CopySnapshotResponseTypeDef](./type_defs.md#copysnapshotresponsetypedef).
+parent.copy_snapshot(**kwargs)
+```
 
-<a id="create\_acl"></a>
+1. See [:material-code-braces: CopySnapshotRequestRequestTypeDef](./type_defs.md#copysnapshotrequestrequesttypedef) 
 
-### create_acl
+### create\_acl
 
 Creates an Access Control List.
 
-Type annotations for `boto3.client("memorydb").create_acl` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_acl)
 
-Boto3 documentation:
-[MemoryDB.Client.create_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_acl)
+```python title="Method definition"
+def create_acl(
+    self,
+    *,
+    ACLName: str,
+    UserNames: Sequence[str] = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateACLResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateACLRequestRequestTypeDef](./type_defs.md#createaclrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateACLResponseTypeDef](./type_defs.md#createaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ACLName`: `str` *(required)*
-- `UserNames`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateACLRequestRequestTypeDef = {  # (1)
+    "ACLName": ...,
+}
 
-Returns [CreateACLResponseTypeDef](./type_defs.md#createaclresponsetypedef).
+parent.create_acl(**kwargs)
+```
 
-<a id="create\_cluster"></a>
+1. See [:material-code-braces: CreateACLRequestRequestTypeDef](./type_defs.md#createaclrequestrequesttypedef) 
 
-### create_cluster
+### create\_cluster
 
 Creates a cluster.
 
-Type annotations for `boto3.client("memorydb").create_cluster` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_cluster)
 
-Boto3 documentation:
-[MemoryDB.Client.create_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_cluster)
+```python title="Method definition"
+def create_cluster(
+    self,
+    *,
+    ClusterName: str,
+    NodeType: str,
+    ACLName: str,
+    ParameterGroupName: str = ...,
+    Description: str = ...,
+    NumShards: int = ...,
+    NumReplicasPerShard: int = ...,
+    SubnetGroupName: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+    MaintenanceWindow: str = ...,
+    Port: int = ...,
+    SnsTopicArn: str = ...,
+    TLSEnabled: bool = ...,
+    KmsKeyId: str = ...,
+    SnapshotArns: Sequence[str] = ...,
+    SnapshotName: str = ...,
+    SnapshotRetentionLimit: int = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    SnapshotWindow: str = ...,
+    EngineVersion: str = ...,
+    AutoMinorVersionUpgrade: bool = ...,
+) -> CreateClusterResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `NodeType`: `str` *(required)*
-- `ACLName`: `str` *(required)*
-- `ParameterGroupName`: `str`
-- `Description`: `str`
-- `NumShards`: `int`
-- `NumReplicasPerShard`: `int`
-- `SubnetGroupName`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `MaintenanceWindow`: `str`
-- `Port`: `int`
-- `SnsTopicArn`: `str`
-- `TLSEnabled`: `bool`
-- `KmsKeyId`: `str`
-- `SnapshotArns`: `Sequence`\[`str`\]
-- `SnapshotName`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SnapshotWindow`: `str`
-- `EngineVersion`: `str`
-- `AutoMinorVersionUpgrade`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "NodeType": ...,
+    "ACLName": ...,
+}
 
-Returns
-[CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+parent.create_cluster(**kwargs)
+```
 
-<a id="create\_parameter\_group"></a>
+1. See [:material-code-braces: CreateClusterRequestRequestTypeDef](./type_defs.md#createclusterrequestrequesttypedef) 
 
-### create_parameter_group
+### create\_parameter\_group
 
 Creates a new MemoryDB parameter group.
 
-Type annotations for `boto3.client("memorydb").create_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_parameter_group)
 
-Boto3 documentation:
-[MemoryDB.Client.create_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_parameter_group)
+```python title="Method definition"
+def create_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+    Family: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateParameterGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateParameterGroupRequestRequestTypeDef](./type_defs.md#createparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `Family`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+    "Family": ...,
+}
 
-Returns
-[CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
+parent.create_parameter_group(**kwargs)
+```
 
-<a id="create\_snapshot"></a>
+1. See [:material-code-braces: CreateParameterGroupRequestRequestTypeDef](./type_defs.md#createparametergrouprequestrequesttypedef) 
 
-### create_snapshot
+### create\_snapshot
 
 Creates a copy of an entire cluster at a specific moment in time.
 
-Type annotations for `boto3.client("memorydb").create_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_snapshot)
 
-Boto3 documentation:
-[MemoryDB.Client.create_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_snapshot)
+```python title="Method definition"
+def create_snapshot(
+    self,
+    *,
+    ClusterName: str,
+    SnapshotName: str,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSnapshotResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `SnapshotName`: `str` *(required)*
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSnapshotRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "SnapshotName": ...,
+}
 
-Returns
-[CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
+parent.create_snapshot(**kwargs)
+```
 
-<a id="create\_subnet\_group"></a>
+1. See [:material-code-braces: CreateSnapshotRequestRequestTypeDef](./type_defs.md#createsnapshotrequestrequesttypedef) 
 
-### create_subnet_group
+### create\_subnet\_group
 
 Creates a subnet group.
 
-Type annotations for `boto3.client("memorydb").create_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_subnet_group)
 
-Boto3 documentation:
-[MemoryDB.Client.create_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_subnet_group)
+```python title="Method definition"
+def create_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+    SubnetIds: Sequence[str],
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateSubnetGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+    "SubnetIds": ...,
+}
 
-Returns
-[CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
+parent.create_subnet_group(**kwargs)
+```
 
-<a id="create\_user"></a>
+1. See [:material-code-braces: CreateSubnetGroupRequestRequestTypeDef](./type_defs.md#createsubnetgrouprequestrequesttypedef) 
 
-### create_user
+### create\_user
 
 Creates a MemoryDB user.
 
-Type annotations for `boto3.client("memorydb").create_user` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").create_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_user)
 
-Boto3 documentation:
-[MemoryDB.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.create_user)
+```python title="Method definition"
+def create_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationMode: AuthenticationModeTypeDef,  # (1)
+    AccessString: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateUserResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationMode`:
-  [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
-  *(required)*
-- `AccessString`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+    "AuthenticationMode": ...,
+    "AccessString": ...,
+}
 
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+parent.create_user(**kwargs)
+```
 
-<a id="delete\_acl"></a>
+1. See [:material-code-braces: CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef) 
 
-### delete_acl
+### delete\_acl
 
 Deletes an Access Control List.
 
-Type annotations for `boto3.client("memorydb").delete_acl` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_acl)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_acl)
+```python title="Method definition"
+def delete_acl(
+    self,
+    *,
+    ACLName: str,
+) -> DeleteACLResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteACLRequestRequestTypeDef](./type_defs.md#deleteaclrequestrequesttypedef).
+1. See [:material-code-braces: DeleteACLResponseTypeDef](./type_defs.md#deleteaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ACLName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteACLRequestRequestTypeDef = {  # (1)
+    "ACLName": ...,
+}
 
-Returns [DeleteACLResponseTypeDef](./type_defs.md#deleteaclresponsetypedef).
+parent.delete_acl(**kwargs)
+```
 
-<a id="delete\_cluster"></a>
+1. See [:material-code-braces: DeleteACLRequestRequestTypeDef](./type_defs.md#deleteaclrequestrequesttypedef) 
 
-### delete_cluster
+### delete\_cluster
 
 Deletes a cluster.
 
-Type annotations for `boto3.client("memorydb").delete_cluster` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_cluster)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_cluster)
+```python title="Method definition"
+def delete_cluster(
+    self,
+    *,
+    ClusterName: str,
+    FinalSnapshotName: str = ...,
+) -> DeleteClusterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef).
+1. See [:material-code-braces: DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `FinalSnapshotName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+parent.delete_cluster(**kwargs)
+```
 
-<a id="delete\_parameter\_group"></a>
+1. See [:material-code-braces: DeleteClusterRequestRequestTypeDef](./type_defs.md#deleteclusterrequestrequesttypedef) 
 
-### delete_parameter_group
+### delete\_parameter\_group
 
 Deletes the specified parameter group.
 
-Type annotations for `boto3.client("memorydb").delete_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_parameter_group)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_parameter_group)
+```python title="Method definition"
+def delete_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+) -> DeleteParameterGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteParameterGroupRequestRequestTypeDef](./type_defs.md#deleteparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef).
+parent.delete_parameter_group(**kwargs)
+```
 
-<a id="delete\_snapshot"></a>
+1. See [:material-code-braces: DeleteParameterGroupRequestRequestTypeDef](./type_defs.md#deleteparametergrouprequestrequesttypedef) 
 
-### delete_snapshot
+### delete\_snapshot
 
 Deletes an existing snapshot.
 
-Type annotations for `boto3.client("memorydb").delete_snapshot` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_snapshot` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_snapshot)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_snapshot](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_snapshot)
+```python title="Method definition"
+def delete_snapshot(
+    self,
+    *,
+    SnapshotName: str,
+) -> DeleteSnapshotResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef).
+1. See [:material-code-braces: DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SnapshotName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSnapshotRequestRequestTypeDef = {  # (1)
+    "SnapshotName": ...,
+}
 
-Returns
-[DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef).
+parent.delete_snapshot(**kwargs)
+```
 
-<a id="delete\_subnet\_group"></a>
+1. See [:material-code-braces: DeleteSnapshotRequestRequestTypeDef](./type_defs.md#deletesnapshotrequestrequesttypedef) 
 
-### delete_subnet_group
+### delete\_subnet\_group
 
 Deletes a subnet group.
 
-Type annotations for `boto3.client("memorydb").delete_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_subnet_group)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_subnet_group)
+```python title="Method definition"
+def delete_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+) -> DeleteSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+}
 
-Returns
-[DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef).
+parent.delete_subnet_group(**kwargs)
+```
 
-<a id="delete\_user"></a>
+1. See [:material-code-braces: DeleteSubnetGroupRequestRequestTypeDef](./type_defs.md#deletesubnetgrouprequestrequesttypedef) 
 
-### delete_user
+### delete\_user
 
 Deletes a user.
 
-Type annotations for `boto3.client("memorydb").delete_user` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").delete_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_user)
 
-Boto3 documentation:
-[MemoryDB.Client.delete_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.delete_user)
+```python title="Method definition"
+def delete_user(
+    self,
+    *,
+    UserName: str,
+) -> DeleteUserResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef).
+1. See [:material-code-braces: DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
+parent.delete_user(**kwargs)
+```
 
-<a id="describe\_acls"></a>
+1. See [:material-code-braces: DeleteUserRequestRequestTypeDef](./type_defs.md#deleteuserrequestrequesttypedef) 
 
-### describe_acls
+### describe\_acls
 
-Returns a list of ACLs See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeACLs).
+Returns a list of ACLs See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeACLs).
 
-Type annotations for `boto3.client("memorydb").describe_acls` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_acls` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_acls)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_acls](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_acls)
+```python title="Method definition"
+def describe_acls(
+    self,
+    *,
+    ACLName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeACLsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeACLsRequestRequestTypeDef](./type_defs.md#describeaclsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeACLsResponseTypeDef](./type_defs.md#describeaclsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ACLName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeACLsRequestRequestTypeDef = {  # (1)
+    "ACLName": ...,
+}
 
-Returns
-[DescribeACLsResponseTypeDef](./type_defs.md#describeaclsresponsetypedef).
+parent.describe_acls(**kwargs)
+```
 
-<a id="describe\_clusters"></a>
+1. See [:material-code-braces: DescribeACLsRequestRequestTypeDef](./type_defs.md#describeaclsrequestrequesttypedef) 
 
-### describe_clusters
+### describe\_clusters
 
 Returns information about all provisioned clusters if no cluster identifier is
 specified, or about a specific cluster if a cluster name is supplied.
 
-Type annotations for `boto3.client("memorydb").describe_clusters` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_clusters)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_clusters)
+```python title="Method definition"
+def describe_clusters(
+    self,
+    *,
+    ClusterName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ShowShardDetails: bool = ...,
+) -> DescribeClustersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ShowShardDetails`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeClustersRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+parent.describe_clusters(**kwargs)
+```
 
-<a id="describe\_engine\_versions"></a>
+1. See [:material-code-braces: DescribeClustersRequestRequestTypeDef](./type_defs.md#describeclustersrequestrequesttypedef) 
 
-### describe_engine_versions
+### describe\_engine\_versions
 
 Returns a list of the available Redis engine versions.
 
-Type annotations for `boto3.client("memorydb").describe_engine_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_engine_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_engine_versions)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_engine_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_engine_versions)
+```python title="Method definition"
+def describe_engine_versions(
+    self,
+    *,
+    EngineVersion: str = ...,
+    ParameterGroupFamily: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    DefaultOnly: bool = ...,
+) -> DescribeEngineVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEngineVersionsRequestRequestTypeDef](./type_defs.md#describeengineversionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEngineVersionsResponseTypeDef](./type_defs.md#describeengineversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EngineVersion`: `str`
-- `ParameterGroupFamily`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `DefaultOnly`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeEngineVersionsRequestRequestTypeDef = {  # (1)
+    "EngineVersion": ...,
+}
 
-Returns
-[DescribeEngineVersionsResponseTypeDef](./type_defs.md#describeengineversionsresponsetypedef).
+parent.describe_engine_versions(**kwargs)
+```
 
-<a id="describe\_events"></a>
+1. See [:material-code-braces: DescribeEngineVersionsRequestRequestTypeDef](./type_defs.md#describeengineversionsrequestrequesttypedef) 
 
-### describe_events
+### describe\_events
 
 Returns events related to clusters, security groups, and parameter groups.
 
-Type annotations for `boto3.client("memorydb").describe_events` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_events)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_events)
+```python title="Method definition"
+def describe_events(
+    self,
+    *,
+    SourceName: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeEventsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef).
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SourceName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsRequestRequestTypeDef = {  # (1)
+    "SourceName": ...,
+}
 
-Returns
-[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
+parent.describe_events(**kwargs)
+```
 
-<a id="describe\_parameter\_groups"></a>
+1. See [:material-code-braces: DescribeEventsRequestRequestTypeDef](./type_defs.md#describeeventsrequestrequesttypedef) 
 
-### describe_parameter_groups
+### describe\_parameter\_groups
 
 Returns a list of parameter group descriptions.
 
-Type annotations for `boto3.client("memorydb").describe_parameter_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_parameter_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_parameter_groups)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_parameter_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_parameter_groups)
+```python title="Method definition"
+def describe_parameter_groups(
+    self,
+    *,
+    ParameterGroupName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeParameterGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeParameterGroupsRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef).
+parent.describe_parameter_groups(**kwargs)
+```
 
-<a id="describe\_parameters"></a>
+1. See [:material-code-braces: DescribeParameterGroupsRequestRequestTypeDef](./type_defs.md#describeparametergroupsrequestrequesttypedef) 
 
-### describe_parameters
+### describe\_parameters
 
 Returns the detailed parameter list for a particular parameter group.
 
-Type annotations for `boto3.client("memorydb").describe_parameters` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_parameters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_parameters)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_parameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_parameters)
+```python title="Method definition"
+def describe_parameters(
+    self,
+    *,
+    ParameterGroupName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeParametersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef).
+1. See [:material-code-braces: DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeParametersRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef).
+parent.describe_parameters(**kwargs)
+```
 
-<a id="describe\_service\_updates"></a>
+1. See [:material-code-braces: DescribeParametersRequestRequestTypeDef](./type_defs.md#describeparametersrequestrequesttypedef) 
 
-### describe_service_updates
+### describe\_service\_updates
 
-Returns details of the service updates See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeServiceUpdates).
+Returns details of the service updates See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/DescribeServiceUpdates).
 
-Type annotations for `boto3.client("memorydb").describe_service_updates`
-method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_service_updates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_service_updates)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_service_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_service_updates)
+```python title="Method definition"
+def describe_service_updates(
+    self,
+    *,
+    ServiceUpdateName: str = ...,
+    ClusterNames: Sequence[str] = ...,
+    Status: Sequence[ServiceUpdateStatusType] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeServiceUpdatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeServiceUpdatesRequestRequestTypeDef](./type_defs.md#describeserviceupdatesrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceUpdateStatusType](./literals.md#serviceupdatestatustype) 
+2. See [:material-code-braces: DescribeServiceUpdatesResponseTypeDef](./type_defs.md#describeserviceupdatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceUpdateName`: `str`
-- `ClusterNames`: `Sequence`\[`str`\]
-- `Status`:
-  `Sequence`\[[ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeServiceUpdatesRequestRequestTypeDef = {  # (1)
+    "ServiceUpdateName": ...,
+}
 
-Returns
-[DescribeServiceUpdatesResponseTypeDef](./type_defs.md#describeserviceupdatesresponsetypedef).
+parent.describe_service_updates(**kwargs)
+```
 
-<a id="describe\_snapshots"></a>
+1. See [:material-code-braces: DescribeServiceUpdatesRequestRequestTypeDef](./type_defs.md#describeserviceupdatesrequestrequesttypedef) 
 
-### describe_snapshots
+### describe\_snapshots
 
 Returns information about cluster snapshots.
 
-Type annotations for `boto3.client("memorydb").describe_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_snapshots)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_snapshots)
+```python title="Method definition"
+def describe_snapshots(
+    self,
+    *,
+    ClusterName: str = ...,
+    SnapshotName: str = ...,
+    Source: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    ShowDetail: bool = ...,
+) -> DescribeSnapshotsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str`
-- `SnapshotName`: `str`
-- `Source`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ShowDetail`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DescribeSnapshotsRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef).
+parent.describe_snapshots(**kwargs)
+```
 
-<a id="describe\_subnet\_groups"></a>
+1. See [:material-code-braces: DescribeSnapshotsRequestRequestTypeDef](./type_defs.md#describesnapshotsrequestrequesttypedef) 
 
-### describe_subnet_groups
+### describe\_subnet\_groups
 
 Returns a list of subnet group descriptions.
 
-Type annotations for `boto3.client("memorydb").describe_subnet_groups` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_subnet_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_subnet_groups)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_subnet_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_subnet_groups)
+```python title="Method definition"
+def describe_subnet_groups(
+    self,
+    *,
+    SubnetGroupName: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeSubnetGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeSubnetGroupsRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+}
 
-Returns
-[DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef).
+parent.describe_subnet_groups(**kwargs)
+```
 
-<a id="describe\_users"></a>
+1. See [:material-code-braces: DescribeSubnetGroupsRequestRequestTypeDef](./type_defs.md#describesubnetgroupsrequestrequesttypedef) 
 
-### describe_users
+### describe\_users
 
 Returns a list of users.
 
-Type annotations for `boto3.client("memorydb").describe_users` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").describe_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_users)
 
-Boto3 documentation:
-[MemoryDB.Client.describe_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.describe_users)
+```python title="Method definition"
+def describe_users(
+    self,
+    *,
+    UserName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeUsersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef).
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeUsersRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns
-[DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
+parent.describe_users(**kwargs)
+```
 
-<a id="failover\_shard"></a>
+1. See [:material-code-braces: DescribeUsersRequestRequestTypeDef](./type_defs.md#describeusersrequestrequesttypedef) 
 
-### failover_shard
+### failover\_shard
 
-Used to failover a shard See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/FailoverShard).
+Used to failover a shard See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/FailoverShard).
 
-Type annotations for `boto3.client("memorydb").failover_shard` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").failover_shard` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.failover_shard)
 
-Boto3 documentation:
-[MemoryDB.Client.failover_shard](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.failover_shard)
+```python title="Method definition"
+def failover_shard(
+    self,
+    *,
+    ClusterName: str,
+    ShardName: str,
+) -> FailoverShardResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[FailoverShardRequestRequestTypeDef](./type_defs.md#failovershardrequestrequesttypedef).
+1. See [:material-code-braces: FailoverShardResponseTypeDef](./type_defs.md#failovershardresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `ShardName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FailoverShardRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+    "ShardName": ...,
+}
 
-Returns
-[FailoverShardResponseTypeDef](./type_defs.md#failovershardresponsetypedef).
+parent.failover_shard(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: FailoverShardRequestRequestTypeDef](./type_defs.md#failovershardrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("memorydb").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MemoryDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### list\_allowed\_node\_type\_updates
 
-Returns `str`.
+Lists all available node types that you can scale to from your cluster's current
+node type.
 
-<a id="list\_allowed\_node\_type\_updates"></a>
+Type annotations and code completion for `#!python boto3.client("memorydb").list_allowed_node_type_updates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.list_allowed_node_type_updates)
 
-### list_allowed_node_type_updates
+```python title="Method definition"
+def list_allowed_node_type_updates(
+    self,
+    *,
+    ClusterName: str,
+) -> ListAllowedNodeTypeUpdatesResponseTypeDef:  # (1)
+    ...
+```
 
-Lists all available node types that you can scale to from your cluster's
-current node type.
+1. See [:material-code-braces: ListAllowedNodeTypeUpdatesResponseTypeDef](./type_defs.md#listallowednodetypeupdatesresponsetypedef) 
 
-Type annotations for `boto3.client("memorydb").list_allowed_node_type_updates`
-method.
 
-Boto3 documentation:
-[MemoryDB.Client.list_allowed_node_type_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.list_allowed_node_type_updates)
+```python title="Usage example with kwargs"
+kwargs: ListAllowedNodeTypeUpdatesRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Arguments mapping described in
-[ListAllowedNodeTypeUpdatesRequestRequestTypeDef](./type_defs.md#listallowednodetypeupdatesrequestrequesttypedef).
+parent.list_allowed_node_type_updates(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ListAllowedNodeTypeUpdatesRequestRequestTypeDef](./type_defs.md#listallowednodetypeupdatesrequestrequesttypedef) 
 
-- `ClusterName`: `str` *(required)*
-
-Returns
-[ListAllowedNodeTypeUpdatesResponseTypeDef](./type_defs.md#listallowednodetypeupdatesresponsetypedef).
-
-<a id="list\_tags"></a>
-
-### list_tags
+### list\_tags
 
 Lists all tags currently on a named resource.
 
-Type annotations for `boto3.client("memorydb").list_tags` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").list_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.list_tags)
 
-Boto3 documentation:
-[MemoryDB.Client.list_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.list_tags)
+```python title="Method definition"
+def list_tags(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef).
+1. See [:material-code-braces: ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+parent.list_tags(**kwargs)
+```
 
-<a id="reset\_parameter\_group"></a>
+1. See [:material-code-braces: ListTagsRequestRequestTypeDef](./type_defs.md#listtagsrequestrequesttypedef) 
 
-### reset_parameter_group
+### reset\_parameter\_group
 
 Modifies the parameters of a parameter group to the engine or system default
 value.
 
-Type annotations for `boto3.client("memorydb").reset_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").reset_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.reset_parameter_group)
 
-Boto3 documentation:
-[MemoryDB.Client.reset_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.reset_parameter_group)
+```python title="Method definition"
+def reset_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+    AllParameters: bool = ...,
+    ParameterNames: Sequence[str] = ...,
+) -> ResetParameterGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetParameterGroupRequestRequestTypeDef](./type_defs.md#resetparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: ResetParameterGroupResponseTypeDef](./type_defs.md#resetparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `AllParameters`: `bool`
-- `ParameterNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: ResetParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+}
 
-Returns
-[ResetParameterGroupResponseTypeDef](./type_defs.md#resetparametergroupresponsetypedef).
+parent.reset_parameter_group(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ResetParameterGroupRequestRequestTypeDef](./type_defs.md#resetparametergrouprequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 A tag is a key-value pair where the key and value are case-sensitive.
 
-Type annotations for `boto3.client("memorydb").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.tag_resource)
 
-Boto3 documentation:
-[MemoryDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> TagResourceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns
-[TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
-Use this operation to remove tags on a resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/UntagResource).
+Use this operation to remove tags on a resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/memorydb-2021-01-01/UntagResource).
 
-Type annotations for `boto3.client("memorydb").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.untag_resource)
 
-Boto3 documentation:
-[MemoryDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> UntagResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+1. See [:material-code-braces: UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns
-[UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_acl"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_acl
+### update\_acl
 
 Changes the list of users that belong to the Access Control List.
 
-Type annotations for `boto3.client("memorydb").update_acl` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").update_acl` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_acl)
 
-Boto3 documentation:
-[MemoryDB.Client.update_acl](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_acl)
+```python title="Method definition"
+def update_acl(
+    self,
+    *,
+    ACLName: str,
+    UserNamesToAdd: Sequence[str] = ...,
+    UserNamesToRemove: Sequence[str] = ...,
+) -> UpdateACLResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateACLRequestRequestTypeDef](./type_defs.md#updateaclrequestrequesttypedef).
+1. See [:material-code-braces: UpdateACLResponseTypeDef](./type_defs.md#updateaclresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ACLName`: `str` *(required)*
-- `UserNamesToAdd`: `Sequence`\[`str`\]
-- `UserNamesToRemove`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateACLRequestRequestTypeDef = {  # (1)
+    "ACLName": ...,
+}
 
-Returns [UpdateACLResponseTypeDef](./type_defs.md#updateaclresponsetypedef).
+parent.update_acl(**kwargs)
+```
 
-<a id="update\_cluster"></a>
+1. See [:material-code-braces: UpdateACLRequestRequestTypeDef](./type_defs.md#updateaclrequestrequesttypedef) 
 
-### update_cluster
+### update\_cluster
 
 Modifies the settings for a cluster.
 
-Type annotations for `boto3.client("memorydb").update_cluster` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").update_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_cluster)
 
-Boto3 documentation:
-[MemoryDB.Client.update_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_cluster)
+```python title="Method definition"
+def update_cluster(
+    self,
+    *,
+    ClusterName: str,
+    Description: str = ...,
+    SecurityGroupIds: Sequence[str] = ...,
+    MaintenanceWindow: str = ...,
+    SnsTopicArn: str = ...,
+    SnsTopicStatus: str = ...,
+    ParameterGroupName: str = ...,
+    SnapshotWindow: str = ...,
+    SnapshotRetentionLimit: int = ...,
+    NodeType: str = ...,
+    EngineVersion: str = ...,
+    ReplicaConfiguration: ReplicaConfigurationRequestTypeDef = ...,  # (1)
+    ShardConfiguration: ShardConfigurationRequestTypeDef = ...,  # (2)
+    ACLName: str = ...,
+) -> UpdateClusterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef).
+1. See [:material-code-braces: ReplicaConfigurationRequestTypeDef](./type_defs.md#replicaconfigurationrequesttypedef) 
+2. See [:material-code-braces: ShardConfigurationRequestTypeDef](./type_defs.md#shardconfigurationrequesttypedef) 
+3. See [:material-code-braces: UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ClusterName`: `str` *(required)*
-- `Description`: `str`
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-- `MaintenanceWindow`: `str`
-- `SnsTopicArn`: `str`
-- `SnsTopicStatus`: `str`
-- `ParameterGroupName`: `str`
-- `SnapshotWindow`: `str`
-- `SnapshotRetentionLimit`: `int`
-- `NodeType`: `str`
-- `EngineVersion`: `str`
-- `ReplicaConfiguration`:
-  [ReplicaConfigurationRequestTypeDef](./type_defs.md#replicaconfigurationrequesttypedef)
-- `ShardConfiguration`:
-  [ShardConfigurationRequestTypeDef](./type_defs.md#shardconfigurationrequesttypedef)
-- `ACLName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateClusterRequestRequestTypeDef = {  # (1)
+    "ClusterName": ...,
+}
 
-Returns
-[UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
+parent.update_cluster(**kwargs)
+```
 
-<a id="update\_parameter\_group"></a>
+1. See [:material-code-braces: UpdateClusterRequestRequestTypeDef](./type_defs.md#updateclusterrequestrequesttypedef) 
 
-### update_parameter_group
+### update\_parameter\_group
 
 Updates the parameters of a parameter group.
 
-Type annotations for `boto3.client("memorydb").update_parameter_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").update_parameter_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_parameter_group)
 
-Boto3 documentation:
-[MemoryDB.Client.update_parameter_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_parameter_group)
+```python title="Method definition"
+def update_parameter_group(
+    self,
+    *,
+    ParameterGroupName: str,
+    ParameterNameValues: Sequence[ParameterNameValueTypeDef],  # (1)
+) -> UpdateParameterGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef).
+1. See [:material-code-braces: ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef) 
+2. See [:material-code-braces: UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ParameterGroupName`: `str` *(required)*
-- `ParameterNameValues`:
-  `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateParameterGroupRequestRequestTypeDef = {  # (1)
+    "ParameterGroupName": ...,
+    "ParameterNameValues": ...,
+}
 
-Returns
-[UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef).
+parent.update_parameter_group(**kwargs)
+```
 
-<a id="update\_subnet\_group"></a>
+1. See [:material-code-braces: UpdateParameterGroupRequestRequestTypeDef](./type_defs.md#updateparametergrouprequestrequesttypedef) 
 
-### update_subnet_group
+### update\_subnet\_group
 
 Updates a subnet group.
 
-Type annotations for `boto3.client("memorydb").update_subnet_group` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").update_subnet_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_subnet_group)
 
-Boto3 documentation:
-[MemoryDB.Client.update_subnet_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_subnet_group)
+```python title="Method definition"
+def update_subnet_group(
+    self,
+    *,
+    SubnetGroupName: str,
+    Description: str = ...,
+    SubnetIds: Sequence[str] = ...,
+) -> UpdateSubnetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef).
+1. See [:material-code-braces: UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubnetGroupName`: `str` *(required)*
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateSubnetGroupRequestRequestTypeDef = {  # (1)
+    "SubnetGroupName": ...,
+}
 
-Returns
-[UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).
+parent.update_subnet_group(**kwargs)
+```
 
-<a id="update\_user"></a>
+1. See [:material-code-braces: UpdateSubnetGroupRequestRequestTypeDef](./type_defs.md#updatesubnetgrouprequestrequesttypedef) 
 
-### update_user
+### update\_user
 
 Changes user password(s) and/or access string.
 
-Type annotations for `boto3.client("memorydb").update_user` method.
+Type annotations and code completion for `#!python boto3.client("memorydb").update_user` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_user)
 
-Boto3 documentation:
-[MemoryDB.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB.Client.update_user)
+```python title="Method definition"
+def update_user(
+    self,
+    *,
+    UserName: str,
+    AuthenticationMode: AuthenticationModeTypeDef = ...,  # (1)
+    AccessString: str = ...,
+) -> UpdateUserResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
+1. See [:material-code-braces: AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef) 
+2. See [:material-code-braces: UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef) 
 
-Keyword-only arguments:
 
-- `UserName`: `str` *(required)*
-- `AuthenticationMode`:
-  [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
-- `AccessString`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateUserRequestRequestTypeDef = {  # (1)
+    "UserName": ...,
+}
 
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+parent.update_user(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef) 
+
+
+
+

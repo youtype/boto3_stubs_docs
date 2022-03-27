@@ -1,733 +1,1011 @@
-<a id="typed-dictionaries-for-boto3-health-module"></a>
-
-# Typed dictionaries for boto3 Health module
+# Typed dictionaries
 
 > [Index](../README.md) > [Health](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
-type annotations stubs module
-[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Health module](#typed-dictionaries-for-boto3-health-module)
-  - [AffectedEntityTypeDef](#affectedentitytypedef)
-  - [DateTimeRangeTypeDef](#datetimerangetypedef)
-  - [DescribeAffectedAccountsForOrganizationRequestRequestTypeDef](#describeaffectedaccountsfororganizationrequestrequesttypedef)
-  - [DescribeAffectedAccountsForOrganizationResponseTypeDef](#describeaffectedaccountsfororganizationresponsetypedef)
-  - [DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef](#describeaffectedentitiesfororganizationrequestrequesttypedef)
-  - [DescribeAffectedEntitiesForOrganizationResponseTypeDef](#describeaffectedentitiesfororganizationresponsetypedef)
-  - [DescribeAffectedEntitiesRequestRequestTypeDef](#describeaffectedentitiesrequestrequesttypedef)
-  - [DescribeAffectedEntitiesResponseTypeDef](#describeaffectedentitiesresponsetypedef)
-  - [DescribeEntityAggregatesRequestRequestTypeDef](#describeentityaggregatesrequestrequesttypedef)
-  - [DescribeEntityAggregatesResponseTypeDef](#describeentityaggregatesresponsetypedef)
-  - [DescribeEventAggregatesRequestRequestTypeDef](#describeeventaggregatesrequestrequesttypedef)
-  - [DescribeEventAggregatesResponseTypeDef](#describeeventaggregatesresponsetypedef)
-  - [DescribeEventDetailsForOrganizationRequestRequestTypeDef](#describeeventdetailsfororganizationrequestrequesttypedef)
-  - [DescribeEventDetailsForOrganizationResponseTypeDef](#describeeventdetailsfororganizationresponsetypedef)
-  - [DescribeEventDetailsRequestRequestTypeDef](#describeeventdetailsrequestrequesttypedef)
-  - [DescribeEventDetailsResponseTypeDef](#describeeventdetailsresponsetypedef)
-  - [DescribeEventTypesRequestRequestTypeDef](#describeeventtypesrequestrequesttypedef)
-  - [DescribeEventTypesResponseTypeDef](#describeeventtypesresponsetypedef)
-  - [DescribeEventsForOrganizationRequestRequestTypeDef](#describeeventsfororganizationrequestrequesttypedef)
-  - [DescribeEventsForOrganizationResponseTypeDef](#describeeventsfororganizationresponsetypedef)
-  - [DescribeEventsRequestRequestTypeDef](#describeeventsrequestrequesttypedef)
-  - [DescribeEventsResponseTypeDef](#describeeventsresponsetypedef)
-  - [DescribeHealthServiceStatusForOrganizationResponseTypeDef](#describehealthservicestatusfororganizationresponsetypedef)
-  - [EntityAggregateTypeDef](#entityaggregatetypedef)
-  - [EntityFilterTypeDef](#entityfiltertypedef)
-  - [EventAccountFilterTypeDef](#eventaccountfiltertypedef)
-  - [EventAggregateTypeDef](#eventaggregatetypedef)
-  - [EventDescriptionTypeDef](#eventdescriptiontypedef)
-  - [EventDetailsErrorItemTypeDef](#eventdetailserroritemtypedef)
-  - [EventDetailsTypeDef](#eventdetailstypedef)
-  - [EventFilterTypeDef](#eventfiltertypedef)
-  - [EventTypeDef](#eventtypedef)
-  - [EventTypeFilterTypeDef](#eventtypefiltertypedef)
-  - [EventTypeTypeDef](#eventtypetypedef)
-  - [OrganizationAffectedEntitiesErrorItemTypeDef](#organizationaffectedentitieserroritemtypedef)
-  - [OrganizationEventDetailsErrorItemTypeDef](#organizationeventdetailserroritemtypedef)
-  - [OrganizationEventDetailsTypeDef](#organizationeventdetailstypedef)
-  - [OrganizationEventFilterTypeDef](#organizationeventfiltertypedef)
-  - [OrganizationEventTypeDef](#organizationeventtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-
-<a id="affectedentitytypedef"></a>
+    Auto-generated documentation for [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
+    type annotations stubs module [mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ## AffectedEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import AffectedEntityTypeDef
+
+def get_value() -> AffectedEntityTypeDef:
+    return {
+        "entityArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AffectedEntityTypeDef(TypedDict):
+    entityArn: NotRequired[str],
+    eventArn: NotRequired[str],
+    entityValue: NotRequired[str],
+    entityUrl: NotRequired[str],
+    awsAccountId: NotRequired[str],
+    lastUpdatedTime: NotRequired[datetime],
+    statusCode: NotRequired[entityStatusCodeType],  # (1)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `entityArn`: `str`
-- `eventArn`: `str`
-- `entityValue`: `str`
-- `entityUrl`: `str`
-- `awsAccountId`: `str`
-- `lastUpdatedTime`: `datetime`
-- `statusCode`: [entityStatusCodeType](./literals.md#entitystatuscodetype)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="datetimerangetypedef"></a>
-
+1. See [:material-code-brackets: entityStatusCodeType](./literals.md#entitystatuscodetype) 
 ## DateTimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DateTimeRangeTypeDef
+
+def get_value() -> DateTimeRangeTypeDef:
+    return {
+        "from": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DateTimeRangeTypeDef(TypedDict):
+    from: NotRequired[Union[datetime, str]],
+    to: NotRequired[Union[datetime, str]],
+```
 
-- `from`: `Union`\[`datetime`, `str`\]
-- `to`: `Union`\[`datetime`, `str`\]
+## DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef
 
-<a id="describeaffectedaccountsfororganizationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef
 
+def get_value() -> DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef:
+    return {
+        "eventArn": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAffectedAccountsForOrganizationRequestDescribeAffectedAccountsForOrganizationPaginateTypeDef(TypedDict):
+    eventArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAffectedAccountsForOrganizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationRequestRequestTypeDef
+
+def get_value() -> DescribeAffectedAccountsForOrganizationRequestRequestTypeDef:
+    return {
+        "eventArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventArn`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describeaffectedaccountsfororganizationresponsetypedef"></a>
+```python title="Definition"
+class DescribeAffectedAccountsForOrganizationRequestRequestTypeDef(TypedDict):
+    eventArn: str,
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## DescribeAffectedAccountsForOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedAccountsForOrganizationResponseTypeDef
+
+def get_value() -> DescribeAffectedAccountsForOrganizationResponseTypeDef:
+    return {
+        "affectedAccounts": ...,
+        "eventScopeCode": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAffectedAccountsForOrganizationResponseTypeDef(TypedDict):
+    affectedAccounts: List[str],
+    eventScopeCode: eventScopeCodeType,  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `affectedAccounts`: `List`\[`str`\]
-- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: eventScopeCodeType](./literals.md#eventscopecodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef
 
-<a id="describeaffectedentitiesfororganizationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef
 
+def get_value() -> DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef:
+    return {
+        "organizationEntityFilters": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAffectedEntitiesForOrganizationRequestDescribeAffectedEntitiesForOrganizationPaginateTypeDef(TypedDict):
+    organizationEntityFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef
+
+def get_value() -> DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef:
+    return {
+        "organizationEntityFilters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAffectedEntitiesForOrganizationRequestRequestTypeDef(TypedDict):
+    organizationEntityFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `organizationEntityFilters`:
-  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
-
-Optional fields:
-
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describeaffectedentitiesfororganizationresponsetypedef"></a>
-
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
 ## DescribeAffectedEntitiesForOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedEntitiesForOrganizationResponseTypeDef
+
+def get_value() -> DescribeAffectedEntitiesForOrganizationResponseTypeDef:
+    return {
+        "entities": ...,
+        "failedSet": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAffectedEntitiesForOrganizationResponseTypeDef(TypedDict):
+    entities: List[AffectedEntityTypeDef],  # (1)
+    failedSet: List[OrganizationAffectedEntitiesErrorItemTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `entities`:
-  `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
-- `failedSet`:
-  `List`\[[OrganizationAffectedEntitiesErrorItemTypeDef](./type_defs.md#organizationaffectedentitieserroritemtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef) 
+2. See [:material-code-braces: OrganizationAffectedEntitiesErrorItemTypeDef](./type_defs.md#organizationaffectedentitieserroritemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef
 
-<a id="describeaffectedentitiesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef
 
+def get_value() -> DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeAffectedEntitiesRequestDescribeAffectedEntitiesPaginateTypeDef(TypedDict):
+    filter: EntityFilterTypeDef,  # (1)
+    locale: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeAffectedEntitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedEntitiesRequestRequestTypeDef
+
+def get_value() -> DescribeAffectedEntitiesRequestRequestTypeDef:
+    return {
+        "filter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAffectedEntitiesRequestRequestTypeDef(TypedDict):
+    filter: EntityFilterTypeDef,  # (1)
+    locale: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `filter`: [EntityFilterTypeDef](./type_defs.md#entityfiltertypedef)
-
-Optional fields:
-
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describeaffectedentitiesresponsetypedef"></a>
-
+1. See [:material-code-braces: EntityFilterTypeDef](./type_defs.md#entityfiltertypedef) 
 ## DescribeAffectedEntitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeAffectedEntitiesResponseTypeDef
+
+def get_value() -> DescribeAffectedEntitiesResponseTypeDef:
+    return {
+        "entities": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAffectedEntitiesResponseTypeDef(TypedDict):
+    entities: List[AffectedEntityTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entities`:
-  `List`\[[AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeentityaggregatesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AffectedEntityTypeDef](./type_defs.md#affectedentitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntityAggregatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEntityAggregatesRequestRequestTypeDef
+
+def get_value() -> DescribeEntityAggregatesRequestRequestTypeDef:
+    return {
+        "eventArns": ...,
+    }
 ```
 
-Optional fields:
-
-- `eventArns`: `Sequence`\[`str`\]
-
-<a id="describeentityaggregatesresponsetypedef"></a>
+```python title="Definition"
+class DescribeEntityAggregatesRequestRequestTypeDef(TypedDict):
+    eventArns: NotRequired[Sequence[str]],
+```
 
 ## DescribeEntityAggregatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEntityAggregatesResponseTypeDef
+
+def get_value() -> DescribeEntityAggregatesResponseTypeDef:
+    return {
+        "entityAggregates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEntityAggregatesResponseTypeDef(TypedDict):
+    entityAggregates: List[EntityAggregateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `entityAggregates`:
-  `List`\[[EntityAggregateTypeDef](./type_defs.md#entityaggregatetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EntityAggregateTypeDef](./type_defs.md#entityaggregatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef
 
-<a id="describeeventaggregatesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef
 
+def get_value() -> DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef:
+    return {
+        "aggregateField": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventAggregatesRequestDescribeEventAggregatesPaginateTypeDef(TypedDict):
+    aggregateField: eventAggregateFieldType,  # (1)
+    filter: NotRequired[EventFilterTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: eventAggregateFieldType](./literals.md#eventaggregatefieldtype) 
+2. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventAggregatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventAggregatesRequestRequestTypeDef
+
+def get_value() -> DescribeEventAggregatesRequestRequestTypeDef:
+    return {
+        "aggregateField": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventAggregatesRequestRequestTypeDef(TypedDict):
+    aggregateField: eventAggregateFieldType,  # (1)
+    filter: NotRequired[EventFilterTypeDef],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `aggregateField`: `Literal['eventTypeCategory']` (see
-  [eventAggregateFieldType](./literals.md#eventaggregatefieldtype))
-
-Optional fields:
-
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describeeventaggregatesresponsetypedef"></a>
-
+1. See [:material-code-brackets: eventAggregateFieldType](./literals.md#eventaggregatefieldtype) 
+2. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
 ## DescribeEventAggregatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventAggregatesResponseTypeDef
+
+def get_value() -> DescribeEventAggregatesResponseTypeDef:
+    return {
+        "eventAggregates": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventAggregatesResponseTypeDef(TypedDict):
+    eventAggregates: List[EventAggregateTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventAggregates`:
-  `List`\[[EventAggregateTypeDef](./type_defs.md#eventaggregatetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventdetailsfororganizationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventAggregateTypeDef](./type_defs.md#eventaggregatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventDetailsForOrganizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationRequestRequestTypeDef
+
+def get_value() -> DescribeEventDetailsForOrganizationRequestRequestTypeDef:
+    return {
+        "organizationEventDetailFilters": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventDetailsForOrganizationRequestRequestTypeDef(TypedDict):
+    organizationEventDetailFilters: Sequence[EventAccountFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+```
 
-- `organizationEventDetailFilters`:
-  `Sequence`\[[EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef)\]
-
-Optional fields:
-
-- `locale`: `str`
-
-<a id="describeeventdetailsfororganizationresponsetypedef"></a>
-
+1. See [:material-code-braces: EventAccountFilterTypeDef](./type_defs.md#eventaccountfiltertypedef) 
 ## DescribeEventDetailsForOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventDetailsForOrganizationResponseTypeDef
+
+def get_value() -> DescribeEventDetailsForOrganizationResponseTypeDef:
+    return {
+        "successfulSet": ...,
+        "failedSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventDetailsForOrganizationResponseTypeDef(TypedDict):
+    successfulSet: List[OrganizationEventDetailsTypeDef],  # (1)
+    failedSet: List[OrganizationEventDetailsErrorItemTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `successfulSet`:
-  `List`\[[OrganizationEventDetailsTypeDef](./type_defs.md#organizationeventdetailstypedef)\]
-- `failedSet`:
-  `List`\[[OrganizationEventDetailsErrorItemTypeDef](./type_defs.md#organizationeventdetailserroritemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventdetailsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OrganizationEventDetailsTypeDef](./type_defs.md#organizationeventdetailstypedef) 
+2. See [:material-code-braces: OrganizationEventDetailsErrorItemTypeDef](./type_defs.md#organizationeventdetailserroritemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventDetailsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventDetailsRequestRequestTypeDef
+
+def get_value() -> DescribeEventDetailsRequestRequestTypeDef:
+    return {
+        "eventArns": ...,
+    }
 ```
 
-Required fields:
-
-- `eventArns`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `locale`: `str`
-
-<a id="describeeventdetailsresponsetypedef"></a>
+```python title="Definition"
+class DescribeEventDetailsRequestRequestTypeDef(TypedDict):
+    eventArns: Sequence[str],
+    locale: NotRequired[str],
+```
 
 ## DescribeEventDetailsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventDetailsResponseTypeDef
+
+def get_value() -> DescribeEventDetailsResponseTypeDef:
+    return {
+        "successfulSet": ...,
+        "failedSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventDetailsResponseTypeDef(TypedDict):
+    successfulSet: List[EventDetailsTypeDef],  # (1)
+    failedSet: List[EventDetailsErrorItemTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `successfulSet`:
-  `List`\[[EventDetailsTypeDef](./type_defs.md#eventdetailstypedef)\]
-- `failedSet`:
-  `List`\[[EventDetailsErrorItemTypeDef](./type_defs.md#eventdetailserroritemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventDetailsTypeDef](./type_defs.md#eventdetailstypedef) 
+2. See [:material-code-braces: EventDetailsErrorItemTypeDef](./type_defs.md#eventdetailserroritemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef
 
-<a id="describeeventtypesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef
 
+def get_value() -> DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventTypesRequestDescribeEventTypesPaginateTypeDef(TypedDict):
+    filter: NotRequired[EventTypeFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventTypesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventTypesRequestRequestTypeDef
+
+def get_value() -> DescribeEventTypesRequestRequestTypeDef:
+    return {
+        "filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventTypesRequestRequestTypeDef(TypedDict):
+    filter: NotRequired[EventTypeFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `filter`: [EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef)
-- `locale`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="describeeventtypesresponsetypedef"></a>
-
+1. See [:material-code-braces: EventTypeFilterTypeDef](./type_defs.md#eventtypefiltertypedef) 
 ## DescribeEventTypesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventTypesResponseTypeDef
+
+def get_value() -> DescribeEventTypesResponseTypeDef:
+    return {
+        "eventTypes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventTypesResponseTypeDef(TypedDict):
+    eventTypes: List[EventTypeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventTypes`: `List`\[[EventTypeTypeDef](./type_defs.md#eventtypetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventTypeTypeDef](./type_defs.md#eventtypetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef
 
-<a id="describeeventsfororganizationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef
 
+def get_value() -> DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsForOrganizationRequestDescribeEventsForOrganizationPaginateTypeDef(TypedDict):
+    filter: NotRequired[OrganizationEventFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsForOrganizationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventsForOrganizationRequestRequestTypeDef
+
+def get_value() -> DescribeEventsForOrganizationRequestRequestTypeDef:
+    return {
+        "filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsForOrganizationRequestRequestTypeDef(TypedDict):
+    filter: NotRequired[OrganizationEventFilterTypeDef],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    locale: NotRequired[str],
+```
 
-- `filter`:
-  [OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `locale`: `str`
-
-<a id="describeeventsfororganizationresponsetypedef"></a>
-
+1. See [:material-code-braces: OrganizationEventFilterTypeDef](./type_defs.md#organizationeventfiltertypedef) 
 ## DescribeEventsForOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventsForOrganizationResponseTypeDef
+
+def get_value() -> DescribeEventsForOrganizationResponseTypeDef:
+    return {
+        "events": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventsForOrganizationResponseTypeDef(TypedDict):
+    events: List[OrganizationEventTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `events`:
-  `List`\[[OrganizationEventTypeDef](./type_defs.md#organizationeventtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OrganizationEventTypeDef](./type_defs.md#organizationeventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## DescribeEventsRequestDescribeEventsPaginateTypeDef
 
-<a id="describeeventsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_health.type_defs import DescribeEventsRequestDescribeEventsPaginateTypeDef
 
+def get_value() -> DescribeEventsRequestDescribeEventsPaginateTypeDef:
+    return {
+        "filter": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeEventsRequestDescribeEventsPaginateTypeDef(TypedDict):
+    filter: NotRequired[EventFilterTypeDef],  # (1)
+    locale: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## DescribeEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventsRequestRequestTypeDef
+
+def get_value() -> DescribeEventsRequestRequestTypeDef:
+    return {
+        "filter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeEventsRequestRequestTypeDef(TypedDict):
+    filter: NotRequired[EventFilterTypeDef],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    locale: NotRequired[str],
+```
 
-- `filter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `locale`: `str`
-
-<a id="describeeventsresponsetypedef"></a>
-
+1. See [:material-code-braces: EventFilterTypeDef](./type_defs.md#eventfiltertypedef) 
 ## DescribeEventsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeEventsResponseTypeDef
+
+def get_value() -> DescribeEventsResponseTypeDef:
+    return {
+        "events": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventsResponseTypeDef(TypedDict):
+    events: List[EventTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `events`: `List`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehealthservicestatusfororganizationresponsetypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHealthServiceStatusForOrganizationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import DescribeHealthServiceStatusForOrganizationResponseTypeDef
+
+def get_value() -> DescribeHealthServiceStatusForOrganizationResponseTypeDef:
+    return {
+        "healthServiceAccessStatusForOrganization": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHealthServiceStatusForOrganizationResponseTypeDef(TypedDict):
+    healthServiceAccessStatusForOrganization: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `healthServiceAccessStatusForOrganization`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="entityaggregatetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EntityAggregateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EntityAggregateTypeDef
+
+def get_value() -> EntityAggregateTypeDef:
+    return {
+        "eventArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `eventArn`: `str`
-- `count`: `int`
-
-<a id="entityfiltertypedef"></a>
+```python title="Definition"
+class EntityAggregateTypeDef(TypedDict):
+    eventArn: NotRequired[str],
+    count: NotRequired[int],
+```
 
 ## EntityFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EntityFilterTypeDef
+
+def get_value() -> EntityFilterTypeDef:
+    return {
+        "eventArns": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EntityFilterTypeDef(TypedDict):
+    eventArns: Sequence[str],
+    entityArns: NotRequired[Sequence[str]],
+    entityValues: NotRequired[Sequence[str]],
+    lastUpdatedTimes: NotRequired[Sequence[DateTimeRangeTypeDef]],  # (1)
+    tags: NotRequired[Sequence[Mapping[str, str]]],
+    statusCodes: NotRequired[Sequence[entityStatusCodeType]],  # (2)
+```
 
-- `eventArns`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `entityArns`: `Sequence`\[`str`\]
-- `entityValues`: `Sequence`\[`str`\]
-- `lastUpdatedTimes`:
-  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `tags`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
-- `statusCodes`:
-  `Sequence`\[[entityStatusCodeType](./literals.md#entitystatuscodetype)\]
-
-<a id="eventaccountfiltertypedef"></a>
-
+1. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+2. See [:material-code-brackets: entityStatusCodeType](./literals.md#entitystatuscodetype) 
 ## EventAccountFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventAccountFilterTypeDef
+
+def get_value() -> EventAccountFilterTypeDef:
+    return {
+        "eventArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventArn`: `str`
-
-Optional fields:
-
-- `awsAccountId`: `str`
-
-<a id="eventaggregatetypedef"></a>
+```python title="Definition"
+class EventAccountFilterTypeDef(TypedDict):
+    eventArn: str,
+    awsAccountId: NotRequired[str],
+```
 
 ## EventAggregateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventAggregateTypeDef
+
+def get_value() -> EventAggregateTypeDef:
+    return {
+        "aggregateValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `aggregateValue`: `str`
-- `count`: `int`
-
-<a id="eventdescriptiontypedef"></a>
+```python title="Definition"
+class EventAggregateTypeDef(TypedDict):
+    aggregateValue: NotRequired[str],
+    count: NotRequired[int],
+```
 
 ## EventDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventDescriptionTypeDef
+
+def get_value() -> EventDescriptionTypeDef:
+    return {
+        "latestDescription": ...,
+    }
 ```
 
-Optional fields:
-
-- `latestDescription`: `str`
-
-<a id="eventdetailserroritemtypedef"></a>
+```python title="Definition"
+class EventDescriptionTypeDef(TypedDict):
+    latestDescription: NotRequired[str],
+```
 
 ## EventDetailsErrorItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventDetailsErrorItemTypeDef
+
+def get_value() -> EventDetailsErrorItemTypeDef:
+    return {
+        "eventArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `eventArn`: `str`
-- `errorName`: `str`
-- `errorMessage`: `str`
-
-<a id="eventdetailstypedef"></a>
+```python title="Definition"
+class EventDetailsErrorItemTypeDef(TypedDict):
+    eventArn: NotRequired[str],
+    errorName: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
 ## EventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventDetailsTypeDef
+
+def get_value() -> EventDetailsTypeDef:
+    return {
+        "event": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventDetailsTypeDef(TypedDict):
+    event: NotRequired[EventTypeDef],  # (1)
+    eventDescription: NotRequired[EventDescriptionTypeDef],  # (2)
+    eventMetadata: NotRequired[Dict[str, str]],
+```
 
-- `event`: [EventTypeDef](./type_defs.md#eventtypedef)
-- `eventDescription`:
-  [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
-- `eventMetadata`: `Dict`\[`str`, `str`\]
-
-<a id="eventfiltertypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef) 
 ## EventFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventFilterTypeDef
+
+def get_value() -> EventFilterTypeDef:
+    return {
+        "eventArns": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventFilterTypeDef(TypedDict):
+    eventArns: NotRequired[Sequence[str]],
+    eventTypeCodes: NotRequired[Sequence[str]],
+    services: NotRequired[Sequence[str]],
+    regions: NotRequired[Sequence[str]],
+    availabilityZones: NotRequired[Sequence[str]],
+    startTimes: NotRequired[Sequence[DateTimeRangeTypeDef]],  # (1)
+    endTimes: NotRequired[Sequence[DateTimeRangeTypeDef]],  # (1)
+    lastUpdatedTimes: NotRequired[Sequence[DateTimeRangeTypeDef]],  # (1)
+    entityArns: NotRequired[Sequence[str]],
+    entityValues: NotRequired[Sequence[str]],
+    eventTypeCategories: NotRequired[Sequence[eventTypeCategoryType]],  # (4)
+    tags: NotRequired[Sequence[Mapping[str, str]]],
+    eventStatusCodes: NotRequired[Sequence[eventStatusCodeType]],  # (5)
+```
 
-- `eventArns`: `Sequence`\[`str`\]
-- `eventTypeCodes`: `Sequence`\[`str`\]
-- `services`: `Sequence`\[`str`\]
-- `regions`: `Sequence`\[`str`\]
-- `availabilityZones`: `Sequence`\[`str`\]
-- `startTimes`:
-  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `endTimes`:
-  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `lastUpdatedTimes`:
-  `Sequence`\[[DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)\]
-- `entityArns`: `Sequence`\[`str`\]
-- `entityValues`: `Sequence`\[`str`\]
-- `eventTypeCategories`:
-  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
-- `tags`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
-- `eventStatusCodes`:
-  `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
-
-<a id="eventtypedef"></a>
-
+1. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+2. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+3. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+4. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
+5. See [:material-code-brackets: eventStatusCodeType](./literals.md#eventstatuscodetype) 
 ## EventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventTypeDef
+
+def get_value() -> EventTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeDef(TypedDict):
+    arn: NotRequired[str],
+    service: NotRequired[str],
+    eventTypeCode: NotRequired[str],
+    eventTypeCategory: NotRequired[eventTypeCategoryType],  # (1)
+    region: NotRequired[str],
+    availabilityZone: NotRequired[str],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    statusCode: NotRequired[eventStatusCodeType],  # (2)
+    eventScopeCode: NotRequired[eventScopeCodeType],  # (3)
+```
 
-- `arn`: `str`
-- `service`: `str`
-- `eventTypeCode`: `str`
-- `eventTypeCategory`:
-  [eventTypeCategoryType](./literals.md#eventtypecategorytype)
-- `region`: `str`
-- `availabilityZone`: `str`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
-- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
-
-<a id="eventtypefiltertypedef"></a>
-
+1. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
+2. See [:material-code-brackets: eventStatusCodeType](./literals.md#eventstatuscodetype) 
+3. See [:material-code-brackets: eventScopeCodeType](./literals.md#eventscopecodetype) 
 ## EventTypeFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventTypeFilterTypeDef
+
+def get_value() -> EventTypeFilterTypeDef:
+    return {
+        "eventTypeCodes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeFilterTypeDef(TypedDict):
+    eventTypeCodes: NotRequired[Sequence[str]],
+    services: NotRequired[Sequence[str]],
+    eventTypeCategories: NotRequired[Sequence[eventTypeCategoryType]],  # (1)
+```
 
-- `eventTypeCodes`: `Sequence`\[`str`\]
-- `services`: `Sequence`\[`str`\]
-- `eventTypeCategories`:
-  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
-
-<a id="eventtypetypedef"></a>
-
+1. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
 ## EventTypeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import EventTypeTypeDef
+
+def get_value() -> EventTypeTypeDef:
+    return {
+        "service": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventTypeTypeDef(TypedDict):
+    service: NotRequired[str],
+    code: NotRequired[str],
+    category: NotRequired[eventTypeCategoryType],  # (1)
+```
 
-- `service`: `str`
-- `code`: `str`
-- `category`: [eventTypeCategoryType](./literals.md#eventtypecategorytype)
-
-<a id="organizationaffectedentitieserroritemtypedef"></a>
-
+1. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
 ## OrganizationAffectedEntitiesErrorItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import OrganizationAffectedEntitiesErrorItemTypeDef
+
+def get_value() -> OrganizationAffectedEntitiesErrorItemTypeDef:
+    return {
+        "awsAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `awsAccountId`: `str`
-- `eventArn`: `str`
-- `errorName`: `str`
-- `errorMessage`: `str`
-
-<a id="organizationeventdetailserroritemtypedef"></a>
+```python title="Definition"
+class OrganizationAffectedEntitiesErrorItemTypeDef(TypedDict):
+    awsAccountId: NotRequired[str],
+    eventArn: NotRequired[str],
+    errorName: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
 ## OrganizationEventDetailsErrorItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import OrganizationEventDetailsErrorItemTypeDef
+
+def get_value() -> OrganizationEventDetailsErrorItemTypeDef:
+    return {
+        "awsAccountId": ...,
+    }
 ```
 
-Optional fields:
-
-- `awsAccountId`: `str`
-- `eventArn`: `str`
-- `errorName`: `str`
-- `errorMessage`: `str`
-
-<a id="organizationeventdetailstypedef"></a>
+```python title="Definition"
+class OrganizationEventDetailsErrorItemTypeDef(TypedDict):
+    awsAccountId: NotRequired[str],
+    eventArn: NotRequired[str],
+    errorName: NotRequired[str],
+    errorMessage: NotRequired[str],
+```
 
 ## OrganizationEventDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import OrganizationEventDetailsTypeDef
+
+def get_value() -> OrganizationEventDetailsTypeDef:
+    return {
+        "awsAccountId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrganizationEventDetailsTypeDef(TypedDict):
+    awsAccountId: NotRequired[str],
+    event: NotRequired[EventTypeDef],  # (1)
+    eventDescription: NotRequired[EventDescriptionTypeDef],  # (2)
+    eventMetadata: NotRequired[Dict[str, str]],
+```
 
-- `awsAccountId`: `str`
-- `event`: [EventTypeDef](./type_defs.md#eventtypedef)
-- `eventDescription`:
-  [EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef)
-- `eventMetadata`: `Dict`\[`str`, `str`\]
-
-<a id="organizationeventfiltertypedef"></a>
-
+1. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+2. See [:material-code-braces: EventDescriptionTypeDef](./type_defs.md#eventdescriptiontypedef) 
 ## OrganizationEventFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import OrganizationEventFilterTypeDef
+
+def get_value() -> OrganizationEventFilterTypeDef:
+    return {
+        "eventTypeCodes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrganizationEventFilterTypeDef(TypedDict):
+    eventTypeCodes: NotRequired[Sequence[str]],
+    awsAccountIds: NotRequired[Sequence[str]],
+    services: NotRequired[Sequence[str]],
+    regions: NotRequired[Sequence[str]],
+    startTime: NotRequired[DateTimeRangeTypeDef],  # (1)
+    endTime: NotRequired[DateTimeRangeTypeDef],  # (1)
+    lastUpdatedTime: NotRequired[DateTimeRangeTypeDef],  # (1)
+    entityArns: NotRequired[Sequence[str]],
+    entityValues: NotRequired[Sequence[str]],
+    eventTypeCategories: NotRequired[Sequence[eventTypeCategoryType]],  # (4)
+    eventStatusCodes: NotRequired[Sequence[eventStatusCodeType]],  # (5)
+```
 
-- `eventTypeCodes`: `Sequence`\[`str`\]
-- `awsAccountIds`: `Sequence`\[`str`\]
-- `services`: `Sequence`\[`str`\]
-- `regions`: `Sequence`\[`str`\]
-- `startTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-- `endTime`: [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-- `lastUpdatedTime`:
-  [DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef)
-- `entityArns`: `Sequence`\[`str`\]
-- `entityValues`: `Sequence`\[`str`\]
-- `eventTypeCategories`:
-  `Sequence`\[[eventTypeCategoryType](./literals.md#eventtypecategorytype)\]
-- `eventStatusCodes`:
-  `Sequence`\[[eventStatusCodeType](./literals.md#eventstatuscodetype)\]
-
-<a id="organizationeventtypedef"></a>
-
+1. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+2. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+3. See [:material-code-braces: DateTimeRangeTypeDef](./type_defs.md#datetimerangetypedef) 
+4. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
+5. See [:material-code-brackets: eventStatusCodeType](./literals.md#eventstatuscodetype) 
 ## OrganizationEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import OrganizationEventTypeDef
+
+def get_value() -> OrganizationEventTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OrganizationEventTypeDef(TypedDict):
+    arn: NotRequired[str],
+    service: NotRequired[str],
+    eventTypeCode: NotRequired[str],
+    eventTypeCategory: NotRequired[eventTypeCategoryType],  # (1)
+    eventScopeCode: NotRequired[eventScopeCodeType],  # (2)
+    region: NotRequired[str],
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    lastUpdatedTime: NotRequired[datetime],
+    statusCode: NotRequired[eventStatusCodeType],  # (3)
+```
 
-- `arn`: `str`
-- `service`: `str`
-- `eventTypeCode`: `str`
-- `eventTypeCategory`:
-  [eventTypeCategoryType](./literals.md#eventtypecategorytype)
-- `eventScopeCode`: [eventScopeCodeType](./literals.md#eventscopecodetype)
-- `region`: `str`
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `lastUpdatedTime`: `datetime`
-- `statusCode`: [eventStatusCodeType](./literals.md#eventstatuscodetype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: eventTypeCategoryType](./literals.md#eventtypecategorytype) 
+2. See [:material-code-brackets: eventScopeCodeType](./literals.md#eventscopecodetype) 
+3. See [:material-code-brackets: eventStatusCodeType](./literals.md#eventstatuscodetype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_health.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`

@@ -1,969 +1,1044 @@
-<a id="literals-for-boto3-route53resolver-module"></a>
-
-# Literals for boto3 Route53Resolver module
+# Literals
 
 > [Index](../README.md) > [Route53Resolver](./README.md) > Literals
 
-Auto-generated documentation for
-[Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
-type annotations stubs module
-[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+!!! note ""
 
-- [Literals for boto3 Route53Resolver module](#literals-for-boto3-route53resolver-module)
-  - [ActionType](#actiontype)
-  - [AutodefinedReverseFlagType](#autodefinedreverseflagtype)
-  - [BlockOverrideDnsTypeType](#blockoverridednstypetype)
-  - [BlockResponseType](#blockresponsetype)
-  - [FirewallDomainImportOperationType](#firewalldomainimportoperationtype)
-  - [FirewallDomainListStatusType](#firewalldomainliststatustype)
-  - [FirewallDomainUpdateOperationType](#firewalldomainupdateoperationtype)
-  - [FirewallFailOpenStatusType](#firewallfailopenstatustype)
-  - [FirewallRuleGroupAssociationStatusType](#firewallrulegroupassociationstatustype)
-  - [FirewallRuleGroupStatusType](#firewallrulegroupstatustype)
-  - [IpAddressStatusType](#ipaddressstatustype)
-  - [ListFirewallConfigsPaginatorName](#listfirewallconfigspaginatorname)
-  - [ListFirewallDomainListsPaginatorName](#listfirewalldomainlistspaginatorname)
-  - [ListFirewallDomainsPaginatorName](#listfirewalldomainspaginatorname)
-  - [ListFirewallRuleGroupAssociationsPaginatorName](#listfirewallrulegroupassociationspaginatorname)
-  - [ListFirewallRuleGroupsPaginatorName](#listfirewallrulegroupspaginatorname)
-  - [ListFirewallRulesPaginatorName](#listfirewallrulespaginatorname)
-  - [ListResolverConfigsPaginatorName](#listresolverconfigspaginatorname)
-  - [ListResolverDnssecConfigsPaginatorName](#listresolverdnssecconfigspaginatorname)
-  - [ListResolverEndpointIpAddressesPaginatorName](#listresolverendpointipaddressespaginatorname)
-  - [ListResolverEndpointsPaginatorName](#listresolverendpointspaginatorname)
-  - [ListResolverQueryLogConfigAssociationsPaginatorName](#listresolverquerylogconfigassociationspaginatorname)
-  - [ListResolverQueryLogConfigsPaginatorName](#listresolverquerylogconfigspaginatorname)
-  - [ListResolverRuleAssociationsPaginatorName](#listresolverruleassociationspaginatorname)
-  - [ListResolverRulesPaginatorName](#listresolverrulespaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [MutationProtectionStatusType](#mutationprotectionstatustype)
-  - [ResolverAutodefinedReverseStatusType](#resolverautodefinedreversestatustype)
-  - [ResolverDNSSECValidationStatusType](#resolverdnssecvalidationstatustype)
-  - [ResolverEndpointDirectionType](#resolverendpointdirectiontype)
-  - [ResolverEndpointStatusType](#resolverendpointstatustype)
-  - [ResolverQueryLogConfigAssociationErrorType](#resolverquerylogconfigassociationerrortype)
-  - [ResolverQueryLogConfigAssociationStatusType](#resolverquerylogconfigassociationstatustype)
-  - [ResolverQueryLogConfigStatusType](#resolverquerylogconfigstatustype)
-  - [ResolverRuleAssociationStatusType](#resolverruleassociationstatustype)
-  - [ResolverRuleStatusType](#resolverrulestatustype)
-  - [RuleTypeOptionType](#ruletypeoptiontype)
-  - [ShareStatusType](#sharestatustype)
-  - [SortOrderType](#sortordertype)
-  - [ValidationType](#validationtype)
-  - [Route53ResolverServiceName](#route53resolverservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="actiontype"></a>
+    Auto-generated documentation for [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
+    type annotations stubs module [mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ## ActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ActionType
+
+def get_value() -> ActionType:
+    return "ALERT"
 ```
 
-Values:
-
-- `ALERT`
-- `ALLOW`
-- `BLOCK`
-
-<a id="autodefinedreverseflagtype"></a>
-
+```python title="Definition"
+ActionType = Literal[
+    "ALERT",
+    "ALLOW",
+    "BLOCK",
+]
+```
 ## AutodefinedReverseFlagType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import AutodefinedReverseFlagType
+
+def get_value() -> AutodefinedReverseFlagType:
+    return "DISABLE"
 ```
 
-Values:
-
-- `DISABLE`
-- `ENABLE`
-
-<a id="blockoverridednstypetype"></a>
-
+```python title="Definition"
+AutodefinedReverseFlagType = Literal[
+    "DISABLE",
+    "ENABLE",
+]
+```
 ## BlockOverrideDnsTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import BlockOverrideDnsTypeType
+
+def get_value() -> BlockOverrideDnsTypeType:
+    return "CNAME"
 ```
 
-Values:
-
-- `CNAME`
-
-<a id="blockresponsetype"></a>
-
+```python title="Definition"
+BlockOverrideDnsTypeType = Literal[
+    "CNAME",
+]
+```
 ## BlockResponseType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import BlockResponseType
+
+def get_value() -> BlockResponseType:
+    return "NODATA"
 ```
 
-Values:
-
-- `NODATA`
-- `NXDOMAIN`
-- `OVERRIDE`
-
-<a id="firewalldomainimportoperationtype"></a>
-
+```python title="Definition"
+BlockResponseType = Literal[
+    "NODATA",
+    "NXDOMAIN",
+    "OVERRIDE",
+]
+```
 ## FirewallDomainImportOperationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallDomainImportOperationType
+
+def get_value() -> FirewallDomainImportOperationType:
+    return "REPLACE"
 ```
 
-Values:
-
-- `REPLACE`
-
-<a id="firewalldomainliststatustype"></a>
-
+```python title="Definition"
+FirewallDomainImportOperationType = Literal[
+    "REPLACE",
+]
+```
 ## FirewallDomainListStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallDomainListStatusType
+
+def get_value() -> FirewallDomainListStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `COMPLETE_IMPORT_FAILED`
-- `DELETING`
-- `IMPORTING`
-- `UPDATING`
-
-<a id="firewalldomainupdateoperationtype"></a>
-
+```python title="Definition"
+FirewallDomainListStatusType = Literal[
+    "COMPLETE",
+    "COMPLETE_IMPORT_FAILED",
+    "DELETING",
+    "IMPORTING",
+    "UPDATING",
+]
+```
 ## FirewallDomainUpdateOperationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallDomainUpdateOperationType
+
+def get_value() -> FirewallDomainUpdateOperationType:
+    return "ADD"
 ```
 
-Values:
-
-- `ADD`
-- `REMOVE`
-- `REPLACE`
-
-<a id="firewallfailopenstatustype"></a>
-
+```python title="Definition"
+FirewallDomainUpdateOperationType = Literal[
+    "ADD",
+    "REMOVE",
+    "REPLACE",
+]
+```
 ## FirewallFailOpenStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallFailOpenStatusType
+
+def get_value() -> FirewallFailOpenStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="firewallrulegroupassociationstatustype"></a>
-
+```python title="Definition"
+FirewallFailOpenStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## FirewallRuleGroupAssociationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallRuleGroupAssociationStatusType
+
+def get_value() -> FirewallRuleGroupAssociationStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `DELETING`
-- `UPDATING`
-
-<a id="firewallrulegroupstatustype"></a>
-
+```python title="Definition"
+FirewallRuleGroupAssociationStatusType = Literal[
+    "COMPLETE",
+    "DELETING",
+    "UPDATING",
+]
+```
 ## FirewallRuleGroupStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import FirewallRuleGroupStatusType
+
+def get_value() -> FirewallRuleGroupStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `DELETING`
-- `UPDATING`
-
-<a id="ipaddressstatustype"></a>
-
+```python title="Definition"
+FirewallRuleGroupStatusType = Literal[
+    "COMPLETE",
+    "DELETING",
+    "UPDATING",
+]
+```
 ## IpAddressStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import IpAddressStatusType
+
+def get_value() -> IpAddressStatusType:
+    return "ATTACHED"
 ```
 
-Values:
-
-- `ATTACHED`
-- `ATTACHING`
-- `CREATING`
-- `DELETE_FAILED_FAS_EXPIRED`
-- `DELETING`
-- `DETACHING`
-- `FAILED_CREATION`
-- `FAILED_RESOURCE_GONE`
-- `REMAP_ATTACHING`
-- `REMAP_DETACHING`
-
-<a id="listfirewallconfigspaginatorname"></a>
-
+```python title="Definition"
+IpAddressStatusType = Literal[
+    "ATTACHED",
+    "ATTACHING",
+    "CREATING",
+    "DELETE_FAILED_FAS_EXPIRED",
+    "DELETING",
+    "DETACHING",
+    "FAILED_CREATION",
+    "FAILED_RESOURCE_GONE",
+    "REMAP_ATTACHING",
+    "REMAP_DETACHING",
+]
+```
 ## ListFirewallConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallConfigsPaginatorName
+
+def get_value() -> ListFirewallConfigsPaginatorName:
+    return "list_firewall_configs"
 ```
 
-Values:
-
-- `list_firewall_configs`
-
-<a id="listfirewalldomainlistspaginatorname"></a>
-
+```python title="Definition"
+ListFirewallConfigsPaginatorName = Literal[
+    "list_firewall_configs",
+]
+```
 ## ListFirewallDomainListsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallDomainListsPaginatorName
+
+def get_value() -> ListFirewallDomainListsPaginatorName:
+    return "list_firewall_domain_lists"
 ```
 
-Values:
-
-- `list_firewall_domain_lists`
-
-<a id="listfirewalldomainspaginatorname"></a>
-
+```python title="Definition"
+ListFirewallDomainListsPaginatorName = Literal[
+    "list_firewall_domain_lists",
+]
+```
 ## ListFirewallDomainsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallDomainsPaginatorName
+
+def get_value() -> ListFirewallDomainsPaginatorName:
+    return "list_firewall_domains"
 ```
 
-Values:
-
-- `list_firewall_domains`
-
-<a id="listfirewallrulegroupassociationspaginatorname"></a>
-
+```python title="Definition"
+ListFirewallDomainsPaginatorName = Literal[
+    "list_firewall_domains",
+]
+```
 ## ListFirewallRuleGroupAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallRuleGroupAssociationsPaginatorName
+
+def get_value() -> ListFirewallRuleGroupAssociationsPaginatorName:
+    return "list_firewall_rule_group_associations"
 ```
 
-Values:
-
-- `list_firewall_rule_group_associations`
-
-<a id="listfirewallrulegroupspaginatorname"></a>
-
+```python title="Definition"
+ListFirewallRuleGroupAssociationsPaginatorName = Literal[
+    "list_firewall_rule_group_associations",
+]
+```
 ## ListFirewallRuleGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallRuleGroupsPaginatorName
+
+def get_value() -> ListFirewallRuleGroupsPaginatorName:
+    return "list_firewall_rule_groups"
 ```
 
-Values:
-
-- `list_firewall_rule_groups`
-
-<a id="listfirewallrulespaginatorname"></a>
-
+```python title="Definition"
+ListFirewallRuleGroupsPaginatorName = Literal[
+    "list_firewall_rule_groups",
+]
+```
 ## ListFirewallRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListFirewallRulesPaginatorName
+
+def get_value() -> ListFirewallRulesPaginatorName:
+    return "list_firewall_rules"
 ```
 
-Values:
-
-- `list_firewall_rules`
-
-<a id="listresolverconfigspaginatorname"></a>
-
+```python title="Definition"
+ListFirewallRulesPaginatorName = Literal[
+    "list_firewall_rules",
+]
+```
 ## ListResolverConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverConfigsPaginatorName
+
+def get_value() -> ListResolverConfigsPaginatorName:
+    return "list_resolver_configs"
 ```
 
-Values:
-
-- `list_resolver_configs`
-
-<a id="listresolverdnssecconfigspaginatorname"></a>
-
+```python title="Definition"
+ListResolverConfigsPaginatorName = Literal[
+    "list_resolver_configs",
+]
+```
 ## ListResolverDnssecConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverDnssecConfigsPaginatorName
+
+def get_value() -> ListResolverDnssecConfigsPaginatorName:
+    return "list_resolver_dnssec_configs"
 ```
 
-Values:
-
-- `list_resolver_dnssec_configs`
-
-<a id="listresolverendpointipaddressespaginatorname"></a>
-
+```python title="Definition"
+ListResolverDnssecConfigsPaginatorName = Literal[
+    "list_resolver_dnssec_configs",
+]
+```
 ## ListResolverEndpointIpAddressesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverEndpointIpAddressesPaginatorName
+
+def get_value() -> ListResolverEndpointIpAddressesPaginatorName:
+    return "list_resolver_endpoint_ip_addresses"
 ```
 
-Values:
-
-- `list_resolver_endpoint_ip_addresses`
-
-<a id="listresolverendpointspaginatorname"></a>
-
+```python title="Definition"
+ListResolverEndpointIpAddressesPaginatorName = Literal[
+    "list_resolver_endpoint_ip_addresses",
+]
+```
 ## ListResolverEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverEndpointsPaginatorName
+
+def get_value() -> ListResolverEndpointsPaginatorName:
+    return "list_resolver_endpoints"
 ```
 
-Values:
-
-- `list_resolver_endpoints`
-
-<a id="listresolverquerylogconfigassociationspaginatorname"></a>
-
+```python title="Definition"
+ListResolverEndpointsPaginatorName = Literal[
+    "list_resolver_endpoints",
+]
+```
 ## ListResolverQueryLogConfigAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverQueryLogConfigAssociationsPaginatorName
+
+def get_value() -> ListResolverQueryLogConfigAssociationsPaginatorName:
+    return "list_resolver_query_log_config_associations"
 ```
 
-Values:
-
-- `list_resolver_query_log_config_associations`
-
-<a id="listresolverquerylogconfigspaginatorname"></a>
-
+```python title="Definition"
+ListResolverQueryLogConfigAssociationsPaginatorName = Literal[
+    "list_resolver_query_log_config_associations",
+]
+```
 ## ListResolverQueryLogConfigsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverQueryLogConfigsPaginatorName
+
+def get_value() -> ListResolverQueryLogConfigsPaginatorName:
+    return "list_resolver_query_log_configs"
 ```
 
-Values:
-
-- `list_resolver_query_log_configs`
-
-<a id="listresolverruleassociationspaginatorname"></a>
-
+```python title="Definition"
+ListResolverQueryLogConfigsPaginatorName = Literal[
+    "list_resolver_query_log_configs",
+]
+```
 ## ListResolverRuleAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverRuleAssociationsPaginatorName
+
+def get_value() -> ListResolverRuleAssociationsPaginatorName:
+    return "list_resolver_rule_associations"
 ```
 
-Values:
-
-- `list_resolver_rule_associations`
-
-<a id="listresolverrulespaginatorname"></a>
-
+```python title="Definition"
+ListResolverRuleAssociationsPaginatorName = Literal[
+    "list_resolver_rule_associations",
+]
+```
 ## ListResolverRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListResolverRulesPaginatorName
+
+def get_value() -> ListResolverRulesPaginatorName:
+    return "list_resolver_rules"
 ```
 
-Values:
-
-- `list_resolver_rules`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
+```python title="Definition"
+ListResolverRulesPaginatorName = Literal[
+    "list_resolver_rules",
+]
+```
 ## ListTagsForResourcePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ListTagsForResourcePaginatorName
+
+def get_value() -> ListTagsForResourcePaginatorName:
+    return "list_tags_for_resource"
 ```
 
-Values:
-
-- `list_tags_for_resource`
-
-<a id="mutationprotectionstatustype"></a>
-
+```python title="Definition"
+ListTagsForResourcePaginatorName = Literal[
+    "list_tags_for_resource",
+]
+```
 ## MutationProtectionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import MutationProtectionStatusType
+
+def get_value() -> MutationProtectionStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="resolverautodefinedreversestatustype"></a>
-
+```python title="Definition"
+MutationProtectionStatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## ResolverAutodefinedReverseStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverAutodefinedReverseStatusType
+
+def get_value() -> ResolverAutodefinedReverseStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `DISABLING`
-- `ENABLED`
-- `ENABLING`
-
-<a id="resolverdnssecvalidationstatustype"></a>
-
+```python title="Definition"
+ResolverAutodefinedReverseStatusType = Literal[
+    "DISABLED",
+    "DISABLING",
+    "ENABLED",
+    "ENABLING",
+]
+```
 ## ResolverDNSSECValidationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverDNSSECValidationStatusType
+
+def get_value() -> ResolverDNSSECValidationStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `DISABLING`
-- `ENABLED`
-- `ENABLING`
-
-<a id="resolverendpointdirectiontype"></a>
-
+```python title="Definition"
+ResolverDNSSECValidationStatusType = Literal[
+    "DISABLED",
+    "DISABLING",
+    "ENABLED",
+    "ENABLING",
+]
+```
 ## ResolverEndpointDirectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverEndpointDirectionType
+
+def get_value() -> ResolverEndpointDirectionType:
+    return "INBOUND"
 ```
 
-Values:
-
-- `INBOUND`
-- `OUTBOUND`
-
-<a id="resolverendpointstatustype"></a>
-
+```python title="Definition"
+ResolverEndpointDirectionType = Literal[
+    "INBOUND",
+    "OUTBOUND",
+]
+```
 ## ResolverEndpointStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverEndpointStatusType
+
+def get_value() -> ResolverEndpointStatusType:
+    return "ACTION_NEEDED"
 ```
 
-Values:
-
-- `ACTION_NEEDED`
-- `AUTO_RECOVERING`
-- `CREATING`
-- `DELETING`
-- `OPERATIONAL`
-- `UPDATING`
-
-<a id="resolverquerylogconfigassociationerrortype"></a>
-
+```python title="Definition"
+ResolverEndpointStatusType = Literal[
+    "ACTION_NEEDED",
+    "AUTO_RECOVERING",
+    "CREATING",
+    "DELETING",
+    "OPERATIONAL",
+    "UPDATING",
+]
+```
 ## ResolverQueryLogConfigAssociationErrorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationErrorType
+
+def get_value() -> ResolverQueryLogConfigAssociationErrorType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `DESTINATION_NOT_FOUND`
-- `INTERNAL_SERVICE_ERROR`
-- `NONE`
-
-<a id="resolverquerylogconfigassociationstatustype"></a>
-
+```python title="Definition"
+ResolverQueryLogConfigAssociationErrorType = Literal[
+    "ACCESS_DENIED",
+    "DESTINATION_NOT_FOUND",
+    "INTERNAL_SERVICE_ERROR",
+    "NONE",
+]
+```
 ## ResolverQueryLogConfigAssociationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigAssociationStatusType
+
+def get_value() -> ResolverQueryLogConfigAssociationStatusType:
+    return "ACTION_NEEDED"
 ```
 
-Values:
-
-- `ACTION_NEEDED`
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-
-<a id="resolverquerylogconfigstatustype"></a>
-
+```python title="Definition"
+ResolverQueryLogConfigAssociationStatusType = Literal[
+    "ACTION_NEEDED",
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+]
+```
 ## ResolverQueryLogConfigStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverQueryLogConfigStatusType
+
+def get_value() -> ResolverQueryLogConfigStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-
-<a id="resolverruleassociationstatustype"></a>
-
+```python title="Definition"
+ResolverQueryLogConfigStatusType = Literal[
+    "CREATED",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+]
+```
 ## ResolverRuleAssociationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverRuleAssociationStatusType
+
+def get_value() -> ResolverRuleAssociationStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `OVERRIDDEN`
-
-<a id="resolverrulestatustype"></a>
-
+```python title="Definition"
+ResolverRuleAssociationStatusType = Literal[
+    "COMPLETE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "OVERRIDDEN",
+]
+```
 ## ResolverRuleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResolverRuleStatusType
+
+def get_value() -> ResolverRuleStatusType:
+    return "COMPLETE"
 ```
 
-Values:
-
-- `COMPLETE`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="ruletypeoptiontype"></a>
-
+```python title="Definition"
+ResolverRuleStatusType = Literal[
+    "COMPLETE",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## RuleTypeOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import RuleTypeOptionType
+
+def get_value() -> RuleTypeOptionType:
+    return "FORWARD"
 ```
 
-Values:
-
-- `FORWARD`
-- `RECURSIVE`
-- `SYSTEM`
-
-<a id="sharestatustype"></a>
-
+```python title="Definition"
+RuleTypeOptionType = Literal[
+    "FORWARD",
+    "RECURSIVE",
+    "SYSTEM",
+]
+```
 ## ShareStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ShareStatusType
+
+def get_value() -> ShareStatusType:
+    return "NOT_SHARED"
 ```
 
-Values:
-
-- `NOT_SHARED`
-- `SHARED_BY_ME`
-- `SHARED_WITH_ME`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+ShareStatusType = Literal[
+    "NOT_SHARED",
+    "SHARED_BY_ME",
+    "SHARED_WITH_ME",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="validationtype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## ValidationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ValidationType
+
+def get_value() -> ValidationType:
+    return "DISABLE"
 ```
 
-Values:
-
-- `DISABLE`
-- `ENABLE`
-
-<a id="route53resolverservicename"></a>
-
+```python title="Definition"
+ValidationType = Literal[
+    "DISABLE",
+    "ENABLE",
+]
+```
 ## Route53ResolverServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import Route53ResolverServiceName
+
+def get_value() -> Route53ResolverServiceName:
+    return "route53resolver"
 ```
 
-Values:
-
-- `route53resolver`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+Route53ResolverServiceName = Literal[
+    "route53resolver",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53resolver.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_firewall_configs"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_firewall_configs",
+    "list_firewall_domain_lists",
+    "list_firewall_domains",
+    "list_firewall_rule_group_associations",
+    "list_firewall_rule_groups",
+    "list_firewall_rules",
+    "list_resolver_configs",
+    "list_resolver_dnssec_configs",
+    "list_resolver_endpoint_ip_addresses",
+    "list_resolver_endpoints",
+    "list_resolver_query_log_config_associations",
+    "list_resolver_query_log_configs",
+    "list_resolver_rule_associations",
+    "list_resolver_rules",
+    "list_tags_for_resource",
+]
+```
+## RegionName
 
-- `list_firewall_configs`
-- `list_firewall_domain_lists`
-- `list_firewall_domains`
-- `list_firewall_rule_group_associations`
-- `list_firewall_rule_groups`
-- `list_firewall_rules`
-- `list_resolver_configs`
-- `list_resolver_dnssec_configs`
-- `list_resolver_endpoint_ip_addresses`
-- `list_resolver_endpoints`
-- `list_resolver_query_log_config_associations`
-- `list_resolver_query_log_configs`
-- `list_resolver_rule_associations`
-- `list_resolver_rules`
-- `list_tags_for_resource`
+```python title="Usage Example"
+from mypy_boto3_route53resolver.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

@@ -1,1165 +1,1528 @@
-<a id="typed-dictionaries-for-boto3-route53domains-module"></a>
-
-# Typed dictionaries for boto3 Route53Domains module
+# Typed dictionaries
 
 > [Index](../README.md) > [Route53Domains](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
-type annotations stubs module
-[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Route53Domains module](#typed-dictionaries-for-boto3-route53domains-module)
-  - [AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef](#acceptdomaintransferfromanotherawsaccountrequestrequesttypedef)
-  - [AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](#acceptdomaintransferfromanotherawsaccountresponsetypedef)
-  - [BillingRecordTypeDef](#billingrecordtypedef)
-  - [CancelDomainTransferToAnotherAwsAccountRequestRequestTypeDef](#canceldomaintransfertoanotherawsaccountrequestrequesttypedef)
-  - [CancelDomainTransferToAnotherAwsAccountResponseTypeDef](#canceldomaintransfertoanotherawsaccountresponsetypedef)
-  - [CheckDomainAvailabilityRequestRequestTypeDef](#checkdomainavailabilityrequestrequesttypedef)
-  - [CheckDomainAvailabilityResponseTypeDef](#checkdomainavailabilityresponsetypedef)
-  - [CheckDomainTransferabilityRequestRequestTypeDef](#checkdomaintransferabilityrequestrequesttypedef)
-  - [CheckDomainTransferabilityResponseTypeDef](#checkdomaintransferabilityresponsetypedef)
-  - [ContactDetailTypeDef](#contactdetailtypedef)
-  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
-  - [DeleteDomainResponseTypeDef](#deletedomainresponsetypedef)
-  - [DeleteTagsForDomainRequestRequestTypeDef](#deletetagsfordomainrequestrequesttypedef)
-  - [DisableDomainAutoRenewRequestRequestTypeDef](#disabledomainautorenewrequestrequesttypedef)
-  - [DisableDomainTransferLockRequestRequestTypeDef](#disabledomaintransferlockrequestrequesttypedef)
-  - [DisableDomainTransferLockResponseTypeDef](#disabledomaintransferlockresponsetypedef)
-  - [DomainPriceTypeDef](#domainpricetypedef)
-  - [DomainSuggestionTypeDef](#domainsuggestiontypedef)
-  - [DomainSummaryTypeDef](#domainsummarytypedef)
-  - [DomainTransferabilityTypeDef](#domaintransferabilitytypedef)
-  - [EnableDomainAutoRenewRequestRequestTypeDef](#enabledomainautorenewrequestrequesttypedef)
-  - [EnableDomainTransferLockRequestRequestTypeDef](#enabledomaintransferlockrequestrequesttypedef)
-  - [EnableDomainTransferLockResponseTypeDef](#enabledomaintransferlockresponsetypedef)
-  - [ExtraParamTypeDef](#extraparamtypedef)
-  - [FilterConditionTypeDef](#filterconditiontypedef)
-  - [GetContactReachabilityStatusRequestRequestTypeDef](#getcontactreachabilitystatusrequestrequesttypedef)
-  - [GetContactReachabilityStatusResponseTypeDef](#getcontactreachabilitystatusresponsetypedef)
-  - [GetDomainDetailRequestRequestTypeDef](#getdomaindetailrequestrequesttypedef)
-  - [GetDomainDetailResponseTypeDef](#getdomaindetailresponsetypedef)
-  - [GetDomainSuggestionsRequestRequestTypeDef](#getdomainsuggestionsrequestrequesttypedef)
-  - [GetDomainSuggestionsResponseTypeDef](#getdomainsuggestionsresponsetypedef)
-  - [GetOperationDetailRequestRequestTypeDef](#getoperationdetailrequestrequesttypedef)
-  - [GetOperationDetailResponseTypeDef](#getoperationdetailresponsetypedef)
-  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
-  - [ListDomainsResponseTypeDef](#listdomainsresponsetypedef)
-  - [ListOperationsRequestRequestTypeDef](#listoperationsrequestrequesttypedef)
-  - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
-  - [ListPricesRequestRequestTypeDef](#listpricesrequestrequesttypedef)
-  - [ListPricesResponseTypeDef](#listpricesresponsetypedef)
-  - [ListTagsForDomainRequestRequestTypeDef](#listtagsfordomainrequestrequesttypedef)
-  - [ListTagsForDomainResponseTypeDef](#listtagsfordomainresponsetypedef)
-  - [NameserverTypeDef](#nameservertypedef)
-  - [OperationSummaryTypeDef](#operationsummarytypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PriceWithCurrencyTypeDef](#pricewithcurrencytypedef)
-  - [RegisterDomainRequestRequestTypeDef](#registerdomainrequestrequesttypedef)
-  - [RegisterDomainResponseTypeDef](#registerdomainresponsetypedef)
-  - [RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef](#rejectdomaintransferfromanotherawsaccountrequestrequesttypedef)
-  - [RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](#rejectdomaintransferfromanotherawsaccountresponsetypedef)
-  - [RenewDomainRequestRequestTypeDef](#renewdomainrequestrequesttypedef)
-  - [RenewDomainResponseTypeDef](#renewdomainresponsetypedef)
-  - [ResendContactReachabilityEmailRequestRequestTypeDef](#resendcontactreachabilityemailrequestrequesttypedef)
-  - [ResendContactReachabilityEmailResponseTypeDef](#resendcontactreachabilityemailresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetrieveDomainAuthCodeRequestRequestTypeDef](#retrievedomainauthcoderequestrequesttypedef)
-  - [RetrieveDomainAuthCodeResponseTypeDef](#retrievedomainauthcoderesponsetypedef)
-  - [SortConditionTypeDef](#sortconditiontypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TransferDomainRequestRequestTypeDef](#transferdomainrequestrequesttypedef)
-  - [TransferDomainResponseTypeDef](#transferdomainresponsetypedef)
-  - [TransferDomainToAnotherAwsAccountRequestRequestTypeDef](#transferdomaintoanotherawsaccountrequestrequesttypedef)
-  - [TransferDomainToAnotherAwsAccountResponseTypeDef](#transferdomaintoanotherawsaccountresponsetypedef)
-  - [UpdateDomainContactPrivacyRequestRequestTypeDef](#updatedomaincontactprivacyrequestrequesttypedef)
-  - [UpdateDomainContactPrivacyResponseTypeDef](#updatedomaincontactprivacyresponsetypedef)
-  - [UpdateDomainContactRequestRequestTypeDef](#updatedomaincontactrequestrequesttypedef)
-  - [UpdateDomainContactResponseTypeDef](#updatedomaincontactresponsetypedef)
-  - [UpdateDomainNameserversRequestRequestTypeDef](#updatedomainnameserversrequestrequesttypedef)
-  - [UpdateDomainNameserversResponseTypeDef](#updatedomainnameserversresponsetypedef)
-  - [UpdateTagsForDomainRequestRequestTypeDef](#updatetagsfordomainrequestrequesttypedef)
-  - [ViewBillingRequestRequestTypeDef](#viewbillingrequestrequesttypedef)
-  - [ViewBillingResponseTypeDef](#viewbillingresponsetypedef)
-
-<a id="acceptdomaintransferfromanotherawsaccountrequestrequesttypedef"></a>
+    Auto-generated documentation for [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
+    type annotations stubs module [mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 ## AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
+
+def get_value() -> AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Password": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `Password`: `str`
-
-<a id="acceptdomaintransferfromanotherawsaccountresponsetypedef"></a>
+```python title="Definition"
+class AcceptDomainTransferFromAnotherAwsAccountRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Password: str,
+```
 
 ## AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef
+
+def get_value() -> AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="billingrecordtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BillingRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import BillingRecordTypeDef
+
+def get_value() -> BillingRecordTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BillingRecordTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    Operation: NotRequired[OperationTypeType],  # (1)
+    InvoiceId: NotRequired[str],
+    BillDate: NotRequired[datetime],
+    Price: NotRequired[float],
+```
 
-- `DomainName`: `str`
-- `Operation`: [OperationTypeType](./literals.md#operationtypetype)
-- `InvoiceId`: `str`
-- `BillDate`: `datetime`
-- `Price`: `float`
-
-<a id="canceldomaintransfertoanotherawsaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
 ## CancelDomainTransferToAnotherAwsAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountRequestRequestTypeDef
+
+def get_value() -> CancelDomainTransferToAnotherAwsAccountRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="canceldomaintransfertoanotherawsaccountresponsetypedef"></a>
+```python title="Definition"
+class CancelDomainTransferToAnotherAwsAccountRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## CancelDomainTransferToAnotherAwsAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CancelDomainTransferToAnotherAwsAccountResponseTypeDef
+
+def get_value() -> CancelDomainTransferToAnotherAwsAccountResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelDomainTransferToAnotherAwsAccountResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="checkdomainavailabilityrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CheckDomainAvailabilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityRequestRequestTypeDef
+
+def get_value() -> CheckDomainAvailabilityRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `IdnLangCode`: `str`
-
-<a id="checkdomainavailabilityresponsetypedef"></a>
+```python title="Definition"
+class CheckDomainAvailabilityRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    IdnLangCode: NotRequired[str],
+```
 
 ## CheckDomainAvailabilityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CheckDomainAvailabilityResponseTypeDef
+
+def get_value() -> CheckDomainAvailabilityResponseTypeDef:
+    return {
+        "Availability": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckDomainAvailabilityResponseTypeDef(TypedDict):
+    Availability: DomainAvailabilityType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Availability`:
-  [DomainAvailabilityType](./literals.md#domainavailabilitytype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="checkdomaintransferabilityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DomainAvailabilityType](./literals.md#domainavailabilitytype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CheckDomainTransferabilityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityRequestRequestTypeDef
+
+def get_value() -> CheckDomainTransferabilityRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AuthCode`: `str`
-
-<a id="checkdomaintransferabilityresponsetypedef"></a>
+```python title="Definition"
+class CheckDomainTransferabilityRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AuthCode: NotRequired[str],
+```
 
 ## CheckDomainTransferabilityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import CheckDomainTransferabilityResponseTypeDef
+
+def get_value() -> CheckDomainTransferabilityResponseTypeDef:
+    return {
+        "Transferability": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CheckDomainTransferabilityResponseTypeDef(TypedDict):
+    Transferability: DomainTransferabilityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Transferability`:
-  [DomainTransferabilityTypeDef](./type_defs.md#domaintransferabilitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="contactdetailtypedef"></a>
-
+1. See [:material-code-braces: DomainTransferabilityTypeDef](./type_defs.md#domaintransferabilitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ContactDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ContactDetailTypeDef
+
+def get_value() -> ContactDetailTypeDef:
+    return {
+        "FirstName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactDetailTypeDef(TypedDict):
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    ContactType: NotRequired[ContactTypeType],  # (1)
+    OrganizationName: NotRequired[str],
+    AddressLine1: NotRequired[str],
+    AddressLine2: NotRequired[str],
+    City: NotRequired[str],
+    State: NotRequired[str],
+    CountryCode: NotRequired[CountryCodeType],  # (2)
+    ZipCode: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    Email: NotRequired[str],
+    Fax: NotRequired[str],
+    ExtraParams: NotRequired[List[ExtraParamTypeDef]],  # (3)
+```
 
-- `FirstName`: `str`
-- `LastName`: `str`
-- `ContactType`: [ContactTypeType](./literals.md#contacttypetype)
-- `OrganizationName`: `str`
-- `AddressLine1`: `str`
-- `AddressLine2`: `str`
-- `City`: `str`
-- `State`: `str`
-- `CountryCode`: [CountryCodeType](./literals.md#countrycodetype)
-- `ZipCode`: `str`
-- `PhoneNumber`: `str`
-- `Email`: `str`
-- `Fax`: `str`
-- `ExtraParams`:
-  `List`\[[ExtraParamTypeDef](./type_defs.md#extraparamtypedef)\]
-
-<a id="deletedomainrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContactTypeType](./literals.md#contacttypetype) 
+2. See [:material-code-brackets: CountryCodeType](./literals.md#countrycodetype) 
+3. See [:material-code-braces: ExtraParamTypeDef](./type_defs.md#extraparamtypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="deletedomainresponsetypedef"></a>
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DeleteDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DeleteDomainResponseTypeDef
+
+def get_value() -> DeleteDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetagsfordomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTagsForDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DeleteTagsForDomainRequestRequestTypeDef
+
+def get_value() -> DeleteTagsForDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "TagsToDelete": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `TagsToDelete`: `Sequence`\[`str`\]
-
-<a id="disabledomainautorenewrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteTagsForDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    TagsToDelete: Sequence[str],
+```
 
 ## DisableDomainAutoRenewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DisableDomainAutoRenewRequestRequestTypeDef
+
+def get_value() -> DisableDomainAutoRenewRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="disabledomaintransferlockrequestrequesttypedef"></a>
+```python title="Definition"
+class DisableDomainAutoRenewRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DisableDomainTransferLockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockRequestRequestTypeDef
+
+def get_value() -> DisableDomainTransferLockRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="disabledomaintransferlockresponsetypedef"></a>
+```python title="Definition"
+class DisableDomainTransferLockRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DisableDomainTransferLockResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DisableDomainTransferLockResponseTypeDef
+
+def get_value() -> DisableDomainTransferLockResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisableDomainTransferLockResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="domainpricetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DomainPriceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DomainPriceTypeDef
+
+def get_value() -> DomainPriceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainPriceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    RegistrationPrice: NotRequired[PriceWithCurrencyTypeDef],  # (1)
+    TransferPrice: NotRequired[PriceWithCurrencyTypeDef],  # (1)
+    RenewalPrice: NotRequired[PriceWithCurrencyTypeDef],  # (1)
+    ChangeOwnershipPrice: NotRequired[PriceWithCurrencyTypeDef],  # (1)
+    RestorationPrice: NotRequired[PriceWithCurrencyTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `RegistrationPrice`:
-  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
-- `TransferPrice`:
-  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
-- `RenewalPrice`:
-  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
-- `ChangeOwnershipPrice`:
-  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
-- `RestorationPrice`:
-  [PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef)
-
-<a id="domainsuggestiontypedef"></a>
-
+1. See [:material-code-braces: PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef) 
+2. See [:material-code-braces: PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef) 
+3. See [:material-code-braces: PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef) 
+4. See [:material-code-braces: PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef) 
+5. See [:material-code-braces: PriceWithCurrencyTypeDef](./type_defs.md#pricewithcurrencytypedef) 
 ## DomainSuggestionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DomainSuggestionTypeDef
+
+def get_value() -> DomainSuggestionTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Optional fields:
-
-- `DomainName`: `str`
-- `Availability`: `str`
-
-<a id="domainsummarytypedef"></a>
+```python title="Definition"
+class DomainSuggestionTypeDef(TypedDict):
+    DomainName: NotRequired[str],
+    Availability: NotRequired[str],
+```
 
 ## DomainSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DomainSummaryTypeDef
+
+def get_value() -> DomainSummaryTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AutoRenew`: `bool`
-- `TransferLock`: `bool`
-- `Expiry`: `datetime`
-
-<a id="domaintransferabilitytypedef"></a>
+```python title="Definition"
+class DomainSummaryTypeDef(TypedDict):
+    DomainName: str,
+    AutoRenew: NotRequired[bool],
+    TransferLock: NotRequired[bool],
+    Expiry: NotRequired[datetime],
+```
 
 ## DomainTransferabilityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import DomainTransferabilityTypeDef
+
+def get_value() -> DomainTransferabilityTypeDef:
+    return {
+        "Transferable": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DomainTransferabilityTypeDef(TypedDict):
+    Transferable: NotRequired[TransferableType],  # (1)
+```
 
-- `Transferable`: [TransferableType](./literals.md#transferabletype)
-
-<a id="enabledomainautorenewrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TransferableType](./literals.md#transferabletype) 
 ## EnableDomainAutoRenewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import EnableDomainAutoRenewRequestRequestTypeDef
+
+def get_value() -> EnableDomainAutoRenewRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="enabledomaintransferlockrequestrequesttypedef"></a>
+```python title="Definition"
+class EnableDomainAutoRenewRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## EnableDomainTransferLockRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockRequestRequestTypeDef
+
+def get_value() -> EnableDomainTransferLockRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="enabledomaintransferlockresponsetypedef"></a>
+```python title="Definition"
+class EnableDomainTransferLockRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## EnableDomainTransferLockResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import EnableDomainTransferLockResponseTypeDef
+
+def get_value() -> EnableDomainTransferLockResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnableDomainTransferLockResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="extraparamtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExtraParamTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ExtraParamTypeDef
+
+def get_value() -> ExtraParamTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExtraParamTypeDef(TypedDict):
+    Name: ExtraParamNameType,  # (1)
+    Value: str,
+```
 
-- `Name`: [ExtraParamNameType](./literals.md#extraparamnametype)
-- `Value`: `str`
-
-<a id="filterconditiontypedef"></a>
-
+1. See [:material-code-brackets: ExtraParamNameType](./literals.md#extraparamnametype) 
 ## FilterConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import FilterConditionTypeDef
+
+def get_value() -> FilterConditionTypeDef:
+    return {
+        "Name": ...,
+        "Operator": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FilterConditionTypeDef(TypedDict):
+    Name: ListDomainsAttributeNameType,  # (1)
+    Operator: OperatorType,  # (2)
+    Values: Sequence[str],
+```
 
-- `Name`:
-  [ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype)
-- `Operator`: [OperatorType](./literals.md#operatortype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="getcontactreachabilitystatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype) 
+2. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
 ## GetContactReachabilityStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusRequestRequestTypeDef
+
+def get_value() -> GetContactReachabilityStatusRequestRequestTypeDef:
+    return {
+        "domainName": ...,
+    }
 ```
 
-Optional fields:
-
-- `domainName`: `str`
-
-<a id="getcontactreachabilitystatusresponsetypedef"></a>
+```python title="Definition"
+class GetContactReachabilityStatusRequestRequestTypeDef(TypedDict):
+    domainName: NotRequired[str],
+```
 
 ## GetContactReachabilityStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetContactReachabilityStatusResponseTypeDef
+
+def get_value() -> GetContactReachabilityStatusResponseTypeDef:
+    return {
+        "domainName": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactReachabilityStatusResponseTypeDef(TypedDict):
+    domainName: str,
+    status: ReachabilityStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `domainName`: `str`
-- `status`: [ReachabilityStatusType](./literals.md#reachabilitystatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomaindetailrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReachabilityStatusType](./literals.md#reachabilitystatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainDetailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetDomainDetailRequestRequestTypeDef
+
+def get_value() -> GetDomainDetailRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="getdomaindetailresponsetypedef"></a>
+```python title="Definition"
+class GetDomainDetailRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## GetDomainDetailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetDomainDetailResponseTypeDef
+
+def get_value() -> GetDomainDetailResponseTypeDef:
+    return {
+        "DomainName": ...,
+        "Nameservers": ...,
+        "AutoRenew": ...,
+        "AdminContact": ...,
+        "RegistrantContact": ...,
+        "TechContact": ...,
+        "AdminPrivacy": ...,
+        "RegistrantPrivacy": ...,
+        "TechPrivacy": ...,
+        "RegistrarName": ...,
+        "WhoIsServer": ...,
+        "RegistrarUrl": ...,
+        "AbuseContactEmail": ...,
+        "AbuseContactPhone": ...,
+        "RegistryDomainId": ...,
+        "CreationDate": ...,
+        "UpdatedDate": ...,
+        "ExpirationDate": ...,
+        "Reseller": ...,
+        "DnsSec": ...,
+        "StatusList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainDetailResponseTypeDef(TypedDict):
+    DomainName: str,
+    Nameservers: List[NameserverTypeDef],  # (1)
+    AutoRenew: bool,
+    AdminContact: ContactDetailTypeDef,  # (2)
+    RegistrantContact: ContactDetailTypeDef,  # (2)
+    TechContact: ContactDetailTypeDef,  # (2)
+    AdminPrivacy: bool,
+    RegistrantPrivacy: bool,
+    TechPrivacy: bool,
+    RegistrarName: str,
+    WhoIsServer: str,
+    RegistrarUrl: str,
+    AbuseContactEmail: str,
+    AbuseContactPhone: str,
+    RegistryDomainId: str,
+    CreationDate: datetime,
+    UpdatedDate: datetime,
+    ExpirationDate: datetime,
+    Reseller: str,
+    DnsSec: str,
+    StatusList: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `DomainName`: `str`
-- `Nameservers`:
-  `List`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
-- `AutoRenew`: `bool`
-- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `RegistrantContact`:
-  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `AdminPrivacy`: `bool`
-- `RegistrantPrivacy`: `bool`
-- `TechPrivacy`: `bool`
-- `RegistrarName`: `str`
-- `WhoIsServer`: `str`
-- `RegistrarUrl`: `str`
-- `AbuseContactEmail`: `str`
-- `AbuseContactPhone`: `str`
-- `RegistryDomainId`: `str`
-- `CreationDate`: `datetime`
-- `UpdatedDate`: `datetime`
-- `ExpirationDate`: `datetime`
-- `Reseller`: `str`
-- `DnsSec`: `str`
-- `StatusList`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdomainsuggestionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NameserverTypeDef](./type_defs.md#nameservertypedef) 
+2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+4. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDomainSuggestionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsRequestRequestTypeDef
+
+def get_value() -> GetDomainSuggestionsRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "SuggestionCount": ...,
+        "OnlyAvailable": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `SuggestionCount`: `int`
-- `OnlyAvailable`: `bool`
-
-<a id="getdomainsuggestionsresponsetypedef"></a>
+```python title="Definition"
+class GetDomainSuggestionsRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    SuggestionCount: int,
+    OnlyAvailable: bool,
+```
 
 ## GetDomainSuggestionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetDomainSuggestionsResponseTypeDef
+
+def get_value() -> GetDomainSuggestionsResponseTypeDef:
+    return {
+        "SuggestionsList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDomainSuggestionsResponseTypeDef(TypedDict):
+    SuggestionsList: List[DomainSuggestionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SuggestionsList`:
-  `List`\[[DomainSuggestionTypeDef](./type_defs.md#domainsuggestiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getoperationdetailrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainSuggestionTypeDef](./type_defs.md#domainsuggestiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOperationDetailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetOperationDetailRequestRequestTypeDef
+
+def get_value() -> GetOperationDetailRequestRequestTypeDef:
+    return {
+        "OperationId": ...,
+    }
 ```
 
-Required fields:
-
-- `OperationId`: `str`
-
-<a id="getoperationdetailresponsetypedef"></a>
+```python title="Definition"
+class GetOperationDetailRequestRequestTypeDef(TypedDict):
+    OperationId: str,
+```
 
 ## GetOperationDetailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import GetOperationDetailResponseTypeDef
+
+def get_value() -> GetOperationDetailResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "Status": ...,
+        "Message": ...,
+        "DomainName": ...,
+        "Type": ...,
+        "SubmittedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOperationDetailResponseTypeDef(TypedDict):
+    OperationId: str,
+    Status: OperationStatusType,  # (1)
+    Message: str,
+    DomainName: str,
+    Type: OperationTypeType,  # (2)
+    SubmittedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `OperationId`: `str`
-- `Status`: [OperationStatusType](./literals.md#operationstatustype)
-- `Message`: `str`
-- `DomainName`: `str`
-- `Type`: [OperationTypeType](./literals.md#operationtypetype)
-- `SubmittedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDomainsRequestListDomainsPaginateTypeDef
 
-<a id="listdomainsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ListDomainsRequestListDomainsPaginateTypeDef
 
+def get_value() -> ListDomainsRequestListDomainsPaginateTypeDef:
+    return {
+        "FilterConditions": ...,
+    }
+```
+
+```python title="Definition"
+class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
+    FilterConditions: NotRequired[Sequence[FilterConditionTypeDef]],  # (1)
+    SortCondition: NotRequired[SortConditionTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+2. See [:material-code-braces: SortConditionTypeDef](./type_defs.md#sortconditiontypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListDomainsRequestRequestTypeDef
+
+def get_value() -> ListDomainsRequestRequestTypeDef:
+    return {
+        "FilterConditions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDomainsRequestRequestTypeDef(TypedDict):
+    FilterConditions: NotRequired[Sequence[FilterConditionTypeDef]],  # (1)
+    SortCondition: NotRequired[SortConditionTypeDef],  # (2)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `FilterConditions`:
-  `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
-- `SortCondition`: [SortConditionTypeDef](./type_defs.md#sortconditiontypedef)
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listdomainsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterConditionTypeDef](./type_defs.md#filterconditiontypedef) 
+2. See [:material-code-braces: SortConditionTypeDef](./type_defs.md#sortconditiontypedef) 
 ## ListDomainsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListDomainsResponseTypeDef
+
+def get_value() -> ListDomainsResponseTypeDef:
+    return {
+        "Domains": ...,
+        "NextPageMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainsResponseTypeDef(TypedDict):
+    Domains: List[DomainSummaryTypeDef],  # (1)
+    NextPageMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Domains`:
-  `List`\[[DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef)\]
-- `NextPageMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DomainSummaryTypeDef](./type_defs.md#domainsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOperationsRequestListOperationsPaginateTypeDef
 
-<a id="listoperationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ListOperationsRequestListOperationsPaginateTypeDef
 
+def get_value() -> ListOperationsRequestListOperationsPaginateTypeDef:
+    return {
+        "SubmittedSince": ...,
+    }
+```
+
+```python title="Definition"
+class ListOperationsRequestListOperationsPaginateTypeDef(TypedDict):
+    SubmittedSince: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOperationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListOperationsRequestRequestTypeDef
+
+def get_value() -> ListOperationsRequestRequestTypeDef:
+    return {
+        "SubmittedSince": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubmittedSince`: `Union`\[`datetime`, `str`\]
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listoperationsresponsetypedef"></a>
+```python title="Definition"
+class ListOperationsRequestRequestTypeDef(TypedDict):
+    SubmittedSince: NotRequired[Union[datetime, str]],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListOperationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListOperationsResponseTypeDef
+
+def get_value() -> ListOperationsResponseTypeDef:
+    return {
+        "Operations": ...,
+        "NextPageMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOperationsResponseTypeDef(TypedDict):
+    Operations: List[OperationSummaryTypeDef],  # (1)
+    NextPageMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Operations`:
-  `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
-- `NextPageMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPricesRequestListPricesPaginateTypeDef
 
-<a id="listpricesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ListPricesRequestListPricesPaginateTypeDef
 
+def get_value() -> ListPricesRequestListPricesPaginateTypeDef:
+    return {
+        "Tld": ...,
+    }
+```
+
+```python title="Definition"
+class ListPricesRequestListPricesPaginateTypeDef(TypedDict):
+    Tld: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPricesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListPricesRequestRequestTypeDef
+
+def get_value() -> ListPricesRequestRequestTypeDef:
+    return {
+        "Tld": ...,
+    }
 ```
 
-Optional fields:
-
-- `Tld`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listpricesresponsetypedef"></a>
+```python title="Definition"
+class ListPricesRequestRequestTypeDef(TypedDict):
+    Tld: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListPricesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListPricesResponseTypeDef
+
+def get_value() -> ListPricesResponseTypeDef:
+    return {
+        "Prices": ...,
+        "NextPageMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPricesResponseTypeDef(TypedDict):
+    Prices: List[DomainPriceTypeDef],  # (1)
+    NextPageMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Prices`: `List`\[[DomainPriceTypeDef](./type_defs.md#domainpricetypedef)\]
-- `NextPageMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsfordomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DomainPriceTypeDef](./type_defs.md#domainpricetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListTagsForDomainRequestRequestTypeDef
+
+def get_value() -> ListTagsForDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="listtagsfordomainresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## ListTagsForDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ListTagsForDomainResponseTypeDef
+
+def get_value() -> ListTagsForDomainResponseTypeDef:
+    return {
+        "TagList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForDomainResponseTypeDef(TypedDict):
+    TagList: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="nameservertypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NameserverTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import NameserverTypeDef
+
+def get_value() -> NameserverTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `GlueIps`: `List`\[`str`\]
-
-<a id="operationsummarytypedef"></a>
+```python title="Definition"
+class NameserverTypeDef(TypedDict):
+    Name: str,
+    GlueIps: NotRequired[List[str]],
+```
 
 ## OperationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import OperationSummaryTypeDef
+
+def get_value() -> OperationSummaryTypeDef:
+    return {
+        "OperationId": ...,
+        "Status": ...,
+        "Type": ...,
+        "SubmittedDate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OperationSummaryTypeDef(TypedDict):
+    OperationId: str,
+    Status: OperationStatusType,  # (1)
+    Type: OperationTypeType,  # (2)
+    SubmittedDate: datetime,
+```
 
-- `OperationId`: `str`
-- `Status`: [OperationStatusType](./literals.md#operationstatustype)
-- `Type`: [OperationTypeType](./literals.md#operationtypetype)
-- `SubmittedDate`: `datetime`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
+2. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pricewithcurrencytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PriceWithCurrencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import PriceWithCurrencyTypeDef
+
+def get_value() -> PriceWithCurrencyTypeDef:
+    return {
+        "Price": ...,
+        "Currency": ...,
+    }
 ```
 
-Required fields:
-
-- `Price`: `float`
-- `Currency`: `str`
-
-<a id="registerdomainrequestrequesttypedef"></a>
+```python title="Definition"
+class PriceWithCurrencyTypeDef(TypedDict):
+    Price: float,
+    Currency: str,
+```
 
 ## RegisterDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RegisterDomainRequestRequestTypeDef
+
+def get_value() -> RegisterDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "DurationInYears": ...,
+        "AdminContact": ...,
+        "RegistrantContact": ...,
+        "TechContact": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DurationInYears: int,
+    AdminContact: ContactDetailTypeDef,  # (1)
+    RegistrantContact: ContactDetailTypeDef,  # (1)
+    TechContact: ContactDetailTypeDef,  # (1)
+    IdnLangCode: NotRequired[str],
+    AutoRenew: NotRequired[bool],
+    PrivacyProtectAdminContact: NotRequired[bool],
+    PrivacyProtectRegistrantContact: NotRequired[bool],
+    PrivacyProtectTechContact: NotRequired[bool],
+```
 
-- `DomainName`: `str`
-- `DurationInYears`: `int`
-- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `RegistrantContact`:
-  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-
-Optional fields:
-
-- `IdnLangCode`: `str`
-- `AutoRenew`: `bool`
-- `PrivacyProtectAdminContact`: `bool`
-- `PrivacyProtectRegistrantContact`: `bool`
-- `PrivacyProtectTechContact`: `bool`
-
-<a id="registerdomainresponsetypedef"></a>
-
+1. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 ## RegisterDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RegisterDomainResponseTypeDef
+
+def get_value() -> RegisterDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rejectdomaintransferfromanotherawsaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef
+
+def get_value() -> RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="rejectdomaintransferfromanotherawsaccountresponsetypedef"></a>
+```python title="Definition"
+class RejectDomainTransferFromAnotherAwsAccountRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RejectDomainTransferFromAnotherAwsAccountResponseTypeDef
+
+def get_value() -> RejectDomainTransferFromAnotherAwsAccountResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RejectDomainTransferFromAnotherAwsAccountResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="renewdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RenewDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RenewDomainRequestRequestTypeDef
+
+def get_value() -> RenewDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "CurrentExpiryYear": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `CurrentExpiryYear`: `int`
-
-Optional fields:
-
-- `DurationInYears`: `int`
-
-<a id="renewdomainresponsetypedef"></a>
+```python title="Definition"
+class RenewDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    CurrentExpiryYear: int,
+    DurationInYears: NotRequired[int],
+```
 
 ## RenewDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RenewDomainResponseTypeDef
+
+def get_value() -> RenewDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RenewDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resendcontactreachabilityemailrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResendContactReachabilityEmailRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailRequestRequestTypeDef
+
+def get_value() -> ResendContactReachabilityEmailRequestRequestTypeDef:
+    return {
+        "domainName": ...,
+    }
 ```
 
-Optional fields:
-
-- `domainName`: `str`
-
-<a id="resendcontactreachabilityemailresponsetypedef"></a>
+```python title="Definition"
+class ResendContactReachabilityEmailRequestRequestTypeDef(TypedDict):
+    domainName: NotRequired[str],
+```
 
 ## ResendContactReachabilityEmailResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ResendContactReachabilityEmailResponseTypeDef
+
+def get_value() -> ResendContactReachabilityEmailResponseTypeDef:
+    return {
+        "domainName": ...,
+        "emailAddress": ...,
+        "isAlreadyVerified": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResendContactReachabilityEmailResponseTypeDef(TypedDict):
+    domainName: str,
+    emailAddress: str,
+    isAlreadyVerified: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `domainName`: `str`
-- `emailAddress`: `str`
-- `isAlreadyVerified`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retrievedomainauthcoderequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetrieveDomainAuthCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeRequestRequestTypeDef
+
+def get_value() -> RetrieveDomainAuthCodeRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="retrievedomainauthcoderesponsetypedef"></a>
+```python title="Definition"
+class RetrieveDomainAuthCodeRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## RetrieveDomainAuthCodeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import RetrieveDomainAuthCodeResponseTypeDef
+
+def get_value() -> RetrieveDomainAuthCodeResponseTypeDef:
+    return {
+        "AuthCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RetrieveDomainAuthCodeResponseTypeDef(TypedDict):
+    AuthCode: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AuthCode`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="sortconditiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SortConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import SortConditionTypeDef
+
+def get_value() -> SortConditionTypeDef:
+    return {
+        "Name": ...,
+        "SortOrder": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SortConditionTypeDef(TypedDict):
+    Name: ListDomainsAttributeNameType,  # (1)
+    SortOrder: SortOrderType,  # (2)
+```
 
-- `Name`:
-  [ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype)
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-brackets: ListDomainsAttributeNameType](./literals.md#listdomainsattributenametype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="transferdomainrequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TransferDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import TransferDomainRequestRequestTypeDef
+
+def get_value() -> TransferDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "DurationInYears": ...,
+        "AdminContact": ...,
+        "RegistrantContact": ...,
+        "TechContact": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransferDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    DurationInYears: int,
+    AdminContact: ContactDetailTypeDef,  # (1)
+    RegistrantContact: ContactDetailTypeDef,  # (1)
+    TechContact: ContactDetailTypeDef,  # (1)
+    IdnLangCode: NotRequired[str],
+    Nameservers: NotRequired[Sequence[NameserverTypeDef]],  # (4)
+    AuthCode: NotRequired[str],
+    AutoRenew: NotRequired[bool],
+    PrivacyProtectAdminContact: NotRequired[bool],
+    PrivacyProtectRegistrantContact: NotRequired[bool],
+    PrivacyProtectTechContact: NotRequired[bool],
+```
 
-- `DomainName`: `str`
-- `DurationInYears`: `int`
-- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `RegistrantContact`:
-  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-
-Optional fields:
-
-- `IdnLangCode`: `str`
-- `Nameservers`:
-  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
-- `AuthCode`: `str`
-- `AutoRenew`: `bool`
-- `PrivacyProtectAdminContact`: `bool`
-- `PrivacyProtectRegistrantContact`: `bool`
-- `PrivacyProtectTechContact`: `bool`
-
-<a id="transferdomainresponsetypedef"></a>
-
+1. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+4. See [:material-code-braces: NameserverTypeDef](./type_defs.md#nameservertypedef) 
 ## TransferDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import TransferDomainResponseTypeDef
+
+def get_value() -> TransferDomainResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransferDomainResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="transferdomaintoanotherawsaccountrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TransferDomainToAnotherAwsAccountRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountRequestRequestTypeDef
+
+def get_value() -> TransferDomainToAnotherAwsAccountRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "AccountId": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `AccountId`: `str`
-
-<a id="transferdomaintoanotherawsaccountresponsetypedef"></a>
+```python title="Definition"
+class TransferDomainToAnotherAwsAccountRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AccountId: str,
+```
 
 ## TransferDomainToAnotherAwsAccountResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import TransferDomainToAnotherAwsAccountResponseTypeDef
+
+def get_value() -> TransferDomainToAnotherAwsAccountResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "Password": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransferDomainToAnotherAwsAccountResponseTypeDef(TypedDict):
+    OperationId: str,
+    Password: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `Password`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedomaincontactprivacyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDomainContactPrivacyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyRequestRequestTypeDef
+
+def get_value() -> UpdateDomainContactPrivacyRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AdminPrivacy`: `bool`
-- `RegistrantPrivacy`: `bool`
-- `TechPrivacy`: `bool`
-
-<a id="updatedomaincontactprivacyresponsetypedef"></a>
+```python title="Definition"
+class UpdateDomainContactPrivacyRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AdminPrivacy: NotRequired[bool],
+    RegistrantPrivacy: NotRequired[bool],
+    TechPrivacy: NotRequired[bool],
+```
 
 ## UpdateDomainContactPrivacyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactPrivacyResponseTypeDef
+
+def get_value() -> UpdateDomainContactPrivacyResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainContactPrivacyResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedomaincontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDomainContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactRequestRequestTypeDef
+
+def get_value() -> UpdateDomainContactRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainContactRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    AdminContact: NotRequired[ContactDetailTypeDef],  # (1)
+    RegistrantContact: NotRequired[ContactDetailTypeDef],  # (1)
+    TechContact: NotRequired[ContactDetailTypeDef],  # (1)
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `AdminContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `RegistrantContact`:
-  [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-- `TechContact`: [ContactDetailTypeDef](./type_defs.md#contactdetailtypedef)
-
-<a id="updatedomaincontactresponsetypedef"></a>
-
+1. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+2. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
+3. See [:material-code-braces: ContactDetailTypeDef](./type_defs.md#contactdetailtypedef) 
 ## UpdateDomainContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainContactResponseTypeDef
+
+def get_value() -> UpdateDomainContactResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainContactResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatedomainnameserversrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateDomainNameserversRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversRequestRequestTypeDef
+
+def get_value() -> UpdateDomainNameserversRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Nameservers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainNameserversRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Nameservers: Sequence[NameserverTypeDef],  # (1)
+    FIAuthKey: NotRequired[str],
+```
 
-- `DomainName`: `str`
-- `Nameservers`:
-  `Sequence`\[[NameserverTypeDef](./type_defs.md#nameservertypedef)\]
-
-Optional fields:
-
-- `FIAuthKey`: `str`
-
-<a id="updatedomainnameserversresponsetypedef"></a>
-
+1. See [:material-code-braces: NameserverTypeDef](./type_defs.md#nameservertypedef) 
 ## UpdateDomainNameserversResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateDomainNameserversResponseTypeDef
+
+def get_value() -> UpdateDomainNameserversResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDomainNameserversResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetagsfordomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTagsForDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import UpdateTagsForDomainRequestRequestTypeDef
+
+def get_value() -> UpdateTagsForDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTagsForDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    TagsToUpdate: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `DomainName`: `str`
-
-Optional fields:
-
-- `TagsToUpdate`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="viewbillingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ViewBillingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ViewBillingRequestRequestTypeDef
+
+def get_value() -> ViewBillingRequestRequestTypeDef:
+    return {
+        "Start": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ViewBillingRequestRequestTypeDef(TypedDict):
+    Start: NotRequired[Union[datetime, str]],
+    End: NotRequired[Union[datetime, str]],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `Start`: `Union`\[`datetime`, `str`\]
-- `End`: `Union`\[`datetime`, `str`\]
-- `Marker`: `str`
-- `MaxItems`: `int`
+## ViewBillingRequestViewBillingPaginateTypeDef
 
-<a id="viewbillingresponsetypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_route53domains.type_defs import ViewBillingRequestViewBillingPaginateTypeDef
 
+def get_value() -> ViewBillingRequestViewBillingPaginateTypeDef:
+    return {
+        "Start": ...,
+    }
+```
+
+```python title="Definition"
+class ViewBillingRequestViewBillingPaginateTypeDef(TypedDict):
+    Start: NotRequired[Union[datetime, str]],
+    End: NotRequired[Union[datetime, str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ViewBillingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_route53domains.type_defs import ViewBillingResponseTypeDef
+
+def get_value() -> ViewBillingResponseTypeDef:
+    return {
+        "NextPageMarker": ...,
+        "BillingRecords": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ViewBillingResponseTypeDef(TypedDict):
+    NextPageMarker: str,
+    BillingRecords: List[BillingRecordTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextPageMarker`: `str`
-- `BillingRecords`:
-  `List`\[[BillingRecordTypeDef](./type_defs.md#billingrecordtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BillingRecordTypeDef](./type_defs.md#billingrecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

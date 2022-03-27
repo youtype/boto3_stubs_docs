@@ -1,91 +1,139 @@
-<a id="examples-for-boto3-ssm-module"></a>
-
-# Examples for boto3 SSM module
+# Examples
 
 > [Index](../README.md) > [SSM](./README.md) > Examples
 
-- [Examples for boto3 SSM module](#examples-for-boto3-ssm-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+    type annotations stubs module [mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[ssm]` package installed.
 
-Write your `SSM` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `SSM` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SSMClient
-# and provides type checking and code completion
-client = session.client("ssm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_tags_to_resource()
 
-# paginator has type DescribeActivationsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("describe_activations")
-for item in paginator.paginate(...):
-    # item has type DescribeActivationsResultTypeDef
-    print(item)
+    session = Session()
 
-# waiter has type CommandExecutedWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("command_executed")
-waiter.wait()
-```
+    client = session.client("ssm")  # (1)
+    result = client.associate_ops_item_related_item()  # (2)
+    ```
 
-<a id="explicit-type-annotations"></a>
+    1. client: [SSMClient](./client.md)
+    2. result: [:material-code-braces: AssociateOpsItemRelatedItemResponseTypeDef](./type_defs.md#associateopsitemrelateditemresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ssm")  # (1)
+
+    paginator = client.get_paginator("describe_activations")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SSMClient](./client.md)
+    2. paginator: [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
+    3. item: [:material-code-braces: DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef) 
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("ssm")  # (1)
+
+    waiter = client.get_waiter("command_executed")  # (2)
+    waiter.wait()
+    ```
+
+    1. client: [SSMClient](./client.md)
+    2. waiter: [CommandExecutedWaiter](./waiters.md#commandexecutedwaiter)
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[ssm]` or a standalone `mypy_boto3_ssm` package, you have
-to explicitly specify `client: SSMClient` type annotation.
+With `boto3-stubs-lite[ssm]`
+or a standalone `mypy_boto3_ssm` package, you have to explicitly specify `client: SSMClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_ssm.client import SSMClient
-from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
-from mypy_boto3_ssm.waiter import CommandExecutedWaiter
-from mypy_boto3_ssm.literals import PaginatorName
-from mypy_boto3_ssm.literals import WaiterName
-from mypy_boto3_ssm.type_defs import Dict[str, Any]
-from mypy_boto3_ssm.type_defs import DescribeActivationsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SSMClient = session.client("ssm")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.add_tags_to_resource()
+    from mypy_boto3_ssm.client import SSMClient
+    from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemResponseTypeDef
+    from mypy_boto3_ssm.type_defs import AssociateOpsItemRelatedItemRequestRequestTypeDef
 
-paginator_name: PaginatorName = "describe_activations"
-paginator: DescribeActivationsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: DescribeActivationsResultTypeDef
-    print(item)
 
-waiter_name: WaiterName = "command_executed"
-waiter: CommandExecutedWaiter = client.get_waiter(waiter_name)
-waiter.wait()
-```
+    session = Session()
+
+    client: SSMClient = session.client("ssm")
+
+    kwargs: AssociateOpsItemRelatedItemRequestRequestTypeDef = {...}
+    result: AssociateOpsItemRelatedItemResponseTypeDef = client.associate_ops_item_related_item(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ssm.client import SSMClient
+    from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
+    from mypy_boto3_ssm.type_defs import DescribeActivationsResultTypeDef
+
+
+    session = Session()
+    client: SSMClient = session.client("ssm")
+
+    paginator: DescribeActivationsPaginator = client.get_paginator("describe_activations")
+    for item in paginator.paginate(...):
+        item: DescribeActivationsResultTypeDef
+        print(item)
+    ```
+
+
+
+=== "Waiters"
+
+    ```python title="Waiter usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_ssm.client import SSMClient
+    from mypy_boto3_ssm.waiter import CommandExecutedWaiter
+
+    session = Session()
+    client: SSMClient = session.client("ssm")
+
+    waiter: CommandExecutedWaiter = client.get_waiter("command_executed")
+    waiter.wait()
+    ```
+
+

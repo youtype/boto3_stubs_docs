@@ -1,3406 +1,4344 @@
-<a id="typed-dictionaries-for-boto3-ecs-module"></a>
-
-# Typed dictionaries for boto3 ECS module
+# Typed dictionaries
 
 > [Index](../README.md) > [ECS](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module
-[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ECS module](#typed-dictionaries-for-boto3-ecs-module)
-  - [AttachmentStateChangeTypeDef](#attachmentstatechangetypedef)
-  - [AttachmentTypeDef](#attachmenttypedef)
-  - [AttributeTypeDef](#attributetypedef)
-  - [AutoScalingGroupProviderTypeDef](#autoscalinggroupprovidertypedef)
-  - [AutoScalingGroupProviderUpdateTypeDef](#autoscalinggroupproviderupdatetypedef)
-  - [AwsVpcConfigurationTypeDef](#awsvpcconfigurationtypedef)
-  - [CapacityProviderStrategyItemTypeDef](#capacityproviderstrategyitemtypedef)
-  - [CapacityProviderTypeDef](#capacityprovidertypedef)
-  - [ClusterConfigurationTypeDef](#clusterconfigurationtypedef)
-  - [ClusterSettingTypeDef](#clustersettingtypedef)
-  - [ClusterTypeDef](#clustertypedef)
-  - [ContainerDefinitionTypeDef](#containerdefinitiontypedef)
-  - [ContainerDependencyTypeDef](#containerdependencytypedef)
-  - [ContainerInstanceHealthStatusTypeDef](#containerinstancehealthstatustypedef)
-  - [ContainerInstanceTypeDef](#containerinstancetypedef)
-  - [ContainerOverrideTypeDef](#containeroverridetypedef)
-  - [ContainerStateChangeTypeDef](#containerstatechangetypedef)
-  - [ContainerTypeDef](#containertypedef)
-  - [CreateCapacityProviderRequestRequestTypeDef](#createcapacityproviderrequestrequesttypedef)
-  - [CreateCapacityProviderResponseTypeDef](#createcapacityproviderresponsetypedef)
-  - [CreateClusterRequestRequestTypeDef](#createclusterrequestrequesttypedef)
-  - [CreateClusterResponseTypeDef](#createclusterresponsetypedef)
-  - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
-  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
-  - [CreateTaskSetRequestRequestTypeDef](#createtasksetrequestrequesttypedef)
-  - [CreateTaskSetResponseTypeDef](#createtasksetresponsetypedef)
-  - [DeleteAccountSettingRequestRequestTypeDef](#deleteaccountsettingrequestrequesttypedef)
-  - [DeleteAccountSettingResponseTypeDef](#deleteaccountsettingresponsetypedef)
-  - [DeleteAttributesRequestRequestTypeDef](#deleteattributesrequestrequesttypedef)
-  - [DeleteAttributesResponseTypeDef](#deleteattributesresponsetypedef)
-  - [DeleteCapacityProviderRequestRequestTypeDef](#deletecapacityproviderrequestrequesttypedef)
-  - [DeleteCapacityProviderResponseTypeDef](#deletecapacityproviderresponsetypedef)
-  - [DeleteClusterRequestRequestTypeDef](#deleteclusterrequestrequesttypedef)
-  - [DeleteClusterResponseTypeDef](#deleteclusterresponsetypedef)
-  - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
-  - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
-  - [DeleteTaskSetRequestRequestTypeDef](#deletetasksetrequestrequesttypedef)
-  - [DeleteTaskSetResponseTypeDef](#deletetasksetresponsetypedef)
-  - [DeploymentCircuitBreakerTypeDef](#deploymentcircuitbreakertypedef)
-  - [DeploymentConfigurationTypeDef](#deploymentconfigurationtypedef)
-  - [DeploymentControllerTypeDef](#deploymentcontrollertypedef)
-  - [DeploymentTypeDef](#deploymenttypedef)
-  - [DeregisterContainerInstanceRequestRequestTypeDef](#deregistercontainerinstancerequestrequesttypedef)
-  - [DeregisterContainerInstanceResponseTypeDef](#deregistercontainerinstanceresponsetypedef)
-  - [DeregisterTaskDefinitionRequestRequestTypeDef](#deregistertaskdefinitionrequestrequesttypedef)
-  - [DeregisterTaskDefinitionResponseTypeDef](#deregistertaskdefinitionresponsetypedef)
-  - [DescribeCapacityProvidersRequestRequestTypeDef](#describecapacityprovidersrequestrequesttypedef)
-  - [DescribeCapacityProvidersResponseTypeDef](#describecapacityprovidersresponsetypedef)
-  - [DescribeClustersRequestRequestTypeDef](#describeclustersrequestrequesttypedef)
-  - [DescribeClustersResponseTypeDef](#describeclustersresponsetypedef)
-  - [DescribeContainerInstancesRequestRequestTypeDef](#describecontainerinstancesrequestrequesttypedef)
-  - [DescribeContainerInstancesResponseTypeDef](#describecontainerinstancesresponsetypedef)
-  - [DescribeServicesRequestRequestTypeDef](#describeservicesrequestrequesttypedef)
-  - [DescribeServicesResponseTypeDef](#describeservicesresponsetypedef)
-  - [DescribeTaskDefinitionRequestRequestTypeDef](#describetaskdefinitionrequestrequesttypedef)
-  - [DescribeTaskDefinitionResponseTypeDef](#describetaskdefinitionresponsetypedef)
-  - [DescribeTaskSetsRequestRequestTypeDef](#describetasksetsrequestrequesttypedef)
-  - [DescribeTaskSetsResponseTypeDef](#describetasksetsresponsetypedef)
-  - [DescribeTasksRequestRequestTypeDef](#describetasksrequestrequesttypedef)
-  - [DescribeTasksResponseTypeDef](#describetasksresponsetypedef)
-  - [DeviceTypeDef](#devicetypedef)
-  - [DiscoverPollEndpointRequestRequestTypeDef](#discoverpollendpointrequestrequesttypedef)
-  - [DiscoverPollEndpointResponseTypeDef](#discoverpollendpointresponsetypedef)
-  - [DockerVolumeConfigurationTypeDef](#dockervolumeconfigurationtypedef)
-  - [EFSAuthorizationConfigTypeDef](#efsauthorizationconfigtypedef)
-  - [EFSVolumeConfigurationTypeDef](#efsvolumeconfigurationtypedef)
-  - [EnvironmentFileTypeDef](#environmentfiletypedef)
-  - [EphemeralStorageTypeDef](#ephemeralstoragetypedef)
-  - [ExecuteCommandConfigurationTypeDef](#executecommandconfigurationtypedef)
-  - [ExecuteCommandLogConfigurationTypeDef](#executecommandlogconfigurationtypedef)
-  - [ExecuteCommandRequestRequestTypeDef](#executecommandrequestrequesttypedef)
-  - [ExecuteCommandResponseTypeDef](#executecommandresponsetypedef)
-  - [FSxWindowsFileServerAuthorizationConfigTypeDef](#fsxwindowsfileserverauthorizationconfigtypedef)
-  - [FSxWindowsFileServerVolumeConfigurationTypeDef](#fsxwindowsfileservervolumeconfigurationtypedef)
-  - [FailureTypeDef](#failuretypedef)
-  - [FirelensConfigurationTypeDef](#firelensconfigurationtypedef)
-  - [HealthCheckTypeDef](#healthchecktypedef)
-  - [HostEntryTypeDef](#hostentrytypedef)
-  - [HostVolumePropertiesTypeDef](#hostvolumepropertiestypedef)
-  - [InferenceAcceleratorOverrideTypeDef](#inferenceacceleratoroverridetypedef)
-  - [InferenceAcceleratorTypeDef](#inferenceacceleratortypedef)
-  - [InstanceHealthCheckResultTypeDef](#instancehealthcheckresulttypedef)
-  - [KernelCapabilitiesTypeDef](#kernelcapabilitiestypedef)
-  - [KeyValuePairTypeDef](#keyvaluepairtypedef)
-  - [LinuxParametersTypeDef](#linuxparameterstypedef)
-  - [ListAccountSettingsRequestRequestTypeDef](#listaccountsettingsrequestrequesttypedef)
-  - [ListAccountSettingsResponseTypeDef](#listaccountsettingsresponsetypedef)
-  - [ListAttributesRequestRequestTypeDef](#listattributesrequestrequesttypedef)
-  - [ListAttributesResponseTypeDef](#listattributesresponsetypedef)
-  - [ListClustersRequestRequestTypeDef](#listclustersrequestrequesttypedef)
-  - [ListClustersResponseTypeDef](#listclustersresponsetypedef)
-  - [ListContainerInstancesRequestRequestTypeDef](#listcontainerinstancesrequestrequesttypedef)
-  - [ListContainerInstancesResponseTypeDef](#listcontainerinstancesresponsetypedef)
-  - [ListServicesRequestRequestTypeDef](#listservicesrequestrequesttypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTaskDefinitionFamiliesRequestRequestTypeDef](#listtaskdefinitionfamiliesrequestrequesttypedef)
-  - [ListTaskDefinitionFamiliesResponseTypeDef](#listtaskdefinitionfamiliesresponsetypedef)
-  - [ListTaskDefinitionsRequestRequestTypeDef](#listtaskdefinitionsrequestrequesttypedef)
-  - [ListTaskDefinitionsResponseTypeDef](#listtaskdefinitionsresponsetypedef)
-  - [ListTasksRequestRequestTypeDef](#listtasksrequestrequesttypedef)
-  - [ListTasksResponseTypeDef](#listtasksresponsetypedef)
-  - [LoadBalancerTypeDef](#loadbalancertypedef)
-  - [LogConfigurationTypeDef](#logconfigurationtypedef)
-  - [ManagedAgentStateChangeTypeDef](#managedagentstatechangetypedef)
-  - [ManagedAgentTypeDef](#managedagenttypedef)
-  - [ManagedScalingTypeDef](#managedscalingtypedef)
-  - [MountPointTypeDef](#mountpointtypedef)
-  - [NetworkBindingTypeDef](#networkbindingtypedef)
-  - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
-  - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlacementConstraintTypeDef](#placementconstrainttypedef)
-  - [PlacementStrategyTypeDef](#placementstrategytypedef)
-  - [PlatformDeviceTypeDef](#platformdevicetypedef)
-  - [PortMappingTypeDef](#portmappingtypedef)
-  - [ProxyConfigurationTypeDef](#proxyconfigurationtypedef)
-  - [PutAccountSettingDefaultRequestRequestTypeDef](#putaccountsettingdefaultrequestrequesttypedef)
-  - [PutAccountSettingDefaultResponseTypeDef](#putaccountsettingdefaultresponsetypedef)
-  - [PutAccountSettingRequestRequestTypeDef](#putaccountsettingrequestrequesttypedef)
-  - [PutAccountSettingResponseTypeDef](#putaccountsettingresponsetypedef)
-  - [PutAttributesRequestRequestTypeDef](#putattributesrequestrequesttypedef)
-  - [PutAttributesResponseTypeDef](#putattributesresponsetypedef)
-  - [PutClusterCapacityProvidersRequestRequestTypeDef](#putclustercapacityprovidersrequestrequesttypedef)
-  - [PutClusterCapacityProvidersResponseTypeDef](#putclustercapacityprovidersresponsetypedef)
-  - [RegisterContainerInstanceRequestRequestTypeDef](#registercontainerinstancerequestrequesttypedef)
-  - [RegisterContainerInstanceResponseTypeDef](#registercontainerinstanceresponsetypedef)
-  - [RegisterTaskDefinitionRequestRequestTypeDef](#registertaskdefinitionrequestrequesttypedef)
-  - [RegisterTaskDefinitionResponseTypeDef](#registertaskdefinitionresponsetypedef)
-  - [RepositoryCredentialsTypeDef](#repositorycredentialstypedef)
-  - [ResourceRequirementTypeDef](#resourcerequirementtypedef)
-  - [ResourceTypeDef](#resourcetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RunTaskRequestRequestTypeDef](#runtaskrequestrequesttypedef)
-  - [RunTaskResponseTypeDef](#runtaskresponsetypedef)
-  - [RuntimePlatformTypeDef](#runtimeplatformtypedef)
-  - [ScaleTypeDef](#scaletypedef)
-  - [SecretTypeDef](#secrettypedef)
-  - [ServiceEventTypeDef](#serviceeventtypedef)
-  - [ServiceRegistryTypeDef](#serviceregistrytypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [SessionTypeDef](#sessiontypedef)
-  - [SettingTypeDef](#settingtypedef)
-  - [StartTaskRequestRequestTypeDef](#starttaskrequestrequesttypedef)
-  - [StartTaskResponseTypeDef](#starttaskresponsetypedef)
-  - [StopTaskRequestRequestTypeDef](#stoptaskrequestrequesttypedef)
-  - [StopTaskResponseTypeDef](#stoptaskresponsetypedef)
-  - [SubmitAttachmentStateChangesRequestRequestTypeDef](#submitattachmentstatechangesrequestrequesttypedef)
-  - [SubmitAttachmentStateChangesResponseTypeDef](#submitattachmentstatechangesresponsetypedef)
-  - [SubmitContainerStateChangeRequestRequestTypeDef](#submitcontainerstatechangerequestrequesttypedef)
-  - [SubmitContainerStateChangeResponseTypeDef](#submitcontainerstatechangeresponsetypedef)
-  - [SubmitTaskStateChangeRequestRequestTypeDef](#submittaskstatechangerequestrequesttypedef)
-  - [SubmitTaskStateChangeResponseTypeDef](#submittaskstatechangeresponsetypedef)
-  - [SystemControlTypeDef](#systemcontroltypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TaskDefinitionPlacementConstraintTypeDef](#taskdefinitionplacementconstrainttypedef)
-  - [TaskDefinitionTypeDef](#taskdefinitiontypedef)
-  - [TaskOverrideTypeDef](#taskoverridetypedef)
-  - [TaskSetTypeDef](#tasksettypedef)
-  - [TaskTypeDef](#tasktypedef)
-  - [TmpfsTypeDef](#tmpfstypedef)
-  - [UlimitTypeDef](#ulimittypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateCapacityProviderRequestRequestTypeDef](#updatecapacityproviderrequestrequesttypedef)
-  - [UpdateCapacityProviderResponseTypeDef](#updatecapacityproviderresponsetypedef)
-  - [UpdateClusterRequestRequestTypeDef](#updateclusterrequestrequesttypedef)
-  - [UpdateClusterResponseTypeDef](#updateclusterresponsetypedef)
-  - [UpdateClusterSettingsRequestRequestTypeDef](#updateclustersettingsrequestrequesttypedef)
-  - [UpdateClusterSettingsResponseTypeDef](#updateclustersettingsresponsetypedef)
-  - [UpdateContainerAgentRequestRequestTypeDef](#updatecontaineragentrequestrequesttypedef)
-  - [UpdateContainerAgentResponseTypeDef](#updatecontaineragentresponsetypedef)
-  - [UpdateContainerInstancesStateRequestRequestTypeDef](#updatecontainerinstancesstaterequestrequesttypedef)
-  - [UpdateContainerInstancesStateResponseTypeDef](#updatecontainerinstancesstateresponsetypedef)
-  - [UpdateServicePrimaryTaskSetRequestRequestTypeDef](#updateserviceprimarytasksetrequestrequesttypedef)
-  - [UpdateServicePrimaryTaskSetResponseTypeDef](#updateserviceprimarytasksetresponsetypedef)
-  - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
-  - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
-  - [UpdateTaskSetRequestRequestTypeDef](#updatetasksetrequestrequesttypedef)
-  - [UpdateTaskSetResponseTypeDef](#updatetasksetresponsetypedef)
-  - [VersionInfoTypeDef](#versioninfotypedef)
-  - [VolumeFromTypeDef](#volumefromtypedef)
-  - [VolumeTypeDef](#volumetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="attachmentstatechangetypedef"></a>
+    Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+    type annotations stubs module [mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ## AttachmentStateChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef
+
+def get_value() -> AttachmentStateChangeTypeDef:
+    return {
+        "attachmentArn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
-
-- `attachmentArn`: `str`
-- `status`: `str`
-
-<a id="attachmenttypedef"></a>
+```python title="Definition"
+class AttachmentStateChangeTypeDef(TypedDict):
+    attachmentArn: str,
+    status: str,
+```
 
 ## AttachmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AttachmentTypeDef
+
+def get_value() -> AttachmentTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachmentTypeDef(TypedDict):
+    id: NotRequired[str],
+    type: NotRequired[str],
+    status: NotRequired[str],
+    details: NotRequired[List[KeyValuePairTypeDef]],  # (1)
+```
 
-- `id`: `str`
-- `type`: `str`
-- `status`: `str`
-- `details`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-
-<a id="attributetypedef"></a>
-
+1. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
 ## AttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AttributeTypeDef
+
+def get_value() -> AttributeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AttributeTypeDef(TypedDict):
+    name: str,
+    value: NotRequired[str],
+    targetType: NotRequired[TargetTypeType],  # (1)
+    targetId: NotRequired[str],
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `value`: `str`
-- `targetType`: `Literal['container-instance']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-- `targetId`: `str`
-
-<a id="autoscalinggroupprovidertypedef"></a>
-
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
 ## AutoScalingGroupProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AutoScalingGroupProviderTypeDef
+
+def get_value() -> AutoScalingGroupProviderTypeDef:
+    return {
+        "autoScalingGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoScalingGroupProviderTypeDef(TypedDict):
+    autoScalingGroupArn: str,
+    managedScaling: NotRequired[ManagedScalingTypeDef],  # (1)
+    managedTerminationProtection: NotRequired[ManagedTerminationProtectionType],  # (2)
+```
 
-- `autoScalingGroupArn`: `str`
-
-Optional fields:
-
-- `managedScaling`:
-  [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
-- `managedTerminationProtection`:
-  [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
-
-<a id="autoscalinggroupproviderupdatetypedef"></a>
-
+1. See [:material-code-braces: ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef) 
+2. See [:material-code-brackets: ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype) 
 ## AutoScalingGroupProviderUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AutoScalingGroupProviderUpdateTypeDef
+
+def get_value() -> AutoScalingGroupProviderUpdateTypeDef:
+    return {
+        "managedScaling": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingGroupProviderUpdateTypeDef(TypedDict):
+    managedScaling: NotRequired[ManagedScalingTypeDef],  # (1)
+    managedTerminationProtection: NotRequired[ManagedTerminationProtectionType],  # (2)
+```
 
-- `managedScaling`:
-  [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
-- `managedTerminationProtection`:
-  [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
-
-<a id="awsvpcconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef) 
+2. See [:material-code-brackets: ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype) 
 ## AwsVpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import AwsVpcConfigurationTypeDef
+
+def get_value() -> AwsVpcConfigurationTypeDef:
+    return {
+        "subnets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AwsVpcConfigurationTypeDef(TypedDict):
+    subnets: Sequence[str],
+    securityGroups: NotRequired[Sequence[str]],
+    assignPublicIp: NotRequired[AssignPublicIpType],  # (1)
+```
 
-- `subnets`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `securityGroups`: `Sequence`\[`str`\]
-- `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
-
-<a id="capacityproviderstrategyitemtypedef"></a>
-
+1. See [:material-code-brackets: AssignPublicIpType](./literals.md#assignpubliciptype) 
 ## CapacityProviderStrategyItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CapacityProviderStrategyItemTypeDef
+
+def get_value() -> CapacityProviderStrategyItemTypeDef:
+    return {
+        "capacityProvider": ...,
+    }
 ```
 
-Required fields:
-
-- `capacityProvider`: `str`
-
-Optional fields:
-
-- `weight`: `int`
-- `base`: `int`
-
-<a id="capacityprovidertypedef"></a>
+```python title="Definition"
+class CapacityProviderStrategyItemTypeDef(TypedDict):
+    capacityProvider: str,
+    weight: NotRequired[int],
+    base: NotRequired[int],
+```
 
 ## CapacityProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CapacityProviderTypeDef
+
+def get_value() -> CapacityProviderTypeDef:
+    return {
+        "capacityProviderArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CapacityProviderTypeDef(TypedDict):
+    capacityProviderArn: NotRequired[str],
+    name: NotRequired[str],
+    status: NotRequired[CapacityProviderStatusType],  # (1)
+    autoScalingGroupProvider: NotRequired[AutoScalingGroupProviderTypeDef],  # (2)
+    updateStatus: NotRequired[CapacityProviderUpdateStatusType],  # (3)
+    updateStatusReason: NotRequired[str],
+    tags: NotRequired[List[TagTypeDef]],  # (4)
+```
 
-- `capacityProviderArn`: `str`
-- `name`: `str`
-- `status`:
-  [CapacityProviderStatusType](./literals.md#capacityproviderstatustype)
-- `autoScalingGroupProvider`:
-  [AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef)
-- `updateStatus`:
-  [CapacityProviderUpdateStatusType](./literals.md#capacityproviderupdatestatustype)
-- `updateStatusReason`: `str`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="clusterconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: CapacityProviderStatusType](./literals.md#capacityproviderstatustype) 
+2. See [:material-code-braces: AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef) 
+3. See [:material-code-brackets: CapacityProviderUpdateStatusType](./literals.md#capacityproviderupdatestatustype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ClusterConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ClusterConfigurationTypeDef
+
+def get_value() -> ClusterConfigurationTypeDef:
+    return {
+        "executeCommandConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterConfigurationTypeDef(TypedDict):
+    executeCommandConfiguration: NotRequired[ExecuteCommandConfigurationTypeDef],  # (1)
+```
 
-- `executeCommandConfiguration`:
-  [ExecuteCommandConfigurationTypeDef](./type_defs.md#executecommandconfigurationtypedef)
-
-<a id="clustersettingtypedef"></a>
-
+1. See [:material-code-braces: ExecuteCommandConfigurationTypeDef](./type_defs.md#executecommandconfigurationtypedef) 
 ## ClusterSettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ClusterSettingTypeDef
+
+def get_value() -> ClusterSettingTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterSettingTypeDef(TypedDict):
+    name: NotRequired[ClusterSettingNameType],  # (1)
+    value: NotRequired[str],
+```
 
-- `name`: `Literal['containerInsights']` (see
-  [ClusterSettingNameType](./literals.md#clustersettingnametype))
-- `value`: `str`
-
-<a id="clustertypedef"></a>
-
+1. See [:material-code-brackets: ClusterSettingNameType](./literals.md#clustersettingnametype) 
 ## ClusterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ClusterTypeDef
+
+def get_value() -> ClusterTypeDef:
+    return {
+        "clusterArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClusterTypeDef(TypedDict):
+    clusterArn: NotRequired[str],
+    clusterName: NotRequired[str],
+    configuration: NotRequired[ClusterConfigurationTypeDef],  # (1)
+    status: NotRequired[str],
+    registeredContainerInstancesCount: NotRequired[int],
+    runningTasksCount: NotRequired[int],
+    pendingTasksCount: NotRequired[int],
+    activeServicesCount: NotRequired[int],
+    statistics: NotRequired[List[KeyValuePairTypeDef]],  # (2)
+    tags: NotRequired[List[TagTypeDef]],  # (3)
+    settings: NotRequired[List[ClusterSettingTypeDef]],  # (4)
+    capacityProviders: NotRequired[List[str]],
+    defaultCapacityProviderStrategy: NotRequired[List[CapacityProviderStrategyItemTypeDef]],  # (5)
+    attachments: NotRequired[List[AttachmentTypeDef]],  # (6)
+    attachmentsStatus: NotRequired[str],
+```
 
-- `clusterArn`: `str`
-- `clusterName`: `str`
-- `configuration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-- `status`: `str`
-- `registeredContainerInstancesCount`: `int`
-- `runningTasksCount`: `int`
-- `pendingTasksCount`: `int`
-- `activeServicesCount`: `int`
-- `statistics`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `settings`:
-  `List`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-- `capacityProviders`: `List`\[`str`\]
-- `defaultCapacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `attachments`:
-  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
-- `attachmentsStatus`: `str`
-
-<a id="containerdefinitiontypedef"></a>
-
+1. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
+2. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+5. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+6. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
 ## ContainerDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerDefinitionTypeDef
+
+def get_value() -> ContainerDefinitionTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerDefinitionTypeDef(TypedDict):
+    name: NotRequired[str],
+    image: NotRequired[str],
+    repositoryCredentials: NotRequired[RepositoryCredentialsTypeDef],  # (1)
+    cpu: NotRequired[int],
+    memory: NotRequired[int],
+    memoryReservation: NotRequired[int],
+    links: NotRequired[List[str]],
+    portMappings: NotRequired[List[PortMappingTypeDef]],  # (2)
+    essential: NotRequired[bool],
+    entryPoint: NotRequired[List[str]],
+    command: NotRequired[List[str]],
+    environment: NotRequired[List[KeyValuePairTypeDef]],  # (3)
+    environmentFiles: NotRequired[List[EnvironmentFileTypeDef]],  # (4)
+    mountPoints: NotRequired[List[MountPointTypeDef]],  # (5)
+    volumesFrom: NotRequired[List[VolumeFromTypeDef]],  # (6)
+    linuxParameters: NotRequired[LinuxParametersTypeDef],  # (7)
+    secrets: NotRequired[List[SecretTypeDef]],  # (8)
+    dependsOn: NotRequired[List[ContainerDependencyTypeDef]],  # (9)
+    startTimeout: NotRequired[int],
+    stopTimeout: NotRequired[int],
+    hostname: NotRequired[str],
+    user: NotRequired[str],
+    workingDirectory: NotRequired[str],
+    disableNetworking: NotRequired[bool],
+    privileged: NotRequired[bool],
+    readonlyRootFilesystem: NotRequired[bool],
+    dnsServers: NotRequired[List[str]],
+    dnsSearchDomains: NotRequired[List[str]],
+    extraHosts: NotRequired[List[HostEntryTypeDef]],  # (10)
+    dockerSecurityOptions: NotRequired[List[str]],
+    interactive: NotRequired[bool],
+    pseudoTerminal: NotRequired[bool],
+    dockerLabels: NotRequired[Dict[str, str]],
+    ulimits: NotRequired[List[UlimitTypeDef]],  # (11)
+    logConfiguration: NotRequired[LogConfigurationTypeDef],  # (12)
+    healthCheck: NotRequired[HealthCheckTypeDef],  # (13)
+    systemControls: NotRequired[List[SystemControlTypeDef]],  # (14)
+    resourceRequirements: NotRequired[List[ResourceRequirementTypeDef]],  # (15)
+    firelensConfiguration: NotRequired[FirelensConfigurationTypeDef],  # (16)
+```
 
-- `name`: `str`
-- `image`: `str`
-- `repositoryCredentials`:
-  [RepositoryCredentialsTypeDef](./type_defs.md#repositorycredentialstypedef)
-- `cpu`: `int`
-- `memory`: `int`
-- `memoryReservation`: `int`
-- `links`: `List`\[`str`\]
-- `portMappings`:
-  `List`\[[PortMappingTypeDef](./type_defs.md#portmappingtypedef)\]
-- `essential`: `bool`
-- `entryPoint`: `List`\[`str`\]
-- `command`: `List`\[`str`\]
-- `environment`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `environmentFiles`:
-  `List`\[[EnvironmentFileTypeDef](./type_defs.md#environmentfiletypedef)\]
-- `mountPoints`:
-  `List`\[[MountPointTypeDef](./type_defs.md#mountpointtypedef)\]
-- `volumesFrom`:
-  `List`\[[VolumeFromTypeDef](./type_defs.md#volumefromtypedef)\]
-- `linuxParameters`:
-  [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
-- `secrets`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
-- `dependsOn`:
-  `List`\[[ContainerDependencyTypeDef](./type_defs.md#containerdependencytypedef)\]
-- `startTimeout`: `int`
-- `stopTimeout`: `int`
-- `hostname`: `str`
-- `user`: `str`
-- `workingDirectory`: `str`
-- `disableNetworking`: `bool`
-- `privileged`: `bool`
-- `readonlyRootFilesystem`: `bool`
-- `dnsServers`: `List`\[`str`\]
-- `dnsSearchDomains`: `List`\[`str`\]
-- `extraHosts`: `List`\[[HostEntryTypeDef](./type_defs.md#hostentrytypedef)\]
-- `dockerSecurityOptions`: `List`\[`str`\]
-- `interactive`: `bool`
-- `pseudoTerminal`: `bool`
-- `dockerLabels`: `Dict`\[`str`, `str`\]
-- `ulimits`: `List`\[[UlimitTypeDef](./type_defs.md#ulimittypedef)\]
-- `logConfiguration`:
-  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
-- `healthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
-- `systemControls`:
-  `List`\[[SystemControlTypeDef](./type_defs.md#systemcontroltypedef)\]
-- `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
-- `firelensConfiguration`:
-  [FirelensConfigurationTypeDef](./type_defs.md#firelensconfigurationtypedef)
-
-<a id="containerdependencytypedef"></a>
-
+1. See [:material-code-braces: RepositoryCredentialsTypeDef](./type_defs.md#repositorycredentialstypedef) 
+2. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
+3. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+4. See [:material-code-braces: EnvironmentFileTypeDef](./type_defs.md#environmentfiletypedef) 
+5. See [:material-code-braces: MountPointTypeDef](./type_defs.md#mountpointtypedef) 
+6. See [:material-code-braces: VolumeFromTypeDef](./type_defs.md#volumefromtypedef) 
+7. See [:material-code-braces: LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef) 
+8. See [:material-code-braces: SecretTypeDef](./type_defs.md#secrettypedef) 
+9. See [:material-code-braces: ContainerDependencyTypeDef](./type_defs.md#containerdependencytypedef) 
+10. See [:material-code-braces: HostEntryTypeDef](./type_defs.md#hostentrytypedef) 
+11. See [:material-code-braces: UlimitTypeDef](./type_defs.md#ulimittypedef) 
+12. See [:material-code-braces: LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef) 
+13. See [:material-code-braces: HealthCheckTypeDef](./type_defs.md#healthchecktypedef) 
+14. See [:material-code-braces: SystemControlTypeDef](./type_defs.md#systemcontroltypedef) 
+15. See [:material-code-braces: ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef) 
+16. See [:material-code-braces: FirelensConfigurationTypeDef](./type_defs.md#firelensconfigurationtypedef) 
 ## ContainerDependencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerDependencyTypeDef
+
+def get_value() -> ContainerDependencyTypeDef:
+    return {
+        "containerName": ...,
+        "condition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContainerDependencyTypeDef(TypedDict):
+    containerName: str,
+    condition: ContainerConditionType,  # (1)
+```
 
-- `containerName`: `str`
-- `condition`: [ContainerConditionType](./literals.md#containerconditiontype)
-
-<a id="containerinstancehealthstatustypedef"></a>
-
+1. See [:material-code-brackets: ContainerConditionType](./literals.md#containerconditiontype) 
 ## ContainerInstanceHealthStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerInstanceHealthStatusTypeDef
+
+def get_value() -> ContainerInstanceHealthStatusTypeDef:
+    return {
+        "overallStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerInstanceHealthStatusTypeDef(TypedDict):
+    overallStatus: NotRequired[InstanceHealthCheckStateType],  # (1)
+    details: NotRequired[List[InstanceHealthCheckResultTypeDef]],  # (2)
+```
 
-- `overallStatus`:
-  [InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype)
-- `details`:
-  `List`\[[InstanceHealthCheckResultTypeDef](./type_defs.md#instancehealthcheckresulttypedef)\]
-
-<a id="containerinstancetypedef"></a>
-
+1. See [:material-code-brackets: InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype) 
+2. See [:material-code-braces: InstanceHealthCheckResultTypeDef](./type_defs.md#instancehealthcheckresulttypedef) 
 ## ContainerInstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerInstanceTypeDef
+
+def get_value() -> ContainerInstanceTypeDef:
+    return {
+        "containerInstanceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerInstanceTypeDef(TypedDict):
+    containerInstanceArn: NotRequired[str],
+    ec2InstanceId: NotRequired[str],
+    capacityProviderName: NotRequired[str],
+    version: NotRequired[int],
+    versionInfo: NotRequired[VersionInfoTypeDef],  # (1)
+    remainingResources: NotRequired[List[ResourceTypeDef]],  # (2)
+    registeredResources: NotRequired[List[ResourceTypeDef]],  # (2)
+    status: NotRequired[str],
+    statusReason: NotRequired[str],
+    agentConnected: NotRequired[bool],
+    runningTasksCount: NotRequired[int],
+    pendingTasksCount: NotRequired[int],
+    agentUpdateStatus: NotRequired[AgentUpdateStatusType],  # (4)
+    attributes: NotRequired[List[AttributeTypeDef]],  # (5)
+    registeredAt: NotRequired[datetime],
+    attachments: NotRequired[List[AttachmentTypeDef]],  # (6)
+    tags: NotRequired[List[TagTypeDef]],  # (7)
+    healthStatus: NotRequired[ContainerInstanceHealthStatusTypeDef],  # (8)
+```
 
-- `containerInstanceArn`: `str`
-- `ec2InstanceId`: `str`
-- `capacityProviderName`: `str`
-- `version`: `int`
-- `versionInfo`: [VersionInfoTypeDef](./type_defs.md#versioninfotypedef)
-- `remainingResources`:
-  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `registeredResources`:
-  `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `status`: `str`
-- `statusReason`: `str`
-- `agentConnected`: `bool`
-- `runningTasksCount`: `int`
-- `pendingTasksCount`: `int`
-- `agentUpdateStatus`:
-  [AgentUpdateStatusType](./literals.md#agentupdatestatustype)
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `registeredAt`: `datetime`
-- `attachments`:
-  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `healthStatus`:
-  [ContainerInstanceHealthStatusTypeDef](./type_defs.md#containerinstancehealthstatustypedef)
-
-<a id="containeroverridetypedef"></a>
-
+1. See [:material-code-braces: VersionInfoTypeDef](./type_defs.md#versioninfotypedef) 
+2. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+3. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+4. See [:material-code-brackets: AgentUpdateStatusType](./literals.md#agentupdatestatustype) 
+5. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+6. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-braces: ContainerInstanceHealthStatusTypeDef](./type_defs.md#containerinstancehealthstatustypedef) 
 ## ContainerOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerOverrideTypeDef
+
+def get_value() -> ContainerOverrideTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerOverrideTypeDef(TypedDict):
+    name: NotRequired[str],
+    command: NotRequired[List[str]],
+    environment: NotRequired[List[KeyValuePairTypeDef]],  # (1)
+    environmentFiles: NotRequired[List[EnvironmentFileTypeDef]],  # (2)
+    cpu: NotRequired[int],
+    memory: NotRequired[int],
+    memoryReservation: NotRequired[int],
+    resourceRequirements: NotRequired[List[ResourceRequirementTypeDef]],  # (3)
+```
 
-- `name`: `str`
-- `command`: `List`\[`str`\]
-- `environment`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-- `environmentFiles`:
-  `List`\[[EnvironmentFileTypeDef](./type_defs.md#environmentfiletypedef)\]
-- `cpu`: `int`
-- `memory`: `int`
-- `memoryReservation`: `int`
-- `resourceRequirements`:
-  `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
-
-<a id="containerstatechangetypedef"></a>
-
+1. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
+2. See [:material-code-braces: EnvironmentFileTypeDef](./type_defs.md#environmentfiletypedef) 
+3. See [:material-code-braces: ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef) 
 ## ContainerStateChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerStateChangeTypeDef
+
+def get_value() -> ContainerStateChangeTypeDef:
+    return {
+        "containerName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerStateChangeTypeDef(TypedDict):
+    containerName: NotRequired[str],
+    imageDigest: NotRequired[str],
+    runtimeId: NotRequired[str],
+    exitCode: NotRequired[int],
+    networkBindings: NotRequired[Sequence[NetworkBindingTypeDef]],  # (1)
+    reason: NotRequired[str],
+    status: NotRequired[str],
+```
 
-- `containerName`: `str`
-- `imageDigest`: `str`
-- `runtimeId`: `str`
-- `exitCode`: `int`
-- `networkBindings`:
-  `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
-- `reason`: `str`
-- `status`: `str`
-
-<a id="containertypedef"></a>
-
+1. See [:material-code-braces: NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef) 
 ## ContainerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ContainerTypeDef
+
+def get_value() -> ContainerTypeDef:
+    return {
+        "containerArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContainerTypeDef(TypedDict):
+    containerArn: NotRequired[str],
+    taskArn: NotRequired[str],
+    name: NotRequired[str],
+    image: NotRequired[str],
+    imageDigest: NotRequired[str],
+    runtimeId: NotRequired[str],
+    lastStatus: NotRequired[str],
+    exitCode: NotRequired[int],
+    reason: NotRequired[str],
+    networkBindings: NotRequired[List[NetworkBindingTypeDef]],  # (1)
+    networkInterfaces: NotRequired[List[NetworkInterfaceTypeDef]],  # (2)
+    healthStatus: NotRequired[HealthStatusType],  # (3)
+    managedAgents: NotRequired[List[ManagedAgentTypeDef]],  # (4)
+    cpu: NotRequired[str],
+    memory: NotRequired[str],
+    memoryReservation: NotRequired[str],
+    gpuIds: NotRequired[List[str]],
+```
 
-- `containerArn`: `str`
-- `taskArn`: `str`
-- `name`: `str`
-- `image`: `str`
-- `imageDigest`: `str`
-- `runtimeId`: `str`
-- `lastStatus`: `str`
-- `exitCode`: `int`
-- `reason`: `str`
-- `networkBindings`:
-  `List`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
-- `networkInterfaces`:
-  `List`\[[NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)\]
-- `healthStatus`: [HealthStatusType](./literals.md#healthstatustype)
-- `managedAgents`:
-  `List`\[[ManagedAgentTypeDef](./type_defs.md#managedagenttypedef)\]
-- `cpu`: `str`
-- `memory`: `str`
-- `memoryReservation`: `str`
-- `gpuIds`: `List`\[`str`\]
-
-<a id="createcapacityproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef) 
+2. See [:material-code-braces: NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef) 
+3. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
+4. See [:material-code-braces: ManagedAgentTypeDef](./type_defs.md#managedagenttypedef) 
 ## CreateCapacityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateCapacityProviderRequestRequestTypeDef
+
+def get_value() -> CreateCapacityProviderRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "autoScalingGroupProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCapacityProviderRequestRequestTypeDef(TypedDict):
+    name: str,
+    autoScalingGroupProvider: AutoScalingGroupProviderTypeDef,  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `name`: `str`
-- `autoScalingGroupProvider`:
-  [AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef)
-
-Optional fields:
-
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createcapacityproviderresponsetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupProviderTypeDef](./type_defs.md#autoscalinggroupprovidertypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateCapacityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateCapacityProviderResponseTypeDef
+
+def get_value() -> CreateCapacityProviderResponseTypeDef:
+    return {
+        "capacityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCapacityProviderResponseTypeDef(TypedDict):
+    capacityProvider: CapacityProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `capacityProvider`:
-  [CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateClusterRequestRequestTypeDef
+
+def get_value() -> CreateClusterRequestRequestTypeDef:
+    return {
+        "clusterName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateClusterRequestRequestTypeDef(TypedDict):
+    clusterName: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    settings: NotRequired[Sequence[ClusterSettingTypeDef]],  # (2)
+    configuration: NotRequired[ClusterConfigurationTypeDef],  # (3)
+    capacityProviders: NotRequired[Sequence[str]],
+    defaultCapacityProviderStrategy: NotRequired[Sequence[CapacityProviderStrategyItemTypeDef]],  # (4)
+```
 
-- `clusterName`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-- `configuration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-- `capacityProviders`: `Sequence`\[`str`\]
-- `defaultCapacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-
-<a id="createclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+3. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
+4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
 ## CreateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateClusterResponseTypeDef
+
+def get_value() -> CreateClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateServiceRequestRequestTypeDef
+
+def get_value() -> CreateServiceRequestRequestTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceRequestRequestTypeDef(TypedDict):
+    serviceName: str,
+    cluster: NotRequired[str],
+    taskDefinition: NotRequired[str],
+    loadBalancers: NotRequired[Sequence[LoadBalancerTypeDef]],  # (1)
+    serviceRegistries: NotRequired[Sequence[ServiceRegistryTypeDef]],  # (2)
+    desiredCount: NotRequired[int],
+    clientToken: NotRequired[str],
+    launchType: NotRequired[LaunchTypeType],  # (3)
+    capacityProviderStrategy: NotRequired[Sequence[CapacityProviderStrategyItemTypeDef]],  # (4)
+    platformVersion: NotRequired[str],
+    role: NotRequired[str],
+    deploymentConfiguration: NotRequired[DeploymentConfigurationTypeDef],  # (5)
+    placementConstraints: NotRequired[Sequence[PlacementConstraintTypeDef]],  # (6)
+    placementStrategy: NotRequired[Sequence[PlacementStrategyTypeDef]],  # (7)
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (8)
+    healthCheckGracePeriodSeconds: NotRequired[int],
+    schedulingStrategy: NotRequired[SchedulingStrategyType],  # (9)
+    deploymentController: NotRequired[DeploymentControllerTypeDef],  # (10)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (11)
+    enableECSManagedTags: NotRequired[bool],
+    propagateTags: NotRequired[PropagateTagsType],  # (12)
+    enableExecuteCommand: NotRequired[bool],
+```
 
-- `serviceName`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `taskDefinition`: `str`
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `desiredCount`: `int`
-- `clientToken`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `role`: `str`
-- `deploymentConfiguration`:
-  [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `healthCheckGracePeriodSeconds`: `int`
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
-- `deploymentController`:
-  [DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `enableECSManagedTags`: `bool`
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `enableExecuteCommand`: `bool`
-
-<a id="createserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+2. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+3. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+5. See [:material-code-braces: DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef) 
+6. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+7. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+8. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+9. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+10. See [:material-code-braces: DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef) 
+11. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+12. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
 ## CreateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateServiceResponseTypeDef
+
+def get_value() -> CreateServiceResponseTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceResponseTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createtasksetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateTaskSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateTaskSetRequestRequestTypeDef
+
+def get_value() -> CreateTaskSetRequestRequestTypeDef:
+    return {
+        "service": ...,
+        "cluster": ...,
+        "taskDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTaskSetRequestRequestTypeDef(TypedDict):
+    service: str,
+    cluster: str,
+    taskDefinition: str,
+    externalId: NotRequired[str],
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (1)
+    loadBalancers: NotRequired[Sequence[LoadBalancerTypeDef]],  # (2)
+    serviceRegistries: NotRequired[Sequence[ServiceRegistryTypeDef]],  # (3)
+    launchType: NotRequired[LaunchTypeType],  # (4)
+    capacityProviderStrategy: NotRequired[Sequence[CapacityProviderStrategyItemTypeDef]],  # (5)
+    platformVersion: NotRequired[str],
+    scale: NotRequired[ScaleTypeDef],  # (6)
+    clientToken: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (7)
+```
 
-- `service`: `str`
-- `cluster`: `str`
-- `taskDefinition`: `str`
-
-Optional fields:
-
-- `externalId`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
-- `clientToken`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createtasksetresponsetypedef"></a>
-
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+3. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+4. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+5. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+6. See [:material-code-braces: ScaleTypeDef](./type_defs.md#scaletypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateTaskSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import CreateTaskSetResponseTypeDef
+
+def get_value() -> CreateTaskSetResponseTypeDef:
+    return {
+        "taskSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTaskSetResponseTypeDef(TypedDict):
+    taskSet: TaskSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteaccountsettingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAccountSettingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteAccountSettingRequestRequestTypeDef
+
+def get_value() -> DeleteAccountSettingRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAccountSettingRequestRequestTypeDef(TypedDict):
+    name: SettingNameType,  # (1)
+    principalArn: NotRequired[str],
+```
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-
-Optional fields:
-
-- `principalArn`: `str`
-
-<a id="deleteaccountsettingresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
 ## DeleteAccountSettingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteAccountSettingResponseTypeDef
+
+def get_value() -> DeleteAccountSettingResponseTypeDef:
+    return {
+        "setting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAccountSettingResponseTypeDef(TypedDict):
+    setting: SettingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteAttributesRequestRequestTypeDef
+
+def get_value() -> DeleteAttributesRequestRequestTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAttributesRequestRequestTypeDef(TypedDict):
+    attributes: Sequence[AttributeTypeDef],  # (1)
+    cluster: NotRequired[str],
+```
 
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-
-Optional fields:
-
-- `cluster`: `str`
-
-<a id="deleteattributesresponsetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 ## DeleteAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteAttributesResponseTypeDef
+
+def get_value() -> DeleteAttributesResponseTypeDef:
+    return {
+        "attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAttributesResponseTypeDef(TypedDict):
+    attributes: List[AttributeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletecapacityproviderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteCapacityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteCapacityProviderRequestRequestTypeDef
+
+def get_value() -> DeleteCapacityProviderRequestRequestTypeDef:
+    return {
+        "capacityProvider": ...,
+    }
 ```
 
-Required fields:
-
-- `capacityProvider`: `str`
-
-<a id="deletecapacityproviderresponsetypedef"></a>
+```python title="Definition"
+class DeleteCapacityProviderRequestRequestTypeDef(TypedDict):
+    capacityProvider: str,
+```
 
 ## DeleteCapacityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteCapacityProviderResponseTypeDef
+
+def get_value() -> DeleteCapacityProviderResponseTypeDef:
+    return {
+        "capacityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteCapacityProviderResponseTypeDef(TypedDict):
+    capacityProvider: CapacityProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `capacityProvider`:
-  [CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteClusterRequestRequestTypeDef
+
+def get_value() -> DeleteClusterRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Required fields:
-
-- `cluster`: `str`
-
-<a id="deleteclusterresponsetypedef"></a>
+```python title="Definition"
+class DeleteClusterRequestRequestTypeDef(TypedDict):
+    cluster: str,
+```
 
 ## DeleteClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteClusterResponseTypeDef
+
+def get_value() -> DeleteClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteServiceRequestRequestTypeDef
+
+def get_value() -> DeleteServiceRequestRequestTypeDef:
+    return {
+        "service": ...,
+    }
 ```
 
-Required fields:
-
-- `service`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `force`: `bool`
-
-<a id="deleteserviceresponsetypedef"></a>
+```python title="Definition"
+class DeleteServiceRequestRequestTypeDef(TypedDict):
+    service: str,
+    cluster: NotRequired[str],
+    force: NotRequired[bool],
+```
 
 ## DeleteServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteServiceResponseTypeDef
+
+def get_value() -> DeleteServiceResponseTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceResponseTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetasksetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTaskSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteTaskSetRequestRequestTypeDef
+
+def get_value() -> DeleteTaskSetRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "service": ...,
+        "taskSet": ...,
+    }
 ```
 
-Required fields:
-
-- `cluster`: `str`
-- `service`: `str`
-- `taskSet`: `str`
-
-Optional fields:
-
-- `force`: `bool`
-
-<a id="deletetasksetresponsetypedef"></a>
+```python title="Definition"
+class DeleteTaskSetRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    service: str,
+    taskSet: str,
+    force: NotRequired[bool],
+```
 
 ## DeleteTaskSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeleteTaskSetResponseTypeDef
+
+def get_value() -> DeleteTaskSetResponseTypeDef:
+    return {
+        "taskSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTaskSetResponseTypeDef(TypedDict):
+    taskSet: TaskSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deploymentcircuitbreakertypedef"></a>
-
+1. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeploymentCircuitBreakerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeploymentCircuitBreakerTypeDef
+
+def get_value() -> DeploymentCircuitBreakerTypeDef:
+    return {
+        "enable": ...,
+        "rollback": ...,
+    }
 ```
 
-Required fields:
-
-- `enable`: `bool`
-- `rollback`: `bool`
-
-<a id="deploymentconfigurationtypedef"></a>
+```python title="Definition"
+class DeploymentCircuitBreakerTypeDef(TypedDict):
+    enable: bool,
+    rollback: bool,
+```
 
 ## DeploymentConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeploymentConfigurationTypeDef
+
+def get_value() -> DeploymentConfigurationTypeDef:
+    return {
+        "deploymentCircuitBreaker": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentConfigurationTypeDef(TypedDict):
+    deploymentCircuitBreaker: NotRequired[DeploymentCircuitBreakerTypeDef],  # (1)
+    maximumPercent: NotRequired[int],
+    minimumHealthyPercent: NotRequired[int],
+```
 
-- `deploymentCircuitBreaker`:
-  [DeploymentCircuitBreakerTypeDef](./type_defs.md#deploymentcircuitbreakertypedef)
-- `maximumPercent`: `int`
-- `minimumHealthyPercent`: `int`
-
-<a id="deploymentcontrollertypedef"></a>
-
+1. See [:material-code-braces: DeploymentCircuitBreakerTypeDef](./type_defs.md#deploymentcircuitbreakertypedef) 
 ## DeploymentControllerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeploymentControllerTypeDef
+
+def get_value() -> DeploymentControllerTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeploymentControllerTypeDef(TypedDict):
+    type: DeploymentControllerTypeType,  # (1)
+```
 
-- `type`:
-  [DeploymentControllerTypeType](./literals.md#deploymentcontrollertypetype)
-
-<a id="deploymenttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentControllerTypeType](./literals.md#deploymentcontrollertypetype) 
 ## DeploymentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeploymentTypeDef
+
+def get_value() -> DeploymentTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentTypeDef(TypedDict):
+    id: NotRequired[str],
+    status: NotRequired[str],
+    taskDefinition: NotRequired[str],
+    desiredCount: NotRequired[int],
+    pendingCount: NotRequired[int],
+    runningCount: NotRequired[int],
+    failedTasks: NotRequired[int],
+    createdAt: NotRequired[datetime],
+    updatedAt: NotRequired[datetime],
+    capacityProviderStrategy: NotRequired[List[CapacityProviderStrategyItemTypeDef]],  # (1)
+    launchType: NotRequired[LaunchTypeType],  # (2)
+    platformVersion: NotRequired[str],
+    platformFamily: NotRequired[str],
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
+    rolloutState: NotRequired[DeploymentRolloutStateType],  # (4)
+    rolloutStateReason: NotRequired[str],
+```
 
-- `id`: `str`
-- `status`: `str`
-- `taskDefinition`: `str`
-- `desiredCount`: `int`
-- `pendingCount`: `int`
-- `runningCount`: `int`
-- `failedTasks`: `int`
-- `createdAt`: `datetime`
-- `updatedAt`: `datetime`
-- `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `platformVersion`: `str`
-- `platformFamily`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `rolloutState`:
-  [DeploymentRolloutStateType](./literals.md#deploymentrolloutstatetype)
-- `rolloutStateReason`: `str`
-
-<a id="deregistercontainerinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-brackets: DeploymentRolloutStateType](./literals.md#deploymentrolloutstatetype) 
 ## DeregisterContainerInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceRequestRequestTypeDef
+
+def get_value() -> DeregisterContainerInstanceRequestRequestTypeDef:
+    return {
+        "containerInstance": ...,
+    }
 ```
 
-Required fields:
-
-- `containerInstance`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `force`: `bool`
-
-<a id="deregistercontainerinstanceresponsetypedef"></a>
+```python title="Definition"
+class DeregisterContainerInstanceRequestRequestTypeDef(TypedDict):
+    containerInstance: str,
+    cluster: NotRequired[str],
+    force: NotRequired[bool],
+```
 
 ## DeregisterContainerInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeregisterContainerInstanceResponseTypeDef
+
+def get_value() -> DeregisterContainerInstanceResponseTypeDef:
+    return {
+        "containerInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterContainerInstanceResponseTypeDef(TypedDict):
+    containerInstance: ContainerInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `containerInstance`:
-  [ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deregistertaskdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeregisterTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> DeregisterTaskDefinitionRequestRequestTypeDef:
+    return {
+        "taskDefinition": ...,
+    }
 ```
 
-Required fields:
-
-- `taskDefinition`: `str`
-
-<a id="deregistertaskdefinitionresponsetypedef"></a>
+```python title="Definition"
+class DeregisterTaskDefinitionRequestRequestTypeDef(TypedDict):
+    taskDefinition: str,
+```
 
 ## DeregisterTaskDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionResponseTypeDef
+
+def get_value() -> DeregisterTaskDefinitionResponseTypeDef:
+    return {
+        "taskDefinition": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeregisterTaskDefinitionResponseTypeDef(TypedDict):
+    taskDefinition: TaskDefinitionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `taskDefinition`:
-  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecapacityprovidersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCapacityProvidersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersRequestRequestTypeDef
+
+def get_value() -> DescribeCapacityProvidersRequestRequestTypeDef:
+    return {
+        "capacityProviders": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeCapacityProvidersRequestRequestTypeDef(TypedDict):
+    capacityProviders: NotRequired[Sequence[str]],
+    include: NotRequired[Sequence[CapacityProviderFieldType]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `capacityProviders`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [CapacityProviderFieldType](./literals.md#capacityproviderfieldtype))\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="describecapacityprovidersresponsetypedef"></a>
-
+1. See [:material-code-brackets: CapacityProviderFieldType](./literals.md#capacityproviderfieldtype) 
 ## DescribeCapacityProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeCapacityProvidersResponseTypeDef
+
+def get_value() -> DescribeCapacityProvidersResponseTypeDef:
+    return {
+        "capacityProviders": ...,
+        "failures": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCapacityProvidersResponseTypeDef(TypedDict):
+    capacityProviders: List[CapacityProviderTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `capacityProviders`:
-  `List`\[[CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeclustersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeClustersRequestRequestTypeDef
+
+def get_value() -> DescribeClustersRequestRequestTypeDef:
+    return {
+        "clusters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeClustersRequestRequestTypeDef(TypedDict):
+    clusters: NotRequired[Sequence[str]],
+    include: NotRequired[Sequence[ClusterFieldType]],  # (1)
+```
 
-- `clusters`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
-
-<a id="describeclustersresponsetypedef"></a>
-
+1. See [:material-code-brackets: ClusterFieldType](./literals.md#clusterfieldtype) 
 ## DescribeClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeClustersResponseTypeDef
+
+def get_value() -> DescribeClustersResponseTypeDef:
+    return {
+        "clusters": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeClustersResponseTypeDef(TypedDict):
+    clusters: List[ClusterTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontainerinstancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContainerInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeContainerInstancesRequestRequestTypeDef
+
+def get_value() -> DescribeContainerInstancesRequestRequestTypeDef:
+    return {
+        "containerInstances": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContainerInstancesRequestRequestTypeDef(TypedDict):
+    containerInstances: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[ContainerInstanceFieldType]],  # (1)
+```
 
-- `containerInstances`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `cluster`: `str`
-- `include`:
-  `Sequence`\[[ContainerInstanceFieldType](./literals.md#containerinstancefieldtype)\]
-
-<a id="describecontainerinstancesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContainerInstanceFieldType](./literals.md#containerinstancefieldtype) 
 ## DescribeContainerInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeContainerInstancesResponseTypeDef
+
+def get_value() -> DescribeContainerInstancesResponseTypeDef:
+    return {
+        "containerInstances": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContainerInstancesResponseTypeDef(TypedDict):
+    containerInstances: List[ContainerInstanceTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `containerInstances`:
-  `List`\[[ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeservicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeServicesRequestRequestTypeDef
+
+def get_value() -> DescribeServicesRequestRequestTypeDef:
+    return {
+        "services": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServicesRequestRequestTypeDef(TypedDict):
+    services: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[ServiceFieldType]],  # (1)
+```
 
-- `services`: `Sequence`\[`str`\]
+1. See [:material-code-brackets: ServiceFieldType](./literals.md#servicefieldtype) 
+## DescribeServicesRequestServicesInactiveWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DescribeServicesRequestServicesInactiveWaitTypeDef
 
-- `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [ServiceFieldType](./literals.md#servicefieldtype))\]
+def get_value() -> DescribeServicesRequestServicesInactiveWaitTypeDef:
+    return {
+        "services": ...,
+    }
+```
 
-<a id="describeservicesresponsetypedef"></a>
+```python title="Definition"
+class DescribeServicesRequestServicesInactiveWaitTypeDef(TypedDict):
+    services: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[ServiceFieldType]],  # (1)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-brackets: ServiceFieldType](./literals.md#servicefieldtype) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeServicesRequestServicesStableWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DescribeServicesRequestServicesStableWaitTypeDef
+
+def get_value() -> DescribeServicesRequestServicesStableWaitTypeDef:
+    return {
+        "services": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeServicesRequestServicesStableWaitTypeDef(TypedDict):
+    services: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[ServiceFieldType]],  # (1)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ServiceFieldType](./literals.md#servicefieldtype) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeServicesResponseTypeDef
+
+def get_value() -> DescribeServicesResponseTypeDef:
+    return {
+        "services": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServicesResponseTypeDef(TypedDict):
+    services: List[ServiceTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetaskdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> DescribeTaskDefinitionRequestRequestTypeDef:
+    return {
+        "taskDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTaskDefinitionRequestRequestTypeDef(TypedDict):
+    taskDefinition: str,
+    include: NotRequired[Sequence[TaskDefinitionFieldType]],  # (1)
+```
 
-- `taskDefinition`: `str`
-
-Optional fields:
-
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
-
-<a id="describetaskdefinitionresponsetypedef"></a>
-
+1. See [:material-code-brackets: TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype) 
 ## DescribeTaskDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTaskDefinitionResponseTypeDef
+
+def get_value() -> DescribeTaskDefinitionResponseTypeDef:
+    return {
+        "taskDefinition": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTaskDefinitionResponseTypeDef(TypedDict):
+    taskDefinition: TaskDefinitionTypeDef,  # (1)
+    tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `taskDefinition`:
-  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetasksetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTaskSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTaskSetsRequestRequestTypeDef
+
+def get_value() -> DescribeTaskSetsRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTaskSetsRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    service: str,
+    taskSets: NotRequired[Sequence[str]],
+    include: NotRequired[Sequence[TaskSetFieldType]],  # (1)
+```
 
-- `cluster`: `str`
-- `service`: `str`
-
-Optional fields:
-
-- `taskSets`: `Sequence`\[`str`\]
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
-
-<a id="describetasksetsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TaskSetFieldType](./literals.md#tasksetfieldtype) 
 ## DescribeTaskSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTaskSetsResponseTypeDef
+
+def get_value() -> DescribeTaskSetsResponseTypeDef:
+    return {
+        "taskSets": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTaskSetsResponseTypeDef(TypedDict):
+    taskSets: List[TaskSetTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `taskSets`: `List`\[[TaskSetTypeDef](./type_defs.md#tasksettypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetasksrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTasksRequestRequestTypeDef
+
+def get_value() -> DescribeTasksRequestRequestTypeDef:
+    return {
+        "tasks": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTasksRequestRequestTypeDef(TypedDict):
+    tasks: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[TaskFieldType]],  # (1)
+```
 
-- `tasks`: `Sequence`\[`str`\]
+1. See [:material-code-brackets: TaskFieldType](./literals.md#taskfieldtype) 
+## DescribeTasksRequestTasksRunningWaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DescribeTasksRequestTasksRunningWaitTypeDef
 
-- `cluster`: `str`
-- `include`: `Sequence`\[`Literal['TAGS']` (see
-  [TaskFieldType](./literals.md#taskfieldtype))\]
+def get_value() -> DescribeTasksRequestTasksRunningWaitTypeDef:
+    return {
+        "tasks": ...,
+    }
+```
 
-<a id="describetasksresponsetypedef"></a>
+```python title="Definition"
+class DescribeTasksRequestTasksRunningWaitTypeDef(TypedDict):
+    tasks: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[TaskFieldType]],  # (1)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-brackets: TaskFieldType](./literals.md#taskfieldtype) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeTasksRequestTasksStoppedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import DescribeTasksRequestTasksStoppedWaitTypeDef
+
+def get_value() -> DescribeTasksRequestTasksStoppedWaitTypeDef:
+    return {
+        "tasks": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTasksRequestTasksStoppedWaitTypeDef(TypedDict):
+    tasks: Sequence[str],
+    cluster: NotRequired[str],
+    include: NotRequired[Sequence[TaskFieldType]],  # (1)
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskFieldType](./literals.md#taskfieldtype) 
+2. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeTasksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DescribeTasksResponseTypeDef
+
+def get_value() -> DescribeTasksResponseTypeDef:
+    return {
+        "tasks": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTasksResponseTypeDef(TypedDict):
+    tasks: List[TaskTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="devicetypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DeviceTypeDef
+
+def get_value() -> DeviceTypeDef:
+    return {
+        "hostPath": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeviceTypeDef(TypedDict):
+    hostPath: str,
+    containerPath: NotRequired[str],
+    permissions: NotRequired[List[DeviceCgroupPermissionType]],  # (1)
+```
 
-- `hostPath`: `str`
-
-Optional fields:
-
-- `containerPath`: `str`
-- `permissions`:
-  `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
-
-<a id="discoverpollendpointrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype) 
 ## DiscoverPollEndpointRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DiscoverPollEndpointRequestRequestTypeDef
+
+def get_value() -> DiscoverPollEndpointRequestRequestTypeDef:
+    return {
+        "containerInstance": ...,
+    }
 ```
 
-Optional fields:
-
-- `containerInstance`: `str`
-- `cluster`: `str`
-
-<a id="discoverpollendpointresponsetypedef"></a>
+```python title="Definition"
+class DiscoverPollEndpointRequestRequestTypeDef(TypedDict):
+    containerInstance: NotRequired[str],
+    cluster: NotRequired[str],
+```
 
 ## DiscoverPollEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DiscoverPollEndpointResponseTypeDef
+
+def get_value() -> DiscoverPollEndpointResponseTypeDef:
+    return {
+        "endpoint": ...,
+        "telemetryEndpoint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DiscoverPollEndpointResponseTypeDef(TypedDict):
+    endpoint: str,
+    telemetryEndpoint: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `endpoint`: `str`
-- `telemetryEndpoint`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dockervolumeconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DockerVolumeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import DockerVolumeConfigurationTypeDef
+
+def get_value() -> DockerVolumeConfigurationTypeDef:
+    return {
+        "scope": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DockerVolumeConfigurationTypeDef(TypedDict):
+    scope: NotRequired[ScopeType],  # (1)
+    autoprovision: NotRequired[bool],
+    driver: NotRequired[str],
+    driverOpts: NotRequired[Dict[str, str]],
+    labels: NotRequired[Dict[str, str]],
+```
 
-- `scope`: [ScopeType](./literals.md#scopetype)
-- `autoprovision`: `bool`
-- `driver`: `str`
-- `driverOpts`: `Dict`\[`str`, `str`\]
-- `labels`: `Dict`\[`str`, `str`\]
-
-<a id="efsauthorizationconfigtypedef"></a>
-
+1. See [:material-code-brackets: ScopeType](./literals.md#scopetype) 
 ## EFSAuthorizationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import EFSAuthorizationConfigTypeDef
+
+def get_value() -> EFSAuthorizationConfigTypeDef:
+    return {
+        "accessPointId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EFSAuthorizationConfigTypeDef(TypedDict):
+    accessPointId: NotRequired[str],
+    iam: NotRequired[EFSAuthorizationConfigIAMType],  # (1)
+```
 
-- `accessPointId`: `str`
-- `iam`:
-  [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
-
-<a id="efsvolumeconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype) 
 ## EFSVolumeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import EFSVolumeConfigurationTypeDef
+
+def get_value() -> EFSVolumeConfigurationTypeDef:
+    return {
+        "fileSystemId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EFSVolumeConfigurationTypeDef(TypedDict):
+    fileSystemId: str,
+    rootDirectory: NotRequired[str],
+    transitEncryption: NotRequired[EFSTransitEncryptionType],  # (1)
+    transitEncryptionPort: NotRequired[int],
+    authorizationConfig: NotRequired[EFSAuthorizationConfigTypeDef],  # (2)
+```
 
-- `fileSystemId`: `str`
-
-Optional fields:
-
-- `rootDirectory`: `str`
-- `transitEncryption`:
-  [EFSTransitEncryptionType](./literals.md#efstransitencryptiontype)
-- `transitEncryptionPort`: `int`
-- `authorizationConfig`:
-  [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
-
-<a id="environmentfiletypedef"></a>
-
+1. See [:material-code-brackets: EFSTransitEncryptionType](./literals.md#efstransitencryptiontype) 
+2. See [:material-code-braces: EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef) 
 ## EnvironmentFileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import EnvironmentFileTypeDef
+
+def get_value() -> EnvironmentFileTypeDef:
+    return {
+        "value": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EnvironmentFileTypeDef(TypedDict):
+    value: str,
+    type: EnvironmentFileTypeType,  # (1)
+```
 
-- `value`: `str`
-- `type`: `Literal['s3']` (see
-  [EnvironmentFileTypeType](./literals.md#environmentfiletypetype))
-
-<a id="ephemeralstoragetypedef"></a>
-
+1. See [:material-code-brackets: EnvironmentFileTypeType](./literals.md#environmentfiletypetype) 
 ## EphemeralStorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import EphemeralStorageTypeDef
+
+def get_value() -> EphemeralStorageTypeDef:
+    return {
+        "sizeInGiB": ...,
+    }
 ```
 
-Required fields:
-
-- `sizeInGiB`: `int`
-
-<a id="executecommandconfigurationtypedef"></a>
+```python title="Definition"
+class EphemeralStorageTypeDef(TypedDict):
+    sizeInGiB: int,
+```
 
 ## ExecuteCommandConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ExecuteCommandConfigurationTypeDef
+
+def get_value() -> ExecuteCommandConfigurationTypeDef:
+    return {
+        "kmsKeyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExecuteCommandConfigurationTypeDef(TypedDict):
+    kmsKeyId: NotRequired[str],
+    logging: NotRequired[ExecuteCommandLoggingType],  # (1)
+    logConfiguration: NotRequired[ExecuteCommandLogConfigurationTypeDef],  # (2)
+```
 
-- `kmsKeyId`: `str`
-- `logging`:
-  [ExecuteCommandLoggingType](./literals.md#executecommandloggingtype)
-- `logConfiguration`:
-  [ExecuteCommandLogConfigurationTypeDef](./type_defs.md#executecommandlogconfigurationtypedef)
-
-<a id="executecommandlogconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ExecuteCommandLoggingType](./literals.md#executecommandloggingtype) 
+2. See [:material-code-braces: ExecuteCommandLogConfigurationTypeDef](./type_defs.md#executecommandlogconfigurationtypedef) 
 ## ExecuteCommandLogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ExecuteCommandLogConfigurationTypeDef
+
+def get_value() -> ExecuteCommandLogConfigurationTypeDef:
+    return {
+        "cloudWatchLogGroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `cloudWatchLogGroupName`: `str`
-- `cloudWatchEncryptionEnabled`: `bool`
-- `s3BucketName`: `str`
-- `s3EncryptionEnabled`: `bool`
-- `s3KeyPrefix`: `str`
-
-<a id="executecommandrequestrequesttypedef"></a>
+```python title="Definition"
+class ExecuteCommandLogConfigurationTypeDef(TypedDict):
+    cloudWatchLogGroupName: NotRequired[str],
+    cloudWatchEncryptionEnabled: NotRequired[bool],
+    s3BucketName: NotRequired[str],
+    s3EncryptionEnabled: NotRequired[bool],
+    s3KeyPrefix: NotRequired[str],
+```
 
 ## ExecuteCommandRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ExecuteCommandRequestRequestTypeDef
+
+def get_value() -> ExecuteCommandRequestRequestTypeDef:
+    return {
+        "command": ...,
+        "interactive": ...,
+        "task": ...,
+    }
 ```
 
-Required fields:
-
-- `command`: `str`
-- `interactive`: `bool`
-- `task`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `container`: `str`
-
-<a id="executecommandresponsetypedef"></a>
+```python title="Definition"
+class ExecuteCommandRequestRequestTypeDef(TypedDict):
+    command: str,
+    interactive: bool,
+    task: str,
+    cluster: NotRequired[str],
+    container: NotRequired[str],
+```
 
 ## ExecuteCommandResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ExecuteCommandResponseTypeDef
+
+def get_value() -> ExecuteCommandResponseTypeDef:
+    return {
+        "clusterArn": ...,
+        "containerArn": ...,
+        "containerName": ...,
+        "interactive": ...,
+        "session": ...,
+        "taskArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteCommandResponseTypeDef(TypedDict):
+    clusterArn: str,
+    containerArn: str,
+    containerName: str,
+    interactive: bool,
+    session: SessionTypeDef,  # (1)
+    taskArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `clusterArn`: `str`
-- `containerArn`: `str`
-- `containerName`: `str`
-- `interactive`: `bool`
-- `session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
-- `taskArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="fsxwindowsfileserverauthorizationconfigtypedef"></a>
-
+1. See [:material-code-braces: SessionTypeDef](./type_defs.md#sessiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FSxWindowsFileServerAuthorizationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import FSxWindowsFileServerAuthorizationConfigTypeDef
+
+def get_value() -> FSxWindowsFileServerAuthorizationConfigTypeDef:
+    return {
+        "credentialsParameter": ...,
+        "domain": ...,
+    }
 ```
 
-Required fields:
-
-- `credentialsParameter`: `str`
-- `domain`: `str`
-
-<a id="fsxwindowsfileservervolumeconfigurationtypedef"></a>
+```python title="Definition"
+class FSxWindowsFileServerAuthorizationConfigTypeDef(TypedDict):
+    credentialsParameter: str,
+    domain: str,
+```
 
 ## FSxWindowsFileServerVolumeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import FSxWindowsFileServerVolumeConfigurationTypeDef
+
+def get_value() -> FSxWindowsFileServerVolumeConfigurationTypeDef:
+    return {
+        "fileSystemId": ...,
+        "rootDirectory": ...,
+        "authorizationConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FSxWindowsFileServerVolumeConfigurationTypeDef(TypedDict):
+    fileSystemId: str,
+    rootDirectory: str,
+    authorizationConfig: FSxWindowsFileServerAuthorizationConfigTypeDef,  # (1)
+```
 
-- `fileSystemId`: `str`
-- `rootDirectory`: `str`
-- `authorizationConfig`:
-  [FSxWindowsFileServerAuthorizationConfigTypeDef](./type_defs.md#fsxwindowsfileserverauthorizationconfigtypedef)
-
-<a id="failuretypedef"></a>
-
+1. See [:material-code-braces: FSxWindowsFileServerAuthorizationConfigTypeDef](./type_defs.md#fsxwindowsfileserverauthorizationconfigtypedef) 
 ## FailureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import FailureTypeDef
+
+def get_value() -> FailureTypeDef:
+    return {
+        "arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `arn`: `str`
-- `reason`: `str`
-- `detail`: `str`
-
-<a id="firelensconfigurationtypedef"></a>
+```python title="Definition"
+class FailureTypeDef(TypedDict):
+    arn: NotRequired[str],
+    reason: NotRequired[str],
+    detail: NotRequired[str],
+```
 
 ## FirelensConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import FirelensConfigurationTypeDef
+
+def get_value() -> FirelensConfigurationTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FirelensConfigurationTypeDef(TypedDict):
+    type: FirelensConfigurationTypeType,  # (1)
+    options: NotRequired[Dict[str, str]],
+```
 
-- `type`:
-  [FirelensConfigurationTypeType](./literals.md#firelensconfigurationtypetype)
-
-Optional fields:
-
-- `options`: `Dict`\[`str`, `str`\]
-
-<a id="healthchecktypedef"></a>
-
+1. See [:material-code-brackets: FirelensConfigurationTypeType](./literals.md#firelensconfigurationtypetype) 
 ## HealthCheckTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import HealthCheckTypeDef
+
+def get_value() -> HealthCheckTypeDef:
+    return {
+        "command": ...,
+    }
 ```
 
-Required fields:
-
-- `command`: `List`\[`str`\]
-
-Optional fields:
-
-- `interval`: `int`
-- `timeout`: `int`
-- `retries`: `int`
-- `startPeriod`: `int`
-
-<a id="hostentrytypedef"></a>
+```python title="Definition"
+class HealthCheckTypeDef(TypedDict):
+    command: List[str],
+    interval: NotRequired[int],
+    timeout: NotRequired[int],
+    retries: NotRequired[int],
+    startPeriod: NotRequired[int],
+```
 
 ## HostEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import HostEntryTypeDef
+
+def get_value() -> HostEntryTypeDef:
+    return {
+        "hostname": ...,
+        "ipAddress": ...,
+    }
 ```
 
-Required fields:
-
-- `hostname`: `str`
-- `ipAddress`: `str`
-
-<a id="hostvolumepropertiestypedef"></a>
+```python title="Definition"
+class HostEntryTypeDef(TypedDict):
+    hostname: str,
+    ipAddress: str,
+```
 
 ## HostVolumePropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import HostVolumePropertiesTypeDef
+
+def get_value() -> HostVolumePropertiesTypeDef:
+    return {
+        "sourcePath": ...,
+    }
 ```
 
-Optional fields:
-
-- `sourcePath`: `str`
-
-<a id="inferenceacceleratoroverridetypedef"></a>
+```python title="Definition"
+class HostVolumePropertiesTypeDef(TypedDict):
+    sourcePath: NotRequired[str],
+```
 
 ## InferenceAcceleratorOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import InferenceAcceleratorOverrideTypeDef
+
+def get_value() -> InferenceAcceleratorOverrideTypeDef:
+    return {
+        "deviceName": ...,
+    }
 ```
 
-Optional fields:
-
-- `deviceName`: `str`
-- `deviceType`: `str`
-
-<a id="inferenceacceleratortypedef"></a>
+```python title="Definition"
+class InferenceAcceleratorOverrideTypeDef(TypedDict):
+    deviceName: NotRequired[str],
+    deviceType: NotRequired[str],
+```
 
 ## InferenceAcceleratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import InferenceAcceleratorTypeDef
+
+def get_value() -> InferenceAcceleratorTypeDef:
+    return {
+        "deviceName": ...,
+        "deviceType": ...,
+    }
 ```
 
-Required fields:
-
-- `deviceName`: `str`
-- `deviceType`: `str`
-
-<a id="instancehealthcheckresulttypedef"></a>
+```python title="Definition"
+class InferenceAcceleratorTypeDef(TypedDict):
+    deviceName: str,
+    deviceType: str,
+```
 
 ## InstanceHealthCheckResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import InstanceHealthCheckResultTypeDef
+
+def get_value() -> InstanceHealthCheckResultTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceHealthCheckResultTypeDef(TypedDict):
+    type: NotRequired[InstanceHealthCheckTypeType],  # (1)
+    status: NotRequired[InstanceHealthCheckStateType],  # (2)
+    lastUpdated: NotRequired[datetime],
+    lastStatusChange: NotRequired[datetime],
+```
 
-- `type`: `Literal['CONTAINER_RUNTIME']` (see
-  [InstanceHealthCheckTypeType](./literals.md#instancehealthchecktypetype))
-- `status`:
-  [InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype)
-- `lastUpdated`: `datetime`
-- `lastStatusChange`: `datetime`
-
-<a id="kernelcapabilitiestypedef"></a>
-
+1. See [:material-code-brackets: InstanceHealthCheckTypeType](./literals.md#instancehealthchecktypetype) 
+2. See [:material-code-brackets: InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype) 
 ## KernelCapabilitiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import KernelCapabilitiesTypeDef
+
+def get_value() -> KernelCapabilitiesTypeDef:
+    return {
+        "add": ...,
+    }
 ```
 
-Optional fields:
-
-- `add`: `List`\[`str`\]
-- `drop`: `List`\[`str`\]
-
-<a id="keyvaluepairtypedef"></a>
+```python title="Definition"
+class KernelCapabilitiesTypeDef(TypedDict):
+    add: NotRequired[List[str]],
+    drop: NotRequired[List[str]],
+```
 
 ## KeyValuePairTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import KeyValuePairTypeDef
+
+def get_value() -> KeyValuePairTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `value`: `str`
-
-<a id="linuxparameterstypedef"></a>
+```python title="Definition"
+class KeyValuePairTypeDef(TypedDict):
+    name: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## LinuxParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import LinuxParametersTypeDef
+
+def get_value() -> LinuxParametersTypeDef:
+    return {
+        "capabilities": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LinuxParametersTypeDef(TypedDict):
+    capabilities: NotRequired[KernelCapabilitiesTypeDef],  # (1)
+    devices: NotRequired[List[DeviceTypeDef]],  # (2)
+    initProcessEnabled: NotRequired[bool],
+    sharedMemorySize: NotRequired[int],
+    tmpfs: NotRequired[List[TmpfsTypeDef]],  # (3)
+    maxSwap: NotRequired[int],
+    swappiness: NotRequired[int],
+```
 
-- `capabilities`:
-  [KernelCapabilitiesTypeDef](./type_defs.md#kernelcapabilitiestypedef)
-- `devices`: `List`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
-- `initProcessEnabled`: `bool`
-- `sharedMemorySize`: `int`
-- `tmpfs`: `List`\[[TmpfsTypeDef](./type_defs.md#tmpfstypedef)\]
-- `maxSwap`: `int`
-- `swappiness`: `int`
+1. See [:material-code-braces: KernelCapabilitiesTypeDef](./type_defs.md#kernelcapabilitiestypedef) 
+2. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+3. See [:material-code-braces: TmpfsTypeDef](./type_defs.md#tmpfstypedef) 
+## ListAccountSettingsRequestListAccountSettingsPaginateTypeDef
 
-<a id="listaccountsettingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListAccountSettingsRequestListAccountSettingsPaginateTypeDef
 
+def get_value() -> ListAccountSettingsRequestListAccountSettingsPaginateTypeDef:
+    return {
+        "name": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccountSettingsRequestListAccountSettingsPaginateTypeDef(TypedDict):
+    name: NotRequired[SettingNameType],  # (1)
+    value: NotRequired[str],
+    principalArn: NotRequired[str],
+    effectiveSettings: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccountSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListAccountSettingsRequestRequestTypeDef
+
+def get_value() -> ListAccountSettingsRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAccountSettingsRequestRequestTypeDef(TypedDict):
+    name: NotRequired[SettingNameType],  # (1)
+    value: NotRequired[str],
+    principalArn: NotRequired[str],
+    effectiveSettings: NotRequired[bool],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-- `principalArn`: `str`
-- `effectiveSettings`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listaccountsettingsresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
 ## ListAccountSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListAccountSettingsResponseTypeDef
+
+def get_value() -> ListAccountSettingsResponseTypeDef:
+    return {
+        "settings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccountSettingsResponseTypeDef(TypedDict):
+    settings: List[SettingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `settings`: `List`\[[SettingTypeDef](./type_defs.md#settingtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAttributesRequestListAttributesPaginateTypeDef
 
-<a id="listattributesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListAttributesRequestListAttributesPaginateTypeDef
 
+def get_value() -> ListAttributesRequestListAttributesPaginateTypeDef:
+    return {
+        "targetType": ...,
+    }
+```
+
+```python title="Definition"
+class ListAttributesRequestListAttributesPaginateTypeDef(TypedDict):
+    targetType: TargetTypeType,  # (1)
+    cluster: NotRequired[str],
+    attributeName: NotRequired[str],
+    attributeValue: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListAttributesRequestRequestTypeDef
+
+def get_value() -> ListAttributesRequestRequestTypeDef:
+    return {
+        "targetType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttributesRequestRequestTypeDef(TypedDict):
+    targetType: TargetTypeType,  # (1)
+    cluster: NotRequired[str],
+    attributeName: NotRequired[str],
+    attributeValue: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `targetType`: `Literal['container-instance']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-
-Optional fields:
-
-- `cluster`: `str`
-- `attributeName`: `str`
-- `attributeValue`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listattributesresponsetypedef"></a>
-
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 
 ## ListAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListAttributesResponseTypeDef
+
+def get_value() -> ListAttributesResponseTypeDef:
+    return {
+        "attributes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAttributesResponseTypeDef(TypedDict):
+    attributes: List[AttributeTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListClustersRequestListClustersPaginateTypeDef
 
-<a id="listclustersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListClustersRequestListClustersPaginateTypeDef
 
+def get_value() -> ListClustersRequestListClustersPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListClustersRequestListClustersPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListClustersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListClustersRequestRequestTypeDef
+
+def get_value() -> ListClustersRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listclustersresponsetypedef"></a>
+```python title="Definition"
+class ListClustersRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListClustersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListClustersResponseTypeDef
+
+def get_value() -> ListClustersResponseTypeDef:
+    return {
+        "clusterArns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListClustersResponseTypeDef(TypedDict):
+    clusterArns: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `clusterArns`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContainerInstancesRequestListContainerInstancesPaginateTypeDef
 
-<a id="listcontainerinstancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListContainerInstancesRequestListContainerInstancesPaginateTypeDef
 
+def get_value() -> ListContainerInstancesRequestListContainerInstancesPaginateTypeDef:
+    return {
+        "cluster": ...,
+    }
+```
+
+```python title="Definition"
+class ListContainerInstancesRequestListContainerInstancesPaginateTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    filter: NotRequired[str],
+    status: NotRequired[ContainerInstanceStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContainerInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListContainerInstancesRequestRequestTypeDef
+
+def get_value() -> ListContainerInstancesRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListContainerInstancesRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    filter: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    status: NotRequired[ContainerInstanceStatusType],  # (1)
+```
 
-- `cluster`: `str`
-- `filter`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `status`:
-  [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
-
-<a id="listcontainerinstancesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
 ## ListContainerInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListContainerInstancesResponseTypeDef
+
+def get_value() -> ListContainerInstancesResponseTypeDef:
+    return {
+        "containerInstanceArns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContainerInstancesResponseTypeDef(TypedDict):
+    containerInstanceArns: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `containerInstanceArns`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListServicesRequestListServicesPaginateTypeDef
 
-<a id="listservicesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListServicesRequestListServicesPaginateTypeDef
 
+def get_value() -> ListServicesRequestListServicesPaginateTypeDef:
+    return {
+        "cluster": ...,
+    }
+```
+
+```python title="Definition"
+class ListServicesRequestListServicesPaginateTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    launchType: NotRequired[LaunchTypeType],  # (1)
+    schedulingStrategy: NotRequired[SchedulingStrategyType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListServicesRequestRequestTypeDef
+
+def get_value() -> ListServicesRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListServicesRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    launchType: NotRequired[LaunchTypeType],  # (1)
+    schedulingStrategy: NotRequired[SchedulingStrategyType],  # (2)
+```
 
-- `cluster`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
-
-<a id="listservicesresponsetypedef"></a>
-
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
 ## ListServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListServicesResponseTypeDef
+
+def get_value() -> ListServicesResponseTypeDef:
+    return {
+        "serviceArns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicesResponseTypeDef(TypedDict):
+    serviceArns: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `serviceArns`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef
 
-<a id="listtaskdefinitionfamiliesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef
 
+def get_value() -> ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef:
+    return {
+        "familyPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef(TypedDict):
+    familyPrefix: NotRequired[str],
+    status: NotRequired[TaskDefinitionFamilyStatusType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTaskDefinitionFamiliesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesRequestRequestTypeDef
+
+def get_value() -> ListTaskDefinitionFamiliesRequestRequestTypeDef:
+    return {
+        "familyPrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTaskDefinitionFamiliesRequestRequestTypeDef(TypedDict):
+    familyPrefix: NotRequired[str],
+    status: NotRequired[TaskDefinitionFamilyStatusType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `familyPrefix`: `str`
-- `status`:
-  [TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listtaskdefinitionfamiliesresponsetypedef"></a>
-
+1. See [:material-code-brackets: TaskDefinitionFamilyStatusType](./literals.md#taskdefinitionfamilystatustype) 
 ## ListTaskDefinitionFamiliesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTaskDefinitionFamiliesResponseTypeDef
+
+def get_value() -> ListTaskDefinitionFamiliesResponseTypeDef:
+    return {
+        "families": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTaskDefinitionFamiliesResponseTypeDef(TypedDict):
+    families: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `families`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef
 
-<a id="listtaskdefinitionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef
 
+def get_value() -> ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef:
+    return {
+        "familyPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef(TypedDict):
+    familyPrefix: NotRequired[str],
+    status: NotRequired[TaskDefinitionStatusType],  # (1)
+    sort: NotRequired[SortOrderType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTaskDefinitionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTaskDefinitionsRequestRequestTypeDef
+
+def get_value() -> ListTaskDefinitionsRequestRequestTypeDef:
+    return {
+        "familyPrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTaskDefinitionsRequestRequestTypeDef(TypedDict):
+    familyPrefix: NotRequired[str],
+    status: NotRequired[TaskDefinitionStatusType],  # (1)
+    sort: NotRequired[SortOrderType],  # (2)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
-- `familyPrefix`: `str`
-- `status`: [TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype)
-- `sort`: [SortOrderType](./literals.md#sortordertype)
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listtaskdefinitionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListTaskDefinitionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTaskDefinitionsResponseTypeDef
+
+def get_value() -> ListTaskDefinitionsResponseTypeDef:
+    return {
+        "taskDefinitionArns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTaskDefinitionsResponseTypeDef(TypedDict):
+    taskDefinitionArns: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `taskDefinitionArns`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTasksRequestListTasksPaginateTypeDef
 
-<a id="listtasksrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_ecs.type_defs import ListTasksRequestListTasksPaginateTypeDef
 
+def get_value() -> ListTasksRequestListTasksPaginateTypeDef:
+    return {
+        "cluster": ...,
+    }
+```
+
+```python title="Definition"
+class ListTasksRequestListTasksPaginateTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    containerInstance: NotRequired[str],
+    family: NotRequired[str],
+    startedBy: NotRequired[str],
+    serviceName: NotRequired[str],
+    desiredStatus: NotRequired[DesiredStatusType],  # (1)
+    launchType: NotRequired[LaunchTypeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DesiredStatusType](./literals.md#desiredstatustype) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTasksRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTasksRequestRequestTypeDef
+
+def get_value() -> ListTasksRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListTasksRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    containerInstance: NotRequired[str],
+    family: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    startedBy: NotRequired[str],
+    serviceName: NotRequired[str],
+    desiredStatus: NotRequired[DesiredStatusType],  # (1)
+    launchType: NotRequired[LaunchTypeType],  # (2)
+```
 
-- `cluster`: `str`
-- `containerInstance`: `str`
-- `family`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `startedBy`: `str`
-- `serviceName`: `str`
-- `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-
-<a id="listtasksresponsetypedef"></a>
-
+1. See [:material-code-brackets: DesiredStatusType](./literals.md#desiredstatustype) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
 ## ListTasksResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ListTasksResponseTypeDef
+
+def get_value() -> ListTasksResponseTypeDef:
+    return {
+        "taskArns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTasksResponseTypeDef(TypedDict):
+    taskArns: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `taskArns`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loadbalancertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoadBalancerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import LoadBalancerTypeDef
+
+def get_value() -> LoadBalancerTypeDef:
+    return {
+        "targetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `targetGroupArn`: `str`
-- `loadBalancerName`: `str`
-- `containerName`: `str`
-- `containerPort`: `int`
-
-<a id="logconfigurationtypedef"></a>
+```python title="Definition"
+class LoadBalancerTypeDef(TypedDict):
+    targetGroupArn: NotRequired[str],
+    loadBalancerName: NotRequired[str],
+    containerName: NotRequired[str],
+    containerPort: NotRequired[int],
+```
 
 ## LogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import LogConfigurationTypeDef
+
+def get_value() -> LogConfigurationTypeDef:
+    return {
+        "logDriver": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LogConfigurationTypeDef(TypedDict):
+    logDriver: LogDriverType,  # (1)
+    options: NotRequired[Dict[str, str]],
+    secretOptions: NotRequired[List[SecretTypeDef]],  # (2)
+```
 
-- `logDriver`: [LogDriverType](./literals.md#logdrivertype)
-
-Optional fields:
-
-- `options`: `Dict`\[`str`, `str`\]
-- `secretOptions`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
-
-<a id="managedagentstatechangetypedef"></a>
-
+1. See [:material-code-brackets: LogDriverType](./literals.md#logdrivertype) 
+2. See [:material-code-braces: SecretTypeDef](./type_defs.md#secrettypedef) 
 ## ManagedAgentStateChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ManagedAgentStateChangeTypeDef
+
+def get_value() -> ManagedAgentStateChangeTypeDef:
+    return {
+        "containerName": ...,
+        "managedAgentName": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ManagedAgentStateChangeTypeDef(TypedDict):
+    containerName: str,
+    managedAgentName: ManagedAgentNameType,  # (1)
+    status: str,
+    reason: NotRequired[str],
+```
 
-- `containerName`: `str`
-- `managedAgentName`: `Literal['ExecuteCommandAgent']` (see
-  [ManagedAgentNameType](./literals.md#managedagentnametype))
-- `status`: `str`
-
-Optional fields:
-
-- `reason`: `str`
-
-<a id="managedagenttypedef"></a>
-
+1. See [:material-code-brackets: ManagedAgentNameType](./literals.md#managedagentnametype) 
 ## ManagedAgentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ManagedAgentTypeDef
+
+def get_value() -> ManagedAgentTypeDef:
+    return {
+        "lastStartedAt": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedAgentTypeDef(TypedDict):
+    lastStartedAt: NotRequired[datetime],
+    name: NotRequired[ManagedAgentNameType],  # (1)
+    reason: NotRequired[str],
+    lastStatus: NotRequired[str],
+```
 
-- `lastStartedAt`: `datetime`
-- `name`: `Literal['ExecuteCommandAgent']` (see
-  [ManagedAgentNameType](./literals.md#managedagentnametype))
-- `reason`: `str`
-- `lastStatus`: `str`
-
-<a id="managedscalingtypedef"></a>
-
+1. See [:material-code-brackets: ManagedAgentNameType](./literals.md#managedagentnametype) 
 ## ManagedScalingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ManagedScalingTypeDef
+
+def get_value() -> ManagedScalingTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManagedScalingTypeDef(TypedDict):
+    status: NotRequired[ManagedScalingStatusType],  # (1)
+    targetCapacity: NotRequired[int],
+    minimumScalingStepSize: NotRequired[int],
+    maximumScalingStepSize: NotRequired[int],
+    instanceWarmupPeriod: NotRequired[int],
+```
 
-- `status`: [ManagedScalingStatusType](./literals.md#managedscalingstatustype)
-- `targetCapacity`: `int`
-- `minimumScalingStepSize`: `int`
-- `maximumScalingStepSize`: `int`
-- `instanceWarmupPeriod`: `int`
-
-<a id="mountpointtypedef"></a>
-
+1. See [:material-code-brackets: ManagedScalingStatusType](./literals.md#managedscalingstatustype) 
 ## MountPointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import MountPointTypeDef
+
+def get_value() -> MountPointTypeDef:
+    return {
+        "sourceVolume": ...,
+    }
 ```
 
-Optional fields:
-
-- `sourceVolume`: `str`
-- `containerPath`: `str`
-- `readOnly`: `bool`
-
-<a id="networkbindingtypedef"></a>
+```python title="Definition"
+class MountPointTypeDef(TypedDict):
+    sourceVolume: NotRequired[str],
+    containerPath: NotRequired[str],
+    readOnly: NotRequired[bool],
+```
 
 ## NetworkBindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import NetworkBindingTypeDef
+
+def get_value() -> NetworkBindingTypeDef:
+    return {
+        "bindIP": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkBindingTypeDef(TypedDict):
+    bindIP: NotRequired[str],
+    containerPort: NotRequired[int],
+    hostPort: NotRequired[int],
+    protocol: NotRequired[TransportProtocolType],  # (1)
+```
 
-- `bindIP`: `str`
-- `containerPort`: `int`
-- `hostPort`: `int`
-- `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
-
-<a id="networkconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: TransportProtocolType](./literals.md#transportprotocoltype) 
 ## NetworkConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import NetworkConfigurationTypeDef
+
+def get_value() -> NetworkConfigurationTypeDef:
+    return {
+        "awsvpcConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkConfigurationTypeDef(TypedDict):
+    awsvpcConfiguration: NotRequired[AwsVpcConfigurationTypeDef],  # (1)
+```
 
-- `awsvpcConfiguration`:
-  [AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef)
-
-<a id="networkinterfacetypedef"></a>
-
+1. See [:material-code-braces: AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef) 
 ## NetworkInterfaceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import NetworkInterfaceTypeDef
+
+def get_value() -> NetworkInterfaceTypeDef:
+    return {
+        "attachmentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `attachmentId`: `str`
-- `privateIpv4Address`: `str`
-- `ipv6Address`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class NetworkInterfaceTypeDef(TypedDict):
+    attachmentId: NotRequired[str],
+    privateIpv4Address: NotRequired[str],
+    ipv6Address: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="placementconstrainttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlacementConstraintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PlacementConstraintTypeDef
+
+def get_value() -> PlacementConstraintTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlacementConstraintTypeDef(TypedDict):
+    type: NotRequired[PlacementConstraintTypeType],  # (1)
+    expression: NotRequired[str],
+```
 
-- `type`:
-  [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
-- `expression`: `str`
-
-<a id="placementstrategytypedef"></a>
-
+1. See [:material-code-brackets: PlacementConstraintTypeType](./literals.md#placementconstrainttypetype) 
 ## PlacementStrategyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PlacementStrategyTypeDef
+
+def get_value() -> PlacementStrategyTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlacementStrategyTypeDef(TypedDict):
+    type: NotRequired[PlacementStrategyTypeType],  # (1)
+    field: NotRequired[str],
+```
 
-- `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
-- `field`: `str`
-
-<a id="platformdevicetypedef"></a>
-
+1. See [:material-code-brackets: PlacementStrategyTypeType](./literals.md#placementstrategytypetype) 
 ## PlatformDeviceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PlatformDeviceTypeDef
+
+def get_value() -> PlatformDeviceTypeDef:
+    return {
+        "id": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PlatformDeviceTypeDef(TypedDict):
+    id: str,
+    type: PlatformDeviceTypeType,  # (1)
+```
 
-- `id`: `str`
-- `type`: `Literal['GPU']` (see
-  [PlatformDeviceTypeType](./literals.md#platformdevicetypetype))
-
-<a id="portmappingtypedef"></a>
-
+1. See [:material-code-brackets: PlatformDeviceTypeType](./literals.md#platformdevicetypetype) 
 ## PortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PortMappingTypeDef
+
+def get_value() -> PortMappingTypeDef:
+    return {
+        "containerPort": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PortMappingTypeDef(TypedDict):
+    containerPort: NotRequired[int],
+    hostPort: NotRequired[int],
+    protocol: NotRequired[TransportProtocolType],  # (1)
+```
 
-- `containerPort`: `int`
-- `hostPort`: `int`
-- `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
-
-<a id="proxyconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: TransportProtocolType](./literals.md#transportprotocoltype) 
 ## ProxyConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ProxyConfigurationTypeDef
+
+def get_value() -> ProxyConfigurationTypeDef:
+    return {
+        "containerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProxyConfigurationTypeDef(TypedDict):
+    containerName: str,
+    type: NotRequired[ProxyConfigurationTypeType],  # (1)
+    properties: NotRequired[List[KeyValuePairTypeDef]],  # (2)
+```
 
-- `containerName`: `str`
-
-Optional fields:
-
-- `type`: `Literal['APPMESH']` (see
-  [ProxyConfigurationTypeType](./literals.md#proxyconfigurationtypetype))
-- `properties`:
-  `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
-
-<a id="putaccountsettingdefaultrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProxyConfigurationTypeType](./literals.md#proxyconfigurationtypetype) 
+2. See [:material-code-braces: KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef) 
 ## PutAccountSettingDefaultRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultRequestRequestTypeDef
+
+def get_value() -> PutAccountSettingDefaultRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAccountSettingDefaultRequestRequestTypeDef(TypedDict):
+    name: SettingNameType,  # (1)
+    value: str,
+```
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-
-<a id="putaccountsettingdefaultresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
 ## PutAccountSettingDefaultResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAccountSettingDefaultResponseTypeDef
+
+def get_value() -> PutAccountSettingDefaultResponseTypeDef:
+    return {
+        "setting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAccountSettingDefaultResponseTypeDef(TypedDict):
+    setting: SettingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putaccountsettingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutAccountSettingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAccountSettingRequestRequestTypeDef
+
+def get_value() -> PutAccountSettingRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAccountSettingRequestRequestTypeDef(TypedDict):
+    name: SettingNameType,  # (1)
+    value: str,
+    principalArn: NotRequired[str],
+```
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-
-Optional fields:
-
-- `principalArn`: `str`
-
-<a id="putaccountsettingresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
 ## PutAccountSettingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAccountSettingResponseTypeDef
+
+def get_value() -> PutAccountSettingResponseTypeDef:
+    return {
+        "setting": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAccountSettingResponseTypeDef(TypedDict):
+    setting: SettingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SettingTypeDef](./type_defs.md#settingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAttributesRequestRequestTypeDef
+
+def get_value() -> PutAttributesRequestRequestTypeDef:
+    return {
+        "attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAttributesRequestRequestTypeDef(TypedDict):
+    attributes: Sequence[AttributeTypeDef],  # (1)
+    cluster: NotRequired[str],
+```
 
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-
-Optional fields:
-
-- `cluster`: `str`
-
-<a id="putattributesresponsetypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 ## PutAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutAttributesResponseTypeDef
+
+def get_value() -> PutAttributesResponseTypeDef:
+    return {
+        "attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAttributesResponseTypeDef(TypedDict):
+    attributes: List[AttributeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putclustercapacityprovidersrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutClusterCapacityProvidersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersRequestRequestTypeDef
+
+def get_value() -> PutClusterCapacityProvidersRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "capacityProviders": ...,
+        "defaultCapacityProviderStrategy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutClusterCapacityProvidersRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    capacityProviders: Sequence[str],
+    defaultCapacityProviderStrategy: Sequence[CapacityProviderStrategyItemTypeDef],  # (1)
+```
 
-- `cluster`: `str`
-- `capacityProviders`: `Sequence`\[`str`\]
-- `defaultCapacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-
-<a id="putclustercapacityprovidersresponsetypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
 ## PutClusterCapacityProvidersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import PutClusterCapacityProvidersResponseTypeDef
+
+def get_value() -> PutClusterCapacityProvidersResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutClusterCapacityProvidersResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registercontainerinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterContainerInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RegisterContainerInstanceRequestRequestTypeDef
+
+def get_value() -> RegisterContainerInstanceRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RegisterContainerInstanceRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    instanceIdentityDocument: NotRequired[str],
+    instanceIdentityDocumentSignature: NotRequired[str],
+    totalResources: NotRequired[Sequence[ResourceTypeDef]],  # (1)
+    versionInfo: NotRequired[VersionInfoTypeDef],  # (2)
+    containerInstanceArn: NotRequired[str],
+    attributes: NotRequired[Sequence[AttributeTypeDef]],  # (3)
+    platformDevices: NotRequired[Sequence[PlatformDeviceTypeDef]],  # (4)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (5)
+```
 
-- `cluster`: `str`
-- `instanceIdentityDocument`: `str`
-- `instanceIdentityDocumentSignature`: `str`
-- `totalResources`:
-  `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
-- `versionInfo`: [VersionInfoTypeDef](./type_defs.md#versioninfotypedef)
-- `containerInstanceArn`: `str`
-- `attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `platformDevices`:
-  `Sequence`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="registercontainerinstanceresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: VersionInfoTypeDef](./type_defs.md#versioninfotypedef) 
+3. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+4. See [:material-code-braces: PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RegisterContainerInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RegisterContainerInstanceResponseTypeDef
+
+def get_value() -> RegisterContainerInstanceResponseTypeDef:
+    return {
+        "containerInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterContainerInstanceResponseTypeDef(TypedDict):
+    containerInstance: ContainerInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `containerInstance`:
-  [ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registertaskdefinitionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterTaskDefinitionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionRequestRequestTypeDef
+
+def get_value() -> RegisterTaskDefinitionRequestRequestTypeDef:
+    return {
+        "family": ...,
+        "containerDefinitions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTaskDefinitionRequestRequestTypeDef(TypedDict):
+    family: str,
+    containerDefinitions: Sequence[ContainerDefinitionTypeDef],  # (1)
+    taskRoleArn: NotRequired[str],
+    executionRoleArn: NotRequired[str],
+    networkMode: NotRequired[NetworkModeType],  # (2)
+    volumes: NotRequired[Sequence[VolumeTypeDef]],  # (3)
+    placementConstraints: NotRequired[Sequence[TaskDefinitionPlacementConstraintTypeDef]],  # (4)
+    requiresCompatibilities: NotRequired[Sequence[CompatibilityType]],  # (5)
+    cpu: NotRequired[str],
+    memory: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (6)
+    pidMode: NotRequired[PidModeType],  # (7)
+    ipcMode: NotRequired[IpcModeType],  # (8)
+    proxyConfiguration: NotRequired[ProxyConfigurationTypeDef],  # (9)
+    inferenceAccelerators: NotRequired[Sequence[InferenceAcceleratorTypeDef]],  # (10)
+    ephemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (11)
+    runtimePlatform: NotRequired[RuntimePlatformTypeDef],  # (12)
+```
 
-- `family`: `str`
-- `containerDefinitions`:
-  `Sequence`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
-
-Optional fields:
-
-- `taskRoleArn`: `str`
-- `executionRoleArn`: `str`
-- `networkMode`: [NetworkModeType](./literals.md#networkmodetype)
-- `volumes`: `Sequence`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
-- `placementConstraints`:
-  `Sequence`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
-- `requiresCompatibilities`:
-  `Sequence`\[[CompatibilityType](./literals.md#compatibilitytype)\]
-- `cpu`: `str`
-- `memory`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `pidMode`: [PidModeType](./literals.md#pidmodetype)
-- `ipcMode`: [IpcModeType](./literals.md#ipcmodetype)
-- `proxyConfiguration`:
-  [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
-- `inferenceAccelerators`:
-  `Sequence`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
-- `ephemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-- `runtimePlatform`:
-  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
-
-<a id="registertaskdefinitionresponsetypedef"></a>
-
+1. See [:material-code-braces: ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef) 
+2. See [:material-code-brackets: NetworkModeType](./literals.md#networkmodetype) 
+3. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
+4. See [:material-code-braces: TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef) 
+5. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-brackets: PidModeType](./literals.md#pidmodetype) 
+8. See [:material-code-brackets: IpcModeType](./literals.md#ipcmodetype) 
+9. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
+10. See [:material-code-braces: InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef) 
+11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+12. See [:material-code-braces: RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef) 
 ## RegisterTaskDefinitionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RegisterTaskDefinitionResponseTypeDef
+
+def get_value() -> RegisterTaskDefinitionResponseTypeDef:
+    return {
+        "taskDefinition": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterTaskDefinitionResponseTypeDef(TypedDict):
+    taskDefinition: TaskDefinitionTypeDef,  # (1)
+    tags: List[TagTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `taskDefinition`:
-  [TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="repositorycredentialstypedef"></a>
-
+1. See [:material-code-braces: TaskDefinitionTypeDef](./type_defs.md#taskdefinitiontypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RepositoryCredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RepositoryCredentialsTypeDef
+
+def get_value() -> RepositoryCredentialsTypeDef:
+    return {
+        "credentialsParameter": ...,
+    }
 ```
 
-Required fields:
-
-- `credentialsParameter`: `str`
-
-<a id="resourcerequirementtypedef"></a>
+```python title="Definition"
+class RepositoryCredentialsTypeDef(TypedDict):
+    credentialsParameter: str,
+```
 
 ## ResourceRequirementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ResourceRequirementTypeDef
+
+def get_value() -> ResourceRequirementTypeDef:
+    return {
+        "value": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceRequirementTypeDef(TypedDict):
+    value: str,
+    type: ResourceTypeType,  # (1)
+```
 
-- `value`: `str`
-- `type`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-<a id="resourcetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ResourceTypeDef
+
+def get_value() -> ResourceTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `type`: `str`
-- `doubleValue`: `float`
-- `longValue`: `int`
-- `integerValue`: `int`
-- `stringSetValue`: `List`\[`str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceTypeDef(TypedDict):
+    name: NotRequired[str],
+    type: NotRequired[str],
+    doubleValue: NotRequired[float],
+    longValue: NotRequired[int],
+    integerValue: NotRequired[int],
+    stringSetValue: NotRequired[List[str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="runtaskrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RunTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RunTaskRequestRequestTypeDef
+
+def get_value() -> RunTaskRequestRequestTypeDef:
+    return {
+        "taskDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunTaskRequestRequestTypeDef(TypedDict):
+    taskDefinition: str,
+    capacityProviderStrategy: NotRequired[Sequence[CapacityProviderStrategyItemTypeDef]],  # (1)
+    cluster: NotRequired[str],
+    count: NotRequired[int],
+    enableECSManagedTags: NotRequired[bool],
+    enableExecuteCommand: NotRequired[bool],
+    group: NotRequired[str],
+    launchType: NotRequired[LaunchTypeType],  # (2)
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
+    overrides: NotRequired[TaskOverrideTypeDef],  # (4)
+    placementConstraints: NotRequired[Sequence[PlacementConstraintTypeDef]],  # (5)
+    placementStrategy: NotRequired[Sequence[PlacementStrategyTypeDef]],  # (6)
+    platformVersion: NotRequired[str],
+    propagateTags: NotRequired[PropagateTagsType],  # (7)
+    referenceId: NotRequired[str],
+    startedBy: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (8)
+```
 
-- `taskDefinition`: `str`
-
-Optional fields:
-
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `cluster`: `str`
-- `count`: `int`
-- `enableECSManagedTags`: `bool`
-- `enableExecuteCommand`: `bool`
-- `group`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `platformVersion`: `str`
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `referenceId`: `str`
-- `startedBy`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="runtaskresponsetypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-braces: TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef) 
+5. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+6. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+7. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## RunTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RunTaskResponseTypeDef
+
+def get_value() -> RunTaskResponseTypeDef:
+    return {
+        "tasks": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RunTaskResponseTypeDef(TypedDict):
+    tasks: List[TaskTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="runtimeplatformtypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RuntimePlatformTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import RuntimePlatformTypeDef
+
+def get_value() -> RuntimePlatformTypeDef:
+    return {
+        "cpuArchitecture": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RuntimePlatformTypeDef(TypedDict):
+    cpuArchitecture: NotRequired[CPUArchitectureType],  # (1)
+    operatingSystemFamily: NotRequired[OSFamilyType],  # (2)
+```
 
-- `cpuArchitecture`: [CPUArchitectureType](./literals.md#cpuarchitecturetype)
-- `operatingSystemFamily`: [OSFamilyType](./literals.md#osfamilytype)
-
-<a id="scaletypedef"></a>
-
+1. See [:material-code-brackets: CPUArchitectureType](./literals.md#cpuarchitecturetype) 
+2. See [:material-code-brackets: OSFamilyType](./literals.md#osfamilytype) 
 ## ScaleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ScaleTypeDef
+
+def get_value() -> ScaleTypeDef:
+    return {
+        "value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScaleTypeDef(TypedDict):
+    value: NotRequired[float],
+    unit: NotRequired[ScaleUnitType],  # (1)
+```
 
-- `value`: `float`
-- `unit`: `Literal['PERCENT']` (see
-  [ScaleUnitType](./literals.md#scaleunittype))
-
-<a id="secrettypedef"></a>
-
+1. See [:material-code-brackets: ScaleUnitType](./literals.md#scaleunittype) 
 ## SecretTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SecretTypeDef
+
+def get_value() -> SecretTypeDef:
+    return {
+        "name": ...,
+        "valueFrom": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `valueFrom`: `str`
-
-<a id="serviceeventtypedef"></a>
+```python title="Definition"
+class SecretTypeDef(TypedDict):
+    name: str,
+    valueFrom: str,
+```
 
 ## ServiceEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ServiceEventTypeDef
+
+def get_value() -> ServiceEventTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `createdAt`: `datetime`
-- `message`: `str`
-
-<a id="serviceregistrytypedef"></a>
+```python title="Definition"
+class ServiceEventTypeDef(TypedDict):
+    id: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    message: NotRequired[str],
+```
 
 ## ServiceRegistryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ServiceRegistryTypeDef
+
+def get_value() -> ServiceRegistryTypeDef:
+    return {
+        "registryArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `registryArn`: `str`
-- `port`: `int`
-- `containerName`: `str`
-- `containerPort`: `int`
-
-<a id="servicetypedef"></a>
+```python title="Definition"
+class ServiceRegistryTypeDef(TypedDict):
+    registryArn: NotRequired[str],
+    port: NotRequired[int],
+    containerName: NotRequired[str],
+    containerPort: NotRequired[int],
+```
 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "serviceArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    serviceArn: NotRequired[str],
+    serviceName: NotRequired[str],
+    clusterArn: NotRequired[str],
+    loadBalancers: NotRequired[List[LoadBalancerTypeDef]],  # (1)
+    serviceRegistries: NotRequired[List[ServiceRegistryTypeDef]],  # (2)
+    status: NotRequired[str],
+    desiredCount: NotRequired[int],
+    runningCount: NotRequired[int],
+    pendingCount: NotRequired[int],
+    launchType: NotRequired[LaunchTypeType],  # (3)
+    capacityProviderStrategy: NotRequired[List[CapacityProviderStrategyItemTypeDef]],  # (4)
+    platformVersion: NotRequired[str],
+    platformFamily: NotRequired[str],
+    taskDefinition: NotRequired[str],
+    deploymentConfiguration: NotRequired[DeploymentConfigurationTypeDef],  # (5)
+    taskSets: NotRequired[List[TaskSetTypeDef]],  # (6)
+    deployments: NotRequired[List[DeploymentTypeDef]],  # (7)
+    roleArn: NotRequired[str],
+    events: NotRequired[List[ServiceEventTypeDef]],  # (8)
+    createdAt: NotRequired[datetime],
+    placementConstraints: NotRequired[List[PlacementConstraintTypeDef]],  # (9)
+    placementStrategy: NotRequired[List[PlacementStrategyTypeDef]],  # (10)
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (11)
+    healthCheckGracePeriodSeconds: NotRequired[int],
+    schedulingStrategy: NotRequired[SchedulingStrategyType],  # (12)
+    deploymentController: NotRequired[DeploymentControllerTypeDef],  # (13)
+    tags: NotRequired[List[TagTypeDef]],  # (14)
+    createdBy: NotRequired[str],
+    enableECSManagedTags: NotRequired[bool],
+    propagateTags: NotRequired[PropagateTagsType],  # (15)
+    enableExecuteCommand: NotRequired[bool],
+```
 
-- `serviceArn`: `str`
-- `serviceName`: `str`
-- `clusterArn`: `str`
-- `loadBalancers`:
-  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `List`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `status`: `str`
-- `desiredCount`: `int`
-- `runningCount`: `int`
-- `pendingCount`: `int`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `platformFamily`: `str`
-- `taskDefinition`: `str`
-- `deploymentConfiguration`:
-  [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
-- `taskSets`: `List`\[[TaskSetTypeDef](./type_defs.md#tasksettypedef)\]
-- `deployments`:
-  `List`\[[DeploymentTypeDef](./type_defs.md#deploymenttypedef)\]
-- `roleArn`: `str`
-- `events`: `List`\[[ServiceEventTypeDef](./type_defs.md#serviceeventtypedef)\]
-- `createdAt`: `datetime`
-- `placementConstraints`:
-  `List`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `List`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `healthCheckGracePeriodSeconds`: `int`
-- `schedulingStrategy`:
-  [SchedulingStrategyType](./literals.md#schedulingstrategytype)
-- `deploymentController`:
-  [DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef)
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `createdBy`: `str`
-- `enableECSManagedTags`: `bool`
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `enableExecuteCommand`: `bool`
-
-<a id="sessiontypedef"></a>
-
+1. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+2. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+3. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+4. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+5. See [:material-code-braces: DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef) 
+6. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+7. See [:material-code-braces: DeploymentTypeDef](./type_defs.md#deploymenttypedef) 
+8. See [:material-code-braces: ServiceEventTypeDef](./type_defs.md#serviceeventtypedef) 
+9. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+10. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+11. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+12. See [:material-code-brackets: SchedulingStrategyType](./literals.md#schedulingstrategytype) 
+13. See [:material-code-braces: DeploymentControllerTypeDef](./type_defs.md#deploymentcontrollertypedef) 
+14. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+15. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
 ## SessionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SessionTypeDef
+
+def get_value() -> SessionTypeDef:
+    return {
+        "sessionId": ...,
+    }
 ```
 
-Optional fields:
-
-- `sessionId`: `str`
-- `streamUrl`: `str`
-- `tokenValue`: `str`
-
-<a id="settingtypedef"></a>
+```python title="Definition"
+class SessionTypeDef(TypedDict):
+    sessionId: NotRequired[str],
+    streamUrl: NotRequired[str],
+    tokenValue: NotRequired[str],
+```
 
 ## SettingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SettingTypeDef
+
+def get_value() -> SettingTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SettingTypeDef(TypedDict):
+    name: NotRequired[SettingNameType],  # (1)
+    value: NotRequired[str],
+    principalArn: NotRequired[str],
+```
 
-- `name`: [SettingNameType](./literals.md#settingnametype)
-- `value`: `str`
-- `principalArn`: `str`
-
-<a id="starttaskrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SettingNameType](./literals.md#settingnametype) 
 ## StartTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import StartTaskRequestRequestTypeDef
+
+def get_value() -> StartTaskRequestRequestTypeDef:
+    return {
+        "containerInstances": ...,
+        "taskDefinition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTaskRequestRequestTypeDef(TypedDict):
+    containerInstances: Sequence[str],
+    taskDefinition: str,
+    cluster: NotRequired[str],
+    enableECSManagedTags: NotRequired[bool],
+    enableExecuteCommand: NotRequired[bool],
+    group: NotRequired[str],
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (1)
+    overrides: NotRequired[TaskOverrideTypeDef],  # (2)
+    propagateTags: NotRequired[PropagateTagsType],  # (3)
+    referenceId: NotRequired[str],
+    startedBy: NotRequired[str],
+    tags: NotRequired[Sequence[TagTypeDef]],  # (4)
+```
 
-- `containerInstances`: `Sequence`\[`str`\]
-- `taskDefinition`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `enableECSManagedTags`: `bool`
-- `enableExecuteCommand`: `bool`
-- `group`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `referenceId`: `str`
-- `startedBy`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="starttaskresponsetypedef"></a>
-
+1. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+2. See [:material-code-braces: TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef) 
+3. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## StartTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import StartTaskResponseTypeDef
+
+def get_value() -> StartTaskResponseTypeDef:
+    return {
+        "tasks": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTaskResponseTypeDef(TypedDict):
+    tasks: List[TaskTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `tasks`: `List`\[[TaskTypeDef](./type_defs.md#tasktypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stoptaskrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopTaskRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import StopTaskRequestRequestTypeDef
+
+def get_value() -> StopTaskRequestRequestTypeDef:
+    return {
+        "task": ...,
+    }
 ```
 
-Required fields:
-
-- `task`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `reason`: `str`
-
-<a id="stoptaskresponsetypedef"></a>
+```python title="Definition"
+class StopTaskRequestRequestTypeDef(TypedDict):
+    task: str,
+    cluster: NotRequired[str],
+    reason: NotRequired[str],
+```
 
 ## StopTaskResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import StopTaskResponseTypeDef
+
+def get_value() -> StopTaskResponseTypeDef:
+    return {
+        "task": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopTaskResponseTypeDef(TypedDict):
+    task: TaskTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `task`: [TaskTypeDef](./type_defs.md#tasktypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="submitattachmentstatechangesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskTypeDef](./type_defs.md#tasktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubmitAttachmentStateChangesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesRequestRequestTypeDef
+
+def get_value() -> SubmitAttachmentStateChangesRequestRequestTypeDef:
+    return {
+        "attachments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubmitAttachmentStateChangesRequestRequestTypeDef(TypedDict):
+    attachments: Sequence[AttachmentStateChangeTypeDef],  # (1)
+    cluster: NotRequired[str],
+```
 
-- `attachments`:
-  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
-
-Optional fields:
-
-- `cluster`: `str`
-
-<a id="submitattachmentstatechangesresponsetypedef"></a>
-
+1. See [:material-code-braces: AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef) 
 ## SubmitAttachmentStateChangesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitAttachmentStateChangesResponseTypeDef
+
+def get_value() -> SubmitAttachmentStateChangesResponseTypeDef:
+    return {
+        "acknowledgment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubmitAttachmentStateChangesResponseTypeDef(TypedDict):
+    acknowledgment: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `acknowledgment`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="submitcontainerstatechangerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubmitContainerStateChangeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeRequestRequestTypeDef
+
+def get_value() -> SubmitContainerStateChangeRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubmitContainerStateChangeRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    task: NotRequired[str],
+    containerName: NotRequired[str],
+    runtimeId: NotRequired[str],
+    status: NotRequired[str],
+    exitCode: NotRequired[int],
+    reason: NotRequired[str],
+    networkBindings: NotRequired[Sequence[NetworkBindingTypeDef]],  # (1)
+```
 
-- `cluster`: `str`
-- `task`: `str`
-- `containerName`: `str`
-- `runtimeId`: `str`
-- `status`: `str`
-- `exitCode`: `int`
-- `reason`: `str`
-- `networkBindings`:
-  `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
-
-<a id="submitcontainerstatechangeresponsetypedef"></a>
-
+1. See [:material-code-braces: NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef) 
 ## SubmitContainerStateChangeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitContainerStateChangeResponseTypeDef
+
+def get_value() -> SubmitContainerStateChangeResponseTypeDef:
+    return {
+        "acknowledgment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubmitContainerStateChangeResponseTypeDef(TypedDict):
+    acknowledgment: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `acknowledgment`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="submittaskstatechangerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SubmitTaskStateChangeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeRequestRequestTypeDef
+
+def get_value() -> SubmitTaskStateChangeRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SubmitTaskStateChangeRequestRequestTypeDef(TypedDict):
+    cluster: NotRequired[str],
+    task: NotRequired[str],
+    status: NotRequired[str],
+    reason: NotRequired[str],
+    containers: NotRequired[Sequence[ContainerStateChangeTypeDef]],  # (1)
+    attachments: NotRequired[Sequence[AttachmentStateChangeTypeDef]],  # (2)
+    managedAgents: NotRequired[Sequence[ManagedAgentStateChangeTypeDef]],  # (3)
+    pullStartedAt: NotRequired[Union[datetime, str]],
+    pullStoppedAt: NotRequired[Union[datetime, str]],
+    executionStoppedAt: NotRequired[Union[datetime, str]],
+```
 
-- `cluster`: `str`
-- `task`: `str`
-- `status`: `str`
-- `reason`: `str`
-- `containers`:
-  `Sequence`\[[ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef)\]
-- `attachments`:
-  `Sequence`\[[AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)\]
-- `managedAgents`:
-  `Sequence`\[[ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef)\]
-- `pullStartedAt`: `Union`\[`datetime`, `str`\]
-- `pullStoppedAt`: `Union`\[`datetime`, `str`\]
-- `executionStoppedAt`: `Union`\[`datetime`, `str`\]
-
-<a id="submittaskstatechangeresponsetypedef"></a>
-
+1. See [:material-code-braces: ContainerStateChangeTypeDef](./type_defs.md#containerstatechangetypedef) 
+2. See [:material-code-braces: AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef) 
+3. See [:material-code-braces: ManagedAgentStateChangeTypeDef](./type_defs.md#managedagentstatechangetypedef) 
 ## SubmitTaskStateChangeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SubmitTaskStateChangeResponseTypeDef
+
+def get_value() -> SubmitTaskStateChangeResponseTypeDef:
+    return {
+        "acknowledgment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubmitTaskStateChangeResponseTypeDef(TypedDict):
+    acknowledgment: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `acknowledgment`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="systemcontroltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SystemControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import SystemControlTypeDef
+
+def get_value() -> SystemControlTypeDef:
+    return {
+        "namespace": ...,
+    }
 ```
 
-Optional fields:
-
-- `namespace`: `str`
-- `value`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SystemControlTypeDef(TypedDict):
+    namespace: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "key": ...,
+    }
 ```
 
-Optional fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="taskdefinitionplacementconstrainttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    key: NotRequired[str],
+    value: NotRequired[str],
+```
 
 ## TaskDefinitionPlacementConstraintTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TaskDefinitionPlacementConstraintTypeDef
+
+def get_value() -> TaskDefinitionPlacementConstraintTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskDefinitionPlacementConstraintTypeDef(TypedDict):
+    type: NotRequired[TaskDefinitionPlacementConstraintTypeType],  # (1)
+    expression: NotRequired[str],
+```
 
-- `type`: `Literal['memberOf']` (see
-  [TaskDefinitionPlacementConstraintTypeType](./literals.md#taskdefinitionplacementconstrainttypetype))
-- `expression`: `str`
-
-<a id="taskdefinitiontypedef"></a>
-
+1. See [:material-code-brackets: TaskDefinitionPlacementConstraintTypeType](./literals.md#taskdefinitionplacementconstrainttypetype) 
 ## TaskDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TaskDefinitionTypeDef
+
+def get_value() -> TaskDefinitionTypeDef:
+    return {
+        "taskDefinitionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskDefinitionTypeDef(TypedDict):
+    taskDefinitionArn: NotRequired[str],
+    containerDefinitions: NotRequired[List[ContainerDefinitionTypeDef]],  # (1)
+    family: NotRequired[str],
+    taskRoleArn: NotRequired[str],
+    executionRoleArn: NotRequired[str],
+    networkMode: NotRequired[NetworkModeType],  # (2)
+    revision: NotRequired[int],
+    volumes: NotRequired[List[VolumeTypeDef]],  # (3)
+    status: NotRequired[TaskDefinitionStatusType],  # (4)
+    requiresAttributes: NotRequired[List[AttributeTypeDef]],  # (5)
+    placementConstraints: NotRequired[List[TaskDefinitionPlacementConstraintTypeDef]],  # (6)
+    compatibilities: NotRequired[List[CompatibilityType]],  # (7)
+    runtimePlatform: NotRequired[RuntimePlatformTypeDef],  # (8)
+    requiresCompatibilities: NotRequired[List[CompatibilityType]],  # (7)
+    cpu: NotRequired[str],
+    memory: NotRequired[str],
+    inferenceAccelerators: NotRequired[List[InferenceAcceleratorTypeDef]],  # (10)
+    pidMode: NotRequired[PidModeType],  # (11)
+    ipcMode: NotRequired[IpcModeType],  # (12)
+    proxyConfiguration: NotRequired[ProxyConfigurationTypeDef],  # (13)
+    registeredAt: NotRequired[datetime],
+    deregisteredAt: NotRequired[datetime],
+    registeredBy: NotRequired[str],
+    ephemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (14)
+```
 
-- `taskDefinitionArn`: `str`
-- `containerDefinitions`:
-  `List`\[[ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef)\]
-- `family`: `str`
-- `taskRoleArn`: `str`
-- `executionRoleArn`: `str`
-- `networkMode`: [NetworkModeType](./literals.md#networkmodetype)
-- `revision`: `int`
-- `volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
-- `status`: [TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype)
-- `requiresAttributes`:
-  `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `placementConstraints`:
-  `List`\[[TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef)\]
-- `compatibilities`:
-  `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
-- `runtimePlatform`:
-  [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
-- `requiresCompatibilities`:
-  `List`\[[CompatibilityType](./literals.md#compatibilitytype)\]
-- `cpu`: `str`
-- `memory`: `str`
-- `inferenceAccelerators`:
-  `List`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
-- `pidMode`: [PidModeType](./literals.md#pidmodetype)
-- `ipcMode`: [IpcModeType](./literals.md#ipcmodetype)
-- `proxyConfiguration`:
-  [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
-- `registeredAt`: `datetime`
-- `deregisteredAt`: `datetime`
-- `registeredBy`: `str`
-- `ephemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="taskoverridetypedef"></a>
-
+1. See [:material-code-braces: ContainerDefinitionTypeDef](./type_defs.md#containerdefinitiontypedef) 
+2. See [:material-code-brackets: NetworkModeType](./literals.md#networkmodetype) 
+3. See [:material-code-braces: VolumeTypeDef](./type_defs.md#volumetypedef) 
+4. See [:material-code-brackets: TaskDefinitionStatusType](./literals.md#taskdefinitionstatustype) 
+5. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+6. See [:material-code-braces: TaskDefinitionPlacementConstraintTypeDef](./type_defs.md#taskdefinitionplacementconstrainttypedef) 
+7. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+8. See [:material-code-braces: RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef) 
+9. See [:material-code-brackets: CompatibilityType](./literals.md#compatibilitytype) 
+10. See [:material-code-braces: InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef) 
+11. See [:material-code-brackets: PidModeType](./literals.md#pidmodetype) 
+12. See [:material-code-brackets: IpcModeType](./literals.md#ipcmodetype) 
+13. See [:material-code-braces: ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef) 
+14. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## TaskOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TaskOverrideTypeDef
+
+def get_value() -> TaskOverrideTypeDef:
+    return {
+        "containerOverrides": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskOverrideTypeDef(TypedDict):
+    containerOverrides: NotRequired[List[ContainerOverrideTypeDef]],  # (1)
+    cpu: NotRequired[str],
+    inferenceAcceleratorOverrides: NotRequired[List[InferenceAcceleratorOverrideTypeDef]],  # (2)
+    executionRoleArn: NotRequired[str],
+    memory: NotRequired[str],
+    taskRoleArn: NotRequired[str],
+    ephemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (3)
+```
 
-- `containerOverrides`:
-  `List`\[[ContainerOverrideTypeDef](./type_defs.md#containeroverridetypedef)\]
-- `cpu`: `str`
-- `inferenceAcceleratorOverrides`:
-  `List`\[[InferenceAcceleratorOverrideTypeDef](./type_defs.md#inferenceacceleratoroverridetypedef)\]
-- `executionRoleArn`: `str`
-- `memory`: `str`
-- `taskRoleArn`: `str`
-- `ephemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="tasksettypedef"></a>
-
+1. See [:material-code-braces: ContainerOverrideTypeDef](./type_defs.md#containeroverridetypedef) 
+2. See [:material-code-braces: InferenceAcceleratorOverrideTypeDef](./type_defs.md#inferenceacceleratoroverridetypedef) 
+3. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## TaskSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TaskSetTypeDef
+
+def get_value() -> TaskSetTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskSetTypeDef(TypedDict):
+    id: NotRequired[str],
+    taskSetArn: NotRequired[str],
+    serviceArn: NotRequired[str],
+    clusterArn: NotRequired[str],
+    startedBy: NotRequired[str],
+    externalId: NotRequired[str],
+    status: NotRequired[str],
+    taskDefinition: NotRequired[str],
+    computedDesiredCount: NotRequired[int],
+    pendingCount: NotRequired[int],
+    runningCount: NotRequired[int],
+    createdAt: NotRequired[datetime],
+    updatedAt: NotRequired[datetime],
+    launchType: NotRequired[LaunchTypeType],  # (1)
+    capacityProviderStrategy: NotRequired[List[CapacityProviderStrategyItemTypeDef]],  # (2)
+    platformVersion: NotRequired[str],
+    platformFamily: NotRequired[str],
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
+    loadBalancers: NotRequired[List[LoadBalancerTypeDef]],  # (4)
+    serviceRegistries: NotRequired[List[ServiceRegistryTypeDef]],  # (5)
+    scale: NotRequired[ScaleTypeDef],  # (6)
+    stabilityStatus: NotRequired[StabilityStatusType],  # (7)
+    stabilityStatusAt: NotRequired[datetime],
+    tags: NotRequired[List[TagTypeDef]],  # (8)
+```
 
-- `id`: `str`
-- `taskSetArn`: `str`
-- `serviceArn`: `str`
-- `clusterArn`: `str`
-- `startedBy`: `str`
-- `externalId`: `str`
-- `status`: `str`
-- `taskDefinition`: `str`
-- `computedDesiredCount`: `int`
-- `pendingCount`: `int`
-- `runningCount`: `int`
-- `createdAt`: `datetime`
-- `updatedAt`: `datetime`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `capacityProviderStrategy`:
-  `List`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `platformVersion`: `str`
-- `platformFamily`: `str`
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `loadBalancers`:
-  `List`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `serviceRegistries`:
-  `List`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-- `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
-- `stabilityStatus`: [StabilityStatusType](./literals.md#stabilitystatustype)
-- `stabilityStatusAt`: `datetime`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tasktypedef"></a>
-
+1. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+2. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+5. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
+6. See [:material-code-braces: ScaleTypeDef](./type_defs.md#scaletypedef) 
+7. See [:material-code-brackets: StabilityStatusType](./literals.md#stabilitystatustype) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TaskTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TaskTypeDef
+
+def get_value() -> TaskTypeDef:
+    return {
+        "attachments": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TaskTypeDef(TypedDict):
+    attachments: NotRequired[List[AttachmentTypeDef]],  # (1)
+    attributes: NotRequired[List[AttributeTypeDef]],  # (2)
+    availabilityZone: NotRequired[str],
+    capacityProviderName: NotRequired[str],
+    clusterArn: NotRequired[str],
+    connectivity: NotRequired[ConnectivityType],  # (3)
+    connectivityAt: NotRequired[datetime],
+    containerInstanceArn: NotRequired[str],
+    containers: NotRequired[List[ContainerTypeDef]],  # (4)
+    cpu: NotRequired[str],
+    createdAt: NotRequired[datetime],
+    desiredStatus: NotRequired[str],
+    enableExecuteCommand: NotRequired[bool],
+    executionStoppedAt: NotRequired[datetime],
+    group: NotRequired[str],
+    healthStatus: NotRequired[HealthStatusType],  # (5)
+    inferenceAccelerators: NotRequired[List[InferenceAcceleratorTypeDef]],  # (6)
+    lastStatus: NotRequired[str],
+    launchType: NotRequired[LaunchTypeType],  # (7)
+    memory: NotRequired[str],
+    overrides: NotRequired[TaskOverrideTypeDef],  # (8)
+    platformVersion: NotRequired[str],
+    platformFamily: NotRequired[str],
+    pullStartedAt: NotRequired[datetime],
+    pullStoppedAt: NotRequired[datetime],
+    startedAt: NotRequired[datetime],
+    startedBy: NotRequired[str],
+    stopCode: NotRequired[TaskStopCodeType],  # (9)
+    stoppedAt: NotRequired[datetime],
+    stoppedReason: NotRequired[str],
+    stoppingAt: NotRequired[datetime],
+    tags: NotRequired[List[TagTypeDef]],  # (10)
+    taskArn: NotRequired[str],
+    taskDefinitionArn: NotRequired[str],
+    version: NotRequired[int],
+    ephemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (11)
+```
 
-- `attachments`:
-  `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
-- `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `availabilityZone`: `str`
-- `capacityProviderName`: `str`
-- `clusterArn`: `str`
-- `connectivity`: [ConnectivityType](./literals.md#connectivitytype)
-- `connectivityAt`: `datetime`
-- `containerInstanceArn`: `str`
-- `containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
-- `cpu`: `str`
-- `createdAt`: `datetime`
-- `desiredStatus`: `str`
-- `enableExecuteCommand`: `bool`
-- `executionStoppedAt`: `datetime`
-- `group`: `str`
-- `healthStatus`: [HealthStatusType](./literals.md#healthstatustype)
-- `inferenceAccelerators`:
-  `List`\[[InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef)\]
-- `lastStatus`: `str`
-- `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
-- `memory`: `str`
-- `overrides`: [TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef)
-- `platformVersion`: `str`
-- `platformFamily`: `str`
-- `pullStartedAt`: `datetime`
-- `pullStoppedAt`: `datetime`
-- `startedAt`: `datetime`
-- `startedBy`: `str`
-- `stopCode`: [TaskStopCodeType](./literals.md#taskstopcodetype)
-- `stoppedAt`: `datetime`
-- `stoppedReason`: `str`
-- `stoppingAt`: `datetime`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `taskArn`: `str`
-- `taskDefinitionArn`: `str`
-- `version`: `int`
-- `ephemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="tmpfstypedef"></a>
-
+1. See [:material-code-braces: AttachmentTypeDef](./type_defs.md#attachmenttypedef) 
+2. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+3. See [:material-code-brackets: ConnectivityType](./literals.md#connectivitytype) 
+4. See [:material-code-braces: ContainerTypeDef](./type_defs.md#containertypedef) 
+5. See [:material-code-brackets: HealthStatusType](./literals.md#healthstatustype) 
+6. See [:material-code-braces: InferenceAcceleratorTypeDef](./type_defs.md#inferenceacceleratortypedef) 
+7. See [:material-code-brackets: LaunchTypeType](./literals.md#launchtypetype) 
+8. See [:material-code-braces: TaskOverrideTypeDef](./type_defs.md#taskoverridetypedef) 
+9. See [:material-code-brackets: TaskStopCodeType](./literals.md#taskstopcodetype) 
+10. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## TmpfsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import TmpfsTypeDef
+
+def get_value() -> TmpfsTypeDef:
+    return {
+        "containerPath": ...,
+        "size": ...,
+    }
 ```
 
-Required fields:
-
-- `containerPath`: `str`
-- `size`: `int`
-
-Optional fields:
-
-- `mountOptions`: `List`\[`str`\]
-
-<a id="ulimittypedef"></a>
+```python title="Definition"
+class TmpfsTypeDef(TypedDict):
+    containerPath: str,
+    size: int,
+    mountOptions: NotRequired[List[str]],
+```
 
 ## UlimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UlimitTypeDef
+
+def get_value() -> UlimitTypeDef:
+    return {
+        "name": ...,
+        "softLimit": ...,
+        "hardLimit": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UlimitTypeDef(TypedDict):
+    name: UlimitNameType,  # (1)
+    softLimit: int,
+    hardLimit: int,
+```
 
-- `name`: [UlimitNameType](./literals.md#ulimitnametype)
-- `softLimit`: `int`
-- `hardLimit`: `int`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: UlimitNameType](./literals.md#ulimitnametype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecapacityproviderrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateCapacityProviderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateCapacityProviderRequestRequestTypeDef
+
+def get_value() -> UpdateCapacityProviderRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "autoScalingGroupProvider": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCapacityProviderRequestRequestTypeDef(TypedDict):
+    name: str,
+    autoScalingGroupProvider: AutoScalingGroupProviderUpdateTypeDef,  # (1)
+```
 
-- `name`: `str`
-- `autoScalingGroupProvider`:
-  [AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef)
-
-<a id="updatecapacityproviderresponsetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef) 
 ## UpdateCapacityProviderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateCapacityProviderResponseTypeDef
+
+def get_value() -> UpdateCapacityProviderResponseTypeDef:
+    return {
+        "capacityProvider": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCapacityProviderResponseTypeDef(TypedDict):
+    capacityProvider: CapacityProviderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `capacityProvider`:
-  [CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclusterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateClusterRequestRequestTypeDef
+
+def get_value() -> UpdateClusterRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    settings: NotRequired[Sequence[ClusterSettingTypeDef]],  # (1)
+    configuration: NotRequired[ClusterConfigurationTypeDef],  # (2)
+```
 
-- `cluster`: `str`
-
-Optional fields:
-
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-- `configuration`:
-  [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
-
-<a id="updateclusterresponsetypedef"></a>
-
+1. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
+2. See [:material-code-braces: ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef) 
 ## UpdateClusterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateClusterResponseTypeDef
+
+def get_value() -> UpdateClusterResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateclustersettingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateClusterSettingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateClusterSettingsRequestRequestTypeDef
+
+def get_value() -> UpdateClusterSettingsRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "settings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterSettingsRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    settings: Sequence[ClusterSettingTypeDef],  # (1)
+```
 
-- `cluster`: `str`
-- `settings`:
-  `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
-
-<a id="updateclustersettingsresponsetypedef"></a>
-
+1. See [:material-code-braces: ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef) 
 ## UpdateClusterSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateClusterSettingsResponseTypeDef
+
+def get_value() -> UpdateClusterSettingsResponseTypeDef:
+    return {
+        "cluster": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateClusterSettingsResponseTypeDef(TypedDict):
+    cluster: ClusterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecontaineragentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ClusterTypeDef](./type_defs.md#clustertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateContainerAgentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateContainerAgentRequestRequestTypeDef
+
+def get_value() -> UpdateContainerAgentRequestRequestTypeDef:
+    return {
+        "containerInstance": ...,
+    }
 ```
 
-Required fields:
-
-- `containerInstance`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-
-<a id="updatecontaineragentresponsetypedef"></a>
+```python title="Definition"
+class UpdateContainerAgentRequestRequestTypeDef(TypedDict):
+    containerInstance: str,
+    cluster: NotRequired[str],
+```
 
 ## UpdateContainerAgentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateContainerAgentResponseTypeDef
+
+def get_value() -> UpdateContainerAgentResponseTypeDef:
+    return {
+        "containerInstance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContainerAgentResponseTypeDef(TypedDict):
+    containerInstance: ContainerInstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `containerInstance`:
-  [ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecontainerinstancesstaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateContainerInstancesStateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateRequestRequestTypeDef
+
+def get_value() -> UpdateContainerInstancesStateRequestRequestTypeDef:
+    return {
+        "containerInstances": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContainerInstancesStateRequestRequestTypeDef(TypedDict):
+    containerInstances: Sequence[str],
+    status: ContainerInstanceStatusType,  # (1)
+    cluster: NotRequired[str],
+```
 
-- `containerInstances`: `Sequence`\[`str`\]
-- `status`:
-  [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
-
-Optional fields:
-
-- `cluster`: `str`
-
-<a id="updatecontainerinstancesstateresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContainerInstanceStatusType](./literals.md#containerinstancestatustype) 
 ## UpdateContainerInstancesStateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateContainerInstancesStateResponseTypeDef
+
+def get_value() -> UpdateContainerInstancesStateResponseTypeDef:
+    return {
+        "containerInstances": ...,
+        "failures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContainerInstancesStateResponseTypeDef(TypedDict):
+    containerInstances: List[ContainerInstanceTypeDef],  # (1)
+    failures: List[FailureTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `containerInstances`:
-  `List`\[[ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)\]
-- `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateserviceprimarytasksetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef) 
+2. See [:material-code-braces: FailureTypeDef](./type_defs.md#failuretypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServicePrimaryTaskSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetRequestRequestTypeDef
+
+def get_value() -> UpdateServicePrimaryTaskSetRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "service": ...,
+        "primaryTaskSet": ...,
+    }
 ```
 
-Required fields:
-
-- `cluster`: `str`
-- `service`: `str`
-- `primaryTaskSet`: `str`
-
-<a id="updateserviceprimarytasksetresponsetypedef"></a>
+```python title="Definition"
+class UpdateServicePrimaryTaskSetRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    service: str,
+    primaryTaskSet: str,
+```
 
 ## UpdateServicePrimaryTaskSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateServicePrimaryTaskSetResponseTypeDef
+
+def get_value() -> UpdateServicePrimaryTaskSetResponseTypeDef:
+    return {
+        "taskSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServicePrimaryTaskSetResponseTypeDef(TypedDict):
+    taskSet: TaskSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateServiceRequestRequestTypeDef
+
+def get_value() -> UpdateServiceRequestRequestTypeDef:
+    return {
+        "service": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceRequestRequestTypeDef(TypedDict):
+    service: str,
+    cluster: NotRequired[str],
+    desiredCount: NotRequired[int],
+    taskDefinition: NotRequired[str],
+    capacityProviderStrategy: NotRequired[Sequence[CapacityProviderStrategyItemTypeDef]],  # (1)
+    deploymentConfiguration: NotRequired[DeploymentConfigurationTypeDef],  # (2)
+    networkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (3)
+    placementConstraints: NotRequired[Sequence[PlacementConstraintTypeDef]],  # (4)
+    placementStrategy: NotRequired[Sequence[PlacementStrategyTypeDef]],  # (5)
+    platformVersion: NotRequired[str],
+    forceNewDeployment: NotRequired[bool],
+    healthCheckGracePeriodSeconds: NotRequired[int],
+    enableExecuteCommand: NotRequired[bool],
+    enableECSManagedTags: NotRequired[bool],
+    loadBalancers: NotRequired[Sequence[LoadBalancerTypeDef]],  # (6)
+    propagateTags: NotRequired[PropagateTagsType],  # (7)
+    serviceRegistries: NotRequired[Sequence[ServiceRegistryTypeDef]],  # (8)
+```
 
-- `service`: `str`
-
-Optional fields:
-
-- `cluster`: `str`
-- `desiredCount`: `int`
-- `taskDefinition`: `str`
-- `capacityProviderStrategy`:
-  `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
-- `deploymentConfiguration`:
-  [DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef)
-- `networkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-- `placementConstraints`:
-  `Sequence`\[[PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef)\]
-- `placementStrategy`:
-  `Sequence`\[[PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef)\]
-- `platformVersion`: `str`
-- `forceNewDeployment`: `bool`
-- `healthCheckGracePeriodSeconds`: `int`
-- `enableExecuteCommand`: `bool`
-- `enableECSManagedTags`: `bool`
-- `loadBalancers`:
-  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
-- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
-- `serviceRegistries`:
-  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
-
-<a id="updateserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef) 
+2. See [:material-code-braces: DeploymentConfigurationTypeDef](./type_defs.md#deploymentconfigurationtypedef) 
+3. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
+4. See [:material-code-braces: PlacementConstraintTypeDef](./type_defs.md#placementconstrainttypedef) 
+5. See [:material-code-braces: PlacementStrategyTypeDef](./type_defs.md#placementstrategytypedef) 
+6. See [:material-code-braces: LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef) 
+7. See [:material-code-brackets: PropagateTagsType](./literals.md#propagatetagstype) 
+8. See [:material-code-braces: ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef) 
 ## UpdateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateServiceResponseTypeDef
+
+def get_value() -> UpdateServiceResponseTypeDef:
+    return {
+        "service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceResponseTypeDef(TypedDict):
+    service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetasksetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTaskSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateTaskSetRequestRequestTypeDef
+
+def get_value() -> UpdateTaskSetRequestRequestTypeDef:
+    return {
+        "cluster": ...,
+        "service": ...,
+        "taskSet": ...,
+        "scale": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTaskSetRequestRequestTypeDef(TypedDict):
+    cluster: str,
+    service: str,
+    taskSet: str,
+    scale: ScaleTypeDef,  # (1)
+```
 
-- `cluster`: `str`
-- `service`: `str`
-- `taskSet`: `str`
-- `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
-
-<a id="updatetasksetresponsetypedef"></a>
-
+1. See [:material-code-braces: ScaleTypeDef](./type_defs.md#scaletypedef) 
 ## UpdateTaskSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import UpdateTaskSetResponseTypeDef
+
+def get_value() -> UpdateTaskSetResponseTypeDef:
+    return {
+        "taskSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTaskSetResponseTypeDef(TypedDict):
+    taskSet: TaskSetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="versioninfotypedef"></a>
-
+1. See [:material-code-braces: TaskSetTypeDef](./type_defs.md#tasksettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VersionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import VersionInfoTypeDef
+
+def get_value() -> VersionInfoTypeDef:
+    return {
+        "agentVersion": ...,
+    }
 ```
 
-Optional fields:
-
-- `agentVersion`: `str`
-- `agentHash`: `str`
-- `dockerVersion`: `str`
-
-<a id="volumefromtypedef"></a>
+```python title="Definition"
+class VersionInfoTypeDef(TypedDict):
+    agentVersion: NotRequired[str],
+    agentHash: NotRequired[str],
+    dockerVersion: NotRequired[str],
+```
 
 ## VolumeFromTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import VolumeFromTypeDef
+
+def get_value() -> VolumeFromTypeDef:
+    return {
+        "sourceContainer": ...,
+    }
 ```
 
-Optional fields:
-
-- `sourceContainer`: `str`
-- `readOnly`: `bool`
-
-<a id="volumetypedef"></a>
+```python title="Definition"
+class VolumeFromTypeDef(TypedDict):
+    sourceContainer: NotRequired[str],
+    readOnly: NotRequired[bool],
+```
 
 ## VolumeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import VolumeTypeDef
+
+def get_value() -> VolumeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VolumeTypeDef(TypedDict):
+    name: NotRequired[str],
+    host: NotRequired[HostVolumePropertiesTypeDef],  # (1)
+    dockerVolumeConfiguration: NotRequired[DockerVolumeConfigurationTypeDef],  # (2)
+    efsVolumeConfiguration: NotRequired[EFSVolumeConfigurationTypeDef],  # (3)
+    fsxWindowsFileServerVolumeConfiguration: NotRequired[FSxWindowsFileServerVolumeConfigurationTypeDef],  # (4)
+```
 
-- `name`: `str`
-- `host`:
-  [HostVolumePropertiesTypeDef](./type_defs.md#hostvolumepropertiestypedef)
-- `dockerVolumeConfiguration`:
-  [DockerVolumeConfigurationTypeDef](./type_defs.md#dockervolumeconfigurationtypedef)
-- `efsVolumeConfiguration`:
-  [EFSVolumeConfigurationTypeDef](./type_defs.md#efsvolumeconfigurationtypedef)
-- `fsxWindowsFileServerVolumeConfiguration`:
-  [FSxWindowsFileServerVolumeConfigurationTypeDef](./type_defs.md#fsxwindowsfileservervolumeconfigurationtypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: HostVolumePropertiesTypeDef](./type_defs.md#hostvolumepropertiestypedef) 
+2. See [:material-code-braces: DockerVolumeConfigurationTypeDef](./type_defs.md#dockervolumeconfigurationtypedef) 
+3. See [:material-code-braces: EFSVolumeConfigurationTypeDef](./type_defs.md#efsvolumeconfigurationtypedef) 
+4. See [:material-code-braces: FSxWindowsFileServerVolumeConfigurationTypeDef](./type_defs.md#fsxwindowsfileservervolumeconfigurationtypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ecs.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

@@ -1,3563 +1,4478 @@
-<a id="typed-dictionaries-for-boto3-appmesh-module"></a>
-
-# Typed dictionaries for boto3 AppMesh module
+# Typed dictionaries
 
 > [Index](../README.md) > [AppMesh](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
-type annotations stubs module
-[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AppMesh module](#typed-dictionaries-for-boto3-appmesh-module)
-  - [AccessLogTypeDef](#accesslogtypedef)
-  - [AwsCloudMapInstanceAttributeTypeDef](#awscloudmapinstanceattributetypedef)
-  - [AwsCloudMapServiceDiscoveryTypeDef](#awscloudmapservicediscoverytypedef)
-  - [BackendDefaultsTypeDef](#backenddefaultstypedef)
-  - [BackendTypeDef](#backendtypedef)
-  - [ClientPolicyTlsTypeDef](#clientpolicytlstypedef)
-  - [ClientPolicyTypeDef](#clientpolicytypedef)
-  - [ClientTlsCertificateTypeDef](#clienttlscertificatetypedef)
-  - [CreateGatewayRouteInputRequestTypeDef](#creategatewayrouteinputrequesttypedef)
-  - [CreateGatewayRouteOutputTypeDef](#creategatewayrouteoutputtypedef)
-  - [CreateMeshInputRequestTypeDef](#createmeshinputrequesttypedef)
-  - [CreateMeshOutputTypeDef](#createmeshoutputtypedef)
-  - [CreateRouteInputRequestTypeDef](#createrouteinputrequesttypedef)
-  - [CreateRouteOutputTypeDef](#createrouteoutputtypedef)
-  - [CreateVirtualGatewayInputRequestTypeDef](#createvirtualgatewayinputrequesttypedef)
-  - [CreateVirtualGatewayOutputTypeDef](#createvirtualgatewayoutputtypedef)
-  - [CreateVirtualNodeInputRequestTypeDef](#createvirtualnodeinputrequesttypedef)
-  - [CreateVirtualNodeOutputTypeDef](#createvirtualnodeoutputtypedef)
-  - [CreateVirtualRouterInputRequestTypeDef](#createvirtualrouterinputrequesttypedef)
-  - [CreateVirtualRouterOutputTypeDef](#createvirtualrouteroutputtypedef)
-  - [CreateVirtualServiceInputRequestTypeDef](#createvirtualserviceinputrequesttypedef)
-  - [CreateVirtualServiceOutputTypeDef](#createvirtualserviceoutputtypedef)
-  - [DeleteGatewayRouteInputRequestTypeDef](#deletegatewayrouteinputrequesttypedef)
-  - [DeleteGatewayRouteOutputTypeDef](#deletegatewayrouteoutputtypedef)
-  - [DeleteMeshInputRequestTypeDef](#deletemeshinputrequesttypedef)
-  - [DeleteMeshOutputTypeDef](#deletemeshoutputtypedef)
-  - [DeleteRouteInputRequestTypeDef](#deleterouteinputrequesttypedef)
-  - [DeleteRouteOutputTypeDef](#deleterouteoutputtypedef)
-  - [DeleteVirtualGatewayInputRequestTypeDef](#deletevirtualgatewayinputrequesttypedef)
-  - [DeleteVirtualGatewayOutputTypeDef](#deletevirtualgatewayoutputtypedef)
-  - [DeleteVirtualNodeInputRequestTypeDef](#deletevirtualnodeinputrequesttypedef)
-  - [DeleteVirtualNodeOutputTypeDef](#deletevirtualnodeoutputtypedef)
-  - [DeleteVirtualRouterInputRequestTypeDef](#deletevirtualrouterinputrequesttypedef)
-  - [DeleteVirtualRouterOutputTypeDef](#deletevirtualrouteroutputtypedef)
-  - [DeleteVirtualServiceInputRequestTypeDef](#deletevirtualserviceinputrequesttypedef)
-  - [DeleteVirtualServiceOutputTypeDef](#deletevirtualserviceoutputtypedef)
-  - [DescribeGatewayRouteInputRequestTypeDef](#describegatewayrouteinputrequesttypedef)
-  - [DescribeGatewayRouteOutputTypeDef](#describegatewayrouteoutputtypedef)
-  - [DescribeMeshInputRequestTypeDef](#describemeshinputrequesttypedef)
-  - [DescribeMeshOutputTypeDef](#describemeshoutputtypedef)
-  - [DescribeRouteInputRequestTypeDef](#describerouteinputrequesttypedef)
-  - [DescribeRouteOutputTypeDef](#describerouteoutputtypedef)
-  - [DescribeVirtualGatewayInputRequestTypeDef](#describevirtualgatewayinputrequesttypedef)
-  - [DescribeVirtualGatewayOutputTypeDef](#describevirtualgatewayoutputtypedef)
-  - [DescribeVirtualNodeInputRequestTypeDef](#describevirtualnodeinputrequesttypedef)
-  - [DescribeVirtualNodeOutputTypeDef](#describevirtualnodeoutputtypedef)
-  - [DescribeVirtualRouterInputRequestTypeDef](#describevirtualrouterinputrequesttypedef)
-  - [DescribeVirtualRouterOutputTypeDef](#describevirtualrouteroutputtypedef)
-  - [DescribeVirtualServiceInputRequestTypeDef](#describevirtualserviceinputrequesttypedef)
-  - [DescribeVirtualServiceOutputTypeDef](#describevirtualserviceoutputtypedef)
-  - [DnsServiceDiscoveryTypeDef](#dnsservicediscoverytypedef)
-  - [DurationTypeDef](#durationtypedef)
-  - [EgressFilterTypeDef](#egressfiltertypedef)
-  - [FileAccessLogTypeDef](#fileaccesslogtypedef)
-  - [GatewayRouteDataTypeDef](#gatewayroutedatatypedef)
-  - [GatewayRouteHostnameMatchTypeDef](#gatewayroutehostnamematchtypedef)
-  - [GatewayRouteHostnameRewriteTypeDef](#gatewayroutehostnamerewritetypedef)
-  - [GatewayRouteRefTypeDef](#gatewayroutereftypedef)
-  - [GatewayRouteSpecTypeDef](#gatewayroutespectypedef)
-  - [GatewayRouteStatusTypeDef](#gatewayroutestatustypedef)
-  - [GatewayRouteTargetTypeDef](#gatewayroutetargettypedef)
-  - [GatewayRouteVirtualServiceTypeDef](#gatewayroutevirtualservicetypedef)
-  - [GrpcGatewayRouteActionTypeDef](#grpcgatewayrouteactiontypedef)
-  - [GrpcGatewayRouteMatchTypeDef](#grpcgatewayroutematchtypedef)
-  - [GrpcGatewayRouteMetadataTypeDef](#grpcgatewayroutemetadatatypedef)
-  - [GrpcGatewayRouteRewriteTypeDef](#grpcgatewayrouterewritetypedef)
-  - [GrpcGatewayRouteTypeDef](#grpcgatewayroutetypedef)
-  - [GrpcMetadataMatchMethodTypeDef](#grpcmetadatamatchmethodtypedef)
-  - [GrpcRetryPolicyTypeDef](#grpcretrypolicytypedef)
-  - [GrpcRouteActionTypeDef](#grpcrouteactiontypedef)
-  - [GrpcRouteMatchTypeDef](#grpcroutematchtypedef)
-  - [GrpcRouteMetadataMatchMethodTypeDef](#grpcroutemetadatamatchmethodtypedef)
-  - [GrpcRouteMetadataTypeDef](#grpcroutemetadatatypedef)
-  - [GrpcRouteTypeDef](#grpcroutetypedef)
-  - [GrpcTimeoutTypeDef](#grpctimeouttypedef)
-  - [HeaderMatchMethodTypeDef](#headermatchmethodtypedef)
-  - [HealthCheckPolicyTypeDef](#healthcheckpolicytypedef)
-  - [HttpGatewayRouteActionTypeDef](#httpgatewayrouteactiontypedef)
-  - [HttpGatewayRouteHeaderTypeDef](#httpgatewayrouteheadertypedef)
-  - [HttpGatewayRouteMatchTypeDef](#httpgatewayroutematchtypedef)
-  - [HttpGatewayRoutePathRewriteTypeDef](#httpgatewayroutepathrewritetypedef)
-  - [HttpGatewayRoutePrefixRewriteTypeDef](#httpgatewayrouteprefixrewritetypedef)
-  - [HttpGatewayRouteRewriteTypeDef](#httpgatewayrouterewritetypedef)
-  - [HttpGatewayRouteTypeDef](#httpgatewayroutetypedef)
-  - [HttpPathMatchTypeDef](#httppathmatchtypedef)
-  - [HttpQueryParameterTypeDef](#httpqueryparametertypedef)
-  - [HttpRetryPolicyTypeDef](#httpretrypolicytypedef)
-  - [HttpRouteActionTypeDef](#httprouteactiontypedef)
-  - [HttpRouteHeaderTypeDef](#httprouteheadertypedef)
-  - [HttpRouteMatchTypeDef](#httproutematchtypedef)
-  - [HttpRouteTypeDef](#httproutetypedef)
-  - [HttpTimeoutTypeDef](#httptimeouttypedef)
-  - [ListGatewayRoutesInputRequestTypeDef](#listgatewayroutesinputrequesttypedef)
-  - [ListGatewayRoutesOutputTypeDef](#listgatewayroutesoutputtypedef)
-  - [ListMeshesInputRequestTypeDef](#listmeshesinputrequesttypedef)
-  - [ListMeshesOutputTypeDef](#listmeshesoutputtypedef)
-  - [ListRoutesInputRequestTypeDef](#listroutesinputrequesttypedef)
-  - [ListRoutesOutputTypeDef](#listroutesoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [ListVirtualGatewaysInputRequestTypeDef](#listvirtualgatewaysinputrequesttypedef)
-  - [ListVirtualGatewaysOutputTypeDef](#listvirtualgatewaysoutputtypedef)
-  - [ListVirtualNodesInputRequestTypeDef](#listvirtualnodesinputrequesttypedef)
-  - [ListVirtualNodesOutputTypeDef](#listvirtualnodesoutputtypedef)
-  - [ListVirtualRoutersInputRequestTypeDef](#listvirtualroutersinputrequesttypedef)
-  - [ListVirtualRoutersOutputTypeDef](#listvirtualroutersoutputtypedef)
-  - [ListVirtualServicesInputRequestTypeDef](#listvirtualservicesinputrequesttypedef)
-  - [ListVirtualServicesOutputTypeDef](#listvirtualservicesoutputtypedef)
-  - [ListenerTimeoutTypeDef](#listenertimeouttypedef)
-  - [ListenerTlsAcmCertificateTypeDef](#listenertlsacmcertificatetypedef)
-  - [ListenerTlsCertificateTypeDef](#listenertlscertificatetypedef)
-  - [ListenerTlsFileCertificateTypeDef](#listenertlsfilecertificatetypedef)
-  - [ListenerTlsSdsCertificateTypeDef](#listenertlssdscertificatetypedef)
-  - [ListenerTlsTypeDef](#listenertlstypedef)
-  - [ListenerTlsValidationContextTrustTypeDef](#listenertlsvalidationcontexttrusttypedef)
-  - [ListenerTlsValidationContextTypeDef](#listenertlsvalidationcontexttypedef)
-  - [ListenerTypeDef](#listenertypedef)
-  - [LoggingTypeDef](#loggingtypedef)
-  - [MatchRangeTypeDef](#matchrangetypedef)
-  - [MeshDataTypeDef](#meshdatatypedef)
-  - [MeshRefTypeDef](#meshreftypedef)
-  - [MeshSpecTypeDef](#meshspectypedef)
-  - [MeshStatusTypeDef](#meshstatustypedef)
-  - [OutlierDetectionTypeDef](#outlierdetectiontypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PortMappingTypeDef](#portmappingtypedef)
-  - [QueryParameterMatchTypeDef](#queryparametermatchtypedef)
-  - [ResourceMetadataTypeDef](#resourcemetadatatypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteDataTypeDef](#routedatatypedef)
-  - [RouteRefTypeDef](#routereftypedef)
-  - [RouteSpecTypeDef](#routespectypedef)
-  - [RouteStatusTypeDef](#routestatustypedef)
-  - [ServiceDiscoveryTypeDef](#servicediscoverytypedef)
-  - [SubjectAlternativeNameMatchersTypeDef](#subjectalternativenamematcherstypedef)
-  - [SubjectAlternativeNamesTypeDef](#subjectalternativenamestypedef)
-  - [TagRefTypeDef](#tagreftypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TcpRouteActionTypeDef](#tcprouteactiontypedef)
-  - [TcpRouteTypeDef](#tcproutetypedef)
-  - [TcpTimeoutTypeDef](#tcptimeouttypedef)
-  - [TlsValidationContextAcmTrustTypeDef](#tlsvalidationcontextacmtrusttypedef)
-  - [TlsValidationContextFileTrustTypeDef](#tlsvalidationcontextfiletrusttypedef)
-  - [TlsValidationContextSdsTrustTypeDef](#tlsvalidationcontextsdstrusttypedef)
-  - [TlsValidationContextTrustTypeDef](#tlsvalidationcontexttrusttypedef)
-  - [TlsValidationContextTypeDef](#tlsvalidationcontexttypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateGatewayRouteInputRequestTypeDef](#updategatewayrouteinputrequesttypedef)
-  - [UpdateGatewayRouteOutputTypeDef](#updategatewayrouteoutputtypedef)
-  - [UpdateMeshInputRequestTypeDef](#updatemeshinputrequesttypedef)
-  - [UpdateMeshOutputTypeDef](#updatemeshoutputtypedef)
-  - [UpdateRouteInputRequestTypeDef](#updaterouteinputrequesttypedef)
-  - [UpdateRouteOutputTypeDef](#updaterouteoutputtypedef)
-  - [UpdateVirtualGatewayInputRequestTypeDef](#updatevirtualgatewayinputrequesttypedef)
-  - [UpdateVirtualGatewayOutputTypeDef](#updatevirtualgatewayoutputtypedef)
-  - [UpdateVirtualNodeInputRequestTypeDef](#updatevirtualnodeinputrequesttypedef)
-  - [UpdateVirtualNodeOutputTypeDef](#updatevirtualnodeoutputtypedef)
-  - [UpdateVirtualRouterInputRequestTypeDef](#updatevirtualrouterinputrequesttypedef)
-  - [UpdateVirtualRouterOutputTypeDef](#updatevirtualrouteroutputtypedef)
-  - [UpdateVirtualServiceInputRequestTypeDef](#updatevirtualserviceinputrequesttypedef)
-  - [UpdateVirtualServiceOutputTypeDef](#updatevirtualserviceoutputtypedef)
-  - [VirtualGatewayAccessLogTypeDef](#virtualgatewayaccesslogtypedef)
-  - [VirtualGatewayBackendDefaultsTypeDef](#virtualgatewaybackenddefaultstypedef)
-  - [VirtualGatewayClientPolicyTlsTypeDef](#virtualgatewayclientpolicytlstypedef)
-  - [VirtualGatewayClientPolicyTypeDef](#virtualgatewayclientpolicytypedef)
-  - [VirtualGatewayClientTlsCertificateTypeDef](#virtualgatewayclienttlscertificatetypedef)
-  - [VirtualGatewayConnectionPoolTypeDef](#virtualgatewayconnectionpooltypedef)
-  - [VirtualGatewayDataTypeDef](#virtualgatewaydatatypedef)
-  - [VirtualGatewayFileAccessLogTypeDef](#virtualgatewayfileaccesslogtypedef)
-  - [VirtualGatewayGrpcConnectionPoolTypeDef](#virtualgatewaygrpcconnectionpooltypedef)
-  - [VirtualGatewayHealthCheckPolicyTypeDef](#virtualgatewayhealthcheckpolicytypedef)
-  - [VirtualGatewayHttp2ConnectionPoolTypeDef](#virtualgatewayhttp2connectionpooltypedef)
-  - [VirtualGatewayHttpConnectionPoolTypeDef](#virtualgatewayhttpconnectionpooltypedef)
-  - [VirtualGatewayListenerTlsAcmCertificateTypeDef](#virtualgatewaylistenertlsacmcertificatetypedef)
-  - [VirtualGatewayListenerTlsCertificateTypeDef](#virtualgatewaylistenertlscertificatetypedef)
-  - [VirtualGatewayListenerTlsFileCertificateTypeDef](#virtualgatewaylistenertlsfilecertificatetypedef)
-  - [VirtualGatewayListenerTlsSdsCertificateTypeDef](#virtualgatewaylistenertlssdscertificatetypedef)
-  - [VirtualGatewayListenerTlsTypeDef](#virtualgatewaylistenertlstypedef)
-  - [VirtualGatewayListenerTlsValidationContextTrustTypeDef](#virtualgatewaylistenertlsvalidationcontexttrusttypedef)
-  - [VirtualGatewayListenerTlsValidationContextTypeDef](#virtualgatewaylistenertlsvalidationcontexttypedef)
-  - [VirtualGatewayListenerTypeDef](#virtualgatewaylistenertypedef)
-  - [VirtualGatewayLoggingTypeDef](#virtualgatewayloggingtypedef)
-  - [VirtualGatewayPortMappingTypeDef](#virtualgatewayportmappingtypedef)
-  - [VirtualGatewayRefTypeDef](#virtualgatewayreftypedef)
-  - [VirtualGatewaySpecTypeDef](#virtualgatewayspectypedef)
-  - [VirtualGatewayStatusTypeDef](#virtualgatewaystatustypedef)
-  - [VirtualGatewayTlsValidationContextAcmTrustTypeDef](#virtualgatewaytlsvalidationcontextacmtrusttypedef)
-  - [VirtualGatewayTlsValidationContextFileTrustTypeDef](#virtualgatewaytlsvalidationcontextfiletrusttypedef)
-  - [VirtualGatewayTlsValidationContextSdsTrustTypeDef](#virtualgatewaytlsvalidationcontextsdstrusttypedef)
-  - [VirtualGatewayTlsValidationContextTrustTypeDef](#virtualgatewaytlsvalidationcontexttrusttypedef)
-  - [VirtualGatewayTlsValidationContextTypeDef](#virtualgatewaytlsvalidationcontexttypedef)
-  - [VirtualNodeConnectionPoolTypeDef](#virtualnodeconnectionpooltypedef)
-  - [VirtualNodeDataTypeDef](#virtualnodedatatypedef)
-  - [VirtualNodeGrpcConnectionPoolTypeDef](#virtualnodegrpcconnectionpooltypedef)
-  - [VirtualNodeHttp2ConnectionPoolTypeDef](#virtualnodehttp2connectionpooltypedef)
-  - [VirtualNodeHttpConnectionPoolTypeDef](#virtualnodehttpconnectionpooltypedef)
-  - [VirtualNodeRefTypeDef](#virtualnodereftypedef)
-  - [VirtualNodeServiceProviderTypeDef](#virtualnodeserviceprovidertypedef)
-  - [VirtualNodeSpecTypeDef](#virtualnodespectypedef)
-  - [VirtualNodeStatusTypeDef](#virtualnodestatustypedef)
-  - [VirtualNodeTcpConnectionPoolTypeDef](#virtualnodetcpconnectionpooltypedef)
-  - [VirtualRouterDataTypeDef](#virtualrouterdatatypedef)
-  - [VirtualRouterListenerTypeDef](#virtualrouterlistenertypedef)
-  - [VirtualRouterRefTypeDef](#virtualrouterreftypedef)
-  - [VirtualRouterServiceProviderTypeDef](#virtualrouterserviceprovidertypedef)
-  - [VirtualRouterSpecTypeDef](#virtualrouterspectypedef)
-  - [VirtualRouterStatusTypeDef](#virtualrouterstatustypedef)
-  - [VirtualServiceBackendTypeDef](#virtualservicebackendtypedef)
-  - [VirtualServiceDataTypeDef](#virtualservicedatatypedef)
-  - [VirtualServiceProviderTypeDef](#virtualserviceprovidertypedef)
-  - [VirtualServiceRefTypeDef](#virtualservicereftypedef)
-  - [VirtualServiceSpecTypeDef](#virtualservicespectypedef)
-  - [VirtualServiceStatusTypeDef](#virtualservicestatustypedef)
-  - [WeightedTargetTypeDef](#weightedtargettypedef)
-
-<a id="accesslogtypedef"></a>
+    Auto-generated documentation for [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
+    type annotations stubs module [mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 ## AccessLogTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import AccessLogTypeDef
+
+def get_value() -> AccessLogTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccessLogTypeDef(TypedDict):
+    file: NotRequired[FileAccessLogTypeDef],  # (1)
+```
 
-- `file`: [FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef)
-
-<a id="awscloudmapinstanceattributetypedef"></a>
-
+1. See [:material-code-braces: FileAccessLogTypeDef](./type_defs.md#fileaccesslogtypedef) 
 ## AwsCloudMapInstanceAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import AwsCloudMapInstanceAttributeTypeDef
+
+def get_value() -> AwsCloudMapInstanceAttributeTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="awscloudmapservicediscoverytypedef"></a>
+```python title="Definition"
+class AwsCloudMapInstanceAttributeTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## AwsCloudMapServiceDiscoveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import AwsCloudMapServiceDiscoveryTypeDef
+
+def get_value() -> AwsCloudMapServiceDiscoveryTypeDef:
+    return {
+        "namespaceName": ...,
+        "serviceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AwsCloudMapServiceDiscoveryTypeDef(TypedDict):
+    namespaceName: str,
+    serviceName: str,
+    attributes: NotRequired[Sequence[AwsCloudMapInstanceAttributeTypeDef]],  # (1)
+```
 
-- `namespaceName`: `str`
-- `serviceName`: `str`
-
-Optional fields:
-
-- `attributes`:
-  `Sequence`\[[AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef)\]
-
-<a id="backenddefaultstypedef"></a>
-
+1. See [:material-code-braces: AwsCloudMapInstanceAttributeTypeDef](./type_defs.md#awscloudmapinstanceattributetypedef) 
 ## BackendDefaultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import BackendDefaultsTypeDef
+
+def get_value() -> BackendDefaultsTypeDef:
+    return {
+        "clientPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackendDefaultsTypeDef(TypedDict):
+    clientPolicy: NotRequired[ClientPolicyTypeDef],  # (1)
+```
 
-- `clientPolicy`: [ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef)
-
-<a id="backendtypedef"></a>
-
+1. See [:material-code-braces: ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef) 
 ## BackendTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import BackendTypeDef
+
+def get_value() -> BackendTypeDef:
+    return {
+        "virtualService": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackendTypeDef(TypedDict):
+    virtualService: NotRequired[VirtualServiceBackendTypeDef],  # (1)
+```
 
-- `virtualService`:
-  [VirtualServiceBackendTypeDef](./type_defs.md#virtualservicebackendtypedef)
-
-<a id="clientpolicytlstypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceBackendTypeDef](./type_defs.md#virtualservicebackendtypedef) 
 ## ClientPolicyTlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ClientPolicyTlsTypeDef
+
+def get_value() -> ClientPolicyTlsTypeDef:
+    return {
+        "validation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ClientPolicyTlsTypeDef(TypedDict):
+    validation: TlsValidationContextTypeDef,  # (2)
+    certificate: NotRequired[ClientTlsCertificateTypeDef],  # (1)
+    enforce: NotRequired[bool],
+    ports: NotRequired[Sequence[int]],
+```
 
-- `validation`:
-  [TlsValidationContextTypeDef](./type_defs.md#tlsvalidationcontexttypedef)
-
-Optional fields:
-
-- `certificate`:
-  [ClientTlsCertificateTypeDef](./type_defs.md#clienttlscertificatetypedef)
-- `enforce`: `bool`
-- `ports`: `Sequence`\[`int`\]
-
-<a id="clientpolicytypedef"></a>
-
+1. See [:material-code-braces: ClientTlsCertificateTypeDef](./type_defs.md#clienttlscertificatetypedef) 
+2. See [:material-code-braces: TlsValidationContextTypeDef](./type_defs.md#tlsvalidationcontexttypedef) 
 ## ClientPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ClientPolicyTypeDef
+
+def get_value() -> ClientPolicyTypeDef:
+    return {
+        "tls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClientPolicyTypeDef(TypedDict):
+    tls: NotRequired[ClientPolicyTlsTypeDef],  # (1)
+```
 
-- `tls`: [ClientPolicyTlsTypeDef](./type_defs.md#clientpolicytlstypedef)
-
-<a id="clienttlscertificatetypedef"></a>
-
+1. See [:material-code-braces: ClientPolicyTlsTypeDef](./type_defs.md#clientpolicytlstypedef) 
 ## ClientTlsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ClientTlsCertificateTypeDef
+
+def get_value() -> ClientTlsCertificateTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ClientTlsCertificateTypeDef(TypedDict):
+    file: NotRequired[ListenerTlsFileCertificateTypeDef],  # (1)
+    sds: NotRequired[ListenerTlsSdsCertificateTypeDef],  # (2)
+```
 
-- `file`:
-  [ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef)
-- `sds`:
-  [ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef)
-
-<a id="creategatewayrouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef) 
+2. See [:material-code-braces: ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef) 
 ## CreateGatewayRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateGatewayRouteInputRequestTypeDef
+
+def get_value() -> CreateGatewayRouteInputRequestTypeDef:
+    return {
+        "gatewayRouteName": ...,
+        "meshName": ...,
+        "spec": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayRouteInputRequestTypeDef(TypedDict):
+    gatewayRouteName: str,
+    meshName: str,
+    spec: GatewayRouteSpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `gatewayRouteName`: `str`
-- `meshName`: `str`
-- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="creategatewayrouteoutputtypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateGatewayRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateGatewayRouteOutputTypeDef
+
+def get_value() -> CreateGatewayRouteOutputTypeDef:
+    return {
+        "gatewayRoute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGatewayRouteOutputTypeDef(TypedDict):
+    gatewayRoute: GatewayRouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayRoute`:
-  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createmeshinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateMeshInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateMeshInputRequestTypeDef
+
+def get_value() -> CreateMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+    clientToken: NotRequired[str],
+    spec: NotRequired[MeshSpecTypeDef],  # (1)
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createmeshoutputtypedef"></a>
-
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateMeshOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateMeshOutputTypeDef
+
+def get_value() -> CreateMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateRouteInputRequestTypeDef
+
+def get_value() -> CreateRouteInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "routeName": ...,
+        "spec": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteInputRequestTypeDef(TypedDict):
+    meshName: str,
+    routeName: str,
+    spec: RouteSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-- `routeName`: `str`
-- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef)
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createrouteoutputtypedef"></a>
-
+1. See [:material-code-braces: RouteSpecTypeDef](./type_defs.md#routespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateRouteOutputTypeDef
+
+def get_value() -> CreateRouteOutputTypeDef:
+    return {
+        "route": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRouteOutputTypeDef(TypedDict):
+    route: RouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvirtualgatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RouteDataTypeDef](./type_defs.md#routedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVirtualGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualGatewayInputRequestTypeDef
+
+def get_value() -> CreateVirtualGatewayInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualGatewayInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualGatewaySpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createvirtualgatewayoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateVirtualGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualGatewayOutputTypeDef
+
+def get_value() -> CreateVirtualGatewayOutputTypeDef:
+    return {
+        "virtualGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualGatewayOutputTypeDef(TypedDict):
+    virtualGateway: VirtualGatewayDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualGateway`:
-  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvirtualnodeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVirtualNodeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualNodeInputRequestTypeDef
+
+def get_value() -> CreateVirtualNodeInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualNodeInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualNodeSpecTypeDef,  # (1)
+    virtualNodeName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
-- `virtualNodeName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createvirtualnodeoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateVirtualNodeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualNodeOutputTypeDef
+
+def get_value() -> CreateVirtualNodeOutputTypeDef:
+    return {
+        "virtualNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualNodeOutputTypeDef(TypedDict):
+    virtualNode: VirtualNodeDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvirtualrouterinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVirtualRouterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualRouterInputRequestTypeDef
+
+def get_value() -> CreateVirtualRouterInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualRouterInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualRouterSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createvirtualrouteroutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateVirtualRouterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualRouterOutputTypeDef
+
+def get_value() -> CreateVirtualRouterOutputTypeDef:
+    return {
+        "virtualRouter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualRouterOutputTypeDef(TypedDict):
+    virtualRouter: VirtualRouterDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualRouter`:
-  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvirtualserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVirtualServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualServiceInputRequestTypeDef
+
+def get_value() -> CreateVirtualServiceInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualServiceInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualServiceSpecTypeDef,  # (1)
+    virtualServiceName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+    tags: NotRequired[Sequence[TagRefTypeDef]],  # (2)
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
-- `virtualServiceName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="createvirtualserviceoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef) 
+2. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## CreateVirtualServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import CreateVirtualServiceOutputTypeDef
+
+def get_value() -> CreateVirtualServiceOutputTypeDef:
+    return {
+        "virtualService": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVirtualServiceOutputTypeDef(TypedDict):
+    virtualService: VirtualServiceDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualService`:
-  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegatewayrouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGatewayRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteGatewayRouteInputRequestTypeDef
+
+def get_value() -> DeleteGatewayRouteInputRequestTypeDef:
+    return {
+        "gatewayRouteName": ...,
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayRouteName`: `str`
-- `meshName`: `str`
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deletegatewayrouteoutputtypedef"></a>
+```python title="Definition"
+class DeleteGatewayRouteInputRequestTypeDef(TypedDict):
+    gatewayRouteName: str,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteGatewayRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteGatewayRouteOutputTypeDef
+
+def get_value() -> DeleteGatewayRouteOutputTypeDef:
+    return {
+        "gatewayRoute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGatewayRouteOutputTypeDef(TypedDict):
+    gatewayRoute: GatewayRouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayRoute`:
-  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletemeshinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteMeshInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteMeshInputRequestTypeDef
+
+def get_value() -> DeleteMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-<a id="deletemeshoutputtypedef"></a>
+```python title="Definition"
+class DeleteMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+```
 
 ## DeleteMeshOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteMeshOutputTypeDef
+
+def get_value() -> DeleteMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteRouteInputRequestTypeDef
+
+def get_value() -> DeleteRouteInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "routeName": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `routeName`: `str`
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deleterouteoutputtypedef"></a>
+```python title="Definition"
+class DeleteRouteInputRequestTypeDef(TypedDict):
+    meshName: str,
+    routeName: str,
+    virtualRouterName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteRouteOutputTypeDef
+
+def get_value() -> DeleteRouteOutputTypeDef:
+    return {
+        "route": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRouteOutputTypeDef(TypedDict):
+    route: RouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevirtualgatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RouteDataTypeDef](./type_defs.md#routedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVirtualGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualGatewayInputRequestTypeDef
+
+def get_value() -> DeleteVirtualGatewayInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deletevirtualgatewayoutputtypedef"></a>
+```python title="Definition"
+class DeleteVirtualGatewayInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteVirtualGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualGatewayOutputTypeDef
+
+def get_value() -> DeleteVirtualGatewayOutputTypeDef:
+    return {
+        "virtualGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVirtualGatewayOutputTypeDef(TypedDict):
+    virtualGateway: VirtualGatewayDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualGateway`:
-  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevirtualnodeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVirtualNodeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualNodeInputRequestTypeDef
+
+def get_value() -> DeleteVirtualNodeInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualNodeName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deletevirtualnodeoutputtypedef"></a>
+```python title="Definition"
+class DeleteVirtualNodeInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualNodeName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteVirtualNodeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualNodeOutputTypeDef
+
+def get_value() -> DeleteVirtualNodeOutputTypeDef:
+    return {
+        "virtualNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVirtualNodeOutputTypeDef(TypedDict):
+    virtualNode: VirtualNodeDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevirtualrouterinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVirtualRouterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualRouterInputRequestTypeDef
+
+def get_value() -> DeleteVirtualRouterInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deletevirtualrouteroutputtypedef"></a>
+```python title="Definition"
+class DeleteVirtualRouterInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteVirtualRouterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualRouterOutputTypeDef
+
+def get_value() -> DeleteVirtualRouterOutputTypeDef:
+    return {
+        "virtualRouter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVirtualRouterOutputTypeDef(TypedDict):
+    virtualRouter: VirtualRouterDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualRouter`:
-  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevirtualserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVirtualServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualServiceInputRequestTypeDef
+
+def get_value() -> DeleteVirtualServiceInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualServiceName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="deletevirtualserviceoutputtypedef"></a>
+```python title="Definition"
+class DeleteVirtualServiceInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualServiceName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DeleteVirtualServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DeleteVirtualServiceOutputTypeDef
+
+def get_value() -> DeleteVirtualServiceOutputTypeDef:
+    return {
+        "virtualService": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVirtualServiceOutputTypeDef(TypedDict):
+    virtualService: VirtualServiceDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualService`:
-  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describegatewayrouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGatewayRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeGatewayRouteInputRequestTypeDef
+
+def get_value() -> DescribeGatewayRouteInputRequestTypeDef:
+    return {
+        "gatewayRouteName": ...,
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `gatewayRouteName`: `str`
-- `meshName`: `str`
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describegatewayrouteoutputtypedef"></a>
+```python title="Definition"
+class DescribeGatewayRouteInputRequestTypeDef(TypedDict):
+    gatewayRouteName: str,
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeGatewayRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeGatewayRouteOutputTypeDef
+
+def get_value() -> DescribeGatewayRouteOutputTypeDef:
+    return {
+        "gatewayRoute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGatewayRouteOutputTypeDef(TypedDict):
+    gatewayRoute: GatewayRouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayRoute`:
-  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describemeshinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeMeshInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeMeshInputRequestTypeDef
+
+def get_value() -> DescribeMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describemeshoutputtypedef"></a>
+```python title="Definition"
+class DescribeMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeMeshOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeMeshOutputTypeDef
+
+def get_value() -> DescribeMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeRouteInputRequestTypeDef
+
+def get_value() -> DescribeRouteInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "routeName": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `routeName`: `str`
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describerouteoutputtypedef"></a>
+```python title="Definition"
+class DescribeRouteInputRequestTypeDef(TypedDict):
+    meshName: str,
+    routeName: str,
+    virtualRouterName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeRouteOutputTypeDef
+
+def get_value() -> DescribeRouteOutputTypeDef:
+    return {
+        "route": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRouteOutputTypeDef(TypedDict):
+    route: RouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevirtualgatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RouteDataTypeDef](./type_defs.md#routedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVirtualGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualGatewayInputRequestTypeDef
+
+def get_value() -> DescribeVirtualGatewayInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describevirtualgatewayoutputtypedef"></a>
+```python title="Definition"
+class DescribeVirtualGatewayInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeVirtualGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualGatewayOutputTypeDef
+
+def get_value() -> DescribeVirtualGatewayOutputTypeDef:
+    return {
+        "virtualGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVirtualGatewayOutputTypeDef(TypedDict):
+    virtualGateway: VirtualGatewayDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualGateway`:
-  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevirtualnodeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVirtualNodeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualNodeInputRequestTypeDef
+
+def get_value() -> DescribeVirtualNodeInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualNodeName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describevirtualnodeoutputtypedef"></a>
+```python title="Definition"
+class DescribeVirtualNodeInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualNodeName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeVirtualNodeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualNodeOutputTypeDef
+
+def get_value() -> DescribeVirtualNodeOutputTypeDef:
+    return {
+        "virtualNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVirtualNodeOutputTypeDef(TypedDict):
+    virtualNode: VirtualNodeDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevirtualrouterinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVirtualRouterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualRouterInputRequestTypeDef
+
+def get_value() -> DescribeVirtualRouterInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describevirtualrouteroutputtypedef"></a>
+```python title="Definition"
+class DescribeVirtualRouterInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeVirtualRouterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualRouterOutputTypeDef
+
+def get_value() -> DescribeVirtualRouterOutputTypeDef:
+    return {
+        "virtualRouter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVirtualRouterOutputTypeDef(TypedDict):
+    virtualRouter: VirtualRouterDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualRouter`:
-  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevirtualserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVirtualServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualServiceInputRequestTypeDef
+
+def get_value() -> DescribeVirtualServiceInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualServiceName`: `str`
-
-Optional fields:
-
-- `meshOwner`: `str`
-
-<a id="describevirtualserviceoutputtypedef"></a>
+```python title="Definition"
+class DescribeVirtualServiceInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualServiceName: str,
+    meshOwner: NotRequired[str],
+```
 
 ## DescribeVirtualServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DescribeVirtualServiceOutputTypeDef
+
+def get_value() -> DescribeVirtualServiceOutputTypeDef:
+    return {
+        "virtualService": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVirtualServiceOutputTypeDef(TypedDict):
+    virtualService: VirtualServiceDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualService`:
-  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dnsservicediscoverytypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DnsServiceDiscoveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DnsServiceDiscoveryTypeDef
+
+def get_value() -> DnsServiceDiscoveryTypeDef:
+    return {
+        "hostname": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DnsServiceDiscoveryTypeDef(TypedDict):
+    hostname: str,
+    responseType: NotRequired[DnsResponseTypeType],  # (1)
+```
 
-- `hostname`: `str`
-
-Optional fields:
-
-- `responseType`: [DnsResponseTypeType](./literals.md#dnsresponsetypetype)
-
-<a id="durationtypedef"></a>
-
+1. See [:material-code-brackets: DnsResponseTypeType](./literals.md#dnsresponsetypetype) 
 ## DurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import DurationTypeDef
+
+def get_value() -> DurationTypeDef:
+    return {
+        "unit": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DurationTypeDef(TypedDict):
+    unit: NotRequired[DurationUnitType],  # (1)
+    value: NotRequired[int],
+```
 
-- `unit`: [DurationUnitType](./literals.md#durationunittype)
-- `value`: `int`
-
-<a id="egressfiltertypedef"></a>
-
+1. See [:material-code-brackets: DurationUnitType](./literals.md#durationunittype) 
 ## EgressFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import EgressFilterTypeDef
+
+def get_value() -> EgressFilterTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EgressFilterTypeDef(TypedDict):
+    type: EgressFilterTypeType,  # (1)
+```
 
-- `type`: [EgressFilterTypeType](./literals.md#egressfiltertypetype)
-
-<a id="fileaccesslogtypedef"></a>
-
+1. See [:material-code-brackets: EgressFilterTypeType](./literals.md#egressfiltertypetype) 
 ## FileAccessLogTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import FileAccessLogTypeDef
+
+def get_value() -> FileAccessLogTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Required fields:
-
-- `path`: `str`
-
-<a id="gatewayroutedatatypedef"></a>
+```python title="Definition"
+class FileAccessLogTypeDef(TypedDict):
+    path: str,
+```
 
 ## GatewayRouteDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteDataTypeDef
+
+def get_value() -> GatewayRouteDataTypeDef:
+    return {
+        "gatewayRouteName": ...,
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GatewayRouteDataTypeDef(TypedDict):
+    gatewayRouteName: str,
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: GatewayRouteSpecTypeDef,  # (2)
+    status: GatewayRouteStatusTypeDef,  # (3)
+    virtualGatewayName: str,
+```
 
-- `gatewayRouteName`: `str`
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-- `status`:
-  [GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef)
-- `virtualGatewayName`: `str`
-
-<a id="gatewayroutehostnamematchtypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef) 
+3. See [:material-code-braces: GatewayRouteStatusTypeDef](./type_defs.md#gatewayroutestatustypedef) 
 ## GatewayRouteHostnameMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteHostnameMatchTypeDef
+
+def get_value() -> GatewayRouteHostnameMatchTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
-
-- `exact`: `str`
-- `suffix`: `str`
-
-<a id="gatewayroutehostnamerewritetypedef"></a>
+```python title="Definition"
+class GatewayRouteHostnameMatchTypeDef(TypedDict):
+    exact: NotRequired[str],
+    suffix: NotRequired[str],
+```
 
 ## GatewayRouteHostnameRewriteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteHostnameRewriteTypeDef
+
+def get_value() -> GatewayRouteHostnameRewriteTypeDef:
+    return {
+        "defaultTargetHostname": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GatewayRouteHostnameRewriteTypeDef(TypedDict):
+    defaultTargetHostname: NotRequired[DefaultGatewayRouteRewriteType],  # (1)
+```
 
-- `defaultTargetHostname`:
-  [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
-
-<a id="gatewayroutereftypedef"></a>
-
+1. See [:material-code-brackets: DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype) 
 ## GatewayRouteRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteRefTypeDef
+
+def get_value() -> GatewayRouteRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "gatewayRouteName": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `gatewayRouteName`: `str`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-- `virtualGatewayName`: `str`
-
-<a id="gatewayroutespectypedef"></a>
+```python title="Definition"
+class GatewayRouteRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    gatewayRouteName: str,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+    virtualGatewayName: str,
+```
 
 ## GatewayRouteSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteSpecTypeDef
+
+def get_value() -> GatewayRouteSpecTypeDef:
+    return {
+        "grpcRoute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GatewayRouteSpecTypeDef(TypedDict):
+    grpcRoute: NotRequired[GrpcGatewayRouteTypeDef],  # (1)
+    http2Route: NotRequired[HttpGatewayRouteTypeDef],  # (2)
+    httpRoute: NotRequired[HttpGatewayRouteTypeDef],  # (2)
+    priority: NotRequired[int],
+```
 
-- `grpcRoute`:
-  [GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef)
-- `http2Route`:
-  [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
-- `httpRoute`:
-  [HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef)
-- `priority`: `int`
-
-<a id="gatewayroutestatustypedef"></a>
-
+1. See [:material-code-braces: GrpcGatewayRouteTypeDef](./type_defs.md#grpcgatewayroutetypedef) 
+2. See [:material-code-braces: HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef) 
+3. See [:material-code-braces: HttpGatewayRouteTypeDef](./type_defs.md#httpgatewayroutetypedef) 
 ## GatewayRouteStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteStatusTypeDef
+
+def get_value() -> GatewayRouteStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GatewayRouteStatusTypeDef(TypedDict):
+    status: GatewayRouteStatusCodeType,  # (1)
+```
 
-- `status`:
-  [GatewayRouteStatusCodeType](./literals.md#gatewayroutestatuscodetype)
-
-<a id="gatewayroutetargettypedef"></a>
-
+1. See [:material-code-brackets: GatewayRouteStatusCodeType](./literals.md#gatewayroutestatuscodetype) 
 ## GatewayRouteTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteTargetTypeDef
+
+def get_value() -> GatewayRouteTargetTypeDef:
+    return {
+        "virtualService": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GatewayRouteTargetTypeDef(TypedDict):
+    virtualService: GatewayRouteVirtualServiceTypeDef,  # (1)
+```
 
-- `virtualService`:
-  [GatewayRouteVirtualServiceTypeDef](./type_defs.md#gatewayroutevirtualservicetypedef)
-
-<a id="gatewayroutevirtualservicetypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteVirtualServiceTypeDef](./type_defs.md#gatewayroutevirtualservicetypedef) 
 ## GatewayRouteVirtualServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GatewayRouteVirtualServiceTypeDef
+
+def get_value() -> GatewayRouteVirtualServiceTypeDef:
+    return {
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualServiceName`: `str`
-
-<a id="grpcgatewayrouteactiontypedef"></a>
+```python title="Definition"
+class GatewayRouteVirtualServiceTypeDef(TypedDict):
+    virtualServiceName: str,
+```
 
 ## GrpcGatewayRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteActionTypeDef
+
+def get_value() -> GrpcGatewayRouteActionTypeDef:
+    return {
+        "target": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcGatewayRouteActionTypeDef(TypedDict):
+    target: GatewayRouteTargetTypeDef,  # (2)
+    rewrite: NotRequired[GrpcGatewayRouteRewriteTypeDef],  # (1)
+```
 
-- `target`:
-  [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
-
-Optional fields:
-
-- `rewrite`:
-  [GrpcGatewayRouteRewriteTypeDef](./type_defs.md#grpcgatewayrouterewritetypedef)
-
-<a id="grpcgatewayroutematchtypedef"></a>
-
+1. See [:material-code-braces: GrpcGatewayRouteRewriteTypeDef](./type_defs.md#grpcgatewayrouterewritetypedef) 
+2. See [:material-code-braces: GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef) 
 ## GrpcGatewayRouteMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteMatchTypeDef
+
+def get_value() -> GrpcGatewayRouteMatchTypeDef:
+    return {
+        "hostname": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcGatewayRouteMatchTypeDef(TypedDict):
+    hostname: NotRequired[GatewayRouteHostnameMatchTypeDef],  # (1)
+    metadata: NotRequired[Sequence[GrpcGatewayRouteMetadataTypeDef]],  # (2)
+    serviceName: NotRequired[str],
+```
 
-- `hostname`:
-  [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
-- `metadata`:
-  `Sequence`\[[GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef)\]
-- `serviceName`: `str`
-
-<a id="grpcgatewayroutemetadatatypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef) 
+2. See [:material-code-braces: GrpcGatewayRouteMetadataTypeDef](./type_defs.md#grpcgatewayroutemetadatatypedef) 
 ## GrpcGatewayRouteMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteMetadataTypeDef
+
+def get_value() -> GrpcGatewayRouteMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcGatewayRouteMetadataTypeDef(TypedDict):
+    name: str,
+    invert: NotRequired[bool],
+    match: NotRequired[GrpcMetadataMatchMethodTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `invert`: `bool`
-- `match`:
-  [GrpcMetadataMatchMethodTypeDef](./type_defs.md#grpcmetadatamatchmethodtypedef)
-
-<a id="grpcgatewayrouterewritetypedef"></a>
-
+1. See [:material-code-braces: GrpcMetadataMatchMethodTypeDef](./type_defs.md#grpcmetadatamatchmethodtypedef) 
 ## GrpcGatewayRouteRewriteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteRewriteTypeDef
+
+def get_value() -> GrpcGatewayRouteRewriteTypeDef:
+    return {
+        "hostname": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcGatewayRouteRewriteTypeDef(TypedDict):
+    hostname: NotRequired[GatewayRouteHostnameRewriteTypeDef],  # (1)
+```
 
-- `hostname`:
-  [GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef)
-
-<a id="grpcgatewayroutetypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef) 
 ## GrpcGatewayRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcGatewayRouteTypeDef
+
+def get_value() -> GrpcGatewayRouteTypeDef:
+    return {
+        "action": ...,
+        "match": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcGatewayRouteTypeDef(TypedDict):
+    action: GrpcGatewayRouteActionTypeDef,  # (1)
+    match: GrpcGatewayRouteMatchTypeDef,  # (2)
+```
 
-- `action`:
-  [GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef)
-- `match`:
-  [GrpcGatewayRouteMatchTypeDef](./type_defs.md#grpcgatewayroutematchtypedef)
-
-<a id="grpcmetadatamatchmethodtypedef"></a>
-
+1. See [:material-code-braces: GrpcGatewayRouteActionTypeDef](./type_defs.md#grpcgatewayrouteactiontypedef) 
+2. See [:material-code-braces: GrpcGatewayRouteMatchTypeDef](./type_defs.md#grpcgatewayroutematchtypedef) 
 ## GrpcMetadataMatchMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcMetadataMatchMethodTypeDef
+
+def get_value() -> GrpcMetadataMatchMethodTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcMetadataMatchMethodTypeDef(TypedDict):
+    exact: NotRequired[str],
+    prefix: NotRequired[str],
+    range: NotRequired[MatchRangeTypeDef],  # (1)
+    regex: NotRequired[str],
+    suffix: NotRequired[str],
+```
 
-- `exact`: `str`
-- `prefix`: `str`
-- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
-- `regex`: `str`
-- `suffix`: `str`
-
-<a id="grpcretrypolicytypedef"></a>
-
+1. See [:material-code-braces: MatchRangeTypeDef](./type_defs.md#matchrangetypedef) 
 ## GrpcRetryPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRetryPolicyTypeDef
+
+def get_value() -> GrpcRetryPolicyTypeDef:
+    return {
+        "maxRetries": ...,
+        "perRetryTimeout": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcRetryPolicyTypeDef(TypedDict):
+    maxRetries: int,
+    perRetryTimeout: DurationTypeDef,  # (2)
+    grpcRetryEvents: NotRequired[Sequence[GrpcRetryPolicyEventType]],  # (1)
+    httpRetryEvents: NotRequired[Sequence[str]],
+    tcpRetryEvents: NotRequired[Sequence[TcpRetryPolicyEventType]],  # (3)
+```
 
-- `maxRetries`: `int`
-- `perRetryTimeout`: [DurationTypeDef](./type_defs.md#durationtypedef)
-
-Optional fields:
-
-- `grpcRetryEvents`:
-  `Sequence`\[[GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype)\]
-- `httpRetryEvents`: `Sequence`\[`str`\]
-- `tcpRetryEvents`: `Sequence`\[`Literal['connection-error']` (see
-  [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
-
-<a id="grpcrouteactiontypedef"></a>
-
+1. See [:material-code-brackets: GrpcRetryPolicyEventType](./literals.md#grpcretrypolicyeventtype) 
+2. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+3. See [:material-code-brackets: TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype) 
 ## GrpcRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRouteActionTypeDef
+
+def get_value() -> GrpcRouteActionTypeDef:
+    return {
+        "weightedTargets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcRouteActionTypeDef(TypedDict):
+    weightedTargets: Sequence[WeightedTargetTypeDef],  # (1)
+```
 
-- `weightedTargets`:
-  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
-
-<a id="grpcroutematchtypedef"></a>
-
+1. See [:material-code-braces: WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef) 
 ## GrpcRouteMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRouteMatchTypeDef
+
+def get_value() -> GrpcRouteMatchTypeDef:
+    return {
+        "metadata": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcRouteMatchTypeDef(TypedDict):
+    metadata: NotRequired[Sequence[GrpcRouteMetadataTypeDef]],  # (1)
+    methodName: NotRequired[str],
+    serviceName: NotRequired[str],
+```
 
-- `metadata`:
-  `Sequence`\[[GrpcRouteMetadataTypeDef](./type_defs.md#grpcroutemetadatatypedef)\]
-- `methodName`: `str`
-- `serviceName`: `str`
-
-<a id="grpcroutemetadatamatchmethodtypedef"></a>
-
+1. See [:material-code-braces: GrpcRouteMetadataTypeDef](./type_defs.md#grpcroutemetadatatypedef) 
 ## GrpcRouteMetadataMatchMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRouteMetadataMatchMethodTypeDef
+
+def get_value() -> GrpcRouteMetadataMatchMethodTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcRouteMetadataMatchMethodTypeDef(TypedDict):
+    exact: NotRequired[str],
+    prefix: NotRequired[str],
+    range: NotRequired[MatchRangeTypeDef],  # (1)
+    regex: NotRequired[str],
+    suffix: NotRequired[str],
+```
 
-- `exact`: `str`
-- `prefix`: `str`
-- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
-- `regex`: `str`
-- `suffix`: `str`
-
-<a id="grpcroutemetadatatypedef"></a>
-
+1. See [:material-code-braces: MatchRangeTypeDef](./type_defs.md#matchrangetypedef) 
 ## GrpcRouteMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRouteMetadataTypeDef
+
+def get_value() -> GrpcRouteMetadataTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcRouteMetadataTypeDef(TypedDict):
+    name: str,
+    invert: NotRequired[bool],
+    match: NotRequired[GrpcRouteMetadataMatchMethodTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `invert`: `bool`
-- `match`:
-  [GrpcRouteMetadataMatchMethodTypeDef](./type_defs.md#grpcroutemetadatamatchmethodtypedef)
-
-<a id="grpcroutetypedef"></a>
-
+1. See [:material-code-braces: GrpcRouteMetadataMatchMethodTypeDef](./type_defs.md#grpcroutemetadatamatchmethodtypedef) 
 ## GrpcRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcRouteTypeDef
+
+def get_value() -> GrpcRouteTypeDef:
+    return {
+        "action": ...,
+        "match": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GrpcRouteTypeDef(TypedDict):
+    action: GrpcRouteActionTypeDef,  # (1)
+    match: GrpcRouteMatchTypeDef,  # (2)
+    retryPolicy: NotRequired[GrpcRetryPolicyTypeDef],  # (3)
+    timeout: NotRequired[GrpcTimeoutTypeDef],  # (4)
+```
 
-- `action`: [GrpcRouteActionTypeDef](./type_defs.md#grpcrouteactiontypedef)
-- `match`: [GrpcRouteMatchTypeDef](./type_defs.md#grpcroutematchtypedef)
-
-Optional fields:
-
-- `retryPolicy`:
-  [GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef)
-- `timeout`: [GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef)
-
-<a id="grpctimeouttypedef"></a>
-
+1. See [:material-code-braces: GrpcRouteActionTypeDef](./type_defs.md#grpcrouteactiontypedef) 
+2. See [:material-code-braces: GrpcRouteMatchTypeDef](./type_defs.md#grpcroutematchtypedef) 
+3. See [:material-code-braces: GrpcRetryPolicyTypeDef](./type_defs.md#grpcretrypolicytypedef) 
+4. See [:material-code-braces: GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef) 
 ## GrpcTimeoutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import GrpcTimeoutTypeDef
+
+def get_value() -> GrpcTimeoutTypeDef:
+    return {
+        "idle": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GrpcTimeoutTypeDef(TypedDict):
+    idle: NotRequired[DurationTypeDef],  # (1)
+    perRequest: NotRequired[DurationTypeDef],  # (1)
+```
 
-- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
-- `perRequest`: [DurationTypeDef](./type_defs.md#durationtypedef)
-
-<a id="headermatchmethodtypedef"></a>
-
+1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+2. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
 ## HeaderMatchMethodTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HeaderMatchMethodTypeDef
+
+def get_value() -> HeaderMatchMethodTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HeaderMatchMethodTypeDef(TypedDict):
+    exact: NotRequired[str],
+    prefix: NotRequired[str],
+    range: NotRequired[MatchRangeTypeDef],  # (1)
+    regex: NotRequired[str],
+    suffix: NotRequired[str],
+```
 
-- `exact`: `str`
-- `prefix`: `str`
-- `range`: [MatchRangeTypeDef](./type_defs.md#matchrangetypedef)
-- `regex`: `str`
-- `suffix`: `str`
-
-<a id="healthcheckpolicytypedef"></a>
-
+1. See [:material-code-braces: MatchRangeTypeDef](./type_defs.md#matchrangetypedef) 
 ## HealthCheckPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HealthCheckPolicyTypeDef
+
+def get_value() -> HealthCheckPolicyTypeDef:
+    return {
+        "healthyThreshold": ...,
+        "intervalMillis": ...,
+        "protocol": ...,
+        "timeoutMillis": ...,
+        "unhealthyThreshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HealthCheckPolicyTypeDef(TypedDict):
+    healthyThreshold: int,
+    intervalMillis: int,
+    protocol: PortProtocolType,  # (1)
+    timeoutMillis: int,
+    unhealthyThreshold: int,
+    path: NotRequired[str],
+    port: NotRequired[int],
+```
 
-- `healthyThreshold`: `int`
-- `intervalMillis`: `int`
-- `protocol`: [PortProtocolType](./literals.md#portprotocoltype)
-- `timeoutMillis`: `int`
-- `unhealthyThreshold`: `int`
-
-Optional fields:
-
-- `path`: `str`
-- `port`: `int`
-
-<a id="httpgatewayrouteactiontypedef"></a>
-
+1. See [:material-code-brackets: PortProtocolType](./literals.md#portprotocoltype) 
 ## HttpGatewayRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteActionTypeDef
+
+def get_value() -> HttpGatewayRouteActionTypeDef:
+    return {
+        "target": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpGatewayRouteActionTypeDef(TypedDict):
+    target: GatewayRouteTargetTypeDef,  # (2)
+    rewrite: NotRequired[HttpGatewayRouteRewriteTypeDef],  # (1)
+```
 
-- `target`:
-  [GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef)
-
-Optional fields:
-
-- `rewrite`:
-  [HttpGatewayRouteRewriteTypeDef](./type_defs.md#httpgatewayrouterewritetypedef)
-
-<a id="httpgatewayrouteheadertypedef"></a>
-
+1. See [:material-code-braces: HttpGatewayRouteRewriteTypeDef](./type_defs.md#httpgatewayrouterewritetypedef) 
+2. See [:material-code-braces: GatewayRouteTargetTypeDef](./type_defs.md#gatewayroutetargettypedef) 
 ## HttpGatewayRouteHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteHeaderTypeDef
+
+def get_value() -> HttpGatewayRouteHeaderTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpGatewayRouteHeaderTypeDef(TypedDict):
+    name: str,
+    invert: NotRequired[bool],
+    match: NotRequired[HeaderMatchMethodTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `invert`: `bool`
-- `match`: [HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef)
-
-<a id="httpgatewayroutematchtypedef"></a>
-
+1. See [:material-code-braces: HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef) 
 ## HttpGatewayRouteMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteMatchTypeDef
+
+def get_value() -> HttpGatewayRouteMatchTypeDef:
+    return {
+        "headers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpGatewayRouteMatchTypeDef(TypedDict):
+    headers: NotRequired[Sequence[HttpGatewayRouteHeaderTypeDef]],  # (1)
+    hostname: NotRequired[GatewayRouteHostnameMatchTypeDef],  # (2)
+    method: NotRequired[HttpMethodType],  # (3)
+    path: NotRequired[HttpPathMatchTypeDef],  # (4)
+    prefix: NotRequired[str],
+    queryParameters: NotRequired[Sequence[HttpQueryParameterTypeDef]],  # (5)
+```
 
-- `headers`:
-  `Sequence`\[[HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef)\]
-- `hostname`:
-  [GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef)
-- `method`: [HttpMethodType](./literals.md#httpmethodtype)
-- `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
-- `prefix`: `str`
-- `queryParameters`:
-  `Sequence`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
-
-<a id="httpgatewayroutepathrewritetypedef"></a>
-
+1. See [:material-code-braces: HttpGatewayRouteHeaderTypeDef](./type_defs.md#httpgatewayrouteheadertypedef) 
+2. See [:material-code-braces: GatewayRouteHostnameMatchTypeDef](./type_defs.md#gatewayroutehostnamematchtypedef) 
+3. See [:material-code-brackets: HttpMethodType](./literals.md#httpmethodtype) 
+4. See [:material-code-braces: HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef) 
+5. See [:material-code-braces: HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef) 
 ## HttpGatewayRoutePathRewriteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRoutePathRewriteTypeDef
+
+def get_value() -> HttpGatewayRoutePathRewriteTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
-
-- `exact`: `str`
-
-<a id="httpgatewayrouteprefixrewritetypedef"></a>
+```python title="Definition"
+class HttpGatewayRoutePathRewriteTypeDef(TypedDict):
+    exact: NotRequired[str],
+```
 
 ## HttpGatewayRoutePrefixRewriteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRoutePrefixRewriteTypeDef
+
+def get_value() -> HttpGatewayRoutePrefixRewriteTypeDef:
+    return {
+        "defaultPrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpGatewayRoutePrefixRewriteTypeDef(TypedDict):
+    defaultPrefix: NotRequired[DefaultGatewayRouteRewriteType],  # (1)
+    value: NotRequired[str],
+```
 
-- `defaultPrefix`:
-  [DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype)
-- `value`: `str`
-
-<a id="httpgatewayrouterewritetypedef"></a>
-
+1. See [:material-code-brackets: DefaultGatewayRouteRewriteType](./literals.md#defaultgatewayrouterewritetype) 
 ## HttpGatewayRouteRewriteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteRewriteTypeDef
+
+def get_value() -> HttpGatewayRouteRewriteTypeDef:
+    return {
+        "hostname": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpGatewayRouteRewriteTypeDef(TypedDict):
+    hostname: NotRequired[GatewayRouteHostnameRewriteTypeDef],  # (1)
+    path: NotRequired[HttpGatewayRoutePathRewriteTypeDef],  # (2)
+    prefix: NotRequired[HttpGatewayRoutePrefixRewriteTypeDef],  # (3)
+```
 
-- `hostname`:
-  [GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef)
-- `path`:
-  [HttpGatewayRoutePathRewriteTypeDef](./type_defs.md#httpgatewayroutepathrewritetypedef)
-- `prefix`:
-  [HttpGatewayRoutePrefixRewriteTypeDef](./type_defs.md#httpgatewayrouteprefixrewritetypedef)
-
-<a id="httpgatewayroutetypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteHostnameRewriteTypeDef](./type_defs.md#gatewayroutehostnamerewritetypedef) 
+2. See [:material-code-braces: HttpGatewayRoutePathRewriteTypeDef](./type_defs.md#httpgatewayroutepathrewritetypedef) 
+3. See [:material-code-braces: HttpGatewayRoutePrefixRewriteTypeDef](./type_defs.md#httpgatewayrouteprefixrewritetypedef) 
 ## HttpGatewayRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpGatewayRouteTypeDef
+
+def get_value() -> HttpGatewayRouteTypeDef:
+    return {
+        "action": ...,
+        "match": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpGatewayRouteTypeDef(TypedDict):
+    action: HttpGatewayRouteActionTypeDef,  # (1)
+    match: HttpGatewayRouteMatchTypeDef,  # (2)
+```
 
-- `action`:
-  [HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef)
-- `match`:
-  [HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef)
-
-<a id="httppathmatchtypedef"></a>
-
+1. See [:material-code-braces: HttpGatewayRouteActionTypeDef](./type_defs.md#httpgatewayrouteactiontypedef) 
+2. See [:material-code-braces: HttpGatewayRouteMatchTypeDef](./type_defs.md#httpgatewayroutematchtypedef) 
 ## HttpPathMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpPathMatchTypeDef
+
+def get_value() -> HttpPathMatchTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
-
-- `exact`: `str`
-- `regex`: `str`
-
-<a id="httpqueryparametertypedef"></a>
+```python title="Definition"
+class HttpPathMatchTypeDef(TypedDict):
+    exact: NotRequired[str],
+    regex: NotRequired[str],
+```
 
 ## HttpQueryParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpQueryParameterTypeDef
+
+def get_value() -> HttpQueryParameterTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpQueryParameterTypeDef(TypedDict):
+    name: str,
+    match: NotRequired[QueryParameterMatchTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `match`:
-  [QueryParameterMatchTypeDef](./type_defs.md#queryparametermatchtypedef)
-
-<a id="httpretrypolicytypedef"></a>
-
+1. See [:material-code-braces: QueryParameterMatchTypeDef](./type_defs.md#queryparametermatchtypedef) 
 ## HttpRetryPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpRetryPolicyTypeDef
+
+def get_value() -> HttpRetryPolicyTypeDef:
+    return {
+        "maxRetries": ...,
+        "perRetryTimeout": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpRetryPolicyTypeDef(TypedDict):
+    maxRetries: int,
+    perRetryTimeout: DurationTypeDef,  # (1)
+    httpRetryEvents: NotRequired[Sequence[str]],
+    tcpRetryEvents: NotRequired[Sequence[TcpRetryPolicyEventType]],  # (2)
+```
 
-- `maxRetries`: `int`
-- `perRetryTimeout`: [DurationTypeDef](./type_defs.md#durationtypedef)
-
-Optional fields:
-
-- `httpRetryEvents`: `Sequence`\[`str`\]
-- `tcpRetryEvents`: `Sequence`\[`Literal['connection-error']` (see
-  [TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype))\]
-
-<a id="httprouteactiontypedef"></a>
-
+1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+2. See [:material-code-brackets: TcpRetryPolicyEventType](./literals.md#tcpretrypolicyeventtype) 
 ## HttpRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpRouteActionTypeDef
+
+def get_value() -> HttpRouteActionTypeDef:
+    return {
+        "weightedTargets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpRouteActionTypeDef(TypedDict):
+    weightedTargets: Sequence[WeightedTargetTypeDef],  # (1)
+```
 
-- `weightedTargets`:
-  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
-
-<a id="httprouteheadertypedef"></a>
-
+1. See [:material-code-braces: WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef) 
 ## HttpRouteHeaderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpRouteHeaderTypeDef
+
+def get_value() -> HttpRouteHeaderTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpRouteHeaderTypeDef(TypedDict):
+    name: str,
+    invert: NotRequired[bool],
+    match: NotRequired[HeaderMatchMethodTypeDef],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `invert`: `bool`
-- `match`: [HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef)
-
-<a id="httproutematchtypedef"></a>
-
+1. See [:material-code-braces: HeaderMatchMethodTypeDef](./type_defs.md#headermatchmethodtypedef) 
 ## HttpRouteMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpRouteMatchTypeDef
+
+def get_value() -> HttpRouteMatchTypeDef:
+    return {
+        "headers": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpRouteMatchTypeDef(TypedDict):
+    headers: NotRequired[Sequence[HttpRouteHeaderTypeDef]],  # (1)
+    method: NotRequired[HttpMethodType],  # (2)
+    path: NotRequired[HttpPathMatchTypeDef],  # (3)
+    prefix: NotRequired[str],
+    queryParameters: NotRequired[Sequence[HttpQueryParameterTypeDef]],  # (4)
+    scheme: NotRequired[HttpSchemeType],  # (5)
+```
 
-- `headers`:
-  `Sequence`\[[HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef)\]
-- `method`: [HttpMethodType](./literals.md#httpmethodtype)
-- `path`: [HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef)
-- `prefix`: `str`
-- `queryParameters`:
-  `Sequence`\[[HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef)\]
-- `scheme`: [HttpSchemeType](./literals.md#httpschemetype)
-
-<a id="httproutetypedef"></a>
-
+1. See [:material-code-braces: HttpRouteHeaderTypeDef](./type_defs.md#httprouteheadertypedef) 
+2. See [:material-code-brackets: HttpMethodType](./literals.md#httpmethodtype) 
+3. See [:material-code-braces: HttpPathMatchTypeDef](./type_defs.md#httppathmatchtypedef) 
+4. See [:material-code-braces: HttpQueryParameterTypeDef](./type_defs.md#httpqueryparametertypedef) 
+5. See [:material-code-brackets: HttpSchemeType](./literals.md#httpschemetype) 
 ## HttpRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpRouteTypeDef
+
+def get_value() -> HttpRouteTypeDef:
+    return {
+        "action": ...,
+        "match": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpRouteTypeDef(TypedDict):
+    action: HttpRouteActionTypeDef,  # (1)
+    match: HttpRouteMatchTypeDef,  # (2)
+    retryPolicy: NotRequired[HttpRetryPolicyTypeDef],  # (3)
+    timeout: NotRequired[HttpTimeoutTypeDef],  # (4)
+```
 
-- `action`: [HttpRouteActionTypeDef](./type_defs.md#httprouteactiontypedef)
-- `match`: [HttpRouteMatchTypeDef](./type_defs.md#httproutematchtypedef)
-
-Optional fields:
-
-- `retryPolicy`:
-  [HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef)
-- `timeout`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
-
-<a id="httptimeouttypedef"></a>
-
+1. See [:material-code-braces: HttpRouteActionTypeDef](./type_defs.md#httprouteactiontypedef) 
+2. See [:material-code-braces: HttpRouteMatchTypeDef](./type_defs.md#httproutematchtypedef) 
+3. See [:material-code-braces: HttpRetryPolicyTypeDef](./type_defs.md#httpretrypolicytypedef) 
+4. See [:material-code-braces: HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef) 
 ## HttpTimeoutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import HttpTimeoutTypeDef
+
+def get_value() -> HttpTimeoutTypeDef:
+    return {
+        "idle": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HttpTimeoutTypeDef(TypedDict):
+    idle: NotRequired[DurationTypeDef],  # (1)
+    perRequest: NotRequired[DurationTypeDef],  # (1)
+```
 
-- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
-- `perRequest`: [DurationTypeDef](./type_defs.md#durationtypedef)
+1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+2. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+## ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef
 
-<a id="listgatewayroutesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef
 
+def get_value() -> ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef:
+    return {
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
+```
+
+```python title="Definition"
+class ListGatewayRoutesInputListGatewayRoutesPaginateTypeDef(TypedDict):
+    meshName: str,
+    virtualGatewayName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGatewayRoutesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListGatewayRoutesInputRequestTypeDef
+
+def get_value() -> ListGatewayRoutesInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listgatewayroutesoutputtypedef"></a>
+```python title="Definition"
+class ListGatewayRoutesInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualGatewayName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListGatewayRoutesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListGatewayRoutesOutputTypeDef
+
+def get_value() -> ListGatewayRoutesOutputTypeDef:
+    return {
+        "gatewayRoutes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGatewayRoutesOutputTypeDef(TypedDict):
+    gatewayRoutes: List[GatewayRouteRefTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayRoutes`:
-  `List`\[[GatewayRouteRefTypeDef](./type_defs.md#gatewayroutereftypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GatewayRouteRefTypeDef](./type_defs.md#gatewayroutereftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListMeshesInputListMeshesPaginateTypeDef
 
-<a id="listmeshesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListMeshesInputListMeshesPaginateTypeDef
 
+def get_value() -> ListMeshesInputListMeshesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListMeshesInputListMeshesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListMeshesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListMeshesInputRequestTypeDef
+
+def get_value() -> ListMeshesInputRequestTypeDef:
+    return {
+        "limit": ...,
+    }
 ```
 
-Optional fields:
-
-- `limit`: `int`
-- `nextToken`: `str`
-
-<a id="listmeshesoutputtypedef"></a>
+```python title="Definition"
+class ListMeshesInputRequestTypeDef(TypedDict):
+    limit: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListMeshesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListMeshesOutputTypeDef
+
+def get_value() -> ListMeshesOutputTypeDef:
+    return {
+        "meshes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListMeshesOutputTypeDef(TypedDict):
+    meshes: List[MeshRefTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `meshes`: `List`\[[MeshRefTypeDef](./type_defs.md#meshreftypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: MeshRefTypeDef](./type_defs.md#meshreftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutesInputListRoutesPaginateTypeDef
 
-<a id="listroutesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListRoutesInputListRoutesPaginateTypeDef
 
+def get_value() -> ListRoutesInputListRoutesPaginateTypeDef:
+    return {
+        "meshName": ...,
+        "virtualRouterName": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutesInputListRoutesPaginateTypeDef(TypedDict):
+    meshName: str,
+    virtualRouterName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRoutesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListRoutesInputRequestTypeDef
+
+def get_value() -> ListRoutesInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listroutesoutputtypedef"></a>
+```python title="Definition"
+class ListRoutesInputRequestTypeDef(TypedDict):
+    meshName: str,
+    virtualRouterName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListRoutesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListRoutesOutputTypeDef
+
+def get_value() -> ListRoutesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "routes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRoutesOutputTypeDef(TypedDict):
+    nextToken: str,
+    routes: List[RouteRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `routes`: `List`\[[RouteRefTypeDef](./type_defs.md#routereftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RouteRefTypeDef](./type_defs.md#routereftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
-<a id="listtagsforresourceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListTagsForResourceInputListTagsForResourcePaginateTypeDef
 
+def get_value() -> ListTagsForResourceInputListTagsForResourcePaginateTypeDef:
+    return {
+        "resourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsForResourceInputListTagsForResourcePaginateTypeDef(TypedDict):
+    resourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `nextToken`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    limit: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    nextToken: str,
+    tags: List[TagRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `tags`: `List`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef
 
-<a id="listvirtualgatewaysinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef
 
+def get_value() -> ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualGatewaysInputListVirtualGatewaysPaginateTypeDef(TypedDict):
+    meshName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualGatewaysInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualGatewaysInputRequestTypeDef
+
+def get_value() -> ListVirtualGatewaysInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listvirtualgatewaysoutputtypedef"></a>
+```python title="Definition"
+class ListVirtualGatewaysInputRequestTypeDef(TypedDict):
+    meshName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListVirtualGatewaysOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualGatewaysOutputTypeDef
+
+def get_value() -> ListVirtualGatewaysOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "virtualGateways": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualGatewaysOutputTypeDef(TypedDict):
+    nextToken: str,
+    virtualGateways: List[VirtualGatewayRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `virtualGateways`:
-  `List`\[[VirtualGatewayRefTypeDef](./type_defs.md#virtualgatewayreftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VirtualGatewayRefTypeDef](./type_defs.md#virtualgatewayreftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVirtualNodesInputListVirtualNodesPaginateTypeDef
 
-<a id="listvirtualnodesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListVirtualNodesInputListVirtualNodesPaginateTypeDef
 
+def get_value() -> ListVirtualNodesInputListVirtualNodesPaginateTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualNodesInputListVirtualNodesPaginateTypeDef(TypedDict):
+    meshName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualNodesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualNodesInputRequestTypeDef
+
+def get_value() -> ListVirtualNodesInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listvirtualnodesoutputtypedef"></a>
+```python title="Definition"
+class ListVirtualNodesInputRequestTypeDef(TypedDict):
+    meshName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListVirtualNodesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualNodesOutputTypeDef
+
+def get_value() -> ListVirtualNodesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "virtualNodes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualNodesOutputTypeDef(TypedDict):
+    nextToken: str,
+    virtualNodes: List[VirtualNodeRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `virtualNodes`:
-  `List`\[[VirtualNodeRefTypeDef](./type_defs.md#virtualnodereftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VirtualNodeRefTypeDef](./type_defs.md#virtualnodereftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef
 
-<a id="listvirtualroutersinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef
 
+def get_value() -> ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualRoutersInputListVirtualRoutersPaginateTypeDef(TypedDict):
+    meshName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualRoutersInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualRoutersInputRequestTypeDef
+
+def get_value() -> ListVirtualRoutersInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listvirtualroutersoutputtypedef"></a>
+```python title="Definition"
+class ListVirtualRoutersInputRequestTypeDef(TypedDict):
+    meshName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListVirtualRoutersOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualRoutersOutputTypeDef
+
+def get_value() -> ListVirtualRoutersOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "virtualRouters": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualRoutersOutputTypeDef(TypedDict):
+    nextToken: str,
+    virtualRouters: List[VirtualRouterRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `virtualRouters`:
-  `List`\[[VirtualRouterRefTypeDef](./type_defs.md#virtualrouterreftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: VirtualRouterRefTypeDef](./type_defs.md#virtualrouterreftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVirtualServicesInputListVirtualServicesPaginateTypeDef
 
-<a id="listvirtualservicesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_appmesh.type_defs import ListVirtualServicesInputListVirtualServicesPaginateTypeDef
 
+def get_value() -> ListVirtualServicesInputListVirtualServicesPaginateTypeDef:
+    return {
+        "meshName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVirtualServicesInputListVirtualServicesPaginateTypeDef(TypedDict):
+    meshName: str,
+    meshOwner: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVirtualServicesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualServicesInputRequestTypeDef
+
+def get_value() -> ListVirtualServicesInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
-
-- `meshName`: `str`
-
-Optional fields:
-
-- `limit`: `int`
-- `meshOwner`: `str`
-- `nextToken`: `str`
-
-<a id="listvirtualservicesoutputtypedef"></a>
+```python title="Definition"
+class ListVirtualServicesInputRequestTypeDef(TypedDict):
+    meshName: str,
+    limit: NotRequired[int],
+    meshOwner: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListVirtualServicesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListVirtualServicesOutputTypeDef
+
+def get_value() -> ListVirtualServicesOutputTypeDef:
+    return {
+        "nextToken": ...,
+        "virtualServices": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVirtualServicesOutputTypeDef(TypedDict):
+    nextToken: str,
+    virtualServices: List[VirtualServiceRefTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `virtualServices`:
-  `List`\[[VirtualServiceRefTypeDef](./type_defs.md#virtualservicereftypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listenertimeouttypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceRefTypeDef](./type_defs.md#virtualservicereftypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListenerTimeoutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTimeoutTypeDef
+
+def get_value() -> ListenerTimeoutTypeDef:
+    return {
+        "grpc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListenerTimeoutTypeDef(TypedDict):
+    grpc: NotRequired[GrpcTimeoutTypeDef],  # (1)
+    http: NotRequired[HttpTimeoutTypeDef],  # (2)
+    http2: NotRequired[HttpTimeoutTypeDef],  # (2)
+    tcp: NotRequired[TcpTimeoutTypeDef],  # (4)
+```
 
-- `grpc`: [GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef)
-- `http`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
-- `http2`: [HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef)
-- `tcp`: [TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef)
-
-<a id="listenertlsacmcertificatetypedef"></a>
-
+1. See [:material-code-braces: GrpcTimeoutTypeDef](./type_defs.md#grpctimeouttypedef) 
+2. See [:material-code-braces: HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef) 
+3. See [:material-code-braces: HttpTimeoutTypeDef](./type_defs.md#httptimeouttypedef) 
+4. See [:material-code-braces: TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef) 
 ## ListenerTlsAcmCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsAcmCertificateTypeDef
+
+def get_value() -> ListenerTlsAcmCertificateTypeDef:
+    return {
+        "certificateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateArn`: `str`
-
-<a id="listenertlscertificatetypedef"></a>
+```python title="Definition"
+class ListenerTlsAcmCertificateTypeDef(TypedDict):
+    certificateArn: str,
+```
 
 ## ListenerTlsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsCertificateTypeDef
+
+def get_value() -> ListenerTlsCertificateTypeDef:
+    return {
+        "acm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListenerTlsCertificateTypeDef(TypedDict):
+    acm: NotRequired[ListenerTlsAcmCertificateTypeDef],  # (1)
+    file: NotRequired[ListenerTlsFileCertificateTypeDef],  # (2)
+    sds: NotRequired[ListenerTlsSdsCertificateTypeDef],  # (3)
+```
 
-- `acm`:
-  [ListenerTlsAcmCertificateTypeDef](./type_defs.md#listenertlsacmcertificatetypedef)
-- `file`:
-  [ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef)
-- `sds`:
-  [ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef)
-
-<a id="listenertlsfilecertificatetypedef"></a>
-
+1. See [:material-code-braces: ListenerTlsAcmCertificateTypeDef](./type_defs.md#listenertlsacmcertificatetypedef) 
+2. See [:material-code-braces: ListenerTlsFileCertificateTypeDef](./type_defs.md#listenertlsfilecertificatetypedef) 
+3. See [:material-code-braces: ListenerTlsSdsCertificateTypeDef](./type_defs.md#listenertlssdscertificatetypedef) 
 ## ListenerTlsFileCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsFileCertificateTypeDef
+
+def get_value() -> ListenerTlsFileCertificateTypeDef:
+    return {
+        "certificateChain": ...,
+        "privateKey": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateChain`: `str`
-- `privateKey`: `str`
-
-<a id="listenertlssdscertificatetypedef"></a>
+```python title="Definition"
+class ListenerTlsFileCertificateTypeDef(TypedDict):
+    certificateChain: str,
+    privateKey: str,
+```
 
 ## ListenerTlsSdsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsSdsCertificateTypeDef
+
+def get_value() -> ListenerTlsSdsCertificateTypeDef:
+    return {
+        "secretName": ...,
+    }
 ```
 
-Required fields:
-
-- `secretName`: `str`
-
-<a id="listenertlstypedef"></a>
+```python title="Definition"
+class ListenerTlsSdsCertificateTypeDef(TypedDict):
+    secretName: str,
+```
 
 ## ListenerTlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsTypeDef
+
+def get_value() -> ListenerTlsTypeDef:
+    return {
+        "certificate": ...,
+        "mode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListenerTlsTypeDef(TypedDict):
+    certificate: ListenerTlsCertificateTypeDef,  # (1)
+    mode: ListenerTlsModeType,  # (2)
+    validation: NotRequired[ListenerTlsValidationContextTypeDef],  # (3)
+```
 
-- `certificate`:
-  [ListenerTlsCertificateTypeDef](./type_defs.md#listenertlscertificatetypedef)
-- `mode`: [ListenerTlsModeType](./literals.md#listenertlsmodetype)
-
-Optional fields:
-
-- `validation`:
-  [ListenerTlsValidationContextTypeDef](./type_defs.md#listenertlsvalidationcontexttypedef)
-
-<a id="listenertlsvalidationcontexttrusttypedef"></a>
-
+1. See [:material-code-braces: ListenerTlsCertificateTypeDef](./type_defs.md#listenertlscertificatetypedef) 
+2. See [:material-code-brackets: ListenerTlsModeType](./literals.md#listenertlsmodetype) 
+3. See [:material-code-braces: ListenerTlsValidationContextTypeDef](./type_defs.md#listenertlsvalidationcontexttypedef) 
 ## ListenerTlsValidationContextTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsValidationContextTrustTypeDef
+
+def get_value() -> ListenerTlsValidationContextTrustTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListenerTlsValidationContextTrustTypeDef(TypedDict):
+    file: NotRequired[TlsValidationContextFileTrustTypeDef],  # (1)
+    sds: NotRequired[TlsValidationContextSdsTrustTypeDef],  # (2)
+```
 
-- `file`:
-  [TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef)
-- `sds`:
-  [TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef)
-
-<a id="listenertlsvalidationcontexttypedef"></a>
-
+1. See [:material-code-braces: TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef) 
+2. See [:material-code-braces: TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef) 
 ## ListenerTlsValidationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTlsValidationContextTypeDef
+
+def get_value() -> ListenerTlsValidationContextTypeDef:
+    return {
+        "trust": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListenerTlsValidationContextTypeDef(TypedDict):
+    trust: ListenerTlsValidationContextTrustTypeDef,  # (2)
+    subjectAlternativeNames: NotRequired[SubjectAlternativeNamesTypeDef],  # (1)
+```
 
-- `trust`:
-  [ListenerTlsValidationContextTrustTypeDef](./type_defs.md#listenertlsvalidationcontexttrusttypedef)
-
-Optional fields:
-
-- `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
-
-<a id="listenertypedef"></a>
-
+1. See [:material-code-braces: SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef) 
+2. See [:material-code-braces: ListenerTlsValidationContextTrustTypeDef](./type_defs.md#listenertlsvalidationcontexttrusttypedef) 
 ## ListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ListenerTypeDef
+
+def get_value() -> ListenerTypeDef:
+    return {
+        "portMapping": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListenerTypeDef(TypedDict):
+    portMapping: PortMappingTypeDef,  # (4)
+    connectionPool: NotRequired[VirtualNodeConnectionPoolTypeDef],  # (1)
+    healthCheck: NotRequired[HealthCheckPolicyTypeDef],  # (2)
+    outlierDetection: NotRequired[OutlierDetectionTypeDef],  # (3)
+    timeout: NotRequired[ListenerTimeoutTypeDef],  # (5)
+    tls: NotRequired[ListenerTlsTypeDef],  # (6)
+```
 
-- `portMapping`: [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
-
-Optional fields:
-
-- `connectionPool`:
-  [VirtualNodeConnectionPoolTypeDef](./type_defs.md#virtualnodeconnectionpooltypedef)
-- `healthCheck`:
-  [HealthCheckPolicyTypeDef](./type_defs.md#healthcheckpolicytypedef)
-- `outlierDetection`:
-  [OutlierDetectionTypeDef](./type_defs.md#outlierdetectiontypedef)
-- `timeout`: [ListenerTimeoutTypeDef](./type_defs.md#listenertimeouttypedef)
-- `tls`: [ListenerTlsTypeDef](./type_defs.md#listenertlstypedef)
-
-<a id="loggingtypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeConnectionPoolTypeDef](./type_defs.md#virtualnodeconnectionpooltypedef) 
+2. See [:material-code-braces: HealthCheckPolicyTypeDef](./type_defs.md#healthcheckpolicytypedef) 
+3. See [:material-code-braces: OutlierDetectionTypeDef](./type_defs.md#outlierdetectiontypedef) 
+4. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
+5. See [:material-code-braces: ListenerTimeoutTypeDef](./type_defs.md#listenertimeouttypedef) 
+6. See [:material-code-braces: ListenerTlsTypeDef](./type_defs.md#listenertlstypedef) 
 ## LoggingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import LoggingTypeDef
+
+def get_value() -> LoggingTypeDef:
+    return {
+        "accessLog": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoggingTypeDef(TypedDict):
+    accessLog: NotRequired[AccessLogTypeDef],  # (1)
+```
 
-- `accessLog`: [AccessLogTypeDef](./type_defs.md#accesslogtypedef)
-
-<a id="matchrangetypedef"></a>
-
+1. See [:material-code-braces: AccessLogTypeDef](./type_defs.md#accesslogtypedef) 
 ## MatchRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import MatchRangeTypeDef
+
+def get_value() -> MatchRangeTypeDef:
+    return {
+        "end": ...,
+        "start": ...,
+    }
 ```
 
-Required fields:
-
-- `end`: `int`
-- `start`: `int`
-
-<a id="meshdatatypedef"></a>
+```python title="Definition"
+class MatchRangeTypeDef(TypedDict):
+    end: int,
+    start: int,
+```
 
 ## MeshDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import MeshDataTypeDef
+
+def get_value() -> MeshDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeshDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: MeshSpecTypeDef,  # (2)
+    status: MeshStatusTypeDef,  # (3)
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-- `status`: [MeshStatusTypeDef](./type_defs.md#meshstatustypedef)
-
-<a id="meshreftypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
+3. See [:material-code-braces: MeshStatusTypeDef](./type_defs.md#meshstatustypedef) 
 ## MeshRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import MeshRefTypeDef
+
+def get_value() -> MeshRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-
-<a id="meshspectypedef"></a>
+```python title="Definition"
+class MeshRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+```
 
 ## MeshSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import MeshSpecTypeDef
+
+def get_value() -> MeshSpecTypeDef:
+    return {
+        "egressFilter": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MeshSpecTypeDef(TypedDict):
+    egressFilter: NotRequired[EgressFilterTypeDef],  # (1)
+```
 
-- `egressFilter`: [EgressFilterTypeDef](./type_defs.md#egressfiltertypedef)
-
-<a id="meshstatustypedef"></a>
-
+1. See [:material-code-braces: EgressFilterTypeDef](./type_defs.md#egressfiltertypedef) 
 ## MeshStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import MeshStatusTypeDef
+
+def get_value() -> MeshStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MeshStatusTypeDef(TypedDict):
+    status: NotRequired[MeshStatusCodeType],  # (1)
+```
 
-- `status`: [MeshStatusCodeType](./literals.md#meshstatuscodetype)
-
-<a id="outlierdetectiontypedef"></a>
-
+1. See [:material-code-brackets: MeshStatusCodeType](./literals.md#meshstatuscodetype) 
 ## OutlierDetectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import OutlierDetectionTypeDef
+
+def get_value() -> OutlierDetectionTypeDef:
+    return {
+        "baseEjectionDuration": ...,
+        "interval": ...,
+        "maxEjectionPercent": ...,
+        "maxServerErrors": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class OutlierDetectionTypeDef(TypedDict):
+    baseEjectionDuration: DurationTypeDef,  # (1)
+    interval: DurationTypeDef,  # (1)
+    maxEjectionPercent: int,
+    maxServerErrors: int,
+```
 
-- `baseEjectionDuration`: [DurationTypeDef](./type_defs.md#durationtypedef)
-- `interval`: [DurationTypeDef](./type_defs.md#durationtypedef)
-- `maxEjectionPercent`: `int`
-- `maxServerErrors`: `int`
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
+2. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="portmappingtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import PortMappingTypeDef
+
+def get_value() -> PortMappingTypeDef:
+    return {
+        "port": ...,
+        "protocol": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PortMappingTypeDef(TypedDict):
+    port: int,
+    protocol: PortProtocolType,  # (1)
+```
 
-- `port`: `int`
-- `protocol`: [PortProtocolType](./literals.md#portprotocoltype)
-
-<a id="queryparametermatchtypedef"></a>
-
+1. See [:material-code-brackets: PortProtocolType](./literals.md#portprotocoltype) 
 ## QueryParameterMatchTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import QueryParameterMatchTypeDef
+
+def get_value() -> QueryParameterMatchTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Optional fields:
-
-- `exact`: `str`
-
-<a id="resourcemetadatatypedef"></a>
+```python title="Definition"
+class QueryParameterMatchTypeDef(TypedDict):
+    exact: NotRequired[str],
+```
 
 ## ResourceMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ResourceMetadataTypeDef
+
+def get_value() -> ResourceMetadataTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "uid": ...,
+        "version": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `uid`: `str`
-- `version`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceMetadataTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshOwner: str,
+    resourceOwner: str,
+    uid: str,
+    version: int,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="routedatatypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RouteDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import RouteDataTypeDef
+
+def get_value() -> RouteDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "routeName": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RouteDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    routeName: str,
+    spec: RouteSpecTypeDef,  # (2)
+    status: RouteStatusTypeDef,  # (3)
+    virtualRouterName: str,
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `routeName`: `str`
-- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef)
-- `status`: [RouteStatusTypeDef](./type_defs.md#routestatustypedef)
-- `virtualRouterName`: `str`
-
-<a id="routereftypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: RouteSpecTypeDef](./type_defs.md#routespectypedef) 
+3. See [:material-code-braces: RouteStatusTypeDef](./type_defs.md#routestatustypedef) 
 ## RouteRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import RouteRefTypeDef
+
+def get_value() -> RouteRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "routeName": ...,
+        "version": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `routeName`: `str`
-- `version`: `int`
-- `virtualRouterName`: `str`
-
-<a id="routespectypedef"></a>
+```python title="Definition"
+class RouteRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    routeName: str,
+    version: int,
+    virtualRouterName: str,
+```
 
 ## RouteSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import RouteSpecTypeDef
+
+def get_value() -> RouteSpecTypeDef:
+    return {
+        "grpcRoute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RouteSpecTypeDef(TypedDict):
+    grpcRoute: NotRequired[GrpcRouteTypeDef],  # (1)
+    http2Route: NotRequired[HttpRouteTypeDef],  # (2)
+    httpRoute: NotRequired[HttpRouteTypeDef],  # (2)
+    priority: NotRequired[int],
+    tcpRoute: NotRequired[TcpRouteTypeDef],  # (4)
+```
 
-- `grpcRoute`: [GrpcRouteTypeDef](./type_defs.md#grpcroutetypedef)
-- `http2Route`: [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
-- `httpRoute`: [HttpRouteTypeDef](./type_defs.md#httproutetypedef)
-- `priority`: `int`
-- `tcpRoute`: [TcpRouteTypeDef](./type_defs.md#tcproutetypedef)
-
-<a id="routestatustypedef"></a>
-
+1. See [:material-code-braces: GrpcRouteTypeDef](./type_defs.md#grpcroutetypedef) 
+2. See [:material-code-braces: HttpRouteTypeDef](./type_defs.md#httproutetypedef) 
+3. See [:material-code-braces: HttpRouteTypeDef](./type_defs.md#httproutetypedef) 
+4. See [:material-code-braces: TcpRouteTypeDef](./type_defs.md#tcproutetypedef) 
 ## RouteStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import RouteStatusTypeDef
+
+def get_value() -> RouteStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RouteStatusTypeDef(TypedDict):
+    status: RouteStatusCodeType,  # (1)
+```
 
-- `status`: [RouteStatusCodeType](./literals.md#routestatuscodetype)
-
-<a id="servicediscoverytypedef"></a>
-
+1. See [:material-code-brackets: RouteStatusCodeType](./literals.md#routestatuscodetype) 
 ## ServiceDiscoveryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import ServiceDiscoveryTypeDef
+
+def get_value() -> ServiceDiscoveryTypeDef:
+    return {
+        "awsCloudMap": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceDiscoveryTypeDef(TypedDict):
+    awsCloudMap: NotRequired[AwsCloudMapServiceDiscoveryTypeDef],  # (1)
+    dns: NotRequired[DnsServiceDiscoveryTypeDef],  # (2)
+```
 
-- `awsCloudMap`:
-  [AwsCloudMapServiceDiscoveryTypeDef](./type_defs.md#awscloudmapservicediscoverytypedef)
-- `dns`:
-  [DnsServiceDiscoveryTypeDef](./type_defs.md#dnsservicediscoverytypedef)
-
-<a id="subjectalternativenamematcherstypedef"></a>
-
+1. See [:material-code-braces: AwsCloudMapServiceDiscoveryTypeDef](./type_defs.md#awscloudmapservicediscoverytypedef) 
+2. See [:material-code-braces: DnsServiceDiscoveryTypeDef](./type_defs.md#dnsservicediscoverytypedef) 
 ## SubjectAlternativeNameMatchersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import SubjectAlternativeNameMatchersTypeDef
+
+def get_value() -> SubjectAlternativeNameMatchersTypeDef:
+    return {
+        "exact": ...,
+    }
 ```
 
-Required fields:
-
-- `exact`: `Sequence`\[`str`\]
-
-<a id="subjectalternativenamestypedef"></a>
+```python title="Definition"
+class SubjectAlternativeNameMatchersTypeDef(TypedDict):
+    exact: Sequence[str],
+```
 
 ## SubjectAlternativeNamesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import SubjectAlternativeNamesTypeDef
+
+def get_value() -> SubjectAlternativeNamesTypeDef:
+    return {
+        "match": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SubjectAlternativeNamesTypeDef(TypedDict):
+    match: SubjectAlternativeNameMatchersTypeDef,  # (1)
+```
 
-- `match`:
-  [SubjectAlternativeNameMatchersTypeDef](./type_defs.md#subjectalternativenamematcherstypedef)
-
-<a id="tagreftypedef"></a>
-
+1. See [:material-code-braces: SubjectAlternativeNameMatchersTypeDef](./type_defs.md#subjectalternativenamematcherstypedef) 
 ## TagRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TagRefTypeDef
+
+def get_value() -> TagRefTypeDef:
+    return {
+        "key": ...,
+        "value": ...,
+    }
 ```
 
-Required fields:
-
-- `key`: `str`
-- `value`: `str`
-
-<a id="tagresourceinputrequesttypedef"></a>
+```python title="Definition"
+class TagRefTypeDef(TypedDict):
+    key: str,
+    value: str,
+```
 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Sequence[TagRefTypeDef],  # (1)
+```
 
-- `resourceArn`: `str`
-- `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
-
-<a id="tcprouteactiontypedef"></a>
-
+1. See [:material-code-braces: TagRefTypeDef](./type_defs.md#tagreftypedef) 
 ## TcpRouteActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TcpRouteActionTypeDef
+
+def get_value() -> TcpRouteActionTypeDef:
+    return {
+        "weightedTargets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TcpRouteActionTypeDef(TypedDict):
+    weightedTargets: Sequence[WeightedTargetTypeDef],  # (1)
+```
 
-- `weightedTargets`:
-  `Sequence`\[[WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef)\]
-
-<a id="tcproutetypedef"></a>
-
+1. See [:material-code-braces: WeightedTargetTypeDef](./type_defs.md#weightedtargettypedef) 
 ## TcpRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TcpRouteTypeDef
+
+def get_value() -> TcpRouteTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TcpRouteTypeDef(TypedDict):
+    action: TcpRouteActionTypeDef,  # (1)
+    timeout: NotRequired[TcpTimeoutTypeDef],  # (2)
+```
 
-- `action`: [TcpRouteActionTypeDef](./type_defs.md#tcprouteactiontypedef)
-
-Optional fields:
-
-- `timeout`: [TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef)
-
-<a id="tcptimeouttypedef"></a>
-
+1. See [:material-code-braces: TcpRouteActionTypeDef](./type_defs.md#tcprouteactiontypedef) 
+2. See [:material-code-braces: TcpTimeoutTypeDef](./type_defs.md#tcptimeouttypedef) 
 ## TcpTimeoutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TcpTimeoutTypeDef
+
+def get_value() -> TcpTimeoutTypeDef:
+    return {
+        "idle": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TcpTimeoutTypeDef(TypedDict):
+    idle: NotRequired[DurationTypeDef],  # (1)
+```
 
-- `idle`: [DurationTypeDef](./type_defs.md#durationtypedef)
-
-<a id="tlsvalidationcontextacmtrusttypedef"></a>
-
+1. See [:material-code-braces: DurationTypeDef](./type_defs.md#durationtypedef) 
 ## TlsValidationContextAcmTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TlsValidationContextAcmTrustTypeDef
+
+def get_value() -> TlsValidationContextAcmTrustTypeDef:
+    return {
+        "certificateAuthorityArns": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateAuthorityArns`: `Sequence`\[`str`\]
-
-<a id="tlsvalidationcontextfiletrusttypedef"></a>
+```python title="Definition"
+class TlsValidationContextAcmTrustTypeDef(TypedDict):
+    certificateAuthorityArns: Sequence[str],
+```
 
 ## TlsValidationContextFileTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TlsValidationContextFileTrustTypeDef
+
+def get_value() -> TlsValidationContextFileTrustTypeDef:
+    return {
+        "certificateChain": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateChain`: `str`
-
-<a id="tlsvalidationcontextsdstrusttypedef"></a>
+```python title="Definition"
+class TlsValidationContextFileTrustTypeDef(TypedDict):
+    certificateChain: str,
+```
 
 ## TlsValidationContextSdsTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TlsValidationContextSdsTrustTypeDef
+
+def get_value() -> TlsValidationContextSdsTrustTypeDef:
+    return {
+        "secretName": ...,
+    }
 ```
 
-Required fields:
-
-- `secretName`: `str`
-
-<a id="tlsvalidationcontexttrusttypedef"></a>
+```python title="Definition"
+class TlsValidationContextSdsTrustTypeDef(TypedDict):
+    secretName: str,
+```
 
 ## TlsValidationContextTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TlsValidationContextTrustTypeDef
+
+def get_value() -> TlsValidationContextTrustTypeDef:
+    return {
+        "acm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TlsValidationContextTrustTypeDef(TypedDict):
+    acm: NotRequired[TlsValidationContextAcmTrustTypeDef],  # (1)
+    file: NotRequired[TlsValidationContextFileTrustTypeDef],  # (2)
+    sds: NotRequired[TlsValidationContextSdsTrustTypeDef],  # (3)
+```
 
-- `acm`:
-  [TlsValidationContextAcmTrustTypeDef](./type_defs.md#tlsvalidationcontextacmtrusttypedef)
-- `file`:
-  [TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef)
-- `sds`:
-  [TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef)
-
-<a id="tlsvalidationcontexttypedef"></a>
-
+1. See [:material-code-braces: TlsValidationContextAcmTrustTypeDef](./type_defs.md#tlsvalidationcontextacmtrusttypedef) 
+2. See [:material-code-braces: TlsValidationContextFileTrustTypeDef](./type_defs.md#tlsvalidationcontextfiletrusttypedef) 
+3. See [:material-code-braces: TlsValidationContextSdsTrustTypeDef](./type_defs.md#tlsvalidationcontextsdstrusttypedef) 
 ## TlsValidationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import TlsValidationContextTypeDef
+
+def get_value() -> TlsValidationContextTypeDef:
+    return {
+        "trust": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TlsValidationContextTypeDef(TypedDict):
+    trust: TlsValidationContextTrustTypeDef,  # (2)
+    subjectAlternativeNames: NotRequired[SubjectAlternativeNamesTypeDef],  # (1)
+```
 
-- `trust`:
-  [TlsValidationContextTrustTypeDef](./type_defs.md#tlsvalidationcontexttrusttypedef)
-
-Optional fields:
-
-- `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
-
-<a id="untagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef) 
+2. See [:material-code-braces: TlsValidationContextTrustTypeDef](./type_defs.md#tlsvalidationcontexttrusttypedef) 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updategatewayrouteinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateGatewayRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateGatewayRouteInputRequestTypeDef
+
+def get_value() -> UpdateGatewayRouteInputRequestTypeDef:
+    return {
+        "gatewayRouteName": ...,
+        "meshName": ...,
+        "spec": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewayRouteInputRequestTypeDef(TypedDict):
+    gatewayRouteName: str,
+    meshName: str,
+    spec: GatewayRouteSpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `gatewayRouteName`: `str`
-- `meshName`: `str`
-- `spec`: [GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef)
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updategatewayrouteoutputtypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteSpecTypeDef](./type_defs.md#gatewayroutespectypedef) 
 ## UpdateGatewayRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateGatewayRouteOutputTypeDef
+
+def get_value() -> UpdateGatewayRouteOutputTypeDef:
+    return {
+        "gatewayRoute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGatewayRouteOutputTypeDef(TypedDict):
+    gatewayRoute: GatewayRouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `gatewayRoute`:
-  [GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatemeshinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GatewayRouteDataTypeDef](./type_defs.md#gatewayroutedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateMeshInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateMeshInputRequestTypeDef
+
+def get_value() -> UpdateMeshInputRequestTypeDef:
+    return {
+        "meshName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMeshInputRequestTypeDef(TypedDict):
+    meshName: str,
+    clientToken: NotRequired[str],
+    spec: NotRequired[MeshSpecTypeDef],  # (1)
+```
 
-- `meshName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
-
-<a id="updatemeshoutputtypedef"></a>
-
+1. See [:material-code-braces: MeshSpecTypeDef](./type_defs.md#meshspectypedef) 
 ## UpdateMeshOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateMeshOutputTypeDef
+
+def get_value() -> UpdateMeshOutputTypeDef:
+    return {
+        "mesh": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateMeshOutputTypeDef(TypedDict):
+    mesh: MeshDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `mesh`: [MeshDataTypeDef](./type_defs.md#meshdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterouteinputrequesttypedef"></a>
-
+1. See [:material-code-braces: MeshDataTypeDef](./type_defs.md#meshdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRouteInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateRouteInputRequestTypeDef
+
+def get_value() -> UpdateRouteInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "routeName": ...,
+        "spec": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRouteInputRequestTypeDef(TypedDict):
+    meshName: str,
+    routeName: str,
+    spec: RouteSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `meshName`: `str`
-- `routeName`: `str`
-- `spec`: [RouteSpecTypeDef](./type_defs.md#routespectypedef)
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updaterouteoutputtypedef"></a>
-
+1. See [:material-code-braces: RouteSpecTypeDef](./type_defs.md#routespectypedef) 
 ## UpdateRouteOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateRouteOutputTypeDef
+
+def get_value() -> UpdateRouteOutputTypeDef:
+    return {
+        "route": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRouteOutputTypeDef(TypedDict):
+    route: RouteDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `route`: [RouteDataTypeDef](./type_defs.md#routedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevirtualgatewayinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RouteDataTypeDef](./type_defs.md#routedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVirtualGatewayInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualGatewayInputRequestTypeDef
+
+def get_value() -> UpdateVirtualGatewayInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualGatewayInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualGatewaySpecTypeDef,  # (1)
+    virtualGatewayName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
-- `virtualGatewayName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updatevirtualgatewayoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef) 
 ## UpdateVirtualGatewayOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualGatewayOutputTypeDef
+
+def get_value() -> UpdateVirtualGatewayOutputTypeDef:
+    return {
+        "virtualGateway": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualGatewayOutputTypeDef(TypedDict):
+    virtualGateway: VirtualGatewayDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualGateway`:
-  [VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevirtualnodeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayDataTypeDef](./type_defs.md#virtualgatewaydatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVirtualNodeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualNodeInputRequestTypeDef
+
+def get_value() -> UpdateVirtualNodeInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualNodeInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualNodeSpecTypeDef,  # (1)
+    virtualNodeName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
-- `virtualNodeName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updatevirtualnodeoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef) 
 ## UpdateVirtualNodeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualNodeOutputTypeDef
+
+def get_value() -> UpdateVirtualNodeOutputTypeDef:
+    return {
+        "virtualNode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualNodeOutputTypeDef(TypedDict):
+    virtualNode: VirtualNodeDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualNode`:
-  [VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevirtualrouterinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeDataTypeDef](./type_defs.md#virtualnodedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVirtualRouterInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualRouterInputRequestTypeDef
+
+def get_value() -> UpdateVirtualRouterInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualRouterInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualRouterSpecTypeDef,  # (1)
+    virtualRouterName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
-- `virtualRouterName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updatevirtualrouteroutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
 ## UpdateVirtualRouterOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualRouterOutputTypeDef
+
+def get_value() -> UpdateVirtualRouterOutputTypeDef:
+    return {
+        "virtualRouter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualRouterOutputTypeDef(TypedDict):
+    virtualRouter: VirtualRouterDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualRouter`:
-  [VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevirtualserviceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterDataTypeDef](./type_defs.md#virtualrouterdatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVirtualServiceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualServiceInputRequestTypeDef
+
+def get_value() -> UpdateVirtualServiceInputRequestTypeDef:
+    return {
+        "meshName": ...,
+        "spec": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualServiceInputRequestTypeDef(TypedDict):
+    meshName: str,
+    spec: VirtualServiceSpecTypeDef,  # (1)
+    virtualServiceName: str,
+    clientToken: NotRequired[str],
+    meshOwner: NotRequired[str],
+```
 
-- `meshName`: `str`
-- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
-- `virtualServiceName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `meshOwner`: `str`
-
-<a id="updatevirtualserviceoutputtypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef) 
 ## UpdateVirtualServiceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import UpdateVirtualServiceOutputTypeDef
+
+def get_value() -> UpdateVirtualServiceOutputTypeDef:
+    return {
+        "virtualService": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVirtualServiceOutputTypeDef(TypedDict):
+    virtualService: VirtualServiceDataTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `virtualService`:
-  [VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="virtualgatewayaccesslogtypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceDataTypeDef](./type_defs.md#virtualservicedatatypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VirtualGatewayAccessLogTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayAccessLogTypeDef
+
+def get_value() -> VirtualGatewayAccessLogTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayAccessLogTypeDef(TypedDict):
+    file: NotRequired[VirtualGatewayFileAccessLogTypeDef],  # (1)
+```
 
-- `file`:
-  [VirtualGatewayFileAccessLogTypeDef](./type_defs.md#virtualgatewayfileaccesslogtypedef)
-
-<a id="virtualgatewaybackenddefaultstypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayFileAccessLogTypeDef](./type_defs.md#virtualgatewayfileaccesslogtypedef) 
 ## VirtualGatewayBackendDefaultsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayBackendDefaultsTypeDef
+
+def get_value() -> VirtualGatewayBackendDefaultsTypeDef:
+    return {
+        "clientPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayBackendDefaultsTypeDef(TypedDict):
+    clientPolicy: NotRequired[VirtualGatewayClientPolicyTypeDef],  # (1)
+```
 
-- `clientPolicy`:
-  [VirtualGatewayClientPolicyTypeDef](./type_defs.md#virtualgatewayclientpolicytypedef)
-
-<a id="virtualgatewayclientpolicytlstypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayClientPolicyTypeDef](./type_defs.md#virtualgatewayclientpolicytypedef) 
 ## VirtualGatewayClientPolicyTlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayClientPolicyTlsTypeDef
+
+def get_value() -> VirtualGatewayClientPolicyTlsTypeDef:
+    return {
+        "validation": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayClientPolicyTlsTypeDef(TypedDict):
+    validation: VirtualGatewayTlsValidationContextTypeDef,  # (2)
+    certificate: NotRequired[VirtualGatewayClientTlsCertificateTypeDef],  # (1)
+    enforce: NotRequired[bool],
+    ports: NotRequired[Sequence[int]],
+```
 
-- `validation`:
-  [VirtualGatewayTlsValidationContextTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttypedef)
-
-Optional fields:
-
-- `certificate`:
-  [VirtualGatewayClientTlsCertificateTypeDef](./type_defs.md#virtualgatewayclienttlscertificatetypedef)
-- `enforce`: `bool`
-- `ports`: `Sequence`\[`int`\]
-
-<a id="virtualgatewayclientpolicytypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayClientTlsCertificateTypeDef](./type_defs.md#virtualgatewayclienttlscertificatetypedef) 
+2. See [:material-code-braces: VirtualGatewayTlsValidationContextTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttypedef) 
 ## VirtualGatewayClientPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayClientPolicyTypeDef
+
+def get_value() -> VirtualGatewayClientPolicyTypeDef:
+    return {
+        "tls": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayClientPolicyTypeDef(TypedDict):
+    tls: NotRequired[VirtualGatewayClientPolicyTlsTypeDef],  # (1)
+```
 
-- `tls`:
-  [VirtualGatewayClientPolicyTlsTypeDef](./type_defs.md#virtualgatewayclientpolicytlstypedef)
-
-<a id="virtualgatewayclienttlscertificatetypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayClientPolicyTlsTypeDef](./type_defs.md#virtualgatewayclientpolicytlstypedef) 
 ## VirtualGatewayClientTlsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayClientTlsCertificateTypeDef
+
+def get_value() -> VirtualGatewayClientTlsCertificateTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayClientTlsCertificateTypeDef(TypedDict):
+    file: NotRequired[VirtualGatewayListenerTlsFileCertificateTypeDef],  # (1)
+    sds: NotRequired[VirtualGatewayListenerTlsSdsCertificateTypeDef],  # (2)
+```
 
-- `file`:
-  [VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef)
-- `sds`:
-  [VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef)
-
-<a id="virtualgatewayconnectionpooltypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef) 
+2. See [:material-code-braces: VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef) 
 ## VirtualGatewayConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayConnectionPoolTypeDef
+
+def get_value() -> VirtualGatewayConnectionPoolTypeDef:
+    return {
+        "grpc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayConnectionPoolTypeDef(TypedDict):
+    grpc: NotRequired[VirtualGatewayGrpcConnectionPoolTypeDef],  # (1)
+    http: NotRequired[VirtualGatewayHttpConnectionPoolTypeDef],  # (2)
+    http2: NotRequired[VirtualGatewayHttp2ConnectionPoolTypeDef],  # (3)
+```
 
-- `grpc`:
-  [VirtualGatewayGrpcConnectionPoolTypeDef](./type_defs.md#virtualgatewaygrpcconnectionpooltypedef)
-- `http`:
-  [VirtualGatewayHttpConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttpconnectionpooltypedef)
-- `http2`:
-  [VirtualGatewayHttp2ConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttp2connectionpooltypedef)
-
-<a id="virtualgatewaydatatypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayGrpcConnectionPoolTypeDef](./type_defs.md#virtualgatewaygrpcconnectionpooltypedef) 
+2. See [:material-code-braces: VirtualGatewayHttpConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttpconnectionpooltypedef) 
+3. See [:material-code-braces: VirtualGatewayHttp2ConnectionPoolTypeDef](./type_defs.md#virtualgatewayhttp2connectionpooltypedef) 
 ## VirtualGatewayDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayDataTypeDef
+
+def get_value() -> VirtualGatewayDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: VirtualGatewaySpecTypeDef,  # (2)
+    status: VirtualGatewayStatusTypeDef,  # (3)
+    virtualGatewayName: str,
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef)
-- `status`:
-  [VirtualGatewayStatusTypeDef](./type_defs.md#virtualgatewaystatustypedef)
-- `virtualGatewayName`: `str`
-
-<a id="virtualgatewayfileaccesslogtypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: VirtualGatewaySpecTypeDef](./type_defs.md#virtualgatewayspectypedef) 
+3. See [:material-code-braces: VirtualGatewayStatusTypeDef](./type_defs.md#virtualgatewaystatustypedef) 
 ## VirtualGatewayFileAccessLogTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayFileAccessLogTypeDef
+
+def get_value() -> VirtualGatewayFileAccessLogTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Required fields:
-
-- `path`: `str`
-
-<a id="virtualgatewaygrpcconnectionpooltypedef"></a>
+```python title="Definition"
+class VirtualGatewayFileAccessLogTypeDef(TypedDict):
+    path: str,
+```
 
 ## VirtualGatewayGrpcConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayGrpcConnectionPoolTypeDef
+
+def get_value() -> VirtualGatewayGrpcConnectionPoolTypeDef:
+    return {
+        "maxRequests": ...,
+    }
 ```
 
-Required fields:
-
-- `maxRequests`: `int`
-
-<a id="virtualgatewayhealthcheckpolicytypedef"></a>
+```python title="Definition"
+class VirtualGatewayGrpcConnectionPoolTypeDef(TypedDict):
+    maxRequests: int,
+```
 
 ## VirtualGatewayHealthCheckPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayHealthCheckPolicyTypeDef
+
+def get_value() -> VirtualGatewayHealthCheckPolicyTypeDef:
+    return {
+        "healthyThreshold": ...,
+        "intervalMillis": ...,
+        "protocol": ...,
+        "timeoutMillis": ...,
+        "unhealthyThreshold": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayHealthCheckPolicyTypeDef(TypedDict):
+    healthyThreshold: int,
+    intervalMillis: int,
+    protocol: VirtualGatewayPortProtocolType,  # (1)
+    timeoutMillis: int,
+    unhealthyThreshold: int,
+    path: NotRequired[str],
+    port: NotRequired[int],
+```
 
-- `healthyThreshold`: `int`
-- `intervalMillis`: `int`
-- `protocol`:
-  [VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype)
-- `timeoutMillis`: `int`
-- `unhealthyThreshold`: `int`
-
-Optional fields:
-
-- `path`: `str`
-- `port`: `int`
-
-<a id="virtualgatewayhttp2connectionpooltypedef"></a>
-
+1. See [:material-code-brackets: VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype) 
 ## VirtualGatewayHttp2ConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayHttp2ConnectionPoolTypeDef
+
+def get_value() -> VirtualGatewayHttp2ConnectionPoolTypeDef:
+    return {
+        "maxRequests": ...,
+    }
 ```
 
-Required fields:
-
-- `maxRequests`: `int`
-
-<a id="virtualgatewayhttpconnectionpooltypedef"></a>
+```python title="Definition"
+class VirtualGatewayHttp2ConnectionPoolTypeDef(TypedDict):
+    maxRequests: int,
+```
 
 ## VirtualGatewayHttpConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayHttpConnectionPoolTypeDef
+
+def get_value() -> VirtualGatewayHttpConnectionPoolTypeDef:
+    return {
+        "maxConnections": ...,
+    }
 ```
 
-Required fields:
-
-- `maxConnections`: `int`
-
-Optional fields:
-
-- `maxPendingRequests`: `int`
-
-<a id="virtualgatewaylistenertlsacmcertificatetypedef"></a>
+```python title="Definition"
+class VirtualGatewayHttpConnectionPoolTypeDef(TypedDict):
+    maxConnections: int,
+    maxPendingRequests: NotRequired[int],
+```
 
 ## VirtualGatewayListenerTlsAcmCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsAcmCertificateTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsAcmCertificateTypeDef:
+    return {
+        "certificateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateArn`: `str`
-
-<a id="virtualgatewaylistenertlscertificatetypedef"></a>
+```python title="Definition"
+class VirtualGatewayListenerTlsAcmCertificateTypeDef(TypedDict):
+    certificateArn: str,
+```
 
 ## VirtualGatewayListenerTlsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsCertificateTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsCertificateTypeDef:
+    return {
+        "acm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayListenerTlsCertificateTypeDef(TypedDict):
+    acm: NotRequired[VirtualGatewayListenerTlsAcmCertificateTypeDef],  # (1)
+    file: NotRequired[VirtualGatewayListenerTlsFileCertificateTypeDef],  # (2)
+    sds: NotRequired[VirtualGatewayListenerTlsSdsCertificateTypeDef],  # (3)
+```
 
-- `acm`:
-  [VirtualGatewayListenerTlsAcmCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsacmcertificatetypedef)
-- `file`:
-  [VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef)
-- `sds`:
-  [VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef)
-
-<a id="virtualgatewaylistenertlsfilecertificatetypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayListenerTlsAcmCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsacmcertificatetypedef) 
+2. See [:material-code-braces: VirtualGatewayListenerTlsFileCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlsfilecertificatetypedef) 
+3. See [:material-code-braces: VirtualGatewayListenerTlsSdsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlssdscertificatetypedef) 
 ## VirtualGatewayListenerTlsFileCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsFileCertificateTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsFileCertificateTypeDef:
+    return {
+        "certificateChain": ...,
+        "privateKey": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateChain`: `str`
-- `privateKey`: `str`
-
-<a id="virtualgatewaylistenertlssdscertificatetypedef"></a>
+```python title="Definition"
+class VirtualGatewayListenerTlsFileCertificateTypeDef(TypedDict):
+    certificateChain: str,
+    privateKey: str,
+```
 
 ## VirtualGatewayListenerTlsSdsCertificateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsSdsCertificateTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsSdsCertificateTypeDef:
+    return {
+        "secretName": ...,
+    }
 ```
 
-Required fields:
-
-- `secretName`: `str`
-
-<a id="virtualgatewaylistenertlstypedef"></a>
+```python title="Definition"
+class VirtualGatewayListenerTlsSdsCertificateTypeDef(TypedDict):
+    secretName: str,
+```
 
 ## VirtualGatewayListenerTlsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsTypeDef:
+    return {
+        "certificate": ...,
+        "mode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayListenerTlsTypeDef(TypedDict):
+    certificate: VirtualGatewayListenerTlsCertificateTypeDef,  # (1)
+    mode: VirtualGatewayListenerTlsModeType,  # (2)
+    validation: NotRequired[VirtualGatewayListenerTlsValidationContextTypeDef],  # (3)
+```
 
-- `certificate`:
-  [VirtualGatewayListenerTlsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlscertificatetypedef)
-- `mode`:
-  [VirtualGatewayListenerTlsModeType](./literals.md#virtualgatewaylistenertlsmodetype)
-
-Optional fields:
-
-- `validation`:
-  [VirtualGatewayListenerTlsValidationContextTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttypedef)
-
-<a id="virtualgatewaylistenertlsvalidationcontexttrusttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayListenerTlsCertificateTypeDef](./type_defs.md#virtualgatewaylistenertlscertificatetypedef) 
+2. See [:material-code-brackets: VirtualGatewayListenerTlsModeType](./literals.md#virtualgatewaylistenertlsmodetype) 
+3. See [:material-code-braces: VirtualGatewayListenerTlsValidationContextTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttypedef) 
 ## VirtualGatewayListenerTlsValidationContextTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsValidationContextTrustTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsValidationContextTrustTypeDef:
+    return {
+        "file": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayListenerTlsValidationContextTrustTypeDef(TypedDict):
+    file: NotRequired[VirtualGatewayTlsValidationContextFileTrustTypeDef],  # (1)
+    sds: NotRequired[VirtualGatewayTlsValidationContextSdsTrustTypeDef],  # (2)
+```
 
-- `file`:
-  [VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef)
-- `sds`:
-  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef)
-
-<a id="virtualgatewaylistenertlsvalidationcontexttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef) 
+2. See [:material-code-braces: VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef) 
 ## VirtualGatewayListenerTlsValidationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTlsValidationContextTypeDef
+
+def get_value() -> VirtualGatewayListenerTlsValidationContextTypeDef:
+    return {
+        "trust": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayListenerTlsValidationContextTypeDef(TypedDict):
+    trust: VirtualGatewayListenerTlsValidationContextTrustTypeDef,  # (2)
+    subjectAlternativeNames: NotRequired[SubjectAlternativeNamesTypeDef],  # (1)
+```
 
-- `trust`:
-  [VirtualGatewayListenerTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttrusttypedef)
-
-Optional fields:
-
-- `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
-
-<a id="virtualgatewaylistenertypedef"></a>
-
+1. See [:material-code-braces: SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef) 
+2. See [:material-code-braces: VirtualGatewayListenerTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaylistenertlsvalidationcontexttrusttypedef) 
 ## VirtualGatewayListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayListenerTypeDef
+
+def get_value() -> VirtualGatewayListenerTypeDef:
+    return {
+        "portMapping": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayListenerTypeDef(TypedDict):
+    portMapping: VirtualGatewayPortMappingTypeDef,  # (3)
+    connectionPool: NotRequired[VirtualGatewayConnectionPoolTypeDef],  # (1)
+    healthCheck: NotRequired[VirtualGatewayHealthCheckPolicyTypeDef],  # (2)
+    tls: NotRequired[VirtualGatewayListenerTlsTypeDef],  # (4)
+```
 
-- `portMapping`:
-  [VirtualGatewayPortMappingTypeDef](./type_defs.md#virtualgatewayportmappingtypedef)
-
-Optional fields:
-
-- `connectionPool`:
-  [VirtualGatewayConnectionPoolTypeDef](./type_defs.md#virtualgatewayconnectionpooltypedef)
-- `healthCheck`:
-  [VirtualGatewayHealthCheckPolicyTypeDef](./type_defs.md#virtualgatewayhealthcheckpolicytypedef)
-- `tls`:
-  [VirtualGatewayListenerTlsTypeDef](./type_defs.md#virtualgatewaylistenertlstypedef)
-
-<a id="virtualgatewayloggingtypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayConnectionPoolTypeDef](./type_defs.md#virtualgatewayconnectionpooltypedef) 
+2. See [:material-code-braces: VirtualGatewayHealthCheckPolicyTypeDef](./type_defs.md#virtualgatewayhealthcheckpolicytypedef) 
+3. See [:material-code-braces: VirtualGatewayPortMappingTypeDef](./type_defs.md#virtualgatewayportmappingtypedef) 
+4. See [:material-code-braces: VirtualGatewayListenerTlsTypeDef](./type_defs.md#virtualgatewaylistenertlstypedef) 
 ## VirtualGatewayLoggingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayLoggingTypeDef
+
+def get_value() -> VirtualGatewayLoggingTypeDef:
+    return {
+        "accessLog": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayLoggingTypeDef(TypedDict):
+    accessLog: NotRequired[VirtualGatewayAccessLogTypeDef],  # (1)
+```
 
-- `accessLog`:
-  [VirtualGatewayAccessLogTypeDef](./type_defs.md#virtualgatewayaccesslogtypedef)
-
-<a id="virtualgatewayportmappingtypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayAccessLogTypeDef](./type_defs.md#virtualgatewayaccesslogtypedef) 
 ## VirtualGatewayPortMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayPortMappingTypeDef
+
+def get_value() -> VirtualGatewayPortMappingTypeDef:
+    return {
+        "port": ...,
+        "protocol": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayPortMappingTypeDef(TypedDict):
+    port: int,
+    protocol: VirtualGatewayPortProtocolType,  # (1)
+```
 
-- `port`: `int`
-- `protocol`:
-  [VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype)
-
-<a id="virtualgatewayreftypedef"></a>
-
+1. See [:material-code-brackets: VirtualGatewayPortProtocolType](./literals.md#virtualgatewayportprotocoltype) 
 ## VirtualGatewayRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayRefTypeDef
+
+def get_value() -> VirtualGatewayRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+        "virtualGatewayName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-- `virtualGatewayName`: `str`
-
-<a id="virtualgatewayspectypedef"></a>
+```python title="Definition"
+class VirtualGatewayRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+    virtualGatewayName: str,
+```
 
 ## VirtualGatewaySpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewaySpecTypeDef
+
+def get_value() -> VirtualGatewaySpecTypeDef:
+    return {
+        "listeners": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewaySpecTypeDef(TypedDict):
+    listeners: Sequence[VirtualGatewayListenerTypeDef],  # (2)
+    backendDefaults: NotRequired[VirtualGatewayBackendDefaultsTypeDef],  # (1)
+    logging: NotRequired[VirtualGatewayLoggingTypeDef],  # (3)
+```
 
-- `listeners`:
-  `Sequence`\[[VirtualGatewayListenerTypeDef](./type_defs.md#virtualgatewaylistenertypedef)\]
-
-Optional fields:
-
-- `backendDefaults`:
-  [VirtualGatewayBackendDefaultsTypeDef](./type_defs.md#virtualgatewaybackenddefaultstypedef)
-- `logging`:
-  [VirtualGatewayLoggingTypeDef](./type_defs.md#virtualgatewayloggingtypedef)
-
-<a id="virtualgatewaystatustypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayBackendDefaultsTypeDef](./type_defs.md#virtualgatewaybackenddefaultstypedef) 
+2. See [:material-code-braces: VirtualGatewayListenerTypeDef](./type_defs.md#virtualgatewaylistenertypedef) 
+3. See [:material-code-braces: VirtualGatewayLoggingTypeDef](./type_defs.md#virtualgatewayloggingtypedef) 
 ## VirtualGatewayStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayStatusTypeDef
+
+def get_value() -> VirtualGatewayStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayStatusTypeDef(TypedDict):
+    status: VirtualGatewayStatusCodeType,  # (1)
+```
 
-- `status`:
-  [VirtualGatewayStatusCodeType](./literals.md#virtualgatewaystatuscodetype)
-
-<a id="virtualgatewaytlsvalidationcontextacmtrusttypedef"></a>
-
+1. See [:material-code-brackets: VirtualGatewayStatusCodeType](./literals.md#virtualgatewaystatuscodetype) 
 ## VirtualGatewayTlsValidationContextAcmTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextAcmTrustTypeDef
+
+def get_value() -> VirtualGatewayTlsValidationContextAcmTrustTypeDef:
+    return {
+        "certificateAuthorityArns": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateAuthorityArns`: `Sequence`\[`str`\]
-
-<a id="virtualgatewaytlsvalidationcontextfiletrusttypedef"></a>
+```python title="Definition"
+class VirtualGatewayTlsValidationContextAcmTrustTypeDef(TypedDict):
+    certificateAuthorityArns: Sequence[str],
+```
 
 ## VirtualGatewayTlsValidationContextFileTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextFileTrustTypeDef
+
+def get_value() -> VirtualGatewayTlsValidationContextFileTrustTypeDef:
+    return {
+        "certificateChain": ...,
+    }
 ```
 
-Required fields:
-
-- `certificateChain`: `str`
-
-<a id="virtualgatewaytlsvalidationcontextsdstrusttypedef"></a>
+```python title="Definition"
+class VirtualGatewayTlsValidationContextFileTrustTypeDef(TypedDict):
+    certificateChain: str,
+```
 
 ## VirtualGatewayTlsValidationContextSdsTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextSdsTrustTypeDef
+
+def get_value() -> VirtualGatewayTlsValidationContextSdsTrustTypeDef:
+    return {
+        "secretName": ...,
+    }
 ```
 
-Required fields:
-
-- `secretName`: `str`
-
-<a id="virtualgatewaytlsvalidationcontexttrusttypedef"></a>
+```python title="Definition"
+class VirtualGatewayTlsValidationContextSdsTrustTypeDef(TypedDict):
+    secretName: str,
+```
 
 ## VirtualGatewayTlsValidationContextTrustTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextTrustTypeDef
+
+def get_value() -> VirtualGatewayTlsValidationContextTrustTypeDef:
+    return {
+        "acm": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualGatewayTlsValidationContextTrustTypeDef(TypedDict):
+    acm: NotRequired[VirtualGatewayTlsValidationContextAcmTrustTypeDef],  # (1)
+    file: NotRequired[VirtualGatewayTlsValidationContextFileTrustTypeDef],  # (2)
+    sds: NotRequired[VirtualGatewayTlsValidationContextSdsTrustTypeDef],  # (3)
+```
 
-- `acm`:
-  [VirtualGatewayTlsValidationContextAcmTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextacmtrusttypedef)
-- `file`:
-  [VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef)
-- `sds`:
-  [VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef)
-
-<a id="virtualgatewaytlsvalidationcontexttypedef"></a>
-
+1. See [:material-code-braces: VirtualGatewayTlsValidationContextAcmTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextacmtrusttypedef) 
+2. See [:material-code-braces: VirtualGatewayTlsValidationContextFileTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextfiletrusttypedef) 
+3. See [:material-code-braces: VirtualGatewayTlsValidationContextSdsTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontextsdstrusttypedef) 
 ## VirtualGatewayTlsValidationContextTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualGatewayTlsValidationContextTypeDef
+
+def get_value() -> VirtualGatewayTlsValidationContextTypeDef:
+    return {
+        "trust": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualGatewayTlsValidationContextTypeDef(TypedDict):
+    trust: VirtualGatewayTlsValidationContextTrustTypeDef,  # (2)
+    subjectAlternativeNames: NotRequired[SubjectAlternativeNamesTypeDef],  # (1)
+```
 
-- `trust`:
-  [VirtualGatewayTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttrusttypedef)
-
-Optional fields:
-
-- `subjectAlternativeNames`:
-  [SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef)
-
-<a id="virtualnodeconnectionpooltypedef"></a>
-
+1. See [:material-code-braces: SubjectAlternativeNamesTypeDef](./type_defs.md#subjectalternativenamestypedef) 
+2. See [:material-code-braces: VirtualGatewayTlsValidationContextTrustTypeDef](./type_defs.md#virtualgatewaytlsvalidationcontexttrusttypedef) 
 ## VirtualNodeConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeConnectionPoolTypeDef
+
+def get_value() -> VirtualNodeConnectionPoolTypeDef:
+    return {
+        "grpc": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualNodeConnectionPoolTypeDef(TypedDict):
+    grpc: NotRequired[VirtualNodeGrpcConnectionPoolTypeDef],  # (1)
+    http: NotRequired[VirtualNodeHttpConnectionPoolTypeDef],  # (2)
+    http2: NotRequired[VirtualNodeHttp2ConnectionPoolTypeDef],  # (3)
+    tcp: NotRequired[VirtualNodeTcpConnectionPoolTypeDef],  # (4)
+```
 
-- `grpc`:
-  [VirtualNodeGrpcConnectionPoolTypeDef](./type_defs.md#virtualnodegrpcconnectionpooltypedef)
-- `http`:
-  [VirtualNodeHttpConnectionPoolTypeDef](./type_defs.md#virtualnodehttpconnectionpooltypedef)
-- `http2`:
-  [VirtualNodeHttp2ConnectionPoolTypeDef](./type_defs.md#virtualnodehttp2connectionpooltypedef)
-- `tcp`:
-  [VirtualNodeTcpConnectionPoolTypeDef](./type_defs.md#virtualnodetcpconnectionpooltypedef)
-
-<a id="virtualnodedatatypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeGrpcConnectionPoolTypeDef](./type_defs.md#virtualnodegrpcconnectionpooltypedef) 
+2. See [:material-code-braces: VirtualNodeHttpConnectionPoolTypeDef](./type_defs.md#virtualnodehttpconnectionpooltypedef) 
+3. See [:material-code-braces: VirtualNodeHttp2ConnectionPoolTypeDef](./type_defs.md#virtualnodehttp2connectionpooltypedef) 
+4. See [:material-code-braces: VirtualNodeTcpConnectionPoolTypeDef](./type_defs.md#virtualnodetcpconnectionpooltypedef) 
 ## VirtualNodeDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeDataTypeDef
+
+def get_value() -> VirtualNodeDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualNodeDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: VirtualNodeSpecTypeDef,  # (2)
+    status: VirtualNodeStatusTypeDef,  # (3)
+    virtualNodeName: str,
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef)
-- `status`: [VirtualNodeStatusTypeDef](./type_defs.md#virtualnodestatustypedef)
-- `virtualNodeName`: `str`
-
-<a id="virtualnodegrpcconnectionpooltypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: VirtualNodeSpecTypeDef](./type_defs.md#virtualnodespectypedef) 
+3. See [:material-code-braces: VirtualNodeStatusTypeDef](./type_defs.md#virtualnodestatustypedef) 
 ## VirtualNodeGrpcConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeGrpcConnectionPoolTypeDef
+
+def get_value() -> VirtualNodeGrpcConnectionPoolTypeDef:
+    return {
+        "maxRequests": ...,
+    }
 ```
 
-Required fields:
-
-- `maxRequests`: `int`
-
-<a id="virtualnodehttp2connectionpooltypedef"></a>
+```python title="Definition"
+class VirtualNodeGrpcConnectionPoolTypeDef(TypedDict):
+    maxRequests: int,
+```
 
 ## VirtualNodeHttp2ConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeHttp2ConnectionPoolTypeDef
+
+def get_value() -> VirtualNodeHttp2ConnectionPoolTypeDef:
+    return {
+        "maxRequests": ...,
+    }
 ```
 
-Required fields:
-
-- `maxRequests`: `int`
-
-<a id="virtualnodehttpconnectionpooltypedef"></a>
+```python title="Definition"
+class VirtualNodeHttp2ConnectionPoolTypeDef(TypedDict):
+    maxRequests: int,
+```
 
 ## VirtualNodeHttpConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeHttpConnectionPoolTypeDef
+
+def get_value() -> VirtualNodeHttpConnectionPoolTypeDef:
+    return {
+        "maxConnections": ...,
+    }
 ```
 
-Required fields:
-
-- `maxConnections`: `int`
-
-Optional fields:
-
-- `maxPendingRequests`: `int`
-
-<a id="virtualnodereftypedef"></a>
+```python title="Definition"
+class VirtualNodeHttpConnectionPoolTypeDef(TypedDict):
+    maxConnections: int,
+    maxPendingRequests: NotRequired[int],
+```
 
 ## VirtualNodeRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeRefTypeDef
+
+def get_value() -> VirtualNodeRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-- `virtualNodeName`: `str`
-
-<a id="virtualnodeserviceprovidertypedef"></a>
+```python title="Definition"
+class VirtualNodeRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+    virtualNodeName: str,
+```
 
 ## VirtualNodeServiceProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeServiceProviderTypeDef
+
+def get_value() -> VirtualNodeServiceProviderTypeDef:
+    return {
+        "virtualNodeName": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualNodeName`: `str`
-
-<a id="virtualnodespectypedef"></a>
+```python title="Definition"
+class VirtualNodeServiceProviderTypeDef(TypedDict):
+    virtualNodeName: str,
+```
 
 ## VirtualNodeSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeSpecTypeDef
+
+def get_value() -> VirtualNodeSpecTypeDef:
+    return {
+        "backendDefaults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualNodeSpecTypeDef(TypedDict):
+    backendDefaults: NotRequired[BackendDefaultsTypeDef],  # (1)
+    backends: NotRequired[Sequence[BackendTypeDef]],  # (2)
+    listeners: NotRequired[Sequence[ListenerTypeDef]],  # (3)
+    logging: NotRequired[LoggingTypeDef],  # (4)
+    serviceDiscovery: NotRequired[ServiceDiscoveryTypeDef],  # (5)
+```
 
-- `backendDefaults`:
-  [BackendDefaultsTypeDef](./type_defs.md#backenddefaultstypedef)
-- `backends`: `Sequence`\[[BackendTypeDef](./type_defs.md#backendtypedef)\]
-- `listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
-- `logging`: [LoggingTypeDef](./type_defs.md#loggingtypedef)
-- `serviceDiscovery`:
-  [ServiceDiscoveryTypeDef](./type_defs.md#servicediscoverytypedef)
-
-<a id="virtualnodestatustypedef"></a>
-
+1. See [:material-code-braces: BackendDefaultsTypeDef](./type_defs.md#backenddefaultstypedef) 
+2. See [:material-code-braces: BackendTypeDef](./type_defs.md#backendtypedef) 
+3. See [:material-code-braces: ListenerTypeDef](./type_defs.md#listenertypedef) 
+4. See [:material-code-braces: LoggingTypeDef](./type_defs.md#loggingtypedef) 
+5. See [:material-code-braces: ServiceDiscoveryTypeDef](./type_defs.md#servicediscoverytypedef) 
 ## VirtualNodeStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeStatusTypeDef
+
+def get_value() -> VirtualNodeStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualNodeStatusTypeDef(TypedDict):
+    status: VirtualNodeStatusCodeType,  # (1)
+```
 
-- `status`:
-  [VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype)
-
-<a id="virtualnodetcpconnectionpooltypedef"></a>
-
+1. See [:material-code-brackets: VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype) 
 ## VirtualNodeTcpConnectionPoolTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualNodeTcpConnectionPoolTypeDef
+
+def get_value() -> VirtualNodeTcpConnectionPoolTypeDef:
+    return {
+        "maxConnections": ...,
+    }
 ```
 
-Required fields:
-
-- `maxConnections`: `int`
-
-<a id="virtualrouterdatatypedef"></a>
+```python title="Definition"
+class VirtualNodeTcpConnectionPoolTypeDef(TypedDict):
+    maxConnections: int,
+```
 
 ## VirtualRouterDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterDataTypeDef
+
+def get_value() -> VirtualRouterDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualRouterDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: VirtualRouterSpecTypeDef,  # (2)
+    status: VirtualRouterStatusTypeDef,  # (3)
+    virtualRouterName: str,
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef)
-- `status`:
-  [VirtualRouterStatusTypeDef](./type_defs.md#virtualrouterstatustypedef)
-- `virtualRouterName`: `str`
-
-<a id="virtualrouterlistenertypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: VirtualRouterSpecTypeDef](./type_defs.md#virtualrouterspectypedef) 
+3. See [:material-code-braces: VirtualRouterStatusTypeDef](./type_defs.md#virtualrouterstatustypedef) 
 ## VirtualRouterListenerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterListenerTypeDef
+
+def get_value() -> VirtualRouterListenerTypeDef:
+    return {
+        "portMapping": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualRouterListenerTypeDef(TypedDict):
+    portMapping: PortMappingTypeDef,  # (1)
+```
 
-- `portMapping`: [PortMappingTypeDef](./type_defs.md#portmappingtypedef)
-
-<a id="virtualrouterreftypedef"></a>
-
+1. See [:material-code-braces: PortMappingTypeDef](./type_defs.md#portmappingtypedef) 
 ## VirtualRouterRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterRefTypeDef
+
+def get_value() -> VirtualRouterRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-- `virtualRouterName`: `str`
-
-<a id="virtualrouterserviceprovidertypedef"></a>
+```python title="Definition"
+class VirtualRouterRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+    virtualRouterName: str,
+```
 
 ## VirtualRouterServiceProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterServiceProviderTypeDef
+
+def get_value() -> VirtualRouterServiceProviderTypeDef:
+    return {
+        "virtualRouterName": ...,
+    }
 ```
 
-Required fields:
-
-- `virtualRouterName`: `str`
-
-<a id="virtualrouterspectypedef"></a>
+```python title="Definition"
+class VirtualRouterServiceProviderTypeDef(TypedDict):
+    virtualRouterName: str,
+```
 
 ## VirtualRouterSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterSpecTypeDef
+
+def get_value() -> VirtualRouterSpecTypeDef:
+    return {
+        "listeners": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualRouterSpecTypeDef(TypedDict):
+    listeners: NotRequired[Sequence[VirtualRouterListenerTypeDef]],  # (1)
+```
 
-- `listeners`:
-  `Sequence`\[[VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef)\]
-
-<a id="virtualrouterstatustypedef"></a>
-
+1. See [:material-code-braces: VirtualRouterListenerTypeDef](./type_defs.md#virtualrouterlistenertypedef) 
 ## VirtualRouterStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualRouterStatusTypeDef
+
+def get_value() -> VirtualRouterStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualRouterStatusTypeDef(TypedDict):
+    status: VirtualRouterStatusCodeType,  # (1)
+```
 
-- `status`:
-  [VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype)
-
-<a id="virtualservicebackendtypedef"></a>
-
+1. See [:material-code-brackets: VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype) 
 ## VirtualServiceBackendTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceBackendTypeDef
+
+def get_value() -> VirtualServiceBackendTypeDef:
+    return {
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualServiceBackendTypeDef(TypedDict):
+    virtualServiceName: str,
+    clientPolicy: NotRequired[ClientPolicyTypeDef],  # (1)
+```
 
-- `virtualServiceName`: `str`
-
-Optional fields:
-
-- `clientPolicy`: [ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef)
-
-<a id="virtualservicedatatypedef"></a>
-
+1. See [:material-code-braces: ClientPolicyTypeDef](./type_defs.md#clientpolicytypedef) 
 ## VirtualServiceDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceDataTypeDef
+
+def get_value() -> VirtualServiceDataTypeDef:
+    return {
+        "meshName": ...,
+        "metadata": ...,
+        "spec": ...,
+        "status": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualServiceDataTypeDef(TypedDict):
+    meshName: str,
+    metadata: ResourceMetadataTypeDef,  # (1)
+    spec: VirtualServiceSpecTypeDef,  # (2)
+    status: VirtualServiceStatusTypeDef,  # (3)
+    virtualServiceName: str,
+```
 
-- `meshName`: `str`
-- `metadata`: [ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef)
-- `spec`: [VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef)
-- `status`:
-  [VirtualServiceStatusTypeDef](./type_defs.md#virtualservicestatustypedef)
-- `virtualServiceName`: `str`
-
-<a id="virtualserviceprovidertypedef"></a>
-
+1. See [:material-code-braces: ResourceMetadataTypeDef](./type_defs.md#resourcemetadatatypedef) 
+2. See [:material-code-braces: VirtualServiceSpecTypeDef](./type_defs.md#virtualservicespectypedef) 
+3. See [:material-code-braces: VirtualServiceStatusTypeDef](./type_defs.md#virtualservicestatustypedef) 
 ## VirtualServiceProviderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceProviderTypeDef
+
+def get_value() -> VirtualServiceProviderTypeDef:
+    return {
+        "virtualNode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualServiceProviderTypeDef(TypedDict):
+    virtualNode: NotRequired[VirtualNodeServiceProviderTypeDef],  # (1)
+    virtualRouter: NotRequired[VirtualRouterServiceProviderTypeDef],  # (2)
+```
 
-- `virtualNode`:
-  [VirtualNodeServiceProviderTypeDef](./type_defs.md#virtualnodeserviceprovidertypedef)
-- `virtualRouter`:
-  [VirtualRouterServiceProviderTypeDef](./type_defs.md#virtualrouterserviceprovidertypedef)
-
-<a id="virtualservicereftypedef"></a>
-
+1. See [:material-code-braces: VirtualNodeServiceProviderTypeDef](./type_defs.md#virtualnodeserviceprovidertypedef) 
+2. See [:material-code-braces: VirtualRouterServiceProviderTypeDef](./type_defs.md#virtualrouterserviceprovidertypedef) 
 ## VirtualServiceRefTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceRefTypeDef
+
+def get_value() -> VirtualServiceRefTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "lastUpdatedAt": ...,
+        "meshName": ...,
+        "meshOwner": ...,
+        "resourceOwner": ...,
+        "version": ...,
+        "virtualServiceName": ...,
+    }
 ```
 
-Required fields:
-
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `lastUpdatedAt`: `datetime`
-- `meshName`: `str`
-- `meshOwner`: `str`
-- `resourceOwner`: `str`
-- `version`: `int`
-- `virtualServiceName`: `str`
-
-<a id="virtualservicespectypedef"></a>
+```python title="Definition"
+class VirtualServiceRefTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    lastUpdatedAt: datetime,
+    meshName: str,
+    meshOwner: str,
+    resourceOwner: str,
+    version: int,
+    virtualServiceName: str,
+```
 
 ## VirtualServiceSpecTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceSpecTypeDef
+
+def get_value() -> VirtualServiceSpecTypeDef:
+    return {
+        "provider": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VirtualServiceSpecTypeDef(TypedDict):
+    provider: NotRequired[VirtualServiceProviderTypeDef],  # (1)
+```
 
-- `provider`:
-  [VirtualServiceProviderTypeDef](./type_defs.md#virtualserviceprovidertypedef)
-
-<a id="virtualservicestatustypedef"></a>
-
+1. See [:material-code-braces: VirtualServiceProviderTypeDef](./type_defs.md#virtualserviceprovidertypedef) 
 ## VirtualServiceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import VirtualServiceStatusTypeDef
+
+def get_value() -> VirtualServiceStatusTypeDef:
+    return {
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VirtualServiceStatusTypeDef(TypedDict):
+    status: VirtualServiceStatusCodeType,  # (1)
+```
 
-- `status`:
-  [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
-
-<a id="weightedtargettypedef"></a>
-
+1. See [:material-code-brackets: VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype) 
 ## WeightedTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_appmesh.type_defs import WeightedTargetTypeDef
+
+def get_value() -> WeightedTargetTypeDef:
+    return {
+        "virtualNode": ...,
+        "weight": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class WeightedTargetTypeDef(TypedDict):
+    virtualNode: str,
+    weight: int,
+```
 
-- `virtualNode`: `str`
-- `weight`: `int`

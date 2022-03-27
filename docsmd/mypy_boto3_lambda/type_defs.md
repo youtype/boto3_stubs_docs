@@ -1,2403 +1,3217 @@
-<a id="typed-dictionaries-for-boto3-lambda-module"></a>
-
-# Typed dictionaries for boto3 Lambda module
+# Typed dictionaries
 
 > [Index](../README.md) > [Lambda](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
-type annotations stubs module
-[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Lambda module](#typed-dictionaries-for-boto3-lambda-module)
-  - [AccountLimitTypeDef](#accountlimittypedef)
-  - [AccountUsageTypeDef](#accountusagetypedef)
-  - [AddLayerVersionPermissionRequestRequestTypeDef](#addlayerversionpermissionrequestrequesttypedef)
-  - [AddLayerVersionPermissionResponseTypeDef](#addlayerversionpermissionresponsetypedef)
-  - [AddPermissionRequestRequestTypeDef](#addpermissionrequestrequesttypedef)
-  - [AddPermissionResponseTypeDef](#addpermissionresponsetypedef)
-  - [AliasConfigurationResponseMetadataTypeDef](#aliasconfigurationresponsemetadatatypedef)
-  - [AliasConfigurationTypeDef](#aliasconfigurationtypedef)
-  - [AliasRoutingConfigurationTypeDef](#aliasroutingconfigurationtypedef)
-  - [AllowedPublishersTypeDef](#allowedpublisherstypedef)
-  - [CodeSigningConfigTypeDef](#codesigningconfigtypedef)
-  - [CodeSigningPoliciesTypeDef](#codesigningpoliciestypedef)
-  - [ConcurrencyResponseMetadataTypeDef](#concurrencyresponsemetadatatypedef)
-  - [ConcurrencyTypeDef](#concurrencytypedef)
-  - [CreateAliasRequestRequestTypeDef](#createaliasrequestrequesttypedef)
-  - [CreateCodeSigningConfigRequestRequestTypeDef](#createcodesigningconfigrequestrequesttypedef)
-  - [CreateCodeSigningConfigResponseTypeDef](#createcodesigningconfigresponsetypedef)
-  - [CreateEventSourceMappingRequestRequestTypeDef](#createeventsourcemappingrequestrequesttypedef)
-  - [CreateFunctionRequestRequestTypeDef](#createfunctionrequestrequesttypedef)
-  - [DeadLetterConfigTypeDef](#deadletterconfigtypedef)
-  - [DeleteAliasRequestRequestTypeDef](#deletealiasrequestrequesttypedef)
-  - [DeleteCodeSigningConfigRequestRequestTypeDef](#deletecodesigningconfigrequestrequesttypedef)
-  - [DeleteEventSourceMappingRequestRequestTypeDef](#deleteeventsourcemappingrequestrequesttypedef)
-  - [DeleteFunctionCodeSigningConfigRequestRequestTypeDef](#deletefunctioncodesigningconfigrequestrequesttypedef)
-  - [DeleteFunctionConcurrencyRequestRequestTypeDef](#deletefunctionconcurrencyrequestrequesttypedef)
-  - [DeleteFunctionEventInvokeConfigRequestRequestTypeDef](#deletefunctioneventinvokeconfigrequestrequesttypedef)
-  - [DeleteFunctionRequestRequestTypeDef](#deletefunctionrequestrequesttypedef)
-  - [DeleteLayerVersionRequestRequestTypeDef](#deletelayerversionrequestrequesttypedef)
-  - [DeleteProvisionedConcurrencyConfigRequestRequestTypeDef](#deleteprovisionedconcurrencyconfigrequestrequesttypedef)
-  - [DestinationConfigTypeDef](#destinationconfigtypedef)
-  - [EnvironmentErrorTypeDef](#environmenterrortypedef)
-  - [EnvironmentResponseTypeDef](#environmentresponsetypedef)
-  - [EnvironmentTypeDef](#environmenttypedef)
-  - [EphemeralStorageTypeDef](#ephemeralstoragetypedef)
-  - [EventSourceMappingConfigurationResponseMetadataTypeDef](#eventsourcemappingconfigurationresponsemetadatatypedef)
-  - [EventSourceMappingConfigurationTypeDef](#eventsourcemappingconfigurationtypedef)
-  - [FileSystemConfigTypeDef](#filesystemconfigtypedef)
-  - [FilterCriteriaTypeDef](#filtercriteriatypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [FunctionCodeLocationTypeDef](#functioncodelocationtypedef)
-  - [FunctionCodeTypeDef](#functioncodetypedef)
-  - [FunctionConfigurationResponseMetadataTypeDef](#functionconfigurationresponsemetadatatypedef)
-  - [FunctionConfigurationTypeDef](#functionconfigurationtypedef)
-  - [FunctionEventInvokeConfigResponseMetadataTypeDef](#functioneventinvokeconfigresponsemetadatatypedef)
-  - [FunctionEventInvokeConfigTypeDef](#functioneventinvokeconfigtypedef)
-  - [GetAccountSettingsResponseTypeDef](#getaccountsettingsresponsetypedef)
-  - [GetAliasRequestRequestTypeDef](#getaliasrequestrequesttypedef)
-  - [GetCodeSigningConfigRequestRequestTypeDef](#getcodesigningconfigrequestrequesttypedef)
-  - [GetCodeSigningConfigResponseTypeDef](#getcodesigningconfigresponsetypedef)
-  - [GetEventSourceMappingRequestRequestTypeDef](#geteventsourcemappingrequestrequesttypedef)
-  - [GetFunctionCodeSigningConfigRequestRequestTypeDef](#getfunctioncodesigningconfigrequestrequesttypedef)
-  - [GetFunctionCodeSigningConfigResponseTypeDef](#getfunctioncodesigningconfigresponsetypedef)
-  - [GetFunctionConcurrencyRequestRequestTypeDef](#getfunctionconcurrencyrequestrequesttypedef)
-  - [GetFunctionConcurrencyResponseTypeDef](#getfunctionconcurrencyresponsetypedef)
-  - [GetFunctionConfigurationRequestRequestTypeDef](#getfunctionconfigurationrequestrequesttypedef)
-  - [GetFunctionEventInvokeConfigRequestRequestTypeDef](#getfunctioneventinvokeconfigrequestrequesttypedef)
-  - [GetFunctionRequestRequestTypeDef](#getfunctionrequestrequesttypedef)
-  - [GetFunctionResponseTypeDef](#getfunctionresponsetypedef)
-  - [GetLayerVersionByArnRequestRequestTypeDef](#getlayerversionbyarnrequestrequesttypedef)
-  - [GetLayerVersionPolicyRequestRequestTypeDef](#getlayerversionpolicyrequestrequesttypedef)
-  - [GetLayerVersionPolicyResponseTypeDef](#getlayerversionpolicyresponsetypedef)
-  - [GetLayerVersionRequestRequestTypeDef](#getlayerversionrequestrequesttypedef)
-  - [GetLayerVersionResponseTypeDef](#getlayerversionresponsetypedef)
-  - [GetPolicyRequestRequestTypeDef](#getpolicyrequestrequesttypedef)
-  - [GetPolicyResponseTypeDef](#getpolicyresponsetypedef)
-  - [GetProvisionedConcurrencyConfigRequestRequestTypeDef](#getprovisionedconcurrencyconfigrequestrequesttypedef)
-  - [GetProvisionedConcurrencyConfigResponseTypeDef](#getprovisionedconcurrencyconfigresponsetypedef)
-  - [ImageConfigErrorTypeDef](#imageconfigerrortypedef)
-  - [ImageConfigResponseTypeDef](#imageconfigresponsetypedef)
-  - [ImageConfigTypeDef](#imageconfigtypedef)
-  - [InvocationRequestRequestTypeDef](#invocationrequestrequesttypedef)
-  - [InvocationResponseTypeDef](#invocationresponsetypedef)
-  - [InvokeAsyncRequestRequestTypeDef](#invokeasyncrequestrequesttypedef)
-  - [InvokeAsyncResponseTypeDef](#invokeasyncresponsetypedef)
-  - [LayerTypeDef](#layertypedef)
-  - [LayerVersionContentInputTypeDef](#layerversioncontentinputtypedef)
-  - [LayerVersionContentOutputTypeDef](#layerversioncontentoutputtypedef)
-  - [LayerVersionsListItemTypeDef](#layerversionslistitemtypedef)
-  - [LayersListItemTypeDef](#layerslistitemtypedef)
-  - [ListAliasesRequestRequestTypeDef](#listaliasesrequestrequesttypedef)
-  - [ListAliasesResponseTypeDef](#listaliasesresponsetypedef)
-  - [ListCodeSigningConfigsRequestRequestTypeDef](#listcodesigningconfigsrequestrequesttypedef)
-  - [ListCodeSigningConfigsResponseTypeDef](#listcodesigningconfigsresponsetypedef)
-  - [ListEventSourceMappingsRequestRequestTypeDef](#listeventsourcemappingsrequestrequesttypedef)
-  - [ListEventSourceMappingsResponseTypeDef](#listeventsourcemappingsresponsetypedef)
-  - [ListFunctionEventInvokeConfigsRequestRequestTypeDef](#listfunctioneventinvokeconfigsrequestrequesttypedef)
-  - [ListFunctionEventInvokeConfigsResponseTypeDef](#listfunctioneventinvokeconfigsresponsetypedef)
-  - [ListFunctionsByCodeSigningConfigRequestRequestTypeDef](#listfunctionsbycodesigningconfigrequestrequesttypedef)
-  - [ListFunctionsByCodeSigningConfigResponseTypeDef](#listfunctionsbycodesigningconfigresponsetypedef)
-  - [ListFunctionsRequestRequestTypeDef](#listfunctionsrequestrequesttypedef)
-  - [ListFunctionsResponseTypeDef](#listfunctionsresponsetypedef)
-  - [ListLayerVersionsRequestRequestTypeDef](#listlayerversionsrequestrequesttypedef)
-  - [ListLayerVersionsResponseTypeDef](#listlayerversionsresponsetypedef)
-  - [ListLayersRequestRequestTypeDef](#listlayersrequestrequesttypedef)
-  - [ListLayersResponseTypeDef](#listlayersresponsetypedef)
-  - [ListProvisionedConcurrencyConfigsRequestRequestTypeDef](#listprovisionedconcurrencyconfigsrequestrequesttypedef)
-  - [ListProvisionedConcurrencyConfigsResponseTypeDef](#listprovisionedconcurrencyconfigsresponsetypedef)
-  - [ListTagsRequestRequestTypeDef](#listtagsrequestrequesttypedef)
-  - [ListTagsResponseTypeDef](#listtagsresponsetypedef)
-  - [ListVersionsByFunctionRequestRequestTypeDef](#listversionsbyfunctionrequestrequesttypedef)
-  - [ListVersionsByFunctionResponseTypeDef](#listversionsbyfunctionresponsetypedef)
-  - [OnFailureTypeDef](#onfailuretypedef)
-  - [OnSuccessTypeDef](#onsuccesstypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ProvisionedConcurrencyConfigListItemTypeDef](#provisionedconcurrencyconfiglistitemtypedef)
-  - [PublishLayerVersionRequestRequestTypeDef](#publishlayerversionrequestrequesttypedef)
-  - [PublishLayerVersionResponseTypeDef](#publishlayerversionresponsetypedef)
-  - [PublishVersionRequestRequestTypeDef](#publishversionrequestrequesttypedef)
-  - [PutFunctionCodeSigningConfigRequestRequestTypeDef](#putfunctioncodesigningconfigrequestrequesttypedef)
-  - [PutFunctionCodeSigningConfigResponseTypeDef](#putfunctioncodesigningconfigresponsetypedef)
-  - [PutFunctionConcurrencyRequestRequestTypeDef](#putfunctionconcurrencyrequestrequesttypedef)
-  - [PutFunctionEventInvokeConfigRequestRequestTypeDef](#putfunctioneventinvokeconfigrequestrequesttypedef)
-  - [PutProvisionedConcurrencyConfigRequestRequestTypeDef](#putprovisionedconcurrencyconfigrequestrequesttypedef)
-  - [PutProvisionedConcurrencyConfigResponseTypeDef](#putprovisionedconcurrencyconfigresponsetypedef)
-  - [RemoveLayerVersionPermissionRequestRequestTypeDef](#removelayerversionpermissionrequestrequesttypedef)
-  - [RemovePermissionRequestRequestTypeDef](#removepermissionrequestrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SelfManagedEventSourceTypeDef](#selfmanagedeventsourcetypedef)
-  - [SourceAccessConfigurationTypeDef](#sourceaccessconfigurationtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TracingConfigResponseTypeDef](#tracingconfigresponsetypedef)
-  - [TracingConfigTypeDef](#tracingconfigtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAliasRequestRequestTypeDef](#updatealiasrequestrequesttypedef)
-  - [UpdateCodeSigningConfigRequestRequestTypeDef](#updatecodesigningconfigrequestrequesttypedef)
-  - [UpdateCodeSigningConfigResponseTypeDef](#updatecodesigningconfigresponsetypedef)
-  - [UpdateEventSourceMappingRequestRequestTypeDef](#updateeventsourcemappingrequestrequesttypedef)
-  - [UpdateFunctionCodeRequestRequestTypeDef](#updatefunctioncoderequestrequesttypedef)
-  - [UpdateFunctionConfigurationRequestRequestTypeDef](#updatefunctionconfigurationrequestrequesttypedef)
-  - [UpdateFunctionEventInvokeConfigRequestRequestTypeDef](#updatefunctioneventinvokeconfigrequestrequesttypedef)
-  - [VpcConfigResponseTypeDef](#vpcconfigresponsetypedef)
-  - [VpcConfigTypeDef](#vpcconfigtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="accountlimittypedef"></a>
+    Auto-generated documentation for [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
+    type annotations stubs module [mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 ## AccountLimitTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AccountLimitTypeDef
+
+def get_value() -> AccountLimitTypeDef:
+    return {
+        "TotalCodeSize": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalCodeSize`: `int`
-- `CodeSizeUnzipped`: `int`
-- `CodeSizeZipped`: `int`
-- `ConcurrentExecutions`: `int`
-- `UnreservedConcurrentExecutions`: `int`
-
-<a id="accountusagetypedef"></a>
+```python title="Definition"
+class AccountLimitTypeDef(TypedDict):
+    TotalCodeSize: NotRequired[int],
+    CodeSizeUnzipped: NotRequired[int],
+    CodeSizeZipped: NotRequired[int],
+    ConcurrentExecutions: NotRequired[int],
+    UnreservedConcurrentExecutions: NotRequired[int],
+```
 
 ## AccountUsageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AccountUsageTypeDef
+
+def get_value() -> AccountUsageTypeDef:
+    return {
+        "TotalCodeSize": ...,
+    }
 ```
 
-Optional fields:
-
-- `TotalCodeSize`: `int`
-- `FunctionCount`: `int`
-
-<a id="addlayerversionpermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class AccountUsageTypeDef(TypedDict):
+    TotalCodeSize: NotRequired[int],
+    FunctionCount: NotRequired[int],
+```
 
 ## AddLayerVersionPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionRequestRequestTypeDef
+
+def get_value() -> AddLayerVersionPermissionRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "VersionNumber": ...,
+        "StatementId": ...,
+        "Action": ...,
+        "Principal": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerName`: `str`
-- `VersionNumber`: `int`
-- `StatementId`: `str`
-- `Action`: `str`
-- `Principal`: `str`
-
-Optional fields:
-
-- `OrganizationId`: `str`
-- `RevisionId`: `str`
-
-<a id="addlayerversionpermissionresponsetypedef"></a>
+```python title="Definition"
+class AddLayerVersionPermissionRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    VersionNumber: int,
+    StatementId: str,
+    Action: str,
+    Principal: str,
+    OrganizationId: NotRequired[str],
+    RevisionId: NotRequired[str],
+```
 
 ## AddLayerVersionPermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AddLayerVersionPermissionResponseTypeDef
+
+def get_value() -> AddLayerVersionPermissionResponseTypeDef:
+    return {
+        "Statement": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddLayerVersionPermissionResponseTypeDef(TypedDict):
+    Statement: str,
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Statement`: `str`
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="addpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AddPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AddPermissionRequestRequestTypeDef
+
+def get_value() -> AddPermissionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "StatementId": ...,
+        "Action": ...,
+        "Principal": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `StatementId`: `str`
-- `Action`: `str`
-- `Principal`: `str`
-
-Optional fields:
-
-- `SourceArn`: `str`
-- `SourceAccount`: `str`
-- `EventSourceToken`: `str`
-- `Qualifier`: `str`
-- `RevisionId`: `str`
-- `PrincipalOrgID`: `str`
-
-<a id="addpermissionresponsetypedef"></a>
+```python title="Definition"
+class AddPermissionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    StatementId: str,
+    Action: str,
+    Principal: str,
+    SourceArn: NotRequired[str],
+    SourceAccount: NotRequired[str],
+    EventSourceToken: NotRequired[str],
+    Qualifier: NotRequired[str],
+    RevisionId: NotRequired[str],
+    PrincipalOrgID: NotRequired[str],
+```
 
 ## AddPermissionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AddPermissionResponseTypeDef
+
+def get_value() -> AddPermissionResponseTypeDef:
+    return {
+        "Statement": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddPermissionResponseTypeDef(TypedDict):
+    Statement: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Statement`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="aliasconfigurationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AliasConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AliasConfigurationResponseMetadataTypeDef
+
+def get_value() -> AliasConfigurationResponseMetadataTypeDef:
+    return {
+        "AliasArn": ...,
+        "Name": ...,
+        "FunctionVersion": ...,
+        "Description": ...,
+        "RoutingConfig": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AliasConfigurationResponseMetadataTypeDef(TypedDict):
+    AliasArn: str,
+    Name: str,
+    FunctionVersion: str,
+    Description: str,
+    RoutingConfig: AliasRoutingConfigurationTypeDef,  # (1)
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AliasArn`: `str`
-- `Name`: `str`
-- `FunctionVersion`: `str`
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="aliasconfigurationtypedef"></a>
-
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AliasConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AliasConfigurationTypeDef
+
+def get_value() -> AliasConfigurationTypeDef:
+    return {
+        "AliasArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AliasConfigurationTypeDef(TypedDict):
+    AliasArn: NotRequired[str],
+    Name: NotRequired[str],
+    FunctionVersion: NotRequired[str],
+    Description: NotRequired[str],
+    RoutingConfig: NotRequired[AliasRoutingConfigurationTypeDef],  # (1)
+    RevisionId: NotRequired[str],
+```
 
-- `AliasArn`: `str`
-- `Name`: `str`
-- `FunctionVersion`: `str`
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-- `RevisionId`: `str`
-
-<a id="aliasroutingconfigurationtypedef"></a>
-
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
 ## AliasRoutingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AliasRoutingConfigurationTypeDef
+
+def get_value() -> AliasRoutingConfigurationTypeDef:
+    return {
+        "AdditionalVersionWeights": ...,
+    }
 ```
 
-Optional fields:
-
-- `AdditionalVersionWeights`: `Mapping`\[`str`, `float`\]
-
-<a id="allowedpublisherstypedef"></a>
+```python title="Definition"
+class AliasRoutingConfigurationTypeDef(TypedDict):
+    AdditionalVersionWeights: NotRequired[Mapping[str, float]],
+```
 
 ## AllowedPublishersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import AllowedPublishersTypeDef
+
+def get_value() -> AllowedPublishersTypeDef:
+    return {
+        "SigningProfileVersionArns": ...,
+    }
 ```
 
-Required fields:
-
-- `SigningProfileVersionArns`: `Sequence`\[`str`\]
-
-<a id="codesigningconfigtypedef"></a>
+```python title="Definition"
+class AllowedPublishersTypeDef(TypedDict):
+    SigningProfileVersionArns: Sequence[str],
+```
 
 ## CodeSigningConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CodeSigningConfigTypeDef
+
+def get_value() -> CodeSigningConfigTypeDef:
+    return {
+        "CodeSigningConfigId": ...,
+        "CodeSigningConfigArn": ...,
+        "AllowedPublishers": ...,
+        "CodeSigningPolicies": ...,
+        "LastModified": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeSigningConfigTypeDef(TypedDict):
+    CodeSigningConfigId: str,
+    CodeSigningConfigArn: str,
+    AllowedPublishers: AllowedPublishersTypeDef,  # (1)
+    CodeSigningPolicies: CodeSigningPoliciesTypeDef,  # (2)
+    LastModified: str,
+    Description: NotRequired[str],
+```
 
-- `CodeSigningConfigId`: `str`
-- `CodeSigningConfigArn`: `str`
-- `AllowedPublishers`:
-  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
-- `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
-- `LastModified`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="codesigningpoliciestypedef"></a>
-
+1. See [:material-code-braces: AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef) 
+2. See [:material-code-braces: CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef) 
 ## CodeSigningPoliciesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CodeSigningPoliciesTypeDef
+
+def get_value() -> CodeSigningPoliciesTypeDef:
+    return {
+        "UntrustedArtifactOnDeployment": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CodeSigningPoliciesTypeDef(TypedDict):
+    UntrustedArtifactOnDeployment: NotRequired[CodeSigningPolicyType],  # (1)
+```
 
-- `UntrustedArtifactOnDeployment`:
-  [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
-
-<a id="concurrencyresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: CodeSigningPolicyType](./literals.md#codesigningpolicytype) 
 ## ConcurrencyResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ConcurrencyResponseMetadataTypeDef
+
+def get_value() -> ConcurrencyResponseMetadataTypeDef:
+    return {
+        "ReservedConcurrentExecutions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConcurrencyResponseMetadataTypeDef(TypedDict):
+    ReservedConcurrentExecutions: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReservedConcurrentExecutions`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="concurrencytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ConcurrencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ConcurrencyTypeDef
+
+def get_value() -> ConcurrencyTypeDef:
+    return {
+        "ReservedConcurrentExecutions": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReservedConcurrentExecutions`: `int`
-
-<a id="createaliasrequestrequesttypedef"></a>
+```python title="Definition"
+class ConcurrencyTypeDef(TypedDict):
+    ReservedConcurrentExecutions: NotRequired[int],
+```
 
 ## CreateAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CreateAliasRequestRequestTypeDef
+
+def get_value() -> CreateAliasRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Name": ...,
+        "FunctionVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAliasRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Name: str,
+    FunctionVersion: str,
+    Description: NotRequired[str],
+    RoutingConfig: NotRequired[AliasRoutingConfigurationTypeDef],  # (1)
+```
 
-- `FunctionName`: `str`
-- `Name`: `str`
-- `FunctionVersion`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-
-<a id="createcodesigningconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
 ## CreateCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> CreateCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "AllowedPublishers": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    AllowedPublishers: AllowedPublishersTypeDef,  # (1)
+    Description: NotRequired[str],
+    CodeSigningPolicies: NotRequired[CodeSigningPoliciesTypeDef],  # (2)
+```
 
-- `AllowedPublishers`:
-  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
-
-<a id="createcodesigningconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef) 
+2. See [:material-code-braces: CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef) 
 ## CreateCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CreateCodeSigningConfigResponseTypeDef
+
+def get_value() -> CreateCodeSigningConfigResponseTypeDef:
+    return {
+        "CodeSigningConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCodeSigningConfigResponseTypeDef(TypedDict):
+    CodeSigningConfig: CodeSigningConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeSigningConfig`:
-  [CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventsourcemappingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventSourceMappingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CreateEventSourceMappingRequestRequestTypeDef
+
+def get_value() -> CreateEventSourceMappingRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventSourceMappingRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    EventSourceArn: NotRequired[str],
+    Enabled: NotRequired[bool],
+    BatchSize: NotRequired[int],
+    FilterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    MaximumBatchingWindowInSeconds: NotRequired[int],
+    ParallelizationFactor: NotRequired[int],
+    StartingPosition: NotRequired[EventSourcePositionType],  # (2)
+    StartingPositionTimestamp: NotRequired[Union[datetime, str]],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (3)
+    MaximumRecordAgeInSeconds: NotRequired[int],
+    BisectBatchOnFunctionError: NotRequired[bool],
+    MaximumRetryAttempts: NotRequired[int],
+    TumblingWindowInSeconds: NotRequired[int],
+    Topics: NotRequired[Sequence[str]],
+    Queues: NotRequired[Sequence[str]],
+    SourceAccessConfigurations: NotRequired[Sequence[SourceAccessConfigurationTypeDef]],  # (4)
+    SelfManagedEventSource: NotRequired[SelfManagedEventSourceTypeDef],  # (5)
+    FunctionResponseTypes: NotRequired[Sequence[FunctionResponseTypeType]],  # (6)
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `EventSourceArn`: `str`
-- `Enabled`: `bool`
-- `BatchSize`: `int`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `MaximumBatchingWindowInSeconds`: `int`
-- `ParallelizationFactor`: `int`
-- `StartingPosition`:
-  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
-- `StartingPositionTimestamp`: `Union`\[`datetime`, `str`\]
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `TumblingWindowInSeconds`: `int`
-- `Topics`: `Sequence`\[`str`\]
-- `Queues`: `Sequence`\[`str`\]
-- `SourceAccessConfigurations`:
-  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `SelfManagedEventSource`:
-  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
-  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
-
-<a id="createfunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
+3. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
+6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 ## CreateFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import CreateFunctionRequestRequestTypeDef
+
+def get_value() -> CreateFunctionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Role": ...,
+        "Code": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFunctionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Role: str,
+    Code: FunctionCodeTypeDef,  # (1)
+    Runtime: NotRequired[RuntimeType],  # (2)
+    Handler: NotRequired[str],
+    Description: NotRequired[str],
+    Timeout: NotRequired[int],
+    MemorySize: NotRequired[int],
+    Publish: NotRequired[bool],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (3)
+    PackageType: NotRequired[PackageTypeType],  # (4)
+    DeadLetterConfig: NotRequired[DeadLetterConfigTypeDef],  # (5)
+    Environment: NotRequired[EnvironmentTypeDef],  # (6)
+    KMSKeyArn: NotRequired[str],
+    TracingConfig: NotRequired[TracingConfigTypeDef],  # (7)
+    Tags: NotRequired[Mapping[str, str]],
+    Layers: NotRequired[Sequence[str]],
+    FileSystemConfigs: NotRequired[Sequence[FileSystemConfigTypeDef]],  # (8)
+    ImageConfig: NotRequired[ImageConfigTypeDef],  # (9)
+    CodeSigningConfigArn: NotRequired[str],
+    Architectures: NotRequired[Sequence[ArchitectureType]],  # (10)
+    EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (11)
+```
 
-- `FunctionName`: `str`
-- `Role`: `str`
-- `Code`: [FunctionCodeTypeDef](./type_defs.md#functioncodetypedef)
-
-Optional fields:
-
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `Handler`: `str`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `Publish`: `bool`
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Layers`: `Sequence`\[`str`\]
-- `FileSystemConfigs`:
-  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `CodeSigningConfigArn`: `str`
-- `Architectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="deadletterconfigtypedef"></a>
-
+1. See [:material-code-braces: FunctionCodeTypeDef](./type_defs.md#functioncodetypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+4. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+5. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+6. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+7. See [:material-code-braces: TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef) 
+8. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+9. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
+10. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+11. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## DeadLetterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeadLetterConfigTypeDef
+
+def get_value() -> DeadLetterConfigTypeDef:
+    return {
+        "TargetArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TargetArn`: `str`
-
-<a id="deletealiasrequestrequesttypedef"></a>
+```python title="Definition"
+class DeadLetterConfigTypeDef(TypedDict):
+    TargetArn: NotRequired[str],
+```
 
 ## DeleteAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteAliasRequestRequestTypeDef
+
+def get_value() -> DeleteAliasRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `Name`: `str`
-
-<a id="deletecodesigningconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAliasRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Name: str,
+```
 
 ## DeleteCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> DeleteCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CodeSigningConfigArn`: `str`
-
-<a id="deleteeventsourcemappingrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+```
 
 ## DeleteEventSourceMappingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteEventSourceMappingRequestRequestTypeDef
+
+def get_value() -> DeleteEventSourceMappingRequestRequestTypeDef:
+    return {
+        "UUID": ...,
+    }
 ```
 
-Required fields:
-
-- `UUID`: `str`
-
-<a id="deletefunctioncodesigningconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEventSourceMappingRequestRequestTypeDef(TypedDict):
+    UUID: str,
+```
 
 ## DeleteFunctionCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteFunctionCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-<a id="deletefunctionconcurrencyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFunctionCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+```
 
 ## DeleteFunctionConcurrencyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteFunctionConcurrencyRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionConcurrencyRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-<a id="deletefunctioneventinvokeconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFunctionConcurrencyRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+```
 
 ## DeleteFunctionEventInvokeConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteFunctionEventInvokeConfigRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionEventInvokeConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-<a id="deletefunctionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFunctionEventInvokeConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
 ## DeleteFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteFunctionRequestRequestTypeDef
+
+def get_value() -> DeleteFunctionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-<a id="deletelayerversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFunctionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
 ## DeleteLayerVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteLayerVersionRequestRequestTypeDef
+
+def get_value() -> DeleteLayerVersionRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "VersionNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerName`: `str`
-- `VersionNumber`: `int`
-
-<a id="deleteprovisionedconcurrencyconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteLayerVersionRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    VersionNumber: int,
+```
 
 ## DeleteProvisionedConcurrencyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DeleteProvisionedConcurrencyConfigRequestRequestTypeDef
+
+def get_value() -> DeleteProvisionedConcurrencyConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Qualifier": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `Qualifier`: `str`
-
-<a id="destinationconfigtypedef"></a>
+```python title="Definition"
+class DeleteProvisionedConcurrencyConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: str,
+```
 
 ## DestinationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import DestinationConfigTypeDef
+
+def get_value() -> DestinationConfigTypeDef:
+    return {
+        "OnSuccess": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationConfigTypeDef(TypedDict):
+    OnSuccess: NotRequired[OnSuccessTypeDef],  # (1)
+    OnFailure: NotRequired[OnFailureTypeDef],  # (2)
+```
 
-- `OnSuccess`: [OnSuccessTypeDef](./type_defs.md#onsuccesstypedef)
-- `OnFailure`: [OnFailureTypeDef](./type_defs.md#onfailuretypedef)
-
-<a id="environmenterrortypedef"></a>
-
+1. See [:material-code-braces: OnSuccessTypeDef](./type_defs.md#onsuccesstypedef) 
+2. See [:material-code-braces: OnFailureTypeDef](./type_defs.md#onfailuretypedef) 
 ## EnvironmentErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EnvironmentErrorTypeDef
+
+def get_value() -> EnvironmentErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `Message`: `str`
-
-<a id="environmentresponsetypedef"></a>
+```python title="Definition"
+class EnvironmentErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## EnvironmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EnvironmentResponseTypeDef
+
+def get_value() -> EnvironmentResponseTypeDef:
+    return {
+        "Variables": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EnvironmentResponseTypeDef(TypedDict):
+    Variables: NotRequired[Dict[str, str]],
+    Error: NotRequired[EnvironmentErrorTypeDef],  # (1)
+```
 
-- `Variables`: `Dict`\[`str`, `str`\]
-- `Error`: [EnvironmentErrorTypeDef](./type_defs.md#environmenterrortypedef)
-
-<a id="environmenttypedef"></a>
-
+1. See [:material-code-braces: EnvironmentErrorTypeDef](./type_defs.md#environmenterrortypedef) 
 ## EnvironmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EnvironmentTypeDef
+
+def get_value() -> EnvironmentTypeDef:
+    return {
+        "Variables": ...,
+    }
 ```
 
-Optional fields:
-
-- `Variables`: `Mapping`\[`str`, `str`\]
-
-<a id="ephemeralstoragetypedef"></a>
+```python title="Definition"
+class EnvironmentTypeDef(TypedDict):
+    Variables: NotRequired[Mapping[str, str]],
+```
 
 ## EphemeralStorageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EphemeralStorageTypeDef
+
+def get_value() -> EphemeralStorageTypeDef:
+    return {
+        "Size": ...,
+    }
 ```
 
-Required fields:
-
-- `Size`: `int`
-
-<a id="eventsourcemappingconfigurationresponsemetadatatypedef"></a>
+```python title="Definition"
+class EphemeralStorageTypeDef(TypedDict):
+    Size: int,
+```
 
 ## EventSourceMappingConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationResponseMetadataTypeDef
+
+def get_value() -> EventSourceMappingConfigurationResponseMetadataTypeDef:
+    return {
+        "UUID": ...,
+        "StartingPosition": ...,
+        "StartingPositionTimestamp": ...,
+        "BatchSize": ...,
+        "MaximumBatchingWindowInSeconds": ...,
+        "ParallelizationFactor": ...,
+        "EventSourceArn": ...,
+        "FilterCriteria": ...,
+        "FunctionArn": ...,
+        "LastModified": ...,
+        "LastProcessingResult": ...,
+        "State": ...,
+        "StateTransitionReason": ...,
+        "DestinationConfig": ...,
+        "Topics": ...,
+        "Queues": ...,
+        "SourceAccessConfigurations": ...,
+        "SelfManagedEventSource": ...,
+        "MaximumRecordAgeInSeconds": ...,
+        "BisectBatchOnFunctionError": ...,
+        "MaximumRetryAttempts": ...,
+        "TumblingWindowInSeconds": ...,
+        "FunctionResponseTypes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventSourceMappingConfigurationResponseMetadataTypeDef(TypedDict):
+    UUID: str,
+    StartingPosition: EventSourcePositionType,  # (1)
+    StartingPositionTimestamp: datetime,
+    BatchSize: int,
+    MaximumBatchingWindowInSeconds: int,
+    ParallelizationFactor: int,
+    EventSourceArn: str,
+    FilterCriteria: FilterCriteriaTypeDef,  # (2)
+    FunctionArn: str,
+    LastModified: datetime,
+    LastProcessingResult: str,
+    State: str,
+    StateTransitionReason: str,
+    DestinationConfig: DestinationConfigTypeDef,  # (3)
+    Topics: List[str],
+    Queues: List[str],
+    SourceAccessConfigurations: List[SourceAccessConfigurationTypeDef],  # (4)
+    SelfManagedEventSource: SelfManagedEventSourceTypeDef,  # (5)
+    MaximumRecordAgeInSeconds: int,
+    BisectBatchOnFunctionError: bool,
+    MaximumRetryAttempts: int,
+    TumblingWindowInSeconds: int,
+    FunctionResponseTypes: List[FunctionResponseTypeType],  # (6)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (7)
+```
 
-- `UUID`: `str`
-- `StartingPosition`:
-  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
-- `StartingPositionTimestamp`: `datetime`
-- `BatchSize`: `int`
-- `MaximumBatchingWindowInSeconds`: `int`
-- `ParallelizationFactor`: `int`
-- `EventSourceArn`: `str`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `FunctionArn`: `str`
-- `LastModified`: `datetime`
-- `LastProcessingResult`: `str`
-- `State`: `str`
-- `StateTransitionReason`: `str`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `Topics`: `List`\[`str`\]
-- `Queues`: `List`\[`str`\]
-- `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `SelfManagedEventSource`:
-  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventsourcemappingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+3. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
+6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
+7. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventSourceMappingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import EventSourceMappingConfigurationTypeDef
+
+def get_value() -> EventSourceMappingConfigurationTypeDef:
+    return {
+        "UUID": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EventSourceMappingConfigurationTypeDef(TypedDict):
+    UUID: NotRequired[str],
+    StartingPosition: NotRequired[EventSourcePositionType],  # (1)
+    StartingPositionTimestamp: NotRequired[datetime],
+    BatchSize: NotRequired[int],
+    MaximumBatchingWindowInSeconds: NotRequired[int],
+    ParallelizationFactor: NotRequired[int],
+    EventSourceArn: NotRequired[str],
+    FilterCriteria: NotRequired[FilterCriteriaTypeDef],  # (2)
+    FunctionArn: NotRequired[str],
+    LastModified: NotRequired[datetime],
+    LastProcessingResult: NotRequired[str],
+    State: NotRequired[str],
+    StateTransitionReason: NotRequired[str],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (3)
+    Topics: NotRequired[List[str]],
+    Queues: NotRequired[List[str]],
+    SourceAccessConfigurations: NotRequired[List[SourceAccessConfigurationTypeDef]],  # (4)
+    SelfManagedEventSource: NotRequired[SelfManagedEventSourceTypeDef],  # (5)
+    MaximumRecordAgeInSeconds: NotRequired[int],
+    BisectBatchOnFunctionError: NotRequired[bool],
+    MaximumRetryAttempts: NotRequired[int],
+    TumblingWindowInSeconds: NotRequired[int],
+    FunctionResponseTypes: NotRequired[List[FunctionResponseTypeType]],  # (6)
+```
 
-- `UUID`: `str`
-- `StartingPosition`:
-  [EventSourcePositionType](./literals.md#eventsourcepositiontype)
-- `StartingPositionTimestamp`: `datetime`
-- `BatchSize`: `int`
-- `MaximumBatchingWindowInSeconds`: `int`
-- `ParallelizationFactor`: `int`
-- `EventSourceArn`: `str`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `FunctionArn`: `str`
-- `LastModified`: `datetime`
-- `LastProcessingResult`: `str`
-- `State`: `str`
-- `StateTransitionReason`: `str`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `Topics`: `List`\[`str`\]
-- `Queues`: `List`\[`str`\]
-- `SourceAccessConfigurations`:
-  `List`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `SelfManagedEventSource`:
-  [SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `List`\[`Literal['ReportBatchItemFailures']` (see
-  [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
-
-<a id="filesystemconfigtypedef"></a>
-
+1. See [:material-code-brackets: EventSourcePositionType](./literals.md#eventsourcepositiontype) 
+2. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+3. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+4. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+5. See [:material-code-braces: SelfManagedEventSourceTypeDef](./type_defs.md#selfmanagedeventsourcetypedef) 
+6. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 ## FileSystemConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FileSystemConfigTypeDef
+
+def get_value() -> FileSystemConfigTypeDef:
+    return {
+        "Arn": ...,
+        "LocalMountPath": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `LocalMountPath`: `str`
-
-<a id="filtercriteriatypedef"></a>
+```python title="Definition"
+class FileSystemConfigTypeDef(TypedDict):
+    Arn: str,
+    LocalMountPath: str,
+```
 
 ## FilterCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FilterCriteriaTypeDef
+
+def get_value() -> FilterCriteriaTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FilterCriteriaTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[FilterTypeDef]],  # (1)
+```
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-
-<a id="filtertypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Pattern": ...,
+    }
 ```
 
-Optional fields:
-
-- `Pattern`: `str`
-
-<a id="functioncodelocationtypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Pattern: NotRequired[str],
+```
 
 ## FunctionCodeLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionCodeLocationTypeDef
+
+def get_value() -> FunctionCodeLocationTypeDef:
+    return {
+        "RepositoryType": ...,
+    }
 ```
 
-Optional fields:
-
-- `RepositoryType`: `str`
-- `Location`: `str`
-- `ImageUri`: `str`
-- `ResolvedImageUri`: `str`
-
-<a id="functioncodetypedef"></a>
+```python title="Definition"
+class FunctionCodeLocationTypeDef(TypedDict):
+    RepositoryType: NotRequired[str],
+    Location: NotRequired[str],
+    ImageUri: NotRequired[str],
+    ResolvedImageUri: NotRequired[str],
+```
 
 ## FunctionCodeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionCodeTypeDef
+
+def get_value() -> FunctionCodeTypeDef:
+    return {
+        "ZipFile": ...,
+    }
 ```
 
-Optional fields:
-
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3Bucket`: `str`
-- `S3Key`: `str`
-- `S3ObjectVersion`: `str`
-- `ImageUri`: `str`
-
-<a id="functionconfigurationresponsemetadatatypedef"></a>
+```python title="Definition"
+class FunctionCodeTypeDef(TypedDict):
+    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    S3Bucket: NotRequired[str],
+    S3Key: NotRequired[str],
+    S3ObjectVersion: NotRequired[str],
+    ImageUri: NotRequired[str],
+```
 
 ## FunctionConfigurationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionConfigurationResponseMetadataTypeDef
+
+def get_value() -> FunctionConfigurationResponseMetadataTypeDef:
+    return {
+        "FunctionName": ...,
+        "FunctionArn": ...,
+        "Runtime": ...,
+        "Role": ...,
+        "Handler": ...,
+        "CodeSize": ...,
+        "Description": ...,
+        "Timeout": ...,
+        "MemorySize": ...,
+        "LastModified": ...,
+        "CodeSha256": ...,
+        "Version": ...,
+        "VpcConfig": ...,
+        "DeadLetterConfig": ...,
+        "Environment": ...,
+        "KMSKeyArn": ...,
+        "TracingConfig": ...,
+        "MasterArn": ...,
+        "RevisionId": ...,
+        "Layers": ...,
+        "State": ...,
+        "StateReason": ...,
+        "StateReasonCode": ...,
+        "LastUpdateStatus": ...,
+        "LastUpdateStatusReason": ...,
+        "LastUpdateStatusReasonCode": ...,
+        "FileSystemConfigs": ...,
+        "PackageType": ...,
+        "ImageConfigResponse": ...,
+        "SigningProfileVersionArn": ...,
+        "SigningJobArn": ...,
+        "Architectures": ...,
+        "EphemeralStorage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionConfigurationResponseMetadataTypeDef(TypedDict):
+    FunctionName: str,
+    FunctionArn: str,
+    Runtime: RuntimeType,  # (1)
+    Role: str,
+    Handler: str,
+    CodeSize: int,
+    Description: str,
+    Timeout: int,
+    MemorySize: int,
+    LastModified: str,
+    CodeSha256: str,
+    Version: str,
+    VpcConfig: VpcConfigResponseTypeDef,  # (2)
+    DeadLetterConfig: DeadLetterConfigTypeDef,  # (3)
+    Environment: EnvironmentResponseTypeDef,  # (4)
+    KMSKeyArn: str,
+    TracingConfig: TracingConfigResponseTypeDef,  # (5)
+    MasterArn: str,
+    RevisionId: str,
+    Layers: List[LayerTypeDef],  # (6)
+    State: StateType,  # (7)
+    StateReason: str,
+    StateReasonCode: StateReasonCodeType,  # (8)
+    LastUpdateStatus: LastUpdateStatusType,  # (9)
+    LastUpdateStatusReason: str,
+    LastUpdateStatusReasonCode: LastUpdateStatusReasonCodeType,  # (10)
+    FileSystemConfigs: List[FileSystemConfigTypeDef],  # (11)
+    PackageType: PackageTypeType,  # (12)
+    ImageConfigResponse: ImageConfigResponseTypeDef,  # (13)
+    SigningProfileVersionArn: str,
+    SigningJobArn: str,
+    Architectures: List[ArchitectureType],  # (14)
+    EphemeralStorage: EphemeralStorageTypeDef,  # (15)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (16)
+```
 
-- `FunctionName`: `str`
-- `FunctionArn`: `str`
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `Role`: `str`
-- `Handler`: `str`
-- `CodeSize`: `int`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `LastModified`: `str`
-- `CodeSha256`: `str`
-- `Version`: `str`
-- `VpcConfig`:
-  [VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `Environment`:
-  [EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`:
-  [TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef)
-- `MasterArn`: `str`
-- `RevisionId`: `str`
-- `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `State`: [StateType](./literals.md#statetype)
-- `StateReason`: `str`
-- `StateReasonCode`: [StateReasonCodeType](./literals.md#statereasoncodetype)
-- `LastUpdateStatus`:
-  [LastUpdateStatusType](./literals.md#lastupdatestatustype)
-- `LastUpdateStatusReason`: `str`
-- `LastUpdateStatusReasonCode`:
-  [LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype)
-- `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
-- `ImageConfigResponse`:
-  [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
-- `SigningProfileVersionArn`: `str`
-- `SigningJobArn`: `str`
-- `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="functionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-braces: VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+3. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+4. See [:material-code-braces: EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef) 
+5. See [:material-code-braces: TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef) 
+6. See [:material-code-braces: LayerTypeDef](./type_defs.md#layertypedef) 
+7. See [:material-code-brackets: StateType](./literals.md#statetype) 
+8. See [:material-code-brackets: StateReasonCodeType](./literals.md#statereasoncodetype) 
+9. See [:material-code-brackets: LastUpdateStatusType](./literals.md#lastupdatestatustype) 
+10. See [:material-code-brackets: LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype) 
+11. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+12. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+13. See [:material-code-braces: ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef) 
+14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
+16. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FunctionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionConfigurationTypeDef
+
+def get_value() -> FunctionConfigurationTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FunctionConfigurationTypeDef(TypedDict):
+    FunctionName: NotRequired[str],
+    FunctionArn: NotRequired[str],
+    Runtime: NotRequired[RuntimeType],  # (1)
+    Role: NotRequired[str],
+    Handler: NotRequired[str],
+    CodeSize: NotRequired[int],
+    Description: NotRequired[str],
+    Timeout: NotRequired[int],
+    MemorySize: NotRequired[int],
+    LastModified: NotRequired[str],
+    CodeSha256: NotRequired[str],
+    Version: NotRequired[str],
+    VpcConfig: NotRequired[VpcConfigResponseTypeDef],  # (2)
+    DeadLetterConfig: NotRequired[DeadLetterConfigTypeDef],  # (3)
+    Environment: NotRequired[EnvironmentResponseTypeDef],  # (4)
+    KMSKeyArn: NotRequired[str],
+    TracingConfig: NotRequired[TracingConfigResponseTypeDef],  # (5)
+    MasterArn: NotRequired[str],
+    RevisionId: NotRequired[str],
+    Layers: NotRequired[List[LayerTypeDef]],  # (6)
+    State: NotRequired[StateType],  # (7)
+    StateReason: NotRequired[str],
+    StateReasonCode: NotRequired[StateReasonCodeType],  # (8)
+    LastUpdateStatus: NotRequired[LastUpdateStatusType],  # (9)
+    LastUpdateStatusReason: NotRequired[str],
+    LastUpdateStatusReasonCode: NotRequired[LastUpdateStatusReasonCodeType],  # (10)
+    FileSystemConfigs: NotRequired[List[FileSystemConfigTypeDef]],  # (11)
+    PackageType: NotRequired[PackageTypeType],  # (12)
+    ImageConfigResponse: NotRequired[ImageConfigResponseTypeDef],  # (13)
+    SigningProfileVersionArn: NotRequired[str],
+    SigningJobArn: NotRequired[str],
+    Architectures: NotRequired[List[ArchitectureType]],  # (14)
+    EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (15)
+```
 
-- `FunctionName`: `str`
-- `FunctionArn`: `str`
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `Role`: `str`
-- `Handler`: `str`
-- `CodeSize`: `int`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `LastModified`: `str`
-- `CodeSha256`: `str`
-- `Version`: `str`
-- `VpcConfig`:
-  [VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `Environment`:
-  [EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`:
-  [TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef)
-- `MasterArn`: `str`
-- `RevisionId`: `str`
-- `Layers`: `List`\[[LayerTypeDef](./type_defs.md#layertypedef)\]
-- `State`: [StateType](./literals.md#statetype)
-- `StateReason`: `str`
-- `StateReasonCode`: [StateReasonCodeType](./literals.md#statereasoncodetype)
-- `LastUpdateStatus`:
-  [LastUpdateStatusType](./literals.md#lastupdatestatustype)
-- `LastUpdateStatusReason`: `str`
-- `LastUpdateStatusReasonCode`:
-  [LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype)
-- `FileSystemConfigs`:
-  `List`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `PackageType`: [PackageTypeType](./literals.md#packagetypetype)
-- `ImageConfigResponse`:
-  [ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef)
-- `SigningProfileVersionArn`: `str`
-- `SigningJobArn`: `str`
-- `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="functioneventinvokeconfigresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-braces: VpcConfigResponseTypeDef](./type_defs.md#vpcconfigresponsetypedef) 
+3. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+4. See [:material-code-braces: EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef) 
+5. See [:material-code-braces: TracingConfigResponseTypeDef](./type_defs.md#tracingconfigresponsetypedef) 
+6. See [:material-code-braces: LayerTypeDef](./type_defs.md#layertypedef) 
+7. See [:material-code-brackets: StateType](./literals.md#statetype) 
+8. See [:material-code-brackets: StateReasonCodeType](./literals.md#statereasoncodetype) 
+9. See [:material-code-brackets: LastUpdateStatusType](./literals.md#lastupdatestatustype) 
+10. See [:material-code-brackets: LastUpdateStatusReasonCodeType](./literals.md#lastupdatestatusreasoncodetype) 
+11. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+12. See [:material-code-brackets: PackageTypeType](./literals.md#packagetypetype) 
+13. See [:material-code-braces: ImageConfigResponseTypeDef](./type_defs.md#imageconfigresponsetypedef) 
+14. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+15. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## FunctionEventInvokeConfigResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionEventInvokeConfigResponseMetadataTypeDef
+
+def get_value() -> FunctionEventInvokeConfigResponseMetadataTypeDef:
+    return {
+        "LastModified": ...,
+        "FunctionArn": ...,
+        "MaximumRetryAttempts": ...,
+        "MaximumEventAgeInSeconds": ...,
+        "DestinationConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FunctionEventInvokeConfigResponseMetadataTypeDef(TypedDict):
+    LastModified: datetime,
+    FunctionArn: str,
+    MaximumRetryAttempts: int,
+    MaximumEventAgeInSeconds: int,
+    DestinationConfig: DestinationConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LastModified`: `datetime`
-- `FunctionArn`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="functioneventinvokeconfigtypedef"></a>
-
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FunctionEventInvokeConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import FunctionEventInvokeConfigTypeDef
+
+def get_value() -> FunctionEventInvokeConfigTypeDef:
+    return {
+        "LastModified": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FunctionEventInvokeConfigTypeDef(TypedDict):
+    LastModified: NotRequired[datetime],
+    FunctionArn: NotRequired[str],
+    MaximumRetryAttempts: NotRequired[int],
+    MaximumEventAgeInSeconds: NotRequired[int],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (1)
+```
 
-- `LastModified`: `datetime`
-- `FunctionArn`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-
-<a id="getaccountsettingsresponsetypedef"></a>
-
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
 ## GetAccountSettingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetAccountSettingsResponseTypeDef
+
+def get_value() -> GetAccountSettingsResponseTypeDef:
+    return {
+        "AccountLimit": ...,
+        "AccountUsage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccountSettingsResponseTypeDef(TypedDict):
+    AccountLimit: AccountLimitTypeDef,  # (1)
+    AccountUsage: AccountUsageTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `AccountLimit`: [AccountLimitTypeDef](./type_defs.md#accountlimittypedef)
-- `AccountUsage`: [AccountUsageTypeDef](./type_defs.md#accountusagetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getaliasrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccountLimitTypeDef](./type_defs.md#accountlimittypedef) 
+2. See [:material-code-braces: AccountUsageTypeDef](./type_defs.md#accountusagetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetAliasRequestRequestTypeDef
+
+def get_value() -> GetAliasRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `Name`: `str`
-
-<a id="getcodesigningconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class GetAliasRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Name: str,
+```
 
 ## GetCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> GetCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CodeSigningConfigArn`: `str`
-
-<a id="getcodesigningconfigresponsetypedef"></a>
+```python title="Definition"
+class GetCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+```
 
 ## GetCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetCodeSigningConfigResponseTypeDef
+
+def get_value() -> GetCodeSigningConfigResponseTypeDef:
+    return {
+        "CodeSigningConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCodeSigningConfigResponseTypeDef(TypedDict):
+    CodeSigningConfig: CodeSigningConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeSigningConfig`:
-  [CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="geteventsourcemappingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetEventSourceMappingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetEventSourceMappingRequestRequestTypeDef
+
+def get_value() -> GetEventSourceMappingRequestRequestTypeDef:
+    return {
+        "UUID": ...,
+    }
 ```
 
-Required fields:
-
-- `UUID`: `str`
-
-<a id="getfunctioncodesigningconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class GetEventSourceMappingRequestRequestTypeDef(TypedDict):
+    UUID: str,
+```
 
 ## GetFunctionCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> GetFunctionCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-<a id="getfunctioncodesigningconfigresponsetypedef"></a>
+```python title="Definition"
+class GetFunctionCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+```
 
 ## GetFunctionCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionCodeSigningConfigResponseTypeDef
+
+def get_value() -> GetFunctionCodeSigningConfigResponseTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+        "FunctionName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionCodeSigningConfigResponseTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    FunctionName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CodeSigningConfigArn`: `str`
-- `FunctionName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfunctionconcurrencyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFunctionConcurrencyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyRequestRequestTypeDef
+
+def get_value() -> GetFunctionConcurrencyRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-<a id="getfunctionconcurrencyresponsetypedef"></a>
+```python title="Definition"
+class GetFunctionConcurrencyRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+```
 
 ## GetFunctionConcurrencyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionConcurrencyResponseTypeDef
+
+def get_value() -> GetFunctionConcurrencyResponseTypeDef:
+    return {
+        "ReservedConcurrentExecutions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionConcurrencyResponseTypeDef(TypedDict):
+    ReservedConcurrentExecutions: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ReservedConcurrentExecutions`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetFunctionConfigurationRequestFunctionActiveWaitTypeDef
 
-<a id="getfunctionconfigurationrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestFunctionActiveWaitTypeDef
 
+def get_value() -> GetFunctionConfigurationRequestFunctionActiveWaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionConfigurationRequestFunctionActiveWaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef
+
+def get_value() -> GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionConfigurationRequestFunctionUpdatedWaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetFunctionConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionConfigurationRequestRequestTypeDef
+
+def get_value() -> GetFunctionConfigurationRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-<a id="getfunctioneventinvokeconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class GetFunctionConfigurationRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
 ## GetFunctionEventInvokeConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionEventInvokeConfigRequestRequestTypeDef
+
+def get_value() -> GetFunctionEventInvokeConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionEventInvokeConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
-- `FunctionName`: `str`
+## GetFunctionRequestFunctionActiveV2WaitTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionRequestFunctionActiveV2WaitTypeDef
 
-- `Qualifier`: `str`
+def get_value() -> GetFunctionRequestFunctionActiveV2WaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
 
-<a id="getfunctionrequestrequesttypedef"></a>
+```python title="Definition"
+class GetFunctionRequestFunctionActiveV2WaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetFunctionRequestFunctionExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionRequestFunctionExistsWaitTypeDef
+
+def get_value() -> GetFunctionRequestFunctionExistsWaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionRequestFunctionExistsWaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## GetFunctionRequestFunctionUpdatedV2WaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import GetFunctionRequestFunctionUpdatedV2WaitTypeDef
+
+def get_value() -> GetFunctionRequestFunctionUpdatedV2WaitTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class GetFunctionRequestFunctionUpdatedV2WaitTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionRequestRequestTypeDef
+
+def get_value() -> GetFunctionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-<a id="getfunctionresponsetypedef"></a>
+```python title="Definition"
+class GetFunctionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
 ## GetFunctionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetFunctionResponseTypeDef
+
+def get_value() -> GetFunctionResponseTypeDef:
+    return {
+        "Configuration": ...,
+        "Code": ...,
+        "Tags": ...,
+        "Concurrency": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFunctionResponseTypeDef(TypedDict):
+    Configuration: FunctionConfigurationTypeDef,  # (1)
+    Code: FunctionCodeLocationTypeDef,  # (2)
+    Tags: Dict[str, str],
+    Concurrency: ConcurrencyTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Configuration`:
-  [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
-- `Code`:
-  [FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Concurrency`: [ConcurrencyTypeDef](./type_defs.md#concurrencytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlayerversionbyarnrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef) 
+2. See [:material-code-braces: FunctionCodeLocationTypeDef](./type_defs.md#functioncodelocationtypedef) 
+3. See [:material-code-braces: ConcurrencyTypeDef](./type_defs.md#concurrencytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLayerVersionByArnRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetLayerVersionByArnRequestRequestTypeDef
+
+def get_value() -> GetLayerVersionByArnRequestRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="getlayerversionpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class GetLayerVersionByArnRequestRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## GetLayerVersionPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyRequestRequestTypeDef
+
+def get_value() -> GetLayerVersionPolicyRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "VersionNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerName`: `str`
-- `VersionNumber`: `int`
-
-<a id="getlayerversionpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetLayerVersionPolicyRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    VersionNumber: int,
+```
 
 ## GetLayerVersionPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetLayerVersionPolicyResponseTypeDef
+
+def get_value() -> GetLayerVersionPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLayerVersionPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlayerversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLayerVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetLayerVersionRequestRequestTypeDef
+
+def get_value() -> GetLayerVersionRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "VersionNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerName`: `str`
-- `VersionNumber`: `int`
-
-<a id="getlayerversionresponsetypedef"></a>
+```python title="Definition"
+class GetLayerVersionRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    VersionNumber: int,
+```
 
 ## GetLayerVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetLayerVersionResponseTypeDef
+
+def get_value() -> GetLayerVersionResponseTypeDef:
+    return {
+        "Content": ...,
+        "LayerArn": ...,
+        "LayerVersionArn": ...,
+        "Description": ...,
+        "CreatedDate": ...,
+        "Version": ...,
+        "CompatibleRuntimes": ...,
+        "LicenseInfo": ...,
+        "CompatibleArchitectures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLayerVersionResponseTypeDef(TypedDict):
+    Content: LayerVersionContentOutputTypeDef,  # (1)
+    LayerArn: str,
+    LayerVersionArn: str,
+    Description: str,
+    CreatedDate: str,
+    Version: int,
+    CompatibleRuntimes: List[RuntimeType],  # (2)
+    LicenseInfo: str,
+    CompatibleArchitectures: List[ArchitectureType],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Content`:
-  [LayerVersionContentOutputTypeDef](./type_defs.md#layerversioncontentoutputtypedef)
-- `LayerArn`: `str`
-- `LayerVersionArn`: `str`
-- `Description`: `str`
-- `CreatedDate`: `str`
-- `Version`: `int`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
-- `LicenseInfo`: `str`
-- `CompatibleArchitectures`:
-  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LayerVersionContentOutputTypeDef](./type_defs.md#layerversioncontentoutputtypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetPolicyRequestRequestTypeDef
+
+def get_value() -> GetPolicyRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-
-<a id="getpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetPolicyRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+```
 
 ## GetPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetPolicyResponseTypeDef
+
+def get_value() -> GetPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprovisionedconcurrencyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetProvisionedConcurrencyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigRequestRequestTypeDef
+
+def get_value() -> GetProvisionedConcurrencyConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Qualifier": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `Qualifier`: `str`
-
-<a id="getprovisionedconcurrencyconfigresponsetypedef"></a>
+```python title="Definition"
+class GetProvisionedConcurrencyConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: str,
+```
 
 ## GetProvisionedConcurrencyConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import GetProvisionedConcurrencyConfigResponseTypeDef
+
+def get_value() -> GetProvisionedConcurrencyConfigResponseTypeDef:
+    return {
+        "RequestedProvisionedConcurrentExecutions": ...,
+        "AvailableProvisionedConcurrentExecutions": ...,
+        "AllocatedProvisionedConcurrentExecutions": ...,
+        "Status": ...,
+        "StatusReason": ...,
+        "LastModified": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetProvisionedConcurrencyConfigResponseTypeDef(TypedDict):
+    RequestedProvisionedConcurrentExecutions: int,
+    AvailableProvisionedConcurrentExecutions: int,
+    AllocatedProvisionedConcurrentExecutions: int,
+    Status: ProvisionedConcurrencyStatusEnumType,  # (1)
+    StatusReason: str,
+    LastModified: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestedProvisionedConcurrentExecutions`: `int`
-- `AvailableProvisionedConcurrentExecutions`: `int`
-- `AllocatedProvisionedConcurrentExecutions`: `int`
-- `Status`:
-  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
-- `StatusReason`: `str`
-- `LastModified`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="imageconfigerrortypedef"></a>
-
+1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImageConfigErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ImageConfigErrorTypeDef
+
+def get_value() -> ImageConfigErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `Message`: `str`
-
-<a id="imageconfigresponsetypedef"></a>
+```python title="Definition"
+class ImageConfigErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## ImageConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ImageConfigResponseTypeDef
+
+def get_value() -> ImageConfigResponseTypeDef:
+    return {
+        "ImageConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImageConfigResponseTypeDef(TypedDict):
+    ImageConfig: NotRequired[ImageConfigTypeDef],  # (1)
+    Error: NotRequired[ImageConfigErrorTypeDef],  # (2)
+```
 
-- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `Error`: [ImageConfigErrorTypeDef](./type_defs.md#imageconfigerrortypedef)
-
-<a id="imageconfigtypedef"></a>
-
+1. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
+2. See [:material-code-braces: ImageConfigErrorTypeDef](./type_defs.md#imageconfigerrortypedef) 
 ## ImageConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ImageConfigTypeDef
+
+def get_value() -> ImageConfigTypeDef:
+    return {
+        "EntryPoint": ...,
+    }
 ```
 
-Optional fields:
-
-- `EntryPoint`: `Sequence`\[`str`\]
-- `Command`: `Sequence`\[`str`\]
-- `WorkingDirectory`: `str`
-
-<a id="invocationrequestrequesttypedef"></a>
+```python title="Definition"
+class ImageConfigTypeDef(TypedDict):
+    EntryPoint: NotRequired[Sequence[str]],
+    Command: NotRequired[Sequence[str]],
+    WorkingDirectory: NotRequired[str],
+```
 
 ## InvocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import InvocationRequestRequestTypeDef
+
+def get_value() -> InvocationRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvocationRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    InvocationType: NotRequired[InvocationTypeType],  # (1)
+    LogType: NotRequired[LogTypeType],  # (2)
+    ClientContext: NotRequired[str],
+    Payload: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    Qualifier: NotRequired[str],
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `InvocationType`: [InvocationTypeType](./literals.md#invocationtypetype)
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
-- `ClientContext`: `str`
-- `Payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `Qualifier`: `str`
-
-<a id="invocationresponsetypedef"></a>
-
+1. See [:material-code-brackets: InvocationTypeType](./literals.md#invocationtypetype) 
+2. See [:material-code-brackets: LogTypeType](./literals.md#logtypetype) 
 ## InvocationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import InvocationResponseTypeDef
+
+def get_value() -> InvocationResponseTypeDef:
+    return {
+        "StatusCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `StatusCode`: `int`
-- `FunctionError`: `str`
-- `LogResult`: `str`
-- `Payload`: `IO`\[`bytes`\]
-- `ExecutedVersion`: `str`
-
-<a id="invokeasyncrequestrequesttypedef"></a>
+```python title="Definition"
+class InvocationResponseTypeDef(TypedDict):
+    StatusCode: NotRequired[int],
+    FunctionError: NotRequired[str],
+    LogResult: NotRequired[str],
+    Payload: NotRequired[IO[bytes]],
+    ExecutedVersion: NotRequired[str],
+```
 
 ## InvokeAsyncRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import InvokeAsyncRequestRequestTypeDef
+
+def get_value() -> InvokeAsyncRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "InvokeArgs": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `InvokeArgs`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="invokeasyncresponsetypedef"></a>
+```python title="Definition"
+class InvokeAsyncRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    InvokeArgs: Union[bytes, IO[bytes], StreamingBody],
+```
 
 ## InvokeAsyncResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import InvokeAsyncResponseTypeDef
+
+def get_value() -> InvokeAsyncResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeAsyncResponseTypeDef(TypedDict):
+    Status: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Status`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="layertypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LayerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import LayerTypeDef
+
+def get_value() -> LayerTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `CodeSize`: `int`
-- `SigningProfileVersionArn`: `str`
-- `SigningJobArn`: `str`
-
-<a id="layerversioncontentinputtypedef"></a>
+```python title="Definition"
+class LayerTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    CodeSize: NotRequired[int],
+    SigningProfileVersionArn: NotRequired[str],
+    SigningJobArn: NotRequired[str],
+```
 
 ## LayerVersionContentInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import LayerVersionContentInputTypeDef
+
+def get_value() -> LayerVersionContentInputTypeDef:
+    return {
+        "S3Bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `S3Bucket`: `str`
-- `S3Key`: `str`
-- `S3ObjectVersion`: `str`
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-
-<a id="layerversioncontentoutputtypedef"></a>
+```python title="Definition"
+class LayerVersionContentInputTypeDef(TypedDict):
+    S3Bucket: NotRequired[str],
+    S3Key: NotRequired[str],
+    S3ObjectVersion: NotRequired[str],
+    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+```
 
 ## LayerVersionContentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import LayerVersionContentOutputTypeDef
+
+def get_value() -> LayerVersionContentOutputTypeDef:
+    return {
+        "Location": ...,
+    }
 ```
 
-Optional fields:
-
-- `Location`: `str`
-- `CodeSha256`: `str`
-- `CodeSize`: `int`
-- `SigningProfileVersionArn`: `str`
-- `SigningJobArn`: `str`
-
-<a id="layerversionslistitemtypedef"></a>
+```python title="Definition"
+class LayerVersionContentOutputTypeDef(TypedDict):
+    Location: NotRequired[str],
+    CodeSha256: NotRequired[str],
+    CodeSize: NotRequired[int],
+    SigningProfileVersionArn: NotRequired[str],
+    SigningJobArn: NotRequired[str],
+```
 
 ## LayerVersionsListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import LayerVersionsListItemTypeDef
+
+def get_value() -> LayerVersionsListItemTypeDef:
+    return {
+        "LayerVersionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LayerVersionsListItemTypeDef(TypedDict):
+    LayerVersionArn: NotRequired[str],
+    Version: NotRequired[int],
+    Description: NotRequired[str],
+    CreatedDate: NotRequired[str],
+    CompatibleRuntimes: NotRequired[List[RuntimeType]],  # (1)
+    LicenseInfo: NotRequired[str],
+    CompatibleArchitectures: NotRequired[List[ArchitectureType]],  # (2)
+```
 
-- `LayerVersionArn`: `str`
-- `Version`: `int`
-- `Description`: `str`
-- `CreatedDate`: `str`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
-- `LicenseInfo`: `str`
-- `CompatibleArchitectures`:
-  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
-
-<a id="layerslistitemtypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## LayersListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import LayersListItemTypeDef
+
+def get_value() -> LayersListItemTypeDef:
+    return {
+        "LayerName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LayersListItemTypeDef(TypedDict):
+    LayerName: NotRequired[str],
+    LayerArn: NotRequired[str],
+    LatestMatchingVersion: NotRequired[LayerVersionsListItemTypeDef],  # (1)
+```
 
-- `LayerName`: `str`
-- `LayerArn`: `str`
-- `LatestMatchingVersion`:
-  [LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef)
+1. See [:material-code-braces: LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef) 
+## ListAliasesRequestListAliasesPaginateTypeDef
 
-<a id="listaliasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListAliasesRequestListAliasesPaginateTypeDef
 
+def get_value() -> ListAliasesRequestListAliasesPaginateTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListAliasesRequestListAliasesPaginateTypeDef(TypedDict):
+    FunctionName: str,
+    FunctionVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAliasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListAliasesRequestRequestTypeDef
+
+def get_value() -> ListAliasesRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `FunctionVersion`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listaliasesresponsetypedef"></a>
+```python title="Definition"
+class ListAliasesRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    FunctionVersion: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListAliasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListAliasesResponseTypeDef
+
+def get_value() -> ListAliasesResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Aliases": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAliasesResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Aliases: List[AliasConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Aliases`:
-  `List`\[[AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AliasConfigurationTypeDef](./type_defs.md#aliasconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCodeSigningConfigsRequestListCodeSigningConfigsPaginateTypeDef
 
-<a id="listcodesigningconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsRequestListCodeSigningConfigsPaginateTypeDef
 
+def get_value() -> ListCodeSigningConfigsRequestListCodeSigningConfigsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListCodeSigningConfigsRequestListCodeSigningConfigsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCodeSigningConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsRequestRequestTypeDef
+
+def get_value() -> ListCodeSigningConfigsRequestRequestTypeDef:
+    return {
+        "Marker": ...,
+    }
 ```
 
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listcodesigningconfigsresponsetypedef"></a>
+```python title="Definition"
+class ListCodeSigningConfigsRequestRequestTypeDef(TypedDict):
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListCodeSigningConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListCodeSigningConfigsResponseTypeDef
+
+def get_value() -> ListCodeSigningConfigsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "CodeSigningConfigs": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCodeSigningConfigsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    CodeSigningConfigs: List[CodeSigningConfigTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `CodeSigningConfigs`:
-  `List`\[[CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEventSourceMappingsRequestListEventSourceMappingsPaginateTypeDef
 
-<a id="listeventsourcemappingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListEventSourceMappingsRequestListEventSourceMappingsPaginateTypeDef
 
+def get_value() -> ListEventSourceMappingsRequestListEventSourceMappingsPaginateTypeDef:
+    return {
+        "EventSourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventSourceMappingsRequestListEventSourceMappingsPaginateTypeDef(TypedDict):
+    EventSourceArn: NotRequired[str],
+    FunctionName: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEventSourceMappingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListEventSourceMappingsRequestRequestTypeDef
+
+def get_value() -> ListEventSourceMappingsRequestRequestTypeDef:
+    return {
+        "EventSourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `EventSourceArn`: `str`
-- `FunctionName`: `str`
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listeventsourcemappingsresponsetypedef"></a>
+```python title="Definition"
+class ListEventSourceMappingsRequestRequestTypeDef(TypedDict):
+    EventSourceArn: NotRequired[str],
+    FunctionName: NotRequired[str],
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListEventSourceMappingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListEventSourceMappingsResponseTypeDef
+
+def get_value() -> ListEventSourceMappingsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "EventSourceMappings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventSourceMappingsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    EventSourceMappings: List[EventSourceMappingConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `EventSourceMappings`:
-  `List`\[[EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef
 
-<a id="listfunctioneventinvokeconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef
 
+def get_value() -> ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionEventInvokeConfigsRequestListFunctionEventInvokeConfigsPaginateTypeDef(TypedDict):
+    FunctionName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFunctionEventInvokeConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsRequestRequestTypeDef
+
+def get_value() -> ListFunctionEventInvokeConfigsRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listfunctioneventinvokeconfigsresponsetypedef"></a>
+```python title="Definition"
+class ListFunctionEventInvokeConfigsRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListFunctionEventInvokeConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionEventInvokeConfigsResponseTypeDef
+
+def get_value() -> ListFunctionEventInvokeConfigsResponseTypeDef:
+    return {
+        "FunctionEventInvokeConfigs": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFunctionEventInvokeConfigsResponseTypeDef(TypedDict):
+    FunctionEventInvokeConfigs: List[FunctionEventInvokeConfigTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `FunctionEventInvokeConfigs`:
-  `List`\[[FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef)\]
-- `NextMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FunctionEventInvokeConfigTypeDef](./type_defs.md#functioneventinvokeconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef
 
-<a id="listfunctionsbycodesigningconfigrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef
 
+def get_value() -> ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionsByCodeSigningConfigRequestListFunctionsByCodeSigningConfigPaginateTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFunctionsByCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> ListFunctionsByCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+    }
 ```
 
-Required fields:
-
-- `CodeSigningConfigArn`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listfunctionsbycodesigningconfigresponsetypedef"></a>
+```python title="Definition"
+class ListFunctionsByCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListFunctionsByCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionsByCodeSigningConfigResponseTypeDef
+
+def get_value() -> ListFunctionsByCodeSigningConfigResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "FunctionArns": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFunctionsByCodeSigningConfigResponseTypeDef(TypedDict):
+    NextMarker: str,
+    FunctionArns: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `NextMarker`: `str`
-- `FunctionArns`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFunctionsRequestListFunctionsPaginateTypeDef
 
-<a id="listfunctionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListFunctionsRequestListFunctionsPaginateTypeDef
 
+def get_value() -> ListFunctionsRequestListFunctionsPaginateTypeDef:
+    return {
+        "MasterRegion": ...,
+    }
+```
+
+```python title="Definition"
+class ListFunctionsRequestListFunctionsPaginateTypeDef(TypedDict):
+    MasterRegion: NotRequired[str],
+    FunctionVersion: NotRequired[FunctionVersionType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: FunctionVersionType](./literals.md#functionversiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFunctionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionsRequestRequestTypeDef
+
+def get_value() -> ListFunctionsRequestRequestTypeDef:
+    return {
+        "MasterRegion": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListFunctionsRequestRequestTypeDef(TypedDict):
+    MasterRegion: NotRequired[str],
+    FunctionVersion: NotRequired[FunctionVersionType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
-- `MasterRegion`: `str`
-- `FunctionVersion`: `Literal['ALL']` (see
-  [FunctionVersionType](./literals.md#functionversiontype))
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listfunctionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: FunctionVersionType](./literals.md#functionversiontype) 
 ## ListFunctionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListFunctionsResponseTypeDef
+
+def get_value() -> ListFunctionsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Functions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFunctionsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Functions: List[FunctionConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Functions`:
-  `List`\[[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLayerVersionsRequestListLayerVersionsPaginateTypeDef
 
-<a id="listlayerversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListLayerVersionsRequestListLayerVersionsPaginateTypeDef
 
+def get_value() -> ListLayerVersionsRequestListLayerVersionsPaginateTypeDef:
+    return {
+        "LayerName": ...,
+    }
+```
+
+```python title="Definition"
+class ListLayerVersionsRequestListLayerVersionsPaginateTypeDef(TypedDict):
+    LayerName: str,
+    CompatibleRuntime: NotRequired[RuntimeType],  # (1)
+    CompatibleArchitecture: NotRequired[ArchitectureType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLayerVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListLayerVersionsRequestRequestTypeDef
+
+def get_value() -> ListLayerVersionsRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLayerVersionsRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    CompatibleRuntime: NotRequired[RuntimeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+    CompatibleArchitecture: NotRequired[ArchitectureType],  # (2)
+```
 
-- `LayerName`: `str`
-
-Optional fields:
-
-- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
-
-<a id="listlayerversionsresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## ListLayerVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListLayerVersionsResponseTypeDef
+
+def get_value() -> ListLayerVersionsResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "LayerVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLayerVersionsResponseTypeDef(TypedDict):
+    NextMarker: str,
+    LayerVersions: List[LayerVersionsListItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `LayerVersions`:
-  `List`\[[LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LayerVersionsListItemTypeDef](./type_defs.md#layerversionslistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLayersRequestListLayersPaginateTypeDef
 
-<a id="listlayersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListLayersRequestListLayersPaginateTypeDef
 
+def get_value() -> ListLayersRequestListLayersPaginateTypeDef:
+    return {
+        "CompatibleRuntime": ...,
+    }
+```
+
+```python title="Definition"
+class ListLayersRequestListLayersPaginateTypeDef(TypedDict):
+    CompatibleRuntime: NotRequired[RuntimeType],  # (1)
+    CompatibleArchitecture: NotRequired[ArchitectureType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLayersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListLayersRequestRequestTypeDef
+
+def get_value() -> ListLayersRequestRequestTypeDef:
+    return {
+        "CompatibleRuntime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListLayersRequestRequestTypeDef(TypedDict):
+    CompatibleRuntime: NotRequired[RuntimeType],  # (1)
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+    CompatibleArchitecture: NotRequired[ArchitectureType],  # (2)
+```
 
-- `CompatibleRuntime`: [RuntimeType](./literals.md#runtimetype)
-- `Marker`: `str`
-- `MaxItems`: `int`
-- `CompatibleArchitecture`: [ArchitectureType](./literals.md#architecturetype)
-
-<a id="listlayersresponsetypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+2. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## ListLayersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListLayersResponseTypeDef
+
+def get_value() -> ListLayersResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Layers": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLayersResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Layers: List[LayersListItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Layers`:
-  `List`\[[LayersListItemTypeDef](./type_defs.md#layerslistitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LayersListItemTypeDef](./type_defs.md#layerslistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListProvisionedConcurrencyConfigsRequestListProvisionedConcurrencyConfigsPaginateTypeDef
 
-<a id="listprovisionedconcurrencyconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsRequestListProvisionedConcurrencyConfigsPaginateTypeDef
 
+def get_value() -> ListProvisionedConcurrencyConfigsRequestListProvisionedConcurrencyConfigsPaginateTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListProvisionedConcurrencyConfigsRequestListProvisionedConcurrencyConfigsPaginateTypeDef(TypedDict):
+    FunctionName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListProvisionedConcurrencyConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsRequestRequestTypeDef
+
+def get_value() -> ListProvisionedConcurrencyConfigsRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listprovisionedconcurrencyconfigsresponsetypedef"></a>
+```python title="Definition"
+class ListProvisionedConcurrencyConfigsRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListProvisionedConcurrencyConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListProvisionedConcurrencyConfigsResponseTypeDef
+
+def get_value() -> ListProvisionedConcurrencyConfigsResponseTypeDef:
+    return {
+        "ProvisionedConcurrencyConfigs": ...,
+        "NextMarker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListProvisionedConcurrencyConfigsResponseTypeDef(TypedDict):
+    ProvisionedConcurrencyConfigs: List[ProvisionedConcurrencyConfigListItemTypeDef],  # (1)
+    NextMarker: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ProvisionedConcurrencyConfigs`:
-  `List`\[[ProvisionedConcurrencyConfigListItemTypeDef](./type_defs.md#provisionedconcurrencyconfiglistitemtypedef)\]
-- `NextMarker`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ProvisionedConcurrencyConfigListItemTypeDef](./type_defs.md#provisionedconcurrencyconfiglistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListTagsRequestRequestTypeDef
+
+def get_value() -> ListTagsRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+    }
 ```
 
-Required fields:
-
-- `Resource`: `str`
-
-<a id="listtagsresponsetypedef"></a>
+```python title="Definition"
+class ListTagsRequestRequestTypeDef(TypedDict):
+    Resource: str,
+```
 
 ## ListTagsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListTagsResponseTypeDef
+
+def get_value() -> ListTagsResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVersionsByFunctionRequestListVersionsByFunctionPaginateTypeDef
 
-<a id="listversionsbyfunctionrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_lambda.type_defs import ListVersionsByFunctionRequestListVersionsByFunctionPaginateTypeDef
 
+def get_value() -> ListVersionsByFunctionRequestListVersionsByFunctionPaginateTypeDef:
+    return {
+        "FunctionName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVersionsByFunctionRequestListVersionsByFunctionPaginateTypeDef(TypedDict):
+    FunctionName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVersionsByFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListVersionsByFunctionRequestRequestTypeDef
+
+def get_value() -> ListVersionsByFunctionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Marker`: `str`
-- `MaxItems`: `int`
-
-<a id="listversionsbyfunctionresponsetypedef"></a>
+```python title="Definition"
+class ListVersionsByFunctionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Marker: NotRequired[str],
+    MaxItems: NotRequired[int],
+```
 
 ## ListVersionsByFunctionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ListVersionsByFunctionResponseTypeDef
+
+def get_value() -> ListVersionsByFunctionResponseTypeDef:
+    return {
+        "NextMarker": ...,
+        "Versions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVersionsByFunctionResponseTypeDef(TypedDict):
+    NextMarker: str,
+    Versions: List[FunctionConfigurationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextMarker`: `str`
-- `Versions`:
-  `List`\[[FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="onfailuretypedef"></a>
-
+1. See [:material-code-braces: FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OnFailureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import OnFailureTypeDef
+
+def get_value() -> OnFailureTypeDef:
+    return {
+        "Destination": ...,
+    }
 ```
 
-Optional fields:
-
-- `Destination`: `str`
-
-<a id="onsuccesstypedef"></a>
+```python title="Definition"
+class OnFailureTypeDef(TypedDict):
+    Destination: NotRequired[str],
+```
 
 ## OnSuccessTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import OnSuccessTypeDef
+
+def get_value() -> OnSuccessTypeDef:
+    return {
+        "Destination": ...,
+    }
 ```
 
-Optional fields:
-
-- `Destination`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OnSuccessTypeDef(TypedDict):
+    Destination: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="provisionedconcurrencyconfiglistitemtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ProvisionedConcurrencyConfigListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ProvisionedConcurrencyConfigListItemTypeDef
+
+def get_value() -> ProvisionedConcurrencyConfigListItemTypeDef:
+    return {
+        "FunctionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProvisionedConcurrencyConfigListItemTypeDef(TypedDict):
+    FunctionArn: NotRequired[str],
+    RequestedProvisionedConcurrentExecutions: NotRequired[int],
+    AvailableProvisionedConcurrentExecutions: NotRequired[int],
+    AllocatedProvisionedConcurrentExecutions: NotRequired[int],
+    Status: NotRequired[ProvisionedConcurrencyStatusEnumType],  # (1)
+    StatusReason: NotRequired[str],
+    LastModified: NotRequired[str],
+```
 
-- `FunctionArn`: `str`
-- `RequestedProvisionedConcurrentExecutions`: `int`
-- `AvailableProvisionedConcurrentExecutions`: `int`
-- `AllocatedProvisionedConcurrentExecutions`: `int`
-- `Status`:
-  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
-- `StatusReason`: `str`
-- `LastModified`: `str`
-
-<a id="publishlayerversionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
 ## PublishLayerVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PublishLayerVersionRequestRequestTypeDef
+
+def get_value() -> PublishLayerVersionRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishLayerVersionRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    Content: LayerVersionContentInputTypeDef,  # (1)
+    Description: NotRequired[str],
+    CompatibleRuntimes: NotRequired[Sequence[RuntimeType]],  # (2)
+    LicenseInfo: NotRequired[str],
+    CompatibleArchitectures: NotRequired[Sequence[ArchitectureType]],  # (3)
+```
 
-- `LayerName`: `str`
-- `Content`:
-  [LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `CompatibleRuntimes`: `Sequence`\[[RuntimeType](./literals.md#runtimetype)\]
-- `LicenseInfo`: `str`
-- `CompatibleArchitectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
-
-<a id="publishlayerversionresponsetypedef"></a>
-
+1. See [:material-code-braces: LayerVersionContentInputTypeDef](./type_defs.md#layerversioncontentinputtypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## PublishLayerVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PublishLayerVersionResponseTypeDef
+
+def get_value() -> PublishLayerVersionResponseTypeDef:
+    return {
+        "Content": ...,
+        "LayerArn": ...,
+        "LayerVersionArn": ...,
+        "Description": ...,
+        "CreatedDate": ...,
+        "Version": ...,
+        "CompatibleRuntimes": ...,
+        "LicenseInfo": ...,
+        "CompatibleArchitectures": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishLayerVersionResponseTypeDef(TypedDict):
+    Content: LayerVersionContentOutputTypeDef,  # (1)
+    LayerArn: str,
+    LayerVersionArn: str,
+    Description: str,
+    CreatedDate: str,
+    Version: int,
+    CompatibleRuntimes: List[RuntimeType],  # (2)
+    LicenseInfo: str,
+    CompatibleArchitectures: List[ArchitectureType],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Content`:
-  [LayerVersionContentOutputTypeDef](./type_defs.md#layerversioncontentoutputtypedef)
-- `LayerArn`: `str`
-- `LayerVersionArn`: `str`
-- `Description`: `str`
-- `CreatedDate`: `str`
-- `Version`: `int`
-- `CompatibleRuntimes`: `List`\[[RuntimeType](./literals.md#runtimetype)\]
-- `LicenseInfo`: `str`
-- `CompatibleArchitectures`:
-  `List`\[[ArchitectureType](./literals.md#architecturetype)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="publishversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LayerVersionContentOutputTypeDef](./type_defs.md#layerversioncontentoutputtypedef) 
+2. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+3. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PublishVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PublishVersionRequestRequestTypeDef
+
+def get_value() -> PublishVersionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `CodeSha256`: `str`
-- `Description`: `str`
-- `RevisionId`: `str`
-
-<a id="putfunctioncodesigningconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class PublishVersionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    CodeSha256: NotRequired[str],
+    Description: NotRequired[str],
+    RevisionId: NotRequired[str],
+```
 
 ## PutFunctionCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> PutFunctionCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
-
-- `CodeSigningConfigArn`: `str`
-- `FunctionName`: `str`
-
-<a id="putfunctioncodesigningconfigresponsetypedef"></a>
+```python title="Definition"
+class PutFunctionCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    FunctionName: str,
+```
 
 ## PutFunctionCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutFunctionCodeSigningConfigResponseTypeDef
+
+def get_value() -> PutFunctionCodeSigningConfigResponseTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+        "FunctionName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutFunctionCodeSigningConfigResponseTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    FunctionName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CodeSigningConfigArn`: `str`
-- `FunctionName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putfunctionconcurrencyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutFunctionConcurrencyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutFunctionConcurrencyRequestRequestTypeDef
+
+def get_value() -> PutFunctionConcurrencyRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "ReservedConcurrentExecutions": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `ReservedConcurrentExecutions`: `int`
-
-<a id="putfunctioneventinvokeconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class PutFunctionConcurrencyRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    ReservedConcurrentExecutions: int,
+```
 
 ## PutFunctionEventInvokeConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutFunctionEventInvokeConfigRequestRequestTypeDef
+
+def get_value() -> PutFunctionEventInvokeConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutFunctionEventInvokeConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    MaximumRetryAttempts: NotRequired[int],
+    MaximumEventAgeInSeconds: NotRequired[int],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (1)
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-
-<a id="putprovisionedconcurrencyconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
 ## PutProvisionedConcurrencyConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigRequestRequestTypeDef
+
+def get_value() -> PutProvisionedConcurrencyConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Qualifier": ...,
+        "ProvisionedConcurrentExecutions": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `Qualifier`: `str`
-- `ProvisionedConcurrentExecutions`: `int`
-
-<a id="putprovisionedconcurrencyconfigresponsetypedef"></a>
+```python title="Definition"
+class PutProvisionedConcurrencyConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: str,
+    ProvisionedConcurrentExecutions: int,
+```
 
 ## PutProvisionedConcurrencyConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import PutProvisionedConcurrencyConfigResponseTypeDef
+
+def get_value() -> PutProvisionedConcurrencyConfigResponseTypeDef:
+    return {
+        "RequestedProvisionedConcurrentExecutions": ...,
+        "AvailableProvisionedConcurrentExecutions": ...,
+        "AllocatedProvisionedConcurrentExecutions": ...,
+        "Status": ...,
+        "StatusReason": ...,
+        "LastModified": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutProvisionedConcurrencyConfigResponseTypeDef(TypedDict):
+    RequestedProvisionedConcurrentExecutions: int,
+    AvailableProvisionedConcurrentExecutions: int,
+    AllocatedProvisionedConcurrentExecutions: int,
+    Status: ProvisionedConcurrencyStatusEnumType,  # (1)
+    StatusReason: str,
+    LastModified: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RequestedProvisionedConcurrentExecutions`: `int`
-- `AvailableProvisionedConcurrentExecutions`: `int`
-- `AllocatedProvisionedConcurrentExecutions`: `int`
-- `Status`:
-  [ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype)
-- `StatusReason`: `str`
-- `LastModified`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="removelayerversionpermissionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProvisionedConcurrencyStatusEnumType](./literals.md#provisionedconcurrencystatusenumtype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RemoveLayerVersionPermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import RemoveLayerVersionPermissionRequestRequestTypeDef
+
+def get_value() -> RemoveLayerVersionPermissionRequestRequestTypeDef:
+    return {
+        "LayerName": ...,
+        "VersionNumber": ...,
+        "StatementId": ...,
+    }
 ```
 
-Required fields:
-
-- `LayerName`: `str`
-- `VersionNumber`: `int`
-- `StatementId`: `str`
-
-Optional fields:
-
-- `RevisionId`: `str`
-
-<a id="removepermissionrequestrequesttypedef"></a>
+```python title="Definition"
+class RemoveLayerVersionPermissionRequestRequestTypeDef(TypedDict):
+    LayerName: str,
+    VersionNumber: int,
+    StatementId: str,
+    RevisionId: NotRequired[str],
+```
 
 ## RemovePermissionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import RemovePermissionRequestRequestTypeDef
+
+def get_value() -> RemovePermissionRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "StatementId": ...,
+    }
 ```
 
-Required fields:
-
-- `FunctionName`: `str`
-- `StatementId`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-- `RevisionId`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RemovePermissionRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    StatementId: str,
+    Qualifier: NotRequired[str],
+    RevisionId: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="selfmanagedeventsourcetypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SelfManagedEventSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import SelfManagedEventSourceTypeDef
+
+def get_value() -> SelfManagedEventSourceTypeDef:
+    return {
+        "Endpoints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SelfManagedEventSourceTypeDef(TypedDict):
+    Endpoints: NotRequired[Mapping[EndPointTypeType, Sequence[str]]],  # (1)
+```
 
-- `Endpoints`: `Mapping`\[`Literal['KAFKA_BOOTSTRAP_SERVERS']` (see
-  [EndPointTypeType](./literals.md#endpointtypetype)), `Sequence`\[`str`\]\]
-
-<a id="sourceaccessconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EndPointTypeType](./literals.md#endpointtypetype) 
 ## SourceAccessConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import SourceAccessConfigurationTypeDef
+
+def get_value() -> SourceAccessConfigurationTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceAccessConfigurationTypeDef(TypedDict):
+    Type: NotRequired[SourceAccessTypeType],  # (1)
+    URI: NotRequired[str],
+```
 
-- `Type`: [SourceAccessTypeType](./literals.md#sourceaccesstypetype)
-- `URI`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SourceAccessTypeType](./literals.md#sourceaccesstypetype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `Resource`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tracingconfigresponsetypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    Resource: str,
+    Tags: Mapping[str, str],
+```
 
 ## TracingConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import TracingConfigResponseTypeDef
+
+def get_value() -> TracingConfigResponseTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TracingConfigResponseTypeDef(TypedDict):
+    Mode: NotRequired[TracingModeType],  # (1)
+```
 
-- `Mode`: [TracingModeType](./literals.md#tracingmodetype)
-
-<a id="tracingconfigtypedef"></a>
-
+1. See [:material-code-brackets: TracingModeType](./literals.md#tracingmodetype) 
 ## TracingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import TracingConfigTypeDef
+
+def get_value() -> TracingConfigTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TracingConfigTypeDef(TypedDict):
+    Mode: NotRequired[TracingModeType],  # (1)
+```
 
-- `Mode`: [TracingModeType](./literals.md#tracingmodetype)
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TracingModeType](./literals.md#tracingmodetype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "Resource": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `Resource`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatealiasrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    Resource: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateAliasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateAliasRequestRequestTypeDef
+
+def get_value() -> UpdateAliasRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAliasRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Name: str,
+    FunctionVersion: NotRequired[str],
+    Description: NotRequired[str],
+    RoutingConfig: NotRequired[AliasRoutingConfigurationTypeDef],  # (1)
+    RevisionId: NotRequired[str],
+```
 
-- `FunctionName`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `FunctionVersion`: `str`
-- `Description`: `str`
-- `RoutingConfig`:
-  [AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef)
-- `RevisionId`: `str`
-
-<a id="updatecodesigningconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AliasRoutingConfigurationTypeDef](./type_defs.md#aliasroutingconfigurationtypedef) 
 ## UpdateCodeSigningConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigRequestRequestTypeDef
+
+def get_value() -> UpdateCodeSigningConfigRequestRequestTypeDef:
+    return {
+        "CodeSigningConfigArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCodeSigningConfigRequestRequestTypeDef(TypedDict):
+    CodeSigningConfigArn: str,
+    Description: NotRequired[str],
+    AllowedPublishers: NotRequired[AllowedPublishersTypeDef],  # (1)
+    CodeSigningPolicies: NotRequired[CodeSigningPoliciesTypeDef],  # (2)
+```
 
-- `CodeSigningConfigArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `AllowedPublishers`:
-  [AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef)
-- `CodeSigningPolicies`:
-  [CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef)
-
-<a id="updatecodesigningconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: AllowedPublishersTypeDef](./type_defs.md#allowedpublisherstypedef) 
+2. See [:material-code-braces: CodeSigningPoliciesTypeDef](./type_defs.md#codesigningpoliciestypedef) 
 ## UpdateCodeSigningConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateCodeSigningConfigResponseTypeDef
+
+def get_value() -> UpdateCodeSigningConfigResponseTypeDef:
+    return {
+        "CodeSigningConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCodeSigningConfigResponseTypeDef(TypedDict):
+    CodeSigningConfig: CodeSigningConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CodeSigningConfig`:
-  [CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateeventsourcemappingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeSigningConfigTypeDef](./type_defs.md#codesigningconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateEventSourceMappingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateEventSourceMappingRequestRequestTypeDef
+
+def get_value() -> UpdateEventSourceMappingRequestRequestTypeDef:
+    return {
+        "UUID": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateEventSourceMappingRequestRequestTypeDef(TypedDict):
+    UUID: str,
+    FunctionName: NotRequired[str],
+    Enabled: NotRequired[bool],
+    BatchSize: NotRequired[int],
+    FilterCriteria: NotRequired[FilterCriteriaTypeDef],  # (1)
+    MaximumBatchingWindowInSeconds: NotRequired[int],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (2)
+    MaximumRecordAgeInSeconds: NotRequired[int],
+    BisectBatchOnFunctionError: NotRequired[bool],
+    MaximumRetryAttempts: NotRequired[int],
+    ParallelizationFactor: NotRequired[int],
+    SourceAccessConfigurations: NotRequired[Sequence[SourceAccessConfigurationTypeDef]],  # (3)
+    TumblingWindowInSeconds: NotRequired[int],
+    FunctionResponseTypes: NotRequired[Sequence[FunctionResponseTypeType]],  # (4)
+```
 
-- `UUID`: `str`
-
-Optional fields:
-
-- `FunctionName`: `str`
-- `Enabled`: `bool`
-- `BatchSize`: `int`
-- `FilterCriteria`:
-  [FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef)
-- `MaximumBatchingWindowInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-- `MaximumRecordAgeInSeconds`: `int`
-- `BisectBatchOnFunctionError`: `bool`
-- `MaximumRetryAttempts`: `int`
-- `ParallelizationFactor`: `int`
-- `SourceAccessConfigurations`:
-  `Sequence`\[[SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef)\]
-- `TumblingWindowInSeconds`: `int`
-- `FunctionResponseTypes`: `Sequence`\[`Literal['ReportBatchItemFailures']`
-  (see [FunctionResponseTypeType](./literals.md#functionresponsetypetype))\]
-
-<a id="updatefunctioncoderequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FilterCriteriaTypeDef](./type_defs.md#filtercriteriatypedef) 
+2. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
+3. See [:material-code-braces: SourceAccessConfigurationTypeDef](./type_defs.md#sourceaccessconfigurationtypedef) 
+4. See [:material-code-brackets: FunctionResponseTypeType](./literals.md#functionresponsetypetype) 
 ## UpdateFunctionCodeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateFunctionCodeRequestRequestTypeDef
+
+def get_value() -> UpdateFunctionCodeRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFunctionCodeRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    ZipFile: NotRequired[Union[bytes, IO[bytes], StreamingBody]],
+    S3Bucket: NotRequired[str],
+    S3Key: NotRequired[str],
+    S3ObjectVersion: NotRequired[str],
+    ImageUri: NotRequired[str],
+    Publish: NotRequired[bool],
+    DryRun: NotRequired[bool],
+    RevisionId: NotRequired[str],
+    Architectures: NotRequired[Sequence[ArchitectureType]],  # (1)
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
-- `S3Bucket`: `str`
-- `S3Key`: `str`
-- `S3ObjectVersion`: `str`
-- `ImageUri`: `str`
-- `Publish`: `bool`
-- `DryRun`: `bool`
-- `RevisionId`: `str`
-- `Architectures`:
-  `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
-
-<a id="updatefunctionconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ArchitectureType](./literals.md#architecturetype) 
 ## UpdateFunctionConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateFunctionConfigurationRequestRequestTypeDef
+
+def get_value() -> UpdateFunctionConfigurationRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFunctionConfigurationRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Role: NotRequired[str],
+    Handler: NotRequired[str],
+    Description: NotRequired[str],
+    Timeout: NotRequired[int],
+    MemorySize: NotRequired[int],
+    VpcConfig: NotRequired[VpcConfigTypeDef],  # (1)
+    Environment: NotRequired[EnvironmentTypeDef],  # (2)
+    Runtime: NotRequired[RuntimeType],  # (3)
+    DeadLetterConfig: NotRequired[DeadLetterConfigTypeDef],  # (4)
+    KMSKeyArn: NotRequired[str],
+    TracingConfig: NotRequired[TracingConfigTypeDef],  # (5)
+    RevisionId: NotRequired[str],
+    Layers: NotRequired[Sequence[str]],
+    FileSystemConfigs: NotRequired[Sequence[FileSystemConfigTypeDef]],  # (6)
+    ImageConfig: NotRequired[ImageConfigTypeDef],  # (7)
+    EphemeralStorage: NotRequired[EphemeralStorageTypeDef],  # (8)
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Role`: `str`
-- `Handler`: `str`
-- `Description`: `str`
-- `Timeout`: `int`
-- `MemorySize`: `int`
-- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
-- `Environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-- `DeadLetterConfig`:
-  [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
-- `KMSKeyArn`: `str`
-- `TracingConfig`: [TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef)
-- `RevisionId`: `str`
-- `Layers`: `Sequence`\[`str`\]
-- `FileSystemConfigs`:
-  `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
-- `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
-- `EphemeralStorage`:
-  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
-
-<a id="updatefunctioneventinvokeconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef) 
+2. See [:material-code-braces: EnvironmentTypeDef](./type_defs.md#environmenttypedef) 
+3. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
+4. See [:material-code-braces: DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef) 
+5. See [:material-code-braces: TracingConfigTypeDef](./type_defs.md#tracingconfigtypedef) 
+6. See [:material-code-braces: FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef) 
+7. See [:material-code-braces: ImageConfigTypeDef](./type_defs.md#imageconfigtypedef) 
+8. See [:material-code-braces: EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef) 
 ## UpdateFunctionEventInvokeConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import UpdateFunctionEventInvokeConfigRequestRequestTypeDef
+
+def get_value() -> UpdateFunctionEventInvokeConfigRequestRequestTypeDef:
+    return {
+        "FunctionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFunctionEventInvokeConfigRequestRequestTypeDef(TypedDict):
+    FunctionName: str,
+    Qualifier: NotRequired[str],
+    MaximumRetryAttempts: NotRequired[int],
+    MaximumEventAgeInSeconds: NotRequired[int],
+    DestinationConfig: NotRequired[DestinationConfigTypeDef],  # (1)
+```
 
-- `FunctionName`: `str`
-
-Optional fields:
-
-- `Qualifier`: `str`
-- `MaximumRetryAttempts`: `int`
-- `MaximumEventAgeInSeconds`: `int`
-- `DestinationConfig`:
-  [DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef)
-
-<a id="vpcconfigresponsetypedef"></a>
-
+1. See [:material-code-braces: DestinationConfigTypeDef](./type_defs.md#destinationconfigtypedef) 
 ## VpcConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import VpcConfigResponseTypeDef
+
+def get_value() -> VpcConfigResponseTypeDef:
+    return {
+        "SubnetIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetIds`: `List`\[`str`\]
-- `SecurityGroupIds`: `List`\[`str`\]
-- `VpcId`: `str`
-
-<a id="vpcconfigtypedef"></a>
+```python title="Definition"
+class VpcConfigResponseTypeDef(TypedDict):
+    SubnetIds: NotRequired[List[str]],
+    SecurityGroupIds: NotRequired[List[str]],
+    VpcId: NotRequired[str],
+```
 
 ## VpcConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import VpcConfigTypeDef
+
+def get_value() -> VpcConfigTypeDef:
+    return {
+        "SubnetIds": ...,
+    }
 ```
 
-Optional fields:
-
-- `SubnetIds`: `Sequence`\[`str`\]
-- `SecurityGroupIds`: `Sequence`\[`str`\]
-
-<a id="waiterconfigtypedef"></a>
+```python title="Definition"
+class VpcConfigTypeDef(TypedDict):
+    SubnetIds: NotRequired[Sequence[str]],
+    SecurityGroupIds: NotRequired[Sequence[str]],
+```
 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_lambda.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

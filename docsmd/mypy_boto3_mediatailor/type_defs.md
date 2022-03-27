@@ -1,1818 +1,2419 @@
-<a id="typed-dictionaries-for-boto3-mediatailor-module"></a>
-
-# Typed dictionaries for boto3 MediaTailor module
+# Typed dictionaries
 
 > [Index](../README.md) > [MediaTailor](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
-type annotations stubs module
-[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+!!! note ""
 
-- [Typed dictionaries for boto3 MediaTailor module](#typed-dictionaries-for-boto3-mediatailor-module)
-  - [AccessConfigurationTypeDef](#accessconfigurationtypedef)
-  - [AdBreakTypeDef](#adbreaktypedef)
-  - [AdMarkerPassthroughTypeDef](#admarkerpassthroughtypedef)
-  - [AlertTypeDef](#alerttypedef)
-  - [AvailMatchingCriteriaTypeDef](#availmatchingcriteriatypedef)
-  - [AvailSuppressionTypeDef](#availsuppressiontypedef)
-  - [BumperTypeDef](#bumpertypedef)
-  - [CdnConfigurationTypeDef](#cdnconfigurationtypedef)
-  - [ChannelTypeDef](#channeltypedef)
-  - [ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef](#configurelogsforplaybackconfigurationrequestrequesttypedef)
-  - [ConfigureLogsForPlaybackConfigurationResponseTypeDef](#configurelogsforplaybackconfigurationresponsetypedef)
-  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
-  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
-  - [CreatePrefetchScheduleRequestRequestTypeDef](#createprefetchschedulerequestrequesttypedef)
-  - [CreatePrefetchScheduleResponseTypeDef](#createprefetchscheduleresponsetypedef)
-  - [CreateProgramRequestRequestTypeDef](#createprogramrequestrequesttypedef)
-  - [CreateProgramResponseTypeDef](#createprogramresponsetypedef)
-  - [CreateSourceLocationRequestRequestTypeDef](#createsourcelocationrequestrequesttypedef)
-  - [CreateSourceLocationResponseTypeDef](#createsourcelocationresponsetypedef)
-  - [CreateVodSourceRequestRequestTypeDef](#createvodsourcerequestrequesttypedef)
-  - [CreateVodSourceResponseTypeDef](#createvodsourceresponsetypedef)
-  - [DashConfigurationForPutTypeDef](#dashconfigurationforputtypedef)
-  - [DashConfigurationTypeDef](#dashconfigurationtypedef)
-  - [DashPlaylistSettingsTypeDef](#dashplaylistsettingstypedef)
-  - [DefaultSegmentDeliveryConfigurationTypeDef](#defaultsegmentdeliveryconfigurationtypedef)
-  - [DeleteChannelPolicyRequestRequestTypeDef](#deletechannelpolicyrequestrequesttypedef)
-  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
-  - [DeletePlaybackConfigurationRequestRequestTypeDef](#deleteplaybackconfigurationrequestrequesttypedef)
-  - [DeletePrefetchScheduleRequestRequestTypeDef](#deleteprefetchschedulerequestrequesttypedef)
-  - [DeleteProgramRequestRequestTypeDef](#deleteprogramrequestrequesttypedef)
-  - [DeleteSourceLocationRequestRequestTypeDef](#deletesourcelocationrequestrequesttypedef)
-  - [DeleteVodSourceRequestRequestTypeDef](#deletevodsourcerequestrequesttypedef)
-  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
-  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
-  - [DescribeProgramRequestRequestTypeDef](#describeprogramrequestrequesttypedef)
-  - [DescribeProgramResponseTypeDef](#describeprogramresponsetypedef)
-  - [DescribeSourceLocationRequestRequestTypeDef](#describesourcelocationrequestrequesttypedef)
-  - [DescribeSourceLocationResponseTypeDef](#describesourcelocationresponsetypedef)
-  - [DescribeVodSourceRequestRequestTypeDef](#describevodsourcerequestrequesttypedef)
-  - [DescribeVodSourceResponseTypeDef](#describevodsourceresponsetypedef)
-  - [GetChannelPolicyRequestRequestTypeDef](#getchannelpolicyrequestrequesttypedef)
-  - [GetChannelPolicyResponseTypeDef](#getchannelpolicyresponsetypedef)
-  - [GetChannelScheduleRequestRequestTypeDef](#getchannelschedulerequestrequesttypedef)
-  - [GetChannelScheduleResponseTypeDef](#getchannelscheduleresponsetypedef)
-  - [GetPlaybackConfigurationRequestRequestTypeDef](#getplaybackconfigurationrequestrequesttypedef)
-  - [GetPlaybackConfigurationResponseTypeDef](#getplaybackconfigurationresponsetypedef)
-  - [GetPrefetchScheduleRequestRequestTypeDef](#getprefetchschedulerequestrequesttypedef)
-  - [GetPrefetchScheduleResponseTypeDef](#getprefetchscheduleresponsetypedef)
-  - [HlsConfigurationTypeDef](#hlsconfigurationtypedef)
-  - [HlsPlaylistSettingsTypeDef](#hlsplaylistsettingstypedef)
-  - [HttpConfigurationTypeDef](#httpconfigurationtypedef)
-  - [HttpPackageConfigurationTypeDef](#httppackageconfigurationtypedef)
-  - [ListAlertsRequestRequestTypeDef](#listalertsrequestrequesttypedef)
-  - [ListAlertsResponseTypeDef](#listalertsresponsetypedef)
-  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
-  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
-  - [ListPlaybackConfigurationsRequestRequestTypeDef](#listplaybackconfigurationsrequestrequesttypedef)
-  - [ListPlaybackConfigurationsResponseTypeDef](#listplaybackconfigurationsresponsetypedef)
-  - [ListPrefetchSchedulesRequestRequestTypeDef](#listprefetchschedulesrequestrequesttypedef)
-  - [ListPrefetchSchedulesResponseTypeDef](#listprefetchschedulesresponsetypedef)
-  - [ListSourceLocationsRequestRequestTypeDef](#listsourcelocationsrequestrequesttypedef)
-  - [ListSourceLocationsResponseTypeDef](#listsourcelocationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListVodSourcesRequestRequestTypeDef](#listvodsourcesrequestrequesttypedef)
-  - [ListVodSourcesResponseTypeDef](#listvodsourcesresponsetypedef)
-  - [LivePreRollConfigurationTypeDef](#liveprerollconfigurationtypedef)
-  - [LogConfigurationTypeDef](#logconfigurationtypedef)
-  - [ManifestProcessingRulesTypeDef](#manifestprocessingrulestypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PlaybackConfigurationTypeDef](#playbackconfigurationtypedef)
-  - [PrefetchConsumptionTypeDef](#prefetchconsumptiontypedef)
-  - [PrefetchRetrievalTypeDef](#prefetchretrievaltypedef)
-  - [PrefetchScheduleTypeDef](#prefetchscheduletypedef)
-  - [PutChannelPolicyRequestRequestTypeDef](#putchannelpolicyrequestrequesttypedef)
-  - [PutPlaybackConfigurationRequestRequestTypeDef](#putplaybackconfigurationrequestrequesttypedef)
-  - [PutPlaybackConfigurationResponseTypeDef](#putplaybackconfigurationresponsetypedef)
-  - [RequestOutputItemTypeDef](#requestoutputitemtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResponseOutputItemTypeDef](#responseoutputitemtypedef)
-  - [ScheduleAdBreakTypeDef](#scheduleadbreaktypedef)
-  - [ScheduleConfigurationTypeDef](#scheduleconfigurationtypedef)
-  - [ScheduleEntryTypeDef](#scheduleentrytypedef)
-  - [SecretsManagerAccessTokenConfigurationTypeDef](#secretsmanageraccesstokenconfigurationtypedef)
-  - [SegmentDeliveryConfigurationTypeDef](#segmentdeliveryconfigurationtypedef)
-  - [SlateSourceTypeDef](#slatesourcetypedef)
-  - [SourceLocationTypeDef](#sourcelocationtypedef)
-  - [SpliceInsertMessageTypeDef](#spliceinsertmessagetypedef)
-  - [StartChannelRequestRequestTypeDef](#startchannelrequestrequesttypedef)
-  - [StopChannelRequestRequestTypeDef](#stopchannelrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TransitionTypeDef](#transitiontypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
-  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
-  - [UpdateSourceLocationRequestRequestTypeDef](#updatesourcelocationrequestrequesttypedef)
-  - [UpdateSourceLocationResponseTypeDef](#updatesourcelocationresponsetypedef)
-  - [UpdateVodSourceRequestRequestTypeDef](#updatevodsourcerequestrequesttypedef)
-  - [UpdateVodSourceResponseTypeDef](#updatevodsourceresponsetypedef)
-  - [VodSourceTypeDef](#vodsourcetypedef)
-
-<a id="accessconfigurationtypedef"></a>
+    Auto-generated documentation for [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
+    type annotations stubs module [mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 ## AccessConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AccessConfigurationTypeDef
+
+def get_value() -> AccessConfigurationTypeDef:
+    return {
+        "AccessType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AccessConfigurationTypeDef(TypedDict):
+    AccessType: NotRequired[AccessTypeType],  # (1)
+    SecretsManagerAccessTokenConfiguration: NotRequired[SecretsManagerAccessTokenConfigurationTypeDef],  # (2)
+```
 
-- `AccessType`: [AccessTypeType](./literals.md#accesstypetype)
-- `SecretsManagerAccessTokenConfiguration`:
-  [SecretsManagerAccessTokenConfigurationTypeDef](./type_defs.md#secretsmanageraccesstokenconfigurationtypedef)
-
-<a id="adbreaktypedef"></a>
-
+1. See [:material-code-brackets: AccessTypeType](./literals.md#accesstypetype) 
+2. See [:material-code-braces: SecretsManagerAccessTokenConfigurationTypeDef](./type_defs.md#secretsmanageraccesstokenconfigurationtypedef) 
 ## AdBreakTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AdBreakTypeDef
+
+def get_value() -> AdBreakTypeDef:
+    return {
+        "MessageType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AdBreakTypeDef(TypedDict):
+    MessageType: NotRequired[MessageTypeType],  # (1)
+    OffsetMillis: NotRequired[int],
+    Slate: NotRequired[SlateSourceTypeDef],  # (2)
+    SpliceInsertMessage: NotRequired[SpliceInsertMessageTypeDef],  # (3)
+```
 
-- `MessageType`: `Literal['SPLICE_INSERT']` (see
-  [MessageTypeType](./literals.md#messagetypetype))
-- `OffsetMillis`: `int`
-- `Slate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `SpliceInsertMessage`:
-  [SpliceInsertMessageTypeDef](./type_defs.md#spliceinsertmessagetypedef)
-
-<a id="admarkerpassthroughtypedef"></a>
-
+1. See [:material-code-brackets: MessageTypeType](./literals.md#messagetypetype) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: SpliceInsertMessageTypeDef](./type_defs.md#spliceinsertmessagetypedef) 
 ## AdMarkerPassthroughTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AdMarkerPassthroughTypeDef
+
+def get_value() -> AdMarkerPassthroughTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `Enabled`: `bool`
-
-<a id="alerttypedef"></a>
+```python title="Definition"
+class AdMarkerPassthroughTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+```
 
 ## AlertTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AlertTypeDef
+
+def get_value() -> AlertTypeDef:
+    return {
+        "AlertCode": ...,
+        "AlertMessage": ...,
+        "LastModifiedTime": ...,
+        "RelatedResourceArns": ...,
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AlertCode`: `str`
-- `AlertMessage`: `str`
-- `LastModifiedTime`: `datetime`
-- `RelatedResourceArns`: `List`\[`str`\]
-- `ResourceArn`: `str`
-
-<a id="availmatchingcriteriatypedef"></a>
+```python title="Definition"
+class AlertTypeDef(TypedDict):
+    AlertCode: str,
+    AlertMessage: str,
+    LastModifiedTime: datetime,
+    RelatedResourceArns: List[str],
+    ResourceArn: str,
+```
 
 ## AvailMatchingCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AvailMatchingCriteriaTypeDef
+
+def get_value() -> AvailMatchingCriteriaTypeDef:
+    return {
+        "DynamicVariable": ...,
+        "Operator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AvailMatchingCriteriaTypeDef(TypedDict):
+    DynamicVariable: str,
+    Operator: OperatorType,  # (1)
+```
 
-- `DynamicVariable`: `str`
-- `Operator`: `Literal['EQUALS']` (see
-  [OperatorType](./literals.md#operatortype))
-
-<a id="availsuppressiontypedef"></a>
-
+1. See [:material-code-brackets: OperatorType](./literals.md#operatortype) 
 ## AvailSuppressionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import AvailSuppressionTypeDef
+
+def get_value() -> AvailSuppressionTypeDef:
+    return {
+        "Mode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AvailSuppressionTypeDef(TypedDict):
+    Mode: NotRequired[ModeType],  # (1)
+    Value: NotRequired[str],
+```
 
-- `Mode`: [ModeType](./literals.md#modetype)
-- `Value`: `str`
-
-<a id="bumpertypedef"></a>
-
+1. See [:material-code-brackets: ModeType](./literals.md#modetype) 
 ## BumperTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import BumperTypeDef
+
+def get_value() -> BumperTypeDef:
+    return {
+        "EndUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `EndUrl`: `str`
-- `StartUrl`: `str`
-
-<a id="cdnconfigurationtypedef"></a>
+```python title="Definition"
+class BumperTypeDef(TypedDict):
+    EndUrl: NotRequired[str],
+    StartUrl: NotRequired[str],
+```
 
 ## CdnConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CdnConfigurationTypeDef
+
+def get_value() -> CdnConfigurationTypeDef:
+    return {
+        "AdSegmentUrlPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `AdSegmentUrlPrefix`: `str`
-- `ContentSegmentUrlPrefix`: `str`
-
-<a id="channeltypedef"></a>
+```python title="Definition"
+class CdnConfigurationTypeDef(TypedDict):
+    AdSegmentUrlPrefix: NotRequired[str],
+    ContentSegmentUrlPrefix: NotRequired[str],
+```
 
 ## ChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelName": ...,
+        "ChannelState": ...,
+        "Outputs": ...,
+        "PlaybackMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    Arn: str,
+    ChannelName: str,
+    ChannelState: str,
+    Outputs: List[ResponseOutputItemTypeDef],  # (2)
+    PlaybackMode: str,
+    CreationTime: NotRequired[datetime],
+    FillerSlate: NotRequired[SlateSourceTypeDef],  # (1)
+    LastModifiedTime: NotRequired[datetime],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `ChannelState`: `str`
-- `Outputs`:
-  `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
-- `PlaybackMode`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `LastModifiedTime`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="configurelogsforplaybackconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+2. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
 ## ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef
+
+def get_value() -> ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef:
+    return {
+        "PercentEnabled": ...,
+        "PlaybackConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `PercentEnabled`: `int`
-- `PlaybackConfigurationName`: `str`
-
-<a id="configurelogsforplaybackconfigurationresponsetypedef"></a>
+```python title="Definition"
+class ConfigureLogsForPlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    PercentEnabled: int,
+    PlaybackConfigurationName: str,
+```
 
 ## ConfigureLogsForPlaybackConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ConfigureLogsForPlaybackConfigurationResponseTypeDef
+
+def get_value() -> ConfigureLogsForPlaybackConfigurationResponseTypeDef:
+    return {
+        "PercentEnabled": ...,
+        "PlaybackConfigurationName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigureLogsForPlaybackConfigurationResponseTypeDef(TypedDict):
+    PercentEnabled: int,
+    PlaybackConfigurationName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PercentEnabled`: `int`
-- `PlaybackConfigurationName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "Outputs": ...,
+        "PlaybackMode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    Outputs: Sequence[RequestOutputItemTypeDef],  # (1)
+    PlaybackMode: PlaybackModeType,  # (2)
+    FillerSlate: NotRequired[SlateSourceTypeDef],  # (3)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `ChannelName`: `str`
-- `Outputs`:
-  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-- `PlaybackMode`: [PlaybackModeType](./literals.md#playbackmodetype)
-
-Optional fields:
-
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createchannelresponsetypedef"></a>
-
+1. See [:material-code-braces: RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef) 
+2. See [:material-code-brackets: PlaybackModeType](./literals.md#playbackmodetype) 
+3. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
 ## CreateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelName": ...,
+        "ChannelState": ...,
+        "CreationTime": ...,
+        "FillerSlate": ...,
+        "LastModifiedTime": ...,
+        "Outputs": ...,
+        "PlaybackMode": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    ChannelName: str,
+    ChannelState: ChannelStateType,  # (1)
+    CreationTime: datetime,
+    FillerSlate: SlateSourceTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    Outputs: List[ResponseOutputItemTypeDef],  # (3)
+    PlaybackMode: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
-- `CreationTime`: `datetime`
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `LastModifiedTime`: `datetime`
-- `Outputs`:
-  `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
-- `PlaybackMode`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprefetchschedulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreatePrefetchScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleRequestRequestTypeDef
+
+def get_value() -> CreatePrefetchScheduleRequestRequestTypeDef:
+    return {
+        "Consumption": ...,
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+        "Retrieval": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePrefetchScheduleRequestRequestTypeDef(TypedDict):
+    Consumption: PrefetchConsumptionTypeDef,  # (1)
+    Name: str,
+    PlaybackConfigurationName: str,
+    Retrieval: PrefetchRetrievalTypeDef,  # (2)
+    StreamId: NotRequired[str],
+```
 
-- `Consumption`:
-  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-- `Retrieval`:
-  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
-
-Optional fields:
-
-- `StreamId`: `str`
-
-<a id="createprefetchscheduleresponsetypedef"></a>
-
+1. See [:material-code-braces: PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef) 
+2. See [:material-code-braces: PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef) 
 ## CreatePrefetchScheduleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreatePrefetchScheduleResponseTypeDef
+
+def get_value() -> CreatePrefetchScheduleResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Consumption": ...,
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+        "Retrieval": ...,
+        "StreamId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreatePrefetchScheduleResponseTypeDef(TypedDict):
+    Arn: str,
+    Consumption: PrefetchConsumptionTypeDef,  # (1)
+    Name: str,
+    PlaybackConfigurationName: str,
+    Retrieval: PrefetchRetrievalTypeDef,  # (2)
+    StreamId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `Consumption`:
-  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-- `Retrieval`:
-  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
-- `StreamId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createprogramrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef) 
+2. See [:material-code-braces: PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateProgramRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateProgramRequestRequestTypeDef
+
+def get_value() -> CreateProgramRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "ProgramName": ...,
+        "ScheduleConfiguration": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProgramRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ProgramName: str,
+    ScheduleConfiguration: ScheduleConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+    AdBreaks: NotRequired[Sequence[AdBreakTypeDef]],  # (2)
+```
 
-- `ChannelName`: `str`
-- `ProgramName`: `str`
-- `ScheduleConfiguration`:
-  [ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef)
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-Optional fields:
-
-- `AdBreaks`: `Sequence`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
-
-<a id="createprogramresponsetypedef"></a>
-
+1. See [:material-code-braces: ScheduleConfigurationTypeDef](./type_defs.md#scheduleconfigurationtypedef) 
+2. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
 ## CreateProgramResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateProgramResponseTypeDef
+
+def get_value() -> CreateProgramResponseTypeDef:
+    return {
+        "AdBreaks": ...,
+        "Arn": ...,
+        "ChannelName": ...,
+        "CreationTime": ...,
+        "ProgramName": ...,
+        "ScheduledStartTime": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateProgramResponseTypeDef(TypedDict):
+    AdBreaks: List[AdBreakTypeDef],  # (1)
+    Arn: str,
+    ChannelName: str,
+    CreationTime: datetime,
+    ProgramName: str,
+    ScheduledStartTime: datetime,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `CreationTime`: `datetime`
-- `ProgramName`: `str`
-- `ScheduledStartTime`: `datetime`
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsourcelocationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSourceLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateSourceLocationRequestRequestTypeDef
+
+def get_value() -> CreateSourceLocationRequestRequestTypeDef:
+    return {
+        "HttpConfiguration": ...,
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSourceLocationRequestRequestTypeDef(TypedDict):
+    HttpConfiguration: HttpConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    AccessConfiguration: NotRequired[AccessConfigurationTypeDef],  # (2)
+    DefaultSegmentDeliveryConfiguration: NotRequired[DefaultSegmentDeliveryConfigurationTypeDef],  # (3)
+    SegmentDeliveryConfigurations: NotRequired[Sequence[SegmentDeliveryConfigurationTypeDef]],  # (4)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `SourceLocationName`: `str`
-
-Optional fields:
-
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createsourcelocationresponsetypedef"></a>
-
+1. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+2. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+3. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
 ## CreateSourceLocationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateSourceLocationResponseTypeDef
+
+def get_value() -> CreateSourceLocationResponseTypeDef:
+    return {
+        "AccessConfiguration": ...,
+        "Arn": ...,
+        "CreationTime": ...,
+        "DefaultSegmentDeliveryConfiguration": ...,
+        "HttpConfiguration": ...,
+        "LastModifiedTime": ...,
+        "SegmentDeliveryConfigurations": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSourceLocationResponseTypeDef(TypedDict):
+    AccessConfiguration: AccessConfigurationTypeDef,  # (1)
+    Arn: str,
+    CreationTime: datetime,
+    DefaultSegmentDeliveryConfiguration: DefaultSegmentDeliveryConfigurationTypeDef,  # (2)
+    HttpConfiguration: HttpConfigurationTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    SegmentDeliveryConfigurations: List[SegmentDeliveryConfigurationTypeDef],  # (4)
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `LastModifiedTime`: `datetime`
-- `SegmentDeliveryConfigurations`:
-  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvodsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+2. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+3. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVodSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateVodSourceRequestRequestTypeDef
+
+def get_value() -> CreateVodSourceRequestRequestTypeDef:
+    return {
+        "HttpPackageConfigurations": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVodSourceRequestRequestTypeDef(TypedDict):
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `HttpPackageConfigurations`:
-  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createvodsourceresponsetypedef"></a>
-
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
 ## CreateVodSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import CreateVodSourceResponseTypeDef
+
+def get_value() -> CreateVodSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreationTime": ...,
+        "HttpPackageConfigurations": ...,
+        "LastModifiedTime": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVodSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    CreationTime: datetime,
+    HttpPackageConfigurations: List[HttpPackageConfigurationTypeDef],  # (1)
+    LastModifiedTime: datetime,
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `LastModifiedTime`: `datetime`
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VodSourceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dashconfigurationforputtypedef"></a>
-
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DashConfigurationForPutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DashConfigurationForPutTypeDef
+
+def get_value() -> DashConfigurationForPutTypeDef:
+    return {
+        "MpdLocation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashConfigurationForPutTypeDef(TypedDict):
+    MpdLocation: NotRequired[str],
+    OriginManifestType: NotRequired[OriginManifestTypeType],  # (1)
+```
 
-- `MpdLocation`: `str`
-- `OriginManifestType`:
-  [OriginManifestTypeType](./literals.md#originmanifesttypetype)
-
-<a id="dashconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: OriginManifestTypeType](./literals.md#originmanifesttypetype) 
 ## DashConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DashConfigurationTypeDef
+
+def get_value() -> DashConfigurationTypeDef:
+    return {
+        "ManifestEndpointPrefix": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DashConfigurationTypeDef(TypedDict):
+    ManifestEndpointPrefix: NotRequired[str],
+    MpdLocation: NotRequired[str],
+    OriginManifestType: NotRequired[OriginManifestTypeType],  # (1)
+```
 
-- `ManifestEndpointPrefix`: `str`
-- `MpdLocation`: `str`
-- `OriginManifestType`:
-  [OriginManifestTypeType](./literals.md#originmanifesttypetype)
-
-<a id="dashplaylistsettingstypedef"></a>
-
+1. See [:material-code-brackets: OriginManifestTypeType](./literals.md#originmanifesttypetype) 
 ## DashPlaylistSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DashPlaylistSettingsTypeDef
+
+def get_value() -> DashPlaylistSettingsTypeDef:
+    return {
+        "ManifestWindowSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestWindowSeconds`: `int`
-- `MinBufferTimeSeconds`: `int`
-- `MinUpdatePeriodSeconds`: `int`
-- `SuggestedPresentationDelaySeconds`: `int`
-
-<a id="defaultsegmentdeliveryconfigurationtypedef"></a>
+```python title="Definition"
+class DashPlaylistSettingsTypeDef(TypedDict):
+    ManifestWindowSeconds: NotRequired[int],
+    MinBufferTimeSeconds: NotRequired[int],
+    MinUpdatePeriodSeconds: NotRequired[int],
+    SuggestedPresentationDelaySeconds: NotRequired[int],
+```
 
 ## DefaultSegmentDeliveryConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DefaultSegmentDeliveryConfigurationTypeDef
+
+def get_value() -> DefaultSegmentDeliveryConfigurationTypeDef:
+    return {
+        "BaseUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `BaseUrl`: `str`
-
-<a id="deletechannelpolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DefaultSegmentDeliveryConfigurationTypeDef(TypedDict):
+    BaseUrl: NotRequired[str],
+```
 
 ## DeleteChannelPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeleteChannelPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteChannelPolicyRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="deletechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelPolicyRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## DeleteChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeleteChannelRequestRequestTypeDef
+
+def get_value() -> DeleteChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="deleteplaybackconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## DeletePlaybackConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeletePlaybackConfigurationRequestRequestTypeDef
+
+def get_value() -> DeletePlaybackConfigurationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="deleteprefetchschedulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## DeletePrefetchScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeletePrefetchScheduleRequestRequestTypeDef
+
+def get_value() -> DeletePrefetchScheduleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-
-<a id="deleteprogramrequestrequesttypedef"></a>
+```python title="Definition"
+class DeletePrefetchScheduleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PlaybackConfigurationName: str,
+```
 
 ## DeleteProgramRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeleteProgramRequestRequestTypeDef
+
+def get_value() -> DeleteProgramRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "ProgramName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-- `ProgramName`: `str`
-
-<a id="deletesourcelocationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteProgramRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ProgramName: str,
+```
 
 ## DeleteSourceLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeleteSourceLocationRequestRequestTypeDef
+
+def get_value() -> DeleteSourceLocationRequestRequestTypeDef:
+    return {
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceLocationName`: `str`
-
-<a id="deletevodsourcerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSourceLocationRequestRequestTypeDef(TypedDict):
+    SourceLocationName: str,
+```
 
 ## DeleteVodSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DeleteVodSourceRequestRequestTypeDef
+
+def get_value() -> DeleteVodSourceRequestRequestTypeDef:
+    return {
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-<a id="describechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteVodSourceRequestRequestTypeDef(TypedDict):
+    SourceLocationName: str,
+    VodSourceName: str,
+```
 
 ## DescribeChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeChannelRequestRequestTypeDef
+
+def get_value() -> DescribeChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="describechannelresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## DescribeChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeChannelResponseTypeDef
+
+def get_value() -> DescribeChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelName": ...,
+        "ChannelState": ...,
+        "CreationTime": ...,
+        "FillerSlate": ...,
+        "LastModifiedTime": ...,
+        "Outputs": ...,
+        "PlaybackMode": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    ChannelName: str,
+    ChannelState: ChannelStateType,  # (1)
+    CreationTime: datetime,
+    FillerSlate: SlateSourceTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    Outputs: List[ResponseOutputItemTypeDef],  # (3)
+    PlaybackMode: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
-- `CreationTime`: `datetime`
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `LastModifiedTime`: `datetime`
-- `Outputs`:
-  `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
-- `PlaybackMode`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeprogramrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeProgramRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeProgramRequestRequestTypeDef
+
+def get_value() -> DescribeProgramRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "ProgramName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-- `ProgramName`: `str`
-
-<a id="describeprogramresponsetypedef"></a>
+```python title="Definition"
+class DescribeProgramRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    ProgramName: str,
+```
 
 ## DescribeProgramResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeProgramResponseTypeDef
+
+def get_value() -> DescribeProgramResponseTypeDef:
+    return {
+        "AdBreaks": ...,
+        "Arn": ...,
+        "ChannelName": ...,
+        "CreationTime": ...,
+        "ProgramName": ...,
+        "ScheduledStartTime": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeProgramResponseTypeDef(TypedDict):
+    AdBreaks: List[AdBreakTypeDef],  # (1)
+    Arn: str,
+    ChannelName: str,
+    CreationTime: datetime,
+    ProgramName: str,
+    ScheduledStartTime: datetime,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AdBreaks`: `List`\[[AdBreakTypeDef](./type_defs.md#adbreaktypedef)\]
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `CreationTime`: `datetime`
-- `ProgramName`: `str`
-- `ScheduledStartTime`: `datetime`
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesourcelocationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AdBreakTypeDef](./type_defs.md#adbreaktypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSourceLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeSourceLocationRequestRequestTypeDef
+
+def get_value() -> DescribeSourceLocationRequestRequestTypeDef:
+    return {
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceLocationName`: `str`
-
-<a id="describesourcelocationresponsetypedef"></a>
+```python title="Definition"
+class DescribeSourceLocationRequestRequestTypeDef(TypedDict):
+    SourceLocationName: str,
+```
 
 ## DescribeSourceLocationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeSourceLocationResponseTypeDef
+
+def get_value() -> DescribeSourceLocationResponseTypeDef:
+    return {
+        "AccessConfiguration": ...,
+        "Arn": ...,
+        "CreationTime": ...,
+        "DefaultSegmentDeliveryConfiguration": ...,
+        "HttpConfiguration": ...,
+        "LastModifiedTime": ...,
+        "SegmentDeliveryConfigurations": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSourceLocationResponseTypeDef(TypedDict):
+    AccessConfiguration: AccessConfigurationTypeDef,  # (1)
+    Arn: str,
+    CreationTime: datetime,
+    DefaultSegmentDeliveryConfiguration: DefaultSegmentDeliveryConfigurationTypeDef,  # (2)
+    HttpConfiguration: HttpConfigurationTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    SegmentDeliveryConfigurations: List[SegmentDeliveryConfigurationTypeDef],  # (4)
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `LastModifiedTime`: `datetime`
-- `SegmentDeliveryConfigurations`:
-  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevodsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+2. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+3. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVodSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeVodSourceRequestRequestTypeDef
+
+def get_value() -> DescribeVodSourceRequestRequestTypeDef:
+    return {
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-<a id="describevodsourceresponsetypedef"></a>
+```python title="Definition"
+class DescribeVodSourceRequestRequestTypeDef(TypedDict):
+    SourceLocationName: str,
+    VodSourceName: str,
+```
 
 ## DescribeVodSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import DescribeVodSourceResponseTypeDef
+
+def get_value() -> DescribeVodSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreationTime": ...,
+        "HttpPackageConfigurations": ...,
+        "LastModifiedTime": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVodSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    CreationTime: datetime,
+    HttpPackageConfigurations: List[HttpPackageConfigurationTypeDef],  # (1)
+    LastModifiedTime: datetime,
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `LastModifiedTime`: `datetime`
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VodSourceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchannelpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChannelPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetChannelPolicyRequestRequestTypeDef
+
+def get_value() -> GetChannelPolicyRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="getchannelpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetChannelPolicyRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## GetChannelPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetChannelPolicyResponseTypeDef
+
+def get_value() -> GetChannelPolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChannelPolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetChannelScheduleRequestGetChannelSchedulePaginateTypeDef
 
-<a id="getchannelschedulerequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import GetChannelScheduleRequestGetChannelSchedulePaginateTypeDef
 
+def get_value() -> GetChannelScheduleRequestGetChannelSchedulePaginateTypeDef:
+    return {
+        "ChannelName": ...,
+    }
+```
+
+```python title="Definition"
+class GetChannelScheduleRequestGetChannelSchedulePaginateTypeDef(TypedDict):
+    ChannelName: str,
+    DurationMinutes: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetChannelScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetChannelScheduleRequestRequestTypeDef
+
+def get_value() -> GetChannelScheduleRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-Optional fields:
-
-- `DurationMinutes`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getchannelscheduleresponsetypedef"></a>
+```python title="Definition"
+class GetChannelScheduleRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    DurationMinutes: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetChannelScheduleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetChannelScheduleResponseTypeDef
+
+def get_value() -> GetChannelScheduleResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChannelScheduleResponseTypeDef(TypedDict):
+    Items: List[ScheduleEntryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getplaybackconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ScheduleEntryTypeDef](./type_defs.md#scheduleentrytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPlaybackConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetPlaybackConfigurationRequestRequestTypeDef
+
+def get_value() -> GetPlaybackConfigurationRequestRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="getplaybackconfigurationresponsetypedef"></a>
+```python title="Definition"
+class GetPlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    Name: str,
+```
 
 ## GetPlaybackConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetPlaybackConfigurationResponseTypeDef
+
+def get_value() -> GetPlaybackConfigurationResponseTypeDef:
+    return {
+        "AdDecisionServerUrl": ...,
+        "AvailSuppression": ...,
+        "Bumper": ...,
+        "CdnConfiguration": ...,
+        "ConfigurationAliases": ...,
+        "DashConfiguration": ...,
+        "HlsConfiguration": ...,
+        "LivePreRollConfiguration": ...,
+        "LogConfiguration": ...,
+        "ManifestProcessingRules": ...,
+        "Name": ...,
+        "PersonalizationThresholdSeconds": ...,
+        "PlaybackConfigurationArn": ...,
+        "PlaybackEndpointPrefix": ...,
+        "SessionInitializationEndpointPrefix": ...,
+        "SlateAdUrl": ...,
+        "Tags": ...,
+        "TranscodeProfileName": ...,
+        "VideoContentSourceUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPlaybackConfigurationResponseTypeDef(TypedDict):
+    AdDecisionServerUrl: str,
+    AvailSuppression: AvailSuppressionTypeDef,  # (1)
+    Bumper: BumperTypeDef,  # (2)
+    CdnConfiguration: CdnConfigurationTypeDef,  # (3)
+    ConfigurationAliases: Dict[str, Dict[str, str]],
+    DashConfiguration: DashConfigurationTypeDef,  # (4)
+    HlsConfiguration: HlsConfigurationTypeDef,  # (5)
+    LivePreRollConfiguration: LivePreRollConfigurationTypeDef,  # (6)
+    LogConfiguration: LogConfigurationTypeDef,  # (7)
+    ManifestProcessingRules: ManifestProcessingRulesTypeDef,  # (8)
+    Name: str,
+    PersonalizationThresholdSeconds: int,
+    PlaybackConfigurationArn: str,
+    PlaybackEndpointPrefix: str,
+    SessionInitializationEndpointPrefix: str,
+    SlateAdUrl: str,
+    Tags: Dict[str, str],
+    TranscodeProfileName: str,
+    VideoContentSourceUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+```
 
-- `AdDecisionServerUrl`: `str`
-- `AvailSuppression`:
-  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
-- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
-- `CdnConfiguration`:
-  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
-- `DashConfiguration`:
-  [DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef)
-- `HlsConfiguration`:
-  [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
-- `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
-- `LogConfiguration`:
-  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
-- `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
-- `Name`: `str`
-- `PersonalizationThresholdSeconds`: `int`
-- `PlaybackConfigurationArn`: `str`
-- `PlaybackEndpointPrefix`: `str`
-- `SessionInitializationEndpointPrefix`: `str`
-- `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TranscodeProfileName`: `str`
-- `VideoContentSourceUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getprefetchschedulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef) 
+2. See [:material-code-braces: BumperTypeDef](./type_defs.md#bumpertypedef) 
+3. See [:material-code-braces: CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef) 
+4. See [:material-code-braces: DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef) 
+5. See [:material-code-braces: HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef) 
+6. See [:material-code-braces: LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef) 
+7. See [:material-code-braces: LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef) 
+8. See [:material-code-braces: ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetPrefetchScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleRequestRequestTypeDef
+
+def get_value() -> GetPrefetchScheduleRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-
-<a id="getprefetchscheduleresponsetypedef"></a>
+```python title="Definition"
+class GetPrefetchScheduleRequestRequestTypeDef(TypedDict):
+    Name: str,
+    PlaybackConfigurationName: str,
+```
 
 ## GetPrefetchScheduleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import GetPrefetchScheduleResponseTypeDef
+
+def get_value() -> GetPrefetchScheduleResponseTypeDef:
+    return {
+        "Arn": ...,
+        "Consumption": ...,
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+        "Retrieval": ...,
+        "StreamId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetPrefetchScheduleResponseTypeDef(TypedDict):
+    Arn: str,
+    Consumption: PrefetchConsumptionTypeDef,  # (1)
+    Name: str,
+    PlaybackConfigurationName: str,
+    Retrieval: PrefetchRetrievalTypeDef,  # (2)
+    StreamId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Arn`: `str`
-- `Consumption`:
-  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-- `Retrieval`:
-  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
-- `StreamId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hlsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef) 
+2. See [:material-code-braces: PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HlsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import HlsConfigurationTypeDef
+
+def get_value() -> HlsConfigurationTypeDef:
+    return {
+        "ManifestEndpointPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestEndpointPrefix`: `str`
-
-<a id="hlsplaylistsettingstypedef"></a>
+```python title="Definition"
+class HlsConfigurationTypeDef(TypedDict):
+    ManifestEndpointPrefix: NotRequired[str],
+```
 
 ## HlsPlaylistSettingsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import HlsPlaylistSettingsTypeDef
+
+def get_value() -> HlsPlaylistSettingsTypeDef:
+    return {
+        "ManifestWindowSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ManifestWindowSeconds`: `int`
-
-<a id="httpconfigurationtypedef"></a>
+```python title="Definition"
+class HlsPlaylistSettingsTypeDef(TypedDict):
+    ManifestWindowSeconds: NotRequired[int],
+```
 
 ## HttpConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import HttpConfigurationTypeDef
+
+def get_value() -> HttpConfigurationTypeDef:
+    return {
+        "BaseUrl": ...,
+    }
 ```
 
-Required fields:
-
-- `BaseUrl`: `str`
-
-<a id="httppackageconfigurationtypedef"></a>
+```python title="Definition"
+class HttpConfigurationTypeDef(TypedDict):
+    BaseUrl: str,
+```
 
 ## HttpPackageConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import HttpPackageConfigurationTypeDef
+
+def get_value() -> HttpPackageConfigurationTypeDef:
+    return {
+        "Path": ...,
+        "SourceGroup": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HttpPackageConfigurationTypeDef(TypedDict):
+    Path: str,
+    SourceGroup: str,
+    Type: TypeType,  # (1)
+```
 
-- `Path`: `str`
-- `SourceGroup`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+## ListAlertsRequestListAlertsPaginateTypeDef
 
-<a id="listalertsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListAlertsRequestListAlertsPaginateTypeDef
 
+def get_value() -> ListAlertsRequestListAlertsPaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAlertsRequestListAlertsPaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAlertsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListAlertsRequestRequestTypeDef
+
+def get_value() -> ListAlertsRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listalertsresponsetypedef"></a>
+```python title="Definition"
+class ListAlertsRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAlertsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListAlertsResponseTypeDef
+
+def get_value() -> ListAlertsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAlertsResponseTypeDef(TypedDict):
+    Items: List[AlertTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[AlertTypeDef](./type_defs.md#alerttypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AlertTypeDef](./type_defs.md#alerttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListChannelsRequestListChannelsPaginateTypeDef
 
-<a id="listchannelsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListChannelsRequestListChannelsPaginateTypeDef
 
+def get_value() -> ListChannelsRequestListChannelsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListChannelsRequestListChannelsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelsresponsetypedef"></a>
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListChannelsResponseTypeDef
+
+def get_value() -> ListChannelsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsResponseTypeDef(TypedDict):
+    Items: List[ChannelTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef
 
-<a id="listplaybackconfigurationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef
 
+def get_value() -> ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListPlaybackConfigurationsRequestListPlaybackConfigurationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPlaybackConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListPlaybackConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListPlaybackConfigurationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listplaybackconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class ListPlaybackConfigurationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListPlaybackConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListPlaybackConfigurationsResponseTypeDef
+
+def get_value() -> ListPlaybackConfigurationsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPlaybackConfigurationsResponseTypeDef(TypedDict):
+    Items: List[PlaybackConfigurationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[PlaybackConfigurationTypeDef](./type_defs.md#playbackconfigurationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PlaybackConfigurationTypeDef](./type_defs.md#playbackconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPrefetchSchedulesRequestListPrefetchSchedulesPaginateTypeDef
 
-<a id="listprefetchschedulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesRequestListPrefetchSchedulesPaginateTypeDef
 
+def get_value() -> ListPrefetchSchedulesRequestListPrefetchSchedulesPaginateTypeDef:
+    return {
+        "PlaybackConfigurationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListPrefetchSchedulesRequestListPrefetchSchedulesPaginateTypeDef(TypedDict):
+    PlaybackConfigurationName: str,
+    StreamId: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPrefetchSchedulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesRequestRequestTypeDef
+
+def get_value() -> ListPrefetchSchedulesRequestRequestTypeDef:
+    return {
+        "PlaybackConfigurationName": ...,
+    }
 ```
 
-Required fields:
-
-- `PlaybackConfigurationName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `StreamId`: `str`
-
-<a id="listprefetchschedulesresponsetypedef"></a>
+```python title="Definition"
+class ListPrefetchSchedulesRequestRequestTypeDef(TypedDict):
+    PlaybackConfigurationName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    StreamId: NotRequired[str],
+```
 
 ## ListPrefetchSchedulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListPrefetchSchedulesResponseTypeDef
+
+def get_value() -> ListPrefetchSchedulesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPrefetchSchedulesResponseTypeDef(TypedDict):
+    Items: List[PrefetchScheduleTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[PrefetchScheduleTypeDef](./type_defs.md#prefetchscheduletypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PrefetchScheduleTypeDef](./type_defs.md#prefetchscheduletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSourceLocationsRequestListSourceLocationsPaginateTypeDef
 
-<a id="listsourcelocationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListSourceLocationsRequestListSourceLocationsPaginateTypeDef
 
+def get_value() -> ListSourceLocationsRequestListSourceLocationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSourceLocationsRequestListSourceLocationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSourceLocationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListSourceLocationsRequestRequestTypeDef
+
+def get_value() -> ListSourceLocationsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listsourcelocationsresponsetypedef"></a>
+```python title="Definition"
+class ListSourceLocationsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListSourceLocationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListSourceLocationsResponseTypeDef
+
+def get_value() -> ListSourceLocationsResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSourceLocationsResponseTypeDef(TypedDict):
+    Items: List[SourceLocationTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`:
-  `List`\[[SourceLocationTypeDef](./type_defs.md#sourcelocationtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SourceLocationTypeDef](./type_defs.md#sourcelocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListVodSourcesRequestListVodSourcesPaginateTypeDef
 
-<a id="listvodsourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_mediatailor.type_defs import ListVodSourcesRequestListVodSourcesPaginateTypeDef
 
+def get_value() -> ListVodSourcesRequestListVodSourcesPaginateTypeDef:
+    return {
+        "SourceLocationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListVodSourcesRequestListVodSourcesPaginateTypeDef(TypedDict):
+    SourceLocationName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListVodSourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListVodSourcesRequestRequestTypeDef
+
+def get_value() -> ListVodSourcesRequestRequestTypeDef:
+    return {
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceLocationName`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listvodsourcesresponsetypedef"></a>
+```python title="Definition"
+class ListVodSourcesRequestRequestTypeDef(TypedDict):
+    SourceLocationName: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListVodSourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ListVodSourcesResponseTypeDef
+
+def get_value() -> ListVodSourcesResponseTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVodSourcesResponseTypeDef(TypedDict):
+    Items: List[VodSourceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[VodSourceTypeDef](./type_defs.md#vodsourcetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="liveprerollconfigurationtypedef"></a>
-
+1. See [:material-code-braces: VodSourceTypeDef](./type_defs.md#vodsourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LivePreRollConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import LivePreRollConfigurationTypeDef
+
+def get_value() -> LivePreRollConfigurationTypeDef:
+    return {
+        "AdDecisionServerUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `AdDecisionServerUrl`: `str`
-- `MaxDurationSeconds`: `int`
-
-<a id="logconfigurationtypedef"></a>
+```python title="Definition"
+class LivePreRollConfigurationTypeDef(TypedDict):
+    AdDecisionServerUrl: NotRequired[str],
+    MaxDurationSeconds: NotRequired[int],
+```
 
 ## LogConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import LogConfigurationTypeDef
+
+def get_value() -> LogConfigurationTypeDef:
+    return {
+        "PercentEnabled": ...,
+    }
 ```
 
-Required fields:
-
-- `PercentEnabled`: `int`
-
-<a id="manifestprocessingrulestypedef"></a>
+```python title="Definition"
+class LogConfigurationTypeDef(TypedDict):
+    PercentEnabled: int,
+```
 
 ## ManifestProcessingRulesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ManifestProcessingRulesTypeDef
+
+def get_value() -> ManifestProcessingRulesTypeDef:
+    return {
+        "AdMarkerPassthrough": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ManifestProcessingRulesTypeDef(TypedDict):
+    AdMarkerPassthrough: NotRequired[AdMarkerPassthroughTypeDef],  # (1)
+```
 
-- `AdMarkerPassthrough`:
-  [AdMarkerPassthroughTypeDef](./type_defs.md#admarkerpassthroughtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: AdMarkerPassthroughTypeDef](./type_defs.md#admarkerpassthroughtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="playbackconfigurationtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PlaybackConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PlaybackConfigurationTypeDef
+
+def get_value() -> PlaybackConfigurationTypeDef:
+    return {
+        "AdDecisionServerUrl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PlaybackConfigurationTypeDef(TypedDict):
+    AdDecisionServerUrl: NotRequired[str],
+    AvailSuppression: NotRequired[AvailSuppressionTypeDef],  # (1)
+    Bumper: NotRequired[BumperTypeDef],  # (2)
+    CdnConfiguration: NotRequired[CdnConfigurationTypeDef],  # (3)
+    ConfigurationAliases: NotRequired[Dict[str, Dict[str, str]]],
+    DashConfiguration: NotRequired[DashConfigurationTypeDef],  # (4)
+    HlsConfiguration: NotRequired[HlsConfigurationTypeDef],  # (5)
+    LivePreRollConfiguration: NotRequired[LivePreRollConfigurationTypeDef],  # (6)
+    LogConfiguration: NotRequired[LogConfigurationTypeDef],  # (7)
+    ManifestProcessingRules: NotRequired[ManifestProcessingRulesTypeDef],  # (8)
+    Name: NotRequired[str],
+    PersonalizationThresholdSeconds: NotRequired[int],
+    PlaybackConfigurationArn: NotRequired[str],
+    PlaybackEndpointPrefix: NotRequired[str],
+    SessionInitializationEndpointPrefix: NotRequired[str],
+    SlateAdUrl: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    TranscodeProfileName: NotRequired[str],
+    VideoContentSourceUrl: NotRequired[str],
+```
 
-- `AdDecisionServerUrl`: `str`
-- `AvailSuppression`:
-  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
-- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
-- `CdnConfiguration`:
-  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
-- `DashConfiguration`:
-  [DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef)
-- `HlsConfiguration`:
-  [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
-- `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
-- `LogConfiguration`:
-  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
-- `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
-- `Name`: `str`
-- `PersonalizationThresholdSeconds`: `int`
-- `PlaybackConfigurationArn`: `str`
-- `PlaybackEndpointPrefix`: `str`
-- `SessionInitializationEndpointPrefix`: `str`
-- `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TranscodeProfileName`: `str`
-- `VideoContentSourceUrl`: `str`
-
-<a id="prefetchconsumptiontypedef"></a>
-
+1. See [:material-code-braces: AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef) 
+2. See [:material-code-braces: BumperTypeDef](./type_defs.md#bumpertypedef) 
+3. See [:material-code-braces: CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef) 
+4. See [:material-code-braces: DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef) 
+5. See [:material-code-braces: HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef) 
+6. See [:material-code-braces: LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef) 
+7. See [:material-code-braces: LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef) 
+8. See [:material-code-braces: ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef) 
 ## PrefetchConsumptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PrefetchConsumptionTypeDef
+
+def get_value() -> PrefetchConsumptionTypeDef:
+    return {
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrefetchConsumptionTypeDef(TypedDict):
+    EndTime: Union[datetime, str],
+    AvailMatchingCriteria: NotRequired[Sequence[AvailMatchingCriteriaTypeDef]],  # (1)
+    StartTime: NotRequired[Union[datetime, str]],
+```
 
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `AvailMatchingCriteria`:
-  `Sequence`\[[AvailMatchingCriteriaTypeDef](./type_defs.md#availmatchingcriteriatypedef)\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-
-<a id="prefetchretrievaltypedef"></a>
-
+1. See [:material-code-braces: AvailMatchingCriteriaTypeDef](./type_defs.md#availmatchingcriteriatypedef) 
 ## PrefetchRetrievalTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PrefetchRetrievalTypeDef
+
+def get_value() -> PrefetchRetrievalTypeDef:
+    return {
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `DynamicVariables`: `Mapping`\[`str`, `str`\]
-- `StartTime`: `Union`\[`datetime`, `str`\]
-
-<a id="prefetchscheduletypedef"></a>
+```python title="Definition"
+class PrefetchRetrievalTypeDef(TypedDict):
+    EndTime: Union[datetime, str],
+    DynamicVariables: NotRequired[Mapping[str, str]],
+    StartTime: NotRequired[Union[datetime, str]],
+```
 
 ## PrefetchScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PrefetchScheduleTypeDef
+
+def get_value() -> PrefetchScheduleTypeDef:
+    return {
+        "Arn": ...,
+        "Consumption": ...,
+        "Name": ...,
+        "PlaybackConfigurationName": ...,
+        "Retrieval": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PrefetchScheduleTypeDef(TypedDict):
+    Arn: str,
+    Consumption: PrefetchConsumptionTypeDef,  # (1)
+    Name: str,
+    PlaybackConfigurationName: str,
+    Retrieval: PrefetchRetrievalTypeDef,  # (2)
+    StreamId: NotRequired[str],
+```
 
-- `Arn`: `str`
-- `Consumption`:
-  [PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef)
-- `Name`: `str`
-- `PlaybackConfigurationName`: `str`
-- `Retrieval`:
-  [PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef)
-
-Optional fields:
-
-- `StreamId`: `str`
-
-<a id="putchannelpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PrefetchConsumptionTypeDef](./type_defs.md#prefetchconsumptiontypedef) 
+2. See [:material-code-braces: PrefetchRetrievalTypeDef](./type_defs.md#prefetchretrievaltypedef) 
 ## PutChannelPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PutChannelPolicyRequestRequestTypeDef
+
+def get_value() -> PutChannelPolicyRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-- `Policy`: `str`
-
-<a id="putplaybackconfigurationrequestrequesttypedef"></a>
+```python title="Definition"
+class PutChannelPolicyRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    Policy: str,
+```
 
 ## PutPlaybackConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PutPlaybackConfigurationRequestRequestTypeDef
+
+def get_value() -> PutPlaybackConfigurationRequestRequestTypeDef:
+    return {
+        "AdDecisionServerUrl": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutPlaybackConfigurationRequestRequestTypeDef(TypedDict):
+    AdDecisionServerUrl: NotRequired[str],
+    AvailSuppression: NotRequired[AvailSuppressionTypeDef],  # (1)
+    Bumper: NotRequired[BumperTypeDef],  # (2)
+    CdnConfiguration: NotRequired[CdnConfigurationTypeDef],  # (3)
+    ConfigurationAliases: NotRequired[Mapping[str, Mapping[str, str]]],
+    DashConfiguration: NotRequired[DashConfigurationForPutTypeDef],  # (4)
+    LivePreRollConfiguration: NotRequired[LivePreRollConfigurationTypeDef],  # (5)
+    ManifestProcessingRules: NotRequired[ManifestProcessingRulesTypeDef],  # (6)
+    Name: NotRequired[str],
+    PersonalizationThresholdSeconds: NotRequired[int],
+    SlateAdUrl: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    TranscodeProfileName: NotRequired[str],
+    VideoContentSourceUrl: NotRequired[str],
+```
 
-- `AdDecisionServerUrl`: `str`
-- `AvailSuppression`:
-  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
-- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
-- `CdnConfiguration`:
-  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
-- `DashConfiguration`:
-  [DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef)
-- `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
-- `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
-- `Name`: `str`
-- `PersonalizationThresholdSeconds`: `int`
-- `SlateAdUrl`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `TranscodeProfileName`: `str`
-- `VideoContentSourceUrl`: `str`
-
-<a id="putplaybackconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef) 
+2. See [:material-code-braces: BumperTypeDef](./type_defs.md#bumpertypedef) 
+3. See [:material-code-braces: CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef) 
+4. See [:material-code-braces: DashConfigurationForPutTypeDef](./type_defs.md#dashconfigurationforputtypedef) 
+5. See [:material-code-braces: LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef) 
+6. See [:material-code-braces: ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef) 
 ## PutPlaybackConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import PutPlaybackConfigurationResponseTypeDef
+
+def get_value() -> PutPlaybackConfigurationResponseTypeDef:
+    return {
+        "AdDecisionServerUrl": ...,
+        "AvailSuppression": ...,
+        "Bumper": ...,
+        "CdnConfiguration": ...,
+        "ConfigurationAliases": ...,
+        "DashConfiguration": ...,
+        "HlsConfiguration": ...,
+        "LivePreRollConfiguration": ...,
+        "LogConfiguration": ...,
+        "ManifestProcessingRules": ...,
+        "Name": ...,
+        "PersonalizationThresholdSeconds": ...,
+        "PlaybackConfigurationArn": ...,
+        "PlaybackEndpointPrefix": ...,
+        "SessionInitializationEndpointPrefix": ...,
+        "SlateAdUrl": ...,
+        "Tags": ...,
+        "TranscodeProfileName": ...,
+        "VideoContentSourceUrl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutPlaybackConfigurationResponseTypeDef(TypedDict):
+    AdDecisionServerUrl: str,
+    AvailSuppression: AvailSuppressionTypeDef,  # (1)
+    Bumper: BumperTypeDef,  # (2)
+    CdnConfiguration: CdnConfigurationTypeDef,  # (3)
+    ConfigurationAliases: Dict[str, Dict[str, str]],
+    DashConfiguration: DashConfigurationTypeDef,  # (4)
+    HlsConfiguration: HlsConfigurationTypeDef,  # (5)
+    LivePreRollConfiguration: LivePreRollConfigurationTypeDef,  # (6)
+    LogConfiguration: LogConfigurationTypeDef,  # (7)
+    ManifestProcessingRules: ManifestProcessingRulesTypeDef,  # (8)
+    Name: str,
+    PersonalizationThresholdSeconds: int,
+    PlaybackConfigurationArn: str,
+    PlaybackEndpointPrefix: str,
+    SessionInitializationEndpointPrefix: str,
+    SlateAdUrl: str,
+    Tags: Dict[str, str],
+    TranscodeProfileName: str,
+    VideoContentSourceUrl: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (9)
+```
 
-- `AdDecisionServerUrl`: `str`
-- `AvailSuppression`:
-  [AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef)
-- `Bumper`: [BumperTypeDef](./type_defs.md#bumpertypedef)
-- `CdnConfiguration`:
-  [CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef)
-- `ConfigurationAliases`: `Dict`\[`str`, `Dict`\[`str`, `str`\]\]
-- `DashConfiguration`:
-  [DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef)
-- `HlsConfiguration`:
-  [HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef)
-- `LivePreRollConfiguration`:
-  [LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef)
-- `LogConfiguration`:
-  [LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef)
-- `ManifestProcessingRules`:
-  [ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef)
-- `Name`: `str`
-- `PersonalizationThresholdSeconds`: `int`
-- `PlaybackConfigurationArn`: `str`
-- `PlaybackEndpointPrefix`: `str`
-- `SessionInitializationEndpointPrefix`: `str`
-- `SlateAdUrl`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `TranscodeProfileName`: `str`
-- `VideoContentSourceUrl`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="requestoutputitemtypedef"></a>
-
+1. See [:material-code-braces: AvailSuppressionTypeDef](./type_defs.md#availsuppressiontypedef) 
+2. See [:material-code-braces: BumperTypeDef](./type_defs.md#bumpertypedef) 
+3. See [:material-code-braces: CdnConfigurationTypeDef](./type_defs.md#cdnconfigurationtypedef) 
+4. See [:material-code-braces: DashConfigurationTypeDef](./type_defs.md#dashconfigurationtypedef) 
+5. See [:material-code-braces: HlsConfigurationTypeDef](./type_defs.md#hlsconfigurationtypedef) 
+6. See [:material-code-braces: LivePreRollConfigurationTypeDef](./type_defs.md#liveprerollconfigurationtypedef) 
+7. See [:material-code-braces: LogConfigurationTypeDef](./type_defs.md#logconfigurationtypedef) 
+8. See [:material-code-braces: ManifestProcessingRulesTypeDef](./type_defs.md#manifestprocessingrulestypedef) 
+9. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RequestOutputItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import RequestOutputItemTypeDef
+
+def get_value() -> RequestOutputItemTypeDef:
+    return {
+        "ManifestName": ...,
+        "SourceGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RequestOutputItemTypeDef(TypedDict):
+    ManifestName: str,
+    SourceGroup: str,
+    DashPlaylistSettings: NotRequired[DashPlaylistSettingsTypeDef],  # (1)
+    HlsPlaylistSettings: NotRequired[HlsPlaylistSettingsTypeDef],  # (2)
+```
 
-- `ManifestName`: `str`
-- `SourceGroup`: `str`
-
-Optional fields:
-
-- `DashPlaylistSettings`:
-  [DashPlaylistSettingsTypeDef](./type_defs.md#dashplaylistsettingstypedef)
-- `HlsPlaylistSettings`:
-  [HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: DashPlaylistSettingsTypeDef](./type_defs.md#dashplaylistsettingstypedef) 
+2. See [:material-code-braces: HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="responseoutputitemtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResponseOutputItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ResponseOutputItemTypeDef
+
+def get_value() -> ResponseOutputItemTypeDef:
+    return {
+        "ManifestName": ...,
+        "PlaybackUrl": ...,
+        "SourceGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResponseOutputItemTypeDef(TypedDict):
+    ManifestName: str,
+    PlaybackUrl: str,
+    SourceGroup: str,
+    DashPlaylistSettings: NotRequired[DashPlaylistSettingsTypeDef],  # (1)
+    HlsPlaylistSettings: NotRequired[HlsPlaylistSettingsTypeDef],  # (2)
+```
 
-- `ManifestName`: `str`
-- `PlaybackUrl`: `str`
-- `SourceGroup`: `str`
-
-Optional fields:
-
-- `DashPlaylistSettings`:
-  [DashPlaylistSettingsTypeDef](./type_defs.md#dashplaylistsettingstypedef)
-- `HlsPlaylistSettings`:
-  [HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef)
-
-<a id="scheduleadbreaktypedef"></a>
-
+1. See [:material-code-braces: DashPlaylistSettingsTypeDef](./type_defs.md#dashplaylistsettingstypedef) 
+2. See [:material-code-braces: HlsPlaylistSettingsTypeDef](./type_defs.md#hlsplaylistsettingstypedef) 
 ## ScheduleAdBreakTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ScheduleAdBreakTypeDef
+
+def get_value() -> ScheduleAdBreakTypeDef:
+    return {
+        "ApproximateDurationSeconds": ...,
+    }
 ```
 
-Optional fields:
-
-- `ApproximateDurationSeconds`: `int`
-- `ApproximateStartTime`: `datetime`
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-<a id="scheduleconfigurationtypedef"></a>
+```python title="Definition"
+class ScheduleAdBreakTypeDef(TypedDict):
+    ApproximateDurationSeconds: NotRequired[int],
+    ApproximateStartTime: NotRequired[datetime],
+    SourceLocationName: NotRequired[str],
+    VodSourceName: NotRequired[str],
+```
 
 ## ScheduleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ScheduleConfigurationTypeDef
+
+def get_value() -> ScheduleConfigurationTypeDef:
+    return {
+        "Transition": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduleConfigurationTypeDef(TypedDict):
+    Transition: TransitionTypeDef,  # (1)
+```
 
-- `Transition`: [TransitionTypeDef](./type_defs.md#transitiontypedef)
-
-<a id="scheduleentrytypedef"></a>
-
+1. See [:material-code-braces: TransitionTypeDef](./type_defs.md#transitiontypedef) 
 ## ScheduleEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import ScheduleEntryTypeDef
+
+def get_value() -> ScheduleEntryTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelName": ...,
+        "ProgramName": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScheduleEntryTypeDef(TypedDict):
+    Arn: str,
+    ChannelName: str,
+    ProgramName: str,
+    SourceLocationName: str,
+    VodSourceName: str,
+    ApproximateDurationSeconds: NotRequired[int],
+    ApproximateStartTime: NotRequired[datetime],
+    ScheduleAdBreaks: NotRequired[List[ScheduleAdBreakTypeDef]],  # (1)
+    ScheduleEntryType: NotRequired[ScheduleEntryTypeType],  # (2)
+```
 
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `ProgramName`: `str`
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-Optional fields:
-
-- `ApproximateDurationSeconds`: `int`
-- `ApproximateStartTime`: `datetime`
-- `ScheduleAdBreaks`:
-  `List`\[[ScheduleAdBreakTypeDef](./type_defs.md#scheduleadbreaktypedef)\]
-- `ScheduleEntryType`:
-  [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
-
-<a id="secretsmanageraccesstokenconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ScheduleAdBreakTypeDef](./type_defs.md#scheduleadbreaktypedef) 
+2. See [:material-code-brackets: ScheduleEntryTypeType](./literals.md#scheduleentrytypetype) 
 ## SecretsManagerAccessTokenConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import SecretsManagerAccessTokenConfigurationTypeDef
+
+def get_value() -> SecretsManagerAccessTokenConfigurationTypeDef:
+    return {
+        "HeaderName": ...,
+    }
 ```
 
-Optional fields:
-
-- `HeaderName`: `str`
-- `SecretArn`: `str`
-- `SecretStringKey`: `str`
-
-<a id="segmentdeliveryconfigurationtypedef"></a>
+```python title="Definition"
+class SecretsManagerAccessTokenConfigurationTypeDef(TypedDict):
+    HeaderName: NotRequired[str],
+    SecretArn: NotRequired[str],
+    SecretStringKey: NotRequired[str],
+```
 
 ## SegmentDeliveryConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import SegmentDeliveryConfigurationTypeDef
+
+def get_value() -> SegmentDeliveryConfigurationTypeDef:
+    return {
+        "BaseUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `BaseUrl`: `str`
-- `Name`: `str`
-
-<a id="slatesourcetypedef"></a>
+```python title="Definition"
+class SegmentDeliveryConfigurationTypeDef(TypedDict):
+    BaseUrl: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## SlateSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import SlateSourceTypeDef
+
+def get_value() -> SlateSourceTypeDef:
+    return {
+        "SourceLocationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-<a id="sourcelocationtypedef"></a>
+```python title="Definition"
+class SlateSourceTypeDef(TypedDict):
+    SourceLocationName: NotRequired[str],
+    VodSourceName: NotRequired[str],
+```
 
 ## SourceLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import SourceLocationTypeDef
+
+def get_value() -> SourceLocationTypeDef:
+    return {
+        "Arn": ...,
+        "HttpConfiguration": ...,
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceLocationTypeDef(TypedDict):
+    Arn: str,
+    HttpConfiguration: HttpConfigurationTypeDef,  # (3)
+    SourceLocationName: str,
+    AccessConfiguration: NotRequired[AccessConfigurationTypeDef],  # (1)
+    CreationTime: NotRequired[datetime],
+    DefaultSegmentDeliveryConfiguration: NotRequired[DefaultSegmentDeliveryConfigurationTypeDef],  # (2)
+    LastModifiedTime: NotRequired[datetime],
+    SegmentDeliveryConfigurations: NotRequired[List[SegmentDeliveryConfigurationTypeDef]],  # (4)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `SourceLocationName`: `str`
-
-Optional fields:
-
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `LastModifiedTime`: `datetime`
-- `SegmentDeliveryConfigurations`:
-  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="spliceinsertmessagetypedef"></a>
-
+1. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+2. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+3. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
 ## SpliceInsertMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import SpliceInsertMessageTypeDef
+
+def get_value() -> SpliceInsertMessageTypeDef:
+    return {
+        "AvailNum": ...,
+    }
 ```
 
-Optional fields:
-
-- `AvailNum`: `int`
-- `AvailsExpected`: `int`
-- `SpliceEventId`: `int`
-- `UniqueProgramId`: `int`
-
-<a id="startchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class SpliceInsertMessageTypeDef(TypedDict):
+    AvailNum: NotRequired[int],
+    AvailsExpected: NotRequired[int],
+    SpliceEventId: NotRequired[int],
+    UniqueProgramId: NotRequired[int],
+```
 
 ## StartChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import StartChannelRequestRequestTypeDef
+
+def get_value() -> StartChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="stopchannelrequestrequesttypedef"></a>
+```python title="Definition"
+class StartChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## StopChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import StopChannelRequestRequestTypeDef
+
+def get_value() -> StopChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelName`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class StopChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="transitiontypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TransitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import TransitionTypeDef
+
+def get_value() -> TransitionTypeDef:
+    return {
+        "RelativePosition": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransitionTypeDef(TypedDict):
+    RelativePosition: RelativePositionType,  # (1)
+    Type: str,
+    RelativeProgram: NotRequired[str],
+    ScheduledStartTimeMillis: NotRequired[int],
+```
 
-- `RelativePosition`:
-  [RelativePositionType](./literals.md#relativepositiontype)
-- `Type`: `str`
-
-Optional fields:
-
-- `RelativeProgram`: `str`
-- `ScheduledStartTimeMillis`: `int`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RelativePositionType](./literals.md#relativepositiontype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "ChannelName": ...,
+        "Outputs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    ChannelName: str,
+    Outputs: Sequence[RequestOutputItemTypeDef],  # (1)
+    FillerSlate: NotRequired[SlateSourceTypeDef],  # (2)
+```
 
-- `ChannelName`: `str`
-- `Outputs`:
-  `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
-
-Optional fields:
-
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-
-<a id="updatechannelresponsetypedef"></a>
-
+1. See [:material-code-braces: RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
 ## UpdateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateChannelResponseTypeDef
+
+def get_value() -> UpdateChannelResponseTypeDef:
+    return {
+        "Arn": ...,
+        "ChannelName": ...,
+        "ChannelState": ...,
+        "CreationTime": ...,
+        "FillerSlate": ...,
+        "LastModifiedTime": ...,
+        "Outputs": ...,
+        "PlaybackMode": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelResponseTypeDef(TypedDict):
+    Arn: str,
+    ChannelName: str,
+    ChannelState: ChannelStateType,  # (1)
+    CreationTime: datetime,
+    FillerSlate: SlateSourceTypeDef,  # (2)
+    LastModifiedTime: datetime,
+    Outputs: List[ResponseOutputItemTypeDef],  # (3)
+    PlaybackMode: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Arn`: `str`
-- `ChannelName`: `str`
-- `ChannelState`: [ChannelStateType](./literals.md#channelstatetype)
-- `CreationTime`: `datetime`
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
-- `LastModifiedTime`: `datetime`
-- `Outputs`:
-  `List`\[[ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef)\]
-- `PlaybackMode`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesourcelocationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelStateType](./literals.md#channelstatetype) 
+2. See [:material-code-braces: SlateSourceTypeDef](./type_defs.md#slatesourcetypedef) 
+3. See [:material-code-braces: ResponseOutputItemTypeDef](./type_defs.md#responseoutputitemtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSourceLocationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateSourceLocationRequestRequestTypeDef
+
+def get_value() -> UpdateSourceLocationRequestRequestTypeDef:
+    return {
+        "HttpConfiguration": ...,
+        "SourceLocationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSourceLocationRequestRequestTypeDef(TypedDict):
+    HttpConfiguration: HttpConfigurationTypeDef,  # (1)
+    SourceLocationName: str,
+    AccessConfiguration: NotRequired[AccessConfigurationTypeDef],  # (2)
+    DefaultSegmentDeliveryConfiguration: NotRequired[DefaultSegmentDeliveryConfigurationTypeDef],  # (3)
+    SegmentDeliveryConfigurations: NotRequired[Sequence[SegmentDeliveryConfigurationTypeDef]],  # (4)
+```
 
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `SourceLocationName`: `str`
-
-Optional fields:
-
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-
-<a id="updatesourcelocationresponsetypedef"></a>
-
+1. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+2. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+3. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
 ## UpdateSourceLocationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateSourceLocationResponseTypeDef
+
+def get_value() -> UpdateSourceLocationResponseTypeDef:
+    return {
+        "AccessConfiguration": ...,
+        "Arn": ...,
+        "CreationTime": ...,
+        "DefaultSegmentDeliveryConfiguration": ...,
+        "HttpConfiguration": ...,
+        "LastModifiedTime": ...,
+        "SegmentDeliveryConfigurations": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSourceLocationResponseTypeDef(TypedDict):
+    AccessConfiguration: AccessConfigurationTypeDef,  # (1)
+    Arn: str,
+    CreationTime: datetime,
+    DefaultSegmentDeliveryConfiguration: DefaultSegmentDeliveryConfigurationTypeDef,  # (2)
+    HttpConfiguration: HttpConfigurationTypeDef,  # (3)
+    LastModifiedTime: datetime,
+    SegmentDeliveryConfigurations: List[SegmentDeliveryConfigurationTypeDef],  # (4)
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (5)
+```
 
-- `AccessConfiguration`:
-  [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `DefaultSegmentDeliveryConfiguration`:
-  [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `HttpConfiguration`:
-  [HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef)
-- `LastModifiedTime`: `datetime`
-- `SegmentDeliveryConfigurations`:
-  `List`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatevodsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef) 
+2. See [:material-code-braces: DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef) 
+3. See [:material-code-braces: HttpConfigurationTypeDef](./type_defs.md#httpconfigurationtypedef) 
+4. See [:material-code-braces: SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef) 
+5. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateVodSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateVodSourceRequestRequestTypeDef
+
+def get_value() -> UpdateVodSourceRequestRequestTypeDef:
+    return {
+        "HttpPackageConfigurations": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVodSourceRequestRequestTypeDef(TypedDict):
+    HttpPackageConfigurations: Sequence[HttpPackageConfigurationTypeDef],  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+```
 
-- `HttpPackageConfigurations`:
-  `Sequence`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-<a id="updatevodsourceresponsetypedef"></a>
-
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
 ## UpdateVodSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import UpdateVodSourceResponseTypeDef
+
+def get_value() -> UpdateVodSourceResponseTypeDef:
+    return {
+        "Arn": ...,
+        "CreationTime": ...,
+        "HttpPackageConfigurations": ...,
+        "LastModifiedTime": ...,
+        "SourceLocationName": ...,
+        "Tags": ...,
+        "VodSourceName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateVodSourceResponseTypeDef(TypedDict):
+    Arn: str,
+    CreationTime: datetime,
+    HttpPackageConfigurations: List[HttpPackageConfigurationTypeDef],  # (1)
+    LastModifiedTime: datetime,
+    SourceLocationName: str,
+    Tags: Dict[str, str],
+    VodSourceName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Arn`: `str`
-- `CreationTime`: `datetime`
-- `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `LastModifiedTime`: `datetime`
-- `SourceLocationName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VodSourceName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vodsourcetypedef"></a>
-
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VodSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_mediatailor.type_defs import VodSourceTypeDef
+
+def get_value() -> VodSourceTypeDef:
+    return {
+        "Arn": ...,
+        "HttpPackageConfigurations": ...,
+        "SourceLocationName": ...,
+        "VodSourceName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VodSourceTypeDef(TypedDict):
+    Arn: str,
+    HttpPackageConfigurations: List[HttpPackageConfigurationTypeDef],  # (1)
+    SourceLocationName: str,
+    VodSourceName: str,
+    CreationTime: NotRequired[datetime],
+    LastModifiedTime: NotRequired[datetime],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `HttpPackageConfigurations`:
-  `List`\[[HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef)\]
-- `SourceLocationName`: `str`
-- `VodSourceName`: `str`
-
-Optional fields:
-
-- `CreationTime`: `datetime`
-- `LastModifiedTime`: `datetime`
-- `Tags`: `Dict`\[`str`, `str`\]
+1. See [:material-code-braces: HttpPackageConfigurationTypeDef](./type_defs.md#httppackageconfigurationtypedef) 

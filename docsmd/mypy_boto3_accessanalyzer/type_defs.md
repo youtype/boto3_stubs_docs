@@ -1,1629 +1,2135 @@
-<a id="typed-dictionaries-for-boto3-accessanalyzer-module"></a>
-
-# Typed dictionaries for boto3 AccessAnalyzer module
+# Typed dictionaries
 
 > [Index](../README.md) > [AccessAnalyzer](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
-type annotations stubs module
-[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AccessAnalyzer module](#typed-dictionaries-for-boto3-accessanalyzer-module)
-  - [AccessPreviewFindingTypeDef](#accesspreviewfindingtypedef)
-  - [AccessPreviewStatusReasonTypeDef](#accesspreviewstatusreasontypedef)
-  - [AccessPreviewSummaryTypeDef](#accesspreviewsummarytypedef)
-  - [AccessPreviewTypeDef](#accesspreviewtypedef)
-  - [AclGranteeTypeDef](#aclgranteetypedef)
-  - [AnalyzedResourceSummaryTypeDef](#analyzedresourcesummarytypedef)
-  - [AnalyzedResourceTypeDef](#analyzedresourcetypedef)
-  - [AnalyzerSummaryTypeDef](#analyzersummarytypedef)
-  - [ApplyArchiveRuleRequestRequestTypeDef](#applyarchiverulerequestrequesttypedef)
-  - [ArchiveRuleSummaryTypeDef](#archiverulesummarytypedef)
-  - [CancelPolicyGenerationRequestRequestTypeDef](#cancelpolicygenerationrequestrequesttypedef)
-  - [CloudTrailDetailsTypeDef](#cloudtraildetailstypedef)
-  - [CloudTrailPropertiesTypeDef](#cloudtrailpropertiestypedef)
-  - [ConfigurationTypeDef](#configurationtypedef)
-  - [CreateAccessPreviewRequestRequestTypeDef](#createaccesspreviewrequestrequesttypedef)
-  - [CreateAccessPreviewResponseTypeDef](#createaccesspreviewresponsetypedef)
-  - [CreateAnalyzerRequestRequestTypeDef](#createanalyzerrequestrequesttypedef)
-  - [CreateAnalyzerResponseTypeDef](#createanalyzerresponsetypedef)
-  - [CreateArchiveRuleRequestRequestTypeDef](#createarchiverulerequestrequesttypedef)
-  - [CriterionTypeDef](#criteriontypedef)
-  - [DeleteAnalyzerRequestRequestTypeDef](#deleteanalyzerrequestrequesttypedef)
-  - [DeleteArchiveRuleRequestRequestTypeDef](#deletearchiverulerequestrequesttypedef)
-  - [FindingSourceDetailTypeDef](#findingsourcedetailtypedef)
-  - [FindingSourceTypeDef](#findingsourcetypedef)
-  - [FindingSummaryTypeDef](#findingsummarytypedef)
-  - [FindingTypeDef](#findingtypedef)
-  - [GeneratedPolicyPropertiesTypeDef](#generatedpolicypropertiestypedef)
-  - [GeneratedPolicyResultTypeDef](#generatedpolicyresulttypedef)
-  - [GeneratedPolicyTypeDef](#generatedpolicytypedef)
-  - [GetAccessPreviewRequestRequestTypeDef](#getaccesspreviewrequestrequesttypedef)
-  - [GetAccessPreviewResponseTypeDef](#getaccesspreviewresponsetypedef)
-  - [GetAnalyzedResourceRequestRequestTypeDef](#getanalyzedresourcerequestrequesttypedef)
-  - [GetAnalyzedResourceResponseTypeDef](#getanalyzedresourceresponsetypedef)
-  - [GetAnalyzerRequestRequestTypeDef](#getanalyzerrequestrequesttypedef)
-  - [GetAnalyzerResponseTypeDef](#getanalyzerresponsetypedef)
-  - [GetArchiveRuleRequestRequestTypeDef](#getarchiverulerequestrequesttypedef)
-  - [GetArchiveRuleResponseTypeDef](#getarchiveruleresponsetypedef)
-  - [GetFindingRequestRequestTypeDef](#getfindingrequestrequesttypedef)
-  - [GetFindingResponseTypeDef](#getfindingresponsetypedef)
-  - [GetGeneratedPolicyRequestRequestTypeDef](#getgeneratedpolicyrequestrequesttypedef)
-  - [GetGeneratedPolicyResponseTypeDef](#getgeneratedpolicyresponsetypedef)
-  - [IamRoleConfigurationTypeDef](#iamroleconfigurationtypedef)
-  - [InlineArchiveRuleTypeDef](#inlinearchiveruletypedef)
-  - [JobDetailsTypeDef](#jobdetailstypedef)
-  - [JobErrorTypeDef](#joberrortypedef)
-  - [KmsGrantConfigurationTypeDef](#kmsgrantconfigurationtypedef)
-  - [KmsGrantConstraintsTypeDef](#kmsgrantconstraintstypedef)
-  - [KmsKeyConfigurationTypeDef](#kmskeyconfigurationtypedef)
-  - [ListAccessPreviewFindingsRequestRequestTypeDef](#listaccesspreviewfindingsrequestrequesttypedef)
-  - [ListAccessPreviewFindingsResponseTypeDef](#listaccesspreviewfindingsresponsetypedef)
-  - [ListAccessPreviewsRequestRequestTypeDef](#listaccesspreviewsrequestrequesttypedef)
-  - [ListAccessPreviewsResponseTypeDef](#listaccesspreviewsresponsetypedef)
-  - [ListAnalyzedResourcesRequestRequestTypeDef](#listanalyzedresourcesrequestrequesttypedef)
-  - [ListAnalyzedResourcesResponseTypeDef](#listanalyzedresourcesresponsetypedef)
-  - [ListAnalyzersRequestRequestTypeDef](#listanalyzersrequestrequesttypedef)
-  - [ListAnalyzersResponseTypeDef](#listanalyzersresponsetypedef)
-  - [ListArchiveRulesRequestRequestTypeDef](#listarchiverulesrequestrequesttypedef)
-  - [ListArchiveRulesResponseTypeDef](#listarchiverulesresponsetypedef)
-  - [ListFindingsRequestRequestTypeDef](#listfindingsrequestrequesttypedef)
-  - [ListFindingsResponseTypeDef](#listfindingsresponsetypedef)
-  - [ListPolicyGenerationsRequestRequestTypeDef](#listpolicygenerationsrequestrequesttypedef)
-  - [ListPolicyGenerationsResponseTypeDef](#listpolicygenerationsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [LocationTypeDef](#locationtypedef)
-  - [NetworkOriginConfigurationTypeDef](#networkoriginconfigurationtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PathElementTypeDef](#pathelementtypedef)
-  - [PolicyGenerationDetailsTypeDef](#policygenerationdetailstypedef)
-  - [PolicyGenerationTypeDef](#policygenerationtypedef)
-  - [PositionTypeDef](#positiontypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3AccessPointConfigurationTypeDef](#s3accesspointconfigurationtypedef)
-  - [S3BucketAclGrantConfigurationTypeDef](#s3bucketaclgrantconfigurationtypedef)
-  - [S3BucketConfigurationTypeDef](#s3bucketconfigurationtypedef)
-  - [S3PublicAccessBlockConfigurationTypeDef](#s3publicaccessblockconfigurationtypedef)
-  - [SecretsManagerSecretConfigurationTypeDef](#secretsmanagersecretconfigurationtypedef)
-  - [SortCriteriaTypeDef](#sortcriteriatypedef)
-  - [SpanTypeDef](#spantypedef)
-  - [SqsQueueConfigurationTypeDef](#sqsqueueconfigurationtypedef)
-  - [StartPolicyGenerationRequestRequestTypeDef](#startpolicygenerationrequestrequesttypedef)
-  - [StartPolicyGenerationResponseTypeDef](#startpolicygenerationresponsetypedef)
-  - [StartResourceScanRequestRequestTypeDef](#startresourcescanrequestrequesttypedef)
-  - [StatusReasonTypeDef](#statusreasontypedef)
-  - [SubstringTypeDef](#substringtypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TrailPropertiesTypeDef](#trailpropertiestypedef)
-  - [TrailTypeDef](#trailtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateArchiveRuleRequestRequestTypeDef](#updatearchiverulerequestrequesttypedef)
-  - [UpdateFindingsRequestRequestTypeDef](#updatefindingsrequestrequesttypedef)
-  - [ValidatePolicyFindingTypeDef](#validatepolicyfindingtypedef)
-  - [ValidatePolicyRequestRequestTypeDef](#validatepolicyrequestrequesttypedef)
-  - [ValidatePolicyResponseTypeDef](#validatepolicyresponsetypedef)
-  - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
-
-<a id="accesspreviewfindingtypedef"></a>
+    Auto-generated documentation for [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
+    type annotations stubs module [mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 ## AccessPreviewFindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AccessPreviewFindingTypeDef
+
+def get_value() -> AccessPreviewFindingTypeDef:
+    return {
+        "changeType": ...,
+        "createdAt": ...,
+        "id": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPreviewFindingTypeDef(TypedDict):
+    changeType: FindingChangeTypeType,  # (1)
+    createdAt: datetime,
+    id: str,
+    resourceOwnerAccount: str,
+    resourceType: ResourceTypeType,  # (3)
+    status: FindingStatusType,  # (2)
+    action: NotRequired[List[str]],
+    condition: NotRequired[Dict[str, str]],
+    error: NotRequired[str],
+    existingFindingId: NotRequired[str],
+    existingFindingStatus: NotRequired[FindingStatusType],  # (2)
+    isPublic: NotRequired[bool],
+    principal: NotRequired[Dict[str, str]],
+    resource: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (4)
+```
 
-- `changeType`: [FindingChangeTypeType](./literals.md#findingchangetypetype)
-- `createdAt`: `datetime`
-- `id`: `str`
-- `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `status`: [FindingStatusType](./literals.md#findingstatustype)
-
-Optional fields:
-
-- `action`: `List`\[`str`\]
-- `condition`: `Dict`\[`str`, `str`\]
-- `error`: `str`
-- `existingFindingId`: `str`
-- `existingFindingStatus`: [FindingStatusType](./literals.md#findingstatustype)
-- `isPublic`: `bool`
-- `principal`: `Dict`\[`str`, `str`\]
-- `resource`: `str`
-- `sources`:
-  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
-
-<a id="accesspreviewstatusreasontypedef"></a>
-
+1. See [:material-code-brackets: FindingChangeTypeType](./literals.md#findingchangetypetype) 
+2. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
+3. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+4. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
+5. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
 ## AccessPreviewStatusReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AccessPreviewStatusReasonTypeDef
+
+def get_value() -> AccessPreviewStatusReasonTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPreviewStatusReasonTypeDef(TypedDict):
+    code: AccessPreviewStatusReasonCodeType,  # (1)
+```
 
-- `code`:
-  [AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype)
-
-<a id="accesspreviewsummarytypedef"></a>
-
+1. See [:material-code-brackets: AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype) 
 ## AccessPreviewSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AccessPreviewSummaryTypeDef
+
+def get_value() -> AccessPreviewSummaryTypeDef:
+    return {
+        "analyzerArn": ...,
+        "createdAt": ...,
+        "id": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPreviewSummaryTypeDef(TypedDict):
+    analyzerArn: str,
+    createdAt: datetime,
+    id: str,
+    status: AccessPreviewStatusType,  # (1)
+    statusReason: NotRequired[AccessPreviewStatusReasonTypeDef],  # (2)
+```
 
-- `analyzerArn`: `str`
-- `createdAt`: `datetime`
-- `id`: `str`
-- `status`: [AccessPreviewStatusType](./literals.md#accesspreviewstatustype)
-
-Optional fields:
-
-- `statusReason`:
-  [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
-
-<a id="accesspreviewtypedef"></a>
-
+1. See [:material-code-brackets: AccessPreviewStatusType](./literals.md#accesspreviewstatustype) 
+2. See [:material-code-braces: AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef) 
 ## AccessPreviewTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AccessPreviewTypeDef
+
+def get_value() -> AccessPreviewTypeDef:
+    return {
+        "analyzerArn": ...,
+        "configurations": ...,
+        "createdAt": ...,
+        "id": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AccessPreviewTypeDef(TypedDict):
+    analyzerArn: str,
+    configurations: Dict[str, ConfigurationTypeDef],  # (1)
+    createdAt: datetime,
+    id: str,
+    status: AccessPreviewStatusType,  # (2)
+    statusReason: NotRequired[AccessPreviewStatusReasonTypeDef],  # (3)
+```
 
-- `analyzerArn`: `str`
-- `configurations`: `Dict`\[`str`,
-  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `createdAt`: `datetime`
-- `id`: `str`
-- `status`: [AccessPreviewStatusType](./literals.md#accesspreviewstatustype)
-
-Optional fields:
-
-- `statusReason`:
-  [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
-
-<a id="aclgranteetypedef"></a>
-
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+2. See [:material-code-brackets: AccessPreviewStatusType](./literals.md#accesspreviewstatustype) 
+3. See [:material-code-braces: AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef) 
 ## AclGranteeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AclGranteeTypeDef
+
+def get_value() -> AclGranteeTypeDef:
+    return {
+        "id": ...,
+    }
 ```
 
-Optional fields:
-
-- `id`: `str`
-- `uri`: `str`
-
-<a id="analyzedresourcesummarytypedef"></a>
+```python title="Definition"
+class AclGranteeTypeDef(TypedDict):
+    id: NotRequired[str],
+    uri: NotRequired[str],
+```
 
 ## AnalyzedResourceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AnalyzedResourceSummaryTypeDef
+
+def get_value() -> AnalyzedResourceSummaryTypeDef:
+    return {
+        "resourceArn": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyzedResourceSummaryTypeDef(TypedDict):
+    resourceArn: str,
+    resourceOwnerAccount: str,
+    resourceType: ResourceTypeType,  # (1)
+```
 
-- `resourceArn`: `str`
-- `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-<a id="analyzedresourcetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## AnalyzedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AnalyzedResourceTypeDef
+
+def get_value() -> AnalyzedResourceTypeDef:
+    return {
+        "analyzedAt": ...,
+        "createdAt": ...,
+        "isPublic": ...,
+        "resourceArn": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+        "updatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyzedResourceTypeDef(TypedDict):
+    analyzedAt: datetime,
+    createdAt: datetime,
+    isPublic: bool,
+    resourceArn: str,
+    resourceOwnerAccount: str,
+    resourceType: ResourceTypeType,  # (1)
+    updatedAt: datetime,
+    actions: NotRequired[List[str]],
+    error: NotRequired[str],
+    sharedVia: NotRequired[List[str]],
+    status: NotRequired[FindingStatusType],  # (2)
+```
 
-- `analyzedAt`: `datetime`
-- `createdAt`: `datetime`
-- `isPublic`: `bool`
-- `resourceArn`: `str`
-- `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `updatedAt`: `datetime`
-
-Optional fields:
-
-- `actions`: `List`\[`str`\]
-- `error`: `str`
-- `sharedVia`: `List`\[`str`\]
-- `status`: [FindingStatusType](./literals.md#findingstatustype)
-
-<a id="analyzersummarytypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
 ## AnalyzerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import AnalyzerSummaryTypeDef
+
+def get_value() -> AnalyzerSummaryTypeDef:
+    return {
+        "arn": ...,
+        "createdAt": ...,
+        "name": ...,
+        "status": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AnalyzerSummaryTypeDef(TypedDict):
+    arn: str,
+    createdAt: datetime,
+    name: str,
+    status: AnalyzerStatusType,  # (1)
+    type: TypeType,  # (3)
+    lastResourceAnalyzed: NotRequired[str],
+    lastResourceAnalyzedAt: NotRequired[datetime],
+    statusReason: NotRequired[StatusReasonTypeDef],  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `arn`: `str`
-- `createdAt`: `datetime`
-- `name`: `str`
-- `status`: [AnalyzerStatusType](./literals.md#analyzerstatustype)
-- `type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `lastResourceAnalyzed`: `str`
-- `lastResourceAnalyzedAt`: `datetime`
-- `statusReason`: [StatusReasonTypeDef](./type_defs.md#statusreasontypedef)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="applyarchiverulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AnalyzerStatusType](./literals.md#analyzerstatustype) 
+2. See [:material-code-braces: StatusReasonTypeDef](./type_defs.md#statusreasontypedef) 
+3. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## ApplyArchiveRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ApplyArchiveRuleRequestRequestTypeDef
+
+def get_value() -> ApplyArchiveRuleRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerArn`: `str`
-- `ruleName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="archiverulesummarytypedef"></a>
+```python title="Definition"
+class ApplyArchiveRuleRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    ruleName: str,
+    clientToken: NotRequired[str],
+```
 
 ## ArchiveRuleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ArchiveRuleSummaryTypeDef
+
+def get_value() -> ArchiveRuleSummaryTypeDef:
+    return {
+        "createdAt": ...,
+        "filter": ...,
+        "ruleName": ...,
+        "updatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ArchiveRuleSummaryTypeDef(TypedDict):
+    createdAt: datetime,
+    filter: Dict[str, CriterionTypeDef],  # (1)
+    ruleName: str,
+    updatedAt: datetime,
+```
 
-- `createdAt`: `datetime`
-- `filter`: `Dict`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `ruleName`: `str`
-- `updatedAt`: `datetime`
-
-<a id="cancelpolicygenerationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
 ## CancelPolicyGenerationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CancelPolicyGenerationRequestRequestTypeDef
+
+def get_value() -> CancelPolicyGenerationRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-
-<a id="cloudtraildetailstypedef"></a>
+```python title="Definition"
+class CancelPolicyGenerationRequestRequestTypeDef(TypedDict):
+    jobId: str,
+```
 
 ## CloudTrailDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CloudTrailDetailsTypeDef
+
+def get_value() -> CloudTrailDetailsTypeDef:
+    return {
+        "accessRole": ...,
+        "startTime": ...,
+        "trails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudTrailDetailsTypeDef(TypedDict):
+    accessRole: str,
+    startTime: Union[datetime, str],
+    trails: Sequence[TrailTypeDef],  # (1)
+    endTime: NotRequired[Union[datetime, str]],
+```
 
-- `accessRole`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `trails`: `Sequence`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
-
-Optional fields:
-
-- `endTime`: `Union`\[`datetime`, `str`\]
-
-<a id="cloudtrailpropertiestypedef"></a>
-
+1. See [:material-code-braces: TrailTypeDef](./type_defs.md#trailtypedef) 
 ## CloudTrailPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CloudTrailPropertiesTypeDef
+
+def get_value() -> CloudTrailPropertiesTypeDef:
+    return {
+        "endTime": ...,
+        "startTime": ...,
+        "trailProperties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CloudTrailPropertiesTypeDef(TypedDict):
+    endTime: datetime,
+    startTime: datetime,
+    trailProperties: List[TrailPropertiesTypeDef],  # (1)
+```
 
-- `endTime`: `datetime`
-- `startTime`: `datetime`
-- `trailProperties`:
-  `List`\[[TrailPropertiesTypeDef](./type_defs.md#trailpropertiestypedef)\]
-
-<a id="configurationtypedef"></a>
-
+1. See [:material-code-braces: TrailPropertiesTypeDef](./type_defs.md#trailpropertiestypedef) 
 ## ConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ConfigurationTypeDef
+
+def get_value() -> ConfigurationTypeDef:
+    return {
+        "iamRole": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConfigurationTypeDef(TypedDict):
+    iamRole: NotRequired[IamRoleConfigurationTypeDef],  # (1)
+    kmsKey: NotRequired[KmsKeyConfigurationTypeDef],  # (2)
+    s3Bucket: NotRequired[S3BucketConfigurationTypeDef],  # (3)
+    secretsManagerSecret: NotRequired[SecretsManagerSecretConfigurationTypeDef],  # (4)
+    sqsQueue: NotRequired[SqsQueueConfigurationTypeDef],  # (5)
+```
 
-- `iamRole`:
-  [IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef)
-- `kmsKey`:
-  [KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef)
-- `s3Bucket`:
-  [S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef)
-- `secretsManagerSecret`:
-  [SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef)
-- `sqsQueue`:
-  [SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef)
-
-<a id="createaccesspreviewrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IamRoleConfigurationTypeDef](./type_defs.md#iamroleconfigurationtypedef) 
+2. See [:material-code-braces: KmsKeyConfigurationTypeDef](./type_defs.md#kmskeyconfigurationtypedef) 
+3. See [:material-code-braces: S3BucketConfigurationTypeDef](./type_defs.md#s3bucketconfigurationtypedef) 
+4. See [:material-code-braces: SecretsManagerSecretConfigurationTypeDef](./type_defs.md#secretsmanagersecretconfigurationtypedef) 
+5. See [:material-code-braces: SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef) 
 ## CreateAccessPreviewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewRequestRequestTypeDef
+
+def get_value() -> CreateAccessPreviewRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "configurations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccessPreviewRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    configurations: Mapping[str, ConfigurationTypeDef],  # (1)
+    clientToken: NotRequired[str],
+```
 
-- `analyzerArn`: `str`
-- `configurations`: `Mapping`\[`str`,
-  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="createaccesspreviewresponsetypedef"></a>
-
+1. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 ## CreateAccessPreviewResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CreateAccessPreviewResponseTypeDef
+
+def get_value() -> CreateAccessPreviewResponseTypeDef:
+    return {
+        "id": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAccessPreviewResponseTypeDef(TypedDict):
+    id: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `id`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createanalyzerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateAnalyzerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CreateAnalyzerRequestRequestTypeDef
+
+def get_value() -> CreateAnalyzerRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnalyzerRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    type: TypeType,  # (1)
+    archiveRules: NotRequired[Sequence[InlineArchiveRuleTypeDef]],  # (2)
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `analyzerName`: `str`
-- `type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `archiveRules`:
-  `Sequence`\[[InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef)\]
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createanalyzerresponsetypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: InlineArchiveRuleTypeDef](./type_defs.md#inlinearchiveruletypedef) 
 ## CreateAnalyzerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CreateAnalyzerResponseTypeDef
+
+def get_value() -> CreateAnalyzerResponseTypeDef:
+    return {
+        "arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAnalyzerResponseTypeDef(TypedDict):
+    arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createarchiverulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateArchiveRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CreateArchiveRuleRequestRequestTypeDef
+
+def get_value() -> CreateArchiveRuleRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+        "filter": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateArchiveRuleRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
+    ruleName: str,
+    clientToken: NotRequired[str],
+```
 
-- `analyzerName`: `str`
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `ruleName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="criteriontypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
 ## CriterionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import CriterionTypeDef
+
+def get_value() -> CriterionTypeDef:
+    return {
+        "contains": ...,
+    }
 ```
 
-Optional fields:
-
-- `contains`: `Sequence`\[`str`\]
-- `eq`: `Sequence`\[`str`\]
-- `exists`: `bool`
-- `neq`: `Sequence`\[`str`\]
-
-<a id="deleteanalyzerrequestrequesttypedef"></a>
+```python title="Definition"
+class CriterionTypeDef(TypedDict):
+    contains: NotRequired[Sequence[str]],
+    eq: NotRequired[Sequence[str]],
+    exists: NotRequired[bool],
+    neq: NotRequired[Sequence[str]],
+```
 
 ## DeleteAnalyzerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import DeleteAnalyzerRequestRequestTypeDef
+
+def get_value() -> DeleteAnalyzerRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deletearchiverulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteAnalyzerRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteArchiveRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import DeleteArchiveRuleRequestRequestTypeDef
+
+def get_value() -> DeleteArchiveRuleRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerName`: `str`
-- `ruleName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="findingsourcedetailtypedef"></a>
+```python title="Definition"
+class DeleteArchiveRuleRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    ruleName: str,
+    clientToken: NotRequired[str],
+```
 
 ## FindingSourceDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import FindingSourceDetailTypeDef
+
+def get_value() -> FindingSourceDetailTypeDef:
+    return {
+        "accessPointArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `accessPointArn`: `str`
-
-<a id="findingsourcetypedef"></a>
+```python title="Definition"
+class FindingSourceDetailTypeDef(TypedDict):
+    accessPointArn: NotRequired[str],
+```
 
 ## FindingSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import FindingSourceTypeDef
+
+def get_value() -> FindingSourceTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FindingSourceTypeDef(TypedDict):
+    type: FindingSourceTypeType,  # (2)
+    detail: NotRequired[FindingSourceDetailTypeDef],  # (1)
+```
 
-- `type`: [FindingSourceTypeType](./literals.md#findingsourcetypetype)
-
-Optional fields:
-
-- `detail`:
-  [FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef)
-
-<a id="findingsummarytypedef"></a>
-
+1. See [:material-code-braces: FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef) 
+2. See [:material-code-brackets: FindingSourceTypeType](./literals.md#findingsourcetypetype) 
 ## FindingSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import FindingSummaryTypeDef
+
+def get_value() -> FindingSummaryTypeDef:
+    return {
+        "analyzedAt": ...,
+        "condition": ...,
+        "createdAt": ...,
+        "id": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+        "status": ...,
+        "updatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FindingSummaryTypeDef(TypedDict):
+    analyzedAt: datetime,
+    condition: Dict[str, str],
+    createdAt: datetime,
+    id: str,
+    resourceOwnerAccount: str,
+    resourceType: ResourceTypeType,  # (1)
+    status: FindingStatusType,  # (3)
+    updatedAt: datetime,
+    action: NotRequired[List[str]],
+    error: NotRequired[str],
+    isPublic: NotRequired[bool],
+    principal: NotRequired[Dict[str, str]],
+    resource: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (2)
+```
 
-- `analyzedAt`: `datetime`
-- `condition`: `Dict`\[`str`, `str`\]
-- `createdAt`: `datetime`
-- `id`: `str`
-- `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `status`: [FindingStatusType](./literals.md#findingstatustype)
-- `updatedAt`: `datetime`
-
-Optional fields:
-
-- `action`: `List`\[`str`\]
-- `error`: `str`
-- `isPublic`: `bool`
-- `principal`: `Dict`\[`str`, `str`\]
-- `resource`: `str`
-- `sources`:
-  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
-
-<a id="findingtypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
+3. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
 ## FindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import FindingTypeDef
+
+def get_value() -> FindingTypeDef:
+    return {
+        "analyzedAt": ...,
+        "condition": ...,
+        "createdAt": ...,
+        "id": ...,
+        "resourceOwnerAccount": ...,
+        "resourceType": ...,
+        "status": ...,
+        "updatedAt": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FindingTypeDef(TypedDict):
+    analyzedAt: datetime,
+    condition: Dict[str, str],
+    createdAt: datetime,
+    id: str,
+    resourceOwnerAccount: str,
+    resourceType: ResourceTypeType,  # (1)
+    status: FindingStatusType,  # (3)
+    updatedAt: datetime,
+    action: NotRequired[List[str]],
+    error: NotRequired[str],
+    isPublic: NotRequired[bool],
+    principal: NotRequired[Dict[str, str]],
+    resource: NotRequired[str],
+    sources: NotRequired[List[FindingSourceTypeDef]],  # (2)
+```
 
-- `analyzedAt`: `datetime`
-- `condition`: `Dict`\[`str`, `str`\]
-- `createdAt`: `datetime`
-- `id`: `str`
-- `resourceOwnerAccount`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `status`: [FindingStatusType](./literals.md#findingstatustype)
-- `updatedAt`: `datetime`
-
-Optional fields:
-
-- `action`: `List`\[`str`\]
-- `error`: `str`
-- `isPublic`: `bool`
-- `principal`: `Dict`\[`str`, `str`\]
-- `resource`: `str`
-- `sources`:
-  `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
-
-<a id="generatedpolicypropertiestypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: FindingSourceTypeDef](./type_defs.md#findingsourcetypedef) 
+3. See [:material-code-brackets: FindingStatusType](./literals.md#findingstatustype) 
 ## GeneratedPolicyPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GeneratedPolicyPropertiesTypeDef
+
+def get_value() -> GeneratedPolicyPropertiesTypeDef:
+    return {
+        "principalArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeneratedPolicyPropertiesTypeDef(TypedDict):
+    principalArn: str,
+    cloudTrailProperties: NotRequired[CloudTrailPropertiesTypeDef],  # (1)
+    isComplete: NotRequired[bool],
+```
 
-- `principalArn`: `str`
-
-Optional fields:
-
-- `cloudTrailProperties`:
-  [CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef)
-- `isComplete`: `bool`
-
-<a id="generatedpolicyresulttypedef"></a>
-
+1. See [:material-code-braces: CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef) 
 ## GeneratedPolicyResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GeneratedPolicyResultTypeDef
+
+def get_value() -> GeneratedPolicyResultTypeDef:
+    return {
+        "properties": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GeneratedPolicyResultTypeDef(TypedDict):
+    properties: GeneratedPolicyPropertiesTypeDef,  # (2)
+    generatedPolicies: NotRequired[List[GeneratedPolicyTypeDef]],  # (1)
+```
 
-- `properties`:
-  [GeneratedPolicyPropertiesTypeDef](./type_defs.md#generatedpolicypropertiestypedef)
-
-Optional fields:
-
-- `generatedPolicies`:
-  `List`\[[GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef)\]
-
-<a id="generatedpolicytypedef"></a>
-
+1. See [:material-code-braces: GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef) 
+2. See [:material-code-braces: GeneratedPolicyPropertiesTypeDef](./type_defs.md#generatedpolicypropertiestypedef) 
 ## GeneratedPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GeneratedPolicyTypeDef
+
+def get_value() -> GeneratedPolicyTypeDef:
+    return {
+        "policy": ...,
+    }
 ```
 
-Required fields:
-
-- `policy`: `str`
-
-<a id="getaccesspreviewrequestrequesttypedef"></a>
+```python title="Definition"
+class GeneratedPolicyTypeDef(TypedDict):
+    policy: str,
+```
 
 ## GetAccessPreviewRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewRequestRequestTypeDef
+
+def get_value() -> GetAccessPreviewRequestRequestTypeDef:
+    return {
+        "accessPreviewId": ...,
+        "analyzerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `accessPreviewId`: `str`
-- `analyzerArn`: `str`
-
-<a id="getaccesspreviewresponsetypedef"></a>
+```python title="Definition"
+class GetAccessPreviewRequestRequestTypeDef(TypedDict):
+    accessPreviewId: str,
+    analyzerArn: str,
+```
 
 ## GetAccessPreviewResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAccessPreviewResponseTypeDef
+
+def get_value() -> GetAccessPreviewResponseTypeDef:
+    return {
+        "accessPreview": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAccessPreviewResponseTypeDef(TypedDict):
+    accessPreview: AccessPreviewTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accessPreview`: [AccessPreviewTypeDef](./type_defs.md#accesspreviewtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getanalyzedresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AccessPreviewTypeDef](./type_defs.md#accesspreviewtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnalyzedResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceRequestRequestTypeDef
+
+def get_value() -> GetAnalyzedResourceRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerArn`: `str`
-- `resourceArn`: `str`
-
-<a id="getanalyzedresourceresponsetypedef"></a>
+```python title="Definition"
+class GetAnalyzedResourceRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    resourceArn: str,
+```
 
 ## GetAnalyzedResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAnalyzedResourceResponseTypeDef
+
+def get_value() -> GetAnalyzedResourceResponseTypeDef:
+    return {
+        "resource": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnalyzedResourceResponseTypeDef(TypedDict):
+    resource: AnalyzedResourceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `resource`: [AnalyzedResourceTypeDef](./type_defs.md#analyzedresourcetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getanalyzerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalyzedResourceTypeDef](./type_defs.md#analyzedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAnalyzerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerRequestRequestTypeDef
+
+def get_value() -> GetAnalyzerRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerName`: `str`
-
-<a id="getanalyzerresponsetypedef"></a>
+```python title="Definition"
+class GetAnalyzerRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+```
 
 ## GetAnalyzerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerResponseTypeDef
+
+def get_value() -> GetAnalyzerResponseTypeDef:
+    return {
+        "analyzer": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAnalyzerResponseTypeDef(TypedDict):
+    analyzer: AnalyzerSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `analyzer`: [AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getarchiverulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetArchiveRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleRequestRequestTypeDef
+
+def get_value() -> GetArchiveRuleRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerName`: `str`
-- `ruleName`: `str`
-
-<a id="getarchiveruleresponsetypedef"></a>
+```python title="Definition"
+class GetArchiveRuleRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    ruleName: str,
+```
 
 ## GetArchiveRuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetArchiveRuleResponseTypeDef
+
+def get_value() -> GetArchiveRuleResponseTypeDef:
+    return {
+        "archiveRule": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetArchiveRuleResponseTypeDef(TypedDict):
+    archiveRule: ArchiveRuleSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `archiveRule`:
-  [ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfindingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFindingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetFindingRequestRequestTypeDef
+
+def get_value() -> GetFindingRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "id": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerArn`: `str`
-- `id`: `str`
-
-<a id="getfindingresponsetypedef"></a>
+```python title="Definition"
+class GetFindingRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    id: str,
+```
 
 ## GetFindingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetFindingResponseTypeDef
+
+def get_value() -> GetFindingResponseTypeDef:
+    return {
+        "finding": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFindingResponseTypeDef(TypedDict):
+    finding: FindingTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `finding`: [FindingTypeDef](./type_defs.md#findingtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgeneratedpolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FindingTypeDef](./type_defs.md#findingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGeneratedPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyRequestRequestTypeDef
+
+def get_value() -> GetGeneratedPolicyRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `jobId`: `str`
-
-Optional fields:
-
-- `includeResourcePlaceholders`: `bool`
-- `includeServiceLevelTemplate`: `bool`
-
-<a id="getgeneratedpolicyresponsetypedef"></a>
+```python title="Definition"
+class GetGeneratedPolicyRequestRequestTypeDef(TypedDict):
+    jobId: str,
+    includeResourcePlaceholders: NotRequired[bool],
+    includeServiceLevelTemplate: NotRequired[bool],
+```
 
 ## GetGeneratedPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import GetGeneratedPolicyResponseTypeDef
+
+def get_value() -> GetGeneratedPolicyResponseTypeDef:
+    return {
+        "generatedPolicyResult": ...,
+        "jobDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGeneratedPolicyResponseTypeDef(TypedDict):
+    generatedPolicyResult: GeneratedPolicyResultTypeDef,  # (1)
+    jobDetails: JobDetailsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `generatedPolicyResult`:
-  [GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef)
-- `jobDetails`: [JobDetailsTypeDef](./type_defs.md#jobdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="iamroleconfigurationtypedef"></a>
-
+1. See [:material-code-braces: GeneratedPolicyResultTypeDef](./type_defs.md#generatedpolicyresulttypedef) 
+2. See [:material-code-braces: JobDetailsTypeDef](./type_defs.md#jobdetailstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IamRoleConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import IamRoleConfigurationTypeDef
+
+def get_value() -> IamRoleConfigurationTypeDef:
+    return {
+        "trustPolicy": ...,
+    }
 ```
 
-Optional fields:
-
-- `trustPolicy`: `str`
-
-<a id="inlinearchiveruletypedef"></a>
+```python title="Definition"
+class IamRoleConfigurationTypeDef(TypedDict):
+    trustPolicy: NotRequired[str],
+```
 
 ## InlineArchiveRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import InlineArchiveRuleTypeDef
+
+def get_value() -> InlineArchiveRuleTypeDef:
+    return {
+        "filter": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InlineArchiveRuleTypeDef(TypedDict):
+    filter: Mapping[str, CriterionTypeDef],  # (1)
+    ruleName: str,
+```
 
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `ruleName`: `str`
-
-<a id="jobdetailstypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
 ## JobDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import JobDetailsTypeDef
+
+def get_value() -> JobDetailsTypeDef:
+    return {
+        "jobId": ...,
+        "startedOn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobDetailsTypeDef(TypedDict):
+    jobId: str,
+    startedOn: datetime,
+    status: JobStatusType,  # (2)
+    completedOn: NotRequired[datetime],
+    jobError: NotRequired[JobErrorTypeDef],  # (1)
+```
 
-- `jobId`: `str`
-- `startedOn`: `datetime`
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-
-Optional fields:
-
-- `completedOn`: `datetime`
-- `jobError`: [JobErrorTypeDef](./type_defs.md#joberrortypedef)
-
-<a id="joberrortypedef"></a>
-
+1. See [:material-code-braces: JobErrorTypeDef](./type_defs.md#joberrortypedef) 
+2. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## JobErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import JobErrorTypeDef
+
+def get_value() -> JobErrorTypeDef:
+    return {
+        "code": ...,
+        "message": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class JobErrorTypeDef(TypedDict):
+    code: JobErrorCodeType,  # (1)
+    message: str,
+```
 
-- `code`: [JobErrorCodeType](./literals.md#joberrorcodetype)
-- `message`: `str`
-
-<a id="kmsgrantconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: JobErrorCodeType](./literals.md#joberrorcodetype) 
 ## KmsGrantConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import KmsGrantConfigurationTypeDef
+
+def get_value() -> KmsGrantConfigurationTypeDef:
+    return {
+        "granteePrincipal": ...,
+        "issuingAccount": ...,
+        "operations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KmsGrantConfigurationTypeDef(TypedDict):
+    granteePrincipal: str,
+    issuingAccount: str,
+    operations: Sequence[KmsGrantOperationType],  # (2)
+    constraints: NotRequired[KmsGrantConstraintsTypeDef],  # (1)
+    retiringPrincipal: NotRequired[str],
+```
 
-- `granteePrincipal`: `str`
-- `issuingAccount`: `str`
-- `operations`:
-  `Sequence`\[[KmsGrantOperationType](./literals.md#kmsgrantoperationtype)\]
-
-Optional fields:
-
-- `constraints`:
-  [KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef)
-- `retiringPrincipal`: `str`
-
-<a id="kmsgrantconstraintstypedef"></a>
-
+1. See [:material-code-braces: KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef) 
+2. See [:material-code-brackets: KmsGrantOperationType](./literals.md#kmsgrantoperationtype) 
 ## KmsGrantConstraintsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import KmsGrantConstraintsTypeDef
+
+def get_value() -> KmsGrantConstraintsTypeDef:
+    return {
+        "encryptionContextEquals": ...,
+    }
 ```
 
-Optional fields:
-
-- `encryptionContextEquals`: `Mapping`\[`str`, `str`\]
-- `encryptionContextSubset`: `Mapping`\[`str`, `str`\]
-
-<a id="kmskeyconfigurationtypedef"></a>
+```python title="Definition"
+class KmsGrantConstraintsTypeDef(TypedDict):
+    encryptionContextEquals: NotRequired[Mapping[str, str]],
+    encryptionContextSubset: NotRequired[Mapping[str, str]],
+```
 
 ## KmsKeyConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import KmsKeyConfigurationTypeDef
+
+def get_value() -> KmsKeyConfigurationTypeDef:
+    return {
+        "grants": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KmsKeyConfigurationTypeDef(TypedDict):
+    grants: NotRequired[Sequence[KmsGrantConfigurationTypeDef]],  # (1)
+    keyPolicies: NotRequired[Mapping[str, str]],
+```
 
-- `grants`:
-  `Sequence`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
-- `keyPolicies`: `Mapping`\[`str`, `str`\]
+1. See [:material-code-braces: KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef) 
+## ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef
 
-<a id="listaccesspreviewfindingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef
 
+def get_value() -> ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef:
+    return {
+        "accessPreviewId": ...,
+        "analyzerArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessPreviewFindingsRequestListAccessPreviewFindingsPaginateTypeDef(TypedDict):
+    accessPreviewId: str,
+    analyzerArn: str,
+    filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccessPreviewFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsRequestRequestTypeDef
+
+def get_value() -> ListAccessPreviewFindingsRequestRequestTypeDef:
+    return {
+        "accessPreviewId": ...,
+        "analyzerArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccessPreviewFindingsRequestRequestTypeDef(TypedDict):
+    accessPreviewId: str,
+    analyzerArn: str,
+    filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `accessPreviewId`: `str`
-- `analyzerArn`: `str`
-
-Optional fields:
-
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listaccesspreviewfindingsresponsetypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
 ## ListAccessPreviewFindingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewFindingsResponseTypeDef
+
+def get_value() -> ListAccessPreviewFindingsResponseTypeDef:
+    return {
+        "findings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccessPreviewFindingsResponseTypeDef(TypedDict):
+    findings: List[AccessPreviewFindingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findings`:
-  `List`\[[AccessPreviewFindingTypeDef](./type_defs.md#accesspreviewfindingtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessPreviewFindingTypeDef](./type_defs.md#accesspreviewfindingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef
 
-<a id="listaccesspreviewsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef
 
+def get_value() -> ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAccessPreviewsRequestListAccessPreviewsPaginateTypeDef(TypedDict):
+    analyzerArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAccessPreviewsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsRequestRequestTypeDef
+
+def get_value() -> ListAccessPreviewsRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listaccesspreviewsresponsetypedef"></a>
+```python title="Definition"
+class ListAccessPreviewsRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAccessPreviewsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAccessPreviewsResponseTypeDef
+
+def get_value() -> ListAccessPreviewsResponseTypeDef:
+    return {
+        "accessPreviews": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAccessPreviewsResponseTypeDef(TypedDict):
+    accessPreviews: List[AccessPreviewSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `accessPreviews`:
-  `List`\[[AccessPreviewSummaryTypeDef](./type_defs.md#accesspreviewsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AccessPreviewSummaryTypeDef](./type_defs.md#accesspreviewsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef
 
-<a id="listanalyzedresourcesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef
 
+def get_value() -> ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnalyzedResourcesRequestListAnalyzedResourcesPaginateTypeDef(TypedDict):
+    analyzerArn: str,
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAnalyzedResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesRequestRequestTypeDef
+
+def get_value() -> ListAnalyzedResourcesRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnalyzedResourcesRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    resourceType: NotRequired[ResourceTypeType],  # (1)
+```
 
-- `analyzerArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-
-<a id="listanalyzedresourcesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
 ## ListAnalyzedResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAnalyzedResourcesResponseTypeDef
+
+def get_value() -> ListAnalyzedResourcesResponseTypeDef:
+    return {
+        "analyzedResources": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnalyzedResourcesResponseTypeDef(TypedDict):
+    analyzedResources: List[AnalyzedResourceSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `analyzedResources`:
-  `List`\[[AnalyzedResourceSummaryTypeDef](./type_defs.md#analyzedresourcesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AnalyzedResourceSummaryTypeDef](./type_defs.md#analyzedresourcesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListAnalyzersRequestListAnalyzersPaginateTypeDef
 
-<a id="listanalyzersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersRequestListAnalyzersPaginateTypeDef
 
+def get_value() -> ListAnalyzersRequestListAnalyzersPaginateTypeDef:
+    return {
+        "type": ...,
+    }
+```
+
+```python title="Definition"
+class ListAnalyzersRequestListAnalyzersPaginateTypeDef(TypedDict):
+    type: NotRequired[TypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAnalyzersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersRequestRequestTypeDef
+
+def get_value() -> ListAnalyzersRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAnalyzersRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    type: NotRequired[TypeType],  # (1)
+```
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `type`: [TypeType](./literals.md#typetype)
-
-<a id="listanalyzersresponsetypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## ListAnalyzersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListAnalyzersResponseTypeDef
+
+def get_value() -> ListAnalyzersResponseTypeDef:
+    return {
+        "analyzers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAnalyzersResponseTypeDef(TypedDict):
+    analyzers: List[AnalyzerSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `analyzers`:
-  `List`\[[AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AnalyzerSummaryTypeDef](./type_defs.md#analyzersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListArchiveRulesRequestListArchiveRulesPaginateTypeDef
 
-<a id="listarchiverulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesRequestListArchiveRulesPaginateTypeDef
 
+def get_value() -> ListArchiveRulesRequestListArchiveRulesPaginateTypeDef:
+    return {
+        "analyzerName": ...,
+    }
+```
+
+```python title="Definition"
+class ListArchiveRulesRequestListArchiveRulesPaginateTypeDef(TypedDict):
+    analyzerName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListArchiveRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesRequestRequestTypeDef
+
+def get_value() -> ListArchiveRulesRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerName`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listarchiverulesresponsetypedef"></a>
+```python title="Definition"
+class ListArchiveRulesRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListArchiveRulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListArchiveRulesResponseTypeDef
+
+def get_value() -> ListArchiveRulesResponseTypeDef:
+    return {
+        "archiveRules": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListArchiveRulesResponseTypeDef(TypedDict):
+    archiveRules: List[ArchiveRuleSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `archiveRules`:
-  `List`\[[ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ArchiveRuleSummaryTypeDef](./type_defs.md#archiverulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFindingsRequestListFindingsPaginateTypeDef
 
-<a id="listfindingsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListFindingsRequestListFindingsPaginateTypeDef
 
+def get_value() -> ListFindingsRequestListFindingsPaginateTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListFindingsRequestListFindingsPaginateTypeDef(TypedDict):
+    analyzerArn: str,
+    filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
+    sort: NotRequired[SortCriteriaTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListFindingsRequestRequestTypeDef
+
+def get_value() -> ListFindingsRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingsRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    filter: NotRequired[Mapping[str, CriterionTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    sort: NotRequired[SortCriteriaTypeDef],  # (2)
+```
 
-- `analyzerArn`: `str`
-
-Optional fields:
-
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-
-<a id="listfindingsresponsetypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
 ## ListFindingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListFindingsResponseTypeDef
+
+def get_value() -> ListFindingsResponseTypeDef:
+    return {
+        "findings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFindingsResponseTypeDef(TypedDict):
+    findings: List[FindingSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findings`:
-  `List`\[[FindingSummaryTypeDef](./type_defs.md#findingsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FindingSummaryTypeDef](./type_defs.md#findingsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef
 
-<a id="listpolicygenerationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef
 
+def get_value() -> ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef:
+    return {
+        "principalArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListPolicyGenerationsRequestListPolicyGenerationsPaginateTypeDef(TypedDict):
+    principalArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPolicyGenerationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsRequestRequestTypeDef
+
+def get_value() -> ListPolicyGenerationsRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `principalArn`: `str`
-
-<a id="listpolicygenerationsresponsetypedef"></a>
+```python title="Definition"
+class ListPolicyGenerationsRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    principalArn: NotRequired[str],
+```
 
 ## ListPolicyGenerationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListPolicyGenerationsResponseTypeDef
+
+def get_value() -> ListPolicyGenerationsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "policyGenerations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPolicyGenerationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    policyGenerations: List[PolicyGenerationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `policyGenerations`:
-  `List`\[[PolicyGenerationTypeDef](./type_defs.md#policygenerationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PolicyGenerationTypeDef](./type_defs.md#policygenerationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="locationtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import LocationTypeDef
+
+def get_value() -> LocationTypeDef:
+    return {
+        "path": ...,
+        "span": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LocationTypeDef(TypedDict):
+    path: List[PathElementTypeDef],  # (1)
+    span: SpanTypeDef,  # (2)
+```
 
-- `path`: `List`\[[PathElementTypeDef](./type_defs.md#pathelementtypedef)\]
-- `span`: [SpanTypeDef](./type_defs.md#spantypedef)
-
-<a id="networkoriginconfigurationtypedef"></a>
-
+1. See [:material-code-braces: PathElementTypeDef](./type_defs.md#pathelementtypedef) 
+2. See [:material-code-braces: SpanTypeDef](./type_defs.md#spantypedef) 
 ## NetworkOriginConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import NetworkOriginConfigurationTypeDef
+
+def get_value() -> NetworkOriginConfigurationTypeDef:
+    return {
+        "internetConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkOriginConfigurationTypeDef(TypedDict):
+    internetConfiguration: NotRequired[Mapping[str, Any]],
+    vpcConfiguration: NotRequired[VpcConfigurationTypeDef],  # (1)
+```
 
-- `internetConfiguration`: `Mapping`\[`str`, `Any`\]
-- `vpcConfiguration`:
-  [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pathelementtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PathElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import PathElementTypeDef
+
+def get_value() -> PathElementTypeDef:
+    return {
+        "index": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PathElementTypeDef(TypedDict):
+    index: NotRequired[int],
+    key: NotRequired[str],
+    substring: NotRequired[SubstringTypeDef],  # (1)
+    value: NotRequired[str],
+```
 
-- `index`: `int`
-- `key`: `str`
-- `substring`: [SubstringTypeDef](./type_defs.md#substringtypedef)
-- `value`: `str`
-
-<a id="policygenerationdetailstypedef"></a>
-
+1. See [:material-code-braces: SubstringTypeDef](./type_defs.md#substringtypedef) 
 ## PolicyGenerationDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import PolicyGenerationDetailsTypeDef
+
+def get_value() -> PolicyGenerationDetailsTypeDef:
+    return {
+        "principalArn": ...,
+    }
 ```
 
-Required fields:
-
-- `principalArn`: `str`
-
-<a id="policygenerationtypedef"></a>
+```python title="Definition"
+class PolicyGenerationDetailsTypeDef(TypedDict):
+    principalArn: str,
+```
 
 ## PolicyGenerationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import PolicyGenerationTypeDef
+
+def get_value() -> PolicyGenerationTypeDef:
+    return {
+        "jobId": ...,
+        "principalArn": ...,
+        "startedOn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PolicyGenerationTypeDef(TypedDict):
+    jobId: str,
+    principalArn: str,
+    startedOn: datetime,
+    status: JobStatusType,  # (1)
+    completedOn: NotRequired[datetime],
+```
 
-- `jobId`: `str`
-- `principalArn`: `str`
-- `startedOn`: `datetime`
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-
-Optional fields:
-
-- `completedOn`: `datetime`
-
-<a id="positiontypedef"></a>
-
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
 ## PositionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import PositionTypeDef
+
+def get_value() -> PositionTypeDef:
+    return {
+        "column": ...,
+        "line": ...,
+        "offset": ...,
+    }
 ```
 
-Required fields:
-
-- `column`: `int`
-- `line`: `int`
-- `offset`: `int`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PositionTypeDef(TypedDict):
+    column: int,
+    line: int,
+    offset: int,
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3accesspointconfigurationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3AccessPointConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import S3AccessPointConfigurationTypeDef
+
+def get_value() -> S3AccessPointConfigurationTypeDef:
+    return {
+        "accessPointPolicy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3AccessPointConfigurationTypeDef(TypedDict):
+    accessPointPolicy: NotRequired[str],
+    networkOrigin: NotRequired[NetworkOriginConfigurationTypeDef],  # (1)
+    publicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (2)
+```
 
-- `accessPointPolicy`: `str`
-- `networkOrigin`:
-  [NetworkOriginConfigurationTypeDef](./type_defs.md#networkoriginconfigurationtypedef)
-- `publicAccessBlock`:
-  [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
-
-<a id="s3bucketaclgrantconfigurationtypedef"></a>
-
+1. See [:material-code-braces: NetworkOriginConfigurationTypeDef](./type_defs.md#networkoriginconfigurationtypedef) 
+2. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
 ## S3BucketAclGrantConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import S3BucketAclGrantConfigurationTypeDef
+
+def get_value() -> S3BucketAclGrantConfigurationTypeDef:
+    return {
+        "grantee": ...,
+        "permission": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3BucketAclGrantConfigurationTypeDef(TypedDict):
+    grantee: AclGranteeTypeDef,  # (1)
+    permission: AclPermissionType,  # (2)
+```
 
-- `grantee`: [AclGranteeTypeDef](./type_defs.md#aclgranteetypedef)
-- `permission`: [AclPermissionType](./literals.md#aclpermissiontype)
-
-<a id="s3bucketconfigurationtypedef"></a>
-
+1. See [:material-code-braces: AclGranteeTypeDef](./type_defs.md#aclgranteetypedef) 
+2. See [:material-code-brackets: AclPermissionType](./literals.md#aclpermissiontype) 
 ## S3BucketConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import S3BucketConfigurationTypeDef
+
+def get_value() -> S3BucketConfigurationTypeDef:
+    return {
+        "accessPoints": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3BucketConfigurationTypeDef(TypedDict):
+    accessPoints: NotRequired[Mapping[str, S3AccessPointConfigurationTypeDef]],  # (1)
+    bucketAclGrants: NotRequired[Sequence[S3BucketAclGrantConfigurationTypeDef]],  # (2)
+    bucketPolicy: NotRequired[str],
+    bucketPublicAccessBlock: NotRequired[S3PublicAccessBlockConfigurationTypeDef],  # (3)
+```
 
-- `accessPoints`: `Mapping`\[`str`,
-  [S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef)\]
-- `bucketAclGrants`:
-  `Sequence`\[[S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef)\]
-- `bucketPolicy`: `str`
-- `bucketPublicAccessBlock`:
-  [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
-
-<a id="s3publicaccessblockconfigurationtypedef"></a>
-
+1. See [:material-code-braces: S3AccessPointConfigurationTypeDef](./type_defs.md#s3accesspointconfigurationtypedef) 
+2. See [:material-code-braces: S3BucketAclGrantConfigurationTypeDef](./type_defs.md#s3bucketaclgrantconfigurationtypedef) 
+3. See [:material-code-braces: S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef) 
 ## S3PublicAccessBlockConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import S3PublicAccessBlockConfigurationTypeDef
+
+def get_value() -> S3PublicAccessBlockConfigurationTypeDef:
+    return {
+        "ignorePublicAcls": ...,
+        "restrictPublicBuckets": ...,
+    }
 ```
 
-Required fields:
-
-- `ignorePublicAcls`: `bool`
-- `restrictPublicBuckets`: `bool`
-
-<a id="secretsmanagersecretconfigurationtypedef"></a>
+```python title="Definition"
+class S3PublicAccessBlockConfigurationTypeDef(TypedDict):
+    ignorePublicAcls: bool,
+    restrictPublicBuckets: bool,
+```
 
 ## SecretsManagerSecretConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import SecretsManagerSecretConfigurationTypeDef
+
+def get_value() -> SecretsManagerSecretConfigurationTypeDef:
+    return {
+        "kmsKeyId": ...,
+    }
 ```
 
-Optional fields:
-
-- `kmsKeyId`: `str`
-- `secretPolicy`: `str`
-
-<a id="sortcriteriatypedef"></a>
+```python title="Definition"
+class SecretsManagerSecretConfigurationTypeDef(TypedDict):
+    kmsKeyId: NotRequired[str],
+    secretPolicy: NotRequired[str],
+```
 
 ## SortCriteriaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import SortCriteriaTypeDef
+
+def get_value() -> SortCriteriaTypeDef:
+    return {
+        "attributeName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SortCriteriaTypeDef(TypedDict):
+    attributeName: NotRequired[str],
+    orderBy: NotRequired[OrderByType],  # (1)
+```
 
-- `attributeName`: `str`
-- `orderBy`: [OrderByType](./literals.md#orderbytype)
-
-<a id="spantypedef"></a>
-
+1. See [:material-code-brackets: OrderByType](./literals.md#orderbytype) 
 ## SpanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import SpanTypeDef
+
+def get_value() -> SpanTypeDef:
+    return {
+        "end": ...,
+        "start": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SpanTypeDef(TypedDict):
+    end: PositionTypeDef,  # (1)
+    start: PositionTypeDef,  # (1)
+```
 
-- `end`: [PositionTypeDef](./type_defs.md#positiontypedef)
-- `start`: [PositionTypeDef](./type_defs.md#positiontypedef)
-
-<a id="sqsqueueconfigurationtypedef"></a>
-
+1. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
+2. See [:material-code-braces: PositionTypeDef](./type_defs.md#positiontypedef) 
 ## SqsQueueConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import SqsQueueConfigurationTypeDef
+
+def get_value() -> SqsQueueConfigurationTypeDef:
+    return {
+        "queuePolicy": ...,
+    }
 ```
 
-Optional fields:
-
-- `queuePolicy`: `str`
-
-<a id="startpolicygenerationrequestrequesttypedef"></a>
+```python title="Definition"
+class SqsQueueConfigurationTypeDef(TypedDict):
+    queuePolicy: NotRequired[str],
+```
 
 ## StartPolicyGenerationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import StartPolicyGenerationRequestRequestTypeDef
+
+def get_value() -> StartPolicyGenerationRequestRequestTypeDef:
+    return {
+        "policyGenerationDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartPolicyGenerationRequestRequestTypeDef(TypedDict):
+    policyGenerationDetails: PolicyGenerationDetailsTypeDef,  # (1)
+    clientToken: NotRequired[str],
+    cloudTrailDetails: NotRequired[CloudTrailDetailsTypeDef],  # (2)
+```
 
-- `policyGenerationDetails`:
-  [PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef)
-
-Optional fields:
-
-- `clientToken`: `str`
-- `cloudTrailDetails`:
-  [CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef)
-
-<a id="startpolicygenerationresponsetypedef"></a>
-
+1. See [:material-code-braces: PolicyGenerationDetailsTypeDef](./type_defs.md#policygenerationdetailstypedef) 
+2. See [:material-code-braces: CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef) 
 ## StartPolicyGenerationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import StartPolicyGenerationResponseTypeDef
+
+def get_value() -> StartPolicyGenerationResponseTypeDef:
+    return {
+        "jobId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartPolicyGenerationResponseTypeDef(TypedDict):
+    jobId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `jobId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startresourcescanrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartResourceScanRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import StartResourceScanRequestRequestTypeDef
+
+def get_value() -> StartResourceScanRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `analyzerArn`: `str`
-- `resourceArn`: `str`
-
-<a id="statusreasontypedef"></a>
+```python title="Definition"
+class StartResourceScanRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    resourceArn: str,
+```
 
 ## StatusReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import StatusReasonTypeDef
+
+def get_value() -> StatusReasonTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StatusReasonTypeDef(TypedDict):
+    code: ReasonCodeType,  # (1)
+```
 
-- `code`: [ReasonCodeType](./literals.md#reasoncodetype)
-
-<a id="substringtypedef"></a>
-
+1. See [:material-code-brackets: ReasonCodeType](./literals.md#reasoncodetype) 
 ## SubstringTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import SubstringTypeDef
+
+def get_value() -> SubstringTypeDef:
+    return {
+        "length": ...,
+        "start": ...,
+    }
 ```
 
-Required fields:
-
-- `length`: `int`
-- `start`: `int`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SubstringTypeDef(TypedDict):
+    length: int,
+    start: int,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="trailpropertiestypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TrailPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import TrailPropertiesTypeDef
+
+def get_value() -> TrailPropertiesTypeDef:
+    return {
+        "cloudTrailArn": ...,
+    }
 ```
 
-Required fields:
-
-- `cloudTrailArn`: `str`
-
-Optional fields:
-
-- `allRegions`: `bool`
-- `regions`: `List`\[`str`\]
-
-<a id="trailtypedef"></a>
+```python title="Definition"
+class TrailPropertiesTypeDef(TypedDict):
+    cloudTrailArn: str,
+    allRegions: NotRequired[bool],
+    regions: NotRequired[List[str]],
+```
 
 ## TrailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import TrailTypeDef
+
+def get_value() -> TrailTypeDef:
+    return {
+        "cloudTrailArn": ...,
+    }
 ```
 
-Required fields:
-
-- `cloudTrailArn`: `str`
-
-Optional fields:
-
-- `allRegions`: `bool`
-- `regions`: `Sequence`\[`str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TrailTypeDef(TypedDict):
+    cloudTrailArn: str,
+    allRegions: NotRequired[bool],
+    regions: NotRequired[Sequence[str]],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updatearchiverulerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateArchiveRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import UpdateArchiveRuleRequestRequestTypeDef
+
+def get_value() -> UpdateArchiveRuleRequestRequestTypeDef:
+    return {
+        "analyzerName": ...,
+        "filter": ...,
+        "ruleName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateArchiveRuleRequestRequestTypeDef(TypedDict):
+    analyzerName: str,
+    filter: Mapping[str, CriterionTypeDef],  # (1)
+    ruleName: str,
+    clientToken: NotRequired[str],
+```
 
-- `analyzerName`: `str`
-- `filter`: `Mapping`\[`str`,
-  [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
-- `ruleName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="updatefindingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CriterionTypeDef](./type_defs.md#criteriontypedef) 
 ## UpdateFindingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import UpdateFindingsRequestRequestTypeDef
+
+def get_value() -> UpdateFindingsRequestRequestTypeDef:
+    return {
+        "analyzerArn": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateFindingsRequestRequestTypeDef(TypedDict):
+    analyzerArn: str,
+    status: FindingStatusUpdateType,  # (1)
+    clientToken: NotRequired[str],
+    ids: NotRequired[Sequence[str]],
+    resourceArn: NotRequired[str],
+```
 
-- `analyzerArn`: `str`
-- `status`: [FindingStatusUpdateType](./literals.md#findingstatusupdatetype)
-
-Optional fields:
-
-- `clientToken`: `str`
-- `ids`: `Sequence`\[`str`\]
-- `resourceArn`: `str`
-
-<a id="validatepolicyfindingtypedef"></a>
-
+1. See [:material-code-brackets: FindingStatusUpdateType](./literals.md#findingstatusupdatetype) 
 ## ValidatePolicyFindingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyFindingTypeDef
+
+def get_value() -> ValidatePolicyFindingTypeDef:
+    return {
+        "findingDetails": ...,
+        "findingType": ...,
+        "issueCode": ...,
+        "learnMoreLink": ...,
+        "locations": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidatePolicyFindingTypeDef(TypedDict):
+    findingDetails: str,
+    findingType: ValidatePolicyFindingTypeType,  # (1)
+    issueCode: str,
+    learnMoreLink: str,
+    locations: List[LocationTypeDef],  # (2)
+```
 
-- `findingDetails`: `str`
-- `findingType`:
-  [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
-- `issueCode`: `str`
-- `learnMoreLink`: `str`
-- `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
-
-<a id="validatepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype) 
+2. See [:material-code-braces: LocationTypeDef](./type_defs.md#locationtypedef) 
 ## ValidatePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyRequestRequestTypeDef
+
+def get_value() -> ValidatePolicyRequestRequestTypeDef:
+    return {
+        "policyDocument": ...,
+        "policyType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidatePolicyRequestRequestTypeDef(TypedDict):
+    policyDocument: str,
+    policyType: PolicyTypeType,  # (1)
+    locale: NotRequired[LocaleType],  # (2)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    validatePolicyResourceType: NotRequired[ValidatePolicyResourceTypeType],  # (3)
+```
 
-- `policyDocument`: `str`
-- `policyType`: [PolicyTypeType](./literals.md#policytypetype)
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+3. See [:material-code-brackets: ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype) 
+## ValidatePolicyRequestValidatePolicyPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyRequestValidatePolicyPaginateTypeDef
 
-- `locale`: [LocaleType](./literals.md#localetype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `validatePolicyResourceType`:
-  [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
+def get_value() -> ValidatePolicyRequestValidatePolicyPaginateTypeDef:
+    return {
+        "policyDocument": ...,
+        "policyType": ...,
+    }
+```
 
-<a id="validatepolicyresponsetypedef"></a>
+```python title="Definition"
+class ValidatePolicyRequestValidatePolicyPaginateTypeDef(TypedDict):
+    policyDocument: str,
+    policyType: PolicyTypeType,  # (1)
+    locale: NotRequired[LocaleType],  # (2)
+    validatePolicyResourceType: NotRequired[ValidatePolicyResourceTypeType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
 
+1. See [:material-code-brackets: PolicyTypeType](./literals.md#policytypetype) 
+2. See [:material-code-brackets: LocaleType](./literals.md#localetype) 
+3. See [:material-code-brackets: ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ValidatePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import ValidatePolicyResponseTypeDef
+
+def get_value() -> ValidatePolicyResponseTypeDef:
+    return {
+        "findings": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ValidatePolicyResponseTypeDef(TypedDict):
+    findings: List[ValidatePolicyFindingTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `findings`:
-  `List`\[[ValidatePolicyFindingTypeDef](./type_defs.md#validatepolicyfindingtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ValidatePolicyFindingTypeDef](./type_defs.md#validatepolicyfindingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_accessanalyzer.type_defs import VpcConfigurationTypeDef
+
+def get_value() -> VpcConfigurationTypeDef:
+    return {
+        "vpcId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VpcConfigurationTypeDef(TypedDict):
+    vpcId: str,
+```
 
-- `vpcId`: `str`

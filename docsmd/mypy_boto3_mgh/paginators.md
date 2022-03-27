@@ -1,31 +1,18 @@
-<a id="paginators-for-boto3-migrationhub-module"></a>
-
-# Paginators for boto3 MigrationHub module
+# Paginators
 
 > [Index](../README.md) > [MigrationHub](./README.md) > Paginators
 
-Auto-generated documentation for
-[MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
-type annotations stubs module
-[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
+!!! note ""
 
-- [Paginators for boto3 MigrationHub module](#paginators-for-boto3-migrationhub-module)
-  - [ListApplicationStatesPaginator](#listapplicationstatespaginator)
-  - [ListCreatedArtifactsPaginator](#listcreatedartifactspaginator)
-  - [ListDiscoveredResourcesPaginator](#listdiscoveredresourcespaginator)
-  - [ListMigrationTasksPaginator](#listmigrationtaskspaginator)
-  - [ListProgressUpdateStreamsPaginator](#listprogressupdatestreamspaginator)
-
-<a id="listapplicationstatespaginator"></a>
+    Auto-generated documentation for [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
+    type annotations stubs module [mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ## ListApplicationStatesPaginator
 
-Type annotations for
-`boto3.client("mgh").get_paginator("list_application_states")`.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator("list_application_states")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator
@@ -34,28 +21,40 @@ def get_list_application_states_paginator() -> ListApplicationStatesPaginator:
     return Session().client("mgh").get_paginator("list_application_states")
 ```
 
-Boto3 documentation:
-[MigrationHub.Paginator.ListApplicationStates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListApplicationStates)
 
-Arguments for `ListApplicationStatesPaginator.paginate` method:
+### paginate
 
-- `ApplicationIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationStatesPaginator.paginate` method.
 
-`ListApplicationStatesPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ApplicationIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationStatesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcreatedartifactspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationStatesRequestListApplicationStatesPaginateTypeDef = {  # (1)
+    "ApplicationIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationStatesRequestListApplicationStatesPaginateTypeDef](./type_defs.md#listapplicationstatesrequestlistapplicationstatespaginatetypedef) 
 ## ListCreatedArtifactsPaginator
 
-Type annotations for
-`boto3.client("mgh").get_paginator("list_created_artifacts")`.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator("list_created_artifacts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mgh.paginator import ListCreatedArtifactsPaginator
@@ -64,29 +63,42 @@ def get_list_created_artifacts_paginator() -> ListCreatedArtifactsPaginator:
     return Session().client("mgh").get_paginator("list_created_artifacts")
 ```
 
-Boto3 documentation:
-[MigrationHub.Paginator.ListCreatedArtifacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListCreatedArtifacts)
 
-Arguments for `ListCreatedArtifactsPaginator.paginate` method:
+### paginate
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCreatedArtifactsPaginator.paginate` method.
 
-`ListCreatedArtifactsPaginator.paginate` returns
-`_PageIterator`\[[ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCreatedArtifactsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdiscoveredresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCreatedArtifactsRequestListCreatedArtifactsPaginateTypeDef](./type_defs.md#listcreatedartifactsrequestlistcreatedartifactspaginatetypedef) 
 ## ListDiscoveredResourcesPaginator
 
-Type annotations for
-`boto3.client("mgh").get_paginator("list_discovered_resources")`.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator("list_discovered_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mgh.paginator import ListDiscoveredResourcesPaginator
@@ -95,29 +107,42 @@ def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginato
     return Session().client("mgh").get_paginator("list_discovered_resources")
 ```
 
-Boto3 documentation:
-[MigrationHub.Paginator.ListDiscoveredResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListDiscoveredResources)
 
-Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
+### paginate
 
-- `ProgressUpdateStream`: `str` *(required)*
-- `MigrationTaskName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDiscoveredResourcesPaginator.paginate` method.
 
-`ListDiscoveredResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ProgressUpdateStream: str,
+    MigrationTaskName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDiscoveredResourcesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listmigrationtaskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef = {  # (1)
+    "ProgressUpdateStream": ...,
+    "MigrationTaskName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDiscoveredResourcesRequestListDiscoveredResourcesPaginateTypeDef](./type_defs.md#listdiscoveredresourcesrequestlistdiscoveredresourcespaginatetypedef) 
 ## ListMigrationTasksPaginator
 
-Type annotations for
-`boto3.client("mgh").get_paginator("list_migration_tasks")`.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator("list_migration_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mgh.paginator import ListMigrationTasksPaginator
@@ -126,28 +151,40 @@ def get_list_migration_tasks_paginator() -> ListMigrationTasksPaginator:
     return Session().client("mgh").get_paginator("list_migration_tasks")
 ```
 
-Boto3 documentation:
-[MigrationHub.Paginator.ListMigrationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListMigrationTasks)
 
-Arguments for `ListMigrationTasksPaginator.paginate` method:
+### paginate
 
-- `ResourceName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListMigrationTasksPaginator.paginate` method.
 
-`ListMigrationTasksPaginator.paginate` returns
-`_PageIterator`\[[ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListMigrationTasksResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listprogressupdatestreamspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListMigrationTasksRequestListMigrationTasksPaginateTypeDef = {  # (1)
+    "ResourceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListMigrationTasksRequestListMigrationTasksPaginateTypeDef](./type_defs.md#listmigrationtasksrequestlistmigrationtaskspaginatetypedef) 
 ## ListProgressUpdateStreamsPaginator
 
-Type annotations for
-`boto3.client("mgh").get_paginator("list_progress_update_streams")`.
+Type annotations and code completion for `#!python boto3.client("mgh").get_paginator("list_progress_update_streams")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mgh.paginator import ListProgressUpdateStreamsPaginator
@@ -156,13 +193,30 @@ def get_list_progress_update_streams_paginator() -> ListProgressUpdateStreamsPag
     return Session().client("mgh").get_paginator("list_progress_update_streams")
 ```
 
-Boto3 documentation:
-[MigrationHub.Paginator.ListProgressUpdateStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Paginator.ListProgressUpdateStreams)
 
-Arguments for `ListProgressUpdateStreamsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListProgressUpdateStreamsPaginator.paginate` method.
 
-`ListProgressUpdateStreamsPaginator.paginate` returns
-`_PageIterator`\[[ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListProgressUpdateStreamsResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListProgressUpdateStreamsRequestListProgressUpdateStreamsPaginateTypeDef](./type_defs.md#listprogressupdatestreamsrequestlistprogressupdatestreamspaginatetypedef) 

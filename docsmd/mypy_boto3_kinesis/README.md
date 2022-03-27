@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-kinesis-module"></a>
-
-# Type annotations for boto3 Kinesis module
+#  Kinesis module
 
 > [Index](../README.md) > Kinesis
 
-Auto-generated documentation for
-[Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
-type annotations stubs module
-[mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
+!!! note ""
 
-- [Type annotations for boto3 Kinesis module](#type-annotations-for-boto3-kinesis-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KinesisClient](#kinesisclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
+    type annotations stubs module [mypy-boto3-kinesis](https://pypi.org/project/mypy-boto3-kinesis/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Kinesis`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kinesis]'
 python -m pip install mypy-boto3-kinesis
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,97 +42,37 @@ python -m pip install mypy-boto3-kinesis
 python -m pip uninstall -y mypy-boto3-kinesis
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kinesisclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KinesisClient
 
-Type annotations for `boto3.client("kinesis")` as [KinesisClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kinesis")` as [KinesisClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kinesis.client import KinesisClient
+
+def get_client() -> KinesisClient:
+    return Session().cleint("kinesis")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_stream](./client.md#add_tags_to_stream)
-- [can_paginate](./client.md#can_paginate)
-- [create_stream](./client.md#create_stream)
-- [decrease_stream_retention_period](./client.md#decrease_stream_retention_period)
-- [delete_stream](./client.md#delete_stream)
-- [deregister_stream_consumer](./client.md#deregister_stream_consumer)
-- [describe_limits](./client.md#describe_limits)
-- [describe_stream](./client.md#describe_stream)
-- [describe_stream_consumer](./client.md#describe_stream_consumer)
-- [describe_stream_summary](./client.md#describe_stream_summary)
-- [disable_enhanced_monitoring](./client.md#disable_enhanced_monitoring)
-- [enable_enhanced_monitoring](./client.md#enable_enhanced_monitoring)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_records](./client.md#get_records)
-- [get_shard_iterator](./client.md#get_shard_iterator)
-- [get_waiter](./client.md#get_waiter)
-- [increase_stream_retention_period](./client.md#increase_stream_retention_period)
-- [list_shards](./client.md#list_shards)
-- [list_stream_consumers](./client.md#list_stream_consumers)
-- [list_streams](./client.md#list_streams)
-- [list_tags_for_stream](./client.md#list_tags_for_stream)
-- [merge_shards](./client.md#merge_shards)
-- [put_record](./client.md#put_record)
-- [put_records](./client.md#put_records)
-- [register_stream_consumer](./client.md#register_stream_consumer)
-- [remove_tags_from_stream](./client.md#remove_tags_from_stream)
-- [split_shard](./client.md#split_shard)
-- [start_stream_encryption](./client.md#start_stream_encryption)
-- [stop_stream_encryption](./client.md#stop_stream_encryption)
-- [subscribe_to_shard](./client.md#subscribe_to_shard)
-- [update_shard_count](./client.md#update_shard_count)
-- [update_stream_mode](./client.md#update_stream_mode)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KinesisClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ExpiredIteratorException
-- ExpiredNextTokenException
-- InternalFailureException
-- InvalidArgumentException
-- KMSAccessDeniedException
-- KMSDisabledException
-- KMSInvalidStateException
-- KMSNotFoundException
-- KMSOptInRequired
-- KMSThrottlingException
-- LimitExceededException
-- ProvisionedThroughputExceededException
-- ResourceInUseException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kinesis").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kinesis").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kinesis.paginator import DescribeStreamPaginator, ...
+from mypy_boto3_kinesis.paginator import DescribeStreamPaginator
+
+def get_describe_stream_paginator() -> DescribeStreamPaginator:
+    return Session().client("kinesis").get_paginator("describe_stream"))
 ```
 
 - [DescribeStreamPaginator](./paginators.md#describestreampaginator)
@@ -163,32 +80,41 @@ from mypy_boto3_kinesis.paginator import DescribeStreamPaginator, ...
 - [ListStreamConsumersPaginator](./paginators.md#liststreamconsumerspaginator)
 - [ListStreamsPaginator](./paginators.md#liststreamspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("kinesis").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("kinesis").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kinesis.waiter import StreamExistsWaiter, ...
+from mypy_boto3_kinesis.waiter import StreamExistsWaiter
+
+def get_stream_exists_waiter() -> StreamExistsWaiter:
+    return Session().client("kinesis").get_waiter("stream_exists")
 ```
 
 - [StreamExistsWaiter](./waiters.md#streamexistswaiter)
 - [StreamNotExistsWaiter](./waiters.md#streamnotexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesis.literals import ConsumerStatusType
 
-```python
-from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
+def get_value() -> ConsumerStatusType:
+    return "ACTIVE"
 ```
 
 - [ConsumerStatusType](./literals.md#consumerstatustype)
@@ -210,18 +136,23 @@ from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef
 
-```python
-from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
+def get_value() -> AddTagsToStreamInputRequestTypeDef:
+    return {
+        "StreamName": ...,
+        "Tags": ...,
+    }
 ```
 
 - [AddTagsToStreamInputRequestTypeDef](./type_defs.md#addtagstostreaminputrequesttypedef)
@@ -235,7 +166,10 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
 - [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef)
 - [DescribeStreamConsumerInputRequestTypeDef](./type_defs.md#describestreamconsumerinputrequesttypedef)
 - [DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef)
+- [DescribeStreamInputDescribeStreamPaginateTypeDef](./type_defs.md#describestreaminputdescribestreampaginatetypedef)
 - [DescribeStreamInputRequestTypeDef](./type_defs.md#describestreaminputrequesttypedef)
+- [DescribeStreamInputStreamExistsWaitTypeDef](./type_defs.md#describestreaminputstreamexistswaittypedef)
+- [DescribeStreamInputStreamNotExistsWaitTypeDef](./type_defs.md#describestreaminputstreamnotexistswaittypedef)
 - [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef)
 - [DescribeStreamSummaryInputRequestTypeDef](./type_defs.md#describestreamsummaryinputrequesttypedef)
 - [DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef)
@@ -256,10 +190,13 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
 - [KMSNotFoundExceptionTypeDef](./type_defs.md#kmsnotfoundexceptiontypedef)
 - [KMSOptInRequiredTypeDef](./type_defs.md#kmsoptinrequiredtypedef)
 - [KMSThrottlingExceptionTypeDef](./type_defs.md#kmsthrottlingexceptiontypedef)
+- [ListShardsInputListShardsPaginateTypeDef](./type_defs.md#listshardsinputlistshardspaginatetypedef)
 - [ListShardsInputRequestTypeDef](./type_defs.md#listshardsinputrequesttypedef)
 - [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef)
+- [ListStreamConsumersInputListStreamConsumersPaginateTypeDef](./type_defs.md#liststreamconsumersinputliststreamconsumerspaginatetypedef)
 - [ListStreamConsumersInputRequestTypeDef](./type_defs.md#liststreamconsumersinputrequesttypedef)
 - [ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef)
+- [ListStreamsInputListStreamsPaginateTypeDef](./type_defs.md#liststreamsinputliststreamspaginatetypedef)
 - [ListStreamsInputRequestTypeDef](./type_defs.md#liststreamsinputrequesttypedef)
 - [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef)
 - [ListTagsForStreamInputRequestTypeDef](./type_defs.md#listtagsforstreaminputrequesttypedef)
@@ -298,3 +235,4 @@ from mypy_boto3_kinesis.type_defs import AddTagsToStreamInputRequestTypeDef, ...
 - [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef)
 - [UpdateStreamModeInputRequestTypeDef](./type_defs.md#updatestreammodeinputrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

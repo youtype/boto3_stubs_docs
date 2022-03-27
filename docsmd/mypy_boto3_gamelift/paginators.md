@@ -1,46 +1,18 @@
-<a id="paginators-for-boto3-gamelift-module"></a>
-
-# Paginators for boto3 GameLift module
+# Paginators
 
 > [Index](../README.md) > [GameLift](./README.md) > Paginators
 
-Auto-generated documentation for
-[GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
-type annotations stubs module
-[mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
+!!! note ""
 
-- [Paginators for boto3 GameLift module](#paginators-for-boto3-gamelift-module)
-  - [DescribeFleetAttributesPaginator](#describefleetattributespaginator)
-  - [DescribeFleetCapacityPaginator](#describefleetcapacitypaginator)
-  - [DescribeFleetEventsPaginator](#describefleeteventspaginator)
-  - [DescribeFleetUtilizationPaginator](#describefleetutilizationpaginator)
-  - [DescribeGameServerInstancesPaginator](#describegameserverinstancespaginator)
-  - [DescribeGameSessionDetailsPaginator](#describegamesessiondetailspaginator)
-  - [DescribeGameSessionQueuesPaginator](#describegamesessionqueuespaginator)
-  - [DescribeGameSessionsPaginator](#describegamesessionspaginator)
-  - [DescribeInstancesPaginator](#describeinstancespaginator)
-  - [DescribeMatchmakingConfigurationsPaginator](#describematchmakingconfigurationspaginator)
-  - [DescribeMatchmakingRuleSetsPaginator](#describematchmakingrulesetspaginator)
-  - [DescribePlayerSessionsPaginator](#describeplayersessionspaginator)
-  - [DescribeScalingPoliciesPaginator](#describescalingpoliciespaginator)
-  - [ListAliasesPaginator](#listaliasespaginator)
-  - [ListBuildsPaginator](#listbuildspaginator)
-  - [ListFleetsPaginator](#listfleetspaginator)
-  - [ListGameServerGroupsPaginator](#listgameservergroupspaginator)
-  - [ListGameServersPaginator](#listgameserverspaginator)
-  - [ListScriptsPaginator](#listscriptspaginator)
-  - [SearchGameSessionsPaginator](#searchgamesessionspaginator)
-
-<a id="describefleetattributespaginator"></a>
+    Auto-generated documentation for [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
+    type annotations stubs module [mypy-boto3-gamelift](https://pypi.org/project/mypy-boto3-gamelift/).
 
 ## DescribeFleetAttributesPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_fleet_attributes")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_fleet_attributes")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeFleetAttributesPaginator
@@ -49,28 +21,40 @@ def get_describe_fleet_attributes_paginator() -> DescribeFleetAttributesPaginato
     return Session().client("gamelift").get_paginator("describe_fleet_attributes")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeFleetAttributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetAttributes)
 
-Arguments for `DescribeFleetAttributesPaginator.paginate` method:
+### paginate
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetAttributesPaginator.paginate` method.
 
-`DescribeFleetAttributesPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeFleetAttributesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describefleetcapacitypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetAttributesInputDescribeFleetAttributesPaginateTypeDef = {  # (1)
+    "FleetIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetAttributesInputDescribeFleetAttributesPaginateTypeDef](./type_defs.md#describefleetattributesinputdescribefleetattributespaginatetypedef) 
 ## DescribeFleetCapacityPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_fleet_capacity")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_fleet_capacity")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeFleetCapacityPaginator
@@ -79,28 +63,40 @@ def get_describe_fleet_capacity_paginator() -> DescribeFleetCapacityPaginator:
     return Session().client("gamelift").get_paginator("describe_fleet_capacity")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeFleetCapacity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetCapacity)
 
-Arguments for `DescribeFleetCapacityPaginator.paginate` method:
+### paginate
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetCapacityPaginator.paginate` method.
 
-`DescribeFleetCapacityPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeFleetCapacityOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describefleeteventspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetCapacityInputDescribeFleetCapacityPaginateTypeDef = {  # (1)
+    "FleetIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetCapacityInputDescribeFleetCapacityPaginateTypeDef](./type_defs.md#describefleetcapacityinputdescribefleetcapacitypaginatetypedef) 
 ## DescribeFleetEventsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_fleet_events")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_fleet_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeFleetEventsPaginator
@@ -109,30 +105,42 @@ def get_describe_fleet_events_paginator() -> DescribeFleetEventsPaginator:
     return Session().client("gamelift").get_paginator("describe_fleet_events")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeFleetEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetEvents)
 
-Arguments for `DescribeFleetEventsPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str` *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetEventsPaginator.paginate` method.
 
-`DescribeFleetEventsPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str,
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeFleetEventsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describefleetutilizationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetEventsInputDescribeFleetEventsPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetEventsInputDescribeFleetEventsPaginateTypeDef](./type_defs.md#describefleeteventsinputdescribefleeteventspaginatetypedef) 
 ## DescribeFleetUtilizationPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_fleet_utilization")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_fleet_utilization")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeFleetUtilizationPaginator
@@ -141,28 +149,40 @@ def get_describe_fleet_utilization_paginator() -> DescribeFleetUtilizationPagina
     return Session().client("gamelift").get_paginator("describe_fleet_utilization")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeFleetUtilization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeFleetUtilization)
 
-Arguments for `DescribeFleetUtilizationPaginator.paginate` method:
+### paginate
 
-- `FleetIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeFleetUtilizationPaginator.paginate` method.
 
-`DescribeFleetUtilizationPaginator.paginate` returns
-`_PageIterator`\[[DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeFleetUtilizationOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describegameserverinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetUtilizationInputDescribeFleetUtilizationPaginateTypeDef = {  # (1)
+    "FleetIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFleetUtilizationInputDescribeFleetUtilizationPaginateTypeDef](./type_defs.md#describefleetutilizationinputdescribefleetutilizationpaginatetypedef) 
 ## DescribeGameServerInstancesPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_game_server_instances")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_game_server_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeGameServerInstancesPaginator
@@ -171,29 +191,41 @@ def get_describe_game_server_instances_paginator() -> DescribeGameServerInstance
     return Session().client("gamelift").get_paginator("describe_game_server_instances")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeGameServerInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameServerInstances)
 
-Arguments for `DescribeGameServerInstancesPaginator.paginate` method:
+### paginate
 
-- `GameServerGroupName`: `str` *(required)*
-- `InstanceIds`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGameServerInstancesPaginator.paginate` method.
 
-`DescribeGameServerInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GameServerGroupName: str,
+    InstanceIds: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGameServerInstancesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describegamesessiondetailspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGameServerInstancesInputDescribeGameServerInstancesPaginateTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGameServerInstancesInputDescribeGameServerInstancesPaginateTypeDef](./type_defs.md#describegameserverinstancesinputdescribegameserverinstancespaginatetypedef) 
 ## DescribeGameSessionDetailsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_game_session_details")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_game_session_details")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeGameSessionDetailsPaginator
@@ -202,32 +234,44 @@ def get_describe_game_session_details_paginator() -> DescribeGameSessionDetailsP
     return Session().client("gamelift").get_paginator("describe_game_session_details")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessionDetails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionDetails)
 
-Arguments for `DescribeGameSessionDetailsPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str`
-- `GameSessionId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `StatusFilter`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGameSessionDetailsPaginator.paginate` method.
 
-`DescribeGameSessionDetailsPaginator.paginate` returns
-`_PageIterator`\[[DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str = ...,
+    GameSessionId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    StatusFilter: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGameSessionDetailsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describegamesessionqueuespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionDetailsInputDescribeGameSessionDetailsPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGameSessionDetailsInputDescribeGameSessionDetailsPaginateTypeDef](./type_defs.md#describegamesessiondetailsinputdescribegamesessiondetailspaginatetypedef) 
 ## DescribeGameSessionQueuesPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_game_session_queues")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_game_session_queues")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeGameSessionQueuesPaginator
@@ -236,28 +280,40 @@ def get_describe_game_session_queues_paginator() -> DescribeGameSessionQueuesPag
     return Session().client("gamelift").get_paginator("describe_game_session_queues")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessionQueues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessionQueues)
 
-Arguments for `DescribeGameSessionQueuesPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGameSessionQueuesPaginator.paginate` method.
 
-`DescribeGameSessionQueuesPaginator.paginate` returns
-`_PageIterator`\[[DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGameSessionQueuesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describegamesessionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionQueuesInputDescribeGameSessionQueuesPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGameSessionQueuesInputDescribeGameSessionQueuesPaginateTypeDef](./type_defs.md#describegamesessionqueuesinputdescribegamesessionqueuespaginatetypedef) 
 ## DescribeGameSessionsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_game_sessions")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_game_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeGameSessionsPaginator
@@ -266,32 +322,44 @@ def get_describe_game_sessions_paginator() -> DescribeGameSessionsPaginator:
     return Session().client("gamelift").get_paginator("describe_game_sessions")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeGameSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeGameSessions)
 
-Arguments for `DescribeGameSessionsPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str`
-- `GameSessionId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `StatusFilter`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeGameSessionsPaginator.paginate` method.
 
-`DescribeGameSessionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str = ...,
+    GameSessionId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    StatusFilter: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeGameSessionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeGameSessionsInputDescribeGameSessionsPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeGameSessionsInputDescribeGameSessionsPaginateTypeDef](./type_defs.md#describegamesessionsinputdescribegamesessionspaginatetypedef) 
 ## DescribeInstancesPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_instances")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeInstancesPaginator
@@ -300,30 +368,42 @@ def get_describe_instances_paginator() -> DescribeInstancesPaginator:
     return Session().client("gamelift").get_paginator("describe_instances")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeInstances)
 
-Arguments for `DescribeInstancesPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str` *(required)*
-- `InstanceId`: `str`
-- `Location`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstancesPaginator.paginate` method.
 
-`DescribeInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str,
+    InstanceId: str = ...,
+    Location: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeInstancesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describematchmakingconfigurationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancesInputDescribeInstancesPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancesInputDescribeInstancesPaginateTypeDef](./type_defs.md#describeinstancesinputdescribeinstancespaginatetypedef) 
 ## DescribeMatchmakingConfigurationsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_matchmaking_configurations")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_matchmaking_configurations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeMatchmakingConfigurationsPaginator
@@ -332,29 +412,41 @@ def get_describe_matchmaking_configurations_paginator() -> DescribeMatchmakingCo
     return Session().client("gamelift").get_paginator("describe_matchmaking_configurations")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeMatchmakingConfigurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingConfigurations)
 
-Arguments for `DescribeMatchmakingConfigurationsPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `RuleSetName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMatchmakingConfigurationsPaginator.paginate` method.
 
-`DescribeMatchmakingConfigurationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    RuleSetName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeMatchmakingConfigurationsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describematchmakingrulesetspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMatchmakingConfigurationsInputDescribeMatchmakingConfigurationsPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMatchmakingConfigurationsInputDescribeMatchmakingConfigurationsPaginateTypeDef](./type_defs.md#describematchmakingconfigurationsinputdescribematchmakingconfigurationspaginatetypedef) 
 ## DescribeMatchmakingRuleSetsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_matchmaking_rule_sets")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_matchmaking_rule_sets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeMatchmakingRuleSetsPaginator
@@ -363,28 +455,40 @@ def get_describe_matchmaking_rule_sets_paginator() -> DescribeMatchmakingRuleSet
     return Session().client("gamelift").get_paginator("describe_matchmaking_rule_sets")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeMatchmakingRuleSets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeMatchmakingRuleSets)
 
-Arguments for `DescribeMatchmakingRuleSetsPaginator.paginate` method:
+### paginate
 
-- `Names`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMatchmakingRuleSetsPaginator.paginate` method.
 
-`DescribeMatchmakingRuleSetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Names: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeMatchmakingRuleSetsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeplayersessionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMatchmakingRuleSetsInputDescribeMatchmakingRuleSetsPaginateTypeDef = {  # (1)
+    "Names": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMatchmakingRuleSetsInputDescribeMatchmakingRuleSetsPaginateTypeDef](./type_defs.md#describematchmakingrulesetsinputdescribematchmakingrulesetspaginatetypedef) 
 ## DescribePlayerSessionsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_player_sessions")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_player_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribePlayerSessionsPaginator
@@ -393,31 +497,43 @@ def get_describe_player_sessions_paginator() -> DescribePlayerSessionsPaginator:
     return Session().client("gamelift").get_paginator("describe_player_sessions")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribePlayerSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribePlayerSessions)
 
-Arguments for `DescribePlayerSessionsPaginator.paginate` method:
+### paginate
 
-- `GameSessionId`: `str`
-- `PlayerId`: `str`
-- `PlayerSessionId`: `str`
-- `PlayerSessionStatusFilter`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePlayerSessionsPaginator.paginate` method.
 
-`DescribePlayerSessionsPaginator.paginate` returns
-`_PageIterator`\[[DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GameSessionId: str = ...,
+    PlayerId: str = ...,
+    PlayerSessionId: str = ...,
+    PlayerSessionStatusFilter: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribePlayerSessionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="describescalingpoliciespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePlayerSessionsInputDescribePlayerSessionsPaginateTypeDef = {  # (1)
+    "GameSessionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePlayerSessionsInputDescribePlayerSessionsPaginateTypeDef](./type_defs.md#describeplayersessionsinputdescribeplayersessionspaginatetypedef) 
 ## DescribeScalingPoliciesPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("describe_scaling_policies")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("describe_scaling_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import DescribeScalingPoliciesPaginator
@@ -426,29 +542,43 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
     return Session().client("gamelift").get_paginator("describe_scaling_policies")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.DescribeScalingPolicies)
 
-Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str` *(required)*
-- `StatusFilter`: [ScalingStatusTypeType](./literals.md#scalingstatustypetype)
-- `Location`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScalingPoliciesPaginator.paginate` method.
 
-`DescribeScalingPoliciesPaginator.paginate` returns
-`_PageIterator`\[[DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str,
+    StatusFilter: ScalingStatusTypeType = ...,  # (1)
+    Location: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeScalingPoliciesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listaliasespaginator"></a>
+1. See [:material-code-brackets: ScalingStatusTypeType](./literals.md#scalingstatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPoliciesInputDescribeScalingPoliciesPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScalingPoliciesInputDescribeScalingPoliciesPaginateTypeDef](./type_defs.md#describescalingpoliciesinputdescribescalingpoliciespaginatetypedef) 
 ## ListAliasesPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_aliases")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_aliases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListAliasesPaginator
@@ -457,29 +587,42 @@ def get_list_aliases_paginator() -> ListAliasesPaginator:
     return Session().client("gamelift").get_paginator("list_aliases")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListAliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListAliases)
 
-Arguments for `ListAliasesPaginator.paginate` method:
+### paginate
 
-- `RoutingStrategyType`:
-  [RoutingStrategyTypeType](./literals.md#routingstrategytypetype)
-- `Name`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAliasesPaginator.paginate` method.
 
-`ListAliasesPaginator.paginate` returns
-`_PageIterator`\[[ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    RoutingStrategyType: RoutingStrategyTypeType = ...,  # (1)
+    Name: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAliasesOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbuildspaginator"></a>
+1. See [:material-code-brackets: RoutingStrategyTypeType](./literals.md#routingstrategytypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAliasesInputListAliasesPaginateTypeDef = {  # (1)
+    "RoutingStrategyType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAliasesInputListAliasesPaginateTypeDef](./type_defs.md#listaliasesinputlistaliasespaginatetypedef) 
 ## ListBuildsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_builds")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_builds")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListBuildsPaginator
@@ -488,27 +631,41 @@ def get_list_builds_paginator() -> ListBuildsPaginator:
     return Session().client("gamelift").get_paginator("list_builds")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListBuilds](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListBuilds)
 
-Arguments for `ListBuildsPaginator.paginate` method:
+### paginate
 
-- `Status`: [BuildStatusType](./literals.md#buildstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBuildsPaginator.paginate` method.
 
-`ListBuildsPaginator.paginate` returns
-`_PageIterator`\[[ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Status: BuildStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListBuildsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listfleetspaginator"></a>
+1. See [:material-code-brackets: BuildStatusType](./literals.md#buildstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBuildsInputListBuildsPaginateTypeDef = {  # (1)
+    "Status": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBuildsInputListBuildsPaginateTypeDef](./type_defs.md#listbuildsinputlistbuildspaginatetypedef) 
 ## ListFleetsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_fleets")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_fleets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListFleetsPaginator
@@ -517,29 +674,41 @@ def get_list_fleets_paginator() -> ListFleetsPaginator:
     return Session().client("gamelift").get_paginator("list_fleets")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListFleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListFleets)
 
-Arguments for `ListFleetsPaginator.paginate` method:
+### paginate
 
-- `BuildId`: `str`
-- `ScriptId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListFleetsPaginator.paginate` method.
 
-`ListFleetsPaginator.paginate` returns
-`_PageIterator`\[[ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BuildId: str = ...,
+    ScriptId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListFleetsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgameservergroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListFleetsInputListFleetsPaginateTypeDef = {  # (1)
+    "BuildId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListFleetsInputListFleetsPaginateTypeDef](./type_defs.md#listfleetsinputlistfleetspaginatetypedef) 
 ## ListGameServerGroupsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("list_game_server_groups")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_game_server_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListGameServerGroupsPaginator
@@ -548,27 +717,39 @@ def get_list_game_server_groups_paginator() -> ListGameServerGroupsPaginator:
     return Session().client("gamelift").get_paginator("list_game_server_groups")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListGameServerGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServerGroups)
 
-Arguments for `ListGameServerGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGameServerGroupsPaginator.paginate` method.
 
-`ListGameServerGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListGameServerGroupsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listgameserverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGameServerGroupsInputListGameServerGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGameServerGroupsInputListGameServerGroupsPaginateTypeDef](./type_defs.md#listgameservergroupsinputlistgameservergroupspaginatetypedef) 
 ## ListGameServersPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("list_game_servers")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_game_servers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListGameServersPaginator
@@ -577,28 +758,42 @@ def get_list_game_servers_paginator() -> ListGameServersPaginator:
     return Session().client("gamelift").get_paginator("list_game_servers")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListGameServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListGameServers)
 
-Arguments for `ListGameServersPaginator.paginate` method:
+### paginate
 
-- `GameServerGroupName`: `str` *(required)*
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListGameServersPaginator.paginate` method.
 
-`ListGameServersPaginator.paginate` returns
-`_PageIterator`\[[ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    GameServerGroupName: str,
+    SortOrder: SortOrderType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListGameServersOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listscriptspaginator"></a>
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListGameServersInputListGameServersPaginateTypeDef = {  # (1)
+    "GameServerGroupName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListGameServersInputListGameServersPaginateTypeDef](./type_defs.md#listgameserversinputlistgameserverspaginatetypedef) 
 ## ListScriptsPaginator
 
-Type annotations for `boto3.client("gamelift").get_paginator("list_scripts")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("list_scripts")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import ListScriptsPaginator
@@ -607,27 +802,39 @@ def get_list_scripts_paginator() -> ListScriptsPaginator:
     return Session().client("gamelift").get_paginator("list_scripts")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.ListScripts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.ListScripts)
 
-Arguments for `ListScriptsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListScriptsPaginator.paginate` method.
 
-`ListScriptsPaginator.paginate` returns
-`_PageIterator`\[[ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListScriptsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchgamesessionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListScriptsInputListScriptsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListScriptsInputListScriptsPaginateTypeDef](./type_defs.md#listscriptsinputlistscriptspaginatetypedef) 
 ## SearchGameSessionsPaginator
 
-Type annotations for
-`boto3.client("gamelift").get_paginator("search_game_sessions")`.
+Type annotations and code completion for `#!python boto3.client("gamelift").get_paginator("search_game_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_gamelift.paginator import SearchGameSessionsPaginator
@@ -636,18 +843,35 @@ def get_search_game_sessions_paginator() -> SearchGameSessionsPaginator:
     return Session().client("gamelift").get_paginator("search_game_sessions")
 ```
 
-Boto3 documentation:
-[GameLift.Paginator.SearchGameSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift.Paginator.SearchGameSessions)
 
-Arguments for `SearchGameSessionsPaginator.paginate` method:
+### paginate
 
-- `FleetId`: `str`
-- `AliasId`: `str`
-- `Location`: `str`
-- `FilterExpression`: `str`
-- `SortExpression`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchGameSessionsPaginator.paginate` method.
 
-`SearchGameSessionsPaginator.paginate` returns
-`_PageIterator`\[[SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    FleetId: str = ...,
+    AliasId: str = ...,
+    Location: str = ...,
+    FilterExpression: str = ...,
+    SortExpression: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[SearchGameSessionsOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchGameSessionsInputSearchGameSessionsPaginateTypeDef = {  # (1)
+    "FleetId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchGameSessionsInputSearchGameSessionsPaginateTypeDef](./type_defs.md#searchgamesessionsinputsearchgamesessionspaginatetypedef) 

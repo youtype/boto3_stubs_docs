@@ -1,86 +1,18 @@
-<a id="kendraclient-for-boto3-kendra-module"></a>
-
-# kendraClient for boto3 kendra module
+# kendraClient
 
 > [Index](../README.md) > [kendra](./README.md) > kendraClient
 
-Auto-generated documentation for
-[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
-type annotations stubs module
-[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
+!!! note ""
 
-- [kendraClient for boto3 kendra module](#kendraclient-for-boto3-kendra-module)
-  - [kendraClient](#kendraclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_entities_to_experience](#associate_entities_to_experience)
-    - [associate_personas_to_entities](#associate_personas_to_entities)
-    - [batch_delete_document](#batch_delete_document)
-    - [batch_get_document_status](#batch_get_document_status)
-    - [batch_put_document](#batch_put_document)
-    - [can_paginate](#can_paginate)
-    - [clear_query_suggestions](#clear_query_suggestions)
-    - [create_data_source](#create_data_source)
-    - [create_experience](#create_experience)
-    - [create_faq](#create_faq)
-    - [create_index](#create_index)
-    - [create_query_suggestions_block_list](#create_query_suggestions_block_list)
-    - [create_thesaurus](#create_thesaurus)
-    - [delete_data_source](#delete_data_source)
-    - [delete_experience](#delete_experience)
-    - [delete_faq](#delete_faq)
-    - [delete_index](#delete_index)
-    - [delete_principal_mapping](#delete_principal_mapping)
-    - [delete_query_suggestions_block_list](#delete_query_suggestions_block_list)
-    - [delete_thesaurus](#delete_thesaurus)
-    - [describe_data_source](#describe_data_source)
-    - [describe_experience](#describe_experience)
-    - [describe_faq](#describe_faq)
-    - [describe_index](#describe_index)
-    - [describe_principal_mapping](#describe_principal_mapping)
-    - [describe_query_suggestions_block_list](#describe_query_suggestions_block_list)
-    - [describe_query_suggestions_config](#describe_query_suggestions_config)
-    - [describe_thesaurus](#describe_thesaurus)
-    - [disassociate_entities_from_experience](#disassociate_entities_from_experience)
-    - [disassociate_personas_from_entities](#disassociate_personas_from_entities)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_query_suggestions](#get_query_suggestions)
-    - [get_snapshots](#get_snapshots)
-    - [list_data_source_sync_jobs](#list_data_source_sync_jobs)
-    - [list_data_sources](#list_data_sources)
-    - [list_entity_personas](#list_entity_personas)
-    - [list_experience_entities](#list_experience_entities)
-    - [list_experiences](#list_experiences)
-    - [list_faqs](#list_faqs)
-    - [list_groups_older_than_ordering_id](#list_groups_older_than_ordering_id)
-    - [list_indices](#list_indices)
-    - [list_query_suggestions_block_lists](#list_query_suggestions_block_lists)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_thesauri](#list_thesauri)
-    - [put_principal_mapping](#put_principal_mapping)
-    - [query](#query)
-    - [start_data_source_sync_job](#start_data_source_sync_job)
-    - [stop_data_source_sync_job](#stop_data_source_sync_job)
-    - [submit_feedback](#submit_feedback)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_data_source](#update_data_source)
-    - [update_experience](#update_experience)
-    - [update_index](#update_index)
-    - [update_query_suggestions_block_list](#update_query_suggestions_block_list)
-    - [update_query_suggestions_config](#update_query_suggestions_config)
-    - [update_thesaurus](#update_thesaurus)
-
-<a id="kendraclient"></a>
+    Auto-generated documentation for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+    type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ## kendraClient
 
-Type annotations for `boto3.client("kendra")`
+Type annotations and code completion for `#!python boto3.client("kendra")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_kendra.client import kendraClient
 
@@ -88,1418 +20,1940 @@ def get_kendra_client() -> kendraClient:
     return Session().client("kendra")
 ```
 
-Boto3 documentation:
-[kendra.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("kendra").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("kendra")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.InvalidRequestException,
+    client.ResourceAlreadyExistException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourceUnavailableException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_kendra.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.ResourceAlreadyExistException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceUnavailableException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### associate\_entities\_to\_experience
 
-kendraClient exceptions.
+Grants users or groups in your Amazon Web Services SSO identity source access to
+your Amazon Kendra experience.
 
-Type annotations for `boto3.client("kendra").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("kendra").associate_entities_to_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_entities_to_experience)
 
-Boto3 documentation:
-[kendra.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.exceptions)
+```python title="Method definition"
+def associate_entities_to_experience(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    EntityList: Sequence[EntityConfigurationTypeDef],  # (1)
+) -> AssociateEntitiesToExperienceResponseTypeDef:  # (2)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef) 
+2. See [:material-code-braces: AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef) 
 
-<a id="associate\_entities\_to\_experience"></a>
 
-### associate_entities_to_experience
+```python title="Usage example with kwargs"
+kwargs: AssociateEntitiesToExperienceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+    "EntityList": ...,
+}
 
-Grants users or groups in your Amazon Web Services SSO identity source access
-to your Amazon Kendra experience.
+parent.associate_entities_to_experience(**kwargs)
+```
 
-Type annotations for `boto3.client("kendra").associate_entities_to_experience`
-method.
+1. See [:material-code-braces: AssociateEntitiesToExperienceRequestRequestTypeDef](./type_defs.md#associateentitiestoexperiencerequestrequesttypedef) 
 
-Boto3 documentation:
-[kendra.Client.associate_entities_to_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_entities_to_experience)
-
-Arguments mapping described in
-[AssociateEntitiesToExperienceRequestRequestTypeDef](./type_defs.md#associateentitiestoexperiencerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `EntityList`:
-  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
-  *(required)*
-
-Returns
-[AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef).
-
-<a id="associate\_personas\_to\_entities"></a>
-
-### associate_personas_to_entities
+### associate\_personas\_to\_entities
 
 Defines the specific permissions of users or groups in your Amazon Web Services
 SSO identity source with access to your Amazon Kendra experience.
 
-Type annotations for `boto3.client("kendra").associate_personas_to_entities`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").associate_personas_to_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_personas_to_entities)
 
-Boto3 documentation:
-[kendra.Client.associate_personas_to_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.associate_personas_to_entities)
+```python title="Method definition"
+def associate_personas_to_entities(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    Personas: Sequence[EntityPersonaConfigurationTypeDef],  # (1)
+) -> AssociatePersonasToEntitiesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AssociatePersonasToEntitiesRequestRequestTypeDef](./type_defs.md#associatepersonastoentitiesrequestrequesttypedef).
+1. See [:material-code-braces: EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef) 
+2. See [:material-code-braces: AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `Personas`:
-  `Sequence`\[[EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociatePersonasToEntitiesRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+    "Personas": ...,
+}
 
-Returns
-[AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef).
+parent.associate_personas_to_entities(**kwargs)
+```
 
-<a id="batch\_delete\_document"></a>
+1. See [:material-code-braces: AssociatePersonasToEntitiesRequestRequestTypeDef](./type_defs.md#associatepersonastoentitiesrequestrequesttypedef) 
 
-### batch_delete_document
+### batch\_delete\_document
 
 Removes one or more documents from an index.
 
-Type annotations for `boto3.client("kendra").batch_delete_document` method.
+Type annotations and code completion for `#!python boto3.client("kendra").batch_delete_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_delete_document)
 
-Boto3 documentation:
-[kendra.Client.batch_delete_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_delete_document)
+```python title="Method definition"
+def batch_delete_document(
+    self,
+    *,
+    IndexId: str,
+    DocumentIdList: Sequence[str],
+    DataSourceSyncJobMetricTarget: DataSourceSyncJobMetricTargetTypeDef = ...,  # (1)
+) -> BatchDeleteDocumentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchDeleteDocumentRequestRequestTypeDef](./type_defs.md#batchdeletedocumentrequestrequesttypedef).
+1. See [:material-code-braces: DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef) 
+2. See [:material-code-braces: BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `DocumentIdList`: `Sequence`\[`str`\] *(required)*
-- `DataSourceSyncJobMetricTarget`:
-  [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchDeleteDocumentRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "DocumentIdList": ...,
+}
 
-Returns
-[BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
+parent.batch_delete_document(**kwargs)
+```
 
-<a id="batch\_get\_document\_status"></a>
+1. See [:material-code-braces: BatchDeleteDocumentRequestRequestTypeDef](./type_defs.md#batchdeletedocumentrequestrequesttypedef) 
 
-### batch_get_document_status
+### batch\_get\_document\_status
 
 Returns the indexing status for one or more documents submitted with the
-[BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html)\_
+[BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html)_
 API.
 
-Type annotations for `boto3.client("kendra").batch_get_document_status` method.
+Type annotations and code completion for `#!python boto3.client("kendra").batch_get_document_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
 
-Boto3 documentation:
-[kendra.Client.batch_get_document_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_get_document_status)
+```python title="Method definition"
+def batch_get_document_status(
+    self,
+    *,
+    IndexId: str,
+    DocumentInfoList: Sequence[DocumentInfoTypeDef],  # (1)
+) -> BatchGetDocumentStatusResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetDocumentStatusRequestRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequestrequesttypedef).
+1. See [:material-code-braces: DocumentInfoTypeDef](./type_defs.md#documentinfotypedef) 
+2. See [:material-code-braces: BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `DocumentInfoList`:
-  `Sequence`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: BatchGetDocumentStatusRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "DocumentInfoList": ...,
+}
 
-Returns
-[BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
+parent.batch_get_document_status(**kwargs)
+```
 
-<a id="batch\_put\_document"></a>
+1. See [:material-code-braces: BatchGetDocumentStatusRequestRequestTypeDef](./type_defs.md#batchgetdocumentstatusrequestrequesttypedef) 
 
-### batch_put_document
+### batch\_put\_document
 
 Adds one or more documents to an index.
 
-Type annotations for `boto3.client("kendra").batch_put_document` method.
+Type annotations and code completion for `#!python boto3.client("kendra").batch_put_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_put_document)
 
-Boto3 documentation:
-[kendra.Client.batch_put_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.batch_put_document)
+```python title="Method definition"
+def batch_put_document(
+    self,
+    *,
+    IndexId: str,
+    Documents: Sequence[DocumentTypeDef],  # (1)
+    RoleArn: str = ...,
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (2)
+) -> BatchPutDocumentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[BatchPutDocumentRequestRequestTypeDef](./type_defs.md#batchputdocumentrequestrequesttypedef).
+1. See [:material-code-braces: DocumentTypeDef](./type_defs.md#documenttypedef) 
+2. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+3. See [:material-code-braces: BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Documents`: `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
-  *(required)*
-- `RoleArn`: `str`
-- `CustomDocumentEnrichmentConfiguration`:
-  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: BatchPutDocumentRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Documents": ...,
+}
 
-Returns
-[BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
+parent.batch_put_document(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BatchPutDocumentRequestRequestTypeDef](./type_defs.md#batchputdocumentrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("kendra").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("kendra").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.can_paginate)
 
-Boto3 documentation:
-[kendra.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="clear\_query\_suggestions"></a>
-
-### clear_query_suggestions
+### clear\_query\_suggestions
 
 Clears existing query suggestions from an index.
 
-Type annotations for `boto3.client("kendra").clear_query_suggestions` method.
+Type annotations and code completion for `#!python boto3.client("kendra").clear_query_suggestions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
 
-Boto3 documentation:
-[kendra.Client.clear_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.clear_query_suggestions)
+```python title="Method definition"
+def clear_query_suggestions(
+    self,
+    *,
+    IndexId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ClearQuerySuggestionsRequestRequestTypeDef](./type_defs.md#clearquerysuggestionsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ClearQuerySuggestionsRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-<a id="create\_data\_source"></a>
+parent.clear_query_suggestions(**kwargs)
+```
 
-### create_data_source
+1. See [:material-code-braces: ClearQuerySuggestionsRequestRequestTypeDef](./type_defs.md#clearquerysuggestionsrequestrequesttypedef) 
+
+### create\_data\_source
 
 Creates a data source that you want to use with an Amazon Kendra index.
 
-Type annotations for `boto3.client("kendra").create_data_source` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_data_source)
 
-Boto3 documentation:
-[kendra.Client.create_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_data_source)
+```python title="Method definition"
+def create_data_source(
+    self,
+    *,
+    Name: str,
+    IndexId: str,
+    Type: DataSourceTypeType,  # (1)
+    Configuration: DataSourceConfigurationTypeDef = ...,  # (2)
+    Description: str = ...,
+    Schedule: str = ...,
+    RoleArn: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    ClientToken: str = ...,
+    LanguageCode: str = ...,
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (4)
+) -> CreateDataSourceResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef).
+1. See [:material-code-brackets: DataSourceTypeType](./literals.md#datasourcetypetype) 
+2. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
+5. See [:material-code-braces: CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `Type`: [DataSourceTypeType](./literals.md#datasourcetypetype) *(required)*
-- `Configuration`:
-  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
-- `Description`: `str`
-- `Schedule`: `str`
-- `RoleArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
-- `LanguageCode`: `str`
-- `CustomDocumentEnrichmentConfiguration`:
-  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateDataSourceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IndexId": ...,
+    "Type": ...,
+}
 
-Returns
-[CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
+parent.create_data_source(**kwargs)
+```
 
-<a id="create\_experience"></a>
+1. See [:material-code-braces: CreateDataSourceRequestRequestTypeDef](./type_defs.md#createdatasourcerequestrequesttypedef) 
 
-### create_experience
+### create\_experience
 
 Creates an Amazon Kendra experience such as a search application.
 
-Type annotations for `boto3.client("kendra").create_experience` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_experience)
 
-Boto3 documentation:
-[kendra.Client.create_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_experience)
+```python title="Method definition"
+def create_experience(
+    self,
+    *,
+    Name: str,
+    IndexId: str,
+    RoleArn: str = ...,
+    Configuration: ExperienceConfigurationTypeDef = ...,  # (1)
+    Description: str = ...,
+    ClientToken: str = ...,
+) -> CreateExperienceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateExperienceRequestRequestTypeDef](./type_defs.md#createexperiencerequestrequesttypedef).
+1. See [:material-code-braces: ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef) 
+2. See [:material-code-braces: CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `RoleArn`: `str`
-- `Configuration`:
-  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
-- `Description`: `str`
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateExperienceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "IndexId": ...,
+}
 
-Returns
-[CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef).
+parent.create_experience(**kwargs)
+```
 
-<a id="create\_faq"></a>
+1. See [:material-code-braces: CreateExperienceRequestRequestTypeDef](./type_defs.md#createexperiencerequestrequesttypedef) 
 
-### create_faq
+### create\_faq
 
 Creates an new set of frequently asked question (FAQ) questions and answers.
 
-Type annotations for `boto3.client("kendra").create_faq` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_faq` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_faq)
 
-Boto3 documentation:
-[kendra.Client.create_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_faq)
+```python title="Method definition"
+def create_faq(
+    self,
+    *,
+    IndexId: str,
+    Name: str,
+    S3Path: S3PathTypeDef,  # (1)
+    RoleArn: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    FileFormat: FaqFileFormatType = ...,  # (3)
+    ClientToken: str = ...,
+    LanguageCode: str = ...,
+) -> CreateFaqResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFaqRequestRequestTypeDef](./type_defs.md#createfaqrequestrequesttypedef).
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: FaqFileFormatType](./literals.md#faqfileformattype) 
+4. See [:material-code-braces: CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `S3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
-- `RoleArn`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
-- `ClientToken`: `str`
-- `LanguageCode`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateFaqRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Name": ...,
+    "S3Path": ...,
+    "RoleArn": ...,
+}
 
-Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
+parent.create_faq(**kwargs)
+```
 
-<a id="create\_index"></a>
+1. See [:material-code-braces: CreateFaqRequestRequestTypeDef](./type_defs.md#createfaqrequestrequesttypedef) 
 
-### create_index
+### create\_index
 
 Creates a new Amazon Kendra index.
 
-Type annotations for `boto3.client("kendra").create_index` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_index)
 
-Boto3 documentation:
-[kendra.Client.create_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_index)
+```python title="Method definition"
+def create_index(
+    self,
+    *,
+    Name: str,
+    RoleArn: str,
+    Edition: IndexEditionType = ...,  # (1)
+    ServerSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef = ...,  # (2)
+    Description: str = ...,
+    ClientToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    UserTokenConfigurations: Sequence[UserTokenConfigurationTypeDef] = ...,  # (4)
+    UserContextPolicy: UserContextPolicyType = ...,  # (5)
+    UserGroupResolutionConfiguration: UserGroupResolutionConfigurationTypeDef = ...,  # (6)
+) -> CreateIndexResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef).
+1. See [:material-code-brackets: IndexEditionType](./literals.md#indexeditiontype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef) 
+5. See [:material-code-brackets: UserContextPolicyType](./literals.md#usercontextpolicytype) 
+6. See [:material-code-braces: UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef) 
+7. See [:material-code-braces: CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `Edition`: [IndexEditionType](./literals.md#indexeditiontype)
-- `ServerSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `UserTokenConfigurations`:
-  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`:
-  [UserContextPolicyType](./literals.md#usercontextpolicytype)
-- `UserGroupResolutionConfiguration`:
-  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateIndexRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
+parent.create_index(**kwargs)
+```
 
-<a id="create\_query\_suggestions\_block\_list"></a>
+1. See [:material-code-braces: CreateIndexRequestRequestTypeDef](./type_defs.md#createindexrequestrequesttypedef) 
 
-### create_query_suggestions_block_list
+### create\_query\_suggestions\_block\_list
 
 Creates a block list to exlcude certain queries from suggestions.
 
-Type annotations for
-`boto3.client("kendra").create_query_suggestions_block_list` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_query_suggestions_block_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_query_suggestions_block_list)
 
-Boto3 documentation:
-[kendra.Client.create_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_query_suggestions_block_list)
+```python title="Method definition"
+def create_query_suggestions_block_list(
+    self,
+    *,
+    IndexId: str,
+    Name: str,
+    SourceS3Path: S3PathTypeDef,  # (1)
+    RoleArn: str,
+    Description: str = ...,
+    ClientToken: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateQuerySuggestionsBlockListResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequestrequesttypedef).
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
-- `RoleArn`: `str` *(required)*
-- `Description`: `str`
-- `ClientToken`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateQuerySuggestionsBlockListRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Name": ...,
+    "SourceS3Path": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
+parent.create_query_suggestions_block_list(**kwargs)
+```
 
-<a id="create\_thesaurus"></a>
+1. See [:material-code-braces: CreateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#createquerysuggestionsblocklistrequestrequesttypedef) 
 
-### create_thesaurus
+### create\_thesaurus
 
 Creates a thesaurus for an index.
 
-Type annotations for `boto3.client("kendra").create_thesaurus` method.
+Type annotations and code completion for `#!python boto3.client("kendra").create_thesaurus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_thesaurus)
 
-Boto3 documentation:
-[kendra.Client.create_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.create_thesaurus)
+```python title="Method definition"
+def create_thesaurus(
+    self,
+    *,
+    IndexId: str,
+    Name: str,
+    RoleArn: str,
+    SourceS3Path: S3PathTypeDef,  # (1)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    ClientToken: str = ...,
+) -> CreateThesaurusResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateThesaurusRequestRequestTypeDef](./type_defs.md#createthesaurusrequestrequesttypedef).
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef) *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateThesaurusRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Name": ...,
+    "RoleArn": ...,
+    "SourceS3Path": ...,
+}
 
-Returns
-[CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
+parent.create_thesaurus(**kwargs)
+```
 
-<a id="delete\_data\_source"></a>
+1. See [:material-code-braces: CreateThesaurusRequestRequestTypeDef](./type_defs.md#createthesaurusrequestrequesttypedef) 
 
-### delete_data_source
+### delete\_data\_source
 
 Deletes an Amazon Kendra data source.
 
-Type annotations for `boto3.client("kendra").delete_data_source` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
 
-Boto3 documentation:
-[kendra.Client.delete_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_data_source)
+```python title="Method definition"
+def delete_data_source(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSourceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="delete\_experience"></a>
+parent.delete_data_source(**kwargs)
+```
 
-### delete_experience
+1. See [:material-code-braces: DeleteDataSourceRequestRequestTypeDef](./type_defs.md#deletedatasourcerequestrequesttypedef) 
+
+### delete\_experience
 
 Deletes your Amazon Kendra experience such as a search application.
 
-Type annotations for `boto3.client("kendra").delete_experience` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_experience)
 
-Boto3 documentation:
-[kendra.Client.delete_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_experience)
+```python title="Method definition"
+def delete_experience(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteExperienceRequestRequestTypeDef](./type_defs.md#deleteexperiencerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteExperienceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_experience(**kwargs)
+```
 
-<a id="delete\_faq"></a>
+1. See [:material-code-braces: DeleteExperienceRequestRequestTypeDef](./type_defs.md#deleteexperiencerequestrequesttypedef) 
 
-### delete_faq
+### delete\_faq
 
 Removes an FAQ from an index.
 
-Type annotations for `boto3.client("kendra").delete_faq` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_faq` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_faq)
 
-Boto3 documentation:
-[kendra.Client.delete_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_faq)
+```python title="Method definition"
+def delete_faq(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFaqRequestRequestTypeDef](./type_defs.md#deletefaqrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFaqRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="delete\_index"></a>
+parent.delete_faq(**kwargs)
+```
 
-### delete_index
+1. See [:material-code-braces: DeleteFaqRequestRequestTypeDef](./type_defs.md#deletefaqrequestrequesttypedef) 
+
+### delete\_index
 
 Deletes an existing Amazon Kendra index.
 
-Type annotations for `boto3.client("kendra").delete_index` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_index)
 
-Boto3 documentation:
-[kendra.Client.delete_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_index)
+```python title="Method definition"
+def delete_index(
+    self,
+    *,
+    Id: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIndexRequestRequestTypeDef](./type_defs.md#deleteindexrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIndexRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="delete\_principal\_mapping"></a>
+parent.delete_index(**kwargs)
+```
 
-### delete_principal_mapping
+1. See [:material-code-braces: DeleteIndexRequestRequestTypeDef](./type_defs.md#deleteindexrequestrequesttypedef) 
 
-Deletes a group so that all users and sub groups that belong to the group can
-no longer access documents only available to that group.
+### delete\_principal\_mapping
 
-Type annotations for `boto3.client("kendra").delete_principal_mapping` method.
+Deletes a group so that all users and sub groups that belong to the group can no
+longer access documents only available to that group.
 
-Boto3 documentation:
-[kendra.Client.delete_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_principal_mapping)
+Type annotations and code completion for `#!python boto3.client("kendra").delete_principal_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_principal_mapping)
 
-Arguments mapping described in
-[DeletePrincipalMappingRequestRequestTypeDef](./type_defs.md#deleteprincipalmappingrequestrequesttypedef).
+```python title="Method definition"
+def delete_principal_mapping(
+    self,
+    *,
+    IndexId: str,
+    GroupId: str,
+    DataSourceId: str = ...,
+    OrderingId: int = ...,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `DataSourceId`: `str`
-- `OrderingId`: `int`
 
-<a id="delete\_query\_suggestions\_block\_list"></a>
+```python title="Usage example with kwargs"
+kwargs: DeletePrincipalMappingRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "GroupId": ...,
+}
 
-### delete_query_suggestions_block_list
+parent.delete_principal_mapping(**kwargs)
+```
+
+1. See [:material-code-braces: DeletePrincipalMappingRequestRequestTypeDef](./type_defs.md#deleteprincipalmappingrequestrequesttypedef) 
+
+### delete\_query\_suggestions\_block\_list
 
 Deletes a block list used for query suggestions for an index.
 
-Type annotations for
-`boto3.client("kendra").delete_query_suggestions_block_list` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_query_suggestions_block_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
 
-Boto3 documentation:
-[kendra.Client.delete_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_query_suggestions_block_list)
+```python title="Method definition"
+def delete_query_suggestions_block_list(
+    self,
+    *,
+    IndexId: str,
+    Id: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteQuerySuggestionsBlockListRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Id": ...,
+}
 
-<a id="delete\_thesaurus"></a>
+parent.delete_query_suggestions_block_list(**kwargs)
+```
 
-### delete_thesaurus
+1. See [:material-code-braces: DeleteQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#deletequerysuggestionsblocklistrequestrequesttypedef) 
+
+### delete\_thesaurus
 
 Deletes an existing Amazon Kendra thesaurus.
 
-Type annotations for `boto3.client("kendra").delete_thesaurus` method.
+Type annotations and code completion for `#!python boto3.client("kendra").delete_thesaurus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_thesaurus)
 
-Boto3 documentation:
-[kendra.Client.delete_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.delete_thesaurus)
+```python title="Method definition"
+def delete_thesaurus(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteThesaurusRequestRequestTypeDef](./type_defs.md#deletethesaurusrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteThesaurusRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="describe\_data\_source"></a>
+parent.delete_thesaurus(**kwargs)
+```
 
-### describe_data_source
+1. See [:material-code-braces: DeleteThesaurusRequestRequestTypeDef](./type_defs.md#deletethesaurusrequestrequesttypedef) 
+
+### describe\_data\_source
 
 Gets information about an Amazon Kendra data source.
 
-Type annotations for `boto3.client("kendra").describe_data_source` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
 
-Boto3 documentation:
-[kendra.Client.describe_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_data_source)
+```python title="Method definition"
+def describe_data_source(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> DescribeDataSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDataSourceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+parent.describe_data_source(**kwargs)
+```
 
-<a id="describe\_experience"></a>
+1. See [:material-code-braces: DescribeDataSourceRequestRequestTypeDef](./type_defs.md#describedatasourcerequestrequesttypedef) 
 
-### describe_experience
+### describe\_experience
 
 Gets information about your Amazon Kendra experience such as a search
 application.
 
-Type annotations for `boto3.client("kendra").describe_experience` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_experience)
 
-Boto3 documentation:
-[kendra.Client.describe_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_experience)
+```python title="Method definition"
+def describe_experience(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> DescribeExperienceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeExperienceRequestRequestTypeDef](./type_defs.md#describeexperiencerequestrequesttypedef).
+1. See [:material-code-braces: DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeExperienceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef).
+parent.describe_experience(**kwargs)
+```
 
-<a id="describe\_faq"></a>
+1. See [:material-code-braces: DescribeExperienceRequestRequestTypeDef](./type_defs.md#describeexperiencerequestrequesttypedef) 
 
-### describe_faq
+### describe\_faq
 
 Gets information about an FAQ list.
 
-Type annotations for `boto3.client("kendra").describe_faq` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_faq` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_faq)
 
-Boto3 documentation:
-[kendra.Client.describe_faq](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_faq)
+```python title="Method definition"
+def describe_faq(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> DescribeFaqResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFaqRequestRequestTypeDef](./type_defs.md#describefaqrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFaqRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
+parent.describe_faq(**kwargs)
+```
 
-<a id="describe\_index"></a>
+1. See [:material-code-braces: DescribeFaqRequestRequestTypeDef](./type_defs.md#describefaqrequestrequesttypedef) 
 
-### describe_index
+### describe\_index
 
-Describes an existing Amazon Kendra index See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex).
+Describes an existing Amazon Kendra index See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/kendra-2019-02-03/DescribeIndex).
 
-Type annotations for `boto3.client("kendra").describe_index` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
 
-Boto3 documentation:
-[kendra.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_index)
+```python title="Method definition"
+def describe_index(
+    self,
+    *,
+    Id: str,
+) -> DescribeIndexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIndexRequestRequestTypeDef](./type_defs.md#describeindexrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIndexRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+parent.describe_index(**kwargs)
+```
 
-<a id="describe\_principal\_mapping"></a>
+1. See [:material-code-braces: DescribeIndexRequestRequestTypeDef](./type_defs.md#describeindexrequestrequesttypedef) 
 
-### describe_principal_mapping
+### describe\_principal\_mapping
 
 Describes the processing of `PUT` and `DELETE` actions for mapping users to
 their groups.
 
-Type annotations for `boto3.client("kendra").describe_principal_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_principal_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_principal_mapping)
 
-Boto3 documentation:
-[kendra.Client.describe_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_principal_mapping)
+```python title="Method definition"
+def describe_principal_mapping(
+    self,
+    *,
+    IndexId: str,
+    GroupId: str,
+    DataSourceId: str = ...,
+) -> DescribePrincipalMappingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePrincipalMappingRequestRequestTypeDef](./type_defs.md#describeprincipalmappingrequestrequesttypedef).
+1. See [:material-code-braces: DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `DataSourceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribePrincipalMappingRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "GroupId": ...,
+}
 
-Returns
-[DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef).
+parent.describe_principal_mapping(**kwargs)
+```
 
-<a id="describe\_query\_suggestions\_block\_list"></a>
+1. See [:material-code-braces: DescribePrincipalMappingRequestRequestTypeDef](./type_defs.md#describeprincipalmappingrequestrequesttypedef) 
 
-### describe_query_suggestions_block_list
+### describe\_query\_suggestions\_block\_list
 
 Describes a block list used for query suggestions for an index.
 
-Type annotations for
-`boto3.client("kendra").describe_query_suggestions_block_list` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_query_suggestions_block_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
 
-Boto3 documentation:
-[kendra.Client.describe_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_block_list)
+```python title="Method definition"
+def describe_query_suggestions_block_list(
+    self,
+    *,
+    IndexId: str,
+    Id: str,
+) -> DescribeQuerySuggestionsBlockListResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequestrequesttypedef).
+1. See [:material-code-braces: DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeQuerySuggestionsBlockListRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Id": ...,
+}
 
-Returns
-[DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
+parent.describe_query_suggestions_block_list(**kwargs)
+```
 
-<a id="describe\_query\_suggestions\_config"></a>
+1. See [:material-code-braces: DescribeQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#describequerysuggestionsblocklistrequestrequesttypedef) 
 
-### describe_query_suggestions_config
+### describe\_query\_suggestions\_config
 
 Describes the settings of query suggestions for an index.
 
-Type annotations for `boto3.client("kendra").describe_query_suggestions_config`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_query_suggestions_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
 
-Boto3 documentation:
-[kendra.Client.describe_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_query_suggestions_config)
+```python title="Method definition"
+def describe_query_suggestions_config(
+    self,
+    *,
+    IndexId: str,
+) -> DescribeQuerySuggestionsConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequestrequesttypedef).
+1. See [:material-code-braces: DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeQuerySuggestionsConfigRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns
-[DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
+parent.describe_query_suggestions_config(**kwargs)
+```
 
-<a id="describe\_thesaurus"></a>
+1. See [:material-code-braces: DescribeQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#describequerysuggestionsconfigrequestrequesttypedef) 
 
-### describe_thesaurus
+### describe\_thesaurus
 
 Describes an existing Amazon Kendra thesaurus.
 
-Type annotations for `boto3.client("kendra").describe_thesaurus` method.
+Type annotations and code completion for `#!python boto3.client("kendra").describe_thesaurus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_thesaurus)
 
-Boto3 documentation:
-[kendra.Client.describe_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.describe_thesaurus)
+```python title="Method definition"
+def describe_thesaurus(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> DescribeThesaurusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThesaurusRequestRequestTypeDef](./type_defs.md#describethesaurusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThesaurusRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
+parent.describe_thesaurus(**kwargs)
+```
 
-<a id="disassociate\_entities\_from\_experience"></a>
+1. See [:material-code-braces: DescribeThesaurusRequestRequestTypeDef](./type_defs.md#describethesaurusrequestrequesttypedef) 
 
-### disassociate_entities_from_experience
+### disassociate\_entities\_from\_experience
 
 Prevents users or groups in your Amazon Web Services SSO identity source from
 accessing your Amazon Kendra experience.
 
-Type annotations for
-`boto3.client("kendra").disassociate_entities_from_experience` method.
+Type annotations and code completion for `#!python boto3.client("kendra").disassociate_entities_from_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_entities_from_experience)
 
-Boto3 documentation:
-[kendra.Client.disassociate_entities_from_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_entities_from_experience)
+```python title="Method definition"
+def disassociate_entities_from_experience(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    EntityList: Sequence[EntityConfigurationTypeDef],  # (1)
+) -> DisassociateEntitiesFromExperienceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateEntitiesFromExperienceRequestRequestTypeDef](./type_defs.md#disassociateentitiesfromexperiencerequestrequesttypedef).
+1. See [:material-code-braces: EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef) 
+2. See [:material-code-braces: DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `EntityList`:
-  `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateEntitiesFromExperienceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+    "EntityList": ...,
+}
 
-Returns
-[DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef).
+parent.disassociate_entities_from_experience(**kwargs)
+```
 
-<a id="disassociate\_personas\_from\_entities"></a>
+1. See [:material-code-braces: DisassociateEntitiesFromExperienceRequestRequestTypeDef](./type_defs.md#disassociateentitiesfromexperiencerequestrequesttypedef) 
 
-### disassociate_personas_from_entities
+### disassociate\_personas\_from\_entities
 
 Removes the specific permissions of users or groups in your Amazon Web Services
 SSO identity source with access to your Amazon Kendra experience.
 
-Type annotations for
-`boto3.client("kendra").disassociate_personas_from_entities` method.
+Type annotations and code completion for `#!python boto3.client("kendra").disassociate_personas_from_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_personas_from_entities)
 
-Boto3 documentation:
-[kendra.Client.disassociate_personas_from_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.disassociate_personas_from_entities)
+```python title="Method definition"
+def disassociate_personas_from_entities(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    EntityIds: Sequence[str],
+) -> DisassociatePersonasFromEntitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociatePersonasFromEntitiesRequestRequestTypeDef](./type_defs.md#disassociatepersonasfromentitiesrequestrequesttypedef).
+1. See [:material-code-braces: DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `EntityIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociatePersonasFromEntitiesRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+    "EntityIds": ...,
+}
 
-Returns
-[DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef).
+parent.disassociate_personas_from_entities(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociatePersonasFromEntitiesRequestRequestTypeDef](./type_defs.md#disassociatepersonasfromentitiesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("kendra").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("kendra").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.generate_presigned_url)
 
-Boto3 documentation:
-[kendra.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_query\_suggestions"></a>
-
-### get_query_suggestions
+### get\_query\_suggestions
 
 Fetches the queries that are suggested to your users.
 
-Type annotations for `boto3.client("kendra").get_query_suggestions` method.
+Type annotations and code completion for `#!python boto3.client("kendra").get_query_suggestions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_query_suggestions)
 
-Boto3 documentation:
-[kendra.Client.get_query_suggestions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_query_suggestions)
+```python title="Method definition"
+def get_query_suggestions(
+    self,
+    *,
+    IndexId: str,
+    QueryText: str,
+    MaxSuggestionsCount: int = ...,
+) -> GetQuerySuggestionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetQuerySuggestionsRequestRequestTypeDef](./type_defs.md#getquerysuggestionsrequestrequesttypedef).
+1. See [:material-code-braces: GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `QueryText`: `str` *(required)*
-- `MaxSuggestionsCount`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetQuerySuggestionsRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "QueryText": ...,
+}
 
-Returns
-[GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
+parent.get_query_suggestions(**kwargs)
+```
 
-<a id="get\_snapshots"></a>
+1. See [:material-code-braces: GetQuerySuggestionsRequestRequestTypeDef](./type_defs.md#getquerysuggestionsrequestrequesttypedef) 
 
-### get_snapshots
+### get\_snapshots
 
 Retrieves search metrics data.
 
-Type annotations for `boto3.client("kendra").get_snapshots` method.
+Type annotations and code completion for `#!python boto3.client("kendra").get_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_snapshots)
 
-Boto3 documentation:
-[kendra.Client.get_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.get_snapshots)
+```python title="Method definition"
+def get_snapshots(
+    self,
+    *,
+    IndexId: str,
+    Interval: IntervalType,  # (1)
+    MetricType: MetricTypeType,  # (2)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> GetSnapshotsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetSnapshotsRequestRequestTypeDef](./type_defs.md#getsnapshotsrequestrequesttypedef).
+1. See [:material-code-brackets: IntervalType](./literals.md#intervaltype) 
+2. See [:material-code-brackets: MetricTypeType](./literals.md#metrictypetype) 
+3. See [:material-code-braces: GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Interval`: [IntervalType](./literals.md#intervaltype) *(required)*
-- `MetricType`: [MetricTypeType](./literals.md#metrictypetype) *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSnapshotsRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Interval": ...,
+    "MetricType": ...,
+}
 
-Returns
-[GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef).
+parent.get_snapshots(**kwargs)
+```
 
-<a id="list\_data\_source\_sync\_jobs"></a>
+1. See [:material-code-braces: GetSnapshotsRequestRequestTypeDef](./type_defs.md#getsnapshotsrequestrequesttypedef) 
 
-### list_data_source_sync_jobs
+### list\_data\_source\_sync\_jobs
 
 Gets statistics about synchronizing Amazon Kendra with a data source.
 
-Type annotations for `boto3.client("kendra").list_data_source_sync_jobs`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_data_source_sync_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_source_sync_jobs)
 
-Boto3 documentation:
-[kendra.Client.list_data_source_sync_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_source_sync_jobs)
+```python title="Method definition"
+def list_data_source_sync_jobs(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    StartTimeFilter: TimeRangeTypeDef = ...,  # (1)
+    StatusFilter: DataSourceSyncJobStatusType = ...,  # (2)
+) -> ListDataSourceSyncJobsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSourceSyncJobsRequestRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequestrequesttypedef).
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-brackets: DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype) 
+3. See [:material-code-braces: ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `StartTimeFilter`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `StatusFilter`:
-  [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListDataSourceSyncJobsRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
+parent.list_data_source_sync_jobs(**kwargs)
+```
 
-<a id="list\_data\_sources"></a>
+1. See [:material-code-braces: ListDataSourceSyncJobsRequestRequestTypeDef](./type_defs.md#listdatasourcesyncjobsrequestrequesttypedef) 
 
-### list_data_sources
+### list\_data\_sources
 
 Lists the data sources that you have created.
 
-Type annotations for `boto3.client("kendra").list_data_sources` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_data_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_sources)
 
-Boto3 documentation:
-[kendra.Client.list_data_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_data_sources)
+```python title="Method definition"
+def list_data_sources(
+    self,
+    *,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDataSourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDataSourcesRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns
-[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+parent.list_data_sources(**kwargs)
+```
 
-<a id="list\_entity\_personas"></a>
+1. See [:material-code-braces: ListDataSourcesRequestRequestTypeDef](./type_defs.md#listdatasourcesrequestrequesttypedef) 
 
-### list_entity_personas
+### list\_entity\_personas
 
-Lists specific permissions of users and groups with access to your Amazon
-Kendra experience.
+Lists specific permissions of users and groups with access to your Amazon Kendra
+experience.
 
-Type annotations for `boto3.client("kendra").list_entity_personas` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_entity_personas` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_entity_personas)
 
-Boto3 documentation:
-[kendra.Client.list_entity_personas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_entity_personas)
+```python title="Method definition"
+def list_entity_personas(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListEntityPersonasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEntityPersonasRequestRequestTypeDef](./type_defs.md#listentitypersonasrequestrequesttypedef).
+1. See [:material-code-braces: ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEntityPersonasRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef).
+parent.list_entity_personas(**kwargs)
+```
 
-<a id="list\_experience\_entities"></a>
+1. See [:material-code-braces: ListEntityPersonasRequestRequestTypeDef](./type_defs.md#listentitypersonasrequestrequesttypedef) 
 
-### list_experience_entities
+### list\_experience\_entities
 
 Lists users or groups in your Amazon Web Services SSO identity source that are
 granted access to your Amazon Kendra experience.
 
-Type annotations for `boto3.client("kendra").list_experience_entities` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_experience_entities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experience_entities)
 
-Boto3 documentation:
-[kendra.Client.list_experience_entities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experience_entities)
+```python title="Method definition"
+def list_experience_entities(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    NextToken: str = ...,
+) -> ListExperienceEntitiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExperienceEntitiesRequestRequestTypeDef](./type_defs.md#listexperienceentitiesrequestrequesttypedef).
+1. See [:material-code-braces: ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListExperienceEntitiesRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef).
+parent.list_experience_entities(**kwargs)
+```
 
-<a id="list\_experiences"></a>
+1. See [:material-code-braces: ListExperienceEntitiesRequestRequestTypeDef](./type_defs.md#listexperienceentitiesrequestrequesttypedef) 
 
-### list_experiences
+### list\_experiences
 
 Lists one or more Amazon Kendra experiences.
 
-Type annotations for `boto3.client("kendra").list_experiences` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_experiences` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experiences)
 
-Boto3 documentation:
-[kendra.Client.list_experiences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_experiences)
+```python title="Method definition"
+def list_experiences(
+    self,
+    *,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListExperiencesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListExperiencesRequestRequestTypeDef](./type_defs.md#listexperiencesrequestrequesttypedef).
+1. See [:material-code-braces: ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListExperiencesRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns
-[ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef).
+parent.list_experiences(**kwargs)
+```
 
-<a id="list\_faqs"></a>
+1. See [:material-code-braces: ListExperiencesRequestRequestTypeDef](./type_defs.md#listexperiencesrequestrequesttypedef) 
 
-### list_faqs
+### list\_faqs
 
 Gets a list of FAQ lists associated with an index.
 
-Type annotations for `boto3.client("kendra").list_faqs` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_faqs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_faqs)
 
-Boto3 documentation:
-[kendra.Client.list_faqs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_faqs)
+```python title="Method definition"
+def list_faqs(
+    self,
+    *,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListFaqsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFaqsRequestRequestTypeDef](./type_defs.md#listfaqsrequestrequesttypedef).
+1. See [:material-code-braces: ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFaqsRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
+parent.list_faqs(**kwargs)
+```
 
-<a id="list\_groups\_older\_than\_ordering\_id"></a>
+1. See [:material-code-braces: ListFaqsRequestRequestTypeDef](./type_defs.md#listfaqsrequestrequesttypedef) 
 
-### list_groups_older_than_ordering_id
+### list\_groups\_older\_than\_ordering\_id
 
 Provides a list of groups that are mapped to users before a given ordering or
 timestamp identifier.
 
-Type annotations for
-`boto3.client("kendra").list_groups_older_than_ordering_id` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_groups_older_than_ordering_id` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_groups_older_than_ordering_id)
 
-Boto3 documentation:
-[kendra.Client.list_groups_older_than_ordering_id](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_groups_older_than_ordering_id)
+```python title="Method definition"
+def list_groups_older_than_ordering_id(
+    self,
+    *,
+    IndexId: str,
+    OrderingId: int,
+    DataSourceId: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListGroupsOlderThanOrderingIdResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsOlderThanOrderingIdRequestRequestTypeDef](./type_defs.md#listgroupsolderthanorderingidrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `OrderingId`: `int` *(required)*
-- `DataSourceId`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsOlderThanOrderingIdRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "OrderingId": ...,
+}
 
-Returns
-[ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef).
+parent.list_groups_older_than_ordering_id(**kwargs)
+```
 
-<a id="list\_indices"></a>
+1. See [:material-code-braces: ListGroupsOlderThanOrderingIdRequestRequestTypeDef](./type_defs.md#listgroupsolderthanorderingidrequestrequesttypedef) 
 
-### list_indices
+### list\_indices
 
 Lists the Amazon Kendra indexes that you have created.
 
-Type annotations for `boto3.client("kendra").list_indices` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_indices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)
 
-Boto3 documentation:
-[kendra.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_indices)
+```python title="Method definition"
+def list_indices(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIndicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef).
+1. See [:material-code-braces: ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIndicesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+parent.list_indices(**kwargs)
+```
 
-<a id="list\_query\_suggestions\_block\_lists"></a>
+1. See [:material-code-braces: ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef) 
 
-### list_query_suggestions_block_lists
+### list\_query\_suggestions\_block\_lists
 
 Lists the block lists used for query suggestions for an index.
 
-Type annotations for
-`boto3.client("kendra").list_query_suggestions_block_lists` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_query_suggestions_block_lists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_query_suggestions_block_lists)
 
-Boto3 documentation:
-[kendra.Client.list_query_suggestions_block_lists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_query_suggestions_block_lists)
+```python title="Method definition"
+def list_query_suggestions_block_lists(
+    self,
+    *,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListQuerySuggestionsBlockListsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListQuerySuggestionsBlockListsRequestRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequestrequesttypedef).
+1. See [:material-code-braces: ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListQuerySuggestionsBlockListsRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns
-[ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
+parent.list_query_suggestions_block_lists(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListQuerySuggestionsBlockListsRequestRequestTypeDef](./type_defs.md#listquerysuggestionsblocklistsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Gets a list of tags associated with a specified resource.
 
-Type annotations for `boto3.client("kendra").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[kendra.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_thesauri"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_thesauri
+### list\_thesauri
 
 Lists the Amazon Kendra thesauri associated with an index.
 
-Type annotations for `boto3.client("kendra").list_thesauri` method.
+Type annotations and code completion for `#!python boto3.client("kendra").list_thesauri` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_thesauri)
 
-Boto3 documentation:
-[kendra.Client.list_thesauri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.list_thesauri)
+```python title="Method definition"
+def list_thesauri(
+    self,
+    *,
+    IndexId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListThesauriResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThesauriRequestRequestTypeDef](./type_defs.md#listthesaurirequestrequesttypedef).
+1. See [:material-code-braces: ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThesauriRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns
-[ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
+parent.list_thesauri(**kwargs)
+```
 
-<a id="put\_principal\_mapping"></a>
+1. See [:material-code-braces: ListThesauriRequestRequestTypeDef](./type_defs.md#listthesaurirequestrequesttypedef) 
 
-### put_principal_mapping
+### put\_principal\_mapping
 
-Maps users to their groups so that you only need to provide the user ID when
-you issue the query.
+Maps users to their groups so that you only need to provide the user ID when you
+issue the query.
 
-Type annotations for `boto3.client("kendra").put_principal_mapping` method.
+Type annotations and code completion for `#!python boto3.client("kendra").put_principal_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.put_principal_mapping)
 
-Boto3 documentation:
-[kendra.Client.put_principal_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.put_principal_mapping)
+```python title="Method definition"
+def put_principal_mapping(
+    self,
+    *,
+    IndexId: str,
+    GroupId: str,
+    GroupMembers: GroupMembersTypeDef,  # (1)
+    DataSourceId: str = ...,
+    OrderingId: int = ...,
+    RoleArn: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[PutPrincipalMappingRequestRequestTypeDef](./type_defs.md#putprincipalmappingrequestrequesttypedef).
+1. See [:material-code-braces: GroupMembersTypeDef](./type_defs.md#groupmemberstypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
-- `GroupMembers`: [GroupMembersTypeDef](./type_defs.md#groupmemberstypedef)
-  *(required)*
-- `DataSourceId`: `str`
-- `OrderingId`: `int`
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutPrincipalMappingRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "GroupId": ...,
+    "GroupMembers": ...,
+}
 
-<a id="query"></a>
+parent.put_principal_mapping(**kwargs)
+```
+
+1. See [:material-code-braces: PutPrincipalMappingRequestRequestTypeDef](./type_defs.md#putprincipalmappingrequestrequesttypedef) 
 
 ### query
 
 Searches an active index.
 
-Type annotations for `boto3.client("kendra").query` method.
+Type annotations and code completion for `#!python boto3.client("kendra").query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.query)
 
-Boto3 documentation:
-[kendra.Client.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.query)
+```python title="Method definition"
+def query(
+    self,
+    *,
+    IndexId: str,
+    QueryText: str = ...,
+    AttributeFilter: AttributeFilterTypeDef = ...,  # (1)
+    Facets: Sequence[FacetTypeDef] = ...,  # (2)
+    RequestedDocumentAttributes: Sequence[str] = ...,
+    QueryResultTypeFilter: QueryResultTypeType = ...,  # (3)
+    DocumentRelevanceOverrideConfigurations: Sequence[DocumentRelevanceConfigurationTypeDef] = ...,  # (4)
+    PageNumber: int = ...,
+    PageSize: int = ...,
+    SortingConfiguration: SortingConfigurationTypeDef = ...,  # (5)
+    UserContext: UserContextTypeDef = ...,  # (6)
+    VisitorId: str = ...,
+    SpellCorrectionConfiguration: SpellCorrectionConfigurationTypeDef = ...,  # (7)
+) -> QueryResultTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef).
+1. See [:material-code-braces: AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef) 
+2. See [:material-code-braces: FacetTypeDef](./type_defs.md#facettypedef) 
+3. See [:material-code-brackets: QueryResultTypeType](./literals.md#queryresulttypetype) 
+4. See [:material-code-braces: DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef) 
+5. See [:material-code-braces: SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef) 
+6. See [:material-code-braces: UserContextTypeDef](./type_defs.md#usercontexttypedef) 
+7. See [:material-code-braces: SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef) 
+8. See [:material-code-braces: QueryResultTypeDef](./type_defs.md#queryresulttypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `QueryText`: `str`
-- `AttributeFilter`:
-  [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
-- `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
-- `RequestedDocumentAttributes`: `Sequence`\[`str`\]
-- `QueryResultTypeFilter`:
-  [QueryResultTypeType](./literals.md#queryresulttypetype)
-- `DocumentRelevanceOverrideConfigurations`:
-  `Sequence`\[[DocumentRelevanceConfigurationTypeDef](./type_defs.md#documentrelevanceconfigurationtypedef)\]
-- `PageNumber`: `int`
-- `PageSize`: `int`
-- `SortingConfiguration`:
-  [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
-- `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
-- `VisitorId`: `str`
-- `SpellCorrectionConfiguration`:
-  [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: QueryRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
+parent.query(**kwargs)
+```
 
-<a id="start\_data\_source\_sync\_job"></a>
+1. See [:material-code-braces: QueryRequestRequestTypeDef](./type_defs.md#queryrequestrequesttypedef) 
 
-### start_data_source_sync_job
+### start\_data\_source\_sync\_job
 
 Starts a synchronization job for a data source.
 
-Type annotations for `boto3.client("kendra").start_data_source_sync_job`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").start_data_source_sync_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
 
-Boto3 documentation:
-[kendra.Client.start_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.start_data_source_sync_job)
+```python title="Method definition"
+def start_data_source_sync_job(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> StartDataSourceSyncJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequestrequesttypedef).
+1. See [:material-code-braces: StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartDataSourceSyncJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-Returns
-[StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
+parent.start_data_source_sync_job(**kwargs)
+```
 
-<a id="stop\_data\_source\_sync\_job"></a>
+1. See [:material-code-braces: StartDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#startdatasourcesyncjobrequestrequesttypedef) 
 
-### stop_data_source_sync_job
+### stop\_data\_source\_sync\_job
 
 Stops a synchronization job that is currently running.
 
-Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
+Type annotations and code completion for `#!python boto3.client("kendra").stop_data_source_sync_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.stop_data_source_sync_job)
 
-Boto3 documentation:
-[kendra.Client.stop_data_source_sync_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.stop_data_source_sync_job)
+```python title="Method definition"
+def stop_data_source_sync_job(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopDataSourceSyncJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="submit\_feedback"></a>
+parent.stop_data_source_sync_job(**kwargs)
+```
 
-### submit_feedback
+1. See [:material-code-braces: StopDataSourceSyncJobRequestRequestTypeDef](./type_defs.md#stopdatasourcesyncjobrequestrequesttypedef) 
+
+### submit\_feedback
 
 Enables you to provide feedback to Amazon Kendra to improve the performance of
 your index.
 
-Type annotations for `boto3.client("kendra").submit_feedback` method.
+Type annotations and code completion for `#!python boto3.client("kendra").submit_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.submit_feedback)
 
-Boto3 documentation:
-[kendra.Client.submit_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.submit_feedback)
+```python title="Method definition"
+def submit_feedback(
+    self,
+    *,
+    IndexId: str,
+    QueryId: str,
+    ClickFeedbackItems: Sequence[ClickFeedbackTypeDef] = ...,  # (1)
+    RelevanceFeedbackItems: Sequence[RelevanceFeedbackTypeDef] = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef).
+1. See [:material-code-braces: ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef) 
+2. See [:material-code-braces: RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `QueryId`: `str` *(required)*
-- `ClickFeedbackItems`:
-  `Sequence`\[[ClickFeedbackTypeDef](./type_defs.md#clickfeedbacktypedef)\]
-- `RelevanceFeedbackItems`:
-  `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
+```python title="Usage example with kwargs"
+kwargs: SubmitFeedbackRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "QueryId": ...,
+}
 
-<a id="tag\_resource"></a>
+parent.submit_feedback(**kwargs)
+```
 
-### tag_resource
+1. See [:material-code-braces: SubmitFeedbackRequestRequestTypeDef](./type_defs.md#submitfeedbackrequestrequesttypedef) 
+
+### tag\_resource
 
 Adds the specified tag to the specified index, FAQ, or data source resource.
 
-Type annotations for `boto3.client("kendra").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kendra").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.tag_resource)
 
-Boto3 documentation:
-[kendra.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from an index, FAQ, or a data source.
 
-Type annotations for `boto3.client("kendra").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("kendra").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.untag_resource)
 
-Boto3 documentation:
-[kendra.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_data\_source"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_data_source
+### update\_data\_source
 
 Updates an existing Amazon Kendra data source.
 
-Type annotations for `boto3.client("kendra").update_data_source` method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_data_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_data_source)
 
-Boto3 documentation:
-[kendra.Client.update_data_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_data_source)
+```python title="Method definition"
+def update_data_source(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    Name: str = ...,
+    Configuration: DataSourceConfigurationTypeDef = ...,  # (1)
+    Description: str = ...,
+    Schedule: str = ...,
+    RoleArn: str = ...,
+    LanguageCode: str = ...,
+    CustomDocumentEnrichmentConfiguration: CustomDocumentEnrichmentConfigurationTypeDef = ...,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef).
+1. See [:material-code-braces: DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef) 
+2. See [:material-code-braces: CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `Name`: `str`
-- `Configuration`:
-  [DataSourceConfigurationTypeDef](./type_defs.md#datasourceconfigurationtypedef)
-- `Description`: `str`
-- `Schedule`: `str`
-- `RoleArn`: `str`
-- `LanguageCode`: `str`
-- `CustomDocumentEnrichmentConfiguration`:
-  [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSourceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="update\_experience"></a>
+parent.update_data_source(**kwargs)
+```
 
-### update_experience
+1. See [:material-code-braces: UpdateDataSourceRequestRequestTypeDef](./type_defs.md#updatedatasourcerequestrequesttypedef) 
+
+### update\_experience
 
 Updates your Amazon Kendra experience such as a search application.
 
-Type annotations for `boto3.client("kendra").update_experience` method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_experience` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_experience)
 
-Boto3 documentation:
-[kendra.Client.update_experience](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_experience)
+```python title="Method definition"
+def update_experience(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    Name: str = ...,
+    RoleArn: str = ...,
+    Configuration: ExperienceConfigurationTypeDef = ...,  # (1)
+    Description: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateExperienceRequestRequestTypeDef](./type_defs.md#updateexperiencerequestrequesttypedef).
+1. See [:material-code-braces: ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `Name`: `str`
-- `RoleArn`: `str`
-- `Configuration`:
-  [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
-- `Description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateExperienceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
 
-<a id="update\_index"></a>
+parent.update_experience(**kwargs)
+```
 
-### update_index
+1. See [:material-code-braces: UpdateExperienceRequestRequestTypeDef](./type_defs.md#updateexperiencerequestrequesttypedef) 
+
+### update\_index
 
 Updates an existing Amazon Kendra index.
 
-Type annotations for `boto3.client("kendra").update_index` method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_index)
 
-Boto3 documentation:
-[kendra.Client.update_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_index)
+```python title="Method definition"
+def update_index(
+    self,
+    *,
+    Id: str,
+    Name: str = ...,
+    RoleArn: str = ...,
+    Description: str = ...,
+    DocumentMetadataConfigurationUpdates: Sequence[DocumentMetadataConfigurationTypeDef] = ...,  # (1)
+    CapacityUnits: CapacityUnitsConfigurationTypeDef = ...,  # (2)
+    UserTokenConfigurations: Sequence[UserTokenConfigurationTypeDef] = ...,  # (3)
+    UserContextPolicy: UserContextPolicyType = ...,  # (4)
+    UserGroupResolutionConfiguration: UserGroupResolutionConfigurationTypeDef = ...,  # (5)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateIndexRequestRequestTypeDef](./type_defs.md#updateindexrequestrequesttypedef).
+1. See [:material-code-braces: DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef) 
+2. See [:material-code-braces: CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef) 
+3. See [:material-code-braces: UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef) 
+4. See [:material-code-brackets: UserContextPolicyType](./literals.md#usercontextpolicytype) 
+5. See [:material-code-braces: UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Name`: `str`
-- `RoleArn`: `str`
-- `Description`: `str`
-- `DocumentMetadataConfigurationUpdates`:
-  `Sequence`\[[DocumentMetadataConfigurationTypeDef](./type_defs.md#documentmetadataconfigurationtypedef)\]
-- `CapacityUnits`:
-  [CapacityUnitsConfigurationTypeDef](./type_defs.md#capacityunitsconfigurationtypedef)
-- `UserTokenConfigurations`:
-  `Sequence`\[[UserTokenConfigurationTypeDef](./type_defs.md#usertokenconfigurationtypedef)\]
-- `UserContextPolicy`:
-  [UserContextPolicyType](./literals.md#usercontextpolicytype)
-- `UserGroupResolutionConfiguration`:
-  [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateIndexRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-<a id="update\_query\_suggestions\_block\_list"></a>
+parent.update_index(**kwargs)
+```
 
-### update_query_suggestions_block_list
+1. See [:material-code-braces: UpdateIndexRequestRequestTypeDef](./type_defs.md#updateindexrequestrequesttypedef) 
+
+### update\_query\_suggestions\_block\_list
 
 Updates a block list used for query suggestions for an index.
 
-Type annotations for
-`boto3.client("kendra").update_query_suggestions_block_list` method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_query_suggestions_block_list` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_block_list)
 
-Boto3 documentation:
-[kendra.Client.update_query_suggestions_block_list](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_block_list)
+```python title="Method definition"
+def update_query_suggestions_block_list(
+    self,
+    *,
+    IndexId: str,
+    Id: str,
+    Name: str = ...,
+    Description: str = ...,
+    SourceS3Path: S3PathTypeDef = ...,  # (1)
+    RoleArn: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequestrequesttypedef).
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Id`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
-- `RoleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateQuerySuggestionsBlockListRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+    "Id": ...,
+}
 
-<a id="update\_query\_suggestions\_config"></a>
+parent.update_query_suggestions_block_list(**kwargs)
+```
 
-### update_query_suggestions_config
+1. See [:material-code-braces: UpdateQuerySuggestionsBlockListRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsblocklistrequestrequesttypedef) 
+
+### update\_query\_suggestions\_config
 
 Updates the settings of query suggestions for an index.
 
-Type annotations for `boto3.client("kendra").update_query_suggestions_config`
-method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_query_suggestions_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_config)
 
-Boto3 documentation:
-[kendra.Client.update_query_suggestions_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_query_suggestions_config)
+```python title="Method definition"
+def update_query_suggestions_config(
+    self,
+    *,
+    IndexId: str,
+    Mode: ModeType = ...,  # (1)
+    QueryLogLookBackWindowInDays: int = ...,
+    IncludeQueriesWithoutUserInformation: bool = ...,
+    MinimumNumberOfQueryingUsers: int = ...,
+    MinimumQueryCount: int = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequestrequesttypedef).
+1. See [:material-code-brackets: ModeType](./literals.md#modetype) 
 
-Keyword-only arguments:
 
-- `IndexId`: `str` *(required)*
-- `Mode`: [ModeType](./literals.md#modetype)
-- `QueryLogLookBackWindowInDays`: `int`
-- `IncludeQueriesWithoutUserInformation`: `bool`
-- `MinimumNumberOfQueryingUsers`: `int`
-- `MinimumQueryCount`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateQuerySuggestionsConfigRequestRequestTypeDef = {  # (1)
+    "IndexId": ...,
+}
 
-<a id="update\_thesaurus"></a>
+parent.update_query_suggestions_config(**kwargs)
+```
 
-### update_thesaurus
+1. See [:material-code-braces: UpdateQuerySuggestionsConfigRequestRequestTypeDef](./type_defs.md#updatequerysuggestionsconfigrequestrequesttypedef) 
+
+### update\_thesaurus
 
 Updates a thesaurus file associated with an index.
 
-Type annotations for `boto3.client("kendra").update_thesaurus` method.
+Type annotations and code completion for `#!python boto3.client("kendra").update_thesaurus` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_thesaurus)
 
-Boto3 documentation:
-[kendra.Client.update_thesaurus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra.Client.update_thesaurus)
+```python title="Method definition"
+def update_thesaurus(
+    self,
+    *,
+    Id: str,
+    IndexId: str,
+    Name: str = ...,
+    Description: str = ...,
+    RoleArn: str = ...,
+    SourceS3Path: S3PathTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateThesaurusRequestRequestTypeDef](./type_defs.md#updatethesaurusrequestrequesttypedef).
+1. See [:material-code-braces: S3PathTypeDef](./type_defs.md#s3pathtypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `IndexId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `RoleArn`: `str`
-- `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateThesaurusRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "IndexId": ...,
+}
+
+parent.update_thesaurus(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateThesaurusRequestRequestTypeDef](./type_defs.md#updatethesaurusrequestrequesttypedef) 
+
+
+
+

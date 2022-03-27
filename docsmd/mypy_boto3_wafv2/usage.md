@@ -1,69 +1,71 @@
-<a id="examples-for-boto3-wafv2-module"></a>
-
-# Examples for boto3 WAFV2 module
+# Examples
 
 > [Index](../README.md) > [WAFV2](./README.md) > Examples
 
-- [Examples for boto3 WAFV2 module](#examples-for-boto3-wafv2-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
+    type annotations stubs module [mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[wafv2]` package installed.
 
-Write your `WAFV2` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `WAFV2` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type WAFV2Client
-# and provides type checking and code completion
-client = session.client("wafv2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_web_acl()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("wafv2")  # (1)
+    result = client.check_capacity()  # (2)
+    ```
+
+    1. client: [WAFV2Client](./client.md)
+    2. result: [:material-code-braces: CheckCapacityResponseTypeDef](./type_defs.md#checkcapacityresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[wafv2]` or a standalone `mypy_boto3_wafv2` package, you
-have to explicitly specify `client: WAFV2Client` type annotation.
+With `boto3-stubs-lite[wafv2]`
+or a standalone `mypy_boto3_wafv2` package, you have to explicitly specify `client: WAFV2Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_wafv2.client import WAFV2Client
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_wafv2.client import WAFV2Client
+    from mypy_boto3_wafv2.type_defs import CheckCapacityResponseTypeDef
+    from mypy_boto3_wafv2.type_defs import CheckCapacityRequestRequestTypeDef
 
 
-from mypy_boto3_wafv2.type_defs import Dict[str, Any]
+    session = Session()
+
+    client: WAFV2Client = session.client("wafv2")
+
+    kwargs: CheckCapacityRequestRequestTypeDef = {...}
+    result: CheckCapacityResponseTypeDef = client.check_capacity(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: WAFV2Client = session.client("wafv2")
 
-result: Dict[str, Any] = client.associate_web_acl()
-```
+

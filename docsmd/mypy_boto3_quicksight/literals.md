@@ -1,1289 +1,1373 @@
-<a id="literals-for-boto3-quicksight-module"></a>
-
-# Literals for boto3 QuickSight module
+# Literals
 
 > [Index](../README.md) > [QuickSight](./README.md) > Literals
 
-Auto-generated documentation for
-[QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
-type annotations stubs module
-[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+!!! note ""
 
-- [Literals for boto3 QuickSight module](#literals-for-boto3-quicksight-module)
-  - [AnalysisErrorTypeType](#analysiserrortypetype)
-  - [AnalysisFilterAttributeType](#analysisfilterattributetype)
-  - [AssignmentStatusType](#assignmentstatustype)
-  - [ColumnDataTypeType](#columndatatypetype)
-  - [ColumnTagNameType](#columntagnametype)
-  - [DashboardBehaviorType](#dashboardbehaviortype)
-  - [DashboardErrorTypeType](#dashboarderrortypetype)
-  - [DashboardFilterAttributeType](#dashboardfilterattributetype)
-  - [DashboardUIStateType](#dashboarduistatetype)
-  - [DataSetImportModeType](#datasetimportmodetype)
-  - [DataSourceErrorInfoTypeType](#datasourceerrorinfotypetype)
-  - [DataSourceTypeType](#datasourcetypetype)
-  - [EditionType](#editiontype)
-  - [EmbeddingIdentityTypeType](#embeddingidentitytypetype)
-  - [FileFormatType](#fileformattype)
-  - [FilterOperatorType](#filteroperatortype)
-  - [FolderFilterAttributeType](#folderfilterattributetype)
-  - [FolderTypeType](#foldertypetype)
-  - [GeoSpatialCountryCodeType](#geospatialcountrycodetype)
-  - [GeoSpatialDataRoleType](#geospatialdataroletype)
-  - [GroupFilterAttributeType](#groupfilterattributetype)
-  - [GroupFilterOperatorType](#groupfilteroperatortype)
-  - [IdentityStoreType](#identitystoretype)
-  - [IdentityTypeType](#identitytypetype)
-  - [IngestionErrorTypeType](#ingestionerrortypetype)
-  - [IngestionRequestSourceType](#ingestionrequestsourcetype)
-  - [IngestionRequestTypeType](#ingestionrequesttypetype)
-  - [IngestionStatusType](#ingestionstatustype)
-  - [IngestionTypeType](#ingestiontypetype)
-  - [InputColumnDataTypeType](#inputcolumndatatypetype)
-  - [JoinTypeType](#jointypetype)
-  - [ListAnalysesPaginatorName](#listanalysespaginatorname)
-  - [ListDashboardVersionsPaginatorName](#listdashboardversionspaginatorname)
-  - [ListDashboardsPaginatorName](#listdashboardspaginatorname)
-  - [ListDataSetsPaginatorName](#listdatasetspaginatorname)
-  - [ListDataSourcesPaginatorName](#listdatasourcespaginatorname)
-  - [ListIngestionsPaginatorName](#listingestionspaginatorname)
-  - [ListNamespacesPaginatorName](#listnamespacespaginatorname)
-  - [ListTemplateAliasesPaginatorName](#listtemplatealiasespaginatorname)
-  - [ListTemplateVersionsPaginatorName](#listtemplateversionspaginatorname)
-  - [ListTemplatesPaginatorName](#listtemplatespaginatorname)
-  - [ListThemeVersionsPaginatorName](#listthemeversionspaginatorname)
-  - [ListThemesPaginatorName](#listthemespaginatorname)
-  - [MemberTypeType](#membertypetype)
-  - [NamespaceErrorTypeType](#namespaceerrortypetype)
-  - [NamespaceStatusType](#namespacestatustype)
-  - [ResourceStatusType](#resourcestatustype)
-  - [RowLevelPermissionFormatVersionType](#rowlevelpermissionformatversiontype)
-  - [RowLevelPermissionPolicyType](#rowlevelpermissionpolicytype)
-  - [SearchAnalysesPaginatorName](#searchanalysespaginatorname)
-  - [SearchDashboardsPaginatorName](#searchdashboardspaginatorname)
-  - [StatusType](#statustype)
-  - [TemplateErrorTypeType](#templateerrortypetype)
-  - [TextQualifierType](#textqualifiertype)
-  - [ThemeErrorTypeType](#themeerrortypetype)
-  - [ThemeTypeType](#themetypetype)
-  - [UserRoleType](#userroletype)
-  - [QuickSightServiceName](#quicksightservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="analysiserrortypetype"></a>
+    Auto-generated documentation for [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
+    type annotations stubs module [mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 ## AnalysisErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import AnalysisErrorTypeType
+
+def get_value() -> AnalysisErrorTypeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `COLUMN_GEOGRAPHIC_ROLE_MISMATCH`
-- `COLUMN_REPLACEMENT_MISSING`
-- `COLUMN_TYPE_MISMATCH`
-- `DATA_SET_NOT_FOUND`
-- `INTERNAL_FAILURE`
-- `PARAMETER_NOT_FOUND`
-- `PARAMETER_TYPE_INVALID`
-- `PARAMETER_VALUE_INCOMPATIBLE`
-- `SOURCE_NOT_FOUND`
-
-<a id="analysisfilterattributetype"></a>
-
+```python title="Definition"
+AnalysisErrorTypeType = Literal[
+    "ACCESS_DENIED",
+    "COLUMN_GEOGRAPHIC_ROLE_MISMATCH",
+    "COLUMN_REPLACEMENT_MISSING",
+    "COLUMN_TYPE_MISMATCH",
+    "DATA_SET_NOT_FOUND",
+    "INTERNAL_FAILURE",
+    "PARAMETER_NOT_FOUND",
+    "PARAMETER_TYPE_INVALID",
+    "PARAMETER_VALUE_INCOMPATIBLE",
+    "SOURCE_NOT_FOUND",
+]
+```
 ## AnalysisFilterAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import AnalysisFilterAttributeType
+
+def get_value() -> AnalysisFilterAttributeType:
+    return "QUICKSIGHT_USER"
 ```
 
-Values:
-
-- `QUICKSIGHT_USER`
-
-<a id="assignmentstatustype"></a>
-
+```python title="Definition"
+AnalysisFilterAttributeType = Literal[
+    "QUICKSIGHT_USER",
+]
+```
 ## AssignmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import AssignmentStatusType
+
+def get_value() -> AssignmentStatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `DRAFT`
-- `ENABLED`
-
-<a id="columndatatypetype"></a>
-
+```python title="Definition"
+AssignmentStatusType = Literal[
+    "DISABLED",
+    "DRAFT",
+    "ENABLED",
+]
+```
 ## ColumnDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ColumnDataTypeType
+
+def get_value() -> ColumnDataTypeType:
+    return "DATETIME"
 ```
 
-Values:
-
-- `DATETIME`
-- `DECIMAL`
-- `INTEGER`
-- `STRING`
-
-<a id="columntagnametype"></a>
-
+```python title="Definition"
+ColumnDataTypeType = Literal[
+    "DATETIME",
+    "DECIMAL",
+    "INTEGER",
+    "STRING",
+]
+```
 ## ColumnTagNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ColumnTagNameType
+
+def get_value() -> ColumnTagNameType:
+    return "COLUMN_DESCRIPTION"
 ```
 
-Values:
-
-- `COLUMN_DESCRIPTION`
-- `COLUMN_GEOGRAPHIC_ROLE`
-
-<a id="dashboardbehaviortype"></a>
-
+```python title="Definition"
+ColumnTagNameType = Literal[
+    "COLUMN_DESCRIPTION",
+    "COLUMN_GEOGRAPHIC_ROLE",
+]
+```
 ## DashboardBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DashboardBehaviorType
+
+def get_value() -> DashboardBehaviorType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="dashboarderrortypetype"></a>
-
+```python title="Definition"
+DashboardBehaviorType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## DashboardErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DashboardErrorTypeType
+
+def get_value() -> DashboardErrorTypeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `COLUMN_GEOGRAPHIC_ROLE_MISMATCH`
-- `COLUMN_REPLACEMENT_MISSING`
-- `COLUMN_TYPE_MISMATCH`
-- `DATA_SET_NOT_FOUND`
-- `INTERNAL_FAILURE`
-- `PARAMETER_NOT_FOUND`
-- `PARAMETER_TYPE_INVALID`
-- `PARAMETER_VALUE_INCOMPATIBLE`
-- `SOURCE_NOT_FOUND`
-
-<a id="dashboardfilterattributetype"></a>
-
+```python title="Definition"
+DashboardErrorTypeType = Literal[
+    "ACCESS_DENIED",
+    "COLUMN_GEOGRAPHIC_ROLE_MISMATCH",
+    "COLUMN_REPLACEMENT_MISSING",
+    "COLUMN_TYPE_MISMATCH",
+    "DATA_SET_NOT_FOUND",
+    "INTERNAL_FAILURE",
+    "PARAMETER_NOT_FOUND",
+    "PARAMETER_TYPE_INVALID",
+    "PARAMETER_VALUE_INCOMPATIBLE",
+    "SOURCE_NOT_FOUND",
+]
+```
 ## DashboardFilterAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DashboardFilterAttributeType
+
+def get_value() -> DashboardFilterAttributeType:
+    return "QUICKSIGHT_USER"
 ```
 
-Values:
-
-- `QUICKSIGHT_USER`
-
-<a id="dashboarduistatetype"></a>
-
+```python title="Definition"
+DashboardFilterAttributeType = Literal[
+    "QUICKSIGHT_USER",
+]
+```
 ## DashboardUIStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DashboardUIStateType
+
+def get_value() -> DashboardUIStateType:
+    return "COLLAPSED"
 ```
 
-Values:
-
-- `COLLAPSED`
-- `EXPANDED`
-
-<a id="datasetimportmodetype"></a>
-
+```python title="Definition"
+DashboardUIStateType = Literal[
+    "COLLAPSED",
+    "EXPANDED",
+]
+```
 ## DataSetImportModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DataSetImportModeType
+
+def get_value() -> DataSetImportModeType:
+    return "DIRECT_QUERY"
 ```
 
-Values:
-
-- `DIRECT_QUERY`
-- `SPICE`
-
-<a id="datasourceerrorinfotypetype"></a>
-
+```python title="Definition"
+DataSetImportModeType = Literal[
+    "DIRECT_QUERY",
+    "SPICE",
+]
+```
 ## DataSourceErrorInfoTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DataSourceErrorInfoTypeType
+
+def get_value() -> DataSourceErrorInfoTypeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `CONFLICT`
-- `COPY_SOURCE_NOT_FOUND`
-- `ENGINE_VERSION_NOT_SUPPORTED`
-- `GENERIC_SQL_FAILURE`
-- `TIMEOUT`
-- `UNKNOWN`
-- `UNKNOWN_HOST`
-
-<a id="datasourcetypetype"></a>
-
+```python title="Definition"
+DataSourceErrorInfoTypeType = Literal[
+    "ACCESS_DENIED",
+    "CONFLICT",
+    "COPY_SOURCE_NOT_FOUND",
+    "ENGINE_VERSION_NOT_SUPPORTED",
+    "GENERIC_SQL_FAILURE",
+    "TIMEOUT",
+    "UNKNOWN",
+    "UNKNOWN_HOST",
+]
+```
 ## DataSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import DataSourceTypeType
+
+def get_value() -> DataSourceTypeType:
+    return "ADOBE_ANALYTICS"
 ```
 
-Values:
-
-- `ADOBE_ANALYTICS`
-- `AMAZON_ELASTICSEARCH`
-- `AMAZON_OPENSEARCH`
-- `ATHENA`
-- `AURORA`
-- `AURORA_POSTGRESQL`
-- `AWS_IOT_ANALYTICS`
-- `EXASOL`
-- `GITHUB`
-- `JIRA`
-- `MARIADB`
-- `MYSQL`
-- `ORACLE`
-- `POSTGRESQL`
-- `PRESTO`
-- `REDSHIFT`
-- `S3`
-- `SALESFORCE`
-- `SERVICENOW`
-- `SNOWFLAKE`
-- `SPARK`
-- `SQLSERVER`
-- `TERADATA`
-- `TIMESTREAM`
-- `TWITTER`
-
-<a id="editiontype"></a>
-
+```python title="Definition"
+DataSourceTypeType = Literal[
+    "ADOBE_ANALYTICS",
+    "AMAZON_ELASTICSEARCH",
+    "AMAZON_OPENSEARCH",
+    "ATHENA",
+    "AURORA",
+    "AURORA_POSTGRESQL",
+    "AWS_IOT_ANALYTICS",
+    "EXASOL",
+    "GITHUB",
+    "JIRA",
+    "MARIADB",
+    "MYSQL",
+    "ORACLE",
+    "POSTGRESQL",
+    "PRESTO",
+    "REDSHIFT",
+    "S3",
+    "SALESFORCE",
+    "SERVICENOW",
+    "SNOWFLAKE",
+    "SPARK",
+    "SQLSERVER",
+    "TERADATA",
+    "TIMESTREAM",
+    "TWITTER",
+]
+```
 ## EditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import EditionType
+
+def get_value() -> EditionType:
+    return "ENTERPRISE"
 ```
 
-Values:
-
-- `ENTERPRISE`
-- `STANDARD`
-
-<a id="embeddingidentitytypetype"></a>
-
+```python title="Definition"
+EditionType = Literal[
+    "ENTERPRISE",
+    "STANDARD",
+]
+```
 ## EmbeddingIdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import EmbeddingIdentityTypeType
+
+def get_value() -> EmbeddingIdentityTypeType:
+    return "ANONYMOUS"
 ```
 
-Values:
-
-- `ANONYMOUS`
-- `IAM`
-- `QUICKSIGHT`
-
-<a id="fileformattype"></a>
-
+```python title="Definition"
+EmbeddingIdentityTypeType = Literal[
+    "ANONYMOUS",
+    "IAM",
+    "QUICKSIGHT",
+]
+```
 ## FileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import FileFormatType
+
+def get_value() -> FileFormatType:
+    return "CLF"
 ```
 
-Values:
-
-- `CLF`
-- `CSV`
-- `ELF`
-- `JSON`
-- `TSV`
-- `XLSX`
-
-<a id="filteroperatortype"></a>
-
+```python title="Definition"
+FileFormatType = Literal[
+    "CLF",
+    "CSV",
+    "ELF",
+    "JSON",
+    "TSV",
+    "XLSX",
+]
+```
 ## FilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import FilterOperatorType
+
+def get_value() -> FilterOperatorType:
+    return "StringEquals"
 ```
 
-Values:
-
-- `StringEquals`
-
-<a id="folderfilterattributetype"></a>
-
+```python title="Definition"
+FilterOperatorType = Literal[
+    "StringEquals",
+]
+```
 ## FolderFilterAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import FolderFilterAttributeType
+
+def get_value() -> FolderFilterAttributeType:
+    return "PARENT_FOLDER_ARN"
 ```
 
-Values:
-
-- `PARENT_FOLDER_ARN`
-
-<a id="foldertypetype"></a>
-
+```python title="Definition"
+FolderFilterAttributeType = Literal[
+    "PARENT_FOLDER_ARN",
+]
+```
 ## FolderTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import FolderTypeType
+
+def get_value() -> FolderTypeType:
+    return "SHARED"
 ```
 
-Values:
-
-- `SHARED`
-
-<a id="geospatialcountrycodetype"></a>
-
+```python title="Definition"
+FolderTypeType = Literal[
+    "SHARED",
+]
+```
 ## GeoSpatialCountryCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import GeoSpatialCountryCodeType
+
+def get_value() -> GeoSpatialCountryCodeType:
+    return "US"
 ```
 
-Values:
-
-- `US`
-
-<a id="geospatialdataroletype"></a>
-
+```python title="Definition"
+GeoSpatialCountryCodeType = Literal[
+    "US",
+]
+```
 ## GeoSpatialDataRoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import GeoSpatialDataRoleType
+
+def get_value() -> GeoSpatialDataRoleType:
+    return "CITY"
 ```
 
-Values:
-
-- `CITY`
-- `COUNTRY`
-- `COUNTY`
-- `LATITUDE`
-- `LONGITUDE`
-- `POSTCODE`
-- `STATE`
-
-<a id="groupfilterattributetype"></a>
-
+```python title="Definition"
+GeoSpatialDataRoleType = Literal[
+    "CITY",
+    "COUNTRY",
+    "COUNTY",
+    "LATITUDE",
+    "LONGITUDE",
+    "POSTCODE",
+    "STATE",
+]
+```
 ## GroupFilterAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import GroupFilterAttributeType
+
+def get_value() -> GroupFilterAttributeType:
+    return "GROUP_NAME"
 ```
 
-Values:
-
-- `GROUP_NAME`
-
-<a id="groupfilteroperatortype"></a>
-
+```python title="Definition"
+GroupFilterAttributeType = Literal[
+    "GROUP_NAME",
+]
+```
 ## GroupFilterOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import GroupFilterOperatorType
+
+def get_value() -> GroupFilterOperatorType:
+    return "StartsWith"
 ```
 
-Values:
-
-- `StartsWith`
-
-<a id="identitystoretype"></a>
-
+```python title="Definition"
+GroupFilterOperatorType = Literal[
+    "StartsWith",
+]
+```
 ## IdentityStoreType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IdentityStoreType
+
+def get_value() -> IdentityStoreType:
+    return "QUICKSIGHT"
 ```
 
-Values:
-
-- `QUICKSIGHT`
-
-<a id="identitytypetype"></a>
-
+```python title="Definition"
+IdentityStoreType = Literal[
+    "QUICKSIGHT",
+]
+```
 ## IdentityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IdentityTypeType
+
+def get_value() -> IdentityTypeType:
+    return "IAM"
 ```
 
-Values:
-
-- `IAM`
-- `QUICKSIGHT`
-
-<a id="ingestionerrortypetype"></a>
-
+```python title="Definition"
+IdentityTypeType = Literal[
+    "IAM",
+    "QUICKSIGHT",
+]
+```
 ## IngestionErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IngestionErrorTypeType
+
+def get_value() -> IngestionErrorTypeType:
+    return "ACCOUNT_CAPACITY_LIMIT_EXCEEDED"
 ```
 
-Values:
-
-- `ACCOUNT_CAPACITY_LIMIT_EXCEEDED`
-- `CONNECTION_FAILURE`
-- `CURSOR_NOT_ENABLED`
-- `CUSTOMER_ERROR`
-- `DATA_SET_DELETED`
-- `DATA_SET_NOT_SPICE`
-- `DATA_SET_SIZE_LIMIT_EXCEEDED`
-- `DATA_SOURCE_AUTH_FAILED`
-- `DATA_SOURCE_CONNECTION_FAILED`
-- `DATA_SOURCE_NOT_FOUND`
-- `DATA_TOLERANCE_EXCEPTION`
-- `ELASTICSEARCH_CURSOR_NOT_ENABLED`
-- `FAILURE_TO_ASSUME_ROLE`
-- `FAILURE_TO_PROCESS_JSON_FILE`
-- `IAM_ROLE_NOT_AVAILABLE`
-- `INGESTION_CANCELED`
-- `INGESTION_SUPERSEDED`
-- `INTERNAL_SERVICE_ERROR`
-- `INVALID_DATA_SOURCE_CONFIG`
-- `INVALID_DATAPREP_SYNTAX`
-- `INVALID_DATE_FORMAT`
-- `IOT_DATA_SET_FILE_EMPTY`
-- `IOT_FILE_NOT_FOUND`
-- `OAUTH_TOKEN_FAILURE`
-- `PASSWORD_AUTHENTICATION_FAILURE`
-- `PERMISSION_DENIED`
-- `PERMISSION_NOT_FOUND`
-- `QUERY_TIMEOUT`
-- `REFRESH_SUPPRESSED_BY_EDIT`
-- `ROW_SIZE_LIMIT_EXCEEDED`
-- `S3_FILE_INACCESSIBLE`
-- `S3_MANIFEST_ERROR`
-- `S3_UPLOADED_FILE_DELETED`
-- `SOURCE_API_LIMIT_EXCEEDED_FAILURE`
-- `SOURCE_RESOURCE_LIMIT_EXCEEDED`
-- `SPICE_TABLE_NOT_FOUND`
-- `SQL_EXCEPTION`
-- `SQL_INVALID_PARAMETER_VALUE`
-- `SQL_NUMERIC_OVERFLOW`
-- `SQL_SCHEMA_MISMATCH_ERROR`
-- `SQL_TABLE_NOT_FOUND`
-- `SSL_CERTIFICATE_VALIDATION_FAILURE`
-- `UNRESOLVABLE_HOST`
-- `UNROUTABLE_HOST`
-
-<a id="ingestionrequestsourcetype"></a>
-
+```python title="Definition"
+IngestionErrorTypeType = Literal[
+    "ACCOUNT_CAPACITY_LIMIT_EXCEEDED",
+    "CONNECTION_FAILURE",
+    "CURSOR_NOT_ENABLED",
+    "CUSTOMER_ERROR",
+    "DATA_SET_DELETED",
+    "DATA_SET_NOT_SPICE",
+    "DATA_SET_SIZE_LIMIT_EXCEEDED",
+    "DATA_SOURCE_AUTH_FAILED",
+    "DATA_SOURCE_CONNECTION_FAILED",
+    "DATA_SOURCE_NOT_FOUND",
+    "DATA_TOLERANCE_EXCEPTION",
+    "ELASTICSEARCH_CURSOR_NOT_ENABLED",
+    "FAILURE_TO_ASSUME_ROLE",
+    "FAILURE_TO_PROCESS_JSON_FILE",
+    "IAM_ROLE_NOT_AVAILABLE",
+    "INGESTION_CANCELED",
+    "INGESTION_SUPERSEDED",
+    "INTERNAL_SERVICE_ERROR",
+    "INVALID_DATA_SOURCE_CONFIG",
+    "INVALID_DATAPREP_SYNTAX",
+    "INVALID_DATE_FORMAT",
+    "IOT_DATA_SET_FILE_EMPTY",
+    "IOT_FILE_NOT_FOUND",
+    "OAUTH_TOKEN_FAILURE",
+    "PASSWORD_AUTHENTICATION_FAILURE",
+    "PERMISSION_DENIED",
+    "PERMISSION_NOT_FOUND",
+    "QUERY_TIMEOUT",
+    "REFRESH_SUPPRESSED_BY_EDIT",
+    "ROW_SIZE_LIMIT_EXCEEDED",
+    "S3_FILE_INACCESSIBLE",
+    "S3_MANIFEST_ERROR",
+    "S3_UPLOADED_FILE_DELETED",
+    "SOURCE_API_LIMIT_EXCEEDED_FAILURE",
+    "SOURCE_RESOURCE_LIMIT_EXCEEDED",
+    "SPICE_TABLE_NOT_FOUND",
+    "SQL_EXCEPTION",
+    "SQL_INVALID_PARAMETER_VALUE",
+    "SQL_NUMERIC_OVERFLOW",
+    "SQL_SCHEMA_MISMATCH_ERROR",
+    "SQL_TABLE_NOT_FOUND",
+    "SSL_CERTIFICATE_VALIDATION_FAILURE",
+    "UNRESOLVABLE_HOST",
+    "UNROUTABLE_HOST",
+]
+```
 ## IngestionRequestSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IngestionRequestSourceType
+
+def get_value() -> IngestionRequestSourceType:
+    return "MANUAL"
 ```
 
-Values:
-
-- `MANUAL`
-- `SCHEDULED`
-
-<a id="ingestionrequesttypetype"></a>
-
+```python title="Definition"
+IngestionRequestSourceType = Literal[
+    "MANUAL",
+    "SCHEDULED",
+]
+```
 ## IngestionRequestTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IngestionRequestTypeType
+
+def get_value() -> IngestionRequestTypeType:
+    return "EDIT"
 ```
 
-Values:
-
-- `EDIT`
-- `FULL_REFRESH`
-- `INCREMENTAL_REFRESH`
-- `INITIAL_INGESTION`
-
-<a id="ingestionstatustype"></a>
-
+```python title="Definition"
+IngestionRequestTypeType = Literal[
+    "EDIT",
+    "FULL_REFRESH",
+    "INCREMENTAL_REFRESH",
+    "INITIAL_INGESTION",
+]
+```
 ## IngestionStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IngestionStatusType
+
+def get_value() -> IngestionStatusType:
+    return "CANCELLED"
 ```
 
-Values:
-
-- `CANCELLED`
-- `COMPLETED`
-- `FAILED`
-- `INITIALIZED`
-- `QUEUED`
-- `RUNNING`
-
-<a id="ingestiontypetype"></a>
-
+```python title="Definition"
+IngestionStatusType = Literal[
+    "CANCELLED",
+    "COMPLETED",
+    "FAILED",
+    "INITIALIZED",
+    "QUEUED",
+    "RUNNING",
+]
+```
 ## IngestionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import IngestionTypeType
+
+def get_value() -> IngestionTypeType:
+    return "FULL_REFRESH"
 ```
 
-Values:
-
-- `FULL_REFRESH`
-- `INCREMENTAL_REFRESH`
-
-<a id="inputcolumndatatypetype"></a>
-
+```python title="Definition"
+IngestionTypeType = Literal[
+    "FULL_REFRESH",
+    "INCREMENTAL_REFRESH",
+]
+```
 ## InputColumnDataTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import InputColumnDataTypeType
+
+def get_value() -> InputColumnDataTypeType:
+    return "BIT"
 ```
 
-Values:
-
-- `BIT`
-- `BOOLEAN`
-- `DATETIME`
-- `DECIMAL`
-- `INTEGER`
-- `JSON`
-- `STRING`
-
-<a id="jointypetype"></a>
-
+```python title="Definition"
+InputColumnDataTypeType = Literal[
+    "BIT",
+    "BOOLEAN",
+    "DATETIME",
+    "DECIMAL",
+    "INTEGER",
+    "JSON",
+    "STRING",
+]
+```
 ## JoinTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import JoinTypeType
+
+def get_value() -> JoinTypeType:
+    return "INNER"
 ```
 
-Values:
-
-- `INNER`
-- `LEFT`
-- `OUTER`
-- `RIGHT`
-
-<a id="listanalysespaginatorname"></a>
-
+```python title="Definition"
+JoinTypeType = Literal[
+    "INNER",
+    "LEFT",
+    "OUTER",
+    "RIGHT",
+]
+```
 ## ListAnalysesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListAnalysesPaginatorName
+
+def get_value() -> ListAnalysesPaginatorName:
+    return "list_analyses"
 ```
 
-Values:
-
-- `list_analyses`
-
-<a id="listdashboardversionspaginatorname"></a>
-
+```python title="Definition"
+ListAnalysesPaginatorName = Literal[
+    "list_analyses",
+]
+```
 ## ListDashboardVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListDashboardVersionsPaginatorName
+
+def get_value() -> ListDashboardVersionsPaginatorName:
+    return "list_dashboard_versions"
 ```
 
-Values:
-
-- `list_dashboard_versions`
-
-<a id="listdashboardspaginatorname"></a>
-
+```python title="Definition"
+ListDashboardVersionsPaginatorName = Literal[
+    "list_dashboard_versions",
+]
+```
 ## ListDashboardsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListDashboardsPaginatorName
+
+def get_value() -> ListDashboardsPaginatorName:
+    return "list_dashboards"
 ```
 
-Values:
-
-- `list_dashboards`
-
-<a id="listdatasetspaginatorname"></a>
-
+```python title="Definition"
+ListDashboardsPaginatorName = Literal[
+    "list_dashboards",
+]
+```
 ## ListDataSetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListDataSetsPaginatorName
+
+def get_value() -> ListDataSetsPaginatorName:
+    return "list_data_sets"
 ```
 
-Values:
-
-- `list_data_sets`
-
-<a id="listdatasourcespaginatorname"></a>
-
+```python title="Definition"
+ListDataSetsPaginatorName = Literal[
+    "list_data_sets",
+]
+```
 ## ListDataSourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListDataSourcesPaginatorName
+
+def get_value() -> ListDataSourcesPaginatorName:
+    return "list_data_sources"
 ```
 
-Values:
-
-- `list_data_sources`
-
-<a id="listingestionspaginatorname"></a>
-
+```python title="Definition"
+ListDataSourcesPaginatorName = Literal[
+    "list_data_sources",
+]
+```
 ## ListIngestionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListIngestionsPaginatorName
+
+def get_value() -> ListIngestionsPaginatorName:
+    return "list_ingestions"
 ```
 
-Values:
-
-- `list_ingestions`
-
-<a id="listnamespacespaginatorname"></a>
-
+```python title="Definition"
+ListIngestionsPaginatorName = Literal[
+    "list_ingestions",
+]
+```
 ## ListNamespacesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListNamespacesPaginatorName
+
+def get_value() -> ListNamespacesPaginatorName:
+    return "list_namespaces"
 ```
 
-Values:
-
-- `list_namespaces`
-
-<a id="listtemplatealiasespaginatorname"></a>
-
+```python title="Definition"
+ListNamespacesPaginatorName = Literal[
+    "list_namespaces",
+]
+```
 ## ListTemplateAliasesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListTemplateAliasesPaginatorName
+
+def get_value() -> ListTemplateAliasesPaginatorName:
+    return "list_template_aliases"
 ```
 
-Values:
-
-- `list_template_aliases`
-
-<a id="listtemplateversionspaginatorname"></a>
-
+```python title="Definition"
+ListTemplateAliasesPaginatorName = Literal[
+    "list_template_aliases",
+]
+```
 ## ListTemplateVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListTemplateVersionsPaginatorName
+
+def get_value() -> ListTemplateVersionsPaginatorName:
+    return "list_template_versions"
 ```
 
-Values:
-
-- `list_template_versions`
-
-<a id="listtemplatespaginatorname"></a>
-
+```python title="Definition"
+ListTemplateVersionsPaginatorName = Literal[
+    "list_template_versions",
+]
+```
 ## ListTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListTemplatesPaginatorName
+
+def get_value() -> ListTemplatesPaginatorName:
+    return "list_templates"
 ```
 
-Values:
-
-- `list_templates`
-
-<a id="listthemeversionspaginatorname"></a>
-
+```python title="Definition"
+ListTemplatesPaginatorName = Literal[
+    "list_templates",
+]
+```
 ## ListThemeVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListThemeVersionsPaginatorName
+
+def get_value() -> ListThemeVersionsPaginatorName:
+    return "list_theme_versions"
 ```
 
-Values:
-
-- `list_theme_versions`
-
-<a id="listthemespaginatorname"></a>
-
+```python title="Definition"
+ListThemeVersionsPaginatorName = Literal[
+    "list_theme_versions",
+]
+```
 ## ListThemesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ListThemesPaginatorName
+
+def get_value() -> ListThemesPaginatorName:
+    return "list_themes"
 ```
 
-Values:
-
-- `list_themes`
-
-<a id="membertypetype"></a>
-
+```python title="Definition"
+ListThemesPaginatorName = Literal[
+    "list_themes",
+]
+```
 ## MemberTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import MemberTypeType
+
+def get_value() -> MemberTypeType:
+    return "ANALYSIS"
 ```
 
-Values:
-
-- `ANALYSIS`
-- `DASHBOARD`
-- `DATASET`
-
-<a id="namespaceerrortypetype"></a>
-
+```python title="Definition"
+MemberTypeType = Literal[
+    "ANALYSIS",
+    "DASHBOARD",
+    "DATASET",
+]
+```
 ## NamespaceErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import NamespaceErrorTypeType
+
+def get_value() -> NamespaceErrorTypeType:
+    return "INTERNAL_SERVICE_ERROR"
 ```
 
-Values:
-
-- `INTERNAL_SERVICE_ERROR`
-- `PERMISSION_DENIED`
-
-<a id="namespacestatustype"></a>
-
+```python title="Definition"
+NamespaceErrorTypeType = Literal[
+    "INTERNAL_SERVICE_ERROR",
+    "PERMISSION_DENIED",
+]
+```
 ## NamespaceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import NamespaceStatusType
+
+def get_value() -> NamespaceStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATED`
-- `CREATING`
-- `DELETING`
-- `NON_RETRYABLE_FAILURE`
-- `RETRYABLE_FAILURE`
-
-<a id="resourcestatustype"></a>
-
+```python title="Definition"
+NamespaceStatusType = Literal[
+    "CREATED",
+    "CREATING",
+    "DELETING",
+    "NON_RETRYABLE_FAILURE",
+    "RETRYABLE_FAILURE",
+]
+```
 ## ResourceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ResourceStatusType
+
+def get_value() -> ResourceStatusType:
+    return "CREATION_FAILED"
 ```
 
-Values:
-
-- `CREATION_FAILED`
-- `CREATION_IN_PROGRESS`
-- `CREATION_SUCCESSFUL`
-- `DELETED`
-- `UPDATE_FAILED`
-- `UPDATE_IN_PROGRESS`
-- `UPDATE_SUCCESSFUL`
-
-<a id="rowlevelpermissionformatversiontype"></a>
-
+```python title="Definition"
+ResourceStatusType = Literal[
+    "CREATION_FAILED",
+    "CREATION_IN_PROGRESS",
+    "CREATION_SUCCESSFUL",
+    "DELETED",
+    "UPDATE_FAILED",
+    "UPDATE_IN_PROGRESS",
+    "UPDATE_SUCCESSFUL",
+]
+```
 ## RowLevelPermissionFormatVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import RowLevelPermissionFormatVersionType
+
+def get_value() -> RowLevelPermissionFormatVersionType:
+    return "VERSION_1"
 ```
 
-Values:
-
-- `VERSION_1`
-- `VERSION_2`
-
-<a id="rowlevelpermissionpolicytype"></a>
-
+```python title="Definition"
+RowLevelPermissionFormatVersionType = Literal[
+    "VERSION_1",
+    "VERSION_2",
+]
+```
 ## RowLevelPermissionPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import RowLevelPermissionPolicyType
+
+def get_value() -> RowLevelPermissionPolicyType:
+    return "DENY_ACCESS"
 ```
 
-Values:
-
-- `DENY_ACCESS`
-- `GRANT_ACCESS`
-
-<a id="searchanalysespaginatorname"></a>
-
+```python title="Definition"
+RowLevelPermissionPolicyType = Literal[
+    "DENY_ACCESS",
+    "GRANT_ACCESS",
+]
+```
 ## SearchAnalysesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import SearchAnalysesPaginatorName
+
+def get_value() -> SearchAnalysesPaginatorName:
+    return "search_analyses"
 ```
 
-Values:
-
-- `search_analyses`
-
-<a id="searchdashboardspaginatorname"></a>
-
+```python title="Definition"
+SearchAnalysesPaginatorName = Literal[
+    "search_analyses",
+]
+```
 ## SearchDashboardsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import SearchDashboardsPaginatorName
+
+def get_value() -> SearchDashboardsPaginatorName:
+    return "search_dashboards"
 ```
 
-Values:
-
-- `search_dashboards`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+SearchDashboardsPaginatorName = Literal[
+    "search_dashboards",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import StatusType
+
+def get_value() -> StatusType:
+    return "DISABLED"
 ```
 
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="templateerrortypetype"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "DISABLED",
+    "ENABLED",
+]
+```
 ## TemplateErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import TemplateErrorTypeType
+
+def get_value() -> TemplateErrorTypeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `DATA_SET_NOT_FOUND`
-- `INTERNAL_FAILURE`
-- `SOURCE_NOT_FOUND`
-
-<a id="textqualifiertype"></a>
-
+```python title="Definition"
+TemplateErrorTypeType = Literal[
+    "ACCESS_DENIED",
+    "DATA_SET_NOT_FOUND",
+    "INTERNAL_FAILURE",
+    "SOURCE_NOT_FOUND",
+]
+```
 ## TextQualifierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import TextQualifierType
+
+def get_value() -> TextQualifierType:
+    return "DOUBLE_QUOTE"
 ```
 
-Values:
-
-- `DOUBLE_QUOTE`
-- `SINGLE_QUOTE`
-
-<a id="themeerrortypetype"></a>
-
+```python title="Definition"
+TextQualifierType = Literal[
+    "DOUBLE_QUOTE",
+    "SINGLE_QUOTE",
+]
+```
 ## ThemeErrorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ThemeErrorTypeType
+
+def get_value() -> ThemeErrorTypeType:
+    return "INTERNAL_FAILURE"
 ```
 
-Values:
-
-- `INTERNAL_FAILURE`
-
-<a id="themetypetype"></a>
-
+```python title="Definition"
+ThemeErrorTypeType = Literal[
+    "INTERNAL_FAILURE",
+]
+```
 ## ThemeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ThemeTypeType
+
+def get_value() -> ThemeTypeType:
+    return "ALL"
 ```
 
-Values:
-
-- `ALL`
-- `CUSTOM`
-- `QUICKSIGHT`
-
-<a id="userroletype"></a>
-
+```python title="Definition"
+ThemeTypeType = Literal[
+    "ALL",
+    "CUSTOM",
+    "QUICKSIGHT",
+]
+```
 ## UserRoleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import UserRoleType
+
+def get_value() -> UserRoleType:
+    return "ADMIN"
 ```
 
-Values:
-
-- `ADMIN`
-- `AUTHOR`
-- `READER`
-- `RESTRICTED_AUTHOR`
-- `RESTRICTED_READER`
-
-<a id="quicksightservicename"></a>
-
+```python title="Definition"
+UserRoleType = Literal[
+    "ADMIN",
+    "AUTHOR",
+    "READER",
+    "RESTRICTED_AUTHOR",
+    "RESTRICTED_READER",
+]
+```
 ## QuickSightServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import QuickSightServiceName
+
+def get_value() -> QuickSightServiceName:
+    return "quicksight"
 ```
 
-Values:
-
-- `quicksight`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+QuickSightServiceName = Literal[
+    "quicksight",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_quicksight.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_analyses"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_analyses",
+    "list_dashboard_versions",
+    "list_dashboards",
+    "list_data_sets",
+    "list_data_sources",
+    "list_ingestions",
+    "list_namespaces",
+    "list_template_aliases",
+    "list_template_versions",
+    "list_templates",
+    "list_theme_versions",
+    "list_themes",
+    "search_analyses",
+    "search_dashboards",
+]
+```
+## RegionName
 
-- `list_analyses`
-- `list_dashboard_versions`
-- `list_dashboards`
-- `list_data_sets`
-- `list_data_sources`
-- `list_ingestions`
-- `list_namespaces`
-- `list_template_aliases`
-- `list_template_versions`
-- `list_templates`
-- `list_theme_versions`
-- `list_themes`
-- `search_analyses`
-- `search_dashboards`
+```python title="Usage Example"
+from mypy_boto3_quicksight.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-west-1",
+    "eu-west-2",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

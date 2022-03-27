@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-appregistry-module"></a>
-
-# Paginators for boto3 AppRegistry module
+# Paginators
 
 > [Index](../README.md) > [AppRegistry](./README.md) > Paginators
 
-Auto-generated documentation for
-[AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
-type annotations stubs module
-[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+!!! note ""
 
-- [Paginators for boto3 AppRegistry module](#paginators-for-boto3-appregistry-module)
-  - [ListApplicationsPaginator](#listapplicationspaginator)
-  - [ListAssociatedAttributeGroupsPaginator](#listassociatedattributegroupspaginator)
-  - [ListAssociatedResourcesPaginator](#listassociatedresourcespaginator)
-  - [ListAttributeGroupsPaginator](#listattributegroupspaginator)
-
-<a id="listapplicationspaginator"></a>
+    Auto-generated documentation for [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
+    type annotations stubs module [mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 ## ListApplicationsPaginator
 
-Type annotations for
-`boto3.client("servicecatalog-appregistry").get_paginator("list_applications")`.
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_paginator("list_applications")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator
@@ -33,27 +21,39 @@ def get_list_applications_paginator() -> ListApplicationsPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_applications")
 ```
 
-Boto3 documentation:
-[AppRegistry.Paginator.ListApplications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListApplications)
 
-Arguments for `ListApplicationsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationsPaginator.paginate` method.
 
-`ListApplicationsPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListApplicationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listassociatedattributegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationsRequestListApplicationsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef) 
 ## ListAssociatedAttributeGroupsPaginator
 
-Type annotations for
-`boto3.client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")`.
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedAttributeGroupsPaginator
@@ -62,28 +62,40 @@ def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeG
     return Session().client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
 ```
 
-Boto3 documentation:
-[AppRegistry.Paginator.ListAssociatedAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedAttributeGroups)
 
-Arguments for `ListAssociatedAttributeGroupsPaginator.paginate` method:
+### paginate
 
-- `application`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociatedAttributeGroupsPaginator.paginate` method.
 
-`ListAssociatedAttributeGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    application: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssociatedAttributeGroupsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listassociatedresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedAttributeGroupsRequestListAssociatedAttributeGroupsPaginateTypeDef = {  # (1)
+    "application": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociatedAttributeGroupsRequestListAssociatedAttributeGroupsPaginateTypeDef](./type_defs.md#listassociatedattributegroupsrequestlistassociatedattributegroupspaginatetypedef) 
 ## ListAssociatedResourcesPaginator
 
-Type annotations for
-`boto3.client("servicecatalog-appregistry").get_paginator("list_associated_resources")`.
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_paginator("list_associated_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedResourcesPaginator
@@ -92,28 +104,40 @@ def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginato
     return Session().client("servicecatalog-appregistry").get_paginator("list_associated_resources")
 ```
 
-Boto3 documentation:
-[AppRegistry.Paginator.ListAssociatedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAssociatedResources)
 
-Arguments for `ListAssociatedResourcesPaginator.paginate` method:
+### paginate
 
-- `application`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociatedResourcesPaginator.paginate` method.
 
-`ListAssociatedResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    application: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssociatedResourcesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listattributegroupspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef = {  # (1)
+    "application": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociatedResourcesRequestListAssociatedResourcesPaginateTypeDef](./type_defs.md#listassociatedresourcesrequestlistassociatedresourcespaginatetypedef) 
 ## ListAttributeGroupsPaginator
 
-Type annotations for
-`boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups")`.
+Type annotations and code completion for `#!python boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsPaginator
@@ -122,13 +146,30 @@ def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
     return Session().client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
 ```
 
-Boto3 documentation:
-[AppRegistry.Paginator.ListAttributeGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry.Paginator.ListAttributeGroups)
 
-Arguments for `ListAttributeGroupsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAttributeGroupsPaginator.paginate` method.
 
-`ListAttributeGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAttributeGroupsResponseTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAttributeGroupsResponseTypeDef](./type_defs.md#listattributegroupsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAttributeGroupsRequestListAttributeGroupsPaginateTypeDef](./type_defs.md#listattributegroupsrequestlistattributegroupspaginatetypedef) 

@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-neptune-module"></a>
-
-# Type annotations for boto3 Neptune module
+#  Neptune module
 
 > [Index](../README.md) > Neptune
 
-Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
-type annotations stubs module
-[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
+!!! note ""
 
-- [Type annotations for boto3 Neptune module](#type-annotations-for-boto3-neptune-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [NeptuneClient](#neptuneclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+    type annotations stubs module [mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Neptune`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[neptune]'
 python -m pip install mypy-boto3-neptune
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,179 +42,37 @@ python -m pip install mypy-boto3-neptune
 python -m pip uninstall -y mypy-boto3-neptune
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="neptuneclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## NeptuneClient
 
-Type annotations for `boto3.client("neptune")` as [NeptuneClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("neptune")` as [NeptuneClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_neptune.client import NeptuneClient
+
+def get_client() -> NeptuneClient:
+    return Session().cleint("neptune")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_role_to_db_cluster](./client.md#add_role_to_db_cluster)
-- [add_source_identifier_to_subscription](./client.md#add_source_identifier_to_subscription)
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [apply_pending_maintenance_action](./client.md#apply_pending_maintenance_action)
-- [can_paginate](./client.md#can_paginate)
-- [copy_db_cluster_parameter_group](./client.md#copy_db_cluster_parameter_group)
-- [copy_db_cluster_snapshot](./client.md#copy_db_cluster_snapshot)
-- [copy_db_parameter_group](./client.md#copy_db_parameter_group)
-- [create_db_cluster](./client.md#create_db_cluster)
-- [create_db_cluster_endpoint](./client.md#create_db_cluster_endpoint)
-- [create_db_cluster_parameter_group](./client.md#create_db_cluster_parameter_group)
-- [create_db_cluster_snapshot](./client.md#create_db_cluster_snapshot)
-- [create_db_instance](./client.md#create_db_instance)
-- [create_db_parameter_group](./client.md#create_db_parameter_group)
-- [create_db_subnet_group](./client.md#create_db_subnet_group)
-- [create_event_subscription](./client.md#create_event_subscription)
-- [delete_db_cluster](./client.md#delete_db_cluster)
-- [delete_db_cluster_endpoint](./client.md#delete_db_cluster_endpoint)
-- [delete_db_cluster_parameter_group](./client.md#delete_db_cluster_parameter_group)
-- [delete_db_cluster_snapshot](./client.md#delete_db_cluster_snapshot)
-- [delete_db_instance](./client.md#delete_db_instance)
-- [delete_db_parameter_group](./client.md#delete_db_parameter_group)
-- [delete_db_subnet_group](./client.md#delete_db_subnet_group)
-- [delete_event_subscription](./client.md#delete_event_subscription)
-- [describe_db_cluster_endpoints](./client.md#describe_db_cluster_endpoints)
-- [describe_db_cluster_parameter_groups](./client.md#describe_db_cluster_parameter_groups)
-- [describe_db_cluster_parameters](./client.md#describe_db_cluster_parameters)
-- [describe_db_cluster_snapshot_attributes](./client.md#describe_db_cluster_snapshot_attributes)
-- [describe_db_cluster_snapshots](./client.md#describe_db_cluster_snapshots)
-- [describe_db_clusters](./client.md#describe_db_clusters)
-- [describe_db_engine_versions](./client.md#describe_db_engine_versions)
-- [describe_db_instances](./client.md#describe_db_instances)
-- [describe_db_parameter_groups](./client.md#describe_db_parameter_groups)
-- [describe_db_parameters](./client.md#describe_db_parameters)
-- [describe_db_subnet_groups](./client.md#describe_db_subnet_groups)
-- [describe_engine_default_cluster_parameters](./client.md#describe_engine_default_cluster_parameters)
-- [describe_engine_default_parameters](./client.md#describe_engine_default_parameters)
-- [describe_event_categories](./client.md#describe_event_categories)
-- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
-- [describe_events](./client.md#describe_events)
-- [describe_orderable_db_instance_options](./client.md#describe_orderable_db_instance_options)
-- [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
-- [describe_valid_db_instance_modifications](./client.md#describe_valid_db_instance_modifications)
-- [exceptions](./client.md#exceptions)
-- [failover_db_cluster](./client.md#failover_db_cluster)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [modify_db_cluster](./client.md#modify_db_cluster)
-- [modify_db_cluster_endpoint](./client.md#modify_db_cluster_endpoint)
-- [modify_db_cluster_parameter_group](./client.md#modify_db_cluster_parameter_group)
-- [modify_db_cluster_snapshot_attribute](./client.md#modify_db_cluster_snapshot_attribute)
-- [modify_db_instance](./client.md#modify_db_instance)
-- [modify_db_parameter_group](./client.md#modify_db_parameter_group)
-- [modify_db_subnet_group](./client.md#modify_db_subnet_group)
-- [modify_event_subscription](./client.md#modify_event_subscription)
-- [promote_read_replica_db_cluster](./client.md#promote_read_replica_db_cluster)
-- [reboot_db_instance](./client.md#reboot_db_instance)
-- [remove_role_from_db_cluster](./client.md#remove_role_from_db_cluster)
-- [remove_source_identifier_from_subscription](./client.md#remove_source_identifier_from_subscription)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [reset_db_cluster_parameter_group](./client.md#reset_db_cluster_parameter_group)
-- [reset_db_parameter_group](./client.md#reset_db_parameter_group)
-- [restore_db_cluster_from_snapshot](./client.md#restore_db_cluster_from_snapshot)
-- [restore_db_cluster_to_point_in_time](./client.md#restore_db_cluster_to_point_in_time)
-- [start_db_cluster](./client.md#start_db_cluster)
-- [stop_db_cluster](./client.md#stop_db_cluster)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-NeptuneClient [exceptions](./client.md#exceptions)
-
-- AuthorizationNotFoundFault
-- CertificateNotFoundFault
-- ClientError
-- DBClusterAlreadyExistsFault
-- DBClusterEndpointAlreadyExistsFault
-- DBClusterEndpointNotFoundFault
-- DBClusterEndpointQuotaExceededFault
-- DBClusterNotFoundFault
-- DBClusterParameterGroupNotFoundFault
-- DBClusterQuotaExceededFault
-- DBClusterRoleAlreadyExistsFault
-- DBClusterRoleNotFoundFault
-- DBClusterRoleQuotaExceededFault
-- DBClusterSnapshotAlreadyExistsFault
-- DBClusterSnapshotNotFoundFault
-- DBInstanceAlreadyExistsFault
-- DBInstanceNotFoundFault
-- DBParameterGroupAlreadyExistsFault
-- DBParameterGroupNotFoundFault
-- DBParameterGroupQuotaExceededFault
-- DBSecurityGroupNotFoundFault
-- DBSnapshotAlreadyExistsFault
-- DBSnapshotNotFoundFault
-- DBSubnetGroupAlreadyExistsFault
-- DBSubnetGroupDoesNotCoverEnoughAZs
-- DBSubnetGroupNotFoundFault
-- DBSubnetGroupQuotaExceededFault
-- DBSubnetQuotaExceededFault
-- DBUpgradeDependencyFailureFault
-- DomainNotFoundFault
-- EventSubscriptionQuotaExceededFault
-- InstanceQuotaExceededFault
-- InsufficientDBClusterCapacityFault
-- InsufficientDBInstanceCapacityFault
-- InsufficientStorageClusterCapacityFault
-- InvalidDBClusterEndpointStateFault
-- InvalidDBClusterSnapshotStateFault
-- InvalidDBClusterStateFault
-- InvalidDBInstanceStateFault
-- InvalidDBParameterGroupStateFault
-- InvalidDBSecurityGroupStateFault
-- InvalidDBSnapshotStateFault
-- InvalidDBSubnetGroupStateFault
-- InvalidDBSubnetStateFault
-- InvalidEventSubscriptionStateFault
-- InvalidRestoreFault
-- InvalidSubnet
-- InvalidVPCNetworkStateFault
-- KMSKeyNotAccessibleFault
-- OptionGroupNotFoundFault
-- ProvisionedIopsNotAvailableInAZFault
-- ResourceNotFoundFault
-- SNSInvalidTopicFault
-- SNSNoAuthorizationFault
-- SNSTopicArnNotFoundFault
-- SharedSnapshotQuotaExceededFault
-- SnapshotQuotaExceededFault
-- SourceNotFoundFault
-- StorageQuotaExceededFault
-- StorageTypeNotSupportedFault
-- SubnetAlreadyInUse
-- SubscriptionAlreadyExistFault
-- SubscriptionCategoryNotFoundFault
-- SubscriptionNotFoundFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("neptune").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("neptune").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator, ...
+from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator
+
+def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsPaginator:
+    return Session().client("neptune").get_paginator("describe_db_cluster_endpoints"))
 ```
 
 - [DescribeDBClusterEndpointsPaginator](./paginators.md#describedbclusterendpointspaginator)
@@ -256,32 +91,41 @@ from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator, ..
 - [DescribeOrderableDBInstanceOptionsPaginator](./paginators.md#describeorderabledbinstanceoptionspaginator)
 - [DescribePendingMaintenanceActionsPaginator](./paginators.md#describependingmaintenanceactionspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("neptune").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("neptune").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_neptune.waiter import DBInstanceAvailableWaiter, ...
+from mypy_boto3_neptune.waiter import DBInstanceAvailableWaiter
+
+def get_db_instance_available_waiter() -> DBInstanceAvailableWaiter:
+    return Session().client("neptune").get_waiter("db_instance_available")
 ```
 
 - [DBInstanceAvailableWaiter](./waiters.md#dbinstanceavailablewaiter)
 - [DBInstanceDeletedWaiter](./waiters.md#dbinstancedeletedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_neptune.literals import ApplyMethodType
 
-```python
-from mypy_boto3_neptune.literals import ApplyMethodType, ...
+def get_value() -> ApplyMethodType:
+    return "immediate"
 ```
 
 - [ApplyMethodType](./literals.md#applymethodtype)
@@ -308,18 +152,23 @@ from mypy_boto3_neptune.literals import ApplyMethodType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageRequestTypeDef
 
-```python
-from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageRequestTypeDef, ...
+def get_value() -> AddRoleToDBClusterMessageRequestTypeDef:
+    return {
+        "DBClusterIdentifier": ...,
+        "RoleArn": ...,
+    }
 ```
 
 - [AddRoleToDBClusterMessageRequestTypeDef](./type_defs.md#addroletodbclustermessagerequesttypedef)
@@ -394,26 +243,43 @@ from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageRequestTypeDef
 - [DeleteDBSubnetGroupMessageRequestTypeDef](./type_defs.md#deletedbsubnetgroupmessagerequesttypedef)
 - [DeleteEventSubscriptionMessageRequestTypeDef](./type_defs.md#deleteeventsubscriptionmessagerequesttypedef)
 - [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef)
+- [DescribeDBClusterEndpointsMessageDescribeDBClusterEndpointsPaginateTypeDef](./type_defs.md#describedbclusterendpointsmessagedescribedbclusterendpointspaginatetypedef)
 - [DescribeDBClusterEndpointsMessageRequestTypeDef](./type_defs.md#describedbclusterendpointsmessagerequesttypedef)
+- [DescribeDBClusterParameterGroupsMessageDescribeDBClusterParameterGroupsPaginateTypeDef](./type_defs.md#describedbclusterparametergroupsmessagedescribedbclusterparametergroupspaginatetypedef)
 - [DescribeDBClusterParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbclusterparametergroupsmessagerequesttypedef)
+- [DescribeDBClusterParametersMessageDescribeDBClusterParametersPaginateTypeDef](./type_defs.md#describedbclusterparametersmessagedescribedbclusterparameterspaginatetypedef)
 - [DescribeDBClusterParametersMessageRequestTypeDef](./type_defs.md#describedbclusterparametersmessagerequesttypedef)
 - [DescribeDBClusterSnapshotAttributesMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotattributesmessagerequesttypedef)
 - [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef)
+- [DescribeDBClusterSnapshotsMessageDescribeDBClusterSnapshotsPaginateTypeDef](./type_defs.md#describedbclustersnapshotsmessagedescribedbclustersnapshotspaginatetypedef)
 - [DescribeDBClusterSnapshotsMessageRequestTypeDef](./type_defs.md#describedbclustersnapshotsmessagerequesttypedef)
+- [DescribeDBClustersMessageDescribeDBClustersPaginateTypeDef](./type_defs.md#describedbclustersmessagedescribedbclusterspaginatetypedef)
 - [DescribeDBClustersMessageRequestTypeDef](./type_defs.md#describedbclustersmessagerequesttypedef)
+- [DescribeDBEngineVersionsMessageDescribeDBEngineVersionsPaginateTypeDef](./type_defs.md#describedbengineversionsmessagedescribedbengineversionspaginatetypedef)
 - [DescribeDBEngineVersionsMessageRequestTypeDef](./type_defs.md#describedbengineversionsmessagerequesttypedef)
+- [DescribeDBInstancesMessageDBInstanceAvailableWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstanceavailablewaittypedef)
+- [DescribeDBInstancesMessageDBInstanceDeletedWaitTypeDef](./type_defs.md#describedbinstancesmessagedbinstancedeletedwaittypedef)
+- [DescribeDBInstancesMessageDescribeDBInstancesPaginateTypeDef](./type_defs.md#describedbinstancesmessagedescribedbinstancespaginatetypedef)
 - [DescribeDBInstancesMessageRequestTypeDef](./type_defs.md#describedbinstancesmessagerequesttypedef)
+- [DescribeDBParameterGroupsMessageDescribeDBParameterGroupsPaginateTypeDef](./type_defs.md#describedbparametergroupsmessagedescribedbparametergroupspaginatetypedef)
 - [DescribeDBParameterGroupsMessageRequestTypeDef](./type_defs.md#describedbparametergroupsmessagerequesttypedef)
+- [DescribeDBParametersMessageDescribeDBParametersPaginateTypeDef](./type_defs.md#describedbparametersmessagedescribedbparameterspaginatetypedef)
 - [DescribeDBParametersMessageRequestTypeDef](./type_defs.md#describedbparametersmessagerequesttypedef)
+- [DescribeDBSubnetGroupsMessageDescribeDBSubnetGroupsPaginateTypeDef](./type_defs.md#describedbsubnetgroupsmessagedescribedbsubnetgroupspaginatetypedef)
 - [DescribeDBSubnetGroupsMessageRequestTypeDef](./type_defs.md#describedbsubnetgroupsmessagerequesttypedef)
 - [DescribeEngineDefaultClusterParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultclusterparametersmessagerequesttypedef)
 - [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef)
+- [DescribeEngineDefaultParametersMessageDescribeEngineDefaultParametersPaginateTypeDef](./type_defs.md#describeenginedefaultparametersmessagedescribeenginedefaultparameterspaginatetypedef)
 - [DescribeEngineDefaultParametersMessageRequestTypeDef](./type_defs.md#describeenginedefaultparametersmessagerequesttypedef)
 - [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)
 - [DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef)
+- [DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef)
 - [DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
+- [DescribeOrderableDBInstanceOptionsMessageDescribeOrderableDBInstanceOptionsPaginateTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagedescribeorderabledbinstanceoptionspaginatetypedef)
 - [DescribeOrderableDBInstanceOptionsMessageRequestTypeDef](./type_defs.md#describeorderabledbinstanceoptionsmessagerequesttypedef)
+- [DescribePendingMaintenanceActionsMessageDescribePendingMaintenanceActionsPaginateTypeDef](./type_defs.md#describependingmaintenanceactionsmessagedescribependingmaintenanceactionspaginatetypedef)
 - [DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef)
 - [DescribeValidDBInstanceModificationsMessageRequestTypeDef](./type_defs.md#describevaliddbinstancemodificationsmessagerequesttypedef)
 - [DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef)
@@ -484,3 +350,4 @@ from mypy_boto3_neptune.type_defs import AddRoleToDBClusterMessageRequestTypeDef
 - [ValidStorageOptionsTypeDef](./type_defs.md#validstorageoptionstypedef)
 - [VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

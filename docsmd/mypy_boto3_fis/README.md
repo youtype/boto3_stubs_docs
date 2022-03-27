@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-fis-module"></a>
-
-# Type annotations for boto3 FIS module
+#  FIS module
 
 > [Index](../README.md) > FIS
 
-Auto-generated documentation for
-[FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
-type annotations stubs module
-[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
+!!! note ""
 
-- [Type annotations for boto3 FIS module](#type-annotations-for-boto3-fis-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [FISClient](#fisclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
+    type annotations stubs module [mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `FIS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[fis]'
 python -m pip install mypy-boto3-fis
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,70 +42,41 @@ python -m pip install mypy-boto3-fis
 python -m pip uninstall -y mypy-boto3-fis
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="fisclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## FISClient
 
-Type annotations for `boto3.client("fis")` as [FISClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("fis")` as [FISClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_fis.client import FISClient
+
+def get_client() -> FISClient:
+    return Session().cleint("fis")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [create_experiment_template](./client.md#create_experiment_template)
-- [delete_experiment_template](./client.md#delete_experiment_template)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_action](./client.md#get_action)
-- [get_experiment](./client.md#get_experiment)
-- [get_experiment_template](./client.md#get_experiment_template)
-- [get_target_resource_type](./client.md#get_target_resource_type)
-- [list_actions](./client.md#list_actions)
-- [list_experiment_templates](./client.md#list_experiment_templates)
-- [list_experiments](./client.md#list_experiments)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_target_resource_types](./client.md#list_target_resource_types)
-- [start_experiment](./client.md#start_experiment)
-- [stop_experiment](./client.md#stop_experiment)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_experiment_template](./client.md#update_experiment_template)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-FISClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ConflictException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fis.literals import ExperimentActionStatusType
 
-```python
-from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
+def get_value() -> ExperimentActionStatusType:
+    return "cancelled"
 ```
 
 - [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
@@ -135,17 +85,20 @@ from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_fis.type_defs import ActionParameterTypeDef
 
-```python
-from mypy_boto3_fis.type_defs import ActionParameterTypeDef, ...
+def get_value() -> ActionParameterTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
 - [ActionParameterTypeDef](./type_defs.md#actionparametertypedef)
@@ -217,3 +170,4 @@ from mypy_boto3_fis.type_defs import ActionParameterTypeDef, ...
 - [UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef)
 - [UpdateExperimentTemplateStopConditionInputTypeDef](./type_defs.md#updateexperimenttemplatestopconditioninputtypedef)
 - [UpdateExperimentTemplateTargetInputTypeDef](./type_defs.md#updateexperimenttemplatetargetinputtypedef)
+

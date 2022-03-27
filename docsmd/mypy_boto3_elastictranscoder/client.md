@@ -1,51 +1,18 @@
-<a id="elastictranscoderclient-for-boto3-elastictranscoder-module"></a>
+# ElasticTranscoderClient
 
-# ElasticTranscoderClient for boto3 ElasticTranscoder module
+> [Index](../README.md) > [ElasticTranscoder](./README.md) > ElasticTranscoderClient
 
-> [Index](../README.md) > [ElasticTranscoder](./README.md) >
-> ElasticTranscoderClient
+!!! note ""
 
-Auto-generated documentation for
-[ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
-type annotations stubs module
-[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
-
-- [ElasticTranscoderClient for boto3 ElasticTranscoder module](#elastictranscoderclient-for-boto3-elastictranscoder-module)
-  - [ElasticTranscoderClient](#elastictranscoderclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_job](#cancel_job)
-    - [create_job](#create_job)
-    - [create_pipeline](#create_pipeline)
-    - [create_preset](#create_preset)
-    - [delete_pipeline](#delete_pipeline)
-    - [delete_preset](#delete_preset)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_jobs_by_pipeline](#list_jobs_by_pipeline)
-    - [list_jobs_by_status](#list_jobs_by_status)
-    - [list_pipelines](#list_pipelines)
-    - [list_presets](#list_presets)
-    - [read_job](#read_job)
-    - [read_pipeline](#read_pipeline)
-    - [read_preset](#read_preset)
-    - [test_role](#test_role)
-    - [update_pipeline](#update_pipeline)
-    - [update_pipeline_notifications](#update_pipeline_notifications)
-    - [update_pipeline_status](#update_pipeline_status)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="elastictranscoderclient"></a>
+    Auto-generated documentation for [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
+    type annotations stubs module [mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 ## ElasticTranscoderClient
 
-Type annotations for `boto3.client("elastictranscoder")`
+Type annotations and code completion for `#!python boto3.client("elastictranscoder")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_elastictranscoder.client import ElasticTranscoderClient
 
@@ -53,519 +20,649 @@ def get_elastictranscoder_client() -> ElasticTranscoderClient:
     return Session().client("elastictranscoder")
 ```
 
-Boto3 documentation:
-[ElasticTranscoder.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("elastictranscoder").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("elastictranscoder")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.IncompatibleVersionException,
+    client.InternalServiceException,
+    client.LimitExceededException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_elastictranscoder.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.IncompatibleVersionException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ElasticTranscoderClient exceptions.
-
-Type annotations for `boto3.client("elastictranscoder").exceptions` method.
-
-Boto3 documentation:
-[ElasticTranscoder.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("elastictranscoder").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_job"></a>
-
-### cancel_job
+### cancel\_job
 
 The CancelJob operation cancels an unfinished job.
 
-Type annotations for `boto3.client("elastictranscoder").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_job(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 When you create a job, Elastic Transcoder returns JSON data that includes the
 values that you specified plus information about the job that is created.
 
-Type annotations for `boto3.client("elastictranscoder").create_job` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    PipelineId: str,
+    Input: JobInputTypeDef = ...,  # (1)
+    Inputs: Sequence[JobInputTypeDef] = ...,  # (2)
+    Output: CreateJobOutputTypeDef = ...,  # (3)
+    Outputs: Sequence[CreateJobOutputTypeDef] = ...,  # (4)
+    OutputKeyPrefix: str = ...,
+    Playlists: Sequence[CreateJobPlaylistTypeDef] = ...,  # (5)
+    UserMetadata: Mapping[str, str] = ...,
+) -> CreateJobResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+2. See [:material-code-braces: JobInputTypeDef](./type_defs.md#jobinputtypedef) 
+3. See [:material-code-braces: CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef) 
+4. See [:material-code-braces: CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef) 
+5. See [:material-code-braces: CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef) 
+6. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PipelineId`: `str` *(required)*
-- `Input`: [JobInputTypeDef](./type_defs.md#jobinputtypedef)
-- `Inputs`: `Sequence`\[[JobInputTypeDef](./type_defs.md#jobinputtypedef)\]
-- `Output`: [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)
-- `Outputs`:
-  `Sequence`\[[CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef)\]
-- `OutputKeyPrefix`: `str`
-- `Playlists`:
-  `Sequence`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
-- `UserMetadata`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "PipelineId": ...,
+}
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_pipeline"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_pipeline
+### create\_pipeline
 
 The CreatePipeline operation creates a pipeline with settings that you specify.
 
-Type annotations for `boto3.client("elastictranscoder").create_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").create_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.create_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_pipeline)
+```python title="Method definition"
+def create_pipeline(
+    self,
+    *,
+    Name: str,
+    InputBucket: str,
+    Role: str,
+    OutputBucket: str = ...,
+    AwsKmsKeyArn: str = ...,
+    Notifications: NotificationsTypeDef = ...,  # (1)
+    ContentConfig: PipelineOutputConfigTypeDef = ...,  # (2)
+    ThumbnailConfig: PipelineOutputConfigTypeDef = ...,  # (2)
+) -> CreatePipelineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreatePipelineRequestRequestTypeDef](./type_defs.md#createpipelinerequestrequesttypedef).
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+3. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+4. See [:material-code-braces: CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InputBucket`: `str` *(required)*
-- `Role`: `str` *(required)*
-- `OutputBucket`: `str`
-- `AwsKmsKeyArn`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-- `ContentConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-- `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreatePipelineRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InputBucket": ...,
+    "Role": ...,
+}
 
-Returns
-[CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
+parent.create_pipeline(**kwargs)
+```
 
-<a id="create\_preset"></a>
+1. See [:material-code-braces: CreatePipelineRequestRequestTypeDef](./type_defs.md#createpipelinerequestrequesttypedef) 
 
-### create_preset
+### create\_preset
 
 The CreatePreset operation creates a preset with settings that you specify.
 
-Type annotations for `boto3.client("elastictranscoder").create_preset` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").create_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.create_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.create_preset)
+```python title="Method definition"
+def create_preset(
+    self,
+    *,
+    Name: str,
+    Container: str,
+    Description: str = ...,
+    Video: VideoParametersTypeDef = ...,  # (1)
+    Audio: AudioParametersTypeDef = ...,  # (2)
+    Thumbnails: ThumbnailsTypeDef = ...,  # (3)
+) -> CreatePresetResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreatePresetRequestRequestTypeDef](./type_defs.md#createpresetrequestrequesttypedef).
+1. See [:material-code-braces: VideoParametersTypeDef](./type_defs.md#videoparameterstypedef) 
+2. See [:material-code-braces: AudioParametersTypeDef](./type_defs.md#audioparameterstypedef) 
+3. See [:material-code-braces: ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef) 
+4. See [:material-code-braces: CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Container`: `str` *(required)*
-- `Description`: `str`
-- `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
-- `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
-- `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
+```python title="Usage example with kwargs"
+kwargs: CreatePresetRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Container": ...,
+}
 
-Returns
-[CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
+parent.create_preset(**kwargs)
+```
 
-<a id="delete\_pipeline"></a>
+1. See [:material-code-braces: CreatePresetRequestRequestTypeDef](./type_defs.md#createpresetrequestrequesttypedef) 
 
-### delete_pipeline
+### delete\_pipeline
 
 The DeletePipeline operation removes a pipeline.
 
-Type annotations for `boto3.client("elastictranscoder").delete_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").delete_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.delete_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_pipeline)
+```python title="Method definition"
+def delete_pipeline(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePipelineRequestRequestTypeDef](./type_defs.md#deletepipelinerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePipelineRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_pipeline(**kwargs)
+```
 
-<a id="delete\_preset"></a>
+1. See [:material-code-braces: DeletePipelineRequestRequestTypeDef](./type_defs.md#deletepipelinerequestrequesttypedef) 
 
-### delete_preset
+### delete\_preset
 
 The DeletePreset operation removes a preset that you've added in an AWS region.
 
-Type annotations for `boto3.client("elastictranscoder").delete_preset` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").delete_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.delete_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.delete_preset)
+```python title="Method definition"
+def delete_preset(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePresetRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_preset(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeletePresetRequestRequestTypeDef](./type_defs.md#deletepresetrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("elastictranscoder").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_jobs\_by\_pipeline"></a>
-
-### list_jobs_by_pipeline
+### list\_jobs\_by\_pipeline
 
 The ListJobsByPipeline operation gets a list of the jobs currently in a
 pipeline.
 
-Type annotations for `boto3.client("elastictranscoder").list_jobs_by_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").list_jobs_by_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.list_jobs_by_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_pipeline)
+```python title="Method definition"
+def list_jobs_by_pipeline(
+    self,
+    *,
+    PipelineId: str,
+    Ascending: str = ...,
+    PageToken: str = ...,
+) -> ListJobsByPipelineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsByPipelineRequestRequestTypeDef](./type_defs.md#listjobsbypipelinerequestrequesttypedef).
+1. See [:material-code-braces: ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `PipelineId`: `str` *(required)*
-- `Ascending`: `str`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsByPipelineRequestRequestTypeDef = {  # (1)
+    "PipelineId": ...,
+}
 
-Returns
-[ListJobsByPipelineResponseTypeDef](./type_defs.md#listjobsbypipelineresponsetypedef).
+parent.list_jobs_by_pipeline(**kwargs)
+```
 
-<a id="list\_jobs\_by\_status"></a>
+1. See [:material-code-braces: ListJobsByPipelineRequestRequestTypeDef](./type_defs.md#listjobsbypipelinerequestrequesttypedef) 
 
-### list_jobs_by_status
+### list\_jobs\_by\_status
 
-The ListJobsByStatus operation gets a list of jobs that have a specified
-status.
+The ListJobsByStatus operation gets a list of jobs that have a specified status.
 
-Type annotations for `boto3.client("elastictranscoder").list_jobs_by_status`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").list_jobs_by_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.list_jobs_by_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_jobs_by_status)
+```python title="Method definition"
+def list_jobs_by_status(
+    self,
+    *,
+    Status: str,
+    Ascending: str = ...,
+    PageToken: str = ...,
+) -> ListJobsByStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsByStatusRequestRequestTypeDef](./type_defs.md#listjobsbystatusrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Status`: `str` *(required)*
-- `Ascending`: `str`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsByStatusRequestRequestTypeDef = {  # (1)
+    "Status": ...,
+}
 
-Returns
-[ListJobsByStatusResponseTypeDef](./type_defs.md#listjobsbystatusresponsetypedef).
+parent.list_jobs_by_status(**kwargs)
+```
 
-<a id="list\_pipelines"></a>
+1. See [:material-code-braces: ListJobsByStatusRequestRequestTypeDef](./type_defs.md#listjobsbystatusrequestrequesttypedef) 
 
-### list_pipelines
+### list\_pipelines
 
 The ListPipelines operation gets a list of the pipelines associated with the
 current AWS account.
 
-Type annotations for `boto3.client("elastictranscoder").list_pipelines` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").list_pipelines` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.list_pipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_pipelines)
+```python title="Method definition"
+def list_pipelines(
+    self,
+    *,
+    Ascending: str = ...,
+    PageToken: str = ...,
+) -> ListPipelinesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef).
+1. See [:material-code-braces: ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Ascending`: `str`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesRequestRequestTypeDef = {  # (1)
+    "Ascending": ...,
+}
 
-Returns
-[ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
+parent.list_pipelines(**kwargs)
+```
 
-<a id="list\_presets"></a>
+1. See [:material-code-braces: ListPipelinesRequestRequestTypeDef](./type_defs.md#listpipelinesrequestrequesttypedef) 
 
-### list_presets
+### list\_presets
 
 The ListPresets operation gets a list of the default presets included with
 Elastic Transcoder and the presets that you've added in an AWS region.
 
-Type annotations for `boto3.client("elastictranscoder").list_presets` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").list_presets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.list_presets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.list_presets)
+```python title="Method definition"
+def list_presets(
+    self,
+    *,
+    Ascending: str = ...,
+    PageToken: str = ...,
+) -> ListPresetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef).
+1. See [:material-code-braces: ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Ascending`: `str`
-- `PageToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPresetsRequestRequestTypeDef = {  # (1)
+    "Ascending": ...,
+}
 
-Returns
-[ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
+parent.list_presets(**kwargs)
+```
 
-<a id="read\_job"></a>
+1. See [:material-code-braces: ListPresetsRequestRequestTypeDef](./type_defs.md#listpresetsrequestrequesttypedef) 
 
-### read_job
+### read\_job
 
 The ReadJob operation returns detailed information about a job.
 
-Type annotations for `boto3.client("elastictranscoder").read_job` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").read_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.read_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_job)
+```python title="Method definition"
+def read_job(
+    self,
+    *,
+    Id: str,
+) -> ReadJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReadJobRequestRequestTypeDef](./type_defs.md#readjobrequestrequesttypedef).
+1. See [:material-code-braces: ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ReadJobRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [ReadJobResponseTypeDef](./type_defs.md#readjobresponsetypedef).
+parent.read_job(**kwargs)
+```
 
-<a id="read\_pipeline"></a>
+1. See [:material-code-braces: ReadJobRequestRequestTypeDef](./type_defs.md#readjobrequestrequesttypedef) 
 
-### read_pipeline
+### read\_pipeline
 
 The ReadPipeline operation gets detailed information about a pipeline.
 
-Type annotations for `boto3.client("elastictranscoder").read_pipeline` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").read_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.read_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_pipeline)
+```python title="Method definition"
+def read_pipeline(
+    self,
+    *,
+    Id: str,
+) -> ReadPipelineResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReadPipelineRequestRequestTypeDef](./type_defs.md#readpipelinerequestrequesttypedef).
+1. See [:material-code-braces: ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ReadPipelineRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[ReadPipelineResponseTypeDef](./type_defs.md#readpipelineresponsetypedef).
+parent.read_pipeline(**kwargs)
+```
 
-<a id="read\_preset"></a>
+1. See [:material-code-braces: ReadPipelineRequestRequestTypeDef](./type_defs.md#readpipelinerequestrequesttypedef) 
 
-### read_preset
+### read\_preset
 
 The ReadPreset operation gets detailed information about a preset.
 
-Type annotations for `boto3.client("elastictranscoder").read_preset` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").read_preset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.read_preset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.read_preset)
+```python title="Method definition"
+def read_preset(
+    self,
+    *,
+    Id: str,
+) -> ReadPresetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ReadPresetRequestRequestTypeDef](./type_defs.md#readpresetrequestrequesttypedef).
+1. See [:material-code-braces: ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ReadPresetRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [ReadPresetResponseTypeDef](./type_defs.md#readpresetresponsetypedef).
+parent.read_preset(**kwargs)
+```
 
-<a id="test\_role"></a>
+1. See [:material-code-braces: ReadPresetRequestRequestTypeDef](./type_defs.md#readpresetrequestrequesttypedef) 
 
-### test_role
+### test\_role
 
 The TestRole operation tests the IAM role used to create the pipeline.
 
-Type annotations for `boto3.client("elastictranscoder").test_role` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").test_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.test_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.test_role)
+```python title="Method definition"
+def test_role(
+    self,
+    *,
+    Role: str,
+    InputBucket: str,
+    OutputBucket: str,
+    Topics: Sequence[str],
+) -> TestRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestRoleRequestRequestTypeDef](./type_defs.md#testrolerequestrequesttypedef).
+1. See [:material-code-braces: TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Role`: `str` *(required)*
-- `InputBucket`: `str` *(required)*
-- `OutputBucket`: `str` *(required)*
-- `Topics`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TestRoleRequestRequestTypeDef = {  # (1)
+    "Role": ...,
+    "InputBucket": ...,
+    "OutputBucket": ...,
+    "Topics": ...,
+}
 
-Returns [TestRoleResponseTypeDef](./type_defs.md#testroleresponsetypedef).
+parent.test_role(**kwargs)
+```
 
-<a id="update\_pipeline"></a>
+1. See [:material-code-braces: TestRoleRequestRequestTypeDef](./type_defs.md#testrolerequestrequesttypedef) 
 
-### update_pipeline
+### update\_pipeline
 
 Use the `UpdatePipeline` operation to update settings for a pipeline.
 
-Type annotations for `boto3.client("elastictranscoder").update_pipeline`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").update_pipeline` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline)
+```python title="Method definition"
+def update_pipeline(
+    self,
+    *,
+    Id: str,
+    Name: str = ...,
+    InputBucket: str = ...,
+    Role: str = ...,
+    AwsKmsKeyArn: str = ...,
+    Notifications: NotificationsTypeDef = ...,  # (1)
+    ContentConfig: PipelineOutputConfigTypeDef = ...,  # (2)
+    ThumbnailConfig: PipelineOutputConfigTypeDef = ...,  # (2)
+) -> UpdatePipelineResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef).
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+3. See [:material-code-braces: PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef) 
+4. See [:material-code-braces: UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Name`: `str`
-- `InputBucket`: `str`
-- `Role`: `str`
-- `AwsKmsKeyArn`: `str`
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-- `ContentConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
-- `ThumbnailConfig`:
-  [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdatePipelineRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
+parent.update_pipeline(**kwargs)
+```
 
-<a id="update\_pipeline\_notifications"></a>
+1. See [:material-code-braces: UpdatePipelineRequestRequestTypeDef](./type_defs.md#updatepipelinerequestrequesttypedef) 
 
-### update_pipeline_notifications
+### update\_pipeline\_notifications
 
 With the UpdatePipelineNotifications operation, you can update Amazon Simple
 Notification Service (Amazon SNS) notifications for a pipeline.
 
-Type annotations for
-`boto3.client("elastictranscoder").update_pipeline_notifications` method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").update_pipeline_notifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline_notifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_notifications)
+```python title="Method definition"
+def update_pipeline_notifications(
+    self,
+    *,
+    Id: str,
+    Notifications: NotificationsTypeDef,  # (1)
+) -> UpdatePipelineNotificationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePipelineNotificationsRequestRequestTypeDef](./type_defs.md#updatepipelinenotificationsrequestrequesttypedef).
+1. See [:material-code-braces: NotificationsTypeDef](./type_defs.md#notificationstypedef) 
+2. See [:material-code-braces: UpdatePipelineNotificationsResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePipelineNotificationsRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Notifications": ...,
+}
 
-Returns
-[UpdatePipelineNotificationsResponseTypeDef](./type_defs.md#updatepipelinenotificationsresponsetypedef).
+parent.update_pipeline_notifications(**kwargs)
+```
 
-<a id="update\_pipeline\_status"></a>
+1. See [:material-code-braces: UpdatePipelineNotificationsRequestRequestTypeDef](./type_defs.md#updatepipelinenotificationsrequestrequesttypedef) 
 
-### update_pipeline_status
+### update\_pipeline\_status
 
-The UpdatePipelineStatus operation pauses or reactivates a pipeline, so that
-the pipeline stops or restarts the processing of jobs.
+The UpdatePipelineStatus operation pauses or reactivates a pipeline, so that the
+pipeline stops or restarts the processing of jobs.
 
-Type annotations for `boto3.client("elastictranscoder").update_pipeline_status`
-method.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").update_pipeline_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
 
-Boto3 documentation:
-[ElasticTranscoder.Client.update_pipeline_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder.Client.update_pipeline_status)
+```python title="Method definition"
+def update_pipeline_status(
+    self,
+    *,
+    Id: str,
+    Status: str,
+) -> UpdatePipelineStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePipelineStatusRequestRequestTypeDef](./type_defs.md#updatepipelinestatusrequestrequesttypedef).
+1. See [:material-code-braces: UpdatePipelineStatusResponseTypeDef](./type_defs.md#updatepipelinestatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Status`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdatePipelineStatusRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Status": ...,
+}
 
-Returns
-[UpdatePipelineStatusResponseTypeDef](./type_defs.md#updatepipelinestatusresponsetypedef).
+parent.update_pipeline_status(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdatePipelineStatusRequestRequestTypeDef](./type_defs.md#updatepipelinestatusrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("elastictranscoder").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_paginator` method with overloads.
 
-- `client.get_paginator("list_jobs_by_pipeline")` ->
-  [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
-- `client.get_paginator("list_jobs_by_status")` ->
-  [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
-- `client.get_paginator("list_pipelines")` ->
-  [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
-- `client.get_paginator("list_presets")` ->
-  [ListPresetsPaginator](./paginators.md#listpresetspaginator)
+- `client.get_paginator("list_jobs_by_pipeline")` -> [ListJobsByPipelinePaginator](./paginators.md#listjobsbypipelinepaginator)
+- `client.get_paginator("list_jobs_by_status")` -> [ListJobsByStatusPaginator](./paginators.md#listjobsbystatuspaginator)
+- `client.get_paginator("list_pipelines")` -> [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
+- `client.get_paginator("list_presets")` -> [ListPresetsPaginator](./paginators.md#listpresetspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("elastictranscoder").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("elastictranscoder").get_waiter` method with overloads.
 
-- `client.get_waiter("job_complete")` ->
-  [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
+- `client.get_waiter("job_complete")` -> [JobCompleteWaiter](./waiters.md#jobcompletewaiter)
+

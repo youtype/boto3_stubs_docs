@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-cloudsearch-module"></a>
-
-# Type annotations for boto3 CloudSearch module
+#  CloudSearch module
 
 > [Index](../README.md) > CloudSearch
 
-Auto-generated documentation for
-[CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
-type annotations stubs module
-[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+!!! note ""
 
-- [Type annotations for boto3 CloudSearch module](#type-annotations-for-boto3-cloudsearch-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CloudSearchClient](#cloudsearchclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
+    type annotations stubs module [mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CloudSearch`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[cloudsearch]'
 python -m pip install mypy-boto3-cloudsearch
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,85 +42,41 @@ python -m pip install mypy-boto3-cloudsearch
 python -m pip uninstall -y mypy-boto3-cloudsearch
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="cloudsearchclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CloudSearchClient
 
-Type annotations for `boto3.client("cloudsearch")` as
-[CloudSearchClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("cloudsearch")` as [CloudSearchClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_cloudsearch.client import CloudSearchClient
+
+def get_client() -> CloudSearchClient:
+    return Session().cleint("cloudsearch")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [build_suggesters](./client.md#build_suggesters)
-- [can_paginate](./client.md#can_paginate)
-- [create_domain](./client.md#create_domain)
-- [define_analysis_scheme](./client.md#define_analysis_scheme)
-- [define_expression](./client.md#define_expression)
-- [define_index_field](./client.md#define_index_field)
-- [define_suggester](./client.md#define_suggester)
-- [delete_analysis_scheme](./client.md#delete_analysis_scheme)
-- [delete_domain](./client.md#delete_domain)
-- [delete_expression](./client.md#delete_expression)
-- [delete_index_field](./client.md#delete_index_field)
-- [delete_suggester](./client.md#delete_suggester)
-- [describe_analysis_schemes](./client.md#describe_analysis_schemes)
-- [describe_availability_options](./client.md#describe_availability_options)
-- [describe_domain_endpoint_options](./client.md#describe_domain_endpoint_options)
-- [describe_domains](./client.md#describe_domains)
-- [describe_expressions](./client.md#describe_expressions)
-- [describe_index_fields](./client.md#describe_index_fields)
-- [describe_scaling_parameters](./client.md#describe_scaling_parameters)
-- [describe_service_access_policies](./client.md#describe_service_access_policies)
-- [describe_suggesters](./client.md#describe_suggesters)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [index_documents](./client.md#index_documents)
-- [list_domain_names](./client.md#list_domain_names)
-- [update_availability_options](./client.md#update_availability_options)
-- [update_domain_endpoint_options](./client.md#update_domain_endpoint_options)
-- [update_scaling_parameters](./client.md#update_scaling_parameters)
-- [update_service_access_policies](./client.md#update_service_access_policies)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-CloudSearchClient [exceptions](./client.md#exceptions)
 
-- BaseException
-- ClientError
-- DisabledOperationException
-- InternalException
-- InvalidTypeException
-- LimitExceededException
-- ResourceAlreadyExistsException
-- ResourceNotFoundException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudsearch.literals import AlgorithmicStemmingType
 
-```python
-from mypy_boto3_cloudsearch.literals import AlgorithmicStemmingType, ...
+def get_value() -> AlgorithmicStemmingType:
+    return "full"
 ```
 
 - [AlgorithmicStemmingType](./literals.md#algorithmicstemmingtype)
@@ -154,18 +89,23 @@ from mypy_boto3_cloudsearch.literals import AlgorithmicStemmingType, ...
 - [CloudSearchServiceName](./literals.md#cloudsearchservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_cloudsearch.type_defs import AccessPoliciesStatusTypeDef
 
-```python
-from mypy_boto3_cloudsearch.type_defs import AccessPoliciesStatusTypeDef, ...
+def get_value() -> AccessPoliciesStatusTypeDef:
+    return {
+        "Options": ...,
+        "Status": ...,
+    }
 ```
 
 - [AccessPoliciesStatusTypeDef](./type_defs.md#accesspoliciesstatustypedef)
@@ -251,3 +191,4 @@ from mypy_boto3_cloudsearch.type_defs import AccessPoliciesStatusTypeDef, ...
 - [UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef)
 - [UpdateServiceAccessPoliciesRequestRequestTypeDef](./type_defs.md#updateserviceaccesspoliciesrequestrequesttypedef)
 - [UpdateServiceAccessPoliciesResponseTypeDef](./type_defs.md#updateserviceaccesspoliciesresponsetypedef)
+

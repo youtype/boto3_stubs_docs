@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-cognitoidentity-module"></a>
-
-# Examples for boto3 CognitoIdentity module
+# Examples
 
 > [Index](../README.md) > [CognitoIdentity](./README.md) > Examples
 
-- [Examples for boto3 CognitoIdentity module](#examples-for-boto3-cognitoidentity-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
+    type annotations stubs module [mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[cognito-identity]` package installed.
 
-Write your `CognitoIdentity` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `CognitoIdentity` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CognitoIdentityClient
-# and provides type checking and code completion
-client = session.client("cognito-identity")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListIdentityPoolsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_identity_pools")
-for item in paginator.paginate(...):
-    # item has type ListIdentityPoolsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("cognito-identity")  # (1)
+    result = client.create_identity_pool()  # (2)
+    ```
+
+    1. client: [CognitoIdentityClient](./client.md)
+    2. result: [:material-code-braces: IdentityPoolTypeDef](./type_defs.md#identitypooltypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("cognito-identity")  # (1)
+
+    paginator = client.get_paginator("list_identity_pools")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CognitoIdentityClient](./client.md)
+    2. paginator: [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
+    3. item: [:material-code-braces: ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[cognito-identity]` or a standalone
-`mypy_boto3_cognito_identity` package, you have to explicitly specify
-`client: CognitoIdentityClient` type annotation.
+With `boto3-stubs-lite[cognito-identity]`
+or a standalone `mypy_boto3_cognito_identity` package, you have to explicitly specify `client: CognitoIdentityClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_cognito_identity.client import CognitoIdentityClient
-from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator
-
-from mypy_boto3_cognito_identity.literals import PaginatorName
-
-from mypy_boto3_cognito_identity.type_defs import bool
-from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CognitoIdentityClient = session.client("cognito-identity")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_cognito_identity.client import CognitoIdentityClient
+    from mypy_boto3_cognito_identity.type_defs import IdentityPoolTypeDef
+    from mypy_boto3_cognito_identity.type_defs import CreateIdentityPoolInputRequestTypeDef
 
-paginator_name: PaginatorName = "list_identity_pools"
-paginator: ListIdentityPoolsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListIdentityPoolsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CognitoIdentityClient = session.client("cognito-identity")
+
+    kwargs: CreateIdentityPoolInputRequestTypeDef = {...}
+    result: IdentityPoolTypeDef = client.create_identity_pool(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_cognito_identity.client import CognitoIdentityClient
+    from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator
+    from mypy_boto3_cognito_identity.type_defs import ListIdentityPoolsResponseTypeDef
+
+
+    session = Session()
+    client: CognitoIdentityClient = session.client("cognito-identity")
+
+    paginator: ListIdentityPoolsPaginator = client.get_paginator("list_identity_pools")
+    for item in paginator.paginate(...):
+        item: ListIdentityPoolsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,909 +1,1205 @@
-<a id="typed-dictionaries-for-boto3-honeycode-module"></a>
-
-# Typed dictionaries for boto3 Honeycode module
+# Typed dictionaries
 
 > [Index](../README.md) > [Honeycode](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
-type annotations stubs module
-[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Honeycode module](#typed-dictionaries-for-boto3-honeycode-module)
-  - [BatchCreateTableRowsRequestRequestTypeDef](#batchcreatetablerowsrequestrequesttypedef)
-  - [BatchCreateTableRowsResultTypeDef](#batchcreatetablerowsresulttypedef)
-  - [BatchDeleteTableRowsRequestRequestTypeDef](#batchdeletetablerowsrequestrequesttypedef)
-  - [BatchDeleteTableRowsResultTypeDef](#batchdeletetablerowsresulttypedef)
-  - [BatchUpdateTableRowsRequestRequestTypeDef](#batchupdatetablerowsrequestrequesttypedef)
-  - [BatchUpdateTableRowsResultTypeDef](#batchupdatetablerowsresulttypedef)
-  - [BatchUpsertTableRowsRequestRequestTypeDef](#batchupserttablerowsrequestrequesttypedef)
-  - [BatchUpsertTableRowsResultTypeDef](#batchupserttablerowsresulttypedef)
-  - [CellInputTypeDef](#cellinputtypedef)
-  - [CellTypeDef](#celltypedef)
-  - [ColumnMetadataTypeDef](#columnmetadatatypedef)
-  - [CreateRowDataTypeDef](#createrowdatatypedef)
-  - [DataItemTypeDef](#dataitemtypedef)
-  - [DelimitedTextImportOptionsTypeDef](#delimitedtextimportoptionstypedef)
-  - [DescribeTableDataImportJobRequestRequestTypeDef](#describetabledataimportjobrequestrequesttypedef)
-  - [DescribeTableDataImportJobResultTypeDef](#describetabledataimportjobresulttypedef)
-  - [DestinationOptionsTypeDef](#destinationoptionstypedef)
-  - [FailedBatchItemTypeDef](#failedbatchitemtypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetScreenDataRequestRequestTypeDef](#getscreendatarequestrequesttypedef)
-  - [GetScreenDataResultTypeDef](#getscreendataresulttypedef)
-  - [ImportDataSourceConfigTypeDef](#importdatasourceconfigtypedef)
-  - [ImportDataSourceTypeDef](#importdatasourcetypedef)
-  - [ImportJobSubmitterTypeDef](#importjobsubmittertypedef)
-  - [ImportOptionsTypeDef](#importoptionstypedef)
-  - [InvokeScreenAutomationRequestRequestTypeDef](#invokescreenautomationrequestrequesttypedef)
-  - [InvokeScreenAutomationResultTypeDef](#invokescreenautomationresulttypedef)
-  - [ListTableColumnsRequestRequestTypeDef](#listtablecolumnsrequestrequesttypedef)
-  - [ListTableColumnsResultTypeDef](#listtablecolumnsresulttypedef)
-  - [ListTableRowsRequestRequestTypeDef](#listtablerowsrequestrequesttypedef)
-  - [ListTableRowsResultTypeDef](#listtablerowsresulttypedef)
-  - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
-  - [ListTablesResultTypeDef](#listtablesresulttypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [QueryTableRowsRequestRequestTypeDef](#querytablerowsrequestrequesttypedef)
-  - [QueryTableRowsResultTypeDef](#querytablerowsresulttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResultRowTypeDef](#resultrowtypedef)
-  - [ResultSetTypeDef](#resultsettypedef)
-  - [SourceDataColumnPropertiesTypeDef](#sourcedatacolumnpropertiestypedef)
-  - [StartTableDataImportJobRequestRequestTypeDef](#starttabledataimportjobrequestrequesttypedef)
-  - [StartTableDataImportJobResultTypeDef](#starttabledataimportjobresulttypedef)
-  - [TableColumnTypeDef](#tablecolumntypedef)
-  - [TableDataImportJobMetadataTypeDef](#tabledataimportjobmetadatatypedef)
-  - [TableRowTypeDef](#tablerowtypedef)
-  - [TableTypeDef](#tabletypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateRowDataTypeDef](#updaterowdatatypedef)
-  - [UpsertRowDataTypeDef](#upsertrowdatatypedef)
-  - [UpsertRowsResultTypeDef](#upsertrowsresulttypedef)
-  - [VariableValueTypeDef](#variablevaluetypedef)
-
-<a id="batchcreatetablerowsrequestrequesttypedef"></a>
+    Auto-generated documentation for [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
+    type annotations stubs module [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ## BatchCreateTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsRequestRequestTypeDef
+
+def get_value() -> BatchCreateTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "rowsToCreate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowsToCreate: Sequence[CreateRowDataTypeDef],  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `tableId`: `str`
-- `rowsToCreate`:
-  `Sequence`\[[CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef)\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="batchcreatetablerowsresulttypedef"></a>
-
+1. See [:material-code-braces: CreateRowDataTypeDef](./type_defs.md#createrowdatatypedef) 
 ## BatchCreateTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchCreateTableRowsResultTypeDef
+
+def get_value() -> BatchCreateTableRowsResultTypeDef:
+    return {
+        "workbookCursor": ...,
+        "createdRows": ...,
+        "failedBatchItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateTableRowsResultTypeDef(TypedDict):
+    workbookCursor: int,
+    createdRows: Dict[str, str],
+    failedBatchItems: List[FailedBatchItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `workbookCursor`: `int`
-- `createdRows`: `Dict`\[`str`, `str`\]
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchdeletetablerowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchDeleteTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchDeleteTableRowsRequestRequestTypeDef
+
+def get_value() -> BatchDeleteTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "rowIds": ...,
+    }
 ```
 
-Required fields:
-
-- `workbookId`: `str`
-- `tableId`: `str`
-- `rowIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="batchdeletetablerowsresulttypedef"></a>
+```python title="Definition"
+class BatchDeleteTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowIds: Sequence[str],
+    clientRequestToken: NotRequired[str],
+```
 
 ## BatchDeleteTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchDeleteTableRowsResultTypeDef
+
+def get_value() -> BatchDeleteTableRowsResultTypeDef:
+    return {
+        "workbookCursor": ...,
+        "failedBatchItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteTableRowsResultTypeDef(TypedDict):
+    workbookCursor: int,
+    failedBatchItems: List[FailedBatchItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `workbookCursor`: `int`
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchupdatetablerowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchUpdateTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchUpdateTableRowsRequestRequestTypeDef
+
+def get_value() -> BatchUpdateTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "rowsToUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowsToUpdate: Sequence[UpdateRowDataTypeDef],  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `tableId`: `str`
-- `rowsToUpdate`:
-  `Sequence`\[[UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef)\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="batchupdatetablerowsresulttypedef"></a>
-
+1. See [:material-code-braces: UpdateRowDataTypeDef](./type_defs.md#updaterowdatatypedef) 
 ## BatchUpdateTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchUpdateTableRowsResultTypeDef
+
+def get_value() -> BatchUpdateTableRowsResultTypeDef:
+    return {
+        "workbookCursor": ...,
+        "failedBatchItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpdateTableRowsResultTypeDef(TypedDict):
+    workbookCursor: int,
+    failedBatchItems: List[FailedBatchItemTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `workbookCursor`: `int`
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchupserttablerowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchUpsertTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsRequestRequestTypeDef
+
+def get_value() -> BatchUpsertTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "rowsToUpsert": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpsertTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowsToUpsert: Sequence[UpsertRowDataTypeDef],  # (1)
+    clientRequestToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `tableId`: `str`
-- `rowsToUpsert`:
-  `Sequence`\[[UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef)\]
-
-Optional fields:
-
-- `clientRequestToken`: `str`
-
-<a id="batchupserttablerowsresulttypedef"></a>
-
+1. See [:material-code-braces: UpsertRowDataTypeDef](./type_defs.md#upsertrowdatatypedef) 
 ## BatchUpsertTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import BatchUpsertTableRowsResultTypeDef
+
+def get_value() -> BatchUpsertTableRowsResultTypeDef:
+    return {
+        "rows": ...,
+        "workbookCursor": ...,
+        "failedBatchItems": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchUpsertTableRowsResultTypeDef(TypedDict):
+    rows: Dict[str, UpsertRowsResultTypeDef],  # (1)
+    workbookCursor: int,
+    failedBatchItems: List[FailedBatchItemTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `rows`: `Dict`\[`str`,
-  [UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef)\]
-- `workbookCursor`: `int`
-- `failedBatchItems`:
-  `List`\[[FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="cellinputtypedef"></a>
-
+1. See [:material-code-braces: UpsertRowsResultTypeDef](./type_defs.md#upsertrowsresulttypedef) 
+2. See [:material-code-braces: FailedBatchItemTypeDef](./type_defs.md#failedbatchitemtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CellInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import CellInputTypeDef
+
+def get_value() -> CellInputTypeDef:
+    return {
+        "fact": ...,
+    }
 ```
 
-Optional fields:
-
-- `fact`: `str`
-- `facts`: `Sequence`\[`str`\]
-
-<a id="celltypedef"></a>
+```python title="Definition"
+class CellInputTypeDef(TypedDict):
+    fact: NotRequired[str],
+    facts: NotRequired[Sequence[str]],
+```
 
 ## CellTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import CellTypeDef
+
+def get_value() -> CellTypeDef:
+    return {
+        "formula": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CellTypeDef(TypedDict):
+    formula: NotRequired[str],
+    format: NotRequired[FormatType],  # (1)
+    rawValue: NotRequired[str],
+    formattedValue: NotRequired[str],
+    formattedValues: NotRequired[List[str]],
+```
 
-- `formula`: `str`
-- `format`: [FormatType](./literals.md#formattype)
-- `rawValue`: `str`
-- `formattedValue`: `str`
-- `formattedValues`: `List`\[`str`\]
-
-<a id="columnmetadatatypedef"></a>
-
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 ## ColumnMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ColumnMetadataTypeDef
+
+def get_value() -> ColumnMetadataTypeDef:
+    return {
+        "name": ...,
+        "format": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ColumnMetadataTypeDef(TypedDict):
+    name: str,
+    format: FormatType,  # (1)
+```
 
-- `name`: `str`
-- `format`: [FormatType](./literals.md#formattype)
-
-<a id="createrowdatatypedef"></a>
-
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 ## CreateRowDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import CreateRowDataTypeDef
+
+def get_value() -> CreateRowDataTypeDef:
+    return {
+        "batchItemId": ...,
+        "cellsToCreate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRowDataTypeDef(TypedDict):
+    batchItemId: str,
+    cellsToCreate: Mapping[str, CellInputTypeDef],  # (1)
+```
 
-- `batchItemId`: `str`
-- `cellsToCreate`: `Mapping`\[`str`,
-  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
-
-<a id="dataitemtypedef"></a>
-
+1. See [:material-code-braces: CellInputTypeDef](./type_defs.md#cellinputtypedef) 
 ## DataItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import DataItemTypeDef
+
+def get_value() -> DataItemTypeDef:
+    return {
+        "overrideFormat": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DataItemTypeDef(TypedDict):
+    overrideFormat: NotRequired[FormatType],  # (1)
+    rawValue: NotRequired[str],
+    formattedValue: NotRequired[str],
+```
 
-- `overrideFormat`: [FormatType](./literals.md#formattype)
-- `rawValue`: `str`
-- `formattedValue`: `str`
-
-<a id="delimitedtextimportoptionstypedef"></a>
-
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 ## DelimitedTextImportOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import DelimitedTextImportOptionsTypeDef
+
+def get_value() -> DelimitedTextImportOptionsTypeDef:
+    return {
+        "delimiter": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DelimitedTextImportOptionsTypeDef(TypedDict):
+    delimiter: str,
+    hasHeaderRow: NotRequired[bool],
+    ignoreEmptyRows: NotRequired[bool],
+    dataCharacterEncoding: NotRequired[ImportDataCharacterEncodingType],  # (1)
+```
 
-- `delimiter`: `str`
-
-Optional fields:
-
-- `hasHeaderRow`: `bool`
-- `ignoreEmptyRows`: `bool`
-- `dataCharacterEncoding`:
-  [ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype)
-
-<a id="describetabledataimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ImportDataCharacterEncodingType](./literals.md#importdatacharacterencodingtype) 
 ## DescribeTableDataImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobRequestRequestTypeDef
+
+def get_value() -> DescribeTableDataImportJobRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "jobId": ...,
+    }
 ```
 
-Required fields:
-
-- `workbookId`: `str`
-- `tableId`: `str`
-- `jobId`: `str`
-
-<a id="describetabledataimportjobresulttypedef"></a>
+```python title="Definition"
+class DescribeTableDataImportJobRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    jobId: str,
+```
 
 ## DescribeTableDataImportJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import DescribeTableDataImportJobResultTypeDef
+
+def get_value() -> DescribeTableDataImportJobResultTypeDef:
+    return {
+        "jobStatus": ...,
+        "message": ...,
+        "jobMetadata": ...,
+        "errorCode": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTableDataImportJobResultTypeDef(TypedDict):
+    jobStatus: TableDataImportJobStatusType,  # (1)
+    message: str,
+    jobMetadata: TableDataImportJobMetadataTypeDef,  # (2)
+    errorCode: ErrorCodeType,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `jobStatus`:
-  [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
-- `message`: `str`
-- `jobMetadata`:
-  [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
-- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="destinationoptionstypedef"></a>
-
+1. See [:material-code-brackets: TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype) 
+2. See [:material-code-braces: TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef) 
+3. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DestinationOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import DestinationOptionsTypeDef
+
+def get_value() -> DestinationOptionsTypeDef:
+    return {
+        "columnMap": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DestinationOptionsTypeDef(TypedDict):
+    columnMap: NotRequired[Dict[str, SourceDataColumnPropertiesTypeDef]],  # (1)
+```
 
-- `columnMap`: `Dict`\[`str`,
-  [SourceDataColumnPropertiesTypeDef](./type_defs.md#sourcedatacolumnpropertiestypedef)\]
-
-<a id="failedbatchitemtypedef"></a>
-
+1. See [:material-code-braces: SourceDataColumnPropertiesTypeDef](./type_defs.md#sourcedatacolumnpropertiestypedef) 
 ## FailedBatchItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import FailedBatchItemTypeDef
+
+def get_value() -> FailedBatchItemTypeDef:
+    return {
+        "id": ...,
+        "errorMessage": ...,
+    }
 ```
 
-Required fields:
-
-- `id`: `str`
-- `errorMessage`: `str`
-
-<a id="filtertypedef"></a>
+```python title="Definition"
+class FailedBatchItemTypeDef(TypedDict):
+    id: str,
+    errorMessage: str,
+```
 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "formula": ...,
+    }
 ```
 
-Required fields:
-
-- `formula`: `str`
-
-Optional fields:
-
-- `contextRowId`: `str`
-
-<a id="getscreendatarequestrequesttypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    formula: str,
+    contextRowId: NotRequired[str],
+```
 
 ## GetScreenDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import GetScreenDataRequestRequestTypeDef
+
+def get_value() -> GetScreenDataRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "appId": ...,
+        "screenId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetScreenDataRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    appId: str,
+    screenId: str,
+    variables: NotRequired[Mapping[str, VariableValueTypeDef]],  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `appId`: `str`
-- `screenId`: `str`
-
-Optional fields:
-
-- `variables`: `Mapping`\[`str`,
-  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="getscreendataresulttypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
 ## GetScreenDataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import GetScreenDataResultTypeDef
+
+def get_value() -> GetScreenDataResultTypeDef:
+    return {
+        "results": ...,
+        "workbookCursor": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetScreenDataResultTypeDef(TypedDict):
+    results: Dict[str, ResultSetTypeDef],  # (1)
+    workbookCursor: int,
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `results`: `Dict`\[`str`,
-  [ResultSetTypeDef](./type_defs.md#resultsettypedef)\]
-- `workbookCursor`: `int`
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="importdatasourceconfigtypedef"></a>
-
+1. See [:material-code-braces: ResultSetTypeDef](./type_defs.md#resultsettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ImportDataSourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ImportDataSourceConfigTypeDef
+
+def get_value() -> ImportDataSourceConfigTypeDef:
+    return {
+        "dataSourceUrl": ...,
+    }
 ```
 
-Optional fields:
-
-- `dataSourceUrl`: `str`
-
-<a id="importdatasourcetypedef"></a>
+```python title="Definition"
+class ImportDataSourceConfigTypeDef(TypedDict):
+    dataSourceUrl: NotRequired[str],
+```
 
 ## ImportDataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ImportDataSourceTypeDef
+
+def get_value() -> ImportDataSourceTypeDef:
+    return {
+        "dataSourceConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportDataSourceTypeDef(TypedDict):
+    dataSourceConfig: ImportDataSourceConfigTypeDef,  # (1)
+```
 
-- `dataSourceConfig`:
-  [ImportDataSourceConfigTypeDef](./type_defs.md#importdatasourceconfigtypedef)
-
-<a id="importjobsubmittertypedef"></a>
-
+1. See [:material-code-braces: ImportDataSourceConfigTypeDef](./type_defs.md#importdatasourceconfigtypedef) 
 ## ImportJobSubmitterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ImportJobSubmitterTypeDef
+
+def get_value() -> ImportJobSubmitterTypeDef:
+    return {
+        "email": ...,
+    }
 ```
 
-Optional fields:
-
-- `email`: `str`
-- `userArn`: `str`
-
-<a id="importoptionstypedef"></a>
+```python title="Definition"
+class ImportJobSubmitterTypeDef(TypedDict):
+    email: NotRequired[str],
+    userArn: NotRequired[str],
+```
 
 ## ImportOptionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ImportOptionsTypeDef
+
+def get_value() -> ImportOptionsTypeDef:
+    return {
+        "destinationOptions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ImportOptionsTypeDef(TypedDict):
+    destinationOptions: NotRequired[DestinationOptionsTypeDef],  # (1)
+    delimitedTextOptions: NotRequired[DelimitedTextImportOptionsTypeDef],  # (2)
+```
 
-- `destinationOptions`:
-  [DestinationOptionsTypeDef](./type_defs.md#destinationoptionstypedef)
-- `delimitedTextOptions`:
-  [DelimitedTextImportOptionsTypeDef](./type_defs.md#delimitedtextimportoptionstypedef)
-
-<a id="invokescreenautomationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DestinationOptionsTypeDef](./type_defs.md#destinationoptionstypedef) 
+2. See [:material-code-braces: DelimitedTextImportOptionsTypeDef](./type_defs.md#delimitedtextimportoptionstypedef) 
 ## InvokeScreenAutomationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import InvokeScreenAutomationRequestRequestTypeDef
+
+def get_value() -> InvokeScreenAutomationRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "appId": ...,
+        "screenId": ...,
+        "screenAutomationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeScreenAutomationRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    appId: str,
+    screenId: str,
+    screenAutomationId: str,
+    variables: NotRequired[Mapping[str, VariableValueTypeDef]],  # (1)
+    rowId: NotRequired[str],
+    clientRequestToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `appId`: `str`
-- `screenId`: `str`
-- `screenAutomationId`: `str`
-
-Optional fields:
-
-- `variables`: `Mapping`\[`str`,
-  [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)\]
-- `rowId`: `str`
-- `clientRequestToken`: `str`
-
-<a id="invokescreenautomationresulttypedef"></a>
-
+1. See [:material-code-braces: VariableValueTypeDef](./type_defs.md#variablevaluetypedef) 
 ## InvokeScreenAutomationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import InvokeScreenAutomationResultTypeDef
+
+def get_value() -> InvokeScreenAutomationResultTypeDef:
+    return {
+        "workbookCursor": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InvokeScreenAutomationResultTypeDef(TypedDict):
+    workbookCursor: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `workbookCursor`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTableColumnsRequestListTableColumnsPaginateTypeDef
 
-<a id="listtablecolumnsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_honeycode.type_defs import ListTableColumnsRequestListTableColumnsPaginateTypeDef
 
+def get_value() -> ListTableColumnsRequestListTableColumnsPaginateTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTableColumnsRequestListTableColumnsPaginateTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTableColumnsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTableColumnsRequestRequestTypeDef
+
+def get_value() -> ListTableColumnsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+    }
 ```
 
-Required fields:
-
-- `workbookId`: `str`
-- `tableId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listtablecolumnsresulttypedef"></a>
+```python title="Definition"
+class ListTableColumnsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListTableColumnsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTableColumnsResultTypeDef
+
+def get_value() -> ListTableColumnsResultTypeDef:
+    return {
+        "tableColumns": ...,
+        "nextToken": ...,
+        "workbookCursor": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTableColumnsResultTypeDef(TypedDict):
+    tableColumns: List[TableColumnTypeDef],  # (1)
+    nextToken: str,
+    workbookCursor: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tableColumns`:
-  `List`\[[TableColumnTypeDef](./type_defs.md#tablecolumntypedef)\]
-- `nextToken`: `str`
-- `workbookCursor`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TableColumnTypeDef](./type_defs.md#tablecolumntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTableRowsRequestListTableRowsPaginateTypeDef
 
-<a id="listtablerowsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_honeycode.type_defs import ListTableRowsRequestListTableRowsPaginateTypeDef
 
+def get_value() -> ListTableRowsRequestListTableRowsPaginateTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTableRowsRequestListTableRowsPaginateTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowIds: NotRequired[Sequence[str]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTableRowsRequestRequestTypeDef
+
+def get_value() -> ListTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+    }
 ```
 
-Required fields:
-
-- `workbookId`: `str`
-- `tableId`: `str`
-
-Optional fields:
-
-- `rowIds`: `Sequence`\[`str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtablerowsresulttypedef"></a>
+```python title="Definition"
+class ListTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    rowIds: NotRequired[Sequence[str]],
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTableRowsResultTypeDef
+
+def get_value() -> ListTableRowsResultTypeDef:
+    return {
+        "columnIds": ...,
+        "rows": ...,
+        "rowIdsNotFound": ...,
+        "nextToken": ...,
+        "workbookCursor": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTableRowsResultTypeDef(TypedDict):
+    columnIds: List[str],
+    rows: List[TableRowTypeDef],  # (1)
+    rowIdsNotFound: List[str],
+    nextToken: str,
+    workbookCursor: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `columnIds`: `List`\[`str`\]
-- `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
-- `rowIdsNotFound`: `List`\[`str`\]
-- `nextToken`: `str`
-- `workbookCursor`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TableRowTypeDef](./type_defs.md#tablerowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTablesRequestListTablesPaginateTypeDef
 
-<a id="listtablesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_honeycode.type_defs import ListTablesRequestListTablesPaginateTypeDef
 
+def get_value() -> ListTablesRequestListTablesPaginateTypeDef:
+    return {
+        "workbookId": ...,
+    }
+```
+
+```python title="Definition"
+class ListTablesRequestListTablesPaginateTypeDef(TypedDict):
+    workbookId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTablesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTablesRequestRequestTypeDef
+
+def get_value() -> ListTablesRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+    }
 ```
 
-Required fields:
-
-- `workbookId`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtablesresulttypedef"></a>
+```python title="Definition"
+class ListTablesRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTablesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTablesResultTypeDef
+
+def get_value() -> ListTablesResultTypeDef:
+    return {
+        "tables": ...,
+        "nextToken": ...,
+        "workbookCursor": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTablesResultTypeDef(TypedDict):
+    tables: List[TableTypeDef],  # (1)
+    nextToken: str,
+    workbookCursor: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `tables`: `List`\[[TableTypeDef](./type_defs.md#tabletypedef)\]
-- `nextToken`: `str`
-- `workbookCursor`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TableTypeDef](./type_defs.md#tabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresulttypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ListTagsForResourceResultTypeDef
+
+def get_value() -> ListTagsForResourceResultTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResultTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
+## QueryTableRowsRequestQueryTableRowsPaginateTypeDef
 
-<a id="querytablerowsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_honeycode.type_defs import QueryTableRowsRequestQueryTableRowsPaginateTypeDef
 
+def get_value() -> QueryTableRowsRequestQueryTableRowsPaginateTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "filterFormula": ...,
+    }
+```
+
+```python title="Definition"
+class QueryTableRowsRequestQueryTableRowsPaginateTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    filterFormula: FilterTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## QueryTableRowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import QueryTableRowsRequestRequestTypeDef
+
+def get_value() -> QueryTableRowsRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "tableId": ...,
+        "filterFormula": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryTableRowsRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    tableId: str,
+    filterFormula: FilterTypeDef,  # (1)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
-- `workbookId`: `str`
-- `tableId`: `str`
-- `filterFormula`: [FilterTypeDef](./type_defs.md#filtertypedef)
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="querytablerowsresulttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
 ## QueryTableRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import QueryTableRowsResultTypeDef
+
+def get_value() -> QueryTableRowsResultTypeDef:
+    return {
+        "columnIds": ...,
+        "rows": ...,
+        "nextToken": ...,
+        "workbookCursor": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryTableRowsResultTypeDef(TypedDict):
+    columnIds: List[str],
+    rows: List[TableRowTypeDef],  # (1)
+    nextToken: str,
+    workbookCursor: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `columnIds`: `List`\[`str`\]
-- `rows`: `List`\[[TableRowTypeDef](./type_defs.md#tablerowtypedef)\]
-- `nextToken`: `str`
-- `workbookCursor`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TableRowTypeDef](./type_defs.md#tablerowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resultrowtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResultRowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ResultRowTypeDef
+
+def get_value() -> ResultRowTypeDef:
+    return {
+        "dataItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResultRowTypeDef(TypedDict):
+    dataItems: List[DataItemTypeDef],  # (1)
+    rowId: NotRequired[str],
+```
 
-- `dataItems`: `List`\[[DataItemTypeDef](./type_defs.md#dataitemtypedef)\]
-
-Optional fields:
-
-- `rowId`: `str`
-
-<a id="resultsettypedef"></a>
-
+1. See [:material-code-braces: DataItemTypeDef](./type_defs.md#dataitemtypedef) 
 ## ResultSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import ResultSetTypeDef
+
+def get_value() -> ResultSetTypeDef:
+    return {
+        "headers": ...,
+        "rows": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResultSetTypeDef(TypedDict):
+    headers: List[ColumnMetadataTypeDef],  # (1)
+    rows: List[ResultRowTypeDef],  # (2)
+```
 
-- `headers`:
-  `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
-- `rows`: `List`\[[ResultRowTypeDef](./type_defs.md#resultrowtypedef)\]
-
-<a id="sourcedatacolumnpropertiestypedef"></a>
-
+1. See [:material-code-braces: ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef) 
+2. See [:material-code-braces: ResultRowTypeDef](./type_defs.md#resultrowtypedef) 
 ## SourceDataColumnPropertiesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import SourceDataColumnPropertiesTypeDef
+
+def get_value() -> SourceDataColumnPropertiesTypeDef:
+    return {
+        "columnIndex": ...,
+    }
 ```
 
-Optional fields:
-
-- `columnIndex`: `int`
-
-<a id="starttabledataimportjobrequestrequesttypedef"></a>
+```python title="Definition"
+class SourceDataColumnPropertiesTypeDef(TypedDict):
+    columnIndex: NotRequired[int],
+```
 
 ## StartTableDataImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import StartTableDataImportJobRequestRequestTypeDef
+
+def get_value() -> StartTableDataImportJobRequestRequestTypeDef:
+    return {
+        "workbookId": ...,
+        "dataSource": ...,
+        "dataFormat": ...,
+        "destinationTableId": ...,
+        "importOptions": ...,
+        "clientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTableDataImportJobRequestRequestTypeDef(TypedDict):
+    workbookId: str,
+    dataSource: ImportDataSourceTypeDef,  # (1)
+    dataFormat: ImportSourceDataFormatType,  # (2)
+    destinationTableId: str,
+    importOptions: ImportOptionsTypeDef,  # (3)
+    clientRequestToken: str,
+```
 
-- `workbookId`: `str`
-- `dataSource`:
-  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
-- `dataFormat`: `Literal['DELIMITED_TEXT']` (see
-  [ImportSourceDataFormatType](./literals.md#importsourcedataformattype))
-- `destinationTableId`: `str`
-- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
-- `clientRequestToken`: `str`
-
-<a id="starttabledataimportjobresulttypedef"></a>
-
+1. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
+2. See [:material-code-brackets: ImportSourceDataFormatType](./literals.md#importsourcedataformattype) 
+3. See [:material-code-braces: ImportOptionsTypeDef](./type_defs.md#importoptionstypedef) 
 ## StartTableDataImportJobResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import StartTableDataImportJobResultTypeDef
+
+def get_value() -> StartTableDataImportJobResultTypeDef:
+    return {
+        "jobId": ...,
+        "jobStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTableDataImportJobResultTypeDef(TypedDict):
+    jobId: str,
+    jobStatus: TableDataImportJobStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `jobId`: `str`
-- `jobStatus`:
-  [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tablecolumntypedef"></a>
-
+1. See [:material-code-brackets: TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TableColumnTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import TableColumnTypeDef
+
+def get_value() -> TableColumnTypeDef:
+    return {
+        "tableColumnId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableColumnTypeDef(TypedDict):
+    tableColumnId: NotRequired[str],
+    tableColumnName: NotRequired[str],
+    format: NotRequired[FormatType],  # (1)
+```
 
-- `tableColumnId`: `str`
-- `tableColumnName`: `str`
-- `format`: [FormatType](./literals.md#formattype)
-
-<a id="tabledataimportjobmetadatatypedef"></a>
-
+1. See [:material-code-brackets: FormatType](./literals.md#formattype) 
 ## TableDataImportJobMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import TableDataImportJobMetadataTypeDef
+
+def get_value() -> TableDataImportJobMetadataTypeDef:
+    return {
+        "submitter": ...,
+        "submitTime": ...,
+        "importOptions": ...,
+        "dataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableDataImportJobMetadataTypeDef(TypedDict):
+    submitter: ImportJobSubmitterTypeDef,  # (1)
+    submitTime: datetime,
+    importOptions: ImportOptionsTypeDef,  # (2)
+    dataSource: ImportDataSourceTypeDef,  # (3)
+```
 
-- `submitter`:
-  [ImportJobSubmitterTypeDef](./type_defs.md#importjobsubmittertypedef)
-- `submitTime`: `datetime`
-- `importOptions`: [ImportOptionsTypeDef](./type_defs.md#importoptionstypedef)
-- `dataSource`:
-  [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
-
-<a id="tablerowtypedef"></a>
-
+1. See [:material-code-braces: ImportJobSubmitterTypeDef](./type_defs.md#importjobsubmittertypedef) 
+2. See [:material-code-braces: ImportOptionsTypeDef](./type_defs.md#importoptionstypedef) 
+3. See [:material-code-braces: ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef) 
 ## TableRowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import TableRowTypeDef
+
+def get_value() -> TableRowTypeDef:
+    return {
+        "rowId": ...,
+        "cells": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableRowTypeDef(TypedDict):
+    rowId: str,
+    cells: List[CellTypeDef],  # (1)
+```
 
-- `rowId`: `str`
-- `cells`: `List`\[[CellTypeDef](./type_defs.md#celltypedef)\]
-
-<a id="tabletypedef"></a>
-
+1. See [:material-code-braces: CellTypeDef](./type_defs.md#celltypedef) 
 ## TableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import TableTypeDef
+
+def get_value() -> TableTypeDef:
+    return {
+        "tableId": ...,
+    }
 ```
 
-Optional fields:
-
-- `tableId`: `str`
-- `tableName`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TableTypeDef(TypedDict):
+    tableId: NotRequired[str],
+    tableName: NotRequired[str],
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updaterowdatatypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateRowDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import UpdateRowDataTypeDef
+
+def get_value() -> UpdateRowDataTypeDef:
+    return {
+        "rowId": ...,
+        "cellsToUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRowDataTypeDef(TypedDict):
+    rowId: str,
+    cellsToUpdate: Mapping[str, CellInputTypeDef],  # (1)
+```
 
-- `rowId`: `str`
-- `cellsToUpdate`: `Mapping`\[`str`,
-  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
-
-<a id="upsertrowdatatypedef"></a>
-
+1. See [:material-code-braces: CellInputTypeDef](./type_defs.md#cellinputtypedef) 
 ## UpsertRowDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import UpsertRowDataTypeDef
+
+def get_value() -> UpsertRowDataTypeDef:
+    return {
+        "batchItemId": ...,
+        "filter": ...,
+        "cellsToUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpsertRowDataTypeDef(TypedDict):
+    batchItemId: str,
+    filter: FilterTypeDef,  # (1)
+    cellsToUpdate: Mapping[str, CellInputTypeDef],  # (2)
+```
 
-- `batchItemId`: `str`
-- `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
-- `cellsToUpdate`: `Mapping`\[`str`,
-  [CellInputTypeDef](./type_defs.md#cellinputtypedef)\]
-
-<a id="upsertrowsresulttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: CellInputTypeDef](./type_defs.md#cellinputtypedef) 
 ## UpsertRowsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import UpsertRowsResultTypeDef
+
+def get_value() -> UpsertRowsResultTypeDef:
+    return {
+        "rowIds": ...,
+        "upsertAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpsertRowsResultTypeDef(TypedDict):
+    rowIds: List[str],
+    upsertAction: UpsertActionType,  # (1)
+```
 
-- `rowIds`: `List`\[`str`\]
-- `upsertAction`: [UpsertActionType](./literals.md#upsertactiontype)
-
-<a id="variablevaluetypedef"></a>
-
+1. See [:material-code-brackets: UpsertActionType](./literals.md#upsertactiontype) 
 ## VariableValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_honeycode.type_defs import VariableValueTypeDef
+
+def get_value() -> VariableValueTypeDef:
+    return {
+        "rawValue": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VariableValueTypeDef(TypedDict):
+    rawValue: str,
+```
 
-- `rawValue`: `str`

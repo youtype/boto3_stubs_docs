@@ -1,39 +1,18 @@
-<a id="finspaceclient-for-boto3-finspace-module"></a>
-
-# finspaceClient for boto3 finspace module
+# finspaceClient
 
 > [Index](../README.md) > [finspace](./README.md) > finspaceClient
 
-Auto-generated documentation for
-[finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
-type annotations stubs module
-[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
+!!! note ""
 
-- [finspaceClient for boto3 finspace module](#finspaceclient-for-boto3-finspace-module)
-  - [finspaceClient](#finspaceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_environment](#create_environment)
-    - [delete_environment](#delete_environment)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_environment](#get_environment)
-    - [list_environments](#list_environments)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_environment](#update_environment)
-
-<a id="finspaceclient"></a>
+    Auto-generated documentation for [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
+    type annotations stubs module [mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 ## finspaceClient
 
-Type annotations for `boto3.client("finspace")`
+Type annotations and code completion for `#!python boto3.client("finspace")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_finspace.client import finspaceClient
 
@@ -41,267 +20,327 @@ def get_finspace_client() -> finspaceClient:
     return Session().client("finspace")
 ```
 
-Boto3 documentation:
-[finspace.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("finspace").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("finspace")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InternalServerException,
+    client.InvalidRequestException,
+    client.LimitExceededException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_finspace.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-finspaceClient exceptions.
-
-Type annotations for `boto3.client("finspace").exceptions` method.
-
-Boto3 documentation:
-[finspace.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("finspace").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("finspace").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.can_paginate)
 
-Boto3 documentation:
-[finspace.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_environment"></a>
-
-### create_environment
+### create\_environment
 
 Create a new FinSpace environment.
 
-Type annotations for `boto3.client("finspace").create_environment` method.
+Type annotations and code completion for `#!python boto3.client("finspace").create_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.create_environment)
 
-Boto3 documentation:
-[finspace.Client.create_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.create_environment)
+```python title="Method definition"
+def create_environment(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    kmsKeyId: str = ...,
+    tags: Mapping[str, str] = ...,
+    federationMode: FederationModeType = ...,  # (1)
+    federationParameters: FederationParametersTypeDef = ...,  # (2)
+    superuserParameters: SuperuserParametersTypeDef = ...,  # (3)
+    dataBundles: Sequence[str] = ...,
+) -> CreateEnvironmentResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef).
+1. See [:material-code-brackets: FederationModeType](./literals.md#federationmodetype) 
+2. See [:material-code-braces: FederationParametersTypeDef](./type_defs.md#federationparameterstypedef) 
+3. See [:material-code-braces: SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef) 
+4. See [:material-code-braces: CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `kmsKeyId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
-- `federationParameters`:
-  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
-- `superuserParameters`:
-  [SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef)
-- `dataBundles`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateEnvironmentRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).
+parent.create_environment(**kwargs)
+```
 
-<a id="delete\_environment"></a>
+1. See [:material-code-braces: CreateEnvironmentRequestRequestTypeDef](./type_defs.md#createenvironmentrequestrequesttypedef) 
 
-### delete_environment
+### delete\_environment
 
 Delete an FinSpace environment.
 
-Type annotations for `boto3.client("finspace").delete_environment` method.
+Type annotations and code completion for `#!python boto3.client("finspace").delete_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.delete_environment)
 
-Boto3 documentation:
-[finspace.Client.delete_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.delete_environment)
+```python title="Method definition"
+def delete_environment(
+    self,
+    *,
+    environmentId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEnvironmentRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_environment(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteEnvironmentRequestRequestTypeDef](./type_defs.md#deleteenvironmentrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("finspace").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("finspace").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.generate_presigned_url)
 
-Boto3 documentation:
-[finspace.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_environment"></a>
-
-### get_environment
+### get\_environment
 
 Returns the FinSpace environment object.
 
-Type annotations for `boto3.client("finspace").get_environment` method.
+Type annotations and code completion for `#!python boto3.client("finspace").get_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.get_environment)
 
-Boto3 documentation:
-[finspace.Client.get_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.get_environment)
+```python title="Method definition"
+def get_environment(
+    self,
+    *,
+    environmentId: str,
+) -> GetEnvironmentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef).
+1. See [:material-code-braces: GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns
-[GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef).
+parent.get_environment(**kwargs)
+```
 
-<a id="list\_environments"></a>
+1. See [:material-code-braces: GetEnvironmentRequestRequestTypeDef](./type_defs.md#getenvironmentrequestrequesttypedef) 
 
-### list_environments
+### list\_environments
 
 A list of all of your FinSpace environments.
 
-Type annotations for `boto3.client("finspace").list_environments` method.
+Type annotations and code completion for `#!python boto3.client("finspace").list_environments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_environments)
 
-Boto3 documentation:
-[finspace.Client.list_environments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_environments)
+```python title="Method definition"
+def list_environments(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListEnvironmentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef).
+1. See [:material-code-braces: ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef).
+parent.list_environments(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 A list of all tags for a resource.
 
-Type annotations for `boto3.client("finspace").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("finspace").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[finspace.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds metadata tags to a FinSpace resource.
 
-Type annotations for `boto3.client("finspace").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("finspace").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.tag_resource)
 
-Boto3 documentation:
-[finspace.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes metadata tags from a FinSpace resource.
 
-Type annotations for `boto3.client("finspace").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("finspace").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.untag_resource)
 
-Boto3 documentation:
-[finspace.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_environment"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_environment
+### update\_environment
 
 Update your FinSpace environment.
 
-Type annotations for `boto3.client("finspace").update_environment` method.
+Type annotations and code completion for `#!python boto3.client("finspace").update_environment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.update_environment)
 
-Boto3 documentation:
-[finspace.Client.update_environment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace.Client.update_environment)
+```python title="Method definition"
+def update_environment(
+    self,
+    *,
+    environmentId: str,
+    name: str = ...,
+    description: str = ...,
+    federationMode: FederationModeType = ...,  # (1)
+    federationParameters: FederationParametersTypeDef = ...,  # (2)
+) -> UpdateEnvironmentResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef).
+1. See [:material-code-brackets: FederationModeType](./literals.md#federationmodetype) 
+2. See [:material-code-braces: FederationParametersTypeDef](./type_defs.md#federationparameterstypedef) 
+3. See [:material-code-braces: UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `environmentId`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `federationMode`: [FederationModeType](./literals.md#federationmodetype)
-- `federationParameters`:
-  [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateEnvironmentRequestRequestTypeDef = {  # (1)
+    "environmentId": ...,
+}
 
-Returns
-[UpdateEnvironmentResponseTypeDef](./type_defs.md#updateenvironmentresponsetypedef).
+parent.update_environment(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateEnvironmentRequestRequestTypeDef](./type_defs.md#updateenvironmentrequestrequesttypedef) 
+
+
+
+

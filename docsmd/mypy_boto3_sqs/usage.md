@@ -1,147 +1,200 @@
-<a id="examples-for-boto3-sqs-module"></a>
-
-# Examples for boto3 SQS module
+# Examples
 
 > [Index](../README.md) > [SQS](./README.md) > Examples
 
-- [Examples for boto3 SQS module](#examples-for-boto3-sqs-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-  - [Service Resource](#service-resource)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
+    type annotations stubs module [mypy-boto3-sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 ## Client
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sqs]` package installed.
 
-Write your `SQS` code as usual, type checking and code completion should work
-out of the box.
-
-```python
-import boto3
+Write your `SQS` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type SQSClient
-# and provides type checking and code completion
-client = session.client("sqs")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type None
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.add_permission()
 
-# paginator has type ListDeadLetterSourceQueuesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_dead_letter_source_queues")
-for item in paginator.paginate(...):
-    # item has type ListDeadLetterSourceQueuesResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("sqs")  # (1)
+    result = client.change_message_visibility_batch()  # (2)
+    ```
+
+    1. client: [SQSClient](./client.md)
+    2. result: [:material-code-braces: ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("sqs")  # (1)
+
+    paginator = client.get_paginator("list_dead_letter_source_queues")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [SQSClient](./client.md)
+    2. paginator: [ListDeadLetterSourceQueuesPaginator](./paginators.md#listdeadlettersourcequeuespaginator)
+    3. item: [:material-code-braces: ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sqs]` or a standalone `mypy_boto3_sqs` package, you have
-to explicitly specify `client: SQSClient` type annotation.
+With `boto3-stubs-lite[sqs]`
+or a standalone `mypy_boto3_sqs` package, you have to explicitly specify `client: SQSClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_sqs.client import SQSClient
-from mypy_boto3_sqs.paginator import ListDeadLetterSourceQueuesPaginator
-
-from mypy_boto3_sqs.literals import PaginatorName
-
-from mypy_boto3_sqs.type_defs import None
-from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: SQSClient = session.client("sqs")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: None = client.add_permission()
+    from mypy_boto3_sqs.client import SQSClient
+    from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultTypeDef
+    from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_dead_letter_source_queues"
-paginator: ListDeadLetterSourceQueuesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListDeadLetterSourceQueuesResultTypeDef
-    print(item)
-```
 
-<a id="service-resource"></a>
+    session = Session()
+
+    client: SQSClient = session.client("sqs")
+
+    kwargs: ChangeMessageVisibilityBatchRequestRequestTypeDef = {...}
+    result: ChangeMessageVisibilityBatchResultTypeDef = client.change_message_visibility_batch(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sqs.client import SQSClient
+    from mypy_boto3_sqs.paginator import ListDeadLetterSourceQueuesPaginator
+    from mypy_boto3_sqs.type_defs import ListDeadLetterSourceQueuesResultTypeDef
+
+
+    session = Session()
+    client: SQSClient = session.client("sqs")
+
+    paginator: ListDeadLetterSourceQueuesPaginator = client.get_paginator("list_dead_letter_source_queues")
+    for item in paginator.paginate(...):
+        item: ListDeadLetterSourceQueuesResultTypeDef
+        print(item)
+    ```
+
+
+
+
 
 ## Service Resource
 
-<a id="implicit-type-annotations"></a>
-
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[sqs]` package installed.
 
-```python
-import boto3
+
+=== "ServiceResource"
+
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
 
-session = boto3.Session()
+    session = Session()
 
-# resource has type SQSServiceResource
-# and provides type checking and code completion
-resource = session.resource("sqs")
+    resource = session.resource("sqs")  # (1)
+    result = resource.Message()  # (2)
+    ```
 
-# result has type Message
-# and provides type checking and code completion
-result = resource.Message()
+    1. resource: [SQSServiceResource](./service_resource.md)
+    2. result: 
 
-# collection has type ServiceResourceQueuesCollection and provides type checking
-# and code completion for all collection methods
-collection = resource.queues
-for item in collection:
-    # item has type Queue
-    print(item)
-```
 
-<a id="explicit-type-annotations"></a>
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    resource = session.resource("sqs")  # (1)
+
+    collection = resource.queues  # (2)
+    for item in collection:
+        print(item)  # (3)
+    ```
+
+    1. resource: [SQSServiceResource](./service_resource.md)
+    2. collection: [SQSServiceResource](./service_resource.md#sqsserviceresourcequeues)
+    3. item: Queue
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[sqs]` or a standalone `mypy_boto3_sqs` package, you have
-to explicitly specify `resource: SQSServiceResource` type annotation.
+With `boto3-stubs-lite[sqs]`
+or a standalone `mypy_boto3_sqs` package, you have to explicitly specify
+`resource: SQSServiceResource` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
-```python
-import boto3
 
-from mypy_boto3_sqs.service_resource import SQSServiceResource
-from mypy_boto3_sqs.service_resource import Message
-from mypy_boto3_sqs.service_resource import ServiceResourceQueuesCollection, Queue
 
-session = boto3.Session()
+=== "ServiceResource"
 
-resource: SQSServiceResource = session.resource("sqs")
+    ```python title="ServiceResource usage example"
+    from boto3.session import Session
 
-result: Message = resource.Message()
+    from mypy_boto3_sqs.service_resource import SQSServiceResource
+    from mypy_boto3_sqs.service_resource import Message
 
-collection: ServiceResourceQueuesCollection = resource.queues
-for item in collection:
-    item: Queue
-    print(item)
-```
+
+    session = Session()
+
+    resource: SQSServiceResource = session.resource("sqs")
+    result: Message = resource.Message()
+    ```
+
+
+
+=== "Collections"
+
+    ```python title="Collection usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_sqs.service_resource import SQSServiceResource
+    from mypy_boto3_sqs.service_resource import ServiceResourceQueuesCollection
+    from mypy_boto3_sqs.service_resource import Queue
+
+
+    session = Session()
+
+    resource: SQSServiceResource = session.resource("sqs")
+    
+    collection: ServiceResourceQueuesCollection = resource.queues
+    for item in collection:
+        item: Queue
+        print(item)
+    ```
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-simpledb-module"></a>
-
-# Type annotations for boto3 SimpleDB module
+#  SimpleDB module
 
 > [Index](../README.md) > SimpleDB
 
-Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module
-[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
+!!! note ""
 
-- [Type annotations for boto3 SimpleDB module](#type-annotations-for-boto3-simpledb-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [SimpleDBClient](#simpledbclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+    type annotations stubs module [mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `SimpleDB`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[sdb]'
 python -m pip install mypy-boto3-sdb
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,94 +42,59 @@ python -m pip install mypy-boto3-sdb
 python -m pip uninstall -y mypy-boto3-sdb
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="simpledbclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## SimpleDBClient
 
-Type annotations for `boto3.client("sdb")` as [SimpleDBClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("sdb")` as [SimpleDBClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_sdb.client import SimpleDBClient
+
+def get_client() -> SimpleDBClient:
+    return Session().cleint("sdb")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_delete_attributes](./client.md#batch_delete_attributes)
-- [batch_put_attributes](./client.md#batch_put_attributes)
-- [can_paginate](./client.md#can_paginate)
-- [create_domain](./client.md#create_domain)
-- [delete_attributes](./client.md#delete_attributes)
-- [delete_domain](./client.md#delete_domain)
-- [domain_metadata](./client.md#domain_metadata)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_attributes](./client.md#get_attributes)
-- [get_paginator](./client.md#get_paginator)
-- [list_domains](./client.md#list_domains)
-- [put_attributes](./client.md#put_attributes)
-- [select](./client.md#select)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-SimpleDBClient [exceptions](./client.md#exceptions)
-
-- AttributeDoesNotExist
-- ClientError
-- DuplicateItemName
-- InvalidNextToken
-- InvalidNumberPredicates
-- InvalidNumberValueTests
-- InvalidParameterValue
-- InvalidQueryExpression
-- MissingParameter
-- NoSuchDomain
-- NumberDomainAttributesExceeded
-- NumberDomainBytesExceeded
-- NumberDomainsExceeded
-- NumberItemAttributesExceeded
-- NumberSubmittedAttributesExceeded
-- NumberSubmittedItemsExceeded
-- RequestTimeout
-- TooManyRequestedAttributes
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("sdb").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("sdb").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_sdb.paginator import ListDomainsPaginator, ...
+from mypy_boto3_sdb.paginator import ListDomainsPaginator
+
+def get_list_domains_paginator() -> ListDomainsPaginator:
+    return Session().client("sdb").get_paginator("list_domains"))
 ```
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
 - [SelectPaginator](./paginators.md#selectpaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sdb.literals import ListDomainsPaginatorName
 
-```python
-from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
+def get_value() -> ListDomainsPaginatorName:
+    return "list_domains"
 ```
 
 - [ListDomainsPaginatorName](./literals.md#listdomainspaginatorname)
@@ -160,18 +103,23 @@ from mypy_boto3_sdb.literals import ListDomainsPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_sdb.type_defs import AttributeTypeDef
 
-```python
-from mypy_boto3_sdb.type_defs import AttributeTypeDef, ...
+def get_value() -> AttributeTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
 - [AttributeTypeDef](./type_defs.md#attributetypedef)
@@ -186,6 +134,7 @@ from mypy_boto3_sdb.type_defs import AttributeTypeDef, ...
 - [GetAttributesRequestRequestTypeDef](./type_defs.md#getattributesrequestrequesttypedef)
 - [GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef)
 - [ItemTypeDef](./type_defs.md#itemtypedef)
+- [ListDomainsRequestListDomainsPaginateTypeDef](./type_defs.md#listdomainsrequestlistdomainspaginatetypedef)
 - [ListDomainsRequestRequestTypeDef](./type_defs.md#listdomainsrequestrequesttypedef)
 - [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -194,5 +143,7 @@ from mypy_boto3_sdb.type_defs import AttributeTypeDef, ...
 - [ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [SelectRequestRequestTypeDef](./type_defs.md#selectrequestrequesttypedef)
+- [SelectRequestSelectPaginateTypeDef](./type_defs.md#selectrequestselectpaginatetypedef)
 - [SelectResultTypeDef](./type_defs.md#selectresulttypedef)
 - [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
+

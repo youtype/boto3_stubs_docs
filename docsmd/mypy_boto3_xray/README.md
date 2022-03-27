@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-xray-module"></a>
-
-# Type annotations for boto3 XRay module
+#  XRay module
 
 > [Index](../README.md) > XRay
 
-Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module
-[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
+!!! note ""
 
-- [Type annotations for boto3 XRay module](#type-annotations-for-boto3-xray-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [XRayClient](#xrayclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+    type annotations stubs module [mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `XRay`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[xray]'
 python -m pip install mypy-boto3-xray
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,84 +42,37 @@ python -m pip install mypy-boto3-xray
 python -m pip uninstall -y mypy-boto3-xray
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="xrayclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## XRayClient
 
-Type annotations for `boto3.client("xray")` as [XRayClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("xray")` as [XRayClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_xray.client import XRayClient
+
+def get_client() -> XRayClient:
+    return Session().cleint("xray")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_get_traces](./client.md#batch_get_traces)
-- [can_paginate](./client.md#can_paginate)
-- [create_group](./client.md#create_group)
-- [create_sampling_rule](./client.md#create_sampling_rule)
-- [delete_group](./client.md#delete_group)
-- [delete_sampling_rule](./client.md#delete_sampling_rule)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_encryption_config](./client.md#get_encryption_config)
-- [get_group](./client.md#get_group)
-- [get_groups](./client.md#get_groups)
-- [get_insight](./client.md#get_insight)
-- [get_insight_events](./client.md#get_insight_events)
-- [get_insight_impact_graph](./client.md#get_insight_impact_graph)
-- [get_insight_summaries](./client.md#get_insight_summaries)
-- [get_paginator](./client.md#get_paginator)
-- [get_sampling_rules](./client.md#get_sampling_rules)
-- [get_sampling_statistic_summaries](./client.md#get_sampling_statistic_summaries)
-- [get_sampling_targets](./client.md#get_sampling_targets)
-- [get_service_graph](./client.md#get_service_graph)
-- [get_time_series_service_statistics](./client.md#get_time_series_service_statistics)
-- [get_trace_graph](./client.md#get_trace_graph)
-- [get_trace_summaries](./client.md#get_trace_summaries)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_encryption_config](./client.md#put_encryption_config)
-- [put_telemetry_records](./client.md#put_telemetry_records)
-- [put_trace_segments](./client.md#put_trace_segments)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_group](./client.md#update_group)
-- [update_sampling_rule](./client.md#update_sampling_rule)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-XRayClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- InvalidRequestException
-- ResourceNotFoundException
-- RuleLimitExceededException
-- ThrottledException
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("xray").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("xray").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_xray.paginator import BatchGetTracesPaginator, ...
+from mypy_boto3_xray.paginator import BatchGetTracesPaginator
+
+def get_batch_get_traces_paginator() -> BatchGetTracesPaginator:
+    return Session().client("xray").get_paginator("batch_get_traces"))
 ```
 
 - [BatchGetTracesPaginator](./paginators.md#batchgettracespaginator)
@@ -153,16 +84,23 @@ from mypy_boto3_xray.paginator import BatchGetTracesPaginator, ...
 - [GetTraceGraphPaginator](./paginators.md#gettracegraphpaginator)
 - [GetTraceSummariesPaginator](./paginators.md#gettracesummariespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_xray.literals import BatchGetTracesPaginatorName
 
-```python
-from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
+def get_value() -> BatchGetTracesPaginatorName:
+    return "batch_get_traces"
 ```
 
 - [BatchGetTracesPaginatorName](./literals.md#batchgettracespaginatorname)
@@ -183,18 +121,22 @@ from mypy_boto3_xray.literals import BatchGetTracesPaginatorName, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_xray.type_defs import AliasTypeDef
 
-```python
-from mypy_boto3_xray.type_defs import AliasTypeDef, ...
+def get_value() -> AliasTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
 - [AliasTypeDef](./type_defs.md#aliastypedef)
@@ -202,6 +144,7 @@ from mypy_boto3_xray.type_defs import AliasTypeDef, ...
 - [AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)
 - [AvailabilityZoneDetailTypeDef](./type_defs.md#availabilityzonedetailtypedef)
 - [BackendConnectionErrorsTypeDef](./type_defs.md#backendconnectionerrorstypedef)
+- [BatchGetTracesRequestBatchGetTracesPaginateTypeDef](./type_defs.md#batchgettracesrequestbatchgettracespaginatetypedef)
 - [BatchGetTracesRequestRequestTypeDef](./type_defs.md#batchgettracesrequestrequesttypedef)
 - [BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef)
 - [CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef)
@@ -226,6 +169,7 @@ from mypy_boto3_xray.type_defs import AliasTypeDef, ...
 - [GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef)
 - [GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef)
 - [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef)
+- [GetGroupsRequestGetGroupsPaginateTypeDef](./type_defs.md#getgroupsrequestgetgroupspaginatetypedef)
 - [GetGroupsRequestRequestTypeDef](./type_defs.md#getgroupsrequestrequesttypedef)
 - [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef)
 - [GetInsightEventsRequestRequestTypeDef](./type_defs.md#getinsighteventsrequestrequesttypedef)
@@ -236,18 +180,24 @@ from mypy_boto3_xray.type_defs import AliasTypeDef, ...
 - [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef)
 - [GetInsightSummariesRequestRequestTypeDef](./type_defs.md#getinsightsummariesrequestrequesttypedef)
 - [GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef)
+- [GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef](./type_defs.md#getsamplingrulesrequestgetsamplingrulespaginatetypedef)
 - [GetSamplingRulesRequestRequestTypeDef](./type_defs.md#getsamplingrulesrequestrequesttypedef)
 - [GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef)
+- [GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestgetsamplingstatisticsummariespaginatetypedef)
 - [GetSamplingStatisticSummariesRequestRequestTypeDef](./type_defs.md#getsamplingstatisticsummariesrequestrequesttypedef)
 - [GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef)
 - [GetSamplingTargetsRequestRequestTypeDef](./type_defs.md#getsamplingtargetsrequestrequesttypedef)
 - [GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef)
+- [GetServiceGraphRequestGetServiceGraphPaginateTypeDef](./type_defs.md#getservicegraphrequestgetservicegraphpaginatetypedef)
 - [GetServiceGraphRequestRequestTypeDef](./type_defs.md#getservicegraphrequestrequesttypedef)
 - [GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef)
+- [GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestgettimeseriesservicestatisticspaginatetypedef)
 - [GetTimeSeriesServiceStatisticsRequestRequestTypeDef](./type_defs.md#gettimeseriesservicestatisticsrequestrequesttypedef)
 - [GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef)
+- [GetTraceGraphRequestGetTraceGraphPaginateTypeDef](./type_defs.md#gettracegraphrequestgettracegraphpaginatetypedef)
 - [GetTraceGraphRequestRequestTypeDef](./type_defs.md#gettracegraphrequestrequesttypedef)
 - [GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef)
+- [GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef](./type_defs.md#gettracesummariesrequestgettracesummariespaginatetypedef)
 - [GetTraceSummariesRequestRequestTypeDef](./type_defs.md#gettracesummariesrequestrequesttypedef)
 - [GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef)
 - [GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef)
@@ -302,3 +252,4 @@ from mypy_boto3_xray.type_defs import AliasTypeDef, ...
 - [UpdateSamplingRuleRequestRequestTypeDef](./type_defs.md#updatesamplingrulerequestrequesttypedef)
 - [UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef)
 - [ValueWithServiceIdsTypeDef](./type_defs.md#valuewithserviceidstypedef)
+

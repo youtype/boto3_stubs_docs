@@ -1,1092 +1,1486 @@
-<a id="typed-dictionaries-for-boto3-schemas-module"></a>
-
-# Typed dictionaries for boto3 Schemas module
+# Typed dictionaries
 
 > [Index](../README.md) > [Schemas](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
-type annotations stubs module
-[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Schemas module](#typed-dictionaries-for-boto3-schemas-module)
-  - [CreateDiscovererRequestRequestTypeDef](#creatediscovererrequestrequesttypedef)
-  - [CreateDiscovererResponseTypeDef](#creatediscovererresponsetypedef)
-  - [CreateRegistryRequestRequestTypeDef](#createregistryrequestrequesttypedef)
-  - [CreateRegistryResponseTypeDef](#createregistryresponsetypedef)
-  - [CreateSchemaRequestRequestTypeDef](#createschemarequestrequesttypedef)
-  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
-  - [DeleteDiscovererRequestRequestTypeDef](#deletediscovererrequestrequesttypedef)
-  - [DeleteRegistryRequestRequestTypeDef](#deleteregistryrequestrequesttypedef)
-  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
-  - [DeleteSchemaRequestRequestTypeDef](#deleteschemarequestrequesttypedef)
-  - [DeleteSchemaVersionRequestRequestTypeDef](#deleteschemaversionrequestrequesttypedef)
-  - [DescribeCodeBindingRequestRequestTypeDef](#describecodebindingrequestrequesttypedef)
-  - [DescribeCodeBindingResponseTypeDef](#describecodebindingresponsetypedef)
-  - [DescribeDiscovererRequestRequestTypeDef](#describediscovererrequestrequesttypedef)
-  - [DescribeDiscovererResponseTypeDef](#describediscovererresponsetypedef)
-  - [DescribeRegistryRequestRequestTypeDef](#describeregistryrequestrequesttypedef)
-  - [DescribeRegistryResponseTypeDef](#describeregistryresponsetypedef)
-  - [DescribeSchemaRequestRequestTypeDef](#describeschemarequestrequesttypedef)
-  - [DescribeSchemaResponseTypeDef](#describeschemaresponsetypedef)
-  - [DiscovererSummaryTypeDef](#discoverersummarytypedef)
-  - [ExportSchemaRequestRequestTypeDef](#exportschemarequestrequesttypedef)
-  - [ExportSchemaResponseTypeDef](#exportschemaresponsetypedef)
-  - [GetCodeBindingSourceRequestRequestTypeDef](#getcodebindingsourcerequestrequesttypedef)
-  - [GetCodeBindingSourceResponseTypeDef](#getcodebindingsourceresponsetypedef)
-  - [GetDiscoveredSchemaRequestRequestTypeDef](#getdiscoveredschemarequestrequesttypedef)
-  - [GetDiscoveredSchemaResponseTypeDef](#getdiscoveredschemaresponsetypedef)
-  - [GetResourcePolicyRequestRequestTypeDef](#getresourcepolicyrequestrequesttypedef)
-  - [GetResourcePolicyResponseTypeDef](#getresourcepolicyresponsetypedef)
-  - [ListDiscoverersRequestRequestTypeDef](#listdiscoverersrequestrequesttypedef)
-  - [ListDiscoverersResponseTypeDef](#listdiscoverersresponsetypedef)
-  - [ListRegistriesRequestRequestTypeDef](#listregistriesrequestrequesttypedef)
-  - [ListRegistriesResponseTypeDef](#listregistriesresponsetypedef)
-  - [ListSchemaVersionsRequestRequestTypeDef](#listschemaversionsrequestrequesttypedef)
-  - [ListSchemaVersionsResponseTypeDef](#listschemaversionsresponsetypedef)
-  - [ListSchemasRequestRequestTypeDef](#listschemasrequestrequesttypedef)
-  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutCodeBindingRequestRequestTypeDef](#putcodebindingrequestrequesttypedef)
-  - [PutCodeBindingResponseTypeDef](#putcodebindingresponsetypedef)
-  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
-  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
-  - [RegistrySummaryTypeDef](#registrysummarytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SchemaSummaryTypeDef](#schemasummarytypedef)
-  - [SchemaVersionSummaryTypeDef](#schemaversionsummarytypedef)
-  - [SearchSchemaSummaryTypeDef](#searchschemasummarytypedef)
-  - [SearchSchemaVersionSummaryTypeDef](#searchschemaversionsummarytypedef)
-  - [SearchSchemasRequestRequestTypeDef](#searchschemasrequestrequesttypedef)
-  - [SearchSchemasResponseTypeDef](#searchschemasresponsetypedef)
-  - [StartDiscovererRequestRequestTypeDef](#startdiscovererrequestrequesttypedef)
-  - [StartDiscovererResponseTypeDef](#startdiscovererresponsetypedef)
-  - [StopDiscovererRequestRequestTypeDef](#stopdiscovererrequestrequesttypedef)
-  - [StopDiscovererResponseTypeDef](#stopdiscovererresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateDiscovererRequestRequestTypeDef](#updatediscovererrequestrequesttypedef)
-  - [UpdateDiscovererResponseTypeDef](#updatediscovererresponsetypedef)
-  - [UpdateRegistryRequestRequestTypeDef](#updateregistryrequestrequesttypedef)
-  - [UpdateRegistryResponseTypeDef](#updateregistryresponsetypedef)
-  - [UpdateSchemaRequestRequestTypeDef](#updateschemarequestrequesttypedef)
-  - [UpdateSchemaResponseTypeDef](#updateschemaresponsetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="creatediscovererrequestrequesttypedef"></a>
+    Auto-generated documentation for [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
+    type annotations stubs module [mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ## CreateDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateDiscovererRequestRequestTypeDef
+
+def get_value() -> CreateDiscovererRequestRequestTypeDef:
+    return {
+        "SourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `SourceArn`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `CrossAccount`: `bool`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="creatediscovererresponsetypedef"></a>
+```python title="Definition"
+class CreateDiscovererRequestRequestTypeDef(TypedDict):
+    SourceArn: str,
+    Description: NotRequired[str],
+    CrossAccount: NotRequired[bool],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateDiscovererResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateDiscovererResponseTypeDef
+
+def get_value() -> CreateDiscovererResponseTypeDef:
+    return {
+        "Description": ...,
+        "DiscovererArn": ...,
+        "DiscovererId": ...,
+        "SourceArn": ...,
+        "State": ...,
+        "CrossAccount": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDiscovererResponseTypeDef(TypedDict):
+    Description: str,
+    DiscovererArn: str,
+    DiscovererId: str,
+    SourceArn: str,
+    State: DiscovererStateType,  # (1)
+    CrossAccount: bool,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Description`: `str`
-- `DiscovererArn`: `str`
-- `DiscovererId`: `str`
-- `SourceArn`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createregistryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRegistryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateRegistryRequestRequestTypeDef
+
+def get_value() -> CreateRegistryRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createregistryresponsetypedef"></a>
+```python title="Definition"
+class CreateRegistryRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateRegistryResponseTypeDef
+
+def get_value() -> CreateRegistryResponseTypeDef:
+    return {
+        "Description": ...,
+        "RegistryArn": ...,
+        "RegistryName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRegistryResponseTypeDef(TypedDict):
+    Description: str,
+    RegistryArn: str,
+    RegistryName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Description`: `str`
-- `RegistryArn`: `str`
-- `RegistryName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateSchemaRequestRequestTypeDef
+
+def get_value() -> CreateSchemaRequestRequestTypeDef:
+    return {
+        "Content": ...,
+        "RegistryName": ...,
+        "SchemaName": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaRequestRequestTypeDef(TypedDict):
+    Content: str,
+    RegistryName: str,
+    SchemaName: str,
+    Type: TypeType,  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Content`: `str`
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createschemaresponsetypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## CreateSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import CreateSchemaResponseTypeDef
+
+def get_value() -> CreateSchemaResponseTypeDef:
+    return {
+        "Description": ...,
+        "LastModified": ...,
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "SchemaVersion": ...,
+        "Tags": ...,
+        "Type": ...,
+        "VersionCreatedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaResponseTypeDef(TypedDict):
+    Description: str,
+    LastModified: datetime,
+    SchemaArn: str,
+    SchemaName: str,
+    SchemaVersion: str,
+    Tags: Dict[str, str],
+    Type: str,
+    VersionCreatedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Description`: `str`
-- `LastModified`: `datetime`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Type`: `str`
-- `VersionCreatedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletediscovererrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DeleteDiscovererRequestRequestTypeDef
+
+def get_value() -> DeleteDiscovererRequestRequestTypeDef:
+    return {
+        "DiscovererId": ...,
+    }
 ```
 
-Required fields:
-
-- `DiscovererId`: `str`
-
-<a id="deleteregistryrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDiscovererRequestRequestTypeDef(TypedDict):
+    DiscovererId: str,
+```
 
 ## DeleteRegistryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DeleteRegistryRequestRequestTypeDef
+
+def get_value() -> DeleteRegistryRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRegistryRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+```
 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResourcePolicyRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RegistryName`: `str`
-
-<a id="deleteschemarequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteResourcePolicyRequestRequestTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+```
 
 ## DeleteSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DeleteSchemaRequestRequestTypeDef
+
+def get_value() -> DeleteSchemaRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-<a id="deleteschemaversionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSchemaRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+```
 
 ## DeleteSchemaVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DeleteSchemaVersionRequestRequestTypeDef
+
+def get_value() -> DeleteSchemaVersionRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+        "SchemaVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSchemaVersionRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: str,
+```
 
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
+## DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef
 
-<a id="describecodebindingrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef
 
+def get_value() -> DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef:
+    return {
+        "Language": ...,
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeCodeBindingRequestCodeBindingExistsWaitTypeDef(TypedDict):
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: NotRequired[str],
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeCodeBindingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeCodeBindingRequestRequestTypeDef
+
+def get_value() -> DescribeCodeBindingRequestRequestTypeDef:
+    return {
+        "Language": ...,
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `Language`: `str`
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `SchemaVersion`: `str`
-
-<a id="describecodebindingresponsetypedef"></a>
+```python title="Definition"
+class DescribeCodeBindingRequestRequestTypeDef(TypedDict):
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: NotRequired[str],
+```
 
 ## DescribeCodeBindingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeCodeBindingResponseTypeDef
+
+def get_value() -> DescribeCodeBindingResponseTypeDef:
+    return {
+        "CreationDate": ...,
+        "LastModified": ...,
+        "SchemaVersion": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCodeBindingResponseTypeDef(TypedDict):
+    CreationDate: datetime,
+    LastModified: datetime,
+    SchemaVersion: str,
+    Status: CodeGenerationStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CreationDate`: `datetime`
-- `LastModified`: `datetime`
-- `SchemaVersion`: `str`
-- `Status`: [CodeGenerationStatusType](./literals.md#codegenerationstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describediscovererrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CodeGenerationStatusType](./literals.md#codegenerationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeDiscovererRequestRequestTypeDef
+
+def get_value() -> DescribeDiscovererRequestRequestTypeDef:
+    return {
+        "DiscovererId": ...,
+    }
 ```
 
-Required fields:
-
-- `DiscovererId`: `str`
-
-<a id="describediscovererresponsetypedef"></a>
+```python title="Definition"
+class DescribeDiscovererRequestRequestTypeDef(TypedDict):
+    DiscovererId: str,
+```
 
 ## DescribeDiscovererResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeDiscovererResponseTypeDef
+
+def get_value() -> DescribeDiscovererResponseTypeDef:
+    return {
+        "Description": ...,
+        "DiscovererArn": ...,
+        "DiscovererId": ...,
+        "SourceArn": ...,
+        "State": ...,
+        "CrossAccount": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDiscovererResponseTypeDef(TypedDict):
+    Description: str,
+    DiscovererArn: str,
+    DiscovererId: str,
+    SourceArn: str,
+    State: DiscovererStateType,  # (1)
+    CrossAccount: bool,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Description`: `str`
-- `DiscovererArn`: `str`
-- `DiscovererId`: `str`
-- `SourceArn`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeregistryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRegistryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeRegistryRequestRequestTypeDef
+
+def get_value() -> DescribeRegistryRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-<a id="describeregistryresponsetypedef"></a>
+```python title="Definition"
+class DescribeRegistryRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+```
 
 ## DescribeRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeRegistryResponseTypeDef
+
+def get_value() -> DescribeRegistryResponseTypeDef:
+    return {
+        "Description": ...,
+        "RegistryArn": ...,
+        "RegistryName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRegistryResponseTypeDef(TypedDict):
+    Description: str,
+    RegistryArn: str,
+    RegistryName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Description`: `str`
-- `RegistryArn`: `str`
-- `RegistryName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeSchemaRequestRequestTypeDef
+
+def get_value() -> DescribeSchemaRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `SchemaVersion`: `str`
-
-<a id="describeschemaresponsetypedef"></a>
+```python title="Definition"
+class DescribeSchemaRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: NotRequired[str],
+```
 
 ## DescribeSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DescribeSchemaResponseTypeDef
+
+def get_value() -> DescribeSchemaResponseTypeDef:
+    return {
+        "Content": ...,
+        "Description": ...,
+        "LastModified": ...,
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "SchemaVersion": ...,
+        "Tags": ...,
+        "Type": ...,
+        "VersionCreatedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSchemaResponseTypeDef(TypedDict):
+    Content: str,
+    Description: str,
+    LastModified: datetime,
+    SchemaArn: str,
+    SchemaName: str,
+    SchemaVersion: str,
+    Tags: Dict[str, str],
+    Type: str,
+    VersionCreatedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Content`: `str`
-- `Description`: `str`
-- `LastModified`: `datetime`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Type`: `str`
-- `VersionCreatedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="discoverersummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DiscovererSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import DiscovererSummaryTypeDef
+
+def get_value() -> DiscovererSummaryTypeDef:
+    return {
+        "DiscovererArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DiscovererSummaryTypeDef(TypedDict):
+    DiscovererArn: NotRequired[str],
+    DiscovererId: NotRequired[str],
+    SourceArn: NotRequired[str],
+    State: NotRequired[DiscovererStateType],  # (1)
+    CrossAccount: NotRequired[bool],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `DiscovererArn`: `str`
-- `DiscovererId`: `str`
-- `SourceArn`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="exportschemarequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
 ## ExportSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ExportSchemaRequestRequestTypeDef
+
+def get_value() -> ExportSchemaRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-- `Type`: `str`
-
-Optional fields:
-
-- `SchemaVersion`: `str`
-
-<a id="exportschemaresponsetypedef"></a>
+```python title="Definition"
+class ExportSchemaRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    Type: str,
+    SchemaVersion: NotRequired[str],
+```
 
 ## ExportSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ExportSchemaResponseTypeDef
+
+def get_value() -> ExportSchemaResponseTypeDef:
+    return {
+        "Content": ...,
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "SchemaVersion": ...,
+        "Type": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportSchemaResponseTypeDef(TypedDict):
+    Content: str,
+    SchemaArn: str,
+    SchemaName: str,
+    SchemaVersion: str,
+    Type: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Content`: `str`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
-- `Type`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcodebindingsourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCodeBindingSourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetCodeBindingSourceRequestRequestTypeDef
+
+def get_value() -> GetCodeBindingSourceRequestRequestTypeDef:
+    return {
+        "Language": ...,
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `Language`: `str`
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `SchemaVersion`: `str`
-
-<a id="getcodebindingsourceresponsetypedef"></a>
+```python title="Definition"
+class GetCodeBindingSourceRequestRequestTypeDef(TypedDict):
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: NotRequired[str],
+```
 
 ## GetCodeBindingSourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetCodeBindingSourceResponseTypeDef
+
+def get_value() -> GetCodeBindingSourceResponseTypeDef:
+    return {
+        "Body": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCodeBindingSourceResponseTypeDef(TypedDict):
+    Body: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Body`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdiscoveredschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDiscoveredSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaRequestRequestTypeDef
+
+def get_value() -> GetDiscoveredSchemaRequestRequestTypeDef:
+    return {
+        "Events": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDiscoveredSchemaRequestRequestTypeDef(TypedDict):
+    Events: Sequence[str],
+    Type: TypeType,  # (1)
+```
 
-- `Events`: `Sequence`\[`str`\]
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="getdiscoveredschemaresponsetypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## GetDiscoveredSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetDiscoveredSchemaResponseTypeDef
+
+def get_value() -> GetDiscoveredSchemaResponseTypeDef:
+    return {
+        "Content": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDiscoveredSchemaResponseTypeDef(TypedDict):
+    Content: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Content`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetResourcePolicyRequestRequestTypeDef
+
+def get_value() -> GetResourcePolicyRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RegistryName`: `str`
-
-<a id="getresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetResourcePolicyRequestRequestTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+```
 
 ## GetResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import GetResourcePolicyResponseTypeDef
+
+def get_value() -> GetResourcePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetResourcePolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDiscoverersRequestListDiscoverersPaginateTypeDef
 
-<a id="listdiscoverersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import ListDiscoverersRequestListDiscoverersPaginateTypeDef
 
+def get_value() -> ListDiscoverersRequestListDiscoverersPaginateTypeDef:
+    return {
+        "DiscovererIdPrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListDiscoverersRequestListDiscoverersPaginateTypeDef(TypedDict):
+    DiscovererIdPrefix: NotRequired[str],
+    SourceArnPrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDiscoverersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListDiscoverersRequestRequestTypeDef
+
+def get_value() -> ListDiscoverersRequestRequestTypeDef:
+    return {
+        "DiscovererIdPrefix": ...,
+    }
 ```
 
-Optional fields:
-
-- `DiscovererIdPrefix`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
-- `SourceArnPrefix`: `str`
-
-<a id="listdiscoverersresponsetypedef"></a>
+```python title="Definition"
+class ListDiscoverersRequestRequestTypeDef(TypedDict):
+    DiscovererIdPrefix: NotRequired[str],
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+    SourceArnPrefix: NotRequired[str],
+```
 
 ## ListDiscoverersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListDiscoverersResponseTypeDef
+
+def get_value() -> ListDiscoverersResponseTypeDef:
+    return {
+        "Discoverers": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDiscoverersResponseTypeDef(TypedDict):
+    Discoverers: List[DiscovererSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Discoverers`:
-  `List`\[[DiscovererSummaryTypeDef](./type_defs.md#discoverersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DiscovererSummaryTypeDef](./type_defs.md#discoverersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRegistriesRequestListRegistriesPaginateTypeDef
 
-<a id="listregistriesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import ListRegistriesRequestListRegistriesPaginateTypeDef
 
+def get_value() -> ListRegistriesRequestListRegistriesPaginateTypeDef:
+    return {
+        "RegistryNamePrefix": ...,
+    }
+```
+
+```python title="Definition"
+class ListRegistriesRequestListRegistriesPaginateTypeDef(TypedDict):
+    RegistryNamePrefix: NotRequired[str],
+    Scope: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRegistriesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListRegistriesRequestRequestTypeDef
+
+def get_value() -> ListRegistriesRequestRequestTypeDef:
+    return {
+        "Limit": ...,
+    }
 ```
 
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-- `RegistryNamePrefix`: `str`
-- `Scope`: `str`
-
-<a id="listregistriesresponsetypedef"></a>
+```python title="Definition"
+class ListRegistriesRequestRequestTypeDef(TypedDict):
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+    RegistryNamePrefix: NotRequired[str],
+    Scope: NotRequired[str],
+```
 
 ## ListRegistriesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListRegistriesResponseTypeDef
+
+def get_value() -> ListRegistriesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Registries": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRegistriesResponseTypeDef(TypedDict):
+    NextToken: str,
+    Registries: List[RegistrySummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Registries`:
-  `List`\[[RegistrySummaryTypeDef](./type_defs.md#registrysummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RegistrySummaryTypeDef](./type_defs.md#registrysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef
 
-<a id="listschemaversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef
 
+def get_value() -> ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemaVersionsRequestListSchemaVersionsPaginateTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSchemaVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListSchemaVersionsRequestRequestTypeDef
+
+def get_value() -> ListSchemaVersionsRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-
-<a id="listschemaversionsresponsetypedef"></a>
+```python title="Definition"
+class ListSchemaVersionsRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListSchemaVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListSchemaVersionsResponseTypeDef
+
+def get_value() -> ListSchemaVersionsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "SchemaVersions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemaVersionsResponseTypeDef(TypedDict):
+    NextToken: str,
+    SchemaVersions: List[SchemaVersionSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `SchemaVersions`:
-  `List`\[[SchemaVersionSummaryTypeDef](./type_defs.md#schemaversionsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SchemaVersionSummaryTypeDef](./type_defs.md#schemaversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemasRequestListSchemasPaginateTypeDef
 
-<a id="listschemasrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import ListSchemasRequestListSchemasPaginateTypeDef
 
+def get_value() -> ListSchemasRequestListSchemasPaginateTypeDef:
+    return {
+        "RegistryName": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasRequestListSchemasPaginateTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaNamePrefix: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSchemasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListSchemasRequestRequestTypeDef
+
+def get_value() -> ListSchemasRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-Optional fields:
-
-- `Limit`: `int`
-- `NextToken`: `str`
-- `SchemaNamePrefix`: `str`
-
-<a id="listschemasresponsetypedef"></a>
+```python title="Definition"
+class ListSchemasRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+    SchemaNamePrefix: NotRequired[str],
+```
 
 ## ListSchemasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListSchemasResponseTypeDef
+
+def get_value() -> ListSchemasResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Schemas": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemasResponseTypeDef(TypedDict):
+    NextToken: str,
+    Schemas: List[SchemaSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Schemas`:
-  `List`\[[SchemaSummaryTypeDef](./type_defs.md#schemasummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SchemaSummaryTypeDef](./type_defs.md#schemasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putcodebindingrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutCodeBindingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import PutCodeBindingRequestRequestTypeDef
+
+def get_value() -> PutCodeBindingRequestRequestTypeDef:
+    return {
+        "Language": ...,
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
-
-- `Language`: `str`
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `SchemaVersion`: `str`
-
-<a id="putcodebindingresponsetypedef"></a>
+```python title="Definition"
+class PutCodeBindingRequestRequestTypeDef(TypedDict):
+    Language: str,
+    RegistryName: str,
+    SchemaName: str,
+    SchemaVersion: NotRequired[str],
+```
 
 ## PutCodeBindingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import PutCodeBindingResponseTypeDef
+
+def get_value() -> PutCodeBindingResponseTypeDef:
+    return {
+        "CreationDate": ...,
+        "LastModified": ...,
+        "SchemaVersion": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutCodeBindingResponseTypeDef(TypedDict):
+    CreationDate: datetime,
+    LastModified: datetime,
+    SchemaVersion: str,
+    Status: CodeGenerationStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `CreationDate`: `datetime`
-- `LastModified`: `datetime`
-- `SchemaVersion`: `str`
-- `Status`: [CodeGenerationStatusType](./literals.md#codegenerationstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putresourcepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CodeGenerationStatusType](./literals.md#codegenerationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutResourcePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import PutResourcePolicyRequestRequestTypeDef
+
+def get_value() -> PutResourcePolicyRequestRequestTypeDef:
+    return {
+        "Policy": ...,
+    }
 ```
 
-Required fields:
-
-- `Policy`: `str`
-
-Optional fields:
-
-- `RegistryName`: `str`
-- `RevisionId`: `str`
-
-<a id="putresourcepolicyresponsetypedef"></a>
+```python title="Definition"
+class PutResourcePolicyRequestRequestTypeDef(TypedDict):
+    Policy: str,
+    RegistryName: NotRequired[str],
+    RevisionId: NotRequired[str],
+```
 
 ## PutResourcePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import PutResourcePolicyResponseTypeDef
+
+def get_value() -> PutResourcePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "RevisionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutResourcePolicyResponseTypeDef(TypedDict):
+    Policy: str,
+    RevisionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Policy`: `str`
-- `RevisionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registrysummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegistrySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import RegistrySummaryTypeDef
+
+def get_value() -> RegistrySummaryTypeDef:
+    return {
+        "RegistryArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `RegistryArn`: `str`
-- `RegistryName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class RegistrySummaryTypeDef(TypedDict):
+    RegistryArn: NotRequired[str],
+    RegistryName: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="schemasummarytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SchemaSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SchemaSummaryTypeDef
+
+def get_value() -> SchemaSummaryTypeDef:
+    return {
+        "LastModified": ...,
+    }
 ```
 
-Optional fields:
-
-- `LastModified`: `datetime`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `VersionCount`: `int`
-
-<a id="schemaversionsummarytypedef"></a>
+```python title="Definition"
+class SchemaSummaryTypeDef(TypedDict):
+    LastModified: NotRequired[datetime],
+    SchemaArn: NotRequired[str],
+    SchemaName: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+    VersionCount: NotRequired[int],
+```
 
 ## SchemaVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SchemaVersionSummaryTypeDef
+
+def get_value() -> SchemaVersionSummaryTypeDef:
+    return {
+        "SchemaArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SchemaVersionSummaryTypeDef(TypedDict):
+    SchemaArn: NotRequired[str],
+    SchemaName: NotRequired[str],
+    SchemaVersion: NotRequired[str],
+    Type: NotRequired[TypeType],  # (1)
+```
 
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="searchschemasummarytypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## SearchSchemaSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SearchSchemaSummaryTypeDef
+
+def get_value() -> SearchSchemaSummaryTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchSchemaSummaryTypeDef(TypedDict):
+    RegistryName: NotRequired[str],
+    SchemaArn: NotRequired[str],
+    SchemaName: NotRequired[str],
+    SchemaVersions: NotRequired[List[SearchSchemaVersionSummaryTypeDef]],  # (1)
+```
 
-- `RegistryName`: `str`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersions`:
-  `List`\[[SearchSchemaVersionSummaryTypeDef](./type_defs.md#searchschemaversionsummarytypedef)\]
-
-<a id="searchschemaversionsummarytypedef"></a>
-
+1. See [:material-code-braces: SearchSchemaVersionSummaryTypeDef](./type_defs.md#searchschemaversionsummarytypedef) 
 ## SearchSchemaVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SearchSchemaVersionSummaryTypeDef
+
+def get_value() -> SearchSchemaVersionSummaryTypeDef:
+    return {
+        "CreatedDate": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SearchSchemaVersionSummaryTypeDef(TypedDict):
+    CreatedDate: NotRequired[datetime],
+    SchemaVersion: NotRequired[str],
+    Type: NotRequired[TypeType],  # (1)
+```
 
-- `CreatedDate`: `datetime`
-- `SchemaVersion`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="searchschemasrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## SearchSchemasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SearchSchemasRequestRequestTypeDef
+
+def get_value() -> SearchSchemasRequestRequestTypeDef:
+    return {
+        "Keywords": ...,
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchSchemasRequestRequestTypeDef(TypedDict):
+    Keywords: str,
+    RegistryName: str,
+    Limit: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Keywords`: `str`
-- `RegistryName`: `str`
+## SearchSchemasRequestSearchSchemasPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_schemas.type_defs import SearchSchemasRequestSearchSchemasPaginateTypeDef
 
-- `Limit`: `int`
-- `NextToken`: `str`
+def get_value() -> SearchSchemasRequestSearchSchemasPaginateTypeDef:
+    return {
+        "Keywords": ...,
+        "RegistryName": ...,
+    }
+```
 
-<a id="searchschemasresponsetypedef"></a>
+```python title="Definition"
+class SearchSchemasRequestSearchSchemasPaginateTypeDef(TypedDict):
+    Keywords: str,
+    RegistryName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchSchemasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import SearchSchemasResponseTypeDef
+
+def get_value() -> SearchSchemasResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "Schemas": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchSchemasResponseTypeDef(TypedDict):
+    NextToken: str,
+    Schemas: List[SearchSchemaSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `Schemas`:
-  `List`\[[SearchSchemaSummaryTypeDef](./type_defs.md#searchschemasummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startdiscovererrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SearchSchemaSummaryTypeDef](./type_defs.md#searchschemasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import StartDiscovererRequestRequestTypeDef
+
+def get_value() -> StartDiscovererRequestRequestTypeDef:
+    return {
+        "DiscovererId": ...,
+    }
 ```
 
-Required fields:
-
-- `DiscovererId`: `str`
-
-<a id="startdiscovererresponsetypedef"></a>
+```python title="Definition"
+class StartDiscovererRequestRequestTypeDef(TypedDict):
+    DiscovererId: str,
+```
 
 ## StartDiscovererResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import StartDiscovererResponseTypeDef
+
+def get_value() -> StartDiscovererResponseTypeDef:
+    return {
+        "DiscovererId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDiscovererResponseTypeDef(TypedDict):
+    DiscovererId: str,
+    State: DiscovererStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DiscovererId`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopdiscovererrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import StopDiscovererRequestRequestTypeDef
+
+def get_value() -> StopDiscovererRequestRequestTypeDef:
+    return {
+        "DiscovererId": ...,
+    }
 ```
 
-Required fields:
-
-- `DiscovererId`: `str`
-
-<a id="stopdiscovererresponsetypedef"></a>
+```python title="Definition"
+class StopDiscovererRequestRequestTypeDef(TypedDict):
+    DiscovererId: str,
+```
 
 ## StopDiscovererResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import StopDiscovererResponseTypeDef
+
+def get_value() -> StopDiscovererResponseTypeDef:
+    return {
+        "DiscovererId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopDiscovererResponseTypeDef(TypedDict):
+    DiscovererId: str,
+    State: DiscovererStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DiscovererId`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatediscovererrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateDiscovererRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateDiscovererRequestRequestTypeDef
+
+def get_value() -> UpdateDiscovererRequestRequestTypeDef:
+    return {
+        "DiscovererId": ...,
+    }
 ```
 
-Required fields:
-
-- `DiscovererId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `CrossAccount`: `bool`
-
-<a id="updatediscovererresponsetypedef"></a>
+```python title="Definition"
+class UpdateDiscovererRequestRequestTypeDef(TypedDict):
+    DiscovererId: str,
+    Description: NotRequired[str],
+    CrossAccount: NotRequired[bool],
+```
 
 ## UpdateDiscovererResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateDiscovererResponseTypeDef
+
+def get_value() -> UpdateDiscovererResponseTypeDef:
+    return {
+        "Description": ...,
+        "DiscovererArn": ...,
+        "DiscovererId": ...,
+        "SourceArn": ...,
+        "State": ...,
+        "CrossAccount": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDiscovererResponseTypeDef(TypedDict):
+    Description: str,
+    DiscovererArn: str,
+    DiscovererId: str,
+    SourceArn: str,
+    State: DiscovererStateType,  # (1)
+    CrossAccount: bool,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Description`: `str`
-- `DiscovererArn`: `str`
-- `DiscovererId`: `str`
-- `SourceArn`: `str`
-- `State`: [DiscovererStateType](./literals.md#discovererstatetype)
-- `CrossAccount`: `bool`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateregistryrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DiscovererStateType](./literals.md#discovererstatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRegistryRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateRegistryRequestRequestTypeDef
+
+def get_value() -> UpdateRegistryRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistryName`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-
-<a id="updateregistryresponsetypedef"></a>
+```python title="Definition"
+class UpdateRegistryRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    Description: NotRequired[str],
+```
 
 ## UpdateRegistryResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateRegistryResponseTypeDef
+
+def get_value() -> UpdateRegistryResponseTypeDef:
+    return {
+        "Description": ...,
+        "RegistryArn": ...,
+        "RegistryName": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRegistryResponseTypeDef(TypedDict):
+    Description: str,
+    RegistryArn: str,
+    RegistryName: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Description`: `str`
-- `RegistryArn`: `str`
-- `RegistryName`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateSchemaRequestRequestTypeDef
+
+def get_value() -> UpdateSchemaRequestRequestTypeDef:
+    return {
+        "RegistryName": ...,
+        "SchemaName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSchemaRequestRequestTypeDef(TypedDict):
+    RegistryName: str,
+    SchemaName: str,
+    ClientTokenId: NotRequired[str],
+    Content: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[TypeType],  # (1)
+```
 
-- `RegistryName`: `str`
-- `SchemaName`: `str`
-
-Optional fields:
-
-- `ClientTokenId`: `str`
-- `Content`: `str`
-- `Description`: `str`
-- `Type`: [TypeType](./literals.md#typetype)
-
-<a id="updateschemaresponsetypedef"></a>
-
+1. See [:material-code-brackets: TypeType](./literals.md#typetype) 
 ## UpdateSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import UpdateSchemaResponseTypeDef
+
+def get_value() -> UpdateSchemaResponseTypeDef:
+    return {
+        "Description": ...,
+        "LastModified": ...,
+        "SchemaArn": ...,
+        "SchemaName": ...,
+        "SchemaVersion": ...,
+        "Tags": ...,
+        "Type": ...,
+        "VersionCreatedDate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSchemaResponseTypeDef(TypedDict):
+    Description: str,
+    LastModified: datetime,
+    SchemaArn: str,
+    SchemaName: str,
+    SchemaVersion: str,
+    Tags: Dict[str, str],
+    Type: str,
+    VersionCreatedDate: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Description`: `str`
-- `LastModified`: `datetime`
-- `SchemaArn`: `str`
-- `SchemaName`: `str`
-- `SchemaVersion`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `Type`: `str`
-- `VersionCreatedDate`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_schemas.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

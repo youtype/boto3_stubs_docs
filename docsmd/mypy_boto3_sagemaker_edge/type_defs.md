@@ -1,115 +1,136 @@
-<a id="typed-dictionaries-for-boto3-sagemakeredgemanager-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 SagemakerEdgeManager module
+> [Index](../README.md) > [SagemakerEdgeManager](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [SagemakerEdgeManager](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
-type annotations stubs module
-[mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
-
-- [Typed dictionaries for boto3 SagemakerEdgeManager module](#typed-dictionaries-for-boto3-sagemakeredgemanager-module)
-  - [EdgeMetricTypeDef](#edgemetrictypedef)
-  - [GetDeviceRegistrationRequestRequestTypeDef](#getdeviceregistrationrequestrequesttypedef)
-  - [GetDeviceRegistrationResultTypeDef](#getdeviceregistrationresulttypedef)
-  - [ModelTypeDef](#modeltypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendHeartbeatRequestRequestTypeDef](#sendheartbeatrequestrequesttypedef)
-
-<a id="edgemetrictypedef"></a>
+    Auto-generated documentation for [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
+    type annotations stubs module [mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
 ## EdgeMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import EdgeMetricTypeDef
+
+def get_value() -> EdgeMetricTypeDef:
+    return {
+        "Dimension": ...,
+    }
 ```
 
-Optional fields:
-
-- `Dimension`: `str`
-- `MetricName`: `str`
-- `Value`: `float`
-- `Timestamp`: `Union`\[`datetime`, `str`\]
-
-<a id="getdeviceregistrationrequestrequesttypedef"></a>
+```python title="Definition"
+class EdgeMetricTypeDef(TypedDict):
+    Dimension: NotRequired[str],
+    MetricName: NotRequired[str],
+    Value: NotRequired[float],
+    Timestamp: NotRequired[Union[datetime, str]],
+```
 
 ## GetDeviceRegistrationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationRequestRequestTypeDef
+
+def get_value() -> GetDeviceRegistrationRequestRequestTypeDef:
+    return {
+        "DeviceName": ...,
+        "DeviceFleetName": ...,
+    }
 ```
 
-Required fields:
-
-- `DeviceName`: `str`
-- `DeviceFleetName`: `str`
-
-<a id="getdeviceregistrationresulttypedef"></a>
+```python title="Definition"
+class GetDeviceRegistrationRequestRequestTypeDef(TypedDict):
+    DeviceName: str,
+    DeviceFleetName: str,
+```
 
 ## GetDeviceRegistrationResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import GetDeviceRegistrationResultTypeDef
+
+def get_value() -> GetDeviceRegistrationResultTypeDef:
+    return {
+        "DeviceRegistration": ...,
+        "CacheTTL": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeviceRegistrationResultTypeDef(TypedDict):
+    DeviceRegistration: str,
+    CacheTTL: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DeviceRegistration`: `str`
-- `CacheTTL`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="modeltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ModelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import ModelTypeDef
+
+def get_value() -> ModelTypeDef:
+    return {
+        "ModelName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ModelTypeDef(TypedDict):
+    ModelName: NotRequired[str],
+    ModelVersion: NotRequired[str],
+    LatestSampleTime: NotRequired[Union[datetime, str]],
+    LatestInference: NotRequired[Union[datetime, str]],
+    ModelMetrics: NotRequired[Sequence[EdgeMetricTypeDef]],  # (1)
+```
 
-- `ModelName`: `str`
-- `ModelVersion`: `str`
-- `LatestSampleTime`: `Union`\[`datetime`, `str`\]
-- `LatestInference`: `Union`\[`datetime`, `str`\]
-- `ModelMetrics`:
-  `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendheartbeatrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendHeartbeatRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sagemaker_edge.type_defs import SendHeartbeatRequestRequestTypeDef
+
+def get_value() -> SendHeartbeatRequestRequestTypeDef:
+    return {
+        "AgentVersion": ...,
+        "DeviceName": ...,
+        "DeviceFleetName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendHeartbeatRequestRequestTypeDef(TypedDict):
+    AgentVersion: str,
+    DeviceName: str,
+    DeviceFleetName: str,
+    AgentMetrics: NotRequired[Sequence[EdgeMetricTypeDef]],  # (1)
+    Models: NotRequired[Sequence[ModelTypeDef]],  # (2)
+```
 
-- `AgentVersion`: `str`
-- `DeviceName`: `str`
-- `DeviceFleetName`: `str`
-
-Optional fields:
-
-- `AgentMetrics`:
-  `Sequence`\[[EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef)\]
-- `Models`: `Sequence`\[[ModelTypeDef](./type_defs.md#modeltypedef)\]
+1. See [:material-code-braces: EdgeMetricTypeDef](./type_defs.md#edgemetrictypedef) 
+2. See [:material-code-braces: ModelTypeDef](./type_defs.md#modeltypedef) 

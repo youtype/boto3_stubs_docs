@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-applicationautoscaling-module"></a>
-
-# Paginators for boto3 ApplicationAutoScaling module
+# Paginators
 
 > [Index](../README.md) > [ApplicationAutoScaling](./README.md) > Paginators
 
-Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module
-[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+!!! note ""
 
-- [Paginators for boto3 ApplicationAutoScaling module](#paginators-for-boto3-applicationautoscaling-module)
-  - [DescribeScalableTargetsPaginator](#describescalabletargetspaginator)
-  - [DescribeScalingActivitiesPaginator](#describescalingactivitiespaginator)
-  - [DescribeScalingPoliciesPaginator](#describescalingpoliciespaginator)
-  - [DescribeScheduledActionsPaginator](#describescheduledactionspaginator)
-
-<a id="describescalabletargetspaginator"></a>
+    Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+    type annotations stubs module [mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ## DescribeScalableTargetsPaginator
 
-Type annotations for
-`boto3.client("application-autoscaling").get_paginator("describe_scalable_targets")`.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").get_paginator("describe_scalable_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalableTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator
@@ -33,32 +21,44 @@ def get_describe_scalable_targets_paginator() -> DescribeScalableTargetsPaginato
     return Session().client("application-autoscaling").get_paginator("describe_scalable_targets")
 ```
 
-Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalableTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalableTargets)
 
-Arguments for `DescribeScalableTargetsPaginator.paginate` method:
+### paginate
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceIds`: `Sequence`\[`str`\]
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScalableTargetsPaginator.paginate` method.
 
-`DescribeScalableTargetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceIds: Sequence[str] = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeScalableTargetsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="describescalingactivitiespaginator"></a>
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef](./type_defs.md#describescalabletargetsrequestdescribescalabletargetspaginatetypedef) 
 ## DescribeScalingActivitiesPaginator
 
-Type annotations for
-`boto3.client("application-autoscaling").get_paginator("describe_scaling_activities")`.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").get_paginator("describe_scaling_activities")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingActivities)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_application_autoscaling.paginator import DescribeScalingActivitiesPaginator
@@ -67,32 +67,44 @@ def get_describe_scaling_activities_paginator() -> DescribeScalingActivitiesPagi
     return Session().client("application-autoscaling").get_paginator("describe_scaling_activities")
 ```
 
-Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalingActivities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingActivities)
 
-Arguments for `DescribeScalingActivitiesPaginator.paginate` method:
+### paginate
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScalingActivitiesPaginator.paginate` method.
 
-`DescribeScalingActivitiesPaginator.paginate` returns
-`_PageIterator`\[[DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeScalingActivitiesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="describescalingpoliciespaginator"></a>
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef](./type_defs.md#describescalingactivitiesrequestdescribescalingactivitiespaginatetypedef) 
 ## DescribeScalingPoliciesPaginator
 
-Type annotations for
-`boto3.client("application-autoscaling").get_paginator("describe_scaling_policies")`.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").get_paginator("describe_scaling_policies")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingPolicies)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_application_autoscaling.paginator import DescribeScalingPoliciesPaginator
@@ -101,33 +113,45 @@ def get_describe_scaling_policies_paginator() -> DescribeScalingPoliciesPaginato
     return Session().client("application-autoscaling").get_paginator("describe_scaling_policies")
 ```
 
-Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScalingPolicies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScalingPolicies)
 
-Arguments for `DescribeScalingPoliciesPaginator.paginate` method:
+### paginate
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `PolicyNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScalingPoliciesPaginator.paginate` method.
 
-`DescribeScalingPoliciesPaginator.paginate` returns
-`_PageIterator`\[[DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    PolicyNames: Sequence[str] = ...,
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeScalingPoliciesResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="describescheduledactionspaginator"></a>
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef](./type_defs.md#describescalingpoliciesrequestdescribescalingpoliciespaginatetypedef) 
 ## DescribeScheduledActionsPaginator
 
-Type annotations for
-`boto3.client("application-autoscaling").get_paginator("describe_scheduled_actions")`.
+Type annotations and code completion for `#!python boto3.client("application-autoscaling").get_paginator("describe_scheduled_actions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScheduledActions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_application_autoscaling.paginator import DescribeScheduledActionsPaginator
@@ -136,19 +160,36 @@ def get_describe_scheduled_actions_paginator() -> DescribeScheduledActionsPagina
     return Session().client("application-autoscaling").get_paginator("describe_scheduled_actions")
 ```
 
-Boto3 documentation:
-[ApplicationAutoScaling.Paginator.DescribeScheduledActions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Paginator.DescribeScheduledActions)
 
-Arguments for `DescribeScheduledActionsPaginator.paginate` method:
+### paginate
 
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ScheduledActionNames`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeScheduledActionsPaginator.paginate` method.
 
-`DescribeScheduledActionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ScheduledActionNames: Sequence[str] = ...,
+    ResourceId: str = ...,
+    ScalableDimension: ScalableDimensionType = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeScheduledActionsResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef = {  # (1)
+    "ServiceNamespace": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef](./type_defs.md#describescheduledactionsrequestdescribescheduledactionspaginatetypedef) 

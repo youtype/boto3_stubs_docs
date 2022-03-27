@@ -1,906 +1,976 @@
-<a id="literals-for-boto3-autoscaling-module"></a>
-
-# Literals for boto3 AutoScaling module
+# Literals
 
 > [Index](../README.md) > [AutoScaling](./README.md) > Literals
 
-Auto-generated documentation for
-[AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
-type annotations stubs module
-[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+!!! note ""
 
-- [Literals for boto3 AutoScaling module](#literals-for-boto3-autoscaling-module)
-  - [AcceleratorManufacturerType](#acceleratormanufacturertype)
-  - [AcceleratorNameType](#acceleratornametype)
-  - [AcceleratorTypeType](#acceleratortypetype)
-  - [BareMetalType](#baremetaltype)
-  - [BurstablePerformanceType](#burstableperformancetype)
-  - [CpuManufacturerType](#cpumanufacturertype)
-  - [DescribeAutoScalingGroupsPaginatorName](#describeautoscalinggroupspaginatorname)
-  - [DescribeAutoScalingInstancesPaginatorName](#describeautoscalinginstancespaginatorname)
-  - [DescribeLaunchConfigurationsPaginatorName](#describelaunchconfigurationspaginatorname)
-  - [DescribeLoadBalancerTargetGroupsPaginatorName](#describeloadbalancertargetgroupspaginatorname)
-  - [DescribeLoadBalancersPaginatorName](#describeloadbalancerspaginatorname)
-  - [DescribeNotificationConfigurationsPaginatorName](#describenotificationconfigurationspaginatorname)
-  - [DescribePoliciesPaginatorName](#describepoliciespaginatorname)
-  - [DescribeScalingActivitiesPaginatorName](#describescalingactivitiespaginatorname)
-  - [DescribeScheduledActionsPaginatorName](#describescheduledactionspaginatorname)
-  - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [InstanceGenerationType](#instancegenerationtype)
-  - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
-  - [InstanceMetadataHttpTokensStateType](#instancemetadatahttptokensstatetype)
-  - [InstanceRefreshStatusType](#instancerefreshstatustype)
-  - [LifecycleStateType](#lifecyclestatetype)
-  - [LocalStorageType](#localstoragetype)
-  - [LocalStorageTypeType](#localstoragetypetype)
-  - [MetricStatisticType](#metricstatistictype)
-  - [MetricTypeType](#metrictypetype)
-  - [PredefinedLoadMetricTypeType](#predefinedloadmetrictypetype)
-  - [PredefinedMetricPairTypeType](#predefinedmetricpairtypetype)
-  - [PredefinedScalingMetricTypeType](#predefinedscalingmetrictypetype)
-  - [PredictiveScalingMaxCapacityBreachBehaviorType](#predictivescalingmaxcapacitybreachbehaviortype)
-  - [PredictiveScalingModeType](#predictivescalingmodetype)
-  - [RefreshStrategyType](#refreshstrategytype)
-  - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
-  - [WarmPoolStateType](#warmpoolstatetype)
-  - [WarmPoolStatusType](#warmpoolstatustype)
-  - [AutoScalingServiceName](#autoscalingservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="acceleratormanufacturertype"></a>
+    Auto-generated documentation for [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
+    type annotations stubs module [mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ## AcceleratorManufacturerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType
+
+def get_value() -> AcceleratorManufacturerType:
+    return "amazon-web-services"
 ```
 
-Values:
-
-- `amazon-web-services`
-- `amd`
-- `nvidia`
-- `xilinx`
-
-<a id="acceleratornametype"></a>
-
+```python title="Definition"
+AcceleratorManufacturerType = Literal[
+    "amazon-web-services",
+    "amd",
+    "nvidia",
+    "xilinx",
+]
+```
 ## AcceleratorNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import AcceleratorNameType
+
+def get_value() -> AcceleratorNameType:
+    return "a100"
 ```
 
-Values:
-
-- `a100`
-- `k80`
-- `m60`
-- `radeon-pro-v520`
-- `t4`
-- `v100`
-- `vu9p`
-
-<a id="acceleratortypetype"></a>
-
+```python title="Definition"
+AcceleratorNameType = Literal[
+    "a100",
+    "k80",
+    "m60",
+    "radeon-pro-v520",
+    "t4",
+    "v100",
+    "vu9p",
+]
+```
 ## AcceleratorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import AcceleratorTypeType
+
+def get_value() -> AcceleratorTypeType:
+    return "fpga"
 ```
 
-Values:
-
-- `fpga`
-- `gpu`
-- `inference`
-
-<a id="baremetaltype"></a>
-
+```python title="Definition"
+AcceleratorTypeType = Literal[
+    "fpga",
+    "gpu",
+    "inference",
+]
+```
 ## BareMetalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import BareMetalType
+
+def get_value() -> BareMetalType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="burstableperformancetype"></a>
-
+```python title="Definition"
+BareMetalType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## BurstablePerformanceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import BurstablePerformanceType
+
+def get_value() -> BurstablePerformanceType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="cpumanufacturertype"></a>
-
+```python title="Definition"
+BurstablePerformanceType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## CpuManufacturerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import CpuManufacturerType
+
+def get_value() -> CpuManufacturerType:
+    return "amazon-web-services"
 ```
 
-Values:
-
-- `amazon-web-services`
-- `amd`
-- `intel`
-
-<a id="describeautoscalinggroupspaginatorname"></a>
-
+```python title="Definition"
+CpuManufacturerType = Literal[
+    "amazon-web-services",
+    "amd",
+    "intel",
+]
+```
 ## DescribeAutoScalingGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorName
+
+def get_value() -> DescribeAutoScalingGroupsPaginatorName:
+    return "describe_auto_scaling_groups"
 ```
 
-Values:
-
-- `describe_auto_scaling_groups`
-
-<a id="describeautoscalinginstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeAutoScalingGroupsPaginatorName = Literal[
+    "describe_auto_scaling_groups",
+]
+```
 ## DescribeAutoScalingInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeAutoScalingInstancesPaginatorName
+
+def get_value() -> DescribeAutoScalingInstancesPaginatorName:
+    return "describe_auto_scaling_instances"
 ```
 
-Values:
-
-- `describe_auto_scaling_instances`
-
-<a id="describelaunchconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeAutoScalingInstancesPaginatorName = Literal[
+    "describe_auto_scaling_instances",
+]
+```
 ## DescribeLaunchConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeLaunchConfigurationsPaginatorName
+
+def get_value() -> DescribeLaunchConfigurationsPaginatorName:
+    return "describe_launch_configurations"
 ```
 
-Values:
-
-- `describe_launch_configurations`
-
-<a id="describeloadbalancertargetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeLaunchConfigurationsPaginatorName = Literal[
+    "describe_launch_configurations",
+]
+```
 ## DescribeLoadBalancerTargetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeLoadBalancerTargetGroupsPaginatorName
+
+def get_value() -> DescribeLoadBalancerTargetGroupsPaginatorName:
+    return "describe_load_balancer_target_groups"
 ```
 
-Values:
-
-- `describe_load_balancer_target_groups`
-
-<a id="describeloadbalancerspaginatorname"></a>
-
+```python title="Definition"
+DescribeLoadBalancerTargetGroupsPaginatorName = Literal[
+    "describe_load_balancer_target_groups",
+]
+```
 ## DescribeLoadBalancersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeLoadBalancersPaginatorName
+
+def get_value() -> DescribeLoadBalancersPaginatorName:
+    return "describe_load_balancers"
 ```
 
-Values:
-
-- `describe_load_balancers`
-
-<a id="describenotificationconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeLoadBalancersPaginatorName = Literal[
+    "describe_load_balancers",
+]
+```
 ## DescribeNotificationConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeNotificationConfigurationsPaginatorName
+
+def get_value() -> DescribeNotificationConfigurationsPaginatorName:
+    return "describe_notification_configurations"
 ```
 
-Values:
-
-- `describe_notification_configurations`
-
-<a id="describepoliciespaginatorname"></a>
-
+```python title="Definition"
+DescribeNotificationConfigurationsPaginatorName = Literal[
+    "describe_notification_configurations",
+]
+```
 ## DescribePoliciesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribePoliciesPaginatorName
+
+def get_value() -> DescribePoliciesPaginatorName:
+    return "describe_policies"
 ```
 
-Values:
-
-- `describe_policies`
-
-<a id="describescalingactivitiespaginatorname"></a>
-
+```python title="Definition"
+DescribePoliciesPaginatorName = Literal[
+    "describe_policies",
+]
+```
 ## DescribeScalingActivitiesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeScalingActivitiesPaginatorName
+
+def get_value() -> DescribeScalingActivitiesPaginatorName:
+    return "describe_scaling_activities"
 ```
 
-Values:
-
-- `describe_scaling_activities`
-
-<a id="describescheduledactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeScalingActivitiesPaginatorName = Literal[
+    "describe_scaling_activities",
+]
+```
 ## DescribeScheduledActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeScheduledActionsPaginatorName
+
+def get_value() -> DescribeScheduledActionsPaginatorName:
+    return "describe_scheduled_actions"
 ```
 
-Values:
-
-- `describe_scheduled_actions`
-
-<a id="describetagspaginatorname"></a>
-
+```python title="Definition"
+DescribeScheduledActionsPaginatorName = Literal[
+    "describe_scheduled_actions",
+]
+```
 ## DescribeTagsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import DescribeTagsPaginatorName
+
+def get_value() -> DescribeTagsPaginatorName:
+    return "describe_tags"
 ```
 
-Values:
-
-- `describe_tags`
-
-<a id="instancegenerationtype"></a>
-
+```python title="Definition"
+DescribeTagsPaginatorName = Literal[
+    "describe_tags",
+]
+```
 ## InstanceGenerationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import InstanceGenerationType
+
+def get_value() -> InstanceGenerationType:
+    return "current"
 ```
 
-Values:
-
-- `current`
-- `previous`
-
-<a id="instancemetadataendpointstatetype"></a>
-
+```python title="Definition"
+InstanceGenerationType = Literal[
+    "current",
+    "previous",
+]
+```
 ## InstanceMetadataEndpointStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import InstanceMetadataEndpointStateType
+
+def get_value() -> InstanceMetadataEndpointStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="instancemetadatahttptokensstatetype"></a>
-
+```python title="Definition"
+InstanceMetadataEndpointStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## InstanceMetadataHttpTokensStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import InstanceMetadataHttpTokensStateType
+
+def get_value() -> InstanceMetadataHttpTokensStateType:
+    return "optional"
 ```
 
-Values:
-
-- `optional`
-- `required`
-
-<a id="instancerefreshstatustype"></a>
-
+```python title="Definition"
+InstanceMetadataHttpTokensStateType = Literal[
+    "optional",
+    "required",
+]
+```
 ## InstanceRefreshStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import InstanceRefreshStatusType
+
+def get_value() -> InstanceRefreshStatusType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Cancelling`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Successful`
-
-<a id="lifecyclestatetype"></a>
-
+```python title="Definition"
+InstanceRefreshStatusType = Literal[
+    "Cancelled",
+    "Cancelling",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Successful",
+]
+```
 ## LifecycleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import LifecycleStateType
+
+def get_value() -> LifecycleStateType:
+    return "Detached"
 ```
 
-Values:
-
-- `Detached`
-- `Detaching`
-- `EnteringStandby`
-- `InService`
-- `Pending`
-- `Pending:Proceed`
-- `Pending:Wait`
-- `Quarantined`
-- `Standby`
-- `Terminated`
-- `Terminating`
-- `Terminating:Proceed`
-- `Terminating:Wait`
-- `Warmed:Hibernated`
-- `Warmed:Pending`
-- `Warmed:Pending:Proceed`
-- `Warmed:Pending:Wait`
-- `Warmed:Running`
-- `Warmed:Stopped`
-- `Warmed:Terminated`
-- `Warmed:Terminating`
-- `Warmed:Terminating:Proceed`
-- `Warmed:Terminating:Wait`
-
-<a id="localstoragetype"></a>
-
+```python title="Definition"
+LifecycleStateType = Literal[
+    "Detached",
+    "Detaching",
+    "EnteringStandby",
+    "InService",
+    "Pending",
+    "Pending:Proceed",
+    "Pending:Wait",
+    "Quarantined",
+    "Standby",
+    "Terminated",
+    "Terminating",
+    "Terminating:Proceed",
+    "Terminating:Wait",
+    "Warmed:Hibernated",
+    "Warmed:Pending",
+    "Warmed:Pending:Proceed",
+    "Warmed:Pending:Wait",
+    "Warmed:Running",
+    "Warmed:Stopped",
+    "Warmed:Terminated",
+    "Warmed:Terminating",
+    "Warmed:Terminating:Proceed",
+    "Warmed:Terminating:Wait",
+]
+```
 ## LocalStorageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import LocalStorageType
+
+def get_value() -> LocalStorageType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="localstoragetypetype"></a>
-
+```python title="Definition"
+LocalStorageType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## LocalStorageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import LocalStorageTypeType
+
+def get_value() -> LocalStorageTypeType:
+    return "hdd"
 ```
 
-Values:
-
-- `hdd`
-- `ssd`
-
-<a id="metricstatistictype"></a>
-
+```python title="Definition"
+LocalStorageTypeType = Literal[
+    "hdd",
+    "ssd",
+]
+```
 ## MetricStatisticType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import MetricStatisticType
+
+def get_value() -> MetricStatisticType:
+    return "Average"
 ```
 
-Values:
-
-- `Average`
-- `Maximum`
-- `Minimum`
-- `SampleCount`
-- `Sum`
-
-<a id="metrictypetype"></a>
-
+```python title="Definition"
+MetricStatisticType = Literal[
+    "Average",
+    "Maximum",
+    "Minimum",
+    "SampleCount",
+    "Sum",
+]
+```
 ## MetricTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import MetricTypeType
+
+def get_value() -> MetricTypeType:
+    return "ALBRequestCountPerTarget"
 ```
 
-Values:
-
-- `ALBRequestCountPerTarget`
-- `ASGAverageCPUUtilization`
-- `ASGAverageNetworkIn`
-- `ASGAverageNetworkOut`
-
-<a id="predefinedloadmetrictypetype"></a>
-
+```python title="Definition"
+MetricTypeType = Literal[
+    "ALBRequestCountPerTarget",
+    "ASGAverageCPUUtilization",
+    "ASGAverageNetworkIn",
+    "ASGAverageNetworkOut",
+]
+```
 ## PredefinedLoadMetricTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PredefinedLoadMetricTypeType
+
+def get_value() -> PredefinedLoadMetricTypeType:
+    return "ALBTargetGroupRequestCount"
 ```
 
-Values:
-
-- `ALBTargetGroupRequestCount`
-- `ASGTotalCPUUtilization`
-- `ASGTotalNetworkIn`
-- `ASGTotalNetworkOut`
-
-<a id="predefinedmetricpairtypetype"></a>
-
+```python title="Definition"
+PredefinedLoadMetricTypeType = Literal[
+    "ALBTargetGroupRequestCount",
+    "ASGTotalCPUUtilization",
+    "ASGTotalNetworkIn",
+    "ASGTotalNetworkOut",
+]
+```
 ## PredefinedMetricPairTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PredefinedMetricPairTypeType
+
+def get_value() -> PredefinedMetricPairTypeType:
+    return "ALBRequestCount"
 ```
 
-Values:
-
-- `ALBRequestCount`
-- `ASGCPUUtilization`
-- `ASGNetworkIn`
-- `ASGNetworkOut`
-
-<a id="predefinedscalingmetrictypetype"></a>
-
+```python title="Definition"
+PredefinedMetricPairTypeType = Literal[
+    "ALBRequestCount",
+    "ASGCPUUtilization",
+    "ASGNetworkIn",
+    "ASGNetworkOut",
+]
+```
 ## PredefinedScalingMetricTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PredefinedScalingMetricTypeType
+
+def get_value() -> PredefinedScalingMetricTypeType:
+    return "ALBRequestCountPerTarget"
 ```
 
-Values:
-
-- `ALBRequestCountPerTarget`
-- `ASGAverageCPUUtilization`
-- `ASGAverageNetworkIn`
-- `ASGAverageNetworkOut`
-
-<a id="predictivescalingmaxcapacitybreachbehaviortype"></a>
-
+```python title="Definition"
+PredefinedScalingMetricTypeType = Literal[
+    "ALBRequestCountPerTarget",
+    "ASGAverageCPUUtilization",
+    "ASGAverageNetworkIn",
+    "ASGAverageNetworkOut",
+]
+```
 ## PredictiveScalingMaxCapacityBreachBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PredictiveScalingMaxCapacityBreachBehaviorType
+
+def get_value() -> PredictiveScalingMaxCapacityBreachBehaviorType:
+    return "HonorMaxCapacity"
 ```
 
-Values:
-
-- `HonorMaxCapacity`
-- `IncreaseMaxCapacity`
-
-<a id="predictivescalingmodetype"></a>
-
+```python title="Definition"
+PredictiveScalingMaxCapacityBreachBehaviorType = Literal[
+    "HonorMaxCapacity",
+    "IncreaseMaxCapacity",
+]
+```
 ## PredictiveScalingModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PredictiveScalingModeType
+
+def get_value() -> PredictiveScalingModeType:
+    return "ForecastAndScale"
 ```
 
-Values:
-
-- `ForecastAndScale`
-- `ForecastOnly`
-
-<a id="refreshstrategytype"></a>
-
+```python title="Definition"
+PredictiveScalingModeType = Literal[
+    "ForecastAndScale",
+    "ForecastOnly",
+]
+```
 ## RefreshStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import RefreshStrategyType
+
+def get_value() -> RefreshStrategyType:
+    return "Rolling"
 ```
 
-Values:
-
-- `Rolling`
-
-<a id="scalingactivitystatuscodetype"></a>
-
+```python title="Definition"
+RefreshStrategyType = Literal[
+    "Rolling",
+]
+```
 ## ScalingActivityStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import ScalingActivityStatusCodeType
+
+def get_value() -> ScalingActivityStatusCodeType:
+    return "Cancelled"
 ```
 
-Values:
-
-- `Cancelled`
-- `Failed`
-- `InProgress`
-- `MidLifecycleAction`
-- `PendingSpotBidPlacement`
-- `PreInService`
-- `Successful`
-- `WaitingForELBConnectionDraining`
-- `WaitingForInstanceId`
-- `WaitingForInstanceWarmup`
-- `WaitingForSpotInstanceId`
-- `WaitingForSpotInstanceRequestId`
-
-<a id="warmpoolstatetype"></a>
-
+```python title="Definition"
+ScalingActivityStatusCodeType = Literal[
+    "Cancelled",
+    "Failed",
+    "InProgress",
+    "MidLifecycleAction",
+    "PendingSpotBidPlacement",
+    "PreInService",
+    "Successful",
+    "WaitingForELBConnectionDraining",
+    "WaitingForInstanceId",
+    "WaitingForInstanceWarmup",
+    "WaitingForSpotInstanceId",
+    "WaitingForSpotInstanceRequestId",
+]
+```
 ## WarmPoolStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import WarmPoolStateType
+
+def get_value() -> WarmPoolStateType:
+    return "Hibernated"
 ```
 
-Values:
-
-- `Hibernated`
-- `Running`
-- `Stopped`
-
-<a id="warmpoolstatustype"></a>
-
+```python title="Definition"
+WarmPoolStateType = Literal[
+    "Hibernated",
+    "Running",
+    "Stopped",
+]
+```
 ## WarmPoolStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import WarmPoolStatusType
+
+def get_value() -> WarmPoolStatusType:
+    return "PendingDelete"
 ```
 
-Values:
-
-- `PendingDelete`
-
-<a id="autoscalingservicename"></a>
-
+```python title="Definition"
+WarmPoolStatusType = Literal[
+    "PendingDelete",
+]
+```
 ## AutoScalingServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import AutoScalingServiceName
+
+def get_value() -> AutoScalingServiceName:
+    return "autoscaling"
 ```
 
-Values:
-
-- `autoscaling`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+AutoScalingServiceName = Literal[
+    "autoscaling",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_autoscaling.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_auto_scaling_groups"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_auto_scaling_groups",
+    "describe_auto_scaling_instances",
+    "describe_launch_configurations",
+    "describe_load_balancer_target_groups",
+    "describe_load_balancers",
+    "describe_notification_configurations",
+    "describe_policies",
+    "describe_scaling_activities",
+    "describe_scheduled_actions",
+    "describe_tags",
+]
+```
+## RegionName
 
-- `describe_auto_scaling_groups`
-- `describe_auto_scaling_instances`
-- `describe_launch_configurations`
-- `describe_load_balancer_target_groups`
-- `describe_load_balancers`
-- `describe_notification_configurations`
-- `describe_policies`
-- `describe_scaling_activities`
-- `describe_scheduled_actions`
-- `describe_tags`
+```python title="Usage Example"
+from mypy_boto3_autoscaling.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

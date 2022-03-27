@@ -1,1807 +1,2340 @@
-<a id="typed-dictionaries-for-boto3-xray-module"></a>
-
-# Typed dictionaries for boto3 XRay module
+# Typed dictionaries
 
 > [Index](../README.md) > [XRay](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
-type annotations stubs module
-[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
+!!! note ""
 
-- [Typed dictionaries for boto3 XRay module](#typed-dictionaries-for-boto3-xray-module)
-  - [AliasTypeDef](#aliastypedef)
-  - [AnnotationValueTypeDef](#annotationvaluetypedef)
-  - [AnomalousServiceTypeDef](#anomalousservicetypedef)
-  - [AvailabilityZoneDetailTypeDef](#availabilityzonedetailtypedef)
-  - [BackendConnectionErrorsTypeDef](#backendconnectionerrorstypedef)
-  - [BatchGetTracesRequestRequestTypeDef](#batchgettracesrequestrequesttypedef)
-  - [BatchGetTracesResultTypeDef](#batchgettracesresulttypedef)
-  - [CreateGroupRequestRequestTypeDef](#creategrouprequestrequesttypedef)
-  - [CreateGroupResultTypeDef](#creategroupresulttypedef)
-  - [CreateSamplingRuleRequestRequestTypeDef](#createsamplingrulerequestrequesttypedef)
-  - [CreateSamplingRuleResultTypeDef](#createsamplingruleresulttypedef)
-  - [DeleteGroupRequestRequestTypeDef](#deletegrouprequestrequesttypedef)
-  - [DeleteSamplingRuleRequestRequestTypeDef](#deletesamplingrulerequestrequesttypedef)
-  - [DeleteSamplingRuleResultTypeDef](#deletesamplingruleresulttypedef)
-  - [EdgeStatisticsTypeDef](#edgestatisticstypedef)
-  - [EdgeTypeDef](#edgetypedef)
-  - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
-  - [ErrorRootCauseEntityTypeDef](#errorrootcauseentitytypedef)
-  - [ErrorRootCauseServiceTypeDef](#errorrootcauseservicetypedef)
-  - [ErrorRootCauseTypeDef](#errorrootcausetypedef)
-  - [ErrorStatisticsTypeDef](#errorstatisticstypedef)
-  - [FaultRootCauseEntityTypeDef](#faultrootcauseentitytypedef)
-  - [FaultRootCauseServiceTypeDef](#faultrootcauseservicetypedef)
-  - [FaultRootCauseTypeDef](#faultrootcausetypedef)
-  - [FaultStatisticsTypeDef](#faultstatisticstypedef)
-  - [ForecastStatisticsTypeDef](#forecaststatisticstypedef)
-  - [GetEncryptionConfigResultTypeDef](#getencryptionconfigresulttypedef)
-  - [GetGroupRequestRequestTypeDef](#getgrouprequestrequesttypedef)
-  - [GetGroupResultTypeDef](#getgroupresulttypedef)
-  - [GetGroupsRequestRequestTypeDef](#getgroupsrequestrequesttypedef)
-  - [GetGroupsResultTypeDef](#getgroupsresulttypedef)
-  - [GetInsightEventsRequestRequestTypeDef](#getinsighteventsrequestrequesttypedef)
-  - [GetInsightEventsResultTypeDef](#getinsighteventsresulttypedef)
-  - [GetInsightImpactGraphRequestRequestTypeDef](#getinsightimpactgraphrequestrequesttypedef)
-  - [GetInsightImpactGraphResultTypeDef](#getinsightimpactgraphresulttypedef)
-  - [GetInsightRequestRequestTypeDef](#getinsightrequestrequesttypedef)
-  - [GetInsightResultTypeDef](#getinsightresulttypedef)
-  - [GetInsightSummariesRequestRequestTypeDef](#getinsightsummariesrequestrequesttypedef)
-  - [GetInsightSummariesResultTypeDef](#getinsightsummariesresulttypedef)
-  - [GetSamplingRulesRequestRequestTypeDef](#getsamplingrulesrequestrequesttypedef)
-  - [GetSamplingRulesResultTypeDef](#getsamplingrulesresulttypedef)
-  - [GetSamplingStatisticSummariesRequestRequestTypeDef](#getsamplingstatisticsummariesrequestrequesttypedef)
-  - [GetSamplingStatisticSummariesResultTypeDef](#getsamplingstatisticsummariesresulttypedef)
-  - [GetSamplingTargetsRequestRequestTypeDef](#getsamplingtargetsrequestrequesttypedef)
-  - [GetSamplingTargetsResultTypeDef](#getsamplingtargetsresulttypedef)
-  - [GetServiceGraphRequestRequestTypeDef](#getservicegraphrequestrequesttypedef)
-  - [GetServiceGraphResultTypeDef](#getservicegraphresulttypedef)
-  - [GetTimeSeriesServiceStatisticsRequestRequestTypeDef](#gettimeseriesservicestatisticsrequestrequesttypedef)
-  - [GetTimeSeriesServiceStatisticsResultTypeDef](#gettimeseriesservicestatisticsresulttypedef)
-  - [GetTraceGraphRequestRequestTypeDef](#gettracegraphrequestrequesttypedef)
-  - [GetTraceGraphResultTypeDef](#gettracegraphresulttypedef)
-  - [GetTraceSummariesRequestRequestTypeDef](#gettracesummariesrequestrequesttypedef)
-  - [GetTraceSummariesResultTypeDef](#gettracesummariesresulttypedef)
-  - [GroupSummaryTypeDef](#groupsummarytypedef)
-  - [GroupTypeDef](#grouptypedef)
-  - [HistogramEntryTypeDef](#histogramentrytypedef)
-  - [HttpTypeDef](#httptypedef)
-  - [InsightEventTypeDef](#insighteventtypedef)
-  - [InsightImpactGraphEdgeTypeDef](#insightimpactgraphedgetypedef)
-  - [InsightImpactGraphServiceTypeDef](#insightimpactgraphservicetypedef)
-  - [InsightSummaryTypeDef](#insightsummarytypedef)
-  - [InsightTypeDef](#insighttypedef)
-  - [InsightsConfigurationTypeDef](#insightsconfigurationtypedef)
-  - [InstanceIdDetailTypeDef](#instanceiddetailtypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutEncryptionConfigRequestRequestTypeDef](#putencryptionconfigrequestrequesttypedef)
-  - [PutEncryptionConfigResultTypeDef](#putencryptionconfigresulttypedef)
-  - [PutTelemetryRecordsRequestRequestTypeDef](#puttelemetryrecordsrequestrequesttypedef)
-  - [PutTraceSegmentsRequestRequestTypeDef](#puttracesegmentsrequestrequesttypedef)
-  - [PutTraceSegmentsResultTypeDef](#puttracesegmentsresulttypedef)
-  - [RequestImpactStatisticsTypeDef](#requestimpactstatisticstypedef)
-  - [ResourceARNDetailTypeDef](#resourcearndetailtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResponseTimeRootCauseEntityTypeDef](#responsetimerootcauseentitytypedef)
-  - [ResponseTimeRootCauseServiceTypeDef](#responsetimerootcauseservicetypedef)
-  - [ResponseTimeRootCauseTypeDef](#responsetimerootcausetypedef)
-  - [RootCauseExceptionTypeDef](#rootcauseexceptiontypedef)
-  - [SamplingRuleRecordTypeDef](#samplingrulerecordtypedef)
-  - [SamplingRuleTypeDef](#samplingruletypedef)
-  - [SamplingRuleUpdateTypeDef](#samplingruleupdatetypedef)
-  - [SamplingStatisticSummaryTypeDef](#samplingstatisticsummarytypedef)
-  - [SamplingStatisticsDocumentTypeDef](#samplingstatisticsdocumenttypedef)
-  - [SamplingStrategyTypeDef](#samplingstrategytypedef)
-  - [SamplingTargetDocumentTypeDef](#samplingtargetdocumenttypedef)
-  - [SegmentTypeDef](#segmenttypedef)
-  - [ServiceIdTypeDef](#serviceidtypedef)
-  - [ServiceStatisticsTypeDef](#servicestatisticstypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TelemetryRecordTypeDef](#telemetryrecordtypedef)
-  - [TimeSeriesServiceStatisticsTypeDef](#timeseriesservicestatisticstypedef)
-  - [TraceSummaryTypeDef](#tracesummarytypedef)
-  - [TraceTypeDef](#tracetypedef)
-  - [TraceUserTypeDef](#traceusertypedef)
-  - [UnprocessedStatisticsTypeDef](#unprocessedstatisticstypedef)
-  - [UnprocessedTraceSegmentTypeDef](#unprocessedtracesegmenttypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateGroupRequestRequestTypeDef](#updategrouprequestrequesttypedef)
-  - [UpdateGroupResultTypeDef](#updategroupresulttypedef)
-  - [UpdateSamplingRuleRequestRequestTypeDef](#updatesamplingrulerequestrequesttypedef)
-  - [UpdateSamplingRuleResultTypeDef](#updatesamplingruleresulttypedef)
-  - [ValueWithServiceIdsTypeDef](#valuewithserviceidstypedef)
-
-<a id="aliastypedef"></a>
+    Auto-generated documentation for [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
+    type annotations stubs module [mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 ## AliasTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import AliasTypeDef
+
+def get_value() -> AliasTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `Type`: `str`
-
-<a id="annotationvaluetypedef"></a>
+```python title="Definition"
+class AliasTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    Type: NotRequired[str],
+```
 
 ## AnnotationValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import AnnotationValueTypeDef
+
+def get_value() -> AnnotationValueTypeDef:
+    return {
+        "NumberValue": ...,
+    }
 ```
 
-Optional fields:
-
-- `NumberValue`: `float`
-- `BooleanValue`: `bool`
-- `StringValue`: `str`
-
-<a id="anomalousservicetypedef"></a>
+```python title="Definition"
+class AnnotationValueTypeDef(TypedDict):
+    NumberValue: NotRequired[float],
+    BooleanValue: NotRequired[bool],
+    StringValue: NotRequired[str],
+```
 
 ## AnomalousServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import AnomalousServiceTypeDef
+
+def get_value() -> AnomalousServiceTypeDef:
+    return {
+        "ServiceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AnomalousServiceTypeDef(TypedDict):
+    ServiceId: NotRequired[ServiceIdTypeDef],  # (1)
+```
 
-- `ServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
-
-<a id="availabilityzonedetailtypedef"></a>
-
+1. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
 ## AvailabilityZoneDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import AvailabilityZoneDetailTypeDef
+
+def get_value() -> AvailabilityZoneDetailTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-
-<a id="backendconnectionerrorstypedef"></a>
+```python title="Definition"
+class AvailabilityZoneDetailTypeDef(TypedDict):
+    Name: NotRequired[str],
+```
 
 ## BackendConnectionErrorsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import BackendConnectionErrorsTypeDef
+
+def get_value() -> BackendConnectionErrorsTypeDef:
+    return {
+        "TimeoutCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackendConnectionErrorsTypeDef(TypedDict):
+    TimeoutCount: NotRequired[int],
+    ConnectionRefusedCount: NotRequired[int],
+    HTTPCode4XXCount: NotRequired[int],
+    HTTPCode5XXCount: NotRequired[int],
+    UnknownHostCount: NotRequired[int],
+    OtherCount: NotRequired[int],
+```
 
-- `TimeoutCount`: `int`
-- `ConnectionRefusedCount`: `int`
-- `HTTPCode4XXCount`: `int`
-- `HTTPCode5XXCount`: `int`
-- `UnknownHostCount`: `int`
-- `OtherCount`: `int`
+## BatchGetTracesRequestBatchGetTracesPaginateTypeDef
 
-<a id="batchgettracesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import BatchGetTracesRequestBatchGetTracesPaginateTypeDef
 
+def get_value() -> BatchGetTracesRequestBatchGetTracesPaginateTypeDef:
+    return {
+        "TraceIds": ...,
+    }
+```
+
+```python title="Definition"
+class BatchGetTracesRequestBatchGetTracesPaginateTypeDef(TypedDict):
+    TraceIds: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## BatchGetTracesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import BatchGetTracesRequestRequestTypeDef
+
+def get_value() -> BatchGetTracesRequestRequestTypeDef:
+    return {
+        "TraceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `TraceIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="batchgettracesresulttypedef"></a>
+```python title="Definition"
+class BatchGetTracesRequestRequestTypeDef(TypedDict):
+    TraceIds: Sequence[str],
+    NextToken: NotRequired[str],
+```
 
 ## BatchGetTracesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import BatchGetTracesResultTypeDef
+
+def get_value() -> BatchGetTracesResultTypeDef:
+    return {
+        "Traces": ...,
+        "UnprocessedTraceIds": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetTracesResultTypeDef(TypedDict):
+    Traces: List[TraceTypeDef],  # (1)
+    UnprocessedTraceIds: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Traces`: `List`\[[TraceTypeDef](./type_defs.md#tracetypedef)\]
-- `UnprocessedTraceIds`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="creategrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TraceTypeDef](./type_defs.md#tracetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import CreateGroupRequestRequestTypeDef
+
+def get_value() -> CreateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: str,
+    FilterExpression: NotRequired[str],
+    InsightsConfiguration: NotRequired[InsightsConfigurationTypeDef],  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `GroupName`: `str`
-
-Optional fields:
-
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="creategroupresulttypedef"></a>
-
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import CreateGroupResultTypeDef
+
+def get_value() -> CreateGroupResultTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupResultTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsamplingrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSamplingRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import CreateSamplingRuleRequestRequestTypeDef
+
+def get_value() -> CreateSamplingRuleRequestRequestTypeDef:
+    return {
+        "SamplingRule": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSamplingRuleRequestRequestTypeDef(TypedDict):
+    SamplingRule: SamplingRuleTypeDef,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createsamplingruleresulttypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleTypeDef](./type_defs.md#samplingruletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateSamplingRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import CreateSamplingRuleResultTypeDef
+
+def get_value() -> CreateSamplingRuleResultTypeDef:
+    return {
+        "SamplingRuleRecord": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSamplingRuleResultTypeDef(TypedDict):
+    SamplingRuleRecord: SamplingRuleRecordTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SamplingRuleRecord`:
-  [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import DeleteGroupRequestRequestTypeDef
+
+def get_value() -> DeleteGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupARN`: `str`
-
-<a id="deletesamplingrulerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteGroupRequestRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+```
 
 ## DeleteSamplingRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import DeleteSamplingRuleRequestRequestTypeDef
+
+def get_value() -> DeleteSamplingRuleRequestRequestTypeDef:
+    return {
+        "RuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleName`: `str`
-- `RuleARN`: `str`
-
-<a id="deletesamplingruleresulttypedef"></a>
+```python title="Definition"
+class DeleteSamplingRuleRequestRequestTypeDef(TypedDict):
+    RuleName: NotRequired[str],
+    RuleARN: NotRequired[str],
+```
 
 ## DeleteSamplingRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import DeleteSamplingRuleResultTypeDef
+
+def get_value() -> DeleteSamplingRuleResultTypeDef:
+    return {
+        "SamplingRuleRecord": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteSamplingRuleResultTypeDef(TypedDict):
+    SamplingRuleRecord: SamplingRuleRecordTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SamplingRuleRecord`:
-  [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="edgestatisticstypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EdgeStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import EdgeStatisticsTypeDef
+
+def get_value() -> EdgeStatisticsTypeDef:
+    return {
+        "OkCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EdgeStatisticsTypeDef(TypedDict):
+    OkCount: NotRequired[int],
+    ErrorStatistics: NotRequired[ErrorStatisticsTypeDef],  # (1)
+    FaultStatistics: NotRequired[FaultStatisticsTypeDef],  # (2)
+    TotalCount: NotRequired[int],
+    TotalResponseTime: NotRequired[float],
+```
 
-- `OkCount`: `int`
-- `ErrorStatistics`:
-  [ErrorStatisticsTypeDef](./type_defs.md#errorstatisticstypedef)
-- `FaultStatistics`:
-  [FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef)
-- `TotalCount`: `int`
-- `TotalResponseTime`: `float`
-
-<a id="edgetypedef"></a>
-
+1. See [:material-code-braces: ErrorStatisticsTypeDef](./type_defs.md#errorstatisticstypedef) 
+2. See [:material-code-braces: FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef) 
 ## EdgeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import EdgeTypeDef
+
+def get_value() -> EdgeTypeDef:
+    return {
+        "ReferenceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EdgeTypeDef(TypedDict):
+    ReferenceId: NotRequired[int],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    SummaryStatistics: NotRequired[EdgeStatisticsTypeDef],  # (1)
+    ResponseTimeHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (2)
+    Aliases: NotRequired[List[AliasTypeDef]],  # (3)
+```
 
-- `ReferenceId`: `int`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `SummaryStatistics`:
-  [EdgeStatisticsTypeDef](./type_defs.md#edgestatisticstypedef)
-- `ResponseTimeHistogram`:
-  `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
-- `Aliases`: `List`\[[AliasTypeDef](./type_defs.md#aliastypedef)\]
-
-<a id="encryptionconfigtypedef"></a>
-
+1. See [:material-code-braces: EdgeStatisticsTypeDef](./type_defs.md#edgestatisticstypedef) 
+2. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
+3. See [:material-code-braces: AliasTypeDef](./type_defs.md#aliastypedef) 
 ## EncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import EncryptionConfigTypeDef
+
+def get_value() -> EncryptionConfigTypeDef:
+    return {
+        "KeyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EncryptionConfigTypeDef(TypedDict):
+    KeyId: NotRequired[str],
+    Status: NotRequired[EncryptionStatusType],  # (1)
+    Type: NotRequired[EncryptionTypeType],  # (2)
+```
 
-- `KeyId`: `str`
-- `Status`: [EncryptionStatusType](./literals.md#encryptionstatustype)
-- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-
-<a id="errorrootcauseentitytypedef"></a>
-
+1. See [:material-code-brackets: EncryptionStatusType](./literals.md#encryptionstatustype) 
+2. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## ErrorRootCauseEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ErrorRootCauseEntityTypeDef
+
+def get_value() -> ErrorRootCauseEntityTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorRootCauseEntityTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Exceptions: NotRequired[List[RootCauseExceptionTypeDef]],  # (1)
+    Remote: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Exceptions`:
-  `List`\[[RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef)\]
-- `Remote`: `bool`
-
-<a id="errorrootcauseservicetypedef"></a>
-
+1. See [:material-code-braces: RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef) 
 ## ErrorRootCauseServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ErrorRootCauseServiceTypeDef
+
+def get_value() -> ErrorRootCauseServiceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorRootCauseServiceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    Type: NotRequired[str],
+    AccountId: NotRequired[str],
+    EntityPath: NotRequired[List[ErrorRootCauseEntityTypeDef]],  # (1)
+    Inferred: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `Type`: `str`
-- `AccountId`: `str`
-- `EntityPath`:
-  `List`\[[ErrorRootCauseEntityTypeDef](./type_defs.md#errorrootcauseentitytypedef)\]
-- `Inferred`: `bool`
-
-<a id="errorrootcausetypedef"></a>
-
+1. See [:material-code-braces: ErrorRootCauseEntityTypeDef](./type_defs.md#errorrootcauseentitytypedef) 
 ## ErrorRootCauseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ErrorRootCauseTypeDef
+
+def get_value() -> ErrorRootCauseTypeDef:
+    return {
+        "Services": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorRootCauseTypeDef(TypedDict):
+    Services: NotRequired[List[ErrorRootCauseServiceTypeDef]],  # (1)
+    ClientImpacting: NotRequired[bool],
+```
 
-- `Services`:
-  `List`\[[ErrorRootCauseServiceTypeDef](./type_defs.md#errorrootcauseservicetypedef)\]
-- `ClientImpacting`: `bool`
-
-<a id="errorstatisticstypedef"></a>
-
+1. See [:material-code-braces: ErrorRootCauseServiceTypeDef](./type_defs.md#errorrootcauseservicetypedef) 
 ## ErrorStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ErrorStatisticsTypeDef
+
+def get_value() -> ErrorStatisticsTypeDef:
+    return {
+        "ThrottleCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `ThrottleCount`: `int`
-- `OtherCount`: `int`
-- `TotalCount`: `int`
-
-<a id="faultrootcauseentitytypedef"></a>
+```python title="Definition"
+class ErrorStatisticsTypeDef(TypedDict):
+    ThrottleCount: NotRequired[int],
+    OtherCount: NotRequired[int],
+    TotalCount: NotRequired[int],
+```
 
 ## FaultRootCauseEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import FaultRootCauseEntityTypeDef
+
+def get_value() -> FaultRootCauseEntityTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaultRootCauseEntityTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Exceptions: NotRequired[List[RootCauseExceptionTypeDef]],  # (1)
+    Remote: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Exceptions`:
-  `List`\[[RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef)\]
-- `Remote`: `bool`
-
-<a id="faultrootcauseservicetypedef"></a>
-
+1. See [:material-code-braces: RootCauseExceptionTypeDef](./type_defs.md#rootcauseexceptiontypedef) 
 ## FaultRootCauseServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import FaultRootCauseServiceTypeDef
+
+def get_value() -> FaultRootCauseServiceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaultRootCauseServiceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    Type: NotRequired[str],
+    AccountId: NotRequired[str],
+    EntityPath: NotRequired[List[FaultRootCauseEntityTypeDef]],  # (1)
+    Inferred: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `Type`: `str`
-- `AccountId`: `str`
-- `EntityPath`:
-  `List`\[[FaultRootCauseEntityTypeDef](./type_defs.md#faultrootcauseentitytypedef)\]
-- `Inferred`: `bool`
-
-<a id="faultrootcausetypedef"></a>
-
+1. See [:material-code-braces: FaultRootCauseEntityTypeDef](./type_defs.md#faultrootcauseentitytypedef) 
 ## FaultRootCauseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import FaultRootCauseTypeDef
+
+def get_value() -> FaultRootCauseTypeDef:
+    return {
+        "Services": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FaultRootCauseTypeDef(TypedDict):
+    Services: NotRequired[List[FaultRootCauseServiceTypeDef]],  # (1)
+    ClientImpacting: NotRequired[bool],
+```
 
-- `Services`:
-  `List`\[[FaultRootCauseServiceTypeDef](./type_defs.md#faultrootcauseservicetypedef)\]
-- `ClientImpacting`: `bool`
-
-<a id="faultstatisticstypedef"></a>
-
+1. See [:material-code-braces: FaultRootCauseServiceTypeDef](./type_defs.md#faultrootcauseservicetypedef) 
 ## FaultStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import FaultStatisticsTypeDef
+
+def get_value() -> FaultStatisticsTypeDef:
+    return {
+        "OtherCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `OtherCount`: `int`
-- `TotalCount`: `int`
-
-<a id="forecaststatisticstypedef"></a>
+```python title="Definition"
+class FaultStatisticsTypeDef(TypedDict):
+    OtherCount: NotRequired[int],
+    TotalCount: NotRequired[int],
+```
 
 ## ForecastStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ForecastStatisticsTypeDef
+
+def get_value() -> ForecastStatisticsTypeDef:
+    return {
+        "FaultCountHigh": ...,
+    }
 ```
 
-Optional fields:
-
-- `FaultCountHigh`: `int`
-- `FaultCountLow`: `int`
-
-<a id="getencryptionconfigresulttypedef"></a>
+```python title="Definition"
+class ForecastStatisticsTypeDef(TypedDict):
+    FaultCountHigh: NotRequired[int],
+    FaultCountLow: NotRequired[int],
+```
 
 ## GetEncryptionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetEncryptionConfigResultTypeDef
+
+def get_value() -> GetEncryptionConfigResultTypeDef:
+    return {
+        "EncryptionConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetEncryptionConfigResultTypeDef(TypedDict):
+    EncryptionConfig: EncryptionConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetGroupRequestRequestTypeDef
+
+def get_value() -> GetGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupARN`: `str`
-
-<a id="getgroupresulttypedef"></a>
+```python title="Definition"
+class GetGroupRequestRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+```
 
 ## GetGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetGroupResultTypeDef
+
+def get_value() -> GetGroupResultTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupResultTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetGroupsRequestGetGroupsPaginateTypeDef
 
-<a id="getgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetGroupsRequestGetGroupsPaginateTypeDef
 
+def get_value() -> GetGroupsRequestGetGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetGroupsRequestGetGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetGroupsRequestRequestTypeDef
+
+def get_value() -> GetGroupsRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getgroupsresulttypedef"></a>
+```python title="Definition"
+class GetGroupsRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## GetGroupsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetGroupsResultTypeDef
+
+def get_value() -> GetGroupsResultTypeDef:
+    return {
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupsResultTypeDef(TypedDict):
+    Groups: List[GroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Groups`: `List`\[[GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsighteventsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupSummaryTypeDef](./type_defs.md#groupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightEventsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightEventsRequestRequestTypeDef
+
+def get_value() -> GetInsightEventsRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Required fields:
-
-- `InsightId`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getinsighteventsresulttypedef"></a>
+```python title="Definition"
+class GetInsightEventsRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## GetInsightEventsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightEventsResultTypeDef
+
+def get_value() -> GetInsightEventsResultTypeDef:
+    return {
+        "InsightEvents": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightEventsResultTypeDef(TypedDict):
+    InsightEvents: List[InsightEventTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InsightEvents`:
-  `List`\[[InsightEventTypeDef](./type_defs.md#insighteventtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightimpactgraphrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InsightEventTypeDef](./type_defs.md#insighteventtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightImpactGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightImpactGraphRequestRequestTypeDef
+
+def get_value() -> GetInsightImpactGraphRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `InsightId`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getinsightimpactgraphresulttypedef"></a>
+```python title="Definition"
+class GetInsightImpactGraphRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    NextToken: NotRequired[str],
+```
 
 ## GetInsightImpactGraphResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightImpactGraphResultTypeDef
+
+def get_value() -> GetInsightImpactGraphResultTypeDef:
+    return {
+        "InsightId": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "ServiceGraphStartTime": ...,
+        "ServiceGraphEndTime": ...,
+        "Services": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightImpactGraphResultTypeDef(TypedDict):
+    InsightId: str,
+    StartTime: datetime,
+    EndTime: datetime,
+    ServiceGraphStartTime: datetime,
+    ServiceGraphEndTime: datetime,
+    Services: List[InsightImpactGraphServiceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InsightId`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ServiceGraphStartTime`: `datetime`
-- `ServiceGraphEndTime`: `datetime`
-- `Services`:
-  `List`\[[InsightImpactGraphServiceTypeDef](./type_defs.md#insightimpactgraphservicetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InsightImpactGraphServiceTypeDef](./type_defs.md#insightimpactgraphservicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightRequestRequestTypeDef
+
+def get_value() -> GetInsightRequestRequestTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Required fields:
-
-- `InsightId`: `str`
-
-<a id="getinsightresulttypedef"></a>
+```python title="Definition"
+class GetInsightRequestRequestTypeDef(TypedDict):
+    InsightId: str,
+```
 
 ## GetInsightResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightResultTypeDef
+
+def get_value() -> GetInsightResultTypeDef:
+    return {
+        "Insight": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightResultTypeDef(TypedDict):
+    Insight: InsightTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Insight`: [InsightTypeDef](./type_defs.md#insighttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getinsightsummariesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InsightTypeDef](./type_defs.md#insighttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetInsightSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightSummariesRequestRequestTypeDef
+
+def get_value() -> GetInsightSummariesRequestRequestTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightSummariesRequestRequestTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    States: NotRequired[Sequence[InsightStateType]],  # (1)
+    GroupARN: NotRequired[str],
+    GroupName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `States`: `Sequence`\[[InsightStateType](./literals.md#insightstatetype)\]
-- `GroupARN`: `str`
-- `GroupName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="getinsightsummariesresulttypedef"></a>
-
+1. See [:material-code-brackets: InsightStateType](./literals.md#insightstatetype) 
 ## GetInsightSummariesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetInsightSummariesResultTypeDef
+
+def get_value() -> GetInsightSummariesResultTypeDef:
+    return {
+        "InsightSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetInsightSummariesResultTypeDef(TypedDict):
+    InsightSummaries: List[InsightSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InsightSummaries`:
-  `List`\[[InsightSummaryTypeDef](./type_defs.md#insightsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InsightSummaryTypeDef](./type_defs.md#insightsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef
 
-<a id="getsamplingrulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef
 
+def get_value() -> GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetSamplingRulesRequestGetSamplingRulesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSamplingRulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingRulesRequestRequestTypeDef
+
+def get_value() -> GetSamplingRulesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getsamplingrulesresulttypedef"></a>
+```python title="Definition"
+class GetSamplingRulesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## GetSamplingRulesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingRulesResultTypeDef
+
+def get_value() -> GetSamplingRulesResultTypeDef:
+    return {
+        "SamplingRuleRecords": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSamplingRulesResultTypeDef(TypedDict):
+    SamplingRuleRecords: List[SamplingRuleRecordTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SamplingRuleRecords`:
-  `List`\[[SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef
 
-<a id="getsamplingstatisticsummariesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef
 
+def get_value() -> GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class GetSamplingStatisticSummariesRequestGetSamplingStatisticSummariesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetSamplingStatisticSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesRequestRequestTypeDef
+
+def get_value() -> GetSamplingStatisticSummariesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="getsamplingstatisticsummariesresulttypedef"></a>
+```python title="Definition"
+class GetSamplingStatisticSummariesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+```
 
 ## GetSamplingStatisticSummariesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingStatisticSummariesResultTypeDef
+
+def get_value() -> GetSamplingStatisticSummariesResultTypeDef:
+    return {
+        "SamplingStatisticSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSamplingStatisticSummariesResultTypeDef(TypedDict):
+    SamplingStatisticSummaries: List[SamplingStatisticSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SamplingStatisticSummaries`:
-  `List`\[[SamplingStatisticSummaryTypeDef](./type_defs.md#samplingstatisticsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getsamplingtargetsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SamplingStatisticSummaryTypeDef](./type_defs.md#samplingstatisticsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetSamplingTargetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingTargetsRequestRequestTypeDef
+
+def get_value() -> GetSamplingTargetsRequestRequestTypeDef:
+    return {
+        "SamplingStatisticsDocuments": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSamplingTargetsRequestRequestTypeDef(TypedDict):
+    SamplingStatisticsDocuments: Sequence[SamplingStatisticsDocumentTypeDef],  # (1)
+```
 
-- `SamplingStatisticsDocuments`:
-  `Sequence`\[[SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef)\]
-
-<a id="getsamplingtargetsresulttypedef"></a>
-
+1. See [:material-code-braces: SamplingStatisticsDocumentTypeDef](./type_defs.md#samplingstatisticsdocumenttypedef) 
 ## GetSamplingTargetsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetSamplingTargetsResultTypeDef
+
+def get_value() -> GetSamplingTargetsResultTypeDef:
+    return {
+        "SamplingTargetDocuments": ...,
+        "LastRuleModification": ...,
+        "UnprocessedStatistics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSamplingTargetsResultTypeDef(TypedDict):
+    SamplingTargetDocuments: List[SamplingTargetDocumentTypeDef],  # (1)
+    LastRuleModification: datetime,
+    UnprocessedStatistics: List[UnprocessedStatisticsTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `SamplingTargetDocuments`:
-  `List`\[[SamplingTargetDocumentTypeDef](./type_defs.md#samplingtargetdocumenttypedef)\]
-- `LastRuleModification`: `datetime`
-- `UnprocessedStatistics`:
-  `List`\[[UnprocessedStatisticsTypeDef](./type_defs.md#unprocessedstatisticstypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SamplingTargetDocumentTypeDef](./type_defs.md#samplingtargetdocumenttypedef) 
+2. See [:material-code-braces: UnprocessedStatisticsTypeDef](./type_defs.md#unprocessedstatisticstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetServiceGraphRequestGetServiceGraphPaginateTypeDef
 
-<a id="getservicegraphrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetServiceGraphRequestGetServiceGraphPaginateTypeDef
 
+def get_value() -> GetServiceGraphRequestGetServiceGraphPaginateTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetServiceGraphRequestGetServiceGraphPaginateTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetServiceGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetServiceGraphRequestRequestTypeDef
+
+def get_value() -> GetServiceGraphRequestRequestTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `NextToken`: `str`
-
-<a id="getservicegraphresulttypedef"></a>
+```python title="Definition"
+class GetServiceGraphRequestRequestTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
 ## GetServiceGraphResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetServiceGraphResultTypeDef
+
+def get_value() -> GetServiceGraphResultTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+        "Services": ...,
+        "ContainsOldGroupVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetServiceGraphResultTypeDef(TypedDict):
+    StartTime: datetime,
+    EndTime: datetime,
+    Services: List[ServiceTypeDef],  # (1)
+    ContainsOldGroupVersions: bool,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
-- `ContainsOldGroupVersions`: `bool`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef
 
-<a id="gettimeseriesservicestatisticsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef
 
+def get_value() -> GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetTimeSeriesServiceStatisticsRequestGetTimeSeriesServiceStatisticsPaginateTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    EntitySelectorExpression: NotRequired[str],
+    Period: NotRequired[int],
+    ForecastStatistics: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTimeSeriesServiceStatisticsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsRequestRequestTypeDef
+
+def get_value() -> GetTimeSeriesServiceStatisticsRequestRequestTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `EntitySelectorExpression`: `str`
-- `Period`: `int`
-- `ForecastStatistics`: `bool`
-- `NextToken`: `str`
-
-<a id="gettimeseriesservicestatisticsresulttypedef"></a>
+```python title="Definition"
+class GetTimeSeriesServiceStatisticsRequestRequestTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    EntitySelectorExpression: NotRequired[str],
+    Period: NotRequired[int],
+    ForecastStatistics: NotRequired[bool],
+    NextToken: NotRequired[str],
+```
 
 ## GetTimeSeriesServiceStatisticsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTimeSeriesServiceStatisticsResultTypeDef
+
+def get_value() -> GetTimeSeriesServiceStatisticsResultTypeDef:
+    return {
+        "TimeSeriesServiceStatistics": ...,
+        "ContainsOldGroupVersions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTimeSeriesServiceStatisticsResultTypeDef(TypedDict):
+    TimeSeriesServiceStatistics: List[TimeSeriesServiceStatisticsTypeDef],  # (1)
+    ContainsOldGroupVersions: bool,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TimeSeriesServiceStatistics`:
-  `List`\[[TimeSeriesServiceStatisticsTypeDef](./type_defs.md#timeseriesservicestatisticstypedef)\]
-- `ContainsOldGroupVersions`: `bool`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: TimeSeriesServiceStatisticsTypeDef](./type_defs.md#timeseriesservicestatisticstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTraceGraphRequestGetTraceGraphPaginateTypeDef
 
-<a id="gettracegraphrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetTraceGraphRequestGetTraceGraphPaginateTypeDef
 
+def get_value() -> GetTraceGraphRequestGetTraceGraphPaginateTypeDef:
+    return {
+        "TraceIds": ...,
+    }
+```
+
+```python title="Definition"
+class GetTraceGraphRequestGetTraceGraphPaginateTypeDef(TypedDict):
+    TraceIds: Sequence[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTraceGraphRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTraceGraphRequestRequestTypeDef
+
+def get_value() -> GetTraceGraphRequestRequestTypeDef:
+    return {
+        "TraceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `TraceIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="gettracegraphresulttypedef"></a>
+```python title="Definition"
+class GetTraceGraphRequestRequestTypeDef(TypedDict):
+    TraceIds: Sequence[str],
+    NextToken: NotRequired[str],
+```
 
 ## GetTraceGraphResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTraceGraphResultTypeDef
+
+def get_value() -> GetTraceGraphResultTypeDef:
+    return {
+        "Services": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTraceGraphResultTypeDef(TypedDict):
+    Services: List[ServiceTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Services`: `List`\[[ServiceTypeDef](./type_defs.md#servicetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef
 
-<a id="gettracesummariesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_xray.type_defs import GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef
 
+def get_value() -> GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
+```
+
+```python title="Definition"
+class GetTraceSummariesRequestGetTraceSummariesPaginateTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    TimeRangeType: NotRequired[TimeRangeTypeType],  # (1)
+    Sampling: NotRequired[bool],
+    SamplingStrategy: NotRequired[SamplingStrategyTypeDef],  # (2)
+    FilterExpression: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: TimeRangeTypeType](./literals.md#timerangetypetype) 
+2. See [:material-code-braces: SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetTraceSummariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTraceSummariesRequestRequestTypeDef
+
+def get_value() -> GetTraceSummariesRequestRequestTypeDef:
+    return {
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTraceSummariesRequestRequestTypeDef(TypedDict):
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    TimeRangeType: NotRequired[TimeRangeTypeType],  # (1)
+    Sampling: NotRequired[bool],
+    SamplingStrategy: NotRequired[SamplingStrategyTypeDef],  # (2)
+    FilterExpression: NotRequired[str],
+    NextToken: NotRequired[str],
+```
 
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `TimeRangeType`: [TimeRangeTypeType](./literals.md#timerangetypetype)
-- `Sampling`: `bool`
-- `SamplingStrategy`:
-  [SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef)
-- `FilterExpression`: `str`
-- `NextToken`: `str`
-
-<a id="gettracesummariesresulttypedef"></a>
-
+1. See [:material-code-brackets: TimeRangeTypeType](./literals.md#timerangetypetype) 
+2. See [:material-code-braces: SamplingStrategyTypeDef](./type_defs.md#samplingstrategytypedef) 
 ## GetTraceSummariesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GetTraceSummariesResultTypeDef
+
+def get_value() -> GetTraceSummariesResultTypeDef:
+    return {
+        "TraceSummaries": ...,
+        "ApproximateTime": ...,
+        "TracesProcessedCount": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTraceSummariesResultTypeDef(TypedDict):
+    TraceSummaries: List[TraceSummaryTypeDef],  # (1)
+    ApproximateTime: datetime,
+    TracesProcessedCount: int,
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TraceSummaries`:
-  `List`\[[TraceSummaryTypeDef](./type_defs.md#tracesummarytypedef)\]
-- `ApproximateTime`: `datetime`
-- `TracesProcessedCount`: `int`
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupsummarytypedef"></a>
-
+1. See [:material-code-braces: TraceSummaryTypeDef](./type_defs.md#tracesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GroupSummaryTypeDef
+
+def get_value() -> GroupSummaryTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupSummaryTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    InsightsConfiguration: NotRequired[InsightsConfigurationTypeDef],  # (1)
+```
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-
-<a id="grouptypedef"></a>
-
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
 ## GroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    InsightsConfiguration: NotRequired[InsightsConfigurationTypeDef],  # (1)
+```
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-
-<a id="histogramentrytypedef"></a>
-
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
 ## HistogramEntryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import HistogramEntryTypeDef
+
+def get_value() -> HistogramEntryTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
-
-- `Value`: `float`
-- `Count`: `int`
-
-<a id="httptypedef"></a>
+```python title="Definition"
+class HistogramEntryTypeDef(TypedDict):
+    Value: NotRequired[float],
+    Count: NotRequired[int],
+```
 
 ## HttpTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import HttpTypeDef
+
+def get_value() -> HttpTypeDef:
+    return {
+        "HttpURL": ...,
+    }
 ```
 
-Optional fields:
-
-- `HttpURL`: `str`
-- `HttpStatus`: `int`
-- `HttpMethod`: `str`
-- `UserAgent`: `str`
-- `ClientIp`: `str`
-
-<a id="insighteventtypedef"></a>
+```python title="Definition"
+class HttpTypeDef(TypedDict):
+    HttpURL: NotRequired[str],
+    HttpStatus: NotRequired[int],
+    HttpMethod: NotRequired[str],
+    UserAgent: NotRequired[str],
+    ClientIp: NotRequired[str],
+```
 
 ## InsightEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightEventTypeDef
+
+def get_value() -> InsightEventTypeDef:
+    return {
+        "Summary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightEventTypeDef(TypedDict):
+    Summary: NotRequired[str],
+    EventTime: NotRequired[datetime],
+    ClientRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (1)
+    RootCauseServiceRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (1)
+    TopAnomalousServices: NotRequired[List[AnomalousServiceTypeDef]],  # (3)
+```
 
-- `Summary`: `str`
-- `EventTime`: `datetime`
-- `ClientRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `RootCauseServiceRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `TopAnomalousServices`:
-  `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
-
-<a id="insightimpactgraphedgetypedef"></a>
-
+1. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+2. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+3. See [:material-code-braces: AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef) 
 ## InsightImpactGraphEdgeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightImpactGraphEdgeTypeDef
+
+def get_value() -> InsightImpactGraphEdgeTypeDef:
+    return {
+        "ReferenceId": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReferenceId`: `int`
-
-<a id="insightimpactgraphservicetypedef"></a>
+```python title="Definition"
+class InsightImpactGraphEdgeTypeDef(TypedDict):
+    ReferenceId: NotRequired[int],
+```
 
 ## InsightImpactGraphServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightImpactGraphServiceTypeDef
+
+def get_value() -> InsightImpactGraphServiceTypeDef:
+    return {
+        "ReferenceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightImpactGraphServiceTypeDef(TypedDict):
+    ReferenceId: NotRequired[int],
+    Type: NotRequired[str],
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    AccountId: NotRequired[str],
+    Edges: NotRequired[List[InsightImpactGraphEdgeTypeDef]],  # (1)
+```
 
-- `ReferenceId`: `int`
-- `Type`: `str`
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `AccountId`: `str`
-- `Edges`:
-  `List`\[[InsightImpactGraphEdgeTypeDef](./type_defs.md#insightimpactgraphedgetypedef)\]
-
-<a id="insightsummarytypedef"></a>
-
+1. See [:material-code-braces: InsightImpactGraphEdgeTypeDef](./type_defs.md#insightimpactgraphedgetypedef) 
 ## InsightSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightSummaryTypeDef
+
+def get_value() -> InsightSummaryTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightSummaryTypeDef(TypedDict):
+    InsightId: NotRequired[str],
+    GroupARN: NotRequired[str],
+    GroupName: NotRequired[str],
+    RootCauseServiceId: NotRequired[ServiceIdTypeDef],  # (1)
+    Categories: NotRequired[List[InsightCategoryType]],  # (2)
+    State: NotRequired[InsightStateType],  # (3)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Summary: NotRequired[str],
+    ClientRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (4)
+    RootCauseServiceRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (4)
+    TopAnomalousServices: NotRequired[List[AnomalousServiceTypeDef]],  # (6)
+    LastUpdateTime: NotRequired[datetime],
+```
 
-- `InsightId`: `str`
-- `GroupARN`: `str`
-- `GroupName`: `str`
-- `RootCauseServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
-- `Categories`: `List`\[`Literal['FAULT']` (see
-  [InsightCategoryType](./literals.md#insightcategorytype))\]
-- `State`: [InsightStateType](./literals.md#insightstatetype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `Summary`: `str`
-- `ClientRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `RootCauseServiceRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `TopAnomalousServices`:
-  `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
-- `LastUpdateTime`: `datetime`
-
-<a id="insighttypedef"></a>
-
+1. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
+2. See [:material-code-brackets: InsightCategoryType](./literals.md#insightcategorytype) 
+3. See [:material-code-brackets: InsightStateType](./literals.md#insightstatetype) 
+4. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+5. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+6. See [:material-code-braces: AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef) 
 ## InsightTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightTypeDef
+
+def get_value() -> InsightTypeDef:
+    return {
+        "InsightId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InsightTypeDef(TypedDict):
+    InsightId: NotRequired[str],
+    GroupARN: NotRequired[str],
+    GroupName: NotRequired[str],
+    RootCauseServiceId: NotRequired[ServiceIdTypeDef],  # (1)
+    Categories: NotRequired[List[InsightCategoryType]],  # (2)
+    State: NotRequired[InsightStateType],  # (3)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Summary: NotRequired[str],
+    ClientRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (4)
+    RootCauseServiceRequestImpactStatistics: NotRequired[RequestImpactStatisticsTypeDef],  # (4)
+    TopAnomalousServices: NotRequired[List[AnomalousServiceTypeDef]],  # (6)
+```
 
-- `InsightId`: `str`
-- `GroupARN`: `str`
-- `GroupName`: `str`
-- `RootCauseServiceId`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
-- `Categories`: `List`\[`Literal['FAULT']` (see
-  [InsightCategoryType](./literals.md#insightcategorytype))\]
-- `State`: [InsightStateType](./literals.md#insightstatetype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `Summary`: `str`
-- `ClientRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `RootCauseServiceRequestImpactStatistics`:
-  [RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef)
-- `TopAnomalousServices`:
-  `List`\[[AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef)\]
-
-<a id="insightsconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
+2. See [:material-code-brackets: InsightCategoryType](./literals.md#insightcategorytype) 
+3. See [:material-code-brackets: InsightStateType](./literals.md#insightstatetype) 
+4. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+5. See [:material-code-braces: RequestImpactStatisticsTypeDef](./type_defs.md#requestimpactstatisticstypedef) 
+6. See [:material-code-braces: AnomalousServiceTypeDef](./type_defs.md#anomalousservicetypedef) 
 ## InsightsConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InsightsConfigurationTypeDef
+
+def get_value() -> InsightsConfigurationTypeDef:
+    return {
+        "InsightsEnabled": ...,
+    }
 ```
 
-Optional fields:
-
-- `InsightsEnabled`: `bool`
-- `NotificationsEnabled`: `bool`
-
-<a id="instanceiddetailtypedef"></a>
+```python title="Definition"
+class InsightsConfigurationTypeDef(TypedDict):
+    InsightsEnabled: NotRequired[bool],
+    NotificationsEnabled: NotRequired[bool],
+```
 
 ## InstanceIdDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import InstanceIdDetailTypeDef
+
+def get_value() -> InstanceIdDetailTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class InstanceIdDetailTypeDef(TypedDict):
+    Id: NotRequired[str],
+```
 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putencryptionconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutEncryptionConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PutEncryptionConfigRequestRequestTypeDef
+
+def get_value() -> PutEncryptionConfigRequestRequestTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEncryptionConfigRequestRequestTypeDef(TypedDict):
+    Type: EncryptionTypeType,  # (1)
+    KeyId: NotRequired[str],
+```
 
-- `Type`: [EncryptionTypeType](./literals.md#encryptiontypetype)
-
-Optional fields:
-
-- `KeyId`: `str`
-
-<a id="putencryptionconfigresulttypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## PutEncryptionConfigResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PutEncryptionConfigResultTypeDef
+
+def get_value() -> PutEncryptionConfigResultTypeDef:
+    return {
+        "EncryptionConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutEncryptionConfigResultTypeDef(TypedDict):
+    EncryptionConfig: EncryptionConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="puttelemetryrecordsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutTelemetryRecordsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PutTelemetryRecordsRequestRequestTypeDef
+
+def get_value() -> PutTelemetryRecordsRequestRequestTypeDef:
+    return {
+        "TelemetryRecords": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutTelemetryRecordsRequestRequestTypeDef(TypedDict):
+    TelemetryRecords: Sequence[TelemetryRecordTypeDef],  # (1)
+    EC2InstanceId: NotRequired[str],
+    Hostname: NotRequired[str],
+    ResourceARN: NotRequired[str],
+```
 
-- `TelemetryRecords`:
-  `Sequence`\[[TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef)\]
-
-Optional fields:
-
-- `EC2InstanceId`: `str`
-- `Hostname`: `str`
-- `ResourceARN`: `str`
-
-<a id="puttracesegmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TelemetryRecordTypeDef](./type_defs.md#telemetryrecordtypedef) 
 ## PutTraceSegmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PutTraceSegmentsRequestRequestTypeDef
+
+def get_value() -> PutTraceSegmentsRequestRequestTypeDef:
+    return {
+        "TraceSegmentDocuments": ...,
+    }
 ```
 
-Required fields:
-
-- `TraceSegmentDocuments`: `Sequence`\[`str`\]
-
-<a id="puttracesegmentsresulttypedef"></a>
+```python title="Definition"
+class PutTraceSegmentsRequestRequestTypeDef(TypedDict):
+    TraceSegmentDocuments: Sequence[str],
+```
 
 ## PutTraceSegmentsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import PutTraceSegmentsResultTypeDef
+
+def get_value() -> PutTraceSegmentsResultTypeDef:
+    return {
+        "UnprocessedTraceSegments": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutTraceSegmentsResultTypeDef(TypedDict):
+    UnprocessedTraceSegments: List[UnprocessedTraceSegmentTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UnprocessedTraceSegments`:
-  `List`\[[UnprocessedTraceSegmentTypeDef](./type_defs.md#unprocessedtracesegmenttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="requestimpactstatisticstypedef"></a>
-
+1. See [:material-code-braces: UnprocessedTraceSegmentTypeDef](./type_defs.md#unprocessedtracesegmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RequestImpactStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import RequestImpactStatisticsTypeDef
+
+def get_value() -> RequestImpactStatisticsTypeDef:
+    return {
+        "FaultCount": ...,
+    }
 ```
 
-Optional fields:
-
-- `FaultCount`: `int`
-- `OkCount`: `int`
-- `TotalCount`: `int`
-
-<a id="resourcearndetailtypedef"></a>
+```python title="Definition"
+class RequestImpactStatisticsTypeDef(TypedDict):
+    FaultCount: NotRequired[int],
+    OkCount: NotRequired[int],
+    TotalCount: NotRequired[int],
+```
 
 ## ResourceARNDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ResourceARNDetailTypeDef
+
+def get_value() -> ResourceARNDetailTypeDef:
+    return {
+        "ARN": ...,
+    }
 ```
 
-Optional fields:
-
-- `ARN`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class ResourceARNDetailTypeDef(TypedDict):
+    ARN: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="responsetimerootcauseentitytypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResponseTimeRootCauseEntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseEntityTypeDef
+
+def get_value() -> ResponseTimeRootCauseEntityTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Coverage`: `float`
-- `Remote`: `bool`
-
-<a id="responsetimerootcauseservicetypedef"></a>
+```python title="Definition"
+class ResponseTimeRootCauseEntityTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Coverage: NotRequired[float],
+    Remote: NotRequired[bool],
+```
 
 ## ResponseTimeRootCauseServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseServiceTypeDef
+
+def get_value() -> ResponseTimeRootCauseServiceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResponseTimeRootCauseServiceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    Type: NotRequired[str],
+    AccountId: NotRequired[str],
+    EntityPath: NotRequired[List[ResponseTimeRootCauseEntityTypeDef]],  # (1)
+    Inferred: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `Type`: `str`
-- `AccountId`: `str`
-- `EntityPath`:
-  `List`\[[ResponseTimeRootCauseEntityTypeDef](./type_defs.md#responsetimerootcauseentitytypedef)\]
-- `Inferred`: `bool`
-
-<a id="responsetimerootcausetypedef"></a>
-
+1. See [:material-code-braces: ResponseTimeRootCauseEntityTypeDef](./type_defs.md#responsetimerootcauseentitytypedef) 
 ## ResponseTimeRootCauseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ResponseTimeRootCauseTypeDef
+
+def get_value() -> ResponseTimeRootCauseTypeDef:
+    return {
+        "Services": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResponseTimeRootCauseTypeDef(TypedDict):
+    Services: NotRequired[List[ResponseTimeRootCauseServiceTypeDef]],  # (1)
+    ClientImpacting: NotRequired[bool],
+```
 
-- `Services`:
-  `List`\[[ResponseTimeRootCauseServiceTypeDef](./type_defs.md#responsetimerootcauseservicetypedef)\]
-- `ClientImpacting`: `bool`
-
-<a id="rootcauseexceptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseTimeRootCauseServiceTypeDef](./type_defs.md#responsetimerootcauseservicetypedef) 
 ## RootCauseExceptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import RootCauseExceptionTypeDef
+
+def get_value() -> RootCauseExceptionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Message`: `str`
-
-<a id="samplingrulerecordtypedef"></a>
+```python title="Definition"
+class RootCauseExceptionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## SamplingRuleRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingRuleRecordTypeDef
+
+def get_value() -> SamplingRuleRecordTypeDef:
+    return {
+        "SamplingRule": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SamplingRuleRecordTypeDef(TypedDict):
+    SamplingRule: NotRequired[SamplingRuleTypeDef],  # (1)
+    CreatedAt: NotRequired[datetime],
+    ModifiedAt: NotRequired[datetime],
+```
 
-- `SamplingRule`: [SamplingRuleTypeDef](./type_defs.md#samplingruletypedef)
-- `CreatedAt`: `datetime`
-- `ModifiedAt`: `datetime`
-
-<a id="samplingruletypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleTypeDef](./type_defs.md#samplingruletypedef) 
 ## SamplingRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingRuleTypeDef
+
+def get_value() -> SamplingRuleTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Priority": ...,
+        "FixedRate": ...,
+        "ReservoirSize": ...,
+        "ServiceName": ...,
+        "ServiceType": ...,
+        "Host": ...,
+        "HTTPMethod": ...,
+        "URLPath": ...,
+        "Version": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `Priority`: `int`
-- `FixedRate`: `float`
-- `ReservoirSize`: `int`
-- `ServiceName`: `str`
-- `ServiceType`: `str`
-- `Host`: `str`
-- `HTTPMethod`: `str`
-- `URLPath`: `str`
-- `Version`: `int`
-
-Optional fields:
-
-- `RuleName`: `str`
-- `RuleARN`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="samplingruleupdatetypedef"></a>
+```python title="Definition"
+class SamplingRuleTypeDef(TypedDict):
+    ResourceARN: str,
+    Priority: int,
+    FixedRate: float,
+    ReservoirSize: int,
+    ServiceName: str,
+    ServiceType: str,
+    Host: str,
+    HTTPMethod: str,
+    URLPath: str,
+    Version: int,
+    RuleName: NotRequired[str],
+    RuleARN: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
 ## SamplingRuleUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingRuleUpdateTypeDef
+
+def get_value() -> SamplingRuleUpdateTypeDef:
+    return {
+        "RuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleName`: `str`
-- `RuleARN`: `str`
-- `ResourceARN`: `str`
-- `Priority`: `int`
-- `FixedRate`: `float`
-- `ReservoirSize`: `int`
-- `Host`: `str`
-- `ServiceName`: `str`
-- `ServiceType`: `str`
-- `HTTPMethod`: `str`
-- `URLPath`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="samplingstatisticsummarytypedef"></a>
+```python title="Definition"
+class SamplingRuleUpdateTypeDef(TypedDict):
+    RuleName: NotRequired[str],
+    RuleARN: NotRequired[str],
+    ResourceARN: NotRequired[str],
+    Priority: NotRequired[int],
+    FixedRate: NotRequired[float],
+    ReservoirSize: NotRequired[int],
+    Host: NotRequired[str],
+    ServiceName: NotRequired[str],
+    ServiceType: NotRequired[str],
+    HTTPMethod: NotRequired[str],
+    URLPath: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+```
 
 ## SamplingStatisticSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingStatisticSummaryTypeDef
+
+def get_value() -> SamplingStatisticSummaryTypeDef:
+    return {
+        "RuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleName`: `str`
-- `Timestamp`: `datetime`
-- `RequestCount`: `int`
-- `BorrowCount`: `int`
-- `SampledCount`: `int`
-
-<a id="samplingstatisticsdocumenttypedef"></a>
+```python title="Definition"
+class SamplingStatisticSummaryTypeDef(TypedDict):
+    RuleName: NotRequired[str],
+    Timestamp: NotRequired[datetime],
+    RequestCount: NotRequired[int],
+    BorrowCount: NotRequired[int],
+    SampledCount: NotRequired[int],
+```
 
 ## SamplingStatisticsDocumentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingStatisticsDocumentTypeDef
+
+def get_value() -> SamplingStatisticsDocumentTypeDef:
+    return {
+        "RuleName": ...,
+        "ClientID": ...,
+        "Timestamp": ...,
+        "RequestCount": ...,
+        "SampledCount": ...,
+    }
 ```
 
-Required fields:
-
-- `RuleName`: `str`
-- `ClientID`: `str`
-- `Timestamp`: `Union`\[`datetime`, `str`\]
-- `RequestCount`: `int`
-- `SampledCount`: `int`
-
-Optional fields:
-
-- `BorrowCount`: `int`
-
-<a id="samplingstrategytypedef"></a>
+```python title="Definition"
+class SamplingStatisticsDocumentTypeDef(TypedDict):
+    RuleName: str,
+    ClientID: str,
+    Timestamp: Union[datetime, str],
+    RequestCount: int,
+    SampledCount: int,
+    BorrowCount: NotRequired[int],
+```
 
 ## SamplingStrategyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingStrategyTypeDef
+
+def get_value() -> SamplingStrategyTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SamplingStrategyTypeDef(TypedDict):
+    Name: NotRequired[SamplingStrategyNameType],  # (1)
+    Value: NotRequired[float],
+```
 
-- `Name`: [SamplingStrategyNameType](./literals.md#samplingstrategynametype)
-- `Value`: `float`
-
-<a id="samplingtargetdocumenttypedef"></a>
-
+1. See [:material-code-brackets: SamplingStrategyNameType](./literals.md#samplingstrategynametype) 
 ## SamplingTargetDocumentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SamplingTargetDocumentTypeDef
+
+def get_value() -> SamplingTargetDocumentTypeDef:
+    return {
+        "RuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleName`: `str`
-- `FixedRate`: `float`
-- `ReservoirQuota`: `int`
-- `ReservoirQuotaTTL`: `datetime`
-- `Interval`: `int`
-
-<a id="segmenttypedef"></a>
+```python title="Definition"
+class SamplingTargetDocumentTypeDef(TypedDict):
+    RuleName: NotRequired[str],
+    FixedRate: NotRequired[float],
+    ReservoirQuota: NotRequired[int],
+    ReservoirQuotaTTL: NotRequired[datetime],
+    Interval: NotRequired[int],
+```
 
 ## SegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import SegmentTypeDef
+
+def get_value() -> SegmentTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Document`: `str`
-
-<a id="serviceidtypedef"></a>
+```python title="Definition"
+class SegmentTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Document: NotRequired[str],
+```
 
 ## ServiceIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ServiceIdTypeDef
+
+def get_value() -> ServiceIdTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `AccountId`: `str`
-- `Type`: `str`
-
-<a id="servicestatisticstypedef"></a>
+```python title="Definition"
+class ServiceIdTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    AccountId: NotRequired[str],
+    Type: NotRequired[str],
+```
 
 ## ServiceStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ServiceStatisticsTypeDef
+
+def get_value() -> ServiceStatisticsTypeDef:
+    return {
+        "OkCount": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceStatisticsTypeDef(TypedDict):
+    OkCount: NotRequired[int],
+    ErrorStatistics: NotRequired[ErrorStatisticsTypeDef],  # (1)
+    FaultStatistics: NotRequired[FaultStatisticsTypeDef],  # (2)
+    TotalCount: NotRequired[int],
+    TotalResponseTime: NotRequired[float],
+```
 
-- `OkCount`: `int`
-- `ErrorStatistics`:
-  [ErrorStatisticsTypeDef](./type_defs.md#errorstatisticstypedef)
-- `FaultStatistics`:
-  [FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef)
-- `TotalCount`: `int`
-- `TotalResponseTime`: `float`
-
-<a id="servicetypedef"></a>
-
+1. See [:material-code-braces: ErrorStatisticsTypeDef](./type_defs.md#errorstatisticstypedef) 
+2. See [:material-code-braces: FaultStatisticsTypeDef](./type_defs.md#faultstatisticstypedef) 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "ReferenceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    ReferenceId: NotRequired[int],
+    Name: NotRequired[str],
+    Names: NotRequired[List[str]],
+    Root: NotRequired[bool],
+    AccountId: NotRequired[str],
+    Type: NotRequired[str],
+    State: NotRequired[str],
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    Edges: NotRequired[List[EdgeTypeDef]],  # (1)
+    SummaryStatistics: NotRequired[ServiceStatisticsTypeDef],  # (2)
+    DurationHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (3)
+    ResponseTimeHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (3)
+```
 
-- `ReferenceId`: `int`
-- `Name`: `str`
-- `Names`: `List`\[`str`\]
-- `Root`: `bool`
-- `AccountId`: `str`
-- `Type`: `str`
-- `State`: `str`
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `Edges`: `List`\[[EdgeTypeDef](./type_defs.md#edgetypedef)\]
-- `SummaryStatistics`:
-  [ServiceStatisticsTypeDef](./type_defs.md#servicestatisticstypedef)
-- `DurationHistogram`:
-  `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
-- `ResponseTimeHistogram`:
-  `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EdgeTypeDef](./type_defs.md#edgetypedef) 
+2. See [:material-code-braces: ServiceStatisticsTypeDef](./type_defs.md#servicestatisticstypedef) 
+3. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
+4. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="telemetryrecordtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TelemetryRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TelemetryRecordTypeDef
+
+def get_value() -> TelemetryRecordTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TelemetryRecordTypeDef(TypedDict):
+    Timestamp: Union[datetime, str],
+    SegmentsReceivedCount: NotRequired[int],
+    SegmentsSentCount: NotRequired[int],
+    SegmentsSpilloverCount: NotRequired[int],
+    SegmentsRejectedCount: NotRequired[int],
+    BackendConnectionErrors: NotRequired[BackendConnectionErrorsTypeDef],  # (1)
+```
 
-- `Timestamp`: `Union`\[`datetime`, `str`\]
-
-Optional fields:
-
-- `SegmentsReceivedCount`: `int`
-- `SegmentsSentCount`: `int`
-- `SegmentsSpilloverCount`: `int`
-- `SegmentsRejectedCount`: `int`
-- `BackendConnectionErrors`:
-  [BackendConnectionErrorsTypeDef](./type_defs.md#backendconnectionerrorstypedef)
-
-<a id="timeseriesservicestatisticstypedef"></a>
-
+1. See [:material-code-braces: BackendConnectionErrorsTypeDef](./type_defs.md#backendconnectionerrorstypedef) 
 ## TimeSeriesServiceStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TimeSeriesServiceStatisticsTypeDef
+
+def get_value() -> TimeSeriesServiceStatisticsTypeDef:
+    return {
+        "Timestamp": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimeSeriesServiceStatisticsTypeDef(TypedDict):
+    Timestamp: NotRequired[datetime],
+    EdgeSummaryStatistics: NotRequired[EdgeStatisticsTypeDef],  # (1)
+    ServiceSummaryStatistics: NotRequired[ServiceStatisticsTypeDef],  # (2)
+    ServiceForecastStatistics: NotRequired[ForecastStatisticsTypeDef],  # (3)
+    ResponseTimeHistogram: NotRequired[List[HistogramEntryTypeDef]],  # (4)
+```
 
-- `Timestamp`: `datetime`
-- `EdgeSummaryStatistics`:
-  [EdgeStatisticsTypeDef](./type_defs.md#edgestatisticstypedef)
-- `ServiceSummaryStatistics`:
-  [ServiceStatisticsTypeDef](./type_defs.md#servicestatisticstypedef)
-- `ServiceForecastStatistics`:
-  [ForecastStatisticsTypeDef](./type_defs.md#forecaststatisticstypedef)
-- `ResponseTimeHistogram`:
-  `List`\[[HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef)\]
-
-<a id="tracesummarytypedef"></a>
-
+1. See [:material-code-braces: EdgeStatisticsTypeDef](./type_defs.md#edgestatisticstypedef) 
+2. See [:material-code-braces: ServiceStatisticsTypeDef](./type_defs.md#servicestatisticstypedef) 
+3. See [:material-code-braces: ForecastStatisticsTypeDef](./type_defs.md#forecaststatisticstypedef) 
+4. See [:material-code-braces: HistogramEntryTypeDef](./type_defs.md#histogramentrytypedef) 
 ## TraceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TraceSummaryTypeDef
+
+def get_value() -> TraceSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TraceSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Duration: NotRequired[float],
+    ResponseTime: NotRequired[float],
+    HasFault: NotRequired[bool],
+    HasError: NotRequired[bool],
+    HasThrottle: NotRequired[bool],
+    IsPartial: NotRequired[bool],
+    Http: NotRequired[HttpTypeDef],  # (1)
+    Annotations: NotRequired[Dict[str, List[ValueWithServiceIdsTypeDef]]],  # (2)
+    Users: NotRequired[List[TraceUserTypeDef]],  # (3)
+    ServiceIds: NotRequired[List[ServiceIdTypeDef]],  # (4)
+    ResourceARNs: NotRequired[List[ResourceARNDetailTypeDef]],  # (5)
+    InstanceIds: NotRequired[List[InstanceIdDetailTypeDef]],  # (6)
+    AvailabilityZones: NotRequired[List[AvailabilityZoneDetailTypeDef]],  # (7)
+    EntryPoint: NotRequired[ServiceIdTypeDef],  # (8)
+    FaultRootCauses: NotRequired[List[FaultRootCauseTypeDef]],  # (9)
+    ErrorRootCauses: NotRequired[List[ErrorRootCauseTypeDef]],  # (10)
+    ResponseTimeRootCauses: NotRequired[List[ResponseTimeRootCauseTypeDef]],  # (11)
+    Revision: NotRequired[int],
+    MatchedEventTime: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `Duration`: `float`
-- `ResponseTime`: `float`
-- `HasFault`: `bool`
-- `HasError`: `bool`
-- `HasThrottle`: `bool`
-- `IsPartial`: `bool`
-- `Http`: [HttpTypeDef](./type_defs.md#httptypedef)
-- `Annotations`: `Dict`\[`str`,
-  `List`\[[ValueWithServiceIdsTypeDef](./type_defs.md#valuewithserviceidstypedef)\]\]
-- `Users`: `List`\[[TraceUserTypeDef](./type_defs.md#traceusertypedef)\]
-- `ServiceIds`: `List`\[[ServiceIdTypeDef](./type_defs.md#serviceidtypedef)\]
-- `ResourceARNs`:
-  `List`\[[ResourceARNDetailTypeDef](./type_defs.md#resourcearndetailtypedef)\]
-- `InstanceIds`:
-  `List`\[[InstanceIdDetailTypeDef](./type_defs.md#instanceiddetailtypedef)\]
-- `AvailabilityZones`:
-  `List`\[[AvailabilityZoneDetailTypeDef](./type_defs.md#availabilityzonedetailtypedef)\]
-- `EntryPoint`: [ServiceIdTypeDef](./type_defs.md#serviceidtypedef)
-- `FaultRootCauses`:
-  `List`\[[FaultRootCauseTypeDef](./type_defs.md#faultrootcausetypedef)\]
-- `ErrorRootCauses`:
-  `List`\[[ErrorRootCauseTypeDef](./type_defs.md#errorrootcausetypedef)\]
-- `ResponseTimeRootCauses`:
-  `List`\[[ResponseTimeRootCauseTypeDef](./type_defs.md#responsetimerootcausetypedef)\]
-- `Revision`: `int`
-- `MatchedEventTime`: `datetime`
-
-<a id="tracetypedef"></a>
-
+1. See [:material-code-braces: HttpTypeDef](./type_defs.md#httptypedef) 
+2. See [:material-code-braces: ValueWithServiceIdsTypeDef](./type_defs.md#valuewithserviceidstypedef) 
+3. See [:material-code-braces: TraceUserTypeDef](./type_defs.md#traceusertypedef) 
+4. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
+5. See [:material-code-braces: ResourceARNDetailTypeDef](./type_defs.md#resourcearndetailtypedef) 
+6. See [:material-code-braces: InstanceIdDetailTypeDef](./type_defs.md#instanceiddetailtypedef) 
+7. See [:material-code-braces: AvailabilityZoneDetailTypeDef](./type_defs.md#availabilityzonedetailtypedef) 
+8. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
+9. See [:material-code-braces: FaultRootCauseTypeDef](./type_defs.md#faultrootcausetypedef) 
+10. See [:material-code-braces: ErrorRootCauseTypeDef](./type_defs.md#errorrootcausetypedef) 
+11. See [:material-code-braces: ResponseTimeRootCauseTypeDef](./type_defs.md#responsetimerootcausetypedef) 
 ## TraceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TraceTypeDef
+
+def get_value() -> TraceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TraceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Duration: NotRequired[float],
+    LimitExceeded: NotRequired[bool],
+    Segments: NotRequired[List[SegmentTypeDef]],  # (1)
+```
 
-- `Id`: `str`
-- `Duration`: `float`
-- `LimitExceeded`: `bool`
-- `Segments`: `List`\[[SegmentTypeDef](./type_defs.md#segmenttypedef)\]
-
-<a id="traceusertypedef"></a>
-
+1. See [:material-code-braces: SegmentTypeDef](./type_defs.md#segmenttypedef) 
 ## TraceUserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import TraceUserTypeDef
+
+def get_value() -> TraceUserTypeDef:
+    return {
+        "UserName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TraceUserTypeDef(TypedDict):
+    UserName: NotRequired[str],
+    ServiceIds: NotRequired[List[ServiceIdTypeDef]],  # (1)
+```
 
-- `UserName`: `str`
-- `ServiceIds`: `List`\[[ServiceIdTypeDef](./type_defs.md#serviceidtypedef)\]
-
-<a id="unprocessedstatisticstypedef"></a>
-
+1. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 
 ## UnprocessedStatisticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UnprocessedStatisticsTypeDef
+
+def get_value() -> UnprocessedStatisticsTypeDef:
+    return {
+        "RuleName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuleName`: `str`
-- `ErrorCode`: `str`
-- `Message`: `str`
-
-<a id="unprocessedtracesegmenttypedef"></a>
+```python title="Definition"
+class UnprocessedStatisticsTypeDef(TypedDict):
+    RuleName: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## UnprocessedTraceSegmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UnprocessedTraceSegmentTypeDef
+
+def get_value() -> UnprocessedTraceSegmentTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `ErrorCode`: `str`
-- `Message`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class UnprocessedTraceSegmentTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ErrorCode: NotRequired[str],
+    Message: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updategrouprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UpdateGroupRequestRequestTypeDef
+
+def get_value() -> UpdateGroupRequestRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateGroupRequestRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupARN: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    InsightsConfiguration: NotRequired[InsightsConfigurationTypeDef],  # (1)
+```
 
-- `GroupName`: `str`
-- `GroupARN`: `str`
-- `FilterExpression`: `str`
-- `InsightsConfiguration`:
-  [InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef)
-
-<a id="updategroupresulttypedef"></a>
-
+1. See [:material-code-braces: InsightsConfigurationTypeDef](./type_defs.md#insightsconfigurationtypedef) 
 ## UpdateGroupResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UpdateGroupResultTypeDef
+
+def get_value() -> UpdateGroupResultTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGroupResultTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatesamplingrulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateSamplingRuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UpdateSamplingRuleRequestRequestTypeDef
+
+def get_value() -> UpdateSamplingRuleRequestRequestTypeDef:
+    return {
+        "SamplingRuleUpdate": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSamplingRuleRequestRequestTypeDef(TypedDict):
+    SamplingRuleUpdate: SamplingRuleUpdateTypeDef,  # (1)
+```
 
-- `SamplingRuleUpdate`:
-  [SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef)
-
-<a id="updatesamplingruleresulttypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleUpdateTypeDef](./type_defs.md#samplingruleupdatetypedef) 
 ## UpdateSamplingRuleResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import UpdateSamplingRuleResultTypeDef
+
+def get_value() -> UpdateSamplingRuleResultTypeDef:
+    return {
+        "SamplingRuleRecord": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateSamplingRuleResultTypeDef(TypedDict):
+    SamplingRuleRecord: SamplingRuleRecordTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SamplingRuleRecord`:
-  [SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="valuewithserviceidstypedef"></a>
-
+1. See [:material-code-braces: SamplingRuleRecordTypeDef](./type_defs.md#samplingrulerecordtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ValueWithServiceIdsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_xray.type_defs import ValueWithServiceIdsTypeDef
+
+def get_value() -> ValueWithServiceIdsTypeDef:
+    return {
+        "AnnotationValue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ValueWithServiceIdsTypeDef(TypedDict):
+    AnnotationValue: NotRequired[AnnotationValueTypeDef],  # (1)
+    ServiceIds: NotRequired[List[ServiceIdTypeDef]],  # (2)
+```
 
-- `AnnotationValue`:
-  [AnnotationValueTypeDef](./type_defs.md#annotationvaluetypedef)
-- `ServiceIds`: `List`\[[ServiceIdTypeDef](./type_defs.md#serviceidtypedef)\]
+1. See [:material-code-braces: AnnotationValueTypeDef](./type_defs.md#annotationvaluetypedef) 
+2. See [:material-code-braces: ServiceIdTypeDef](./type_defs.md#serviceidtypedef) 

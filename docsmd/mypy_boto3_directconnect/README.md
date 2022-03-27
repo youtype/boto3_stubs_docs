@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-directconnect-module"></a>
-
-# Type annotations for boto3 DirectConnect module
+#  DirectConnect module
 
 > [Index](../README.md) > DirectConnect
 
-Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
-type annotations stubs module
-[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+!!! note ""
 
-- [Type annotations for boto3 DirectConnect module](#type-annotations-for-boto3-directconnect-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DirectConnectClient](#directconnectclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+    type annotations stubs module [mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DirectConnect`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[directconnect]'
 python -m pip install mypy-boto3-directconnect
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,136 +42,60 @@ python -m pip install mypy-boto3-directconnect
 python -m pip uninstall -y mypy-boto3-directconnect
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="directconnectclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DirectConnectClient
 
-Type annotations for `boto3.client("directconnect")` as
-[DirectConnectClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("directconnect")` as [DirectConnectClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_directconnect.client import DirectConnectClient
+
+def get_client() -> DirectConnectClient:
+    return Session().cleint("directconnect")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_direct_connect_gateway_association_proposal](./client.md#accept_direct_connect_gateway_association_proposal)
-- [allocate_connection_on_interconnect](./client.md#allocate_connection_on_interconnect)
-- [allocate_hosted_connection](./client.md#allocate_hosted_connection)
-- [allocate_private_virtual_interface](./client.md#allocate_private_virtual_interface)
-- [allocate_public_virtual_interface](./client.md#allocate_public_virtual_interface)
-- [allocate_transit_virtual_interface](./client.md#allocate_transit_virtual_interface)
-- [associate_connection_with_lag](./client.md#associate_connection_with_lag)
-- [associate_hosted_connection](./client.md#associate_hosted_connection)
-- [associate_mac_sec_key](./client.md#associate_mac_sec_key)
-- [associate_virtual_interface](./client.md#associate_virtual_interface)
-- [can_paginate](./client.md#can_paginate)
-- [confirm_connection](./client.md#confirm_connection)
-- [confirm_customer_agreement](./client.md#confirm_customer_agreement)
-- [confirm_private_virtual_interface](./client.md#confirm_private_virtual_interface)
-- [confirm_public_virtual_interface](./client.md#confirm_public_virtual_interface)
-- [confirm_transit_virtual_interface](./client.md#confirm_transit_virtual_interface)
-- [create_bgp_peer](./client.md#create_bgp_peer)
-- [create_connection](./client.md#create_connection)
-- [create_direct_connect_gateway](./client.md#create_direct_connect_gateway)
-- [create_direct_connect_gateway_association](./client.md#create_direct_connect_gateway_association)
-- [create_direct_connect_gateway_association_proposal](./client.md#create_direct_connect_gateway_association_proposal)
-- [create_interconnect](./client.md#create_interconnect)
-- [create_lag](./client.md#create_lag)
-- [create_private_virtual_interface](./client.md#create_private_virtual_interface)
-- [create_public_virtual_interface](./client.md#create_public_virtual_interface)
-- [create_transit_virtual_interface](./client.md#create_transit_virtual_interface)
-- [delete_bgp_peer](./client.md#delete_bgp_peer)
-- [delete_connection](./client.md#delete_connection)
-- [delete_direct_connect_gateway](./client.md#delete_direct_connect_gateway)
-- [delete_direct_connect_gateway_association](./client.md#delete_direct_connect_gateway_association)
-- [delete_direct_connect_gateway_association_proposal](./client.md#delete_direct_connect_gateway_association_proposal)
-- [delete_interconnect](./client.md#delete_interconnect)
-- [delete_lag](./client.md#delete_lag)
-- [delete_virtual_interface](./client.md#delete_virtual_interface)
-- [describe_connection_loa](./client.md#describe_connection_loa)
-- [describe_connections](./client.md#describe_connections)
-- [describe_connections_on_interconnect](./client.md#describe_connections_on_interconnect)
-- [describe_customer_metadata](./client.md#describe_customer_metadata)
-- [describe_direct_connect_gateway_association_proposals](./client.md#describe_direct_connect_gateway_association_proposals)
-- [describe_direct_connect_gateway_associations](./client.md#describe_direct_connect_gateway_associations)
-- [describe_direct_connect_gateway_attachments](./client.md#describe_direct_connect_gateway_attachments)
-- [describe_direct_connect_gateways](./client.md#describe_direct_connect_gateways)
-- [describe_hosted_connections](./client.md#describe_hosted_connections)
-- [describe_interconnect_loa](./client.md#describe_interconnect_loa)
-- [describe_interconnects](./client.md#describe_interconnects)
-- [describe_lags](./client.md#describe_lags)
-- [describe_loa](./client.md#describe_loa)
-- [describe_locations](./client.md#describe_locations)
-- [describe_router_configuration](./client.md#describe_router_configuration)
-- [describe_tags](./client.md#describe_tags)
-- [describe_virtual_gateways](./client.md#describe_virtual_gateways)
-- [describe_virtual_interfaces](./client.md#describe_virtual_interfaces)
-- [disassociate_connection_from_lag](./client.md#disassociate_connection_from_lag)
-- [disassociate_mac_sec_key](./client.md#disassociate_mac_sec_key)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_virtual_interface_test_history](./client.md#list_virtual_interface_test_history)
-- [start_bgp_failover_test](./client.md#start_bgp_failover_test)
-- [stop_bgp_failover_test](./client.md#stop_bgp_failover_test)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_connection](./client.md#update_connection)
-- [update_direct_connect_gateway](./client.md#update_direct_connect_gateway)
-- [update_direct_connect_gateway_association](./client.md#update_direct_connect_gateway_association)
-- [update_lag](./client.md#update_lag)
-- [update_virtual_interface_attributes](./client.md#update_virtual_interface_attributes)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DirectConnectClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- DirectConnectClientException
-- DirectConnectServerException
-- DuplicateTagKeysException
-- TooManyTagsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("directconnect").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("directconnect").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator, ...
+from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator
+
+def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDirectConnectGatewayAssociationsPaginator:
+    return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_associations"))
 ```
 
 - [DescribeDirectConnectGatewayAssociationsPaginator](./paginators.md#describedirectconnectgatewayassociationspaginator)
 - [DescribeDirectConnectGatewayAttachmentsPaginator](./paginators.md#describedirectconnectgatewayattachmentspaginator)
 - [DescribeDirectConnectGatewaysPaginator](./paginators.md#describedirectconnectgatewayspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_directconnect.literals import AddressFamilyType
 
-```python
-from mypy_boto3_directconnect.literals import AddressFamilyType, ...
+def get_value() -> AddressFamilyType:
+    return "ipv4"
 ```
 
 - [AddressFamilyType](./literals.md#addressfamilytype)
@@ -219,18 +121,24 @@ from mypy_boto3_directconnect.literals import AddressFamilyType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef
 
-```python
-from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef, ...
+def get_value() -> AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef:
+    return {
+        "directConnectGatewayId": ...,
+        "proposalId": ...,
+        "associatedGatewayOwnerAccount": ...,
+    }
 ```
 
 - [AcceptDirectConnectGatewayAssociationProposalRequestRequestTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalrequestrequesttypedef)
@@ -298,10 +206,13 @@ from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssocia
 - [DescribeCustomerMetadataResponseTypeDef](./type_defs.md#describecustomermetadataresponsetypedef)
 - [DescribeDirectConnectGatewayAssociationProposalsRequestRequestTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsrequestrequesttypedef)
 - [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresulttypedef)
+- [DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef](./type_defs.md#describedirectconnectgatewayassociationsrequestdescribedirectconnectgatewayassociationspaginatetypedef)
 - [DescribeDirectConnectGatewayAssociationsRequestRequestTypeDef](./type_defs.md#describedirectconnectgatewayassociationsrequestrequesttypedef)
 - [DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef)
+- [DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsrequestdescribedirectconnectgatewayattachmentspaginatetypedef)
 - [DescribeDirectConnectGatewayAttachmentsRequestRequestTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsrequestrequesttypedef)
 - [DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef)
+- [DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef](./type_defs.md#describedirectconnectgatewaysrequestdescribedirectconnectgatewayspaginatetypedef)
 - [DescribeDirectConnectGatewaysRequestRequestTypeDef](./type_defs.md#describedirectconnectgatewaysrequestrequesttypedef)
 - [DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef)
 - [DescribeHostedConnectionsRequestRequestTypeDef](./type_defs.md#describehostedconnectionsrequestrequesttypedef)
@@ -367,3 +278,4 @@ from mypy_boto3_directconnect.type_defs import AcceptDirectConnectGatewayAssocia
 - [VirtualInterfaceTestHistoryTypeDef](./type_defs.md#virtualinterfacetesthistorytypedef)
 - [VirtualInterfaceTypeDef](./type_defs.md#virtualinterfacetypedef)
 - [VirtualInterfacesTypeDef](./type_defs.md#virtualinterfacestypedef)
+

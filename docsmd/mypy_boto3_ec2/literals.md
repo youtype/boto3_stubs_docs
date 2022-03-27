@@ -1,7241 +1,7701 @@
-<a id="literals-for-boto3-ec2-module"></a>
-
-# Literals for boto3 EC2 module
+# Literals
 
 > [Index](../README.md) > [EC2](./README.md) > Literals
 
-Auto-generated documentation for
-[EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
-type annotations stubs module
-[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
+!!! note ""
 
-- [Literals for boto3 EC2 module](#literals-for-boto3-ec2-module)
-  - [AcceleratorManufacturerType](#acceleratormanufacturertype)
-  - [AcceleratorNameType](#acceleratornametype)
-  - [AcceleratorTypeType](#acceleratortypetype)
-  - [AccountAttributeNameType](#accountattributenametype)
-  - [ActivityStatusType](#activitystatustype)
-  - [AddressAttributeNameType](#addressattributenametype)
-  - [AddressFamilyType](#addressfamilytype)
-  - [AffinityType](#affinitytype)
-  - [AllocationStateType](#allocationstatetype)
-  - [AllocationStrategyType](#allocationstrategytype)
-  - [AllowsMultipleInstanceTypesType](#allowsmultipleinstancetypestype)
-  - [AnalysisStatusType](#analysisstatustype)
-  - [ApplianceModeSupportValueType](#appliancemodesupportvaluetype)
-  - [ArchitectureTypeType](#architecturetypetype)
-  - [ArchitectureValuesType](#architecturevaluestype)
-  - [AssociatedNetworkTypeType](#associatednetworktypetype)
-  - [AssociationStatusCodeType](#associationstatuscodetype)
-  - [AttachmentStatusType](#attachmentstatustype)
-  - [AutoAcceptSharedAssociationsValueType](#autoacceptsharedassociationsvaluetype)
-  - [AutoAcceptSharedAttachmentsValueType](#autoacceptsharedattachmentsvaluetype)
-  - [AutoPlacementType](#autoplacementtype)
-  - [AvailabilityZoneOptInStatusType](#availabilityzoneoptinstatustype)
-  - [AvailabilityZoneStateType](#availabilityzonestatetype)
-  - [BareMetalType](#baremetaltype)
-  - [BatchStateType](#batchstatetype)
-  - [BgpStatusType](#bgpstatustype)
-  - [BootModeTypeType](#bootmodetypetype)
-  - [BootModeValuesType](#bootmodevaluestype)
-  - [BundleTaskCompleteWaiterName](#bundletaskcompletewaitername)
-  - [BundleTaskStateType](#bundletaskstatetype)
-  - [BurstablePerformanceType](#burstableperformancetype)
-  - [ByoipCidrStateType](#byoipcidrstatetype)
-  - [CancelBatchErrorCodeType](#cancelbatcherrorcodetype)
-  - [CancelSpotInstanceRequestStateType](#cancelspotinstancerequeststatetype)
-  - [CapacityReservationFleetStateType](#capacityreservationfleetstatetype)
-  - [CapacityReservationInstancePlatformType](#capacityreservationinstanceplatformtype)
-  - [CapacityReservationPreferenceType](#capacityreservationpreferencetype)
-  - [CapacityReservationStateType](#capacityreservationstatetype)
-  - [CapacityReservationTenancyType](#capacityreservationtenancytype)
-  - [CarrierGatewayStateType](#carriergatewaystatetype)
-  - [ClientCertificateRevocationListStatusCodeType](#clientcertificaterevocationliststatuscodetype)
-  - [ClientVpnAuthenticationTypeType](#clientvpnauthenticationtypetype)
-  - [ClientVpnAuthorizationRuleStatusCodeType](#clientvpnauthorizationrulestatuscodetype)
-  - [ClientVpnConnectionStatusCodeType](#clientvpnconnectionstatuscodetype)
-  - [ClientVpnEndpointAttributeStatusCodeType](#clientvpnendpointattributestatuscodetype)
-  - [ClientVpnEndpointStatusCodeType](#clientvpnendpointstatuscodetype)
-  - [ClientVpnRouteStatusCodeType](#clientvpnroutestatuscodetype)
-  - [ConnectionNotificationStateType](#connectionnotificationstatetype)
-  - [ConnectionNotificationTypeType](#connectionnotificationtypetype)
-  - [ConnectivityTypeType](#connectivitytypetype)
-  - [ContainerFormatType](#containerformattype)
-  - [ConversionTaskCancelledWaiterName](#conversiontaskcancelledwaitername)
-  - [ConversionTaskCompletedWaiterName](#conversiontaskcompletedwaitername)
-  - [ConversionTaskDeletedWaiterName](#conversiontaskdeletedwaitername)
-  - [ConversionTaskStateType](#conversiontaskstatetype)
-  - [CopyTagsFromSourceType](#copytagsfromsourcetype)
-  - [CpuManufacturerType](#cpumanufacturertype)
-  - [CurrencyCodeValuesType](#currencycodevaluestype)
-  - [CustomerGatewayAvailableWaiterName](#customergatewayavailablewaitername)
-  - [DatafeedSubscriptionStateType](#datafeedsubscriptionstatetype)
-  - [DefaultRouteTableAssociationValueType](#defaultroutetableassociationvaluetype)
-  - [DefaultRouteTablePropagationValueType](#defaultroutetablepropagationvaluetype)
-  - [DefaultTargetCapacityTypeType](#defaulttargetcapacitytypetype)
-  - [DeleteFleetErrorCodeType](#deletefleeterrorcodetype)
-  - [DeleteQueuedReservedInstancesErrorCodeType](#deletequeuedreservedinstanceserrorcodetype)
-  - [DescribeAddressesAttributePaginatorName](#describeaddressesattributepaginatorname)
-  - [DescribeByoipCidrsPaginatorName](#describebyoipcidrspaginatorname)
-  - [DescribeCapacityReservationFleetsPaginatorName](#describecapacityreservationfleetspaginatorname)
-  - [DescribeCapacityReservationsPaginatorName](#describecapacityreservationspaginatorname)
-  - [DescribeCarrierGatewaysPaginatorName](#describecarriergatewayspaginatorname)
-  - [DescribeClassicLinkInstancesPaginatorName](#describeclassiclinkinstancespaginatorname)
-  - [DescribeClientVpnAuthorizationRulesPaginatorName](#describeclientvpnauthorizationrulespaginatorname)
-  - [DescribeClientVpnConnectionsPaginatorName](#describeclientvpnconnectionspaginatorname)
-  - [DescribeClientVpnEndpointsPaginatorName](#describeclientvpnendpointspaginatorname)
-  - [DescribeClientVpnRoutesPaginatorName](#describeclientvpnroutespaginatorname)
-  - [DescribeClientVpnTargetNetworksPaginatorName](#describeclientvpntargetnetworkspaginatorname)
-  - [DescribeCoipPoolsPaginatorName](#describecoippoolspaginatorname)
-  - [DescribeDhcpOptionsPaginatorName](#describedhcpoptionspaginatorname)
-  - [DescribeEgressOnlyInternetGatewaysPaginatorName](#describeegressonlyinternetgatewayspaginatorname)
-  - [DescribeExportImageTasksPaginatorName](#describeexportimagetaskspaginatorname)
-  - [DescribeFastLaunchImagesPaginatorName](#describefastlaunchimagespaginatorname)
-  - [DescribeFastSnapshotRestoresPaginatorName](#describefastsnapshotrestorespaginatorname)
-  - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
-  - [DescribeFlowLogsPaginatorName](#describeflowlogspaginatorname)
-  - [DescribeFpgaImagesPaginatorName](#describefpgaimagespaginatorname)
-  - [DescribeHostReservationOfferingsPaginatorName](#describehostreservationofferingspaginatorname)
-  - [DescribeHostReservationsPaginatorName](#describehostreservationspaginatorname)
-  - [DescribeHostsPaginatorName](#describehostspaginatorname)
-  - [DescribeIamInstanceProfileAssociationsPaginatorName](#describeiaminstanceprofileassociationspaginatorname)
-  - [DescribeImportImageTasksPaginatorName](#describeimportimagetaskspaginatorname)
-  - [DescribeImportSnapshotTasksPaginatorName](#describeimportsnapshottaskspaginatorname)
-  - [DescribeInstanceCreditSpecificationsPaginatorName](#describeinstancecreditspecificationspaginatorname)
-  - [DescribeInstanceEventWindowsPaginatorName](#describeinstanceeventwindowspaginatorname)
-  - [DescribeInstanceStatusPaginatorName](#describeinstancestatuspaginatorname)
-  - [DescribeInstanceTypeOfferingsPaginatorName](#describeinstancetypeofferingspaginatorname)
-  - [DescribeInstanceTypesPaginatorName](#describeinstancetypespaginatorname)
-  - [DescribeInstancesPaginatorName](#describeinstancespaginatorname)
-  - [DescribeInternetGatewaysPaginatorName](#describeinternetgatewayspaginatorname)
-  - [DescribeIpamPoolsPaginatorName](#describeipampoolspaginatorname)
-  - [DescribeIpamScopesPaginatorName](#describeipamscopespaginatorname)
-  - [DescribeIpamsPaginatorName](#describeipamspaginatorname)
-  - [DescribeIpv6PoolsPaginatorName](#describeipv6poolspaginatorname)
-  - [DescribeLaunchTemplateVersionsPaginatorName](#describelaunchtemplateversionspaginatorname)
-  - [DescribeLaunchTemplatesPaginatorName](#describelaunchtemplatespaginatorname)
-  - [DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName](#describelocalgatewayroutetablevirtualinterfacegroupassociationspaginatorname)
-  - [DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName](#describelocalgatewayroutetablevpcassociationspaginatorname)
-  - [DescribeLocalGatewayRouteTablesPaginatorName](#describelocalgatewayroutetablespaginatorname)
-  - [DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName](#describelocalgatewayvirtualinterfacegroupspaginatorname)
-  - [DescribeLocalGatewayVirtualInterfacesPaginatorName](#describelocalgatewayvirtualinterfacespaginatorname)
-  - [DescribeLocalGatewaysPaginatorName](#describelocalgatewayspaginatorname)
-  - [DescribeManagedPrefixListsPaginatorName](#describemanagedprefixlistspaginatorname)
-  - [DescribeMovingAddressesPaginatorName](#describemovingaddressespaginatorname)
-  - [DescribeNatGatewaysPaginatorName](#describenatgatewayspaginatorname)
-  - [DescribeNetworkAclsPaginatorName](#describenetworkaclspaginatorname)
-  - [DescribeNetworkInsightsAccessScopeAnalysesPaginatorName](#describenetworkinsightsaccessscopeanalysespaginatorname)
-  - [DescribeNetworkInsightsAccessScopesPaginatorName](#describenetworkinsightsaccessscopespaginatorname)
-  - [DescribeNetworkInsightsAnalysesPaginatorName](#describenetworkinsightsanalysespaginatorname)
-  - [DescribeNetworkInsightsPathsPaginatorName](#describenetworkinsightspathspaginatorname)
-  - [DescribeNetworkInterfacePermissionsPaginatorName](#describenetworkinterfacepermissionspaginatorname)
-  - [DescribeNetworkInterfacesPaginatorName](#describenetworkinterfacespaginatorname)
-  - [DescribePrefixListsPaginatorName](#describeprefixlistspaginatorname)
-  - [DescribePrincipalIdFormatPaginatorName](#describeprincipalidformatpaginatorname)
-  - [DescribePublicIpv4PoolsPaginatorName](#describepublicipv4poolspaginatorname)
-  - [DescribeReplaceRootVolumeTasksPaginatorName](#describereplacerootvolumetaskspaginatorname)
-  - [DescribeReservedInstancesModificationsPaginatorName](#describereservedinstancesmodificationspaginatorname)
-  - [DescribeReservedInstancesOfferingsPaginatorName](#describereservedinstancesofferingspaginatorname)
-  - [DescribeRouteTablesPaginatorName](#describeroutetablespaginatorname)
-  - [DescribeScheduledInstanceAvailabilityPaginatorName](#describescheduledinstanceavailabilitypaginatorname)
-  - [DescribeScheduledInstancesPaginatorName](#describescheduledinstancespaginatorname)
-  - [DescribeSecurityGroupRulesPaginatorName](#describesecuritygrouprulespaginatorname)
-  - [DescribeSecurityGroupsPaginatorName](#describesecuritygroupspaginatorname)
-  - [DescribeSnapshotTierStatusPaginatorName](#describesnapshottierstatuspaginatorname)
-  - [DescribeSnapshotsPaginatorName](#describesnapshotspaginatorname)
-  - [DescribeSpotFleetInstancesPaginatorName](#describespotfleetinstancespaginatorname)
-  - [DescribeSpotFleetRequestsPaginatorName](#describespotfleetrequestspaginatorname)
-  - [DescribeSpotInstanceRequestsPaginatorName](#describespotinstancerequestspaginatorname)
-  - [DescribeSpotPriceHistoryPaginatorName](#describespotpricehistorypaginatorname)
-  - [DescribeStaleSecurityGroupsPaginatorName](#describestalesecuritygroupspaginatorname)
-  - [DescribeStoreImageTasksPaginatorName](#describestoreimagetaskspaginatorname)
-  - [DescribeSubnetsPaginatorName](#describesubnetspaginatorname)
-  - [DescribeTagsPaginatorName](#describetagspaginatorname)
-  - [DescribeTrafficMirrorFiltersPaginatorName](#describetrafficmirrorfilterspaginatorname)
-  - [DescribeTrafficMirrorSessionsPaginatorName](#describetrafficmirrorsessionspaginatorname)
-  - [DescribeTrafficMirrorTargetsPaginatorName](#describetrafficmirrortargetspaginatorname)
-  - [DescribeTransitGatewayAttachmentsPaginatorName](#describetransitgatewayattachmentspaginatorname)
-  - [DescribeTransitGatewayConnectPeersPaginatorName](#describetransitgatewayconnectpeerspaginatorname)
-  - [DescribeTransitGatewayConnectsPaginatorName](#describetransitgatewayconnectspaginatorname)
-  - [DescribeTransitGatewayMulticastDomainsPaginatorName](#describetransitgatewaymulticastdomainspaginatorname)
-  - [DescribeTransitGatewayPeeringAttachmentsPaginatorName](#describetransitgatewaypeeringattachmentspaginatorname)
-  - [DescribeTransitGatewayRouteTablesPaginatorName](#describetransitgatewayroutetablespaginatorname)
-  - [DescribeTransitGatewayVpcAttachmentsPaginatorName](#describetransitgatewayvpcattachmentspaginatorname)
-  - [DescribeTransitGatewaysPaginatorName](#describetransitgatewayspaginatorname)
-  - [DescribeTrunkInterfaceAssociationsPaginatorName](#describetrunkinterfaceassociationspaginatorname)
-  - [DescribeVolumeStatusPaginatorName](#describevolumestatuspaginatorname)
-  - [DescribeVolumesModificationsPaginatorName](#describevolumesmodificationspaginatorname)
-  - [DescribeVolumesPaginatorName](#describevolumespaginatorname)
-  - [DescribeVpcClassicLinkDnsSupportPaginatorName](#describevpcclassiclinkdnssupportpaginatorname)
-  - [DescribeVpcEndpointConnectionNotificationsPaginatorName](#describevpcendpointconnectionnotificationspaginatorname)
-  - [DescribeVpcEndpointConnectionsPaginatorName](#describevpcendpointconnectionspaginatorname)
-  - [DescribeVpcEndpointServiceConfigurationsPaginatorName](#describevpcendpointserviceconfigurationspaginatorname)
-  - [DescribeVpcEndpointServicePermissionsPaginatorName](#describevpcendpointservicepermissionspaginatorname)
-  - [DescribeVpcEndpointServicesPaginatorName](#describevpcendpointservicespaginatorname)
-  - [DescribeVpcEndpointsPaginatorName](#describevpcendpointspaginatorname)
-  - [DescribeVpcPeeringConnectionsPaginatorName](#describevpcpeeringconnectionspaginatorname)
-  - [DescribeVpcsPaginatorName](#describevpcspaginatorname)
-  - [DestinationFileFormatType](#destinationfileformattype)
-  - [DeviceTypeType](#devicetypetype)
-  - [DiskImageFormatType](#diskimageformattype)
-  - [DiskTypeType](#disktypetype)
-  - [DnsNameStateType](#dnsnamestatetype)
-  - [DnsSupportValueType](#dnssupportvaluetype)
-  - [DomainTypeType](#domaintypetype)
-  - [EbsEncryptionSupportType](#ebsencryptionsupporttype)
-  - [EbsNvmeSupportType](#ebsnvmesupporttype)
-  - [EbsOptimizedSupportType](#ebsoptimizedsupporttype)
-  - [ElasticGpuStateType](#elasticgpustatetype)
-  - [ElasticGpuStatusType](#elasticgpustatustype)
-  - [EnaSupportType](#enasupporttype)
-  - [EndDateTypeType](#enddatetypetype)
-  - [EphemeralNvmeSupportType](#ephemeralnvmesupporttype)
-  - [EventCodeType](#eventcodetype)
-  - [EventTypeType](#eventtypetype)
-  - [ExcessCapacityTerminationPolicyType](#excesscapacityterminationpolicytype)
-  - [ExportEnvironmentType](#exportenvironmenttype)
-  - [ExportTaskCancelledWaiterName](#exporttaskcancelledwaitername)
-  - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
-  - [ExportTaskStateType](#exporttaskstatetype)
-  - [FastLaunchResourceTypeType](#fastlaunchresourcetypetype)
-  - [FastLaunchStateCodeType](#fastlaunchstatecodetype)
-  - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
-  - [FindingsFoundType](#findingsfoundtype)
-  - [FleetActivityStatusType](#fleetactivitystatustype)
-  - [FleetCapacityReservationTenancyType](#fleetcapacityreservationtenancytype)
-  - [FleetCapacityReservationUsageStrategyType](#fleetcapacityreservationusagestrategytype)
-  - [FleetEventTypeType](#fleeteventtypetype)
-  - [FleetExcessCapacityTerminationPolicyType](#fleetexcesscapacityterminationpolicytype)
-  - [FleetInstanceMatchCriteriaType](#fleetinstancematchcriteriatype)
-  - [FleetOnDemandAllocationStrategyType](#fleetondemandallocationstrategytype)
-  - [FleetReplacementStrategyType](#fleetreplacementstrategytype)
-  - [FleetStateCodeType](#fleetstatecodetype)
-  - [FleetTypeType](#fleettypetype)
-  - [FlowLogsResourceTypeType](#flowlogsresourcetypetype)
-  - [FpgaImageAttributeNameType](#fpgaimageattributenametype)
-  - [FpgaImageStateCodeType](#fpgaimagestatecodetype)
-  - [GatewayAssociationStateType](#gatewayassociationstatetype)
-  - [GatewayTypeType](#gatewaytypetype)
-  - [GetAssociatedIpv6PoolCidrsPaginatorName](#getassociatedipv6poolcidrspaginatorname)
-  - [GetGroupsForCapacityReservationPaginatorName](#getgroupsforcapacityreservationpaginatorname)
-  - [GetInstanceTypesFromInstanceRequirementsPaginatorName](#getinstancetypesfrominstancerequirementspaginatorname)
-  - [GetIpamAddressHistoryPaginatorName](#getipamaddresshistorypaginatorname)
-  - [GetIpamPoolAllocationsPaginatorName](#getipampoolallocationspaginatorname)
-  - [GetIpamPoolCidrsPaginatorName](#getipampoolcidrspaginatorname)
-  - [GetIpamResourceCidrsPaginatorName](#getipamresourcecidrspaginatorname)
-  - [GetManagedPrefixListAssociationsPaginatorName](#getmanagedprefixlistassociationspaginatorname)
-  - [GetManagedPrefixListEntriesPaginatorName](#getmanagedprefixlistentriespaginatorname)
-  - [GetSpotPlacementScoresPaginatorName](#getspotplacementscorespaginatorname)
-  - [GetTransitGatewayAttachmentPropagationsPaginatorName](#gettransitgatewayattachmentpropagationspaginatorname)
-  - [GetTransitGatewayMulticastDomainAssociationsPaginatorName](#gettransitgatewaymulticastdomainassociationspaginatorname)
-  - [GetTransitGatewayPrefixListReferencesPaginatorName](#gettransitgatewayprefixlistreferencespaginatorname)
-  - [GetTransitGatewayRouteTableAssociationsPaginatorName](#gettransitgatewayroutetableassociationspaginatorname)
-  - [GetTransitGatewayRouteTablePropagationsPaginatorName](#gettransitgatewayroutetablepropagationspaginatorname)
-  - [GetVpnConnectionDeviceTypesPaginatorName](#getvpnconnectiondevicetypespaginatorname)
-  - [HostRecoveryType](#hostrecoverytype)
-  - [HostTenancyType](#hosttenancytype)
-  - [HostnameTypeType](#hostnametypetype)
-  - [HttpTokensStateType](#httptokensstatetype)
-  - [HypervisorTypeType](#hypervisortypetype)
-  - [IamInstanceProfileAssociationStateType](#iaminstanceprofileassociationstatetype)
-  - [Igmpv2SupportValueType](#igmpv2supportvaluetype)
-  - [ImageAttributeNameType](#imageattributenametype)
-  - [ImageAvailableWaiterName](#imageavailablewaitername)
-  - [ImageExistsWaiterName](#imageexistswaitername)
-  - [ImageStateType](#imagestatetype)
-  - [ImageTypeValuesType](#imagetypevaluestype)
-  - [InstanceAttributeNameType](#instanceattributenametype)
-  - [InstanceEventWindowStateType](#instanceeventwindowstatetype)
-  - [InstanceExistsWaiterName](#instanceexistswaitername)
-  - [InstanceGenerationType](#instancegenerationtype)
-  - [InstanceHealthStatusType](#instancehealthstatustype)
-  - [InstanceInterruptionBehaviorType](#instanceinterruptionbehaviortype)
-  - [InstanceLifecycleType](#instancelifecycletype)
-  - [InstanceLifecycleTypeType](#instancelifecycletypetype)
-  - [InstanceMatchCriteriaType](#instancematchcriteriatype)
-  - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
-  - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
-  - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
-  - [InstanceMetadataTagsStateType](#instancemetadatatagsstatetype)
-  - [InstanceRunningWaiterName](#instancerunningwaitername)
-  - [InstanceStateNameType](#instancestatenametype)
-  - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
-  - [InstanceStoppedWaiterName](#instancestoppedwaitername)
-  - [InstanceStorageEncryptionSupportType](#instancestorageencryptionsupporttype)
-  - [InstanceTerminatedWaiterName](#instanceterminatedwaitername)
-  - [InstanceTypeHypervisorType](#instancetypehypervisortype)
-  - [InstanceTypeType](#instancetypetype)
-  - [InterfacePermissionTypeType](#interfacepermissiontypetype)
-  - [InterfaceProtocolTypeType](#interfaceprotocoltypetype)
-  - [InternetGatewayExistsWaiterName](#internetgatewayexistswaitername)
-  - [IpamAddressHistoryResourceTypeType](#ipamaddresshistoryresourcetypetype)
-  - [IpamComplianceStatusType](#ipamcompliancestatustype)
-  - [IpamManagementStateType](#ipammanagementstatetype)
-  - [IpamOverlapStatusType](#ipamoverlapstatustype)
-  - [IpamPoolAllocationResourceTypeType](#ipampoolallocationresourcetypetype)
-  - [IpamPoolAwsServiceType](#ipampoolawsservicetype)
-  - [IpamPoolCidrFailureCodeType](#ipampoolcidrfailurecodetype)
-  - [IpamPoolCidrStateType](#ipampoolcidrstatetype)
-  - [IpamPoolStateType](#ipampoolstatetype)
-  - [IpamResourceTypeType](#ipamresourcetypetype)
-  - [IpamScopeStateType](#ipamscopestatetype)
-  - [IpamScopeTypeType](#ipamscopetypetype)
-  - [IpamStateType](#ipamstatetype)
-  - [Ipv6SupportValueType](#ipv6supportvaluetype)
-  - [KeyPairExistsWaiterName](#keypairexistswaitername)
-  - [KeyTypeType](#keytypetype)
-  - [LaunchTemplateErrorCodeType](#launchtemplateerrorcodetype)
-  - [LaunchTemplateHttpTokensStateType](#launchtemplatehttptokensstatetype)
-  - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
-  - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
-  - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
-  - [LaunchTemplateInstanceMetadataTagsStateType](#launchtemplateinstancemetadatatagsstatetype)
-  - [ListImagesInRecycleBinPaginatorName](#listimagesinrecyclebinpaginatorname)
-  - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
-  - [ListingStateType](#listingstatetype)
-  - [ListingStatusType](#listingstatustype)
-  - [LocalGatewayRouteStateType](#localgatewayroutestatetype)
-  - [LocalGatewayRouteTypeType](#localgatewayroutetypetype)
-  - [LocalStorageType](#localstoragetype)
-  - [LocalStorageTypeType](#localstoragetypetype)
-  - [LocationTypeType](#locationtypetype)
-  - [LogDestinationTypeType](#logdestinationtypetype)
-  - [MarketTypeType](#markettypetype)
-  - [MembershipTypeType](#membershiptypetype)
-  - [ModifyAvailabilityZoneOptInStatusType](#modifyavailabilityzoneoptinstatustype)
-  - [MonitoringStateType](#monitoringstatetype)
-  - [MoveStatusType](#movestatustype)
-  - [MulticastSupportValueType](#multicastsupportvaluetype)
-  - [NatGatewayAvailableWaiterName](#natgatewayavailablewaitername)
-  - [NatGatewayStateType](#natgatewaystatetype)
-  - [NetworkInterfaceAttributeType](#networkinterfaceattributetype)
-  - [NetworkInterfaceAvailableWaiterName](#networkinterfaceavailablewaitername)
-  - [NetworkInterfaceCreationTypeType](#networkinterfacecreationtypetype)
-  - [NetworkInterfacePermissionStateCodeType](#networkinterfacepermissionstatecodetype)
-  - [NetworkInterfaceStatusType](#networkinterfacestatustype)
-  - [NetworkInterfaceTypeType](#networkinterfacetypetype)
-  - [OfferingClassTypeType](#offeringclasstypetype)
-  - [OfferingTypeValuesType](#offeringtypevaluestype)
-  - [OnDemandAllocationStrategyType](#ondemandallocationstrategytype)
-  - [OperationTypeType](#operationtypetype)
-  - [PartitionLoadFrequencyType](#partitionloadfrequencytype)
-  - [PasswordDataAvailableWaiterName](#passworddataavailablewaitername)
-  - [PayerResponsibilityType](#payerresponsibilitytype)
-  - [PaymentOptionType](#paymentoptiontype)
-  - [PermissionGroupType](#permissiongrouptype)
-  - [PlacementGroupStateType](#placementgroupstatetype)
-  - [PlacementGroupStrategyType](#placementgroupstrategytype)
-  - [PlacementStrategyType](#placementstrategytype)
-  - [PlatformValuesType](#platformvaluestype)
-  - [PrefixListStateType](#prefixliststatetype)
-  - [PrincipalTypeType](#principaltypetype)
-  - [ProductCodeValuesType](#productcodevaluestype)
-  - [ProtocolType](#protocoltype)
-  - [ProtocolValueType](#protocolvaluetype)
-  - [RIProductDescriptionType](#riproductdescriptiontype)
-  - [RecurringChargeFrequencyType](#recurringchargefrequencytype)
-  - [ReplaceRootVolumeTaskStateType](#replacerootvolumetaskstatetype)
-  - [ReplacementStrategyType](#replacementstrategytype)
-  - [ReportInstanceReasonCodesType](#reportinstancereasoncodestype)
-  - [ReportStatusTypeType](#reportstatustypetype)
-  - [ReservationStateType](#reservationstatetype)
-  - [ReservedInstanceStateType](#reservedinstancestatetype)
-  - [ResetFpgaImageAttributeNameType](#resetfpgaimageattributenametype)
-  - [ResetImageAttributeNameType](#resetimageattributenametype)
-  - [ResourceTypeType](#resourcetypetype)
-  - [RootDeviceTypeType](#rootdevicetypetype)
-  - [RouteOriginType](#routeorigintype)
-  - [RouteStateType](#routestatetype)
-  - [RouteTableAssociationStateCodeType](#routetableassociationstatecodetype)
-  - [RuleActionType](#ruleactiontype)
-  - [SearchLocalGatewayRoutesPaginatorName](#searchlocalgatewayroutespaginatorname)
-  - [SearchTransitGatewayMulticastGroupsPaginatorName](#searchtransitgatewaymulticastgroupspaginatorname)
-  - [SecurityGroupExistsWaiterName](#securitygroupexistswaitername)
-  - [SelfServicePortalType](#selfserviceportaltype)
-  - [ServiceStateType](#servicestatetype)
-  - [ServiceTypeType](#servicetypetype)
-  - [ShutdownBehaviorType](#shutdownbehaviortype)
-  - [SnapshotAttributeNameType](#snapshotattributenametype)
-  - [SnapshotCompletedWaiterName](#snapshotcompletedwaitername)
-  - [SnapshotStateType](#snapshotstatetype)
-  - [SpotAllocationStrategyType](#spotallocationstrategytype)
-  - [SpotInstanceInterruptionBehaviorType](#spotinstanceinterruptionbehaviortype)
-  - [SpotInstanceRequestFulfilledWaiterName](#spotinstancerequestfulfilledwaitername)
-  - [SpotInstanceStateType](#spotinstancestatetype)
-  - [SpotInstanceTypeType](#spotinstancetypetype)
-  - [StateType](#statetype)
-  - [StaticSourcesSupportValueType](#staticsourcessupportvaluetype)
-  - [StatusNameType](#statusnametype)
-  - [StatusType](#statustype)
-  - [StatusTypeType](#statustypetype)
-  - [StorageTierType](#storagetiertype)
-  - [SubnetAvailableWaiterName](#subnetavailablewaitername)
-  - [SubnetCidrBlockStateCodeType](#subnetcidrblockstatecodetype)
-  - [SubnetCidrReservationTypeType](#subnetcidrreservationtypetype)
-  - [SubnetStateType](#subnetstatetype)
-  - [SummaryStatusType](#summarystatustype)
-  - [SystemStatusOkWaiterName](#systemstatusokwaitername)
-  - [TargetCapacityUnitTypeType](#targetcapacityunittypetype)
-  - [TargetStorageTierType](#targetstoragetiertype)
-  - [TelemetryStatusType](#telemetrystatustype)
-  - [TenancyType](#tenancytype)
-  - [TieringOperationStatusType](#tieringoperationstatustype)
-  - [TrafficDirectionType](#trafficdirectiontype)
-  - [TrafficMirrorFilterRuleFieldType](#trafficmirrorfilterrulefieldtype)
-  - [TrafficMirrorNetworkServiceType](#trafficmirrornetworkservicetype)
-  - [TrafficMirrorRuleActionType](#trafficmirrorruleactiontype)
-  - [TrafficMirrorSessionFieldType](#trafficmirrorsessionfieldtype)
-  - [TrafficMirrorTargetTypeType](#trafficmirrortargettypetype)
-  - [TrafficTypeType](#traffictypetype)
-  - [TransitGatewayAssociationStateType](#transitgatewayassociationstatetype)
-  - [TransitGatewayAttachmentResourceTypeType](#transitgatewayattachmentresourcetypetype)
-  - [TransitGatewayAttachmentStateType](#transitgatewayattachmentstatetype)
-  - [TransitGatewayConnectPeerStateType](#transitgatewayconnectpeerstatetype)
-  - [TransitGatewayMulitcastDomainAssociationStateType](#transitgatewaymulitcastdomainassociationstatetype)
-  - [TransitGatewayMulticastDomainStateType](#transitgatewaymulticastdomainstatetype)
-  - [TransitGatewayPrefixListReferenceStateType](#transitgatewayprefixlistreferencestatetype)
-  - [TransitGatewayPropagationStateType](#transitgatewaypropagationstatetype)
-  - [TransitGatewayRouteStateType](#transitgatewayroutestatetype)
-  - [TransitGatewayRouteTableStateType](#transitgatewayroutetablestatetype)
-  - [TransitGatewayRouteTypeType](#transitgatewayroutetypetype)
-  - [TransitGatewayStateType](#transitgatewaystatetype)
-  - [TransportProtocolType](#transportprotocoltype)
-  - [TunnelInsideIpVersionType](#tunnelinsideipversiontype)
-  - [UnlimitedSupportedInstanceFamilyType](#unlimitedsupportedinstancefamilytype)
-  - [UnsuccessfulInstanceCreditSpecificationErrorCodeType](#unsuccessfulinstancecreditspecificationerrorcodetype)
-  - [UsageClassTypeType](#usageclasstypetype)
-  - [VirtualizationTypeType](#virtualizationtypetype)
-  - [VolumeAttachmentStateType](#volumeattachmentstatetype)
-  - [VolumeAttributeNameType](#volumeattributenametype)
-  - [VolumeAvailableWaiterName](#volumeavailablewaitername)
-  - [VolumeDeletedWaiterName](#volumedeletedwaitername)
-  - [VolumeInUseWaiterName](#volumeinusewaitername)
-  - [VolumeModificationStateType](#volumemodificationstatetype)
-  - [VolumeStateType](#volumestatetype)
-  - [VolumeStatusInfoStatusType](#volumestatusinfostatustype)
-  - [VolumeStatusNameType](#volumestatusnametype)
-  - [VolumeTypeType](#volumetypetype)
-  - [VpcAttributeNameType](#vpcattributenametype)
-  - [VpcAvailableWaiterName](#vpcavailablewaitername)
-  - [VpcCidrBlockStateCodeType](#vpccidrblockstatecodetype)
-  - [VpcEndpointTypeType](#vpcendpointtypetype)
-  - [VpcExistsWaiterName](#vpcexistswaitername)
-  - [VpcPeeringConnectionDeletedWaiterName](#vpcpeeringconnectiondeletedwaitername)
-  - [VpcPeeringConnectionExistsWaiterName](#vpcpeeringconnectionexistswaitername)
-  - [VpcPeeringConnectionStateReasonCodeType](#vpcpeeringconnectionstatereasoncodetype)
-  - [VpcStateType](#vpcstatetype)
-  - [VpcTenancyType](#vpctenancytype)
-  - [VpnConnectionAvailableWaiterName](#vpnconnectionavailablewaitername)
-  - [VpnConnectionDeletedWaiterName](#vpnconnectiondeletedwaitername)
-  - [VpnEcmpSupportValueType](#vpnecmpsupportvaluetype)
-  - [VpnProtocolType](#vpnprotocoltype)
-  - [VpnStateType](#vpnstatetype)
-  - [VpnStaticRouteSourceType](#vpnstaticroutesourcetype)
-  - [WeekDayType](#weekdaytype)
-  - [scopeType](#scopetype)
-  - [EC2ServiceName](#ec2servicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="acceleratormanufacturertype"></a>
+    Auto-generated documentation for [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
+    type annotations stubs module [mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ## AcceleratorManufacturerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AcceleratorManufacturerType
+
+def get_value() -> AcceleratorManufacturerType:
+    return "amazon-web-services"
 ```
 
-Values:
-
-- `amazon-web-services`
-- `amd`
-- `nvidia`
-- `xilinx`
-
-<a id="acceleratornametype"></a>
-
+```python title="Definition"
+AcceleratorManufacturerType = Literal[
+    "amazon-web-services",
+    "amd",
+    "nvidia",
+    "xilinx",
+]
+```
 ## AcceleratorNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AcceleratorNameType
+
+def get_value() -> AcceleratorNameType:
+    return "a100"
 ```
 
-Values:
-
-- `a100`
-- `k80`
-- `m60`
-- `radeon-pro-v520`
-- `t4`
-- `v100`
-- `vu9p`
-
-<a id="acceleratortypetype"></a>
-
+```python title="Definition"
+AcceleratorNameType = Literal[
+    "a100",
+    "k80",
+    "m60",
+    "radeon-pro-v520",
+    "t4",
+    "v100",
+    "vu9p",
+]
+```
 ## AcceleratorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AcceleratorTypeType
+
+def get_value() -> AcceleratorTypeType:
+    return "fpga"
 ```
 
-Values:
-
-- `fpga`
-- `gpu`
-- `inference`
-
-<a id="accountattributenametype"></a>
-
+```python title="Definition"
+AcceleratorTypeType = Literal[
+    "fpga",
+    "gpu",
+    "inference",
+]
+```
 ## AccountAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AccountAttributeNameType
+
+def get_value() -> AccountAttributeNameType:
+    return "default-vpc"
 ```
 
-Values:
-
-- `default-vpc`
-- `supported-platforms`
-
-<a id="activitystatustype"></a>
-
+```python title="Definition"
+AccountAttributeNameType = Literal[
+    "default-vpc",
+    "supported-platforms",
+]
+```
 ## ActivityStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ActivityStatusType
+
+def get_value() -> ActivityStatusType:
+    return "error"
 ```
 
-Values:
-
-- `error`
-- `fulfilled`
-- `pending_fulfillment`
-- `pending_termination`
-
-<a id="addressattributenametype"></a>
-
+```python title="Definition"
+ActivityStatusType = Literal[
+    "error",
+    "fulfilled",
+    "pending_fulfillment",
+    "pending_termination",
+]
+```
 ## AddressAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AddressAttributeNameType
+
+def get_value() -> AddressAttributeNameType:
+    return "domain-name"
 ```
 
-Values:
-
-- `domain-name`
-
-<a id="addressfamilytype"></a>
-
+```python title="Definition"
+AddressAttributeNameType = Literal[
+    "domain-name",
+]
+```
 ## AddressFamilyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AddressFamilyType
+
+def get_value() -> AddressFamilyType:
+    return "ipv4"
 ```
 
-Values:
-
-- `ipv4`
-- `ipv6`
-
-<a id="affinitytype"></a>
-
+```python title="Definition"
+AddressFamilyType = Literal[
+    "ipv4",
+    "ipv6",
+]
+```
 ## AffinityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AffinityType
+
+def get_value() -> AffinityType:
+    return "default"
 ```
 
-Values:
-
-- `default`
-- `host`
-
-<a id="allocationstatetype"></a>
-
+```python title="Definition"
+AffinityType = Literal[
+    "default",
+    "host",
+]
+```
 ## AllocationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AllocationStateType
+
+def get_value() -> AllocationStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `pending`
-- `permanent-failure`
-- `released`
-- `released-permanent-failure`
-- `under-assessment`
-
-<a id="allocationstrategytype"></a>
-
+```python title="Definition"
+AllocationStateType = Literal[
+    "available",
+    "pending",
+    "permanent-failure",
+    "released",
+    "released-permanent-failure",
+    "under-assessment",
+]
+```
 ## AllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AllocationStrategyType
+
+def get_value() -> AllocationStrategyType:
+    return "capacityOptimized"
 ```
 
-Values:
-
-- `capacityOptimized`
-- `capacityOptimizedPrioritized`
-- `diversified`
-- `lowestPrice`
-
-<a id="allowsmultipleinstancetypestype"></a>
-
+```python title="Definition"
+AllocationStrategyType = Literal[
+    "capacityOptimized",
+    "capacityOptimizedPrioritized",
+    "diversified",
+    "lowestPrice",
+]
+```
 ## AllowsMultipleInstanceTypesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AllowsMultipleInstanceTypesType
+
+def get_value() -> AllowsMultipleInstanceTypesType:
+    return "off"
 ```
 
-Values:
-
-- `off`
-- `on`
-
-<a id="analysisstatustype"></a>
-
+```python title="Definition"
+AllowsMultipleInstanceTypesType = Literal[
+    "off",
+    "on",
+]
+```
 ## AnalysisStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AnalysisStatusType
+
+def get_value() -> AnalysisStatusType:
+    return "failed"
 ```
 
-Values:
-
-- `failed`
-- `running`
-- `succeeded`
-
-<a id="appliancemodesupportvaluetype"></a>
-
+```python title="Definition"
+AnalysisStatusType = Literal[
+    "failed",
+    "running",
+    "succeeded",
+]
+```
 ## ApplianceModeSupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ApplianceModeSupportValueType
+
+def get_value() -> ApplianceModeSupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="architecturetypetype"></a>
-
+```python title="Definition"
+ApplianceModeSupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## ArchitectureTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ArchitectureTypeType
+
+def get_value() -> ArchitectureTypeType:
+    return "arm64"
 ```
 
-Values:
-
-- `arm64`
-- `i386`
-- `x86_64`
-- `x86_64_mac`
-
-<a id="architecturevaluestype"></a>
-
+```python title="Definition"
+ArchitectureTypeType = Literal[
+    "arm64",
+    "i386",
+    "x86_64",
+    "x86_64_mac",
+]
+```
 ## ArchitectureValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ArchitectureValuesType
+
+def get_value() -> ArchitectureValuesType:
+    return "arm64"
 ```
 
-Values:
-
-- `arm64`
-- `i386`
-- `x86_64`
-- `x86_64_mac`
-
-<a id="associatednetworktypetype"></a>
-
+```python title="Definition"
+ArchitectureValuesType = Literal[
+    "arm64",
+    "i386",
+    "x86_64",
+    "x86_64_mac",
+]
+```
 ## AssociatedNetworkTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AssociatedNetworkTypeType
+
+def get_value() -> AssociatedNetworkTypeType:
+    return "vpc"
 ```
 
-Values:
-
-- `vpc`
-
-<a id="associationstatuscodetype"></a>
-
+```python title="Definition"
+AssociatedNetworkTypeType = Literal[
+    "vpc",
+]
+```
 ## AssociationStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AssociationStatusCodeType
+
+def get_value() -> AssociationStatusCodeType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `association-failed`
-- `disassociated`
-- `disassociating`
-
-<a id="attachmentstatustype"></a>
-
+```python title="Definition"
+AssociationStatusCodeType = Literal[
+    "associated",
+    "associating",
+    "association-failed",
+    "disassociated",
+    "disassociating",
+]
+```
 ## AttachmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AttachmentStatusType
+
+def get_value() -> AttachmentStatusType:
+    return "attached"
 ```
 
-Values:
-
-- `attached`
-- `attaching`
-- `detached`
-- `detaching`
-
-<a id="autoacceptsharedassociationsvaluetype"></a>
-
+```python title="Definition"
+AttachmentStatusType = Literal[
+    "attached",
+    "attaching",
+    "detached",
+    "detaching",
+]
+```
 ## AutoAcceptSharedAssociationsValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AutoAcceptSharedAssociationsValueType
+
+def get_value() -> AutoAcceptSharedAssociationsValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="autoacceptsharedattachmentsvaluetype"></a>
-
+```python title="Definition"
+AutoAcceptSharedAssociationsValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## AutoAcceptSharedAttachmentsValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AutoAcceptSharedAttachmentsValueType
+
+def get_value() -> AutoAcceptSharedAttachmentsValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="autoplacementtype"></a>
-
+```python title="Definition"
+AutoAcceptSharedAttachmentsValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## AutoPlacementType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AutoPlacementType
+
+def get_value() -> AutoPlacementType:
+    return "off"
 ```
 
-Values:
-
-- `off`
-- `on`
-
-<a id="availabilityzoneoptinstatustype"></a>
-
+```python title="Definition"
+AutoPlacementType = Literal[
+    "off",
+    "on",
+]
+```
 ## AvailabilityZoneOptInStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AvailabilityZoneOptInStatusType
+
+def get_value() -> AvailabilityZoneOptInStatusType:
+    return "not-opted-in"
 ```
 
-Values:
-
-- `not-opted-in`
-- `opt-in-not-required`
-- `opted-in`
-
-<a id="availabilityzonestatetype"></a>
-
+```python title="Definition"
+AvailabilityZoneOptInStatusType = Literal[
+    "not-opted-in",
+    "opt-in-not-required",
+    "opted-in",
+]
+```
 ## AvailabilityZoneStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import AvailabilityZoneStateType
+
+def get_value() -> AvailabilityZoneStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `impaired`
-- `information`
-- `unavailable`
-
-<a id="baremetaltype"></a>
-
+```python title="Definition"
+AvailabilityZoneStateType = Literal[
+    "available",
+    "impaired",
+    "information",
+    "unavailable",
+]
+```
 ## BareMetalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BareMetalType
+
+def get_value() -> BareMetalType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="batchstatetype"></a>
-
+```python title="Definition"
+BareMetalType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## BatchStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BatchStateType
+
+def get_value() -> BatchStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `cancelled_running`
-- `cancelled_terminating`
-- `failed`
-- `modifying`
-- `submitted`
-
-<a id="bgpstatustype"></a>
-
+```python title="Definition"
+BatchStateType = Literal[
+    "active",
+    "cancelled",
+    "cancelled_running",
+    "cancelled_terminating",
+    "failed",
+    "modifying",
+    "submitted",
+]
+```
 ## BgpStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BgpStatusType
+
+def get_value() -> BgpStatusType:
+    return "down"
 ```
 
-Values:
-
-- `down`
-- `up`
-
-<a id="bootmodetypetype"></a>
-
+```python title="Definition"
+BgpStatusType = Literal[
+    "down",
+    "up",
+]
+```
 ## BootModeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BootModeTypeType
+
+def get_value() -> BootModeTypeType:
+    return "legacy-bios"
 ```
 
-Values:
-
-- `legacy-bios`
-- `uefi`
-
-<a id="bootmodevaluestype"></a>
-
+```python title="Definition"
+BootModeTypeType = Literal[
+    "legacy-bios",
+    "uefi",
+]
+```
 ## BootModeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BootModeValuesType
+
+def get_value() -> BootModeValuesType:
+    return "legacy-bios"
 ```
 
-Values:
-
-- `legacy-bios`
-- `uefi`
-
-<a id="bundletaskcompletewaitername"></a>
-
+```python title="Definition"
+BootModeValuesType = Literal[
+    "legacy-bios",
+    "uefi",
+]
+```
 ## BundleTaskCompleteWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BundleTaskCompleteWaiterName
+
+def get_value() -> BundleTaskCompleteWaiterName:
+    return "bundle_task_complete"
 ```
 
-Values:
-
-- `bundle_task_complete`
-
-<a id="bundletaskstatetype"></a>
-
+```python title="Definition"
+BundleTaskCompleteWaiterName = Literal[
+    "bundle_task_complete",
+]
+```
 ## BundleTaskStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BundleTaskStateType
+
+def get_value() -> BundleTaskStateType:
+    return "bundling"
 ```
 
-Values:
-
-- `bundling`
-- `cancelling`
-- `complete`
-- `failed`
-- `pending`
-- `storing`
-- `waiting-for-shutdown`
-
-<a id="burstableperformancetype"></a>
-
+```python title="Definition"
+BundleTaskStateType = Literal[
+    "bundling",
+    "cancelling",
+    "complete",
+    "failed",
+    "pending",
+    "storing",
+    "waiting-for-shutdown",
+]
+```
 ## BurstablePerformanceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import BurstablePerformanceType
+
+def get_value() -> BurstablePerformanceType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="byoipcidrstatetype"></a>
-
+```python title="Definition"
+BurstablePerformanceType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## ByoipCidrStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ByoipCidrStateType
+
+def get_value() -> ByoipCidrStateType:
+    return "advertised"
 ```
 
-Values:
-
-- `advertised`
-- `deprovisioned`
-- `failed-deprovision`
-- `failed-provision`
-- `pending-deprovision`
-- `pending-provision`
-- `provisioned`
-- `provisioned-not-publicly-advertisable`
-
-<a id="cancelbatcherrorcodetype"></a>
-
+```python title="Definition"
+ByoipCidrStateType = Literal[
+    "advertised",
+    "deprovisioned",
+    "failed-deprovision",
+    "failed-provision",
+    "pending-deprovision",
+    "pending-provision",
+    "provisioned",
+    "provisioned-not-publicly-advertisable",
+]
+```
 ## CancelBatchErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CancelBatchErrorCodeType
+
+def get_value() -> CancelBatchErrorCodeType:
+    return "fleetRequestIdDoesNotExist"
 ```
 
-Values:
-
-- `fleetRequestIdDoesNotExist`
-- `fleetRequestIdMalformed`
-- `fleetRequestNotInCancellableState`
-- `unexpectedError`
-
-<a id="cancelspotinstancerequeststatetype"></a>
-
+```python title="Definition"
+CancelBatchErrorCodeType = Literal[
+    "fleetRequestIdDoesNotExist",
+    "fleetRequestIdMalformed",
+    "fleetRequestNotInCancellableState",
+    "unexpectedError",
+]
+```
 ## CancelSpotInstanceRequestStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CancelSpotInstanceRequestStateType
+
+def get_value() -> CancelSpotInstanceRequestStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `closed`
-- `completed`
-- `open`
-
-<a id="capacityreservationfleetstatetype"></a>
-
+```python title="Definition"
+CancelSpotInstanceRequestStateType = Literal[
+    "active",
+    "cancelled",
+    "closed",
+    "completed",
+    "open",
+]
+```
 ## CapacityReservationFleetStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CapacityReservationFleetStateType
+
+def get_value() -> CapacityReservationFleetStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `cancelling`
-- `expired`
-- `expiring`
-- `failed`
-- `modifying`
-- `partially_fulfilled`
-- `submitted`
-
-<a id="capacityreservationinstanceplatformtype"></a>
-
+```python title="Definition"
+CapacityReservationFleetStateType = Literal[
+    "active",
+    "cancelled",
+    "cancelling",
+    "expired",
+    "expiring",
+    "failed",
+    "modifying",
+    "partially_fulfilled",
+    "submitted",
+]
+```
 ## CapacityReservationInstancePlatformType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CapacityReservationInstancePlatformType
+
+def get_value() -> CapacityReservationInstancePlatformType:
+    return "Linux with SQL Server Enterprise"
 ```
 
-Values:
-
-- `Linux with SQL Server Enterprise`
-- `Linux with SQL Server Standard`
-- `Linux with SQL Server Web`
-- `Linux/UNIX`
-- `Red Hat Enterprise Linux`
-- `RHEL with HA`
-- `RHEL with HA and SQL Server Enterprise`
-- `RHEL with HA and SQL Server Standard`
-- `RHEL with SQL Server Enterprise`
-- `RHEL with SQL Server Standard`
-- `RHEL with SQL Server Web`
-- `SUSE Linux`
-- `Windows`
-- `Windows with SQL Server`
-- `Windows with SQL Server Enterprise`
-- `Windows with SQL Server Standard`
-- `Windows with SQL Server Web`
-
-<a id="capacityreservationpreferencetype"></a>
-
+```python title="Definition"
+CapacityReservationInstancePlatformType = Literal[
+    "Linux with SQL Server Enterprise",
+    "Linux with SQL Server Standard",
+    "Linux with SQL Server Web",
+    "Linux/UNIX",
+    "Red Hat Enterprise Linux",
+    "RHEL with HA",
+    "RHEL with HA and SQL Server Enterprise",
+    "RHEL with HA and SQL Server Standard",
+    "RHEL with SQL Server Enterprise",
+    "RHEL with SQL Server Standard",
+    "RHEL with SQL Server Web",
+    "SUSE Linux",
+    "Windows",
+    "Windows with SQL Server",
+    "Windows with SQL Server Enterprise",
+    "Windows with SQL Server Standard",
+    "Windows with SQL Server Web",
+]
+```
 ## CapacityReservationPreferenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CapacityReservationPreferenceType
+
+def get_value() -> CapacityReservationPreferenceType:
+    return "none"
 ```
 
-Values:
-
-- `none`
-- `open`
-
-<a id="capacityreservationstatetype"></a>
-
+```python title="Definition"
+CapacityReservationPreferenceType = Literal[
+    "none",
+    "open",
+]
+```
 ## CapacityReservationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CapacityReservationStateType
+
+def get_value() -> CapacityReservationStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `expired`
-- `failed`
-- `pending`
-
-<a id="capacityreservationtenancytype"></a>
-
+```python title="Definition"
+CapacityReservationStateType = Literal[
+    "active",
+    "cancelled",
+    "expired",
+    "failed",
+    "pending",
+]
+```
 ## CapacityReservationTenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CapacityReservationTenancyType
+
+def get_value() -> CapacityReservationTenancyType:
+    return "dedicated"
 ```
 
-Values:
-
-- `dedicated`
-- `default`
-
-<a id="carriergatewaystatetype"></a>
-
+```python title="Definition"
+CapacityReservationTenancyType = Literal[
+    "dedicated",
+    "default",
+]
+```
 ## CarrierGatewayStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CarrierGatewayStateType
+
+def get_value() -> CarrierGatewayStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="clientcertificaterevocationliststatuscodetype"></a>
-
+```python title="Definition"
+CarrierGatewayStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## ClientCertificateRevocationListStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientCertificateRevocationListStatusCodeType
+
+def get_value() -> ClientCertificateRevocationListStatusCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `pending`
-
-<a id="clientvpnauthenticationtypetype"></a>
-
+```python title="Definition"
+ClientCertificateRevocationListStatusCodeType = Literal[
+    "active",
+    "pending",
+]
+```
 ## ClientVpnAuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnAuthenticationTypeType
+
+def get_value() -> ClientVpnAuthenticationTypeType:
+    return "certificate-authentication"
 ```
 
-Values:
-
-- `certificate-authentication`
-- `directory-service-authentication`
-- `federated-authentication`
-
-<a id="clientvpnauthorizationrulestatuscodetype"></a>
-
+```python title="Definition"
+ClientVpnAuthenticationTypeType = Literal[
+    "certificate-authentication",
+    "directory-service-authentication",
+    "federated-authentication",
+]
+```
 ## ClientVpnAuthorizationRuleStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnAuthorizationRuleStatusCodeType
+
+def get_value() -> ClientVpnAuthorizationRuleStatusCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `authorizing`
-- `failed`
-- `revoking`
-
-<a id="clientvpnconnectionstatuscodetype"></a>
-
+```python title="Definition"
+ClientVpnAuthorizationRuleStatusCodeType = Literal[
+    "active",
+    "authorizing",
+    "failed",
+    "revoking",
+]
+```
 ## ClientVpnConnectionStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnConnectionStatusCodeType
+
+def get_value() -> ClientVpnConnectionStatusCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `failed-to-terminate`
-- `terminated`
-- `terminating`
-
-<a id="clientvpnendpointattributestatuscodetype"></a>
-
+```python title="Definition"
+ClientVpnConnectionStatusCodeType = Literal[
+    "active",
+    "failed-to-terminate",
+    "terminated",
+    "terminating",
+]
+```
 ## ClientVpnEndpointAttributeStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnEndpointAttributeStatusCodeType
+
+def get_value() -> ClientVpnEndpointAttributeStatusCodeType:
+    return "applied"
 ```
 
-Values:
-
-- `applied`
-- `applying`
-
-<a id="clientvpnendpointstatuscodetype"></a>
-
+```python title="Definition"
+ClientVpnEndpointAttributeStatusCodeType = Literal[
+    "applied",
+    "applying",
+]
+```
 ## ClientVpnEndpointStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnEndpointStatusCodeType
+
+def get_value() -> ClientVpnEndpointStatusCodeType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending-associate`
-
-<a id="clientvpnroutestatuscodetype"></a>
-
+```python title="Definition"
+ClientVpnEndpointStatusCodeType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending-associate",
+]
+```
 ## ClientVpnRouteStatusCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ClientVpnRouteStatusCodeType
+
+def get_value() -> ClientVpnRouteStatusCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `creating`
-- `deleting`
-- `failed`
-
-<a id="connectionnotificationstatetype"></a>
-
+```python title="Definition"
+ClientVpnRouteStatusCodeType = Literal[
+    "active",
+    "creating",
+    "deleting",
+    "failed",
+]
+```
 ## ConnectionNotificationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConnectionNotificationStateType
+
+def get_value() -> ConnectionNotificationStateType:
+    return "Disabled"
 ```
 
-Values:
-
-- `Disabled`
-- `Enabled`
-
-<a id="connectionnotificationtypetype"></a>
-
+```python title="Definition"
+ConnectionNotificationStateType = Literal[
+    "Disabled",
+    "Enabled",
+]
+```
 ## ConnectionNotificationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConnectionNotificationTypeType
+
+def get_value() -> ConnectionNotificationTypeType:
+    return "Topic"
 ```
 
-Values:
-
-- `Topic`
-
-<a id="connectivitytypetype"></a>
-
+```python title="Definition"
+ConnectionNotificationTypeType = Literal[
+    "Topic",
+]
+```
 ## ConnectivityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConnectivityTypeType
+
+def get_value() -> ConnectivityTypeType:
+    return "private"
 ```
 
-Values:
-
-- `private`
-- `public`
-
-<a id="containerformattype"></a>
-
+```python title="Definition"
+ConnectivityTypeType = Literal[
+    "private",
+    "public",
+]
+```
 ## ContainerFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ContainerFormatType
+
+def get_value() -> ContainerFormatType:
+    return "ova"
 ```
 
-Values:
-
-- `ova`
-
-<a id="conversiontaskcancelledwaitername"></a>
-
+```python title="Definition"
+ContainerFormatType = Literal[
+    "ova",
+]
+```
 ## ConversionTaskCancelledWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConversionTaskCancelledWaiterName
+
+def get_value() -> ConversionTaskCancelledWaiterName:
+    return "conversion_task_cancelled"
 ```
 
-Values:
-
-- `conversion_task_cancelled`
-
-<a id="conversiontaskcompletedwaitername"></a>
-
+```python title="Definition"
+ConversionTaskCancelledWaiterName = Literal[
+    "conversion_task_cancelled",
+]
+```
 ## ConversionTaskCompletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConversionTaskCompletedWaiterName
+
+def get_value() -> ConversionTaskCompletedWaiterName:
+    return "conversion_task_completed"
 ```
 
-Values:
-
-- `conversion_task_completed`
-
-<a id="conversiontaskdeletedwaitername"></a>
-
+```python title="Definition"
+ConversionTaskCompletedWaiterName = Literal[
+    "conversion_task_completed",
+]
+```
 ## ConversionTaskDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConversionTaskDeletedWaiterName
+
+def get_value() -> ConversionTaskDeletedWaiterName:
+    return "conversion_task_deleted"
 ```
 
-Values:
-
-- `conversion_task_deleted`
-
-<a id="conversiontaskstatetype"></a>
-
+```python title="Definition"
+ConversionTaskDeletedWaiterName = Literal[
+    "conversion_task_deleted",
+]
+```
 ## ConversionTaskStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ConversionTaskStateType
+
+def get_value() -> ConversionTaskStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `cancelling`
-- `completed`
-
-<a id="copytagsfromsourcetype"></a>
-
+```python title="Definition"
+ConversionTaskStateType = Literal[
+    "active",
+    "cancelled",
+    "cancelling",
+    "completed",
+]
+```
 ## CopyTagsFromSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CopyTagsFromSourceType
+
+def get_value() -> CopyTagsFromSourceType:
+    return "volume"
 ```
 
-Values:
-
-- `volume`
-
-<a id="cpumanufacturertype"></a>
-
+```python title="Definition"
+CopyTagsFromSourceType = Literal[
+    "volume",
+]
+```
 ## CpuManufacturerType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CpuManufacturerType
+
+def get_value() -> CpuManufacturerType:
+    return "amazon-web-services"
 ```
 
-Values:
-
-- `amazon-web-services`
-- `amd`
-- `intel`
-
-<a id="currencycodevaluestype"></a>
-
+```python title="Definition"
+CpuManufacturerType = Literal[
+    "amazon-web-services",
+    "amd",
+    "intel",
+]
+```
 ## CurrencyCodeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CurrencyCodeValuesType
+
+def get_value() -> CurrencyCodeValuesType:
+    return "USD"
 ```
 
-Values:
-
-- `USD`
-
-<a id="customergatewayavailablewaitername"></a>
-
+```python title="Definition"
+CurrencyCodeValuesType = Literal[
+    "USD",
+]
+```
 ## CustomerGatewayAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import CustomerGatewayAvailableWaiterName
+
+def get_value() -> CustomerGatewayAvailableWaiterName:
+    return "customer_gateway_available"
 ```
 
-Values:
-
-- `customer_gateway_available`
-
-<a id="datafeedsubscriptionstatetype"></a>
-
+```python title="Definition"
+CustomerGatewayAvailableWaiterName = Literal[
+    "customer_gateway_available",
+]
+```
 ## DatafeedSubscriptionStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DatafeedSubscriptionStateType
+
+def get_value() -> DatafeedSubscriptionStateType:
+    return "Active"
 ```
 
-Values:
-
-- `Active`
-- `Inactive`
-
-<a id="defaultroutetableassociationvaluetype"></a>
-
+```python title="Definition"
+DatafeedSubscriptionStateType = Literal[
+    "Active",
+    "Inactive",
+]
+```
 ## DefaultRouteTableAssociationValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DefaultRouteTableAssociationValueType
+
+def get_value() -> DefaultRouteTableAssociationValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="defaultroutetablepropagationvaluetype"></a>
-
+```python title="Definition"
+DefaultRouteTableAssociationValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## DefaultRouteTablePropagationValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DefaultRouteTablePropagationValueType
+
+def get_value() -> DefaultRouteTablePropagationValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="defaulttargetcapacitytypetype"></a>
-
+```python title="Definition"
+DefaultRouteTablePropagationValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## DefaultTargetCapacityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DefaultTargetCapacityTypeType
+
+def get_value() -> DefaultTargetCapacityTypeType:
+    return "on-demand"
 ```
 
-Values:
-
-- `on-demand`
-- `spot`
-
-<a id="deletefleeterrorcodetype"></a>
-
+```python title="Definition"
+DefaultTargetCapacityTypeType = Literal[
+    "on-demand",
+    "spot",
+]
+```
 ## DeleteFleetErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DeleteFleetErrorCodeType
+
+def get_value() -> DeleteFleetErrorCodeType:
+    return "fleetIdDoesNotExist"
 ```
 
-Values:
-
-- `fleetIdDoesNotExist`
-- `fleetIdMalformed`
-- `fleetNotInDeletableState`
-- `unexpectedError`
-
-<a id="deletequeuedreservedinstanceserrorcodetype"></a>
-
+```python title="Definition"
+DeleteFleetErrorCodeType = Literal[
+    "fleetIdDoesNotExist",
+    "fleetIdMalformed",
+    "fleetNotInDeletableState",
+    "unexpectedError",
+]
+```
 ## DeleteQueuedReservedInstancesErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DeleteQueuedReservedInstancesErrorCodeType
+
+def get_value() -> DeleteQueuedReservedInstancesErrorCodeType:
+    return "reserved-instances-id-invalid"
 ```
 
-Values:
-
-- `reserved-instances-id-invalid`
-- `reserved-instances-not-in-queued-state`
-- `unexpected-error`
-
-<a id="describeaddressesattributepaginatorname"></a>
-
+```python title="Definition"
+DeleteQueuedReservedInstancesErrorCodeType = Literal[
+    "reserved-instances-id-invalid",
+    "reserved-instances-not-in-queued-state",
+    "unexpected-error",
+]
+```
 ## DescribeAddressesAttributePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeAddressesAttributePaginatorName
+
+def get_value() -> DescribeAddressesAttributePaginatorName:
+    return "describe_addresses_attribute"
 ```
 
-Values:
-
-- `describe_addresses_attribute`
-
-<a id="describebyoipcidrspaginatorname"></a>
-
+```python title="Definition"
+DescribeAddressesAttributePaginatorName = Literal[
+    "describe_addresses_attribute",
+]
+```
 ## DescribeByoipCidrsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeByoipCidrsPaginatorName
+
+def get_value() -> DescribeByoipCidrsPaginatorName:
+    return "describe_byoip_cidrs"
 ```
 
-Values:
-
-- `describe_byoip_cidrs`
-
-<a id="describecapacityreservationfleetspaginatorname"></a>
-
+```python title="Definition"
+DescribeByoipCidrsPaginatorName = Literal[
+    "describe_byoip_cidrs",
+]
+```
 ## DescribeCapacityReservationFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeCapacityReservationFleetsPaginatorName
+
+def get_value() -> DescribeCapacityReservationFleetsPaginatorName:
+    return "describe_capacity_reservation_fleets"
 ```
 
-Values:
-
-- `describe_capacity_reservation_fleets`
-
-<a id="describecapacityreservationspaginatorname"></a>
-
+```python title="Definition"
+DescribeCapacityReservationFleetsPaginatorName = Literal[
+    "describe_capacity_reservation_fleets",
+]
+```
 ## DescribeCapacityReservationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeCapacityReservationsPaginatorName
+
+def get_value() -> DescribeCapacityReservationsPaginatorName:
+    return "describe_capacity_reservations"
 ```
 
-Values:
-
-- `describe_capacity_reservations`
-
-<a id="describecarriergatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeCapacityReservationsPaginatorName = Literal[
+    "describe_capacity_reservations",
+]
+```
 ## DescribeCarrierGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeCarrierGatewaysPaginatorName
+
+def get_value() -> DescribeCarrierGatewaysPaginatorName:
+    return "describe_carrier_gateways"
 ```
 
-Values:
-
-- `describe_carrier_gateways`
-
-<a id="describeclassiclinkinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeCarrierGatewaysPaginatorName = Literal[
+    "describe_carrier_gateways",
+]
+```
 ## DescribeClassicLinkInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClassicLinkInstancesPaginatorName
+
+def get_value() -> DescribeClassicLinkInstancesPaginatorName:
+    return "describe_classic_link_instances"
 ```
 
-Values:
-
-- `describe_classic_link_instances`
-
-<a id="describeclientvpnauthorizationrulespaginatorname"></a>
-
+```python title="Definition"
+DescribeClassicLinkInstancesPaginatorName = Literal[
+    "describe_classic_link_instances",
+]
+```
 ## DescribeClientVpnAuthorizationRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClientVpnAuthorizationRulesPaginatorName
+
+def get_value() -> DescribeClientVpnAuthorizationRulesPaginatorName:
+    return "describe_client_vpn_authorization_rules"
 ```
 
-Values:
-
-- `describe_client_vpn_authorization_rules`
-
-<a id="describeclientvpnconnectionspaginatorname"></a>
-
+```python title="Definition"
+DescribeClientVpnAuthorizationRulesPaginatorName = Literal[
+    "describe_client_vpn_authorization_rules",
+]
+```
 ## DescribeClientVpnConnectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClientVpnConnectionsPaginatorName
+
+def get_value() -> DescribeClientVpnConnectionsPaginatorName:
+    return "describe_client_vpn_connections"
 ```
 
-Values:
-
-- `describe_client_vpn_connections`
-
-<a id="describeclientvpnendpointspaginatorname"></a>
-
+```python title="Definition"
+DescribeClientVpnConnectionsPaginatorName = Literal[
+    "describe_client_vpn_connections",
+]
+```
 ## DescribeClientVpnEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClientVpnEndpointsPaginatorName
+
+def get_value() -> DescribeClientVpnEndpointsPaginatorName:
+    return "describe_client_vpn_endpoints"
 ```
 
-Values:
-
-- `describe_client_vpn_endpoints`
-
-<a id="describeclientvpnroutespaginatorname"></a>
-
+```python title="Definition"
+DescribeClientVpnEndpointsPaginatorName = Literal[
+    "describe_client_vpn_endpoints",
+]
+```
 ## DescribeClientVpnRoutesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClientVpnRoutesPaginatorName
+
+def get_value() -> DescribeClientVpnRoutesPaginatorName:
+    return "describe_client_vpn_routes"
 ```
 
-Values:
-
-- `describe_client_vpn_routes`
-
-<a id="describeclientvpntargetnetworkspaginatorname"></a>
-
+```python title="Definition"
+DescribeClientVpnRoutesPaginatorName = Literal[
+    "describe_client_vpn_routes",
+]
+```
 ## DescribeClientVpnTargetNetworksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeClientVpnTargetNetworksPaginatorName
+
+def get_value() -> DescribeClientVpnTargetNetworksPaginatorName:
+    return "describe_client_vpn_target_networks"
 ```
 
-Values:
-
-- `describe_client_vpn_target_networks`
-
-<a id="describecoippoolspaginatorname"></a>
-
+```python title="Definition"
+DescribeClientVpnTargetNetworksPaginatorName = Literal[
+    "describe_client_vpn_target_networks",
+]
+```
 ## DescribeCoipPoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeCoipPoolsPaginatorName
+
+def get_value() -> DescribeCoipPoolsPaginatorName:
+    return "describe_coip_pools"
 ```
 
-Values:
-
-- `describe_coip_pools`
-
-<a id="describedhcpoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeCoipPoolsPaginatorName = Literal[
+    "describe_coip_pools",
+]
+```
 ## DescribeDhcpOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeDhcpOptionsPaginatorName
+
+def get_value() -> DescribeDhcpOptionsPaginatorName:
+    return "describe_dhcp_options"
 ```
 
-Values:
-
-- `describe_dhcp_options`
-
-<a id="describeegressonlyinternetgatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeDhcpOptionsPaginatorName = Literal[
+    "describe_dhcp_options",
+]
+```
 ## DescribeEgressOnlyInternetGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeEgressOnlyInternetGatewaysPaginatorName
+
+def get_value() -> DescribeEgressOnlyInternetGatewaysPaginatorName:
+    return "describe_egress_only_internet_gateways"
 ```
 
-Values:
-
-- `describe_egress_only_internet_gateways`
-
-<a id="describeexportimagetaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeEgressOnlyInternetGatewaysPaginatorName = Literal[
+    "describe_egress_only_internet_gateways",
+]
+```
 ## DescribeExportImageTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeExportImageTasksPaginatorName
+
+def get_value() -> DescribeExportImageTasksPaginatorName:
+    return "describe_export_image_tasks"
 ```
 
-Values:
-
-- `describe_export_image_tasks`
-
-<a id="describefastlaunchimagespaginatorname"></a>
-
+```python title="Definition"
+DescribeExportImageTasksPaginatorName = Literal[
+    "describe_export_image_tasks",
+]
+```
 ## DescribeFastLaunchImagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeFastLaunchImagesPaginatorName
+
+def get_value() -> DescribeFastLaunchImagesPaginatorName:
+    return "describe_fast_launch_images"
 ```
 
-Values:
-
-- `describe_fast_launch_images`
-
-<a id="describefastsnapshotrestorespaginatorname"></a>
-
+```python title="Definition"
+DescribeFastLaunchImagesPaginatorName = Literal[
+    "describe_fast_launch_images",
+]
+```
 ## DescribeFastSnapshotRestoresPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeFastSnapshotRestoresPaginatorName
+
+def get_value() -> DescribeFastSnapshotRestoresPaginatorName:
+    return "describe_fast_snapshot_restores"
 ```
 
-Values:
-
-- `describe_fast_snapshot_restores`
-
-<a id="describefleetspaginatorname"></a>
-
+```python title="Definition"
+DescribeFastSnapshotRestoresPaginatorName = Literal[
+    "describe_fast_snapshot_restores",
+]
+```
 ## DescribeFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeFleetsPaginatorName
+
+def get_value() -> DescribeFleetsPaginatorName:
+    return "describe_fleets"
 ```
 
-Values:
-
-- `describe_fleets`
-
-<a id="describeflowlogspaginatorname"></a>
-
+```python title="Definition"
+DescribeFleetsPaginatorName = Literal[
+    "describe_fleets",
+]
+```
 ## DescribeFlowLogsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeFlowLogsPaginatorName
+
+def get_value() -> DescribeFlowLogsPaginatorName:
+    return "describe_flow_logs"
 ```
 
-Values:
-
-- `describe_flow_logs`
-
-<a id="describefpgaimagespaginatorname"></a>
-
+```python title="Definition"
+DescribeFlowLogsPaginatorName = Literal[
+    "describe_flow_logs",
+]
+```
 ## DescribeFpgaImagesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeFpgaImagesPaginatorName
+
+def get_value() -> DescribeFpgaImagesPaginatorName:
+    return "describe_fpga_images"
 ```
 
-Values:
-
-- `describe_fpga_images`
-
-<a id="describehostreservationofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribeFpgaImagesPaginatorName = Literal[
+    "describe_fpga_images",
+]
+```
 ## DescribeHostReservationOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeHostReservationOfferingsPaginatorName
+
+def get_value() -> DescribeHostReservationOfferingsPaginatorName:
+    return "describe_host_reservation_offerings"
 ```
 
-Values:
-
-- `describe_host_reservation_offerings`
-
-<a id="describehostreservationspaginatorname"></a>
-
+```python title="Definition"
+DescribeHostReservationOfferingsPaginatorName = Literal[
+    "describe_host_reservation_offerings",
+]
+```
 ## DescribeHostReservationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeHostReservationsPaginatorName
+
+def get_value() -> DescribeHostReservationsPaginatorName:
+    return "describe_host_reservations"
 ```
 
-Values:
-
-- `describe_host_reservations`
-
-<a id="describehostspaginatorname"></a>
-
+```python title="Definition"
+DescribeHostReservationsPaginatorName = Literal[
+    "describe_host_reservations",
+]
+```
 ## DescribeHostsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeHostsPaginatorName
+
+def get_value() -> DescribeHostsPaginatorName:
+    return "describe_hosts"
 ```
 
-Values:
-
-- `describe_hosts`
-
-<a id="describeiaminstanceprofileassociationspaginatorname"></a>
-
+```python title="Definition"
+DescribeHostsPaginatorName = Literal[
+    "describe_hosts",
+]
+```
 ## DescribeIamInstanceProfileAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeIamInstanceProfileAssociationsPaginatorName
+
+def get_value() -> DescribeIamInstanceProfileAssociationsPaginatorName:
+    return "describe_iam_instance_profile_associations"
 ```
 
-Values:
-
-- `describe_iam_instance_profile_associations`
-
-<a id="describeimportimagetaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeIamInstanceProfileAssociationsPaginatorName = Literal[
+    "describe_iam_instance_profile_associations",
+]
+```
 ## DescribeImportImageTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeImportImageTasksPaginatorName
+
+def get_value() -> DescribeImportImageTasksPaginatorName:
+    return "describe_import_image_tasks"
 ```
 
-Values:
-
-- `describe_import_image_tasks`
-
-<a id="describeimportsnapshottaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeImportImageTasksPaginatorName = Literal[
+    "describe_import_image_tasks",
+]
+```
 ## DescribeImportSnapshotTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeImportSnapshotTasksPaginatorName
+
+def get_value() -> DescribeImportSnapshotTasksPaginatorName:
+    return "describe_import_snapshot_tasks"
 ```
 
-Values:
-
-- `describe_import_snapshot_tasks`
-
-<a id="describeinstancecreditspecificationspaginatorname"></a>
-
+```python title="Definition"
+DescribeImportSnapshotTasksPaginatorName = Literal[
+    "describe_import_snapshot_tasks",
+]
+```
 ## DescribeInstanceCreditSpecificationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstanceCreditSpecificationsPaginatorName
+
+def get_value() -> DescribeInstanceCreditSpecificationsPaginatorName:
+    return "describe_instance_credit_specifications"
 ```
 
-Values:
-
-- `describe_instance_credit_specifications`
-
-<a id="describeinstanceeventwindowspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceCreditSpecificationsPaginatorName = Literal[
+    "describe_instance_credit_specifications",
+]
+```
 ## DescribeInstanceEventWindowsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstanceEventWindowsPaginatorName
+
+def get_value() -> DescribeInstanceEventWindowsPaginatorName:
+    return "describe_instance_event_windows"
 ```
 
-Values:
-
-- `describe_instance_event_windows`
-
-<a id="describeinstancestatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceEventWindowsPaginatorName = Literal[
+    "describe_instance_event_windows",
+]
+```
 ## DescribeInstanceStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstanceStatusPaginatorName
+
+def get_value() -> DescribeInstanceStatusPaginatorName:
+    return "describe_instance_status"
 ```
 
-Values:
-
-- `describe_instance_status`
-
-<a id="describeinstancetypeofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceStatusPaginatorName = Literal[
+    "describe_instance_status",
+]
+```
 ## DescribeInstanceTypeOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstanceTypeOfferingsPaginatorName
+
+def get_value() -> DescribeInstanceTypeOfferingsPaginatorName:
+    return "describe_instance_type_offerings"
 ```
 
-Values:
-
-- `describe_instance_type_offerings`
-
-<a id="describeinstancetypespaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceTypeOfferingsPaginatorName = Literal[
+    "describe_instance_type_offerings",
+]
+```
 ## DescribeInstanceTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstanceTypesPaginatorName
+
+def get_value() -> DescribeInstanceTypesPaginatorName:
+    return "describe_instance_types"
 ```
 
-Values:
-
-- `describe_instance_types`
-
-<a id="describeinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeInstanceTypesPaginatorName = Literal[
+    "describe_instance_types",
+]
+```
 ## DescribeInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInstancesPaginatorName
+
+def get_value() -> DescribeInstancesPaginatorName:
+    return "describe_instances"
 ```
 
-Values:
-
-- `describe_instances`
-
-<a id="describeinternetgatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeInstancesPaginatorName = Literal[
+    "describe_instances",
+]
+```
 ## DescribeInternetGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeInternetGatewaysPaginatorName
+
+def get_value() -> DescribeInternetGatewaysPaginatorName:
+    return "describe_internet_gateways"
 ```
 
-Values:
-
-- `describe_internet_gateways`
-
-<a id="describeipampoolspaginatorname"></a>
-
+```python title="Definition"
+DescribeInternetGatewaysPaginatorName = Literal[
+    "describe_internet_gateways",
+]
+```
 ## DescribeIpamPoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeIpamPoolsPaginatorName
+
+def get_value() -> DescribeIpamPoolsPaginatorName:
+    return "describe_ipam_pools"
 ```
 
-Values:
-
-- `describe_ipam_pools`
-
-<a id="describeipamscopespaginatorname"></a>
-
+```python title="Definition"
+DescribeIpamPoolsPaginatorName = Literal[
+    "describe_ipam_pools",
+]
+```
 ## DescribeIpamScopesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeIpamScopesPaginatorName
+
+def get_value() -> DescribeIpamScopesPaginatorName:
+    return "describe_ipam_scopes"
 ```
 
-Values:
-
-- `describe_ipam_scopes`
-
-<a id="describeipamspaginatorname"></a>
-
+```python title="Definition"
+DescribeIpamScopesPaginatorName = Literal[
+    "describe_ipam_scopes",
+]
+```
 ## DescribeIpamsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeIpamsPaginatorName
+
+def get_value() -> DescribeIpamsPaginatorName:
+    return "describe_ipams"
 ```
 
-Values:
-
-- `describe_ipams`
-
-<a id="describeipv6poolspaginatorname"></a>
-
+```python title="Definition"
+DescribeIpamsPaginatorName = Literal[
+    "describe_ipams",
+]
+```
 ## DescribeIpv6PoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeIpv6PoolsPaginatorName
+
+def get_value() -> DescribeIpv6PoolsPaginatorName:
+    return "describe_ipv6_pools"
 ```
 
-Values:
-
-- `describe_ipv6_pools`
-
-<a id="describelaunchtemplateversionspaginatorname"></a>
-
+```python title="Definition"
+DescribeIpv6PoolsPaginatorName = Literal[
+    "describe_ipv6_pools",
+]
+```
 ## DescribeLaunchTemplateVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLaunchTemplateVersionsPaginatorName
+
+def get_value() -> DescribeLaunchTemplateVersionsPaginatorName:
+    return "describe_launch_template_versions"
 ```
 
-Values:
-
-- `describe_launch_template_versions`
-
-<a id="describelaunchtemplatespaginatorname"></a>
-
+```python title="Definition"
+DescribeLaunchTemplateVersionsPaginatorName = Literal[
+    "describe_launch_template_versions",
+]
+```
 ## DescribeLaunchTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLaunchTemplatesPaginatorName
+
+def get_value() -> DescribeLaunchTemplatesPaginatorName:
+    return "describe_launch_templates"
 ```
 
-Values:
-
-- `describe_launch_templates`
-
-<a id="describelocalgatewayroutetablevirtualinterfacegroupassociationspaginatorname"></a>
-
+```python title="Definition"
+DescribeLaunchTemplatesPaginatorName = Literal[
+    "describe_launch_templates",
+]
+```
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName
+
+def get_value() -> DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName:
+    return "describe_local_gateway_route_table_virtual_interface_group_associations"
 ```
 
-Values:
-
-- `describe_local_gateway_route_table_virtual_interface_group_associations`
-
-<a id="describelocalgatewayroutetablevpcassociationspaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginatorName = Literal[
+    "describe_local_gateway_route_table_virtual_interface_group_associations",
+]
+```
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName
+
+def get_value() -> DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName:
+    return "describe_local_gateway_route_table_vpc_associations"
 ```
 
-Values:
-
-- `describe_local_gateway_route_table_vpc_associations`
-
-<a id="describelocalgatewayroutetablespaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewayRouteTableVpcAssociationsPaginatorName = Literal[
+    "describe_local_gateway_route_table_vpc_associations",
+]
+```
 ## DescribeLocalGatewayRouteTablesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewayRouteTablesPaginatorName
+
+def get_value() -> DescribeLocalGatewayRouteTablesPaginatorName:
+    return "describe_local_gateway_route_tables"
 ```
 
-Values:
-
-- `describe_local_gateway_route_tables`
-
-<a id="describelocalgatewayvirtualinterfacegroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewayRouteTablesPaginatorName = Literal[
+    "describe_local_gateway_route_tables",
+]
+```
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName
+
+def get_value() -> DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName:
+    return "describe_local_gateway_virtual_interface_groups"
 ```
 
-Values:
-
-- `describe_local_gateway_virtual_interface_groups`
-
-<a id="describelocalgatewayvirtualinterfacespaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewayVirtualInterfaceGroupsPaginatorName = Literal[
+    "describe_local_gateway_virtual_interface_groups",
+]
+```
 ## DescribeLocalGatewayVirtualInterfacesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewayVirtualInterfacesPaginatorName
+
+def get_value() -> DescribeLocalGatewayVirtualInterfacesPaginatorName:
+    return "describe_local_gateway_virtual_interfaces"
 ```
 
-Values:
-
-- `describe_local_gateway_virtual_interfaces`
-
-<a id="describelocalgatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewayVirtualInterfacesPaginatorName = Literal[
+    "describe_local_gateway_virtual_interfaces",
+]
+```
 ## DescribeLocalGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeLocalGatewaysPaginatorName
+
+def get_value() -> DescribeLocalGatewaysPaginatorName:
+    return "describe_local_gateways"
 ```
 
-Values:
-
-- `describe_local_gateways`
-
-<a id="describemanagedprefixlistspaginatorname"></a>
-
+```python title="Definition"
+DescribeLocalGatewaysPaginatorName = Literal[
+    "describe_local_gateways",
+]
+```
 ## DescribeManagedPrefixListsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeManagedPrefixListsPaginatorName
+
+def get_value() -> DescribeManagedPrefixListsPaginatorName:
+    return "describe_managed_prefix_lists"
 ```
 
-Values:
-
-- `describe_managed_prefix_lists`
-
-<a id="describemovingaddressespaginatorname"></a>
-
+```python title="Definition"
+DescribeManagedPrefixListsPaginatorName = Literal[
+    "describe_managed_prefix_lists",
+]
+```
 ## DescribeMovingAddressesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeMovingAddressesPaginatorName
+
+def get_value() -> DescribeMovingAddressesPaginatorName:
+    return "describe_moving_addresses"
 ```
 
-Values:
-
-- `describe_moving_addresses`
-
-<a id="describenatgatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeMovingAddressesPaginatorName = Literal[
+    "describe_moving_addresses",
+]
+```
 ## DescribeNatGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNatGatewaysPaginatorName
+
+def get_value() -> DescribeNatGatewaysPaginatorName:
+    return "describe_nat_gateways"
 ```
 
-Values:
-
-- `describe_nat_gateways`
-
-<a id="describenetworkaclspaginatorname"></a>
-
+```python title="Definition"
+DescribeNatGatewaysPaginatorName = Literal[
+    "describe_nat_gateways",
+]
+```
 ## DescribeNetworkAclsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkAclsPaginatorName
+
+def get_value() -> DescribeNetworkAclsPaginatorName:
+    return "describe_network_acls"
 ```
 
-Values:
-
-- `describe_network_acls`
-
-<a id="describenetworkinsightsaccessscopeanalysespaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkAclsPaginatorName = Literal[
+    "describe_network_acls",
+]
+```
 ## DescribeNetworkInsightsAccessScopeAnalysesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInsightsAccessScopeAnalysesPaginatorName
+
+def get_value() -> DescribeNetworkInsightsAccessScopeAnalysesPaginatorName:
+    return "describe_network_insights_access_scope_analyses"
 ```
 
-Values:
-
-- `describe_network_insights_access_scope_analyses`
-
-<a id="describenetworkinsightsaccessscopespaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInsightsAccessScopeAnalysesPaginatorName = Literal[
+    "describe_network_insights_access_scope_analyses",
+]
+```
 ## DescribeNetworkInsightsAccessScopesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInsightsAccessScopesPaginatorName
+
+def get_value() -> DescribeNetworkInsightsAccessScopesPaginatorName:
+    return "describe_network_insights_access_scopes"
 ```
 
-Values:
-
-- `describe_network_insights_access_scopes`
-
-<a id="describenetworkinsightsanalysespaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInsightsAccessScopesPaginatorName = Literal[
+    "describe_network_insights_access_scopes",
+]
+```
 ## DescribeNetworkInsightsAnalysesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInsightsAnalysesPaginatorName
+
+def get_value() -> DescribeNetworkInsightsAnalysesPaginatorName:
+    return "describe_network_insights_analyses"
 ```
 
-Values:
-
-- `describe_network_insights_analyses`
-
-<a id="describenetworkinsightspathspaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInsightsAnalysesPaginatorName = Literal[
+    "describe_network_insights_analyses",
+]
+```
 ## DescribeNetworkInsightsPathsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInsightsPathsPaginatorName
+
+def get_value() -> DescribeNetworkInsightsPathsPaginatorName:
+    return "describe_network_insights_paths"
 ```
 
-Values:
-
-- `describe_network_insights_paths`
-
-<a id="describenetworkinterfacepermissionspaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInsightsPathsPaginatorName = Literal[
+    "describe_network_insights_paths",
+]
+```
 ## DescribeNetworkInterfacePermissionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInterfacePermissionsPaginatorName
+
+def get_value() -> DescribeNetworkInterfacePermissionsPaginatorName:
+    return "describe_network_interface_permissions"
 ```
 
-Values:
-
-- `describe_network_interface_permissions`
-
-<a id="describenetworkinterfacespaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInterfacePermissionsPaginatorName = Literal[
+    "describe_network_interface_permissions",
+]
+```
 ## DescribeNetworkInterfacesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeNetworkInterfacesPaginatorName
+
+def get_value() -> DescribeNetworkInterfacesPaginatorName:
+    return "describe_network_interfaces"
 ```
 
-Values:
-
-- `describe_network_interfaces`
-
-<a id="describeprefixlistspaginatorname"></a>
-
+```python title="Definition"
+DescribeNetworkInterfacesPaginatorName = Literal[
+    "describe_network_interfaces",
+]
+```
 ## DescribePrefixListsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribePrefixListsPaginatorName
+
+def get_value() -> DescribePrefixListsPaginatorName:
+    return "describe_prefix_lists"
 ```
 
-Values:
-
-- `describe_prefix_lists`
-
-<a id="describeprincipalidformatpaginatorname"></a>
-
+```python title="Definition"
+DescribePrefixListsPaginatorName = Literal[
+    "describe_prefix_lists",
+]
+```
 ## DescribePrincipalIdFormatPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribePrincipalIdFormatPaginatorName
+
+def get_value() -> DescribePrincipalIdFormatPaginatorName:
+    return "describe_principal_id_format"
 ```
 
-Values:
-
-- `describe_principal_id_format`
-
-<a id="describepublicipv4poolspaginatorname"></a>
-
+```python title="Definition"
+DescribePrincipalIdFormatPaginatorName = Literal[
+    "describe_principal_id_format",
+]
+```
 ## DescribePublicIpv4PoolsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribePublicIpv4PoolsPaginatorName
+
+def get_value() -> DescribePublicIpv4PoolsPaginatorName:
+    return "describe_public_ipv4_pools"
 ```
 
-Values:
-
-- `describe_public_ipv4_pools`
-
-<a id="describereplacerootvolumetaskspaginatorname"></a>
-
+```python title="Definition"
+DescribePublicIpv4PoolsPaginatorName = Literal[
+    "describe_public_ipv4_pools",
+]
+```
 ## DescribeReplaceRootVolumeTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeReplaceRootVolumeTasksPaginatorName
+
+def get_value() -> DescribeReplaceRootVolumeTasksPaginatorName:
+    return "describe_replace_root_volume_tasks"
 ```
 
-Values:
-
-- `describe_replace_root_volume_tasks`
-
-<a id="describereservedinstancesmodificationspaginatorname"></a>
-
+```python title="Definition"
+DescribeReplaceRootVolumeTasksPaginatorName = Literal[
+    "describe_replace_root_volume_tasks",
+]
+```
 ## DescribeReservedInstancesModificationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeReservedInstancesModificationsPaginatorName
+
+def get_value() -> DescribeReservedInstancesModificationsPaginatorName:
+    return "describe_reserved_instances_modifications"
 ```
 
-Values:
-
-- `describe_reserved_instances_modifications`
-
-<a id="describereservedinstancesofferingspaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedInstancesModificationsPaginatorName = Literal[
+    "describe_reserved_instances_modifications",
+]
+```
 ## DescribeReservedInstancesOfferingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeReservedInstancesOfferingsPaginatorName
+
+def get_value() -> DescribeReservedInstancesOfferingsPaginatorName:
+    return "describe_reserved_instances_offerings"
 ```
 
-Values:
-
-- `describe_reserved_instances_offerings`
-
-<a id="describeroutetablespaginatorname"></a>
-
+```python title="Definition"
+DescribeReservedInstancesOfferingsPaginatorName = Literal[
+    "describe_reserved_instances_offerings",
+]
+```
 ## DescribeRouteTablesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeRouteTablesPaginatorName
+
+def get_value() -> DescribeRouteTablesPaginatorName:
+    return "describe_route_tables"
 ```
 
-Values:
-
-- `describe_route_tables`
-
-<a id="describescheduledinstanceavailabilitypaginatorname"></a>
-
+```python title="Definition"
+DescribeRouteTablesPaginatorName = Literal[
+    "describe_route_tables",
+]
+```
 ## DescribeScheduledInstanceAvailabilityPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeScheduledInstanceAvailabilityPaginatorName
+
+def get_value() -> DescribeScheduledInstanceAvailabilityPaginatorName:
+    return "describe_scheduled_instance_availability"
 ```
 
-Values:
-
-- `describe_scheduled_instance_availability`
-
-<a id="describescheduledinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeScheduledInstanceAvailabilityPaginatorName = Literal[
+    "describe_scheduled_instance_availability",
+]
+```
 ## DescribeScheduledInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeScheduledInstancesPaginatorName
+
+def get_value() -> DescribeScheduledInstancesPaginatorName:
+    return "describe_scheduled_instances"
 ```
 
-Values:
-
-- `describe_scheduled_instances`
-
-<a id="describesecuritygrouprulespaginatorname"></a>
-
+```python title="Definition"
+DescribeScheduledInstancesPaginatorName = Literal[
+    "describe_scheduled_instances",
+]
+```
 ## DescribeSecurityGroupRulesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSecurityGroupRulesPaginatorName
+
+def get_value() -> DescribeSecurityGroupRulesPaginatorName:
+    return "describe_security_group_rules"
 ```
 
-Values:
-
-- `describe_security_group_rules`
-
-<a id="describesecuritygroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeSecurityGroupRulesPaginatorName = Literal[
+    "describe_security_group_rules",
+]
+```
 ## DescribeSecurityGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSecurityGroupsPaginatorName
+
+def get_value() -> DescribeSecurityGroupsPaginatorName:
+    return "describe_security_groups"
 ```
 
-Values:
-
-- `describe_security_groups`
-
-<a id="describesnapshottierstatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeSecurityGroupsPaginatorName = Literal[
+    "describe_security_groups",
+]
+```
 ## DescribeSnapshotTierStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSnapshotTierStatusPaginatorName
+
+def get_value() -> DescribeSnapshotTierStatusPaginatorName:
+    return "describe_snapshot_tier_status"
 ```
 
-Values:
-
-- `describe_snapshot_tier_status`
-
-<a id="describesnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotTierStatusPaginatorName = Literal[
+    "describe_snapshot_tier_status",
+]
+```
 ## DescribeSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSnapshotsPaginatorName
+
+def get_value() -> DescribeSnapshotsPaginatorName:
+    return "describe_snapshots"
 ```
 
-Values:
-
-- `describe_snapshots`
-
-<a id="describespotfleetinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeSnapshotsPaginatorName = Literal[
+    "describe_snapshots",
+]
+```
 ## DescribeSpotFleetInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSpotFleetInstancesPaginatorName
+
+def get_value() -> DescribeSpotFleetInstancesPaginatorName:
+    return "describe_spot_fleet_instances"
 ```
 
-Values:
-
-- `describe_spot_fleet_instances`
-
-<a id="describespotfleetrequestspaginatorname"></a>
-
+```python title="Definition"
+DescribeSpotFleetInstancesPaginatorName = Literal[
+    "describe_spot_fleet_instances",
+]
+```
 ## DescribeSpotFleetRequestsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSpotFleetRequestsPaginatorName
+
+def get_value() -> DescribeSpotFleetRequestsPaginatorName:
+    return "describe_spot_fleet_requests"
 ```
 
-Values:
-
-- `describe_spot_fleet_requests`
-
-<a id="describespotinstancerequestspaginatorname"></a>
-
+```python title="Definition"
+DescribeSpotFleetRequestsPaginatorName = Literal[
+    "describe_spot_fleet_requests",
+]
+```
 ## DescribeSpotInstanceRequestsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSpotInstanceRequestsPaginatorName
+
+def get_value() -> DescribeSpotInstanceRequestsPaginatorName:
+    return "describe_spot_instance_requests"
 ```
 
-Values:
-
-- `describe_spot_instance_requests`
-
-<a id="describespotpricehistorypaginatorname"></a>
-
+```python title="Definition"
+DescribeSpotInstanceRequestsPaginatorName = Literal[
+    "describe_spot_instance_requests",
+]
+```
 ## DescribeSpotPriceHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSpotPriceHistoryPaginatorName
+
+def get_value() -> DescribeSpotPriceHistoryPaginatorName:
+    return "describe_spot_price_history"
 ```
 
-Values:
-
-- `describe_spot_price_history`
-
-<a id="describestalesecuritygroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeSpotPriceHistoryPaginatorName = Literal[
+    "describe_spot_price_history",
+]
+```
 ## DescribeStaleSecurityGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeStaleSecurityGroupsPaginatorName
+
+def get_value() -> DescribeStaleSecurityGroupsPaginatorName:
+    return "describe_stale_security_groups"
 ```
 
-Values:
-
-- `describe_stale_security_groups`
-
-<a id="describestoreimagetaskspaginatorname"></a>
-
+```python title="Definition"
+DescribeStaleSecurityGroupsPaginatorName = Literal[
+    "describe_stale_security_groups",
+]
+```
 ## DescribeStoreImageTasksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeStoreImageTasksPaginatorName
+
+def get_value() -> DescribeStoreImageTasksPaginatorName:
+    return "describe_store_image_tasks"
 ```
 
-Values:
-
-- `describe_store_image_tasks`
-
-<a id="describesubnetspaginatorname"></a>
-
+```python title="Definition"
+DescribeStoreImageTasksPaginatorName = Literal[
+    "describe_store_image_tasks",
+]
+```
 ## DescribeSubnetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeSubnetsPaginatorName
+
+def get_value() -> DescribeSubnetsPaginatorName:
+    return "describe_subnets"
 ```
 
-Values:
-
-- `describe_subnets`
-
-<a id="describetagspaginatorname"></a>
-
+```python title="Definition"
+DescribeSubnetsPaginatorName = Literal[
+    "describe_subnets",
+]
+```
 ## DescribeTagsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTagsPaginatorName
+
+def get_value() -> DescribeTagsPaginatorName:
+    return "describe_tags"
 ```
 
-Values:
-
-- `describe_tags`
-
-<a id="describetrafficmirrorfilterspaginatorname"></a>
-
+```python title="Definition"
+DescribeTagsPaginatorName = Literal[
+    "describe_tags",
+]
+```
 ## DescribeTrafficMirrorFiltersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTrafficMirrorFiltersPaginatorName
+
+def get_value() -> DescribeTrafficMirrorFiltersPaginatorName:
+    return "describe_traffic_mirror_filters"
 ```
 
-Values:
-
-- `describe_traffic_mirror_filters`
-
-<a id="describetrafficmirrorsessionspaginatorname"></a>
-
+```python title="Definition"
+DescribeTrafficMirrorFiltersPaginatorName = Literal[
+    "describe_traffic_mirror_filters",
+]
+```
 ## DescribeTrafficMirrorSessionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTrafficMirrorSessionsPaginatorName
+
+def get_value() -> DescribeTrafficMirrorSessionsPaginatorName:
+    return "describe_traffic_mirror_sessions"
 ```
 
-Values:
-
-- `describe_traffic_mirror_sessions`
-
-<a id="describetrafficmirrortargetspaginatorname"></a>
-
+```python title="Definition"
+DescribeTrafficMirrorSessionsPaginatorName = Literal[
+    "describe_traffic_mirror_sessions",
+]
+```
 ## DescribeTrafficMirrorTargetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTrafficMirrorTargetsPaginatorName
+
+def get_value() -> DescribeTrafficMirrorTargetsPaginatorName:
+    return "describe_traffic_mirror_targets"
 ```
 
-Values:
-
-- `describe_traffic_mirror_targets`
-
-<a id="describetransitgatewayattachmentspaginatorname"></a>
-
+```python title="Definition"
+DescribeTrafficMirrorTargetsPaginatorName = Literal[
+    "describe_traffic_mirror_targets",
+]
+```
 ## DescribeTransitGatewayAttachmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayAttachmentsPaginatorName
+
+def get_value() -> DescribeTransitGatewayAttachmentsPaginatorName:
+    return "describe_transit_gateway_attachments"
 ```
 
-Values:
-
-- `describe_transit_gateway_attachments`
-
-<a id="describetransitgatewayconnectpeerspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayAttachmentsPaginatorName = Literal[
+    "describe_transit_gateway_attachments",
+]
+```
 ## DescribeTransitGatewayConnectPeersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayConnectPeersPaginatorName
+
+def get_value() -> DescribeTransitGatewayConnectPeersPaginatorName:
+    return "describe_transit_gateway_connect_peers"
 ```
 
-Values:
-
-- `describe_transit_gateway_connect_peers`
-
-<a id="describetransitgatewayconnectspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayConnectPeersPaginatorName = Literal[
+    "describe_transit_gateway_connect_peers",
+]
+```
 ## DescribeTransitGatewayConnectsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayConnectsPaginatorName
+
+def get_value() -> DescribeTransitGatewayConnectsPaginatorName:
+    return "describe_transit_gateway_connects"
 ```
 
-Values:
-
-- `describe_transit_gateway_connects`
-
-<a id="describetransitgatewaymulticastdomainspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayConnectsPaginatorName = Literal[
+    "describe_transit_gateway_connects",
+]
+```
 ## DescribeTransitGatewayMulticastDomainsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayMulticastDomainsPaginatorName
+
+def get_value() -> DescribeTransitGatewayMulticastDomainsPaginatorName:
+    return "describe_transit_gateway_multicast_domains"
 ```
 
-Values:
-
-- `describe_transit_gateway_multicast_domains`
-
-<a id="describetransitgatewaypeeringattachmentspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayMulticastDomainsPaginatorName = Literal[
+    "describe_transit_gateway_multicast_domains",
+]
+```
 ## DescribeTransitGatewayPeeringAttachmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayPeeringAttachmentsPaginatorName
+
+def get_value() -> DescribeTransitGatewayPeeringAttachmentsPaginatorName:
+    return "describe_transit_gateway_peering_attachments"
 ```
 
-Values:
-
-- `describe_transit_gateway_peering_attachments`
-
-<a id="describetransitgatewayroutetablespaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayPeeringAttachmentsPaginatorName = Literal[
+    "describe_transit_gateway_peering_attachments",
+]
+```
 ## DescribeTransitGatewayRouteTablesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayRouteTablesPaginatorName
+
+def get_value() -> DescribeTransitGatewayRouteTablesPaginatorName:
+    return "describe_transit_gateway_route_tables"
 ```
 
-Values:
-
-- `describe_transit_gateway_route_tables`
-
-<a id="describetransitgatewayvpcattachmentspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayRouteTablesPaginatorName = Literal[
+    "describe_transit_gateway_route_tables",
+]
+```
 ## DescribeTransitGatewayVpcAttachmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewayVpcAttachmentsPaginatorName
+
+def get_value() -> DescribeTransitGatewayVpcAttachmentsPaginatorName:
+    return "describe_transit_gateway_vpc_attachments"
 ```
 
-Values:
-
-- `describe_transit_gateway_vpc_attachments`
-
-<a id="describetransitgatewayspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewayVpcAttachmentsPaginatorName = Literal[
+    "describe_transit_gateway_vpc_attachments",
+]
+```
 ## DescribeTransitGatewaysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTransitGatewaysPaginatorName
+
+def get_value() -> DescribeTransitGatewaysPaginatorName:
+    return "describe_transit_gateways"
 ```
 
-Values:
-
-- `describe_transit_gateways`
-
-<a id="describetrunkinterfaceassociationspaginatorname"></a>
-
+```python title="Definition"
+DescribeTransitGatewaysPaginatorName = Literal[
+    "describe_transit_gateways",
+]
+```
 ## DescribeTrunkInterfaceAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeTrunkInterfaceAssociationsPaginatorName
+
+def get_value() -> DescribeTrunkInterfaceAssociationsPaginatorName:
+    return "describe_trunk_interface_associations"
 ```
 
-Values:
-
-- `describe_trunk_interface_associations`
-
-<a id="describevolumestatuspaginatorname"></a>
-
+```python title="Definition"
+DescribeTrunkInterfaceAssociationsPaginatorName = Literal[
+    "describe_trunk_interface_associations",
+]
+```
 ## DescribeVolumeStatusPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVolumeStatusPaginatorName
+
+def get_value() -> DescribeVolumeStatusPaginatorName:
+    return "describe_volume_status"
 ```
 
-Values:
-
-- `describe_volume_status`
-
-<a id="describevolumesmodificationspaginatorname"></a>
-
+```python title="Definition"
+DescribeVolumeStatusPaginatorName = Literal[
+    "describe_volume_status",
+]
+```
 ## DescribeVolumesModificationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVolumesModificationsPaginatorName
+
+def get_value() -> DescribeVolumesModificationsPaginatorName:
+    return "describe_volumes_modifications"
 ```
 
-Values:
-
-- `describe_volumes_modifications`
-
-<a id="describevolumespaginatorname"></a>
-
+```python title="Definition"
+DescribeVolumesModificationsPaginatorName = Literal[
+    "describe_volumes_modifications",
+]
+```
 ## DescribeVolumesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVolumesPaginatorName
+
+def get_value() -> DescribeVolumesPaginatorName:
+    return "describe_volumes"
 ```
 
-Values:
-
-- `describe_volumes`
-
-<a id="describevpcclassiclinkdnssupportpaginatorname"></a>
-
+```python title="Definition"
+DescribeVolumesPaginatorName = Literal[
+    "describe_volumes",
+]
+```
 ## DescribeVpcClassicLinkDnsSupportPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcClassicLinkDnsSupportPaginatorName
+
+def get_value() -> DescribeVpcClassicLinkDnsSupportPaginatorName:
+    return "describe_vpc_classic_link_dns_support"
 ```
 
-Values:
-
-- `describe_vpc_classic_link_dns_support`
-
-<a id="describevpcendpointconnectionnotificationspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcClassicLinkDnsSupportPaginatorName = Literal[
+    "describe_vpc_classic_link_dns_support",
+]
+```
 ## DescribeVpcEndpointConnectionNotificationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointConnectionNotificationsPaginatorName
+
+def get_value() -> DescribeVpcEndpointConnectionNotificationsPaginatorName:
+    return "describe_vpc_endpoint_connection_notifications"
 ```
 
-Values:
-
-- `describe_vpc_endpoint_connection_notifications`
-
-<a id="describevpcendpointconnectionspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointConnectionNotificationsPaginatorName = Literal[
+    "describe_vpc_endpoint_connection_notifications",
+]
+```
 ## DescribeVpcEndpointConnectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointConnectionsPaginatorName
+
+def get_value() -> DescribeVpcEndpointConnectionsPaginatorName:
+    return "describe_vpc_endpoint_connections"
 ```
 
-Values:
-
-- `describe_vpc_endpoint_connections`
-
-<a id="describevpcendpointserviceconfigurationspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointConnectionsPaginatorName = Literal[
+    "describe_vpc_endpoint_connections",
+]
+```
 ## DescribeVpcEndpointServiceConfigurationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointServiceConfigurationsPaginatorName
+
+def get_value() -> DescribeVpcEndpointServiceConfigurationsPaginatorName:
+    return "describe_vpc_endpoint_service_configurations"
 ```
 
-Values:
-
-- `describe_vpc_endpoint_service_configurations`
-
-<a id="describevpcendpointservicepermissionspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointServiceConfigurationsPaginatorName = Literal[
+    "describe_vpc_endpoint_service_configurations",
+]
+```
 ## DescribeVpcEndpointServicePermissionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointServicePermissionsPaginatorName
+
+def get_value() -> DescribeVpcEndpointServicePermissionsPaginatorName:
+    return "describe_vpc_endpoint_service_permissions"
 ```
 
-Values:
-
-- `describe_vpc_endpoint_service_permissions`
-
-<a id="describevpcendpointservicespaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointServicePermissionsPaginatorName = Literal[
+    "describe_vpc_endpoint_service_permissions",
+]
+```
 ## DescribeVpcEndpointServicesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointServicesPaginatorName
+
+def get_value() -> DescribeVpcEndpointServicesPaginatorName:
+    return "describe_vpc_endpoint_services"
 ```
 
-Values:
-
-- `describe_vpc_endpoint_services`
-
-<a id="describevpcendpointspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointServicesPaginatorName = Literal[
+    "describe_vpc_endpoint_services",
+]
+```
 ## DescribeVpcEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcEndpointsPaginatorName
+
+def get_value() -> DescribeVpcEndpointsPaginatorName:
+    return "describe_vpc_endpoints"
 ```
 
-Values:
-
-- `describe_vpc_endpoints`
-
-<a id="describevpcpeeringconnectionspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcEndpointsPaginatorName = Literal[
+    "describe_vpc_endpoints",
+]
+```
 ## DescribeVpcPeeringConnectionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcPeeringConnectionsPaginatorName
+
+def get_value() -> DescribeVpcPeeringConnectionsPaginatorName:
+    return "describe_vpc_peering_connections"
 ```
 
-Values:
-
-- `describe_vpc_peering_connections`
-
-<a id="describevpcspaginatorname"></a>
-
+```python title="Definition"
+DescribeVpcPeeringConnectionsPaginatorName = Literal[
+    "describe_vpc_peering_connections",
+]
+```
 ## DescribeVpcsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DescribeVpcsPaginatorName
+
+def get_value() -> DescribeVpcsPaginatorName:
+    return "describe_vpcs"
 ```
 
-Values:
-
-- `describe_vpcs`
-
-<a id="destinationfileformattype"></a>
-
+```python title="Definition"
+DescribeVpcsPaginatorName = Literal[
+    "describe_vpcs",
+]
+```
 ## DestinationFileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DestinationFileFormatType
+
+def get_value() -> DestinationFileFormatType:
+    return "parquet"
 ```
 
-Values:
-
-- `parquet`
-- `plain-text`
-
-<a id="devicetypetype"></a>
-
+```python title="Definition"
+DestinationFileFormatType = Literal[
+    "parquet",
+    "plain-text",
+]
+```
 ## DeviceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DeviceTypeType
+
+def get_value() -> DeviceTypeType:
+    return "ebs"
 ```
 
-Values:
-
-- `ebs`
-- `instance-store`
-
-<a id="diskimageformattype"></a>
-
+```python title="Definition"
+DeviceTypeType = Literal[
+    "ebs",
+    "instance-store",
+]
+```
 ## DiskImageFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DiskImageFormatType
+
+def get_value() -> DiskImageFormatType:
+    return "RAW"
 ```
 
-Values:
-
-- `RAW`
-- `VHD`
-- `VMDK`
-
-<a id="disktypetype"></a>
-
+```python title="Definition"
+DiskImageFormatType = Literal[
+    "RAW",
+    "VHD",
+    "VMDK",
+]
+```
 ## DiskTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DiskTypeType
+
+def get_value() -> DiskTypeType:
+    return "hdd"
 ```
 
-Values:
-
-- `hdd`
-- `ssd`
-
-<a id="dnsnamestatetype"></a>
-
+```python title="Definition"
+DiskTypeType = Literal[
+    "hdd",
+    "ssd",
+]
+```
 ## DnsNameStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DnsNameStateType
+
+def get_value() -> DnsNameStateType:
+    return "failed"
 ```
 
-Values:
-
-- `failed`
-- `pendingVerification`
-- `verified`
-
-<a id="dnssupportvaluetype"></a>
-
+```python title="Definition"
+DnsNameStateType = Literal[
+    "failed",
+    "pendingVerification",
+    "verified",
+]
+```
 ## DnsSupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DnsSupportValueType
+
+def get_value() -> DnsSupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="domaintypetype"></a>
-
+```python title="Definition"
+DnsSupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## DomainTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import DomainTypeType
+
+def get_value() -> DomainTypeType:
+    return "standard"
 ```
 
-Values:
-
-- `standard`
-- `vpc`
-
-<a id="ebsencryptionsupporttype"></a>
-
+```python title="Definition"
+DomainTypeType = Literal[
+    "standard",
+    "vpc",
+]
+```
 ## EbsEncryptionSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EbsEncryptionSupportType
+
+def get_value() -> EbsEncryptionSupportType:
+    return "supported"
 ```
 
-Values:
-
-- `supported`
-- `unsupported`
-
-<a id="ebsnvmesupporttype"></a>
-
+```python title="Definition"
+EbsEncryptionSupportType = Literal[
+    "supported",
+    "unsupported",
+]
+```
 ## EbsNvmeSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EbsNvmeSupportType
+
+def get_value() -> EbsNvmeSupportType:
+    return "required"
 ```
 
-Values:
-
-- `required`
-- `supported`
-- `unsupported`
-
-<a id="ebsoptimizedsupporttype"></a>
-
+```python title="Definition"
+EbsNvmeSupportType = Literal[
+    "required",
+    "supported",
+    "unsupported",
+]
+```
 ## EbsOptimizedSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EbsOptimizedSupportType
+
+def get_value() -> EbsOptimizedSupportType:
+    return "default"
 ```
 
-Values:
-
-- `default`
-- `supported`
-- `unsupported`
-
-<a id="elasticgpustatetype"></a>
-
+```python title="Definition"
+EbsOptimizedSupportType = Literal[
+    "default",
+    "supported",
+    "unsupported",
+]
+```
 ## ElasticGpuStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ElasticGpuStateType
+
+def get_value() -> ElasticGpuStateType:
+    return "ATTACHED"
 ```
 
-Values:
-
-- `ATTACHED`
-
-<a id="elasticgpustatustype"></a>
-
+```python title="Definition"
+ElasticGpuStateType = Literal[
+    "ATTACHED",
+]
+```
 ## ElasticGpuStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ElasticGpuStatusType
+
+def get_value() -> ElasticGpuStatusType:
+    return "IMPAIRED"
 ```
 
-Values:
-
-- `IMPAIRED`
-- `OK`
-
-<a id="enasupporttype"></a>
-
+```python title="Definition"
+ElasticGpuStatusType = Literal[
+    "IMPAIRED",
+    "OK",
+]
+```
 ## EnaSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EnaSupportType
+
+def get_value() -> EnaSupportType:
+    return "required"
 ```
 
-Values:
-
-- `required`
-- `supported`
-- `unsupported`
-
-<a id="enddatetypetype"></a>
-
+```python title="Definition"
+EnaSupportType = Literal[
+    "required",
+    "supported",
+    "unsupported",
+]
+```
 ## EndDateTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EndDateTypeType
+
+def get_value() -> EndDateTypeType:
+    return "limited"
 ```
 
-Values:
-
-- `limited`
-- `unlimited`
-
-<a id="ephemeralnvmesupporttype"></a>
-
+```python title="Definition"
+EndDateTypeType = Literal[
+    "limited",
+    "unlimited",
+]
+```
 ## EphemeralNvmeSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EphemeralNvmeSupportType
+
+def get_value() -> EphemeralNvmeSupportType:
+    return "required"
 ```
 
-Values:
-
-- `required`
-- `supported`
-- `unsupported`
-
-<a id="eventcodetype"></a>
-
+```python title="Definition"
+EphemeralNvmeSupportType = Literal[
+    "required",
+    "supported",
+    "unsupported",
+]
+```
 ## EventCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EventCodeType
+
+def get_value() -> EventCodeType:
+    return "instance-reboot"
 ```
 
-Values:
-
-- `instance-reboot`
-- `instance-retirement`
-- `instance-stop`
-- `system-maintenance`
-- `system-reboot`
-
-<a id="eventtypetype"></a>
-
+```python title="Definition"
+EventCodeType = Literal[
+    "instance-reboot",
+    "instance-retirement",
+    "instance-stop",
+    "system-maintenance",
+    "system-reboot",
+]
+```
 ## EventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EventTypeType
+
+def get_value() -> EventTypeType:
+    return "error"
 ```
 
-Values:
-
-- `error`
-- `fleetRequestChange`
-- `information`
-- `instanceChange`
-
-<a id="excesscapacityterminationpolicytype"></a>
-
+```python title="Definition"
+EventTypeType = Literal[
+    "error",
+    "fleetRequestChange",
+    "information",
+    "instanceChange",
+]
+```
 ## ExcessCapacityTerminationPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ExcessCapacityTerminationPolicyType
+
+def get_value() -> ExcessCapacityTerminationPolicyType:
+    return "default"
 ```
 
-Values:
-
-- `default`
-- `noTermination`
-
-<a id="exportenvironmenttype"></a>
-
+```python title="Definition"
+ExcessCapacityTerminationPolicyType = Literal[
+    "default",
+    "noTermination",
+]
+```
 ## ExportEnvironmentType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ExportEnvironmentType
+
+def get_value() -> ExportEnvironmentType:
+    return "citrix"
 ```
 
-Values:
-
-- `citrix`
-- `microsoft`
-- `vmware`
-
-<a id="exporttaskcancelledwaitername"></a>
-
+```python title="Definition"
+ExportEnvironmentType = Literal[
+    "citrix",
+    "microsoft",
+    "vmware",
+]
+```
 ## ExportTaskCancelledWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ExportTaskCancelledWaiterName
+
+def get_value() -> ExportTaskCancelledWaiterName:
+    return "export_task_cancelled"
 ```
 
-Values:
-
-- `export_task_cancelled`
-
-<a id="exporttaskcompletedwaitername"></a>
-
+```python title="Definition"
+ExportTaskCancelledWaiterName = Literal[
+    "export_task_cancelled",
+]
+```
 ## ExportTaskCompletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ExportTaskCompletedWaiterName
+
+def get_value() -> ExportTaskCompletedWaiterName:
+    return "export_task_completed"
 ```
 
-Values:
-
-- `export_task_completed`
-
-<a id="exporttaskstatetype"></a>
-
+```python title="Definition"
+ExportTaskCompletedWaiterName = Literal[
+    "export_task_completed",
+]
+```
 ## ExportTaskStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ExportTaskStateType
+
+def get_value() -> ExportTaskStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `cancelling`
-- `completed`
-
-<a id="fastlaunchresourcetypetype"></a>
-
+```python title="Definition"
+ExportTaskStateType = Literal[
+    "active",
+    "cancelled",
+    "cancelling",
+    "completed",
+]
+```
 ## FastLaunchResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FastLaunchResourceTypeType
+
+def get_value() -> FastLaunchResourceTypeType:
+    return "snapshot"
 ```
 
-Values:
-
-- `snapshot`
-
-<a id="fastlaunchstatecodetype"></a>
-
+```python title="Definition"
+FastLaunchResourceTypeType = Literal[
+    "snapshot",
+]
+```
 ## FastLaunchStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FastLaunchStateCodeType
+
+def get_value() -> FastLaunchStateCodeType:
+    return "disabling"
 ```
 
-Values:
-
-- `disabling`
-- `disabling-failed`
-- `enabled`
-- `enabled-failed`
-- `enabling`
-- `enabling-failed`
-
-<a id="fastsnapshotrestorestatecodetype"></a>
-
+```python title="Definition"
+FastLaunchStateCodeType = Literal[
+    "disabling",
+    "disabling-failed",
+    "enabled",
+    "enabled-failed",
+    "enabling",
+    "enabling-failed",
+]
+```
 ## FastSnapshotRestoreStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FastSnapshotRestoreStateCodeType
+
+def get_value() -> FastSnapshotRestoreStateCodeType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `disabling`
-- `enabled`
-- `enabling`
-- `optimizing`
-
-<a id="findingsfoundtype"></a>
-
+```python title="Definition"
+FastSnapshotRestoreStateCodeType = Literal[
+    "disabled",
+    "disabling",
+    "enabled",
+    "enabling",
+    "optimizing",
+]
+```
 ## FindingsFoundType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FindingsFoundType
+
+def get_value() -> FindingsFoundType:
+    return "false"
 ```
 
-Values:
-
-- `false`
-- `true`
-- `unknown`
-
-<a id="fleetactivitystatustype"></a>
-
+```python title="Definition"
+FindingsFoundType = Literal[
+    "false",
+    "true",
+    "unknown",
+]
+```
 ## FleetActivityStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetActivityStatusType
+
+def get_value() -> FleetActivityStatusType:
+    return "error"
 ```
 
-Values:
-
-- `error`
-- `fulfilled`
-- `pending_fulfillment`
-- `pending_termination`
-
-<a id="fleetcapacityreservationtenancytype"></a>
-
+```python title="Definition"
+FleetActivityStatusType = Literal[
+    "error",
+    "fulfilled",
+    "pending_fulfillment",
+    "pending_termination",
+]
+```
 ## FleetCapacityReservationTenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetCapacityReservationTenancyType
+
+def get_value() -> FleetCapacityReservationTenancyType:
+    return "default"
 ```
 
-Values:
-
-- `default`
-
-<a id="fleetcapacityreservationusagestrategytype"></a>
-
+```python title="Definition"
+FleetCapacityReservationTenancyType = Literal[
+    "default",
+]
+```
 ## FleetCapacityReservationUsageStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetCapacityReservationUsageStrategyType
+
+def get_value() -> FleetCapacityReservationUsageStrategyType:
+    return "use-capacity-reservations-first"
 ```
 
-Values:
-
-- `use-capacity-reservations-first`
-
-<a id="fleeteventtypetype"></a>
-
+```python title="Definition"
+FleetCapacityReservationUsageStrategyType = Literal[
+    "use-capacity-reservations-first",
+]
+```
 ## FleetEventTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetEventTypeType
+
+def get_value() -> FleetEventTypeType:
+    return "fleet-change"
 ```
 
-Values:
-
-- `fleet-change`
-- `instance-change`
-- `service-error`
-
-<a id="fleetexcesscapacityterminationpolicytype"></a>
-
+```python title="Definition"
+FleetEventTypeType = Literal[
+    "fleet-change",
+    "instance-change",
+    "service-error",
+]
+```
 ## FleetExcessCapacityTerminationPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetExcessCapacityTerminationPolicyType
+
+def get_value() -> FleetExcessCapacityTerminationPolicyType:
+    return "no-termination"
 ```
 
-Values:
-
-- `no-termination`
-- `termination`
-
-<a id="fleetinstancematchcriteriatype"></a>
-
+```python title="Definition"
+FleetExcessCapacityTerminationPolicyType = Literal[
+    "no-termination",
+    "termination",
+]
+```
 ## FleetInstanceMatchCriteriaType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetInstanceMatchCriteriaType
+
+def get_value() -> FleetInstanceMatchCriteriaType:
+    return "open"
 ```
 
-Values:
-
-- `open`
-
-<a id="fleetondemandallocationstrategytype"></a>
-
+```python title="Definition"
+FleetInstanceMatchCriteriaType = Literal[
+    "open",
+]
+```
 ## FleetOnDemandAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetOnDemandAllocationStrategyType
+
+def get_value() -> FleetOnDemandAllocationStrategyType:
+    return "lowest-price"
 ```
 
-Values:
-
-- `lowest-price`
-- `prioritized`
-
-<a id="fleetreplacementstrategytype"></a>
-
+```python title="Definition"
+FleetOnDemandAllocationStrategyType = Literal[
+    "lowest-price",
+    "prioritized",
+]
+```
 ## FleetReplacementStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetReplacementStrategyType
+
+def get_value() -> FleetReplacementStrategyType:
+    return "launch"
 ```
 
-Values:
-
-- `launch`
-- `launch-before-terminate`
-
-<a id="fleetstatecodetype"></a>
-
+```python title="Definition"
+FleetReplacementStrategyType = Literal[
+    "launch",
+    "launch-before-terminate",
+]
+```
 ## FleetStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetStateCodeType
+
+def get_value() -> FleetStateCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `deleted`
-- `deleted_running`
-- `deleted_terminating`
-- `failed`
-- `modifying`
-- `submitted`
-
-<a id="fleettypetype"></a>
-
+```python title="Definition"
+FleetStateCodeType = Literal[
+    "active",
+    "deleted",
+    "deleted_running",
+    "deleted_terminating",
+    "failed",
+    "modifying",
+    "submitted",
+]
+```
 ## FleetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FleetTypeType
+
+def get_value() -> FleetTypeType:
+    return "instant"
 ```
 
-Values:
-
-- `instant`
-- `maintain`
-- `request`
-
-<a id="flowlogsresourcetypetype"></a>
-
+```python title="Definition"
+FleetTypeType = Literal[
+    "instant",
+    "maintain",
+    "request",
+]
+```
 ## FlowLogsResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FlowLogsResourceTypeType
+
+def get_value() -> FlowLogsResourceTypeType:
+    return "NetworkInterface"
 ```
 
-Values:
-
-- `NetworkInterface`
-- `Subnet`
-- `VPC`
-
-<a id="fpgaimageattributenametype"></a>
-
+```python title="Definition"
+FlowLogsResourceTypeType = Literal[
+    "NetworkInterface",
+    "Subnet",
+    "VPC",
+]
+```
 ## FpgaImageAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FpgaImageAttributeNameType
+
+def get_value() -> FpgaImageAttributeNameType:
+    return "description"
 ```
 
-Values:
-
-- `description`
-- `loadPermission`
-- `name`
-- `productCodes`
-
-<a id="fpgaimagestatecodetype"></a>
-
+```python title="Definition"
+FpgaImageAttributeNameType = Literal[
+    "description",
+    "loadPermission",
+    "name",
+    "productCodes",
+]
+```
 ## FpgaImageStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import FpgaImageStateCodeType
+
+def get_value() -> FpgaImageStateCodeType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `failed`
-- `pending`
-- `unavailable`
-
-<a id="gatewayassociationstatetype"></a>
-
+```python title="Definition"
+FpgaImageStateCodeType = Literal[
+    "available",
+    "failed",
+    "pending",
+    "unavailable",
+]
+```
 ## GatewayAssociationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GatewayAssociationStateType
+
+def get_value() -> GatewayAssociationStateType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociating`
-- `not-associated`
-
-<a id="gatewaytypetype"></a>
-
+```python title="Definition"
+GatewayAssociationStateType = Literal[
+    "associated",
+    "associating",
+    "disassociating",
+    "not-associated",
+]
+```
 ## GatewayTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GatewayTypeType
+
+def get_value() -> GatewayTypeType:
+    return "ipsec.1"
 ```
 
-Values:
-
-- `ipsec.1`
-
-<a id="getassociatedipv6poolcidrspaginatorname"></a>
-
+```python title="Definition"
+GatewayTypeType = Literal[
+    "ipsec.1",
+]
+```
 ## GetAssociatedIpv6PoolCidrsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetAssociatedIpv6PoolCidrsPaginatorName
+
+def get_value() -> GetAssociatedIpv6PoolCidrsPaginatorName:
+    return "get_associated_ipv6_pool_cidrs"
 ```
 
-Values:
-
-- `get_associated_ipv6_pool_cidrs`
-
-<a id="getgroupsforcapacityreservationpaginatorname"></a>
-
+```python title="Definition"
+GetAssociatedIpv6PoolCidrsPaginatorName = Literal[
+    "get_associated_ipv6_pool_cidrs",
+]
+```
 ## GetGroupsForCapacityReservationPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetGroupsForCapacityReservationPaginatorName
+
+def get_value() -> GetGroupsForCapacityReservationPaginatorName:
+    return "get_groups_for_capacity_reservation"
 ```
 
-Values:
-
-- `get_groups_for_capacity_reservation`
-
-<a id="getinstancetypesfrominstancerequirementspaginatorname"></a>
-
+```python title="Definition"
+GetGroupsForCapacityReservationPaginatorName = Literal[
+    "get_groups_for_capacity_reservation",
+]
+```
 ## GetInstanceTypesFromInstanceRequirementsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetInstanceTypesFromInstanceRequirementsPaginatorName
+
+def get_value() -> GetInstanceTypesFromInstanceRequirementsPaginatorName:
+    return "get_instance_types_from_instance_requirements"
 ```
 
-Values:
-
-- `get_instance_types_from_instance_requirements`
-
-<a id="getipamaddresshistorypaginatorname"></a>
-
+```python title="Definition"
+GetInstanceTypesFromInstanceRequirementsPaginatorName = Literal[
+    "get_instance_types_from_instance_requirements",
+]
+```
 ## GetIpamAddressHistoryPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetIpamAddressHistoryPaginatorName
+
+def get_value() -> GetIpamAddressHistoryPaginatorName:
+    return "get_ipam_address_history"
 ```
 
-Values:
-
-- `get_ipam_address_history`
-
-<a id="getipampoolallocationspaginatorname"></a>
-
+```python title="Definition"
+GetIpamAddressHistoryPaginatorName = Literal[
+    "get_ipam_address_history",
+]
+```
 ## GetIpamPoolAllocationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetIpamPoolAllocationsPaginatorName
+
+def get_value() -> GetIpamPoolAllocationsPaginatorName:
+    return "get_ipam_pool_allocations"
 ```
 
-Values:
-
-- `get_ipam_pool_allocations`
-
-<a id="getipampoolcidrspaginatorname"></a>
-
+```python title="Definition"
+GetIpamPoolAllocationsPaginatorName = Literal[
+    "get_ipam_pool_allocations",
+]
+```
 ## GetIpamPoolCidrsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetIpamPoolCidrsPaginatorName
+
+def get_value() -> GetIpamPoolCidrsPaginatorName:
+    return "get_ipam_pool_cidrs"
 ```
 
-Values:
-
-- `get_ipam_pool_cidrs`
-
-<a id="getipamresourcecidrspaginatorname"></a>
-
+```python title="Definition"
+GetIpamPoolCidrsPaginatorName = Literal[
+    "get_ipam_pool_cidrs",
+]
+```
 ## GetIpamResourceCidrsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetIpamResourceCidrsPaginatorName
+
+def get_value() -> GetIpamResourceCidrsPaginatorName:
+    return "get_ipam_resource_cidrs"
 ```
 
-Values:
-
-- `get_ipam_resource_cidrs`
-
-<a id="getmanagedprefixlistassociationspaginatorname"></a>
-
+```python title="Definition"
+GetIpamResourceCidrsPaginatorName = Literal[
+    "get_ipam_resource_cidrs",
+]
+```
 ## GetManagedPrefixListAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetManagedPrefixListAssociationsPaginatorName
+
+def get_value() -> GetManagedPrefixListAssociationsPaginatorName:
+    return "get_managed_prefix_list_associations"
 ```
 
-Values:
-
-- `get_managed_prefix_list_associations`
-
-<a id="getmanagedprefixlistentriespaginatorname"></a>
-
+```python title="Definition"
+GetManagedPrefixListAssociationsPaginatorName = Literal[
+    "get_managed_prefix_list_associations",
+]
+```
 ## GetManagedPrefixListEntriesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetManagedPrefixListEntriesPaginatorName
+
+def get_value() -> GetManagedPrefixListEntriesPaginatorName:
+    return "get_managed_prefix_list_entries"
 ```
 
-Values:
-
-- `get_managed_prefix_list_entries`
-
-<a id="getspotplacementscorespaginatorname"></a>
-
+```python title="Definition"
+GetManagedPrefixListEntriesPaginatorName = Literal[
+    "get_managed_prefix_list_entries",
+]
+```
 ## GetSpotPlacementScoresPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetSpotPlacementScoresPaginatorName
+
+def get_value() -> GetSpotPlacementScoresPaginatorName:
+    return "get_spot_placement_scores"
 ```
 
-Values:
-
-- `get_spot_placement_scores`
-
-<a id="gettransitgatewayattachmentpropagationspaginatorname"></a>
-
+```python title="Definition"
+GetSpotPlacementScoresPaginatorName = Literal[
+    "get_spot_placement_scores",
+]
+```
 ## GetTransitGatewayAttachmentPropagationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetTransitGatewayAttachmentPropagationsPaginatorName
+
+def get_value() -> GetTransitGatewayAttachmentPropagationsPaginatorName:
+    return "get_transit_gateway_attachment_propagations"
 ```
 
-Values:
-
-- `get_transit_gateway_attachment_propagations`
-
-<a id="gettransitgatewaymulticastdomainassociationspaginatorname"></a>
-
+```python title="Definition"
+GetTransitGatewayAttachmentPropagationsPaginatorName = Literal[
+    "get_transit_gateway_attachment_propagations",
+]
+```
 ## GetTransitGatewayMulticastDomainAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetTransitGatewayMulticastDomainAssociationsPaginatorName
+
+def get_value() -> GetTransitGatewayMulticastDomainAssociationsPaginatorName:
+    return "get_transit_gateway_multicast_domain_associations"
 ```
 
-Values:
-
-- `get_transit_gateway_multicast_domain_associations`
-
-<a id="gettransitgatewayprefixlistreferencespaginatorname"></a>
-
+```python title="Definition"
+GetTransitGatewayMulticastDomainAssociationsPaginatorName = Literal[
+    "get_transit_gateway_multicast_domain_associations",
+]
+```
 ## GetTransitGatewayPrefixListReferencesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetTransitGatewayPrefixListReferencesPaginatorName
+
+def get_value() -> GetTransitGatewayPrefixListReferencesPaginatorName:
+    return "get_transit_gateway_prefix_list_references"
 ```
 
-Values:
-
-- `get_transit_gateway_prefix_list_references`
-
-<a id="gettransitgatewayroutetableassociationspaginatorname"></a>
-
+```python title="Definition"
+GetTransitGatewayPrefixListReferencesPaginatorName = Literal[
+    "get_transit_gateway_prefix_list_references",
+]
+```
 ## GetTransitGatewayRouteTableAssociationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetTransitGatewayRouteTableAssociationsPaginatorName
+
+def get_value() -> GetTransitGatewayRouteTableAssociationsPaginatorName:
+    return "get_transit_gateway_route_table_associations"
 ```
 
-Values:
-
-- `get_transit_gateway_route_table_associations`
-
-<a id="gettransitgatewayroutetablepropagationspaginatorname"></a>
-
+```python title="Definition"
+GetTransitGatewayRouteTableAssociationsPaginatorName = Literal[
+    "get_transit_gateway_route_table_associations",
+]
+```
 ## GetTransitGatewayRouteTablePropagationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetTransitGatewayRouteTablePropagationsPaginatorName
+
+def get_value() -> GetTransitGatewayRouteTablePropagationsPaginatorName:
+    return "get_transit_gateway_route_table_propagations"
 ```
 
-Values:
-
-- `get_transit_gateway_route_table_propagations`
-
-<a id="getvpnconnectiondevicetypespaginatorname"></a>
-
+```python title="Definition"
+GetTransitGatewayRouteTablePropagationsPaginatorName = Literal[
+    "get_transit_gateway_route_table_propagations",
+]
+```
 ## GetVpnConnectionDeviceTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import GetVpnConnectionDeviceTypesPaginatorName
+
+def get_value() -> GetVpnConnectionDeviceTypesPaginatorName:
+    return "get_vpn_connection_device_types"
 ```
 
-Values:
-
-- `get_vpn_connection_device_types`
-
-<a id="hostrecoverytype"></a>
-
+```python title="Definition"
+GetVpnConnectionDeviceTypesPaginatorName = Literal[
+    "get_vpn_connection_device_types",
+]
+```
 ## HostRecoveryType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import HostRecoveryType
+
+def get_value() -> HostRecoveryType:
+    return "off"
 ```
 
-Values:
-
-- `off`
-- `on`
-
-<a id="hosttenancytype"></a>
-
+```python title="Definition"
+HostRecoveryType = Literal[
+    "off",
+    "on",
+]
+```
 ## HostTenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import HostTenancyType
+
+def get_value() -> HostTenancyType:
+    return "dedicated"
 ```
 
-Values:
-
-- `dedicated`
-- `host`
-
-<a id="hostnametypetype"></a>
-
+```python title="Definition"
+HostTenancyType = Literal[
+    "dedicated",
+    "host",
+]
+```
 ## HostnameTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import HostnameTypeType
+
+def get_value() -> HostnameTypeType:
+    return "ip-name"
 ```
 
-Values:
-
-- `ip-name`
-- `resource-name`
-
-<a id="httptokensstatetype"></a>
-
+```python title="Definition"
+HostnameTypeType = Literal[
+    "ip-name",
+    "resource-name",
+]
+```
 ## HttpTokensStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import HttpTokensStateType
+
+def get_value() -> HttpTokensStateType:
+    return "optional"
 ```
 
-Values:
-
-- `optional`
-- `required`
-
-<a id="hypervisortypetype"></a>
-
+```python title="Definition"
+HttpTokensStateType = Literal[
+    "optional",
+    "required",
+]
+```
 ## HypervisorTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import HypervisorTypeType
+
+def get_value() -> HypervisorTypeType:
+    return "ovm"
 ```
 
-Values:
-
-- `ovm`
-- `xen`
-
-<a id="iaminstanceprofileassociationstatetype"></a>
-
+```python title="Definition"
+HypervisorTypeType = Literal[
+    "ovm",
+    "xen",
+]
+```
 ## IamInstanceProfileAssociationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IamInstanceProfileAssociationStateType
+
+def get_value() -> IamInstanceProfileAssociationStateType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-
-<a id="igmpv2supportvaluetype"></a>
-
+```python title="Definition"
+IamInstanceProfileAssociationStateType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+]
+```
 ## Igmpv2SupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import Igmpv2SupportValueType
+
+def get_value() -> Igmpv2SupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="imageattributenametype"></a>
-
+```python title="Definition"
+Igmpv2SupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## ImageAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ImageAttributeNameType
+
+def get_value() -> ImageAttributeNameType:
+    return "blockDeviceMapping"
 ```
 
-Values:
-
-- `blockDeviceMapping`
-- `bootMode`
-- `description`
-- `kernel`
-- `lastLaunchedTime`
-- `launchPermission`
-- `productCodes`
-- `ramdisk`
-- `sriovNetSupport`
-
-<a id="imageavailablewaitername"></a>
-
+```python title="Definition"
+ImageAttributeNameType = Literal[
+    "blockDeviceMapping",
+    "bootMode",
+    "description",
+    "kernel",
+    "lastLaunchedTime",
+    "launchPermission",
+    "productCodes",
+    "ramdisk",
+    "sriovNetSupport",
+]
+```
 ## ImageAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ImageAvailableWaiterName
+
+def get_value() -> ImageAvailableWaiterName:
+    return "image_available"
 ```
 
-Values:
-
-- `image_available`
-
-<a id="imageexistswaitername"></a>
-
+```python title="Definition"
+ImageAvailableWaiterName = Literal[
+    "image_available",
+]
+```
 ## ImageExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ImageExistsWaiterName
+
+def get_value() -> ImageExistsWaiterName:
+    return "image_exists"
 ```
 
-Values:
-
-- `image_exists`
-
-<a id="imagestatetype"></a>
-
+```python title="Definition"
+ImageExistsWaiterName = Literal[
+    "image_exists",
+]
+```
 ## ImageStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ImageStateType
+
+def get_value() -> ImageStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deregistered`
-- `error`
-- `failed`
-- `invalid`
-- `pending`
-- `transient`
-
-<a id="imagetypevaluestype"></a>
-
+```python title="Definition"
+ImageStateType = Literal[
+    "available",
+    "deregistered",
+    "error",
+    "failed",
+    "invalid",
+    "pending",
+    "transient",
+]
+```
 ## ImageTypeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ImageTypeValuesType
+
+def get_value() -> ImageTypeValuesType:
+    return "kernel"
 ```
 
-Values:
-
-- `kernel`
-- `machine`
-- `ramdisk`
-
-<a id="instanceattributenametype"></a>
-
+```python title="Definition"
+ImageTypeValuesType = Literal[
+    "kernel",
+    "machine",
+    "ramdisk",
+]
+```
 ## InstanceAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceAttributeNameType
+
+def get_value() -> InstanceAttributeNameType:
+    return "blockDeviceMapping"
 ```
 
-Values:
-
-- `blockDeviceMapping`
-- `disableApiTermination`
-- `ebsOptimized`
-- `enaSupport`
-- `enclaveOptions`
-- `groupSet`
-- `instanceInitiatedShutdownBehavior`
-- `instanceType`
-- `kernel`
-- `productCodes`
-- `ramdisk`
-- `rootDeviceName`
-- `sourceDestCheck`
-- `sriovNetSupport`
-- `userData`
-
-<a id="instanceeventwindowstatetype"></a>
-
+```python title="Definition"
+InstanceAttributeNameType = Literal[
+    "blockDeviceMapping",
+    "disableApiTermination",
+    "ebsOptimized",
+    "enaSupport",
+    "enclaveOptions",
+    "groupSet",
+    "instanceInitiatedShutdownBehavior",
+    "instanceType",
+    "kernel",
+    "productCodes",
+    "ramdisk",
+    "rootDeviceName",
+    "sourceDestCheck",
+    "sriovNetSupport",
+    "userData",
+]
+```
 ## InstanceEventWindowStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceEventWindowStateType
+
+def get_value() -> InstanceEventWindowStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `creating`
-- `deleted`
-- `deleting`
-
-<a id="instanceexistswaitername"></a>
-
+```python title="Definition"
+InstanceEventWindowStateType = Literal[
+    "active",
+    "creating",
+    "deleted",
+    "deleting",
+]
+```
 ## InstanceExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceExistsWaiterName
+
+def get_value() -> InstanceExistsWaiterName:
+    return "instance_exists"
 ```
 
-Values:
-
-- `instance_exists`
-
-<a id="instancegenerationtype"></a>
-
+```python title="Definition"
+InstanceExistsWaiterName = Literal[
+    "instance_exists",
+]
+```
 ## InstanceGenerationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceGenerationType
+
+def get_value() -> InstanceGenerationType:
+    return "current"
 ```
 
-Values:
-
-- `current`
-- `previous`
-
-<a id="instancehealthstatustype"></a>
-
+```python title="Definition"
+InstanceGenerationType = Literal[
+    "current",
+    "previous",
+]
+```
 ## InstanceHealthStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceHealthStatusType
+
+def get_value() -> InstanceHealthStatusType:
+    return "healthy"
 ```
 
-Values:
-
-- `healthy`
-- `unhealthy`
-
-<a id="instanceinterruptionbehaviortype"></a>
-
+```python title="Definition"
+InstanceHealthStatusType = Literal[
+    "healthy",
+    "unhealthy",
+]
+```
 ## InstanceInterruptionBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceInterruptionBehaviorType
+
+def get_value() -> InstanceInterruptionBehaviorType:
+    return "hibernate"
 ```
 
-Values:
-
-- `hibernate`
-- `stop`
-- `terminate`
-
-<a id="instancelifecycletype"></a>
-
+```python title="Definition"
+InstanceInterruptionBehaviorType = Literal[
+    "hibernate",
+    "stop",
+    "terminate",
+]
+```
 ## InstanceLifecycleType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceLifecycleType
+
+def get_value() -> InstanceLifecycleType:
+    return "on-demand"
 ```
 
-Values:
-
-- `on-demand`
-- `spot`
-
-<a id="instancelifecycletypetype"></a>
-
+```python title="Definition"
+InstanceLifecycleType = Literal[
+    "on-demand",
+    "spot",
+]
+```
 ## InstanceLifecycleTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceLifecycleTypeType
+
+def get_value() -> InstanceLifecycleTypeType:
+    return "scheduled"
 ```
 
-Values:
-
-- `scheduled`
-- `spot`
-
-<a id="instancematchcriteriatype"></a>
-
+```python title="Definition"
+InstanceLifecycleTypeType = Literal[
+    "scheduled",
+    "spot",
+]
+```
 ## InstanceMatchCriteriaType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceMatchCriteriaType
+
+def get_value() -> InstanceMatchCriteriaType:
+    return "open"
 ```
 
-Values:
-
-- `open`
-- `targeted`
-
-<a id="instancemetadataendpointstatetype"></a>
-
+```python title="Definition"
+InstanceMatchCriteriaType = Literal[
+    "open",
+    "targeted",
+]
+```
 ## InstanceMetadataEndpointStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceMetadataEndpointStateType
+
+def get_value() -> InstanceMetadataEndpointStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="instancemetadataoptionsstatetype"></a>
-
+```python title="Definition"
+InstanceMetadataEndpointStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## InstanceMetadataOptionsStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceMetadataOptionsStateType
+
+def get_value() -> InstanceMetadataOptionsStateType:
+    return "applied"
 ```
 
-Values:
-
-- `applied`
-- `pending`
-
-<a id="instancemetadataprotocolstatetype"></a>
-
+```python title="Definition"
+InstanceMetadataOptionsStateType = Literal[
+    "applied",
+    "pending",
+]
+```
 ## InstanceMetadataProtocolStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceMetadataProtocolStateType
+
+def get_value() -> InstanceMetadataProtocolStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="instancemetadatatagsstatetype"></a>
-
+```python title="Definition"
+InstanceMetadataProtocolStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## InstanceMetadataTagsStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceMetadataTagsStateType
+
+def get_value() -> InstanceMetadataTagsStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="instancerunningwaitername"></a>
-
+```python title="Definition"
+InstanceMetadataTagsStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## InstanceRunningWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceRunningWaiterName
+
+def get_value() -> InstanceRunningWaiterName:
+    return "instance_running"
 ```
 
-Values:
-
-- `instance_running`
-
-<a id="instancestatenametype"></a>
-
+```python title="Definition"
+InstanceRunningWaiterName = Literal[
+    "instance_running",
+]
+```
 ## InstanceStateNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceStateNameType
+
+def get_value() -> InstanceStateNameType:
+    return "pending"
 ```
 
-Values:
-
-- `pending`
-- `running`
-- `shutting-down`
-- `stopped`
-- `stopping`
-- `terminated`
-
-<a id="instancestatusokwaitername"></a>
-
+```python title="Definition"
+InstanceStateNameType = Literal[
+    "pending",
+    "running",
+    "shutting-down",
+    "stopped",
+    "stopping",
+    "terminated",
+]
+```
 ## InstanceStatusOkWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceStatusOkWaiterName
+
+def get_value() -> InstanceStatusOkWaiterName:
+    return "instance_status_ok"
 ```
 
-Values:
-
-- `instance_status_ok`
-
-<a id="instancestoppedwaitername"></a>
-
+```python title="Definition"
+InstanceStatusOkWaiterName = Literal[
+    "instance_status_ok",
+]
+```
 ## InstanceStoppedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceStoppedWaiterName
+
+def get_value() -> InstanceStoppedWaiterName:
+    return "instance_stopped"
 ```
 
-Values:
-
-- `instance_stopped`
-
-<a id="instancestorageencryptionsupporttype"></a>
-
+```python title="Definition"
+InstanceStoppedWaiterName = Literal[
+    "instance_stopped",
+]
+```
 ## InstanceStorageEncryptionSupportType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceStorageEncryptionSupportType
+
+def get_value() -> InstanceStorageEncryptionSupportType:
+    return "required"
 ```
 
-Values:
-
-- `required`
-- `unsupported`
-
-<a id="instanceterminatedwaitername"></a>
-
+```python title="Definition"
+InstanceStorageEncryptionSupportType = Literal[
+    "required",
+    "unsupported",
+]
+```
 ## InstanceTerminatedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceTerminatedWaiterName
+
+def get_value() -> InstanceTerminatedWaiterName:
+    return "instance_terminated"
 ```
 
-Values:
-
-- `instance_terminated`
-
-<a id="instancetypehypervisortype"></a>
-
+```python title="Definition"
+InstanceTerminatedWaiterName = Literal[
+    "instance_terminated",
+]
+```
 ## InstanceTypeHypervisorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceTypeHypervisorType
+
+def get_value() -> InstanceTypeHypervisorType:
+    return "nitro"
 ```
 
-Values:
-
-- `nitro`
-- `xen`
-
-<a id="instancetypetype"></a>
-
+```python title="Definition"
+InstanceTypeHypervisorType = Literal[
+    "nitro",
+    "xen",
+]
+```
 ## InstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InstanceTypeType
+
+def get_value() -> InstanceTypeType:
+    return "a1.2xlarge"
 ```
 
-Values:
-
-- `a1.2xlarge`
-- `a1.4xlarge`
-- `a1.large`
-- `a1.medium`
-- `a1.metal`
-- `a1.xlarge`
-- `c1.medium`
-- `c1.xlarge`
-- `c3.2xlarge`
-- `c3.4xlarge`
-- `c3.8xlarge`
-- `c3.large`
-- `c3.xlarge`
-- `c4.2xlarge`
-- `c4.4xlarge`
-- `c4.8xlarge`
-- `c4.large`
-- `c4.xlarge`
-- `c5.12xlarge`
-- `c5.18xlarge`
-- `c5.24xlarge`
-- `c5.2xlarge`
-- `c5.4xlarge`
-- `c5.9xlarge`
-- `c5.large`
-- `c5.metal`
-- `c5.xlarge`
-- `c5a.12xlarge`
-- `c5a.16xlarge`
-- `c5a.24xlarge`
-- `c5a.2xlarge`
-- `c5a.4xlarge`
-- `c5a.8xlarge`
-- `c5a.large`
-- `c5a.xlarge`
-- `c5ad.12xlarge`
-- `c5ad.16xlarge`
-- `c5ad.24xlarge`
-- `c5ad.2xlarge`
-- `c5ad.4xlarge`
-- `c5ad.8xlarge`
-- `c5ad.large`
-- `c5ad.xlarge`
-- `c5d.12xlarge`
-- `c5d.18xlarge`
-- `c5d.24xlarge`
-- `c5d.2xlarge`
-- `c5d.4xlarge`
-- `c5d.9xlarge`
-- `c5d.large`
-- `c5d.metal`
-- `c5d.xlarge`
-- `c5n.18xlarge`
-- `c5n.2xlarge`
-- `c5n.4xlarge`
-- `c5n.9xlarge`
-- `c5n.large`
-- `c5n.metal`
-- `c5n.xlarge`
-- `c6g.12xlarge`
-- `c6g.16xlarge`
-- `c6g.2xlarge`
-- `c6g.4xlarge`
-- `c6g.8xlarge`
-- `c6g.large`
-- `c6g.medium`
-- `c6g.metal`
-- `c6g.xlarge`
-- `c6gd.12xlarge`
-- `c6gd.16xlarge`
-- `c6gd.2xlarge`
-- `c6gd.4xlarge`
-- `c6gd.8xlarge`
-- `c6gd.large`
-- `c6gd.medium`
-- `c6gd.metal`
-- `c6gd.xlarge`
-- `c6gn.12xlarge`
-- `c6gn.16xlarge`
-- `c6gn.2xlarge`
-- `c6gn.4xlarge`
-- `c6gn.8xlarge`
-- `c6gn.large`
-- `c6gn.medium`
-- `c6gn.xlarge`
-- `c6i.12xlarge`
-- `c6i.16xlarge`
-- `c6i.24xlarge`
-- `c6i.2xlarge`
-- `c6i.32xlarge`
-- `c6i.4xlarge`
-- `c6i.8xlarge`
-- `c6i.large`
-- `c6i.metal`
-- `c6i.xlarge`
-- `cc1.4xlarge`
-- `cc2.8xlarge`
-- `cg1.4xlarge`
-- `cr1.8xlarge`
-- `d2.2xlarge`
-- `d2.4xlarge`
-- `d2.8xlarge`
-- `d2.xlarge`
-- `d3.2xlarge`
-- `d3.4xlarge`
-- `d3.8xlarge`
-- `d3.xlarge`
-- `d3en.12xlarge`
-- `d3en.2xlarge`
-- `d3en.4xlarge`
-- `d3en.6xlarge`
-- `d3en.8xlarge`
-- `d3en.xlarge`
-- `dl1.24xlarge`
-- `f1.16xlarge`
-- `f1.2xlarge`
-- `f1.4xlarge`
-- `g2.2xlarge`
-- `g2.8xlarge`
-- `g3.16xlarge`
-- `g3.4xlarge`
-- `g3.8xlarge`
-- `g3s.xlarge`
-- `g4ad.16xlarge`
-- `g4ad.2xlarge`
-- `g4ad.4xlarge`
-- `g4ad.8xlarge`
-- `g4ad.xlarge`
-- `g4dn.12xlarge`
-- `g4dn.16xlarge`
-- `g4dn.2xlarge`
-- `g4dn.4xlarge`
-- `g4dn.8xlarge`
-- `g4dn.metal`
-- `g4dn.xlarge`
-- `g5.12xlarge`
-- `g5.16xlarge`
-- `g5.24xlarge`
-- `g5.2xlarge`
-- `g5.48xlarge`
-- `g5.4xlarge`
-- `g5.8xlarge`
-- `g5.xlarge`
-- `g5g.16xlarge`
-- `g5g.2xlarge`
-- `g5g.4xlarge`
-- `g5g.8xlarge`
-- `g5g.metal`
-- `g5g.xlarge`
-- `h1.16xlarge`
-- `h1.2xlarge`
-- `h1.4xlarge`
-- `h1.8xlarge`
-- `hi1.4xlarge`
-- `hpc6a.48xlarge`
-- `hs1.8xlarge`
-- `i2.2xlarge`
-- `i2.4xlarge`
-- `i2.8xlarge`
-- `i2.xlarge`
-- `i3.16xlarge`
-- `i3.2xlarge`
-- `i3.4xlarge`
-- `i3.8xlarge`
-- `i3.large`
-- `i3.metal`
-- `i3.xlarge`
-- `i3en.12xlarge`
-- `i3en.24xlarge`
-- `i3en.2xlarge`
-- `i3en.3xlarge`
-- `i3en.6xlarge`
-- `i3en.large`
-- `i3en.metal`
-- `i3en.xlarge`
-- `im4gn.16xlarge`
-- `im4gn.2xlarge`
-- `im4gn.4xlarge`
-- `im4gn.8xlarge`
-- `im4gn.large`
-- `im4gn.xlarge`
-- `inf1.24xlarge`
-- `inf1.2xlarge`
-- `inf1.6xlarge`
-- `inf1.xlarge`
-- `is4gen.2xlarge`
-- `is4gen.4xlarge`
-- `is4gen.8xlarge`
-- `is4gen.large`
-- `is4gen.medium`
-- `is4gen.xlarge`
-- `m1.large`
-- `m1.medium`
-- `m1.small`
-- `m1.xlarge`
-- `m2.2xlarge`
-- `m2.4xlarge`
-- `m2.xlarge`
-- `m3.2xlarge`
-- `m3.large`
-- `m3.medium`
-- `m3.xlarge`
-- `m4.10xlarge`
-- `m4.16xlarge`
-- `m4.2xlarge`
-- `m4.4xlarge`
-- `m4.large`
-- `m4.xlarge`
-- `m5.12xlarge`
-- `m5.16xlarge`
-- `m5.24xlarge`
-- `m5.2xlarge`
-- `m5.4xlarge`
-- `m5.8xlarge`
-- `m5.large`
-- `m5.metal`
-- `m5.xlarge`
-- `m5a.12xlarge`
-- `m5a.16xlarge`
-- `m5a.24xlarge`
-- `m5a.2xlarge`
-- `m5a.4xlarge`
-- `m5a.8xlarge`
-- `m5a.large`
-- `m5a.xlarge`
-- `m5ad.12xlarge`
-- `m5ad.16xlarge`
-- `m5ad.24xlarge`
-- `m5ad.2xlarge`
-- `m5ad.4xlarge`
-- `m5ad.8xlarge`
-- `m5ad.large`
-- `m5ad.xlarge`
-- `m5d.12xlarge`
-- `m5d.16xlarge`
-- `m5d.24xlarge`
-- `m5d.2xlarge`
-- `m5d.4xlarge`
-- `m5d.8xlarge`
-- `m5d.large`
-- `m5d.metal`
-- `m5d.xlarge`
-- `m5dn.12xlarge`
-- `m5dn.16xlarge`
-- `m5dn.24xlarge`
-- `m5dn.2xlarge`
-- `m5dn.4xlarge`
-- `m5dn.8xlarge`
-- `m5dn.large`
-- `m5dn.metal`
-- `m5dn.xlarge`
-- `m5n.12xlarge`
-- `m5n.16xlarge`
-- `m5n.24xlarge`
-- `m5n.2xlarge`
-- `m5n.4xlarge`
-- `m5n.8xlarge`
-- `m5n.large`
-- `m5n.metal`
-- `m5n.xlarge`
-- `m5zn.12xlarge`
-- `m5zn.2xlarge`
-- `m5zn.3xlarge`
-- `m5zn.6xlarge`
-- `m5zn.large`
-- `m5zn.metal`
-- `m5zn.xlarge`
-- `m6a.12xlarge`
-- `m6a.16xlarge`
-- `m6a.24xlarge`
-- `m6a.2xlarge`
-- `m6a.32xlarge`
-- `m6a.48xlarge`
-- `m6a.4xlarge`
-- `m6a.8xlarge`
-- `m6a.large`
-- `m6a.xlarge`
-- `m6g.12xlarge`
-- `m6g.16xlarge`
-- `m6g.2xlarge`
-- `m6g.4xlarge`
-- `m6g.8xlarge`
-- `m6g.large`
-- `m6g.medium`
-- `m6g.metal`
-- `m6g.xlarge`
-- `m6gd.12xlarge`
-- `m6gd.16xlarge`
-- `m6gd.2xlarge`
-- `m6gd.4xlarge`
-- `m6gd.8xlarge`
-- `m6gd.large`
-- `m6gd.medium`
-- `m6gd.metal`
-- `m6gd.xlarge`
-- `m6i.12xlarge`
-- `m6i.16xlarge`
-- `m6i.24xlarge`
-- `m6i.2xlarge`
-- `m6i.32xlarge`
-- `m6i.4xlarge`
-- `m6i.8xlarge`
-- `m6i.large`
-- `m6i.metal`
-- `m6i.xlarge`
-- `mac1.metal`
-- `p2.16xlarge`
-- `p2.8xlarge`
-- `p2.xlarge`
-- `p3.16xlarge`
-- `p3.2xlarge`
-- `p3.8xlarge`
-- `p3dn.24xlarge`
-- `p4d.24xlarge`
-- `r3.2xlarge`
-- `r3.4xlarge`
-- `r3.8xlarge`
-- `r3.large`
-- `r3.xlarge`
-- `r4.16xlarge`
-- `r4.2xlarge`
-- `r4.4xlarge`
-- `r4.8xlarge`
-- `r4.large`
-- `r4.xlarge`
-- `r5.12xlarge`
-- `r5.16xlarge`
-- `r5.24xlarge`
-- `r5.2xlarge`
-- `r5.4xlarge`
-- `r5.8xlarge`
-- `r5.large`
-- `r5.metal`
-- `r5.xlarge`
-- `r5a.12xlarge`
-- `r5a.16xlarge`
-- `r5a.24xlarge`
-- `r5a.2xlarge`
-- `r5a.4xlarge`
-- `r5a.8xlarge`
-- `r5a.large`
-- `r5a.xlarge`
-- `r5ad.12xlarge`
-- `r5ad.16xlarge`
-- `r5ad.24xlarge`
-- `r5ad.2xlarge`
-- `r5ad.4xlarge`
-- `r5ad.8xlarge`
-- `r5ad.large`
-- `r5ad.xlarge`
-- `r5b.12xlarge`
-- `r5b.16xlarge`
-- `r5b.24xlarge`
-- `r5b.2xlarge`
-- `r5b.4xlarge`
-- `r5b.8xlarge`
-- `r5b.large`
-- `r5b.metal`
-- `r5b.xlarge`
-- `r5d.12xlarge`
-- `r5d.16xlarge`
-- `r5d.24xlarge`
-- `r5d.2xlarge`
-- `r5d.4xlarge`
-- `r5d.8xlarge`
-- `r5d.large`
-- `r5d.metal`
-- `r5d.xlarge`
-- `r5dn.12xlarge`
-- `r5dn.16xlarge`
-- `r5dn.24xlarge`
-- `r5dn.2xlarge`
-- `r5dn.4xlarge`
-- `r5dn.8xlarge`
-- `r5dn.large`
-- `r5dn.metal`
-- `r5dn.xlarge`
-- `r5n.12xlarge`
-- `r5n.16xlarge`
-- `r5n.24xlarge`
-- `r5n.2xlarge`
-- `r5n.4xlarge`
-- `r5n.8xlarge`
-- `r5n.large`
-- `r5n.metal`
-- `r5n.xlarge`
-- `r6g.12xlarge`
-- `r6g.16xlarge`
-- `r6g.2xlarge`
-- `r6g.4xlarge`
-- `r6g.8xlarge`
-- `r6g.large`
-- `r6g.medium`
-- `r6g.metal`
-- `r6g.xlarge`
-- `r6gd.12xlarge`
-- `r6gd.16xlarge`
-- `r6gd.2xlarge`
-- `r6gd.4xlarge`
-- `r6gd.8xlarge`
-- `r6gd.large`
-- `r6gd.medium`
-- `r6gd.metal`
-- `r6gd.xlarge`
-- `r6i.12xlarge`
-- `r6i.16xlarge`
-- `r6i.24xlarge`
-- `r6i.2xlarge`
-- `r6i.32xlarge`
-- `r6i.4xlarge`
-- `r6i.8xlarge`
-- `r6i.large`
-- `r6i.metal`
-- `r6i.xlarge`
-- `t1.micro`
-- `t2.2xlarge`
-- `t2.large`
-- `t2.medium`
-- `t2.micro`
-- `t2.nano`
-- `t2.small`
-- `t2.xlarge`
-- `t3.2xlarge`
-- `t3.large`
-- `t3.medium`
-- `t3.micro`
-- `t3.nano`
-- `t3.small`
-- `t3.xlarge`
-- `t3a.2xlarge`
-- `t3a.large`
-- `t3a.medium`
-- `t3a.micro`
-- `t3a.nano`
-- `t3a.small`
-- `t3a.xlarge`
-- `t4g.2xlarge`
-- `t4g.large`
-- `t4g.medium`
-- `t4g.micro`
-- `t4g.nano`
-- `t4g.small`
-- `t4g.xlarge`
-- `u-12tb1.112xlarge`
-- `u-12tb1.metal`
-- `u-18tb1.metal`
-- `u-24tb1.metal`
-- `u-6tb1.112xlarge`
-- `u-6tb1.56xlarge`
-- `u-6tb1.metal`
-- `u-9tb1.112xlarge`
-- `u-9tb1.metal`
-- `vt1.24xlarge`
-- `vt1.3xlarge`
-- `vt1.6xlarge`
-- `x1.16xlarge`
-- `x1.32xlarge`
-- `x1e.16xlarge`
-- `x1e.2xlarge`
-- `x1e.32xlarge`
-- `x1e.4xlarge`
-- `x1e.8xlarge`
-- `x1e.xlarge`
-- `x2gd.12xlarge`
-- `x2gd.16xlarge`
-- `x2gd.2xlarge`
-- `x2gd.4xlarge`
-- `x2gd.8xlarge`
-- `x2gd.large`
-- `x2gd.medium`
-- `x2gd.metal`
-- `x2gd.xlarge`
-- `x2iezn.12xlarge`
-- `x2iezn.2xlarge`
-- `x2iezn.4xlarge`
-- `x2iezn.6xlarge`
-- `x2iezn.8xlarge`
-- `x2iezn.metal`
-- `z1d.12xlarge`
-- `z1d.2xlarge`
-- `z1d.3xlarge`
-- `z1d.6xlarge`
-- `z1d.large`
-- `z1d.metal`
-- `z1d.xlarge`
-
-<a id="interfacepermissiontypetype"></a>
-
+```python title="Definition"
+InstanceTypeType = Literal[
+    "a1.2xlarge",
+    "a1.4xlarge",
+    "a1.large",
+    "a1.medium",
+    "a1.metal",
+    "a1.xlarge",
+    "c1.medium",
+    "c1.xlarge",
+    "c3.2xlarge",
+    "c3.4xlarge",
+    "c3.8xlarge",
+    "c3.large",
+    "c3.xlarge",
+    "c4.2xlarge",
+    "c4.4xlarge",
+    "c4.8xlarge",
+    "c4.large",
+    "c4.xlarge",
+    "c5.12xlarge",
+    "c5.18xlarge",
+    "c5.24xlarge",
+    "c5.2xlarge",
+    "c5.4xlarge",
+    "c5.9xlarge",
+    "c5.large",
+    "c5.metal",
+    "c5.xlarge",
+    "c5a.12xlarge",
+    "c5a.16xlarge",
+    "c5a.24xlarge",
+    "c5a.2xlarge",
+    "c5a.4xlarge",
+    "c5a.8xlarge",
+    "c5a.large",
+    "c5a.xlarge",
+    "c5ad.12xlarge",
+    "c5ad.16xlarge",
+    "c5ad.24xlarge",
+    "c5ad.2xlarge",
+    "c5ad.4xlarge",
+    "c5ad.8xlarge",
+    "c5ad.large",
+    "c5ad.xlarge",
+    "c5d.12xlarge",
+    "c5d.18xlarge",
+    "c5d.24xlarge",
+    "c5d.2xlarge",
+    "c5d.4xlarge",
+    "c5d.9xlarge",
+    "c5d.large",
+    "c5d.metal",
+    "c5d.xlarge",
+    "c5n.18xlarge",
+    "c5n.2xlarge",
+    "c5n.4xlarge",
+    "c5n.9xlarge",
+    "c5n.large",
+    "c5n.metal",
+    "c5n.xlarge",
+    "c6g.12xlarge",
+    "c6g.16xlarge",
+    "c6g.2xlarge",
+    "c6g.4xlarge",
+    "c6g.8xlarge",
+    "c6g.large",
+    "c6g.medium",
+    "c6g.metal",
+    "c6g.xlarge",
+    "c6gd.12xlarge",
+    "c6gd.16xlarge",
+    "c6gd.2xlarge",
+    "c6gd.4xlarge",
+    "c6gd.8xlarge",
+    "c6gd.large",
+    "c6gd.medium",
+    "c6gd.metal",
+    "c6gd.xlarge",
+    "c6gn.12xlarge",
+    "c6gn.16xlarge",
+    "c6gn.2xlarge",
+    "c6gn.4xlarge",
+    "c6gn.8xlarge",
+    "c6gn.large",
+    "c6gn.medium",
+    "c6gn.xlarge",
+    "c6i.12xlarge",
+    "c6i.16xlarge",
+    "c6i.24xlarge",
+    "c6i.2xlarge",
+    "c6i.32xlarge",
+    "c6i.4xlarge",
+    "c6i.8xlarge",
+    "c6i.large",
+    "c6i.metal",
+    "c6i.xlarge",
+    "cc1.4xlarge",
+    "cc2.8xlarge",
+    "cg1.4xlarge",
+    "cr1.8xlarge",
+    "d2.2xlarge",
+    "d2.4xlarge",
+    "d2.8xlarge",
+    "d2.xlarge",
+    "d3.2xlarge",
+    "d3.4xlarge",
+    "d3.8xlarge",
+    "d3.xlarge",
+    "d3en.12xlarge",
+    "d3en.2xlarge",
+    "d3en.4xlarge",
+    "d3en.6xlarge",
+    "d3en.8xlarge",
+    "d3en.xlarge",
+    "dl1.24xlarge",
+    "f1.16xlarge",
+    "f1.2xlarge",
+    "f1.4xlarge",
+    "g2.2xlarge",
+    "g2.8xlarge",
+    "g3.16xlarge",
+    "g3.4xlarge",
+    "g3.8xlarge",
+    "g3s.xlarge",
+    "g4ad.16xlarge",
+    "g4ad.2xlarge",
+    "g4ad.4xlarge",
+    "g4ad.8xlarge",
+    "g4ad.xlarge",
+    "g4dn.12xlarge",
+    "g4dn.16xlarge",
+    "g4dn.2xlarge",
+    "g4dn.4xlarge",
+    "g4dn.8xlarge",
+    "g4dn.metal",
+    "g4dn.xlarge",
+    "g5.12xlarge",
+    "g5.16xlarge",
+    "g5.24xlarge",
+    "g5.2xlarge",
+    "g5.48xlarge",
+    "g5.4xlarge",
+    "g5.8xlarge",
+    "g5.xlarge",
+    "g5g.16xlarge",
+    "g5g.2xlarge",
+    "g5g.4xlarge",
+    "g5g.8xlarge",
+    "g5g.metal",
+    "g5g.xlarge",
+    "h1.16xlarge",
+    "h1.2xlarge",
+    "h1.4xlarge",
+    "h1.8xlarge",
+    "hi1.4xlarge",
+    "hpc6a.48xlarge",
+    "hs1.8xlarge",
+    "i2.2xlarge",
+    "i2.4xlarge",
+    "i2.8xlarge",
+    "i2.xlarge",
+    "i3.16xlarge",
+    "i3.2xlarge",
+    "i3.4xlarge",
+    "i3.8xlarge",
+    "i3.large",
+    "i3.metal",
+    "i3.xlarge",
+    "i3en.12xlarge",
+    "i3en.24xlarge",
+    "i3en.2xlarge",
+    "i3en.3xlarge",
+    "i3en.6xlarge",
+    "i3en.large",
+    "i3en.metal",
+    "i3en.xlarge",
+    "im4gn.16xlarge",
+    "im4gn.2xlarge",
+    "im4gn.4xlarge",
+    "im4gn.8xlarge",
+    "im4gn.large",
+    "im4gn.xlarge",
+    "inf1.24xlarge",
+    "inf1.2xlarge",
+    "inf1.6xlarge",
+    "inf1.xlarge",
+    "is4gen.2xlarge",
+    "is4gen.4xlarge",
+    "is4gen.8xlarge",
+    "is4gen.large",
+    "is4gen.medium",
+    "is4gen.xlarge",
+    "m1.large",
+    "m1.medium",
+    "m1.small",
+    "m1.xlarge",
+    "m2.2xlarge",
+    "m2.4xlarge",
+    "m2.xlarge",
+    "m3.2xlarge",
+    "m3.large",
+    "m3.medium",
+    "m3.xlarge",
+    "m4.10xlarge",
+    "m4.16xlarge",
+    "m4.2xlarge",
+    "m4.4xlarge",
+    "m4.large",
+    "m4.xlarge",
+    "m5.12xlarge",
+    "m5.16xlarge",
+    "m5.24xlarge",
+    "m5.2xlarge",
+    "m5.4xlarge",
+    "m5.8xlarge",
+    "m5.large",
+    "m5.metal",
+    "m5.xlarge",
+    "m5a.12xlarge",
+    "m5a.16xlarge",
+    "m5a.24xlarge",
+    "m5a.2xlarge",
+    "m5a.4xlarge",
+    "m5a.8xlarge",
+    "m5a.large",
+    "m5a.xlarge",
+    "m5ad.12xlarge",
+    "m5ad.16xlarge",
+    "m5ad.24xlarge",
+    "m5ad.2xlarge",
+    "m5ad.4xlarge",
+    "m5ad.8xlarge",
+    "m5ad.large",
+    "m5ad.xlarge",
+    "m5d.12xlarge",
+    "m5d.16xlarge",
+    "m5d.24xlarge",
+    "m5d.2xlarge",
+    "m5d.4xlarge",
+    "m5d.8xlarge",
+    "m5d.large",
+    "m5d.metal",
+    "m5d.xlarge",
+    "m5dn.12xlarge",
+    "m5dn.16xlarge",
+    "m5dn.24xlarge",
+    "m5dn.2xlarge",
+    "m5dn.4xlarge",
+    "m5dn.8xlarge",
+    "m5dn.large",
+    "m5dn.metal",
+    "m5dn.xlarge",
+    "m5n.12xlarge",
+    "m5n.16xlarge",
+    "m5n.24xlarge",
+    "m5n.2xlarge",
+    "m5n.4xlarge",
+    "m5n.8xlarge",
+    "m5n.large",
+    "m5n.metal",
+    "m5n.xlarge",
+    "m5zn.12xlarge",
+    "m5zn.2xlarge",
+    "m5zn.3xlarge",
+    "m5zn.6xlarge",
+    "m5zn.large",
+    "m5zn.metal",
+    "m5zn.xlarge",
+    "m6a.12xlarge",
+    "m6a.16xlarge",
+    "m6a.24xlarge",
+    "m6a.2xlarge",
+    "m6a.32xlarge",
+    "m6a.48xlarge",
+    "m6a.4xlarge",
+    "m6a.8xlarge",
+    "m6a.large",
+    "m6a.xlarge",
+    "m6g.12xlarge",
+    "m6g.16xlarge",
+    "m6g.2xlarge",
+    "m6g.4xlarge",
+    "m6g.8xlarge",
+    "m6g.large",
+    "m6g.medium",
+    "m6g.metal",
+    "m6g.xlarge",
+    "m6gd.12xlarge",
+    "m6gd.16xlarge",
+    "m6gd.2xlarge",
+    "m6gd.4xlarge",
+    "m6gd.8xlarge",
+    "m6gd.large",
+    "m6gd.medium",
+    "m6gd.metal",
+    "m6gd.xlarge",
+    "m6i.12xlarge",
+    "m6i.16xlarge",
+    "m6i.24xlarge",
+    "m6i.2xlarge",
+    "m6i.32xlarge",
+    "m6i.4xlarge",
+    "m6i.8xlarge",
+    "m6i.large",
+    "m6i.metal",
+    "m6i.xlarge",
+    "mac1.metal",
+    "p2.16xlarge",
+    "p2.8xlarge",
+    "p2.xlarge",
+    "p3.16xlarge",
+    "p3.2xlarge",
+    "p3.8xlarge",
+    "p3dn.24xlarge",
+    "p4d.24xlarge",
+    "r3.2xlarge",
+    "r3.4xlarge",
+    "r3.8xlarge",
+    "r3.large",
+    "r3.xlarge",
+    "r4.16xlarge",
+    "r4.2xlarge",
+    "r4.4xlarge",
+    "r4.8xlarge",
+    "r4.large",
+    "r4.xlarge",
+    "r5.12xlarge",
+    "r5.16xlarge",
+    "r5.24xlarge",
+    "r5.2xlarge",
+    "r5.4xlarge",
+    "r5.8xlarge",
+    "r5.large",
+    "r5.metal",
+    "r5.xlarge",
+    "r5a.12xlarge",
+    "r5a.16xlarge",
+    "r5a.24xlarge",
+    "r5a.2xlarge",
+    "r5a.4xlarge",
+    "r5a.8xlarge",
+    "r5a.large",
+    "r5a.xlarge",
+    "r5ad.12xlarge",
+    "r5ad.16xlarge",
+    "r5ad.24xlarge",
+    "r5ad.2xlarge",
+    "r5ad.4xlarge",
+    "r5ad.8xlarge",
+    "r5ad.large",
+    "r5ad.xlarge",
+    "r5b.12xlarge",
+    "r5b.16xlarge",
+    "r5b.24xlarge",
+    "r5b.2xlarge",
+    "r5b.4xlarge",
+    "r5b.8xlarge",
+    "r5b.large",
+    "r5b.metal",
+    "r5b.xlarge",
+    "r5d.12xlarge",
+    "r5d.16xlarge",
+    "r5d.24xlarge",
+    "r5d.2xlarge",
+    "r5d.4xlarge",
+    "r5d.8xlarge",
+    "r5d.large",
+    "r5d.metal",
+    "r5d.xlarge",
+    "r5dn.12xlarge",
+    "r5dn.16xlarge",
+    "r5dn.24xlarge",
+    "r5dn.2xlarge",
+    "r5dn.4xlarge",
+    "r5dn.8xlarge",
+    "r5dn.large",
+    "r5dn.metal",
+    "r5dn.xlarge",
+    "r5n.12xlarge",
+    "r5n.16xlarge",
+    "r5n.24xlarge",
+    "r5n.2xlarge",
+    "r5n.4xlarge",
+    "r5n.8xlarge",
+    "r5n.large",
+    "r5n.metal",
+    "r5n.xlarge",
+    "r6g.12xlarge",
+    "r6g.16xlarge",
+    "r6g.2xlarge",
+    "r6g.4xlarge",
+    "r6g.8xlarge",
+    "r6g.large",
+    "r6g.medium",
+    "r6g.metal",
+    "r6g.xlarge",
+    "r6gd.12xlarge",
+    "r6gd.16xlarge",
+    "r6gd.2xlarge",
+    "r6gd.4xlarge",
+    "r6gd.8xlarge",
+    "r6gd.large",
+    "r6gd.medium",
+    "r6gd.metal",
+    "r6gd.xlarge",
+    "r6i.12xlarge",
+    "r6i.16xlarge",
+    "r6i.24xlarge",
+    "r6i.2xlarge",
+    "r6i.32xlarge",
+    "r6i.4xlarge",
+    "r6i.8xlarge",
+    "r6i.large",
+    "r6i.metal",
+    "r6i.xlarge",
+    "t1.micro",
+    "t2.2xlarge",
+    "t2.large",
+    "t2.medium",
+    "t2.micro",
+    "t2.nano",
+    "t2.small",
+    "t2.xlarge",
+    "t3.2xlarge",
+    "t3.large",
+    "t3.medium",
+    "t3.micro",
+    "t3.nano",
+    "t3.small",
+    "t3.xlarge",
+    "t3a.2xlarge",
+    "t3a.large",
+    "t3a.medium",
+    "t3a.micro",
+    "t3a.nano",
+    "t3a.small",
+    "t3a.xlarge",
+    "t4g.2xlarge",
+    "t4g.large",
+    "t4g.medium",
+    "t4g.micro",
+    "t4g.nano",
+    "t4g.small",
+    "t4g.xlarge",
+    "u-12tb1.112xlarge",
+    "u-12tb1.metal",
+    "u-18tb1.metal",
+    "u-24tb1.metal",
+    "u-6tb1.112xlarge",
+    "u-6tb1.56xlarge",
+    "u-6tb1.metal",
+    "u-9tb1.112xlarge",
+    "u-9tb1.metal",
+    "vt1.24xlarge",
+    "vt1.3xlarge",
+    "vt1.6xlarge",
+    "x1.16xlarge",
+    "x1.32xlarge",
+    "x1e.16xlarge",
+    "x1e.2xlarge",
+    "x1e.32xlarge",
+    "x1e.4xlarge",
+    "x1e.8xlarge",
+    "x1e.xlarge",
+    "x2gd.12xlarge",
+    "x2gd.16xlarge",
+    "x2gd.2xlarge",
+    "x2gd.4xlarge",
+    "x2gd.8xlarge",
+    "x2gd.large",
+    "x2gd.medium",
+    "x2gd.metal",
+    "x2gd.xlarge",
+    "x2iezn.12xlarge",
+    "x2iezn.2xlarge",
+    "x2iezn.4xlarge",
+    "x2iezn.6xlarge",
+    "x2iezn.8xlarge",
+    "x2iezn.metal",
+    "z1d.12xlarge",
+    "z1d.2xlarge",
+    "z1d.3xlarge",
+    "z1d.6xlarge",
+    "z1d.large",
+    "z1d.metal",
+    "z1d.xlarge",
+]
+```
 ## InterfacePermissionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InterfacePermissionTypeType
+
+def get_value() -> InterfacePermissionTypeType:
+    return "EIP-ASSOCIATE"
 ```
 
-Values:
-
-- `EIP-ASSOCIATE`
-- `INSTANCE-ATTACH`
-
-<a id="interfaceprotocoltypetype"></a>
-
+```python title="Definition"
+InterfacePermissionTypeType = Literal[
+    "EIP-ASSOCIATE",
+    "INSTANCE-ATTACH",
+]
+```
 ## InterfaceProtocolTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InterfaceProtocolTypeType
+
+def get_value() -> InterfaceProtocolTypeType:
+    return "GRE"
 ```
 
-Values:
-
-- `GRE`
-- `VLAN`
-
-<a id="internetgatewayexistswaitername"></a>
-
+```python title="Definition"
+InterfaceProtocolTypeType = Literal[
+    "GRE",
+    "VLAN",
+]
+```
 ## InternetGatewayExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import InternetGatewayExistsWaiterName
+
+def get_value() -> InternetGatewayExistsWaiterName:
+    return "internet_gateway_exists"
 ```
 
-Values:
-
-- `internet_gateway_exists`
-
-<a id="ipamaddresshistoryresourcetypetype"></a>
-
+```python title="Definition"
+InternetGatewayExistsWaiterName = Literal[
+    "internet_gateway_exists",
+]
+```
 ## IpamAddressHistoryResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamAddressHistoryResourceTypeType
+
+def get_value() -> IpamAddressHistoryResourceTypeType:
+    return "eip"
 ```
 
-Values:
-
-- `eip`
-- `instance`
-- `network-interface`
-- `subnet`
-- `vpc`
-
-<a id="ipamcompliancestatustype"></a>
-
+```python title="Definition"
+IpamAddressHistoryResourceTypeType = Literal[
+    "eip",
+    "instance",
+    "network-interface",
+    "subnet",
+    "vpc",
+]
+```
 ## IpamComplianceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamComplianceStatusType
+
+def get_value() -> IpamComplianceStatusType:
+    return "compliant"
 ```
 
-Values:
-
-- `compliant`
-- `ignored`
-- `noncompliant`
-- `unmanaged`
-
-<a id="ipammanagementstatetype"></a>
-
+```python title="Definition"
+IpamComplianceStatusType = Literal[
+    "compliant",
+    "ignored",
+    "noncompliant",
+    "unmanaged",
+]
+```
 ## IpamManagementStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamManagementStateType
+
+def get_value() -> IpamManagementStateType:
+    return "ignored"
 ```
 
-Values:
-
-- `ignored`
-- `managed`
-- `unmanaged`
-
-<a id="ipamoverlapstatustype"></a>
-
+```python title="Definition"
+IpamManagementStateType = Literal[
+    "ignored",
+    "managed",
+    "unmanaged",
+]
+```
 ## IpamOverlapStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamOverlapStatusType
+
+def get_value() -> IpamOverlapStatusType:
+    return "ignored"
 ```
 
-Values:
-
-- `ignored`
-- `nonoverlapping`
-- `overlapping`
-
-<a id="ipampoolallocationresourcetypetype"></a>
-
+```python title="Definition"
+IpamOverlapStatusType = Literal[
+    "ignored",
+    "nonoverlapping",
+    "overlapping",
+]
+```
 ## IpamPoolAllocationResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamPoolAllocationResourceTypeType
+
+def get_value() -> IpamPoolAllocationResourceTypeType:
+    return "custom"
 ```
 
-Values:
-
-- `custom`
-- `ec2-public-ipv4-pool`
-- `ipam-pool`
-- `vpc`
-
-<a id="ipampoolawsservicetype"></a>
-
+```python title="Definition"
+IpamPoolAllocationResourceTypeType = Literal[
+    "custom",
+    "ec2-public-ipv4-pool",
+    "ipam-pool",
+    "vpc",
+]
+```
 ## IpamPoolAwsServiceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamPoolAwsServiceType
+
+def get_value() -> IpamPoolAwsServiceType:
+    return "ec2"
 ```
 
-Values:
-
-- `ec2`
-
-<a id="ipampoolcidrfailurecodetype"></a>
-
+```python title="Definition"
+IpamPoolAwsServiceType = Literal[
+    "ec2",
+]
+```
 ## IpamPoolCidrFailureCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamPoolCidrFailureCodeType
+
+def get_value() -> IpamPoolCidrFailureCodeType:
+    return "cidr-not-available"
 ```
 
-Values:
-
-- `cidr-not-available`
-
-<a id="ipampoolcidrstatetype"></a>
-
+```python title="Definition"
+IpamPoolCidrFailureCodeType = Literal[
+    "cidr-not-available",
+]
+```
 ## IpamPoolCidrStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamPoolCidrStateType
+
+def get_value() -> IpamPoolCidrStateType:
+    return "deprovisioned"
 ```
 
-Values:
-
-- `deprovisioned`
-- `failed-deprovision`
-- `failed-import`
-- `failed-provision`
-- `pending-deprovision`
-- `pending-import`
-- `pending-provision`
-- `provisioned`
-
-<a id="ipampoolstatetype"></a>
-
+```python title="Definition"
+IpamPoolCidrStateType = Literal[
+    "deprovisioned",
+    "failed-deprovision",
+    "failed-import",
+    "failed-provision",
+    "pending-deprovision",
+    "pending-import",
+    "pending-provision",
+    "provisioned",
+]
+```
 ## IpamPoolStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamPoolStateType
+
+def get_value() -> IpamPoolStateType:
+    return "create-complete"
 ```
 
-Values:
-
-- `create-complete`
-- `create-failed`
-- `create-in-progress`
-- `delete-complete`
-- `delete-failed`
-- `delete-in-progress`
-- `modify-complete`
-- `modify-failed`
-- `modify-in-progress`
-
-<a id="ipamresourcetypetype"></a>
-
+```python title="Definition"
+IpamPoolStateType = Literal[
+    "create-complete",
+    "create-failed",
+    "create-in-progress",
+    "delete-complete",
+    "delete-failed",
+    "delete-in-progress",
+    "modify-complete",
+    "modify-failed",
+    "modify-in-progress",
+]
+```
 ## IpamResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamResourceTypeType
+
+def get_value() -> IpamResourceTypeType:
+    return "eip"
 ```
 
-Values:
-
-- `eip`
-- `ipv6-pool`
-- `public-ipv4-pool`
-- `subnet`
-- `vpc`
-
-<a id="ipamscopestatetype"></a>
-
+```python title="Definition"
+IpamResourceTypeType = Literal[
+    "eip",
+    "ipv6-pool",
+    "public-ipv4-pool",
+    "subnet",
+    "vpc",
+]
+```
 ## IpamScopeStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamScopeStateType
+
+def get_value() -> IpamScopeStateType:
+    return "create-complete"
 ```
 
-Values:
-
-- `create-complete`
-- `create-failed`
-- `create-in-progress`
-- `delete-complete`
-- `delete-failed`
-- `delete-in-progress`
-- `modify-complete`
-- `modify-failed`
-- `modify-in-progress`
-
-<a id="ipamscopetypetype"></a>
-
+```python title="Definition"
+IpamScopeStateType = Literal[
+    "create-complete",
+    "create-failed",
+    "create-in-progress",
+    "delete-complete",
+    "delete-failed",
+    "delete-in-progress",
+    "modify-complete",
+    "modify-failed",
+    "modify-in-progress",
+]
+```
 ## IpamScopeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamScopeTypeType
+
+def get_value() -> IpamScopeTypeType:
+    return "private"
 ```
 
-Values:
-
-- `private`
-- `public`
-
-<a id="ipamstatetype"></a>
-
+```python title="Definition"
+IpamScopeTypeType = Literal[
+    "private",
+    "public",
+]
+```
 ## IpamStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import IpamStateType
+
+def get_value() -> IpamStateType:
+    return "create-complete"
 ```
 
-Values:
-
-- `create-complete`
-- `create-failed`
-- `create-in-progress`
-- `delete-complete`
-- `delete-failed`
-- `delete-in-progress`
-- `modify-complete`
-- `modify-failed`
-- `modify-in-progress`
-
-<a id="ipv6supportvaluetype"></a>
-
+```python title="Definition"
+IpamStateType = Literal[
+    "create-complete",
+    "create-failed",
+    "create-in-progress",
+    "delete-complete",
+    "delete-failed",
+    "delete-in-progress",
+    "modify-complete",
+    "modify-failed",
+    "modify-in-progress",
+]
+```
 ## Ipv6SupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import Ipv6SupportValueType
+
+def get_value() -> Ipv6SupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="keypairexistswaitername"></a>
-
+```python title="Definition"
+Ipv6SupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## KeyPairExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import KeyPairExistsWaiterName
+
+def get_value() -> KeyPairExistsWaiterName:
+    return "key_pair_exists"
 ```
 
-Values:
-
-- `key_pair_exists`
-
-<a id="keytypetype"></a>
-
+```python title="Definition"
+KeyPairExistsWaiterName = Literal[
+    "key_pair_exists",
+]
+```
 ## KeyTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import KeyTypeType
+
+def get_value() -> KeyTypeType:
+    return "ed25519"
 ```
 
-Values:
-
-- `ed25519`
-- `rsa`
-
-<a id="launchtemplateerrorcodetype"></a>
-
+```python title="Definition"
+KeyTypeType = Literal[
+    "ed25519",
+    "rsa",
+]
+```
 ## LaunchTemplateErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateErrorCodeType
+
+def get_value() -> LaunchTemplateErrorCodeType:
+    return "launchTemplateIdDoesNotExist"
 ```
 
-Values:
-
-- `launchTemplateIdDoesNotExist`
-- `launchTemplateIdMalformed`
-- `launchTemplateNameDoesNotExist`
-- `launchTemplateNameMalformed`
-- `launchTemplateVersionDoesNotExist`
-- `unexpectedError`
-
-<a id="launchtemplatehttptokensstatetype"></a>
-
+```python title="Definition"
+LaunchTemplateErrorCodeType = Literal[
+    "launchTemplateIdDoesNotExist",
+    "launchTemplateIdMalformed",
+    "launchTemplateNameDoesNotExist",
+    "launchTemplateNameMalformed",
+    "launchTemplateVersionDoesNotExist",
+    "unexpectedError",
+]
+```
 ## LaunchTemplateHttpTokensStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateHttpTokensStateType
+
+def get_value() -> LaunchTemplateHttpTokensStateType:
+    return "optional"
 ```
 
-Values:
-
-- `optional`
-- `required`
-
-<a id="launchtemplateinstancemetadataendpointstatetype"></a>
-
+```python title="Definition"
+LaunchTemplateHttpTokensStateType = Literal[
+    "optional",
+    "required",
+]
+```
 ## LaunchTemplateInstanceMetadataEndpointStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataEndpointStateType
+
+def get_value() -> LaunchTemplateInstanceMetadataEndpointStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="launchtemplateinstancemetadataoptionsstatetype"></a>
-
+```python title="Definition"
+LaunchTemplateInstanceMetadataEndpointStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## LaunchTemplateInstanceMetadataOptionsStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataOptionsStateType
+
+def get_value() -> LaunchTemplateInstanceMetadataOptionsStateType:
+    return "applied"
 ```
 
-Values:
-
-- `applied`
-- `pending`
-
-<a id="launchtemplateinstancemetadataprotocolipv6type"></a>
-
+```python title="Definition"
+LaunchTemplateInstanceMetadataOptionsStateType = Literal[
+    "applied",
+    "pending",
+]
+```
 ## LaunchTemplateInstanceMetadataProtocolIpv6Type
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataProtocolIpv6Type
+
+def get_value() -> LaunchTemplateInstanceMetadataProtocolIpv6Type:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="launchtemplateinstancemetadatatagsstatetype"></a>
-
+```python title="Definition"
+LaunchTemplateInstanceMetadataProtocolIpv6Type = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## LaunchTemplateInstanceMetadataTagsStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataTagsStateType
+
+def get_value() -> LaunchTemplateInstanceMetadataTagsStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="listimagesinrecyclebinpaginatorname"></a>
-
+```python title="Definition"
+LaunchTemplateInstanceMetadataTagsStateType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## ListImagesInRecycleBinPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ListImagesInRecycleBinPaginatorName
+
+def get_value() -> ListImagesInRecycleBinPaginatorName:
+    return "list_images_in_recycle_bin"
 ```
 
-Values:
-
-- `list_images_in_recycle_bin`
-
-<a id="listsnapshotsinrecyclebinpaginatorname"></a>
-
+```python title="Definition"
+ListImagesInRecycleBinPaginatorName = Literal[
+    "list_images_in_recycle_bin",
+]
+```
 ## ListSnapshotsInRecycleBinPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ListSnapshotsInRecycleBinPaginatorName
+
+def get_value() -> ListSnapshotsInRecycleBinPaginatorName:
+    return "list_snapshots_in_recycle_bin"
 ```
 
-Values:
-
-- `list_snapshots_in_recycle_bin`
-
-<a id="listingstatetype"></a>
-
+```python title="Definition"
+ListSnapshotsInRecycleBinPaginatorName = Literal[
+    "list_snapshots_in_recycle_bin",
+]
+```
 ## ListingStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ListingStateType
+
+def get_value() -> ListingStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `cancelled`
-- `pending`
-- `sold`
-
-<a id="listingstatustype"></a>
-
+```python title="Definition"
+ListingStateType = Literal[
+    "available",
+    "cancelled",
+    "pending",
+    "sold",
+]
+```
 ## ListingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ListingStatusType
+
+def get_value() -> ListingStatusType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `closed`
-- `pending`
-
-<a id="localgatewayroutestatetype"></a>
-
+```python title="Definition"
+ListingStatusType = Literal[
+    "active",
+    "cancelled",
+    "closed",
+    "pending",
+]
+```
 ## LocalGatewayRouteStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LocalGatewayRouteStateType
+
+def get_value() -> LocalGatewayRouteStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `blackhole`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="localgatewayroutetypetype"></a>
-
+```python title="Definition"
+LocalGatewayRouteStateType = Literal[
+    "active",
+    "blackhole",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## LocalGatewayRouteTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LocalGatewayRouteTypeType
+
+def get_value() -> LocalGatewayRouteTypeType:
+    return "propagated"
 ```
 
-Values:
-
-- `propagated`
-- `static`
-
-<a id="localstoragetype"></a>
-
+```python title="Definition"
+LocalGatewayRouteTypeType = Literal[
+    "propagated",
+    "static",
+]
+```
 ## LocalStorageType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LocalStorageType
+
+def get_value() -> LocalStorageType:
+    return "excluded"
 ```
 
-Values:
-
-- `excluded`
-- `included`
-- `required`
-
-<a id="localstoragetypetype"></a>
-
+```python title="Definition"
+LocalStorageType = Literal[
+    "excluded",
+    "included",
+    "required",
+]
+```
 ## LocalStorageTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LocalStorageTypeType
+
+def get_value() -> LocalStorageTypeType:
+    return "hdd"
 ```
 
-Values:
-
-- `hdd`
-- `ssd`
-
-<a id="locationtypetype"></a>
-
+```python title="Definition"
+LocalStorageTypeType = Literal[
+    "hdd",
+    "ssd",
+]
+```
 ## LocationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LocationTypeType
+
+def get_value() -> LocationTypeType:
+    return "availability-zone"
 ```
 
-Values:
-
-- `availability-zone`
-- `availability-zone-id`
-- `region`
-
-<a id="logdestinationtypetype"></a>
-
+```python title="Definition"
+LocationTypeType = Literal[
+    "availability-zone",
+    "availability-zone-id",
+    "region",
+]
+```
 ## LogDestinationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import LogDestinationTypeType
+
+def get_value() -> LogDestinationTypeType:
+    return "cloud-watch-logs"
 ```
 
-Values:
-
-- `cloud-watch-logs`
-- `s3`
-
-<a id="markettypetype"></a>
-
+```python title="Definition"
+LogDestinationTypeType = Literal[
+    "cloud-watch-logs",
+    "s3",
+]
+```
 ## MarketTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import MarketTypeType
+
+def get_value() -> MarketTypeType:
+    return "spot"
 ```
 
-Values:
-
-- `spot`
-
-<a id="membershiptypetype"></a>
-
+```python title="Definition"
+MarketTypeType = Literal[
+    "spot",
+]
+```
 ## MembershipTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import MembershipTypeType
+
+def get_value() -> MembershipTypeType:
+    return "igmp"
 ```
 
-Values:
-
-- `igmp`
-- `static`
-
-<a id="modifyavailabilityzoneoptinstatustype"></a>
-
+```python title="Definition"
+MembershipTypeType = Literal[
+    "igmp",
+    "static",
+]
+```
 ## ModifyAvailabilityZoneOptInStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ModifyAvailabilityZoneOptInStatusType
+
+def get_value() -> ModifyAvailabilityZoneOptInStatusType:
+    return "not-opted-in"
 ```
 
-Values:
-
-- `not-opted-in`
-- `opted-in`
-
-<a id="monitoringstatetype"></a>
-
+```python title="Definition"
+ModifyAvailabilityZoneOptInStatusType = Literal[
+    "not-opted-in",
+    "opted-in",
+]
+```
 ## MonitoringStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import MonitoringStateType
+
+def get_value() -> MonitoringStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `disabling`
-- `enabled`
-- `pending`
-
-<a id="movestatustype"></a>
-
+```python title="Definition"
+MonitoringStateType = Literal[
+    "disabled",
+    "disabling",
+    "enabled",
+    "pending",
+]
+```
 ## MoveStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import MoveStatusType
+
+def get_value() -> MoveStatusType:
+    return "movingToVpc"
 ```
 
-Values:
-
-- `movingToVpc`
-- `restoringToClassic`
-
-<a id="multicastsupportvaluetype"></a>
-
+```python title="Definition"
+MoveStatusType = Literal[
+    "movingToVpc",
+    "restoringToClassic",
+]
+```
 ## MulticastSupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import MulticastSupportValueType
+
+def get_value() -> MulticastSupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="natgatewayavailablewaitername"></a>
-
+```python title="Definition"
+MulticastSupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## NatGatewayAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NatGatewayAvailableWaiterName
+
+def get_value() -> NatGatewayAvailableWaiterName:
+    return "nat_gateway_available"
 ```
 
-Values:
-
-- `nat_gateway_available`
-
-<a id="natgatewaystatetype"></a>
-
+```python title="Definition"
+NatGatewayAvailableWaiterName = Literal[
+    "nat_gateway_available",
+]
+```
 ## NatGatewayStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NatGatewayStateType
+
+def get_value() -> NatGatewayStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `failed`
-- `pending`
-
-<a id="networkinterfaceattributetype"></a>
-
+```python title="Definition"
+NatGatewayStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "failed",
+    "pending",
+]
+```
 ## NetworkInterfaceAttributeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfaceAttributeType
+
+def get_value() -> NetworkInterfaceAttributeType:
+    return "attachment"
 ```
 
-Values:
-
-- `attachment`
-- `description`
-- `groupSet`
-- `sourceDestCheck`
-
-<a id="networkinterfaceavailablewaitername"></a>
-
+```python title="Definition"
+NetworkInterfaceAttributeType = Literal[
+    "attachment",
+    "description",
+    "groupSet",
+    "sourceDestCheck",
+]
+```
 ## NetworkInterfaceAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfaceAvailableWaiterName
+
+def get_value() -> NetworkInterfaceAvailableWaiterName:
+    return "network_interface_available"
 ```
 
-Values:
-
-- `network_interface_available`
-
-<a id="networkinterfacecreationtypetype"></a>
-
+```python title="Definition"
+NetworkInterfaceAvailableWaiterName = Literal[
+    "network_interface_available",
+]
+```
 ## NetworkInterfaceCreationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfaceCreationTypeType
+
+def get_value() -> NetworkInterfaceCreationTypeType:
+    return "branch"
 ```
 
-Values:
-
-- `branch`
-- `efa`
-- `trunk`
-
-<a id="networkinterfacepermissionstatecodetype"></a>
-
+```python title="Definition"
+NetworkInterfaceCreationTypeType = Literal[
+    "branch",
+    "efa",
+    "trunk",
+]
+```
 ## NetworkInterfacePermissionStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfacePermissionStateCodeType
+
+def get_value() -> NetworkInterfacePermissionStateCodeType:
+    return "granted"
 ```
 
-Values:
-
-- `granted`
-- `pending`
-- `revoked`
-- `revoking`
-
-<a id="networkinterfacestatustype"></a>
-
+```python title="Definition"
+NetworkInterfacePermissionStateCodeType = Literal[
+    "granted",
+    "pending",
+    "revoked",
+    "revoking",
+]
+```
 ## NetworkInterfaceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfaceStatusType
+
+def get_value() -> NetworkInterfaceStatusType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `attaching`
-- `available`
-- `detaching`
-- `in-use`
-
-<a id="networkinterfacetypetype"></a>
-
+```python title="Definition"
+NetworkInterfaceStatusType = Literal[
+    "associated",
+    "attaching",
+    "available",
+    "detaching",
+    "in-use",
+]
+```
 ## NetworkInterfaceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import NetworkInterfaceTypeType
+
+def get_value() -> NetworkInterfaceTypeType:
+    return "api_gateway_managed"
 ```
 
-Values:
-
-- `api_gateway_managed`
-- `aws_codestar_connections_managed`
-- `branch`
-- `efa`
-- `gateway_load_balancer`
-- `gateway_load_balancer_endpoint`
-- `global_accelerator_managed`
-- `interface`
-- `iot_rules_managed`
-- `lambda`
-- `load_balancer`
-- `natGateway`
-- `network_load_balancer`
-- `quicksight`
-- `transit_gateway`
-- `trunk`
-- `vpc_endpoint`
-
-<a id="offeringclasstypetype"></a>
-
+```python title="Definition"
+NetworkInterfaceTypeType = Literal[
+    "api_gateway_managed",
+    "aws_codestar_connections_managed",
+    "branch",
+    "efa",
+    "gateway_load_balancer",
+    "gateway_load_balancer_endpoint",
+    "global_accelerator_managed",
+    "interface",
+    "iot_rules_managed",
+    "lambda",
+    "load_balancer",
+    "natGateway",
+    "network_load_balancer",
+    "quicksight",
+    "transit_gateway",
+    "trunk",
+    "vpc_endpoint",
+]
+```
 ## OfferingClassTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import OfferingClassTypeType
+
+def get_value() -> OfferingClassTypeType:
+    return "convertible"
 ```
 
-Values:
-
-- `convertible`
-- `standard`
-
-<a id="offeringtypevaluestype"></a>
-
+```python title="Definition"
+OfferingClassTypeType = Literal[
+    "convertible",
+    "standard",
+]
+```
 ## OfferingTypeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import OfferingTypeValuesType
+
+def get_value() -> OfferingTypeValuesType:
+    return "All Upfront"
 ```
 
-Values:
-
-- `All Upfront`
-- `Heavy Utilization`
-- `Light Utilization`
-- `Medium Utilization`
-- `No Upfront`
-- `Partial Upfront`
-
-<a id="ondemandallocationstrategytype"></a>
-
+```python title="Definition"
+OfferingTypeValuesType = Literal[
+    "All Upfront",
+    "Heavy Utilization",
+    "Light Utilization",
+    "Medium Utilization",
+    "No Upfront",
+    "Partial Upfront",
+]
+```
 ## OnDemandAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import OnDemandAllocationStrategyType
+
+def get_value() -> OnDemandAllocationStrategyType:
+    return "lowestPrice"
 ```
 
-Values:
-
-- `lowestPrice`
-- `prioritized`
-
-<a id="operationtypetype"></a>
-
+```python title="Definition"
+OnDemandAllocationStrategyType = Literal[
+    "lowestPrice",
+    "prioritized",
+]
+```
 ## OperationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import OperationTypeType
+
+def get_value() -> OperationTypeType:
+    return "add"
 ```
 
-Values:
-
-- `add`
-- `remove`
-
-<a id="partitionloadfrequencytype"></a>
-
+```python title="Definition"
+OperationTypeType = Literal[
+    "add",
+    "remove",
+]
+```
 ## PartitionLoadFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PartitionLoadFrequencyType
+
+def get_value() -> PartitionLoadFrequencyType:
+    return "daily"
 ```
 
-Values:
-
-- `daily`
-- `monthly`
-- `none`
-- `weekly`
-
-<a id="passworddataavailablewaitername"></a>
-
+```python title="Definition"
+PartitionLoadFrequencyType = Literal[
+    "daily",
+    "monthly",
+    "none",
+    "weekly",
+]
+```
 ## PasswordDataAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PasswordDataAvailableWaiterName
+
+def get_value() -> PasswordDataAvailableWaiterName:
+    return "password_data_available"
 ```
 
-Values:
-
-- `password_data_available`
-
-<a id="payerresponsibilitytype"></a>
-
+```python title="Definition"
+PasswordDataAvailableWaiterName = Literal[
+    "password_data_available",
+]
+```
 ## PayerResponsibilityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PayerResponsibilityType
+
+def get_value() -> PayerResponsibilityType:
+    return "ServiceOwner"
 ```
 
-Values:
-
-- `ServiceOwner`
-
-<a id="paymentoptiontype"></a>
-
+```python title="Definition"
+PayerResponsibilityType = Literal[
+    "ServiceOwner",
+]
+```
 ## PaymentOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PaymentOptionType
+
+def get_value() -> PaymentOptionType:
+    return "AllUpfront"
 ```
 
-Values:
-
-- `AllUpfront`
-- `NoUpfront`
-- `PartialUpfront`
-
-<a id="permissiongrouptype"></a>
-
+```python title="Definition"
+PaymentOptionType = Literal[
+    "AllUpfront",
+    "NoUpfront",
+    "PartialUpfront",
+]
+```
 ## PermissionGroupType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PermissionGroupType
+
+def get_value() -> PermissionGroupType:
+    return "all"
 ```
 
-Values:
-
-- `all`
-
-<a id="placementgroupstatetype"></a>
-
+```python title="Definition"
+PermissionGroupType = Literal[
+    "all",
+]
+```
 ## PlacementGroupStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PlacementGroupStateType
+
+def get_value() -> PlacementGroupStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="placementgroupstrategytype"></a>
-
+```python title="Definition"
+PlacementGroupStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## PlacementGroupStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PlacementGroupStrategyType
+
+def get_value() -> PlacementGroupStrategyType:
+    return "cluster"
 ```
 
-Values:
-
-- `cluster`
-- `partition`
-- `spread`
-
-<a id="placementstrategytype"></a>
-
+```python title="Definition"
+PlacementGroupStrategyType = Literal[
+    "cluster",
+    "partition",
+    "spread",
+]
+```
 ## PlacementStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PlacementStrategyType
+
+def get_value() -> PlacementStrategyType:
+    return "cluster"
 ```
 
-Values:
-
-- `cluster`
-- `partition`
-- `spread`
-
-<a id="platformvaluestype"></a>
-
+```python title="Definition"
+PlacementStrategyType = Literal[
+    "cluster",
+    "partition",
+    "spread",
+]
+```
 ## PlatformValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PlatformValuesType
+
+def get_value() -> PlatformValuesType:
+    return "Windows"
 ```
 
-Values:
-
-- `Windows`
-
-<a id="prefixliststatetype"></a>
-
+```python title="Definition"
+PlatformValuesType = Literal[
+    "Windows",
+]
+```
 ## PrefixListStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PrefixListStateType
+
+def get_value() -> PrefixListStateType:
+    return "create-complete"
 ```
 
-Values:
-
-- `create-complete`
-- `create-failed`
-- `create-in-progress`
-- `delete-complete`
-- `delete-failed`
-- `delete-in-progress`
-- `modify-complete`
-- `modify-failed`
-- `modify-in-progress`
-- `restore-complete`
-- `restore-failed`
-- `restore-in-progress`
-
-<a id="principaltypetype"></a>
-
+```python title="Definition"
+PrefixListStateType = Literal[
+    "create-complete",
+    "create-failed",
+    "create-in-progress",
+    "delete-complete",
+    "delete-failed",
+    "delete-in-progress",
+    "modify-complete",
+    "modify-failed",
+    "modify-in-progress",
+    "restore-complete",
+    "restore-failed",
+    "restore-in-progress",
+]
+```
 ## PrincipalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "Account"
 ```
 
-Values:
-
-- `Account`
-- `All`
-- `OrganizationUnit`
-- `Role`
-- `Service`
-- `User`
-
-<a id="productcodevaluestype"></a>
-
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "Account",
+    "All",
+    "OrganizationUnit",
+    "Role",
+    "Service",
+    "User",
+]
+```
 ## ProductCodeValuesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ProductCodeValuesType
+
+def get_value() -> ProductCodeValuesType:
+    return "devpay"
 ```
 
-Values:
-
-- `devpay`
-- `marketplace`
-
-<a id="protocoltype"></a>
-
+```python title="Definition"
+ProductCodeValuesType = Literal[
+    "devpay",
+    "marketplace",
+]
+```
 ## ProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ProtocolType
+
+def get_value() -> ProtocolType:
+    return "tcp"
 ```
 
-Values:
-
-- `tcp`
-- `udp`
-
-<a id="protocolvaluetype"></a>
-
+```python title="Definition"
+ProtocolType = Literal[
+    "tcp",
+    "udp",
+]
+```
 ## ProtocolValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ProtocolValueType
+
+def get_value() -> ProtocolValueType:
+    return "gre"
 ```
 
-Values:
-
-- `gre`
-
-<a id="riproductdescriptiontype"></a>
-
+```python title="Definition"
+ProtocolValueType = Literal[
+    "gre",
+]
+```
 ## RIProductDescriptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RIProductDescriptionType
+
+def get_value() -> RIProductDescriptionType:
+    return "Linux/UNIX"
 ```
 
-Values:
-
-- `Linux/UNIX`
-- `Linux/UNIX (Amazon VPC)`
-- `Windows`
-- `Windows (Amazon VPC)`
-
-<a id="recurringchargefrequencytype"></a>
-
+```python title="Definition"
+RIProductDescriptionType = Literal[
+    "Linux/UNIX",
+    "Linux/UNIX (Amazon VPC)",
+    "Windows",
+    "Windows (Amazon VPC)",
+]
+```
 ## RecurringChargeFrequencyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RecurringChargeFrequencyType
+
+def get_value() -> RecurringChargeFrequencyType:
+    return "Hourly"
 ```
 
-Values:
-
-- `Hourly`
-
-<a id="replacerootvolumetaskstatetype"></a>
-
+```python title="Definition"
+RecurringChargeFrequencyType = Literal[
+    "Hourly",
+]
+```
 ## ReplaceRootVolumeTaskStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReplaceRootVolumeTaskStateType
+
+def get_value() -> ReplaceRootVolumeTaskStateType:
+    return "failed"
 ```
 
-Values:
-
-- `failed`
-- `failed-detached`
-- `failing`
-- `in-progress`
-- `pending`
-- `succeeded`
-
-<a id="replacementstrategytype"></a>
-
+```python title="Definition"
+ReplaceRootVolumeTaskStateType = Literal[
+    "failed",
+    "failed-detached",
+    "failing",
+    "in-progress",
+    "pending",
+    "succeeded",
+]
+```
 ## ReplacementStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReplacementStrategyType
+
+def get_value() -> ReplacementStrategyType:
+    return "launch"
 ```
 
-Values:
-
-- `launch`
-- `launch-before-terminate`
-
-<a id="reportinstancereasoncodestype"></a>
-
+```python title="Definition"
+ReplacementStrategyType = Literal[
+    "launch",
+    "launch-before-terminate",
+]
+```
 ## ReportInstanceReasonCodesType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReportInstanceReasonCodesType
+
+def get_value() -> ReportInstanceReasonCodesType:
+    return "instance-stuck-in-state"
 ```
 
-Values:
-
-- `instance-stuck-in-state`
-- `not-accepting-credentials`
-- `other`
-- `password-not-available`
-- `performance-ebs-volume`
-- `performance-instance-store`
-- `performance-network`
-- `performance-other`
-- `unresponsive`
-
-<a id="reportstatustypetype"></a>
-
+```python title="Definition"
+ReportInstanceReasonCodesType = Literal[
+    "instance-stuck-in-state",
+    "not-accepting-credentials",
+    "other",
+    "password-not-available",
+    "performance-ebs-volume",
+    "performance-instance-store",
+    "performance-network",
+    "performance-other",
+    "unresponsive",
+]
+```
 ## ReportStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReportStatusTypeType
+
+def get_value() -> ReportStatusTypeType:
+    return "impaired"
 ```
 
-Values:
-
-- `impaired`
-- `ok`
-
-<a id="reservationstatetype"></a>
-
+```python title="Definition"
+ReportStatusTypeType = Literal[
+    "impaired",
+    "ok",
+]
+```
 ## ReservationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReservationStateType
+
+def get_value() -> ReservationStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `payment-failed`
-- `payment-pending`
-- `retired`
-
-<a id="reservedinstancestatetype"></a>
-
+```python title="Definition"
+ReservationStateType = Literal[
+    "active",
+    "payment-failed",
+    "payment-pending",
+    "retired",
+]
+```
 ## ReservedInstanceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ReservedInstanceStateType
+
+def get_value() -> ReservedInstanceStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `payment-failed`
-- `payment-pending`
-- `queued`
-- `queued-deleted`
-- `retired`
-
-<a id="resetfpgaimageattributenametype"></a>
-
+```python title="Definition"
+ReservedInstanceStateType = Literal[
+    "active",
+    "payment-failed",
+    "payment-pending",
+    "queued",
+    "queued-deleted",
+    "retired",
+]
+```
 ## ResetFpgaImageAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ResetFpgaImageAttributeNameType
+
+def get_value() -> ResetFpgaImageAttributeNameType:
+    return "loadPermission"
 ```
 
-Values:
-
-- `loadPermission`
-
-<a id="resetimageattributenametype"></a>
-
+```python title="Definition"
+ResetFpgaImageAttributeNameType = Literal[
+    "loadPermission",
+]
+```
 ## ResetImageAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ResetImageAttributeNameType
+
+def get_value() -> ResetImageAttributeNameType:
+    return "launchPermission"
 ```
 
-Values:
-
-- `launchPermission`
-
-<a id="resourcetypetype"></a>
-
+```python title="Definition"
+ResetImageAttributeNameType = Literal[
+    "launchPermission",
+]
+```
 ## ResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ResourceTypeType
+
+def get_value() -> ResourceTypeType:
+    return "capacity-reservation"
 ```
 
-Values:
-
-- `capacity-reservation`
-- `carrier-gateway`
-- `client-vpn-endpoint`
-- `customer-gateway`
-- `dedicated-host`
-- `dhcp-options`
-- `egress-only-internet-gateway`
-- `elastic-gpu`
-- `elastic-ip`
-- `export-image-task`
-- `export-instance-task`
-- `fleet`
-- `fpga-image`
-- `host-reservation`
-- `image`
-- `import-image-task`
-- `import-snapshot-task`
-- `instance`
-- `instance-event-window`
-- `internet-gateway`
-- `ipam`
-- `ipam-pool`
-- `ipam-scope`
-- `ipv4pool-ec2`
-- `ipv6pool-ec2`
-- `key-pair`
-- `launch-template`
-- `local-gateway`
-- `local-gateway-route-table`
-- `local-gateway-route-table-virtual-interface-group-association`
-- `local-gateway-route-table-vpc-association`
-- `local-gateway-virtual-interface`
-- `local-gateway-virtual-interface-group`
-- `natgateway`
-- `network-acl`
-- `network-insights-access-scope`
-- `network-insights-access-scope-analysis`
-- `network-insights-analysis`
-- `network-insights-path`
-- `network-interface`
-- `placement-group`
-- `prefix-list`
-- `replace-root-volume-task`
-- `reserved-instances`
-- `route-table`
-- `security-group`
-- `security-group-rule`
-- `snapshot`
-- `spot-fleet-request`
-- `spot-instances-request`
-- `subnet`
-- `subnet-cidr-reservation`
-- `traffic-mirror-filter`
-- `traffic-mirror-session`
-- `traffic-mirror-target`
-- `transit-gateway`
-- `transit-gateway-attachment`
-- `transit-gateway-connect-peer`
-- `transit-gateway-multicast-domain`
-- `transit-gateway-route-table`
-- `volume`
-- `vpc`
-- `vpc-endpoint`
-- `vpc-endpoint-service`
-- `vpc-flow-log`
-- `vpc-peering-connection`
-- `vpn-connection`
-- `vpn-gateway`
-
-<a id="rootdevicetypetype"></a>
-
+```python title="Definition"
+ResourceTypeType = Literal[
+    "capacity-reservation",
+    "carrier-gateway",
+    "client-vpn-endpoint",
+    "customer-gateway",
+    "dedicated-host",
+    "dhcp-options",
+    "egress-only-internet-gateway",
+    "elastic-gpu",
+    "elastic-ip",
+    "export-image-task",
+    "export-instance-task",
+    "fleet",
+    "fpga-image",
+    "host-reservation",
+    "image",
+    "import-image-task",
+    "import-snapshot-task",
+    "instance",
+    "instance-event-window",
+    "internet-gateway",
+    "ipam",
+    "ipam-pool",
+    "ipam-scope",
+    "ipv4pool-ec2",
+    "ipv6pool-ec2",
+    "key-pair",
+    "launch-template",
+    "local-gateway",
+    "local-gateway-route-table",
+    "local-gateway-route-table-virtual-interface-group-association",
+    "local-gateway-route-table-vpc-association",
+    "local-gateway-virtual-interface",
+    "local-gateway-virtual-interface-group",
+    "natgateway",
+    "network-acl",
+    "network-insights-access-scope",
+    "network-insights-access-scope-analysis",
+    "network-insights-analysis",
+    "network-insights-path",
+    "network-interface",
+    "placement-group",
+    "prefix-list",
+    "replace-root-volume-task",
+    "reserved-instances",
+    "route-table",
+    "security-group",
+    "security-group-rule",
+    "snapshot",
+    "spot-fleet-request",
+    "spot-instances-request",
+    "subnet",
+    "subnet-cidr-reservation",
+    "traffic-mirror-filter",
+    "traffic-mirror-session",
+    "traffic-mirror-target",
+    "transit-gateway",
+    "transit-gateway-attachment",
+    "transit-gateway-connect-peer",
+    "transit-gateway-multicast-domain",
+    "transit-gateway-route-table",
+    "volume",
+    "vpc",
+    "vpc-endpoint",
+    "vpc-endpoint-service",
+    "vpc-flow-log",
+    "vpc-peering-connection",
+    "vpn-connection",
+    "vpn-gateway",
+]
+```
 ## RootDeviceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RootDeviceTypeType
+
+def get_value() -> RootDeviceTypeType:
+    return "ebs"
 ```
 
-Values:
-
-- `ebs`
-- `instance-store`
-
-<a id="routeorigintype"></a>
-
+```python title="Definition"
+RootDeviceTypeType = Literal[
+    "ebs",
+    "instance-store",
+]
+```
 ## RouteOriginType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RouteOriginType
+
+def get_value() -> RouteOriginType:
+    return "CreateRoute"
 ```
 
-Values:
-
-- `CreateRoute`
-- `CreateRouteTable`
-- `EnableVgwRoutePropagation`
-
-<a id="routestatetype"></a>
-
+```python title="Definition"
+RouteOriginType = Literal[
+    "CreateRoute",
+    "CreateRouteTable",
+    "EnableVgwRoutePropagation",
+]
+```
 ## RouteStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RouteStateType
+
+def get_value() -> RouteStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `blackhole`
-
-<a id="routetableassociationstatecodetype"></a>
-
+```python title="Definition"
+RouteStateType = Literal[
+    "active",
+    "blackhole",
+]
+```
 ## RouteTableAssociationStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RouteTableAssociationStateCodeType
+
+def get_value() -> RouteTableAssociationStateCodeType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-- `failed`
-
-<a id="ruleactiontype"></a>
-
+```python title="Definition"
+RouteTableAssociationStateCodeType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+    "failed",
+]
+```
 ## RuleActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import RuleActionType
+
+def get_value() -> RuleActionType:
+    return "allow"
 ```
 
-Values:
-
-- `allow`
-- `deny`
-
-<a id="searchlocalgatewayroutespaginatorname"></a>
-
+```python title="Definition"
+RuleActionType = Literal[
+    "allow",
+    "deny",
+]
+```
 ## SearchLocalGatewayRoutesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SearchLocalGatewayRoutesPaginatorName
+
+def get_value() -> SearchLocalGatewayRoutesPaginatorName:
+    return "search_local_gateway_routes"
 ```
 
-Values:
-
-- `search_local_gateway_routes`
-
-<a id="searchtransitgatewaymulticastgroupspaginatorname"></a>
-
+```python title="Definition"
+SearchLocalGatewayRoutesPaginatorName = Literal[
+    "search_local_gateway_routes",
+]
+```
 ## SearchTransitGatewayMulticastGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SearchTransitGatewayMulticastGroupsPaginatorName
+
+def get_value() -> SearchTransitGatewayMulticastGroupsPaginatorName:
+    return "search_transit_gateway_multicast_groups"
 ```
 
-Values:
-
-- `search_transit_gateway_multicast_groups`
-
-<a id="securitygroupexistswaitername"></a>
-
+```python title="Definition"
+SearchTransitGatewayMulticastGroupsPaginatorName = Literal[
+    "search_transit_gateway_multicast_groups",
+]
+```
 ## SecurityGroupExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SecurityGroupExistsWaiterName
+
+def get_value() -> SecurityGroupExistsWaiterName:
+    return "security_group_exists"
 ```
 
-Values:
-
-- `security_group_exists`
-
-<a id="selfserviceportaltype"></a>
-
+```python title="Definition"
+SecurityGroupExistsWaiterName = Literal[
+    "security_group_exists",
+]
+```
 ## SelfServicePortalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SelfServicePortalType
+
+def get_value() -> SelfServicePortalType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `enabled`
-
-<a id="servicestatetype"></a>
-
+```python title="Definition"
+SelfServicePortalType = Literal[
+    "disabled",
+    "enabled",
+]
+```
 ## ServiceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ServiceStateType
+
+def get_value() -> ServiceStateType:
+    return "Available"
 ```
 
-Values:
-
-- `Available`
-- `Deleted`
-- `Deleting`
-- `Failed`
-- `Pending`
-
-<a id="servicetypetype"></a>
-
+```python title="Definition"
+ServiceStateType = Literal[
+    "Available",
+    "Deleted",
+    "Deleting",
+    "Failed",
+    "Pending",
+]
+```
 ## ServiceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ServiceTypeType
+
+def get_value() -> ServiceTypeType:
+    return "Gateway"
 ```
 
-Values:
-
-- `Gateway`
-- `GatewayLoadBalancer`
-- `Interface`
-
-<a id="shutdownbehaviortype"></a>
-
+```python title="Definition"
+ServiceTypeType = Literal[
+    "Gateway",
+    "GatewayLoadBalancer",
+    "Interface",
+]
+```
 ## ShutdownBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ShutdownBehaviorType
+
+def get_value() -> ShutdownBehaviorType:
+    return "stop"
 ```
 
-Values:
-
-- `stop`
-- `terminate`
-
-<a id="snapshotattributenametype"></a>
-
+```python title="Definition"
+ShutdownBehaviorType = Literal[
+    "stop",
+    "terminate",
+]
+```
 ## SnapshotAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SnapshotAttributeNameType
+
+def get_value() -> SnapshotAttributeNameType:
+    return "createVolumePermission"
 ```
 
-Values:
-
-- `createVolumePermission`
-- `productCodes`
-
-<a id="snapshotcompletedwaitername"></a>
-
+```python title="Definition"
+SnapshotAttributeNameType = Literal[
+    "createVolumePermission",
+    "productCodes",
+]
+```
 ## SnapshotCompletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SnapshotCompletedWaiterName
+
+def get_value() -> SnapshotCompletedWaiterName:
+    return "snapshot_completed"
 ```
 
-Values:
-
-- `snapshot_completed`
-
-<a id="snapshotstatetype"></a>
-
+```python title="Definition"
+SnapshotCompletedWaiterName = Literal[
+    "snapshot_completed",
+]
+```
 ## SnapshotStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SnapshotStateType
+
+def get_value() -> SnapshotStateType:
+    return "completed"
 ```
 
-Values:
-
-- `completed`
-- `error`
-- `pending`
-- `recoverable`
-- `recovering`
-
-<a id="spotallocationstrategytype"></a>
-
+```python title="Definition"
+SnapshotStateType = Literal[
+    "completed",
+    "error",
+    "pending",
+    "recoverable",
+    "recovering",
+]
+```
 ## SpotAllocationStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SpotAllocationStrategyType
+
+def get_value() -> SpotAllocationStrategyType:
+    return "capacity-optimized"
 ```
 
-Values:
-
-- `capacity-optimized`
-- `capacity-optimized-prioritized`
-- `diversified`
-- `lowest-price`
-
-<a id="spotinstanceinterruptionbehaviortype"></a>
-
+```python title="Definition"
+SpotAllocationStrategyType = Literal[
+    "capacity-optimized",
+    "capacity-optimized-prioritized",
+    "diversified",
+    "lowest-price",
+]
+```
 ## SpotInstanceInterruptionBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SpotInstanceInterruptionBehaviorType
+
+def get_value() -> SpotInstanceInterruptionBehaviorType:
+    return "hibernate"
 ```
 
-Values:
-
-- `hibernate`
-- `stop`
-- `terminate`
-
-<a id="spotinstancerequestfulfilledwaitername"></a>
-
+```python title="Definition"
+SpotInstanceInterruptionBehaviorType = Literal[
+    "hibernate",
+    "stop",
+    "terminate",
+]
+```
 ## SpotInstanceRequestFulfilledWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SpotInstanceRequestFulfilledWaiterName
+
+def get_value() -> SpotInstanceRequestFulfilledWaiterName:
+    return "spot_instance_request_fulfilled"
 ```
 
-Values:
-
-- `spot_instance_request_fulfilled`
-
-<a id="spotinstancestatetype"></a>
-
+```python title="Definition"
+SpotInstanceRequestFulfilledWaiterName = Literal[
+    "spot_instance_request_fulfilled",
+]
+```
 ## SpotInstanceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SpotInstanceStateType
+
+def get_value() -> SpotInstanceStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `cancelled`
-- `closed`
-- `failed`
-- `open`
-
-<a id="spotinstancetypetype"></a>
-
+```python title="Definition"
+SpotInstanceStateType = Literal[
+    "active",
+    "cancelled",
+    "closed",
+    "failed",
+    "open",
+]
+```
 ## SpotInstanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SpotInstanceTypeType
+
+def get_value() -> SpotInstanceTypeType:
+    return "one-time"
 ```
 
-Values:
-
-- `one-time`
-- `persistent`
-
-<a id="statetype"></a>
-
+```python title="Definition"
+SpotInstanceTypeType = Literal[
+    "one-time",
+    "persistent",
+]
+```
 ## StateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StateType
+
+def get_value() -> StateType:
+    return "Available"
 ```
 
-Values:
-
-- `Available`
-- `Deleted`
-- `Deleting`
-- `Expired`
-- `Failed`
-- `Pending`
-- `PendingAcceptance`
-- `Rejected`
-
-<a id="staticsourcessupportvaluetype"></a>
-
+```python title="Definition"
+StateType = Literal[
+    "Available",
+    "Deleted",
+    "Deleting",
+    "Expired",
+    "Failed",
+    "Pending",
+    "PendingAcceptance",
+    "Rejected",
+]
+```
 ## StaticSourcesSupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StaticSourcesSupportValueType
+
+def get_value() -> StaticSourcesSupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="statusnametype"></a>
-
+```python title="Definition"
+StaticSourcesSupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## StatusNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StatusNameType
+
+def get_value() -> StatusNameType:
+    return "reachability"
 ```
 
-Values:
-
-- `reachability`
-
-<a id="statustype"></a>
-
+```python title="Definition"
+StatusNameType = Literal[
+    "reachability",
+]
+```
 ## StatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StatusType
+
+def get_value() -> StatusType:
+    return "InClassic"
 ```
 
-Values:
-
-- `InClassic`
-- `InVpc`
-- `MoveInProgress`
-
-<a id="statustypetype"></a>
-
+```python title="Definition"
+StatusType = Literal[
+    "InClassic",
+    "InVpc",
+    "MoveInProgress",
+]
+```
 ## StatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StatusTypeType
+
+def get_value() -> StatusTypeType:
+    return "failed"
 ```
 
-Values:
-
-- `failed`
-- `initializing`
-- `insufficient-data`
-- `passed`
-
-<a id="storagetiertype"></a>
-
+```python title="Definition"
+StatusTypeType = Literal[
+    "failed",
+    "initializing",
+    "insufficient-data",
+    "passed",
+]
+```
 ## StorageTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import StorageTierType
+
+def get_value() -> StorageTierType:
+    return "archive"
 ```
 
-Values:
-
-- `archive`
-- `standard`
-
-<a id="subnetavailablewaitername"></a>
-
+```python title="Definition"
+StorageTierType = Literal[
+    "archive",
+    "standard",
+]
+```
 ## SubnetAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SubnetAvailableWaiterName
+
+def get_value() -> SubnetAvailableWaiterName:
+    return "subnet_available"
 ```
 
-Values:
-
-- `subnet_available`
-
-<a id="subnetcidrblockstatecodetype"></a>
-
+```python title="Definition"
+SubnetAvailableWaiterName = Literal[
+    "subnet_available",
+]
+```
 ## SubnetCidrBlockStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SubnetCidrBlockStateCodeType
+
+def get_value() -> SubnetCidrBlockStateCodeType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-- `failed`
-- `failing`
-
-<a id="subnetcidrreservationtypetype"></a>
-
+```python title="Definition"
+SubnetCidrBlockStateCodeType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+    "failed",
+    "failing",
+]
+```
 ## SubnetCidrReservationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SubnetCidrReservationTypeType
+
+def get_value() -> SubnetCidrReservationTypeType:
+    return "explicit"
 ```
 
-Values:
-
-- `explicit`
-- `prefix`
-
-<a id="subnetstatetype"></a>
-
+```python title="Definition"
+SubnetCidrReservationTypeType = Literal[
+    "explicit",
+    "prefix",
+]
+```
 ## SubnetStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SubnetStateType
+
+def get_value() -> SubnetStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `pending`
-
-<a id="summarystatustype"></a>
-
+```python title="Definition"
+SubnetStateType = Literal[
+    "available",
+    "pending",
+]
+```
 ## SummaryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SummaryStatusType
+
+def get_value() -> SummaryStatusType:
+    return "impaired"
 ```
 
-Values:
-
-- `impaired`
-- `initializing`
-- `insufficient-data`
-- `not-applicable`
-- `ok`
-
-<a id="systemstatusokwaitername"></a>
-
+```python title="Definition"
+SummaryStatusType = Literal[
+    "impaired",
+    "initializing",
+    "insufficient-data",
+    "not-applicable",
+    "ok",
+]
+```
 ## SystemStatusOkWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import SystemStatusOkWaiterName
+
+def get_value() -> SystemStatusOkWaiterName:
+    return "system_status_ok"
 ```
 
-Values:
-
-- `system_status_ok`
-
-<a id="targetcapacityunittypetype"></a>
-
+```python title="Definition"
+SystemStatusOkWaiterName = Literal[
+    "system_status_ok",
+]
+```
 ## TargetCapacityUnitTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TargetCapacityUnitTypeType
+
+def get_value() -> TargetCapacityUnitTypeType:
+    return "memory-mib"
 ```
 
-Values:
-
-- `memory-mib`
-- `units`
-- `vcpu`
-
-<a id="targetstoragetiertype"></a>
-
+```python title="Definition"
+TargetCapacityUnitTypeType = Literal[
+    "memory-mib",
+    "units",
+    "vcpu",
+]
+```
 ## TargetStorageTierType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TargetStorageTierType
+
+def get_value() -> TargetStorageTierType:
+    return "archive"
 ```
 
-Values:
-
-- `archive`
-
-<a id="telemetrystatustype"></a>
-
+```python title="Definition"
+TargetStorageTierType = Literal[
+    "archive",
+]
+```
 ## TelemetryStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TelemetryStatusType
+
+def get_value() -> TelemetryStatusType:
+    return "DOWN"
 ```
 
-Values:
-
-- `DOWN`
-- `UP`
-
-<a id="tenancytype"></a>
-
+```python title="Definition"
+TelemetryStatusType = Literal[
+    "DOWN",
+    "UP",
+]
+```
 ## TenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TenancyType
+
+def get_value() -> TenancyType:
+    return "dedicated"
 ```
 
-Values:
-
-- `dedicated`
-- `default`
-- `host`
-
-<a id="tieringoperationstatustype"></a>
-
+```python title="Definition"
+TenancyType = Literal[
+    "dedicated",
+    "default",
+    "host",
+]
+```
 ## TieringOperationStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TieringOperationStatusType
+
+def get_value() -> TieringOperationStatusType:
+    return "archival-completed"
 ```
 
-Values:
-
-- `archival-completed`
-- `archival-failed`
-- `archival-in-progress`
-- `permanent-restore-completed`
-- `permanent-restore-failed`
-- `permanent-restore-in-progress`
-- `temporary-restore-completed`
-- `temporary-restore-failed`
-- `temporary-restore-in-progress`
-
-<a id="trafficdirectiontype"></a>
-
+```python title="Definition"
+TieringOperationStatusType = Literal[
+    "archival-completed",
+    "archival-failed",
+    "archival-in-progress",
+    "permanent-restore-completed",
+    "permanent-restore-failed",
+    "permanent-restore-in-progress",
+    "temporary-restore-completed",
+    "temporary-restore-failed",
+    "temporary-restore-in-progress",
+]
+```
 ## TrafficDirectionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficDirectionType
+
+def get_value() -> TrafficDirectionType:
+    return "egress"
 ```
 
-Values:
-
-- `egress`
-- `ingress`
-
-<a id="trafficmirrorfilterrulefieldtype"></a>
-
+```python title="Definition"
+TrafficDirectionType = Literal[
+    "egress",
+    "ingress",
+]
+```
 ## TrafficMirrorFilterRuleFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficMirrorFilterRuleFieldType
+
+def get_value() -> TrafficMirrorFilterRuleFieldType:
+    return "description"
 ```
 
-Values:
-
-- `description`
-- `destination-port-range`
-- `protocol`
-- `source-port-range`
-
-<a id="trafficmirrornetworkservicetype"></a>
-
+```python title="Definition"
+TrafficMirrorFilterRuleFieldType = Literal[
+    "description",
+    "destination-port-range",
+    "protocol",
+    "source-port-range",
+]
+```
 ## TrafficMirrorNetworkServiceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficMirrorNetworkServiceType
+
+def get_value() -> TrafficMirrorNetworkServiceType:
+    return "amazon-dns"
 ```
 
-Values:
-
-- `amazon-dns`
-
-<a id="trafficmirrorruleactiontype"></a>
-
+```python title="Definition"
+TrafficMirrorNetworkServiceType = Literal[
+    "amazon-dns",
+]
+```
 ## TrafficMirrorRuleActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficMirrorRuleActionType
+
+def get_value() -> TrafficMirrorRuleActionType:
+    return "accept"
 ```
 
-Values:
-
-- `accept`
-- `reject`
-
-<a id="trafficmirrorsessionfieldtype"></a>
-
+```python title="Definition"
+TrafficMirrorRuleActionType = Literal[
+    "accept",
+    "reject",
+]
+```
 ## TrafficMirrorSessionFieldType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficMirrorSessionFieldType
+
+def get_value() -> TrafficMirrorSessionFieldType:
+    return "description"
 ```
 
-Values:
-
-- `description`
-- `packet-length`
-- `virtual-network-id`
-
-<a id="trafficmirrortargettypetype"></a>
-
+```python title="Definition"
+TrafficMirrorSessionFieldType = Literal[
+    "description",
+    "packet-length",
+    "virtual-network-id",
+]
+```
 ## TrafficMirrorTargetTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficMirrorTargetTypeType
+
+def get_value() -> TrafficMirrorTargetTypeType:
+    return "network-interface"
 ```
 
-Values:
-
-- `network-interface`
-- `network-load-balancer`
-
-<a id="traffictypetype"></a>
-
+```python title="Definition"
+TrafficMirrorTargetTypeType = Literal[
+    "network-interface",
+    "network-load-balancer",
+]
+```
 ## TrafficTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TrafficTypeType
+
+def get_value() -> TrafficTypeType:
+    return "ACCEPT"
 ```
 
-Values:
-
-- `ACCEPT`
-- `ALL`
-- `REJECT`
-
-<a id="transitgatewayassociationstatetype"></a>
-
+```python title="Definition"
+TrafficTypeType = Literal[
+    "ACCEPT",
+    "ALL",
+    "REJECT",
+]
+```
 ## TransitGatewayAssociationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayAssociationStateType
+
+def get_value() -> TransitGatewayAssociationStateType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-
-<a id="transitgatewayattachmentresourcetypetype"></a>
-
+```python title="Definition"
+TransitGatewayAssociationStateType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+]
+```
 ## TransitGatewayAttachmentResourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayAttachmentResourceTypeType
+
+def get_value() -> TransitGatewayAttachmentResourceTypeType:
+    return "connect"
 ```
 
-Values:
-
-- `connect`
-- `direct-connect-gateway`
-- `peering`
-- `tgw-peering`
-- `vpc`
-- `vpn`
-
-<a id="transitgatewayattachmentstatetype"></a>
-
+```python title="Definition"
+TransitGatewayAttachmentResourceTypeType = Literal[
+    "connect",
+    "direct-connect-gateway",
+    "peering",
+    "tgw-peering",
+    "vpc",
+    "vpn",
+]
+```
 ## TransitGatewayAttachmentStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayAttachmentStateType
+
+def get_value() -> TransitGatewayAttachmentStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `failed`
-- `failing`
-- `initiating`
-- `initiatingRequest`
-- `modifying`
-- `pending`
-- `pendingAcceptance`
-- `rejected`
-- `rejecting`
-- `rollingBack`
-
-<a id="transitgatewayconnectpeerstatetype"></a>
-
+```python title="Definition"
+TransitGatewayAttachmentStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "failed",
+    "failing",
+    "initiating",
+    "initiatingRequest",
+    "modifying",
+    "pending",
+    "pendingAcceptance",
+    "rejected",
+    "rejecting",
+    "rollingBack",
+]
+```
 ## TransitGatewayConnectPeerStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayConnectPeerStateType
+
+def get_value() -> TransitGatewayConnectPeerStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="transitgatewaymulitcastdomainassociationstatetype"></a>
-
+```python title="Definition"
+TransitGatewayConnectPeerStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## TransitGatewayMulitcastDomainAssociationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayMulitcastDomainAssociationStateType
+
+def get_value() -> TransitGatewayMulitcastDomainAssociationStateType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-- `failed`
-- `pendingAcceptance`
-- `rejected`
-
-<a id="transitgatewaymulticastdomainstatetype"></a>
-
+```python title="Definition"
+TransitGatewayMulitcastDomainAssociationStateType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+    "failed",
+    "pendingAcceptance",
+    "rejected",
+]
+```
 ## TransitGatewayMulticastDomainStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayMulticastDomainStateType
+
+def get_value() -> TransitGatewayMulticastDomainStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="transitgatewayprefixlistreferencestatetype"></a>
-
+```python title="Definition"
+TransitGatewayMulticastDomainStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## TransitGatewayPrefixListReferenceStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayPrefixListReferenceStateType
+
+def get_value() -> TransitGatewayPrefixListReferenceStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleting`
-- `modifying`
-- `pending`
-
-<a id="transitgatewaypropagationstatetype"></a>
-
+```python title="Definition"
+TransitGatewayPrefixListReferenceStateType = Literal[
+    "available",
+    "deleting",
+    "modifying",
+    "pending",
+]
+```
 ## TransitGatewayPropagationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayPropagationStateType
+
+def get_value() -> TransitGatewayPropagationStateType:
+    return "disabled"
 ```
 
-Values:
-
-- `disabled`
-- `disabling`
-- `enabled`
-- `enabling`
-
-<a id="transitgatewayroutestatetype"></a>
-
+```python title="Definition"
+TransitGatewayPropagationStateType = Literal[
+    "disabled",
+    "disabling",
+    "enabled",
+    "enabling",
+]
+```
 ## TransitGatewayRouteStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayRouteStateType
+
+def get_value() -> TransitGatewayRouteStateType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `blackhole`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="transitgatewayroutetablestatetype"></a>
-
+```python title="Definition"
+TransitGatewayRouteStateType = Literal[
+    "active",
+    "blackhole",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## TransitGatewayRouteTableStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayRouteTableStateType
+
+def get_value() -> TransitGatewayRouteTableStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="transitgatewayroutetypetype"></a>
-
+```python title="Definition"
+TransitGatewayRouteTableStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## TransitGatewayRouteTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayRouteTypeType
+
+def get_value() -> TransitGatewayRouteTypeType:
+    return "propagated"
 ```
 
-Values:
-
-- `propagated`
-- `static`
-
-<a id="transitgatewaystatetype"></a>
-
+```python title="Definition"
+TransitGatewayRouteTypeType = Literal[
+    "propagated",
+    "static",
+]
+```
 ## TransitGatewayStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransitGatewayStateType
+
+def get_value() -> TransitGatewayStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `modifying`
-- `pending`
-
-<a id="transportprotocoltype"></a>
-
+```python title="Definition"
+TransitGatewayStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "modifying",
+    "pending",
+]
+```
 ## TransportProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TransportProtocolType
+
+def get_value() -> TransportProtocolType:
+    return "tcp"
 ```
 
-Values:
-
-- `tcp`
-- `udp`
-
-<a id="tunnelinsideipversiontype"></a>
-
+```python title="Definition"
+TransportProtocolType = Literal[
+    "tcp",
+    "udp",
+]
+```
 ## TunnelInsideIpVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import TunnelInsideIpVersionType
+
+def get_value() -> TunnelInsideIpVersionType:
+    return "ipv4"
 ```
 
-Values:
-
-- `ipv4`
-- `ipv6`
-
-<a id="unlimitedsupportedinstancefamilytype"></a>
-
+```python title="Definition"
+TunnelInsideIpVersionType = Literal[
+    "ipv4",
+    "ipv6",
+]
+```
 ## UnlimitedSupportedInstanceFamilyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import UnlimitedSupportedInstanceFamilyType
+
+def get_value() -> UnlimitedSupportedInstanceFamilyType:
+    return "t2"
 ```
 
-Values:
-
-- `t2`
-- `t3`
-- `t3a`
-- `t4g`
-
-<a id="unsuccessfulinstancecreditspecificationerrorcodetype"></a>
-
+```python title="Definition"
+UnlimitedSupportedInstanceFamilyType = Literal[
+    "t2",
+    "t3",
+    "t3a",
+    "t4g",
+]
+```
 ## UnsuccessfulInstanceCreditSpecificationErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import UnsuccessfulInstanceCreditSpecificationErrorCodeType
+
+def get_value() -> UnsuccessfulInstanceCreditSpecificationErrorCodeType:
+    return "IncorrectInstanceState"
 ```
 
-Values:
-
-- `IncorrectInstanceState`
-- `InstanceCreditSpecification.NotSupported`
-- `InvalidInstanceID.Malformed`
-- `InvalidInstanceID.NotFound`
-
-<a id="usageclasstypetype"></a>
-
+```python title="Definition"
+UnsuccessfulInstanceCreditSpecificationErrorCodeType = Literal[
+    "IncorrectInstanceState",
+    "InstanceCreditSpecification.NotSupported",
+    "InvalidInstanceID.Malformed",
+    "InvalidInstanceID.NotFound",
+]
+```
 ## UsageClassTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import UsageClassTypeType
+
+def get_value() -> UsageClassTypeType:
+    return "on-demand"
 ```
 
-Values:
-
-- `on-demand`
-- `spot`
-
-<a id="virtualizationtypetype"></a>
-
+```python title="Definition"
+UsageClassTypeType = Literal[
+    "on-demand",
+    "spot",
+]
+```
 ## VirtualizationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VirtualizationTypeType
+
+def get_value() -> VirtualizationTypeType:
+    return "hvm"
 ```
 
-Values:
-
-- `hvm`
-- `paravirtual`
-
-<a id="volumeattachmentstatetype"></a>
-
+```python title="Definition"
+VirtualizationTypeType = Literal[
+    "hvm",
+    "paravirtual",
+]
+```
 ## VolumeAttachmentStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeAttachmentStateType
+
+def get_value() -> VolumeAttachmentStateType:
+    return "attached"
 ```
 
-Values:
-
-- `attached`
-- `attaching`
-- `busy`
-- `detached`
-- `detaching`
-
-<a id="volumeattributenametype"></a>
-
+```python title="Definition"
+VolumeAttachmentStateType = Literal[
+    "attached",
+    "attaching",
+    "busy",
+    "detached",
+    "detaching",
+]
+```
 ## VolumeAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeAttributeNameType
+
+def get_value() -> VolumeAttributeNameType:
+    return "autoEnableIO"
 ```
 
-Values:
-
-- `autoEnableIO`
-- `productCodes`
-
-<a id="volumeavailablewaitername"></a>
-
+```python title="Definition"
+VolumeAttributeNameType = Literal[
+    "autoEnableIO",
+    "productCodes",
+]
+```
 ## VolumeAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeAvailableWaiterName
+
+def get_value() -> VolumeAvailableWaiterName:
+    return "volume_available"
 ```
 
-Values:
-
-- `volume_available`
-
-<a id="volumedeletedwaitername"></a>
-
+```python title="Definition"
+VolumeAvailableWaiterName = Literal[
+    "volume_available",
+]
+```
 ## VolumeDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeDeletedWaiterName
+
+def get_value() -> VolumeDeletedWaiterName:
+    return "volume_deleted"
 ```
 
-Values:
-
-- `volume_deleted`
-
-<a id="volumeinusewaitername"></a>
-
+```python title="Definition"
+VolumeDeletedWaiterName = Literal[
+    "volume_deleted",
+]
+```
 ## VolumeInUseWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeInUseWaiterName
+
+def get_value() -> VolumeInUseWaiterName:
+    return "volume_in_use"
 ```
 
-Values:
-
-- `volume_in_use`
-
-<a id="volumemodificationstatetype"></a>
-
+```python title="Definition"
+VolumeInUseWaiterName = Literal[
+    "volume_in_use",
+]
+```
 ## VolumeModificationStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeModificationStateType
+
+def get_value() -> VolumeModificationStateType:
+    return "completed"
 ```
 
-Values:
-
-- `completed`
-- `failed`
-- `modifying`
-- `optimizing`
-
-<a id="volumestatetype"></a>
-
+```python title="Definition"
+VolumeModificationStateType = Literal[
+    "completed",
+    "failed",
+    "modifying",
+    "optimizing",
+]
+```
 ## VolumeStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeStateType
+
+def get_value() -> VolumeStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `creating`
-- `deleted`
-- `deleting`
-- `error`
-- `in-use`
-
-<a id="volumestatusinfostatustype"></a>
-
+```python title="Definition"
+VolumeStateType = Literal[
+    "available",
+    "creating",
+    "deleted",
+    "deleting",
+    "error",
+    "in-use",
+]
+```
 ## VolumeStatusInfoStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeStatusInfoStatusType
+
+def get_value() -> VolumeStatusInfoStatusType:
+    return "impaired"
 ```
 
-Values:
-
-- `impaired`
-- `insufficient-data`
-- `ok`
-
-<a id="volumestatusnametype"></a>
-
+```python title="Definition"
+VolumeStatusInfoStatusType = Literal[
+    "impaired",
+    "insufficient-data",
+    "ok",
+]
+```
 ## VolumeStatusNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeStatusNameType
+
+def get_value() -> VolumeStatusNameType:
+    return "io-enabled"
 ```
 
-Values:
-
-- `io-enabled`
-- `io-performance`
-
-<a id="volumetypetype"></a>
-
+```python title="Definition"
+VolumeStatusNameType = Literal[
+    "io-enabled",
+    "io-performance",
+]
+```
 ## VolumeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VolumeTypeType
+
+def get_value() -> VolumeTypeType:
+    return "gp2"
 ```
 
-Values:
-
-- `gp2`
-- `gp3`
-- `io1`
-- `io2`
-- `sc1`
-- `st1`
-- `standard`
-
-<a id="vpcattributenametype"></a>
-
+```python title="Definition"
+VolumeTypeType = Literal[
+    "gp2",
+    "gp3",
+    "io1",
+    "io2",
+    "sc1",
+    "st1",
+    "standard",
+]
+```
 ## VpcAttributeNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcAttributeNameType
+
+def get_value() -> VpcAttributeNameType:
+    return "enableDnsHostnames"
 ```
 
-Values:
-
-- `enableDnsHostnames`
-- `enableDnsSupport`
-
-<a id="vpcavailablewaitername"></a>
-
+```python title="Definition"
+VpcAttributeNameType = Literal[
+    "enableDnsHostnames",
+    "enableDnsSupport",
+]
+```
 ## VpcAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcAvailableWaiterName
+
+def get_value() -> VpcAvailableWaiterName:
+    return "vpc_available"
 ```
 
-Values:
-
-- `vpc_available`
-
-<a id="vpccidrblockstatecodetype"></a>
-
+```python title="Definition"
+VpcAvailableWaiterName = Literal[
+    "vpc_available",
+]
+```
 ## VpcCidrBlockStateCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcCidrBlockStateCodeType
+
+def get_value() -> VpcCidrBlockStateCodeType:
+    return "associated"
 ```
 
-Values:
-
-- `associated`
-- `associating`
-- `disassociated`
-- `disassociating`
-- `failed`
-- `failing`
-
-<a id="vpcendpointtypetype"></a>
-
+```python title="Definition"
+VpcCidrBlockStateCodeType = Literal[
+    "associated",
+    "associating",
+    "disassociated",
+    "disassociating",
+    "failed",
+    "failing",
+]
+```
 ## VpcEndpointTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcEndpointTypeType
+
+def get_value() -> VpcEndpointTypeType:
+    return "Gateway"
 ```
 
-Values:
-
-- `Gateway`
-- `GatewayLoadBalancer`
-- `Interface`
-
-<a id="vpcexistswaitername"></a>
-
+```python title="Definition"
+VpcEndpointTypeType = Literal[
+    "Gateway",
+    "GatewayLoadBalancer",
+    "Interface",
+]
+```
 ## VpcExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcExistsWaiterName
+
+def get_value() -> VpcExistsWaiterName:
+    return "vpc_exists"
 ```
 
-Values:
-
-- `vpc_exists`
-
-<a id="vpcpeeringconnectiondeletedwaitername"></a>
-
+```python title="Definition"
+VpcExistsWaiterName = Literal[
+    "vpc_exists",
+]
+```
 ## VpcPeeringConnectionDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcPeeringConnectionDeletedWaiterName
+
+def get_value() -> VpcPeeringConnectionDeletedWaiterName:
+    return "vpc_peering_connection_deleted"
 ```
 
-Values:
-
-- `vpc_peering_connection_deleted`
-
-<a id="vpcpeeringconnectionexistswaitername"></a>
-
+```python title="Definition"
+VpcPeeringConnectionDeletedWaiterName = Literal[
+    "vpc_peering_connection_deleted",
+]
+```
 ## VpcPeeringConnectionExistsWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcPeeringConnectionExistsWaiterName
+
+def get_value() -> VpcPeeringConnectionExistsWaiterName:
+    return "vpc_peering_connection_exists"
 ```
 
-Values:
-
-- `vpc_peering_connection_exists`
-
-<a id="vpcpeeringconnectionstatereasoncodetype"></a>
-
+```python title="Definition"
+VpcPeeringConnectionExistsWaiterName = Literal[
+    "vpc_peering_connection_exists",
+]
+```
 ## VpcPeeringConnectionStateReasonCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcPeeringConnectionStateReasonCodeType
+
+def get_value() -> VpcPeeringConnectionStateReasonCodeType:
+    return "active"
 ```
 
-Values:
-
-- `active`
-- `deleted`
-- `deleting`
-- `expired`
-- `failed`
-- `initiating-request`
-- `pending-acceptance`
-- `provisioning`
-- `rejected`
-
-<a id="vpcstatetype"></a>
-
+```python title="Definition"
+VpcPeeringConnectionStateReasonCodeType = Literal[
+    "active",
+    "deleted",
+    "deleting",
+    "expired",
+    "failed",
+    "initiating-request",
+    "pending-acceptance",
+    "provisioning",
+    "rejected",
+]
+```
 ## VpcStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcStateType
+
+def get_value() -> VpcStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `pending`
-
-<a id="vpctenancytype"></a>
-
+```python title="Definition"
+VpcStateType = Literal[
+    "available",
+    "pending",
+]
+```
 ## VpcTenancyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpcTenancyType
+
+def get_value() -> VpcTenancyType:
+    return "default"
 ```
 
-Values:
-
-- `default`
-
-<a id="vpnconnectionavailablewaitername"></a>
-
+```python title="Definition"
+VpcTenancyType = Literal[
+    "default",
+]
+```
 ## VpnConnectionAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnConnectionAvailableWaiterName
+
+def get_value() -> VpnConnectionAvailableWaiterName:
+    return "vpn_connection_available"
 ```
 
-Values:
-
-- `vpn_connection_available`
-
-<a id="vpnconnectiondeletedwaitername"></a>
-
+```python title="Definition"
+VpnConnectionAvailableWaiterName = Literal[
+    "vpn_connection_available",
+]
+```
 ## VpnConnectionDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnConnectionDeletedWaiterName
+
+def get_value() -> VpnConnectionDeletedWaiterName:
+    return "vpn_connection_deleted"
 ```
 
-Values:
-
-- `vpn_connection_deleted`
-
-<a id="vpnecmpsupportvaluetype"></a>
-
+```python title="Definition"
+VpnConnectionDeletedWaiterName = Literal[
+    "vpn_connection_deleted",
+]
+```
 ## VpnEcmpSupportValueType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnEcmpSupportValueType
+
+def get_value() -> VpnEcmpSupportValueType:
+    return "disable"
 ```
 
-Values:
-
-- `disable`
-- `enable`
-
-<a id="vpnprotocoltype"></a>
-
+```python title="Definition"
+VpnEcmpSupportValueType = Literal[
+    "disable",
+    "enable",
+]
+```
 ## VpnProtocolType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnProtocolType
+
+def get_value() -> VpnProtocolType:
+    return "openvpn"
 ```
 
-Values:
-
-- `openvpn`
-
-<a id="vpnstatetype"></a>
-
+```python title="Definition"
+VpnProtocolType = Literal[
+    "openvpn",
+]
+```
 ## VpnStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnStateType
+
+def get_value() -> VpnStateType:
+    return "available"
 ```
 
-Values:
-
-- `available`
-- `deleted`
-- `deleting`
-- `pending`
-
-<a id="vpnstaticroutesourcetype"></a>
-
+```python title="Definition"
+VpnStateType = Literal[
+    "available",
+    "deleted",
+    "deleting",
+    "pending",
+]
+```
 ## VpnStaticRouteSourceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import VpnStaticRouteSourceType
+
+def get_value() -> VpnStaticRouteSourceType:
+    return "Static"
 ```
 
-Values:
-
-- `Static`
-
-<a id="weekdaytype"></a>
-
+```python title="Definition"
+VpnStaticRouteSourceType = Literal[
+    "Static",
+]
+```
 ## WeekDayType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import WeekDayType
+
+def get_value() -> WeekDayType:
+    return "friday"
 ```
 
-Values:
-
-- `friday`
-- `monday`
-- `saturday`
-- `sunday`
-- `thursday`
-- `tuesday`
-- `wednesday`
-
-<a id="scopetype"></a>
-
+```python title="Definition"
+WeekDayType = Literal[
+    "friday",
+    "monday",
+    "saturday",
+    "sunday",
+    "thursday",
+    "tuesday",
+    "wednesday",
+]
+```
 ## scopeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import scopeType
+
+def get_value() -> scopeType:
+    return "Availability Zone"
 ```
 
-Values:
-
-- `Availability Zone`
-- `Region`
-
-<a id="ec2servicename"></a>
-
+```python title="Definition"
+scopeType = Literal[
+    "Availability Zone",
+    "Region",
+]
+```
 ## EC2ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import EC2ServiceName
+
+def get_value() -> EC2ServiceName:
+    return "ec2"
 ```
 
-Values:
-
-- `ec2`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+EC2ServiceName = Literal[
+    "ec2",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_addresses_attribute"
 ```
 
-Values:
-
-- `describe_addresses_attribute`
-- `describe_byoip_cidrs`
-- `describe_capacity_reservation_fleets`
-- `describe_capacity_reservations`
-- `describe_carrier_gateways`
-- `describe_classic_link_instances`
-- `describe_client_vpn_authorization_rules`
-- `describe_client_vpn_connections`
-- `describe_client_vpn_endpoints`
-- `describe_client_vpn_routes`
-- `describe_client_vpn_target_networks`
-- `describe_coip_pools`
-- `describe_dhcp_options`
-- `describe_egress_only_internet_gateways`
-- `describe_export_image_tasks`
-- `describe_fast_launch_images`
-- `describe_fast_snapshot_restores`
-- `describe_fleets`
-- `describe_flow_logs`
-- `describe_fpga_images`
-- `describe_host_reservation_offerings`
-- `describe_host_reservations`
-- `describe_hosts`
-- `describe_iam_instance_profile_associations`
-- `describe_import_image_tasks`
-- `describe_import_snapshot_tasks`
-- `describe_instance_credit_specifications`
-- `describe_instance_event_windows`
-- `describe_instance_status`
-- `describe_instance_type_offerings`
-- `describe_instance_types`
-- `describe_instances`
-- `describe_internet_gateways`
-- `describe_ipam_pools`
-- `describe_ipam_scopes`
-- `describe_ipams`
-- `describe_ipv6_pools`
-- `describe_launch_template_versions`
-- `describe_launch_templates`
-- `describe_local_gateway_route_table_virtual_interface_group_associations`
-- `describe_local_gateway_route_table_vpc_associations`
-- `describe_local_gateway_route_tables`
-- `describe_local_gateway_virtual_interface_groups`
-- `describe_local_gateway_virtual_interfaces`
-- `describe_local_gateways`
-- `describe_managed_prefix_lists`
-- `describe_moving_addresses`
-- `describe_nat_gateways`
-- `describe_network_acls`
-- `describe_network_insights_access_scope_analyses`
-- `describe_network_insights_access_scopes`
-- `describe_network_insights_analyses`
-- `describe_network_insights_paths`
-- `describe_network_interface_permissions`
-- `describe_network_interfaces`
-- `describe_prefix_lists`
-- `describe_principal_id_format`
-- `describe_public_ipv4_pools`
-- `describe_replace_root_volume_tasks`
-- `describe_reserved_instances_modifications`
-- `describe_reserved_instances_offerings`
-- `describe_route_tables`
-- `describe_scheduled_instance_availability`
-- `describe_scheduled_instances`
-- `describe_security_group_rules`
-- `describe_security_groups`
-- `describe_snapshot_tier_status`
-- `describe_snapshots`
-- `describe_spot_fleet_instances`
-- `describe_spot_fleet_requests`
-- `describe_spot_instance_requests`
-- `describe_spot_price_history`
-- `describe_stale_security_groups`
-- `describe_store_image_tasks`
-- `describe_subnets`
-- `describe_tags`
-- `describe_traffic_mirror_filters`
-- `describe_traffic_mirror_sessions`
-- `describe_traffic_mirror_targets`
-- `describe_transit_gateway_attachments`
-- `describe_transit_gateway_connect_peers`
-- `describe_transit_gateway_connects`
-- `describe_transit_gateway_multicast_domains`
-- `describe_transit_gateway_peering_attachments`
-- `describe_transit_gateway_route_tables`
-- `describe_transit_gateway_vpc_attachments`
-- `describe_transit_gateways`
-- `describe_trunk_interface_associations`
-- `describe_volume_status`
-- `describe_volumes`
-- `describe_volumes_modifications`
-- `describe_vpc_classic_link_dns_support`
-- `describe_vpc_endpoint_connection_notifications`
-- `describe_vpc_endpoint_connections`
-- `describe_vpc_endpoint_service_configurations`
-- `describe_vpc_endpoint_service_permissions`
-- `describe_vpc_endpoint_services`
-- `describe_vpc_endpoints`
-- `describe_vpc_peering_connections`
-- `describe_vpcs`
-- `get_associated_ipv6_pool_cidrs`
-- `get_groups_for_capacity_reservation`
-- `get_instance_types_from_instance_requirements`
-- `get_ipam_address_history`
-- `get_ipam_pool_allocations`
-- `get_ipam_pool_cidrs`
-- `get_ipam_resource_cidrs`
-- `get_managed_prefix_list_associations`
-- `get_managed_prefix_list_entries`
-- `get_spot_placement_scores`
-- `get_transit_gateway_attachment_propagations`
-- `get_transit_gateway_multicast_domain_associations`
-- `get_transit_gateway_prefix_list_references`
-- `get_transit_gateway_route_table_associations`
-- `get_transit_gateway_route_table_propagations`
-- `get_vpn_connection_device_types`
-- `list_images_in_recycle_bin`
-- `list_snapshots_in_recycle_bin`
-- `search_local_gateway_routes`
-- `search_transit_gateway_multicast_groups`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_addresses_attribute",
+    "describe_byoip_cidrs",
+    "describe_capacity_reservation_fleets",
+    "describe_capacity_reservations",
+    "describe_carrier_gateways",
+    "describe_classic_link_instances",
+    "describe_client_vpn_authorization_rules",
+    "describe_client_vpn_connections",
+    "describe_client_vpn_endpoints",
+    "describe_client_vpn_routes",
+    "describe_client_vpn_target_networks",
+    "describe_coip_pools",
+    "describe_dhcp_options",
+    "describe_egress_only_internet_gateways",
+    "describe_export_image_tasks",
+    "describe_fast_launch_images",
+    "describe_fast_snapshot_restores",
+    "describe_fleets",
+    "describe_flow_logs",
+    "describe_fpga_images",
+    "describe_host_reservation_offerings",
+    "describe_host_reservations",
+    "describe_hosts",
+    "describe_iam_instance_profile_associations",
+    "describe_import_image_tasks",
+    "describe_import_snapshot_tasks",
+    "describe_instance_credit_specifications",
+    "describe_instance_event_windows",
+    "describe_instance_status",
+    "describe_instance_type_offerings",
+    "describe_instance_types",
+    "describe_instances",
+    "describe_internet_gateways",
+    "describe_ipam_pools",
+    "describe_ipam_scopes",
+    "describe_ipams",
+    "describe_ipv6_pools",
+    "describe_launch_template_versions",
+    "describe_launch_templates",
+    "describe_local_gateway_route_table_virtual_interface_group_associations",
+    "describe_local_gateway_route_table_vpc_associations",
+    "describe_local_gateway_route_tables",
+    "describe_local_gateway_virtual_interface_groups",
+    "describe_local_gateway_virtual_interfaces",
+    "describe_local_gateways",
+    "describe_managed_prefix_lists",
+    "describe_moving_addresses",
+    "describe_nat_gateways",
+    "describe_network_acls",
+    "describe_network_insights_access_scope_analyses",
+    "describe_network_insights_access_scopes",
+    "describe_network_insights_analyses",
+    "describe_network_insights_paths",
+    "describe_network_interface_permissions",
+    "describe_network_interfaces",
+    "describe_prefix_lists",
+    "describe_principal_id_format",
+    "describe_public_ipv4_pools",
+    "describe_replace_root_volume_tasks",
+    "describe_reserved_instances_modifications",
+    "describe_reserved_instances_offerings",
+    "describe_route_tables",
+    "describe_scheduled_instance_availability",
+    "describe_scheduled_instances",
+    "describe_security_group_rules",
+    "describe_security_groups",
+    "describe_snapshot_tier_status",
+    "describe_snapshots",
+    "describe_spot_fleet_instances",
+    "describe_spot_fleet_requests",
+    "describe_spot_instance_requests",
+    "describe_spot_price_history",
+    "describe_stale_security_groups",
+    "describe_store_image_tasks",
+    "describe_subnets",
+    "describe_tags",
+    "describe_traffic_mirror_filters",
+    "describe_traffic_mirror_sessions",
+    "describe_traffic_mirror_targets",
+    "describe_transit_gateway_attachments",
+    "describe_transit_gateway_connect_peers",
+    "describe_transit_gateway_connects",
+    "describe_transit_gateway_multicast_domains",
+    "describe_transit_gateway_peering_attachments",
+    "describe_transit_gateway_route_tables",
+    "describe_transit_gateway_vpc_attachments",
+    "describe_transit_gateways",
+    "describe_trunk_interface_associations",
+    "describe_volume_status",
+    "describe_volumes",
+    "describe_volumes_modifications",
+    "describe_vpc_classic_link_dns_support",
+    "describe_vpc_endpoint_connection_notifications",
+    "describe_vpc_endpoint_connections",
+    "describe_vpc_endpoint_service_configurations",
+    "describe_vpc_endpoint_service_permissions",
+    "describe_vpc_endpoint_services",
+    "describe_vpc_endpoints",
+    "describe_vpc_peering_connections",
+    "describe_vpcs",
+    "get_associated_ipv6_pool_cidrs",
+    "get_groups_for_capacity_reservation",
+    "get_instance_types_from_instance_requirements",
+    "get_ipam_address_history",
+    "get_ipam_pool_allocations",
+    "get_ipam_pool_cidrs",
+    "get_ipam_resource_cidrs",
+    "get_managed_prefix_list_associations",
+    "get_managed_prefix_list_entries",
+    "get_spot_placement_scores",
+    "get_transit_gateway_attachment_propagations",
+    "get_transit_gateway_multicast_domain_associations",
+    "get_transit_gateway_prefix_list_references",
+    "get_transit_gateway_route_table_associations",
+    "get_transit_gateway_route_table_propagations",
+    "get_vpn_connection_device_types",
+    "list_images_in_recycle_bin",
+    "list_snapshots_in_recycle_bin",
+    "search_local_gateway_routes",
+    "search_transit_gateway_multicast_groups",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_ec2.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "bundle_task_complete"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "bundle_task_complete",
+    "conversion_task_cancelled",
+    "conversion_task_completed",
+    "conversion_task_deleted",
+    "customer_gateway_available",
+    "export_task_cancelled",
+    "export_task_completed",
+    "image_available",
+    "image_exists",
+    "instance_exists",
+    "instance_running",
+    "instance_status_ok",
+    "instance_stopped",
+    "instance_terminated",
+    "internet_gateway_exists",
+    "key_pair_exists",
+    "nat_gateway_available",
+    "network_interface_available",
+    "password_data_available",
+    "security_group_exists",
+    "snapshot_completed",
+    "spot_instance_request_fulfilled",
+    "subnet_available",
+    "system_status_ok",
+    "volume_available",
+    "volume_deleted",
+    "volume_in_use",
+    "vpc_available",
+    "vpc_exists",
+    "vpc_peering_connection_deleted",
+    "vpc_peering_connection_exists",
+    "vpn_connection_available",
+    "vpn_connection_deleted",
+]
+```
+## RegionName
 
-- `bundle_task_complete`
-- `conversion_task_cancelled`
-- `conversion_task_completed`
-- `conversion_task_deleted`
-- `customer_gateway_available`
-- `export_task_cancelled`
-- `export_task_completed`
-- `image_available`
-- `image_exists`
-- `instance_exists`
-- `instance_running`
-- `instance_status_ok`
-- `instance_stopped`
-- `instance_terminated`
-- `internet_gateway_exists`
-- `key_pair_exists`
-- `nat_gateway_available`
-- `network_interface_available`
-- `password_data_available`
-- `security_group_exists`
-- `snapshot_completed`
-- `spot_instance_request_fulfilled`
-- `subnet_available`
-- `system_status_ok`
-- `volume_available`
-- `volume_deleted`
-- `volume_in_use`
-- `vpc_available`
-- `vpc_exists`
-- `vpc_peering_connection_deleted`
-- `vpc_peering_connection_exists`
-- `vpn_connection_available`
-- `vpn_connection_deleted`
+```python title="Usage Example"
+from mypy_boto3_ec2.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

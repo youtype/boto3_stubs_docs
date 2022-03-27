@@ -1,32 +1,18 @@
-<a id="paginators-for-boto3-migrationhubstrategyrecommendations-module"></a>
+# Paginators
 
-# Paginators for boto3 MigrationHubStrategyRecommendations module
+> [Index](../README.md) > [MigrationHubStrategyRecommendations](./README.md) > Paginators
 
-> [Index](../README.md) > [MigrationHubStrategyRecommendations](./README.md) >
-> Paginators
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
-type annotations stubs module
-[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
-
-- [Paginators for boto3 MigrationHubStrategyRecommendations module](#paginators-for-boto3-migrationhubstrategyrecommendations-module)
-  - [GetServerDetailsPaginator](#getserverdetailspaginator)
-  - [ListApplicationComponentsPaginator](#listapplicationcomponentspaginator)
-  - [ListCollectorsPaginator](#listcollectorspaginator)
-  - [ListImportFileTaskPaginator](#listimportfiletaskpaginator)
-  - [ListServersPaginator](#listserverspaginator)
-
-<a id="getserverdetailspaginator"></a>
+    Auto-generated documentation for [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
+    type annotations stubs module [mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 ## GetServerDetailsPaginator
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_paginator("get_server_details")`.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator("get_server_details")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.GetServerDetails)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator
@@ -35,28 +21,40 @@ def get_get_server_details_paginator() -> GetServerDetailsPaginator:
     return Session().client("migrationhubstrategy").get_paginator("get_server_details")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Paginator.GetServerDetails](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.GetServerDetails)
 
-Arguments for `GetServerDetailsPaginator.paginate` method:
+### paginate
 
-- `serverId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetServerDetailsPaginator.paginate` method.
 
-`GetServerDetailsPaginator.paginate` returns
-`_PageIterator`\[[GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serverId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetServerDetailsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listapplicationcomponentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetServerDetailsRequestGetServerDetailsPaginateTypeDef = {  # (1)
+    "serverId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetServerDetailsRequestGetServerDetailsPaginateTypeDef](./type_defs.md#getserverdetailsrequestgetserverdetailspaginatetypedef) 
 ## ListApplicationComponentsPaginator
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_paginator("list_application_components")`.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator("list_application_components")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListApplicationComponents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migrationhubstrategy.paginator import ListApplicationComponentsPaginator
@@ -65,32 +63,46 @@ def get_list_application_components_paginator() -> ListApplicationComponentsPagi
     return Session().client("migrationhubstrategy").get_paginator("list_application_components")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Paginator.ListApplicationComponents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListApplicationComponents)
 
-Arguments for `ListApplicationComponentsPaginator.paginate` method:
+### paginate
 
-- `applicationComponentCriteria`:
-  [ApplicationComponentCriteriaType](./literals.md#applicationcomponentcriteriatype)
-- `filterValue`: `str`
-- `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `sort`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListApplicationComponentsPaginator.paginate` method.
 
-`ListApplicationComponentsPaginator.paginate` returns
-`_PageIterator`\[[ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    applicationComponentCriteria: ApplicationComponentCriteriaType = ...,  # (1)
+    filterValue: str = ...,
+    groupIdFilter: Sequence[GroupTypeDef] = ...,  # (2)
+    sort: SortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListApplicationComponentsResponseTypeDef]:  # (5)
+    ...
+```
 
-<a id="listcollectorspaginator"></a>
+1. See [:material-code-brackets: ApplicationComponentCriteriaType](./literals.md#applicationcomponentcriteriatype) 
+2. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListApplicationComponentsRequestListApplicationComponentsPaginateTypeDef = {  # (1)
+    "applicationComponentCriteria": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListApplicationComponentsRequestListApplicationComponentsPaginateTypeDef](./type_defs.md#listapplicationcomponentsrequestlistapplicationcomponentspaginatetypedef) 
 ## ListCollectorsPaginator
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_paginator("list_collectors")`.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator("list_collectors")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListCollectors)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migrationhubstrategy.paginator import ListCollectorsPaginator
@@ -99,27 +111,39 @@ def get_list_collectors_paginator() -> ListCollectorsPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_collectors")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Paginator.ListCollectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListCollectors)
 
-Arguments for `ListCollectorsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCollectorsPaginator.paginate` method.
 
-`ListCollectorsPaginator.paginate` returns
-`_PageIterator`\[[ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListCollectorsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listimportfiletaskpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCollectorsRequestListCollectorsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCollectorsRequestListCollectorsPaginateTypeDef](./type_defs.md#listcollectorsrequestlistcollectorspaginatetypedef) 
 ## ListImportFileTaskPaginator
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_paginator("list_import_file_task")`.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator("list_import_file_task")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListImportFileTask)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migrationhubstrategy.paginator import ListImportFileTaskPaginator
@@ -128,27 +152,39 @@ def get_list_import_file_task_paginator() -> ListImportFileTaskPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_import_file_task")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Paginator.ListImportFileTask](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListImportFileTask)
 
-Arguments for `ListImportFileTaskPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListImportFileTaskPaginator.paginate` method.
 
-`ListImportFileTaskPaginator.paginate` returns
-`_PageIterator`\[[ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListImportFileTaskResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listserverspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListImportFileTaskRequestListImportFileTaskPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListImportFileTaskRequestListImportFileTaskPaginateTypeDef](./type_defs.md#listimportfiletaskrequestlistimportfiletaskpaginatetypedef) 
 ## ListServersPaginator
 
-Type annotations for
-`boto3.client("migrationhubstrategy").get_paginator("list_servers")`.
+Type annotations and code completion for `#!python boto3.client("migrationhubstrategy").get_paginator("list_servers")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListServers)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_migrationhubstrategy.paginator import ListServersPaginator
@@ -157,17 +193,37 @@ def get_list_servers_paginator() -> ListServersPaginator:
     return Session().client("migrationhubstrategy").get_paginator("list_servers")
 ```
 
-Boto3 documentation:
-[MigrationHubStrategyRecommendations.Paginator.ListServers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations.Paginator.ListServers)
 
-Arguments for `ListServersPaginator.paginate` method:
+### paginate
 
-- `filterValue`: `str`
-- `groupIdFilter`: `Sequence`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `serverCriteria`: [ServerCriteriaType](./literals.md#servercriteriatype)
-- `sort`: [SortOrderType](./literals.md#sortordertype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServersPaginator.paginate` method.
 
-`ListServersPaginator.paginate` returns
-`_PageIterator`\[[ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    filterValue: str = ...,
+    groupIdFilter: Sequence[GroupTypeDef] = ...,  # (1)
+    serverCriteria: ServerCriteriaType = ...,  # (2)
+    sort: SortOrderType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[ListServersResponseTypeDef]:  # (5)
+    ...
+```
+
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-brackets: ServerCriteriaType](./literals.md#servercriteriatype) 
+3. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListServersRequestListServersPaginateTypeDef = {  # (1)
+    "filterValue": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServersRequestListServersPaginateTypeDef](./type_defs.md#listserversrequestlistserverspaginatetypedef) 

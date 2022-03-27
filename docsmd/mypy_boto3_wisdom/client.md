@@ -1,64 +1,18 @@
-<a id="connectwisdomserviceclient-for-boto3-connectwisdomservice-module"></a>
+# ConnectWisdomServiceClient
 
-# ConnectWisdomServiceClient for boto3 ConnectWisdomService module
+> [Index](../README.md) > [ConnectWisdomService](./README.md) > ConnectWisdomServiceClient
 
-> [Index](../README.md) > [ConnectWisdomService](./README.md) >
-> ConnectWisdomServiceClient
+!!! note ""
 
-Auto-generated documentation for
-[ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
-type annotations stubs module
-[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
-
-- [ConnectWisdomServiceClient for boto3 ConnectWisdomService module](#connectwisdomserviceclient-for-boto3-connectwisdomservice-module)
-  - [ConnectWisdomServiceClient](#connectwisdomserviceclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_assistant](#create_assistant)
-    - [create_assistant_association](#create_assistant_association)
-    - [create_content](#create_content)
-    - [create_knowledge_base](#create_knowledge_base)
-    - [create_session](#create_session)
-    - [delete_assistant](#delete_assistant)
-    - [delete_assistant_association](#delete_assistant_association)
-    - [delete_content](#delete_content)
-    - [delete_knowledge_base](#delete_knowledge_base)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_assistant](#get_assistant)
-    - [get_assistant_association](#get_assistant_association)
-    - [get_content](#get_content)
-    - [get_content_summary](#get_content_summary)
-    - [get_knowledge_base](#get_knowledge_base)
-    - [get_recommendations](#get_recommendations)
-    - [get_session](#get_session)
-    - [list_assistant_associations](#list_assistant_associations)
-    - [list_assistants](#list_assistants)
-    - [list_contents](#list_contents)
-    - [list_knowledge_bases](#list_knowledge_bases)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [notify_recommendations_received](#notify_recommendations_received)
-    - [query_assistant](#query_assistant)
-    - [remove_knowledge_base_template_uri](#remove_knowledge_base_template_uri)
-    - [search_content](#search_content)
-    - [search_sessions](#search_sessions)
-    - [start_content_upload](#start_content_upload)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_content](#update_content)
-    - [update_knowledge_base_template_uri](#update_knowledge_base_template_uri)
-    - [get_paginator](#get_paginator)
-
-<a id="connectwisdomserviceclient"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## ConnectWisdomServiceClient
 
-Type annotations for `boto3.client("wisdom")`
+Type annotations and code completion for `#!python boto3.client("wisdom")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
 
@@ -66,833 +20,1081 @@ def get_wisdom_client() -> ConnectWisdomServiceClient:
     return Session().client("wisdom")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("wisdom").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("wisdom")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.PreconditionFailedException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.TooManyTagsException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_wisdom.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.PreconditionFailedException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.TooManyTagsException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ConnectWisdomServiceClient exceptions.
-
-Type annotations for `boto3.client("wisdom").exceptions` method.
-
-Boto3 documentation:
-[ConnectWisdomService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("wisdom").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.can_paginate)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_assistant"></a>
-
-### create_assistant
+### create\_assistant
 
 Creates an Amazon Connect Wisdom assistant.
 
-Type annotations for `boto3.client("wisdom").create_assistant` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").create_assistant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_assistant)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.create_assistant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_assistant)
+```python title="Method definition"
+def create_assistant(
+    self,
+    *,
+    name: str,
+    type: AssistantTypeType,  # (1)
+    clientToken: str = ...,
+    description: str = ...,
+    serverSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef = ...,  # (2)
+    tags: Mapping[str, str] = ...,
+) -> CreateAssistantResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssistantRequestRequestTypeDef](./type_defs.md#createassistantrequestrequesttypedef).
+1. See [:material-code-brackets: AssistantTypeType](./literals.md#assistanttypetype) 
+2. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+3. See [:material-code-braces: CreateAssistantResponseTypeDef](./type_defs.md#createassistantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `type`: `Literal['AGENT']` (see
-  [AssistantTypeType](./literals.md#assistanttypetype)) *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssistantRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "type": ...,
+}
 
-Returns
-[CreateAssistantResponseTypeDef](./type_defs.md#createassistantresponsetypedef).
+parent.create_assistant(**kwargs)
+```
 
-<a id="create\_assistant\_association"></a>
+1. See [:material-code-braces: CreateAssistantRequestRequestTypeDef](./type_defs.md#createassistantrequestrequesttypedef) 
 
-### create_assistant_association
+### create\_assistant\_association
 
 Creates an association between an Amazon Connect Wisdom assistant and another
 resource.
 
-Type annotations for `boto3.client("wisdom").create_assistant_association`
-method.
+Type annotations and code completion for `#!python boto3.client("wisdom").create_assistant_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_assistant_association)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.create_assistant_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_assistant_association)
+```python title="Method definition"
+def create_assistant_association(
+    self,
+    *,
+    assistantId: str,
+    association: AssistantAssociationInputDataTypeDef,  # (1)
+    associationType: AssociationTypeType,  # (2)
+    clientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateAssistantAssociationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAssistantAssociationRequestRequestTypeDef](./type_defs.md#createassistantassociationrequestrequesttypedef).
+1. See [:material-code-braces: AssistantAssociationInputDataTypeDef](./type_defs.md#assistantassociationinputdatatypedef) 
+2. See [:material-code-brackets: AssociationTypeType](./literals.md#associationtypetype) 
+3. See [:material-code-braces: CreateAssistantAssociationResponseTypeDef](./type_defs.md#createassistantassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `association`:
-  [AssistantAssociationInputDataTypeDef](./type_defs.md#assistantassociationinputdatatypedef)
-  *(required)*
-- `associationType`: `Literal['KNOWLEDGE_BASE']` (see
-  [AssociationTypeType](./literals.md#associationtypetype)) *(required)*
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAssistantAssociationRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "association": ...,
+    "associationType": ...,
+}
 
-Returns
-[CreateAssistantAssociationResponseTypeDef](./type_defs.md#createassistantassociationresponsetypedef).
+parent.create_assistant_association(**kwargs)
+```
 
-<a id="create\_content"></a>
+1. See [:material-code-braces: CreateAssistantAssociationRequestRequestTypeDef](./type_defs.md#createassistantassociationrequestrequesttypedef) 
 
-### create_content
+### create\_content
 
 Creates Wisdom content.
 
-Type annotations for `boto3.client("wisdom").create_content` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").create_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_content)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.create_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_content)
+```python title="Method definition"
+def create_content(
+    self,
+    *,
+    knowledgeBaseId: str,
+    name: str,
+    uploadId: str,
+    clientToken: str = ...,
+    metadata: Mapping[str, str] = ...,
+    overrideLinkOutUri: str = ...,
+    tags: Mapping[str, str] = ...,
+    title: str = ...,
+) -> CreateContentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateContentRequestRequestTypeDef](./type_defs.md#createcontentrequestrequesttypedef).
+1. See [:material-code-braces: CreateContentResponseTypeDef](./type_defs.md#createcontentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `uploadId`: `str` *(required)*
-- `clientToken`: `str`
-- `metadata`: `Mapping`\[`str`, `str`\]
-- `overrideLinkOutUri`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `title`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateContentRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+    "name": ...,
+    "uploadId": ...,
+}
 
-Returns
-[CreateContentResponseTypeDef](./type_defs.md#createcontentresponsetypedef).
+parent.create_content(**kwargs)
+```
 
-<a id="create\_knowledge\_base"></a>
+1. See [:material-code-braces: CreateContentRequestRequestTypeDef](./type_defs.md#createcontentrequestrequesttypedef) 
 
-### create_knowledge_base
+### create\_knowledge\_base
 
 Creates a knowledge base.
 
-Type annotations for `boto3.client("wisdom").create_knowledge_base` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").create_knowledge_base` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_knowledge_base)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.create_knowledge_base](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_knowledge_base)
+```python title="Method definition"
+def create_knowledge_base(
+    self,
+    *,
+    knowledgeBaseType: KnowledgeBaseTypeType,  # (1)
+    name: str,
+    clientToken: str = ...,
+    description: str = ...,
+    renderingConfiguration: RenderingConfigurationTypeDef = ...,  # (2)
+    serverSideEncryptionConfiguration: ServerSideEncryptionConfigurationTypeDef = ...,  # (3)
+    sourceConfiguration: SourceConfigurationTypeDef = ...,  # (4)
+    tags: Mapping[str, str] = ...,
+) -> CreateKnowledgeBaseResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateKnowledgeBaseRequestRequestTypeDef](./type_defs.md#createknowledgebaserequestrequesttypedef).
+1. See [:material-code-brackets: KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype) 
+2. See [:material-code-braces: RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef) 
+3. See [:material-code-braces: ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef) 
+4. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+5. See [:material-code-braces: CreateKnowledgeBaseResponseTypeDef](./type_defs.md#createknowledgebaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseType`:
-  [KnowledgeBaseTypeType](./literals.md#knowledgebasetypetype) *(required)*
-- `name`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `renderingConfiguration`:
-  [RenderingConfigurationTypeDef](./type_defs.md#renderingconfigurationtypedef)
-- `serverSideEncryptionConfiguration`:
-  [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
-- `sourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateKnowledgeBaseRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseType": ...,
+    "name": ...,
+}
 
-Returns
-[CreateKnowledgeBaseResponseTypeDef](./type_defs.md#createknowledgebaseresponsetypedef).
+parent.create_knowledge_base(**kwargs)
+```
 
-<a id="create\_session"></a>
+1. See [:material-code-braces: CreateKnowledgeBaseRequestRequestTypeDef](./type_defs.md#createknowledgebaserequestrequesttypedef) 
 
-### create_session
+### create\_session
 
 Creates a session.
 
-Type annotations for `boto3.client("wisdom").create_session` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").create_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_session)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.create_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.create_session)
+```python title="Method definition"
+def create_session(
+    self,
+    *,
+    assistantId: str,
+    name: str,
+    clientToken: str = ...,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSessionRequestRequestTypeDef](./type_defs.md#createsessionrequestrequesttypedef).
+1. See [:material-code-braces: CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `clientToken`: `str`
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSessionRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "name": ...,
+}
 
-Returns
-[CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef).
+parent.create_session(**kwargs)
+```
 
-<a id="delete\_assistant"></a>
+1. See [:material-code-braces: CreateSessionRequestRequestTypeDef](./type_defs.md#createsessionrequestrequesttypedef) 
 
-### delete_assistant
+### delete\_assistant
 
 Deletes an assistant.
 
-Type annotations for `boto3.client("wisdom").delete_assistant` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").delete_assistant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_assistant)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.delete_assistant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_assistant)
+```python title="Method definition"
+def delete_assistant(
+    self,
+    *,
+    assistantId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssistantRequestRequestTypeDef](./type_defs.md#deleteassistantrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssistantRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assistant(**kwargs)
+```
 
-<a id="delete\_assistant\_association"></a>
+1. See [:material-code-braces: DeleteAssistantRequestRequestTypeDef](./type_defs.md#deleteassistantrequestrequesttypedef) 
 
-### delete_assistant_association
+### delete\_assistant\_association
 
 Deletes an assistant association.
 
-Type annotations for `boto3.client("wisdom").delete_assistant_association`
-method.
+Type annotations and code completion for `#!python boto3.client("wisdom").delete_assistant_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_assistant_association)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.delete_assistant_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_assistant_association)
+```python title="Method definition"
+def delete_assistant_association(
+    self,
+    *,
+    assistantAssociationId: str,
+    assistantId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssistantAssociationRequestRequestTypeDef](./type_defs.md#deleteassistantassociationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `assistantAssociationId`: `str` *(required)*
-- `assistantId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssistantAssociationRequestRequestTypeDef = {  # (1)
+    "assistantAssociationId": ...,
+    "assistantId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_assistant_association(**kwargs)
+```
 
-<a id="delete\_content"></a>
+1. See [:material-code-braces: DeleteAssistantAssociationRequestRequestTypeDef](./type_defs.md#deleteassistantassociationrequestrequesttypedef) 
 
-### delete_content
+### delete\_content
 
 Deletes the content.
 
-Type annotations for `boto3.client("wisdom").delete_content` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").delete_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_content)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.delete_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_content)
+```python title="Method definition"
+def delete_content(
+    self,
+    *,
+    contentId: str,
+    knowledgeBaseId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteContentRequestRequestTypeDef](./type_defs.md#deletecontentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `contentId`: `str` *(required)*
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteContentRequestRequestTypeDef = {  # (1)
+    "contentId": ...,
+    "knowledgeBaseId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_content(**kwargs)
+```
 
-<a id="delete\_knowledge\_base"></a>
+1. See [:material-code-braces: DeleteContentRequestRequestTypeDef](./type_defs.md#deletecontentrequestrequesttypedef) 
 
-### delete_knowledge_base
+### delete\_knowledge\_base
 
 Deletes the knowledge base.
 
-Type annotations for `boto3.client("wisdom").delete_knowledge_base` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").delete_knowledge_base` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_knowledge_base)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.delete_knowledge_base](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.delete_knowledge_base)
+```python title="Method definition"
+def delete_knowledge_base(
+    self,
+    *,
+    knowledgeBaseId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteKnowledgeBaseRequestRequestTypeDef](./type_defs.md#deleteknowledgebaserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteKnowledgeBaseRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_knowledge_base(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteKnowledgeBaseRequestRequestTypeDef](./type_defs.md#deleteknowledgebaserequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("wisdom").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_assistant"></a>
-
-### get_assistant
+### get\_assistant
 
 Retrieves information about an assistant.
 
-Type annotations for `boto3.client("wisdom").get_assistant` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_assistant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_assistant)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_assistant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_assistant)
+```python title="Method definition"
+def get_assistant(
+    self,
+    *,
+    assistantId: str,
+) -> GetAssistantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssistantRequestRequestTypeDef](./type_defs.md#getassistantrequestrequesttypedef).
+1. See [:material-code-braces: GetAssistantResponseTypeDef](./type_defs.md#getassistantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssistantRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+}
 
-Returns
-[GetAssistantResponseTypeDef](./type_defs.md#getassistantresponsetypedef).
+parent.get_assistant(**kwargs)
+```
 
-<a id="get\_assistant\_association"></a>
+1. See [:material-code-braces: GetAssistantRequestRequestTypeDef](./type_defs.md#getassistantrequestrequesttypedef) 
 
-### get_assistant_association
+### get\_assistant\_association
 
 Retrieves information about an assistant association.
 
-Type annotations for `boto3.client("wisdom").get_assistant_association` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_assistant_association` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_assistant_association)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_assistant_association](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_assistant_association)
+```python title="Method definition"
+def get_assistant_association(
+    self,
+    *,
+    assistantAssociationId: str,
+    assistantId: str,
+) -> GetAssistantAssociationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssistantAssociationRequestRequestTypeDef](./type_defs.md#getassistantassociationrequestrequesttypedef).
+1. See [:material-code-braces: GetAssistantAssociationResponseTypeDef](./type_defs.md#getassistantassociationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantAssociationId`: `str` *(required)*
-- `assistantId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssistantAssociationRequestRequestTypeDef = {  # (1)
+    "assistantAssociationId": ...,
+    "assistantId": ...,
+}
 
-Returns
-[GetAssistantAssociationResponseTypeDef](./type_defs.md#getassistantassociationresponsetypedef).
+parent.get_assistant_association(**kwargs)
+```
 
-<a id="get\_content"></a>
+1. See [:material-code-braces: GetAssistantAssociationRequestRequestTypeDef](./type_defs.md#getassistantassociationrequestrequesttypedef) 
 
-### get_content
+### get\_content
 
 Retrieves content, including a pre-signed URL to download the content.
 
-Type annotations for `boto3.client("wisdom").get_content` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_content)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_content)
+```python title="Method definition"
+def get_content(
+    self,
+    *,
+    contentId: str,
+    knowledgeBaseId: str,
+) -> GetContentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContentRequestRequestTypeDef](./type_defs.md#getcontentrequestrequesttypedef).
+1. See [:material-code-braces: GetContentResponseTypeDef](./type_defs.md#getcontentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentId`: `str` *(required)*
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContentRequestRequestTypeDef = {  # (1)
+    "contentId": ...,
+    "knowledgeBaseId": ...,
+}
 
-Returns [GetContentResponseTypeDef](./type_defs.md#getcontentresponsetypedef).
+parent.get_content(**kwargs)
+```
 
-<a id="get\_content\_summary"></a>
+1. See [:material-code-braces: GetContentRequestRequestTypeDef](./type_defs.md#getcontentrequestrequesttypedef) 
 
-### get_content_summary
+### get\_content\_summary
 
 Retrieves summary information about the content.
 
-Type annotations for `boto3.client("wisdom").get_content_summary` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_content_summary` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_content_summary)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_content_summary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_content_summary)
+```python title="Method definition"
+def get_content_summary(
+    self,
+    *,
+    contentId: str,
+    knowledgeBaseId: str,
+) -> GetContentSummaryResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetContentSummaryRequestRequestTypeDef](./type_defs.md#getcontentsummaryrequestrequesttypedef).
+1. See [:material-code-braces: GetContentSummaryResponseTypeDef](./type_defs.md#getcontentsummaryresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentId`: `str` *(required)*
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetContentSummaryRequestRequestTypeDef = {  # (1)
+    "contentId": ...,
+    "knowledgeBaseId": ...,
+}
 
-Returns
-[GetContentSummaryResponseTypeDef](./type_defs.md#getcontentsummaryresponsetypedef).
+parent.get_content_summary(**kwargs)
+```
 
-<a id="get\_knowledge\_base"></a>
+1. See [:material-code-braces: GetContentSummaryRequestRequestTypeDef](./type_defs.md#getcontentsummaryrequestrequesttypedef) 
 
-### get_knowledge_base
+### get\_knowledge\_base
 
 Retrieves information about the knowledge base.
 
-Type annotations for `boto3.client("wisdom").get_knowledge_base` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_knowledge_base` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_knowledge_base)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_knowledge_base](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_knowledge_base)
+```python title="Method definition"
+def get_knowledge_base(
+    self,
+    *,
+    knowledgeBaseId: str,
+) -> GetKnowledgeBaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetKnowledgeBaseRequestRequestTypeDef](./type_defs.md#getknowledgebaserequestrequesttypedef).
+1. See [:material-code-braces: GetKnowledgeBaseResponseTypeDef](./type_defs.md#getknowledgebaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetKnowledgeBaseRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+}
 
-Returns
-[GetKnowledgeBaseResponseTypeDef](./type_defs.md#getknowledgebaseresponsetypedef).
+parent.get_knowledge_base(**kwargs)
+```
 
-<a id="get\_recommendations"></a>
+1. See [:material-code-braces: GetKnowledgeBaseRequestRequestTypeDef](./type_defs.md#getknowledgebaserequestrequesttypedef) 
 
-### get_recommendations
+### get\_recommendations
 
 Retrieves recommendations for the specified session.
 
-Type annotations for `boto3.client("wisdom").get_recommendations` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_recommendations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_recommendations)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_recommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_recommendations)
+```python title="Method definition"
+def get_recommendations(
+    self,
+    *,
+    assistantId: str,
+    sessionId: str,
+    maxResults: int = ...,
+    waitTimeSeconds: int = ...,
+) -> GetRecommendationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef).
+1. See [:material-code-braces: GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
-- `maxResults`: `int`
-- `waitTimeSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRecommendationsRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "sessionId": ...,
+}
 
-Returns
-[GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
+parent.get_recommendations(**kwargs)
+```
 
-<a id="get\_session"></a>
+1. See [:material-code-braces: GetRecommendationsRequestRequestTypeDef](./type_defs.md#getrecommendationsrequestrequesttypedef) 
 
-### get_session
+### get\_session
 
 Retrieves information for a specified session.
 
-Type annotations for `boto3.client("wisdom").get_session` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_session` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_session)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.get_session)
+```python title="Method definition"
+def get_session(
+    self,
+    *,
+    assistantId: str,
+    sessionId: str,
+) -> GetSessionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
+1. See [:material-code-braces: GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `sessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSessionRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "sessionId": ...,
+}
 
-Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+parent.get_session(**kwargs)
+```
 
-<a id="list\_assistant\_associations"></a>
+1. See [:material-code-braces: GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef) 
 
-### list_assistant_associations
+### list\_assistant\_associations
 
 Lists information about assistant associations.
 
-Type annotations for `boto3.client("wisdom").list_assistant_associations`
-method.
+Type annotations and code completion for `#!python boto3.client("wisdom").list_assistant_associations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_assistant_associations)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.list_assistant_associations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_assistant_associations)
+```python title="Method definition"
+def list_assistant_associations(
+    self,
+    *,
+    assistantId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAssistantAssociationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssistantAssociationsRequestRequestTypeDef](./type_defs.md#listassistantassociationsrequestrequesttypedef).
+1. See [:material-code-braces: ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAssistantAssociationsRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+}
 
-Returns
-[ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef).
+parent.list_assistant_associations(**kwargs)
+```
 
-<a id="list\_assistants"></a>
+1. See [:material-code-braces: ListAssistantAssociationsRequestRequestTypeDef](./type_defs.md#listassistantassociationsrequestrequesttypedef) 
 
-### list_assistants
+### list\_assistants
 
 Lists information about assistants.
 
-Type annotations for `boto3.client("wisdom").list_assistants` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").list_assistants` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_assistants)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.list_assistants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_assistants)
+```python title="Method definition"
+def list_assistants(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAssistantsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAssistantsRequestRequestTypeDef](./type_defs.md#listassistantsrequestrequesttypedef).
+1. See [:material-code-braces: ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAssistantsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef).
+parent.list_assistants(**kwargs)
+```
 
-<a id="list\_contents"></a>
+1. See [:material-code-braces: ListAssistantsRequestRequestTypeDef](./type_defs.md#listassistantsrequestrequesttypedef) 
 
-### list_contents
+### list\_contents
 
 Lists the content.
 
-Type annotations for `boto3.client("wisdom").list_contents` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").list_contents` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_contents)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.list_contents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_contents)
+```python title="Method definition"
+def list_contents(
+    self,
+    *,
+    knowledgeBaseId: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListContentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListContentsRequestRequestTypeDef](./type_defs.md#listcontentsrequestrequesttypedef).
+1. See [:material-code-braces: ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListContentsRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+}
 
-Returns
-[ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef).
+parent.list_contents(**kwargs)
+```
 
-<a id="list\_knowledge\_bases"></a>
+1. See [:material-code-braces: ListContentsRequestRequestTypeDef](./type_defs.md#listcontentsrequestrequesttypedef) 
 
-### list_knowledge_bases
+### list\_knowledge\_bases
 
 Lists the knowledge bases.
 
-Type annotations for `boto3.client("wisdom").list_knowledge_bases` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").list_knowledge_bases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_knowledge_bases)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.list_knowledge_bases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_knowledge_bases)
+```python title="Method definition"
+def list_knowledge_bases(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListKnowledgeBasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListKnowledgeBasesRequestRequestTypeDef](./type_defs.md#listknowledgebasesrequestrequesttypedef).
+1. See [:material-code-braces: ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListKnowledgeBasesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef).
+parent.list_knowledge_bases(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListKnowledgeBasesRequestRequestTypeDef](./type_defs.md#listknowledgebasesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags for the specified resource.
 
-Type annotations for `boto3.client("wisdom").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="notify\_recommendations\_received"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### notify_recommendations_received
+### notify\_recommendations\_received
 
 Removes the specified recommendations from the specified assistant's queue of
 newly available recommendations.
 
-Type annotations for `boto3.client("wisdom").notify_recommendations_received`
-method.
+Type annotations and code completion for `#!python boto3.client("wisdom").notify_recommendations_received` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.notify_recommendations_received)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.notify_recommendations_received](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.notify_recommendations_received)
+```python title="Method definition"
+def notify_recommendations_received(
+    self,
+    *,
+    assistantId: str,
+    recommendationIds: Sequence[str],
+    sessionId: str,
+) -> NotifyRecommendationsReceivedResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[NotifyRecommendationsReceivedRequestRequestTypeDef](./type_defs.md#notifyrecommendationsreceivedrequestrequesttypedef).
+1. See [:material-code-braces: NotifyRecommendationsReceivedResponseTypeDef](./type_defs.md#notifyrecommendationsreceivedresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `recommendationIds`: `Sequence`\[`str`\] *(required)*
-- `sessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: NotifyRecommendationsReceivedRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "recommendationIds": ...,
+    "sessionId": ...,
+}
 
-Returns
-[NotifyRecommendationsReceivedResponseTypeDef](./type_defs.md#notifyrecommendationsreceivedresponsetypedef).
+parent.notify_recommendations_received(**kwargs)
+```
 
-<a id="query\_assistant"></a>
+1. See [:material-code-braces: NotifyRecommendationsReceivedRequestRequestTypeDef](./type_defs.md#notifyrecommendationsreceivedrequestrequesttypedef) 
 
-### query_assistant
+### query\_assistant
 
 Performs a manual search against the specified assistant.
 
-Type annotations for `boto3.client("wisdom").query_assistant` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").query_assistant` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.query_assistant)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.query_assistant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.query_assistant)
+```python title="Method definition"
+def query_assistant(
+    self,
+    *,
+    assistantId: str,
+    queryText: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> QueryAssistantResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[QueryAssistantRequestRequestTypeDef](./type_defs.md#queryassistantrequestrequesttypedef).
+1. See [:material-code-braces: QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `queryText`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: QueryAssistantRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "queryText": ...,
+}
 
-Returns
-[QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef).
+parent.query_assistant(**kwargs)
+```
 
-<a id="remove\_knowledge\_base\_template\_uri"></a>
+1. See [:material-code-braces: QueryAssistantRequestRequestTypeDef](./type_defs.md#queryassistantrequestrequesttypedef) 
 
-### remove_knowledge_base_template_uri
+### remove\_knowledge\_base\_template\_uri
 
 Removes a URI template from a knowledge base.
 
-Type annotations for
-`boto3.client("wisdom").remove_knowledge_base_template_uri` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").remove_knowledge_base_template_uri` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.remove_knowledge_base_template_uri)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.remove_knowledge_base_template_uri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.remove_knowledge_base_template_uri)
+```python title="Method definition"
+def remove_knowledge_base_template_uri(
+    self,
+    *,
+    knowledgeBaseId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef](./type_defs.md#removeknowledgebasetemplateurirequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_knowledge_base_template_uri(**kwargs)
+```
 
-<a id="search\_content"></a>
+1. See [:material-code-braces: RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef](./type_defs.md#removeknowledgebasetemplateurirequestrequesttypedef) 
 
-### search_content
+### search\_content
 
 Searches for content in a specified knowledge base.
 
-Type annotations for `boto3.client("wisdom").search_content` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").search_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.search_content)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.search_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.search_content)
+```python title="Method definition"
+def search_content(
+    self,
+    *,
+    knowledgeBaseId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> SearchContentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchContentRequestRequestTypeDef](./type_defs.md#searchcontentrequestrequesttypedef).
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchContentRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+    "searchExpression": ...,
+}
 
-Returns
-[SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef).
+parent.search_content(**kwargs)
+```
 
-<a id="search\_sessions"></a>
+1. See [:material-code-braces: SearchContentRequestRequestTypeDef](./type_defs.md#searchcontentrequestrequesttypedef) 
 
-### search_sessions
+### search\_sessions
 
 Searches for sessions.
 
-Type annotations for `boto3.client("wisdom").search_sessions` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").search_sessions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.search_sessions)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.search_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.search_sessions)
+```python title="Method definition"
+def search_sessions(
+    self,
+    *,
+    assistantId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> SearchSessionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[SearchSessionsRequestRequestTypeDef](./type_defs.md#searchsessionsrequestrequesttypedef).
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `assistantId`: `str` *(required)*
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
-  *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchSessionsRequestRequestTypeDef = {  # (1)
+    "assistantId": ...,
+    "searchExpression": ...,
+}
 
-Returns
-[SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef).
+parent.search_sessions(**kwargs)
+```
 
-<a id="start\_content\_upload"></a>
+1. See [:material-code-braces: SearchSessionsRequestRequestTypeDef](./type_defs.md#searchsessionsrequestrequesttypedef) 
 
-### start_content_upload
+### start\_content\_upload
 
 Get a URL to upload content to a knowledge base.
 
-Type annotations for `boto3.client("wisdom").start_content_upload` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").start_content_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.start_content_upload)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.start_content_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.start_content_upload)
+```python title="Method definition"
+def start_content_upload(
+    self,
+    *,
+    contentType: str,
+    knowledgeBaseId: str,
+) -> StartContentUploadResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartContentUploadRequestRequestTypeDef](./type_defs.md#startcontentuploadrequestrequesttypedef).
+1. See [:material-code-braces: StartContentUploadResponseTypeDef](./type_defs.md#startcontentuploadresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentType`: `str` *(required)*
-- `knowledgeBaseId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartContentUploadRequestRequestTypeDef = {  # (1)
+    "contentType": ...,
+    "knowledgeBaseId": ...,
+}
 
-Returns
-[StartContentUploadResponseTypeDef](./type_defs.md#startcontentuploadresponsetypedef).
+parent.start_content_upload(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartContentUploadRequestRequestTypeDef](./type_defs.md#startcontentuploadrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds the specified tags to the specified resource.
 
-Type annotations for `boto3.client("wisdom").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.tag_resource)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the specified tags from the specified resource.
 
-Type annotations for `boto3.client("wisdom").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.untag_resource)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_content"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_content
+### update\_content
 
 Updates information about the content.
 
-Type annotations for `boto3.client("wisdom").update_content` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").update_content` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.update_content)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.update_content](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.update_content)
+```python title="Method definition"
+def update_content(
+    self,
+    *,
+    contentId: str,
+    knowledgeBaseId: str,
+    metadata: Mapping[str, str] = ...,
+    overrideLinkOutUri: str = ...,
+    removeOverrideLinkOutUri: bool = ...,
+    revisionId: str = ...,
+    title: str = ...,
+    uploadId: str = ...,
+) -> UpdateContentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateContentRequestRequestTypeDef](./type_defs.md#updatecontentrequestrequesttypedef).
+1. See [:material-code-braces: UpdateContentResponseTypeDef](./type_defs.md#updatecontentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `contentId`: `str` *(required)*
-- `knowledgeBaseId`: `str` *(required)*
-- `metadata`: `Mapping`\[`str`, `str`\]
-- `overrideLinkOutUri`: `str`
-- `removeOverrideLinkOutUri`: `bool`
-- `revisionId`: `str`
-- `title`: `str`
-- `uploadId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateContentRequestRequestTypeDef = {  # (1)
+    "contentId": ...,
+    "knowledgeBaseId": ...,
+}
 
-Returns
-[UpdateContentResponseTypeDef](./type_defs.md#updatecontentresponsetypedef).
+parent.update_content(**kwargs)
+```
 
-<a id="update\_knowledge\_base\_template\_uri"></a>
+1. See [:material-code-braces: UpdateContentRequestRequestTypeDef](./type_defs.md#updatecontentrequestrequesttypedef) 
 
-### update_knowledge_base_template_uri
+### update\_knowledge\_base\_template\_uri
 
 Updates the template URI of a knowledge base.
 
-Type annotations for
-`boto3.client("wisdom").update_knowledge_base_template_uri` method.
+Type annotations and code completion for `#!python boto3.client("wisdom").update_knowledge_base_template_uri` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.update_knowledge_base_template_uri)
 
-Boto3 documentation:
-[ConnectWisdomService.Client.update_knowledge_base_template_uri](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.update_knowledge_base_template_uri)
+```python title="Method definition"
+def update_knowledge_base_template_uri(
+    self,
+    *,
+    knowledgeBaseId: str,
+    templateUri: str,
+) -> UpdateKnowledgeBaseTemplateUriResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef](./type_defs.md#updateknowledgebasetemplateurirequestrequesttypedef).
+1. See [:material-code-braces: UpdateKnowledgeBaseTemplateUriResponseTypeDef](./type_defs.md#updateknowledgebasetemplateuriresponsetypedef) 
 
-Keyword-only arguments:
 
-- `knowledgeBaseId`: `str` *(required)*
-- `templateUri`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+    "templateUri": ...,
+}
 
-Returns
-[UpdateKnowledgeBaseTemplateUriResponseTypeDef](./type_defs.md#updateknowledgebasetemplateuriresponsetypedef).
+parent.update_knowledge_base_template_uri(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef](./type_defs.md#updateknowledgebasetemplateurirequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("wisdom").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator` method with overloads.
 
-- `client.get_paginator("list_assistant_associations")` ->
-  [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
-- `client.get_paginator("list_assistants")` ->
-  [ListAssistantsPaginator](./paginators.md#listassistantspaginator)
-- `client.get_paginator("list_contents")` ->
-  [ListContentsPaginator](./paginators.md#listcontentspaginator)
-- `client.get_paginator("list_knowledge_bases")` ->
-  [ListKnowledgeBasesPaginator](./paginators.md#listknowledgebasespaginator)
-- `client.get_paginator("query_assistant")` ->
-  [QueryAssistantPaginator](./paginators.md#queryassistantpaginator)
-- `client.get_paginator("search_content")` ->
-  [SearchContentPaginator](./paginators.md#searchcontentpaginator)
-- `client.get_paginator("search_sessions")` ->
-  [SearchSessionsPaginator](./paginators.md#searchsessionspaginator)
+- `client.get_paginator("list_assistant_associations")` -> [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
+- `client.get_paginator("list_assistants")` -> [ListAssistantsPaginator](./paginators.md#listassistantspaginator)
+- `client.get_paginator("list_contents")` -> [ListContentsPaginator](./paginators.md#listcontentspaginator)
+- `client.get_paginator("list_knowledge_bases")` -> [ListKnowledgeBasesPaginator](./paginators.md#listknowledgebasespaginator)
+- `client.get_paginator("query_assistant")` -> [QueryAssistantPaginator](./paginators.md#queryassistantpaginator)
+- `client.get_paginator("search_content")` -> [SearchContentPaginator](./paginators.md#searchcontentpaginator)
+- `client.get_paginator("search_sessions")` -> [SearchSessionsPaginator](./paginators.md#searchsessionspaginator)
+
+
+

@@ -1,771 +1,1014 @@
-<a id="typed-dictionaries-for-boto3-resourcegroups-module"></a>
-
-# Typed dictionaries for boto3 ResourceGroups module
+# Typed dictionaries
 
 > [Index](../README.md) > [ResourceGroups](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
-type annotations stubs module
-[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ResourceGroups module](#typed-dictionaries-for-boto3-resourcegroups-module)
-  - [CreateGroupInputRequestTypeDef](#creategroupinputrequesttypedef)
-  - [CreateGroupOutputTypeDef](#creategroupoutputtypedef)
-  - [DeleteGroupInputRequestTypeDef](#deletegroupinputrequesttypedef)
-  - [DeleteGroupOutputTypeDef](#deletegroupoutputtypedef)
-  - [FailedResourceTypeDef](#failedresourcetypedef)
-  - [GetGroupConfigurationInputRequestTypeDef](#getgroupconfigurationinputrequesttypedef)
-  - [GetGroupConfigurationOutputTypeDef](#getgroupconfigurationoutputtypedef)
-  - [GetGroupInputRequestTypeDef](#getgroupinputrequesttypedef)
-  - [GetGroupOutputTypeDef](#getgroupoutputtypedef)
-  - [GetGroupQueryInputRequestTypeDef](#getgroupqueryinputrequesttypedef)
-  - [GetGroupQueryOutputTypeDef](#getgroupqueryoutputtypedef)
-  - [GetTagsInputRequestTypeDef](#gettagsinputrequesttypedef)
-  - [GetTagsOutputTypeDef](#gettagsoutputtypedef)
-  - [GroupConfigurationItemTypeDef](#groupconfigurationitemtypedef)
-  - [GroupConfigurationParameterTypeDef](#groupconfigurationparametertypedef)
-  - [GroupConfigurationTypeDef](#groupconfigurationtypedef)
-  - [GroupFilterTypeDef](#groupfiltertypedef)
-  - [GroupIdentifierTypeDef](#groupidentifiertypedef)
-  - [GroupQueryTypeDef](#groupquerytypedef)
-  - [GroupResourcesInputRequestTypeDef](#groupresourcesinputrequesttypedef)
-  - [GroupResourcesOutputTypeDef](#groupresourcesoutputtypedef)
-  - [GroupTypeDef](#grouptypedef)
-  - [ListGroupResourcesInputRequestTypeDef](#listgroupresourcesinputrequesttypedef)
-  - [ListGroupResourcesItemTypeDef](#listgroupresourcesitemtypedef)
-  - [ListGroupResourcesOutputTypeDef](#listgroupresourcesoutputtypedef)
-  - [ListGroupsInputRequestTypeDef](#listgroupsinputrequesttypedef)
-  - [ListGroupsOutputTypeDef](#listgroupsoutputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PendingResourceTypeDef](#pendingresourcetypedef)
-  - [PutGroupConfigurationInputRequestTypeDef](#putgroupconfigurationinputrequesttypedef)
-  - [QueryErrorTypeDef](#queryerrortypedef)
-  - [ResourceFilterTypeDef](#resourcefiltertypedef)
-  - [ResourceIdentifierTypeDef](#resourceidentifiertypedef)
-  - [ResourceQueryTypeDef](#resourcequerytypedef)
-  - [ResourceStatusTypeDef](#resourcestatustypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SearchResourcesInputRequestTypeDef](#searchresourcesinputrequesttypedef)
-  - [SearchResourcesOutputTypeDef](#searchresourcesoutputtypedef)
-  - [TagInputRequestTypeDef](#taginputrequesttypedef)
-  - [TagOutputTypeDef](#tagoutputtypedef)
-  - [UngroupResourcesInputRequestTypeDef](#ungroupresourcesinputrequesttypedef)
-  - [UngroupResourcesOutputTypeDef](#ungroupresourcesoutputtypedef)
-  - [UntagInputRequestTypeDef](#untaginputrequesttypedef)
-  - [UntagOutputTypeDef](#untagoutputtypedef)
-  - [UpdateGroupInputRequestTypeDef](#updategroupinputrequesttypedef)
-  - [UpdateGroupOutputTypeDef](#updategroupoutputtypedef)
-  - [UpdateGroupQueryInputRequestTypeDef](#updategroupqueryinputrequesttypedef)
-  - [UpdateGroupQueryOutputTypeDef](#updategroupqueryoutputtypedef)
-
-<a id="creategroupinputrequesttypedef"></a>
+    Auto-generated documentation for [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
+    type annotations stubs module [mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 ## CreateGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import CreateGroupInputRequestTypeDef
+
+def get_value() -> CreateGroupInputRequestTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupInputRequestTypeDef(TypedDict):
+    Name: str,
+    Description: NotRequired[str],
+    ResourceQuery: NotRequired[ResourceQueryTypeDef],  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+    Configuration: NotRequired[Sequence[GroupConfigurationItemTypeDef]],  # (2)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `Configuration`:
-  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
-
-<a id="creategroupoutputtypedef"></a>
-
+1. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
+2. See [:material-code-braces: GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef) 
 ## CreateGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import CreateGroupOutputTypeDef
+
+def get_value() -> CreateGroupOutputTypeDef:
+    return {
+        "Group": ...,
+        "ResourceQuery": ...,
+        "Tags": ...,
+        "GroupConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGroupOutputTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResourceQuery: ResourceQueryTypeDef,  # (2)
+    Tags: Dict[str, str],
+    GroupConfiguration: GroupConfigurationTypeDef,  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `GroupConfiguration`:
-  [GroupConfigurationTypeDef](./type_defs.md#groupconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
+3. See [:material-code-braces: GroupConfigurationTypeDef](./type_defs.md#groupconfigurationtypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import DeleteGroupInputRequestTypeDef
+
+def get_value() -> DeleteGroupInputRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `Group`: `str`
-
-<a id="deletegroupoutputtypedef"></a>
+```python title="Definition"
+class DeleteGroupInputRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+```
 
 ## DeleteGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import DeleteGroupOutputTypeDef
+
+def get_value() -> DeleteGroupOutputTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGroupOutputTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="failedresourcetypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import FailedResourceTypeDef
+
+def get_value() -> FailedResourceTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-- `ErrorMessage`: `str`
-- `ErrorCode`: `str`
-
-<a id="getgroupconfigurationinputrequesttypedef"></a>
+```python title="Definition"
+class FailedResourceTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+    ErrorCode: NotRequired[str],
+```
 
 ## GetGroupConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationInputRequestTypeDef
+
+def get_value() -> GetGroupConfigurationInputRequestTypeDef:
+    return {
+        "Group": ...,
+    }
 ```
 
-Optional fields:
-
-- `Group`: `str`
-
-<a id="getgroupconfigurationoutputtypedef"></a>
+```python title="Definition"
+class GetGroupConfigurationInputRequestTypeDef(TypedDict):
+    Group: NotRequired[str],
+```
 
 ## GetGroupConfigurationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationOutputTypeDef
+
+def get_value() -> GetGroupConfigurationOutputTypeDef:
+    return {
+        "GroupConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupConfigurationOutputTypeDef(TypedDict):
+    GroupConfiguration: GroupConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GroupConfiguration`:
-  [GroupConfigurationTypeDef](./type_defs.md#groupconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupConfigurationTypeDef](./type_defs.md#groupconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupInputRequestTypeDef
+
+def get_value() -> GetGroupInputRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `Group`: `str`
-
-<a id="getgroupoutputtypedef"></a>
+```python title="Definition"
+class GetGroupInputRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+```
 
 ## GetGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupOutputTypeDef
+
+def get_value() -> GetGroupOutputTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupOutputTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getgroupqueryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetGroupQueryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupQueryInputRequestTypeDef
+
+def get_value() -> GetGroupQueryInputRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `Group`: `str`
-
-<a id="getgroupqueryoutputtypedef"></a>
+```python title="Definition"
+class GetGroupQueryInputRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+```
 
 ## GetGroupQueryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetGroupQueryOutputTypeDef
+
+def get_value() -> GetGroupQueryOutputTypeDef:
+    return {
+        "GroupQuery": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetGroupQueryOutputTypeDef(TypedDict):
+    GroupQuery: GroupQueryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GroupQuery`: [GroupQueryTypeDef](./type_defs.md#groupquerytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettagsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupQueryTypeDef](./type_defs.md#groupquerytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTagsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetTagsInputRequestTypeDef
+
+def get_value() -> GetTagsInputRequestTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-
-<a id="gettagsoutputtypedef"></a>
+```python title="Definition"
+class GetTagsInputRequestTypeDef(TypedDict):
+    Arn: str,
+```
 
 ## GetTagsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GetTagsOutputTypeDef
+
+def get_value() -> GetTagsOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetTagsOutputTypeDef(TypedDict):
+    Arn: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="groupconfigurationitemtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupConfigurationItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationItemTypeDef
+
+def get_value() -> GroupConfigurationItemTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupConfigurationItemTypeDef(TypedDict):
+    Type: str,
+    Parameters: NotRequired[Sequence[GroupConfigurationParameterTypeDef]],  # (1)
+```
 
-- `Type`: `str`
-
-Optional fields:
-
-- `Parameters`:
-  `Sequence`\[[GroupConfigurationParameterTypeDef](./type_defs.md#groupconfigurationparametertypedef)\]
-
-<a id="groupconfigurationparametertypedef"></a>
-
+1. See [:material-code-braces: GroupConfigurationParameterTypeDef](./type_defs.md#groupconfigurationparametertypedef) 
 ## GroupConfigurationParameterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationParameterTypeDef
+
+def get_value() -> GroupConfigurationParameterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-Optional fields:
-
-- `Values`: `Sequence`\[`str`\]
-
-<a id="groupconfigurationtypedef"></a>
+```python title="Definition"
+class GroupConfigurationParameterTypeDef(TypedDict):
+    Name: str,
+    Values: NotRequired[Sequence[str]],
+```
 
 ## GroupConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupConfigurationTypeDef
+
+def get_value() -> GroupConfigurationTypeDef:
+    return {
+        "Configuration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GroupConfigurationTypeDef(TypedDict):
+    Configuration: NotRequired[List[GroupConfigurationItemTypeDef]],  # (1)
+    ProposedConfiguration: NotRequired[List[GroupConfigurationItemTypeDef]],  # (1)
+    Status: NotRequired[GroupConfigurationStatusType],  # (3)
+    FailureReason: NotRequired[str],
+```
 
-- `Configuration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
-- `ProposedConfiguration`:
-  `List`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
-- `Status`:
-  [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
-- `FailureReason`: `str`
-
-<a id="groupfiltertypedef"></a>
-
+1. See [:material-code-braces: GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef) 
+2. See [:material-code-braces: GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef) 
+3. See [:material-code-brackets: GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype) 
 ## GroupFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupFilterTypeDef
+
+def get_value() -> GroupFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupFilterTypeDef(TypedDict):
+    Name: GroupFilterNameType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Name`: [GroupFilterNameType](./literals.md#groupfilternametype)
-- `Values`: `Sequence`\[`str`\]
-
-<a id="groupidentifiertypedef"></a>
-
+1. See [:material-code-brackets: GroupFilterNameType](./literals.md#groupfilternametype) 
 ## GroupIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupIdentifierTypeDef
+
+def get_value() -> GroupIdentifierTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `GroupArn`: `str`
-
-<a id="groupquerytypedef"></a>
+```python title="Definition"
+class GroupIdentifierTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    GroupArn: NotRequired[str],
+```
 
 ## GroupQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupQueryTypeDef
+
+def get_value() -> GroupQueryTypeDef:
+    return {
+        "GroupName": ...,
+        "ResourceQuery": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupQueryTypeDef(TypedDict):
+    GroupName: str,
+    ResourceQuery: ResourceQueryTypeDef,  # (1)
+```
 
-- `GroupName`: `str`
-- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-
-<a id="groupresourcesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
 ## GroupResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupResourcesInputRequestTypeDef
+
+def get_value() -> GroupResourcesInputRequestTypeDef:
+    return {
+        "Group": ...,
+        "ResourceArns": ...,
+    }
 ```
 
-Required fields:
-
-- `Group`: `str`
-- `ResourceArns`: `Sequence`\[`str`\]
-
-<a id="groupresourcesoutputtypedef"></a>
+```python title="Definition"
+class GroupResourcesInputRequestTypeDef(TypedDict):
+    Group: str,
+    ResourceArns: Sequence[str],
+```
 
 ## GroupResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupResourcesOutputTypeDef
+
+def get_value() -> GroupResourcesOutputTypeDef:
+    return {
+        "Succeeded": ...,
+        "Failed": ...,
+        "Pending": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupResourcesOutputTypeDef(TypedDict):
+    Succeeded: List[str],
+    Failed: List[FailedResourceTypeDef],  # (1)
+    Pending: List[PendingResourceTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Succeeded`: `List`\[`str`\]
-- `Failed`:
-  `List`\[[FailedResourceTypeDef](./type_defs.md#failedresourcetypedef)\]
-- `Pending`:
-  `List`\[[PendingResourceTypeDef](./type_defs.md#pendingresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="grouptypedef"></a>
-
+1. See [:material-code-braces: FailedResourceTypeDef](./type_defs.md#failedresourcetypedef) 
+2. See [:material-code-braces: PendingResourceTypeDef](./type_defs.md#pendingresourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import GroupTypeDef
+
+def get_value() -> GroupTypeDef:
+    return {
+        "GroupArn": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GroupTypeDef(TypedDict):
+    GroupArn: str,
+    Name: str,
+    Description: NotRequired[str],
+```
 
-- `GroupArn`: `str`
-- `Name`: `str`
+## ListGroupResourcesInputListGroupResourcesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import ListGroupResourcesInputListGroupResourcesPaginateTypeDef
 
-- `Description`: `str`
+def get_value() -> ListGroupResourcesInputListGroupResourcesPaginateTypeDef:
+    return {
+        "GroupName": ...,
+    }
+```
 
-<a id="listgroupresourcesinputrequesttypedef"></a>
+```python title="Definition"
+class ListGroupResourcesInputListGroupResourcesPaginateTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+    Filters: NotRequired[Sequence[ResourceFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ListGroupResourcesInputRequestTypeDef
+
+def get_value() -> ListGroupResourcesInputRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListGroupResourcesInputRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+    Filters: NotRequired[Sequence[ResourceFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `GroupName`: `str`
-- `Group`: `str`
-- `Filters`:
-  `Sequence`\[[ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listgroupresourcesitemtypedef"></a>
-
+1. See [:material-code-braces: ResourceFilterTypeDef](./type_defs.md#resourcefiltertypedef) 
 ## ListGroupResourcesItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ListGroupResourcesItemTypeDef
+
+def get_value() -> ListGroupResourcesItemTypeDef:
+    return {
+        "Identifier": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListGroupResourcesItemTypeDef(TypedDict):
+    Identifier: NotRequired[ResourceIdentifierTypeDef],  # (1)
+    Status: NotRequired[ResourceStatusTypeDef],  # (2)
+```
 
-- `Identifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-- `Status`: [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
-
-<a id="listgroupresourcesoutputtypedef"></a>
-
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef) 
 ## ListGroupResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ListGroupResourcesOutputTypeDef
+
+def get_value() -> ListGroupResourcesOutputTypeDef:
+    return {
+        "Resources": ...,
+        "ResourceIdentifiers": ...,
+        "NextToken": ...,
+        "QueryErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupResourcesOutputTypeDef(TypedDict):
+    Resources: List[ListGroupResourcesItemTypeDef],  # (1)
+    ResourceIdentifiers: List[ResourceIdentifierTypeDef],  # (2)
+    NextToken: str,
+    QueryErrors: List[QueryErrorTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `Resources`:
-  `List`\[[ListGroupResourcesItemTypeDef](./type_defs.md#listgroupresourcesitemtypedef)\]
-- `ResourceIdentifiers`:
-  `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
-- `NextToken`: `str`
-- `QueryErrors`:
-  `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ListGroupResourcesItemTypeDef](./type_defs.md#listgroupresourcesitemtypedef) 
+2. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+3. See [:material-code-braces: QueryErrorTypeDef](./type_defs.md#queryerrortypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGroupsInputListGroupsPaginateTypeDef
 
-<a id="listgroupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import ListGroupsInputListGroupsPaginateTypeDef
 
+def get_value() -> ListGroupsInputListGroupsPaginateTypeDef:
+    return {
+        "Filters": ...,
+    }
+```
+
+```python title="Definition"
+class ListGroupsInputListGroupsPaginateTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[GroupFilterTypeDef]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-braces: GroupFilterTypeDef](./type_defs.md#groupfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ListGroupsInputRequestTypeDef
+
+def get_value() -> ListGroupsInputRequestTypeDef:
+    return {
+        "Filters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListGroupsInputRequestTypeDef(TypedDict):
+    Filters: NotRequired[Sequence[GroupFilterTypeDef]],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Filters`:
-  `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listgroupsoutputtypedef"></a>
-
+1. See [:material-code-braces: GroupFilterTypeDef](./type_defs.md#groupfiltertypedef) 
 ## ListGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ListGroupsOutputTypeDef
+
+def get_value() -> ListGroupsOutputTypeDef:
+    return {
+        "GroupIdentifiers": ...,
+        "Groups": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGroupsOutputTypeDef(TypedDict):
+    GroupIdentifiers: List[GroupIdentifierTypeDef],  # (1)
+    Groups: List[GroupTypeDef],  # (2)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `GroupIdentifiers`:
-  `List`\[[GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef)\]
-- `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: GroupIdentifierTypeDef](./type_defs.md#groupidentifiertypedef) 
+2. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="pendingresourcetypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PendingResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import PendingResourceTypeDef
+
+def get_value() -> PendingResourceTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-
-<a id="putgroupconfigurationinputrequesttypedef"></a>
+```python title="Definition"
+class PendingResourceTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+```
 
 ## PutGroupConfigurationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import PutGroupConfigurationInputRequestTypeDef
+
+def get_value() -> PutGroupConfigurationInputRequestTypeDef:
+    return {
+        "Group": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutGroupConfigurationInputRequestTypeDef(TypedDict):
+    Group: NotRequired[str],
+    Configuration: NotRequired[Sequence[GroupConfigurationItemTypeDef]],  # (1)
+```
 
-- `Group`: `str`
-- `Configuration`:
-  `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
-
-<a id="queryerrortypedef"></a>
-
+1. See [:material-code-braces: GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef) 
 ## QueryErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import QueryErrorTypeDef
+
+def get_value() -> QueryErrorTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueryErrorTypeDef(TypedDict):
+    ErrorCode: NotRequired[QueryErrorCodeType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `ErrorCode`: [QueryErrorCodeType](./literals.md#queryerrorcodetype)
-- `Message`: `str`
-
-<a id="resourcefiltertypedef"></a>
-
+1. See [:material-code-brackets: QueryErrorCodeType](./literals.md#queryerrorcodetype) 
 ## ResourceFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ResourceFilterTypeDef
+
+def get_value() -> ResourceFilterTypeDef:
+    return {
+        "Name": ...,
+        "Values": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceFilterTypeDef(TypedDict):
+    Name: ResourceFilterNameType,  # (1)
+    Values: Sequence[str],
+```
 
-- `Name`: `Literal['resource-type']` (see
-  [ResourceFilterNameType](./literals.md#resourcefilternametype))
-- `Values`: `Sequence`\[`str`\]
-
-<a id="resourceidentifiertypedef"></a>
-
+1. See [:material-code-brackets: ResourceFilterNameType](./literals.md#resourcefilternametype) 
 ## ResourceIdentifierTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ResourceIdentifierTypeDef
+
+def get_value() -> ResourceIdentifierTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ResourceArn`: `str`
-- `ResourceType`: `str`
-
-<a id="resourcequerytypedef"></a>
+```python title="Definition"
+class ResourceIdentifierTypeDef(TypedDict):
+    ResourceArn: NotRequired[str],
+    ResourceType: NotRequired[str],
+```
 
 ## ResourceQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ResourceQueryTypeDef
+
+def get_value() -> ResourceQueryTypeDef:
+    return {
+        "Type": ...,
+        "Query": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceQueryTypeDef(TypedDict):
+    Type: QueryTypeType,  # (1)
+    Query: str,
+```
 
-- `Type`: [QueryTypeType](./literals.md#querytypetype)
-- `Query`: `str`
-
-<a id="resourcestatustypedef"></a>
-
+1. See [:material-code-brackets: QueryTypeType](./literals.md#querytypetype) 
 ## ResourceStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ResourceStatusTypeDef
+
+def get_value() -> ResourceStatusTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResourceStatusTypeDef(TypedDict):
+    Name: NotRequired[ResourceStatusValueType],  # (1)
+```
 
-- `Name`: `Literal['PENDING']` (see
-  [ResourceStatusValueType](./literals.md#resourcestatusvaluetype))
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceStatusValueType](./literals.md#resourcestatusvaluetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="searchresourcesinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SearchResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import SearchResourcesInputRequestTypeDef
+
+def get_value() -> SearchResourcesInputRequestTypeDef:
+    return {
+        "ResourceQuery": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchResourcesInputRequestTypeDef(TypedDict):
+    ResourceQuery: ResourceQueryTypeDef,  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
+1. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
+## SearchResourcesInputSearchResourcesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_resource_groups.type_defs import SearchResourcesInputSearchResourcesPaginateTypeDef
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+def get_value() -> SearchResourcesInputSearchResourcesPaginateTypeDef:
+    return {
+        "ResourceQuery": ...,
+    }
+```
 
-<a id="searchresourcesoutputtypedef"></a>
+```python title="Definition"
+class SearchResourcesInputSearchResourcesPaginateTypeDef(TypedDict):
+    ResourceQuery: ResourceQueryTypeDef,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
 
+1. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import SearchResourcesOutputTypeDef
+
+def get_value() -> SearchResourcesOutputTypeDef:
+    return {
+        "ResourceIdentifiers": ...,
+        "NextToken": ...,
+        "QueryErrors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchResourcesOutputTypeDef(TypedDict):
+    ResourceIdentifiers: List[ResourceIdentifierTypeDef],  # (1)
+    NextToken: str,
+    QueryErrors: List[QueryErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ResourceIdentifiers`:
-  `List`\[[ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)\]
-- `NextToken`: `str`
-- `QueryErrors`:
-  `List`\[[QueryErrorTypeDef](./type_defs.md#queryerrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="taginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: QueryErrorTypeDef](./type_defs.md#queryerrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import TagInputRequestTypeDef
+
+def get_value() -> TagInputRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tagoutputtypedef"></a>
+```python title="Definition"
+class TagInputRequestTypeDef(TypedDict):
+    Arn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TagOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import TagOutputTypeDef
+
+def get_value() -> TagOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagOutputTypeDef(TypedDict):
+    Arn: str,
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ungroupresourcesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UngroupResourcesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UngroupResourcesInputRequestTypeDef
+
+def get_value() -> UngroupResourcesInputRequestTypeDef:
+    return {
+        "Group": ...,
+        "ResourceArns": ...,
+    }
 ```
 
-Required fields:
-
-- `Group`: `str`
-- `ResourceArns`: `Sequence`\[`str`\]
-
-<a id="ungroupresourcesoutputtypedef"></a>
+```python title="Definition"
+class UngroupResourcesInputRequestTypeDef(TypedDict):
+    Group: str,
+    ResourceArns: Sequence[str],
+```
 
 ## UngroupResourcesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UngroupResourcesOutputTypeDef
+
+def get_value() -> UngroupResourcesOutputTypeDef:
+    return {
+        "Succeeded": ...,
+        "Failed": ...,
+        "Pending": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UngroupResourcesOutputTypeDef(TypedDict):
+    Succeeded: List[str],
+    Failed: List[FailedResourceTypeDef],  # (1)
+    Pending: List[PendingResourceTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Succeeded`: `List`\[`str`\]
-- `Failed`:
-  `List`\[[FailedResourceTypeDef](./type_defs.md#failedresourcetypedef)\]
-- `Pending`:
-  `List`\[[PendingResourceTypeDef](./type_defs.md#pendingresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="untaginputrequesttypedef"></a>
-
+1. See [:material-code-braces: FailedResourceTypeDef](./type_defs.md#failedresourcetypedef) 
+2. See [:material-code-braces: PendingResourceTypeDef](./type_defs.md#pendingresourcetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UntagInputRequestTypeDef
+
+def get_value() -> UntagInputRequestTypeDef:
+    return {
+        "Arn": ...,
+        "Keys": ...,
+    }
 ```
 
-Required fields:
-
-- `Arn`: `str`
-- `Keys`: `Sequence`\[`str`\]
-
-<a id="untagoutputtypedef"></a>
+```python title="Definition"
+class UntagInputRequestTypeDef(TypedDict):
+    Arn: str,
+    Keys: Sequence[str],
+```
 
 ## UntagOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UntagOutputTypeDef
+
+def get_value() -> UntagOutputTypeDef:
+    return {
+        "Arn": ...,
+        "Keys": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UntagOutputTypeDef(TypedDict):
+    Arn: str,
+    Keys: List[str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Arn`: `str`
-- `Keys`: `List`\[`str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UpdateGroupInputRequestTypeDef
+
+def get_value() -> UpdateGroupInputRequestTypeDef:
+    return {
+        "GroupName": ...,
+    }
 ```
 
-Optional fields:
-
-- `GroupName`: `str`
-- `Group`: `str`
-- `Description`: `str`
-
-<a id="updategroupoutputtypedef"></a>
+```python title="Definition"
+class UpdateGroupInputRequestTypeDef(TypedDict):
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UpdateGroupOutputTypeDef
+
+def get_value() -> UpdateGroupOutputTypeDef:
+    return {
+        "Group": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGroupOutputTypeDef(TypedDict):
+    Group: GroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updategroupqueryinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GroupTypeDef](./type_defs.md#grouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGroupQueryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryInputRequestTypeDef
+
+def get_value() -> UpdateGroupQueryInputRequestTypeDef:
+    return {
+        "ResourceQuery": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGroupQueryInputRequestTypeDef(TypedDict):
+    ResourceQuery: ResourceQueryTypeDef,  # (1)
+    GroupName: NotRequired[str],
+    Group: NotRequired[str],
+```
 
-- `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
-
-Optional fields:
-
-- `GroupName`: `str`
-- `Group`: `str`
-
-<a id="updategroupqueryoutputtypedef"></a>
-
+1. See [:material-code-braces: ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef) 
 ## UpdateGroupQueryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resource_groups.type_defs import UpdateGroupQueryOutputTypeDef
+
+def get_value() -> UpdateGroupQueryOutputTypeDef:
+    return {
+        "GroupQuery": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGroupQueryOutputTypeDef(TypedDict):
+    GroupQuery: GroupQueryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GroupQuery`: [GroupQueryTypeDef](./type_defs.md#groupquerytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GroupQueryTypeDef](./type_defs.md#groupquerytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

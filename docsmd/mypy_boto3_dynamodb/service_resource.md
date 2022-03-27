@@ -1,633 +1,692 @@
-<a id="dynamodbserviceresource-for-boto3-dynamodb-module"></a>
-
-# DynamoDBServiceResource for boto3 DynamoDB module
+# DynamoDBServiceResource
 
 > [Index](../README.md) > [DynamoDB](./README.md) > DynamoDBServiceResource
 
-Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module
-[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+!!! note ""
 
-- [DynamoDBServiceResource for boto3 DynamoDB module](#dynamodbserviceresource-for-boto3-dynamodb-module)
-  - [DynamoDBServiceResource](#dynamodbserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceTablesCollection](#serviceresourcetablescollection)
-  - [Methods](#methods)
-    - [DynamoDBServiceResource.Table method](#dynamodbserviceresourcetable-method)
-    - [DynamoDBServiceResource.batch_get_item method](#dynamodbserviceresourcebatch_get_item-method)
-    - [DynamoDBServiceResource.batch_write_item method](#dynamodbserviceresourcebatch_write_item-method)
-    - [DynamoDBServiceResource.create_table method](#dynamodbserviceresourcecreate_table-method)
-    - [DynamoDBServiceResource.get_available_subresources method](#dynamodbserviceresourceget_available_subresources-method)
-  - [Table](#table)
-    - [Table attributes](#table-attributes)
-    - [Table methods](#table-methods)
-
-<a id="dynamodbserviceresource"></a>
+    Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+    type annotations stubs module [mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 ## DynamoDBServiceResource
 
-Type annotations for `boto3.resource("dynamodb")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("dynamodb")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_dynamodb.service_resource import DynamoDBServiceResource
 
 def get_dynamodb_resource() -> DynamoDBServiceResource:
     return boto3.resource("dynamodb")
 ```
 
-Boto3 documentation:
-[DynamoDB.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
+
 
 - `meta`: [DynamoDBResourceMeta](#dynamodbresourcemeta)
 
 - `tables`: [ServiceResourceTablesCollection](#serviceresourcetablescollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcetablescollection"></a>
-
 ### ServiceResourceTablesCollection
 
-Type annotations for `boto3.resource("dynamodb").tables` collection.
+Provides access to [Table](#table) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("dynamodb").tables` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
 
-```python
-from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection,
+```python title="Usage example"
+from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection
 
 def get_collection() -> ServiceResourceTablesCollection:
     return boto3.resource("dynamodb").tables
 ```
 
-Provides access to [Table](#table) resource.
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.tables)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="dynamodbserviceresourcetable-method"></a>
 
 ### DynamoDBServiceResource.Table method
 
 Creates a Table resource.
 
-Type annotations for `boto3.resource("dynamodb").Table` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").Table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.Table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
+```python title="Method definition"
+def Table(
+    self,
+    name: str,
+) -> Table:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceTableRequestTypeDef](./type_defs.md#serviceresourcetablerequesttypedef).
 
-Arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceTableRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [Table](#table).
+parent.Table(**kwargs)
+```
 
-<a id="dynamodbserviceresourcebatch\_get\_item-method"></a>
+1. See [:material-code-braces: ServiceResourceTableRequestTypeDef](./type_defs.md#serviceresourcetablerequesttypedef) 
 
-### DynamoDBServiceResource.batch_get_item method
+### DynamoDBServiceResource.batch\_get\_item method
 
 The `BatchGetItem` operation returns the attributes of one or more items from
 one or more tables.
 
-Type annotations for `boto3.resource("dynamodb").batch_get_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").batch_get_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.batch_get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_get_item)
+```python title="Method definition"
+def batch_get_item(
+    self,
+    *,
+    RequestItems: Mapping[str, KeysAndAttributesTypeDef],  # (1)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
+) -> BatchGetItemOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[BatchGetItemInputServiceResourceBatchGetItemTypeDef](./type_defs.md#batchgetiteminputserviceresourcebatchgetitemtypedef).
+1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-braces: BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RequestItems`: `Mapping`\[`str`,
-  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
-  *(required)*
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+```python title="Usage example with kwargs"
+kwargs: BatchGetItemInputServiceResourceBatchGetItemTypeDef = {  # (1)
+    "RequestItems": ...,
+}
 
-Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
+parent.batch_get_item(**kwargs)
+```
 
-<a id="dynamodbserviceresourcebatch\_write\_item-method"></a>
+1. See [:material-code-braces: BatchGetItemInputServiceResourceBatchGetItemTypeDef](./type_defs.md#batchgetiteminputserviceresourcebatchgetitemtypedef) 
 
-### DynamoDBServiceResource.batch_write_item method
+### DynamoDBServiceResource.batch\_write\_item method
 
 The `BatchWriteItem` operation puts or deletes multiple items in one or more
 tables.
 
-Type annotations for `boto3.resource("dynamodb").batch_write_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").batch_write_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.batch_write_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.batch_write_item)
+```python title="Method definition"
+def batch_write_item(
+    self,
+    *,
+    RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (2)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (3)
+) -> BatchWriteItemOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[BatchWriteItemInputServiceResourceBatchWriteItemTypeDef](./type_defs.md#batchwriteiteminputserviceresourcebatchwriteitemtypedef).
+1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+4. See [:material-code-braces: BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `RequestItems`: `Mapping`\[`str`,
-  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
-  *(required)*
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
+```python title="Usage example with kwargs"
+kwargs: BatchWriteItemInputServiceResourceBatchWriteItemTypeDef = {  # (1)
+    "RequestItems": ...,
+}
 
-Returns
-[BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
+parent.batch_write_item(**kwargs)
+```
 
-<a id="dynamodbserviceresourcecreate\_table-method"></a>
+1. See [:material-code-braces: BatchWriteItemInputServiceResourceBatchWriteItemTypeDef](./type_defs.md#batchwriteiteminputserviceresourcebatchwriteitemtypedef) 
 
-### DynamoDBServiceResource.create_table method
+### DynamoDBServiceResource.create\_table method
 
 The `CreateTable` operation adds a new table to your account.
 
-Type annotations for `boto3.resource("dynamodb").create_table` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").create_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.create_table)
+```python title="Method definition"
+def create_table(
+    self,
+    *,
+    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef],  # (1)
+    TableName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (2)
+    LocalSecondaryIndexes: Sequence[LocalSecondaryIndexTypeDef] = ...,  # (3)
+    GlobalSecondaryIndexes: Sequence[GlobalSecondaryIndexTypeDef] = ...,  # (4)
+    BillingMode: BillingModeType = ...,  # (5)
+    ProvisionedThroughput: ProvisionedThroughputTypeDef = ...,  # (6)
+    StreamSpecification: StreamSpecificationTypeDef = ...,  # (7)
+    SSESpecification: SSESpecificationTypeDef = ...,  # (8)
+    Tags: Sequence[TagTypeDef] = ...,  # (9)
+    TableClass: TableClassType = ...,  # (10)
+) -> Table:
+    ...
+```
 
-Arguments mapping described in
-[CreateTableInputServiceResourceCreateTableTypeDef](./type_defs.md#createtableinputserviceresourcecreatetabletypedef).
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+6. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+7. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 
-Keyword-only arguments:
 
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-  *(required)*
-- `TableName`: `str` *(required)*
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-  *(required)*
-- `LocalSecondaryIndexes`:
-  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
-- `GlobalSecondaryIndexes`:
-  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
+```python title="Usage example with kwargs"
+kwargs: CreateTableInputServiceResourceCreateTableTypeDef = {  # (1)
+    "AttributeDefinitions": ...,
+    "TableName": ...,
+    "KeySchema": ...,
+}
 
-Returns [Table](#table).
+parent.create_table(**kwargs)
+```
 
-<a id="dynamodbserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateTableInputServiceResourceCreateTableTypeDef](./type_defs.md#createtableinputserviceresourcecreatetabletypedef) 
 
-### DynamoDBServiceResource.get_available_subresources method
+### DynamoDBServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("dynamodb").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[DynamoDB.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="table"></a>
+
 
 ## Table
 
-Type annotations for `boto3.resource("dynamodb").Table` class.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").Table` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_dynamodb.service_resource import Table
 
 def get_resource() -> Table:
     return boto3.resource("dynamodb").Table(...)
 ```
 
-Boto3 documentation:
-[DynamoDB.Table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource.Table)
-
-<a id="table-attributes"></a>
 
 ### Table attributes
 
-- `attribute_definitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
+
+- `attribute_definitions`: `List`[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)]
 - `table_name`: `str`
-- `key_schema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
+- `key_schema`: `List`[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)]
 - `table_status`: [TableStatusType](./literals.md#tablestatustype)
 - `creation_date_time`: `datetime`
-- `provisioned_throughput`:
-  [ProvisionedThroughputDescriptionResponseMetadataTypeDef](./type_defs.md#provisionedthroughputdescriptionresponsemetadatatypedef)
+- `provisioned_throughput`: [ProvisionedThroughputDescriptionResponseMetadataTypeDef](./type_defs.md#provisionedthroughputdescriptionresponsemetadatatypedef)
 - `table_size_bytes`: `int`
 - `item_count`: `int`
 - `table_arn`: `str`
 - `table_id`: `str`
-- `billing_mode_summary`:
-  [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
-- `local_secondary_indexes`:
-  `List`\[[LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)\]
-- `global_secondary_indexes`:
-  `List`\[[GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef)\]
-- `stream_specification`:
-  [StreamSpecificationResponseMetadataTypeDef](./type_defs.md#streamspecificationresponsemetadatatypedef)
+- `billing_mode_summary`: [BillingModeSummaryResponseMetadataTypeDef](./type_defs.md#billingmodesummaryresponsemetadatatypedef)
+- `local_secondary_indexes`: `List`[[LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)]
+- `global_secondary_indexes`: `List`[[GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef)]
+- `stream_specification`: [StreamSpecificationResponseMetadataTypeDef](./type_defs.md#streamspecificationresponsemetadatatypedef)
 - `latest_stream_label`: `str`
 - `latest_stream_arn`: `str`
 - `global_table_version`: `str`
-- `replicas`:
-  `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
-- `restore_summary`:
-  [RestoreSummaryResponseMetadataTypeDef](./type_defs.md#restoresummaryresponsemetadatatypedef)
-- `sse_description`:
-  [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
-- `archival_summary`:
-  [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
-- `table_class_summary`:
-  [TableClassSummaryResponseMetadataTypeDef](./type_defs.md#tableclasssummaryresponsemetadatatypedef)
+- `replicas`: `List`[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)]
+- `restore_summary`: [RestoreSummaryResponseMetadataTypeDef](./type_defs.md#restoresummaryresponsemetadatatypedef)
+- `sse_description`: [SSEDescriptionResponseMetadataTypeDef](./type_defs.md#ssedescriptionresponsemetadatatypedef)
+- `archival_summary`: [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
+- `table_class_summary`: [TableClassSummaryResponseMetadataTypeDef](./type_defs.md#tableclasssummaryresponsemetadatatypedef)
 - `name`: `str`
 
-<a id="table-methods"></a>
+
+
+
 
 ### Table methods
 
-<a id="tablebatch\_writer-method"></a>
 
-#### Table.batch_writer method
+#### Table.batch\_writer method
 
 Create a batch writer object.
 
-Type annotations for `boto3.resource("dynamodb").batch_writer` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").batch_writer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
 
-Boto3 documentation:
-[DynamoDB.Table.batch_writer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.batch_writer)
+```python title="Method definition"
+def batch_writer(
+    self,
+    overwrite_by_pkeys: List[str] = ...,
+) -> BatchWriter:
+    ...
+```
 
-Arguments mapping described in
-[TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef).
 
-Arguments:
 
-- `overwrite_by_pkeys`: `List`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: TableBatchWriterRequestTypeDef = {  # (1)
+    "overwrite_by_pkeys": ...,
+}
 
-Returns `BatchWriter`.
+parent.batch_writer(**kwargs)
+```
 
-<a id="tabledelete-method"></a>
+1. See [:material-code-braces: TableBatchWriterRequestTypeDef](./type_defs.md#tablebatchwriterrequesttypedef) 
 
 #### Table.delete method
 
 The `DeleteTable` operation deletes a table and all of its items.
 
-Type annotations for `boto3.resource("dynamodb").delete` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
 
-Boto3 documentation:
-[DynamoDB.Table.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> DeleteTableOutputTypeDef:  # (1)
+    ...
+```
 
-Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
+1. See [:material-code-braces: DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef) 
 
-<a id="tabledelete\_item-method"></a>
-
-#### Table.delete_item method
+#### Table.delete\_item method
 
 Deletes a single item in a table by primary key.
 
-Type annotations for `boto3.resource("dynamodb").delete_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").delete_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
 
-Boto3 documentation:
-[DynamoDB.Table.delete_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.delete_item)
+```python title="Method definition"
+def delete_item(
+    self,
+    *,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (2)
+    ReturnValues: ReturnValueType = ...,  # (3)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (5)
+    ConditionExpression: str = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+) -> DeleteItemOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[DeleteItemInputTableDeleteItemTypeDef](./type_defs.md#deleteiteminputtabledeleteitemtypedef).
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+6. See [:material-code-braces: DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
+```python title="Usage example with kwargs"
+kwargs: DeleteItemInputTableDeleteItemTypeDef = {  # (1)
+    "Key": ...,
+}
 
-Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
+parent.delete_item(**kwargs)
+```
 
-<a id="tableget\_available\_subresources-method"></a>
+1. See [:material-code-braces: DeleteItemInputTableDeleteItemTypeDef](./type_defs.md#deleteiteminputtabledeleteitemtypedef) 
 
-#### Table.get_available_subresources method
+#### Table.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("dynamodb").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
 
-Boto3 documentation:
-[DynamoDB.Table.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="tableget\_item-method"></a>
-
-#### Table.get_item method
+#### Table.get\_item method
 
 The `GetItem` operation returns a set of attributes for the item with the given
 primary key.
 
-Type annotations for `boto3.resource("dynamodb").get_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").get_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_item)
 
-Boto3 documentation:
-[DynamoDB.Table.get_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.get_item)
+```python title="Method definition"
+def get_item(
+    self,
+    *,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributesToGet: Sequence[str] = ...,
+    ConsistentRead: bool = ...,
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (1)
+    ProjectionExpression: str = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+) -> GetItemOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetItemInputTableGetItemTypeDef](./type_defs.md#getiteminputtablegetitemtypedef).
+1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+2. See [:material-code-braces: GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetItemInputTableGetItemTypeDef = {  # (1)
+    "Key": ...,
+}
 
-Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
+parent.get_item(**kwargs)
+```
 
-<a id="tableload-method"></a>
+1. See [:material-code-braces: GetItemInputTableGetItemTypeDef](./type_defs.md#getiteminputtablegetitemtypedef) 
 
 #### Table.load method
 
 Calls :py:meth:`DynamoDB.Client.describe_table` to update the attributes of the
 Table resource.
 
-Type annotations for `boto3.resource("dynamodb").load` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.load)
 
-Boto3 documentation:
-[DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="tableput\_item-method"></a>
 
-#### Table.put_item method
+#### Table.put\_item method
 
 Creates a new item, or replaces an old item with a new item.
 
-Type annotations for `boto3.resource("dynamodb").put_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").put_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.put_item)
 
-Boto3 documentation:
-[DynamoDB.Table.put_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.put_item)
+```python title="Method definition"
+def put_item(
+    self,
+    *,
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (1)
+    ReturnValues: ReturnValueType = ...,  # (2)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (3)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (4)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (5)
+    ConditionExpression: str = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+) -> PutItemOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[PutItemInputTablePutItemTypeDef](./type_defs.md#putiteminputtableputitemtypedef).
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+6. See [:material-code-braces: PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
+```python title="Usage example with kwargs"
+kwargs: PutItemInputTablePutItemTypeDef = {  # (1)
+    "Item": ...,
+}
 
-Returns [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef).
+parent.put_item(**kwargs)
+```
 
-<a id="tablequery-method"></a>
+1. See [:material-code-braces: PutItemInputTablePutItemTypeDef](./type_defs.md#putiteminputtableputitemtypedef) 
 
 #### Table.query method
 
 You must provide the name of the partition key attribute and a single value for
 that attribute.
 
-Type annotations for `boto3.resource("dynamodb").query` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").query` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.query)
 
-Boto3 documentation:
-[DynamoDB.Table.query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.query)
+```python title="Method definition"
+def query(
+    self,
+    *,
+    IndexName: str = ...,
+    Select: SelectType = ...,  # (1)
+    AttributesToGet: Sequence[str] = ...,
+    Limit: int = ...,
+    ConsistentRead: bool = ...,
+    KeyConditions: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    QueryFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (4)
+    ScanIndexForward: bool = ...,
+    ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
+    ProjectionExpression: str = ...,
+    FilterExpression: Union[str, ConditionBase] = ...,
+    KeyConditionExpression: Union[str, ConditionBase] = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+) -> QueryOutputTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[QueryInputTableQueryTypeDef](./type_defs.md#queryinputtablequerytypedef).
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-braces: QueryOutputTypeDef](./type_defs.md#queryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IndexName`: `str`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `ConsistentRead`: `bool`
-- `KeyConditions`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
+```python title="Usage example with kwargs"
+kwargs: QueryInputTableQueryTypeDef = {  # (1)
+    "IndexName": ...,
+}
 
-Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
+parent.query(**kwargs)
+```
 
-<a id="tablereload-method"></a>
+1. See [:material-code-braces: QueryInputTableQueryTypeDef](./type_defs.md#queryinputtablequerytypedef) 
 
 #### Table.reload method
 
 Calls :py:meth:`DynamoDB.Client.describe_table` to update the attributes of the
 Table resource.
 
-Type annotations for `boto3.resource("dynamodb").reload` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.reload)
 
-Boto3 documentation:
-[DynamoDB.Table.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="tablescan-method"></a>
 
 #### Table.scan method
 
 The `Scan` operation returns one or more items and item attributes by accessing
 every item in a table or a secondary index.
 
-Type annotations for `boto3.resource("dynamodb").scan` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").scan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.scan)
 
-Boto3 documentation:
-[DynamoDB.Table.scan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.scan)
+```python title="Method definition"
+def scan(
+    self,
+    *,
+    IndexName: str = ...,
+    AttributesToGet: Sequence[str] = ...,
+    Limit: int = ...,
+    Select: SelectType = ...,  # (1)
+    ScanFilter: Mapping[str, ConditionTypeDef] = ...,  # (2)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (3)
+    ExclusiveStartKey: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (4)
+    TotalSegments: int = ...,
+    Segment: int = ...,
+    ProjectionExpression: str = ...,
+    FilterExpression: Union[str, ConditionBase] = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+    ConsistentRead: bool = ...,
+) -> ScanOutputTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[ScanInputTableScanTypeDef](./type_defs.md#scaninputtablescantypedef).
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-braces: ScanOutputTypeDef](./type_defs.md#scanoutputtypedef) 
 
-Keyword-only arguments:
 
-- `IndexName`: `str`
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `TotalSegments`: `int`
-- `Segment`: `int`
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsistentRead`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ScanInputTableScanTypeDef = {  # (1)
+    "IndexName": ...,
+}
 
-Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
+parent.scan(**kwargs)
+```
 
-<a id="tableupdate-method"></a>
+1. See [:material-code-braces: ScanInputTableScanTypeDef](./type_defs.md#scaninputtablescantypedef) 
 
 #### Table.update method
 
 Modifies the provisioned throughput settings, global secondary indexes, or
 DynamoDB Streams settings for a given table.
 
-Type annotations for `boto3.resource("dynamodb").update` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update)
 
-Boto3 documentation:
-[DynamoDB.Table.update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update)
+```python title="Method definition"
+def update(
+    self,
+    *,
+    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef] = ...,  # (1)
+    BillingMode: BillingModeType = ...,  # (2)
+    ProvisionedThroughput: ProvisionedThroughputTypeDef = ...,  # (3)
+    GlobalSecondaryIndexUpdates: Sequence[GlobalSecondaryIndexUpdateTypeDef] = ...,  # (4)
+    StreamSpecification: StreamSpecificationTypeDef = ...,  # (5)
+    SSESpecification: SSESpecificationTypeDef = ...,  # (6)
+    ReplicaUpdates: Sequence[ReplicationGroupUpdateTypeDef] = ...,  # (7)
+    TableClass: TableClassType = ...,  # (8)
+) -> Table:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTableInputTableUpdateTypeDef](./type_defs.md#updatetableinputtableupdatetypedef).
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef) 
+5. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+6. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+7. See [:material-code-braces: ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef) 
+8. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 
-Keyword-only arguments:
 
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `GlobalSecondaryIndexUpdates`:
-  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `ReplicaUpdates`:
-  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
+```python title="Usage example with kwargs"
+kwargs: UpdateTableInputTableUpdateTypeDef = {  # (1)
+    "AttributeDefinitions": ...,
+}
 
-Returns [Table](#table).
+parent.update(**kwargs)
+```
 
-<a id="tableupdate\_item-method"></a>
+1. See [:material-code-braces: UpdateTableInputTableUpdateTypeDef](./type_defs.md#updatetableinputtableupdatetypedef) 
 
-#### Table.update_item method
+#### Table.update\_item method
 
 Edits an existing item's attributes, or adds a new item to the table if it does
 not already exist.
 
-Type annotations for `boto3.resource("dynamodb").update_item` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").update_item` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
 
-Boto3 documentation:
-[DynamoDB.Table.update_item](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.update_item)
+```python title="Method definition"
+def update_item(
+    self,
+    *,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributeUpdates: Mapping[str, AttributeValueUpdateTypeDef] = ...,  # (1)
+    Expected: Mapping[str, ExpectedAttributeValueTypeDef] = ...,  # (2)
+    ConditionalOperator: ConditionalOperatorType = ...,  # (3)
+    ReturnValues: ReturnValueType = ...,  # (4)
+    ReturnConsumedCapacity: ReturnConsumedCapacityType = ...,  # (5)
+    ReturnItemCollectionMetrics: ReturnItemCollectionMetricsType = ...,  # (6)
+    UpdateExpression: str = ...,
+    ConditionExpression: str = ...,
+    ExpressionAttributeNames: Mapping[str, str] = ...,
+    ExpressionAttributeValues: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]] = ...,
+) -> UpdateItemOutputTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[UpdateItemInputTableUpdateItemTypeDef](./type_defs.md#updateiteminputtableupdateitemtypedef).
+1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+7. See [:material-code-braces: UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\] *(required)*
-- `AttributeUpdates`: `Mapping`\[`str`,
-  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `UpdateExpression`: `str`
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
+```python title="Usage example with kwargs"
+kwargs: UpdateItemInputTableUpdateItemTypeDef = {  # (1)
+    "Key": ...,
+}
 
-Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
+parent.update_item(**kwargs)
+```
 
-<a id="tablewait\_until\_exists-method"></a>
+1. See [:material-code-braces: UpdateItemInputTableUpdateItemTypeDef](./type_defs.md#updateiteminputtableupdateitemtypedef) 
 
-#### Table.wait_until_exists method
+#### Table.wait\_until\_exists method
 
 Waits until this Table is exists.
 
-Type annotations for `boto3.resource("dynamodb").wait_until_exists` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").wait_until_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
 
-Boto3 documentation:
-[DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
+```python title="Method definition"
+def wait_until_exists(
+    self,
+) -> None:
+    ...
+```
 
-<a id="tablewait\_until\_not\_exists-method"></a>
 
-#### Table.wait_until_not_exists method
+#### Table.wait\_until\_not\_exists method
 
 Waits until this Table is not exists.
 
-Type annotations for `boto3.resource("dynamodb").wait_until_not_exists` method.
+Type annotations and code completion for `#!python boto3.resource("dynamodb").wait_until_not_exists` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)
 
-Boto3 documentation:
-[DynamoDB.Table.wait_until_not_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_not_exists)
+```python title="Method definition"
+def wait_until_not_exists(
+    self,
+) -> None:
+    ...
+```
+
+
+
+

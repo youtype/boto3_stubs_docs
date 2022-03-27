@@ -1,40 +1,18 @@
-<a id="recyclebinclient-for-boto3-recyclebin-module"></a>
-
-# RecycleBinClient for boto3 RecycleBin module
+# RecycleBinClient
 
 > [Index](../README.md) > [RecycleBin](./README.md) > RecycleBinClient
 
-Auto-generated documentation for
-[RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
-type annotations stubs module
-[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
+!!! note ""
 
-- [RecycleBinClient for boto3 RecycleBin module](#recyclebinclient-for-boto3-recyclebin-module)
-  - [RecycleBinClient](#recyclebinclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_rule](#create_rule)
-    - [delete_rule](#delete_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_rule](#get_rule)
-    - [list_rules](#list_rules)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_rule](#update_rule)
-    - [get_paginator](#get_paginator)
-
-<a id="recyclebinclient"></a>
+    Auto-generated documentation for [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
+    type annotations stubs module [mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 ## RecycleBinClient
 
-Type annotations for `boto3.client("rbin")`
+Type annotations and code completion for `#!python boto3.client("rbin")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_rbin.client import RecycleBinClient
 
@@ -42,272 +20,335 @@ def get_rbin_client() -> RecycleBinClient:
     return Session().client("rbin")
 ```
 
-Boto3 documentation:
-[RecycleBin.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("rbin").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("rbin")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_rbin.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-RecycleBinClient exceptions.
-
-Type annotations for `boto3.client("rbin").exceptions` method.
-
-Boto3 documentation:
-[RecycleBin.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("rbin").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("rbin").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.can_paginate)
 
-Boto3 documentation:
-[RecycleBin.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_rule"></a>
-
-### create_rule
+### create\_rule
 
 Creates a Recycle Bin retention rule.
 
-Type annotations for `boto3.client("rbin").create_rule` method.
+Type annotations and code completion for `#!python boto3.client("rbin").create_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.create_rule)
 
-Boto3 documentation:
-[RecycleBin.Client.create_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.create_rule)
+```python title="Method definition"
+def create_rule(
+    self,
+    *,
+    RetentionPeriod: RetentionPeriodTypeDef,  # (1)
+    ResourceType: ResourceTypeType,  # (2)
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (3)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (4)
+) -> CreateRuleResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef).
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+5. See [:material-code-braces: CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) *(required)*
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRuleRequestRequestTypeDef = {  # (1)
+    "RetentionPeriod": ...,
+    "ResourceType": ...,
+}
 
-Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
+parent.create_rule(**kwargs)
+```
 
-<a id="delete\_rule"></a>
+1. See [:material-code-braces: CreateRuleRequestRequestTypeDef](./type_defs.md#createrulerequestrequesttypedef) 
 
-### delete_rule
+### delete\_rule
 
 Deletes a Recycle Bin retention rule.
 
-Type annotations for `boto3.client("rbin").delete_rule` method.
+Type annotations and code completion for `#!python boto3.client("rbin").delete_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.delete_rule)
 
-Boto3 documentation:
-[RecycleBin.Client.delete_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.delete_rule)
+```python title="Method definition"
+def delete_rule(
+    self,
+    *,
+    Identifier: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRuleRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_rule(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteRuleRequestRequestTypeDef](./type_defs.md#deleterulerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("rbin").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("rbin").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.generate_presigned_url)
 
-Boto3 documentation:
-[RecycleBin.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_rule"></a>
-
-### get_rule
+### get\_rule
 
 Gets information about a Recycle Bin retention rule.
 
-Type annotations for `boto3.client("rbin").get_rule` method.
+Type annotations and code completion for `#!python boto3.client("rbin").get_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.get_rule)
 
-Boto3 documentation:
-[RecycleBin.Client.get_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.get_rule)
+```python title="Method definition"
+def get_rule(
+    self,
+    *,
+    Identifier: str,
+) -> GetRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef).
+1. See [:material-code-braces: GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Identifier`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRuleRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
 
-Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
+parent.get_rule(**kwargs)
+```
 
-<a id="list\_rules"></a>
+1. See [:material-code-braces: GetRuleRequestRequestTypeDef](./type_defs.md#getrulerequestrequesttypedef) 
 
-### list_rules
+### list\_rules
 
 Lists the Recycle Bin retention rules in the Region.
 
-Type annotations for `boto3.client("rbin").list_rules` method.
+Type annotations and code completion for `#!python boto3.client("rbin").list_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.list_rules)
 
-Boto3 documentation:
-[RecycleBin.Client.list_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.list_rules)
+```python title="Method definition"
+def list_rules(
+    self,
+    *,
+    ResourceType: ResourceTypeType,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (2)
+) -> ListRulesResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef).
+1. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+2. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+3. See [:material-code-braces: ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-  *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListRulesRequestRequestTypeDef = {  # (1)
+    "ResourceType": ...,
+}
 
-Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
+parent.list_rules(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRulesRequestRequestTypeDef](./type_defs.md#listrulesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags assigned to a retention rule.
 
-Type annotations for `boto3.client("rbin").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("rbin").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[RecycleBin.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns tags to the specified retention rule.
 
-Type annotations for `boto3.client("rbin").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rbin").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.tag_resource)
 
-Boto3 documentation:
-[RecycleBin.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Unassigns a tag from a retention rule.
 
-Type annotations for `boto3.client("rbin").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rbin").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.untag_resource)
 
-Boto3 documentation:
-[RecycleBin.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_rule"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_rule
+### update\_rule
 
 Updates an existing Recycle Bin retention rule.
 
-Type annotations for `boto3.client("rbin").update_rule` method.
+Type annotations and code completion for `#!python boto3.client("rbin").update_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.update_rule)
 
-Boto3 documentation:
-[RecycleBin.Client.update_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin.Client.update_rule)
+```python title="Method definition"
+def update_rule(
+    self,
+    *,
+    Identifier: str,
+    RetentionPeriod: RetentionPeriodTypeDef = ...,  # (1)
+    Description: str = ...,
+    ResourceType: ResourceTypeType = ...,  # (2)
+    ResourceTags: Sequence[ResourceTagTypeDef] = ...,  # (3)
+) -> UpdateRuleResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef).
+1. See [:material-code-braces: RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) 
+2. See [:material-code-brackets: ResourceTypeType](./literals.md#resourcetypetype) 
+3. See [:material-code-braces: ResourceTagTypeDef](./type_defs.md#resourcetagtypedef) 
+4. See [:material-code-braces: UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Identifier`: `str` *(required)*
-- `RetentionPeriod`:
-  [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
-- `Description`: `str`
-- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
-- `ResourceTags`:
-  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRuleRequestRequestTypeDef = {  # (1)
+    "Identifier": ...,
+}
 
-Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
+parent.update_rule(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateRuleRequestRequestTypeDef](./type_defs.md#updaterulerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("rbin").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("rbin").get_paginator` method with overloads.
 
-- `client.get_paginator("list_rules")` ->
-  [ListRulesPaginator](./paginators.md#listrulespaginator)
+- `client.get_paginator("list_rules")` -> [ListRulesPaginator](./paginators.md#listrulespaginator)
+
+
+

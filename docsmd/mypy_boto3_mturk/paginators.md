@@ -1,35 +1,18 @@
-<a id="paginators-for-boto3-mturk-module"></a>
-
-# Paginators for boto3 MTurk module
+# Paginators
 
 > [Index](../README.md) > [MTurk](./README.md) > Paginators
 
-Auto-generated documentation for
-[MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
-type annotations stubs module
-[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
+!!! note ""
 
-- [Paginators for boto3 MTurk module](#paginators-for-boto3-mturk-module)
-  - [ListAssignmentsForHITPaginator](#listassignmentsforhitpaginator)
-  - [ListBonusPaymentsPaginator](#listbonuspaymentspaginator)
-  - [ListHITsPaginator](#listhitspaginator)
-  - [ListHITsForQualificationTypePaginator](#listhitsforqualificationtypepaginator)
-  - [ListQualificationRequestsPaginator](#listqualificationrequestspaginator)
-  - [ListQualificationTypesPaginator](#listqualificationtypespaginator)
-  - [ListReviewableHITsPaginator](#listreviewablehitspaginator)
-  - [ListWorkerBlocksPaginator](#listworkerblockspaginator)
-  - [ListWorkersWithQualificationTypePaginator](#listworkerswithqualificationtypepaginator)
-
-<a id="listassignmentsforhitpaginator"></a>
+    Auto-generated documentation for [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
+    type annotations stubs module [mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ## ListAssignmentsForHITPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_assignments_for_hit")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_assignments_for_hit")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator
@@ -38,30 +21,42 @@ def get_list_assignments_for_hit_paginator() -> ListAssignmentsForHITPaginator:
     return Session().client("mturk").get_paginator("list_assignments_for_hit")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListAssignmentsForHIT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListAssignmentsForHIT)
 
-Arguments for `ListAssignmentsForHITPaginator.paginate` method:
+### paginate
 
-- `HITId`: `str` *(required)*
-- `AssignmentStatuses`:
-  `Sequence`\[[AssignmentStatusType](./literals.md#assignmentstatustype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssignmentsForHITPaginator.paginate` method.
 
-`ListAssignmentsForHITPaginator.paginate` returns
-`_PageIterator`\[[ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HITId: str,
+    AssignmentStatuses: Sequence[AssignmentStatusType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssignmentsForHITResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listbonuspaymentspaginator"></a>
+1. See [:material-code-brackets: AssignmentStatusType](./literals.md#assignmentstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef = {  # (1)
+    "HITId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssignmentsForHITRequestListAssignmentsForHITPaginateTypeDef](./type_defs.md#listassignmentsforhitrequestlistassignmentsforhitpaginatetypedef) 
 ## ListBonusPaymentsPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_bonus_payments")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_bonus_payments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListBonusPaymentsPaginator
@@ -70,28 +65,41 @@ def get_list_bonus_payments_paginator() -> ListBonusPaymentsPaginator:
     return Session().client("mturk").get_paginator("list_bonus_payments")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListBonusPayments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListBonusPayments)
 
-Arguments for `ListBonusPaymentsPaginator.paginate` method:
+### paginate
 
-- `HITId`: `str`
-- `AssignmentId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListBonusPaymentsPaginator.paginate` method.
 
-`ListBonusPaymentsPaginator.paginate` returns
-`_PageIterator`\[[ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HITId: str = ...,
+    AssignmentId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListBonusPaymentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listhitspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef = {  # (1)
+    "HITId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListBonusPaymentsRequestListBonusPaymentsPaginateTypeDef](./type_defs.md#listbonuspaymentsrequestlistbonuspaymentspaginatetypedef) 
 ## ListHITsPaginator
 
-Type annotations for `boto3.client("mturk").get_paginator("list_hits")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_hits")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListHITsPaginator
@@ -100,27 +108,39 @@ def get_list_hits_paginator() -> ListHITsPaginator:
     return Session().client("mturk").get_paginator("list_hits")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListHITs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITs)
 
-Arguments for `ListHITsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHITsPaginator.paginate` method.
 
-`ListHITsPaginator.paginate` returns
-`_PageIterator`\[[ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListHITsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listhitsforqualificationtypepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHITsRequestListHITsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHITsRequestListHITsPaginateTypeDef](./type_defs.md#listhitsrequestlisthitspaginatetypedef) 
 ## ListHITsForQualificationTypePaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_hits_for_qualification_type")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_hits_for_qualification_type")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListHITsForQualificationTypePaginator
@@ -129,28 +149,40 @@ def get_list_hits_for_qualification_type_paginator() -> ListHITsForQualification
     return Session().client("mturk").get_paginator("list_hits_for_qualification_type")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListHITsForQualificationType](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListHITsForQualificationType)
 
-Arguments for `ListHITsForQualificationTypePaginator.paginate` method:
+### paginate
 
-- `QualificationTypeId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListHITsForQualificationTypePaginator.paginate` method.
 
-`ListHITsForQualificationTypePaginator.paginate` returns
-`_PageIterator`\[[ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QualificationTypeId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListHITsForQualificationTypeResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqualificationrequestspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListHITsForQualificationTypeRequestListHITsForQualificationTypePaginateTypeDef](./type_defs.md#listhitsforqualificationtyperequestlisthitsforqualificationtypepaginatetypedef) 
 ## ListQualificationRequestsPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_qualification_requests")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_qualification_requests")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListQualificationRequestsPaginator
@@ -159,28 +191,40 @@ def get_list_qualification_requests_paginator() -> ListQualificationRequestsPagi
     return Session().client("mturk").get_paginator("list_qualification_requests")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListQualificationRequests](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationRequests)
 
-Arguments for `ListQualificationRequestsPaginator.paginate` method:
+### paginate
 
-- `QualificationTypeId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQualificationRequestsPaginator.paginate` method.
 
-`ListQualificationRequestsPaginator.paginate` returns
-`_PageIterator`\[[ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QualificationTypeId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQualificationRequestsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqualificationtypespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQualificationRequestsRequestListQualificationRequestsPaginateTypeDef](./type_defs.md#listqualificationrequestsrequestlistqualificationrequestspaginatetypedef) 
 ## ListQualificationTypesPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_qualification_types")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_qualification_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListQualificationTypesPaginator
@@ -189,30 +233,42 @@ def get_list_qualification_types_paginator() -> ListQualificationTypesPaginator:
     return Session().client("mturk").get_paginator("list_qualification_types")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListQualificationTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListQualificationTypes)
 
-Arguments for `ListQualificationTypesPaginator.paginate` method:
+### paginate
 
-- `MustBeRequestable`: `bool` *(required)*
-- `Query`: `str`
-- `MustBeOwnedByCaller`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQualificationTypesPaginator.paginate` method.
 
-`ListQualificationTypesPaginator.paginate` returns
-`_PageIterator`\[[ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    MustBeRequestable: bool,
+    Query: str = ...,
+    MustBeOwnedByCaller: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQualificationTypesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listreviewablehitspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQualificationTypesRequestListQualificationTypesPaginateTypeDef = {  # (1)
+    "MustBeRequestable": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQualificationTypesRequestListQualificationTypesPaginateTypeDef](./type_defs.md#listqualificationtypesrequestlistqualificationtypespaginatetypedef) 
 ## ListReviewableHITsPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_reviewable_hits")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_reviewable_hits")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListReviewableHITsPaginator
@@ -221,29 +277,42 @@ def get_list_reviewable_hits_paginator() -> ListReviewableHITsPaginator:
     return Session().client("mturk").get_paginator("list_reviewable_hits")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListReviewableHITs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListReviewableHITs)
 
-Arguments for `ListReviewableHITsPaginator.paginate` method:
+### paginate
 
-- `HITTypeId`: `str`
-- `Status`: [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListReviewableHITsPaginator.paginate` method.
 
-`ListReviewableHITsPaginator.paginate` returns
-`_PageIterator`\[[ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    HITTypeId: str = ...,
+    Status: ReviewableHITStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListReviewableHITsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listworkerblockspaginator"></a>
+1. See [:material-code-brackets: ReviewableHITStatusType](./literals.md#reviewablehitstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListReviewableHITsRequestListReviewableHITsPaginateTypeDef = {  # (1)
+    "HITTypeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListReviewableHITsRequestListReviewableHITsPaginateTypeDef](./type_defs.md#listreviewablehitsrequestlistreviewablehitspaginatetypedef) 
 ## ListWorkerBlocksPaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_worker_blocks")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_worker_blocks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListWorkerBlocksPaginator
@@ -252,27 +321,39 @@ def get_list_worker_blocks_paginator() -> ListWorkerBlocksPaginator:
     return Session().client("mturk").get_paginator("list_worker_blocks")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListWorkerBlocks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkerBlocks)
 
-Arguments for `ListWorkerBlocksPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorkerBlocksPaginator.paginate` method.
 
-`ListWorkerBlocksPaginator.paginate` returns
-`_PageIterator`\[[ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListWorkerBlocksResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listworkerswithqualificationtypepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorkerBlocksRequestListWorkerBlocksPaginateTypeDef](./type_defs.md#listworkerblocksrequestlistworkerblockspaginatetypedef) 
 ## ListWorkersWithQualificationTypePaginator
 
-Type annotations for
-`boto3.client("mturk").get_paginator("list_workers_with_qualification_type")`.
+Type annotations and code completion for `#!python boto3.client("mturk").get_paginator("list_workers_with_qualification_type")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_mturk.paginator import ListWorkersWithQualificationTypePaginator
@@ -281,15 +362,33 @@ def get_list_workers_with_qualification_type_paginator() -> ListWorkersWithQuali
     return Session().client("mturk").get_paginator("list_workers_with_qualification_type")
 ```
 
-Boto3 documentation:
-[MTurk.Paginator.ListWorkersWithQualificationType](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk.Paginator.ListWorkersWithQualificationType)
 
-Arguments for `ListWorkersWithQualificationTypePaginator.paginate` method:
+### paginate
 
-- `QualificationTypeId`: `str` *(required)*
-- `Status`: [QualificationStatusType](./literals.md#qualificationstatustype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListWorkersWithQualificationTypePaginator.paginate` method.
 
-`ListWorkersWithQualificationTypePaginator.paginate` returns
-`_PageIterator`\[[ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QualificationTypeId: str,
+    Status: QualificationStatusType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListWorkersWithQualificationTypeResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: QualificationStatusType](./literals.md#qualificationstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef = {  # (1)
+    "QualificationTypeId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListWorkersWithQualificationTypeRequestListWorkersWithQualificationTypePaginateTypeDef](./type_defs.md#listworkerswithqualificationtyperequestlistworkerswithqualificationtypepaginatetypedef) 

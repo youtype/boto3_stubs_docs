@@ -1,48 +1,18 @@
-<a id="cognitosyncclient-for-boto3-cognitosync-module"></a>
-
-# CognitoSyncClient for boto3 CognitoSync module
+# CognitoSyncClient
 
 > [Index](../README.md) > [CognitoSync](./README.md) > CognitoSyncClient
 
-Auto-generated documentation for
-[CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
-type annotations stubs module
-[mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+!!! note ""
 
-- [CognitoSyncClient for boto3 CognitoSync module](#cognitosyncclient-for-boto3-cognitosync-module)
-  - [CognitoSyncClient](#cognitosyncclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [bulk_publish](#bulk_publish)
-    - [can_paginate](#can_paginate)
-    - [delete_dataset](#delete_dataset)
-    - [describe_dataset](#describe_dataset)
-    - [describe_identity_pool_usage](#describe_identity_pool_usage)
-    - [describe_identity_usage](#describe_identity_usage)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_bulk_publish_details](#get_bulk_publish_details)
-    - [get_cognito_events](#get_cognito_events)
-    - [get_identity_pool_configuration](#get_identity_pool_configuration)
-    - [list_datasets](#list_datasets)
-    - [list_identity_pool_usage](#list_identity_pool_usage)
-    - [list_records](#list_records)
-    - [register_device](#register_device)
-    - [set_cognito_events](#set_cognito_events)
-    - [set_identity_pool_configuration](#set_identity_pool_configuration)
-    - [subscribe_to_dataset](#subscribe_to_dataset)
-    - [unsubscribe_from_dataset](#unsubscribe_from_dataset)
-    - [update_records](#update_records)
-
-<a id="cognitosyncclient"></a>
+    Auto-generated documentation for [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
+    type annotations stubs module [mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 ## CognitoSyncClient
 
-Type annotations for `boto3.client("cognito-sync")`
+Type annotations and code completion for `#!python boto3.client("cognito-sync")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 
@@ -50,493 +20,636 @@ def get_cognito-sync_client() -> CognitoSyncClient:
     return Session().client("cognito-sync")
 ```
 
-Boto3 documentation:
-[CognitoSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("cognito-sync").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("cognito-sync")
+
+try:
+    do_something(client)
+except (
+    client.AlreadyStreamedException,
+    client.ClientError,
+    client.ConcurrentModificationException,
+    client.DuplicateRequestException,
+    client.InternalErrorException,
+    client.InvalidConfigurationException,
+    client.InvalidLambdaFunctionOutputException,
+    client.InvalidParameterException,
+    client.LambdaThrottledException,
+    client.LimitExceededException,
+    client.NotAuthorizedException,
+    client.ResourceConflictException,
+    client.ResourceNotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_cognito_sync.client import Exceptions
 
 def handle_error(exc: Exceptions.AlreadyStreamedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AlreadyStreamedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentModificationException`
-- `Exceptions.DuplicateRequestException`
-- `Exceptions.InternalErrorException`
-- `Exceptions.InvalidConfigurationException`
-- `Exceptions.InvalidLambdaFunctionOutputException`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.LambdaThrottledException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotAuthorizedException`
-- `Exceptions.ResourceConflictException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CognitoSyncClient exceptions.
-
-Type annotations for `boto3.client("cognito-sync").exceptions` method.
-
-Boto3 documentation:
-[CognitoSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="bulk\_publish"></a>
-
-### bulk_publish
+### bulk\_publish
 
 Initiates a bulk publish of all existing datasets for an Identity Pool to the
 configured stream.
 
-Type annotations for `boto3.client("cognito-sync").bulk_publish` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").bulk_publish` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
 
-Boto3 documentation:
-[CognitoSync.Client.bulk_publish](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.bulk_publish)
+```python title="Method definition"
+def bulk_publish(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> BulkPublishResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[BulkPublishRequestRequestTypeDef](./type_defs.md#bulkpublishrequestrequesttypedef).
+1. See [:material-code-braces: BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: BulkPublishRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef).
+parent.bulk_publish(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: BulkPublishRequestRequestTypeDef](./type_defs.md#bulkpublishrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("cognito-sync").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate)
 
-Boto3 documentation:
-[CognitoSync.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="delete\_dataset"></a>
-
-### delete_dataset
+### delete\_dataset
 
 Deletes the specific dataset.
 
-Type annotations for `boto3.client("cognito-sync").delete_dataset` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").delete_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset)
 
-Boto3 documentation:
-[CognitoSync.Client.delete_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.delete_dataset)
+```python title="Method definition"
+def delete_dataset(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+) -> DeleteDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatasetRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+}
 
-Returns
-[DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+parent.delete_dataset(**kwargs)
+```
 
-<a id="describe\_dataset"></a>
+1. See [:material-code-braces: DeleteDatasetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
 
-### describe_dataset
+### describe\_dataset
 
 Gets meta data about a dataset by identity and dataset name.
 
-Type annotations for `boto3.client("cognito-sync").describe_dataset` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").describe_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset)
 
-Boto3 documentation:
-[CognitoSync.Client.describe_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_dataset)
+```python title="Method definition"
+def describe_dataset(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+) -> DescribeDatasetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatasetRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+}
 
-Returns
-[DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+parent.describe_dataset(**kwargs)
+```
 
-<a id="describe\_identity\_pool\_usage"></a>
+1. See [:material-code-braces: DescribeDatasetRequestRequestTypeDef](./type_defs.md#describedatasetrequestrequesttypedef) 
 
-### describe_identity_pool_usage
+### describe\_identity\_pool\_usage
 
-Gets usage details (for example, data storage) about a particular identity
-pool.
+Gets usage details (for example, data storage) about a particular identity pool.
 
-Type annotations for
-`boto3.client("cognito-sync").describe_identity_pool_usage` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").describe_identity_pool_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
 
-Boto3 documentation:
-[CognitoSync.Client.describe_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_pool_usage)
+```python title="Method definition"
+def describe_identity_pool_usage(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> DescribeIdentityPoolUsageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityPoolUsageRequestRequestTypeDef](./type_defs.md#describeidentitypoolusagerequestrequesttypedef).
+1. See [:material-code-braces: DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityPoolUsageRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef).
+parent.describe_identity_pool_usage(**kwargs)
+```
 
-<a id="describe\_identity\_usage"></a>
+1. See [:material-code-braces: DescribeIdentityPoolUsageRequestRequestTypeDef](./type_defs.md#describeidentitypoolusagerequestrequesttypedef) 
 
-### describe_identity_usage
+### describe\_identity\_usage
 
 Gets usage information for an identity, including number of datasets and data
 usage.
 
-Type annotations for `boto3.client("cognito-sync").describe_identity_usage`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").describe_identity_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
 
-Boto3 documentation:
-[CognitoSync.Client.describe_identity_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.describe_identity_usage)
+```python title="Method definition"
+def describe_identity_usage(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+) -> DescribeIdentityUsageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIdentityUsageRequestRequestTypeDef](./type_defs.md#describeidentityusagerequestrequesttypedef).
+1. See [:material-code-braces: DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIdentityUsageRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+}
 
-Returns
-[DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef).
+parent.describe_identity_usage(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeIdentityUsageRequestRequestTypeDef](./type_defs.md#describeidentityusagerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("cognito-sync").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CognitoSync.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_bulk\_publish\_details"></a>
-
-### get_bulk_publish_details
+### get\_bulk\_publish\_details
 
 Get the status of the last BulkPublish operation for an identity pool.
 
-Type annotations for `boto3.client("cognito-sync").get_bulk_publish_details`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").get_bulk_publish_details` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
 
-Boto3 documentation:
-[CognitoSync.Client.get_bulk_publish_details](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_bulk_publish_details)
+```python title="Method definition"
+def get_bulk_publish_details(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> GetBulkPublishDetailsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBulkPublishDetailsRequestRequestTypeDef](./type_defs.md#getbulkpublishdetailsrequestrequesttypedef).
+1. See [:material-code-braces: GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBulkPublishDetailsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef).
+parent.get_bulk_publish_details(**kwargs)
+```
 
-<a id="get\_cognito\_events"></a>
+1. See [:material-code-braces: GetBulkPublishDetailsRequestRequestTypeDef](./type_defs.md#getbulkpublishdetailsrequestrequesttypedef) 
 
-### get_cognito_events
+### get\_cognito\_events
 
 Gets the events and the corresponding Lambda functions associated with an
 identity pool.
 
-Type annotations for `boto3.client("cognito-sync").get_cognito_events` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").get_cognito_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
 
-Boto3 documentation:
-[CognitoSync.Client.get_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_cognito_events)
+```python title="Method definition"
+def get_cognito_events(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> GetCognitoEventsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCognitoEventsRequestRequestTypeDef](./type_defs.md#getcognitoeventsrequestrequesttypedef).
+1. See [:material-code-braces: GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCognitoEventsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef).
+parent.get_cognito_events(**kwargs)
+```
 
-<a id="get\_identity\_pool\_configuration"></a>
+1. See [:material-code-braces: GetCognitoEventsRequestRequestTypeDef](./type_defs.md#getcognitoeventsrequestrequesttypedef) 
 
-### get_identity_pool_configuration
+### get\_identity\_pool\_configuration
 
 Gets the configuration settings of an identity pool.
 
-Type annotations for
-`boto3.client("cognito-sync").get_identity_pool_configuration` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").get_identity_pool_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
 
-Boto3 documentation:
-[CognitoSync.Client.get_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.get_identity_pool_configuration)
+```python title="Method definition"
+def get_identity_pool_configuration(
+    self,
+    *,
+    IdentityPoolId: str,
+) -> GetIdentityPoolConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIdentityPoolConfigurationRequestRequestTypeDef](./type_defs.md#getidentitypoolconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIdentityPoolConfigurationRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef).
+parent.get_identity_pool_configuration(**kwargs)
+```
 
-<a id="list\_datasets"></a>
+1. See [:material-code-braces: GetIdentityPoolConfigurationRequestRequestTypeDef](./type_defs.md#getidentitypoolconfigurationrequestrequesttypedef) 
 
-### list_datasets
+### list\_datasets
 
 Lists datasets for an identity.
 
-Type annotations for `boto3.client("cognito-sync").list_datasets` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").list_datasets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets)
 
-Boto3 documentation:
-[CognitoSync.Client.list_datasets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_datasets)
+```python title="Method definition"
+def list_datasets(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatasetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatasetsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+}
 
-Returns
-[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_datasets(**kwargs)
+```
 
-<a id="list\_identity\_pool\_usage"></a>
+1. See [:material-code-braces: ListDatasetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_identity_pool_usage
+### list\_identity\_pool\_usage
 
 Gets a list of identity pools registered with Cognito.
 
-Type annotations for `boto3.client("cognito-sync").list_identity_pool_usage`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").list_identity_pool_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
 
-Boto3 documentation:
-[CognitoSync.Client.list_identity_pool_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_identity_pool_usage)
+```python title="Method definition"
+def list_identity_pool_usage(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListIdentityPoolUsageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIdentityPoolUsageRequestRequestTypeDef](./type_defs.md#listidentitypoolusagerequestrequesttypedef).
+1. See [:material-code-braces: ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIdentityPoolUsageRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef).
+parent.list_identity_pool_usage(**kwargs)
+```
 
-<a id="list\_records"></a>
+1. See [:material-code-braces: ListIdentityPoolUsageRequestRequestTypeDef](./type_defs.md#listidentitypoolusagerequestrequesttypedef) 
 
-### list_records
+### list\_records
 
 Gets paginated records, optionally changed after a particular sync count for a
 dataset and identity.
 
-Type annotations for `boto3.client("cognito-sync").list_records` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").list_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_records)
 
-Boto3 documentation:
-[CognitoSync.Client.list_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.list_records)
+```python title="Method definition"
+def list_records(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    LastSyncCount: int = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    SyncSessionToken: str = ...,
+) -> ListRecordsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRecordsRequestRequestTypeDef](./type_defs.md#listrecordsrequestrequesttypedef).
+1. See [:material-code-braces: ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
-- `LastSyncCount`: `int`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `SyncSessionToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRecordsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+}
 
-Returns
-[ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef).
+parent.list_records(**kwargs)
+```
 
-<a id="register\_device"></a>
+1. See [:material-code-braces: ListRecordsRequestRequestTypeDef](./type_defs.md#listrecordsrequestrequesttypedef) 
 
-### register_device
+### register\_device
 
 Registers a device to receive push sync notifications.
 
-Type annotations for `boto3.client("cognito-sync").register_device` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").register_device` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.register_device)
 
-Boto3 documentation:
-[CognitoSync.Client.register_device](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.register_device)
+```python title="Method definition"
+def register_device(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    Platform: PlatformType,  # (1)
+    Token: str,
+) -> RegisterDeviceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterDeviceRequestRequestTypeDef](./type_defs.md#registerdevicerequestrequesttypedef).
+1. See [:material-code-brackets: PlatformType](./literals.md#platformtype) 
+2. See [:material-code-braces: RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `Token`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RegisterDeviceRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "Platform": ...,
+    "Token": ...,
+}
 
-Returns
-[RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef).
+parent.register_device(**kwargs)
+```
 
-<a id="set\_cognito\_events"></a>
+1. See [:material-code-braces: RegisterDeviceRequestRequestTypeDef](./type_defs.md#registerdevicerequestrequesttypedef) 
 
-### set_cognito_events
+### set\_cognito\_events
 
 Sets the AWS Lambda function for a given event type for an identity pool.
 
-Type annotations for `boto3.client("cognito-sync").set_cognito_events` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").set_cognito_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
 
-Boto3 documentation:
-[CognitoSync.Client.set_cognito_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_cognito_events)
+```python title="Method definition"
+def set_cognito_events(
+    self,
+    *,
+    IdentityPoolId: str,
+    Events: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetCognitoEventsRequestRequestTypeDef](./type_defs.md#setcognitoeventsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `Events`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetCognitoEventsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "Events": ...,
+}
 
-<a id="set\_identity\_pool\_configuration"></a>
+parent.set_cognito_events(**kwargs)
+```
 
-### set_identity_pool_configuration
+1. See [:material-code-braces: SetCognitoEventsRequestRequestTypeDef](./type_defs.md#setcognitoeventsrequestrequesttypedef) 
+
+### set\_identity\_pool\_configuration
 
 Sets the necessary configuration for push sync.
 
-Type annotations for
-`boto3.client("cognito-sync").set_identity_pool_configuration` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").set_identity_pool_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration)
 
-Boto3 documentation:
-[CognitoSync.Client.set_identity_pool_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.set_identity_pool_configuration)
+```python title="Method definition"
+def set_identity_pool_configuration(
+    self,
+    *,
+    IdentityPoolId: str,
+    PushSync: PushSyncTypeDef = ...,  # (1)
+    CognitoStreams: CognitoStreamsTypeDef = ...,  # (2)
+) -> SetIdentityPoolConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[SetIdentityPoolConfigurationRequestRequestTypeDef](./type_defs.md#setidentitypoolconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: PushSyncTypeDef](./type_defs.md#pushsynctypedef) 
+2. See [:material-code-braces: CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef) 
+3. See [:material-code-braces: SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `PushSync`: [PushSyncTypeDef](./type_defs.md#pushsynctypedef)
-- `CognitoStreams`:
-  [CognitoStreamsTypeDef](./type_defs.md#cognitostreamstypedef)
+```python title="Usage example with kwargs"
+kwargs: SetIdentityPoolConfigurationRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+}
 
-Returns
-[SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef).
+parent.set_identity_pool_configuration(**kwargs)
+```
 
-<a id="subscribe\_to\_dataset"></a>
+1. See [:material-code-braces: SetIdentityPoolConfigurationRequestRequestTypeDef](./type_defs.md#setidentitypoolconfigurationrequestrequesttypedef) 
 
-### subscribe_to_dataset
+### subscribe\_to\_dataset
 
 Subscribes to receive notifications when a dataset is modified by another
 device.
 
-Type annotations for `boto3.client("cognito-sync").subscribe_to_dataset`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").subscribe_to_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset)
 
-Boto3 documentation:
-[CognitoSync.Client.subscribe_to_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.subscribe_to_dataset)
+```python title="Method definition"
+def subscribe_to_dataset(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    DeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[SubscribeToDatasetRequestRequestTypeDef](./type_defs.md#subscribetodatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SubscribeToDatasetRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+    "DeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.subscribe_to_dataset(**kwargs)
+```
 
-<a id="unsubscribe\_from\_dataset"></a>
+1. See [:material-code-braces: SubscribeToDatasetRequestRequestTypeDef](./type_defs.md#subscribetodatasetrequestrequesttypedef) 
 
-### unsubscribe_from_dataset
+### unsubscribe\_from\_dataset
 
 Unsubscribes from receiving notifications when a dataset is modified by another
 device.
 
-Type annotations for `boto3.client("cognito-sync").unsubscribe_from_dataset`
-method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").unsubscribe_from_dataset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset)
 
-Boto3 documentation:
-[CognitoSync.Client.unsubscribe_from_dataset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.unsubscribe_from_dataset)
+```python title="Method definition"
+def unsubscribe_from_dataset(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    DeviceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UnsubscribeFromDatasetRequestRequestTypeDef](./type_defs.md#unsubscribefromdatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
-- `DeviceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnsubscribeFromDatasetRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+    "DeviceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.unsubscribe_from_dataset(**kwargs)
+```
 
-<a id="update\_records"></a>
+1. See [:material-code-braces: UnsubscribeFromDatasetRequestRequestTypeDef](./type_defs.md#unsubscribefromdatasetrequestrequesttypedef) 
 
-### update_records
+### update\_records
 
 Posts updates to records and adds and deletes records for a dataset and user.
 
-Type annotations for `boto3.client("cognito-sync").update_records` method.
+Type annotations and code completion for `#!python boto3.client("cognito-sync").update_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.update_records)
 
-Boto3 documentation:
-[CognitoSync.Client.update_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.update_records)
+```python title="Method definition"
+def update_records(
+    self,
+    *,
+    IdentityPoolId: str,
+    IdentityId: str,
+    DatasetName: str,
+    SyncSessionToken: str,
+    DeviceId: str = ...,
+    RecordPatches: Sequence[RecordPatchTypeDef] = ...,  # (1)
+    ClientContext: str = ...,
+) -> UpdateRecordsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRecordsRequestRequestTypeDef](./type_defs.md#updaterecordsrequestrequesttypedef).
+1. See [:material-code-braces: RecordPatchTypeDef](./type_defs.md#recordpatchtypedef) 
+2. See [:material-code-braces: UpdateRecordsResponseTypeDef](./type_defs.md#updaterecordsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `IdentityPoolId`: `str` *(required)*
-- `IdentityId`: `str` *(required)*
-- `DatasetName`: `str` *(required)*
-- `SyncSessionToken`: `str` *(required)*
-- `DeviceId`: `str`
-- `RecordPatches`:
-  `Sequence`\[[RecordPatchTypeDef](./type_defs.md#recordpatchtypedef)\]
-- `ClientContext`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateRecordsRequestRequestTypeDef = {  # (1)
+    "IdentityPoolId": ...,
+    "IdentityId": ...,
+    "DatasetName": ...,
+    "SyncSessionToken": ...,
+}
 
-Returns
-[UpdateRecordsResponseTypeDef](./type_defs.md#updaterecordsresponsetypedef).
+parent.update_records(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateRecordsRequestRequestTypeDef](./type_defs.md#updaterecordsrequestrequesttypedef) 
+
+
+
+

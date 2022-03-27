@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-signer-module"></a>
-
-# Paginators for boto3 signer module
+# Paginators
 
 > [Index](../README.md) > [signer](./README.md) > Paginators
 
-Auto-generated documentation for
-[signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
-type annotations stubs module
-[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
+!!! note ""
 
-- [Paginators for boto3 signer module](#paginators-for-boto3-signer-module)
-  - [ListSigningJobsPaginator](#listsigningjobspaginator)
-  - [ListSigningPlatformsPaginator](#listsigningplatformspaginator)
-  - [ListSigningProfilesPaginator](#listsigningprofilespaginator)
-
-<a id="listsigningjobspaginator"></a>
+    Auto-generated documentation for [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
+    type annotations stubs module [mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 ## ListSigningJobsPaginator
 
-Type annotations for
-`boto3.client("signer").get_paginator("list_signing_jobs")`.
+Type annotations and code completion for `#!python boto3.client("signer").get_paginator("list_signing_jobs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningJobs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_signer.paginator import ListSigningJobsPaginator
@@ -32,34 +21,47 @@ def get_list_signing_jobs_paginator() -> ListSigningJobsPaginator:
     return Session().client("signer").get_paginator("list_signing_jobs")
 ```
 
-Boto3 documentation:
-[signer.Paginator.ListSigningJobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningJobs)
 
-Arguments for `ListSigningJobsPaginator.paginate` method:
+### paginate
 
-- `status`: [SigningStatusType](./literals.md#signingstatustype)
-- `platformId`: `str`
-- `requestedBy`: `str`
-- `isRevoked`: `bool`
-- `signatureExpiresBefore`: `Union`\[`datetime`, `str`\]
-- `signatureExpiresAfter`: `Union`\[`datetime`, `str`\]
-- `jobInvoker`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSigningJobsPaginator.paginate` method.
 
-`ListSigningJobsPaginator.paginate` returns
-`_PageIterator`\[[ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    status: SigningStatusType = ...,  # (1)
+    platformId: str = ...,
+    requestedBy: str = ...,
+    isRevoked: bool = ...,
+    signatureExpiresBefore: Union[datetime, str] = ...,
+    signatureExpiresAfter: Union[datetime, str] = ...,
+    jobInvoker: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSigningJobsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listsigningplatformspaginator"></a>
+1. See [:material-code-brackets: SigningStatusType](./literals.md#signingstatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSigningJobsRequestListSigningJobsPaginateTypeDef = {  # (1)
+    "status": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSigningJobsRequestListSigningJobsPaginateTypeDef](./type_defs.md#listsigningjobsrequestlistsigningjobspaginatetypedef) 
 ## ListSigningPlatformsPaginator
 
-Type annotations for
-`boto3.client("signer").get_paginator("list_signing_platforms")`.
+Type annotations and code completion for `#!python boto3.client("signer").get_paginator("list_signing_platforms")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningPlatforms)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_signer.paginator import ListSigningPlatformsPaginator
@@ -68,30 +70,42 @@ def get_list_signing_platforms_paginator() -> ListSigningPlatformsPaginator:
     return Session().client("signer").get_paginator("list_signing_platforms")
 ```
 
-Boto3 documentation:
-[signer.Paginator.ListSigningPlatforms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningPlatforms)
 
-Arguments for `ListSigningPlatformsPaginator.paginate` method:
+### paginate
 
-- `category`: `str`
-- `partner`: `str`
-- `target`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSigningPlatformsPaginator.paginate` method.
 
-`ListSigningPlatformsPaginator.paginate` returns
-`_PageIterator`\[[ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    category: str = ...,
+    partner: str = ...,
+    target: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListSigningPlatformsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listsigningprofilespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef = {  # (1)
+    "category": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSigningPlatformsRequestListSigningPlatformsPaginateTypeDef](./type_defs.md#listsigningplatformsrequestlistsigningplatformspaginatetypedef) 
 ## ListSigningProfilesPaginator
 
-Type annotations for
-`boto3.client("signer").get_paginator("list_signing_profiles")`.
+Type annotations and code completion for `#!python boto3.client("signer").get_paginator("list_signing_profiles")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningProfiles)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_signer.paginator import ListSigningProfilesPaginator
@@ -100,17 +114,34 @@ def get_list_signing_profiles_paginator() -> ListSigningProfilesPaginator:
     return Session().client("signer").get_paginator("list_signing_profiles")
 ```
 
-Boto3 documentation:
-[signer.Paginator.ListSigningProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer.Paginator.ListSigningProfiles)
 
-Arguments for `ListSigningProfilesPaginator.paginate` method:
+### paginate
 
-- `includeCanceled`: `bool`
-- `platformId`: `str`
-- `statuses`:
-  `Sequence`\[[SigningProfileStatusType](./literals.md#signingprofilestatustype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListSigningProfilesPaginator.paginate` method.
 
-`ListSigningProfilesPaginator.paginate` returns
-`_PageIterator`\[[ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    includeCanceled: bool = ...,
+    platformId: str = ...,
+    statuses: Sequence[SigningProfileStatusType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListSigningProfilesResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: SigningProfileStatusType](./literals.md#signingprofilestatustype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListSigningProfilesRequestListSigningProfilesPaginateTypeDef = {  # (1)
+    "includeCanceled": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListSigningProfilesRequestListSigningProfilesPaginateTypeDef](./type_defs.md#listsigningprofilesrequestlistsigningprofilespaginatetypedef) 

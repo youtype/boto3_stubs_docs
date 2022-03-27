@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-ebs-module"></a>
-
-# Type annotations for boto3 EBS module
+#  EBS module
 
 > [Index](../README.md) > EBS
 
-Auto-generated documentation for
-[EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
-type annotations stubs module
-[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
+!!! note ""
 
-- [Type annotations for boto3 EBS module](#type-annotations-for-boto3-ebs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [EBSClient](#ebsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
+    type annotations stubs module [mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `EBS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ebs]'
 python -m pip install mypy-boto3-ebs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,64 +42,41 @@ python -m pip install mypy-boto3-ebs
 python -m pip uninstall -y mypy-boto3-ebs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ebsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## EBSClient
 
-Type annotations for `boto3.client("ebs")` as [EBSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ebs")` as [EBSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ebs.client import EBSClient
+
+def get_client() -> EBSClient:
+    return Session().cleint("ebs")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [complete_snapshot](./client.md#complete_snapshot)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_snapshot_block](./client.md#get_snapshot_block)
-- [list_changed_blocks](./client.md#list_changed_blocks)
-- [list_snapshot_blocks](./client.md#list_snapshot_blocks)
-- [put_snapshot_block](./client.md#put_snapshot_block)
-- [start_snapshot](./client.md#start_snapshot)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-EBSClient [exceptions](./client.md#exceptions)
 
-- AccessDeniedException
-- ClientError
-- ConcurrentLimitExceededException
-- ConflictException
-- InternalServerException
-- RequestThrottledException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ebs.literals import ChecksumAggregationMethodType
 
-```python
-from mypy_boto3_ebs.literals import ChecksumAggregationMethodType, ...
+def get_value() -> ChecksumAggregationMethodType:
+    return "LINEAR"
 ```
 
 - [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype)
@@ -129,18 +85,22 @@ from mypy_boto3_ebs.literals import ChecksumAggregationMethodType, ...
 - [EBSServiceName](./literals.md#ebsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ebs.type_defs import BlockTypeDef
 
-```python
-from mypy_boto3_ebs.type_defs import BlockTypeDef, ...
+def get_value() -> BlockTypeDef:
+    return {
+        "BlockIndex": ...,
+    }
 ```
 
 - [BlockTypeDef](./type_defs.md#blocktypedef)
@@ -159,3 +119,4 @@ from mypy_boto3_ebs.type_defs import BlockTypeDef, ...
 - [StartSnapshotRequestRequestTypeDef](./type_defs.md#startsnapshotrequestrequesttypedef)
 - [StartSnapshotResponseTypeDef](./type_defs.md#startsnapshotresponsetypedef)
 - [TagTypeDef](./type_defs.md#tagtypedef)
+

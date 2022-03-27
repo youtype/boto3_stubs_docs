@@ -1,61 +1,18 @@
-<a id="dataexchangeclient-for-boto3-dataexchange-module"></a>
-
-# DataExchangeClient for boto3 DataExchange module
+# DataExchangeClient
 
 > [Index](../README.md) > [DataExchange](./README.md) > DataExchangeClient
 
-Auto-generated documentation for
-[DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
-type annotations stubs module
-[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+!!! note ""
 
-- [DataExchangeClient for boto3 DataExchange module](#dataexchangeclient-for-boto3-dataexchange-module)
-  - [DataExchangeClient](#dataexchangeclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_job](#cancel_job)
-    - [create_data_set](#create_data_set)
-    - [create_event_action](#create_event_action)
-    - [create_job](#create_job)
-    - [create_revision](#create_revision)
-    - [delete_asset](#delete_asset)
-    - [delete_data_set](#delete_data_set)
-    - [delete_event_action](#delete_event_action)
-    - [delete_revision](#delete_revision)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_asset](#get_asset)
-    - [get_data_set](#get_data_set)
-    - [get_event_action](#get_event_action)
-    - [get_job](#get_job)
-    - [get_revision](#get_revision)
-    - [list_data_set_revisions](#list_data_set_revisions)
-    - [list_data_sets](#list_data_sets)
-    - [list_event_actions](#list_event_actions)
-    - [list_jobs](#list_jobs)
-    - [list_revision_assets](#list_revision_assets)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [revoke_revision](#revoke_revision)
-    - [send_api_asset](#send_api_asset)
-    - [start_job](#start_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_asset](#update_asset)
-    - [update_data_set](#update_data_set)
-    - [update_event_action](#update_event_action)
-    - [update_revision](#update_revision)
-    - [get_paginator](#get_paginator)
-
-<a id="dataexchangeclient"></a>
+    Auto-generated documentation for [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
+    type annotations stubs module [mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 ## DataExchangeClient
 
-Type annotations for `boto3.client("dataexchange")`
+Type annotations and code completion for `#!python boto3.client("dataexchange")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_dataexchange.client import DataExchangeClient
 
@@ -63,736 +20,994 @@ def get_dataexchange_client() -> DataExchangeClient:
     return Session().client("dataexchange")
 ```
 
-Boto3 documentation:
-[DataExchange.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("dataexchange").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("dataexchange")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceLimitExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_dataexchange.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceLimitExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-DataExchangeClient exceptions.
-
-Type annotations for `boto3.client("dataexchange").exceptions` method.
-
-Boto3 documentation:
-[DataExchange.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("dataexchange").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
 
-Boto3 documentation:
-[DataExchange.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_job"></a>
-
-### cancel_job
+### cancel\_job
 
 This operation cancels a job.
 
-Type annotations for `boto3.client("dataexchange").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
 
-Boto3 documentation:
-[DataExchange.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    JobId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-<a id="create\_data\_set"></a>
+parent.cancel_job(**kwargs)
+```
 
-### create_data_set
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
+
+### create\_data\_set
 
 This operation creates a data set.
 
-Type annotations for `boto3.client("dataexchange").create_data_set` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").create_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
 
-Boto3 documentation:
-[DataExchange.Client.create_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_data_set)
+```python title="Method definition"
+def create_data_set(
+    self,
+    *,
+    AssetType: AssetTypeType,  # (1)
+    Description: str,
+    Name: str,
+    Tags: Mapping[str, str] = ...,
+) -> CreateDataSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDataSetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef).
+1. See [:material-code-brackets: AssetTypeType](./literals.md#assettypetype) 
+2. See [:material-code-braces: CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssetType`: [AssetTypeType](./literals.md#assettypetype) *(required)*
-- `Description`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDataSetRequestRequestTypeDef = {  # (1)
+    "AssetType": ...,
+    "Description": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+parent.create_data_set(**kwargs)
+```
 
-<a id="create\_event\_action"></a>
+1. See [:material-code-braces: CreateDataSetRequestRequestTypeDef](./type_defs.md#createdatasetrequestrequesttypedef) 
 
-### create_event_action
+### create\_event\_action
 
 This operation creates an event action.
 
-Type annotations for `boto3.client("dataexchange").create_event_action` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").create_event_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_event_action)
 
-Boto3 documentation:
-[DataExchange.Client.create_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_event_action)
+```python title="Method definition"
+def create_event_action(
+    self,
+    *,
+    Action: ActionTypeDef,  # (1)
+    Event: EventTypeDef,  # (2)
+) -> CreateEventActionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateEventActionRequestRequestTypeDef](./type_defs.md#createeventactionrequestrequesttypedef).
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: EventTypeDef](./type_defs.md#eventtypedef) 
+3. See [:material-code-braces: CreateEventActionResponseTypeDef](./type_defs.md#createeventactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef) *(required)*
-- `Event`: [EventTypeDef](./type_defs.md#eventtypedef) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateEventActionRequestRequestTypeDef = {  # (1)
+    "Action": ...,
+    "Event": ...,
+}
 
-Returns
-[CreateEventActionResponseTypeDef](./type_defs.md#createeventactionresponsetypedef).
+parent.create_event_action(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CreateEventActionRequestRequestTypeDef](./type_defs.md#createeventactionrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 This operation creates a job.
 
-Type annotations for `boto3.client("dataexchange").create_job` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
 
-Boto3 documentation:
-[DataExchange.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    Details: RequestDetailsTypeDef,  # (1)
+    Type: TypeType,  # (2)
+) -> CreateJobResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef) 
+2. See [:material-code-brackets: TypeType](./literals.md#typetype) 
+3. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Details`: [RequestDetailsTypeDef](./type_defs.md#requestdetailstypedef)
-  *(required)*
-- `Type`: [TypeType](./literals.md#typetype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "Details": ...,
+    "Type": ...,
+}
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_revision"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_revision
+### create\_revision
 
 This operation creates a revision for a data set.
 
-Type annotations for `boto3.client("dataexchange").create_revision` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").create_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
 
-Boto3 documentation:
-[DataExchange.Client.create_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.create_revision)
+```python title="Method definition"
+def create_revision(
+    self,
+    *,
+    DataSetId: str,
+    Comment: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateRevisionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRevisionRequestRequestTypeDef](./type_defs.md#createrevisionrequestrequesttypedef).
+1. See [:material-code-braces: CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `Comment`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateRevisionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-Returns
-[CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef).
+parent.create_revision(**kwargs)
+```
 
-<a id="delete\_asset"></a>
+1. See [:material-code-braces: CreateRevisionRequestRequestTypeDef](./type_defs.md#createrevisionrequestrequesttypedef) 
 
-### delete_asset
+### delete\_asset
 
 This operation deletes an asset.
 
-Type annotations for `boto3.client("dataexchange").delete_asset` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").delete_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
 
-Boto3 documentation:
-[DataExchange.Client.delete_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_asset)
+```python title="Method definition"
+def delete_asset(
+    self,
+    *,
+    AssetId: str,
+    DataSetId: str,
+    RevisionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AssetId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAssetRequestRequestTypeDef = {  # (1)
+    "AssetId": ...,
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-<a id="delete\_data\_set"></a>
+parent.delete_asset(**kwargs)
+```
 
-### delete_data_set
+1. See [:material-code-braces: DeleteAssetRequestRequestTypeDef](./type_defs.md#deleteassetrequestrequesttypedef) 
+
+### delete\_data\_set
 
 This operation deletes a data set.
 
-Type annotations for `boto3.client("dataexchange").delete_data_set` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").delete_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
 
-Boto3 documentation:
-[DataExchange.Client.delete_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_data_set)
+```python title="Method definition"
+def delete_data_set(
+    self,
+    *,
+    DataSetId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDataSetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDataSetRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-<a id="delete\_event\_action"></a>
+parent.delete_data_set(**kwargs)
+```
 
-### delete_event_action
+1. See [:material-code-braces: DeleteDataSetRequestRequestTypeDef](./type_defs.md#deletedatasetrequestrequesttypedef) 
+
+### delete\_event\_action
 
 This operation deletes the event action.
 
-Type annotations for `boto3.client("dataexchange").delete_event_action` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").delete_event_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_event_action)
 
-Boto3 documentation:
-[DataExchange.Client.delete_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_event_action)
+```python title="Method definition"
+def delete_event_action(
+    self,
+    *,
+    EventActionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteEventActionRequestRequestTypeDef](./type_defs.md#deleteeventactionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `EventActionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteEventActionRequestRequestTypeDef = {  # (1)
+    "EventActionId": ...,
+}
 
-<a id="delete\_revision"></a>
+parent.delete_event_action(**kwargs)
+```
 
-### delete_revision
+1. See [:material-code-braces: DeleteEventActionRequestRequestTypeDef](./type_defs.md#deleteeventactionrequestrequesttypedef) 
+
+### delete\_revision
 
 This operation deletes a revision.
 
-Type annotations for `boto3.client("dataexchange").delete_revision` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").delete_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
 
-Boto3 documentation:
-[DataExchange.Client.delete_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.delete_revision)
+```python title="Method definition"
+def delete_revision(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRevisionRequestRequestTypeDef](./type_defs.md#deleterevisionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRevisionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.delete_revision(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: DeleteRevisionRequestRequestTypeDef](./type_defs.md#deleterevisionrequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("dataexchange").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
 
-Boto3 documentation:
-[DataExchange.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_asset"></a>
-
-### get_asset
+### get\_asset
 
 This operation returns information about an asset.
 
-Type annotations for `boto3.client("dataexchange").get_asset` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
 
-Boto3 documentation:
-[DataExchange.Client.get_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_asset)
+```python title="Method definition"
+def get_asset(
+    self,
+    *,
+    AssetId: str,
+    DataSetId: str,
+    RevisionId: str,
+) -> GetAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssetRequestRequestTypeDef](./type_defs.md#getassetrequestrequesttypedef).
+1. See [:material-code-braces: GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssetId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssetRequestRequestTypeDef = {  # (1)
+    "AssetId": ...,
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-Returns [GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef).
+parent.get_asset(**kwargs)
+```
 
-<a id="get\_data\_set"></a>
+1. See [:material-code-braces: GetAssetRequestRequestTypeDef](./type_defs.md#getassetrequestrequesttypedef) 
 
-### get_data_set
+### get\_data\_set
 
 This operation returns information about a data set.
 
-Type annotations for `boto3.client("dataexchange").get_data_set` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
 
-Boto3 documentation:
-[DataExchange.Client.get_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_data_set)
+```python title="Method definition"
+def get_data_set(
+    self,
+    *,
+    DataSetId: str,
+) -> GetDataSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDataSetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef).
+1. See [:material-code-braces: GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDataSetRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+parent.get_data_set(**kwargs)
+```
 
-<a id="get\_event\_action"></a>
+1. See [:material-code-braces: GetDataSetRequestRequestTypeDef](./type_defs.md#getdatasetrequestrequesttypedef) 
 
-### get_event_action
+### get\_event\_action
 
 This operation retrieves information about an event action.
 
-Type annotations for `boto3.client("dataexchange").get_event_action` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_event_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_event_action)
 
-Boto3 documentation:
-[DataExchange.Client.get_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_event_action)
+```python title="Method definition"
+def get_event_action(
+    self,
+    *,
+    EventActionId: str,
+) -> GetEventActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEventActionRequestRequestTypeDef](./type_defs.md#geteventactionrequestrequesttypedef).
+1. See [:material-code-braces: GetEventActionResponseTypeDef](./type_defs.md#geteventactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventActionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetEventActionRequestRequestTypeDef = {  # (1)
+    "EventActionId": ...,
+}
 
-Returns
-[GetEventActionResponseTypeDef](./type_defs.md#geteventactionresponsetypedef).
+parent.get_event_action(**kwargs)
+```
 
-<a id="get\_job"></a>
+1. See [:material-code-braces: GetEventActionRequestRequestTypeDef](./type_defs.md#geteventactionrequestrequesttypedef) 
 
-### get_job
+### get\_job
 
 This operation returns information about a job.
 
-Type annotations for `boto3.client("dataexchange").get_job` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
 
-Boto3 documentation:
-[DataExchange.Client.get_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_job)
+```python title="Method definition"
+def get_job(
+    self,
+    *,
+    JobId: str,
+) -> GetJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef).
+1. See [:material-code-braces: GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+parent.get_job(**kwargs)
+```
 
-<a id="get\_revision"></a>
+1. See [:material-code-braces: GetJobRequestRequestTypeDef](./type_defs.md#getjobrequestrequesttypedef) 
 
-### get_revision
+### get\_revision
 
 This operation returns information about a revision.
 
-Type annotations for `boto3.client("dataexchange").get_revision` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
 
-Boto3 documentation:
-[DataExchange.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.get_revision)
+```python title="Method definition"
+def get_revision(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+) -> GetRevisionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef).
+1. See [:material-code-braces: GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRevisionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-Returns
-[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
+parent.get_revision(**kwargs)
+```
 
-<a id="list\_data\_set\_revisions"></a>
+1. See [:material-code-braces: GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef) 
 
-### list_data_set_revisions
+### list\_data\_set\_revisions
 
 This operation lists a data set's revisions sorted by CreatedAt in descending
 order.
 
-Type annotations for `boto3.client("dataexchange").list_data_set_revisions`
-method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_data_set_revisions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
 
-Boto3 documentation:
-[DataExchange.Client.list_data_set_revisions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_set_revisions)
+```python title="Method definition"
+def list_data_set_revisions(
+    self,
+    *,
+    DataSetId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDataSetRevisionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSetRevisionsRequestRequestTypeDef](./type_defs.md#listdatasetrevisionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDataSetRevisionsRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-Returns
-[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef).
+parent.list_data_set_revisions(**kwargs)
+```
 
-<a id="list\_data\_sets"></a>
+1. See [:material-code-braces: ListDataSetRevisionsRequestRequestTypeDef](./type_defs.md#listdatasetrevisionsrequestrequesttypedef) 
 
-### list_data_sets
+### list\_data\_sets
 
 This operation lists your data sets.
 
-Type annotations for `boto3.client("dataexchange").list_data_sets` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_data_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
 
-Boto3 documentation:
-[DataExchange.Client.list_data_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_data_sets)
+```python title="Method definition"
+def list_data_sets(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Origin: str = ...,
+) -> ListDataSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef).
+1. See [:material-code-braces: ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Origin`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDataSetsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+parent.list_data_sets(**kwargs)
+```
 
-<a id="list\_event\_actions"></a>
+1. See [:material-code-braces: ListDataSetsRequestRequestTypeDef](./type_defs.md#listdatasetsrequestrequesttypedef) 
 
-### list_event_actions
+### list\_event\_actions
 
 This operation lists your event actions.
 
-Type annotations for `boto3.client("dataexchange").list_event_actions` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_event_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_event_actions)
 
-Boto3 documentation:
-[DataExchange.Client.list_event_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_event_actions)
+```python title="Method definition"
+def list_event_actions(
+    self,
+    *,
+    EventSourceId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListEventActionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEventActionsRequestRequestTypeDef](./type_defs.md#listeventactionsrequestrequesttypedef).
+1. See [:material-code-braces: ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventSourceId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEventActionsRequestRequestTypeDef = {  # (1)
+    "EventSourceId": ...,
+}
 
-Returns
-[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef).
+parent.list_event_actions(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListEventActionsRequestRequestTypeDef](./type_defs.md#listeventactionsrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 This operation lists your jobs sorted by CreatedAt in descending order.
 
-Type annotations for `boto3.client("dataexchange").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
 
-Boto3 documentation:
-[DataExchange.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    DataSetId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    RevisionId: str = ...,
+) -> ListJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `RevisionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_revision\_assets"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_revision_assets
+### list\_revision\_assets
 
 This operation lists a revision's assets sorted alphabetically in descending
 order.
 
-Type annotations for `boto3.client("dataexchange").list_revision_assets`
-method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_revision_assets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
 
-Boto3 documentation:
-[DataExchange.Client.list_revision_assets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_revision_assets)
+```python title="Method definition"
+def list_revision_assets(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListRevisionAssetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRevisionAssetsRequestRequestTypeDef](./type_defs.md#listrevisionassetsrequestrequesttypedef).
+1. See [:material-code-braces: ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListRevisionAssetsRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-Returns
-[ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef).
+parent.list_revision_assets(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListRevisionAssetsRequestRequestTypeDef](./type_defs.md#listrevisionassetsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 This operation lists the tags on the resource.
 
-Type annotations for `boto3.client("dataexchange").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[DataExchange.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="revoke\_revision"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### revoke_revision
+### revoke\_revision
 
 This operation revokes subscribers' access to a revision.
 
-Type annotations for `boto3.client("dataexchange").revoke_revision` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").revoke_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.revoke_revision)
 
-Boto3 documentation:
-[DataExchange.Client.revoke_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.revoke_revision)
+```python title="Method definition"
+def revoke_revision(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+    RevocationComment: str,
+) -> RevokeRevisionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RevokeRevisionRequestRequestTypeDef](./type_defs.md#revokerevisionrequestrequesttypedef).
+1. See [:material-code-braces: RevokeRevisionResponseTypeDef](./type_defs.md#revokerevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `RevocationComment`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RevokeRevisionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+    "RevocationComment": ...,
+}
 
-Returns
-[RevokeRevisionResponseTypeDef](./type_defs.md#revokerevisionresponsetypedef).
+parent.revoke_revision(**kwargs)
+```
 
-<a id="send\_api\_asset"></a>
+1. See [:material-code-braces: RevokeRevisionRequestRequestTypeDef](./type_defs.md#revokerevisionrequestrequesttypedef) 
 
-### send_api_asset
+### send\_api\_asset
 
 This operation invokes an API Gateway API asset.
 
-Type annotations for `boto3.client("dataexchange").send_api_asset` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").send_api_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.send_api_asset)
 
-Boto3 documentation:
-[DataExchange.Client.send_api_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.send_api_asset)
+```python title="Method definition"
+def send_api_asset(
+    self,
+    *,
+    AssetId: str,
+    DataSetId: str,
+    RevisionId: str,
+    Body: str = ...,
+    QueryStringParameters: Mapping[str, str] = ...,
+    RequestHeaders: Mapping[str, str] = ...,
+    Method: str = ...,
+    Path: str = ...,
+) -> SendApiAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SendApiAssetRequestRequestTypeDef](./type_defs.md#sendapiassetrequestrequesttypedef).
+1. See [:material-code-braces: SendApiAssetResponseTypeDef](./type_defs.md#sendapiassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssetId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `Body`: `str`
-- `QueryStringParameters`: `Mapping`\[`str`, `str`\]
-- `RequestHeaders`: `Mapping`\[`str`, `str`\]
-- `Method`: `str`
-- `Path`: `str`
+```python title="Usage example with kwargs"
+kwargs: SendApiAssetRequestRequestTypeDef = {  # (1)
+    "AssetId": ...,
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-Returns
-[SendApiAssetResponseTypeDef](./type_defs.md#sendapiassetresponsetypedef).
+parent.send_api_asset(**kwargs)
+```
 
-<a id="start\_job"></a>
+1. See [:material-code-braces: SendApiAssetRequestRequestTypeDef](./type_defs.md#sendapiassetrequestrequesttypedef) 
 
-### start_job
+### start\_job
 
 This operation starts a job.
 
-Type annotations for `boto3.client("dataexchange").start_job` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").start_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
 
-Boto3 documentation:
-[DataExchange.Client.start_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.start_job)
+```python title="Method definition"
+def start_job(
+    self,
+    *,
+    JobId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StartJobRequestRequestTypeDef](./type_defs.md#startjobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartJobRequestRequestTypeDef = {  # (1)
+    "JobId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.start_job(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StartJobRequestRequestTypeDef](./type_defs.md#startjobrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 This operation tags a resource.
 
-Type annotations for `boto3.client("dataexchange").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
 
-Boto3 documentation:
-[DataExchange.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 This operation removes one or more tags from a resource.
 
-Type annotations for `boto3.client("dataexchange").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
 
-Boto3 documentation:
-[DataExchange.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_asset"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_asset
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_asset
 
 This operation updates an asset.
 
-Type annotations for `boto3.client("dataexchange").update_asset` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").update_asset` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
 
-Boto3 documentation:
-[DataExchange.Client.update_asset](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_asset)
+```python title="Method definition"
+def update_asset(
+    self,
+    *,
+    AssetId: str,
+    DataSetId: str,
+    Name: str,
+    RevisionId: str,
+) -> UpdateAssetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef).
+1. See [:material-code-braces: UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AssetId`: `str` *(required)*
-- `DataSetId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateAssetRequestRequestTypeDef = {  # (1)
+    "AssetId": ...,
+    "DataSetId": ...,
+    "Name": ...,
+    "RevisionId": ...,
+}
 
-Returns
-[UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
+parent.update_asset(**kwargs)
+```
 
-<a id="update\_data\_set"></a>
+1. See [:material-code-braces: UpdateAssetRequestRequestTypeDef](./type_defs.md#updateassetrequestrequesttypedef) 
 
-### update_data_set
+### update\_data\_set
 
 This operation updates a data set.
 
-Type annotations for `boto3.client("dataexchange").update_data_set` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").update_data_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
 
-Boto3 documentation:
-[DataExchange.Client.update_data_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_data_set)
+```python title="Method definition"
+def update_data_set(
+    self,
+    *,
+    DataSetId: str,
+    Description: str = ...,
+    Name: str = ...,
+) -> UpdateDataSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDataSetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef).
+1. See [:material-code-braces: UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `Description`: `str`
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDataSetRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+}
 
-Returns
-[UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+parent.update_data_set(**kwargs)
+```
 
-<a id="update\_event\_action"></a>
+1. See [:material-code-braces: UpdateDataSetRequestRequestTypeDef](./type_defs.md#updatedatasetrequestrequesttypedef) 
 
-### update_event_action
+### update\_event\_action
 
 This operation updates the event action.
 
-Type annotations for `boto3.client("dataexchange").update_event_action` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").update_event_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_event_action)
 
-Boto3 documentation:
-[DataExchange.Client.update_event_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_event_action)
+```python title="Method definition"
+def update_event_action(
+    self,
+    *,
+    EventActionId: str,
+    Action: ActionTypeDef = ...,  # (1)
+) -> UpdateEventActionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateEventActionRequestRequestTypeDef](./type_defs.md#updateeventactionrequestrequesttypedef).
+1. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
+2. See [:material-code-braces: UpdateEventActionResponseTypeDef](./type_defs.md#updateeventactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EventActionId`: `str` *(required)*
-- `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateEventActionRequestRequestTypeDef = {  # (1)
+    "EventActionId": ...,
+}
 
-Returns
-[UpdateEventActionResponseTypeDef](./type_defs.md#updateeventactionresponsetypedef).
+parent.update_event_action(**kwargs)
+```
 
-<a id="update\_revision"></a>
+1. See [:material-code-braces: UpdateEventActionRequestRequestTypeDef](./type_defs.md#updateeventactionrequestrequesttypedef) 
 
-### update_revision
+### update\_revision
 
 This operation updates a revision.
 
-Type annotations for `boto3.client("dataexchange").update_revision` method.
+Type annotations and code completion for `#!python boto3.client("dataexchange").update_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
 
-Boto3 documentation:
-[DataExchange.Client.update_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.update_revision)
+```python title="Method definition"
+def update_revision(
+    self,
+    *,
+    DataSetId: str,
+    RevisionId: str,
+    Comment: str = ...,
+    Finalized: bool = ...,
+) -> UpdateRevisionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRevisionRequestRequestTypeDef](./type_defs.md#updaterevisionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `Comment`: `str`
-- `Finalized`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateRevisionRequestRequestTypeDef = {  # (1)
+    "DataSetId": ...,
+    "RevisionId": ...,
+}
 
-Returns
-[UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef).
+parent.update_revision(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateRevisionRequestRequestTypeDef](./type_defs.md#updaterevisionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("dataexchange").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("dataexchange").get_paginator` method with overloads.
 
-- `client.get_paginator("list_data_set_revisions")` ->
-  [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
-- `client.get_paginator("list_data_sets")` ->
-  [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_event_actions")` ->
-  [ListEventActionsPaginator](./paginators.md#listeventactionspaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_revision_assets")` ->
-  [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
+- `client.get_paginator("list_data_set_revisions")` -> [ListDataSetRevisionsPaginator](./paginators.md#listdatasetrevisionspaginator)
+- `client.get_paginator("list_data_sets")` -> [ListDataSetsPaginator](./paginators.md#listdatasetspaginator)
+- `client.get_paginator("list_event_actions")` -> [ListEventActionsPaginator](./paginators.md#listeventactionspaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_revision_assets")` -> [ListRevisionAssetsPaginator](./paginators.md#listrevisionassetspaginator)
+
+
+

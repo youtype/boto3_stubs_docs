@@ -1,232 +1,276 @@
-<a id="typed-dictionaries-for-boto3-marketplacemetering-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MarketplaceMetering module
+> [Index](../README.md) > [MarketplaceMetering](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MarketplaceMetering](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
-type annotations stubs module
-[mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
-
-- [Typed dictionaries for boto3 MarketplaceMetering module](#typed-dictionaries-for-boto3-marketplacemetering-module)
-  - [BatchMeterUsageRequestRequestTypeDef](#batchmeterusagerequestrequesttypedef)
-  - [BatchMeterUsageResultTypeDef](#batchmeterusageresulttypedef)
-  - [MeterUsageRequestRequestTypeDef](#meterusagerequestrequesttypedef)
-  - [MeterUsageResultTypeDef](#meterusageresulttypedef)
-  - [RegisterUsageRequestRequestTypeDef](#registerusagerequestrequesttypedef)
-  - [RegisterUsageResultTypeDef](#registerusageresulttypedef)
-  - [ResolveCustomerRequestRequestTypeDef](#resolvecustomerrequestrequesttypedef)
-  - [ResolveCustomerResultTypeDef](#resolvecustomerresulttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UsageAllocationTypeDef](#usageallocationtypedef)
-  - [UsageRecordResultTypeDef](#usagerecordresulttypedef)
-  - [UsageRecordTypeDef](#usagerecordtypedef)
-
-<a id="batchmeterusagerequestrequesttypedef"></a>
+    Auto-generated documentation for [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
+    type annotations stubs module [mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 ## BatchMeterUsageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageRequestRequestTypeDef
+
+def get_value() -> BatchMeterUsageRequestRequestTypeDef:
+    return {
+        "UsageRecords": ...,
+        "ProductCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchMeterUsageRequestRequestTypeDef(TypedDict):
+    UsageRecords: Sequence[UsageRecordTypeDef],  # (1)
+    ProductCode: str,
+```
 
-- `UsageRecords`:
-  `Sequence`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
-- `ProductCode`: `str`
-
-<a id="batchmeterusageresulttypedef"></a>
-
+1. See [:material-code-braces: UsageRecordTypeDef](./type_defs.md#usagerecordtypedef) 
 ## BatchMeterUsageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import BatchMeterUsageResultTypeDef
+
+def get_value() -> BatchMeterUsageResultTypeDef:
+    return {
+        "Results": ...,
+        "UnprocessedRecords": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchMeterUsageResultTypeDef(TypedDict):
+    Results: List[UsageRecordResultTypeDef],  # (1)
+    UnprocessedRecords: List[UsageRecordTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Results`:
-  `List`\[[UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef)\]
-- `UnprocessedRecords`:
-  `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="meterusagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UsageRecordResultTypeDef](./type_defs.md#usagerecordresulttypedef) 
+2. See [:material-code-braces: UsageRecordTypeDef](./type_defs.md#usagerecordtypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MeterUsageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import MeterUsageRequestRequestTypeDef
+
+def get_value() -> MeterUsageRequestRequestTypeDef:
+    return {
+        "ProductCode": ...,
+        "Timestamp": ...,
+        "UsageDimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeterUsageRequestRequestTypeDef(TypedDict):
+    ProductCode: str,
+    Timestamp: Union[datetime, str],
+    UsageDimension: str,
+    UsageQuantity: NotRequired[int],
+    DryRun: NotRequired[bool],
+    UsageAllocations: NotRequired[Sequence[UsageAllocationTypeDef]],  # (1)
+```
 
-- `ProductCode`: `str`
-- `Timestamp`: `Union`\[`datetime`, `str`\]
-- `UsageDimension`: `str`
-
-Optional fields:
-
-- `UsageQuantity`: `int`
-- `DryRun`: `bool`
-- `UsageAllocations`:
-  `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
-
-<a id="meterusageresulttypedef"></a>
-
+1. See [:material-code-braces: UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef) 
 ## MeterUsageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import MeterUsageResultTypeDef
+
+def get_value() -> MeterUsageResultTypeDef:
+    return {
+        "MeteringRecordId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MeterUsageResultTypeDef(TypedDict):
+    MeteringRecordId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `MeteringRecordId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="registerusagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RegisterUsageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageRequestRequestTypeDef
+
+def get_value() -> RegisterUsageRequestRequestTypeDef:
+    return {
+        "ProductCode": ...,
+        "PublicKeyVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `ProductCode`: `str`
-- `PublicKeyVersion`: `int`
-
-Optional fields:
-
-- `Nonce`: `str`
-
-<a id="registerusageresulttypedef"></a>
+```python title="Definition"
+class RegisterUsageRequestRequestTypeDef(TypedDict):
+    ProductCode: str,
+    PublicKeyVersion: int,
+    Nonce: NotRequired[str],
+```
 
 ## RegisterUsageResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import RegisterUsageResultTypeDef
+
+def get_value() -> RegisterUsageResultTypeDef:
+    return {
+        "PublicKeyRotationTimestamp": ...,
+        "Signature": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterUsageResultTypeDef(TypedDict):
+    PublicKeyRotationTimestamp: datetime,
+    Signature: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PublicKeyRotationTimestamp`: `datetime`
-- `Signature`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resolvecustomerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResolveCustomerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerRequestRequestTypeDef
+
+def get_value() -> ResolveCustomerRequestRequestTypeDef:
+    return {
+        "RegistrationToken": ...,
+    }
 ```
 
-Required fields:
-
-- `RegistrationToken`: `str`
-
-<a id="resolvecustomerresulttypedef"></a>
+```python title="Definition"
+class ResolveCustomerRequestRequestTypeDef(TypedDict):
+    RegistrationToken: str,
+```
 
 ## ResolveCustomerResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerResultTypeDef
+
+def get_value() -> ResolveCustomerResultTypeDef:
+    return {
+        "CustomerIdentifier": ...,
+        "ProductCode": ...,
+        "CustomerAWSAccountId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveCustomerResultTypeDef(TypedDict):
+    CustomerIdentifier: str,
+    ProductCode: str,
+    CustomerAWSAccountId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `CustomerIdentifier`: `str`
-- `ProductCode`: `str`
-- `CustomerAWSAccountId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="usageallocationtypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UsageAllocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import UsageAllocationTypeDef
+
+def get_value() -> UsageAllocationTypeDef:
+    return {
+        "AllocatedUsageQuantity": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UsageAllocationTypeDef(TypedDict):
+    AllocatedUsageQuantity: int,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `AllocatedUsageQuantity`: `int`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="usagerecordresulttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## UsageRecordResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import UsageRecordResultTypeDef
+
+def get_value() -> UsageRecordResultTypeDef:
+    return {
+        "UsageRecord": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UsageRecordResultTypeDef(TypedDict):
+    UsageRecord: NotRequired[UsageRecordTypeDef],  # (1)
+    MeteringRecordId: NotRequired[str],
+    Status: NotRequired[UsageRecordResultStatusType],  # (2)
+```
 
-- `UsageRecord`: [UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)
-- `MeteringRecordId`: `str`
-- `Status`:
-  [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
-
-<a id="usagerecordtypedef"></a>
-
+1. See [:material-code-braces: UsageRecordTypeDef](./type_defs.md#usagerecordtypedef) 
+2. See [:material-code-brackets: UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype) 
 ## UsageRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_meteringmarketplace.type_defs import UsageRecordTypeDef
+
+def get_value() -> UsageRecordTypeDef:
+    return {
+        "Timestamp": ...,
+        "CustomerIdentifier": ...,
+        "Dimension": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UsageRecordTypeDef(TypedDict):
+    Timestamp: Union[datetime, str],
+    CustomerIdentifier: str,
+    Dimension: str,
+    Quantity: NotRequired[int],
+    UsageAllocations: NotRequired[Sequence[UsageAllocationTypeDef]],  # (1)
+```
 
-- `Timestamp`: `Union`\[`datetime`, `str`\]
-- `CustomerIdentifier`: `str`
-- `Dimension`: `str`
-
-Optional fields:
-
-- `Quantity`: `int`
-- `UsageAllocations`:
-  `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
+1. See [:material-code-braces: UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef) 

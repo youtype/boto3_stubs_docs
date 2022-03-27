@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-kms-module"></a>
-
-# Type annotations for boto3 KMS module
+#  KMS module
 
 > [Index](../README.md) > KMS
 
-Auto-generated documentation for
-[KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
-type annotations stubs module
-[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
+!!! note ""
 
-- [Type annotations for boto3 KMS module](#type-annotations-for-boto3-kms-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [KMSClient](#kmsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
+    type annotations stubs module [mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `KMS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[kms]'
 python -m pip install mypy-boto3-kms
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,133 +42,37 @@ python -m pip install mypy-boto3-kms
 python -m pip uninstall -y mypy-boto3-kms
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="kmsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## KMSClient
 
-Type annotations for `boto3.client("kms")` as [KMSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("kms")` as [KMSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_kms.client import KMSClient
+
+def get_client() -> KMSClient:
+    return Session().cleint("kms")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_key_deletion](./client.md#cancel_key_deletion)
-- [connect_custom_key_store](./client.md#connect_custom_key_store)
-- [create_alias](./client.md#create_alias)
-- [create_custom_key_store](./client.md#create_custom_key_store)
-- [create_grant](./client.md#create_grant)
-- [create_key](./client.md#create_key)
-- [decrypt](./client.md#decrypt)
-- [delete_alias](./client.md#delete_alias)
-- [delete_custom_key_store](./client.md#delete_custom_key_store)
-- [delete_imported_key_material](./client.md#delete_imported_key_material)
-- [describe_custom_key_stores](./client.md#describe_custom_key_stores)
-- [describe_key](./client.md#describe_key)
-- [disable_key](./client.md#disable_key)
-- [disable_key_rotation](./client.md#disable_key_rotation)
-- [disconnect_custom_key_store](./client.md#disconnect_custom_key_store)
-- [enable_key](./client.md#enable_key)
-- [enable_key_rotation](./client.md#enable_key_rotation)
-- [encrypt](./client.md#encrypt)
-- [exceptions](./client.md#exceptions)
-- [generate_data_key](./client.md#generate_data_key)
-- [generate_data_key_pair](./client.md#generate_data_key_pair)
-- [generate_data_key_pair_without_plaintext](./client.md#generate_data_key_pair_without_plaintext)
-- [generate_data_key_without_plaintext](./client.md#generate_data_key_without_plaintext)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [generate_random](./client.md#generate_random)
-- [get_key_policy](./client.md#get_key_policy)
-- [get_key_rotation_status](./client.md#get_key_rotation_status)
-- [get_paginator](./client.md#get_paginator)
-- [get_parameters_for_import](./client.md#get_parameters_for_import)
-- [get_public_key](./client.md#get_public_key)
-- [import_key_material](./client.md#import_key_material)
-- [list_aliases](./client.md#list_aliases)
-- [list_grants](./client.md#list_grants)
-- [list_key_policies](./client.md#list_key_policies)
-- [list_keys](./client.md#list_keys)
-- [list_resource_tags](./client.md#list_resource_tags)
-- [list_retirable_grants](./client.md#list_retirable_grants)
-- [put_key_policy](./client.md#put_key_policy)
-- [re_encrypt](./client.md#re_encrypt)
-- [replicate_key](./client.md#replicate_key)
-- [retire_grant](./client.md#retire_grant)
-- [revoke_grant](./client.md#revoke_grant)
-- [schedule_key_deletion](./client.md#schedule_key_deletion)
-- [sign](./client.md#sign)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_alias](./client.md#update_alias)
-- [update_custom_key_store](./client.md#update_custom_key_store)
-- [update_key_description](./client.md#update_key_description)
-- [update_primary_region](./client.md#update_primary_region)
-- [verify](./client.md#verify)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-KMSClient [exceptions](./client.md#exceptions)
-
-- AlreadyExistsException
-- ClientError
-- CloudHsmClusterInUseException
-- CloudHsmClusterInvalidConfigurationException
-- CloudHsmClusterNotActiveException
-- CloudHsmClusterNotFoundException
-- CloudHsmClusterNotRelatedException
-- CustomKeyStoreHasCMKsException
-- CustomKeyStoreInvalidStateException
-- CustomKeyStoreNameInUseException
-- CustomKeyStoreNotFoundException
-- DependencyTimeoutException
-- DisabledException
-- ExpiredImportTokenException
-- IncorrectKeyException
-- IncorrectKeyMaterialException
-- IncorrectTrustAnchorException
-- InvalidAliasNameException
-- InvalidArnException
-- InvalidCiphertextException
-- InvalidGrantIdException
-- InvalidGrantTokenException
-- InvalidImportTokenException
-- InvalidKeyUsageException
-- InvalidMarkerException
-- KMSInternalException
-- KMSInvalidSignatureException
-- KMSInvalidStateException
-- KeyUnavailableException
-- LimitExceededException
-- MalformedPolicyDocumentException
-- NotFoundException
-- TagException
-- UnsupportedOperationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("kms").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("kms").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_kms.paginator import ListAliasesPaginator, ...
+from mypy_boto3_kms.paginator import ListAliasesPaginator
+
+def get_list_aliases_paginator() -> ListAliasesPaginator:
+    return Session().client("kms").get_paginator("list_aliases"))
 ```
 
 - [ListAliasesPaginator](./paginators.md#listaliasespaginator)
@@ -198,16 +80,23 @@ from mypy_boto3_kms.paginator import ListAliasesPaginator, ...
 - [ListKeyPoliciesPaginator](./paginators.md#listkeypoliciespaginator)
 - [ListKeysPaginator](./paginators.md#listkeyspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kms.literals import AlgorithmSpecType
 
-```python
-from mypy_boto3_kms.literals import AlgorithmSpecType, ...
+def get_value() -> AlgorithmSpecType:
+    return "RSAES_OAEP_SHA_1"
 ```
 
 - [AlgorithmSpecType](./literals.md#algorithmspectype)
@@ -236,18 +125,22 @@ from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_kms.type_defs import AliasListEntryTypeDef
 
-```python
-from mypy_boto3_kms.type_defs import AliasListEntryTypeDef, ...
+def get_value() -> AliasListEntryTypeDef:
+    return {
+        "AliasName": ...,
+    }
 ```
 
 - [AliasListEntryTypeDef](./type_defs.md#aliaslistentrytypedef)
@@ -301,12 +194,16 @@ from mypy_boto3_kms.type_defs import AliasListEntryTypeDef, ...
 - [ImportKeyMaterialRequestRequestTypeDef](./type_defs.md#importkeymaterialrequestrequesttypedef)
 - [KeyListEntryTypeDef](./type_defs.md#keylistentrytypedef)
 - [KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef)
+- [ListAliasesRequestListAliasesPaginateTypeDef](./type_defs.md#listaliasesrequestlistaliasespaginatetypedef)
 - [ListAliasesRequestRequestTypeDef](./type_defs.md#listaliasesrequestrequesttypedef)
 - [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)
+- [ListGrantsRequestListGrantsPaginateTypeDef](./type_defs.md#listgrantsrequestlistgrantspaginatetypedef)
 - [ListGrantsRequestRequestTypeDef](./type_defs.md#listgrantsrequestrequesttypedef)
 - [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef)
+- [ListKeyPoliciesRequestListKeyPoliciesPaginateTypeDef](./type_defs.md#listkeypoliciesrequestlistkeypoliciespaginatetypedef)
 - [ListKeyPoliciesRequestRequestTypeDef](./type_defs.md#listkeypoliciesrequestrequesttypedef)
 - [ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef)
+- [ListKeysRequestListKeysPaginateTypeDef](./type_defs.md#listkeysrequestlistkeyspaginatetypedef)
 - [ListKeysRequestRequestTypeDef](./type_defs.md#listkeysrequestrequesttypedef)
 - [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef)
 - [ListResourceTagsRequestRequestTypeDef](./type_defs.md#listresourcetagsrequestrequesttypedef)
@@ -336,3 +233,4 @@ from mypy_boto3_kms.type_defs import AliasListEntryTypeDef, ...
 - [UpdatePrimaryRegionRequestRequestTypeDef](./type_defs.md#updateprimaryregionrequestrequesttypedef)
 - [VerifyRequestRequestTypeDef](./type_defs.md#verifyrequestrequesttypedef)
 - [VerifyResponseTypeDef](./type_defs.md#verifyresponsetypedef)
+

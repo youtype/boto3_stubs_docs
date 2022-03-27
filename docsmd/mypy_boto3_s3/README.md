@@ -1,47 +1,20 @@
-<a id="type-annotations-for-boto3-s3-module"></a>
-
-# Type annotations for boto3 S3 module
+#  S3 module
 
 > [Index](../README.md) > S3
 
-Auto-generated documentation for
-[S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
-type annotations stubs module
-[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
+!!! note ""
 
-- [Type annotations for boto3 S3 module](#type-annotations-for-boto3-s3-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-    - [From conda-forge](#from-conda-forge)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [S3Client](#s3client)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [S3ServiceResource](#s3serviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
+    type annotations stubs module [mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `S3`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -61,33 +34,31 @@ python -m pip install 'boto3-stubs-lite[s3]'
 python -m pip install mypy-boto3-s3
 ```
 
-<a id="from-conda-forge"></a>
 
 ### From conda-forge
 
-Installing `mypy-boto3-s3` from the `conda-forge` channel can be achieved by
-adding `conda-forge` to your channels with:
+Installing `mypy-boto3-s3` from the `conda-forge` channel
+can be achieved by adding `conda-forge` to your channels with:
 
 ```bash
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mypy-boto3-s3` can be
-installed with:
+Once the `conda-forge` channel has been enabled, `mypy-boto3-s3`
+can be installed with:
 
 ```bash
 conda install mypy-boto3-s3
 ```
 
-It is possible to list all of the versions of `mypy-boto3-s3` available on your
-platform with:
+It is possible to list all of the versions of `mypy-boto3-s3`
+available on your platform with:
 
 ```bash
 conda search mypy-boto3-s3 --channel conda-forge
 ```
 
-<a id="how-to-uninstall"></a>
 
 ## How to uninstall
 
@@ -95,190 +66,118 @@ conda search mypy-boto3-s3 --channel conda-forge
 python -m pip uninstall -y mypy-boto3-s3
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="s3client"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## S3Client
 
-Type annotations for `boto3.client("s3")` as [S3Client](./client.md)
+Type annotations and code completion for  `#!python boto3.client("s3")` as [S3Client](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_s3.client import S3Client
+
+def get_client() -> S3Client:
+    return Session().cleint("s3")
 ```
 
-<a id="methods"></a>
 
-### Methods
+## Paginators
 
-- [abort_multipart_upload](./client.md#abort_multipart_upload)
-- [can_paginate](./client.md#can_paginate)
-- [complete_multipart_upload](./client.md#complete_multipart_upload)
-- [copy](./client.md#copy)
-- [copy_object](./client.md#copy_object)
-- [create_bucket](./client.md#create_bucket)
-- [create_multipart_upload](./client.md#create_multipart_upload)
-- [delete_bucket](./client.md#delete_bucket)
-- [delete_bucket_analytics_configuration](./client.md#delete_bucket_analytics_configuration)
-- [delete_bucket_cors](./client.md#delete_bucket_cors)
-- [delete_bucket_encryption](./client.md#delete_bucket_encryption)
-- [delete_bucket_intelligent_tiering_configuration](./client.md#delete_bucket_intelligent_tiering_configuration)
-- [delete_bucket_inventory_configuration](./client.md#delete_bucket_inventory_configuration)
-- [delete_bucket_lifecycle](./client.md#delete_bucket_lifecycle)
-- [delete_bucket_metrics_configuration](./client.md#delete_bucket_metrics_configuration)
-- [delete_bucket_ownership_controls](./client.md#delete_bucket_ownership_controls)
-- [delete_bucket_policy](./client.md#delete_bucket_policy)
-- [delete_bucket_replication](./client.md#delete_bucket_replication)
-- [delete_bucket_tagging](./client.md#delete_bucket_tagging)
-- [delete_bucket_website](./client.md#delete_bucket_website)
-- [delete_object](./client.md#delete_object)
-- [delete_object_tagging](./client.md#delete_object_tagging)
-- [delete_objects](./client.md#delete_objects)
-- [delete_public_access_block](./client.md#delete_public_access_block)
-- [download_file](./client.md#download_file)
-- [download_fileobj](./client.md#download_fileobj)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_post](./client.md#generate_presigned_post)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_bucket_accelerate_configuration](./client.md#get_bucket_accelerate_configuration)
-- [get_bucket_acl](./client.md#get_bucket_acl)
-- [get_bucket_analytics_configuration](./client.md#get_bucket_analytics_configuration)
-- [get_bucket_cors](./client.md#get_bucket_cors)
-- [get_bucket_encryption](./client.md#get_bucket_encryption)
-- [get_bucket_intelligent_tiering_configuration](./client.md#get_bucket_intelligent_tiering_configuration)
-- [get_bucket_inventory_configuration](./client.md#get_bucket_inventory_configuration)
-- [get_bucket_lifecycle](./client.md#get_bucket_lifecycle)
-- [get_bucket_lifecycle_configuration](./client.md#get_bucket_lifecycle_configuration)
-- [get_bucket_location](./client.md#get_bucket_location)
-- [get_bucket_logging](./client.md#get_bucket_logging)
-- [get_bucket_metrics_configuration](./client.md#get_bucket_metrics_configuration)
-- [get_bucket_notification](./client.md#get_bucket_notification)
-- [get_bucket_notification_configuration](./client.md#get_bucket_notification_configuration)
-- [get_bucket_ownership_controls](./client.md#get_bucket_ownership_controls)
-- [get_bucket_policy](./client.md#get_bucket_policy)
-- [get_bucket_policy_status](./client.md#get_bucket_policy_status)
-- [get_bucket_replication](./client.md#get_bucket_replication)
-- [get_bucket_request_payment](./client.md#get_bucket_request_payment)
-- [get_bucket_tagging](./client.md#get_bucket_tagging)
-- [get_bucket_versioning](./client.md#get_bucket_versioning)
-- [get_bucket_website](./client.md#get_bucket_website)
-- [get_object](./client.md#get_object)
-- [get_object_acl](./client.md#get_object_acl)
-- [get_object_attributes](./client.md#get_object_attributes)
-- [get_object_legal_hold](./client.md#get_object_legal_hold)
-- [get_object_lock_configuration](./client.md#get_object_lock_configuration)
-- [get_object_retention](./client.md#get_object_retention)
-- [get_object_tagging](./client.md#get_object_tagging)
-- [get_object_torrent](./client.md#get_object_torrent)
-- [get_paginator](./client.md#get_paginator)
-- [get_public_access_block](./client.md#get_public_access_block)
-- [get_waiter](./client.md#get_waiter)
-- [head_bucket](./client.md#head_bucket)
-- [head_object](./client.md#head_object)
-- [list_bucket_analytics_configurations](./client.md#list_bucket_analytics_configurations)
-- [list_bucket_intelligent_tiering_configurations](./client.md#list_bucket_intelligent_tiering_configurations)
-- [list_bucket_inventory_configurations](./client.md#list_bucket_inventory_configurations)
-- [list_bucket_metrics_configurations](./client.md#list_bucket_metrics_configurations)
-- [list_buckets](./client.md#list_buckets)
-- [list_multipart_uploads](./client.md#list_multipart_uploads)
-- [list_object_versions](./client.md#list_object_versions)
-- [list_objects](./client.md#list_objects)
-- [list_objects_v2](./client.md#list_objects_v2)
-- [list_parts](./client.md#list_parts)
-- [put_bucket_accelerate_configuration](./client.md#put_bucket_accelerate_configuration)
-- [put_bucket_acl](./client.md#put_bucket_acl)
-- [put_bucket_analytics_configuration](./client.md#put_bucket_analytics_configuration)
-- [put_bucket_cors](./client.md#put_bucket_cors)
-- [put_bucket_encryption](./client.md#put_bucket_encryption)
-- [put_bucket_intelligent_tiering_configuration](./client.md#put_bucket_intelligent_tiering_configuration)
-- [put_bucket_inventory_configuration](./client.md#put_bucket_inventory_configuration)
-- [put_bucket_lifecycle](./client.md#put_bucket_lifecycle)
-- [put_bucket_lifecycle_configuration](./client.md#put_bucket_lifecycle_configuration)
-- [put_bucket_logging](./client.md#put_bucket_logging)
-- [put_bucket_metrics_configuration](./client.md#put_bucket_metrics_configuration)
-- [put_bucket_notification](./client.md#put_bucket_notification)
-- [put_bucket_notification_configuration](./client.md#put_bucket_notification_configuration)
-- [put_bucket_ownership_controls](./client.md#put_bucket_ownership_controls)
-- [put_bucket_policy](./client.md#put_bucket_policy)
-- [put_bucket_replication](./client.md#put_bucket_replication)
-- [put_bucket_request_payment](./client.md#put_bucket_request_payment)
-- [put_bucket_tagging](./client.md#put_bucket_tagging)
-- [put_bucket_versioning](./client.md#put_bucket_versioning)
-- [put_bucket_website](./client.md#put_bucket_website)
-- [put_object](./client.md#put_object)
-- [put_object_acl](./client.md#put_object_acl)
-- [put_object_legal_hold](./client.md#put_object_legal_hold)
-- [put_object_lock_configuration](./client.md#put_object_lock_configuration)
-- [put_object_retention](./client.md#put_object_retention)
-- [put_object_tagging](./client.md#put_object_tagging)
-- [put_public_access_block](./client.md#put_public_access_block)
-- [restore_object](./client.md#restore_object)
-- [select_object_content](./client.md#select_object_content)
-- [upload_file](./client.md#upload_file)
-- [upload_fileobj](./client.md#upload_fileobj)
-- [upload_part](./client.md#upload_part)
-- [upload_part_copy](./client.md#upload_part_copy)
-- [write_get_object_response](./client.md#write_get_object_response)
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("s3").get_paginator("...")`.
 
-<a id="exceptions"></a>
+```python title="Usage example"
+from boto3.session import Session
 
-### Exceptions
+from mypy_boto3_s3.paginator import ListMultipartUploadsPaginator
 
-S3Client [exceptions](./client.md#exceptions)
+def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
+    return Session().client("s3").get_paginator("list_multipart_uploads"))
+```
 
-- BucketAlreadyExists
-- BucketAlreadyOwnedByYou
-- ClientError
-- InvalidObjectState
-- NoSuchBucket
-- NoSuchKey
-- NoSuchUpload
-- ObjectAlreadyInActiveTierError
-- ObjectNotInActiveTierError
+- [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+- [ListObjectVersionsPaginator](./paginators.md#listobjectversionspaginator)
+- [ListObjectsPaginator](./paginators.md#listobjectspaginator)
+- [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
+- [ListPartsPaginator](./paginators.md#listpartspaginator)
 
-<a id="s3serviceresource"></a>
+
+
+
+## Waiters
+
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("s3").get_waiter("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_s3.waiter import BucketExistsWaiter
+
+def get_bucket_exists_waiter() -> BucketExistsWaiter:
+    return Session().client("s3").get_waiter("bucket_exists")
+```
+
+- [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
+- [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
+- [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
+- [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)
+
+
+
+
 
 ## S3ServiceResource
 
-Type annotations for `boto3.resource("s3")` as
+Type annotations and code completion for `#!python boto3.resource("s3")` as
 [S3ServiceResource](./service_resource.md#s3serviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.ServiceResource)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_s3.service_resource import S3ServiceResource
+
+def get_s3_resource() -> S3ServiceResource:
+    return Session().resource("s3")
 ```
 
-<a id="collections"></a>
 
 ### Collections
 
-Type annotations for collections from `boto3.resource("s3").*`.
+Type annotations and code completion for collections
+from `#!python boto3.resource("s3").*`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection, ...
+from mypy_boto3_s3.service_resource import ServiceResourceBucketsCollection
+
+def get_collection() -> ServiceResourceBucketsCollection:
+    return Session().resource("s3").buckets
 ```
 
 - [ServiceResourceBucketsCollection](./service_resource.md#s3serviceresourcebuckets)
 
-<a id="resources"></a>
+
+
 
 ### Resources
 
-Type annotations for additional resources from `boto3.resource("s3").*`.
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("s3").*`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_s3.service_resource import Bucket, ...
+from mypy_boto3_s3.service_resource import Bucket
+
+def get_resource() -> Bucket:
+    return Session().resource("s3").Bucket(...)
 ```
 
 - [Bucket](./service_resource.md#bucket)
@@ -300,53 +199,19 @@ from mypy_boto3_s3.service_resource import Bucket, ...
 - [ObjectSummary](./service_resource.md#objectsummary)
 - [ObjectVersion](./service_resource.md#objectversion)
 
-<a id="paginators"></a>
 
-## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("s3").get_paginator("...")`.
 
-Can be used directly:
-
-```python
-from mypy_boto3_s3.paginator import ListMultipartUploadsPaginator, ...
-```
-
-- [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
-- [ListObjectVersionsPaginator](./paginators.md#listobjectversionspaginator)
-- [ListObjectsPaginator](./paginators.md#listobjectspaginator)
-- [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
-- [ListPartsPaginator](./paginators.md#listpartspaginator)
-
-<a id="waiters"></a>
-
-## Waiters
-
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("s3").get_waiter("...")`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_s3.waiter import BucketExistsWaiter, ...
-```
-
-- [BucketExistsWaiter](./waiters.md#bucketexistswaiter)
-- [BucketNotExistsWaiter](./waiters.md#bucketnotexistswaiter)
-- [ObjectExistsWaiter](./waiters.md#objectexistswaiter)
-- [ObjectNotExistsWaiter](./waiters.md#objectnotexistswaiter)
-
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType
 
-```python
-from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType, ...
+def get_value() -> AnalyticsS3ExportFileFormatType:
+    return "CSV"
 ```
 
 - [AnalyticsS3ExportFileFormatType](./literals.md#analyticss3exportfileformattype)
@@ -421,18 +286,22 @@ from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef
 
-```python
-from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
+def get_value() -> AbortIncompleteMultipartUploadTypeDef:
+    return {
+        "DaysAfterInitiation": ...,
+    }
 ```
 
 - [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
@@ -601,8 +470,12 @@ from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
 - [GlacierJobParametersTypeDef](./type_defs.md#glacierjobparameterstypedef)
 - [GrantTypeDef](./type_defs.md#granttypedef)
 - [GranteeTypeDef](./type_defs.md#granteetypedef)
+- [HeadBucketRequestBucketExistsWaitTypeDef](./type_defs.md#headbucketrequestbucketexistswaittypedef)
+- [HeadBucketRequestBucketNotExistsWaitTypeDef](./type_defs.md#headbucketrequestbucketnotexistswaittypedef)
 - [HeadBucketRequestRequestTypeDef](./type_defs.md#headbucketrequestrequesttypedef)
 - [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef)
+- [HeadObjectRequestObjectExistsWaitTypeDef](./type_defs.md#headobjectrequestobjectexistswaittypedef)
+- [HeadObjectRequestObjectNotExistsWaitTypeDef](./type_defs.md#headobjectrequestobjectnotexistswaittypedef)
 - [HeadObjectRequestObjectVersionHeadTypeDef](./type_defs.md#headobjectrequestobjectversionheadtypedef)
 - [HeadObjectRequestRequestTypeDef](./type_defs.md#headobjectrequestrequesttypedef)
 - [IndexDocumentResponseMetadataTypeDef](./type_defs.md#indexdocumentresponsemetadatatypedef)
@@ -637,14 +510,19 @@ from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
 - [ListBucketMetricsConfigurationsRequestRequestTypeDef](./type_defs.md#listbucketmetricsconfigurationsrequestrequesttypedef)
 - [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef)
 - [ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)
+- [ListMultipartUploadsRequestListMultipartUploadsPaginateTypeDef](./type_defs.md#listmultipartuploadsrequestlistmultipartuploadspaginatetypedef)
 - [ListMultipartUploadsRequestRequestTypeDef](./type_defs.md#listmultipartuploadsrequestrequesttypedef)
 - [ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef)
+- [ListObjectVersionsRequestListObjectVersionsPaginateTypeDef](./type_defs.md#listobjectversionsrequestlistobjectversionspaginatetypedef)
 - [ListObjectVersionsRequestRequestTypeDef](./type_defs.md#listobjectversionsrequestrequesttypedef)
 - [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef)
+- [ListObjectsRequestListObjectsPaginateTypeDef](./type_defs.md#listobjectsrequestlistobjectspaginatetypedef)
 - [ListObjectsRequestRequestTypeDef](./type_defs.md#listobjectsrequestrequesttypedef)
 - [ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef)
+- [ListObjectsV2RequestListObjectsV2PaginateTypeDef](./type_defs.md#listobjectsv2requestlistobjectsv2paginatetypedef)
 - [ListObjectsV2RequestRequestTypeDef](./type_defs.md#listobjectsv2requestrequesttypedef)
 - [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef)
+- [ListPartsRequestListPartsPaginateTypeDef](./type_defs.md#listpartsrequestlistpartspaginatetypedef)
 - [ListPartsRequestRequestTypeDef](./type_defs.md#listpartsrequestrequesttypedef)
 - [LoggingEnabledResponseMetadataTypeDef](./type_defs.md#loggingenabledresponsemetadatatypedef)
 - [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
@@ -816,3 +694,4 @@ from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef, ...
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
 - [WriteGetObjectResponseRequestRequestTypeDef](./type_defs.md#writegetobjectresponserequestrequesttypedef)
+

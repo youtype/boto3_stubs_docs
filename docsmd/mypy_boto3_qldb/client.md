@@ -1,51 +1,18 @@
-<a id="qldbclient-for-boto3-qldb-module"></a>
-
-# QLDBClient for boto3 QLDB module
+# QLDBClient
 
 > [Index](../README.md) > [QLDB](./README.md) > QLDBClient
 
-Auto-generated documentation for
-[QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
-type annotations stubs module
-[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
+!!! note ""
 
-- [QLDBClient for boto3 QLDB module](#qldbclient-for-boto3-qldb-module)
-  - [QLDBClient](#qldbclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [cancel_journal_kinesis_stream](#cancel_journal_kinesis_stream)
-    - [create_ledger](#create_ledger)
-    - [delete_ledger](#delete_ledger)
-    - [describe_journal_kinesis_stream](#describe_journal_kinesis_stream)
-    - [describe_journal_s3_export](#describe_journal_s3_export)
-    - [describe_ledger](#describe_ledger)
-    - [export_journal_to_s3](#export_journal_to_s3)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_block](#get_block)
-    - [get_digest](#get_digest)
-    - [get_revision](#get_revision)
-    - [list_journal_kinesis_streams_for_ledger](#list_journal_kinesis_streams_for_ledger)
-    - [list_journal_s3_exports](#list_journal_s3_exports)
-    - [list_journal_s3_exports_for_ledger](#list_journal_s3_exports_for_ledger)
-    - [list_ledgers](#list_ledgers)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [stream_journal_to_kinesis](#stream_journal_to_kinesis)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_ledger](#update_ledger)
-    - [update_ledger_permissions_mode](#update_ledger_permissions_mode)
-
-<a id="qldbclient"></a>
+    Auto-generated documentation for [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
+    type annotations stubs module [mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 ## QLDBClient
 
-Type annotations for `boto3.client("qldb")`
+Type annotations and code completion for `#!python boto3.client("qldb")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_qldb.client import QLDBClient
 
@@ -53,550 +20,720 @@ def get_qldb_client() -> QLDBClient:
     return Session().client("qldb")
 ```
 
-Boto3 documentation:
-[QLDB.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("qldb").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("qldb")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InvalidParameterException,
+    client.LimitExceededException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceInUseException,
+    client.ResourceNotFoundException,
+    client.ResourcePreconditionNotMetException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_qldb.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InvalidParameterException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceInUseException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourcePreconditionNotMetException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-QLDBClient exceptions.
-
-Type annotations for `boto3.client("qldb").exceptions` method.
-
-Boto3 documentation:
-[QLDB.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("qldb").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("qldb").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.can_paginate)
 
-Boto3 documentation:
-[QLDB.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_journal\_kinesis\_stream"></a>
-
-### cancel_journal_kinesis_stream
+### cancel\_journal\_kinesis\_stream
 
 Ends a given Amazon QLDB journal stream.
 
-Type annotations for `boto3.client("qldb").cancel_journal_kinesis_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("qldb").cancel_journal_kinesis_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
 
-Boto3 documentation:
-[QLDB.Client.cancel_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.cancel_journal_kinesis_stream)
+```python title="Method definition"
+def cancel_journal_kinesis_stream(
+    self,
+    *,
+    LedgerName: str,
+    StreamId: str,
+) -> CancelJournalKinesisStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#canceljournalkinesisstreamrequestrequesttypedef).
+1. See [:material-code-braces: CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LedgerName`: `str` *(required)*
-- `StreamId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelJournalKinesisStreamRequestRequestTypeDef = {  # (1)
+    "LedgerName": ...,
+    "StreamId": ...,
+}
 
-Returns
-[CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef).
+parent.cancel_journal_kinesis_stream(**kwargs)
+```
 
-<a id="create\_ledger"></a>
+1. See [:material-code-braces: CancelJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#canceljournalkinesisstreamrequestrequesttypedef) 
 
-### create_ledger
+### create\_ledger
 
 Creates a new ledger in your Amazon Web Services account in the current Region.
 
-Type annotations for `boto3.client("qldb").create_ledger` method.
+Type annotations and code completion for `#!python boto3.client("qldb").create_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger)
 
-Boto3 documentation:
-[QLDB.Client.create_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.create_ledger)
+```python title="Method definition"
+def create_ledger(
+    self,
+    *,
+    Name: str,
+    PermissionsMode: PermissionsModeType,  # (1)
+    Tags: Mapping[str, str] = ...,
+    DeletionProtection: bool = ...,
+    KmsKey: str = ...,
+) -> CreateLedgerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLedgerRequestRequestTypeDef](./type_defs.md#createledgerrequestrequesttypedef).
+1. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
+2. See [:material-code-braces: CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-  *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `DeletionProtection`: `bool`
-- `KmsKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateLedgerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "PermissionsMode": ...,
+}
 
-Returns
-[CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
+parent.create_ledger(**kwargs)
+```
 
-<a id="delete\_ledger"></a>
+1. See [:material-code-braces: CreateLedgerRequestRequestTypeDef](./type_defs.md#createledgerrequestrequesttypedef) 
 
-### delete_ledger
+### delete\_ledger
 
 Deletes a ledger and all of its contents.
 
-Type annotations for `boto3.client("qldb").delete_ledger` method.
+Type annotations and code completion for `#!python boto3.client("qldb").delete_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger)
 
-Boto3 documentation:
-[QLDB.Client.delete_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.delete_ledger)
+```python title="Method definition"
+def delete_ledger(
+    self,
+    *,
+    Name: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLedgerRequestRequestTypeDef](./type_defs.md#deleteledgerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLedgerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-<a id="describe\_journal\_kinesis\_stream"></a>
+parent.delete_ledger(**kwargs)
+```
 
-### describe_journal_kinesis_stream
+1. See [:material-code-braces: DeleteLedgerRequestRequestTypeDef](./type_defs.md#deleteledgerrequestrequesttypedef) 
+
+### describe\_journal\_kinesis\_stream
 
 Returns detailed information about a given Amazon QLDB journal stream.
 
-Type annotations for `boto3.client("qldb").describe_journal_kinesis_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("qldb").describe_journal_kinesis_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
 
-Boto3 documentation:
-[QLDB.Client.describe_journal_kinesis_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_kinesis_stream)
+```python title="Method definition"
+def describe_journal_kinesis_stream(
+    self,
+    *,
+    LedgerName: str,
+    StreamId: str,
+) -> DescribeJournalKinesisStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#describejournalkinesisstreamrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LedgerName`: `str` *(required)*
-- `StreamId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJournalKinesisStreamRequestRequestTypeDef = {  # (1)
+    "LedgerName": ...,
+    "StreamId": ...,
+}
 
-Returns
-[DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef).
+parent.describe_journal_kinesis_stream(**kwargs)
+```
 
-<a id="describe\_journal\_s3\_export"></a>
+1. See [:material-code-braces: DescribeJournalKinesisStreamRequestRequestTypeDef](./type_defs.md#describejournalkinesisstreamrequestrequesttypedef) 
 
-### describe_journal_s3_export
+### describe\_journal\_s3\_export
 
 Returns information about a journal export job, including the ledger name,
 export ID, creation time, current status, and the parameters of the original
 export creation request.
 
-Type annotations for `boto3.client("qldb").describe_journal_s3_export` method.
+Type annotations and code completion for `#!python boto3.client("qldb").describe_journal_s3_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
 
-Boto3 documentation:
-[QLDB.Client.describe_journal_s3_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_journal_s3_export)
+```python title="Method definition"
+def describe_journal_s3_export(
+    self,
+    *,
+    Name: str,
+    ExportId: str,
+) -> DescribeJournalS3ExportResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJournalS3ExportRequestRequestTypeDef](./type_defs.md#describejournals3exportrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `ExportId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJournalS3ExportRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "ExportId": ...,
+}
 
-Returns
-[DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef).
+parent.describe_journal_s3_export(**kwargs)
+```
 
-<a id="describe\_ledger"></a>
+1. See [:material-code-braces: DescribeJournalS3ExportRequestRequestTypeDef](./type_defs.md#describejournals3exportrequestrequesttypedef) 
 
-### describe_ledger
+### describe\_ledger
 
 Returns information about a ledger, including its state, permissions mode,
 encryption at rest settings, and when it was created.
 
-Type annotations for `boto3.client("qldb").describe_ledger` method.
+Type annotations and code completion for `#!python boto3.client("qldb").describe_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger)
 
-Boto3 documentation:
-[QLDB.Client.describe_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.describe_ledger)
+```python title="Method definition"
+def describe_ledger(
+    self,
+    *,
+    Name: str,
+) -> DescribeLedgerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeLedgerRequestRequestTypeDef](./type_defs.md#describeledgerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeLedgerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef).
+parent.describe_ledger(**kwargs)
+```
 
-<a id="export\_journal\_to\_s3"></a>
+1. See [:material-code-braces: DescribeLedgerRequestRequestTypeDef](./type_defs.md#describeledgerrequestrequesttypedef) 
 
-### export_journal_to_s3
+### export\_journal\_to\_s3
 
 Exports journal contents within a date and time range from a ledger into a
 specified Amazon Simple Storage Service (Amazon S3) bucket.
 
-Type annotations for `boto3.client("qldb").export_journal_to_s3` method.
+Type annotations and code completion for `#!python boto3.client("qldb").export_journal_to_s3` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
 
-Boto3 documentation:
-[QLDB.Client.export_journal_to_s3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.export_journal_to_s3)
+```python title="Method definition"
+def export_journal_to_s3(
+    self,
+    *,
+    Name: str,
+    InclusiveStartTime: Union[datetime, str],
+    ExclusiveEndTime: Union[datetime, str],
+    S3ExportConfiguration: S3ExportConfigurationTypeDef,  # (1)
+    RoleArn: str,
+    OutputFormat: OutputFormatType = ...,  # (2)
+) -> ExportJournalToS3ResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ExportJournalToS3RequestRequestTypeDef](./type_defs.md#exportjournaltos3requestrequesttypedef).
+1. See [:material-code-braces: S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef) 
+2. See [:material-code-brackets: OutputFormatType](./literals.md#outputformattype) 
+3. See [:material-code-braces: ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `InclusiveStartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `ExclusiveEndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `S3ExportConfiguration`:
-  [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
-  *(required)*
-- `RoleArn`: `str` *(required)*
-- `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
+```python title="Usage example with kwargs"
+kwargs: ExportJournalToS3RequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "InclusiveStartTime": ...,
+    "ExclusiveEndTime": ...,
+    "S3ExportConfiguration": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
+parent.export_journal_to_s3(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: ExportJournalToS3RequestRequestTypeDef](./type_defs.md#exportjournaltos3requestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("qldb").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("qldb").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.generate_presigned_url)
 
-Boto3 documentation:
-[QLDB.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_block"></a>
-
-### get_block
+### get\_block
 
 Returns a block object at a specified address in a journal.
 
-Type annotations for `boto3.client("qldb").get_block` method.
+Type annotations and code completion for `#!python boto3.client("qldb").get_block` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block)
 
-Boto3 documentation:
-[QLDB.Client.get_block](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_block)
+```python title="Method definition"
+def get_block(
+    self,
+    *,
+    Name: str,
+    BlockAddress: ValueHolderTypeDef,  # (1)
+    DigestTipAddress: ValueHolderTypeDef = ...,  # (1)
+) -> GetBlockResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetBlockRequestRequestTypeDef](./type_defs.md#getblockrequestrequesttypedef).
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+3. See [:material-code-braces: GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-  *(required)*
-- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
+```python title="Usage example with kwargs"
+kwargs: GetBlockRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "BlockAddress": ...,
+}
 
-Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
+parent.get_block(**kwargs)
+```
 
-<a id="get\_digest"></a>
+1. See [:material-code-braces: GetBlockRequestRequestTypeDef](./type_defs.md#getblockrequestrequesttypedef) 
 
-### get_digest
+### get\_digest
 
 Returns the digest of a ledger at the latest committed block in the journal.
 
-Type annotations for `boto3.client("qldb").get_digest` method.
+Type annotations and code completion for `#!python boto3.client("qldb").get_digest` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest)
 
-Boto3 documentation:
-[QLDB.Client.get_digest](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_digest)
+```python title="Method definition"
+def get_digest(
+    self,
+    *,
+    Name: str,
+) -> GetDigestResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDigestRequestRequestTypeDef](./type_defs.md#getdigestrequestrequesttypedef).
+1. See [:material-code-braces: GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDigestRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
+parent.get_digest(**kwargs)
+```
 
-<a id="get\_revision"></a>
+1. See [:material-code-braces: GetDigestRequestRequestTypeDef](./type_defs.md#getdigestrequestrequesttypedef) 
 
-### get_revision
+### get\_revision
 
 Returns a revision data object for a specified document ID and block address.
 
-Type annotations for `boto3.client("qldb").get_revision` method.
+Type annotations and code completion for `#!python boto3.client("qldb").get_revision` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision)
 
-Boto3 documentation:
-[QLDB.Client.get_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.get_revision)
+```python title="Method definition"
+def get_revision(
+    self,
+    *,
+    Name: str,
+    BlockAddress: ValueHolderTypeDef,  # (1)
+    DocumentId: str,
+    DigestTipAddress: ValueHolderTypeDef = ...,  # (1)
+) -> GetRevisionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef).
+1. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+2. See [:material-code-braces: ValueHolderTypeDef](./type_defs.md#valueholdertypedef) 
+3. See [:material-code-braces: GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `BlockAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
-  *(required)*
-- `DocumentId`: `str` *(required)*
-- `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
+```python title="Usage example with kwargs"
+kwargs: GetRevisionRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "BlockAddress": ...,
+    "DocumentId": ...,
+}
 
-Returns
-[GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
+parent.get_revision(**kwargs)
+```
 
-<a id="list\_journal\_kinesis\_streams\_for\_ledger"></a>
+1. See [:material-code-braces: GetRevisionRequestRequestTypeDef](./type_defs.md#getrevisionrequestrequesttypedef) 
 
-### list_journal_kinesis_streams_for_ledger
+### list\_journal\_kinesis\_streams\_for\_ledger
 
 Returns an array of all Amazon QLDB journal stream descriptors for a given
 ledger.
 
-Type annotations for
-`boto3.client("qldb").list_journal_kinesis_streams_for_ledger` method.
+Type annotations and code completion for `#!python boto3.client("qldb").list_journal_kinesis_streams_for_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
 
-Boto3 documentation:
-[QLDB.Client.list_journal_kinesis_streams_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_kinesis_streams_for_ledger)
+```python title="Method definition"
+def list_journal_kinesis_streams_for_ledger(
+    self,
+    *,
+    LedgerName: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListJournalKinesisStreamsForLedgerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerrequestrequesttypedef).
+1. See [:material-code-braces: ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LedgerName`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJournalKinesisStreamsForLedgerRequestRequestTypeDef = {  # (1)
+    "LedgerName": ...,
+}
 
-Returns
-[ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef).
+parent.list_journal_kinesis_streams_for_ledger(**kwargs)
+```
 
-<a id="list\_journal\_s3\_exports"></a>
+1. See [:material-code-braces: ListJournalKinesisStreamsForLedgerRequestRequestTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerrequestrequesttypedef) 
 
-### list_journal_s3_exports
+### list\_journal\_s3\_exports
 
 Returns an array of journal export job descriptions for all ledgers that are
 associated with the current Amazon Web Services account and Region.
 
-Type annotations for `boto3.client("qldb").list_journal_s3_exports` method.
+Type annotations and code completion for `#!python boto3.client("qldb").list_journal_s3_exports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
 
-Boto3 documentation:
-[QLDB.Client.list_journal_s3_exports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports)
+```python title="Method definition"
+def list_journal_s3_exports(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListJournalS3ExportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJournalS3ExportsRequestRequestTypeDef](./type_defs.md#listjournals3exportsrequestrequesttypedef).
+1. See [:material-code-braces: ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJournalS3ExportsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef).
+parent.list_journal_s3_exports(**kwargs)
+```
 
-<a id="list\_journal\_s3\_exports\_for\_ledger"></a>
+1. See [:material-code-braces: ListJournalS3ExportsRequestRequestTypeDef](./type_defs.md#listjournals3exportsrequestrequesttypedef) 
 
-### list_journal_s3_exports_for_ledger
+### list\_journal\_s3\_exports\_for\_ledger
 
 Returns an array of journal export job descriptions for a specified ledger.
 
-Type annotations for `boto3.client("qldb").list_journal_s3_exports_for_ledger`
-method.
+Type annotations and code completion for `#!python boto3.client("qldb").list_journal_s3_exports_for_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
 
-Boto3 documentation:
-[QLDB.Client.list_journal_s3_exports_for_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_journal_s3_exports_for_ledger)
+```python title="Method definition"
+def list_journal_s3_exports_for_ledger(
+    self,
+    *,
+    Name: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListJournalS3ExportsForLedgerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJournalS3ExportsForLedgerRequestRequestTypeDef](./type_defs.md#listjournals3exportsforledgerrequestrequesttypedef).
+1. See [:material-code-braces: ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJournalS3ExportsForLedgerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef).
+parent.list_journal_s3_exports_for_ledger(**kwargs)
+```
 
-<a id="list\_ledgers"></a>
+1. See [:material-code-braces: ListJournalS3ExportsForLedgerRequestRequestTypeDef](./type_defs.md#listjournals3exportsforledgerrequestrequesttypedef) 
 
-### list_ledgers
+### list\_ledgers
 
-Returns an array of ledger summaries that are associated with the current
-Amazon Web Services account and Region.
+Returns an array of ledger summaries that are associated with the current Amazon
+Web Services account and Region.
 
-Type annotations for `boto3.client("qldb").list_ledgers` method.
+Type annotations and code completion for `#!python boto3.client("qldb").list_ledgers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers)
 
-Boto3 documentation:
-[QLDB.Client.list_ledgers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_ledgers)
+```python title="Method definition"
+def list_ledgers(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListLedgersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLedgersRequestRequestTypeDef](./type_defs.md#listledgersrequestrequesttypedef).
+1. See [:material-code-braces: ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLedgersRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef).
+parent.list_ledgers(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListLedgersRequestRequestTypeDef](./type_defs.md#listledgersrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Returns all tags for a specified Amazon QLDB resource.
 
-Type annotations for `boto3.client("qldb").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("qldb").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[QLDB.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="stream\_journal\_to\_kinesis"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### stream_journal_to_kinesis
+### stream\_journal\_to\_kinesis
 
 Creates a journal stream for a given Amazon QLDB ledger.
 
-Type annotations for `boto3.client("qldb").stream_journal_to_kinesis` method.
+Type annotations and code completion for `#!python boto3.client("qldb").stream_journal_to_kinesis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
 
-Boto3 documentation:
-[QLDB.Client.stream_journal_to_kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.stream_journal_to_kinesis)
+```python title="Method definition"
+def stream_journal_to_kinesis(
+    self,
+    *,
+    LedgerName: str,
+    RoleArn: str,
+    InclusiveStartTime: Union[datetime, str],
+    KinesisConfiguration: KinesisConfigurationTypeDef,  # (1)
+    StreamName: str,
+    Tags: Mapping[str, str] = ...,
+    ExclusiveEndTime: Union[datetime, str] = ...,
+) -> StreamJournalToKinesisResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StreamJournalToKinesisRequestRequestTypeDef](./type_defs.md#streamjournaltokinesisrequestrequesttypedef).
+1. See [:material-code-braces: KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef) 
+2. See [:material-code-braces: StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LedgerName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `InclusiveStartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `KinesisConfiguration`:
-  [KinesisConfigurationTypeDef](./type_defs.md#kinesisconfigurationtypedef)
-  *(required)*
-- `StreamName`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StreamJournalToKinesisRequestRequestTypeDef = {  # (1)
+    "LedgerName": ...,
+    "RoleArn": ...,
+    "InclusiveStartTime": ...,
+    "KinesisConfiguration": ...,
+    "StreamName": ...,
+}
 
-Returns
-[StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef).
+parent.stream_journal_to_kinesis(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StreamJournalToKinesisRequestRequestTypeDef](./type_defs.md#streamjournaltokinesisrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to a specified Amazon QLDB resource.
 
-Type annotations for `boto3.client("qldb").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("qldb").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource)
 
-Boto3 documentation:
-[QLDB.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from a specified Amazon QLDB resource.
 
-Type annotations for `boto3.client("qldb").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("qldb").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource)
 
-Boto3 documentation:
-[QLDB.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_ledger"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_ledger
+### update\_ledger
 
 Updates properties on a ledger.
 
-Type annotations for `boto3.client("qldb").update_ledger` method.
+Type annotations and code completion for `#!python boto3.client("qldb").update_ledger` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger)
 
-Boto3 documentation:
-[QLDB.Client.update_ledger](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger)
+```python title="Method definition"
+def update_ledger(
+    self,
+    *,
+    Name: str,
+    DeletionProtection: bool = ...,
+    KmsKey: str = ...,
+) -> UpdateLedgerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLedgerRequestRequestTypeDef](./type_defs.md#updateledgerrequestrequesttypedef).
+1. See [:material-code-braces: UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `DeletionProtection`: `bool`
-- `KmsKey`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateLedgerRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).
+parent.update_ledger(**kwargs)
+```
 
-<a id="update\_ledger\_permissions\_mode"></a>
+1. See [:material-code-braces: UpdateLedgerRequestRequestTypeDef](./type_defs.md#updateledgerrequestrequesttypedef) 
 
-### update_ledger_permissions_mode
+### update\_ledger\_permissions\_mode
 
 Updates the permissions mode of a ledger.
 
-Type annotations for `boto3.client("qldb").update_ledger_permissions_mode`
-method.
+Type annotations and code completion for `#!python boto3.client("qldb").update_ledger_permissions_mode` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger_permissions_mode)
 
-Boto3 documentation:
-[QLDB.Client.update_ledger_permissions_mode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB.Client.update_ledger_permissions_mode)
+```python title="Method definition"
+def update_ledger_permissions_mode(
+    self,
+    *,
+    Name: str,
+    PermissionsMode: PermissionsModeType,  # (1)
+) -> UpdateLedgerPermissionsModeResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateLedgerPermissionsModeRequestRequestTypeDef](./type_defs.md#updateledgerpermissionsmoderequestrequesttypedef).
+1. See [:material-code-brackets: PermissionsModeType](./literals.md#permissionsmodetype) 
+2. See [:material-code-braces: UpdateLedgerPermissionsModeResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateLedgerPermissionsModeRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "PermissionsMode": ...,
+}
 
-Returns
-[UpdateLedgerPermissionsModeResponseTypeDef](./type_defs.md#updateledgerpermissionsmoderesponsetypedef).
+parent.update_ledger_permissions_mode(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateLedgerPermissionsModeRequestRequestTypeDef](./type_defs.md#updateledgerpermissionsmoderequestrequesttypedef) 
+
+
+
+

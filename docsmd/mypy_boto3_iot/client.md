@@ -1,268 +1,18 @@
-<a id="iotclient-for-boto3-iot-module"></a>
-
-# IoTClient for boto3 IoT module
+# IoTClient
 
 > [Index](../README.md) > [IoT](./README.md) > IoTClient
 
-Auto-generated documentation for
-[IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
-type annotations stubs module
-[mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
+!!! note ""
 
-- [IoTClient for boto3 IoT module](#iotclient-for-boto3-iot-module)
-  - [IoTClient](#iotclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_certificate_transfer](#accept_certificate_transfer)
-    - [add_thing_to_billing_group](#add_thing_to_billing_group)
-    - [add_thing_to_thing_group](#add_thing_to_thing_group)
-    - [associate_targets_with_job](#associate_targets_with_job)
-    - [attach_policy](#attach_policy)
-    - [attach_principal_policy](#attach_principal_policy)
-    - [attach_security_profile](#attach_security_profile)
-    - [attach_thing_principal](#attach_thing_principal)
-    - [can_paginate](#can_paginate)
-    - [cancel_audit_mitigation_actions_task](#cancel_audit_mitigation_actions_task)
-    - [cancel_audit_task](#cancel_audit_task)
-    - [cancel_certificate_transfer](#cancel_certificate_transfer)
-    - [cancel_detect_mitigation_actions_task](#cancel_detect_mitigation_actions_task)
-    - [cancel_job](#cancel_job)
-    - [cancel_job_execution](#cancel_job_execution)
-    - [clear_default_authorizer](#clear_default_authorizer)
-    - [confirm_topic_rule_destination](#confirm_topic_rule_destination)
-    - [create_audit_suppression](#create_audit_suppression)
-    - [create_authorizer](#create_authorizer)
-    - [create_billing_group](#create_billing_group)
-    - [create_certificate_from_csr](#create_certificate_from_csr)
-    - [create_custom_metric](#create_custom_metric)
-    - [create_dimension](#create_dimension)
-    - [create_domain_configuration](#create_domain_configuration)
-    - [create_dynamic_thing_group](#create_dynamic_thing_group)
-    - [create_fleet_metric](#create_fleet_metric)
-    - [create_job](#create_job)
-    - [create_job_template](#create_job_template)
-    - [create_keys_and_certificate](#create_keys_and_certificate)
-    - [create_mitigation_action](#create_mitigation_action)
-    - [create_ota_update](#create_ota_update)
-    - [create_policy](#create_policy)
-    - [create_policy_version](#create_policy_version)
-    - [create_provisioning_claim](#create_provisioning_claim)
-    - [create_provisioning_template](#create_provisioning_template)
-    - [create_provisioning_template_version](#create_provisioning_template_version)
-    - [create_role_alias](#create_role_alias)
-    - [create_scheduled_audit](#create_scheduled_audit)
-    - [create_security_profile](#create_security_profile)
-    - [create_stream](#create_stream)
-    - [create_thing](#create_thing)
-    - [create_thing_group](#create_thing_group)
-    - [create_thing_type](#create_thing_type)
-    - [create_topic_rule](#create_topic_rule)
-    - [create_topic_rule_destination](#create_topic_rule_destination)
-    - [delete_account_audit_configuration](#delete_account_audit_configuration)
-    - [delete_audit_suppression](#delete_audit_suppression)
-    - [delete_authorizer](#delete_authorizer)
-    - [delete_billing_group](#delete_billing_group)
-    - [delete_ca_certificate](#delete_ca_certificate)
-    - [delete_certificate](#delete_certificate)
-    - [delete_custom_metric](#delete_custom_metric)
-    - [delete_dimension](#delete_dimension)
-    - [delete_domain_configuration](#delete_domain_configuration)
-    - [delete_dynamic_thing_group](#delete_dynamic_thing_group)
-    - [delete_fleet_metric](#delete_fleet_metric)
-    - [delete_job](#delete_job)
-    - [delete_job_execution](#delete_job_execution)
-    - [delete_job_template](#delete_job_template)
-    - [delete_mitigation_action](#delete_mitigation_action)
-    - [delete_ota_update](#delete_ota_update)
-    - [delete_policy](#delete_policy)
-    - [delete_policy_version](#delete_policy_version)
-    - [delete_provisioning_template](#delete_provisioning_template)
-    - [delete_provisioning_template_version](#delete_provisioning_template_version)
-    - [delete_registration_code](#delete_registration_code)
-    - [delete_role_alias](#delete_role_alias)
-    - [delete_scheduled_audit](#delete_scheduled_audit)
-    - [delete_security_profile](#delete_security_profile)
-    - [delete_stream](#delete_stream)
-    - [delete_thing](#delete_thing)
-    - [delete_thing_group](#delete_thing_group)
-    - [delete_thing_type](#delete_thing_type)
-    - [delete_topic_rule](#delete_topic_rule)
-    - [delete_topic_rule_destination](#delete_topic_rule_destination)
-    - [delete_v2_logging_level](#delete_v2_logging_level)
-    - [deprecate_thing_type](#deprecate_thing_type)
-    - [describe_account_audit_configuration](#describe_account_audit_configuration)
-    - [describe_audit_finding](#describe_audit_finding)
-    - [describe_audit_mitigation_actions_task](#describe_audit_mitigation_actions_task)
-    - [describe_audit_suppression](#describe_audit_suppression)
-    - [describe_audit_task](#describe_audit_task)
-    - [describe_authorizer](#describe_authorizer)
-    - [describe_billing_group](#describe_billing_group)
-    - [describe_ca_certificate](#describe_ca_certificate)
-    - [describe_certificate](#describe_certificate)
-    - [describe_custom_metric](#describe_custom_metric)
-    - [describe_default_authorizer](#describe_default_authorizer)
-    - [describe_detect_mitigation_actions_task](#describe_detect_mitigation_actions_task)
-    - [describe_dimension](#describe_dimension)
-    - [describe_domain_configuration](#describe_domain_configuration)
-    - [describe_endpoint](#describe_endpoint)
-    - [describe_event_configurations](#describe_event_configurations)
-    - [describe_fleet_metric](#describe_fleet_metric)
-    - [describe_index](#describe_index)
-    - [describe_job](#describe_job)
-    - [describe_job_execution](#describe_job_execution)
-    - [describe_job_template](#describe_job_template)
-    - [describe_managed_job_template](#describe_managed_job_template)
-    - [describe_mitigation_action](#describe_mitigation_action)
-    - [describe_provisioning_template](#describe_provisioning_template)
-    - [describe_provisioning_template_version](#describe_provisioning_template_version)
-    - [describe_role_alias](#describe_role_alias)
-    - [describe_scheduled_audit](#describe_scheduled_audit)
-    - [describe_security_profile](#describe_security_profile)
-    - [describe_stream](#describe_stream)
-    - [describe_thing](#describe_thing)
-    - [describe_thing_group](#describe_thing_group)
-    - [describe_thing_registration_task](#describe_thing_registration_task)
-    - [describe_thing_type](#describe_thing_type)
-    - [detach_policy](#detach_policy)
-    - [detach_principal_policy](#detach_principal_policy)
-    - [detach_security_profile](#detach_security_profile)
-    - [detach_thing_principal](#detach_thing_principal)
-    - [disable_topic_rule](#disable_topic_rule)
-    - [enable_topic_rule](#enable_topic_rule)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_behavior_model_training_summaries](#get_behavior_model_training_summaries)
-    - [get_buckets_aggregation](#get_buckets_aggregation)
-    - [get_cardinality](#get_cardinality)
-    - [get_effective_policies](#get_effective_policies)
-    - [get_indexing_configuration](#get_indexing_configuration)
-    - [get_job_document](#get_job_document)
-    - [get_logging_options](#get_logging_options)
-    - [get_ota_update](#get_ota_update)
-    - [get_percentiles](#get_percentiles)
-    - [get_policy](#get_policy)
-    - [get_policy_version](#get_policy_version)
-    - [get_registration_code](#get_registration_code)
-    - [get_statistics](#get_statistics)
-    - [get_topic_rule](#get_topic_rule)
-    - [get_topic_rule_destination](#get_topic_rule_destination)
-    - [get_v2_logging_options](#get_v2_logging_options)
-    - [list_active_violations](#list_active_violations)
-    - [list_attached_policies](#list_attached_policies)
-    - [list_audit_findings](#list_audit_findings)
-    - [list_audit_mitigation_actions_executions](#list_audit_mitigation_actions_executions)
-    - [list_audit_mitigation_actions_tasks](#list_audit_mitigation_actions_tasks)
-    - [list_audit_suppressions](#list_audit_suppressions)
-    - [list_audit_tasks](#list_audit_tasks)
-    - [list_authorizers](#list_authorizers)
-    - [list_billing_groups](#list_billing_groups)
-    - [list_ca_certificates](#list_ca_certificates)
-    - [list_certificates](#list_certificates)
-    - [list_certificates_by_ca](#list_certificates_by_ca)
-    - [list_custom_metrics](#list_custom_metrics)
-    - [list_detect_mitigation_actions_executions](#list_detect_mitigation_actions_executions)
-    - [list_detect_mitigation_actions_tasks](#list_detect_mitigation_actions_tasks)
-    - [list_dimensions](#list_dimensions)
-    - [list_domain_configurations](#list_domain_configurations)
-    - [list_fleet_metrics](#list_fleet_metrics)
-    - [list_indices](#list_indices)
-    - [list_job_executions_for_job](#list_job_executions_for_job)
-    - [list_job_executions_for_thing](#list_job_executions_for_thing)
-    - [list_job_templates](#list_job_templates)
-    - [list_jobs](#list_jobs)
-    - [list_managed_job_templates](#list_managed_job_templates)
-    - [list_mitigation_actions](#list_mitigation_actions)
-    - [list_ota_updates](#list_ota_updates)
-    - [list_outgoing_certificates](#list_outgoing_certificates)
-    - [list_policies](#list_policies)
-    - [list_policy_principals](#list_policy_principals)
-    - [list_policy_versions](#list_policy_versions)
-    - [list_principal_policies](#list_principal_policies)
-    - [list_principal_things](#list_principal_things)
-    - [list_provisioning_template_versions](#list_provisioning_template_versions)
-    - [list_provisioning_templates](#list_provisioning_templates)
-    - [list_role_aliases](#list_role_aliases)
-    - [list_scheduled_audits](#list_scheduled_audits)
-    - [list_security_profiles](#list_security_profiles)
-    - [list_security_profiles_for_target](#list_security_profiles_for_target)
-    - [list_streams](#list_streams)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_targets_for_policy](#list_targets_for_policy)
-    - [list_targets_for_security_profile](#list_targets_for_security_profile)
-    - [list_thing_groups](#list_thing_groups)
-    - [list_thing_groups_for_thing](#list_thing_groups_for_thing)
-    - [list_thing_principals](#list_thing_principals)
-    - [list_thing_registration_task_reports](#list_thing_registration_task_reports)
-    - [list_thing_registration_tasks](#list_thing_registration_tasks)
-    - [list_thing_types](#list_thing_types)
-    - [list_things](#list_things)
-    - [list_things_in_billing_group](#list_things_in_billing_group)
-    - [list_things_in_thing_group](#list_things_in_thing_group)
-    - [list_topic_rule_destinations](#list_topic_rule_destinations)
-    - [list_topic_rules](#list_topic_rules)
-    - [list_v2_logging_levels](#list_v2_logging_levels)
-    - [list_violation_events](#list_violation_events)
-    - [put_verification_state_on_violation](#put_verification_state_on_violation)
-    - [register_ca_certificate](#register_ca_certificate)
-    - [register_certificate](#register_certificate)
-    - [register_certificate_without_ca](#register_certificate_without_ca)
-    - [register_thing](#register_thing)
-    - [reject_certificate_transfer](#reject_certificate_transfer)
-    - [remove_thing_from_billing_group](#remove_thing_from_billing_group)
-    - [remove_thing_from_thing_group](#remove_thing_from_thing_group)
-    - [replace_topic_rule](#replace_topic_rule)
-    - [search_index](#search_index)
-    - [set_default_authorizer](#set_default_authorizer)
-    - [set_default_policy_version](#set_default_policy_version)
-    - [set_logging_options](#set_logging_options)
-    - [set_v2_logging_level](#set_v2_logging_level)
-    - [set_v2_logging_options](#set_v2_logging_options)
-    - [start_audit_mitigation_actions_task](#start_audit_mitigation_actions_task)
-    - [start_detect_mitigation_actions_task](#start_detect_mitigation_actions_task)
-    - [start_on_demand_audit_task](#start_on_demand_audit_task)
-    - [start_thing_registration_task](#start_thing_registration_task)
-    - [stop_thing_registration_task](#stop_thing_registration_task)
-    - [tag_resource](#tag_resource)
-    - [test_authorization](#test_authorization)
-    - [test_invoke_authorizer](#test_invoke_authorizer)
-    - [transfer_certificate](#transfer_certificate)
-    - [untag_resource](#untag_resource)
-    - [update_account_audit_configuration](#update_account_audit_configuration)
-    - [update_audit_suppression](#update_audit_suppression)
-    - [update_authorizer](#update_authorizer)
-    - [update_billing_group](#update_billing_group)
-    - [update_ca_certificate](#update_ca_certificate)
-    - [update_certificate](#update_certificate)
-    - [update_custom_metric](#update_custom_metric)
-    - [update_dimension](#update_dimension)
-    - [update_domain_configuration](#update_domain_configuration)
-    - [update_dynamic_thing_group](#update_dynamic_thing_group)
-    - [update_event_configurations](#update_event_configurations)
-    - [update_fleet_metric](#update_fleet_metric)
-    - [update_indexing_configuration](#update_indexing_configuration)
-    - [update_job](#update_job)
-    - [update_mitigation_action](#update_mitigation_action)
-    - [update_provisioning_template](#update_provisioning_template)
-    - [update_role_alias](#update_role_alias)
-    - [update_scheduled_audit](#update_scheduled_audit)
-    - [update_security_profile](#update_security_profile)
-    - [update_stream](#update_stream)
-    - [update_thing](#update_thing)
-    - [update_thing_group](#update_thing_group)
-    - [update_thing_groups_for_thing](#update_thing_groups_for_thing)
-    - [update_topic_rule_destination](#update_topic_rule_destination)
-    - [validate_security_profile_behaviors](#validate_security_profile_behaviors)
-    - [get_paginator](#get_paginator)
-
-<a id="iotclient"></a>
+    Auto-generated documentation for [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
+    type annotations stubs module [mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 ## IoTClient
 
-Type annotations for `boto3.client("iot")`
+Type annotations and code completion for `#!python boto3.client("iot")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_iot.client import IoTClient
 
@@ -270,5621 +20,7539 @@ def get_iot_client() -> IoTClient:
     return Session().client("iot")
 ```
 
-Boto3 documentation:
-[IoT.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("iot").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("iot")
+
+try:
+    do_something(client)
+except (
+    client.CertificateConflictException,
+    client.CertificateStateException,
+    client.CertificateValidationException,
+    client.ClientError,
+    client.ConflictException,
+    client.ConflictingResourceUpdateException,
+    client.DeleteConflictException,
+    client.IndexNotReadyException,
+    client.InternalException,
+    client.InternalFailureException,
+    client.InternalServerException,
+    client.InvalidAggregationException,
+    client.InvalidQueryException,
+    client.InvalidRequestException,
+    client.InvalidResponseException,
+    client.InvalidStateTransitionException,
+    client.LimitExceededException,
+    client.MalformedPolicyException,
+    client.NotConfiguredException,
+    client.RegistrationCodeValidationException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceNotFoundException,
+    client.ResourceRegistrationFailureException,
+    client.ServiceUnavailableException,
+    client.SqlParseException,
+    client.TaskAlreadyExistsException,
+    client.ThrottlingException,
+    client.TransferAlreadyCompletedException,
+    client.TransferConflictException,
+    client.UnauthorizedException,
+    client.VersionConflictException,
+    client.VersionsLimitExceededException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_iot.client import Exceptions
 
 def handle_error(exc: Exceptions.CertificateConflictException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.CertificateConflictException`
-- `Exceptions.CertificateStateException`
-- `Exceptions.CertificateValidationException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.ConflictingResourceUpdateException`
-- `Exceptions.DeleteConflictException`
-- `Exceptions.IndexNotReadyException`
-- `Exceptions.InternalException`
-- `Exceptions.InternalFailureException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidAggregationException`
-- `Exceptions.InvalidQueryException`
-- `Exceptions.InvalidRequestException`
-- `Exceptions.InvalidResponseException`
-- `Exceptions.InvalidStateTransitionException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.MalformedPolicyException`
-- `Exceptions.NotConfiguredException`
-- `Exceptions.RegistrationCodeValidationException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceRegistrationFailureException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.SqlParseException`
-- `Exceptions.TaskAlreadyExistsException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.TransferAlreadyCompletedException`
-- `Exceptions.TransferConflictException`
-- `Exceptions.UnauthorizedException`
-- `Exceptions.VersionConflictException`
-- `Exceptions.VersionsLimitExceededException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-IoTClient exceptions.
-
-Type annotations for `boto3.client("iot").exceptions` method.
-
-Boto3 documentation:
-[IoT.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_certificate\_transfer"></a>
-
-### accept_certificate_transfer
+### accept\_certificate\_transfer
 
 Accepts a pending certificate transfer.
 
-Type annotations for `boto3.client("iot").accept_certificate_transfer` method.
+Type annotations and code completion for `#!python boto3.client("iot").accept_certificate_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
 
-Boto3 documentation:
-[IoT.Client.accept_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.accept_certificate_transfer)
+```python title="Method definition"
+def accept_certificate_transfer(
+    self,
+    *,
+    certificateId: str,
+    setAsActive: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AcceptCertificateTransferRequestRequestTypeDef](./type_defs.md#acceptcertificatetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `setAsActive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AcceptCertificateTransferRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-<a id="add\_thing\_to\_billing\_group"></a>
+parent.accept_certificate_transfer(**kwargs)
+```
 
-### add_thing_to_billing_group
+1. See [:material-code-braces: AcceptCertificateTransferRequestRequestTypeDef](./type_defs.md#acceptcertificatetransferrequestrequesttypedef) 
+
+### add\_thing\_to\_billing\_group
 
 Adds a thing to a billing group.
 
-Type annotations for `boto3.client("iot").add_thing_to_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").add_thing_to_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
 
-Boto3 documentation:
-[IoT.Client.add_thing_to_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_billing_group)
+```python title="Method definition"
+def add_thing_to_billing_group(
+    self,
+    *,
+    billingGroupName: str = ...,
+    billingGroupArn: str = ...,
+    thingName: str = ...,
+    thingArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddThingToBillingGroupRequestRequestTypeDef](./type_defs.md#addthingtobillinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str`
-- `billingGroupArn`: `str`
-- `thingName`: `str`
-- `thingArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: AddThingToBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_thing_to_billing_group(**kwargs)
+```
 
-<a id="add\_thing\_to\_thing\_group"></a>
+1. See [:material-code-braces: AddThingToBillingGroupRequestRequestTypeDef](./type_defs.md#addthingtobillinggrouprequestrequesttypedef) 
 
-### add_thing_to_thing_group
+### add\_thing\_to\_thing\_group
 
 Adds a thing to a thing group.
 
-Type annotations for `boto3.client("iot").add_thing_to_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").add_thing_to_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
 
-Boto3 documentation:
-[IoT.Client.add_thing_to_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.add_thing_to_thing_group)
+```python title="Method definition"
+def add_thing_to_thing_group(
+    self,
+    *,
+    thingGroupName: str = ...,
+    thingGroupArn: str = ...,
+    thingName: str = ...,
+    thingArn: str = ...,
+    overrideDynamicGroups: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddThingToThingGroupRequestRequestTypeDef](./type_defs.md#addthingtothinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str`
-- `thingGroupArn`: `str`
-- `thingName`: `str`
-- `thingArn`: `str`
-- `overrideDynamicGroups`: `bool`
+```python title="Usage example with kwargs"
+kwargs: AddThingToThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_thing_to_thing_group(**kwargs)
+```
 
-<a id="associate\_targets\_with\_job"></a>
+1. See [:material-code-braces: AddThingToThingGroupRequestRequestTypeDef](./type_defs.md#addthingtothinggrouprequestrequesttypedef) 
 
-### associate_targets_with_job
+### associate\_targets\_with\_job
 
 Associates a group with a continuous job.
 
-Type annotations for `boto3.client("iot").associate_targets_with_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").associate_targets_with_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job)
 
-Boto3 documentation:
-[IoT.Client.associate_targets_with_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.associate_targets_with_job)
+```python title="Method definition"
+def associate_targets_with_job(
+    self,
+    *,
+    targets: Sequence[str],
+    jobId: str,
+    comment: str = ...,
+    namespaceId: str = ...,
+) -> AssociateTargetsWithJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateTargetsWithJobRequestRequestTypeDef](./type_defs.md#associatetargetswithjobrequestrequesttypedef).
+1. See [:material-code-braces: AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targets`: `Sequence`\[`str`\] *(required)*
-- `jobId`: `str` *(required)*
-- `comment`: `str`
-- `namespaceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: AssociateTargetsWithJobRequestRequestTypeDef = {  # (1)
+    "targets": ...,
+    "jobId": ...,
+}
 
-Returns
-[AssociateTargetsWithJobResponseTypeDef](./type_defs.md#associatetargetswithjobresponsetypedef).
+parent.associate_targets_with_job(**kwargs)
+```
 
-<a id="attach\_policy"></a>
+1. See [:material-code-braces: AssociateTargetsWithJobRequestRequestTypeDef](./type_defs.md#associatetargetswithjobrequestrequesttypedef) 
 
-### attach_policy
-
-Attaches the specified policy to the specified principal (certificate or other
-credential).
-
-Type annotations for `boto3.client("iot").attach_policy` method.
-
-Boto3 documentation:
-[IoT.Client.attach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy)
-
-Arguments mapping described in
-[AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `policyName`: `str` *(required)*
-- `target`: `str` *(required)*
-
-<a id="attach\_principal\_policy"></a>
-
-### attach_principal_policy
+### attach\_policy
 
 Attaches the specified policy to the specified principal (certificate or other
 credential).
 
-Type annotations for `boto3.client("iot").attach_principal_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").attach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_policy)
 
-Boto3 documentation:
-[IoT.Client.attach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy)
+```python title="Method definition"
+def attach_policy(
+    self,
+    *,
+    policyName: str,
+    target: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[AttachPrincipalPolicyRequestRequestTypeDef](./type_defs.md#attachprincipalpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `principal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "target": ...,
+}
 
-<a id="attach\_security\_profile"></a>
+parent.attach_policy(**kwargs)
+```
 
-### attach_security_profile
+1. See [:material-code-braces: AttachPolicyRequestRequestTypeDef](./type_defs.md#attachpolicyrequestrequesttypedef) 
+
+### attach\_principal\_policy
+
+Attaches the specified policy to the specified principal (certificate or other
+credential).
+
+Type annotations and code completion for `#!python boto3.client("iot").attach_principal_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_principal_policy)
+
+```python title="Method definition"
+def attach_principal_policy(
+    self,
+    *,
+    policyName: str,
+    principal: str,
+) -> None:
+    ...
+```
+
+
+
+```python title="Usage example with kwargs"
+kwargs: AttachPrincipalPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "principal": ...,
+}
+
+parent.attach_principal_policy(**kwargs)
+```
+
+1. See [:material-code-braces: AttachPrincipalPolicyRequestRequestTypeDef](./type_defs.md#attachprincipalpolicyrequestrequesttypedef) 
+
+### attach\_security\_profile
 
 Associates a Device Defender security profile with a thing group or this
 account.
 
-Type annotations for `boto3.client("iot").attach_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("iot").attach_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile)
 
-Boto3 documentation:
-[IoT.Client.attach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_security_profile)
+```python title="Method definition"
+def attach_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    securityProfileTargetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachSecurityProfileRequestRequestTypeDef](./type_defs.md#attachsecurityprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `securityProfileTargetArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+    "securityProfileTargetArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_security_profile(**kwargs)
+```
 
-<a id="attach\_thing\_principal"></a>
+1. See [:material-code-braces: AttachSecurityProfileRequestRequestTypeDef](./type_defs.md#attachsecurityprofilerequestrequesttypedef) 
 
-### attach_thing_principal
+### attach\_thing\_principal
 
 Attaches the specified principal to the specified thing.
 
-Type annotations for `boto3.client("iot").attach_thing_principal` method.
+Type annotations and code completion for `#!python boto3.client("iot").attach_thing_principal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal)
 
-Boto3 documentation:
-[IoT.Client.attach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.attach_thing_principal)
+```python title="Method definition"
+def attach_thing_principal(
+    self,
+    *,
+    thingName: str,
+    principal: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AttachThingPrincipalRequestRequestTypeDef](./type_defs.md#attachthingprincipalrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `principal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AttachThingPrincipalRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "principal": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.attach_thing_principal(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AttachThingPrincipalRequestRequestTypeDef](./type_defs.md#attachthingprincipalrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("iot").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("iot").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.can_paginate)
 
-Boto3 documentation:
-[IoT.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_audit\_mitigation\_actions\_task"></a>
-
-### cancel_audit_mitigation_actions_task
+### cancel\_audit\_mitigation\_actions\_task
 
 Cancels a mitigation action task that is in progress.
 
-Type annotations for `boto3.client("iot").cancel_audit_mitigation_actions_task`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_audit_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.cancel_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_mitigation_actions_task)
+```python title="Method definition"
+def cancel_audit_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#cancelauditmitigationactionstaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelAuditMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_audit_mitigation_actions_task(**kwargs)
+```
 
-<a id="cancel\_audit\_task"></a>
+1. See [:material-code-braces: CancelAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#cancelauditmitigationactionstaskrequestrequesttypedef) 
 
-### cancel_audit_task
+### cancel\_audit\_task
 
 Cancels an audit that is in progress.
 
-Type annotations for `boto3.client("iot").cancel_audit_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_audit_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task)
 
-Boto3 documentation:
-[IoT.Client.cancel_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_audit_task)
+```python title="Method definition"
+def cancel_audit_task(
+    self,
+    *,
+    taskId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelAuditTaskRequestRequestTypeDef](./type_defs.md#cancelaudittaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelAuditTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_audit_task(**kwargs)
+```
 
-<a id="cancel\_certificate\_transfer"></a>
+1. See [:material-code-braces: CancelAuditTaskRequestRequestTypeDef](./type_defs.md#cancelaudittaskrequestrequesttypedef) 
 
-### cancel_certificate_transfer
+### cancel\_certificate\_transfer
 
 Cancels a pending transfer for the specified certificate.
 
-Type annotations for `boto3.client("iot").cancel_certificate_transfer` method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_certificate_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
 
-Boto3 documentation:
-[IoT.Client.cancel_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_certificate_transfer)
+```python title="Method definition"
+def cancel_certificate_transfer(
+    self,
+    *,
+    certificateId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelCertificateTransferRequestRequestTypeDef](./type_defs.md#cancelcertificatetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelCertificateTransferRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-<a id="cancel\_detect\_mitigation\_actions\_task"></a>
+parent.cancel_certificate_transfer(**kwargs)
+```
 
-### cancel_detect_mitigation_actions_task
+1. See [:material-code-braces: CancelCertificateTransferRequestRequestTypeDef](./type_defs.md#cancelcertificatetransferrequestrequesttypedef) 
+
+### cancel\_detect\_mitigation\_actions\_task
 
 Cancels a Device Defender ML Detect mitigation action.
 
-Type annotations for
-`boto3.client("iot").cancel_detect_mitigation_actions_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_detect_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.cancel_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_detect_mitigation_actions_task)
+```python title="Method definition"
+def cancel_detect_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CancelDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#canceldetectmitigationactionstaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CancelDetectMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.cancel_detect_mitigation_actions_task(**kwargs)
+```
 
-<a id="cancel\_job"></a>
+1. See [:material-code-braces: CancelDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#canceldetectmitigationactionstaskrequestrequesttypedef) 
 
-### cancel_job
+### cancel\_job
 
 Cancels a job.
 
-Type annotations for `boto3.client("iot").cancel_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job)
 
-Boto3 documentation:
-[IoT.Client.cancel_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job)
+```python title="Method definition"
+def cancel_job(
+    self,
+    *,
+    jobId: str,
+    reasonCode: str = ...,
+    comment: str = ...,
+    force: bool = ...,
+) -> CancelJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef).
+1. See [:material-code-braces: CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `reasonCode`: `str`
-- `comment`: `str`
-- `force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CancelJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
+parent.cancel_job(**kwargs)
+```
 
-<a id="cancel\_job\_execution"></a>
+1. See [:material-code-braces: CancelJobRequestRequestTypeDef](./type_defs.md#canceljobrequestrequesttypedef) 
 
-### cancel_job_execution
+### cancel\_job\_execution
 
 Cancels the execution of a job for a given thing.
 
-Type annotations for `boto3.client("iot").cancel_job_execution` method.
+Type annotations and code completion for `#!python boto3.client("iot").cancel_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution)
 
-Boto3 documentation:
-[IoT.Client.cancel_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.cancel_job_execution)
+```python title="Method definition"
+def cancel_job_execution(
+    self,
+    *,
+    jobId: str,
+    thingName: str,
+    force: bool = ...,
+    expectedVersion: int = ...,
+    statusDetails: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CancelJobExecutionRequestRequestTypeDef](./type_defs.md#canceljobexecutionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `thingName`: `str` *(required)*
-- `force`: `bool`
-- `expectedVersion`: `int`
-- `statusDetails`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CancelJobExecutionRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "thingName": ...,
+}
 
-<a id="clear\_default\_authorizer"></a>
+parent.cancel_job_execution(**kwargs)
+```
 
-### clear_default_authorizer
+1. See [:material-code-braces: CancelJobExecutionRequestRequestTypeDef](./type_defs.md#canceljobexecutionrequestrequesttypedef) 
+
+### clear\_default\_authorizer
 
 Clears the default authorizer.
 
-Type annotations for `boto3.client("iot").clear_default_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").clear_default_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer)
 
-Boto3 documentation:
-[IoT.Client.clear_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.clear_default_authorizer)
+```python title="Method definition"
+def clear_default_authorizer(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="confirm\_topic\_rule\_destination"></a>
-
-### confirm_topic_rule_destination
+### confirm\_topic\_rule\_destination
 
 Confirms a topic rule destination.
 
-Type annotations for `boto3.client("iot").confirm_topic_rule_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").confirm_topic_rule_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
 
-Boto3 documentation:
-[IoT.Client.confirm_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.confirm_topic_rule_destination)
+```python title="Method definition"
+def confirm_topic_rule_destination(
+    self,
+    *,
+    confirmationToken: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ConfirmTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#confirmtopicruledestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `confirmationToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ConfirmTopicRuleDestinationRequestRequestTypeDef = {  # (1)
+    "confirmationToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.confirm_topic_rule_destination(**kwargs)
+```
 
-<a id="create\_audit\_suppression"></a>
+1. See [:material-code-braces: ConfirmTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#confirmtopicruledestinationrequestrequesttypedef) 
 
-### create_audit_suppression
+### create\_audit\_suppression
 
 Creates a Device Defender audit suppression.
 
-Type annotations for `boto3.client("iot").create_audit_suppression` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_audit_suppression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression)
 
-Boto3 documentation:
-[IoT.Client.create_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_audit_suppression)
+```python title="Method definition"
+def create_audit_suppression(
+    self,
+    *,
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    clientRequestToken: str,
+    expirationDate: Union[datetime, str] = ...,
+    suppressIndefinitely: bool = ...,
+    description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateAuditSuppressionRequestRequestTypeDef](./type_defs.md#createauditsuppressionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 
-Keyword-only arguments:
 
-- `checkName`: `str` *(required)*
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-  *(required)*
-- `clientRequestToken`: `str` *(required)*
-- `expirationDate`: `Union`\[`datetime`, `str`\]
-- `suppressIndefinitely`: `bool`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateAuditSuppressionRequestRequestTypeDef = {  # (1)
+    "checkName": ...,
+    "resourceIdentifier": ...,
+    "clientRequestToken": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_audit_suppression(**kwargs)
+```
 
-<a id="create\_authorizer"></a>
+1. See [:material-code-braces: CreateAuditSuppressionRequestRequestTypeDef](./type_defs.md#createauditsuppressionrequestrequesttypedef) 
 
-### create_authorizer
+### create\_authorizer
 
 Creates an authorizer.
 
-Type annotations for `boto3.client("iot").create_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer)
 
-Boto3 documentation:
-[IoT.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_authorizer)
+```python title="Method definition"
+def create_authorizer(
+    self,
+    *,
+    authorizerName: str,
+    authorizerFunctionArn: str,
+    tokenKeyName: str = ...,
+    tokenSigningPublicKeys: Mapping[str, str] = ...,
+    status: AuthorizerStatusType = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+    signingDisabled: bool = ...,
+    enableCachingForHttp: bool = ...,
+) -> CreateAuthorizerResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateAuthorizerRequestRequestTypeDef](./type_defs.md#createauthorizerrequestrequesttypedef).
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
-- `authorizerFunctionArn`: `str` *(required)*
-- `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
-- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `signingDisabled`: `bool`
-- `enableCachingForHttp`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+    "authorizerFunctionArn": ...,
+}
 
-Returns
-[CreateAuthorizerResponseTypeDef](./type_defs.md#createauthorizerresponsetypedef).
+parent.create_authorizer(**kwargs)
+```
 
-<a id="create\_billing\_group"></a>
+1. See [:material-code-braces: CreateAuthorizerRequestRequestTypeDef](./type_defs.md#createauthorizerrequestrequesttypedef) 
 
-### create_billing_group
+### create\_billing\_group
 
 Creates a billing group.
 
-Type annotations for `boto3.client("iot").create_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group)
 
-Boto3 documentation:
-[IoT.Client.create_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_billing_group)
+```python title="Method definition"
+def create_billing_group(
+    self,
+    *,
+    billingGroupName: str,
+    billingGroupProperties: BillingGroupPropertiesTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateBillingGroupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateBillingGroupRequestRequestTypeDef](./type_defs.md#createbillinggrouprequestrequesttypedef).
+1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str` *(required)*
-- `billingGroupProperties`:
-  [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns
-[CreateBillingGroupResponseTypeDef](./type_defs.md#createbillinggroupresponsetypedef).
+parent.create_billing_group(**kwargs)
+```
 
-<a id="create\_certificate\_from\_csr"></a>
+1. See [:material-code-braces: CreateBillingGroupRequestRequestTypeDef](./type_defs.md#createbillinggrouprequestrequesttypedef) 
 
-### create_certificate_from_csr
+### create\_certificate\_from\_csr
 
 Creates an X.509 certificate using the specified certificate signing request.
 
-Type annotations for `boto3.client("iot").create_certificate_from_csr` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_certificate_from_csr` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
 
-Boto3 documentation:
-[IoT.Client.create_certificate_from_csr](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_certificate_from_csr)
+```python title="Method definition"
+def create_certificate_from_csr(
+    self,
+    *,
+    certificateSigningRequest: str,
+    setAsActive: bool = ...,
+) -> CreateCertificateFromCsrResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateCertificateFromCsrRequestRequestTypeDef](./type_defs.md#createcertificatefromcsrrequestrequesttypedef).
+1. See [:material-code-braces: CreateCertificateFromCsrResponseTypeDef](./type_defs.md#createcertificatefromcsrresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificateSigningRequest`: `str` *(required)*
-- `setAsActive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateCertificateFromCsrRequestRequestTypeDef = {  # (1)
+    "certificateSigningRequest": ...,
+}
 
-Returns
-[CreateCertificateFromCsrResponseTypeDef](./type_defs.md#createcertificatefromcsrresponsetypedef).
+parent.create_certificate_from_csr(**kwargs)
+```
 
-<a id="create\_custom\_metric"></a>
+1. See [:material-code-braces: CreateCertificateFromCsrRequestRequestTypeDef](./type_defs.md#createcertificatefromcsrrequestrequesttypedef) 
 
-### create_custom_metric
+### create\_custom\_metric
 
 Use this API to define a Custom Metric published by your devices to Device
 Defender.
 
-Type annotations for `boto3.client("iot").create_custom_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_custom_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric)
 
-Boto3 documentation:
-[IoT.Client.create_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_custom_metric)
+```python title="Method definition"
+def create_custom_metric(
+    self,
+    *,
+    metricName: str,
+    metricType: CustomMetricTypeType,  # (1)
+    clientRequestToken: str,
+    displayName: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateCustomMetricResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateCustomMetricRequestRequestTypeDef](./type_defs.md#createcustommetricrequestrequesttypedef).
+1. See [:material-code-brackets: CustomMetricTypeType](./literals.md#custommetrictypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
-- `metricType`: [CustomMetricTypeType](./literals.md#custommetrictypetype)
-  *(required)*
-- `clientRequestToken`: `str` *(required)*
-- `displayName`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCustomMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+    "metricType": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[CreateCustomMetricResponseTypeDef](./type_defs.md#createcustommetricresponsetypedef).
+parent.create_custom_metric(**kwargs)
+```
 
-<a id="create\_dimension"></a>
+1. See [:material-code-braces: CreateCustomMetricRequestRequestTypeDef](./type_defs.md#createcustommetricrequestrequesttypedef) 
 
-### create_dimension
+### create\_dimension
 
 Create a dimension that you can use to limit the scope of a metric used in a
 security profile for IoT Device Defender.
 
-Type annotations for `boto3.client("iot").create_dimension` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_dimension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension)
 
-Boto3 documentation:
-[IoT.Client.create_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dimension)
+```python title="Method definition"
+def create_dimension(
+    self,
+    *,
+    name: str,
+    type: DimensionTypeType,  # (1)
+    stringValues: Sequence[str],
+    clientRequestToken: str,
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDimensionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDimensionRequestRequestTypeDef](./type_defs.md#createdimensionrequestrequesttypedef).
+1. See [:material-code-brackets: DimensionTypeType](./literals.md#dimensiontypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `type`: `Literal['TOPIC_FILTER']` (see
-  [DimensionTypeType](./literals.md#dimensiontypetype)) *(required)*
-- `stringValues`: `Sequence`\[`str`\] *(required)*
-- `clientRequestToken`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDimensionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "type": ...,
+    "stringValues": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[CreateDimensionResponseTypeDef](./type_defs.md#createdimensionresponsetypedef).
+parent.create_dimension(**kwargs)
+```
 
-<a id="create\_domain\_configuration"></a>
+1. See [:material-code-braces: CreateDimensionRequestRequestTypeDef](./type_defs.md#createdimensionrequestrequesttypedef) 
 
-### create_domain_configuration
+### create\_domain\_configuration
 
 Creates a domain configuration.
 
-Type annotations for `boto3.client("iot").create_domain_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_domain_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration)
 
-Boto3 documentation:
-[IoT.Client.create_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_domain_configuration)
+```python title="Method definition"
+def create_domain_configuration(
+    self,
+    *,
+    domainConfigurationName: str,
+    domainName: str = ...,
+    serverCertificateArns: Sequence[str] = ...,
+    validationCertificateArn: str = ...,
+    authorizerConfig: AuthorizerConfigTypeDef = ...,  # (1)
+    serviceType: ServiceTypeType = ...,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateDomainConfigurationResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainConfigurationRequestRequestTypeDef](./type_defs.md#createdomainconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
+2. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainConfigurationName`: `str` *(required)*
-- `domainName`: `str`
-- `serverCertificateArns`: `Sequence`\[`str`\]
-- `validationCertificateArn`: `str`
-- `authorizerConfig`:
-  [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
-- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDomainConfigurationRequestRequestTypeDef = {  # (1)
+    "domainConfigurationName": ...,
+}
 
-Returns
-[CreateDomainConfigurationResponseTypeDef](./type_defs.md#createdomainconfigurationresponsetypedef).
+parent.create_domain_configuration(**kwargs)
+```
 
-<a id="create\_dynamic\_thing\_group"></a>
+1. See [:material-code-braces: CreateDomainConfigurationRequestRequestTypeDef](./type_defs.md#createdomainconfigurationrequestrequesttypedef) 
 
-### create_dynamic_thing_group
+### create\_dynamic\_thing\_group
 
 Creates a dynamic thing group.
 
-Type annotations for `boto3.client("iot").create_dynamic_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_dynamic_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
 
-Boto3 documentation:
-[IoT.Client.create_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_dynamic_thing_group)
+```python title="Method definition"
+def create_dynamic_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    queryString: str,
+    thingGroupProperties: ThingGroupPropertiesTypeDef = ...,  # (1)
+    indexName: str = ...,
+    queryVersion: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateDynamicThingGroupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDynamicThingGroupRequestRequestTypeDef](./type_defs.md#createdynamicthinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `queryString`: `str` *(required)*
-- `thingGroupProperties`:
-  [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-- `indexName`: `str`
-- `queryVersion`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDynamicThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+    "queryString": ...,
+}
 
-Returns
-[CreateDynamicThingGroupResponseTypeDef](./type_defs.md#createdynamicthinggroupresponsetypedef).
+parent.create_dynamic_thing_group(**kwargs)
+```
 
-<a id="create\_fleet\_metric"></a>
+1. See [:material-code-braces: CreateDynamicThingGroupRequestRequestTypeDef](./type_defs.md#createdynamicthinggrouprequestrequesttypedef) 
 
-### create_fleet_metric
+### create\_fleet\_metric
 
 Creates a fleet metric.
 
-Type annotations for `boto3.client("iot").create_fleet_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_fleet_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_fleet_metric)
 
-Boto3 documentation:
-[IoT.Client.create_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_fleet_metric)
+```python title="Method definition"
+def create_fleet_metric(
+    self,
+    *,
+    metricName: str,
+    queryString: str,
+    aggregationType: AggregationTypeTypeDef,  # (1)
+    period: int,
+    aggregationField: str,
+    description: str = ...,
+    queryVersion: str = ...,
+    indexName: str = ...,
+    unit: FleetMetricUnitType = ...,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateFleetMetricResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateFleetMetricRequestRequestTypeDef](./type_defs.md#createfleetmetricrequestrequesttypedef).
+1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
+2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateFleetMetricResponseTypeDef](./type_defs.md#createfleetmetricresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
-- `queryString`: `str` *(required)*
-- `aggregationType`:
-  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) *(required)*
-- `period`: `int` *(required)*
-- `aggregationField`: `str` *(required)*
-- `description`: `str`
-- `queryVersion`: `str`
-- `indexName`: `str`
-- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFleetMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+    "queryString": ...,
+    "aggregationType": ...,
+    "period": ...,
+    "aggregationField": ...,
+}
 
-Returns
-[CreateFleetMetricResponseTypeDef](./type_defs.md#createfleetmetricresponsetypedef).
+parent.create_fleet_metric(**kwargs)
+```
 
-<a id="create\_job"></a>
+1. See [:material-code-braces: CreateFleetMetricRequestRequestTypeDef](./type_defs.md#createfleetmetricrequestrequesttypedef) 
 
-### create_job
+### create\_job
 
 Creates a job.
 
-Type annotations for `boto3.client("iot").create_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job)
 
-Boto3 documentation:
-[IoT.Client.create_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job)
+```python title="Method definition"
+def create_job(
+    self,
+    *,
+    jobId: str,
+    targets: Sequence[str],
+    documentSource: str = ...,
+    document: str = ...,
+    description: str = ...,
+    presignedUrlConfig: PresignedUrlConfigTypeDef = ...,  # (1)
+    targetSelection: TargetSelectionType = ...,  # (2)
+    jobExecutionsRolloutConfig: JobExecutionsRolloutConfigTypeDef = ...,  # (3)
+    abortConfig: AbortConfigTypeDef = ...,  # (4)
+    timeoutConfig: TimeoutConfigTypeDef = ...,  # (5)
+    tags: Sequence[TagTypeDef] = ...,  # (6)
+    namespaceId: str = ...,
+    jobTemplateArn: str = ...,
+    jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (7)
+    documentParameters: Mapping[str, str] = ...,
+) -> CreateJobResponseTypeDef:  # (8)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef).
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+3. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+4. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+5. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+7. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+8. See [:material-code-braces: CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `targets`: `Sequence`\[`str`\] *(required)*
-- `documentSource`: `str`
-- `document`: `str`
-- `description`: `str`
-- `presignedUrlConfig`:
-  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
-- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
-- `jobExecutionsRolloutConfig`:
-  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
-- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
-- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `namespaceId`: `str`
-- `jobTemplateArn`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
-- `documentParameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "targets": ...,
+}
 
-Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+parent.create_job(**kwargs)
+```
 
-<a id="create\_job\_template"></a>
+1. See [:material-code-braces: CreateJobRequestRequestTypeDef](./type_defs.md#createjobrequestrequesttypedef) 
 
-### create_job_template
+### create\_job\_template
 
 Creates a job template.
 
-Type annotations for `boto3.client("iot").create_job_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job_template)
 
-Boto3 documentation:
-[IoT.Client.create_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_job_template)
+```python title="Method definition"
+def create_job_template(
+    self,
+    *,
+    jobTemplateId: str,
+    description: str,
+    jobArn: str = ...,
+    documentSource: str = ...,
+    document: str = ...,
+    presignedUrlConfig: PresignedUrlConfigTypeDef = ...,  # (1)
+    jobExecutionsRolloutConfig: JobExecutionsRolloutConfigTypeDef = ...,  # (2)
+    abortConfig: AbortConfigTypeDef = ...,  # (3)
+    timeoutConfig: TimeoutConfigTypeDef = ...,  # (4)
+    tags: Sequence[TagTypeDef] = ...,  # (5)
+    jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (6)
+) -> CreateJobTemplateResponseTypeDef:  # (7)
+    ...
+```
 
-Arguments mapping described in
-[CreateJobTemplateRequestRequestTypeDef](./type_defs.md#createjobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+5. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+6. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
+7. See [:material-code-braces: CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobTemplateId`: `str` *(required)*
-- `description`: `str` *(required)*
-- `jobArn`: `str`
-- `documentSource`: `str`
-- `document`: `str`
-- `presignedUrlConfig`:
-  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
-- `jobExecutionsRolloutConfig`:
-  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
-- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
-- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateJobTemplateRequestRequestTypeDef = {  # (1)
+    "jobTemplateId": ...,
+    "description": ...,
+}
 
-Returns
-[CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
+parent.create_job_template(**kwargs)
+```
 
-<a id="create\_keys\_and\_certificate"></a>
+1. See [:material-code-braces: CreateJobTemplateRequestRequestTypeDef](./type_defs.md#createjobtemplaterequestrequesttypedef) 
 
-### create_keys_and_certificate
+### create\_keys\_and\_certificate
 
-Creates a 2048-bit RSA key pair and issues an X.509 certificate using the
-issued public key.
+Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued
+public key.
 
-Type annotations for `boto3.client("iot").create_keys_and_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_keys_and_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
 
-Boto3 documentation:
-[IoT.Client.create_keys_and_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_keys_and_certificate)
+```python title="Method definition"
+def create_keys_and_certificate(
+    self,
+    *,
+    setAsActive: bool = ...,
+) -> CreateKeysAndCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateKeysAndCertificateRequestRequestTypeDef](./type_defs.md#createkeysandcertificaterequestrequesttypedef).
+1. See [:material-code-braces: CreateKeysAndCertificateResponseTypeDef](./type_defs.md#createkeysandcertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `setAsActive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateKeysAndCertificateRequestRequestTypeDef = {  # (1)
+    "setAsActive": ...,
+}
 
-Returns
-[CreateKeysAndCertificateResponseTypeDef](./type_defs.md#createkeysandcertificateresponsetypedef).
+parent.create_keys_and_certificate(**kwargs)
+```
 
-<a id="create\_mitigation\_action"></a>
+1. See [:material-code-braces: CreateKeysAndCertificateRequestRequestTypeDef](./type_defs.md#createkeysandcertificaterequestrequesttypedef) 
 
-### create_mitigation_action
+### create\_mitigation\_action
 
 Defines an action that can be applied to audit findings by using
 StartAuditMitigationActionsTask.
 
-Type annotations for `boto3.client("iot").create_mitigation_action` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_mitigation_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action)
 
-Boto3 documentation:
-[IoT.Client.create_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_mitigation_action)
+```python title="Method definition"
+def create_mitigation_action(
+    self,
+    *,
+    actionName: str,
+    roleArn: str,
+    actionParams: MitigationActionParamsTypeDef,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateMitigationActionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateMitigationActionRequestRequestTypeDef](./type_defs.md#createmitigationactionrequestrequesttypedef).
+1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `actionName`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `actionParams`:
-  [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
-  *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateMitigationActionRequestRequestTypeDef = {  # (1)
+    "actionName": ...,
+    "roleArn": ...,
+    "actionParams": ...,
+}
 
-Returns
-[CreateMitigationActionResponseTypeDef](./type_defs.md#createmitigationactionresponsetypedef).
+parent.create_mitigation_action(**kwargs)
+```
 
-<a id="create\_ota\_update"></a>
+1. See [:material-code-braces: CreateMitigationActionRequestRequestTypeDef](./type_defs.md#createmitigationactionrequestrequesttypedef) 
 
-### create_ota_update
+### create\_ota\_update
 
 Creates an IoT OTA update on a target group of things or groups.
 
-Type annotations for `boto3.client("iot").create_ota_update` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_ota_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update)
 
-Boto3 documentation:
-[IoT.Client.create_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_ota_update)
+```python title="Method definition"
+def create_ota_update(
+    self,
+    *,
+    otaUpdateId: str,
+    targets: Sequence[str],
+    files: Sequence[OTAUpdateFileTypeDef],  # (1)
+    roleArn: str,
+    description: str = ...,
+    protocols: Sequence[ProtocolType] = ...,  # (2)
+    targetSelection: TargetSelectionType = ...,  # (3)
+    awsJobExecutionsRolloutConfig: AwsJobExecutionsRolloutConfigTypeDef = ...,  # (4)
+    awsJobPresignedUrlConfig: AwsJobPresignedUrlConfigTypeDef = ...,  # (5)
+    awsJobAbortConfig: AwsJobAbortConfigTypeDef = ...,  # (6)
+    awsJobTimeoutConfig: AwsJobTimeoutConfigTypeDef = ...,  # (7)
+    additionalParameters: Mapping[str, str] = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (8)
+) -> CreateOTAUpdateResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateOTAUpdateRequestRequestTypeDef](./type_defs.md#createotaupdaterequestrequesttypedef).
+1. See [:material-code-braces: OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef) 
+2. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+3. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+4. See [:material-code-braces: AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef) 
+5. See [:material-code-braces: AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef) 
+6. See [:material-code-braces: AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef) 
+7. See [:material-code-braces: AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef) 
+8. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+9. See [:material-code-braces: CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `otaUpdateId`: `str` *(required)*
-- `targets`: `Sequence`\[`str`\] *(required)*
-- `files`:
-  `Sequence`\[[OTAUpdateFileTypeDef](./type_defs.md#otaupdatefiletypedef)\]
-  *(required)*
-- `roleArn`: `str` *(required)*
-- `description`: `str`
-- `protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
-- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
-- `awsJobExecutionsRolloutConfig`:
-  [AwsJobExecutionsRolloutConfigTypeDef](./type_defs.md#awsjobexecutionsrolloutconfigtypedef)
-- `awsJobPresignedUrlConfig`:
-  [AwsJobPresignedUrlConfigTypeDef](./type_defs.md#awsjobpresignedurlconfigtypedef)
-- `awsJobAbortConfig`:
-  [AwsJobAbortConfigTypeDef](./type_defs.md#awsjobabortconfigtypedef)
-- `awsJobTimeoutConfig`:
-  [AwsJobTimeoutConfigTypeDef](./type_defs.md#awsjobtimeoutconfigtypedef)
-- `additionalParameters`: `Mapping`\[`str`, `str`\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateOTAUpdateRequestRequestTypeDef = {  # (1)
+    "otaUpdateId": ...,
+    "targets": ...,
+    "files": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateOTAUpdateResponseTypeDef](./type_defs.md#createotaupdateresponsetypedef).
+parent.create_ota_update(**kwargs)
+```
 
-<a id="create\_policy"></a>
+1. See [:material-code-braces: CreateOTAUpdateRequestRequestTypeDef](./type_defs.md#createotaupdaterequestrequesttypedef) 
 
-### create_policy
+### create\_policy
 
 Creates an IoT policy.
 
-Type annotations for `boto3.client("iot").create_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy)
 
-Boto3 documentation:
-[IoT.Client.create_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy)
+```python title="Method definition"
+def create_policy(
+    self,
+    *,
+    policyName: str,
+    policyDocument: str,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreatePolicyResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `policyDocument`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreatePolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "policyDocument": ...,
+}
 
-Returns
-[CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
+parent.create_policy(**kwargs)
+```
 
-<a id="create\_policy\_version"></a>
+1. See [:material-code-braces: CreatePolicyRequestRequestTypeDef](./type_defs.md#createpolicyrequestrequesttypedef) 
 
-### create_policy_version
+### create\_policy\_version
 
 Creates a new version of the specified IoT policy.
 
-Type annotations for `boto3.client("iot").create_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version)
 
-Boto3 documentation:
-[IoT.Client.create_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_policy_version)
+```python title="Method definition"
+def create_policy_version(
+    self,
+    *,
+    policyName: str,
+    policyDocument: str,
+    setAsDefault: bool = ...,
+) -> CreatePolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreatePolicyVersionRequestRequestTypeDef](./type_defs.md#createpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `policyDocument`: `str` *(required)*
-- `setAsDefault`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreatePolicyVersionRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "policyDocument": ...,
+}
 
-Returns
-[CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
+parent.create_policy_version(**kwargs)
+```
 
-<a id="create\_provisioning\_claim"></a>
+1. See [:material-code-braces: CreatePolicyVersionRequestRequestTypeDef](./type_defs.md#createpolicyversionrequestrequesttypedef) 
 
-### create_provisioning_claim
+### create\_provisioning\_claim
 
 Creates a provisioning claim.
 
-Type annotations for `boto3.client("iot").create_provisioning_claim` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_provisioning_claim` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim)
 
-Boto3 documentation:
-[IoT.Client.create_provisioning_claim](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_claim)
+```python title="Method definition"
+def create_provisioning_claim(
+    self,
+    *,
+    templateName: str,
+) -> CreateProvisioningClaimResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProvisioningClaimRequestRequestTypeDef](./type_defs.md#createprovisioningclaimrequestrequesttypedef).
+1. See [:material-code-braces: CreateProvisioningClaimResponseTypeDef](./type_defs.md#createprovisioningclaimresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateProvisioningClaimRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[CreateProvisioningClaimResponseTypeDef](./type_defs.md#createprovisioningclaimresponsetypedef).
+parent.create_provisioning_claim(**kwargs)
+```
 
-<a id="create\_provisioning\_template"></a>
+1. See [:material-code-braces: CreateProvisioningClaimRequestRequestTypeDef](./type_defs.md#createprovisioningclaimrequestrequesttypedef) 
 
-### create_provisioning_template
+### create\_provisioning\_template
 
 Creates a fleet provisioning template.
 
-Type annotations for `boto3.client("iot").create_provisioning_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_provisioning_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
 
-Boto3 documentation:
-[IoT.Client.create_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template)
+```python title="Method definition"
+def create_provisioning_template(
+    self,
+    *,
+    templateName: str,
+    templateBody: str,
+    provisioningRoleArn: str,
+    description: str = ...,
+    enabled: bool = ...,
+    preProvisioningHook: ProvisioningHookTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateProvisioningTemplateResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateProvisioningTemplateRequestRequestTypeDef](./type_defs.md#createprovisioningtemplaterequestrequesttypedef).
+1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateBody`: `str` *(required)*
-- `provisioningRoleArn`: `str` *(required)*
-- `description`: `str`
-- `enabled`: `bool`
-- `preProvisioningHook`:
-  [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateProvisioningTemplateRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "templateBody": ...,
+    "provisioningRoleArn": ...,
+}
 
-Returns
-[CreateProvisioningTemplateResponseTypeDef](./type_defs.md#createprovisioningtemplateresponsetypedef).
+parent.create_provisioning_template(**kwargs)
+```
 
-<a id="create\_provisioning\_template\_version"></a>
+1. See [:material-code-braces: CreateProvisioningTemplateRequestRequestTypeDef](./type_defs.md#createprovisioningtemplaterequestrequesttypedef) 
 
-### create_provisioning_template_version
+### create\_provisioning\_template\_version
 
 Creates a new version of a fleet provisioning template.
 
-Type annotations for `boto3.client("iot").create_provisioning_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").create_provisioning_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
 
-Boto3 documentation:
-[IoT.Client.create_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_provisioning_template_version)
+```python title="Method definition"
+def create_provisioning_template_version(
+    self,
+    *,
+    templateName: str,
+    templateBody: str,
+    setAsDefault: bool = ...,
+) -> CreateProvisioningTemplateVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#createprovisioningtemplateversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateProvisioningTemplateVersionResponseTypeDef](./type_defs.md#createprovisioningtemplateversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateBody`: `str` *(required)*
-- `setAsDefault`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateProvisioningTemplateVersionRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "templateBody": ...,
+}
 
-Returns
-[CreateProvisioningTemplateVersionResponseTypeDef](./type_defs.md#createprovisioningtemplateversionresponsetypedef).
+parent.create_provisioning_template_version(**kwargs)
+```
 
-<a id="create\_role\_alias"></a>
+1. See [:material-code-braces: CreateProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#createprovisioningtemplateversionrequestrequesttypedef) 
 
-### create_role_alias
+### create\_role\_alias
 
 Creates a role alias.
 
-Type annotations for `boto3.client("iot").create_role_alias` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_role_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias)
 
-Boto3 documentation:
-[IoT.Client.create_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_role_alias)
+```python title="Method definition"
+def create_role_alias(
+    self,
+    *,
+    roleAlias: str,
+    roleArn: str,
+    credentialDurationSeconds: int = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateRoleAliasResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateRoleAliasRequestRequestTypeDef](./type_defs.md#createrolealiasrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `roleAlias`: `str` *(required)*
-- `roleArn`: `str` *(required)*
-- `credentialDurationSeconds`: `int`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateRoleAliasRequestRequestTypeDef = {  # (1)
+    "roleAlias": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateRoleAliasResponseTypeDef](./type_defs.md#createrolealiasresponsetypedef).
+parent.create_role_alias(**kwargs)
+```
 
-<a id="create\_scheduled\_audit"></a>
+1. See [:material-code-braces: CreateRoleAliasRequestRequestTypeDef](./type_defs.md#createrolealiasrequestrequesttypedef) 
 
-### create_scheduled_audit
+### create\_scheduled\_audit
 
 Creates a scheduled audit that is run at a specified time interval.
 
-Type annotations for `boto3.client("iot").create_scheduled_audit` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_scheduled_audit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit)
 
-Boto3 documentation:
-[IoT.Client.create_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_scheduled_audit)
+```python title="Method definition"
+def create_scheduled_audit(
+    self,
+    *,
+    frequency: AuditFrequencyType,  # (1)
+    targetCheckNames: Sequence[str],
+    scheduledAuditName: str,
+    dayOfMonth: str = ...,
+    dayOfWeek: DayOfWeekType = ...,  # (2)
+    tags: Sequence[TagTypeDef] = ...,  # (3)
+) -> CreateScheduledAuditResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateScheduledAuditRequestRequestTypeDef](./type_defs.md#createscheduledauditrequestrequesttypedef).
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef) 
 
-Keyword-only arguments:
 
-- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
-  *(required)*
-- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
-- `scheduledAuditName`: `str` *(required)*
-- `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateScheduledAuditRequestRequestTypeDef = {  # (1)
+    "frequency": ...,
+    "targetCheckNames": ...,
+    "scheduledAuditName": ...,
+}
 
-Returns
-[CreateScheduledAuditResponseTypeDef](./type_defs.md#createscheduledauditresponsetypedef).
+parent.create_scheduled_audit(**kwargs)
+```
 
-<a id="create\_security\_profile"></a>
+1. See [:material-code-braces: CreateScheduledAuditRequestRequestTypeDef](./type_defs.md#createscheduledauditrequestrequesttypedef) 
 
-### create_security_profile
+### create\_security\_profile
 
 Creates a Device Defender security profile.
 
-Type annotations for `boto3.client("iot").create_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile)
 
-Boto3 documentation:
-[IoT.Client.create_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_security_profile)
+```python title="Method definition"
+def create_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    securityProfileDescription: str = ...,
+    behaviors: Sequence[BehaviorTypeDef] = ...,  # (1)
+    alertTargets: Mapping[AlertTargetTypeType, AlertTargetTypeDef] = ...,  # (2)
+    additionalMetricsToRetain: Sequence[str] = ...,
+    additionalMetricsToRetainV2: Sequence[MetricToRetainTypeDef] = ...,  # (3)
+    tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateSecurityProfileResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
+3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `securityProfileDescription`: `str`
-- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
-  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
-  [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `Sequence`\[`str`\]
-- `additionalMetricsToRetainV2`:
-  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns
-[CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
+parent.create_security_profile(**kwargs)
+```
 
-<a id="create\_stream"></a>
+1. See [:material-code-braces: CreateSecurityProfileRequestRequestTypeDef](./type_defs.md#createsecurityprofilerequestrequesttypedef) 
 
-### create_stream
+### create\_stream
 
 Creates a stream for delivering one or more large files in chunks over MQTT.
 
-Type annotations for `boto3.client("iot").create_stream` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream)
 
-Boto3 documentation:
-[IoT.Client.create_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_stream)
+```python title="Method definition"
+def create_stream(
+    self,
+    *,
+    streamId: str,
+    files: Sequence[StreamFileTypeDef],  # (1)
+    roleArn: str,
+    description: str = ...,
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateStreamResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateStreamRequestRequestTypeDef](./type_defs.md#createstreamrequestrequesttypedef).
+1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamId`: `str` *(required)*
-- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
-  *(required)*
-- `roleArn`: `str` *(required)*
-- `description`: `str`
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateStreamRequestRequestTypeDef = {  # (1)
+    "streamId": ...,
+    "files": ...,
+    "roleArn": ...,
+}
 
-Returns
-[CreateStreamResponseTypeDef](./type_defs.md#createstreamresponsetypedef).
+parent.create_stream(**kwargs)
+```
 
-<a id="create\_thing"></a>
+1. See [:material-code-braces: CreateStreamRequestRequestTypeDef](./type_defs.md#createstreamrequestrequesttypedef) 
 
-### create_thing
+### create\_thing
 
 Creates a thing record in the registry.
 
-Type annotations for `boto3.client("iot").create_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing)
 
-Boto3 documentation:
-[IoT.Client.create_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing)
+```python title="Method definition"
+def create_thing(
+    self,
+    *,
+    thingName: str,
+    thingTypeName: str = ...,
+    attributePayload: AttributePayloadTypeDef = ...,  # (1)
+    billingGroupName: str = ...,
+) -> CreateThingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateThingRequestRequestTypeDef](./type_defs.md#createthingrequestrequesttypedef).
+1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
+2. See [:material-code-braces: CreateThingResponseTypeDef](./type_defs.md#createthingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `thingTypeName`: `str`
-- `attributePayload`:
-  [AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef)
-- `billingGroupName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[CreateThingResponseTypeDef](./type_defs.md#createthingresponsetypedef).
+parent.create_thing(**kwargs)
+```
 
-<a id="create\_thing\_group"></a>
+1. See [:material-code-braces: CreateThingRequestRequestTypeDef](./type_defs.md#createthingrequestrequesttypedef) 
 
-### create_thing_group
+### create\_thing\_group
 
 Create a thing group.
 
-Type annotations for `boto3.client("iot").create_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group)
 
-Boto3 documentation:
-[IoT.Client.create_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_group)
+```python title="Method definition"
+def create_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    parentGroupName: str = ...,
+    thingGroupProperties: ThingGroupPropertiesTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateThingGroupResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateThingGroupRequestRequestTypeDef](./type_defs.md#createthinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `parentGroupName`: `str`
-- `thingGroupProperties`:
-  [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns
-[CreateThingGroupResponseTypeDef](./type_defs.md#createthinggroupresponsetypedef).
+parent.create_thing_group(**kwargs)
+```
 
-<a id="create\_thing\_type"></a>
+1. See [:material-code-braces: CreateThingGroupRequestRequestTypeDef](./type_defs.md#createthinggrouprequestrequesttypedef) 
 
-### create_thing_type
+### create\_thing\_type
 
 Creates a new thing type.
 
-Type annotations for `boto3.client("iot").create_thing_type` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_thing_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type)
 
-Boto3 documentation:
-[IoT.Client.create_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_thing_type)
+```python title="Method definition"
+def create_thing_type(
+    self,
+    *,
+    thingTypeName: str,
+    thingTypeProperties: ThingTypePropertiesTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateThingTypeResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateThingTypeRequestRequestTypeDef](./type_defs.md#createthingtyperequestrequesttypedef).
+1. See [:material-code-braces: ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingTypeName`: `str` *(required)*
-- `thingTypeProperties`:
-  [ThingTypePropertiesTypeDef](./type_defs.md#thingtypepropertiestypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateThingTypeRequestRequestTypeDef = {  # (1)
+    "thingTypeName": ...,
+}
 
-Returns
-[CreateThingTypeResponseTypeDef](./type_defs.md#createthingtyperesponsetypedef).
+parent.create_thing_type(**kwargs)
+```
 
-<a id="create\_topic\_rule"></a>
+1. See [:material-code-braces: CreateThingTypeRequestRequestTypeDef](./type_defs.md#createthingtyperequestrequesttypedef) 
 
-### create_topic_rule
+### create\_topic\_rule
 
 .
 
-Type annotations for `boto3.client("iot").create_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").create_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.create_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule)
+```python title="Method definition"
+def create_topic_rule(
+    self,
+    *,
+    ruleName: str,
+    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
+    tags: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateTopicRuleRequestRequestTypeDef](./type_defs.md#createtopicrulerequestrequesttypedef).
+1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
-- `topicRulePayload`:
-  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
-  *(required)*
-- `tags`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+    "topicRulePayload": ...,
+}
 
-<a id="create\_topic\_rule\_destination"></a>
+parent.create_topic_rule(**kwargs)
+```
 
-### create_topic_rule_destination
+1. See [:material-code-braces: CreateTopicRuleRequestRequestTypeDef](./type_defs.md#createtopicrulerequestrequesttypedef) 
+
+### create\_topic\_rule\_destination
 
 Creates a topic rule destination.
 
-Type annotations for `boto3.client("iot").create_topic_rule_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").create_topic_rule_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
 
-Boto3 documentation:
-[IoT.Client.create_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.create_topic_rule_destination)
+```python title="Method definition"
+def create_topic_rule_destination(
+    self,
+    *,
+    destinationConfiguration: TopicRuleDestinationConfigurationTypeDef,  # (1)
+) -> CreateTopicRuleDestinationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#createtopicruledestinationrequestrequesttypedef).
+1. See [:material-code-braces: TopicRuleDestinationConfigurationTypeDef](./type_defs.md#topicruledestinationconfigurationtypedef) 
+2. See [:material-code-braces: CreateTopicRuleDestinationResponseTypeDef](./type_defs.md#createtopicruledestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `destinationConfiguration`:
-  [TopicRuleDestinationConfigurationTypeDef](./type_defs.md#topicruledestinationconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTopicRuleDestinationRequestRequestTypeDef = {  # (1)
+    "destinationConfiguration": ...,
+}
 
-Returns
-[CreateTopicRuleDestinationResponseTypeDef](./type_defs.md#createtopicruledestinationresponsetypedef).
+parent.create_topic_rule_destination(**kwargs)
+```
 
-<a id="delete\_account\_audit\_configuration"></a>
+1. See [:material-code-braces: CreateTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#createtopicruledestinationrequestrequesttypedef) 
 
-### delete_account_audit_configuration
+### delete\_account\_audit\_configuration
 
 Restores the default settings for Device Defender audits for this account.
 
-Type annotations for `boto3.client("iot").delete_account_audit_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_account_audit_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
 
-Boto3 documentation:
-[IoT.Client.delete_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_account_audit_configuration)
+```python title="Method definition"
+def delete_account_audit_configuration(
+    self,
+    *,
+    deleteScheduledAudits: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAccountAuditConfigurationRequestRequestTypeDef](./type_defs.md#deleteaccountauditconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `deleteScheduledAudits`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteAccountAuditConfigurationRequestRequestTypeDef = {  # (1)
+    "deleteScheduledAudits": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_account_audit_configuration(**kwargs)
+```
 
-<a id="delete\_audit\_suppression"></a>
+1. See [:material-code-braces: DeleteAccountAuditConfigurationRequestRequestTypeDef](./type_defs.md#deleteaccountauditconfigurationrequestrequesttypedef) 
 
-### delete_audit_suppression
+### delete\_audit\_suppression
 
 Deletes a Device Defender audit suppression.
 
-Type annotations for `boto3.client("iot").delete_audit_suppression` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_audit_suppression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression)
 
-Boto3 documentation:
-[IoT.Client.delete_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_audit_suppression)
+```python title="Method definition"
+def delete_audit_suppression(
+    self,
+    *,
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAuditSuppressionRequestRequestTypeDef](./type_defs.md#deleteauditsuppressionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 
-Keyword-only arguments:
 
-- `checkName`: `str` *(required)*
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAuditSuppressionRequestRequestTypeDef = {  # (1)
+    "checkName": ...,
+    "resourceIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_audit_suppression(**kwargs)
+```
 
-<a id="delete\_authorizer"></a>
+1. See [:material-code-braces: DeleteAuditSuppressionRequestRequestTypeDef](./type_defs.md#deleteauditsuppressionrequestrequesttypedef) 
 
-### delete_authorizer
+### delete\_authorizer
 
 Deletes an authorizer.
 
-Type annotations for `boto3.client("iot").delete_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer)
 
-Boto3 documentation:
-[IoT.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_authorizer)
+```python title="Method definition"
+def delete_authorizer(
+    self,
+    *,
+    authorizerName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAuthorizerRequestRequestTypeDef](./type_defs.md#deleteauthorizerrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_authorizer(**kwargs)
+```
 
-<a id="delete\_billing\_group"></a>
+1. See [:material-code-braces: DeleteAuthorizerRequestRequestTypeDef](./type_defs.md#deleteauthorizerrequestrequesttypedef) 
 
-### delete_billing_group
+### delete\_billing\_group
 
 Deletes the billing group.
 
-Type annotations for `boto3.client("iot").delete_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group)
 
-Boto3 documentation:
-[IoT.Client.delete_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_billing_group)
+```python title="Method definition"
+def delete_billing_group(
+    self,
+    *,
+    billingGroupName: str,
+    expectedVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteBillingGroupRequestRequestTypeDef](./type_defs.md#deletebillinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_billing_group(**kwargs)
+```
 
-<a id="delete\_ca\_certificate"></a>
+1. See [:material-code-braces: DeleteBillingGroupRequestRequestTypeDef](./type_defs.md#deletebillinggrouprequestrequesttypedef) 
 
-### delete_ca_certificate
+### delete\_ca\_certificate
 
 Deletes a registered CA certificate.
 
-Type annotations for `boto3.client("iot").delete_ca_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_ca_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate)
 
-Boto3 documentation:
-[IoT.Client.delete_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ca_certificate)
+```python title="Method definition"
+def delete_ca_certificate(
+    self,
+    *,
+    certificateId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCACertificateRequestRequestTypeDef](./type_defs.md#deletecacertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCACertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_ca_certificate(**kwargs)
+```
 
-<a id="delete\_certificate"></a>
+1. See [:material-code-braces: DeleteCACertificateRequestRequestTypeDef](./type_defs.md#deletecacertificaterequestrequesttypedef) 
 
-### delete_certificate
+### delete\_certificate
 
 Deletes the specified certificate.
 
-Type annotations for `boto3.client("iot").delete_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate)
 
-Boto3 documentation:
-[IoT.Client.delete_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_certificate)
+```python title="Method definition"
+def delete_certificate(
+    self,
+    *,
+    certificateId: str,
+    forceDelete: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `forceDelete`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteCertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-<a id="delete\_custom\_metric"></a>
+parent.delete_certificate(**kwargs)
+```
 
-### delete_custom_metric
+1. See [:material-code-braces: DeleteCertificateRequestRequestTypeDef](./type_defs.md#deletecertificaterequestrequesttypedef) 
+
+### delete\_custom\_metric
 
 Deletes a Device Defender detect custom metric.
 
-Type annotations for `boto3.client("iot").delete_custom_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_custom_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric)
 
-Boto3 documentation:
-[IoT.Client.delete_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_custom_metric)
+```python title="Method definition"
+def delete_custom_metric(
+    self,
+    *,
+    metricName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCustomMetricRequestRequestTypeDef](./type_defs.md#deletecustommetricrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCustomMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_custom_metric(**kwargs)
+```
 
-<a id="delete\_dimension"></a>
+1. See [:material-code-braces: DeleteCustomMetricRequestRequestTypeDef](./type_defs.md#deletecustommetricrequestrequesttypedef) 
 
-### delete_dimension
+### delete\_dimension
 
 Removes the specified dimension from your Amazon Web Services accounts.
 
-Type annotations for `boto3.client("iot").delete_dimension` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_dimension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension)
 
-Boto3 documentation:
-[IoT.Client.delete_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dimension)
+```python title="Method definition"
+def delete_dimension(
+    self,
+    *,
+    name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDimensionRequestRequestTypeDef](./type_defs.md#deletedimensionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDimensionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dimension(**kwargs)
+```
 
-<a id="delete\_domain\_configuration"></a>
+1. See [:material-code-braces: DeleteDimensionRequestRequestTypeDef](./type_defs.md#deletedimensionrequestrequesttypedef) 
 
-### delete_domain_configuration
+### delete\_domain\_configuration
 
 Deletes the specified domain configuration.
 
-Type annotations for `boto3.client("iot").delete_domain_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_domain_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration)
 
-Boto3 documentation:
-[IoT.Client.delete_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_domain_configuration)
+```python title="Method definition"
+def delete_domain_configuration(
+    self,
+    *,
+    domainConfigurationName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDomainConfigurationRequestRequestTypeDef](./type_defs.md#deletedomainconfigurationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `domainConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainConfigurationRequestRequestTypeDef = {  # (1)
+    "domainConfigurationName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_domain_configuration(**kwargs)
+```
 
-<a id="delete\_dynamic\_thing\_group"></a>
+1. See [:material-code-braces: DeleteDomainConfigurationRequestRequestTypeDef](./type_defs.md#deletedomainconfigurationrequestrequesttypedef) 
 
-### delete_dynamic_thing_group
+### delete\_dynamic\_thing\_group
 
 Deletes a dynamic thing group.
 
-Type annotations for `boto3.client("iot").delete_dynamic_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_dynamic_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
 
-Boto3 documentation:
-[IoT.Client.delete_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_dynamic_thing_group)
+```python title="Method definition"
+def delete_dynamic_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    expectedVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDynamicThingGroupRequestRequestTypeDef](./type_defs.md#deletedynamicthinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteDynamicThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_dynamic_thing_group(**kwargs)
+```
 
-<a id="delete\_fleet\_metric"></a>
+1. See [:material-code-braces: DeleteDynamicThingGroupRequestRequestTypeDef](./type_defs.md#deletedynamicthinggrouprequestrequesttypedef) 
 
-### delete_fleet_metric
+### delete\_fleet\_metric
 
 Deletes the specified fleet metric.
 
-Type annotations for `boto3.client("iot").delete_fleet_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_fleet_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_fleet_metric)
 
-Boto3 documentation:
-[IoT.Client.delete_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_fleet_metric)
+```python title="Method definition"
+def delete_fleet_metric(
+    self,
+    *,
+    metricName: str,
+    expectedVersion: int = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFleetMetricRequestRequestTypeDef](./type_defs.md#deletefleetmetricrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteFleetMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+}
 
-<a id="delete\_job"></a>
+parent.delete_fleet_metric(**kwargs)
+```
 
-### delete_job
+1. See [:material-code-braces: DeleteFleetMetricRequestRequestTypeDef](./type_defs.md#deletefleetmetricrequestrequesttypedef) 
+
+### delete\_job
 
 Deletes a job and its related job executions.
 
-Type annotations for `boto3.client("iot").delete_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job)
 
-Boto3 documentation:
-[IoT.Client.delete_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job)
+```python title="Method definition"
+def delete_job(
+    self,
+    *,
+    jobId: str,
+    force: bool = ...,
+    namespaceId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `force`: `bool`
-- `namespaceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-<a id="delete\_job\_execution"></a>
+parent.delete_job(**kwargs)
+```
 
-### delete_job_execution
+1. See [:material-code-braces: DeleteJobRequestRequestTypeDef](./type_defs.md#deletejobrequestrequesttypedef) 
+
+### delete\_job\_execution
 
 Deletes a job execution.
 
-Type annotations for `boto3.client("iot").delete_job_execution` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution)
 
-Boto3 documentation:
-[IoT.Client.delete_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_execution)
+```python title="Method definition"
+def delete_job_execution(
+    self,
+    *,
+    jobId: str,
+    thingName: str,
+    executionNumber: int,
+    force: bool = ...,
+    namespaceId: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobExecutionRequestRequestTypeDef](./type_defs.md#deletejobexecutionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `thingName`: `str` *(required)*
-- `executionNumber`: `int` *(required)*
-- `force`: `bool`
-- `namespaceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteJobExecutionRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "thingName": ...,
+    "executionNumber": ...,
+}
 
-<a id="delete\_job\_template"></a>
+parent.delete_job_execution(**kwargs)
+```
 
-### delete_job_template
+1. See [:material-code-braces: DeleteJobExecutionRequestRequestTypeDef](./type_defs.md#deletejobexecutionrequestrequesttypedef) 
+
+### delete\_job\_template
 
 Deletes the specified job template.
 
-Type annotations for `boto3.client("iot").delete_job_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_template)
 
-Boto3 documentation:
-[IoT.Client.delete_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_job_template)
+```python title="Method definition"
+def delete_job_template(
+    self,
+    *,
+    jobTemplateId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `jobTemplateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteJobTemplateRequestRequestTypeDef = {  # (1)
+    "jobTemplateId": ...,
+}
 
-<a id="delete\_mitigation\_action"></a>
+parent.delete_job_template(**kwargs)
+```
 
-### delete_mitigation_action
+1. See [:material-code-braces: DeleteJobTemplateRequestRequestTypeDef](./type_defs.md#deletejobtemplaterequestrequesttypedef) 
+
+### delete\_mitigation\_action
 
 Deletes a defined mitigation action from your Amazon Web Services accounts.
 
-Type annotations for `boto3.client("iot").delete_mitigation_action` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_mitigation_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action)
 
-Boto3 documentation:
-[IoT.Client.delete_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_mitigation_action)
+```python title="Method definition"
+def delete_mitigation_action(
+    self,
+    *,
+    actionName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteMitigationActionRequestRequestTypeDef](./type_defs.md#deletemitigationactionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `actionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMitigationActionRequestRequestTypeDef = {  # (1)
+    "actionName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_mitigation_action(**kwargs)
+```
 
-<a id="delete\_ota\_update"></a>
+1. See [:material-code-braces: DeleteMitigationActionRequestRequestTypeDef](./type_defs.md#deletemitigationactionrequestrequesttypedef) 
 
-### delete_ota_update
+### delete\_ota\_update
 
 Delete an OTA update.
 
-Type annotations for `boto3.client("iot").delete_ota_update` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_ota_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update)
 
-Boto3 documentation:
-[IoT.Client.delete_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_ota_update)
+```python title="Method definition"
+def delete_ota_update(
+    self,
+    *,
+    otaUpdateId: str,
+    deleteStream: bool = ...,
+    forceDeleteAWSJob: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteOTAUpdateRequestRequestTypeDef](./type_defs.md#deleteotaupdaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `otaUpdateId`: `str` *(required)*
-- `deleteStream`: `bool`
-- `forceDeleteAWSJob`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeleteOTAUpdateRequestRequestTypeDef = {  # (1)
+    "otaUpdateId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_ota_update(**kwargs)
+```
 
-<a id="delete\_policy"></a>
+1. See [:material-code-braces: DeleteOTAUpdateRequestRequestTypeDef](./type_defs.md#deleteotaupdaterequestrequesttypedef) 
 
-### delete_policy
+### delete\_policy
 
 Deletes the specified policy.
 
-Type annotations for `boto3.client("iot").delete_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy)
 
-Boto3 documentation:
-[IoT.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy)
+```python title="Method definition"
+def delete_policy(
+    self,
+    *,
+    policyName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-<a id="delete\_policy\_version"></a>
+parent.delete_policy(**kwargs)
+```
 
-### delete_policy_version
+1. See [:material-code-braces: DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef) 
+
+### delete\_policy\_version
 
 Deletes the specified version of the specified policy.
 
-Type annotations for `boto3.client("iot").delete_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version)
 
-Boto3 documentation:
-[IoT.Client.delete_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_policy_version)
+```python title="Method definition"
+def delete_policy_version(
+    self,
+    *,
+    policyName: str,
+    policyVersionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeletePolicyVersionRequestRequestTypeDef](./type_defs.md#deletepolicyversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `policyVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePolicyVersionRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "policyVersionId": ...,
+}
 
-<a id="delete\_provisioning\_template"></a>
+parent.delete_policy_version(**kwargs)
+```
 
-### delete_provisioning_template
+1. See [:material-code-braces: DeletePolicyVersionRequestRequestTypeDef](./type_defs.md#deletepolicyversionrequestrequesttypedef) 
+
+### delete\_provisioning\_template
 
 Deletes a fleet provisioning template.
 
-Type annotations for `boto3.client("iot").delete_provisioning_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_provisioning_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
 
-Boto3 documentation:
-[IoT.Client.delete_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template)
+```python title="Method definition"
+def delete_provisioning_template(
+    self,
+    *,
+    templateName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProvisioningTemplateRequestRequestTypeDef](./type_defs.md#deleteprovisioningtemplaterequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProvisioningTemplateRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_provisioning_template(**kwargs)
+```
 
-<a id="delete\_provisioning\_template\_version"></a>
+1. See [:material-code-braces: DeleteProvisioningTemplateRequestRequestTypeDef](./type_defs.md#deleteprovisioningtemplaterequestrequesttypedef) 
 
-### delete_provisioning_template_version
+### delete\_provisioning\_template\_version
 
 Deletes a fleet provisioning template version.
 
-Type annotations for `boto3.client("iot").delete_provisioning_template_version`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_provisioning_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
 
-Boto3 documentation:
-[IoT.Client.delete_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_provisioning_template_version)
+```python title="Method definition"
+def delete_provisioning_template_version(
+    self,
+    *,
+    templateName: str,
+    versionId: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#deleteprovisioningtemplateversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `versionId`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteProvisioningTemplateVersionRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "versionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_provisioning_template_version(**kwargs)
+```
 
-<a id="delete\_registration\_code"></a>
+1. See [:material-code-braces: DeleteProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#deleteprovisioningtemplateversionrequestrequesttypedef) 
 
-### delete_registration_code
+### delete\_registration\_code
 
 Deletes a CA certificate registration code.
 
-Type annotations for `boto3.client("iot").delete_registration_code` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_registration_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code)
 
-Boto3 documentation:
-[IoT.Client.delete_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_registration_code)
+```python title="Method definition"
+def delete_registration_code(
+    self,
+) -> Dict[str, Any]:
+    ...
+```
 
-Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete\_role\_alias"></a>
-
-### delete_role_alias
+### delete\_role\_alias
 
 Deletes a role alias Requires permission to access the
-\[DeleteRoleAlias\](https://docs.aws.amazon.com/service-
-authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions)\_
+[DeleteRoleAlias](https://docs.aws.amazon.com/service-
+authorization/latest/reference/list_awsiot.html#awsiot-actions-as-permissions)_
 action.
 
-Type annotations for `boto3.client("iot").delete_role_alias` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_role_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias)
 
-Boto3 documentation:
-[IoT.Client.delete_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_role_alias)
+```python title="Method definition"
+def delete_role_alias(
+    self,
+    *,
+    roleAlias: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRoleAliasRequestRequestTypeDef](./type_defs.md#deleterolealiasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `roleAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRoleAliasRequestRequestTypeDef = {  # (1)
+    "roleAlias": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_role_alias(**kwargs)
+```
 
-<a id="delete\_scheduled\_audit"></a>
+1. See [:material-code-braces: DeleteRoleAliasRequestRequestTypeDef](./type_defs.md#deleterolealiasrequestrequesttypedef) 
 
-### delete_scheduled_audit
+### delete\_scheduled\_audit
 
 Deletes a scheduled audit.
 
-Type annotations for `boto3.client("iot").delete_scheduled_audit` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_scheduled_audit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
 
-Boto3 documentation:
-[IoT.Client.delete_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_scheduled_audit)
+```python title="Method definition"
+def delete_scheduled_audit(
+    self,
+    *,
+    scheduledAuditName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScheduledAuditRequestRequestTypeDef](./type_defs.md#deletescheduledauditrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `scheduledAuditName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScheduledAuditRequestRequestTypeDef = {  # (1)
+    "scheduledAuditName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scheduled_audit(**kwargs)
+```
 
-<a id="delete\_security\_profile"></a>
+1. See [:material-code-braces: DeleteScheduledAuditRequestRequestTypeDef](./type_defs.md#deletescheduledauditrequestrequesttypedef) 
 
-### delete_security_profile
+### delete\_security\_profile
 
 Deletes a Device Defender security profile.
 
-Type annotations for `boto3.client("iot").delete_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile)
 
-Boto3 documentation:
-[IoT.Client.delete_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_security_profile)
+```python title="Method definition"
+def delete_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    expectedVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_security_profile(**kwargs)
+```
 
-<a id="delete\_stream"></a>
+1. See [:material-code-braces: DeleteSecurityProfileRequestRequestTypeDef](./type_defs.md#deletesecurityprofilerequestrequesttypedef) 
 
-### delete_stream
+### delete\_stream
 
 Deletes a stream.
 
-Type annotations for `boto3.client("iot").delete_stream` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream)
 
-Boto3 documentation:
-[IoT.Client.delete_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_stream)
+```python title="Method definition"
+def delete_stream(
+    self,
+    *,
+    streamId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStreamRequestRequestTypeDef](./type_defs.md#deletestreamrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `streamId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStreamRequestRequestTypeDef = {  # (1)
+    "streamId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_stream(**kwargs)
+```
 
-<a id="delete\_thing"></a>
+1. See [:material-code-braces: DeleteStreamRequestRequestTypeDef](./type_defs.md#deletestreamrequestrequesttypedef) 
 
-### delete_thing
+### delete\_thing
 
 Deletes the specified thing.
 
-Type annotations for `boto3.client("iot").delete_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing)
 
-Boto3 documentation:
-[IoT.Client.delete_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing)
+```python title="Method definition"
+def delete_thing(
+    self,
+    *,
+    thingName: str,
+    expectedVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteThingRequestRequestTypeDef](./type_defs.md#deletethingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_thing(**kwargs)
+```
 
-<a id="delete\_thing\_group"></a>
+1. See [:material-code-braces: DeleteThingRequestRequestTypeDef](./type_defs.md#deletethingrequestrequesttypedef) 
 
-### delete_thing_group
+### delete\_thing\_group
 
 Deletes a thing group.
 
-Type annotations for `boto3.client("iot").delete_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group)
 
-Boto3 documentation:
-[IoT.Client.delete_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_group)
+```python title="Method definition"
+def delete_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    expectedVersion: int = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteThingGroupRequestRequestTypeDef](./type_defs.md#deletethinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: DeleteThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_thing_group(**kwargs)
+```
 
-<a id="delete\_thing\_type"></a>
+1. See [:material-code-braces: DeleteThingGroupRequestRequestTypeDef](./type_defs.md#deletethinggrouprequestrequesttypedef) 
 
-### delete_thing_type
+### delete\_thing\_type
 
 Deletes the specified thing type.
 
-Type annotations for `boto3.client("iot").delete_thing_type` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_thing_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type)
 
-Boto3 documentation:
-[IoT.Client.delete_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_thing_type)
+```python title="Method definition"
+def delete_thing_type(
+    self,
+    *,
+    thingTypeName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteThingTypeRequestRequestTypeDef](./type_defs.md#deletethingtyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingTypeName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteThingTypeRequestRequestTypeDef = {  # (1)
+    "thingTypeName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_thing_type(**kwargs)
+```
 
-<a id="delete\_topic\_rule"></a>
+1. See [:material-code-braces: DeleteThingTypeRequestRequestTypeDef](./type_defs.md#deletethingtyperequestrequesttypedef) 
 
-### delete_topic_rule
+### delete\_topic\_rule
 
 Deletes the rule.
 
-Type annotations for `boto3.client("iot").delete_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.delete_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule)
+```python title="Method definition"
+def delete_topic_rule(
+    self,
+    *,
+    ruleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTopicRuleRequestRequestTypeDef](./type_defs.md#deletetopicrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+}
 
-<a id="delete\_topic\_rule\_destination"></a>
+parent.delete_topic_rule(**kwargs)
+```
 
-### delete_topic_rule_destination
+1. See [:material-code-braces: DeleteTopicRuleRequestRequestTypeDef](./type_defs.md#deletetopicrulerequestrequesttypedef) 
+
+### delete\_topic\_rule\_destination
 
 Deletes a topic rule destination.
 
-Type annotations for `boto3.client("iot").delete_topic_rule_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_topic_rule_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
 
-Boto3 documentation:
-[IoT.Client.delete_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_topic_rule_destination)
+```python title="Method definition"
+def delete_topic_rule_destination(
+    self,
+    *,
+    arn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#deletetopicruledestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTopicRuleDestinationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_topic_rule_destination(**kwargs)
+```
 
-<a id="delete\_v2\_logging\_level"></a>
+1. See [:material-code-braces: DeleteTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#deletetopicruledestinationrequestrequesttypedef) 
 
-### delete_v2_logging_level
+### delete\_v2\_logging\_level
 
 Deletes a logging level.
 
-Type annotations for `boto3.client("iot").delete_v2_logging_level` method.
+Type annotations and code completion for `#!python boto3.client("iot").delete_v2_logging_level` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
 
-Boto3 documentation:
-[IoT.Client.delete_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.delete_v2_logging_level)
+```python title="Method definition"
+def delete_v2_logging_level(
+    self,
+    *,
+    targetType: LogTargetTypeType,  # (1)
+    targetName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteV2LoggingLevelRequestRequestTypeDef](./type_defs.md#deletev2logginglevelrequestrequesttypedef).
+1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
 
-Keyword-only arguments:
 
-- `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
-  *(required)*
-- `targetName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteV2LoggingLevelRequestRequestTypeDef = {  # (1)
+    "targetType": ...,
+    "targetName": ...,
+}
 
-<a id="deprecate\_thing\_type"></a>
+parent.delete_v2_logging_level(**kwargs)
+```
 
-### deprecate_thing_type
+1. See [:material-code-braces: DeleteV2LoggingLevelRequestRequestTypeDef](./type_defs.md#deletev2logginglevelrequestrequesttypedef) 
+
+### deprecate\_thing\_type
 
 Deprecates a thing type.
 
-Type annotations for `boto3.client("iot").deprecate_thing_type` method.
+Type annotations and code completion for `#!python boto3.client("iot").deprecate_thing_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type)
 
-Boto3 documentation:
-[IoT.Client.deprecate_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.deprecate_thing_type)
+```python title="Method definition"
+def deprecate_thing_type(
+    self,
+    *,
+    thingTypeName: str,
+    undoDeprecate: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeprecateThingTypeRequestRequestTypeDef](./type_defs.md#deprecatethingtyperequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingTypeName`: `str` *(required)*
-- `undoDeprecate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: DeprecateThingTypeRequestRequestTypeDef = {  # (1)
+    "thingTypeName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deprecate_thing_type(**kwargs)
+```
 
-<a id="describe\_account\_audit\_configuration"></a>
+1. See [:material-code-braces: DeprecateThingTypeRequestRequestTypeDef](./type_defs.md#deprecatethingtyperequestrequesttypedef) 
 
-### describe_account_audit_configuration
+### describe\_account\_audit\_configuration
 
 Gets information about the Device Defender audit settings for this account.
 
-Type annotations for `boto3.client("iot").describe_account_audit_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_account_audit_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
 
-Boto3 documentation:
-[IoT.Client.describe_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_account_audit_configuration)
+```python title="Method definition"
+def describe_account_audit_configuration(
+    self,
+) -> DescribeAccountAuditConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAccountAuditConfigurationResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponsetypedef).
+1. See [:material-code-braces: DescribeAccountAuditConfigurationResponseTypeDef](./type_defs.md#describeaccountauditconfigurationresponsetypedef) 
 
-<a id="describe\_audit\_finding"></a>
-
-### describe_audit_finding
+### describe\_audit\_finding
 
 Gets information about a single audit finding.
 
-Type annotations for `boto3.client("iot").describe_audit_finding` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_audit_finding` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding)
 
-Boto3 documentation:
-[IoT.Client.describe_audit_finding](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_finding)
+```python title="Method definition"
+def describe_audit_finding(
+    self,
+    *,
+    findingId: str,
+) -> DescribeAuditFindingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAuditFindingRequestRequestTypeDef](./type_defs.md#describeauditfindingrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAuditFindingResponseTypeDef](./type_defs.md#describeauditfindingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `findingId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAuditFindingRequestRequestTypeDef = {  # (1)
+    "findingId": ...,
+}
 
-Returns
-[DescribeAuditFindingResponseTypeDef](./type_defs.md#describeauditfindingresponsetypedef).
+parent.describe_audit_finding(**kwargs)
+```
 
-<a id="describe\_audit\_mitigation\_actions\_task"></a>
+1. See [:material-code-braces: DescribeAuditFindingRequestRequestTypeDef](./type_defs.md#describeauditfindingrequestrequesttypedef) 
 
-### describe_audit_mitigation_actions_task
+### describe\_audit\_mitigation\_actions\_task
 
-Gets information about an audit mitigation task that is used to apply
-mitigation actions to a set of audit findings.
+Gets information about an audit mitigation task that is used to apply mitigation
+actions to a set of audit findings.
 
-Type annotations for
-`boto3.client("iot").describe_audit_mitigation_actions_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_audit_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.describe_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_mitigation_actions_task)
+```python title="Method definition"
+def describe_audit_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+) -> DescribeAuditMitigationActionsTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#describeauditmitigationactionstaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#describeauditmitigationactionstaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAuditMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[DescribeAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#describeauditmitigationactionstaskresponsetypedef).
+parent.describe_audit_mitigation_actions_task(**kwargs)
+```
 
-<a id="describe\_audit\_suppression"></a>
+1. See [:material-code-braces: DescribeAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#describeauditmitigationactionstaskrequestrequesttypedef) 
 
-### describe_audit_suppression
+### describe\_audit\_suppression
 
 Gets information about a Device Defender audit suppression.
 
-Type annotations for `boto3.client("iot").describe_audit_suppression` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_audit_suppression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression)
 
-Boto3 documentation:
-[IoT.Client.describe_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_suppression)
+```python title="Method definition"
+def describe_audit_suppression(
+    self,
+    *,
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+) -> DescribeAuditSuppressionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAuditSuppressionRequestRequestTypeDef](./type_defs.md#describeauditsuppressionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: DescribeAuditSuppressionResponseTypeDef](./type_defs.md#describeauditsuppressionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkName`: `str` *(required)*
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAuditSuppressionRequestRequestTypeDef = {  # (1)
+    "checkName": ...,
+    "resourceIdentifier": ...,
+}
 
-Returns
-[DescribeAuditSuppressionResponseTypeDef](./type_defs.md#describeauditsuppressionresponsetypedef).
+parent.describe_audit_suppression(**kwargs)
+```
 
-<a id="describe\_audit\_task"></a>
+1. See [:material-code-braces: DescribeAuditSuppressionRequestRequestTypeDef](./type_defs.md#describeauditsuppressionrequestrequesttypedef) 
 
-### describe_audit_task
+### describe\_audit\_task
 
 Gets information about a Device Defender audit.
 
-Type annotations for `boto3.client("iot").describe_audit_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_audit_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task)
 
-Boto3 documentation:
-[IoT.Client.describe_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_audit_task)
+```python title="Method definition"
+def describe_audit_task(
+    self,
+    *,
+    taskId: str,
+) -> DescribeAuditTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAuditTaskRequestRequestTypeDef](./type_defs.md#describeaudittaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAuditTaskResponseTypeDef](./type_defs.md#describeaudittaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAuditTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[DescribeAuditTaskResponseTypeDef](./type_defs.md#describeaudittaskresponsetypedef).
+parent.describe_audit_task(**kwargs)
+```
 
-<a id="describe\_authorizer"></a>
+1. See [:material-code-braces: DescribeAuditTaskRequestRequestTypeDef](./type_defs.md#describeaudittaskrequestrequesttypedef) 
 
-### describe_authorizer
+### describe\_authorizer
 
 Describes an authorizer.
 
-Type annotations for `boto3.client("iot").describe_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer)
 
-Boto3 documentation:
-[IoT.Client.describe_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_authorizer)
+```python title="Method definition"
+def describe_authorizer(
+    self,
+    *,
+    authorizerName: str,
+) -> DescribeAuthorizerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAuthorizerRequestRequestTypeDef](./type_defs.md#describeauthorizerrequestrequesttypedef).
+1. See [:material-code-braces: DescribeAuthorizerResponseTypeDef](./type_defs.md#describeauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+}
 
-Returns
-[DescribeAuthorizerResponseTypeDef](./type_defs.md#describeauthorizerresponsetypedef).
+parent.describe_authorizer(**kwargs)
+```
 
-<a id="describe\_billing\_group"></a>
+1. See [:material-code-braces: DescribeAuthorizerRequestRequestTypeDef](./type_defs.md#describeauthorizerrequestrequesttypedef) 
 
-### describe_billing_group
+### describe\_billing\_group
 
 Returns information about a billing group.
 
-Type annotations for `boto3.client("iot").describe_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group)
 
-Boto3 documentation:
-[IoT.Client.describe_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_billing_group)
+```python title="Method definition"
+def describe_billing_group(
+    self,
+    *,
+    billingGroupName: str,
+) -> DescribeBillingGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeBillingGroupRequestRequestTypeDef](./type_defs.md#describebillinggrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeBillingGroupResponseTypeDef](./type_defs.md#describebillinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns
-[DescribeBillingGroupResponseTypeDef](./type_defs.md#describebillinggroupresponsetypedef).
+parent.describe_billing_group(**kwargs)
+```
 
-<a id="describe\_ca\_certificate"></a>
+1. See [:material-code-braces: DescribeBillingGroupRequestRequestTypeDef](./type_defs.md#describebillinggrouprequestrequesttypedef) 
 
-### describe_ca_certificate
+### describe\_ca\_certificate
 
 Describes a registered CA certificate.
 
-Type annotations for `boto3.client("iot").describe_ca_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_ca_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate)
 
-Boto3 documentation:
-[IoT.Client.describe_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_ca_certificate)
+```python title="Method definition"
+def describe_ca_certificate(
+    self,
+    *,
+    certificateId: str,
+) -> DescribeCACertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCACertificateRequestRequestTypeDef](./type_defs.md#describecacertificaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeCACertificateResponseTypeDef](./type_defs.md#describecacertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCACertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-Returns
-[DescribeCACertificateResponseTypeDef](./type_defs.md#describecacertificateresponsetypedef).
+parent.describe_ca_certificate(**kwargs)
+```
 
-<a id="describe\_certificate"></a>
+1. See [:material-code-braces: DescribeCACertificateRequestRequestTypeDef](./type_defs.md#describecacertificaterequestrequesttypedef) 
 
-### describe_certificate
+### describe\_certificate
 
 Gets information about the specified certificate.
 
-Type annotations for `boto3.client("iot").describe_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate)
 
-Boto3 documentation:
-[IoT.Client.describe_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_certificate)
+```python title="Method definition"
+def describe_certificate(
+    self,
+    *,
+    certificateId: str,
+) -> DescribeCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-Returns
-[DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+parent.describe_certificate(**kwargs)
+```
 
-<a id="describe\_custom\_metric"></a>
+1. See [:material-code-braces: DescribeCertificateRequestRequestTypeDef](./type_defs.md#describecertificaterequestrequesttypedef) 
 
-### describe_custom_metric
+### describe\_custom\_metric
 
 Gets information about a Device Defender detect custom metric.
 
-Type annotations for `boto3.client("iot").describe_custom_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_custom_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric)
 
-Boto3 documentation:
-[IoT.Client.describe_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_custom_metric)
+```python title="Method definition"
+def describe_custom_metric(
+    self,
+    *,
+    metricName: str,
+) -> DescribeCustomMetricResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeCustomMetricRequestRequestTypeDef](./type_defs.md#describecustommetricrequestrequesttypedef).
+1. See [:material-code-braces: DescribeCustomMetricResponseTypeDef](./type_defs.md#describecustommetricresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeCustomMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+}
 
-Returns
-[DescribeCustomMetricResponseTypeDef](./type_defs.md#describecustommetricresponsetypedef).
+parent.describe_custom_metric(**kwargs)
+```
 
-<a id="describe\_default\_authorizer"></a>
+1. See [:material-code-braces: DescribeCustomMetricRequestRequestTypeDef](./type_defs.md#describecustommetricrequestrequesttypedef) 
 
-### describe_default_authorizer
+### describe\_default\_authorizer
 
 Describes the default authorizer.
 
-Type annotations for `boto3.client("iot").describe_default_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_default_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer)
 
-Boto3 documentation:
-[IoT.Client.describe_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_default_authorizer)
+```python title="Method definition"
+def describe_default_authorizer(
+    self,
+) -> DescribeDefaultAuthorizerResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeDefaultAuthorizerResponseTypeDef](./type_defs.md#describedefaultauthorizerresponsetypedef).
+1. See [:material-code-braces: DescribeDefaultAuthorizerResponseTypeDef](./type_defs.md#describedefaultauthorizerresponsetypedef) 
 
-<a id="describe\_detect\_mitigation\_actions\_task"></a>
-
-### describe_detect_mitigation_actions_task
+### describe\_detect\_mitigation\_actions\_task
 
 Gets information about a Device Defender ML Detect mitigation action.
 
-Type annotations for
-`boto3.client("iot").describe_detect_mitigation_actions_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_detect_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.describe_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_detect_mitigation_actions_task)
+```python title="Method definition"
+def describe_detect_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+) -> DescribeDetectMitigationActionsTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#describedetectmitigationactionstaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#describedetectmitigationactionstaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDetectMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[DescribeDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#describedetectmitigationactionstaskresponsetypedef).
+parent.describe_detect_mitigation_actions_task(**kwargs)
+```
 
-<a id="describe\_dimension"></a>
+1. See [:material-code-braces: DescribeDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#describedetectmitigationactionstaskrequestrequesttypedef) 
 
-### describe_dimension
+### describe\_dimension
 
 Provides details about a dimension that is defined in your Amazon Web Services
 accounts.
 
-Type annotations for `boto3.client("iot").describe_dimension` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_dimension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension)
 
-Boto3 documentation:
-[IoT.Client.describe_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_dimension)
+```python title="Method definition"
+def describe_dimension(
+    self,
+    *,
+    name: str,
+) -> DescribeDimensionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDimensionRequestRequestTypeDef](./type_defs.md#describedimensionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDimensionResponseTypeDef](./type_defs.md#describedimensionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDimensionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[DescribeDimensionResponseTypeDef](./type_defs.md#describedimensionresponsetypedef).
+parent.describe_dimension(**kwargs)
+```
 
-<a id="describe\_domain\_configuration"></a>
+1. See [:material-code-braces: DescribeDimensionRequestRequestTypeDef](./type_defs.md#describedimensionrequestrequesttypedef) 
 
-### describe_domain_configuration
+### describe\_domain\_configuration
 
 Gets summary information about a domain configuration.
 
-Type annotations for `boto3.client("iot").describe_domain_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_domain_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration)
 
-Boto3 documentation:
-[IoT.Client.describe_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_domain_configuration)
+```python title="Method definition"
+def describe_domain_configuration(
+    self,
+    *,
+    domainConfigurationName: str,
+) -> DescribeDomainConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDomainConfigurationRequestRequestTypeDef](./type_defs.md#describedomainconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeDomainConfigurationResponseTypeDef](./type_defs.md#describedomainconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainConfigurationName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDomainConfigurationRequestRequestTypeDef = {  # (1)
+    "domainConfigurationName": ...,
+}
 
-Returns
-[DescribeDomainConfigurationResponseTypeDef](./type_defs.md#describedomainconfigurationresponsetypedef).
+parent.describe_domain_configuration(**kwargs)
+```
 
-<a id="describe\_endpoint"></a>
+1. See [:material-code-braces: DescribeDomainConfigurationRequestRequestTypeDef](./type_defs.md#describedomainconfigurationrequestrequesttypedef) 
 
-### describe_endpoint
+### describe\_endpoint
 
-Returns a unique endpoint specific to the Amazon Web Services account making
-the call.
+Returns a unique endpoint specific to the Amazon Web Services account making the
+call.
 
-Type annotations for `boto3.client("iot").describe_endpoint` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_endpoint` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint)
 
-Boto3 documentation:
-[IoT.Client.describe_endpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_endpoint)
+```python title="Method definition"
+def describe_endpoint(
+    self,
+    *,
+    endpointType: str = ...,
+) -> DescribeEndpointResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeEndpointRequestRequestTypeDef](./type_defs.md#describeendpointrequestrequesttypedef).
+1. See [:material-code-braces: DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef) 
 
-Keyword-only arguments:
 
-- `endpointType`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointRequestRequestTypeDef = {  # (1)
+    "endpointType": ...,
+}
 
-Returns
-[DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
+parent.describe_endpoint(**kwargs)
+```
 
-<a id="describe\_event\_configurations"></a>
+1. See [:material-code-braces: DescribeEndpointRequestRequestTypeDef](./type_defs.md#describeendpointrequestrequesttypedef) 
 
-### describe_event_configurations
+### describe\_event\_configurations
 
 Describes event configurations.
 
-Type annotations for `boto3.client("iot").describe_event_configurations`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_event_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations)
 
-Boto3 documentation:
-[IoT.Client.describe_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_event_configurations)
+```python title="Method definition"
+def describe_event_configurations(
+    self,
+) -> DescribeEventConfigurationsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef).
+1. See [:material-code-braces: DescribeEventConfigurationsResponseTypeDef](./type_defs.md#describeeventconfigurationsresponsetypedef) 
 
-<a id="describe\_fleet\_metric"></a>
-
-### describe_fleet_metric
+### describe\_fleet\_metric
 
 Gets information about the specified fleet metric.
 
-Type annotations for `boto3.client("iot").describe_fleet_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_fleet_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_fleet_metric)
 
-Boto3 documentation:
-[IoT.Client.describe_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_fleet_metric)
+```python title="Method definition"
+def describe_fleet_metric(
+    self,
+    *,
+    metricName: str,
+) -> DescribeFleetMetricResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFleetMetricRequestRequestTypeDef](./type_defs.md#describefleetmetricrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFleetMetricResponseTypeDef](./type_defs.md#describefleetmetricresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFleetMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+}
 
-Returns
-[DescribeFleetMetricResponseTypeDef](./type_defs.md#describefleetmetricresponsetypedef).
+parent.describe_fleet_metric(**kwargs)
+```
 
-<a id="describe\_index"></a>
+1. See [:material-code-braces: DescribeFleetMetricRequestRequestTypeDef](./type_defs.md#describefleetmetricrequestrequesttypedef) 
 
-### describe_index
+### describe\_index
 
 Describes a search index.
 
-Type annotations for `boto3.client("iot").describe_index` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index)
 
-Boto3 documentation:
-[IoT.Client.describe_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_index)
+```python title="Method definition"
+def describe_index(
+    self,
+    *,
+    indexName: str,
+) -> DescribeIndexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIndexRequestRequestTypeDef](./type_defs.md#describeindexrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `indexName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeIndexRequestRequestTypeDef = {  # (1)
+    "indexName": ...,
+}
 
-Returns
-[DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
+parent.describe_index(**kwargs)
+```
 
-<a id="describe\_job"></a>
+1. See [:material-code-braces: DescribeIndexRequestRequestTypeDef](./type_defs.md#describeindexrequestrequesttypedef) 
 
-### describe_job
+### describe\_job
 
 Describes a job.
 
-Type annotations for `boto3.client("iot").describe_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job)
 
-Boto3 documentation:
-[IoT.Client.describe_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job)
+```python title="Method definition"
+def describe_job(
+    self,
+    *,
+    jobId: str,
+) -> DescribeJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[DescribeJobResponseTypeDef](./type_defs.md#describejobresponsetypedef).
+parent.describe_job(**kwargs)
+```
 
-<a id="describe\_job\_execution"></a>
+1. See [:material-code-braces: DescribeJobRequestRequestTypeDef](./type_defs.md#describejobrequestrequesttypedef) 
 
-### describe_job_execution
+### describe\_job\_execution
 
 Describes a job execution.
 
-Type annotations for `boto3.client("iot").describe_job_execution` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_job_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution)
 
-Boto3 documentation:
-[IoT.Client.describe_job_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_execution)
+```python title="Method definition"
+def describe_job_execution(
+    self,
+    *,
+    jobId: str,
+    thingName: str,
+    executionNumber: int = ...,
+) -> DescribeJobExecutionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `thingName`: `str` *(required)*
-- `executionNumber`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeJobExecutionRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+    "thingName": ...,
+}
 
-Returns
-[DescribeJobExecutionResponseTypeDef](./type_defs.md#describejobexecutionresponsetypedef).
+parent.describe_job_execution(**kwargs)
+```
 
-<a id="describe\_job\_template"></a>
+1. See [:material-code-braces: DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef) 
 
-### describe_job_template
+### describe\_job\_template
 
 Returns information about a job template.
 
-Type annotations for `boto3.client("iot").describe_job_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_template)
 
-Boto3 documentation:
-[IoT.Client.describe_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_job_template)
+```python title="Method definition"
+def describe_job_template(
+    self,
+    *,
+    jobTemplateId: str,
+) -> DescribeJobTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobTemplateRequestRequestTypeDef](./type_defs.md#describejobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobTemplateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeJobTemplateRequestRequestTypeDef = {  # (1)
+    "jobTemplateId": ...,
+}
 
-Returns
-[DescribeJobTemplateResponseTypeDef](./type_defs.md#describejobtemplateresponsetypedef).
+parent.describe_job_template(**kwargs)
+```
 
-<a id="describe\_managed\_job\_template"></a>
+1. See [:material-code-braces: DescribeJobTemplateRequestRequestTypeDef](./type_defs.md#describejobtemplaterequestrequesttypedef) 
 
-### describe_managed_job_template
+### describe\_managed\_job\_template
 
 View details of a managed job template.
 
-Type annotations for `boto3.client("iot").describe_managed_job_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_managed_job_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_managed_job_template)
 
-Boto3 documentation:
-[IoT.Client.describe_managed_job_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_managed_job_template)
+```python title="Method definition"
+def describe_managed_job_template(
+    self,
+    *,
+    templateName: str,
+    templateVersion: str = ...,
+) -> DescribeManagedJobTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeManagedJobTemplateRequestRequestTypeDef](./type_defs.md#describemanagedjobtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeManagedJobTemplateResponseTypeDef](./type_defs.md#describemanagedjobtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `templateVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeManagedJobTemplateRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[DescribeManagedJobTemplateResponseTypeDef](./type_defs.md#describemanagedjobtemplateresponsetypedef).
+parent.describe_managed_job_template(**kwargs)
+```
 
-<a id="describe\_mitigation\_action"></a>
+1. See [:material-code-braces: DescribeManagedJobTemplateRequestRequestTypeDef](./type_defs.md#describemanagedjobtemplaterequestrequesttypedef) 
 
-### describe_mitigation_action
+### describe\_mitigation\_action
 
 Gets information about a mitigation action.
 
-Type annotations for `boto3.client("iot").describe_mitigation_action` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_mitigation_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action)
 
-Boto3 documentation:
-[IoT.Client.describe_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_mitigation_action)
+```python title="Method definition"
+def describe_mitigation_action(
+    self,
+    *,
+    actionName: str,
+) -> DescribeMitigationActionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeMitigationActionRequestRequestTypeDef](./type_defs.md#describemitigationactionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `actionName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeMitigationActionRequestRequestTypeDef = {  # (1)
+    "actionName": ...,
+}
 
-Returns
-[DescribeMitigationActionResponseTypeDef](./type_defs.md#describemitigationactionresponsetypedef).
+parent.describe_mitigation_action(**kwargs)
+```
 
-<a id="describe\_provisioning\_template"></a>
+1. See [:material-code-braces: DescribeMitigationActionRequestRequestTypeDef](./type_defs.md#describemitigationactionrequestrequesttypedef) 
 
-### describe_provisioning_template
+### describe\_provisioning\_template
 
 Returns information about a fleet provisioning template.
 
-Type annotations for `boto3.client("iot").describe_provisioning_template`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_provisioning_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
 
-Boto3 documentation:
-[IoT.Client.describe_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template)
+```python title="Method definition"
+def describe_provisioning_template(
+    self,
+    *,
+    templateName: str,
+) -> DescribeProvisioningTemplateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisioningTemplateRequestRequestTypeDef](./type_defs.md#describeprovisioningtemplaterequestrequesttypedef).
+1. See [:material-code-braces: DescribeProvisioningTemplateResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisioningTemplateRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[DescribeProvisioningTemplateResponseTypeDef](./type_defs.md#describeprovisioningtemplateresponsetypedef).
+parent.describe_provisioning_template(**kwargs)
+```
 
-<a id="describe\_provisioning\_template\_version"></a>
+1. See [:material-code-braces: DescribeProvisioningTemplateRequestRequestTypeDef](./type_defs.md#describeprovisioningtemplaterequestrequesttypedef) 
 
-### describe_provisioning_template_version
+### describe\_provisioning\_template\_version
 
 Returns information about a fleet provisioning template version.
 
-Type annotations for
-`boto3.client("iot").describe_provisioning_template_version` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_provisioning_template_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
 
-Boto3 documentation:
-[IoT.Client.describe_provisioning_template_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_provisioning_template_version)
+```python title="Method definition"
+def describe_provisioning_template_version(
+    self,
+    *,
+    templateName: str,
+    versionId: int,
+) -> DescribeProvisioningTemplateVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#describeprovisioningtemplateversionrequestrequesttypedef).
+1. See [:material-code-braces: DescribeProvisioningTemplateVersionResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `versionId`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeProvisioningTemplateVersionRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+    "versionId": ...,
+}
 
-Returns
-[DescribeProvisioningTemplateVersionResponseTypeDef](./type_defs.md#describeprovisioningtemplateversionresponsetypedef).
+parent.describe_provisioning_template_version(**kwargs)
+```
 
-<a id="describe\_role\_alias"></a>
+1. See [:material-code-braces: DescribeProvisioningTemplateVersionRequestRequestTypeDef](./type_defs.md#describeprovisioningtemplateversionrequestrequesttypedef) 
 
-### describe_role_alias
+### describe\_role\_alias
 
 Describes a role alias.
 
-Type annotations for `boto3.client("iot").describe_role_alias` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_role_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias)
 
-Boto3 documentation:
-[IoT.Client.describe_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_role_alias)
+```python title="Method definition"
+def describe_role_alias(
+    self,
+    *,
+    roleAlias: str,
+) -> DescribeRoleAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeRoleAliasRequestRequestTypeDef](./type_defs.md#describerolealiasrequestrequesttypedef).
+1. See [:material-code-braces: DescribeRoleAliasResponseTypeDef](./type_defs.md#describerolealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `roleAlias`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeRoleAliasRequestRequestTypeDef = {  # (1)
+    "roleAlias": ...,
+}
 
-Returns
-[DescribeRoleAliasResponseTypeDef](./type_defs.md#describerolealiasresponsetypedef).
+parent.describe_role_alias(**kwargs)
+```
 
-<a id="describe\_scheduled\_audit"></a>
+1. See [:material-code-braces: DescribeRoleAliasRequestRequestTypeDef](./type_defs.md#describerolealiasrequestrequesttypedef) 
 
-### describe_scheduled_audit
+### describe\_scheduled\_audit
 
 Gets information about a scheduled audit.
 
-Type annotations for `boto3.client("iot").describe_scheduled_audit` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_scheduled_audit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
 
-Boto3 documentation:
-[IoT.Client.describe_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_scheduled_audit)
+```python title="Method definition"
+def describe_scheduled_audit(
+    self,
+    *,
+    scheduledAuditName: str,
+) -> DescribeScheduledAuditResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScheduledAuditRequestRequestTypeDef](./type_defs.md#describescheduledauditrequestrequesttypedef).
+1. See [:material-code-braces: DescribeScheduledAuditResponseTypeDef](./type_defs.md#describescheduledauditresponsetypedef) 
 
-Keyword-only arguments:
 
-- `scheduledAuditName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeScheduledAuditRequestRequestTypeDef = {  # (1)
+    "scheduledAuditName": ...,
+}
 
-Returns
-[DescribeScheduledAuditResponseTypeDef](./type_defs.md#describescheduledauditresponsetypedef).
+parent.describe_scheduled_audit(**kwargs)
+```
 
-<a id="describe\_security\_profile"></a>
+1. See [:material-code-braces: DescribeScheduledAuditRequestRequestTypeDef](./type_defs.md#describescheduledauditrequestrequesttypedef) 
 
-### describe_security_profile
+### describe\_security\_profile
 
 Gets information about a Device Defender security profile.
 
-Type annotations for `boto3.client("iot").describe_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile)
 
-Boto3 documentation:
-[IoT.Client.describe_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_security_profile)
+```python title="Method definition"
+def describe_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+) -> DescribeSecurityProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns
-[DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
+parent.describe_security_profile(**kwargs)
+```
 
-<a id="describe\_stream"></a>
+1. See [:material-code-braces: DescribeSecurityProfileRequestRequestTypeDef](./type_defs.md#describesecurityprofilerequestrequesttypedef) 
 
-### describe_stream
+### describe\_stream
 
 Gets information about a stream.
 
-Type annotations for `boto3.client("iot").describe_stream` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream)
 
-Boto3 documentation:
-[IoT.Client.describe_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_stream)
+```python title="Method definition"
+def describe_stream(
+    self,
+    *,
+    streamId: str,
+) -> DescribeStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStreamRequestRequestTypeDef](./type_defs.md#describestreamrequestrequesttypedef).
+1. See [:material-code-braces: DescribeStreamResponseTypeDef](./type_defs.md#describestreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStreamRequestRequestTypeDef = {  # (1)
+    "streamId": ...,
+}
 
-Returns
-[DescribeStreamResponseTypeDef](./type_defs.md#describestreamresponsetypedef).
+parent.describe_stream(**kwargs)
+```
 
-<a id="describe\_thing"></a>
+1. See [:material-code-braces: DescribeStreamRequestRequestTypeDef](./type_defs.md#describestreamrequestrequesttypedef) 
 
-### describe_thing
+### describe\_thing
 
 Gets information about the specified thing.
 
-Type annotations for `boto3.client("iot").describe_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing)
 
-Boto3 documentation:
-[IoT.Client.describe_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing)
+```python title="Method definition"
+def describe_thing(
+    self,
+    *,
+    thingName: str,
+) -> DescribeThingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThingRequestRequestTypeDef](./type_defs.md#describethingrequestrequesttypedef).
+1. See [:material-code-braces: DescribeThingResponseTypeDef](./type_defs.md#describethingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[DescribeThingResponseTypeDef](./type_defs.md#describethingresponsetypedef).
+parent.describe_thing(**kwargs)
+```
 
-<a id="describe\_thing\_group"></a>
+1. See [:material-code-braces: DescribeThingRequestRequestTypeDef](./type_defs.md#describethingrequestrequesttypedef) 
 
-### describe_thing_group
+### describe\_thing\_group
 
 Describe a thing group.
 
-Type annotations for `boto3.client("iot").describe_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group)
 
-Boto3 documentation:
-[IoT.Client.describe_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_group)
+```python title="Method definition"
+def describe_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+) -> DescribeThingGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThingGroupRequestRequestTypeDef](./type_defs.md#describethinggrouprequestrequesttypedef).
+1. See [:material-code-braces: DescribeThingGroupResponseTypeDef](./type_defs.md#describethinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns
-[DescribeThingGroupResponseTypeDef](./type_defs.md#describethinggroupresponsetypedef).
+parent.describe_thing_group(**kwargs)
+```
 
-<a id="describe\_thing\_registration\_task"></a>
+1. See [:material-code-braces: DescribeThingGroupRequestRequestTypeDef](./type_defs.md#describethinggrouprequestrequesttypedef) 
 
-### describe_thing_registration_task
+### describe\_thing\_registration\_task
 
 Describes a bulk thing provisioning task.
 
-Type annotations for `boto3.client("iot").describe_thing_registration_task`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_thing_registration_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
 
-Boto3 documentation:
-[IoT.Client.describe_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_registration_task)
+```python title="Method definition"
+def describe_thing_registration_task(
+    self,
+    *,
+    taskId: str,
+) -> DescribeThingRegistrationTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#describethingregistrationtaskrequestrequesttypedef).
+1. See [:material-code-braces: DescribeThingRegistrationTaskResponseTypeDef](./type_defs.md#describethingregistrationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThingRegistrationTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[DescribeThingRegistrationTaskResponseTypeDef](./type_defs.md#describethingregistrationtaskresponsetypedef).
+parent.describe_thing_registration_task(**kwargs)
+```
 
-<a id="describe\_thing\_type"></a>
+1. See [:material-code-braces: DescribeThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#describethingregistrationtaskrequestrequesttypedef) 
 
-### describe_thing_type
+### describe\_thing\_type
 
 Gets information about the specified thing type.
 
-Type annotations for `boto3.client("iot").describe_thing_type` method.
+Type annotations and code completion for `#!python boto3.client("iot").describe_thing_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type)
 
-Boto3 documentation:
-[IoT.Client.describe_thing_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.describe_thing_type)
+```python title="Method definition"
+def describe_thing_type(
+    self,
+    *,
+    thingTypeName: str,
+) -> DescribeThingTypeResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeThingTypeRequestRequestTypeDef](./type_defs.md#describethingtyperequestrequesttypedef).
+1. See [:material-code-braces: DescribeThingTypeResponseTypeDef](./type_defs.md#describethingtyperesponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingTypeName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeThingTypeRequestRequestTypeDef = {  # (1)
+    "thingTypeName": ...,
+}
 
-Returns
-[DescribeThingTypeResponseTypeDef](./type_defs.md#describethingtyperesponsetypedef).
+parent.describe_thing_type(**kwargs)
+```
 
-<a id="detach\_policy"></a>
+1. See [:material-code-braces: DescribeThingTypeRequestRequestTypeDef](./type_defs.md#describethingtyperequestrequesttypedef) 
 
-### detach_policy
+### detach\_policy
 
 Detaches a policy from the specified target.
 
-Type annotations for `boto3.client("iot").detach_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").detach_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy)
 
-Boto3 documentation:
-[IoT.Client.detach_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_policy)
+```python title="Method definition"
+def detach_policy(
+    self,
+    *,
+    policyName: str,
+    target: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `target`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "target": ...,
+}
 
-<a id="detach\_principal\_policy"></a>
+parent.detach_policy(**kwargs)
+```
 
-### detach_principal_policy
+1. See [:material-code-braces: DetachPolicyRequestRequestTypeDef](./type_defs.md#detachpolicyrequestrequesttypedef) 
+
+### detach\_principal\_policy
 
 Removes the specified policy from the specified certificate.
 
-Type annotations for `boto3.client("iot").detach_principal_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").detach_principal_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy)
 
-Boto3 documentation:
-[IoT.Client.detach_principal_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_principal_policy)
+```python title="Method definition"
+def detach_principal_policy(
+    self,
+    *,
+    policyName: str,
+    principal: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DetachPrincipalPolicyRequestRequestTypeDef](./type_defs.md#detachprincipalpolicyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `principal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachPrincipalPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "principal": ...,
+}
 
-<a id="detach\_security\_profile"></a>
+parent.detach_principal_policy(**kwargs)
+```
 
-### detach_security_profile
+1. See [:material-code-braces: DetachPrincipalPolicyRequestRequestTypeDef](./type_defs.md#detachprincipalpolicyrequestrequesttypedef) 
 
-Disassociates a Device Defender security profile from a thing group or from
-this account.
+### detach\_security\_profile
 
-Type annotations for `boto3.client("iot").detach_security_profile` method.
+Disassociates a Device Defender security profile from a thing group or from this
+account.
 
-Boto3 documentation:
-[IoT.Client.detach_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile)
+Type annotations and code completion for `#!python boto3.client("iot").detach_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_security_profile)
 
-Arguments mapping described in
-[DetachSecurityProfileRequestRequestTypeDef](./type_defs.md#detachsecurityprofilerequestrequesttypedef).
+```python title="Method definition"
+def detach_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    securityProfileTargetArn: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `securityProfileTargetArn`: `str` *(required)*
 
-Returns `Dict`\[`str`, `Any`\].
+```python title="Usage example with kwargs"
+kwargs: DetachSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+    "securityProfileTargetArn": ...,
+}
 
-<a id="detach\_thing\_principal"></a>
+parent.detach_security_profile(**kwargs)
+```
 
-### detach_thing_principal
+1. See [:material-code-braces: DetachSecurityProfileRequestRequestTypeDef](./type_defs.md#detachsecurityprofilerequestrequesttypedef) 
+
+### detach\_thing\_principal
 
 Detaches the specified principal from the specified thing.
 
-Type annotations for `boto3.client("iot").detach_thing_principal` method.
+Type annotations and code completion for `#!python boto3.client("iot").detach_thing_principal` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal)
 
-Boto3 documentation:
-[IoT.Client.detach_thing_principal](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.detach_thing_principal)
+```python title="Method definition"
+def detach_thing_principal(
+    self,
+    *,
+    thingName: str,
+    principal: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DetachThingPrincipalRequestRequestTypeDef](./type_defs.md#detachthingprincipalrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `principal`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DetachThingPrincipalRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+    "principal": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.detach_thing_principal(**kwargs)
+```
 
-<a id="disable\_topic\_rule"></a>
+1. See [:material-code-braces: DetachThingPrincipalRequestRequestTypeDef](./type_defs.md#detachthingprincipalrequestrequesttypedef) 
 
-### disable_topic_rule
+### disable\_topic\_rule
 
 Disables the rule.
 
-Type annotations for `boto3.client("iot").disable_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").disable_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.disable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.disable_topic_rule)
+```python title="Method definition"
+def disable_topic_rule(
+    self,
+    *,
+    ruleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DisableTopicRuleRequestRequestTypeDef](./type_defs.md#disabletopicrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+}
 
-<a id="enable\_topic\_rule"></a>
+parent.disable_topic_rule(**kwargs)
+```
 
-### enable_topic_rule
+1. See [:material-code-braces: DisableTopicRuleRequestRequestTypeDef](./type_defs.md#disabletopicrulerequestrequesttypedef) 
+
+### enable\_topic\_rule
 
 Enables the rule.
 
-Type annotations for `boto3.client("iot").enable_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").enable_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.enable_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.enable_topic_rule)
+```python title="Method definition"
+def enable_topic_rule(
+    self,
+    *,
+    ruleName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[EnableTopicRuleRequestRequestTypeDef](./type_defs.md#enabletopicrulerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.enable_topic_rule(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: EnableTopicRuleRequestRequestTypeDef](./type_defs.md#enabletopicrulerequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("iot").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("iot").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.generate_presigned_url)
 
-Boto3 documentation:
-[IoT.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_behavior\_model\_training\_summaries"></a>
-
-### get_behavior_model_training_summaries
+### get\_behavior\_model\_training\_summaries
 
 Returns a Device Defender's ML Detect Security Profile training model's status.
 
-Type annotations for
-`boto3.client("iot").get_behavior_model_training_summaries` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_behavior_model_training_summaries` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
 
-Boto3 documentation:
-[IoT.Client.get_behavior_model_training_summaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_behavior_model_training_summaries)
+```python title="Method definition"
+def get_behavior_model_training_summaries(
+    self,
+    *,
+    securityProfileName: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> GetBehaviorModelTrainingSummariesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBehaviorModelTrainingSummariesRequestRequestTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesrequestrequesttypedef).
+1. See [:material-code-braces: GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBehaviorModelTrainingSummariesRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns
-[GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef).
+parent.get_behavior_model_training_summaries(**kwargs)
+```
 
-<a id="get\_buckets\_aggregation"></a>
+1. See [:material-code-braces: GetBehaviorModelTrainingSummariesRequestRequestTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesrequestrequesttypedef) 
 
-### get_buckets_aggregation
+### get\_buckets\_aggregation
 
 Aggregates on indexed data with search queries pertaining to particular fields.
 
-Type annotations for `boto3.client("iot").get_buckets_aggregation` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_buckets_aggregation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_buckets_aggregation)
 
-Boto3 documentation:
-[IoT.Client.get_buckets_aggregation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_buckets_aggregation)
+```python title="Method definition"
+def get_buckets_aggregation(
+    self,
+    *,
+    queryString: str,
+    aggregationField: str,
+    bucketsAggregationType: BucketsAggregationTypeTypeDef,  # (1)
+    indexName: str = ...,
+    queryVersion: str = ...,
+) -> GetBucketsAggregationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetBucketsAggregationRequestRequestTypeDef](./type_defs.md#getbucketsaggregationrequestrequesttypedef).
+1. See [:material-code-braces: BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef) 
+2. See [:material-code-braces: GetBucketsAggregationResponseTypeDef](./type_defs.md#getbucketsaggregationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryString`: `str` *(required)*
-- `aggregationField`: `str` *(required)*
-- `bucketsAggregationType`:
-  [BucketsAggregationTypeTypeDef](./type_defs.md#bucketsaggregationtypetypedef)
-  *(required)*
-- `indexName`: `str`
-- `queryVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBucketsAggregationRequestRequestTypeDef = {  # (1)
+    "queryString": ...,
+    "aggregationField": ...,
+    "bucketsAggregationType": ...,
+}
 
-Returns
-[GetBucketsAggregationResponseTypeDef](./type_defs.md#getbucketsaggregationresponsetypedef).
+parent.get_buckets_aggregation(**kwargs)
+```
 
-<a id="get\_cardinality"></a>
+1. See [:material-code-braces: GetBucketsAggregationRequestRequestTypeDef](./type_defs.md#getbucketsaggregationrequestrequesttypedef) 
 
-### get_cardinality
+### get\_cardinality
 
 Returns the approximate count of unique values that match the query.
 
-Type annotations for `boto3.client("iot").get_cardinality` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_cardinality` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality)
 
-Boto3 documentation:
-[IoT.Client.get_cardinality](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_cardinality)
+```python title="Method definition"
+def get_cardinality(
+    self,
+    *,
+    queryString: str,
+    indexName: str = ...,
+    aggregationField: str = ...,
+    queryVersion: str = ...,
+) -> GetCardinalityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCardinalityRequestRequestTypeDef](./type_defs.md#getcardinalityrequestrequesttypedef).
+1. See [:material-code-braces: GetCardinalityResponseTypeDef](./type_defs.md#getcardinalityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryString`: `str` *(required)*
-- `indexName`: `str`
-- `aggregationField`: `str`
-- `queryVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetCardinalityRequestRequestTypeDef = {  # (1)
+    "queryString": ...,
+}
 
-Returns
-[GetCardinalityResponseTypeDef](./type_defs.md#getcardinalityresponsetypedef).
+parent.get_cardinality(**kwargs)
+```
 
-<a id="get\_effective\_policies"></a>
+1. See [:material-code-braces: GetCardinalityRequestRequestTypeDef](./type_defs.md#getcardinalityrequestrequesttypedef) 
 
-### get_effective_policies
+### get\_effective\_policies
 
-Gets a list of the policies that have an effect on the authorization behavior
-of the specified device when it connects to the IoT device gateway.
+Gets a list of the policies that have an effect on the authorization behavior of
+the specified device when it connects to the IoT device gateway.
 
-Type annotations for `boto3.client("iot").get_effective_policies` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_effective_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies)
 
-Boto3 documentation:
-[IoT.Client.get_effective_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_effective_policies)
+```python title="Method definition"
+def get_effective_policies(
+    self,
+    *,
+    principal: str = ...,
+    cognitoIdentityPoolId: str = ...,
+    thingName: str = ...,
+) -> GetEffectivePoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetEffectivePoliciesRequestRequestTypeDef](./type_defs.md#geteffectivepoliciesrequestrequesttypedef).
+1. See [:material-code-braces: GetEffectivePoliciesResponseTypeDef](./type_defs.md#geteffectivepoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `principal`: `str`
-- `cognitoIdentityPoolId`: `str`
-- `thingName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetEffectivePoliciesRequestRequestTypeDef = {  # (1)
+    "principal": ...,
+}
 
-Returns
-[GetEffectivePoliciesResponseTypeDef](./type_defs.md#geteffectivepoliciesresponsetypedef).
+parent.get_effective_policies(**kwargs)
+```
 
-<a id="get\_indexing\_configuration"></a>
+1. See [:material-code-braces: GetEffectivePoliciesRequestRequestTypeDef](./type_defs.md#geteffectivepoliciesrequestrequesttypedef) 
 
-### get_indexing_configuration
+### get\_indexing\_configuration
 
 Gets the indexing configuration.
 
-Type annotations for `boto3.client("iot").get_indexing_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_indexing_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration)
 
-Boto3 documentation:
-[IoT.Client.get_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_indexing_configuration)
+```python title="Method definition"
+def get_indexing_configuration(
+    self,
+) -> GetIndexingConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetIndexingConfigurationResponseTypeDef](./type_defs.md#getindexingconfigurationresponsetypedef).
+1. See [:material-code-braces: GetIndexingConfigurationResponseTypeDef](./type_defs.md#getindexingconfigurationresponsetypedef) 
 
-<a id="get\_job\_document"></a>
-
-### get_job_document
+### get\_job\_document
 
 Gets a job document.
 
-Type annotations for `boto3.client("iot").get_job_document` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_job_document` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document)
 
-Boto3 documentation:
-[IoT.Client.get_job_document](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_job_document)
+```python title="Method definition"
+def get_job_document(
+    self,
+    *,
+    jobId: str,
+) -> GetJobDocumentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetJobDocumentRequestRequestTypeDef](./type_defs.md#getjobdocumentrequestrequesttypedef).
+1. See [:material-code-braces: GetJobDocumentResponseTypeDef](./type_defs.md#getjobdocumentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetJobDocumentRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[GetJobDocumentResponseTypeDef](./type_defs.md#getjobdocumentresponsetypedef).
+parent.get_job_document(**kwargs)
+```
 
-<a id="get\_logging\_options"></a>
+1. See [:material-code-braces: GetJobDocumentRequestRequestTypeDef](./type_defs.md#getjobdocumentrequestrequesttypedef) 
 
-### get_logging_options
+### get\_logging\_options
 
 Gets the logging options.
 
-Type annotations for `boto3.client("iot").get_logging_options` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options)
 
-Boto3 documentation:
-[IoT.Client.get_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_logging_options)
+```python title="Method definition"
+def get_logging_options(
+    self,
+) -> GetLoggingOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef).
+1. See [:material-code-braces: GetLoggingOptionsResponseTypeDef](./type_defs.md#getloggingoptionsresponsetypedef) 
 
-<a id="get\_ota\_update"></a>
-
-### get_ota_update
+### get\_ota\_update
 
 Gets an OTA update.
 
-Type annotations for `boto3.client("iot").get_ota_update` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_ota_update` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update)
 
-Boto3 documentation:
-[IoT.Client.get_ota_update](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_ota_update)
+```python title="Method definition"
+def get_ota_update(
+    self,
+    *,
+    otaUpdateId: str,
+) -> GetOTAUpdateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOTAUpdateRequestRequestTypeDef](./type_defs.md#getotaupdaterequestrequesttypedef).
+1. See [:material-code-braces: GetOTAUpdateResponseTypeDef](./type_defs.md#getotaupdateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `otaUpdateId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOTAUpdateRequestRequestTypeDef = {  # (1)
+    "otaUpdateId": ...,
+}
 
-Returns
-[GetOTAUpdateResponseTypeDef](./type_defs.md#getotaupdateresponsetypedef).
+parent.get_ota_update(**kwargs)
+```
 
-<a id="get\_percentiles"></a>
+1. See [:material-code-braces: GetOTAUpdateRequestRequestTypeDef](./type_defs.md#getotaupdaterequestrequesttypedef) 
 
-### get_percentiles
+### get\_percentiles
 
 Groups the aggregated values that match the query into percentile groupings.
 
-Type annotations for `boto3.client("iot").get_percentiles` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_percentiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles)
 
-Boto3 documentation:
-[IoT.Client.get_percentiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_percentiles)
+```python title="Method definition"
+def get_percentiles(
+    self,
+    *,
+    queryString: str,
+    indexName: str = ...,
+    aggregationField: str = ...,
+    queryVersion: str = ...,
+    percents: Sequence[float] = ...,
+) -> GetPercentilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPercentilesRequestRequestTypeDef](./type_defs.md#getpercentilesrequestrequesttypedef).
+1. See [:material-code-braces: GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryString`: `str` *(required)*
-- `indexName`: `str`
-- `aggregationField`: `str`
-- `queryVersion`: `str`
-- `percents`: `Sequence`\[`float`\]
+```python title="Usage example with kwargs"
+kwargs: GetPercentilesRequestRequestTypeDef = {  # (1)
+    "queryString": ...,
+}
 
-Returns
-[GetPercentilesResponseTypeDef](./type_defs.md#getpercentilesresponsetypedef).
+parent.get_percentiles(**kwargs)
+```
 
-<a id="get\_policy"></a>
+1. See [:material-code-braces: GetPercentilesRequestRequestTypeDef](./type_defs.md#getpercentilesrequestrequesttypedef) 
 
-### get_policy
+### get\_policy
 
 Gets information about the specified policy with the policy document of the
 default version.
 
-Type annotations for `boto3.client("iot").get_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy)
 
-Boto3 documentation:
-[IoT.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy)
+```python title="Method definition"
+def get_policy(
+    self,
+    *,
+    policyName: str,
+) -> GetPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+parent.get_policy(**kwargs)
+```
 
-<a id="get\_policy\_version"></a>
+1. See [:material-code-braces: GetPolicyRequestRequestTypeDef](./type_defs.md#getpolicyrequestrequesttypedef) 
 
-### get_policy_version
+### get\_policy\_version
 
 Gets information about the specified policy version.
 
-Type annotations for `boto3.client("iot").get_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version)
 
-Boto3 documentation:
-[IoT.Client.get_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_policy_version)
+```python title="Method definition"
+def get_policy_version(
+    self,
+    *,
+    policyName: str,
+    policyVersionId: str,
+) -> GetPolicyVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetPolicyVersionRequestRequestTypeDef](./type_defs.md#getpolicyversionrequestrequesttypedef).
+1. See [:material-code-braces: GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `policyVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetPolicyVersionRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "policyVersionId": ...,
+}
 
-Returns
-[GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
+parent.get_policy_version(**kwargs)
+```
 
-<a id="get\_registration\_code"></a>
+1. See [:material-code-braces: GetPolicyVersionRequestRequestTypeDef](./type_defs.md#getpolicyversionrequestrequesttypedef) 
 
-### get_registration_code
+### get\_registration\_code
 
 Gets a registration code used to register a CA certificate with IoT.
 
-Type annotations for `boto3.client("iot").get_registration_code` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_registration_code` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code)
 
-Boto3 documentation:
-[IoT.Client.get_registration_code](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_registration_code)
+```python title="Method definition"
+def get_registration_code(
+    self,
+) -> GetRegistrationCodeResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetRegistrationCodeResponseTypeDef](./type_defs.md#getregistrationcoderesponsetypedef).
+1. See [:material-code-braces: GetRegistrationCodeResponseTypeDef](./type_defs.md#getregistrationcoderesponsetypedef) 
 
-<a id="get\_statistics"></a>
+### get\_statistics
 
-### get_statistics
+Returns the count, average, sum, minimum, maximum, sum of squares, variance, and
+standard deviation for the specified aggregated field.
 
-Returns the count, average, sum, minimum, maximum, sum of squares, variance,
-and standard deviation for the specified aggregated field.
+Type annotations and code completion for `#!python boto3.client("iot").get_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics)
 
-Type annotations for `boto3.client("iot").get_statistics` method.
+```python title="Method definition"
+def get_statistics(
+    self,
+    *,
+    queryString: str,
+    indexName: str = ...,
+    aggregationField: str = ...,
+    queryVersion: str = ...,
+) -> GetStatisticsResponseTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[IoT.Client.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_statistics)
+1. See [:material-code-braces: GetStatisticsResponseTypeDef](./type_defs.md#getstatisticsresponsetypedef) 
 
-Arguments mapping described in
-[GetStatisticsRequestRequestTypeDef](./type_defs.md#getstatisticsrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: GetStatisticsRequestRequestTypeDef = {  # (1)
+    "queryString": ...,
+}
 
-- `queryString`: `str` *(required)*
-- `indexName`: `str`
-- `aggregationField`: `str`
-- `queryVersion`: `str`
+parent.get_statistics(**kwargs)
+```
 
-Returns
-[GetStatisticsResponseTypeDef](./type_defs.md#getstatisticsresponsetypedef).
+1. See [:material-code-braces: GetStatisticsRequestRequestTypeDef](./type_defs.md#getstatisticsrequestrequesttypedef) 
 
-<a id="get\_topic\_rule"></a>
-
-### get_topic_rule
+### get\_topic\_rule
 
 .
 
-Type annotations for `boto3.client("iot").get_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.get_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule)
+```python title="Method definition"
+def get_topic_rule(
+    self,
+    *,
+    ruleName: str,
+) -> GetTopicRuleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTopicRuleRequestRequestTypeDef](./type_defs.md#gettopicrulerequestrequesttypedef).
+1. See [:material-code-braces: GetTopicRuleResponseTypeDef](./type_defs.md#gettopicruleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+}
 
-Returns
-[GetTopicRuleResponseTypeDef](./type_defs.md#gettopicruleresponsetypedef).
+parent.get_topic_rule(**kwargs)
+```
 
-<a id="get\_topic\_rule\_destination"></a>
+1. See [:material-code-braces: GetTopicRuleRequestRequestTypeDef](./type_defs.md#gettopicrulerequestrequesttypedef) 
 
-### get_topic_rule_destination
+### get\_topic\_rule\_destination
 
 Gets information about a topic rule destination.
 
-Type annotations for `boto3.client("iot").get_topic_rule_destination` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_topic_rule_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
 
-Boto3 documentation:
-[IoT.Client.get_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_topic_rule_destination)
+```python title="Method definition"
+def get_topic_rule_destination(
+    self,
+    *,
+    arn: str,
+) -> GetTopicRuleDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#gettopicruledestinationrequestrequesttypedef).
+1. See [:material-code-braces: GetTopicRuleDestinationResponseTypeDef](./type_defs.md#gettopicruledestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTopicRuleDestinationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+}
 
-Returns
-[GetTopicRuleDestinationResponseTypeDef](./type_defs.md#gettopicruledestinationresponsetypedef).
+parent.get_topic_rule_destination(**kwargs)
+```
 
-<a id="get\_v2\_logging\_options"></a>
+1. See [:material-code-braces: GetTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#gettopicruledestinationrequestrequesttypedef) 
 
-### get_v2_logging_options
+### get\_v2\_logging\_options
 
 Gets the fine grained logging options.
 
-Type annotations for `boto3.client("iot").get_v2_logging_options` method.
+Type annotations and code completion for `#!python boto3.client("iot").get_v2_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options)
 
-Boto3 documentation:
-[IoT.Client.get_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.get_v2_logging_options)
+```python title="Method definition"
+def get_v2_logging_options(
+    self,
+) -> GetV2LoggingOptionsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetV2LoggingOptionsResponseTypeDef](./type_defs.md#getv2loggingoptionsresponsetypedef).
+1. See [:material-code-braces: GetV2LoggingOptionsResponseTypeDef](./type_defs.md#getv2loggingoptionsresponsetypedef) 
 
-<a id="list\_active\_violations"></a>
-
-### list_active_violations
+### list\_active\_violations
 
 Lists the active violations for a given Device Defender security profile.
 
-Type annotations for `boto3.client("iot").list_active_violations` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_active_violations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations)
 
-Boto3 documentation:
-[IoT.Client.list_active_violations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_active_violations)
+```python title="Method definition"
+def list_active_violations(
+    self,
+    *,
+    thingName: str = ...,
+    securityProfileName: str = ...,
+    behaviorCriteriaType: BehaviorCriteriaTypeType = ...,  # (1)
+    listSuppressedAlerts: bool = ...,
+    verificationState: VerificationStateType = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListActiveViolationsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListActiveViolationsRequestRequestTypeDef](./type_defs.md#listactiveviolationsrequestrequesttypedef).
+1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
+2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+3. See [:material-code-braces: ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str`
-- `securityProfileName`: `str`
-- `behaviorCriteriaType`:
-  [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
-- `listSuppressedAlerts`: `bool`
-- `verificationState`:
-  [VerificationStateType](./literals.md#verificationstatetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListActiveViolationsRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef).
+parent.list_active_violations(**kwargs)
+```
 
-<a id="list\_attached\_policies"></a>
+1. See [:material-code-braces: ListActiveViolationsRequestRequestTypeDef](./type_defs.md#listactiveviolationsrequestrequesttypedef) 
 
-### list_attached_policies
+### list\_attached\_policies
 
 Lists the policies attached to the specified thing group.
 
-Type annotations for `boto3.client("iot").list_attached_policies` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_attached_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies)
 
-Boto3 documentation:
-[IoT.Client.list_attached_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_attached_policies)
+```python title="Method definition"
+def list_attached_policies(
+    self,
+    *,
+    target: str,
+    recursive: bool = ...,
+    marker: str = ...,
+    pageSize: int = ...,
+) -> ListAttachedPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAttachedPoliciesRequestRequestTypeDef](./type_defs.md#listattachedpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `target`: `str` *(required)*
-- `recursive`: `bool`
-- `marker`: `str`
-- `pageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAttachedPoliciesRequestRequestTypeDef = {  # (1)
+    "target": ...,
+}
 
-Returns
-[ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef).
+parent.list_attached_policies(**kwargs)
+```
 
-<a id="list\_audit\_findings"></a>
+1. See [:material-code-braces: ListAttachedPoliciesRequestRequestTypeDef](./type_defs.md#listattachedpoliciesrequestrequesttypedef) 
 
-### list_audit_findings
+### list\_audit\_findings
 
 Lists the findings (results) of a Device Defender audit or of the audits
 performed during a specified time period.
 
-Type annotations for `boto3.client("iot").list_audit_findings` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_audit_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings)
 
-Boto3 documentation:
-[IoT.Client.list_audit_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_findings)
+```python title="Method definition"
+def list_audit_findings(
+    self,
+    *,
+    taskId: str = ...,
+    checkName: str = ...,
+    resourceIdentifier: ResourceIdentifierTypeDef = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    startTime: Union[datetime, str] = ...,
+    endTime: Union[datetime, str] = ...,
+    listSuppressedFindings: bool = ...,
+) -> ListAuditFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAuditFindingsRequestRequestTypeDef](./type_defs.md#listauditfindingsrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str`
-- `checkName`: `str`
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `listSuppressedFindings`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListAuditFindingsRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef).
+parent.list_audit_findings(**kwargs)
+```
 
-<a id="list\_audit\_mitigation\_actions\_executions"></a>
+1. See [:material-code-braces: ListAuditFindingsRequestRequestTypeDef](./type_defs.md#listauditfindingsrequestrequesttypedef) 
 
-### list_audit_mitigation_actions_executions
+### list\_audit\_mitigation\_actions\_executions
 
 Gets the status of audit mitigation action tasks that were executed.
 
-Type annotations for
-`boto3.client("iot").list_audit_mitigation_actions_executions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_audit_mitigation_actions_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
 
-Boto3 documentation:
-[IoT.Client.list_audit_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_executions)
+```python title="Method definition"
+def list_audit_mitigation_actions_executions(
+    self,
+    *,
+    taskId: str,
+    findingId: str,
+    actionStatus: AuditMitigationActionsExecutionStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAuditMitigationActionsExecutionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAuditMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listauditmitigationactionsexecutionsrequestrequesttypedef).
+1. See [:material-code-brackets: AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype) 
+2. See [:material-code-braces: ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `findingId`: `str` *(required)*
-- `actionStatus`:
-  [AuditMitigationActionsExecutionStatusType](./literals.md#auditmitigationactionsexecutionstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAuditMitigationActionsExecutionsRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+    "findingId": ...,
+}
 
-Returns
-[ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef).
+parent.list_audit_mitigation_actions_executions(**kwargs)
+```
 
-<a id="list\_audit\_mitigation\_actions\_tasks"></a>
+1. See [:material-code-braces: ListAuditMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listauditmitigationactionsexecutionsrequestrequesttypedef) 
 
-### list_audit_mitigation_actions_tasks
+### list\_audit\_mitigation\_actions\_tasks
 
 Gets a list of audit mitigation action tasks that match the specified filters.
 
-Type annotations for `boto3.client("iot").list_audit_mitigation_actions_tasks`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_audit_mitigation_actions_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
 
-Boto3 documentation:
-[IoT.Client.list_audit_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_mitigation_actions_tasks)
+```python title="Method definition"
+def list_audit_mitigation_actions_tasks(
+    self,
+    *,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    auditTaskId: str = ...,
+    findingId: str = ...,
+    taskStatus: AuditMitigationActionsTaskStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListAuditMitigationActionsTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAuditMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listauditmitigationactionstasksrequestrequesttypedef).
+1. See [:material-code-brackets: AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype) 
+2. See [:material-code-braces: ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `auditTaskId`: `str`
-- `findingId`: `str`
-- `taskStatus`:
-  [AuditMitigationActionsTaskStatusType](./literals.md#auditmitigationactionstaskstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAuditMitigationActionsTasksRequestRequestTypeDef = {  # (1)
+    "startTime": ...,
+    "endTime": ...,
+}
 
-Returns
-[ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef).
+parent.list_audit_mitigation_actions_tasks(**kwargs)
+```
 
-<a id="list\_audit\_suppressions"></a>
+1. See [:material-code-braces: ListAuditMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listauditmitigationactionstasksrequestrequesttypedef) 
 
-### list_audit_suppressions
+### list\_audit\_suppressions
 
 Lists your Device Defender audit listings.
 
-Type annotations for `boto3.client("iot").list_audit_suppressions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_audit_suppressions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions)
 
-Boto3 documentation:
-[IoT.Client.list_audit_suppressions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_suppressions)
+```python title="Method definition"
+def list_audit_suppressions(
+    self,
+    *,
+    checkName: str = ...,
+    resourceIdentifier: ResourceIdentifierTypeDef = ...,  # (1)
+    ascendingOrder: bool = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAuditSuppressionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAuditSuppressionsRequestRequestTypeDef](./type_defs.md#listauditsuppressionsrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
+2. See [:material-code-braces: ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `checkName`: `str`
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-- `ascendingOrder`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAuditSuppressionsRequestRequestTypeDef = {  # (1)
+    "checkName": ...,
+}
 
-Returns
-[ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef).
+parent.list_audit_suppressions(**kwargs)
+```
 
-<a id="list\_audit\_tasks"></a>
+1. See [:material-code-braces: ListAuditSuppressionsRequestRequestTypeDef](./type_defs.md#listauditsuppressionsrequestrequesttypedef) 
 
-### list_audit_tasks
+### list\_audit\_tasks
 
 Lists the Device Defender audits that have been performed during a given time
 period.
 
-Type annotations for `boto3.client("iot").list_audit_tasks` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_audit_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks)
 
-Boto3 documentation:
-[IoT.Client.list_audit_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_audit_tasks)
+```python title="Method definition"
+def list_audit_tasks(
+    self,
+    *,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    taskType: AuditTaskTypeType = ...,  # (1)
+    taskStatus: AuditTaskStatusType = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListAuditTasksResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListAuditTasksRequestRequestTypeDef](./type_defs.md#listaudittasksrequestrequesttypedef).
+1. See [:material-code-brackets: AuditTaskTypeType](./literals.md#audittasktypetype) 
+2. See [:material-code-brackets: AuditTaskStatusType](./literals.md#audittaskstatustype) 
+3. See [:material-code-braces: ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `taskType`: [AuditTaskTypeType](./literals.md#audittasktypetype)
-- `taskStatus`: [AuditTaskStatusType](./literals.md#audittaskstatustype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListAuditTasksRequestRequestTypeDef = {  # (1)
+    "startTime": ...,
+    "endTime": ...,
+}
 
-Returns
-[ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef).
+parent.list_audit_tasks(**kwargs)
+```
 
-<a id="list\_authorizers"></a>
+1. See [:material-code-braces: ListAuditTasksRequestRequestTypeDef](./type_defs.md#listaudittasksrequestrequesttypedef) 
 
-### list_authorizers
+### list\_authorizers
 
 Lists the authorizers registered in your account.
 
-Type annotations for `boto3.client("iot").list_authorizers` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_authorizers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers)
 
-Boto3 documentation:
-[IoT.Client.list_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_authorizers)
+```python title="Method definition"
+def list_authorizers(
+    self,
+    *,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+    status: AuthorizerStatusType = ...,  # (1)
+) -> ListAuthorizersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListAuthorizersRequestRequestTypeDef](./type_defs.md#listauthorizersrequestrequesttypedef).
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+2. See [:material-code-braces: ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
-- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
+```python title="Usage example with kwargs"
+kwargs: ListAuthorizersRequestRequestTypeDef = {  # (1)
+    "pageSize": ...,
+}
 
-Returns
-[ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef).
+parent.list_authorizers(**kwargs)
+```
 
-<a id="list\_billing\_groups"></a>
+1. See [:material-code-braces: ListAuthorizersRequestRequestTypeDef](./type_defs.md#listauthorizersrequestrequesttypedef) 
 
-### list_billing_groups
+### list\_billing\_groups
 
 Lists the billing groups you have created.
 
-Type annotations for `boto3.client("iot").list_billing_groups` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_billing_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups)
 
-Boto3 documentation:
-[IoT.Client.list_billing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_billing_groups)
+```python title="Method definition"
+def list_billing_groups(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    namePrefixFilter: str = ...,
+) -> ListBillingGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBillingGroupsRequestRequestTypeDef](./type_defs.md#listbillinggroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `namePrefixFilter`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBillingGroupsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef).
+parent.list_billing_groups(**kwargs)
+```
 
-<a id="list\_ca\_certificates"></a>
+1. See [:material-code-braces: ListBillingGroupsRequestRequestTypeDef](./type_defs.md#listbillinggroupsrequestrequesttypedef) 
 
-### list_ca_certificates
+### list\_ca\_certificates
 
 Lists the CA certificates registered for your Amazon Web Services account.
 
-Type annotations for `boto3.client("iot").list_ca_certificates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_ca_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates)
 
-Boto3 documentation:
-[IoT.Client.list_ca_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ca_certificates)
+```python title="Method definition"
+def list_ca_certificates(
+    self,
+    *,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListCACertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCACertificatesRequestRequestTypeDef](./type_defs.md#listcacertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListCACertificatesRequestRequestTypeDef = {  # (1)
+    "pageSize": ...,
+}
 
-Returns
-[ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef).
+parent.list_ca_certificates(**kwargs)
+```
 
-<a id="list\_certificates"></a>
+1. See [:material-code-braces: ListCACertificatesRequestRequestTypeDef](./type_defs.md#listcacertificatesrequestrequesttypedef) 
 
-### list_certificates
+### list\_certificates
 
 Lists the certificates registered in your Amazon Web Services account.
 
-Type annotations for `boto3.client("iot").list_certificates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates)
 
-Boto3 documentation:
-[IoT.Client.list_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates)
+```python title="Method definition"
+def list_certificates(
+    self,
+    *,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListCertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesRequestRequestTypeDef = {  # (1)
+    "pageSize": ...,
+}
 
-Returns
-[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
+parent.list_certificates(**kwargs)
+```
 
-<a id="list\_certificates\_by\_ca"></a>
+1. See [:material-code-braces: ListCertificatesRequestRequestTypeDef](./type_defs.md#listcertificatesrequestrequesttypedef) 
 
-### list_certificates_by_ca
+### list\_certificates\_by\_ca
 
 List the device certificates signed by the specified CA certificate.
 
-Type annotations for `boto3.client("iot").list_certificates_by_ca` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_certificates_by_ca` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
 
-Boto3 documentation:
-[IoT.Client.list_certificates_by_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_certificates_by_ca)
+```python title="Method definition"
+def list_certificates_by_ca(
+    self,
+    *,
+    caCertificateId: str,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListCertificatesByCAResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCertificatesByCARequestRequestTypeDef](./type_defs.md#listcertificatesbycarequestrequesttypedef).
+1. See [:material-code-braces: ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `caCertificateId`: `str` *(required)*
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListCertificatesByCARequestRequestTypeDef = {  # (1)
+    "caCertificateId": ...,
+}
 
-Returns
-[ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef).
+parent.list_certificates_by_ca(**kwargs)
+```
 
-<a id="list\_custom\_metrics"></a>
+1. See [:material-code-braces: ListCertificatesByCARequestRequestTypeDef](./type_defs.md#listcertificatesbycarequestrequesttypedef) 
 
-### list_custom_metrics
+### list\_custom\_metrics
 
 Lists your Device Defender detect custom metrics.
 
-Type annotations for `boto3.client("iot").list_custom_metrics` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_custom_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics)
 
-Boto3 documentation:
-[IoT.Client.list_custom_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_custom_metrics)
+```python title="Method definition"
+def list_custom_metrics(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListCustomMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCustomMetricsRequestRequestTypeDef](./type_defs.md#listcustommetricsrequestrequesttypedef).
+1. See [:material-code-braces: ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListCustomMetricsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef).
+parent.list_custom_metrics(**kwargs)
+```
 
-<a id="list\_detect\_mitigation\_actions\_executions"></a>
+1. See [:material-code-braces: ListCustomMetricsRequestRequestTypeDef](./type_defs.md#listcustommetricsrequestrequesttypedef) 
 
-### list_detect_mitigation_actions_executions
+### list\_detect\_mitigation\_actions\_executions
 
 Lists mitigation actions executions for a Device Defender ML Detect Security
 Profile.
 
-Type annotations for
-`boto3.client("iot").list_detect_mitigation_actions_executions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_detect_mitigation_actions_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
 
-Boto3 documentation:
-[IoT.Client.list_detect_mitigation_actions_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_executions)
+```python title="Method definition"
+def list_detect_mitigation_actions_executions(
+    self,
+    *,
+    taskId: str = ...,
+    violationId: str = ...,
+    thingName: str = ...,
+    startTime: Union[datetime, str] = ...,
+    endTime: Union[datetime, str] = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDetectMitigationActionsExecutionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDetectMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str`
-- `violationId`: `str`
-- `thingName`: `str`
-- `startTime`: `Union`\[`datetime`, `str`\]
-- `endTime`: `Union`\[`datetime`, `str`\]
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDetectMitigationActionsExecutionsRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns
-[ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef).
+parent.list_detect_mitigation_actions_executions(**kwargs)
+```
 
-<a id="list\_detect\_mitigation\_actions\_tasks"></a>
+1. See [:material-code-braces: ListDetectMitigationActionsExecutionsRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsrequestrequesttypedef) 
 
-### list_detect_mitigation_actions_tasks
+### list\_detect\_mitigation\_actions\_tasks
 
 List of Device Defender ML Detect mitigation actions tasks.
 
-Type annotations for `boto3.client("iot").list_detect_mitigation_actions_tasks`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_detect_mitigation_actions_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
 
-Boto3 documentation:
-[IoT.Client.list_detect_mitigation_actions_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_detect_mitigation_actions_tasks)
+```python title="Method definition"
+def list_detect_mitigation_actions_tasks(
+    self,
+    *,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListDetectMitigationActionsTasksResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDetectMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionstasksrequestrequesttypedef).
+1. See [:material-code-braces: ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDetectMitigationActionsTasksRequestRequestTypeDef = {  # (1)
+    "startTime": ...,
+    "endTime": ...,
+}
 
-Returns
-[ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef).
+parent.list_detect_mitigation_actions_tasks(**kwargs)
+```
 
-<a id="list\_dimensions"></a>
+1. See [:material-code-braces: ListDetectMitigationActionsTasksRequestRequestTypeDef](./type_defs.md#listdetectmitigationactionstasksrequestrequesttypedef) 
 
-### list_dimensions
+### list\_dimensions
 
 List the set of dimensions that are defined for your Amazon Web Services
 accounts.
 
-Type annotations for `boto3.client("iot").list_dimensions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_dimensions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions)
 
-Boto3 documentation:
-[IoT.Client.list_dimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_dimensions)
+```python title="Method definition"
+def list_dimensions(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListDimensionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDimensionsRequestRequestTypeDef](./type_defs.md#listdimensionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDimensionsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef).
+parent.list_dimensions(**kwargs)
+```
 
-<a id="list\_domain\_configurations"></a>
+1. See [:material-code-braces: ListDimensionsRequestRequestTypeDef](./type_defs.md#listdimensionsrequestrequesttypedef) 
 
-### list_domain_configurations
+### list\_domain\_configurations
 
 Gets a list of domain configurations for the user.
 
-Type annotations for `boto3.client("iot").list_domain_configurations` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_domain_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations)
 
-Boto3 documentation:
-[IoT.Client.list_domain_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_domain_configurations)
+```python title="Method definition"
+def list_domain_configurations(
+    self,
+    *,
+    marker: str = ...,
+    pageSize: int = ...,
+    serviceType: ServiceTypeType = ...,  # (1)
+) -> ListDomainConfigurationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListDomainConfigurationsRequestRequestTypeDef](./type_defs.md#listdomainconfigurationsrequestrequesttypedef).
+1. See [:material-code-brackets: ServiceTypeType](./literals.md#servicetypetype) 
+2. See [:material-code-braces: ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `marker`: `str`
-- `pageSize`: `int`
-- `serviceType`: [ServiceTypeType](./literals.md#servicetypetype)
+```python title="Usage example with kwargs"
+kwargs: ListDomainConfigurationsRequestRequestTypeDef = {  # (1)
+    "marker": ...,
+}
 
-Returns
-[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef).
+parent.list_domain_configurations(**kwargs)
+```
 
-<a id="list\_fleet\_metrics"></a>
+1. See [:material-code-braces: ListDomainConfigurationsRequestRequestTypeDef](./type_defs.md#listdomainconfigurationsrequestrequesttypedef) 
 
-### list_fleet_metrics
+### list\_fleet\_metrics
 
 Lists all your fleet metrics.
 
-Type annotations for `boto3.client("iot").list_fleet_metrics` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_fleet_metrics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_fleet_metrics)
 
-Boto3 documentation:
-[IoT.Client.list_fleet_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_fleet_metrics)
+```python title="Method definition"
+def list_fleet_metrics(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListFleetMetricsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFleetMetricsRequestRequestTypeDef](./type_defs.md#listfleetmetricsrequestrequesttypedef).
+1. See [:material-code-braces: ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListFleetMetricsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef).
+parent.list_fleet_metrics(**kwargs)
+```
 
-<a id="list\_indices"></a>
+1. See [:material-code-braces: ListFleetMetricsRequestRequestTypeDef](./type_defs.md#listfleetmetricsrequestrequesttypedef) 
 
-### list_indices
+### list\_indices
 
 Lists the search indices.
 
-Type annotations for `boto3.client("iot").list_indices` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_indices` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices)
 
-Boto3 documentation:
-[IoT.Client.list_indices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_indices)
+```python title="Method definition"
+def list_indices(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListIndicesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef).
+1. See [:material-code-braces: ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListIndicesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
+parent.list_indices(**kwargs)
+```
 
-<a id="list\_job\_executions\_for\_job"></a>
+1. See [:material-code-braces: ListIndicesRequestRequestTypeDef](./type_defs.md#listindicesrequestrequesttypedef) 
 
-### list_job_executions_for_job
+### list\_job\_executions\_for\_job
 
 Lists the job executions for a job.
 
-Type annotations for `boto3.client("iot").list_job_executions_for_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_job_executions_for_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
 
-Boto3 documentation:
-[IoT.Client.list_job_executions_for_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_job)
+```python title="Method definition"
+def list_job_executions_for_job(
+    self,
+    *,
+    jobId: str,
+    status: JobExecutionStatusType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListJobExecutionsForJobResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListJobExecutionsForJobRequestRequestTypeDef](./type_defs.md#listjobexecutionsforjobrequestrequesttypedef).
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobExecutionsForJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-Returns
-[ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef).
+parent.list_job_executions_for_job(**kwargs)
+```
 
-<a id="list\_job\_executions\_for\_thing"></a>
+1. See [:material-code-braces: ListJobExecutionsForJobRequestRequestTypeDef](./type_defs.md#listjobexecutionsforjobrequestrequesttypedef) 
 
-### list_job_executions_for_thing
+### list\_job\_executions\_for\_thing
 
 Lists the job executions for the specified thing.
 
-Type annotations for `boto3.client("iot").list_job_executions_for_thing`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_job_executions_for_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
 
-Boto3 documentation:
-[IoT.Client.list_job_executions_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_executions_for_thing)
+```python title="Method definition"
+def list_job_executions_for_thing(
+    self,
+    *,
+    thingName: str,
+    status: JobExecutionStatusType = ...,  # (1)
+    namespaceId: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    jobId: str = ...,
+) -> ListJobExecutionsForThingResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListJobExecutionsForThingRequestRequestTypeDef](./type_defs.md#listjobexecutionsforthingrequestrequesttypedef).
+1. See [:material-code-brackets: JobExecutionStatusType](./literals.md#jobexecutionstatustype) 
+2. See [:material-code-braces: ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
-- `namespaceId`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `jobId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobExecutionsForThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef).
+parent.list_job_executions_for_thing(**kwargs)
+```
 
-<a id="list\_job\_templates"></a>
+1. See [:material-code-braces: ListJobExecutionsForThingRequestRequestTypeDef](./type_defs.md#listjobexecutionsforthingrequestrequesttypedef) 
 
-### list_job_templates
+### list\_job\_templates
 
 Returns a list of job templates.
 
-Type annotations for `boto3.client("iot").list_job_templates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_job_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_templates)
 
-Boto3 documentation:
-[IoT.Client.list_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_job_templates)
+```python title="Method definition"
+def list_job_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListJobTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobTemplatesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
+parent.list_job_templates(**kwargs)
+```
 
-<a id="list\_jobs"></a>
+1. See [:material-code-braces: ListJobTemplatesRequestRequestTypeDef](./type_defs.md#listjobtemplatesrequestrequesttypedef) 
 
-### list_jobs
+### list\_jobs
 
 Lists jobs.
 
-Type annotations for `boto3.client("iot").list_jobs` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs)
 
-Boto3 documentation:
-[IoT.Client.list_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_jobs)
+```python title="Method definition"
+def list_jobs(
+    self,
+    *,
+    status: JobStatusType = ...,  # (1)
+    targetSelection: TargetSelectionType = ...,  # (2)
+    maxResults: int = ...,
+    nextToken: str = ...,
+    thingGroupName: str = ...,
+    thingGroupId: str = ...,
+    namespaceId: str = ...,
+) -> ListJobsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef).
+1. See [:material-code-brackets: JobStatusType](./literals.md#jobstatustype) 
+2. See [:material-code-brackets: TargetSelectionType](./literals.md#targetselectiontype) 
+3. See [:material-code-braces: ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `status`: [JobStatusType](./literals.md#jobstatustype)
-- `targetSelection`: [TargetSelectionType](./literals.md#targetselectiontype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `thingGroupName`: `str`
-- `thingGroupId`: `str`
-- `namespaceId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListJobsRequestRequestTypeDef = {  # (1)
+    "status": ...,
+}
 
-Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+parent.list_jobs(**kwargs)
+```
 
-<a id="list\_managed\_job\_templates"></a>
+1. See [:material-code-braces: ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef) 
 
-### list_managed_job_templates
+### list\_managed\_job\_templates
 
 Returns a list of managed job templates.
 
-Type annotations for `boto3.client("iot").list_managed_job_templates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_managed_job_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_managed_job_templates)
 
-Boto3 documentation:
-[IoT.Client.list_managed_job_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_managed_job_templates)
+```python title="Method definition"
+def list_managed_job_templates(
+    self,
+    *,
+    templateName: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListManagedJobTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListManagedJobTemplatesRequestRequestTypeDef](./type_defs.md#listmanagedjobtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListManagedJobTemplatesResponseTypeDef](./type_defs.md#listmanagedjobtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListManagedJobTemplatesRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[ListManagedJobTemplatesResponseTypeDef](./type_defs.md#listmanagedjobtemplatesresponsetypedef).
+parent.list_managed_job_templates(**kwargs)
+```
 
-<a id="list\_mitigation\_actions"></a>
+1. See [:material-code-braces: ListManagedJobTemplatesRequestRequestTypeDef](./type_defs.md#listmanagedjobtemplatesrequestrequesttypedef) 
 
-### list_mitigation_actions
+### list\_mitigation\_actions
 
 Gets a list of all mitigation actions that match the specified filter criteria.
 
-Type annotations for `boto3.client("iot").list_mitigation_actions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_mitigation_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions)
 
-Boto3 documentation:
-[IoT.Client.list_mitigation_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_mitigation_actions)
+```python title="Method definition"
+def list_mitigation_actions(
+    self,
+    *,
+    actionType: MitigationActionTypeType = ...,  # (1)
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListMitigationActionsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListMitigationActionsRequestRequestTypeDef](./type_defs.md#listmitigationactionsrequestrequesttypedef).
+1. See [:material-code-brackets: MitigationActionTypeType](./literals.md#mitigationactiontypetype) 
+2. See [:material-code-braces: ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `actionType`:
-  [MitigationActionTypeType](./literals.md#mitigationactiontypetype)
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMitigationActionsRequestRequestTypeDef = {  # (1)
+    "actionType": ...,
+}
 
-Returns
-[ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef).
+parent.list_mitigation_actions(**kwargs)
+```
 
-<a id="list\_ota\_updates"></a>
+1. See [:material-code-braces: ListMitigationActionsRequestRequestTypeDef](./type_defs.md#listmitigationactionsrequestrequesttypedef) 
 
-### list_ota_updates
+### list\_ota\_updates
 
 Lists OTA updates.
 
-Type annotations for `boto3.client("iot").list_ota_updates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_ota_updates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates)
 
-Boto3 documentation:
-[IoT.Client.list_ota_updates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_ota_updates)
+```python title="Method definition"
+def list_ota_updates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    otaUpdateStatus: OTAUpdateStatusType = ...,  # (1)
+) -> ListOTAUpdatesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListOTAUpdatesRequestRequestTypeDef](./type_defs.md#listotaupdatesrequestrequesttypedef).
+1. See [:material-code-brackets: OTAUpdateStatusType](./literals.md#otaupdatestatustype) 
+2. See [:material-code-braces: ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `otaUpdateStatus`: [OTAUpdateStatusType](./literals.md#otaupdatestatustype)
+```python title="Usage example with kwargs"
+kwargs: ListOTAUpdatesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef).
+parent.list_ota_updates(**kwargs)
+```
 
-<a id="list\_outgoing\_certificates"></a>
+1. See [:material-code-braces: ListOTAUpdatesRequestRequestTypeDef](./type_defs.md#listotaupdatesrequestrequesttypedef) 
 
-### list_outgoing_certificates
+### list\_outgoing\_certificates
 
 Lists certificates that are being transferred but not yet accepted.
 
-Type annotations for `boto3.client("iot").list_outgoing_certificates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_outgoing_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
 
-Boto3 documentation:
-[IoT.Client.list_outgoing_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_outgoing_certificates)
+```python title="Method definition"
+def list_outgoing_certificates(
+    self,
+    *,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListOutgoingCertificatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOutgoingCertificatesRequestRequestTypeDef](./type_defs.md#listoutgoingcertificatesrequestrequesttypedef).
+1. See [:material-code-braces: ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListOutgoingCertificatesRequestRequestTypeDef = {  # (1)
+    "pageSize": ...,
+}
 
-Returns
-[ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef).
+parent.list_outgoing_certificates(**kwargs)
+```
 
-<a id="list\_policies"></a>
+1. See [:material-code-braces: ListOutgoingCertificatesRequestRequestTypeDef](./type_defs.md#listoutgoingcertificatesrequestrequesttypedef) 
 
-### list_policies
+### list\_policies
 
 Lists your policies.
 
-Type annotations for `boto3.client("iot").list_policies` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies)
 
-Boto3 documentation:
-[IoT.Client.list_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policies)
+```python title="Method definition"
+def list_policies(
+    self,
+    *,
+    marker: str = ...,
+    pageSize: int = ...,
+    ascendingOrder: bool = ...,
+) -> ListPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `marker`: `str`
-- `pageSize`: `int`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListPoliciesRequestRequestTypeDef = {  # (1)
+    "marker": ...,
+}
 
-Returns
-[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+parent.list_policies(**kwargs)
+```
 
-<a id="list\_policy\_principals"></a>
+1. See [:material-code-braces: ListPoliciesRequestRequestTypeDef](./type_defs.md#listpoliciesrequestrequesttypedef) 
 
-### list_policy_principals
+### list\_policy\_principals
 
 Lists the principals associated with the specified policy.
 
-Type annotations for `boto3.client("iot").list_policy_principals` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_policy_principals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals)
 
-Boto3 documentation:
-[IoT.Client.list_policy_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_principals)
+```python title="Method definition"
+def list_policy_principals(
+    self,
+    *,
+    policyName: str,
+    marker: str = ...,
+    pageSize: int = ...,
+    ascendingOrder: bool = ...,
+) -> ListPolicyPrincipalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPolicyPrincipalsRequestRequestTypeDef](./type_defs.md#listpolicyprincipalsrequestrequesttypedef).
+1. See [:material-code-braces: ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `marker`: `str`
-- `pageSize`: `int`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListPolicyPrincipalsRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-Returns
-[ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef).
+parent.list_policy_principals(**kwargs)
+```
 
-<a id="list\_policy\_versions"></a>
+1. See [:material-code-braces: ListPolicyPrincipalsRequestRequestTypeDef](./type_defs.md#listpolicyprincipalsrequestrequesttypedef) 
 
-### list_policy_versions
+### list\_policy\_versions
 
 Lists the versions of the specified policy and identifies the default version.
 
-Type annotations for `boto3.client("iot").list_policy_versions` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_policy_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions)
 
-Boto3 documentation:
-[IoT.Client.list_policy_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_policy_versions)
+```python title="Method definition"
+def list_policy_versions(
+    self,
+    *,
+    policyName: str,
+) -> ListPolicyVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListPolicyVersionsRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-Returns
-[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
+parent.list_policy_versions(**kwargs)
+```
 
-<a id="list\_principal\_policies"></a>
+1. See [:material-code-braces: ListPolicyVersionsRequestRequestTypeDef](./type_defs.md#listpolicyversionsrequestrequesttypedef) 
 
-### list_principal_policies
+### list\_principal\_policies
 
 Lists the policies attached to the specified principal.
 
-Type annotations for `boto3.client("iot").list_principal_policies` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_principal_policies` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies)
 
-Boto3 documentation:
-[IoT.Client.list_principal_policies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_policies)
+```python title="Method definition"
+def list_principal_policies(
+    self,
+    *,
+    principal: str,
+    marker: str = ...,
+    pageSize: int = ...,
+    ascendingOrder: bool = ...,
+) -> ListPrincipalPoliciesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPrincipalPoliciesRequestRequestTypeDef](./type_defs.md#listprincipalpoliciesrequestrequesttypedef).
+1. See [:material-code-braces: ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `principal`: `str` *(required)*
-- `marker`: `str`
-- `pageSize`: `int`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListPrincipalPoliciesRequestRequestTypeDef = {  # (1)
+    "principal": ...,
+}
 
-Returns
-[ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef).
+parent.list_principal_policies(**kwargs)
+```
 
-<a id="list\_principal\_things"></a>
+1. See [:material-code-braces: ListPrincipalPoliciesRequestRequestTypeDef](./type_defs.md#listprincipalpoliciesrequestrequesttypedef) 
 
-### list_principal_things
+### list\_principal\_things
 
 Lists the things associated with the specified principal.
 
-Type annotations for `boto3.client("iot").list_principal_things` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_principal_things` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things)
 
-Boto3 documentation:
-[IoT.Client.list_principal_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_principal_things)
+```python title="Method definition"
+def list_principal_things(
+    self,
+    *,
+    principal: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListPrincipalThingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPrincipalThingsRequestRequestTypeDef](./type_defs.md#listprincipalthingsrequestrequesttypedef).
+1. See [:material-code-braces: ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `principal`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListPrincipalThingsRequestRequestTypeDef = {  # (1)
+    "principal": ...,
+}
 
-Returns
-[ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef).
+parent.list_principal_things(**kwargs)
+```
 
-<a id="list\_provisioning\_template\_versions"></a>
+1. See [:material-code-braces: ListPrincipalThingsRequestRequestTypeDef](./type_defs.md#listprincipalthingsrequestrequesttypedef) 
 
-### list_provisioning_template_versions
+### list\_provisioning\_template\_versions
 
 A list of fleet provisioning template versions.
 
-Type annotations for `boto3.client("iot").list_provisioning_template_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_provisioning_template_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
 
-Boto3 documentation:
-[IoT.Client.list_provisioning_template_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_template_versions)
+```python title="Method definition"
+def list_provisioning_template_versions(
+    self,
+    *,
+    templateName: str,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListProvisioningTemplateVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisioningTemplateVersionsRequestRequestTypeDef](./type_defs.md#listprovisioningtemplateversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProvisioningTemplateVersionsRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns
-[ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef).
+parent.list_provisioning_template_versions(**kwargs)
+```
 
-<a id="list\_provisioning\_templates"></a>
+1. See [:material-code-braces: ListProvisioningTemplateVersionsRequestRequestTypeDef](./type_defs.md#listprovisioningtemplateversionsrequestrequesttypedef) 
 
-### list_provisioning_templates
+### list\_provisioning\_templates
 
 Lists the fleet provisioning templates in your Amazon Web Services account.
 
-Type annotations for `boto3.client("iot").list_provisioning_templates` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_provisioning_templates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
 
-Boto3 documentation:
-[IoT.Client.list_provisioning_templates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_provisioning_templates)
+```python title="Method definition"
+def list_provisioning_templates(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListProvisioningTemplatesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListProvisioningTemplatesRequestRequestTypeDef](./type_defs.md#listprovisioningtemplatesrequestrequesttypedef).
+1. See [:material-code-braces: ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListProvisioningTemplatesRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef).
+parent.list_provisioning_templates(**kwargs)
+```
 
-<a id="list\_role\_aliases"></a>
+1. See [:material-code-braces: ListProvisioningTemplatesRequestRequestTypeDef](./type_defs.md#listprovisioningtemplatesrequestrequesttypedef) 
 
-### list_role_aliases
+### list\_role\_aliases
 
 Lists the role aliases registered in your account.
 
-Type annotations for `boto3.client("iot").list_role_aliases` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_role_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases)
 
-Boto3 documentation:
-[IoT.Client.list_role_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_role_aliases)
+```python title="Method definition"
+def list_role_aliases(
+    self,
+    *,
+    pageSize: int = ...,
+    marker: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListRoleAliasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListRoleAliasesRequestRequestTypeDef](./type_defs.md#listrolealiasesrequestrequesttypedef).
+1. See [:material-code-braces: ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `pageSize`: `int`
-- `marker`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListRoleAliasesRequestRequestTypeDef = {  # (1)
+    "pageSize": ...,
+}
 
-Returns
-[ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef).
+parent.list_role_aliases(**kwargs)
+```
 
-<a id="list\_scheduled\_audits"></a>
+1. See [:material-code-braces: ListRoleAliasesRequestRequestTypeDef](./type_defs.md#listrolealiasesrequestrequesttypedef) 
 
-### list_scheduled_audits
+### list\_scheduled\_audits
 
 Lists all of your scheduled audits.
 
-Type annotations for `boto3.client("iot").list_scheduled_audits` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_scheduled_audits` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits)
 
-Boto3 documentation:
-[IoT.Client.list_scheduled_audits](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_scheduled_audits)
+```python title="Method definition"
+def list_scheduled_audits(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListScheduledAuditsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListScheduledAuditsRequestRequestTypeDef](./type_defs.md#listscheduledauditsrequestrequesttypedef).
+1. See [:material-code-braces: ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListScheduledAuditsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef).
+parent.list_scheduled_audits(**kwargs)
+```
 
-<a id="list\_security\_profiles"></a>
+1. See [:material-code-braces: ListScheduledAuditsRequestRequestTypeDef](./type_defs.md#listscheduledauditsrequestrequesttypedef) 
 
-### list_security_profiles
+### list\_security\_profiles
 
 Lists the Device Defender security profiles you've created.
 
-Type annotations for `boto3.client("iot").list_security_profiles` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_security_profiles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles)
 
-Boto3 documentation:
-[IoT.Client.list_security_profiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles)
+```python title="Method definition"
+def list_security_profiles(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    dimensionName: str = ...,
+    metricName: str = ...,
+) -> ListSecurityProfilesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef).
+1. See [:material-code-braces: ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `dimensionName`: `str`
-- `metricName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
+parent.list_security_profiles(**kwargs)
+```
 
-<a id="list\_security\_profiles\_for\_target"></a>
+1. See [:material-code-braces: ListSecurityProfilesRequestRequestTypeDef](./type_defs.md#listsecurityprofilesrequestrequesttypedef) 
 
-### list_security_profiles_for_target
+### list\_security\_profiles\_for\_target
 
 Lists the Device Defender security profiles attached to a target (thing group).
 
-Type annotations for `boto3.client("iot").list_security_profiles_for_target`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_security_profiles_for_target` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
 
-Boto3 documentation:
-[IoT.Client.list_security_profiles_for_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_security_profiles_for_target)
+```python title="Method definition"
+def list_security_profiles_for_target(
+    self,
+    *,
+    securityProfileTargetArn: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    recursive: bool = ...,
+) -> ListSecurityProfilesForTargetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityProfilesForTargetRequestRequestTypeDef](./type_defs.md#listsecurityprofilesfortargetrequestrequesttypedef).
+1. See [:material-code-braces: ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileTargetArn`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `recursive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityProfilesForTargetRequestRequestTypeDef = {  # (1)
+    "securityProfileTargetArn": ...,
+}
 
-Returns
-[ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef).
+parent.list_security_profiles_for_target(**kwargs)
+```
 
-<a id="list\_streams"></a>
+1. See [:material-code-braces: ListSecurityProfilesForTargetRequestRequestTypeDef](./type_defs.md#listsecurityprofilesfortargetrequestrequesttypedef) 
 
-### list_streams
+### list\_streams
 
 Lists all of the streams in your Amazon Web Services account.
 
-Type annotations for `boto3.client("iot").list_streams` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams)
 
-Boto3 documentation:
-[IoT.Client.list_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_streams)
+```python title="Method definition"
+def list_streams(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    ascendingOrder: bool = ...,
+) -> ListStreamsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef).
+1. See [:material-code-braces: ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `ascendingOrder`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListStreamsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
+parent.list_streams(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListStreamsRequestRequestTypeDef](./type_defs.md#liststreamsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists the tags (metadata) you have assigned to the resource.
 
-Type annotations for `boto3.client("iot").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[IoT.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    resourceArn: str,
+    nextToken: str = ...,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_targets\_for\_policy"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_targets_for_policy
+### list\_targets\_for\_policy
 
 List targets for the specified policy.
 
-Type annotations for `boto3.client("iot").list_targets_for_policy` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_targets_for_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy)
 
-Boto3 documentation:
-[IoT.Client.list_targets_for_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_policy)
+```python title="Method definition"
+def list_targets_for_policy(
+    self,
+    *,
+    policyName: str,
+    marker: str = ...,
+    pageSize: int = ...,
+) -> ListTargetsForPolicyResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef).
+1. See [:material-code-braces: ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef) 
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `marker`: `str`
-- `pageSize`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTargetsForPolicyRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+}
 
-Returns
-[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
+parent.list_targets_for_policy(**kwargs)
+```
 
-<a id="list\_targets\_for\_security\_profile"></a>
+1. See [:material-code-braces: ListTargetsForPolicyRequestRequestTypeDef](./type_defs.md#listtargetsforpolicyrequestrequesttypedef) 
 
-### list_targets_for_security_profile
+### list\_targets\_for\_security\_profile
 
 Lists the targets (thing groups) associated with a given Device Defender
 security profile.
 
-Type annotations for `boto3.client("iot").list_targets_for_security_profile`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_targets_for_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
 
-Boto3 documentation:
-[IoT.Client.list_targets_for_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_targets_for_security_profile)
+```python title="Method definition"
+def list_targets_for_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListTargetsForSecurityProfileResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTargetsForSecurityProfileRequestRequestTypeDef](./type_defs.md#listtargetsforsecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTargetsForSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns
-[ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef).
+parent.list_targets_for_security_profile(**kwargs)
+```
 
-<a id="list\_thing\_groups"></a>
+1. See [:material-code-braces: ListTargetsForSecurityProfileRequestRequestTypeDef](./type_defs.md#listtargetsforsecurityprofilerequestrequesttypedef) 
 
-### list_thing_groups
+### list\_thing\_groups
 
 List the thing groups in your account.
 
-Type annotations for `boto3.client("iot").list_thing_groups` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups)
 
-Boto3 documentation:
-[IoT.Client.list_thing_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups)
+```python title="Method definition"
+def list_thing_groups(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    parentGroup: str = ...,
+    namePrefixFilter: str = ...,
+    recursive: bool = ...,
+) -> ListThingGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingGroupsRequestRequestTypeDef](./type_defs.md#listthinggroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `parentGroup`: `str`
-- `namePrefixFilter`: `str`
-- `recursive`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListThingGroupsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef).
+parent.list_thing_groups(**kwargs)
+```
 
-<a id="list\_thing\_groups\_for\_thing"></a>
+1. See [:material-code-braces: ListThingGroupsRequestRequestTypeDef](./type_defs.md#listthinggroupsrequestrequesttypedef) 
 
-### list_thing_groups_for_thing
+### list\_thing\_groups\_for\_thing
 
 List the thing groups to which the specified thing belongs.
 
-Type annotations for `boto3.client("iot").list_thing_groups_for_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_groups_for_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
 
-Boto3 documentation:
-[IoT.Client.list_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_groups_for_thing)
+```python title="Method definition"
+def list_thing_groups_for_thing(
+    self,
+    *,
+    thingName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListThingGroupsForThingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingGroupsForThingRequestRequestTypeDef](./type_defs.md#listthinggroupsforthingrequestrequesttypedef).
+1. See [:material-code-braces: ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThingGroupsForThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef).
+parent.list_thing_groups_for_thing(**kwargs)
+```
 
-<a id="list\_thing\_principals"></a>
+1. See [:material-code-braces: ListThingGroupsForThingRequestRequestTypeDef](./type_defs.md#listthinggroupsforthingrequestrequesttypedef) 
 
-### list_thing_principals
+### list\_thing\_principals
 
 Lists the principals associated with the specified thing.
 
-Type annotations for `boto3.client("iot").list_thing_principals` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_principals` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals)
 
-Boto3 documentation:
-[IoT.Client.list_thing_principals](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_principals)
+```python title="Method definition"
+def list_thing_principals(
+    self,
+    *,
+    thingName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListThingPrincipalsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingPrincipalsRequestRequestTypeDef](./type_defs.md#listthingprincipalsrequestrequesttypedef).
+1. See [:material-code-braces: ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThingPrincipalsRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns
-[ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef).
+parent.list_thing_principals(**kwargs)
+```
 
-<a id="list\_thing\_registration\_task\_reports"></a>
+1. See [:material-code-braces: ListThingPrincipalsRequestRequestTypeDef](./type_defs.md#listthingprincipalsrequestrequesttypedef) 
 
-### list_thing_registration_task_reports
+### list\_thing\_registration\_task\_reports
 
 Information about the thing registration tasks.
 
-Type annotations for `boto3.client("iot").list_thing_registration_task_reports`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_registration_task_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
 
-Boto3 documentation:
-[IoT.Client.list_thing_registration_task_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_task_reports)
+```python title="Method definition"
+def list_thing_registration_task_reports(
+    self,
+    *,
+    taskId: str,
+    reportType: ReportTypeType,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListThingRegistrationTaskReportsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListThingRegistrationTaskReportsRequestRequestTypeDef](./type_defs.md#listthingregistrationtaskreportsrequestrequesttypedef).
+1. See [:material-code-brackets: ReportTypeType](./literals.md#reporttypetype) 
+2. See [:material-code-braces: ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `reportType`: [ReportTypeType](./literals.md#reporttypetype) *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThingRegistrationTaskReportsRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+    "reportType": ...,
+}
 
-Returns
-[ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef).
+parent.list_thing_registration_task_reports(**kwargs)
+```
 
-<a id="list\_thing\_registration\_tasks"></a>
+1. See [:material-code-braces: ListThingRegistrationTaskReportsRequestRequestTypeDef](./type_defs.md#listthingregistrationtaskreportsrequestrequesttypedef) 
 
-### list_thing_registration_tasks
+### list\_thing\_registration\_tasks
 
 List bulk thing provisioning tasks.
 
-Type annotations for `boto3.client("iot").list_thing_registration_tasks`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_registration_tasks` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
 
-Boto3 documentation:
-[IoT.Client.list_thing_registration_tasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_registration_tasks)
+```python title="Method definition"
+def list_thing_registration_tasks(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    status: StatusType = ...,  # (1)
+) -> ListThingRegistrationTasksResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListThingRegistrationTasksRequestRequestTypeDef](./type_defs.md#listthingregistrationtasksrequestrequesttypedef).
+1. See [:material-code-brackets: StatusType](./literals.md#statustype) 
+2. See [:material-code-braces: ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `status`: [StatusType](./literals.md#statustype)
+```python title="Usage example with kwargs"
+kwargs: ListThingRegistrationTasksRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef).
+parent.list_thing_registration_tasks(**kwargs)
+```
 
-<a id="list\_thing\_types"></a>
+1. See [:material-code-braces: ListThingRegistrationTasksRequestRequestTypeDef](./type_defs.md#listthingregistrationtasksrequestrequesttypedef) 
 
-### list_thing_types
+### list\_thing\_types
 
 Lists the existing thing types.
 
-Type annotations for `boto3.client("iot").list_thing_types` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_thing_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types)
 
-Boto3 documentation:
-[IoT.Client.list_thing_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_thing_types)
+```python title="Method definition"
+def list_thing_types(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    thingTypeName: str = ...,
+) -> ListThingTypesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingTypesRequestRequestTypeDef](./type_defs.md#listthingtypesrequestrequesttypedef).
+1. See [:material-code-braces: ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `thingTypeName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListThingTypesRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns
-[ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef).
+parent.list_thing_types(**kwargs)
+```
 
-<a id="list\_things"></a>
+1. See [:material-code-braces: ListThingTypesRequestRequestTypeDef](./type_defs.md#listthingtypesrequestrequesttypedef) 
 
-### list_things
+### list\_things
 
 Lists your things.
 
-Type annotations for `boto3.client("iot").list_things` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_things` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things)
 
-Boto3 documentation:
-[IoT.Client.list_things](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things)
+```python title="Method definition"
+def list_things(
+    self,
+    *,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    attributeName: str = ...,
+    attributeValue: str = ...,
+    thingTypeName: str = ...,
+    usePrefixAttributeValue: bool = ...,
+) -> ListThingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingsRequestRequestTypeDef](./type_defs.md#listthingsrequestrequesttypedef).
+1. See [:material-code-braces: ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `attributeName`: `str`
-- `attributeValue`: `str`
-- `thingTypeName`: `str`
-- `usePrefixAttributeValue`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListThingsRequestRequestTypeDef = {  # (1)
+    "nextToken": ...,
+}
 
-Returns [ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef).
+parent.list_things(**kwargs)
+```
 
-<a id="list\_things\_in\_billing\_group"></a>
+1. See [:material-code-braces: ListThingsRequestRequestTypeDef](./type_defs.md#listthingsrequestrequesttypedef) 
 
-### list_things_in_billing_group
+### list\_things\_in\_billing\_group
 
 Lists the things you have added to the given billing group.
 
-Type annotations for `boto3.client("iot").list_things_in_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_things_in_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
 
-Boto3 documentation:
-[IoT.Client.list_things_in_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_billing_group)
+```python title="Method definition"
+def list_things_in_billing_group(
+    self,
+    *,
+    billingGroupName: str,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListThingsInBillingGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingsInBillingGroupRequestRequestTypeDef](./type_defs.md#listthingsinbillinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str` *(required)*
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThingsInBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns
-[ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef).
+parent.list_things_in_billing_group(**kwargs)
+```
 
-<a id="list\_things\_in\_thing\_group"></a>
+1. See [:material-code-braces: ListThingsInBillingGroupRequestRequestTypeDef](./type_defs.md#listthingsinbillinggrouprequestrequesttypedef) 
 
-### list_things_in_thing_group
+### list\_things\_in\_thing\_group
 
 Lists the things in the specified group.
 
-Type annotations for `boto3.client("iot").list_things_in_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_things_in_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
 
-Boto3 documentation:
-[IoT.Client.list_things_in_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_things_in_thing_group)
+```python title="Method definition"
+def list_things_in_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    recursive: bool = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListThingsInThingGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThingsInThingGroupRequestRequestTypeDef](./type_defs.md#listthingsinthinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `recursive`: `bool`
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListThingsInThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns
-[ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef).
+parent.list_things_in_thing_group(**kwargs)
+```
 
-<a id="list\_topic\_rule\_destinations"></a>
+1. See [:material-code-braces: ListThingsInThingGroupRequestRequestTypeDef](./type_defs.md#listthingsinthinggrouprequestrequesttypedef) 
 
-### list_topic_rule_destinations
+### list\_topic\_rule\_destinations
 
 Lists all the topic rule destinations in your Amazon Web Services account.
 
-Type annotations for `boto3.client("iot").list_topic_rule_destinations` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_topic_rule_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
 
-Boto3 documentation:
-[IoT.Client.list_topic_rule_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rule_destinations)
+```python title="Method definition"
+def list_topic_rule_destinations(
+    self,
+    *,
+    maxResults: int = ...,
+    nextToken: str = ...,
+) -> ListTopicRuleDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTopicRuleDestinationsRequestRequestTypeDef](./type_defs.md#listtopicruledestinationsrequestrequesttypedef).
+1. See [:material-code-braces: ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `maxResults`: `int`
-- `nextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListTopicRuleDestinationsRequestRequestTypeDef = {  # (1)
+    "maxResults": ...,
+}
 
-Returns
-[ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef).
+parent.list_topic_rule_destinations(**kwargs)
+```
 
-<a id="list\_topic\_rules"></a>
+1. See [:material-code-braces: ListTopicRuleDestinationsRequestRequestTypeDef](./type_defs.md#listtopicruledestinationsrequestrequesttypedef) 
 
-### list_topic_rules
+### list\_topic\_rules
 
 Lists the rules for the specific topic.
 
-Type annotations for `boto3.client("iot").list_topic_rules` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_topic_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules)
 
-Boto3 documentation:
-[IoT.Client.list_topic_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_topic_rules)
+```python title="Method definition"
+def list_topic_rules(
+    self,
+    *,
+    topic: str = ...,
+    maxResults: int = ...,
+    nextToken: str = ...,
+    ruleDisabled: bool = ...,
+) -> ListTopicRulesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTopicRulesRequestRequestTypeDef](./type_defs.md#listtopicrulesrequestrequesttypedef).
+1. See [:material-code-braces: ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `topic`: `str`
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `ruleDisabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ListTopicRulesRequestRequestTypeDef = {  # (1)
+    "topic": ...,
+}
 
-Returns
-[ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef).
+parent.list_topic_rules(**kwargs)
+```
 
-<a id="list\_v2\_logging\_levels"></a>
+1. See [:material-code-braces: ListTopicRulesRequestRequestTypeDef](./type_defs.md#listtopicrulesrequestrequesttypedef) 
 
-### list_v2_logging_levels
+### list\_v2\_logging\_levels
 
 Lists logging levels.
 
-Type annotations for `boto3.client("iot").list_v2_logging_levels` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_v2_logging_levels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
 
-Boto3 documentation:
-[IoT.Client.list_v2_logging_levels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_v2_logging_levels)
+```python title="Method definition"
+def list_v2_logging_levels(
+    self,
+    *,
+    targetType: LogTargetTypeType = ...,  # (1)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListV2LoggingLevelsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListV2LoggingLevelsRequestRequestTypeDef](./type_defs.md#listv2logginglevelsrequestrequesttypedef).
+1. See [:material-code-brackets: LogTargetTypeType](./literals.md#logtargettypetype) 
+2. See [:material-code-braces: ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targetType`: [LogTargetTypeType](./literals.md#logtargettypetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListV2LoggingLevelsRequestRequestTypeDef = {  # (1)
+    "targetType": ...,
+}
 
-Returns
-[ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef).
+parent.list_v2_logging_levels(**kwargs)
+```
 
-<a id="list\_violation\_events"></a>
+1. See [:material-code-braces: ListV2LoggingLevelsRequestRequestTypeDef](./type_defs.md#listv2logginglevelsrequestrequesttypedef) 
 
-### list_violation_events
+### list\_violation\_events
 
 Lists the Device Defender security profile violations discovered during the
 given time period.
 
-Type annotations for `boto3.client("iot").list_violation_events` method.
+Type annotations and code completion for `#!python boto3.client("iot").list_violation_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events)
 
-Boto3 documentation:
-[IoT.Client.list_violation_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.list_violation_events)
+```python title="Method definition"
+def list_violation_events(
+    self,
+    *,
+    startTime: Union[datetime, str],
+    endTime: Union[datetime, str],
+    thingName: str = ...,
+    securityProfileName: str = ...,
+    behaviorCriteriaType: BehaviorCriteriaTypeType = ...,  # (1)
+    listSuppressedAlerts: bool = ...,
+    verificationState: VerificationStateType = ...,  # (2)
+    nextToken: str = ...,
+    maxResults: int = ...,
+) -> ListViolationEventsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListViolationEventsRequestRequestTypeDef](./type_defs.md#listviolationeventsrequestrequesttypedef).
+1. See [:material-code-brackets: BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype) 
+2. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
+3. See [:material-code-braces: ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `startTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `endTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `thingName`: `str`
-- `securityProfileName`: `str`
-- `behaviorCriteriaType`:
-  [BehaviorCriteriaTypeType](./literals.md#behaviorcriteriatypetype)
-- `listSuppressedAlerts`: `bool`
-- `verificationState`:
-  [VerificationStateType](./literals.md#verificationstatetype)
-- `nextToken`: `str`
-- `maxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListViolationEventsRequestRequestTypeDef = {  # (1)
+    "startTime": ...,
+    "endTime": ...,
+}
 
-Returns
-[ListViolationEventsResponseTypeDef](./type_defs.md#listviolationeventsresponsetypedef).
+parent.list_violation_events(**kwargs)
+```
 
-<a id="put\_verification\_state\_on\_violation"></a>
+1. See [:material-code-braces: ListViolationEventsRequestRequestTypeDef](./type_defs.md#listviolationeventsrequestrequesttypedef) 
 
-### put_verification_state_on_violation
+### put\_verification\_state\_on\_violation
 
-Set a verification state and provide a description of that verification state
-on a violation (detect alarm).
+Set a verification state and provide a description of that verification state on
+a violation (detect alarm).
 
-Type annotations for `boto3.client("iot").put_verification_state_on_violation`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").put_verification_state_on_violation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.put_verification_state_on_violation)
 
-Boto3 documentation:
-[IoT.Client.put_verification_state_on_violation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.put_verification_state_on_violation)
+```python title="Method definition"
+def put_verification_state_on_violation(
+    self,
+    *,
+    violationId: str,
+    verificationState: VerificationStateType,  # (1)
+    verificationStateDescription: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutVerificationStateOnViolationRequestRequestTypeDef](./type_defs.md#putverificationstateonviolationrequestrequesttypedef).
+1. See [:material-code-brackets: VerificationStateType](./literals.md#verificationstatetype) 
 
-Keyword-only arguments:
 
-- `violationId`: `str` *(required)*
-- `verificationState`:
-  [VerificationStateType](./literals.md#verificationstatetype) *(required)*
-- `verificationStateDescription`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutVerificationStateOnViolationRequestRequestTypeDef = {  # (1)
+    "violationId": ...,
+    "verificationState": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_verification_state_on_violation(**kwargs)
+```
 
-<a id="register\_ca\_certificate"></a>
+1. See [:material-code-braces: PutVerificationStateOnViolationRequestRequestTypeDef](./type_defs.md#putverificationstateonviolationrequestrequesttypedef) 
 
-### register_ca_certificate
+### register\_ca\_certificate
 
 Registers a CA certificate with IoT.
 
-Type annotations for `boto3.client("iot").register_ca_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").register_ca_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
 
-Boto3 documentation:
-[IoT.Client.register_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_ca_certificate)
+```python title="Method definition"
+def register_ca_certificate(
+    self,
+    *,
+    caCertificate: str,
+    verificationCertificate: str,
+    setAsActive: bool = ...,
+    allowAutoRegistration: bool = ...,
+    registrationConfig: RegistrationConfigTypeDef = ...,  # (1)
+    tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> RegisterCACertificateResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[RegisterCACertificateRequestRequestTypeDef](./type_defs.md#registercacertificaterequestrequesttypedef).
+1. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `caCertificate`: `str` *(required)*
-- `verificationCertificate`: `str` *(required)*
-- `setAsActive`: `bool`
-- `allowAutoRegistration`: `bool`
-- `registrationConfig`:
-  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RegisterCACertificateRequestRequestTypeDef = {  # (1)
+    "caCertificate": ...,
+    "verificationCertificate": ...,
+}
 
-Returns
-[RegisterCACertificateResponseTypeDef](./type_defs.md#registercacertificateresponsetypedef).
+parent.register_ca_certificate(**kwargs)
+```
 
-<a id="register\_certificate"></a>
+1. See [:material-code-braces: RegisterCACertificateRequestRequestTypeDef](./type_defs.md#registercacertificaterequestrequesttypedef) 
 
-### register_certificate
+### register\_certificate
 
 Registers a device certificate with IoT.
 
-Type annotations for `boto3.client("iot").register_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").register_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)
 
-Boto3 documentation:
-[IoT.Client.register_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate)
+```python title="Method definition"
+def register_certificate(
+    self,
+    *,
+    certificatePem: str,
+    caCertificatePem: str = ...,
+    setAsActive: bool = ...,
+    status: CertificateStatusType = ...,  # (1)
+) -> RegisterCertificateResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterCertificateRequestRequestTypeDef](./type_defs.md#registercertificaterequestrequesttypedef).
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-braces: RegisterCertificateResponseTypeDef](./type_defs.md#registercertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificatePem`: `str` *(required)*
-- `caCertificatePem`: `str`
-- `setAsActive`: `bool`
-- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
+```python title="Usage example with kwargs"
+kwargs: RegisterCertificateRequestRequestTypeDef = {  # (1)
+    "certificatePem": ...,
+}
 
-Returns
-[RegisterCertificateResponseTypeDef](./type_defs.md#registercertificateresponsetypedef).
+parent.register_certificate(**kwargs)
+```
 
-<a id="register\_certificate\_without\_ca"></a>
+1. See [:material-code-braces: RegisterCertificateRequestRequestTypeDef](./type_defs.md#registercertificaterequestrequesttypedef) 
 
-### register_certificate_without_ca
+### register\_certificate\_without\_ca
 
 Register a certificate that does not have a certificate authority (CA).
 
-Type annotations for `boto3.client("iot").register_certificate_without_ca`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").register_certificate_without_ca` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
 
-Boto3 documentation:
-[IoT.Client.register_certificate_without_ca](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_certificate_without_ca)
+```python title="Method definition"
+def register_certificate_without_ca(
+    self,
+    *,
+    certificatePem: str,
+    status: CertificateStatusType = ...,  # (1)
+) -> RegisterCertificateWithoutCAResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RegisterCertificateWithoutCARequestRequestTypeDef](./type_defs.md#registercertificatewithoutcarequestrequesttypedef).
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
+2. See [:material-code-braces: RegisterCertificateWithoutCAResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificatePem`: `str` *(required)*
-- `status`: [CertificateStatusType](./literals.md#certificatestatustype)
+```python title="Usage example with kwargs"
+kwargs: RegisterCertificateWithoutCARequestRequestTypeDef = {  # (1)
+    "certificatePem": ...,
+}
 
-Returns
-[RegisterCertificateWithoutCAResponseTypeDef](./type_defs.md#registercertificatewithoutcaresponsetypedef).
+parent.register_certificate_without_ca(**kwargs)
+```
 
-<a id="register\_thing"></a>
+1. See [:material-code-braces: RegisterCertificateWithoutCARequestRequestTypeDef](./type_defs.md#registercertificatewithoutcarequestrequesttypedef) 
 
-### register_thing
+### register\_thing
 
 Provisions a thing in the device registry.
 
-Type annotations for `boto3.client("iot").register_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").register_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing)
 
-Boto3 documentation:
-[IoT.Client.register_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.register_thing)
+```python title="Method definition"
+def register_thing(
+    self,
+    *,
+    templateBody: str,
+    parameters: Mapping[str, str] = ...,
+) -> RegisterThingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterThingRequestRequestTypeDef](./type_defs.md#registerthingrequestrequesttypedef).
+1. See [:material-code-braces: RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateBody`: `str` *(required)*
-- `parameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: RegisterThingRequestRequestTypeDef = {  # (1)
+    "templateBody": ...,
+}
 
-Returns
-[RegisterThingResponseTypeDef](./type_defs.md#registerthingresponsetypedef).
+parent.register_thing(**kwargs)
+```
 
-<a id="reject\_certificate\_transfer"></a>
+1. See [:material-code-braces: RegisterThingRequestRequestTypeDef](./type_defs.md#registerthingrequestrequesttypedef) 
 
-### reject_certificate_transfer
+### reject\_certificate\_transfer
 
 Rejects a pending certificate transfer.
 
-Type annotations for `boto3.client("iot").reject_certificate_transfer` method.
+Type annotations and code completion for `#!python boto3.client("iot").reject_certificate_transfer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
 
-Boto3 documentation:
-[IoT.Client.reject_certificate_transfer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.reject_certificate_transfer)
+```python title="Method definition"
+def reject_certificate_transfer(
+    self,
+    *,
+    certificateId: str,
+    rejectReason: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[RejectCertificateTransferRequestRequestTypeDef](./type_defs.md#rejectcertificatetransferrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `rejectReason`: `str`
+```python title="Usage example with kwargs"
+kwargs: RejectCertificateTransferRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-<a id="remove\_thing\_from\_billing\_group"></a>
+parent.reject_certificate_transfer(**kwargs)
+```
 
-### remove_thing_from_billing_group
+1. See [:material-code-braces: RejectCertificateTransferRequestRequestTypeDef](./type_defs.md#rejectcertificatetransferrequestrequesttypedef) 
+
+### remove\_thing\_from\_billing\_group
 
 Removes the given thing from the billing group.
 
-Type annotations for `boto3.client("iot").remove_thing_from_billing_group`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").remove_thing_from_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
 
-Boto3 documentation:
-[IoT.Client.remove_thing_from_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_billing_group)
+```python title="Method definition"
+def remove_thing_from_billing_group(
+    self,
+    *,
+    billingGroupName: str = ...,
+    billingGroupArn: str = ...,
+    thingName: str = ...,
+    thingArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveThingFromBillingGroupRequestRequestTypeDef](./type_defs.md#removethingfrombillinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str`
-- `billingGroupArn`: `str`
-- `thingName`: `str`
-- `thingArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveThingFromBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_thing_from_billing_group(**kwargs)
+```
 
-<a id="remove\_thing\_from\_thing\_group"></a>
+1. See [:material-code-braces: RemoveThingFromBillingGroupRequestRequestTypeDef](./type_defs.md#removethingfrombillinggrouprequestrequesttypedef) 
 
-### remove_thing_from_thing_group
+### remove\_thing\_from\_thing\_group
 
 Remove the specified thing from the specified group.
 
-Type annotations for `boto3.client("iot").remove_thing_from_thing_group`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").remove_thing_from_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
 
-Boto3 documentation:
-[IoT.Client.remove_thing_from_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.remove_thing_from_thing_group)
+```python title="Method definition"
+def remove_thing_from_thing_group(
+    self,
+    *,
+    thingGroupName: str = ...,
+    thingGroupArn: str = ...,
+    thingName: str = ...,
+    thingArn: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveThingFromThingGroupRequestRequestTypeDef](./type_defs.md#removethingfromthinggrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str`
-- `thingGroupArn`: `str`
-- `thingName`: `str`
-- `thingArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: RemoveThingFromThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_thing_from_thing_group(**kwargs)
+```
 
-<a id="replace\_topic\_rule"></a>
+1. See [:material-code-braces: RemoveThingFromThingGroupRequestRequestTypeDef](./type_defs.md#removethingfromthinggrouprequestrequesttypedef) 
 
-### replace_topic_rule
+### replace\_topic\_rule
 
 .
 
-Type annotations for `boto3.client("iot").replace_topic_rule` method.
+Type annotations and code completion for `#!python boto3.client("iot").replace_topic_rule` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)
 
-Boto3 documentation:
-[IoT.Client.replace_topic_rule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.replace_topic_rule)
+```python title="Method definition"
+def replace_topic_rule(
+    self,
+    *,
+    ruleName: str,
+    topicRulePayload: TopicRulePayloadTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ReplaceTopicRuleRequestRequestTypeDef](./type_defs.md#replacetopicrulerequestrequesttypedef).
+1. See [:material-code-braces: TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef) 
 
-Keyword-only arguments:
 
-- `ruleName`: `str` *(required)*
-- `topicRulePayload`:
-  [TopicRulePayloadTypeDef](./type_defs.md#topicrulepayloadtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ReplaceTopicRuleRequestRequestTypeDef = {  # (1)
+    "ruleName": ...,
+    "topicRulePayload": ...,
+}
 
-<a id="search\_index"></a>
+parent.replace_topic_rule(**kwargs)
+```
 
-### search_index
+1. See [:material-code-braces: ReplaceTopicRuleRequestRequestTypeDef](./type_defs.md#replacetopicrulerequestrequesttypedef) 
+
+### search\_index
 
 The query search index.
 
-Type annotations for `boto3.client("iot").search_index` method.
+Type annotations and code completion for `#!python boto3.client("iot").search_index` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index)
 
-Boto3 documentation:
-[IoT.Client.search_index](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.search_index)
+```python title="Method definition"
+def search_index(
+    self,
+    *,
+    queryString: str,
+    indexName: str = ...,
+    nextToken: str = ...,
+    maxResults: int = ...,
+    queryVersion: str = ...,
+) -> SearchIndexResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SearchIndexRequestRequestTypeDef](./type_defs.md#searchindexrequestrequesttypedef).
+1. See [:material-code-braces: SearchIndexResponseTypeDef](./type_defs.md#searchindexresponsetypedef) 
 
-Keyword-only arguments:
 
-- `queryString`: `str` *(required)*
-- `indexName`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `queryVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: SearchIndexRequestRequestTypeDef = {  # (1)
+    "queryString": ...,
+}
 
-Returns
-[SearchIndexResponseTypeDef](./type_defs.md#searchindexresponsetypedef).
+parent.search_index(**kwargs)
+```
 
-<a id="set\_default\_authorizer"></a>
+1. See [:material-code-braces: SearchIndexRequestRequestTypeDef](./type_defs.md#searchindexrequestrequesttypedef) 
 
-### set_default_authorizer
+### set\_default\_authorizer
 
 Sets the default authorizer.
 
-Type annotations for `boto3.client("iot").set_default_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").set_default_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer)
 
-Boto3 documentation:
-[IoT.Client.set_default_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_authorizer)
+```python title="Method definition"
+def set_default_authorizer(
+    self,
+    *,
+    authorizerName: str,
+) -> SetDefaultAuthorizerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[SetDefaultAuthorizerRequestRequestTypeDef](./type_defs.md#setdefaultauthorizerrequestrequesttypedef).
+1. See [:material-code-braces: SetDefaultAuthorizerResponseTypeDef](./type_defs.md#setdefaultauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetDefaultAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+}
 
-Returns
-[SetDefaultAuthorizerResponseTypeDef](./type_defs.md#setdefaultauthorizerresponsetypedef).
+parent.set_default_authorizer(**kwargs)
+```
 
-<a id="set\_default\_policy\_version"></a>
+1. See [:material-code-braces: SetDefaultAuthorizerRequestRequestTypeDef](./type_defs.md#setdefaultauthorizerrequestrequesttypedef) 
 
-### set_default_policy_version
+### set\_default\_policy\_version
 
 Sets the specified version of the specified policy as the policy's default
 (operative) version.
 
-Type annotations for `boto3.client("iot").set_default_policy_version` method.
+Type annotations and code completion for `#!python boto3.client("iot").set_default_policy_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version)
 
-Boto3 documentation:
-[IoT.Client.set_default_policy_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_default_policy_version)
+```python title="Method definition"
+def set_default_policy_version(
+    self,
+    *,
+    policyName: str,
+    policyVersionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetDefaultPolicyVersionRequestRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `policyName`: `str` *(required)*
-- `policyVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetDefaultPolicyVersionRequestRequestTypeDef = {  # (1)
+    "policyName": ...,
+    "policyVersionId": ...,
+}
 
-<a id="set\_logging\_options"></a>
+parent.set_default_policy_version(**kwargs)
+```
 
-### set_logging_options
+1. See [:material-code-braces: SetDefaultPolicyVersionRequestRequestTypeDef](./type_defs.md#setdefaultpolicyversionrequestrequesttypedef) 
+
+### set\_logging\_options
 
 Sets the logging options.
 
-Type annotations for `boto3.client("iot").set_logging_options` method.
+Type annotations and code completion for `#!python boto3.client("iot").set_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options)
 
-Boto3 documentation:
-[IoT.Client.set_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_logging_options)
+```python title="Method definition"
+def set_logging_options(
+    self,
+    *,
+    loggingOptionsPayload: LoggingOptionsPayloadTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetLoggingOptionsRequestRequestTypeDef](./type_defs.md#setloggingoptionsrequestrequesttypedef).
+1. See [:material-code-braces: LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef) 
 
-Keyword-only arguments:
 
-- `loggingOptionsPayload`:
-  [LoggingOptionsPayloadTypeDef](./type_defs.md#loggingoptionspayloadtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetLoggingOptionsRequestRequestTypeDef = {  # (1)
+    "loggingOptionsPayload": ...,
+}
 
-<a id="set\_v2\_logging\_level"></a>
+parent.set_logging_options(**kwargs)
+```
 
-### set_v2_logging_level
+1. See [:material-code-braces: SetLoggingOptionsRequestRequestTypeDef](./type_defs.md#setloggingoptionsrequestrequesttypedef) 
+
+### set\_v2\_logging\_level
 
 Sets the logging level.
 
-Type annotations for `boto3.client("iot").set_v2_logging_level` method.
+Type annotations and code completion for `#!python boto3.client("iot").set_v2_logging_level` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level)
 
-Boto3 documentation:
-[IoT.Client.set_v2_logging_level](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_level)
+```python title="Method definition"
+def set_v2_logging_level(
+    self,
+    *,
+    logTarget: LogTargetTypeDef,  # (1)
+    logLevel: LogLevelType,  # (2)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetV2LoggingLevelRequestRequestTypeDef](./type_defs.md#setv2logginglevelrequestrequesttypedef).
+1. See [:material-code-braces: LogTargetTypeDef](./type_defs.md#logtargettypedef) 
+2. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 
-Keyword-only arguments:
 
-- `logTarget`: [LogTargetTypeDef](./type_defs.md#logtargettypedef) *(required)*
-- `logLevel`: [LogLevelType](./literals.md#logleveltype) *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetV2LoggingLevelRequestRequestTypeDef = {  # (1)
+    "logTarget": ...,
+    "logLevel": ...,
+}
 
-<a id="set\_v2\_logging\_options"></a>
+parent.set_v2_logging_level(**kwargs)
+```
 
-### set_v2_logging_options
+1. See [:material-code-braces: SetV2LoggingLevelRequestRequestTypeDef](./type_defs.md#setv2logginglevelrequestrequesttypedef) 
+
+### set\_v2\_logging\_options
 
 Sets the logging options for the V2 logging service.
 
-Type annotations for `boto3.client("iot").set_v2_logging_options` method.
+Type annotations and code completion for `#!python boto3.client("iot").set_v2_logging_options` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options)
 
-Boto3 documentation:
-[IoT.Client.set_v2_logging_options](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.set_v2_logging_options)
+```python title="Method definition"
+def set_v2_logging_options(
+    self,
+    *,
+    roleArn: str = ...,
+    defaultLogLevel: LogLevelType = ...,  # (1)
+    disableAllLogs: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetV2LoggingOptionsRequestRequestTypeDef](./type_defs.md#setv2loggingoptionsrequestrequesttypedef).
+1. See [:material-code-brackets: LogLevelType](./literals.md#logleveltype) 
 
-Keyword-only arguments:
 
-- `roleArn`: `str`
-- `defaultLogLevel`: [LogLevelType](./literals.md#logleveltype)
-- `disableAllLogs`: `bool`
+```python title="Usage example with kwargs"
+kwargs: SetV2LoggingOptionsRequestRequestTypeDef = {  # (1)
+    "roleArn": ...,
+}
 
-<a id="start\_audit\_mitigation\_actions\_task"></a>
+parent.set_v2_logging_options(**kwargs)
+```
 
-### start_audit_mitigation_actions_task
+1. See [:material-code-braces: SetV2LoggingOptionsRequestRequestTypeDef](./type_defs.md#setv2loggingoptionsrequestrequesttypedef) 
+
+### start\_audit\_mitigation\_actions\_task
 
 Starts a task that applies a set of mitigation actions to the specified target.
 
-Type annotations for `boto3.client("iot").start_audit_mitigation_actions_task`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").start_audit_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.start_audit_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_audit_mitigation_actions_task)
+```python title="Method definition"
+def start_audit_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+    target: AuditMitigationActionsTaskTargetTypeDef,  # (1)
+    auditCheckToActionsMapping: Mapping[str, Sequence[str]],
+    clientRequestToken: str,
+) -> StartAuditMitigationActionsTaskResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#startauditmitigationactionstaskrequestrequesttypedef).
+1. See [:material-code-braces: AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef) 
+2. See [:material-code-braces: StartAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#startauditmitigationactionstaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `target`:
-  [AuditMitigationActionsTaskTargetTypeDef](./type_defs.md#auditmitigationactionstasktargettypedef)
-  *(required)*
-- `auditCheckToActionsMapping`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-  *(required)*
-- `clientRequestToken`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartAuditMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+    "target": ...,
+    "auditCheckToActionsMapping": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[StartAuditMitigationActionsTaskResponseTypeDef](./type_defs.md#startauditmitigationactionstaskresponsetypedef).
+parent.start_audit_mitigation_actions_task(**kwargs)
+```
 
-<a id="start\_detect\_mitigation\_actions\_task"></a>
+1. See [:material-code-braces: StartAuditMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#startauditmitigationactionstaskrequestrequesttypedef) 
 
-### start_detect_mitigation_actions_task
+### start\_detect\_mitigation\_actions\_task
 
 Starts a Device Defender ML Detect mitigation actions task.
 
-Type annotations for `boto3.client("iot").start_detect_mitigation_actions_task`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").start_detect_mitigation_actions_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
 
-Boto3 documentation:
-[IoT.Client.start_detect_mitigation_actions_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_detect_mitigation_actions_task)
+```python title="Method definition"
+def start_detect_mitigation_actions_task(
+    self,
+    *,
+    taskId: str,
+    target: DetectMitigationActionsTaskTargetTypeDef,  # (1)
+    actions: Sequence[str],
+    clientRequestToken: str,
+    violationEventOccurrenceRange: ViolationEventOccurrenceRangeTypeDef = ...,  # (2)
+    includeOnlyActiveViolations: bool = ...,
+    includeSuppressedAlerts: bool = ...,
+) -> StartDetectMitigationActionsTaskResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#startdetectmitigationactionstaskrequestrequesttypedef).
+1. See [:material-code-braces: DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef) 
+2. See [:material-code-braces: ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef) 
+3. See [:material-code-braces: StartDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#startdetectmitigationactionstaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
-- `target`:
-  [DetectMitigationActionsTaskTargetTypeDef](./type_defs.md#detectmitigationactionstasktargettypedef)
-  *(required)*
-- `actions`: `Sequence`\[`str`\] *(required)*
-- `clientRequestToken`: `str` *(required)*
-- `violationEventOccurrenceRange`:
-  [ViolationEventOccurrenceRangeTypeDef](./type_defs.md#violationeventoccurrencerangetypedef)
-- `includeOnlyActiveViolations`: `bool`
-- `includeSuppressedAlerts`: `bool`
+```python title="Usage example with kwargs"
+kwargs: StartDetectMitigationActionsTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+    "target": ...,
+    "actions": ...,
+    "clientRequestToken": ...,
+}
 
-Returns
-[StartDetectMitigationActionsTaskResponseTypeDef](./type_defs.md#startdetectmitigationactionstaskresponsetypedef).
+parent.start_detect_mitigation_actions_task(**kwargs)
+```
 
-<a id="start\_on\_demand\_audit\_task"></a>
+1. See [:material-code-braces: StartDetectMitigationActionsTaskRequestRequestTypeDef](./type_defs.md#startdetectmitigationactionstaskrequestrequesttypedef) 
 
-### start_on_demand_audit_task
+### start\_on\_demand\_audit\_task
 
 Starts an on-demand Device Defender audit.
 
-Type annotations for `boto3.client("iot").start_on_demand_audit_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").start_on_demand_audit_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
 
-Boto3 documentation:
-[IoT.Client.start_on_demand_audit_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_on_demand_audit_task)
+```python title="Method definition"
+def start_on_demand_audit_task(
+    self,
+    *,
+    targetCheckNames: Sequence[str],
+) -> StartOnDemandAuditTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartOnDemandAuditTaskRequestRequestTypeDef](./type_defs.md#startondemandaudittaskrequestrequesttypedef).
+1. See [:material-code-braces: StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `targetCheckNames`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartOnDemandAuditTaskRequestRequestTypeDef = {  # (1)
+    "targetCheckNames": ...,
+}
 
-Returns
-[StartOnDemandAuditTaskResponseTypeDef](./type_defs.md#startondemandaudittaskresponsetypedef).
+parent.start_on_demand_audit_task(**kwargs)
+```
 
-<a id="start\_thing\_registration\_task"></a>
+1. See [:material-code-braces: StartOnDemandAuditTaskRequestRequestTypeDef](./type_defs.md#startondemandaudittaskrequestrequesttypedef) 
 
-### start_thing_registration_task
+### start\_thing\_registration\_task
 
 Creates a bulk thing provisioning task.
 
-Type annotations for `boto3.client("iot").start_thing_registration_task`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").start_thing_registration_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task)
 
-Boto3 documentation:
-[IoT.Client.start_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.start_thing_registration_task)
+```python title="Method definition"
+def start_thing_registration_task(
+    self,
+    *,
+    templateBody: str,
+    inputFileBucket: str,
+    inputFileKey: str,
+    roleArn: str,
+) -> StartThingRegistrationTaskResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#startthingregistrationtaskrequestrequesttypedef).
+1. See [:material-code-braces: StartThingRegistrationTaskResponseTypeDef](./type_defs.md#startthingregistrationtaskresponsetypedef) 
 
-Keyword-only arguments:
 
-- `templateBody`: `str` *(required)*
-- `inputFileBucket`: `str` *(required)*
-- `inputFileKey`: `str` *(required)*
-- `roleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartThingRegistrationTaskRequestRequestTypeDef = {  # (1)
+    "templateBody": ...,
+    "inputFileBucket": ...,
+    "inputFileKey": ...,
+    "roleArn": ...,
+}
 
-Returns
-[StartThingRegistrationTaskResponseTypeDef](./type_defs.md#startthingregistrationtaskresponsetypedef).
+parent.start_thing_registration_task(**kwargs)
+```
 
-<a id="stop\_thing\_registration\_task"></a>
+1. See [:material-code-braces: StartThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#startthingregistrationtaskrequestrequesttypedef) 
 
-### stop_thing_registration_task
+### stop\_thing\_registration\_task
 
 Cancels a bulk thing provisioning task.
 
-Type annotations for `boto3.client("iot").stop_thing_registration_task` method.
+Type annotations and code completion for `#!python boto3.client("iot").stop_thing_registration_task` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
 
-Boto3 documentation:
-[IoT.Client.stop_thing_registration_task](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.stop_thing_registration_task)
+```python title="Method definition"
+def stop_thing_registration_task(
+    self,
+    *,
+    taskId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#stopthingregistrationtaskrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `taskId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopThingRegistrationTaskRequestRequestTypeDef = {  # (1)
+    "taskId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_thing_registration_task(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopThingRegistrationTaskRequestRequestTypeDef](./type_defs.md#stopthingregistrationtaskrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds to or modifies the tags of the given resource.
 
-Type annotations for `boto3.client("iot").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iot").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource)
 
-Boto3 documentation:
-[IoT.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="test\_authorization"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### test_authorization
+### test\_authorization
 
 Tests if a specified principal is authorized to perform an IoT action on a
 specified resource.
 
-Type annotations for `boto3.client("iot").test_authorization` method.
+Type annotations and code completion for `#!python boto3.client("iot").test_authorization` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization)
 
-Boto3 documentation:
-[IoT.Client.test_authorization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_authorization)
+```python title="Method definition"
+def test_authorization(
+    self,
+    *,
+    authInfos: Sequence[AuthInfoTypeDef],  # (1)
+    principal: str = ...,
+    cognitoIdentityPoolId: str = ...,
+    clientId: str = ...,
+    policyNamesToAdd: Sequence[str] = ...,
+    policyNamesToSkip: Sequence[str] = ...,
+) -> TestAuthorizationResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TestAuthorizationRequestRequestTypeDef](./type_defs.md#testauthorizationrequestrequesttypedef).
+1. See [:material-code-braces: AuthInfoTypeDef](./type_defs.md#authinfotypedef) 
+2. See [:material-code-braces: TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authInfos`: `Sequence`\[[AuthInfoTypeDef](./type_defs.md#authinfotypedef)\]
-  *(required)*
-- `principal`: `str`
-- `cognitoIdentityPoolId`: `str`
-- `clientId`: `str`
-- `policyNamesToAdd`: `Sequence`\[`str`\]
-- `policyNamesToSkip`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: TestAuthorizationRequestRequestTypeDef = {  # (1)
+    "authInfos": ...,
+}
 
-Returns
-[TestAuthorizationResponseTypeDef](./type_defs.md#testauthorizationresponsetypedef).
+parent.test_authorization(**kwargs)
+```
 
-<a id="test\_invoke\_authorizer"></a>
+1. See [:material-code-braces: TestAuthorizationRequestRequestTypeDef](./type_defs.md#testauthorizationrequestrequesttypedef) 
 
-### test_invoke_authorizer
+### test\_invoke\_authorizer
 
-Tests a custom authorization behavior by invoking a specified custom
-authorizer.
+Tests a custom authorization behavior by invoking a specified custom authorizer.
 
-Type annotations for `boto3.client("iot").test_invoke_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").test_invoke_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
 
-Boto3 documentation:
-[IoT.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.test_invoke_authorizer)
+```python title="Method definition"
+def test_invoke_authorizer(
+    self,
+    *,
+    authorizerName: str,
+    token: str = ...,
+    tokenSignature: str = ...,
+    httpContext: HttpContextTypeDef = ...,  # (1)
+    mqttContext: MqttContextTypeDef = ...,  # (2)
+    tlsContext: TlsContextTypeDef = ...,  # (3)
+) -> TestInvokeAuthorizerResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[TestInvokeAuthorizerRequestRequestTypeDef](./type_defs.md#testinvokeauthorizerrequestrequesttypedef).
+1. See [:material-code-braces: HttpContextTypeDef](./type_defs.md#httpcontexttypedef) 
+2. See [:material-code-braces: MqttContextTypeDef](./type_defs.md#mqttcontexttypedef) 
+3. See [:material-code-braces: TlsContextTypeDef](./type_defs.md#tlscontexttypedef) 
+4. See [:material-code-braces: TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
-- `token`: `str`
-- `tokenSignature`: `str`
-- `httpContext`: [HttpContextTypeDef](./type_defs.md#httpcontexttypedef)
-- `mqttContext`: [MqttContextTypeDef](./type_defs.md#mqttcontexttypedef)
-- `tlsContext`: [TlsContextTypeDef](./type_defs.md#tlscontexttypedef)
+```python title="Usage example with kwargs"
+kwargs: TestInvokeAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+}
 
-Returns
-[TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
+parent.test_invoke_authorizer(**kwargs)
+```
 
-<a id="transfer\_certificate"></a>
+1. See [:material-code-braces: TestInvokeAuthorizerRequestRequestTypeDef](./type_defs.md#testinvokeauthorizerrequestrequesttypedef) 
 
-### transfer_certificate
+### transfer\_certificate
 
 Transfers the specified certificate to the specified Amazon Web Services
 account.
 
-Type annotations for `boto3.client("iot").transfer_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").transfer_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate)
 
-Boto3 documentation:
-[IoT.Client.transfer_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.transfer_certificate)
+```python title="Method definition"
+def transfer_certificate(
+    self,
+    *,
+    certificateId: str,
+    targetAwsAccount: str,
+    transferMessage: str = ...,
+) -> TransferCertificateResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TransferCertificateRequestRequestTypeDef](./type_defs.md#transfercertificaterequestrequesttypedef).
+1. See [:material-code-braces: TransferCertificateResponseTypeDef](./type_defs.md#transfercertificateresponsetypedef) 
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `targetAwsAccount`: `str` *(required)*
-- `transferMessage`: `str`
+```python title="Usage example with kwargs"
+kwargs: TransferCertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+    "targetAwsAccount": ...,
+}
 
-Returns
-[TransferCertificateResponseTypeDef](./type_defs.md#transfercertificateresponsetypedef).
+parent.transfer_certificate(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TransferCertificateRequestRequestTypeDef](./type_defs.md#transfercertificaterequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the given tags (metadata) from the resource.
 
-Type annotations for `boto3.client("iot").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("iot").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource)
 
-Boto3 documentation:
-[IoT.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_account\_audit\_configuration"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_account_audit_configuration
+### update\_account\_audit\_configuration
 
 Configures or reconfigures the Device Defender audit settings for this account.
 
-Type annotations for `boto3.client("iot").update_account_audit_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").update_account_audit_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
 
-Boto3 documentation:
-[IoT.Client.update_account_audit_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_account_audit_configuration)
+```python title="Method definition"
+def update_account_audit_configuration(
+    self,
+    *,
+    roleArn: str = ...,
+    auditNotificationTargetConfigurations: Mapping[AuditNotificationTypeType, AuditNotificationTargetTypeDef] = ...,  # (1)
+    auditCheckConfigurations: Mapping[str, AuditCheckConfigurationTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAccountAuditConfigurationRequestRequestTypeDef](./type_defs.md#updateaccountauditconfigurationrequestrequesttypedef).
+1. See [:material-code-brackets: AuditNotificationTypeType](./literals.md#auditnotificationtypetype) [:material-code-braces: AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef) 
+2. See [:material-code-braces: AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `roleArn`: `str`
-- `auditNotificationTargetConfigurations`: `Mapping`\[`Literal['SNS']` (see
-  [AuditNotificationTypeType](./literals.md#auditnotificationtypetype)),
-  [AuditNotificationTargetTypeDef](./type_defs.md#auditnotificationtargettypedef)\]
-- `auditCheckConfigurations`: `Mapping`\[`str`,
-  [AuditCheckConfigurationTypeDef](./type_defs.md#auditcheckconfigurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountAuditConfigurationRequestRequestTypeDef = {  # (1)
+    "roleArn": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_account_audit_configuration(**kwargs)
+```
 
-<a id="update\_audit\_suppression"></a>
+1. See [:material-code-braces: UpdateAccountAuditConfigurationRequestRequestTypeDef](./type_defs.md#updateaccountauditconfigurationrequestrequesttypedef) 
 
-### update_audit_suppression
+### update\_audit\_suppression
 
 Updates a Device Defender audit suppression.
 
-Type annotations for `boto3.client("iot").update_audit_suppression` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_audit_suppression` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression)
 
-Boto3 documentation:
-[IoT.Client.update_audit_suppression](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_audit_suppression)
+```python title="Method definition"
+def update_audit_suppression(
+    self,
+    *,
+    checkName: str,
+    resourceIdentifier: ResourceIdentifierTypeDef,  # (1)
+    expirationDate: Union[datetime, str] = ...,
+    suppressIndefinitely: bool = ...,
+    description: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAuditSuppressionRequestRequestTypeDef](./type_defs.md#updateauditsuppressionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef) 
 
-Keyword-only arguments:
 
-- `checkName`: `str` *(required)*
-- `resourceIdentifier`:
-  [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
-  *(required)*
-- `expirationDate`: `Union`\[`datetime`, `str`\]
-- `suppressIndefinitely`: `bool`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAuditSuppressionRequestRequestTypeDef = {  # (1)
+    "checkName": ...,
+    "resourceIdentifier": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_audit_suppression(**kwargs)
+```
 
-<a id="update\_authorizer"></a>
+1. See [:material-code-braces: UpdateAuditSuppressionRequestRequestTypeDef](./type_defs.md#updateauditsuppressionrequestrequesttypedef) 
 
-### update_authorizer
+### update\_authorizer
 
 Updates an authorizer.
 
-Type annotations for `boto3.client("iot").update_authorizer` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer)
 
-Boto3 documentation:
-[IoT.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_authorizer)
+```python title="Method definition"
+def update_authorizer(
+    self,
+    *,
+    authorizerName: str,
+    authorizerFunctionArn: str = ...,
+    tokenKeyName: str = ...,
+    tokenSigningPublicKeys: Mapping[str, str] = ...,
+    status: AuthorizerStatusType = ...,  # (1)
+    enableCachingForHttp: bool = ...,
+) -> UpdateAuthorizerResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateAuthorizerRequestRequestTypeDef](./type_defs.md#updateauthorizerrequestrequesttypedef).
+1. See [:material-code-brackets: AuthorizerStatusType](./literals.md#authorizerstatustype) 
+2. See [:material-code-braces: UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `authorizerName`: `str` *(required)*
-- `authorizerFunctionArn`: `str`
-- `tokenKeyName`: `str`
-- `tokenSigningPublicKeys`: `Mapping`\[`str`, `str`\]
-- `status`: [AuthorizerStatusType](./literals.md#authorizerstatustype)
-- `enableCachingForHttp`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateAuthorizerRequestRequestTypeDef = {  # (1)
+    "authorizerName": ...,
+}
 
-Returns
-[UpdateAuthorizerResponseTypeDef](./type_defs.md#updateauthorizerresponsetypedef).
+parent.update_authorizer(**kwargs)
+```
 
-<a id="update\_billing\_group"></a>
+1. See [:material-code-braces: UpdateAuthorizerRequestRequestTypeDef](./type_defs.md#updateauthorizerrequestrequesttypedef) 
 
-### update_billing_group
+### update\_billing\_group
 
 Updates information about the billing group.
 
-Type annotations for `boto3.client("iot").update_billing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_billing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group)
 
-Boto3 documentation:
-[IoT.Client.update_billing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_billing_group)
+```python title="Method definition"
+def update_billing_group(
+    self,
+    *,
+    billingGroupName: str,
+    billingGroupProperties: BillingGroupPropertiesTypeDef,  # (1)
+    expectedVersion: int = ...,
+) -> UpdateBillingGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBillingGroupRequestRequestTypeDef](./type_defs.md#updatebillinggrouprequestrequesttypedef).
+1. See [:material-code-braces: BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef) 
+2. See [:material-code-braces: UpdateBillingGroupResponseTypeDef](./type_defs.md#updatebillinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `billingGroupName`: `str` *(required)*
-- `billingGroupProperties`:
-  [BillingGroupPropertiesTypeDef](./type_defs.md#billinggrouppropertiestypedef)
-  *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateBillingGroupRequestRequestTypeDef = {  # (1)
+    "billingGroupName": ...,
+    "billingGroupProperties": ...,
+}
 
-Returns
-[UpdateBillingGroupResponseTypeDef](./type_defs.md#updatebillinggroupresponsetypedef).
+parent.update_billing_group(**kwargs)
+```
 
-<a id="update\_ca\_certificate"></a>
+1. See [:material-code-braces: UpdateBillingGroupRequestRequestTypeDef](./type_defs.md#updatebillinggrouprequestrequesttypedef) 
 
-### update_ca_certificate
+### update\_ca\_certificate
 
 Updates a registered CA certificate.
 
-Type annotations for `boto3.client("iot").update_ca_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_ca_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate)
 
-Boto3 documentation:
-[IoT.Client.update_ca_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_ca_certificate)
+```python title="Method definition"
+def update_ca_certificate(
+    self,
+    *,
+    certificateId: str,
+    newStatus: CACertificateStatusType = ...,  # (1)
+    newAutoRegistrationStatus: AutoRegistrationStatusType = ...,  # (2)
+    registrationConfig: RegistrationConfigTypeDef = ...,  # (3)
+    removeAutoRegistration: bool = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCACertificateRequestRequestTypeDef](./type_defs.md#updatecacertificaterequestrequesttypedef).
+1. See [:material-code-brackets: CACertificateStatusType](./literals.md#cacertificatestatustype) 
+2. See [:material-code-brackets: AutoRegistrationStatusType](./literals.md#autoregistrationstatustype) 
+3. See [:material-code-braces: RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef) 
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `newStatus`: [CACertificateStatusType](./literals.md#cacertificatestatustype)
-- `newAutoRegistrationStatus`:
-  [AutoRegistrationStatusType](./literals.md#autoregistrationstatustype)
-- `registrationConfig`:
-  [RegistrationConfigTypeDef](./type_defs.md#registrationconfigtypedef)
-- `removeAutoRegistration`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateCACertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+}
 
-<a id="update\_certificate"></a>
+parent.update_ca_certificate(**kwargs)
+```
 
-### update_certificate
+1. See [:material-code-braces: UpdateCACertificateRequestRequestTypeDef](./type_defs.md#updatecacertificaterequestrequesttypedef) 
+
+### update\_certificate
 
 Updates the status of the specified certificate.
 
-Type annotations for `boto3.client("iot").update_certificate` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate)
 
-Boto3 documentation:
-[IoT.Client.update_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_certificate)
+```python title="Method definition"
+def update_certificate(
+    self,
+    *,
+    certificateId: str,
+    newStatus: CertificateStatusType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCertificateRequestRequestTypeDef](./type_defs.md#updatecertificaterequestrequesttypedef).
+1. See [:material-code-brackets: CertificateStatusType](./literals.md#certificatestatustype) 
 
-Keyword-only arguments:
 
-- `certificateId`: `str` *(required)*
-- `newStatus`: [CertificateStatusType](./literals.md#certificatestatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCertificateRequestRequestTypeDef = {  # (1)
+    "certificateId": ...,
+    "newStatus": ...,
+}
 
-<a id="update\_custom\_metric"></a>
+parent.update_certificate(**kwargs)
+```
 
-### update_custom_metric
+1. See [:material-code-braces: UpdateCertificateRequestRequestTypeDef](./type_defs.md#updatecertificaterequestrequesttypedef) 
+
+### update\_custom\_metric
 
 Updates a Device Defender detect custom metric.
 
-Type annotations for `boto3.client("iot").update_custom_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_custom_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric)
 
-Boto3 documentation:
-[IoT.Client.update_custom_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_custom_metric)
+```python title="Method definition"
+def update_custom_metric(
+    self,
+    *,
+    metricName: str,
+    displayName: str,
+) -> UpdateCustomMetricResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateCustomMetricRequestRequestTypeDef](./type_defs.md#updatecustommetricrequestrequesttypedef).
+1. See [:material-code-braces: UpdateCustomMetricResponseTypeDef](./type_defs.md#updatecustommetricresponsetypedef) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
-- `displayName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateCustomMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+    "displayName": ...,
+}
 
-Returns
-[UpdateCustomMetricResponseTypeDef](./type_defs.md#updatecustommetricresponsetypedef).
+parent.update_custom_metric(**kwargs)
+```
 
-<a id="update\_dimension"></a>
+1. See [:material-code-braces: UpdateCustomMetricRequestRequestTypeDef](./type_defs.md#updatecustommetricrequestrequesttypedef) 
 
-### update_dimension
+### update\_dimension
 
 Updates the definition for a dimension.
 
-Type annotations for `boto3.client("iot").update_dimension` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_dimension` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension)
 
-Boto3 documentation:
-[IoT.Client.update_dimension](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dimension)
+```python title="Method definition"
+def update_dimension(
+    self,
+    *,
+    name: str,
+    stringValues: Sequence[str],
+) -> UpdateDimensionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDimensionRequestRequestTypeDef](./type_defs.md#updatedimensionrequestrequesttypedef).
+1. See [:material-code-braces: UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `stringValues`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDimensionRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "stringValues": ...,
+}
 
-Returns
-[UpdateDimensionResponseTypeDef](./type_defs.md#updatedimensionresponsetypedef).
+parent.update_dimension(**kwargs)
+```
 
-<a id="update\_domain\_configuration"></a>
+1. See [:material-code-braces: UpdateDimensionRequestRequestTypeDef](./type_defs.md#updatedimensionrequestrequesttypedef) 
 
-### update_domain_configuration
+### update\_domain\_configuration
 
 Updates values stored in the domain configuration.
 
-Type annotations for `boto3.client("iot").update_domain_configuration` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_domain_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration)
 
-Boto3 documentation:
-[IoT.Client.update_domain_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_domain_configuration)
+```python title="Method definition"
+def update_domain_configuration(
+    self,
+    *,
+    domainConfigurationName: str,
+    authorizerConfig: AuthorizerConfigTypeDef = ...,  # (1)
+    domainConfigurationStatus: DomainConfigurationStatusType = ...,  # (2)
+    removeAuthorizerConfig: bool = ...,
+) -> UpdateDomainConfigurationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDomainConfigurationRequestRequestTypeDef](./type_defs.md#updatedomainconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef) 
+2. See [:material-code-brackets: DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype) 
+3. See [:material-code-braces: UpdateDomainConfigurationResponseTypeDef](./type_defs.md#updatedomainconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `domainConfigurationName`: `str` *(required)*
-- `authorizerConfig`:
-  [AuthorizerConfigTypeDef](./type_defs.md#authorizerconfigtypedef)
-- `domainConfigurationStatus`:
-  [DomainConfigurationStatusType](./literals.md#domainconfigurationstatustype)
-- `removeAuthorizerConfig`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainConfigurationRequestRequestTypeDef = {  # (1)
+    "domainConfigurationName": ...,
+}
 
-Returns
-[UpdateDomainConfigurationResponseTypeDef](./type_defs.md#updatedomainconfigurationresponsetypedef).
+parent.update_domain_configuration(**kwargs)
+```
 
-<a id="update\_dynamic\_thing\_group"></a>
+1. See [:material-code-braces: UpdateDomainConfigurationRequestRequestTypeDef](./type_defs.md#updatedomainconfigurationrequestrequesttypedef) 
 
-### update_dynamic_thing_group
+### update\_dynamic\_thing\_group
 
 Updates a dynamic thing group.
 
-Type annotations for `boto3.client("iot").update_dynamic_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_dynamic_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
 
-Boto3 documentation:
-[IoT.Client.update_dynamic_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_dynamic_thing_group)
+```python title="Method definition"
+def update_dynamic_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
+    expectedVersion: int = ...,
+    indexName: str = ...,
+    queryString: str = ...,
+    queryVersion: str = ...,
+) -> UpdateDynamicThingGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDynamicThingGroupRequestRequestTypeDef](./type_defs.md#updatedynamicthinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: UpdateDynamicThingGroupResponseTypeDef](./type_defs.md#updatedynamicthinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `thingGroupProperties`:
-  [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-  *(required)*
-- `expectedVersion`: `int`
-- `indexName`: `str`
-- `queryString`: `str`
-- `queryVersion`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDynamicThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+    "thingGroupProperties": ...,
+}
 
-Returns
-[UpdateDynamicThingGroupResponseTypeDef](./type_defs.md#updatedynamicthinggroupresponsetypedef).
+parent.update_dynamic_thing_group(**kwargs)
+```
 
-<a id="update\_event\_configurations"></a>
+1. See [:material-code-braces: UpdateDynamicThingGroupRequestRequestTypeDef](./type_defs.md#updatedynamicthinggrouprequestrequesttypedef) 
 
-### update_event_configurations
+### update\_event\_configurations
 
 Updates the event configurations.
 
-Type annotations for `boto3.client("iot").update_event_configurations` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_event_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations)
 
-Boto3 documentation:
-[IoT.Client.update_event_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_event_configurations)
+```python title="Method definition"
+def update_event_configurations(
+    self,
+    *,
+    eventConfigurations: Mapping[EventTypeType, ConfigurationTypeDef] = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateEventConfigurationsRequestRequestTypeDef](./type_defs.md#updateeventconfigurationsrequestrequesttypedef).
+1. See [:material-code-brackets: EventTypeType](./literals.md#eventtypetype) [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
 
-Keyword-only arguments:
 
-- `eventConfigurations`:
-  `Mapping`\[[EventTypeType](./literals.md#eventtypetype),
-  [ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateEventConfigurationsRequestRequestTypeDef = {  # (1)
+    "eventConfigurations": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_event_configurations(**kwargs)
+```
 
-<a id="update\_fleet\_metric"></a>
+1. See [:material-code-braces: UpdateEventConfigurationsRequestRequestTypeDef](./type_defs.md#updateeventconfigurationsrequestrequesttypedef) 
 
-### update_fleet_metric
+### update\_fleet\_metric
 
 Updates the data for a fleet metric.
 
-Type annotations for `boto3.client("iot").update_fleet_metric` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_fleet_metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_fleet_metric)
 
-Boto3 documentation:
-[IoT.Client.update_fleet_metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_fleet_metric)
+```python title="Method definition"
+def update_fleet_metric(
+    self,
+    *,
+    metricName: str,
+    indexName: str,
+    queryString: str = ...,
+    aggregationType: AggregationTypeTypeDef = ...,  # (1)
+    period: int = ...,
+    aggregationField: str = ...,
+    description: str = ...,
+    queryVersion: str = ...,
+    unit: FleetMetricUnitType = ...,  # (2)
+    expectedVersion: int = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFleetMetricRequestRequestTypeDef](./type_defs.md#updatefleetmetricrequestrequesttypedef).
+1. See [:material-code-braces: AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef) 
+2. See [:material-code-brackets: FleetMetricUnitType](./literals.md#fleetmetricunittype) 
 
-Keyword-only arguments:
 
-- `metricName`: `str` *(required)*
-- `indexName`: `str` *(required)*
-- `queryString`: `str`
-- `aggregationType`:
-  [AggregationTypeTypeDef](./type_defs.md#aggregationtypetypedef)
-- `period`: `int`
-- `aggregationField`: `str`
-- `description`: `str`
-- `queryVersion`: `str`
-- `unit`: [FleetMetricUnitType](./literals.md#fleetmetricunittype)
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateFleetMetricRequestRequestTypeDef = {  # (1)
+    "metricName": ...,
+    "indexName": ...,
+}
 
-<a id="update\_indexing\_configuration"></a>
+parent.update_fleet_metric(**kwargs)
+```
 
-### update_indexing_configuration
+1. See [:material-code-braces: UpdateFleetMetricRequestRequestTypeDef](./type_defs.md#updatefleetmetricrequestrequesttypedef) 
+
+### update\_indexing\_configuration
 
 Updates the search configuration.
 
-Type annotations for `boto3.client("iot").update_indexing_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").update_indexing_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration)
 
-Boto3 documentation:
-[IoT.Client.update_indexing_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_indexing_configuration)
+```python title="Method definition"
+def update_indexing_configuration(
+    self,
+    *,
+    thingIndexingConfiguration: ThingIndexingConfigurationTypeDef = ...,  # (1)
+    thingGroupIndexingConfiguration: ThingGroupIndexingConfigurationTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateIndexingConfigurationRequestRequestTypeDef](./type_defs.md#updateindexingconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef) 
+2. See [:material-code-braces: ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `thingIndexingConfiguration`:
-  [ThingIndexingConfigurationTypeDef](./type_defs.md#thingindexingconfigurationtypedef)
-- `thingGroupIndexingConfiguration`:
-  [ThingGroupIndexingConfigurationTypeDef](./type_defs.md#thinggroupindexingconfigurationtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateIndexingConfigurationRequestRequestTypeDef = {  # (1)
+    "thingIndexingConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_indexing_configuration(**kwargs)
+```
 
-<a id="update\_job"></a>
+1. See [:material-code-braces: UpdateIndexingConfigurationRequestRequestTypeDef](./type_defs.md#updateindexingconfigurationrequestrequesttypedef) 
 
-### update_job
+### update\_job
 
 Updates supported fields of the specified job.
 
-Type annotations for `boto3.client("iot").update_job` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job)
 
-Boto3 documentation:
-[IoT.Client.update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_job)
+```python title="Method definition"
+def update_job(
+    self,
+    *,
+    jobId: str,
+    description: str = ...,
+    presignedUrlConfig: PresignedUrlConfigTypeDef = ...,  # (1)
+    jobExecutionsRolloutConfig: JobExecutionsRolloutConfigTypeDef = ...,  # (2)
+    abortConfig: AbortConfigTypeDef = ...,  # (3)
+    timeoutConfig: TimeoutConfigTypeDef = ...,  # (4)
+    namespaceId: str = ...,
+    jobExecutionsRetryConfig: JobExecutionsRetryConfigTypeDef = ...,  # (5)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef).
+1. See [:material-code-braces: PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef) 
+2. See [:material-code-braces: JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef) 
+3. See [:material-code-braces: AbortConfigTypeDef](./type_defs.md#abortconfigtypedef) 
+4. See [:material-code-braces: TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef) 
+5. See [:material-code-braces: JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef) 
 
-Keyword-only arguments:
 
-- `jobId`: `str` *(required)*
-- `description`: `str`
-- `presignedUrlConfig`:
-  [PresignedUrlConfigTypeDef](./type_defs.md#presignedurlconfigtypedef)
-- `jobExecutionsRolloutConfig`:
-  [JobExecutionsRolloutConfigTypeDef](./type_defs.md#jobexecutionsrolloutconfigtypedef)
-- `abortConfig`: [AbortConfigTypeDef](./type_defs.md#abortconfigtypedef)
-- `timeoutConfig`: [TimeoutConfigTypeDef](./type_defs.md#timeoutconfigtypedef)
-- `namespaceId`: `str`
-- `jobExecutionsRetryConfig`:
-  [JobExecutionsRetryConfigTypeDef](./type_defs.md#jobexecutionsretryconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateJobRequestRequestTypeDef = {  # (1)
+    "jobId": ...,
+}
 
-<a id="update\_mitigation\_action"></a>
+parent.update_job(**kwargs)
+```
 
-### update_mitigation_action
+1. See [:material-code-braces: UpdateJobRequestRequestTypeDef](./type_defs.md#updatejobrequestrequesttypedef) 
+
+### update\_mitigation\_action
 
 Updates the definition for the specified mitigation action.
 
-Type annotations for `boto3.client("iot").update_mitigation_action` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_mitigation_action` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action)
 
-Boto3 documentation:
-[IoT.Client.update_mitigation_action](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_mitigation_action)
+```python title="Method definition"
+def update_mitigation_action(
+    self,
+    *,
+    actionName: str,
+    roleArn: str = ...,
+    actionParams: MitigationActionParamsTypeDef = ...,  # (1)
+) -> UpdateMitigationActionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMitigationActionRequestRequestTypeDef](./type_defs.md#updatemitigationactionrequestrequesttypedef).
+1. See [:material-code-braces: MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef) 
+2. See [:material-code-braces: UpdateMitigationActionResponseTypeDef](./type_defs.md#updatemitigationactionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `actionName`: `str` *(required)*
-- `roleArn`: `str`
-- `actionParams`:
-  [MitigationActionParamsTypeDef](./type_defs.md#mitigationactionparamstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMitigationActionRequestRequestTypeDef = {  # (1)
+    "actionName": ...,
+}
 
-Returns
-[UpdateMitigationActionResponseTypeDef](./type_defs.md#updatemitigationactionresponsetypedef).
+parent.update_mitigation_action(**kwargs)
+```
 
-<a id="update\_provisioning\_template"></a>
+1. See [:material-code-braces: UpdateMitigationActionRequestRequestTypeDef](./type_defs.md#updatemitigationactionrequestrequesttypedef) 
 
-### update_provisioning_template
+### update\_provisioning\_template
 
 Updates a fleet provisioning template.
 
-Type annotations for `boto3.client("iot").update_provisioning_template` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_provisioning_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)
 
-Boto3 documentation:
-[IoT.Client.update_provisioning_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_provisioning_template)
+```python title="Method definition"
+def update_provisioning_template(
+    self,
+    *,
+    templateName: str,
+    description: str = ...,
+    enabled: bool = ...,
+    defaultVersionId: int = ...,
+    provisioningRoleArn: str = ...,
+    preProvisioningHook: ProvisioningHookTypeDef = ...,  # (1)
+    removePreProvisioningHook: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateProvisioningTemplateRequestRequestTypeDef](./type_defs.md#updateprovisioningtemplaterequestrequesttypedef).
+1. See [:material-code-braces: ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef) 
 
-Keyword-only arguments:
 
-- `templateName`: `str` *(required)*
-- `description`: `str`
-- `enabled`: `bool`
-- `defaultVersionId`: `int`
-- `provisioningRoleArn`: `str`
-- `preProvisioningHook`:
-  [ProvisioningHookTypeDef](./type_defs.md#provisioninghooktypedef)
-- `removePreProvisioningHook`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateProvisioningTemplateRequestRequestTypeDef = {  # (1)
+    "templateName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_provisioning_template(**kwargs)
+```
 
-<a id="update\_role\_alias"></a>
+1. See [:material-code-braces: UpdateProvisioningTemplateRequestRequestTypeDef](./type_defs.md#updateprovisioningtemplaterequestrequesttypedef) 
 
-### update_role_alias
+### update\_role\_alias
 
 Updates a role alias.
 
-Type annotations for `boto3.client("iot").update_role_alias` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_role_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias)
 
-Boto3 documentation:
-[IoT.Client.update_role_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_role_alias)
+```python title="Method definition"
+def update_role_alias(
+    self,
+    *,
+    roleAlias: str,
+    roleArn: str = ...,
+    credentialDurationSeconds: int = ...,
+) -> UpdateRoleAliasResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRoleAliasRequestRequestTypeDef](./type_defs.md#updaterolealiasrequestrequesttypedef).
+1. See [:material-code-braces: UpdateRoleAliasResponseTypeDef](./type_defs.md#updaterolealiasresponsetypedef) 
 
-Keyword-only arguments:
 
-- `roleAlias`: `str` *(required)*
-- `roleArn`: `str`
-- `credentialDurationSeconds`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateRoleAliasRequestRequestTypeDef = {  # (1)
+    "roleAlias": ...,
+}
 
-Returns
-[UpdateRoleAliasResponseTypeDef](./type_defs.md#updaterolealiasresponsetypedef).
+parent.update_role_alias(**kwargs)
+```
 
-<a id="update\_scheduled\_audit"></a>
+1. See [:material-code-braces: UpdateRoleAliasRequestRequestTypeDef](./type_defs.md#updaterolealiasrequestrequesttypedef) 
 
-### update_scheduled_audit
+### update\_scheduled\_audit
 
 Updates a scheduled audit, including which checks are performed and how often
 the audit takes place.
 
-Type annotations for `boto3.client("iot").update_scheduled_audit` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_scheduled_audit` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit)
 
-Boto3 documentation:
-[IoT.Client.update_scheduled_audit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_scheduled_audit)
+```python title="Method definition"
+def update_scheduled_audit(
+    self,
+    *,
+    scheduledAuditName: str,
+    frequency: AuditFrequencyType = ...,  # (1)
+    dayOfMonth: str = ...,
+    dayOfWeek: DayOfWeekType = ...,  # (2)
+    targetCheckNames: Sequence[str] = ...,
+) -> UpdateScheduledAuditResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateScheduledAuditRequestRequestTypeDef](./type_defs.md#updatescheduledauditrequestrequesttypedef).
+1. See [:material-code-brackets: AuditFrequencyType](./literals.md#auditfrequencytype) 
+2. See [:material-code-brackets: DayOfWeekType](./literals.md#dayofweektype) 
+3. See [:material-code-braces: UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef) 
 
-Keyword-only arguments:
 
-- `scheduledAuditName`: `str` *(required)*
-- `frequency`: [AuditFrequencyType](./literals.md#auditfrequencytype)
-- `dayOfMonth`: `str`
-- `dayOfWeek`: [DayOfWeekType](./literals.md#dayofweektype)
-- `targetCheckNames`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateScheduledAuditRequestRequestTypeDef = {  # (1)
+    "scheduledAuditName": ...,
+}
 
-Returns
-[UpdateScheduledAuditResponseTypeDef](./type_defs.md#updatescheduledauditresponsetypedef).
+parent.update_scheduled_audit(**kwargs)
+```
 
-<a id="update\_security\_profile"></a>
+1. See [:material-code-braces: UpdateScheduledAuditRequestRequestTypeDef](./type_defs.md#updatescheduledauditrequestrequesttypedef) 
 
-### update_security_profile
+### update\_security\_profile
 
 Updates a Device Defender security profile.
 
-Type annotations for `boto3.client("iot").update_security_profile` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_security_profile` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile)
 
-Boto3 documentation:
-[IoT.Client.update_security_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_security_profile)
+```python title="Method definition"
+def update_security_profile(
+    self,
+    *,
+    securityProfileName: str,
+    securityProfileDescription: str = ...,
+    behaviors: Sequence[BehaviorTypeDef] = ...,  # (1)
+    alertTargets: Mapping[AlertTargetTypeType, AlertTargetTypeDef] = ...,  # (2)
+    additionalMetricsToRetain: Sequence[str] = ...,
+    additionalMetricsToRetainV2: Sequence[MetricToRetainTypeDef] = ...,  # (3)
+    deleteBehaviors: bool = ...,
+    deleteAlertTargets: bool = ...,
+    deleteAdditionalMetricsToRetain: bool = ...,
+    expectedVersion: int = ...,
+) -> UpdateSecurityProfileResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef).
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-brackets: AlertTargetTypeType](./literals.md#alerttargettypetype) [:material-code-braces: AlertTargetTypeDef](./type_defs.md#alerttargettypedef) 
+3. See [:material-code-braces: MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef) 
+4. See [:material-code-braces: UpdateSecurityProfileResponseTypeDef](./type_defs.md#updatesecurityprofileresponsetypedef) 
 
-Keyword-only arguments:
 
-- `securityProfileName`: `str` *(required)*
-- `securityProfileDescription`: `str`
-- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-- `alertTargets`: `Mapping`\[`Literal['SNS']` (see
-  [AlertTargetTypeType](./literals.md#alerttargettypetype)),
-  [AlertTargetTypeDef](./type_defs.md#alerttargettypedef)\]
-- `additionalMetricsToRetain`: `Sequence`\[`str`\]
-- `additionalMetricsToRetainV2`:
-  `Sequence`\[[MetricToRetainTypeDef](./type_defs.md#metrictoretaintypedef)\]
-- `deleteBehaviors`: `bool`
-- `deleteAlertTargets`: `bool`
-- `deleteAdditionalMetricsToRetain`: `bool`
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateSecurityProfileRequestRequestTypeDef = {  # (1)
+    "securityProfileName": ...,
+}
 
-Returns
-[UpdateSecurityProfileResponseTypeDef](./type_defs.md#updatesecurityprofileresponsetypedef).
+parent.update_security_profile(**kwargs)
+```
 
-<a id="update\_stream"></a>
+1. See [:material-code-braces: UpdateSecurityProfileRequestRequestTypeDef](./type_defs.md#updatesecurityprofilerequestrequesttypedef) 
 
-### update_stream
+### update\_stream
 
 Updates an existing stream.
 
-Type annotations for `boto3.client("iot").update_stream` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream)
 
-Boto3 documentation:
-[IoT.Client.update_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_stream)
+```python title="Method definition"
+def update_stream(
+    self,
+    *,
+    streamId: str,
+    description: str = ...,
+    files: Sequence[StreamFileTypeDef] = ...,  # (1)
+    roleArn: str = ...,
+) -> UpdateStreamResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStreamRequestRequestTypeDef](./type_defs.md#updatestreamrequestrequesttypedef).
+1. See [:material-code-braces: StreamFileTypeDef](./type_defs.md#streamfiletypedef) 
+2. See [:material-code-braces: UpdateStreamResponseTypeDef](./type_defs.md#updatestreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `streamId`: `str` *(required)*
-- `description`: `str`
-- `files`: `Sequence`\[[StreamFileTypeDef](./type_defs.md#streamfiletypedef)\]
-- `roleArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStreamRequestRequestTypeDef = {  # (1)
+    "streamId": ...,
+}
 
-Returns
-[UpdateStreamResponseTypeDef](./type_defs.md#updatestreamresponsetypedef).
+parent.update_stream(**kwargs)
+```
 
-<a id="update\_thing"></a>
+1. See [:material-code-braces: UpdateStreamRequestRequestTypeDef](./type_defs.md#updatestreamrequestrequesttypedef) 
 
-### update_thing
+### update\_thing
 
 Updates the data for a thing.
 
-Type annotations for `boto3.client("iot").update_thing` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing)
 
-Boto3 documentation:
-[IoT.Client.update_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing)
+```python title="Method definition"
+def update_thing(
+    self,
+    *,
+    thingName: str,
+    thingTypeName: str = ...,
+    attributePayload: AttributePayloadTypeDef = ...,  # (1)
+    expectedVersion: int = ...,
+    removeThingType: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateThingRequestRequestTypeDef](./type_defs.md#updatethingrequestrequesttypedef).
+1. See [:material-code-braces: AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef) 
 
-Keyword-only arguments:
 
-- `thingName`: `str` *(required)*
-- `thingTypeName`: `str`
-- `attributePayload`:
-  [AttributePayloadTypeDef](./type_defs.md#attributepayloadtypedef)
-- `expectedVersion`: `int`
-- `removeThingType`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_thing(**kwargs)
+```
 
-<a id="update\_thing\_group"></a>
+1. See [:material-code-braces: UpdateThingRequestRequestTypeDef](./type_defs.md#updatethingrequestrequesttypedef) 
 
-### update_thing_group
+### update\_thing\_group
 
 Update a thing group.
 
-Type annotations for `boto3.client("iot").update_thing_group` method.
+Type annotations and code completion for `#!python boto3.client("iot").update_thing_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group)
 
-Boto3 documentation:
-[IoT.Client.update_thing_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_group)
+```python title="Method definition"
+def update_thing_group(
+    self,
+    *,
+    thingGroupName: str,
+    thingGroupProperties: ThingGroupPropertiesTypeDef,  # (1)
+    expectedVersion: int = ...,
+) -> UpdateThingGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateThingGroupRequestRequestTypeDef](./type_defs.md#updatethinggrouprequestrequesttypedef).
+1. See [:material-code-braces: ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef) 
+2. See [:material-code-braces: UpdateThingGroupResponseTypeDef](./type_defs.md#updatethinggroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `thingGroupName`: `str` *(required)*
-- `thingGroupProperties`:
-  [ThingGroupPropertiesTypeDef](./type_defs.md#thinggrouppropertiestypedef)
-  *(required)*
-- `expectedVersion`: `int`
+```python title="Usage example with kwargs"
+kwargs: UpdateThingGroupRequestRequestTypeDef = {  # (1)
+    "thingGroupName": ...,
+    "thingGroupProperties": ...,
+}
 
-Returns
-[UpdateThingGroupResponseTypeDef](./type_defs.md#updatethinggroupresponsetypedef).
+parent.update_thing_group(**kwargs)
+```
 
-<a id="update\_thing\_groups\_for\_thing"></a>
+1. See [:material-code-braces: UpdateThingGroupRequestRequestTypeDef](./type_defs.md#updatethinggrouprequestrequesttypedef) 
 
-### update_thing_groups_for_thing
+### update\_thing\_groups\_for\_thing
 
 Updates the groups to which the thing belongs.
 
-Type annotations for `boto3.client("iot").update_thing_groups_for_thing`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").update_thing_groups_for_thing` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
 
-Boto3 documentation:
-[IoT.Client.update_thing_groups_for_thing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_thing_groups_for_thing)
+```python title="Method definition"
+def update_thing_groups_for_thing(
+    self,
+    *,
+    thingName: str = ...,
+    thingGroupsToAdd: Sequence[str] = ...,
+    thingGroupsToRemove: Sequence[str] = ...,
+    overrideDynamicGroups: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateThingGroupsForThingRequestRequestTypeDef](./type_defs.md#updatethinggroupsforthingrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `thingName`: `str`
-- `thingGroupsToAdd`: `Sequence`\[`str`\]
-- `thingGroupsToRemove`: `Sequence`\[`str`\]
-- `overrideDynamicGroups`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateThingGroupsForThingRequestRequestTypeDef = {  # (1)
+    "thingName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_thing_groups_for_thing(**kwargs)
+```
 
-<a id="update\_topic\_rule\_destination"></a>
+1. See [:material-code-braces: UpdateThingGroupsForThingRequestRequestTypeDef](./type_defs.md#updatethinggroupsforthingrequestrequesttypedef) 
 
-### update_topic_rule_destination
+### update\_topic\_rule\_destination
 
 Updates a topic rule destination.
 
-Type annotations for `boto3.client("iot").update_topic_rule_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").update_topic_rule_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
 
-Boto3 documentation:
-[IoT.Client.update_topic_rule_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.update_topic_rule_destination)
+```python title="Method definition"
+def update_topic_rule_destination(
+    self,
+    *,
+    arn: str,
+    status: TopicRuleDestinationStatusType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#updatetopicruledestinationrequestrequesttypedef).
+1. See [:material-code-brackets: TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype) 
 
-Keyword-only arguments:
 
-- `arn`: `str` *(required)*
-- `status`:
-  [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateTopicRuleDestinationRequestRequestTypeDef = {  # (1)
+    "arn": ...,
+    "status": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_topic_rule_destination(**kwargs)
+```
 
-<a id="validate\_security\_profile\_behaviors"></a>
+1. See [:material-code-braces: UpdateTopicRuleDestinationRequestRequestTypeDef](./type_defs.md#updatetopicruledestinationrequestrequesttypedef) 
 
-### validate_security_profile_behaviors
+### validate\_security\_profile\_behaviors
 
 Validates a Device Defender security profile behaviors specification.
 
-Type annotations for `boto3.client("iot").validate_security_profile_behaviors`
-method.
+Type annotations and code completion for `#!python boto3.client("iot").validate_security_profile_behaviors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
 
-Boto3 documentation:
-[IoT.Client.validate_security_profile_behaviors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT.Client.validate_security_profile_behaviors)
+```python title="Method definition"
+def validate_security_profile_behaviors(
+    self,
+    *,
+    behaviors: Sequence[BehaviorTypeDef],  # (1)
+) -> ValidateSecurityProfileBehaviorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ValidateSecurityProfileBehaviorsRequestRequestTypeDef](./type_defs.md#validatesecurityprofilebehaviorsrequestrequesttypedef).
+1. See [:material-code-braces: BehaviorTypeDef](./type_defs.md#behaviortypedef) 
+2. See [:material-code-braces: ValidateSecurityProfileBehaviorsResponseTypeDef](./type_defs.md#validatesecurityprofilebehaviorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `behaviors`: `Sequence`\[[BehaviorTypeDef](./type_defs.md#behaviortypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ValidateSecurityProfileBehaviorsRequestRequestTypeDef = {  # (1)
+    "behaviors": ...,
+}
 
-Returns
-[ValidateSecurityProfileBehaviorsResponseTypeDef](./type_defs.md#validatesecurityprofilebehaviorsresponsetypedef).
+parent.validate_security_profile_behaviors(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: ValidateSecurityProfileBehaviorsRequestRequestTypeDef](./type_defs.md#validatesecurityprofilebehaviorsrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("iot").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("iot").get_paginator` method with overloads.
 
-- `client.get_paginator("get_behavior_model_training_summaries")` ->
-  [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
-- `client.get_paginator("list_active_violations")` ->
-  [ListActiveViolationsPaginator](./paginators.md#listactiveviolationspaginator)
-- `client.get_paginator("list_attached_policies")` ->
-  [ListAttachedPoliciesPaginator](./paginators.md#listattachedpoliciespaginator)
-- `client.get_paginator("list_audit_findings")` ->
-  [ListAuditFindingsPaginator](./paginators.md#listauditfindingspaginator)
-- `client.get_paginator("list_audit_mitigation_actions_executions")` ->
-  [ListAuditMitigationActionsExecutionsPaginator](./paginators.md#listauditmitigationactionsexecutionspaginator)
-- `client.get_paginator("list_audit_mitigation_actions_tasks")` ->
-  [ListAuditMitigationActionsTasksPaginator](./paginators.md#listauditmitigationactionstaskspaginator)
-- `client.get_paginator("list_audit_suppressions")` ->
-  [ListAuditSuppressionsPaginator](./paginators.md#listauditsuppressionspaginator)
-- `client.get_paginator("list_audit_tasks")` ->
-  [ListAuditTasksPaginator](./paginators.md#listaudittaskspaginator)
-- `client.get_paginator("list_authorizers")` ->
-  [ListAuthorizersPaginator](./paginators.md#listauthorizerspaginator)
-- `client.get_paginator("list_billing_groups")` ->
-  [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
-- `client.get_paginator("list_ca_certificates")` ->
-  [ListCACertificatesPaginator](./paginators.md#listcacertificatespaginator)
-- `client.get_paginator("list_certificates")` ->
-  [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
-- `client.get_paginator("list_certificates_by_ca")` ->
-  [ListCertificatesByCAPaginator](./paginators.md#listcertificatesbycapaginator)
-- `client.get_paginator("list_custom_metrics")` ->
-  [ListCustomMetricsPaginator](./paginators.md#listcustommetricspaginator)
-- `client.get_paginator("list_detect_mitigation_actions_executions")` ->
-  [ListDetectMitigationActionsExecutionsPaginator](./paginators.md#listdetectmitigationactionsexecutionspaginator)
-- `client.get_paginator("list_detect_mitigation_actions_tasks")` ->
-  [ListDetectMitigationActionsTasksPaginator](./paginators.md#listdetectmitigationactionstaskspaginator)
-- `client.get_paginator("list_dimensions")` ->
-  [ListDimensionsPaginator](./paginators.md#listdimensionspaginator)
-- `client.get_paginator("list_domain_configurations")` ->
-  [ListDomainConfigurationsPaginator](./paginators.md#listdomainconfigurationspaginator)
-- `client.get_paginator("list_fleet_metrics")` ->
-  [ListFleetMetricsPaginator](./paginators.md#listfleetmetricspaginator)
-- `client.get_paginator("list_indices")` ->
-  [ListIndicesPaginator](./paginators.md#listindicespaginator)
-- `client.get_paginator("list_job_executions_for_job")` ->
-  [ListJobExecutionsForJobPaginator](./paginators.md#listjobexecutionsforjobpaginator)
-- `client.get_paginator("list_job_executions_for_thing")` ->
-  [ListJobExecutionsForThingPaginator](./paginators.md#listjobexecutionsforthingpaginator)
-- `client.get_paginator("list_job_templates")` ->
-  [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
-- `client.get_paginator("list_jobs")` ->
-  [ListJobsPaginator](./paginators.md#listjobspaginator)
-- `client.get_paginator("list_mitigation_actions")` ->
-  [ListMitigationActionsPaginator](./paginators.md#listmitigationactionspaginator)
-- `client.get_paginator("list_ota_updates")` ->
-  [ListOTAUpdatesPaginator](./paginators.md#listotaupdatespaginator)
-- `client.get_paginator("list_outgoing_certificates")` ->
-  [ListOutgoingCertificatesPaginator](./paginators.md#listoutgoingcertificatespaginator)
-- `client.get_paginator("list_policies")` ->
-  [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
-- `client.get_paginator("list_policy_principals")` ->
-  [ListPolicyPrincipalsPaginator](./paginators.md#listpolicyprincipalspaginator)
-- `client.get_paginator("list_principal_policies")` ->
-  [ListPrincipalPoliciesPaginator](./paginators.md#listprincipalpoliciespaginator)
-- `client.get_paginator("list_principal_things")` ->
-  [ListPrincipalThingsPaginator](./paginators.md#listprincipalthingspaginator)
-- `client.get_paginator("list_provisioning_template_versions")` ->
-  [ListProvisioningTemplateVersionsPaginator](./paginators.md#listprovisioningtemplateversionspaginator)
-- `client.get_paginator("list_provisioning_templates")` ->
-  [ListProvisioningTemplatesPaginator](./paginators.md#listprovisioningtemplatespaginator)
-- `client.get_paginator("list_role_aliases")` ->
-  [ListRoleAliasesPaginator](./paginators.md#listrolealiasespaginator)
-- `client.get_paginator("list_scheduled_audits")` ->
-  [ListScheduledAuditsPaginator](./paginators.md#listscheduledauditspaginator)
-- `client.get_paginator("list_security_profiles")` ->
-  [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
-- `client.get_paginator("list_security_profiles_for_target")` ->
-  [ListSecurityProfilesForTargetPaginator](./paginators.md#listsecurityprofilesfortargetpaginator)
-- `client.get_paginator("list_streams")` ->
-  [ListStreamsPaginator](./paginators.md#liststreamspaginator)
-- `client.get_paginator("list_tags_for_resource")` ->
-  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- `client.get_paginator("list_targets_for_policy")` ->
-  [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
-- `client.get_paginator("list_targets_for_security_profile")` ->
-  [ListTargetsForSecurityProfilePaginator](./paginators.md#listtargetsforsecurityprofilepaginator)
-- `client.get_paginator("list_thing_groups")` ->
-  [ListThingGroupsPaginator](./paginators.md#listthinggroupspaginator)
-- `client.get_paginator("list_thing_groups_for_thing")` ->
-  [ListThingGroupsForThingPaginator](./paginators.md#listthinggroupsforthingpaginator)
-- `client.get_paginator("list_thing_principals")` ->
-  [ListThingPrincipalsPaginator](./paginators.md#listthingprincipalspaginator)
-- `client.get_paginator("list_thing_registration_task_reports")` ->
-  [ListThingRegistrationTaskReportsPaginator](./paginators.md#listthingregistrationtaskreportspaginator)
-- `client.get_paginator("list_thing_registration_tasks")` ->
-  [ListThingRegistrationTasksPaginator](./paginators.md#listthingregistrationtaskspaginator)
-- `client.get_paginator("list_thing_types")` ->
-  [ListThingTypesPaginator](./paginators.md#listthingtypespaginator)
-- `client.get_paginator("list_things")` ->
-  [ListThingsPaginator](./paginators.md#listthingspaginator)
-- `client.get_paginator("list_things_in_billing_group")` ->
-  [ListThingsInBillingGroupPaginator](./paginators.md#listthingsinbillinggrouppaginator)
-- `client.get_paginator("list_things_in_thing_group")` ->
-  [ListThingsInThingGroupPaginator](./paginators.md#listthingsinthinggrouppaginator)
-- `client.get_paginator("list_topic_rule_destinations")` ->
-  [ListTopicRuleDestinationsPaginator](./paginators.md#listtopicruledestinationspaginator)
-- `client.get_paginator("list_topic_rules")` ->
-  [ListTopicRulesPaginator](./paginators.md#listtopicrulespaginator)
-- `client.get_paginator("list_v2_logging_levels")` ->
-  [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
-- `client.get_paginator("list_violation_events")` ->
-  [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
+- `client.get_paginator("get_behavior_model_training_summaries")` -> [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
+- `client.get_paginator("list_active_violations")` -> [ListActiveViolationsPaginator](./paginators.md#listactiveviolationspaginator)
+- `client.get_paginator("list_attached_policies")` -> [ListAttachedPoliciesPaginator](./paginators.md#listattachedpoliciespaginator)
+- `client.get_paginator("list_audit_findings")` -> [ListAuditFindingsPaginator](./paginators.md#listauditfindingspaginator)
+- `client.get_paginator("list_audit_mitigation_actions_executions")` -> [ListAuditMitigationActionsExecutionsPaginator](./paginators.md#listauditmitigationactionsexecutionspaginator)
+- `client.get_paginator("list_audit_mitigation_actions_tasks")` -> [ListAuditMitigationActionsTasksPaginator](./paginators.md#listauditmitigationactionstaskspaginator)
+- `client.get_paginator("list_audit_suppressions")` -> [ListAuditSuppressionsPaginator](./paginators.md#listauditsuppressionspaginator)
+- `client.get_paginator("list_audit_tasks")` -> [ListAuditTasksPaginator](./paginators.md#listaudittaskspaginator)
+- `client.get_paginator("list_authorizers")` -> [ListAuthorizersPaginator](./paginators.md#listauthorizerspaginator)
+- `client.get_paginator("list_billing_groups")` -> [ListBillingGroupsPaginator](./paginators.md#listbillinggroupspaginator)
+- `client.get_paginator("list_ca_certificates")` -> [ListCACertificatesPaginator](./paginators.md#listcacertificatespaginator)
+- `client.get_paginator("list_certificates")` -> [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+- `client.get_paginator("list_certificates_by_ca")` -> [ListCertificatesByCAPaginator](./paginators.md#listcertificatesbycapaginator)
+- `client.get_paginator("list_custom_metrics")` -> [ListCustomMetricsPaginator](./paginators.md#listcustommetricspaginator)
+- `client.get_paginator("list_detect_mitigation_actions_executions")` -> [ListDetectMitigationActionsExecutionsPaginator](./paginators.md#listdetectmitigationactionsexecutionspaginator)
+- `client.get_paginator("list_detect_mitigation_actions_tasks")` -> [ListDetectMitigationActionsTasksPaginator](./paginators.md#listdetectmitigationactionstaskspaginator)
+- `client.get_paginator("list_dimensions")` -> [ListDimensionsPaginator](./paginators.md#listdimensionspaginator)
+- `client.get_paginator("list_domain_configurations")` -> [ListDomainConfigurationsPaginator](./paginators.md#listdomainconfigurationspaginator)
+- `client.get_paginator("list_fleet_metrics")` -> [ListFleetMetricsPaginator](./paginators.md#listfleetmetricspaginator)
+- `client.get_paginator("list_indices")` -> [ListIndicesPaginator](./paginators.md#listindicespaginator)
+- `client.get_paginator("list_job_executions_for_job")` -> [ListJobExecutionsForJobPaginator](./paginators.md#listjobexecutionsforjobpaginator)
+- `client.get_paginator("list_job_executions_for_thing")` -> [ListJobExecutionsForThingPaginator](./paginators.md#listjobexecutionsforthingpaginator)
+- `client.get_paginator("list_job_templates")` -> [ListJobTemplatesPaginator](./paginators.md#listjobtemplatespaginator)
+- `client.get_paginator("list_jobs")` -> [ListJobsPaginator](./paginators.md#listjobspaginator)
+- `client.get_paginator("list_mitigation_actions")` -> [ListMitigationActionsPaginator](./paginators.md#listmitigationactionspaginator)
+- `client.get_paginator("list_ota_updates")` -> [ListOTAUpdatesPaginator](./paginators.md#listotaupdatespaginator)
+- `client.get_paginator("list_outgoing_certificates")` -> [ListOutgoingCertificatesPaginator](./paginators.md#listoutgoingcertificatespaginator)
+- `client.get_paginator("list_policies")` -> [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
+- `client.get_paginator("list_policy_principals")` -> [ListPolicyPrincipalsPaginator](./paginators.md#listpolicyprincipalspaginator)
+- `client.get_paginator("list_principal_policies")` -> [ListPrincipalPoliciesPaginator](./paginators.md#listprincipalpoliciespaginator)
+- `client.get_paginator("list_principal_things")` -> [ListPrincipalThingsPaginator](./paginators.md#listprincipalthingspaginator)
+- `client.get_paginator("list_provisioning_template_versions")` -> [ListProvisioningTemplateVersionsPaginator](./paginators.md#listprovisioningtemplateversionspaginator)
+- `client.get_paginator("list_provisioning_templates")` -> [ListProvisioningTemplatesPaginator](./paginators.md#listprovisioningtemplatespaginator)
+- `client.get_paginator("list_role_aliases")` -> [ListRoleAliasesPaginator](./paginators.md#listrolealiasespaginator)
+- `client.get_paginator("list_scheduled_audits")` -> [ListScheduledAuditsPaginator](./paginators.md#listscheduledauditspaginator)
+- `client.get_paginator("list_security_profiles")` -> [ListSecurityProfilesPaginator](./paginators.md#listsecurityprofilespaginator)
+- `client.get_paginator("list_security_profiles_for_target")` -> [ListSecurityProfilesForTargetPaginator](./paginators.md#listsecurityprofilesfortargetpaginator)
+- `client.get_paginator("list_streams")` -> [ListStreamsPaginator](./paginators.md#liststreamspaginator)
+- `client.get_paginator("list_tags_for_resource")` -> [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_targets_for_policy")` -> [ListTargetsForPolicyPaginator](./paginators.md#listtargetsforpolicypaginator)
+- `client.get_paginator("list_targets_for_security_profile")` -> [ListTargetsForSecurityProfilePaginator](./paginators.md#listtargetsforsecurityprofilepaginator)
+- `client.get_paginator("list_thing_groups")` -> [ListThingGroupsPaginator](./paginators.md#listthinggroupspaginator)
+- `client.get_paginator("list_thing_groups_for_thing")` -> [ListThingGroupsForThingPaginator](./paginators.md#listthinggroupsforthingpaginator)
+- `client.get_paginator("list_thing_principals")` -> [ListThingPrincipalsPaginator](./paginators.md#listthingprincipalspaginator)
+- `client.get_paginator("list_thing_registration_task_reports")` -> [ListThingRegistrationTaskReportsPaginator](./paginators.md#listthingregistrationtaskreportspaginator)
+- `client.get_paginator("list_thing_registration_tasks")` -> [ListThingRegistrationTasksPaginator](./paginators.md#listthingregistrationtaskspaginator)
+- `client.get_paginator("list_thing_types")` -> [ListThingTypesPaginator](./paginators.md#listthingtypespaginator)
+- `client.get_paginator("list_things")` -> [ListThingsPaginator](./paginators.md#listthingspaginator)
+- `client.get_paginator("list_things_in_billing_group")` -> [ListThingsInBillingGroupPaginator](./paginators.md#listthingsinbillinggrouppaginator)
+- `client.get_paginator("list_things_in_thing_group")` -> [ListThingsInThingGroupPaginator](./paginators.md#listthingsinthinggrouppaginator)
+- `client.get_paginator("list_topic_rule_destinations")` -> [ListTopicRuleDestinationsPaginator](./paginators.md#listtopicruledestinationspaginator)
+- `client.get_paginator("list_topic_rules")` -> [ListTopicRulesPaginator](./paginators.md#listtopicrulespaginator)
+- `client.get_paginator("list_v2_logging_levels")` -> [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
+- `client.get_paginator("list_violation_events")` -> [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
+
+
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-serverlessapplicationrepository-module"></a>
-
-# Type annotations for boto3 ServerlessApplicationRepository module
+#  ServerlessApplicationRepository module
 
 > [Index](../README.md) > ServerlessApplicationRepository
 
-Auto-generated documentation for
-[ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
-type annotations stubs module
-[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+!!! note ""
 
-- [Type annotations for boto3 ServerlessApplicationRepository module](#type-annotations-for-boto3-serverlessapplicationrepository-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ServerlessApplicationRepositoryClient](#serverlessapplicationrepositoryclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+    type annotations stubs module [mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ServerlessApplicationRepository`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[serverlessrepo]'
 python -m pip install mypy-boto3-serverlessrepo
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,89 +42,60 @@ python -m pip install mypy-boto3-serverlessrepo
 python -m pip uninstall -y mypy-boto3-serverlessrepo
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="serverlessapplicationrepositoryclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ServerlessApplicationRepositoryClient
 
-Type annotations for `boto3.client("serverlessrepo")` as
-[ServerlessApplicationRepositoryClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("serverlessrepo")` as [ServerlessApplicationRepositoryClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
+
+def get_client() -> ServerlessApplicationRepositoryClient:
+    return Session().cleint("serverlessrepo")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_application_version](./client.md#create_application_version)
-- [create_cloud_formation_change_set](./client.md#create_cloud_formation_change_set)
-- [create_cloud_formation_template](./client.md#create_cloud_formation_template)
-- [delete_application](./client.md#delete_application)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application](./client.md#get_application)
-- [get_application_policy](./client.md#get_application_policy)
-- [get_cloud_formation_template](./client.md#get_cloud_formation_template)
-- [get_paginator](./client.md#get_paginator)
-- [list_application_dependencies](./client.md#list_application_dependencies)
-- [list_application_versions](./client.md#list_application_versions)
-- [list_applications](./client.md#list_applications)
-- [put_application_policy](./client.md#put_application_policy)
-- [unshare_application](./client.md#unshare_application)
-- [update_application](./client.md#update_application)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ServerlessApplicationRepositoryClient [exceptions](./client.md#exceptions)
-
-- BadRequestException
-- ClientError
-- ConflictException
-- ForbiddenException
-- InternalServerErrorException
-- NotFoundException
-- TooManyRequestsException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("serverlessrepo").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("serverlessrepo").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator, ...
+from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
+
+def get_list_application_dependencies_paginator() -> ListApplicationDependenciesPaginator:
+    return Session().client("serverlessrepo").get_paginator("list_application_dependencies"))
 ```
 
 - [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
 - [ListApplicationVersionsPaginator](./paginators.md#listapplicationversionspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_serverlessrepo.literals import CapabilityType
 
-```python
-from mypy_boto3_serverlessrepo.literals import CapabilityType, ...
+def get_value() -> CapabilityType:
+    return "CAPABILITY_AUTO_EXPAND"
 ```
 
 - [CapabilityType](./literals.md#capabilitytype)
@@ -158,18 +107,23 @@ from mypy_boto3_serverlessrepo.literals import CapabilityType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_serverlessrepo.type_defs import ApplicationDependencySummaryTypeDef
 
-```python
-from mypy_boto3_serverlessrepo.type_defs import ApplicationDependencySummaryTypeDef, ...
+def get_value() -> ApplicationDependencySummaryTypeDef:
+    return {
+        "ApplicationId": ...,
+        "SemanticVersion": ...,
+    }
 ```
 
 - [ApplicationDependencySummaryTypeDef](./type_defs.md#applicationdependencysummarytypedef)
@@ -190,10 +144,13 @@ from mypy_boto3_serverlessrepo.type_defs import ApplicationDependencySummaryType
 - [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef)
 - [GetCloudFormationTemplateRequestRequestTypeDef](./type_defs.md#getcloudformationtemplaterequestrequesttypedef)
 - [GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef)
+- [ListApplicationDependenciesRequestListApplicationDependenciesPaginateTypeDef](./type_defs.md#listapplicationdependenciesrequestlistapplicationdependenciespaginatetypedef)
 - [ListApplicationDependenciesRequestRequestTypeDef](./type_defs.md#listapplicationdependenciesrequestrequesttypedef)
 - [ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef)
+- [ListApplicationVersionsRequestListApplicationVersionsPaginateTypeDef](./type_defs.md#listapplicationversionsrequestlistapplicationversionspaginatetypedef)
 - [ListApplicationVersionsRequestRequestTypeDef](./type_defs.md#listapplicationversionsrequestrequesttypedef)
 - [ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef)
+- [ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef)
 - [ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef)
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
@@ -210,3 +167,4 @@ from mypy_boto3_serverlessrepo.type_defs import ApplicationDependencySummaryType
 - [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef)
 - [VersionSummaryTypeDef](./type_defs.md#versionsummarytypedef)
 - [VersionTypeDef](./type_defs.md#versiontypedef)
+

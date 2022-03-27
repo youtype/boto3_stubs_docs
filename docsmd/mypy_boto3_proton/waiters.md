@@ -1,34 +1,18 @@
-<a id="waiters-for-boto3-proton-module"></a>
-
-# Waiters for boto3 Proton module
+# Waiters
 
 > [Index](../README.md) > [Proton](./README.md) > Waiters
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [Waiters for boto3 Proton module](#waiters-for-boto3-proton-module)
-  - [EnvironmentDeployedWaiter](#environmentdeployedwaiter)
-  - [EnvironmentTemplateVersionRegisteredWaiter](#environmenttemplateversionregisteredwaiter)
-  - [ServiceCreatedWaiter](#servicecreatedwaiter)
-  - [ServiceDeletedWaiter](#servicedeletedwaiter)
-  - [ServiceInstanceDeployedWaiter](#serviceinstancedeployedwaiter)
-  - [ServicePipelineDeployedWaiter](#servicepipelinedeployedwaiter)
-  - [ServiceTemplateVersionRegisteredWaiter](#servicetemplateversionregisteredwaiter)
-  - [ServiceUpdatedWaiter](#serviceupdatedwaiter)
-
-<a id="environmentdeployedwaiter"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## EnvironmentDeployedWaiter
 
-Type annotations for
-`boto3.client("proton").get_waiter("environment_deployed")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("environment_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentDeployed)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
@@ -37,24 +21,39 @@ def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
     return Session().client("proton").get_waiter("environment_deployed")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.environment_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentDeployed)
 
-Arguments for `EnvironmentDeployedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EnvironmentDeployedWaiter.wait` method.
 
-<a id="environmenttemplateversionregisteredwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentInputEnvironmentDeployedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetEnvironmentInputEnvironmentDeployedWaitTypeDef](./type_defs.md#getenvironmentinputenvironmentdeployedwaittypedef) 
 ## EnvironmentTemplateVersionRegisteredWaiter
 
-Type annotations for
-`boto3.client("proton").get_waiter("environment_template_version_registered")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("environment_template_version_registered")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentTemplateVersionRegistered)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import EnvironmentTemplateVersionRegisteredWaiter
@@ -63,25 +62,43 @@ def get_environment_template_version_registered_waiter() -> EnvironmentTemplateV
     return Session().client("proton").get_waiter("environment_template_version_registered")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.environment_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.EnvironmentTemplateVersionRegistered)
 
-Arguments for `EnvironmentTemplateVersionRegisteredWaiter.wait` method:
+### wait
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EnvironmentTemplateVersionRegisteredWaiter.wait` method.
 
-<a id="servicecreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetEnvironmentTemplateVersionInputEnvironmentTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getenvironmenttemplateversioninputenvironmenttemplateversionregisteredwaittypedef) 
 ## ServiceCreatedWaiter
 
-Type annotations for `boto3.client("proton").get_waiter("service_created")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServiceCreatedWaiter
@@ -90,23 +107,39 @@ def get_service_created_waiter() -> ServiceCreatedWaiter:
     return Session().client("proton").get_waiter("service_created")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceCreated)
 
-Arguments for `ServiceCreatedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServiceCreatedWaiter.wait` method.
 
-<a id="servicedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceInputServiceCreatedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceInputServiceCreatedWaitTypeDef](./type_defs.md#getserviceinputservicecreatedwaittypedef) 
 ## ServiceDeletedWaiter
 
-Type annotations for `boto3.client("proton").get_waiter("service_deleted")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServiceDeletedWaiter
@@ -115,24 +148,39 @@ def get_service_deleted_waiter() -> ServiceDeletedWaiter:
     return Session().client("proton").get_waiter("service_deleted")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceDeleted)
 
-Arguments for `ServiceDeletedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServiceDeletedWaiter.wait` method.
 
-<a id="serviceinstancedeployedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceInputServiceDeletedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceInputServiceDeletedWaitTypeDef](./type_defs.md#getserviceinputservicedeletedwaittypedef) 
 ## ServiceInstanceDeployedWaiter
 
-Type annotations for
-`boto3.client("proton").get_waiter("service_instance_deployed")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_instance_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceInstanceDeployed)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServiceInstanceDeployedWaiter
@@ -141,25 +189,41 @@ def get_service_instance_deployed_waiter() -> ServiceInstanceDeployedWaiter:
     return Session().client("proton").get_waiter("service_instance_deployed")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_instance_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceInstanceDeployed)
 
-Arguments for `ServiceInstanceDeployedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServiceInstanceDeployedWaiter.wait` method.
 
-<a id="servicepipelinedeployedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    serviceName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef = {  # (1)
+    "name": ...,
+    "serviceName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceInstanceInputServiceInstanceDeployedWaitTypeDef](./type_defs.md#getserviceinstanceinputserviceinstancedeployedwaittypedef) 
 ## ServicePipelineDeployedWaiter
 
-Type annotations for
-`boto3.client("proton").get_waiter("service_pipeline_deployed")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_pipeline_deployed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServicePipelineDeployed)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServicePipelineDeployedWaiter
@@ -168,24 +232,39 @@ def get_service_pipeline_deployed_waiter() -> ServicePipelineDeployedWaiter:
     return Session().client("proton").get_waiter("service_pipeline_deployed")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_pipeline_deployed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServicePipelineDeployed)
 
-Arguments for `ServicePipelineDeployedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServicePipelineDeployedWaiter.wait` method.
 
-<a id="servicetemplateversionregisteredwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceInputServicePipelineDeployedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceInputServicePipelineDeployedWaitTypeDef](./type_defs.md#getserviceinputservicepipelinedeployedwaittypedef) 
 ## ServiceTemplateVersionRegisteredWaiter
 
-Type annotations for
-`boto3.client("proton").get_waiter("service_template_version_registered")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_template_version_registered")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceTemplateVersionRegistered)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServiceTemplateVersionRegisteredWaiter
@@ -194,25 +273,43 @@ def get_service_template_version_registered_waiter() -> ServiceTemplateVersionRe
     return Session().client("proton").get_waiter("service_template_version_registered")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_template_version_registered](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceTemplateVersionRegistered)
 
-Arguments for `ServiceTemplateVersionRegisteredWaiter.wait` method:
+### wait
 
-- `majorVersion`: `str` *(required)*
-- `minorVersion`: `str` *(required)*
-- `templateName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServiceTemplateVersionRegisteredWaiter.wait` method.
 
-<a id="serviceupdatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    majorVersion: str,
+    minorVersion: str,
+    templateName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef = {  # (1)
+    "majorVersion": ...,
+    "minorVersion": ...,
+    "templateName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceTemplateVersionInputServiceTemplateVersionRegisteredWaitTypeDef](./type_defs.md#getservicetemplateversioninputservicetemplateversionregisteredwaittypedef) 
 ## ServiceUpdatedWaiter
 
-Type annotations for `boto3.client("proton").get_waiter("service_updated")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_waiter("service_updated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceUpdated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.waiter import ServiceUpdatedWaiter
@@ -221,10 +318,30 @@ def get_service_updated_waiter() -> ServiceUpdatedWaiter:
     return Session().client("proton").get_waiter("service_updated")
 ```
 
-Boto3 documentation:
-[Proton.Waiter.service_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Waiter.ServiceUpdated)
 
-Arguments for `ServiceUpdatedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ServiceUpdatedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetServiceInputServiceUpdatedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetServiceInputServiceUpdatedWaitTypeDef](./type_defs.md#getserviceinputserviceupdatedwaittypedef) 

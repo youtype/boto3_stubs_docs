@@ -1,944 +1,1016 @@
-<a id="literals-for-boto3-apigateway-module"></a>
-
-# Literals for boto3 APIGateway module
+# Literals
 
 > [Index](../README.md) > [APIGateway](./README.md) > Literals
 
-Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
-type annotations stubs module
-[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+!!! note ""
 
-- [Literals for boto3 APIGateway module](#literals-for-boto3-apigateway-module)
-  - [ApiKeySourceTypeType](#apikeysourcetypetype)
-  - [ApiKeysFormatType](#apikeysformattype)
-  - [AuthorizerTypeType](#authorizertypetype)
-  - [CacheClusterSizeType](#cacheclustersizetype)
-  - [CacheClusterStatusType](#cacheclusterstatustype)
-  - [ConnectionTypeType](#connectiontypetype)
-  - [ContentHandlingStrategyType](#contenthandlingstrategytype)
-  - [DocumentationPartTypeType](#documentationparttypetype)
-  - [DomainNameStatusType](#domainnamestatustype)
-  - [EndpointTypeType](#endpointtypetype)
-  - [GatewayResponseTypeType](#gatewayresponsetypetype)
-  - [GetApiKeysPaginatorName](#getapikeyspaginatorname)
-  - [GetAuthorizersPaginatorName](#getauthorizerspaginatorname)
-  - [GetBasePathMappingsPaginatorName](#getbasepathmappingspaginatorname)
-  - [GetClientCertificatesPaginatorName](#getclientcertificatespaginatorname)
-  - [GetDeploymentsPaginatorName](#getdeploymentspaginatorname)
-  - [GetDocumentationPartsPaginatorName](#getdocumentationpartspaginatorname)
-  - [GetDocumentationVersionsPaginatorName](#getdocumentationversionspaginatorname)
-  - [GetDomainNamesPaginatorName](#getdomainnamespaginatorname)
-  - [GetGatewayResponsesPaginatorName](#getgatewayresponsespaginatorname)
-  - [GetModelsPaginatorName](#getmodelspaginatorname)
-  - [GetRequestValidatorsPaginatorName](#getrequestvalidatorspaginatorname)
-  - [GetResourcesPaginatorName](#getresourcespaginatorname)
-  - [GetRestApisPaginatorName](#getrestapispaginatorname)
-  - [GetSdkTypesPaginatorName](#getsdktypespaginatorname)
-  - [GetUsagePaginatorName](#getusagepaginatorname)
-  - [GetUsagePlanKeysPaginatorName](#getusageplankeyspaginatorname)
-  - [GetUsagePlansPaginatorName](#getusageplanspaginatorname)
-  - [GetVpcLinksPaginatorName](#getvpclinkspaginatorname)
-  - [IntegrationTypeType](#integrationtypetype)
-  - [LocationStatusTypeType](#locationstatustypetype)
-  - [OpType](#optype)
-  - [PutModeType](#putmodetype)
-  - [QuotaPeriodTypeType](#quotaperiodtypetype)
-  - [SecurityPolicyType](#securitypolicytype)
-  - [UnauthorizedCacheControlHeaderStrategyType](#unauthorizedcachecontrolheaderstrategytype)
-  - [VpcLinkStatusType](#vpclinkstatustype)
-  - [APIGatewayServiceName](#apigatewayservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="apikeysourcetypetype"></a>
+    Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+    type annotations stubs module [mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 ## ApiKeySourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ApiKeySourceTypeType
+
+def get_value() -> ApiKeySourceTypeType:
+    return "AUTHORIZER"
 ```
 
-Values:
-
-- `AUTHORIZER`
-- `HEADER`
-
-<a id="apikeysformattype"></a>
-
+```python title="Definition"
+ApiKeySourceTypeType = Literal[
+    "AUTHORIZER",
+    "HEADER",
+]
+```
 ## ApiKeysFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ApiKeysFormatType
+
+def get_value() -> ApiKeysFormatType:
+    return "csv"
 ```
 
-Values:
-
-- `csv`
-
-<a id="authorizertypetype"></a>
-
+```python title="Definition"
+ApiKeysFormatType = Literal[
+    "csv",
+]
+```
 ## AuthorizerTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import AuthorizerTypeType
+
+def get_value() -> AuthorizerTypeType:
+    return "COGNITO_USER_POOLS"
 ```
 
-Values:
-
-- `COGNITO_USER_POOLS`
-- `REQUEST`
-- `TOKEN`
-
-<a id="cacheclustersizetype"></a>
-
+```python title="Definition"
+AuthorizerTypeType = Literal[
+    "COGNITO_USER_POOLS",
+    "REQUEST",
+    "TOKEN",
+]
+```
 ## CacheClusterSizeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import CacheClusterSizeType
+
+def get_value() -> CacheClusterSizeType:
+    return "0.5"
 ```
 
-Values:
-
-- `0.5`
-- `1.6`
-- `118`
-- `13.5`
-- `237`
-- `28.4`
-- `58.2`
-- `6.1`
-
-<a id="cacheclusterstatustype"></a>
-
+```python title="Definition"
+CacheClusterSizeType = Literal[
+    "0.5",
+    "1.6",
+    "118",
+    "13.5",
+    "237",
+    "28.4",
+    "58.2",
+    "6.1",
+]
+```
 ## CacheClusterStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import CacheClusterStatusType
+
+def get_value() -> CacheClusterStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `CREATE_IN_PROGRESS`
-- `DELETE_IN_PROGRESS`
-- `FLUSH_IN_PROGRESS`
-- `NOT_AVAILABLE`
-
-<a id="connectiontypetype"></a>
-
+```python title="Definition"
+CacheClusterStatusType = Literal[
+    "AVAILABLE",
+    "CREATE_IN_PROGRESS",
+    "DELETE_IN_PROGRESS",
+    "FLUSH_IN_PROGRESS",
+    "NOT_AVAILABLE",
+]
+```
 ## ConnectionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ConnectionTypeType
+
+def get_value() -> ConnectionTypeType:
+    return "INTERNET"
 ```
 
-Values:
-
-- `INTERNET`
-- `VPC_LINK`
-
-<a id="contenthandlingstrategytype"></a>
-
+```python title="Definition"
+ConnectionTypeType = Literal[
+    "INTERNET",
+    "VPC_LINK",
+]
+```
 ## ContentHandlingStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ContentHandlingStrategyType
+
+def get_value() -> ContentHandlingStrategyType:
+    return "CONVERT_TO_BINARY"
 ```
 
-Values:
-
-- `CONVERT_TO_BINARY`
-- `CONVERT_TO_TEXT`
-
-<a id="documentationparttypetype"></a>
-
+```python title="Definition"
+ContentHandlingStrategyType = Literal[
+    "CONVERT_TO_BINARY",
+    "CONVERT_TO_TEXT",
+]
+```
 ## DocumentationPartTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import DocumentationPartTypeType
+
+def get_value() -> DocumentationPartTypeType:
+    return "API"
 ```
 
-Values:
-
-- `API`
-- `AUTHORIZER`
-- `METHOD`
-- `MODEL`
-- `PATH_PARAMETER`
-- `QUERY_PARAMETER`
-- `REQUEST_BODY`
-- `REQUEST_HEADER`
-- `RESOURCE`
-- `RESPONSE`
-- `RESPONSE_BODY`
-- `RESPONSE_HEADER`
-
-<a id="domainnamestatustype"></a>
-
+```python title="Definition"
+DocumentationPartTypeType = Literal[
+    "API",
+    "AUTHORIZER",
+    "METHOD",
+    "MODEL",
+    "PATH_PARAMETER",
+    "QUERY_PARAMETER",
+    "REQUEST_BODY",
+    "REQUEST_HEADER",
+    "RESOURCE",
+    "RESPONSE",
+    "RESPONSE_BODY",
+    "RESPONSE_HEADER",
+]
+```
 ## DomainNameStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import DomainNameStatusType
+
+def get_value() -> DomainNameStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `PENDING`
-- `PENDING_CERTIFICATE_REIMPORT`
-- `PENDING_OWNERSHIP_VERIFICATION`
-- `UPDATING`
-
-<a id="endpointtypetype"></a>
-
+```python title="Definition"
+DomainNameStatusType = Literal[
+    "AVAILABLE",
+    "PENDING",
+    "PENDING_CERTIFICATE_REIMPORT",
+    "PENDING_OWNERSHIP_VERIFICATION",
+    "UPDATING",
+]
+```
 ## EndpointTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import EndpointTypeType
+
+def get_value() -> EndpointTypeType:
+    return "EDGE"
 ```
 
-Values:
-
-- `EDGE`
-- `PRIVATE`
-- `REGIONAL`
-
-<a id="gatewayresponsetypetype"></a>
-
+```python title="Definition"
+EndpointTypeType = Literal[
+    "EDGE",
+    "PRIVATE",
+    "REGIONAL",
+]
+```
 ## GatewayResponseTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GatewayResponseTypeType
+
+def get_value() -> GatewayResponseTypeType:
+    return "ACCESS_DENIED"
 ```
 
-Values:
-
-- `ACCESS_DENIED`
-- `API_CONFIGURATION_ERROR`
-- `AUTHORIZER_CONFIGURATION_ERROR`
-- `AUTHORIZER_FAILURE`
-- `BAD_REQUEST_BODY`
-- `BAD_REQUEST_PARAMETERS`
-- `DEFAULT_4XX`
-- `DEFAULT_5XX`
-- `EXPIRED_TOKEN`
-- `INTEGRATION_FAILURE`
-- `INTEGRATION_TIMEOUT`
-- `INVALID_API_KEY`
-- `INVALID_SIGNATURE`
-- `MISSING_AUTHENTICATION_TOKEN`
-- `QUOTA_EXCEEDED`
-- `REQUEST_TOO_LARGE`
-- `RESOURCE_NOT_FOUND`
-- `THROTTLED`
-- `UNAUTHORIZED`
-- `UNSUPPORTED_MEDIA_TYPE`
-- `WAF_FILTERED`
-
-<a id="getapikeyspaginatorname"></a>
-
+```python title="Definition"
+GatewayResponseTypeType = Literal[
+    "ACCESS_DENIED",
+    "API_CONFIGURATION_ERROR",
+    "AUTHORIZER_CONFIGURATION_ERROR",
+    "AUTHORIZER_FAILURE",
+    "BAD_REQUEST_BODY",
+    "BAD_REQUEST_PARAMETERS",
+    "DEFAULT_4XX",
+    "DEFAULT_5XX",
+    "EXPIRED_TOKEN",
+    "INTEGRATION_FAILURE",
+    "INTEGRATION_TIMEOUT",
+    "INVALID_API_KEY",
+    "INVALID_SIGNATURE",
+    "MISSING_AUTHENTICATION_TOKEN",
+    "QUOTA_EXCEEDED",
+    "REQUEST_TOO_LARGE",
+    "RESOURCE_NOT_FOUND",
+    "THROTTLED",
+    "UNAUTHORIZED",
+    "UNSUPPORTED_MEDIA_TYPE",
+    "WAF_FILTERED",
+]
+```
 ## GetApiKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetApiKeysPaginatorName
+
+def get_value() -> GetApiKeysPaginatorName:
+    return "get_api_keys"
 ```
 
-Values:
-
-- `get_api_keys`
-
-<a id="getauthorizerspaginatorname"></a>
-
+```python title="Definition"
+GetApiKeysPaginatorName = Literal[
+    "get_api_keys",
+]
+```
 ## GetAuthorizersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetAuthorizersPaginatorName
+
+def get_value() -> GetAuthorizersPaginatorName:
+    return "get_authorizers"
 ```
 
-Values:
-
-- `get_authorizers`
-
-<a id="getbasepathmappingspaginatorname"></a>
-
+```python title="Definition"
+GetAuthorizersPaginatorName = Literal[
+    "get_authorizers",
+]
+```
 ## GetBasePathMappingsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetBasePathMappingsPaginatorName
+
+def get_value() -> GetBasePathMappingsPaginatorName:
+    return "get_base_path_mappings"
 ```
 
-Values:
-
-- `get_base_path_mappings`
-
-<a id="getclientcertificatespaginatorname"></a>
-
+```python title="Definition"
+GetBasePathMappingsPaginatorName = Literal[
+    "get_base_path_mappings",
+]
+```
 ## GetClientCertificatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetClientCertificatesPaginatorName
+
+def get_value() -> GetClientCertificatesPaginatorName:
+    return "get_client_certificates"
 ```
 
-Values:
-
-- `get_client_certificates`
-
-<a id="getdeploymentspaginatorname"></a>
-
+```python title="Definition"
+GetClientCertificatesPaginatorName = Literal[
+    "get_client_certificates",
+]
+```
 ## GetDeploymentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetDeploymentsPaginatorName
+
+def get_value() -> GetDeploymentsPaginatorName:
+    return "get_deployments"
 ```
 
-Values:
-
-- `get_deployments`
-
-<a id="getdocumentationpartspaginatorname"></a>
-
+```python title="Definition"
+GetDeploymentsPaginatorName = Literal[
+    "get_deployments",
+]
+```
 ## GetDocumentationPartsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetDocumentationPartsPaginatorName
+
+def get_value() -> GetDocumentationPartsPaginatorName:
+    return "get_documentation_parts"
 ```
 
-Values:
-
-- `get_documentation_parts`
-
-<a id="getdocumentationversionspaginatorname"></a>
-
+```python title="Definition"
+GetDocumentationPartsPaginatorName = Literal[
+    "get_documentation_parts",
+]
+```
 ## GetDocumentationVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetDocumentationVersionsPaginatorName
+
+def get_value() -> GetDocumentationVersionsPaginatorName:
+    return "get_documentation_versions"
 ```
 
-Values:
-
-- `get_documentation_versions`
-
-<a id="getdomainnamespaginatorname"></a>
-
+```python title="Definition"
+GetDocumentationVersionsPaginatorName = Literal[
+    "get_documentation_versions",
+]
+```
 ## GetDomainNamesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetDomainNamesPaginatorName
+
+def get_value() -> GetDomainNamesPaginatorName:
+    return "get_domain_names"
 ```
 
-Values:
-
-- `get_domain_names`
-
-<a id="getgatewayresponsespaginatorname"></a>
-
+```python title="Definition"
+GetDomainNamesPaginatorName = Literal[
+    "get_domain_names",
+]
+```
 ## GetGatewayResponsesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetGatewayResponsesPaginatorName
+
+def get_value() -> GetGatewayResponsesPaginatorName:
+    return "get_gateway_responses"
 ```
 
-Values:
-
-- `get_gateway_responses`
-
-<a id="getmodelspaginatorname"></a>
-
+```python title="Definition"
+GetGatewayResponsesPaginatorName = Literal[
+    "get_gateway_responses",
+]
+```
 ## GetModelsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetModelsPaginatorName
+
+def get_value() -> GetModelsPaginatorName:
+    return "get_models"
 ```
 
-Values:
-
-- `get_models`
-
-<a id="getrequestvalidatorspaginatorname"></a>
-
+```python title="Definition"
+GetModelsPaginatorName = Literal[
+    "get_models",
+]
+```
 ## GetRequestValidatorsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetRequestValidatorsPaginatorName
+
+def get_value() -> GetRequestValidatorsPaginatorName:
+    return "get_request_validators"
 ```
 
-Values:
-
-- `get_request_validators`
-
-<a id="getresourcespaginatorname"></a>
-
+```python title="Definition"
+GetRequestValidatorsPaginatorName = Literal[
+    "get_request_validators",
+]
+```
 ## GetResourcesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetResourcesPaginatorName
+
+def get_value() -> GetResourcesPaginatorName:
+    return "get_resources"
 ```
 
-Values:
-
-- `get_resources`
-
-<a id="getrestapispaginatorname"></a>
-
+```python title="Definition"
+GetResourcesPaginatorName = Literal[
+    "get_resources",
+]
+```
 ## GetRestApisPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetRestApisPaginatorName
+
+def get_value() -> GetRestApisPaginatorName:
+    return "get_rest_apis"
 ```
 
-Values:
-
-- `get_rest_apis`
-
-<a id="getsdktypespaginatorname"></a>
-
+```python title="Definition"
+GetRestApisPaginatorName = Literal[
+    "get_rest_apis",
+]
+```
 ## GetSdkTypesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetSdkTypesPaginatorName
+
+def get_value() -> GetSdkTypesPaginatorName:
+    return "get_sdk_types"
 ```
 
-Values:
-
-- `get_sdk_types`
-
-<a id="getusagepaginatorname"></a>
-
+```python title="Definition"
+GetSdkTypesPaginatorName = Literal[
+    "get_sdk_types",
+]
+```
 ## GetUsagePaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetUsagePaginatorName
+
+def get_value() -> GetUsagePaginatorName:
+    return "get_usage"
 ```
 
-Values:
-
-- `get_usage`
-
-<a id="getusageplankeyspaginatorname"></a>
-
+```python title="Definition"
+GetUsagePaginatorName = Literal[
+    "get_usage",
+]
+```
 ## GetUsagePlanKeysPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetUsagePlanKeysPaginatorName
+
+def get_value() -> GetUsagePlanKeysPaginatorName:
+    return "get_usage_plan_keys"
 ```
 
-Values:
-
-- `get_usage_plan_keys`
-
-<a id="getusageplanspaginatorname"></a>
-
+```python title="Definition"
+GetUsagePlanKeysPaginatorName = Literal[
+    "get_usage_plan_keys",
+]
+```
 ## GetUsagePlansPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetUsagePlansPaginatorName
+
+def get_value() -> GetUsagePlansPaginatorName:
+    return "get_usage_plans"
 ```
 
-Values:
-
-- `get_usage_plans`
-
-<a id="getvpclinkspaginatorname"></a>
-
+```python title="Definition"
+GetUsagePlansPaginatorName = Literal[
+    "get_usage_plans",
+]
+```
 ## GetVpcLinksPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import GetVpcLinksPaginatorName
+
+def get_value() -> GetVpcLinksPaginatorName:
+    return "get_vpc_links"
 ```
 
-Values:
-
-- `get_vpc_links`
-
-<a id="integrationtypetype"></a>
-
+```python title="Definition"
+GetVpcLinksPaginatorName = Literal[
+    "get_vpc_links",
+]
+```
 ## IntegrationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import IntegrationTypeType
+
+def get_value() -> IntegrationTypeType:
+    return "AWS"
 ```
 
-Values:
-
-- `AWS`
-- `AWS_PROXY`
-- `HTTP`
-- `HTTP_PROXY`
-- `MOCK`
-
-<a id="locationstatustypetype"></a>
-
+```python title="Definition"
+IntegrationTypeType = Literal[
+    "AWS",
+    "AWS_PROXY",
+    "HTTP",
+    "HTTP_PROXY",
+    "MOCK",
+]
+```
 ## LocationStatusTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import LocationStatusTypeType
+
+def get_value() -> LocationStatusTypeType:
+    return "DOCUMENTED"
 ```
 
-Values:
-
-- `DOCUMENTED`
-- `UNDOCUMENTED`
-
-<a id="optype"></a>
-
+```python title="Definition"
+LocationStatusTypeType = Literal[
+    "DOCUMENTED",
+    "UNDOCUMENTED",
+]
+```
 ## OpType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import OpType
+
+def get_value() -> OpType:
+    return "add"
 ```
 
-Values:
-
-- `add`
-- `copy`
-- `move`
-- `remove`
-- `replace`
-- `test`
-
-<a id="putmodetype"></a>
-
+```python title="Definition"
+OpType = Literal[
+    "add",
+    "copy",
+    "move",
+    "remove",
+    "replace",
+    "test",
+]
+```
 ## PutModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import PutModeType
+
+def get_value() -> PutModeType:
+    return "merge"
 ```
 
-Values:
-
-- `merge`
-- `overwrite`
-
-<a id="quotaperiodtypetype"></a>
-
+```python title="Definition"
+PutModeType = Literal[
+    "merge",
+    "overwrite",
+]
+```
 ## QuotaPeriodTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import QuotaPeriodTypeType
+
+def get_value() -> QuotaPeriodTypeType:
+    return "DAY"
 ```
 
-Values:
-
-- `DAY`
-- `MONTH`
-- `WEEK`
-
-<a id="securitypolicytype"></a>
-
+```python title="Definition"
+QuotaPeriodTypeType = Literal[
+    "DAY",
+    "MONTH",
+    "WEEK",
+]
+```
 ## SecurityPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import SecurityPolicyType
+
+def get_value() -> SecurityPolicyType:
+    return "TLS_1_0"
 ```
 
-Values:
-
-- `TLS_1_0`
-- `TLS_1_2`
-
-<a id="unauthorizedcachecontrolheaderstrategytype"></a>
-
+```python title="Definition"
+SecurityPolicyType = Literal[
+    "TLS_1_0",
+    "TLS_1_2",
+]
+```
 ## UnauthorizedCacheControlHeaderStrategyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import UnauthorizedCacheControlHeaderStrategyType
+
+def get_value() -> UnauthorizedCacheControlHeaderStrategyType:
+    return "FAIL_WITH_403"
 ```
 
-Values:
-
-- `FAIL_WITH_403`
-- `SUCCEED_WITH_RESPONSE_HEADER`
-- `SUCCEED_WITHOUT_RESPONSE_HEADER`
-
-<a id="vpclinkstatustype"></a>
-
+```python title="Definition"
+UnauthorizedCacheControlHeaderStrategyType = Literal[
+    "FAIL_WITH_403",
+    "SUCCEED_WITH_RESPONSE_HEADER",
+    "SUCCEED_WITHOUT_RESPONSE_HEADER",
+]
+```
 ## VpcLinkStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import VpcLinkStatusType
+
+def get_value() -> VpcLinkStatusType:
+    return "AVAILABLE"
 ```
 
-Values:
-
-- `AVAILABLE`
-- `DELETING`
-- `FAILED`
-- `PENDING`
-
-<a id="apigatewayservicename"></a>
-
+```python title="Definition"
+VpcLinkStatusType = Literal[
+    "AVAILABLE",
+    "DELETING",
+    "FAILED",
+    "PENDING",
+]
+```
 ## APIGatewayServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import APIGatewayServiceName
+
+def get_value() -> APIGatewayServiceName:
+    return "apigateway"
 ```
 
-Values:
-
-- `apigateway`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+APIGatewayServiceName = Literal[
+    "apigateway",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apigateway.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "get_api_keys"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "get_api_keys",
+    "get_authorizers",
+    "get_base_path_mappings",
+    "get_client_certificates",
+    "get_deployments",
+    "get_documentation_parts",
+    "get_documentation_versions",
+    "get_domain_names",
+    "get_gateway_responses",
+    "get_models",
+    "get_request_validators",
+    "get_resources",
+    "get_rest_apis",
+    "get_sdk_types",
+    "get_usage",
+    "get_usage_plan_keys",
+    "get_usage_plans",
+    "get_vpc_links",
+]
+```
+## RegionName
 
-- `get_api_keys`
-- `get_authorizers`
-- `get_base_path_mappings`
-- `get_client_certificates`
-- `get_deployments`
-- `get_documentation_parts`
-- `get_documentation_versions`
-- `get_domain_names`
-- `get_gateway_responses`
-- `get_models`
-- `get_request_validators`
-- `get_resources`
-- `get_rest_apis`
-- `get_sdk_types`
-- `get_usage`
-- `get_usage_plan_keys`
-- `get_usage_plans`
-- `get_vpc_links`
+```python title="Usage Example"
+from mypy_boto3_apigateway.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

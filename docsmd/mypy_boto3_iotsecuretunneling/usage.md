@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-iotsecuretunneling-module"></a>
-
-# Examples for boto3 IoTSecureTunneling module
+# Examples
 
 > [Index](../README.md) > [IoTSecureTunneling](./README.md) > Examples
 
-- [Examples for boto3 IoTSecureTunneling module](#examples-for-boto3-iotsecuretunneling-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
+    type annotations stubs module [mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[iotsecuretunneling]` package installed.
 
-Write your `IoTSecureTunneling` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `IoTSecureTunneling` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type IoTSecureTunnelingClient
-# and provides type checking and code completion
-client = session.client("iotsecuretunneling")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("iotsecuretunneling")  # (1)
+    result = client.describe_tunnel()  # (2)
+    ```
+
+    1. client: [IoTSecureTunnelingClient](./client.md)
+    2. result: [:material-code-braces: DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[iotsecuretunneling]` or a standalone
-`mypy_boto3_iotsecuretunneling` package, you have to explicitly specify
-`client: IoTSecureTunnelingClient` type annotation.
+With `boto3-stubs-lite[iotsecuretunneling]`
+or a standalone `mypy_boto3_iotsecuretunneling` package, you have to explicitly specify `client: IoTSecureTunnelingClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
+    from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelResponseTypeDef
+    from mypy_boto3_iotsecuretunneling.type_defs import DescribeTunnelRequestRequestTypeDef
 
 
-from mypy_boto3_iotsecuretunneling.type_defs import bool
+    session = Session()
+
+    client: IoTSecureTunnelingClient = session.client("iotsecuretunneling")
+
+    kwargs: DescribeTunnelRequestRequestTypeDef = {...}
+    result: DescribeTunnelResponseTypeDef = client.describe_tunnel(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: IoTSecureTunnelingClient = session.client("iotsecuretunneling")
 
-result: bool = client.can_paginate()
-```
+

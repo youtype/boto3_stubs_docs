@@ -1,63 +1,18 @@
-<a id="mediaconnectclient-for-boto3-mediaconnect-module"></a>
-
-# MediaConnectClient for boto3 MediaConnect module
+# MediaConnectClient
 
 > [Index](../README.md) > [MediaConnect](./README.md) > MediaConnectClient
 
-Auto-generated documentation for
-[MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
-type annotations stubs module
-[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+!!! note ""
 
-- [MediaConnectClient for boto3 MediaConnect module](#mediaconnectclient-for-boto3-mediaconnect-module)
-  - [MediaConnectClient](#mediaconnectclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_flow_media_streams](#add_flow_media_streams)
-    - [add_flow_outputs](#add_flow_outputs)
-    - [add_flow_sources](#add_flow_sources)
-    - [add_flow_vpc_interfaces](#add_flow_vpc_interfaces)
-    - [can_paginate](#can_paginate)
-    - [create_flow](#create_flow)
-    - [delete_flow](#delete_flow)
-    - [describe_flow](#describe_flow)
-    - [describe_offering](#describe_offering)
-    - [describe_reservation](#describe_reservation)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [grant_flow_entitlements](#grant_flow_entitlements)
-    - [list_entitlements](#list_entitlements)
-    - [list_flows](#list_flows)
-    - [list_offerings](#list_offerings)
-    - [list_reservations](#list_reservations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [purchase_offering](#purchase_offering)
-    - [remove_flow_media_stream](#remove_flow_media_stream)
-    - [remove_flow_output](#remove_flow_output)
-    - [remove_flow_source](#remove_flow_source)
-    - [remove_flow_vpc_interface](#remove_flow_vpc_interface)
-    - [revoke_flow_entitlement](#revoke_flow_entitlement)
-    - [start_flow](#start_flow)
-    - [stop_flow](#stop_flow)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_flow](#update_flow)
-    - [update_flow_entitlement](#update_flow_entitlement)
-    - [update_flow_media_stream](#update_flow_media_stream)
-    - [update_flow_output](#update_flow_output)
-    - [update_flow_source](#update_flow_source)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="mediaconnectclient"></a>
+    Auto-generated documentation for [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
+    type annotations stubs module [mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 ## MediaConnectClient
 
-Type annotations for `boto3.client("mediaconnect")`
+Type annotations and code completion for `#!python boto3.client("mediaconnect")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 
@@ -65,849 +20,1087 @@ def get_mediaconnect_client() -> MediaConnectClient:
     return Session().client("mediaconnect")
 ```
 
-Boto3 documentation:
-[MediaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("mediaconnect").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("mediaconnect")
+
+try:
+    do_something(client)
+except (
+    client.AddFlowOutputs420Exception,
+    client.BadRequestException,
+    client.ClientError,
+    client.CreateFlow420Exception,
+    client.ForbiddenException,
+    client.GrantFlowEntitlements420Exception,
+    client.InternalServerErrorException,
+    client.NotFoundException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_mediaconnect.client import Exceptions
 
 def handle_error(exc: Exceptions.AddFlowOutputs420Exception) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AddFlowOutputs420Exception`
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.CreateFlow420Exception`
-- `Exceptions.ForbiddenException`
-- `Exceptions.GrantFlowEntitlements420Exception`
-- `Exceptions.InternalServerErrorException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-MediaConnectClient exceptions.
-
-Type annotations for `boto3.client("mediaconnect").exceptions` method.
-
-Boto3 documentation:
-[MediaConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_flow\_media\_streams"></a>
-
-### add_flow_media_streams
+### add\_flow\_media\_streams
 
 Adds media streams to an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").add_flow_media_streams`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").add_flow_media_streams` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
 
-Boto3 documentation:
-[MediaConnect.Client.add_flow_media_streams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_media_streams)
+```python title="Method definition"
+def add_flow_media_streams(
+    self,
+    *,
+    FlowArn: str,
+    MediaStreams: Sequence[AddMediaStreamRequestTypeDef],  # (1)
+) -> AddFlowMediaStreamsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddFlowMediaStreamsRequestRequestTypeDef](./type_defs.md#addflowmediastreamsrequestrequesttypedef).
+1. See [:material-code-braces: AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef) 
+2. See [:material-code-braces: AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `MediaStreams`:
-  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddFlowMediaStreamsRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "MediaStreams": ...,
+}
 
-Returns
-[AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef).
+parent.add_flow_media_streams(**kwargs)
+```
 
-<a id="add\_flow\_outputs"></a>
+1. See [:material-code-braces: AddFlowMediaStreamsRequestRequestTypeDef](./type_defs.md#addflowmediastreamsrequestrequesttypedef) 
 
-### add_flow_outputs
+### add\_flow\_outputs
 
 Adds outputs to an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").add_flow_outputs` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").add_flow_outputs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
 
-Boto3 documentation:
-[MediaConnect.Client.add_flow_outputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_outputs)
+```python title="Method definition"
+def add_flow_outputs(
+    self,
+    *,
+    FlowArn: str,
+    Outputs: Sequence[AddOutputRequestTypeDef],  # (1)
+) -> AddFlowOutputsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddFlowOutputsRequestRequestTypeDef](./type_defs.md#addflowoutputsrequestrequesttypedef).
+1. See [:material-code-braces: AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef) 
+2. See [:material-code-braces: AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `Outputs`:
-  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddFlowOutputsRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "Outputs": ...,
+}
 
-Returns
-[AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef).
+parent.add_flow_outputs(**kwargs)
+```
 
-<a id="add\_flow\_sources"></a>
+1. See [:material-code-braces: AddFlowOutputsRequestRequestTypeDef](./type_defs.md#addflowoutputsrequestrequesttypedef) 
 
-### add_flow_sources
+### add\_flow\_sources
 
-Adds Sources to flow See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowSources).
+Adds Sources to flow See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowSources).
 
-Type annotations for `boto3.client("mediaconnect").add_flow_sources` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").add_flow_sources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
 
-Boto3 documentation:
-[MediaConnect.Client.add_flow_sources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_sources)
+```python title="Method definition"
+def add_flow_sources(
+    self,
+    *,
+    FlowArn: str,
+    Sources: Sequence[SetSourceRequestTypeDef],  # (1)
+) -> AddFlowSourcesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddFlowSourcesRequestRequestTypeDef](./type_defs.md#addflowsourcesrequestrequesttypedef).
+1. See [:material-code-braces: SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef) 
+2. See [:material-code-braces: AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `Sources`:
-  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddFlowSourcesRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "Sources": ...,
+}
 
-Returns
-[AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef).
+parent.add_flow_sources(**kwargs)
+```
 
-<a id="add\_flow\_vpc\_interfaces"></a>
+1. See [:material-code-braces: AddFlowSourcesRequestRequestTypeDef](./type_defs.md#addflowsourcesrequestrequesttypedef) 
 
-### add_flow_vpc_interfaces
+### add\_flow\_vpc\_interfaces
 
-Adds VPC interfaces to flow See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowVpcInterfaces).
+Adds VPC interfaces to flow See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/AddFlowVpcInterfaces).
 
-Type annotations for `boto3.client("mediaconnect").add_flow_vpc_interfaces`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").add_flow_vpc_interfaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
 
-Boto3 documentation:
-[MediaConnect.Client.add_flow_vpc_interfaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.add_flow_vpc_interfaces)
+```python title="Method definition"
+def add_flow_vpc_interfaces(
+    self,
+    *,
+    FlowArn: str,
+    VpcInterfaces: Sequence[VpcInterfaceRequestTypeDef],  # (1)
+) -> AddFlowVpcInterfacesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddFlowVpcInterfacesRequestRequestTypeDef](./type_defs.md#addflowvpcinterfacesrequestrequesttypedef).
+1. See [:material-code-braces: VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef) 
+2. See [:material-code-braces: AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `VpcInterfaces`:
-  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddFlowVpcInterfacesRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "VpcInterfaces": ...,
+}
 
-Returns
-[AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef).
+parent.add_flow_vpc_interfaces(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddFlowVpcInterfacesRequestRequestTypeDef](./type_defs.md#addflowvpcinterfacesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("mediaconnect").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
 
-Boto3 documentation:
-[MediaConnect.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_flow"></a>
-
-### create_flow
+### create\_flow
 
 Creates a new flow.
 
-Type annotations for `boto3.client("mediaconnect").create_flow` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").create_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
 
-Boto3 documentation:
-[MediaConnect.Client.create_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.create_flow)
+```python title="Method definition"
+def create_flow(
+    self,
+    *,
+    Name: str,
+    AvailabilityZone: str = ...,
+    Entitlements: Sequence[GrantEntitlementRequestTypeDef] = ...,  # (1)
+    MediaStreams: Sequence[AddMediaStreamRequestTypeDef] = ...,  # (2)
+    Outputs: Sequence[AddOutputRequestTypeDef] = ...,  # (3)
+    Source: SetSourceRequestTypeDef = ...,  # (4)
+    SourceFailoverConfig: FailoverConfigTypeDef = ...,  # (5)
+    Sources: Sequence[SetSourceRequestTypeDef] = ...,  # (6)
+    VpcInterfaces: Sequence[VpcInterfaceRequestTypeDef] = ...,  # (7)
+    Maintenance: AddMaintenanceTypeDef = ...,  # (8)
+) -> CreateFlowResponseTypeDef:  # (9)
+    ...
+```
 
-Arguments mapping described in
-[CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef).
+1. See [:material-code-braces: GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef) 
+2. See [:material-code-braces: AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef) 
+3. See [:material-code-braces: AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef) 
+4. See [:material-code-braces: SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef) 
+5. See [:material-code-braces: FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef) 
+6. See [:material-code-braces: SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef) 
+7. See [:material-code-braces: VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef) 
+8. See [:material-code-braces: AddMaintenanceTypeDef](./type_defs.md#addmaintenancetypedef) 
+9. See [:material-code-braces: CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AvailabilityZone`: `str`
-- `Entitlements`:
-  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
-- `MediaStreams`:
-  `Sequence`\[[AddMediaStreamRequestTypeDef](./type_defs.md#addmediastreamrequesttypedef)\]
-- `Outputs`:
-  `Sequence`\[[AddOutputRequestTypeDef](./type_defs.md#addoutputrequesttypedef)\]
-- `Source`: [SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)
-- `SourceFailoverConfig`:
-  [FailoverConfigTypeDef](./type_defs.md#failoverconfigtypedef)
-- `Sources`:
-  `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
-- `VpcInterfaces`:
-  `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
-- `Maintenance`: [AddMaintenanceTypeDef](./type_defs.md#addmaintenancetypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateFlowRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
+parent.create_flow(**kwargs)
+```
 
-<a id="delete\_flow"></a>
+1. See [:material-code-braces: CreateFlowRequestRequestTypeDef](./type_defs.md#createflowrequestrequesttypedef) 
 
-### delete_flow
+### delete\_flow
 
 Deletes a flow.
 
-Type annotations for `boto3.client("mediaconnect").delete_flow` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").delete_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
 
-Boto3 documentation:
-[MediaConnect.Client.delete_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.delete_flow)
+```python title="Method definition"
+def delete_flow(
+    self,
+    *,
+    FlowArn: str,
+) -> DeleteFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef).
+1. See [:material-code-braces: DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFlowRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+}
 
-Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
+parent.delete_flow(**kwargs)
+```
 
-<a id="describe\_flow"></a>
+1. See [:material-code-braces: DeleteFlowRequestRequestTypeDef](./type_defs.md#deleteflowrequestrequesttypedef) 
 
-### describe_flow
+### describe\_flow
 
 Displays the details of a flow.
 
-Type annotations for `boto3.client("mediaconnect").describe_flow` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").describe_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
 
-Boto3 documentation:
-[MediaConnect.Client.describe_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_flow)
+```python title="Method definition"
+def describe_flow(
+    self,
+    *,
+    FlowArn: str,
+) -> DescribeFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef).
+1. See [:material-code-braces: DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeFlowRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+}
 
-Returns
-[DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
+parent.describe_flow(**kwargs)
+```
 
-<a id="describe\_offering"></a>
+1. See [:material-code-braces: DescribeFlowRequestRequestTypeDef](./type_defs.md#describeflowrequestrequesttypedef) 
 
-### describe_offering
+### describe\_offering
 
 Displays the details of an offering.
 
-Type annotations for `boto3.client("mediaconnect").describe_offering` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").describe_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
 
-Boto3 documentation:
-[MediaConnect.Client.describe_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_offering)
+```python title="Method definition"
+def describe_offering(
+    self,
+    *,
+    OfferingArn: str,
+) -> DescribeOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OfferingArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOfferingRequestRequestTypeDef = {  # (1)
+    "OfferingArn": ...,
+}
 
-Returns
-[DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
+parent.describe_offering(**kwargs)
+```
 
-<a id="describe\_reservation"></a>
+1. See [:material-code-braces: DescribeOfferingRequestRequestTypeDef](./type_defs.md#describeofferingrequestrequesttypedef) 
 
-### describe_reservation
+### describe\_reservation
 
 Displays the details of a reservation.
 
-Type annotations for `boto3.client("mediaconnect").describe_reservation`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").describe_reservation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
 
-Boto3 documentation:
-[MediaConnect.Client.describe_reservation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.describe_reservation)
+```python title="Method definition"
+def describe_reservation(
+    self,
+    *,
+    ReservationArn: str,
+) -> DescribeReservationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ReservationArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeReservationRequestRequestTypeDef = {  # (1)
+    "ReservationArn": ...,
+}
 
-Returns
-[DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
+parent.describe_reservation(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeReservationRequestRequestTypeDef](./type_defs.md#describereservationrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("mediaconnect").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
 
-Boto3 documentation:
-[MediaConnect.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="grant\_flow\_entitlements"></a>
-
-### grant_flow_entitlements
+### grant\_flow\_entitlements
 
 Grants entitlements to an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").grant_flow_entitlements`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").grant_flow_entitlements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
 
-Boto3 documentation:
-[MediaConnect.Client.grant_flow_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.grant_flow_entitlements)
+```python title="Method definition"
+def grant_flow_entitlements(
+    self,
+    *,
+    Entitlements: Sequence[GrantEntitlementRequestTypeDef],  # (1)
+    FlowArn: str,
+) -> GrantFlowEntitlementsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GrantFlowEntitlementsRequestRequestTypeDef](./type_defs.md#grantflowentitlementsrequestrequesttypedef).
+1. See [:material-code-braces: GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef) 
+2. See [:material-code-braces: GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Entitlements`:
-  `Sequence`\[[GrantEntitlementRequestTypeDef](./type_defs.md#grantentitlementrequesttypedef)\]
-  *(required)*
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GrantFlowEntitlementsRequestRequestTypeDef = {  # (1)
+    "Entitlements": ...,
+    "FlowArn": ...,
+}
 
-Returns
-[GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef).
+parent.grant_flow_entitlements(**kwargs)
+```
 
-<a id="list\_entitlements"></a>
+1. See [:material-code-braces: GrantFlowEntitlementsRequestRequestTypeDef](./type_defs.md#grantflowentitlementsrequestrequesttypedef) 
 
-### list_entitlements
+### list\_entitlements
 
 Displays a list of all entitlements that have been granted to this account.
 
-Type annotations for `boto3.client("mediaconnect").list_entitlements` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").list_entitlements` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
 
-Boto3 documentation:
-[MediaConnect.Client.list_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_entitlements)
+```python title="Method definition"
+def list_entitlements(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListEntitlementsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListEntitlementsRequestRequestTypeDef](./type_defs.md#listentitlementsrequestrequesttypedef).
+1. See [:material-code-braces: ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListEntitlementsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef).
+parent.list_entitlements(**kwargs)
+```
 
-<a id="list\_flows"></a>
+1. See [:material-code-braces: ListEntitlementsRequestRequestTypeDef](./type_defs.md#listentitlementsrequestrequesttypedef) 
 
-### list_flows
+### list\_flows
 
 Displays a list of flows that are associated with this account.
 
-Type annotations for `boto3.client("mediaconnect").list_flows` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").list_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
 
-Boto3 documentation:
-[MediaConnect.Client.list_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_flows)
+```python title="Method definition"
+def list_flows(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFlowsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef).
+1. See [:material-code-braces: ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFlowsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
+parent.list_flows(**kwargs)
+```
 
-<a id="list\_offerings"></a>
+1. See [:material-code-braces: ListFlowsRequestRequestTypeDef](./type_defs.md#listflowsrequestrequesttypedef) 
 
-### list_offerings
+### list\_offerings
 
 Displays a list of all offerings that are available to this account in the
 current AWS Region.
 
-Type annotations for `boto3.client("mediaconnect").list_offerings` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").list_offerings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
 
-Boto3 documentation:
-[MediaConnect.Client.list_offerings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_offerings)
+```python title="Method definition"
+def list_offerings(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListOfferingsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef).
+1. See [:material-code-braces: ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOfferingsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
+parent.list_offerings(**kwargs)
+```
 
-<a id="list\_reservations"></a>
+1. See [:material-code-braces: ListOfferingsRequestRequestTypeDef](./type_defs.md#listofferingsrequestrequesttypedef) 
 
-### list_reservations
+### list\_reservations
 
 Displays a list of all reservations that have been purchased by this account in
 the current AWS Region.
 
-Type annotations for `boto3.client("mediaconnect").list_reservations` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").list_reservations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
 
-Boto3 documentation:
-[MediaConnect.Client.list_reservations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_reservations)
+```python title="Method definition"
+def list_reservations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListReservationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef).
+1. See [:material-code-braces: ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListReservationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
+parent.list_reservations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListReservationsRequestRequestTypeDef](./type_defs.md#listreservationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
-List all tags on an AWS Elemental MediaConnect resource See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/ListTagsForResource).
+List all tags on an AWS Elemental MediaConnect resource See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/ListTagsForResource).
 
-Type annotations for `boto3.client("mediaconnect").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[MediaConnect.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="purchase\_offering"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### purchase_offering
+### purchase\_offering
 
 Submits a request to purchase an offering.
 
-Type annotations for `boto3.client("mediaconnect").purchase_offering` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").purchase_offering` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
 
-Boto3 documentation:
-[MediaConnect.Client.purchase_offering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.purchase_offering)
+```python title="Method definition"
+def purchase_offering(
+    self,
+    *,
+    OfferingArn: str,
+    ReservationName: str,
+    Start: str,
+) -> PurchaseOfferingResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef).
+1. See [:material-code-braces: PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OfferingArn`: `str` *(required)*
-- `ReservationName`: `str` *(required)*
-- `Start`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: PurchaseOfferingRequestRequestTypeDef = {  # (1)
+    "OfferingArn": ...,
+    "ReservationName": ...,
+    "Start": ...,
+}
 
-Returns
-[PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
+parent.purchase_offering(**kwargs)
+```
 
-<a id="remove\_flow\_media\_stream"></a>
+1. See [:material-code-braces: PurchaseOfferingRequestRequestTypeDef](./type_defs.md#purchaseofferingrequestrequesttypedef) 
 
-### remove_flow_media_stream
+### remove\_flow\_media\_stream
 
 Removes a media stream from a flow.
 
-Type annotations for `boto3.client("mediaconnect").remove_flow_media_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").remove_flow_media_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
 
-Boto3 documentation:
-[MediaConnect.Client.remove_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_media_stream)
+```python title="Method definition"
+def remove_flow_media_stream(
+    self,
+    *,
+    FlowArn: str,
+    MediaStreamName: str,
+) -> RemoveFlowMediaStreamResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveFlowMediaStreamRequestRequestTypeDef](./type_defs.md#removeflowmediastreamrequestrequesttypedef).
+1. See [:material-code-braces: RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `MediaStreamName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveFlowMediaStreamRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "MediaStreamName": ...,
+}
 
-Returns
-[RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef).
+parent.remove_flow_media_stream(**kwargs)
+```
 
-<a id="remove\_flow\_output"></a>
+1. See [:material-code-braces: RemoveFlowMediaStreamRequestRequestTypeDef](./type_defs.md#removeflowmediastreamrequestrequesttypedef) 
 
-### remove_flow_output
+### remove\_flow\_output
 
 Removes an output from an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").remove_flow_output` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").remove_flow_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
 
-Boto3 documentation:
-[MediaConnect.Client.remove_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_output)
+```python title="Method definition"
+def remove_flow_output(
+    self,
+    *,
+    FlowArn: str,
+    OutputArn: str,
+) -> RemoveFlowOutputResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveFlowOutputRequestRequestTypeDef](./type_defs.md#removeflowoutputrequestrequesttypedef).
+1. See [:material-code-braces: RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `OutputArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveFlowOutputRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "OutputArn": ...,
+}
 
-Returns
-[RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef).
+parent.remove_flow_output(**kwargs)
+```
 
-<a id="remove\_flow\_source"></a>
+1. See [:material-code-braces: RemoveFlowOutputRequestRequestTypeDef](./type_defs.md#removeflowoutputrequestrequesttypedef) 
 
-### remove_flow_source
+### remove\_flow\_source
 
 Removes a source from an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").remove_flow_source` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").remove_flow_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
 
-Boto3 documentation:
-[MediaConnect.Client.remove_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_source)
+```python title="Method definition"
+def remove_flow_source(
+    self,
+    *,
+    FlowArn: str,
+    SourceArn: str,
+) -> RemoveFlowSourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveFlowSourceRequestRequestTypeDef](./type_defs.md#removeflowsourcerequestrequesttypedef).
+1. See [:material-code-braces: RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `SourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveFlowSourceRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "SourceArn": ...,
+}
 
-Returns
-[RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef).
+parent.remove_flow_source(**kwargs)
+```
 
-<a id="remove\_flow\_vpc\_interface"></a>
+1. See [:material-code-braces: RemoveFlowSourceRequestRequestTypeDef](./type_defs.md#removeflowsourcerequestrequesttypedef) 
 
-### remove_flow_vpc_interface
+### remove\_flow\_vpc\_interface
 
 Removes a VPC Interface from an existing flow.
 
-Type annotations for `boto3.client("mediaconnect").remove_flow_vpc_interface`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").remove_flow_vpc_interface` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
 
-Boto3 documentation:
-[MediaConnect.Client.remove_flow_vpc_interface](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.remove_flow_vpc_interface)
+```python title="Method definition"
+def remove_flow_vpc_interface(
+    self,
+    *,
+    FlowArn: str,
+    VpcInterfaceName: str,
+) -> RemoveFlowVpcInterfaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveFlowVpcInterfaceRequestRequestTypeDef](./type_defs.md#removeflowvpcinterfacerequestrequesttypedef).
+1. See [:material-code-braces: RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `VpcInterfaceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveFlowVpcInterfaceRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "VpcInterfaceName": ...,
+}
 
-Returns
-[RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef).
+parent.remove_flow_vpc_interface(**kwargs)
+```
 
-<a id="revoke\_flow\_entitlement"></a>
+1. See [:material-code-braces: RemoveFlowVpcInterfaceRequestRequestTypeDef](./type_defs.md#removeflowvpcinterfacerequestrequesttypedef) 
 
-### revoke_flow_entitlement
+### revoke\_flow\_entitlement
 
 Revokes an entitlement from a flow.
 
-Type annotations for `boto3.client("mediaconnect").revoke_flow_entitlement`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").revoke_flow_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
 
-Boto3 documentation:
-[MediaConnect.Client.revoke_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.revoke_flow_entitlement)
+```python title="Method definition"
+def revoke_flow_entitlement(
+    self,
+    *,
+    EntitlementArn: str,
+    FlowArn: str,
+) -> RevokeFlowEntitlementResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RevokeFlowEntitlementRequestRequestTypeDef](./type_defs.md#revokeflowentitlementrequestrequesttypedef).
+1. See [:material-code-braces: RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EntitlementArn`: `str` *(required)*
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RevokeFlowEntitlementRequestRequestTypeDef = {  # (1)
+    "EntitlementArn": ...,
+    "FlowArn": ...,
+}
 
-Returns
-[RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef).
+parent.revoke_flow_entitlement(**kwargs)
+```
 
-<a id="start\_flow"></a>
+1. See [:material-code-braces: RevokeFlowEntitlementRequestRequestTypeDef](./type_defs.md#revokeflowentitlementrequestrequesttypedef) 
 
-### start_flow
+### start\_flow
 
 Starts a flow.
 
-Type annotations for `boto3.client("mediaconnect").start_flow` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").start_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
 
-Boto3 documentation:
-[MediaConnect.Client.start_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.start_flow)
+```python title="Method definition"
+def start_flow(
+    self,
+    *,
+    FlowArn: str,
+) -> StartFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef).
+1. See [:material-code-braces: StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartFlowRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+}
 
-Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+parent.start_flow(**kwargs)
+```
 
-<a id="stop\_flow"></a>
+1. See [:material-code-braces: StartFlowRequestRequestTypeDef](./type_defs.md#startflowrequestrequesttypedef) 
 
-### stop_flow
+### stop\_flow
 
 Stops a flow.
 
-Type annotations for `boto3.client("mediaconnect").stop_flow` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").stop_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
 
-Boto3 documentation:
-[MediaConnect.Client.stop_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.stop_flow)
+```python title="Method definition"
+def stop_flow(
+    self,
+    *,
+    FlowArn: str,
+) -> StopFlowResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef).
+1. See [:material-code-braces: StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopFlowRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+}
 
-Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
+parent.stop_flow(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopFlowRequestRequestTypeDef](./type_defs.md#stopflowrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associates the specified tags to a resource with the specified resourceArn.
 
-Type annotations for `boto3.client("mediaconnect").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
 
-Boto3 documentation:
-[MediaConnect.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Deletes specified tags from a resource.
 
-Type annotations for `boto3.client("mediaconnect").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
 
-Boto3 documentation:
-[MediaConnect.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_flow"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_flow
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-Updates flow See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/UpdateFlow).
+### update\_flow
 
-Type annotations for `boto3.client("mediaconnect").update_flow` method.
+Updates flow See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/mediaconnect-2018-11-14/UpdateFlow).
 
-Boto3 documentation:
-[MediaConnect.Client.update_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
+Type annotations and code completion for `#!python boto3.client("mediaconnect").update_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow)
 
-Arguments mapping described in
-[UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef).
+```python title="Method definition"
+def update_flow(
+    self,
+    *,
+    FlowArn: str,
+    SourceFailoverConfig: UpdateFailoverConfigTypeDef = ...,  # (1)
+    Maintenance: UpdateMaintenanceTypeDef = ...,  # (2)
+) -> UpdateFlowResponseTypeDef:  # (3)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef) 
+2. See [:material-code-braces: UpdateMaintenanceTypeDef](./type_defs.md#updatemaintenancetypedef) 
+3. See [:material-code-braces: UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef) 
 
-- `FlowArn`: `str` *(required)*
-- `SourceFailoverConfig`:
-  [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
-- `Maintenance`:
-  [UpdateMaintenanceTypeDef](./type_defs.md#updatemaintenancetypedef)
 
-Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+}
 
-<a id="update\_flow\_entitlement"></a>
+parent.update_flow(**kwargs)
+```
 
-### update_flow_entitlement
+1. See [:material-code-braces: UpdateFlowRequestRequestTypeDef](./type_defs.md#updateflowrequestrequesttypedef) 
+
+### update\_flow\_entitlement
 
 You can change an entitlement's description, subscribers, and encryption.
 
-Type annotations for `boto3.client("mediaconnect").update_flow_entitlement`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").update_flow_entitlement` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
 
-Boto3 documentation:
-[MediaConnect.Client.update_flow_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_entitlement)
+```python title="Method definition"
+def update_flow_entitlement(
+    self,
+    *,
+    EntitlementArn: str,
+    FlowArn: str,
+    Description: str = ...,
+    Encryption: UpdateEncryptionTypeDef = ...,  # (1)
+    EntitlementStatus: EntitlementStatusType = ...,  # (2)
+    Subscribers: Sequence[str] = ...,
+) -> UpdateFlowEntitlementResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowEntitlementRequestRequestTypeDef](./type_defs.md#updateflowentitlementrequestrequesttypedef).
+1. See [:material-code-braces: UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef) 
+2. See [:material-code-brackets: EntitlementStatusType](./literals.md#entitlementstatustype) 
+3. See [:material-code-braces: UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef) 
 
-Keyword-only arguments:
 
-- `EntitlementArn`: `str` *(required)*
-- `FlowArn`: `str` *(required)*
-- `Description`: `str`
-- `Encryption`:
-  [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
-- `EntitlementStatus`:
-  [EntitlementStatusType](./literals.md#entitlementstatustype)
-- `Subscribers`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowEntitlementRequestRequestTypeDef = {  # (1)
+    "EntitlementArn": ...,
+    "FlowArn": ...,
+}
 
-Returns
-[UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
+parent.update_flow_entitlement(**kwargs)
+```
 
-<a id="update\_flow\_media\_stream"></a>
+1. See [:material-code-braces: UpdateFlowEntitlementRequestRequestTypeDef](./type_defs.md#updateflowentitlementrequestrequesttypedef) 
 
-### update_flow_media_stream
+### update\_flow\_media\_stream
 
 Updates an existing media stream.
 
-Type annotations for `boto3.client("mediaconnect").update_flow_media_stream`
-method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").update_flow_media_stream` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
 
-Boto3 documentation:
-[MediaConnect.Client.update_flow_media_stream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_media_stream)
+```python title="Method definition"
+def update_flow_media_stream(
+    self,
+    *,
+    FlowArn: str,
+    MediaStreamName: str,
+    Attributes: MediaStreamAttributesRequestTypeDef = ...,  # (1)
+    ClockRate: int = ...,
+    Description: str = ...,
+    MediaStreamType: MediaStreamTypeType = ...,  # (2)
+    VideoFormat: str = ...,
+) -> UpdateFlowMediaStreamResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowMediaStreamRequestRequestTypeDef](./type_defs.md#updateflowmediastreamrequestrequesttypedef).
+1. See [:material-code-braces: MediaStreamAttributesRequestTypeDef](./type_defs.md#mediastreamattributesrequesttypedef) 
+2. See [:material-code-brackets: MediaStreamTypeType](./literals.md#mediastreamtypetype) 
+3. See [:material-code-braces: UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `MediaStreamName`: `str` *(required)*
-- `Attributes`:
-  [MediaStreamAttributesRequestTypeDef](./type_defs.md#mediastreamattributesrequesttypedef)
-- `ClockRate`: `int`
-- `Description`: `str`
-- `MediaStreamType`: [MediaStreamTypeType](./literals.md#mediastreamtypetype)
-- `VideoFormat`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowMediaStreamRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "MediaStreamName": ...,
+}
 
-Returns
-[UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef).
+parent.update_flow_media_stream(**kwargs)
+```
 
-<a id="update\_flow\_output"></a>
+1. See [:material-code-braces: UpdateFlowMediaStreamRequestRequestTypeDef](./type_defs.md#updateflowmediastreamrequestrequesttypedef) 
 
-### update_flow_output
+### update\_flow\_output
 
 Updates an existing flow output.
 
-Type annotations for `boto3.client("mediaconnect").update_flow_output` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").update_flow_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
 
-Boto3 documentation:
-[MediaConnect.Client.update_flow_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_output)
+```python title="Method definition"
+def update_flow_output(
+    self,
+    *,
+    FlowArn: str,
+    OutputArn: str,
+    CidrAllowList: Sequence[str] = ...,
+    Description: str = ...,
+    Destination: str = ...,
+    Encryption: UpdateEncryptionTypeDef = ...,  # (1)
+    MaxLatency: int = ...,
+    MediaStreamOutputConfigurations: Sequence[MediaStreamOutputConfigurationRequestTypeDef] = ...,  # (2)
+    MinLatency: int = ...,
+    Port: int = ...,
+    Protocol: ProtocolType = ...,  # (3)
+    RemoteId: str = ...,
+    SenderControlPort: int = ...,
+    SenderIpAddress: str = ...,
+    SmoothingLatency: int = ...,
+    StreamId: str = ...,
+    VpcInterfaceAttachment: VpcInterfaceAttachmentTypeDef = ...,  # (4)
+) -> UpdateFlowOutputResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowOutputRequestRequestTypeDef](./type_defs.md#updateflowoutputrequestrequesttypedef).
+1. See [:material-code-braces: UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef) 
+2. See [:material-code-braces: MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef) 
+3. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+4. See [:material-code-braces: VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef) 
+5. See [:material-code-braces: UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `OutputArn`: `str` *(required)*
-- `CidrAllowList`: `Sequence`\[`str`\]
-- `Description`: `str`
-- `Destination`: `str`
-- `Encryption`:
-  [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
-- `MaxLatency`: `int`
-- `MediaStreamOutputConfigurations`:
-  `Sequence`\[[MediaStreamOutputConfigurationRequestTypeDef](./type_defs.md#mediastreamoutputconfigurationrequesttypedef)\]
-- `MinLatency`: `int`
-- `Port`: `int`
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `RemoteId`: `str`
-- `SenderControlPort`: `int`
-- `SenderIpAddress`: `str`
-- `SmoothingLatency`: `int`
-- `StreamId`: `str`
-- `VpcInterfaceAttachment`:
-  [VpcInterfaceAttachmentTypeDef](./type_defs.md#vpcinterfaceattachmenttypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowOutputRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "OutputArn": ...,
+}
 
-Returns
-[UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef).
+parent.update_flow_output(**kwargs)
+```
 
-<a id="update\_flow\_source"></a>
+1. See [:material-code-braces: UpdateFlowOutputRequestRequestTypeDef](./type_defs.md#updateflowoutputrequestrequesttypedef) 
 
-### update_flow_source
+### update\_flow\_source
 
 Updates the source of a flow.
 
-Type annotations for `boto3.client("mediaconnect").update_flow_source` method.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").update_flow_source` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
 
-Boto3 documentation:
-[MediaConnect.Client.update_flow_source](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.update_flow_source)
+```python title="Method definition"
+def update_flow_source(
+    self,
+    *,
+    FlowArn: str,
+    SourceArn: str,
+    Decryption: UpdateEncryptionTypeDef = ...,  # (1)
+    Description: str = ...,
+    EntitlementArn: str = ...,
+    IngestPort: int = ...,
+    MaxBitrate: int = ...,
+    MaxLatency: int = ...,
+    MaxSyncBuffer: int = ...,
+    MediaStreamSourceConfigurations: Sequence[MediaStreamSourceConfigurationRequestTypeDef] = ...,  # (2)
+    MinLatency: int = ...,
+    Protocol: ProtocolType = ...,  # (3)
+    SenderControlPort: int = ...,
+    SenderIpAddress: str = ...,
+    StreamId: str = ...,
+    VpcInterfaceName: str = ...,
+    WhitelistCidr: str = ...,
+) -> UpdateFlowSourceResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFlowSourceRequestRequestTypeDef](./type_defs.md#updateflowsourcerequestrequesttypedef).
+1. See [:material-code-braces: UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef) 
+2. See [:material-code-braces: MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef) 
+3. See [:material-code-brackets: ProtocolType](./literals.md#protocoltype) 
+4. See [:material-code-braces: UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FlowArn`: `str` *(required)*
-- `SourceArn`: `str` *(required)*
-- `Decryption`:
-  [UpdateEncryptionTypeDef](./type_defs.md#updateencryptiontypedef)
-- `Description`: `str`
-- `EntitlementArn`: `str`
-- `IngestPort`: `int`
-- `MaxBitrate`: `int`
-- `MaxLatency`: `int`
-- `MaxSyncBuffer`: `int`
-- `MediaStreamSourceConfigurations`:
-  `Sequence`\[[MediaStreamSourceConfigurationRequestTypeDef](./type_defs.md#mediastreamsourceconfigurationrequesttypedef)\]
-- `MinLatency`: `int`
-- `Protocol`: [ProtocolType](./literals.md#protocoltype)
-- `SenderControlPort`: `int`
-- `SenderIpAddress`: `str`
-- `StreamId`: `str`
-- `VpcInterfaceName`: `str`
-- `WhitelistCidr`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFlowSourceRequestRequestTypeDef = {  # (1)
+    "FlowArn": ...,
+    "SourceArn": ...,
+}
 
-Returns
-[UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef).
+parent.update_flow_source(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateFlowSourceRequestRequestTypeDef](./type_defs.md#updateflowsourcerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("mediaconnect").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").get_paginator` method with overloads.
 
-- `client.get_paginator("list_entitlements")` ->
-  [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
-- `client.get_paginator("list_flows")` ->
-  [ListFlowsPaginator](./paginators.md#listflowspaginator)
-- `client.get_paginator("list_offerings")` ->
-  [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
-- `client.get_paginator("list_reservations")` ->
-  [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+- `client.get_paginator("list_entitlements")` -> [ListEntitlementsPaginator](./paginators.md#listentitlementspaginator)
+- `client.get_paginator("list_flows")` -> [ListFlowsPaginator](./paginators.md#listflowspaginator)
+- `client.get_paginator("list_offerings")` -> [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
+- `client.get_paginator("list_reservations")` -> [ListReservationsPaginator](./paginators.md#listreservationspaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("mediaconnect").get_waiter` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("mediaconnect").get_waiter` method with overloads.
 
-- `client.get_waiter("flow_active")` ->
-  [FlowActiveWaiter](./waiters.md#flowactivewaiter)
-- `client.get_waiter("flow_deleted")` ->
-  [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
-- `client.get_waiter("flow_standby")` ->
-  [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)
+- `client.get_waiter("flow_active")` -> [FlowActiveWaiter](./waiters.md#flowactivewaiter)
+- `client.get_waiter("flow_deleted")` -> [FlowDeletedWaiter](./waiters.md#flowdeletedwaiter)
+- `client.get_waiter("flow_standby")` -> [FlowStandbyWaiter](./waiters.md#flowstandbywaiter)
+

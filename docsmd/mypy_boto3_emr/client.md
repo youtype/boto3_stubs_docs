@@ -1,85 +1,18 @@
-<a id="emrclient-for-boto3-emr-module"></a>
-
-# EMRClient for boto3 EMR module
+# EMRClient
 
 > [Index](../README.md) > [EMR](./README.md) > EMRClient
 
-Auto-generated documentation for
-[EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
-type annotations stubs module
-[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
+!!! note ""
 
-- [EMRClient for boto3 EMR module](#emrclient-for-boto3-emr-module)
-  - [EMRClient](#emrclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [add_instance_fleet](#add_instance_fleet)
-    - [add_instance_groups](#add_instance_groups)
-    - [add_job_flow_steps](#add_job_flow_steps)
-    - [add_tags](#add_tags)
-    - [can_paginate](#can_paginate)
-    - [cancel_steps](#cancel_steps)
-    - [create_security_configuration](#create_security_configuration)
-    - [create_studio](#create_studio)
-    - [create_studio_session_mapping](#create_studio_session_mapping)
-    - [delete_security_configuration](#delete_security_configuration)
-    - [delete_studio](#delete_studio)
-    - [delete_studio_session_mapping](#delete_studio_session_mapping)
-    - [describe_cluster](#describe_cluster)
-    - [describe_job_flows](#describe_job_flows)
-    - [describe_notebook_execution](#describe_notebook_execution)
-    - [describe_release_label](#describe_release_label)
-    - [describe_security_configuration](#describe_security_configuration)
-    - [describe_step](#describe_step)
-    - [describe_studio](#describe_studio)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_auto_termination_policy](#get_auto_termination_policy)
-    - [get_block_public_access_configuration](#get_block_public_access_configuration)
-    - [get_managed_scaling_policy](#get_managed_scaling_policy)
-    - [get_studio_session_mapping](#get_studio_session_mapping)
-    - [list_bootstrap_actions](#list_bootstrap_actions)
-    - [list_clusters](#list_clusters)
-    - [list_instance_fleets](#list_instance_fleets)
-    - [list_instance_groups](#list_instance_groups)
-    - [list_instances](#list_instances)
-    - [list_notebook_executions](#list_notebook_executions)
-    - [list_release_labels](#list_release_labels)
-    - [list_security_configurations](#list_security_configurations)
-    - [list_steps](#list_steps)
-    - [list_studio_session_mappings](#list_studio_session_mappings)
-    - [list_studios](#list_studios)
-    - [modify_cluster](#modify_cluster)
-    - [modify_instance_fleet](#modify_instance_fleet)
-    - [modify_instance_groups](#modify_instance_groups)
-    - [put_auto_scaling_policy](#put_auto_scaling_policy)
-    - [put_auto_termination_policy](#put_auto_termination_policy)
-    - [put_block_public_access_configuration](#put_block_public_access_configuration)
-    - [put_managed_scaling_policy](#put_managed_scaling_policy)
-    - [remove_auto_scaling_policy](#remove_auto_scaling_policy)
-    - [remove_auto_termination_policy](#remove_auto_termination_policy)
-    - [remove_managed_scaling_policy](#remove_managed_scaling_policy)
-    - [remove_tags](#remove_tags)
-    - [run_job_flow](#run_job_flow)
-    - [set_termination_protection](#set_termination_protection)
-    - [set_visible_to_all_users](#set_visible_to_all_users)
-    - [start_notebook_execution](#start_notebook_execution)
-    - [stop_notebook_execution](#stop_notebook_execution)
-    - [terminate_job_flows](#terminate_job_flows)
-    - [update_studio](#update_studio)
-    - [update_studio_session_mapping](#update_studio_session_mapping)
-    - [get_paginator](#get_paginator)
-    - [get_waiter](#get_waiter)
-
-<a id="emrclient"></a>
+    Auto-generated documentation for [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
+    type annotations stubs module [mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ## EMRClient
 
-Type annotations for `boto3.client("emr")`
+Type annotations and code completion for `#!python boto3.client("emr")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_emr.client import EMRClient
 
@@ -87,1345 +20,1781 @@ def get_emr_client() -> EMRClient:
     return Session().client("emr")
 ```
 
-Boto3 documentation:
-[EMR.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("emr").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("emr")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.InternalServerError,
+    client.InternalServerException,
+    client.InvalidRequestException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_emr.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerError`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidRequestException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-EMRClient exceptions.
-
-Type annotations for `boto3.client("emr").exceptions` method.
-
-Boto3 documentation:
-[EMR.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="add\_instance\_fleet"></a>
-
-### add_instance_fleet
+### add\_instance\_fleet
 
 Adds an instance fleet to a running cluster.
 
-Type annotations for `boto3.client("emr").add_instance_fleet` method.
+Type annotations and code completion for `#!python boto3.client("emr").add_instance_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
 
-Boto3 documentation:
-[EMR.Client.add_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_fleet)
+```python title="Method definition"
+def add_instance_fleet(
+    self,
+    *,
+    ClusterId: str,
+    InstanceFleet: InstanceFleetConfigTypeDef,  # (1)
+) -> AddInstanceFleetOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddInstanceFleetInputRequestTypeDef](./type_defs.md#addinstancefleetinputrequesttypedef).
+1. See [:material-code-braces: InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef) 
+2. See [:material-code-braces: AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `InstanceFleet`:
-  [InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddInstanceFleetInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "InstanceFleet": ...,
+}
 
-Returns
-[AddInstanceFleetOutputTypeDef](./type_defs.md#addinstancefleetoutputtypedef).
+parent.add_instance_fleet(**kwargs)
+```
 
-<a id="add\_instance\_groups"></a>
+1. See [:material-code-braces: AddInstanceFleetInputRequestTypeDef](./type_defs.md#addinstancefleetinputrequesttypedef) 
 
-### add_instance_groups
+### add\_instance\_groups
 
 Adds one or more instance groups to a running cluster.
 
-Type annotations for `boto3.client("emr").add_instance_groups` method.
+Type annotations and code completion for `#!python boto3.client("emr").add_instance_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
 
-Boto3 documentation:
-[EMR.Client.add_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_instance_groups)
+```python title="Method definition"
+def add_instance_groups(
+    self,
+    *,
+    InstanceGroups: Sequence[InstanceGroupConfigTypeDef],  # (1)
+    JobFlowId: str,
+) -> AddInstanceGroupsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddInstanceGroupsInputRequestTypeDef](./type_defs.md#addinstancegroupsinputrequesttypedef).
+1. See [:material-code-braces: InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef) 
+2. See [:material-code-braces: AddInstanceGroupsOutputTypeDef](./type_defs.md#addinstancegroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `InstanceGroups`:
-  `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
-  *(required)*
-- `JobFlowId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddInstanceGroupsInputRequestTypeDef = {  # (1)
+    "InstanceGroups": ...,
+    "JobFlowId": ...,
+}
 
-Returns
-[AddInstanceGroupsOutputTypeDef](./type_defs.md#addinstancegroupsoutputtypedef).
+parent.add_instance_groups(**kwargs)
+```
 
-<a id="add\_job\_flow\_steps"></a>
+1. See [:material-code-braces: AddInstanceGroupsInputRequestTypeDef](./type_defs.md#addinstancegroupsinputrequesttypedef) 
 
-### add_job_flow_steps
+### add\_job\_flow\_steps
 
 AddJobFlowSteps adds new steps to a running cluster.
 
-Type annotations for `boto3.client("emr").add_job_flow_steps` method.
+Type annotations and code completion for `#!python boto3.client("emr").add_job_flow_steps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
 
-Boto3 documentation:
-[EMR.Client.add_job_flow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_job_flow_steps)
+```python title="Method definition"
+def add_job_flow_steps(
+    self,
+    *,
+    JobFlowId: str,
+    Steps: Sequence[StepConfigTypeDef],  # (1)
+) -> AddJobFlowStepsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[AddJobFlowStepsInputRequestTypeDef](./type_defs.md#addjobflowstepsinputrequesttypedef).
+1. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
+2. See [:material-code-braces: AddJobFlowStepsOutputTypeDef](./type_defs.md#addjobflowstepsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `JobFlowId`: `str` *(required)*
-- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddJobFlowStepsInputRequestTypeDef = {  # (1)
+    "JobFlowId": ...,
+    "Steps": ...,
+}
 
-Returns
-[AddJobFlowStepsOutputTypeDef](./type_defs.md#addjobflowstepsoutputtypedef).
+parent.add_job_flow_steps(**kwargs)
+```
 
-<a id="add\_tags"></a>
+1. See [:material-code-braces: AddJobFlowStepsInputRequestTypeDef](./type_defs.md#addjobflowstepsinputrequesttypedef) 
 
-### add_tags
+### add\_tags
 
 Adds tags to an Amazon EMR resource, such as a cluster or an Amazon EMR Studio.
 
-Type annotations for `boto3.client("emr").add_tags` method.
+Type annotations and code completion for `#!python boto3.client("emr").add_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
 
-Boto3 documentation:
-[EMR.Client.add_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.add_tags)
+```python title="Method definition"
+def add_tags(
+    self,
+    *,
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AddTagsInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.add_tags(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AddTagsInputRequestTypeDef](./type_defs.md#addtagsinputrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("emr").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("emr").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate)
 
-Boto3 documentation:
-[EMR.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="cancel\_steps"></a>
-
-### cancel_steps
+### cancel\_steps
 
 Cancels a pending step or steps in a running cluster.
 
-Type annotations for `boto3.client("emr").cancel_steps` method.
+Type annotations and code completion for `#!python boto3.client("emr").cancel_steps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
 
-Boto3 documentation:
-[EMR.Client.cancel_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.cancel_steps)
+```python title="Method definition"
+def cancel_steps(
+    self,
+    *,
+    ClusterId: str,
+    StepIds: Sequence[str],
+    StepCancellationOption: StepCancellationOptionType = ...,  # (1)
+) -> CancelStepsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CancelStepsInputRequestTypeDef](./type_defs.md#cancelstepsinputrequesttypedef).
+1. See [:material-code-brackets: StepCancellationOptionType](./literals.md#stepcancellationoptiontype) 
+2. See [:material-code-braces: CancelStepsOutputTypeDef](./type_defs.md#cancelstepsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `StepIds`: `Sequence`\[`str`\] *(required)*
-- `StepCancellationOption`:
-  [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
+```python title="Usage example with kwargs"
+kwargs: CancelStepsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "StepIds": ...,
+}
 
-Returns [CancelStepsOutputTypeDef](./type_defs.md#cancelstepsoutputtypedef).
+parent.cancel_steps(**kwargs)
+```
 
-<a id="create\_security\_configuration"></a>
+1. See [:material-code-braces: CancelStepsInputRequestTypeDef](./type_defs.md#cancelstepsinputrequesttypedef) 
 
-### create_security_configuration
+### create\_security\_configuration
 
 Creates a security configuration, which is stored in the service and can be
 specified when a cluster is created.
 
-Type annotations for `boto3.client("emr").create_security_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").create_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
 
-Boto3 documentation:
-[EMR.Client.create_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_security_configuration)
+```python title="Method definition"
+def create_security_configuration(
+    self,
+    *,
+    Name: str,
+    SecurityConfiguration: str,
+) -> CreateSecurityConfigurationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateSecurityConfigurationInputRequestTypeDef](./type_defs.md#createsecurityconfigurationinputrequesttypedef).
+1. See [:material-code-braces: CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SecurityConfiguration`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateSecurityConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SecurityConfiguration": ...,
+}
 
-Returns
-[CreateSecurityConfigurationOutputTypeDef](./type_defs.md#createsecurityconfigurationoutputtypedef).
+parent.create_security_configuration(**kwargs)
+```
 
-<a id="create\_studio"></a>
+1. See [:material-code-braces: CreateSecurityConfigurationInputRequestTypeDef](./type_defs.md#createsecurityconfigurationinputrequesttypedef) 
 
-### create_studio
+### create\_studio
 
 Creates a new Amazon EMR Studio.
 
-Type annotations for `boto3.client("emr").create_studio` method.
+Type annotations and code completion for `#!python boto3.client("emr").create_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
 
-Boto3 documentation:
-[EMR.Client.create_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio)
+```python title="Method definition"
+def create_studio(
+    self,
+    *,
+    Name: str,
+    AuthMode: AuthModeType,  # (1)
+    VpcId: str,
+    SubnetIds: Sequence[str],
+    ServiceRole: str,
+    WorkspaceSecurityGroupId: str,
+    EngineSecurityGroupId: str,
+    DefaultS3Location: str,
+    Description: str = ...,
+    UserRole: str = ...,
+    IdpAuthUrl: str = ...,
+    IdpRelayStateParameterName: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateStudioOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateStudioInputRequestTypeDef](./type_defs.md#createstudioinputrequesttypedef).
+1. See [:material-code-brackets: AuthModeType](./literals.md#authmodetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AuthMode`: [AuthModeType](./literals.md#authmodetype) *(required)*
-- `VpcId`: `str` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\] *(required)*
-- `ServiceRole`: `str` *(required)*
-- `WorkspaceSecurityGroupId`: `str` *(required)*
-- `EngineSecurityGroupId`: `str` *(required)*
-- `DefaultS3Location`: `str` *(required)*
-- `Description`: `str`
-- `UserRole`: `str`
-- `IdpAuthUrl`: `str`
-- `IdpRelayStateParameterName`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateStudioInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "AuthMode": ...,
+    "VpcId": ...,
+    "SubnetIds": ...,
+    "ServiceRole": ...,
+    "WorkspaceSecurityGroupId": ...,
+    "EngineSecurityGroupId": ...,
+    "DefaultS3Location": ...,
+}
 
-Returns [CreateStudioOutputTypeDef](./type_defs.md#createstudiooutputtypedef).
+parent.create_studio(**kwargs)
+```
 
-<a id="create\_studio\_session\_mapping"></a>
+1. See [:material-code-braces: CreateStudioInputRequestTypeDef](./type_defs.md#createstudioinputrequesttypedef) 
 
-### create_studio_session_mapping
+### create\_studio\_session\_mapping
 
 Maps a user or group to the Amazon EMR Studio specified by `StudioId` , and
 applies a session policy to refine Studio permissions for that user or group.
 
-Type annotations for `boto3.client("emr").create_studio_session_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").create_studio_session_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
 
-Boto3 documentation:
-[EMR.Client.create_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.create_studio_session_mapping)
+```python title="Method definition"
+def create_studio_session_mapping(
+    self,
+    *,
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    SessionPolicyArn: str,
+    IdentityId: str = ...,
+    IdentityName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[CreateStudioSessionMappingInputRequestTypeDef](./type_defs.md#createstudiosessionmappinginputrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-  *(required)*
-- `SessionPolicyArn`: `str` *(required)*
-- `IdentityId`: `str`
-- `IdentityName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateStudioSessionMappingInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+    "IdentityType": ...,
+    "SessionPolicyArn": ...,
+}
 
-<a id="delete\_security\_configuration"></a>
+parent.create_studio_session_mapping(**kwargs)
+```
 
-### delete_security_configuration
+1. See [:material-code-braces: CreateStudioSessionMappingInputRequestTypeDef](./type_defs.md#createstudiosessionmappinginputrequesttypedef) 
+
+### delete\_security\_configuration
 
 Deletes a security configuration.
 
-Type annotations for `boto3.client("emr").delete_security_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").delete_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
 
-Boto3 documentation:
-[EMR.Client.delete_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_security_configuration)
+```python title="Method definition"
+def delete_security_configuration(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSecurityConfigurationInputRequestTypeDef](./type_defs.md#deletesecurityconfigurationinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSecurityConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_security_configuration(**kwargs)
+```
 
-<a id="delete\_studio"></a>
+1. See [:material-code-braces: DeleteSecurityConfigurationInputRequestTypeDef](./type_defs.md#deletesecurityconfigurationinputrequesttypedef) 
 
-### delete_studio
+### delete\_studio
 
 Removes an Amazon EMR Studio from the Studio metadata store.
 
-Type annotations for `boto3.client("emr").delete_studio` method.
+Type annotations and code completion for `#!python boto3.client("emr").delete_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
 
-Boto3 documentation:
-[EMR.Client.delete_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio)
+```python title="Method definition"
+def delete_studio(
+    self,
+    *,
+    StudioId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStudioInputRequestTypeDef](./type_defs.md#deletestudioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteStudioInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+}
 
-<a id="delete\_studio\_session\_mapping"></a>
+parent.delete_studio(**kwargs)
+```
 
-### delete_studio_session_mapping
+1. See [:material-code-braces: DeleteStudioInputRequestTypeDef](./type_defs.md#deletestudioinputrequesttypedef) 
+
+### delete\_studio\_session\_mapping
 
 Removes a user or group from an Amazon EMR Studio.
 
-Type annotations for `boto3.client("emr").delete_studio_session_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").delete_studio_session_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
 
-Boto3 documentation:
-[EMR.Client.delete_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.delete_studio_session_mapping)
+```python title="Method definition"
+def delete_studio_session_mapping(
+    self,
+    *,
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    IdentityId: str = ...,
+    IdentityName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteStudioSessionMappingInputRequestTypeDef](./type_defs.md#deletestudiosessionmappinginputrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-  *(required)*
-- `IdentityId`: `str`
-- `IdentityName`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteStudioSessionMappingInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+    "IdentityType": ...,
+}
 
-<a id="describe\_cluster"></a>
+parent.delete_studio_session_mapping(**kwargs)
+```
 
-### describe_cluster
+1. See [:material-code-braces: DeleteStudioSessionMappingInputRequestTypeDef](./type_defs.md#deletestudiosessionmappinginputrequesttypedef) 
+
+### describe\_cluster
 
 Provides cluster-level details including status, hardware and software
 configuration, VPC settings, and so on.
 
-Type annotations for `boto3.client("emr").describe_cluster` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
 
-Boto3 documentation:
-[EMR.Client.describe_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_cluster)
+```python title="Method definition"
+def describe_cluster(
+    self,
+    *,
+    ClusterId: str,
+) -> DescribeClusterOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeClusterInputRequestTypeDef](./type_defs.md#describeclusterinputrequesttypedef).
+1. See [:material-code-braces: DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[DescribeClusterOutputTypeDef](./type_defs.md#describeclusteroutputtypedef).
+parent.describe_cluster(**kwargs)
+```
 
-<a id="describe\_job\_flows"></a>
+1. See [:material-code-braces: DescribeClusterInputRequestTypeDef](./type_defs.md#describeclusterinputrequesttypedef) 
 
-### describe_job_flows
+### describe\_job\_flows
 
 This API is no longer supported and will eventually be removed.
 
-Type annotations for `boto3.client("emr").describe_job_flows` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_job_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
 
-Boto3 documentation:
-[EMR.Client.describe_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_job_flows)
+```python title="Method definition"
+def describe_job_flows(
+    self,
+    *,
+    CreatedAfter: Union[datetime, str] = ...,
+    CreatedBefore: Union[datetime, str] = ...,
+    JobFlowIds: Sequence[str] = ...,
+    JobFlowStates: Sequence[JobFlowExecutionStateType] = ...,  # (1)
+) -> DescribeJobFlowsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeJobFlowsInputRequestTypeDef](./type_defs.md#describejobflowsinputrequesttypedef).
+1. See [:material-code-brackets: JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype) 
+2. See [:material-code-braces: DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `JobFlowIds`: `Sequence`\[`str`\]
-- `JobFlowStates`:
-  `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
+```python title="Usage example with kwargs"
+kwargs: DescribeJobFlowsInputRequestTypeDef = {  # (1)
+    "CreatedAfter": ...,
+}
 
-Returns
-[DescribeJobFlowsOutputTypeDef](./type_defs.md#describejobflowsoutputtypedef).
+parent.describe_job_flows(**kwargs)
+```
 
-<a id="describe\_notebook\_execution"></a>
+1. See [:material-code-braces: DescribeJobFlowsInputRequestTypeDef](./type_defs.md#describejobflowsinputrequesttypedef) 
 
-### describe_notebook_execution
+### describe\_notebook\_execution
 
 Provides details of a notebook execution.
 
-Type annotations for `boto3.client("emr").describe_notebook_execution` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_notebook_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
 
-Boto3 documentation:
-[EMR.Client.describe_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_notebook_execution)
+```python title="Method definition"
+def describe_notebook_execution(
+    self,
+    *,
+    NotebookExecutionId: str,
+) -> DescribeNotebookExecutionOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeNotebookExecutionInputRequestTypeDef](./type_defs.md#describenotebookexecutioninputrequesttypedef).
+1. See [:material-code-braces: DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `NotebookExecutionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeNotebookExecutionInputRequestTypeDef = {  # (1)
+    "NotebookExecutionId": ...,
+}
 
-Returns
-[DescribeNotebookExecutionOutputTypeDef](./type_defs.md#describenotebookexecutionoutputtypedef).
+parent.describe_notebook_execution(**kwargs)
+```
 
-<a id="describe\_release\_label"></a>
+1. See [:material-code-braces: DescribeNotebookExecutionInputRequestTypeDef](./type_defs.md#describenotebookexecutioninputrequesttypedef) 
 
-### describe_release_label
+### describe\_release\_label
 
 Provides EMR release label details, such as releases available the region where
 the API request is run, and the available applications for a specific EMR
 release label.
 
-Type annotations for `boto3.client("emr").describe_release_label` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_release_label` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_release_label)
 
-Boto3 documentation:
-[EMR.Client.describe_release_label](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_release_label)
+```python title="Method definition"
+def describe_release_label(
+    self,
+    *,
+    ReleaseLabel: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeReleaseLabelOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeReleaseLabelInputRequestTypeDef](./type_defs.md#describereleaselabelinputrequesttypedef).
+1. See [:material-code-braces: DescribeReleaseLabelOutputTypeDef](./type_defs.md#describereleaselabeloutputtypedef) 
 
-Keyword-only arguments:
 
-- `ReleaseLabel`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeReleaseLabelInputRequestTypeDef = {  # (1)
+    "ReleaseLabel": ...,
+}
 
-Returns
-[DescribeReleaseLabelOutputTypeDef](./type_defs.md#describereleaselabeloutputtypedef).
+parent.describe_release_label(**kwargs)
+```
 
-<a id="describe\_security\_configuration"></a>
+1. See [:material-code-braces: DescribeReleaseLabelInputRequestTypeDef](./type_defs.md#describereleaselabelinputrequesttypedef) 
 
-### describe_security_configuration
+### describe\_security\_configuration
 
 Provides the details of a security configuration by returning the configuration
 JSON.
 
-Type annotations for `boto3.client("emr").describe_security_configuration`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_security_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
 
-Boto3 documentation:
-[EMR.Client.describe_security_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_security_configuration)
+```python title="Method definition"
+def describe_security_configuration(
+    self,
+    *,
+    Name: str,
+) -> DescribeSecurityConfigurationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeSecurityConfigurationInputRequestTypeDef](./type_defs.md#describesecurityconfigurationinputrequesttypedef).
+1. See [:material-code-braces: DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeSecurityConfigurationInputRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[DescribeSecurityConfigurationOutputTypeDef](./type_defs.md#describesecurityconfigurationoutputtypedef).
+parent.describe_security_configuration(**kwargs)
+```
 
-<a id="describe\_step"></a>
+1. See [:material-code-braces: DescribeSecurityConfigurationInputRequestTypeDef](./type_defs.md#describesecurityconfigurationinputrequesttypedef) 
 
-### describe_step
+### describe\_step
 
 Provides more detail about the cluster step.
 
-Type annotations for `boto3.client("emr").describe_step` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_step` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
 
-Boto3 documentation:
-[EMR.Client.describe_step](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_step)
+```python title="Method definition"
+def describe_step(
+    self,
+    *,
+    ClusterId: str,
+    StepId: str,
+) -> DescribeStepOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStepInputRequestTypeDef](./type_defs.md#describestepinputrequesttypedef).
+1. See [:material-code-braces: DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `StepId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStepInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "StepId": ...,
+}
 
-Returns [DescribeStepOutputTypeDef](./type_defs.md#describestepoutputtypedef).
+parent.describe_step(**kwargs)
+```
 
-<a id="describe\_studio"></a>
+1. See [:material-code-braces: DescribeStepInputRequestTypeDef](./type_defs.md#describestepinputrequesttypedef) 
 
-### describe_studio
+### describe\_studio
 
 Returns details for the specified Amazon EMR Studio including ID, Name, VPC,
 Studio access URL, and so on.
 
-Type annotations for `boto3.client("emr").describe_studio` method.
+Type annotations and code completion for `#!python boto3.client("emr").describe_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
 
-Boto3 documentation:
-[EMR.Client.describe_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.describe_studio)
+```python title="Method definition"
+def describe_studio(
+    self,
+    *,
+    StudioId: str,
+) -> DescribeStudioOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeStudioInputRequestTypeDef](./type_defs.md#describestudioinputrequesttypedef).
+1. See [:material-code-braces: DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeStudioInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+}
 
-Returns
-[DescribeStudioOutputTypeDef](./type_defs.md#describestudiooutputtypedef).
+parent.describe_studio(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeStudioInputRequestTypeDef](./type_defs.md#describestudioinputrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("emr").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("emr").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url)
 
-Boto3 documentation:
-[EMR.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_auto\_termination\_policy"></a>
-
-### get_auto_termination_policy
+### get\_auto\_termination\_policy
 
 Returns the auto-termination policy for an Amazon EMR cluster.
 
-Type annotations for `boto3.client("emr").get_auto_termination_policy` method.
+Type annotations and code completion for `#!python boto3.client("emr").get_auto_termination_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_auto_termination_policy)
 
-Boto3 documentation:
-[EMR.Client.get_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_auto_termination_policy)
+```python title="Method definition"
+def get_auto_termination_policy(
+    self,
+    *,
+    ClusterId: str,
+) -> GetAutoTerminationPolicyOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#getautoterminationpolicyinputrequesttypedef).
+1. See [:material-code-braces: GetAutoTerminationPolicyOutputTypeDef](./type_defs.md#getautoterminationpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAutoTerminationPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[GetAutoTerminationPolicyOutputTypeDef](./type_defs.md#getautoterminationpolicyoutputtypedef).
+parent.get_auto_termination_policy(**kwargs)
+```
 
-<a id="get\_block\_public\_access\_configuration"></a>
+1. See [:material-code-braces: GetAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#getautoterminationpolicyinputrequesttypedef) 
 
-### get_block_public_access_configuration
+### get\_block\_public\_access\_configuration
 
 Returns the Amazon EMR block public access configuration for your Amazon Web
 Services account in the current Region.
 
-Type annotations for
-`boto3.client("emr").get_block_public_access_configuration` method.
+Type annotations and code completion for `#!python boto3.client("emr").get_block_public_access_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
 
-Boto3 documentation:
-[EMR.Client.get_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_block_public_access_configuration)
+```python title="Method definition"
+def get_block_public_access_configuration(
+    self,
+) -> GetBlockPublicAccessConfigurationOutputTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef).
+1. See [:material-code-braces: GetBlockPublicAccessConfigurationOutputTypeDef](./type_defs.md#getblockpublicaccessconfigurationoutputtypedef) 
 
-<a id="get\_managed\_scaling\_policy"></a>
-
-### get_managed_scaling_policy
+### get\_managed\_scaling\_policy
 
 Fetches the attached managed scaling policy for an Amazon EMR cluster.
 
-Type annotations for `boto3.client("emr").get_managed_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("emr").get_managed_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
 
-Boto3 documentation:
-[EMR.Client.get_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_managed_scaling_policy)
+```python title="Method definition"
+def get_managed_scaling_policy(
+    self,
+    *,
+    ClusterId: str,
+) -> GetManagedScalingPolicyOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetManagedScalingPolicyInputRequestTypeDef](./type_defs.md#getmanagedscalingpolicyinputrequesttypedef).
+1. See [:material-code-braces: GetManagedScalingPolicyOutputTypeDef](./type_defs.md#getmanagedscalingpolicyoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetManagedScalingPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[GetManagedScalingPolicyOutputTypeDef](./type_defs.md#getmanagedscalingpolicyoutputtypedef).
+parent.get_managed_scaling_policy(**kwargs)
+```
 
-<a id="get\_studio\_session\_mapping"></a>
+1. See [:material-code-braces: GetManagedScalingPolicyInputRequestTypeDef](./type_defs.md#getmanagedscalingpolicyinputrequesttypedef) 
 
-### get_studio_session_mapping
+### get\_studio\_session\_mapping
 
 Fetches mapping details for the specified Amazon EMR Studio and identity (user
 or group).
 
-Type annotations for `boto3.client("emr").get_studio_session_mapping` method.
+Type annotations and code completion for `#!python boto3.client("emr").get_studio_session_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
 
-Boto3 documentation:
-[EMR.Client.get_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.get_studio_session_mapping)
+```python title="Method definition"
+def get_studio_session_mapping(
+    self,
+    *,
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    IdentityId: str = ...,
+    IdentityName: str = ...,
+) -> GetStudioSessionMappingOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetStudioSessionMappingInputRequestTypeDef](./type_defs.md#getstudiosessionmappinginputrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: GetStudioSessionMappingOutputTypeDef](./type_defs.md#getstudiosessionmappingoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-  *(required)*
-- `IdentityId`: `str`
-- `IdentityName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStudioSessionMappingInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+    "IdentityType": ...,
+}
 
-Returns
-[GetStudioSessionMappingOutputTypeDef](./type_defs.md#getstudiosessionmappingoutputtypedef).
+parent.get_studio_session_mapping(**kwargs)
+```
 
-<a id="list\_bootstrap\_actions"></a>
+1. See [:material-code-braces: GetStudioSessionMappingInputRequestTypeDef](./type_defs.md#getstudiosessionmappinginputrequesttypedef) 
 
-### list_bootstrap_actions
+### list\_bootstrap\_actions
 
 Provides information about the bootstrap actions associated with a cluster.
 
-Type annotations for `boto3.client("emr").list_bootstrap_actions` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_bootstrap_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
 
-Boto3 documentation:
-[EMR.Client.list_bootstrap_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_bootstrap_actions)
+```python title="Method definition"
+def list_bootstrap_actions(
+    self,
+    *,
+    ClusterId: str,
+    Marker: str = ...,
+) -> ListBootstrapActionsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBootstrapActionsInputRequestTypeDef](./type_defs.md#listbootstrapactionsinputrequesttypedef).
+1. See [:material-code-braces: ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBootstrapActionsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ListBootstrapActionsOutputTypeDef](./type_defs.md#listbootstrapactionsoutputtypedef).
+parent.list_bootstrap_actions(**kwargs)
+```
 
-<a id="list\_clusters"></a>
+1. See [:material-code-braces: ListBootstrapActionsInputRequestTypeDef](./type_defs.md#listbootstrapactionsinputrequesttypedef) 
 
-### list_clusters
+### list\_clusters
 
-Provides the status of all clusters visible to this Amazon Web Services
-account.
+Provides the status of all clusters visible to this Amazon Web Services account.
 
-Type annotations for `boto3.client("emr").list_clusters` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_clusters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
 
-Boto3 documentation:
-[EMR.Client.list_clusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_clusters)
+```python title="Method definition"
+def list_clusters(
+    self,
+    *,
+    CreatedAfter: Union[datetime, str] = ...,
+    CreatedBefore: Union[datetime, str] = ...,
+    ClusterStates: Sequence[ClusterStateType] = ...,  # (1)
+    Marker: str = ...,
+) -> ListClustersOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListClustersInputRequestTypeDef](./type_defs.md#listclustersinputrequesttypedef).
+1. See [:material-code-brackets: ClusterStateType](./literals.md#clusterstatetype) 
+2. See [:material-code-braces: ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef) 
 
-Keyword-only arguments:
 
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ClusterStates`:
-  `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListClustersInputRequestTypeDef = {  # (1)
+    "CreatedAfter": ...,
+}
 
-Returns [ListClustersOutputTypeDef](./type_defs.md#listclustersoutputtypedef).
+parent.list_clusters(**kwargs)
+```
 
-<a id="list\_instance\_fleets"></a>
+1. See [:material-code-braces: ListClustersInputRequestTypeDef](./type_defs.md#listclustersinputrequesttypedef) 
 
-### list_instance_fleets
+### list\_instance\_fleets
 
 Lists all available details about the instance fleets in a cluster.
 
-Type annotations for `boto3.client("emr").list_instance_fleets` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_instance_fleets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
 
-Boto3 documentation:
-[EMR.Client.list_instance_fleets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_fleets)
+```python title="Method definition"
+def list_instance_fleets(
+    self,
+    *,
+    ClusterId: str,
+    Marker: str = ...,
+) -> ListInstanceFleetsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceFleetsInputRequestTypeDef](./type_defs.md#listinstancefleetsinputrequesttypedef).
+1. See [:material-code-braces: ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceFleetsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ListInstanceFleetsOutputTypeDef](./type_defs.md#listinstancefleetsoutputtypedef).
+parent.list_instance_fleets(**kwargs)
+```
 
-<a id="list\_instance\_groups"></a>
+1. See [:material-code-braces: ListInstanceFleetsInputRequestTypeDef](./type_defs.md#listinstancefleetsinputrequesttypedef) 
 
-### list_instance_groups
+### list\_instance\_groups
 
 Provides all available details about the instance groups in a cluster.
 
-Type annotations for `boto3.client("emr").list_instance_groups` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_instance_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
 
-Boto3 documentation:
-[EMR.Client.list_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instance_groups)
+```python title="Method definition"
+def list_instance_groups(
+    self,
+    *,
+    ClusterId: str,
+    Marker: str = ...,
+) -> ListInstanceGroupsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstanceGroupsInputRequestTypeDef](./type_defs.md#listinstancegroupsinputrequesttypedef).
+1. See [:material-code-braces: ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstanceGroupsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ListInstanceGroupsOutputTypeDef](./type_defs.md#listinstancegroupsoutputtypedef).
+parent.list_instance_groups(**kwargs)
+```
 
-<a id="list\_instances"></a>
+1. See [:material-code-braces: ListInstanceGroupsInputRequestTypeDef](./type_defs.md#listinstancegroupsinputrequesttypedef) 
 
-### list_instances
+### list\_instances
 
 Provides information for all active EC2 instances and EC2 instances terminated
 in the last 30 days, up to a maximum of 2,000.
 
-Type annotations for `boto3.client("emr").list_instances` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
 
-Boto3 documentation:
-[EMR.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_instances)
+```python title="Method definition"
+def list_instances(
+    self,
+    *,
+    ClusterId: str,
+    InstanceGroupId: str = ...,
+    InstanceGroupTypes: Sequence[InstanceGroupTypeType] = ...,  # (1)
+    InstanceFleetId: str = ...,
+    InstanceFleetType: InstanceFleetTypeType = ...,  # (2)
+    InstanceStates: Sequence[InstanceStateType] = ...,  # (3)
+    Marker: str = ...,
+) -> ListInstancesOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[ListInstancesInputRequestTypeDef](./type_defs.md#listinstancesinputrequesttypedef).
+1. See [:material-code-brackets: InstanceGroupTypeType](./literals.md#instancegrouptypetype) 
+2. See [:material-code-brackets: InstanceFleetTypeType](./literals.md#instancefleettypetype) 
+3. See [:material-code-brackets: InstanceStateType](./literals.md#instancestatetype) 
+4. See [:material-code-braces: ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `InstanceGroupId`: `str`
-- `InstanceGroupTypes`:
-  `Sequence`\[[InstanceGroupTypeType](./literals.md#instancegrouptypetype)\]
-- `InstanceFleetId`: `str`
-- `InstanceFleetType`:
-  [InstanceFleetTypeType](./literals.md#instancefleettypetype)
-- `InstanceStates`:
-  `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInstancesInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ListInstancesOutputTypeDef](./type_defs.md#listinstancesoutputtypedef).
+parent.list_instances(**kwargs)
+```
 
-<a id="list\_notebook\_executions"></a>
+1. See [:material-code-braces: ListInstancesInputRequestTypeDef](./type_defs.md#listinstancesinputrequesttypedef) 
 
-### list_notebook_executions
+### list\_notebook\_executions
 
 Provides summaries of all notebook executions.
 
-Type annotations for `boto3.client("emr").list_notebook_executions` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_notebook_executions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
 
-Boto3 documentation:
-[EMR.Client.list_notebook_executions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_notebook_executions)
+```python title="Method definition"
+def list_notebook_executions(
+    self,
+    *,
+    EditorId: str = ...,
+    Status: NotebookExecutionStatusType = ...,  # (1)
+    From: Union[datetime, str] = ...,
+    To: Union[datetime, str] = ...,
+    Marker: str = ...,
+) -> ListNotebookExecutionsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNotebookExecutionsInputRequestTypeDef](./type_defs.md#listnotebookexecutionsinputrequesttypedef).
+1. See [:material-code-brackets: NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype) 
+2. See [:material-code-braces: ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EditorId`: `str`
-- `Status`:
-  [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
-- `From`: `Union`\[`datetime`, `str`\]
-- `To`: `Union`\[`datetime`, `str`\]
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListNotebookExecutionsInputRequestTypeDef = {  # (1)
+    "EditorId": ...,
+}
 
-Returns
-[ListNotebookExecutionsOutputTypeDef](./type_defs.md#listnotebookexecutionsoutputtypedef).
+parent.list_notebook_executions(**kwargs)
+```
 
-<a id="list\_release\_labels"></a>
+1. See [:material-code-braces: ListNotebookExecutionsInputRequestTypeDef](./type_defs.md#listnotebookexecutionsinputrequesttypedef) 
 
-### list_release_labels
+### list\_release\_labels
 
 Retrieves release labels of EMR services in the region where the API is called.
 
-Type annotations for `boto3.client("emr").list_release_labels` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_release_labels` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_release_labels)
 
-Boto3 documentation:
-[EMR.Client.list_release_labels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_release_labels)
+```python title="Method definition"
+def list_release_labels(
+    self,
+    *,
+    Filters: ReleaseLabelFilterTypeDef = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListReleaseLabelsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListReleaseLabelsInputRequestTypeDef](./type_defs.md#listreleaselabelsinputrequesttypedef).
+1. See [:material-code-braces: ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef) 
+2. See [:material-code-braces: ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Filters`:
-  [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListReleaseLabelsInputRequestTypeDef = {  # (1)
+    "Filters": ...,
+}
 
-Returns
-[ListReleaseLabelsOutputTypeDef](./type_defs.md#listreleaselabelsoutputtypedef).
+parent.list_release_labels(**kwargs)
+```
 
-<a id="list\_security\_configurations"></a>
+1. See [:material-code-braces: ListReleaseLabelsInputRequestTypeDef](./type_defs.md#listreleaselabelsinputrequesttypedef) 
 
-### list_security_configurations
+### list\_security\_configurations
 
 Lists all the security configurations visible to this account, providing their
 creation dates and times, and their names.
 
-Type annotations for `boto3.client("emr").list_security_configurations` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_security_configurations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
 
-Boto3 documentation:
-[EMR.Client.list_security_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_security_configurations)
+```python title="Method definition"
+def list_security_configurations(
+    self,
+    *,
+    Marker: str = ...,
+) -> ListSecurityConfigurationsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSecurityConfigurationsInputRequestTypeDef](./type_defs.md#listsecurityconfigurationsinputrequesttypedef).
+1. See [:material-code-braces: ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSecurityConfigurationsInputRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns
-[ListSecurityConfigurationsOutputTypeDef](./type_defs.md#listsecurityconfigurationsoutputtypedef).
+parent.list_security_configurations(**kwargs)
+```
 
-<a id="list\_steps"></a>
+1. See [:material-code-braces: ListSecurityConfigurationsInputRequestTypeDef](./type_defs.md#listsecurityconfigurationsinputrequesttypedef) 
 
-### list_steps
+### list\_steps
 
 Provides a list of steps for the cluster in reverse order unless you specify
 `stepIds` with the request or filter by `StepStates`.
 
-Type annotations for `boto3.client("emr").list_steps` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_steps` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
 
-Boto3 documentation:
-[EMR.Client.list_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_steps)
+```python title="Method definition"
+def list_steps(
+    self,
+    *,
+    ClusterId: str,
+    StepStates: Sequence[StepStateType] = ...,  # (1)
+    StepIds: Sequence[str] = ...,
+    Marker: str = ...,
+) -> ListStepsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStepsInputRequestTypeDef](./type_defs.md#liststepsinputrequesttypedef).
+1. See [:material-code-brackets: StepStateType](./literals.md#stepstatetype) 
+2. See [:material-code-braces: ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `StepStates`: `Sequence`\[[StepStateType](./literals.md#stepstatetype)\]
-- `StepIds`: `Sequence`\[`str`\]
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStepsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns [ListStepsOutputTypeDef](./type_defs.md#liststepsoutputtypedef).
+parent.list_steps(**kwargs)
+```
 
-<a id="list\_studio\_session\_mappings"></a>
+1. See [:material-code-braces: ListStepsInputRequestTypeDef](./type_defs.md#liststepsinputrequesttypedef) 
 
-### list_studio_session_mappings
+### list\_studio\_session\_mappings
 
 Returns a list of all user or group session mappings for the Amazon EMR Studio
 specified by `StudioId` .
 
-Type annotations for `boto3.client("emr").list_studio_session_mappings` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_studio_session_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
 
-Boto3 documentation:
-[EMR.Client.list_studio_session_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studio_session_mappings)
+```python title="Method definition"
+def list_studio_session_mappings(
+    self,
+    *,
+    StudioId: str = ...,
+    IdentityType: IdentityTypeType = ...,  # (1)
+    Marker: str = ...,
+) -> ListStudioSessionMappingsOutputTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListStudioSessionMappingsInputRequestTypeDef](./type_defs.md#liststudiosessionmappingsinputrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
+2. See [:material-code-braces: ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str`
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStudioSessionMappingsInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+}
 
-Returns
-[ListStudioSessionMappingsOutputTypeDef](./type_defs.md#liststudiosessionmappingsoutputtypedef).
+parent.list_studio_session_mappings(**kwargs)
+```
 
-<a id="list\_studios"></a>
+1. See [:material-code-braces: ListStudioSessionMappingsInputRequestTypeDef](./type_defs.md#liststudiosessionmappingsinputrequesttypedef) 
 
-### list_studios
+### list\_studios
 
-Returns a list of all Amazon EMR Studios associated with the Amazon Web
-Services account.
+Returns a list of all Amazon EMR Studios associated with the Amazon Web Services
+account.
 
-Type annotations for `boto3.client("emr").list_studios` method.
+Type annotations and code completion for `#!python boto3.client("emr").list_studios` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
 
-Boto3 documentation:
-[EMR.Client.list_studios](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.list_studios)
+```python title="Method definition"
+def list_studios(
+    self,
+    *,
+    Marker: str = ...,
+) -> ListStudiosOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListStudiosInputRequestTypeDef](./type_defs.md#liststudiosinputrequesttypedef).
+1. See [:material-code-braces: ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Marker`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListStudiosInputRequestTypeDef = {  # (1)
+    "Marker": ...,
+}
 
-Returns [ListStudiosOutputTypeDef](./type_defs.md#liststudiosoutputtypedef).
+parent.list_studios(**kwargs)
+```
 
-<a id="modify\_cluster"></a>
+1. See [:material-code-braces: ListStudiosInputRequestTypeDef](./type_defs.md#liststudiosinputrequesttypedef) 
 
-### modify_cluster
+### modify\_cluster
 
 Modifies the number of steps that can be executed concurrently for the cluster
 specified using ClusterID.
 
-Type annotations for `boto3.client("emr").modify_cluster` method.
+Type annotations and code completion for `#!python boto3.client("emr").modify_cluster` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
 
-Boto3 documentation:
-[EMR.Client.modify_cluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_cluster)
+```python title="Method definition"
+def modify_cluster(
+    self,
+    *,
+    ClusterId: str,
+    StepConcurrencyLevel: int = ...,
+) -> ModifyClusterOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ModifyClusterInputRequestTypeDef](./type_defs.md#modifyclusterinputrequesttypedef).
+1. See [:material-code-braces: ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `StepConcurrencyLevel`: `int`
+```python title="Usage example with kwargs"
+kwargs: ModifyClusterInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns
-[ModifyClusterOutputTypeDef](./type_defs.md#modifyclusteroutputtypedef).
+parent.modify_cluster(**kwargs)
+```
 
-<a id="modify\_instance\_fleet"></a>
+1. See [:material-code-braces: ModifyClusterInputRequestTypeDef](./type_defs.md#modifyclusterinputrequesttypedef) 
 
-### modify_instance_fleet
+### modify\_instance\_fleet
 
 Modifies the target On-Demand and target Spot capacities for the instance fleet
-with the specified InstanceFleetID within the cluster specified using
-ClusterID.
+with the specified InstanceFleetID within the cluster specified using ClusterID.
 
-Type annotations for `boto3.client("emr").modify_instance_fleet` method.
+Type annotations and code completion for `#!python boto3.client("emr").modify_instance_fleet` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
 
-Boto3 documentation:
-[EMR.Client.modify_instance_fleet](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_fleet)
+```python title="Method definition"
+def modify_instance_fleet(
+    self,
+    *,
+    ClusterId: str,
+    InstanceFleet: InstanceFleetModifyConfigTypeDef,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ModifyInstanceFleetInputRequestTypeDef](./type_defs.md#modifyinstancefleetinputrequesttypedef).
+1. See [:material-code-braces: InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `InstanceFleet`:
-  [InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyInstanceFleetInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "InstanceFleet": ...,
+}
 
-<a id="modify\_instance\_groups"></a>
+parent.modify_instance_fleet(**kwargs)
+```
 
-### modify_instance_groups
+1. See [:material-code-braces: ModifyInstanceFleetInputRequestTypeDef](./type_defs.md#modifyinstancefleetinputrequesttypedef) 
+
+### modify\_instance\_groups
 
 ModifyInstanceGroups modifies the number of nodes and configuration settings of
 an instance group.
 
-Type annotations for `boto3.client("emr").modify_instance_groups` method.
+Type annotations and code completion for `#!python boto3.client("emr").modify_instance_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
 
-Boto3 documentation:
-[EMR.Client.modify_instance_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.modify_instance_groups)
+```python title="Method definition"
+def modify_instance_groups(
+    self,
+    *,
+    ClusterId: str = ...,
+    InstanceGroups: Sequence[InstanceGroupModifyConfigTypeDef] = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[ModifyInstanceGroupsInputRequestTypeDef](./type_defs.md#modifyinstancegroupsinputrequesttypedef).
+1. See [:material-code-braces: InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str`
-- `InstanceGroups`:
-  `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ModifyInstanceGroupsInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-<a id="put\_auto\_scaling\_policy"></a>
+parent.modify_instance_groups(**kwargs)
+```
 
-### put_auto_scaling_policy
+1. See [:material-code-braces: ModifyInstanceGroupsInputRequestTypeDef](./type_defs.md#modifyinstancegroupsinputrequesttypedef) 
 
-Creates or updates an automatic scaling policy for a core instance group or
-task instance group in an Amazon EMR cluster.
+### put\_auto\_scaling\_policy
 
-Type annotations for `boto3.client("emr").put_auto_scaling_policy` method.
+Creates or updates an automatic scaling policy for a core instance group or task
+instance group in an Amazon EMR cluster.
 
-Boto3 documentation:
-[EMR.Client.put_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
+Type annotations and code completion for `#!python boto3.client("emr").put_auto_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_scaling_policy)
 
-Arguments mapping described in
-[PutAutoScalingPolicyInputRequestTypeDef](./type_defs.md#putautoscalingpolicyinputrequesttypedef).
+```python title="Method definition"
+def put_auto_scaling_policy(
+    self,
+    *,
+    ClusterId: str,
+    InstanceGroupId: str,
+    AutoScalingPolicy: AutoScalingPolicyTypeDef,  # (1)
+) -> PutAutoScalingPolicyOutputTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef) 
+2. See [:material-code-braces: PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef) 
 
-- `ClusterId`: `str` *(required)*
-- `InstanceGroupId`: `str` *(required)*
-- `AutoScalingPolicy`:
-  [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
-  *(required)*
 
-Returns
-[PutAutoScalingPolicyOutputTypeDef](./type_defs.md#putautoscalingpolicyoutputtypedef).
+```python title="Usage example with kwargs"
+kwargs: PutAutoScalingPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "InstanceGroupId": ...,
+    "AutoScalingPolicy": ...,
+}
 
-<a id="put\_auto\_termination\_policy"></a>
+parent.put_auto_scaling_policy(**kwargs)
+```
 
-### put_auto_termination_policy
+1. See [:material-code-braces: PutAutoScalingPolicyInputRequestTypeDef](./type_defs.md#putautoscalingpolicyinputrequesttypedef) 
+
+### put\_auto\_termination\_policy
 
 .
 
-Type annotations for `boto3.client("emr").put_auto_termination_policy` method.
+Type annotations and code completion for `#!python boto3.client("emr").put_auto_termination_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_termination_policy)
 
-Boto3 documentation:
-[EMR.Client.put_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_auto_termination_policy)
+```python title="Method definition"
+def put_auto_termination_policy(
+    self,
+    *,
+    ClusterId: str,
+    AutoTerminationPolicy: AutoTerminationPolicyTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#putautoterminationpolicyinputrequesttypedef).
+1. See [:material-code-braces: AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `AutoTerminationPolicy`:
-  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+```python title="Usage example with kwargs"
+kwargs: PutAutoTerminationPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_auto_termination_policy(**kwargs)
+```
 
-<a id="put\_block\_public\_access\_configuration"></a>
+1. See [:material-code-braces: PutAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#putautoterminationpolicyinputrequesttypedef) 
 
-### put_block_public_access_configuration
+### put\_block\_public\_access\_configuration
 
 Creates or updates an Amazon EMR block public access configuration for your
 Amazon Web Services account in the current Region.
 
-Type annotations for
-`boto3.client("emr").put_block_public_access_configuration` method.
+Type annotations and code completion for `#!python boto3.client("emr").put_block_public_access_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
 
-Boto3 documentation:
-[EMR.Client.put_block_public_access_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_block_public_access_configuration)
+```python title="Method definition"
+def put_block_public_access_configuration(
+    self,
+    *,
+    BlockPublicAccessConfiguration: BlockPublicAccessConfigurationTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutBlockPublicAccessConfigurationInputRequestTypeDef](./type_defs.md#putblockpublicaccessconfigurationinputrequesttypedef).
+1. See [:material-code-braces: BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `BlockPublicAccessConfiguration`:
-  [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutBlockPublicAccessConfigurationInputRequestTypeDef = {  # (1)
+    "BlockPublicAccessConfiguration": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_block_public_access_configuration(**kwargs)
+```
 
-<a id="put\_managed\_scaling\_policy"></a>
+1. See [:material-code-braces: PutBlockPublicAccessConfigurationInputRequestTypeDef](./type_defs.md#putblockpublicaccessconfigurationinputrequesttypedef) 
 
-### put_managed_scaling_policy
+### put\_managed\_scaling\_policy
 
 Creates or updates a managed scaling policy for an Amazon EMR cluster.
 
-Type annotations for `boto3.client("emr").put_managed_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("emr").put_managed_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
 
-Boto3 documentation:
-[EMR.Client.put_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.put_managed_scaling_policy)
+```python title="Method definition"
+def put_managed_scaling_policy(
+    self,
+    *,
+    ClusterId: str,
+    ManagedScalingPolicy: ManagedScalingPolicyTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutManagedScalingPolicyInputRequestTypeDef](./type_defs.md#putmanagedscalingpolicyinputrequesttypedef).
+1. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutManagedScalingPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "ManagedScalingPolicy": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_managed_scaling_policy(**kwargs)
+```
 
-<a id="remove\_auto\_scaling\_policy"></a>
+1. See [:material-code-braces: PutManagedScalingPolicyInputRequestTypeDef](./type_defs.md#putmanagedscalingpolicyinputrequesttypedef) 
 
-### remove_auto_scaling_policy
+### remove\_auto\_scaling\_policy
 
 Removes an automatic scaling policy from a specified instance group within an
 EMR cluster.
 
-Type annotations for `boto3.client("emr").remove_auto_scaling_policy` method.
+Type annotations and code completion for `#!python boto3.client("emr").remove_auto_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
 
-Boto3 documentation:
-[EMR.Client.remove_auto_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_scaling_policy)
+```python title="Method definition"
+def remove_auto_scaling_policy(
+    self,
+    *,
+    ClusterId: str,
+    InstanceGroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveAutoScalingPolicyInputRequestTypeDef](./type_defs.md#removeautoscalingpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
-- `InstanceGroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAutoScalingPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+    "InstanceGroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_auto_scaling_policy(**kwargs)
+```
 
-<a id="remove\_auto\_termination\_policy"></a>
+1. See [:material-code-braces: RemoveAutoScalingPolicyInputRequestTypeDef](./type_defs.md#removeautoscalingpolicyinputrequesttypedef) 
 
-### remove_auto_termination_policy
+### remove\_auto\_termination\_policy
 
 Removes an auto-termination policy from an Amazon EMR cluster.
 
-Type annotations for `boto3.client("emr").remove_auto_termination_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").remove_auto_termination_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_termination_policy)
 
-Boto3 documentation:
-[EMR.Client.remove_auto_termination_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_auto_termination_policy)
+```python title="Method definition"
+def remove_auto_termination_policy(
+    self,
+    *,
+    ClusterId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#removeautoterminationpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveAutoTerminationPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_auto_termination_policy(**kwargs)
+```
 
-<a id="remove\_managed\_scaling\_policy"></a>
+1. See [:material-code-braces: RemoveAutoTerminationPolicyInputRequestTypeDef](./type_defs.md#removeautoterminationpolicyinputrequesttypedef) 
 
-### remove_managed_scaling_policy
+### remove\_managed\_scaling\_policy
 
 Removes a managed scaling policy from a specified EMR cluster.
 
-Type annotations for `boto3.client("emr").remove_managed_scaling_policy`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").remove_managed_scaling_policy` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
 
-Boto3 documentation:
-[EMR.Client.remove_managed_scaling_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_managed_scaling_policy)
+```python title="Method definition"
+def remove_managed_scaling_policy(
+    self,
+    *,
+    ClusterId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveManagedScalingPolicyInputRequestTypeDef](./type_defs.md#removemanagedscalingpolicyinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ClusterId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveManagedScalingPolicyInputRequestTypeDef = {  # (1)
+    "ClusterId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_managed_scaling_policy(**kwargs)
+```
 
-<a id="remove\_tags"></a>
+1. See [:material-code-braces: RemoveManagedScalingPolicyInputRequestTypeDef](./type_defs.md#removemanagedscalingpolicyinputrequesttypedef) 
 
-### remove_tags
+### remove\_tags
 
 Removes tags from an Amazon EMR resource, such as a cluster or Amazon EMR
 Studio.
 
-Type annotations for `boto3.client("emr").remove_tags` method.
+Type annotations and code completion for `#!python boto3.client("emr").remove_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
 
-Boto3 documentation:
-[EMR.Client.remove_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.remove_tags)
+```python title="Method definition"
+def remove_tags(
+    self,
+    *,
+    ResourceId: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveTagsInputRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.remove_tags(**kwargs)
+```
 
-<a id="run\_job\_flow"></a>
+1. See [:material-code-braces: RemoveTagsInputRequestTypeDef](./type_defs.md#removetagsinputrequesttypedef) 
 
-### run_job_flow
+### run\_job\_flow
 
 RunJobFlow creates and starts running a new cluster (job flow).
 
-Type annotations for `boto3.client("emr").run_job_flow` method.
+Type annotations and code completion for `#!python boto3.client("emr").run_job_flow` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
 
-Boto3 documentation:
-[EMR.Client.run_job_flow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.run_job_flow)
+```python title="Method definition"
+def run_job_flow(
+    self,
+    *,
+    Name: str,
+    Instances: JobFlowInstancesConfigTypeDef,  # (1)
+    LogUri: str = ...,
+    LogEncryptionKmsKeyId: str = ...,
+    AdditionalInfo: str = ...,
+    AmiVersion: str = ...,
+    ReleaseLabel: str = ...,
+    Steps: Sequence[StepConfigTypeDef] = ...,  # (2)
+    BootstrapActions: Sequence[BootstrapActionConfigTypeDef] = ...,  # (3)
+    SupportedProducts: Sequence[str] = ...,
+    NewSupportedProducts: Sequence[SupportedProductConfigTypeDef] = ...,  # (4)
+    Applications: Sequence[ApplicationTypeDef] = ...,  # (5)
+    Configurations: Sequence[ConfigurationTypeDef] = ...,  # (6)
+    VisibleToAllUsers: bool = ...,
+    JobFlowRole: str = ...,
+    ServiceRole: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (7)
+    SecurityConfiguration: str = ...,
+    AutoScalingRole: str = ...,
+    ScaleDownBehavior: ScaleDownBehaviorType = ...,  # (8)
+    CustomAmiId: str = ...,
+    EbsRootVolumeSize: int = ...,
+    RepoUpgradeOnBoot: RepoUpgradeOnBootType = ...,  # (9)
+    KerberosAttributes: KerberosAttributesTypeDef = ...,  # (10)
+    StepConcurrencyLevel: int = ...,
+    ManagedScalingPolicy: ManagedScalingPolicyTypeDef = ...,  # (11)
+    PlacementGroupConfigs: Sequence[PlacementGroupConfigTypeDef] = ...,  # (12)
+    AutoTerminationPolicy: AutoTerminationPolicyTypeDef = ...,  # (13)
+) -> RunJobFlowOutputTypeDef:  # (14)
+    ...
+```
 
-Arguments mapping described in
-[RunJobFlowInputRequestTypeDef](./type_defs.md#runjobflowinputrequesttypedef).
+1. See [:material-code-braces: JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef) 
+2. See [:material-code-braces: StepConfigTypeDef](./type_defs.md#stepconfigtypedef) 
+3. See [:material-code-braces: BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef) 
+4. See [:material-code-braces: SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef) 
+5. See [:material-code-braces: ApplicationTypeDef](./type_defs.md#applicationtypedef) 
+6. See [:material-code-braces: ConfigurationTypeDef](./type_defs.md#configurationtypedef) 
+7. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+8. See [:material-code-brackets: ScaleDownBehaviorType](./literals.md#scaledownbehaviortype) 
+9. See [:material-code-brackets: RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype) 
+10. See [:material-code-braces: KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef) 
+11. See [:material-code-braces: ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef) 
+12. See [:material-code-braces: PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef) 
+13. See [:material-code-braces: AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef) 
+14. See [:material-code-braces: RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Instances`:
-  [JobFlowInstancesConfigTypeDef](./type_defs.md#jobflowinstancesconfigtypedef)
-  *(required)*
-- `LogUri`: `str`
-- `LogEncryptionKmsKeyId`: `str`
-- `AdditionalInfo`: `str`
-- `AmiVersion`: `str`
-- `ReleaseLabel`: `str`
-- `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
-- `BootstrapActions`:
-  `Sequence`\[[BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)\]
-- `SupportedProducts`: `Sequence`\[`str`\]
-- `NewSupportedProducts`:
-  `Sequence`\[[SupportedProductConfigTypeDef](./type_defs.md#supportedproductconfigtypedef)\]
-- `Applications`:
-  `Sequence`\[[ApplicationTypeDef](./type_defs.md#applicationtypedef)\]
-- `Configurations`:
-  `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
-- `VisibleToAllUsers`: `bool`
-- `JobFlowRole`: `str`
-- `ServiceRole`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `SecurityConfiguration`: `str`
-- `AutoScalingRole`: `str`
-- `ScaleDownBehavior`:
-  [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
-- `CustomAmiId`: `str`
-- `EbsRootVolumeSize`: `int`
-- `RepoUpgradeOnBoot`:
-  [RepoUpgradeOnBootType](./literals.md#repoupgradeonboottype)
-- `KerberosAttributes`:
-  [KerberosAttributesTypeDef](./type_defs.md#kerberosattributestypedef)
-- `StepConcurrencyLevel`: `int`
-- `ManagedScalingPolicy`:
-  [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
-- `PlacementGroupConfigs`:
-  `Sequence`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
-- `AutoTerminationPolicy`:
-  [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
+```python title="Usage example with kwargs"
+kwargs: RunJobFlowInputRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Instances": ...,
+}
 
-Returns [RunJobFlowOutputTypeDef](./type_defs.md#runjobflowoutputtypedef).
+parent.run_job_flow(**kwargs)
+```
 
-<a id="set\_termination\_protection"></a>
+1. See [:material-code-braces: RunJobFlowInputRequestTypeDef](./type_defs.md#runjobflowinputrequesttypedef) 
 
-### set_termination_protection
+### set\_termination\_protection
 
 SetTerminationProtection locks a cluster (job flow) so the EC2 instances in the
 cluster cannot be terminated by user intervention, an API call, or in the event
 of a job-flow error.
 
-Type annotations for `boto3.client("emr").set_termination_protection` method.
+Type annotations and code completion for `#!python boto3.client("emr").set_termination_protection` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
 
-Boto3 documentation:
-[EMR.Client.set_termination_protection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_termination_protection)
+```python title="Method definition"
+def set_termination_protection(
+    self,
+    *,
+    JobFlowIds: Sequence[str],
+    TerminationProtected: bool,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetTerminationProtectionInputRequestTypeDef](./type_defs.md#setterminationprotectioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
-- `TerminationProtected`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetTerminationProtectionInputRequestTypeDef = {  # (1)
+    "JobFlowIds": ...,
+    "TerminationProtected": ...,
+}
 
-<a id="set\_visible\_to\_all\_users"></a>
+parent.set_termination_protection(**kwargs)
+```
 
-### set_visible_to_all_users
+1. See [:material-code-braces: SetTerminationProtectionInputRequestTypeDef](./type_defs.md#setterminationprotectioninputrequesttypedef) 
+
+### set\_visible\_to\_all\_users
 
 .
 
-Type annotations for `boto3.client("emr").set_visible_to_all_users` method.
+Type annotations and code completion for `#!python boto3.client("emr").set_visible_to_all_users` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
 
-Boto3 documentation:
-[EMR.Client.set_visible_to_all_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.set_visible_to_all_users)
+```python title="Method definition"
+def set_visible_to_all_users(
+    self,
+    *,
+    JobFlowIds: Sequence[str],
+    VisibleToAllUsers: bool,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetVisibleToAllUsersInputRequestTypeDef](./type_defs.md#setvisibletoallusersinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
-- `VisibleToAllUsers`: `bool` *(required)*
+```python title="Usage example with kwargs"
+kwargs: SetVisibleToAllUsersInputRequestTypeDef = {  # (1)
+    "JobFlowIds": ...,
+    "VisibleToAllUsers": ...,
+}
 
-<a id="start\_notebook\_execution"></a>
+parent.set_visible_to_all_users(**kwargs)
+```
 
-### start_notebook_execution
+1. See [:material-code-braces: SetVisibleToAllUsersInputRequestTypeDef](./type_defs.md#setvisibletoallusersinputrequesttypedef) 
+
+### start\_notebook\_execution
 
 Starts a notebook execution.
 
-Type annotations for `boto3.client("emr").start_notebook_execution` method.
+Type annotations and code completion for `#!python boto3.client("emr").start_notebook_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
 
-Boto3 documentation:
-[EMR.Client.start_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.start_notebook_execution)
+```python title="Method definition"
+def start_notebook_execution(
+    self,
+    *,
+    EditorId: str,
+    RelativePath: str,
+    ExecutionEngine: ExecutionEngineConfigTypeDef,  # (1)
+    ServiceRole: str,
+    NotebookExecutionName: str = ...,
+    NotebookParams: str = ...,
+    NotebookInstanceSecurityGroupId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> StartNotebookExecutionOutputTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[StartNotebookExecutionInputRequestTypeDef](./type_defs.md#startnotebookexecutioninputrequesttypedef).
+1. See [:material-code-braces: ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef) 
 
-Keyword-only arguments:
 
-- `EditorId`: `str` *(required)*
-- `RelativePath`: `str` *(required)*
-- `ExecutionEngine`:
-  [ExecutionEngineConfigTypeDef](./type_defs.md#executionengineconfigtypedef)
-  *(required)*
-- `ServiceRole`: `str` *(required)*
-- `NotebookExecutionName`: `str`
-- `NotebookParams`: `str`
-- `NotebookInstanceSecurityGroupId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: StartNotebookExecutionInputRequestTypeDef = {  # (1)
+    "EditorId": ...,
+    "RelativePath": ...,
+    "ExecutionEngine": ...,
+    "ServiceRole": ...,
+}
 
-Returns
-[StartNotebookExecutionOutputTypeDef](./type_defs.md#startnotebookexecutionoutputtypedef).
+parent.start_notebook_execution(**kwargs)
+```
 
-<a id="stop\_notebook\_execution"></a>
+1. See [:material-code-braces: StartNotebookExecutionInputRequestTypeDef](./type_defs.md#startnotebookexecutioninputrequesttypedef) 
 
-### stop_notebook_execution
+### stop\_notebook\_execution
 
 Stops a notebook execution.
 
-Type annotations for `boto3.client("emr").stop_notebook_execution` method.
+Type annotations and code completion for `#!python boto3.client("emr").stop_notebook_execution` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
 
-Boto3 documentation:
-[EMR.Client.stop_notebook_execution](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.stop_notebook_execution)
+```python title="Method definition"
+def stop_notebook_execution(
+    self,
+    *,
+    NotebookExecutionId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[StopNotebookExecutionInputRequestTypeDef](./type_defs.md#stopnotebookexecutioninputrequesttypedef).
 
-Keyword-only arguments:
 
-- `NotebookExecutionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopNotebookExecutionInputRequestTypeDef = {  # (1)
+    "NotebookExecutionId": ...,
+}
 
-<a id="terminate\_job\_flows"></a>
+parent.stop_notebook_execution(**kwargs)
+```
 
-### terminate_job_flows
+1. See [:material-code-braces: StopNotebookExecutionInputRequestTypeDef](./type_defs.md#stopnotebookexecutioninputrequesttypedef) 
+
+### terminate\_job\_flows
 
 TerminateJobFlows shuts a list of clusters (job flows) down.
 
-Type annotations for `boto3.client("emr").terminate_job_flows` method.
+Type annotations and code completion for `#!python boto3.client("emr").terminate_job_flows` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
 
-Boto3 documentation:
-[EMR.Client.terminate_job_flows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.terminate_job_flows)
+```python title="Method definition"
+def terminate_job_flows(
+    self,
+    *,
+    JobFlowIds: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TerminateJobFlowsInputRequestTypeDef](./type_defs.md#terminatejobflowsinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `JobFlowIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TerminateJobFlowsInputRequestTypeDef = {  # (1)
+    "JobFlowIds": ...,
+}
 
-<a id="update\_studio"></a>
+parent.terminate_job_flows(**kwargs)
+```
 
-### update_studio
+1. See [:material-code-braces: TerminateJobFlowsInputRequestTypeDef](./type_defs.md#terminatejobflowsinputrequesttypedef) 
+
+### update\_studio
 
 Updates an Amazon EMR Studio configuration, including attributes such as name,
 description, and subnets.
 
-Type annotations for `boto3.client("emr").update_studio` method.
+Type annotations and code completion for `#!python boto3.client("emr").update_studio` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
 
-Boto3 documentation:
-[EMR.Client.update_studio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio)
+```python title="Method definition"
+def update_studio(
+    self,
+    *,
+    StudioId: str,
+    Name: str = ...,
+    Description: str = ...,
+    SubnetIds: Sequence[str] = ...,
+    DefaultS3Location: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateStudioInputRequestTypeDef](./type_defs.md#updatestudioinputrequesttypedef).
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
-- `Name`: `str`
-- `Description`: `str`
-- `SubnetIds`: `Sequence`\[`str`\]
-- `DefaultS3Location`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStudioInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+}
 
-<a id="update\_studio\_session\_mapping"></a>
+parent.update_studio(**kwargs)
+```
 
-### update_studio_session_mapping
+1. See [:material-code-braces: UpdateStudioInputRequestTypeDef](./type_defs.md#updatestudioinputrequesttypedef) 
+
+### update\_studio\_session\_mapping
 
 Updates the session policy attached to the user or group for the specified
 Amazon EMR Studio.
 
-Type annotations for `boto3.client("emr").update_studio_session_mapping`
-method.
+Type annotations and code completion for `#!python boto3.client("emr").update_studio_session_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
 
-Boto3 documentation:
-[EMR.Client.update_studio_session_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR.Client.update_studio_session_mapping)
+```python title="Method definition"
+def update_studio_session_mapping(
+    self,
+    *,
+    StudioId: str,
+    IdentityType: IdentityTypeType,  # (1)
+    SessionPolicyArn: str,
+    IdentityId: str = ...,
+    IdentityName: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateStudioSessionMappingInputRequestTypeDef](./type_defs.md#updatestudiosessionmappinginputrequesttypedef).
+1. See [:material-code-brackets: IdentityTypeType](./literals.md#identitytypetype) 
 
-Keyword-only arguments:
 
-- `StudioId`: `str` *(required)*
-- `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
-  *(required)*
-- `SessionPolicyArn`: `str` *(required)*
-- `IdentityId`: `str`
-- `IdentityName`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateStudioSessionMappingInputRequestTypeDef = {  # (1)
+    "StudioId": ...,
+    "IdentityType": ...,
+    "SessionPolicyArn": ...,
+}
 
-<a id="get_paginator"></a>
+parent.update_studio_session_mapping(**kwargs)
+```
+
+1. See [:material-code-braces: UpdateStudioSessionMappingInputRequestTypeDef](./type_defs.md#updatestudiosessionmappinginputrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("emr").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("emr").get_paginator` method with overloads.
 
-- `client.get_paginator("list_bootstrap_actions")` ->
-  [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
-- `client.get_paginator("list_clusters")` ->
-  [ListClustersPaginator](./paginators.md#listclusterspaginator)
-- `client.get_paginator("list_instance_fleets")` ->
-  [ListInstanceFleetsPaginator](./paginators.md#listinstancefleetspaginator)
-- `client.get_paginator("list_instance_groups")` ->
-  [ListInstanceGroupsPaginator](./paginators.md#listinstancegroupspaginator)
-- `client.get_paginator("list_instances")` ->
-  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_notebook_executions")` ->
-  [ListNotebookExecutionsPaginator](./paginators.md#listnotebookexecutionspaginator)
-- `client.get_paginator("list_security_configurations")` ->
-  [ListSecurityConfigurationsPaginator](./paginators.md#listsecurityconfigurationspaginator)
-- `client.get_paginator("list_steps")` ->
-  [ListStepsPaginator](./paginators.md#liststepspaginator)
-- `client.get_paginator("list_studio_session_mappings")` ->
-  [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
-- `client.get_paginator("list_studios")` ->
-  [ListStudiosPaginator](./paginators.md#liststudiospaginator)
+- `client.get_paginator("list_bootstrap_actions")` -> [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
+- `client.get_paginator("list_clusters")` -> [ListClustersPaginator](./paginators.md#listclusterspaginator)
+- `client.get_paginator("list_instance_fleets")` -> [ListInstanceFleetsPaginator](./paginators.md#listinstancefleetspaginator)
+- `client.get_paginator("list_instance_groups")` -> [ListInstanceGroupsPaginator](./paginators.md#listinstancegroupspaginator)
+- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_notebook_executions")` -> [ListNotebookExecutionsPaginator](./paginators.md#listnotebookexecutionspaginator)
+- `client.get_paginator("list_security_configurations")` -> [ListSecurityConfigurationsPaginator](./paginators.md#listsecurityconfigurationspaginator)
+- `client.get_paginator("list_steps")` -> [ListStepsPaginator](./paginators.md#liststepspaginator)
+- `client.get_paginator("list_studio_session_mappings")` -> [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
+- `client.get_paginator("list_studios")` -> [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
-<a id="get_waiter"></a>
+
+
 
 ### get_waiter
 
-Type annotations for `boto3.client("emr").get_waiter` method with overloads.
+Type annotations and code completion for `#!python boto3.client("emr").get_waiter` method with overloads.
 
-- `client.get_waiter("cluster_running")` ->
-  [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
-- `client.get_waiter("cluster_terminated")` ->
-  [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
-- `client.get_waiter("step_complete")` ->
-  [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
+- `client.get_waiter("cluster_running")` -> [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
+- `client.get_waiter("cluster_terminated")` -> [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
+- `client.get_waiter("step_complete")` -> [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
+

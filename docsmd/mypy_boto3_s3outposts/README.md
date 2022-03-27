@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-s3outposts-module"></a>
-
-# Type annotations for boto3 S3Outposts module
+#  S3Outposts module
 
 > [Index](../README.md) > S3Outposts
 
-Auto-generated documentation for
-[S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
-type annotations stubs module
-[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+!!! note ""
 
-- [Type annotations for boto3 S3Outposts module](#type-annotations-for-boto3-s3outposts-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [S3OutpostsClient](#s3outpostsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
+    type annotations stubs module [mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `S3Outposts`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[s3outposts]'
 python -m pip install mypy-boto3-s3outposts
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,77 +42,59 @@ python -m pip install mypy-boto3-s3outposts
 python -m pip uninstall -y mypy-boto3-s3outposts
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="s3outpostsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## S3OutpostsClient
 
-Type annotations for `boto3.client("s3outposts")` as
-[S3OutpostsClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("s3outposts")` as [S3OutpostsClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_s3outposts.client import S3OutpostsClient
+
+def get_client() -> S3OutpostsClient:
+    return Session().cleint("s3outposts")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_endpoint](./client.md#create_endpoint)
-- [delete_endpoint](./client.md#delete_endpoint)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_endpoints](./client.md#list_endpoints)
-- [list_shared_endpoints](./client.md#list_shared_endpoints)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-S3OutpostsClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("s3outposts").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("s3outposts").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator, ...
+from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator
+
+def get_list_endpoints_paginator() -> ListEndpointsPaginator:
+    return Session().client("s3outposts").get_paginator("list_endpoints"))
 ```
 
 - [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
 - [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3outposts.literals import EndpointAccessTypeType
 
-```python
-from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
+def get_value() -> EndpointAccessTypeType:
+    return "CustomerOwnedIp"
 ```
 
 - [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
@@ -145,28 +105,37 @@ from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestRequestTypeDef
 
-```python
-from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestRequestTypeDef, ...
+def get_value() -> CreateEndpointRequestRequestTypeDef:
+    return {
+        "OutpostId": ...,
+        "SubnetId": ...,
+        "SecurityGroupId": ...,
+    }
 ```
 
 - [CreateEndpointRequestRequestTypeDef](./type_defs.md#createendpointrequestrequesttypedef)
 - [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef)
 - [DeleteEndpointRequestRequestTypeDef](./type_defs.md#deleteendpointrequestrequesttypedef)
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
+- [ListEndpointsRequestListEndpointsPaginateTypeDef](./type_defs.md#listendpointsrequestlistendpointspaginatetypedef)
 - [ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef)
 - [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)
+- [ListSharedEndpointsRequestListSharedEndpointsPaginateTypeDef](./type_defs.md#listsharedendpointsrequestlistsharedendpointspaginatetypedef)
 - [ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef)
 - [ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+

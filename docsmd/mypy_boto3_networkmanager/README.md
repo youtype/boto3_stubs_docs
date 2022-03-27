@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-networkmanager-module"></a>
-
-# Type annotations for boto3 NetworkManager module
+#  NetworkManager module
 
 > [Index](../README.md) > NetworkManager
 
-Auto-generated documentation for
-[NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
-type annotations stubs module
-[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+!!! note ""
 
-- [Type annotations for boto3 NetworkManager module](#type-annotations-for-boto3-networkmanager-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [NetworkManagerClient](#networkmanagerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
+    type annotations stubs module [mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `NetworkManager`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[networkmanager]'
 python -m pip install mypy-boto3-networkmanager
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,137 +42,37 @@ python -m pip install mypy-boto3-networkmanager
 python -m pip uninstall -y mypy-boto3-networkmanager
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="networkmanagerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## NetworkManagerClient
 
-Type annotations for `boto3.client("networkmanager")` as
-[NetworkManagerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("networkmanager")` as [NetworkManagerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_networkmanager.client import NetworkManagerClient
+
+def get_client() -> NetworkManagerClient:
+    return Session().cleint("networkmanager")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [accept_attachment](./client.md#accept_attachment)
-- [associate_connect_peer](./client.md#associate_connect_peer)
-- [associate_customer_gateway](./client.md#associate_customer_gateway)
-- [associate_link](./client.md#associate_link)
-- [associate_transit_gateway_connect_peer](./client.md#associate_transit_gateway_connect_peer)
-- [can_paginate](./client.md#can_paginate)
-- [create_connect_attachment](./client.md#create_connect_attachment)
-- [create_connect_peer](./client.md#create_connect_peer)
-- [create_connection](./client.md#create_connection)
-- [create_core_network](./client.md#create_core_network)
-- [create_device](./client.md#create_device)
-- [create_global_network](./client.md#create_global_network)
-- [create_link](./client.md#create_link)
-- [create_site](./client.md#create_site)
-- [create_site_to_site_vpn_attachment](./client.md#create_site_to_site_vpn_attachment)
-- [create_vpc_attachment](./client.md#create_vpc_attachment)
-- [delete_attachment](./client.md#delete_attachment)
-- [delete_connect_peer](./client.md#delete_connect_peer)
-- [delete_connection](./client.md#delete_connection)
-- [delete_core_network](./client.md#delete_core_network)
-- [delete_core_network_policy_version](./client.md#delete_core_network_policy_version)
-- [delete_device](./client.md#delete_device)
-- [delete_global_network](./client.md#delete_global_network)
-- [delete_link](./client.md#delete_link)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_site](./client.md#delete_site)
-- [deregister_transit_gateway](./client.md#deregister_transit_gateway)
-- [describe_global_networks](./client.md#describe_global_networks)
-- [disassociate_connect_peer](./client.md#disassociate_connect_peer)
-- [disassociate_customer_gateway](./client.md#disassociate_customer_gateway)
-- [disassociate_link](./client.md#disassociate_link)
-- [disassociate_transit_gateway_connect_peer](./client.md#disassociate_transit_gateway_connect_peer)
-- [exceptions](./client.md#exceptions)
-- [execute_core_network_change_set](./client.md#execute_core_network_change_set)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_connect_attachment](./client.md#get_connect_attachment)
-- [get_connect_peer](./client.md#get_connect_peer)
-- [get_connect_peer_associations](./client.md#get_connect_peer_associations)
-- [get_connections](./client.md#get_connections)
-- [get_core_network](./client.md#get_core_network)
-- [get_core_network_change_set](./client.md#get_core_network_change_set)
-- [get_core_network_policy](./client.md#get_core_network_policy)
-- [get_customer_gateway_associations](./client.md#get_customer_gateway_associations)
-- [get_devices](./client.md#get_devices)
-- [get_link_associations](./client.md#get_link_associations)
-- [get_links](./client.md#get_links)
-- [get_network_resource_counts](./client.md#get_network_resource_counts)
-- [get_network_resource_relationships](./client.md#get_network_resource_relationships)
-- [get_network_resources](./client.md#get_network_resources)
-- [get_network_routes](./client.md#get_network_routes)
-- [get_network_telemetry](./client.md#get_network_telemetry)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_policy](./client.md#get_resource_policy)
-- [get_route_analysis](./client.md#get_route_analysis)
-- [get_site_to_site_vpn_attachment](./client.md#get_site_to_site_vpn_attachment)
-- [get_sites](./client.md#get_sites)
-- [get_transit_gateway_connect_peer_associations](./client.md#get_transit_gateway_connect_peer_associations)
-- [get_transit_gateway_registrations](./client.md#get_transit_gateway_registrations)
-- [get_vpc_attachment](./client.md#get_vpc_attachment)
-- [list_attachments](./client.md#list_attachments)
-- [list_connect_peers](./client.md#list_connect_peers)
-- [list_core_network_policy_versions](./client.md#list_core_network_policy_versions)
-- [list_core_networks](./client.md#list_core_networks)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_core_network_policy](./client.md#put_core_network_policy)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [register_transit_gateway](./client.md#register_transit_gateway)
-- [reject_attachment](./client.md#reject_attachment)
-- [restore_core_network_policy_version](./client.md#restore_core_network_policy_version)
-- [start_route_analysis](./client.md#start_route_analysis)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_connection](./client.md#update_connection)
-- [update_core_network](./client.md#update_core_network)
-- [update_device](./client.md#update_device)
-- [update_global_network](./client.md#update_global_network)
-- [update_link](./client.md#update_link)
-- [update_network_resource_metadata](./client.md#update_network_resource_metadata)
-- [update_site](./client.md#update_site)
-- [update_vpc_attachment](./client.md#update_vpc_attachment)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-NetworkManagerClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- CoreNetworkPolicyException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("networkmanager").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("networkmanager").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator, ...
+from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator
+
+def get_describe_global_networks_paginator() -> DescribeGlobalNetworksPaginator:
+    return Session().client("networkmanager").get_paginator("describe_global_networks"))
 ```
 
 - [DescribeGlobalNetworksPaginator](./paginators.md#describeglobalnetworkspaginator)
@@ -217,16 +95,23 @@ from mypy_boto3_networkmanager.paginator import DescribeGlobalNetworksPaginator,
 - [ListCoreNetworkPolicyVersionsPaginator](./paginators.md#listcorenetworkpolicyversionspaginator)
 - [ListCoreNetworksPaginator](./paginators.md#listcorenetworkspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_networkmanager.literals import AttachmentStateType
 
-```python
-from mypy_boto3_networkmanager.literals import AttachmentStateType, ...
+def get_value() -> AttachmentStateType:
+    return "AVAILABLE"
 ```
 
 - [AttachmentStateType](./literals.md#attachmentstatetype)
@@ -280,17 +165,20 @@ from mypy_boto3_networkmanager.literals import AttachmentStateType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef
 
-```python
-from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
+def get_value() -> AWSLocationTypeDef:
+    return {
+        "Zone": ...,
+    }
 ```
 
 - [AWSLocationTypeDef](./type_defs.md#awslocationtypedef)
@@ -368,6 +256,7 @@ from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
 - [DeleteSiteResponseTypeDef](./type_defs.md#deletesiteresponsetypedef)
 - [DeregisterTransitGatewayRequestRequestTypeDef](./type_defs.md#deregistertransitgatewayrequestrequesttypedef)
 - [DeregisterTransitGatewayResponseTypeDef](./type_defs.md#deregistertransitgatewayresponsetypedef)
+- [DescribeGlobalNetworksRequestDescribeGlobalNetworksPaginateTypeDef](./type_defs.md#describeglobalnetworksrequestdescribeglobalnetworkspaginatetypedef)
 - [DescribeGlobalNetworksRequestRequestTypeDef](./type_defs.md#describeglobalnetworksrequestrequesttypedef)
 - [DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef)
 - [DeviceTypeDef](./type_defs.md#devicetypedef)
@@ -382,34 +271,45 @@ from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
 - [ExecuteCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#executecorenetworkchangesetrequestrequesttypedef)
 - [GetConnectAttachmentRequestRequestTypeDef](./type_defs.md#getconnectattachmentrequestrequesttypedef)
 - [GetConnectAttachmentResponseTypeDef](./type_defs.md#getconnectattachmentresponsetypedef)
+- [GetConnectPeerAssociationsRequestGetConnectPeerAssociationsPaginateTypeDef](./type_defs.md#getconnectpeerassociationsrequestgetconnectpeerassociationspaginatetypedef)
 - [GetConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#getconnectpeerassociationsrequestrequesttypedef)
 - [GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef)
 - [GetConnectPeerRequestRequestTypeDef](./type_defs.md#getconnectpeerrequestrequesttypedef)
 - [GetConnectPeerResponseTypeDef](./type_defs.md#getconnectpeerresponsetypedef)
+- [GetConnectionsRequestGetConnectionsPaginateTypeDef](./type_defs.md#getconnectionsrequestgetconnectionspaginatetypedef)
 - [GetConnectionsRequestRequestTypeDef](./type_defs.md#getconnectionsrequestrequesttypedef)
 - [GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef)
+- [GetCoreNetworkChangeSetRequestGetCoreNetworkChangeSetPaginateTypeDef](./type_defs.md#getcorenetworkchangesetrequestgetcorenetworkchangesetpaginatetypedef)
 - [GetCoreNetworkChangeSetRequestRequestTypeDef](./type_defs.md#getcorenetworkchangesetrequestrequesttypedef)
 - [GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef)
 - [GetCoreNetworkPolicyRequestRequestTypeDef](./type_defs.md#getcorenetworkpolicyrequestrequesttypedef)
 - [GetCoreNetworkPolicyResponseTypeDef](./type_defs.md#getcorenetworkpolicyresponsetypedef)
 - [GetCoreNetworkRequestRequestTypeDef](./type_defs.md#getcorenetworkrequestrequesttypedef)
 - [GetCoreNetworkResponseTypeDef](./type_defs.md#getcorenetworkresponsetypedef)
+- [GetCustomerGatewayAssociationsRequestGetCustomerGatewayAssociationsPaginateTypeDef](./type_defs.md#getcustomergatewayassociationsrequestgetcustomergatewayassociationspaginatetypedef)
 - [GetCustomerGatewayAssociationsRequestRequestTypeDef](./type_defs.md#getcustomergatewayassociationsrequestrequesttypedef)
 - [GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef)
+- [GetDevicesRequestGetDevicesPaginateTypeDef](./type_defs.md#getdevicesrequestgetdevicespaginatetypedef)
 - [GetDevicesRequestRequestTypeDef](./type_defs.md#getdevicesrequestrequesttypedef)
 - [GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef)
+- [GetLinkAssociationsRequestGetLinkAssociationsPaginateTypeDef](./type_defs.md#getlinkassociationsrequestgetlinkassociationspaginatetypedef)
 - [GetLinkAssociationsRequestRequestTypeDef](./type_defs.md#getlinkassociationsrequestrequesttypedef)
 - [GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef)
+- [GetLinksRequestGetLinksPaginateTypeDef](./type_defs.md#getlinksrequestgetlinkspaginatetypedef)
 - [GetLinksRequestRequestTypeDef](./type_defs.md#getlinksrequestrequesttypedef)
 - [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef)
+- [GetNetworkResourceCountsRequestGetNetworkResourceCountsPaginateTypeDef](./type_defs.md#getnetworkresourcecountsrequestgetnetworkresourcecountspaginatetypedef)
 - [GetNetworkResourceCountsRequestRequestTypeDef](./type_defs.md#getnetworkresourcecountsrequestrequesttypedef)
 - [GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef)
+- [GetNetworkResourceRelationshipsRequestGetNetworkResourceRelationshipsPaginateTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestgetnetworkresourcerelationshipspaginatetypedef)
 - [GetNetworkResourceRelationshipsRequestRequestTypeDef](./type_defs.md#getnetworkresourcerelationshipsrequestrequesttypedef)
 - [GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef)
+- [GetNetworkResourcesRequestGetNetworkResourcesPaginateTypeDef](./type_defs.md#getnetworkresourcesrequestgetnetworkresourcespaginatetypedef)
 - [GetNetworkResourcesRequestRequestTypeDef](./type_defs.md#getnetworkresourcesrequestrequesttypedef)
 - [GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef)
 - [GetNetworkRoutesRequestRequestTypeDef](./type_defs.md#getnetworkroutesrequestrequesttypedef)
 - [GetNetworkRoutesResponseTypeDef](./type_defs.md#getnetworkroutesresponsetypedef)
+- [GetNetworkTelemetryRequestGetNetworkTelemetryPaginateTypeDef](./type_defs.md#getnetworktelemetryrequestgetnetworktelemetrypaginatetypedef)
 - [GetNetworkTelemetryRequestRequestTypeDef](./type_defs.md#getnetworktelemetryrequestrequesttypedef)
 - [GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef)
 - [GetResourcePolicyRequestRequestTypeDef](./type_defs.md#getresourcepolicyrequestrequesttypedef)
@@ -418,10 +318,13 @@ from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
 - [GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef)
 - [GetSiteToSiteVpnAttachmentRequestRequestTypeDef](./type_defs.md#getsitetositevpnattachmentrequestrequesttypedef)
 - [GetSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#getsitetositevpnattachmentresponsetypedef)
+- [GetSitesRequestGetSitesPaginateTypeDef](./type_defs.md#getsitesrequestgetsitespaginatetypedef)
 - [GetSitesRequestRequestTypeDef](./type_defs.md#getsitesrequestrequesttypedef)
 - [GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef)
+- [GetTransitGatewayConnectPeerAssociationsRequestGetTransitGatewayConnectPeerAssociationsPaginateTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestgettransitgatewayconnectpeerassociationspaginatetypedef)
 - [GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsrequestrequesttypedef)
 - [GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef)
+- [GetTransitGatewayRegistrationsRequestGetTransitGatewayRegistrationsPaginateTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestgettransitgatewayregistrationspaginatetypedef)
 - [GetTransitGatewayRegistrationsRequestRequestTypeDef](./type_defs.md#gettransitgatewayregistrationsrequestrequesttypedef)
 - [GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef)
 - [GetVpcAttachmentRequestRequestTypeDef](./type_defs.md#getvpcattachmentrequestrequesttypedef)
@@ -429,12 +332,16 @@ from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
 - [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 - [LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef)
 - [LinkTypeDef](./type_defs.md#linktypedef)
+- [ListAttachmentsRequestListAttachmentsPaginateTypeDef](./type_defs.md#listattachmentsrequestlistattachmentspaginatetypedef)
 - [ListAttachmentsRequestRequestTypeDef](./type_defs.md#listattachmentsrequestrequesttypedef)
 - [ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef)
+- [ListConnectPeersRequestListConnectPeersPaginateTypeDef](./type_defs.md#listconnectpeersrequestlistconnectpeerspaginatetypedef)
 - [ListConnectPeersRequestRequestTypeDef](./type_defs.md#listconnectpeersrequestrequesttypedef)
 - [ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef)
+- [ListCoreNetworkPolicyVersionsRequestListCoreNetworkPolicyVersionsPaginateTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestlistcorenetworkpolicyversionspaginatetypedef)
 - [ListCoreNetworkPolicyVersionsRequestRequestTypeDef](./type_defs.md#listcorenetworkpolicyversionsrequestrequesttypedef)
 - [ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef)
+- [ListCoreNetworksRequestListCoreNetworksPaginateTypeDef](./type_defs.md#listcorenetworksrequestlistcorenetworkspaginatetypedef)
 - [ListCoreNetworksRequestRequestTypeDef](./type_defs.md#listcorenetworksrequestrequesttypedef)
 - [ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -494,3 +401,4 @@ from mypy_boto3_networkmanager.type_defs import AWSLocationTypeDef, ...
 - [UpdateVpcAttachmentResponseTypeDef](./type_defs.md#updatevpcattachmentresponsetypedef)
 - [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
 - [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+

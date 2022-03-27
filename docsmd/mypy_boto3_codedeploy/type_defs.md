@@ -1,2313 +1,3015 @@
-<a id="typed-dictionaries-for-boto3-codedeploy-module"></a>
-
-# Typed dictionaries for boto3 CodeDeploy module
+# Typed dictionaries
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module
-[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+!!! note ""
 
-- [Typed dictionaries for boto3 CodeDeploy module](#typed-dictionaries-for-boto3-codedeploy-module)
-  - [AddTagsToOnPremisesInstancesInputRequestTypeDef](#addtagstoonpremisesinstancesinputrequesttypedef)
-  - [AlarmConfigurationTypeDef](#alarmconfigurationtypedef)
-  - [AlarmTypeDef](#alarmtypedef)
-  - [AppSpecContentTypeDef](#appspeccontenttypedef)
-  - [ApplicationInfoTypeDef](#applicationinfotypedef)
-  - [AutoRollbackConfigurationTypeDef](#autorollbackconfigurationtypedef)
-  - [AutoScalingGroupTypeDef](#autoscalinggrouptypedef)
-  - [BatchGetApplicationRevisionsInputRequestTypeDef](#batchgetapplicationrevisionsinputrequesttypedef)
-  - [BatchGetApplicationRevisionsOutputTypeDef](#batchgetapplicationrevisionsoutputtypedef)
-  - [BatchGetApplicationsInputRequestTypeDef](#batchgetapplicationsinputrequesttypedef)
-  - [BatchGetApplicationsOutputTypeDef](#batchgetapplicationsoutputtypedef)
-  - [BatchGetDeploymentGroupsInputRequestTypeDef](#batchgetdeploymentgroupsinputrequesttypedef)
-  - [BatchGetDeploymentGroupsOutputTypeDef](#batchgetdeploymentgroupsoutputtypedef)
-  - [BatchGetDeploymentInstancesInputRequestTypeDef](#batchgetdeploymentinstancesinputrequesttypedef)
-  - [BatchGetDeploymentInstancesOutputTypeDef](#batchgetdeploymentinstancesoutputtypedef)
-  - [BatchGetDeploymentTargetsInputRequestTypeDef](#batchgetdeploymenttargetsinputrequesttypedef)
-  - [BatchGetDeploymentTargetsOutputTypeDef](#batchgetdeploymenttargetsoutputtypedef)
-  - [BatchGetDeploymentsInputRequestTypeDef](#batchgetdeploymentsinputrequesttypedef)
-  - [BatchGetDeploymentsOutputTypeDef](#batchgetdeploymentsoutputtypedef)
-  - [BatchGetOnPremisesInstancesInputRequestTypeDef](#batchgetonpremisesinstancesinputrequesttypedef)
-  - [BatchGetOnPremisesInstancesOutputTypeDef](#batchgetonpremisesinstancesoutputtypedef)
-  - [BlueGreenDeploymentConfigurationTypeDef](#bluegreendeploymentconfigurationtypedef)
-  - [BlueInstanceTerminationOptionTypeDef](#blueinstanceterminationoptiontypedef)
-  - [CloudFormationTargetTypeDef](#cloudformationtargettypedef)
-  - [ContinueDeploymentInputRequestTypeDef](#continuedeploymentinputrequesttypedef)
-  - [CreateApplicationInputRequestTypeDef](#createapplicationinputrequesttypedef)
-  - [CreateApplicationOutputTypeDef](#createapplicationoutputtypedef)
-  - [CreateDeploymentConfigInputRequestTypeDef](#createdeploymentconfiginputrequesttypedef)
-  - [CreateDeploymentConfigOutputTypeDef](#createdeploymentconfigoutputtypedef)
-  - [CreateDeploymentGroupInputRequestTypeDef](#createdeploymentgroupinputrequesttypedef)
-  - [CreateDeploymentGroupOutputTypeDef](#createdeploymentgroupoutputtypedef)
-  - [CreateDeploymentInputRequestTypeDef](#createdeploymentinputrequesttypedef)
-  - [CreateDeploymentOutputTypeDef](#createdeploymentoutputtypedef)
-  - [DeleteApplicationInputRequestTypeDef](#deleteapplicationinputrequesttypedef)
-  - [DeleteDeploymentConfigInputRequestTypeDef](#deletedeploymentconfiginputrequesttypedef)
-  - [DeleteDeploymentGroupInputRequestTypeDef](#deletedeploymentgroupinputrequesttypedef)
-  - [DeleteDeploymentGroupOutputTypeDef](#deletedeploymentgroupoutputtypedef)
-  - [DeleteGitHubAccountTokenInputRequestTypeDef](#deletegithubaccounttokeninputrequesttypedef)
-  - [DeleteGitHubAccountTokenOutputTypeDef](#deletegithubaccounttokenoutputtypedef)
-  - [DeleteResourcesByExternalIdInputRequestTypeDef](#deleteresourcesbyexternalidinputrequesttypedef)
-  - [DeploymentConfigInfoTypeDef](#deploymentconfiginfotypedef)
-  - [DeploymentGroupInfoTypeDef](#deploymentgroupinfotypedef)
-  - [DeploymentInfoTypeDef](#deploymentinfotypedef)
-  - [DeploymentOverviewTypeDef](#deploymentoverviewtypedef)
-  - [DeploymentReadyOptionTypeDef](#deploymentreadyoptiontypedef)
-  - [DeploymentStyleTypeDef](#deploymentstyletypedef)
-  - [DeploymentTargetTypeDef](#deploymenttargettypedef)
-  - [DeregisterOnPremisesInstanceInputRequestTypeDef](#deregisteronpremisesinstanceinputrequesttypedef)
-  - [DiagnosticsTypeDef](#diagnosticstypedef)
-  - [EC2TagFilterTypeDef](#ec2tagfiltertypedef)
-  - [EC2TagSetTypeDef](#ec2tagsettypedef)
-  - [ECSServiceTypeDef](#ecsservicetypedef)
-  - [ECSTargetTypeDef](#ecstargettypedef)
-  - [ECSTaskSetTypeDef](#ecstasksettypedef)
-  - [ELBInfoTypeDef](#elbinfotypedef)
-  - [ErrorInformationTypeDef](#errorinformationtypedef)
-  - [GenericRevisionInfoTypeDef](#genericrevisioninfotypedef)
-  - [GetApplicationInputRequestTypeDef](#getapplicationinputrequesttypedef)
-  - [GetApplicationOutputTypeDef](#getapplicationoutputtypedef)
-  - [GetApplicationRevisionInputRequestTypeDef](#getapplicationrevisioninputrequesttypedef)
-  - [GetApplicationRevisionOutputTypeDef](#getapplicationrevisionoutputtypedef)
-  - [GetDeploymentConfigInputRequestTypeDef](#getdeploymentconfiginputrequesttypedef)
-  - [GetDeploymentConfigOutputTypeDef](#getdeploymentconfigoutputtypedef)
-  - [GetDeploymentGroupInputRequestTypeDef](#getdeploymentgroupinputrequesttypedef)
-  - [GetDeploymentGroupOutputTypeDef](#getdeploymentgroupoutputtypedef)
-  - [GetDeploymentInputRequestTypeDef](#getdeploymentinputrequesttypedef)
-  - [GetDeploymentInstanceInputRequestTypeDef](#getdeploymentinstanceinputrequesttypedef)
-  - [GetDeploymentInstanceOutputTypeDef](#getdeploymentinstanceoutputtypedef)
-  - [GetDeploymentOutputTypeDef](#getdeploymentoutputtypedef)
-  - [GetDeploymentTargetInputRequestTypeDef](#getdeploymenttargetinputrequesttypedef)
-  - [GetDeploymentTargetOutputTypeDef](#getdeploymenttargetoutputtypedef)
-  - [GetOnPremisesInstanceInputRequestTypeDef](#getonpremisesinstanceinputrequesttypedef)
-  - [GetOnPremisesInstanceOutputTypeDef](#getonpremisesinstanceoutputtypedef)
-  - [GitHubLocationTypeDef](#githublocationtypedef)
-  - [GreenFleetProvisioningOptionTypeDef](#greenfleetprovisioningoptiontypedef)
-  - [InstanceInfoTypeDef](#instanceinfotypedef)
-  - [InstanceSummaryTypeDef](#instancesummarytypedef)
-  - [InstanceTargetTypeDef](#instancetargettypedef)
-  - [LambdaFunctionInfoTypeDef](#lambdafunctioninfotypedef)
-  - [LambdaTargetTypeDef](#lambdatargettypedef)
-  - [LastDeploymentInfoTypeDef](#lastdeploymentinfotypedef)
-  - [LifecycleEventTypeDef](#lifecycleeventtypedef)
-  - [ListApplicationRevisionsInputRequestTypeDef](#listapplicationrevisionsinputrequesttypedef)
-  - [ListApplicationRevisionsOutputTypeDef](#listapplicationrevisionsoutputtypedef)
-  - [ListApplicationsInputRequestTypeDef](#listapplicationsinputrequesttypedef)
-  - [ListApplicationsOutputTypeDef](#listapplicationsoutputtypedef)
-  - [ListDeploymentConfigsInputRequestTypeDef](#listdeploymentconfigsinputrequesttypedef)
-  - [ListDeploymentConfigsOutputTypeDef](#listdeploymentconfigsoutputtypedef)
-  - [ListDeploymentGroupsInputRequestTypeDef](#listdeploymentgroupsinputrequesttypedef)
-  - [ListDeploymentGroupsOutputTypeDef](#listdeploymentgroupsoutputtypedef)
-  - [ListDeploymentInstancesInputRequestTypeDef](#listdeploymentinstancesinputrequesttypedef)
-  - [ListDeploymentInstancesOutputTypeDef](#listdeploymentinstancesoutputtypedef)
-  - [ListDeploymentTargetsInputRequestTypeDef](#listdeploymenttargetsinputrequesttypedef)
-  - [ListDeploymentTargetsOutputTypeDef](#listdeploymenttargetsoutputtypedef)
-  - [ListDeploymentsInputRequestTypeDef](#listdeploymentsinputrequesttypedef)
-  - [ListDeploymentsOutputTypeDef](#listdeploymentsoutputtypedef)
-  - [ListGitHubAccountTokenNamesInputRequestTypeDef](#listgithubaccounttokennamesinputrequesttypedef)
-  - [ListGitHubAccountTokenNamesOutputTypeDef](#listgithubaccounttokennamesoutputtypedef)
-  - [ListOnPremisesInstancesInputRequestTypeDef](#listonpremisesinstancesinputrequesttypedef)
-  - [ListOnPremisesInstancesOutputTypeDef](#listonpremisesinstancesoutputtypedef)
-  - [ListTagsForResourceInputRequestTypeDef](#listtagsforresourceinputrequesttypedef)
-  - [ListTagsForResourceOutputTypeDef](#listtagsforresourceoutputtypedef)
-  - [LoadBalancerInfoTypeDef](#loadbalancerinfotypedef)
-  - [MinimumHealthyHostsTypeDef](#minimumhealthyhoststypedef)
-  - [OnPremisesTagSetTypeDef](#onpremisestagsettypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutLifecycleEventHookExecutionStatusInputRequestTypeDef](#putlifecycleeventhookexecutionstatusinputrequesttypedef)
-  - [PutLifecycleEventHookExecutionStatusOutputTypeDef](#putlifecycleeventhookexecutionstatusoutputtypedef)
-  - [RawStringTypeDef](#rawstringtypedef)
-  - [RegisterApplicationRevisionInputRequestTypeDef](#registerapplicationrevisioninputrequesttypedef)
-  - [RegisterOnPremisesInstanceInputRequestTypeDef](#registeronpremisesinstanceinputrequesttypedef)
-  - [RelatedDeploymentsTypeDef](#relateddeploymentstypedef)
-  - [RemoveTagsFromOnPremisesInstancesInputRequestTypeDef](#removetagsfromonpremisesinstancesinputrequesttypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RevisionInfoTypeDef](#revisioninfotypedef)
-  - [RevisionLocationTypeDef](#revisionlocationtypedef)
-  - [RollbackInfoTypeDef](#rollbackinfotypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SkipWaitTimeForInstanceTerminationInputRequestTypeDef](#skipwaittimeforinstanceterminationinputrequesttypedef)
-  - [StopDeploymentInputRequestTypeDef](#stopdeploymentinputrequesttypedef)
-  - [StopDeploymentOutputTypeDef](#stopdeploymentoutputtypedef)
-  - [TagFilterTypeDef](#tagfiltertypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TargetGroupInfoTypeDef](#targetgroupinfotypedef)
-  - [TargetGroupPairInfoTypeDef](#targetgrouppairinfotypedef)
-  - [TargetInstancesTypeDef](#targetinstancestypedef)
-  - [TimeBasedCanaryTypeDef](#timebasedcanarytypedef)
-  - [TimeBasedLinearTypeDef](#timebasedlineartypedef)
-  - [TimeRangeTypeDef](#timerangetypedef)
-  - [TrafficRouteTypeDef](#trafficroutetypedef)
-  - [TrafficRoutingConfigTypeDef](#trafficroutingconfigtypedef)
-  - [TriggerConfigTypeDef](#triggerconfigtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateApplicationInputRequestTypeDef](#updateapplicationinputrequesttypedef)
-  - [UpdateDeploymentGroupInputRequestTypeDef](#updatedeploymentgroupinputrequesttypedef)
-  - [UpdateDeploymentGroupOutputTypeDef](#updatedeploymentgroupoutputtypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-
-<a id="addtagstoonpremisesinstancesinputrequesttypedef"></a>
+    Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+    type annotations stubs module [mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ## AddTagsToOnPremisesInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AddTagsToOnPremisesInstancesInputRequestTypeDef
+
+def get_value() -> AddTagsToOnPremisesInstancesInputRequestTypeDef:
+    return {
+        "tags": ...,
+        "instanceNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddTagsToOnPremisesInstancesInputRequestTypeDef(TypedDict):
+    tags: Sequence[TagTypeDef],  # (1)
+    instanceNames: Sequence[str],
+```
 
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `instanceNames`: `Sequence`\[`str`\]
-
-<a id="alarmconfigurationtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## AlarmConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AlarmConfigurationTypeDef
+
+def get_value() -> AlarmConfigurationTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlarmConfigurationTypeDef(TypedDict):
+    enabled: NotRequired[bool],
+    ignorePollAlarmFailure: NotRequired[bool],
+    alarms: NotRequired[List[AlarmTypeDef]],  # (1)
+```
 
-- `enabled`: `bool`
-- `ignorePollAlarmFailure`: `bool`
-- `alarms`: `List`\[[AlarmTypeDef](./type_defs.md#alarmtypedef)\]
-
-<a id="alarmtypedef"></a>
-
+1. See [:material-code-braces: AlarmTypeDef](./type_defs.md#alarmtypedef) 
 ## AlarmTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AlarmTypeDef
+
+def get_value() -> AlarmTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="appspeccontenttypedef"></a>
+```python title="Definition"
+class AlarmTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## AppSpecContentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AppSpecContentTypeDef
+
+def get_value() -> AppSpecContentTypeDef:
+    return {
+        "content": ...,
+    }
 ```
 
-Optional fields:
-
-- `content`: `str`
-- `sha256`: `str`
-
-<a id="applicationinfotypedef"></a>
+```python title="Definition"
+class AppSpecContentTypeDef(TypedDict):
+    content: NotRequired[str],
+    sha256: NotRequired[str],
+```
 
 ## ApplicationInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ApplicationInfoTypeDef
+
+def get_value() -> ApplicationInfoTypeDef:
+    return {
+        "applicationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ApplicationInfoTypeDef(TypedDict):
+    applicationId: NotRequired[str],
+    applicationName: NotRequired[str],
+    createTime: NotRequired[datetime],
+    linkedToGitHub: NotRequired[bool],
+    gitHubAccountName: NotRequired[str],
+    computePlatform: NotRequired[ComputePlatformType],  # (1)
+```
 
-- `applicationId`: `str`
-- `applicationName`: `str`
-- `createTime`: `datetime`
-- `linkedToGitHub`: `bool`
-- `gitHubAccountName`: `str`
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-
-<a id="autorollbackconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
 ## AutoRollbackConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AutoRollbackConfigurationTypeDef
+
+def get_value() -> AutoRollbackConfigurationTypeDef:
+    return {
+        "enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoRollbackConfigurationTypeDef(TypedDict):
+    enabled: NotRequired[bool],
+    events: NotRequired[List[AutoRollbackEventType]],  # (1)
+```
 
-- `enabled`: `bool`
-- `events`:
-  `List`\[[AutoRollbackEventType](./literals.md#autorollbackeventtype)\]
-
-<a id="autoscalinggrouptypedef"></a>
-
+1. See [:material-code-brackets: AutoRollbackEventType](./literals.md#autorollbackeventtype) 
 ## AutoScalingGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import AutoScalingGroupTypeDef
+
+def get_value() -> AutoScalingGroupTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `hook`: `str`
-
-<a id="batchgetapplicationrevisionsinputrequesttypedef"></a>
+```python title="Definition"
+class AutoScalingGroupTypeDef(TypedDict):
+    name: NotRequired[str],
+    hook: NotRequired[str],
+```
 
 ## BatchGetApplicationRevisionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsInputRequestTypeDef
+
+def get_value() -> BatchGetApplicationRevisionsInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "revisions": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetApplicationRevisionsInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    revisions: Sequence[RevisionLocationTypeDef],  # (1)
+```
 
-- `applicationName`: `str`
-- `revisions`:
-  `Sequence`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
-
-<a id="batchgetapplicationrevisionsoutputtypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
 ## BatchGetApplicationRevisionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationRevisionsOutputTypeDef
+
+def get_value() -> BatchGetApplicationRevisionsOutputTypeDef:
+    return {
+        "applicationName": ...,
+        "errorMessage": ...,
+        "revisions": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetApplicationRevisionsOutputTypeDef(TypedDict):
+    applicationName: str,
+    errorMessage: str,
+    revisions: List[RevisionInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `applicationName`: `str`
-- `errorMessage`: `str`
-- `revisions`:
-  `List`\[[RevisionInfoTypeDef](./type_defs.md#revisioninfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetapplicationsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RevisionInfoTypeDef](./type_defs.md#revisioninfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetApplicationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsInputRequestTypeDef
+
+def get_value() -> BatchGetApplicationsInputRequestTypeDef:
+    return {
+        "applicationNames": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationNames`: `Sequence`\[`str`\]
-
-<a id="batchgetapplicationsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetApplicationsInputRequestTypeDef(TypedDict):
+    applicationNames: Sequence[str],
+```
 
 ## BatchGetApplicationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetApplicationsOutputTypeDef
+
+def get_value() -> BatchGetApplicationsOutputTypeDef:
+    return {
+        "applicationsInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetApplicationsOutputTypeDef(TypedDict):
+    applicationsInfo: List[ApplicationInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `applicationsInfo`:
-  `List`\[[ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdeploymentgroupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDeploymentGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsInputRequestTypeDef
+
+def get_value() -> BatchGetDeploymentGroupsInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "deploymentGroupNames": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-- `deploymentGroupNames`: `Sequence`\[`str`\]
-
-<a id="batchgetdeploymentgroupsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetDeploymentGroupsInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroupNames: Sequence[str],
+```
 
 ## BatchGetDeploymentGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentGroupsOutputTypeDef
+
+def get_value() -> BatchGetDeploymentGroupsOutputTypeDef:
+    return {
+        "deploymentGroupsInfo": ...,
+        "errorMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDeploymentGroupsOutputTypeDef(TypedDict):
+    deploymentGroupsInfo: List[DeploymentGroupInfoTypeDef],  # (1)
+    errorMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentGroupsInfo`:
-  `List`\[[DeploymentGroupInfoTypeDef](./type_defs.md#deploymentgroupinfotypedef)\]
-- `errorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdeploymentinstancesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentGroupInfoTypeDef](./type_defs.md#deploymentgroupinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDeploymentInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesInputRequestTypeDef
+
+def get_value() -> BatchGetDeploymentInstancesInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+        "instanceIds": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-- `instanceIds`: `Sequence`\[`str`\]
-
-<a id="batchgetdeploymentinstancesoutputtypedef"></a>
+```python title="Definition"
+class BatchGetDeploymentInstancesInputRequestTypeDef(TypedDict):
+    deploymentId: str,
+    instanceIds: Sequence[str],
+```
 
 ## BatchGetDeploymentInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentInstancesOutputTypeDef
+
+def get_value() -> BatchGetDeploymentInstancesOutputTypeDef:
+    return {
+        "instancesSummary": ...,
+        "errorMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDeploymentInstancesOutputTypeDef(TypedDict):
+    instancesSummary: List[InstanceSummaryTypeDef],  # (1)
+    errorMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instancesSummary`:
-  `List`\[[InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)\]
-- `errorMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdeploymenttargetsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDeploymentTargetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsInputRequestTypeDef
+
+def get_value() -> BatchGetDeploymentTargetsInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `deploymentId`: `str`
-- `targetIds`: `Sequence`\[`str`\]
-
-<a id="batchgetdeploymenttargetsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetDeploymentTargetsInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetIds: NotRequired[Sequence[str]],
+```
 
 ## BatchGetDeploymentTargetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentTargetsOutputTypeDef
+
+def get_value() -> BatchGetDeploymentTargetsOutputTypeDef:
+    return {
+        "deploymentTargets": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDeploymentTargetsOutputTypeDef(TypedDict):
+    deploymentTargets: List[DeploymentTargetTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentTargets`:
-  `List`\[[DeploymentTargetTypeDef](./type_defs.md#deploymenttargettypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetdeploymentsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentTargetTypeDef](./type_defs.md#deploymenttargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetDeploymentsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsInputRequestTypeDef
+
+def get_value() -> BatchGetDeploymentsInputRequestTypeDef:
+    return {
+        "deploymentIds": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentIds`: `Sequence`\[`str`\]
-
-<a id="batchgetdeploymentsoutputtypedef"></a>
+```python title="Definition"
+class BatchGetDeploymentsInputRequestTypeDef(TypedDict):
+    deploymentIds: Sequence[str],
+```
 
 ## BatchGetDeploymentsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetDeploymentsOutputTypeDef
+
+def get_value() -> BatchGetDeploymentsOutputTypeDef:
+    return {
+        "deploymentsInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetDeploymentsOutputTypeDef(TypedDict):
+    deploymentsInfo: List[DeploymentInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentsInfo`:
-  `List`\[[DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetonpremisesinstancesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetOnPremisesInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesInputRequestTypeDef
+
+def get_value() -> BatchGetOnPremisesInstancesInputRequestTypeDef:
+    return {
+        "instanceNames": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceNames`: `Sequence`\[`str`\]
-
-<a id="batchgetonpremisesinstancesoutputtypedef"></a>
+```python title="Definition"
+class BatchGetOnPremisesInstancesInputRequestTypeDef(TypedDict):
+    instanceNames: Sequence[str],
+```
 
 ## BatchGetOnPremisesInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BatchGetOnPremisesInstancesOutputTypeDef
+
+def get_value() -> BatchGetOnPremisesInstancesOutputTypeDef:
+    return {
+        "instanceInfos": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetOnPremisesInstancesOutputTypeDef(TypedDict):
+    instanceInfos: List[InstanceInfoTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceInfos`:
-  `List`\[[InstanceInfoTypeDef](./type_defs.md#instanceinfotypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="bluegreendeploymentconfigurationtypedef"></a>
-
+1. See [:material-code-braces: InstanceInfoTypeDef](./type_defs.md#instanceinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BlueGreenDeploymentConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BlueGreenDeploymentConfigurationTypeDef
+
+def get_value() -> BlueGreenDeploymentConfigurationTypeDef:
+    return {
+        "terminateBlueInstancesOnDeploymentSuccess": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BlueGreenDeploymentConfigurationTypeDef(TypedDict):
+    terminateBlueInstancesOnDeploymentSuccess: NotRequired[BlueInstanceTerminationOptionTypeDef],  # (1)
+    deploymentReadyOption: NotRequired[DeploymentReadyOptionTypeDef],  # (2)
+    greenFleetProvisioningOption: NotRequired[GreenFleetProvisioningOptionTypeDef],  # (3)
+```
 
-- `terminateBlueInstancesOnDeploymentSuccess`:
-  [BlueInstanceTerminationOptionTypeDef](./type_defs.md#blueinstanceterminationoptiontypedef)
-- `deploymentReadyOption`:
-  [DeploymentReadyOptionTypeDef](./type_defs.md#deploymentreadyoptiontypedef)
-- `greenFleetProvisioningOption`:
-  [GreenFleetProvisioningOptionTypeDef](./type_defs.md#greenfleetprovisioningoptiontypedef)
-
-<a id="blueinstanceterminationoptiontypedef"></a>
-
+1. See [:material-code-braces: BlueInstanceTerminationOptionTypeDef](./type_defs.md#blueinstanceterminationoptiontypedef) 
+2. See [:material-code-braces: DeploymentReadyOptionTypeDef](./type_defs.md#deploymentreadyoptiontypedef) 
+3. See [:material-code-braces: GreenFleetProvisioningOptionTypeDef](./type_defs.md#greenfleetprovisioningoptiontypedef) 
 ## BlueInstanceTerminationOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import BlueInstanceTerminationOptionTypeDef
+
+def get_value() -> BlueInstanceTerminationOptionTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BlueInstanceTerminationOptionTypeDef(TypedDict):
+    action: NotRequired[InstanceActionType],  # (1)
+    terminationWaitTimeInMinutes: NotRequired[int],
+```
 
-- `action`: [InstanceActionType](./literals.md#instanceactiontype)
-- `terminationWaitTimeInMinutes`: `int`
-
-<a id="cloudformationtargettypedef"></a>
-
+1. See [:material-code-brackets: InstanceActionType](./literals.md#instanceactiontype) 
 ## CloudFormationTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CloudFormationTargetTypeDef
+
+def get_value() -> CloudFormationTargetTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CloudFormationTargetTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetId: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    lifecycleEvents: NotRequired[List[LifecycleEventTypeDef]],  # (1)
+    status: NotRequired[TargetStatusType],  # (2)
+    resourceType: NotRequired[str],
+    targetVersionWeight: NotRequired[float],
+```
 
-- `deploymentId`: `str`
-- `targetId`: `str`
-- `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`:
-  `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `status`: [TargetStatusType](./literals.md#targetstatustype)
-- `resourceType`: `str`
-- `targetVersionWeight`: `float`
-
-<a id="continuedeploymentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef) 
+2. See [:material-code-brackets: TargetStatusType](./literals.md#targetstatustype) 
 ## ContinueDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ContinueDeploymentInputRequestTypeDef
+
+def get_value() -> ContinueDeploymentInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContinueDeploymentInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    deploymentWaitType: NotRequired[DeploymentWaitTypeType],  # (1)
+```
 
-- `deploymentId`: `str`
-- `deploymentWaitType`:
-  [DeploymentWaitTypeType](./literals.md#deploymentwaittypetype)
-
-<a id="createapplicationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentWaitTypeType](./literals.md#deploymentwaittypetype) 
 ## CreateApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateApplicationInputRequestTypeDef
+
+def get_value() -> CreateApplicationInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    computePlatform: NotRequired[ComputePlatformType],  # (1)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `applicationName`: `str`
-
-Optional fields:
-
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createapplicationoutputtypedef"></a>
-
+1. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateApplicationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateApplicationOutputTypeDef
+
+def get_value() -> CreateApplicationOutputTypeDef:
+    return {
+        "applicationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateApplicationOutputTypeDef(TypedDict):
+    applicationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `applicationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigInputRequestTypeDef
+
+def get_value() -> CreateDeploymentConfigInputRequestTypeDef:
+    return {
+        "deploymentConfigName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentConfigInputRequestTypeDef(TypedDict):
+    deploymentConfigName: str,
+    minimumHealthyHosts: NotRequired[MinimumHealthyHostsTypeDef],  # (1)
+    trafficRoutingConfig: NotRequired[TrafficRoutingConfigTypeDef],  # (2)
+    computePlatform: NotRequired[ComputePlatformType],  # (3)
+```
 
-- `deploymentConfigName`: `str`
-
-Optional fields:
-
-- `minimumHealthyHosts`:
-  [MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef)
-- `trafficRoutingConfig`:
-  [TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef)
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-
-<a id="createdeploymentconfigoutputtypedef"></a>
-
+1. See [:material-code-braces: MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef) 
+2. See [:material-code-braces: TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef) 
+3. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
 ## CreateDeploymentConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentConfigOutputTypeDef
+
+def get_value() -> CreateDeploymentConfigOutputTypeDef:
+    return {
+        "deploymentConfigId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentConfigOutputTypeDef(TypedDict):
+    deploymentConfigId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deploymentConfigId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentgroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupInputRequestTypeDef
+
+def get_value() -> CreateDeploymentGroupInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "deploymentGroupName": ...,
+        "serviceRoleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentGroupInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroupName: str,
+    serviceRoleArn: str,
+    deploymentConfigName: NotRequired[str],
+    ec2TagFilters: NotRequired[Sequence[EC2TagFilterTypeDef]],  # (1)
+    onPremisesInstanceTagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (2)
+    autoScalingGroups: NotRequired[Sequence[str]],
+    triggerConfigurations: NotRequired[Sequence[TriggerConfigTypeDef]],  # (3)
+    alarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (4)
+    autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (5)
+    outdatedInstancesStrategy: NotRequired[OutdatedInstancesStrategyType],  # (6)
+    deploymentStyle: NotRequired[DeploymentStyleTypeDef],  # (7)
+    blueGreenDeploymentConfiguration: NotRequired[BlueGreenDeploymentConfigurationTypeDef],  # (8)
+    loadBalancerInfo: NotRequired[LoadBalancerInfoTypeDef],  # (9)
+    ec2TagSet: NotRequired[EC2TagSetTypeDef],  # (10)
+    ecsServices: NotRequired[Sequence[ECSServiceTypeDef]],  # (11)
+    onPremisesTagSet: NotRequired[OnPremisesTagSetTypeDef],  # (12)
+    tags: NotRequired[Sequence[TagTypeDef]],  # (13)
+```
 
-- `applicationName`: `str`
-- `deploymentGroupName`: `str`
-- `serviceRoleArn`: `str`
-
-Optional fields:
-
-- `deploymentConfigName`: `str`
-- `ec2TagFilters`:
-  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
-- `onPremisesInstanceTagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `Sequence`\[`str`\]
-- `triggerConfigurations`:
-  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
-- `alarmConfiguration`:
-  [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
-- `autoRollbackConfiguration`:
-  [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
-- `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
-- `deploymentStyle`:
-  [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
-- `blueGreenDeploymentConfiguration`:
-  [BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef)
-- `loadBalancerInfo`:
-  [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
-- `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-- `ecsServices`:
-  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
-- `onPremisesTagSet`:
-  [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createdeploymentgroupoutputtypedef"></a>
-
+1. See [:material-code-braces: EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef) 
+2. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+3. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+4. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+5. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
+6. See [:material-code-brackets: OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype) 
+7. See [:material-code-braces: DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef) 
+8. See [:material-code-braces: BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef) 
+9. See [:material-code-braces: LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef) 
+10. See [:material-code-braces: EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef) 
+11. See [:material-code-braces: ECSServiceTypeDef](./type_defs.md#ecsservicetypedef) 
+12. See [:material-code-braces: OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef) 
+13. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateDeploymentGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentGroupOutputTypeDef
+
+def get_value() -> CreateDeploymentGroupOutputTypeDef:
+    return {
+        "deploymentGroupId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentGroupOutputTypeDef(TypedDict):
+    deploymentGroupId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deploymentGroupId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdeploymentinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentInputRequestTypeDef
+
+def get_value() -> CreateDeploymentInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroupName: NotRequired[str],
+    revision: NotRequired[RevisionLocationTypeDef],  # (1)
+    deploymentConfigName: NotRequired[str],
+    description: NotRequired[str],
+    ignoreApplicationStopFailures: NotRequired[bool],
+    targetInstances: NotRequired[TargetInstancesTypeDef],  # (2)
+    autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (3)
+    updateOutdatedInstancesOnly: NotRequired[bool],
+    fileExistsBehavior: NotRequired[FileExistsBehaviorType],  # (4)
+```
 
-- `applicationName`: `str`
-
-Optional fields:
-
-- `deploymentGroupName`: `str`
-- `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `deploymentConfigName`: `str`
-- `description`: `str`
-- `ignoreApplicationStopFailures`: `bool`
-- `targetInstances`:
-  [TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef)
-- `autoRollbackConfiguration`:
-  [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
-- `updateOutdatedInstancesOnly`: `bool`
-- `fileExistsBehavior`:
-  [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
-
-<a id="createdeploymentoutputtypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+2. See [:material-code-braces: TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef) 
+3. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
+4. See [:material-code-brackets: FileExistsBehaviorType](./literals.md#fileexistsbehaviortype) 
 ## CreateDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import CreateDeploymentOutputTypeDef
+
+def get_value() -> CreateDeploymentOutputTypeDef:
+    return {
+        "deploymentId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDeploymentOutputTypeDef(TypedDict):
+    deploymentId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deploymentId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapplicationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteApplicationInputRequestTypeDef
+
+def get_value() -> DeleteApplicationInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-
-<a id="deletedeploymentconfiginputrequesttypedef"></a>
+```python title="Definition"
+class DeleteApplicationInputRequestTypeDef(TypedDict):
+    applicationName: str,
+```
 
 ## DeleteDeploymentConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteDeploymentConfigInputRequestTypeDef
+
+def get_value() -> DeleteDeploymentConfigInputRequestTypeDef:
+    return {
+        "deploymentConfigName": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentConfigName`: `str`
-
-<a id="deletedeploymentgroupinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteDeploymentConfigInputRequestTypeDef(TypedDict):
+    deploymentConfigName: str,
+```
 
 ## DeleteDeploymentGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupInputRequestTypeDef
+
+def get_value() -> DeleteDeploymentGroupInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "deploymentGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-- `deploymentGroupName`: `str`
-
-<a id="deletedeploymentgroupoutputtypedef"></a>
+```python title="Definition"
+class DeleteDeploymentGroupInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroupName: str,
+```
 
 ## DeleteDeploymentGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteDeploymentGroupOutputTypeDef
+
+def get_value() -> DeleteDeploymentGroupOutputTypeDef:
+    return {
+        "hooksNotCleanedUp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteDeploymentGroupOutputTypeDef(TypedDict):
+    hooksNotCleanedUp: List[AutoScalingGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `hooksNotCleanedUp`:
-  `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletegithubaccounttokeninputrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGitHubAccountTokenInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenInputRequestTypeDef
+
+def get_value() -> DeleteGitHubAccountTokenInputRequestTypeDef:
+    return {
+        "tokenName": ...,
+    }
 ```
 
-Optional fields:
-
-- `tokenName`: `str`
-
-<a id="deletegithubaccounttokenoutputtypedef"></a>
+```python title="Definition"
+class DeleteGitHubAccountTokenInputRequestTypeDef(TypedDict):
+    tokenName: NotRequired[str],
+```
 
 ## DeleteGitHubAccountTokenOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteGitHubAccountTokenOutputTypeDef
+
+def get_value() -> DeleteGitHubAccountTokenOutputTypeDef:
+    return {
+        "tokenName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteGitHubAccountTokenOutputTypeDef(TypedDict):
+    tokenName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tokenName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresourcesbyexternalidinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResourcesByExternalIdInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeleteResourcesByExternalIdInputRequestTypeDef
+
+def get_value() -> DeleteResourcesByExternalIdInputRequestTypeDef:
+    return {
+        "externalId": ...,
+    }
 ```
 
-Optional fields:
-
-- `externalId`: `str`
-
-<a id="deploymentconfiginfotypedef"></a>
+```python title="Definition"
+class DeleteResourcesByExternalIdInputRequestTypeDef(TypedDict):
+    externalId: NotRequired[str],
+```
 
 ## DeploymentConfigInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentConfigInfoTypeDef
+
+def get_value() -> DeploymentConfigInfoTypeDef:
+    return {
+        "deploymentConfigId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentConfigInfoTypeDef(TypedDict):
+    deploymentConfigId: NotRequired[str],
+    deploymentConfigName: NotRequired[str],
+    minimumHealthyHosts: NotRequired[MinimumHealthyHostsTypeDef],  # (1)
+    createTime: NotRequired[datetime],
+    computePlatform: NotRequired[ComputePlatformType],  # (2)
+    trafficRoutingConfig: NotRequired[TrafficRoutingConfigTypeDef],  # (3)
+```
 
-- `deploymentConfigId`: `str`
-- `deploymentConfigName`: `str`
-- `minimumHealthyHosts`:
-  [MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef)
-- `createTime`: `datetime`
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `trafficRoutingConfig`:
-  [TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef)
-
-<a id="deploymentgroupinfotypedef"></a>
-
+1. See [:material-code-braces: MinimumHealthyHostsTypeDef](./type_defs.md#minimumhealthyhoststypedef) 
+2. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+3. See [:material-code-braces: TrafficRoutingConfigTypeDef](./type_defs.md#trafficroutingconfigtypedef) 
 ## DeploymentGroupInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentGroupInfoTypeDef
+
+def get_value() -> DeploymentGroupInfoTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentGroupInfoTypeDef(TypedDict):
+    applicationName: NotRequired[str],
+    deploymentGroupId: NotRequired[str],
+    deploymentGroupName: NotRequired[str],
+    deploymentConfigName: NotRequired[str],
+    ec2TagFilters: NotRequired[List[EC2TagFilterTypeDef]],  # (1)
+    onPremisesInstanceTagFilters: NotRequired[List[TagFilterTypeDef]],  # (2)
+    autoScalingGroups: NotRequired[List[AutoScalingGroupTypeDef]],  # (3)
+    serviceRoleArn: NotRequired[str],
+    targetRevision: NotRequired[RevisionLocationTypeDef],  # (4)
+    triggerConfigurations: NotRequired[List[TriggerConfigTypeDef]],  # (5)
+    alarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (6)
+    autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (7)
+    deploymentStyle: NotRequired[DeploymentStyleTypeDef],  # (8)
+    outdatedInstancesStrategy: NotRequired[OutdatedInstancesStrategyType],  # (9)
+    blueGreenDeploymentConfiguration: NotRequired[BlueGreenDeploymentConfigurationTypeDef],  # (10)
+    loadBalancerInfo: NotRequired[LoadBalancerInfoTypeDef],  # (11)
+    lastSuccessfulDeployment: NotRequired[LastDeploymentInfoTypeDef],  # (12)
+    lastAttemptedDeployment: NotRequired[LastDeploymentInfoTypeDef],  # (12)
+    ec2TagSet: NotRequired[EC2TagSetTypeDef],  # (14)
+    onPremisesTagSet: NotRequired[OnPremisesTagSetTypeDef],  # (15)
+    computePlatform: NotRequired[ComputePlatformType],  # (16)
+    ecsServices: NotRequired[List[ECSServiceTypeDef]],  # (17)
+```
 
-- `applicationName`: `str`
-- `deploymentGroupId`: `str`
-- `deploymentGroupName`: `str`
-- `deploymentConfigName`: `str`
-- `ec2TagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
-- `onPremisesInstanceTagFilters`:
-  `List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`:
-  `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
-- `serviceRoleArn`: `str`
-- `targetRevision`:
-  [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `triggerConfigurations`:
-  `List`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
-- `alarmConfiguration`:
-  [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
-- `autoRollbackConfiguration`:
-  [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
-- `deploymentStyle`:
-  [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
-- `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
-- `blueGreenDeploymentConfiguration`:
-  [BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef)
-- `loadBalancerInfo`:
-  [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
-- `lastSuccessfulDeployment`:
-  [LastDeploymentInfoTypeDef](./type_defs.md#lastdeploymentinfotypedef)
-- `lastAttemptedDeployment`:
-  [LastDeploymentInfoTypeDef](./type_defs.md#lastdeploymentinfotypedef)
-- `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-- `onPremisesTagSet`:
-  [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `ecsServices`:
-  `List`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
-
-<a id="deploymentinfotypedef"></a>
-
+1. See [:material-code-braces: EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef) 
+2. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+3. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+4. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+5. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+6. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+7. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
+8. See [:material-code-braces: DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef) 
+9. See [:material-code-brackets: OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype) 
+10. See [:material-code-braces: BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef) 
+11. See [:material-code-braces: LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef) 
+12. See [:material-code-braces: LastDeploymentInfoTypeDef](./type_defs.md#lastdeploymentinfotypedef) 
+13. See [:material-code-braces: LastDeploymentInfoTypeDef](./type_defs.md#lastdeploymentinfotypedef) 
+14. See [:material-code-braces: EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef) 
+15. See [:material-code-braces: OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef) 
+16. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+17. See [:material-code-braces: ECSServiceTypeDef](./type_defs.md#ecsservicetypedef) 
 ## DeploymentInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentInfoTypeDef
+
+def get_value() -> DeploymentInfoTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentInfoTypeDef(TypedDict):
+    applicationName: NotRequired[str],
+    deploymentGroupName: NotRequired[str],
+    deploymentConfigName: NotRequired[str],
+    deploymentId: NotRequired[str],
+    previousRevision: NotRequired[RevisionLocationTypeDef],  # (1)
+    revision: NotRequired[RevisionLocationTypeDef],  # (1)
+    status: NotRequired[DeploymentStatusType],  # (3)
+    errorInformation: NotRequired[ErrorInformationTypeDef],  # (4)
+    createTime: NotRequired[datetime],
+    startTime: NotRequired[datetime],
+    completeTime: NotRequired[datetime],
+    deploymentOverview: NotRequired[DeploymentOverviewTypeDef],  # (5)
+    description: NotRequired[str],
+    creator: NotRequired[DeploymentCreatorType],  # (6)
+    ignoreApplicationStopFailures: NotRequired[bool],
+    autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (7)
+    updateOutdatedInstancesOnly: NotRequired[bool],
+    rollbackInfo: NotRequired[RollbackInfoTypeDef],  # (8)
+    deploymentStyle: NotRequired[DeploymentStyleTypeDef],  # (9)
+    targetInstances: NotRequired[TargetInstancesTypeDef],  # (10)
+    instanceTerminationWaitTimeStarted: NotRequired[bool],
+    blueGreenDeploymentConfiguration: NotRequired[BlueGreenDeploymentConfigurationTypeDef],  # (11)
+    loadBalancerInfo: NotRequired[LoadBalancerInfoTypeDef],  # (12)
+    additionalDeploymentStatusInfo: NotRequired[str],
+    fileExistsBehavior: NotRequired[FileExistsBehaviorType],  # (13)
+    deploymentStatusMessages: NotRequired[List[str]],
+    computePlatform: NotRequired[ComputePlatformType],  # (14)
+    externalId: NotRequired[str],
+    relatedDeployments: NotRequired[RelatedDeploymentsTypeDef],  # (15)
+```
 
-- `applicationName`: `str`
-- `deploymentGroupName`: `str`
-- `deploymentConfigName`: `str`
-- `deploymentId`: `str`
-- `previousRevision`:
-  [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `errorInformation`:
-  [ErrorInformationTypeDef](./type_defs.md#errorinformationtypedef)
-- `createTime`: `datetime`
-- `startTime`: `datetime`
-- `completeTime`: `datetime`
-- `deploymentOverview`:
-  [DeploymentOverviewTypeDef](./type_defs.md#deploymentoverviewtypedef)
-- `description`: `str`
-- `creator`: [DeploymentCreatorType](./literals.md#deploymentcreatortype)
-- `ignoreApplicationStopFailures`: `bool`
-- `autoRollbackConfiguration`:
-  [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
-- `updateOutdatedInstancesOnly`: `bool`
-- `rollbackInfo`: [RollbackInfoTypeDef](./type_defs.md#rollbackinfotypedef)
-- `deploymentStyle`:
-  [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
-- `targetInstances`:
-  [TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef)
-- `instanceTerminationWaitTimeStarted`: `bool`
-- `blueGreenDeploymentConfiguration`:
-  [BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef)
-- `loadBalancerInfo`:
-  [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
-- `additionalDeploymentStatusInfo`: `str`
-- `fileExistsBehavior`:
-  [FileExistsBehaviorType](./literals.md#fileexistsbehaviortype)
-- `deploymentStatusMessages`: `List`\[`str`\]
-- `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
-- `externalId`: `str`
-- `relatedDeployments`:
-  [RelatedDeploymentsTypeDef](./type_defs.md#relateddeploymentstypedef)
-
-<a id="deploymentoverviewtypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+2. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+3. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+4. See [:material-code-braces: ErrorInformationTypeDef](./type_defs.md#errorinformationtypedef) 
+5. See [:material-code-braces: DeploymentOverviewTypeDef](./type_defs.md#deploymentoverviewtypedef) 
+6. See [:material-code-brackets: DeploymentCreatorType](./literals.md#deploymentcreatortype) 
+7. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
+8. See [:material-code-braces: RollbackInfoTypeDef](./type_defs.md#rollbackinfotypedef) 
+9. See [:material-code-braces: DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef) 
+10. See [:material-code-braces: TargetInstancesTypeDef](./type_defs.md#targetinstancestypedef) 
+11. See [:material-code-braces: BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef) 
+12. See [:material-code-braces: LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef) 
+13. See [:material-code-brackets: FileExistsBehaviorType](./literals.md#fileexistsbehaviortype) 
+14. See [:material-code-brackets: ComputePlatformType](./literals.md#computeplatformtype) 
+15. See [:material-code-braces: RelatedDeploymentsTypeDef](./type_defs.md#relateddeploymentstypedef) 
 ## DeploymentOverviewTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentOverviewTypeDef
+
+def get_value() -> DeploymentOverviewTypeDef:
+    return {
+        "Pending": ...,
+    }
 ```
 
-Optional fields:
-
-- `Pending`: `int`
-- `InProgress`: `int`
-- `Succeeded`: `int`
-- `Failed`: `int`
-- `Skipped`: `int`
-- `Ready`: `int`
-
-<a id="deploymentreadyoptiontypedef"></a>
+```python title="Definition"
+class DeploymentOverviewTypeDef(TypedDict):
+    Pending: NotRequired[int],
+    InProgress: NotRequired[int],
+    Succeeded: NotRequired[int],
+    Failed: NotRequired[int],
+    Skipped: NotRequired[int],
+    Ready: NotRequired[int],
+```
 
 ## DeploymentReadyOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentReadyOptionTypeDef
+
+def get_value() -> DeploymentReadyOptionTypeDef:
+    return {
+        "actionOnTimeout": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentReadyOptionTypeDef(TypedDict):
+    actionOnTimeout: NotRequired[DeploymentReadyActionType],  # (1)
+    waitTimeInMinutes: NotRequired[int],
+```
 
-- `actionOnTimeout`:
-  [DeploymentReadyActionType](./literals.md#deploymentreadyactiontype)
-- `waitTimeInMinutes`: `int`
-
-<a id="deploymentstyletypedef"></a>
-
+1. See [:material-code-brackets: DeploymentReadyActionType](./literals.md#deploymentreadyactiontype) 
 ## DeploymentStyleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentStyleTypeDef
+
+def get_value() -> DeploymentStyleTypeDef:
+    return {
+        "deploymentType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentStyleTypeDef(TypedDict):
+    deploymentType: NotRequired[DeploymentTypeType],  # (1)
+    deploymentOption: NotRequired[DeploymentOptionType],  # (2)
+```
 
-- `deploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
-- `deploymentOption`:
-  [DeploymentOptionType](./literals.md#deploymentoptiontype)
-
-<a id="deploymenttargettypedef"></a>
-
+1. See [:material-code-brackets: DeploymentTypeType](./literals.md#deploymenttypetype) 
+2. See [:material-code-brackets: DeploymentOptionType](./literals.md#deploymentoptiontype) 
 ## DeploymentTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeploymentTargetTypeDef
+
+def get_value() -> DeploymentTargetTypeDef:
+    return {
+        "deploymentTargetType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeploymentTargetTypeDef(TypedDict):
+    deploymentTargetType: NotRequired[DeploymentTargetTypeType],  # (1)
+    instanceTarget: NotRequired[InstanceTargetTypeDef],  # (2)
+    lambdaTarget: NotRequired[LambdaTargetTypeDef],  # (3)
+    ecsTarget: NotRequired[ECSTargetTypeDef],  # (4)
+    cloudFormationTarget: NotRequired[CloudFormationTargetTypeDef],  # (5)
+```
 
-- `deploymentTargetType`:
-  [DeploymentTargetTypeType](./literals.md#deploymenttargettypetype)
-- `instanceTarget`:
-  [InstanceTargetTypeDef](./type_defs.md#instancetargettypedef)
-- `lambdaTarget`: [LambdaTargetTypeDef](./type_defs.md#lambdatargettypedef)
-- `ecsTarget`: [ECSTargetTypeDef](./type_defs.md#ecstargettypedef)
-- `cloudFormationTarget`:
-  [CloudFormationTargetTypeDef](./type_defs.md#cloudformationtargettypedef)
-
-<a id="deregisteronpremisesinstanceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DeploymentTargetTypeType](./literals.md#deploymenttargettypetype) 
+2. See [:material-code-braces: InstanceTargetTypeDef](./type_defs.md#instancetargettypedef) 
+3. See [:material-code-braces: LambdaTargetTypeDef](./type_defs.md#lambdatargettypedef) 
+4. See [:material-code-braces: ECSTargetTypeDef](./type_defs.md#ecstargettypedef) 
+5. See [:material-code-braces: CloudFormationTargetTypeDef](./type_defs.md#cloudformationtargettypedef) 
 ## DeregisterOnPremisesInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DeregisterOnPremisesInstanceInputRequestTypeDef
+
+def get_value() -> DeregisterOnPremisesInstanceInputRequestTypeDef:
+    return {
+        "instanceName": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceName`: `str`
-
-<a id="diagnosticstypedef"></a>
+```python title="Definition"
+class DeregisterOnPremisesInstanceInputRequestTypeDef(TypedDict):
+    instanceName: str,
+```
 
 ## DiagnosticsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import DiagnosticsTypeDef
+
+def get_value() -> DiagnosticsTypeDef:
+    return {
+        "errorCode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DiagnosticsTypeDef(TypedDict):
+    errorCode: NotRequired[LifecycleErrorCodeType],  # (1)
+    scriptName: NotRequired[str],
+    message: NotRequired[str],
+    logTail: NotRequired[str],
+```
 
-- `errorCode`: [LifecycleErrorCodeType](./literals.md#lifecycleerrorcodetype)
-- `scriptName`: `str`
-- `message`: `str`
-- `logTail`: `str`
-
-<a id="ec2tagfiltertypedef"></a>
-
+1. See [:material-code-brackets: LifecycleErrorCodeType](./literals.md#lifecycleerrorcodetype) 
 ## EC2TagFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import EC2TagFilterTypeDef
+
+def get_value() -> EC2TagFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EC2TagFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Type: NotRequired[EC2TagFilterTypeType],  # (1)
+```
 
-- `Key`: `str`
-- `Value`: `str`
-- `Type`: [EC2TagFilterTypeType](./literals.md#ec2tagfiltertypetype)
-
-<a id="ec2tagsettypedef"></a>
-
+1. See [:material-code-brackets: EC2TagFilterTypeType](./literals.md#ec2tagfiltertypetype) 
 ## EC2TagSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import EC2TagSetTypeDef
+
+def get_value() -> EC2TagSetTypeDef:
+    return {
+        "ec2TagSetList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EC2TagSetTypeDef(TypedDict):
+    ec2TagSetList: NotRequired[List[List[EC2TagFilterTypeDef]]],  # (1)
+```
 
-- `ec2TagSetList`:
-  `List`\[`List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]\]
-
-<a id="ecsservicetypedef"></a>
-
+1. See [:material-code-braces: EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef) 
 ## ECSServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ECSServiceTypeDef
+
+def get_value() -> ECSServiceTypeDef:
+    return {
+        "serviceName": ...,
+    }
 ```
 
-Optional fields:
-
-- `serviceName`: `str`
-- `clusterName`: `str`
-
-<a id="ecstargettypedef"></a>
+```python title="Definition"
+class ECSServiceTypeDef(TypedDict):
+    serviceName: NotRequired[str],
+    clusterName: NotRequired[str],
+```
 
 ## ECSTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ECSTargetTypeDef
+
+def get_value() -> ECSTargetTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ECSTargetTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetId: NotRequired[str],
+    targetArn: NotRequired[str],
+    lastUpdatedAt: NotRequired[datetime],
+    lifecycleEvents: NotRequired[List[LifecycleEventTypeDef]],  # (1)
+    status: NotRequired[TargetStatusType],  # (2)
+    taskSetsInfo: NotRequired[List[ECSTaskSetTypeDef]],  # (3)
+```
 
-- `deploymentId`: `str`
-- `targetId`: `str`
-- `targetArn`: `str`
-- `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`:
-  `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `status`: [TargetStatusType](./literals.md#targetstatustype)
-- `taskSetsInfo`:
-  `List`\[[ECSTaskSetTypeDef](./type_defs.md#ecstasksettypedef)\]
-
-<a id="ecstasksettypedef"></a>
-
+1. See [:material-code-braces: LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef) 
+2. See [:material-code-brackets: TargetStatusType](./literals.md#targetstatustype) 
+3. See [:material-code-braces: ECSTaskSetTypeDef](./type_defs.md#ecstasksettypedef) 
 ## ECSTaskSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ECSTaskSetTypeDef
+
+def get_value() -> ECSTaskSetTypeDef:
+    return {
+        "identifer": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ECSTaskSetTypeDef(TypedDict):
+    identifer: NotRequired[str],
+    desiredCount: NotRequired[int],
+    pendingCount: NotRequired[int],
+    runningCount: NotRequired[int],
+    status: NotRequired[str],
+    trafficWeight: NotRequired[float],
+    targetGroup: NotRequired[TargetGroupInfoTypeDef],  # (1)
+    taskSetLabel: NotRequired[TargetLabelType],  # (2)
+```
 
-- `identifer`: `str`
-- `desiredCount`: `int`
-- `pendingCount`: `int`
-- `runningCount`: `int`
-- `status`: `str`
-- `trafficWeight`: `float`
-- `targetGroup`:
-  [TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef)
-- `taskSetLabel`: [TargetLabelType](./literals.md#targetlabeltype)
-
-<a id="elbinfotypedef"></a>
-
+1. See [:material-code-braces: TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef) 
+2. See [:material-code-brackets: TargetLabelType](./literals.md#targetlabeltype) 
 ## ELBInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ELBInfoTypeDef
+
+def get_value() -> ELBInfoTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="errorinformationtypedef"></a>
+```python title="Definition"
+class ELBInfoTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## ErrorInformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ErrorInformationTypeDef
+
+def get_value() -> ErrorInformationTypeDef:
+    return {
+        "code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ErrorInformationTypeDef(TypedDict):
+    code: NotRequired[ErrorCodeType],  # (1)
+    message: NotRequired[str],
+```
 
-- `code`: [ErrorCodeType](./literals.md#errorcodetype)
-- `message`: `str`
-
-<a id="genericrevisioninfotypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## GenericRevisionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GenericRevisionInfoTypeDef
+
+def get_value() -> GenericRevisionInfoTypeDef:
+    return {
+        "description": ...,
+    }
 ```
 
-Optional fields:
-
-- `description`: `str`
-- `deploymentGroups`: `List`\[`str`\]
-- `firstUsedTime`: `datetime`
-- `lastUsedTime`: `datetime`
-- `registerTime`: `datetime`
-
-<a id="getapplicationinputrequesttypedef"></a>
+```python title="Definition"
+class GenericRevisionInfoTypeDef(TypedDict):
+    description: NotRequired[str],
+    deploymentGroups: NotRequired[List[str]],
+    firstUsedTime: NotRequired[datetime],
+    lastUsedTime: NotRequired[datetime],
+    registerTime: NotRequired[datetime],
+```
 
 ## GetApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetApplicationInputRequestTypeDef
+
+def get_value() -> GetApplicationInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-
-<a id="getapplicationoutputtypedef"></a>
+```python title="Definition"
+class GetApplicationInputRequestTypeDef(TypedDict):
+    applicationName: str,
+```
 
 ## GetApplicationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetApplicationOutputTypeDef
+
+def get_value() -> GetApplicationOutputTypeDef:
+    return {
+        "application": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationOutputTypeDef(TypedDict):
+    application: ApplicationInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `application`:
-  [ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getapplicationrevisioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ApplicationInfoTypeDef](./type_defs.md#applicationinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetApplicationRevisionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionInputRequestTypeDef
+
+def get_value() -> GetApplicationRevisionInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "revision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationRevisionInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    revision: RevisionLocationTypeDef,  # (1)
+```
 
-- `applicationName`: `str`
-- `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-
-<a id="getapplicationrevisionoutputtypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
 ## GetApplicationRevisionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetApplicationRevisionOutputTypeDef
+
+def get_value() -> GetApplicationRevisionOutputTypeDef:
+    return {
+        "applicationName": ...,
+        "revision": ...,
+        "revisionInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetApplicationRevisionOutputTypeDef(TypedDict):
+    applicationName: str,
+    revision: RevisionLocationTypeDef,  # (1)
+    revisionInfo: GenericRevisionInfoTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `applicationName`: `str`
-- `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `revisionInfo`:
-  [GenericRevisionInfoTypeDef](./type_defs.md#genericrevisioninfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeploymentconfiginputrequesttypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+2. See [:material-code-braces: GenericRevisionInfoTypeDef](./type_defs.md#genericrevisioninfotypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentConfigInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigInputRequestTypeDef
+
+def get_value() -> GetDeploymentConfigInputRequestTypeDef:
+    return {
+        "deploymentConfigName": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentConfigName`: `str`
-
-<a id="getdeploymentconfigoutputtypedef"></a>
+```python title="Definition"
+class GetDeploymentConfigInputRequestTypeDef(TypedDict):
+    deploymentConfigName: str,
+```
 
 ## GetDeploymentConfigOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentConfigOutputTypeDef
+
+def get_value() -> GetDeploymentConfigOutputTypeDef:
+    return {
+        "deploymentConfigInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentConfigOutputTypeDef(TypedDict):
+    deploymentConfigInfo: DeploymentConfigInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentConfigInfo`:
-  [DeploymentConfigInfoTypeDef](./type_defs.md#deploymentconfiginfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeploymentgroupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentConfigInfoTypeDef](./type_defs.md#deploymentconfiginfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupInputRequestTypeDef
+
+def get_value() -> GetDeploymentGroupInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "deploymentGroupName": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-- `deploymentGroupName`: `str`
-
-<a id="getdeploymentgroupoutputtypedef"></a>
+```python title="Definition"
+class GetDeploymentGroupInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroupName: str,
+```
 
 ## GetDeploymentGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentGroupOutputTypeDef
+
+def get_value() -> GetDeploymentGroupOutputTypeDef:
+    return {
+        "deploymentGroupInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentGroupOutputTypeDef(TypedDict):
+    deploymentGroupInfo: DeploymentGroupInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentGroupInfo`:
-  [DeploymentGroupInfoTypeDef](./type_defs.md#deploymentgroupinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DeploymentGroupInfoTypeDef](./type_defs.md#deploymentgroupinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetDeploymentInputDeploymentSuccessfulWaitTypeDef
 
-<a id="getdeploymentinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import GetDeploymentInputDeploymentSuccessfulWaitTypeDef
 
+def get_value() -> GetDeploymentInputDeploymentSuccessfulWaitTypeDef:
+    return {
+        "deploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class GetDeploymentInputDeploymentSuccessfulWaitTypeDef(TypedDict):
+    deploymentId: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## GetDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentInputRequestTypeDef
+
+def get_value() -> GetDeploymentInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-
-<a id="getdeploymentinstanceinputrequesttypedef"></a>
+```python title="Definition"
+class GetDeploymentInputRequestTypeDef(TypedDict):
+    deploymentId: str,
+```
 
 ## GetDeploymentInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceInputRequestTypeDef
+
+def get_value() -> GetDeploymentInstanceInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+        "instanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-- `instanceId`: `str`
-
-<a id="getdeploymentinstanceoutputtypedef"></a>
+```python title="Definition"
+class GetDeploymentInstanceInputRequestTypeDef(TypedDict):
+    deploymentId: str,
+    instanceId: str,
+```
 
 ## GetDeploymentInstanceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentInstanceOutputTypeDef
+
+def get_value() -> GetDeploymentInstanceOutputTypeDef:
+    return {
+        "instanceSummary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentInstanceOutputTypeDef(TypedDict):
+    instanceSummary: InstanceSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceSummary`:
-  [InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeploymentoutputtypedef"></a>
-
+1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentOutputTypeDef
+
+def get_value() -> GetDeploymentOutputTypeDef:
+    return {
+        "deploymentInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentOutputTypeDef(TypedDict):
+    deploymentInfo: DeploymentInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentInfo`:
-  [DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getdeploymenttargetinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentInfoTypeDef](./type_defs.md#deploymentinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetDeploymentTargetInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetInputRequestTypeDef
+
+def get_value() -> GetDeploymentTargetInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `deploymentId`: `str`
-- `targetId`: `str`
-
-<a id="getdeploymenttargetoutputtypedef"></a>
+```python title="Definition"
+class GetDeploymentTargetInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetId: NotRequired[str],
+```
 
 ## GetDeploymentTargetOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetDeploymentTargetOutputTypeDef
+
+def get_value() -> GetDeploymentTargetOutputTypeDef:
+    return {
+        "deploymentTarget": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetDeploymentTargetOutputTypeDef(TypedDict):
+    deploymentTarget: DeploymentTargetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `deploymentTarget`:
-  [DeploymentTargetTypeDef](./type_defs.md#deploymenttargettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getonpremisesinstanceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: DeploymentTargetTypeDef](./type_defs.md#deploymenttargettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetOnPremisesInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceInputRequestTypeDef
+
+def get_value() -> GetOnPremisesInstanceInputRequestTypeDef:
+    return {
+        "instanceName": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceName`: `str`
-
-<a id="getonpremisesinstanceoutputtypedef"></a>
+```python title="Definition"
+class GetOnPremisesInstanceInputRequestTypeDef(TypedDict):
+    instanceName: str,
+```
 
 ## GetOnPremisesInstanceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GetOnPremisesInstanceOutputTypeDef
+
+def get_value() -> GetOnPremisesInstanceOutputTypeDef:
+    return {
+        "instanceInfo": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetOnPremisesInstanceOutputTypeDef(TypedDict):
+    instanceInfo: InstanceInfoTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `instanceInfo`: [InstanceInfoTypeDef](./type_defs.md#instanceinfotypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="githublocationtypedef"></a>
-
+1. See [:material-code-braces: InstanceInfoTypeDef](./type_defs.md#instanceinfotypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GitHubLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GitHubLocationTypeDef
+
+def get_value() -> GitHubLocationTypeDef:
+    return {
+        "repository": ...,
+    }
 ```
 
-Optional fields:
-
-- `repository`: `str`
-- `commitId`: `str`
-
-<a id="greenfleetprovisioningoptiontypedef"></a>
+```python title="Definition"
+class GitHubLocationTypeDef(TypedDict):
+    repository: NotRequired[str],
+    commitId: NotRequired[str],
+```
 
 ## GreenFleetProvisioningOptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import GreenFleetProvisioningOptionTypeDef
+
+def get_value() -> GreenFleetProvisioningOptionTypeDef:
+    return {
+        "action": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GreenFleetProvisioningOptionTypeDef(TypedDict):
+    action: NotRequired[GreenFleetProvisioningActionType],  # (1)
+```
 
-- `action`:
-  [GreenFleetProvisioningActionType](./literals.md#greenfleetprovisioningactiontype)
-
-<a id="instanceinfotypedef"></a>
-
+1. See [:material-code-brackets: GreenFleetProvisioningActionType](./literals.md#greenfleetprovisioningactiontype) 
 ## InstanceInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import InstanceInfoTypeDef
+
+def get_value() -> InstanceInfoTypeDef:
+    return {
+        "instanceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceInfoTypeDef(TypedDict):
+    instanceName: NotRequired[str],
+    iamSessionArn: NotRequired[str],
+    iamUserArn: NotRequired[str],
+    instanceArn: NotRequired[str],
+    registerTime: NotRequired[datetime],
+    deregisterTime: NotRequired[datetime],
+    tags: NotRequired[List[TagTypeDef]],  # (1)
+```
 
-- `instanceName`: `str`
-- `iamSessionArn`: `str`
-- `iamUserArn`: `str`
-- `instanceArn`: `str`
-- `registerTime`: `datetime`
-- `deregisterTime`: `datetime`
-- `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="instancesummarytypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## InstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import InstanceSummaryTypeDef
+
+def get_value() -> InstanceSummaryTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceSummaryTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    instanceId: NotRequired[str],
+    status: NotRequired[InstanceStatusType],  # (1)
+    lastUpdatedAt: NotRequired[datetime],
+    lifecycleEvents: NotRequired[List[LifecycleEventTypeDef]],  # (2)
+    instanceType: NotRequired[InstanceTypeType],  # (3)
+```
 
-- `deploymentId`: `str`
-- `instanceId`: `str`
-- `status`: [InstanceStatusType](./literals.md#instancestatustype)
-- `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`:
-  `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `instanceType`: [InstanceTypeType](./literals.md#instancetypetype)
-
-<a id="instancetargettypedef"></a>
-
+1. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
+2. See [:material-code-braces: LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef) 
+3. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
 ## InstanceTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import InstanceTargetTypeDef
+
+def get_value() -> InstanceTargetTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTargetTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetId: NotRequired[str],
+    targetArn: NotRequired[str],
+    status: NotRequired[TargetStatusType],  # (1)
+    lastUpdatedAt: NotRequired[datetime],
+    lifecycleEvents: NotRequired[List[LifecycleEventTypeDef]],  # (2)
+    instanceLabel: NotRequired[TargetLabelType],  # (3)
+```
 
-- `deploymentId`: `str`
-- `targetId`: `str`
-- `targetArn`: `str`
-- `status`: [TargetStatusType](./literals.md#targetstatustype)
-- `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`:
-  `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `instanceLabel`: [TargetLabelType](./literals.md#targetlabeltype)
-
-<a id="lambdafunctioninfotypedef"></a>
-
+1. See [:material-code-brackets: TargetStatusType](./literals.md#targetstatustype) 
+2. See [:material-code-braces: LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef) 
+3. See [:material-code-brackets: TargetLabelType](./literals.md#targetlabeltype) 
 ## LambdaFunctionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import LambdaFunctionInfoTypeDef
+
+def get_value() -> LambdaFunctionInfoTypeDef:
+    return {
+        "functionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `functionName`: `str`
-- `functionAlias`: `str`
-- `currentVersion`: `str`
-- `targetVersion`: `str`
-- `targetVersionWeight`: `float`
-
-<a id="lambdatargettypedef"></a>
+```python title="Definition"
+class LambdaFunctionInfoTypeDef(TypedDict):
+    functionName: NotRequired[str],
+    functionAlias: NotRequired[str],
+    currentVersion: NotRequired[str],
+    targetVersion: NotRequired[str],
+    targetVersionWeight: NotRequired[float],
+```
 
 ## LambdaTargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import LambdaTargetTypeDef
+
+def get_value() -> LambdaTargetTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LambdaTargetTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetId: NotRequired[str],
+    targetArn: NotRequired[str],
+    status: NotRequired[TargetStatusType],  # (1)
+    lastUpdatedAt: NotRequired[datetime],
+    lifecycleEvents: NotRequired[List[LifecycleEventTypeDef]],  # (2)
+    lambdaFunctionInfo: NotRequired[LambdaFunctionInfoTypeDef],  # (3)
+```
 
-- `deploymentId`: `str`
-- `targetId`: `str`
-- `targetArn`: `str`
-- `status`: [TargetStatusType](./literals.md#targetstatustype)
-- `lastUpdatedAt`: `datetime`
-- `lifecycleEvents`:
-  `List`\[[LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef)\]
-- `lambdaFunctionInfo`:
-  [LambdaFunctionInfoTypeDef](./type_defs.md#lambdafunctioninfotypedef)
-
-<a id="lastdeploymentinfotypedef"></a>
-
+1. See [:material-code-brackets: TargetStatusType](./literals.md#targetstatustype) 
+2. See [:material-code-braces: LifecycleEventTypeDef](./type_defs.md#lifecycleeventtypedef) 
+3. See [:material-code-braces: LambdaFunctionInfoTypeDef](./type_defs.md#lambdafunctioninfotypedef) 
 ## LastDeploymentInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import LastDeploymentInfoTypeDef
+
+def get_value() -> LastDeploymentInfoTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LastDeploymentInfoTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    status: NotRequired[DeploymentStatusType],  # (1)
+    endTime: NotRequired[datetime],
+    createTime: NotRequired[datetime],
+```
 
-- `deploymentId`: `str`
-- `status`: [DeploymentStatusType](./literals.md#deploymentstatustype)
-- `endTime`: `datetime`
-- `createTime`: `datetime`
-
-<a id="lifecycleeventtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
 ## LifecycleEventTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import LifecycleEventTypeDef
+
+def get_value() -> LifecycleEventTypeDef:
+    return {
+        "lifecycleEventName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecycleEventTypeDef(TypedDict):
+    lifecycleEventName: NotRequired[str],
+    diagnostics: NotRequired[DiagnosticsTypeDef],  # (1)
+    startTime: NotRequired[datetime],
+    endTime: NotRequired[datetime],
+    status: NotRequired[LifecycleEventStatusType],  # (2)
+```
 
-- `lifecycleEventName`: `str`
-- `diagnostics`: [DiagnosticsTypeDef](./type_defs.md#diagnosticstypedef)
-- `startTime`: `datetime`
-- `endTime`: `datetime`
-- `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
+1. See [:material-code-braces: DiagnosticsTypeDef](./type_defs.md#diagnosticstypedef) 
+2. See [:material-code-brackets: LifecycleEventStatusType](./literals.md#lifecycleeventstatustype) 
+## ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef
 
-<a id="listapplicationrevisionsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef
 
+def get_value() -> ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef:
+    return {
+        "applicationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationRevisionsInputListApplicationRevisionsPaginateTypeDef(TypedDict):
+    applicationName: str,
+    sortBy: NotRequired[ApplicationRevisionSortByType],  # (1)
+    sortOrder: NotRequired[SortOrderType],  # (2)
+    s3Bucket: NotRequired[str],
+    s3KeyPrefix: NotRequired[str],
+    deployed: NotRequired[ListStateFilterActionType],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-brackets: ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: ListStateFilterActionType](./literals.md#liststatefilteractiontype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationRevisionsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsInputRequestTypeDef
+
+def get_value() -> ListApplicationRevisionsInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationRevisionsInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    sortBy: NotRequired[ApplicationRevisionSortByType],  # (1)
+    sortOrder: NotRequired[SortOrderType],  # (2)
+    s3Bucket: NotRequired[str],
+    s3KeyPrefix: NotRequired[str],
+    deployed: NotRequired[ListStateFilterActionType],  # (3)
+    nextToken: NotRequired[str],
+```
 
-- `applicationName`: `str`
-
-Optional fields:
-
-- `sortBy`:
-  [ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype)
-- `sortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `s3Bucket`: `str`
-- `s3KeyPrefix`: `str`
-- `deployed`:
-  [ListStateFilterActionType](./literals.md#liststatefilteractiontype)
-- `nextToken`: `str`
-
-<a id="listapplicationrevisionsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ApplicationRevisionSortByType](./literals.md#applicationrevisionsortbytype) 
+2. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
+3. See [:material-code-brackets: ListStateFilterActionType](./literals.md#liststatefilteractiontype) 
 ## ListApplicationRevisionsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListApplicationRevisionsOutputTypeDef
+
+def get_value() -> ListApplicationRevisionsOutputTypeDef:
+    return {
+        "revisions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationRevisionsOutputTypeDef(TypedDict):
+    revisions: List[RevisionLocationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `revisions`:
-  `List`\[[RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApplicationsInputListApplicationsPaginateTypeDef
 
-<a id="listapplicationsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListApplicationsInputListApplicationsPaginateTypeDef
 
+def get_value() -> ListApplicationsInputListApplicationsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListApplicationsInputListApplicationsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApplicationsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListApplicationsInputRequestTypeDef
+
+def get_value() -> ListApplicationsInputRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listapplicationsoutputtypedef"></a>
+```python title="Definition"
+class ListApplicationsInputRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListApplicationsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListApplicationsOutputTypeDef
+
+def get_value() -> ListApplicationsOutputTypeDef:
+    return {
+        "applications": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApplicationsOutputTypeDef(TypedDict):
+    applications: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `applications`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef
 
-<a id="listdeploymentconfigsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef
 
+def get_value() -> ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentConfigsInputListDeploymentConfigsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentConfigsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsInputRequestTypeDef
+
+def get_value() -> ListDeploymentConfigsInputRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listdeploymentconfigsoutputtypedef"></a>
+```python title="Definition"
+class ListDeploymentConfigsInputRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListDeploymentConfigsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentConfigsOutputTypeDef
+
+def get_value() -> ListDeploymentConfigsOutputTypeDef:
+    return {
+        "deploymentConfigsList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentConfigsOutputTypeDef(TypedDict):
+    deploymentConfigsList: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deploymentConfigsList`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef
 
-<a id="listdeploymentgroupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef
 
+def get_value() -> ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef:
+    return {
+        "applicationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentGroupsInputListDeploymentGroupsPaginateTypeDef(TypedDict):
+    applicationName: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentGroupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsInputRequestTypeDef
+
+def get_value() -> ListDeploymentGroupsInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Required fields:
-
-- `applicationName`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listdeploymentgroupsoutputtypedef"></a>
+```python title="Definition"
+class ListDeploymentGroupsInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    nextToken: NotRequired[str],
+```
 
 ## ListDeploymentGroupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentGroupsOutputTypeDef
+
+def get_value() -> ListDeploymentGroupsOutputTypeDef:
+    return {
+        "applicationName": ...,
+        "deploymentGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentGroupsOutputTypeDef(TypedDict):
+    applicationName: str,
+    deploymentGroups: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `applicationName`: `str`
-- `deploymentGroups`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef
 
-<a id="listdeploymentinstancesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef
 
+def get_value() -> ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef:
+    return {
+        "deploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentInstancesInputListDeploymentInstancesPaginateTypeDef(TypedDict):
+    deploymentId: str,
+    instanceStatusFilter: NotRequired[Sequence[InstanceStatusType]],  # (1)
+    instanceTypeFilter: NotRequired[Sequence[InstanceTypeType]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
+2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesInputRequestTypeDef
+
+def get_value() -> ListDeploymentInstancesInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentInstancesInputRequestTypeDef(TypedDict):
+    deploymentId: str,
+    nextToken: NotRequired[str],
+    instanceStatusFilter: NotRequired[Sequence[InstanceStatusType]],  # (1)
+    instanceTypeFilter: NotRequired[Sequence[InstanceTypeType]],  # (2)
+```
 
-- `deploymentId`: `str`
-
-Optional fields:
-
-- `nextToken`: `str`
-- `instanceStatusFilter`:
-  `Sequence`\[[InstanceStatusType](./literals.md#instancestatustype)\]
-- `instanceTypeFilter`:
-  `Sequence`\[[InstanceTypeType](./literals.md#instancetypetype)\]
-
-<a id="listdeploymentinstancesoutputtypedef"></a>
-
+1. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
+2. See [:material-code-brackets: InstanceTypeType](./literals.md#instancetypetype) 
 ## ListDeploymentInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentInstancesOutputTypeDef
+
+def get_value() -> ListDeploymentInstancesOutputTypeDef:
+    return {
+        "instancesList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentInstancesOutputTypeDef(TypedDict):
+    instancesList: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `instancesList`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef
 
-<a id="listdeploymenttargetsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef
 
+def get_value() -> ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef:
+    return {
+        "deploymentId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentTargetsInputListDeploymentTargetsPaginateTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    targetFilters: NotRequired[Mapping[TargetFilterNameType, Sequence[str]]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: TargetFilterNameType](./literals.md#targetfilternametype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentTargetsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsInputRequestTypeDef
+
+def get_value() -> ListDeploymentTargetsInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDeploymentTargetsInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    nextToken: NotRequired[str],
+    targetFilters: NotRequired[Mapping[TargetFilterNameType, Sequence[str]]],  # (1)
+```
 
-- `deploymentId`: `str`
-- `nextToken`: `str`
-- `targetFilters`:
-  `Mapping`\[[TargetFilterNameType](./literals.md#targetfilternametype),
-  `Sequence`\[`str`\]\]
-
-<a id="listdeploymenttargetsoutputtypedef"></a>
-
+1. See [:material-code-brackets: TargetFilterNameType](./literals.md#targetfilternametype) 
 ## ListDeploymentTargetsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentTargetsOutputTypeDef
+
+def get_value() -> ListDeploymentTargetsOutputTypeDef:
+    return {
+        "targetIds": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentTargetsOutputTypeDef(TypedDict):
+    targetIds: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `targetIds`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDeploymentsInputListDeploymentsPaginateTypeDef
 
-<a id="listdeploymentsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListDeploymentsInputListDeploymentsPaginateTypeDef
 
+def get_value() -> ListDeploymentsInputListDeploymentsPaginateTypeDef:
+    return {
+        "applicationName": ...,
+    }
+```
+
+```python title="Definition"
+class ListDeploymentsInputListDeploymentsPaginateTypeDef(TypedDict):
+    applicationName: NotRequired[str],
+    deploymentGroupName: NotRequired[str],
+    externalId: NotRequired[str],
+    includeOnlyStatuses: NotRequired[Sequence[DeploymentStatusType]],  # (1)
+    createTimeRange: NotRequired[TimeRangeTypeDef],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDeploymentsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentsInputRequestTypeDef
+
+def get_value() -> ListDeploymentsInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListDeploymentsInputRequestTypeDef(TypedDict):
+    applicationName: NotRequired[str],
+    deploymentGroupName: NotRequired[str],
+    externalId: NotRequired[str],
+    includeOnlyStatuses: NotRequired[Sequence[DeploymentStatusType]],  # (1)
+    createTimeRange: NotRequired[TimeRangeTypeDef],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `applicationName`: `str`
-- `deploymentGroupName`: `str`
-- `externalId`: `str`
-- `includeOnlyStatuses`:
-  `Sequence`\[[DeploymentStatusType](./literals.md#deploymentstatustype)\]
-- `createTimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef)
-- `nextToken`: `str`
-
-<a id="listdeploymentsoutputtypedef"></a>
-
+1. See [:material-code-brackets: DeploymentStatusType](./literals.md#deploymentstatustype) 
+2. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
 ## ListDeploymentsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListDeploymentsOutputTypeDef
+
+def get_value() -> ListDeploymentsOutputTypeDef:
+    return {
+        "deployments": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDeploymentsOutputTypeDef(TypedDict):
+    deployments: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `deployments`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef
 
-<a id="listgithubaccounttokennamesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef
 
+def get_value() -> ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListGitHubAccountTokenNamesInputListGitHubAccountTokenNamesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListGitHubAccountTokenNamesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesInputRequestTypeDef
+
+def get_value() -> ListGitHubAccountTokenNamesInputRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-
-<a id="listgithubaccounttokennamesoutputtypedef"></a>
+```python title="Definition"
+class ListGitHubAccountTokenNamesInputRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+```
 
 ## ListGitHubAccountTokenNamesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListGitHubAccountTokenNamesOutputTypeDef
+
+def get_value() -> ListGitHubAccountTokenNamesOutputTypeDef:
+    return {
+        "tokenNameList": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGitHubAccountTokenNamesOutputTypeDef(TypedDict):
+    tokenNameList: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tokenNameList`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef
 
-<a id="listonpremisesinstancesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef
 
+def get_value() -> ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef:
+    return {
+        "registrationStatus": ...,
+    }
+```
+
+```python title="Definition"
+class ListOnPremisesInstancesInputListOnPremisesInstancesPaginateTypeDef(TypedDict):
+    registrationStatus: NotRequired[RegistrationStatusType],  # (1)
+    tagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
+2. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListOnPremisesInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesInputRequestTypeDef
+
+def get_value() -> ListOnPremisesInstancesInputRequestTypeDef:
+    return {
+        "registrationStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListOnPremisesInstancesInputRequestTypeDef(TypedDict):
+    registrationStatus: NotRequired[RegistrationStatusType],  # (1)
+    tagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (2)
+    nextToken: NotRequired[str],
+```
 
-- `registrationStatus`:
-  [RegistrationStatusType](./literals.md#registrationstatustype)
-- `tagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `nextToken`: `str`
-
-<a id="listonpremisesinstancesoutputtypedef"></a>
-
+1. See [:material-code-brackets: RegistrationStatusType](./literals.md#registrationstatustype) 
+2. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
 ## ListOnPremisesInstancesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListOnPremisesInstancesOutputTypeDef
+
+def get_value() -> ListOnPremisesInstancesOutputTypeDef:
+    return {
+        "instanceNames": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOnPremisesInstancesOutputTypeDef(TypedDict):
+    instanceNames: List[str],
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `instanceNames`: `List`\[`str`\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListTagsForResourceInputRequestTypeDef
+
+def get_value() -> ListTagsForResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsforresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsForResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsForResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ListTagsForResourceOutputTypeDef
+
+def get_value() -> ListTagsForResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="loadbalancerinfotypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LoadBalancerInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import LoadBalancerInfoTypeDef
+
+def get_value() -> LoadBalancerInfoTypeDef:
+    return {
+        "elbInfoList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LoadBalancerInfoTypeDef(TypedDict):
+    elbInfoList: NotRequired[List[ELBInfoTypeDef]],  # (1)
+    targetGroupInfoList: NotRequired[List[TargetGroupInfoTypeDef]],  # (2)
+    targetGroupPairInfoList: NotRequired[List[TargetGroupPairInfoTypeDef]],  # (3)
+```
 
-- `elbInfoList`: `List`\[[ELBInfoTypeDef](./type_defs.md#elbinfotypedef)\]
-- `targetGroupInfoList`:
-  `List`\[[TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef)\]
-- `targetGroupPairInfoList`:
-  `List`\[[TargetGroupPairInfoTypeDef](./type_defs.md#targetgrouppairinfotypedef)\]
-
-<a id="minimumhealthyhoststypedef"></a>
-
+1. See [:material-code-braces: ELBInfoTypeDef](./type_defs.md#elbinfotypedef) 
+2. See [:material-code-braces: TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef) 
+3. See [:material-code-braces: TargetGroupPairInfoTypeDef](./type_defs.md#targetgrouppairinfotypedef) 
 ## MinimumHealthyHostsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import MinimumHealthyHostsTypeDef
+
+def get_value() -> MinimumHealthyHostsTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class MinimumHealthyHostsTypeDef(TypedDict):
+    type: NotRequired[MinimumHealthyHostsTypeType],  # (1)
+    value: NotRequired[int],
+```
 
-- `type`:
-  [MinimumHealthyHostsTypeType](./literals.md#minimumhealthyhoststypetype)
-- `value`: `int`
-
-<a id="onpremisestagsettypedef"></a>
-
+1. See [:material-code-brackets: MinimumHealthyHostsTypeType](./literals.md#minimumhealthyhoststypetype) 
 ## OnPremisesTagSetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import OnPremisesTagSetTypeDef
+
+def get_value() -> OnPremisesTagSetTypeDef:
+    return {
+        "onPremisesTagSetList": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OnPremisesTagSetTypeDef(TypedDict):
+    onPremisesTagSetList: NotRequired[List[List[TagFilterTypeDef]]],  # (1)
+```
 
-- `onPremisesTagSetList`:
-  `List`\[`List`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]\]
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putlifecycleeventhookexecutionstatusinputrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutLifecycleEventHookExecutionStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusInputRequestTypeDef
+
+def get_value() -> PutLifecycleEventHookExecutionStatusInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PutLifecycleEventHookExecutionStatusInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+    lifecycleEventHookExecutionId: NotRequired[str],
+    status: NotRequired[LifecycleEventStatusType],  # (1)
+```
 
-- `deploymentId`: `str`
-- `lifecycleEventHookExecutionId`: `str`
-- `status`: [LifecycleEventStatusType](./literals.md#lifecycleeventstatustype)
-
-<a id="putlifecycleeventhookexecutionstatusoutputtypedef"></a>
-
+1. See [:material-code-brackets: LifecycleEventStatusType](./literals.md#lifecycleeventstatustype) 
 ## PutLifecycleEventHookExecutionStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import PutLifecycleEventHookExecutionStatusOutputTypeDef
+
+def get_value() -> PutLifecycleEventHookExecutionStatusOutputTypeDef:
+    return {
+        "lifecycleEventHookExecutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutLifecycleEventHookExecutionStatusOutputTypeDef(TypedDict):
+    lifecycleEventHookExecutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `lifecycleEventHookExecutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="rawstringtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RawStringTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RawStringTypeDef
+
+def get_value() -> RawStringTypeDef:
+    return {
+        "content": ...,
+    }
 ```
 
-Optional fields:
-
-- `content`: `str`
-- `sha256`: `str`
-
-<a id="registerapplicationrevisioninputrequesttypedef"></a>
+```python title="Definition"
+class RawStringTypeDef(TypedDict):
+    content: NotRequired[str],
+    sha256: NotRequired[str],
+```
 
 ## RegisterApplicationRevisionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RegisterApplicationRevisionInputRequestTypeDef
+
+def get_value() -> RegisterApplicationRevisionInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "revision": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RegisterApplicationRevisionInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    revision: RevisionLocationTypeDef,  # (1)
+    description: NotRequired[str],
+```
 
-- `applicationName`: `str`
-- `revision`: [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-
-Optional fields:
-
-- `description`: `str`
-
-<a id="registeronpremisesinstanceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
 ## RegisterOnPremisesInstanceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RegisterOnPremisesInstanceInputRequestTypeDef
+
+def get_value() -> RegisterOnPremisesInstanceInputRequestTypeDef:
+    return {
+        "instanceName": ...,
+    }
 ```
 
-Required fields:
-
-- `instanceName`: `str`
-
-Optional fields:
-
-- `iamSessionArn`: `str`
-- `iamUserArn`: `str`
-
-<a id="relateddeploymentstypedef"></a>
+```python title="Definition"
+class RegisterOnPremisesInstanceInputRequestTypeDef(TypedDict):
+    instanceName: str,
+    iamSessionArn: NotRequired[str],
+    iamUserArn: NotRequired[str],
+```
 
 ## RelatedDeploymentsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RelatedDeploymentsTypeDef
+
+def get_value() -> RelatedDeploymentsTypeDef:
+    return {
+        "autoUpdateOutdatedInstancesRootDeploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `autoUpdateOutdatedInstancesRootDeploymentId`: `str`
-- `autoUpdateOutdatedInstancesDeploymentIds`: `List`\[`str`\]
-
-<a id="removetagsfromonpremisesinstancesinputrequesttypedef"></a>
+```python title="Definition"
+class RelatedDeploymentsTypeDef(TypedDict):
+    autoUpdateOutdatedInstancesRootDeploymentId: NotRequired[str],
+    autoUpdateOutdatedInstancesDeploymentIds: NotRequired[List[str]],
+```
 
 ## RemoveTagsFromOnPremisesInstancesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RemoveTagsFromOnPremisesInstancesInputRequestTypeDef
+
+def get_value() -> RemoveTagsFromOnPremisesInstancesInputRequestTypeDef:
+    return {
+        "tags": ...,
+        "instanceNames": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveTagsFromOnPremisesInstancesInputRequestTypeDef(TypedDict):
+    tags: Sequence[TagTypeDef],  # (1)
+    instanceNames: Sequence[str],
+```
 
-- `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `instanceNames`: `Sequence`\[`str`\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="revisioninfotypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RevisionInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RevisionInfoTypeDef
+
+def get_value() -> RevisionInfoTypeDef:
+    return {
+        "revisionLocation": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RevisionInfoTypeDef(TypedDict):
+    revisionLocation: NotRequired[RevisionLocationTypeDef],  # (1)
+    genericRevisionInfo: NotRequired[GenericRevisionInfoTypeDef],  # (2)
+```
 
-- `revisionLocation`:
-  [RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef)
-- `genericRevisionInfo`:
-  [GenericRevisionInfoTypeDef](./type_defs.md#genericrevisioninfotypedef)
-
-<a id="revisionlocationtypedef"></a>
-
+1. See [:material-code-braces: RevisionLocationTypeDef](./type_defs.md#revisionlocationtypedef) 
+2. See [:material-code-braces: GenericRevisionInfoTypeDef](./type_defs.md#genericrevisioninfotypedef) 
 ## RevisionLocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RevisionLocationTypeDef
+
+def get_value() -> RevisionLocationTypeDef:
+    return {
+        "revisionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RevisionLocationTypeDef(TypedDict):
+    revisionType: NotRequired[RevisionLocationTypeType],  # (1)
+    s3Location: NotRequired[S3LocationTypeDef],  # (2)
+    gitHubLocation: NotRequired[GitHubLocationTypeDef],  # (3)
+    string: NotRequired[RawStringTypeDef],  # (4)
+    appSpecContent: NotRequired[AppSpecContentTypeDef],  # (5)
+```
 
-- `revisionType`:
-  [RevisionLocationTypeType](./literals.md#revisionlocationtypetype)
-- `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-- `gitHubLocation`:
-  [GitHubLocationTypeDef](./type_defs.md#githublocationtypedef)
-- `string`: [RawStringTypeDef](./type_defs.md#rawstringtypedef)
-- `appSpecContent`:
-  [AppSpecContentTypeDef](./type_defs.md#appspeccontenttypedef)
-
-<a id="rollbackinfotypedef"></a>
-
+1. See [:material-code-brackets: RevisionLocationTypeType](./literals.md#revisionlocationtypetype) 
+2. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
+3. See [:material-code-braces: GitHubLocationTypeDef](./type_defs.md#githublocationtypedef) 
+4. See [:material-code-braces: RawStringTypeDef](./type_defs.md#rawstringtypedef) 
+5. See [:material-code-braces: AppSpecContentTypeDef](./type_defs.md#appspeccontenttypedef) 
 ## RollbackInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import RollbackInfoTypeDef
+
+def get_value() -> RollbackInfoTypeDef:
+    return {
+        "rollbackDeploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `rollbackDeploymentId`: `str`
-- `rollbackTriggeringDeploymentId`: `str`
-- `rollbackMessage`: `str`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class RollbackInfoTypeDef(TypedDict):
+    rollbackDeploymentId: NotRequired[str],
+    rollbackTriggeringDeploymentId: NotRequired[str],
+    rollbackMessage: NotRequired[str],
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    key: NotRequired[str],
+    bundleType: NotRequired[BundleTypeType],  # (1)
+    version: NotRequired[str],
+    eTag: NotRequired[str],
+```
 
-- `bucket`: `str`
-- `key`: `str`
-- `bundleType`: [BundleTypeType](./literals.md#bundletypetype)
-- `version`: `str`
-- `eTag`: `str`
-
-<a id="skipwaittimeforinstanceterminationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: BundleTypeType](./literals.md#bundletypetype) 
 ## SkipWaitTimeForInstanceTerminationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import SkipWaitTimeForInstanceTerminationInputRequestTypeDef
+
+def get_value() -> SkipWaitTimeForInstanceTerminationInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Optional fields:
-
-- `deploymentId`: `str`
-
-<a id="stopdeploymentinputrequesttypedef"></a>
+```python title="Definition"
+class SkipWaitTimeForInstanceTerminationInputRequestTypeDef(TypedDict):
+    deploymentId: NotRequired[str],
+```
 
 ## StopDeploymentInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import StopDeploymentInputRequestTypeDef
+
+def get_value() -> StopDeploymentInputRequestTypeDef:
+    return {
+        "deploymentId": ...,
+    }
 ```
 
-Required fields:
-
-- `deploymentId`: `str`
-
-Optional fields:
-
-- `autoRollbackEnabled`: `bool`
-
-<a id="stopdeploymentoutputtypedef"></a>
+```python title="Definition"
+class StopDeploymentInputRequestTypeDef(TypedDict):
+    deploymentId: str,
+    autoRollbackEnabled: NotRequired[bool],
+```
 
 ## StopDeploymentOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import StopDeploymentOutputTypeDef
+
+def get_value() -> StopDeploymentOutputTypeDef:
+    return {
+        "status": ...,
+        "statusMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StopDeploymentOutputTypeDef(TypedDict):
+    status: StopStatusType,  # (1)
+    statusMessage: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `status`: [StopStatusType](./literals.md#stopstatustype)
-- `statusMessage`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagfiltertypedef"></a>
-
+1. See [:material-code-brackets: StopStatusType](./literals.md#stopstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagFilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TagFilterTypeDef
+
+def get_value() -> TagFilterTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TagFilterTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+    Type: NotRequired[TagFilterTypeType],  # (1)
+```
 
-- `Key`: `str`
-- `Value`: `str`
-- `Type`: [TagFilterTypeType](./literals.md#tagfiltertypetype)
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: TagFilterTypeType](./literals.md#tagfiltertypetype) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="targetgroupinfotypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## TargetGroupInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TargetGroupInfoTypeDef
+
+def get_value() -> TargetGroupInfoTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-
-<a id="targetgrouppairinfotypedef"></a>
+```python title="Definition"
+class TargetGroupInfoTypeDef(TypedDict):
+    name: NotRequired[str],
+```
 
 ## TargetGroupPairInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TargetGroupPairInfoTypeDef
+
+def get_value() -> TargetGroupPairInfoTypeDef:
+    return {
+        "targetGroups": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetGroupPairInfoTypeDef(TypedDict):
+    targetGroups: NotRequired[List[TargetGroupInfoTypeDef]],  # (1)
+    prodTrafficRoute: NotRequired[TrafficRouteTypeDef],  # (2)
+    testTrafficRoute: NotRequired[TrafficRouteTypeDef],  # (2)
+```
 
-- `targetGroups`:
-  `List`\[[TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef)\]
-- `prodTrafficRoute`: [TrafficRouteTypeDef](./type_defs.md#trafficroutetypedef)
-- `testTrafficRoute`: [TrafficRouteTypeDef](./type_defs.md#trafficroutetypedef)
-
-<a id="targetinstancestypedef"></a>
-
+1. See [:material-code-braces: TargetGroupInfoTypeDef](./type_defs.md#targetgroupinfotypedef) 
+2. See [:material-code-braces: TrafficRouteTypeDef](./type_defs.md#trafficroutetypedef) 
+3. See [:material-code-braces: TrafficRouteTypeDef](./type_defs.md#trafficroutetypedef) 
 ## TargetInstancesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TargetInstancesTypeDef
+
+def get_value() -> TargetInstancesTypeDef:
+    return {
+        "tagFilters": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TargetInstancesTypeDef(TypedDict):
+    tagFilters: NotRequired[List[EC2TagFilterTypeDef]],  # (1)
+    autoScalingGroups: NotRequired[List[str]],
+    ec2TagSet: NotRequired[EC2TagSetTypeDef],  # (2)
+```
 
-- `tagFilters`:
-  `List`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
-- `autoScalingGroups`: `List`\[`str`\]
-- `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-
-<a id="timebasedcanarytypedef"></a>
-
+1. See [:material-code-braces: EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef) 
+2. See [:material-code-braces: EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef) 
 ## TimeBasedCanaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TimeBasedCanaryTypeDef
+
+def get_value() -> TimeBasedCanaryTypeDef:
+    return {
+        "canaryPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `canaryPercentage`: `int`
-- `canaryInterval`: `int`
-
-<a id="timebasedlineartypedef"></a>
+```python title="Definition"
+class TimeBasedCanaryTypeDef(TypedDict):
+    canaryPercentage: NotRequired[int],
+    canaryInterval: NotRequired[int],
+```
 
 ## TimeBasedLinearTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TimeBasedLinearTypeDef
+
+def get_value() -> TimeBasedLinearTypeDef:
+    return {
+        "linearPercentage": ...,
+    }
 ```
 
-Optional fields:
-
-- `linearPercentage`: `int`
-- `linearInterval`: `int`
-
-<a id="timerangetypedef"></a>
+```python title="Definition"
+class TimeBasedLinearTypeDef(TypedDict):
+    linearPercentage: NotRequired[int],
+    linearInterval: NotRequired[int],
+```
 
 ## TimeRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TimeRangeTypeDef
+
+def get_value() -> TimeRangeTypeDef:
+    return {
+        "start": ...,
+    }
 ```
 
-Optional fields:
-
-- `start`: `Union`\[`datetime`, `str`\]
-- `end`: `Union`\[`datetime`, `str`\]
-
-<a id="trafficroutetypedef"></a>
+```python title="Definition"
+class TimeRangeTypeDef(TypedDict):
+    start: NotRequired[Union[datetime, str]],
+    end: NotRequired[Union[datetime, str]],
+```
 
 ## TrafficRouteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TrafficRouteTypeDef
+
+def get_value() -> TrafficRouteTypeDef:
+    return {
+        "listenerArns": ...,
+    }
 ```
 
-Optional fields:
-
-- `listenerArns`: `List`\[`str`\]
-
-<a id="trafficroutingconfigtypedef"></a>
+```python title="Definition"
+class TrafficRouteTypeDef(TypedDict):
+    listenerArns: NotRequired[List[str]],
+```
 
 ## TrafficRoutingConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TrafficRoutingConfigTypeDef
+
+def get_value() -> TrafficRoutingConfigTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TrafficRoutingConfigTypeDef(TypedDict):
+    type: NotRequired[TrafficRoutingTypeType],  # (1)
+    timeBasedCanary: NotRequired[TimeBasedCanaryTypeDef],  # (2)
+    timeBasedLinear: NotRequired[TimeBasedLinearTypeDef],  # (3)
+```
 
-- `type`: [TrafficRoutingTypeType](./literals.md#trafficroutingtypetype)
-- `timeBasedCanary`:
-  [TimeBasedCanaryTypeDef](./type_defs.md#timebasedcanarytypedef)
-- `timeBasedLinear`:
-  [TimeBasedLinearTypeDef](./type_defs.md#timebasedlineartypedef)
-
-<a id="triggerconfigtypedef"></a>
-
+1. See [:material-code-brackets: TrafficRoutingTypeType](./literals.md#trafficroutingtypetype) 
+2. See [:material-code-braces: TimeBasedCanaryTypeDef](./type_defs.md#timebasedcanarytypedef) 
+3. See [:material-code-braces: TimeBasedLinearTypeDef](./type_defs.md#timebasedlineartypedef) 
 ## TriggerConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import TriggerConfigTypeDef
+
+def get_value() -> TriggerConfigTypeDef:
+    return {
+        "triggerName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TriggerConfigTypeDef(TypedDict):
+    triggerName: NotRequired[str],
+    triggerTargetArn: NotRequired[str],
+    triggerEvents: NotRequired[List[TriggerEventTypeType]],  # (1)
+```
 
-- `triggerName`: `str`
-- `triggerTargetArn`: `str`
-- `triggerEvents`:
-  `List`\[[TriggerEventTypeType](./literals.md#triggereventtypetype)\]
-
-<a id="untagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: TriggerEventTypeType](./literals.md#triggereventtypetype) 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapplicationinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateApplicationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import UpdateApplicationInputRequestTypeDef
+
+def get_value() -> UpdateApplicationInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `applicationName`: `str`
-- `newApplicationName`: `str`
-
-<a id="updatedeploymentgroupinputrequesttypedef"></a>
+```python title="Definition"
+class UpdateApplicationInputRequestTypeDef(TypedDict):
+    applicationName: NotRequired[str],
+    newApplicationName: NotRequired[str],
+```
 
 ## UpdateDeploymentGroupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupInputRequestTypeDef
+
+def get_value() -> UpdateDeploymentGroupInputRequestTypeDef:
+    return {
+        "applicationName": ...,
+        "currentDeploymentGroupName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeploymentGroupInputRequestTypeDef(TypedDict):
+    applicationName: str,
+    currentDeploymentGroupName: str,
+    newDeploymentGroupName: NotRequired[str],
+    deploymentConfigName: NotRequired[str],
+    ec2TagFilters: NotRequired[Sequence[EC2TagFilterTypeDef]],  # (1)
+    onPremisesInstanceTagFilters: NotRequired[Sequence[TagFilterTypeDef]],  # (2)
+    autoScalingGroups: NotRequired[Sequence[str]],
+    serviceRoleArn: NotRequired[str],
+    triggerConfigurations: NotRequired[Sequence[TriggerConfigTypeDef]],  # (3)
+    alarmConfiguration: NotRequired[AlarmConfigurationTypeDef],  # (4)
+    autoRollbackConfiguration: NotRequired[AutoRollbackConfigurationTypeDef],  # (5)
+    outdatedInstancesStrategy: NotRequired[OutdatedInstancesStrategyType],  # (6)
+    deploymentStyle: NotRequired[DeploymentStyleTypeDef],  # (7)
+    blueGreenDeploymentConfiguration: NotRequired[BlueGreenDeploymentConfigurationTypeDef],  # (8)
+    loadBalancerInfo: NotRequired[LoadBalancerInfoTypeDef],  # (9)
+    ec2TagSet: NotRequired[EC2TagSetTypeDef],  # (10)
+    ecsServices: NotRequired[Sequence[ECSServiceTypeDef]],  # (11)
+    onPremisesTagSet: NotRequired[OnPremisesTagSetTypeDef],  # (12)
+```
 
-- `applicationName`: `str`
-- `currentDeploymentGroupName`: `str`
-
-Optional fields:
-
-- `newDeploymentGroupName`: `str`
-- `deploymentConfigName`: `str`
-- `ec2TagFilters`:
-  `Sequence`\[[EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef)\]
-- `onPremisesInstanceTagFilters`:
-  `Sequence`\[[TagFilterTypeDef](./type_defs.md#tagfiltertypedef)\]
-- `autoScalingGroups`: `Sequence`\[`str`\]
-- `serviceRoleArn`: `str`
-- `triggerConfigurations`:
-  `Sequence`\[[TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef)\]
-- `alarmConfiguration`:
-  [AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef)
-- `autoRollbackConfiguration`:
-  [AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef)
-- `outdatedInstancesStrategy`:
-  [OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype)
-- `deploymentStyle`:
-  [DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef)
-- `blueGreenDeploymentConfiguration`:
-  [BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef)
-- `loadBalancerInfo`:
-  [LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef)
-- `ec2TagSet`: [EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef)
-- `ecsServices`:
-  `Sequence`\[[ECSServiceTypeDef](./type_defs.md#ecsservicetypedef)\]
-- `onPremisesTagSet`:
-  [OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef)
-
-<a id="updatedeploymentgroupoutputtypedef"></a>
-
+1. See [:material-code-braces: EC2TagFilterTypeDef](./type_defs.md#ec2tagfiltertypedef) 
+2. See [:material-code-braces: TagFilterTypeDef](./type_defs.md#tagfiltertypedef) 
+3. See [:material-code-braces: TriggerConfigTypeDef](./type_defs.md#triggerconfigtypedef) 
+4. See [:material-code-braces: AlarmConfigurationTypeDef](./type_defs.md#alarmconfigurationtypedef) 
+5. See [:material-code-braces: AutoRollbackConfigurationTypeDef](./type_defs.md#autorollbackconfigurationtypedef) 
+6. See [:material-code-brackets: OutdatedInstancesStrategyType](./literals.md#outdatedinstancesstrategytype) 
+7. See [:material-code-braces: DeploymentStyleTypeDef](./type_defs.md#deploymentstyletypedef) 
+8. See [:material-code-braces: BlueGreenDeploymentConfigurationTypeDef](./type_defs.md#bluegreendeploymentconfigurationtypedef) 
+9. See [:material-code-braces: LoadBalancerInfoTypeDef](./type_defs.md#loadbalancerinfotypedef) 
+10. See [:material-code-braces: EC2TagSetTypeDef](./type_defs.md#ec2tagsettypedef) 
+11. See [:material-code-braces: ECSServiceTypeDef](./type_defs.md#ecsservicetypedef) 
+12. See [:material-code-braces: OnPremisesTagSetTypeDef](./type_defs.md#onpremisestagsettypedef) 
 ## UpdateDeploymentGroupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import UpdateDeploymentGroupOutputTypeDef
+
+def get_value() -> UpdateDeploymentGroupOutputTypeDef:
+    return {
+        "hooksNotCleanedUp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateDeploymentGroupOutputTypeDef(TypedDict):
+    hooksNotCleanedUp: List[AutoScalingGroupTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `hooksNotCleanedUp`:
-  `List`\[[AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-braces: AutoScalingGroupTypeDef](./type_defs.md#autoscalinggrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_codedeploy.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
-- `Delay`: `int`
-- `MaxAttempts`: `int`

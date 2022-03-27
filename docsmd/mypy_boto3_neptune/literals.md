@@ -1,655 +1,711 @@
-<a id="literals-for-boto3-neptune-module"></a>
-
-# Literals for boto3 Neptune module
+# Literals
 
 > [Index](../README.md) > [Neptune](./README.md) > Literals
 
-Auto-generated documentation for
-[Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
-type annotations stubs module
-[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
+!!! note ""
 
-- [Literals for boto3 Neptune module](#literals-for-boto3-neptune-module)
-  - [ApplyMethodType](#applymethodtype)
-  - [DBInstanceAvailableWaiterName](#dbinstanceavailablewaitername)
-  - [DBInstanceDeletedWaiterName](#dbinstancedeletedwaitername)
-  - [DescribeDBClusterEndpointsPaginatorName](#describedbclusterendpointspaginatorname)
-  - [DescribeDBClusterParameterGroupsPaginatorName](#describedbclusterparametergroupspaginatorname)
-  - [DescribeDBClusterParametersPaginatorName](#describedbclusterparameterspaginatorname)
-  - [DescribeDBClusterSnapshotsPaginatorName](#describedbclustersnapshotspaginatorname)
-  - [DescribeDBClustersPaginatorName](#describedbclusterspaginatorname)
-  - [DescribeDBEngineVersionsPaginatorName](#describedbengineversionspaginatorname)
-  - [DescribeDBInstancesPaginatorName](#describedbinstancespaginatorname)
-  - [DescribeDBParameterGroupsPaginatorName](#describedbparametergroupspaginatorname)
-  - [DescribeDBParametersPaginatorName](#describedbparameterspaginatorname)
-  - [DescribeDBSubnetGroupsPaginatorName](#describedbsubnetgroupspaginatorname)
-  - [DescribeEngineDefaultParametersPaginatorName](#describeenginedefaultparameterspaginatorname)
-  - [DescribeEventSubscriptionsPaginatorName](#describeeventsubscriptionspaginatorname)
-  - [DescribeEventsPaginatorName](#describeeventspaginatorname)
-  - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
-  - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
-  - [SourceTypeType](#sourcetypetype)
-  - [NeptuneServiceName](#neptuneservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
-
-<a id="applymethodtype"></a>
+    Auto-generated documentation for [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
+    type annotations stubs module [mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 ## ApplyMethodType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import ApplyMethodType
+
+def get_value() -> ApplyMethodType:
+    return "immediate"
 ```
 
-Values:
-
-- `immediate`
-- `pending-reboot`
-
-<a id="dbinstanceavailablewaitername"></a>
-
+```python title="Definition"
+ApplyMethodType = Literal[
+    "immediate",
+    "pending-reboot",
+]
+```
 ## DBInstanceAvailableWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DBInstanceAvailableWaiterName
+
+def get_value() -> DBInstanceAvailableWaiterName:
+    return "db_instance_available"
 ```
 
-Values:
-
-- `db_instance_available`
-
-<a id="dbinstancedeletedwaitername"></a>
-
+```python title="Definition"
+DBInstanceAvailableWaiterName = Literal[
+    "db_instance_available",
+]
+```
 ## DBInstanceDeletedWaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DBInstanceDeletedWaiterName
+
+def get_value() -> DBInstanceDeletedWaiterName:
+    return "db_instance_deleted"
 ```
 
-Values:
-
-- `db_instance_deleted`
-
-<a id="describedbclusterendpointspaginatorname"></a>
-
+```python title="Definition"
+DBInstanceDeletedWaiterName = Literal[
+    "db_instance_deleted",
+]
+```
 ## DescribeDBClusterEndpointsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBClusterEndpointsPaginatorName
+
+def get_value() -> DescribeDBClusterEndpointsPaginatorName:
+    return "describe_db_cluster_endpoints"
 ```
 
-Values:
-
-- `describe_db_cluster_endpoints`
-
-<a id="describedbclusterparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterEndpointsPaginatorName = Literal[
+    "describe_db_cluster_endpoints",
+]
+```
 ## DescribeDBClusterParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBClusterParameterGroupsPaginatorName
+
+def get_value() -> DescribeDBClusterParameterGroupsPaginatorName:
+    return "describe_db_cluster_parameter_groups"
 ```
 
-Values:
-
-- `describe_db_cluster_parameter_groups`
-
-<a id="describedbclusterparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterParameterGroupsPaginatorName = Literal[
+    "describe_db_cluster_parameter_groups",
+]
+```
 ## DescribeDBClusterParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBClusterParametersPaginatorName
+
+def get_value() -> DescribeDBClusterParametersPaginatorName:
+    return "describe_db_cluster_parameters"
 ```
 
-Values:
-
-- `describe_db_cluster_parameters`
-
-<a id="describedbclustersnapshotspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterParametersPaginatorName = Literal[
+    "describe_db_cluster_parameters",
+]
+```
 ## DescribeDBClusterSnapshotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBClusterSnapshotsPaginatorName
+
+def get_value() -> DescribeDBClusterSnapshotsPaginatorName:
+    return "describe_db_cluster_snapshots"
 ```
 
-Values:
-
-- `describe_db_cluster_snapshots`
-
-<a id="describedbclusterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClusterSnapshotsPaginatorName = Literal[
+    "describe_db_cluster_snapshots",
+]
+```
 ## DescribeDBClustersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBClustersPaginatorName
+
+def get_value() -> DescribeDBClustersPaginatorName:
+    return "describe_db_clusters"
 ```
 
-Values:
-
-- `describe_db_clusters`
-
-<a id="describedbengineversionspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBClustersPaginatorName = Literal[
+    "describe_db_clusters",
+]
+```
 ## DescribeDBEngineVersionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBEngineVersionsPaginatorName
+
+def get_value() -> DescribeDBEngineVersionsPaginatorName:
+    return "describe_db_engine_versions"
 ```
 
-Values:
-
-- `describe_db_engine_versions`
-
-<a id="describedbinstancespaginatorname"></a>
-
+```python title="Definition"
+DescribeDBEngineVersionsPaginatorName = Literal[
+    "describe_db_engine_versions",
+]
+```
 ## DescribeDBInstancesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBInstancesPaginatorName
+
+def get_value() -> DescribeDBInstancesPaginatorName:
+    return "describe_db_instances"
 ```
 
-Values:
-
-- `describe_db_instances`
-
-<a id="describedbparametergroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBInstancesPaginatorName = Literal[
+    "describe_db_instances",
+]
+```
 ## DescribeDBParameterGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBParameterGroupsPaginatorName
+
+def get_value() -> DescribeDBParameterGroupsPaginatorName:
+    return "describe_db_parameter_groups"
 ```
 
-Values:
-
-- `describe_db_parameter_groups`
-
-<a id="describedbparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBParameterGroupsPaginatorName = Literal[
+    "describe_db_parameter_groups",
+]
+```
 ## DescribeDBParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBParametersPaginatorName
+
+def get_value() -> DescribeDBParametersPaginatorName:
+    return "describe_db_parameters"
 ```
 
-Values:
-
-- `describe_db_parameters`
-
-<a id="describedbsubnetgroupspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBParametersPaginatorName = Literal[
+    "describe_db_parameters",
+]
+```
 ## DescribeDBSubnetGroupsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeDBSubnetGroupsPaginatorName
+
+def get_value() -> DescribeDBSubnetGroupsPaginatorName:
+    return "describe_db_subnet_groups"
 ```
 
-Values:
-
-- `describe_db_subnet_groups`
-
-<a id="describeenginedefaultparameterspaginatorname"></a>
-
+```python title="Definition"
+DescribeDBSubnetGroupsPaginatorName = Literal[
+    "describe_db_subnet_groups",
+]
+```
 ## DescribeEngineDefaultParametersPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeEngineDefaultParametersPaginatorName
+
+def get_value() -> DescribeEngineDefaultParametersPaginatorName:
+    return "describe_engine_default_parameters"
 ```
 
-Values:
-
-- `describe_engine_default_parameters`
-
-<a id="describeeventsubscriptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeEngineDefaultParametersPaginatorName = Literal[
+    "describe_engine_default_parameters",
+]
+```
 ## DescribeEventSubscriptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeEventSubscriptionsPaginatorName
+
+def get_value() -> DescribeEventSubscriptionsPaginatorName:
+    return "describe_event_subscriptions"
 ```
 
-Values:
-
-- `describe_event_subscriptions`
-
-<a id="describeeventspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventSubscriptionsPaginatorName = Literal[
+    "describe_event_subscriptions",
+]
+```
 ## DescribeEventsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeEventsPaginatorName
+
+def get_value() -> DescribeEventsPaginatorName:
+    return "describe_events"
 ```
 
-Values:
-
-- `describe_events`
-
-<a id="describeorderabledbinstanceoptionspaginatorname"></a>
-
+```python title="Definition"
+DescribeEventsPaginatorName = Literal[
+    "describe_events",
+]
+```
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribeOrderableDBInstanceOptionsPaginatorName
+
+def get_value() -> DescribeOrderableDBInstanceOptionsPaginatorName:
+    return "describe_orderable_db_instance_options"
 ```
 
-Values:
-
-- `describe_orderable_db_instance_options`
-
-<a id="describependingmaintenanceactionspaginatorname"></a>
-
+```python title="Definition"
+DescribeOrderableDBInstanceOptionsPaginatorName = Literal[
+    "describe_orderable_db_instance_options",
+]
+```
 ## DescribePendingMaintenanceActionsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import DescribePendingMaintenanceActionsPaginatorName
+
+def get_value() -> DescribePendingMaintenanceActionsPaginatorName:
+    return "describe_pending_maintenance_actions"
 ```
 
-Values:
-
-- `describe_pending_maintenance_actions`
-
-<a id="sourcetypetype"></a>
-
+```python title="Definition"
+DescribePendingMaintenanceActionsPaginatorName = Literal[
+    "describe_pending_maintenance_actions",
+]
+```
 ## SourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import SourceTypeType
+
+def get_value() -> SourceTypeType:
+    return "db-cluster"
 ```
 
-Values:
-
-- `db-cluster`
-- `db-cluster-snapshot`
-- `db-instance`
-- `db-parameter-group`
-- `db-security-group`
-- `db-snapshot`
-
-<a id="neptuneservicename"></a>
-
+```python title="Definition"
+SourceTypeType = Literal[
+    "db-cluster",
+    "db-cluster-snapshot",
+    "db-instance",
+    "db-parameter-group",
+    "db-security-group",
+    "db-snapshot",
+]
+```
 ## NeptuneServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import NeptuneServiceName
+
+def get_value() -> NeptuneServiceName:
+    return "neptune"
 ```
 
-Values:
-
-- `neptune`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+NeptuneServiceName = Literal[
+    "neptune",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_db_cluster_endpoints"
 ```
 
-Values:
-
-- `describe_db_cluster_endpoints`
-- `describe_db_cluster_parameter_groups`
-- `describe_db_cluster_parameters`
-- `describe_db_cluster_snapshots`
-- `describe_db_clusters`
-- `describe_db_engine_versions`
-- `describe_db_instances`
-- `describe_db_parameter_groups`
-- `describe_db_parameters`
-- `describe_db_subnet_groups`
-- `describe_engine_default_parameters`
-- `describe_event_subscriptions`
-- `describe_events`
-- `describe_orderable_db_instance_options`
-- `describe_pending_maintenance_actions`
-
-<a id="waitername"></a>
-
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_db_cluster_endpoints",
+    "describe_db_cluster_parameter_groups",
+    "describe_db_cluster_parameters",
+    "describe_db_cluster_snapshots",
+    "describe_db_clusters",
+    "describe_db_engine_versions",
+    "describe_db_instances",
+    "describe_db_parameter_groups",
+    "describe_db_parameters",
+    "describe_db_subnet_groups",
+    "describe_engine_default_parameters",
+    "describe_event_subscriptions",
+    "describe_events",
+    "describe_orderable_db_instance_options",
+    "describe_pending_maintenance_actions",
+]
+```
 ## WaiterName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_neptune.literals import WaiterName
+
+def get_value() -> WaiterName:
+    return "db_instance_available"
 ```
 
-Values:
+```python title="Definition"
+WaiterName = Literal[
+    "db_instance_available",
+    "db_instance_deleted",
+]
+```
+## RegionName
 
-- `db_instance_available`
-- `db_instance_deleted`
+```python title="Usage Example"
+from mypy_boto3_neptune.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ap-southeast-3",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

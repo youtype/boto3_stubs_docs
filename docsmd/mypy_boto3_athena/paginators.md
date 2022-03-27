@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-athena-module"></a>
-
-# Paginators for boto3 Athena module
+# Paginators
 
 > [Index](../README.md) > [Athena](./README.md) > Paginators
 
-Auto-generated documentation for
-[Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
-type annotations stubs module
-[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
+!!! note ""
 
-- [Paginators for boto3 Athena module](#paginators-for-boto3-athena-module)
-  - [GetQueryResultsPaginator](#getqueryresultspaginator)
-  - [ListDataCatalogsPaginator](#listdatacatalogspaginator)
-  - [ListDatabasesPaginator](#listdatabasespaginator)
-  - [ListNamedQueriesPaginator](#listnamedqueriespaginator)
-  - [ListQueryExecutionsPaginator](#listqueryexecutionspaginator)
-  - [ListTableMetadataPaginator](#listtablemetadatapaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="getqueryresultspaginator"></a>
+    Auto-generated documentation for [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
+    type annotations stubs module [mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 ## GetQueryResultsPaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("get_query_results")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("get_query_results")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.GetQueryResults)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import GetQueryResultsPaginator
@@ -36,28 +21,40 @@ def get_get_query_results_paginator() -> GetQueryResultsPaginator:
     return Session().client("athena").get_paginator("get_query_results")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.GetQueryResults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.GetQueryResults)
 
-Arguments for `GetQueryResultsPaginator.paginate` method:
+### paginate
 
-- `QueryExecutionId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetQueryResultsPaginator.paginate` method.
 
-`GetQueryResultsPaginator.paginate` returns
-`_PageIterator`\[[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    QueryExecutionId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetQueryResultsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatacatalogspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetQueryResultsInputGetQueryResultsPaginateTypeDef = {  # (1)
+    "QueryExecutionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetQueryResultsInputGetQueryResultsPaginateTypeDef](./type_defs.md#getqueryresultsinputgetqueryresultspaginatetypedef) 
 ## ListDataCatalogsPaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("list_data_catalogs")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_data_catalogs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDataCatalogs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListDataCatalogsPaginator
@@ -66,26 +63,39 @@ def get_list_data_catalogs_paginator() -> ListDataCatalogsPaginator:
     return Session().client("athena").get_paginator("list_data_catalogs")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListDataCatalogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDataCatalogs)
 
-Arguments for `ListDataCatalogsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDataCatalogsPaginator.paginate` method.
 
-`ListDataCatalogsPaginator.paginate` returns
-`_PageIterator`\[[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDataCatalogsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdatabasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDataCatalogsInputListDataCatalogsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDataCatalogsInputListDataCatalogsPaginateTypeDef](./type_defs.md#listdatacatalogsinputlistdatacatalogspaginatetypedef) 
 ## ListDatabasesPaginator
 
-Type annotations for `boto3.client("athena").get_paginator("list_databases")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_databases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDatabases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListDatabasesPaginator
@@ -94,28 +104,40 @@ def get_list_databases_paginator() -> ListDatabasesPaginator:
     return Session().client("athena").get_paginator("list_databases")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListDatabases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListDatabases)
 
-Arguments for `ListDatabasesPaginator.paginate` method:
+### paginate
 
-- `CatalogName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDatabasesPaginator.paginate` method.
 
-`ListDatabasesPaginator.paginate` returns
-`_PageIterator`\[[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CatalogName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDatabasesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listnamedqueriespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDatabasesInputListDatabasesPaginateTypeDef = {  # (1)
+    "CatalogName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDatabasesInputListDatabasesPaginateTypeDef](./type_defs.md#listdatabasesinputlistdatabasespaginatetypedef) 
 ## ListNamedQueriesPaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("list_named_queries")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_named_queries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListNamedQueries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListNamedQueriesPaginator
@@ -124,28 +146,40 @@ def get_list_named_queries_paginator() -> ListNamedQueriesPaginator:
     return Session().client("athena").get_paginator("list_named_queries")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListNamedQueries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListNamedQueries)
 
-Arguments for `ListNamedQueriesPaginator.paginate` method:
+### paginate
 
-- `WorkGroup`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListNamedQueriesPaginator.paginate` method.
 
-`ListNamedQueriesPaginator.paginate` returns
-`_PageIterator`\[[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WorkGroup: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListNamedQueriesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listqueryexecutionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListNamedQueriesInputListNamedQueriesPaginateTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListNamedQueriesInputListNamedQueriesPaginateTypeDef](./type_defs.md#listnamedqueriesinputlistnamedqueriespaginatetypedef) 
 ## ListQueryExecutionsPaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("list_query_executions")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_query_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListQueryExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListQueryExecutionsPaginator
@@ -154,28 +188,40 @@ def get_list_query_executions_paginator() -> ListQueryExecutionsPaginator:
     return Session().client("athena").get_paginator("list_query_executions")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListQueryExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListQueryExecutions)
 
-Arguments for `ListQueryExecutionsPaginator.paginate` method:
+### paginate
 
-- `WorkGroup`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListQueryExecutionsPaginator.paginate` method.
 
-`ListQueryExecutionsPaginator.paginate` returns
-`_PageIterator`\[[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WorkGroup: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListQueryExecutionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtablemetadatapaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListQueryExecutionsInputListQueryExecutionsPaginateTypeDef = {  # (1)
+    "WorkGroup": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListQueryExecutionsInputListQueryExecutionsPaginateTypeDef](./type_defs.md#listqueryexecutionsinputlistqueryexecutionspaginatetypedef) 
 ## ListTableMetadataPaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("list_table_metadata")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_table_metadata")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTableMetadata)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListTableMetadataPaginator
@@ -184,30 +230,43 @@ def get_list_table_metadata_paginator() -> ListTableMetadataPaginator:
     return Session().client("athena").get_paginator("list_table_metadata")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListTableMetadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTableMetadata)
 
-Arguments for `ListTableMetadataPaginator.paginate` method:
+### paginate
 
-- `CatalogName`: `str` *(required)*
-- `DatabaseName`: `str` *(required)*
-- `Expression`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTableMetadataPaginator.paginate` method.
 
-`ListTableMetadataPaginator.paginate` returns
-`_PageIterator`\[[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CatalogName: str,
+    DatabaseName: str,
+    Expression: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTableMetadataOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListTableMetadataInputListTableMetadataPaginateTypeDef = {  # (1)
+    "CatalogName": ...,
+    "DatabaseName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTableMetadataInputListTableMetadataPaginateTypeDef](./type_defs.md#listtablemetadatainputlisttablemetadatapaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("athena").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("athena").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_athena.paginator import ListTagsForResourcePaginator
@@ -216,14 +275,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("athena").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[Athena.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `ResourceARN`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ResourceARN: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputListTagsForResourcePaginateTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef) 

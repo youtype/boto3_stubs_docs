@@ -1,3992 +1,4691 @@
-<a id="typed-dictionaries-for-boto3-dynamodb-module"></a>
-
-# Typed dictionaries for boto3 DynamoDB module
+# Typed dictionaries
 
 > [Index](../README.md) > [DynamoDB](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module
-[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DynamoDB module](#typed-dictionaries-for-boto3-dynamodb-module)
-  - [ArchivalSummaryResponseMetadataTypeDef](#archivalsummaryresponsemetadatatypedef)
-  - [ArchivalSummaryTypeDef](#archivalsummarytypedef)
-  - [AttributeDefinitionTypeDef](#attributedefinitiontypedef)
-  - [AttributeValueUpdateTypeDef](#attributevalueupdatetypedef)
-  - [AutoScalingPolicyDescriptionTypeDef](#autoscalingpolicydescriptiontypedef)
-  - [AutoScalingPolicyUpdateTypeDef](#autoscalingpolicyupdatetypedef)
-  - [AutoScalingSettingsDescriptionTypeDef](#autoscalingsettingsdescriptiontypedef)
-  - [AutoScalingSettingsUpdateTypeDef](#autoscalingsettingsupdatetypedef)
-  - [AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef](#autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef)
-  - [AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef](#autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef)
-  - [BackupDescriptionTypeDef](#backupdescriptiontypedef)
-  - [BackupDetailsTypeDef](#backupdetailstypedef)
-  - [BackupSummaryTypeDef](#backupsummarytypedef)
-  - [BatchExecuteStatementInputRequestTypeDef](#batchexecutestatementinputrequesttypedef)
-  - [BatchExecuteStatementOutputTypeDef](#batchexecutestatementoutputtypedef)
-  - [BatchGetItemInputRequestTypeDef](#batchgetiteminputrequesttypedef)
-  - [BatchGetItemInputServiceResourceBatchGetItemTypeDef](#batchgetiteminputserviceresourcebatchgetitemtypedef)
-  - [BatchGetItemOutputTypeDef](#batchgetitemoutputtypedef)
-  - [BatchStatementErrorTypeDef](#batchstatementerrortypedef)
-  - [BatchStatementRequestTypeDef](#batchstatementrequesttypedef)
-  - [BatchStatementResponseTypeDef](#batchstatementresponsetypedef)
-  - [BatchWriteItemInputRequestTypeDef](#batchwriteiteminputrequesttypedef)
-  - [BatchWriteItemInputServiceResourceBatchWriteItemTypeDef](#batchwriteiteminputserviceresourcebatchwriteitemtypedef)
-  - [BatchWriteItemOutputTypeDef](#batchwriteitemoutputtypedef)
-  - [BillingModeSummaryResponseMetadataTypeDef](#billingmodesummaryresponsemetadatatypedef)
-  - [BillingModeSummaryTypeDef](#billingmodesummarytypedef)
-  - [CapacityTypeDef](#capacitytypedef)
-  - [ConditionCheckTypeDef](#conditionchecktypedef)
-  - [ConditionTypeDef](#conditiontypedef)
-  - [ConsumedCapacityTypeDef](#consumedcapacitytypedef)
-  - [ContinuousBackupsDescriptionTypeDef](#continuousbackupsdescriptiontypedef)
-  - [ContributorInsightsSummaryTypeDef](#contributorinsightssummarytypedef)
-  - [CreateBackupInputRequestTypeDef](#createbackupinputrequesttypedef)
-  - [CreateBackupOutputTypeDef](#createbackupoutputtypedef)
-  - [CreateGlobalSecondaryIndexActionTypeDef](#createglobalsecondaryindexactiontypedef)
-  - [CreateGlobalTableInputRequestTypeDef](#createglobaltableinputrequesttypedef)
-  - [CreateGlobalTableOutputTypeDef](#createglobaltableoutputtypedef)
-  - [CreateReplicaActionTypeDef](#createreplicaactiontypedef)
-  - [CreateReplicationGroupMemberActionTypeDef](#createreplicationgroupmemberactiontypedef)
-  - [CreateTableInputRequestTypeDef](#createtableinputrequesttypedef)
-  - [CreateTableInputServiceResourceCreateTableTypeDef](#createtableinputserviceresourcecreatetabletypedef)
-  - [CreateTableOutputTypeDef](#createtableoutputtypedef)
-  - [DeleteBackupInputRequestTypeDef](#deletebackupinputrequesttypedef)
-  - [DeleteBackupOutputTypeDef](#deletebackupoutputtypedef)
-  - [DeleteGlobalSecondaryIndexActionTypeDef](#deleteglobalsecondaryindexactiontypedef)
-  - [DeleteItemInputRequestTypeDef](#deleteiteminputrequesttypedef)
-  - [DeleteItemInputTableDeleteItemTypeDef](#deleteiteminputtabledeleteitemtypedef)
-  - [DeleteItemOutputTypeDef](#deleteitemoutputtypedef)
-  - [DeleteReplicaActionTypeDef](#deletereplicaactiontypedef)
-  - [DeleteReplicationGroupMemberActionTypeDef](#deletereplicationgroupmemberactiontypedef)
-  - [DeleteRequestTypeDef](#deleterequesttypedef)
-  - [DeleteTableInputRequestTypeDef](#deletetableinputrequesttypedef)
-  - [DeleteTableOutputTypeDef](#deletetableoutputtypedef)
-  - [DeleteTypeDef](#deletetypedef)
-  - [DescribeBackupInputRequestTypeDef](#describebackupinputrequesttypedef)
-  - [DescribeBackupOutputTypeDef](#describebackupoutputtypedef)
-  - [DescribeContinuousBackupsInputRequestTypeDef](#describecontinuousbackupsinputrequesttypedef)
-  - [DescribeContinuousBackupsOutputTypeDef](#describecontinuousbackupsoutputtypedef)
-  - [DescribeContributorInsightsInputRequestTypeDef](#describecontributorinsightsinputrequesttypedef)
-  - [DescribeContributorInsightsOutputTypeDef](#describecontributorinsightsoutputtypedef)
-  - [DescribeEndpointsResponseTypeDef](#describeendpointsresponsetypedef)
-  - [DescribeExportInputRequestTypeDef](#describeexportinputrequesttypedef)
-  - [DescribeExportOutputTypeDef](#describeexportoutputtypedef)
-  - [DescribeGlobalTableInputRequestTypeDef](#describeglobaltableinputrequesttypedef)
-  - [DescribeGlobalTableOutputTypeDef](#describeglobaltableoutputtypedef)
-  - [DescribeGlobalTableSettingsInputRequestTypeDef](#describeglobaltablesettingsinputrequesttypedef)
-  - [DescribeGlobalTableSettingsOutputTypeDef](#describeglobaltablesettingsoutputtypedef)
-  - [DescribeKinesisStreamingDestinationInputRequestTypeDef](#describekinesisstreamingdestinationinputrequesttypedef)
-  - [DescribeKinesisStreamingDestinationOutputTypeDef](#describekinesisstreamingdestinationoutputtypedef)
-  - [DescribeLimitsOutputTypeDef](#describelimitsoutputtypedef)
-  - [DescribeTableInputRequestTypeDef](#describetableinputrequesttypedef)
-  - [DescribeTableOutputTypeDef](#describetableoutputtypedef)
-  - [DescribeTableReplicaAutoScalingInputRequestTypeDef](#describetablereplicaautoscalinginputrequesttypedef)
-  - [DescribeTableReplicaAutoScalingOutputTypeDef](#describetablereplicaautoscalingoutputtypedef)
-  - [DescribeTimeToLiveInputRequestTypeDef](#describetimetoliveinputrequesttypedef)
-  - [DescribeTimeToLiveOutputTypeDef](#describetimetoliveoutputtypedef)
-  - [EndpointTypeDef](#endpointtypedef)
-  - [ExecuteStatementInputRequestTypeDef](#executestatementinputrequesttypedef)
-  - [ExecuteStatementOutputTypeDef](#executestatementoutputtypedef)
-  - [ExecuteTransactionInputRequestTypeDef](#executetransactioninputrequesttypedef)
-  - [ExecuteTransactionOutputTypeDef](#executetransactionoutputtypedef)
-  - [ExpectedAttributeValueTypeDef](#expectedattributevaluetypedef)
-  - [ExportDescriptionTypeDef](#exportdescriptiontypedef)
-  - [ExportSummaryTypeDef](#exportsummarytypedef)
-  - [ExportTableToPointInTimeInputRequestTypeDef](#exporttabletopointintimeinputrequesttypedef)
-  - [ExportTableToPointInTimeOutputTypeDef](#exporttabletopointintimeoutputtypedef)
-  - [FailureExceptionTypeDef](#failureexceptiontypedef)
-  - [GetItemInputRequestTypeDef](#getiteminputrequesttypedef)
-  - [GetItemInputTableGetItemTypeDef](#getiteminputtablegetitemtypedef)
-  - [GetItemOutputTypeDef](#getitemoutputtypedef)
-  - [GetTypeDef](#gettypedef)
-  - [GlobalSecondaryIndexAutoScalingUpdateTypeDef](#globalsecondaryindexautoscalingupdatetypedef)
-  - [GlobalSecondaryIndexDescriptionTypeDef](#globalsecondaryindexdescriptiontypedef)
-  - [GlobalSecondaryIndexInfoTypeDef](#globalsecondaryindexinfotypedef)
-  - [GlobalSecondaryIndexTypeDef](#globalsecondaryindextypedef)
-  - [GlobalSecondaryIndexUpdateTypeDef](#globalsecondaryindexupdatetypedef)
-  - [GlobalTableDescriptionTypeDef](#globaltabledescriptiontypedef)
-  - [GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](#globaltableglobalsecondaryindexsettingsupdatetypedef)
-  - [GlobalTableTypeDef](#globaltabletypedef)
-  - [ItemCollectionMetricsTypeDef](#itemcollectionmetricstypedef)
-  - [ItemResponseTypeDef](#itemresponsetypedef)
-  - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
-  - [KeysAndAttributesTypeDef](#keysandattributestypedef)
-  - [KinesisDataStreamDestinationTypeDef](#kinesisdatastreamdestinationtypedef)
-  - [KinesisStreamingDestinationInputRequestTypeDef](#kinesisstreamingdestinationinputrequesttypedef)
-  - [KinesisStreamingDestinationOutputTypeDef](#kinesisstreamingdestinationoutputtypedef)
-  - [ListBackupsInputRequestTypeDef](#listbackupsinputrequesttypedef)
-  - [ListBackupsOutputTypeDef](#listbackupsoutputtypedef)
-  - [ListContributorInsightsInputRequestTypeDef](#listcontributorinsightsinputrequesttypedef)
-  - [ListContributorInsightsOutputTypeDef](#listcontributorinsightsoutputtypedef)
-  - [ListExportsInputRequestTypeDef](#listexportsinputrequesttypedef)
-  - [ListExportsOutputTypeDef](#listexportsoutputtypedef)
-  - [ListGlobalTablesInputRequestTypeDef](#listglobaltablesinputrequesttypedef)
-  - [ListGlobalTablesOutputTypeDef](#listglobaltablesoutputtypedef)
-  - [ListTablesInputRequestTypeDef](#listtablesinputrequesttypedef)
-  - [ListTablesOutputTypeDef](#listtablesoutputtypedef)
-  - [ListTagsOfResourceInputRequestTypeDef](#listtagsofresourceinputrequesttypedef)
-  - [ListTagsOfResourceOutputTypeDef](#listtagsofresourceoutputtypedef)
-  - [LocalSecondaryIndexDescriptionTypeDef](#localsecondaryindexdescriptiontypedef)
-  - [LocalSecondaryIndexInfoTypeDef](#localsecondaryindexinfotypedef)
-  - [LocalSecondaryIndexTypeDef](#localsecondaryindextypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParameterizedStatementTypeDef](#parameterizedstatementtypedef)
-  - [PointInTimeRecoveryDescriptionTypeDef](#pointintimerecoverydescriptiontypedef)
-  - [PointInTimeRecoverySpecificationTypeDef](#pointintimerecoveryspecificationtypedef)
-  - [ProjectionTypeDef](#projectiontypedef)
-  - [ProvisionedThroughputDescriptionResponseMetadataTypeDef](#provisionedthroughputdescriptionresponsemetadatatypedef)
-  - [ProvisionedThroughputDescriptionTypeDef](#provisionedthroughputdescriptiontypedef)
-  - [ProvisionedThroughputOverrideTypeDef](#provisionedthroughputoverridetypedef)
-  - [ProvisionedThroughputTypeDef](#provisionedthroughputtypedef)
-  - [PutItemInputRequestTypeDef](#putiteminputrequesttypedef)
-  - [PutItemInputTablePutItemTypeDef](#putiteminputtableputitemtypedef)
-  - [PutItemOutputTypeDef](#putitemoutputtypedef)
-  - [PutRequestTypeDef](#putrequesttypedef)
-  - [PutTypeDef](#puttypedef)
-  - [QueryInputRequestTypeDef](#queryinputrequesttypedef)
-  - [QueryInputTableQueryTypeDef](#queryinputtablequerytypedef)
-  - [QueryOutputTypeDef](#queryoutputtypedef)
-  - [ReplicaAutoScalingDescriptionTypeDef](#replicaautoscalingdescriptiontypedef)
-  - [ReplicaAutoScalingUpdateTypeDef](#replicaautoscalingupdatetypedef)
-  - [ReplicaDescriptionTypeDef](#replicadescriptiontypedef)
-  - [ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef](#replicaglobalsecondaryindexautoscalingdescriptiontypedef)
-  - [ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](#replicaglobalsecondaryindexautoscalingupdatetypedef)
-  - [ReplicaGlobalSecondaryIndexDescriptionTypeDef](#replicaglobalsecondaryindexdescriptiontypedef)
-  - [ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef](#replicaglobalsecondaryindexsettingsdescriptiontypedef)
-  - [ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](#replicaglobalsecondaryindexsettingsupdatetypedef)
-  - [ReplicaGlobalSecondaryIndexTypeDef](#replicaglobalsecondaryindextypedef)
-  - [ReplicaSettingsDescriptionTypeDef](#replicasettingsdescriptiontypedef)
-  - [ReplicaSettingsUpdateTypeDef](#replicasettingsupdatetypedef)
-  - [ReplicaTypeDef](#replicatypedef)
-  - [ReplicaUpdateTypeDef](#replicaupdatetypedef)
-  - [ReplicationGroupUpdateTypeDef](#replicationgroupupdatetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RestoreSummaryResponseMetadataTypeDef](#restoresummaryresponsemetadatatypedef)
-  - [RestoreSummaryTypeDef](#restoresummarytypedef)
-  - [RestoreTableFromBackupInputRequestTypeDef](#restoretablefrombackupinputrequesttypedef)
-  - [RestoreTableFromBackupOutputTypeDef](#restoretablefrombackupoutputtypedef)
-  - [RestoreTableToPointInTimeInputRequestTypeDef](#restoretabletopointintimeinputrequesttypedef)
-  - [RestoreTableToPointInTimeOutputTypeDef](#restoretabletopointintimeoutputtypedef)
-  - [SSEDescriptionResponseMetadataTypeDef](#ssedescriptionresponsemetadatatypedef)
-  - [SSEDescriptionTypeDef](#ssedescriptiontypedef)
-  - [SSESpecificationTypeDef](#ssespecificationtypedef)
-  - [ScanInputRequestTypeDef](#scaninputrequesttypedef)
-  - [ScanInputTableScanTypeDef](#scaninputtablescantypedef)
-  - [ScanOutputTypeDef](#scanoutputtypedef)
-  - [ServiceResourceTableRequestTypeDef](#serviceresourcetablerequesttypedef)
-  - [SourceTableDetailsTypeDef](#sourcetabledetailstypedef)
-  - [SourceTableFeatureDetailsTypeDef](#sourcetablefeaturedetailstypedef)
-  - [StreamSpecificationResponseMetadataTypeDef](#streamspecificationresponsemetadatatypedef)
-  - [StreamSpecificationTypeDef](#streamspecificationtypedef)
-  - [TableAutoScalingDescriptionTypeDef](#tableautoscalingdescriptiontypedef)
-  - [TableBatchWriterRequestTypeDef](#tablebatchwriterrequesttypedef)
-  - [TableClassSummaryResponseMetadataTypeDef](#tableclasssummaryresponsemetadatatypedef)
-  - [TableClassSummaryTypeDef](#tableclasssummarytypedef)
-  - [TableDescriptionTypeDef](#tabledescriptiontypedef)
-  - [TagResourceInputRequestTypeDef](#tagresourceinputrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [TimeToLiveDescriptionTypeDef](#timetolivedescriptiontypedef)
-  - [TimeToLiveSpecificationTypeDef](#timetolivespecificationtypedef)
-  - [TransactGetItemTypeDef](#transactgetitemtypedef)
-  - [TransactGetItemsInputRequestTypeDef](#transactgetitemsinputrequesttypedef)
-  - [TransactGetItemsOutputTypeDef](#transactgetitemsoutputtypedef)
-  - [TransactWriteItemTypeDef](#transactwriteitemtypedef)
-  - [TransactWriteItemsInputRequestTypeDef](#transactwriteitemsinputrequesttypedef)
-  - [TransactWriteItemsOutputTypeDef](#transactwriteitemsoutputtypedef)
-  - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
-  - [UpdateContinuousBackupsInputRequestTypeDef](#updatecontinuousbackupsinputrequesttypedef)
-  - [UpdateContinuousBackupsOutputTypeDef](#updatecontinuousbackupsoutputtypedef)
-  - [UpdateContributorInsightsInputRequestTypeDef](#updatecontributorinsightsinputrequesttypedef)
-  - [UpdateContributorInsightsOutputTypeDef](#updatecontributorinsightsoutputtypedef)
-  - [UpdateGlobalSecondaryIndexActionTypeDef](#updateglobalsecondaryindexactiontypedef)
-  - [UpdateGlobalTableInputRequestTypeDef](#updateglobaltableinputrequesttypedef)
-  - [UpdateGlobalTableOutputTypeDef](#updateglobaltableoutputtypedef)
-  - [UpdateGlobalTableSettingsInputRequestTypeDef](#updateglobaltablesettingsinputrequesttypedef)
-  - [UpdateGlobalTableSettingsOutputTypeDef](#updateglobaltablesettingsoutputtypedef)
-  - [UpdateItemInputRequestTypeDef](#updateiteminputrequesttypedef)
-  - [UpdateItemInputTableUpdateItemTypeDef](#updateiteminputtableupdateitemtypedef)
-  - [UpdateItemOutputTypeDef](#updateitemoutputtypedef)
-  - [UpdateReplicationGroupMemberActionTypeDef](#updatereplicationgroupmemberactiontypedef)
-  - [UpdateTableInputRequestTypeDef](#updatetableinputrequesttypedef)
-  - [UpdateTableInputTableUpdateTypeDef](#updatetableinputtableupdatetypedef)
-  - [UpdateTableOutputTypeDef](#updatetableoutputtypedef)
-  - [UpdateTableReplicaAutoScalingInputRequestTypeDef](#updatetablereplicaautoscalinginputrequesttypedef)
-  - [UpdateTableReplicaAutoScalingOutputTypeDef](#updatetablereplicaautoscalingoutputtypedef)
-  - [UpdateTimeToLiveInputRequestTypeDef](#updatetimetoliveinputrequesttypedef)
-  - [UpdateTimeToLiveOutputTypeDef](#updatetimetoliveoutputtypedef)
-  - [UpdateTypeDef](#updatetypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
-  - [WriteRequestTypeDef](#writerequesttypedef)
-
-<a id="archivalsummaryresponsemetadatatypedef"></a>
+    Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+    type annotations stubs module [mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 ## ArchivalSummaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
+
+def get_value() -> ArchivalSummaryResponseMetadataTypeDef:
+    return {
+        "ArchivalDateTime": ...,
+        "ArchivalReason": ...,
+        "ArchivalBackupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ArchivalSummaryResponseMetadataTypeDef(TypedDict):
+    ArchivalDateTime: datetime,
+    ArchivalReason: str,
+    ArchivalBackupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ArchivalDateTime`: `datetime`
-- `ArchivalReason`: `str`
-- `ArchivalBackupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="archivalsummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ArchivalSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ArchivalSummaryTypeDef
+
+def get_value() -> ArchivalSummaryTypeDef:
+    return {
+        "ArchivalDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `ArchivalDateTime`: `datetime`
-- `ArchivalReason`: `str`
-- `ArchivalBackupArn`: `str`
-
-<a id="attributedefinitiontypedef"></a>
+```python title="Definition"
+class ArchivalSummaryTypeDef(TypedDict):
+    ArchivalDateTime: NotRequired[datetime],
+    ArchivalReason: NotRequired[str],
+    ArchivalBackupArn: NotRequired[str],
+```
 
 ## AttributeDefinitionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AttributeDefinitionTypeDef
+
+def get_value() -> AttributeDefinitionTypeDef:
+    return {
+        "AttributeName": ...,
+        "AttributeType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AttributeDefinitionTypeDef(TypedDict):
+    AttributeName: str,
+    AttributeType: ScalarAttributeTypeType,  # (1)
+```
 
-- `AttributeName`: `str`
-- `AttributeType`:
-  [ScalarAttributeTypeType](./literals.md#scalarattributetypetype)
-
-<a id="attributevalueupdatetypedef"></a>
-
+1. See [:material-code-brackets: ScalarAttributeTypeType](./literals.md#scalarattributetypetype) 
 ## AttributeValueUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AttributeValueUpdateTypeDef
+
+def get_value() -> AttributeValueUpdateTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttributeValueUpdateTypeDef(TypedDict):
+    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Action: NotRequired[AttributeActionType],  # (1)
+```
 
-- `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
-  `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\],
-  `None`\]
-- `Action`: [AttributeActionType](./literals.md#attributeactiontype)
-
-<a id="autoscalingpolicydescriptiontypedef"></a>
-
+1. See [:material-code-brackets: AttributeActionType](./literals.md#attributeactiontype) 
 ## AutoScalingPolicyDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingPolicyDescriptionTypeDef
+
+def get_value() -> AutoScalingPolicyDescriptionTypeDef:
+    return {
+        "PolicyName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingPolicyDescriptionTypeDef(TypedDict):
+    PolicyName: NotRequired[str],
+    TargetTrackingScalingPolicyConfiguration: NotRequired[AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef],  # (1)
+```
 
-- `PolicyName`: `str`
-- `TargetTrackingScalingPolicyConfiguration`:
-  [AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef](./type_defs.md#autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef)
-
-<a id="autoscalingpolicyupdatetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef](./type_defs.md#autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef) 
 ## AutoScalingPolicyUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingPolicyUpdateTypeDef
+
+def get_value() -> AutoScalingPolicyUpdateTypeDef:
+    return {
+        "TargetTrackingScalingPolicyConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AutoScalingPolicyUpdateTypeDef(TypedDict):
+    TargetTrackingScalingPolicyConfiguration: AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef,  # (1)
+    PolicyName: NotRequired[str],
+```
 
-- `TargetTrackingScalingPolicyConfiguration`:
-  [AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef](./type_defs.md#autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef)
-
-Optional fields:
-
-- `PolicyName`: `str`
-
-<a id="autoscalingsettingsdescriptiontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef](./type_defs.md#autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef) 
 ## AutoScalingSettingsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingSettingsDescriptionTypeDef
+
+def get_value() -> AutoScalingSettingsDescriptionTypeDef:
+    return {
+        "MinimumUnits": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingSettingsDescriptionTypeDef(TypedDict):
+    MinimumUnits: NotRequired[int],
+    MaximumUnits: NotRequired[int],
+    AutoScalingDisabled: NotRequired[bool],
+    AutoScalingRoleArn: NotRequired[str],
+    ScalingPolicies: NotRequired[List[AutoScalingPolicyDescriptionTypeDef]],  # (1)
+```
 
-- `MinimumUnits`: `int`
-- `MaximumUnits`: `int`
-- `AutoScalingDisabled`: `bool`
-- `AutoScalingRoleArn`: `str`
-- `ScalingPolicies`:
-  `List`\[[AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)\]
-
-<a id="autoscalingsettingsupdatetypedef"></a>
-
+1. See [:material-code-braces: AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef) 
 ## AutoScalingSettingsUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingSettingsUpdateTypeDef
+
+def get_value() -> AutoScalingSettingsUpdateTypeDef:
+    return {
+        "MinimumUnits": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingSettingsUpdateTypeDef(TypedDict):
+    MinimumUnits: NotRequired[int],
+    MaximumUnits: NotRequired[int],
+    AutoScalingDisabled: NotRequired[bool],
+    AutoScalingRoleArn: NotRequired[str],
+    ScalingPolicyUpdate: NotRequired[AutoScalingPolicyUpdateTypeDef],  # (1)
+```
 
-- `MinimumUnits`: `int`
-- `MaximumUnits`: `int`
-- `AutoScalingDisabled`: `bool`
-- `AutoScalingRoleArn`: `str`
-- `ScalingPolicyUpdate`:
-  [AutoScalingPolicyUpdateTypeDef](./type_defs.md#autoscalingpolicyupdatetypedef)
-
-<a id="autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingPolicyUpdateTypeDef](./type_defs.md#autoscalingpolicyupdatetypedef) 
 ## AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef
+
+def get_value() -> AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef:
+    return {
+        "TargetValue": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetValue`: `float`
-
-Optional fields:
-
-- `DisableScaleIn`: `bool`
-- `ScaleInCooldown`: `int`
-- `ScaleOutCooldown`: `int`
-
-<a id="autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef"></a>
+```python title="Definition"
+class AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef(TypedDict):
+    TargetValue: float,
+    DisableScaleIn: NotRequired[bool],
+    ScaleInCooldown: NotRequired[int],
+    ScaleOutCooldown: NotRequired[int],
+```
 
 ## AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef
+
+def get_value() -> AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef:
+    return {
+        "TargetValue": ...,
+    }
 ```
 
-Required fields:
-
-- `TargetValue`: `float`
-
-Optional fields:
-
-- `DisableScaleIn`: `bool`
-- `ScaleInCooldown`: `int`
-- `ScaleOutCooldown`: `int`
-
-<a id="backupdescriptiontypedef"></a>
+```python title="Definition"
+class AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef(TypedDict):
+    TargetValue: float,
+    DisableScaleIn: NotRequired[bool],
+    ScaleInCooldown: NotRequired[int],
+    ScaleOutCooldown: NotRequired[int],
+```
 
 ## BackupDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BackupDescriptionTypeDef
+
+def get_value() -> BackupDescriptionTypeDef:
+    return {
+        "BackupDetails": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupDescriptionTypeDef(TypedDict):
+    BackupDetails: NotRequired[BackupDetailsTypeDef],  # (1)
+    SourceTableDetails: NotRequired[SourceTableDetailsTypeDef],  # (2)
+    SourceTableFeatureDetails: NotRequired[SourceTableFeatureDetailsTypeDef],  # (3)
+```
 
-- `BackupDetails`: [BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef)
-- `SourceTableDetails`:
-  [SourceTableDetailsTypeDef](./type_defs.md#sourcetabledetailstypedef)
-- `SourceTableFeatureDetails`:
-  [SourceTableFeatureDetailsTypeDef](./type_defs.md#sourcetablefeaturedetailstypedef)
-
-<a id="backupdetailstypedef"></a>
-
+1. See [:material-code-braces: BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef) 
+2. See [:material-code-braces: SourceTableDetailsTypeDef](./type_defs.md#sourcetabledetailstypedef) 
+3. See [:material-code-braces: SourceTableFeatureDetailsTypeDef](./type_defs.md#sourcetablefeaturedetailstypedef) 
 ## BackupDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BackupDetailsTypeDef
+
+def get_value() -> BackupDetailsTypeDef:
+    return {
+        "BackupArn": ...,
+        "BackupName": ...,
+        "BackupStatus": ...,
+        "BackupType": ...,
+        "BackupCreationDateTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BackupDetailsTypeDef(TypedDict):
+    BackupArn: str,
+    BackupName: str,
+    BackupStatus: BackupStatusType,  # (1)
+    BackupType: BackupTypeType,  # (2)
+    BackupCreationDateTime: datetime,
+    BackupSizeBytes: NotRequired[int],
+    BackupExpiryDateTime: NotRequired[datetime],
+```
 
-- `BackupArn`: `str`
-- `BackupName`: `str`
-- `BackupStatus`: [BackupStatusType](./literals.md#backupstatustype)
-- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
-- `BackupCreationDateTime`: `datetime`
-
-Optional fields:
-
-- `BackupSizeBytes`: `int`
-- `BackupExpiryDateTime`: `datetime`
-
-<a id="backupsummarytypedef"></a>
-
+1. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
+2. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
 ## BackupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BackupSummaryTypeDef
+
+def get_value() -> BackupSummaryTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BackupSummaryTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    TableId: NotRequired[str],
+    TableArn: NotRequired[str],
+    BackupArn: NotRequired[str],
+    BackupName: NotRequired[str],
+    BackupCreationDateTime: NotRequired[datetime],
+    BackupExpiryDateTime: NotRequired[datetime],
+    BackupStatus: NotRequired[BackupStatusType],  # (1)
+    BackupType: NotRequired[BackupTypeType],  # (2)
+    BackupSizeBytes: NotRequired[int],
+```
 
-- `TableName`: `str`
-- `TableId`: `str`
-- `TableArn`: `str`
-- `BackupArn`: `str`
-- `BackupName`: `str`
-- `BackupCreationDateTime`: `datetime`
-- `BackupExpiryDateTime`: `datetime`
-- `BackupStatus`: [BackupStatusType](./literals.md#backupstatustype)
-- `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
-- `BackupSizeBytes`: `int`
-
-<a id="batchexecutestatementinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: BackupStatusType](./literals.md#backupstatustype) 
+2. See [:material-code-brackets: BackupTypeType](./literals.md#backuptypetype) 
 ## BatchExecuteStatementInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementInputRequestTypeDef
+
+def get_value() -> BatchExecuteStatementInputRequestTypeDef:
+    return {
+        "Statements": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchExecuteStatementInputRequestTypeDef(TypedDict):
+    Statements: Sequence[BatchStatementRequestTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
 
-- `Statements`:
-  `Sequence`\[[BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef)\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-
-<a id="batchexecutestatementoutputtypedef"></a>
-
+1. See [:material-code-braces: BatchStatementRequestTypeDef](./type_defs.md#batchstatementrequesttypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## BatchExecuteStatementOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchExecuteStatementOutputTypeDef
+
+def get_value() -> BatchExecuteStatementOutputTypeDef:
+    return {
+        "Responses": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchExecuteStatementOutputTypeDef(TypedDict):
+    Responses: List[BatchStatementResponseTypeDef],  # (1)
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Responses`:
-  `List`\[[BatchStatementResponseTypeDef](./type_defs.md#batchstatementresponsetypedef)\]
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchgetiteminputrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchStatementResponseTypeDef](./type_defs.md#batchstatementresponsetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchGetItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchGetItemInputRequestTypeDef
+
+def get_value() -> BatchGetItemInputRequestTypeDef:
+    return {
+        "RequestItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetItemInputRequestTypeDef(TypedDict):
+    RequestItems: Mapping[str, KeysAndAttributesTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
 
-- `RequestItems`: `Mapping`\[`str`,
-  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-
-<a id="batchgetiteminputserviceresourcebatchgetitemtypedef"></a>
-
+1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## BatchGetItemInputServiceResourceBatchGetItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchGetItemInputServiceResourceBatchGetItemTypeDef
+
+def get_value() -> BatchGetItemInputServiceResourceBatchGetItemTypeDef:
+    return {
+        "RequestItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetItemInputServiceResourceBatchGetItemTypeDef(TypedDict):
+    RequestItems: Mapping[str, KeysAndAttributesTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
 
-- `RequestItems`: `Mapping`\[`str`,
-  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-
-<a id="batchgetitemoutputtypedef"></a>
-
+1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## BatchGetItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchGetItemOutputTypeDef
+
+def get_value() -> BatchGetItemOutputTypeDef:
+    return {
+        "Responses": ...,
+        "UnprocessedKeys": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchGetItemOutputTypeDef(TypedDict):
+    Responses: Dict[str, List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]]],
+    UnprocessedKeys: Dict[str, KeysAndAttributesTypeDef],  # (1)
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Responses`: `Dict`\[`str`, `List`\[`Dict`\[`str`, `Union`\[`bytes`,
-  `bytearray`, `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\],
-  `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\],
-  `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\], `None`\]\]\]\]
-- `UnprocessedKeys`: `Dict`\[`str`,
-  [KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef)\]
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="batchstatementerrortypedef"></a>
-
+1. See [:material-code-braces: KeysAndAttributesTypeDef](./type_defs.md#keysandattributestypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BatchStatementErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchStatementErrorTypeDef
+
+def get_value() -> BatchStatementErrorTypeDef:
+    return {
+        "Code": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchStatementErrorTypeDef(TypedDict):
+    Code: NotRequired[BatchStatementErrorCodeEnumType],  # (1)
+    Message: NotRequired[str],
+```
 
-- `Code`:
-  [BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype)
-- `Message`: `str`
-
-<a id="batchstatementrequesttypedef"></a>
-
+1. See [:material-code-brackets: BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype) 
 ## BatchStatementRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchStatementRequestTypeDef
+
+def get_value() -> BatchStatementRequestTypeDef:
+    return {
+        "Statement": ...,
+    }
 ```
 
-Required fields:
-
-- `Statement`: `str`
-
-Optional fields:
-
-- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsistentRead`: `bool`
-
-<a id="batchstatementresponsetypedef"></a>
+```python title="Definition"
+class BatchStatementRequestTypeDef(TypedDict):
+    Statement: str,
+    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ConsistentRead: NotRequired[bool],
+```
 
 ## BatchStatementResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchStatementResponseTypeDef
+
+def get_value() -> BatchStatementResponseTypeDef:
+    return {
+        "Error": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchStatementResponseTypeDef(TypedDict):
+    Error: NotRequired[BatchStatementErrorTypeDef],  # (1)
+    TableName: NotRequired[str],
+    Item: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `Error`:
-  [BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef)
-- `TableName`: `str`
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="batchwriteiteminputrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchStatementErrorTypeDef](./type_defs.md#batchstatementerrortypedef) 
 ## BatchWriteItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputRequestTypeDef
+
+def get_value() -> BatchWriteItemInputRequestTypeDef:
+    return {
+        "RequestItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchWriteItemInputRequestTypeDef(TypedDict):
+    RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)
+```
 
-- `RequestItems`: `Mapping`\[`str`,
-  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-
-<a id="batchwriteiteminputserviceresourcebatchwriteitemtypedef"></a>
-
+1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchWriteItemInputServiceResourceBatchWriteItemTypeDef
+
+def get_value() -> BatchWriteItemInputServiceResourceBatchWriteItemTypeDef:
+    return {
+        "RequestItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchWriteItemInputServiceResourceBatchWriteItemTypeDef(TypedDict):
+    RequestItems: Mapping[str, Sequence[WriteRequestTypeDef]],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)
+```
 
-- `RequestItems`: `Mapping`\[`str`,
-  `Sequence`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-
-<a id="batchwriteitemoutputtypedef"></a>
-
+1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## BatchWriteItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BatchWriteItemOutputTypeDef
+
+def get_value() -> BatchWriteItemOutputTypeDef:
+    return {
+        "UnprocessedItems": ...,
+        "ItemCollectionMetrics": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchWriteItemOutputTypeDef(TypedDict):
+    UnprocessedItems: Dict[str, List[WriteRequestTypeDef]],  # (1)
+    ItemCollectionMetrics: Dict[str, List[ItemCollectionMetricsTypeDef]],  # (2)
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `UnprocessedItems`: `Dict`\[`str`,
-  `List`\[[WriteRequestTypeDef](./type_defs.md#writerequesttypedef)\]\]
-- `ItemCollectionMetrics`: `Dict`\[`str`,
-  `List`\[[ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)\]\]
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="billingmodesummaryresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: WriteRequestTypeDef](./type_defs.md#writerequesttypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+3. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BillingModeSummaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BillingModeSummaryResponseMetadataTypeDef
+
+def get_value() -> BillingModeSummaryResponseMetadataTypeDef:
+    return {
+        "BillingMode": ...,
+        "LastUpdateToPayPerRequestDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BillingModeSummaryResponseMetadataTypeDef(TypedDict):
+    BillingMode: BillingModeType,  # (1)
+    LastUpdateToPayPerRequestDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `LastUpdateToPayPerRequestDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="billingmodesummarytypedef"></a>
-
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## BillingModeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import BillingModeSummaryTypeDef
+
+def get_value() -> BillingModeSummaryTypeDef:
+    return {
+        "BillingMode": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BillingModeSummaryTypeDef(TypedDict):
+    BillingMode: NotRequired[BillingModeType],  # (1)
+    LastUpdateToPayPerRequestDateTime: NotRequired[datetime],
+```
 
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `LastUpdateToPayPerRequestDateTime`: `datetime`
-
-<a id="capacitytypedef"></a>
-
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
 ## CapacityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CapacityTypeDef
+
+def get_value() -> CapacityTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReadCapacityUnits`: `float`
-- `WriteCapacityUnits`: `float`
-- `CapacityUnits`: `float`
-
-<a id="conditionchecktypedef"></a>
+```python title="Definition"
+class CapacityTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    CapacityUnits: NotRequired[float],
+```
 
 ## ConditionCheckTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ConditionCheckTypeDef
+
+def get_value() -> ConditionCheckTypeDef:
+    return {
+        "Key": ...,
+        "TableName": ...,
+        "ConditionExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConditionCheckTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    TableName: str,
+    ConditionExpression: str,
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `TableName`: `str`
-- `ConditionExpression`: `str`
-
-Optional fields:
-
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
-
-<a id="conditiontypedef"></a>
-
+1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## ConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ConditionTypeDef
+
+def get_value() -> ConditionTypeDef:
+    return {
+        "ComparisonOperator": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConditionTypeDef(TypedDict):
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-
-Optional fields:
-
-- `AttributeValueList`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="consumedcapacitytypedef"></a>
-
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## ConsumedCapacityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ConsumedCapacityTypeDef
+
+def get_value() -> ConsumedCapacityTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConsumedCapacityTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    CapacityUnits: NotRequired[float],
+    ReadCapacityUnits: NotRequired[float],
+    WriteCapacityUnits: NotRequired[float],
+    Table: NotRequired[CapacityTypeDef],  # (1)
+    LocalSecondaryIndexes: NotRequired[Dict[str, CapacityTypeDef]],  # (2)
+    GlobalSecondaryIndexes: NotRequired[Dict[str, CapacityTypeDef]],  # (2)
+```
 
-- `TableName`: `str`
-- `CapacityUnits`: `float`
-- `ReadCapacityUnits`: `float`
-- `WriteCapacityUnits`: `float`
-- `Table`: [CapacityTypeDef](./type_defs.md#capacitytypedef)
-- `LocalSecondaryIndexes`: `Dict`\[`str`,
-  [CapacityTypeDef](./type_defs.md#capacitytypedef)\]
-- `GlobalSecondaryIndexes`: `Dict`\[`str`,
-  [CapacityTypeDef](./type_defs.md#capacitytypedef)\]
-
-<a id="continuousbackupsdescriptiontypedef"></a>
-
+1. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
+2. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
+3. See [:material-code-braces: CapacityTypeDef](./type_defs.md#capacitytypedef) 
 ## ContinuousBackupsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ContinuousBackupsDescriptionTypeDef
+
+def get_value() -> ContinuousBackupsDescriptionTypeDef:
+    return {
+        "ContinuousBackupsStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ContinuousBackupsDescriptionTypeDef(TypedDict):
+    ContinuousBackupsStatus: ContinuousBackupsStatusType,  # (1)
+    PointInTimeRecoveryDescription: NotRequired[PointInTimeRecoveryDescriptionTypeDef],  # (2)
+```
 
-- `ContinuousBackupsStatus`:
-  [ContinuousBackupsStatusType](./literals.md#continuousbackupsstatustype)
-
-Optional fields:
-
-- `PointInTimeRecoveryDescription`:
-  [PointInTimeRecoveryDescriptionTypeDef](./type_defs.md#pointintimerecoverydescriptiontypedef)
-
-<a id="contributorinsightssummarytypedef"></a>
-
+1. See [:material-code-brackets: ContinuousBackupsStatusType](./literals.md#continuousbackupsstatustype) 
+2. See [:material-code-braces: PointInTimeRecoveryDescriptionTypeDef](./type_defs.md#pointintimerecoverydescriptiontypedef) 
 ## ContributorInsightsSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ContributorInsightsSummaryTypeDef
+
+def get_value() -> ContributorInsightsSummaryTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContributorInsightsSummaryTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    IndexName: NotRequired[str],
+    ContributorInsightsStatus: NotRequired[ContributorInsightsStatusType],  # (1)
+```
 
-- `TableName`: `str`
-- `IndexName`: `str`
-- `ContributorInsightsStatus`:
-  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
-
-<a id="createbackupinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype) 
 ## CreateBackupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateBackupInputRequestTypeDef
+
+def get_value() -> CreateBackupInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "BackupName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-- `BackupName`: `str`
-
-<a id="createbackupoutputtypedef"></a>
+```python title="Definition"
+class CreateBackupInputRequestTypeDef(TypedDict):
+    TableName: str,
+    BackupName: str,
+```
 
 ## CreateBackupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateBackupOutputTypeDef
+
+def get_value() -> CreateBackupOutputTypeDef:
+    return {
+        "BackupDetails": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBackupOutputTypeDef(TypedDict):
+    BackupDetails: BackupDetailsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupDetails`: [BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createglobalsecondaryindexactiontypedef"></a>
-
+1. See [:material-code-braces: BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateGlobalSecondaryIndexActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateGlobalSecondaryIndexActionTypeDef
+
+def get_value() -> CreateGlobalSecondaryIndexActionTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGlobalSecondaryIndexActionTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (1)
+    Projection: ProjectionTypeDef,  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-
-Optional fields:
-
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-
-<a id="createglobaltableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
 ## CreateGlobalTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateGlobalTableInputRequestTypeDef
+
+def get_value() -> CreateGlobalTableInputRequestTypeDef:
+    return {
+        "GlobalTableName": ...,
+        "ReplicationGroup": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGlobalTableInputRequestTypeDef(TypedDict):
+    GlobalTableName: str,
+    ReplicationGroup: Sequence[ReplicaTypeDef],  # (1)
+```
 
-- `GlobalTableName`: `str`
-- `ReplicationGroup`:
-  `Sequence`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
-
-<a id="createglobaltableoutputtypedef"></a>
-
+1. See [:material-code-braces: ReplicaTypeDef](./type_defs.md#replicatypedef) 
 ## CreateGlobalTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateGlobalTableOutputTypeDef
+
+def get_value() -> CreateGlobalTableOutputTypeDef:
+    return {
+        "GlobalTableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateGlobalTableOutputTypeDef(TypedDict):
+    GlobalTableDescription: GlobalTableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTableDescription`:
-  [GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createreplicaactiontypedef"></a>
-
+1. See [:material-code-braces: GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateReplicaActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateReplicaActionTypeDef
+
+def get_value() -> CreateReplicaActionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegionName`: `str`
-
-<a id="createreplicationgroupmemberactiontypedef"></a>
+```python title="Definition"
+class CreateReplicaActionTypeDef(TypedDict):
+    RegionName: str,
+```
 
 ## CreateReplicationGroupMemberActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateReplicationGroupMemberActionTypeDef
+
+def get_value() -> CreateReplicationGroupMemberActionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateReplicationGroupMemberActionTypeDef(TypedDict):
+    RegionName: str,
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTypeDef],  # (1)
+    GlobalSecondaryIndexes: NotRequired[Sequence[ReplicaGlobalSecondaryIndexTypeDef]],  # (2)
+    TableClassOverride: NotRequired[TableClassType],  # (3)
+```
 
-- `RegionName`: `str`
-
-Optional fields:
-
-- `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
-- `GlobalSecondaryIndexes`:
-  `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
-- `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="createtableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef) 
+2. See [:material-code-braces: ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef) 
+3. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## CreateTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateTableInputRequestTypeDef
+
+def get_value() -> CreateTableInputRequestTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+        "TableName": ...,
+        "KeySchema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableInputRequestTypeDef(TypedDict):
+    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef],  # (1)
+    TableName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (2)
+    LocalSecondaryIndexes: NotRequired[Sequence[LocalSecondaryIndexTypeDef]],  # (3)
+    GlobalSecondaryIndexes: NotRequired[Sequence[GlobalSecondaryIndexTypeDef]],  # (4)
+    BillingMode: NotRequired[BillingModeType],  # (5)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (6)
+    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (7)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (8)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (9)
+    TableClass: NotRequired[TableClassType],  # (10)
+```
 
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `TableName`: `str`
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-
-Optional fields:
-
-- `LocalSecondaryIndexes`:
-  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
-- `GlobalSecondaryIndexes`:
-  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="createtableinputserviceresourcecreatetabletypedef"></a>
-
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+6. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+7. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## CreateTableInputServiceResourceCreateTableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateTableInputServiceResourceCreateTableTypeDef
+
+def get_value() -> CreateTableInputServiceResourceCreateTableTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+        "TableName": ...,
+        "KeySchema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableInputServiceResourceCreateTableTypeDef(TypedDict):
+    AttributeDefinitions: Sequence[AttributeDefinitionTypeDef],  # (1)
+    TableName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (2)
+    LocalSecondaryIndexes: NotRequired[Sequence[LocalSecondaryIndexTypeDef]],  # (3)
+    GlobalSecondaryIndexes: NotRequired[Sequence[GlobalSecondaryIndexTypeDef]],  # (4)
+    BillingMode: NotRequired[BillingModeType],  # (5)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (6)
+    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (7)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (8)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (9)
+    TableClass: NotRequired[TableClassType],  # (10)
+```
 
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `TableName`: `str`
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-
-Optional fields:
-
-- `LocalSecondaryIndexes`:
-  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
-- `GlobalSecondaryIndexes`:
-  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="createtableoutputtypedef"></a>
-
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+5. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+6. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+7. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+8. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+9. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+10. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## CreateTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import CreateTableOutputTypeDef
+
+def get_value() -> CreateTableOutputTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateTableOutputTypeDef(TypedDict):
+    TableDescription: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableDescription`:
-  [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletebackupinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteBackupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteBackupInputRequestTypeDef
+
+def get_value() -> DeleteBackupInputRequestTypeDef:
+    return {
+        "BackupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupArn`: `str`
-
-<a id="deletebackupoutputtypedef"></a>
+```python title="Definition"
+class DeleteBackupInputRequestTypeDef(TypedDict):
+    BackupArn: str,
+```
 
 ## DeleteBackupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteBackupOutputTypeDef
+
+def get_value() -> DeleteBackupOutputTypeDef:
+    return {
+        "BackupDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteBackupOutputTypeDef(TypedDict):
+    BackupDescription: BackupDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupDescription`:
-  [BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteglobalsecondaryindexactiontypedef"></a>
-
+1. See [:material-code-braces: BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteGlobalSecondaryIndexActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteGlobalSecondaryIndexActionTypeDef
+
+def get_value() -> DeleteGlobalSecondaryIndexActionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
-
-- `IndexName`: `str`
-
-<a id="deleteiteminputrequesttypedef"></a>
+```python title="Definition"
+class DeleteGlobalSecondaryIndexActionTypeDef(TypedDict):
+    IndexName: str,
+```
 
 ## DeleteItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteItemInputRequestTypeDef
+
+def get_value() -> DeleteItemInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteItemInputRequestTypeDef(TypedDict):
+    TableName: str,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (2)
+    ReturnValues: NotRequired[ReturnValueType],  # (3)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (5)
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `TableName`: `str`
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="deleteiteminputtabledeleteitemtypedef"></a>
-
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## DeleteItemInputTableDeleteItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteItemInputTableDeleteItemTypeDef
+
+def get_value() -> DeleteItemInputTableDeleteItemTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteItemInputTableDeleteItemTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (2)
+    ReturnValues: NotRequired[ReturnValueType],  # (3)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (5)
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="deleteitemoutputtypedef"></a>
-
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+3. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## DeleteItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteItemOutputTypeDef
+
+def get_value() -> DeleteItemOutputTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteItemOutputTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ItemCollectionMetrics`:
-  [ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletereplicaactiontypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteReplicaActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteReplicaActionTypeDef
+
+def get_value() -> DeleteReplicaActionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegionName`: `str`
-
-<a id="deletereplicationgroupmemberactiontypedef"></a>
+```python title="Definition"
+class DeleteReplicaActionTypeDef(TypedDict):
+    RegionName: str,
+```
 
 ## DeleteReplicationGroupMemberActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteReplicationGroupMemberActionTypeDef
+
+def get_value() -> DeleteReplicationGroupMemberActionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
-
-- `RegionName`: `str`
-
-<a id="deleterequesttypedef"></a>
+```python title="Definition"
+class DeleteReplicationGroupMemberActionTypeDef(TypedDict):
+    RegionName: str,
+```
 
 ## DeleteRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteRequestTypeDef
+
+def get_value() -> DeleteRequestTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="deletetableinputrequesttypedef"></a>
+```python title="Definition"
+class DeleteRequestTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+```
 
 ## DeleteTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteTableInputRequestTypeDef
+
+def get_value() -> DeleteTableInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-<a id="deletetableoutputtypedef"></a>
+```python title="Definition"
+class DeleteTableInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
 ## DeleteTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteTableOutputTypeDef
+
+def get_value() -> DeleteTableOutputTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTableOutputTypeDef(TypedDict):
+    TableDescription: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableDescription`:
-  [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletetypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DeleteTypeDef
+
+def get_value() -> DeleteTypeDef:
+    return {
+        "Key": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    TableName: str,
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `TableName`: `str`
-
-Optional fields:
-
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
-
-<a id="describebackupinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## DescribeBackupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeBackupInputRequestTypeDef
+
+def get_value() -> DescribeBackupInputRequestTypeDef:
+    return {
+        "BackupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `BackupArn`: `str`
-
-<a id="describebackupoutputtypedef"></a>
+```python title="Definition"
+class DescribeBackupInputRequestTypeDef(TypedDict):
+    BackupArn: str,
+```
 
 ## DescribeBackupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeBackupOutputTypeDef
+
+def get_value() -> DescribeBackupOutputTypeDef:
+    return {
+        "BackupDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBackupOutputTypeDef(TypedDict):
+    BackupDescription: BackupDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupDescription`:
-  [BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontinuousbackupsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupDescriptionTypeDef](./type_defs.md#backupdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContinuousBackupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsInputRequestTypeDef
+
+def get_value() -> DescribeContinuousBackupsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-<a id="describecontinuousbackupsoutputtypedef"></a>
+```python title="Definition"
+class DescribeContinuousBackupsInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
 ## DescribeContinuousBackupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsOutputTypeDef
+
+def get_value() -> DescribeContinuousBackupsOutputTypeDef:
+    return {
+        "ContinuousBackupsDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContinuousBackupsOutputTypeDef(TypedDict):
+    ContinuousBackupsDescription: ContinuousBackupsDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContinuousBackupsDescription`:
-  [ContinuousBackupsDescriptionTypeDef](./type_defs.md#continuousbackupsdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontributorinsightsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContinuousBackupsDescriptionTypeDef](./type_defs.md#continuousbackupsdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContributorInsightsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsInputRequestTypeDef
+
+def get_value() -> DescribeContributorInsightsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-Optional fields:
-
-- `IndexName`: `str`
-
-<a id="describecontributorinsightsoutputtypedef"></a>
+```python title="Definition"
+class DescribeContributorInsightsInputRequestTypeDef(TypedDict):
+    TableName: str,
+    IndexName: NotRequired[str],
+```
 
 ## DescribeContributorInsightsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeContributorInsightsOutputTypeDef
+
+def get_value() -> DescribeContributorInsightsOutputTypeDef:
+    return {
+        "TableName": ...,
+        "IndexName": ...,
+        "ContributorInsightsRuleList": ...,
+        "ContributorInsightsStatus": ...,
+        "LastUpdateDateTime": ...,
+        "FailureException": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContributorInsightsOutputTypeDef(TypedDict):
+    TableName: str,
+    IndexName: str,
+    ContributorInsightsRuleList: List[str],
+    ContributorInsightsStatus: ContributorInsightsStatusType,  # (1)
+    LastUpdateDateTime: datetime,
+    FailureException: FailureExceptionTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `TableName`: `str`
-- `IndexName`: `str`
-- `ContributorInsightsRuleList`: `List`\[`str`\]
-- `ContributorInsightsStatus`:
-  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
-- `LastUpdateDateTime`: `datetime`
-- `FailureException`:
-  [FailureExceptionTypeDef](./type_defs.md#failureexceptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeendpointsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype) 
+2. See [:material-code-braces: FailureExceptionTypeDef](./type_defs.md#failureexceptiontypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEndpointsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeEndpointsResponseTypeDef
+
+def get_value() -> DescribeEndpointsResponseTypeDef:
+    return {
+        "Endpoints": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEndpointsResponseTypeDef(TypedDict):
+    Endpoints: List[EndpointTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeexportinputrequesttypedef"></a>
-
+1. See [:material-code-braces: EndpointTypeDef](./type_defs.md#endpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeExportInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeExportInputRequestTypeDef
+
+def get_value() -> DescribeExportInputRequestTypeDef:
+    return {
+        "ExportArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ExportArn`: `str`
-
-<a id="describeexportoutputtypedef"></a>
+```python title="Definition"
+class DescribeExportInputRequestTypeDef(TypedDict):
+    ExportArn: str,
+```
 
 ## DescribeExportOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeExportOutputTypeDef
+
+def get_value() -> DescribeExportOutputTypeDef:
+    return {
+        "ExportDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeExportOutputTypeDef(TypedDict):
+    ExportDescription: ExportDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExportDescription`:
-  [ExportDescriptionTypeDef](./type_defs.md#exportdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeglobaltableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportDescriptionTypeDef](./type_defs.md#exportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGlobalTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableInputRequestTypeDef
+
+def get_value() -> DescribeGlobalTableInputRequestTypeDef:
+    return {
+        "GlobalTableName": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalTableName`: `str`
-
-<a id="describeglobaltableoutputtypedef"></a>
+```python title="Definition"
+class DescribeGlobalTableInputRequestTypeDef(TypedDict):
+    GlobalTableName: str,
+```
 
 ## DescribeGlobalTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableOutputTypeDef
+
+def get_value() -> DescribeGlobalTableOutputTypeDef:
+    return {
+        "GlobalTableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGlobalTableOutputTypeDef(TypedDict):
+    GlobalTableDescription: GlobalTableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTableDescription`:
-  [GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeglobaltablesettingsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeGlobalTableSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsInputRequestTypeDef
+
+def get_value() -> DescribeGlobalTableSettingsInputRequestTypeDef:
+    return {
+        "GlobalTableName": ...,
+    }
 ```
 
-Required fields:
-
-- `GlobalTableName`: `str`
-
-<a id="describeglobaltablesettingsoutputtypedef"></a>
+```python title="Definition"
+class DescribeGlobalTableSettingsInputRequestTypeDef(TypedDict):
+    GlobalTableName: str,
+```
 
 ## DescribeGlobalTableSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsOutputTypeDef
+
+def get_value() -> DescribeGlobalTableSettingsOutputTypeDef:
+    return {
+        "GlobalTableName": ...,
+        "ReplicaSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeGlobalTableSettingsOutputTypeDef(TypedDict):
+    GlobalTableName: str,
+    ReplicaSettings: List[ReplicaSettingsDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTableName`: `str`
-- `ReplicaSettings`:
-  `List`\[[ReplicaSettingsDescriptionTypeDef](./type_defs.md#replicasettingsdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describekinesisstreamingdestinationinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReplicaSettingsDescriptionTypeDef](./type_defs.md#replicasettingsdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeKinesisStreamingDestinationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationInputRequestTypeDef
+
+def get_value() -> DescribeKinesisStreamingDestinationInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-<a id="describekinesisstreamingdestinationoutputtypedef"></a>
+```python title="Definition"
+class DescribeKinesisStreamingDestinationInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
 ## DescribeKinesisStreamingDestinationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationOutputTypeDef
+
+def get_value() -> DescribeKinesisStreamingDestinationOutputTypeDef:
+    return {
+        "TableName": ...,
+        "KinesisDataStreamDestinations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeKinesisStreamingDestinationOutputTypeDef(TypedDict):
+    TableName: str,
+    KinesisDataStreamDestinations: List[KinesisDataStreamDestinationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableName`: `str`
-- `KinesisDataStreamDestinations`:
-  `List`\[[KinesisDataStreamDestinationTypeDef](./type_defs.md#kinesisdatastreamdestinationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describelimitsoutputtypedef"></a>
-
+1. See [:material-code-braces: KinesisDataStreamDestinationTypeDef](./type_defs.md#kinesisdatastreamdestinationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeLimitsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeLimitsOutputTypeDef
+
+def get_value() -> DescribeLimitsOutputTypeDef:
+    return {
+        "AccountMaxReadCapacityUnits": ...,
+        "AccountMaxWriteCapacityUnits": ...,
+        "TableMaxReadCapacityUnits": ...,
+        "TableMaxWriteCapacityUnits": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeLimitsOutputTypeDef(TypedDict):
+    AccountMaxReadCapacityUnits: int,
+    AccountMaxWriteCapacityUnits: int,
+    TableMaxReadCapacityUnits: int,
+    TableMaxWriteCapacityUnits: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AccountMaxReadCapacityUnits`: `int`
-- `AccountMaxWriteCapacityUnits`: `int`
-- `TableMaxReadCapacityUnits`: `int`
-- `TableMaxWriteCapacityUnits`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTableInputRequestTypeDef
+
+def get_value() -> DescribeTableInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTableInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
-- `TableName`: `str`
+## DescribeTableInputTableExistsWaitTypeDef
 
-<a id="describetableoutputtypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DescribeTableInputTableExistsWaitTypeDef
 
+def get_value() -> DescribeTableInputTableExistsWaitTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTableInputTableExistsWaitTypeDef(TypedDict):
+    TableName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+## DescribeTableInputTableNotExistsWaitTypeDef
+
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import DescribeTableInputTableNotExistsWaitTypeDef
+
+def get_value() -> DescribeTableInputTableNotExistsWaitTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class DescribeTableInputTableNotExistsWaitTypeDef(TypedDict):
+    TableName: str,
+    WaiterConfig: NotRequired[WaiterConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
 ## DescribeTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTableOutputTypeDef
+
+def get_value() -> DescribeTableOutputTypeDef:
+    return {
+        "Table": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTableOutputTypeDef(TypedDict):
+    Table: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Table`: [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetablereplicaautoscalinginputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTableReplicaAutoScalingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingInputRequestTypeDef
+
+def get_value() -> DescribeTableReplicaAutoScalingInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-<a id="describetablereplicaautoscalingoutputtypedef"></a>
+```python title="Definition"
+class DescribeTableReplicaAutoScalingInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
 ## DescribeTableReplicaAutoScalingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingOutputTypeDef
+
+def get_value() -> DescribeTableReplicaAutoScalingOutputTypeDef:
+    return {
+        "TableAutoScalingDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTableReplicaAutoScalingOutputTypeDef(TypedDict):
+    TableAutoScalingDescription: TableAutoScalingDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableAutoScalingDescription`:
-  [TableAutoScalingDescriptionTypeDef](./type_defs.md#tableautoscalingdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describetimetoliveinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableAutoScalingDescriptionTypeDef](./type_defs.md#tableautoscalingdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeTimeToLiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveInputRequestTypeDef
+
+def get_value() -> DescribeTimeToLiveInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-
-<a id="describetimetoliveoutputtypedef"></a>
+```python title="Definition"
+class DescribeTimeToLiveInputRequestTypeDef(TypedDict):
+    TableName: str,
+```
 
 ## DescribeTimeToLiveOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveOutputTypeDef
+
+def get_value() -> DescribeTimeToLiveOutputTypeDef:
+    return {
+        "TimeToLiveDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeTimeToLiveOutputTypeDef(TypedDict):
+    TimeToLiveDescription: TimeToLiveDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TimeToLiveDescription`:
-  [TimeToLiveDescriptionTypeDef](./type_defs.md#timetolivedescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="endpointtypedef"></a>
-
+1. See [:material-code-braces: TimeToLiveDescriptionTypeDef](./type_defs.md#timetolivedescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import EndpointTypeDef
+
+def get_value() -> EndpointTypeDef:
+    return {
+        "Address": ...,
+        "CachePeriodInMinutes": ...,
+    }
 ```
 
-Required fields:
-
-- `Address`: `str`
-- `CachePeriodInMinutes`: `int`
-
-<a id="executestatementinputrequesttypedef"></a>
+```python title="Definition"
+class EndpointTypeDef(TypedDict):
+    Address: str,
+    CachePeriodInMinutes: int,
+```
 
 ## ExecuteStatementInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExecuteStatementInputRequestTypeDef
+
+def get_value() -> ExecuteStatementInputRequestTypeDef:
+    return {
+        "Statement": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteStatementInputRequestTypeDef(TypedDict):
+    Statement: str,
+    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ConsistentRead: NotRequired[bool],
+    NextToken: NotRequired[str],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (1)
+    Limit: NotRequired[int],
+```
 
-- `Statement`: `str`
-
-Optional fields:
-
-- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsistentRead`: `bool`
-- `NextToken`: `str`
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `Limit`: `int`
-
-<a id="executestatementoutputtypedef"></a>
-
+1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## ExecuteStatementOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExecuteStatementOutputTypeDef
+
+def get_value() -> ExecuteStatementOutputTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ConsumedCapacity": ...,
+        "LastEvaluatedKey": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteStatementOutputTypeDef(TypedDict):
+    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    NextToken: str,
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]\]
-- `NextToken`: `str`
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="executetransactioninputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExecuteTransactionInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExecuteTransactionInputRequestTypeDef
+
+def get_value() -> ExecuteTransactionInputRequestTypeDef:
+    return {
+        "TransactStatements": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteTransactionInputRequestTypeDef(TypedDict):
+    TransactStatements: Sequence[ParameterizedStatementTypeDef],  # (1)
+    ClientRequestToken: NotRequired[str],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
 
-- `TransactStatements`:
-  `Sequence`\[[ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef)\]
-
-Optional fields:
-
-- `ClientRequestToken`: `str`
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-
-<a id="executetransactionoutputtypedef"></a>
-
+1. See [:material-code-braces: ParameterizedStatementTypeDef](./type_defs.md#parameterizedstatementtypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## ExecuteTransactionOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExecuteTransactionOutputTypeDef
+
+def get_value() -> ExecuteTransactionOutputTypeDef:
+    return {
+        "Responses": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExecuteTransactionOutputTypeDef(TypedDict):
+    Responses: List[ItemResponseTypeDef],  # (1)
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Responses`:
-  `List`\[[ItemResponseTypeDef](./type_defs.md#itemresponsetypedef)\]
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="expectedattributevaluetypedef"></a>
-
+1. See [:material-code-braces: ItemResponseTypeDef](./type_defs.md#itemresponsetypedef) 
+2. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ExpectedAttributeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExpectedAttributeValueTypeDef
+
+def get_value() -> ExpectedAttributeValueTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExpectedAttributeValueTypeDef(TypedDict):
+    Value: NotRequired[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Exists: NotRequired[bool],
+    ComparisonOperator: NotRequired[ComparisonOperatorType],  # (1)
+    AttributeValueList: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `Value`: `Union`\[`bytes`, `bytearray`, `str`, `int`, `Decimal`, `bool`,
-  `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\], `Set`\[`bytes`\],
-  `Set`\[`bytearray`\], `Sequence`\[`Any`\], `Mapping`\[`str`, `Any`\],
-  `None`\]
-- `Exists`: `bool`
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
-- `AttributeValueList`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="exportdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
 ## ExportDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExportDescriptionTypeDef
+
+def get_value() -> ExportDescriptionTypeDef:
+    return {
+        "ExportArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportDescriptionTypeDef(TypedDict):
+    ExportArn: NotRequired[str],
+    ExportStatus: NotRequired[ExportStatusType],  # (1)
+    StartTime: NotRequired[datetime],
+    EndTime: NotRequired[datetime],
+    ExportManifest: NotRequired[str],
+    TableArn: NotRequired[str],
+    TableId: NotRequired[str],
+    ExportTime: NotRequired[datetime],
+    ClientToken: NotRequired[str],
+    S3Bucket: NotRequired[str],
+    S3BucketOwner: NotRequired[str],
+    S3Prefix: NotRequired[str],
+    S3SseAlgorithm: NotRequired[S3SseAlgorithmType],  # (2)
+    S3SseKmsKeyId: NotRequired[str],
+    FailureCode: NotRequired[str],
+    FailureMessage: NotRequired[str],
+    ExportFormat: NotRequired[ExportFormatType],  # (3)
+    BilledSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+```
 
-- `ExportArn`: `str`
-- `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-- `StartTime`: `datetime`
-- `EndTime`: `datetime`
-- `ExportManifest`: `str`
-- `TableArn`: `str`
-- `TableId`: `str`
-- `ExportTime`: `datetime`
-- `ClientToken`: `str`
-- `S3Bucket`: `str`
-- `S3BucketOwner`: `str`
-- `S3Prefix`: `str`
-- `S3SseAlgorithm`: [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
-- `S3SseKmsKeyId`: `str`
-- `FailureCode`: `str`
-- `FailureMessage`: `str`
-- `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
-- `BilledSizeBytes`: `int`
-- `ItemCount`: `int`
-
-<a id="exportsummarytypedef"></a>
-
+1. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
+2. See [:material-code-brackets: S3SseAlgorithmType](./literals.md#s3ssealgorithmtype) 
+3. See [:material-code-brackets: ExportFormatType](./literals.md#exportformattype) 
 ## ExportSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExportSummaryTypeDef
+
+def get_value() -> ExportSummaryTypeDef:
+    return {
+        "ExportArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ExportSummaryTypeDef(TypedDict):
+    ExportArn: NotRequired[str],
+    ExportStatus: NotRequired[ExportStatusType],  # (1)
+```
 
-- `ExportArn`: `str`
-- `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
-
-<a id="exporttabletopointintimeinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: ExportStatusType](./literals.md#exportstatustype) 
 ## ExportTableToPointInTimeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeInputRequestTypeDef
+
+def get_value() -> ExportTableToPointInTimeInputRequestTypeDef:
+    return {
+        "TableArn": ...,
+        "S3Bucket": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportTableToPointInTimeInputRequestTypeDef(TypedDict):
+    TableArn: str,
+    S3Bucket: str,
+    ExportTime: NotRequired[Union[datetime, str]],
+    ClientToken: NotRequired[str],
+    S3BucketOwner: NotRequired[str],
+    S3Prefix: NotRequired[str],
+    S3SseAlgorithm: NotRequired[S3SseAlgorithmType],  # (1)
+    S3SseKmsKeyId: NotRequired[str],
+    ExportFormat: NotRequired[ExportFormatType],  # (2)
+```
 
-- `TableArn`: `str`
-- `S3Bucket`: `str`
-
-Optional fields:
-
-- `ExportTime`: `Union`\[`datetime`, `str`\]
-- `ClientToken`: `str`
-- `S3BucketOwner`: `str`
-- `S3Prefix`: `str`
-- `S3SseAlgorithm`: [S3SseAlgorithmType](./literals.md#s3ssealgorithmtype)
-- `S3SseKmsKeyId`: `str`
-- `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
-
-<a id="exporttabletopointintimeoutputtypedef"></a>
-
+1. See [:material-code-brackets: S3SseAlgorithmType](./literals.md#s3ssealgorithmtype) 
+2. See [:material-code-brackets: ExportFormatType](./literals.md#exportformattype) 
 ## ExportTableToPointInTimeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ExportTableToPointInTimeOutputTypeDef
+
+def get_value() -> ExportTableToPointInTimeOutputTypeDef:
+    return {
+        "ExportDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ExportTableToPointInTimeOutputTypeDef(TypedDict):
+    ExportDescription: ExportDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExportDescription`:
-  [ExportDescriptionTypeDef](./type_defs.md#exportdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="failureexceptiontypedef"></a>
-
+1. See [:material-code-braces: ExportDescriptionTypeDef](./type_defs.md#exportdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## FailureExceptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import FailureExceptionTypeDef
+
+def get_value() -> FailureExceptionTypeDef:
+    return {
+        "ExceptionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExceptionName`: `str`
-- `ExceptionDescription`: `str`
-
-<a id="getiteminputrequesttypedef"></a>
+```python title="Definition"
+class FailureExceptionTypeDef(TypedDict):
+    ExceptionName: NotRequired[str],
+    ExceptionDescription: NotRequired[str],
+```
 
 ## GetItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GetItemInputRequestTypeDef
+
+def get_value() -> GetItemInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetItemInputRequestTypeDef(TypedDict):
+    TableName: str,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributesToGet: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (1)
+    ProjectionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+```
 
-- `TableName`: `str`
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-
-<a id="getiteminputtablegetitemtypedef"></a>
-
+1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## GetItemInputTableGetItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GetItemInputTableGetItemTypeDef
+
+def get_value() -> GetItemInputTableGetItemTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetItemInputTableGetItemTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributesToGet: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (1)
+    ProjectionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-
-<a id="getitemoutputtypedef"></a>
-
+1. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## GetItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GetItemOutputTypeDef
+
+def get_value() -> GetItemOutputTypeDef:
+    return {
+        "Item": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetItemOutputTypeDef(TypedDict):
+    Item: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gettypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GetTypeDef
+
+def get_value() -> GetTypeDef:
+    return {
+        "Key": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `TableName`: `str`
-
-Optional fields:
-
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-
-<a id="globalsecondaryindexautoscalingupdatetypedef"></a>
+```python title="Definition"
+class GetTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    TableName: str,
+    ProjectionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+```
 
 ## GlobalSecondaryIndexAutoScalingUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexAutoScalingUpdateTypeDef
+
+def get_value() -> GlobalSecondaryIndexAutoScalingUpdateTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalSecondaryIndexAutoScalingUpdateTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    ProvisionedWriteCapacityAutoScalingUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-- `ProvisionedWriteCapacityAutoScalingUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-
-<a id="globalsecondaryindexdescriptiontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
 ## GlobalSecondaryIndexDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexDescriptionTypeDef
+
+def get_value() -> GlobalSecondaryIndexDescriptionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalSecondaryIndexDescriptionTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTypeDef],  # (2)
+    IndexStatus: NotRequired[IndexStatusType],  # (3)
+    Backfilling: NotRequired[bool],
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputDescriptionTypeDef],  # (4)
+    IndexSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    IndexArn: NotRequired[str],
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
-- `Backfilling`: `bool`
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef)
-- `IndexSizeBytes`: `int`
-- `ItemCount`: `int`
-- `IndexArn`: `str`
-
-<a id="globalsecondaryindexinfotypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
+3. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
+4. See [:material-code-braces: ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef) 
 ## GlobalSecondaryIndexInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexInfoTypeDef
+
+def get_value() -> GlobalSecondaryIndexInfoTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalSecondaryIndexInfoTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTypeDef],  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-
-<a id="globalsecondaryindextypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
 ## GlobalSecondaryIndexTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexTypeDef
+
+def get_value() -> GlobalSecondaryIndexTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GlobalSecondaryIndexTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (1)
+    Projection: ProjectionTypeDef,  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-
-Optional fields:
-
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-
-<a id="globalsecondaryindexupdatetypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
 ## GlobalSecondaryIndexUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalSecondaryIndexUpdateTypeDef
+
+def get_value() -> GlobalSecondaryIndexUpdateTypeDef:
+    return {
+        "Update": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalSecondaryIndexUpdateTypeDef(TypedDict):
+    Update: NotRequired[UpdateGlobalSecondaryIndexActionTypeDef],  # (1)
+    Create: NotRequired[CreateGlobalSecondaryIndexActionTypeDef],  # (2)
+    Delete: NotRequired[DeleteGlobalSecondaryIndexActionTypeDef],  # (3)
+```
 
-- `Update`:
-  [UpdateGlobalSecondaryIndexActionTypeDef](./type_defs.md#updateglobalsecondaryindexactiontypedef)
-- `Create`:
-  [CreateGlobalSecondaryIndexActionTypeDef](./type_defs.md#createglobalsecondaryindexactiontypedef)
-- `Delete`:
-  [DeleteGlobalSecondaryIndexActionTypeDef](./type_defs.md#deleteglobalsecondaryindexactiontypedef)
-
-<a id="globaltabledescriptiontypedef"></a>
-
+1. See [:material-code-braces: UpdateGlobalSecondaryIndexActionTypeDef](./type_defs.md#updateglobalsecondaryindexactiontypedef) 
+2. See [:material-code-braces: CreateGlobalSecondaryIndexActionTypeDef](./type_defs.md#createglobalsecondaryindexactiontypedef) 
+3. See [:material-code-braces: DeleteGlobalSecondaryIndexActionTypeDef](./type_defs.md#deleteglobalsecondaryindexactiontypedef) 
 ## GlobalTableDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalTableDescriptionTypeDef
+
+def get_value() -> GlobalTableDescriptionTypeDef:
+    return {
+        "ReplicationGroup": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalTableDescriptionTypeDef(TypedDict):
+    ReplicationGroup: NotRequired[List[ReplicaDescriptionTypeDef]],  # (1)
+    GlobalTableArn: NotRequired[str],
+    CreationDateTime: NotRequired[datetime],
+    GlobalTableStatus: NotRequired[GlobalTableStatusType],  # (2)
+    GlobalTableName: NotRequired[str],
+```
 
-- `ReplicationGroup`:
-  `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
-- `GlobalTableArn`: `str`
-- `CreationDateTime`: `datetime`
-- `GlobalTableStatus`:
-  [GlobalTableStatusType](./literals.md#globaltablestatustype)
-- `GlobalTableName`: `str`
-
-<a id="globaltableglobalsecondaryindexsettingsupdatetypedef"></a>
-
+1. See [:material-code-braces: ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef) 
+2. See [:material-code-brackets: GlobalTableStatusType](./literals.md#globaltablestatustype) 
 ## GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
+
+def get_value() -> GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedWriteCapacityUnits: NotRequired[int],
+    ProvisionedWriteCapacityAutoScalingSettingsUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-
-Optional fields:
-
-- `ProvisionedWriteCapacityUnits`: `int`
-- `ProvisionedWriteCapacityAutoScalingSettingsUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-
-<a id="globaltabletypedef"></a>
-
+1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
 ## GlobalTableTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import GlobalTableTypeDef
+
+def get_value() -> GlobalTableTypeDef:
+    return {
+        "GlobalTableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GlobalTableTypeDef(TypedDict):
+    GlobalTableName: NotRequired[str],
+    ReplicationGroup: NotRequired[List[ReplicaTypeDef]],  # (1)
+```
 
-- `GlobalTableName`: `str`
-- `ReplicationGroup`: `List`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
-
-<a id="itemcollectionmetricstypedef"></a>
-
+1. See [:material-code-braces: ReplicaTypeDef](./type_defs.md#replicatypedef) 
 ## ItemCollectionMetricsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ItemCollectionMetricsTypeDef
+
+def get_value() -> ItemCollectionMetricsTypeDef:
+    return {
+        "ItemCollectionKey": ...,
+    }
 ```
 
-Optional fields:
-
-- `ItemCollectionKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `SizeEstimateRangeGB`: `List`\[`float`\]
-
-<a id="itemresponsetypedef"></a>
+```python title="Definition"
+class ItemCollectionMetricsTypeDef(TypedDict):
+    ItemCollectionKey: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    SizeEstimateRangeGB: NotRequired[List[float]],
+```
 
 ## ItemResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ItemResponseTypeDef
+
+def get_value() -> ItemResponseTypeDef:
+    return {
+        "Item": ...,
+    }
 ```
 
-Optional fields:
-
-- `Item`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="keyschemaelementtypedef"></a>
+```python title="Definition"
+class ItemResponseTypeDef(TypedDict):
+    Item: NotRequired[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
 ## KeySchemaElementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import KeySchemaElementTypeDef
+
+def get_value() -> KeySchemaElementTypeDef:
+    return {
+        "AttributeName": ...,
+        "KeyType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KeySchemaElementTypeDef(TypedDict):
+    AttributeName: str,
+    KeyType: KeyTypeType,  # (1)
+```
 
-- `AttributeName`: `str`
-- `KeyType`: [KeyTypeType](./literals.md#keytypetype)
-
-<a id="keysandattributestypedef"></a>
-
+1. See [:material-code-brackets: KeyTypeType](./literals.md#keytypetype) 
 ## KeysAndAttributesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import KeysAndAttributesTypeDef
+
+def get_value() -> KeysAndAttributesTypeDef:
+    return {
+        "Keys": ...,
+    }
 ```
 
-Required fields:
-
-- `Keys`: `Sequence`\[`Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]\]
-
-Optional fields:
-
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
-- `ProjectionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-
-<a id="kinesisdatastreamdestinationtypedef"></a>
+```python title="Definition"
+class KeysAndAttributesTypeDef(TypedDict):
+    Keys: Sequence[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    AttributesToGet: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+    ProjectionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+```
 
 ## KinesisDataStreamDestinationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import KinesisDataStreamDestinationTypeDef
+
+def get_value() -> KinesisDataStreamDestinationTypeDef:
+    return {
+        "StreamArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class KinesisDataStreamDestinationTypeDef(TypedDict):
+    StreamArn: NotRequired[str],
+    DestinationStatus: NotRequired[DestinationStatusType],  # (1)
+    DestinationStatusDescription: NotRequired[str],
+```
 
-- `StreamArn`: `str`
-- `DestinationStatus`:
-  [DestinationStatusType](./literals.md#destinationstatustype)
-- `DestinationStatusDescription`: `str`
-
-<a id="kinesisstreamingdestinationinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: DestinationStatusType](./literals.md#destinationstatustype) 
 ## KinesisStreamingDestinationInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationInputRequestTypeDef
+
+def get_value() -> KinesisStreamingDestinationInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "StreamArn": ...,
+    }
 ```
 
-Required fields:
-
-- `TableName`: `str`
-- `StreamArn`: `str`
-
-<a id="kinesisstreamingdestinationoutputtypedef"></a>
+```python title="Definition"
+class KinesisStreamingDestinationInputRequestTypeDef(TypedDict):
+    TableName: str,
+    StreamArn: str,
+```
 
 ## KinesisStreamingDestinationOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import KinesisStreamingDestinationOutputTypeDef
+
+def get_value() -> KinesisStreamingDestinationOutputTypeDef:
+    return {
+        "TableName": ...,
+        "StreamArn": ...,
+        "DestinationStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KinesisStreamingDestinationOutputTypeDef(TypedDict):
+    TableName: str,
+    StreamArn: str,
+    DestinationStatus: DestinationStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableName`: `str`
-- `StreamArn`: `str`
-- `DestinationStatus`:
-  [DestinationStatusType](./literals.md#destinationstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-brackets: DestinationStatusType](./literals.md#destinationstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBackupsInputListBackupsPaginateTypeDef
 
-<a id="listbackupsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListBackupsInputListBackupsPaginateTypeDef
 
+def get_value() -> ListBackupsInputListBackupsPaginateTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
+
+```python title="Definition"
+class ListBackupsInputListBackupsPaginateTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    TimeRangeLowerBound: NotRequired[Union[datetime, str]],
+    TimeRangeUpperBound: NotRequired[Union[datetime, str]],
+    BackupType: NotRequired[BackupTypeFilterType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: BackupTypeFilterType](./literals.md#backuptypefiltertype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBackupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListBackupsInputRequestTypeDef
+
+def get_value() -> ListBackupsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListBackupsInputRequestTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    Limit: NotRequired[int],
+    TimeRangeLowerBound: NotRequired[Union[datetime, str]],
+    TimeRangeUpperBound: NotRequired[Union[datetime, str]],
+    ExclusiveStartBackupArn: NotRequired[str],
+    BackupType: NotRequired[BackupTypeFilterType],  # (1)
+```
 
-- `TableName`: `str`
-- `Limit`: `int`
-- `TimeRangeLowerBound`: `Union`\[`datetime`, `str`\]
-- `TimeRangeUpperBound`: `Union`\[`datetime`, `str`\]
-- `ExclusiveStartBackupArn`: `str`
-- `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
-
-<a id="listbackupsoutputtypedef"></a>
-
+1. See [:material-code-brackets: BackupTypeFilterType](./literals.md#backuptypefiltertype) 
 ## ListBackupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListBackupsOutputTypeDef
+
+def get_value() -> ListBackupsOutputTypeDef:
+    return {
+        "BackupSummaries": ...,
+        "LastEvaluatedBackupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBackupsOutputTypeDef(TypedDict):
+    BackupSummaries: List[BackupSummaryTypeDef],  # (1)
+    LastEvaluatedBackupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `BackupSummaries`:
-  `List`\[[BackupSummaryTypeDef](./type_defs.md#backupsummarytypedef)\]
-- `LastEvaluatedBackupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listcontributorinsightsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: BackupSummaryTypeDef](./type_defs.md#backupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListContributorInsightsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListContributorInsightsInputRequestTypeDef
+
+def get_value() -> ListContributorInsightsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
-
-- `TableName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcontributorinsightsoutputtypedef"></a>
+```python title="Definition"
+class ListContributorInsightsInputRequestTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListContributorInsightsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListContributorInsightsOutputTypeDef
+
+def get_value() -> ListContributorInsightsOutputTypeDef:
+    return {
+        "ContributorInsightsSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContributorInsightsOutputTypeDef(TypedDict):
+    ContributorInsightsSummaries: List[ContributorInsightsSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContributorInsightsSummaries`:
-  `List`\[[ContributorInsightsSummaryTypeDef](./type_defs.md#contributorinsightssummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listexportsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContributorInsightsSummaryTypeDef](./type_defs.md#contributorinsightssummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListExportsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListExportsInputRequestTypeDef
+
+def get_value() -> ListExportsInputRequestTypeDef:
+    return {
+        "TableArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `TableArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listexportsoutputtypedef"></a>
+```python title="Definition"
+class ListExportsInputRequestTypeDef(TypedDict):
+    TableArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListExportsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListExportsOutputTypeDef
+
+def get_value() -> ListExportsOutputTypeDef:
+    return {
+        "ExportSummaries": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListExportsOutputTypeDef(TypedDict):
+    ExportSummaries: List[ExportSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ExportSummaries`:
-  `List`\[[ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listglobaltablesinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ExportSummaryTypeDef](./type_defs.md#exportsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListGlobalTablesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListGlobalTablesInputRequestTypeDef
+
+def get_value() -> ListGlobalTablesInputRequestTypeDef:
+    return {
+        "ExclusiveStartGlobalTableName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExclusiveStartGlobalTableName`: `str`
-- `Limit`: `int`
-- `RegionName`: `str`
-
-<a id="listglobaltablesoutputtypedef"></a>
+```python title="Definition"
+class ListGlobalTablesInputRequestTypeDef(TypedDict):
+    ExclusiveStartGlobalTableName: NotRequired[str],
+    Limit: NotRequired[int],
+    RegionName: NotRequired[str],
+```
 
 ## ListGlobalTablesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListGlobalTablesOutputTypeDef
+
+def get_value() -> ListGlobalTablesOutputTypeDef:
+    return {
+        "GlobalTables": ...,
+        "LastEvaluatedGlobalTableName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListGlobalTablesOutputTypeDef(TypedDict):
+    GlobalTables: List[GlobalTableTypeDef],  # (1)
+    LastEvaluatedGlobalTableName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTables`:
-  `List`\[[GlobalTableTypeDef](./type_defs.md#globaltabletypedef)\]
-- `LastEvaluatedGlobalTableName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: GlobalTableTypeDef](./type_defs.md#globaltabletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTablesInputListTablesPaginateTypeDef
 
-<a id="listtablesinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListTablesInputListTablesPaginateTypeDef
 
+def get_value() -> ListTablesInputListTablesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListTablesInputListTablesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTablesInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListTablesInputRequestTypeDef
+
+def get_value() -> ListTablesInputRequestTypeDef:
+    return {
+        "ExclusiveStartTableName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExclusiveStartTableName`: `str`
-- `Limit`: `int`
-
-<a id="listtablesoutputtypedef"></a>
+```python title="Definition"
+class ListTablesInputRequestTypeDef(TypedDict):
+    ExclusiveStartTableName: NotRequired[str],
+    Limit: NotRequired[int],
+```
 
 ## ListTablesOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListTablesOutputTypeDef
+
+def get_value() -> ListTablesOutputTypeDef:
+    return {
+        "TableNames": ...,
+        "LastEvaluatedTableName": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTablesOutputTypeDef(TypedDict):
+    TableNames: List[str],
+    LastEvaluatedTableName: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `TableNames`: `List`\[`str`\]
-- `LastEvaluatedTableName`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef
 
-<a id="listtagsofresourceinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef
 
+def get_value() -> ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef(TypedDict):
+    ResourceArn: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListTagsOfResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceInputRequestTypeDef
+
+def get_value() -> ListTagsOfResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listtagsofresourceoutputtypedef"></a>
+```python title="Definition"
+class ListTagsOfResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    NextToken: NotRequired[str],
+```
 
 ## ListTagsOfResourceOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ListTagsOfResourceOutputTypeDef
+
+def get_value() -> ListTagsOfResourceOutputTypeDef:
+    return {
+        "Tags": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsOfResourceOutputTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="localsecondaryindexdescriptiontypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LocalSecondaryIndexDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexDescriptionTypeDef
+
+def get_value() -> LocalSecondaryIndexDescriptionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LocalSecondaryIndexDescriptionTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTypeDef],  # (2)
+    IndexSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    IndexArn: NotRequired[str],
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-- `IndexSizeBytes`: `int`
-- `ItemCount`: `int`
-- `IndexArn`: `str`
-
-<a id="localsecondaryindexinfotypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
 ## LocalSecondaryIndexInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexInfoTypeDef
+
+def get_value() -> LocalSecondaryIndexInfoTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LocalSecondaryIndexInfoTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTypeDef]],  # (1)
+    Projection: NotRequired[ProjectionTypeDef],  # (2)
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-
-<a id="localsecondaryindextypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
 ## LocalSecondaryIndexTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import LocalSecondaryIndexTypeDef
+
+def get_value() -> LocalSecondaryIndexTypeDef:
+    return {
+        "IndexName": ...,
+        "KeySchema": ...,
+        "Projection": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LocalSecondaryIndexTypeDef(TypedDict):
+    IndexName: str,
+    KeySchema: Sequence[KeySchemaElementTypeDef],  # (1)
+    Projection: ProjectionTypeDef,  # (2)
+```
 
-- `IndexName`: `str`
-- `KeySchema`:
-  `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProjectionTypeDef](./type_defs.md#projectiontypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="parameterizedstatementtypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParameterizedStatementTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ParameterizedStatementTypeDef
+
+def get_value() -> ParameterizedStatementTypeDef:
+    return {
+        "Statement": ...,
+    }
 ```
 
-Required fields:
-
-- `Statement`: `str`
-
-Optional fields:
-
-- `Parameters`: `Sequence`\[`Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="pointintimerecoverydescriptiontypedef"></a>
+```python title="Definition"
+class ParameterizedStatementTypeDef(TypedDict):
+    Statement: str,
+    Parameters: NotRequired[Sequence[Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
 ## PointInTimeRecoveryDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PointInTimeRecoveryDescriptionTypeDef
+
+def get_value() -> PointInTimeRecoveryDescriptionTypeDef:
+    return {
+        "PointInTimeRecoveryStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PointInTimeRecoveryDescriptionTypeDef(TypedDict):
+    PointInTimeRecoveryStatus: NotRequired[PointInTimeRecoveryStatusType],  # (1)
+    EarliestRestorableDateTime: NotRequired[datetime],
+    LatestRestorableDateTime: NotRequired[datetime],
+```
 
-- `PointInTimeRecoveryStatus`:
-  [PointInTimeRecoveryStatusType](./literals.md#pointintimerecoverystatustype)
-- `EarliestRestorableDateTime`: `datetime`
-- `LatestRestorableDateTime`: `datetime`
-
-<a id="pointintimerecoveryspecificationtypedef"></a>
-
+1. See [:material-code-brackets: PointInTimeRecoveryStatusType](./literals.md#pointintimerecoverystatustype) 
 ## PointInTimeRecoverySpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PointInTimeRecoverySpecificationTypeDef
+
+def get_value() -> PointInTimeRecoverySpecificationTypeDef:
+    return {
+        "PointInTimeRecoveryEnabled": ...,
+    }
 ```
 
-Required fields:
-
-- `PointInTimeRecoveryEnabled`: `bool`
-
-<a id="projectiontypedef"></a>
+```python title="Definition"
+class PointInTimeRecoverySpecificationTypeDef(TypedDict):
+    PointInTimeRecoveryEnabled: bool,
+```
 
 ## ProjectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ProjectionTypeDef
+
+def get_value() -> ProjectionTypeDef:
+    return {
+        "ProjectionType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ProjectionTypeDef(TypedDict):
+    ProjectionType: NotRequired[ProjectionTypeType],  # (1)
+    NonKeyAttributes: NotRequired[Sequence[str]],
+```
 
-- `ProjectionType`: [ProjectionTypeType](./literals.md#projectiontypetype)
-- `NonKeyAttributes`: `Sequence`\[`str`\]
-
-<a id="provisionedthroughputdescriptionresponsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ProjectionTypeType](./literals.md#projectiontypetype) 
 ## ProvisionedThroughputDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputDescriptionResponseMetadataTypeDef
+
+def get_value() -> ProvisionedThroughputDescriptionResponseMetadataTypeDef:
+    return {
+        "LastIncreaseDateTime": ...,
+        "LastDecreaseDateTime": ...,
+        "NumberOfDecreasesToday": ...,
+        "ReadCapacityUnits": ...,
+        "WriteCapacityUnits": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProvisionedThroughputDescriptionResponseMetadataTypeDef(TypedDict):
+    LastIncreaseDateTime: datetime,
+    LastDecreaseDateTime: datetime,
+    NumberOfDecreasesToday: int,
+    ReadCapacityUnits: int,
+    WriteCapacityUnits: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LastIncreaseDateTime`: `datetime`
-- `LastDecreaseDateTime`: `datetime`
-- `NumberOfDecreasesToday`: `int`
-- `ReadCapacityUnits`: `int`
-- `WriteCapacityUnits`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="provisionedthroughputdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ProvisionedThroughputDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputDescriptionTypeDef
+
+def get_value() -> ProvisionedThroughputDescriptionTypeDef:
+    return {
+        "LastIncreaseDateTime": ...,
+    }
 ```
 
-Optional fields:
-
-- `LastIncreaseDateTime`: `datetime`
-- `LastDecreaseDateTime`: `datetime`
-- `NumberOfDecreasesToday`: `int`
-- `ReadCapacityUnits`: `int`
-- `WriteCapacityUnits`: `int`
-
-<a id="provisionedthroughputoverridetypedef"></a>
+```python title="Definition"
+class ProvisionedThroughputDescriptionTypeDef(TypedDict):
+    LastIncreaseDateTime: NotRequired[datetime],
+    LastDecreaseDateTime: NotRequired[datetime],
+    NumberOfDecreasesToday: NotRequired[int],
+    ReadCapacityUnits: NotRequired[int],
+    WriteCapacityUnits: NotRequired[int],
+```
 
 ## ProvisionedThroughputOverrideTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputOverrideTypeDef
+
+def get_value() -> ProvisionedThroughputOverrideTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+    }
 ```
 
-Optional fields:
-
-- `ReadCapacityUnits`: `int`
-
-<a id="provisionedthroughputtypedef"></a>
+```python title="Definition"
+class ProvisionedThroughputOverrideTypeDef(TypedDict):
+    ReadCapacityUnits: NotRequired[int],
+```
 
 ## ProvisionedThroughputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputTypeDef
+
+def get_value() -> ProvisionedThroughputTypeDef:
+    return {
+        "ReadCapacityUnits": ...,
+        "WriteCapacityUnits": ...,
+    }
 ```
 
-Required fields:
-
-- `ReadCapacityUnits`: `int`
-- `WriteCapacityUnits`: `int`
-
-<a id="putiteminputrequesttypedef"></a>
+```python title="Definition"
+class ProvisionedThroughputTypeDef(TypedDict):
+    ReadCapacityUnits: int,
+    WriteCapacityUnits: int,
+```
 
 ## PutItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PutItemInputRequestTypeDef
+
+def get_value() -> PutItemInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "Item": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutItemInputRequestTypeDef(TypedDict):
+    TableName: str,
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    ReturnValues: NotRequired[ReturnValueType],  # (2)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (3)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (4)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (5)
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `TableName`: `str`
-- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="putiteminputtableputitemtypedef"></a>
-
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 ## PutItemInputTablePutItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PutItemInputTablePutItemTypeDef
+
+def get_value() -> PutItemInputTablePutItemTypeDef:
+    return {
+        "Item": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutItemInputTablePutItemTypeDef(TypedDict):
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (1)
+    ReturnValues: NotRequired[ReturnValueType],  # (2)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (3)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (4)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (5)
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="putitemoutputtypedef"></a>
-
+1. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+2. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+3. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+4. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
+5. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
 ## PutItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PutItemOutputTypeDef
+
+def get_value() -> PutItemOutputTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutItemOutputTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ItemCollectionMetrics`:
-  [ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putrequesttypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PutRequestTypeDef
+
+def get_value() -> PutRequestTypeDef:
+    return {
+        "Item": ...,
+    }
 ```
 
-Required fields:
-
-- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="puttypedef"></a>
+```python title="Definition"
+class PutRequestTypeDef(TypedDict):
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+```
 
 ## PutTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import PutTypeDef
+
+def get_value() -> PutTypeDef:
+    return {
+        "Item": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutTypeDef(TypedDict):
+    Item: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    TableName: str,
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+```
 
-- `Item`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `TableName`: `str`
+1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
+## QueryInputQueryPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import QueryInputQueryPaginateTypeDef
 
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
+def get_value() -> QueryInputQueryPaginateTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
 
-<a id="queryinputrequesttypedef"></a>
+```python title="Definition"
+class QueryInputQueryPaginateTypeDef(TypedDict):
+    TableName: str,
+    IndexName: NotRequired[str],
+    Select: NotRequired[SelectType],  # (1)
+    AttributesToGet: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+    KeyConditions: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
+    ScanIndexForward: NotRequired[bool],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    KeyConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (6)
+```
 
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## QueryInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import QueryInputRequestTypeDef
+
+def get_value() -> QueryInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryInputRequestTypeDef(TypedDict):
+    TableName: str,
+    IndexName: NotRequired[str],
+    Select: NotRequired[SelectType],  # (1)
+    AttributesToGet: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    ConsistentRead: NotRequired[bool],
+    KeyConditions: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
+    ScanIndexForward: NotRequired[bool],
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    KeyConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `TableName`: `str`
-
-Optional fields:
-
-- `IndexName`: `str`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `ConsistentRead`: `bool`
-- `KeyConditions`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `str`
-- `KeyConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="queryinputtablequerytypedef"></a>
-
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## QueryInputTableQueryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import QueryInputTableQueryTypeDef
+
+def get_value() -> QueryInputTableQueryTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueryInputTableQueryTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    Select: NotRequired[SelectType],  # (1)
+    AttributesToGet: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    ConsistentRead: NotRequired[bool],
+    KeyConditions: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    QueryFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (4)
+    ScanIndexForward: NotRequired[bool],
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[Union[str, ConditionBase]],
+    KeyConditionExpression: NotRequired[Union[str, ConditionBase]],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `IndexName`: `str`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `ConsistentRead`: `bool`
-- `KeyConditions`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `QueryFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ScanIndexForward`: `bool`
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `KeyConditionExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="queryoutputtypedef"></a>
-
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+4. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## QueryOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import QueryOutputTypeDef
+
+def get_value() -> QueryOutputTypeDef:
+    return {
+        "Items": ...,
+        "Count": ...,
+        "ScannedCount": ...,
+        "LastEvaluatedKey": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QueryOutputTypeDef(TypedDict):
+    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Count: int,
+    ScannedCount: int,
+    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]\]
-- `Count`: `int`
-- `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="replicaautoscalingdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ReplicaAutoScalingDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaAutoScalingDescriptionTypeDef
+
+def get_value() -> ReplicaAutoScalingDescriptionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaAutoScalingDescriptionTypeDef(TypedDict):
+    RegionName: NotRequired[str],
+    GlobalSecondaryIndexes: NotRequired[List[ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef]],  # (1)
+    ReplicaProvisionedReadCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+    ReplicaProvisionedWriteCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+    ReplicaStatus: NotRequired[ReplicaStatusType],  # (4)
+```
 
-- `RegionName`: `str`
-- `GlobalSecondaryIndexes`:
-  `List`\[[ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingdescriptiontypedef)\]
-- `ReplicaProvisionedReadCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ReplicaProvisionedWriteCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
-
-<a id="replicaautoscalingupdatetypedef"></a>
-
+1. See [:material-code-braces: ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingdescriptiontypedef) 
+2. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+3. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+4. See [:material-code-brackets: ReplicaStatusType](./literals.md#replicastatustype) 
 ## ReplicaAutoScalingUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaAutoScalingUpdateTypeDef
+
+def get_value() -> ReplicaAutoScalingUpdateTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaAutoScalingUpdateTypeDef(TypedDict):
+    RegionName: str,
+    ReplicaGlobalSecondaryIndexUpdates: NotRequired[Sequence[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef]],  # (1)
+    ReplicaProvisionedReadCapacityAutoScalingUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (2)
+```
 
-- `RegionName`: `str`
-
-Optional fields:
-
-- `ReplicaGlobalSecondaryIndexUpdates`:
-  `Sequence`\[[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef)\]
-- `ReplicaProvisionedReadCapacityAutoScalingUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-
-<a id="replicadescriptiontypedef"></a>
-
+1. See [:material-code-braces: ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef) 
+2. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
 ## ReplicaDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaDescriptionTypeDef
+
+def get_value() -> ReplicaDescriptionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaDescriptionTypeDef(TypedDict):
+    RegionName: NotRequired[str],
+    ReplicaStatus: NotRequired[ReplicaStatusType],  # (1)
+    ReplicaStatusDescription: NotRequired[str],
+    ReplicaStatusPercentProgress: NotRequired[str],
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTypeDef],  # (2)
+    GlobalSecondaryIndexes: NotRequired[List[ReplicaGlobalSecondaryIndexDescriptionTypeDef]],  # (3)
+    ReplicaInaccessibleDateTime: NotRequired[datetime],
+    ReplicaTableClassSummary: NotRequired[TableClassSummaryTypeDef],  # (4)
+```
 
-- `RegionName`: `str`
-- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
-- `ReplicaStatusDescription`: `str`
-- `ReplicaStatusPercentProgress`: `str`
-- `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
-- `GlobalSecondaryIndexes`:
-  `List`\[[ReplicaGlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexdescriptiontypedef)\]
-- `ReplicaInaccessibleDateTime`: `datetime`
-- `ReplicaTableClassSummary`:
-  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
-
-<a id="replicaglobalsecondaryindexautoscalingdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: ReplicaStatusType](./literals.md#replicastatustype) 
+2. See [:material-code-braces: ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef) 
+3. See [:material-code-braces: ReplicaGlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexdescriptiontypedef) 
+4. See [:material-code-braces: TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef) 
 ## ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    IndexStatus: NotRequired[IndexStatusType],  # (1)
+    ProvisionedReadCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+    ProvisionedWriteCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+```
 
-- `IndexName`: `str`
-- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
-- `ProvisionedReadCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ProvisionedWriteCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-
-<a id="replicaglobalsecondaryindexautoscalingupdatetypedef"></a>
-
+1. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
+2. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+3. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
 ## ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    ProvisionedReadCapacityAutoScalingUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-- `ProvisionedReadCapacityAutoScalingUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-
-<a id="replicaglobalsecondaryindexdescriptiontypedef"></a>
-
+1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
 ## ReplicaGlobalSecondaryIndexDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexDescriptionTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexDescriptionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexDescriptionTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
-
-<a id="replicaglobalsecondaryindexsettingsdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef) 
 ## ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef(TypedDict):
+    IndexName: str,
+    IndexStatus: NotRequired[IndexStatusType],  # (1)
+    ProvisionedReadCapacityUnits: NotRequired[int],
+    ProvisionedReadCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+    ProvisionedWriteCapacityUnits: NotRequired[int],
+    ProvisionedWriteCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (2)
+```
 
-- `IndexName`: `str`
-
-Optional fields:
-
-- `IndexStatus`: [IndexStatusType](./literals.md#indexstatustype)
-- `ProvisionedReadCapacityUnits`: `int`
-- `ProvisionedReadCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ProvisionedWriteCapacityUnits`: `int`
-- `ProvisionedWriteCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-
-<a id="replicaglobalsecondaryindexsettingsupdatetypedef"></a>
-
+1. See [:material-code-brackets: IndexStatusType](./literals.md#indexstatustype) 
+2. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+3. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
 ## ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedReadCapacityUnits: NotRequired[int],
+    ProvisionedReadCapacityAutoScalingSettingsUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-
-Optional fields:
-
-- `ProvisionedReadCapacityUnits`: `int`
-- `ProvisionedReadCapacityAutoScalingSettingsUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-
-<a id="replicaglobalsecondaryindextypedef"></a>
-
+1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
 ## ReplicaGlobalSecondaryIndexTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaGlobalSecondaryIndexTypeDef
+
+def get_value() -> ReplicaGlobalSecondaryIndexTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaGlobalSecondaryIndexTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTypeDef],  # (1)
+```
 
-- `IndexName`: `str`
-
-Optional fields:
-
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
-
-<a id="replicasettingsdescriptiontypedef"></a>
-
+1. See [:material-code-braces: ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef) 
 ## ReplicaSettingsDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaSettingsDescriptionTypeDef
+
+def get_value() -> ReplicaSettingsDescriptionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaSettingsDescriptionTypeDef(TypedDict):
+    RegionName: str,
+    ReplicaStatus: NotRequired[ReplicaStatusType],  # (1)
+    ReplicaBillingModeSummary: NotRequired[BillingModeSummaryTypeDef],  # (2)
+    ReplicaProvisionedReadCapacityUnits: NotRequired[int],
+    ReplicaProvisionedReadCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (3)
+    ReplicaProvisionedWriteCapacityUnits: NotRequired[int],
+    ReplicaProvisionedWriteCapacityAutoScalingSettings: NotRequired[AutoScalingSettingsDescriptionTypeDef],  # (3)
+    ReplicaGlobalSecondaryIndexSettings: NotRequired[List[ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef]],  # (5)
+    ReplicaTableClassSummary: NotRequired[TableClassSummaryTypeDef],  # (6)
+```
 
-- `RegionName`: `str`
-
-Optional fields:
-
-- `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
-- `ReplicaBillingModeSummary`:
-  [BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef)
-- `ReplicaProvisionedReadCapacityUnits`: `int`
-- `ReplicaProvisionedReadCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ReplicaProvisionedWriteCapacityUnits`: `int`
-- `ReplicaProvisionedWriteCapacityAutoScalingSettings`:
-  [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
-- `ReplicaGlobalSecondaryIndexSettings`:
-  `List`\[[ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsdescriptiontypedef)\]
-- `ReplicaTableClassSummary`:
-  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
-
-<a id="replicasettingsupdatetypedef"></a>
-
+1. See [:material-code-brackets: ReplicaStatusType](./literals.md#replicastatustype) 
+2. See [:material-code-braces: BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef) 
+3. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+4. See [:material-code-braces: AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef) 
+5. See [:material-code-braces: ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsdescriptiontypedef) 
+6. See [:material-code-braces: TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef) 
 ## ReplicaSettingsUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaSettingsUpdateTypeDef
+
+def get_value() -> ReplicaSettingsUpdateTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplicaSettingsUpdateTypeDef(TypedDict):
+    RegionName: str,
+    ReplicaProvisionedReadCapacityUnits: NotRequired[int],
+    ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (1)
+    ReplicaGlobalSecondaryIndexSettingsUpdate: NotRequired[Sequence[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef]],  # (2)
+    ReplicaTableClass: NotRequired[TableClassType],  # (3)
+```
 
-- `RegionName`: `str`
-
-Optional fields:
-
-- `ReplicaProvisionedReadCapacityUnits`: `int`
-- `ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-- `ReplicaGlobalSecondaryIndexSettingsUpdate`:
-  `Sequence`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef)\]
-- `ReplicaTableClass`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="replicatypedef"></a>
-
+1. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+2. See [:material-code-braces: ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef) 
+3. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## ReplicaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaTypeDef
+
+def get_value() -> ReplicaTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `RegionName`: `str`
-
-<a id="replicaupdatetypedef"></a>
+```python title="Definition"
+class ReplicaTypeDef(TypedDict):
+    RegionName: NotRequired[str],
+```
 
 ## ReplicaUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicaUpdateTypeDef
+
+def get_value() -> ReplicaUpdateTypeDef:
+    return {
+        "Create": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicaUpdateTypeDef(TypedDict):
+    Create: NotRequired[CreateReplicaActionTypeDef],  # (1)
+    Delete: NotRequired[DeleteReplicaActionTypeDef],  # (2)
+```
 
-- `Create`:
-  [CreateReplicaActionTypeDef](./type_defs.md#createreplicaactiontypedef)
-- `Delete`:
-  [DeleteReplicaActionTypeDef](./type_defs.md#deletereplicaactiontypedef)
-
-<a id="replicationgroupupdatetypedef"></a>
-
+1. See [:material-code-braces: CreateReplicaActionTypeDef](./type_defs.md#createreplicaactiontypedef) 
+2. See [:material-code-braces: DeleteReplicaActionTypeDef](./type_defs.md#deletereplicaactiontypedef) 
 ## ReplicationGroupUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ReplicationGroupUpdateTypeDef
+
+def get_value() -> ReplicationGroupUpdateTypeDef:
+    return {
+        "Create": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReplicationGroupUpdateTypeDef(TypedDict):
+    Create: NotRequired[CreateReplicationGroupMemberActionTypeDef],  # (1)
+    Update: NotRequired[UpdateReplicationGroupMemberActionTypeDef],  # (2)
+    Delete: NotRequired[DeleteReplicationGroupMemberActionTypeDef],  # (3)
+```
 
-- `Create`:
-  [CreateReplicationGroupMemberActionTypeDef](./type_defs.md#createreplicationgroupmemberactiontypedef)
-- `Update`:
-  [UpdateReplicationGroupMemberActionTypeDef](./type_defs.md#updatereplicationgroupmemberactiontypedef)
-- `Delete`:
-  [DeleteReplicationGroupMemberActionTypeDef](./type_defs.md#deletereplicationgroupmemberactiontypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: CreateReplicationGroupMemberActionTypeDef](./type_defs.md#createreplicationgroupmemberactiontypedef) 
+2. See [:material-code-braces: UpdateReplicationGroupMemberActionTypeDef](./type_defs.md#updatereplicationgroupmemberactiontypedef) 
+3. See [:material-code-braces: DeleteReplicationGroupMemberActionTypeDef](./type_defs.md#deletereplicationgroupmemberactiontypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="restoresummaryresponsemetadatatypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RestoreSummaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreSummaryResponseMetadataTypeDef
+
+def get_value() -> RestoreSummaryResponseMetadataTypeDef:
+    return {
+        "SourceBackupArn": ...,
+        "SourceTableArn": ...,
+        "RestoreDateTime": ...,
+        "RestoreInProgress": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreSummaryResponseMetadataTypeDef(TypedDict):
+    SourceBackupArn: str,
+    SourceTableArn: str,
+    RestoreDateTime: datetime,
+    RestoreInProgress: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SourceBackupArn`: `str`
-- `SourceTableArn`: `str`
-- `RestoreDateTime`: `datetime`
-- `RestoreInProgress`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="restoresummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RestoreSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreSummaryTypeDef
+
+def get_value() -> RestoreSummaryTypeDef:
+    return {
+        "RestoreDateTime": ...,
+        "RestoreInProgress": ...,
+    }
 ```
 
-Required fields:
-
-- `RestoreDateTime`: `datetime`
-- `RestoreInProgress`: `bool`
-
-Optional fields:
-
-- `SourceBackupArn`: `str`
-- `SourceTableArn`: `str`
-
-<a id="restoretablefrombackupinputrequesttypedef"></a>
+```python title="Definition"
+class RestoreSummaryTypeDef(TypedDict):
+    RestoreDateTime: datetime,
+    RestoreInProgress: bool,
+    SourceBackupArn: NotRequired[str],
+    SourceTableArn: NotRequired[str],
+```
 
 ## RestoreTableFromBackupInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupInputRequestTypeDef
+
+def get_value() -> RestoreTableFromBackupInputRequestTypeDef:
+    return {
+        "TargetTableName": ...,
+        "BackupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreTableFromBackupInputRequestTypeDef(TypedDict):
+    TargetTableName: str,
+    BackupArn: str,
+    BillingModeOverride: NotRequired[BillingModeType],  # (1)
+    GlobalSecondaryIndexOverride: NotRequired[Sequence[GlobalSecondaryIndexTypeDef]],  # (2)
+    LocalSecondaryIndexOverride: NotRequired[Sequence[LocalSecondaryIndexTypeDef]],  # (3)
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputTypeDef],  # (4)
+    SSESpecificationOverride: NotRequired[SSESpecificationTypeDef],  # (5)
+```
 
-- `TargetTableName`: `str`
-- `BackupArn`: `str`
-
-Optional fields:
-
-- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
-- `GlobalSecondaryIndexOverride`:
-  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `LocalSecondaryIndexOverride`:
-  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `SSESpecificationOverride`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-
-<a id="restoretablefrombackupoutputtypedef"></a>
-
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+2. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
+4. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+5. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
 ## RestoreTableFromBackupOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreTableFromBackupOutputTypeDef
+
+def get_value() -> RestoreTableFromBackupOutputTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreTableFromBackupOutputTypeDef(TypedDict):
+    TableDescription: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableDescription`:
-  [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="restoretabletopointintimeinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RestoreTableToPointInTimeInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeInputRequestTypeDef
+
+def get_value() -> RestoreTableToPointInTimeInputRequestTypeDef:
+    return {
+        "TargetTableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreTableToPointInTimeInputRequestTypeDef(TypedDict):
+    TargetTableName: str,
+    SourceTableArn: NotRequired[str],
+    SourceTableName: NotRequired[str],
+    UseLatestRestorableTime: NotRequired[bool],
+    RestoreDateTime: NotRequired[Union[datetime, str]],
+    BillingModeOverride: NotRequired[BillingModeType],  # (1)
+    GlobalSecondaryIndexOverride: NotRequired[Sequence[GlobalSecondaryIndexTypeDef]],  # (2)
+    LocalSecondaryIndexOverride: NotRequired[Sequence[LocalSecondaryIndexTypeDef]],  # (3)
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputTypeDef],  # (4)
+    SSESpecificationOverride: NotRequired[SSESpecificationTypeDef],  # (5)
+```
 
-- `TargetTableName`: `str`
-
-Optional fields:
-
-- `SourceTableArn`: `str`
-- `SourceTableName`: `str`
-- `UseLatestRestorableTime`: `bool`
-- `RestoreDateTime`: `Union`\[`datetime`, `str`\]
-- `BillingModeOverride`: [BillingModeType](./literals.md#billingmodetype)
-- `GlobalSecondaryIndexOverride`:
-  `Sequence`\[[GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef)\]
-- `LocalSecondaryIndexOverride`:
-  `Sequence`\[[LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef)\]
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `SSESpecificationOverride`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-
-<a id="restoretabletopointintimeoutputtypedef"></a>
-
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+2. See [:material-code-braces: GlobalSecondaryIndexTypeDef](./type_defs.md#globalsecondaryindextypedef) 
+3. See [:material-code-braces: LocalSecondaryIndexTypeDef](./type_defs.md#localsecondaryindextypedef) 
+4. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+5. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
 ## RestoreTableToPointInTimeOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import RestoreTableToPointInTimeOutputTypeDef
+
+def get_value() -> RestoreTableToPointInTimeOutputTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RestoreTableToPointInTimeOutputTypeDef(TypedDict):
+    TableDescription: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableDescription`:
-  [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ssedescriptionresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SSEDescriptionResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import SSEDescriptionResponseMetadataTypeDef
+
+def get_value() -> SSEDescriptionResponseMetadataTypeDef:
+    return {
+        "Status": ...,
+        "SSEType": ...,
+        "KMSMasterKeyArn": ...,
+        "InaccessibleEncryptionDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SSEDescriptionResponseMetadataTypeDef(TypedDict):
+    Status: SSEStatusType,  # (1)
+    SSEType: SSETypeType,  # (2)
+    KMSMasterKeyArn: str,
+    InaccessibleEncryptionDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Status`: [SSEStatusType](./literals.md#ssestatustype)
-- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
-- `KMSMasterKeyArn`: `str`
-- `InaccessibleEncryptionDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="ssedescriptiontypedef"></a>
-
+1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
+2. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SSEDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import SSEDescriptionTypeDef
+
+def get_value() -> SSEDescriptionTypeDef:
+    return {
+        "Status": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SSEDescriptionTypeDef(TypedDict):
+    Status: NotRequired[SSEStatusType],  # (1)
+    SSEType: NotRequired[SSETypeType],  # (2)
+    KMSMasterKeyArn: NotRequired[str],
+    InaccessibleEncryptionDateTime: NotRequired[datetime],
+```
 
-- `Status`: [SSEStatusType](./literals.md#ssestatustype)
-- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
-- `KMSMasterKeyArn`: `str`
-- `InaccessibleEncryptionDateTime`: `datetime`
-
-<a id="ssespecificationtypedef"></a>
-
+1. See [:material-code-brackets: SSEStatusType](./literals.md#ssestatustype) 
+2. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
 ## SSESpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import SSESpecificationTypeDef
+
+def get_value() -> SSESpecificationTypeDef:
+    return {
+        "Enabled": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SSESpecificationTypeDef(TypedDict):
+    Enabled: NotRequired[bool],
+    SSEType: NotRequired[SSETypeType],  # (1)
+    KMSMasterKeyId: NotRequired[str],
+```
 
-- `Enabled`: `bool`
-- `SSEType`: [SSETypeType](./literals.md#ssetypetype)
-- `KMSMasterKeyId`: `str`
-
-<a id="scaninputrequesttypedef"></a>
-
+1. See [:material-code-brackets: SSETypeType](./literals.md#ssetypetype) 
 ## ScanInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ScanInputRequestTypeDef
+
+def get_value() -> ScanInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScanInputRequestTypeDef(TypedDict):
+    TableName: str,
+    IndexName: NotRequired[str],
+    AttributesToGet: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    Select: NotRequired[SelectType],  # (1)
+    ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    TotalSegments: NotRequired[int],
+    Segment: NotRequired[int],
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ConsistentRead: NotRequired[bool],
+```
 
-- `TableName`: `str`
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+## ScanInputScanPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_dynamodb.type_defs import ScanInputScanPaginateTypeDef
 
-- `IndexName`: `str`
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `TotalSegments`: `int`
-- `Segment`: `int`
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsistentRead`: `bool`
+def get_value() -> ScanInputScanPaginateTypeDef:
+    return {
+        "TableName": ...,
+    }
+```
 
-<a id="scaninputtablescantypedef"></a>
+```python title="Definition"
+class ScanInputScanPaginateTypeDef(TypedDict):
+    TableName: str,
+    IndexName: NotRequired[str],
+    AttributesToGet: NotRequired[Sequence[str]],
+    Select: NotRequired[SelectType],  # (1)
+    ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    TotalSegments: NotRequired[int],
+    Segment: NotRequired[int],
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ConsistentRead: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (5)
+```
 
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+5. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ScanInputTableScanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ScanInputTableScanTypeDef
+
+def get_value() -> ScanInputTableScanTypeDef:
+    return {
+        "IndexName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScanInputTableScanTypeDef(TypedDict):
+    IndexName: NotRequired[str],
+    AttributesToGet: NotRequired[Sequence[str]],
+    Limit: NotRequired[int],
+    Select: NotRequired[SelectType],  # (1)
+    ScanFilter: NotRequired[Mapping[str, ConditionTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ExclusiveStartKey: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (4)
+    TotalSegments: NotRequired[int],
+    Segment: NotRequired[int],
+    ProjectionExpression: NotRequired[str],
+    FilterExpression: NotRequired[Union[str, ConditionBase]],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ConsistentRead: NotRequired[bool],
+```
 
-- `IndexName`: `str`
-- `AttributesToGet`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `Select`: [SelectType](./literals.md#selecttype)
-- `ScanFilter`: `Mapping`\[`str`,
-  [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ExclusiveStartKey`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `TotalSegments`: `int`
-- `Segment`: `int`
-- `ProjectionExpression`: `str`
-- `FilterExpression`: `Union`\[`str`, `ConditionBase`\]
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsistentRead`: `bool`
-
-<a id="scanoutputtypedef"></a>
-
+1. See [:material-code-brackets: SelectType](./literals.md#selecttype) 
+2. See [:material-code-braces: ConditionTypeDef](./type_defs.md#conditiontypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## ScanOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ScanOutputTypeDef
+
+def get_value() -> ScanOutputTypeDef:
+    return {
+        "Items": ...,
+        "Count": ...,
+        "ScannedCount": ...,
+        "LastEvaluatedKey": ...,
+        "ConsumedCapacity": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ScanOutputTypeDef(TypedDict):
+    Items: List[Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    Count: int,
+    ScannedCount: int,
+    LastEvaluatedKey: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[`Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]\]
-- `Count`: `int`
-- `ScannedCount`: `int`
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="serviceresourcetablerequesttypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceResourceTableRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import ServiceResourceTableRequestTypeDef
+
+def get_value() -> ServiceResourceTableRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-<a id="sourcetabledetailstypedef"></a>
+```python title="Definition"
+class ServiceResourceTableRequestTypeDef(TypedDict):
+    name: str,
+```
 
 ## SourceTableDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import SourceTableDetailsTypeDef
+
+def get_value() -> SourceTableDetailsTypeDef:
+    return {
+        "TableName": ...,
+        "TableId": ...,
+        "KeySchema": ...,
+        "TableCreationDateTime": ...,
+        "ProvisionedThroughput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceTableDetailsTypeDef(TypedDict):
+    TableName: str,
+    TableId: str,
+    KeySchema: List[KeySchemaElementTypeDef],  # (1)
+    TableCreationDateTime: datetime,
+    ProvisionedThroughput: ProvisionedThroughputTypeDef,  # (2)
+    TableArn: NotRequired[str],
+    TableSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    BillingMode: NotRequired[BillingModeType],  # (3)
+```
 
-- `TableName`: `str`
-- `TableId`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `TableCreationDateTime`: `datetime`
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-
-Optional fields:
-
-- `TableArn`: `str`
-- `TableSizeBytes`: `int`
-- `ItemCount`: `int`
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-
-<a id="sourcetablefeaturedetailstypedef"></a>
-
+1. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+2. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+3. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
 ## SourceTableFeatureDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import SourceTableFeatureDetailsTypeDef
+
+def get_value() -> SourceTableFeatureDetailsTypeDef:
+    return {
+        "LocalSecondaryIndexes": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceTableFeatureDetailsTypeDef(TypedDict):
+    LocalSecondaryIndexes: NotRequired[List[LocalSecondaryIndexInfoTypeDef]],  # (1)
+    GlobalSecondaryIndexes: NotRequired[List[GlobalSecondaryIndexInfoTypeDef]],  # (2)
+    StreamDescription: NotRequired[StreamSpecificationTypeDef],  # (3)
+    TimeToLiveDescription: NotRequired[TimeToLiveDescriptionTypeDef],  # (4)
+    SSEDescription: NotRequired[SSEDescriptionTypeDef],  # (5)
+```
 
-- `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexInfoTypeDef](./type_defs.md#localsecondaryindexinfotypedef)\]
-- `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexInfoTypeDef](./type_defs.md#globalsecondaryindexinfotypedef)\]
-- `StreamDescription`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `TimeToLiveDescription`:
-  [TimeToLiveDescriptionTypeDef](./type_defs.md#timetolivedescriptiontypedef)
-- `SSEDescription`:
-  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
-
-<a id="streamspecificationresponsemetadatatypedef"></a>
-
+1. See [:material-code-braces: LocalSecondaryIndexInfoTypeDef](./type_defs.md#localsecondaryindexinfotypedef) 
+2. See [:material-code-braces: GlobalSecondaryIndexInfoTypeDef](./type_defs.md#globalsecondaryindexinfotypedef) 
+3. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+4. See [:material-code-braces: TimeToLiveDescriptionTypeDef](./type_defs.md#timetolivedescriptiontypedef) 
+5. See [:material-code-braces: SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef) 
 ## StreamSpecificationResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import StreamSpecificationResponseMetadataTypeDef
+
+def get_value() -> StreamSpecificationResponseMetadataTypeDef:
+    return {
+        "StreamEnabled": ...,
+        "StreamViewType": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamSpecificationResponseMetadataTypeDef(TypedDict):
+    StreamEnabled: bool,
+    StreamViewType: StreamViewTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StreamEnabled`: `bool`
-- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="streamspecificationtypedef"></a>
-
+1. See [:material-code-brackets: StreamViewTypeType](./literals.md#streamviewtypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StreamSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import StreamSpecificationTypeDef
+
+def get_value() -> StreamSpecificationTypeDef:
+    return {
+        "StreamEnabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StreamSpecificationTypeDef(TypedDict):
+    StreamEnabled: bool,
+    StreamViewType: NotRequired[StreamViewTypeType],  # (1)
+```
 
-- `StreamEnabled`: `bool`
-
-Optional fields:
-
-- `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
-
-<a id="tableautoscalingdescriptiontypedef"></a>
-
+1. See [:material-code-brackets: StreamViewTypeType](./literals.md#streamviewtypetype) 
 ## TableAutoScalingDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TableAutoScalingDescriptionTypeDef
+
+def get_value() -> TableAutoScalingDescriptionTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableAutoScalingDescriptionTypeDef(TypedDict):
+    TableName: NotRequired[str],
+    TableStatus: NotRequired[TableStatusType],  # (1)
+    Replicas: NotRequired[List[ReplicaAutoScalingDescriptionTypeDef]],  # (2)
+```
 
-- `TableName`: `str`
-- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
-- `Replicas`:
-  `List`\[[ReplicaAutoScalingDescriptionTypeDef](./type_defs.md#replicaautoscalingdescriptiontypedef)\]
-
-<a id="tablebatchwriterrequesttypedef"></a>
-
+1. See [:material-code-brackets: TableStatusType](./literals.md#tablestatustype) 
+2. See [:material-code-braces: ReplicaAutoScalingDescriptionTypeDef](./type_defs.md#replicaautoscalingdescriptiontypedef) 
 ## TableBatchWriterRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TableBatchWriterRequestTypeDef
+
+def get_value() -> TableBatchWriterRequestTypeDef:
+    return {
+        "overwrite_by_pkeys": ...,
+    }
 ```
 
-Optional fields:
-
-- `overwrite_by_pkeys`: `List`\[`str`\]
-
-<a id="tableclasssummaryresponsemetadatatypedef"></a>
+```python title="Definition"
+class TableBatchWriterRequestTypeDef(TypedDict):
+    overwrite_by_pkeys: NotRequired[List[str]],
+```
 
 ## TableClassSummaryResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TableClassSummaryResponseMetadataTypeDef
+
+def get_value() -> TableClassSummaryResponseMetadataTypeDef:
+    return {
+        "TableClass": ...,
+        "LastUpdateDateTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TableClassSummaryResponseMetadataTypeDef(TypedDict):
+    TableClass: TableClassType,  # (1)
+    LastUpdateDateTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-- `LastUpdateDateTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tableclasssummarytypedef"></a>
-
+1. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TableClassSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TableClassSummaryTypeDef
+
+def get_value() -> TableClassSummaryTypeDef:
+    return {
+        "TableClass": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableClassSummaryTypeDef(TypedDict):
+    TableClass: NotRequired[TableClassType],  # (1)
+    LastUpdateDateTime: NotRequired[datetime],
+```
 
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-- `LastUpdateDateTime`: `datetime`
-
-<a id="tabledescriptiontypedef"></a>
-
+1. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## TableDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TableDescriptionTypeDef
+
+def get_value() -> TableDescriptionTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TableDescriptionTypeDef(TypedDict):
+    AttributeDefinitions: NotRequired[List[AttributeDefinitionTypeDef]],  # (1)
+    TableName: NotRequired[str],
+    KeySchema: NotRequired[List[KeySchemaElementTypeDef]],  # (2)
+    TableStatus: NotRequired[TableStatusType],  # (3)
+    CreationDateTime: NotRequired[datetime],
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputDescriptionTypeDef],  # (4)
+    TableSizeBytes: NotRequired[int],
+    ItemCount: NotRequired[int],
+    TableArn: NotRequired[str],
+    TableId: NotRequired[str],
+    BillingModeSummary: NotRequired[BillingModeSummaryTypeDef],  # (5)
+    LocalSecondaryIndexes: NotRequired[List[LocalSecondaryIndexDescriptionTypeDef]],  # (6)
+    GlobalSecondaryIndexes: NotRequired[List[GlobalSecondaryIndexDescriptionTypeDef]],  # (7)
+    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (8)
+    LatestStreamLabel: NotRequired[str],
+    LatestStreamArn: NotRequired[str],
+    GlobalTableVersion: NotRequired[str],
+    Replicas: NotRequired[List[ReplicaDescriptionTypeDef]],  # (9)
+    RestoreSummary: NotRequired[RestoreSummaryTypeDef],  # (10)
+    SSEDescription: NotRequired[SSEDescriptionTypeDef],  # (11)
+    ArchivalSummary: NotRequired[ArchivalSummaryTypeDef],  # (12)
+    TableClassSummary: NotRequired[TableClassSummaryTypeDef],  # (13)
+```
 
-- `AttributeDefinitions`:
-  `List`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `TableName`: `str`
-- `KeySchema`:
-  `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
-- `TableStatus`: [TableStatusType](./literals.md#tablestatustype)
-- `CreationDateTime`: `datetime`
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef)
-- `TableSizeBytes`: `int`
-- `ItemCount`: `int`
-- `TableArn`: `str`
-- `TableId`: `str`
-- `BillingModeSummary`:
-  [BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef)
-- `LocalSecondaryIndexes`:
-  `List`\[[LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)\]
-- `GlobalSecondaryIndexes`:
-  `List`\[[GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef)\]
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `LatestStreamLabel`: `str`
-- `LatestStreamArn`: `str`
-- `GlobalTableVersion`: `str`
-- `Replicas`:
-  `List`\[[ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef)\]
-- `RestoreSummary`:
-  [RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef)
-- `SSEDescription`:
-  [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
-- `ArchivalSummary`:
-  [ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef)
-- `TableClassSummary`:
-  [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
-
-<a id="tagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-braces: KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef) 
+3. See [:material-code-brackets: TableStatusType](./literals.md#tablestatustype) 
+4. See [:material-code-braces: ProvisionedThroughputDescriptionTypeDef](./type_defs.md#provisionedthroughputdescriptiontypedef) 
+5. See [:material-code-braces: BillingModeSummaryTypeDef](./type_defs.md#billingmodesummarytypedef) 
+6. See [:material-code-braces: LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef) 
+7. See [:material-code-braces: GlobalSecondaryIndexDescriptionTypeDef](./type_defs.md#globalsecondaryindexdescriptiontypedef) 
+8. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+9. See [:material-code-braces: ReplicaDescriptionTypeDef](./type_defs.md#replicadescriptiontypedef) 
+10. See [:material-code-braces: RestoreSummaryTypeDef](./type_defs.md#restoresummarytypedef) 
+11. See [:material-code-braces: SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef) 
+12. See [:material-code-braces: ArchivalSummaryTypeDef](./type_defs.md#archivalsummarytypedef) 
+13. See [:material-code-braces: TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef) 
 ## TagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TagResourceInputRequestTypeDef
+
+def get_value() -> TagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="timetolivedescriptiontypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## TimeToLiveDescriptionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TimeToLiveDescriptionTypeDef
+
+def get_value() -> TimeToLiveDescriptionTypeDef:
+    return {
+        "TimeToLiveStatus": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TimeToLiveDescriptionTypeDef(TypedDict):
+    TimeToLiveStatus: NotRequired[TimeToLiveStatusType],  # (1)
+    AttributeName: NotRequired[str],
+```
 
-- `TimeToLiveStatus`:
-  [TimeToLiveStatusType](./literals.md#timetolivestatustype)
-- `AttributeName`: `str`
-
-<a id="timetolivespecificationtypedef"></a>
-
+1. See [:material-code-brackets: TimeToLiveStatusType](./literals.md#timetolivestatustype) 
 ## TimeToLiveSpecificationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TimeToLiveSpecificationTypeDef
+
+def get_value() -> TimeToLiveSpecificationTypeDef:
+    return {
+        "Enabled": ...,
+        "AttributeName": ...,
+    }
 ```
 
-Required fields:
-
-- `Enabled`: `bool`
-- `AttributeName`: `str`
-
-<a id="transactgetitemtypedef"></a>
+```python title="Definition"
+class TimeToLiveSpecificationTypeDef(TypedDict):
+    Enabled: bool,
+    AttributeName: str,
+```
 
 ## TransactGetItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactGetItemTypeDef
+
+def get_value() -> TransactGetItemTypeDef:
+    return {
+        "Get": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransactGetItemTypeDef(TypedDict):
+    Get: GetTypeDef,  # (1)
+```
 
-- `Get`: [GetTypeDef](./type_defs.md#gettypedef)
-
-<a id="transactgetitemsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GetTypeDef](./type_defs.md#gettypedef) 
 ## TransactGetItemsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactGetItemsInputRequestTypeDef
+
+def get_value() -> TransactGetItemsInputRequestTypeDef:
+    return {
+        "TransactItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransactGetItemsInputRequestTypeDef(TypedDict):
+    TransactItems: Sequence[TransactGetItemTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+```
 
-- `TransactItems`:
-  `Sequence`\[[TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef)\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-
-<a id="transactgetitemsoutputtypedef"></a>
-
+1. See [:material-code-braces: TransactGetItemTypeDef](./type_defs.md#transactgetitemtypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
 ## TransactGetItemsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactGetItemsOutputTypeDef
+
+def get_value() -> TransactGetItemsOutputTypeDef:
+    return {
+        "ConsumedCapacity": ...,
+        "Responses": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransactGetItemsOutputTypeDef(TypedDict):
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (1)
+    Responses: List[ItemResponseTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `Responses`:
-  `List`\[[ItemResponseTypeDef](./type_defs.md#itemresponsetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="transactwriteitemtypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ItemResponseTypeDef](./type_defs.md#itemresponsetypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TransactWriteItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactWriteItemTypeDef
+
+def get_value() -> TransactWriteItemTypeDef:
+    return {
+        "ConditionCheck": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class TransactWriteItemTypeDef(TypedDict):
+    ConditionCheck: NotRequired[ConditionCheckTypeDef],  # (1)
+    Put: NotRequired[PutTypeDef],  # (2)
+    Delete: NotRequired[DeleteTypeDef],  # (3)
+    Update: NotRequired[UpdateTypeDef],  # (4)
+```
 
-- `ConditionCheck`:
-  [ConditionCheckTypeDef](./type_defs.md#conditionchecktypedef)
-- `Put`: [PutTypeDef](./type_defs.md#puttypedef)
-- `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
-- `Update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
-
-<a id="transactwriteitemsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConditionCheckTypeDef](./type_defs.md#conditionchecktypedef) 
+2. See [:material-code-braces: PutTypeDef](./type_defs.md#puttypedef) 
+3. See [:material-code-braces: DeleteTypeDef](./type_defs.md#deletetypedef) 
+4. See [:material-code-braces: UpdateTypeDef](./type_defs.md#updatetypedef) 
 ## TransactWriteItemsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactWriteItemsInputRequestTypeDef
+
+def get_value() -> TransactWriteItemsInputRequestTypeDef:
+    return {
+        "TransactItems": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransactWriteItemsInputRequestTypeDef(TypedDict):
+    TransactItems: Sequence[TransactWriteItemTypeDef],  # (1)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (2)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (3)
+    ClientRequestToken: NotRequired[str],
+```
 
-- `TransactItems`:
-  `Sequence`\[[TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef)\]
-
-Optional fields:
-
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `ClientRequestToken`: `str`
-
-<a id="transactwriteitemsoutputtypedef"></a>
-
+1. See [:material-code-braces: TransactWriteItemTypeDef](./type_defs.md#transactwriteitemtypedef) 
+2. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+3. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## TransactWriteItemsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import TransactWriteItemsOutputTypeDef
+
+def get_value() -> TransactWriteItemsOutputTypeDef:
+    return {
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TransactWriteItemsOutputTypeDef(TypedDict):
+    ConsumedCapacity: List[ConsumedCapacityTypeDef],  # (1)
+    ItemCollectionMetrics: Dict[str, List[ItemCollectionMetricsTypeDef]],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ConsumedCapacity`:
-  `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
-- `ItemCollectionMetrics`: `Dict`\[`str`,
-  `List`\[[ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)\]\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="untagresourceinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UntagResourceInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UntagResourceInputRequestTypeDef
+
+def get_value() -> UntagResourceInputRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatecontinuousbackupsinputrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceInputRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateContinuousBackupsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsInputRequestTypeDef
+
+def get_value() -> UpdateContinuousBackupsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "PointInTimeRecoverySpecification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContinuousBackupsInputRequestTypeDef(TypedDict):
+    TableName: str,
+    PointInTimeRecoverySpecification: PointInTimeRecoverySpecificationTypeDef,  # (1)
+```
 
-- `TableName`: `str`
-- `PointInTimeRecoverySpecification`:
-  [PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef)
-
-<a id="updatecontinuousbackupsoutputtypedef"></a>
-
+1. See [:material-code-braces: PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef) 
 ## UpdateContinuousBackupsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateContinuousBackupsOutputTypeDef
+
+def get_value() -> UpdateContinuousBackupsOutputTypeDef:
+    return {
+        "ContinuousBackupsDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContinuousBackupsOutputTypeDef(TypedDict):
+    ContinuousBackupsDescription: ContinuousBackupsDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContinuousBackupsDescription`:
-  [ContinuousBackupsDescriptionTypeDef](./type_defs.md#continuousbackupsdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatecontributorinsightsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ContinuousBackupsDescriptionTypeDef](./type_defs.md#continuousbackupsdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateContributorInsightsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsInputRequestTypeDef
+
+def get_value() -> UpdateContributorInsightsInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "ContributorInsightsAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContributorInsightsInputRequestTypeDef(TypedDict):
+    TableName: str,
+    ContributorInsightsAction: ContributorInsightsActionType,  # (1)
+    IndexName: NotRequired[str],
+```
 
-- `TableName`: `str`
-- `ContributorInsightsAction`:
-  [ContributorInsightsActionType](./literals.md#contributorinsightsactiontype)
-
-Optional fields:
-
-- `IndexName`: `str`
-
-<a id="updatecontributorinsightsoutputtypedef"></a>
-
+1. See [:material-code-brackets: ContributorInsightsActionType](./literals.md#contributorinsightsactiontype) 
 ## UpdateContributorInsightsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateContributorInsightsOutputTypeDef
+
+def get_value() -> UpdateContributorInsightsOutputTypeDef:
+    return {
+        "TableName": ...,
+        "IndexName": ...,
+        "ContributorInsightsStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContributorInsightsOutputTypeDef(TypedDict):
+    TableName: str,
+    IndexName: str,
+    ContributorInsightsStatus: ContributorInsightsStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableName`: `str`
-- `IndexName`: `str`
-- `ContributorInsightsStatus`:
-  [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateglobalsecondaryindexactiontypedef"></a>
-
+1. See [:material-code-brackets: ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGlobalSecondaryIndexActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalSecondaryIndexActionTypeDef
+
+def get_value() -> UpdateGlobalSecondaryIndexActionTypeDef:
+    return {
+        "IndexName": ...,
+        "ProvisionedThroughput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGlobalSecondaryIndexActionTypeDef(TypedDict):
+    IndexName: str,
+    ProvisionedThroughput: ProvisionedThroughputTypeDef,  # (1)
+```
 
-- `IndexName`: `str`
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-
-<a id="updateglobaltableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
 ## UpdateGlobalTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableInputRequestTypeDef
+
+def get_value() -> UpdateGlobalTableInputRequestTypeDef:
+    return {
+        "GlobalTableName": ...,
+        "ReplicaUpdates": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGlobalTableInputRequestTypeDef(TypedDict):
+    GlobalTableName: str,
+    ReplicaUpdates: Sequence[ReplicaUpdateTypeDef],  # (1)
+```
 
-- `GlobalTableName`: `str`
-- `ReplicaUpdates`:
-  `Sequence`\[[ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)\]
-
-<a id="updateglobaltableoutputtypedef"></a>
-
+1. See [:material-code-braces: ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef) 
 ## UpdateGlobalTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableOutputTypeDef
+
+def get_value() -> UpdateGlobalTableOutputTypeDef:
+    return {
+        "GlobalTableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGlobalTableOutputTypeDef(TypedDict):
+    GlobalTableDescription: GlobalTableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTableDescription`:
-  [GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateglobaltablesettingsinputrequesttypedef"></a>
-
+1. See [:material-code-braces: GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateGlobalTableSettingsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsInputRequestTypeDef
+
+def get_value() -> UpdateGlobalTableSettingsInputRequestTypeDef:
+    return {
+        "GlobalTableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGlobalTableSettingsInputRequestTypeDef(TypedDict):
+    GlobalTableName: str,
+    GlobalTableBillingMode: NotRequired[BillingModeType],  # (1)
+    GlobalTableProvisionedWriteCapacityUnits: NotRequired[int],
+    GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (2)
+    GlobalTableGlobalSecondaryIndexSettingsUpdate: NotRequired[Sequence[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef]],  # (3)
+    ReplicaSettingsUpdate: NotRequired[Sequence[ReplicaSettingsUpdateTypeDef]],  # (4)
+```
 
-- `GlobalTableName`: `str`
-
-Optional fields:
-
-- `GlobalTableBillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `GlobalTableProvisionedWriteCapacityUnits`: `int`
-- `GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-- `GlobalTableGlobalSecondaryIndexSettingsUpdate`:
-  `Sequence`\[[GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#globaltableglobalsecondaryindexsettingsupdatetypedef)\]
-- `ReplicaSettingsUpdate`:
-  `Sequence`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
-
-<a id="updateglobaltablesettingsoutputtypedef"></a>
-
+1. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+2. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+3. See [:material-code-braces: GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#globaltableglobalsecondaryindexsettingsupdatetypedef) 
+4. See [:material-code-braces: ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef) 
 ## UpdateGlobalTableSettingsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateGlobalTableSettingsOutputTypeDef
+
+def get_value() -> UpdateGlobalTableSettingsOutputTypeDef:
+    return {
+        "GlobalTableName": ...,
+        "ReplicaSettings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateGlobalTableSettingsOutputTypeDef(TypedDict):
+    GlobalTableName: str,
+    ReplicaSettings: List[ReplicaSettingsDescriptionTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `GlobalTableName`: `str`
-- `ReplicaSettings`:
-  `List`\[[ReplicaSettingsDescriptionTypeDef](./type_defs.md#replicasettingsdescriptiontypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateiteminputrequesttypedef"></a>
-
+1. See [:material-code-braces: ReplicaSettingsDescriptionTypeDef](./type_defs.md#replicasettingsdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateItemInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateItemInputRequestTypeDef
+
+def get_value() -> UpdateItemInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateItemInputRequestTypeDef(TypedDict):
+    TableName: str,
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ReturnValues: NotRequired[ReturnValueType],  # (4)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
+    UpdateExpression: NotRequired[str],
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `TableName`: `str`
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `AttributeUpdates`: `Mapping`\[`str`,
-  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `UpdateExpression`: `str`
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="updateiteminputtableupdateitemtypedef"></a>
-
+1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## UpdateItemInputTableUpdateItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateItemInputTableUpdateItemTypeDef
+
+def get_value() -> UpdateItemInputTableUpdateItemTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateItemInputTableUpdateItemTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    AttributeUpdates: NotRequired[Mapping[str, AttributeValueUpdateTypeDef]],  # (1)
+    Expected: NotRequired[Mapping[str, ExpectedAttributeValueTypeDef]],  # (2)
+    ConditionalOperator: NotRequired[ConditionalOperatorType],  # (3)
+    ReturnValues: NotRequired[ReturnValueType],  # (4)
+    ReturnConsumedCapacity: NotRequired[ReturnConsumedCapacityType],  # (5)
+    ReturnItemCollectionMetrics: NotRequired[ReturnItemCollectionMetricsType],  # (6)
+    UpdateExpression: NotRequired[str],
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-Optional fields:
-
-- `AttributeUpdates`: `Mapping`\[`str`,
-  [AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef)\]
-- `Expected`: `Mapping`\[`str`,
-  [ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef)\]
-- `ConditionalOperator`:
-  [ConditionalOperatorType](./literals.md#conditionaloperatortype)
-- `ReturnValues`: [ReturnValueType](./literals.md#returnvaluetype)
-- `ReturnConsumedCapacity`:
-  [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `ReturnItemCollectionMetrics`:
-  [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
-- `UpdateExpression`: `str`
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-
-<a id="updateitemoutputtypedef"></a>
-
+1. See [:material-code-braces: AttributeValueUpdateTypeDef](./type_defs.md#attributevalueupdatetypedef) 
+2. See [:material-code-braces: ExpectedAttributeValueTypeDef](./type_defs.md#expectedattributevaluetypedef) 
+3. See [:material-code-brackets: ConditionalOperatorType](./literals.md#conditionaloperatortype) 
+4. See [:material-code-brackets: ReturnValueType](./literals.md#returnvaluetype) 
+5. See [:material-code-brackets: ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype) 
+6. See [:material-code-brackets: ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype) 
 ## UpdateItemOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateItemOutputTypeDef
+
+def get_value() -> UpdateItemOutputTypeDef:
+    return {
+        "Attributes": ...,
+        "ConsumedCapacity": ...,
+        "ItemCollectionMetrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateItemOutputTypeDef(TypedDict):
+    Attributes: Dict[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    ConsumedCapacity: ConsumedCapacityTypeDef,  # (1)
+    ItemCollectionMetrics: ItemCollectionMetricsTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `Attributes`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ConsumedCapacity`:
-  [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `ItemCollectionMetrics`:
-  [ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatereplicationgroupmemberactiontypedef"></a>
-
+1. See [:material-code-braces: ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef) 
+2. See [:material-code-braces: ItemCollectionMetricsTypeDef](./type_defs.md#itemcollectionmetricstypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateReplicationGroupMemberActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateReplicationGroupMemberActionTypeDef
+
+def get_value() -> UpdateReplicationGroupMemberActionTypeDef:
+    return {
+        "RegionName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateReplicationGroupMemberActionTypeDef(TypedDict):
+    RegionName: str,
+    KMSMasterKeyId: NotRequired[str],
+    ProvisionedThroughputOverride: NotRequired[ProvisionedThroughputOverrideTypeDef],  # (1)
+    GlobalSecondaryIndexes: NotRequired[Sequence[ReplicaGlobalSecondaryIndexTypeDef]],  # (2)
+    TableClassOverride: NotRequired[TableClassType],  # (3)
+```
 
-- `RegionName`: `str`
-
-Optional fields:
-
-- `KMSMasterKeyId`: `str`
-- `ProvisionedThroughputOverride`:
-  [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
-- `GlobalSecondaryIndexes`:
-  `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
-- `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="updatetableinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef) 
+2. See [:material-code-braces: ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef) 
+3. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## UpdateTableInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTableInputRequestTypeDef
+
+def get_value() -> UpdateTableInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableInputRequestTypeDef(TypedDict):
+    TableName: str,
+    AttributeDefinitions: NotRequired[Sequence[AttributeDefinitionTypeDef]],  # (1)
+    BillingMode: NotRequired[BillingModeType],  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
+    GlobalSecondaryIndexUpdates: NotRequired[Sequence[GlobalSecondaryIndexUpdateTypeDef]],  # (4)
+    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (5)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (6)
+    ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTypeDef]],  # (7)
+    TableClass: NotRequired[TableClassType],  # (8)
+```
 
-- `TableName`: `str`
-
-Optional fields:
-
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `GlobalSecondaryIndexUpdates`:
-  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `ReplicaUpdates`:
-  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="updatetableinputtableupdatetypedef"></a>
-
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef) 
+5. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+6. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+7. See [:material-code-braces: ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef) 
+8. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## UpdateTableInputTableUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTableInputTableUpdateTypeDef
+
+def get_value() -> UpdateTableInputTableUpdateTypeDef:
+    return {
+        "AttributeDefinitions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateTableInputTableUpdateTypeDef(TypedDict):
+    AttributeDefinitions: NotRequired[Sequence[AttributeDefinitionTypeDef]],  # (1)
+    BillingMode: NotRequired[BillingModeType],  # (2)
+    ProvisionedThroughput: NotRequired[ProvisionedThroughputTypeDef],  # (3)
+    GlobalSecondaryIndexUpdates: NotRequired[Sequence[GlobalSecondaryIndexUpdateTypeDef]],  # (4)
+    StreamSpecification: NotRequired[StreamSpecificationTypeDef],  # (5)
+    SSESpecification: NotRequired[SSESpecificationTypeDef],  # (6)
+    ReplicaUpdates: NotRequired[Sequence[ReplicationGroupUpdateTypeDef]],  # (7)
+    TableClass: NotRequired[TableClassType],  # (8)
+```
 
-- `AttributeDefinitions`:
-  `Sequence`\[[AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef)\]
-- `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
-- `ProvisionedThroughput`:
-  [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
-- `GlobalSecondaryIndexUpdates`:
-  `Sequence`\[[GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef)\]
-- `StreamSpecification`:
-  [StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef)
-- `SSESpecification`:
-  [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
-- `ReplicaUpdates`:
-  `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
-- `TableClass`: [TableClassType](./literals.md#tableclasstype)
-
-<a id="updatetableoutputtypedef"></a>
-
+1. See [:material-code-braces: AttributeDefinitionTypeDef](./type_defs.md#attributedefinitiontypedef) 
+2. See [:material-code-brackets: BillingModeType](./literals.md#billingmodetype) 
+3. See [:material-code-braces: ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef) 
+4. See [:material-code-braces: GlobalSecondaryIndexUpdateTypeDef](./type_defs.md#globalsecondaryindexupdatetypedef) 
+5. See [:material-code-braces: StreamSpecificationTypeDef](./type_defs.md#streamspecificationtypedef) 
+6. See [:material-code-braces: SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef) 
+7. See [:material-code-braces: ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef) 
+8. See [:material-code-brackets: TableClassType](./literals.md#tableclasstype) 
 ## UpdateTableOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTableOutputTypeDef
+
+def get_value() -> UpdateTableOutputTypeDef:
+    return {
+        "TableDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableOutputTypeDef(TypedDict):
+    TableDescription: TableDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableDescription`:
-  [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetablereplicaautoscalinginputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTableReplicaAutoScalingInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingInputRequestTypeDef
+
+def get_value() -> UpdateTableReplicaAutoScalingInputRequestTypeDef:
+    return {
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableReplicaAutoScalingInputRequestTypeDef(TypedDict):
+    TableName: str,
+    GlobalSecondaryIndexUpdates: NotRequired[Sequence[GlobalSecondaryIndexAutoScalingUpdateTypeDef]],  # (1)
+    ProvisionedWriteCapacityAutoScalingUpdate: NotRequired[AutoScalingSettingsUpdateTypeDef],  # (2)
+    ReplicaUpdates: NotRequired[Sequence[ReplicaAutoScalingUpdateTypeDef]],  # (3)
+```
 
-- `TableName`: `str`
-
-Optional fields:
-
-- `GlobalSecondaryIndexUpdates`:
-  `Sequence`\[[GlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#globalsecondaryindexautoscalingupdatetypedef)\]
-- `ProvisionedWriteCapacityAutoScalingUpdate`:
-  [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
-- `ReplicaUpdates`:
-  `Sequence`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
-
-<a id="updatetablereplicaautoscalingoutputtypedef"></a>
-
+1. See [:material-code-braces: GlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#globalsecondaryindexautoscalingupdatetypedef) 
+2. See [:material-code-braces: AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef) 
+3. See [:material-code-braces: ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef) 
 ## UpdateTableReplicaAutoScalingOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTableReplicaAutoScalingOutputTypeDef
+
+def get_value() -> UpdateTableReplicaAutoScalingOutputTypeDef:
+    return {
+        "TableAutoScalingDescription": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTableReplicaAutoScalingOutputTypeDef(TypedDict):
+    TableAutoScalingDescription: TableAutoScalingDescriptionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TableAutoScalingDescription`:
-  [TableAutoScalingDescriptionTypeDef](./type_defs.md#tableautoscalingdescriptiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetimetoliveinputrequesttypedef"></a>
-
+1. See [:material-code-braces: TableAutoScalingDescriptionTypeDef](./type_defs.md#tableautoscalingdescriptiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTimeToLiveInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveInputRequestTypeDef
+
+def get_value() -> UpdateTimeToLiveInputRequestTypeDef:
+    return {
+        "TableName": ...,
+        "TimeToLiveSpecification": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTimeToLiveInputRequestTypeDef(TypedDict):
+    TableName: str,
+    TimeToLiveSpecification: TimeToLiveSpecificationTypeDef,  # (1)
+```
 
-- `TableName`: `str`
-- `TimeToLiveSpecification`:
-  [TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef)
-
-<a id="updatetimetoliveoutputtypedef"></a>
-
+1. See [:material-code-braces: TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef) 
 ## UpdateTimeToLiveOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTimeToLiveOutputTypeDef
+
+def get_value() -> UpdateTimeToLiveOutputTypeDef:
+    return {
+        "TimeToLiveSpecification": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTimeToLiveOutputTypeDef(TypedDict):
+    TimeToLiveSpecification: TimeToLiveSpecificationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `TimeToLiveSpecification`:
-  [TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatetypedef"></a>
-
+1. See [:material-code-braces: TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import UpdateTypeDef
+
+def get_value() -> UpdateTypeDef:
+    return {
+        "Key": ...,
+        "UpdateExpression": ...,
+        "TableName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateTypeDef(TypedDict):
+    Key: Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]],
+    UpdateExpression: str,
+    TableName: str,
+    ConditionExpression: NotRequired[str],
+    ExpressionAttributeNames: NotRequired[Mapping[str, str]],
+    ExpressionAttributeValues: NotRequired[Mapping[str, Union[bytes, bytearray, str, int, Decimal, bool, Set[int], Set[Decimal], Set[str], Set[bytes], Set[bytearray], Sequence[Any], Mapping[str, Any], None]]],
+    ReturnValuesOnConditionCheckFailure: NotRequired[ReturnValuesOnConditionCheckFailureType],  # (1)
+```
 
-- `Key`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`, `str`, `int`,
-  `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `UpdateExpression`: `str`
-- `TableName`: `str`
-
-Optional fields:
-
-- `ConditionExpression`: `str`
-- `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
-- `ExpressionAttributeValues`: `Mapping`\[`str`, `Union`\[`bytes`, `bytearray`,
-  `str`, `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\],
-  `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
-- `ReturnValuesOnConditionCheckFailure`:
-  [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
-
-<a id="waiterconfigtypedef"></a>
-
+1. See [:material-code-brackets: ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype) 
 ## WaiterConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import WaiterConfigTypeDef
+
+def get_value() -> WaiterConfigTypeDef:
+    return {
+        "Delay": ...,
+    }
 ```
 
-Optional fields:
-
-- `Delay`: `int`
-- `MaxAttempts`: `int`
-
-<a id="writerequesttypedef"></a>
+```python title="Definition"
+class WaiterConfigTypeDef(TypedDict):
+    Delay: NotRequired[int],
+    MaxAttempts: NotRequired[int],
+```
 
 ## WriteRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dynamodb.type_defs import WriteRequestTypeDef
+
+def get_value() -> WriteRequestTypeDef:
+    return {
+        "PutRequest": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class WriteRequestTypeDef(TypedDict):
+    PutRequest: NotRequired[PutRequestTypeDef],  # (1)
+    DeleteRequest: NotRequired[DeleteRequestTypeDef],  # (2)
+```
 
-- `PutRequest`: [PutRequestTypeDef](./type_defs.md#putrequesttypedef)
-- `DeleteRequest`: [DeleteRequestTypeDef](./type_defs.md#deleterequesttypedef)
+1. See [:material-code-braces: PutRequestTypeDef](./type_defs.md#putrequesttypedef) 
+2. See [:material-code-braces: DeleteRequestTypeDef](./type_defs.md#deleterequesttypedef) 

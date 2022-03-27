@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-codestar-module"></a>
-
-# Examples for boto3 CodeStar module
+# Examples
 
 > [Index](../README.md) > [CodeStar](./README.md) > Examples
 
-- [Examples for boto3 CodeStar module](#examples-for-boto3-codestar-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
+    type annotations stubs module [mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[codestar]` package installed.
 
-Write your `CodeStar` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `CodeStar` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type CodeStarClient
-# and provides type checking and code completion
-client = session.client("codestar")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateTeamMemberResultTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_team_member()
 
-# paginator has type ListProjectsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_projects")
-for item in paginator.paginate(...):
-    # item has type ListProjectsResultTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("codestar")  # (1)
+    result = client.associate_team_member()  # (2)
+    ```
+
+    1. client: [CodeStarClient](./client.md)
+    2. result: [:material-code-braces: AssociateTeamMemberResultTypeDef](./type_defs.md#associateteammemberresulttypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("codestar")  # (1)
+
+    paginator = client.get_paginator("list_projects")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [CodeStarClient](./client.md)
+    2. paginator: [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+    3. item: [:material-code-braces: ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[codestar]` or a standalone `mypy_boto3_codestar`
-package, you have to explicitly specify `client: CodeStarClient` type
-annotation.
+With `boto3-stubs-lite[codestar]`
+or a standalone `mypy_boto3_codestar` package, you have to explicitly specify `client: CodeStarClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_codestar.client import CodeStarClient
-from mypy_boto3_codestar.paginator import ListProjectsPaginator
-
-from mypy_boto3_codestar.literals import PaginatorName
-
-from mypy_boto3_codestar.type_defs import AssociateTeamMemberResultTypeDef
-from mypy_boto3_codestar.type_defs import ListProjectsResultTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: CodeStarClient = session.client("codestar")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateTeamMemberResultTypeDef = client.associate_team_member()
+    from mypy_boto3_codestar.client import CodeStarClient
+    from mypy_boto3_codestar.type_defs import AssociateTeamMemberResultTypeDef
+    from mypy_boto3_codestar.type_defs import AssociateTeamMemberRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_projects"
-paginator: ListProjectsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListProjectsResultTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: CodeStarClient = session.client("codestar")
+
+    kwargs: AssociateTeamMemberRequestRequestTypeDef = {...}
+    result: AssociateTeamMemberResultTypeDef = client.associate_team_member(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_codestar.client import CodeStarClient
+    from mypy_boto3_codestar.paginator import ListProjectsPaginator
+    from mypy_boto3_codestar.type_defs import ListProjectsResultTypeDef
+
+
+    session = Session()
+    client: CodeStarClient = session.client("codestar")
+
+    paginator: ListProjectsPaginator = client.get_paginator("list_projects")
+    for item in paginator.paginate(...):
+        item: ListProjectsResultTypeDef
+        print(item)
+    ```
+
+
+
+

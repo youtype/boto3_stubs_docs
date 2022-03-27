@@ -1,152 +1,18 @@
-<a id="apigatewayclient-for-boto3-apigateway-module"></a>
-
-# APIGatewayClient for boto3 APIGateway module
+# APIGatewayClient
 
 > [Index](../README.md) > [APIGateway](./README.md) > APIGatewayClient
 
-Auto-generated documentation for
-[APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
-type annotations stubs module
-[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+!!! note ""
 
-- [APIGatewayClient for boto3 APIGateway module](#apigatewayclient-for-boto3-apigateway-module)
-  - [APIGatewayClient](#apigatewayclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_api_key](#create_api_key)
-    - [create_authorizer](#create_authorizer)
-    - [create_base_path_mapping](#create_base_path_mapping)
-    - [create_deployment](#create_deployment)
-    - [create_documentation_part](#create_documentation_part)
-    - [create_documentation_version](#create_documentation_version)
-    - [create_domain_name](#create_domain_name)
-    - [create_model](#create_model)
-    - [create_request_validator](#create_request_validator)
-    - [create_resource](#create_resource)
-    - [create_rest_api](#create_rest_api)
-    - [create_stage](#create_stage)
-    - [create_usage_plan](#create_usage_plan)
-    - [create_usage_plan_key](#create_usage_plan_key)
-    - [create_vpc_link](#create_vpc_link)
-    - [delete_api_key](#delete_api_key)
-    - [delete_authorizer](#delete_authorizer)
-    - [delete_base_path_mapping](#delete_base_path_mapping)
-    - [delete_client_certificate](#delete_client_certificate)
-    - [delete_deployment](#delete_deployment)
-    - [delete_documentation_part](#delete_documentation_part)
-    - [delete_documentation_version](#delete_documentation_version)
-    - [delete_domain_name](#delete_domain_name)
-    - [delete_gateway_response](#delete_gateway_response)
-    - [delete_integration](#delete_integration)
-    - [delete_integration_response](#delete_integration_response)
-    - [delete_method](#delete_method)
-    - [delete_method_response](#delete_method_response)
-    - [delete_model](#delete_model)
-    - [delete_request_validator](#delete_request_validator)
-    - [delete_resource](#delete_resource)
-    - [delete_rest_api](#delete_rest_api)
-    - [delete_stage](#delete_stage)
-    - [delete_usage_plan](#delete_usage_plan)
-    - [delete_usage_plan_key](#delete_usage_plan_key)
-    - [delete_vpc_link](#delete_vpc_link)
-    - [flush_stage_authorizers_cache](#flush_stage_authorizers_cache)
-    - [flush_stage_cache](#flush_stage_cache)
-    - [generate_client_certificate](#generate_client_certificate)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_account](#get_account)
-    - [get_api_key](#get_api_key)
-    - [get_api_keys](#get_api_keys)
-    - [get_authorizer](#get_authorizer)
-    - [get_authorizers](#get_authorizers)
-    - [get_base_path_mapping](#get_base_path_mapping)
-    - [get_base_path_mappings](#get_base_path_mappings)
-    - [get_client_certificate](#get_client_certificate)
-    - [get_client_certificates](#get_client_certificates)
-    - [get_deployment](#get_deployment)
-    - [get_deployments](#get_deployments)
-    - [get_documentation_part](#get_documentation_part)
-    - [get_documentation_parts](#get_documentation_parts)
-    - [get_documentation_version](#get_documentation_version)
-    - [get_documentation_versions](#get_documentation_versions)
-    - [get_domain_name](#get_domain_name)
-    - [get_domain_names](#get_domain_names)
-    - [get_export](#get_export)
-    - [get_gateway_response](#get_gateway_response)
-    - [get_gateway_responses](#get_gateway_responses)
-    - [get_integration](#get_integration)
-    - [get_integration_response](#get_integration_response)
-    - [get_method](#get_method)
-    - [get_method_response](#get_method_response)
-    - [get_model](#get_model)
-    - [get_model_template](#get_model_template)
-    - [get_models](#get_models)
-    - [get_request_validator](#get_request_validator)
-    - [get_request_validators](#get_request_validators)
-    - [get_resource](#get_resource)
-    - [get_resources](#get_resources)
-    - [get_rest_api](#get_rest_api)
-    - [get_rest_apis](#get_rest_apis)
-    - [get_sdk](#get_sdk)
-    - [get_sdk_type](#get_sdk_type)
-    - [get_sdk_types](#get_sdk_types)
-    - [get_stage](#get_stage)
-    - [get_stages](#get_stages)
-    - [get_tags](#get_tags)
-    - [get_usage](#get_usage)
-    - [get_usage_plan](#get_usage_plan)
-    - [get_usage_plan_key](#get_usage_plan_key)
-    - [get_usage_plan_keys](#get_usage_plan_keys)
-    - [get_usage_plans](#get_usage_plans)
-    - [get_vpc_link](#get_vpc_link)
-    - [get_vpc_links](#get_vpc_links)
-    - [import_api_keys](#import_api_keys)
-    - [import_documentation_parts](#import_documentation_parts)
-    - [import_rest_api](#import_rest_api)
-    - [put_gateway_response](#put_gateway_response)
-    - [put_integration](#put_integration)
-    - [put_integration_response](#put_integration_response)
-    - [put_method](#put_method)
-    - [put_method_response](#put_method_response)
-    - [put_rest_api](#put_rest_api)
-    - [tag_resource](#tag_resource)
-    - [test_invoke_authorizer](#test_invoke_authorizer)
-    - [test_invoke_method](#test_invoke_method)
-    - [untag_resource](#untag_resource)
-    - [update_account](#update_account)
-    - [update_api_key](#update_api_key)
-    - [update_authorizer](#update_authorizer)
-    - [update_base_path_mapping](#update_base_path_mapping)
-    - [update_client_certificate](#update_client_certificate)
-    - [update_deployment](#update_deployment)
-    - [update_documentation_part](#update_documentation_part)
-    - [update_documentation_version](#update_documentation_version)
-    - [update_domain_name](#update_domain_name)
-    - [update_gateway_response](#update_gateway_response)
-    - [update_integration](#update_integration)
-    - [update_integration_response](#update_integration_response)
-    - [update_method](#update_method)
-    - [update_method_response](#update_method_response)
-    - [update_model](#update_model)
-    - [update_request_validator](#update_request_validator)
-    - [update_resource](#update_resource)
-    - [update_rest_api](#update_rest_api)
-    - [update_stage](#update_stage)
-    - [update_usage](#update_usage)
-    - [update_usage_plan](#update_usage_plan)
-    - [update_vpc_link](#update_vpc_link)
-    - [get_paginator](#get_paginator)
-
-<a id="apigatewayclient"></a>
+    Auto-generated documentation for [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
+    type annotations stubs module [mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 ## APIGatewayClient
 
-Type annotations for `boto3.client("apigateway")`
+Type annotations and code completion for `#!python boto3.client("apigateway")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_apigateway.client import APIGatewayClient
 
@@ -154,2940 +20,4027 @@ def get_apigateway_client() -> APIGatewayClient:
     return Session().client("apigateway")
 ```
 
-Boto3 documentation:
-[APIGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("apigateway").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("apigateway")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.ConflictException,
+    client.LimitExceededException,
+    client.NotFoundException,
+    client.ServiceUnavailableException,
+    client.TooManyRequestsException,
+    client.UnauthorizedException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_apigateway.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.NotFoundException`
-- `Exceptions.ServiceUnavailableException`
-- `Exceptions.TooManyRequestsException`
-- `Exceptions.UnauthorizedException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-APIGatewayClient exceptions.
-
-Type annotations for `boto3.client("apigateway").exceptions` method.
-
-Boto3 documentation:
-[APIGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("apigateway").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.can_paginate)
 
-Boto3 documentation:
-[APIGateway.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
+### create\_api\_key
 
-Returns `bool`.
+Create an  ApiKey resource.
 
-<a id="create\_api\_key"></a>
+Type annotations and code completion for `#!python boto3.client("apigateway").create_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
 
-### create_api_key
+```python title="Method definition"
+def create_api_key(
+    self,
+    *,
+    name: str = ...,
+    description: str = ...,
+    enabled: bool = ...,
+    generateDistinctId: bool = ...,
+    value: str = ...,
+    stageKeys: Sequence[StageKeyTypeDef] = ...,  # (1)
+    customerId: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ApiKeyResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Create an ApiKey resource.
+1. See [:material-code-braces: StageKeyTypeDef](./type_defs.md#stagekeytypedef) 
+2. See [:material-code-braces: ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef) 
 
-Type annotations for `boto3.client("apigateway").create_api_key` method.
 
-Boto3 documentation:
-[APIGateway.Client.create_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_api_key)
+```python title="Usage example with kwargs"
+kwargs: CreateApiKeyRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Arguments mapping described in
-[CreateApiKeyRequestRequestTypeDef](./type_defs.md#createapikeyrequestrequesttypedef).
+parent.create_api_key(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateApiKeyRequestRequestTypeDef](./type_defs.md#createapikeyrequestrequesttypedef) 
 
-- `name`: `str`
-- `description`: `str`
-- `enabled`: `bool`
-- `generateDistinctId`: `bool`
-- `value`: `str`
-- `stageKeys`: `Sequence`\[[StageKeyTypeDef](./type_defs.md#stagekeytypedef)\]
-- `customerId`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+### create\_authorizer
 
-Returns
-[ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
+Adds a new  Authorizer resource to an existing  RestApi resource.
 
-<a id="create\_authorizer"></a>
+Type annotations and code completion for `#!python boto3.client("apigateway").create_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
 
-### create_authorizer
+```python title="Method definition"
+def create_authorizer(
+    self,
+    *,
+    restApiId: str,
+    name: str,
+    type: AuthorizerTypeType,  # (1)
+    providerARNs: Sequence[str] = ...,
+    authType: str = ...,
+    authorizerUri: str = ...,
+    authorizerCredentials: str = ...,
+    identitySource: str = ...,
+    identityValidationExpression: str = ...,
+    authorizerResultTtlInSeconds: int = ...,
+) -> AuthorizerResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Adds a new Authorizer resource to an existing RestApi resource.
+1. See [:material-code-brackets: AuthorizerTypeType](./literals.md#authorizertypetype) 
+2. See [:material-code-braces: AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef) 
 
-Type annotations for `boto3.client("apigateway").create_authorizer` method.
 
-Boto3 documentation:
-[APIGateway.Client.create_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_authorizer)
+```python title="Usage example with kwargs"
+kwargs: CreateAuthorizerRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "name": ...,
+    "type": ...,
+}
 
-Arguments mapping described in
-[CreateAuthorizerRequestRequestTypeDef](./type_defs.md#createauthorizerrequestrequesttypedef).
+parent.create_authorizer(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateAuthorizerRequestRequestTypeDef](./type_defs.md#createauthorizerrequestrequesttypedef) 
 
-- `restApiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `type`: [AuthorizerTypeType](./literals.md#authorizertypetype) *(required)*
-- `providerARNs`: `Sequence`\[`str`\]
-- `authType`: `str`
-- `authorizerUri`: `str`
-- `authorizerCredentials`: `str`
-- `identitySource`: `str`
-- `identityValidationExpression`: `str`
-- `authorizerResultTtlInSeconds`: `int`
+### create\_base\_path\_mapping
 
-Returns
-[AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
+Creates a new  BasePathMapping resource.
 
-<a id="create\_base\_path\_mapping"></a>
+Type annotations and code completion for `#!python boto3.client("apigateway").create_base_path_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
 
-### create_base_path_mapping
+```python title="Method definition"
+def create_base_path_mapping(
+    self,
+    *,
+    domainName: str,
+    restApiId: str,
+    basePath: str = ...,
+    stage: str = ...,
+) -> BasePathMappingResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Creates a new BasePathMapping resource.
+1. See [:material-code-braces: BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef) 
 
-Type annotations for `boto3.client("apigateway").create_base_path_mapping`
-method.
 
-Boto3 documentation:
-[APIGateway.Client.create_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_base_path_mapping)
+```python title="Usage example with kwargs"
+kwargs: CreateBasePathMappingRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "restApiId": ...,
+}
 
-Arguments mapping described in
-[CreateBasePathMappingRequestRequestTypeDef](./type_defs.md#createbasepathmappingrequestrequesttypedef).
+parent.create_base_path_mapping(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: CreateBasePathMappingRequestRequestTypeDef](./type_defs.md#createbasepathmappingrequestrequesttypedef) 
 
-- `domainName`: `str` *(required)*
-- `restApiId`: `str` *(required)*
-- `basePath`: `str`
-- `stage`: `str`
+### create\_deployment
 
-Returns
-[BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
-
-<a id="create\_deployment"></a>
-
-### create_deployment
-
-Creates a Deployment resource, which makes a specified RestApi callable over
+Creates a  Deployment resource, which makes a specified  RestApi callable over
 the internet.
 
-Type annotations for `boto3.client("apigateway").create_deployment` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
 
-Boto3 documentation:
-[APIGateway.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_deployment)
+```python title="Method definition"
+def create_deployment(
+    self,
+    *,
+    restApiId: str,
+    stageName: str = ...,
+    stageDescription: str = ...,
+    description: str = ...,
+    cacheClusterEnabled: bool = ...,
+    cacheClusterSize: CacheClusterSizeType = ...,  # (1)
+    variables: Mapping[str, str] = ...,
+    canarySettings: DeploymentCanarySettingsTypeDef = ...,  # (2)
+    tracingEnabled: bool = ...,
+) -> DeploymentResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
+1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
+2. See [:material-code-braces: DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef) 
+3. See [:material-code-braces: DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str`
-- `stageDescription`: `str`
-- `description`: `str`
-- `cacheClusterEnabled`: `bool`
-- `cacheClusterSize`:
-  [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Mapping`\[`str`, `str`\]
-- `canarySettings`:
-  [DeploymentCanarySettingsTypeDef](./type_defs.md#deploymentcanarysettingstypedef)
-- `tracingEnabled`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateDeploymentRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns
-[DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
+parent.create_deployment(**kwargs)
+```
 
-<a id="create\_documentation\_part"></a>
+1. See [:material-code-braces: CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef) 
 
-### create_documentation_part
+### create\_documentation\_part
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationPart).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationPart).
 
-Type annotations for `boto3.client("apigateway").create_documentation_part`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_documentation_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
 
-Boto3 documentation:
-[APIGateway.Client.create_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_part)
+```python title="Method definition"
+def create_documentation_part(
+    self,
+    *,
+    restApiId: str,
+    location: DocumentationPartLocationTypeDef,  # (1)
+    properties: str,
+) -> DocumentationPartResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDocumentationPartRequestRequestTypeDef](./type_defs.md#createdocumentationpartrequestrequesttypedef).
+1. See [:material-code-braces: DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef) 
+2. See [:material-code-braces: DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `location`:
-  [DocumentationPartLocationTypeDef](./type_defs.md#documentationpartlocationtypedef)
-  *(required)*
-- `properties`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateDocumentationPartRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "location": ...,
+    "properties": ...,
+}
 
-Returns
-[DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
+parent.create_documentation_part(**kwargs)
+```
 
-<a id="create\_documentation\_version"></a>
+1. See [:material-code-braces: CreateDocumentationPartRequestRequestTypeDef](./type_defs.md#createdocumentationpartrequestrequesttypedef) 
 
-### create_documentation_version
+### create\_documentation\_version
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationVersion).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/CreateDocumentationVersion).
 
-Type annotations for `boto3.client("apigateway").create_documentation_version`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_documentation_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
 
-Boto3 documentation:
-[APIGateway.Client.create_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_documentation_version)
+```python title="Method definition"
+def create_documentation_version(
+    self,
+    *,
+    restApiId: str,
+    documentationVersion: str,
+    stageName: str = ...,
+    description: str = ...,
+) -> DocumentationVersionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateDocumentationVersionRequestRequestTypeDef](./type_defs.md#createdocumentationversionrequestrequesttypedef).
+1. See [:material-code-braces: DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `documentationVersion`: `str` *(required)*
-- `stageName`: `str`
-- `description`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDocumentationVersionRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationVersion": ...,
+}
 
-Returns
-[DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
+parent.create_documentation_version(**kwargs)
+```
 
-<a id="create\_domain\_name"></a>
+1. See [:material-code-braces: CreateDocumentationVersionRequestRequestTypeDef](./type_defs.md#createdocumentationversionrequestrequesttypedef) 
 
-### create_domain_name
+### create\_domain\_name
 
 Creates a new domain name.
 
-Type annotations for `boto3.client("apigateway").create_domain_name` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
 
-Boto3 documentation:
-[APIGateway.Client.create_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_domain_name)
+```python title="Method definition"
+def create_domain_name(
+    self,
+    *,
+    domainName: str,
+    certificateName: str = ...,
+    certificateBody: str = ...,
+    certificatePrivateKey: str = ...,
+    certificateChain: str = ...,
+    certificateArn: str = ...,
+    regionalCertificateName: str = ...,
+    regionalCertificateArn: str = ...,
+    endpointConfiguration: EndpointConfigurationTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+    securityPolicy: SecurityPolicyType = ...,  # (2)
+    mutualTlsAuthentication: MutualTlsAuthenticationInputTypeDef = ...,  # (3)
+    ownershipVerificationCertificateArn: str = ...,
+) -> DomainNameResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateDomainNameRequestRequestTypeDef](./type_defs.md#createdomainnamerequestrequesttypedef).
+1. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+2. See [:material-code-brackets: SecurityPolicyType](./literals.md#securitypolicytype) 
+3. See [:material-code-braces: MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef) 
+4. See [:material-code-braces: DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `domainName`: `str` *(required)*
-- `certificateName`: `str`
-- `certificateBody`: `str`
-- `certificatePrivateKey`: `str`
-- `certificateChain`: `str`
-- `certificateArn`: `str`
-- `regionalCertificateName`: `str`
-- `regionalCertificateArn`: `str`
-- `endpointConfiguration`:
-  [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
-- `securityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
-- `mutualTlsAuthentication`:
-  [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
-- `ownershipVerificationCertificateArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Returns
-[DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
+parent.create_domain_name(**kwargs)
+```
 
-<a id="create\_model"></a>
+1. See [:material-code-braces: CreateDomainNameRequestRequestTypeDef](./type_defs.md#createdomainnamerequestrequesttypedef) 
 
-### create_model
+### create\_model
 
-Adds a new Model resource to an existing RestApi resource.
+Adds a new  Model resource to an existing  RestApi resource.
 
-Type annotations for `boto3.client("apigateway").create_model` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
 
-Boto3 documentation:
-[APIGateway.Client.create_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_model)
+```python title="Method definition"
+def create_model(
+    self,
+    *,
+    restApiId: str,
+    name: str,
+    contentType: str,
+    description: str = ...,
+    schema: str = ...,
+) -> ModelResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef).
+1. See [:material-code-braces: ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `name`: `str` *(required)*
-- `contentType`: `str` *(required)*
-- `description`: `str`
-- `schema`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateModelRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "name": ...,
+    "contentType": ...,
+}
 
-Returns
-[ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
+parent.create_model(**kwargs)
+```
 
-<a id="create\_request\_validator"></a>
+1. See [:material-code-braces: CreateModelRequestRequestTypeDef](./type_defs.md#createmodelrequestrequesttypedef) 
 
-### create_request_validator
+### create\_request\_validator
 
-Creates a ReqeustValidator of a given RestApi .
+Creates a  ReqeustValidator of a given  RestApi .
 
-Type annotations for `boto3.client("apigateway").create_request_validator`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_request_validator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
 
-Boto3 documentation:
-[APIGateway.Client.create_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_request_validator)
+```python title="Method definition"
+def create_request_validator(
+    self,
+    *,
+    restApiId: str,
+    name: str = ...,
+    validateRequestBody: bool = ...,
+    validateRequestParameters: bool = ...,
+) -> RequestValidatorResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateRequestValidatorRequestRequestTypeDef](./type_defs.md#createrequestvalidatorrequestrequesttypedef).
+1. See [:material-code-braces: RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `name`: `str`
-- `validateRequestBody`: `bool`
-- `validateRequestParameters`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateRequestValidatorRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns
-[RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
+parent.create_request_validator(**kwargs)
+```
 
-<a id="create\_resource"></a>
+1. See [:material-code-braces: CreateRequestValidatorRequestRequestTypeDef](./type_defs.md#createrequestvalidatorrequestrequesttypedef) 
 
-### create_resource
+### create\_resource
 
-Creates a Resource resource.
+Creates a  Resource resource.
 
-Type annotations for `boto3.client("apigateway").create_resource` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
 
-Boto3 documentation:
-[APIGateway.Client.create_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_resource)
+```python title="Method definition"
+def create_resource(
+    self,
+    *,
+    restApiId: str,
+    parentId: str,
+    pathPart: str,
+) -> ResourceResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceRequestRequestTypeDef](./type_defs.md#createresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `parentId`: `str` *(required)*
-- `pathPart`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateResourceRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "parentId": ...,
+    "pathPart": ...,
+}
 
-Returns
-[ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
+parent.create_resource(**kwargs)
+```
 
-<a id="create\_rest\_api"></a>
+1. See [:material-code-braces: CreateResourceRequestRequestTypeDef](./type_defs.md#createresourcerequestrequesttypedef) 
 
-### create_rest_api
+### create\_rest\_api
 
-Creates a new RestApi resource.
+Creates a new  RestApi resource.
 
-Type annotations for `boto3.client("apigateway").create_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.create_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_rest_api)
+```python title="Method definition"
+def create_rest_api(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    version: str = ...,
+    cloneFrom: str = ...,
+    binaryMediaTypes: Sequence[str] = ...,
+    minimumCompressionSize: int = ...,
+    apiKeySource: ApiKeySourceTypeType = ...,  # (1)
+    endpointConfiguration: EndpointConfigurationTypeDef = ...,  # (2)
+    policy: str = ...,
+    tags: Mapping[str, str] = ...,
+    disableExecuteApiEndpoint: bool = ...,
+) -> RestApiResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateRestApiRequestRequestTypeDef](./type_defs.md#createrestapirequestrequesttypedef).
+1. See [:material-code-brackets: ApiKeySourceTypeType](./literals.md#apikeysourcetypetype) 
+2. See [:material-code-braces: EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef) 
+3. See [:material-code-braces: RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `version`: `str`
-- `cloneFrom`: `str`
-- `binaryMediaTypes`: `Sequence`\[`str`\]
-- `minimumCompressionSize`: `int`
-- `apiKeySource`: [ApiKeySourceTypeType](./literals.md#apikeysourcetypetype)
-- `endpointConfiguration`:
-  [EndpointConfigurationTypeDef](./type_defs.md#endpointconfigurationtypedef)
-- `policy`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-- `disableExecuteApiEndpoint`: `bool`
+```python title="Usage example with kwargs"
+kwargs: CreateRestApiRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+parent.create_rest_api(**kwargs)
+```
 
-<a id="create\_stage"></a>
+1. See [:material-code-braces: CreateRestApiRequestRequestTypeDef](./type_defs.md#createrestapirequestrequesttypedef) 
 
-### create_stage
+### create\_stage
 
-Creates a new Stage resource that references a pre-existing Deployment for the
+Creates a new  Stage resource that references a pre-existing  Deployment for the
 API.
 
-Type annotations for `boto3.client("apigateway").create_stage` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
 
-Boto3 documentation:
-[APIGateway.Client.create_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_stage)
+```python title="Method definition"
+def create_stage(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+    deploymentId: str,
+    description: str = ...,
+    cacheClusterEnabled: bool = ...,
+    cacheClusterSize: CacheClusterSizeType = ...,  # (1)
+    variables: Mapping[str, str] = ...,
+    documentationVersion: str = ...,
+    canarySettings: CanarySettingsTypeDef = ...,  # (2)
+    tracingEnabled: bool = ...,
+    tags: Mapping[str, str] = ...,
+) -> StageResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateStageRequestRequestTypeDef](./type_defs.md#createstagerequestrequesttypedef).
+1. See [:material-code-brackets: CacheClusterSizeType](./literals.md#cacheclustersizetype) 
+2. See [:material-code-braces: CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef) 
+3. See [:material-code-braces: StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `deploymentId`: `str` *(required)*
-- `description`: `str`
-- `cacheClusterEnabled`: `bool`
-- `cacheClusterSize`:
-  [CacheClusterSizeType](./literals.md#cacheclustersizetype)
-- `variables`: `Mapping`\[`str`, `str`\]
-- `documentationVersion`: `str`
-- `canarySettings`:
-  [CanarySettingsTypeDef](./type_defs.md#canarysettingstypedef)
-- `tracingEnabled`: `bool`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateStageRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+    "deploymentId": ...,
+}
 
-Returns
-[StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
+parent.create_stage(**kwargs)
+```
 
-<a id="create\_usage\_plan"></a>
+1. See [:material-code-braces: CreateStageRequestRequestTypeDef](./type_defs.md#createstagerequestrequesttypedef) 
 
-### create_usage_plan
+### create\_usage\_plan
 
 Creates a usage plan with the throttle and quota limits, as well as the
 associated API stages, specified in the payload.
 
-Type annotations for `boto3.client("apigateway").create_usage_plan` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_usage_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
 
-Boto3 documentation:
-[APIGateway.Client.create_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan)
+```python title="Method definition"
+def create_usage_plan(
+    self,
+    *,
+    name: str,
+    description: str = ...,
+    apiStages: Sequence[ApiStageTypeDef] = ...,  # (1)
+    throttle: ThrottleSettingsTypeDef = ...,  # (2)
+    quota: QuotaSettingsTypeDef = ...,  # (3)
+    tags: Mapping[str, str] = ...,
+) -> UsagePlanResponseMetadataTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateUsagePlanRequestRequestTypeDef](./type_defs.md#createusageplanrequestrequesttypedef).
+1. See [:material-code-braces: ApiStageTypeDef](./type_defs.md#apistagetypedef) 
+2. See [:material-code-braces: ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef) 
+3. See [:material-code-braces: QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef) 
+4. See [:material-code-braces: UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `description`: `str`
-- `apiStages`: `Sequence`\[[ApiStageTypeDef](./type_defs.md#apistagetypedef)\]
-- `throttle`: [ThrottleSettingsTypeDef](./type_defs.md#throttlesettingstypedef)
-- `quota`: [QuotaSettingsTypeDef](./type_defs.md#quotasettingstypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateUsagePlanRequestRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns
-[UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
+parent.create_usage_plan(**kwargs)
+```
 
-<a id="create\_usage\_plan\_key"></a>
+1. See [:material-code-braces: CreateUsagePlanRequestRequestTypeDef](./type_defs.md#createusageplanrequestrequesttypedef) 
 
-### create_usage_plan_key
+### create\_usage\_plan\_key
 
 Creates a usage plan key for adding an existing API key to a usage plan.
 
-Type annotations for `boto3.client("apigateway").create_usage_plan_key` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_usage_plan_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
 
-Boto3 documentation:
-[APIGateway.Client.create_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_usage_plan_key)
+```python title="Method definition"
+def create_usage_plan_key(
+    self,
+    *,
+    usagePlanId: str,
+    keyId: str,
+    keyType: str,
+) -> UsagePlanKeyResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateUsagePlanKeyRequestRequestTypeDef](./type_defs.md#createusageplankeyrequestrequesttypedef).
+1. See [:material-code-braces: UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `keyId`: `str` *(required)*
-- `keyType`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateUsagePlanKeyRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+    "keyId": ...,
+    "keyType": ...,
+}
 
-Returns
-[UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef).
+parent.create_usage_plan_key(**kwargs)
+```
 
-<a id="create\_vpc\_link"></a>
+1. See [:material-code-braces: CreateUsagePlanKeyRequestRequestTypeDef](./type_defs.md#createusageplankeyrequestrequesttypedef) 
 
-### create_vpc_link
+### create\_vpc\_link
 
 Creates a VPC link, under the caller's account in a selected region, in an
 asynchronous operation that typically takes 2-4 minutes to complete and become
 operational.
 
-Type annotations for `boto3.client("apigateway").create_vpc_link` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").create_vpc_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
 
-Boto3 documentation:
-[APIGateway.Client.create_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.create_vpc_link)
+```python title="Method definition"
+def create_vpc_link(
+    self,
+    *,
+    name: str,
+    targetArns: Sequence[str],
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> VpcLinkResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateVpcLinkRequestRequestTypeDef](./type_defs.md#createvpclinkrequestrequesttypedef).
+1. See [:material-code-braces: VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `targetArns`: `Sequence`\[`str`\] *(required)*
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateVpcLinkRequestRequestTypeDef = {  # (1)
+    "name": ...,
+    "targetArns": ...,
+}
 
-Returns
-[VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
+parent.create_vpc_link(**kwargs)
+```
 
-<a id="delete\_api\_key"></a>
+1. See [:material-code-braces: CreateVpcLinkRequestRequestTypeDef](./type_defs.md#createvpclinkrequestrequesttypedef) 
 
-### delete_api_key
+### delete\_api\_key
 
-Deletes the ApiKey resource.
+Deletes the  ApiKey resource.
 
-Type annotations for `boto3.client("apigateway").delete_api_key` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
 
-Boto3 documentation:
-[APIGateway.Client.delete_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_api_key)
+```python title="Method definition"
+def delete_api_key(
+    self,
+    *,
+    apiKey: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteApiKeyRequestRequestTypeDef](./type_defs.md#deleteapikeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `apiKey`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteApiKeyRequestRequestTypeDef = {  # (1)
+    "apiKey": ...,
+}
 
-<a id="delete\_authorizer"></a>
+parent.delete_api_key(**kwargs)
+```
 
-### delete_authorizer
+1. See [:material-code-braces: DeleteApiKeyRequestRequestTypeDef](./type_defs.md#deleteapikeyrequestrequesttypedef) 
 
-Deletes an existing Authorizer resource.
+### delete\_authorizer
 
-Type annotations for `boto3.client("apigateway").delete_authorizer` method.
+Deletes an existing  Authorizer resource.
 
-Boto3 documentation:
-[APIGateway.Client.delete_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_authorizer)
 
-Arguments mapping described in
-[DeleteAuthorizerRequestRequestTypeDef](./type_defs.md#deleteauthorizerrequestrequesttypedef).
+```python title="Method definition"
+def delete_authorizer(
+    self,
+    *,
+    restApiId: str,
+    authorizerId: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `authorizerId`: `str` *(required)*
 
-<a id="delete\_base\_path\_mapping"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteAuthorizerRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "authorizerId": ...,
+}
 
-### delete_base_path_mapping
+parent.delete_authorizer(**kwargs)
+```
 
-Deletes the BasePathMapping resource.
+1. See [:material-code-braces: DeleteAuthorizerRequestRequestTypeDef](./type_defs.md#deleteauthorizerrequestrequesttypedef) 
 
-Type annotations for `boto3.client("apigateway").delete_base_path_mapping`
-method.
+### delete\_base\_path\_mapping
 
-Boto3 documentation:
-[APIGateway.Client.delete_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
+Deletes the  BasePathMapping resource.
 
-Arguments mapping described in
-[DeleteBasePathMappingRequestRequestTypeDef](./type_defs.md#deletebasepathmappingrequestrequesttypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_base_path_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_base_path_mapping)
 
-Keyword-only arguments:
+```python title="Method definition"
+def delete_base_path_mapping(
+    self,
+    *,
+    domainName: str,
+    basePath: str,
+) -> None:
+    ...
+```
 
-- `domainName`: `str` *(required)*
-- `basePath`: `str` *(required)*
 
-<a id="delete\_client\_certificate"></a>
 
-### delete_client_certificate
+```python title="Usage example with kwargs"
+kwargs: DeleteBasePathMappingRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "basePath": ...,
+}
 
-Deletes the ClientCertificate resource.
+parent.delete_base_path_mapping(**kwargs)
+```
 
-Type annotations for `boto3.client("apigateway").delete_client_certificate`
-method.
+1. See [:material-code-braces: DeleteBasePathMappingRequestRequestTypeDef](./type_defs.md#deletebasepathmappingrequestrequesttypedef) 
 
-Boto3 documentation:
-[APIGateway.Client.delete_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
+### delete\_client\_certificate
 
-Arguments mapping described in
-[DeleteClientCertificateRequestRequestTypeDef](./type_defs.md#deleteclientcertificaterequestrequesttypedef).
+Deletes the  ClientCertificate resource.
 
-Keyword-only arguments:
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_client_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_client_certificate)
 
-- `clientCertificateId`: `str` *(required)*
+```python title="Method definition"
+def delete_client_certificate(
+    self,
+    *,
+    clientCertificateId: str,
+) -> None:
+    ...
+```
 
-<a id="delete\_deployment"></a>
 
-### delete_deployment
 
-Deletes a Deployment resource.
+```python title="Usage example with kwargs"
+kwargs: DeleteClientCertificateRequestRequestTypeDef = {  # (1)
+    "clientCertificateId": ...,
+}
 
-Type annotations for `boto3.client("apigateway").delete_deployment` method.
+parent.delete_client_certificate(**kwargs)
+```
 
-Boto3 documentation:
-[APIGateway.Client.delete_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
+1. See [:material-code-braces: DeleteClientCertificateRequestRequestTypeDef](./type_defs.md#deleteclientcertificaterequestrequesttypedef) 
 
-Arguments mapping described in
-[DeleteDeploymentRequestRequestTypeDef](./type_defs.md#deletedeploymentrequestrequesttypedef).
+### delete\_deployment
 
-Keyword-only arguments:
+Deletes a  Deployment resource.
 
-- `restApiId`: `str` *(required)*
-- `deploymentId`: `str` *(required)*
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_deployment)
 
-<a id="delete\_documentation\_part"></a>
+```python title="Method definition"
+def delete_deployment(
+    self,
+    *,
+    restApiId: str,
+    deploymentId: str,
+) -> None:
+    ...
+```
 
-### delete_documentation_part
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationPart).
 
-Type annotations for `boto3.client("apigateway").delete_documentation_part`
-method.
+```python title="Usage example with kwargs"
+kwargs: DeleteDeploymentRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "deploymentId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.delete_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
+parent.delete_deployment(**kwargs)
+```
 
-Arguments mapping described in
-[DeleteDocumentationPartRequestRequestTypeDef](./type_defs.md#deletedocumentationpartrequestrequesttypedef).
+1. See [:material-code-braces: DeleteDeploymentRequestRequestTypeDef](./type_defs.md#deletedeploymentrequestrequesttypedef) 
 
-Keyword-only arguments:
+### delete\_documentation\_part
 
-- `restApiId`: `str` *(required)*
-- `documentationPartId`: `str` *(required)*
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationPart).
 
-<a id="delete\_documentation\_version"></a>
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_documentation_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_part)
 
-### delete_documentation_version
+```python title="Method definition"
+def delete_documentation_part(
+    self,
+    *,
+    restApiId: str,
+    documentationPartId: str,
+) -> None:
+    ...
+```
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationVersion).
 
-Type annotations for `boto3.client("apigateway").delete_documentation_version`
-method.
 
-Boto3 documentation:
-[APIGateway.Client.delete_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
+```python title="Usage example with kwargs"
+kwargs: DeleteDocumentationPartRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationPartId": ...,
+}
 
-Arguments mapping described in
-[DeleteDocumentationVersionRequestRequestTypeDef](./type_defs.md#deletedocumentationversionrequestrequesttypedef).
+parent.delete_documentation_part(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: DeleteDocumentationPartRequestRequestTypeDef](./type_defs.md#deletedocumentationpartrequestrequesttypedef) 
 
-- `restApiId`: `str` *(required)*
-- `documentationVersion`: `str` *(required)*
+### delete\_documentation\_version
 
-<a id="delete\_domain\_name"></a>
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/DeleteDocumentationVersion).
 
-### delete_domain_name
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_documentation_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_documentation_version)
 
-Deletes the DomainName resource.
+```python title="Method definition"
+def delete_documentation_version(
+    self,
+    *,
+    restApiId: str,
+    documentationVersion: str,
+) -> None:
+    ...
+```
 
-Type annotations for `boto3.client("apigateway").delete_domain_name` method.
 
-Boto3 documentation:
-[APIGateway.Client.delete_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
 
-Arguments mapping described in
-[DeleteDomainNameRequestRequestTypeDef](./type_defs.md#deletedomainnamerequestrequesttypedef).
+```python title="Usage example with kwargs"
+kwargs: DeleteDocumentationVersionRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationVersion": ...,
+}
 
-Keyword-only arguments:
+parent.delete_documentation_version(**kwargs)
+```
 
-- `domainName`: `str` *(required)*
+1. See [:material-code-braces: DeleteDocumentationVersionRequestRequestTypeDef](./type_defs.md#deletedocumentationversionrequestrequesttypedef) 
 
-<a id="delete\_gateway\_response"></a>
+### delete\_domain\_name
 
-### delete_gateway_response
+Deletes the  DomainName resource.
 
-Clears any customization of a GatewayResponse of a specified response type on
-the given RestApi and resets it with the default settings.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_domain_name)
 
-Type annotations for `boto3.client("apigateway").delete_gateway_response`
-method.
+```python title="Method definition"
+def delete_domain_name(
+    self,
+    *,
+    domainName: str,
+) -> None:
+    ...
+```
 
-Boto3 documentation:
-[APIGateway.Client.delete_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
 
-Arguments mapping described in
-[DeleteGatewayResponseRequestRequestTypeDef](./type_defs.md#deletegatewayresponserequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DeleteDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-- `restApiId`: `str` *(required)*
-- `responseType`:
-  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
+parent.delete_domain_name(**kwargs)
+```
 
-<a id="delete\_integration"></a>
+1. See [:material-code-braces: DeleteDomainNameRequestRequestTypeDef](./type_defs.md#deletedomainnamerequestrequesttypedef) 
 
-### delete_integration
+### delete\_gateway\_response
+
+Clears any customization of a  GatewayResponse of a specified response type on
+the given  RestApi and resets it with the default settings.
+
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_gateway_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_gateway_response)
+
+```python title="Method definition"
+def delete_gateway_response(
+    self,
+    *,
+    restApiId: str,
+    responseType: GatewayResponseTypeType,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DeleteGatewayResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "responseType": ...,
+}
+
+parent.delete_gateway_response(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteGatewayResponseRequestRequestTypeDef](./type_defs.md#deletegatewayresponserequestrequesttypedef) 
+
+### delete\_integration
 
 Represents a delete integration.
 
-Type annotations for `boto3.client("apigateway").delete_integration` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
 
-Boto3 documentation:
-[APIGateway.Client.delete_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration)
+```python title="Method definition"
+def delete_integration(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntegrationRequestRequestTypeDef](./type_defs.md#deleteintegrationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntegrationRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-<a id="delete\_integration\_response"></a>
+parent.delete_integration(**kwargs)
+```
 
-### delete_integration_response
+1. See [:material-code-braces: DeleteIntegrationRequestRequestTypeDef](./type_defs.md#deleteintegrationrequestrequesttypedef) 
+
+### delete\_integration\_response
 
 Represents a delete integration response.
 
-Type annotations for `boto3.client("apigateway").delete_integration_response`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_integration_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
 
-Boto3 documentation:
-[APIGateway.Client.delete_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_integration_response)
+```python title="Method definition"
+def delete_integration_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIntegrationResponseRequestRequestTypeDef](./type_defs.md#deleteintegrationresponserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIntegrationResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-<a id="delete\_method"></a>
+parent.delete_integration_response(**kwargs)
+```
 
-### delete_method
+1. See [:material-code-braces: DeleteIntegrationResponseRequestRequestTypeDef](./type_defs.md#deleteintegrationresponserequestrequesttypedef) 
 
-Deletes an existing Method resource.
+### delete\_method
 
-Type annotations for `boto3.client("apigateway").delete_method` method.
+Deletes an existing  Method resource.
 
-Boto3 documentation:
-[APIGateway.Client.delete_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method)
 
-Arguments mapping described in
-[DeleteMethodRequestRequestTypeDef](./type_defs.md#deletemethodrequestrequesttypedef).
+```python title="Method definition"
+def delete_method(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
 
-<a id="delete\_method\_response"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteMethodRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-### delete_method_response
+parent.delete_method(**kwargs)
+```
 
-Deletes an existing MethodResponse resource.
+1. See [:material-code-braces: DeleteMethodRequestRequestTypeDef](./type_defs.md#deletemethodrequestrequesttypedef) 
 
-Type annotations for `boto3.client("apigateway").delete_method_response`
-method.
+### delete\_method\_response
 
-Boto3 documentation:
-[APIGateway.Client.delete_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
+Deletes an existing  MethodResponse resource.
 
-Arguments mapping described in
-[DeleteMethodResponseRequestRequestTypeDef](./type_defs.md#deletemethodresponserequestrequesttypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_method_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_method_response)
 
-Keyword-only arguments:
+```python title="Method definition"
+def delete_method_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+) -> None:
+    ...
+```
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
 
-<a id="delete\_model"></a>
 
-### delete_model
+```python title="Usage example with kwargs"
+kwargs: DeleteMethodResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
+
+parent.delete_method_response(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteMethodResponseRequestRequestTypeDef](./type_defs.md#deletemethodresponserequestrequesttypedef) 
+
+### delete\_model
 
 Deletes a model.
 
-Type annotations for `boto3.client("apigateway").delete_model` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model)
 
-Boto3 documentation:
-[APIGateway.Client.delete_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_model)
+```python title="Method definition"
+def delete_model(
+    self,
+    *,
+    restApiId: str,
+    modelName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `modelName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteModelRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "modelName": ...,
+}
 
-<a id="delete\_request\_validator"></a>
+parent.delete_model(**kwargs)
+```
 
-### delete_request_validator
+1. See [:material-code-braces: DeleteModelRequestRequestTypeDef](./type_defs.md#deletemodelrequestrequesttypedef) 
 
-Deletes a RequestValidator of a given RestApi .
+### delete\_request\_validator
 
-Type annotations for `boto3.client("apigateway").delete_request_validator`
-method.
+Deletes a  RequestValidator of a given  RestApi .
 
-Boto3 documentation:
-[APIGateway.Client.delete_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_request_validator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_request_validator)
 
-Arguments mapping described in
-[DeleteRequestValidatorRequestRequestTypeDef](./type_defs.md#deleterequestvalidatorrequestrequesttypedef).
+```python title="Method definition"
+def delete_request_validator(
+    self,
+    *,
+    restApiId: str,
+    requestValidatorId: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `requestValidatorId`: `str` *(required)*
 
-<a id="delete\_resource"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteRequestValidatorRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "requestValidatorId": ...,
+}
 
-### delete_resource
+parent.delete_request_validator(**kwargs)
+```
 
-Deletes a Resource resource.
+1. See [:material-code-braces: DeleteRequestValidatorRequestRequestTypeDef](./type_defs.md#deleterequestvalidatorrequestrequesttypedef) 
 
-Type annotations for `boto3.client("apigateway").delete_resource` method.
+### delete\_resource
 
-Boto3 documentation:
-[APIGateway.Client.delete_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
+Deletes a  Resource resource.
 
-Arguments mapping described in
-[DeleteResourceRequestRequestTypeDef](./type_defs.md#deleteresourcerequestrequesttypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_resource)
 
-Keyword-only arguments:
+```python title="Method definition"
+def delete_resource(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+) -> None:
+    ...
+```
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
 
-<a id="delete\_rest\_api"></a>
 
-### delete_rest_api
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+}
+
+parent.delete_resource(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteResourceRequestRequestTypeDef](./type_defs.md#deleteresourcerequestrequesttypedef) 
+
+### delete\_rest\_api
 
 Deletes the specified API.
 
-Type annotations for `boto3.client("apigateway").delete_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.delete_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_rest_api)
+```python title="Method definition"
+def delete_rest_api(
+    self,
+    *,
+    restApiId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteRestApiRequestRequestTypeDef](./type_defs.md#deleterestapirequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteRestApiRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-<a id="delete\_stage"></a>
+parent.delete_rest_api(**kwargs)
+```
 
-### delete_stage
+1. See [:material-code-braces: DeleteRestApiRequestRequestTypeDef](./type_defs.md#deleterestapirequestrequesttypedef) 
 
-Deletes a Stage resource.
+### delete\_stage
 
-Type annotations for `boto3.client("apigateway").delete_stage` method.
+Deletes a  Stage resource.
 
-Boto3 documentation:
-[APIGateway.Client.delete_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_stage)
 
-Arguments mapping described in
-[DeleteStageRequestRequestTypeDef](./type_defs.md#deletestagerequestrequesttypedef).
+```python title="Method definition"
+def delete_stage(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
 
-<a id="delete\_usage\_plan"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteStageRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+}
 
-### delete_usage_plan
+parent.delete_stage(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteStageRequestRequestTypeDef](./type_defs.md#deletestagerequestrequesttypedef) 
+
+### delete\_usage\_plan
 
 Deletes a usage plan of a given plan Id.
 
-Type annotations for `boto3.client("apigateway").delete_usage_plan` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_usage_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
 
-Boto3 documentation:
-[APIGateway.Client.delete_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan)
+```python title="Method definition"
+def delete_usage_plan(
+    self,
+    *,
+    usagePlanId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUsagePlanRequestRequestTypeDef](./type_defs.md#deleteusageplanrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUsagePlanRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+}
 
-<a id="delete\_usage\_plan\_key"></a>
+parent.delete_usage_plan(**kwargs)
+```
 
-### delete_usage_plan_key
+1. See [:material-code-braces: DeleteUsagePlanRequestRequestTypeDef](./type_defs.md#deleteusageplanrequestrequesttypedef) 
+
+### delete\_usage\_plan\_key
 
 Deletes a usage plan key and remove the underlying API key from the associated
 usage plan.
 
-Type annotations for `boto3.client("apigateway").delete_usage_plan_key` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_usage_plan_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
 
-Boto3 documentation:
-[APIGateway.Client.delete_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_usage_plan_key)
+```python title="Method definition"
+def delete_usage_plan_key(
+    self,
+    *,
+    usagePlanId: str,
+    keyId: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteUsagePlanKeyRequestRequestTypeDef](./type_defs.md#deleteusageplankeyrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `keyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteUsagePlanKeyRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+    "keyId": ...,
+}
 
-<a id="delete\_vpc\_link"></a>
+parent.delete_usage_plan_key(**kwargs)
+```
 
-### delete_vpc_link
+1. See [:material-code-braces: DeleteUsagePlanKeyRequestRequestTypeDef](./type_defs.md#deleteusageplankeyrequestrequesttypedef) 
 
-Deletes an existing VpcLink of a specified identifier.
+### delete\_vpc\_link
 
-Type annotations for `boto3.client("apigateway").delete_vpc_link` method.
+Deletes an existing  VpcLink of a specified identifier.
 
-Boto3 documentation:
-[APIGateway.Client.delete_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
+Type annotations and code completion for `#!python boto3.client("apigateway").delete_vpc_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.delete_vpc_link)
 
-Arguments mapping described in
-[DeleteVpcLinkRequestRequestTypeDef](./type_defs.md#deletevpclinkrequestrequesttypedef).
+```python title="Method definition"
+def delete_vpc_link(
+    self,
+    *,
+    vpcLinkId: str,
+) -> None:
+    ...
+```
 
-Keyword-only arguments:
 
-- `vpcLinkId`: `str` *(required)*
 
-<a id="flush\_stage\_authorizers\_cache"></a>
+```python title="Usage example with kwargs"
+kwargs: DeleteVpcLinkRequestRequestTypeDef = {  # (1)
+    "vpcLinkId": ...,
+}
 
-### flush_stage_authorizers_cache
+parent.delete_vpc_link(**kwargs)
+```
+
+1. See [:material-code-braces: DeleteVpcLinkRequestRequestTypeDef](./type_defs.md#deletevpclinkrequestrequesttypedef) 
+
+### flush\_stage\_authorizers\_cache
 
 Flushes all authorizer cache entries on a stage.
 
-Type annotations for `boto3.client("apigateway").flush_stage_authorizers_cache`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").flush_stage_authorizers_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
 
-Boto3 documentation:
-[APIGateway.Client.flush_stage_authorizers_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_authorizers_cache)
+```python title="Method definition"
+def flush_stage_authorizers_cache(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[FlushStageAuthorizersCacheRequestRequestTypeDef](./type_defs.md#flushstageauthorizerscacherequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FlushStageAuthorizersCacheRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+}
 
-<a id="flush\_stage\_cache"></a>
+parent.flush_stage_authorizers_cache(**kwargs)
+```
 
-### flush_stage_cache
+1. See [:material-code-braces: FlushStageAuthorizersCacheRequestRequestTypeDef](./type_defs.md#flushstageauthorizerscacherequestrequesttypedef) 
+
+### flush\_stage\_cache
 
 Flushes a stage's cache.
 
-Type annotations for `boto3.client("apigateway").flush_stage_cache` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").flush_stage_cache` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
 
-Boto3 documentation:
-[APIGateway.Client.flush_stage_cache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.flush_stage_cache)
+```python title="Method definition"
+def flush_stage_cache(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[FlushStageCacheRequestRequestTypeDef](./type_defs.md#flushstagecacherequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: FlushStageCacheRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+}
 
-<a id="generate\_client\_certificate"></a>
+parent.flush_stage_cache(**kwargs)
+```
 
-### generate_client_certificate
+1. See [:material-code-braces: FlushStageCacheRequestRequestTypeDef](./type_defs.md#flushstagecacherequestrequesttypedef) 
 
-Generates a ClientCertificate resource.
+### generate\_client\_certificate
 
-Type annotations for `boto3.client("apigateway").generate_client_certificate`
-method.
+Generates a  ClientCertificate resource.
 
-Boto3 documentation:
-[APIGateway.Client.generate_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
+Type annotations and code completion for `#!python boto3.client("apigateway").generate_client_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_client_certificate)
 
-Arguments mapping described in
-[GenerateClientCertificateRequestRequestTypeDef](./type_defs.md#generateclientcertificaterequestrequesttypedef).
+```python title="Method definition"
+def generate_client_certificate(
+    self,
+    *,
+    description: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> ClientCertificateResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef) 
 
-- `description`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
 
-Returns
-[ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: GenerateClientCertificateRequestRequestTypeDef = {  # (1)
+    "description": ...,
+}
 
-<a id="generate\_presigned\_url"></a>
+parent.generate_client_certificate(**kwargs)
+```
 
-### generate_presigned_url
+1. See [:material-code-braces: GenerateClientCertificateRequestRequestTypeDef](./type_defs.md#generateclientcertificaterequestrequesttypedef) 
+
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("apigateway").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url)
 
-Boto3 documentation:
-[APIGateway.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### get\_account
 
-Returns `str`.
+Gets information about the current  Account resource.
 
-<a id="get\_account"></a>
+Type annotations and code completion for `#!python boto3.client("apigateway").get_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
 
-### get_account
+```python title="Method definition"
+def get_account(
+    self,
+) -> AccountTypeDef:  # (1)
+    ...
+```
 
-Gets information about the current Account resource.
+1. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
 
-Type annotations for `boto3.client("apigateway").get_account` method.
+### get\_api\_key
 
-Boto3 documentation:
-[APIGateway.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
+Gets information about the current  ApiKey resource.
 
-Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
 
-<a id="get\_api\_key"></a>
+```python title="Method definition"
+def get_api_key(
+    self,
+    *,
+    apiKey: str,
+    includeValue: bool = ...,
+) -> ApiKeyResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_api_key
+1. See [:material-code-braces: ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef) 
 
-Gets information about the current ApiKey resource.
 
-Type annotations for `boto3.client("apigateway").get_api_key` method.
+```python title="Usage example with kwargs"
+kwargs: GetApiKeyRequestRequestTypeDef = {  # (1)
+    "apiKey": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_key)
+parent.get_api_key(**kwargs)
+```
 
-Arguments mapping described in
-[GetApiKeyRequestRequestTypeDef](./type_defs.md#getapikeyrequestrequesttypedef).
+1. See [:material-code-braces: GetApiKeyRequestRequestTypeDef](./type_defs.md#getapikeyrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_api\_keys
 
-- `apiKey`: `str` *(required)*
-- `includeValue`: `bool`
+Gets information about the current  ApiKeys resource.
 
-Returns
-[ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_api_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
 
-<a id="get\_api\_keys"></a>
+```python title="Method definition"
+def get_api_keys(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+    nameQuery: str = ...,
+    customerId: str = ...,
+    includeValues: bool = ...,
+) -> ApiKeysTypeDef:  # (1)
+    ...
+```
 
-### get_api_keys
+1. See [:material-code-braces: ApiKeysTypeDef](./type_defs.md#apikeystypedef) 
 
-Gets information about the current ApiKeys resource.
 
-Type annotations for `boto3.client("apigateway").get_api_keys` method.
+```python title="Usage example with kwargs"
+kwargs: GetApiKeysRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_api_keys)
+parent.get_api_keys(**kwargs)
+```
 
-Arguments mapping described in
-[GetApiKeysRequestRequestTypeDef](./type_defs.md#getapikeysrequestrequesttypedef).
+1. See [:material-code-braces: GetApiKeysRequestRequestTypeDef](./type_defs.md#getapikeysrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_authorizer
 
-- `position`: `str`
-- `limit`: `int`
-- `nameQuery`: `str`
-- `customerId`: `str`
-- `includeValues`: `bool`
+Describe an existing  Authorizer resource.
 
-Returns [ApiKeysTypeDef](./type_defs.md#apikeystypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
 
-<a id="get\_authorizer"></a>
+```python title="Method definition"
+def get_authorizer(
+    self,
+    *,
+    restApiId: str,
+    authorizerId: str,
+) -> AuthorizerResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_authorizer
+1. See [:material-code-braces: AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef) 
 
-Describe an existing Authorizer resource.
 
-Type annotations for `boto3.client("apigateway").get_authorizer` method.
+```python title="Usage example with kwargs"
+kwargs: GetAuthorizerRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "authorizerId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizer)
+parent.get_authorizer(**kwargs)
+```
 
-Arguments mapping described in
-[GetAuthorizerRequestRequestTypeDef](./type_defs.md#getauthorizerrequestrequesttypedef).
+1. See [:material-code-braces: GetAuthorizerRequestRequestTypeDef](./type_defs.md#getauthorizerrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_authorizers
 
-- `restApiId`: `str` *(required)*
-- `authorizerId`: `str` *(required)*
+Describe an existing  Authorizers resource.
 
-Returns
-[AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_authorizers` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
 
-<a id="get\_authorizers"></a>
+```python title="Method definition"
+def get_authorizers(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> AuthorizersTypeDef:  # (1)
+    ...
+```
 
-### get_authorizers
+1. See [:material-code-braces: AuthorizersTypeDef](./type_defs.md#authorizerstypedef) 
 
-Describe an existing Authorizers resource.
 
-Type annotations for `boto3.client("apigateway").get_authorizers` method.
+```python title="Usage example with kwargs"
+kwargs: GetAuthorizersRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_authorizers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_authorizers)
+parent.get_authorizers(**kwargs)
+```
 
-Arguments mapping described in
-[GetAuthorizersRequestRequestTypeDef](./type_defs.md#getauthorizersrequestrequesttypedef).
+1. See [:material-code-braces: GetAuthorizersRequestRequestTypeDef](./type_defs.md#getauthorizersrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_base\_path\_mapping
 
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+Describe a  BasePathMapping resource.
 
-Returns [AuthorizersTypeDef](./type_defs.md#authorizerstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_base_path_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
 
-<a id="get\_base\_path\_mapping"></a>
+```python title="Method definition"
+def get_base_path_mapping(
+    self,
+    *,
+    domainName: str,
+    basePath: str,
+) -> BasePathMappingResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_base_path_mapping
+1. See [:material-code-braces: BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef) 
 
-Describe a BasePathMapping resource.
 
-Type annotations for `boto3.client("apigateway").get_base_path_mapping` method.
+```python title="Usage example with kwargs"
+kwargs: GetBasePathMappingRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "basePath": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mapping)
+parent.get_base_path_mapping(**kwargs)
+```
 
-Arguments mapping described in
-[GetBasePathMappingRequestRequestTypeDef](./type_defs.md#getbasepathmappingrequestrequesttypedef).
+1. See [:material-code-braces: GetBasePathMappingRequestRequestTypeDef](./type_defs.md#getbasepathmappingrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_base\_path\_mappings
 
-- `domainName`: `str` *(required)*
-- `basePath`: `str` *(required)*
+Represents a collection of  BasePathMapping resources.
 
-Returns
-[BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_base_path_mappings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
 
-<a id="get\_base\_path\_mappings"></a>
+```python title="Method definition"
+def get_base_path_mappings(
+    self,
+    *,
+    domainName: str,
+    position: str = ...,
+    limit: int = ...,
+) -> BasePathMappingsTypeDef:  # (1)
+    ...
+```
 
-### get_base_path_mappings
+1. See [:material-code-braces: BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef) 
 
-Represents a collection of BasePathMapping resources.
 
-Type annotations for `boto3.client("apigateway").get_base_path_mappings`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetBasePathMappingsRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_base_path_mappings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_base_path_mappings)
+parent.get_base_path_mappings(**kwargs)
+```
 
-Arguments mapping described in
-[GetBasePathMappingsRequestRequestTypeDef](./type_defs.md#getbasepathmappingsrequestrequesttypedef).
+1. See [:material-code-braces: GetBasePathMappingsRequestRequestTypeDef](./type_defs.md#getbasepathmappingsrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_client\_certificate
 
-- `domainName`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+Gets information about the current  ClientCertificate resource.
 
-Returns [BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_client_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
 
-<a id="get\_client\_certificate"></a>
+```python title="Method definition"
+def get_client_certificate(
+    self,
+    *,
+    clientCertificateId: str,
+) -> ClientCertificateResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_client_certificate
+1. See [:material-code-braces: ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef) 
 
-Gets information about the current ClientCertificate resource.
 
-Type annotations for `boto3.client("apigateway").get_client_certificate`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetClientCertificateRequestRequestTypeDef = {  # (1)
+    "clientCertificateId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificate)
+parent.get_client_certificate(**kwargs)
+```
 
-Arguments mapping described in
-[GetClientCertificateRequestRequestTypeDef](./type_defs.md#getclientcertificaterequestrequesttypedef).
+1. See [:material-code-braces: GetClientCertificateRequestRequestTypeDef](./type_defs.md#getclientcertificaterequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_client\_certificates
 
-- `clientCertificateId`: `str` *(required)*
+Gets a collection of  ClientCertificate resources.
 
-Returns
-[ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_client_certificates` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
 
-<a id="get\_client\_certificates"></a>
+```python title="Method definition"
+def get_client_certificates(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+) -> ClientCertificatesTypeDef:  # (1)
+    ...
+```
 
-### get_client_certificates
+1. See [:material-code-braces: ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef) 
 
-Gets a collection of ClientCertificate resources.
 
-Type annotations for `boto3.client("apigateway").get_client_certificates`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetClientCertificatesRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_client_certificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_client_certificates)
+parent.get_client_certificates(**kwargs)
+```
 
-Arguments mapping described in
-[GetClientCertificatesRequestRequestTypeDef](./type_defs.md#getclientcertificatesrequestrequesttypedef).
+1. See [:material-code-braces: GetClientCertificatesRequestRequestTypeDef](./type_defs.md#getclientcertificatesrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_deployment
 
-- `position`: `str`
-- `limit`: `int`
+Gets information about a  Deployment resource.
 
-Returns [ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
 
-<a id="get\_deployment"></a>
+```python title="Method definition"
+def get_deployment(
+    self,
+    *,
+    restApiId: str,
+    deploymentId: str,
+    embed: Sequence[str] = ...,
+) -> DeploymentResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_deployment
+1. See [:material-code-braces: DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef) 
 
-Gets information about a Deployment resource.
 
-Type annotations for `boto3.client("apigateway").get_deployment` method.
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "deploymentId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployment)
+parent.get_deployment(**kwargs)
+```
 
-Arguments mapping described in
-[GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: GetDeploymentRequestRequestTypeDef](./type_defs.md#getdeploymentrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_deployments
 
-- `restApiId`: `str` *(required)*
-- `deploymentId`: `str` *(required)*
-- `embed`: `Sequence`\[`str`\]
+Gets information about a  Deployments collection.
 
-Returns
-[DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
 
-<a id="get\_deployments"></a>
+```python title="Method definition"
+def get_deployments(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> DeploymentsTypeDef:  # (1)
+    ...
+```
 
-### get_deployments
+1. See [:material-code-braces: DeploymentsTypeDef](./type_defs.md#deploymentstypedef) 
 
-Gets information about a Deployments collection.
 
-Type annotations for `boto3.client("apigateway").get_deployments` method.
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_deployments)
+parent.get_deployments(**kwargs)
+```
 
-Arguments mapping described in
-[GetDeploymentsRequestRequestTypeDef](./type_defs.md#getdeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: GetDeploymentsRequestRequestTypeDef](./type_defs.md#getdeploymentsrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_documentation\_part
 
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationPart).
 
-Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
 
-<a id="get\_documentation\_part"></a>
+```python title="Method definition"
+def get_documentation_part(
+    self,
+    *,
+    restApiId: str,
+    documentationPartId: str,
+) -> DocumentationPartResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_documentation_part
+1. See [:material-code-braces: DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationPart).
 
-Type annotations for `boto3.client("apigateway").get_documentation_part`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetDocumentationPartRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationPartId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_part)
+parent.get_documentation_part(**kwargs)
+```
 
-Arguments mapping described in
-[GetDocumentationPartRequestRequestTypeDef](./type_defs.md#getdocumentationpartrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentationPartRequestRequestTypeDef](./type_defs.md#getdocumentationpartrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_documentation\_parts
 
-- `restApiId`: `str` *(required)*
-- `documentationPartId`: `str` *(required)*
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationParts).
 
-Returns
-[DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_parts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
 
-<a id="get\_documentation\_parts"></a>
+```python title="Method definition"
+def get_documentation_parts(
+    self,
+    *,
+    restApiId: str,
+    type: DocumentationPartTypeType = ...,  # (1)
+    nameQuery: str = ...,
+    path: str = ...,
+    position: str = ...,
+    limit: int = ...,
+    locationStatus: LocationStatusTypeType = ...,  # (2)
+) -> DocumentationPartsTypeDef:  # (3)
+    ...
+```
 
-### get_documentation_parts
+1. See [:material-code-brackets: DocumentationPartTypeType](./literals.md#documentationparttypetype) 
+2. See [:material-code-brackets: LocationStatusTypeType](./literals.md#locationstatustypetype) 
+3. See [:material-code-braces: DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationParts).
 
-Type annotations for `boto3.client("apigateway").get_documentation_parts`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetDocumentationPartsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_parts)
+parent.get_documentation_parts(**kwargs)
+```
 
-Arguments mapping described in
-[GetDocumentationPartsRequestRequestTypeDef](./type_defs.md#getdocumentationpartsrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentationPartsRequestRequestTypeDef](./type_defs.md#getdocumentationpartsrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_documentation\_version
 
-- `restApiId`: `str` *(required)*
-- `type`: [DocumentationPartTypeType](./literals.md#documentationparttypetype)
-- `nameQuery`: `str`
-- `path`: `str`
-- `position`: `str`
-- `limit`: `int`
-- `locationStatus`:
-  [LocationStatusTypeType](./literals.md#locationstatustypetype)
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersion).
 
-Returns [DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
 
-<a id="get\_documentation\_version"></a>
+```python title="Method definition"
+def get_documentation_version(
+    self,
+    *,
+    restApiId: str,
+    documentationVersion: str,
+) -> DocumentationVersionResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_documentation_version
+1. See [:material-code-braces: DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersion).
 
-Type annotations for `boto3.client("apigateway").get_documentation_version`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetDocumentationVersionRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationVersion": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_version)
+parent.get_documentation_version(**kwargs)
+```
 
-Arguments mapping described in
-[GetDocumentationVersionRequestRequestTypeDef](./type_defs.md#getdocumentationversionrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentationVersionRequestRequestTypeDef](./type_defs.md#getdocumentationversionrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_documentation\_versions
 
-- `restApiId`: `str` *(required)*
-- `documentationVersion`: `str` *(required)*
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersions).
 
-Returns
-[DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_documentation_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
 
-<a id="get\_documentation\_versions"></a>
+```python title="Method definition"
+def get_documentation_versions(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> DocumentationVersionsTypeDef:  # (1)
+    ...
+```
 
-### get_documentation_versions
+1. See [:material-code-braces: DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetDocumentationVersions).
 
-Type annotations for `boto3.client("apigateway").get_documentation_versions`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetDocumentationVersionsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_documentation_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_documentation_versions)
+parent.get_documentation_versions(**kwargs)
+```
 
-Arguments mapping described in
-[GetDocumentationVersionsRequestRequestTypeDef](./type_defs.md#getdocumentationversionsrequestrequesttypedef).
+1. See [:material-code-braces: GetDocumentationVersionsRequestRequestTypeDef](./type_defs.md#getdocumentationversionsrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_domain\_name
 
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+Represents a domain name that is contained in a simpler, more intuitive URL that
+can be called.
 
-Returns
-[DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
 
-<a id="get\_domain\_name"></a>
+```python title="Method definition"
+def get_domain_name(
+    self,
+    *,
+    domainName: str,
+) -> DomainNameResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_domain_name
+1. See [:material-code-braces: DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef) 
 
-Represents a domain name that is contained in a simpler, more intuitive URL
-that can be called.
 
-Type annotations for `boto3.client("apigateway").get_domain_name` method.
+```python title="Usage example with kwargs"
+kwargs: GetDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_name)
+parent.get_domain_name(**kwargs)
+```
 
-Arguments mapping described in
-[GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef).
+1. See [:material-code-braces: GetDomainNameRequestRequestTypeDef](./type_defs.md#getdomainnamerequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_domain\_names
 
-- `domainName`: `str` *(required)*
+Represents a collection of  DomainName resources.
 
-Returns
-[DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_domain_names` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
 
-<a id="get\_domain\_names"></a>
+```python title="Method definition"
+def get_domain_names(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+) -> DomainNamesTypeDef:  # (1)
+    ...
+```
 
-### get_domain_names
+1. See [:material-code-braces: DomainNamesTypeDef](./type_defs.md#domainnamestypedef) 
 
-Represents a collection of DomainName resources.
 
-Type annotations for `boto3.client("apigateway").get_domain_names` method.
+```python title="Usage example with kwargs"
+kwargs: GetDomainNamesRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_domain_names](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_domain_names)
+parent.get_domain_names(**kwargs)
+```
 
-Arguments mapping described in
-[GetDomainNamesRequestRequestTypeDef](./type_defs.md#getdomainnamesrequestrequesttypedef).
+1. See [:material-code-braces: GetDomainNamesRequestRequestTypeDef](./type_defs.md#getdomainnamesrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_export
 
-- `position`: `str`
-- `limit`: `int`
+Exports a deployed version of a  RestApi in a specified format.
 
-Returns [DomainNamesTypeDef](./type_defs.md#domainnamestypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_export` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
 
-<a id="get\_export"></a>
+```python title="Method definition"
+def get_export(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+    exportType: str,
+    parameters: Mapping[str, str] = ...,
+    accepts: str = ...,
+) -> ExportResponseTypeDef:  # (1)
+    ...
+```
 
-### get_export
+1. See [:material-code-braces: ExportResponseTypeDef](./type_defs.md#exportresponsetypedef) 
 
-Exports a deployed version of a RestApi in a specified format.
 
-Type annotations for `boto3.client("apigateway").get_export` method.
+```python title="Usage example with kwargs"
+kwargs: GetExportRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+    "exportType": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_export](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_export)
+parent.get_export(**kwargs)
+```
 
-Arguments mapping described in
-[GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef).
+1. See [:material-code-braces: GetExportRequestRequestTypeDef](./type_defs.md#getexportrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_gateway\_response
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `exportType`: `str` *(required)*
-- `parameters`: `Mapping`\[`str`, `str`\]
-- `accepts`: `str`
+Gets a  GatewayResponse of a specified response type on the given  RestApi .
 
-Returns [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_gateway_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
 
-<a id="get\_gateway\_response"></a>
+```python title="Method definition"
+def get_gateway_response(
+    self,
+    *,
+    restApiId: str,
+    responseType: GatewayResponseTypeType,  # (1)
+) -> GatewayResponseResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-### get_gateway_response
+1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
+2. See [:material-code-braces: GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef) 
 
-Gets a GatewayResponse of a specified response type on the given RestApi .
 
-Type annotations for `boto3.client("apigateway").get_gateway_response` method.
+```python title="Usage example with kwargs"
+kwargs: GetGatewayResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "responseType": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_response)
+parent.get_gateway_response(**kwargs)
+```
 
-Arguments mapping described in
-[GetGatewayResponseRequestRequestTypeDef](./type_defs.md#getgatewayresponserequestrequesttypedef).
+1. See [:material-code-braces: GetGatewayResponseRequestRequestTypeDef](./type_defs.md#getgatewayresponserequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_gateway\_responses
 
-- `restApiId`: `str` *(required)*
-- `responseType`:
-  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
+Gets the  GatewayResponses collection on the given  RestApi.
 
-Returns
-[GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_gateway_responses` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
 
-<a id="get\_gateway\_responses"></a>
+```python title="Method definition"
+def get_gateway_responses(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> GatewayResponsesTypeDef:  # (1)
+    ...
+```
 
-### get_gateway_responses
+1. See [:material-code-braces: GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef) 
 
-Gets the GatewayResponses collection on the given RestApi.
 
-Type annotations for `boto3.client("apigateway").get_gateway_responses` method.
+```python title="Usage example with kwargs"
+kwargs: GetGatewayResponsesRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_gateway_responses](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_gateway_responses)
+parent.get_gateway_responses(**kwargs)
+```
 
-Arguments mapping described in
-[GetGatewayResponsesRequestRequestTypeDef](./type_defs.md#getgatewayresponsesrequestrequesttypedef).
+1. See [:material-code-braces: GetGatewayResponsesRequestRequestTypeDef](./type_defs.md#getgatewayresponsesrequestrequesttypedef) 
 
-Keyword-only arguments:
-
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
-
-Returns [GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef).
-
-<a id="get\_integration"></a>
-
-### get_integration
+### get\_integration
 
 Get the integration settings.
 
-Type annotations for `boto3.client("apigateway").get_integration` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
 
-Boto3 documentation:
-[APIGateway.Client.get_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration)
+```python title="Method definition"
+def get_integration(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+) -> IntegrationResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIntegrationRequestRequestTypeDef](./type_defs.md#getintegrationrequestrequesttypedef).
+1. See [:material-code-braces: IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIntegrationRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-Returns
-[IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
+parent.get_integration(**kwargs)
+```
 
-<a id="get\_integration\_response"></a>
+1. See [:material-code-braces: GetIntegrationRequestRequestTypeDef](./type_defs.md#getintegrationrequestrequesttypedef) 
 
-### get_integration_response
+### get\_integration\_response
 
 Represents a get integration response.
 
-Type annotations for `boto3.client("apigateway").get_integration_response`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_integration_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
 
-Boto3 documentation:
-[APIGateway.Client.get_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_integration_response)
+```python title="Method definition"
+def get_integration_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+) -> IntegrationResponseResponseMetadataTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetIntegrationResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
+
+parent.get_integration_response(**kwargs)
+```
 
-Arguments mapping described in
-[GetIntegrationResponseRequestRequestTypeDef](./type_defs.md#getintegrationresponserequestrequesttypedef).
+1. See [:material-code-braces: GetIntegrationResponseRequestRequestTypeDef](./type_defs.md#getintegrationresponserequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_method
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
+Describe an existing  Method resource.
 
-Returns
-[IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
 
-<a id="get\_method"></a>
+```python title="Method definition"
+def get_method(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+) -> MethodResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_method
+1. See [:material-code-braces: MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef) 
 
-Describe an existing Method resource.
 
-Type annotations for `boto3.client("apigateway").get_method` method.
+```python title="Usage example with kwargs"
+kwargs: GetMethodRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method)
+parent.get_method(**kwargs)
+```
 
-Arguments mapping described in
-[GetMethodRequestRequestTypeDef](./type_defs.md#getmethodrequestrequesttypedef).
+1. See [:material-code-braces: GetMethodRequestRequestTypeDef](./type_defs.md#getmethodrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_method\_response
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
+Describes a  MethodResponse resource.
 
-Returns
-[MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_method_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
 
-<a id="get\_method\_response"></a>
+```python title="Method definition"
+def get_method_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+) -> MethodResponseResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_method_response
+1. See [:material-code-braces: MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef) 
 
-Describes a MethodResponse resource.
 
-Type annotations for `boto3.client("apigateway").get_method_response` method.
+```python title="Usage example with kwargs"
+kwargs: GetMethodResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_method_response)
+parent.get_method_response(**kwargs)
+```
 
-Arguments mapping described in
-[GetMethodResponseRequestRequestTypeDef](./type_defs.md#getmethodresponserequestrequesttypedef).
+1. See [:material-code-braces: GetMethodResponseRequestRequestTypeDef](./type_defs.md#getmethodresponserequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_model
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
+Describes an existing model defined for a  RestApi resource.
 
-Returns
-[MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
 
-<a id="get\_model"></a>
+```python title="Method definition"
+def get_model(
+    self,
+    *,
+    restApiId: str,
+    modelName: str,
+    flatten: bool = ...,
+) -> ModelResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_model
+1. See [:material-code-braces: ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef) 
 
-Describes an existing model defined for a RestApi resource.
 
-Type annotations for `boto3.client("apigateway").get_model` method.
+```python title="Usage example with kwargs"
+kwargs: GetModelRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "modelName": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model)
+parent.get_model(**kwargs)
+```
 
-Arguments mapping described in
-[GetModelRequestRequestTypeDef](./type_defs.md#getmodelrequestrequesttypedef).
+1. See [:material-code-braces: GetModelRequestRequestTypeDef](./type_defs.md#getmodelrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_model\_template
 
-- `restApiId`: `str` *(required)*
-- `modelName`: `str` *(required)*
-- `flatten`: `bool`
+Generates a sample mapping template that can be used to transform a payload into
+the structure of a model.
 
-Returns
-[ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_model_template` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template)
 
-<a id="get\_model\_template"></a>
+```python title="Method definition"
+def get_model_template(
+    self,
+    *,
+    restApiId: str,
+    modelName: str,
+) -> TemplateTypeDef:  # (1)
+    ...
+```
 
-### get_model_template
+1. See [:material-code-braces: TemplateTypeDef](./type_defs.md#templatetypedef) 
 
-Generates a sample mapping template that can be used to transform a payload
-into the structure of a model.
 
-Type annotations for `boto3.client("apigateway").get_model_template` method.
+```python title="Usage example with kwargs"
+kwargs: GetModelTemplateRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "modelName": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_model_template](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_model_template)
+parent.get_model_template(**kwargs)
+```
 
-Arguments mapping described in
-[GetModelTemplateRequestRequestTypeDef](./type_defs.md#getmodeltemplaterequestrequesttypedef).
+1. See [:material-code-braces: GetModelTemplateRequestRequestTypeDef](./type_defs.md#getmodeltemplaterequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_models
 
-- `restApiId`: `str` *(required)*
-- `modelName`: `str` *(required)*
+Describes existing  Models defined for a  RestApi resource.
 
-Returns [TemplateTypeDef](./type_defs.md#templatetypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
 
-<a id="get\_models"></a>
+```python title="Method definition"
+def get_models(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> ModelsTypeDef:  # (1)
+    ...
+```
 
-### get_models
+1. See [:material-code-braces: ModelsTypeDef](./type_defs.md#modelstypedef) 
 
-Describes existing Models defined for a RestApi resource.
 
-Type annotations for `boto3.client("apigateway").get_models` method.
+```python title="Usage example with kwargs"
+kwargs: GetModelsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_models)
+parent.get_models(**kwargs)
+```
 
-Arguments mapping described in
-[GetModelsRequestRequestTypeDef](./type_defs.md#getmodelsrequestrequesttypedef).
+1. See [:material-code-braces: GetModelsRequestRequestTypeDef](./type_defs.md#getmodelsrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_request\_validator
 
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+Gets a  RequestValidator of a given  RestApi .
 
-Returns [ModelsTypeDef](./type_defs.md#modelstypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_request_validator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
 
-<a id="get\_request\_validator"></a>
+```python title="Method definition"
+def get_request_validator(
+    self,
+    *,
+    restApiId: str,
+    requestValidatorId: str,
+) -> RequestValidatorResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-### get_request_validator
+1. See [:material-code-braces: RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef) 
 
-Gets a RequestValidator of a given RestApi .
 
-Type annotations for `boto3.client("apigateway").get_request_validator` method.
+```python title="Usage example with kwargs"
+kwargs: GetRequestValidatorRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "requestValidatorId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validator)
+parent.get_request_validator(**kwargs)
+```
 
-Arguments mapping described in
-[GetRequestValidatorRequestRequestTypeDef](./type_defs.md#getrequestvalidatorrequestrequesttypedef).
+1. See [:material-code-braces: GetRequestValidatorRequestRequestTypeDef](./type_defs.md#getrequestvalidatorrequestrequesttypedef) 
 
-Keyword-only arguments:
+### get\_request\_validators
 
-- `restApiId`: `str` *(required)*
-- `requestValidatorId`: `str` *(required)*
+Gets the  RequestValidators collection of a given  RestApi .
 
-Returns
-[RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
+Type annotations and code completion for `#!python boto3.client("apigateway").get_request_validators` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
 
-<a id="get\_request\_validators"></a>
+```python title="Method definition"
+def get_request_validators(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+) -> RequestValidatorsTypeDef:  # (1)
+    ...
+```
 
-### get_request_validators
+1. See [:material-code-braces: RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef) 
 
-Gets the RequestValidators collection of a given RestApi .
 
-Type annotations for `boto3.client("apigateway").get_request_validators`
-method.
+```python title="Usage example with kwargs"
+kwargs: GetRequestValidatorsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Boto3 documentation:
-[APIGateway.Client.get_request_validators](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_request_validators)
+parent.get_request_validators(**kwargs)
+```
 
-Arguments mapping described in
-[GetRequestValidatorsRequestRequestTypeDef](./type_defs.md#getrequestvalidatorsrequestrequesttypedef).
+1. See [:material-code-braces: GetRequestValidatorsRequestRequestTypeDef](./type_defs.md#getrequestvalidatorsrequestrequesttypedef) 
 
-Keyword-only arguments:
-
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
-
-Returns [RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef).
-
-<a id="get\_resource"></a>
-
-### get_resource
+### get\_resource
 
 Lists information about a resource.
 
-Type annotations for `boto3.client("apigateway").get_resource` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
 
-Boto3 documentation:
-[APIGateway.Client.get_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resource)
+```python title="Method definition"
+def get_resource(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    embed: Sequence[str] = ...,
+) -> ResourceResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceRequestRequestTypeDef](./type_defs.md#getresourcerequestrequesttypedef).
+1. See [:material-code-braces: ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `embed`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetResourceRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+}
 
-Returns
-[ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
+parent.get_resource(**kwargs)
+```
 
-<a id="get\_resources"></a>
+1. See [:material-code-braces: GetResourceRequestRequestTypeDef](./type_defs.md#getresourcerequestrequesttypedef) 
 
-### get_resources
+### get\_resources
 
-Lists information about a collection of Resource resources.
+Lists information about a collection of  Resource resources.
 
-Type annotations for `boto3.client("apigateway").get_resources` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
 
-Boto3 documentation:
-[APIGateway.Client.get_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_resources)
+```python title="Method definition"
+def get_resources(
+    self,
+    *,
+    restApiId: str,
+    position: str = ...,
+    limit: int = ...,
+    embed: Sequence[str] = ...,
+) -> ResourcesTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourcesRequestRequestTypeDef](./type_defs.md#getresourcesrequestrequesttypedef).
+1. See [:material-code-braces: ResourcesTypeDef](./type_defs.md#resourcestypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
-- `embed`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: GetResourcesRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns [ResourcesTypeDef](./type_defs.md#resourcestypedef).
+parent.get_resources(**kwargs)
+```
 
-<a id="get\_rest\_api"></a>
+1. See [:material-code-braces: GetResourcesRequestRequestTypeDef](./type_defs.md#getresourcesrequestrequesttypedef) 
 
-### get_rest_api
+### get\_rest\_api
 
-Lists the RestApi resource in the collection.
+Lists the  RestApi resource in the collection.
 
-Type annotations for `boto3.client("apigateway").get_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.get_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_api)
+```python title="Method definition"
+def get_rest_api(
+    self,
+    *,
+    restApiId: str,
+) -> RestApiResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRestApiRequestRequestTypeDef](./type_defs.md#getrestapirequestrequesttypedef).
+1. See [:material-code-braces: RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetRestApiRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns
-[RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+parent.get_rest_api(**kwargs)
+```
 
-<a id="get\_rest\_apis"></a>
+1. See [:material-code-braces: GetRestApiRequestRequestTypeDef](./type_defs.md#getrestapirequestrequesttypedef) 
 
-### get_rest_apis
+### get\_rest\_apis
 
-Lists the RestApis resources for your collection.
+Lists the  RestApis resources for your collection.
 
-Type annotations for `boto3.client("apigateway").get_rest_apis` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_rest_apis` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
 
-Boto3 documentation:
-[APIGateway.Client.get_rest_apis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_rest_apis)
+```python title="Method definition"
+def get_rest_apis(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+) -> RestApisTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetRestApisRequestRequestTypeDef](./type_defs.md#getrestapisrequestrequesttypedef).
+1. See [:material-code-braces: RestApisTypeDef](./type_defs.md#restapistypedef) 
 
-Keyword-only arguments:
 
-- `position`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetRestApisRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Returns [RestApisTypeDef](./type_defs.md#restapistypedef).
+parent.get_rest_apis(**kwargs)
+```
 
-<a id="get\_sdk"></a>
+1. See [:material-code-braces: GetRestApisRequestRequestTypeDef](./type_defs.md#getrestapisrequestrequesttypedef) 
 
-### get_sdk
+### get\_sdk
 
-Generates a client SDK for a RestApi and Stage .
+Generates a client SDK for a  RestApi and  Stage .
 
-Type annotations for `boto3.client("apigateway").get_sdk` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
 
-Boto3 documentation:
-[APIGateway.Client.get_sdk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk)
+```python title="Method definition"
+def get_sdk(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+    sdkType: str,
+    parameters: Mapping[str, str] = ...,
+) -> SdkResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSdkRequestRequestTypeDef](./type_defs.md#getsdkrequestrequesttypedef).
+1. See [:material-code-braces: SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `sdkType`: `str` *(required)*
-- `parameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: GetSdkRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+    "sdkType": ...,
+}
 
-Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
+parent.get_sdk(**kwargs)
+```
 
-<a id="get\_sdk\_type"></a>
+1. See [:material-code-braces: GetSdkRequestRequestTypeDef](./type_defs.md#getsdkrequestrequesttypedef) 
 
-### get_sdk_type
+### get\_sdk\_type
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkType).
 
-Type annotations for `boto3.client("apigateway").get_sdk_type` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk_type` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
 
-Boto3 documentation:
-[APIGateway.Client.get_sdk_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_type)
+```python title="Method definition"
+def get_sdk_type(
+    self,
+    *,
+    id: str,
+) -> SdkTypeResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSdkTypeRequestRequestTypeDef](./type_defs.md#getsdktyperequestrequesttypedef).
+1. See [:material-code-braces: SdkTypeResponseMetadataTypeDef](./type_defs.md#sdktyperesponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSdkTypeRequestRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns
-[SdkTypeResponseMetadataTypeDef](./type_defs.md#sdktyperesponsemetadatatypedef).
+parent.get_sdk_type(**kwargs)
+```
 
-<a id="get\_sdk\_types"></a>
+1. See [:material-code-braces: GetSdkTypeRequestRequestTypeDef](./type_defs.md#getsdktyperequestrequesttypedef) 
 
-### get_sdk_types
+### get\_sdk\_types
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/GetSdkTypes).
 
-Type annotations for `boto3.client("apigateway").get_sdk_types` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_sdk_types` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
 
-Boto3 documentation:
-[APIGateway.Client.get_sdk_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_sdk_types)
+```python title="Method definition"
+def get_sdk_types(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+) -> SdkTypesTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSdkTypesRequestRequestTypeDef](./type_defs.md#getsdktypesrequestrequesttypedef).
+1. See [:material-code-braces: SdkTypesTypeDef](./type_defs.md#sdktypestypedef) 
 
-Keyword-only arguments:
 
-- `position`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetSdkTypesRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Returns [SdkTypesTypeDef](./type_defs.md#sdktypestypedef).
+parent.get_sdk_types(**kwargs)
+```
 
-<a id="get\_stage"></a>
+1. See [:material-code-braces: GetSdkTypesRequestRequestTypeDef](./type_defs.md#getsdktypesrequestrequesttypedef) 
 
-### get_stage
+### get\_stage
 
-Gets information about a Stage resource.
+Gets information about a  Stage resource.
 
-Type annotations for `boto3.client("apigateway").get_stage` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
 
-Boto3 documentation:
-[APIGateway.Client.get_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stage)
+```python title="Method definition"
+def get_stage(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+) -> StageResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStageRequestRequestTypeDef](./type_defs.md#getstagerequestrequesttypedef).
+1. See [:material-code-braces: StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetStageRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+}
 
-Returns
-[StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
+parent.get_stage(**kwargs)
+```
 
-<a id="get\_stages"></a>
+1. See [:material-code-braces: GetStageRequestRequestTypeDef](./type_defs.md#getstagerequestrequesttypedef) 
 
-### get_stages
+### get\_stages
 
-Gets information about one or more Stage resources.
+Gets information about one or more  Stage resources.
 
-Type annotations for `boto3.client("apigateway").get_stages` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_stages` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
 
-Boto3 documentation:
-[APIGateway.Client.get_stages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_stages)
+```python title="Method definition"
+def get_stages(
+    self,
+    *,
+    restApiId: str,
+    deploymentId: str = ...,
+) -> StagesTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetStagesRequestRequestTypeDef](./type_defs.md#getstagesrequestrequesttypedef).
+1. See [:material-code-braces: StagesTypeDef](./type_defs.md#stagestypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `deploymentId`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetStagesRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns [StagesTypeDef](./type_defs.md#stagestypedef).
+parent.get_stages(**kwargs)
+```
 
-<a id="get\_tags"></a>
+1. See [:material-code-braces: GetStagesRequestRequestTypeDef](./type_defs.md#getstagesrequestrequesttypedef) 
 
-### get_tags
+### get\_tags
 
-Gets the Tags collection for a given resource.
+Gets the  Tags collection for a given resource.
 
-Type annotations for `boto3.client("apigateway").get_tags` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
 
-Boto3 documentation:
-[APIGateway.Client.get_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_tags)
+```python title="Method definition"
+def get_tags(
+    self,
+    *,
+    resourceArn: str,
+    position: str = ...,
+    limit: int = ...,
+) -> TagsTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef).
+1. See [:material-code-braces: TagsTypeDef](./type_defs.md#tagstypedef) 
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetTagsRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+}
 
-Returns [TagsTypeDef](./type_defs.md#tagstypedef).
+parent.get_tags(**kwargs)
+```
 
-<a id="get\_usage"></a>
+1. See [:material-code-braces: GetTagsRequestRequestTypeDef](./type_defs.md#gettagsrequestrequesttypedef) 
 
-### get_usage
+### get\_usage
 
 Gets the usage data of a usage plan in a specified time interval.
 
-Type annotations for `boto3.client("apigateway").get_usage` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
 
-Boto3 documentation:
-[APIGateway.Client.get_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage)
+```python title="Method definition"
+def get_usage(
+    self,
+    *,
+    usagePlanId: str,
+    startDate: str,
+    endDate: str,
+    keyId: str = ...,
+    position: str = ...,
+    limit: int = ...,
+) -> UsageTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsageRequestRequestTypeDef](./type_defs.md#getusagerequestrequesttypedef).
+1. See [:material-code-braces: UsageTypeDef](./type_defs.md#usagetypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `startDate`: `str` *(required)*
-- `endDate`: `str` *(required)*
-- `keyId`: `str`
-- `position`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetUsageRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+    "startDate": ...,
+    "endDate": ...,
+}
 
-Returns [UsageTypeDef](./type_defs.md#usagetypedef).
+parent.get_usage(**kwargs)
+```
 
-<a id="get\_usage\_plan"></a>
+1. See [:material-code-braces: GetUsageRequestRequestTypeDef](./type_defs.md#getusagerequestrequesttypedef) 
 
-### get_usage_plan
+### get\_usage\_plan
 
 Gets a usage plan of a given plan identifier.
 
-Type annotations for `boto3.client("apigateway").get_usage_plan` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_usage_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
 
-Boto3 documentation:
-[APIGateway.Client.get_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan)
+```python title="Method definition"
+def get_usage_plan(
+    self,
+    *,
+    usagePlanId: str,
+) -> UsagePlanResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsagePlanRequestRequestTypeDef](./type_defs.md#getusageplanrequestrequesttypedef).
+1. See [:material-code-braces: UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUsagePlanRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+}
 
-Returns
-[UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
+parent.get_usage_plan(**kwargs)
+```
 
-<a id="get\_usage\_plan\_key"></a>
+1. See [:material-code-braces: GetUsagePlanRequestRequestTypeDef](./type_defs.md#getusageplanrequestrequesttypedef) 
 
-### get_usage_plan_key
+### get\_usage\_plan\_key
 
 Gets a usage plan key of a given key identifier.
 
-Type annotations for `boto3.client("apigateway").get_usage_plan_key` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_usage_plan_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
 
-Boto3 documentation:
-[APIGateway.Client.get_usage_plan_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_key)
+```python title="Method definition"
+def get_usage_plan_key(
+    self,
+    *,
+    usagePlanId: str,
+    keyId: str,
+) -> UsagePlanKeyResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsagePlanKeyRequestRequestTypeDef](./type_defs.md#getusageplankeyrequestrequesttypedef).
+1. See [:material-code-braces: UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `keyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetUsagePlanKeyRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+    "keyId": ...,
+}
 
-Returns
-[UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef).
+parent.get_usage_plan_key(**kwargs)
+```
 
-<a id="get\_usage\_plan\_keys"></a>
+1. See [:material-code-braces: GetUsagePlanKeyRequestRequestTypeDef](./type_defs.md#getusageplankeyrequestrequesttypedef) 
 
-### get_usage_plan_keys
+### get\_usage\_plan\_keys
 
 Gets all the usage plan keys representing the API keys added to a specified
 usage plan.
 
-Type annotations for `boto3.client("apigateway").get_usage_plan_keys` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_usage_plan_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
 
-Boto3 documentation:
-[APIGateway.Client.get_usage_plan_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plan_keys)
+```python title="Method definition"
+def get_usage_plan_keys(
+    self,
+    *,
+    usagePlanId: str,
+    position: str = ...,
+    limit: int = ...,
+    nameQuery: str = ...,
+) -> UsagePlanKeysTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsagePlanKeysRequestRequestTypeDef](./type_defs.md#getusageplankeysrequestrequesttypedef).
+1. See [:material-code-braces: UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `position`: `str`
-- `limit`: `int`
-- `nameQuery`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUsagePlanKeysRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+}
 
-Returns [UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef).
+parent.get_usage_plan_keys(**kwargs)
+```
 
-<a id="get\_usage\_plans"></a>
+1. See [:material-code-braces: GetUsagePlanKeysRequestRequestTypeDef](./type_defs.md#getusageplankeysrequestrequesttypedef) 
 
-### get_usage_plans
+### get\_usage\_plans
 
 Gets all the usage plans of the caller's account.
 
-Type annotations for `boto3.client("apigateway").get_usage_plans` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_usage_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
 
-Boto3 documentation:
-[APIGateway.Client.get_usage_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_usage_plans)
+```python title="Method definition"
+def get_usage_plans(
+    self,
+    *,
+    position: str = ...,
+    keyId: str = ...,
+    limit: int = ...,
+) -> UsagePlansTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetUsagePlansRequestRequestTypeDef](./type_defs.md#getusageplansrequestrequesttypedef).
+1. See [:material-code-braces: UsagePlansTypeDef](./type_defs.md#usageplanstypedef) 
 
-Keyword-only arguments:
 
-- `position`: `str`
-- `keyId`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetUsagePlansRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Returns [UsagePlansTypeDef](./type_defs.md#usageplanstypedef).
+parent.get_usage_plans(**kwargs)
+```
 
-<a id="get\_vpc\_link"></a>
+1. See [:material-code-braces: GetUsagePlansRequestRequestTypeDef](./type_defs.md#getusageplansrequestrequesttypedef) 
 
-### get_vpc_link
+### get\_vpc\_link
 
 Gets a specified VPC link under the caller's account in a region.
 
-Type annotations for `boto3.client("apigateway").get_vpc_link` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_vpc_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
 
-Boto3 documentation:
-[APIGateway.Client.get_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_link)
+```python title="Method definition"
+def get_vpc_link(
+    self,
+    *,
+    vpcLinkId: str,
+) -> VpcLinkResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVpcLinkRequestRequestTypeDef](./type_defs.md#getvpclinkrequestrequesttypedef).
+1. See [:material-code-braces: VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `vpcLinkId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetVpcLinkRequestRequestTypeDef = {  # (1)
+    "vpcLinkId": ...,
+}
 
-Returns
-[VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
+parent.get_vpc_link(**kwargs)
+```
 
-<a id="get\_vpc\_links"></a>
+1. See [:material-code-braces: GetVpcLinkRequestRequestTypeDef](./type_defs.md#getvpclinkrequestrequesttypedef) 
 
-### get_vpc_links
+### get\_vpc\_links
 
-Gets the VpcLinks collection under the caller's account in a selected region.
+Gets the  VpcLinks collection under the caller's account in a selected region.
 
-Type annotations for `boto3.client("apigateway").get_vpc_links` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_vpc_links` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
 
-Boto3 documentation:
-[APIGateway.Client.get_vpc_links](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_vpc_links)
+```python title="Method definition"
+def get_vpc_links(
+    self,
+    *,
+    position: str = ...,
+    limit: int = ...,
+) -> VpcLinksTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetVpcLinksRequestRequestTypeDef](./type_defs.md#getvpclinksrequestrequesttypedef).
+1. See [:material-code-braces: VpcLinksTypeDef](./type_defs.md#vpclinkstypedef) 
 
-Keyword-only arguments:
 
-- `position`: `str`
-- `limit`: `int`
+```python title="Usage example with kwargs"
+kwargs: GetVpcLinksRequestRequestTypeDef = {  # (1)
+    "position": ...,
+}
 
-Returns [VpcLinksTypeDef](./type_defs.md#vpclinkstypedef).
+parent.get_vpc_links(**kwargs)
+```
 
-<a id="import\_api\_keys"></a>
+1. See [:material-code-braces: GetVpcLinksRequestRequestTypeDef](./type_defs.md#getvpclinksrequestrequesttypedef) 
 
-### import_api_keys
+### import\_api\_keys
 
 Import API keys from an external source, such as a CSV-formatted file.
 
-Type annotations for `boto3.client("apigateway").import_api_keys` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").import_api_keys` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
 
-Boto3 documentation:
-[APIGateway.Client.import_api_keys](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_api_keys)
+```python title="Method definition"
+def import_api_keys(
+    self,
+    *,
+    body: Union[bytes, IO[bytes], StreamingBody],
+    format: ApiKeysFormatType,  # (1)
+    failOnWarnings: bool = ...,
+) -> ApiKeyIdsTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportApiKeysRequestRequestTypeDef](./type_defs.md#importapikeysrequestrequesttypedef).
+1. See [:material-code-brackets: ApiKeysFormatType](./literals.md#apikeysformattype) 
+2. See [:material-code-braces: ApiKeyIdsTypeDef](./type_defs.md#apikeyidstypedef) 
 
-Keyword-only arguments:
 
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `format`: `Literal['csv']` (see
-  [ApiKeysFormatType](./literals.md#apikeysformattype)) *(required)*
-- `failOnWarnings`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ImportApiKeysRequestRequestTypeDef = {  # (1)
+    "body": ...,
+    "format": ...,
+}
 
-Returns [ApiKeyIdsTypeDef](./type_defs.md#apikeyidstypedef).
+parent.import_api_keys(**kwargs)
+```
 
-<a id="import\_documentation\_parts"></a>
+1. See [:material-code-braces: ImportApiKeysRequestRequestTypeDef](./type_defs.md#importapikeysrequestrequesttypedef) 
 
-### import_documentation_parts
+### import\_documentation\_parts
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/ImportDocumentationParts).
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/ImportDocumentationParts).
 
-Type annotations for `boto3.client("apigateway").import_documentation_parts`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").import_documentation_parts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
 
-Boto3 documentation:
-[APIGateway.Client.import_documentation_parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_documentation_parts)
+```python title="Method definition"
+def import_documentation_parts(
+    self,
+    *,
+    restApiId: str,
+    body: Union[bytes, IO[bytes], StreamingBody],
+    mode: PutModeType = ...,  # (1)
+    failOnWarnings: bool = ...,
+) -> DocumentationPartIdsTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportDocumentationPartsRequestRequestTypeDef](./type_defs.md#importdocumentationpartsrequestrequesttypedef).
+1. See [:material-code-brackets: PutModeType](./literals.md#putmodetype) 
+2. See [:material-code-braces: DocumentationPartIdsTypeDef](./type_defs.md#documentationpartidstypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `mode`: [PutModeType](./literals.md#putmodetype)
-- `failOnWarnings`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ImportDocumentationPartsRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "body": ...,
+}
 
-Returns
-[DocumentationPartIdsTypeDef](./type_defs.md#documentationpartidstypedef).
+parent.import_documentation_parts(**kwargs)
+```
 
-<a id="import\_rest\_api"></a>
+1. See [:material-code-braces: ImportDocumentationPartsRequestRequestTypeDef](./type_defs.md#importdocumentationpartsrequestrequesttypedef) 
 
-### import_rest_api
+### import\_rest\_api
 
 A feature of the API Gateway control service for creating a new API from an
 external API definition file.
 
-Type annotations for `boto3.client("apigateway").import_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").import_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.import_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.import_rest_api)
+```python title="Method definition"
+def import_rest_api(
+    self,
+    *,
+    body: Union[bytes, IO[bytes], StreamingBody],
+    failOnWarnings: bool = ...,
+    parameters: Mapping[str, str] = ...,
+) -> RestApiResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportRestApiRequestRequestTypeDef](./type_defs.md#importrestapirequestrequesttypedef).
+1. See [:material-code-braces: RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `failOnWarnings`: `bool`
-- `parameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: ImportRestApiRequestRequestTypeDef = {  # (1)
+    "body": ...,
+}
 
-Returns
-[RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+parent.import_rest_api(**kwargs)
+```
 
-<a id="put\_gateway\_response"></a>
+1. See [:material-code-braces: ImportRestApiRequestRequestTypeDef](./type_defs.md#importrestapirequestrequesttypedef) 
 
-### put_gateway_response
+### put\_gateway\_response
 
-Creates a customization of a GatewayResponse of a specified response type and
-status code on the given RestApi .
+Creates a customization of a  GatewayResponse of a specified response type and
+status code on the given  RestApi .
 
-Type annotations for `boto3.client("apigateway").put_gateway_response` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_gateway_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
 
-Boto3 documentation:
-[APIGateway.Client.put_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_gateway_response)
+```python title="Method definition"
+def put_gateway_response(
+    self,
+    *,
+    restApiId: str,
+    responseType: GatewayResponseTypeType,  # (1)
+    statusCode: str = ...,
+    responseParameters: Mapping[str, str] = ...,
+    responseTemplates: Mapping[str, str] = ...,
+) -> GatewayResponseResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutGatewayResponseRequestRequestTypeDef](./type_defs.md#putgatewayresponserequestrequesttypedef).
+1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
+2. See [:material-code-braces: GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `responseType`:
-  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
-- `statusCode`: `str`
-- `responseParameters`: `Mapping`\[`str`, `str`\]
-- `responseTemplates`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PutGatewayResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "responseType": ...,
+}
 
-Returns
-[GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
+parent.put_gateway_response(**kwargs)
+```
 
-<a id="put\_integration"></a>
+1. See [:material-code-braces: PutGatewayResponseRequestRequestTypeDef](./type_defs.md#putgatewayresponserequestrequesttypedef) 
 
-### put_integration
+### put\_integration
 
 Sets up a method's integration.
 
-Type annotations for `boto3.client("apigateway").put_integration` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
 
-Boto3 documentation:
-[APIGateway.Client.put_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration)
+```python title="Method definition"
+def put_integration(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    type: IntegrationTypeType,  # (1)
+    integrationHttpMethod: str = ...,
+    uri: str = ...,
+    connectionType: ConnectionTypeType = ...,  # (2)
+    connectionId: str = ...,
+    credentials: str = ...,
+    requestParameters: Mapping[str, str] = ...,
+    requestTemplates: Mapping[str, str] = ...,
+    passthroughBehavior: str = ...,
+    cacheNamespace: str = ...,
+    cacheKeyParameters: Sequence[str] = ...,
+    contentHandling: ContentHandlingStrategyType = ...,  # (3)
+    timeoutInMillis: int = ...,
+    tlsConfig: TlsConfigTypeDef = ...,  # (4)
+) -> IntegrationResponseMetadataTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[PutIntegrationRequestRequestTypeDef](./type_defs.md#putintegrationrequestrequesttypedef).
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: ConnectionTypeType](./literals.md#connectiontypetype) 
+3. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+4. See [:material-code-braces: TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef) 
+5. See [:material-code-braces: IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `type`: [IntegrationTypeType](./literals.md#integrationtypetype) *(required)*
-- `integrationHttpMethod`: `str`
-- `uri`: `str`
-- `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
-- `connectionId`: `str`
-- `credentials`: `str`
-- `requestParameters`: `Mapping`\[`str`, `str`\]
-- `requestTemplates`: `Mapping`\[`str`, `str`\]
-- `passthroughBehavior`: `str`
-- `cacheNamespace`: `str`
-- `cacheKeyParameters`: `Sequence`\[`str`\]
-- `contentHandling`:
-  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
-- `timeoutInMillis`: `int`
-- `tlsConfig`: [TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: PutIntegrationRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "type": ...,
+}
 
-Returns
-[IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
+parent.put_integration(**kwargs)
+```
 
-<a id="put\_integration\_response"></a>
+1. See [:material-code-braces: PutIntegrationRequestRequestTypeDef](./type_defs.md#putintegrationrequestrequesttypedef) 
 
-### put_integration_response
+### put\_integration\_response
 
 Represents a put integration.
 
-Type annotations for `boto3.client("apigateway").put_integration_response`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_integration_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
 
-Boto3 documentation:
-[APIGateway.Client.put_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_integration_response)
+```python title="Method definition"
+def put_integration_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+    selectionPattern: str = ...,
+    responseParameters: Mapping[str, str] = ...,
+    responseTemplates: Mapping[str, str] = ...,
+    contentHandling: ContentHandlingStrategyType = ...,  # (1)
+) -> IntegrationResponseResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutIntegrationResponseRequestRequestTypeDef](./type_defs.md#putintegrationresponserequestrequesttypedef).
+1. See [:material-code-brackets: ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype) 
+2. See [:material-code-braces: IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
-- `selectionPattern`: `str`
-- `responseParameters`: `Mapping`\[`str`, `str`\]
-- `responseTemplates`: `Mapping`\[`str`, `str`\]
-- `contentHandling`:
-  [ContentHandlingStrategyType](./literals.md#contenthandlingstrategytype)
+```python title="Usage example with kwargs"
+kwargs: PutIntegrationResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-Returns
-[IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
+parent.put_integration_response(**kwargs)
+```
 
-<a id="put\_method"></a>
+1. See [:material-code-braces: PutIntegrationResponseRequestRequestTypeDef](./type_defs.md#putintegrationresponserequestrequesttypedef) 
 
-### put_method
+### put\_method
 
-Add a method to an existing Resource resource.
+Add a method to an existing  Resource resource.
 
-Type annotations for `boto3.client("apigateway").put_method` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
 
-Boto3 documentation:
-[APIGateway.Client.put_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method)
+```python title="Method definition"
+def put_method(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    authorizationType: str,
+    authorizerId: str = ...,
+    apiKeyRequired: bool = ...,
+    operationName: str = ...,
+    requestParameters: Mapping[str, bool] = ...,
+    requestModels: Mapping[str, str] = ...,
+    requestValidatorId: str = ...,
+    authorizationScopes: Sequence[str] = ...,
+) -> MethodResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutMethodRequestRequestTypeDef](./type_defs.md#putmethodrequestrequesttypedef).
+1. See [:material-code-braces: MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `authorizationType`: `str` *(required)*
-- `authorizerId`: `str`
-- `apiKeyRequired`: `bool`
-- `operationName`: `str`
-- `requestParameters`: `Mapping`\[`str`, `bool`\]
-- `requestModels`: `Mapping`\[`str`, `str`\]
-- `requestValidatorId`: `str`
-- `authorizationScopes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: PutMethodRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "authorizationType": ...,
+}
 
-Returns
-[MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
+parent.put_method(**kwargs)
+```
 
-<a id="put\_method\_response"></a>
+1. See [:material-code-braces: PutMethodRequestRequestTypeDef](./type_defs.md#putmethodrequestrequesttypedef) 
 
-### put_method_response
+### put\_method\_response
 
-Adds a MethodResponse to an existing Method resource.
+Adds a  MethodResponse to an existing  Method resource.
 
-Type annotations for `boto3.client("apigateway").put_method_response` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_method_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
 
-Boto3 documentation:
-[APIGateway.Client.put_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_method_response)
+```python title="Method definition"
+def put_method_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+    responseParameters: Mapping[str, bool] = ...,
+    responseModels: Mapping[str, str] = ...,
+) -> MethodResponseResponseMetadataTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[PutMethodResponseRequestRequestTypeDef](./type_defs.md#putmethodresponserequestrequesttypedef).
+1. See [:material-code-braces: MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
-- `responseParameters`: `Mapping`\[`str`, `bool`\]
-- `responseModels`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PutMethodResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-Returns
-[MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
+parent.put_method_response(**kwargs)
+```
 
-<a id="put\_rest\_api"></a>
+1. See [:material-code-braces: PutMethodResponseRequestRequestTypeDef](./type_defs.md#putmethodresponserequestrequesttypedef) 
 
-### put_rest_api
+### put\_rest\_api
 
 A feature of the API Gateway control service for updating an existing API with
 an input of external API definitions.
 
-Type annotations for `boto3.client("apigateway").put_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").put_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.put_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.put_rest_api)
+```python title="Method definition"
+def put_rest_api(
+    self,
+    *,
+    restApiId: str,
+    body: Union[bytes, IO[bytes], StreamingBody],
+    mode: PutModeType = ...,  # (1)
+    failOnWarnings: bool = ...,
+    parameters: Mapping[str, str] = ...,
+) -> RestApiResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[PutRestApiRequestRequestTypeDef](./type_defs.md#putrestapirequestrequesttypedef).
+1. See [:material-code-brackets: PutModeType](./literals.md#putmodetype) 
+2. See [:material-code-braces: RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\] *(required)*
-- `mode`: [PutModeType](./literals.md#putmodetype)
-- `failOnWarnings`: `bool`
-- `parameters`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: PutRestApiRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "body": ...,
+}
 
-Returns
-[RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+parent.put_rest_api(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutRestApiRequestRequestTypeDef](./type_defs.md#putrestapirequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds or updates a tag on a given resource.
 
-Type annotations for `boto3.client("apigateway").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource)
 
-Boto3 documentation:
-[APIGateway.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tags: Mapping[str, str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tags": ...,
+}
 
-<a id="test\_invoke\_authorizer"></a>
+parent.tag_resource(**kwargs)
+```
 
-### test_invoke_authorizer
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-Simulate the execution of an Authorizer in your RestApi with headers,
+### test\_invoke\_authorizer
+
+Simulate the execution of an  Authorizer in your  RestApi with headers,
 parameters, and an incoming request body.
 
-Type annotations for `boto3.client("apigateway").test_invoke_authorizer`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").test_invoke_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
 
-Boto3 documentation:
-[APIGateway.Client.test_invoke_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_authorizer)
+```python title="Method definition"
+def test_invoke_authorizer(
+    self,
+    *,
+    restApiId: str,
+    authorizerId: str,
+    headers: Mapping[str, str] = ...,
+    multiValueHeaders: Mapping[str, Sequence[str]] = ...,
+    pathWithQueryString: str = ...,
+    body: str = ...,
+    stageVariables: Mapping[str, str] = ...,
+    additionalContext: Mapping[str, str] = ...,
+) -> TestInvokeAuthorizerResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestInvokeAuthorizerRequestRequestTypeDef](./type_defs.md#testinvokeauthorizerrequestrequesttypedef).
+1. See [:material-code-braces: TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `authorizerId`: `str` *(required)*
-- `headers`: `Mapping`\[`str`, `str`\]
-- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `pathWithQueryString`: `str`
-- `body`: `str`
-- `stageVariables`: `Mapping`\[`str`, `str`\]
-- `additionalContext`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: TestInvokeAuthorizerRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "authorizerId": ...,
+}
 
-Returns
-[TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
+parent.test_invoke_authorizer(**kwargs)
+```
 
-<a id="test\_invoke\_method"></a>
+1. See [:material-code-braces: TestInvokeAuthorizerRequestRequestTypeDef](./type_defs.md#testinvokeauthorizerrequestrequesttypedef) 
 
-### test_invoke_method
+### test\_invoke\_method
 
-Simulate the execution of a Method in your RestApi with headers, parameters,
+Simulate the execution of a  Method in your  RestApi with headers, parameters,
 and an incoming request body.
 
-Type annotations for `boto3.client("apigateway").test_invoke_method` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").test_invoke_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
 
-Boto3 documentation:
-[APIGateway.Client.test_invoke_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.test_invoke_method)
+```python title="Method definition"
+def test_invoke_method(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    pathWithQueryString: str = ...,
+    body: str = ...,
+    headers: Mapping[str, str] = ...,
+    multiValueHeaders: Mapping[str, Sequence[str]] = ...,
+    clientCertificateId: str = ...,
+    stageVariables: Mapping[str, str] = ...,
+) -> TestInvokeMethodResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[TestInvokeMethodRequestRequestTypeDef](./type_defs.md#testinvokemethodrequestrequesttypedef).
+1. See [:material-code-braces: TestInvokeMethodResponseTypeDef](./type_defs.md#testinvokemethodresponsetypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `pathWithQueryString`: `str`
-- `body`: `str`
-- `headers`: `Mapping`\[`str`, `str`\]
-- `multiValueHeaders`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
-- `clientCertificateId`: `str`
-- `stageVariables`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: TestInvokeMethodRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-Returns
-[TestInvokeMethodResponseTypeDef](./type_defs.md#testinvokemethodresponsetypedef).
+parent.test_invoke_method(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TestInvokeMethodRequestRequestTypeDef](./type_defs.md#testinvokemethodrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes a tag from a given resource.
 
-Type annotations for `boto3.client("apigateway").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource)
 
-Boto3 documentation:
-[APIGateway.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    resourceArn: str,
+    tagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "resourceArn": ...,
+    "tagKeys": ...,
+}
 
-<a id="update\_account"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_account
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-Changes information about the current Account resource.
+### update\_account
 
-Type annotations for `boto3.client("apigateway").update_account` method.
+Changes information about the current  Account resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_account)
 
-Arguments mapping described in
-[UpdateAccountRequestRequestTypeDef](./type_defs.md#updateaccountrequestrequesttypedef).
+```python title="Method definition"
+def update_account(
+    self,
+    *,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> AccountTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: AccountTypeDef](./type_defs.md#accounttypedef) 
 
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateAccountRequestRequestTypeDef = {  # (1)
+    "patchOperations": ...,
+}
 
-<a id="update\_api\_key"></a>
+parent.update_account(**kwargs)
+```
 
-### update_api_key
+1. See [:material-code-braces: UpdateAccountRequestRequestTypeDef](./type_defs.md#updateaccountrequestrequesttypedef) 
 
-Changes information about an ApiKey resource.
+### update\_api\_key
 
-Type annotations for `boto3.client("apigateway").update_api_key` method.
+Changes information about an  ApiKey resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_api_key](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_api_key` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_api_key)
 
-Arguments mapping described in
-[UpdateApiKeyRequestRequestTypeDef](./type_defs.md#updateapikeyrequestrequesttypedef).
+```python title="Method definition"
+def update_api_key(
+    self,
+    *,
+    apiKey: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> ApiKeyResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef) 
 
-- `apiKey`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateApiKeyRequestRequestTypeDef = {  # (1)
+    "apiKey": ...,
+}
 
-<a id="update\_authorizer"></a>
+parent.update_api_key(**kwargs)
+```
 
-### update_authorizer
+1. See [:material-code-braces: UpdateApiKeyRequestRequestTypeDef](./type_defs.md#updateapikeyrequestrequesttypedef) 
 
-Updates an existing Authorizer resource.
+### update\_authorizer
 
-Type annotations for `boto3.client("apigateway").update_authorizer` method.
+Updates an existing  Authorizer resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_authorizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_authorizer` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_authorizer)
 
-Arguments mapping described in
-[UpdateAuthorizerRequestRequestTypeDef](./type_defs.md#updateauthorizerrequestrequesttypedef).
+```python title="Method definition"
+def update_authorizer(
+    self,
+    *,
+    restApiId: str,
+    authorizerId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> AuthorizerResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef) 
 
-- `restApiId`: `str` *(required)*
-- `authorizerId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateAuthorizerRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "authorizerId": ...,
+}
 
-<a id="update\_base\_path\_mapping"></a>
+parent.update_authorizer(**kwargs)
+```
 
-### update_base_path_mapping
+1. See [:material-code-braces: UpdateAuthorizerRequestRequestTypeDef](./type_defs.md#updateauthorizerrequestrequesttypedef) 
 
-Changes information about the BasePathMapping resource.
+### update\_base\_path\_mapping
 
-Type annotations for `boto3.client("apigateway").update_base_path_mapping`
-method.
+Changes information about the  BasePathMapping resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_base_path_mapping](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_base_path_mapping` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_base_path_mapping)
 
-Arguments mapping described in
-[UpdateBasePathMappingRequestRequestTypeDef](./type_defs.md#updatebasepathmappingrequestrequesttypedef).
+```python title="Method definition"
+def update_base_path_mapping(
+    self,
+    *,
+    domainName: str,
+    basePath: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> BasePathMappingResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef) 
 
-- `domainName`: `str` *(required)*
-- `basePath`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateBasePathMappingRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+    "basePath": ...,
+}
 
-<a id="update\_client\_certificate"></a>
+parent.update_base_path_mapping(**kwargs)
+```
 
-### update_client_certificate
+1. See [:material-code-braces: UpdateBasePathMappingRequestRequestTypeDef](./type_defs.md#updatebasepathmappingrequestrequesttypedef) 
 
-Changes information about an ClientCertificate resource.
+### update\_client\_certificate
 
-Type annotations for `boto3.client("apigateway").update_client_certificate`
-method.
+Changes information about an  ClientCertificate resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_client_certificate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_client_certificate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_client_certificate)
 
-Arguments mapping described in
-[UpdateClientCertificateRequestRequestTypeDef](./type_defs.md#updateclientcertificaterequestrequesttypedef).
+```python title="Method definition"
+def update_client_certificate(
+    self,
+    *,
+    clientCertificateId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> ClientCertificateResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef) 
 
-- `clientCertificateId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateClientCertificateRequestRequestTypeDef = {  # (1)
+    "clientCertificateId": ...,
+}
 
-<a id="update\_deployment"></a>
+parent.update_client_certificate(**kwargs)
+```
 
-### update_deployment
+1. See [:material-code-braces: UpdateClientCertificateRequestRequestTypeDef](./type_defs.md#updateclientcertificaterequestrequesttypedef) 
 
-Changes information about a Deployment resource.
+### update\_deployment
 
-Type annotations for `boto3.client("apigateway").update_deployment` method.
+Changes information about a  Deployment resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_deployment)
 
-Arguments mapping described in
-[UpdateDeploymentRequestRequestTypeDef](./type_defs.md#updatedeploymentrequestrequesttypedef).
+```python title="Method definition"
+def update_deployment(
+    self,
+    *,
+    restApiId: str,
+    deploymentId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> DeploymentResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef) 
 
-- `restApiId`: `str` *(required)*
-- `deploymentId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateDeploymentRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "deploymentId": ...,
+}
 
-<a id="update\_documentation\_part"></a>
+parent.update_deployment(**kwargs)
+```
 
-### update_documentation_part
+1. See [:material-code-braces: UpdateDeploymentRequestRequestTypeDef](./type_defs.md#updatedeploymentrequestrequesttypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationPart).
+### update\_documentation\_part
 
-Type annotations for `boto3.client("apigateway").update_documentation_part`
-method.
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationPart).
 
-Boto3 documentation:
-[APIGateway.Client.update_documentation_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_documentation_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_part)
 
-Arguments mapping described in
-[UpdateDocumentationPartRequestRequestTypeDef](./type_defs.md#updatedocumentationpartrequestrequesttypedef).
+```python title="Method definition"
+def update_documentation_part(
+    self,
+    *,
+    restApiId: str,
+    documentationPartId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> DocumentationPartResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef) 
 
-- `restApiId`: `str` *(required)*
-- `documentationPartId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateDocumentationPartRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationPartId": ...,
+}
 
-<a id="update\_documentation\_version"></a>
+parent.update_documentation_part(**kwargs)
+```
 
-### update_documentation_version
+1. See [:material-code-braces: UpdateDocumentationPartRequestRequestTypeDef](./type_defs.md#updatedocumentationpartrequestrequesttypedef) 
 
-See also:
-[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationVersion).
+### update\_documentation\_version
 
-Type annotations for `boto3.client("apigateway").update_documentation_version`
-method.
+See also: [AWS API
+Documentation](https://docs.aws.amazon.com/goto/WebAPI/apigateway-2015-07-09/UpdateDocumentationVersion).
 
-Boto3 documentation:
-[APIGateway.Client.update_documentation_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_documentation_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_documentation_version)
 
-Arguments mapping described in
-[UpdateDocumentationVersionRequestRequestTypeDef](./type_defs.md#updatedocumentationversionrequestrequesttypedef).
+```python title="Method definition"
+def update_documentation_version(
+    self,
+    *,
+    restApiId: str,
+    documentationVersion: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> DocumentationVersionResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef) 
 
-- `restApiId`: `str` *(required)*
-- `documentationVersion`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateDocumentationVersionRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "documentationVersion": ...,
+}
 
-<a id="update\_domain\_name"></a>
+parent.update_documentation_version(**kwargs)
+```
 
-### update_domain_name
+1. See [:material-code-braces: UpdateDocumentationVersionRequestRequestTypeDef](./type_defs.md#updatedocumentationversionrequestrequesttypedef) 
 
-Changes information about the DomainName resource.
+### update\_domain\_name
 
-Type annotations for `boto3.client("apigateway").update_domain_name` method.
+Changes information about the  DomainName resource.
 
-Boto3 documentation:
-[APIGateway.Client.update_domain_name](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_domain_name` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_domain_name)
 
-Arguments mapping described in
-[UpdateDomainNameRequestRequestTypeDef](./type_defs.md#updatedomainnamerequestrequesttypedef).
+```python title="Method definition"
+def update_domain_name(
+    self,
+    *,
+    domainName: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> DomainNameResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef) 
 
-- `domainName`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateDomainNameRequestRequestTypeDef = {  # (1)
+    "domainName": ...,
+}
 
-<a id="update\_gateway\_response"></a>
+parent.update_domain_name(**kwargs)
+```
 
-### update_gateway_response
+1. See [:material-code-braces: UpdateDomainNameRequestRequestTypeDef](./type_defs.md#updatedomainnamerequestrequesttypedef) 
 
-Updates a GatewayResponse of a specified response type on the given RestApi .
+### update\_gateway\_response
 
-Type annotations for `boto3.client("apigateway").update_gateway_response`
-method.
+Updates a  GatewayResponse of a specified response type on the given  RestApi .
 
-Boto3 documentation:
-[APIGateway.Client.update_gateway_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
+Type annotations and code completion for `#!python boto3.client("apigateway").update_gateway_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_gateway_response)
 
-Arguments mapping described in
-[UpdateGatewayResponseRequestRequestTypeDef](./type_defs.md#updategatewayresponserequestrequesttypedef).
+```python title="Method definition"
+def update_gateway_response(
+    self,
+    *,
+    restApiId: str,
+    responseType: GatewayResponseTypeType,  # (1)
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (2)
+) -> GatewayResponseResponseMetadataTypeDef:  # (3)
+    ...
+```
 
-Keyword-only arguments:
+1. See [:material-code-brackets: GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) 
+2. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+3. See [:material-code-braces: GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef) 
 
-- `restApiId`: `str` *(required)*
-- `responseType`:
-  [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
-Returns
-[GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
+```python title="Usage example with kwargs"
+kwargs: UpdateGatewayResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "responseType": ...,
+}
 
-<a id="update\_integration"></a>
+parent.update_gateway_response(**kwargs)
+```
 
-### update_integration
+1. See [:material-code-braces: UpdateGatewayResponseRequestRequestTypeDef](./type_defs.md#updategatewayresponserequestrequesttypedef) 
+
+### update\_integration
 
 Represents an update integration.
 
-Type annotations for `boto3.client("apigateway").update_integration` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_integration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
 
-Boto3 documentation:
-[APIGateway.Client.update_integration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration)
+```python title="Method definition"
+def update_integration(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> IntegrationResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIntegrationRequestRequestTypeDef](./type_defs.md#updateintegrationrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateIntegrationRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-Returns
-[IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
+parent.update_integration(**kwargs)
+```
 
-<a id="update\_integration\_response"></a>
+1. See [:material-code-braces: UpdateIntegrationRequestRequestTypeDef](./type_defs.md#updateintegrationrequestrequesttypedef) 
 
-### update_integration_response
+### update\_integration\_response
 
 Represents an update integration response.
 
-Type annotations for `boto3.client("apigateway").update_integration_response`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_integration_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
 
-Boto3 documentation:
-[APIGateway.Client.update_integration_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_integration_response)
+```python title="Method definition"
+def update_integration_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> IntegrationResponseResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateIntegrationResponseRequestRequestTypeDef](./type_defs.md#updateintegrationresponserequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateIntegrationResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-Returns
-[IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
+parent.update_integration_response(**kwargs)
+```
 
-<a id="update\_method"></a>
+1. See [:material-code-braces: UpdateIntegrationResponseRequestRequestTypeDef](./type_defs.md#updateintegrationresponserequestrequesttypedef) 
 
-### update_method
+### update\_method
 
-Updates an existing Method resource.
+Updates an existing  Method resource.
 
-Type annotations for `boto3.client("apigateway").update_method` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_method` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
 
-Boto3 documentation:
-[APIGateway.Client.update_method](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method)
+```python title="Method definition"
+def update_method(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> MethodResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMethodRequestRequestTypeDef](./type_defs.md#updatemethodrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateMethodRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+}
 
-Returns
-[MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
+parent.update_method(**kwargs)
+```
 
-<a id="update\_method\_response"></a>
+1. See [:material-code-braces: UpdateMethodRequestRequestTypeDef](./type_defs.md#updatemethodrequestrequesttypedef) 
 
-### update_method_response
+### update\_method\_response
 
-Updates an existing MethodResponse resource.
+Updates an existing  MethodResponse resource.
 
-Type annotations for `boto3.client("apigateway").update_method_response`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_method_response` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
 
-Boto3 documentation:
-[APIGateway.Client.update_method_response](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_method_response)
+```python title="Method definition"
+def update_method_response(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    httpMethod: str,
+    statusCode: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> MethodResponseResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMethodResponseRequestRequestTypeDef](./type_defs.md#updatemethodresponserequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `httpMethod`: `str` *(required)*
-- `statusCode`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateMethodResponseRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+    "httpMethod": ...,
+    "statusCode": ...,
+}
 
-Returns
-[MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
+parent.update_method_response(**kwargs)
+```
 
-<a id="update\_model"></a>
+1. See [:material-code-braces: UpdateMethodResponseRequestRequestTypeDef](./type_defs.md#updatemethodresponserequestrequesttypedef) 
 
-### update_model
+### update\_model
 
 Changes information about a model.
 
-Type annotations for `boto3.client("apigateway").update_model` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_model` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
 
-Boto3 documentation:
-[APIGateway.Client.update_model](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_model)
+```python title="Method definition"
+def update_model(
+    self,
+    *,
+    restApiId: str,
+    modelName: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> ModelResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateModelRequestRequestTypeDef](./type_defs.md#updatemodelrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `modelName`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateModelRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "modelName": ...,
+}
 
-Returns
-[ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
+parent.update_model(**kwargs)
+```
 
-<a id="update\_request\_validator"></a>
+1. See [:material-code-braces: UpdateModelRequestRequestTypeDef](./type_defs.md#updatemodelrequestrequesttypedef) 
 
-### update_request_validator
+### update\_request\_validator
 
-Updates a RequestValidator of a given RestApi .
+Updates a  RequestValidator of a given  RestApi .
 
-Type annotations for `boto3.client("apigateway").update_request_validator`
-method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_request_validator` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
 
-Boto3 documentation:
-[APIGateway.Client.update_request_validator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_request_validator)
+```python title="Method definition"
+def update_request_validator(
+    self,
+    *,
+    restApiId: str,
+    requestValidatorId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> RequestValidatorResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRequestValidatorRequestRequestTypeDef](./type_defs.md#updaterequestvalidatorrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `requestValidatorId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRequestValidatorRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "requestValidatorId": ...,
+}
 
-Returns
-[RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
+parent.update_request_validator(**kwargs)
+```
 
-<a id="update\_resource"></a>
+1. See [:material-code-braces: UpdateRequestValidatorRequestRequestTypeDef](./type_defs.md#updaterequestvalidatorrequestrequesttypedef) 
 
-### update_resource
+### update\_resource
 
-Changes information about a Resource resource.
+Changes information about a  Resource resource.
 
-Type annotations for `boto3.client("apigateway").update_resource` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
 
-Boto3 documentation:
-[APIGateway.Client.update_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_resource)
+```python title="Method definition"
+def update_resource(
+    self,
+    *,
+    restApiId: str,
+    resourceId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> ResourceResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `resourceId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "resourceId": ...,
+}
 
-Returns
-[ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
+parent.update_resource(**kwargs)
+```
 
-<a id="update\_rest\_api"></a>
+1. See [:material-code-braces: UpdateResourceRequestRequestTypeDef](./type_defs.md#updateresourcerequestrequesttypedef) 
 
-### update_rest_api
+### update\_rest\_api
 
 Changes information about the specified API.
 
-Type annotations for `boto3.client("apigateway").update_rest_api` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_rest_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
 
-Boto3 documentation:
-[APIGateway.Client.update_rest_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_rest_api)
+```python title="Method definition"
+def update_rest_api(
+    self,
+    *,
+    restApiId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> RestApiResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateRestApiRequestRequestTypeDef](./type_defs.md#updaterestapirequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateRestApiRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+}
 
-Returns
-[RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+parent.update_rest_api(**kwargs)
+```
 
-<a id="update\_stage"></a>
+1. See [:material-code-braces: UpdateRestApiRequestRequestTypeDef](./type_defs.md#updaterestapirequestrequesttypedef) 
 
-### update_stage
+### update\_stage
 
-Changes information about a Stage resource.
+Changes information about a  Stage resource.
 
-Type annotations for `boto3.client("apigateway").update_stage` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_stage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
 
-Boto3 documentation:
-[APIGateway.Client.update_stage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_stage)
+```python title="Method definition"
+def update_stage(
+    self,
+    *,
+    restApiId: str,
+    stageName: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> StageResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateStageRequestRequestTypeDef](./type_defs.md#updatestagerequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `restApiId`: `str` *(required)*
-- `stageName`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateStageRequestRequestTypeDef = {  # (1)
+    "restApiId": ...,
+    "stageName": ...,
+}
 
-Returns
-[StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
+parent.update_stage(**kwargs)
+```
 
-<a id="update\_usage"></a>
+1. See [:material-code-braces: UpdateStageRequestRequestTypeDef](./type_defs.md#updatestagerequestrequesttypedef) 
 
-### update_usage
+### update\_usage
 
 Grants a temporary extension to the remaining quota of a usage plan associated
 with a specified API key.
 
-Type annotations for `boto3.client("apigateway").update_usage` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_usage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
 
-Boto3 documentation:
-[APIGateway.Client.update_usage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage)
+```python title="Method definition"
+def update_usage(
+    self,
+    *,
+    usagePlanId: str,
+    keyId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> UsageTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUsageRequestRequestTypeDef](./type_defs.md#updateusagerequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: UsageTypeDef](./type_defs.md#usagetypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `keyId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateUsageRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+    "keyId": ...,
+}
 
-Returns [UsageTypeDef](./type_defs.md#usagetypedef).
+parent.update_usage(**kwargs)
+```
 
-<a id="update\_usage\_plan"></a>
+1. See [:material-code-braces: UpdateUsageRequestRequestTypeDef](./type_defs.md#updateusagerequestrequesttypedef) 
 
-### update_usage_plan
+### update\_usage\_plan
 
 Updates a usage plan of a given plan Id.
 
-Type annotations for `boto3.client("apigateway").update_usage_plan` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_usage_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
 
-Boto3 documentation:
-[APIGateway.Client.update_usage_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_usage_plan)
+```python title="Method definition"
+def update_usage_plan(
+    self,
+    *,
+    usagePlanId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> UsagePlanResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateUsagePlanRequestRequestTypeDef](./type_defs.md#updateusageplanrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `usagePlanId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateUsagePlanRequestRequestTypeDef = {  # (1)
+    "usagePlanId": ...,
+}
 
-Returns
-[UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
+parent.update_usage_plan(**kwargs)
+```
 
-<a id="update\_vpc\_link"></a>
+1. See [:material-code-braces: UpdateUsagePlanRequestRequestTypeDef](./type_defs.md#updateusageplanrequestrequesttypedef) 
 
-### update_vpc_link
+### update\_vpc\_link
 
-Updates an existing VpcLink of a specified identifier.
+Updates an existing  VpcLink of a specified identifier.
 
-Type annotations for `boto3.client("apigateway").update_vpc_link` method.
+Type annotations and code completion for `#!python boto3.client("apigateway").update_vpc_link` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
 
-Boto3 documentation:
-[APIGateway.Client.update_vpc_link](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.update_vpc_link)
+```python title="Method definition"
+def update_vpc_link(
+    self,
+    *,
+    vpcLinkId: str,
+    patchOperations: Sequence[PatchOperationTypeDef] = ...,  # (1)
+) -> VpcLinkResponseMetadataTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateVpcLinkRequestRequestTypeDef](./type_defs.md#updatevpclinkrequestrequesttypedef).
+1. See [:material-code-braces: PatchOperationTypeDef](./type_defs.md#patchoperationtypedef) 
+2. See [:material-code-braces: VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef) 
 
-Keyword-only arguments:
 
-- `vpcLinkId`: `str` *(required)*
-- `patchOperations`:
-  `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateVpcLinkRequestRequestTypeDef = {  # (1)
+    "vpcLinkId": ...,
+}
 
-Returns
-[VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
+parent.update_vpc_link(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateVpcLinkRequestRequestTypeDef](./type_defs.md#updatevpclinkrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("apigateway").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("apigateway").get_paginator` method with overloads.
 
-- `client.get_paginator("get_api_keys")` ->
-  [GetApiKeysPaginator](./paginators.md#getapikeyspaginator)
-- `client.get_paginator("get_authorizers")` ->
-  [GetAuthorizersPaginator](./paginators.md#getauthorizerspaginator)
-- `client.get_paginator("get_base_path_mappings")` ->
-  [GetBasePathMappingsPaginator](./paginators.md#getbasepathmappingspaginator)
-- `client.get_paginator("get_client_certificates")` ->
-  [GetClientCertificatesPaginator](./paginators.md#getclientcertificatespaginator)
-- `client.get_paginator("get_deployments")` ->
-  [GetDeploymentsPaginator](./paginators.md#getdeploymentspaginator)
-- `client.get_paginator("get_documentation_parts")` ->
-  [GetDocumentationPartsPaginator](./paginators.md#getdocumentationpartspaginator)
-- `client.get_paginator("get_documentation_versions")` ->
-  [GetDocumentationVersionsPaginator](./paginators.md#getdocumentationversionspaginator)
-- `client.get_paginator("get_domain_names")` ->
-  [GetDomainNamesPaginator](./paginators.md#getdomainnamespaginator)
-- `client.get_paginator("get_gateway_responses")` ->
-  [GetGatewayResponsesPaginator](./paginators.md#getgatewayresponsespaginator)
-- `client.get_paginator("get_models")` ->
-  [GetModelsPaginator](./paginators.md#getmodelspaginator)
-- `client.get_paginator("get_request_validators")` ->
-  [GetRequestValidatorsPaginator](./paginators.md#getrequestvalidatorspaginator)
-- `client.get_paginator("get_resources")` ->
-  [GetResourcesPaginator](./paginators.md#getresourcespaginator)
-- `client.get_paginator("get_rest_apis")` ->
-  [GetRestApisPaginator](./paginators.md#getrestapispaginator)
-- `client.get_paginator("get_sdk_types")` ->
-  [GetSdkTypesPaginator](./paginators.md#getsdktypespaginator)
-- `client.get_paginator("get_usage")` ->
-  [GetUsagePaginator](./paginators.md#getusagepaginator)
-- `client.get_paginator("get_usage_plan_keys")` ->
-  [GetUsagePlanKeysPaginator](./paginators.md#getusageplankeyspaginator)
-- `client.get_paginator("get_usage_plans")` ->
-  [GetUsagePlansPaginator](./paginators.md#getusageplanspaginator)
-- `client.get_paginator("get_vpc_links")` ->
-  [GetVpcLinksPaginator](./paginators.md#getvpclinkspaginator)
+- `client.get_paginator("get_api_keys")` -> [GetApiKeysPaginator](./paginators.md#getapikeyspaginator)
+- `client.get_paginator("get_authorizers")` -> [GetAuthorizersPaginator](./paginators.md#getauthorizerspaginator)
+- `client.get_paginator("get_base_path_mappings")` -> [GetBasePathMappingsPaginator](./paginators.md#getbasepathmappingspaginator)
+- `client.get_paginator("get_client_certificates")` -> [GetClientCertificatesPaginator](./paginators.md#getclientcertificatespaginator)
+- `client.get_paginator("get_deployments")` -> [GetDeploymentsPaginator](./paginators.md#getdeploymentspaginator)
+- `client.get_paginator("get_documentation_parts")` -> [GetDocumentationPartsPaginator](./paginators.md#getdocumentationpartspaginator)
+- `client.get_paginator("get_documentation_versions")` -> [GetDocumentationVersionsPaginator](./paginators.md#getdocumentationversionspaginator)
+- `client.get_paginator("get_domain_names")` -> [GetDomainNamesPaginator](./paginators.md#getdomainnamespaginator)
+- `client.get_paginator("get_gateway_responses")` -> [GetGatewayResponsesPaginator](./paginators.md#getgatewayresponsespaginator)
+- `client.get_paginator("get_models")` -> [GetModelsPaginator](./paginators.md#getmodelspaginator)
+- `client.get_paginator("get_request_validators")` -> [GetRequestValidatorsPaginator](./paginators.md#getrequestvalidatorspaginator)
+- `client.get_paginator("get_resources")` -> [GetResourcesPaginator](./paginators.md#getresourcespaginator)
+- `client.get_paginator("get_rest_apis")` -> [GetRestApisPaginator](./paginators.md#getrestapispaginator)
+- `client.get_paginator("get_sdk_types")` -> [GetSdkTypesPaginator](./paginators.md#getsdktypespaginator)
+- `client.get_paginator("get_usage")` -> [GetUsagePaginator](./paginators.md#getusagepaginator)
+- `client.get_paginator("get_usage_plan_keys")` -> [GetUsagePlanKeysPaginator](./paginators.md#getusageplankeyspaginator)
+- `client.get_paginator("get_usage_plans")` -> [GetUsagePlansPaginator](./paginators.md#getusageplanspaginator)
+- `client.get_paginator("get_vpc_links")` -> [GetVpcLinksPaginator](./paginators.md#getvpclinkspaginator)
+
+
+

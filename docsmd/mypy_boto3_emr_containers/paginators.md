@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-emrcontainers-module"></a>
-
-# Paginators for boto3 EMRContainers module
+# Paginators
 
 > [Index](../README.md) > [EMRContainers](./README.md) > Paginators
 
-Auto-generated documentation for
-[EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
-type annotations stubs module
-[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+!!! note ""
 
-- [Paginators for boto3 EMRContainers module](#paginators-for-boto3-emrcontainers-module)
-  - [ListJobRunsPaginator](#listjobrunspaginator)
-  - [ListManagedEndpointsPaginator](#listmanagedendpointspaginator)
-  - [ListVirtualClustersPaginator](#listvirtualclusterspaginator)
-
-<a id="listjobrunspaginator"></a>
+    Auto-generated documentation for [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
+    type annotations stubs module [mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 ## ListJobRunsPaginator
 
-Type annotations for
-`boto3.client("emr-containers").get_paginator("list_job_runs")`.
+Type annotations and code completion for `#!python boto3.client("emr-containers").get_paginator("list_job_runs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr_containers.paginator import ListJobRunsPaginator
@@ -32,32 +21,45 @@ def get_list_job_runs_paginator() -> ListJobRunsPaginator:
     return Session().client("emr-containers").get_paginator("list_job_runs")
 ```
 
-Boto3 documentation:
-[EMRContainers.Paginator.ListJobRuns](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListJobRuns)
 
-Arguments for `ListJobRunsPaginator.paginate` method:
+### paginate
 
-- `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `name`: `str`
-- `states`: `Sequence`\[[JobRunStateType](./literals.md#jobrunstatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListJobRunsPaginator.paginate` method.
 
-`ListJobRunsPaginator.paginate` returns
-`_PageIterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    virtualClusterId: str,
+    createdBefore: Union[datetime, str] = ...,
+    createdAfter: Union[datetime, str] = ...,
+    name: str = ...,
+    states: Sequence[JobRunStateType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListJobRunsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listmanagedendpointspaginator"></a>
+1. See [:material-code-brackets: JobRunStateType](./literals.md#jobrunstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListJobRunsRequestListJobRunsPaginateTypeDef = {  # (1)
+    "virtualClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListJobRunsRequestListJobRunsPaginateTypeDef](./type_defs.md#listjobrunsrequestlistjobrunspaginatetypedef) 
 ## ListManagedEndpointsPaginator
 
-Type annotations for
-`boto3.client("emr-containers").get_paginator("list_managed_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("emr-containers").get_paginator("list_managed_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr_containers.paginator import ListManagedEndpointsPaginator
@@ -66,32 +68,45 @@ def get_list_managed_endpoints_paginator() -> ListManagedEndpointsPaginator:
     return Session().client("emr-containers").get_paginator("list_managed_endpoints")
 ```
 
-Boto3 documentation:
-[EMRContainers.Paginator.ListManagedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListManagedEndpoints)
 
-Arguments for `ListManagedEndpointsPaginator.paginate` method:
+### paginate
 
-- `virtualClusterId`: `str` *(required)*
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `types`: `Sequence`\[`str`\]
-- `states`: `Sequence`\[[EndpointStateType](./literals.md#endpointstatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListManagedEndpointsPaginator.paginate` method.
 
-`ListManagedEndpointsPaginator.paginate` returns
-`_PageIterator`\[[ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    virtualClusterId: str,
+    createdBefore: Union[datetime, str] = ...,
+    createdAfter: Union[datetime, str] = ...,
+    types: Sequence[str] = ...,
+    states: Sequence[EndpointStateType] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListManagedEndpointsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listvirtualclusterspaginator"></a>
+1. See [:material-code-brackets: EndpointStateType](./literals.md#endpointstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListManagedEndpointsRequestListManagedEndpointsPaginateTypeDef = {  # (1)
+    "virtualClusterId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListManagedEndpointsRequestListManagedEndpointsPaginateTypeDef](./type_defs.md#listmanagedendpointsrequestlistmanagedendpointspaginatetypedef) 
 ## ListVirtualClustersPaginator
 
-Type annotations for
-`boto3.client("emr-containers").get_paginator("list_virtual_clusters")`.
+Type annotations and code completion for `#!python boto3.client("emr-containers").get_paginator("list_virtual_clusters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_emr_containers.paginator import ListVirtualClustersPaginator
@@ -100,20 +115,37 @@ def get_list_virtual_clusters_paginator() -> ListVirtualClustersPaginator:
     return Session().client("emr-containers").get_paginator("list_virtual_clusters")
 ```
 
-Boto3 documentation:
-[EMRContainers.Paginator.ListVirtualClusters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers.Paginator.ListVirtualClusters)
 
-Arguments for `ListVirtualClustersPaginator.paginate` method:
+### paginate
 
-- `containerProviderId`: `str`
-- `containerProviderType`: `Literal['EKS']` (see
-  [ContainerProviderTypeType](./literals.md#containerprovidertypetype))
-- `createdAfter`: `Union`\[`datetime`, `str`\]
-- `createdBefore`: `Union`\[`datetime`, `str`\]
-- `states`:
-  `Sequence`\[[VirtualClusterStateType](./literals.md#virtualclusterstatetype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListVirtualClustersPaginator.paginate` method.
 
-`ListVirtualClustersPaginator.paginate` returns
-`_PageIterator`\[[ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    containerProviderId: str = ...,
+    containerProviderType: ContainerProviderTypeType = ...,  # (1)
+    createdAfter: Union[datetime, str] = ...,
+    createdBefore: Union[datetime, str] = ...,
+    states: Sequence[VirtualClusterStateType] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListVirtualClustersResponseTypeDef]:  # (4)
+    ...
+```
+
+1. See [:material-code-brackets: ContainerProviderTypeType](./literals.md#containerprovidertypetype) 
+2. See [:material-code-brackets: VirtualClusterStateType](./literals.md#virtualclusterstatetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListVirtualClustersRequestListVirtualClustersPaginateTypeDef = {  # (1)
+    "containerProviderId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListVirtualClustersRequestListVirtualClustersPaginateTypeDef](./type_defs.md#listvirtualclustersrequestlistvirtualclusterspaginatetypedef) 

@@ -1,47 +1,18 @@
-<a id="timestreamwriteclient-for-boto3-timestreamwrite-module"></a>
+# TimestreamWriteClient
 
-# TimestreamWriteClient for boto3 TimestreamWrite module
+> [Index](../README.md) > [TimestreamWrite](./README.md) > TimestreamWriteClient
 
-> [Index](../README.md) > [TimestreamWrite](./README.md) >
-> TimestreamWriteClient
+!!! note ""
 
-Auto-generated documentation for
-[TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
-type annotations stubs module
-[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
-
-- [TimestreamWriteClient for boto3 TimestreamWrite module](#timestreamwriteclient-for-boto3-timestreamwrite-module)
-  - [TimestreamWriteClient](#timestreamwriteclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_database](#create_database)
-    - [create_table](#create_table)
-    - [delete_database](#delete_database)
-    - [delete_table](#delete_table)
-    - [describe_database](#describe_database)
-    - [describe_endpoints](#describe_endpoints)
-    - [describe_table](#describe_table)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [list_databases](#list_databases)
-    - [list_tables](#list_tables)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_database](#update_database)
-    - [update_table](#update_table)
-    - [write_records](#write_records)
-
-<a id="timestreamwriteclient"></a>
+    Auto-generated documentation for [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
+    type annotations stubs module [mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 ## TimestreamWriteClient
 
-Type annotations for `boto3.client("timestream-write")`
+Type annotations and code completion for `#!python boto3.client("timestream-write")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 
@@ -49,422 +20,542 @@ def get_timestream-write_client() -> TimestreamWriteClient:
     return Session().client("timestream-write")
 ```
 
-Boto3 documentation:
-[TimestreamWrite.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("timestream-write").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("timestream-write")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.InvalidEndpointException,
+    client.RejectedRecordsException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_timestream_write.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.InvalidEndpointException`
-- `Exceptions.RejectedRecordsException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-TimestreamWriteClient exceptions.
-
-Type annotations for `boto3.client("timestream-write").exceptions` method.
-
-Boto3 documentation:
-[TimestreamWrite.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("timestream-write").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate)
 
-Boto3 documentation:
-[TimestreamWrite.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_database"></a>
-
-### create_database
+### create\_database
 
 Creates a new Timestream database.
 
-Type annotations for `boto3.client("timestream-write").create_database` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").create_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
 
-Boto3 documentation:
-[TimestreamWrite.Client.create_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_database)
+```python title="Method definition"
+def create_database(
+    self,
+    *,
+    DatabaseName: str,
+    KmsKeyId: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateDatabaseResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `KmsKeyId`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDatabaseRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
 
-Returns
-[CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
+parent.create_database(**kwargs)
+```
 
-<a id="create\_table"></a>
+1. See [:material-code-braces: CreateDatabaseRequestRequestTypeDef](./type_defs.md#createdatabaserequestrequesttypedef) 
 
-### create_table
+### create\_table
 
 The CreateTable operation adds a new table to an existing database in your
 account.
 
-Type annotations for `boto3.client("timestream-write").create_table` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").create_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
 
-Boto3 documentation:
-[TimestreamWrite.Client.create_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.create_table)
+```python title="Method definition"
+def create_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    RetentionProperties: RetentionPropertiesTypeDef = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    MagneticStoreWriteProperties: MagneticStoreWritePropertiesTypeDef = ...,  # (3)
+) -> CreateTableResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef).
+1. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
+4. See [:material-code-braces: CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `RetentionProperties`:
-  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `MagneticStoreWriteProperties`:
-  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: CreateTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
+parent.create_table(**kwargs)
+```
 
-<a id="delete\_database"></a>
+1. See [:material-code-braces: CreateTableRequestRequestTypeDef](./type_defs.md#createtablerequestrequesttypedef) 
 
-### delete_database
+### delete\_database
 
 Deletes a given Timestream database.
 
-Type annotations for `boto3.client("timestream-write").delete_database` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").delete_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
 
-Boto3 documentation:
-[TimestreamWrite.Client.delete_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_database)
+```python title="Method definition"
+def delete_database(
+    self,
+    *,
+    DatabaseName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDatabaseRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
 
-<a id="delete\_table"></a>
+parent.delete_database(**kwargs)
+```
 
-### delete_table
+1. See [:material-code-braces: DeleteDatabaseRequestRequestTypeDef](./type_defs.md#deletedatabaserequestrequesttypedef) 
+
+### delete\_table
 
 Deletes a given Timestream table.
 
-Type annotations for `boto3.client("timestream-write").delete_table` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").delete_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
 
-Boto3 documentation:
-[TimestreamWrite.Client.delete_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.delete_table)
+```python title="Method definition"
+def delete_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-<a id="describe\_database"></a>
+parent.delete_table(**kwargs)
+```
 
-### describe_database
+1. See [:material-code-braces: DeleteTableRequestRequestTypeDef](./type_defs.md#deletetablerequestrequesttypedef) 
+
+### describe\_database
 
 Returns information about the database, including the database name, time that
 the database was created, and the total number of tables found within the
 database.
 
-Type annotations for `boto3.client("timestream-write").describe_database`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").describe_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
 
-Boto3 documentation:
-[TimestreamWrite.Client.describe_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_database)
+```python title="Method definition"
+def describe_database(
+    self,
+    *,
+    DatabaseName: str,
+) -> DescribeDatabaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeDatabaseRequestRequestTypeDef](./type_defs.md#describedatabaserequestrequesttypedef).
+1. See [:material-code-braces: DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeDatabaseRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
 
-Returns
-[DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
+parent.describe_database(**kwargs)
+```
 
-<a id="describe\_endpoints"></a>
+1. See [:material-code-braces: DescribeDatabaseRequestRequestTypeDef](./type_defs.md#describedatabaserequestrequesttypedef) 
 
-### describe_endpoints
+### describe\_endpoints
 
 DescribeEndpoints returns a list of available endpoints to make Timestream API
 calls against.
 
-Type annotations for `boto3.client("timestream-write").describe_endpoints`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").describe_endpoints` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
 
-Boto3 documentation:
-[TimestreamWrite.Client.describe_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_endpoints)
+```python title="Method definition"
+def describe_endpoints(
+    self,
+) -> DescribeEndpointsResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+1. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
-<a id="describe\_table"></a>
-
-### describe_table
+### describe\_table
 
 Returns information about the table, including the table name, database name,
 retention duration of the memory store and the magnetic store.
 
-Type annotations for `boto3.client("timestream-write").describe_table` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").describe_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
 
-Boto3 documentation:
-[TimestreamWrite.Client.describe_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.describe_table)
+```python title="Method definition"
+def describe_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+) -> DescribeTableResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef).
+1. See [:material-code-braces: DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
+parent.describe_table(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeTableRequestRequestTypeDef](./type_defs.md#describetablerequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("timestream-write").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url)
 
-Boto3 documentation:
-[TimestreamWrite.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="list\_databases"></a>
-
-### list_databases
+### list\_databases
 
 Returns a list of your Timestream databases.
 
-Type annotations for `boto3.client("timestream-write").list_databases` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").list_databases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
 
-Boto3 documentation:
-[TimestreamWrite.Client.list_databases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_databases)
+```python title="Method definition"
+def list_databases(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListDatabasesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef).
+1. See [:material-code-braces: ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListDatabasesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
+parent.list_databases(**kwargs)
+```
 
-<a id="list\_tables"></a>
+1. See [:material-code-braces: ListDatabasesRequestRequestTypeDef](./type_defs.md#listdatabasesrequestrequesttypedef) 
 
-### list_tables
+### list\_tables
 
 A list of tables, along with the name, status and retention properties of each
 table.
 
-Type annotations for `boto3.client("timestream-write").list_tables` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").list_tables` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
 
-Boto3 documentation:
-[TimestreamWrite.Client.list_tables](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tables)
+```python title="Method definition"
+def list_tables(
+    self,
+    *,
+    DatabaseName: str = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListTablesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef).
+1. See [:material-code-braces: ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListTablesRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+}
 
-Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
+parent.list_tables(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListTablesRequestRequestTypeDef](./type_defs.md#listtablesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 List all tags on a Timestream resource.
 
-Type annotations for `boto3.client("timestream-write").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[TimestreamWrite.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Associate a set of tags with a Timestream resource.
 
-Type annotations for `boto3.client("timestream-write").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
 
-Boto3 documentation:
-[TimestreamWrite.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes the association of tags from a Timestream resource.
 
-Type annotations for `boto3.client("timestream-write").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
 
-Boto3 documentation:
-[TimestreamWrite.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_database"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_database
+### update\_database
 
 Modifies the KMS key for an existing database.
 
-Type annotations for `boto3.client("timestream-write").update_database` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").update_database` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
 
-Boto3 documentation:
-[TimestreamWrite.Client.update_database](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_database)
+```python title="Method definition"
+def update_database(
+    self,
+    *,
+    DatabaseName: str,
+    KmsKeyId: str,
+) -> UpdateDatabaseResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef).
+1. See [:material-code-braces: UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `KmsKeyId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateDatabaseRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "KmsKeyId": ...,
+}
 
-Returns
-[UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
+parent.update_database(**kwargs)
+```
 
-<a id="update\_table"></a>
+1. See [:material-code-braces: UpdateDatabaseRequestRequestTypeDef](./type_defs.md#updatedatabaserequestrequesttypedef) 
 
-### update_table
+### update\_table
 
 Modifies the retention duration of the memory store and magnetic store for your
 Timestream table.
 
-Type annotations for `boto3.client("timestream-write").update_table` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").update_table` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
 
-Boto3 documentation:
-[TimestreamWrite.Client.update_table](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.update_table)
+```python title="Method definition"
+def update_table(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    RetentionProperties: RetentionPropertiesTypeDef = ...,  # (1)
+    MagneticStoreWriteProperties: MagneticStoreWritePropertiesTypeDef = ...,  # (2)
+) -> UpdateTableResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef).
+1. See [:material-code-braces: RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef) 
+2. See [:material-code-braces: MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef) 
+3. See [:material-code-braces: UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `RetentionProperties`:
-  [RetentionPropertiesTypeDef](./type_defs.md#retentionpropertiestypedef)
-- `MagneticStoreWriteProperties`:
-  [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateTableRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+}
 
-Returns
-[UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
+parent.update_table(**kwargs)
+```
 
-<a id="write\_records"></a>
+1. See [:material-code-braces: UpdateTableRequestRequestTypeDef](./type_defs.md#updatetablerequestrequesttypedef) 
 
-### write_records
+### write\_records
 
 The WriteRecords operation enables you to write your time series data into
 Timestream.
 
-Type annotations for `boto3.client("timestream-write").write_records` method.
+Type annotations and code completion for `#!python boto3.client("timestream-write").write_records` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
 
-Boto3 documentation:
-[TimestreamWrite.Client.write_records](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite.Client.write_records)
+```python title="Method definition"
+def write_records(
+    self,
+    *,
+    DatabaseName: str,
+    TableName: str,
+    Records: Sequence[RecordTypeDef],  # (1)
+    CommonAttributes: RecordTypeDef = ...,  # (2)
+) -> WriteRecordsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef).
+1. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+2. See [:material-code-braces: RecordTypeDef](./type_defs.md#recordtypedef) 
+3. See [:material-code-braces: WriteRecordsResponseTypeDef](./type_defs.md#writerecordsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DatabaseName`: `str` *(required)*
-- `TableName`: `str` *(required)*
-- `Records`: `Sequence`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
-  *(required)*
-- `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)
+```python title="Usage example with kwargs"
+kwargs: WriteRecordsRequestRequestTypeDef = {  # (1)
+    "DatabaseName": ...,
+    "TableName": ...,
+    "Records": ...,
+}
 
-Returns
-[WriteRecordsResponseTypeDef](./type_defs.md#writerecordsresponsetypedef).
+parent.write_records(**kwargs)
+```
+
+1. See [:material-code-braces: WriteRecordsRequestRequestTypeDef](./type_defs.md#writerecordsrequestrequesttypedef) 
+
+
+
+

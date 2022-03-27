@@ -1,1829 +1,2297 @@
-<a id="typed-dictionaries-for-boto3-chimesdkmessaging-module"></a>
-
-# Typed dictionaries for boto3 ChimeSDKMessaging module
+# Typed dictionaries
 
 > [Index](../README.md) > [ChimeSDKMessaging](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
-type annotations stubs module
-[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ChimeSDKMessaging module](#typed-dictionaries-for-boto3-chimesdkmessaging-module)
-  - [AppInstanceUserMembershipSummaryTypeDef](#appinstanceusermembershipsummarytypedef)
-  - [AssociateChannelFlowRequestRequestTypeDef](#associatechannelflowrequestrequesttypedef)
-  - [BatchChannelMembershipsTypeDef](#batchchannelmembershipstypedef)
-  - [BatchCreateChannelMembershipErrorTypeDef](#batchcreatechannelmembershiperrortypedef)
-  - [BatchCreateChannelMembershipRequestRequestTypeDef](#batchcreatechannelmembershiprequestrequesttypedef)
-  - [BatchCreateChannelMembershipResponseTypeDef](#batchcreatechannelmembershipresponsetypedef)
-  - [ChannelAssociatedWithFlowSummaryTypeDef](#channelassociatedwithflowsummarytypedef)
-  - [ChannelBanSummaryTypeDef](#channelbansummarytypedef)
-  - [ChannelBanTypeDef](#channelbantypedef)
-  - [ChannelFlowCallbackRequestRequestTypeDef](#channelflowcallbackrequestrequesttypedef)
-  - [ChannelFlowCallbackResponseTypeDef](#channelflowcallbackresponsetypedef)
-  - [ChannelFlowSummaryTypeDef](#channelflowsummarytypedef)
-  - [ChannelFlowTypeDef](#channelflowtypedef)
-  - [ChannelMembershipForAppInstanceUserSummaryTypeDef](#channelmembershipforappinstanceusersummarytypedef)
-  - [ChannelMembershipPreferencesTypeDef](#channelmembershippreferencestypedef)
-  - [ChannelMembershipSummaryTypeDef](#channelmembershipsummarytypedef)
-  - [ChannelMembershipTypeDef](#channelmembershiptypedef)
-  - [ChannelMessageCallbackTypeDef](#channelmessagecallbacktypedef)
-  - [ChannelMessageStatusStructureTypeDef](#channelmessagestatusstructuretypedef)
-  - [ChannelMessageSummaryTypeDef](#channelmessagesummarytypedef)
-  - [ChannelMessageTypeDef](#channelmessagetypedef)
-  - [ChannelModeratedByAppInstanceUserSummaryTypeDef](#channelmoderatedbyappinstanceusersummarytypedef)
-  - [ChannelModeratorSummaryTypeDef](#channelmoderatorsummarytypedef)
-  - [ChannelModeratorTypeDef](#channelmoderatortypedef)
-  - [ChannelSummaryTypeDef](#channelsummarytypedef)
-  - [ChannelTypeDef](#channeltypedef)
-  - [CreateChannelBanRequestRequestTypeDef](#createchannelbanrequestrequesttypedef)
-  - [CreateChannelBanResponseTypeDef](#createchannelbanresponsetypedef)
-  - [CreateChannelFlowRequestRequestTypeDef](#createchannelflowrequestrequesttypedef)
-  - [CreateChannelFlowResponseTypeDef](#createchannelflowresponsetypedef)
-  - [CreateChannelMembershipRequestRequestTypeDef](#createchannelmembershiprequestrequesttypedef)
-  - [CreateChannelMembershipResponseTypeDef](#createchannelmembershipresponsetypedef)
-  - [CreateChannelModeratorRequestRequestTypeDef](#createchannelmoderatorrequestrequesttypedef)
-  - [CreateChannelModeratorResponseTypeDef](#createchannelmoderatorresponsetypedef)
-  - [CreateChannelRequestRequestTypeDef](#createchannelrequestrequesttypedef)
-  - [CreateChannelResponseTypeDef](#createchannelresponsetypedef)
-  - [DeleteChannelBanRequestRequestTypeDef](#deletechannelbanrequestrequesttypedef)
-  - [DeleteChannelFlowRequestRequestTypeDef](#deletechannelflowrequestrequesttypedef)
-  - [DeleteChannelMembershipRequestRequestTypeDef](#deletechannelmembershiprequestrequesttypedef)
-  - [DeleteChannelMessageRequestRequestTypeDef](#deletechannelmessagerequestrequesttypedef)
-  - [DeleteChannelModeratorRequestRequestTypeDef](#deletechannelmoderatorrequestrequesttypedef)
-  - [DeleteChannelRequestRequestTypeDef](#deletechannelrequestrequesttypedef)
-  - [DescribeChannelBanRequestRequestTypeDef](#describechannelbanrequestrequesttypedef)
-  - [DescribeChannelBanResponseTypeDef](#describechannelbanresponsetypedef)
-  - [DescribeChannelFlowRequestRequestTypeDef](#describechannelflowrequestrequesttypedef)
-  - [DescribeChannelFlowResponseTypeDef](#describechannelflowresponsetypedef)
-  - [DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef](#describechannelmembershipforappinstanceuserrequestrequesttypedef)
-  - [DescribeChannelMembershipForAppInstanceUserResponseTypeDef](#describechannelmembershipforappinstanceuserresponsetypedef)
-  - [DescribeChannelMembershipRequestRequestTypeDef](#describechannelmembershiprequestrequesttypedef)
-  - [DescribeChannelMembershipResponseTypeDef](#describechannelmembershipresponsetypedef)
-  - [DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef](#describechannelmoderatedbyappinstanceuserrequestrequesttypedef)
-  - [DescribeChannelModeratedByAppInstanceUserResponseTypeDef](#describechannelmoderatedbyappinstanceuserresponsetypedef)
-  - [DescribeChannelModeratorRequestRequestTypeDef](#describechannelmoderatorrequestrequesttypedef)
-  - [DescribeChannelModeratorResponseTypeDef](#describechannelmoderatorresponsetypedef)
-  - [DescribeChannelRequestRequestTypeDef](#describechannelrequestrequesttypedef)
-  - [DescribeChannelResponseTypeDef](#describechannelresponsetypedef)
-  - [DisassociateChannelFlowRequestRequestTypeDef](#disassociatechannelflowrequestrequesttypedef)
-  - [GetChannelMembershipPreferencesRequestRequestTypeDef](#getchannelmembershippreferencesrequestrequesttypedef)
-  - [GetChannelMembershipPreferencesResponseTypeDef](#getchannelmembershippreferencesresponsetypedef)
-  - [GetChannelMessageRequestRequestTypeDef](#getchannelmessagerequestrequesttypedef)
-  - [GetChannelMessageResponseTypeDef](#getchannelmessageresponsetypedef)
-  - [GetChannelMessageStatusRequestRequestTypeDef](#getchannelmessagestatusrequestrequesttypedef)
-  - [GetChannelMessageStatusResponseTypeDef](#getchannelmessagestatusresponsetypedef)
-  - [GetMessagingSessionEndpointResponseTypeDef](#getmessagingsessionendpointresponsetypedef)
-  - [IdentityTypeDef](#identitytypedef)
-  - [LambdaConfigurationTypeDef](#lambdaconfigurationtypedef)
-  - [ListChannelBansRequestRequestTypeDef](#listchannelbansrequestrequesttypedef)
-  - [ListChannelBansResponseTypeDef](#listchannelbansresponsetypedef)
-  - [ListChannelFlowsRequestRequestTypeDef](#listchannelflowsrequestrequesttypedef)
-  - [ListChannelFlowsResponseTypeDef](#listchannelflowsresponsetypedef)
-  - [ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef](#listchannelmembershipsforappinstanceuserrequestrequesttypedef)
-  - [ListChannelMembershipsForAppInstanceUserResponseTypeDef](#listchannelmembershipsforappinstanceuserresponsetypedef)
-  - [ListChannelMembershipsRequestRequestTypeDef](#listchannelmembershipsrequestrequesttypedef)
-  - [ListChannelMembershipsResponseTypeDef](#listchannelmembershipsresponsetypedef)
-  - [ListChannelMessagesRequestRequestTypeDef](#listchannelmessagesrequestrequesttypedef)
-  - [ListChannelMessagesResponseTypeDef](#listchannelmessagesresponsetypedef)
-  - [ListChannelModeratorsRequestRequestTypeDef](#listchannelmoderatorsrequestrequesttypedef)
-  - [ListChannelModeratorsResponseTypeDef](#listchannelmoderatorsresponsetypedef)
-  - [ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef](#listchannelsassociatedwithchannelflowrequestrequesttypedef)
-  - [ListChannelsAssociatedWithChannelFlowResponseTypeDef](#listchannelsassociatedwithchannelflowresponsetypedef)
-  - [ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef](#listchannelsmoderatedbyappinstanceuserrequestrequesttypedef)
-  - [ListChannelsModeratedByAppInstanceUserResponseTypeDef](#listchannelsmoderatedbyappinstanceuserresponsetypedef)
-  - [ListChannelsRequestRequestTypeDef](#listchannelsrequestrequesttypedef)
-  - [ListChannelsResponseTypeDef](#listchannelsresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [MessageAttributeValueTypeDef](#messageattributevaluetypedef)
-  - [MessagingSessionEndpointTypeDef](#messagingsessionendpointtypedef)
-  - [ProcessorConfigurationTypeDef](#processorconfigurationtypedef)
-  - [ProcessorTypeDef](#processortypedef)
-  - [PushNotificationConfigurationTypeDef](#pushnotificationconfigurationtypedef)
-  - [PushNotificationPreferencesTypeDef](#pushnotificationpreferencestypedef)
-  - [PutChannelMembershipPreferencesRequestRequestTypeDef](#putchannelmembershippreferencesrequestrequesttypedef)
-  - [PutChannelMembershipPreferencesResponseTypeDef](#putchannelmembershippreferencesresponsetypedef)
-  - [RedactChannelMessageRequestRequestTypeDef](#redactchannelmessagerequestrequesttypedef)
-  - [RedactChannelMessageResponseTypeDef](#redactchannelmessageresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SendChannelMessageRequestRequestTypeDef](#sendchannelmessagerequestrequesttypedef)
-  - [SendChannelMessageResponseTypeDef](#sendchannelmessageresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateChannelFlowRequestRequestTypeDef](#updatechannelflowrequestrequesttypedef)
-  - [UpdateChannelFlowResponseTypeDef](#updatechannelflowresponsetypedef)
-  - [UpdateChannelMessageRequestRequestTypeDef](#updatechannelmessagerequestrequesttypedef)
-  - [UpdateChannelMessageResponseTypeDef](#updatechannelmessageresponsetypedef)
-  - [UpdateChannelReadMarkerRequestRequestTypeDef](#updatechannelreadmarkerrequestrequesttypedef)
-  - [UpdateChannelReadMarkerResponseTypeDef](#updatechannelreadmarkerresponsetypedef)
-  - [UpdateChannelRequestRequestTypeDef](#updatechannelrequestrequesttypedef)
-  - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
-
-<a id="appinstanceusermembershipsummarytypedef"></a>
+    Auto-generated documentation for [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
+    type annotations stubs module [mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 ## AppInstanceUserMembershipSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import AppInstanceUserMembershipSummaryTypeDef
+
+def get_value() -> AppInstanceUserMembershipSummaryTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppInstanceUserMembershipSummaryTypeDef(TypedDict):
+    Type: NotRequired[ChannelMembershipTypeType],  # (1)
+    ReadMarkerTimestamp: NotRequired[datetime],
+```
 
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `ReadMarkerTimestamp`: `datetime`
-
-<a id="associatechannelflowrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
 ## AssociateChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import AssociateChannelFlowRequestRequestTypeDef
+
+def get_value() -> AssociateChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelFlowArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChannelFlowArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="batchchannelmembershipstypedef"></a>
+```python title="Definition"
+class AssociateChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelFlowArn: str,
+    ChimeBearer: str,
+```
 
 ## BatchChannelMembershipsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import BatchChannelMembershipsTypeDef
+
+def get_value() -> BatchChannelMembershipsTypeDef:
+    return {
+        "InvitedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchChannelMembershipsTypeDef(TypedDict):
+    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
+    Type: NotRequired[ChannelMembershipTypeType],  # (2)
+    Members: NotRequired[List[IdentityTypeDef]],  # (3)
+    ChannelArn: NotRequired[str],
+```
 
-- `InvitedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `Members`: `List`\[[IdentityTypeDef](./type_defs.md#identitytypedef)\]
-- `ChannelArn`: `str`
-
-<a id="batchcreatechannelmembershiperrortypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## BatchCreateChannelMembershipErrorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershipErrorTypeDef
+
+def get_value() -> BatchCreateChannelMembershipErrorTypeDef:
+    return {
+        "MemberArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchCreateChannelMembershipErrorTypeDef(TypedDict):
+    MemberArn: NotRequired[str],
+    ErrorCode: NotRequired[ErrorCodeType],  # (1)
+    ErrorMessage: NotRequired[str],
+```
 
-- `MemberArn`: `str`
-- `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
-- `ErrorMessage`: `str`
-
-<a id="batchcreatechannelmembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ErrorCodeType](./literals.md#errorcodetype) 
 ## BatchCreateChannelMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershipRequestRequestTypeDef
+
+def get_value() -> BatchCreateChannelMembershipRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArns": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateChannelMembershipRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArns: Sequence[str],
+    ChimeBearer: str,
+    Type: NotRequired[ChannelMembershipTypeType],  # (1)
+```
 
-- `ChannelArn`: `str`
-- `MemberArns`: `Sequence`\[`str`\]
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-
-<a id="batchcreatechannelmembershipresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
 ## BatchCreateChannelMembershipResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import BatchCreateChannelMembershipResponseTypeDef
+
+def get_value() -> BatchCreateChannelMembershipResponseTypeDef:
+    return {
+        "BatchChannelMemberships": ...,
+        "Errors": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchCreateChannelMembershipResponseTypeDef(TypedDict):
+    BatchChannelMemberships: BatchChannelMembershipsTypeDef,  # (1)
+    Errors: List[BatchCreateChannelMembershipErrorTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `BatchChannelMemberships`:
-  [BatchChannelMembershipsTypeDef](./type_defs.md#batchchannelmembershipstypedef)
-- `Errors`:
-  `List`\[[BatchCreateChannelMembershipErrorTypeDef](./type_defs.md#batchcreatechannelmembershiperrortypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="channelassociatedwithflowsummarytypedef"></a>
-
+1. See [:material-code-braces: BatchChannelMembershipsTypeDef](./type_defs.md#batchchannelmembershipstypedef) 
+2. See [:material-code-braces: BatchCreateChannelMembershipErrorTypeDef](./type_defs.md#batchcreatechannelmembershiperrortypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChannelAssociatedWithFlowSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelAssociatedWithFlowSummaryTypeDef
+
+def get_value() -> ChannelAssociatedWithFlowSummaryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelAssociatedWithFlowSummaryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ChannelArn: NotRequired[str],
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+```
 
-- `Name`: `str`
-- `ChannelArn`: `str`
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-
-<a id="channelbansummarytypedef"></a>
-
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
 ## ChannelBanSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelBanSummaryTypeDef
+
+def get_value() -> ChannelBanSummaryTypeDef:
+    return {
+        "Member": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelBanSummaryTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+```
 
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-
-<a id="channelbantypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelBanTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelBanTypeDef
+
+def get_value() -> ChannelBanTypeDef:
+    return {
+        "Member": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelBanTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
+```
 
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ChannelArn`: `str`
-- `CreatedTimestamp`: `datetime`
-- `CreatedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-
-<a id="channelflowcallbackrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelFlowCallbackRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowCallbackRequestRequestTypeDef
+
+def get_value() -> ChannelFlowCallbackRequestRequestTypeDef:
+    return {
+        "CallbackId": ...,
+        "ChannelArn": ...,
+        "ChannelMessage": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChannelFlowCallbackRequestRequestTypeDef(TypedDict):
+    CallbackId: str,
+    ChannelArn: str,
+    ChannelMessage: ChannelMessageCallbackTypeDef,  # (1)
+    DeleteResource: NotRequired[bool],
+```
 
-- `CallbackId`: `str`
-- `ChannelArn`: `str`
-- `ChannelMessage`:
-  [ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef)
-
-Optional fields:
-
-- `DeleteResource`: `bool`
-
-<a id="channelflowcallbackresponsetypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageCallbackTypeDef](./type_defs.md#channelmessagecallbacktypedef) 
 ## ChannelFlowCallbackResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowCallbackResponseTypeDef
+
+def get_value() -> ChannelFlowCallbackResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "CallbackId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChannelFlowCallbackResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    CallbackId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `CallbackId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="channelflowsummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChannelFlowSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowSummaryTypeDef
+
+def get_value() -> ChannelFlowSummaryTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelFlowSummaryTypeDef(TypedDict):
+    ChannelFlowArn: NotRequired[str],
+    Name: NotRequired[str],
+    Processors: NotRequired[List[ProcessorTypeDef]],  # (1)
+```
 
-- `ChannelFlowArn`: `str`
-- `Name`: `str`
-- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-
-<a id="channelflowtypedef"></a>
-
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
 ## ChannelFlowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelFlowTypeDef
+
+def get_value() -> ChannelFlowTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelFlowTypeDef(TypedDict):
+    ChannelFlowArn: NotRequired[str],
+    Processors: NotRequired[List[ProcessorTypeDef]],  # (1)
+    Name: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
 
-- `ChannelFlowArn`: `str`
-- `Processors`: `List`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-- `Name`: `str`
-- `CreatedTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-
-<a id="channelmembershipforappinstanceusersummarytypedef"></a>
-
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
 ## ChannelMembershipForAppInstanceUserSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMembershipForAppInstanceUserSummaryTypeDef
+
+def get_value() -> ChannelMembershipForAppInstanceUserSummaryTypeDef:
+    return {
+        "ChannelSummary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMembershipForAppInstanceUserSummaryTypeDef(TypedDict):
+    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
+    AppInstanceUserMembershipSummary: NotRequired[AppInstanceUserMembershipSummaryTypeDef],  # (2)
+```
 
-- `ChannelSummary`:
-  [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
-- `AppInstanceUserMembershipSummary`:
-  [AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef)
-
-<a id="channelmembershippreferencestypedef"></a>
-
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: AppInstanceUserMembershipSummaryTypeDef](./type_defs.md#appinstanceusermembershipsummarytypedef) 
 ## ChannelMembershipPreferencesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMembershipPreferencesTypeDef
+
+def get_value() -> ChannelMembershipPreferencesTypeDef:
+    return {
+        "PushNotifications": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMembershipPreferencesTypeDef(TypedDict):
+    PushNotifications: NotRequired[PushNotificationPreferencesTypeDef],  # (1)
+```
 
-- `PushNotifications`:
-  [PushNotificationPreferencesTypeDef](./type_defs.md#pushnotificationpreferencestypedef)
-
-<a id="channelmembershipsummarytypedef"></a>
-
+1. See [:material-code-braces: PushNotificationPreferencesTypeDef](./type_defs.md#pushnotificationpreferencestypedef) 
 ## ChannelMembershipSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMembershipSummaryTypeDef
+
+def get_value() -> ChannelMembershipSummaryTypeDef:
+    return {
+        "Member": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMembershipSummaryTypeDef(TypedDict):
+    Member: NotRequired[IdentityTypeDef],  # (1)
+```
 
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-
-<a id="channelmembershiptypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelMembershipTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMembershipTypeDef
+
+def get_value() -> ChannelMembershipTypeDef:
+    return {
+        "InvitedBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMembershipTypeDef(TypedDict):
+    InvitedBy: NotRequired[IdentityTypeDef],  # (1)
+    Type: NotRequired[ChannelMembershipTypeType],  # (2)
+    Member: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+```
 
-- `InvitedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ChannelArn`: `str`
-- `CreatedTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-
-<a id="channelmessagecallbacktypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelMessageCallbackTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageCallbackTypeDef
+
+def get_value() -> ChannelMessageCallbackTypeDef:
+    return {
+        "MessageId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChannelMessageCallbackTypeDef(TypedDict):
+    MessageId: str,
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+    PushNotification: NotRequired[PushNotificationConfigurationTypeDef],  # (1)
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (2)
+```
 
-- `MessageId`: `str`
-
-Optional fields:
-
-- `Content`: `str`
-- `Metadata`: `str`
-- `PushNotification`:
-  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-
-<a id="channelmessagestatusstructuretypedef"></a>
-
+1. See [:material-code-braces: PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef) 
+2. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## ChannelMessageStatusStructureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageStatusStructureTypeDef
+
+def get_value() -> ChannelMessageStatusStructureTypeDef:
+    return {
+        "Value": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMessageStatusStructureTypeDef(TypedDict):
+    Value: NotRequired[ChannelMessageStatusType],  # (1)
+    Detail: NotRequired[str],
+```
 
-- `Value`: [ChannelMessageStatusType](./literals.md#channelmessagestatustype)
-- `Detail`: `str`
-
-<a id="channelmessagesummarytypedef"></a>
-
+1. See [:material-code-brackets: ChannelMessageStatusType](./literals.md#channelmessagestatustype) 
 ## ChannelMessageSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageSummaryTypeDef
+
+def get_value() -> ChannelMessageSummaryTypeDef:
+    return {
+        "MessageId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMessageSummaryTypeDef(TypedDict):
+    MessageId: NotRequired[str],
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+    Type: NotRequired[ChannelMessageTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    LastEditedTimestamp: NotRequired[datetime],
+    Sender: NotRequired[IdentityTypeDef],  # (2)
+    Redacted: NotRequired[bool],
+    Status: NotRequired[ChannelMessageStatusStructureTypeDef],  # (3)
+    MessageAttributes: NotRequired[Dict[str, MessageAttributeValueTypeDef]],  # (4)
+```
 
-- `MessageId`: `str`
-- `Content`: `str`
-- `Metadata`: `str`
-- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
-- `CreatedTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-- `LastEditedTimestamp`: `datetime`
-- `Sender`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Redacted`: `bool`
-- `Status`:
-  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
-- `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-
-<a id="channelmessagetypedef"></a>
-
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+3. See [:material-code-braces: ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef) 
+4. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## ChannelMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelMessageTypeDef
+
+def get_value() -> ChannelMessageTypeDef:
+    return {
+        "ChannelArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelMessageTypeDef(TypedDict):
+    ChannelArn: NotRequired[str],
+    MessageId: NotRequired[str],
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+    Type: NotRequired[ChannelMessageTypeType],  # (1)
+    CreatedTimestamp: NotRequired[datetime],
+    LastEditedTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    Sender: NotRequired[IdentityTypeDef],  # (2)
+    Redacted: NotRequired[bool],
+    Persistence: NotRequired[ChannelMessagePersistenceTypeType],  # (3)
+    Status: NotRequired[ChannelMessageStatusStructureTypeDef],  # (4)
+    MessageAttributes: NotRequired[Dict[str, MessageAttributeValueTypeDef]],  # (5)
+```
 
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `Content`: `str`
-- `Metadata`: `str`
-- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
-- `CreatedTimestamp`: `datetime`
-- `LastEditedTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-- `Sender`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Redacted`: `bool`
-- `Persistence`:
-  [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
-- `Status`:
-  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
-- `MessageAttributes`: `Dict`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-
-<a id="channelmoderatedbyappinstanceusersummarytypedef"></a>
-
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+3. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
+4. See [:material-code-braces: ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef) 
+5. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## ChannelModeratedByAppInstanceUserSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelModeratedByAppInstanceUserSummaryTypeDef
+
+def get_value() -> ChannelModeratedByAppInstanceUserSummaryTypeDef:
+    return {
+        "ChannelSummary": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelModeratedByAppInstanceUserSummaryTypeDef(TypedDict):
+    ChannelSummary: NotRequired[ChannelSummaryTypeDef],  # (1)
+```
 
-- `ChannelSummary`:
-  [ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)
-
-<a id="channelmoderatorsummarytypedef"></a>
-
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
 ## ChannelModeratorSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelModeratorSummaryTypeDef
+
+def get_value() -> ChannelModeratorSummaryTypeDef:
+    return {
+        "Moderator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelModeratorSummaryTypeDef(TypedDict):
+    Moderator: NotRequired[IdentityTypeDef],  # (1)
+```
 
-- `Moderator`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-
-<a id="channelmoderatortypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelModeratorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelModeratorTypeDef
+
+def get_value() -> ChannelModeratorTypeDef:
+    return {
+        "Moderator": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelModeratorTypeDef(TypedDict):
+    Moderator: NotRequired[IdentityTypeDef],  # (1)
+    ChannelArn: NotRequired[str],
+    CreatedTimestamp: NotRequired[datetime],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (1)
+```
 
-- `Moderator`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ChannelArn`: `str`
-- `CreatedTimestamp`: `datetime`
-- `CreatedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-
-<a id="channelsummarytypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## ChannelSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelSummaryTypeDef
+
+def get_value() -> ChannelSummaryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelSummaryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ChannelArn: NotRequired[str],
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+    LastMessageTimestamp: NotRequired[datetime],
+```
 
-- `Name`: `str`
-- `ChannelArn`: `str`
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-- `LastMessageTimestamp`: `datetime`
-
-<a id="channeltypedef"></a>
-
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
 ## ChannelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ChannelTypeDef
+
+def get_value() -> ChannelTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChannelTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ChannelArn: NotRequired[str],
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+    CreatedBy: NotRequired[IdentityTypeDef],  # (3)
+    CreatedTimestamp: NotRequired[datetime],
+    LastMessageTimestamp: NotRequired[datetime],
+    LastUpdatedTimestamp: NotRequired[datetime],
+    ChannelFlowArn: NotRequired[str],
+```
 
-- `Name`: `str`
-- `ChannelArn`: `str`
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-- `CreatedBy`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `CreatedTimestamp`: `datetime`
-- `LastMessageTimestamp`: `datetime`
-- `LastUpdatedTimestamp`: `datetime`
-- `ChannelFlowArn`: `str`
-
-<a id="createchannelbanrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
 ## CreateChannelBanRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelBanRequestRequestTypeDef
+
+def get_value() -> CreateChannelBanRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="createchannelbanresponsetypedef"></a>
+```python title="Definition"
+class CreateChannelBanRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## CreateChannelBanResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelBanResponseTypeDef
+
+def get_value() -> CreateChannelBanResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelBanResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelFlowRequestRequestTypeDef
+
+def get_value() -> CreateChannelFlowRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "Processors": ...,
+        "Name": ...,
+        "ClientRequestToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelFlowRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    Processors: Sequence[ProcessorTypeDef],  # (1)
+    Name: str,
+    ClientRequestToken: str,
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `AppInstanceArn`: `str`
-- `Processors`:
-  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-- `Name`: `str`
-- `ClientRequestToken`: `str`
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createchannelflowresponsetypedef"></a>
-
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateChannelFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelFlowResponseTypeDef
+
+def get_value() -> CreateChannelFlowResponseTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelFlowResponseTypeDef(TypedDict):
+    ChannelFlowArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelFlowArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelmembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelMembershipRequestRequestTypeDef
+
+def get_value() -> CreateChannelMembershipRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "Type": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelMembershipRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    Type: ChannelMembershipTypeType,  # (1)
+    ChimeBearer: str,
+```
 
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `ChimeBearer`: `str`
-
-<a id="createchannelmembershipresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
 ## CreateChannelMembershipResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelMembershipResponseTypeDef
+
+def get_value() -> CreateChannelMembershipResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelMembershipResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelmoderatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelModeratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelModeratorRequestRequestTypeDef
+
+def get_value() -> CreateChannelModeratorRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelModeratorArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChannelModeratorArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="createchannelmoderatorresponsetypedef"></a>
+```python title="Definition"
+class CreateChannelModeratorRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+```
 
 ## CreateChannelModeratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelModeratorResponseTypeDef
+
+def get_value() -> CreateChannelModeratorResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelModerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelModeratorResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelModerator: IdentityTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `ChannelModerator`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createchannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelRequestRequestTypeDef
+
+def get_value() -> CreateChannelRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "Name": ...,
+        "ClientRequestToken": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    Name: str,
+    ClientRequestToken: str,
+    ChimeBearer: str,
+    Mode: NotRequired[ChannelModeType],  # (1)
+    Privacy: NotRequired[ChannelPrivacyType],  # (2)
+    Metadata: NotRequired[str],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+```
 
-- `AppInstanceArn`: `str`
-- `Name`: `str`
-- `ClientRequestToken`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `Metadata`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createchannelresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
+2. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import CreateChannelResponseTypeDef
+
+def get_value() -> CreateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletechannelbanrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteChannelBanRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelBanRequestRequestTypeDef
+
+def get_value() -> DeleteChannelBanRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="deletechannelflowrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelBanRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## DeleteChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelFlowRequestRequestTypeDef
+
+def get_value() -> DeleteChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelFlowArn`: `str`
-
-<a id="deletechannelmembershiprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelFlowArn: str,
+```
 
 ## DeleteChannelMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelMembershipRequestRequestTypeDef
+
+def get_value() -> DeleteChannelMembershipRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="deletechannelmessagerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelMembershipRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## DeleteChannelMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelMessageRequestRequestTypeDef
+
+def get_value() -> DeleteChannelMessageRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ChimeBearer`: `str`
-
-<a id="deletechannelmoderatorrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelMessageRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+```
 
 ## DeleteChannelModeratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelModeratorRequestRequestTypeDef
+
+def get_value() -> DeleteChannelModeratorRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelModeratorArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChannelModeratorArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="deletechannelrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelModeratorRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+```
 
 ## DeleteChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DeleteChannelRequestRequestTypeDef
+
+def get_value() -> DeleteChannelRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelbanrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteChannelRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelBanRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelBanRequestRequestTypeDef
+
+def get_value() -> DescribeChannelBanRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelbanresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelBanRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelBanResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelBanResponseTypeDef
+
+def get_value() -> DescribeChannelBanResponseTypeDef:
+    return {
+        "ChannelBan": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelBanResponseTypeDef(TypedDict):
+    ChannelBan: ChannelBanTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelBan`: [ChannelBanTypeDef](./type_defs.md#channelbantypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelBanTypeDef](./type_defs.md#channelbantypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelFlowRequestRequestTypeDef
+
+def get_value() -> DescribeChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelFlowArn`: `str`
-
-<a id="describechannelflowresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelFlowArn: str,
+```
 
 ## DescribeChannelFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelFlowResponseTypeDef
+
+def get_value() -> DescribeChannelFlowResponseTypeDef:
+    return {
+        "ChannelFlow": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelFlowResponseTypeDef(TypedDict):
+    ChannelFlow: ChannelFlowTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelFlow`: [ChannelFlowTypeDef](./type_defs.md#channelflowtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelmembershipforappinstanceuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelFlowTypeDef](./type_defs.md#channelflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef
+
+def get_value() -> DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "AppInstanceUserArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `AppInstanceUserArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelmembershipforappinstanceuserresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelMembershipForAppInstanceUserRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelMembershipForAppInstanceUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelMembershipForAppInstanceUserResponseTypeDef
+
+def get_value() -> DescribeChannelMembershipForAppInstanceUserResponseTypeDef:
+    return {
+        "ChannelMembership": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelMembershipForAppInstanceUserResponseTypeDef(TypedDict):
+    ChannelMembership: ChannelMembershipForAppInstanceUserSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelMembership`:
-  [ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelmembershiprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelMembershipRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelMembershipRequestRequestTypeDef
+
+def get_value() -> DescribeChannelMembershipRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelmembershipresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelMembershipRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelMembershipResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelMembershipResponseTypeDef
+
+def get_value() -> DescribeChannelMembershipResponseTypeDef:
+    return {
+        "ChannelMembership": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelMembershipResponseTypeDef(TypedDict):
+    ChannelMembership: ChannelMembershipTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelMembership`:
-  [ChannelMembershipTypeDef](./type_defs.md#channelmembershiptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelmoderatedbyappinstanceuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMembershipTypeDef](./type_defs.md#channelmembershiptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef
+
+def get_value() -> DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "AppInstanceUserArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `AppInstanceUserArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelmoderatedbyappinstanceuserresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelModeratedByAppInstanceUserRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    AppInstanceUserArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelModeratedByAppInstanceUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelModeratedByAppInstanceUserResponseTypeDef
+
+def get_value() -> DescribeChannelModeratedByAppInstanceUserResponseTypeDef:
+    return {
+        "Channel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelModeratedByAppInstanceUserResponseTypeDef(TypedDict):
+    Channel: ChannelModeratedByAppInstanceUserSummaryTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channel`:
-  [ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelmoderatorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelModeratorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelModeratorRequestRequestTypeDef
+
+def get_value() -> DescribeChannelModeratorRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelModeratorArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChannelModeratorArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelmoderatorresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelModeratorRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelModeratorArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelModeratorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelModeratorResponseTypeDef
+
+def get_value() -> DescribeChannelModeratorResponseTypeDef:
+    return {
+        "ChannelModerator": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelModeratorResponseTypeDef(TypedDict):
+    ChannelModerator: ChannelModeratorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelModerator`:
-  [ChannelModeratorTypeDef](./type_defs.md#channelmoderatortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describechannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelModeratorTypeDef](./type_defs.md#channelmoderatortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelRequestRequestTypeDef
+
+def get_value() -> DescribeChannelRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="describechannelresponsetypedef"></a>
+```python title="Definition"
+class DescribeChannelRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+```
 
 ## DescribeChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DescribeChannelResponseTypeDef
+
+def get_value() -> DescribeChannelResponseTypeDef:
+    return {
+        "Channel": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChannelResponseTypeDef(TypedDict):
+    Channel: ChannelTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channel`: [ChannelTypeDef](./type_defs.md#channeltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatechannelflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelTypeDef](./type_defs.md#channeltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import DisassociateChannelFlowRequestRequestTypeDef
+
+def get_value() -> DisassociateChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelFlowArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChannelFlowArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="getchannelmembershippreferencesrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelFlowArn: str,
+    ChimeBearer: str,
+```
 
 ## GetChannelMembershipPreferencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMembershipPreferencesRequestRequestTypeDef
+
+def get_value() -> GetChannelMembershipPreferencesRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="getchannelmembershippreferencesresponsetypedef"></a>
+```python title="Definition"
+class GetChannelMembershipPreferencesRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+```
 
 ## GetChannelMembershipPreferencesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMembershipPreferencesResponseTypeDef
+
+def get_value() -> GetChannelMembershipPreferencesResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "Preferences": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChannelMembershipPreferencesResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    Preferences: ChannelMembershipPreferencesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChannelArn`: `str`
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Preferences`:
-  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchannelmessagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChannelMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageRequestRequestTypeDef
+
+def get_value() -> GetChannelMessageRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ChimeBearer`: `str`
-
-<a id="getchannelmessageresponsetypedef"></a>
+```python title="Definition"
+class GetChannelMessageRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+```
 
 ## GetChannelMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageResponseTypeDef
+
+def get_value() -> GetChannelMessageResponseTypeDef:
+    return {
+        "ChannelMessage": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChannelMessageResponseTypeDef(TypedDict):
+    ChannelMessage: ChannelMessageTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelMessage`:
-  [ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getchannelmessagestatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageTypeDef](./type_defs.md#channelmessagetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetChannelMessageStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageStatusRequestRequestTypeDef
+
+def get_value() -> GetChannelMessageStatusRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ChimeBearer`: `str`
-
-<a id="getchannelmessagestatusresponsetypedef"></a>
+```python title="Definition"
+class GetChannelMessageStatusRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+```
 
 ## GetChannelMessageStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetChannelMessageStatusResponseTypeDef
+
+def get_value() -> GetChannelMessageStatusResponseTypeDef:
+    return {
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetChannelMessageStatusResponseTypeDef(TypedDict):
+    Status: ChannelMessageStatusStructureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Status`:
-  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getmessagingsessionendpointresponsetypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetMessagingSessionEndpointResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import GetMessagingSessionEndpointResponseTypeDef
+
+def get_value() -> GetMessagingSessionEndpointResponseTypeDef:
+    return {
+        "Endpoint": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMessagingSessionEndpointResponseTypeDef(TypedDict):
+    Endpoint: MessagingSessionEndpointTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Endpoint`:
-  [MessagingSessionEndpointTypeDef](./type_defs.md#messagingsessionendpointtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="identitytypedef"></a>
-
+1. See [:material-code-braces: MessagingSessionEndpointTypeDef](./type_defs.md#messagingsessionendpointtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## IdentityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import IdentityTypeDef
+
+def get_value() -> IdentityTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
-
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="lambdaconfigurationtypedef"></a>
+```python title="Definition"
+class IdentityTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## LambdaConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import LambdaConfigurationTypeDef
+
+def get_value() -> LambdaConfigurationTypeDef:
+    return {
+        "ResourceArn": ...,
+        "InvocationType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class LambdaConfigurationTypeDef(TypedDict):
+    ResourceArn: str,
+    InvocationType: InvocationTypeType,  # (1)
+```
 
-- `ResourceArn`: `str`
-- `InvocationType`: `Literal['ASYNC']` (see
-  [InvocationTypeType](./literals.md#invocationtypetype))
-
-<a id="listchannelbansrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InvocationTypeType](./literals.md#invocationtypetype) 
 ## ListChannelBansRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelBansRequestRequestTypeDef
+
+def get_value() -> ListChannelBansRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelbansresponsetypedef"></a>
+```python title="Definition"
+class ListChannelBansRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelBansResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelBansResponseTypeDef
+
+def get_value() -> ListChannelBansResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelBans": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelBansResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelBans: List[ChannelBanSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `NextToken`: `str`
-- `ChannelBans`:
-  `List`\[[ChannelBanSummaryTypeDef](./type_defs.md#channelbansummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelflowsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelBanSummaryTypeDef](./type_defs.md#channelbansummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelFlowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelFlowsRequestRequestTypeDef
+
+def get_value() -> ListChannelFlowsRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AppInstanceArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelflowsresponsetypedef"></a>
+```python title="Definition"
+class ListChannelFlowsRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelFlowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelFlowsResponseTypeDef
+
+def get_value() -> ListChannelFlowsResponseTypeDef:
+    return {
+        "ChannelFlows": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelFlowsResponseTypeDef(TypedDict):
+    ChannelFlows: List[ChannelFlowSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelFlows`:
-  `List`\[[ChannelFlowSummaryTypeDef](./type_defs.md#channelflowsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelmembershipsforappinstanceuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelFlowSummaryTypeDef](./type_defs.md#channelflowsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef
+
+def get_value() -> ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef:
+    return {
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelmembershipsforappinstanceuserresponsetypedef"></a>
+```python title="Definition"
+class ListChannelMembershipsForAppInstanceUserRequestRequestTypeDef(TypedDict):
+    ChimeBearer: str,
+    AppInstanceUserArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelMembershipsForAppInstanceUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMembershipsForAppInstanceUserResponseTypeDef
+
+def get_value() -> ListChannelMembershipsForAppInstanceUserResponseTypeDef:
+    return {
+        "ChannelMemberships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelMembershipsForAppInstanceUserResponseTypeDef(TypedDict):
+    ChannelMemberships: List[ChannelMembershipForAppInstanceUserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelMemberships`:
-  `List`\[[ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelmembershipsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMembershipForAppInstanceUserSummaryTypeDef](./type_defs.md#channelmembershipforappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMembershipsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMembershipsRequestRequestTypeDef
+
+def get_value() -> ListChannelMembershipsRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelMembershipsRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+    Type: NotRequired[ChannelMembershipTypeType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Type`: [ChannelMembershipTypeType](./literals.md#channelmembershiptypetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelmembershipsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelMembershipTypeType](./literals.md#channelmembershiptypetype) 
 ## ListChannelMembershipsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMembershipsResponseTypeDef
+
+def get_value() -> ListChannelMembershipsResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChannelMemberships": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelMembershipsResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ChannelMemberships: List[ChannelMembershipSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `ChannelMemberships`:
-  `List`\[[ChannelMembershipSummaryTypeDef](./type_defs.md#channelmembershipsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelmessagesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMembershipSummaryTypeDef](./type_defs.md#channelmembershipsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelMessagesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMessagesRequestRequestTypeDef
+
+def get_value() -> ListChannelMessagesRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelMessagesRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+    SortOrder: NotRequired[SortOrderType],  # (1)
+    NotBefore: NotRequired[Union[datetime, str]],
+    NotAfter: NotRequired[Union[datetime, str]],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-- `NotBefore`: `Union`\[`datetime`, `str`\]
-- `NotAfter`: `Union`\[`datetime`, `str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelmessagesresponsetypedef"></a>
-
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## ListChannelMessagesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelMessagesResponseTypeDef
+
+def get_value() -> ListChannelMessagesResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelMessages": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelMessagesResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelMessages: List[ChannelMessageSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `NextToken`: `str`
-- `ChannelMessages`:
-  `List`\[[ChannelMessageSummaryTypeDef](./type_defs.md#channelmessagesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelmoderatorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageSummaryTypeDef](./type_defs.md#channelmessagesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelModeratorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelModeratorsRequestRequestTypeDef
+
+def get_value() -> ListChannelModeratorsRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelmoderatorsresponsetypedef"></a>
+```python title="Definition"
+class ListChannelModeratorsRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelModeratorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelModeratorsResponseTypeDef
+
+def get_value() -> ListChannelModeratorsResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "NextToken": ...,
+        "ChannelModerators": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelModeratorsResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    NextToken: str,
+    ChannelModerators: List[ChannelModeratorSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `NextToken`: `str`
-- `ChannelModerators`:
-  `List`\[[ChannelModeratorSummaryTypeDef](./type_defs.md#channelmoderatorsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelsassociatedwithchannelflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelModeratorSummaryTypeDef](./type_defs.md#channelmoderatorsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef
+
+def get_value() -> ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelFlowArn`: `str`
-
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelsassociatedwithchannelflowresponsetypedef"></a>
+```python title="Definition"
+class ListChannelsAssociatedWithChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelFlowArn: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelsAssociatedWithChannelFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsAssociatedWithChannelFlowResponseTypeDef
+
+def get_value() -> ListChannelsAssociatedWithChannelFlowResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsAssociatedWithChannelFlowResponseTypeDef(TypedDict):
+    Channels: List[ChannelAssociatedWithFlowSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channels`:
-  `List`\[[ChannelAssociatedWithFlowSummaryTypeDef](./type_defs.md#channelassociatedwithflowsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelsmoderatedbyappinstanceuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelAssociatedWithFlowSummaryTypeDef](./type_defs.md#channelassociatedwithflowsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef
+
+def get_value() -> ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef:
+    return {
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `AppInstanceUserArn`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelsmoderatedbyappinstanceuserresponsetypedef"></a>
+```python title="Definition"
+class ListChannelsModeratedByAppInstanceUserRequestRequestTypeDef(TypedDict):
+    ChimeBearer: str,
+    AppInstanceUserArn: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListChannelsModeratedByAppInstanceUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsModeratedByAppInstanceUserResponseTypeDef
+
+def get_value() -> ListChannelsModeratedByAppInstanceUserResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsModeratedByAppInstanceUserResponseTypeDef(TypedDict):
+    Channels: List[ChannelModeratedByAppInstanceUserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channels`:
-  `List`\[[ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listchannelsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelModeratedByAppInstanceUserSummaryTypeDef](./type_defs.md#channelmoderatedbyappinstanceusersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListChannelsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsRequestRequestTypeDef
+
+def get_value() -> ListChannelsRequestRequestTypeDef:
+    return {
+        "AppInstanceArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsRequestRequestTypeDef(TypedDict):
+    AppInstanceArn: str,
+    ChimeBearer: str,
+    Privacy: NotRequired[ChannelPrivacyType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `AppInstanceArn`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Privacy`: [ChannelPrivacyType](./literals.md#channelprivacytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchannelsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelPrivacyType](./literals.md#channelprivacytype) 
 ## ListChannelsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListChannelsResponseTypeDef
+
+def get_value() -> ListChannelsResponseTypeDef:
+    return {
+        "Channels": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChannelsResponseTypeDef(TypedDict):
+    Channels: List[ChannelSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Channels`:
-  `List`\[[ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelSummaryTypeDef](./type_defs.md#channelsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="messageattributevaluetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MessageAttributeValueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import MessageAttributeValueTypeDef
+
+def get_value() -> MessageAttributeValueTypeDef:
+    return {
+        "StringValues": ...,
+    }
 ```
 
-Optional fields:
-
-- `StringValues`: `Sequence`\[`str`\]
-
-<a id="messagingsessionendpointtypedef"></a>
+```python title="Definition"
+class MessageAttributeValueTypeDef(TypedDict):
+    StringValues: NotRequired[Sequence[str]],
+```
 
 ## MessagingSessionEndpointTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import MessagingSessionEndpointTypeDef
+
+def get_value() -> MessagingSessionEndpointTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Optional fields:
-
-- `Url`: `str`
-
-<a id="processorconfigurationtypedef"></a>
+```python title="Definition"
+class MessagingSessionEndpointTypeDef(TypedDict):
+    Url: NotRequired[str],
+```
 
 ## ProcessorConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ProcessorConfigurationTypeDef
+
+def get_value() -> ProcessorConfigurationTypeDef:
+    return {
+        "Lambda": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProcessorConfigurationTypeDef(TypedDict):
+    Lambda: LambdaConfigurationTypeDef,  # (1)
+```
 
-- `Lambda`:
-  [LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef)
-
-<a id="processortypedef"></a>
-
+1. See [:material-code-braces: LambdaConfigurationTypeDef](./type_defs.md#lambdaconfigurationtypedef) 
 ## ProcessorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ProcessorTypeDef
+
+def get_value() -> ProcessorTypeDef:
+    return {
+        "Name": ...,
+        "Configuration": ...,
+        "ExecutionOrder": ...,
+        "FallbackAction": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ProcessorTypeDef(TypedDict):
+    Name: str,
+    Configuration: ProcessorConfigurationTypeDef,  # (1)
+    ExecutionOrder: int,
+    FallbackAction: FallbackActionType,  # (2)
+```
 
-- `Name`: `str`
-- `Configuration`:
-  [ProcessorConfigurationTypeDef](./type_defs.md#processorconfigurationtypedef)
-- `ExecutionOrder`: `int`
-- `FallbackAction`: [FallbackActionType](./literals.md#fallbackactiontype)
-
-<a id="pushnotificationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ProcessorConfigurationTypeDef](./type_defs.md#processorconfigurationtypedef) 
+2. See [:material-code-brackets: FallbackActionType](./literals.md#fallbackactiontype) 
 ## PushNotificationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import PushNotificationConfigurationTypeDef
+
+def get_value() -> PushNotificationConfigurationTypeDef:
+    return {
+        "Title": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PushNotificationConfigurationTypeDef(TypedDict):
+    Title: NotRequired[str],
+    Body: NotRequired[str],
+    Type: NotRequired[PushNotificationTypeType],  # (1)
+```
 
-- `Title`: `str`
-- `Body`: `str`
-- `Type`: [PushNotificationTypeType](./literals.md#pushnotificationtypetype)
-
-<a id="pushnotificationpreferencestypedef"></a>
-
+1. See [:material-code-brackets: PushNotificationTypeType](./literals.md#pushnotificationtypetype) 
 ## PushNotificationPreferencesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import PushNotificationPreferencesTypeDef
+
+def get_value() -> PushNotificationPreferencesTypeDef:
+    return {
+        "AllowNotifications": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PushNotificationPreferencesTypeDef(TypedDict):
+    AllowNotifications: AllowNotificationsType,  # (1)
+    FilterRule: NotRequired[str],
+```
 
-- `AllowNotifications`:
-  [AllowNotificationsType](./literals.md#allownotificationstype)
-
-Optional fields:
-
-- `FilterRule`: `str`
-
-<a id="putchannelmembershippreferencesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AllowNotificationsType](./literals.md#allownotificationstype) 
 ## PutChannelMembershipPreferencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import PutChannelMembershipPreferencesRequestRequestTypeDef
+
+def get_value() -> PutChannelMembershipPreferencesRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MemberArn": ...,
+        "ChimeBearer": ...,
+        "Preferences": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutChannelMembershipPreferencesRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MemberArn: str,
+    ChimeBearer: str,
+    Preferences: ChannelMembershipPreferencesTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `MemberArn`: `str`
-- `ChimeBearer`: `str`
-- `Preferences`:
-  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
-
-<a id="putchannelmembershippreferencesresponsetypedef"></a>
-
+1. See [:material-code-braces: ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef) 
 ## PutChannelMembershipPreferencesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import PutChannelMembershipPreferencesResponseTypeDef
+
+def get_value() -> PutChannelMembershipPreferencesResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Member": ...,
+        "Preferences": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutChannelMembershipPreferencesResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    Member: IdentityTypeDef,  # (1)
+    Preferences: ChannelMembershipPreferencesTypeDef,  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `ChannelArn`: `str`
-- `Member`: [IdentityTypeDef](./type_defs.md#identitytypedef)
-- `Preferences`:
-  [ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="redactchannelmessagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: IdentityTypeDef](./type_defs.md#identitytypedef) 
+2. See [:material-code-braces: ChannelMembershipPreferencesTypeDef](./type_defs.md#channelmembershippreferencestypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RedactChannelMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import RedactChannelMessageRequestRequestTypeDef
+
+def get_value() -> RedactChannelMessageRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ChimeBearer`: `str`
-
-<a id="redactchannelmessageresponsetypedef"></a>
+```python title="Definition"
+class RedactChannelMessageRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+```
 
 ## RedactChannelMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import RedactChannelMessageResponseTypeDef
+
+def get_value() -> RedactChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RedactChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sendchannelmessagerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SendChannelMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import SendChannelMessageRequestRequestTypeDef
+
+def get_value() -> SendChannelMessageRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Content": ...,
+        "Type": ...,
+        "Persistence": ...,
+        "ClientRequestToken": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendChannelMessageRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    Content: str,
+    Type: ChannelMessageTypeType,  # (1)
+    Persistence: ChannelMessagePersistenceTypeType,  # (2)
+    ClientRequestToken: str,
+    ChimeBearer: str,
+    Metadata: NotRequired[str],
+    PushNotification: NotRequired[PushNotificationConfigurationTypeDef],  # (3)
+    MessageAttributes: NotRequired[Mapping[str, MessageAttributeValueTypeDef]],  # (4)
+```
 
-- `ChannelArn`: `str`
-- `Content`: `str`
-- `Type`: [ChannelMessageTypeType](./literals.md#channelmessagetypetype)
-- `Persistence`:
-  [ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype)
-- `ClientRequestToken`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Metadata`: `str`
-- `PushNotification`:
-  [PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef)
-- `MessageAttributes`: `Mapping`\[`str`,
-  [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
-
-<a id="sendchannelmessageresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelMessageTypeType](./literals.md#channelmessagetypetype) 
+2. See [:material-code-brackets: ChannelMessagePersistenceTypeType](./literals.md#channelmessagepersistencetypetype) 
+3. See [:material-code-braces: PushNotificationConfigurationTypeDef](./type_defs.md#pushnotificationconfigurationtypedef) 
+4. See [:material-code-braces: MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef) 
 ## SendChannelMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import SendChannelMessageResponseTypeDef
+
+def get_value() -> SendChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SendChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    Status: ChannelMessageStatusStructureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `Status`:
-  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceARN`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceARN": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceARN`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatechannelflowrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateChannelFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelFlowRequestRequestTypeDef
+
+def get_value() -> UpdateChannelFlowRequestRequestTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+        "Processors": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelFlowRequestRequestTypeDef(TypedDict):
+    ChannelFlowArn: str,
+    Processors: Sequence[ProcessorTypeDef],  # (1)
+    Name: str,
+```
 
-- `ChannelFlowArn`: `str`
-- `Processors`:
-  `Sequence`\[[ProcessorTypeDef](./type_defs.md#processortypedef)\]
-- `Name`: `str`
-
-<a id="updatechannelflowresponsetypedef"></a>
-
+1. See [:material-code-braces: ProcessorTypeDef](./type_defs.md#processortypedef) 
 ## UpdateChannelFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelFlowResponseTypeDef
+
+def get_value() -> UpdateChannelFlowResponseTypeDef:
+    return {
+        "ChannelFlowArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelFlowResponseTypeDef(TypedDict):
+    ChannelFlowArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelFlowArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatechannelmessagerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelMessageRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelMessageRequestRequestTypeDef
+
+def get_value() -> UpdateChannelMessageRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Content`: `str`
-- `Metadata`: `str`
-
-<a id="updatechannelmessageresponsetypedef"></a>
+```python title="Definition"
+class UpdateChannelMessageRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    ChimeBearer: str,
+    Content: NotRequired[str],
+    Metadata: NotRequired[str],
+```
 
 ## UpdateChannelMessageResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelMessageResponseTypeDef
+
+def get_value() -> UpdateChannelMessageResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "MessageId": ...,
+        "Status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelMessageResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    MessageId: str,
+    Status: ChannelMessageStatusStructureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChannelArn`: `str`
-- `MessageId`: `str`
-- `Status`:
-  [ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatechannelreadmarkerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChannelMessageStatusStructureTypeDef](./type_defs.md#channelmessagestatusstructuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelReadMarkerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelReadMarkerRequestRequestTypeDef
+
+def get_value() -> UpdateChannelReadMarkerRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
-
-- `ChannelArn`: `str`
-- `ChimeBearer`: `str`
-
-<a id="updatechannelreadmarkerresponsetypedef"></a>
+```python title="Definition"
+class UpdateChannelReadMarkerRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    ChimeBearer: str,
+```
 
 ## UpdateChannelReadMarkerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelReadMarkerResponseTypeDef
+
+def get_value() -> UpdateChannelReadMarkerResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelReadMarkerResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updatechannelrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateChannelRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelRequestRequestTypeDef
+
+def get_value() -> UpdateChannelRequestRequestTypeDef:
+    return {
+        "ChannelArn": ...,
+        "Name": ...,
+        "Mode": ...,
+        "ChimeBearer": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelRequestRequestTypeDef(TypedDict):
+    ChannelArn: str,
+    Name: str,
+    Mode: ChannelModeType,  # (1)
+    ChimeBearer: str,
+    Metadata: NotRequired[str],
+```
 
-- `ChannelArn`: `str`
-- `Name`: `str`
-- `Mode`: [ChannelModeType](./literals.md#channelmodetype)
-- `ChimeBearer`: `str`
-
-Optional fields:
-
-- `Metadata`: `str`
-
-<a id="updatechannelresponsetypedef"></a>
-
+1. See [:material-code-brackets: ChannelModeType](./literals.md#channelmodetype) 
 ## UpdateChannelResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_chime_sdk_messaging.type_defs import UpdateChannelResponseTypeDef
+
+def get_value() -> UpdateChannelResponseTypeDef:
+    return {
+        "ChannelArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateChannelResponseTypeDef(TypedDict):
+    ChannelArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChannelArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

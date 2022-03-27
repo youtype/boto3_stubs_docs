@@ -1,28 +1,18 @@
-<a id="waiters-for-boto3-codegurureviewer-module"></a>
-
-# Waiters for boto3 CodeGuruReviewer module
+# Waiters
 
 > [Index](../README.md) > [CodeGuruReviewer](./README.md) > Waiters
 
-Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module
-[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+!!! note ""
 
-- [Waiters for boto3 CodeGuruReviewer module](#waiters-for-boto3-codegurureviewer-module)
-  - [CodeReviewCompletedWaiter](#codereviewcompletedwaiter)
-  - [RepositoryAssociationSucceededWaiter](#repositoryassociationsucceededwaiter)
-
-<a id="codereviewcompletedwaiter"></a>
+    Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+    type annotations stubs module [mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 ## CodeReviewCompletedWaiter
 
-Type annotations for
-`boto3.client("codeguru-reviewer").get_waiter("code_review_completed")`.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").get_waiter("code_review_completed")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.CodeReviewCompleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeguru_reviewer.waiter import CodeReviewCompletedWaiter
@@ -31,24 +21,39 @@ def get_code_review_completed_waiter() -> CodeReviewCompletedWaiter:
     return Session().client("codeguru-reviewer").get_waiter("code_review_completed")
 ```
 
-Boto3 documentation:
-[CodeGuruReviewer.Waiter.code_review_completed](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.CodeReviewCompleted)
 
-Arguments for `CodeReviewCompletedWaiter.wait` method:
+### wait
 
-- `CodeReviewArn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python CodeReviewCompletedWaiter.wait` method.
 
-<a id="repositoryassociationsucceededwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    CodeReviewArn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCodeReviewRequestCodeReviewCompletedWaitTypeDef = {  # (1)
+    "CodeReviewArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCodeReviewRequestCodeReviewCompletedWaitTypeDef](./type_defs.md#describecodereviewrequestcodereviewcompletedwaittypedef) 
 ## RepositoryAssociationSucceededWaiter
 
-Type annotations for
-`boto3.client("codeguru-reviewer").get_waiter("repository_association_succeeded")`.
+Type annotations and code completion for `#!python boto3.client("codeguru-reviewer").get_waiter("repository_association_succeeded")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.RepositoryAssociationSucceeded)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codeguru_reviewer.waiter import RepositoryAssociationSucceededWaiter
@@ -57,10 +62,30 @@ def get_repository_association_succeeded_waiter() -> RepositoryAssociationSuccee
     return Session().client("codeguru-reviewer").get_waiter("repository_association_succeeded")
 ```
 
-Boto3 documentation:
-[CodeGuruReviewer.Waiter.repository_association_succeeded](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Waiter.RepositoryAssociationSucceeded)
 
-Arguments for `RepositoryAssociationSucceededWaiter.wait` method:
+### wait
 
-- `AssociationArn`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python RepositoryAssociationSucceededWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    AssociationArn: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeRepositoryAssociationRequestRepositoryAssociationSucceededWaitTypeDef = {  # (1)
+    "AssociationArn": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeRepositoryAssociationRequestRepositoryAssociationSucceededWaitTypeDef](./type_defs.md#describerepositoryassociationrequestrepositoryassociationsucceededwaittypedef) 

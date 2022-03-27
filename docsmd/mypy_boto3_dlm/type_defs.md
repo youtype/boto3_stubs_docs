@@ -1,563 +1,668 @@
-<a id="typed-dictionaries-for-boto3-dlm-module"></a>
-
-# Typed dictionaries for boto3 DLM module
+# Typed dictionaries
 
 > [Index](../README.md) > [DLM](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
-type annotations stubs module
-[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
+!!! note ""
 
-- [Typed dictionaries for boto3 DLM module](#typed-dictionaries-for-boto3-dlm-module)
-  - [ActionTypeDef](#actiontypedef)
-  - [CreateLifecyclePolicyRequestRequestTypeDef](#createlifecyclepolicyrequestrequesttypedef)
-  - [CreateLifecyclePolicyResponseTypeDef](#createlifecyclepolicyresponsetypedef)
-  - [CreateRuleTypeDef](#createruletypedef)
-  - [CrossRegionCopyActionTypeDef](#crossregioncopyactiontypedef)
-  - [CrossRegionCopyDeprecateRuleTypeDef](#crossregioncopydeprecateruletypedef)
-  - [CrossRegionCopyRetainRuleTypeDef](#crossregioncopyretainruletypedef)
-  - [CrossRegionCopyRuleTypeDef](#crossregioncopyruletypedef)
-  - [DeleteLifecyclePolicyRequestRequestTypeDef](#deletelifecyclepolicyrequestrequesttypedef)
-  - [DeprecateRuleTypeDef](#deprecateruletypedef)
-  - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
-  - [EventParametersTypeDef](#eventparameterstypedef)
-  - [EventSourceTypeDef](#eventsourcetypedef)
-  - [FastRestoreRuleTypeDef](#fastrestoreruletypedef)
-  - [GetLifecyclePoliciesRequestRequestTypeDef](#getlifecyclepoliciesrequestrequesttypedef)
-  - [GetLifecyclePoliciesResponseTypeDef](#getlifecyclepoliciesresponsetypedef)
-  - [GetLifecyclePolicyRequestRequestTypeDef](#getlifecyclepolicyrequestrequesttypedef)
-  - [GetLifecyclePolicyResponseTypeDef](#getlifecyclepolicyresponsetypedef)
-  - [LifecyclePolicySummaryTypeDef](#lifecyclepolicysummarytypedef)
-  - [LifecyclePolicyTypeDef](#lifecyclepolicytypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ParametersTypeDef](#parameterstypedef)
-  - [PolicyDetailsTypeDef](#policydetailstypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RetainRuleTypeDef](#retainruletypedef)
-  - [ScheduleTypeDef](#scheduletypedef)
-  - [ShareRuleTypeDef](#shareruletypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateLifecyclePolicyRequestRequestTypeDef](#updatelifecyclepolicyrequestrequesttypedef)
-
-<a id="actiontypedef"></a>
+    Auto-generated documentation for [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
+    type annotations stubs module [mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ## ActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ActionTypeDef
+
+def get_value() -> ActionTypeDef:
+    return {
+        "Name": ...,
+        "CrossRegionCopy": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ActionTypeDef(TypedDict):
+    Name: str,
+    CrossRegionCopy: Sequence[CrossRegionCopyActionTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `CrossRegionCopy`:
-  `Sequence`\[[CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef)\]
-
-<a id="createlifecyclepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrossRegionCopyActionTypeDef](./type_defs.md#crossregioncopyactiontypedef) 
 ## CreateLifecyclePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyRequestRequestTypeDef
+
+def get_value() -> CreateLifecyclePolicyRequestRequestTypeDef:
+    return {
+        "ExecutionRoleArn": ...,
+        "Description": ...,
+        "State": ...,
+        "PolicyDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLifecyclePolicyRequestRequestTypeDef(TypedDict):
+    ExecutionRoleArn: str,
+    Description: str,
+    State: SettablePolicyStateValuesType,  # (1)
+    PolicyDetails: PolicyDetailsTypeDef,  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `ExecutionRoleArn`: `str`
-- `Description`: `str`
-- `State`:
-  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
-- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createlifecyclepolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype) 
+2. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 
 ## CreateLifecyclePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CreateLifecyclePolicyResponseTypeDef
+
+def get_value() -> CreateLifecyclePolicyResponseTypeDef:
+    return {
+        "PolicyId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateLifecyclePolicyResponseTypeDef(TypedDict):
+    PolicyId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `PolicyId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createruletypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CreateRuleTypeDef
+
+def get_value() -> CreateRuleTypeDef:
+    return {
+        "Location": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CreateRuleTypeDef(TypedDict):
+    Location: NotRequired[LocationValuesType],  # (1)
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[IntervalUnitValuesType],  # (2)
+    Times: NotRequired[Sequence[str]],
+    CronExpression: NotRequired[str],
+```
 
-- `Location`: [LocationValuesType](./literals.md#locationvaluestype)
-- `Interval`: `int`
-- `IntervalUnit`: `Literal['HOURS']` (see
-  [IntervalUnitValuesType](./literals.md#intervalunitvaluestype))
-- `Times`: `Sequence`\[`str`\]
-- `CronExpression`: `str`
-
-<a id="crossregioncopyactiontypedef"></a>
-
+1. See [:material-code-brackets: LocationValuesType](./literals.md#locationvaluestype) 
+2. See [:material-code-brackets: IntervalUnitValuesType](./literals.md#intervalunitvaluestype) 
 ## CrossRegionCopyActionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CrossRegionCopyActionTypeDef
+
+def get_value() -> CrossRegionCopyActionTypeDef:
+    return {
+        "Target": ...,
+        "EncryptionConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CrossRegionCopyActionTypeDef(TypedDict):
+    Target: str,
+    EncryptionConfiguration: EncryptionConfigurationTypeDef,  # (1)
+    RetainRule: NotRequired[CrossRegionCopyRetainRuleTypeDef],  # (2)
+```
 
-- `Target`: `str`
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-
-Optional fields:
-
-- `RetainRule`:
-  [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
-
-<a id="crossregioncopydeprecateruletypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+2. See [:material-code-braces: CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef) 
 ## CrossRegionCopyDeprecateRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CrossRegionCopyDeprecateRuleTypeDef
+
+def get_value() -> CrossRegionCopyDeprecateRuleTypeDef:
+    return {
+        "Interval": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrossRegionCopyDeprecateRuleTypeDef(TypedDict):
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `Interval`: `int`
-- `IntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="crossregioncopyretainruletypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## CrossRegionCopyRetainRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CrossRegionCopyRetainRuleTypeDef
+
+def get_value() -> CrossRegionCopyRetainRuleTypeDef:
+    return {
+        "Interval": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CrossRegionCopyRetainRuleTypeDef(TypedDict):
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `Interval`: `int`
-- `IntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="crossregioncopyruletypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## CrossRegionCopyRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import CrossRegionCopyRuleTypeDef
+
+def get_value() -> CrossRegionCopyRuleTypeDef:
+    return {
+        "Encrypted": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CrossRegionCopyRuleTypeDef(TypedDict):
+    Encrypted: bool,
+    TargetRegion: NotRequired[str],
+    Target: NotRequired[str],
+    CmkArn: NotRequired[str],
+    CopyTags: NotRequired[bool],
+    RetainRule: NotRequired[CrossRegionCopyRetainRuleTypeDef],  # (1)
+    DeprecateRule: NotRequired[CrossRegionCopyDeprecateRuleTypeDef],  # (2)
+```
 
-- `Encrypted`: `bool`
-
-Optional fields:
-
-- `TargetRegion`: `str`
-- `Target`: `str`
-- `CmkArn`: `str`
-- `CopyTags`: `bool`
-- `RetainRule`:
-  [CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef)
-- `DeprecateRule`:
-  [CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef)
-
-<a id="deletelifecyclepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CrossRegionCopyRetainRuleTypeDef](./type_defs.md#crossregioncopyretainruletypedef) 
+2. See [:material-code-braces: CrossRegionCopyDeprecateRuleTypeDef](./type_defs.md#crossregioncopydeprecateruletypedef) 
 ## DeleteLifecyclePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import DeleteLifecyclePolicyRequestRequestTypeDef
+
+def get_value() -> DeleteLifecyclePolicyRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-<a id="deprecateruletypedef"></a>
+```python title="Definition"
+class DeleteLifecyclePolicyRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+```
 
 ## DeprecateRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import DeprecateRuleTypeDef
+
+def get_value() -> DeprecateRuleTypeDef:
+    return {
+        "Count": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DeprecateRuleTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `Count`: `int`
-- `Interval`: `int`
-- `IntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="encryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import EncryptionConfigurationTypeDef
+
+def get_value() -> EncryptionConfigurationTypeDef:
+    return {
+        "Encrypted": ...,
+    }
 ```
 
-Required fields:
-
-- `Encrypted`: `bool`
-
-Optional fields:
-
-- `CmkArn`: `str`
-
-<a id="eventparameterstypedef"></a>
+```python title="Definition"
+class EncryptionConfigurationTypeDef(TypedDict):
+    Encrypted: bool,
+    CmkArn: NotRequired[str],
+```
 
 ## EventParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import EventParametersTypeDef
+
+def get_value() -> EventParametersTypeDef:
+    return {
+        "EventType": ...,
+        "SnapshotOwner": ...,
+        "DescriptionRegex": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventParametersTypeDef(TypedDict):
+    EventType: EventTypeValuesType,  # (1)
+    SnapshotOwner: Sequence[str],
+    DescriptionRegex: str,
+```
 
-- `EventType`: `Literal['shareSnapshot']` (see
-  [EventTypeValuesType](./literals.md#eventtypevaluestype))
-- `SnapshotOwner`: `Sequence`\[`str`\]
-- `DescriptionRegex`: `str`
-
-<a id="eventsourcetypedef"></a>
-
+1. See [:material-code-brackets: EventTypeValuesType](./literals.md#eventtypevaluestype) 
 ## EventSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import EventSourceTypeDef
+
+def get_value() -> EventSourceTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EventSourceTypeDef(TypedDict):
+    Type: EventSourceValuesType,  # (1)
+    Parameters: NotRequired[EventParametersTypeDef],  # (2)
+```
 
-- `Type`: `Literal['MANAGED_CWE']` (see
-  [EventSourceValuesType](./literals.md#eventsourcevaluestype))
-
-Optional fields:
-
-- `Parameters`: [EventParametersTypeDef](./type_defs.md#eventparameterstypedef)
-
-<a id="fastrestoreruletypedef"></a>
-
+1. See [:material-code-brackets: EventSourceValuesType](./literals.md#eventsourcevaluestype) 
+2. See [:material-code-braces: EventParametersTypeDef](./type_defs.md#eventparameterstypedef) 
 ## FastRestoreRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import FastRestoreRuleTypeDef
+
+def get_value() -> FastRestoreRuleTypeDef:
+    return {
+        "AvailabilityZones": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class FastRestoreRuleTypeDef(TypedDict):
+    AvailabilityZones: Sequence[str],
+    Count: NotRequired[int],
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `AvailabilityZones`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `Count`: `int`
-- `Interval`: `int`
-- `IntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="getlifecyclepoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## GetLifecyclePoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesRequestRequestTypeDef
+
+def get_value() -> GetLifecyclePoliciesRequestRequestTypeDef:
+    return {
+        "PolicyIds": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class GetLifecyclePoliciesRequestRequestTypeDef(TypedDict):
+    PolicyIds: NotRequired[Sequence[str]],
+    State: NotRequired[GettablePolicyStateValuesType],  # (1)
+    ResourceTypes: NotRequired[Sequence[ResourceTypeValuesType]],  # (2)
+    TargetTags: NotRequired[Sequence[str]],
+    TagsToAdd: NotRequired[Sequence[str]],
+```
 
-- `PolicyIds`: `Sequence`\[`str`\]
-- `State`:
-  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
-- `ResourceTypes`:
-  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
-- `TargetTags`: `Sequence`\[`str`\]
-- `TagsToAdd`: `Sequence`\[`str`\]
-
-<a id="getlifecyclepoliciesresponsetypedef"></a>
-
+1. See [:material-code-brackets: GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype) 
+2. See [:material-code-brackets: ResourceTypeValuesType](./literals.md#resourcetypevaluestype) 
 ## GetLifecyclePoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import GetLifecyclePoliciesResponseTypeDef
+
+def get_value() -> GetLifecyclePoliciesResponseTypeDef:
+    return {
+        "Policies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLifecyclePoliciesResponseTypeDef(TypedDict):
+    Policies: List[LifecyclePolicySummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policies`:
-  `List`\[[LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getlifecyclepolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LifecyclePolicySummaryTypeDef](./type_defs.md#lifecyclepolicysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetLifecyclePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import GetLifecyclePolicyRequestRequestTypeDef
+
+def get_value() -> GetLifecyclePolicyRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
-
-- `PolicyId`: `str`
-
-<a id="getlifecyclepolicyresponsetypedef"></a>
+```python title="Definition"
+class GetLifecyclePolicyRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+```
 
 ## GetLifecyclePolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import GetLifecyclePolicyResponseTypeDef
+
+def get_value() -> GetLifecyclePolicyResponseTypeDef:
+    return {
+        "Policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetLifecyclePolicyResponseTypeDef(TypedDict):
+    Policy: LifecyclePolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Policy`: [LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="lifecyclepolicysummarytypedef"></a>
-
+1. See [:material-code-braces: LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LifecyclePolicySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import LifecyclePolicySummaryTypeDef
+
+def get_value() -> LifecyclePolicySummaryTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecyclePolicySummaryTypeDef(TypedDict):
+    PolicyId: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[GettablePolicyStateValuesType],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+    PolicyType: NotRequired[PolicyTypeValuesType],  # (2)
+```
 
-- `PolicyId`: `str`
-- `Description`: `str`
-- `State`:
-  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
-
-<a id="lifecyclepolicytypedef"></a>
-
+1. See [:material-code-brackets: GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype) 
+2. See [:material-code-brackets: PolicyTypeValuesType](./literals.md#policytypevaluestype) 
 ## LifecyclePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import LifecyclePolicyTypeDef
+
+def get_value() -> LifecyclePolicyTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LifecyclePolicyTypeDef(TypedDict):
+    PolicyId: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[GettablePolicyStateValuesType],  # (1)
+    StatusMessage: NotRequired[str],
+    ExecutionRoleArn: NotRequired[str],
+    DateCreated: NotRequired[datetime],
+    DateModified: NotRequired[datetime],
+    PolicyDetails: NotRequired[PolicyDetailsTypeDef],  # (2)
+    Tags: NotRequired[Dict[str, str]],
+    PolicyArn: NotRequired[str],
+```
 
-- `PolicyId`: `str`
-- `Description`: `str`
-- `State`:
-  [GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype)
-- `StatusMessage`: `str`
-- `ExecutionRoleArn`: `str`
-- `DateCreated`: `datetime`
-- `DateModified`: `datetime`
-- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-- `PolicyArn`: `str`
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: GettablePolicyStateValuesType](./literals.md#gettablepolicystatevaluestype) 
+2. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="parameterstypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ParametersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ParametersTypeDef
+
+def get_value() -> ParametersTypeDef:
+    return {
+        "ExcludeBootVolume": ...,
+    }
 ```
 
-Optional fields:
-
-- `ExcludeBootVolume`: `bool`
-- `NoReboot`: `bool`
-
-<a id="policydetailstypedef"></a>
+```python title="Definition"
+class ParametersTypeDef(TypedDict):
+    ExcludeBootVolume: NotRequired[bool],
+    NoReboot: NotRequired[bool],
+```
 
 ## PolicyDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import PolicyDetailsTypeDef
+
+def get_value() -> PolicyDetailsTypeDef:
+    return {
+        "PolicyType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PolicyDetailsTypeDef(TypedDict):
+    PolicyType: NotRequired[PolicyTypeValuesType],  # (1)
+    ResourceTypes: NotRequired[Sequence[ResourceTypeValuesType]],  # (2)
+    ResourceLocations: NotRequired[Sequence[ResourceLocationValuesType]],  # (3)
+    TargetTags: NotRequired[Sequence[TagTypeDef]],  # (4)
+    Schedules: NotRequired[Sequence[ScheduleTypeDef]],  # (5)
+    Parameters: NotRequired[ParametersTypeDef],  # (6)
+    EventSource: NotRequired[EventSourceTypeDef],  # (7)
+    Actions: NotRequired[Sequence[ActionTypeDef]],  # (8)
+```
 
-- `PolicyType`: [PolicyTypeValuesType](./literals.md#policytypevaluestype)
-- `ResourceTypes`:
-  `Sequence`\[[ResourceTypeValuesType](./literals.md#resourcetypevaluestype)\]
-- `ResourceLocations`:
-  `Sequence`\[[ResourceLocationValuesType](./literals.md#resourcelocationvaluestype)\]
-- `TargetTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Schedules`: `Sequence`\[[ScheduleTypeDef](./type_defs.md#scheduletypedef)\]
-- `Parameters`: [ParametersTypeDef](./type_defs.md#parameterstypedef)
-- `EventSource`: [EventSourceTypeDef](./type_defs.md#eventsourcetypedef)
-- `Actions`: `Sequence`\[[ActionTypeDef](./type_defs.md#actiontypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: PolicyTypeValuesType](./literals.md#policytypevaluestype) 
+2. See [:material-code-brackets: ResourceTypeValuesType](./literals.md#resourcetypevaluestype) 
+3. See [:material-code-brackets: ResourceLocationValuesType](./literals.md#resourcelocationvaluestype) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: ScheduleTypeDef](./type_defs.md#scheduletypedef) 
+6. See [:material-code-braces: ParametersTypeDef](./type_defs.md#parameterstypedef) 
+7. See [:material-code-braces: EventSourceTypeDef](./type_defs.md#eventsourcetypedef) 
+8. See [:material-code-braces: ActionTypeDef](./type_defs.md#actiontypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="retainruletypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## RetainRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import RetainRuleTypeDef
+
+def get_value() -> RetainRuleTypeDef:
+    return {
+        "Count": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RetainRuleTypeDef(TypedDict):
+    Count: NotRequired[int],
+    Interval: NotRequired[int],
+    IntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `Count`: `int`
-- `Interval`: `int`
-- `IntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="scheduletypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## ScheduleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ScheduleTypeDef
+
+def get_value() -> ScheduleTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ScheduleTypeDef(TypedDict):
+    Name: NotRequired[str],
+    CopyTags: NotRequired[bool],
+    TagsToAdd: NotRequired[Sequence[TagTypeDef]],  # (1)
+    VariableTags: NotRequired[Sequence[TagTypeDef]],  # (1)
+    CreateRule: NotRequired[CreateRuleTypeDef],  # (3)
+    RetainRule: NotRequired[RetainRuleTypeDef],  # (4)
+    FastRestoreRule: NotRequired[FastRestoreRuleTypeDef],  # (5)
+    CrossRegionCopyRules: NotRequired[Sequence[CrossRegionCopyRuleTypeDef]],  # (6)
+    ShareRules: NotRequired[Sequence[ShareRuleTypeDef]],  # (7)
+    DeprecateRule: NotRequired[DeprecateRuleTypeDef],  # (8)
+```
 
-- `Name`: `str`
-- `CopyTags`: `bool`
-- `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `VariableTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `CreateRule`: [CreateRuleTypeDef](./type_defs.md#createruletypedef)
-- `RetainRule`: [RetainRuleTypeDef](./type_defs.md#retainruletypedef)
-- `FastRestoreRule`:
-  [FastRestoreRuleTypeDef](./type_defs.md#fastrestoreruletypedef)
-- `CrossRegionCopyRules`:
-  `Sequence`\[[CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef)\]
-- `ShareRules`:
-  `Sequence`\[[ShareRuleTypeDef](./type_defs.md#shareruletypedef)\]
-- `DeprecateRule`: [DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef)
-
-<a id="shareruletypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateRuleTypeDef](./type_defs.md#createruletypedef) 
+4. See [:material-code-braces: RetainRuleTypeDef](./type_defs.md#retainruletypedef) 
+5. See [:material-code-braces: FastRestoreRuleTypeDef](./type_defs.md#fastrestoreruletypedef) 
+6. See [:material-code-braces: CrossRegionCopyRuleTypeDef](./type_defs.md#crossregioncopyruletypedef) 
+7. See [:material-code-braces: ShareRuleTypeDef](./type_defs.md#shareruletypedef) 
+8. See [:material-code-braces: DeprecateRuleTypeDef](./type_defs.md#deprecateruletypedef) 
 ## ShareRuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import ShareRuleTypeDef
+
+def get_value() -> ShareRuleTypeDef:
+    return {
+        "TargetAccounts": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ShareRuleTypeDef(TypedDict):
+    TargetAccounts: Sequence[str],
+    UnshareInterval: NotRequired[int],
+    UnshareIntervalUnit: NotRequired[RetentionIntervalUnitValuesType],  # (1)
+```
 
-- `TargetAccounts`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `UnshareInterval`: `int`
-- `UnshareIntervalUnit`:
-  [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="tagtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+```
 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: str,
+    Value: str,
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updatelifecyclepolicyrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateLifecyclePolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_dlm.type_defs import UpdateLifecyclePolicyRequestRequestTypeDef
+
+def get_value() -> UpdateLifecyclePolicyRequestRequestTypeDef:
+    return {
+        "PolicyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateLifecyclePolicyRequestRequestTypeDef(TypedDict):
+    PolicyId: str,
+    ExecutionRoleArn: NotRequired[str],
+    State: NotRequired[SettablePolicyStateValuesType],  # (1)
+    Description: NotRequired[str],
+    PolicyDetails: NotRequired[PolicyDetailsTypeDef],  # (2)
+```
 
-- `PolicyId`: `str`
-
-Optional fields:
-
-- `ExecutionRoleArn`: `str`
-- `State`:
-  [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
-- `Description`: `str`
-- `PolicyDetails`: [PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef)
+1. See [:material-code-brackets: SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype) 
+2. See [:material-code-braces: PolicyDetailsTypeDef](./type_defs.md#policydetailstypedef) 

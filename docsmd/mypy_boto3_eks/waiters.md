@@ -1,33 +1,18 @@
-<a id="waiters-for-boto3-eks-module"></a>
-
-# Waiters for boto3 EKS module
+# Waiters
 
 > [Index](../README.md) > [EKS](./README.md) > Waiters
 
-Auto-generated documentation for
-[EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
-type annotations stubs module
-[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
+!!! note ""
 
-- [Waiters for boto3 EKS module](#waiters-for-boto3-eks-module)
-  - [AddonActiveWaiter](#addonactivewaiter)
-  - [AddonDeletedWaiter](#addondeletedwaiter)
-  - [ClusterActiveWaiter](#clusteractivewaiter)
-  - [ClusterDeletedWaiter](#clusterdeletedwaiter)
-  - [FargateProfileActiveWaiter](#fargateprofileactivewaiter)
-  - [FargateProfileDeletedWaiter](#fargateprofiledeletedwaiter)
-  - [NodegroupActiveWaiter](#nodegroupactivewaiter)
-  - [NodegroupDeletedWaiter](#nodegroupdeletedwaiter)
-
-<a id="addonactivewaiter"></a>
+    Auto-generated documentation for [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
+    type annotations stubs module [mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 ## AddonActiveWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("addon_active")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("addon_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import AddonActiveWaiter
@@ -36,24 +21,41 @@ def get_addon_active_waiter() -> AddonActiveWaiter:
     return Session().client("eks").get_waiter("addon_active")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.addon_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonActive)
 
-Arguments for `AddonActiveWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AddonActiveWaiter.wait` method.
 
-<a id="addondeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddonRequestAddonActiveWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddonRequestAddonActiveWaitTypeDef](./type_defs.md#describeaddonrequestaddonactivewaittypedef) 
 ## AddonDeletedWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("addon_deleted")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("addon_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import AddonDeletedWaiter
@@ -62,24 +64,41 @@ def get_addon_deleted_waiter() -> AddonDeletedWaiter:
     return Session().client("eks").get_waiter("addon_deleted")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.addon_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.AddonDeleted)
 
-Arguments for `AddonDeletedWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `addonName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python AddonDeletedWaiter.wait` method.
 
-<a id="clusteractivewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    addonName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAddonRequestAddonDeletedWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "addonName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAddonRequestAddonDeletedWaitTypeDef](./type_defs.md#describeaddonrequestaddondeletedwaittypedef) 
 ## ClusterActiveWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("cluster_active")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("cluster_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import ClusterActiveWaiter
@@ -88,23 +107,39 @@ def get_cluster_active_waiter() -> ClusterActiveWaiter:
     return Session().client("eks").get_waiter("cluster_active")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.cluster_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterActive)
 
-Arguments for `ClusterActiveWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ClusterActiveWaiter.wait` method.
 
-<a id="clusterdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterRequestClusterActiveWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterRequestClusterActiveWaitTypeDef](./type_defs.md#describeclusterrequestclusteractivewaittypedef) 
 ## ClusterDeletedWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("cluster_deleted")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("cluster_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import ClusterDeletedWaiter
@@ -113,24 +148,39 @@ def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
     return Session().client("eks").get_waiter("cluster_deleted")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.cluster_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.ClusterDeleted)
 
-Arguments for `ClusterDeletedWaiter.wait` method:
+### wait
 
-- `name`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ClusterDeletedWaiter.wait` method.
 
-<a id="fargateprofileactivewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    name: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeClusterRequestClusterDeletedWaitTypeDef = {  # (1)
+    "name": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeClusterRequestClusterDeletedWaitTypeDef](./type_defs.md#describeclusterrequestclusterdeletedwaittypedef) 
 ## FargateProfileActiveWaiter
 
-Type annotations for
-`boto3.client("eks").get_waiter("fargate_profile_active")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("fargate_profile_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import FargateProfileActiveWaiter
@@ -139,25 +189,41 @@ def get_fargate_profile_active_waiter() -> FargateProfileActiveWaiter:
     return Session().client("eks").get_waiter("fargate_profile_active")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.fargate_profile_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileActive)
 
-Arguments for `FargateProfileActiveWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `fargateProfileName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FargateProfileActiveWaiter.wait` method.
 
-<a id="fargateprofiledeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    fargateProfileName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "fargateProfileName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFargateProfileRequestFargateProfileActiveWaitTypeDef](./type_defs.md#describefargateprofilerequestfargateprofileactivewaittypedef) 
 ## FargateProfileDeletedWaiter
 
-Type annotations for
-`boto3.client("eks").get_waiter("fargate_profile_deleted")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("fargate_profile_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import FargateProfileDeletedWaiter
@@ -166,24 +232,41 @@ def get_fargate_profile_deleted_waiter() -> FargateProfileDeletedWaiter:
     return Session().client("eks").get_waiter("fargate_profile_deleted")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.fargate_profile_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.FargateProfileDeleted)
 
-Arguments for `FargateProfileDeletedWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `fargateProfileName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python FargateProfileDeletedWaiter.wait` method.
 
-<a id="nodegroupactivewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    fargateProfileName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "fargateProfileName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeFargateProfileRequestFargateProfileDeletedWaitTypeDef](./type_defs.md#describefargateprofilerequestfargateprofiledeletedwaittypedef) 
 ## NodegroupActiveWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("nodegroup_active")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("nodegroup_active")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupActive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import NodegroupActiveWaiter
@@ -192,24 +275,41 @@ def get_nodegroup_active_waiter() -> NodegroupActiveWaiter:
     return Session().client("eks").get_waiter("nodegroup_active")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.nodegroup_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupActive)
 
-Arguments for `NodegroupActiveWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NodegroupActiveWaiter.wait` method.
 
-<a id="nodegroupdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNodegroupRequestNodegroupActiveWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNodegroupRequestNodegroupActiveWaitTypeDef](./type_defs.md#describenodegrouprequestnodegroupactivewaittypedef) 
 ## NodegroupDeletedWaiter
 
-Type annotations for `boto3.client("eks").get_waiter("nodegroup_deleted")`.
+Type annotations and code completion for `#!python boto3.client("eks").get_waiter("nodegroup_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_eks.waiter import NodegroupDeletedWaiter
@@ -218,11 +318,32 @@ def get_nodegroup_deleted_waiter() -> NodegroupDeletedWaiter:
     return Session().client("eks").get_waiter("nodegroup_deleted")
 ```
 
-Boto3 documentation:
-[EKS.Waiter.nodegroup_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Waiter.NodegroupDeleted)
 
-Arguments for `NodegroupDeletedWaiter.wait` method:
+### wait
 
-- `clusterName`: `str` *(required)*
-- `nodegroupName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NodegroupDeletedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    clusterName: str,
+    nodegroupName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNodegroupRequestNodegroupDeletedWaitTypeDef = {  # (1)
+    "clusterName": ...,
+    "nodegroupName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNodegroupRequestNodegroupDeletedWaitTypeDef](./type_defs.md#describenodegrouprequestnodegroupdeletedwaittypedef) 

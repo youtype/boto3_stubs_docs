@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-databasemigrationservice-module"></a>
-
-# Type annotations for boto3 DatabaseMigrationService module
+#  DatabaseMigrationService module
 
 > [Index](../README.md) > DatabaseMigrationService
 
-Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module
-[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
+!!! note ""
 
-- [Type annotations for boto3 DatabaseMigrationService module](#type-annotations-for-boto3-databasemigrationservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DatabaseMigrationServiceClient](#databasemigrationserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+    type annotations stubs module [mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DatabaseMigrationService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[dms]'
 python -m pip install mypy-boto3-dms
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,132 +42,37 @@ python -m pip install mypy-boto3-dms
 python -m pip uninstall -y mypy-boto3-dms
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="databasemigrationserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DatabaseMigrationServiceClient
 
-Type annotations for `boto3.client("dms")` as
-[DatabaseMigrationServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dms")` as [DatabaseMigrationServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
+
+def get_client() -> DatabaseMigrationServiceClient:
+    return Session().cleint("dms")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [add_tags_to_resource](./client.md#add_tags_to_resource)
-- [apply_pending_maintenance_action](./client.md#apply_pending_maintenance_action)
-- [can_paginate](./client.md#can_paginate)
-- [cancel_replication_task_assessment_run](./client.md#cancel_replication_task_assessment_run)
-- [create_endpoint](./client.md#create_endpoint)
-- [create_event_subscription](./client.md#create_event_subscription)
-- [create_replication_instance](./client.md#create_replication_instance)
-- [create_replication_subnet_group](./client.md#create_replication_subnet_group)
-- [create_replication_task](./client.md#create_replication_task)
-- [delete_certificate](./client.md#delete_certificate)
-- [delete_connection](./client.md#delete_connection)
-- [delete_endpoint](./client.md#delete_endpoint)
-- [delete_event_subscription](./client.md#delete_event_subscription)
-- [delete_replication_instance](./client.md#delete_replication_instance)
-- [delete_replication_subnet_group](./client.md#delete_replication_subnet_group)
-- [delete_replication_task](./client.md#delete_replication_task)
-- [delete_replication_task_assessment_run](./client.md#delete_replication_task_assessment_run)
-- [describe_account_attributes](./client.md#describe_account_attributes)
-- [describe_applicable_individual_assessments](./client.md#describe_applicable_individual_assessments)
-- [describe_certificates](./client.md#describe_certificates)
-- [describe_connections](./client.md#describe_connections)
-- [describe_endpoint_settings](./client.md#describe_endpoint_settings)
-- [describe_endpoint_types](./client.md#describe_endpoint_types)
-- [describe_endpoints](./client.md#describe_endpoints)
-- [describe_event_categories](./client.md#describe_event_categories)
-- [describe_event_subscriptions](./client.md#describe_event_subscriptions)
-- [describe_events](./client.md#describe_events)
-- [describe_orderable_replication_instances](./client.md#describe_orderable_replication_instances)
-- [describe_pending_maintenance_actions](./client.md#describe_pending_maintenance_actions)
-- [describe_refresh_schemas_status](./client.md#describe_refresh_schemas_status)
-- [describe_replication_instance_task_logs](./client.md#describe_replication_instance_task_logs)
-- [describe_replication_instances](./client.md#describe_replication_instances)
-- [describe_replication_subnet_groups](./client.md#describe_replication_subnet_groups)
-- [describe_replication_task_assessment_results](./client.md#describe_replication_task_assessment_results)
-- [describe_replication_task_assessment_runs](./client.md#describe_replication_task_assessment_runs)
-- [describe_replication_task_individual_assessments](./client.md#describe_replication_task_individual_assessments)
-- [describe_replication_tasks](./client.md#describe_replication_tasks)
-- [describe_schemas](./client.md#describe_schemas)
-- [describe_table_statistics](./client.md#describe_table_statistics)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [import_certificate](./client.md#import_certificate)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [modify_endpoint](./client.md#modify_endpoint)
-- [modify_event_subscription](./client.md#modify_event_subscription)
-- [modify_replication_instance](./client.md#modify_replication_instance)
-- [modify_replication_subnet_group](./client.md#modify_replication_subnet_group)
-- [modify_replication_task](./client.md#modify_replication_task)
-- [move_replication_task](./client.md#move_replication_task)
-- [reboot_replication_instance](./client.md#reboot_replication_instance)
-- [refresh_schemas](./client.md#refresh_schemas)
-- [reload_tables](./client.md#reload_tables)
-- [remove_tags_from_resource](./client.md#remove_tags_from_resource)
-- [start_replication_task](./client.md#start_replication_task)
-- [start_replication_task_assessment](./client.md#start_replication_task_assessment)
-- [start_replication_task_assessment_run](./client.md#start_replication_task_assessment_run)
-- [stop_replication_task](./client.md#stop_replication_task)
-- [test_connection](./client.md#test_connection)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedFault
-- ClientError
-- InsufficientResourceCapacityFault
-- InvalidCertificateFault
-- InvalidResourceStateFault
-- InvalidSubnet
-- KMSAccessDeniedFault
-- KMSDisabledFault
-- KMSFault
-- KMSInvalidStateFault
-- KMSKeyNotAccessibleFault
-- KMSNotFoundFault
-- KMSThrottlingFault
-- ReplicationSubnetGroupDoesNotCoverEnoughAZs
-- ResourceAlreadyExistsFault
-- ResourceNotFoundFault
-- ResourceQuotaExceededFault
-- S3AccessDeniedFault
-- S3ResourceNotFoundFault
-- SNSInvalidTopicFault
-- SNSNoAuthorizationFault
-- StorageQuotaExceededFault
-- SubnetAlreadyInUse
-- UpgradeDependencyFailureFault
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("dms").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("dms").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dms.paginator import DescribeCertificatesPaginator, ...
+from mypy_boto3_dms.paginator import DescribeCertificatesPaginator
+
+def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
+    return Session().client("dms").get_paginator("describe_certificates"))
 ```
 
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
@@ -207,17 +89,21 @@ from mypy_boto3_dms.paginator import DescribeCertificatesPaginator, ...
 - [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
 - [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("dms").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("dms").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dms.waiter import EndpointDeletedWaiter, ...
+from mypy_boto3_dms.waiter import EndpointDeletedWaiter
+
+def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
+    return Session().client("dms").get_waiter("endpoint_deleted")
 ```
 
 - [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
@@ -229,16 +115,21 @@ from mypy_boto3_dms.waiter import EndpointDeletedWaiter, ...
 - [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
 - [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dms.literals import AuthMechanismValueType
 
-```python
-from mypy_boto3_dms.literals import AuthMechanismValueType, ...
+def get_value() -> AuthMechanismValueType:
+    return "default"
 ```
 
 - [AuthMechanismValueType](./literals.md#authmechanismvaluetype)
@@ -295,18 +186,22 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dms.type_defs import AccountQuotaTypeDef
 
-```python
-from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
+def get_value() -> AccountQuotaTypeDef:
+    return {
+        "AccountQuotaName": ...,
+    }
 ```
 
 - [AccountQuotaTypeDef](./type_defs.md#accountquotatypedef)
@@ -346,22 +241,31 @@ from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
 - [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef)
 - [DescribeApplicableIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describeapplicableindividualassessmentsmessagerequesttypedef)
 - [DescribeApplicableIndividualAssessmentsResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponsetypedef)
+- [DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef](./type_defs.md#describecertificatesmessagedescribecertificatespaginatetypedef)
 - [DescribeCertificatesMessageRequestTypeDef](./type_defs.md#describecertificatesmessagerequesttypedef)
 - [DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef)
+- [DescribeConnectionsMessageDescribeConnectionsPaginateTypeDef](./type_defs.md#describeconnectionsmessagedescribeconnectionspaginatetypedef)
 - [DescribeConnectionsMessageRequestTypeDef](./type_defs.md#describeconnectionsmessagerequesttypedef)
+- [DescribeConnectionsMessageTestConnectionSucceedsWaitTypeDef](./type_defs.md#describeconnectionsmessagetestconnectionsucceedswaittypedef)
 - [DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef)
 - [DescribeEndpointSettingsMessageRequestTypeDef](./type_defs.md#describeendpointsettingsmessagerequesttypedef)
 - [DescribeEndpointSettingsResponseTypeDef](./type_defs.md#describeendpointsettingsresponsetypedef)
+- [DescribeEndpointTypesMessageDescribeEndpointTypesPaginateTypeDef](./type_defs.md#describeendpointtypesmessagedescribeendpointtypespaginatetypedef)
 - [DescribeEndpointTypesMessageRequestTypeDef](./type_defs.md#describeendpointtypesmessagerequesttypedef)
 - [DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef)
+- [DescribeEndpointsMessageDescribeEndpointsPaginateTypeDef](./type_defs.md#describeendpointsmessagedescribeendpointspaginatetypedef)
+- [DescribeEndpointsMessageEndpointDeletedWaitTypeDef](./type_defs.md#describeendpointsmessageendpointdeletedwaittypedef)
 - [DescribeEndpointsMessageRequestTypeDef](./type_defs.md#describeendpointsmessagerequesttypedef)
 - [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)
 - [DescribeEventCategoriesMessageRequestTypeDef](./type_defs.md#describeeventcategoriesmessagerequesttypedef)
 - [DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef)
+- [DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef)
 - [DescribeEventSubscriptionsMessageRequestTypeDef](./type_defs.md#describeeventsubscriptionsmessagerequesttypedef)
 - [DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef)
+- [DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef)
 - [DescribeEventsMessageRequestTypeDef](./type_defs.md#describeeventsmessagerequesttypedef)
 - [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)
+- [DescribeOrderableReplicationInstancesMessageDescribeOrderableReplicationInstancesPaginateTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagedescribeorderablereplicationinstancespaginatetypedef)
 - [DescribeOrderableReplicationInstancesMessageRequestTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagerequesttypedef)
 - [DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef)
 - [DescribePendingMaintenanceActionsMessageRequestTypeDef](./type_defs.md#describependingmaintenanceactionsmessagerequesttypedef)
@@ -370,20 +274,32 @@ from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
 - [DescribeRefreshSchemasStatusResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponsetypedef)
 - [DescribeReplicationInstanceTaskLogsMessageRequestTypeDef](./type_defs.md#describereplicationinstancetasklogsmessagerequesttypedef)
 - [DescribeReplicationInstanceTaskLogsResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponsetypedef)
+- [DescribeReplicationInstancesMessageDescribeReplicationInstancesPaginateTypeDef](./type_defs.md#describereplicationinstancesmessagedescribereplicationinstancespaginatetypedef)
+- [DescribeReplicationInstancesMessageReplicationInstanceAvailableWaitTypeDef](./type_defs.md#describereplicationinstancesmessagereplicationinstanceavailablewaittypedef)
+- [DescribeReplicationInstancesMessageReplicationInstanceDeletedWaitTypeDef](./type_defs.md#describereplicationinstancesmessagereplicationinstancedeletedwaittypedef)
 - [DescribeReplicationInstancesMessageRequestTypeDef](./type_defs.md#describereplicationinstancesmessagerequesttypedef)
 - [DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef)
+- [DescribeReplicationSubnetGroupsMessageDescribeReplicationSubnetGroupsPaginateTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagedescribereplicationsubnetgroupspaginatetypedef)
 - [DescribeReplicationSubnetGroupsMessageRequestTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagerequesttypedef)
 - [DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef)
+- [DescribeReplicationTaskAssessmentResultsMessageDescribeReplicationTaskAssessmentResultsPaginateTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagedescribereplicationtaskassessmentresultspaginatetypedef)
 - [DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagerequesttypedef)
 - [DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef)
 - [DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef](./type_defs.md#describereplicationtaskassessmentrunsmessagerequesttypedef)
 - [DescribeReplicationTaskAssessmentRunsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponsetypedef)
 - [DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsmessagerequesttypedef)
 - [DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponsetypedef)
+- [DescribeReplicationTasksMessageDescribeReplicationTasksPaginateTypeDef](./type_defs.md#describereplicationtasksmessagedescribereplicationtaskspaginatetypedef)
+- [DescribeReplicationTasksMessageReplicationTaskDeletedWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskdeletedwaittypedef)
+- [DescribeReplicationTasksMessageReplicationTaskReadyWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskreadywaittypedef)
+- [DescribeReplicationTasksMessageReplicationTaskRunningWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskrunningwaittypedef)
+- [DescribeReplicationTasksMessageReplicationTaskStoppedWaitTypeDef](./type_defs.md#describereplicationtasksmessagereplicationtaskstoppedwaittypedef)
 - [DescribeReplicationTasksMessageRequestTypeDef](./type_defs.md#describereplicationtasksmessagerequesttypedef)
 - [DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef)
+- [DescribeSchemasMessageDescribeSchemasPaginateTypeDef](./type_defs.md#describeschemasmessagedescribeschemaspaginatetypedef)
 - [DescribeSchemasMessageRequestTypeDef](./type_defs.md#describeschemasmessagerequesttypedef)
 - [DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef)
+- [DescribeTableStatisticsMessageDescribeTableStatisticsPaginateTypeDef](./type_defs.md#describetablestatisticsmessagedescribetablestatisticspaginatetypedef)
 - [DescribeTableStatisticsMessageRequestTypeDef](./type_defs.md#describetablestatisticsmessagerequesttypedef)
 - [DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef)
 - [DmsTransferSettingsTypeDef](./type_defs.md#dmstransfersettingstypedef)
@@ -466,3 +382,4 @@ from mypy_boto3_dms.type_defs import AccountQuotaTypeDef, ...
 - [TestConnectionResponseTypeDef](./type_defs.md#testconnectionresponsetypedef)
 - [VpcSecurityGroupMembershipTypeDef](./type_defs.md#vpcsecuritygroupmembershiptypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

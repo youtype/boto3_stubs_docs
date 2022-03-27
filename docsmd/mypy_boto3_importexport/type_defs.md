@@ -1,304 +1,400 @@
-<a id="typed-dictionaries-for-boto3-importexport-module"></a>
-
-# Typed dictionaries for boto3 ImportExport module
+# Typed dictionaries
 
 > [Index](../README.md) > [ImportExport](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
-type annotations stubs module
-[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ImportExport module](#typed-dictionaries-for-boto3-importexport-module)
-  - [ArtifactTypeDef](#artifacttypedef)
-  - [CancelJobInputRequestTypeDef](#canceljobinputrequesttypedef)
-  - [CancelJobOutputTypeDef](#canceljoboutputtypedef)
-  - [CreateJobInputRequestTypeDef](#createjobinputrequesttypedef)
-  - [CreateJobOutputTypeDef](#createjoboutputtypedef)
-  - [GetShippingLabelInputRequestTypeDef](#getshippinglabelinputrequesttypedef)
-  - [GetShippingLabelOutputTypeDef](#getshippinglabeloutputtypedef)
-  - [GetStatusInputRequestTypeDef](#getstatusinputrequesttypedef)
-  - [GetStatusOutputTypeDef](#getstatusoutputtypedef)
-  - [JobTypeDef](#jobtypedef)
-  - [ListJobsInputRequestTypeDef](#listjobsinputrequesttypedef)
-  - [ListJobsOutputTypeDef](#listjobsoutputtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [UpdateJobInputRequestTypeDef](#updatejobinputrequesttypedef)
-  - [UpdateJobOutputTypeDef](#updatejoboutputtypedef)
-
-<a id="artifacttypedef"></a>
+    Auto-generated documentation for [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
+    type annotations stubs module [mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 ## ArtifactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import ArtifactTypeDef
+
+def get_value() -> ArtifactTypeDef:
+    return {
+        "Description": ...,
+    }
 ```
 
-Optional fields:
-
-- `Description`: `str`
-- `URL`: `str`
-
-<a id="canceljobinputrequesttypedef"></a>
+```python title="Definition"
+class ArtifactTypeDef(TypedDict):
+    Description: NotRequired[str],
+    URL: NotRequired[str],
+```
 
 ## CancelJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import CancelJobInputRequestTypeDef
+
+def get_value() -> CancelJobInputRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `APIVersion`: `str`
-
-<a id="canceljoboutputtypedef"></a>
+```python title="Definition"
+class CancelJobInputRequestTypeDef(TypedDict):
+    JobId: str,
+    APIVersion: NotRequired[str],
+```
 
 ## CancelJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import CancelJobOutputTypeDef
+
+def get_value() -> CancelJobOutputTypeDef:
+    return {
+        "Success": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelJobOutputTypeDef(TypedDict):
+    Success: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Success`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createjobinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import CreateJobInputRequestTypeDef
+
+def get_value() -> CreateJobInputRequestTypeDef:
+    return {
+        "JobType": ...,
+        "Manifest": ...,
+        "ValidateOnly": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobInputRequestTypeDef(TypedDict):
+    JobType: JobTypeType,  # (1)
+    Manifest: str,
+    ValidateOnly: bool,
+    ManifestAddendum: NotRequired[str],
+    APIVersion: NotRequired[str],
+```
 
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `Manifest`: `str`
-- `ValidateOnly`: `bool`
-
-Optional fields:
-
-- `ManifestAddendum`: `str`
-- `APIVersion`: `str`
-
-<a id="createjoboutputtypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## CreateJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import CreateJobOutputTypeDef
+
+def get_value() -> CreateJobOutputTypeDef:
+    return {
+        "JobId": ...,
+        "JobType": ...,
+        "Signature": ...,
+        "SignatureFileContents": ...,
+        "WarningMessage": ...,
+        "ArtifactList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateJobOutputTypeDef(TypedDict):
+    JobId: str,
+    JobType: JobTypeType,  # (1)
+    Signature: str,
+    SignatureFileContents: str,
+    WarningMessage: str,
+    ArtifactList: List[ArtifactTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `JobId`: `str`
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `Signature`: `str`
-- `SignatureFileContents`: `str`
-- `WarningMessage`: `str`
-- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getshippinglabelinputrequesttypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetShippingLabelInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import GetShippingLabelInputRequestTypeDef
+
+def get_value() -> GetShippingLabelInputRequestTypeDef:
+    return {
+        "jobIds": ...,
+    }
 ```
 
-Required fields:
-
-- `jobIds`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `name`: `str`
-- `company`: `str`
-- `phoneNumber`: `str`
-- `country`: `str`
-- `stateOrProvince`: `str`
-- `city`: `str`
-- `postalCode`: `str`
-- `street1`: `str`
-- `street2`: `str`
-- `street3`: `str`
-- `APIVersion`: `str`
-
-<a id="getshippinglabeloutputtypedef"></a>
+```python title="Definition"
+class GetShippingLabelInputRequestTypeDef(TypedDict):
+    jobIds: Sequence[str],
+    name: NotRequired[str],
+    company: NotRequired[str],
+    phoneNumber: NotRequired[str],
+    country: NotRequired[str],
+    stateOrProvince: NotRequired[str],
+    city: NotRequired[str],
+    postalCode: NotRequired[str],
+    street1: NotRequired[str],
+    street2: NotRequired[str],
+    street3: NotRequired[str],
+    APIVersion: NotRequired[str],
+```
 
 ## GetShippingLabelOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import GetShippingLabelOutputTypeDef
+
+def get_value() -> GetShippingLabelOutputTypeDef:
+    return {
+        "ShippingLabelURL": ...,
+        "Warning": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetShippingLabelOutputTypeDef(TypedDict):
+    ShippingLabelURL: str,
+    Warning: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ShippingLabelURL`: `str`
-- `Warning`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getstatusinputrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetStatusInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import GetStatusInputRequestTypeDef
+
+def get_value() -> GetStatusInputRequestTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Required fields:
-
-- `JobId`: `str`
-
-Optional fields:
-
-- `APIVersion`: `str`
-
-<a id="getstatusoutputtypedef"></a>
+```python title="Definition"
+class GetStatusInputRequestTypeDef(TypedDict):
+    JobId: str,
+    APIVersion: NotRequired[str],
+```
 
 ## GetStatusOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import GetStatusOutputTypeDef
+
+def get_value() -> GetStatusOutputTypeDef:
+    return {
+        "JobId": ...,
+        "JobType": ...,
+        "LocationCode": ...,
+        "LocationMessage": ...,
+        "ProgressCode": ...,
+        "ProgressMessage": ...,
+        "Carrier": ...,
+        "TrackingNumber": ...,
+        "LogBucket": ...,
+        "LogKey": ...,
+        "ErrorCount": ...,
+        "Signature": ...,
+        "SignatureFileContents": ...,
+        "CurrentManifest": ...,
+        "CreationDate": ...,
+        "ArtifactList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetStatusOutputTypeDef(TypedDict):
+    JobId: str,
+    JobType: JobTypeType,  # (1)
+    LocationCode: str,
+    LocationMessage: str,
+    ProgressCode: str,
+    ProgressMessage: str,
+    Carrier: str,
+    TrackingNumber: str,
+    LogBucket: str,
+    LogKey: str,
+    ErrorCount: int,
+    Signature: str,
+    SignatureFileContents: str,
+    CurrentManifest: str,
+    CreationDate: datetime,
+    ArtifactList: List[ArtifactTypeDef],  # (2)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (3)
+```
 
-- `JobId`: `str`
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `LocationCode`: `str`
-- `LocationMessage`: `str`
-- `ProgressCode`: `str`
-- `ProgressMessage`: `str`
-- `Carrier`: `str`
-- `TrackingNumber`: `str`
-- `LogBucket`: `str`
-- `LogKey`: `str`
-- `ErrorCount`: `int`
-- `Signature`: `str`
-- `SignatureFileContents`: `str`
-- `CurrentManifest`: `str`
-- `CreationDate`: `datetime`
-- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="jobtypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+2. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+3. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## JobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import JobTypeDef
+
+def get_value() -> JobTypeDef:
+    return {
+        "JobId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class JobTypeDef(TypedDict):
+    JobId: NotRequired[str],
+    CreationDate: NotRequired[datetime],
+    IsCanceled: NotRequired[bool],
+    JobType: NotRequired[JobTypeType],  # (1)
+```
 
-- `JobId`: `str`
-- `CreationDate`: `datetime`
-- `IsCanceled`: `bool`
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
+## ListJobsInputListJobsPaginateTypeDef
 
-<a id="listjobsinputrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_importexport.type_defs import ListJobsInputListJobsPaginateTypeDef
 
+def get_value() -> ListJobsInputListJobsPaginateTypeDef:
+    return {
+        "APIVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ListJobsInputListJobsPaginateTypeDef(TypedDict):
+    APIVersion: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListJobsInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import ListJobsInputRequestTypeDef
+
+def get_value() -> ListJobsInputRequestTypeDef:
+    return {
+        "MaxJobs": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxJobs`: `int`
-- `Marker`: `str`
-- `APIVersion`: `str`
-
-<a id="listjobsoutputtypedef"></a>
+```python title="Definition"
+class ListJobsInputRequestTypeDef(TypedDict):
+    MaxJobs: NotRequired[int],
+    Marker: NotRequired[str],
+    APIVersion: NotRequired[str],
+```
 
 ## ListJobsOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import ListJobsOutputTypeDef
+
+def get_value() -> ListJobsOutputTypeDef:
+    return {
+        "Jobs": ...,
+        "IsTruncated": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListJobsOutputTypeDef(TypedDict):
+    Jobs: List[JobTypeDef],  # (1)
+    IsTruncated: bool,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Jobs`: `List`\[[JobTypeDef](./type_defs.md#jobtypedef)\]
-- `IsTruncated`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: JobTypeDef](./type_defs.md#jobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="responsemetadatatypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="updatejobinputrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## UpdateJobInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import UpdateJobInputRequestTypeDef
+
+def get_value() -> UpdateJobInputRequestTypeDef:
+    return {
+        "JobId": ...,
+        "Manifest": ...,
+        "JobType": ...,
+        "ValidateOnly": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobInputRequestTypeDef(TypedDict):
+    JobId: str,
+    Manifest: str,
+    JobType: JobTypeType,  # (1)
+    ValidateOnly: bool,
+    APIVersion: NotRequired[str],
+```
 
-- `JobId`: `str`
-- `Manifest`: `str`
-- `JobType`: [JobTypeType](./literals.md#jobtypetype)
-- `ValidateOnly`: `bool`
-
-Optional fields:
-
-- `APIVersion`: `str`
-
-<a id="updatejoboutputtypedef"></a>
-
+1. See [:material-code-brackets: JobTypeType](./literals.md#jobtypetype) 
 ## UpdateJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_importexport.type_defs import UpdateJobOutputTypeDef
+
+def get_value() -> UpdateJobOutputTypeDef:
+    return {
+        "Success": ...,
+        "WarningMessage": ...,
+        "ArtifactList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateJobOutputTypeDef(TypedDict):
+    Success: bool,
+    WarningMessage: str,
+    ArtifactList: List[ArtifactTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Success`: `bool`
-- `WarningMessage`: `str`
-- `ArtifactList`: `List`\[[ArtifactTypeDef](./type_defs.md#artifacttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ArtifactTypeDef](./type_defs.md#artifacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

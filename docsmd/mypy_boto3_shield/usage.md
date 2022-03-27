@@ -1,82 +1,108 @@
-<a id="examples-for-boto3-shield-module"></a>
-
-# Examples for boto3 Shield module
+# Examples
 
 > [Index](../README.md) > [Shield](./README.md) > Examples
 
-- [Examples for boto3 Shield module](#examples-for-boto3-shield-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
+    type annotations stubs module [mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[shield]` package installed.
 
-Write your `Shield` code as usual, type checking and code completion should
-work out of the box.
-
-```python
-import boto3
+Write your `Shield` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ShieldClient
-# and provides type checking and code completion
-client = session.client("shield")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_drt_log_bucket()
 
-# paginator has type ListAttacksPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_attacks")
-for item in paginator.paginate(...):
-    # item has type ListAttacksResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("shield")  # (1)
+    result = client.create_protection()  # (2)
+    ```
+
+    1. client: [ShieldClient](./client.md)
+    2. result: [:material-code-braces: CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("shield")  # (1)
+
+    paginator = client.get_paginator("list_attacks")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ShieldClient](./client.md)
+    2. paginator: [ListAttacksPaginator](./paginators.md#listattackspaginator)
+    3. item: [:material-code-braces: ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[shield]` or a standalone `mypy_boto3_shield` package,
-you have to explicitly specify `client: ShieldClient` type annotation.
+With `boto3-stubs-lite[shield]`
+or a standalone `mypy_boto3_shield` package, you have to explicitly specify `client: ShieldClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_shield.client import ShieldClient
-from mypy_boto3_shield.paginator import ListAttacksPaginator
-
-from mypy_boto3_shield.literals import PaginatorName
-
-from mypy_boto3_shield.type_defs import Dict[str, Any]
-from mypy_boto3_shield.type_defs import ListAttacksResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ShieldClient = session.client("shield")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.associate_drt_log_bucket()
+    from mypy_boto3_shield.client import ShieldClient
+    from mypy_boto3_shield.type_defs import CreateProtectionResponseTypeDef
+    from mypy_boto3_shield.type_defs import CreateProtectionRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_attacks"
-paginator: ListAttacksPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAttacksResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ShieldClient = session.client("shield")
+
+    kwargs: CreateProtectionRequestRequestTypeDef = {...}
+    result: CreateProtectionResponseTypeDef = client.create_protection(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_shield.client import ShieldClient
+    from mypy_boto3_shield.paginator import ListAttacksPaginator
+    from mypy_boto3_shield.type_defs import ListAttacksResponseTypeDef
+
+
+    session = Session()
+    client: ShieldClient = session.client("shield")
+
+    paginator: ListAttacksPaginator = client.get_paginator("list_attacks")
+    for item in paginator.paginate(...):
+        item: ListAttacksResponseTypeDef
+        print(item)
+    ```
+
+
+
+

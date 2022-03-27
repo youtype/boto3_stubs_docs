@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-applicationautoscaling-module"></a>
-
-# Type annotations for boto3 ApplicationAutoScaling module
+#  ApplicationAutoScaling module
 
 > [Index](../README.md) > ApplicationAutoScaling
 
-Auto-generated documentation for
-[ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
-type annotations stubs module
-[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+!!! note ""
 
-- [Type annotations for boto3 ApplicationAutoScaling module](#type-annotations-for-boto3-applicationautoscaling-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ApplicationAutoScalingClient](#applicationautoscalingclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
+    type annotations stubs module [mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ApplicationAutoScaling`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[application-autoscaling]'
 python -m pip install mypy-boto3-application-autoscaling
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,70 +42,37 @@ python -m pip install mypy-boto3-application-autoscaling
 python -m pip uninstall -y mypy-boto3-application-autoscaling
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="applicationautoscalingclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ApplicationAutoScalingClient
 
-Type annotations for `boto3.client("application-autoscaling")` as
-[ApplicationAutoScalingClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("application-autoscaling")` as [ApplicationAutoScalingClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_application_autoscaling.client import ApplicationAutoScalingClient
+
+def get_client() -> ApplicationAutoScalingClient:
+    return Session().cleint("application-autoscaling")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [delete_scaling_policy](./client.md#delete_scaling_policy)
-- [delete_scheduled_action](./client.md#delete_scheduled_action)
-- [deregister_scalable_target](./client.md#deregister_scalable_target)
-- [describe_scalable_targets](./client.md#describe_scalable_targets)
-- [describe_scaling_activities](./client.md#describe_scaling_activities)
-- [describe_scaling_policies](./client.md#describe_scaling_policies)
-- [describe_scheduled_actions](./client.md#describe_scheduled_actions)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [put_scaling_policy](./client.md#put_scaling_policy)
-- [put_scheduled_action](./client.md#put_scheduled_action)
-- [register_scalable_target](./client.md#register_scalable_target)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ApplicationAutoScalingClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ConcurrentUpdateException
-- FailedResourceAccessException
-- InternalServiceException
-- InvalidNextTokenException
-- LimitExceededException
-- ObjectNotFoundException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("application-autoscaling").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("application-autoscaling").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator, ...
+from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargetsPaginator
+
+def get_describe_scalable_targets_paginator() -> DescribeScalableTargetsPaginator:
+    return Session().client("application-autoscaling").get_paginator("describe_scalable_targets"))
 ```
 
 - [DescribeScalableTargetsPaginator](./paginators.md#describescalabletargetspaginator)
@@ -135,16 +80,23 @@ from mypy_boto3_application_autoscaling.paginator import DescribeScalableTargets
 - [DescribeScalingPoliciesPaginator](./paginators.md#describescalingpoliciespaginator)
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType
 
-```python
-from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType, ...
+def get_value() -> AdjustmentTypeType:
+    return "ChangeInCapacity"
 ```
 
 - [AdjustmentTypeType](./literals.md#adjustmenttypetype)
@@ -163,18 +115,23 @@ from mypy_boto3_application_autoscaling.literals import AdjustmentTypeType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_application_autoscaling.type_defs import AlarmTypeDef
 
-```python
-from mypy_boto3_application_autoscaling.type_defs import AlarmTypeDef, ...
+def get_value() -> AlarmTypeDef:
+    return {
+        "AlarmName": ...,
+        "AlarmARN": ...,
+    }
 ```
 
 - [AlarmTypeDef](./type_defs.md#alarmtypedef)
@@ -182,12 +139,16 @@ from mypy_boto3_application_autoscaling.type_defs import AlarmTypeDef, ...
 - [DeleteScalingPolicyRequestRequestTypeDef](./type_defs.md#deletescalingpolicyrequestrequesttypedef)
 - [DeleteScheduledActionRequestRequestTypeDef](./type_defs.md#deletescheduledactionrequestrequesttypedef)
 - [DeregisterScalableTargetRequestRequestTypeDef](./type_defs.md#deregisterscalabletargetrequestrequesttypedef)
+- [DescribeScalableTargetsRequestDescribeScalableTargetsPaginateTypeDef](./type_defs.md#describescalabletargetsrequestdescribescalabletargetspaginatetypedef)
 - [DescribeScalableTargetsRequestRequestTypeDef](./type_defs.md#describescalabletargetsrequestrequesttypedef)
 - [DescribeScalableTargetsResponseTypeDef](./type_defs.md#describescalabletargetsresponsetypedef)
+- [DescribeScalingActivitiesRequestDescribeScalingActivitiesPaginateTypeDef](./type_defs.md#describescalingactivitiesrequestdescribescalingactivitiespaginatetypedef)
 - [DescribeScalingActivitiesRequestRequestTypeDef](./type_defs.md#describescalingactivitiesrequestrequesttypedef)
 - [DescribeScalingActivitiesResponseTypeDef](./type_defs.md#describescalingactivitiesresponsetypedef)
+- [DescribeScalingPoliciesRequestDescribeScalingPoliciesPaginateTypeDef](./type_defs.md#describescalingpoliciesrequestdescribescalingpoliciespaginatetypedef)
 - [DescribeScalingPoliciesRequestRequestTypeDef](./type_defs.md#describescalingpoliciesrequestrequesttypedef)
 - [DescribeScalingPoliciesResponseTypeDef](./type_defs.md#describescalingpoliciesresponsetypedef)
+- [DescribeScheduledActionsRequestDescribeScheduledActionsPaginateTypeDef](./type_defs.md#describescheduledactionsrequestdescribescheduledactionspaginatetypedef)
 - [DescribeScheduledActionsRequestRequestTypeDef](./type_defs.md#describescheduledactionsrequestrequesttypedef)
 - [DescribeScheduledActionsResponseTypeDef](./type_defs.md#describescheduledactionsresponsetypedef)
 - [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)
@@ -207,3 +168,4 @@ from mypy_boto3_application_autoscaling.type_defs import AlarmTypeDef, ...
 - [StepScalingPolicyConfigurationTypeDef](./type_defs.md#stepscalingpolicyconfigurationtypedef)
 - [SuspendedStateTypeDef](./type_defs.md#suspendedstatetypedef)
 - [TargetTrackingScalingPolicyConfigurationTypeDef](./type_defs.md#targettrackingscalingpolicyconfigurationtypedef)
+

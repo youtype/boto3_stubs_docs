@@ -1,83 +1,93 @@
-<a id="typed-dictionaries-for-boto3-kinesisvideomedia-module"></a>
-
-# Typed dictionaries for boto3 KinesisVideoMedia module
+# Typed dictionaries
 
 > [Index](../README.md) > [KinesisVideoMedia](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
-type annotations stubs module
-[mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+!!! note ""
 
-- [Typed dictionaries for boto3 KinesisVideoMedia module](#typed-dictionaries-for-boto3-kinesisvideomedia-module)
-  - [GetMediaInputRequestTypeDef](#getmediainputrequesttypedef)
-  - [GetMediaOutputTypeDef](#getmediaoutputtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [StartSelectorTypeDef](#startselectortypedef)
-
-<a id="getmediainputrequesttypedef"></a>
+    Auto-generated documentation for [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
+    type annotations stubs module [mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 ## GetMediaInputRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_media.type_defs import GetMediaInputRequestTypeDef
+
+def get_value() -> GetMediaInputRequestTypeDef:
+    return {
+        "StartSelector": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMediaInputRequestTypeDef(TypedDict):
+    StartSelector: StartSelectorTypeDef,  # (1)
+    StreamName: NotRequired[str],
+    StreamARN: NotRequired[str],
+```
 
-- `StartSelector`: [StartSelectorTypeDef](./type_defs.md#startselectortypedef)
-
-Optional fields:
-
-- `StreamName`: `str`
-- `StreamARN`: `str`
-
-<a id="getmediaoutputtypedef"></a>
-
+1. See [:material-code-braces: StartSelectorTypeDef](./type_defs.md#startselectortypedef) 
 ## GetMediaOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_media.type_defs import GetMediaOutputTypeDef
+
+def get_value() -> GetMediaOutputTypeDef:
+    return {
+        "ContentType": ...,
+        "Payload": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMediaOutputTypeDef(TypedDict):
+    ContentType: str,
+    Payload: StreamingBody,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContentType`: `str`
-- `Payload`: `StreamingBody`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_media.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="startselectortypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## StartSelectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kinesis_video_media.type_defs import StartSelectorTypeDef
+
+def get_value() -> StartSelectorTypeDef:
+    return {
+        "StartSelectorType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartSelectorTypeDef(TypedDict):
+    StartSelectorType: StartSelectorTypeType,  # (1)
+    AfterFragmentNumber: NotRequired[str],
+    StartTimestamp: NotRequired[Union[datetime, str]],
+    ContinuationToken: NotRequired[str],
+```
 
-- `StartSelectorType`:
-  [StartSelectorTypeType](./literals.md#startselectortypetype)
-
-Optional fields:
-
-- `AfterFragmentNumber`: `str`
-- `StartTimestamp`: `Union`\[`datetime`, `str`\]
-- `ContinuationToken`: `str`
+1. See [:material-code-brackets: StartSelectorTypeType](./literals.md#startselectortypetype) 

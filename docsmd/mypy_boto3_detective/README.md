@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-detective-module"></a>
-
-# Type annotations for boto3 Detective module
+#  Detective module
 
 > [Index](../README.md) > Detective
 
-Auto-generated documentation for
-[Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
-type annotations stubs module
-[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
+!!! note ""
 
-- [Type annotations for boto3 Detective module](#type-annotations-for-boto3-detective-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DetectiveClient](#detectiveclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
+    type annotations stubs module [mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Detective`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[detective]'
 python -m pip install mypy-boto3-detective
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,77 +42,41 @@ python -m pip install mypy-boto3-detective
 python -m pip uninstall -y mypy-boto3-detective
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="detectiveclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DetectiveClient
 
-Type annotations for `boto3.client("detective")` as
-[DetectiveClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("detective")` as [DetectiveClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_detective.client import DetectiveClient
+
+def get_client() -> DetectiveClient:
+    return Session().cleint("detective")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [accept_invitation](./client.md#accept_invitation)
-- [can_paginate](./client.md#can_paginate)
-- [create_graph](./client.md#create_graph)
-- [create_members](./client.md#create_members)
-- [delete_graph](./client.md#delete_graph)
-- [delete_members](./client.md#delete_members)
-- [describe_organization_configuration](./client.md#describe_organization_configuration)
-- [disable_organization_admin_account](./client.md#disable_organization_admin_account)
-- [disassociate_membership](./client.md#disassociate_membership)
-- [enable_organization_admin_account](./client.md#enable_organization_admin_account)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_members](./client.md#get_members)
-- [list_graphs](./client.md#list_graphs)
-- [list_invitations](./client.md#list_invitations)
-- [list_members](./client.md#list_members)
-- [list_organization_admin_accounts](./client.md#list_organization_admin_accounts)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [reject_invitation](./client.md#reject_invitation)
-- [start_monitoring_member](./client.md#start_monitoring_member)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_organization_configuration](./client.md#update_organization_configuration)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-DetectiveClient [exceptions](./client.md#exceptions)
 
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- TooManyRequestsException
-- ValidationException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_detective.literals import InvitationTypeType
 
-```python
-from mypy_boto3_detective.literals import InvitationTypeType, ...
+def get_value() -> InvitationTypeType:
+    return "INVITATION"
 ```
 
 - [InvitationTypeType](./literals.md#invitationtypetype)
@@ -142,18 +85,22 @@ from mypy_boto3_detective.literals import InvitationTypeType, ...
 - [DetectiveServiceName](./literals.md#detectiveservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 
-```python
-from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef, ...
+def get_value() -> AcceptInvitationRequestRequestTypeDef:
+    return {
+        "GraphArn": ...,
+    }
 ```
 
 - [AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef)
@@ -191,3 +138,4 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 - [UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef)
+

@@ -1,38 +1,18 @@
-<a id="waiters-for-boto3-nimblestudio-module"></a>
-
-# Waiters for boto3 NimbleStudio module
+# Waiters
 
 > [Index](../README.md) > [NimbleStudio](./README.md) > Waiters
 
-Auto-generated documentation for
-[NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
-type annotations stubs module
-[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
+!!! note ""
 
-- [Waiters for boto3 NimbleStudio module](#waiters-for-boto3-nimblestudio-module)
-  - [LaunchProfileDeletedWaiter](#launchprofiledeletedwaiter)
-  - [LaunchProfileReadyWaiter](#launchprofilereadywaiter)
-  - [StreamingImageDeletedWaiter](#streamingimagedeletedwaiter)
-  - [StreamingImageReadyWaiter](#streamingimagereadywaiter)
-  - [StreamingSessionDeletedWaiter](#streamingsessiondeletedwaiter)
-  - [StreamingSessionReadyWaiter](#streamingsessionreadywaiter)
-  - [StreamingSessionStoppedWaiter](#streamingsessionstoppedwaiter)
-  - [StreamingSessionStreamReadyWaiter](#streamingsessionstreamreadywaiter)
-  - [StudioComponentDeletedWaiter](#studiocomponentdeletedwaiter)
-  - [StudioComponentReadyWaiter](#studiocomponentreadywaiter)
-  - [StudioDeletedWaiter](#studiodeletedwaiter)
-  - [StudioReadyWaiter](#studioreadywaiter)
-
-<a id="launchprofiledeletedwaiter"></a>
+    Auto-generated documentation for [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
+    type annotations stubs module [mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 ## LaunchProfileDeletedWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("launch_profile_deleted")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("launch_profile_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.LaunchProfileDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import LaunchProfileDeletedWaiter
@@ -41,25 +21,41 @@ def get_launch_profile_deleted_waiter() -> LaunchProfileDeletedWaiter:
     return Session().client("nimble").get_waiter("launch_profile_deleted")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.launch_profile_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.LaunchProfileDeleted)
 
-Arguments for `LaunchProfileDeletedWaiter.wait` method:
+### wait
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LaunchProfileDeletedWaiter.wait` method.
 
-<a id="launchprofilereadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileRequestLaunchProfileDeletedWaitTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetLaunchProfileRequestLaunchProfileDeletedWaitTypeDef](./type_defs.md#getlaunchprofilerequestlaunchprofiledeletedwaittypedef) 
 ## LaunchProfileReadyWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("launch_profile_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("launch_profile_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.LaunchProfileReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import LaunchProfileReadyWaiter
@@ -68,25 +64,41 @@ def get_launch_profile_ready_waiter() -> LaunchProfileReadyWaiter:
     return Session().client("nimble").get_waiter("launch_profile_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.launch_profile_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.LaunchProfileReady)
 
-Arguments for `LaunchProfileReadyWaiter.wait` method:
+### wait
 
-- `launchProfileId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python LaunchProfileReadyWaiter.wait` method.
 
-<a id="streamingimagedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    launchProfileId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetLaunchProfileRequestLaunchProfileReadyWaitTypeDef = {  # (1)
+    "launchProfileId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetLaunchProfileRequestLaunchProfileReadyWaitTypeDef](./type_defs.md#getlaunchprofilerequestlaunchprofilereadywaittypedef) 
 ## StreamingImageDeletedWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_image_deleted")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_image_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingImageDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingImageDeletedWaiter
@@ -95,25 +107,41 @@ def get_streaming_image_deleted_waiter() -> StreamingImageDeletedWaiter:
     return Session().client("nimble").get_waiter("streaming_image_deleted")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_image_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingImageDeleted)
 
-Arguments for `StreamingImageDeletedWaiter.wait` method:
+### wait
 
-- `streamingImageId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingImageDeletedWaiter.wait` method.
 
-<a id="streamingimagereadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    streamingImageId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingImageRequestStreamingImageDeletedWaitTypeDef = {  # (1)
+    "streamingImageId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingImageRequestStreamingImageDeletedWaitTypeDef](./type_defs.md#getstreamingimagerequeststreamingimagedeletedwaittypedef) 
 ## StreamingImageReadyWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_image_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_image_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingImageReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingImageReadyWaiter
@@ -122,25 +150,41 @@ def get_streaming_image_ready_waiter() -> StreamingImageReadyWaiter:
     return Session().client("nimble").get_waiter("streaming_image_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_image_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingImageReady)
 
-Arguments for `StreamingImageReadyWaiter.wait` method:
+### wait
 
-- `streamingImageId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingImageReadyWaiter.wait` method.
 
-<a id="streamingsessiondeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    streamingImageId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingImageRequestStreamingImageReadyWaitTypeDef = {  # (1)
+    "streamingImageId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingImageRequestStreamingImageReadyWaitTypeDef](./type_defs.md#getstreamingimagerequeststreamingimagereadywaittypedef) 
 ## StreamingSessionDeletedWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_session_deleted")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_session_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionDeletedWaiter
@@ -149,25 +193,41 @@ def get_streaming_session_deleted_waiter() -> StreamingSessionDeletedWaiter:
     return Session().client("nimble").get_waiter("streaming_session_deleted")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_session_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionDeleted)
 
-Arguments for `StreamingSessionDeletedWaiter.wait` method:
+### wait
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingSessionDeletedWaiter.wait` method.
 
-<a id="streamingsessionreadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionRequestStreamingSessionDeletedWaitTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingSessionRequestStreamingSessionDeletedWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessiondeletedwaittypedef) 
 ## StreamingSessionReadyWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_session_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_session_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionReadyWaiter
@@ -176,25 +236,41 @@ def get_streaming_session_ready_waiter() -> StreamingSessionReadyWaiter:
     return Session().client("nimble").get_waiter("streaming_session_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_session_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionReady)
 
-Arguments for `StreamingSessionReadyWaiter.wait` method:
+### wait
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingSessionReadyWaiter.wait` method.
 
-<a id="streamingsessionstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionRequestStreamingSessionReadyWaitTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingSessionRequestStreamingSessionReadyWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessionreadywaittypedef) 
 ## StreamingSessionStoppedWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_session_stopped")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_session_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionStoppedWaiter
@@ -203,25 +279,41 @@ def get_streaming_session_stopped_waiter() -> StreamingSessionStoppedWaiter:
     return Session().client("nimble").get_waiter("streaming_session_stopped")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_session_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionStopped)
 
-Arguments for `StreamingSessionStoppedWaiter.wait` method:
+### wait
 
-- `sessionId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingSessionStoppedWaiter.wait` method.
 
-<a id="streamingsessionstreamreadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    sessionId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionRequestStreamingSessionStoppedWaitTypeDef = {  # (1)
+    "sessionId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingSessionRequestStreamingSessionStoppedWaitTypeDef](./type_defs.md#getstreamingsessionrequeststreamingsessionstoppedwaittypedef) 
 ## StreamingSessionStreamReadyWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("streaming_session_stream_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("streaming_session_stream_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionStreamReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StreamingSessionStreamReadyWaiter
@@ -230,26 +322,43 @@ def get_streaming_session_stream_ready_waiter() -> StreamingSessionStreamReadyWa
     return Session().client("nimble").get_waiter("streaming_session_stream_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.streaming_session_stream_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StreamingSessionStreamReady)
 
-Arguments for `StreamingSessionStreamReadyWaiter.wait` method:
+### wait
 
-- `sessionId`: `str` *(required)*
-- `streamId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StreamingSessionStreamReadyWaiter.wait` method.
 
-<a id="studiocomponentdeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    sessionId: str,
+    streamId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStreamingSessionStreamRequestStreamingSessionStreamReadyWaitTypeDef = {  # (1)
+    "sessionId": ...,
+    "streamId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStreamingSessionStreamRequestStreamingSessionStreamReadyWaitTypeDef](./type_defs.md#getstreamingsessionstreamrequeststreamingsessionstreamreadywaittypedef) 
 ## StudioComponentDeletedWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("studio_component_deleted")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("studio_component_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioComponentDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioComponentDeletedWaiter
@@ -258,25 +367,41 @@ def get_studio_component_deleted_waiter() -> StudioComponentDeletedWaiter:
     return Session().client("nimble").get_waiter("studio_component_deleted")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.studio_component_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioComponentDeleted)
 
-Arguments for `StudioComponentDeletedWaiter.wait` method:
+### wait
 
-- `studioComponentId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StudioComponentDeletedWaiter.wait` method.
 
-<a id="studiocomponentreadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    studioComponentId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStudioComponentRequestStudioComponentDeletedWaitTypeDef = {  # (1)
+    "studioComponentId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStudioComponentRequestStudioComponentDeletedWaitTypeDef](./type_defs.md#getstudiocomponentrequeststudiocomponentdeletedwaittypedef) 
 ## StudioComponentReadyWaiter
 
-Type annotations for
-`boto3.client("nimble").get_waiter("studio_component_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("studio_component_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioComponentReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioComponentReadyWaiter
@@ -285,24 +410,41 @@ def get_studio_component_ready_waiter() -> StudioComponentReadyWaiter:
     return Session().client("nimble").get_waiter("studio_component_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.studio_component_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioComponentReady)
 
-Arguments for `StudioComponentReadyWaiter.wait` method:
+### wait
 
-- `studioComponentId`: `str` *(required)*
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StudioComponentReadyWaiter.wait` method.
 
-<a id="studiodeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    studioComponentId: str,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStudioComponentRequestStudioComponentReadyWaitTypeDef = {  # (1)
+    "studioComponentId": ...,
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStudioComponentRequestStudioComponentReadyWaitTypeDef](./type_defs.md#getstudiocomponentrequeststudiocomponentreadywaittypedef) 
 ## StudioDeletedWaiter
 
-Type annotations for `boto3.client("nimble").get_waiter("studio_deleted")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("studio_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioDeletedWaiter
@@ -311,23 +453,39 @@ def get_studio_deleted_waiter() -> StudioDeletedWaiter:
     return Session().client("nimble").get_waiter("studio_deleted")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.studio_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioDeleted)
 
-Arguments for `StudioDeletedWaiter.wait` method:
+### wait
 
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StudioDeletedWaiter.wait` method.
 
-<a id="studioreadywaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStudioRequestStudioDeletedWaitTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStudioRequestStudioDeletedWaitTypeDef](./type_defs.md#getstudiorequeststudiodeletedwaittypedef) 
 ## StudioReadyWaiter
 
-Type annotations for `boto3.client("nimble").get_waiter("studio_ready")`.
+Type annotations and code completion for `#!python boto3.client("nimble").get_waiter("studio_ready")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioReady)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_nimble.waiter import StudioReadyWaiter
@@ -336,10 +494,30 @@ def get_studio_ready_waiter() -> StudioReadyWaiter:
     return Session().client("nimble").get_waiter("studio_ready")
 ```
 
-Boto3 documentation:
-[NimbleStudio.Waiter.studio_ready](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio.Waiter.StudioReady)
 
-Arguments for `StudioReadyWaiter.wait` method:
+### wait
 
-- `studioId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python StudioReadyWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    studioId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetStudioRequestStudioReadyWaitTypeDef = {  # (1)
+    "studioId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetStudioRequestStudioReadyWaitTypeDef](./type_defs.md#getstudiorequeststudioreadywaittypedef) 

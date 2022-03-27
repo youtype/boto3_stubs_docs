@@ -1,42 +1,18 @@
-<a id="cloudwatchrumclient-for-boto3-cloudwatchrum-module"></a>
-
-# CloudWatchRUMClient for boto3 CloudWatchRUM module
+# CloudWatchRUMClient
 
 > [Index](../README.md) > [CloudWatchRUM](./README.md) > CloudWatchRUMClient
 
-Auto-generated documentation for
-[CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
-type annotations stubs module
-[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
+!!! note ""
 
-- [CloudWatchRUMClient for boto3 CloudWatchRUM module](#cloudwatchrumclient-for-boto3-cloudwatchrum-module)
-  - [CloudWatchRUMClient](#cloudwatchrumclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_app_monitor](#create_app_monitor)
-    - [delete_app_monitor](#delete_app_monitor)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_app_monitor](#get_app_monitor)
-    - [get_app_monitor_data](#get_app_monitor_data)
-    - [list_app_monitors](#list_app_monitors)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [put_rum_events](#put_rum_events)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_app_monitor](#update_app_monitor)
-    - [get_paginator](#get_paginator)
-
-<a id="cloudwatchrumclient"></a>
+    Auto-generated documentation for [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
+    type annotations stubs module [mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 ## CloudWatchRUMClient
 
-Type annotations for `boto3.client("rum")`
+Type annotations and code completion for `#!python boto3.client("rum")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_rum.client import CloudWatchRUMClient
 
@@ -44,329 +20,406 @@ def get_rum_client() -> CloudWatchRUMClient:
     return Session().client("rum")
 ```
 
-Boto3 documentation:
-[CloudWatchRUM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("rum").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("rum")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.ConflictException,
+    client.InternalServerException,
+    client.ResourceNotFoundException,
+    client.ServiceQuotaExceededException,
+    client.ThrottlingException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_rum.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.ConflictException`
-- `Exceptions.InternalServerException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-CloudWatchRUMClient exceptions.
-
-Type annotations for `boto3.client("rum").exceptions` method.
-
-Boto3 documentation:
-[CloudWatchRUM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("rum").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("rum").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.can_paginate)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_app\_monitor"></a>
-
-### create_app_monitor
+### create\_app\_monitor
 
 Creates a Amazon CloudWatch RUM app monitor, which collects telemetry data from
 your application and sends that data to RUM.
 
-Type annotations for `boto3.client("rum").create_app_monitor` method.
+Type annotations and code completion for `#!python boto3.client("rum").create_app_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.create_app_monitor)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.create_app_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.create_app_monitor)
+```python title="Method definition"
+def create_app_monitor(
+    self,
+    *,
+    Domain: str,
+    Name: str,
+    AppMonitorConfiguration: AppMonitorConfigurationTypeDef = ...,  # (1)
+    CwLogEnabled: bool = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateAppMonitorResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateAppMonitorRequestRequestTypeDef](./type_defs.md#createappmonitorrequestrequesttypedef).
+1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
+2. See [:material-code-braces: CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Domain`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `AppMonitorConfiguration`:
-  [AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef)
-- `CwLogEnabled`: `bool`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateAppMonitorRequestRequestTypeDef = {  # (1)
+    "Domain": ...,
+    "Name": ...,
+}
 
-Returns
-[CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef).
+parent.create_app_monitor(**kwargs)
+```
 
-<a id="delete\_app\_monitor"></a>
+1. See [:material-code-braces: CreateAppMonitorRequestRequestTypeDef](./type_defs.md#createappmonitorrequestrequesttypedef) 
 
-### delete_app_monitor
+### delete\_app\_monitor
 
 Deletes an existing app monitor.
 
-Type annotations for `boto3.client("rum").delete_app_monitor` method.
+Type annotations and code completion for `#!python boto3.client("rum").delete_app_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.delete_app_monitor)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.delete_app_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.delete_app_monitor)
+```python title="Method definition"
+def delete_app_monitor(
+    self,
+    *,
+    Name: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteAppMonitorRequestRequestTypeDef](./type_defs.md#deleteappmonitorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteAppMonitorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_app_monitor(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DeleteAppMonitorRequestRequestTypeDef](./type_defs.md#deleteappmonitorrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("rum").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("rum").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.generate_presigned_url)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_app\_monitor"></a>
-
-### get_app_monitor
+### get\_app\_monitor
 
 Retrieves the complete configuration information for one app monitor.
 
-Type annotations for `boto3.client("rum").get_app_monitor` method.
+Type annotations and code completion for `#!python boto3.client("rum").get_app_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.get_app_monitor)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.get_app_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.get_app_monitor)
+```python title="Method definition"
+def get_app_monitor(
+    self,
+    *,
+    Name: str,
+) -> GetAppMonitorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAppMonitorRequestRequestTypeDef](./type_defs.md#getappmonitorrequestrequesttypedef).
+1. See [:material-code-braces: GetAppMonitorResponseTypeDef](./type_defs.md#getappmonitorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAppMonitorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[GetAppMonitorResponseTypeDef](./type_defs.md#getappmonitorresponsetypedef).
+parent.get_app_monitor(**kwargs)
+```
 
-<a id="get\_app\_monitor\_data"></a>
+1. See [:material-code-braces: GetAppMonitorRequestRequestTypeDef](./type_defs.md#getappmonitorrequestrequesttypedef) 
 
-### get_app_monitor_data
+### get\_app\_monitor\_data
 
 Retrieves the raw performance events that RUM has collected from your web
 application, so that you can do your own processing or analysis of this data.
 
-Type annotations for `boto3.client("rum").get_app_monitor_data` method.
+Type annotations and code completion for `#!python boto3.client("rum").get_app_monitor_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.get_app_monitor_data)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.get_app_monitor_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.get_app_monitor_data)
+```python title="Method definition"
+def get_app_monitor_data(
+    self,
+    *,
+    Name: str,
+    TimeRange: TimeRangeTypeDef,  # (1)
+    Filters: Sequence[QueryFilterTypeDef] = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetAppMonitorDataResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetAppMonitorDataRequestRequestTypeDef](./type_defs.md#getappmonitordatarequestrequesttypedef).
+1. See [:material-code-braces: TimeRangeTypeDef](./type_defs.md#timerangetypedef) 
+2. See [:material-code-braces: QueryFilterTypeDef](./type_defs.md#queryfiltertypedef) 
+3. See [:material-code-braces: GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `TimeRange`: [TimeRangeTypeDef](./type_defs.md#timerangetypedef) *(required)*
-- `Filters`:
-  `Sequence`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetAppMonitorDataRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "TimeRange": ...,
+}
 
-Returns
-[GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef).
+parent.get_app_monitor_data(**kwargs)
+```
 
-<a id="list\_app\_monitors"></a>
+1. See [:material-code-braces: GetAppMonitorDataRequestRequestTypeDef](./type_defs.md#getappmonitordatarequestrequesttypedef) 
 
-### list_app_monitors
+### list\_app\_monitors
 
 Returns a list of the Amazon CloudWatch RUM app monitors in the account.
 
-Type annotations for `boto3.client("rum").list_app_monitors` method.
+Type annotations and code completion for `#!python boto3.client("rum").list_app_monitors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.list_app_monitors)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.list_app_monitors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.list_app_monitors)
+```python title="Method definition"
+def list_app_monitors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAppMonitorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAppMonitorsRequestRequestTypeDef](./type_defs.md#listappmonitorsrequestrequesttypedef).
+1. See [:material-code-braces: ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAppMonitorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef).
+parent.list_app_monitors(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListAppMonitorsRequestRequestTypeDef](./type_defs.md#listappmonitorsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Displays the tags associated with a CloudWatch RUM resource.
 
-Type annotations for `boto3.client("rum").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("rum").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="put\_rum\_events"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### put_rum_events
+### put\_rum\_events
 
 Sends telemetry events about your application performance and user behavior to
 CloudWatch RUM.
 
-Type annotations for `boto3.client("rum").put_rum_events` method.
+Type annotations and code completion for `#!python boto3.client("rum").put_rum_events` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.put_rum_events)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.put_rum_events](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.put_rum_events)
+```python title="Method definition"
+def put_rum_events(
+    self,
+    *,
+    AppMonitorDetails: AppMonitorDetailsTypeDef,  # (1)
+    BatchId: str,
+    Id: str,
+    RumEvents: Sequence[RumEventTypeDef],  # (2)
+    UserDetails: UserDetailsTypeDef,  # (3)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[PutRumEventsRequestRequestTypeDef](./type_defs.md#putrumeventsrequestrequesttypedef).
+1. See [:material-code-braces: AppMonitorDetailsTypeDef](./type_defs.md#appmonitordetailstypedef) 
+2. See [:material-code-braces: RumEventTypeDef](./type_defs.md#rumeventtypedef) 
+3. See [:material-code-braces: UserDetailsTypeDef](./type_defs.md#userdetailstypedef) 
 
-Keyword-only arguments:
 
-- `AppMonitorDetails`:
-  [AppMonitorDetailsTypeDef](./type_defs.md#appmonitordetailstypedef)
-  *(required)*
-- `BatchId`: `str` *(required)*
-- `Id`: `str` *(required)*
-- `RumEvents`: `Sequence`\[[RumEventTypeDef](./type_defs.md#rumeventtypedef)\]
-  *(required)*
-- `UserDetails`: [UserDetailsTypeDef](./type_defs.md#userdetailstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: PutRumEventsRequestRequestTypeDef = {  # (1)
+    "AppMonitorDetails": ...,
+    "BatchId": ...,
+    "Id": ...,
+    "RumEvents": ...,
+    "UserDetails": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.put_rum_events(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: PutRumEventsRequestRequestTypeDef](./type_defs.md#putrumeventsrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Assigns one or more tags (key-value pairs) to the specified CloudWatch RUM
 resource.
 
-Type annotations for `boto3.client("rum").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rum").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.tag_resource)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("rum").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("rum").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.untag_resource)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_app\_monitor"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_app_monitor
+### update\_app\_monitor
 
 Updates the configuration of an existing app monitor.
 
-Type annotations for `boto3.client("rum").update_app_monitor` method.
+Type annotations and code completion for `#!python boto3.client("rum").update_app_monitor` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.update_app_monitor)
 
-Boto3 documentation:
-[CloudWatchRUM.Client.update_app_monitor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM.Client.update_app_monitor)
+```python title="Method definition"
+def update_app_monitor(
+    self,
+    *,
+    Name: str,
+    AppMonitorConfiguration: AppMonitorConfigurationTypeDef = ...,  # (1)
+    CwLogEnabled: bool = ...,
+    Domain: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateAppMonitorRequestRequestTypeDef](./type_defs.md#updateappmonitorrequestrequesttypedef).
+1. See [:material-code-braces: AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AppMonitorConfiguration`:
-  [AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef)
-- `CwLogEnabled`: `bool`
-- `Domain`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateAppMonitorRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_app_monitor(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateAppMonitorRequestRequestTypeDef](./type_defs.md#updateappmonitorrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("rum").get_paginator` method with overloads.
+Type annotations and code completion for `#!python boto3.client("rum").get_paginator` method with overloads.
 
-- `client.get_paginator("get_app_monitor_data")` ->
-  [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
-- `client.get_paginator("list_app_monitors")` ->
-  [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
+- `client.get_paginator("get_app_monitor_data")` -> [GetAppMonitorDataPaginator](./paginators.md#getappmonitordatapaginator)
+- `client.get_paginator("list_app_monitors")` -> [ListAppMonitorsPaginator](./paginators.md#listappmonitorspaginator)
+
+
+

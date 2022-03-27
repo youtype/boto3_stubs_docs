@@ -1,375 +1,464 @@
-<a id="typed-dictionaries-for-boto3-marketplacecatalog-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MarketplaceCatalog module
+> [Index](../README.md) > [MarketplaceCatalog](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MarketplaceCatalog](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
-type annotations stubs module
-[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
-
-- [Typed dictionaries for boto3 MarketplaceCatalog module](#typed-dictionaries-for-boto3-marketplacecatalog-module)
-  - [CancelChangeSetRequestRequestTypeDef](#cancelchangesetrequestrequesttypedef)
-  - [CancelChangeSetResponseTypeDef](#cancelchangesetresponsetypedef)
-  - [ChangeSetSummaryListItemTypeDef](#changesetsummarylistitemtypedef)
-  - [ChangeSummaryTypeDef](#changesummarytypedef)
-  - [ChangeTypeDef](#changetypedef)
-  - [DescribeChangeSetRequestRequestTypeDef](#describechangesetrequestrequesttypedef)
-  - [DescribeChangeSetResponseTypeDef](#describechangesetresponsetypedef)
-  - [DescribeEntityRequestRequestTypeDef](#describeentityrequestrequesttypedef)
-  - [DescribeEntityResponseTypeDef](#describeentityresponsetypedef)
-  - [EntitySummaryTypeDef](#entitysummarytypedef)
-  - [EntityTypeDef](#entitytypedef)
-  - [ErrorDetailTypeDef](#errordetailtypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [ListChangeSetsRequestRequestTypeDef](#listchangesetsrequestrequesttypedef)
-  - [ListChangeSetsResponseTypeDef](#listchangesetsresponsetypedef)
-  - [ListEntitiesRequestRequestTypeDef](#listentitiesrequestrequesttypedef)
-  - [ListEntitiesResponseTypeDef](#listentitiesresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SortTypeDef](#sorttypedef)
-  - [StartChangeSetRequestRequestTypeDef](#startchangesetrequestrequesttypedef)
-  - [StartChangeSetResponseTypeDef](#startchangesetresponsetypedef)
-
-<a id="cancelchangesetrequestrequesttypedef"></a>
+    Auto-generated documentation for [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
+    type annotations stubs module [mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 ## CancelChangeSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetRequestRequestTypeDef
+
+def get_value() -> CancelChangeSetRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "ChangeSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `Catalog`: `str`
-- `ChangeSetId`: `str`
-
-<a id="cancelchangesetresponsetypedef"></a>
+```python title="Definition"
+class CancelChangeSetRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    ChangeSetId: str,
+```
 
 ## CancelChangeSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import CancelChangeSetResponseTypeDef
+
+def get_value() -> CancelChangeSetResponseTypeDef:
+    return {
+        "ChangeSetId": ...,
+        "ChangeSetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CancelChangeSetResponseTypeDef(TypedDict):
+    ChangeSetId: str,
+    ChangeSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeSetId`: `str`
-- `ChangeSetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="changesetsummarylistitemtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ChangeSetSummaryListItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ChangeSetSummaryListItemTypeDef
+
+def get_value() -> ChangeSetSummaryListItemTypeDef:
+    return {
+        "ChangeSetId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSetSummaryListItemTypeDef(TypedDict):
+    ChangeSetId: NotRequired[str],
+    ChangeSetArn: NotRequired[str],
+    ChangeSetName: NotRequired[str],
+    StartTime: NotRequired[str],
+    EndTime: NotRequired[str],
+    Status: NotRequired[ChangeStatusType],  # (1)
+    EntityIdList: NotRequired[List[str]],
+    FailureCode: NotRequired[FailureCodeType],  # (2)
+```
 
-- `ChangeSetId`: `str`
-- `ChangeSetArn`: `str`
-- `ChangeSetName`: `str`
-- `StartTime`: `str`
-- `EndTime`: `str`
-- `Status`: [ChangeStatusType](./literals.md#changestatustype)
-- `EntityIdList`: `List`\[`str`\]
-- `FailureCode`: [FailureCodeType](./literals.md#failurecodetype)
-
-<a id="changesummarytypedef"></a>
-
+1. See [:material-code-brackets: ChangeStatusType](./literals.md#changestatustype) 
+2. See [:material-code-brackets: FailureCodeType](./literals.md#failurecodetype) 
 ## ChangeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ChangeSummaryTypeDef
+
+def get_value() -> ChangeSummaryTypeDef:
+    return {
+        "ChangeType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ChangeSummaryTypeDef(TypedDict):
+    ChangeType: NotRequired[str],
+    Entity: NotRequired[EntityTypeDef],  # (1)
+    Details: NotRequired[str],
+    ErrorDetailList: NotRequired[List[ErrorDetailTypeDef]],  # (2)
+    ChangeName: NotRequired[str],
+```
 
-- `ChangeType`: `str`
-- `Entity`: [EntityTypeDef](./type_defs.md#entitytypedef)
-- `Details`: `str`
-- `ErrorDetailList`:
-  `List`\[[ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)\]
-- `ChangeName`: `str`
-
-<a id="changetypedef"></a>
-
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
+2. See [:material-code-braces: ErrorDetailTypeDef](./type_defs.md#errordetailtypedef) 
 ## ChangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ChangeTypeDef
+
+def get_value() -> ChangeTypeDef:
+    return {
+        "ChangeType": ...,
+        "Entity": ...,
+        "Details": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ChangeTypeDef(TypedDict):
+    ChangeType: str,
+    Entity: EntityTypeDef,  # (1)
+    Details: str,
+    ChangeName: NotRequired[str],
+```
 
-- `ChangeType`: `str`
-- `Entity`: [EntityTypeDef](./type_defs.md#entitytypedef)
-- `Details`: `str`
-
-Optional fields:
-
-- `ChangeName`: `str`
-
-<a id="describechangesetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EntityTypeDef](./type_defs.md#entitytypedef) 
 ## DescribeChangeSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import DescribeChangeSetRequestRequestTypeDef
+
+def get_value() -> DescribeChangeSetRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "ChangeSetId": ...,
+    }
 ```
 
-Required fields:
-
-- `Catalog`: `str`
-- `ChangeSetId`: `str`
-
-<a id="describechangesetresponsetypedef"></a>
+```python title="Definition"
+class DescribeChangeSetRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    ChangeSetId: str,
+```
 
 ## DescribeChangeSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import DescribeChangeSetResponseTypeDef
+
+def get_value() -> DescribeChangeSetResponseTypeDef:
+    return {
+        "ChangeSetId": ...,
+        "ChangeSetArn": ...,
+        "ChangeSetName": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Status": ...,
+        "FailureCode": ...,
+        "FailureDescription": ...,
+        "ChangeSet": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeChangeSetResponseTypeDef(TypedDict):
+    ChangeSetId: str,
+    ChangeSetArn: str,
+    ChangeSetName: str,
+    StartTime: str,
+    EndTime: str,
+    Status: ChangeStatusType,  # (1)
+    FailureCode: FailureCodeType,  # (2)
+    FailureDescription: str,
+    ChangeSet: List[ChangeSummaryTypeDef],  # (3)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (4)
+```
 
-- `ChangeSetId`: `str`
-- `ChangeSetArn`: `str`
-- `ChangeSetName`: `str`
-- `StartTime`: `str`
-- `EndTime`: `str`
-- `Status`: [ChangeStatusType](./literals.md#changestatustype)
-- `FailureCode`: [FailureCodeType](./literals.md#failurecodetype)
-- `FailureDescription`: `str`
-- `ChangeSet`:
-  `List`\[[ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeentityrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChangeStatusType](./literals.md#changestatustype) 
+2. See [:material-code-brackets: FailureCodeType](./literals.md#failurecodetype) 
+3. See [:material-code-braces: ChangeSummaryTypeDef](./type_defs.md#changesummarytypedef) 
+4. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEntityRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import DescribeEntityRequestRequestTypeDef
+
+def get_value() -> DescribeEntityRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "EntityId": ...,
+    }
 ```
 
-Required fields:
-
-- `Catalog`: `str`
-- `EntityId`: `str`
-
-<a id="describeentityresponsetypedef"></a>
+```python title="Definition"
+class DescribeEntityRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    EntityId: str,
+```
 
 ## DescribeEntityResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import DescribeEntityResponseTypeDef
+
+def get_value() -> DescribeEntityResponseTypeDef:
+    return {
+        "EntityType": ...,
+        "EntityIdentifier": ...,
+        "EntityArn": ...,
+        "LastModifiedDate": ...,
+        "Details": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEntityResponseTypeDef(TypedDict):
+    EntityType: str,
+    EntityIdentifier: str,
+    EntityArn: str,
+    LastModifiedDate: str,
+    Details: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `EntityType`: `str`
-- `EntityIdentifier`: `str`
-- `EntityArn`: `str`
-- `LastModifiedDate`: `str`
-- `Details`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="entitysummarytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EntitySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import EntitySummaryTypeDef
+
+def get_value() -> EntitySummaryTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `EntityType`: `str`
-- `EntityId`: `str`
-- `EntityArn`: `str`
-- `LastModifiedDate`: `str`
-- `Visibility`: `str`
-
-<a id="entitytypedef"></a>
+```python title="Definition"
+class EntitySummaryTypeDef(TypedDict):
+    Name: NotRequired[str],
+    EntityType: NotRequired[str],
+    EntityId: NotRequired[str],
+    EntityArn: NotRequired[str],
+    LastModifiedDate: NotRequired[str],
+    Visibility: NotRequired[str],
+```
 
 ## EntityTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import EntityTypeDef
+
+def get_value() -> EntityTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
-
-- `Type`: `str`
-
-Optional fields:
-
-- `Identifier`: `str`
-
-<a id="errordetailtypedef"></a>
+```python title="Definition"
+class EntityTypeDef(TypedDict):
+    Type: str,
+    Identifier: NotRequired[str],
+```
 
 ## ErrorDetailTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ErrorDetailTypeDef
+
+def get_value() -> ErrorDetailTypeDef:
+    return {
+        "ErrorCode": ...,
+    }
 ```
 
-Optional fields:
-
-- `ErrorCode`: `str`
-- `ErrorMessage`: `str`
-
-<a id="filtertypedef"></a>
+```python title="Definition"
+class ErrorDetailTypeDef(TypedDict):
+    ErrorCode: NotRequired[str],
+    ErrorMessage: NotRequired[str],
+```
 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `ValueList`: `Sequence`\[`str`\]
-
-<a id="listchangesetsrequestrequesttypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    Name: NotRequired[str],
+    ValueList: NotRequired[Sequence[str]],
+```
 
 ## ListChangeSetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsRequestRequestTypeDef
+
+def get_value() -> ListChangeSetsRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChangeSetsRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    FilterList: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    Sort: NotRequired[SortTypeDef],  # (2)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `Catalog`: `str`
-
-Optional fields:
-
-- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listchangesetsresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
 ## ListChangeSetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ListChangeSetsResponseTypeDef
+
+def get_value() -> ListChangeSetsResponseTypeDef:
+    return {
+        "ChangeSetSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListChangeSetsResponseTypeDef(TypedDict):
+    ChangeSetSummaryList: List[ChangeSetSummaryListItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ChangeSetSummaryList`:
-  `List`\[[ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listentitiesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ChangeSetSummaryListItemTypeDef](./type_defs.md#changesetsummarylistitemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListEntitiesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesRequestRequestTypeDef
+
+def get_value() -> ListEntitiesRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "EntityType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    EntityType: str,
+    FilterList: NotRequired[Sequence[FilterTypeDef]],  # (1)
+    Sort: NotRequired[SortTypeDef],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `Catalog`: `str`
-- `EntityType`: `str`
-
-Optional fields:
-
-- `FilterList`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `Sort`: [SortTypeDef](./type_defs.md#sorttypedef)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listentitiesresponsetypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: SortTypeDef](./type_defs.md#sorttypedef) 
 ## ListEntitiesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ListEntitiesResponseTypeDef
+
+def get_value() -> ListEntitiesResponseTypeDef:
+    return {
+        "EntitySummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEntitiesResponseTypeDef(TypedDict):
+    EntitySummaryList: List[EntitySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `EntitySummaryList`:
-  `List`\[[EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: EntitySummaryTypeDef](./type_defs.md#entitysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="sorttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SortTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import SortTypeDef
+
+def get_value() -> SortTypeDef:
+    return {
+        "SortBy": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SortTypeDef(TypedDict):
+    SortBy: NotRequired[str],
+    SortOrder: NotRequired[SortOrderType],  # (1)
+```
 
-- `SortBy`: `str`
-- `SortOrder`: [SortOrderType](./literals.md#sortordertype)
-
-<a id="startchangesetrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: SortOrderType](./literals.md#sortordertype) 
 ## StartChangeSetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetRequestRequestTypeDef
+
+def get_value() -> StartChangeSetRequestRequestTypeDef:
+    return {
+        "Catalog": ...,
+        "ChangeSet": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChangeSetRequestRequestTypeDef(TypedDict):
+    Catalog: str,
+    ChangeSet: Sequence[ChangeTypeDef],  # (1)
+    ChangeSetName: NotRequired[str],
+    ClientRequestToken: NotRequired[str],
+```
 
-- `Catalog`: `str`
-- `ChangeSet`: `Sequence`\[[ChangeTypeDef](./type_defs.md#changetypedef)\]
-
-Optional fields:
-
-- `ChangeSetName`: `str`
-- `ClientRequestToken`: `str`
-
-<a id="startchangesetresponsetypedef"></a>
-
+1. See [:material-code-braces: ChangeTypeDef](./type_defs.md#changetypedef) 
 ## StartChangeSetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_marketplace_catalog.type_defs import StartChangeSetResponseTypeDef
+
+def get_value() -> StartChangeSetResponseTypeDef:
+    return {
+        "ChangeSetId": ...,
+        "ChangeSetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChangeSetResponseTypeDef(TypedDict):
+    ChangeSetId: str,
+    ChangeSetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ChangeSetId`: `str`
-- `ChangeSetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

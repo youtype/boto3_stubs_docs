@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-greengrassv2-module"></a>
-
-# Examples for boto3 GreengrassV2 module
+# Examples
 
 > [Index](../README.md) > [GreengrassV2](./README.md) > Examples
 
-- [Examples for boto3 GreengrassV2 module](#examples-for-boto3-greengrassv2-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
+    type annotations stubs module [mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[greengrassv2]` package installed.
 
-Write your `GreengrassV2` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `GreengrassV2` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type GreengrassV2Client
-# and provides type checking and code completion
-client = session.client("greengrassv2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type AssociateServiceRoleToAccountResponseTypeDef
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.associate_service_role_to_account()
 
-# paginator has type ListClientDevicesAssociatedWithCoreDevicePaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_client_devices_associated_with_core_device")
-for item in paginator.paginate(...):
-    # item has type ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("greengrassv2")  # (1)
+    result = client.associate_service_role_to_account()  # (2)
+    ```
+
+    1. client: [GreengrassV2Client](./client.md)
+    2. result: [:material-code-braces: AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("greengrassv2")  # (1)
+
+    paginator = client.get_paginator("list_client_devices_associated_with_core_device")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [GreengrassV2Client](./client.md)
+    2. paginator: [ListClientDevicesAssociatedWithCoreDevicePaginator](./paginators.md#listclientdevicesassociatedwithcoredevicepaginator)
+    3. item: [:material-code-braces: ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[greengrassv2]` or a standalone `mypy_boto3_greengrassv2`
-package, you have to explicitly specify `client: GreengrassV2Client` type
-annotation.
+With `boto3-stubs-lite[greengrassv2]`
+or a standalone `mypy_boto3_greengrassv2` package, you have to explicitly specify `client: GreengrassV2Client` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_greengrassv2.client import GreengrassV2Client
-from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
-
-from mypy_boto3_greengrassv2.literals import PaginatorName
-
-from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountResponseTypeDef
-from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: GreengrassV2Client = session.client("greengrassv2")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: AssociateServiceRoleToAccountResponseTypeDef = client.associate_service_role_to_account()
+    from mypy_boto3_greengrassv2.client import GreengrassV2Client
+    from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountResponseTypeDef
+    from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_client_devices_associated_with_core_device"
-paginator: ListClientDevicesAssociatedWithCoreDevicePaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: GreengrassV2Client = session.client("greengrassv2")
+
+    kwargs: AssociateServiceRoleToAccountRequestRequestTypeDef = {...}
+    result: AssociateServiceRoleToAccountResponseTypeDef = client.associate_service_role_to_account(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_greengrassv2.client import GreengrassV2Client
+    from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
+    from mypy_boto3_greengrassv2.type_defs import ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+
+
+    session = Session()
+    client: GreengrassV2Client = session.client("greengrassv2")
+
+    paginator: ListClientDevicesAssociatedWithCoreDevicePaginator = client.get_paginator("list_client_devices_associated_with_core_device")
+    for item in paginator.paginate(...):
+        item: ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
+        print(item)
+    ```
+
+
+
+

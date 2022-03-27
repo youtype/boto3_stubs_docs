@@ -1,47 +1,20 @@
-<a id="type-annotations-for-boto3-dynamodb-module"></a>
-
-# Type annotations for boto3 DynamoDB module
+#  DynamoDB module
 
 > [Index](../README.md) > DynamoDB
 
-Auto-generated documentation for
-[DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
-type annotations stubs module
-[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+!!! note ""
 
-- [Type annotations for boto3 DynamoDB module](#type-annotations-for-boto3-dynamodb-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-    - [From conda-forge](#from-conda-forge)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [DynamoDBClient](#dynamodbclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [DynamoDBServiceResource](#dynamodbserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
+    type annotations stubs module [mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `DynamoDB`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -61,33 +34,31 @@ python -m pip install 'boto3-stubs-lite[dynamodb]'
 python -m pip install mypy-boto3-dynamodb
 ```
 
-<a id="from-conda-forge"></a>
 
 ### From conda-forge
 
-Installing `mypy-boto3-dynamodb` from the `conda-forge` channel can be achieved
-by adding `conda-forge` to your channels with:
+Installing `mypy-boto3-dynamodb` from the `conda-forge` channel
+can be achieved by adding `conda-forge` to your channels with:
 
 ```bash
 conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `mypy-boto3-dynamodb` can be
-installed with:
+Once the `conda-forge` channel has been enabled, `mypy-boto3-dynamodb`
+can be installed with:
 
 ```bash
 conda install mypy-boto3-dynamodb
 ```
 
-It is possible to list all of the versions of `mypy-boto3-dynamodb` available
-on your platform with:
+It is possible to list all of the versions of `mypy-boto3-dynamodb`
+available on your platform with:
 
 ```bash
 conda search mypy-boto3-dynamodb --channel conda-forge
 ```
 
-<a id="how-to-uninstall"></a>
 
 ## How to uninstall
 
@@ -95,174 +66,37 @@ conda search mypy-boto3-dynamodb --channel conda-forge
 python -m pip uninstall -y mypy-boto3-dynamodb
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="dynamodbclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## DynamoDBClient
 
-Type annotations for `boto3.client("dynamodb")` as
-[DynamoDBClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("dynamodb")` as [DynamoDBClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_dynamodb.client import DynamoDBClient
+
+def get_client() -> DynamoDBClient:
+    return Session().cleint("dynamodb")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [batch_execute_statement](./client.md#batch_execute_statement)
-- [batch_get_item](./client.md#batch_get_item)
-- [batch_write_item](./client.md#batch_write_item)
-- [can_paginate](./client.md#can_paginate)
-- [create_backup](./client.md#create_backup)
-- [create_global_table](./client.md#create_global_table)
-- [create_table](./client.md#create_table)
-- [delete_backup](./client.md#delete_backup)
-- [delete_item](./client.md#delete_item)
-- [delete_table](./client.md#delete_table)
-- [describe_backup](./client.md#describe_backup)
-- [describe_continuous_backups](./client.md#describe_continuous_backups)
-- [describe_contributor_insights](./client.md#describe_contributor_insights)
-- [describe_endpoints](./client.md#describe_endpoints)
-- [describe_export](./client.md#describe_export)
-- [describe_global_table](./client.md#describe_global_table)
-- [describe_global_table_settings](./client.md#describe_global_table_settings)
-- [describe_kinesis_streaming_destination](./client.md#describe_kinesis_streaming_destination)
-- [describe_limits](./client.md#describe_limits)
-- [describe_table](./client.md#describe_table)
-- [describe_table_replica_auto_scaling](./client.md#describe_table_replica_auto_scaling)
-- [describe_time_to_live](./client.md#describe_time_to_live)
-- [disable_kinesis_streaming_destination](./client.md#disable_kinesis_streaming_destination)
-- [enable_kinesis_streaming_destination](./client.md#enable_kinesis_streaming_destination)
-- [exceptions](./client.md#exceptions)
-- [execute_statement](./client.md#execute_statement)
-- [execute_transaction](./client.md#execute_transaction)
-- [export_table_to_point_in_time](./client.md#export_table_to_point_in_time)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_item](./client.md#get_item)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_backups](./client.md#list_backups)
-- [list_contributor_insights](./client.md#list_contributor_insights)
-- [list_exports](./client.md#list_exports)
-- [list_global_tables](./client.md#list_global_tables)
-- [list_tables](./client.md#list_tables)
-- [list_tags_of_resource](./client.md#list_tags_of_resource)
-- [put_item](./client.md#put_item)
-- [query](./client.md#query)
-- [restore_table_from_backup](./client.md#restore_table_from_backup)
-- [restore_table_to_point_in_time](./client.md#restore_table_to_point_in_time)
-- [scan](./client.md#scan)
-- [tag_resource](./client.md#tag_resource)
-- [transact_get_items](./client.md#transact_get_items)
-- [transact_write_items](./client.md#transact_write_items)
-- [untag_resource](./client.md#untag_resource)
-- [update_continuous_backups](./client.md#update_continuous_backups)
-- [update_contributor_insights](./client.md#update_contributor_insights)
-- [update_global_table](./client.md#update_global_table)
-- [update_global_table_settings](./client.md#update_global_table_settings)
-- [update_item](./client.md#update_item)
-- [update_table](./client.md#update_table)
-- [update_table_replica_auto_scaling](./client.md#update_table_replica_auto_scaling)
-- [update_time_to_live](./client.md#update_time_to_live)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-DynamoDBClient [exceptions](./client.md#exceptions)
-
-- BackupInUseException
-- BackupNotFoundException
-- ClientError
-- ConditionalCheckFailedException
-- ContinuousBackupsUnavailableException
-- DuplicateItemException
-- ExportConflictException
-- ExportNotFoundException
-- GlobalTableAlreadyExistsException
-- GlobalTableNotFoundException
-- IdempotentParameterMismatchException
-- IndexNotFoundException
-- InternalServerError
-- InvalidExportTimeException
-- InvalidRestoreTimeException
-- ItemCollectionSizeLimitExceededException
-- LimitExceededException
-- PointInTimeRecoveryUnavailableException
-- ProvisionedThroughputExceededException
-- ReplicaAlreadyExistsException
-- ReplicaNotFoundException
-- RequestLimitExceeded
-- ResourceInUseException
-- ResourceNotFoundException
-- TableAlreadyExistsException
-- TableInUseException
-- TableNotFoundException
-- TransactionCanceledException
-- TransactionConflictException
-- TransactionInProgressException
-
-<a id="dynamodbserviceresource"></a>
-
-## DynamoDBServiceResource
-
-Type annotations for `boto3.resource("dynamodb")` as
-[DynamoDBServiceResource](./service_resource.md#dynamodbserviceresource)
-
-Can be used directly:
-
-```python
-from mypy_boto3_dynamodb.service_resource import DynamoDBServiceResource
-```
-
-<a id="collections"></a>
-
-### Collections
-
-Type annotations for collections from `boto3.resource("dynamodb").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection, ...
-```
-
-- [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresourcetables)
-
-<a id="resources"></a>
-
-### Resources
-
-Type annotations for additional resources from `boto3.resource("dynamodb").*`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_dynamodb.service_resource import Table, ...
-```
-
-- [Table](./service_resource.md#table)
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("dynamodb").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("dynamodb").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dynamodb.paginator import ListBackupsPaginator, ...
+from mypy_boto3_dynamodb.paginator import ListBackupsPaginator
+
+def get_list_backups_paginator() -> ListBackupsPaginator:
+    return Session().client("dynamodb").get_paginator("list_backups"))
 ```
 
 - [ListBackupsPaginator](./paginators.md#listbackupspaginator)
@@ -271,32 +105,94 @@ from mypy_boto3_dynamodb.paginator import ListBackupsPaginator, ...
 - [QueryPaginator](./paginators.md#querypaginator)
 - [ScanPaginator](./paginators.md#scanpaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("dynamodb").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("dynamodb").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_dynamodb.waiter import TableExistsWaiter, ...
+from mypy_boto3_dynamodb.waiter import TableExistsWaiter
+
+def get_table_exists_waiter() -> TableExistsWaiter:
+    return Session().client("dynamodb").get_waiter("table_exists")
 ```
 
 - [TableExistsWaiter](./waiters.md#tableexistswaiter)
 - [TableNotExistsWaiter](./waiters.md#tablenotexistswaiter)
 
-<a id="literals"></a>
+
+
+
+
+## DynamoDBServiceResource
+
+Type annotations and code completion for `#!python boto3.resource("dynamodb")` as
+[DynamoDBServiceResource](./service_resource.md#dynamodbserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.ServiceResource)
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.service_resource import DynamoDBServiceResource
+
+def get_dynamodb_resource() -> DynamoDBServiceResource:
+    return Session().resource("dynamodb")
+```
+
+
+### Collections
+
+Type annotations and code completion for collections
+from `#!python boto3.resource("dynamodb").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.service_resource import ServiceResourceTablesCollection
+
+def get_collection() -> ServiceResourceTablesCollection:
+    return Session().resource("dynamodb").tables
+```
+
+- [ServiceResourceTablesCollection](./service_resource.md#dynamodbserviceresourcetables)
+
+
+
+
+### Resources
+
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("dynamodb").*`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_dynamodb.service_resource import Table
+
+def get_resource() -> Table:
+    return Session().resource("dynamodb").Table(...)
+```
+
+- [Table](./service_resource.md#table)
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dynamodb.literals import AttributeActionType
 
-```python
-from mypy_boto3_dynamodb.literals import AttributeActionType, ...
+def get_value() -> AttributeActionType:
+    return "ADD"
 ```
 
 - [AttributeActionType](./literals.md#attributeactiontype)
@@ -344,18 +240,25 @@ from mypy_boto3_dynamodb.literals import AttributeActionType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 
-```python
-from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef, ...
+def get_value() -> ArchivalSummaryResponseMetadataTypeDef:
+    return {
+        "ArchivalDateTime": ...,
+        "ArchivalReason": ...,
+        "ArchivalBackupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
 - [ArchivalSummaryResponseMetadataTypeDef](./type_defs.md#archivalsummaryresponsemetadatatypedef)
@@ -429,6 +332,8 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [DescribeKinesisStreamingDestinationOutputTypeDef](./type_defs.md#describekinesisstreamingdestinationoutputtypedef)
 - [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef)
 - [DescribeTableInputRequestTypeDef](./type_defs.md#describetableinputrequesttypedef)
+- [DescribeTableInputTableExistsWaitTypeDef](./type_defs.md#describetableinputtableexistswaittypedef)
+- [DescribeTableInputTableNotExistsWaitTypeDef](./type_defs.md#describetableinputtablenotexistswaittypedef)
 - [DescribeTableOutputTypeDef](./type_defs.md#describetableoutputtypedef)
 - [DescribeTableReplicaAutoScalingInputRequestTypeDef](./type_defs.md#describetablereplicaautoscalinginputrequesttypedef)
 - [DescribeTableReplicaAutoScalingOutputTypeDef](./type_defs.md#describetablereplicaautoscalingoutputtypedef)
@@ -464,6 +369,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [KinesisDataStreamDestinationTypeDef](./type_defs.md#kinesisdatastreamdestinationtypedef)
 - [KinesisStreamingDestinationInputRequestTypeDef](./type_defs.md#kinesisstreamingdestinationinputrequesttypedef)
 - [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef)
+- [ListBackupsInputListBackupsPaginateTypeDef](./type_defs.md#listbackupsinputlistbackupspaginatetypedef)
 - [ListBackupsInputRequestTypeDef](./type_defs.md#listbackupsinputrequesttypedef)
 - [ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef)
 - [ListContributorInsightsInputRequestTypeDef](./type_defs.md#listcontributorinsightsinputrequesttypedef)
@@ -472,8 +378,10 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef)
 - [ListGlobalTablesInputRequestTypeDef](./type_defs.md#listglobaltablesinputrequesttypedef)
 - [ListGlobalTablesOutputTypeDef](./type_defs.md#listglobaltablesoutputtypedef)
+- [ListTablesInputListTablesPaginateTypeDef](./type_defs.md#listtablesinputlisttablespaginatetypedef)
 - [ListTablesInputRequestTypeDef](./type_defs.md#listtablesinputrequesttypedef)
 - [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef)
+- [ListTagsOfResourceInputListTagsOfResourcePaginateTypeDef](./type_defs.md#listtagsofresourceinputlisttagsofresourcepaginatetypedef)
 - [ListTagsOfResourceInputRequestTypeDef](./type_defs.md#listtagsofresourceinputrequesttypedef)
 - [ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef)
 - [LocalSecondaryIndexDescriptionTypeDef](./type_defs.md#localsecondaryindexdescriptiontypedef)
@@ -493,6 +401,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [PutItemOutputTypeDef](./type_defs.md#putitemoutputtypedef)
 - [PutRequestTypeDef](./type_defs.md#putrequesttypedef)
 - [PutTypeDef](./type_defs.md#puttypedef)
+- [QueryInputQueryPaginateTypeDef](./type_defs.md#queryinputquerypaginatetypedef)
 - [QueryInputRequestTypeDef](./type_defs.md#queryinputrequesttypedef)
 - [QueryInputTableQueryTypeDef](./type_defs.md#queryinputtablequerytypedef)
 - [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef)
@@ -521,6 +430,7 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 - [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 - [ScanInputRequestTypeDef](./type_defs.md#scaninputrequesttypedef)
+- [ScanInputScanPaginateTypeDef](./type_defs.md#scaninputscanpaginatetypedef)
 - [ScanInputTableScanTypeDef](./type_defs.md#scaninputtablescantypedef)
 - [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef)
 - [ServiceResourceTableRequestTypeDef](./type_defs.md#serviceresourcetablerequesttypedef)
@@ -567,3 +477,4 @@ from mypy_boto3_dynamodb.type_defs import ArchivalSummaryResponseMetadataTypeDef
 - [UpdateTypeDef](./type_defs.md#updatetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WriteRequestTypeDef](./type_defs.md#writerequesttypedef)
+

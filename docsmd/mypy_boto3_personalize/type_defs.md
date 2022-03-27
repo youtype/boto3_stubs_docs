@@ -1,2662 +1,3486 @@
-<a id="typed-dictionaries-for-boto3-personalize-module"></a>
-
-# Typed dictionaries for boto3 Personalize module
+# Typed dictionaries
 
 > [Index](../README.md) > [Personalize](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
-type annotations stubs module
-[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Personalize module](#typed-dictionaries-for-boto3-personalize-module)
-  - [AlgorithmImageTypeDef](#algorithmimagetypedef)
-  - [AlgorithmTypeDef](#algorithmtypedef)
-  - [AutoMLConfigTypeDef](#automlconfigtypedef)
-  - [AutoMLResultTypeDef](#automlresulttypedef)
-  - [BatchInferenceJobConfigTypeDef](#batchinferencejobconfigtypedef)
-  - [BatchInferenceJobInputTypeDef](#batchinferencejobinputtypedef)
-  - [BatchInferenceJobOutputTypeDef](#batchinferencejoboutputtypedef)
-  - [BatchInferenceJobSummaryTypeDef](#batchinferencejobsummarytypedef)
-  - [BatchInferenceJobTypeDef](#batchinferencejobtypedef)
-  - [BatchSegmentJobInputTypeDef](#batchsegmentjobinputtypedef)
-  - [BatchSegmentJobOutputTypeDef](#batchsegmentjoboutputtypedef)
-  - [BatchSegmentJobSummaryTypeDef](#batchsegmentjobsummarytypedef)
-  - [BatchSegmentJobTypeDef](#batchsegmentjobtypedef)
-  - [CampaignConfigTypeDef](#campaignconfigtypedef)
-  - [CampaignSummaryTypeDef](#campaignsummarytypedef)
-  - [CampaignTypeDef](#campaigntypedef)
-  - [CampaignUpdateSummaryTypeDef](#campaignupdatesummarytypedef)
-  - [CategoricalHyperParameterRangeTypeDef](#categoricalhyperparameterrangetypedef)
-  - [ContinuousHyperParameterRangeTypeDef](#continuoushyperparameterrangetypedef)
-  - [CreateBatchInferenceJobRequestRequestTypeDef](#createbatchinferencejobrequestrequesttypedef)
-  - [CreateBatchInferenceJobResponseTypeDef](#createbatchinferencejobresponsetypedef)
-  - [CreateBatchSegmentJobRequestRequestTypeDef](#createbatchsegmentjobrequestrequesttypedef)
-  - [CreateBatchSegmentJobResponseTypeDef](#createbatchsegmentjobresponsetypedef)
-  - [CreateCampaignRequestRequestTypeDef](#createcampaignrequestrequesttypedef)
-  - [CreateCampaignResponseTypeDef](#createcampaignresponsetypedef)
-  - [CreateDatasetExportJobRequestRequestTypeDef](#createdatasetexportjobrequestrequesttypedef)
-  - [CreateDatasetExportJobResponseTypeDef](#createdatasetexportjobresponsetypedef)
-  - [CreateDatasetGroupRequestRequestTypeDef](#createdatasetgrouprequestrequesttypedef)
-  - [CreateDatasetGroupResponseTypeDef](#createdatasetgroupresponsetypedef)
-  - [CreateDatasetImportJobRequestRequestTypeDef](#createdatasetimportjobrequestrequesttypedef)
-  - [CreateDatasetImportJobResponseTypeDef](#createdatasetimportjobresponsetypedef)
-  - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
-  - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
-  - [CreateEventTrackerRequestRequestTypeDef](#createeventtrackerrequestrequesttypedef)
-  - [CreateEventTrackerResponseTypeDef](#createeventtrackerresponsetypedef)
-  - [CreateFilterRequestRequestTypeDef](#createfilterrequestrequesttypedef)
-  - [CreateFilterResponseTypeDef](#createfilterresponsetypedef)
-  - [CreateRecommenderRequestRequestTypeDef](#createrecommenderrequestrequesttypedef)
-  - [CreateRecommenderResponseTypeDef](#createrecommenderresponsetypedef)
-  - [CreateSchemaRequestRequestTypeDef](#createschemarequestrequesttypedef)
-  - [CreateSchemaResponseTypeDef](#createschemaresponsetypedef)
-  - [CreateSolutionRequestRequestTypeDef](#createsolutionrequestrequesttypedef)
-  - [CreateSolutionResponseTypeDef](#createsolutionresponsetypedef)
-  - [CreateSolutionVersionRequestRequestTypeDef](#createsolutionversionrequestrequesttypedef)
-  - [CreateSolutionVersionResponseTypeDef](#createsolutionversionresponsetypedef)
-  - [DataSourceTypeDef](#datasourcetypedef)
-  - [DatasetExportJobOutputTypeDef](#datasetexportjoboutputtypedef)
-  - [DatasetExportJobSummaryTypeDef](#datasetexportjobsummarytypedef)
-  - [DatasetExportJobTypeDef](#datasetexportjobtypedef)
-  - [DatasetGroupSummaryTypeDef](#datasetgroupsummarytypedef)
-  - [DatasetGroupTypeDef](#datasetgrouptypedef)
-  - [DatasetImportJobSummaryTypeDef](#datasetimportjobsummarytypedef)
-  - [DatasetImportJobTypeDef](#datasetimportjobtypedef)
-  - [DatasetSchemaSummaryTypeDef](#datasetschemasummarytypedef)
-  - [DatasetSchemaTypeDef](#datasetschematypedef)
-  - [DatasetSummaryTypeDef](#datasetsummarytypedef)
-  - [DatasetTypeDef](#datasettypedef)
-  - [DefaultCategoricalHyperParameterRangeTypeDef](#defaultcategoricalhyperparameterrangetypedef)
-  - [DefaultContinuousHyperParameterRangeTypeDef](#defaultcontinuoushyperparameterrangetypedef)
-  - [DefaultHyperParameterRangesTypeDef](#defaulthyperparameterrangestypedef)
-  - [DefaultIntegerHyperParameterRangeTypeDef](#defaultintegerhyperparameterrangetypedef)
-  - [DeleteCampaignRequestRequestTypeDef](#deletecampaignrequestrequesttypedef)
-  - [DeleteDatasetGroupRequestRequestTypeDef](#deletedatasetgrouprequestrequesttypedef)
-  - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
-  - [DeleteEventTrackerRequestRequestTypeDef](#deleteeventtrackerrequestrequesttypedef)
-  - [DeleteFilterRequestRequestTypeDef](#deletefilterrequestrequesttypedef)
-  - [DeleteRecommenderRequestRequestTypeDef](#deleterecommenderrequestrequesttypedef)
-  - [DeleteSchemaRequestRequestTypeDef](#deleteschemarequestrequesttypedef)
-  - [DeleteSolutionRequestRequestTypeDef](#deletesolutionrequestrequesttypedef)
-  - [DescribeAlgorithmRequestRequestTypeDef](#describealgorithmrequestrequesttypedef)
-  - [DescribeAlgorithmResponseTypeDef](#describealgorithmresponsetypedef)
-  - [DescribeBatchInferenceJobRequestRequestTypeDef](#describebatchinferencejobrequestrequesttypedef)
-  - [DescribeBatchInferenceJobResponseTypeDef](#describebatchinferencejobresponsetypedef)
-  - [DescribeBatchSegmentJobRequestRequestTypeDef](#describebatchsegmentjobrequestrequesttypedef)
-  - [DescribeBatchSegmentJobResponseTypeDef](#describebatchsegmentjobresponsetypedef)
-  - [DescribeCampaignRequestRequestTypeDef](#describecampaignrequestrequesttypedef)
-  - [DescribeCampaignResponseTypeDef](#describecampaignresponsetypedef)
-  - [DescribeDatasetExportJobRequestRequestTypeDef](#describedatasetexportjobrequestrequesttypedef)
-  - [DescribeDatasetExportJobResponseTypeDef](#describedatasetexportjobresponsetypedef)
-  - [DescribeDatasetGroupRequestRequestTypeDef](#describedatasetgrouprequestrequesttypedef)
-  - [DescribeDatasetGroupResponseTypeDef](#describedatasetgroupresponsetypedef)
-  - [DescribeDatasetImportJobRequestRequestTypeDef](#describedatasetimportjobrequestrequesttypedef)
-  - [DescribeDatasetImportJobResponseTypeDef](#describedatasetimportjobresponsetypedef)
-  - [DescribeDatasetRequestRequestTypeDef](#describedatasetrequestrequesttypedef)
-  - [DescribeDatasetResponseTypeDef](#describedatasetresponsetypedef)
-  - [DescribeEventTrackerRequestRequestTypeDef](#describeeventtrackerrequestrequesttypedef)
-  - [DescribeEventTrackerResponseTypeDef](#describeeventtrackerresponsetypedef)
-  - [DescribeFeatureTransformationRequestRequestTypeDef](#describefeaturetransformationrequestrequesttypedef)
-  - [DescribeFeatureTransformationResponseTypeDef](#describefeaturetransformationresponsetypedef)
-  - [DescribeFilterRequestRequestTypeDef](#describefilterrequestrequesttypedef)
-  - [DescribeFilterResponseTypeDef](#describefilterresponsetypedef)
-  - [DescribeRecipeRequestRequestTypeDef](#describereciperequestrequesttypedef)
-  - [DescribeRecipeResponseTypeDef](#describereciperesponsetypedef)
-  - [DescribeRecommenderRequestRequestTypeDef](#describerecommenderrequestrequesttypedef)
-  - [DescribeRecommenderResponseTypeDef](#describerecommenderresponsetypedef)
-  - [DescribeSchemaRequestRequestTypeDef](#describeschemarequestrequesttypedef)
-  - [DescribeSchemaResponseTypeDef](#describeschemaresponsetypedef)
-  - [DescribeSolutionRequestRequestTypeDef](#describesolutionrequestrequesttypedef)
-  - [DescribeSolutionResponseTypeDef](#describesolutionresponsetypedef)
-  - [DescribeSolutionVersionRequestRequestTypeDef](#describesolutionversionrequestrequesttypedef)
-  - [DescribeSolutionVersionResponseTypeDef](#describesolutionversionresponsetypedef)
-  - [EventTrackerSummaryTypeDef](#eventtrackersummarytypedef)
-  - [EventTrackerTypeDef](#eventtrackertypedef)
-  - [FeatureTransformationTypeDef](#featuretransformationtypedef)
-  - [FilterSummaryTypeDef](#filtersummarytypedef)
-  - [FilterTypeDef](#filtertypedef)
-  - [GetSolutionMetricsRequestRequestTypeDef](#getsolutionmetricsrequestrequesttypedef)
-  - [GetSolutionMetricsResponseTypeDef](#getsolutionmetricsresponsetypedef)
-  - [HPOConfigTypeDef](#hpoconfigtypedef)
-  - [HPOObjectiveTypeDef](#hpoobjectivetypedef)
-  - [HPOResourceConfigTypeDef](#hporesourceconfigtypedef)
-  - [HyperParameterRangesTypeDef](#hyperparameterrangestypedef)
-  - [IntegerHyperParameterRangeTypeDef](#integerhyperparameterrangetypedef)
-  - [ListBatchInferenceJobsRequestRequestTypeDef](#listbatchinferencejobsrequestrequesttypedef)
-  - [ListBatchInferenceJobsResponseTypeDef](#listbatchinferencejobsresponsetypedef)
-  - [ListBatchSegmentJobsRequestRequestTypeDef](#listbatchsegmentjobsrequestrequesttypedef)
-  - [ListBatchSegmentJobsResponseTypeDef](#listbatchsegmentjobsresponsetypedef)
-  - [ListCampaignsRequestRequestTypeDef](#listcampaignsrequestrequesttypedef)
-  - [ListCampaignsResponseTypeDef](#listcampaignsresponsetypedef)
-  - [ListDatasetExportJobsRequestRequestTypeDef](#listdatasetexportjobsrequestrequesttypedef)
-  - [ListDatasetExportJobsResponseTypeDef](#listdatasetexportjobsresponsetypedef)
-  - [ListDatasetGroupsRequestRequestTypeDef](#listdatasetgroupsrequestrequesttypedef)
-  - [ListDatasetGroupsResponseTypeDef](#listdatasetgroupsresponsetypedef)
-  - [ListDatasetImportJobsRequestRequestTypeDef](#listdatasetimportjobsrequestrequesttypedef)
-  - [ListDatasetImportJobsResponseTypeDef](#listdatasetimportjobsresponsetypedef)
-  - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
-  - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
-  - [ListEventTrackersRequestRequestTypeDef](#listeventtrackersrequestrequesttypedef)
-  - [ListEventTrackersResponseTypeDef](#listeventtrackersresponsetypedef)
-  - [ListFiltersRequestRequestTypeDef](#listfiltersrequestrequesttypedef)
-  - [ListFiltersResponseTypeDef](#listfiltersresponsetypedef)
-  - [ListRecipesRequestRequestTypeDef](#listrecipesrequestrequesttypedef)
-  - [ListRecipesResponseTypeDef](#listrecipesresponsetypedef)
-  - [ListRecommendersRequestRequestTypeDef](#listrecommendersrequestrequesttypedef)
-  - [ListRecommendersResponseTypeDef](#listrecommendersresponsetypedef)
-  - [ListSchemasRequestRequestTypeDef](#listschemasrequestrequesttypedef)
-  - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
-  - [ListSolutionVersionsRequestRequestTypeDef](#listsolutionversionsrequestrequesttypedef)
-  - [ListSolutionVersionsResponseTypeDef](#listsolutionversionsresponsetypedef)
-  - [ListSolutionsRequestRequestTypeDef](#listsolutionsrequestrequesttypedef)
-  - [ListSolutionsResponseTypeDef](#listsolutionsresponsetypedef)
-  - [OptimizationObjectiveTypeDef](#optimizationobjectivetypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [RecipeSummaryTypeDef](#recipesummarytypedef)
-  - [RecipeTypeDef](#recipetypedef)
-  - [RecommenderConfigTypeDef](#recommenderconfigtypedef)
-  - [RecommenderSummaryTypeDef](#recommendersummarytypedef)
-  - [RecommenderTypeDef](#recommendertypedef)
-  - [RecommenderUpdateSummaryTypeDef](#recommenderupdatesummarytypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3DataConfigTypeDef](#s3dataconfigtypedef)
-  - [SolutionConfigTypeDef](#solutionconfigtypedef)
-  - [SolutionSummaryTypeDef](#solutionsummarytypedef)
-  - [SolutionTypeDef](#solutiontypedef)
-  - [SolutionVersionSummaryTypeDef](#solutionversionsummarytypedef)
-  - [SolutionVersionTypeDef](#solutionversiontypedef)
-  - [StopSolutionVersionCreationRequestRequestTypeDef](#stopsolutionversioncreationrequestrequesttypedef)
-  - [TunedHPOParamsTypeDef](#tunedhpoparamstypedef)
-  - [UpdateCampaignRequestRequestTypeDef](#updatecampaignrequestrequesttypedef)
-  - [UpdateCampaignResponseTypeDef](#updatecampaignresponsetypedef)
-  - [UpdateRecommenderRequestRequestTypeDef](#updaterecommenderrequestrequesttypedef)
-  - [UpdateRecommenderResponseTypeDef](#updaterecommenderresponsetypedef)
-
-<a id="algorithmimagetypedef"></a>
+    Auto-generated documentation for [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
+    type annotations stubs module [mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ## AlgorithmImageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import AlgorithmImageTypeDef
+
+def get_value() -> AlgorithmImageTypeDef:
+    return {
+        "dockerURI": ...,
+    }
 ```
 
-Required fields:
-
-- `dockerURI`: `str`
-
-Optional fields:
-
-- `name`: `str`
-
-<a id="algorithmtypedef"></a>
+```python title="Definition"
+class AlgorithmImageTypeDef(TypedDict):
+    dockerURI: str,
+    name: NotRequired[str],
+```
 
 ## AlgorithmTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import AlgorithmTypeDef
+
+def get_value() -> AlgorithmTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AlgorithmTypeDef(TypedDict):
+    name: NotRequired[str],
+    algorithmArn: NotRequired[str],
+    algorithmImage: NotRequired[AlgorithmImageTypeDef],  # (1)
+    defaultHyperParameters: NotRequired[Dict[str, str]],
+    defaultHyperParameterRanges: NotRequired[DefaultHyperParameterRangesTypeDef],  # (2)
+    defaultResourceConfig: NotRequired[Dict[str, str]],
+    trainingInputMode: NotRequired[str],
+    roleArn: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `algorithmArn`: `str`
-- `algorithmImage`:
-  [AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef)
-- `defaultHyperParameters`: `Dict`\[`str`, `str`\]
-- `defaultHyperParameterRanges`:
-  [DefaultHyperParameterRangesTypeDef](./type_defs.md#defaulthyperparameterrangestypedef)
-- `defaultResourceConfig`: `Dict`\[`str`, `str`\]
-- `trainingInputMode`: `str`
-- `roleArn`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="automlconfigtypedef"></a>
-
+1. See [:material-code-braces: AlgorithmImageTypeDef](./type_defs.md#algorithmimagetypedef) 
+2. See [:material-code-braces: DefaultHyperParameterRangesTypeDef](./type_defs.md#defaulthyperparameterrangestypedef) 
 ## AutoMLConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import AutoMLConfigTypeDef
+
+def get_value() -> AutoMLConfigTypeDef:
+    return {
+        "metricName": ...,
+    }
 ```
 
-Optional fields:
-
-- `metricName`: `str`
-- `recipeList`: `Sequence`\[`str`\]
-
-<a id="automlresulttypedef"></a>
+```python title="Definition"
+class AutoMLConfigTypeDef(TypedDict):
+    metricName: NotRequired[str],
+    recipeList: NotRequired[Sequence[str]],
+```
 
 ## AutoMLResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import AutoMLResultTypeDef
+
+def get_value() -> AutoMLResultTypeDef:
+    return {
+        "bestRecipeArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `bestRecipeArn`: `str`
-
-<a id="batchinferencejobconfigtypedef"></a>
+```python title="Definition"
+class AutoMLResultTypeDef(TypedDict):
+    bestRecipeArn: NotRequired[str],
+```
 
 ## BatchInferenceJobConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchInferenceJobConfigTypeDef
+
+def get_value() -> BatchInferenceJobConfigTypeDef:
+    return {
+        "itemExplorationConfig": ...,
+    }
 ```
 
-Optional fields:
-
-- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
-
-<a id="batchinferencejobinputtypedef"></a>
+```python title="Definition"
+class BatchInferenceJobConfigTypeDef(TypedDict):
+    itemExplorationConfig: NotRequired[Mapping[str, str]],
+```
 
 ## BatchInferenceJobInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchInferenceJobInputTypeDef
+
+def get_value() -> BatchInferenceJobInputTypeDef:
+    return {
+        "s3DataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchInferenceJobInputTypeDef(TypedDict):
+    s3DataSource: S3DataConfigTypeDef,  # (1)
+```
 
-- `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-
-<a id="batchinferencejoboutputtypedef"></a>
-
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## BatchInferenceJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchInferenceJobOutputTypeDef
+
+def get_value() -> BatchInferenceJobOutputTypeDef:
+    return {
+        "s3DataDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchInferenceJobOutputTypeDef(TypedDict):
+    s3DataDestination: S3DataConfigTypeDef,  # (1)
+```
 
-- `s3DataDestination`:
-  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-
-<a id="batchinferencejobsummarytypedef"></a>
-
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## BatchInferenceJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchInferenceJobSummaryTypeDef
+
+def get_value() -> BatchInferenceJobSummaryTypeDef:
+    return {
+        "batchInferenceJobArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `batchInferenceJobArn`: `str`
-- `jobName`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-- `solutionVersionArn`: `str`
-
-<a id="batchinferencejobtypedef"></a>
+```python title="Definition"
+class BatchInferenceJobSummaryTypeDef(TypedDict):
+    batchInferenceJobArn: NotRequired[str],
+    jobName: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+    solutionVersionArn: NotRequired[str],
+```
 
 ## BatchInferenceJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchInferenceJobTypeDef
+
+def get_value() -> BatchInferenceJobTypeDef:
+    return {
+        "jobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchInferenceJobTypeDef(TypedDict):
+    jobName: NotRequired[str],
+    batchInferenceJobArn: NotRequired[str],
+    filterArn: NotRequired[str],
+    failureReason: NotRequired[str],
+    solutionVersionArn: NotRequired[str],
+    numResults: NotRequired[int],
+    jobInput: NotRequired[BatchInferenceJobInputTypeDef],  # (1)
+    jobOutput: NotRequired[BatchInferenceJobOutputTypeDef],  # (2)
+    batchInferenceJobConfig: NotRequired[BatchInferenceJobConfigTypeDef],  # (3)
+    roleArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `jobName`: `str`
-- `batchInferenceJobArn`: `str`
-- `filterArn`: `str`
-- `failureReason`: `str`
-- `solutionVersionArn`: `str`
-- `numResults`: `int`
-- `jobInput`:
-  [BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef)
-- `jobOutput`:
-  [BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef)
-- `batchInferenceJobConfig`:
-  [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
-- `roleArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="batchsegmentjobinputtypedef"></a>
-
+1. See [:material-code-braces: BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef) 
+2. See [:material-code-braces: BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef) 
+3. See [:material-code-braces: BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef) 
 ## BatchSegmentJobInputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchSegmentJobInputTypeDef
+
+def get_value() -> BatchSegmentJobInputTypeDef:
+    return {
+        "s3DataSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchSegmentJobInputTypeDef(TypedDict):
+    s3DataSource: S3DataConfigTypeDef,  # (1)
+```
 
-- `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-
-<a id="batchsegmentjoboutputtypedef"></a>
-
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## BatchSegmentJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchSegmentJobOutputTypeDef
+
+def get_value() -> BatchSegmentJobOutputTypeDef:
+    return {
+        "s3DataDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchSegmentJobOutputTypeDef(TypedDict):
+    s3DataDestination: S3DataConfigTypeDef,  # (1)
+```
 
-- `s3DataDestination`:
-  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-
-<a id="batchsegmentjobsummarytypedef"></a>
-
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## BatchSegmentJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchSegmentJobSummaryTypeDef
+
+def get_value() -> BatchSegmentJobSummaryTypeDef:
+    return {
+        "batchSegmentJobArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `batchSegmentJobArn`: `str`
-- `jobName`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-- `solutionVersionArn`: `str`
-
-<a id="batchsegmentjobtypedef"></a>
+```python title="Definition"
+class BatchSegmentJobSummaryTypeDef(TypedDict):
+    batchSegmentJobArn: NotRequired[str],
+    jobName: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+    solutionVersionArn: NotRequired[str],
+```
 
 ## BatchSegmentJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import BatchSegmentJobTypeDef
+
+def get_value() -> BatchSegmentJobTypeDef:
+    return {
+        "jobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class BatchSegmentJobTypeDef(TypedDict):
+    jobName: NotRequired[str],
+    batchSegmentJobArn: NotRequired[str],
+    filterArn: NotRequired[str],
+    failureReason: NotRequired[str],
+    solutionVersionArn: NotRequired[str],
+    numResults: NotRequired[int],
+    jobInput: NotRequired[BatchSegmentJobInputTypeDef],  # (1)
+    jobOutput: NotRequired[BatchSegmentJobOutputTypeDef],  # (2)
+    roleArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `jobName`: `str`
-- `batchSegmentJobArn`: `str`
-- `filterArn`: `str`
-- `failureReason`: `str`
-- `solutionVersionArn`: `str`
-- `numResults`: `int`
-- `jobInput`:
-  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
-- `jobOutput`:
-  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
-- `roleArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="campaignconfigtypedef"></a>
-
+1. See [:material-code-braces: BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef) 
+2. See [:material-code-braces: BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef) 
 ## CampaignConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CampaignConfigTypeDef
+
+def get_value() -> CampaignConfigTypeDef:
+    return {
+        "itemExplorationConfig": ...,
+    }
 ```
 
-Optional fields:
-
-- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
-
-<a id="campaignsummarytypedef"></a>
+```python title="Definition"
+class CampaignConfigTypeDef(TypedDict):
+    itemExplorationConfig: NotRequired[Mapping[str, str]],
+```
 
 ## CampaignSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CampaignSummaryTypeDef
+
+def get_value() -> CampaignSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `campaignArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="campaigntypedef"></a>
+```python title="Definition"
+class CampaignSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    campaignArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
 ## CampaignTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CampaignTypeDef
+
+def get_value() -> CampaignTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CampaignTypeDef(TypedDict):
+    name: NotRequired[str],
+    campaignArn: NotRequired[str],
+    solutionVersionArn: NotRequired[str],
+    minProvisionedTPS: NotRequired[int],
+    campaignConfig: NotRequired[CampaignConfigTypeDef],  # (1)
+    status: NotRequired[str],
+    failureReason: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    latestCampaignUpdate: NotRequired[CampaignUpdateSummaryTypeDef],  # (2)
+```
 
-- `name`: `str`
-- `campaignArn`: `str`
-- `solutionVersionArn`: `str`
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
-- `status`: `str`
-- `failureReason`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `latestCampaignUpdate`:
-  [CampaignUpdateSummaryTypeDef](./type_defs.md#campaignupdatesummarytypedef)
-
-<a id="campaignupdatesummarytypedef"></a>
-
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
+2. See [:material-code-braces: CampaignUpdateSummaryTypeDef](./type_defs.md#campaignupdatesummarytypedef) 
 ## CampaignUpdateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CampaignUpdateSummaryTypeDef
+
+def get_value() -> CampaignUpdateSummaryTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CampaignUpdateSummaryTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    minProvisionedTPS: NotRequired[int],
+    campaignConfig: NotRequired[CampaignConfigTypeDef],  # (1)
+    status: NotRequired[str],
+    failureReason: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `solutionVersionArn`: `str`
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
-- `status`: `str`
-- `failureReason`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="categoricalhyperparameterrangetypedef"></a>
-
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
 ## CategoricalHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CategoricalHyperParameterRangeTypeDef
+
+def get_value() -> CategoricalHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `values`: `Sequence`\[`str`\]
-
-<a id="continuoushyperparameterrangetypedef"></a>
+```python title="Definition"
+class CategoricalHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    values: NotRequired[Sequence[str]],
+```
 
 ## ContinuousHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ContinuousHyperParameterRangeTypeDef
+
+def get_value() -> ContinuousHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `minValue`: `float`
-- `maxValue`: `float`
-
-<a id="createbatchinferencejobrequestrequesttypedef"></a>
+```python title="Definition"
+class ContinuousHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    minValue: NotRequired[float],
+    maxValue: NotRequired[float],
+```
 
 ## CreateBatchInferenceJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobRequestRequestTypeDef
+
+def get_value() -> CreateBatchInferenceJobRequestRequestTypeDef:
+    return {
+        "jobName": ...,
+        "solutionVersionArn": ...,
+        "jobInput": ...,
+        "jobOutput": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBatchInferenceJobRequestRequestTypeDef(TypedDict):
+    jobName: str,
+    solutionVersionArn: str,
+    jobInput: BatchInferenceJobInputTypeDef,  # (1)
+    jobOutput: BatchInferenceJobOutputTypeDef,  # (2)
+    roleArn: str,
+    filterArn: NotRequired[str],
+    numResults: NotRequired[int],
+    batchInferenceJobConfig: NotRequired[BatchInferenceJobConfigTypeDef],  # (3)
+```
 
-- `jobName`: `str`
-- `solutionVersionArn`: `str`
-- `jobInput`:
-  [BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef)
-- `jobOutput`:
-  [BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef)
-- `roleArn`: `str`
-
-Optional fields:
-
-- `filterArn`: `str`
-- `numResults`: `int`
-- `batchInferenceJobConfig`:
-  [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
-
-<a id="createbatchinferencejobresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchInferenceJobInputTypeDef](./type_defs.md#batchinferencejobinputtypedef) 
+2. See [:material-code-braces: BatchInferenceJobOutputTypeDef](./type_defs.md#batchinferencejoboutputtypedef) 
+3. See [:material-code-braces: BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef) 
 ## CreateBatchInferenceJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateBatchInferenceJobResponseTypeDef
+
+def get_value() -> CreateBatchInferenceJobResponseTypeDef:
+    return {
+        "batchInferenceJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBatchInferenceJobResponseTypeDef(TypedDict):
+    batchInferenceJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `batchInferenceJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createbatchsegmentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateBatchSegmentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateBatchSegmentJobRequestRequestTypeDef
+
+def get_value() -> CreateBatchSegmentJobRequestRequestTypeDef:
+    return {
+        "jobName": ...,
+        "solutionVersionArn": ...,
+        "jobInput": ...,
+        "jobOutput": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBatchSegmentJobRequestRequestTypeDef(TypedDict):
+    jobName: str,
+    solutionVersionArn: str,
+    jobInput: BatchSegmentJobInputTypeDef,  # (1)
+    jobOutput: BatchSegmentJobOutputTypeDef,  # (2)
+    roleArn: str,
+    filterArn: NotRequired[str],
+    numResults: NotRequired[int],
+```
 
-- `jobName`: `str`
-- `solutionVersionArn`: `str`
-- `jobInput`:
-  [BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef)
-- `jobOutput`:
-  [BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef)
-- `roleArn`: `str`
-
-Optional fields:
-
-- `filterArn`: `str`
-- `numResults`: `int`
-
-<a id="createbatchsegmentjobresponsetypedef"></a>
-
+1. See [:material-code-braces: BatchSegmentJobInputTypeDef](./type_defs.md#batchsegmentjobinputtypedef) 
+2. See [:material-code-braces: BatchSegmentJobOutputTypeDef](./type_defs.md#batchsegmentjoboutputtypedef) 
 ## CreateBatchSegmentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateBatchSegmentJobResponseTypeDef
+
+def get_value() -> CreateBatchSegmentJobResponseTypeDef:
+    return {
+        "batchSegmentJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateBatchSegmentJobResponseTypeDef(TypedDict):
+    batchSegmentJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `batchSegmentJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcampaignrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateCampaignRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateCampaignRequestRequestTypeDef
+
+def get_value() -> CreateCampaignRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "solutionVersionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCampaignRequestRequestTypeDef(TypedDict):
+    name: str,
+    solutionVersionArn: str,
+    minProvisionedTPS: NotRequired[int],
+    campaignConfig: NotRequired[CampaignConfigTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `solutionVersionArn`: `str`
-
-Optional fields:
-
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
-
-<a id="createcampaignresponsetypedef"></a>
-
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
 ## CreateCampaignResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateCampaignResponseTypeDef
+
+def get_value() -> CreateCampaignResponseTypeDef:
+    return {
+        "campaignArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateCampaignResponseTypeDef(TypedDict):
+    campaignArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `campaignArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetExportJobRequestRequestTypeDef
+
+def get_value() -> CreateDatasetExportJobRequestRequestTypeDef:
+    return {
+        "jobName": ...,
+        "datasetArn": ...,
+        "roleArn": ...,
+        "jobOutput": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetExportJobRequestRequestTypeDef(TypedDict):
+    jobName: str,
+    datasetArn: str,
+    roleArn: str,
+    jobOutput: DatasetExportJobOutputTypeDef,  # (1)
+    ingestionMode: NotRequired[IngestionModeType],  # (2)
+```
 
-- `jobName`: `str`
-- `datasetArn`: `str`
-- `roleArn`: `str`
-- `jobOutput`:
-  [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
-
-Optional fields:
-
-- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
-
-<a id="createdatasetexportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef) 
+2. See [:material-code-brackets: IngestionModeType](./literals.md#ingestionmodetype) 
 ## CreateDatasetExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetExportJobResponseTypeDef
+
+def get_value() -> CreateDatasetExportJobResponseTypeDef:
+    return {
+        "datasetExportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetExportJobResponseTypeDef(TypedDict):
+    datasetExportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `datasetExportJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetGroupRequestRequestTypeDef
+
+def get_value() -> CreateDatasetGroupRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetGroupRequestRequestTypeDef(TypedDict):
+    name: str,
+    roleArn: NotRequired[str],
+    kmsKeyArn: NotRequired[str],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-
-Optional fields:
-
-- `roleArn`: `str`
-- `kmsKeyArn`: `str`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="createdatasetgroupresponsetypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## CreateDatasetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetGroupResponseTypeDef
+
+def get_value() -> CreateDatasetGroupResponseTypeDef:
+    return {
+        "datasetGroupArn": ...,
+        "domain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetGroupResponseTypeDef(TypedDict):
+    datasetGroupArn: str,
+    domain: DomainType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetGroupArn`: `str`
-- `domain`: [DomainType](./literals.md#domaintype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetImportJobRequestRequestTypeDef
+
+def get_value() -> CreateDatasetImportJobRequestRequestTypeDef:
+    return {
+        "jobName": ...,
+        "datasetArn": ...,
+        "dataSource": ...,
+        "roleArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetImportJobRequestRequestTypeDef(TypedDict):
+    jobName: str,
+    datasetArn: str,
+    dataSource: DataSourceTypeDef,  # (1)
+    roleArn: str,
+```
 
-- `jobName`: `str`
-- `datasetArn`: `str`
-- `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `roleArn`: `str`
-
-<a id="createdatasetimportjobresponsetypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 ## CreateDatasetImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetImportJobResponseTypeDef
+
+def get_value() -> CreateDatasetImportJobResponseTypeDef:
+    return {
+        "datasetImportJobArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetImportJobResponseTypeDef(TypedDict):
+    datasetImportJobArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `datasetImportJobArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createdatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetRequestRequestTypeDef
+
+def get_value() -> CreateDatasetRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "schemaArn": ...,
+        "datasetGroupArn": ...,
+        "datasetType": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `schemaArn`: `str`
-- `datasetGroupArn`: `str`
-- `datasetType`: `str`
-
-<a id="createdatasetresponsetypedef"></a>
+```python title="Definition"
+class CreateDatasetRequestRequestTypeDef(TypedDict):
+    name: str,
+    schemaArn: str,
+    datasetGroupArn: str,
+    datasetType: str,
+```
 
 ## CreateDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateDatasetResponseTypeDef
+
+def get_value() -> CreateDatasetResponseTypeDef:
+    return {
+        "datasetArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateDatasetResponseTypeDef(TypedDict):
+    datasetArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `datasetArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createeventtrackerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateEventTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateEventTrackerRequestRequestTypeDef
+
+def get_value() -> CreateEventTrackerRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "datasetGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `datasetGroupArn`: `str`
-
-<a id="createeventtrackerresponsetypedef"></a>
+```python title="Definition"
+class CreateEventTrackerRequestRequestTypeDef(TypedDict):
+    name: str,
+    datasetGroupArn: str,
+```
 
 ## CreateEventTrackerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateEventTrackerResponseTypeDef
+
+def get_value() -> CreateEventTrackerResponseTypeDef:
+    return {
+        "eventTrackerArn": ...,
+        "trackingId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateEventTrackerResponseTypeDef(TypedDict):
+    eventTrackerArn: str,
+    trackingId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `eventTrackerArn`: `str`
-- `trackingId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createfilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateFilterRequestRequestTypeDef
+
+def get_value() -> CreateFilterRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "datasetGroupArn": ...,
+        "filterExpression": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `datasetGroupArn`: `str`
-- `filterExpression`: `str`
-
-<a id="createfilterresponsetypedef"></a>
+```python title="Definition"
+class CreateFilterRequestRequestTypeDef(TypedDict):
+    name: str,
+    datasetGroupArn: str,
+    filterExpression: str,
+```
 
 ## CreateFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateFilterResponseTypeDef
+
+def get_value() -> CreateFilterResponseTypeDef:
+    return {
+        "filterArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateFilterResponseTypeDef(TypedDict):
+    filterArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `filterArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrecommenderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRecommenderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateRecommenderRequestRequestTypeDef
+
+def get_value() -> CreateRecommenderRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "datasetGroupArn": ...,
+        "recipeArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRecommenderRequestRequestTypeDef(TypedDict):
+    name: str,
+    datasetGroupArn: str,
+    recipeArn: str,
+    recommenderConfig: NotRequired[RecommenderConfigTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `datasetGroupArn`: `str`
-- `recipeArn`: `str`
-
-Optional fields:
-
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-
-<a id="createrecommenderresponsetypedef"></a>
-
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
 ## CreateRecommenderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateRecommenderResponseTypeDef
+
+def get_value() -> CreateRecommenderResponseTypeDef:
+    return {
+        "recommenderArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRecommenderResponseTypeDef(TypedDict):
+    recommenderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `recommenderArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSchemaRequestRequestTypeDef
+
+def get_value() -> CreateSchemaRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "schema": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaRequestRequestTypeDef(TypedDict):
+    name: str,
+    schema: str,
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `schema`: `str`
-
-Optional fields:
-
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="createschemaresponsetypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## CreateSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSchemaResponseTypeDef
+
+def get_value() -> CreateSchemaResponseTypeDef:
+    return {
+        "schemaArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSchemaResponseTypeDef(TypedDict):
+    schemaArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `schemaArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsolutionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSolutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSolutionRequestRequestTypeDef
+
+def get_value() -> CreateSolutionRequestRequestTypeDef:
+    return {
+        "name": ...,
+        "datasetGroupArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSolutionRequestRequestTypeDef(TypedDict):
+    name: str,
+    datasetGroupArn: str,
+    performHPO: NotRequired[bool],
+    performAutoML: NotRequired[bool],
+    recipeArn: NotRequired[str],
+    eventType: NotRequired[str],
+    solutionConfig: NotRequired[SolutionConfigTypeDef],  # (1)
+```
 
-- `name`: `str`
-- `datasetGroupArn`: `str`
-
-Optional fields:
-
-- `performHPO`: `bool`
-- `performAutoML`: `bool`
-- `recipeArn`: `str`
-- `eventType`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
-
-<a id="createsolutionresponsetypedef"></a>
-
+1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
 ## CreateSolutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSolutionResponseTypeDef
+
+def get_value() -> CreateSolutionResponseTypeDef:
+    return {
+        "solutionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSolutionResponseTypeDef(TypedDict):
+    solutionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `solutionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsolutionversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSolutionVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSolutionVersionRequestRequestTypeDef
+
+def get_value() -> CreateSolutionVersionRequestRequestTypeDef:
+    return {
+        "solutionArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSolutionVersionRequestRequestTypeDef(TypedDict):
+    solutionArn: str,
+    trainingMode: NotRequired[TrainingModeType],  # (1)
+```
 
-- `solutionArn`: `str`
-
-Optional fields:
-
-- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
-
-<a id="createsolutionversionresponsetypedef"></a>
-
+1. See [:material-code-brackets: TrainingModeType](./literals.md#trainingmodetype) 
 ## CreateSolutionVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import CreateSolutionVersionResponseTypeDef
+
+def get_value() -> CreateSolutionVersionResponseTypeDef:
+    return {
+        "solutionVersionArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSolutionVersionResponseTypeDef(TypedDict):
+    solutionVersionArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `solutionVersionArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="datasourcetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DataSourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DataSourceTypeDef
+
+def get_value() -> DataSourceTypeDef:
+    return {
+        "dataLocation": ...,
+    }
 ```
 
-Optional fields:
-
-- `dataLocation`: `str`
-
-<a id="datasetexportjoboutputtypedef"></a>
+```python title="Definition"
+class DataSourceTypeDef(TypedDict):
+    dataLocation: NotRequired[str],
+```
 
 ## DatasetExportJobOutputTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetExportJobOutputTypeDef
+
+def get_value() -> DatasetExportJobOutputTypeDef:
+    return {
+        "s3DataDestination": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DatasetExportJobOutputTypeDef(TypedDict):
+    s3DataDestination: S3DataConfigTypeDef,  # (1)
+```
 
-- `s3DataDestination`:
-  [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
-
-<a id="datasetexportjobsummarytypedef"></a>
-
+1. See [:material-code-braces: S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef) 
 ## DatasetExportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetExportJobSummaryTypeDef
+
+def get_value() -> DatasetExportJobSummaryTypeDef:
+    return {
+        "datasetExportJobArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetExportJobArn`: `str`
-- `jobName`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="datasetexportjobtypedef"></a>
+```python title="Definition"
+class DatasetExportJobSummaryTypeDef(TypedDict):
+    datasetExportJobArn: NotRequired[str],
+    jobName: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
 ## DatasetExportJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetExportJobTypeDef
+
+def get_value() -> DatasetExportJobTypeDef:
+    return {
+        "jobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetExportJobTypeDef(TypedDict):
+    jobName: NotRequired[str],
+    datasetExportJobArn: NotRequired[str],
+    datasetArn: NotRequired[str],
+    ingestionMode: NotRequired[IngestionModeType],  # (1)
+    roleArn: NotRequired[str],
+    status: NotRequired[str],
+    jobOutput: NotRequired[DatasetExportJobOutputTypeDef],  # (2)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
-- `jobName`: `str`
-- `datasetExportJobArn`: `str`
-- `datasetArn`: `str`
-- `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
-- `roleArn`: `str`
-- `status`: `str`
-- `jobOutput`:
-  [DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="datasetgroupsummarytypedef"></a>
-
+1. See [:material-code-brackets: IngestionModeType](./literals.md#ingestionmodetype) 
+2. See [:material-code-braces: DatasetExportJobOutputTypeDef](./type_defs.md#datasetexportjoboutputtypedef) 
 ## DatasetGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetGroupSummaryTypeDef
+
+def get_value() -> DatasetGroupSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetGroupSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `datasetGroupArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="datasetgrouptypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## DatasetGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetGroupTypeDef
+
+def get_value() -> DatasetGroupTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetGroupTypeDef(TypedDict):
+    name: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    status: NotRequired[str],
+    roleArn: NotRequired[str],
+    kmsKeyArn: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `datasetGroupArn`: `str`
-- `status`: `str`
-- `roleArn`: `str`
-- `kmsKeyArn`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="datasetimportjobsummarytypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## DatasetImportJobSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetImportJobSummaryTypeDef
+
+def get_value() -> DatasetImportJobSummaryTypeDef:
+    return {
+        "datasetImportJobArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetImportJobArn`: `str`
-- `jobName`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="datasetimportjobtypedef"></a>
+```python title="Definition"
+class DatasetImportJobSummaryTypeDef(TypedDict):
+    datasetImportJobArn: NotRequired[str],
+    jobName: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
 ## DatasetImportJobTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetImportJobTypeDef
+
+def get_value() -> DatasetImportJobTypeDef:
+    return {
+        "jobName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetImportJobTypeDef(TypedDict):
+    jobName: NotRequired[str],
+    datasetImportJobArn: NotRequired[str],
+    datasetArn: NotRequired[str],
+    dataSource: NotRequired[DataSourceTypeDef],  # (1)
+    roleArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
-- `jobName`: `str`
-- `datasetImportJobArn`: `str`
-- `datasetArn`: `str`
-- `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
-- `roleArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="datasetschemasummarytypedef"></a>
-
+1. See [:material-code-braces: DataSourceTypeDef](./type_defs.md#datasourcetypedef) 
 ## DatasetSchemaSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetSchemaSummaryTypeDef
+
+def get_value() -> DatasetSchemaSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSchemaSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    schemaArn: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `schemaArn`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="datasetschematypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## DatasetSchemaTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetSchemaTypeDef
+
+def get_value() -> DatasetSchemaTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DatasetSchemaTypeDef(TypedDict):
+    name: NotRequired[str],
+    schemaArn: NotRequired[str],
+    schema: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `schemaArn`: `str`
-- `schema`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="datasetsummarytypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## DatasetSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetSummaryTypeDef
+
+def get_value() -> DatasetSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `datasetArn`: `str`
-- `datasetType`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="datasettypedef"></a>
+```python title="Definition"
+class DatasetSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    datasetArn: NotRequired[str],
+    datasetType: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## DatasetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DatasetTypeDef
+
+def get_value() -> DatasetTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `datasetArn`: `str`
-- `datasetGroupArn`: `str`
-- `datasetType`: `str`
-- `schemaArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="defaultcategoricalhyperparameterrangetypedef"></a>
+```python title="Definition"
+class DatasetTypeDef(TypedDict):
+    name: NotRequired[str],
+    datasetArn: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    datasetType: NotRequired[str],
+    schemaArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## DefaultCategoricalHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DefaultCategoricalHyperParameterRangeTypeDef
+
+def get_value() -> DefaultCategoricalHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `values`: `List`\[`str`\]
-- `isTunable`: `bool`
-
-<a id="defaultcontinuoushyperparameterrangetypedef"></a>
+```python title="Definition"
+class DefaultCategoricalHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    values: NotRequired[List[str]],
+    isTunable: NotRequired[bool],
+```
 
 ## DefaultContinuousHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DefaultContinuousHyperParameterRangeTypeDef
+
+def get_value() -> DefaultContinuousHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `minValue`: `float`
-- `maxValue`: `float`
-- `isTunable`: `bool`
-
-<a id="defaulthyperparameterrangestypedef"></a>
+```python title="Definition"
+class DefaultContinuousHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    minValue: NotRequired[float],
+    maxValue: NotRequired[float],
+    isTunable: NotRequired[bool],
+```
 
 ## DefaultHyperParameterRangesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DefaultHyperParameterRangesTypeDef
+
+def get_value() -> DefaultHyperParameterRangesTypeDef:
+    return {
+        "integerHyperParameterRanges": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DefaultHyperParameterRangesTypeDef(TypedDict):
+    integerHyperParameterRanges: NotRequired[List[DefaultIntegerHyperParameterRangeTypeDef]],  # (1)
+    continuousHyperParameterRanges: NotRequired[List[DefaultContinuousHyperParameterRangeTypeDef]],  # (2)
+    categoricalHyperParameterRanges: NotRequired[List[DefaultCategoricalHyperParameterRangeTypeDef]],  # (3)
+```
 
-- `integerHyperParameterRanges`:
-  `List`\[[DefaultIntegerHyperParameterRangeTypeDef](./type_defs.md#defaultintegerhyperparameterrangetypedef)\]
-- `continuousHyperParameterRanges`:
-  `List`\[[DefaultContinuousHyperParameterRangeTypeDef](./type_defs.md#defaultcontinuoushyperparameterrangetypedef)\]
-- `categoricalHyperParameterRanges`:
-  `List`\[[DefaultCategoricalHyperParameterRangeTypeDef](./type_defs.md#defaultcategoricalhyperparameterrangetypedef)\]
-
-<a id="defaultintegerhyperparameterrangetypedef"></a>
-
+1. See [:material-code-braces: DefaultIntegerHyperParameterRangeTypeDef](./type_defs.md#defaultintegerhyperparameterrangetypedef) 
+2. See [:material-code-braces: DefaultContinuousHyperParameterRangeTypeDef](./type_defs.md#defaultcontinuoushyperparameterrangetypedef) 
+3. See [:material-code-braces: DefaultCategoricalHyperParameterRangeTypeDef](./type_defs.md#defaultcategoricalhyperparameterrangetypedef) 
 ## DefaultIntegerHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DefaultIntegerHyperParameterRangeTypeDef
+
+def get_value() -> DefaultIntegerHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `minValue`: `int`
-- `maxValue`: `int`
-- `isTunable`: `bool`
-
-<a id="deletecampaignrequestrequesttypedef"></a>
+```python title="Definition"
+class DefaultIntegerHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    minValue: NotRequired[int],
+    maxValue: NotRequired[int],
+    isTunable: NotRequired[bool],
+```
 
 ## DeleteCampaignRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteCampaignRequestRequestTypeDef
+
+def get_value() -> DeleteCampaignRequestRequestTypeDef:
+    return {
+        "campaignArn": ...,
+    }
 ```
 
-Required fields:
-
-- `campaignArn`: `str`
-
-<a id="deletedatasetgrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteCampaignRequestRequestTypeDef(TypedDict):
+    campaignArn: str,
+```
 
 ## DeleteDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteDatasetGroupRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetGroupRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetGroupArn`: `str`
-
-<a id="deletedatasetrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetGroupRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: str,
+```
 
 ## DeleteDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteDatasetRequestRequestTypeDef
+
+def get_value() -> DeleteDatasetRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetArn`: `str`
-
-<a id="deleteeventtrackerrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDatasetRequestRequestTypeDef(TypedDict):
+    datasetArn: str,
+```
 
 ## DeleteEventTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteEventTrackerRequestRequestTypeDef
+
+def get_value() -> DeleteEventTrackerRequestRequestTypeDef:
+    return {
+        "eventTrackerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventTrackerArn`: `str`
-
-<a id="deletefilterrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteEventTrackerRequestRequestTypeDef(TypedDict):
+    eventTrackerArn: str,
+```
 
 ## DeleteFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteFilterRequestRequestTypeDef
+
+def get_value() -> DeleteFilterRequestRequestTypeDef:
+    return {
+        "filterArn": ...,
+    }
 ```
 
-Required fields:
-
-- `filterArn`: `str`
-
-<a id="deleterecommenderrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteFilterRequestRequestTypeDef(TypedDict):
+    filterArn: str,
+```
 
 ## DeleteRecommenderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteRecommenderRequestRequestTypeDef
+
+def get_value() -> DeleteRecommenderRequestRequestTypeDef:
+    return {
+        "recommenderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `recommenderArn`: `str`
-
-<a id="deleteschemarequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteRecommenderRequestRequestTypeDef(TypedDict):
+    recommenderArn: str,
+```
 
 ## DeleteSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteSchemaRequestRequestTypeDef
+
+def get_value() -> DeleteSchemaRequestRequestTypeDef:
+    return {
+        "schemaArn": ...,
+    }
 ```
 
-Required fields:
-
-- `schemaArn`: `str`
-
-<a id="deletesolutionrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSchemaRequestRequestTypeDef(TypedDict):
+    schemaArn: str,
+```
 
 ## DeleteSolutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DeleteSolutionRequestRequestTypeDef
+
+def get_value() -> DeleteSolutionRequestRequestTypeDef:
+    return {
+        "solutionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `solutionArn`: `str`
-
-<a id="describealgorithmrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSolutionRequestRequestTypeDef(TypedDict):
+    solutionArn: str,
+```
 
 ## DescribeAlgorithmRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeAlgorithmRequestRequestTypeDef
+
+def get_value() -> DescribeAlgorithmRequestRequestTypeDef:
+    return {
+        "algorithmArn": ...,
+    }
 ```
 
-Required fields:
-
-- `algorithmArn`: `str`
-
-<a id="describealgorithmresponsetypedef"></a>
+```python title="Definition"
+class DescribeAlgorithmRequestRequestTypeDef(TypedDict):
+    algorithmArn: str,
+```
 
 ## DescribeAlgorithmResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeAlgorithmResponseTypeDef
+
+def get_value() -> DescribeAlgorithmResponseTypeDef:
+    return {
+        "algorithm": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAlgorithmResponseTypeDef(TypedDict):
+    algorithm: AlgorithmTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `algorithm`: [AlgorithmTypeDef](./type_defs.md#algorithmtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebatchinferencejobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlgorithmTypeDef](./type_defs.md#algorithmtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBatchInferenceJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobRequestRequestTypeDef
+
+def get_value() -> DescribeBatchInferenceJobRequestRequestTypeDef:
+    return {
+        "batchInferenceJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `batchInferenceJobArn`: `str`
-
-<a id="describebatchinferencejobresponsetypedef"></a>
+```python title="Definition"
+class DescribeBatchInferenceJobRequestRequestTypeDef(TypedDict):
+    batchInferenceJobArn: str,
+```
 
 ## DescribeBatchInferenceJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobResponseTypeDef
+
+def get_value() -> DescribeBatchInferenceJobResponseTypeDef:
+    return {
+        "batchInferenceJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBatchInferenceJobResponseTypeDef(TypedDict):
+    batchInferenceJob: BatchInferenceJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `batchInferenceJob`:
-  [BatchInferenceJobTypeDef](./type_defs.md#batchinferencejobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describebatchsegmentjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchInferenceJobTypeDef](./type_defs.md#batchinferencejobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeBatchSegmentJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeBatchSegmentJobRequestRequestTypeDef
+
+def get_value() -> DescribeBatchSegmentJobRequestRequestTypeDef:
+    return {
+        "batchSegmentJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `batchSegmentJobArn`: `str`
-
-<a id="describebatchsegmentjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeBatchSegmentJobRequestRequestTypeDef(TypedDict):
+    batchSegmentJobArn: str,
+```
 
 ## DescribeBatchSegmentJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeBatchSegmentJobResponseTypeDef
+
+def get_value() -> DescribeBatchSegmentJobResponseTypeDef:
+    return {
+        "batchSegmentJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeBatchSegmentJobResponseTypeDef(TypedDict):
+    batchSegmentJob: BatchSegmentJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `batchSegmentJob`:
-  [BatchSegmentJobTypeDef](./type_defs.md#batchsegmentjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecampaignrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: BatchSegmentJobTypeDef](./type_defs.md#batchsegmentjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCampaignRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeCampaignRequestRequestTypeDef
+
+def get_value() -> DescribeCampaignRequestRequestTypeDef:
+    return {
+        "campaignArn": ...,
+    }
 ```
 
-Required fields:
-
-- `campaignArn`: `str`
-
-<a id="describecampaignresponsetypedef"></a>
+```python title="Definition"
+class DescribeCampaignRequestRequestTypeDef(TypedDict):
+    campaignArn: str,
+```
 
 ## DescribeCampaignResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeCampaignResponseTypeDef
+
+def get_value() -> DescribeCampaignResponseTypeDef:
+    return {
+        "campaign": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCampaignResponseTypeDef(TypedDict):
+    campaign: CampaignTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `campaign`: [CampaignTypeDef](./type_defs.md#campaigntypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetexportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CampaignTypeDef](./type_defs.md#campaigntypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetExportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetExportJobRequestRequestTypeDef:
+    return {
+        "datasetExportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetExportJobArn`: `str`
-
-<a id="describedatasetexportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetExportJobRequestRequestTypeDef(TypedDict):
+    datasetExportJobArn: str,
+```
 
 ## DescribeDatasetExportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobResponseTypeDef
+
+def get_value() -> DescribeDatasetExportJobResponseTypeDef:
+    return {
+        "datasetExportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetExportJobResponseTypeDef(TypedDict):
+    datasetExportJob: DatasetExportJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetExportJob`:
-  [DatasetExportJobTypeDef](./type_defs.md#datasetexportjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetgrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetExportJobTypeDef](./type_defs.md#datasetexportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetGroupRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetGroupRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetGroupArn`: `str`
-
-<a id="describedatasetgroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetGroupRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: str,
+```
 
 ## DescribeDatasetGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetGroupResponseTypeDef
+
+def get_value() -> DescribeDatasetGroupResponseTypeDef:
+    return {
+        "datasetGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetGroupResponseTypeDef(TypedDict):
+    datasetGroup: DatasetGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetGroup`: [DatasetGroupTypeDef](./type_defs.md#datasetgrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetimportjobrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetGroupTypeDef](./type_defs.md#datasetgrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetImportJobRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetImportJobRequestRequestTypeDef:
+    return {
+        "datasetImportJobArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetImportJobArn`: `str`
-
-<a id="describedatasetimportjobresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetImportJobRequestRequestTypeDef(TypedDict):
+    datasetImportJobArn: str,
+```
 
 ## DescribeDatasetImportJobResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobResponseTypeDef
+
+def get_value() -> DescribeDatasetImportJobResponseTypeDef:
+    return {
+        "datasetImportJob": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetImportJobResponseTypeDef(TypedDict):
+    datasetImportJob: DatasetImportJobTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetImportJob`:
-  [DatasetImportJobTypeDef](./type_defs.md#datasetimportjobtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedatasetrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetImportJobTypeDef](./type_defs.md#datasetimportjobtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDatasetRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetRequestRequestTypeDef
+
+def get_value() -> DescribeDatasetRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+    }
 ```
 
-Required fields:
-
-- `datasetArn`: `str`
-
-<a id="describedatasetresponsetypedef"></a>
+```python title="Definition"
+class DescribeDatasetRequestRequestTypeDef(TypedDict):
+    datasetArn: str,
+```
 
 ## DescribeDatasetResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeDatasetResponseTypeDef
+
+def get_value() -> DescribeDatasetResponseTypeDef:
+    return {
+        "dataset": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDatasetResponseTypeDef(TypedDict):
+    dataset: DatasetTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventtrackerrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetTypeDef](./type_defs.md#datasettypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeEventTrackerRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeEventTrackerRequestRequestTypeDef
+
+def get_value() -> DescribeEventTrackerRequestRequestTypeDef:
+    return {
+        "eventTrackerArn": ...,
+    }
 ```
 
-Required fields:
-
-- `eventTrackerArn`: `str`
-
-<a id="describeeventtrackerresponsetypedef"></a>
+```python title="Definition"
+class DescribeEventTrackerRequestRequestTypeDef(TypedDict):
+    eventTrackerArn: str,
+```
 
 ## DescribeEventTrackerResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeEventTrackerResponseTypeDef
+
+def get_value() -> DescribeEventTrackerResponseTypeDef:
+    return {
+        "eventTracker": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeEventTrackerResponseTypeDef(TypedDict):
+    eventTracker: EventTrackerTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventTracker`: [EventTrackerTypeDef](./type_defs.md#eventtrackertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefeaturetransformationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EventTrackerTypeDef](./type_defs.md#eventtrackertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFeatureTransformationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationRequestRequestTypeDef
+
+def get_value() -> DescribeFeatureTransformationRequestRequestTypeDef:
+    return {
+        "featureTransformationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `featureTransformationArn`: `str`
-
-<a id="describefeaturetransformationresponsetypedef"></a>
+```python title="Definition"
+class DescribeFeatureTransformationRequestRequestTypeDef(TypedDict):
+    featureTransformationArn: str,
+```
 
 ## DescribeFeatureTransformationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationResponseTypeDef
+
+def get_value() -> DescribeFeatureTransformationResponseTypeDef:
+    return {
+        "featureTransformation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFeatureTransformationResponseTypeDef(TypedDict):
+    featureTransformation: FeatureTransformationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `featureTransformation`:
-  [FeatureTransformationTypeDef](./type_defs.md#featuretransformationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describefilterrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FeatureTransformationTypeDef](./type_defs.md#featuretransformationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeFilterRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeFilterRequestRequestTypeDef
+
+def get_value() -> DescribeFilterRequestRequestTypeDef:
+    return {
+        "filterArn": ...,
+    }
 ```
 
-Required fields:
-
-- `filterArn`: `str`
-
-<a id="describefilterresponsetypedef"></a>
+```python title="Definition"
+class DescribeFilterRequestRequestTypeDef(TypedDict):
+    filterArn: str,
+```
 
 ## DescribeFilterResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeFilterResponseTypeDef
+
+def get_value() -> DescribeFilterResponseTypeDef:
+    return {
+        "filter": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeFilterResponseTypeDef(TypedDict):
+    filter: FilterTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `filter`: [FilterTypeDef](./type_defs.md#filtertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describereciperequestrequesttypedef"></a>
-
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRecipeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeRecipeRequestRequestTypeDef
+
+def get_value() -> DescribeRecipeRequestRequestTypeDef:
+    return {
+        "recipeArn": ...,
+    }
 ```
 
-Required fields:
-
-- `recipeArn`: `str`
-
-<a id="describereciperesponsetypedef"></a>
+```python title="Definition"
+class DescribeRecipeRequestRequestTypeDef(TypedDict):
+    recipeArn: str,
+```
 
 ## DescribeRecipeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeRecipeResponseTypeDef
+
+def get_value() -> DescribeRecipeResponseTypeDef:
+    return {
+        "recipe": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRecipeResponseTypeDef(TypedDict):
+    recipe: RecipeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recipe`: [RecipeTypeDef](./type_defs.md#recipetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describerecommenderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecipeTypeDef](./type_defs.md#recipetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRecommenderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeRecommenderRequestRequestTypeDef
+
+def get_value() -> DescribeRecommenderRequestRequestTypeDef:
+    return {
+        "recommenderArn": ...,
+    }
 ```
 
-Required fields:
-
-- `recommenderArn`: `str`
-
-<a id="describerecommenderresponsetypedef"></a>
+```python title="Definition"
+class DescribeRecommenderRequestRequestTypeDef(TypedDict):
+    recommenderArn: str,
+```
 
 ## DescribeRecommenderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeRecommenderResponseTypeDef
+
+def get_value() -> DescribeRecommenderResponseTypeDef:
+    return {
+        "recommender": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRecommenderResponseTypeDef(TypedDict):
+    recommender: RecommenderTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recommender`: [RecommenderTypeDef](./type_defs.md#recommendertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeschemarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommenderTypeDef](./type_defs.md#recommendertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSchemaRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSchemaRequestRequestTypeDef
+
+def get_value() -> DescribeSchemaRequestRequestTypeDef:
+    return {
+        "schemaArn": ...,
+    }
 ```
 
-Required fields:
-
-- `schemaArn`: `str`
-
-<a id="describeschemaresponsetypedef"></a>
+```python title="Definition"
+class DescribeSchemaRequestRequestTypeDef(TypedDict):
+    schemaArn: str,
+```
 
 ## DescribeSchemaResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSchemaResponseTypeDef
+
+def get_value() -> DescribeSchemaResponseTypeDef:
+    return {
+        "schema": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSchemaResponseTypeDef(TypedDict):
+    schema: DatasetSchemaTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `schema`: [DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesolutionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DatasetSchemaTypeDef](./type_defs.md#datasetschematypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSolutionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSolutionRequestRequestTypeDef
+
+def get_value() -> DescribeSolutionRequestRequestTypeDef:
+    return {
+        "solutionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `solutionArn`: `str`
-
-<a id="describesolutionresponsetypedef"></a>
+```python title="Definition"
+class DescribeSolutionRequestRequestTypeDef(TypedDict):
+    solutionArn: str,
+```
 
 ## DescribeSolutionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSolutionResponseTypeDef
+
+def get_value() -> DescribeSolutionResponseTypeDef:
+    return {
+        "solution": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSolutionResponseTypeDef(TypedDict):
+    solution: SolutionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `solution`: [SolutionTypeDef](./type_defs.md#solutiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesolutionversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SolutionTypeDef](./type_defs.md#solutiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSolutionVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSolutionVersionRequestRequestTypeDef
+
+def get_value() -> DescribeSolutionVersionRequestRequestTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `solutionVersionArn`: `str`
-
-<a id="describesolutionversionresponsetypedef"></a>
+```python title="Definition"
+class DescribeSolutionVersionRequestRequestTypeDef(TypedDict):
+    solutionVersionArn: str,
+```
 
 ## DescribeSolutionVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import DescribeSolutionVersionResponseTypeDef
+
+def get_value() -> DescribeSolutionVersionResponseTypeDef:
+    return {
+        "solutionVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSolutionVersionResponseTypeDef(TypedDict):
+    solutionVersion: SolutionVersionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `solutionVersion`:
-  [SolutionVersionTypeDef](./type_defs.md#solutionversiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="eventtrackersummarytypedef"></a>
-
+1. See [:material-code-braces: SolutionVersionTypeDef](./type_defs.md#solutionversiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EventTrackerSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import EventTrackerSummaryTypeDef
+
+def get_value() -> EventTrackerSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `eventTrackerArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="eventtrackertypedef"></a>
+```python title="Definition"
+class EventTrackerSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    eventTrackerArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## EventTrackerTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import EventTrackerTypeDef
+
+def get_value() -> EventTrackerTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `eventTrackerArn`: `str`
-- `accountId`: `str`
-- `trackingId`: `str`
-- `datasetGroupArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="featuretransformationtypedef"></a>
+```python title="Definition"
+class EventTrackerTypeDef(TypedDict):
+    name: NotRequired[str],
+    eventTrackerArn: NotRequired[str],
+    accountId: NotRequired[str],
+    trackingId: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## FeatureTransformationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import FeatureTransformationTypeDef
+
+def get_value() -> FeatureTransformationTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `featureTransformationArn`: `str`
-- `defaultParameters`: `Dict`\[`str`, `str`\]
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `status`: `str`
-
-<a id="filtersummarytypedef"></a>
+```python title="Definition"
+class FeatureTransformationTypeDef(TypedDict):
+    name: NotRequired[str],
+    featureTransformationArn: NotRequired[str],
+    defaultParameters: NotRequired[Dict[str, str]],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    status: NotRequired[str],
+```
 
 ## FilterSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import FilterSummaryTypeDef
+
+def get_value() -> FilterSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `filterArn`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `datasetGroupArn`: `str`
-- `failureReason`: `str`
-- `status`: `str`
-
-<a id="filtertypedef"></a>
+```python title="Definition"
+class FilterSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    filterArn: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    datasetGroupArn: NotRequired[str],
+    failureReason: NotRequired[str],
+    status: NotRequired[str],
+```
 
 ## FilterTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import FilterTypeDef
+
+def get_value() -> FilterTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `filterArn`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `datasetGroupArn`: `str`
-- `failureReason`: `str`
-- `filterExpression`: `str`
-- `status`: `str`
-
-<a id="getsolutionmetricsrequestrequesttypedef"></a>
+```python title="Definition"
+class FilterTypeDef(TypedDict):
+    name: NotRequired[str],
+    filterArn: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    datasetGroupArn: NotRequired[str],
+    failureReason: NotRequired[str],
+    filterExpression: NotRequired[str],
+    status: NotRequired[str],
+```
 
 ## GetSolutionMetricsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import GetSolutionMetricsRequestRequestTypeDef
+
+def get_value() -> GetSolutionMetricsRequestRequestTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `solutionVersionArn`: `str`
-
-<a id="getsolutionmetricsresponsetypedef"></a>
+```python title="Definition"
+class GetSolutionMetricsRequestRequestTypeDef(TypedDict):
+    solutionVersionArn: str,
+```
 
 ## GetSolutionMetricsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import GetSolutionMetricsResponseTypeDef
+
+def get_value() -> GetSolutionMetricsResponseTypeDef:
+    return {
+        "solutionVersionArn": ...,
+        "metrics": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetSolutionMetricsResponseTypeDef(TypedDict):
+    solutionVersionArn: str,
+    metrics: Dict[str, float],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `solutionVersionArn`: `str`
-- `metrics`: `Dict`\[`str`, `float`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hpoconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HPOConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import HPOConfigTypeDef
+
+def get_value() -> HPOConfigTypeDef:
+    return {
+        "hpoObjective": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HPOConfigTypeDef(TypedDict):
+    hpoObjective: NotRequired[HPOObjectiveTypeDef],  # (1)
+    hpoResourceConfig: NotRequired[HPOResourceConfigTypeDef],  # (2)
+    algorithmHyperParameterRanges: NotRequired[HyperParameterRangesTypeDef],  # (3)
+```
 
-- `hpoObjective`: [HPOObjectiveTypeDef](./type_defs.md#hpoobjectivetypedef)
-- `hpoResourceConfig`:
-  [HPOResourceConfigTypeDef](./type_defs.md#hporesourceconfigtypedef)
-- `algorithmHyperParameterRanges`:
-  [HyperParameterRangesTypeDef](./type_defs.md#hyperparameterrangestypedef)
-
-<a id="hpoobjectivetypedef"></a>
-
+1. See [:material-code-braces: HPOObjectiveTypeDef](./type_defs.md#hpoobjectivetypedef) 
+2. See [:material-code-braces: HPOResourceConfigTypeDef](./type_defs.md#hporesourceconfigtypedef) 
+3. See [:material-code-braces: HyperParameterRangesTypeDef](./type_defs.md#hyperparameterrangestypedef) 
 ## HPOObjectiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import HPOObjectiveTypeDef
+
+def get_value() -> HPOObjectiveTypeDef:
+    return {
+        "type": ...,
+    }
 ```
 
-Optional fields:
-
-- `type`: `str`
-- `metricName`: `str`
-- `metricRegex`: `str`
-
-<a id="hporesourceconfigtypedef"></a>
+```python title="Definition"
+class HPOObjectiveTypeDef(TypedDict):
+    type: NotRequired[str],
+    metricName: NotRequired[str],
+    metricRegex: NotRequired[str],
+```
 
 ## HPOResourceConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import HPOResourceConfigTypeDef
+
+def get_value() -> HPOResourceConfigTypeDef:
+    return {
+        "maxNumberOfTrainingJobs": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxNumberOfTrainingJobs`: `str`
-- `maxParallelTrainingJobs`: `str`
-
-<a id="hyperparameterrangestypedef"></a>
+```python title="Definition"
+class HPOResourceConfigTypeDef(TypedDict):
+    maxNumberOfTrainingJobs: NotRequired[str],
+    maxParallelTrainingJobs: NotRequired[str],
+```
 
 ## HyperParameterRangesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import HyperParameterRangesTypeDef
+
+def get_value() -> HyperParameterRangesTypeDef:
+    return {
+        "integerHyperParameterRanges": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HyperParameterRangesTypeDef(TypedDict):
+    integerHyperParameterRanges: NotRequired[Sequence[IntegerHyperParameterRangeTypeDef]],  # (1)
+    continuousHyperParameterRanges: NotRequired[Sequence[ContinuousHyperParameterRangeTypeDef]],  # (2)
+    categoricalHyperParameterRanges: NotRequired[Sequence[CategoricalHyperParameterRangeTypeDef]],  # (3)
+```
 
-- `integerHyperParameterRanges`:
-  `Sequence`\[[IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef)\]
-- `continuousHyperParameterRanges`:
-  `Sequence`\[[ContinuousHyperParameterRangeTypeDef](./type_defs.md#continuoushyperparameterrangetypedef)\]
-- `categoricalHyperParameterRanges`:
-  `Sequence`\[[CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef)\]
-
-<a id="integerhyperparameterrangetypedef"></a>
-
+1. See [:material-code-braces: IntegerHyperParameterRangeTypeDef](./type_defs.md#integerhyperparameterrangetypedef) 
+2. See [:material-code-braces: ContinuousHyperParameterRangeTypeDef](./type_defs.md#continuoushyperparameterrangetypedef) 
+3. See [:material-code-braces: CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef) 
 ## IntegerHyperParameterRangeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import IntegerHyperParameterRangeTypeDef
+
+def get_value() -> IntegerHyperParameterRangeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntegerHyperParameterRangeTypeDef(TypedDict):
+    name: NotRequired[str],
+    minValue: NotRequired[int],
+    maxValue: NotRequired[int],
+```
 
-- `name`: `str`
-- `minValue`: `int`
-- `maxValue`: `int`
+## ListBatchInferenceJobsRequestListBatchInferenceJobsPaginateTypeDef
 
-<a id="listbatchinferencejobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsRequestListBatchInferenceJobsPaginateTypeDef
 
+def get_value() -> ListBatchInferenceJobsRequestListBatchInferenceJobsPaginateTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListBatchInferenceJobsRequestListBatchInferenceJobsPaginateTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBatchInferenceJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsRequestRequestTypeDef
+
+def get_value() -> ListBatchInferenceJobsRequestRequestTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `solutionVersionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listbatchinferencejobsresponsetypedef"></a>
+```python title="Definition"
+class ListBatchInferenceJobsRequestRequestTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListBatchInferenceJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListBatchInferenceJobsResponseTypeDef
+
+def get_value() -> ListBatchInferenceJobsResponseTypeDef:
+    return {
+        "batchInferenceJobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBatchInferenceJobsResponseTypeDef(TypedDict):
+    batchInferenceJobs: List[BatchInferenceJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `batchInferenceJobs`:
-  `List`\[[BatchInferenceJobSummaryTypeDef](./type_defs.md#batchinferencejobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BatchInferenceJobSummaryTypeDef](./type_defs.md#batchinferencejobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBatchSegmentJobsRequestListBatchSegmentJobsPaginateTypeDef
 
-<a id="listbatchsegmentjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListBatchSegmentJobsRequestListBatchSegmentJobsPaginateTypeDef
 
+def get_value() -> ListBatchSegmentJobsRequestListBatchSegmentJobsPaginateTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListBatchSegmentJobsRequestListBatchSegmentJobsPaginateTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBatchSegmentJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListBatchSegmentJobsRequestRequestTypeDef
+
+def get_value() -> ListBatchSegmentJobsRequestRequestTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `solutionVersionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listbatchsegmentjobsresponsetypedef"></a>
+```python title="Definition"
+class ListBatchSegmentJobsRequestRequestTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListBatchSegmentJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListBatchSegmentJobsResponseTypeDef
+
+def get_value() -> ListBatchSegmentJobsResponseTypeDef:
+    return {
+        "batchSegmentJobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBatchSegmentJobsResponseTypeDef(TypedDict):
+    batchSegmentJobs: List[BatchSegmentJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `batchSegmentJobs`:
-  `List`\[[BatchSegmentJobSummaryTypeDef](./type_defs.md#batchsegmentjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: BatchSegmentJobSummaryTypeDef](./type_defs.md#batchsegmentjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListCampaignsRequestListCampaignsPaginateTypeDef
 
-<a id="listcampaignsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListCampaignsRequestListCampaignsPaginateTypeDef
 
+def get_value() -> ListCampaignsRequestListCampaignsPaginateTypeDef:
+    return {
+        "solutionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListCampaignsRequestListCampaignsPaginateTypeDef(TypedDict):
+    solutionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListCampaignsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListCampaignsRequestRequestTypeDef
+
+def get_value() -> ListCampaignsRequestRequestTypeDef:
+    return {
+        "solutionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `solutionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listcampaignsresponsetypedef"></a>
+```python title="Definition"
+class ListCampaignsRequestRequestTypeDef(TypedDict):
+    solutionArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListCampaignsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListCampaignsResponseTypeDef
+
+def get_value() -> ListCampaignsResponseTypeDef:
+    return {
+        "campaigns": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListCampaignsResponseTypeDef(TypedDict):
+    campaigns: List[CampaignSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `campaigns`:
-  `List`\[[CampaignSummaryTypeDef](./type_defs.md#campaignsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CampaignSummaryTypeDef](./type_defs.md#campaignsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetExportJobsRequestListDatasetExportJobsPaginateTypeDef
 
-<a id="listdatasetexportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListDatasetExportJobsRequestListDatasetExportJobsPaginateTypeDef
 
+def get_value() -> ListDatasetExportJobsRequestListDatasetExportJobsPaginateTypeDef:
+    return {
+        "datasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetExportJobsRequestListDatasetExportJobsPaginateTypeDef(TypedDict):
+    datasetArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetExportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetExportJobsRequestRequestTypeDef
+
+def get_value() -> ListDatasetExportJobsRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdatasetexportjobsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetExportJobsRequestRequestTypeDef(TypedDict):
+    datasetArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDatasetExportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetExportJobsResponseTypeDef
+
+def get_value() -> ListDatasetExportJobsResponseTypeDef:
+    return {
+        "datasetExportJobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetExportJobsResponseTypeDef(TypedDict):
+    datasetExportJobs: List[DatasetExportJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetExportJobs`:
-  `List`\[[DatasetExportJobSummaryTypeDef](./type_defs.md#datasetexportjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetExportJobSummaryTypeDef](./type_defs.md#datasetexportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef
 
-<a id="listdatasetgroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef
 
+def get_value() -> ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetGroupsRequestListDatasetGroupsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetGroupsRequestRequestTypeDef
+
+def get_value() -> ListDatasetGroupsRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdatasetgroupsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetGroupsRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDatasetGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetGroupsResponseTypeDef
+
+def get_value() -> ListDatasetGroupsResponseTypeDef:
+    return {
+        "datasetGroups": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetGroupsResponseTypeDef(TypedDict):
+    datasetGroups: List[DatasetGroupSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetGroups`:
-  `List`\[[DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetGroupSummaryTypeDef](./type_defs.md#datasetgroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef
 
-<a id="listdatasetimportjobsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef
 
+def get_value() -> ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef:
+    return {
+        "datasetArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetImportJobsRequestListDatasetImportJobsPaginateTypeDef(TypedDict):
+    datasetArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetImportJobsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetImportJobsRequestRequestTypeDef
+
+def get_value() -> ListDatasetImportJobsRequestRequestTypeDef:
+    return {
+        "datasetArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdatasetimportjobsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetImportJobsRequestRequestTypeDef(TypedDict):
+    datasetArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDatasetImportJobsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetImportJobsResponseTypeDef
+
+def get_value() -> ListDatasetImportJobsResponseTypeDef:
+    return {
+        "datasetImportJobs": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetImportJobsResponseTypeDef(TypedDict):
+    datasetImportJobs: List[DatasetImportJobSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasetImportJobs`:
-  `List`\[[DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetImportJobSummaryTypeDef](./type_defs.md#datasetimportjobsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDatasetsRequestListDatasetsPaginateTypeDef
 
-<a id="listdatasetsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListDatasetsRequestListDatasetsPaginateTypeDef
 
+def get_value() -> ListDatasetsRequestListDatasetsPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListDatasetsRequestListDatasetsPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDatasetsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetsRequestRequestTypeDef
+
+def get_value() -> ListDatasetsRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listdatasetsresponsetypedef"></a>
+```python title="Definition"
+class ListDatasetsRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListDatasetsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListDatasetsResponseTypeDef
+
+def get_value() -> ListDatasetsResponseTypeDef:
+    return {
+        "datasets": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDatasetsResponseTypeDef(TypedDict):
+    datasets: List[DatasetSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `datasets`:
-  `List`\[[DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetSummaryTypeDef](./type_defs.md#datasetsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListEventTrackersRequestListEventTrackersPaginateTypeDef
 
-<a id="listeventtrackersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListEventTrackersRequestListEventTrackersPaginateTypeDef
 
+def get_value() -> ListEventTrackersRequestListEventTrackersPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListEventTrackersRequestListEventTrackersPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListEventTrackersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListEventTrackersRequestRequestTypeDef
+
+def get_value() -> ListEventTrackersRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listeventtrackersresponsetypedef"></a>
+```python title="Definition"
+class ListEventTrackersRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListEventTrackersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListEventTrackersResponseTypeDef
+
+def get_value() -> ListEventTrackersResponseTypeDef:
+    return {
+        "eventTrackers": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListEventTrackersResponseTypeDef(TypedDict):
+    eventTrackers: List[EventTrackerSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `eventTrackers`:
-  `List`\[[EventTrackerSummaryTypeDef](./type_defs.md#eventtrackersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: EventTrackerSummaryTypeDef](./type_defs.md#eventtrackersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListFiltersRequestListFiltersPaginateTypeDef
 
-<a id="listfiltersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListFiltersRequestListFiltersPaginateTypeDef
 
+def get_value() -> ListFiltersRequestListFiltersPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListFiltersRequestListFiltersPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListFiltersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListFiltersRequestRequestTypeDef
+
+def get_value() -> ListFiltersRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listfiltersresponsetypedef"></a>
+```python title="Definition"
+class ListFiltersRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListFiltersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListFiltersResponseTypeDef
+
+def get_value() -> ListFiltersResponseTypeDef:
+    return {
+        "Filters": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListFiltersResponseTypeDef(TypedDict):
+    Filters: List[FilterSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Filters`:
-  `List`\[[FilterSummaryTypeDef](./type_defs.md#filtersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: FilterSummaryTypeDef](./type_defs.md#filtersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecipesRequestListRecipesPaginateTypeDef
 
-<a id="listrecipesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListRecipesRequestListRecipesPaginateTypeDef
 
+def get_value() -> ListRecipesRequestListRecipesPaginateTypeDef:
+    return {
+        "recipeProvider": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecipesRequestListRecipesPaginateTypeDef(TypedDict):
+    recipeProvider: NotRequired[RecipeProviderType],  # (1)
+    domain: NotRequired[DomainType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: RecipeProviderType](./literals.md#recipeprovidertype) 
+2. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecipesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListRecipesRequestRequestTypeDef
+
+def get_value() -> ListRecipesRequestRequestTypeDef:
+    return {
+        "recipeProvider": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListRecipesRequestRequestTypeDef(TypedDict):
+    recipeProvider: NotRequired[RecipeProviderType],  # (1)
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+    domain: NotRequired[DomainType],  # (2)
+```
 
-- `recipeProvider`: `Literal['SERVICE']` (see
-  [RecipeProviderType](./literals.md#recipeprovidertype))
-- `nextToken`: `str`
-- `maxResults`: `int`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="listrecipesresponsetypedef"></a>
-
+1. See [:material-code-brackets: RecipeProviderType](./literals.md#recipeprovidertype) 
+2. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## ListRecipesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListRecipesResponseTypeDef
+
+def get_value() -> ListRecipesResponseTypeDef:
+    return {
+        "recipes": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecipesResponseTypeDef(TypedDict):
+    recipes: List[RecipeSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recipes`:
-  `List`\[[RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RecipeSummaryTypeDef](./type_defs.md#recipesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRecommendersRequestListRecommendersPaginateTypeDef
 
-<a id="listrecommendersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListRecommendersRequestListRecommendersPaginateTypeDef
 
+def get_value() -> ListRecommendersRequestListRecommendersPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListRecommendersRequestListRecommendersPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRecommendersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListRecommendersRequestRequestTypeDef
+
+def get_value() -> ListRecommendersRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listrecommendersresponsetypedef"></a>
+```python title="Definition"
+class ListRecommendersRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListRecommendersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListRecommendersResponseTypeDef
+
+def get_value() -> ListRecommendersResponseTypeDef:
+    return {
+        "recommenders": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendersResponseTypeDef(TypedDict):
+    recommenders: List[RecommenderSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recommenders`:
-  `List`\[[RecommenderSummaryTypeDef](./type_defs.md#recommendersummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RecommenderSummaryTypeDef](./type_defs.md#recommendersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSchemasRequestListSchemasPaginateTypeDef
 
-<a id="listschemasrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListSchemasRequestListSchemasPaginateTypeDef
 
+def get_value() -> ListSchemasRequestListSchemasPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListSchemasRequestListSchemasPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSchemasRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSchemasRequestRequestTypeDef
+
+def get_value() -> ListSchemasRequestRequestTypeDef:
+    return {
+        "nextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listschemasresponsetypedef"></a>
+```python title="Definition"
+class ListSchemasRequestRequestTypeDef(TypedDict):
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListSchemasResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSchemasResponseTypeDef
+
+def get_value() -> ListSchemasResponseTypeDef:
+    return {
+        "schemas": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSchemasResponseTypeDef(TypedDict):
+    schemas: List[DatasetSchemaSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `schemas`:
-  `List`\[[DatasetSchemaSummaryTypeDef](./type_defs.md#datasetschemasummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DatasetSchemaSummaryTypeDef](./type_defs.md#datasetschemasummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef
 
-<a id="listsolutionversionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef
 
+def get_value() -> ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef:
+    return {
+        "solutionArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSolutionVersionsRequestListSolutionVersionsPaginateTypeDef(TypedDict):
+    solutionArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSolutionVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSolutionVersionsRequestRequestTypeDef
+
+def get_value() -> ListSolutionVersionsRequestRequestTypeDef:
+    return {
+        "solutionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `solutionArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listsolutionversionsresponsetypedef"></a>
+```python title="Definition"
+class ListSolutionVersionsRequestRequestTypeDef(TypedDict):
+    solutionArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListSolutionVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSolutionVersionsResponseTypeDef
+
+def get_value() -> ListSolutionVersionsResponseTypeDef:
+    return {
+        "solutionVersions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSolutionVersionsResponseTypeDef(TypedDict):
+    solutionVersions: List[SolutionVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `solutionVersions`:
-  `List`\[[SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSolutionsRequestListSolutionsPaginateTypeDef
 
-<a id="listsolutionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_personalize.type_defs import ListSolutionsRequestListSolutionsPaginateTypeDef
 
+def get_value() -> ListSolutionsRequestListSolutionsPaginateTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
+```
+
+```python title="Definition"
+class ListSolutionsRequestListSolutionsPaginateTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSolutionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSolutionsRequestRequestTypeDef
+
+def get_value() -> ListSolutionsRequestRequestTypeDef:
+    return {
+        "datasetGroupArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `datasetGroupArn`: `str`
-- `nextToken`: `str`
-- `maxResults`: `int`
-
-<a id="listsolutionsresponsetypedef"></a>
+```python title="Definition"
+class ListSolutionsRequestRequestTypeDef(TypedDict):
+    datasetGroupArn: NotRequired[str],
+    nextToken: NotRequired[str],
+    maxResults: NotRequired[int],
+```
 
 ## ListSolutionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ListSolutionsResponseTypeDef
+
+def get_value() -> ListSolutionsResponseTypeDef:
+    return {
+        "solutions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSolutionsResponseTypeDef(TypedDict):
+    solutions: List[SolutionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `solutions`:
-  `List`\[[SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="optimizationobjectivetypedef"></a>
-
+1. See [:material-code-braces: SolutionSummaryTypeDef](./type_defs.md#solutionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## OptimizationObjectiveTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import OptimizationObjectiveTypeDef
+
+def get_value() -> OptimizationObjectiveTypeDef:
+    return {
+        "itemAttribute": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OptimizationObjectiveTypeDef(TypedDict):
+    itemAttribute: NotRequired[str],
+    objectiveSensitivity: NotRequired[ObjectiveSensitivityType],  # (1)
+```
 
-- `itemAttribute`: `str`
-- `objectiveSensitivity`:
-  [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-brackets: ObjectiveSensitivityType](./literals.md#objectivesensitivitytype) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="recipesummarytypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## RecipeSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecipeSummaryTypeDef
+
+def get_value() -> RecipeSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecipeSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    recipeArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    domain: NotRequired[DomainType],  # (1)
+```
 
-- `name`: `str`
-- `recipeArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `domain`: [DomainType](./literals.md#domaintype)
-
-<a id="recipetypedef"></a>
-
+1. See [:material-code-brackets: DomainType](./literals.md#domaintype) 
 ## RecipeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecipeTypeDef
+
+def get_value() -> RecipeTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `recipeArn`: `str`
-- `algorithmArn`: `str`
-- `featureTransformationArn`: `str`
-- `status`: `str`
-- `description`: `str`
-- `creationDateTime`: `datetime`
-- `recipeType`: `str`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="recommenderconfigtypedef"></a>
+```python title="Definition"
+class RecipeTypeDef(TypedDict):
+    name: NotRequired[str],
+    recipeArn: NotRequired[str],
+    algorithmArn: NotRequired[str],
+    featureTransformationArn: NotRequired[str],
+    status: NotRequired[str],
+    description: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    recipeType: NotRequired[str],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## RecommenderConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecommenderConfigTypeDef
+
+def get_value() -> RecommenderConfigTypeDef:
+    return {
+        "itemExplorationConfig": ...,
+    }
 ```
 
-Optional fields:
-
-- `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
-- `minRecommendationRequestsPerSecond`: `int`
-
-<a id="recommendersummarytypedef"></a>
+```python title="Definition"
+class RecommenderConfigTypeDef(TypedDict):
+    itemExplorationConfig: NotRequired[Mapping[str, str]],
+    minRecommendationRequestsPerSecond: NotRequired[int],
+```
 
 ## RecommenderSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecommenderSummaryTypeDef
+
+def get_value() -> RecommenderSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommenderSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    recommenderArn: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    recipeArn: NotRequired[str],
+    recommenderConfig: NotRequired[RecommenderConfigTypeDef],  # (1)
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `name`: `str`
-- `recommenderArn`: `str`
-- `datasetGroupArn`: `str`
-- `recipeArn`: `str`
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="recommendertypedef"></a>
-
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
 ## RecommenderTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecommenderTypeDef
+
+def get_value() -> RecommenderTypeDef:
+    return {
+        "recommenderArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommenderTypeDef(TypedDict):
+    recommenderArn: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    name: NotRequired[str],
+    recipeArn: NotRequired[str],
+    recommenderConfig: NotRequired[RecommenderConfigTypeDef],  # (1)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    status: NotRequired[str],
+    failureReason: NotRequired[str],
+    latestRecommenderUpdate: NotRequired[RecommenderUpdateSummaryTypeDef],  # (2)
+```
 
-- `recommenderArn`: `str`
-- `datasetGroupArn`: `str`
-- `name`: `str`
-- `recipeArn`: `str`
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `status`: `str`
-- `failureReason`: `str`
-- `latestRecommenderUpdate`:
-  [RecommenderUpdateSummaryTypeDef](./type_defs.md#recommenderupdatesummarytypedef)
-
-<a id="recommenderupdatesummarytypedef"></a>
-
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
+2. See [:material-code-braces: RecommenderUpdateSummaryTypeDef](./type_defs.md#recommenderupdatesummarytypedef) 
 ## RecommenderUpdateSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import RecommenderUpdateSummaryTypeDef
+
+def get_value() -> RecommenderUpdateSummaryTypeDef:
+    return {
+        "recommenderConfig": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RecommenderUpdateSummaryTypeDef(TypedDict):
+    recommenderConfig: NotRequired[RecommenderConfigTypeDef],  # (1)
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    status: NotRequired[str],
+    failureReason: NotRequired[str],
+```
 
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `status`: `str`
-- `failureReason`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3dataconfigtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3DataConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import S3DataConfigTypeDef
+
+def get_value() -> S3DataConfigTypeDef:
+    return {
+        "path": ...,
+    }
 ```
 
-Required fields:
-
-- `path`: `str`
-
-Optional fields:
-
-- `kmsKeyArn`: `str`
-
-<a id="solutionconfigtypedef"></a>
+```python title="Definition"
+class S3DataConfigTypeDef(TypedDict):
+    path: str,
+    kmsKeyArn: NotRequired[str],
+```
 
 ## SolutionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import SolutionConfigTypeDef
+
+def get_value() -> SolutionConfigTypeDef:
+    return {
+        "eventValueThreshold": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SolutionConfigTypeDef(TypedDict):
+    eventValueThreshold: NotRequired[str],
+    hpoConfig: NotRequired[HPOConfigTypeDef],  # (1)
+    algorithmHyperParameters: NotRequired[Mapping[str, str]],
+    featureTransformationParameters: NotRequired[Mapping[str, str]],
+    autoMLConfig: NotRequired[AutoMLConfigTypeDef],  # (2)
+    optimizationObjective: NotRequired[OptimizationObjectiveTypeDef],  # (3)
+```
 
-- `eventValueThreshold`: `str`
-- `hpoConfig`: [HPOConfigTypeDef](./type_defs.md#hpoconfigtypedef)
-- `algorithmHyperParameters`: `Mapping`\[`str`, `str`\]
-- `featureTransformationParameters`: `Mapping`\[`str`, `str`\]
-- `autoMLConfig`: [AutoMLConfigTypeDef](./type_defs.md#automlconfigtypedef)
-- `optimizationObjective`:
-  [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)
-
-<a id="solutionsummarytypedef"></a>
-
+1. See [:material-code-braces: HPOConfigTypeDef](./type_defs.md#hpoconfigtypedef) 
+2. See [:material-code-braces: AutoMLConfigTypeDef](./type_defs.md#automlconfigtypedef) 
+3. See [:material-code-braces: OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef) 
 ## SolutionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import SolutionSummaryTypeDef
+
+def get_value() -> SolutionSummaryTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
-
-- `name`: `str`
-- `solutionArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="solutiontypedef"></a>
+```python title="Definition"
+class SolutionSummaryTypeDef(TypedDict):
+    name: NotRequired[str],
+    solutionArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
 ## SolutionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import SolutionTypeDef
+
+def get_value() -> SolutionTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SolutionTypeDef(TypedDict):
+    name: NotRequired[str],
+    solutionArn: NotRequired[str],
+    performHPO: NotRequired[bool],
+    performAutoML: NotRequired[bool],
+    recipeArn: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    eventType: NotRequired[str],
+    solutionConfig: NotRequired[SolutionConfigTypeDef],  # (1)
+    autoMLResult: NotRequired[AutoMLResultTypeDef],  # (2)
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    latestSolutionVersion: NotRequired[SolutionVersionSummaryTypeDef],  # (3)
+```
 
-- `name`: `str`
-- `solutionArn`: `str`
-- `performHPO`: `bool`
-- `performAutoML`: `bool`
-- `recipeArn`: `str`
-- `datasetGroupArn`: `str`
-- `eventType`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
-- `autoMLResult`: [AutoMLResultTypeDef](./type_defs.md#automlresulttypedef)
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `latestSolutionVersion`:
-  [SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)
-
-<a id="solutionversionsummarytypedef"></a>
-
+1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
+2. See [:material-code-braces: AutoMLResultTypeDef](./type_defs.md#automlresulttypedef) 
+3. See [:material-code-braces: SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef) 
 ## SolutionVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import SolutionVersionSummaryTypeDef
+
+def get_value() -> SolutionVersionSummaryTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `solutionVersionArn`: `str`
-- `status`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-- `failureReason`: `str`
-
-<a id="solutionversiontypedef"></a>
+```python title="Definition"
+class SolutionVersionSummaryTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    status: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+    failureReason: NotRequired[str],
+```
 
 ## SolutionVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import SolutionVersionTypeDef
+
+def get_value() -> SolutionVersionTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SolutionVersionTypeDef(TypedDict):
+    solutionVersionArn: NotRequired[str],
+    solutionArn: NotRequired[str],
+    performHPO: NotRequired[bool],
+    performAutoML: NotRequired[bool],
+    recipeArn: NotRequired[str],
+    eventType: NotRequired[str],
+    datasetGroupArn: NotRequired[str],
+    solutionConfig: NotRequired[SolutionConfigTypeDef],  # (1)
+    trainingHours: NotRequired[float],
+    trainingMode: NotRequired[TrainingModeType],  # (2)
+    tunedHPOParams: NotRequired[TunedHPOParamsTypeDef],  # (3)
+    status: NotRequired[str],
+    failureReason: NotRequired[str],
+    creationDateTime: NotRequired[datetime],
+    lastUpdatedDateTime: NotRequired[datetime],
+```
 
-- `solutionVersionArn`: `str`
-- `solutionArn`: `str`
-- `performHPO`: `bool`
-- `performAutoML`: `bool`
-- `recipeArn`: `str`
-- `eventType`: `str`
-- `datasetGroupArn`: `str`
-- `solutionConfig`:
-  [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
-- `trainingHours`: `float`
-- `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
-- `tunedHPOParams`:
-  [TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef)
-- `status`: `str`
-- `failureReason`: `str`
-- `creationDateTime`: `datetime`
-- `lastUpdatedDateTime`: `datetime`
-
-<a id="stopsolutionversioncreationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef) 
+2. See [:material-code-brackets: TrainingModeType](./literals.md#trainingmodetype) 
+3. See [:material-code-braces: TunedHPOParamsTypeDef](./type_defs.md#tunedhpoparamstypedef) 
 ## StopSolutionVersionCreationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import StopSolutionVersionCreationRequestRequestTypeDef
+
+def get_value() -> StopSolutionVersionCreationRequestRequestTypeDef:
+    return {
+        "solutionVersionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `solutionVersionArn`: `str`
-
-<a id="tunedhpoparamstypedef"></a>
+```python title="Definition"
+class StopSolutionVersionCreationRequestRequestTypeDef(TypedDict):
+    solutionVersionArn: str,
+```
 
 ## TunedHPOParamsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import TunedHPOParamsTypeDef
+
+def get_value() -> TunedHPOParamsTypeDef:
+    return {
+        "algorithmHyperParameters": ...,
+    }
 ```
 
-Optional fields:
-
-- `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
-
-<a id="updatecampaignrequestrequesttypedef"></a>
+```python title="Definition"
+class TunedHPOParamsTypeDef(TypedDict):
+    algorithmHyperParameters: NotRequired[Dict[str, str]],
+```
 
 ## UpdateCampaignRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import UpdateCampaignRequestRequestTypeDef
+
+def get_value() -> UpdateCampaignRequestRequestTypeDef:
+    return {
+        "campaignArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCampaignRequestRequestTypeDef(TypedDict):
+    campaignArn: str,
+    solutionVersionArn: NotRequired[str],
+    minProvisionedTPS: NotRequired[int],
+    campaignConfig: NotRequired[CampaignConfigTypeDef],  # (1)
+```
 
-- `campaignArn`: `str`
-
-Optional fields:
-
-- `solutionVersionArn`: `str`
-- `minProvisionedTPS`: `int`
-- `campaignConfig`:
-  [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
-
-<a id="updatecampaignresponsetypedef"></a>
-
+1. See [:material-code-braces: CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef) 
 ## UpdateCampaignResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import UpdateCampaignResponseTypeDef
+
+def get_value() -> UpdateCampaignResponseTypeDef:
+    return {
+        "campaignArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateCampaignResponseTypeDef(TypedDict):
+    campaignArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `campaignArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updaterecommenderrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateRecommenderRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import UpdateRecommenderRequestRequestTypeDef
+
+def get_value() -> UpdateRecommenderRequestRequestTypeDef:
+    return {
+        "recommenderArn": ...,
+        "recommenderConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRecommenderRequestRequestTypeDef(TypedDict):
+    recommenderArn: str,
+    recommenderConfig: RecommenderConfigTypeDef,  # (1)
+```
 
-- `recommenderArn`: `str`
-- `recommenderConfig`:
-  [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
-
-<a id="updaterecommenderresponsetypedef"></a>
-
+1. See [:material-code-braces: RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef) 
 ## UpdateRecommenderResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_personalize.type_defs import UpdateRecommenderResponseTypeDef
+
+def get_value() -> UpdateRecommenderResponseTypeDef:
+    return {
+        "recommenderArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRecommenderResponseTypeDef(TypedDict):
+    recommenderArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `recommenderArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

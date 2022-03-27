@@ -1,46 +1,20 @@
-<a id="type-annotations-for-boto3-glacier-module"></a>
-
-# Type annotations for boto3 Glacier module
+#  Glacier module
 
 > [Index](../README.md) > Glacier
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [Type annotations for boto3 Glacier module](#type-annotations-for-boto3-glacier-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [GlacierClient](#glacierclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [GlacierServiceResource](#glacierserviceresource)
-    - [Collections](#collections)
-    - [Resources](#resources)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Glacier`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -60,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[glacier]'
 python -m pip install mypy-boto3-glacier
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -68,120 +42,115 @@ python -m pip install mypy-boto3-glacier
 python -m pip uninstall -y mypy-boto3-glacier
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="glacierclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## GlacierClient
 
-Type annotations for `boto3.client("glacier")` as [GlacierClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("glacier")` as [GlacierClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_glacier.client import GlacierClient
+
+def get_client() -> GlacierClient:
+    return Session().cleint("glacier")
 ```
 
-<a id="methods"></a>
 
-### Methods
+## Paginators
 
-- [abort_multipart_upload](./client.md#abort_multipart_upload)
-- [abort_vault_lock](./client.md#abort_vault_lock)
-- [add_tags_to_vault](./client.md#add_tags_to_vault)
-- [can_paginate](./client.md#can_paginate)
-- [complete_multipart_upload](./client.md#complete_multipart_upload)
-- [complete_vault_lock](./client.md#complete_vault_lock)
-- [create_vault](./client.md#create_vault)
-- [delete_archive](./client.md#delete_archive)
-- [delete_vault](./client.md#delete_vault)
-- [delete_vault_access_policy](./client.md#delete_vault_access_policy)
-- [delete_vault_notifications](./client.md#delete_vault_notifications)
-- [describe_job](./client.md#describe_job)
-- [describe_vault](./client.md#describe_vault)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_data_retrieval_policy](./client.md#get_data_retrieval_policy)
-- [get_job_output](./client.md#get_job_output)
-- [get_paginator](./client.md#get_paginator)
-- [get_vault_access_policy](./client.md#get_vault_access_policy)
-- [get_vault_lock](./client.md#get_vault_lock)
-- [get_vault_notifications](./client.md#get_vault_notifications)
-- [get_waiter](./client.md#get_waiter)
-- [initiate_job](./client.md#initiate_job)
-- [initiate_multipart_upload](./client.md#initiate_multipart_upload)
-- [initiate_vault_lock](./client.md#initiate_vault_lock)
-- [list_jobs](./client.md#list_jobs)
-- [list_multipart_uploads](./client.md#list_multipart_uploads)
-- [list_parts](./client.md#list_parts)
-- [list_provisioned_capacity](./client.md#list_provisioned_capacity)
-- [list_tags_for_vault](./client.md#list_tags_for_vault)
-- [list_vaults](./client.md#list_vaults)
-- [purchase_provisioned_capacity](./client.md#purchase_provisioned_capacity)
-- [remove_tags_from_vault](./client.md#remove_tags_from_vault)
-- [set_data_retrieval_policy](./client.md#set_data_retrieval_policy)
-- [set_vault_access_policy](./client.md#set_vault_access_policy)
-- [set_vault_notifications](./client.md#set_vault_notifications)
-- [upload_archive](./client.md#upload_archive)
-- [upload_multipart_part](./client.md#upload_multipart_part)
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("glacier").get_paginator("...")`.
 
-<a id="exceptions"></a>
+```python title="Usage example"
+from boto3.session import Session
 
-### Exceptions
+from mypy_boto3_glacier.paginator import ListJobsPaginator
 
-GlacierClient [exceptions](./client.md#exceptions)
+def get_list_jobs_paginator() -> ListJobsPaginator:
+    return Session().client("glacier").get_paginator("list_jobs"))
+```
 
-- ClientError
-- InsufficientCapacityException
-- InvalidParameterValueException
-- LimitExceededException
-- MissingParameterValueException
-- PolicyEnforcedException
-- RequestTimeoutException
-- ResourceNotFoundException
-- ServiceUnavailableException
+- [ListJobsPaginator](./paginators.md#listjobspaginator)
+- [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
+- [ListPartsPaginator](./paginators.md#listpartspaginator)
+- [ListVaultsPaginator](./paginators.md#listvaultspaginator)
 
-<a id="glacierserviceresource"></a>
+
+
+
+## Waiters
+
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("glacier").get_waiter("...")`.
+
+```python title="Usage example"
+from boto3.session import Session
+
+from mypy_boto3_glacier.waiter import VaultExistsWaiter
+
+def get_vault_exists_waiter() -> VaultExistsWaiter:
+    return Session().client("glacier").get_waiter("vault_exists")
+```
+
+- [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
+- [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)
+
+
+
+
 
 ## GlacierServiceResource
 
-Type annotations for `boto3.resource("glacier")` as
+Type annotations and code completion for `#!python boto3.resource("glacier")` as
 [GlacierServiceResource](./service_resource.md#glacierserviceresource)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_glacier.service_resource import GlacierServiceResource
+
+def get_glacier_resource() -> GlacierServiceResource:
+    return Session().resource("glacier")
 ```
 
-<a id="collections"></a>
 
 ### Collections
 
-Type annotations for collections from `boto3.resource("glacier").*`.
+Type annotations and code completion for collections
+from `#!python boto3.resource("glacier").*`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection, ...
+from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection
+
+def get_collection() -> ServiceResourceVaultsCollection:
+    return Session().resource("glacier").vaults
 ```
 
 - [ServiceResourceVaultsCollection](./service_resource.md#glacierserviceresourcevaults)
 
-<a id="resources"></a>
+
+
 
 ### Resources
 
-Type annotations for additional resources from `boto3.resource("glacier").*`.
+Type annotations and code completion for additional resources
+from `#!python boto3.resource("glacier").*`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_glacier.service_resource import Account, ...
+from mypy_boto3_glacier.service_resource import Account
+
+def get_resource() -> Account:
+    return Session().resource("glacier").Account(...)
 ```
 
 - [Account](./service_resource.md#account)
@@ -191,50 +160,19 @@ from mypy_boto3_glacier.service_resource import Account, ...
 - [Notification](./service_resource.md#notification)
 - [Vault](./service_resource.md#vault)
 
-<a id="paginators"></a>
 
-## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("glacier").get_paginator("...")`.
 
-Can be used directly:
-
-```python
-from mypy_boto3_glacier.paginator import ListJobsPaginator, ...
-```
-
-- [ListJobsPaginator](./paginators.md#listjobspaginator)
-- [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
-- [ListPartsPaginator](./paginators.md#listpartspaginator)
-- [ListVaultsPaginator](./paginators.md#listvaultspaginator)
-
-<a id="waiters"></a>
-
-## Waiters
-
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("glacier").get_waiter("...")`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_glacier.waiter import VaultExistsWaiter, ...
-```
-
-- [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
-- [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)
-
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_glacier.literals import ActionCodeType
 
-```python
-from mypy_boto3_glacier.literals import ActionCodeType, ...
+def get_value() -> ActionCodeType:
+    return "ArchiveRetrieval"
 ```
 
 - [ActionCodeType](./literals.md#actioncodetype)
@@ -258,18 +196,23 @@ from mypy_boto3_glacier.literals import ActionCodeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 
-```python
-from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef, ...
+def get_value() -> AbortMultipartUploadInputRequestTypeDef:
+    return {
+        "vaultName": ...,
+        "uploadId": ...,
+    }
 ```
 
 - [AbortMultipartUploadInputRequestTypeDef](./type_defs.md#abortmultipartuploadinputrequesttypedef)
@@ -294,6 +237,8 @@ from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 - [DeleteVaultNotificationsInputRequestTypeDef](./type_defs.md#deletevaultnotificationsinputrequesttypedef)
 - [DescribeJobInputRequestTypeDef](./type_defs.md#describejobinputrequesttypedef)
 - [DescribeVaultInputRequestTypeDef](./type_defs.md#describevaultinputrequesttypedef)
+- [DescribeVaultInputVaultExistsWaitTypeDef](./type_defs.md#describevaultinputvaultexistswaittypedef)
+- [DescribeVaultInputVaultNotExistsWaitTypeDef](./type_defs.md#describevaultinputvaultnotexistswaittypedef)
 - [DescribeVaultOutputResponseMetadataTypeDef](./type_defs.md#describevaultoutputresponsemetadatatypedef)
 - [DescribeVaultOutputTypeDef](./type_defs.md#describevaultoutputtypedef)
 - [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
@@ -324,10 +269,13 @@ from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 - [InventoryRetrievalJobDescriptionTypeDef](./type_defs.md#inventoryretrievaljobdescriptiontypedef)
 - [InventoryRetrievalJobInputTypeDef](./type_defs.md#inventoryretrievaljobinputtypedef)
 - [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
+- [ListJobsInputListJobsPaginateTypeDef](./type_defs.md#listjobsinputlistjobspaginatetypedef)
 - [ListJobsInputRequestTypeDef](./type_defs.md#listjobsinputrequesttypedef)
 - [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef)
+- [ListMultipartUploadsInputListMultipartUploadsPaginateTypeDef](./type_defs.md#listmultipartuploadsinputlistmultipartuploadspaginatetypedef)
 - [ListMultipartUploadsInputRequestTypeDef](./type_defs.md#listmultipartuploadsinputrequesttypedef)
 - [ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)
+- [ListPartsInputListPartsPaginateTypeDef](./type_defs.md#listpartsinputlistpartspaginatetypedef)
 - [ListPartsInputMultipartUploadPartsTypeDef](./type_defs.md#listpartsinputmultipartuploadpartstypedef)
 - [ListPartsInputRequestTypeDef](./type_defs.md#listpartsinputrequesttypedef)
 - [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef)
@@ -335,6 +283,7 @@ from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 - [ListProvisionedCapacityOutputTypeDef](./type_defs.md#listprovisionedcapacityoutputtypedef)
 - [ListTagsForVaultInputRequestTypeDef](./type_defs.md#listtagsforvaultinputrequesttypedef)
 - [ListTagsForVaultOutputTypeDef](./type_defs.md#listtagsforvaultoutputtypedef)
+- [ListVaultsInputListVaultsPaginateTypeDef](./type_defs.md#listvaultsinputlistvaultspaginatetypedef)
 - [ListVaultsInputRequestTypeDef](./type_defs.md#listvaultsinputrequesttypedef)
 - [ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef)
 - [OutputLocationResponseMetadataTypeDef](./type_defs.md#outputlocationresponsemetadatatypedef)
@@ -373,3 +322,4 @@ from mypy_boto3_glacier.type_defs import AbortMultipartUploadInputRequestTypeDef
 - [VaultMultipartUploadRequestTypeDef](./type_defs.md#vaultmultipartuploadrequesttypedef)
 - [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

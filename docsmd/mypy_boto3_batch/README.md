@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-batch-module"></a>
-
-# Type annotations for boto3 Batch module
+#  Batch module
 
 > [Index](../README.md) > Batch
 
-Auto-generated documentation for
-[Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
-type annotations stubs module
-[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
+!!! note ""
 
-- [Type annotations for boto3 Batch module](#type-annotations-for-boto3-batch-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [BatchClient](#batchclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
+    type annotations stubs module [mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `Batch`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[batch]'
 python -m pip install mypy-boto3-batch
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,78 +42,37 @@ python -m pip install mypy-boto3-batch
 python -m pip uninstall -y mypy-boto3-batch
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="batchclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## BatchClient
 
-Type annotations for `boto3.client("batch")` as [BatchClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("batch")` as [BatchClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_batch.client import BatchClient
+
+def get_client() -> BatchClient:
+    return Session().cleint("batch")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [cancel_job](./client.md#cancel_job)
-- [create_compute_environment](./client.md#create_compute_environment)
-- [create_job_queue](./client.md#create_job_queue)
-- [create_scheduling_policy](./client.md#create_scheduling_policy)
-- [delete_compute_environment](./client.md#delete_compute_environment)
-- [delete_job_queue](./client.md#delete_job_queue)
-- [delete_scheduling_policy](./client.md#delete_scheduling_policy)
-- [deregister_job_definition](./client.md#deregister_job_definition)
-- [describe_compute_environments](./client.md#describe_compute_environments)
-- [describe_job_definitions](./client.md#describe_job_definitions)
-- [describe_job_queues](./client.md#describe_job_queues)
-- [describe_jobs](./client.md#describe_jobs)
-- [describe_scheduling_policies](./client.md#describe_scheduling_policies)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [list_jobs](./client.md#list_jobs)
-- [list_scheduling_policies](./client.md#list_scheduling_policies)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [register_job_definition](./client.md#register_job_definition)
-- [submit_job](./client.md#submit_job)
-- [tag_resource](./client.md#tag_resource)
-- [terminate_job](./client.md#terminate_job)
-- [untag_resource](./client.md#untag_resource)
-- [update_compute_environment](./client.md#update_compute_environment)
-- [update_job_queue](./client.md#update_job_queue)
-- [update_scheduling_policy](./client.md#update_scheduling_policy)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-BatchClient [exceptions](./client.md#exceptions)
-
-- ClientError
-- ClientException
-- ServerException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("batch").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("batch").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator, ...
+from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator
+
+def get_describe_compute_environments_paginator() -> DescribeComputeEnvironmentsPaginator:
+    return Session().client("batch").get_paginator("describe_compute_environments"))
 ```
 
 - [DescribeComputeEnvironmentsPaginator](./paginators.md#describecomputeenvironmentspaginator)
@@ -144,16 +81,23 @@ from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator, ...
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListSchedulingPoliciesPaginator](./paginators.md#listschedulingpoliciespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_batch.literals import ArrayJobDependencyType
 
-```python
-from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
+def get_value() -> ArrayJobDependencyType:
+    return "N_TO_N"
 ```
 
 - [ArrayJobDependencyType](./literals.md#arrayjobdependencytype)
@@ -183,18 +127,22 @@ from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef
 
-```python
-from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef, ...
+def get_value() -> ArrayPropertiesDetailTypeDef:
+    return {
+        "statusSummary": ...,
+    }
 ```
 
 - [ArrayPropertiesDetailTypeDef](./type_defs.md#arraypropertiesdetailtypedef)
@@ -221,10 +169,13 @@ from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef, ...
 - [DeleteJobQueueRequestRequestTypeDef](./type_defs.md#deletejobqueuerequestrequesttypedef)
 - [DeleteSchedulingPolicyRequestRequestTypeDef](./type_defs.md#deleteschedulingpolicyrequestrequesttypedef)
 - [DeregisterJobDefinitionRequestRequestTypeDef](./type_defs.md#deregisterjobdefinitionrequestrequesttypedef)
+- [DescribeComputeEnvironmentsRequestDescribeComputeEnvironmentsPaginateTypeDef](./type_defs.md#describecomputeenvironmentsrequestdescribecomputeenvironmentspaginatetypedef)
 - [DescribeComputeEnvironmentsRequestRequestTypeDef](./type_defs.md#describecomputeenvironmentsrequestrequesttypedef)
 - [DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef)
+- [DescribeJobDefinitionsRequestDescribeJobDefinitionsPaginateTypeDef](./type_defs.md#describejobdefinitionsrequestdescribejobdefinitionspaginatetypedef)
 - [DescribeJobDefinitionsRequestRequestTypeDef](./type_defs.md#describejobdefinitionsrequestrequesttypedef)
 - [DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef)
+- [DescribeJobQueuesRequestDescribeJobQueuesPaginateTypeDef](./type_defs.md#describejobqueuesrequestdescribejobqueuespaginatetypedef)
 - [DescribeJobQueuesRequestRequestTypeDef](./type_defs.md#describejobqueuesrequestrequesttypedef)
 - [DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef)
 - [DescribeJobsRequestRequestTypeDef](./type_defs.md#describejobsrequestrequesttypedef)
@@ -249,8 +200,10 @@ from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef, ...
 - [KeyValuesPairTypeDef](./type_defs.md#keyvaluespairtypedef)
 - [LaunchTemplateSpecificationTypeDef](./type_defs.md#launchtemplatespecificationtypedef)
 - [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
+- [ListJobsRequestListJobsPaginateTypeDef](./type_defs.md#listjobsrequestlistjobspaginatetypedef)
 - [ListJobsRequestRequestTypeDef](./type_defs.md#listjobsrequestrequesttypedef)
 - [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)
+- [ListSchedulingPoliciesRequestListSchedulingPoliciesPaginateTypeDef](./type_defs.md#listschedulingpoliciesrequestlistschedulingpoliciespaginatetypedef)
 - [ListSchedulingPoliciesRequestRequestTypeDef](./type_defs.md#listschedulingpoliciesrequestrequesttypedef)
 - [ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -288,3 +241,4 @@ from mypy_boto3_batch.type_defs import ArrayPropertiesDetailTypeDef, ...
 - [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef)
 - [UpdateSchedulingPolicyRequestRequestTypeDef](./type_defs.md#updateschedulingpolicyrequestrequesttypedef)
 - [VolumeTypeDef](./type_defs.md#volumetypedef)
+

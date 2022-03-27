@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-datapipeline-module"></a>
-
-# Paginators for boto3 DataPipeline module
+# Paginators
 
 > [Index](../README.md) > [DataPipeline](./README.md) > Paginators
 
-Auto-generated documentation for
-[DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
-type annotations stubs module
-[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+!!! note ""
 
-- [Paginators for boto3 DataPipeline module](#paginators-for-boto3-datapipeline-module)
-  - [DescribeObjectsPaginator](#describeobjectspaginator)
-  - [ListPipelinesPaginator](#listpipelinespaginator)
-  - [QueryObjectsPaginator](#queryobjectspaginator)
-
-<a id="describeobjectspaginator"></a>
+    Auto-generated documentation for [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
+    type annotations stubs module [mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 ## DescribeObjectsPaginator
 
-Type annotations for
-`boto3.client("datapipeline").get_paginator("describe_objects")`.
+Type annotations and code completion for `#!python boto3.client("datapipeline").get_paginator("describe_objects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datapipeline.paginator import DescribeObjectsPaginator
@@ -32,30 +21,43 @@ def get_describe_objects_paginator() -> DescribeObjectsPaginator:
     return Session().client("datapipeline").get_paginator("describe_objects")
 ```
 
-Boto3 documentation:
-[DataPipeline.Paginator.DescribeObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.DescribeObjects)
 
-Arguments for `DescribeObjectsPaginator.paginate` method:
+### paginate
 
-- `pipelineId`: `str` *(required)*
-- `objectIds`: `Sequence`\[`str`\] *(required)*
-- `evaluateExpressions`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeObjectsPaginator.paginate` method.
 
-`DescribeObjectsPaginator.paginate` returns
-`_PageIterator`\[[DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    pipelineId: str,
+    objectIds: Sequence[str],
+    evaluateExpressions: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeObjectsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listpipelinespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeObjectsOutputTypeDef](./type_defs.md#describeobjectsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeObjectsInputDescribeObjectsPaginateTypeDef = {  # (1)
+    "pipelineId": ...,
+    "objectIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeObjectsInputDescribeObjectsPaginateTypeDef](./type_defs.md#describeobjectsinputdescribeobjectspaginatetypedef) 
 ## ListPipelinesPaginator
 
-Type annotations for
-`boto3.client("datapipeline").get_paginator("list_pipelines")`.
+Type annotations and code completion for `#!python boto3.client("datapipeline").get_paginator("list_pipelines")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datapipeline.paginator import ListPipelinesPaginator
@@ -64,27 +66,39 @@ def get_list_pipelines_paginator() -> ListPipelinesPaginator:
     return Session().client("datapipeline").get_paginator("list_pipelines")
 ```
 
-Boto3 documentation:
-[DataPipeline.Paginator.ListPipelines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.ListPipelines)
 
-Arguments for `ListPipelinesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListPipelinesPaginator.paginate` method.
 
-`ListPipelinesPaginator.paginate` returns
-`_PageIterator`\[[ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListPipelinesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="queryobjectspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListPipelinesOutputTypeDef](./type_defs.md#listpipelinesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListPipelinesInputListPipelinesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListPipelinesInputListPipelinesPaginateTypeDef](./type_defs.md#listpipelinesinputlistpipelinespaginatetypedef) 
 ## QueryObjectsPaginator
 
-Type annotations for
-`boto3.client("datapipeline").get_paginator("query_objects")`.
+Type annotations and code completion for `#!python boto3.client("datapipeline").get_paginator("query_objects")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_datapipeline.paginator import QueryObjectsPaginator
@@ -93,16 +107,35 @@ def get_query_objects_paginator() -> QueryObjectsPaginator:
     return Session().client("datapipeline").get_paginator("query_objects")
 ```
 
-Boto3 documentation:
-[DataPipeline.Paginator.QueryObjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline.Paginator.QueryObjects)
 
-Arguments for `QueryObjectsPaginator.paginate` method:
+### paginate
 
-- `pipelineId`: `str` *(required)*
-- `sphere`: `str` *(required)*
-- `query`: [QueryTypeDef](./type_defs.md#querytypedef)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python QueryObjectsPaginator.paginate` method.
 
-`QueryObjectsPaginator.paginate` returns
-`_PageIterator`\[[QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    pipelineId: str,
+    sphere: str,
+    query: QueryTypeDef = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[QueryObjectsOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: QueryTypeDef](./type_defs.md#querytypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: QueryObjectsOutputTypeDef](./type_defs.md#queryobjectsoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: QueryObjectsInputQueryObjectsPaginateTypeDef = {  # (1)
+    "pipelineId": ...,
+    "sphere": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: QueryObjectsInputQueryObjectsPaginateTypeDef](./type_defs.md#queryobjectsinputqueryobjectspaginatetypedef) 

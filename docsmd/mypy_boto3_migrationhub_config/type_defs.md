@@ -1,147 +1,173 @@
-<a id="typed-dictionaries-for-boto3-migrationhubconfig-module"></a>
+# Typed dictionaries
 
-# Typed dictionaries for boto3 MigrationHubConfig module
+> [Index](../README.md) > [MigrationHubConfig](./README.md) > Typed dictionaries
 
-> [Index](../README.md) > [MigrationHubConfig](./README.md) > Typed
-> dictionaries
+!!! note ""
 
-Auto-generated documentation for
-[MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
-type annotations stubs module
-[mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
-
-- [Typed dictionaries for boto3 MigrationHubConfig module](#typed-dictionaries-for-boto3-migrationhubconfig-module)
-  - [CreateHomeRegionControlRequestRequestTypeDef](#createhomeregioncontrolrequestrequesttypedef)
-  - [CreateHomeRegionControlResultTypeDef](#createhomeregioncontrolresulttypedef)
-  - [DescribeHomeRegionControlsRequestRequestTypeDef](#describehomeregioncontrolsrequestrequesttypedef)
-  - [DescribeHomeRegionControlsResultTypeDef](#describehomeregioncontrolsresulttypedef)
-  - [GetHomeRegionResultTypeDef](#gethomeregionresulttypedef)
-  - [HomeRegionControlTypeDef](#homeregioncontroltypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [TargetTypeDef](#targettypedef)
-
-<a id="createhomeregioncontrolrequestrequesttypedef"></a>
+    Auto-generated documentation for [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
+    type annotations stubs module [mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 ## CreateHomeRegionControlRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlRequestRequestTypeDef
+
+def get_value() -> CreateHomeRegionControlRequestRequestTypeDef:
+    return {
+        "HomeRegion": ...,
+        "Target": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHomeRegionControlRequestRequestTypeDef(TypedDict):
+    HomeRegion: str,
+    Target: TargetTypeDef,  # (1)
+    DryRun: NotRequired[bool],
+```
 
-- `HomeRegion`: `str`
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
-
-Optional fields:
-
-- `DryRun`: `bool`
-
-<a id="createhomeregioncontrolresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## CreateHomeRegionControlResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import CreateHomeRegionControlResultTypeDef
+
+def get_value() -> CreateHomeRegionControlResultTypeDef:
+    return {
+        "HomeRegionControl": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHomeRegionControlResultTypeDef(TypedDict):
+    HomeRegionControl: HomeRegionControlTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HomeRegionControl`:
-  [HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehomeregioncontrolsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHomeRegionControlsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsRequestRequestTypeDef
+
+def get_value() -> DescribeHomeRegionControlsRequestRequestTypeDef:
+    return {
+        "ControlId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DescribeHomeRegionControlsRequestRequestTypeDef(TypedDict):
+    ControlId: NotRequired[str],
+    HomeRegion: NotRequired[str],
+    Target: NotRequired[TargetTypeDef],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `ControlId`: `str`
-- `HomeRegion`: `str`
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="describehomeregioncontrolsresulttypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## DescribeHomeRegionControlsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import DescribeHomeRegionControlsResultTypeDef
+
+def get_value() -> DescribeHomeRegionControlsResultTypeDef:
+    return {
+        "HomeRegionControls": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHomeRegionControlsResultTypeDef(TypedDict):
+    HomeRegionControls: List[HomeRegionControlTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HomeRegionControls`:
-  `List`\[[HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="gethomeregionresulttypedef"></a>
-
+1. See [:material-code-braces: HomeRegionControlTypeDef](./type_defs.md#homeregioncontroltypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetHomeRegionResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import GetHomeRegionResultTypeDef
+
+def get_value() -> GetHomeRegionResultTypeDef:
+    return {
+        "HomeRegion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetHomeRegionResultTypeDef(TypedDict):
+    HomeRegion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HomeRegion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="homeregioncontroltypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HomeRegionControlTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import HomeRegionControlTypeDef
+
+def get_value() -> HomeRegionControlTypeDef:
+    return {
+        "ControlId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HomeRegionControlTypeDef(TypedDict):
+    ControlId: NotRequired[str],
+    HomeRegion: NotRequired[str],
+    Target: NotRequired[TargetTypeDef],  # (1)
+    RequestedTime: NotRequired[datetime],
+```
 
-- `ControlId`: `str`
-- `HomeRegion`: `str`
-- `Target`: [TargetTypeDef](./type_defs.md#targettypedef)
-- `RequestedTime`: `datetime`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="targettypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## TargetTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_migrationhub_config.type_defs import TargetTypeDef
+
+def get_value() -> TargetTypeDef:
+    return {
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TargetTypeDef(TypedDict):
+    Type: TargetTypeType,  # (1)
+    Id: NotRequired[str],
+```
 
-- `Type`: `Literal['ACCOUNT']` (see
-  [TargetTypeType](./literals.md#targettypetype))
-
-Optional fields:
-
-- `Id`: `str`
+1. See [:material-code-brackets: TargetTypeType](./literals.md#targettypetype) 

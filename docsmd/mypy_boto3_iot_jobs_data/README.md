@@ -1,41 +1,20 @@
-<a id="type-annotations-for-boto3-iotjobsdataplane-module"></a>
-
-# Type annotations for boto3 IoTJobsDataPlane module
+#  IoTJobsDataPlane module
 
 > [Index](../README.md) > IoTJobsDataPlane
 
-Auto-generated documentation for
-[IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
-type annotations stubs module
-[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+!!! note ""
 
-- [Type annotations for boto3 IoTJobsDataPlane module](#type-annotations-for-boto3-iotjobsdataplane-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [IoTJobsDataPlaneClient](#iotjobsdataplaneclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
+    type annotations stubs module [mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `IoTJobsDataPlane`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -55,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[iot-jobs-data]'
 python -m pip install mypy-boto3-iot-jobs-data
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -63,80 +42,64 @@ python -m pip install mypy-boto3-iot-jobs-data
 python -m pip uninstall -y mypy-boto3-iot-jobs-data
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="iotjobsdataplaneclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## IoTJobsDataPlaneClient
 
-Type annotations for `boto3.client("iot-jobs-data")` as
-[IoTJobsDataPlaneClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("iot-jobs-data")` as [IoTJobsDataPlaneClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_iot_jobs_data.client import IoTJobsDataPlaneClient
+
+def get_client() -> IoTJobsDataPlaneClient:
+    return Session().cleint("iot-jobs-data")
 ```
 
-<a id="methods"></a>
 
-### Methods
 
-- [can_paginate](./client.md#can_paginate)
-- [describe_job_execution](./client.md#describe_job_execution)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_pending_job_executions](./client.md#get_pending_job_executions)
-- [start_next_pending_job_execution](./client.md#start_next_pending_job_execution)
-- [update_job_execution](./client.md#update_job_execution)
 
-<a id="exceptions"></a>
 
-### Exceptions
 
-IoTJobsDataPlaneClient [exceptions](./client.md#exceptions)
 
-- CertificateValidationException
-- ClientError
-- InvalidRequestException
-- InvalidStateTransitionException
-- ResourceNotFoundException
-- ServiceUnavailableException
-- TerminalStateException
-- ThrottlingException
 
-<a id="literals"></a>
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot_jobs_data.literals import JobExecutionStatusType
 
-```python
-from mypy_boto3_iot_jobs_data.literals import JobExecutionStatusType, ...
+def get_value() -> JobExecutionStatusType:
+    return "CANCELED"
 ```
 
 - [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - [IoTJobsDataPlaneServiceName](./literals.md#iotjobsdataplaneservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef
 
-```python
-from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestRequestTypeDef, ...
+def get_value() -> DescribeJobExecutionRequestRequestTypeDef:
+    return {
+        "jobId": ...,
+        "thingName": ...,
+    }
 ```
 
 - [DescribeJobExecutionRequestRequestTypeDef](./type_defs.md#describejobexecutionrequestrequesttypedef)
@@ -151,3 +114,4 @@ from mypy_boto3_iot_jobs_data.type_defs import DescribeJobExecutionRequestReques
 - [StartNextPendingJobExecutionResponseTypeDef](./type_defs.md#startnextpendingjobexecutionresponsetypedef)
 - [UpdateJobExecutionRequestRequestTypeDef](./type_defs.md#updatejobexecutionrequestrequesttypedef)
 - [UpdateJobExecutionResponseTypeDef](./type_defs.md#updatejobexecutionresponsetypedef)
+

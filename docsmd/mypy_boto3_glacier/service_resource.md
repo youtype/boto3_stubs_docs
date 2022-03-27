@@ -1,480 +1,504 @@
-<a id="glacierserviceresource-for-boto3-glacier-module"></a>
-
-# GlacierServiceResource for boto3 Glacier module
+# GlacierServiceResource
 
 > [Index](../README.md) > [Glacier](./README.md) > GlacierServiceResource
 
-Auto-generated documentation for
-[Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
-type annotations stubs module
-[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
+!!! note ""
 
-- [GlacierServiceResource for boto3 Glacier module](#glacierserviceresource-for-boto3-glacier-module)
-  - [GlacierServiceResource](#glacierserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceVaultsCollection](#serviceresourcevaultscollection)
-  - [Methods](#methods)
-    - [GlacierServiceResource.Account method](#glacierserviceresourceaccount-method)
-    - [GlacierServiceResource.Archive method](#glacierserviceresourcearchive-method)
-    - [GlacierServiceResource.Job method](#glacierserviceresourcejob-method)
-    - [GlacierServiceResource.MultipartUpload method](#glacierserviceresourcemultipartupload-method)
-    - [GlacierServiceResource.Notification method](#glacierserviceresourcenotification-method)
-    - [GlacierServiceResource.Vault method](#glacierserviceresourcevault-method)
-    - [GlacierServiceResource.create_vault method](#glacierserviceresourcecreate_vault-method)
-    - [GlacierServiceResource.get_available_subresources method](#glacierserviceresourceget_available_subresources-method)
-  - [Account](#account)
-    - [Account attributes](#account-attributes)
-    - [Account collections](#account-collections)
-    - [Account methods](#account-methods)
-  - [Archive](#archive)
-    - [Archive attributes](#archive-attributes)
-    - [Archive methods](#archive-methods)
-  - [Job](#job)
-    - [Job attributes](#job-attributes)
-    - [Job methods](#job-methods)
-  - [MultipartUpload](#multipartupload)
-    - [MultipartUpload attributes](#multipartupload-attributes)
-    - [MultipartUpload methods](#multipartupload-methods)
-  - [Notification](#notification)
-    - [Notification attributes](#notification-attributes)
-    - [Notification methods](#notification-methods)
-  - [Vault](#vault)
-    - [Vault attributes](#vault-attributes)
-    - [Vault collections](#vault-collections)
-    - [Vault methods](#vault-methods)
-
-<a id="glacierserviceresource"></a>
+    Auto-generated documentation for [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
+    type annotations stubs module [mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ## GlacierServiceResource
 
-Type annotations for `boto3.resource("glacier")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("glacier")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import GlacierServiceResource
 
 def get_glacier_resource() -> GlacierServiceResource:
     return boto3.resource("glacier")
 ```
 
-Boto3 documentation:
-[Glacier.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
+
 
 - `meta`: [GlacierResourceMeta](#glacierresourcemeta)
 
 - `vaults`: [ServiceResourceVaultsCollection](#serviceresourcevaultscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcevaultscollection"></a>
-
 ### ServiceResourceVaultsCollection
 
-Type annotations for `boto3.resource("glacier").vaults` collection.
+Provides access to [Vault](#vault) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").vaults` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.vaults)
 
-```python
-from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection
 
 def get_collection() -> ServiceResourceVaultsCollection:
     return boto3.resource("glacier").vaults
 ```
 
-Provides access to [Vault](#vault) resource.
 
-Boto3 documentation:
-[Glacier.ServiceResource.vaults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.vaults)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="glacierserviceresourceaccount-method"></a>
 
 ### GlacierServiceResource.Account method
 
 Creates a Account resource.
 
-Type annotations for `boto3.resource("glacier").Account` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Account)
 
-Boto3 documentation:
-[Glacier.ServiceResource.Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Account)
+```python title="Method definition"
+def Account(
+    self,
+    id: str,
+) -> Account:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceAccountRequestTypeDef](./type_defs.md#serviceresourceaccountrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceAccountRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Account](#account).
+parent.Account(**kwargs)
+```
 
-<a id="glacierserviceresourcearchive-method"></a>
+1. See [:material-code-braces: ServiceResourceAccountRequestTypeDef](./type_defs.md#serviceresourceaccountrequesttypedef) 
 
 ### GlacierServiceResource.Archive method
 
 Creates a Archive resource.
 
-Type annotations for `boto3.resource("glacier").Archive` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Archive)
 
-Boto3 documentation:
-[Glacier.ServiceResource.Archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Archive)
+```python title="Method definition"
+def Archive(
+    self,
+    account_id: str,
+    vault_name: str,
+    id: str,
+) -> Archive:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceArchiveRequestTypeDef](./type_defs.md#serviceresourcearchiverequesttypedef).
 
-Arguments:
 
-- `account_id`: `str` *(required)*
-- `vault_name`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceArchiveRequestTypeDef = {  # (1)
+    "account_id": ...,
+    "vault_name": ...,
+    "id": ...,
+}
 
-Returns [Archive](#archive).
+parent.Archive(**kwargs)
+```
 
-<a id="glacierserviceresourcejob-method"></a>
+1. See [:material-code-braces: ServiceResourceArchiveRequestTypeDef](./type_defs.md#serviceresourcearchiverequesttypedef) 
 
 ### GlacierServiceResource.Job method
 
 Creates a Job resource.
 
-Type annotations for `boto3.resource("glacier").Job` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Job)
 
-Boto3 documentation:
-[Glacier.ServiceResource.Job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Job)
+```python title="Method definition"
+def Job(
+    self,
+    account_id: str,
+    vault_name: str,
+    id: str,
+) -> Job:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceJobRequestTypeDef](./type_defs.md#serviceresourcejobrequesttypedef).
 
-Arguments:
 
-- `account_id`: `str` *(required)*
-- `vault_name`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceJobRequestTypeDef = {  # (1)
+    "account_id": ...,
+    "vault_name": ...,
+    "id": ...,
+}
 
-Returns [Job](#job).
+parent.Job(**kwargs)
+```
 
-<a id="glacierserviceresourcemultipartupload-method"></a>
+1. See [:material-code-braces: ServiceResourceJobRequestTypeDef](./type_defs.md#serviceresourcejobrequesttypedef) 
 
 ### GlacierServiceResource.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("glacier").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
 
-Boto3 documentation:
-[Glacier.ServiceResource.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+    account_id: str,
+    vault_name: str,
+    id: str,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceMultipartUploadRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadrequesttypedef).
 
-Arguments:
 
-- `account_id`: `str` *(required)*
-- `vault_name`: `str` *(required)*
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceMultipartUploadRequestTypeDef = {  # (1)
+    "account_id": ...,
+    "vault_name": ...,
+    "id": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.MultipartUpload(**kwargs)
+```
 
-<a id="glacierserviceresourcenotification-method"></a>
+1. See [:material-code-braces: ServiceResourceMultipartUploadRequestTypeDef](./type_defs.md#serviceresourcemultipartuploadrequesttypedef) 
 
 ### GlacierServiceResource.Notification method
 
 Creates a Notification resource.
 
-Type annotations for `boto3.resource("glacier").Notification` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Notification)
 
-Boto3 documentation:
-[Glacier.ServiceResource.Notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Notification)
+```python title="Method definition"
+def Notification(
+    self,
+    account_id: str,
+    vault_name: str,
+) -> Notification:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceNotificationRequestTypeDef](./type_defs.md#serviceresourcenotificationrequesttypedef).
 
-Arguments:
 
-- `account_id`: `str` *(required)*
-- `vault_name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceNotificationRequestTypeDef = {  # (1)
+    "account_id": ...,
+    "vault_name": ...,
+}
 
-Returns [Notification](#notification).
+parent.Notification(**kwargs)
+```
 
-<a id="glacierserviceresourcevault-method"></a>
+1. See [:material-code-braces: ServiceResourceNotificationRequestTypeDef](./type_defs.md#serviceresourcenotificationrequesttypedef) 
 
 ### GlacierServiceResource.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Vault)
 
-Boto3 documentation:
-[Glacier.ServiceResource.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+    account_id: str,
+    name: str,
+) -> Vault:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceVaultRequestTypeDef](./type_defs.md#serviceresourcevaultrequesttypedef).
 
-Arguments:
 
-- `account_id`: `str` *(required)*
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceVaultRequestTypeDef = {  # (1)
+    "account_id": ...,
+    "name": ...,
+}
 
-Returns [Vault](#vault).
+parent.Vault(**kwargs)
+```
 
-<a id="glacierserviceresourcecreate\_vault-method"></a>
+1. See [:material-code-braces: ServiceResourceVaultRequestTypeDef](./type_defs.md#serviceresourcevaultrequesttypedef) 
 
-### GlacierServiceResource.create_vault method
+### GlacierServiceResource.create\_vault method
 
 This operation creates a new vault with the specified name.
 
-Type annotations for `boto3.resource("glacier").create_vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").create_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.create_vault)
 
-Boto3 documentation:
-[Glacier.ServiceResource.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.create_vault)
+```python title="Method definition"
+def create_vault(
+    self,
+    *,
+    vaultName: str,
+    accountId: str = '-',
+) -> Vault:
+    ...
+```
 
-Arguments mapping described in
-[CreateVaultInputServiceResourceCreateVaultTypeDef](./type_defs.md#createvaultinputserviceresourcecreatevaulttypedef).
 
-Keyword-only arguments:
 
-- `vaultName`: `str` *(required)*
-- `accountId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateVaultInputServiceResourceCreateVaultTypeDef = {  # (1)
+    "vaultName": ...,
+}
 
-Returns [Vault](#vault).
+parent.create_vault(**kwargs)
+```
 
-<a id="glacierserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateVaultInputServiceResourceCreateVaultTypeDef](./type_defs.md#createvaultinputserviceresourcecreatevaulttypedef) 
 
-### GlacierServiceResource.get_available_subresources method
+### GlacierServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="account"></a>
+
 
 ## Account
 
-Type annotations for `boto3.resource("glacier").Account` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").Account` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Account)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import Account
 
 def get_resource() -> Account:
     return boto3.resource("glacier").Account(...)
 ```
 
-Boto3 documentation:
-[Glacier.Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Account)
-
-<a id="account-attributes"></a>
 
 ### Account attributes
+
 
 - `id`: `str`
 - `vaults`: [AccountVaultsCollection](#accountvaultscollection)
 
-<a id="account-collections"></a>
+
 
 ### Account collections
 
-<a id="accountvaults"></a>
 
 #### Account.vaults
 
-Type annotations for `boto3.resource("glacier").Account(...).vaults`
-collection.
+Provides access to [Vault](#vault) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Account(...).vaults` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.vaults)
 
-```python
-from mypy_boto3_glacier.service_resource import AccountVaultsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import AccountVaultsCollection
 
 def get_collection() -> AccountVaultsCollection:
     resource = boto3.resource("glacier").Account(...)
     return resource.vaults
 ```
 
-Provides access to [Vault](#vault) resource.
 
-Boto3 documentation:
-[Glacier.Account.AccountVaultsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.vaults)
 
-<a id="account-methods"></a>
 
 ### Account methods
 
-<a id="accountvault-method"></a>
 
 #### Account.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.Vault)
 
-Boto3 documentation:
-[Glacier.Account.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+    name: str,
+) -> Vault:
+    ...
+```
 
-Arguments mapping described in
-[AccountVaultRequestTypeDef](./type_defs.md#accountvaultrequesttypedef).
 
-Arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AccountVaultRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [Vault](#vault).
+parent.Vault(**kwargs)
+```
 
-<a id="accountcreate\_vault-method"></a>
+1. See [:material-code-braces: AccountVaultRequestTypeDef](./type_defs.md#accountvaultrequesttypedef) 
 
-#### Account.create_vault method
+#### Account.create\_vault method
 
 This operation creates a new vault with the specified name.
 
-Type annotations for `boto3.resource("glacier").create_vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").create_vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.create_vault)
 
-Boto3 documentation:
-[Glacier.Account.create_vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.create_vault)
+```python title="Method definition"
+def create_vault(
+    self,
+    *,
+    vaultName: str,
+) -> Vault:
+    ...
+```
 
-Arguments mapping described in
-[CreateVaultInputAccountCreateVaultTypeDef](./type_defs.md#createvaultinputaccountcreatevaulttypedef).
 
-Keyword-only arguments:
 
-- `vaultName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateVaultInputAccountCreateVaultTypeDef = {  # (1)
+    "vaultName": ...,
+}
 
-Returns [Vault](#vault).
+parent.create_vault(**kwargs)
+```
 
-<a id="accountget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CreateVaultInputAccountCreateVaultTypeDef](./type_defs.md#createvaultinputaccountcreatevaulttypedef) 
 
-#### Account.get_available_subresources method
+#### Account.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.Account.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Account.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="archive"></a>
+
+
 
 ## Archive
 
-Type annotations for `boto3.resource("glacier").Archive` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").Archive` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Archive)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import Archive
 
 def get_resource() -> Archive:
     return boto3.resource("glacier").Archive(...)
 ```
 
-Boto3 documentation:
-[Glacier.Archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Archive)
-
-<a id="archive-attributes"></a>
 
 ### Archive attributes
+
 
 - `account_id`: `str`
 - `vault_name`: `str`
 - `id`: `str`
 
-<a id="archive-methods"></a>
+
+
+
 
 ### Archive methods
 
-<a id="archivevault-method"></a>
 
 #### Archive.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.Vault)
 
-Boto3 documentation:
-[Glacier.Archive.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+) -> Vault:
+    ...
+```
 
-Returns [Vault](#vault).
-
-<a id="archivedelete-method"></a>
 
 #### Archive.delete method
 
 This operation deletes an archive from a vault.
 
-Type annotations for `boto3.resource("glacier").delete` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.delete)
 
-Boto3 documentation:
-[Glacier.Archive.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="archiveget\_available\_subresources-method"></a>
 
-#### Archive.get_available_subresources method
+#### Archive.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.Archive.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="archiveinitiate\_archive\_retrieval-method"></a>
-
-#### Archive.initiate_archive_retrieval method
+#### Archive.initiate\_archive\_retrieval method
 
 This operation initiates a job of the specified type, which can be a select, an
 archival retrieval, or a vault retrieval.
 
-Type annotations for `boto3.resource("glacier").initiate_archive_retrieval`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").initiate_archive_retrieval` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.initiate_archive_retrieval)
 
-Boto3 documentation:
-[Glacier.Archive.initiate_archive_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.initiate_archive_retrieval)
+```python title="Method definition"
+def initiate_archive_retrieval(
+    self,
+) -> Job:
+    ...
+```
 
-Returns [Job](#job).
 
-<a id="job"></a>
+
+
 
 ## Job
 
-Type annotations for `boto3.resource("glacier").Job` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").Job` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Job)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import Job
 
 def get_resource() -> Job:
     return boto3.resource("glacier").Job(...)
 ```
 
-Boto3 documentation:
-[Glacier.Job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Job)
-
-<a id="job-attributes"></a>
 
 ### Job attributes
+
 
 - `job_id`: `str`
 - `job_description`: `str`
@@ -493,113 +517,130 @@ Boto3 documentation:
 - `archive_sha256_tree_hash`: `str`
 - `retrieval_byte_range`: `str`
 - `tier`: `str`
-- `inventory_retrieval_parameters`:
-  [InventoryRetrievalJobDescriptionResponseMetadataTypeDef](./type_defs.md#inventoryretrievaljobdescriptionresponsemetadatatypedef)
+- `inventory_retrieval_parameters`: [InventoryRetrievalJobDescriptionResponseMetadataTypeDef](./type_defs.md#inventoryretrievaljobdescriptionresponsemetadatatypedef)
 - `job_output_path`: `str`
-- `select_parameters`:
-  [SelectParametersResponseMetadataTypeDef](./type_defs.md#selectparametersresponsemetadatatypedef)
-- `output_location`:
-  [OutputLocationResponseMetadataTypeDef](./type_defs.md#outputlocationresponsemetadatatypedef)
+- `select_parameters`: [SelectParametersResponseMetadataTypeDef](./type_defs.md#selectparametersresponsemetadatatypedef)
+- `output_location`: [OutputLocationResponseMetadataTypeDef](./type_defs.md#outputlocationresponsemetadatatypedef)
 - `account_id`: `str`
 - `vault_name`: `str`
 - `id`: `str`
 
-<a id="job-methods"></a>
+
+
+
 
 ### Job methods
 
-<a id="jobvault-method"></a>
 
 #### Job.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.Vault)
 
-Boto3 documentation:
-[Glacier.Job.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+) -> Vault:
+    ...
+```
 
-Returns [Vault](#vault).
 
-<a id="jobget\_available\_subresources-method"></a>
-
-#### Job.get_available_subresources method
+#### Job.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.Job.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="jobget\_output-method"></a>
+#### Job.get\_output method
 
-#### Job.get_output method
+This operation downloads the output of the job you initiated using  InitiateJob.
 
-This operation downloads the output of the job you initiated using InitiateJob.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_output` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.get_output)
 
-Type annotations for `boto3.resource("glacier").get_output` method.
+```python title="Method definition"
+def get_output(
+    self,
+    *,
+    range: str = ...,
+) -> GetJobOutputOutputTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[Glacier.Job.get_output](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.get_output)
+1. See [:material-code-braces: GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef) 
 
-Arguments mapping described in
-[GetJobOutputInputJobGetOutputTypeDef](./type_defs.md#getjoboutputinputjobgetoutputtypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: GetJobOutputInputJobGetOutputTypeDef = {  # (1)
+    "range": ...,
+}
 
-- `range`: `str`
+parent.get_output(**kwargs)
+```
 
-Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
-
-<a id="jobload-method"></a>
+1. See [:material-code-braces: GetJobOutputInputJobGetOutputTypeDef](./type_defs.md#getjoboutputinputjobgetoutputtypedef) 
 
 #### Job.load method
 
-Calls :py:meth:`Glacier.Client.describe_job` to update the attributes of the
-Job resource.
+Calls :py:meth:`Glacier.Client.describe_job` to update the attributes of the Job
+resource.
 
-Type annotations for `boto3.resource("glacier").load` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.load)
 
-Boto3 documentation:
-[Glacier.Job.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="jobreload-method"></a>
 
 #### Job.reload method
 
-Calls :py:meth:`Glacier.Client.describe_job` to update the attributes of the
-Job resource.
+Calls :py:meth:`Glacier.Client.describe_job` to update the attributes of the Job
+resource.
 
-Type annotations for `boto3.resource("glacier").reload` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.reload)
 
-Boto3 documentation:
-[Glacier.Job.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Job.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="multipartupload"></a>
+
+
+
 
 ## MultipartUpload
 
-Type annotations for `boto3.resource("glacier").MultipartUpload` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").MultipartUpload` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import MultipartUpload
 
 def get_resource() -> MultipartUpload:
     return boto3.resource("glacier").MultipartUpload(...)
 ```
 
-Boto3 documentation:
-[Glacier.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.MultipartUpload)
-
-<a id="multipartupload-attributes"></a>
 
 ### MultipartUpload attributes
+
 
 - `multipart_upload_id`: `str`
 - `vault_arn`: `str`
@@ -610,35 +651,42 @@ Boto3 documentation:
 - `vault_name`: `str`
 - `id`: `str`
 
-<a id="multipartupload-methods"></a>
+
+
+
 
 ### MultipartUpload methods
 
-<a id="multipartuploadvault-method"></a>
 
 #### MultipartUpload.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.Vault)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+) -> Vault:
+    ...
+```
 
-Returns [Vault](#vault).
-
-<a id="multipartuploadabort-method"></a>
 
 #### MultipartUpload.abort method
 
 This operation aborts a multipart upload identified by the upload ID.
 
-Type annotations for `boto3.resource("glacier").abort` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").abort` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.abort)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.abort](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.abort)
+```python title="Method definition"
+def abort(
+    self,
+) -> None:
+    ...
+```
 
-<a id="multipartuploadcomplete-method"></a>
 
 #### MultipartUpload.complete method
 
@@ -646,215 +694,265 @@ You call this operation to inform Amazon S3 Glacier (Glacier) that all the
 archive parts have been uploaded and that Glacier can now assemble the archive
 from the uploaded parts.
 
-Type annotations for `boto3.resource("glacier").complete` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").complete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.complete)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.complete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.complete)
+```python title="Method definition"
+def complete(
+    self,
+    *,
+    archiveSize: str = ...,
+    checksum: str = ...,
+) -> ArchiveCreationOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CompleteMultipartUploadInputMultipartUploadCompleteTypeDef](./type_defs.md#completemultipartuploadinputmultipartuploadcompletetypedef).
+1. See [:material-code-braces: ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef) 
 
-Keyword-only arguments:
 
-- `archiveSize`: `str`
-- `checksum`: `str`
+```python title="Usage example with kwargs"
+kwargs: CompleteMultipartUploadInputMultipartUploadCompleteTypeDef = {  # (1)
+    "archiveSize": ...,
+}
 
-Returns
-[ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
+parent.complete(**kwargs)
+```
 
-<a id="multipartuploadget\_available\_subresources-method"></a>
+1. See [:material-code-braces: CompleteMultipartUploadInputMultipartUploadCompleteTypeDef](./type_defs.md#completemultipartuploadinputmultipartuploadcompletetypedef) 
 
-#### MultipartUpload.get_available_subresources method
+#### MultipartUpload.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="multipartuploadparts-method"></a>
 
 #### MultipartUpload.parts method
 
 This operation lists the parts of an archive that have been uploaded in a
 specific multipart upload.
 
-Type annotations for `boto3.resource("glacier").parts` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").parts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.parts)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.parts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.parts)
+```python title="Method definition"
+def parts(
+    self,
+    *,
+    marker: str = ...,
+    limit: str = ...,
+) -> ListPartsOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPartsInputMultipartUploadPartsTypeDef](./type_defs.md#listpartsinputmultipartuploadpartstypedef).
+1. See [:material-code-braces: ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `marker`: `str`
-- `limit`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPartsInputMultipartUploadPartsTypeDef = {  # (1)
+    "marker": ...,
+}
 
-Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
+parent.parts(**kwargs)
+```
 
-<a id="multipartuploadupload\_part-method"></a>
+1. See [:material-code-braces: ListPartsInputMultipartUploadPartsTypeDef](./type_defs.md#listpartsinputmultipartuploadpartstypedef) 
 
-#### MultipartUpload.upload_part method
+#### MultipartUpload.upload\_part method
 
 This operation uploads a part of an archive.
 
-Type annotations for `boto3.resource("glacier").upload_part` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").upload_part` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.upload_part)
 
-Boto3 documentation:
-[Glacier.MultipartUpload.upload_part](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.MultipartUpload.upload_part)
+```python title="Method definition"
+def upload_part(
+    self,
+    *,
+    checksum: str = ...,
+    range: str = ...,
+    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> UploadMultipartPartOutputTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UploadMultipartPartInputMultipartUploadUploadPartTypeDef](./type_defs.md#uploadmultipartpartinputmultipartuploaduploadparttypedef).
+1. See [:material-code-braces: UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef) 
 
-Keyword-only arguments:
 
-- `checksum`: `str`
-- `range`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: UploadMultipartPartInputMultipartUploadUploadPartTypeDef = {  # (1)
+    "checksum": ...,
+}
 
-Returns
-[UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
+parent.upload_part(**kwargs)
+```
 
-<a id="notification"></a>
+1. See [:material-code-braces: UploadMultipartPartInputMultipartUploadUploadPartTypeDef](./type_defs.md#uploadmultipartpartinputmultipartuploaduploadparttypedef) 
+
+
+
 
 ## Notification
 
-Type annotations for `boto3.resource("glacier").Notification` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").Notification` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Notification)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import Notification
 
 def get_resource() -> Notification:
     return boto3.resource("glacier").Notification(...)
 ```
 
-Boto3 documentation:
-[Glacier.Notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Notification)
-
-<a id="notification-attributes"></a>
 
 ### Notification attributes
 
+
 - `sns_topic`: `str`
-- `events`: `List`\[`str`\]
+- `events`: `List`[`str`]
 - `account_id`: `str`
 - `vault_name`: `str`
 
-<a id="notification-methods"></a>
+
+
+
 
 ### Notification methods
 
-<a id="notificationvault-method"></a>
 
 #### Notification.Vault method
 
 Creates a Vault resource.
 
-Type annotations for `boto3.resource("glacier").Vault` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.Vault)
 
-Boto3 documentation:
-[Glacier.Notification.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.Vault)
+```python title="Method definition"
+def Vault(
+    self,
+) -> Vault:
+    ...
+```
 
-Returns [Vault](#vault).
-
-<a id="notificationdelete-method"></a>
 
 #### Notification.delete method
 
 This operation deletes the notification configuration set for a vault.
 
-Type annotations for `boto3.resource("glacier").delete` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.delete)
 
-Boto3 documentation:
-[Glacier.Notification.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="notificationget\_available\_subresources-method"></a>
 
-#### Notification.get_available_subresources method
+#### Notification.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.Notification.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="notificationload-method"></a>
 
 #### Notification.load method
 
-Calls :py:meth:`Glacier.Client.get_vault_notifications` to update the
-attributes of the Notification resource.
+Calls :py:meth:`Glacier.Client.get_vault_notifications` to update the attributes
+of the Notification resource.
 
-Type annotations for `boto3.resource("glacier").load` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.load)
 
-Boto3 documentation:
-[Glacier.Notification.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="notificationreload-method"></a>
 
 #### Notification.reload method
 
-Calls :py:meth:`Glacier.Client.get_vault_notifications` to update the
-attributes of the Notification resource.
+Calls :py:meth:`Glacier.Client.get_vault_notifications` to update the attributes
+of the Notification resource.
 
-Type annotations for `boto3.resource("glacier").reload` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.reload)
 
-Boto3 documentation:
-[Glacier.Notification.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="notificationset-method"></a>
 
 #### Notification.set method
 
 This operation configures notifications that will be sent when specific events
 happen to a vault.
 
-Type annotations for `boto3.resource("glacier").set` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.set)
 
-Boto3 documentation:
-[Glacier.Notification.set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.set)
+```python title="Method definition"
+def set(
+    self,
+    *,
+    vaultNotificationConfig: VaultNotificationConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetVaultNotificationsInputNotificationSetTypeDef](./type_defs.md#setvaultnotificationsinputnotificationsettypedef).
+1. See [:material-code-braces: VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef) 
 
-Keyword-only arguments:
 
-- `vaultNotificationConfig`:
-  [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: SetVaultNotificationsInputNotificationSetTypeDef = {  # (1)
+    "vaultNotificationConfig": ...,
+}
 
-<a id="vault"></a>
+parent.set(**kwargs)
+```
+
+1. See [:material-code-braces: SetVaultNotificationsInputNotificationSetTypeDef](./type_defs.md#setvaultnotificationsinputnotificationsettypedef) 
+
+
+
 
 ## Vault
 
-Type annotations for `boto3.resource("glacier").Vault` class.
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Vault)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_glacier.service_resource import Vault
 
 def get_resource() -> Vault:
     return boto3.resource("glacier").Vault(...)
 ```
 
-Boto3 documentation:
-[Glacier.Vault](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.ServiceResource.Vault)
-
-<a id="vault-attributes"></a>
 
 ### Vault attributes
+
 
 - `vault_arn`: `str`
 - `vault_name`: `str`
@@ -864,383 +962,393 @@ Boto3 documentation:
 - `size_in_bytes`: `int`
 - `account_id`: `str`
 - `name`: `str`
-- `completed_jobs`:
-  [VaultCompletedJobsCollection](#vaultcompletedjobscollection)
+- `completed_jobs`: [VaultCompletedJobsCollection](#vaultcompletedjobscollection)
 - `failed_jobs`: [VaultFailedJobsCollection](#vaultfailedjobscollection)
 - `jobs`: [VaultJobsCollection](#vaultjobscollection)
-- `jobs_in_progress`:
-  [VaultJobsInProgressCollection](#vaultjobsinprogresscollection)
-- `multipart_uplaods`:
-  [VaultMultipartUplaodsCollection](#vaultmultipartuplaodscollection)
-- `multipart_uploads`:
-  [VaultMultipartUploadsCollection](#vaultmultipartuploadscollection)
-- `succeeded_jobs`:
-  [VaultSucceededJobsCollection](#vaultsucceededjobscollection)
+- `jobs_in_progress`: [VaultJobsInProgressCollection](#vaultjobsinprogresscollection)
+- `multipart_uplaods`: [VaultMultipartUplaodsCollection](#vaultmultipartuplaodscollection)
+- `multipart_uploads`: [VaultMultipartUploadsCollection](#vaultmultipartuploadscollection)
+- `succeeded_jobs`: [VaultSucceededJobsCollection](#vaultsucceededjobscollection)
 
-<a id="vault-collections"></a>
+
 
 ### Vault collections
 
-<a id="vaultcompleted_jobs"></a>
 
 #### Vault.completed_jobs
 
-Type annotations for `boto3.resource("glacier").Vault(...).completed_jobs`
-collection.
+Provides access to [Job](#job) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).completed_jobs` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.completed_jobs)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultCompletedJobsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultCompletedJobsCollection
 
 def get_collection() -> VaultCompletedJobsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.completed_jobs
 ```
 
-Provides access to [Job](#job) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultCompletedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.completed_jobs)
-
-<a id="vaultfailed_jobs"></a>
-
 #### Vault.failed_jobs
 
-Type annotations for `boto3.resource("glacier").Vault(...).failed_jobs`
-collection.
+Provides access to [Job](#job) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).failed_jobs` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.failed_jobs)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultFailedJobsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultFailedJobsCollection
 
 def get_collection() -> VaultFailedJobsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.failed_jobs
 ```
 
-Provides access to [Job](#job) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultFailedJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.failed_jobs)
-
-<a id="vaultjobs"></a>
-
 #### Vault.jobs
 
-Type annotations for `boto3.resource("glacier").Vault(...).jobs` collection.
+Provides access to [Job](#job) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).jobs` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.jobs)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultJobsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultJobsCollection
 
 def get_collection() -> VaultJobsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.jobs
 ```
 
-Provides access to [Job](#job) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.jobs)
-
-<a id="vaultjobs_in_progress"></a>
-
 #### Vault.jobs_in_progress
 
-Type annotations for `boto3.resource("glacier").Vault(...).jobs_in_progress`
-collection.
+Provides access to [Job](#job) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).jobs_in_progress` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.jobs_in_progress)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultJobsInProgressCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultJobsInProgressCollection
 
 def get_collection() -> VaultJobsInProgressCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.jobs_in_progress
 ```
 
-Provides access to [Job](#job) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultJobsInProgressCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.jobs_in_progress)
-
-<a id="vaultmultipart_uplaods"></a>
-
 #### Vault.multipart_uplaods
 
-Type annotations for `boto3.resource("glacier").Vault(...).multipart_uplaods`
-collection.
+Provides access to [MultipartUpload](#multipartupload) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).multipart_uplaods` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.multipart_uplaods)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultMultipartUplaodsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultMultipartUplaodsCollection
 
 def get_collection() -> VaultMultipartUplaodsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.multipart_uplaods
 ```
 
-Provides access to [MultipartUpload](#multipartupload) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultMultipartUplaodsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.multipart_uplaods)
-
-<a id="vaultmultipart_uploads"></a>
-
 #### Vault.multipart_uploads
 
-Type annotations for `boto3.resource("glacier").Vault(...).multipart_uploads`
-collection.
+Provides access to [MultipartUpload](#multipartupload) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).multipart_uploads` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.multipart_uploads)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultMultipartUploadsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultMultipartUploadsCollection
 
 def get_collection() -> VaultMultipartUploadsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.multipart_uploads
 ```
 
-Provides access to [MultipartUpload](#multipartupload) resource.
-
-Boto3 documentation:
-[Glacier.Vault.VaultMultipartUploadsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.multipart_uploads)
-
-<a id="vaultsucceeded_jobs"></a>
-
 #### Vault.succeeded_jobs
 
-Type annotations for `boto3.resource("glacier").Vault(...).succeeded_jobs`
-collection.
+Provides access to [Job](#job) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("glacier").Vault(...).succeeded_jobs` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.succeeded_jobs)
 
-```python
-from mypy_boto3_glacier.service_resource import VaultSucceededJobsCollection,
+```python title="Usage example"
+from mypy_boto3_glacier.service_resource import VaultSucceededJobsCollection
 
 def get_collection() -> VaultSucceededJobsCollection:
     resource = boto3.resource("glacier").Vault(...)
     return resource.succeeded_jobs
 ```
 
-Provides access to [Job](#job) resource.
 
-Boto3 documentation:
-[Glacier.Vault.VaultSucceededJobsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.succeeded_jobs)
 
-<a id="vault-methods"></a>
 
 ### Vault methods
 
-<a id="vaultaccount-method"></a>
 
 #### Vault.Account method
 
 Creates a Account resource.
 
-Type annotations for `boto3.resource("glacier").Account` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Account)
 
-Boto3 documentation:
-[Glacier.Vault.Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Account)
+```python title="Method definition"
+def Account(
+    self,
+) -> Account:
+    ...
+```
 
-Returns [Account](#account).
-
-<a id="vaultarchive-method"></a>
 
 #### Vault.Archive method
 
 Creates a Archive resource.
 
-Type annotations for `boto3.resource("glacier").Archive` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Archive)
 
-Boto3 documentation:
-[Glacier.Vault.Archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Archive)
+```python title="Method definition"
+def Archive(
+    self,
+    id: str,
+) -> Archive:
+    ...
+```
 
-Arguments mapping described in
-[VaultArchiveRequestTypeDef](./type_defs.md#vaultarchiverequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VaultArchiveRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Archive](#archive).
+parent.Archive(**kwargs)
+```
 
-<a id="vaultjob-method"></a>
+1. See [:material-code-braces: VaultArchiveRequestTypeDef](./type_defs.md#vaultarchiverequesttypedef) 
 
 #### Vault.Job method
 
 Creates a Job resource.
 
-Type annotations for `boto3.resource("glacier").Job` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Job)
 
-Boto3 documentation:
-[Glacier.Vault.Job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Job)
+```python title="Method definition"
+def Job(
+    self,
+    id: str,
+) -> Job:
+    ...
+```
 
-Arguments mapping described in
-[VaultJobRequestTypeDef](./type_defs.md#vaultjobrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VaultJobRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [Job](#job).
+parent.Job(**kwargs)
+```
 
-<a id="vaultmultipartupload-method"></a>
+1. See [:material-code-braces: VaultJobRequestTypeDef](./type_defs.md#vaultjobrequesttypedef) 
 
 #### Vault.MultipartUpload method
 
 Creates a MultipartUpload resource.
 
-Type annotations for `boto3.resource("glacier").MultipartUpload` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").MultipartUpload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.MultipartUpload)
 
-Boto3 documentation:
-[Glacier.Vault.MultipartUpload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.MultipartUpload)
+```python title="Method definition"
+def MultipartUpload(
+    self,
+    id: str,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[VaultMultipartUploadRequestTypeDef](./type_defs.md#vaultmultipartuploadrequesttypedef).
 
-Arguments:
 
-- `id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: VaultMultipartUploadRequestTypeDef = {  # (1)
+    "id": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.MultipartUpload(**kwargs)
+```
 
-<a id="vaultnotification-method"></a>
+1. See [:material-code-braces: VaultMultipartUploadRequestTypeDef](./type_defs.md#vaultmultipartuploadrequesttypedef) 
 
 #### Vault.Notification method
 
 Creates a Notification resource.
 
-Type annotations for `boto3.resource("glacier").Notification` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").Notification` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Notification)
 
-Boto3 documentation:
-[Glacier.Vault.Notification](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.Notification)
+```python title="Method definition"
+def Notification(
+    self,
+) -> Notification:
+    ...
+```
 
-Returns [Notification](#notification).
-
-<a id="vaultcreate-method"></a>
 
 #### Vault.create method
 
 This operation creates a new vault with the specified name.
 
-Type annotations for `boto3.resource("glacier").create` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").create` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.create)
 
-Boto3 documentation:
-[Glacier.Vault.create](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.create)
+```python title="Method definition"
+def create(
+    self,
+) -> CreateVaultOutputTypeDef:  # (1)
+    ...
+```
 
-Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
-
-<a id="vaultdelete-method"></a>
+1. See [:material-code-braces: CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef) 
 
 #### Vault.delete method
 
 This operation deletes a vault.
 
-Type annotations for `boto3.resource("glacier").delete` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.delete)
 
-Boto3 documentation:
-[Glacier.Vault.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="vaultget\_available\_subresources-method"></a>
 
-#### Vault.get_available_subresources method
+#### Vault.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("glacier").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.get_available_subresources)
 
-Boto3 documentation:
-[Glacier.Vault.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="vaultinitiate\_inventory\_retrieval-method"></a>
-
-#### Vault.initiate_inventory_retrieval method
+#### Vault.initiate\_inventory\_retrieval method
 
 This operation initiates a job of the specified type, which can be a select, an
 archival retrieval, or a vault retrieval.
 
-Type annotations for `boto3.resource("glacier").initiate_inventory_retrieval`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").initiate_inventory_retrieval` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_inventory_retrieval)
 
-Boto3 documentation:
-[Glacier.Vault.initiate_inventory_retrieval](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_inventory_retrieval)
+```python title="Method definition"
+def initiate_inventory_retrieval(
+    self,
+) -> Job:
+    ...
+```
 
-Returns [Job](#job).
 
-<a id="vaultinitiate\_multipart\_upload-method"></a>
-
-#### Vault.initiate_multipart_upload method
+#### Vault.initiate\_multipart\_upload method
 
 This operation initiates a multipart upload.
 
-Type annotations for `boto3.resource("glacier").initiate_multipart_upload`
-method.
+Type annotations and code completion for `#!python boto3.resource("glacier").initiate_multipart_upload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_multipart_upload)
 
-Boto3 documentation:
-[Glacier.Vault.initiate_multipart_upload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.initiate_multipart_upload)
+```python title="Method definition"
+def initiate_multipart_upload(
+    self,
+    *,
+    archiveDescription: str = ...,
+    partSize: str = ...,
+) -> MultipartUpload:
+    ...
+```
 
-Arguments mapping described in
-[InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef](./type_defs.md#initiatemultipartuploadinputvaultinitiatemultipartuploadtypedef).
 
-Keyword-only arguments:
 
-- `archiveDescription`: `str`
-- `partSize`: `str`
+```python title="Usage example with kwargs"
+kwargs: InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef = {  # (1)
+    "archiveDescription": ...,
+}
 
-Returns [MultipartUpload](#multipartupload).
+parent.initiate_multipart_upload(**kwargs)
+```
 
-<a id="vaultload-method"></a>
+1. See [:material-code-braces: InitiateMultipartUploadInputVaultInitiateMultipartUploadTypeDef](./type_defs.md#initiatemultipartuploadinputvaultinitiatemultipartuploadtypedef) 
 
 #### Vault.load method
 
 Calls :py:meth:`Glacier.Client.describe_vault` to update the attributes of the
 Vault resource.
 
-Type annotations for `boto3.resource("glacier").load` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.load)
 
-Boto3 documentation:
-[Glacier.Vault.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="vaultreload-method"></a>
 
 #### Vault.reload method
 
 Calls :py:meth:`Glacier.Client.describe_vault` to update the attributes of the
 Vault resource.
 
-Type annotations for `boto3.resource("glacier").reload` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.reload)
 
-Boto3 documentation:
-[Glacier.Vault.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="vaultupload\_archive-method"></a>
 
-#### Vault.upload_archive method
+#### Vault.upload\_archive method
 
 This operation adds an archive to a vault.
 
-Type annotations for `boto3.resource("glacier").upload_archive` method.
+Type annotations and code completion for `#!python boto3.resource("glacier").upload_archive` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.upload_archive)
 
-Boto3 documentation:
-[Glacier.Vault.upload_archive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.upload_archive)
+```python title="Method definition"
+def upload_archive(
+    self,
+    *,
+    archiveDescription: str = ...,
+    checksum: str = ...,
+    body: Union[bytes, IO[bytes], StreamingBody] = ...,
+) -> Archive:
+    ...
+```
 
-Arguments mapping described in
-[UploadArchiveInputVaultUploadArchiveTypeDef](./type_defs.md#uploadarchiveinputvaultuploadarchivetypedef).
 
-Keyword-only arguments:
 
-- `archiveDescription`: `str`
-- `checksum`: `str`
-- `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+```python title="Usage example with kwargs"
+kwargs: UploadArchiveInputVaultUploadArchiveTypeDef = {  # (1)
+    "archiveDescription": ...,
+}
 
-Returns [Archive](#archive).
+parent.upload_archive(**kwargs)
+```
+
+1. See [:material-code-braces: UploadArchiveInputVaultUploadArchiveTypeDef](./type_defs.md#uploadarchiveinputvaultuploadarchivetypedef) 
+
+
+

@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-locationservice-module"></a>
-
-# Type annotations for boto3 LocationService module
+#  LocationService module
 
 > [Index](../README.md) > LocationService
 
-Auto-generated documentation for
-[LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
-type annotations stubs module
-[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
+!!! note ""
 
-- [Type annotations for boto3 LocationService module](#type-annotations-for-boto3-locationservice-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [LocationServiceClient](#locationserviceclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
+    type annotations stubs module [mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `LocationService`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[location]'
 python -m pip install mypy-boto3-location
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,112 +42,37 @@ python -m pip install mypy-boto3-location
 python -m pip uninstall -y mypy-boto3-location
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="locationserviceclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## LocationServiceClient
 
-Type annotations for `boto3.client("location")` as
-[LocationServiceClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("location")` as [LocationServiceClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_location.client import LocationServiceClient
+
+def get_client() -> LocationServiceClient:
+    return Session().cleint("location")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_tracker_consumer](./client.md#associate_tracker_consumer)
-- [batch_delete_device_position_history](./client.md#batch_delete_device_position_history)
-- [batch_delete_geofence](./client.md#batch_delete_geofence)
-- [batch_evaluate_geofences](./client.md#batch_evaluate_geofences)
-- [batch_get_device_position](./client.md#batch_get_device_position)
-- [batch_put_geofence](./client.md#batch_put_geofence)
-- [batch_update_device_position](./client.md#batch_update_device_position)
-- [calculate_route](./client.md#calculate_route)
-- [calculate_route_matrix](./client.md#calculate_route_matrix)
-- [can_paginate](./client.md#can_paginate)
-- [create_geofence_collection](./client.md#create_geofence_collection)
-- [create_map](./client.md#create_map)
-- [create_place_index](./client.md#create_place_index)
-- [create_route_calculator](./client.md#create_route_calculator)
-- [create_tracker](./client.md#create_tracker)
-- [delete_geofence_collection](./client.md#delete_geofence_collection)
-- [delete_map](./client.md#delete_map)
-- [delete_place_index](./client.md#delete_place_index)
-- [delete_route_calculator](./client.md#delete_route_calculator)
-- [delete_tracker](./client.md#delete_tracker)
-- [describe_geofence_collection](./client.md#describe_geofence_collection)
-- [describe_map](./client.md#describe_map)
-- [describe_place_index](./client.md#describe_place_index)
-- [describe_route_calculator](./client.md#describe_route_calculator)
-- [describe_tracker](./client.md#describe_tracker)
-- [disassociate_tracker_consumer](./client.md#disassociate_tracker_consumer)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_device_position](./client.md#get_device_position)
-- [get_device_position_history](./client.md#get_device_position_history)
-- [get_geofence](./client.md#get_geofence)
-- [get_map_glyphs](./client.md#get_map_glyphs)
-- [get_map_sprites](./client.md#get_map_sprites)
-- [get_map_style_descriptor](./client.md#get_map_style_descriptor)
-- [get_map_tile](./client.md#get_map_tile)
-- [get_paginator](./client.md#get_paginator)
-- [list_device_positions](./client.md#list_device_positions)
-- [list_geofence_collections](./client.md#list_geofence_collections)
-- [list_geofences](./client.md#list_geofences)
-- [list_maps](./client.md#list_maps)
-- [list_place_indexes](./client.md#list_place_indexes)
-- [list_route_calculators](./client.md#list_route_calculators)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_tracker_consumers](./client.md#list_tracker_consumers)
-- [list_trackers](./client.md#list_trackers)
-- [put_geofence](./client.md#put_geofence)
-- [search_place_index_for_position](./client.md#search_place_index_for_position)
-- [search_place_index_for_suggestions](./client.md#search_place_index_for_suggestions)
-- [search_place_index_for_text](./client.md#search_place_index_for_text)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_geofence_collection](./client.md#update_geofence_collection)
-- [update_map](./client.md#update_map)
-- [update_place_index](./client.md#update_place_index)
-- [update_route_calculator](./client.md#update_route_calculator)
-- [update_tracker](./client.md#update_tracker)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-LocationServiceClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("location").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("location").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator, ...
+from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator
+
+def get_get_device_position_history_paginator() -> GetDevicePositionHistoryPaginator:
+    return Session().client("location").get_paginator("get_device_position_history"))
 ```
 
 - [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
@@ -182,16 +85,23 @@ from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator, ...
 - [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
 - [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_location.literals import BatchItemErrorCodeType
 
-```python
-from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
+def get_value() -> BatchItemErrorCodeType:
+    return "AccessDeniedError"
 ```
 
 - [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
@@ -217,17 +127,21 @@ from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequestTypeDef
 
-```python
-from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequestTypeDef, ...
+def get_value() -> AssociateTrackerConsumerRequestRequestTypeDef:
+    return {
+        "ConsumerArn": ...,
+        "TrackerName": ...,
+    }
 ```
 
 - [AssociateTrackerConsumerRequestRequestTypeDef](./type_defs.md#associatetrackerconsumerrequestrequesttypedef)
@@ -290,6 +204,7 @@ from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequest
 - [DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)
 - [DisassociateTrackerConsumerRequestRequestTypeDef](./type_defs.md#disassociatetrackerconsumerrequestrequesttypedef)
 - [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
+- [GetDevicePositionHistoryRequestGetDevicePositionHistoryPaginateTypeDef](./type_defs.md#getdevicepositionhistoryrequestgetdevicepositionhistorypaginatetypedef)
 - [GetDevicePositionHistoryRequestRequestTypeDef](./type_defs.md#getdevicepositionhistoryrequestrequesttypedef)
 - [GetDevicePositionHistoryResponseTypeDef](./type_defs.md#getdevicepositionhistoryresponsetypedef)
 - [GetDevicePositionRequestRequestTypeDef](./type_defs.md#getdevicepositionrequestrequesttypedef)
@@ -306,28 +221,36 @@ from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequest
 - [GetMapTileResponseTypeDef](./type_defs.md#getmaptileresponsetypedef)
 - [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
 - [LegTypeDef](./type_defs.md#legtypedef)
+- [ListDevicePositionsRequestListDevicePositionsPaginateTypeDef](./type_defs.md#listdevicepositionsrequestlistdevicepositionspaginatetypedef)
 - [ListDevicePositionsRequestRequestTypeDef](./type_defs.md#listdevicepositionsrequestrequesttypedef)
 - [ListDevicePositionsResponseEntryTypeDef](./type_defs.md#listdevicepositionsresponseentrytypedef)
 - [ListDevicePositionsResponseTypeDef](./type_defs.md#listdevicepositionsresponsetypedef)
+- [ListGeofenceCollectionsRequestListGeofenceCollectionsPaginateTypeDef](./type_defs.md#listgeofencecollectionsrequestlistgeofencecollectionspaginatetypedef)
 - [ListGeofenceCollectionsRequestRequestTypeDef](./type_defs.md#listgeofencecollectionsrequestrequesttypedef)
 - [ListGeofenceCollectionsResponseEntryTypeDef](./type_defs.md#listgeofencecollectionsresponseentrytypedef)
 - [ListGeofenceCollectionsResponseTypeDef](./type_defs.md#listgeofencecollectionsresponsetypedef)
 - [ListGeofenceResponseEntryTypeDef](./type_defs.md#listgeofenceresponseentrytypedef)
+- [ListGeofencesRequestListGeofencesPaginateTypeDef](./type_defs.md#listgeofencesrequestlistgeofencespaginatetypedef)
 - [ListGeofencesRequestRequestTypeDef](./type_defs.md#listgeofencesrequestrequesttypedef)
 - [ListGeofencesResponseTypeDef](./type_defs.md#listgeofencesresponsetypedef)
+- [ListMapsRequestListMapsPaginateTypeDef](./type_defs.md#listmapsrequestlistmapspaginatetypedef)
 - [ListMapsRequestRequestTypeDef](./type_defs.md#listmapsrequestrequesttypedef)
 - [ListMapsResponseEntryTypeDef](./type_defs.md#listmapsresponseentrytypedef)
 - [ListMapsResponseTypeDef](./type_defs.md#listmapsresponsetypedef)
+- [ListPlaceIndexesRequestListPlaceIndexesPaginateTypeDef](./type_defs.md#listplaceindexesrequestlistplaceindexespaginatetypedef)
 - [ListPlaceIndexesRequestRequestTypeDef](./type_defs.md#listplaceindexesrequestrequesttypedef)
 - [ListPlaceIndexesResponseEntryTypeDef](./type_defs.md#listplaceindexesresponseentrytypedef)
 - [ListPlaceIndexesResponseTypeDef](./type_defs.md#listplaceindexesresponsetypedef)
+- [ListRouteCalculatorsRequestListRouteCalculatorsPaginateTypeDef](./type_defs.md#listroutecalculatorsrequestlistroutecalculatorspaginatetypedef)
 - [ListRouteCalculatorsRequestRequestTypeDef](./type_defs.md#listroutecalculatorsrequestrequesttypedef)
 - [ListRouteCalculatorsResponseEntryTypeDef](./type_defs.md#listroutecalculatorsresponseentrytypedef)
 - [ListRouteCalculatorsResponseTypeDef](./type_defs.md#listroutecalculatorsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTrackerConsumersRequestListTrackerConsumersPaginateTypeDef](./type_defs.md#listtrackerconsumersrequestlisttrackerconsumerspaginatetypedef)
 - [ListTrackerConsumersRequestRequestTypeDef](./type_defs.md#listtrackerconsumersrequestrequesttypedef)
 - [ListTrackerConsumersResponseTypeDef](./type_defs.md#listtrackerconsumersresponsetypedef)
+- [ListTrackersRequestListTrackersPaginateTypeDef](./type_defs.md#listtrackersrequestlisttrackerspaginatetypedef)
 - [ListTrackersRequestRequestTypeDef](./type_defs.md#listtrackersrequestrequesttypedef)
 - [ListTrackersResponseEntryTypeDef](./type_defs.md#listtrackersresponseentrytypedef)
 - [ListTrackersResponseTypeDef](./type_defs.md#listtrackersresponsetypedef)
@@ -369,3 +292,4 @@ from mypy_boto3_location.type_defs import AssociateTrackerConsumerRequestRequest
 - [UpdateRouteCalculatorResponseTypeDef](./type_defs.md#updateroutecalculatorresponsetypedef)
 - [UpdateTrackerRequestRequestTypeDef](./type_defs.md#updatetrackerrequestrequesttypedef)
 - [UpdateTrackerResponseTypeDef](./type_defs.md#updatetrackerresponsetypedef)
+

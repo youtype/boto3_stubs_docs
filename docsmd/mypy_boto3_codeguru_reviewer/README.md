@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-codegurureviewer-module"></a>
-
-# Type annotations for boto3 CodeGuruReviewer module
+#  CodeGuruReviewer module
 
 > [Index](../README.md) > CodeGuruReviewer
 
-Auto-generated documentation for
-[CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
-type annotations stubs module
-[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+!!! note ""
 
-- [Type annotations for boto3 CodeGuruReviewer module](#type-annotations-for-boto3-codegurureviewer-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [CodeGuruReviewerClient](#codegurureviewerclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
+    type annotations stubs module [mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `CodeGuruReviewer`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[codeguru-reviewer]'
 python -m pip install mypy-boto3-codeguru-reviewer
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,105 +42,76 @@ python -m pip install mypy-boto3-codeguru-reviewer
 python -m pip uninstall -y mypy-boto3-codeguru-reviewer
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="codegurureviewerclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## CodeGuruReviewerClient
 
-Type annotations for `boto3.client("codeguru-reviewer")` as
-[CodeGuruReviewerClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("codeguru-reviewer")` as [CodeGuruReviewerClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
+
+def get_client() -> CodeGuruReviewerClient:
+    return Session().cleint("codeguru-reviewer")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [associate_repository](./client.md#associate_repository)
-- [can_paginate](./client.md#can_paginate)
-- [create_code_review](./client.md#create_code_review)
-- [describe_code_review](./client.md#describe_code_review)
-- [describe_recommendation_feedback](./client.md#describe_recommendation_feedback)
-- [describe_repository_association](./client.md#describe_repository_association)
-- [disassociate_repository](./client.md#disassociate_repository)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_code_reviews](./client.md#list_code_reviews)
-- [list_recommendation_feedback](./client.md#list_recommendation_feedback)
-- [list_recommendations](./client.md#list_recommendations)
-- [list_repository_associations](./client.md#list_repository_associations)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_recommendation_feedback](./client.md#put_recommendation_feedback)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-CodeGuruReviewerClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- NotFoundException
-- ResourceNotFoundException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("codeguru-reviewer").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("codeguru-reviewer").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator, ...
+from mypy_boto3_codeguru_reviewer.paginator import ListRepositoryAssociationsPaginator
+
+def get_list_repository_associations_paginator() -> ListRepositoryAssociationsPaginator:
+    return Session().client("codeguru-reviewer").get_paginator("list_repository_associations"))
 ```
 
 - [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("codeguru-reviewer").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("codeguru-reviewer").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_codeguru_reviewer.waiter import CodeReviewCompletedWaiter, ...
+from mypy_boto3_codeguru_reviewer.waiter import CodeReviewCompletedWaiter
+
+def get_code_review_completed_waiter() -> CodeReviewCompletedWaiter:
+    return Session().client("codeguru-reviewer").get_waiter("code_review_completed")
 ```
 
 - [CodeReviewCompletedWaiter](./waiters.md#codereviewcompletedwaiter)
 - [RepositoryAssociationSucceededWaiter](./waiters.md#repositoryassociationsucceededwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType
 
-```python
-from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
+def get_value() -> AnalysisTypeType:
+    return "CodeQuality"
 ```
 
 - [AnalysisTypeType](./literals.md#analysistypetype)
@@ -184,18 +132,22 @@ from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestRequestTypeDef
 
-```python
-from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestRequestTypeDef, ...
+def get_value() -> AssociateRepositoryRequestRequestTypeDef:
+    return {
+        "Repository": ...,
+    }
 ```
 
 - [AssociateRepositoryRequestRequestTypeDef](./type_defs.md#associaterepositoryrequestrequesttypedef)
@@ -209,10 +161,12 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestReq
 - [CommitDiffSourceCodeTypeTypeDef](./type_defs.md#commitdiffsourcecodetypetypedef)
 - [CreateCodeReviewRequestRequestTypeDef](./type_defs.md#createcodereviewrequestrequesttypedef)
 - [CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef)
+- [DescribeCodeReviewRequestCodeReviewCompletedWaitTypeDef](./type_defs.md#describecodereviewrequestcodereviewcompletedwaittypedef)
 - [DescribeCodeReviewRequestRequestTypeDef](./type_defs.md#describecodereviewrequestrequesttypedef)
 - [DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef)
 - [DescribeRecommendationFeedbackRequestRequestTypeDef](./type_defs.md#describerecommendationfeedbackrequestrequesttypedef)
 - [DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef)
+- [DescribeRepositoryAssociationRequestRepositoryAssociationSucceededWaitTypeDef](./type_defs.md#describerepositoryassociationrequestrepositoryassociationsucceededwaittypedef)
 - [DescribeRepositoryAssociationRequestRequestTypeDef](./type_defs.md#describerepositoryassociationrequestrequesttypedef)
 - [DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef)
 - [DisassociateRepositoryRequestRequestTypeDef](./type_defs.md#disassociaterepositoryrequestrequesttypedef)
@@ -225,6 +179,7 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestReq
 - [ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef)
 - [ListRecommendationsRequestRequestTypeDef](./type_defs.md#listrecommendationsrequestrequesttypedef)
 - [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)
+- [ListRepositoryAssociationsRequestListRepositoryAssociationsPaginateTypeDef](./type_defs.md#listrepositoryassociationsrequestlistrepositoryassociationspaginatetypedef)
 - [ListRepositoryAssociationsRequestRequestTypeDef](./type_defs.md#listrepositoryassociationsrequestrequesttypedef)
 - [ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -252,3 +207,4 @@ from mypy_boto3_codeguru_reviewer.type_defs import AssociateRepositoryRequestReq
 - [ThirdPartySourceRepositoryTypeDef](./type_defs.md#thirdpartysourcerepositorytypedef)
 - [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

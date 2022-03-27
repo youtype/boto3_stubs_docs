@@ -1,124 +1,18 @@
-<a id="greengrassclient-for-boto3-greengrass-module"></a>
-
-# GreengrassClient for boto3 Greengrass module
+# GreengrassClient
 
 > [Index](../README.md) > [Greengrass](./README.md) > GreengrassClient
 
-Auto-generated documentation for
-[Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
-type annotations stubs module
-[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+!!! note ""
 
-- [GreengrassClient for boto3 Greengrass module](#greengrassclient-for-boto3-greengrass-module)
-  - [GreengrassClient](#greengrassclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_role_to_group](#associate_role_to_group)
-    - [associate_service_role_to_account](#associate_service_role_to_account)
-    - [can_paginate](#can_paginate)
-    - [create_connector_definition](#create_connector_definition)
-    - [create_connector_definition_version](#create_connector_definition_version)
-    - [create_core_definition](#create_core_definition)
-    - [create_core_definition_version](#create_core_definition_version)
-    - [create_deployment](#create_deployment)
-    - [create_device_definition](#create_device_definition)
-    - [create_device_definition_version](#create_device_definition_version)
-    - [create_function_definition](#create_function_definition)
-    - [create_function_definition_version](#create_function_definition_version)
-    - [create_group](#create_group)
-    - [create_group_certificate_authority](#create_group_certificate_authority)
-    - [create_group_version](#create_group_version)
-    - [create_logger_definition](#create_logger_definition)
-    - [create_logger_definition_version](#create_logger_definition_version)
-    - [create_resource_definition](#create_resource_definition)
-    - [create_resource_definition_version](#create_resource_definition_version)
-    - [create_software_update_job](#create_software_update_job)
-    - [create_subscription_definition](#create_subscription_definition)
-    - [create_subscription_definition_version](#create_subscription_definition_version)
-    - [delete_connector_definition](#delete_connector_definition)
-    - [delete_core_definition](#delete_core_definition)
-    - [delete_device_definition](#delete_device_definition)
-    - [delete_function_definition](#delete_function_definition)
-    - [delete_group](#delete_group)
-    - [delete_logger_definition](#delete_logger_definition)
-    - [delete_resource_definition](#delete_resource_definition)
-    - [delete_subscription_definition](#delete_subscription_definition)
-    - [disassociate_role_from_group](#disassociate_role_from_group)
-    - [disassociate_service_role_from_account](#disassociate_service_role_from_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_associated_role](#get_associated_role)
-    - [get_bulk_deployment_status](#get_bulk_deployment_status)
-    - [get_connectivity_info](#get_connectivity_info)
-    - [get_connector_definition](#get_connector_definition)
-    - [get_connector_definition_version](#get_connector_definition_version)
-    - [get_core_definition](#get_core_definition)
-    - [get_core_definition_version](#get_core_definition_version)
-    - [get_deployment_status](#get_deployment_status)
-    - [get_device_definition](#get_device_definition)
-    - [get_device_definition_version](#get_device_definition_version)
-    - [get_function_definition](#get_function_definition)
-    - [get_function_definition_version](#get_function_definition_version)
-    - [get_group](#get_group)
-    - [get_group_certificate_authority](#get_group_certificate_authority)
-    - [get_group_certificate_configuration](#get_group_certificate_configuration)
-    - [get_group_version](#get_group_version)
-    - [get_logger_definition](#get_logger_definition)
-    - [get_logger_definition_version](#get_logger_definition_version)
-    - [get_resource_definition](#get_resource_definition)
-    - [get_resource_definition_version](#get_resource_definition_version)
-    - [get_service_role_for_account](#get_service_role_for_account)
-    - [get_subscription_definition](#get_subscription_definition)
-    - [get_subscription_definition_version](#get_subscription_definition_version)
-    - [get_thing_runtime_configuration](#get_thing_runtime_configuration)
-    - [list_bulk_deployment_detailed_reports](#list_bulk_deployment_detailed_reports)
-    - [list_bulk_deployments](#list_bulk_deployments)
-    - [list_connector_definition_versions](#list_connector_definition_versions)
-    - [list_connector_definitions](#list_connector_definitions)
-    - [list_core_definition_versions](#list_core_definition_versions)
-    - [list_core_definitions](#list_core_definitions)
-    - [list_deployments](#list_deployments)
-    - [list_device_definition_versions](#list_device_definition_versions)
-    - [list_device_definitions](#list_device_definitions)
-    - [list_function_definition_versions](#list_function_definition_versions)
-    - [list_function_definitions](#list_function_definitions)
-    - [list_group_certificate_authorities](#list_group_certificate_authorities)
-    - [list_group_versions](#list_group_versions)
-    - [list_groups](#list_groups)
-    - [list_logger_definition_versions](#list_logger_definition_versions)
-    - [list_logger_definitions](#list_logger_definitions)
-    - [list_resource_definition_versions](#list_resource_definition_versions)
-    - [list_resource_definitions](#list_resource_definitions)
-    - [list_subscription_definition_versions](#list_subscription_definition_versions)
-    - [list_subscription_definitions](#list_subscription_definitions)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [reset_deployments](#reset_deployments)
-    - [start_bulk_deployment](#start_bulk_deployment)
-    - [stop_bulk_deployment](#stop_bulk_deployment)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_connectivity_info](#update_connectivity_info)
-    - [update_connector_definition](#update_connector_definition)
-    - [update_core_definition](#update_core_definition)
-    - [update_device_definition](#update_device_definition)
-    - [update_function_definition](#update_function_definition)
-    - [update_group](#update_group)
-    - [update_group_certificate_configuration](#update_group_certificate_configuration)
-    - [update_logger_definition](#update_logger_definition)
-    - [update_resource_definition](#update_resource_definition)
-    - [update_subscription_definition](#update_subscription_definition)
-    - [update_thing_runtime_configuration](#update_thing_runtime_configuration)
-    - [get_paginator](#get_paginator)
-
-<a id="greengrassclient"></a>
+    Auto-generated documentation for [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
+    type annotations stubs module [mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 ## GreengrassClient
 
-Type annotations for `boto3.client("greengrass")`
+Type annotations and code completion for `#!python boto3.client("greengrass")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_greengrass.client import GreengrassClient
 
@@ -126,2239 +20,2891 @@ def get_greengrass_client() -> GreengrassClient:
     return Session().client("greengrass")
 ```
 
-Boto3 documentation:
-[Greengrass.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("greengrass").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("greengrass")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalServerErrorException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_greengrass.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerErrorException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GreengrassClient exceptions.
-
-Type annotations for `boto3.client("greengrass").exceptions` method.
-
-Boto3 documentation:
-[Greengrass.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="associate\_role\_to\_group"></a>
-
-### associate_role_to_group
+### associate\_role\_to\_group
 
 Associates a role with a group.
 
-Type annotations for `boto3.client("greengrass").associate_role_to_group`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").associate_role_to_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_role_to_group)
 
-Boto3 documentation:
-[Greengrass.Client.associate_role_to_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_role_to_group)
+```python title="Method definition"
+def associate_role_to_group(
+    self,
+    *,
+    GroupId: str,
+    RoleArn: str,
+) -> AssociateRoleToGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateRoleToGroupRequestRequestTypeDef](./type_defs.md#associateroletogrouprequestrequesttypedef).
+1. See [:material-code-braces: AssociateRoleToGroupResponseTypeDef](./type_defs.md#associateroletogroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateRoleToGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+    "RoleArn": ...,
+}
 
-Returns
-[AssociateRoleToGroupResponseTypeDef](./type_defs.md#associateroletogroupresponsetypedef).
+parent.associate_role_to_group(**kwargs)
+```
 
-<a id="associate\_service\_role\_to\_account"></a>
+1. See [:material-code-braces: AssociateRoleToGroupRequestRequestTypeDef](./type_defs.md#associateroletogrouprequestrequesttypedef) 
 
-### associate_service_role_to_account
+### associate\_service\_role\_to\_account
 
 Associates a role with your account.
 
-Type annotations for
-`boto3.client("greengrass").associate_service_role_to_account` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").associate_service_role_to_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_service_role_to_account)
 
-Boto3 documentation:
-[Greengrass.Client.associate_service_role_to_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.associate_service_role_to_account)
+```python title="Method definition"
+def associate_service_role_to_account(
+    self,
+    *,
+    RoleArn: str,
+) -> AssociateServiceRoleToAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef).
+1. See [:material-code-braces: AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `RoleArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateServiceRoleToAccountRequestRequestTypeDef = {  # (1)
+    "RoleArn": ...,
+}
 
-Returns
-[AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
+parent.associate_service_role_to_account(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AssociateServiceRoleToAccountRequestRequestTypeDef](./type_defs.md#associateserviceroletoaccountrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("greengrass").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.can_paginate)
 
-Boto3 documentation:
-[Greengrass.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_connector\_definition"></a>
-
-### create_connector_definition
+### create\_connector\_definition
 
 Creates a connector definition.
 
-Type annotations for `boto3.client("greengrass").create_connector_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_connector_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition)
+```python title="Method definition"
+def create_connector_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: ConnectorDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateConnectorDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionrequestrequesttypedef).
+1. See [:material-code-braces: ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef) 
+2. See [:material-code-braces: CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectorDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef).
+parent.create_connector_definition(**kwargs)
+```
 
-<a id="create\_connector\_definition\_version"></a>
+1. See [:material-code-braces: CreateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionrequestrequesttypedef) 
 
-### create_connector_definition_version
+### create\_connector\_definition\_version
 
 Creates a version of a connector definition which has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_connector_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_connector_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_connector_definition_version)
+```python title="Method definition"
+def create_connector_definition_version(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+    AmznClientToken: str = ...,
+    Connectors: Sequence[ConnectorTypeDef] = ...,  # (1)
+) -> CreateConnectorDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: ConnectorTypeDef](./type_defs.md#connectortypedef) 
+2. See [:material-code-braces: CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Connectors`:
-  `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectorDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
 
-Returns
-[CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef).
+parent.create_connector_definition_version(**kwargs)
+```
 
-<a id="create\_core\_definition"></a>
+1. See [:material-code-braces: CreateConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#createconnectordefinitionversionrequestrequesttypedef) 
 
-### create_core_definition
+### create\_core\_definition
 
 Creates a core definition.
 
-Type annotations for `boto3.client("greengrass").create_core_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_core_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition)
+```python title="Method definition"
+def create_core_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: CoreDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateCoreDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCoreDefinitionRequestRequestTypeDef](./type_defs.md#createcoredefinitionrequestrequesttypedef).
+1. See [:material-code-braces: CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef) 
+2. See [:material-code-braces: CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateCoreDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef).
+parent.create_core_definition(**kwargs)
+```
 
-<a id="create\_core\_definition\_version"></a>
+1. See [:material-code-braces: CreateCoreDefinitionRequestRequestTypeDef](./type_defs.md#createcoredefinitionrequestrequesttypedef) 
 
-### create_core_definition_version
+### create\_core\_definition\_version
 
 Creates a version of a core definition that has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_core_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_core_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_core_definition_version)
+```python title="Method definition"
+def create_core_definition_version(
+    self,
+    *,
+    CoreDefinitionId: str,
+    AmznClientToken: str = ...,
+    Cores: Sequence[CoreTypeDef] = ...,  # (1)
+) -> CreateCoreDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#createcoredefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: CoreTypeDef](./type_defs.md#coretypedef) 
+2. See [:material-code-braces: CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateCoreDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
 
-Returns
-[CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef).
+parent.create_core_definition_version(**kwargs)
+```
 
-<a id="create\_deployment"></a>
+1. See [:material-code-braces: CreateCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#createcoredefinitionversionrequestrequesttypedef) 
 
-### create_deployment
+### create\_deployment
 
 Creates a deployment.
 
-Type annotations for `boto3.client("greengrass").create_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_deployment)
 
-Boto3 documentation:
-[Greengrass.Client.create_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_deployment)
+```python title="Method definition"
+def create_deployment(
+    self,
+    *,
+    DeploymentType: DeploymentTypeType,  # (1)
+    GroupId: str,
+    AmznClientToken: str = ...,
+    DeploymentId: str = ...,
+    GroupVersionId: str = ...,
+) -> CreateDeploymentResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef).
+1. See [:material-code-brackets: DeploymentTypeType](./literals.md#deploymenttypetype) 
+2. See [:material-code-braces: CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
-  *(required)*
-- `GroupId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `DeploymentId`: `str`
-- `GroupVersionId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateDeploymentRequestRequestTypeDef = {  # (1)
+    "DeploymentType": ...,
+    "GroupId": ...,
+}
 
-Returns
-[CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
+parent.create_deployment(**kwargs)
+```
 
-<a id="create\_device\_definition"></a>
+1. See [:material-code-braces: CreateDeploymentRequestRequestTypeDef](./type_defs.md#createdeploymentrequestrequesttypedef) 
 
-### create_device_definition
+### create\_device\_definition
 
 Creates a device definition.
 
-Type annotations for `boto3.client("greengrass").create_device_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_device_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition)
+```python title="Method definition"
+def create_device_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: DeviceDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateDeviceDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef) 
+2. See [:material-code-braces: CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeviceDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef).
+parent.create_device_definition(**kwargs)
+```
 
-<a id="create\_device\_definition\_version"></a>
+1. See [:material-code-braces: CreateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionrequestrequesttypedef) 
 
-### create_device_definition_version
+### create\_device\_definition\_version
 
 Creates a version of a device definition that has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_device_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_device_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_device_definition_version)
+```python title="Method definition"
+def create_device_definition_version(
+    self,
+    *,
+    DeviceDefinitionId: str,
+    AmznClientToken: str = ...,
+    Devices: Sequence[DeviceTypeDef] = ...,  # (1)
+) -> CreateDeviceDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: DeviceTypeDef](./type_defs.md#devicetypedef) 
+2. See [:material-code-braces: CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateDeviceDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
 
-Returns
-[CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef).
+parent.create_device_definition_version(**kwargs)
+```
 
-<a id="create\_function\_definition"></a>
+1. See [:material-code-braces: CreateDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createdevicedefinitionversionrequestrequesttypedef) 
 
-### create_function_definition
+### create\_function\_definition
 
 Creates a Lambda function definition which contains a list of Lambda functions
 and their configurations to be used in a group.
 
-Type annotations for `boto3.client("greengrass").create_function_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_function_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition)
+```python title="Method definition"
+def create_function_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: FunctionDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateFunctionDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef) 
+2. See [:material-code-braces: CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef).
+parent.create_function_definition(**kwargs)
+```
 
-<a id="create\_function\_definition\_version"></a>
+1. See [:material-code-braces: CreateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionrequestrequesttypedef) 
 
-### create_function_definition_version
+### create\_function\_definition\_version
 
-Creates a version of a Lambda function definition that has already been
-defined.
+Creates a version of a Lambda function definition that has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_function_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_function_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_function_definition_version)
+```python title="Method definition"
+def create_function_definition_version(
+    self,
+    *,
+    FunctionDefinitionId: str,
+    AmznClientToken: str = ...,
+    DefaultConfig: FunctionDefaultConfigTypeDef = ...,  # (1)
+    Functions: Sequence[FunctionTypeDef] = ...,  # (2)
+) -> CreateFunctionDefinitionVersionResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef) 
+2. See [:material-code-braces: FunctionTypeDef](./type_defs.md#functiontypedef) 
+3. See [:material-code-braces: CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `DefaultConfig`:
-  [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
-- `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateFunctionDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
 
-Returns
-[CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef).
+parent.create_function_definition_version(**kwargs)
+```
 
-<a id="create\_group"></a>
+1. See [:material-code-braces: CreateFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createfunctiondefinitionversionrequestrequesttypedef) 
 
-### create_group
+### create\_group
 
 Creates a group.
 
-Type annotations for `boto3.client("greengrass").create_group` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group)
 
-Boto3 documentation:
-[Greengrass.Client.create_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group)
+```python title="Method definition"
+def create_group(
+    self,
+    *,
+    Name: str,
+    AmznClientToken: str = ...,
+    InitialVersion: GroupVersionTypeDef = ...,  # (1)
+    tags: Mapping[str, str] = ...,
+) -> CreateGroupResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef).
+1. See [:material-code-braces: GroupVersionTypeDef](./type_defs.md#groupversiontypedef) 
+2. See [:material-code-braces: CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateGroupRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+parent.create_group(**kwargs)
+```
 
-<a id="create\_group\_certificate\_authority"></a>
+1. See [:material-code-braces: CreateGroupRequestRequestTypeDef](./type_defs.md#creategrouprequestrequesttypedef) 
 
-### create_group_certificate_authority
+### create\_group\_certificate\_authority
 
 Creates a CA for the group.
 
-Type annotations for
-`boto3.client("greengrass").create_group_certificate_authority` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_group_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_certificate_authority)
 
-Boto3 documentation:
-[Greengrass.Client.create_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_certificate_authority)
+```python title="Method definition"
+def create_group_certificate_authority(
+    self,
+    *,
+    GroupId: str,
+    AmznClientToken: str = ...,
+) -> CreateGroupCertificateAuthorityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#creategroupcertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupCertificateAuthorityResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `AmznClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGroupCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[CreateGroupCertificateAuthorityResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponsetypedef).
+parent.create_group_certificate_authority(**kwargs)
+```
 
-<a id="create\_group\_version"></a>
+1. See [:material-code-braces: CreateGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#creategroupcertificateauthorityrequestrequesttypedef) 
 
-### create_group_version
+### create\_group\_version
 
 Creates a version of a group which has already been defined.
 
-Type annotations for `boto3.client("greengrass").create_group_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_group_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_group_version)
+```python title="Method definition"
+def create_group_version(
+    self,
+    *,
+    GroupId: str,
+    AmznClientToken: str = ...,
+    ConnectorDefinitionVersionArn: str = ...,
+    CoreDefinitionVersionArn: str = ...,
+    DeviceDefinitionVersionArn: str = ...,
+    FunctionDefinitionVersionArn: str = ...,
+    LoggerDefinitionVersionArn: str = ...,
+    ResourceDefinitionVersionArn: str = ...,
+    SubscriptionDefinitionVersionArn: str = ...,
+) -> CreateGroupVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateGroupVersionRequestRequestTypeDef](./type_defs.md#creategroupversionrequestrequesttypedef).
+1. See [:material-code-braces: CreateGroupVersionResponseTypeDef](./type_defs.md#creategroupversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `ConnectorDefinitionVersionArn`: `str`
-- `CoreDefinitionVersionArn`: `str`
-- `DeviceDefinitionVersionArn`: `str`
-- `FunctionDefinitionVersionArn`: `str`
-- `LoggerDefinitionVersionArn`: `str`
-- `ResourceDefinitionVersionArn`: `str`
-- `SubscriptionDefinitionVersionArn`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateGroupVersionRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[CreateGroupVersionResponseTypeDef](./type_defs.md#creategroupversionresponsetypedef).
+parent.create_group_version(**kwargs)
+```
 
-<a id="create\_logger\_definition"></a>
+1. See [:material-code-braces: CreateGroupVersionRequestRequestTypeDef](./type_defs.md#creategroupversionrequestrequesttypedef) 
 
-### create_logger_definition
+### create\_logger\_definition
 
 Creates a logger definition.
 
-Type annotations for `boto3.client("greengrass").create_logger_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_logger_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition)
+```python title="Method definition"
+def create_logger_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: LoggerDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateLoggerDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef) 
+2. See [:material-code-braces: CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateLoggerDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef).
+parent.create_logger_definition(**kwargs)
+```
 
-<a id="create\_logger\_definition\_version"></a>
+1. See [:material-code-braces: CreateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionrequestrequesttypedef) 
 
-### create_logger_definition_version
+### create\_logger\_definition\_version
 
 Creates a version of a logger definition that has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_logger_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_logger_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_logger_definition_version)
+```python title="Method definition"
+def create_logger_definition_version(
+    self,
+    *,
+    LoggerDefinitionId: str,
+    AmznClientToken: str = ...,
+    Loggers: Sequence[LoggerTypeDef] = ...,  # (1)
+) -> CreateLoggerDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: LoggerTypeDef](./type_defs.md#loggertypedef) 
+2. See [:material-code-braces: CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateLoggerDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
 
-Returns
-[CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef).
+parent.create_logger_definition_version(**kwargs)
+```
 
-<a id="create\_resource\_definition"></a>
+1. See [:material-code-braces: CreateLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#createloggerdefinitionversionrequestrequesttypedef) 
 
-### create_resource_definition
+### create\_resource\_definition
 
-Creates a resource definition which contains a list of resources to be used in
-a group.
+Creates a resource definition which contains a list of resources to be used in a
+group.
 
-Type annotations for `boto3.client("greengrass").create_resource_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_resource_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition)
+```python title="Method definition"
+def create_resource_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: ResourceDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateResourceDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceDefinitionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef) 
+2. See [:material-code-braces: CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateResourceDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef).
+parent.create_resource_definition(**kwargs)
+```
 
-<a id="create\_resource\_definition\_version"></a>
+1. See [:material-code-braces: CreateResourceDefinitionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionrequestrequesttypedef) 
 
-### create_resource_definition_version
+### create\_resource\_definition\_version
 
 Creates a version of a resource definition that has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_resource_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_resource_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_resource_definition_version)
+```python title="Method definition"
+def create_resource_definition_version(
+    self,
+    *,
+    ResourceDefinitionId: str,
+    AmznClientToken: str = ...,
+    Resources: Sequence[ResourceTypeDef] = ...,  # (1)
+) -> CreateResourceDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: ResourceTypeDef](./type_defs.md#resourcetypedef) 
+2. See [:material-code-braces: CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateResourceDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
 
-Returns
-[CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef).
+parent.create_resource_definition_version(**kwargs)
+```
 
-<a id="create\_software\_update\_job"></a>
+1. See [:material-code-braces: CreateResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#createresourcedefinitionversionrequestrequesttypedef) 
 
-### create_software_update_job
+### create\_software\_update\_job
 
 Creates a software update for a core or group of cores (specified as an IoT
 thing group.) Use this to update the OTA Agent as well as the Greengrass core
 software.
 
-Type annotations for `boto3.client("greengrass").create_software_update_job`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_software_update_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_software_update_job)
 
-Boto3 documentation:
-[Greengrass.Client.create_software_update_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_software_update_job)
+```python title="Method definition"
+def create_software_update_job(
+    self,
+    *,
+    S3UrlSignerRole: str,
+    SoftwareToUpdate: SoftwareToUpdateType,  # (1)
+    UpdateTargets: Sequence[str],
+    UpdateTargetsArchitecture: UpdateTargetsArchitectureType,  # (2)
+    UpdateTargetsOperatingSystem: UpdateTargetsOperatingSystemType,  # (3)
+    AmznClientToken: str = ...,
+    UpdateAgentLogLevel: UpdateAgentLogLevelType = ...,  # (4)
+) -> CreateSoftwareUpdateJobResponseTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateSoftwareUpdateJobRequestRequestTypeDef](./type_defs.md#createsoftwareupdatejobrequestrequesttypedef).
+1. See [:material-code-brackets: SoftwareToUpdateType](./literals.md#softwaretoupdatetype) 
+2. See [:material-code-brackets: UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype) 
+3. See [:material-code-brackets: UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype) 
+4. See [:material-code-brackets: UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype) 
+5. See [:material-code-braces: CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `S3UrlSignerRole`: `str` *(required)*
-- `SoftwareToUpdate`:
-  [SoftwareToUpdateType](./literals.md#softwaretoupdatetype) *(required)*
-- `UpdateTargets`: `Sequence`\[`str`\] *(required)*
-- `UpdateTargetsArchitecture`:
-  [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
-  *(required)*
-- `UpdateTargetsOperatingSystem`:
-  [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
-  *(required)*
-- `AmznClientToken`: `str`
-- `UpdateAgentLogLevel`:
-  [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
+```python title="Usage example with kwargs"
+kwargs: CreateSoftwareUpdateJobRequestRequestTypeDef = {  # (1)
+    "S3UrlSignerRole": ...,
+    "SoftwareToUpdate": ...,
+    "UpdateTargets": ...,
+    "UpdateTargetsArchitecture": ...,
+    "UpdateTargetsOperatingSystem": ...,
+}
 
-Returns
-[CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef).
+parent.create_software_update_job(**kwargs)
+```
 
-<a id="create\_subscription\_definition"></a>
+1. See [:material-code-braces: CreateSoftwareUpdateJobRequestRequestTypeDef](./type_defs.md#createsoftwareupdatejobrequestrequesttypedef) 
 
-### create_subscription_definition
+### create\_subscription\_definition
 
 Creates a subscription definition.
 
-Type annotations for
-`boto3.client("greengrass").create_subscription_definition` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_subscription_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition)
 
-Boto3 documentation:
-[Greengrass.Client.create_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition)
+```python title="Method definition"
+def create_subscription_definition(
+    self,
+    *,
+    AmznClientToken: str = ...,
+    InitialVersion: SubscriptionDefinitionVersionTypeDef = ...,  # (1)
+    Name: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> CreateSubscriptionDefinitionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionrequestrequesttypedef).
+1. See [:material-code-braces: SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef) 
+2. See [:material-code-braces: CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AmznClientToken`: `str`
-- `InitialVersion`:
-  [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
-- `Name`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSubscriptionDefinitionRequestRequestTypeDef = {  # (1)
+    "AmznClientToken": ...,
+}
 
-Returns
-[CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef).
+parent.create_subscription_definition(**kwargs)
+```
 
-<a id="create\_subscription\_definition\_version"></a>
+1. See [:material-code-braces: CreateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionrequestrequesttypedef) 
 
-### create_subscription_definition_version
+### create\_subscription\_definition\_version
 
 Creates a version of a subscription definition which has already been defined.
 
-Type annotations for
-`boto3.client("greengrass").create_subscription_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").create_subscription_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.create_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.create_subscription_definition_version)
+```python title="Method definition"
+def create_subscription_definition_version(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+    AmznClientToken: str = ...,
+    Subscriptions: Sequence[SubscriptionTypeDef] = ...,  # (1)
+) -> CreateSubscriptionDefinitionVersionResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: SubscriptionTypeDef](./type_defs.md#subscriptiontypedef) 
+2. See [:material-code-braces: CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Subscriptions`:
-  `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateSubscriptionDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
 
-Returns
-[CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef).
+parent.create_subscription_definition_version(**kwargs)
+```
 
-<a id="delete\_connector\_definition"></a>
+1. See [:material-code-braces: CreateSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#createsubscriptiondefinitionversionrequestrequesttypedef) 
 
-### delete_connector_definition
+### delete\_connector\_definition
 
 Deletes a connector definition.
 
-Type annotations for `boto3.client("greengrass").delete_connector_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_connector_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_connector_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_connector_definition)
+```python title="Method definition"
+def delete_connector_definition(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectorDefinitionRequestRequestTypeDef](./type_defs.md#deleteconnectordefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectorDefinitionRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connector_definition(**kwargs)
+```
 
-<a id="delete\_core\_definition"></a>
+1. See [:material-code-braces: DeleteConnectorDefinitionRequestRequestTypeDef](./type_defs.md#deleteconnectordefinitionrequestrequesttypedef) 
 
-### delete_core_definition
+### delete\_core\_definition
 
 Deletes a core definition.
 
-Type annotations for `boto3.client("greengrass").delete_core_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_core_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_core_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_core_definition)
+```python title="Method definition"
+def delete_core_definition(
+    self,
+    *,
+    CoreDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteCoreDefinitionRequestRequestTypeDef](./type_defs.md#deletecoredefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CoreDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteCoreDefinitionRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_core_definition(**kwargs)
+```
 
-<a id="delete\_device\_definition"></a>
+1. See [:material-code-braces: DeleteCoreDefinitionRequestRequestTypeDef](./type_defs.md#deletecoredefinitionrequestrequesttypedef) 
 
-### delete_device_definition
+### delete\_device\_definition
 
 Deletes a device definition.
 
-Type annotations for `boto3.client("greengrass").delete_device_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_device_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_device_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_device_definition)
+```python title="Method definition"
+def delete_device_definition(
+    self,
+    *,
+    DeviceDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDeviceDefinitionRequestRequestTypeDef](./type_defs.md#deletedevicedefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDeviceDefinitionRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_device_definition(**kwargs)
+```
 
-<a id="delete\_function\_definition"></a>
+1. See [:material-code-braces: DeleteDeviceDefinitionRequestRequestTypeDef](./type_defs.md#deletedevicedefinitionrequestrequesttypedef) 
 
-### delete_function_definition
+### delete\_function\_definition
 
 Deletes a Lambda function definition.
 
-Type annotations for `boto3.client("greengrass").delete_function_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_function_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_function_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_function_definition)
+```python title="Method definition"
+def delete_function_definition(
+    self,
+    *,
+    FunctionDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFunctionDefinitionRequestRequestTypeDef](./type_defs.md#deletefunctiondefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFunctionDefinitionRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_function_definition(**kwargs)
+```
 
-<a id="delete\_group"></a>
+1. See [:material-code-braces: DeleteFunctionDefinitionRequestRequestTypeDef](./type_defs.md#deletefunctiondefinitionrequestrequesttypedef) 
 
-### delete_group
+### delete\_group
 
 Deletes a group.
 
-Type annotations for `boto3.client("greengrass").delete_group` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_group)
 
-Boto3 documentation:
-[Greengrass.Client.delete_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_group)
+```python title="Method definition"
+def delete_group(
+    self,
+    *,
+    GroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_group(**kwargs)
+```
 
-<a id="delete\_logger\_definition"></a>
+1. See [:material-code-braces: DeleteGroupRequestRequestTypeDef](./type_defs.md#deletegrouprequestrequesttypedef) 
 
-### delete_logger_definition
+### delete\_logger\_definition
 
 Deletes a logger definition.
 
-Type annotations for `boto3.client("greengrass").delete_logger_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_logger_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_logger_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_logger_definition)
+```python title="Method definition"
+def delete_logger_definition(
+    self,
+    *,
+    LoggerDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteLoggerDefinitionRequestRequestTypeDef](./type_defs.md#deleteloggerdefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteLoggerDefinitionRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_logger_definition(**kwargs)
+```
 
-<a id="delete\_resource\_definition"></a>
+1. See [:material-code-braces: DeleteLoggerDefinitionRequestRequestTypeDef](./type_defs.md#deleteloggerdefinitionrequestrequesttypedef) 
 
-### delete_resource_definition
+### delete\_resource\_definition
 
 Deletes a resource definition.
 
-Type annotations for `boto3.client("greengrass").delete_resource_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_resource_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_resource_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_resource_definition)
+```python title="Method definition"
+def delete_resource_definition(
+    self,
+    *,
+    ResourceDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteResourceDefinitionRequestRequestTypeDef](./type_defs.md#deleteresourcedefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteResourceDefinitionRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_resource_definition(**kwargs)
+```
 
-<a id="delete\_subscription\_definition"></a>
+1. See [:material-code-braces: DeleteResourceDefinitionRequestRequestTypeDef](./type_defs.md#deleteresourcedefinitionrequestrequesttypedef) 
 
-### delete_subscription_definition
+### delete\_subscription\_definition
 
 Deletes a subscription definition.
 
-Type annotations for
-`boto3.client("greengrass").delete_subscription_definition` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").delete_subscription_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_subscription_definition)
 
-Boto3 documentation:
-[Greengrass.Client.delete_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.delete_subscription_definition)
+```python title="Method definition"
+def delete_subscription_definition(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#deletesubscriptiondefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteSubscriptionDefinitionRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_subscription_definition(**kwargs)
+```
 
-<a id="disassociate\_role\_from\_group"></a>
+1. See [:material-code-braces: DeleteSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#deletesubscriptiondefinitionrequestrequesttypedef) 
 
-### disassociate_role_from_group
+### disassociate\_role\_from\_group
 
 Disassociates the role from a group.
 
-Type annotations for `boto3.client("greengrass").disassociate_role_from_group`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").disassociate_role_from_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_role_from_group)
 
-Boto3 documentation:
-[Greengrass.Client.disassociate_role_from_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_role_from_group)
+```python title="Method definition"
+def disassociate_role_from_group(
+    self,
+    *,
+    GroupId: str,
+) -> DisassociateRoleFromGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateRoleFromGroupRequestRequestTypeDef](./type_defs.md#disassociaterolefromgrouprequestrequesttypedef).
+1. See [:material-code-braces: DisassociateRoleFromGroupResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateRoleFromGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[DisassociateRoleFromGroupResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponsetypedef).
+parent.disassociate_role_from_group(**kwargs)
+```
 
-<a id="disassociate\_service\_role\_from\_account"></a>
+1. See [:material-code-braces: DisassociateRoleFromGroupRequestRequestTypeDef](./type_defs.md#disassociaterolefromgrouprequestrequesttypedef) 
 
-### disassociate_service_role_from_account
+### disassociate\_service\_role\_from\_account
 
 Disassociates the service role from your account.
 
-Type annotations for
-`boto3.client("greengrass").disassociate_service_role_from_account` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").disassociate_service_role_from_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
 
-Boto3 documentation:
-[Greengrass.Client.disassociate_service_role_from_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.disassociate_service_role_from_account)
+```python title="Method definition"
+def disassociate_service_role_from_account(
+    self,
+) -> DisassociateServiceRoleFromAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
+1. See [:material-code-braces: DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef) 
 
-<a id="generate\_presigned\_url"></a>
-
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("greengrass").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.generate_presigned_url)
 
-Boto3 documentation:
-[Greengrass.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_associated\_role"></a>
-
-### get_associated_role
+### get\_associated\_role
 
 Retrieves the role associated with a particular group.
 
-Type annotations for `boto3.client("greengrass").get_associated_role` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_associated_role` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_associated_role)
 
-Boto3 documentation:
-[Greengrass.Client.get_associated_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_associated_role)
+```python title="Method definition"
+def get_associated_role(
+    self,
+    *,
+    GroupId: str,
+) -> GetAssociatedRoleResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetAssociatedRoleRequestRequestTypeDef](./type_defs.md#getassociatedrolerequestrequesttypedef).
+1. See [:material-code-braces: GetAssociatedRoleResponseTypeDef](./type_defs.md#getassociatedroleresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetAssociatedRoleRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[GetAssociatedRoleResponseTypeDef](./type_defs.md#getassociatedroleresponsetypedef).
+parent.get_associated_role(**kwargs)
+```
 
-<a id="get\_bulk\_deployment\_status"></a>
+1. See [:material-code-braces: GetAssociatedRoleRequestRequestTypeDef](./type_defs.md#getassociatedrolerequestrequesttypedef) 
 
-### get_bulk_deployment_status
+### get\_bulk\_deployment\_status
 
 Returns the status of a bulk deployment.
 
-Type annotations for `boto3.client("greengrass").get_bulk_deployment_status`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_bulk_deployment_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_bulk_deployment_status)
 
-Boto3 documentation:
-[Greengrass.Client.get_bulk_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_bulk_deployment_status)
+```python title="Method definition"
+def get_bulk_deployment_status(
+    self,
+    *,
+    BulkDeploymentId: str,
+) -> GetBulkDeploymentStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBulkDeploymentStatusRequestRequestTypeDef](./type_defs.md#getbulkdeploymentstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetBulkDeploymentStatusResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BulkDeploymentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBulkDeploymentStatusRequestRequestTypeDef = {  # (1)
+    "BulkDeploymentId": ...,
+}
 
-Returns
-[GetBulkDeploymentStatusResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponsetypedef).
+parent.get_bulk_deployment_status(**kwargs)
+```
 
-<a id="get\_connectivity\_info"></a>
+1. See [:material-code-braces: GetBulkDeploymentStatusRequestRequestTypeDef](./type_defs.md#getbulkdeploymentstatusrequestrequesttypedef) 
 
-### get_connectivity_info
+### get\_connectivity\_info
 
 Retrieves the connectivity information for a core.
 
-Type annotations for `boto3.client("greengrass").get_connectivity_info` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_connectivity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connectivity_info)
 
-Boto3 documentation:
-[Greengrass.Client.get_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connectivity_info)
+```python title="Method definition"
+def get_connectivity_info(
+    self,
+    *,
+    ThingName: str,
+) -> GetConnectivityInfoResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef).
+1. See [:material-code-braces: GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `ThingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConnectivityInfoRequestRequestTypeDef = {  # (1)
+    "ThingName": ...,
+}
 
-Returns
-[GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
+parent.get_connectivity_info(**kwargs)
+```
 
-<a id="get\_connector\_definition"></a>
+1. See [:material-code-braces: GetConnectivityInfoRequestRequestTypeDef](./type_defs.md#getconnectivityinforequestrequesttypedef) 
 
-### get_connector_definition
+### get\_connector\_definition
 
 Retrieves information about a connector definition.
 
-Type annotations for `boto3.client("greengrass").get_connector_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_connector_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition)
+```python title="Method definition"
+def get_connector_definition(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+) -> GetConnectorDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectorDefinitionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectorDefinitionResponseTypeDef](./type_defs.md#getconnectordefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetConnectorDefinitionRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
 
-Returns
-[GetConnectorDefinitionResponseTypeDef](./type_defs.md#getconnectordefinitionresponsetypedef).
+parent.get_connector_definition(**kwargs)
+```
 
-<a id="get\_connector\_definition\_version"></a>
+1. See [:material-code-braces: GetConnectorDefinitionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionrequestrequesttypedef) 
 
-### get_connector_definition_version
+### get\_connector\_definition\_version
 
 Retrieves information about a connector definition version, including the
 connectors that the version contains.
 
-Type annotations for
-`boto3.client("greengrass").get_connector_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_connector_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_connector_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_connector_definition_version)
+```python title="Method definition"
+def get_connector_definition_version(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+    ConnectorDefinitionVersionId: str,
+    NextToken: str = ...,
+) -> GetConnectorDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetConnectorDefinitionVersionResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
-- `ConnectorDefinitionVersionId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetConnectorDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+    "ConnectorDefinitionVersionId": ...,
+}
 
-Returns
-[GetConnectorDefinitionVersionResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponsetypedef).
+parent.get_connector_definition_version(**kwargs)
+```
 
-<a id="get\_core\_definition"></a>
+1. See [:material-code-braces: GetConnectorDefinitionVersionRequestRequestTypeDef](./type_defs.md#getconnectordefinitionversionrequestrequesttypedef) 
 
-### get_core_definition
-
-Retrieves information about a core definition version.
-
-Type annotations for `boto3.client("greengrass").get_core_definition` method.
-
-Boto3 documentation:
-[Greengrass.Client.get_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition)
-
-Arguments mapping described in
-[GetCoreDefinitionRequestRequestTypeDef](./type_defs.md#getcoredefinitionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `CoreDefinitionId`: `str` *(required)*
-
-Returns
-[GetCoreDefinitionResponseTypeDef](./type_defs.md#getcoredefinitionresponsetypedef).
-
-<a id="get\_core\_definition\_version"></a>
-
-### get_core_definition_version
+### get\_core\_definition
 
 Retrieves information about a core definition version.
 
-Type annotations for `boto3.client("greengrass").get_core_definition_version`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_core_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_core_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition_version)
+```python title="Method definition"
+def get_core_definition(
+    self,
+    *,
+    CoreDefinitionId: str,
+) -> GetCoreDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#getcoredefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetCoreDefinitionResponseTypeDef](./type_defs.md#getcoredefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreDefinitionId`: `str` *(required)*
-- `CoreDefinitionVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetCoreDefinitionRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
 
-Returns
-[GetCoreDefinitionVersionResponseTypeDef](./type_defs.md#getcoredefinitionversionresponsetypedef).
+parent.get_core_definition(**kwargs)
+```
 
-<a id="get\_deployment\_status"></a>
+1. See [:material-code-braces: GetCoreDefinitionRequestRequestTypeDef](./type_defs.md#getcoredefinitionrequestrequesttypedef) 
 
-### get_deployment_status
+### get\_core\_definition\_version
+
+Retrieves information about a core definition version.
+
+Type annotations and code completion for `#!python boto3.client("greengrass").get_core_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_core_definition_version)
+
+```python title="Method definition"
+def get_core_definition_version(
+    self,
+    *,
+    CoreDefinitionId: str,
+    CoreDefinitionVersionId: str,
+) -> GetCoreDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
+
+1. See [:material-code-braces: GetCoreDefinitionVersionResponseTypeDef](./type_defs.md#getcoredefinitionversionresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetCoreDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+    "CoreDefinitionVersionId": ...,
+}
+
+parent.get_core_definition_version(**kwargs)
+```
+
+1. See [:material-code-braces: GetCoreDefinitionVersionRequestRequestTypeDef](./type_defs.md#getcoredefinitionversionrequestrequesttypedef) 
+
+### get\_deployment\_status
 
 Returns the status of a deployment.
 
-Type annotations for `boto3.client("greengrass").get_deployment_status` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_deployment_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_deployment_status)
 
-Boto3 documentation:
-[Greengrass.Client.get_deployment_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_deployment_status)
+```python title="Method definition"
+def get_deployment_status(
+    self,
+    *,
+    DeploymentId: str,
+    GroupId: str,
+) -> GetDeploymentStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeploymentStatusRequestRequestTypeDef](./type_defs.md#getdeploymentstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetDeploymentStatusResponseTypeDef](./type_defs.md#getdeploymentstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeploymentId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentStatusRequestRequestTypeDef = {  # (1)
+    "DeploymentId": ...,
+    "GroupId": ...,
+}
 
-Returns
-[GetDeploymentStatusResponseTypeDef](./type_defs.md#getdeploymentstatusresponsetypedef).
+parent.get_deployment_status(**kwargs)
+```
 
-<a id="get\_device\_definition"></a>
+1. See [:material-code-braces: GetDeploymentStatusRequestRequestTypeDef](./type_defs.md#getdeploymentstatusrequestrequesttypedef) 
 
-### get_device_definition
+### get\_device\_definition
 
 Retrieves information about a device definition.
 
-Type annotations for `boto3.client("greengrass").get_device_definition` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_device_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition)
+```python title="Method definition"
+def get_device_definition(
+    self,
+    *,
+    DeviceDefinitionId: str,
+) -> GetDeviceDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceDefinitionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceDefinitionResponseTypeDef](./type_defs.md#getdevicedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDeviceDefinitionRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
 
-Returns
-[GetDeviceDefinitionResponseTypeDef](./type_defs.md#getdevicedefinitionresponsetypedef).
+parent.get_device_definition(**kwargs)
+```
 
-<a id="get\_device\_definition\_version"></a>
+1. See [:material-code-braces: GetDeviceDefinitionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionrequestrequesttypedef) 
 
-### get_device_definition_version
+### get\_device\_definition\_version
 
 Retrieves information about a device definition version.
 
-Type annotations for `boto3.client("greengrass").get_device_definition_version`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_device_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_device_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_device_definition_version)
+```python title="Method definition"
+def get_device_definition_version(
+    self,
+    *,
+    DeviceDefinitionId: str,
+    DeviceDefinitionVersionId: str,
+    NextToken: str = ...,
+) -> GetDeviceDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetDeviceDefinitionVersionResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
-- `DeviceDefinitionVersionId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetDeviceDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+    "DeviceDefinitionVersionId": ...,
+}
 
-Returns
-[GetDeviceDefinitionVersionResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponsetypedef).
+parent.get_device_definition_version(**kwargs)
+```
 
-<a id="get\_function\_definition"></a>
+1. See [:material-code-braces: GetDeviceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getdevicedefinitionversionrequestrequesttypedef) 
 
-### get_function_definition
+### get\_function\_definition
 
-Retrieves information about a Lambda function definition, including its
-creation time and latest version.
+Retrieves information about a Lambda function definition, including its creation
+time and latest version.
 
-Type annotations for `boto3.client("greengrass").get_function_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_function_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition)
+```python title="Method definition"
+def get_function_definition(
+    self,
+    *,
+    FunctionDefinitionId: str,
+) -> GetFunctionDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionDefinitionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionDefinitionResponseTypeDef](./type_defs.md#getfunctiondefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFunctionDefinitionRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
 
-Returns
-[GetFunctionDefinitionResponseTypeDef](./type_defs.md#getfunctiondefinitionresponsetypedef).
+parent.get_function_definition(**kwargs)
+```
 
-<a id="get\_function\_definition\_version"></a>
+1. See [:material-code-braces: GetFunctionDefinitionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionrequestrequesttypedef) 
 
-### get_function_definition_version
+### get\_function\_definition\_version
 
 Retrieves information about a Lambda function definition version, including
 which Lambda functions are included in the version and their configurations.
 
-Type annotations for
-`boto3.client("greengrass").get_function_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_function_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_function_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_function_definition_version)
+```python title="Method definition"
+def get_function_definition_version(
+    self,
+    *,
+    FunctionDefinitionId: str,
+    FunctionDefinitionVersionId: str,
+    NextToken: str = ...,
+) -> GetFunctionDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetFunctionDefinitionVersionResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
-- `FunctionDefinitionVersionId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetFunctionDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+    "FunctionDefinitionVersionId": ...,
+}
 
-Returns
-[GetFunctionDefinitionVersionResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponsetypedef).
+parent.get_function_definition_version(**kwargs)
+```
 
-<a id="get\_group"></a>
+1. See [:material-code-braces: GetFunctionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getfunctiondefinitionversionrequestrequesttypedef) 
 
-### get_group
+### get\_group
 
 Retrieves information about a group.
 
-Type annotations for `boto3.client("greengrass").get_group` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group)
 
-Boto3 documentation:
-[Greengrass.Client.get_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group)
+```python title="Method definition"
+def get_group(
+    self,
+    *,
+    GroupId: str,
+) -> GetGroupResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef).
+1. See [:material-code-braces: GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+parent.get_group(**kwargs)
+```
 
-<a id="get\_group\_certificate\_authority"></a>
+1. See [:material-code-braces: GetGroupRequestRequestTypeDef](./type_defs.md#getgrouprequestrequesttypedef) 
 
-### get_group_certificate_authority
+### get\_group\_certificate\_authority
 
 Retreives the CA associated with a group.
 
-Type annotations for
-`boto3.client("greengrass").get_group_certificate_authority` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_group_certificate_authority` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_authority)
 
-Boto3 documentation:
-[Greengrass.Client.get_group_certificate_authority](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_authority)
+```python title="Method definition"
+def get_group_certificate_authority(
+    self,
+    *,
+    CertificateAuthorityId: str,
+    GroupId: str,
+) -> GetGroupCertificateAuthorityResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#getgroupcertificateauthorityrequestrequesttypedef).
+1. See [:material-code-braces: GetGroupCertificateAuthorityResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CertificateAuthorityId`: `str` *(required)*
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupCertificateAuthorityRequestRequestTypeDef = {  # (1)
+    "CertificateAuthorityId": ...,
+    "GroupId": ...,
+}
 
-Returns
-[GetGroupCertificateAuthorityResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponsetypedef).
+parent.get_group_certificate_authority(**kwargs)
+```
 
-<a id="get\_group\_certificate\_configuration"></a>
+1. See [:material-code-braces: GetGroupCertificateAuthorityRequestRequestTypeDef](./type_defs.md#getgroupcertificateauthorityrequestrequesttypedef) 
 
-### get_group_certificate_configuration
+### get\_group\_certificate\_configuration
 
 Retrieves the current configuration for the CA used by the group.
 
-Type annotations for
-`boto3.client("greengrass").get_group_certificate_configuration` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_group_certificate_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_configuration)
 
-Boto3 documentation:
-[Greengrass.Client.get_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_certificate_configuration)
+```python title="Method definition"
+def get_group_certificate_configuration(
+    self,
+    *,
+    GroupId: str,
+) -> GetGroupCertificateConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#getgroupcertificateconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetGroupCertificateConfigurationResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupCertificateConfigurationRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[GetGroupCertificateConfigurationResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponsetypedef).
+parent.get_group_certificate_configuration(**kwargs)
+```
 
-<a id="get\_group\_version"></a>
+1. See [:material-code-braces: GetGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#getgroupcertificateconfigurationrequestrequesttypedef) 
 
-### get_group_version
+### get\_group\_version
 
 Retrieves information about a group version.
 
-Type annotations for `boto3.client("greengrass").get_group_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_group_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_group_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_group_version)
+```python title="Method definition"
+def get_group_version(
+    self,
+    *,
+    GroupId: str,
+    GroupVersionId: str,
+) -> GetGroupVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetGroupVersionRequestRequestTypeDef](./type_defs.md#getgroupversionrequestrequesttypedef).
+1. See [:material-code-braces: GetGroupVersionResponseTypeDef](./type_defs.md#getgroupversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `GroupVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetGroupVersionRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+    "GroupVersionId": ...,
+}
 
-Returns
-[GetGroupVersionResponseTypeDef](./type_defs.md#getgroupversionresponsetypedef).
+parent.get_group_version(**kwargs)
+```
 
-<a id="get\_logger\_definition"></a>
+1. See [:material-code-braces: GetGroupVersionRequestRequestTypeDef](./type_defs.md#getgroupversionrequestrequesttypedef) 
 
-### get_logger_definition
+### get\_logger\_definition
 
 Retrieves information about a logger definition.
 
-Type annotations for `boto3.client("greengrass").get_logger_definition` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_logger_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition)
+```python title="Method definition"
+def get_logger_definition(
+    self,
+    *,
+    LoggerDefinitionId: str,
+) -> GetLoggerDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLoggerDefinitionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetLoggerDefinitionResponseTypeDef](./type_defs.md#getloggerdefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetLoggerDefinitionRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
 
-Returns
-[GetLoggerDefinitionResponseTypeDef](./type_defs.md#getloggerdefinitionresponsetypedef).
+parent.get_logger_definition(**kwargs)
+```
 
-<a id="get\_logger\_definition\_version"></a>
+1. See [:material-code-braces: GetLoggerDefinitionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionrequestrequesttypedef) 
 
-### get_logger_definition_version
+### get\_logger\_definition\_version
 
 Retrieves information about a logger definition version.
 
-Type annotations for `boto3.client("greengrass").get_logger_definition_version`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_logger_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_logger_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_logger_definition_version)
+```python title="Method definition"
+def get_logger_definition_version(
+    self,
+    *,
+    LoggerDefinitionId: str,
+    LoggerDefinitionVersionId: str,
+    NextToken: str = ...,
+) -> GetLoggerDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetLoggerDefinitionVersionResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
-- `LoggerDefinitionVersionId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetLoggerDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+    "LoggerDefinitionVersionId": ...,
+}
 
-Returns
-[GetLoggerDefinitionVersionResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponsetypedef).
+parent.get_logger_definition_version(**kwargs)
+```
 
-<a id="get\_resource\_definition"></a>
+1. See [:material-code-braces: GetLoggerDefinitionVersionRequestRequestTypeDef](./type_defs.md#getloggerdefinitionversionrequestrequesttypedef) 
 
-### get_resource_definition
+### get\_resource\_definition
 
 Retrieves information about a resource definition, including its creation time
 and latest version.
 
-Type annotations for `boto3.client("greengrass").get_resource_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_resource_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition)
+```python title="Method definition"
+def get_resource_definition(
+    self,
+    *,
+    ResourceDefinitionId: str,
+) -> GetResourceDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceDefinitionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetResourceDefinitionResponseTypeDef](./type_defs.md#getresourcedefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourceDefinitionRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
 
-Returns
-[GetResourceDefinitionResponseTypeDef](./type_defs.md#getresourcedefinitionresponsetypedef).
+parent.get_resource_definition(**kwargs)
+```
 
-<a id="get\_resource\_definition\_version"></a>
+1. See [:material-code-braces: GetResourceDefinitionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionrequestrequesttypedef) 
 
-### get_resource_definition_version
+### get\_resource\_definition\_version
 
 Retrieves information about a resource definition version, including which
 resources are included in the version.
 
-Type annotations for
-`boto3.client("greengrass").get_resource_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_resource_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_resource_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_resource_definition_version)
+```python title="Method definition"
+def get_resource_definition_version(
+    self,
+    *,
+    ResourceDefinitionId: str,
+    ResourceDefinitionVersionId: str,
+) -> GetResourceDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetResourceDefinitionVersionResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
-- `ResourceDefinitionVersionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetResourceDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+    "ResourceDefinitionVersionId": ...,
+}
 
-Returns
-[GetResourceDefinitionVersionResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponsetypedef).
+parent.get_resource_definition_version(**kwargs)
+```
 
-<a id="get\_service\_role\_for\_account"></a>
+1. See [:material-code-braces: GetResourceDefinitionVersionRequestRequestTypeDef](./type_defs.md#getresourcedefinitionversionrequestrequesttypedef) 
 
-### get_service_role_for_account
+### get\_service\_role\_for\_account
 
 Retrieves the service role that is attached to your account.
 
-Type annotations for `boto3.client("greengrass").get_service_role_for_account`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_service_role_for_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
 
-Boto3 documentation:
-[Greengrass.Client.get_service_role_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_service_role_for_account)
+```python title="Method definition"
+def get_service_role_for_account(
+    self,
+) -> GetServiceRoleForAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
+1. See [:material-code-braces: GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef) 
 
-<a id="get\_subscription\_definition"></a>
-
-### get_subscription_definition
+### get\_subscription\_definition
 
 Retrieves information about a subscription definition.
 
-Type annotations for `boto3.client("greengrass").get_subscription_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_subscription_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition)
 
-Boto3 documentation:
-[Greengrass.Client.get_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition)
+```python title="Method definition"
+def get_subscription_definition(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+) -> GetSubscriptionDefinitionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionrequestrequesttypedef).
+1. See [:material-code-braces: GetSubscriptionDefinitionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetSubscriptionDefinitionRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
 
-Returns
-[GetSubscriptionDefinitionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponsetypedef).
+parent.get_subscription_definition(**kwargs)
+```
 
-<a id="get\_subscription\_definition\_version"></a>
+1. See [:material-code-braces: GetSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionrequestrequesttypedef) 
 
-### get_subscription_definition_version
+### get\_subscription\_definition\_version
 
 Retrieves information about a subscription definition version.
 
-Type annotations for
-`boto3.client("greengrass").get_subscription_definition_version` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_subscription_definition_version` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition_version)
 
-Boto3 documentation:
-[Greengrass.Client.get_subscription_definition_version](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_subscription_definition_version)
+```python title="Method definition"
+def get_subscription_definition_version(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+    SubscriptionDefinitionVersionId: str,
+    NextToken: str = ...,
+) -> GetSubscriptionDefinitionVersionResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionversionrequestrequesttypedef).
+1. See [:material-code-braces: GetSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
-- `SubscriptionDefinitionVersionId`: `str` *(required)*
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetSubscriptionDefinitionVersionRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+    "SubscriptionDefinitionVersionId": ...,
+}
 
-Returns
-[GetSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponsetypedef).
+parent.get_subscription_definition_version(**kwargs)
+```
 
-<a id="get\_thing\_runtime\_configuration"></a>
+1. See [:material-code-braces: GetSubscriptionDefinitionVersionRequestRequestTypeDef](./type_defs.md#getsubscriptiondefinitionversionrequestrequesttypedef) 
 
-### get_thing_runtime_configuration
+### get\_thing\_runtime\_configuration
 
 Get the runtime configuration of a thing.
 
-Type annotations for
-`boto3.client("greengrass").get_thing_runtime_configuration` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_thing_runtime_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_thing_runtime_configuration)
 
-Boto3 documentation:
-[Greengrass.Client.get_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.get_thing_runtime_configuration)
+```python title="Method definition"
+def get_thing_runtime_configuration(
+    self,
+    *,
+    ThingName: str,
+) -> GetThingRuntimeConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#getthingruntimeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: GetThingRuntimeConfigurationResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ThingName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetThingRuntimeConfigurationRequestRequestTypeDef = {  # (1)
+    "ThingName": ...,
+}
 
-Returns
-[GetThingRuntimeConfigurationResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponsetypedef).
+parent.get_thing_runtime_configuration(**kwargs)
+```
 
-<a id="list\_bulk\_deployment\_detailed\_reports"></a>
+1. See [:material-code-braces: GetThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#getthingruntimeconfigurationrequestrequesttypedef) 
 
-### list_bulk_deployment_detailed_reports
+### list\_bulk\_deployment\_detailed\_reports
 
 Gets a paginated list of the deployments that have been started in a bulk
 deployment operation, and their current deployment status.
 
-Type annotations for
-`boto3.client("greengrass").list_bulk_deployment_detailed_reports` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_bulk_deployment_detailed_reports` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployment_detailed_reports)
 
-Boto3 documentation:
-[Greengrass.Client.list_bulk_deployment_detailed_reports](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployment_detailed_reports)
+```python title="Method definition"
+def list_bulk_deployment_detailed_reports(
+    self,
+    *,
+    BulkDeploymentId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListBulkDeploymentDetailedReportsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBulkDeploymentDetailedReportsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestrequesttypedef).
+1. See [:material-code-braces: ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `BulkDeploymentId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBulkDeploymentDetailedReportsRequestRequestTypeDef = {  # (1)
+    "BulkDeploymentId": ...,
+}
 
-Returns
-[ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef).
+parent.list_bulk_deployment_detailed_reports(**kwargs)
+```
 
-<a id="list\_bulk\_deployments"></a>
+1. See [:material-code-braces: ListBulkDeploymentDetailedReportsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsrequestrequesttypedef) 
 
-### list_bulk_deployments
+### list\_bulk\_deployments
 
 Returns a list of bulk deployments.
 
-Type annotations for `boto3.client("greengrass").list_bulk_deployments` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_bulk_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployments)
 
-Boto3 documentation:
-[Greengrass.Client.list_bulk_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_bulk_deployments)
+```python title="Method definition"
+def list_bulk_deployments(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListBulkDeploymentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBulkDeploymentsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBulkDeploymentsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef).
+parent.list_bulk_deployments(**kwargs)
+```
 
-<a id="list\_connector\_definition\_versions"></a>
+1. See [:material-code-braces: ListBulkDeploymentsRequestRequestTypeDef](./type_defs.md#listbulkdeploymentsrequestrequesttypedef) 
 
-### list_connector_definition_versions
+### list\_connector\_definition\_versions
 
 Lists the versions of a connector definition, which are containers for
 connectors.
 
-Type annotations for
-`boto3.client("greengrass").list_connector_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_connector_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_connector_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definition_versions)
+```python title="Method definition"
+def list_connector_definition_versions(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListConnectorDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectorDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectorDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
 
-Returns
-[ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef).
+parent.list_connector_definition_versions(**kwargs)
+```
 
-<a id="list\_connector\_definitions"></a>
+1. See [:material-code-braces: ListConnectorDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionversionsrequestrequesttypedef) 
 
-### list_connector_definitions
+### list\_connector\_definitions
 
 Retrieves a list of connector definitions.
 
-Type annotations for `boto3.client("greengrass").list_connector_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_connector_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_connector_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_connector_definitions)
+```python title="Method definition"
+def list_connector_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListConnectorDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListConnectorDefinitionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListConnectorDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef).
+parent.list_connector_definitions(**kwargs)
+```
 
-<a id="list\_core\_definition\_versions"></a>
+1. See [:material-code-braces: ListConnectorDefinitionsRequestRequestTypeDef](./type_defs.md#listconnectordefinitionsrequestrequesttypedef) 
 
-### list_core_definition_versions
+### list\_core\_definition\_versions
 
 Lists the versions of a core definition.
 
-Type annotations for `boto3.client("greengrass").list_core_definition_versions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_core_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_core_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definition_versions)
+```python title="Method definition"
+def list_core_definition_versions(
+    self,
+    *,
+    CoreDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListCoreDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCoreDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `CoreDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoreDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
 
-Returns
-[ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef).
+parent.list_core_definition_versions(**kwargs)
+```
 
-<a id="list\_core\_definitions"></a>
+1. See [:material-code-braces: ListCoreDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionversionsrequestrequesttypedef) 
 
-### list_core_definitions
+### list\_core\_definitions
 
 Retrieves a list of core definitions.
 
-Type annotations for `boto3.client("greengrass").list_core_definitions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_core_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_core_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_core_definitions)
+```python title="Method definition"
+def list_core_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListCoreDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListCoreDefinitionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListCoreDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef).
+parent.list_core_definitions(**kwargs)
+```
 
-<a id="list\_deployments"></a>
+1. See [:material-code-braces: ListCoreDefinitionsRequestRequestTypeDef](./type_defs.md#listcoredefinitionsrequestrequesttypedef) 
 
-### list_deployments
+### list\_deployments
 
 Returns a history of deployments for the group.
 
-Type annotations for `boto3.client("greengrass").list_deployments` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_deployments)
 
-Boto3 documentation:
-[Greengrass.Client.list_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_deployments)
+```python title="Method definition"
+def list_deployments(
+    self,
+    *,
+    GroupId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListDeploymentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeploymentsRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
+parent.list_deployments(**kwargs)
+```
 
-<a id="list\_device\_definition\_versions"></a>
+1. See [:material-code-braces: ListDeploymentsRequestRequestTypeDef](./type_defs.md#listdeploymentsrequestrequesttypedef) 
 
-### list_device_definition_versions
+### list\_device\_definition\_versions
 
 Lists the versions of a device definition.
 
-Type annotations for
-`boto3.client("greengrass").list_device_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_device_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_device_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definition_versions)
+```python title="Method definition"
+def list_device_definition_versions(
+    self,
+    *,
+    DeviceDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListDeviceDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeviceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeviceDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
 
-Returns
-[ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef).
+parent.list_device_definition_versions(**kwargs)
+```
 
-<a id="list\_device\_definitions"></a>
+1. See [:material-code-braces: ListDeviceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionversionsrequestrequesttypedef) 
 
-### list_device_definitions
+### list\_device\_definitions
 
 Retrieves a list of device definitions.
 
-Type annotations for `boto3.client("greengrass").list_device_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_device_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_device_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_device_definitions)
+```python title="Method definition"
+def list_device_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListDeviceDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDeviceDefinitionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDeviceDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef).
+parent.list_device_definitions(**kwargs)
+```
 
-<a id="list\_function\_definition\_versions"></a>
+1. See [:material-code-braces: ListDeviceDefinitionsRequestRequestTypeDef](./type_defs.md#listdevicedefinitionsrequestrequesttypedef) 
 
-### list_function_definition_versions
+### list\_function\_definition\_versions
 
 Lists the versions of a Lambda function definition.
 
-Type annotations for
-`boto3.client("greengrass").list_function_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_function_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_function_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definition_versions)
+```python title="Method definition"
+def list_function_definition_versions(
+    self,
+    *,
+    FunctionDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListFunctionDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
 
-Returns
-[ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef).
+parent.list_function_definition_versions(**kwargs)
+```
 
-<a id="list\_function\_definitions"></a>
+1. See [:material-code-braces: ListFunctionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionversionsrequestrequesttypedef) 
 
-### list_function_definitions
+### list\_function\_definitions
 
 Retrieves a list of Lambda function definitions.
 
-Type annotations for `boto3.client("greengrass").list_function_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_function_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_function_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_function_definitions)
+```python title="Method definition"
+def list_function_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListFunctionDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFunctionDefinitionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFunctionDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef).
+parent.list_function_definitions(**kwargs)
+```
 
-<a id="list\_group\_certificate\_authorities"></a>
+1. See [:material-code-braces: ListFunctionDefinitionsRequestRequestTypeDef](./type_defs.md#listfunctiondefinitionsrequestrequesttypedef) 
 
-### list_group_certificate_authorities
+### list\_group\_certificate\_authorities
 
 Retrieves the current CAs for a group.
 
-Type annotations for
-`boto3.client("greengrass").list_group_certificate_authorities` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_group_certificate_authorities` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_certificate_authorities)
 
-Boto3 documentation:
-[Greengrass.Client.list_group_certificate_authorities](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_certificate_authorities)
+```python title="Method definition"
+def list_group_certificate_authorities(
+    self,
+    *,
+    GroupId: str,
+) -> ListGroupCertificateAuthoritiesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listgroupcertificateauthoritiesrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListGroupCertificateAuthoritiesRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef).
+parent.list_group_certificate_authorities(**kwargs)
+```
 
-<a id="list\_group\_versions"></a>
+1. See [:material-code-braces: ListGroupCertificateAuthoritiesRequestRequestTypeDef](./type_defs.md#listgroupcertificateauthoritiesrequestrequesttypedef) 
 
-### list_group_versions
+### list\_group\_versions
 
 Lists the versions of a group.
 
-Type annotations for `boto3.client("greengrass").list_group_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_group_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_group_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_group_versions)
+```python title="Method definition"
+def list_group_versions(
+    self,
+    *,
+    GroupId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListGroupVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupVersionsRequestRequestTypeDef](./type_defs.md#listgroupversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGroupVersionsRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef).
+parent.list_group_versions(**kwargs)
+```
 
-<a id="list\_groups"></a>
+1. See [:material-code-braces: ListGroupVersionsRequestRequestTypeDef](./type_defs.md#listgroupversionsrequestrequesttypedef) 
 
-### list_groups
+### list\_groups
 
 Retrieves a list of groups.
 
-Type annotations for `boto3.client("greengrass").list_groups` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_groups)
 
-Boto3 documentation:
-[Greengrass.Client.list_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_groups)
+```python title="Method definition"
+def list_groups(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListGroupsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef).
+1. See [:material-code-braces: ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListGroupsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+parent.list_groups(**kwargs)
+```
 
-<a id="list\_logger\_definition\_versions"></a>
+1. See [:material-code-braces: ListGroupsRequestRequestTypeDef](./type_defs.md#listgroupsrequestrequesttypedef) 
 
-### list_logger_definition_versions
+### list\_logger\_definition\_versions
 
 Lists the versions of a logger definition.
 
-Type annotations for
-`boto3.client("greengrass").list_logger_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_logger_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_logger_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definition_versions)
+```python title="Method definition"
+def list_logger_definition_versions(
+    self,
+    *,
+    LoggerDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListLoggerDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLoggerDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLoggerDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
 
-Returns
-[ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef).
+parent.list_logger_definition_versions(**kwargs)
+```
 
-<a id="list\_logger\_definitions"></a>
+1. See [:material-code-braces: ListLoggerDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionversionsrequestrequesttypedef) 
 
-### list_logger_definitions
+### list\_logger\_definitions
 
 Retrieves a list of logger definitions.
 
-Type annotations for `boto3.client("greengrass").list_logger_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_logger_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_logger_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_logger_definitions)
+```python title="Method definition"
+def list_logger_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListLoggerDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListLoggerDefinitionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListLoggerDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef).
+parent.list_logger_definitions(**kwargs)
+```
 
-<a id="list\_resource\_definition\_versions"></a>
+1. See [:material-code-braces: ListLoggerDefinitionsRequestRequestTypeDef](./type_defs.md#listloggerdefinitionsrequestrequesttypedef) 
 
-### list_resource_definition_versions
+### list\_resource\_definition\_versions
 
 Lists the versions of a resource definition.
 
-Type annotations for
-`boto3.client("greengrass").list_resource_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_resource_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_resource_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definition_versions)
+```python title="Method definition"
+def list_resource_definition_versions(
+    self,
+    *,
+    ResourceDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListResourceDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourceDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
 
-Returns
-[ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef).
+parent.list_resource_definition_versions(**kwargs)
+```
 
-<a id="list\_resource\_definitions"></a>
+1. See [:material-code-braces: ListResourceDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionversionsrequestrequesttypedef) 
 
-### list_resource_definitions
+### list\_resource\_definitions
 
 Retrieves a list of resource definitions.
 
-Type annotations for `boto3.client("greengrass").list_resource_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_resource_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_resource_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_resource_definitions)
+```python title="Method definition"
+def list_resource_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListResourceDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListResourceDefinitionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListResourceDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef).
+parent.list_resource_definitions(**kwargs)
+```
 
-<a id="list\_subscription\_definition\_versions"></a>
+1. See [:material-code-braces: ListResourceDefinitionsRequestRequestTypeDef](./type_defs.md#listresourcedefinitionsrequestrequesttypedef) 
 
-### list_subscription_definition_versions
+### list\_subscription\_definition\_versions
 
 Lists the versions of a subscription definition.
 
-Type annotations for
-`boto3.client("greengrass").list_subscription_definition_versions` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_subscription_definition_versions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definition_versions)
 
-Boto3 documentation:
-[Greengrass.Client.list_subscription_definition_versions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definition_versions)
+```python title="Method definition"
+def list_subscription_definition_versions(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListSubscriptionDefinitionVersionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSubscriptionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionDefinitionVersionsRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
 
-Returns
-[ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef).
+parent.list_subscription_definition_versions(**kwargs)
+```
 
-<a id="list\_subscription\_definitions"></a>
+1. See [:material-code-braces: ListSubscriptionDefinitionVersionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionversionsrequestrequesttypedef) 
 
-### list_subscription_definitions
+### list\_subscription\_definitions
 
 Retrieves a list of subscription definitions.
 
-Type annotations for `boto3.client("greengrass").list_subscription_definitions`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_subscription_definitions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definitions)
 
-Boto3 documentation:
-[Greengrass.Client.list_subscription_definitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_subscription_definitions)
+```python title="Method definition"
+def list_subscription_definitions(
+    self,
+    *,
+    MaxResults: str = ...,
+    NextToken: str = ...,
+) -> ListSubscriptionDefinitionsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListSubscriptionDefinitionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestrequesttypedef).
+1. See [:material-code-braces: ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListSubscriptionDefinitionsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef).
+parent.list_subscription_definitions(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListSubscriptionDefinitionsRequestRequestTypeDef](./type_defs.md#listsubscriptiondefinitionsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Retrieves a list of resource tags for a resource arn.
 
-Type annotations for `boto3.client("greengrass").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[Greengrass.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="reset\_deployments"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### reset_deployments
+### reset\_deployments
 
 Resets a group's deployments.
 
-Type annotations for `boto3.client("greengrass").reset_deployments` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").reset_deployments` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.reset_deployments)
 
-Boto3 documentation:
-[Greengrass.Client.reset_deployments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.reset_deployments)
+```python title="Method definition"
+def reset_deployments(
+    self,
+    *,
+    GroupId: str,
+    AmznClientToken: str = ...,
+    Force: bool = ...,
+) -> ResetDeploymentsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ResetDeploymentsRequestRequestTypeDef](./type_defs.md#resetdeploymentsrequestrequesttypedef).
+1. See [:material-code-braces: ResetDeploymentsResponseTypeDef](./type_defs.md#resetdeploymentsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `Force`: `bool`
+```python title="Usage example with kwargs"
+kwargs: ResetDeploymentsRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[ResetDeploymentsResponseTypeDef](./type_defs.md#resetdeploymentsresponsetypedef).
+parent.reset_deployments(**kwargs)
+```
 
-<a id="start\_bulk\_deployment"></a>
+1. See [:material-code-braces: ResetDeploymentsRequestRequestTypeDef](./type_defs.md#resetdeploymentsrequestrequesttypedef) 
 
-### start_bulk_deployment
+### start\_bulk\_deployment
 
 Deploys multiple groups in one operation.
 
-Type annotations for `boto3.client("greengrass").start_bulk_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").start_bulk_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.start_bulk_deployment)
 
-Boto3 documentation:
-[Greengrass.Client.start_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.start_bulk_deployment)
+```python title="Method definition"
+def start_bulk_deployment(
+    self,
+    *,
+    ExecutionRoleArn: str,
+    InputFileUri: str,
+    AmznClientToken: str = ...,
+    tags: Mapping[str, str] = ...,
+) -> StartBulkDeploymentResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartBulkDeploymentRequestRequestTypeDef](./type_defs.md#startbulkdeploymentrequestrequesttypedef).
+1. See [:material-code-braces: StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ExecutionRoleArn`: `str` *(required)*
-- `InputFileUri`: `str` *(required)*
-- `AmznClientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: StartBulkDeploymentRequestRequestTypeDef = {  # (1)
+    "ExecutionRoleArn": ...,
+    "InputFileUri": ...,
+}
 
-Returns
-[StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef).
+parent.start_bulk_deployment(**kwargs)
+```
 
-<a id="stop\_bulk\_deployment"></a>
+1. See [:material-code-braces: StartBulkDeploymentRequestRequestTypeDef](./type_defs.md#startbulkdeploymentrequestrequesttypedef) 
 
-### stop_bulk_deployment
+### stop\_bulk\_deployment
 
 Stops the execution of a bulk deployment.
 
-Type annotations for `boto3.client("greengrass").stop_bulk_deployment` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").stop_bulk_deployment` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.stop_bulk_deployment)
 
-Boto3 documentation:
-[Greengrass.Client.stop_bulk_deployment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.stop_bulk_deployment)
+```python title="Method definition"
+def stop_bulk_deployment(
+    self,
+    *,
+    BulkDeploymentId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[StopBulkDeploymentRequestRequestTypeDef](./type_defs.md#stopbulkdeploymentrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BulkDeploymentId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopBulkDeploymentRequestRequestTypeDef = {  # (1)
+    "BulkDeploymentId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.stop_bulk_deployment(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopBulkDeploymentRequestRequestTypeDef](./type_defs.md#stopbulkdeploymentrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a Greengrass resource.
 
-Type annotations for `boto3.client("greengrass").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.tag_resource)
 
-Boto3 documentation:
-[Greengrass.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    tags: Mapping[str, str] = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-<a id="untag\_resource"></a>
+parent.tag_resource(**kwargs)
+```
 
-### untag_resource
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
+
+### untag\_resource
 
 Remove resource tags from a Greengrass Resource.
 
-Type annotations for `boto3.client("greengrass").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.untag_resource)
 
-Boto3 documentation:
-[Greengrass.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-<a id="update\_connectivity\_info"></a>
+parent.untag_resource(**kwargs)
+```
 
-### update_connectivity_info
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
+
+### update\_connectivity\_info
 
 Updates the connectivity information for the core.
 
-Type annotations for `boto3.client("greengrass").update_connectivity_info`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_connectivity_info` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connectivity_info)
 
-Boto3 documentation:
-[Greengrass.Client.update_connectivity_info](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connectivity_info)
+```python title="Method definition"
+def update_connectivity_info(
+    self,
+    *,
+    ThingName: str,
+    ConnectivityInfo: Sequence[ConnectivityInfoTypeDef] = ...,  # (1)
+) -> UpdateConnectivityInfoResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef).
+1. See [:material-code-braces: ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef) 
+2. See [:material-code-braces: UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef) 
 
-Keyword-only arguments:
 
-- `ThingName`: `str` *(required)*
-- `ConnectivityInfo`:
-  `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectivityInfoRequestRequestTypeDef = {  # (1)
+    "ThingName": ...,
+}
 
-Returns
-[UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
+parent.update_connectivity_info(**kwargs)
+```
 
-<a id="update\_connector\_definition"></a>
+1. See [:material-code-braces: UpdateConnectivityInfoRequestRequestTypeDef](./type_defs.md#updateconnectivityinforequestrequesttypedef) 
 
-### update_connector_definition
+### update\_connector\_definition
 
 Updates a connector definition.
 
-Type annotations for `boto3.client("greengrass").update_connector_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_connector_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connector_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_connector_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_connector_definition)
+```python title="Method definition"
+def update_connector_definition(
+    self,
+    *,
+    ConnectorDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#updateconnectordefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ConnectorDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectorDefinitionRequestRequestTypeDef = {  # (1)
+    "ConnectorDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_connector_definition(**kwargs)
+```
 
-<a id="update\_core\_definition"></a>
+1. See [:material-code-braces: UpdateConnectorDefinitionRequestRequestTypeDef](./type_defs.md#updateconnectordefinitionrequestrequesttypedef) 
 
-### update_core_definition
+### update\_core\_definition
 
 Updates a core definition.
 
-Type annotations for `boto3.client("greengrass").update_core_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_core_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_core_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_core_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_core_definition)
+```python title="Method definition"
+def update_core_definition(
+    self,
+    *,
+    CoreDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateCoreDefinitionRequestRequestTypeDef](./type_defs.md#updatecoredefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `CoreDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateCoreDefinitionRequestRequestTypeDef = {  # (1)
+    "CoreDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_core_definition(**kwargs)
+```
 
-<a id="update\_device\_definition"></a>
+1. See [:material-code-braces: UpdateCoreDefinitionRequestRequestTypeDef](./type_defs.md#updatecoredefinitionrequestrequesttypedef) 
 
-### update_device_definition
+### update\_device\_definition
 
 Updates a device definition.
 
-Type annotations for `boto3.client("greengrass").update_device_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_device_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_device_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_device_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_device_definition)
+```python title="Method definition"
+def update_device_definition(
+    self,
+    *,
+    DeviceDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#updatedevicedefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DeviceDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateDeviceDefinitionRequestRequestTypeDef = {  # (1)
+    "DeviceDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_device_definition(**kwargs)
+```
 
-<a id="update\_function\_definition"></a>
+1. See [:material-code-braces: UpdateDeviceDefinitionRequestRequestTypeDef](./type_defs.md#updatedevicedefinitionrequestrequesttypedef) 
 
-### update_function_definition
+### update\_function\_definition
 
 Updates a Lambda function definition.
 
-Type annotations for `boto3.client("greengrass").update_function_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_function_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_function_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_function_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_function_definition)
+```python title="Method definition"
+def update_function_definition(
+    self,
+    *,
+    FunctionDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#updatefunctiondefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `FunctionDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFunctionDefinitionRequestRequestTypeDef = {  # (1)
+    "FunctionDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_function_definition(**kwargs)
+```
 
-<a id="update\_group"></a>
+1. See [:material-code-braces: UpdateFunctionDefinitionRequestRequestTypeDef](./type_defs.md#updatefunctiondefinitionrequestrequesttypedef) 
 
-### update_group
+### update\_group
 
 Updates a group.
 
-Type annotations for `boto3.client("greengrass").update_group` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group)
 
-Boto3 documentation:
-[Greengrass.Client.update_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group)
+```python title="Method definition"
+def update_group(
+    self,
+    *,
+    GroupId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_group(**kwargs)
+```
 
-<a id="update\_group\_certificate\_configuration"></a>
+1. See [:material-code-braces: UpdateGroupRequestRequestTypeDef](./type_defs.md#updategrouprequestrequesttypedef) 
 
-### update_group_certificate_configuration
+### update\_group\_certificate\_configuration
 
 Updates the Certificate expiry time for a group.
 
-Type annotations for
-`boto3.client("greengrass").update_group_certificate_configuration` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_group_certificate_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group_certificate_configuration)
 
-Boto3 documentation:
-[Greengrass.Client.update_group_certificate_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_group_certificate_configuration)
+```python title="Method definition"
+def update_group_certificate_configuration(
+    self,
+    *,
+    GroupId: str,
+    CertificateExpiryInMilliseconds: str = ...,
+) -> UpdateGroupCertificateConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#updategroupcertificateconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: UpdateGroupCertificateConfigurationResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `CertificateExpiryInMilliseconds`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateGroupCertificateConfigurationRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns
-[UpdateGroupCertificateConfigurationResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponsetypedef).
+parent.update_group_certificate_configuration(**kwargs)
+```
 
-<a id="update\_logger\_definition"></a>
+1. See [:material-code-braces: UpdateGroupCertificateConfigurationRequestRequestTypeDef](./type_defs.md#updategroupcertificateconfigurationrequestrequesttypedef) 
 
-### update_logger_definition
+### update\_logger\_definition
 
 Updates a logger definition.
 
-Type annotations for `boto3.client("greengrass").update_logger_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_logger_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_logger_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_logger_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_logger_definition)
+```python title="Method definition"
+def update_logger_definition(
+    self,
+    *,
+    LoggerDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#updateloggerdefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `LoggerDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateLoggerDefinitionRequestRequestTypeDef = {  # (1)
+    "LoggerDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_logger_definition(**kwargs)
+```
 
-<a id="update\_resource\_definition"></a>
+1. See [:material-code-braces: UpdateLoggerDefinitionRequestRequestTypeDef](./type_defs.md#updateloggerdefinitionrequestrequesttypedef) 
 
-### update_resource_definition
+### update\_resource\_definition
 
 Updates a resource definition.
 
-Type annotations for `boto3.client("greengrass").update_resource_definition`
-method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_resource_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_resource_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_resource_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_resource_definition)
+```python title="Method definition"
+def update_resource_definition(
+    self,
+    *,
+    ResourceDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateResourceDefinitionRequestRequestTypeDef](./type_defs.md#updateresourcedefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateResourceDefinitionRequestRequestTypeDef = {  # (1)
+    "ResourceDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_resource_definition(**kwargs)
+```
 
-<a id="update\_subscription\_definition"></a>
+1. See [:material-code-braces: UpdateResourceDefinitionRequestRequestTypeDef](./type_defs.md#updateresourcedefinitionrequestrequesttypedef) 
 
-### update_subscription_definition
+### update\_subscription\_definition
 
 Updates a subscription definition.
 
-Type annotations for
-`boto3.client("greengrass").update_subscription_definition` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_subscription_definition` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_subscription_definition)
 
-Boto3 documentation:
-[Greengrass.Client.update_subscription_definition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_subscription_definition)
+```python title="Method definition"
+def update_subscription_definition(
+    self,
+    *,
+    SubscriptionDefinitionId: str,
+    Name: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#updatesubscriptiondefinitionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `SubscriptionDefinitionId`: `str` *(required)*
-- `Name`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateSubscriptionDefinitionRequestRequestTypeDef = {  # (1)
+    "SubscriptionDefinitionId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_subscription_definition(**kwargs)
+```
 
-<a id="update\_thing\_runtime\_configuration"></a>
+1. See [:material-code-braces: UpdateSubscriptionDefinitionRequestRequestTypeDef](./type_defs.md#updatesubscriptiondefinitionrequestrequesttypedef) 
 
-### update_thing_runtime_configuration
+### update\_thing\_runtime\_configuration
 
 Updates the runtime configuration of a thing.
 
-Type annotations for
-`boto3.client("greengrass").update_thing_runtime_configuration` method.
+Type annotations and code completion for `#!python boto3.client("greengrass").update_thing_runtime_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_thing_runtime_configuration)
 
-Boto3 documentation:
-[Greengrass.Client.update_thing_runtime_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.update_thing_runtime_configuration)
+```python title="Method definition"
+def update_thing_runtime_configuration(
+    self,
+    *,
+    ThingName: str,
+    TelemetryConfiguration: TelemetryConfigurationUpdateTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#updatethingruntimeconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef) 
 
-Keyword-only arguments:
 
-- `ThingName`: `str` *(required)*
-- `TelemetryConfiguration`:
-  [TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateThingRuntimeConfigurationRequestRequestTypeDef = {  # (1)
+    "ThingName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_thing_runtime_configuration(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateThingRuntimeConfigurationRequestRequestTypeDef](./type_defs.md#updatethingruntimeconfigurationrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("greengrass").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("greengrass").get_paginator` method with overloads.
 
-- `client.get_paginator("list_bulk_deployment_detailed_reports")` ->
-  [ListBulkDeploymentDetailedReportsPaginator](./paginators.md#listbulkdeploymentdetailedreportspaginator)
-- `client.get_paginator("list_bulk_deployments")` ->
-  [ListBulkDeploymentsPaginator](./paginators.md#listbulkdeploymentspaginator)
-- `client.get_paginator("list_connector_definition_versions")` ->
-  [ListConnectorDefinitionVersionsPaginator](./paginators.md#listconnectordefinitionversionspaginator)
-- `client.get_paginator("list_connector_definitions")` ->
-  [ListConnectorDefinitionsPaginator](./paginators.md#listconnectordefinitionspaginator)
-- `client.get_paginator("list_core_definition_versions")` ->
-  [ListCoreDefinitionVersionsPaginator](./paginators.md#listcoredefinitionversionspaginator)
-- `client.get_paginator("list_core_definitions")` ->
-  [ListCoreDefinitionsPaginator](./paginators.md#listcoredefinitionspaginator)
-- `client.get_paginator("list_deployments")` ->
-  [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
-- `client.get_paginator("list_device_definition_versions")` ->
-  [ListDeviceDefinitionVersionsPaginator](./paginators.md#listdevicedefinitionversionspaginator)
-- `client.get_paginator("list_device_definitions")` ->
-  [ListDeviceDefinitionsPaginator](./paginators.md#listdevicedefinitionspaginator)
-- `client.get_paginator("list_function_definition_versions")` ->
-  [ListFunctionDefinitionVersionsPaginator](./paginators.md#listfunctiondefinitionversionspaginator)
-- `client.get_paginator("list_function_definitions")` ->
-  [ListFunctionDefinitionsPaginator](./paginators.md#listfunctiondefinitionspaginator)
-- `client.get_paginator("list_group_versions")` ->
-  [ListGroupVersionsPaginator](./paginators.md#listgroupversionspaginator)
-- `client.get_paginator("list_groups")` ->
-  [ListGroupsPaginator](./paginators.md#listgroupspaginator)
-- `client.get_paginator("list_logger_definition_versions")` ->
-  [ListLoggerDefinitionVersionsPaginator](./paginators.md#listloggerdefinitionversionspaginator)
-- `client.get_paginator("list_logger_definitions")` ->
-  [ListLoggerDefinitionsPaginator](./paginators.md#listloggerdefinitionspaginator)
-- `client.get_paginator("list_resource_definition_versions")` ->
-  [ListResourceDefinitionVersionsPaginator](./paginators.md#listresourcedefinitionversionspaginator)
-- `client.get_paginator("list_resource_definitions")` ->
-  [ListResourceDefinitionsPaginator](./paginators.md#listresourcedefinitionspaginator)
-- `client.get_paginator("list_subscription_definition_versions")` ->
-  [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
-- `client.get_paginator("list_subscription_definitions")` ->
-  [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
+- `client.get_paginator("list_bulk_deployment_detailed_reports")` -> [ListBulkDeploymentDetailedReportsPaginator](./paginators.md#listbulkdeploymentdetailedreportspaginator)
+- `client.get_paginator("list_bulk_deployments")` -> [ListBulkDeploymentsPaginator](./paginators.md#listbulkdeploymentspaginator)
+- `client.get_paginator("list_connector_definition_versions")` -> [ListConnectorDefinitionVersionsPaginator](./paginators.md#listconnectordefinitionversionspaginator)
+- `client.get_paginator("list_connector_definitions")` -> [ListConnectorDefinitionsPaginator](./paginators.md#listconnectordefinitionspaginator)
+- `client.get_paginator("list_core_definition_versions")` -> [ListCoreDefinitionVersionsPaginator](./paginators.md#listcoredefinitionversionspaginator)
+- `client.get_paginator("list_core_definitions")` -> [ListCoreDefinitionsPaginator](./paginators.md#listcoredefinitionspaginator)
+- `client.get_paginator("list_deployments")` -> [ListDeploymentsPaginator](./paginators.md#listdeploymentspaginator)
+- `client.get_paginator("list_device_definition_versions")` -> [ListDeviceDefinitionVersionsPaginator](./paginators.md#listdevicedefinitionversionspaginator)
+- `client.get_paginator("list_device_definitions")` -> [ListDeviceDefinitionsPaginator](./paginators.md#listdevicedefinitionspaginator)
+- `client.get_paginator("list_function_definition_versions")` -> [ListFunctionDefinitionVersionsPaginator](./paginators.md#listfunctiondefinitionversionspaginator)
+- `client.get_paginator("list_function_definitions")` -> [ListFunctionDefinitionsPaginator](./paginators.md#listfunctiondefinitionspaginator)
+- `client.get_paginator("list_group_versions")` -> [ListGroupVersionsPaginator](./paginators.md#listgroupversionspaginator)
+- `client.get_paginator("list_groups")` -> [ListGroupsPaginator](./paginators.md#listgroupspaginator)
+- `client.get_paginator("list_logger_definition_versions")` -> [ListLoggerDefinitionVersionsPaginator](./paginators.md#listloggerdefinitionversionspaginator)
+- `client.get_paginator("list_logger_definitions")` -> [ListLoggerDefinitionsPaginator](./paginators.md#listloggerdefinitionspaginator)
+- `client.get_paginator("list_resource_definition_versions")` -> [ListResourceDefinitionVersionsPaginator](./paginators.md#listresourcedefinitionversionspaginator)
+- `client.get_paginator("list_resource_definitions")` -> [ListResourceDefinitionsPaginator](./paginators.md#listresourcedefinitionspaginator)
+- `client.get_paginator("list_subscription_definition_versions")` -> [ListSubscriptionDefinitionVersionsPaginator](./paginators.md#listsubscriptiondefinitionversionspaginator)
+- `client.get_paginator("list_subscription_definitions")` -> [ListSubscriptionDefinitionsPaginator](./paginators.md#listsubscriptiondefinitionspaginator)
+
+
+

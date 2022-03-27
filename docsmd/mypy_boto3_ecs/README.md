@@ -1,43 +1,20 @@
-<a id="type-annotations-for-boto3-ecs-module"></a>
-
-# Type annotations for boto3 ECS module
+#  ECS module
 
 > [Index](../README.md) > ECS
 
-Auto-generated documentation for
-[ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
-type annotations stubs module
-[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
+!!! note ""
 
-- [Type annotations for boto3 ECS module](#type-annotations-for-boto3-ecs-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [ECSClient](#ecsclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
+    type annotations stubs module [mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `ECS`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -57,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[ecs]'
 python -m pip install mypy-boto3-ecs
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -65,129 +42,37 @@ python -m pip install mypy-boto3-ecs
 python -m pip uninstall -y mypy-boto3-ecs
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="ecsclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## ECSClient
 
-Type annotations for `boto3.client("ecs")` as [ECSClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("ecs")` as [ECSClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_ecs.client import ECSClient
+
+def get_client() -> ECSClient:
+    return Session().cleint("ecs")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_capacity_provider](./client.md#create_capacity_provider)
-- [create_cluster](./client.md#create_cluster)
-- [create_service](./client.md#create_service)
-- [create_task_set](./client.md#create_task_set)
-- [delete_account_setting](./client.md#delete_account_setting)
-- [delete_attributes](./client.md#delete_attributes)
-- [delete_capacity_provider](./client.md#delete_capacity_provider)
-- [delete_cluster](./client.md#delete_cluster)
-- [delete_service](./client.md#delete_service)
-- [delete_task_set](./client.md#delete_task_set)
-- [deregister_container_instance](./client.md#deregister_container_instance)
-- [deregister_task_definition](./client.md#deregister_task_definition)
-- [describe_capacity_providers](./client.md#describe_capacity_providers)
-- [describe_clusters](./client.md#describe_clusters)
-- [describe_container_instances](./client.md#describe_container_instances)
-- [describe_services](./client.md#describe_services)
-- [describe_task_definition](./client.md#describe_task_definition)
-- [describe_task_sets](./client.md#describe_task_sets)
-- [describe_tasks](./client.md#describe_tasks)
-- [discover_poll_endpoint](./client.md#discover_poll_endpoint)
-- [exceptions](./client.md#exceptions)
-- [execute_command](./client.md#execute_command)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
-- [list_account_settings](./client.md#list_account_settings)
-- [list_attributes](./client.md#list_attributes)
-- [list_clusters](./client.md#list_clusters)
-- [list_container_instances](./client.md#list_container_instances)
-- [list_services](./client.md#list_services)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [list_task_definition_families](./client.md#list_task_definition_families)
-- [list_task_definitions](./client.md#list_task_definitions)
-- [list_tasks](./client.md#list_tasks)
-- [put_account_setting](./client.md#put_account_setting)
-- [put_account_setting_default](./client.md#put_account_setting_default)
-- [put_attributes](./client.md#put_attributes)
-- [put_cluster_capacity_providers](./client.md#put_cluster_capacity_providers)
-- [register_container_instance](./client.md#register_container_instance)
-- [register_task_definition](./client.md#register_task_definition)
-- [run_task](./client.md#run_task)
-- [start_task](./client.md#start_task)
-- [stop_task](./client.md#stop_task)
-- [submit_attachment_state_changes](./client.md#submit_attachment_state_changes)
-- [submit_container_state_change](./client.md#submit_container_state_change)
-- [submit_task_state_change](./client.md#submit_task_state_change)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-- [update_capacity_provider](./client.md#update_capacity_provider)
-- [update_cluster](./client.md#update_cluster)
-- [update_cluster_settings](./client.md#update_cluster_settings)
-- [update_container_agent](./client.md#update_container_agent)
-- [update_container_instances_state](./client.md#update_container_instances_state)
-- [update_service](./client.md#update_service)
-- [update_service_primary_task_set](./client.md#update_service_primary_task_set)
-- [update_task_set](./client.md#update_task_set)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-ECSClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- AttributeLimitExceededException
-- BlockedException
-- ClientError
-- ClientException
-- ClusterContainsContainerInstancesException
-- ClusterContainsServicesException
-- ClusterContainsTasksException
-- ClusterNotFoundException
-- InvalidParameterException
-- LimitExceededException
-- MissingVersionException
-- NoUpdateAvailableException
-- PlatformTaskDefinitionIncompatibilityException
-- PlatformUnknownException
-- ResourceInUseException
-- ResourceNotFoundException
-- ServerException
-- ServiceNotActiveException
-- ServiceNotFoundException
-- TargetNotConnectedException
-- TargetNotFoundException
-- TaskSetNotFoundException
-- UnsupportedFeatureException
-- UpdateInProgressException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("ecs").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("ecs").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator, ...
+from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator
+
+def get_list_account_settings_paginator() -> ListAccountSettingsPaginator:
+    return Session().client("ecs").get_paginator("list_account_settings"))
 ```
 
 - [ListAccountSettingsPaginator](./paginators.md#listaccountsettingspaginator)
@@ -199,17 +84,21 @@ from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator, ...
 - [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
 - [ListTasksPaginator](./paginators.md#listtaskspaginator)
 
-<a id="waiters"></a>
+
+
 
 ## Waiters
 
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("ecs").get_waiter("...")`.
+Type annotations and code completion for [waiters](./waiters.md)
+from `#!python boto3.client("ecs").get_waiter("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_ecs.waiter import ServicesInactiveWaiter, ...
+from mypy_boto3_ecs.waiter import ServicesInactiveWaiter
+
+def get_services_inactive_waiter() -> ServicesInactiveWaiter:
+    return Session().client("ecs").get_waiter("services_inactive")
 ```
 
 - [ServicesInactiveWaiter](./waiters.md#servicesinactivewaiter)
@@ -217,16 +106,21 @@ from mypy_boto3_ecs.waiter import ServicesInactiveWaiter, ...
 - [TasksRunningWaiter](./waiters.md#tasksrunningwaiter)
 - [TasksStoppedWaiter](./waiters.md#tasksstoppedwaiter)
 
-<a id="literals"></a>
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ecs.literals import AgentUpdateStatusType
 
-```python
-from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
+def get_value() -> AgentUpdateStatusType:
+    return "FAILED"
 ```
 
 - [AgentUpdateStatusType](./literals.md#agentupdatestatustype)
@@ -303,18 +197,23 @@ from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+- [RegionName](./literals.md#regionname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef
 
-```python
-from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef, ...
+def get_value() -> AttachmentStateChangeTypeDef:
+    return {
+        "attachmentArn": ...,
+        "status": ...,
+    }
 ```
 
 - [AttachmentStateChangeTypeDef](./type_defs.md#attachmentstatechangetypedef)
@@ -370,12 +269,16 @@ from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef, ...
 - [DescribeContainerInstancesRequestRequestTypeDef](./type_defs.md#describecontainerinstancesrequestrequesttypedef)
 - [DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef)
 - [DescribeServicesRequestRequestTypeDef](./type_defs.md#describeservicesrequestrequesttypedef)
+- [DescribeServicesRequestServicesInactiveWaitTypeDef](./type_defs.md#describeservicesrequestservicesinactivewaittypedef)
+- [DescribeServicesRequestServicesStableWaitTypeDef](./type_defs.md#describeservicesrequestservicesstablewaittypedef)
 - [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef)
 - [DescribeTaskDefinitionRequestRequestTypeDef](./type_defs.md#describetaskdefinitionrequestrequesttypedef)
 - [DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef)
 - [DescribeTaskSetsRequestRequestTypeDef](./type_defs.md#describetasksetsrequestrequesttypedef)
 - [DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef)
 - [DescribeTasksRequestRequestTypeDef](./type_defs.md#describetasksrequestrequesttypedef)
+- [DescribeTasksRequestTasksRunningWaitTypeDef](./type_defs.md#describetasksrequesttasksrunningwaittypedef)
+- [DescribeTasksRequestTasksStoppedWaitTypeDef](./type_defs.md#describetasksrequesttasksstoppedwaittypedef)
 - [DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef)
 - [DeviceTypeDef](./type_defs.md#devicetypedef)
 - [DiscoverPollEndpointRequestRequestTypeDef](./type_defs.md#discoverpollendpointrequestrequesttypedef)
@@ -402,22 +305,30 @@ from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef, ...
 - [KernelCapabilitiesTypeDef](./type_defs.md#kernelcapabilitiestypedef)
 - [KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)
 - [LinuxParametersTypeDef](./type_defs.md#linuxparameterstypedef)
+- [ListAccountSettingsRequestListAccountSettingsPaginateTypeDef](./type_defs.md#listaccountsettingsrequestlistaccountsettingspaginatetypedef)
 - [ListAccountSettingsRequestRequestTypeDef](./type_defs.md#listaccountsettingsrequestrequesttypedef)
 - [ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef)
+- [ListAttributesRequestListAttributesPaginateTypeDef](./type_defs.md#listattributesrequestlistattributespaginatetypedef)
 - [ListAttributesRequestRequestTypeDef](./type_defs.md#listattributesrequestrequesttypedef)
 - [ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef)
+- [ListClustersRequestListClustersPaginateTypeDef](./type_defs.md#listclustersrequestlistclusterspaginatetypedef)
 - [ListClustersRequestRequestTypeDef](./type_defs.md#listclustersrequestrequesttypedef)
 - [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)
+- [ListContainerInstancesRequestListContainerInstancesPaginateTypeDef](./type_defs.md#listcontainerinstancesrequestlistcontainerinstancespaginatetypedef)
 - [ListContainerInstancesRequestRequestTypeDef](./type_defs.md#listcontainerinstancesrequestrequesttypedef)
 - [ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef)
+- [ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef)
 - [ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef)
 - [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
+- [ListTaskDefinitionFamiliesRequestListTaskDefinitionFamiliesPaginateTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestlisttaskdefinitionfamiliespaginatetypedef)
 - [ListTaskDefinitionFamiliesRequestRequestTypeDef](./type_defs.md#listtaskdefinitionfamiliesrequestrequesttypedef)
 - [ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef)
+- [ListTaskDefinitionsRequestListTaskDefinitionsPaginateTypeDef](./type_defs.md#listtaskdefinitionsrequestlisttaskdefinitionspaginatetypedef)
 - [ListTaskDefinitionsRequestRequestTypeDef](./type_defs.md#listtaskdefinitionsrequestrequesttypedef)
 - [ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef)
+- [ListTasksRequestListTasksPaginateTypeDef](./type_defs.md#listtasksrequestlisttaskspaginatetypedef)
 - [ListTasksRequestRequestTypeDef](./type_defs.md#listtasksrequestrequesttypedef)
 - [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef)
 - [LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)
@@ -502,3 +413,4 @@ from mypy_boto3_ecs.type_defs import AttachmentStateChangeTypeDef, ...
 - [VolumeFromTypeDef](./type_defs.md#volumefromtypedef)
 - [VolumeTypeDef](./type_defs.md#volumetypedef)
 - [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+

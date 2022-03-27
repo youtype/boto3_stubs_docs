@@ -1,42 +1,20 @@
-<a id="type-annotations-for-boto3-migrationhubrefactorspaces-module"></a>
-
-# Type annotations for boto3 MigrationHubRefactorSpaces module
+#  MigrationHubRefactorSpaces module
 
 > [Index](../README.md) > MigrationHubRefactorSpaces
 
-Auto-generated documentation for
-[MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
-type annotations stubs module
-[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+!!! note ""
 
-- [Type annotations for boto3 MigrationHubRefactorSpaces module](#type-annotations-for-boto3-migrationhubrefactorspaces-module)
-  - [How to install](#how-to-install)
-    - [VSCode extension](#vscode-extension)
-    - [From PyPI with pip](#from-pypi-with-pip)
-  - [How to uninstall](#how-to-uninstall)
-  - [Usage](#usage)
-  - [MigrationHubRefactorSpacesClient](#migrationhubrefactorspacesclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
-
-<a id="how-to-install"></a>
+    Auto-generated documentation for [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
+    type annotations stubs module [mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 ## How to install
 
-<a id="vscode-extension"></a>
-
 ### VSCode extension
 
-Add
-[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+Add [AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
 extension to your VSCode and run `AWS boto3: Quick Start` command.
 
 Click `Modify` and select `boto3 common` and `MigrationHubRefactorSpaces`.
-
-<a id="from-pypi-with-pip"></a>
 
 ### From PyPI with pip
 
@@ -56,7 +34,7 @@ python -m pip install 'boto3-stubs-lite[migration-hub-refactor-spaces]'
 python -m pip install mypy-boto3-migration-hub-refactor-spaces
 ```
 
-<a id="how-to-uninstall"></a>
+
 
 ## How to uninstall
 
@@ -64,84 +42,37 @@ python -m pip install mypy-boto3-migration-hub-refactor-spaces
 python -m pip uninstall -y mypy-boto3-migration-hub-refactor-spaces
 ```
 
-<a id="usage"></a>
-
 ## Usage
 
-Code samples can be found [here](./usage.md).
-
-<a id="migrationhubrefactorspacesclient"></a>
+Code samples can be found in [Examples](./usage.md).
 
 ## MigrationHubRefactorSpacesClient
 
-Type annotations for `boto3.client("migration-hub-refactor-spaces")` as
-[MigrationHubRefactorSpacesClient](./client.md)
+Type annotations and code completion for  `#!python boto3.client("migration-hub-refactor-spaces")` as [MigrationHubRefactorSpacesClient](./client.md)
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Client)
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
 from mypy_boto3_migration_hub_refactor_spaces.client import MigrationHubRefactorSpacesClient
+
+def get_client() -> MigrationHubRefactorSpacesClient:
+    return Session().cleint("migration-hub-refactor-spaces")
 ```
 
-<a id="methods"></a>
-
-### Methods
-
-- [can_paginate](./client.md#can_paginate)
-- [create_application](./client.md#create_application)
-- [create_environment](./client.md#create_environment)
-- [create_route](./client.md#create_route)
-- [create_service](./client.md#create_service)
-- [delete_application](./client.md#delete_application)
-- [delete_environment](./client.md#delete_environment)
-- [delete_resource_policy](./client.md#delete_resource_policy)
-- [delete_route](./client.md#delete_route)
-- [delete_service](./client.md#delete_service)
-- [exceptions](./client.md#exceptions)
-- [generate_presigned_url](./client.md#generate_presigned_url)
-- [get_application](./client.md#get_application)
-- [get_environment](./client.md#get_environment)
-- [get_paginator](./client.md#get_paginator)
-- [get_resource_policy](./client.md#get_resource_policy)
-- [get_route](./client.md#get_route)
-- [get_service](./client.md#get_service)
-- [list_applications](./client.md#list_applications)
-- [list_environment_vpcs](./client.md#list_environment_vpcs)
-- [list_environments](./client.md#list_environments)
-- [list_routes](./client.md#list_routes)
-- [list_services](./client.md#list_services)
-- [list_tags_for_resource](./client.md#list_tags_for_resource)
-- [put_resource_policy](./client.md#put_resource_policy)
-- [tag_resource](./client.md#tag_resource)
-- [untag_resource](./client.md#untag_resource)
-
-<a id="exceptions"></a>
-
-### Exceptions
-
-MigrationHubRefactorSpacesClient [exceptions](./client.md#exceptions)
-
-- AccessDeniedException
-- ClientError
-- ConflictException
-- InternalServerException
-- InvalidResourcePolicyException
-- ResourceNotFoundException
-- ServiceQuotaExceededException
-- ThrottlingException
-- ValidationException
-
-<a id="paginators"></a>
 
 ## Paginators
 
-Type annotations for [paginators](./paginators.md) from
-`boto3.client("migration-hub-refactor-spaces").get_paginator("...")`.
+Type annotations and code completion for [paginators](./paginators.md)
+from `#!python boto3.client("migration-hub-refactor-spaces").get_paginator("...")`.
 
-Can be used directly:
+```python title="Usage example"
+from boto3.session import Session
 
-```python
-from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator, ...
+from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator
+
+def get_list_applications_paginator() -> ListApplicationsPaginator:
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_applications"))
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
@@ -150,16 +81,23 @@ from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsP
 - [ListRoutesPaginator](./paginators.md#listroutespaginator)
 - [ListServicesPaginator](./paginators.md#listservicespaginator)
 
-<a id="literals"></a>
+
+
+
+
+
+
+
 
 ## Literals
 
-Type annotations for [literals](./literals.md) used in methods and schema.
+Type annotations for [literals](./literals.md) used in methods and schemas.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_migration_hub_refactor_spaces.literals import ApiGatewayEndpointTypeType
 
-```python
-from mypy_boto3_migration_hub_refactor_spaces.literals import ApiGatewayEndpointTypeType, ...
+def get_value() -> ApiGatewayEndpointTypeType:
+    return "PRIVATE"
 ```
 
 - [ApiGatewayEndpointTypeType](./literals.md#apigatewayendpointtypetype)
@@ -185,17 +123,20 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ApiGatewayEndpoint
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
-<a id="typed-dictionaries"></a>
+
+
 
 ## Typed dictionaries
 
-Type annotations for [typed dictionaries](./type_defs.md) used in methods and
-schema.
+Type annotations for [typed dictionaries](./type_defs.md) used in methods and schema.
 
-Can be used directly:
+```python title="Usage example"
+from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyConfigTypeDef
 
-```python
-from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyConfigTypeDef, ...
+def get_value() -> ApiGatewayProxyConfigTypeDef:
+    return {
+        "ApiGatewayId": ...,
+    }
 ```
 
 - [ApiGatewayProxyConfigTypeDef](./type_defs.md#apigatewayproxyconfigtypedef)
@@ -235,14 +176,19 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyCo
 - [LambdaEndpointConfigTypeDef](./type_defs.md#lambdaendpointconfigtypedef)
 - [LambdaEndpointInputTypeDef](./type_defs.md#lambdaendpointinputtypedef)
 - [LambdaEndpointSummaryTypeDef](./type_defs.md#lambdaendpointsummarytypedef)
+- [ListApplicationsRequestListApplicationsPaginateTypeDef](./type_defs.md#listapplicationsrequestlistapplicationspaginatetypedef)
 - [ListApplicationsRequestRequestTypeDef](./type_defs.md#listapplicationsrequestrequesttypedef)
 - [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)
+- [ListEnvironmentVpcsRequestListEnvironmentVpcsPaginateTypeDef](./type_defs.md#listenvironmentvpcsrequestlistenvironmentvpcspaginatetypedef)
 - [ListEnvironmentVpcsRequestRequestTypeDef](./type_defs.md#listenvironmentvpcsrequestrequesttypedef)
 - [ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef)
+- [ListEnvironmentsRequestListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsrequestlistenvironmentspaginatetypedef)
 - [ListEnvironmentsRequestRequestTypeDef](./type_defs.md#listenvironmentsrequestrequesttypedef)
 - [ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef)
+- [ListRoutesRequestListRoutesPaginateTypeDef](./type_defs.md#listroutesrequestlistroutespaginatetypedef)
 - [ListRoutesRequestRequestTypeDef](./type_defs.md#listroutesrequestrequesttypedef)
 - [ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef)
+- [ListServicesRequestListServicesPaginateTypeDef](./type_defs.md#listservicesrequestlistservicespaginatetypedef)
 - [ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef)
 - [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)
 - [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
@@ -258,3 +204,4 @@ from mypy_boto3_migration_hub_refactor_spaces.type_defs import ApiGatewayProxyCo
 - [UrlEndpointConfigTypeDef](./type_defs.md#urlendpointconfigtypedef)
 - [UrlEndpointInputTypeDef](./type_defs.md#urlendpointinputtypedef)
 - [UrlEndpointSummaryTypeDef](./type_defs.md#urlendpointsummarytypedef)
+

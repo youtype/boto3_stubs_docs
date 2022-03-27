@@ -1,70 +1,71 @@
-<a id="examples-for-boto3-route53recoverycluster-module"></a>
-
-# Examples for boto3 Route53RecoveryCluster module
+# Examples
 
 > [Index](../README.md) > [Route53RecoveryCluster](./README.md) > Examples
 
-- [Examples for boto3 Route53RecoveryCluster module](#examples-for-boto3-route53recoverycluster-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
+    type annotations stubs module [mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[route53-recovery-cluster]` package installed.
 
-Write your `Route53RecoveryCluster` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `Route53RecoveryCluster` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type Route53RecoveryClusterClient
-# and provides type checking and code completion
-client = session.client("route53-recovery-cluster")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
-```
 
-<a id="explicit-type-annotations"></a>
+    session = Session()
+
+    client = session.client("route53-recovery-cluster")  # (1)
+    result = client.get_routing_control_state()  # (2)
+    ```
+
+    1. client: [Route53RecoveryClusterClient](./client.md)
+    2. result: [:material-code-braces: GetRoutingControlStateResponseTypeDef](./type_defs.md#getroutingcontrolstateresponsetypedef) 
+
+
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[route53-recovery-cluster]` or a standalone
-`mypy_boto3_route53_recovery_cluster` package, you have to explicitly specify
-`client: Route53RecoveryClusterClient` type annotation.
+With `boto3-stubs-lite[route53-recovery-cluster]`
+or a standalone `mypy_boto3_route53_recovery_cluster` package, you have to explicitly specify `client: Route53RecoveryClusterClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
+=== "Client"
+
+    ```python title="Client usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_route53_recovery_cluster.client import Route53RecoveryClusterClient
+    from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateResponseTypeDef
+    from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlStateRequestRequestTypeDef
 
 
-from mypy_boto3_route53_recovery_cluster.type_defs import bool
+    session = Session()
+
+    client: Route53RecoveryClusterClient = session.client("route53-recovery-cluster")
+
+    kwargs: GetRoutingControlStateRequestRequestTypeDef = {...}
+    result: GetRoutingControlStateResponseTypeDef = client.get_routing_control_state(**kwargs)
+    ```
 
 
 
-session = boto3.Session()
 
-client: Route53RecoveryClusterClient = session.client("route53-recovery-cluster")
 
-result: bool = client.can_paginate()
-```
+

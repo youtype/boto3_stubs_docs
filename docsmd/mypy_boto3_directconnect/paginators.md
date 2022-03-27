@@ -1,29 +1,18 @@
-<a id="paginators-for-boto3-directconnect-module"></a>
-
-# Paginators for boto3 DirectConnect module
+# Paginators
 
 > [Index](../README.md) > [DirectConnect](./README.md) > Paginators
 
-Auto-generated documentation for
-[DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
-type annotations stubs module
-[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+!!! note ""
 
-- [Paginators for boto3 DirectConnect module](#paginators-for-boto3-directconnect-module)
-  - [DescribeDirectConnectGatewayAssociationsPaginator](#describedirectconnectgatewayassociationspaginator)
-  - [DescribeDirectConnectGatewayAttachmentsPaginator](#describedirectconnectgatewayattachmentspaginator)
-  - [DescribeDirectConnectGatewaysPaginator](#describedirectconnectgatewayspaginator)
-
-<a id="describedirectconnectgatewayassociationspaginator"></a>
+    Auto-generated documentation for [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
+    type annotations stubs module [mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 ## DescribeDirectConnectGatewayAssociationsPaginator
 
-Type annotations for
-`boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_associations")`.
+Type annotations and code completion for `#!python boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAssociationsPaginator
@@ -32,32 +21,43 @@ def get_describe_direct_connect_gateway_associations_paginator() -> DescribeDire
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_associations")
 ```
 
-Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAssociations)
 
-Arguments for `DescribeDirectConnectGatewayAssociationsPaginator.paginate`
-method:
+### paginate
 
-- `associationId`: `str`
-- `associatedGatewayId`: `str`
-- `directConnectGatewayId`: `str`
-- `virtualGatewayId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDirectConnectGatewayAssociationsPaginator.paginate` method.
 
-`DescribeDirectConnectGatewayAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    associationId: str = ...,
+    associatedGatewayId: str = ...,
+    directConnectGatewayId: str = ...,
+    virtualGatewayId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDirectConnectGatewayAssociationsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describedirectconnectgatewayattachmentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef = {  # (1)
+    "associationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDirectConnectGatewayAssociationsRequestDescribeDirectConnectGatewayAssociationsPaginateTypeDef](./type_defs.md#describedirectconnectgatewayassociationsrequestdescribedirectconnectgatewayassociationspaginatetypedef) 
 ## DescribeDirectConnectGatewayAttachmentsPaginator
 
-Type annotations for
-`boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")`.
+Type annotations and code completion for `#!python boto3.client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewayAttachmentsPaginator
@@ -66,30 +66,41 @@ def get_describe_direct_connect_gateway_attachments_paginator() -> DescribeDirec
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateway_attachments")
 ```
 
-Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGatewayAttachments)
 
-Arguments for `DescribeDirectConnectGatewayAttachmentsPaginator.paginate`
-method:
+### paginate
 
-- `directConnectGatewayId`: `str`
-- `virtualInterfaceId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDirectConnectGatewayAttachmentsPaginator.paginate` method.
 
-`DescribeDirectConnectGatewayAttachmentsPaginator.paginate` returns
-`_PageIterator`\[[DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    directConnectGatewayId: str = ...,
+    virtualInterfaceId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDirectConnectGatewayAttachmentsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describedirectconnectgatewayspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef = {  # (1)
+    "directConnectGatewayId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDirectConnectGatewayAttachmentsRequestDescribeDirectConnectGatewayAttachmentsPaginateTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsrequestdescribedirectconnectgatewayattachmentspaginatetypedef) 
 ## DescribeDirectConnectGatewaysPaginator
 
-Type annotations for
-`boto3.client("directconnect").get_paginator("describe_direct_connect_gateways")`.
+Type annotations and code completion for `#!python boto3.client("directconnect").get_paginator("describe_direct_connect_gateways")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_directconnect.paginator import DescribeDirectConnectGatewaysPaginator
@@ -98,14 +109,31 @@ def get_describe_direct_connect_gateways_paginator() -> DescribeDirectConnectGat
     return Session().client("directconnect").get_paginator("describe_direct_connect_gateways")
 ```
 
-Boto3 documentation:
-[DirectConnect.Paginator.DescribeDirectConnectGateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Paginator.DescribeDirectConnectGateways)
 
-Arguments for `DescribeDirectConnectGatewaysPaginator.paginate` method:
+### paginate
 
-- `directConnectGatewayId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeDirectConnectGatewaysPaginator.paginate` method.
 
-`DescribeDirectConnectGatewaysPaginator.paginate` returns
-`_PageIterator`\[[DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    directConnectGatewayId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeDirectConnectGatewaysResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef = {  # (1)
+    "directConnectGatewayId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeDirectConnectGatewaysRequestDescribeDirectConnectGatewaysPaginateTypeDef](./type_defs.md#describedirectconnectgatewaysrequestdescribedirectconnectgatewayspaginatetypedef) 

@@ -1,375 +1,481 @@
-<a id="typed-dictionaries-for-boto3-simpledb-module"></a>
-
-# Typed dictionaries for boto3 SimpleDB module
+# Typed dictionaries
 
 > [Index](../README.md) > [SimpleDB](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
-type annotations stubs module
-[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
+!!! note ""
 
-- [Typed dictionaries for boto3 SimpleDB module](#typed-dictionaries-for-boto3-simpledb-module)
-  - [AttributeTypeDef](#attributetypedef)
-  - [BatchDeleteAttributesRequestRequestTypeDef](#batchdeleteattributesrequestrequesttypedef)
-  - [BatchPutAttributesRequestRequestTypeDef](#batchputattributesrequestrequesttypedef)
-  - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
-  - [DeletableItemTypeDef](#deletableitemtypedef)
-  - [DeleteAttributesRequestRequestTypeDef](#deleteattributesrequestrequesttypedef)
-  - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
-  - [DomainMetadataRequestRequestTypeDef](#domainmetadatarequestrequesttypedef)
-  - [DomainMetadataResultTypeDef](#domainmetadataresulttypedef)
-  - [GetAttributesRequestRequestTypeDef](#getattributesrequestrequesttypedef)
-  - [GetAttributesResultTypeDef](#getattributesresulttypedef)
-  - [ItemTypeDef](#itemtypedef)
-  - [ListDomainsRequestRequestTypeDef](#listdomainsrequestrequesttypedef)
-  - [ListDomainsResultTypeDef](#listdomainsresulttypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [PutAttributesRequestRequestTypeDef](#putattributesrequestrequesttypedef)
-  - [ReplaceableAttributeTypeDef](#replaceableattributetypedef)
-  - [ReplaceableItemTypeDef](#replaceableitemtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [SelectRequestRequestTypeDef](#selectrequestrequesttypedef)
-  - [SelectResultTypeDef](#selectresulttypedef)
-  - [UpdateConditionTypeDef](#updateconditiontypedef)
-
-<a id="attributetypedef"></a>
+    Auto-generated documentation for [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
+    type annotations stubs module [mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 ## AttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import AttributeTypeDef
+
+def get_value() -> AttributeTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `AlternateNameEncoding`: `str`
-- `AlternateValueEncoding`: `str`
-
-<a id="batchdeleteattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class AttributeTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    AlternateNameEncoding: NotRequired[str],
+    AlternateValueEncoding: NotRequired[str],
+```
 
 ## BatchDeleteAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import BatchDeleteAttributesRequestRequestTypeDef
+
+def get_value() -> BatchDeleteAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchDeleteAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Items: Sequence[DeletableItemTypeDef],  # (1)
+```
 
-- `DomainName`: `str`
-- `Items`:
-  `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
-
-<a id="batchputattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: DeletableItemTypeDef](./type_defs.md#deletableitemtypedef) 
 ## BatchPutAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import BatchPutAttributesRequestRequestTypeDef
+
+def get_value() -> BatchPutAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "Items": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class BatchPutAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    Items: Sequence[ReplaceableItemTypeDef],  # (1)
+```
 
-- `DomainName`: `str`
-- `Items`:
-  `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
-
-<a id="createdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef) 
 ## CreateDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import CreateDomainRequestRequestTypeDef
+
+def get_value() -> CreateDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="deletableitemtypedef"></a>
+```python title="Definition"
+class CreateDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DeletableItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import DeletableItemTypeDef
+
+def get_value() -> DeletableItemTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeletableItemTypeDef(TypedDict):
+    Name: str,
+    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+```
 
-- `Name`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-
-<a id="deleteattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
 ## DeleteAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import DeleteAttributesRequestRequestTypeDef
+
+def get_value() -> DeleteAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ItemName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ItemName: str,
+    Attributes: NotRequired[Sequence[AttributeTypeDef]],  # (1)
+    Expected: NotRequired[UpdateConditionTypeDef],  # (2)
+```
 
-- `DomainName`: `str`
-- `ItemName`: `str`
-
-Optional fields:
-
-- `Attributes`:
-  `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
-
-<a id="deletedomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 ## DeleteDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import DeleteDomainRequestRequestTypeDef
+
+def get_value() -> DeleteDomainRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="domainmetadatarequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteDomainRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DomainMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import DomainMetadataRequestRequestTypeDef
+
+def get_value() -> DomainMetadataRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-
-<a id="domainmetadataresulttypedef"></a>
+```python title="Definition"
+class DomainMetadataRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+```
 
 ## DomainMetadataResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import DomainMetadataResultTypeDef
+
+def get_value() -> DomainMetadataResultTypeDef:
+    return {
+        "ItemCount": ...,
+        "ItemNamesSizeBytes": ...,
+        "AttributeNameCount": ...,
+        "AttributeNamesSizeBytes": ...,
+        "AttributeValueCount": ...,
+        "AttributeValuesSizeBytes": ...,
+        "Timestamp": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DomainMetadataResultTypeDef(TypedDict):
+    ItemCount: int,
+    ItemNamesSizeBytes: int,
+    AttributeNameCount: int,
+    AttributeNamesSizeBytes: int,
+    AttributeValueCount: int,
+    AttributeValuesSizeBytes: int,
+    Timestamp: int,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ItemCount`: `int`
-- `ItemNamesSizeBytes`: `int`
-- `AttributeNameCount`: `int`
-- `AttributeNamesSizeBytes`: `int`
-- `AttributeValueCount`: `int`
-- `AttributeValuesSizeBytes`: `int`
-- `Timestamp`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import GetAttributesRequestRequestTypeDef
+
+def get_value() -> GetAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ItemName": ...,
+    }
 ```
 
-Required fields:
-
-- `DomainName`: `str`
-- `ItemName`: `str`
-
-Optional fields:
-
-- `AttributeNames`: `Sequence`\[`str`\]
-- `ConsistentRead`: `bool`
-
-<a id="getattributesresulttypedef"></a>
+```python title="Definition"
+class GetAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ItemName: str,
+    AttributeNames: NotRequired[Sequence[str]],
+    ConsistentRead: NotRequired[bool],
+```
 
 ## GetAttributesResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import GetAttributesResultTypeDef
+
+def get_value() -> GetAttributesResultTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetAttributesResultTypeDef(TypedDict):
+    Attributes: List[AttributeTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="itemtypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ItemTypeDef
+
+def get_value() -> ItemTypeDef:
+    return {
+        "Name": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ItemTypeDef(TypedDict):
+    Name: str,
+    Attributes: List[AttributeTypeDef],  # (1)
+    AlternateNameEncoding: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+## ListDomainsRequestListDomainsPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import ListDomainsRequestListDomainsPaginateTypeDef
 
-- `AlternateNameEncoding`: `str`
+def get_value() -> ListDomainsRequestListDomainsPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
 
-<a id="listdomainsrequestrequesttypedef"></a>
+```python title="Definition"
+class ListDomainsRequestListDomainsPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ListDomainsRequestRequestTypeDef
+
+def get_value() -> ListDomainsRequestRequestTypeDef:
+    return {
+        "MaxNumberOfDomains": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxNumberOfDomains`: `int`
-- `NextToken`: `str`
-
-<a id="listdomainsresulttypedef"></a>
+```python title="Definition"
+class ListDomainsRequestRequestTypeDef(TypedDict):
+    MaxNumberOfDomains: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListDomainsResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ListDomainsResultTypeDef
+
+def get_value() -> ListDomainsResultTypeDef:
+    return {
+        "DomainNames": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDomainsResultTypeDef(TypedDict):
+    DomainNames: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `DomainNames`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="paginatorconfigtypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="putattributesrequestrequesttypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## PutAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import PutAttributesRequestRequestTypeDef
+
+def get_value() -> PutAttributesRequestRequestTypeDef:
+    return {
+        "DomainName": ...,
+        "ItemName": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutAttributesRequestRequestTypeDef(TypedDict):
+    DomainName: str,
+    ItemName: str,
+    Attributes: Sequence[ReplaceableAttributeTypeDef],  # (1)
+    Expected: NotRequired[UpdateConditionTypeDef],  # (2)
+```
 
-- `DomainName`: `str`
-- `ItemName`: `str`
-- `Attributes`:
-  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
-
-Optional fields:
-
-- `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
-
-<a id="replaceableattributetypedef"></a>
-
+1. See [:material-code-braces: ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef) 
+2. See [:material-code-braces: UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef) 
 ## ReplaceableAttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ReplaceableAttributeTypeDef
+
+def get_value() -> ReplaceableAttributeTypeDef:
+    return {
+        "Name": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-Optional fields:
-
-- `Replace`: `bool`
-
-<a id="replaceableitemtypedef"></a>
+```python title="Definition"
+class ReplaceableAttributeTypeDef(TypedDict):
+    Name: str,
+    Value: str,
+    Replace: NotRequired[bool],
+```
 
 ## ReplaceableItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ReplaceableItemTypeDef
+
+def get_value() -> ReplaceableItemTypeDef:
+    return {
+        "Name": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReplaceableItemTypeDef(TypedDict):
+    Name: str,
+    Attributes: Sequence[ReplaceableAttributeTypeDef],  # (1)
+```
 
-- `Name`: `str`
-- `Attributes`:
-  `Sequence`\[[ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef)\]
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ReplaceableAttributeTypeDef](./type_defs.md#replaceableattributetypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="selectrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## SelectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import SelectRequestRequestTypeDef
+
+def get_value() -> SelectRequestRequestTypeDef:
+    return {
+        "SelectExpression": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectRequestRequestTypeDef(TypedDict):
+    SelectExpression: str,
+    NextToken: NotRequired[str],
+    ConsistentRead: NotRequired[bool],
+```
 
-- `SelectExpression`: `str`
+## SelectRequestSelectPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_sdb.type_defs import SelectRequestSelectPaginateTypeDef
 
-- `NextToken`: `str`
-- `ConsistentRead`: `bool`
+def get_value() -> SelectRequestSelectPaginateTypeDef:
+    return {
+        "SelectExpression": ...,
+    }
+```
 
-<a id="selectresulttypedef"></a>
+```python title="Definition"
+class SelectRequestSelectPaginateTypeDef(TypedDict):
+    SelectExpression: str,
+    ConsistentRead: NotRequired[bool],
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
 
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SelectResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import SelectResultTypeDef
+
+def get_value() -> SelectResultTypeDef:
+    return {
+        "Items": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SelectResultTypeDef(TypedDict):
+    Items: List[ItemTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Items`: `List`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateconditiontypedef"></a>
-
+1. See [:material-code-braces: ItemTypeDef](./type_defs.md#itemtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateConditionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_sdb.type_defs import UpdateConditionTypeDef
+
+def get_value() -> UpdateConditionTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UpdateConditionTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+    Exists: NotRequired[bool],
+```
 
-- `Name`: `str`
-- `Value`: `str`
-- `Exists`: `bool`

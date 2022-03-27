@@ -1,1873 +1,2224 @@
-<a id="typed-dictionaries-for-boto3-resiliencehub-module"></a>
-
-# Typed dictionaries for boto3 ResilienceHub module
+# Typed dictionaries
 
 > [Index](../README.md) > [ResilienceHub](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
-type annotations stubs module
-[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+!!! note ""
 
-- [Typed dictionaries for boto3 ResilienceHub module](#typed-dictionaries-for-boto3-resiliencehub-module)
-  - [AddDraftAppVersionResourceMappingsRequestRequestTypeDef](#adddraftappversionresourcemappingsrequestrequesttypedef)
-  - [AddDraftAppVersionResourceMappingsResponseTypeDef](#adddraftappversionresourcemappingsresponsetypedef)
-  - [AlarmRecommendationTypeDef](#alarmrecommendationtypedef)
-  - [AppAssessmentSummaryTypeDef](#appassessmentsummarytypedef)
-  - [AppAssessmentTypeDef](#appassessmenttypedef)
-  - [AppComponentComplianceTypeDef](#appcomponentcompliancetypedef)
-  - [AppComponentTypeDef](#appcomponenttypedef)
-  - [AppSummaryTypeDef](#appsummarytypedef)
-  - [AppTypeDef](#apptypedef)
-  - [AppVersionSummaryTypeDef](#appversionsummarytypedef)
-  - [ComponentRecommendationTypeDef](#componentrecommendationtypedef)
-  - [ConfigRecommendationTypeDef](#configrecommendationtypedef)
-  - [CostTypeDef](#costtypedef)
-  - [CreateAppRequestRequestTypeDef](#createapprequestrequesttypedef)
-  - [CreateAppResponseTypeDef](#createappresponsetypedef)
-  - [CreateRecommendationTemplateRequestRequestTypeDef](#createrecommendationtemplaterequestrequesttypedef)
-  - [CreateRecommendationTemplateResponseTypeDef](#createrecommendationtemplateresponsetypedef)
-  - [CreateResiliencyPolicyRequestRequestTypeDef](#createresiliencypolicyrequestrequesttypedef)
-  - [CreateResiliencyPolicyResponseTypeDef](#createresiliencypolicyresponsetypedef)
-  - [DeleteAppAssessmentRequestRequestTypeDef](#deleteappassessmentrequestrequesttypedef)
-  - [DeleteAppAssessmentResponseTypeDef](#deleteappassessmentresponsetypedef)
-  - [DeleteAppRequestRequestTypeDef](#deleteapprequestrequesttypedef)
-  - [DeleteAppResponseTypeDef](#deleteappresponsetypedef)
-  - [DeleteRecommendationTemplateRequestRequestTypeDef](#deleterecommendationtemplaterequestrequesttypedef)
-  - [DeleteRecommendationTemplateResponseTypeDef](#deleterecommendationtemplateresponsetypedef)
-  - [DeleteResiliencyPolicyRequestRequestTypeDef](#deleteresiliencypolicyrequestrequesttypedef)
-  - [DeleteResiliencyPolicyResponseTypeDef](#deleteresiliencypolicyresponsetypedef)
-  - [DescribeAppAssessmentRequestRequestTypeDef](#describeappassessmentrequestrequesttypedef)
-  - [DescribeAppAssessmentResponseTypeDef](#describeappassessmentresponsetypedef)
-  - [DescribeAppRequestRequestTypeDef](#describeapprequestrequesttypedef)
-  - [DescribeAppResponseTypeDef](#describeappresponsetypedef)
-  - [DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef](#describeappversionresourcesresolutionstatusrequestrequesttypedef)
-  - [DescribeAppVersionResourcesResolutionStatusResponseTypeDef](#describeappversionresourcesresolutionstatusresponsetypedef)
-  - [DescribeAppVersionTemplateRequestRequestTypeDef](#describeappversiontemplaterequestrequesttypedef)
-  - [DescribeAppVersionTemplateResponseTypeDef](#describeappversiontemplateresponsetypedef)
-  - [DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef](#describedraftappversionresourcesimportstatusrequestrequesttypedef)
-  - [DescribeDraftAppVersionResourcesImportStatusResponseTypeDef](#describedraftappversionresourcesimportstatusresponsetypedef)
-  - [DescribeResiliencyPolicyRequestRequestTypeDef](#describeresiliencypolicyrequestrequesttypedef)
-  - [DescribeResiliencyPolicyResponseTypeDef](#describeresiliencypolicyresponsetypedef)
-  - [DisruptionComplianceTypeDef](#disruptioncompliancetypedef)
-  - [FailurePolicyTypeDef](#failurepolicytypedef)
-  - [ImportResourcesToDraftAppVersionRequestRequestTypeDef](#importresourcestodraftappversionrequestrequesttypedef)
-  - [ImportResourcesToDraftAppVersionResponseTypeDef](#importresourcestodraftappversionresponsetypedef)
-  - [ListAlarmRecommendationsRequestRequestTypeDef](#listalarmrecommendationsrequestrequesttypedef)
-  - [ListAlarmRecommendationsResponseTypeDef](#listalarmrecommendationsresponsetypedef)
-  - [ListAppAssessmentsRequestRequestTypeDef](#listappassessmentsrequestrequesttypedef)
-  - [ListAppAssessmentsResponseTypeDef](#listappassessmentsresponsetypedef)
-  - [ListAppComponentCompliancesRequestRequestTypeDef](#listappcomponentcompliancesrequestrequesttypedef)
-  - [ListAppComponentCompliancesResponseTypeDef](#listappcomponentcompliancesresponsetypedef)
-  - [ListAppComponentRecommendationsRequestRequestTypeDef](#listappcomponentrecommendationsrequestrequesttypedef)
-  - [ListAppComponentRecommendationsResponseTypeDef](#listappcomponentrecommendationsresponsetypedef)
-  - [ListAppVersionResourceMappingsRequestRequestTypeDef](#listappversionresourcemappingsrequestrequesttypedef)
-  - [ListAppVersionResourceMappingsResponseTypeDef](#listappversionresourcemappingsresponsetypedef)
-  - [ListAppVersionResourcesRequestRequestTypeDef](#listappversionresourcesrequestrequesttypedef)
-  - [ListAppVersionResourcesResponseTypeDef](#listappversionresourcesresponsetypedef)
-  - [ListAppVersionsRequestRequestTypeDef](#listappversionsrequestrequesttypedef)
-  - [ListAppVersionsResponseTypeDef](#listappversionsresponsetypedef)
-  - [ListAppsRequestRequestTypeDef](#listappsrequestrequesttypedef)
-  - [ListAppsResponseTypeDef](#listappsresponsetypedef)
-  - [ListRecommendationTemplatesRequestRequestTypeDef](#listrecommendationtemplatesrequestrequesttypedef)
-  - [ListRecommendationTemplatesResponseTypeDef](#listrecommendationtemplatesresponsetypedef)
-  - [ListResiliencyPoliciesRequestRequestTypeDef](#listresiliencypoliciesrequestrequesttypedef)
-  - [ListResiliencyPoliciesResponseTypeDef](#listresiliencypoliciesresponsetypedef)
-  - [ListSopRecommendationsRequestRequestTypeDef](#listsoprecommendationsrequestrequesttypedef)
-  - [ListSopRecommendationsResponseTypeDef](#listsoprecommendationsresponsetypedef)
-  - [ListSuggestedResiliencyPoliciesRequestRequestTypeDef](#listsuggestedresiliencypoliciesrequestrequesttypedef)
-  - [ListSuggestedResiliencyPoliciesResponseTypeDef](#listsuggestedresiliencypoliciesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListTestRecommendationsRequestRequestTypeDef](#listtestrecommendationsrequestrequesttypedef)
-  - [ListTestRecommendationsResponseTypeDef](#listtestrecommendationsresponsetypedef)
-  - [ListUnsupportedAppVersionResourcesRequestRequestTypeDef](#listunsupportedappversionresourcesrequestrequesttypedef)
-  - [ListUnsupportedAppVersionResourcesResponseTypeDef](#listunsupportedappversionresourcesresponsetypedef)
-  - [LogicalResourceIdTypeDef](#logicalresourceidtypedef)
-  - [PhysicalResourceIdTypeDef](#physicalresourceidtypedef)
-  - [PhysicalResourceTypeDef](#physicalresourcetypedef)
-  - [PublishAppVersionRequestRequestTypeDef](#publishappversionrequestrequesttypedef)
-  - [PublishAppVersionResponseTypeDef](#publishappversionresponsetypedef)
-  - [PutDraftAppVersionTemplateRequestRequestTypeDef](#putdraftappversiontemplaterequestrequesttypedef)
-  - [PutDraftAppVersionTemplateResponseTypeDef](#putdraftappversiontemplateresponsetypedef)
-  - [RecommendationDisruptionComplianceTypeDef](#recommendationdisruptioncompliancetypedef)
-  - [RecommendationItemTypeDef](#recommendationitemtypedef)
-  - [RecommendationTemplateTypeDef](#recommendationtemplatetypedef)
-  - [RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef](#removedraftappversionresourcemappingsrequestrequesttypedef)
-  - [RemoveDraftAppVersionResourceMappingsResponseTypeDef](#removedraftappversionresourcemappingsresponsetypedef)
-  - [ResiliencyPolicyTypeDef](#resiliencypolicytypedef)
-  - [ResiliencyScoreTypeDef](#resiliencyscoretypedef)
-  - [ResolveAppVersionResourcesRequestRequestTypeDef](#resolveappversionresourcesrequestrequesttypedef)
-  - [ResolveAppVersionResourcesResponseTypeDef](#resolveappversionresourcesresponsetypedef)
-  - [ResourceMappingTypeDef](#resourcemappingtypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [S3LocationTypeDef](#s3locationtypedef)
-  - [SopRecommendationTypeDef](#soprecommendationtypedef)
-  - [StartAppAssessmentRequestRequestTypeDef](#startappassessmentrequestrequesttypedef)
-  - [StartAppAssessmentResponseTypeDef](#startappassessmentresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TestRecommendationTypeDef](#testrecommendationtypedef)
-  - [UnsupportedResourceTypeDef](#unsupportedresourcetypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAppRequestRequestTypeDef](#updateapprequestrequesttypedef)
-  - [UpdateAppResponseTypeDef](#updateappresponsetypedef)
-  - [UpdateResiliencyPolicyRequestRequestTypeDef](#updateresiliencypolicyrequestrequesttypedef)
-  - [UpdateResiliencyPolicyResponseTypeDef](#updateresiliencypolicyresponsetypedef)
-
-<a id="adddraftappversionresourcemappingsrequestrequesttypedef"></a>
+    Auto-generated documentation for [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
+    type annotations stubs module [mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 ## AddDraftAppVersionResourceMappingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AddDraftAppVersionResourceMappingsRequestRequestTypeDef
+
+def get_value() -> AddDraftAppVersionResourceMappingsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "resourceMappings": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddDraftAppVersionResourceMappingsRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    resourceMappings: Sequence[ResourceMappingTypeDef],  # (1)
+```
 
-- `appArn`: `str`
-- `resourceMappings`:
-  `Sequence`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
-
-<a id="adddraftappversionresourcemappingsresponsetypedef"></a>
-
+1. See [:material-code-braces: ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef) 
 ## AddDraftAppVersionResourceMappingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AddDraftAppVersionResourceMappingsResponseTypeDef
+
+def get_value() -> AddDraftAppVersionResourceMappingsResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "resourceMappings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AddDraftAppVersionResourceMappingsResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    resourceMappings: List[ResourceMappingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `resourceMappings`:
-  `List`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="alarmrecommendationtypedef"></a>
-
+1. See [:material-code-braces: ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AlarmRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AlarmRecommendationTypeDef
+
+def get_value() -> AlarmRecommendationTypeDef:
+    return {
+        "name": ...,
+        "recommendationId": ...,
+        "referenceId": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AlarmRecommendationTypeDef(TypedDict):
+    name: str,
+    recommendationId: str,
+    referenceId: str,
+    type: AlarmTypeType,  # (2)
+    appComponentName: NotRequired[str],
+    description: NotRequired[str],
+    items: NotRequired[List[RecommendationItemTypeDef]],  # (1)
+    prerequisite: NotRequired[str],
+```
 
-- `name`: `str`
-- `recommendationId`: `str`
-- `referenceId`: `str`
-- `type`: [AlarmTypeType](./literals.md#alarmtypetype)
-
-Optional fields:
-
-- `appComponentName`: `str`
-- `description`: `str`
-- `items`:
-  `List`\[[RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef)\]
-- `prerequisite`: `str`
-
-<a id="appassessmentsummarytypedef"></a>
-
+1. See [:material-code-braces: RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef) 
+2. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
 ## AppAssessmentSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppAssessmentSummaryTypeDef
+
+def get_value() -> AppAssessmentSummaryTypeDef:
+    return {
+        "assessmentArn": ...,
+        "assessmentStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppAssessmentSummaryTypeDef(TypedDict):
+    assessmentArn: str,
+    assessmentStatus: AssessmentStatusType,  # (1)
+    appArn: NotRequired[str],
+    appVersion: NotRequired[str],
+    assessmentName: NotRequired[str],
+    complianceStatus: NotRequired[ComplianceStatusType],  # (2)
+    cost: NotRequired[CostTypeDef],  # (3)
+    endTime: NotRequired[datetime],
+    invoker: NotRequired[AssessmentInvokerType],  # (4)
+    message: NotRequired[str],
+    resiliencyScore: NotRequired[float],
+    startTime: NotRequired[datetime],
+```
 
-- `assessmentArn`: `str`
-- `assessmentStatus`:
-  [AssessmentStatusType](./literals.md#assessmentstatustype)
-
-Optional fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-- `assessmentName`: `str`
-- `complianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-- `cost`: [CostTypeDef](./type_defs.md#costtypedef)
-- `endTime`: `datetime`
-- `invoker`: [AssessmentInvokerType](./literals.md#assessmentinvokertype)
-- `message`: `str`
-- `resiliencyScore`: `float`
-- `startTime`: `datetime`
-
-<a id="appassessmenttypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+3. See [:material-code-braces: CostTypeDef](./type_defs.md#costtypedef) 
+4. See [:material-code-brackets: AssessmentInvokerType](./literals.md#assessmentinvokertype) 
 ## AppAssessmentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppAssessmentTypeDef
+
+def get_value() -> AppAssessmentTypeDef:
+    return {
+        "assessmentArn": ...,
+        "assessmentStatus": ...,
+        "invoker": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppAssessmentTypeDef(TypedDict):
+    assessmentArn: str,
+    assessmentStatus: AssessmentStatusType,  # (1)
+    invoker: AssessmentInvokerType,  # (5)
+    appArn: NotRequired[str],
+    appVersion: NotRequired[str],
+    assessmentName: NotRequired[str],
+    compliance: NotRequired[Dict[DisruptionTypeType, DisruptionComplianceTypeDef]],  # (2)
+    complianceStatus: NotRequired[ComplianceStatusType],  # (3)
+    cost: NotRequired[CostTypeDef],  # (4)
+    endTime: NotRequired[datetime],
+    message: NotRequired[str],
+    policy: NotRequired[ResiliencyPolicyTypeDef],  # (6)
+    resiliencyScore: NotRequired[ResiliencyScoreTypeDef],  # (7)
+    startTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `assessmentArn`: `str`
-- `assessmentStatus`:
-  [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `invoker`: [AssessmentInvokerType](./literals.md#assessmentinvokertype)
-
-Optional fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-- `assessmentName`: `str`
-- `compliance`: `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef)\]
-- `complianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-- `cost`: [CostTypeDef](./type_defs.md#costtypedef)
-- `endTime`: `datetime`
-- `message`: `str`
-- `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
-- `resiliencyScore`:
-  [ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef)
-- `startTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="appcomponentcompliancetypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef) 
+3. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+4. See [:material-code-braces: CostTypeDef](./type_defs.md#costtypedef) 
+5. See [:material-code-brackets: AssessmentInvokerType](./literals.md#assessmentinvokertype) 
+6. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+7. See [:material-code-braces: ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef) 
 ## AppComponentComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppComponentComplianceTypeDef
+
+def get_value() -> AppComponentComplianceTypeDef:
+    return {
+        "appComponentName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AppComponentComplianceTypeDef(TypedDict):
+    appComponentName: NotRequired[str],
+    compliance: NotRequired[Dict[DisruptionTypeType, DisruptionComplianceTypeDef]],  # (1)
+    cost: NotRequired[CostTypeDef],  # (2)
+    message: NotRequired[str],
+    resiliencyScore: NotRequired[ResiliencyScoreTypeDef],  # (3)
+    status: NotRequired[ComplianceStatusType],  # (4)
+```
 
-- `appComponentName`: `str`
-- `compliance`: `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef)\]
-- `cost`: [CostTypeDef](./type_defs.md#costtypedef)
-- `message`: `str`
-- `resiliencyScore`:
-  [ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef)
-- `status`: [ComplianceStatusType](./literals.md#compliancestatustype)
-
-<a id="appcomponenttypedef"></a>
-
+1. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef) 
+2. See [:material-code-braces: CostTypeDef](./type_defs.md#costtypedef) 
+3. See [:material-code-braces: ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef) 
+4. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 ## AppComponentTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppComponentTypeDef
+
+def get_value() -> AppComponentTypeDef:
+    return {
+        "name": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-- `type`: `str`
-
-<a id="appsummarytypedef"></a>
+```python title="Definition"
+class AppComponentTypeDef(TypedDict):
+    name: str,
+    type: str,
+```
 
 ## AppSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppSummaryTypeDef
+
+def get_value() -> AppSummaryTypeDef:
+    return {
+        "appArn": ...,
+        "creationTime": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppSummaryTypeDef(TypedDict):
+    appArn: str,
+    creationTime: datetime,
+    name: str,
+    complianceStatus: NotRequired[AppComplianceStatusTypeType],  # (1)
+    description: NotRequired[str],
+    resiliencyScore: NotRequired[float],
+```
 
-- `appArn`: `str`
-- `creationTime`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `complianceStatus`:
-  [AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype)
-- `description`: `str`
-- `resiliencyScore`: `float`
-
-<a id="apptypedef"></a>
-
+1. See [:material-code-brackets: AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype) 
 ## AppTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppTypeDef
+
+def get_value() -> AppTypeDef:
+    return {
+        "appArn": ...,
+        "creationTime": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AppTypeDef(TypedDict):
+    appArn: str,
+    creationTime: datetime,
+    name: str,
+    complianceStatus: NotRequired[AppComplianceStatusTypeType],  # (1)
+    description: NotRequired[str],
+    lastAppComplianceEvaluationTime: NotRequired[datetime],
+    lastResiliencyScoreEvaluationTime: NotRequired[datetime],
+    policyArn: NotRequired[str],
+    resiliencyScore: NotRequired[float],
+    status: NotRequired[AppStatusTypeType],  # (2)
+    tags: NotRequired[Dict[str, str]],
+```
 
-- `appArn`: `str`
-- `creationTime`: `datetime`
-- `name`: `str`
-
-Optional fields:
-
-- `complianceStatus`:
-  [AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype)
-- `description`: `str`
-- `lastAppComplianceEvaluationTime`: `datetime`
-- `lastResiliencyScoreEvaluationTime`: `datetime`
-- `policyArn`: `str`
-- `resiliencyScore`: `float`
-- `status`: [AppStatusTypeType](./literals.md#appstatustypetype)
-- `tags`: `Dict`\[`str`, `str`\]
-
-<a id="appversionsummarytypedef"></a>
-
+1. See [:material-code-brackets: AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype) 
+2. See [:material-code-brackets: AppStatusTypeType](./literals.md#appstatustypetype) 
 ## AppVersionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import AppVersionSummaryTypeDef
+
+def get_value() -> AppVersionSummaryTypeDef:
+    return {
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appVersion`: `str`
-
-<a id="componentrecommendationtypedef"></a>
+```python title="Definition"
+class AppVersionSummaryTypeDef(TypedDict):
+    appVersion: str,
+```
 
 ## ComponentRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ComponentRecommendationTypeDef
+
+def get_value() -> ComponentRecommendationTypeDef:
+    return {
+        "appComponentName": ...,
+        "configRecommendations": ...,
+        "recommendationStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ComponentRecommendationTypeDef(TypedDict):
+    appComponentName: str,
+    configRecommendations: List[ConfigRecommendationTypeDef],  # (1)
+    recommendationStatus: RecommendationComplianceStatusType,  # (2)
+```
 
-- `appComponentName`: `str`
-- `configRecommendations`:
-  `List`\[[ConfigRecommendationTypeDef](./type_defs.md#configrecommendationtypedef)\]
-- `recommendationStatus`:
-  [RecommendationComplianceStatusType](./literals.md#recommendationcompliancestatustype)
-
-<a id="configrecommendationtypedef"></a>
-
+1. See [:material-code-braces: ConfigRecommendationTypeDef](./type_defs.md#configrecommendationtypedef) 
+2. See [:material-code-brackets: RecommendationComplianceStatusType](./literals.md#recommendationcompliancestatustype) 
 ## ConfigRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ConfigRecommendationTypeDef
+
+def get_value() -> ConfigRecommendationTypeDef:
+    return {
+        "name": ...,
+        "optimizationType": ...,
+        "referenceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ConfigRecommendationTypeDef(TypedDict):
+    name: str,
+    optimizationType: ConfigRecommendationOptimizationTypeType,  # (4)
+    referenceId: str,
+    appComponentName: NotRequired[str],
+    compliance: NotRequired[Dict[DisruptionTypeType, DisruptionComplianceTypeDef]],  # (1)
+    cost: NotRequired[CostTypeDef],  # (2)
+    description: NotRequired[str],
+    haArchitecture: NotRequired[HaArchitectureType],  # (3)
+    recommendationCompliance: NotRequired[Dict[DisruptionTypeType, RecommendationDisruptionComplianceTypeDef]],  # (5)
+    suggestedChanges: NotRequired[List[str]],
+```
 
-- `name`: `str`
-- `optimizationType`:
-  [ConfigRecommendationOptimizationTypeType](./literals.md#configrecommendationoptimizationtypetype)
-- `referenceId`: `str`
-
-Optional fields:
-
-- `appComponentName`: `str`
-- `compliance`: `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef)\]
-- `cost`: [CostTypeDef](./type_defs.md#costtypedef)
-- `description`: `str`
-- `haArchitecture`: [HaArchitectureType](./literals.md#haarchitecturetype)
-- `recommendationCompliance`:
-  `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [RecommendationDisruptionComplianceTypeDef](./type_defs.md#recommendationdisruptioncompliancetypedef)\]
-- `suggestedChanges`: `List`\[`str`\]
-
-<a id="costtypedef"></a>
-
+1. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: DisruptionComplianceTypeDef](./type_defs.md#disruptioncompliancetypedef) 
+2. See [:material-code-braces: CostTypeDef](./type_defs.md#costtypedef) 
+3. See [:material-code-brackets: HaArchitectureType](./literals.md#haarchitecturetype) 
+4. See [:material-code-brackets: ConfigRecommendationOptimizationTypeType](./literals.md#configrecommendationoptimizationtypetype) 
+5. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: RecommendationDisruptionComplianceTypeDef](./type_defs.md#recommendationdisruptioncompliancetypedef) 
 ## CostTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CostTypeDef
+
+def get_value() -> CostTypeDef:
+    return {
+        "amount": ...,
+        "currency": ...,
+        "frequency": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CostTypeDef(TypedDict):
+    amount: float,
+    currency: str,
+    frequency: CostFrequencyType,  # (1)
+```
 
-- `amount`: `float`
-- `currency`: `str`
-- `frequency`: [CostFrequencyType](./literals.md#costfrequencytype)
-
-<a id="createapprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: CostFrequencyType](./literals.md#costfrequencytype) 
 ## CreateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateAppRequestRequestTypeDef
+
+def get_value() -> CreateAppRequestRequestTypeDef:
+    return {
+        "name": ...,
+    }
 ```
 
-Required fields:
-
-- `name`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `description`: `str`
-- `policyArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createappresponsetypedef"></a>
+```python title="Definition"
+class CreateAppRequestRequestTypeDef(TypedDict):
+    name: str,
+    clientToken: NotRequired[str],
+    description: NotRequired[str],
+    policyArn: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateAppResponseTypeDef
+
+def get_value() -> CreateAppResponseTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAppResponseTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createrecommendationtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRecommendationTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateRecommendationTemplateRequestRequestTypeDef
+
+def get_value() -> CreateRecommendationTemplateRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+        "name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRecommendationTemplateRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    name: str,
+    bucketName: NotRequired[str],
+    clientToken: NotRequired[str],
+    format: NotRequired[TemplateFormatType],  # (1)
+    recommendationIds: NotRequired[Sequence[str]],
+    recommendationTypes: NotRequired[Sequence[RenderRecommendationTypeType]],  # (2)
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `assessmentArn`: `str`
-- `name`: `str`
-
-Optional fields:
-
-- `bucketName`: `str`
-- `clientToken`: `str`
-- `format`: [TemplateFormatType](./literals.md#templateformattype)
-- `recommendationIds`: `Sequence`\[`str`\]
-- `recommendationTypes`:
-  `Sequence`\[[RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype)\]
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createrecommendationtemplateresponsetypedef"></a>
-
+1. See [:material-code-brackets: TemplateFormatType](./literals.md#templateformattype) 
+2. See [:material-code-brackets: RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype) 
 ## CreateRecommendationTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateRecommendationTemplateResponseTypeDef
+
+def get_value() -> CreateRecommendationTemplateResponseTypeDef:
+    return {
+        "recommendationTemplate": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRecommendationTemplateResponseTypeDef(TypedDict):
+    recommendationTemplate: RecommendationTemplateTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recommendationTemplate`:
-  [RecommendationTemplateTypeDef](./type_defs.md#recommendationtemplatetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createresiliencypolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendationTemplateTypeDef](./type_defs.md#recommendationtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateResiliencyPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateResiliencyPolicyRequestRequestTypeDef
+
+def get_value() -> CreateResiliencyPolicyRequestRequestTypeDef:
+    return {
+        "policy": ...,
+        "policyName": ...,
+        "tier": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResiliencyPolicyRequestRequestTypeDef(TypedDict):
+    policy: Mapping[DisruptionTypeType, FailurePolicyTypeDef],  # (1)
+    policyName: str,
+    tier: ResiliencyPolicyTierType,  # (2)
+    clientToken: NotRequired[str],
+    dataLocationConstraint: NotRequired[DataLocationConstraintType],  # (3)
+    policyDescription: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
-- `policy`: `Mapping`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef)\]
-- `policyName`: `str`
-- `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
-
-Optional fields:
-
-- `clientToken`: `str`
-- `dataLocationConstraint`:
-  [DataLocationConstraintType](./literals.md#datalocationconstrainttype)
-- `policyDescription`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createresiliencypolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
+2. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
+3. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
 ## CreateResiliencyPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import CreateResiliencyPolicyResponseTypeDef
+
+def get_value() -> CreateResiliencyPolicyResponseTypeDef:
+    return {
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateResiliencyPolicyResponseTypeDef(TypedDict):
+    policy: ResiliencyPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteappassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAppAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteAppAssessmentRequestRequestTypeDef
+
+def get_value() -> DeleteAppAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteappassessmentresponsetypedef"></a>
+```python title="Definition"
+class DeleteAppAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteAppAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteAppAssessmentResponseTypeDef
+
+def get_value() -> DeleteAppAssessmentResponseTypeDef:
+    return {
+        "assessmentArn": ...,
+        "assessmentStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAppAssessmentResponseTypeDef(TypedDict):
+    assessmentArn: str,
+    assessmentStatus: AssessmentStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentArn`: `str`
-- `assessmentStatus`:
-  [AssessmentStatusType](./literals.md#assessmentstatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteapprequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteAppRequestRequestTypeDef
+
+def get_value() -> DeleteAppRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `forceDelete`: `bool`
-
-<a id="deleteappresponsetypedef"></a>
+```python title="Definition"
+class DeleteAppRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    clientToken: NotRequired[str],
+    forceDelete: NotRequired[bool],
+```
 
 ## DeleteAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteAppResponseTypeDef
+
+def get_value() -> DeleteAppResponseTypeDef:
+    return {
+        "appArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAppResponseTypeDef(TypedDict):
+    appArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `appArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleterecommendationtemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteRecommendationTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteRecommendationTemplateRequestRequestTypeDef
+
+def get_value() -> DeleteRecommendationTemplateRequestRequestTypeDef:
+    return {
+        "recommendationTemplateArn": ...,
+    }
 ```
 
-Required fields:
-
-- `recommendationTemplateArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleterecommendationtemplateresponsetypedef"></a>
+```python title="Definition"
+class DeleteRecommendationTemplateRequestRequestTypeDef(TypedDict):
+    recommendationTemplateArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteRecommendationTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteRecommendationTemplateResponseTypeDef
+
+def get_value() -> DeleteRecommendationTemplateResponseTypeDef:
+    return {
+        "recommendationTemplateArn": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteRecommendationTemplateResponseTypeDef(TypedDict):
+    recommendationTemplateArn: str,
+    status: RecommendationTemplateStatusType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `recommendationTemplateArn`: `str`
-- `status`:
-  [RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteresiliencypolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteResiliencyPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteResiliencyPolicyRequestRequestTypeDef
+
+def get_value() -> DeleteResiliencyPolicyRequestRequestTypeDef:
+    return {
+        "policyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `policyArn`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-
-<a id="deleteresiliencypolicyresponsetypedef"></a>
+```python title="Definition"
+class DeleteResiliencyPolicyRequestRequestTypeDef(TypedDict):
+    policyArn: str,
+    clientToken: NotRequired[str],
+```
 
 ## DeleteResiliencyPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DeleteResiliencyPolicyResponseTypeDef
+
+def get_value() -> DeleteResiliencyPolicyResponseTypeDef:
+    return {
+        "policyArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteResiliencyPolicyResponseTypeDef(TypedDict):
+    policyArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `policyArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeappassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppAssessmentRequestRequestTypeDef
+
+def get_value() -> DescribeAppAssessmentRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-<a id="describeappassessmentresponsetypedef"></a>
+```python title="Definition"
+class DescribeAppAssessmentRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+```
 
 ## DescribeAppAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppAssessmentResponseTypeDef
+
+def get_value() -> DescribeAppAssessmentResponseTypeDef:
+    return {
+        "assessment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAppAssessmentResponseTypeDef(TypedDict):
+    assessment: AppAssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessment`: [AppAssessmentTypeDef](./type_defs.md#appassessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeapprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppAssessmentTypeDef](./type_defs.md#appassessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppRequestRequestTypeDef
+
+def get_value() -> DescribeAppRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-<a id="describeappresponsetypedef"></a>
+```python title="Definition"
+class DescribeAppRequestRequestTypeDef(TypedDict):
+    appArn: str,
+```
 
 ## DescribeAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppResponseTypeDef
+
+def get_value() -> DescribeAppResponseTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAppResponseTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeappversionresourcesresolutionstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef
+
+def get_value() -> DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-Optional fields:
-
-- `resolutionId`: `str`
-
-<a id="describeappversionresourcesresolutionstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    resolutionId: NotRequired[str],
+```
 
 ## DescribeAppVersionResourcesResolutionStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionResourcesResolutionStatusResponseTypeDef
+
+def get_value() -> DescribeAppVersionResourcesResolutionStatusResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "errorMessage": ...,
+        "resolutionId": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAppVersionResourcesResolutionStatusResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    errorMessage: str,
+    resolutionId: str,
+    status: ResourceResolutionStatusTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `errorMessage`: `str`
-- `resolutionId`: `str`
-- `status`:
-  [ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeappversiontemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAppVersionTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionTemplateRequestRequestTypeDef
+
+def get_value() -> DescribeAppVersionTemplateRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-<a id="describeappversiontemplateresponsetypedef"></a>
+```python title="Definition"
+class DescribeAppVersionTemplateRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+```
 
 ## DescribeAppVersionTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeAppVersionTemplateResponseTypeDef
+
+def get_value() -> DescribeAppVersionTemplateResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appTemplateBody": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAppVersionTemplateResponseTypeDef(TypedDict):
+    appArn: str,
+    appTemplateBody: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `appArn`: `str`
-- `appTemplateBody`: `str`
-- `appVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describedraftappversionresourcesimportstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef
+
+def get_value() -> DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-<a id="describedraftappversionresourcesimportstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef(TypedDict):
+    appArn: str,
+```
 
 ## DescribeDraftAppVersionResourcesImportStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeDraftAppVersionResourcesImportStatusResponseTypeDef
+
+def get_value() -> DescribeDraftAppVersionResourcesImportStatusResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "errorMessage": ...,
+        "status": ...,
+        "statusChangeTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeDraftAppVersionResourcesImportStatusResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    errorMessage: str,
+    status: ResourceImportStatusTypeType,  # (1)
+    statusChangeTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `errorMessage`: `str`
-- `status`:
-  [ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype)
-- `statusChangeTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeresiliencypolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeResiliencyPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeResiliencyPolicyRequestRequestTypeDef
+
+def get_value() -> DescribeResiliencyPolicyRequestRequestTypeDef:
+    return {
+        "policyArn": ...,
+    }
 ```
 
-Required fields:
-
-- `policyArn`: `str`
-
-<a id="describeresiliencypolicyresponsetypedef"></a>
+```python title="Definition"
+class DescribeResiliencyPolicyRequestRequestTypeDef(TypedDict):
+    policyArn: str,
+```
 
 ## DescribeResiliencyPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DescribeResiliencyPolicyResponseTypeDef
+
+def get_value() -> DescribeResiliencyPolicyResponseTypeDef:
+    return {
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeResiliencyPolicyResponseTypeDef(TypedDict):
+    policy: ResiliencyPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disruptioncompliancetypedef"></a>
-
+1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisruptionComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import DisruptionComplianceTypeDef
+
+def get_value() -> DisruptionComplianceTypeDef:
+    return {
+        "complianceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisruptionComplianceTypeDef(TypedDict):
+    complianceStatus: ComplianceStatusType,  # (1)
+    achievableRpoInSecs: NotRequired[int],
+    achievableRtoInSecs: NotRequired[int],
+    currentRpoInSecs: NotRequired[int],
+    currentRtoInSecs: NotRequired[int],
+    message: NotRequired[str],
+    rpoDescription: NotRequired[str],
+    rpoReferenceId: NotRequired[str],
+    rtoDescription: NotRequired[str],
+    rtoReferenceId: NotRequired[str],
+```
 
-- `complianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-
-Optional fields:
-
-- `achievableRpoInSecs`: `int`
-- `achievableRtoInSecs`: `int`
-- `currentRpoInSecs`: `int`
-- `currentRtoInSecs`: `int`
-- `message`: `str`
-- `rpoDescription`: `str`
-- `rpoReferenceId`: `str`
-- `rtoDescription`: `str`
-- `rtoReferenceId`: `str`
-
-<a id="failurepolicytypedef"></a>
-
+1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 ## FailurePolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import FailurePolicyTypeDef
+
+def get_value() -> FailurePolicyTypeDef:
+    return {
+        "rpoInSecs": ...,
+        "rtoInSecs": ...,
+    }
 ```
 
-Required fields:
-
-- `rpoInSecs`: `int`
-- `rtoInSecs`: `int`
-
-<a id="importresourcestodraftappversionrequestrequesttypedef"></a>
+```python title="Definition"
+class FailurePolicyTypeDef(TypedDict):
+    rpoInSecs: int,
+    rtoInSecs: int,
+```
 
 ## ImportResourcesToDraftAppVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionRequestRequestTypeDef
+
+def get_value() -> ImportResourcesToDraftAppVersionRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "sourceArns": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `sourceArns`: `Sequence`\[`str`\]
-
-<a id="importresourcestodraftappversionresponsetypedef"></a>
+```python title="Definition"
+class ImportResourcesToDraftAppVersionRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    sourceArns: Sequence[str],
+```
 
 ## ImportResourcesToDraftAppVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ImportResourcesToDraftAppVersionResponseTypeDef
+
+def get_value() -> ImportResourcesToDraftAppVersionResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "sourceArns": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImportResourcesToDraftAppVersionResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    sourceArns: List[str],
+    status: ResourceImportStatusTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `sourceArns`: `List`\[`str`\]
-- `status`:
-  [ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listalarmrecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ResourceImportStatusTypeType](./literals.md#resourceimportstatustypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAlarmRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAlarmRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListAlarmRecommendationsRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listalarmrecommendationsresponsetypedef"></a>
+```python title="Definition"
+class ListAlarmRecommendationsRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAlarmRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAlarmRecommendationsResponseTypeDef
+
+def get_value() -> ListAlarmRecommendationsResponseTypeDef:
+    return {
+        "alarmRecommendations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAlarmRecommendationsResponseTypeDef(TypedDict):
+    alarmRecommendations: List[AlarmRecommendationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `alarmRecommendations`:
-  `List`\[[AlarmRecommendationTypeDef](./type_defs.md#alarmrecommendationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappassessmentsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AlarmRecommendationTypeDef](./type_defs.md#alarmrecommendationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppAssessmentsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppAssessmentsRequestRequestTypeDef
+
+def get_value() -> ListAppAssessmentsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ListAppAssessmentsRequestRequestTypeDef(TypedDict):
+    appArn: NotRequired[str],
+    assessmentName: NotRequired[str],
+    assessmentStatus: NotRequired[Sequence[AssessmentStatusType]],  # (1)
+    complianceStatus: NotRequired[ComplianceStatusType],  # (2)
+    invoker: NotRequired[AssessmentInvokerType],  # (3)
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    reverseOrder: NotRequired[bool],
+```
 
-- `appArn`: `str`
-- `assessmentName`: `str`
-- `assessmentStatus`:
-  `Sequence`\[[AssessmentStatusType](./literals.md#assessmentstatustype)\]
-- `complianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-- `invoker`: [AssessmentInvokerType](./literals.md#assessmentinvokertype)
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `reverseOrder`: `bool`
-
-<a id="listappassessmentsresponsetypedef"></a>
-
+1. See [:material-code-brackets: AssessmentStatusType](./literals.md#assessmentstatustype) 
+2. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
+3. See [:material-code-brackets: AssessmentInvokerType](./literals.md#assessmentinvokertype) 
 ## ListAppAssessmentsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppAssessmentsResponseTypeDef
+
+def get_value() -> ListAppAssessmentsResponseTypeDef:
+    return {
+        "assessmentSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppAssessmentsResponseTypeDef(TypedDict):
+    assessmentSummaries: List[AppAssessmentSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessmentSummaries`:
-  `List`\[[AppAssessmentSummaryTypeDef](./type_defs.md#appassessmentsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappcomponentcompliancesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppAssessmentSummaryTypeDef](./type_defs.md#appassessmentsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppComponentCompliancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppComponentCompliancesRequestRequestTypeDef
+
+def get_value() -> ListAppComponentCompliancesRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listappcomponentcompliancesresponsetypedef"></a>
+```python title="Definition"
+class ListAppComponentCompliancesRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAppComponentCompliancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppComponentCompliancesResponseTypeDef
+
+def get_value() -> ListAppComponentCompliancesResponseTypeDef:
+    return {
+        "componentCompliances": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppComponentCompliancesResponseTypeDef(TypedDict):
+    componentCompliances: List[AppComponentComplianceTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `componentCompliances`:
-  `List`\[[AppComponentComplianceTypeDef](./type_defs.md#appcomponentcompliancetypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappcomponentrecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppComponentComplianceTypeDef](./type_defs.md#appcomponentcompliancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppComponentRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppComponentRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListAppComponentRecommendationsRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listappcomponentrecommendationsresponsetypedef"></a>
+```python title="Definition"
+class ListAppComponentRecommendationsRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAppComponentRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppComponentRecommendationsResponseTypeDef
+
+def get_value() -> ListAppComponentRecommendationsResponseTypeDef:
+    return {
+        "componentRecommendations": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppComponentRecommendationsResponseTypeDef(TypedDict):
+    componentRecommendations: List[ComponentRecommendationTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `componentRecommendations`:
-  `List`\[[ComponentRecommendationTypeDef](./type_defs.md#componentrecommendationtypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappversionresourcemappingsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ComponentRecommendationTypeDef](./type_defs.md#componentrecommendationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppVersionResourceMappingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionResourceMappingsRequestRequestTypeDef
+
+def get_value() -> ListAppVersionResourceMappingsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listappversionresourcemappingsresponsetypedef"></a>
+```python title="Definition"
+class ListAppVersionResourceMappingsRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAppVersionResourceMappingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionResourceMappingsResponseTypeDef
+
+def get_value() -> ListAppVersionResourceMappingsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "resourceMappings": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppVersionResourceMappingsResponseTypeDef(TypedDict):
+    nextToken: str,
+    resourceMappings: List[ResourceMappingTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `resourceMappings`:
-  `List`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappversionresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppVersionResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionResourcesRequestRequestTypeDef
+
+def get_value() -> ListAppVersionResourcesRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `resolutionId`: `str`
-
-<a id="listappversionresourcesresponsetypedef"></a>
+```python title="Definition"
+class ListAppVersionResourcesRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    resolutionId: NotRequired[str],
+```
 
 ## ListAppVersionResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionResourcesResponseTypeDef
+
+def get_value() -> ListAppVersionResourcesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "physicalResources": ...,
+        "resolutionId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppVersionResourcesResponseTypeDef(TypedDict):
+    nextToken: str,
+    physicalResources: List[PhysicalResourceTypeDef],  # (1)
+    resolutionId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `physicalResources`:
-  `List`\[[PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef)\]
-- `resolutionId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappversionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: PhysicalResourceTypeDef](./type_defs.md#physicalresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppVersionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionsRequestRequestTypeDef
+
+def get_value() -> ListAppVersionsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listappversionsresponsetypedef"></a>
+```python title="Definition"
+class ListAppVersionsRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListAppVersionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppVersionsResponseTypeDef
+
+def get_value() -> ListAppVersionsResponseTypeDef:
+    return {
+        "appVersions": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppVersionsResponseTypeDef(TypedDict):
+    appVersions: List[AppVersionSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appVersions`:
-  `List`\[[AppVersionSummaryTypeDef](./type_defs.md#appversionsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listappsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppVersionSummaryTypeDef](./type_defs.md#appversionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListAppsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppsRequestRequestTypeDef
+
+def get_value() -> ListAppsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `appArn`: `str`
-- `maxResults`: `int`
-- `name`: `str`
-- `nextToken`: `str`
-
-<a id="listappsresponsetypedef"></a>
+```python title="Definition"
+class ListAppsRequestRequestTypeDef(TypedDict):
+    appArn: NotRequired[str],
+    maxResults: NotRequired[int],
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+```
 
 ## ListAppsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListAppsResponseTypeDef
+
+def get_value() -> ListAppsResponseTypeDef:
+    return {
+        "appSummaries": ...,
+        "nextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAppsResponseTypeDef(TypedDict):
+    appSummaries: List[AppSummaryTypeDef],  # (1)
+    nextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appSummaries`:
-  `List`\[[AppSummaryTypeDef](./type_defs.md#appsummarytypedef)\]
-- `nextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listrecommendationtemplatesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppSummaryTypeDef](./type_defs.md#appsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListRecommendationTemplatesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListRecommendationTemplatesRequestRequestTypeDef
+
+def get_value() -> ListRecommendationTemplatesRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendationTemplatesRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    name: NotRequired[str],
+    nextToken: NotRequired[str],
+    recommendationTemplateArn: NotRequired[str],
+    reverseOrder: NotRequired[bool],
+    status: NotRequired[Sequence[RecommendationTemplateStatusType]],  # (1)
+```
 
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `name`: `str`
-- `nextToken`: `str`
-- `recommendationTemplateArn`: `str`
-- `reverseOrder`: `bool`
-- `status`:
-  `Sequence`\[[RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)\]
-
-<a id="listrecommendationtemplatesresponsetypedef"></a>
-
+1. See [:material-code-brackets: RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype) 
 ## ListRecommendationTemplatesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListRecommendationTemplatesResponseTypeDef
+
+def get_value() -> ListRecommendationTemplatesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "recommendationTemplates": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRecommendationTemplatesResponseTypeDef(TypedDict):
+    nextToken: str,
+    recommendationTemplates: List[RecommendationTemplateTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `recommendationTemplates`:
-  `List`\[[RecommendationTemplateTypeDef](./type_defs.md#recommendationtemplatetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listresiliencypoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendationTemplateTypeDef](./type_defs.md#recommendationtemplatetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListResiliencyPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListResiliencyPoliciesRequestRequestTypeDef
+
+def get_value() -> ListResiliencyPoliciesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `policyName`: `str`
-
-<a id="listresiliencypoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListResiliencyPoliciesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    policyName: NotRequired[str],
+```
 
 ## ListResiliencyPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListResiliencyPoliciesResponseTypeDef
+
+def get_value() -> ListResiliencyPoliciesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "resiliencyPolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListResiliencyPoliciesResponseTypeDef(TypedDict):
+    nextToken: str,
+    resiliencyPolicies: List[ResiliencyPolicyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `resiliencyPolicies`:
-  `List`\[[ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsoprecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSopRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListSopRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListSopRecommendationsRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsoprecommendationsresponsetypedef"></a>
+```python title="Definition"
+class ListSopRecommendationsRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListSopRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListSopRecommendationsResponseTypeDef
+
+def get_value() -> ListSopRecommendationsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "sopRecommendations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSopRecommendationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    sopRecommendations: List[SopRecommendationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `sopRecommendations`:
-  `List`\[[SopRecommendationTypeDef](./type_defs.md#soprecommendationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listsuggestedresiliencypoliciesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SopRecommendationTypeDef](./type_defs.md#soprecommendationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListSuggestedResiliencyPoliciesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListSuggestedResiliencyPoliciesRequestRequestTypeDef
+
+def get_value() -> ListSuggestedResiliencyPoliciesRequestRequestTypeDef:
+    return {
+        "maxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listsuggestedresiliencypoliciesresponsetypedef"></a>
+```python title="Definition"
+class ListSuggestedResiliencyPoliciesRequestRequestTypeDef(TypedDict):
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListSuggestedResiliencyPoliciesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListSuggestedResiliencyPoliciesResponseTypeDef
+
+def get_value() -> ListSuggestedResiliencyPoliciesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "resiliencyPolicies": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSuggestedResiliencyPoliciesResponseTypeDef(TypedDict):
+    nextToken: str,
+    resiliencyPolicies: List[ResiliencyPolicyTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `resiliencyPolicies`:
-  `List`\[[ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtestrecommendationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTestRecommendationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListTestRecommendationsRequestRequestTypeDef
+
+def get_value() -> ListTestRecommendationsRequestRequestTypeDef:
+    return {
+        "assessmentArn": ...,
+    }
 ```
 
-Required fields:
-
-- `assessmentArn`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-<a id="listtestrecommendationsresponsetypedef"></a>
+```python title="Definition"
+class ListTestRecommendationsRequestRequestTypeDef(TypedDict):
+    assessmentArn: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+```
 
 ## ListTestRecommendationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListTestRecommendationsResponseTypeDef
+
+def get_value() -> ListTestRecommendationsResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "testRecommendations": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTestRecommendationsResponseTypeDef(TypedDict):
+    nextToken: str,
+    testRecommendations: List[TestRecommendationTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `testRecommendations`:
-  `List`\[[TestRecommendationTypeDef](./type_defs.md#testrecommendationtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listunsupportedappversionresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TestRecommendationTypeDef](./type_defs.md#testrecommendationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListUnsupportedAppVersionResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListUnsupportedAppVersionResourcesRequestRequestTypeDef
+
+def get_value() -> ListUnsupportedAppVersionResourcesRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-Optional fields:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-- `resolutionId`: `str`
-
-<a id="listunsupportedappversionresourcesresponsetypedef"></a>
+```python title="Definition"
+class ListUnsupportedAppVersionResourcesRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    maxResults: NotRequired[int],
+    nextToken: NotRequired[str],
+    resolutionId: NotRequired[str],
+```
 
 ## ListUnsupportedAppVersionResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ListUnsupportedAppVersionResourcesResponseTypeDef
+
+def get_value() -> ListUnsupportedAppVersionResourcesResponseTypeDef:
+    return {
+        "nextToken": ...,
+        "resolutionId": ...,
+        "unsupportedResources": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUnsupportedAppVersionResourcesResponseTypeDef(TypedDict):
+    nextToken: str,
+    resolutionId: str,
+    unsupportedResources: List[UnsupportedResourceTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `nextToken`: `str`
-- `resolutionId`: `str`
-- `unsupportedResources`:
-  `List`\[[UnsupportedResourceTypeDef](./type_defs.md#unsupportedresourcetypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="logicalresourceidtypedef"></a>
-
+1. See [:material-code-braces: UnsupportedResourceTypeDef](./type_defs.md#unsupportedresourcetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## LogicalResourceIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import LogicalResourceIdTypeDef
+
+def get_value() -> LogicalResourceIdTypeDef:
+    return {
+        "identifier": ...,
+    }
 ```
 
-Required fields:
-
-- `identifier`: `str`
-
-Optional fields:
-
-- `logicalStackName`: `str`
-- `resourceGroupName`: `str`
-
-<a id="physicalresourceidtypedef"></a>
+```python title="Definition"
+class LogicalResourceIdTypeDef(TypedDict):
+    identifier: str,
+    logicalStackName: NotRequired[str],
+    resourceGroupName: NotRequired[str],
+```
 
 ## PhysicalResourceIdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PhysicalResourceIdTypeDef
+
+def get_value() -> PhysicalResourceIdTypeDef:
+    return {
+        "identifier": ...,
+        "type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PhysicalResourceIdTypeDef(TypedDict):
+    identifier: str,
+    type: PhysicalIdentifierTypeType,  # (1)
+    awsAccountId: NotRequired[str],
+    awsRegion: NotRequired[str],
+```
 
-- `identifier`: `str`
-- `type`:
-  [PhysicalIdentifierTypeType](./literals.md#physicalidentifiertypetype)
-
-Optional fields:
-
-- `awsAccountId`: `str`
-- `awsRegion`: `str`
-
-<a id="physicalresourcetypedef"></a>
-
+1. See [:material-code-brackets: PhysicalIdentifierTypeType](./literals.md#physicalidentifiertypetype) 
 ## PhysicalResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PhysicalResourceTypeDef
+
+def get_value() -> PhysicalResourceTypeDef:
+    return {
+        "logicalResourceId": ...,
+        "physicalResourceId": ...,
+        "resourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PhysicalResourceTypeDef(TypedDict):
+    logicalResourceId: LogicalResourceIdTypeDef,  # (2)
+    physicalResourceId: PhysicalResourceIdTypeDef,  # (3)
+    resourceType: str,
+    appComponents: NotRequired[List[AppComponentTypeDef]],  # (1)
+    resourceName: NotRequired[str],
+```
 
-- `logicalResourceId`:
-  [LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef)
-- `physicalResourceId`:
-  [PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef)
-- `resourceType`: `str`
-
-Optional fields:
-
-- `appComponents`:
-  `List`\[[AppComponentTypeDef](./type_defs.md#appcomponenttypedef)\]
-- `resourceName`: `str`
-
-<a id="publishappversionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppComponentTypeDef](./type_defs.md#appcomponenttypedef) 
+2. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
+3. See [:material-code-braces: PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef) 
 ## PublishAppVersionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PublishAppVersionRequestRequestTypeDef
+
+def get_value() -> PublishAppVersionRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-<a id="publishappversionresponsetypedef"></a>
+```python title="Definition"
+class PublishAppVersionRequestRequestTypeDef(TypedDict):
+    appArn: str,
+```
 
 ## PublishAppVersionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PublishAppVersionResponseTypeDef
+
+def get_value() -> PublishAppVersionResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PublishAppVersionResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="putdraftappversiontemplaterequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## PutDraftAppVersionTemplateRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PutDraftAppVersionTemplateRequestRequestTypeDef
+
+def get_value() -> PutDraftAppVersionTemplateRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appTemplateBody": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appTemplateBody`: `str`
-
-<a id="putdraftappversiontemplateresponsetypedef"></a>
+```python title="Definition"
+class PutDraftAppVersionTemplateRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appTemplateBody: str,
+```
 
 ## PutDraftAppVersionTemplateResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import PutDraftAppVersionTemplateResponseTypeDef
+
+def get_value() -> PutDraftAppVersionTemplateResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PutDraftAppVersionTemplateResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="recommendationdisruptioncompliancetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## RecommendationDisruptionComplianceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import RecommendationDisruptionComplianceTypeDef
+
+def get_value() -> RecommendationDisruptionComplianceTypeDef:
+    return {
+        "expectedComplianceStatus": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecommendationDisruptionComplianceTypeDef(TypedDict):
+    expectedComplianceStatus: ComplianceStatusType,  # (1)
+    expectedRpoDescription: NotRequired[str],
+    expectedRpoInSecs: NotRequired[int],
+    expectedRtoDescription: NotRequired[str],
+    expectedRtoInSecs: NotRequired[int],
+```
 
-- `expectedComplianceStatus`:
-  [ComplianceStatusType](./literals.md#compliancestatustype)
-
-Optional fields:
-
-- `expectedRpoDescription`: `str`
-- `expectedRpoInSecs`: `int`
-- `expectedRtoDescription`: `str`
-- `expectedRtoInSecs`: `int`
-
-<a id="recommendationitemtypedef"></a>
-
+1. See [:material-code-brackets: ComplianceStatusType](./literals.md#compliancestatustype) 
 ## RecommendationItemTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import RecommendationItemTypeDef
+
+def get_value() -> RecommendationItemTypeDef:
+    return {
+        "alreadyImplemented": ...,
+    }
 ```
 
-Optional fields:
-
-- `alreadyImplemented`: `bool`
-- `resourceId`: `str`
-- `targetAccountId`: `str`
-- `targetRegion`: `str`
-
-<a id="recommendationtemplatetypedef"></a>
+```python title="Definition"
+class RecommendationItemTypeDef(TypedDict):
+    alreadyImplemented: NotRequired[bool],
+    resourceId: NotRequired[str],
+    targetAccountId: NotRequired[str],
+    targetRegion: NotRequired[str],
+```
 
 ## RecommendationTemplateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import RecommendationTemplateTypeDef
+
+def get_value() -> RecommendationTemplateTypeDef:
+    return {
+        "assessmentArn": ...,
+        "format": ...,
+        "name": ...,
+        "recommendationTemplateArn": ...,
+        "recommendationTypes": ...,
+        "status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RecommendationTemplateTypeDef(TypedDict):
+    assessmentArn: str,
+    format: TemplateFormatType,  # (1)
+    name: str,
+    recommendationTemplateArn: str,
+    recommendationTypes: List[RenderRecommendationTypeType],  # (2)
+    status: RecommendationTemplateStatusType,  # (3)
+    appArn: NotRequired[str],
+    endTime: NotRequired[datetime],
+    message: NotRequired[str],
+    needsReplacements: NotRequired[bool],
+    recommendationIds: NotRequired[List[str]],
+    startTime: NotRequired[datetime],
+    tags: NotRequired[Dict[str, str]],
+    templatesLocation: NotRequired[S3LocationTypeDef],  # (4)
+```
 
-- `assessmentArn`: `str`
-- `format`: [TemplateFormatType](./literals.md#templateformattype)
-- `name`: `str`
-- `recommendationTemplateArn`: `str`
-- `recommendationTypes`:
-  `List`\[[RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype)\]
-- `status`:
-  [RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)
-
-Optional fields:
-
-- `appArn`: `str`
-- `endTime`: `datetime`
-- `message`: `str`
-- `needsReplacements`: `bool`
-- `recommendationIds`: `List`\[`str`\]
-- `startTime`: `datetime`
-- `tags`: `Dict`\[`str`, `str`\]
-- `templatesLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
-
-<a id="removedraftappversionresourcemappingsrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: TemplateFormatType](./literals.md#templateformattype) 
+2. See [:material-code-brackets: RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype) 
+3. See [:material-code-brackets: RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype) 
+4. See [:material-code-braces: S3LocationTypeDef](./type_defs.md#s3locationtypedef) 
 ## RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef
+
+def get_value() -> RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-Optional fields:
-
-- `appRegistryAppNames`: `Sequence`\[`str`\]
-- `logicalStackNames`: `Sequence`\[`str`\]
-- `resourceGroupNames`: `Sequence`\[`str`\]
-- `resourceNames`: `Sequence`\[`str`\]
-
-<a id="removedraftappversionresourcemappingsresponsetypedef"></a>
+```python title="Definition"
+class RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appRegistryAppNames: NotRequired[Sequence[str]],
+    logicalStackNames: NotRequired[Sequence[str]],
+    resourceGroupNames: NotRequired[Sequence[str]],
+    resourceNames: NotRequired[Sequence[str]],
+```
 
 ## RemoveDraftAppVersionResourceMappingsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import RemoveDraftAppVersionResourceMappingsResponseTypeDef
+
+def get_value() -> RemoveDraftAppVersionResourceMappingsResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RemoveDraftAppVersionResourceMappingsResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resiliencypolicytypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResiliencyPolicyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResiliencyPolicyTypeDef
+
+def get_value() -> ResiliencyPolicyTypeDef:
+    return {
+        "creationTime": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ResiliencyPolicyTypeDef(TypedDict):
+    creationTime: NotRequired[datetime],
+    dataLocationConstraint: NotRequired[DataLocationConstraintType],  # (1)
+    estimatedCostTier: NotRequired[EstimatedCostTierType],  # (2)
+    policy: NotRequired[Dict[DisruptionTypeType, FailurePolicyTypeDef]],  # (3)
+    policyArn: NotRequired[str],
+    policyDescription: NotRequired[str],
+    policyName: NotRequired[str],
+    tags: NotRequired[Dict[str, str]],
+    tier: NotRequired[ResiliencyPolicyTierType],  # (4)
+```
 
-- `creationTime`: `datetime`
-- `dataLocationConstraint`:
-  [DataLocationConstraintType](./literals.md#datalocationconstrainttype)
-- `estimatedCostTier`:
-  [EstimatedCostTierType](./literals.md#estimatedcosttiertype)
-- `policy`: `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef)\]
-- `policyArn`: `str`
-- `policyDescription`: `str`
-- `policyName`: `str`
-- `tags`: `Dict`\[`str`, `str`\]
-- `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
-
-<a id="resiliencyscoretypedef"></a>
-
+1. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
+2. See [:material-code-brackets: EstimatedCostTierType](./literals.md#estimatedcosttiertype) 
+3. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
+4. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
 ## ResiliencyScoreTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResiliencyScoreTypeDef
+
+def get_value() -> ResiliencyScoreTypeDef:
+    return {
+        "disruptionScore": ...,
+        "score": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResiliencyScoreTypeDef(TypedDict):
+    disruptionScore: Dict[DisruptionTypeType, float],  # (1)
+    score: float,
+```
 
-- `disruptionScore`:
-  `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype), `float`\]
-- `score`: `float`
-
-<a id="resolveappversionresourcesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) 
 ## ResolveAppVersionResourcesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResolveAppVersionResourcesRequestRequestTypeDef
+
+def get_value() -> ResolveAppVersionResourcesRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-
-<a id="resolveappversionresourcesresponsetypedef"></a>
+```python title="Definition"
+class ResolveAppVersionResourcesRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+```
 
 ## ResolveAppVersionResourcesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResolveAppVersionResourcesResponseTypeDef
+
+def get_value() -> ResolveAppVersionResourcesResponseTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "resolutionId": ...,
+        "status": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResolveAppVersionResourcesResponseTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    resolutionId: str,
+    status: ResourceResolutionStatusTypeType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `appArn`: `str`
-- `appVersion`: `str`
-- `resolutionId`: `str`
-- `status`:
-  [ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="resourcemappingtypedef"></a>
-
+1. See [:material-code-brackets: ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResourceMappingTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResourceMappingTypeDef
+
+def get_value() -> ResourceMappingTypeDef:
+    return {
+        "mappingType": ...,
+        "physicalResourceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResourceMappingTypeDef(TypedDict):
+    mappingType: ResourceMappingTypeType,  # (1)
+    physicalResourceId: PhysicalResourceIdTypeDef,  # (2)
+    appRegistryAppName: NotRequired[str],
+    logicalStackName: NotRequired[str],
+    resourceGroupName: NotRequired[str],
+    resourceName: NotRequired[str],
+```
 
-- `mappingType`:
-  [ResourceMappingTypeType](./literals.md#resourcemappingtypetype)
-- `physicalResourceId`:
-  [PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef)
-
-Optional fields:
-
-- `appRegistryAppName`: `str`
-- `logicalStackName`: `str`
-- `resourceGroupName`: `str`
-- `resourceName`: `str`
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ResourceMappingTypeType](./literals.md#resourcemappingtypetype) 
+2. See [:material-code-braces: PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="s3locationtypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## S3LocationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import S3LocationTypeDef
+
+def get_value() -> S3LocationTypeDef:
+    return {
+        "bucket": ...,
+    }
 ```
 
-Optional fields:
-
-- `bucket`: `str`
-- `prefix`: `str`
-
-<a id="soprecommendationtypedef"></a>
+```python title="Definition"
+class S3LocationTypeDef(TypedDict):
+    bucket: NotRequired[str],
+    prefix: NotRequired[str],
+```
 
 ## SopRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import SopRecommendationTypeDef
+
+def get_value() -> SopRecommendationTypeDef:
+    return {
+        "recommendationId": ...,
+        "referenceId": ...,
+        "serviceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SopRecommendationTypeDef(TypedDict):
+    recommendationId: str,
+    referenceId: str,
+    serviceType: SopServiceTypeType,  # (2)
+    appComponentName: NotRequired[str],
+    description: NotRequired[str],
+    items: NotRequired[List[RecommendationItemTypeDef]],  # (1)
+    name: NotRequired[str],
+    prerequisite: NotRequired[str],
+```
 
-- `recommendationId`: `str`
-- `referenceId`: `str`
-- `serviceType`: `Literal['SSM']` (see
-  [SopServiceTypeType](./literals.md#sopservicetypetype))
-
-Optional fields:
-
-- `appComponentName`: `str`
-- `description`: `str`
-- `items`:
-  `List`\[[RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef)\]
-- `name`: `str`
-- `prerequisite`: `str`
-
-<a id="startappassessmentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef) 
+2. See [:material-code-brackets: SopServiceTypeType](./literals.md#sopservicetypetype) 
 ## StartAppAssessmentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import StartAppAssessmentRequestRequestTypeDef
+
+def get_value() -> StartAppAssessmentRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+        "appVersion": ...,
+        "assessmentName": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-- `appVersion`: `str`
-- `assessmentName`: `str`
-
-Optional fields:
-
-- `clientToken`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="startappassessmentresponsetypedef"></a>
+```python title="Definition"
+class StartAppAssessmentRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    appVersion: str,
+    assessmentName: str,
+    clientToken: NotRequired[str],
+    tags: NotRequired[Mapping[str, str]],
+```
 
 ## StartAppAssessmentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import StartAppAssessmentResponseTypeDef
+
+def get_value() -> StartAppAssessmentResponseTypeDef:
+    return {
+        "assessment": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartAppAssessmentResponseTypeDef(TypedDict):
+    assessment: AppAssessmentTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `assessment`: [AppAssessmentTypeDef](./type_defs.md#appassessmenttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppAssessmentTypeDef](./type_defs.md#appassessmenttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="testrecommendationtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## TestRecommendationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import TestRecommendationTypeDef
+
+def get_value() -> TestRecommendationTypeDef:
+    return {
+        "referenceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TestRecommendationTypeDef(TypedDict):
+    referenceId: str,
+    appComponentName: NotRequired[str],
+    description: NotRequired[str],
+    intent: NotRequired[str],
+    items: NotRequired[List[RecommendationItemTypeDef]],  # (1)
+    name: NotRequired[str],
+    prerequisite: NotRequired[str],
+    recommendationId: NotRequired[str],
+    risk: NotRequired[TestRiskType],  # (2)
+    type: NotRequired[TestTypeType],  # (3)
+```
 
-- `referenceId`: `str`
-
-Optional fields:
-
-- `appComponentName`: `str`
-- `description`: `str`
-- `intent`: `str`
-- `items`:
-  `List`\[[RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef)\]
-- `name`: `str`
-- `prerequisite`: `str`
-- `recommendationId`: `str`
-- `risk`: [TestRiskType](./literals.md#testrisktype)
-- `type`: [TestTypeType](./literals.md#testtypetype)
-
-<a id="unsupportedresourcetypedef"></a>
-
+1. See [:material-code-braces: RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef) 
+2. See [:material-code-brackets: TestRiskType](./literals.md#testrisktype) 
+3. See [:material-code-brackets: TestTypeType](./literals.md#testtypetype) 
 ## UnsupportedResourceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UnsupportedResourceTypeDef
+
+def get_value() -> UnsupportedResourceTypeDef:
+    return {
+        "logicalResourceId": ...,
+        "physicalResourceId": ...,
+        "resourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UnsupportedResourceTypeDef(TypedDict):
+    logicalResourceId: LogicalResourceIdTypeDef,  # (1)
+    physicalResourceId: PhysicalResourceIdTypeDef,  # (2)
+    resourceType: str,
+```
 
-- `logicalResourceId`:
-  [LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef)
-- `physicalResourceId`:
-  [PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef)
-- `resourceType`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LogicalResourceIdTypeDef](./type_defs.md#logicalresourceidtypedef) 
+2. See [:material-code-braces: PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateapprequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAppRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UpdateAppRequestRequestTypeDef
+
+def get_value() -> UpdateAppRequestRequestTypeDef:
+    return {
+        "appArn": ...,
+    }
 ```
 
-Required fields:
-
-- `appArn`: `str`
-
-Optional fields:
-
-- `clearResiliencyPolicyArn`: `bool`
-- `description`: `str`
-- `policyArn`: `str`
-
-<a id="updateappresponsetypedef"></a>
+```python title="Definition"
+class UpdateAppRequestRequestTypeDef(TypedDict):
+    appArn: str,
+    clearResiliencyPolicyArn: NotRequired[bool],
+    description: NotRequired[str],
+    policyArn: NotRequired[str],
+```
 
 ## UpdateAppResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UpdateAppResponseTypeDef
+
+def get_value() -> UpdateAppResponseTypeDef:
+    return {
+        "app": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAppResponseTypeDef(TypedDict):
+    app: AppTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `app`: [AppTypeDef](./type_defs.md#apptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="updateresiliencypolicyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AppTypeDef](./type_defs.md#apptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## UpdateResiliencyPolicyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UpdateResiliencyPolicyRequestRequestTypeDef
+
+def get_value() -> UpdateResiliencyPolicyRequestRequestTypeDef:
+    return {
+        "policyArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResiliencyPolicyRequestRequestTypeDef(TypedDict):
+    policyArn: str,
+    dataLocationConstraint: NotRequired[DataLocationConstraintType],  # (1)
+    policy: NotRequired[Mapping[DisruptionTypeType, FailurePolicyTypeDef]],  # (2)
+    policyDescription: NotRequired[str],
+    policyName: NotRequired[str],
+    tier: NotRequired[ResiliencyPolicyTierType],  # (3)
+```
 
-- `policyArn`: `str`
-
-Optional fields:
-
-- `dataLocationConstraint`:
-  [DataLocationConstraintType](./literals.md#datalocationconstrainttype)
-- `policy`: `Mapping`\[[DisruptionTypeType](./literals.md#disruptiontypetype),
-  [FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef)\]
-- `policyDescription`: `str`
-- `policyName`: `str`
-- `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
-
-<a id="updateresiliencypolicyresponsetypedef"></a>
-
+1. See [:material-code-brackets: DataLocationConstraintType](./literals.md#datalocationconstrainttype) 
+2. See [:material-code-brackets: DisruptionTypeType](./literals.md#disruptiontypetype) [:material-code-braces: FailurePolicyTypeDef](./type_defs.md#failurepolicytypedef) 
+3. See [:material-code-brackets: ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype) 
 ## UpdateResiliencyPolicyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_resiliencehub.type_defs import UpdateResiliencyPolicyResponseTypeDef
+
+def get_value() -> UpdateResiliencyPolicyResponseTypeDef:
+    return {
+        "policy": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateResiliencyPolicyResponseTypeDef(TypedDict):
+    policy: ResiliencyPolicyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 

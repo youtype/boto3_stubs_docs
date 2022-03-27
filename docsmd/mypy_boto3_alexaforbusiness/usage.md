@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-alexaforbusiness-module"></a>
-
-# Examples for boto3 AlexaForBusiness module
+# Examples
 
 > [Index](../README.md) > [AlexaForBusiness](./README.md) > Examples
 
-- [Examples for boto3 AlexaForBusiness module](#examples-for-boto3-alexaforbusiness-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
+    type annotations stubs module [mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[alexaforbusiness]` package installed.
 
-Write your `AlexaForBusiness` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `AlexaForBusiness` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type AlexaForBusinessClient
-# and provides type checking and code completion
-client = session.client("alexaforbusiness")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type Dict[str, Any]
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.approve_skill()
 
-# paginator has type ListBusinessReportSchedulesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_business_report_schedules")
-for item in paginator.paginate(...):
-    # item has type ListBusinessReportSchedulesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("alexaforbusiness")  # (1)
+    result = client.create_address_book()  # (2)
+    ```
+
+    1. client: [AlexaForBusinessClient](./client.md)
+    2. result: [:material-code-braces: CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("alexaforbusiness")  # (1)
+
+    paginator = client.get_paginator("list_business_report_schedules")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [AlexaForBusinessClient](./client.md)
+    2. paginator: [ListBusinessReportSchedulesPaginator](./paginators.md#listbusinessreportschedulespaginator)
+    3. item: [:material-code-braces: ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[alexaforbusiness]` or a standalone
-`mypy_boto3_alexaforbusiness` package, you have to explicitly specify
-`client: AlexaForBusinessClient` type annotation.
+With `boto3-stubs-lite[alexaforbusiness]`
+or a standalone `mypy_boto3_alexaforbusiness` package, you have to explicitly specify `client: AlexaForBusinessClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
-from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator
-
-from mypy_boto3_alexaforbusiness.literals import PaginatorName
-
-from mypy_boto3_alexaforbusiness.type_defs import Dict[str, Any]
-from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: AlexaForBusinessClient = session.client("alexaforbusiness")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: Dict[str, Any] = client.approve_skill()
+    from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
+    from mypy_boto3_alexaforbusiness.type_defs import CreateAddressBookResponseTypeDef
+    from mypy_boto3_alexaforbusiness.type_defs import CreateAddressBookRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_business_report_schedules"
-paginator: ListBusinessReportSchedulesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListBusinessReportSchedulesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: AlexaForBusinessClient = session.client("alexaforbusiness")
+
+    kwargs: CreateAddressBookRequestRequestTypeDef = {...}
+    result: CreateAddressBookResponseTypeDef = client.create_address_book(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
+    from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator
+    from mypy_boto3_alexaforbusiness.type_defs import ListBusinessReportSchedulesResponseTypeDef
+
+
+    session = Session()
+    client: AlexaForBusinessClient = session.client("alexaforbusiness")
+
+    paginator: ListBusinessReportSchedulesPaginator = client.get_paginator("list_business_report_schedules")
+    for item in paginator.paginate(...):
+        item: ListBusinessReportSchedulesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

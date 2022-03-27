@@ -1,1205 +1,1277 @@
-<a id="literals-for-boto3-kendra-module"></a>
-
-# Literals for boto3 kendra module
+# Literals
 
 > [Index](../README.md) > [kendra](./README.md) > Literals
 
-Auto-generated documentation for
-[kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
-type annotations stubs module
-[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
+!!! note ""
 
-- [Literals for boto3 kendra module](#literals-for-boto3-kendra-module)
-  - [AdditionalResultAttributeValueTypeType](#additionalresultattributevaluetypetype)
-  - [ConditionOperatorType](#conditionoperatortype)
-  - [ConfluenceAttachmentFieldNameType](#confluenceattachmentfieldnametype)
-  - [ConfluenceBlogFieldNameType](#confluenceblogfieldnametype)
-  - [ConfluencePageFieldNameType](#confluencepagefieldnametype)
-  - [ConfluenceSpaceFieldNameType](#confluencespacefieldnametype)
-  - [ConfluenceVersionType](#confluenceversiontype)
-  - [ContentTypeType](#contenttypetype)
-  - [DataSourceStatusType](#datasourcestatustype)
-  - [DataSourceSyncJobStatusType](#datasourcesyncjobstatustype)
-  - [DataSourceTypeType](#datasourcetypetype)
-  - [DatabaseEngineTypeType](#databaseenginetypetype)
-  - [DocumentAttributeValueTypeType](#documentattributevaluetypetype)
-  - [DocumentStatusType](#documentstatustype)
-  - [EndpointTypeType](#endpointtypetype)
-  - [EntityTypeType](#entitytypetype)
-  - [ErrorCodeType](#errorcodetype)
-  - [ExperienceStatusType](#experiencestatustype)
-  - [FaqFileFormatType](#faqfileformattype)
-  - [FaqStatusType](#faqstatustype)
-  - [FsxFileSystemTypeType](#fsxfilesystemtypetype)
-  - [HighlightTypeType](#highlighttypetype)
-  - [IndexEditionType](#indexeditiontype)
-  - [IndexStatusType](#indexstatustype)
-  - [IntervalType](#intervaltype)
-  - [KeyLocationType](#keylocationtype)
-  - [MetricTypeType](#metrictypetype)
-  - [ModeType](#modetype)
-  - [OrderType](#ordertype)
-  - [PersonaType](#personatype)
-  - [PrincipalMappingStatusType](#principalmappingstatustype)
-  - [PrincipalTypeType](#principaltypetype)
-  - [QueryIdentifiersEnclosingOptionType](#queryidentifiersenclosingoptiontype)
-  - [QueryResultTypeType](#queryresulttypetype)
-  - [QuerySuggestionsBlockListStatusType](#querysuggestionsblockliststatustype)
-  - [QuerySuggestionsStatusType](#querysuggestionsstatustype)
-  - [ReadAccessTypeType](#readaccesstypetype)
-  - [RelevanceTypeType](#relevancetypetype)
-  - [SalesforceChatterFeedIncludeFilterTypeType](#salesforcechatterfeedincludefiltertypetype)
-  - [SalesforceKnowledgeArticleStateType](#salesforceknowledgearticlestatetype)
-  - [SalesforceStandardObjectNameType](#salesforcestandardobjectnametype)
-  - [ScoreConfidenceType](#scoreconfidencetype)
-  - [ServiceNowAuthenticationTypeType](#servicenowauthenticationtypetype)
-  - [ServiceNowBuildVersionTypeType](#servicenowbuildversiontypetype)
-  - [SharePointVersionType](#sharepointversiontype)
-  - [SlackEntityType](#slackentitytype)
-  - [SortOrderType](#sortordertype)
-  - [ThesaurusStatusType](#thesaurusstatustype)
-  - [UserContextPolicyType](#usercontextpolicytype)
-  - [UserGroupResolutionModeType](#usergroupresolutionmodetype)
-  - [WarningCodeType](#warningcodetype)
-  - [WebCrawlerModeType](#webcrawlermodetype)
-  - [kendraServiceName](#kendraservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-
-<a id="additionalresultattributevaluetypetype"></a>
+    Auto-generated documentation for [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+    type annotations stubs module [mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ## AdditionalResultAttributeValueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
+
+def get_value() -> AdditionalResultAttributeValueTypeType:
+    return "TEXT_WITH_HIGHLIGHTS_VALUE"
 ```
 
-Values:
-
-- `TEXT_WITH_HIGHLIGHTS_VALUE`
-
-<a id="conditionoperatortype"></a>
-
+```python title="Definition"
+AdditionalResultAttributeValueTypeType = Literal[
+    "TEXT_WITH_HIGHLIGHTS_VALUE",
+]
+```
 ## ConditionOperatorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConditionOperatorType
+
+def get_value() -> ConditionOperatorType:
+    return "BeginsWith"
 ```
 
-Values:
-
-- `BeginsWith`
-- `Contains`
-- `Equals`
-- `Exists`
-- `GreaterThan`
-- `GreaterThanOrEquals`
-- `LessThan`
-- `LessThanOrEquals`
-- `NotContains`
-- `NotEquals`
-- `NotExists`
-
-<a id="confluenceattachmentfieldnametype"></a>
-
+```python title="Definition"
+ConditionOperatorType = Literal[
+    "BeginsWith",
+    "Contains",
+    "Equals",
+    "Exists",
+    "GreaterThan",
+    "GreaterThanOrEquals",
+    "LessThan",
+    "LessThanOrEquals",
+    "NotContains",
+    "NotEquals",
+    "NotExists",
+]
+```
 ## ConfluenceAttachmentFieldNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConfluenceAttachmentFieldNameType
+
+def get_value() -> ConfluenceAttachmentFieldNameType:
+    return "AUTHOR"
 ```
 
-Values:
-
-- `AUTHOR`
-- `CONTENT_TYPE`
-- `CREATED_DATE`
-- `DISPLAY_URL`
-- `FILE_SIZE`
-- `ITEM_TYPE`
-- `PARENT_ID`
-- `SPACE_KEY`
-- `SPACE_NAME`
-- `URL`
-- `VERSION`
-
-<a id="confluenceblogfieldnametype"></a>
-
+```python title="Definition"
+ConfluenceAttachmentFieldNameType = Literal[
+    "AUTHOR",
+    "CONTENT_TYPE",
+    "CREATED_DATE",
+    "DISPLAY_URL",
+    "FILE_SIZE",
+    "ITEM_TYPE",
+    "PARENT_ID",
+    "SPACE_KEY",
+    "SPACE_NAME",
+    "URL",
+    "VERSION",
+]
+```
 ## ConfluenceBlogFieldNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConfluenceBlogFieldNameType
+
+def get_value() -> ConfluenceBlogFieldNameType:
+    return "AUTHOR"
 ```
 
-Values:
-
-- `AUTHOR`
-- `DISPLAY_URL`
-- `ITEM_TYPE`
-- `LABELS`
-- `PUBLISH_DATE`
-- `SPACE_KEY`
-- `SPACE_NAME`
-- `URL`
-- `VERSION`
-
-<a id="confluencepagefieldnametype"></a>
-
+```python title="Definition"
+ConfluenceBlogFieldNameType = Literal[
+    "AUTHOR",
+    "DISPLAY_URL",
+    "ITEM_TYPE",
+    "LABELS",
+    "PUBLISH_DATE",
+    "SPACE_KEY",
+    "SPACE_NAME",
+    "URL",
+    "VERSION",
+]
+```
 ## ConfluencePageFieldNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConfluencePageFieldNameType
+
+def get_value() -> ConfluencePageFieldNameType:
+    return "AUTHOR"
 ```
 
-Values:
-
-- `AUTHOR`
-- `CONTENT_STATUS`
-- `CREATED_DATE`
-- `DISPLAY_URL`
-- `ITEM_TYPE`
-- `LABELS`
-- `MODIFIED_DATE`
-- `PARENT_ID`
-- `SPACE_KEY`
-- `SPACE_NAME`
-- `URL`
-- `VERSION`
-
-<a id="confluencespacefieldnametype"></a>
-
+```python title="Definition"
+ConfluencePageFieldNameType = Literal[
+    "AUTHOR",
+    "CONTENT_STATUS",
+    "CREATED_DATE",
+    "DISPLAY_URL",
+    "ITEM_TYPE",
+    "LABELS",
+    "MODIFIED_DATE",
+    "PARENT_ID",
+    "SPACE_KEY",
+    "SPACE_NAME",
+    "URL",
+    "VERSION",
+]
+```
 ## ConfluenceSpaceFieldNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConfluenceSpaceFieldNameType
+
+def get_value() -> ConfluenceSpaceFieldNameType:
+    return "DISPLAY_URL"
 ```
 
-Values:
-
-- `DISPLAY_URL`
-- `ITEM_TYPE`
-- `SPACE_KEY`
-- `URL`
-
-<a id="confluenceversiontype"></a>
-
+```python title="Definition"
+ConfluenceSpaceFieldNameType = Literal[
+    "DISPLAY_URL",
+    "ITEM_TYPE",
+    "SPACE_KEY",
+    "URL",
+]
+```
 ## ConfluenceVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ConfluenceVersionType
+
+def get_value() -> ConfluenceVersionType:
+    return "CLOUD"
 ```
 
-Values:
-
-- `CLOUD`
-- `SERVER`
-
-<a id="contenttypetype"></a>
-
+```python title="Definition"
+ConfluenceVersionType = Literal[
+    "CLOUD",
+    "SERVER",
+]
+```
 ## ContentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ContentTypeType
+
+def get_value() -> ContentTypeType:
+    return "HTML"
 ```
 
-Values:
-
-- `HTML`
-- `MS_WORD`
-- `PDF`
-- `PLAIN_TEXT`
-- `PPT`
-
-<a id="datasourcestatustype"></a>
-
+```python title="Definition"
+ContentTypeType = Literal[
+    "HTML",
+    "MS_WORD",
+    "PDF",
+    "PLAIN_TEXT",
+    "PPT",
+]
+```
 ## DataSourceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DataSourceStatusType
+
+def get_value() -> DataSourceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="datasourcesyncjobstatustype"></a>
-
+```python title="Definition"
+DataSourceStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## DataSourceSyncJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DataSourceSyncJobStatusType
+
+def get_value() -> DataSourceSyncJobStatusType:
+    return "ABORTED"
 ```
 
-Values:
-
-- `ABORTED`
-- `FAILED`
-- `INCOMPLETE`
-- `STOPPING`
-- `SUCCEEDED`
-- `SYNCING`
-- `SYNCING_INDEXING`
-
-<a id="datasourcetypetype"></a>
-
+```python title="Definition"
+DataSourceSyncJobStatusType = Literal[
+    "ABORTED",
+    "FAILED",
+    "INCOMPLETE",
+    "STOPPING",
+    "SUCCEEDED",
+    "SYNCING",
+    "SYNCING_INDEXING",
+]
+```
 ## DataSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DataSourceTypeType
+
+def get_value() -> DataSourceTypeType:
+    return "CONFLUENCE"
 ```
 
-Values:
-
-- `CONFLUENCE`
-- `CUSTOM`
-- `DATABASE`
-- `FSX`
-- `GOOGLEDRIVE`
-- `ONEDRIVE`
-- `S3`
-- `SALESFORCE`
-- `SERVICENOW`
-- `SHAREPOINT`
-- `SLACK`
-- `WEBCRAWLER`
-- `WORKDOCS`
-
-<a id="databaseenginetypetype"></a>
-
+```python title="Definition"
+DataSourceTypeType = Literal[
+    "CONFLUENCE",
+    "CUSTOM",
+    "DATABASE",
+    "FSX",
+    "GOOGLEDRIVE",
+    "ONEDRIVE",
+    "S3",
+    "SALESFORCE",
+    "SERVICENOW",
+    "SHAREPOINT",
+    "SLACK",
+    "WEBCRAWLER",
+    "WORKDOCS",
+]
+```
 ## DatabaseEngineTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DatabaseEngineTypeType
+
+def get_value() -> DatabaseEngineTypeType:
+    return "RDS_AURORA_MYSQL"
 ```
 
-Values:
-
-- `RDS_AURORA_MYSQL`
-- `RDS_AURORA_POSTGRESQL`
-- `RDS_MYSQL`
-- `RDS_POSTGRESQL`
-
-<a id="documentattributevaluetypetype"></a>
-
+```python title="Definition"
+DatabaseEngineTypeType = Literal[
+    "RDS_AURORA_MYSQL",
+    "RDS_AURORA_POSTGRESQL",
+    "RDS_MYSQL",
+    "RDS_POSTGRESQL",
+]
+```
 ## DocumentAttributeValueTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DocumentAttributeValueTypeType
+
+def get_value() -> DocumentAttributeValueTypeType:
+    return "DATE_VALUE"
 ```
 
-Values:
-
-- `DATE_VALUE`
-- `LONG_VALUE`
-- `STRING_LIST_VALUE`
-- `STRING_VALUE`
-
-<a id="documentstatustype"></a>
-
+```python title="Definition"
+DocumentAttributeValueTypeType = Literal[
+    "DATE_VALUE",
+    "LONG_VALUE",
+    "STRING_LIST_VALUE",
+    "STRING_VALUE",
+]
+```
 ## DocumentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import DocumentStatusType
+
+def get_value() -> DocumentStatusType:
+    return "FAILED"
 ```
 
-Values:
-
-- `FAILED`
-- `INDEXED`
-- `NOT_FOUND`
-- `PROCESSING`
-- `UPDATE_FAILED`
-- `UPDATED`
-
-<a id="endpointtypetype"></a>
-
+```python title="Definition"
+DocumentStatusType = Literal[
+    "FAILED",
+    "INDEXED",
+    "NOT_FOUND",
+    "PROCESSING",
+    "UPDATE_FAILED",
+    "UPDATED",
+]
+```
 ## EndpointTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import EndpointTypeType
+
+def get_value() -> EndpointTypeType:
+    return "HOME"
 ```
 
-Values:
-
-- `HOME`
-
-<a id="entitytypetype"></a>
-
+```python title="Definition"
+EndpointTypeType = Literal[
+    "HOME",
+]
+```
 ## EntityTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import EntityTypeType
+
+def get_value() -> EntityTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `USER`
-
-<a id="errorcodetype"></a>
-
+```python title="Definition"
+EntityTypeType = Literal[
+    "GROUP",
+    "USER",
+]
+```
 ## ErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ErrorCodeType
+
+def get_value() -> ErrorCodeType:
+    return "InternalError"
 ```
 
-Values:
-
-- `InternalError`
-- `InvalidRequest`
-
-<a id="experiencestatustype"></a>
-
+```python title="Definition"
+ErrorCodeType = Literal[
+    "InternalError",
+    "InvalidRequest",
+]
+```
 ## ExperienceStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ExperienceStatusType
+
+def get_value() -> ExperienceStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-
-<a id="faqfileformattype"></a>
-
+```python title="Definition"
+ExperienceStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+]
+```
 ## FaqFileFormatType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import FaqFileFormatType
+
+def get_value() -> FaqFileFormatType:
+    return "CSV"
 ```
 
-Values:
-
-- `CSV`
-- `CSV_WITH_HEADER`
-- `JSON`
-
-<a id="faqstatustype"></a>
-
+```python title="Definition"
+FaqFileFormatType = Literal[
+    "CSV",
+    "CSV_WITH_HEADER",
+    "JSON",
+]
+```
 ## FaqStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import FaqStatusType
+
+def get_value() -> FaqStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="fsxfilesystemtypetype"></a>
-
+```python title="Definition"
+FaqStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## FsxFileSystemTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import FsxFileSystemTypeType
+
+def get_value() -> FsxFileSystemTypeType:
+    return "WINDOWS"
 ```
 
-Values:
-
-- `WINDOWS`
-
-<a id="highlighttypetype"></a>
-
+```python title="Definition"
+FsxFileSystemTypeType = Literal[
+    "WINDOWS",
+]
+```
 ## HighlightTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import HighlightTypeType
+
+def get_value() -> HighlightTypeType:
+    return "STANDARD"
 ```
 
-Values:
-
-- `STANDARD`
-- `THESAURUS_SYNONYM`
-
-<a id="indexeditiontype"></a>
-
+```python title="Definition"
+HighlightTypeType = Literal[
+    "STANDARD",
+    "THESAURUS_SYNONYM",
+]
+```
 ## IndexEditionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import IndexEditionType
+
+def get_value() -> IndexEditionType:
+    return "DEVELOPER_EDITION"
 ```
 
-Values:
-
-- `DEVELOPER_EDITION`
-- `ENTERPRISE_EDITION`
-
-<a id="indexstatustype"></a>
-
+```python title="Definition"
+IndexEditionType = Literal[
+    "DEVELOPER_EDITION",
+    "ENTERPRISE_EDITION",
+]
+```
 ## IndexStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import IndexStatusType
+
+def get_value() -> IndexStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `SYSTEM_UPDATING`
-- `UPDATING`
-
-<a id="intervaltype"></a>
-
+```python title="Definition"
+IndexStatusType = Literal[
+    "ACTIVE",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "SYSTEM_UPDATING",
+    "UPDATING",
+]
+```
 ## IntervalType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import IntervalType
+
+def get_value() -> IntervalType:
+    return "ONE_MONTH_AGO"
 ```
 
-Values:
-
-- `ONE_MONTH_AGO`
-- `ONE_WEEK_AGO`
-- `THIS_MONTH`
-- `THIS_WEEK`
-- `TWO_MONTHS_AGO`
-- `TWO_WEEKS_AGO`
-
-<a id="keylocationtype"></a>
-
+```python title="Definition"
+IntervalType = Literal[
+    "ONE_MONTH_AGO",
+    "ONE_WEEK_AGO",
+    "THIS_MONTH",
+    "THIS_WEEK",
+    "TWO_MONTHS_AGO",
+    "TWO_WEEKS_AGO",
+]
+```
 ## KeyLocationType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import KeyLocationType
+
+def get_value() -> KeyLocationType:
+    return "SECRET_MANAGER"
 ```
 
-Values:
-
-- `SECRET_MANAGER`
-- `URL`
-
-<a id="metrictypetype"></a>
-
+```python title="Definition"
+KeyLocationType = Literal[
+    "SECRET_MANAGER",
+    "URL",
+]
+```
 ## MetricTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import MetricTypeType
+
+def get_value() -> MetricTypeType:
+    return "AGG_QUERY_DOC_METRICS"
 ```
 
-Values:
-
-- `AGG_QUERY_DOC_METRICS`
-- `DOCS_BY_CLICK_COUNT`
-- `QUERIES_BY_COUNT`
-- `QUERIES_BY_ZERO_CLICK_RATE`
-- `QUERIES_BY_ZERO_RESULT_RATE`
-- `TREND_QUERY_DOC_METRICS`
-
-<a id="modetype"></a>
-
+```python title="Definition"
+MetricTypeType = Literal[
+    "AGG_QUERY_DOC_METRICS",
+    "DOCS_BY_CLICK_COUNT",
+    "QUERIES_BY_COUNT",
+    "QUERIES_BY_ZERO_CLICK_RATE",
+    "QUERIES_BY_ZERO_RESULT_RATE",
+    "TREND_QUERY_DOC_METRICS",
+]
+```
 ## ModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ModeType
+
+def get_value() -> ModeType:
+    return "ENABLED"
 ```
 
-Values:
-
-- `ENABLED`
-- `LEARN_ONLY`
-
-<a id="ordertype"></a>
-
+```python title="Definition"
+ModeType = Literal[
+    "ENABLED",
+    "LEARN_ONLY",
+]
+```
 ## OrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import OrderType
+
+def get_value() -> OrderType:
+    return "ASCENDING"
 ```
 
-Values:
-
-- `ASCENDING`
-- `DESCENDING`
-
-<a id="personatype"></a>
-
+```python title="Definition"
+OrderType = Literal[
+    "ASCENDING",
+    "DESCENDING",
+]
+```
 ## PersonaType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import PersonaType
+
+def get_value() -> PersonaType:
+    return "OWNER"
 ```
 
-Values:
-
-- `OWNER`
-- `VIEWER`
-
-<a id="principalmappingstatustype"></a>
-
+```python title="Definition"
+PersonaType = Literal[
+    "OWNER",
+    "VIEWER",
+]
+```
 ## PrincipalMappingStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import PrincipalMappingStatusType
+
+def get_value() -> PrincipalMappingStatusType:
+    return "DELETED"
 ```
 
-Values:
-
-- `DELETED`
-- `DELETING`
-- `FAILED`
-- `PROCESSING`
-- `SUCCEEDED`
-
-<a id="principaltypetype"></a>
-
+```python title="Definition"
+PrincipalMappingStatusType = Literal[
+    "DELETED",
+    "DELETING",
+    "FAILED",
+    "PROCESSING",
+    "SUCCEEDED",
+]
+```
 ## PrincipalTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import PrincipalTypeType
+
+def get_value() -> PrincipalTypeType:
+    return "GROUP"
 ```
 
-Values:
-
-- `GROUP`
-- `USER`
-
-<a id="queryidentifiersenclosingoptiontype"></a>
-
+```python title="Definition"
+PrincipalTypeType = Literal[
+    "GROUP",
+    "USER",
+]
+```
 ## QueryIdentifiersEnclosingOptionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import QueryIdentifiersEnclosingOptionType
+
+def get_value() -> QueryIdentifiersEnclosingOptionType:
+    return "DOUBLE_QUOTES"
 ```
 
-Values:
-
-- `DOUBLE_QUOTES`
-- `NONE`
-
-<a id="queryresulttypetype"></a>
-
+```python title="Definition"
+QueryIdentifiersEnclosingOptionType = Literal[
+    "DOUBLE_QUOTES",
+    "NONE",
+]
+```
 ## QueryResultTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import QueryResultTypeType
+
+def get_value() -> QueryResultTypeType:
+    return "ANSWER"
 ```
 
-Values:
-
-- `ANSWER`
-- `DOCUMENT`
-- `QUESTION_ANSWER`
-
-<a id="querysuggestionsblockliststatustype"></a>
-
+```python title="Definition"
+QueryResultTypeType = Literal[
+    "ANSWER",
+    "DOCUMENT",
+    "QUESTION_ANSWER",
+]
+```
 ## QuerySuggestionsBlockListStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import QuerySuggestionsBlockListStatusType
+
+def get_value() -> QuerySuggestionsBlockListStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `ACTIVE_BUT_UPDATE_FAILED`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="querysuggestionsstatustype"></a>
-
+```python title="Definition"
+QuerySuggestionsBlockListStatusType = Literal[
+    "ACTIVE",
+    "ACTIVE_BUT_UPDATE_FAILED",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## QuerySuggestionsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import QuerySuggestionsStatusType
+
+def get_value() -> QuerySuggestionsStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `UPDATING`
-
-<a id="readaccesstypetype"></a>
-
+```python title="Definition"
+QuerySuggestionsStatusType = Literal[
+    "ACTIVE",
+    "UPDATING",
+]
+```
 ## ReadAccessTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ReadAccessTypeType
+
+def get_value() -> ReadAccessTypeType:
+    return "ALLOW"
 ```
 
-Values:
-
-- `ALLOW`
-- `DENY`
-
-<a id="relevancetypetype"></a>
-
+```python title="Definition"
+ReadAccessTypeType = Literal[
+    "ALLOW",
+    "DENY",
+]
+```
 ## RelevanceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import RelevanceTypeType
+
+def get_value() -> RelevanceTypeType:
+    return "NOT_RELEVANT"
 ```
 
-Values:
-
-- `NOT_RELEVANT`
-- `RELEVANT`
-
-<a id="salesforcechatterfeedincludefiltertypetype"></a>
-
+```python title="Definition"
+RelevanceTypeType = Literal[
+    "NOT_RELEVANT",
+    "RELEVANT",
+]
+```
 ## SalesforceChatterFeedIncludeFilterTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SalesforceChatterFeedIncludeFilterTypeType
+
+def get_value() -> SalesforceChatterFeedIncludeFilterTypeType:
+    return "ACTIVE_USER"
 ```
 
-Values:
-
-- `ACTIVE_USER`
-- `STANDARD_USER`
-
-<a id="salesforceknowledgearticlestatetype"></a>
-
+```python title="Definition"
+SalesforceChatterFeedIncludeFilterTypeType = Literal[
+    "ACTIVE_USER",
+    "STANDARD_USER",
+]
+```
 ## SalesforceKnowledgeArticleStateType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SalesforceKnowledgeArticleStateType
+
+def get_value() -> SalesforceKnowledgeArticleStateType:
+    return "ARCHIVED"
 ```
 
-Values:
-
-- `ARCHIVED`
-- `DRAFT`
-- `PUBLISHED`
-
-<a id="salesforcestandardobjectnametype"></a>
-
+```python title="Definition"
+SalesforceKnowledgeArticleStateType = Literal[
+    "ARCHIVED",
+    "DRAFT",
+    "PUBLISHED",
+]
+```
 ## SalesforceStandardObjectNameType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SalesforceStandardObjectNameType
+
+def get_value() -> SalesforceStandardObjectNameType:
+    return "ACCOUNT"
 ```
 
-Values:
-
-- `ACCOUNT`
-- `CAMPAIGN`
-- `CASE`
-- `CONTACT`
-- `CONTRACT`
-- `DOCUMENT`
-- `GROUP`
-- `IDEA`
-- `LEAD`
-- `OPPORTUNITY`
-- `PARTNER`
-- `PRICEBOOK`
-- `PRODUCT`
-- `PROFILE`
-- `SOLUTION`
-- `TASK`
-- `USER`
-
-<a id="scoreconfidencetype"></a>
-
+```python title="Definition"
+SalesforceStandardObjectNameType = Literal[
+    "ACCOUNT",
+    "CAMPAIGN",
+    "CASE",
+    "CONTACT",
+    "CONTRACT",
+    "DOCUMENT",
+    "GROUP",
+    "IDEA",
+    "LEAD",
+    "OPPORTUNITY",
+    "PARTNER",
+    "PRICEBOOK",
+    "PRODUCT",
+    "PROFILE",
+    "SOLUTION",
+    "TASK",
+    "USER",
+]
+```
 ## ScoreConfidenceType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ScoreConfidenceType
+
+def get_value() -> ScoreConfidenceType:
+    return "HIGH"
 ```
 
-Values:
-
-- `HIGH`
-- `LOW`
-- `MEDIUM`
-- `NOT_AVAILABLE`
-- `VERY_HIGH`
-
-<a id="servicenowauthenticationtypetype"></a>
-
+```python title="Definition"
+ScoreConfidenceType = Literal[
+    "HIGH",
+    "LOW",
+    "MEDIUM",
+    "NOT_AVAILABLE",
+    "VERY_HIGH",
+]
+```
 ## ServiceNowAuthenticationTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ServiceNowAuthenticationTypeType
+
+def get_value() -> ServiceNowAuthenticationTypeType:
+    return "HTTP_BASIC"
 ```
 
-Values:
-
-- `HTTP_BASIC`
-- `OAUTH2`
-
-<a id="servicenowbuildversiontypetype"></a>
-
+```python title="Definition"
+ServiceNowAuthenticationTypeType = Literal[
+    "HTTP_BASIC",
+    "OAUTH2",
+]
+```
 ## ServiceNowBuildVersionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ServiceNowBuildVersionTypeType
+
+def get_value() -> ServiceNowBuildVersionTypeType:
+    return "LONDON"
 ```
 
-Values:
-
-- `LONDON`
-- `OTHERS`
-
-<a id="sharepointversiontype"></a>
-
+```python title="Definition"
+ServiceNowBuildVersionTypeType = Literal[
+    "LONDON",
+    "OTHERS",
+]
+```
 ## SharePointVersionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SharePointVersionType
+
+def get_value() -> SharePointVersionType:
+    return "SHAREPOINT_2013"
 ```
 
-Values:
-
-- `SHAREPOINT_2013`
-- `SHAREPOINT_2016`
-- `SHAREPOINT_ONLINE`
-
-<a id="slackentitytype"></a>
-
+```python title="Definition"
+SharePointVersionType = Literal[
+    "SHAREPOINT_2013",
+    "SHAREPOINT_2016",
+    "SHAREPOINT_ONLINE",
+]
+```
 ## SlackEntityType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SlackEntityType
+
+def get_value() -> SlackEntityType:
+    return "DIRECT_MESSAGE"
 ```
 
-Values:
-
-- `DIRECT_MESSAGE`
-- `GROUP_MESSAGE`
-- `PRIVATE_CHANNEL`
-- `PUBLIC_CHANNEL`
-
-<a id="sortordertype"></a>
-
+```python title="Definition"
+SlackEntityType = Literal[
+    "DIRECT_MESSAGE",
+    "GROUP_MESSAGE",
+    "PRIVATE_CHANNEL",
+    "PUBLIC_CHANNEL",
+]
+```
 ## SortOrderType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import SortOrderType
+
+def get_value() -> SortOrderType:
+    return "ASC"
 ```
 
-Values:
-
-- `ASC`
-- `DESC`
-
-<a id="thesaurusstatustype"></a>
-
+```python title="Definition"
+SortOrderType = Literal[
+    "ASC",
+    "DESC",
+]
+```
 ## ThesaurusStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ThesaurusStatusType
+
+def get_value() -> ThesaurusStatusType:
+    return "ACTIVE"
 ```
 
-Values:
-
-- `ACTIVE`
-- `ACTIVE_BUT_UPDATE_FAILED`
-- `CREATING`
-- `DELETING`
-- `FAILED`
-- `UPDATING`
-
-<a id="usercontextpolicytype"></a>
-
+```python title="Definition"
+ThesaurusStatusType = Literal[
+    "ACTIVE",
+    "ACTIVE_BUT_UPDATE_FAILED",
+    "CREATING",
+    "DELETING",
+    "FAILED",
+    "UPDATING",
+]
+```
 ## UserContextPolicyType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import UserContextPolicyType
+
+def get_value() -> UserContextPolicyType:
+    return "ATTRIBUTE_FILTER"
 ```
 
-Values:
-
-- `ATTRIBUTE_FILTER`
-- `USER_TOKEN`
-
-<a id="usergroupresolutionmodetype"></a>
-
+```python title="Definition"
+UserContextPolicyType = Literal[
+    "ATTRIBUTE_FILTER",
+    "USER_TOKEN",
+]
+```
 ## UserGroupResolutionModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import UserGroupResolutionModeType
+
+def get_value() -> UserGroupResolutionModeType:
+    return "AWS_SSO"
 ```
 
-Values:
-
-- `AWS_SSO`
-- `NONE`
-
-<a id="warningcodetype"></a>
-
+```python title="Definition"
+UserGroupResolutionModeType = Literal[
+    "AWS_SSO",
+    "NONE",
+]
+```
 ## WarningCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import WarningCodeType
+
+def get_value() -> WarningCodeType:
+    return "QUERY_LANGUAGE_INVALID_SYNTAX"
 ```
 
-Values:
-
-- `QUERY_LANGUAGE_INVALID_SYNTAX`
-
-<a id="webcrawlermodetype"></a>
-
+```python title="Definition"
+WarningCodeType = Literal[
+    "QUERY_LANGUAGE_INVALID_SYNTAX",
+]
+```
 ## WebCrawlerModeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import WebCrawlerModeType
+
+def get_value() -> WebCrawlerModeType:
+    return "EVERYTHING"
 ```
 
-Values:
-
-- `EVERYTHING`
-- `HOST_ONLY`
-- `SUBDOMAINS`
-
-<a id="kendraservicename"></a>
-
+```python title="Definition"
+WebCrawlerModeType = Literal[
+    "EVERYTHING",
+    "HOST_ONLY",
+    "SUBDOMAINS",
+]
+```
 ## kendraServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import kendraServiceName
+
+def get_value() -> kendraServiceName:
+    return "kendra"
 ```
 
-Values:
-
-- `kendra`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+kendraServiceName = Literal[
+    "kendra",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_kendra.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
+## RegionName
 
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
+```python title="Usage Example"
+from mypy_boto3_kendra.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-southeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

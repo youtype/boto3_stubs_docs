@@ -1,936 +1,990 @@
-<a id="literals-for-boto3-robomaker-module"></a>
-
-# Literals for boto3 RoboMaker module
+# Literals
 
 > [Index](../README.md) > [RoboMaker](./README.md) > Literals
 
-Auto-generated documentation for
-[RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
-type annotations stubs module
-[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+!!! note ""
 
-- [Literals for boto3 RoboMaker module](#literals-for-boto3-robomaker-module)
-  - [ArchitectureType](#architecturetype)
-  - [ComputeTypeType](#computetypetype)
-  - [DataSourceTypeType](#datasourcetypetype)
-  - [DeploymentJobErrorCodeType](#deploymentjoberrorcodetype)
-  - [DeploymentStatusType](#deploymentstatustype)
-  - [ExitBehaviorType](#exitbehaviortype)
-  - [FailureBehaviorType](#failurebehaviortype)
-  - [ListDeploymentJobsPaginatorName](#listdeploymentjobspaginatorname)
-  - [ListFleetsPaginatorName](#listfleetspaginatorname)
-  - [ListRobotApplicationsPaginatorName](#listrobotapplicationspaginatorname)
-  - [ListRobotsPaginatorName](#listrobotspaginatorname)
-  - [ListSimulationApplicationsPaginatorName](#listsimulationapplicationspaginatorname)
-  - [ListSimulationJobBatchesPaginatorName](#listsimulationjobbatchespaginatorname)
-  - [ListSimulationJobsPaginatorName](#listsimulationjobspaginatorname)
-  - [ListWorldExportJobsPaginatorName](#listworldexportjobspaginatorname)
-  - [ListWorldGenerationJobsPaginatorName](#listworldgenerationjobspaginatorname)
-  - [ListWorldTemplatesPaginatorName](#listworldtemplatespaginatorname)
-  - [ListWorldsPaginatorName](#listworldspaginatorname)
-  - [RenderingEngineTypeType](#renderingenginetypetype)
-  - [RobotDeploymentStepType](#robotdeploymentsteptype)
-  - [RobotSoftwareSuiteTypeType](#robotsoftwaresuitetypetype)
-  - [RobotSoftwareSuiteVersionTypeType](#robotsoftwaresuiteversiontypetype)
-  - [RobotStatusType](#robotstatustype)
-  - [SimulationJobBatchErrorCodeType](#simulationjobbatcherrorcodetype)
-  - [SimulationJobBatchStatusType](#simulationjobbatchstatustype)
-  - [SimulationJobErrorCodeType](#simulationjoberrorcodetype)
-  - [SimulationJobStatusType](#simulationjobstatustype)
-  - [SimulationSoftwareSuiteTypeType](#simulationsoftwaresuitetypetype)
-  - [UploadBehaviorType](#uploadbehaviortype)
-  - [WorldExportJobErrorCodeType](#worldexportjoberrorcodetype)
-  - [WorldExportJobStatusType](#worldexportjobstatustype)
-  - [WorldGenerationJobErrorCodeType](#worldgenerationjoberrorcodetype)
-  - [WorldGenerationJobStatusType](#worldgenerationjobstatustype)
-  - [RoboMakerServiceName](#robomakerservicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="architecturetype"></a>
+    Auto-generated documentation for [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
+    type annotations stubs module [mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 ## ArchitectureType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ArchitectureType
+
+def get_value() -> ArchitectureType:
+    return "ARM64"
 ```
 
-Values:
-
-- `ARM64`
-- `ARMHF`
-- `X86_64`
-
-<a id="computetypetype"></a>
-
+```python title="Definition"
+ArchitectureType = Literal[
+    "ARM64",
+    "ARMHF",
+    "X86_64",
+]
+```
 ## ComputeTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ComputeTypeType
+
+def get_value() -> ComputeTypeType:
+    return "CPU"
 ```
 
-Values:
-
-- `CPU`
-- `GPU_AND_CPU`
-
-<a id="datasourcetypetype"></a>
-
+```python title="Definition"
+ComputeTypeType = Literal[
+    "CPU",
+    "GPU_AND_CPU",
+]
+```
 ## DataSourceTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import DataSourceTypeType
+
+def get_value() -> DataSourceTypeType:
+    return "Archive"
 ```
 
-Values:
-
-- `Archive`
-- `File`
-- `Prefix`
-
-<a id="deploymentjoberrorcodetype"></a>
-
+```python title="Definition"
+DataSourceTypeType = Literal[
+    "Archive",
+    "File",
+    "Prefix",
+]
+```
 ## DeploymentJobErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import DeploymentJobErrorCodeType
+
+def get_value() -> DeploymentJobErrorCodeType:
+    return "BadLambdaAssociated"
 ```
 
-Values:
-
-- `BadLambdaAssociated`
-- `BadPermissionError`
-- `DeploymentFleetDoesNotExist`
-- `DownloadConditionFailed`
-- `EnvironmentSetupError`
-- `EtagMismatch`
-- `ExtractingBundleFailure`
-- `FailureThresholdBreached`
-- `FleetDeploymentTimeout`
-- `GreengrassDeploymentFailed`
-- `GreengrassGroupVersionDoesNotExist`
-- `InternalServerError`
-- `InvalidGreengrassGroup`
-- `LambdaDeleted`
-- `MissingRobotApplicationArchitecture`
-- `MissingRobotArchitecture`
-- `MissingRobotDeploymentResource`
-- `PostLaunchFileFailure`
-- `PreLaunchFileFailure`
-- `ResourceNotFound`
-- `RobotAgentConnectionTimeout`
-- `RobotApplicationDoesNotExist`
-- `RobotDeploymentAborted`
-- `RobotDeploymentNoResponse`
-
-<a id="deploymentstatustype"></a>
-
+```python title="Definition"
+DeploymentJobErrorCodeType = Literal[
+    "BadLambdaAssociated",
+    "BadPermissionError",
+    "DeploymentFleetDoesNotExist",
+    "DownloadConditionFailed",
+    "EnvironmentSetupError",
+    "EtagMismatch",
+    "ExtractingBundleFailure",
+    "FailureThresholdBreached",
+    "FleetDeploymentTimeout",
+    "GreengrassDeploymentFailed",
+    "GreengrassGroupVersionDoesNotExist",
+    "InternalServerError",
+    "InvalidGreengrassGroup",
+    "LambdaDeleted",
+    "MissingRobotApplicationArchitecture",
+    "MissingRobotArchitecture",
+    "MissingRobotDeploymentResource",
+    "PostLaunchFileFailure",
+    "PreLaunchFileFailure",
+    "ResourceNotFound",
+    "RobotAgentConnectionTimeout",
+    "RobotApplicationDoesNotExist",
+    "RobotDeploymentAborted",
+    "RobotDeploymentNoResponse",
+]
+```
 ## DeploymentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import DeploymentStatusType
+
+def get_value() -> DeploymentStatusType:
+    return "Canceled"
 ```
 
-Values:
-
-- `Canceled`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `Preparing`
-- `Succeeded`
-
-<a id="exitbehaviortype"></a>
-
+```python title="Definition"
+DeploymentStatusType = Literal[
+    "Canceled",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "Preparing",
+    "Succeeded",
+]
+```
 ## ExitBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ExitBehaviorType
+
+def get_value() -> ExitBehaviorType:
+    return "FAIL"
 ```
 
-Values:
-
-- `FAIL`
-- `RESTART`
-
-<a id="failurebehaviortype"></a>
-
+```python title="Definition"
+ExitBehaviorType = Literal[
+    "FAIL",
+    "RESTART",
+]
+```
 ## FailureBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import FailureBehaviorType
+
+def get_value() -> FailureBehaviorType:
+    return "Continue"
 ```
 
-Values:
-
-- `Continue`
-- `Fail`
-
-<a id="listdeploymentjobspaginatorname"></a>
-
+```python title="Definition"
+FailureBehaviorType = Literal[
+    "Continue",
+    "Fail",
+]
+```
 ## ListDeploymentJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListDeploymentJobsPaginatorName
+
+def get_value() -> ListDeploymentJobsPaginatorName:
+    return "list_deployment_jobs"
 ```
 
-Values:
-
-- `list_deployment_jobs`
-
-<a id="listfleetspaginatorname"></a>
-
+```python title="Definition"
+ListDeploymentJobsPaginatorName = Literal[
+    "list_deployment_jobs",
+]
+```
 ## ListFleetsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListFleetsPaginatorName
+
+def get_value() -> ListFleetsPaginatorName:
+    return "list_fleets"
 ```
 
-Values:
-
-- `list_fleets`
-
-<a id="listrobotapplicationspaginatorname"></a>
-
+```python title="Definition"
+ListFleetsPaginatorName = Literal[
+    "list_fleets",
+]
+```
 ## ListRobotApplicationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListRobotApplicationsPaginatorName
+
+def get_value() -> ListRobotApplicationsPaginatorName:
+    return "list_robot_applications"
 ```
 
-Values:
-
-- `list_robot_applications`
-
-<a id="listrobotspaginatorname"></a>
-
+```python title="Definition"
+ListRobotApplicationsPaginatorName = Literal[
+    "list_robot_applications",
+]
+```
 ## ListRobotsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListRobotsPaginatorName
+
+def get_value() -> ListRobotsPaginatorName:
+    return "list_robots"
 ```
 
-Values:
-
-- `list_robots`
-
-<a id="listsimulationapplicationspaginatorname"></a>
-
+```python title="Definition"
+ListRobotsPaginatorName = Literal[
+    "list_robots",
+]
+```
 ## ListSimulationApplicationsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListSimulationApplicationsPaginatorName
+
+def get_value() -> ListSimulationApplicationsPaginatorName:
+    return "list_simulation_applications"
 ```
 
-Values:
-
-- `list_simulation_applications`
-
-<a id="listsimulationjobbatchespaginatorname"></a>
-
+```python title="Definition"
+ListSimulationApplicationsPaginatorName = Literal[
+    "list_simulation_applications",
+]
+```
 ## ListSimulationJobBatchesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListSimulationJobBatchesPaginatorName
+
+def get_value() -> ListSimulationJobBatchesPaginatorName:
+    return "list_simulation_job_batches"
 ```
 
-Values:
-
-- `list_simulation_job_batches`
-
-<a id="listsimulationjobspaginatorname"></a>
-
+```python title="Definition"
+ListSimulationJobBatchesPaginatorName = Literal[
+    "list_simulation_job_batches",
+]
+```
 ## ListSimulationJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListSimulationJobsPaginatorName
+
+def get_value() -> ListSimulationJobsPaginatorName:
+    return "list_simulation_jobs"
 ```
 
-Values:
-
-- `list_simulation_jobs`
-
-<a id="listworldexportjobspaginatorname"></a>
-
+```python title="Definition"
+ListSimulationJobsPaginatorName = Literal[
+    "list_simulation_jobs",
+]
+```
 ## ListWorldExportJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListWorldExportJobsPaginatorName
+
+def get_value() -> ListWorldExportJobsPaginatorName:
+    return "list_world_export_jobs"
 ```
 
-Values:
-
-- `list_world_export_jobs`
-
-<a id="listworldgenerationjobspaginatorname"></a>
-
+```python title="Definition"
+ListWorldExportJobsPaginatorName = Literal[
+    "list_world_export_jobs",
+]
+```
 ## ListWorldGenerationJobsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListWorldGenerationJobsPaginatorName
+
+def get_value() -> ListWorldGenerationJobsPaginatorName:
+    return "list_world_generation_jobs"
 ```
 
-Values:
-
-- `list_world_generation_jobs`
-
-<a id="listworldtemplatespaginatorname"></a>
-
+```python title="Definition"
+ListWorldGenerationJobsPaginatorName = Literal[
+    "list_world_generation_jobs",
+]
+```
 ## ListWorldTemplatesPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListWorldTemplatesPaginatorName
+
+def get_value() -> ListWorldTemplatesPaginatorName:
+    return "list_world_templates"
 ```
 
-Values:
-
-- `list_world_templates`
-
-<a id="listworldspaginatorname"></a>
-
+```python title="Definition"
+ListWorldTemplatesPaginatorName = Literal[
+    "list_world_templates",
+]
+```
 ## ListWorldsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ListWorldsPaginatorName
+
+def get_value() -> ListWorldsPaginatorName:
+    return "list_worlds"
 ```
 
-Values:
-
-- `list_worlds`
-
-<a id="renderingenginetypetype"></a>
-
+```python title="Definition"
+ListWorldsPaginatorName = Literal[
+    "list_worlds",
+]
+```
 ## RenderingEngineTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RenderingEngineTypeType
+
+def get_value() -> RenderingEngineTypeType:
+    return "OGRE"
 ```
 
-Values:
-
-- `OGRE`
-
-<a id="robotdeploymentsteptype"></a>
-
+```python title="Definition"
+RenderingEngineTypeType = Literal[
+    "OGRE",
+]
+```
 ## RobotDeploymentStepType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RobotDeploymentStepType
+
+def get_value() -> RobotDeploymentStepType:
+    return "DownloadingExtracting"
 ```
 
-Values:
-
-- `DownloadingExtracting`
-- `ExecutingDownloadCondition`
-- `ExecutingPostLaunch`
-- `ExecutingPreLaunch`
-- `Finished`
-- `Launching`
-- `Validating`
-
-<a id="robotsoftwaresuitetypetype"></a>
-
+```python title="Definition"
+RobotDeploymentStepType = Literal[
+    "DownloadingExtracting",
+    "ExecutingDownloadCondition",
+    "ExecutingPostLaunch",
+    "ExecutingPreLaunch",
+    "Finished",
+    "Launching",
+    "Validating",
+]
+```
 ## RobotSoftwareSuiteTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RobotSoftwareSuiteTypeType
+
+def get_value() -> RobotSoftwareSuiteTypeType:
+    return "General"
 ```
 
-Values:
-
-- `General`
-- `ROS`
-- `ROS2`
-
-<a id="robotsoftwaresuiteversiontypetype"></a>
-
+```python title="Definition"
+RobotSoftwareSuiteTypeType = Literal[
+    "General",
+    "ROS",
+    "ROS2",
+]
+```
 ## RobotSoftwareSuiteVersionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RobotSoftwareSuiteVersionTypeType
+
+def get_value() -> RobotSoftwareSuiteVersionTypeType:
+    return "Dashing"
 ```
 
-Values:
-
-- `Dashing`
-- `Foxy`
-- `Kinetic`
-- `Melodic`
-
-<a id="robotstatustype"></a>
-
+```python title="Definition"
+RobotSoftwareSuiteVersionTypeType = Literal[
+    "Dashing",
+    "Foxy",
+    "Kinetic",
+    "Melodic",
+]
+```
 ## RobotStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RobotStatusType
+
+def get_value() -> RobotStatusType:
+    return "Available"
 ```
 
-Values:
-
-- `Available`
-- `Deploying`
-- `Failed`
-- `InSync`
-- `NoResponse`
-- `PendingNewDeployment`
-- `Registered`
-
-<a id="simulationjobbatcherrorcodetype"></a>
-
+```python title="Definition"
+RobotStatusType = Literal[
+    "Available",
+    "Deploying",
+    "Failed",
+    "InSync",
+    "NoResponse",
+    "PendingNewDeployment",
+    "Registered",
+]
+```
 ## SimulationJobBatchErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import SimulationJobBatchErrorCodeType
+
+def get_value() -> SimulationJobBatchErrorCodeType:
+    return "InternalServiceError"
 ```
 
-Values:
-
-- `InternalServiceError`
-
-<a id="simulationjobbatchstatustype"></a>
-
+```python title="Definition"
+SimulationJobBatchErrorCodeType = Literal[
+    "InternalServiceError",
+]
+```
 ## SimulationJobBatchStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import SimulationJobBatchStatusType
+
+def get_value() -> SimulationJobBatchStatusType:
+    return "Canceled"
 ```
 
-Values:
-
-- `Canceled`
-- `Canceling`
-- `Completed`
-- `Completing`
-- `Failed`
-- `InProgress`
-- `Pending`
-- `TimedOut`
-- `TimingOut`
-
-<a id="simulationjoberrorcodetype"></a>
-
+```python title="Definition"
+SimulationJobBatchStatusType = Literal[
+    "Canceled",
+    "Canceling",
+    "Completed",
+    "Completing",
+    "Failed",
+    "InProgress",
+    "Pending",
+    "TimedOut",
+    "TimingOut",
+]
+```
 ## SimulationJobErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import SimulationJobErrorCodeType
+
+def get_value() -> SimulationJobErrorCodeType:
+    return "BadPermissionsCloudwatchLogs"
 ```
 
-Values:
-
-- `BadPermissionsCloudwatchLogs`
-- `BadPermissionsRobotApplication`
-- `BadPermissionsS3Object`
-- `BadPermissionsS3Output`
-- `BadPermissionsSimulationApplication`
-- `BadPermissionsUserCredentials`
-- `BatchCanceled`
-- `BatchTimedOut`
-- `ENILimitExceeded`
-- `InternalServiceError`
-- `InvalidBundleRobotApplication`
-- `InvalidBundleSimulationApplication`
-- `InvalidInput`
-- `InvalidS3Resource`
-- `LimitExceeded`
-- `MismatchedEtag`
-- `RequestThrottled`
-- `ResourceNotFound`
-- `RobotApplicationCrash`
-- `RobotApplicationHealthCheckFailure`
-- `RobotApplicationVersionMismatchedEtag`
-- `SimulationApplicationCrash`
-- `SimulationApplicationHealthCheckFailure`
-- `SimulationApplicationVersionMismatchedEtag`
-- `SubnetIpLimitExceeded`
-- `ThrottlingError`
-- `UploadContentMismatchError`
-- `WrongRegionRobotApplication`
-- `WrongRegionS3Bucket`
-- `WrongRegionS3Output`
-- `WrongRegionSimulationApplication`
-
-<a id="simulationjobstatustype"></a>
-
+```python title="Definition"
+SimulationJobErrorCodeType = Literal[
+    "BadPermissionsCloudwatchLogs",
+    "BadPermissionsRobotApplication",
+    "BadPermissionsS3Object",
+    "BadPermissionsS3Output",
+    "BadPermissionsSimulationApplication",
+    "BadPermissionsUserCredentials",
+    "BatchCanceled",
+    "BatchTimedOut",
+    "ENILimitExceeded",
+    "InternalServiceError",
+    "InvalidBundleRobotApplication",
+    "InvalidBundleSimulationApplication",
+    "InvalidInput",
+    "InvalidS3Resource",
+    "LimitExceeded",
+    "MismatchedEtag",
+    "RequestThrottled",
+    "ResourceNotFound",
+    "RobotApplicationCrash",
+    "RobotApplicationHealthCheckFailure",
+    "RobotApplicationVersionMismatchedEtag",
+    "SimulationApplicationCrash",
+    "SimulationApplicationHealthCheckFailure",
+    "SimulationApplicationVersionMismatchedEtag",
+    "SubnetIpLimitExceeded",
+    "ThrottlingError",
+    "UploadContentMismatchError",
+    "WrongRegionRobotApplication",
+    "WrongRegionS3Bucket",
+    "WrongRegionS3Output",
+    "WrongRegionSimulationApplication",
+]
+```
 ## SimulationJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import SimulationJobStatusType
+
+def get_value() -> SimulationJobStatusType:
+    return "Canceled"
 ```
 
-Values:
-
-- `Canceled`
-- `Completed`
-- `Failed`
-- `Pending`
-- `Preparing`
-- `Restarting`
-- `Running`
-- `RunningFailed`
-- `Terminated`
-- `Terminating`
-
-<a id="simulationsoftwaresuitetypetype"></a>
-
+```python title="Definition"
+SimulationJobStatusType = Literal[
+    "Canceled",
+    "Completed",
+    "Failed",
+    "Pending",
+    "Preparing",
+    "Restarting",
+    "Running",
+    "RunningFailed",
+    "Terminated",
+    "Terminating",
+]
+```
 ## SimulationSoftwareSuiteTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import SimulationSoftwareSuiteTypeType
+
+def get_value() -> SimulationSoftwareSuiteTypeType:
+    return "Gazebo"
 ```
 
-Values:
-
-- `Gazebo`
-- `RosbagPlay`
-- `SimulationRuntime`
-
-<a id="uploadbehaviortype"></a>
-
+```python title="Definition"
+SimulationSoftwareSuiteTypeType = Literal[
+    "Gazebo",
+    "RosbagPlay",
+    "SimulationRuntime",
+]
+```
 ## UploadBehaviorType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import UploadBehaviorType
+
+def get_value() -> UploadBehaviorType:
+    return "UPLOAD_ON_TERMINATE"
 ```
 
-Values:
-
-- `UPLOAD_ON_TERMINATE`
-- `UPLOAD_ROLLING_AUTO_REMOVE`
-
-<a id="worldexportjoberrorcodetype"></a>
-
+```python title="Definition"
+UploadBehaviorType = Literal[
+    "UPLOAD_ON_TERMINATE",
+    "UPLOAD_ROLLING_AUTO_REMOVE",
+]
+```
 ## WorldExportJobErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import WorldExportJobErrorCodeType
+
+def get_value() -> WorldExportJobErrorCodeType:
+    return "AccessDenied"
 ```
 
-Values:
-
-- `AccessDenied`
-- `InternalServiceError`
-- `InvalidInput`
-- `LimitExceeded`
-- `RequestThrottled`
-- `ResourceNotFound`
-
-<a id="worldexportjobstatustype"></a>
-
+```python title="Definition"
+WorldExportJobErrorCodeType = Literal[
+    "AccessDenied",
+    "InternalServiceError",
+    "InvalidInput",
+    "LimitExceeded",
+    "RequestThrottled",
+    "ResourceNotFound",
+]
+```
 ## WorldExportJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import WorldExportJobStatusType
+
+def get_value() -> WorldExportJobStatusType:
+    return "Canceled"
 ```
 
-Values:
-
-- `Canceled`
-- `Canceling`
-- `Completed`
-- `Failed`
-- `Pending`
-- `Running`
-
-<a id="worldgenerationjoberrorcodetype"></a>
-
+```python title="Definition"
+WorldExportJobStatusType = Literal[
+    "Canceled",
+    "Canceling",
+    "Completed",
+    "Failed",
+    "Pending",
+    "Running",
+]
+```
 ## WorldGenerationJobErrorCodeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import WorldGenerationJobErrorCodeType
+
+def get_value() -> WorldGenerationJobErrorCodeType:
+    return "AllWorldGenerationFailed"
 ```
 
-Values:
-
-- `AllWorldGenerationFailed`
-- `InternalServiceError`
-- `InvalidInput`
-- `LimitExceeded`
-- `RequestThrottled`
-- `ResourceNotFound`
-
-<a id="worldgenerationjobstatustype"></a>
-
+```python title="Definition"
+WorldGenerationJobErrorCodeType = Literal[
+    "AllWorldGenerationFailed",
+    "InternalServiceError",
+    "InvalidInput",
+    "LimitExceeded",
+    "RequestThrottled",
+    "ResourceNotFound",
+]
+```
 ## WorldGenerationJobStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import WorldGenerationJobStatusType
+
+def get_value() -> WorldGenerationJobStatusType:
+    return "Canceled"
 ```
 
-Values:
-
-- `Canceled`
-- `Canceling`
-- `Completed`
-- `Failed`
-- `PartialFailed`
-- `Pending`
-- `Running`
-
-<a id="robomakerservicename"></a>
-
+```python title="Definition"
+WorldGenerationJobStatusType = Literal[
+    "Canceled",
+    "Canceling",
+    "Completed",
+    "Failed",
+    "PartialFailed",
+    "Pending",
+    "Running",
+]
+```
 ## RoboMakerServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import RoboMakerServiceName
+
+def get_value() -> RoboMakerServiceName:
+    return "robomaker"
 ```
 
-Values:
-
-- `robomaker`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+RoboMakerServiceName = Literal[
+    "robomaker",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_robomaker.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "list_deployment_jobs"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "list_deployment_jobs",
+    "list_fleets",
+    "list_robot_applications",
+    "list_robots",
+    "list_simulation_applications",
+    "list_simulation_job_batches",
+    "list_simulation_jobs",
+    "list_world_export_jobs",
+    "list_world_generation_jobs",
+    "list_world_templates",
+    "list_worlds",
+]
+```
+## RegionName
 
-- `list_deployment_jobs`
-- `list_fleets`
-- `list_robot_applications`
-- `list_robots`
-- `list_simulation_applications`
-- `list_simulation_job_batches`
-- `list_simulation_jobs`
-- `list_world_export_jobs`
-- `list_world_generation_jobs`
-- `list_world_templates`
-- `list_worlds`
+```python title="Usage Example"
+from mypy_boto3_robomaker.literals import RegionName
+
+def get_value() -> RegionName:
+    return "ap-northeast-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "ap-northeast-1",
+    "ap-southeast-1",
+    "eu-central-1",
+    "eu-west-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-2",
+]
+```

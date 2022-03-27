@@ -1,43 +1,18 @@
-<a id="paginators-for-boto3-proton-module"></a>
-
-# Paginators for boto3 Proton module
+# Paginators
 
 > [Index](../README.md) > [Proton](./README.md) > Paginators
 
-Auto-generated documentation for
-[Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
-type annotations stubs module
-[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
+!!! note ""
 
-- [Paginators for boto3 Proton module](#paginators-for-boto3-proton-module)
-  - [ListEnvironmentAccountConnectionsPaginator](#listenvironmentaccountconnectionspaginator)
-  - [ListEnvironmentOutputsPaginator](#listenvironmentoutputspaginator)
-  - [ListEnvironmentProvisionedResourcesPaginator](#listenvironmentprovisionedresourcespaginator)
-  - [ListEnvironmentTemplateVersionsPaginator](#listenvironmenttemplateversionspaginator)
-  - [ListEnvironmentTemplatesPaginator](#listenvironmenttemplatespaginator)
-  - [ListEnvironmentsPaginator](#listenvironmentspaginator)
-  - [ListRepositoriesPaginator](#listrepositoriespaginator)
-  - [ListRepositorySyncDefinitionsPaginator](#listrepositorysyncdefinitionspaginator)
-  - [ListServiceInstanceOutputsPaginator](#listserviceinstanceoutputspaginator)
-  - [ListServiceInstanceProvisionedResourcesPaginator](#listserviceinstanceprovisionedresourcespaginator)
-  - [ListServiceInstancesPaginator](#listserviceinstancespaginator)
-  - [ListServicePipelineOutputsPaginator](#listservicepipelineoutputspaginator)
-  - [ListServicePipelineProvisionedResourcesPaginator](#listservicepipelineprovisionedresourcespaginator)
-  - [ListServiceTemplateVersionsPaginator](#listservicetemplateversionspaginator)
-  - [ListServiceTemplatesPaginator](#listservicetemplatespaginator)
-  - [ListServicesPaginator](#listservicespaginator)
-  - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
-
-<a id="listenvironmentaccountconnectionspaginator"></a>
+    Auto-generated documentation for [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
+    type annotations stubs module [mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 ## ListEnvironmentAccountConnectionsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environment_account_connections")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environment_account_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentAccountConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentAccountConnectionsPaginator
@@ -46,33 +21,44 @@ def get_list_environment_account_connections_paginator() -> ListEnvironmentAccou
     return Session().client("proton").get_paginator("list_environment_account_connections")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironmentAccountConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentAccountConnections)
 
-Arguments for `ListEnvironmentAccountConnectionsPaginator.paginate` method:
+### paginate
 
-- `requestedBy`:
-  [EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype)
-  *(required)*
-- `environmentName`: `str`
-- `statuses`:
-  `Sequence`\[[EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentAccountConnectionsPaginator.paginate` method.
 
-`ListEnvironmentAccountConnectionsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    requestedBy: EnvironmentAccountConnectionRequesterAccountTypeType,  # (1)
+    environmentName: str = ...,
+    statuses: Sequence[EnvironmentAccountConnectionStatusType] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListEnvironmentAccountConnectionsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listenvironmentoutputspaginator"></a>
+1. See [:material-code-brackets: EnvironmentAccountConnectionRequesterAccountTypeType](./literals.md#environmentaccountconnectionrequesteraccounttypetype) 
+2. See [:material-code-brackets: EnvironmentAccountConnectionStatusType](./literals.md#environmentaccountconnectionstatustype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListEnvironmentAccountConnectionsOutputTypeDef](./type_defs.md#listenvironmentaccountconnectionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef = {  # (1)
+    "requestedBy": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentAccountConnectionsInputListEnvironmentAccountConnectionsPaginateTypeDef](./type_defs.md#listenvironmentaccountconnectionsinputlistenvironmentaccountconnectionspaginatetypedef) 
 ## ListEnvironmentOutputsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environment_outputs")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environment_outputs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentOutputs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentOutputsPaginator
@@ -81,28 +67,40 @@ def get_list_environment_outputs_paginator() -> ListEnvironmentOutputsPaginator:
     return Session().client("proton").get_paginator("list_environment_outputs")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironmentOutputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentOutputs)
 
-Arguments for `ListEnvironmentOutputsPaginator.paginate` method:
+### paginate
 
-- `environmentName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentOutputsPaginator.paginate` method.
 
-`ListEnvironmentOutputsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    environmentName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentOutputsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmentprovisionedresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentOutputsOutputTypeDef](./type_defs.md#listenvironmentoutputsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef = {  # (1)
+    "environmentName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentOutputsInputListEnvironmentOutputsPaginateTypeDef](./type_defs.md#listenvironmentoutputsinputlistenvironmentoutputspaginatetypedef) 
 ## ListEnvironmentProvisionedResourcesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environment_provisioned_resources")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environment_provisioned_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentProvisionedResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentProvisionedResourcesPaginator
@@ -111,28 +109,40 @@ def get_list_environment_provisioned_resources_paginator() -> ListEnvironmentPro
     return Session().client("proton").get_paginator("list_environment_provisioned_resources")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironmentProvisionedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentProvisionedResources)
 
-Arguments for `ListEnvironmentProvisionedResourcesPaginator.paginate` method:
+### paginate
 
-- `environmentName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentProvisionedResourcesPaginator.paginate` method.
 
-`ListEnvironmentProvisionedResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    environmentName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentProvisionedResourcesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmenttemplateversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentProvisionedResourcesOutputTypeDef](./type_defs.md#listenvironmentprovisionedresourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef = {  # (1)
+    "environmentName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentProvisionedResourcesInputListEnvironmentProvisionedResourcesPaginateTypeDef](./type_defs.md#listenvironmentprovisionedresourcesinputlistenvironmentprovisionedresourcespaginatetypedef) 
 ## ListEnvironmentTemplateVersionsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environment_template_versions")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environment_template_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentTemplateVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentTemplateVersionsPaginator
@@ -141,29 +151,41 @@ def get_list_environment_template_versions_paginator() -> ListEnvironmentTemplat
     return Session().client("proton").get_paginator("list_environment_template_versions")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironmentTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentTemplateVersions)
 
-Arguments for `ListEnvironmentTemplateVersionsPaginator.paginate` method:
+### paginate
 
-- `templateName`: `str` *(required)*
-- `majorVersion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentTemplateVersionsPaginator.paginate` method.
 
-`ListEnvironmentTemplateVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    templateName: str,
+    majorVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentTemplateVersionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmenttemplatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentTemplateVersionsOutputTypeDef](./type_defs.md#listenvironmenttemplateversionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef = {  # (1)
+    "templateName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentTemplateVersionsInputListEnvironmentTemplateVersionsPaginateTypeDef](./type_defs.md#listenvironmenttemplateversionsinputlistenvironmenttemplateversionspaginatetypedef) 
 ## ListEnvironmentTemplatesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environment_templates")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environment_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentTemplatesPaginator
@@ -172,27 +194,39 @@ def get_list_environment_templates_paginator() -> ListEnvironmentTemplatesPagina
     return Session().client("proton").get_paginator("list_environment_templates")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironmentTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironmentTemplates)
 
-Arguments for `ListEnvironmentTemplatesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentTemplatesPaginator.paginate` method.
 
-`ListEnvironmentTemplatesPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListEnvironmentTemplatesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listenvironmentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListEnvironmentTemplatesOutputTypeDef](./type_defs.md#listenvironmenttemplatesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentTemplatesInputListEnvironmentTemplatesPaginateTypeDef](./type_defs.md#listenvironmenttemplatesinputlistenvironmenttemplatespaginatetypedef) 
 ## ListEnvironmentsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_environments")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_environments")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListEnvironmentsPaginator
@@ -201,29 +235,41 @@ def get_list_environments_paginator() -> ListEnvironmentsPaginator:
     return Session().client("proton").get_paginator("list_environments")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListEnvironments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListEnvironments)
 
-Arguments for `ListEnvironmentsPaginator.paginate` method:
+### paginate
 
-- `environmentTemplates`:
-  `Sequence`\[[EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListEnvironmentsPaginator.paginate` method.
 
-`ListEnvironmentsPaginator.paginate` returns
-`_PageIterator`\[[ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    environmentTemplates: Sequence[EnvironmentTemplateFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListEnvironmentsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listrepositoriespaginator"></a>
+1. See [:material-code-braces: EnvironmentTemplateFilterTypeDef](./type_defs.md#environmenttemplatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListEnvironmentsInputListEnvironmentsPaginateTypeDef = {  # (1)
+    "environmentTemplates": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListEnvironmentsInputListEnvironmentsPaginateTypeDef](./type_defs.md#listenvironmentsinputlistenvironmentspaginatetypedef) 
 ## ListRepositoriesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_repositories")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_repositories")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListRepositories)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListRepositoriesPaginator
@@ -232,27 +278,39 @@ def get_list_repositories_paginator() -> ListRepositoriesPaginator:
     return Session().client("proton").get_paginator("list_repositories")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListRepositories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListRepositories)
 
-Arguments for `ListRepositoriesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRepositoriesPaginator.paginate` method.
 
-`ListRepositoriesPaginator.paginate` returns
-`_PageIterator`\[[ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListRepositoriesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listrepositorysyncdefinitionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRepositoriesInputListRepositoriesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRepositoriesInputListRepositoriesPaginateTypeDef](./type_defs.md#listrepositoriesinputlistrepositoriespaginatetypedef) 
 ## ListRepositorySyncDefinitionsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_repository_sync_definitions")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_repository_sync_definitions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListRepositorySyncDefinitions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListRepositorySyncDefinitionsPaginator
@@ -261,32 +319,46 @@ def get_list_repository_sync_definitions_paginator() -> ListRepositorySyncDefini
     return Session().client("proton").get_paginator("list_repository_sync_definitions")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListRepositorySyncDefinitions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListRepositorySyncDefinitions)
 
-Arguments for `ListRepositorySyncDefinitionsPaginator.paginate` method:
+### paginate
 
-- `repositoryName`: `str` *(required)*
-- `repositoryProvider`:
-  [RepositoryProviderType](./literals.md#repositoryprovidertype) *(required)*
-- `syncType`: `Literal['TEMPLATE_SYNC']` (see
-  [SyncTypeType](./literals.md#synctypetype)) *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListRepositorySyncDefinitionsPaginator.paginate` method.
 
-`ListRepositorySyncDefinitionsPaginator.paginate` returns
-`_PageIterator`\[[ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    repositoryName: str,
+    repositoryProvider: RepositoryProviderType,  # (1)
+    syncType: SyncTypeType,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListRepositorySyncDefinitionsOutputTypeDef]:  # (4)
+    ...
+```
 
-<a id="listserviceinstanceoutputspaginator"></a>
+1. See [:material-code-brackets: RepositoryProviderType](./literals.md#repositoryprovidertype) 
+2. See [:material-code-brackets: SyncTypeType](./literals.md#synctypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListRepositorySyncDefinitionsOutputTypeDef](./type_defs.md#listrepositorysyncdefinitionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef = {  # (1)
+    "repositoryName": ...,
+    "repositoryProvider": ...,
+    "syncType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListRepositorySyncDefinitionsInputListRepositorySyncDefinitionsPaginateTypeDef](./type_defs.md#listrepositorysyncdefinitionsinputlistrepositorysyncdefinitionspaginatetypedef) 
 ## ListServiceInstanceOutputsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_instance_outputs")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_instance_outputs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstanceOutputs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServiceInstanceOutputsPaginator
@@ -295,29 +367,42 @@ def get_list_service_instance_outputs_paginator() -> ListServiceInstanceOutputsP
     return Session().client("proton").get_paginator("list_service_instance_outputs")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServiceInstanceOutputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstanceOutputs)
 
-Arguments for `ListServiceInstanceOutputsPaginator.paginate` method:
+### paginate
 
-- `serviceInstanceName`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceInstanceOutputsPaginator.paginate` method.
 
-`ListServiceInstanceOutputsPaginator.paginate` returns
-`_PageIterator`\[[ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serviceInstanceName: str,
+    serviceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceInstanceOutputsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listserviceinstanceprovisionedresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceInstanceOutputsOutputTypeDef](./type_defs.md#listserviceinstanceoutputsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef = {  # (1)
+    "serviceInstanceName": ...,
+    "serviceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceInstanceOutputsInputListServiceInstanceOutputsPaginateTypeDef](./type_defs.md#listserviceinstanceoutputsinputlistserviceinstanceoutputspaginatetypedef) 
 ## ListServiceInstanceProvisionedResourcesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_instance_provisioned_resources")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_instance_provisioned_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstanceProvisionedResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServiceInstanceProvisionedResourcesPaginator
@@ -326,30 +411,42 @@ def get_list_service_instance_provisioned_resources_paginator() -> ListServiceIn
     return Session().client("proton").get_paginator("list_service_instance_provisioned_resources")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServiceInstanceProvisionedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstanceProvisionedResources)
 
-Arguments for `ListServiceInstanceProvisionedResourcesPaginator.paginate`
-method:
+### paginate
 
-- `serviceInstanceName`: `str` *(required)*
-- `serviceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceInstanceProvisionedResourcesPaginator.paginate` method.
 
-`ListServiceInstanceProvisionedResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serviceInstanceName: str,
+    serviceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceInstanceProvisionedResourcesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listserviceinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceInstanceProvisionedResourcesOutputTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef = {  # (1)
+    "serviceInstanceName": ...,
+    "serviceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceInstanceProvisionedResourcesInputListServiceInstanceProvisionedResourcesPaginateTypeDef](./type_defs.md#listserviceinstanceprovisionedresourcesinputlistserviceinstanceprovisionedresourcespaginatetypedef) 
 ## ListServiceInstancesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_instances")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServiceInstancesPaginator
@@ -358,28 +455,40 @@ def get_list_service_instances_paginator() -> ListServiceInstancesPaginator:
     return Session().client("proton").get_paginator("list_service_instances")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServiceInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceInstances)
 
-Arguments for `ListServiceInstancesPaginator.paginate` method:
+### paginate
 
-- `serviceName`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceInstancesPaginator.paginate` method.
 
-`ListServiceInstancesPaginator.paginate` returns
-`_PageIterator`\[[ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serviceName: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceInstancesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicepipelineoutputspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceInstancesOutputTypeDef](./type_defs.md#listserviceinstancesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceInstancesInputListServiceInstancesPaginateTypeDef = {  # (1)
+    "serviceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceInstancesInputListServiceInstancesPaginateTypeDef](./type_defs.md#listserviceinstancesinputlistserviceinstancespaginatetypedef) 
 ## ListServicePipelineOutputsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_pipeline_outputs")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_pipeline_outputs")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServicePipelineOutputs)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServicePipelineOutputsPaginator
@@ -388,28 +497,40 @@ def get_list_service_pipeline_outputs_paginator() -> ListServicePipelineOutputsP
     return Session().client("proton").get_paginator("list_service_pipeline_outputs")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServicePipelineOutputs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServicePipelineOutputs)
 
-Arguments for `ListServicePipelineOutputsPaginator.paginate` method:
+### paginate
 
-- `serviceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicePipelineOutputsPaginator.paginate` method.
 
-`ListServicePipelineOutputsPaginator.paginate` returns
-`_PageIterator`\[[ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serviceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicePipelineOutputsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicepipelineprovisionedresourcespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicePipelineOutputsOutputTypeDef](./type_defs.md#listservicepipelineoutputsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef = {  # (1)
+    "serviceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicePipelineOutputsInputListServicePipelineOutputsPaginateTypeDef](./type_defs.md#listservicepipelineoutputsinputlistservicepipelineoutputspaginatetypedef) 
 ## ListServicePipelineProvisionedResourcesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_pipeline_provisioned_resources")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_pipeline_provisioned_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServicePipelineProvisionedResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServicePipelineProvisionedResourcesPaginator
@@ -418,29 +539,40 @@ def get_list_service_pipeline_provisioned_resources_paginator() -> ListServicePi
     return Session().client("proton").get_paginator("list_service_pipeline_provisioned_resources")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServicePipelineProvisionedResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServicePipelineProvisionedResources)
 
-Arguments for `ListServicePipelineProvisionedResourcesPaginator.paginate`
-method:
+### paginate
 
-- `serviceName`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicePipelineProvisionedResourcesPaginator.paginate` method.
 
-`ListServicePipelineProvisionedResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    serviceName: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicePipelineProvisionedResourcesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicetemplateversionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicePipelineProvisionedResourcesOutputTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef = {  # (1)
+    "serviceName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicePipelineProvisionedResourcesInputListServicePipelineProvisionedResourcesPaginateTypeDef](./type_defs.md#listservicepipelineprovisionedresourcesinputlistservicepipelineprovisionedresourcespaginatetypedef) 
 ## ListServiceTemplateVersionsPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_template_versions")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_template_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceTemplateVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServiceTemplateVersionsPaginator
@@ -449,29 +581,41 @@ def get_list_service_template_versions_paginator() -> ListServiceTemplateVersion
     return Session().client("proton").get_paginator("list_service_template_versions")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServiceTemplateVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceTemplateVersions)
 
-Arguments for `ListServiceTemplateVersionsPaginator.paginate` method:
+### paginate
 
-- `templateName`: `str` *(required)*
-- `majorVersion`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceTemplateVersionsPaginator.paginate` method.
 
-`ListServiceTemplateVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    templateName: str,
+    majorVersion: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceTemplateVersionsOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicetemplatespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceTemplateVersionsOutputTypeDef](./type_defs.md#listservicetemplateversionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef = {  # (1)
+    "templateName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceTemplateVersionsInputListServiceTemplateVersionsPaginateTypeDef](./type_defs.md#listservicetemplateversionsinputlistservicetemplateversionspaginatetypedef) 
 ## ListServiceTemplatesPaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_service_templates")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_service_templates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceTemplates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServiceTemplatesPaginator
@@ -480,26 +624,39 @@ def get_list_service_templates_paginator() -> ListServiceTemplatesPaginator:
     return Session().client("proton").get_paginator("list_service_templates")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServiceTemplates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServiceTemplates)
 
-Arguments for `ListServiceTemplatesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServiceTemplatesPaginator.paginate` method.
 
-`ListServiceTemplatesPaginator.paginate` returns
-`_PageIterator`\[[ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServiceTemplatesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listservicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServiceTemplatesOutputTypeDef](./type_defs.md#listservicetemplatesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServiceTemplatesInputListServiceTemplatesPaginateTypeDef](./type_defs.md#listservicetemplatesinputlistservicetemplatespaginatetypedef) 
 ## ListServicesPaginator
 
-Type annotations for `boto3.client("proton").get_paginator("list_services")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_services")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListServicesPaginator
@@ -508,27 +665,39 @@ def get_list_services_paginator() -> ListServicesPaginator:
     return Session().client("proton").get_paginator("list_services")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListServices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListServices)
 
-Arguments for `ListServicesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListServicesPaginator.paginate` method.
 
-`ListServicesPaginator.paginate` returns
-`_PageIterator`\[[ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListServicesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listtagsforresourcepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListServicesOutputTypeDef](./type_defs.md#listservicesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListServicesInputListServicesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListServicesInputListServicesPaginateTypeDef](./type_defs.md#listservicesinputlistservicespaginatetypedef) 
 ## ListTagsForResourcePaginator
 
-Type annotations for
-`boto3.client("proton").get_paginator("list_tags_for_resource")`.
+Type annotations and code completion for `#!python boto3.client("proton").get_paginator("list_tags_for_resource")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListTagsForResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_proton.paginator import ListTagsForResourcePaginator
@@ -537,14 +706,31 @@ def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
     return Session().client("proton").get_paginator("list_tags_for_resource")
 ```
 
-Boto3 documentation:
-[Proton.Paginator.ListTagsForResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton.Paginator.ListTagsForResource)
 
-Arguments for `ListTagsForResourcePaginator.paginate` method:
+### paginate
 
-- `resourceArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTagsForResourcePaginator.paginate` method.
 
-`ListTagsForResourcePaginator.paginate` returns
-`_PageIterator`\[[ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    resourceArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListTagsForResourceOutputTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceInputListTagsForResourcePaginateTypeDef = {  # (1)
+    "resourceArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTagsForResourceInputListTagsForResourcePaginateTypeDef](./type_defs.md#listtagsforresourceinputlisttagsforresourcepaginatetypedef) 

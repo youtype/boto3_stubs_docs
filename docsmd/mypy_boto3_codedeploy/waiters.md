@@ -1,27 +1,18 @@
-<a id="waiters-for-boto3-codedeploy-module"></a>
-
-# Waiters for boto3 CodeDeploy module
+# Waiters
 
 > [Index](../README.md) > [CodeDeploy](./README.md) > Waiters
 
-Auto-generated documentation for
-[CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
-type annotations stubs module
-[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+!!! note ""
 
-- [Waiters for boto3 CodeDeploy module](#waiters-for-boto3-codedeploy-module)
-  - [DeploymentSuccessfulWaiter](#deploymentsuccessfulwaiter)
-
-<a id="deploymentsuccessfulwaiter"></a>
+    Auto-generated documentation for [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
+    type annotations stubs module [mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 ## DeploymentSuccessfulWaiter
 
-Type annotations for
-`boto3.client("codedeploy").get_waiter("deployment_successful")`.
+Type annotations and code completion for `#!python boto3.client("codedeploy").get_waiter("deployment_successful")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.DeploymentSuccessful)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
@@ -30,10 +21,30 @@ def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
     return Session().client("codedeploy").get_waiter("deployment_successful")
 ```
 
-Boto3 documentation:
-[CodeDeploy.Waiter.deployment_successful](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Waiter.DeploymentSuccessful)
 
-Arguments for `DeploymentSuccessfulWaiter.wait` method:
+### wait
 
-- `deploymentId`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python DeploymentSuccessfulWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    deploymentId: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: GetDeploymentInputDeploymentSuccessfulWaitTypeDef = {  # (1)
+    "deploymentId": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: GetDeploymentInputDeploymentSuccessfulWaitTypeDef](./type_defs.md#getdeploymentinputdeploymentsuccessfulwaittypedef) 

@@ -1,63 +1,18 @@
-<a id="amplifybackendclient-for-boto3-amplifybackend-module"></a>
-
-# AmplifyBackendClient for boto3 AmplifyBackend module
+# AmplifyBackendClient
 
 > [Index](../README.md) > [AmplifyBackend](./README.md) > AmplifyBackendClient
 
-Auto-generated documentation for
-[AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
-type annotations stubs module
-[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+!!! note ""
 
-- [AmplifyBackendClient for boto3 AmplifyBackend module](#amplifybackendclient-for-boto3-amplifybackend-module)
-  - [AmplifyBackendClient](#amplifybackendclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [clone_backend](#clone_backend)
-    - [create_backend](#create_backend)
-    - [create_backend_api](#create_backend_api)
-    - [create_backend_auth](#create_backend_auth)
-    - [create_backend_config](#create_backend_config)
-    - [create_backend_storage](#create_backend_storage)
-    - [create_token](#create_token)
-    - [delete_backend](#delete_backend)
-    - [delete_backend_api](#delete_backend_api)
-    - [delete_backend_auth](#delete_backend_auth)
-    - [delete_backend_storage](#delete_backend_storage)
-    - [delete_token](#delete_token)
-    - [generate_backend_api_models](#generate_backend_api_models)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_backend](#get_backend)
-    - [get_backend_api](#get_backend_api)
-    - [get_backend_api_models](#get_backend_api_models)
-    - [get_backend_auth](#get_backend_auth)
-    - [get_backend_job](#get_backend_job)
-    - [get_backend_storage](#get_backend_storage)
-    - [get_token](#get_token)
-    - [import_backend_auth](#import_backend_auth)
-    - [import_backend_storage](#import_backend_storage)
-    - [list_backend_jobs](#list_backend_jobs)
-    - [list_s3_buckets](#list_s3_buckets)
-    - [remove_all_backends](#remove_all_backends)
-    - [remove_backend_config](#remove_backend_config)
-    - [update_backend_api](#update_backend_api)
-    - [update_backend_auth](#update_backend_auth)
-    - [update_backend_config](#update_backend_config)
-    - [update_backend_job](#update_backend_job)
-    - [update_backend_storage](#update_backend_storage)
-    - [get_paginator](#get_paginator)
-
-<a id="amplifybackendclient"></a>
+    Auto-generated documentation for [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
+    type annotations stubs module [mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 ## AmplifyBackendClient
 
-Type annotations for `boto3.client("amplifybackend")`
+Type annotations and code completion for `#!python boto3.client("amplifybackend")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_amplifybackend.client import AmplifyBackendClient
 
@@ -65,847 +20,1113 @@ def get_amplifybackend_client() -> AmplifyBackendClient:
     return Session().client("amplifybackend")
 ```
 
-Boto3 documentation:
-[AmplifyBackend.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("amplifybackend").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("amplifybackend")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.GatewayTimeoutException,
+    client.NotFoundException,
+    client.TooManyRequestsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_amplifybackend.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.GatewayTimeoutException`
-- `Exceptions.NotFoundException`
-- `Exceptions.TooManyRequestsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AmplifyBackendClient exceptions.
-
-Type annotations for `boto3.client("amplifybackend").exceptions` method.
-
-Boto3 documentation:
-[AmplifyBackend.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("amplifybackend").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
 
-Boto3 documentation:
-[AmplifyBackend.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="clone\_backend"></a>
-
-### clone_backend
+### clone\_backend
 
 This operation clones an existing backend.
 
-Type annotations for `boto3.client("amplifybackend").clone_backend` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").clone_backend` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
 
-Boto3 documentation:
-[AmplifyBackend.Client.clone_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.clone_backend)
+```python title="Method definition"
+def clone_backend(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    TargetEnvironmentName: str,
+) -> CloneBackendResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CloneBackendRequestRequestTypeDef](./type_defs.md#clonebackendrequestrequesttypedef).
+1. See [:material-code-braces: CloneBackendResponseTypeDef](./type_defs.md#clonebackendresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `TargetEnvironmentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CloneBackendRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "TargetEnvironmentName": ...,
+}
 
-Returns
-[CloneBackendResponseTypeDef](./type_defs.md#clonebackendresponsetypedef).
+parent.clone_backend(**kwargs)
+```
 
-<a id="create\_backend"></a>
+1. See [:material-code-braces: CloneBackendRequestRequestTypeDef](./type_defs.md#clonebackendrequestrequesttypedef) 
 
-### create_backend
+### create\_backend
 
 This operation creates a backend for an Amplify app.
 
-Type annotations for `boto3.client("amplifybackend").create_backend` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_backend` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend)
+```python title="Method definition"
+def create_backend(
+    self,
+    *,
+    AppId: str,
+    AppName: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: Mapping[str, Any] = ...,
+    ResourceName: str = ...,
+) -> CreateBackendResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackendRequestRequestTypeDef](./type_defs.md#createbackendrequestrequesttypedef).
+1. See [:material-code-braces: CreateBackendResponseTypeDef](./type_defs.md#createbackendresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `AppName`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`: `Mapping`\[`str`, `Any`\]
-- `ResourceName`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackendRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "AppName": ...,
+    "BackendEnvironmentName": ...,
+}
 
-Returns
-[CreateBackendResponseTypeDef](./type_defs.md#createbackendresponsetypedef).
+parent.create_backend(**kwargs)
+```
 
-<a id="create\_backend\_api"></a>
+1. See [:material-code-braces: CreateBackendRequestRequestTypeDef](./type_defs.md#createbackendrequestrequesttypedef) 
 
-### create_backend_api
+### create\_backend\_api
 
 Creates a new backend API resource.
 
-Type annotations for `boto3.client("amplifybackend").create_backend_api`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_backend_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_api)
+```python title="Method definition"
+def create_backend_api(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: BackendAPIResourceConfigTypeDef,  # (1)
+    ResourceName: str,
+) -> CreateBackendAPIResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackendAPIRequestRequestTypeDef](./type_defs.md#createbackendapirequestrequesttypedef).
+1. See [:material-code-braces: BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef) 
+2. See [:material-code-braces: CreateBackendAPIResponseTypeDef](./type_defs.md#createbackendapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
-  *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateBackendAPIRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceConfig": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[CreateBackendAPIResponseTypeDef](./type_defs.md#createbackendapiresponsetypedef).
+parent.create_backend_api(**kwargs)
+```
 
-<a id="create\_backend\_auth"></a>
+1. See [:material-code-braces: CreateBackendAPIRequestRequestTypeDef](./type_defs.md#createbackendapirequestrequesttypedef) 
 
-### create_backend_auth
+### create\_backend\_auth
 
 Creates a new backend authentication resource.
 
-Type annotations for `boto3.client("amplifybackend").create_backend_auth`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_backend_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_auth)
+```python title="Method definition"
+def create_backend_auth(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: CreateBackendAuthResourceConfigTypeDef,  # (1)
+    ResourceName: str,
+) -> CreateBackendAuthResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackendAuthRequestRequestTypeDef](./type_defs.md#createbackendauthrequestrequesttypedef).
+1. See [:material-code-braces: CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef) 
+2. See [:material-code-braces: CreateBackendAuthResponseTypeDef](./type_defs.md#createbackendauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`:
-  [CreateBackendAuthResourceConfigTypeDef](./type_defs.md#createbackendauthresourceconfigtypedef)
-  *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateBackendAuthRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceConfig": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[CreateBackendAuthResponseTypeDef](./type_defs.md#createbackendauthresponsetypedef).
+parent.create_backend_auth(**kwargs)
+```
 
-<a id="create\_backend\_config"></a>
+1. See [:material-code-braces: CreateBackendAuthRequestRequestTypeDef](./type_defs.md#createbackendauthrequestrequesttypedef) 
 
-### create_backend_config
+### create\_backend\_config
 
 Creates a config object for a backend.
 
-Type annotations for `boto3.client("amplifybackend").create_backend_config`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_backend_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_config)
+```python title="Method definition"
+def create_backend_config(
+    self,
+    *,
+    AppId: str,
+    BackendManagerAppId: str = ...,
+) -> CreateBackendConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackendConfigRequestRequestTypeDef](./type_defs.md#createbackendconfigrequestrequesttypedef).
+1. See [:material-code-braces: CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendManagerAppId`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreateBackendConfigRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns
-[CreateBackendConfigResponseTypeDef](./type_defs.md#createbackendconfigresponsetypedef).
+parent.create_backend_config(**kwargs)
+```
 
-<a id="create\_backend\_storage"></a>
+1. See [:material-code-braces: CreateBackendConfigRequestRequestTypeDef](./type_defs.md#createbackendconfigrequestrequesttypedef) 
 
-### create_backend_storage
+### create\_backend\_storage
 
 Creates a backend storage resource.
 
-Type annotations for `boto3.client("amplifybackend").create_backend_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_backend_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_storage)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_backend_storage)
+```python title="Method definition"
+def create_backend_storage(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: CreateBackendStorageResourceConfigTypeDef,  # (1)
+    ResourceName: str,
+) -> CreateBackendStorageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateBackendStorageRequestRequestTypeDef](./type_defs.md#createbackendstoragerequestrequesttypedef).
+1. See [:material-code-braces: CreateBackendStorageResourceConfigTypeDef](./type_defs.md#createbackendstorageresourceconfigtypedef) 
+2. See [:material-code-braces: CreateBackendStorageResponseTypeDef](./type_defs.md#createbackendstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`:
-  [CreateBackendStorageResourceConfigTypeDef](./type_defs.md#createbackendstorageresourceconfigtypedef)
-  *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateBackendStorageRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceConfig": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[CreateBackendStorageResponseTypeDef](./type_defs.md#createbackendstorageresponsetypedef).
+parent.create_backend_storage(**kwargs)
+```
 
-<a id="create\_token"></a>
+1. See [:material-code-braces: CreateBackendStorageRequestRequestTypeDef](./type_defs.md#createbackendstoragerequestrequesttypedef) 
 
-### create_token
+### create\_token
 
 Generates a one-time challenge code to authenticate a user into your Amplify
 Admin UI.
 
-Type annotations for `boto3.client("amplifybackend").create_token` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").create_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
 
-Boto3 documentation:
-[AmplifyBackend.Client.create_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.create_token)
+```python title="Method definition"
+def create_token(
+    self,
+    *,
+    AppId: str,
+) -> CreateTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef).
+1. See [:material-code-braces: CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTokenRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns
-[CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
+parent.create_token(**kwargs)
+```
 
-<a id="delete\_backend"></a>
+1. See [:material-code-braces: CreateTokenRequestRequestTypeDef](./type_defs.md#createtokenrequestrequesttypedef) 
 
-### delete_backend
+### delete\_backend
 
 Removes an existing environment from your Amplify project.
 
-Type annotations for `boto3.client("amplifybackend").delete_backend` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").delete_backend` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
 
-Boto3 documentation:
-[AmplifyBackend.Client.delete_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend)
+```python title="Method definition"
+def delete_backend(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+) -> DeleteBackendResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackendRequestRequestTypeDef](./type_defs.md#deletebackendrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBackendResponseTypeDef](./type_defs.md#deletebackendresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackendRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+}
 
-Returns
-[DeleteBackendResponseTypeDef](./type_defs.md#deletebackendresponsetypedef).
+parent.delete_backend(**kwargs)
+```
 
-<a id="delete\_backend\_api"></a>
+1. See [:material-code-braces: DeleteBackendRequestRequestTypeDef](./type_defs.md#deletebackendrequestrequesttypedef) 
 
-### delete_backend_api
+### delete\_backend\_api
 
 Deletes an existing backend API resource.
 
-Type annotations for `boto3.client("amplifybackend").delete_backend_api`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").delete_backend_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
 
-Boto3 documentation:
-[AmplifyBackend.Client.delete_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_api)
+```python title="Method definition"
+def delete_backend_api(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+    ResourceConfig: BackendAPIResourceConfigTypeDef = ...,  # (1)
+) -> DeleteBackendAPIResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackendAPIRequestRequestTypeDef](./type_defs.md#deletebackendapirequestrequesttypedef).
+1. See [:material-code-braces: BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef) 
+2. See [:material-code-braces: DeleteBackendAPIResponseTypeDef](./type_defs.md#deletebackendapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
-- `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: DeleteBackendAPIRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[DeleteBackendAPIResponseTypeDef](./type_defs.md#deletebackendapiresponsetypedef).
+parent.delete_backend_api(**kwargs)
+```
 
-<a id="delete\_backend\_auth"></a>
+1. See [:material-code-braces: DeleteBackendAPIRequestRequestTypeDef](./type_defs.md#deletebackendapirequestrequesttypedef) 
 
-### delete_backend_auth
+### delete\_backend\_auth
 
 Deletes an existing backend authentication resource.
 
-Type annotations for `boto3.client("amplifybackend").delete_backend_auth`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").delete_backend_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
 
-Boto3 documentation:
-[AmplifyBackend.Client.delete_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_auth)
+```python title="Method definition"
+def delete_backend_auth(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+) -> DeleteBackendAuthResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackendAuthRequestRequestTypeDef](./type_defs.md#deletebackendauthrequestrequesttypedef).
+1. See [:material-code-braces: DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackendAuthRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[DeleteBackendAuthResponseTypeDef](./type_defs.md#deletebackendauthresponsetypedef).
+parent.delete_backend_auth(**kwargs)
+```
 
-<a id="delete\_backend\_storage"></a>
+1. See [:material-code-braces: DeleteBackendAuthRequestRequestTypeDef](./type_defs.md#deletebackendauthrequestrequesttypedef) 
 
-### delete_backend_storage
+### delete\_backend\_storage
 
 Removes the specified backend storage resource.
 
-Type annotations for `boto3.client("amplifybackend").delete_backend_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").delete_backend_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_storage)
 
-Boto3 documentation:
-[AmplifyBackend.Client.delete_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_backend_storage)
+```python title="Method definition"
+def delete_backend_storage(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+    ServiceName: ServiceNameType,  # (1)
+) -> DeleteBackendStorageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DeleteBackendStorageRequestRequestTypeDef](./type_defs.md#deletebackendstoragerequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: DeleteBackendStorageResponseTypeDef](./type_defs.md#deletebackendstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
-- `ServiceName`: `Literal['S3']` (see
-  [ServiceNameType](./literals.md#servicenametype)) *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteBackendStorageRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+    "ServiceName": ...,
+}
 
-Returns
-[DeleteBackendStorageResponseTypeDef](./type_defs.md#deletebackendstorageresponsetypedef).
+parent.delete_backend_storage(**kwargs)
+```
 
-<a id="delete\_token"></a>
+1. See [:material-code-braces: DeleteBackendStorageRequestRequestTypeDef](./type_defs.md#deletebackendstoragerequestrequesttypedef) 
 
-### delete_token
+### delete\_token
 
 Deletes the challenge token based on the given appId and sessionId.
 
-Type annotations for `boto3.client("amplifybackend").delete_token` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").delete_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
 
-Boto3 documentation:
-[AmplifyBackend.Client.delete_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.delete_token)
+```python title="Method definition"
+def delete_token(
+    self,
+    *,
+    AppId: str,
+    SessionId: str,
+) -> DeleteTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteTokenRequestRequestTypeDef](./type_defs.md#deletetokenrequestrequesttypedef).
+1. See [:material-code-braces: DeleteTokenResponseTypeDef](./type_defs.md#deletetokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `SessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTokenRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "SessionId": ...,
+}
 
-Returns
-[DeleteTokenResponseTypeDef](./type_defs.md#deletetokenresponsetypedef).
+parent.delete_token(**kwargs)
+```
 
-<a id="generate\_backend\_api\_models"></a>
+1. See [:material-code-braces: DeleteTokenRequestRequestTypeDef](./type_defs.md#deletetokenrequestrequesttypedef) 
 
-### generate_backend_api_models
+### generate\_backend\_api\_models
 
 Generates a model schema for an existing backend API resource.
 
-Type annotations for
-`boto3.client("amplifybackend").generate_backend_api_models` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").generate_backend_api_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
 
-Boto3 documentation:
-[AmplifyBackend.Client.generate_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_backend_api_models)
+```python title="Method definition"
+def generate_backend_api_models(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+) -> GenerateBackendAPIModelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GenerateBackendAPIModelsRequestRequestTypeDef](./type_defs.md#generatebackendapimodelsrequestrequesttypedef).
+1. See [:material-code-braces: GenerateBackendAPIModelsResponseTypeDef](./type_defs.md#generatebackendapimodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GenerateBackendAPIModelsRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[GenerateBackendAPIModelsResponseTypeDef](./type_defs.md#generatebackendapimodelsresponsetypedef).
+parent.generate_backend_api_models(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: GenerateBackendAPIModelsRequestRequestTypeDef](./type_defs.md#generatebackendapimodelsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("amplifybackend").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AmplifyBackend.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_backend"></a>
-
-### get_backend
+### get\_backend
 
 Provides project-level details for your Amplify UI project.
 
-Type annotations for `boto3.client("amplifybackend").get_backend` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend)
+```python title="Method definition"
+def get_backend(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str = ...,
+) -> GetBackendResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendRequestRequestTypeDef](./type_defs.md#getbackendrequestrequesttypedef).
+1. See [:material-code-braces: GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetBackendRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns [GetBackendResponseTypeDef](./type_defs.md#getbackendresponsetypedef).
+parent.get_backend(**kwargs)
+```
 
-<a id="get\_backend\_api"></a>
+1. See [:material-code-braces: GetBackendRequestRequestTypeDef](./type_defs.md#getbackendrequestrequesttypedef) 
 
-### get_backend_api
+### get\_backend\_api
 
 Gets the details for a backend API.
 
-Type annotations for `boto3.client("amplifybackend").get_backend_api` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api)
+```python title="Method definition"
+def get_backend_api(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+    ResourceConfig: BackendAPIResourceConfigTypeDef = ...,  # (1)
+) -> GetBackendAPIResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendAPIRequestRequestTypeDef](./type_defs.md#getbackendapirequestrequesttypedef).
+1. See [:material-code-braces: BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef) 
+2. See [:material-code-braces: GetBackendAPIResponseTypeDef](./type_defs.md#getbackendapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
-- `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: GetBackendAPIRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[GetBackendAPIResponseTypeDef](./type_defs.md#getbackendapiresponsetypedef).
+parent.get_backend_api(**kwargs)
+```
 
-<a id="get\_backend\_api\_models"></a>
+1. See [:material-code-braces: GetBackendAPIRequestRequestTypeDef](./type_defs.md#getbackendapirequestrequesttypedef) 
 
-### get_backend_api_models
+### get\_backend\_api\_models
 
 Generates a model schema for existing backend API resource.
 
-Type annotations for `boto3.client("amplifybackend").get_backend_api_models`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_api_models` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend_api_models](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_api_models)
+```python title="Method definition"
+def get_backend_api_models(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+) -> GetBackendAPIModelsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendAPIModelsRequestRequestTypeDef](./type_defs.md#getbackendapimodelsrequestrequesttypedef).
+1. See [:material-code-braces: GetBackendAPIModelsResponseTypeDef](./type_defs.md#getbackendapimodelsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackendAPIModelsRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[GetBackendAPIModelsResponseTypeDef](./type_defs.md#getbackendapimodelsresponsetypedef).
+parent.get_backend_api_models(**kwargs)
+```
 
-<a id="get\_backend\_auth"></a>
+1. See [:material-code-braces: GetBackendAPIModelsRequestRequestTypeDef](./type_defs.md#getbackendapimodelsrequestrequesttypedef) 
 
-### get_backend_auth
+### get\_backend\_auth
 
 Gets a backend auth details.
 
-Type annotations for `boto3.client("amplifybackend").get_backend_auth` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_auth)
+```python title="Method definition"
+def get_backend_auth(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+) -> GetBackendAuthResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendAuthRequestRequestTypeDef](./type_defs.md#getbackendauthrequestrequesttypedef).
+1. See [:material-code-braces: GetBackendAuthResponseTypeDef](./type_defs.md#getbackendauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackendAuthRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[GetBackendAuthResponseTypeDef](./type_defs.md#getbackendauthresponsetypedef).
+parent.get_backend_auth(**kwargs)
+```
 
-<a id="get\_backend\_job"></a>
+1. See [:material-code-braces: GetBackendAuthRequestRequestTypeDef](./type_defs.md#getbackendauthrequestrequesttypedef) 
 
-### get_backend_job
+### get\_backend\_job
 
 Returns information about a specific job.
 
-Type annotations for `boto3.client("amplifybackend").get_backend_job` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_job)
+```python title="Method definition"
+def get_backend_job(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    JobId: str,
+) -> GetBackendJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendJobRequestRequestTypeDef](./type_defs.md#getbackendjobrequestrequesttypedef).
+1. See [:material-code-braces: GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `JobId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackendJobRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "JobId": ...,
+}
 
-Returns
-[GetBackendJobResponseTypeDef](./type_defs.md#getbackendjobresponsetypedef).
+parent.get_backend_job(**kwargs)
+```
 
-<a id="get\_backend\_storage"></a>
+1. See [:material-code-braces: GetBackendJobRequestRequestTypeDef](./type_defs.md#getbackendjobrequestrequesttypedef) 
 
-### get_backend_storage
+### get\_backend\_storage
 
 Gets details for a backend storage resource.
 
-Type annotations for `boto3.client("amplifybackend").get_backend_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_backend_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_storage)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_backend_storage)
+```python title="Method definition"
+def get_backend_storage(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+) -> GetBackendStorageResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetBackendStorageRequestRequestTypeDef](./type_defs.md#getbackendstoragerequestrequesttypedef).
+1. See [:material-code-braces: GetBackendStorageResponseTypeDef](./type_defs.md#getbackendstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetBackendStorageRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[GetBackendStorageResponseTypeDef](./type_defs.md#getbackendstorageresponsetypedef).
+parent.get_backend_storage(**kwargs)
+```
 
-<a id="get\_token"></a>
+1. See [:material-code-braces: GetBackendStorageRequestRequestTypeDef](./type_defs.md#getbackendstoragerequestrequesttypedef) 
 
-### get_token
+### get\_token
 
 Gets the challenge token based on the given appId and sessionId.
 
-Type annotations for `boto3.client("amplifybackend").get_token` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_token` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
 
-Boto3 documentation:
-[AmplifyBackend.Client.get_token](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.get_token)
+```python title="Method definition"
+def get_token(
+    self,
+    *,
+    AppId: str,
+    SessionId: str,
+) -> GetTokenResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetTokenRequestRequestTypeDef](./type_defs.md#gettokenrequestrequesttypedef).
+1. See [:material-code-braces: GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `SessionId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetTokenRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "SessionId": ...,
+}
 
-Returns [GetTokenResponseTypeDef](./type_defs.md#gettokenresponsetypedef).
+parent.get_token(**kwargs)
+```
 
-<a id="import\_backend\_auth"></a>
+1. See [:material-code-braces: GetTokenRequestRequestTypeDef](./type_defs.md#gettokenrequestrequesttypedef) 
 
-### import_backend_auth
+### import\_backend\_auth
 
 Imports an existing backend authentication resource.
 
-Type annotations for `boto3.client("amplifybackend").import_backend_auth`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").import_backend_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_auth)
 
-Boto3 documentation:
-[AmplifyBackend.Client.import_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_auth)
+```python title="Method definition"
+def import_backend_auth(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    NativeClientId: str,
+    UserPoolId: str,
+    WebClientId: str,
+    IdentityPoolId: str = ...,
+) -> ImportBackendAuthResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ImportBackendAuthRequestRequestTypeDef](./type_defs.md#importbackendauthrequestrequesttypedef).
+1. See [:material-code-braces: ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `NativeClientId`: `str` *(required)*
-- `UserPoolId`: `str` *(required)*
-- `WebClientId`: `str` *(required)*
-- `IdentityPoolId`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportBackendAuthRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "NativeClientId": ...,
+    "UserPoolId": ...,
+    "WebClientId": ...,
+}
 
-Returns
-[ImportBackendAuthResponseTypeDef](./type_defs.md#importbackendauthresponsetypedef).
+parent.import_backend_auth(**kwargs)
+```
 
-<a id="import\_backend\_storage"></a>
+1. See [:material-code-braces: ImportBackendAuthRequestRequestTypeDef](./type_defs.md#importbackendauthrequestrequesttypedef) 
 
-### import_backend_storage
+### import\_backend\_storage
 
 Imports an existing backend storage resource.
 
-Type annotations for `boto3.client("amplifybackend").import_backend_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").import_backend_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_storage)
 
-Boto3 documentation:
-[AmplifyBackend.Client.import_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.import_backend_storage)
+```python title="Method definition"
+def import_backend_storage(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ServiceName: ServiceNameType,  # (1)
+    BucketName: str = ...,
+) -> ImportBackendStorageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ImportBackendStorageRequestRequestTypeDef](./type_defs.md#importbackendstoragerequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNameType](./literals.md#servicenametype) 
+2. See [:material-code-braces: ImportBackendStorageResponseTypeDef](./type_defs.md#importbackendstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ServiceName`: `Literal['S3']` (see
-  [ServiceNameType](./literals.md#servicenametype)) *(required)*
-- `BucketName`: `str`
+```python title="Usage example with kwargs"
+kwargs: ImportBackendStorageRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ServiceName": ...,
+}
 
-Returns
-[ImportBackendStorageResponseTypeDef](./type_defs.md#importbackendstorageresponsetypedef).
+parent.import_backend_storage(**kwargs)
+```
 
-<a id="list\_backend\_jobs"></a>
+1. See [:material-code-braces: ImportBackendStorageRequestRequestTypeDef](./type_defs.md#importbackendstoragerequestrequesttypedef) 
 
-### list_backend_jobs
+### list\_backend\_jobs
 
 Lists the jobs for the backend of an Amplify app.
 
-Type annotations for `boto3.client("amplifybackend").list_backend_jobs` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").list_backend_jobs` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
 
-Boto3 documentation:
-[AmplifyBackend.Client.list_backend_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_backend_jobs)
+```python title="Method definition"
+def list_backend_jobs(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    JobId: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    Operation: str = ...,
+    Status: str = ...,
+) -> ListBackendJobsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListBackendJobsRequestRequestTypeDef](./type_defs.md#listbackendjobsrequestrequesttypedef).
+1. See [:material-code-braces: ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `JobId`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `Operation`: `str`
-- `Status`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListBackendJobsRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+}
 
-Returns
-[ListBackendJobsResponseTypeDef](./type_defs.md#listbackendjobsresponsetypedef).
+parent.list_backend_jobs(**kwargs)
+```
 
-<a id="list\_s3\_buckets"></a>
+1. See [:material-code-braces: ListBackendJobsRequestRequestTypeDef](./type_defs.md#listbackendjobsrequestrequesttypedef) 
 
-### list_s3_buckets
+### list\_s3\_buckets
 
 The list of S3 buckets in your account.
 
-Type annotations for `boto3.client("amplifybackend").list_s3_buckets` method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").list_s3_buckets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_s3_buckets)
 
-Boto3 documentation:
-[AmplifyBackend.Client.list_s3_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.list_s3_buckets)
+```python title="Method definition"
+def list_s3_buckets(
+    self,
+    *,
+    NextToken: str = ...,
+) -> ListS3BucketsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListS3BucketsRequestRequestTypeDef](./type_defs.md#lists3bucketsrequestrequesttypedef).
+1. See [:material-code-braces: ListS3BucketsResponseTypeDef](./type_defs.md#lists3bucketsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListS3BucketsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListS3BucketsResponseTypeDef](./type_defs.md#lists3bucketsresponsetypedef).
+parent.list_s3_buckets(**kwargs)
+```
 
-<a id="remove\_all\_backends"></a>
+1. See [:material-code-braces: ListS3BucketsRequestRequestTypeDef](./type_defs.md#lists3bucketsrequestrequesttypedef) 
 
-### remove_all_backends
+### remove\_all\_backends
 
 Removes all backend environments from your Amplify project.
 
-Type annotations for `boto3.client("amplifybackend").remove_all_backends`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").remove_all_backends` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
 
-Boto3 documentation:
-[AmplifyBackend.Client.remove_all_backends](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_all_backends)
+```python title="Method definition"
+def remove_all_backends(
+    self,
+    *,
+    AppId: str,
+    CleanAmplifyApp: bool = ...,
+) -> RemoveAllBackendsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveAllBackendsRequestRequestTypeDef](./type_defs.md#removeallbackendsrequestrequesttypedef).
+1. See [:material-code-braces: RemoveAllBackendsResponseTypeDef](./type_defs.md#removeallbackendsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `CleanAmplifyApp`: `bool`
+```python title="Usage example with kwargs"
+kwargs: RemoveAllBackendsRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns
-[RemoveAllBackendsResponseTypeDef](./type_defs.md#removeallbackendsresponsetypedef).
+parent.remove_all_backends(**kwargs)
+```
 
-<a id="remove\_backend\_config"></a>
+1. See [:material-code-braces: RemoveAllBackendsRequestRequestTypeDef](./type_defs.md#removeallbackendsrequestrequesttypedef) 
 
-### remove_backend_config
+### remove\_backend\_config
 
 Removes the AWS resources required to access the Amplify Admin UI.
 
-Type annotations for `boto3.client("amplifybackend").remove_backend_config`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").remove_backend_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
 
-Boto3 documentation:
-[AmplifyBackend.Client.remove_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.remove_backend_config)
+```python title="Method definition"
+def remove_backend_config(
+    self,
+    *,
+    AppId: str,
+) -> RemoveBackendConfigResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RemoveBackendConfigRequestRequestTypeDef](./type_defs.md#removebackendconfigrequestrequesttypedef).
+1. See [:material-code-braces: RemoveBackendConfigResponseTypeDef](./type_defs.md#removebackendconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RemoveBackendConfigRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns
-[RemoveBackendConfigResponseTypeDef](./type_defs.md#removebackendconfigresponsetypedef).
+parent.remove_backend_config(**kwargs)
+```
 
-<a id="update\_backend\_api"></a>
+1. See [:material-code-braces: RemoveBackendConfigRequestRequestTypeDef](./type_defs.md#removebackendconfigrequestrequesttypedef) 
 
-### update_backend_api
+### update\_backend\_api
 
 Updates an existing backend API resource.
 
-Type annotations for `boto3.client("amplifybackend").update_backend_api`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").update_backend_api` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
 
-Boto3 documentation:
-[AmplifyBackend.Client.update_backend_api](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_api)
+```python title="Method definition"
+def update_backend_api(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceName: str,
+    ResourceConfig: BackendAPIResourceConfigTypeDef = ...,  # (1)
+) -> UpdateBackendAPIResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackendAPIRequestRequestTypeDef](./type_defs.md#updatebackendapirequestrequesttypedef).
+1. See [:material-code-braces: BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef) 
+2. See [:material-code-braces: UpdateBackendAPIResponseTypeDef](./type_defs.md#updatebackendapiresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceName`: `str` *(required)*
-- `ResourceConfig`:
-  [BackendAPIResourceConfigTypeDef](./type_defs.md#backendapiresourceconfigtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateBackendAPIRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[UpdateBackendAPIResponseTypeDef](./type_defs.md#updatebackendapiresponsetypedef).
+parent.update_backend_api(**kwargs)
+```
 
-<a id="update\_backend\_auth"></a>
+1. See [:material-code-braces: UpdateBackendAPIRequestRequestTypeDef](./type_defs.md#updatebackendapirequestrequesttypedef) 
 
-### update_backend_auth
+### update\_backend\_auth
 
 Updates an existing backend authentication resource.
 
-Type annotations for `boto3.client("amplifybackend").update_backend_auth`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").update_backend_auth` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
 
-Boto3 documentation:
-[AmplifyBackend.Client.update_backend_auth](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_auth)
+```python title="Method definition"
+def update_backend_auth(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: UpdateBackendAuthResourceConfigTypeDef,  # (1)
+    ResourceName: str,
+) -> UpdateBackendAuthResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackendAuthRequestRequestTypeDef](./type_defs.md#updatebackendauthrequestrequesttypedef).
+1. See [:material-code-braces: UpdateBackendAuthResourceConfigTypeDef](./type_defs.md#updatebackendauthresourceconfigtypedef) 
+2. See [:material-code-braces: UpdateBackendAuthResponseTypeDef](./type_defs.md#updatebackendauthresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`:
-  [UpdateBackendAuthResourceConfigTypeDef](./type_defs.md#updatebackendauthresourceconfigtypedef)
-  *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBackendAuthRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceConfig": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[UpdateBackendAuthResponseTypeDef](./type_defs.md#updatebackendauthresponsetypedef).
+parent.update_backend_auth(**kwargs)
+```
 
-<a id="update\_backend\_config"></a>
+1. See [:material-code-braces: UpdateBackendAuthRequestRequestTypeDef](./type_defs.md#updatebackendauthrequestrequesttypedef) 
 
-### update_backend_config
+### update\_backend\_config
 
 Updates the AWS resources required to access the Amplify Admin UI.
 
-Type annotations for `boto3.client("amplifybackend").update_backend_config`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").update_backend_config` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
 
-Boto3 documentation:
-[AmplifyBackend.Client.update_backend_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_config)
+```python title="Method definition"
+def update_backend_config(
+    self,
+    *,
+    AppId: str,
+    LoginAuthConfig: LoginAuthConfigReqObjTypeDef = ...,  # (1)
+) -> UpdateBackendConfigResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackendConfigRequestRequestTypeDef](./type_defs.md#updatebackendconfigrequestrequesttypedef).
+1. See [:material-code-braces: LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef) 
+2. See [:material-code-braces: UpdateBackendConfigResponseTypeDef](./type_defs.md#updatebackendconfigresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `LoginAuthConfig`:
-  [LoginAuthConfigReqObjTypeDef](./type_defs.md#loginauthconfigreqobjtypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateBackendConfigRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+}
 
-Returns
-[UpdateBackendConfigResponseTypeDef](./type_defs.md#updatebackendconfigresponsetypedef).
+parent.update_backend_config(**kwargs)
+```
 
-<a id="update\_backend\_job"></a>
+1. See [:material-code-braces: UpdateBackendConfigRequestRequestTypeDef](./type_defs.md#updatebackendconfigrequestrequesttypedef) 
 
-### update_backend_job
+### update\_backend\_job
 
 Updates a specific job.
 
-Type annotations for `boto3.client("amplifybackend").update_backend_job`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").update_backend_job` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
 
-Boto3 documentation:
-[AmplifyBackend.Client.update_backend_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_job)
+```python title="Method definition"
+def update_backend_job(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    JobId: str,
+    Operation: str = ...,
+    Status: str = ...,
+) -> UpdateBackendJobResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackendJobRequestRequestTypeDef](./type_defs.md#updatebackendjobrequestrequesttypedef).
+1. See [:material-code-braces: UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `JobId`: `str` *(required)*
-- `Operation`: `str`
-- `Status`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateBackendJobRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "JobId": ...,
+}
 
-Returns
-[UpdateBackendJobResponseTypeDef](./type_defs.md#updatebackendjobresponsetypedef).
+parent.update_backend_job(**kwargs)
+```
 
-<a id="update\_backend\_storage"></a>
+1. See [:material-code-braces: UpdateBackendJobRequestRequestTypeDef](./type_defs.md#updatebackendjobrequestrequesttypedef) 
 
-### update_backend_storage
+### update\_backend\_storage
 
 Updates an existing backend storage resource.
 
-Type annotations for `boto3.client("amplifybackend").update_backend_storage`
-method.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").update_backend_storage` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_storage)
 
-Boto3 documentation:
-[AmplifyBackend.Client.update_backend_storage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend.Client.update_backend_storage)
+```python title="Method definition"
+def update_backend_storage(
+    self,
+    *,
+    AppId: str,
+    BackendEnvironmentName: str,
+    ResourceConfig: UpdateBackendStorageResourceConfigTypeDef,  # (1)
+    ResourceName: str,
+) -> UpdateBackendStorageResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateBackendStorageRequestRequestTypeDef](./type_defs.md#updatebackendstoragerequestrequesttypedef).
+1. See [:material-code-braces: UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef) 
+2. See [:material-code-braces: UpdateBackendStorageResponseTypeDef](./type_defs.md#updatebackendstorageresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AppId`: `str` *(required)*
-- `BackendEnvironmentName`: `str` *(required)*
-- `ResourceConfig`:
-  [UpdateBackendStorageResourceConfigTypeDef](./type_defs.md#updatebackendstorageresourceconfigtypedef)
-  *(required)*
-- `ResourceName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateBackendStorageRequestRequestTypeDef = {  # (1)
+    "AppId": ...,
+    "BackendEnvironmentName": ...,
+    "ResourceConfig": ...,
+    "ResourceName": ...,
+}
 
-Returns
-[UpdateBackendStorageResponseTypeDef](./type_defs.md#updatebackendstorageresponsetypedef).
+parent.update_backend_storage(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateBackendStorageRequestRequestTypeDef](./type_defs.md#updatebackendstoragerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("amplifybackend").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("amplifybackend").get_paginator` method with overloads.
 
-- `client.get_paginator("list_backend_jobs")` ->
-  [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
+- `client.get_paginator("list_backend_jobs")` -> [ListBackendJobsPaginator](./paginators.md#listbackendjobspaginator)
+
+
+

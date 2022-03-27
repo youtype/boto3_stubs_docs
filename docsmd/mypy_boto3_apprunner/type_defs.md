@@ -1,1259 +1,1535 @@
-<a id="typed-dictionaries-for-boto3-apprunner-module"></a>
-
-# Typed dictionaries for boto3 AppRunner module
+# Typed dictionaries
 
 > [Index](../README.md) > [AppRunner](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
-type annotations stubs module
-[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+!!! note ""
 
-- [Typed dictionaries for boto3 AppRunner module](#typed-dictionaries-for-boto3-apprunner-module)
-  - [AssociateCustomDomainRequestRequestTypeDef](#associatecustomdomainrequestrequesttypedef)
-  - [AssociateCustomDomainResponseTypeDef](#associatecustomdomainresponsetypedef)
-  - [AuthenticationConfigurationTypeDef](#authenticationconfigurationtypedef)
-  - [AutoScalingConfigurationSummaryTypeDef](#autoscalingconfigurationsummarytypedef)
-  - [AutoScalingConfigurationTypeDef](#autoscalingconfigurationtypedef)
-  - [CertificateValidationRecordTypeDef](#certificatevalidationrecordtypedef)
-  - [CodeConfigurationTypeDef](#codeconfigurationtypedef)
-  - [CodeConfigurationValuesTypeDef](#codeconfigurationvaluestypedef)
-  - [CodeRepositoryTypeDef](#coderepositorytypedef)
-  - [ConnectionSummaryTypeDef](#connectionsummarytypedef)
-  - [ConnectionTypeDef](#connectiontypedef)
-  - [CreateAutoScalingConfigurationRequestRequestTypeDef](#createautoscalingconfigurationrequestrequesttypedef)
-  - [CreateAutoScalingConfigurationResponseTypeDef](#createautoscalingconfigurationresponsetypedef)
-  - [CreateConnectionRequestRequestTypeDef](#createconnectionrequestrequesttypedef)
-  - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
-  - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
-  - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
-  - [CreateVpcConnectorRequestRequestTypeDef](#createvpcconnectorrequestrequesttypedef)
-  - [CreateVpcConnectorResponseTypeDef](#createvpcconnectorresponsetypedef)
-  - [CustomDomainTypeDef](#customdomaintypedef)
-  - [DeleteAutoScalingConfigurationRequestRequestTypeDef](#deleteautoscalingconfigurationrequestrequesttypedef)
-  - [DeleteAutoScalingConfigurationResponseTypeDef](#deleteautoscalingconfigurationresponsetypedef)
-  - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
-  - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
-  - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
-  - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
-  - [DeleteVpcConnectorRequestRequestTypeDef](#deletevpcconnectorrequestrequesttypedef)
-  - [DeleteVpcConnectorResponseTypeDef](#deletevpcconnectorresponsetypedef)
-  - [DescribeAutoScalingConfigurationRequestRequestTypeDef](#describeautoscalingconfigurationrequestrequesttypedef)
-  - [DescribeAutoScalingConfigurationResponseTypeDef](#describeautoscalingconfigurationresponsetypedef)
-  - [DescribeCustomDomainsRequestRequestTypeDef](#describecustomdomainsrequestrequesttypedef)
-  - [DescribeCustomDomainsResponseTypeDef](#describecustomdomainsresponsetypedef)
-  - [DescribeServiceRequestRequestTypeDef](#describeservicerequestrequesttypedef)
-  - [DescribeServiceResponseTypeDef](#describeserviceresponsetypedef)
-  - [DescribeVpcConnectorRequestRequestTypeDef](#describevpcconnectorrequestrequesttypedef)
-  - [DescribeVpcConnectorResponseTypeDef](#describevpcconnectorresponsetypedef)
-  - [DisassociateCustomDomainRequestRequestTypeDef](#disassociatecustomdomainrequestrequesttypedef)
-  - [DisassociateCustomDomainResponseTypeDef](#disassociatecustomdomainresponsetypedef)
-  - [EgressConfigurationTypeDef](#egressconfigurationtypedef)
-  - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
-  - [HealthCheckConfigurationTypeDef](#healthcheckconfigurationtypedef)
-  - [ImageConfigurationTypeDef](#imageconfigurationtypedef)
-  - [ImageRepositoryTypeDef](#imagerepositorytypedef)
-  - [InstanceConfigurationTypeDef](#instanceconfigurationtypedef)
-  - [ListAutoScalingConfigurationsRequestRequestTypeDef](#listautoscalingconfigurationsrequestrequesttypedef)
-  - [ListAutoScalingConfigurationsResponseTypeDef](#listautoscalingconfigurationsresponsetypedef)
-  - [ListConnectionsRequestRequestTypeDef](#listconnectionsrequestrequesttypedef)
-  - [ListConnectionsResponseTypeDef](#listconnectionsresponsetypedef)
-  - [ListOperationsRequestRequestTypeDef](#listoperationsrequestrequesttypedef)
-  - [ListOperationsResponseTypeDef](#listoperationsresponsetypedef)
-  - [ListServicesRequestRequestTypeDef](#listservicesrequestrequesttypedef)
-  - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListVpcConnectorsRequestRequestTypeDef](#listvpcconnectorsrequestrequesttypedef)
-  - [ListVpcConnectorsResponseTypeDef](#listvpcconnectorsresponsetypedef)
-  - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
-  - [OperationSummaryTypeDef](#operationsummarytypedef)
-  - [PauseServiceRequestRequestTypeDef](#pauseservicerequestrequesttypedef)
-  - [PauseServiceResponseTypeDef](#pauseserviceresponsetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeServiceRequestRequestTypeDef](#resumeservicerequestrequesttypedef)
-  - [ResumeServiceResponseTypeDef](#resumeserviceresponsetypedef)
-  - [ServiceSummaryTypeDef](#servicesummarytypedef)
-  - [ServiceTypeDef](#servicetypedef)
-  - [SourceCodeVersionTypeDef](#sourcecodeversiontypedef)
-  - [SourceConfigurationTypeDef](#sourceconfigurationtypedef)
-  - [StartDeploymentRequestRequestTypeDef](#startdeploymentrequestrequesttypedef)
-  - [StartDeploymentResponseTypeDef](#startdeploymentresponsetypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [TagTypeDef](#tagtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
-  - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
-  - [VpcConnectorTypeDef](#vpcconnectortypedef)
-
-<a id="associatecustomdomainrequestrequesttypedef"></a>
+    Auto-generated documentation for [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
+    type annotations stubs module [mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 ## AssociateCustomDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import AssociateCustomDomainRequestRequestTypeDef
+
+def get_value() -> AssociateCustomDomainRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-- `DomainName`: `str`
-
-Optional fields:
-
-- `EnableWWWSubdomain`: `bool`
-
-<a id="associatecustomdomainresponsetypedef"></a>
+```python title="Definition"
+class AssociateCustomDomainRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    DomainName: str,
+    EnableWWWSubdomain: NotRequired[bool],
+```
 
 ## AssociateCustomDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import AssociateCustomDomainResponseTypeDef
+
+def get_value() -> AssociateCustomDomainResponseTypeDef:
+    return {
+        "DNSTarget": ...,
+        "ServiceArn": ...,
+        "CustomDomain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateCustomDomainResponseTypeDef(TypedDict):
+    DNSTarget: str,
+    ServiceArn: str,
+    CustomDomain: CustomDomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DNSTarget`: `str`
-- `ServiceArn`: `str`
-- `CustomDomain`: [CustomDomainTypeDef](./type_defs.md#customdomaintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="authenticationconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AuthenticationConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import AuthenticationConfigurationTypeDef
+
+def get_value() -> AuthenticationConfigurationTypeDef:
+    return {
+        "ConnectionArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConnectionArn`: `str`
-- `AccessRoleArn`: `str`
-
-<a id="autoscalingconfigurationsummarytypedef"></a>
+```python title="Definition"
+class AuthenticationConfigurationTypeDef(TypedDict):
+    ConnectionArn: NotRequired[str],
+    AccessRoleArn: NotRequired[str],
+```
 
 ## AutoScalingConfigurationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import AutoScalingConfigurationSummaryTypeDef
+
+def get_value() -> AutoScalingConfigurationSummaryTypeDef:
+    return {
+        "AutoScalingConfigurationArn": ...,
+    }
 ```
 
-Optional fields:
-
-- `AutoScalingConfigurationArn`: `str`
-- `AutoScalingConfigurationName`: `str`
-- `AutoScalingConfigurationRevision`: `int`
-
-<a id="autoscalingconfigurationtypedef"></a>
+```python title="Definition"
+class AutoScalingConfigurationSummaryTypeDef(TypedDict):
+    AutoScalingConfigurationArn: NotRequired[str],
+    AutoScalingConfigurationName: NotRequired[str],
+    AutoScalingConfigurationRevision: NotRequired[int],
+```
 
 ## AutoScalingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import AutoScalingConfigurationTypeDef
+
+def get_value() -> AutoScalingConfigurationTypeDef:
+    return {
+        "AutoScalingConfigurationArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AutoScalingConfigurationTypeDef(TypedDict):
+    AutoScalingConfigurationArn: NotRequired[str],
+    AutoScalingConfigurationName: NotRequired[str],
+    AutoScalingConfigurationRevision: NotRequired[int],
+    Latest: NotRequired[bool],
+    Status: NotRequired[AutoScalingConfigurationStatusType],  # (1)
+    MaxConcurrency: NotRequired[int],
+    MinSize: NotRequired[int],
+    MaxSize: NotRequired[int],
+    CreatedAt: NotRequired[datetime],
+    DeletedAt: NotRequired[datetime],
+```
 
-- `AutoScalingConfigurationArn`: `str`
-- `AutoScalingConfigurationName`: `str`
-- `AutoScalingConfigurationRevision`: `int`
-- `Latest`: `bool`
-- `Status`:
-  [AutoScalingConfigurationStatusType](./literals.md#autoscalingconfigurationstatustype)
-- `MaxConcurrency`: `int`
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `CreatedAt`: `datetime`
-- `DeletedAt`: `datetime`
-
-<a id="certificatevalidationrecordtypedef"></a>
-
+1. See [:material-code-brackets: AutoScalingConfigurationStatusType](./literals.md#autoscalingconfigurationstatustype) 
 ## CertificateValidationRecordTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CertificateValidationRecordTypeDef
+
+def get_value() -> CertificateValidationRecordTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CertificateValidationRecordTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Type: NotRequired[str],
+    Value: NotRequired[str],
+    Status: NotRequired[CertificateValidationRecordStatusType],  # (1)
+```
 
-- `Name`: `str`
-- `Type`: `str`
-- `Value`: `str`
-- `Status`:
-  [CertificateValidationRecordStatusType](./literals.md#certificatevalidationrecordstatustype)
-
-<a id="codeconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: CertificateValidationRecordStatusType](./literals.md#certificatevalidationrecordstatustype) 
 ## CodeConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CodeConfigurationTypeDef
+
+def get_value() -> CodeConfigurationTypeDef:
+    return {
+        "ConfigurationSource": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeConfigurationTypeDef(TypedDict):
+    ConfigurationSource: ConfigurationSourceType,  # (1)
+    CodeConfigurationValues: NotRequired[CodeConfigurationValuesTypeDef],  # (2)
+```
 
-- `ConfigurationSource`:
-  [ConfigurationSourceType](./literals.md#configurationsourcetype)
-
-Optional fields:
-
-- `CodeConfigurationValues`:
-  [CodeConfigurationValuesTypeDef](./type_defs.md#codeconfigurationvaluestypedef)
-
-<a id="codeconfigurationvaluestypedef"></a>
-
+1. See [:material-code-brackets: ConfigurationSourceType](./literals.md#configurationsourcetype) 
+2. See [:material-code-braces: CodeConfigurationValuesTypeDef](./type_defs.md#codeconfigurationvaluestypedef) 
 ## CodeConfigurationValuesTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CodeConfigurationValuesTypeDef
+
+def get_value() -> CodeConfigurationValuesTypeDef:
+    return {
+        "Runtime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeConfigurationValuesTypeDef(TypedDict):
+    Runtime: RuntimeType,  # (1)
+    BuildCommand: NotRequired[str],
+    StartCommand: NotRequired[str],
+    Port: NotRequired[str],
+    RuntimeEnvironmentVariables: NotRequired[Mapping[str, str]],
+```
 
-- `Runtime`: [RuntimeType](./literals.md#runtimetype)
-
-Optional fields:
-
-- `BuildCommand`: `str`
-- `StartCommand`: `str`
-- `Port`: `str`
-- `RuntimeEnvironmentVariables`: `Mapping`\[`str`, `str`\]
-
-<a id="coderepositorytypedef"></a>
-
+1. See [:material-code-brackets: RuntimeType](./literals.md#runtimetype) 
 ## CodeRepositoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CodeRepositoryTypeDef
+
+def get_value() -> CodeRepositoryTypeDef:
+    return {
+        "RepositoryUrl": ...,
+        "SourceCodeVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CodeRepositoryTypeDef(TypedDict):
+    RepositoryUrl: str,
+    SourceCodeVersion: SourceCodeVersionTypeDef,  # (1)
+    CodeConfiguration: NotRequired[CodeConfigurationTypeDef],  # (2)
+```
 
-- `RepositoryUrl`: `str`
-- `SourceCodeVersion`:
-  [SourceCodeVersionTypeDef](./type_defs.md#sourcecodeversiontypedef)
-
-Optional fields:
-
-- `CodeConfiguration`:
-  [CodeConfigurationTypeDef](./type_defs.md#codeconfigurationtypedef)
-
-<a id="connectionsummarytypedef"></a>
-
+1. See [:material-code-braces: SourceCodeVersionTypeDef](./type_defs.md#sourcecodeversiontypedef) 
+2. See [:material-code-braces: CodeConfigurationTypeDef](./type_defs.md#codeconfigurationtypedef) 
 ## ConnectionSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ConnectionSummaryTypeDef
+
+def get_value() -> ConnectionSummaryTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionSummaryTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    ProviderType: NotRequired[ProviderTypeType],  # (1)
+    Status: NotRequired[ConnectionStatusType],  # (2)
+    CreatedAt: NotRequired[datetime],
+```
 
-- `ConnectionName`: `str`
-- `ConnectionArn`: `str`
-- `ProviderType`: `Literal['GITHUB']` (see
-  [ProviderTypeType](./literals.md#providertypetype))
-- `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
-- `CreatedAt`: `datetime`
-
-<a id="connectiontypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
 ## ConnectionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ConnectionTypeDef
+
+def get_value() -> ConnectionTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ConnectionTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    ConnectionArn: NotRequired[str],
+    ProviderType: NotRequired[ProviderTypeType],  # (1)
+    Status: NotRequired[ConnectionStatusType],  # (2)
+    CreatedAt: NotRequired[datetime],
+```
 
-- `ConnectionName`: `str`
-- `ConnectionArn`: `str`
-- `ProviderType`: `Literal['GITHUB']` (see
-  [ProviderTypeType](./literals.md#providertypetype))
-- `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
-- `CreatedAt`: `datetime`
-
-<a id="createautoscalingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-brackets: ConnectionStatusType](./literals.md#connectionstatustype) 
 ## CreateAutoScalingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateAutoScalingConfigurationRequestRequestTypeDef
+
+def get_value() -> CreateAutoScalingConfigurationRequestRequestTypeDef:
+    return {
+        "AutoScalingConfigurationName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAutoScalingConfigurationRequestRequestTypeDef(TypedDict):
+    AutoScalingConfigurationName: str,
+    MaxConcurrency: NotRequired[int],
+    MinSize: NotRequired[int],
+    MaxSize: NotRequired[int],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `AutoScalingConfigurationName`: `str`
-
-Optional fields:
-
-- `MaxConcurrency`: `int`
-- `MinSize`: `int`
-- `MaxSize`: `int`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createautoscalingconfigurationresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateAutoScalingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateAutoScalingConfigurationResponseTypeDef
+
+def get_value() -> CreateAutoScalingConfigurationResponseTypeDef:
+    return {
+        "AutoScalingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAutoScalingConfigurationResponseTypeDef(TypedDict):
+    AutoScalingConfiguration: AutoScalingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoScalingConfiguration`:
-  [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateConnectionRequestRequestTypeDef
+
+def get_value() -> CreateConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionName": ...,
+        "ProviderType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionName: str,
+    ProviderType: ProviderTypeType,  # (1)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (2)
+```
 
-- `ConnectionName`: `str`
-- `ProviderType`: `Literal['GITHUB']` (see
-  [ProviderTypeType](./literals.md#providertypetype))
-
-Optional fields:
-
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createconnectionresponsetypedef"></a>
-
+1. See [:material-code-brackets: ProviderTypeType](./literals.md#providertypetype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateConnectionResponseTypeDef
+
+def get_value() -> CreateConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateServiceRequestRequestTypeDef
+
+def get_value() -> CreateServiceRequestRequestTypeDef:
+    return {
+        "ServiceName": ...,
+        "SourceConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceRequestRequestTypeDef(TypedDict):
+    ServiceName: str,
+    SourceConfiguration: SourceConfigurationTypeDef,  # (1)
+    InstanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (2)
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (3)
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (4)
+    HealthCheckConfiguration: NotRequired[HealthCheckConfigurationTypeDef],  # (5)
+    AutoScalingConfigurationArn: NotRequired[str],
+    NetworkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (6)
+```
 
-- `ServiceName`: `str`
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-
-Optional fields:
-
-- `InstanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `HealthCheckConfiguration`:
-  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
-- `AutoScalingConfigurationArn`: `str`
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-
-<a id="createserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+3. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+5. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
+6. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 ## CreateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateServiceResponseTypeDef
+
+def get_value() -> CreateServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvpcconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVpcConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateVpcConnectorRequestRequestTypeDef
+
+def get_value() -> CreateVpcConnectorRequestRequestTypeDef:
+    return {
+        "VpcConnectorName": ...,
+        "Subnets": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVpcConnectorRequestRequestTypeDef(TypedDict):
+    VpcConnectorName: str,
+    Subnets: Sequence[str],
+    SecurityGroups: NotRequired[Sequence[str]],
+    Tags: NotRequired[Sequence[TagTypeDef]],  # (1)
+```
 
-- `VpcConnectorName`: `str`
-- `Subnets`: `Sequence`\[`str`\]
-
-Optional fields:
-
-- `SecurityGroups`: `Sequence`\[`str`\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="createvpcconnectorresponsetypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## CreateVpcConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CreateVpcConnectorResponseTypeDef
+
+def get_value() -> CreateVpcConnectorResponseTypeDef:
+    return {
+        "VpcConnector": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVpcConnectorResponseTypeDef(TypedDict):
+    VpcConnector: VpcConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="customdomaintypedef"></a>
-
+1. See [:material-code-braces: VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CustomDomainTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import CustomDomainTypeDef
+
+def get_value() -> CustomDomainTypeDef:
+    return {
+        "DomainName": ...,
+        "EnableWWWSubdomain": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CustomDomainTypeDef(TypedDict):
+    DomainName: str,
+    EnableWWWSubdomain: bool,
+    Status: CustomDomainAssociationStatusType,  # (2)
+    CertificateValidationRecords: NotRequired[List[CertificateValidationRecordTypeDef]],  # (1)
+```
 
-- `DomainName`: `str`
-- `EnableWWWSubdomain`: `bool`
-- `Status`:
-  [CustomDomainAssociationStatusType](./literals.md#customdomainassociationstatustype)
-
-Optional fields:
-
-- `CertificateValidationRecords`:
-  `List`\[[CertificateValidationRecordTypeDef](./type_defs.md#certificatevalidationrecordtypedef)\]
-
-<a id="deleteautoscalingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CertificateValidationRecordTypeDef](./type_defs.md#certificatevalidationrecordtypedef) 
+2. See [:material-code-brackets: CustomDomainAssociationStatusType](./literals.md#customdomainassociationstatustype) 
 ## DeleteAutoScalingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteAutoScalingConfigurationRequestRequestTypeDef
+
+def get_value() -> DeleteAutoScalingConfigurationRequestRequestTypeDef:
+    return {
+        "AutoScalingConfigurationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AutoScalingConfigurationArn`: `str`
-
-<a id="deleteautoscalingconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DeleteAutoScalingConfigurationRequestRequestTypeDef(TypedDict):
+    AutoScalingConfigurationArn: str,
+```
 
 ## DeleteAutoScalingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteAutoScalingConfigurationResponseTypeDef
+
+def get_value() -> DeleteAutoScalingConfigurationResponseTypeDef:
+    return {
+        "AutoScalingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteAutoScalingConfigurationResponseTypeDef(TypedDict):
+    AutoScalingConfiguration: AutoScalingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoScalingConfiguration`:
-  [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteconnectionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteConnectionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteConnectionRequestRequestTypeDef
+
+def get_value() -> DeleteConnectionRequestRequestTypeDef:
+    return {
+        "ConnectionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ConnectionArn`: `str`
-
-<a id="deleteconnectionresponsetypedef"></a>
+```python title="Definition"
+class DeleteConnectionRequestRequestTypeDef(TypedDict):
+    ConnectionArn: str,
+```
 
 ## DeleteConnectionResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteConnectionResponseTypeDef
+
+def get_value() -> DeleteConnectionResponseTypeDef:
+    return {
+        "Connection": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteConnectionResponseTypeDef(TypedDict):
+    Connection: ConnectionTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionTypeDef](./type_defs.md#connectiontypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteServiceRequestRequestTypeDef
+
+def get_value() -> DeleteServiceRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-<a id="deleteserviceresponsetypedef"></a>
+```python title="Definition"
+class DeleteServiceRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+```
 
 ## DeleteServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteServiceResponseTypeDef
+
+def get_value() -> DeleteServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deletevpcconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DeleteVpcConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteVpcConnectorRequestRequestTypeDef
+
+def get_value() -> DeleteVpcConnectorRequestRequestTypeDef:
+    return {
+        "VpcConnectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `VpcConnectorArn`: `str`
-
-<a id="deletevpcconnectorresponsetypedef"></a>
+```python title="Definition"
+class DeleteVpcConnectorRequestRequestTypeDef(TypedDict):
+    VpcConnectorArn: str,
+```
 
 ## DeleteVpcConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DeleteVpcConnectorResponseTypeDef
+
+def get_value() -> DeleteVpcConnectorResponseTypeDef:
+    return {
+        "VpcConnector": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVpcConnectorResponseTypeDef(TypedDict):
+    VpcConnector: VpcConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeautoscalingconfigurationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAutoScalingConfigurationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeAutoScalingConfigurationRequestRequestTypeDef
+
+def get_value() -> DescribeAutoScalingConfigurationRequestRequestTypeDef:
+    return {
+        "AutoScalingConfigurationArn": ...,
+    }
 ```
 
-Required fields:
-
-- `AutoScalingConfigurationArn`: `str`
-
-<a id="describeautoscalingconfigurationresponsetypedef"></a>
+```python title="Definition"
+class DescribeAutoScalingConfigurationRequestRequestTypeDef(TypedDict):
+    AutoScalingConfigurationArn: str,
+```
 
 ## DescribeAutoScalingConfigurationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeAutoScalingConfigurationResponseTypeDef
+
+def get_value() -> DescribeAutoScalingConfigurationResponseTypeDef:
+    return {
+        "AutoScalingConfiguration": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAutoScalingConfigurationResponseTypeDef(TypedDict):
+    AutoScalingConfiguration: AutoScalingConfigurationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoScalingConfiguration`:
-  [AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecustomdomainsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingConfigurationTypeDef](./type_defs.md#autoscalingconfigurationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeCustomDomainsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeCustomDomainsRequestRequestTypeDef
+
+def get_value() -> DescribeCustomDomainsRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="describecustomdomainsresponsetypedef"></a>
+```python title="Definition"
+class DescribeCustomDomainsRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## DescribeCustomDomainsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeCustomDomainsResponseTypeDef
+
+def get_value() -> DescribeCustomDomainsResponseTypeDef:
+    return {
+        "DNSTarget": ...,
+        "ServiceArn": ...,
+        "CustomDomains": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeCustomDomainsResponseTypeDef(TypedDict):
+    DNSTarget: str,
+    ServiceArn: str,
+    CustomDomains: List[CustomDomainTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DNSTarget`: `str`
-- `ServiceArn`: `str`
-- `CustomDomains`:
-  `List`\[[CustomDomainTypeDef](./type_defs.md#customdomaintypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeservicerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeServiceRequestRequestTypeDef
+
+def get_value() -> DescribeServiceRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-<a id="describeserviceresponsetypedef"></a>
+```python title="Definition"
+class DescribeServiceRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+```
 
 ## DescribeServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeServiceResponseTypeDef
+
+def get_value() -> DescribeServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevpcconnectorrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVpcConnectorRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeVpcConnectorRequestRequestTypeDef
+
+def get_value() -> DescribeVpcConnectorRequestRequestTypeDef:
+    return {
+        "VpcConnectorArn": ...,
+    }
 ```
 
-Required fields:
-
-- `VpcConnectorArn`: `str`
-
-<a id="describevpcconnectorresponsetypedef"></a>
+```python title="Definition"
+class DescribeVpcConnectorRequestRequestTypeDef(TypedDict):
+    VpcConnectorArn: str,
+```
 
 ## DescribeVpcConnectorResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DescribeVpcConnectorResponseTypeDef
+
+def get_value() -> DescribeVpcConnectorResponseTypeDef:
+    return {
+        "VpcConnector": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVpcConnectorResponseTypeDef(TypedDict):
+    VpcConnector: VpcConnectorTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="disassociatecustomdomainrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DisassociateCustomDomainRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DisassociateCustomDomainRequestRequestTypeDef
+
+def get_value() -> DisassociateCustomDomainRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+        "DomainName": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-- `DomainName`: `str`
-
-<a id="disassociatecustomdomainresponsetypedef"></a>
+```python title="Definition"
+class DisassociateCustomDomainRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    DomainName: str,
+```
 
 ## DisassociateCustomDomainResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import DisassociateCustomDomainResponseTypeDef
+
+def get_value() -> DisassociateCustomDomainResponseTypeDef:
+    return {
+        "DNSTarget": ...,
+        "ServiceArn": ...,
+        "CustomDomain": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateCustomDomainResponseTypeDef(TypedDict):
+    DNSTarget: str,
+    ServiceArn: str,
+    CustomDomain: CustomDomainTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DNSTarget`: `str`
-- `ServiceArn`: `str`
-- `CustomDomain`: [CustomDomainTypeDef](./type_defs.md#customdomaintypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="egressconfigurationtypedef"></a>
-
+1. See [:material-code-braces: CustomDomainTypeDef](./type_defs.md#customdomaintypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## EgressConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import EgressConfigurationTypeDef
+
+def get_value() -> EgressConfigurationTypeDef:
+    return {
+        "EgressType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class EgressConfigurationTypeDef(TypedDict):
+    EgressType: NotRequired[EgressTypeType],  # (1)
+    VpcConnectorArn: NotRequired[str],
+```
 
-- `EgressType`: [EgressTypeType](./literals.md#egresstypetype)
-- `VpcConnectorArn`: `str`
-
-<a id="encryptionconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: EgressTypeType](./literals.md#egresstypetype) 
 ## EncryptionConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import EncryptionConfigurationTypeDef
+
+def get_value() -> EncryptionConfigurationTypeDef:
+    return {
+        "KmsKey": ...,
+    }
 ```
 
-Required fields:
-
-- `KmsKey`: `str`
-
-<a id="healthcheckconfigurationtypedef"></a>
+```python title="Definition"
+class EncryptionConfigurationTypeDef(TypedDict):
+    KmsKey: str,
+```
 
 ## HealthCheckConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import HealthCheckConfigurationTypeDef
+
+def get_value() -> HealthCheckConfigurationTypeDef:
+    return {
+        "Protocol": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HealthCheckConfigurationTypeDef(TypedDict):
+    Protocol: NotRequired[HealthCheckProtocolType],  # (1)
+    Path: NotRequired[str],
+    Interval: NotRequired[int],
+    Timeout: NotRequired[int],
+    HealthyThreshold: NotRequired[int],
+    UnhealthyThreshold: NotRequired[int],
+```
 
-- `Protocol`: [HealthCheckProtocolType](./literals.md#healthcheckprotocoltype)
-- `Path`: `str`
-- `Interval`: `int`
-- `Timeout`: `int`
-- `HealthyThreshold`: `int`
-- `UnhealthyThreshold`: `int`
-
-<a id="imageconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: HealthCheckProtocolType](./literals.md#healthcheckprotocoltype) 
 ## ImageConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ImageConfigurationTypeDef
+
+def get_value() -> ImageConfigurationTypeDef:
+    return {
+        "RuntimeEnvironmentVariables": ...,
+    }
 ```
 
-Optional fields:
-
-- `RuntimeEnvironmentVariables`: `Mapping`\[`str`, `str`\]
-- `StartCommand`: `str`
-- `Port`: `str`
-
-<a id="imagerepositorytypedef"></a>
+```python title="Definition"
+class ImageConfigurationTypeDef(TypedDict):
+    RuntimeEnvironmentVariables: NotRequired[Mapping[str, str]],
+    StartCommand: NotRequired[str],
+    Port: NotRequired[str],
+```
 
 ## ImageRepositoryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ImageRepositoryTypeDef
+
+def get_value() -> ImageRepositoryTypeDef:
+    return {
+        "ImageIdentifier": ...,
+        "ImageRepositoryType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ImageRepositoryTypeDef(TypedDict):
+    ImageIdentifier: str,
+    ImageRepositoryType: ImageRepositoryTypeType,  # (2)
+    ImageConfiguration: NotRequired[ImageConfigurationTypeDef],  # (1)
+```
 
-- `ImageIdentifier`: `str`
-- `ImageRepositoryType`:
-  [ImageRepositoryTypeType](./literals.md#imagerepositorytypetype)
-
-Optional fields:
-
-- `ImageConfiguration`:
-  [ImageConfigurationTypeDef](./type_defs.md#imageconfigurationtypedef)
-
-<a id="instanceconfigurationtypedef"></a>
-
+1. See [:material-code-braces: ImageConfigurationTypeDef](./type_defs.md#imageconfigurationtypedef) 
+2. See [:material-code-brackets: ImageRepositoryTypeType](./literals.md#imagerepositorytypetype) 
 ## InstanceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import InstanceConfigurationTypeDef
+
+def get_value() -> InstanceConfigurationTypeDef:
+    return {
+        "Cpu": ...,
+    }
 ```
 
-Optional fields:
-
-- `Cpu`: `str`
-- `Memory`: `str`
-- `InstanceRoleArn`: `str`
-
-<a id="listautoscalingconfigurationsrequestrequesttypedef"></a>
+```python title="Definition"
+class InstanceConfigurationTypeDef(TypedDict):
+    Cpu: NotRequired[str],
+    Memory: NotRequired[str],
+    InstanceRoleArn: NotRequired[str],
+```
 
 ## ListAutoScalingConfigurationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListAutoScalingConfigurationsRequestRequestTypeDef
+
+def get_value() -> ListAutoScalingConfigurationsRequestRequestTypeDef:
+    return {
+        "AutoScalingConfigurationName": ...,
+    }
 ```
 
-Optional fields:
-
-- `AutoScalingConfigurationName`: `str`
-- `LatestOnly`: `bool`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listautoscalingconfigurationsresponsetypedef"></a>
+```python title="Definition"
+class ListAutoScalingConfigurationsRequestRequestTypeDef(TypedDict):
+    AutoScalingConfigurationName: NotRequired[str],
+    LatestOnly: NotRequired[bool],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListAutoScalingConfigurationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListAutoScalingConfigurationsResponseTypeDef
+
+def get_value() -> ListAutoScalingConfigurationsResponseTypeDef:
+    return {
+        "AutoScalingConfigurationSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAutoScalingConfigurationsResponseTypeDef(TypedDict):
+    AutoScalingConfigurationSummaryList: List[AutoScalingConfigurationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AutoScalingConfigurationSummaryList`:
-  `List`\[[AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listconnectionsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListConnectionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListConnectionsRequestRequestTypeDef
+
+def get_value() -> ListConnectionsRequestRequestTypeDef:
+    return {
+        "ConnectionName": ...,
+    }
 ```
 
-Optional fields:
-
-- `ConnectionName`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listconnectionsresponsetypedef"></a>
+```python title="Definition"
+class ListConnectionsRequestRequestTypeDef(TypedDict):
+    ConnectionName: NotRequired[str],
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListConnectionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListConnectionsResponseTypeDef
+
+def get_value() -> ListConnectionsResponseTypeDef:
+    return {
+        "ConnectionSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListConnectionsResponseTypeDef(TypedDict):
+    ConnectionSummaryList: List[ConnectionSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ConnectionSummaryList`:
-  `List`\[[ConnectionSummaryTypeDef](./type_defs.md#connectionsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listoperationsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ConnectionSummaryTypeDef](./type_defs.md#connectionsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListOperationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListOperationsRequestRequestTypeDef
+
+def get_value() -> ListOperationsRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listoperationsresponsetypedef"></a>
+```python title="Definition"
+class ListOperationsRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListOperationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListOperationsResponseTypeDef
+
+def get_value() -> ListOperationsResponseTypeDef:
+    return {
+        "OperationSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListOperationsResponseTypeDef(TypedDict):
+    OperationSummaryList: List[OperationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `OperationSummaryList`:
-  `List`\[[OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listservicesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OperationSummaryTypeDef](./type_defs.md#operationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListServicesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListServicesRequestRequestTypeDef
+
+def get_value() -> ListServicesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listservicesresponsetypedef"></a>
+```python title="Definition"
+class ListServicesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListServicesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListServicesResponseTypeDef
+
+def get_value() -> ListServicesResponseTypeDef:
+    return {
+        "ServiceSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListServicesResponseTypeDef(TypedDict):
+    ServiceSummaryList: List[ServiceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ServiceSummaryList`:
-  `List`\[[ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ServiceSummaryTypeDef](./type_defs.md#servicesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "Tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    Tags: List[TagTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listvpcconnectorsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListVpcConnectorsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListVpcConnectorsRequestRequestTypeDef
+
+def get_value() -> ListVpcConnectorsRequestRequestTypeDef:
+    return {
+        "MaxResults": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listvpcconnectorsresponsetypedef"></a>
+```python title="Definition"
+class ListVpcConnectorsRequestRequestTypeDef(TypedDict):
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
 ## ListVpcConnectorsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ListVpcConnectorsResponseTypeDef
+
+def get_value() -> ListVpcConnectorsResponseTypeDef:
+    return {
+        "VpcConnectors": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListVpcConnectorsResponseTypeDef(TypedDict):
+    VpcConnectors: List[VpcConnectorTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VpcConnectors`:
-  `List`\[[VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="networkconfigurationtypedef"></a>
-
+1. See [:material-code-braces: VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## NetworkConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import NetworkConfigurationTypeDef
+
+def get_value() -> NetworkConfigurationTypeDef:
+    return {
+        "EgressConfiguration": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class NetworkConfigurationTypeDef(TypedDict):
+    EgressConfiguration: NotRequired[EgressConfigurationTypeDef],  # (1)
+```
 
-- `EgressConfiguration`:
-  [EgressConfigurationTypeDef](./type_defs.md#egressconfigurationtypedef)
-
-<a id="operationsummarytypedef"></a>
-
+1. See [:material-code-braces: EgressConfigurationTypeDef](./type_defs.md#egressconfigurationtypedef) 
 ## OperationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import OperationSummaryTypeDef
+
+def get_value() -> OperationSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class OperationSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Type: NotRequired[OperationTypeType],  # (1)
+    Status: NotRequired[OperationStatusType],  # (2)
+    TargetArn: NotRequired[str],
+    StartedAt: NotRequired[datetime],
+    EndedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+```
 
-- `Id`: `str`
-- `Type`: [OperationTypeType](./literals.md#operationtypetype)
-- `Status`: [OperationStatusType](./literals.md#operationstatustype)
-- `TargetArn`: `str`
-- `StartedAt`: `datetime`
-- `EndedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-
-<a id="pauseservicerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: OperationTypeType](./literals.md#operationtypetype) 
+2. See [:material-code-brackets: OperationStatusType](./literals.md#operationstatustype) 
 ## PauseServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import PauseServiceRequestRequestTypeDef
+
+def get_value() -> PauseServiceRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-<a id="pauseserviceresponsetypedef"></a>
+```python title="Definition"
+class PauseServiceRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+```
 
 ## PauseServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import PauseServiceResponseTypeDef
+
+def get_value() -> PauseServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class PauseServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resumeservicerequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResumeServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ResumeServiceRequestRequestTypeDef
+
+def get_value() -> ResumeServiceRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-<a id="resumeserviceresponsetypedef"></a>
+```python title="Definition"
+class ResumeServiceRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+```
 
 ## ResumeServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ResumeServiceResponseTypeDef
+
+def get_value() -> ResumeServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ResumeServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="servicesummarytypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ServiceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ServiceSummaryTypeDef
+
+def get_value() -> ServiceSummaryTypeDef:
+    return {
+        "ServiceName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ServiceSummaryTypeDef(TypedDict):
+    ServiceName: NotRequired[str],
+    ServiceId: NotRequired[str],
+    ServiceArn: NotRequired[str],
+    ServiceUrl: NotRequired[str],
+    CreatedAt: NotRequired[datetime],
+    UpdatedAt: NotRequired[datetime],
+    Status: NotRequired[ServiceStatusType],  # (1)
+```
 
-- `ServiceName`: `str`
-- `ServiceId`: `str`
-- `ServiceArn`: `str`
-- `ServiceUrl`: `str`
-- `CreatedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-- `Status`: [ServiceStatusType](./literals.md#servicestatustype)
-
-<a id="servicetypedef"></a>
-
+1. See [:material-code-brackets: ServiceStatusType](./literals.md#servicestatustype) 
 ## ServiceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import ServiceTypeDef
+
+def get_value() -> ServiceTypeDef:
+    return {
+        "ServiceName": ...,
+        "ServiceId": ...,
+        "ServiceArn": ...,
+        "ServiceUrl": ...,
+        "CreatedAt": ...,
+        "UpdatedAt": ...,
+        "Status": ...,
+        "SourceConfiguration": ...,
+        "InstanceConfiguration": ...,
+        "AutoScalingConfigurationSummary": ...,
+        "NetworkConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ServiceTypeDef(TypedDict):
+    ServiceName: str,
+    ServiceId: str,
+    ServiceArn: str,
+    ServiceUrl: str,
+    CreatedAt: datetime,
+    UpdatedAt: datetime,
+    Status: ServiceStatusType,  # (1)
+    SourceConfiguration: SourceConfigurationTypeDef,  # (2)
+    InstanceConfiguration: InstanceConfigurationTypeDef,  # (3)
+    AutoScalingConfigurationSummary: AutoScalingConfigurationSummaryTypeDef,  # (6)
+    NetworkConfiguration: NetworkConfigurationTypeDef,  # (7)
+    DeletedAt: NotRequired[datetime],
+    EncryptionConfiguration: NotRequired[EncryptionConfigurationTypeDef],  # (4)
+    HealthCheckConfiguration: NotRequired[HealthCheckConfigurationTypeDef],  # (5)
+```
 
-- `ServiceName`: `str`
-- `ServiceId`: `str`
-- `ServiceArn`: `str`
-- `ServiceUrl`: `str`
-- `CreatedAt`: `datetime`
-- `UpdatedAt`: `datetime`
-- `Status`: [ServiceStatusType](./literals.md#servicestatustype)
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `InstanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `AutoScalingConfigurationSummary`:
-  [AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef)
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-
-Optional fields:
-
-- `DeletedAt`: `datetime`
-- `EncryptionConfiguration`:
-  [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
-- `HealthCheckConfiguration`:
-  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
-
-<a id="sourcecodeversiontypedef"></a>
-
+1. See [:material-code-brackets: ServiceStatusType](./literals.md#servicestatustype) 
+2. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+3. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+4. See [:material-code-braces: EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef) 
+5. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
+6. See [:material-code-braces: AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef) 
+7. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 ## SourceCodeVersionTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import SourceCodeVersionTypeDef
+
+def get_value() -> SourceCodeVersionTypeDef:
+    return {
+        "Type": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SourceCodeVersionTypeDef(TypedDict):
+    Type: SourceCodeVersionTypeType,  # (1)
+    Value: str,
+```
 
-- `Type`: `Literal['BRANCH']` (see
-  [SourceCodeVersionTypeType](./literals.md#sourcecodeversiontypetype))
-- `Value`: `str`
-
-<a id="sourceconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: SourceCodeVersionTypeType](./literals.md#sourcecodeversiontypetype) 
 ## SourceConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import SourceConfigurationTypeDef
+
+def get_value() -> SourceConfigurationTypeDef:
+    return {
+        "CodeRepository": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class SourceConfigurationTypeDef(TypedDict):
+    CodeRepository: NotRequired[CodeRepositoryTypeDef],  # (1)
+    ImageRepository: NotRequired[ImageRepositoryTypeDef],  # (2)
+    AutoDeploymentsEnabled: NotRequired[bool],
+    AuthenticationConfiguration: NotRequired[AuthenticationConfigurationTypeDef],  # (3)
+```
 
-- `CodeRepository`:
-  [CodeRepositoryTypeDef](./type_defs.md#coderepositorytypedef)
-- `ImageRepository`:
-  [ImageRepositoryTypeDef](./type_defs.md#imagerepositorytypedef)
-- `AutoDeploymentsEnabled`: `bool`
-- `AuthenticationConfiguration`:
-  [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
-
-<a id="startdeploymentrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CodeRepositoryTypeDef](./type_defs.md#coderepositorytypedef) 
+2. See [:material-code-braces: ImageRepositoryTypeDef](./type_defs.md#imagerepositorytypedef) 
+3. See [:material-code-braces: AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef) 
 ## StartDeploymentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import StartDeploymentRequestRequestTypeDef
+
+def get_value() -> StartDeploymentRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `ServiceArn`: `str`
-
-<a id="startdeploymentresponsetypedef"></a>
+```python title="Definition"
+class StartDeploymentRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+```
 
 ## StartDeploymentResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import StartDeploymentResponseTypeDef
+
+def get_value() -> StartDeploymentResponseTypeDef:
+    return {
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartDeploymentResponseTypeDef(TypedDict):
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="tagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "Tags": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+```
 
-- `ResourceArn`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-
-<a id="tagtypedef"></a>
-
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 ## TagTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import TagTypeDef
+
+def get_value() -> TagTypeDef:
+    return {
+        "Key": ...,
+    }
 ```
 
-Optional fields:
-
-- `Key`: `str`
-- `Value`: `str`
-
-<a id="untagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class TagTypeDef(TypedDict):
+    Key: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "ResourceArn": ...,
+        "TagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `ResourceArn`: `str`
-- `TagKeys`: `Sequence`\[`str`\]
-
-<a id="updateservicerequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+```
 
 ## UpdateServiceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import UpdateServiceRequestRequestTypeDef
+
+def get_value() -> UpdateServiceRequestRequestTypeDef:
+    return {
+        "ServiceArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceRequestRequestTypeDef(TypedDict):
+    ServiceArn: str,
+    SourceConfiguration: NotRequired[SourceConfigurationTypeDef],  # (1)
+    InstanceConfiguration: NotRequired[InstanceConfigurationTypeDef],  # (2)
+    AutoScalingConfigurationArn: NotRequired[str],
+    HealthCheckConfiguration: NotRequired[HealthCheckConfigurationTypeDef],  # (3)
+    NetworkConfiguration: NotRequired[NetworkConfigurationTypeDef],  # (4)
+```
 
-- `ServiceArn`: `str`
-
-Optional fields:
-
-- `SourceConfiguration`:
-  [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
-- `InstanceConfiguration`:
-  [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
-- `AutoScalingConfigurationArn`: `str`
-- `HealthCheckConfiguration`:
-  [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
-- `NetworkConfiguration`:
-  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
-
-<a id="updateserviceresponsetypedef"></a>
-
+1. See [:material-code-braces: SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef) 
+2. See [:material-code-braces: InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef) 
+3. See [:material-code-braces: HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef) 
+4. See [:material-code-braces: NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef) 
 ## UpdateServiceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import UpdateServiceResponseTypeDef
+
+def get_value() -> UpdateServiceResponseTypeDef:
+    return {
+        "Service": ...,
+        "OperationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateServiceResponseTypeDef(TypedDict):
+    Service: ServiceTypeDef,  # (1)
+    OperationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
-- `OperationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="vpcconnectortypedef"></a>
-
+1. See [:material-code-braces: ServiceTypeDef](./type_defs.md#servicetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## VpcConnectorTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_apprunner.type_defs import VpcConnectorTypeDef
+
+def get_value() -> VpcConnectorTypeDef:
+    return {
+        "VpcConnectorName": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VpcConnectorTypeDef(TypedDict):
+    VpcConnectorName: NotRequired[str],
+    VpcConnectorArn: NotRequired[str],
+    VpcConnectorRevision: NotRequired[int],
+    Subnets: NotRequired[List[str]],
+    SecurityGroups: NotRequired[List[str]],
+    Status: NotRequired[VpcConnectorStatusType],  # (1)
+    CreatedAt: NotRequired[datetime],
+    DeletedAt: NotRequired[datetime],
+```
 
-- `VpcConnectorName`: `str`
-- `VpcConnectorArn`: `str`
-- `VpcConnectorRevision`: `int`
-- `Subnets`: `List`\[`str`\]
-- `SecurityGroups`: `List`\[`str`\]
-- `Status`: [VpcConnectorStatusType](./literals.md#vpcconnectorstatustype)
-- `CreatedAt`: `datetime`
-- `DeletedAt`: `datetime`
+1. See [:material-code-brackets: VpcConnectorStatusType](./literals.md#vpcconnectorstatustype) 

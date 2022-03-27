@@ -1,90 +1,18 @@
-<a id="guarddutyclient-for-boto3-guardduty-module"></a>
-
-# GuardDutyClient for boto3 GuardDuty module
+# GuardDutyClient
 
 > [Index](../README.md) > [GuardDuty](./README.md) > GuardDutyClient
 
-Auto-generated documentation for
-[GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
-type annotations stubs module
-[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+!!! note ""
 
-- [GuardDutyClient for boto3 GuardDuty module](#guarddutyclient-for-boto3-guardduty-module)
-  - [GuardDutyClient](#guarddutyclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [accept_invitation](#accept_invitation)
-    - [archive_findings](#archive_findings)
-    - [can_paginate](#can_paginate)
-    - [create_detector](#create_detector)
-    - [create_filter](#create_filter)
-    - [create_ip_set](#create_ip_set)
-    - [create_members](#create_members)
-    - [create_publishing_destination](#create_publishing_destination)
-    - [create_sample_findings](#create_sample_findings)
-    - [create_threat_intel_set](#create_threat_intel_set)
-    - [decline_invitations](#decline_invitations)
-    - [delete_detector](#delete_detector)
-    - [delete_filter](#delete_filter)
-    - [delete_invitations](#delete_invitations)
-    - [delete_ip_set](#delete_ip_set)
-    - [delete_members](#delete_members)
-    - [delete_publishing_destination](#delete_publishing_destination)
-    - [delete_threat_intel_set](#delete_threat_intel_set)
-    - [describe_organization_configuration](#describe_organization_configuration)
-    - [describe_publishing_destination](#describe_publishing_destination)
-    - [disable_organization_admin_account](#disable_organization_admin_account)
-    - [disassociate_from_master_account](#disassociate_from_master_account)
-    - [disassociate_members](#disassociate_members)
-    - [enable_organization_admin_account](#enable_organization_admin_account)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_detector](#get_detector)
-    - [get_filter](#get_filter)
-    - [get_findings](#get_findings)
-    - [get_findings_statistics](#get_findings_statistics)
-    - [get_invitations_count](#get_invitations_count)
-    - [get_ip_set](#get_ip_set)
-    - [get_master_account](#get_master_account)
-    - [get_member_detectors](#get_member_detectors)
-    - [get_members](#get_members)
-    - [get_threat_intel_set](#get_threat_intel_set)
-    - [get_usage_statistics](#get_usage_statistics)
-    - [invite_members](#invite_members)
-    - [list_detectors](#list_detectors)
-    - [list_filters](#list_filters)
-    - [list_findings](#list_findings)
-    - [list_invitations](#list_invitations)
-    - [list_ip_sets](#list_ip_sets)
-    - [list_members](#list_members)
-    - [list_organization_admin_accounts](#list_organization_admin_accounts)
-    - [list_publishing_destinations](#list_publishing_destinations)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_threat_intel_sets](#list_threat_intel_sets)
-    - [start_monitoring_members](#start_monitoring_members)
-    - [stop_monitoring_members](#stop_monitoring_members)
-    - [tag_resource](#tag_resource)
-    - [unarchive_findings](#unarchive_findings)
-    - [untag_resource](#untag_resource)
-    - [update_detector](#update_detector)
-    - [update_filter](#update_filter)
-    - [update_findings_feedback](#update_findings_feedback)
-    - [update_ip_set](#update_ip_set)
-    - [update_member_detectors](#update_member_detectors)
-    - [update_organization_configuration](#update_organization_configuration)
-    - [update_publishing_destination](#update_publishing_destination)
-    - [update_threat_intel_set](#update_threat_intel_set)
-    - [get_paginator](#get_paginator)
-
-<a id="guarddutyclient"></a>
+    Auto-generated documentation for [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
+    type annotations stubs module [mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 ## GuardDutyClient
 
-Type annotations for `boto3.client("guardduty")`
+Type annotations and code completion for `#!python boto3.client("guardduty")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_guardduty.client import GuardDutyClient
 
@@ -92,1455 +20,1928 @@ def get_guardduty_client() -> GuardDutyClient:
     return Session().client("guardduty")
 ```
 
-Boto3 documentation:
-[GuardDuty.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("guardduty").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("guardduty")
+
+try:
+    do_something(client)
+except (
+    client.BadRequestException,
+    client.ClientError,
+    client.InternalServerErrorException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_guardduty.client import Exceptions
 
 def handle_error(exc: Exceptions.BadRequestException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.BadRequestException`
-- `Exceptions.ClientError`
-- `Exceptions.InternalServerErrorException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-GuardDutyClient exceptions.
-
-Type annotations for `boto3.client("guardduty").exceptions` method.
-
-Boto3 documentation:
-[GuardDuty.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="accept\_invitation"></a>
-
-### accept_invitation
+### accept\_invitation
 
 Accepts the invitation to be monitored by a GuardDuty administrator account.
 
-Type annotations for `boto3.client("guardduty").accept_invitation` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").accept_invitation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
 
-Boto3 documentation:
-[GuardDuty.Client.accept_invitation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.accept_invitation)
+```python title="Method definition"
+def accept_invitation(
+    self,
+    *,
+    DetectorId: str,
+    MasterId: str,
+    InvitationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MasterId`: `str` *(required)*
-- `InvitationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: AcceptInvitationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "MasterId": ...,
+    "InvitationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.accept_invitation(**kwargs)
+```
 
-<a id="archive\_findings"></a>
+1. See [:material-code-braces: AcceptInvitationRequestRequestTypeDef](./type_defs.md#acceptinvitationrequestrequesttypedef) 
 
-### archive_findings
+### archive\_findings
 
 Archives GuardDuty findings that are specified by the list of finding IDs.
 
-Type annotations for `boto3.client("guardduty").archive_findings` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").archive_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
 
-Boto3 documentation:
-[GuardDuty.Client.archive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.archive_findings)
+```python title="Method definition"
+def archive_findings(
+    self,
+    *,
+    DetectorId: str,
+    FindingIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ArchiveFindingsRequestRequestTypeDef](./type_defs.md#archivefindingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: ArchiveFindingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FindingIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.archive_findings(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: ArchiveFindingsRequestRequestTypeDef](./type_defs.md#archivefindingsrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("guardduty").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
 
-Boto3 documentation:
-[GuardDuty.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_detector"></a>
-
-### create_detector
+### create\_detector
 
 Creates a single Amazon GuardDuty detector.
 
-Type annotations for `boto3.client("guardduty").create_detector` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
 
-Boto3 documentation:
-[GuardDuty.Client.create_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_detector)
+```python title="Method definition"
+def create_detector(
+    self,
+    *,
+    Enable: bool,
+    ClientToken: str = ...,
+    FindingPublishingFrequency: FindingPublishingFrequencyType = ...,  # (1)
+    DataSources: DataSourceConfigurationsTypeDef = ...,  # (2)
+    Tags: Mapping[str, str] = ...,
+) -> CreateDetectorResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateDetectorRequestRequestTypeDef](./type_defs.md#createdetectorrequestrequesttypedef).
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-braces: DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef) 
+3. See [:material-code-braces: CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Enable`: `bool` *(required)*
-- `ClientToken`: `str`
-- `FindingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `DataSources`:
-  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateDetectorRequestRequestTypeDef = {  # (1)
+    "Enable": ...,
+}
 
-Returns
-[CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef).
+parent.create_detector(**kwargs)
+```
 
-<a id="create\_filter"></a>
+1. See [:material-code-braces: CreateDetectorRequestRequestTypeDef](./type_defs.md#createdetectorrequestrequesttypedef) 
 
-### create_filter
+### create\_filter
 
 Creates a filter using the specified finding criteria.
 
-Type annotations for `boto3.client("guardduty").create_filter` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
 
-Boto3 documentation:
-[GuardDuty.Client.create_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_filter)
+```python title="Method definition"
+def create_filter(
+    self,
+    *,
+    DetectorId: str,
+    Name: str,
+    FindingCriteria: FindingCriteriaTypeDef,  # (1)
+    Description: str = ...,
+    Action: FilterActionType = ...,  # (2)
+    Rank: int = ...,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef).
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+3. See [:material-code-braces: CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `FindingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) *(required)*
-- `Description`: `str`
-- `Action`: [FilterActionType](./literals.md#filteractiontype)
-- `Rank`: `int`
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateFilterRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "Name": ...,
+    "FindingCriteria": ...,
+}
 
-Returns
-[CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+parent.create_filter(**kwargs)
+```
 
-<a id="create\_ip\_set"></a>
+1. See [:material-code-braces: CreateFilterRequestRequestTypeDef](./type_defs.md#createfilterrequestrequesttypedef) 
 
-### create_ip_set
+### create\_ip\_set
 
 Creates a new IPSet, which is called a trusted IP list in the console user
 interface.
 
-Type annotations for `boto3.client("guardduty").create_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
 
-Boto3 documentation:
-[GuardDuty.Client.create_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_ip_set)
+```python title="Method definition"
+def create_ip_set(
+    self,
+    *,
+    DetectorId: str,
+    Name: str,
+    Format: IpSetFormatType,  # (1)
+    Location: str,
+    Activate: bool,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateIPSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef).
+1. See [:material-code-brackets: IpSetFormatType](./literals.md#ipsetformattype) 
+2. See [:material-code-braces: CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Format`: [IpSetFormatType](./literals.md#ipsetformattype) *(required)*
-- `Location`: `str` *(required)*
-- `Activate`: `bool` *(required)*
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateIPSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "Name": ...,
+    "Format": ...,
+    "Location": ...,
+    "Activate": ...,
+}
 
-Returns
-[CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+parent.create_ip_set(**kwargs)
+```
 
-<a id="create\_members"></a>
+1. See [:material-code-braces: CreateIPSetRequestRequestTypeDef](./type_defs.md#createipsetrequestrequesttypedef) 
 
-### create_members
+### create\_members
 
 .
 
-Type annotations for `boto3.client("guardduty").create_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
 
-Boto3 documentation:
-[GuardDuty.Client.create_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_members)
+```python title="Method definition"
+def create_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountDetails: Sequence[AccountDetailTypeDef],  # (1)
+) -> CreateMembersResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef).
+1. See [:material-code-braces: AccountDetailTypeDef](./type_defs.md#accountdetailtypedef) 
+2. See [:material-code-braces: CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountDetails`:
-  `Sequence`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountDetails": ...,
+}
 
-Returns
-[CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
+parent.create_members(**kwargs)
+```
 
-<a id="create\_publishing\_destination"></a>
+1. See [:material-code-braces: CreateMembersRequestRequestTypeDef](./type_defs.md#createmembersrequestrequesttypedef) 
 
-### create_publishing_destination
+### create\_publishing\_destination
 
 Creates a publishing destination to export findings to.
 
-Type annotations for `boto3.client("guardduty").create_publishing_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_publishing_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
 
-Boto3 documentation:
-[GuardDuty.Client.create_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_publishing_destination)
+```python title="Method definition"
+def create_publishing_destination(
+    self,
+    *,
+    DetectorId: str,
+    DestinationType: DestinationTypeType,  # (1)
+    DestinationProperties: DestinationPropertiesTypeDef,  # (2)
+    ClientToken: str = ...,
+) -> CreatePublishingDestinationResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePublishingDestinationRequestRequestTypeDef](./type_defs.md#createpublishingdestinationrequestrequesttypedef).
+1. See [:material-code-brackets: DestinationTypeType](./literals.md#destinationtypetype) 
+2. See [:material-code-braces: DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef) 
+3. See [:material-code-braces: CreatePublishingDestinationResponseTypeDef](./type_defs.md#createpublishingdestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `DestinationType`: `Literal['S3']` (see
-  [DestinationTypeType](./literals.md#destinationtypetype)) *(required)*
-- `DestinationProperties`:
-  [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
-  *(required)*
-- `ClientToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: CreatePublishingDestinationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "DestinationType": ...,
+    "DestinationProperties": ...,
+}
 
-Returns
-[CreatePublishingDestinationResponseTypeDef](./type_defs.md#createpublishingdestinationresponsetypedef).
+parent.create_publishing_destination(**kwargs)
+```
 
-<a id="create\_sample\_findings"></a>
+1. See [:material-code-braces: CreatePublishingDestinationRequestRequestTypeDef](./type_defs.md#createpublishingdestinationrequestrequesttypedef) 
 
-### create_sample_findings
+### create\_sample\_findings
 
 Generates example findings of types specified by the list of finding types.
 
-Type annotations for `boto3.client("guardduty").create_sample_findings` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_sample_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
 
-Boto3 documentation:
-[GuardDuty.Client.create_sample_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_sample_findings)
+```python title="Method definition"
+def create_sample_findings(
+    self,
+    *,
+    DetectorId: str,
+    FindingTypes: Sequence[str] = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateSampleFindingsRequestRequestTypeDef](./type_defs.md#createsamplefindingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingTypes`: `Sequence`\[`str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateSampleFindingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_sample_findings(**kwargs)
+```
 
-<a id="create\_threat\_intel\_set"></a>
+1. See [:material-code-braces: CreateSampleFindingsRequestRequestTypeDef](./type_defs.md#createsamplefindingsrequestrequesttypedef) 
 
-### create_threat_intel_set
+### create\_threat\_intel\_set
 
 Creates a new ThreatIntelSet.
 
-Type annotations for `boto3.client("guardduty").create_threat_intel_set`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").create_threat_intel_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
 
-Boto3 documentation:
-[GuardDuty.Client.create_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.create_threat_intel_set)
+```python title="Method definition"
+def create_threat_intel_set(
+    self,
+    *,
+    DetectorId: str,
+    Name: str,
+    Format: ThreatIntelSetFormatType,  # (1)
+    Location: str,
+    Activate: bool,
+    ClientToken: str = ...,
+    Tags: Mapping[str, str] = ...,
+) -> CreateThreatIntelSetResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateThreatIntelSetRequestRequestTypeDef](./type_defs.md#createthreatintelsetrequestrequesttypedef).
+1. See [:material-code-brackets: ThreatIntelSetFormatType](./literals.md#threatintelsetformattype) 
+2. See [:material-code-braces: CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `Format`: [ThreatIntelSetFormatType](./literals.md#threatintelsetformattype)
-  *(required)*
-- `Location`: `str` *(required)*
-- `Activate`: `bool` *(required)*
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
+```python title="Usage example with kwargs"
+kwargs: CreateThreatIntelSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "Name": ...,
+    "Format": ...,
+    "Location": ...,
+    "Activate": ...,
+}
 
-Returns
-[CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef).
+parent.create_threat_intel_set(**kwargs)
+```
 
-<a id="decline\_invitations"></a>
+1. See [:material-code-braces: CreateThreatIntelSetRequestRequestTypeDef](./type_defs.md#createthreatintelsetrequestrequesttypedef) 
 
-### decline_invitations
+### decline\_invitations
 
 Declines invitations sent to the current member account by Amazon Web Services
 accounts specified by their account IDs.
 
-Type annotations for `boto3.client("guardduty").decline_invitations` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").decline_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
 
-Boto3 documentation:
-[GuardDuty.Client.decline_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.decline_invitations)
+```python title="Method definition"
+def decline_invitations(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> DeclineInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeclineInvitationsRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
+parent.decline_invitations(**kwargs)
+```
 
-<a id="delete\_detector"></a>
+1. See [:material-code-braces: DeclineInvitationsRequestRequestTypeDef](./type_defs.md#declineinvitationsrequestrequesttypedef) 
 
-### delete_detector
+### delete\_detector
 
 Deletes an Amazon GuardDuty detector that is specified by the detector ID.
 
-Type annotations for `boto3.client("guardduty").delete_detector` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_detector)
+```python title="Method definition"
+def delete_detector(
+    self,
+    *,
+    DetectorId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteDetectorRequestRequestTypeDef](./type_defs.md#deletedetectorrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteDetectorRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_detector(**kwargs)
+```
 
-<a id="delete\_filter"></a>
+1. See [:material-code-braces: DeleteDetectorRequestRequestTypeDef](./type_defs.md#deletedetectorrequestrequesttypedef) 
 
-### delete_filter
+### delete\_filter
 
 Deletes the filter specified by the filter name.
 
-Type annotations for `boto3.client("guardduty").delete_filter` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_filter)
+```python title="Method definition"
+def delete_filter(
+    self,
+    *,
+    DetectorId: str,
+    FilterName: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FilterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteFilterRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FilterName": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_filter(**kwargs)
+```
 
-<a id="delete\_invitations"></a>
+1. See [:material-code-braces: DeleteFilterRequestRequestTypeDef](./type_defs.md#deletefilterrequestrequesttypedef) 
 
-### delete_invitations
+### delete\_invitations
 
 Deletes invitations sent to the current member account by Amazon Web Services
 accounts specified by their account IDs.
 
-Type annotations for `boto3.client("guardduty").delete_invitations` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_invitations)
+```python title="Method definition"
+def delete_invitations(
+    self,
+    *,
+    AccountIds: Sequence[str],
+) -> DeleteInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteInvitationsRequestRequestTypeDef = {  # (1)
+    "AccountIds": ...,
+}
 
-Returns
-[DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
+parent.delete_invitations(**kwargs)
+```
 
-<a id="delete\_ip\_set"></a>
+1. See [:material-code-braces: DeleteInvitationsRequestRequestTypeDef](./type_defs.md#deleteinvitationsrequestrequesttypedef) 
 
-### delete_ip_set
+### delete\_ip\_set
 
 Deletes the IPSet specified by the `ipSetId`.
 
-Type annotations for `boto3.client("guardduty").delete_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_ip_set)
+```python title="Method definition"
+def delete_ip_set(
+    self,
+    *,
+    DetectorId: str,
+    IpSetId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `IpSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIPSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "IpSetId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_ip_set(**kwargs)
+```
 
-<a id="delete\_members"></a>
+1. See [:material-code-braces: DeleteIPSetRequestRequestTypeDef](./type_defs.md#deleteipsetrequestrequesttypedef) 
 
-### delete_members
+### delete\_members
 
 Deletes GuardDuty member accounts (to the current GuardDuty administrator
 account) specified by the account IDs.
 
-Type annotations for `boto3.client("guardduty").delete_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_members)
+```python title="Method definition"
+def delete_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> DeleteMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef).
+1. See [:material-code-braces: DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
+parent.delete_members(**kwargs)
+```
 
-<a id="delete\_publishing\_destination"></a>
+1. See [:material-code-braces: DeleteMembersRequestRequestTypeDef](./type_defs.md#deletemembersrequestrequesttypedef) 
 
-### delete_publishing_destination
+### delete\_publishing\_destination
 
 Deletes the publishing definition with the specified `destinationId` .
 
-Type annotations for `boto3.client("guardduty").delete_publishing_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_publishing_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_publishing_destination)
+```python title="Method definition"
+def delete_publishing_destination(
+    self,
+    *,
+    DetectorId: str,
+    DestinationId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeletePublishingDestinationRequestRequestTypeDef](./type_defs.md#deletepublishingdestinationrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `DestinationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeletePublishingDestinationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "DestinationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_publishing_destination(**kwargs)
+```
 
-<a id="delete\_threat\_intel\_set"></a>
+1. See [:material-code-braces: DeletePublishingDestinationRequestRequestTypeDef](./type_defs.md#deletepublishingdestinationrequestrequesttypedef) 
 
-### delete_threat_intel_set
+### delete\_threat\_intel\_set
 
 Deletes the ThreatIntelSet specified by the ThreatIntelSet ID.
 
-Type annotations for `boto3.client("guardduty").delete_threat_intel_set`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").delete_threat_intel_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
 
-Boto3 documentation:
-[GuardDuty.Client.delete_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.delete_threat_intel_set)
+```python title="Method definition"
+def delete_threat_intel_set(
+    self,
+    *,
+    DetectorId: str,
+    ThreatIntelSetId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteThreatIntelSetRequestRequestTypeDef](./type_defs.md#deletethreatintelsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `ThreatIntelSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteThreatIntelSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "ThreatIntelSetId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_threat_intel_set(**kwargs)
+```
 
-<a id="describe\_organization\_configuration"></a>
+1. See [:material-code-braces: DeleteThreatIntelSetRequestRequestTypeDef](./type_defs.md#deletethreatintelsetrequestrequesttypedef) 
 
-### describe_organization_configuration
+### describe\_organization\_configuration
 
 Returns information about the account selected as the delegated administrator
 for GuardDuty.
 
-Type annotations for
-`boto3.client("guardduty").describe_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").describe_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
 
-Boto3 documentation:
-[GuardDuty.Client.describe_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_organization_configuration)
+```python title="Method definition"
+def describe_organization_configuration(
+    self,
+    *,
+    DetectorId: str,
+) -> DescribeOrganizationConfigurationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+parent.describe_organization_configuration(**kwargs)
+```
 
-<a id="describe\_publishing\_destination"></a>
+1. See [:material-code-braces: DescribeOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#describeorganizationconfigurationrequestrequesttypedef) 
 
-### describe_publishing_destination
+### describe\_publishing\_destination
 
 Returns information about the publishing destination specified by the provided
 `destinationId` .
 
-Type annotations for
-`boto3.client("guardduty").describe_publishing_destination` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").describe_publishing_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
 
-Boto3 documentation:
-[GuardDuty.Client.describe_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.describe_publishing_destination)
+```python title="Method definition"
+def describe_publishing_destination(
+    self,
+    *,
+    DetectorId: str,
+    DestinationId: str,
+) -> DescribePublishingDestinationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribePublishingDestinationRequestRequestTypeDef](./type_defs.md#describepublishingdestinationrequestrequesttypedef).
+1. See [:material-code-braces: DescribePublishingDestinationResponseTypeDef](./type_defs.md#describepublishingdestinationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `DestinationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribePublishingDestinationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "DestinationId": ...,
+}
 
-Returns
-[DescribePublishingDestinationResponseTypeDef](./type_defs.md#describepublishingdestinationresponsetypedef).
+parent.describe_publishing_destination(**kwargs)
+```
 
-<a id="disable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: DescribePublishingDestinationRequestRequestTypeDef](./type_defs.md#describepublishingdestinationrequestrequesttypedef) 
 
-### disable_organization_admin_account
+### disable\_organization\_admin\_account
 
-Disables an Amazon Web Services account within the Organization as the
-GuardDuty delegated administrator.
+Disables an Amazon Web Services account within the Organization as the GuardDuty
+delegated administrator.
 
-Type annotations for
-`boto3.client("guardduty").disable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").disable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
 
-Boto3 documentation:
-[GuardDuty.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disable_organization_admin_account)
+```python title="Method definition"
+def disable_organization_admin_account(
+    self,
+    *,
+    AdminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "AdminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disable_organization_admin_account(**kwargs)
+```
 
-<a id="disassociate\_from\_master\_account"></a>
+1. See [:material-code-braces: DisableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#disableorganizationadminaccountrequestrequesttypedef) 
 
-### disassociate_from_master_account
+### disassociate\_from\_master\_account
 
 Disassociates the current GuardDuty member account from its administrator
 account.
 
-Type annotations for
-`boto3.client("guardduty").disassociate_from_master_account` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").disassociate_from_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
 
-Boto3 documentation:
-[GuardDuty.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_from_master_account)
+```python title="Method definition"
+def disassociate_from_master_account(
+    self,
+    *,
+    DetectorId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateFromMasterAccountRequestRequestTypeDef](./type_defs.md#disassociatefrommasteraccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateFromMasterAccountRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_from_master_account(**kwargs)
+```
 
-<a id="disassociate\_members"></a>
+1. See [:material-code-braces: DisassociateFromMasterAccountRequestRequestTypeDef](./type_defs.md#disassociatefrommasteraccountrequestrequesttypedef) 
 
-### disassociate_members
+### disassociate\_members
 
 Disassociates GuardDuty member accounts (to the current GuardDuty administrator
 account) specified by the account IDs.
 
-Type annotations for `boto3.client("guardduty").disassociate_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").disassociate_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
 
-Boto3 documentation:
-[GuardDuty.Client.disassociate_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.disassociate_members)
+```python title="Method definition"
+def disassociate_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> DisassociateMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DisassociateMembersRequestRequestTypeDef](./type_defs.md#disassociatemembersrequestrequesttypedef).
+1. See [:material-code-braces: DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef).
+parent.disassociate_members(**kwargs)
+```
 
-<a id="enable\_organization\_admin\_account"></a>
+1. See [:material-code-braces: DisassociateMembersRequestRequestTypeDef](./type_defs.md#disassociatemembersrequestrequesttypedef) 
 
-### enable_organization_admin_account
+### enable\_organization\_admin\_account
 
 Enables an Amazon Web Services account within the organization as the GuardDuty
 delegated administrator.
 
-Type annotations for
-`boto3.client("guardduty").enable_organization_admin_account` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").enable_organization_admin_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
 
-Boto3 documentation:
-[GuardDuty.Client.enable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.enable_organization_admin_account)
+```python title="Method definition"
+def enable_organization_admin_account(
+    self,
+    *,
+    AdminAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AdminAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: EnableOrganizationAdminAccountRequestRequestTypeDef = {  # (1)
+    "AdminAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.enable_organization_admin_account(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: EnableOrganizationAdminAccountRequestRequestTypeDef](./type_defs.md#enableorganizationadminaccountrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("guardduty").generate_presigned_url` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
 
-Boto3 documentation:
-[GuardDuty.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_detector"></a>
-
-### get_detector
+### get\_detector
 
 Retrieves an Amazon GuardDuty detector specified by the detectorId.
 
-Type annotations for `boto3.client("guardduty").get_detector` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
 
-Boto3 documentation:
-[GuardDuty.Client.get_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_detector)
+```python title="Method definition"
+def get_detector(
+    self,
+    *,
+    DetectorId: str,
+) -> GetDetectorResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetDetectorRequestRequestTypeDef](./type_defs.md#getdetectorrequestrequesttypedef).
+1. See [:material-code-braces: GetDetectorResponseTypeDef](./type_defs.md#getdetectorresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetDetectorRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[GetDetectorResponseTypeDef](./type_defs.md#getdetectorresponsetypedef).
+parent.get_detector(**kwargs)
+```
 
-<a id="get\_filter"></a>
+1. See [:material-code-braces: GetDetectorRequestRequestTypeDef](./type_defs.md#getdetectorrequestrequesttypedef) 
 
-### get_filter
+### get\_filter
 
 Returns the details of the filter specified by the filter name.
 
-Type annotations for `boto3.client("guardduty").get_filter` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
 
-Boto3 documentation:
-[GuardDuty.Client.get_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_filter)
+```python title="Method definition"
+def get_filter(
+    self,
+    *,
+    DetectorId: str,
+    FilterName: str,
+) -> GetFilterResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetFilterRequestRequestTypeDef](./type_defs.md#getfilterrequestrequesttypedef).
+1. See [:material-code-braces: GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FilterName`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetFilterRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FilterName": ...,
+}
 
-Returns [GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef).
+parent.get_filter(**kwargs)
+```
 
-<a id="get\_findings"></a>
+1. See [:material-code-braces: GetFilterRequestRequestTypeDef](./type_defs.md#getfilterrequestrequesttypedef) 
 
-### get_findings
+### get\_findings
 
 Describes Amazon GuardDuty findings specified by finding IDs.
 
-Type annotations for `boto3.client("guardduty").get_findings` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
 
-Boto3 documentation:
-[GuardDuty.Client.get_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings)
+```python title="Method definition"
+def get_findings(
+    self,
+    *,
+    DetectorId: str,
+    FindingIds: Sequence[str],
+    SortCriteria: SortCriteriaTypeDef = ...,  # (1)
+) -> GetFindingsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef).
+1. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+2. See [:material-code-braces: GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingIds`: `Sequence`\[`str`\] *(required)*
-- `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetFindingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FindingIds": ...,
+}
 
-Returns
-[GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+parent.get_findings(**kwargs)
+```
 
-<a id="get\_findings\_statistics"></a>
+1. See [:material-code-braces: GetFindingsRequestRequestTypeDef](./type_defs.md#getfindingsrequestrequesttypedef) 
 
-### get_findings_statistics
+### get\_findings\_statistics
 
 Lists Amazon GuardDuty findings statistics for the specified detector ID.
 
-Type annotations for `boto3.client("guardduty").get_findings_statistics`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_findings_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
 
-Boto3 documentation:
-[GuardDuty.Client.get_findings_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_findings_statistics)
+```python title="Method definition"
+def get_findings_statistics(
+    self,
+    *,
+    DetectorId: str,
+    FindingStatisticTypes: Sequence[FindingStatisticTypeType],  # (1)
+    FindingCriteria: FindingCriteriaTypeDef = ...,  # (2)
+) -> GetFindingsStatisticsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetFindingsStatisticsRequestRequestTypeDef](./type_defs.md#getfindingsstatisticsrequestrequesttypedef).
+1. See [:material-code-brackets: FindingStatisticTypeType](./literals.md#findingstatistictypetype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: GetFindingsStatisticsResponseTypeDef](./type_defs.md#getfindingsstatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingStatisticTypes`: `Sequence`\[`Literal['COUNT_BY_SEVERITY']` (see
-  [FindingStatisticTypeType](./literals.md#findingstatistictypetype))\]
-  *(required)*
-- `FindingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: GetFindingsStatisticsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FindingStatisticTypes": ...,
+}
 
-Returns
-[GetFindingsStatisticsResponseTypeDef](./type_defs.md#getfindingsstatisticsresponsetypedef).
+parent.get_findings_statistics(**kwargs)
+```
 
-<a id="get\_invitations\_count"></a>
+1. See [:material-code-braces: GetFindingsStatisticsRequestRequestTypeDef](./type_defs.md#getfindingsstatisticsrequestrequesttypedef) 
 
-### get_invitations_count
+### get\_invitations\_count
 
 Returns the count of all GuardDuty membership invitations that were sent to the
 current member account except the currently accepted invitation.
 
-Type annotations for `boto3.client("guardduty").get_invitations_count` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_invitations_count` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
 
-Boto3 documentation:
-[GuardDuty.Client.get_invitations_count](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_invitations_count)
+```python title="Method definition"
+def get_invitations_count(
+    self,
+) -> GetInvitationsCountResponseTypeDef:  # (1)
+    ...
+```
 
-Returns
-[GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
+1. See [:material-code-braces: GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef) 
 
-<a id="get\_ip\_set"></a>
-
-### get_ip_set
+### get\_ip\_set
 
 Retrieves the IPSet specified by the `ipSetId` .
 
-Type annotations for `boto3.client("guardduty").get_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
 
-Boto3 documentation:
-[GuardDuty.Client.get_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_ip_set)
+```python title="Method definition"
+def get_ip_set(
+    self,
+    *,
+    DetectorId: str,
+    IpSetId: str,
+) -> GetIPSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef).
+1. See [:material-code-braces: GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `IpSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetIPSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "IpSetId": ...,
+}
 
-Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+parent.get_ip_set(**kwargs)
+```
 
-<a id="get\_master\_account"></a>
+1. See [:material-code-braces: GetIPSetRequestRequestTypeDef](./type_defs.md#getipsetrequestrequesttypedef) 
 
-### get_master_account
+### get\_master\_account
 
-Provides the details for the GuardDuty administrator account associated with
-the current GuardDuty member account.
+Provides the details for the GuardDuty administrator account associated with the
+current GuardDuty member account.
 
-Type annotations for `boto3.client("guardduty").get_master_account` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_master_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
 
-Boto3 documentation:
-[GuardDuty.Client.get_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_master_account)
+```python title="Method definition"
+def get_master_account(
+    self,
+    *,
+    DetectorId: str,
+) -> GetMasterAccountResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMasterAccountRequestRequestTypeDef](./type_defs.md#getmasteraccountrequestrequesttypedef).
+1. See [:material-code-braces: GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMasterAccountRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+parent.get_master_account(**kwargs)
+```
 
-<a id="get\_member\_detectors"></a>
+1. See [:material-code-braces: GetMasterAccountRequestRequestTypeDef](./type_defs.md#getmasteraccountrequestrequesttypedef) 
 
-### get_member_detectors
+### get\_member\_detectors
 
 Describes which data sources are enabled for the member account's detector.
 
-Type annotations for `boto3.client("guardduty").get_member_detectors` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_member_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
 
-Boto3 documentation:
-[GuardDuty.Client.get_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_member_detectors)
+```python title="Method definition"
+def get_member_detectors(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> GetMemberDetectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMemberDetectorsRequestRequestTypeDef](./type_defs.md#getmemberdetectorsrequestrequesttypedef).
+1. See [:material-code-braces: GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMemberDetectorsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef).
+parent.get_member_detectors(**kwargs)
+```
 
-<a id="get\_members"></a>
+1. See [:material-code-braces: GetMemberDetectorsRequestRequestTypeDef](./type_defs.md#getmemberdetectorsrequestrequesttypedef) 
 
-### get_members
+### get\_members
 
 Retrieves GuardDuty member accounts (of the current GuardDuty administrator
 account) specified by the account IDs.
 
-Type annotations for `boto3.client("guardduty").get_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
 
-Boto3 documentation:
-[GuardDuty.Client.get_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_members)
+```python title="Method definition"
+def get_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> GetMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef).
+1. See [:material-code-braces: GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
+parent.get_members(**kwargs)
+```
 
-<a id="get\_threat\_intel\_set"></a>
+1. See [:material-code-braces: GetMembersRequestRequestTypeDef](./type_defs.md#getmembersrequestrequesttypedef) 
 
-### get_threat_intel_set
+### get\_threat\_intel\_set
 
 Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
 
-Type annotations for `boto3.client("guardduty").get_threat_intel_set` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_threat_intel_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
 
-Boto3 documentation:
-[GuardDuty.Client.get_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_threat_intel_set)
+```python title="Method definition"
+def get_threat_intel_set(
+    self,
+    *,
+    DetectorId: str,
+    ThreatIntelSetId: str,
+) -> GetThreatIntelSetResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetThreatIntelSetRequestRequestTypeDef](./type_defs.md#getthreatintelsetrequestrequesttypedef).
+1. See [:material-code-braces: GetThreatIntelSetResponseTypeDef](./type_defs.md#getthreatintelsetresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `ThreatIntelSetId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetThreatIntelSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "ThreatIntelSetId": ...,
+}
 
-Returns
-[GetThreatIntelSetResponseTypeDef](./type_defs.md#getthreatintelsetresponsetypedef).
+parent.get_threat_intel_set(**kwargs)
+```
 
-<a id="get\_usage\_statistics"></a>
+1. See [:material-code-braces: GetThreatIntelSetRequestRequestTypeDef](./type_defs.md#getthreatintelsetrequestrequesttypedef) 
 
-### get_usage_statistics
+### get\_usage\_statistics
 
 Lists Amazon GuardDuty usage statistics over the last 30 days for the specified
 detector ID.
 
-Type annotations for `boto3.client("guardduty").get_usage_statistics` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_usage_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
 
-Boto3 documentation:
-[GuardDuty.Client.get_usage_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.get_usage_statistics)
+```python title="Method definition"
+def get_usage_statistics(
+    self,
+    *,
+    DetectorId: str,
+    UsageStatisticType: UsageStatisticTypeType,  # (1)
+    UsageCriteria: UsageCriteriaTypeDef,  # (2)
+    Unit: str = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetUsageStatisticsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef).
+1. See [:material-code-brackets: UsageStatisticTypeType](./literals.md#usagestatistictypetype) 
+2. See [:material-code-braces: UsageCriteriaTypeDef](./type_defs.md#usagecriteriatypedef) 
+3. See [:material-code-braces: GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `UsageStatisticType`:
-  [UsageStatisticTypeType](./literals.md#usagestatistictypetype) *(required)*
-- `UsageCriteria`: [UsageCriteriaTypeDef](./type_defs.md#usagecriteriatypedef)
-  *(required)*
-- `Unit`: `str`
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetUsageStatisticsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "UsageStatisticType": ...,
+    "UsageCriteria": ...,
+}
 
-Returns
-[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
+parent.get_usage_statistics(**kwargs)
+```
 
-<a id="invite\_members"></a>
+1. See [:material-code-braces: GetUsageStatisticsRequestRequestTypeDef](./type_defs.md#getusagestatisticsrequestrequesttypedef) 
 
-### invite_members
+### invite\_members
 
 Invites other Amazon Web Services accounts (created as members of the current
-Amazon Web Services account by CreateMembers) to enable GuardDuty, and allow
-the current Amazon Web Services account to view and manage these accounts'
-findings on their behalf as the GuardDuty administrator account.
+Amazon Web Services account by CreateMembers) to enable GuardDuty, and allow the
+current Amazon Web Services account to view and manage these accounts' findings
+on their behalf as the GuardDuty administrator account.
 
-Type annotations for `boto3.client("guardduty").invite_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").invite_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
 
-Boto3 documentation:
-[GuardDuty.Client.invite_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.invite_members)
+```python title="Method definition"
+def invite_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+    DisableEmailNotification: bool = ...,
+    Message: str = ...,
+) -> InviteMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[InviteMembersRequestRequestTypeDef](./type_defs.md#invitemembersrequestrequesttypedef).
+1. See [:material-code-braces: InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
-- `DisableEmailNotification`: `bool`
-- `Message`: `str`
+```python title="Usage example with kwargs"
+kwargs: InviteMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
+parent.invite_members(**kwargs)
+```
 
-<a id="list\_detectors"></a>
+1. See [:material-code-braces: InviteMembersRequestRequestTypeDef](./type_defs.md#invitemembersrequestrequesttypedef) 
 
-### list_detectors
+### list\_detectors
 
 Lists detectorIds of all the existing Amazon GuardDuty detector resources.
 
-Type annotations for `boto3.client("guardduty").list_detectors` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
 
-Boto3 documentation:
-[GuardDuty.Client.list_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_detectors)
+```python title="Method definition"
+def list_detectors(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListDetectorsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef).
+1. See [:material-code-braces: ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListDetectorsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).
+parent.list_detectors(**kwargs)
+```
 
-<a id="list\_filters"></a>
+1. See [:material-code-braces: ListDetectorsRequestRequestTypeDef](./type_defs.md#listdetectorsrequestrequesttypedef) 
 
-### list_filters
+### list\_filters
 
 Returns a paginated list of the current filters.
 
-Type annotations for `boto3.client("guardduty").list_filters` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_filters` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
 
-Boto3 documentation:
-[GuardDuty.Client.list_filters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_filters)
+```python title="Method definition"
+def list_filters(
+    self,
+    *,
+    DetectorId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFiltersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef).
+1. See [:material-code-braces: ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFiltersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+parent.list_filters(**kwargs)
+```
 
-<a id="list\_findings"></a>
+1. See [:material-code-braces: ListFiltersRequestRequestTypeDef](./type_defs.md#listfiltersrequestrequesttypedef) 
 
-### list_findings
+### list\_findings
 
 Lists Amazon GuardDuty findings for the specified detector ID.
 
-Type annotations for `boto3.client("guardduty").list_findings` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
 
-Boto3 documentation:
-[GuardDuty.Client.list_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_findings)
+```python title="Method definition"
+def list_findings(
+    self,
+    *,
+    DetectorId: str,
+    FindingCriteria: FindingCriteriaTypeDef = ...,  # (1)
+    SortCriteria: SortCriteriaTypeDef = ...,  # (2)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListFindingsResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef).
+1. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+2. See [:material-code-braces: SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef) 
+3. See [:material-code-braces: ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
-- `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListFindingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
+parent.list_findings(**kwargs)
+```
 
-<a id="list\_invitations"></a>
+1. See [:material-code-braces: ListFindingsRequestRequestTypeDef](./type_defs.md#listfindingsrequestrequesttypedef) 
 
-### list_invitations
+### list\_invitations
 
 Lists all GuardDuty membership invitations that were sent to the current Amazon
 Web Services account.
 
-Type annotations for `boto3.client("guardduty").list_invitations` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_invitations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
 
-Boto3 documentation:
-[GuardDuty.Client.list_invitations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_invitations)
+```python title="Method definition"
+def list_invitations(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListInvitationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef).
+1. See [:material-code-braces: ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListInvitationsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
+parent.list_invitations(**kwargs)
+```
 
-<a id="list\_ip\_sets"></a>
+1. See [:material-code-braces: ListInvitationsRequestRequestTypeDef](./type_defs.md#listinvitationsrequestrequesttypedef) 
 
-### list_ip_sets
+### list\_ip\_sets
 
 Lists the IPSets of the GuardDuty service specified by the detector ID.
 
-Type annotations for `boto3.client("guardduty").list_ip_sets` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_ip_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
 
-Boto3 documentation:
-[GuardDuty.Client.list_ip_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_ip_sets)
+```python title="Method definition"
+def list_ip_sets(
+    self,
+    *,
+    DetectorId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListIPSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListIPSetsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+parent.list_ip_sets(**kwargs)
+```
 
-<a id="list\_members"></a>
+1. See [:material-code-braces: ListIPSetsRequestRequestTypeDef](./type_defs.md#listipsetsrequestrequesttypedef) 
 
-### list_members
+### list\_members
 
 Lists details about all member accounts for the current GuardDuty administrator
 account.
 
-Type annotations for `boto3.client("guardduty").list_members` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
 
-Boto3 documentation:
-[GuardDuty.Client.list_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_members)
+```python title="Method definition"
+def list_members(
+    self,
+    *,
+    DetectorId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+    OnlyAssociated: str = ...,
+) -> ListMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef).
+1. See [:material-code-braces: ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `OnlyAssociated`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+parent.list_members(**kwargs)
+```
 
-<a id="list\_organization\_admin\_accounts"></a>
+1. See [:material-code-braces: ListMembersRequestRequestTypeDef](./type_defs.md#listmembersrequestrequesttypedef) 
 
-### list_organization_admin_accounts
+### list\_organization\_admin\_accounts
 
 Lists the accounts configured as GuardDuty delegated administrators.
 
-Type annotations for
-`boto3.client("guardduty").list_organization_admin_accounts` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_organization_admin_accounts` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
 
-Boto3 documentation:
-[GuardDuty.Client.list_organization_admin_accounts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_organization_admin_accounts)
+```python title="Method definition"
+def list_organization_admin_accounts(
+    self,
+    *,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListOrganizationAdminAccountsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef).
+1. See [:material-code-braces: ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListOrganizationAdminAccountsRequestRequestTypeDef = {  # (1)
+    "MaxResults": ...,
+}
 
-Returns
-[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+parent.list_organization_admin_accounts(**kwargs)
+```
 
-<a id="list\_publishing\_destinations"></a>
+1. See [:material-code-braces: ListOrganizationAdminAccountsRequestRequestTypeDef](./type_defs.md#listorganizationadminaccountsrequestrequesttypedef) 
 
-### list_publishing_destinations
+### list\_publishing\_destinations
 
 Returns a list of publishing destinations associated with the specified
 `detectorId` .
 
-Type annotations for `boto3.client("guardduty").list_publishing_destinations`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_publishing_destinations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
 
-Boto3 documentation:
-[GuardDuty.Client.list_publishing_destinations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_publishing_destinations)
+```python title="Method definition"
+def list_publishing_destinations(
+    self,
+    *,
+    DetectorId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListPublishingDestinationsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListPublishingDestinationsRequestRequestTypeDef](./type_defs.md#listpublishingdestinationsrequestrequesttypedef).
+1. See [:material-code-braces: ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListPublishingDestinationsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef).
+parent.list_publishing_destinations(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListPublishingDestinationsRequestRequestTypeDef](./type_defs.md#listpublishingdestinationsrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists tags for a resource.
 
-Type annotations for `boto3.client("guardduty").list_tags_for_resource` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[GuardDuty.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceArn: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="list\_threat\_intel\_sets"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### list_threat_intel_sets
+### list\_threat\_intel\_sets
 
-Lists the ThreatIntelSets of the GuardDuty service specified by the detector
-ID.
+Lists the ThreatIntelSets of the GuardDuty service specified by the detector ID.
 
-Type annotations for `boto3.client("guardduty").list_threat_intel_sets` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").list_threat_intel_sets` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
 
-Boto3 documentation:
-[GuardDuty.Client.list_threat_intel_sets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.list_threat_intel_sets)
+```python title="Method definition"
+def list_threat_intel_sets(
+    self,
+    *,
+    DetectorId: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListThreatIntelSetsResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListThreatIntelSetsRequestRequestTypeDef](./type_defs.md#listthreatintelsetsrequestrequesttypedef).
+1. See [:material-code-braces: ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListThreatIntelSetsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns
-[ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef).
+parent.list_threat_intel_sets(**kwargs)
+```
 
-<a id="start\_monitoring\_members"></a>
+1. See [:material-code-braces: ListThreatIntelSetsRequestRequestTypeDef](./type_defs.md#listthreatintelsetsrequestrequesttypedef) 
 
-### start_monitoring_members
+### start\_monitoring\_members
 
 Turns on GuardDuty monitoring of the specified member accounts.
 
-Type annotations for `boto3.client("guardduty").start_monitoring_members`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").start_monitoring_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
 
-Boto3 documentation:
-[GuardDuty.Client.start_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.start_monitoring_members)
+```python title="Method definition"
+def start_monitoring_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> StartMonitoringMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StartMonitoringMembersRequestRequestTypeDef](./type_defs.md#startmonitoringmembersrequestrequesttypedef).
+1. See [:material-code-braces: StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartMonitoringMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef).
+parent.start_monitoring_members(**kwargs)
+```
 
-<a id="stop\_monitoring\_members"></a>
+1. See [:material-code-braces: StartMonitoringMembersRequestRequestTypeDef](./type_defs.md#startmonitoringmembersrequestrequesttypedef) 
 
-### stop_monitoring_members
+### stop\_monitoring\_members
 
 Stops GuardDuty monitoring for the specified member accounts.
 
-Type annotations for `boto3.client("guardduty").stop_monitoring_members`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").stop_monitoring_members` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
 
-Boto3 documentation:
-[GuardDuty.Client.stop_monitoring_members](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.stop_monitoring_members)
+```python title="Method definition"
+def stop_monitoring_members(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+) -> StopMonitoringMembersResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[StopMonitoringMembersRequestRequestTypeDef](./type_defs.md#stopmonitoringmembersrequestrequesttypedef).
+1. See [:material-code-braces: StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopMonitoringMembersRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef).
+parent.stop_monitoring_members(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: StopMonitoringMembersRequestRequestTypeDef](./type_defs.md#stopmonitoringmembersrequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds tags to a resource.
 
-Type annotations for `boto3.client("guardduty").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
 
-Boto3 documentation:
-[GuardDuty.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    Tags: Mapping[str, str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="unarchive\_findings"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### unarchive_findings
+### unarchive\_findings
 
 Unarchives GuardDuty findings specified by the `findingIds` .
 
-Type annotations for `boto3.client("guardduty").unarchive_findings` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").unarchive_findings` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
 
-Boto3 documentation:
-[GuardDuty.Client.unarchive_findings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.unarchive_findings)
+```python title="Method definition"
+def unarchive_findings(
+    self,
+    *,
+    DetectorId: str,
+    FindingIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UnarchiveFindingsRequestRequestTypeDef](./type_defs.md#unarchivefindingsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UnarchiveFindingsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FindingIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.unarchive_findings(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: UnarchiveFindingsRequestRequestTypeDef](./type_defs.md#unarchivefindingsrequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes tags from a resource.
 
-Type annotations for `boto3.client("guardduty").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
 
-Boto3 documentation:
-[GuardDuty.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceArn: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceArn`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceArn": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_detector"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_detector
+### update\_detector
 
 Updates the Amazon GuardDuty detector specified by the detectorId.
 
-Type annotations for `boto3.client("guardduty").update_detector` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_detector` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
 
-Boto3 documentation:
-[GuardDuty.Client.update_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_detector)
+```python title="Method definition"
+def update_detector(
+    self,
+    *,
+    DetectorId: str,
+    Enable: bool = ...,
+    FindingPublishingFrequency: FindingPublishingFrequencyType = ...,  # (1)
+    DataSources: DataSourceConfigurationsTypeDef = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateDetectorRequestRequestTypeDef](./type_defs.md#updatedetectorrequestrequesttypedef).
+1. See [:material-code-brackets: FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype) 
+2. See [:material-code-braces: DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `Enable`: `bool`
-- `FindingPublishingFrequency`:
-  [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
-- `DataSources`:
-  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateDetectorRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_detector(**kwargs)
+```
 
-<a id="update\_filter"></a>
+1. See [:material-code-braces: UpdateDetectorRequestRequestTypeDef](./type_defs.md#updatedetectorrequestrequesttypedef) 
 
-### update_filter
+### update\_filter
 
 Updates the filter specified by the filter name.
 
-Type annotations for `boto3.client("guardduty").update_filter` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_filter` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
 
-Boto3 documentation:
-[GuardDuty.Client.update_filter](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_filter)
+```python title="Method definition"
+def update_filter(
+    self,
+    *,
+    DetectorId: str,
+    FilterName: str,
+    Description: str = ...,
+    Action: FilterActionType = ...,  # (1)
+    Rank: int = ...,
+    FindingCriteria: FindingCriteriaTypeDef = ...,  # (2)
+) -> UpdateFilterResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[UpdateFilterRequestRequestTypeDef](./type_defs.md#updatefilterrequestrequesttypedef).
+1. See [:material-code-brackets: FilterActionType](./literals.md#filteractiontype) 
+2. See [:material-code-braces: FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef) 
+3. See [:material-code-braces: UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FilterName`: `str` *(required)*
-- `Description`: `str`
-- `Action`: [FilterActionType](./literals.md#filteractiontype)
-- `Rank`: `int`
-- `FindingCriteria`:
-  [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateFilterRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FilterName": ...,
+}
 
-Returns
-[UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
+parent.update_filter(**kwargs)
+```
 
-<a id="update\_findings\_feedback"></a>
+1. See [:material-code-braces: UpdateFilterRequestRequestTypeDef](./type_defs.md#updatefilterrequestrequesttypedef) 
 
-### update_findings_feedback
+### update\_findings\_feedback
 
 Marks the specified GuardDuty findings as useful or not useful.
 
-Type annotations for `boto3.client("guardduty").update_findings_feedback`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_findings_feedback` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
 
-Boto3 documentation:
-[GuardDuty.Client.update_findings_feedback](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_findings_feedback)
+```python title="Method definition"
+def update_findings_feedback(
+    self,
+    *,
+    DetectorId: str,
+    FindingIds: Sequence[str],
+    Feedback: FeedbackType,  # (1)
+    Comments: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateFindingsFeedbackRequestRequestTypeDef](./type_defs.md#updatefindingsfeedbackrequestrequesttypedef).
+1. See [:material-code-brackets: FeedbackType](./literals.md#feedbacktype) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `FindingIds`: `Sequence`\[`str`\] *(required)*
-- `Feedback`: [FeedbackType](./literals.md#feedbacktype) *(required)*
-- `Comments`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateFindingsFeedbackRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "FindingIds": ...,
+    "Feedback": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_findings_feedback(**kwargs)
+```
 
-<a id="update\_ip\_set"></a>
+1. See [:material-code-braces: UpdateFindingsFeedbackRequestRequestTypeDef](./type_defs.md#updatefindingsfeedbackrequestrequesttypedef) 
 
-### update_ip_set
+### update\_ip\_set
 
 Updates the IPSet specified by the IPSet ID.
 
-Type annotations for `boto3.client("guardduty").update_ip_set` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_ip_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
 
-Boto3 documentation:
-[GuardDuty.Client.update_ip_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_ip_set)
+```python title="Method definition"
+def update_ip_set(
+    self,
+    *,
+    DetectorId: str,
+    IpSetId: str,
+    Name: str = ...,
+    Location: str = ...,
+    Activate: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `IpSetId`: `str` *(required)*
-- `Name`: `str`
-- `Location`: `str`
-- `Activate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateIPSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "IpSetId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_ip_set(**kwargs)
+```
 
-<a id="update\_member\_detectors"></a>
+1. See [:material-code-braces: UpdateIPSetRequestRequestTypeDef](./type_defs.md#updateipsetrequestrequesttypedef) 
 
-### update_member_detectors
+### update\_member\_detectors
 
 Contains information on member accounts to be updated.
 
-Type annotations for `boto3.client("guardduty").update_member_detectors`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_member_detectors` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
 
-Boto3 documentation:
-[GuardDuty.Client.update_member_detectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_member_detectors)
+```python title="Method definition"
+def update_member_detectors(
+    self,
+    *,
+    DetectorId: str,
+    AccountIds: Sequence[str],
+    DataSources: DataSourceConfigurationsTypeDef = ...,  # (1)
+) -> UpdateMemberDetectorsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateMemberDetectorsRequestRequestTypeDef](./type_defs.md#updatememberdetectorsrequestrequesttypedef).
+1. See [:material-code-braces: DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef) 
+2. See [:material-code-braces: UpdateMemberDetectorsResponseTypeDef](./type_defs.md#updatememberdetectorsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AccountIds`: `Sequence`\[`str`\] *(required)*
-- `DataSources`:
-  [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateMemberDetectorsRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AccountIds": ...,
+}
 
-Returns
-[UpdateMemberDetectorsResponseTypeDef](./type_defs.md#updatememberdetectorsresponsetypedef).
+parent.update_member_detectors(**kwargs)
+```
 
-<a id="update\_organization\_configuration"></a>
+1. See [:material-code-braces: UpdateMemberDetectorsRequestRequestTypeDef](./type_defs.md#updatememberdetectorsrequestrequesttypedef) 
 
-### update_organization_configuration
+### update\_organization\_configuration
 
 Updates the delegated administrator account with the values provided.
 
-Type annotations for
-`boto3.client("guardduty").update_organization_configuration` method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_organization_configuration` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
 
-Boto3 documentation:
-[GuardDuty.Client.update_organization_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_organization_configuration)
+```python title="Method definition"
+def update_organization_configuration(
+    self,
+    *,
+    DetectorId: str,
+    AutoEnable: bool,
+    DataSources: OrganizationDataSourceConfigurationsTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef).
+1. See [:material-code-braces: OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `AutoEnable`: `bool` *(required)*
-- `DataSources`:
-  [OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdateOrganizationConfigurationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "AutoEnable": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_organization_configuration(**kwargs)
+```
 
-<a id="update\_publishing\_destination"></a>
+1. See [:material-code-braces: UpdateOrganizationConfigurationRequestRequestTypeDef](./type_defs.md#updateorganizationconfigurationrequestrequesttypedef) 
 
-### update_publishing_destination
+### update\_publishing\_destination
 
 Updates information about the publishing destination specified by the
 `destinationId` .
 
-Type annotations for `boto3.client("guardduty").update_publishing_destination`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_publishing_destination` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
 
-Boto3 documentation:
-[GuardDuty.Client.update_publishing_destination](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_publishing_destination)
+```python title="Method definition"
+def update_publishing_destination(
+    self,
+    *,
+    DetectorId: str,
+    DestinationId: str,
+    DestinationProperties: DestinationPropertiesTypeDef = ...,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdatePublishingDestinationRequestRequestTypeDef](./type_defs.md#updatepublishingdestinationrequestrequesttypedef).
+1. See [:material-code-braces: DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef) 
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `DestinationId`: `str` *(required)*
-- `DestinationProperties`:
-  [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: UpdatePublishingDestinationRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "DestinationId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_publishing_destination(**kwargs)
+```
 
-<a id="update\_threat\_intel\_set"></a>
+1. See [:material-code-braces: UpdatePublishingDestinationRequestRequestTypeDef](./type_defs.md#updatepublishingdestinationrequestrequesttypedef) 
 
-### update_threat_intel_set
+### update\_threat\_intel\_set
 
 Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
 
-Type annotations for `boto3.client("guardduty").update_threat_intel_set`
-method.
+Type annotations and code completion for `#!python boto3.client("guardduty").update_threat_intel_set` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
 
-Boto3 documentation:
-[GuardDuty.Client.update_threat_intel_set](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.update_threat_intel_set)
+```python title="Method definition"
+def update_threat_intel_set(
+    self,
+    *,
+    DetectorId: str,
+    ThreatIntelSetId: str,
+    Name: str = ...,
+    Location: str = ...,
+    Activate: bool = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateThreatIntelSetRequestRequestTypeDef](./type_defs.md#updatethreatintelsetrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DetectorId`: `str` *(required)*
-- `ThreatIntelSetId`: `str` *(required)*
-- `Name`: `str`
-- `Location`: `str`
-- `Activate`: `bool`
+```python title="Usage example with kwargs"
+kwargs: UpdateThreatIntelSetRequestRequestTypeDef = {  # (1)
+    "DetectorId": ...,
+    "ThreatIntelSetId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_threat_intel_set(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateThreatIntelSetRequestRequestTypeDef](./type_defs.md#updatethreatintelsetrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("guardduty").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("guardduty").get_paginator` method with overloads.
 
-- `client.get_paginator("list_detectors")` ->
-  [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
-- `client.get_paginator("list_filters")` ->
-  [ListFiltersPaginator](./paginators.md#listfilterspaginator)
-- `client.get_paginator("list_findings")` ->
-  [ListFindingsPaginator](./paginators.md#listfindingspaginator)
-- `client.get_paginator("list_ip_sets")` ->
-  [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
-- `client.get_paginator("list_invitations")` ->
-  [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
-- `client.get_paginator("list_members")` ->
-  [ListMembersPaginator](./paginators.md#listmemberspaginator)
-- `client.get_paginator("list_organization_admin_accounts")` ->
-  [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
-- `client.get_paginator("list_threat_intel_sets")` ->
-  [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
+- `client.get_paginator("list_detectors")` -> [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
+- `client.get_paginator("list_filters")` -> [ListFiltersPaginator](./paginators.md#listfilterspaginator)
+- `client.get_paginator("list_findings")` -> [ListFindingsPaginator](./paginators.md#listfindingspaginator)
+- `client.get_paginator("list_ip_sets")` -> [ListIPSetsPaginator](./paginators.md#listipsetspaginator)
+- `client.get_paginator("list_invitations")` -> [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
+- `client.get_paginator("list_members")` -> [ListMembersPaginator](./paginators.md#listmemberspaginator)
+- `client.get_paginator("list_organization_admin_accounts")` -> [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+- `client.get_paginator("list_threat_intel_sets")` -> [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
+
+
+

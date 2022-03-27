@@ -1,59 +1,18 @@
-<a id="servicediscoveryclient-for-boto3-servicediscovery-module"></a>
+# ServiceDiscoveryClient
 
-# ServiceDiscoveryClient for boto3 ServiceDiscovery module
+> [Index](../README.md) > [ServiceDiscovery](./README.md) > ServiceDiscoveryClient
 
-> [Index](../README.md) > [ServiceDiscovery](./README.md) >
-> ServiceDiscoveryClient
+!!! note ""
 
-Auto-generated documentation for
-[ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
-type annotations stubs module
-[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
-
-- [ServiceDiscoveryClient for boto3 ServiceDiscovery module](#servicediscoveryclient-for-boto3-servicediscovery-module)
-  - [ServiceDiscoveryClient](#servicediscoveryclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_http_namespace](#create_http_namespace)
-    - [create_private_dns_namespace](#create_private_dns_namespace)
-    - [create_public_dns_namespace](#create_public_dns_namespace)
-    - [create_service](#create_service)
-    - [delete_namespace](#delete_namespace)
-    - [delete_service](#delete_service)
-    - [deregister_instance](#deregister_instance)
-    - [discover_instances](#discover_instances)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_instance](#get_instance)
-    - [get_instances_health_status](#get_instances_health_status)
-    - [get_namespace](#get_namespace)
-    - [get_operation](#get_operation)
-    - [get_service](#get_service)
-    - [list_instances](#list_instances)
-    - [list_namespaces](#list_namespaces)
-    - [list_operations](#list_operations)
-    - [list_services](#list_services)
-    - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_instance](#register_instance)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
-    - [update_http_namespace](#update_http_namespace)
-    - [update_instance_custom_health_status](#update_instance_custom_health_status)
-    - [update_private_dns_namespace](#update_private_dns_namespace)
-    - [update_public_dns_namespace](#update_public_dns_namespace)
-    - [update_service](#update_service)
-    - [get_paginator](#get_paginator)
-
-<a id="servicediscoveryclient"></a>
+    Auto-generated documentation for [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
+    type annotations stubs module [mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 ## ServiceDiscoveryClient
 
-Type annotations for `boto3.client("servicediscovery")`
+Type annotations and code completion for `#!python boto3.client("servicediscovery")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_servicediscovery.client import ServiceDiscoveryClient
 
@@ -61,740 +20,940 @@ def get_servicediscovery_client() -> ServiceDiscoveryClient:
     return Session().client("servicediscovery")
 ```
 
-Boto3 documentation:
-[ServiceDiscovery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("servicediscovery").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("servicediscovery")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.CustomHealthNotFound,
+    client.DuplicateRequest,
+    client.InstanceNotFound,
+    client.InvalidInput,
+    client.NamespaceAlreadyExists,
+    client.NamespaceNotFound,
+    client.OperationNotFound,
+    client.RequestLimitExceeded,
+    client.ResourceInUse,
+    client.ResourceLimitExceeded,
+    client.ResourceNotFoundException,
+    client.ServiceAlreadyExists,
+    client.ServiceNotFound,
+    client.TooManyTagsException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_servicediscovery.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.CustomHealthNotFound`
-- `Exceptions.DuplicateRequest`
-- `Exceptions.InstanceNotFound`
-- `Exceptions.InvalidInput`
-- `Exceptions.NamespaceAlreadyExists`
-- `Exceptions.NamespaceNotFound`
-- `Exceptions.OperationNotFound`
-- `Exceptions.RequestLimitExceeded`
-- `Exceptions.ResourceInUse`
-- `Exceptions.ResourceLimitExceeded`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ServiceAlreadyExists`
-- `Exceptions.ServiceNotFound`
-- `Exceptions.TooManyTagsException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-ServiceDiscoveryClient exceptions.
-
-Type annotations for `boto3.client("servicediscovery").exceptions` method.
-
-Boto3 documentation:
-[ServiceDiscovery.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("servicediscovery").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_http\_namespace"></a>
-
-### create_http_namespace
+### create\_http\_namespace
 
 Creates an HTTP namespace.
 
-Type annotations for `boto3.client("servicediscovery").create_http_namespace`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").create_http_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.create_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_http_namespace)
+```python title="Method definition"
+def create_http_namespace(
+    self,
+    *,
+    Name: str,
+    CreatorRequestId: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateHttpNamespaceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateHttpNamespaceRequestRequestTypeDef](./type_defs.md#createhttpnamespacerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateHttpNamespaceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
+parent.create_http_namespace(**kwargs)
+```
 
-<a id="create\_private\_dns\_namespace"></a>
+1. See [:material-code-braces: CreateHttpNamespaceRequestRequestTypeDef](./type_defs.md#createhttpnamespacerequestrequesttypedef) 
 
-### create_private_dns_namespace
+### create\_private\_dns\_namespace
 
 Creates a private namespace based on DNS, which is visible only inside a
 specified Amazon VPC.
 
-Type annotations for
-`boto3.client("servicediscovery").create_private_dns_namespace` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").create_private_dns_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.create_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_private_dns_namespace)
+```python title="Method definition"
+def create_private_dns_namespace(
+    self,
+    *,
+    Name: str,
+    Vpc: str,
+    CreatorRequestId: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    Properties: PrivateDnsNamespacePropertiesTypeDef = ...,  # (2)
+) -> CreatePrivateDnsNamespaceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#createprivatednsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef) 
+3. See [:material-code-braces: CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Vpc`: `str` *(required)*
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Properties`:
-  [PrivateDnsNamespacePropertiesTypeDef](./type_defs.md#privatednsnamespacepropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: CreatePrivateDnsNamespaceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Vpc": ...,
+}
 
-Returns
-[CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef).
+parent.create_private_dns_namespace(**kwargs)
+```
 
-<a id="create\_public\_dns\_namespace"></a>
+1. See [:material-code-braces: CreatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#createprivatednsnamespacerequestrequesttypedef) 
 
-### create_public_dns_namespace
+### create\_public\_dns\_namespace
 
 Creates a public namespace based on DNS, which is visible on the internet.
 
-Type annotations for
-`boto3.client("servicediscovery").create_public_dns_namespace` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").create_public_dns_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.create_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_public_dns_namespace)
+```python title="Method definition"
+def create_public_dns_namespace(
+    self,
+    *,
+    Name: str,
+    CreatorRequestId: str = ...,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+    Properties: PublicDnsNamespacePropertiesTypeDef = ...,  # (2)
+) -> CreatePublicDnsNamespaceResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#createpublicdnsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef) 
+3. See [:material-code-braces: CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Properties`:
-  [PublicDnsNamespacePropertiesTypeDef](./type_defs.md#publicdnsnamespacepropertiestypedef)
+```python title="Usage example with kwargs"
+kwargs: CreatePublicDnsNamespaceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef).
+parent.create_public_dns_namespace(**kwargs)
+```
 
-<a id="create\_service"></a>
+1. See [:material-code-braces: CreatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#createpublicdnsnamespacerequestrequesttypedef) 
 
-### create_service
+### create\_service
 
 Creates a service.
 
-Type annotations for `boto3.client("servicediscovery").create_service` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").create_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.create_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.create_service)
+```python title="Method definition"
+def create_service(
+    self,
+    *,
+    Name: str,
+    NamespaceId: str = ...,
+    CreatorRequestId: str = ...,
+    Description: str = ...,
+    DnsConfig: DnsConfigTypeDef = ...,  # (1)
+    HealthCheckConfig: HealthCheckConfigTypeDef = ...,  # (2)
+    HealthCheckCustomConfig: HealthCheckCustomConfigTypeDef = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+    Type: ServiceTypeOptionType = ...,  # (5)
+) -> CreateServiceResponseTypeDef:  # (6)
+    ...
+```
 
-Arguments mapping described in
-[CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef).
+1. See [:material-code-braces: DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef) 
+2. See [:material-code-braces: HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef) 
+3. See [:material-code-braces: HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-brackets: ServiceTypeOptionType](./literals.md#servicetypeoptiontype) 
+6. See [:material-code-braces: CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `NamespaceId`: `str`
-- `CreatorRequestId`: `str`
-- `Description`: `str`
-- `DnsConfig`: [DnsConfigTypeDef](./type_defs.md#dnsconfigtypedef)
-- `HealthCheckConfig`:
-  [HealthCheckConfigTypeDef](./type_defs.md#healthcheckconfigtypedef)
-- `HealthCheckCustomConfig`:
-  [HealthCheckCustomConfigTypeDef](./type_defs.md#healthcheckcustomconfigtypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Type`: `Literal['HTTP']` (see
-  [ServiceTypeOptionType](./literals.md#servicetypeoptiontype))
+```python title="Usage example with kwargs"
+kwargs: CreateServiceRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+}
 
-Returns
-[CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
+parent.create_service(**kwargs)
+```
 
-<a id="delete\_namespace"></a>
+1. See [:material-code-braces: CreateServiceRequestRequestTypeDef](./type_defs.md#createservicerequestrequesttypedef) 
 
-### delete_namespace
+### delete\_namespace
 
 Deletes a namespace from the current account.
 
-Type annotations for `boto3.client("servicediscovery").delete_namespace`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").delete_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.delete_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_namespace)
+```python title="Method definition"
+def delete_namespace(
+    self,
+    *,
+    Id: str,
+) -> DeleteNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeleteNamespaceRequestRequestTypeDef](./type_defs.md#deletenamespacerequestrequesttypedef).
+1. See [:material-code-braces: DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteNamespaceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+parent.delete_namespace(**kwargs)
+```
 
-<a id="delete\_service"></a>
+1. See [:material-code-braces: DeleteNamespaceRequestRequestTypeDef](./type_defs.md#deletenamespacerequestrequesttypedef) 
 
-### delete_service
+### delete\_service
 
 Deletes a specified service.
 
-Type annotations for `boto3.client("servicediscovery").delete_service` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").delete_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.delete_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.delete_service)
+```python title="Method definition"
+def delete_service(
+    self,
+    *,
+    Id: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteServiceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_service(**kwargs)
+```
 
-<a id="deregister\_instance"></a>
+1. See [:material-code-braces: DeleteServiceRequestRequestTypeDef](./type_defs.md#deleteservicerequestrequesttypedef) 
 
-### deregister_instance
+### deregister\_instance
 
-Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud
-Map created for the specified instance.
+Deletes the Amazon Route 53 DNS records and health check, if any, that Cloud Map
+created for the specified instance.
 
-Type annotations for `boto3.client("servicediscovery").deregister_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").deregister_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.deregister_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.deregister_instance)
+```python title="Method definition"
+def deregister_instance(
+    self,
+    *,
+    ServiceId: str,
+    InstanceId: str,
+) -> DeregisterInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DeregisterInstanceRequestRequestTypeDef](./type_defs.md#deregisterinstancerequestrequesttypedef).
+1. See [:material-code-braces: DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterInstanceRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef).
+parent.deregister_instance(**kwargs)
+```
 
-<a id="discover\_instances"></a>
+1. See [:material-code-braces: DeregisterInstanceRequestRequestTypeDef](./type_defs.md#deregisterinstancerequestrequesttypedef) 
 
-### discover_instances
+### discover\_instances
 
 Discovers registered instances for a specified namespace and service.
 
-Type annotations for `boto3.client("servicediscovery").discover_instances`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").discover_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.discover_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.discover_instances)
+```python title="Method definition"
+def discover_instances(
+    self,
+    *,
+    NamespaceName: str,
+    ServiceName: str,
+    MaxResults: int = ...,
+    QueryParameters: Mapping[str, str] = ...,
+    OptionalParameters: Mapping[str, str] = ...,
+    HealthStatus: HealthStatusFilterType = ...,  # (1)
+) -> DiscoverInstancesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DiscoverInstancesRequestRequestTypeDef](./type_defs.md#discoverinstancesrequestrequesttypedef).
+1. See [:material-code-brackets: HealthStatusFilterType](./literals.md#healthstatusfiltertype) 
+2. See [:material-code-braces: DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NamespaceName`: `str` *(required)*
-- `ServiceName`: `str` *(required)*
-- `MaxResults`: `int`
-- `QueryParameters`: `Mapping`\[`str`, `str`\]
-- `OptionalParameters`: `Mapping`\[`str`, `str`\]
-- `HealthStatus`:
-  [HealthStatusFilterType](./literals.md#healthstatusfiltertype)
+```python title="Usage example with kwargs"
+kwargs: DiscoverInstancesRequestRequestTypeDef = {  # (1)
+    "NamespaceName": ...,
+    "ServiceName": ...,
+}
 
-Returns
-[DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef).
+parent.discover_instances(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DiscoverInstancesRequestRequestTypeDef](./type_defs.md#discoverinstancesrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("servicediscovery").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_instance"></a>
-
-### get_instance
+### get\_instance
 
 Gets information about a specified instance.
 
-Type annotations for `boto3.client("servicediscovery").get_instance` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.get_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instance)
+```python title="Method definition"
+def get_instance(
+    self,
+    *,
+    ServiceId: str,
+    InstanceId: str,
+) -> GetInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInstanceRequestRequestTypeDef](./type_defs.md#getinstancerequestrequesttypedef).
+1. See [:material-code-braces: GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetInstanceRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+    "InstanceId": ...,
+}
 
-Returns
-[GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef).
+parent.get_instance(**kwargs)
+```
 
-<a id="get\_instances\_health\_status"></a>
+1. See [:material-code-braces: GetInstanceRequestRequestTypeDef](./type_defs.md#getinstancerequestrequesttypedef) 
 
-### get_instances_health_status
+### get\_instances\_health\_status
 
 Gets the current health status (`Healthy` , `Unhealthy` , or `Unknown` ) of one
 or more instances that are associated with a specified service.
 
-Type annotations for
-`boto3.client("servicediscovery").get_instances_health_status` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_instances_health_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.get_instances_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_instances_health_status)
+```python title="Method definition"
+def get_instances_health_status(
+    self,
+    *,
+    ServiceId: str,
+    Instances: Sequence[str] = ...,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> GetInstancesHealthStatusResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetInstancesHealthStatusRequestRequestTypeDef](./type_defs.md#getinstanceshealthstatusrequestrequesttypedef).
+1. See [:material-code-braces: GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `Instances`: `Sequence`\[`str`\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: GetInstancesHealthStatusRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+}
 
-Returns
-[GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef).
+parent.get_instances_health_status(**kwargs)
+```
 
-<a id="get\_namespace"></a>
+1. See [:material-code-braces: GetInstancesHealthStatusRequestRequestTypeDef](./type_defs.md#getinstanceshealthstatusrequestrequesttypedef) 
 
-### get_namespace
+### get\_namespace
 
 Gets information about a namespace.
 
-Type annotations for `boto3.client("servicediscovery").get_namespace` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.get_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_namespace)
+```python title="Method definition"
+def get_namespace(
+    self,
+    *,
+    Id: str,
+) -> GetNamespaceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetNamespaceRequestRequestTypeDef](./type_defs.md#getnamespacerequestrequesttypedef).
+1. See [:material-code-braces: GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetNamespaceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns
-[GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef).
+parent.get_namespace(**kwargs)
+```
 
-<a id="get\_operation"></a>
+1. See [:material-code-braces: GetNamespaceRequestRequestTypeDef](./type_defs.md#getnamespacerequestrequesttypedef) 
 
-### get_operation
+### get\_operation
 
 Gets information about any operation that returns an operation ID in the
 response, such as a `CreateService` request.
 
-Type annotations for `boto3.client("servicediscovery").get_operation` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_operation` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.get_operation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_operation)
+```python title="Method definition"
+def get_operation(
+    self,
+    *,
+    OperationId: str,
+) -> GetOperationResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetOperationRequestRequestTypeDef](./type_defs.md#getoperationrequestrequesttypedef).
+1. See [:material-code-braces: GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef) 
 
-Keyword-only arguments:
 
-- `OperationId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetOperationRequestRequestTypeDef = {  # (1)
+    "OperationId": ...,
+}
 
-Returns
-[GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef).
+parent.get_operation(**kwargs)
+```
 
-<a id="get\_service"></a>
+1. See [:material-code-braces: GetOperationRequestRequestTypeDef](./type_defs.md#getoperationrequestrequesttypedef) 
 
-### get_service
+### get\_service
 
 Gets the settings for a specified service.
 
-Type annotations for `boto3.client("servicediscovery").get_service` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.get_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.get_service)
+```python title="Method definition"
+def get_service(
+    self,
+    *,
+    Id: str,
+) -> GetServiceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[GetServiceRequestRequestTypeDef](./type_defs.md#getservicerequestrequesttypedef).
+1. See [:material-code-braces: GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetServiceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+}
 
-Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
+parent.get_service(**kwargs)
+```
 
-<a id="list\_instances"></a>
+1. See [:material-code-braces: GetServiceRequestRequestTypeDef](./type_defs.md#getservicerequestrequesttypedef) 
 
-### list_instances
+### list\_instances
 
 Lists summary information about the instances that you registered by using a
 specified service.
 
-Type annotations for `boto3.client("servicediscovery").list_instances` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").list_instances` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.list_instances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_instances)
+```python title="Method definition"
+def list_instances(
+    self,
+    *,
+    ServiceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> ListInstancesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef).
+1. See [:material-code-braces: ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: ListInstancesRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+}
 
-Returns
-[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+parent.list_instances(**kwargs)
+```
 
-<a id="list\_namespaces"></a>
+1. See [:material-code-braces: ListInstancesRequestRequestTypeDef](./type_defs.md#listinstancesrequestrequesttypedef) 
 
-### list_namespaces
+### list\_namespaces
 
 Lists summary information about the namespaces that were created by the current
 account.
 
-Type annotations for `boto3.client("servicediscovery").list_namespaces` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").list_namespaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.list_namespaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_namespaces)
+```python title="Method definition"
+def list_namespaces(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[NamespaceFilterTypeDef] = ...,  # (1)
+) -> ListNamespacesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef).
+1. See [:material-code-braces: NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef) 
+2. See [:material-code-braces: ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[NamespaceFilterTypeDef](./type_defs.md#namespacefiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListNamespacesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
+parent.list_namespaces(**kwargs)
+```
 
-<a id="list\_operations"></a>
+1. See [:material-code-braces: ListNamespacesRequestRequestTypeDef](./type_defs.md#listnamespacesrequestrequesttypedef) 
 
-### list_operations
+### list\_operations
 
 Lists operations that match the criteria that you specify.
 
-Type annotations for `boto3.client("servicediscovery").list_operations` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").list_operations` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.list_operations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_operations)
+```python title="Method definition"
+def list_operations(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[OperationFilterTypeDef] = ...,  # (1)
+) -> ListOperationsResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef).
+1. See [:material-code-braces: OperationFilterTypeDef](./type_defs.md#operationfiltertypedef) 
+2. See [:material-code-braces: ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[OperationFilterTypeDef](./type_defs.md#operationfiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListOperationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+parent.list_operations(**kwargs)
+```
 
-<a id="list\_services"></a>
+1. See [:material-code-braces: ListOperationsRequestRequestTypeDef](./type_defs.md#listoperationsrequestrequesttypedef) 
 
-### list_services
+### list\_services
 
 Lists summary information for all the services that are associated with one or
 more specified namespaces.
 
-Type annotations for `boto3.client("servicediscovery").list_services` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").list_services` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.list_services](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_services)
+```python title="Method definition"
+def list_services(
+    self,
+    *,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+    Filters: Sequence[ServiceFilterTypeDef] = ...,  # (1)
+) -> ListServicesResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef).
+1. See [:material-code-braces: ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef) 
+2. See [:material-code-braces: ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `Filters`:
-  `Sequence`\[[ServiceFilterTypeDef](./type_defs.md#servicefiltertypedef)\]
+```python title="Usage example with kwargs"
+kwargs: ListServicesRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-Returns
-[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
+parent.list_services(**kwargs)
+```
 
-<a id="list\_tags\_for\_resource"></a>
+1. See [:material-code-braces: ListServicesRequestRequestTypeDef](./type_defs.md#listservicesrequestrequesttypedef) 
 
-### list_tags_for_resource
+### list\_tags\_for\_resource
 
 Lists tags for the specified resource.
 
-Type annotations for `boto3.client("servicediscovery").list_tags_for_resource`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").list_tags_for_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.list_tags_for_resource)
+```python title="Method definition"
+def list_tags_for_resource(
+    self,
+    *,
+    ResourceARN: str,
+) -> ListTagsForResourceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+1. See [:material-code-braces: ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ListTagsForResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+}
 
-Returns
-[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+parent.list_tags_for_resource(**kwargs)
+```
 
-<a id="register\_instance"></a>
+1. See [:material-code-braces: ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef) 
 
-### register_instance
+### register\_instance
 
 Creates or updates one or more records and, optionally, creates a health check
 based on the settings in a specified service.
 
-Type annotations for `boto3.client("servicediscovery").register_instance`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").register_instance` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.register_instance](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.register_instance)
+```python title="Method definition"
+def register_instance(
+    self,
+    *,
+    ServiceId: str,
+    InstanceId: str,
+    Attributes: Mapping[str, str],
+    CreatorRequestId: str = ...,
+) -> RegisterInstanceResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[RegisterInstanceRequestRequestTypeDef](./type_defs.md#registerinstancerequestrequesttypedef).
+1. See [:material-code-braces: RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
-- `CreatorRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: RegisterInstanceRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+    "InstanceId": ...,
+    "Attributes": ...,
+}
 
-Returns
-[RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef).
+parent.register_instance(**kwargs)
+```
 
-<a id="tag\_resource"></a>
+1. See [:material-code-braces: RegisterInstanceRequestRequestTypeDef](./type_defs.md#registerinstancerequestrequesttypedef) 
 
-### tag_resource
+### tag\_resource
 
 Adds one or more tags to the specified resource.
 
-Type annotations for `boto3.client("servicediscovery").tag_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").tag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.tag_resource)
+```python title="Method definition"
+def tag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: TagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.tag_resource(**kwargs)
+```
 
-<a id="untag\_resource"></a>
+1. See [:material-code-braces: TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef) 
 
-### untag_resource
+### untag\_resource
 
 Removes one or more tags from the specified resource.
 
-Type annotations for `boto3.client("servicediscovery").untag_resource` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").untag_resource` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.untag_resource)
+```python title="Method definition"
+def untag_resource(
+    self,
+    *,
+    ResourceARN: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceARN`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: UntagResourceRequestRequestTypeDef = {  # (1)
+    "ResourceARN": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.untag_resource(**kwargs)
+```
 
-<a id="update\_http\_namespace"></a>
+1. See [:material-code-braces: UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef) 
 
-### update_http_namespace
+### update\_http\_namespace
 
 Updates an HTTP namespace.
 
-Type annotations for `boto3.client("servicediscovery").update_http_namespace`
-method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").update_http_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_http_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.update_http_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_http_namespace)
+```python title="Method definition"
+def update_http_namespace(
+    self,
+    *,
+    Id: str,
+    Namespace: HttpNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: str = ...,
+) -> UpdateHttpNamespaceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateHttpNamespaceRequestRequestTypeDef](./type_defs.md#updatehttpnamespacerequestrequesttypedef).
+1. See [:material-code-braces: HttpNamespaceChangeTypeDef](./type_defs.md#httpnamespacechangetypedef) 
+2. See [:material-code-braces: UpdateHttpNamespaceResponseTypeDef](./type_defs.md#updatehttpnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Namespace`:
-  [HttpNamespaceChangeTypeDef](./type_defs.md#httpnamespacechangetypedef)
-  *(required)*
-- `UpdaterRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateHttpNamespaceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Namespace": ...,
+}
 
-Returns
-[UpdateHttpNamespaceResponseTypeDef](./type_defs.md#updatehttpnamespaceresponsetypedef).
+parent.update_http_namespace(**kwargs)
+```
 
-<a id="update\_instance\_custom\_health\_status"></a>
+1. See [:material-code-braces: UpdateHttpNamespaceRequestRequestTypeDef](./type_defs.md#updatehttpnamespacerequestrequesttypedef) 
 
-### update_instance_custom_health_status
+### update\_instance\_custom\_health\_status
 
 Submits a request to change the health status of a custom health check to
 healthy or unhealthy.
 
-Type annotations for
-`boto3.client("servicediscovery").update_instance_custom_health_status` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").update_instance_custom_health_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.update_instance_custom_health_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_instance_custom_health_status)
+```python title="Method definition"
+def update_instance_custom_health_status(
+    self,
+    *,
+    ServiceId: str,
+    InstanceId: str,
+    Status: CustomHealthStatusType,  # (1)
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[UpdateInstanceCustomHealthStatusRequestRequestTypeDef](./type_defs.md#updateinstancecustomhealthstatusrequestrequesttypedef).
+1. See [:material-code-brackets: CustomHealthStatusType](./literals.md#customhealthstatustype) 
 
-Keyword-only arguments:
 
-- `ServiceId`: `str` *(required)*
-- `InstanceId`: `str` *(required)*
-- `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateInstanceCustomHealthStatusRequestRequestTypeDef = {  # (1)
+    "ServiceId": ...,
+    "InstanceId": ...,
+    "Status": ...,
+}
 
-<a id="update\_private\_dns\_namespace"></a>
+parent.update_instance_custom_health_status(**kwargs)
+```
 
-### update_private_dns_namespace
+1. See [:material-code-braces: UpdateInstanceCustomHealthStatusRequestRequestTypeDef](./type_defs.md#updateinstancecustomhealthstatusrequestrequesttypedef) 
+
+### update\_private\_dns\_namespace
 
 Updates a private DNS namespace.
 
-Type annotations for
-`boto3.client("servicediscovery").update_private_dns_namespace` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").update_private_dns_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_private_dns_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.update_private_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_private_dns_namespace)
+```python title="Method definition"
+def update_private_dns_namespace(
+    self,
+    *,
+    Id: str,
+    Namespace: PrivateDnsNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: str = ...,
+) -> UpdatePrivateDnsNamespaceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#updateprivatednsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: PrivateDnsNamespaceChangeTypeDef](./type_defs.md#privatednsnamespacechangetypedef) 
+2. See [:material-code-braces: UpdatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#updateprivatednsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Namespace`:
-  [PrivateDnsNamespaceChangeTypeDef](./type_defs.md#privatednsnamespacechangetypedef)
-  *(required)*
-- `UpdaterRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePrivateDnsNamespaceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Namespace": ...,
+}
 
-Returns
-[UpdatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#updateprivatednsnamespaceresponsetypedef).
+parent.update_private_dns_namespace(**kwargs)
+```
 
-<a id="update\_public\_dns\_namespace"></a>
+1. See [:material-code-braces: UpdatePrivateDnsNamespaceRequestRequestTypeDef](./type_defs.md#updateprivatednsnamespacerequestrequesttypedef) 
 
-### update_public_dns_namespace
+### update\_public\_dns\_namespace
 
 Updates a public DNS namespace.
 
-Type annotations for
-`boto3.client("servicediscovery").update_public_dns_namespace` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").update_public_dns_namespace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_public_dns_namespace)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.update_public_dns_namespace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_public_dns_namespace)
+```python title="Method definition"
+def update_public_dns_namespace(
+    self,
+    *,
+    Id: str,
+    Namespace: PublicDnsNamespaceChangeTypeDef,  # (1)
+    UpdaterRequestId: str = ...,
+) -> UpdatePublicDnsNamespaceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#updatepublicdnsnamespacerequestrequesttypedef).
+1. See [:material-code-braces: PublicDnsNamespaceChangeTypeDef](./type_defs.md#publicdnsnamespacechangetypedef) 
+2. See [:material-code-braces: UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Namespace`:
-  [PublicDnsNamespaceChangeTypeDef](./type_defs.md#publicdnsnamespacechangetypedef)
-  *(required)*
-- `UpdaterRequestId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdatePublicDnsNamespaceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Namespace": ...,
+}
 
-Returns
-[UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef).
+parent.update_public_dns_namespace(**kwargs)
+```
 
-<a id="update\_service"></a>
+1. See [:material-code-braces: UpdatePublicDnsNamespaceRequestRequestTypeDef](./type_defs.md#updatepublicdnsnamespacerequestrequesttypedef) 
 
-### update_service
+### update\_service
 
 Submits a request to perform the following operations * Update the TTL setting
 for existing `DnsRecords` configurations * Add, update, or delete
 `HealthCheckConfig` for a specified service .
 
-Type annotations for `boto3.client("servicediscovery").update_service` method.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").update_service` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
 
-Boto3 documentation:
-[ServiceDiscovery.Client.update_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery.Client.update_service)
+```python title="Method definition"
+def update_service(
+    self,
+    *,
+    Id: str,
+    Service: ServiceChangeTypeDef,  # (1)
+) -> UpdateServiceResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef).
+1. See [:material-code-braces: ServiceChangeTypeDef](./type_defs.md#servicechangetypedef) 
+2. See [:material-code-braces: UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef) 
 
-Keyword-only arguments:
 
-- `Id`: `str` *(required)*
-- `Service`: [ServiceChangeTypeDef](./type_defs.md#servicechangetypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateServiceRequestRequestTypeDef = {  # (1)
+    "Id": ...,
+    "Service": ...,
+}
 
-Returns
-[UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
+parent.update_service(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateServiceRequestRequestTypeDef](./type_defs.md#updateservicerequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("servicediscovery").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("servicediscovery").get_paginator` method with overloads.
 
-- `client.get_paginator("list_instances")` ->
-  [ListInstancesPaginator](./paginators.md#listinstancespaginator)
-- `client.get_paginator("list_namespaces")` ->
-  [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
-- `client.get_paginator("list_operations")` ->
-  [ListOperationsPaginator](./paginators.md#listoperationspaginator)
-- `client.get_paginator("list_services")` ->
-  [ListServicesPaginator](./paginators.md#listservicespaginator)
+- `client.get_paginator("list_instances")` -> [ListInstancesPaginator](./paginators.md#listinstancespaginator)
+- `client.get_paginator("list_namespaces")` -> [ListNamespacesPaginator](./paginators.md#listnamespacespaginator)
+- `client.get_paginator("list_operations")` -> [ListOperationsPaginator](./paginators.md#listoperationspaginator)
+- `client.get_paginator("list_services")` -> [ListServicesPaginator](./paginators.md#listservicespaginator)
+
+
+

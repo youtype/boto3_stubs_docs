@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-connectwisdomservice-module"></a>
-
-# Examples for boto3 ConnectWisdomService module
+# Examples
 
 > [Index](../README.md) > [ConnectWisdomService](./README.md) > Examples
 
-- [Examples for boto3 ConnectWisdomService module](#examples-for-boto3-connectwisdomservice-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[wisdom]` package installed.
 
-Write your `ConnectWisdomService` code as usual, type checking and code
-completion should work out of the box.
-
-```python
-import boto3
+Write your `ConnectWisdomService` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ConnectWisdomServiceClient
-# and provides type checking and code completion
-client = session.client("wisdom")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListAssistantAssociationsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_assistant_associations")
-for item in paginator.paginate(...):
-    # item has type ListAssistantAssociationsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("wisdom")  # (1)
+    result = client.create_assistant()  # (2)
+    ```
+
+    1. client: [ConnectWisdomServiceClient](./client.md)
+    2. result: [:material-code-braces: CreateAssistantResponseTypeDef](./type_defs.md#createassistantresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("wisdom")  # (1)
+
+    paginator = client.get_paginator("list_assistant_associations")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ConnectWisdomServiceClient](./client.md)
+    2. paginator: [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
+    3. item: [:material-code-braces: ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[wisdom]` or a standalone `mypy_boto3_wisdom` package,
-you have to explicitly specify `client: ConnectWisdomServiceClient` type
-annotation.
+With `boto3-stubs-lite[wisdom]`
+or a standalone `mypy_boto3_wisdom` package, you have to explicitly specify `client: ConnectWisdomServiceClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
-from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
-
-from mypy_boto3_wisdom.literals import PaginatorName
-
-from mypy_boto3_wisdom.type_defs import bool
-from mypy_boto3_wisdom.type_defs import ListAssistantAssociationsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ConnectWisdomServiceClient = session.client("wisdom")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
+    from mypy_boto3_wisdom.type_defs import CreateAssistantResponseTypeDef
+    from mypy_boto3_wisdom.type_defs import CreateAssistantRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_assistant_associations"
-paginator: ListAssistantAssociationsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListAssistantAssociationsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ConnectWisdomServiceClient = session.client("wisdom")
+
+    kwargs: CreateAssistantRequestRequestTypeDef = {...}
+    result: CreateAssistantResponseTypeDef = client.create_assistant(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
+    from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
+    from mypy_boto3_wisdom.type_defs import ListAssistantAssociationsResponseTypeDef
+
+
+    session = Session()
+    client: ConnectWisdomServiceClient = session.client("wisdom")
+
+    paginator: ListAssistantAssociationsPaginator = client.get_paginator("list_assistant_associations")
+    for item in paginator.paginate(...):
+        item: ListAssistantAssociationsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

@@ -1,531 +1,576 @@
-<a id="literals-for-boto3-cloud9-module"></a>
-
-# Literals for boto3 Cloud9 module
+# Literals
 
 > [Index](../README.md) > [Cloud9](./README.md) > Literals
 
-Auto-generated documentation for
-[Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
-type annotations stubs module
-[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+!!! note ""
 
-- [Literals for boto3 Cloud9 module](#literals-for-boto3-cloud9-module)
-  - [ConnectionTypeType](#connectiontypetype)
-  - [DescribeEnvironmentMembershipsPaginatorName](#describeenvironmentmembershipspaginatorname)
-  - [EnvironmentLifecycleStatusType](#environmentlifecyclestatustype)
-  - [EnvironmentStatusType](#environmentstatustype)
-  - [EnvironmentTypeType](#environmenttypetype)
-  - [ListEnvironmentsPaginatorName](#listenvironmentspaginatorname)
-  - [ManagedCredentialsActionType](#managedcredentialsactiontype)
-  - [ManagedCredentialsStatusType](#managedcredentialsstatustype)
-  - [MemberPermissionsType](#memberpermissionstype)
-  - [PermissionsType](#permissionstype)
-  - [Cloud9ServiceName](#cloud9servicename)
-  - [ServiceName](#servicename)
-  - [ResourceServiceName](#resourceservicename)
-  - [PaginatorName](#paginatorname)
-
-<a id="connectiontypetype"></a>
+    Auto-generated documentation for [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
+    type annotations stubs module [mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 ## ConnectionTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ConnectionTypeType
+
+def get_value() -> ConnectionTypeType:
+    return "CONNECT_SSH"
 ```
 
-Values:
-
-- `CONNECT_SSH`
-- `CONNECT_SSM`
-
-<a id="describeenvironmentmembershipspaginatorname"></a>
-
+```python title="Definition"
+ConnectionTypeType = Literal[
+    "CONNECT_SSH",
+    "CONNECT_SSM",
+]
+```
 ## DescribeEnvironmentMembershipsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import DescribeEnvironmentMembershipsPaginatorName
+
+def get_value() -> DescribeEnvironmentMembershipsPaginatorName:
+    return "describe_environment_memberships"
 ```
 
-Values:
-
-- `describe_environment_memberships`
-
-<a id="environmentlifecyclestatustype"></a>
-
+```python title="Definition"
+DescribeEnvironmentMembershipsPaginatorName = Literal[
+    "describe_environment_memberships",
+]
+```
 ## EnvironmentLifecycleStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import EnvironmentLifecycleStatusType
+
+def get_value() -> EnvironmentLifecycleStatusType:
+    return "CREATED"
 ```
 
-Values:
-
-- `CREATE_FAILED`
-- `CREATED`
-- `CREATING`
-- `DELETE_FAILED`
-- `DELETING`
-
-<a id="environmentstatustype"></a>
-
+```python title="Definition"
+EnvironmentLifecycleStatusType = Literal[
+    "CREATE_FAILED",
+    "CREATED",
+    "CREATING",
+    "DELETE_FAILED",
+    "DELETING",
+]
+```
 ## EnvironmentStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import EnvironmentStatusType
+
+def get_value() -> EnvironmentStatusType:
+    return "connecting"
 ```
 
-Values:
-
-- `connecting`
-- `creating`
-- `deleting`
-- `error`
-- `ready`
-- `stopped`
-- `stopping`
-
-<a id="environmenttypetype"></a>
-
+```python title="Definition"
+EnvironmentStatusType = Literal[
+    "connecting",
+    "creating",
+    "deleting",
+    "error",
+    "ready",
+    "stopped",
+    "stopping",
+]
+```
 ## EnvironmentTypeType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import EnvironmentTypeType
+
+def get_value() -> EnvironmentTypeType:
+    return "ec2"
 ```
 
-Values:
-
-- `ec2`
-- `ssh`
-
-<a id="listenvironmentspaginatorname"></a>
-
+```python title="Definition"
+EnvironmentTypeType = Literal[
+    "ec2",
+    "ssh",
+]
+```
 ## ListEnvironmentsPaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ListEnvironmentsPaginatorName
+
+def get_value() -> ListEnvironmentsPaginatorName:
+    return "list_environments"
 ```
 
-Values:
-
-- `list_environments`
-
-<a id="managedcredentialsactiontype"></a>
-
+```python title="Definition"
+ListEnvironmentsPaginatorName = Literal[
+    "list_environments",
+]
+```
 ## ManagedCredentialsActionType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ManagedCredentialsActionType
+
+def get_value() -> ManagedCredentialsActionType:
+    return "DISABLE"
 ```
 
-Values:
-
-- `DISABLE`
-- `ENABLE`
-
-<a id="managedcredentialsstatustype"></a>
-
+```python title="Definition"
+ManagedCredentialsActionType = Literal[
+    "DISABLE",
+    "ENABLE",
+]
+```
 ## ManagedCredentialsStatusType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ManagedCredentialsStatusType
+
+def get_value() -> ManagedCredentialsStatusType:
+    return "DISABLED_BY_COLLABORATOR"
 ```
 
-Values:
-
-- `DISABLED_BY_COLLABORATOR`
-- `DISABLED_BY_DEFAULT`
-- `DISABLED_BY_OWNER`
-- `ENABLED_BY_OWNER`
-- `ENABLED_ON_CREATE`
-- `FAILED_REMOVAL_BY_COLLABORATOR`
-- `FAILED_REMOVAL_BY_OWNER`
-- `PENDING_REMOVAL_BY_COLLABORATOR`
-- `PENDING_REMOVAL_BY_OWNER`
-- `PENDING_START_REMOVAL_BY_COLLABORATOR`
-- `PENDING_START_REMOVAL_BY_OWNER`
-
-<a id="memberpermissionstype"></a>
-
+```python title="Definition"
+ManagedCredentialsStatusType = Literal[
+    "DISABLED_BY_COLLABORATOR",
+    "DISABLED_BY_DEFAULT",
+    "DISABLED_BY_OWNER",
+    "ENABLED_BY_OWNER",
+    "ENABLED_ON_CREATE",
+    "FAILED_REMOVAL_BY_COLLABORATOR",
+    "FAILED_REMOVAL_BY_OWNER",
+    "PENDING_REMOVAL_BY_COLLABORATOR",
+    "PENDING_REMOVAL_BY_OWNER",
+    "PENDING_START_REMOVAL_BY_COLLABORATOR",
+    "PENDING_START_REMOVAL_BY_OWNER",
+]
+```
 ## MemberPermissionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import MemberPermissionsType
+
+def get_value() -> MemberPermissionsType:
+    return "read-only"
 ```
 
-Values:
-
-- `read-only`
-- `read-write`
-
-<a id="permissionstype"></a>
-
+```python title="Definition"
+MemberPermissionsType = Literal[
+    "read-only",
+    "read-write",
+]
+```
 ## PermissionsType
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import PermissionsType
+
+def get_value() -> PermissionsType:
+    return "owner"
 ```
 
-Values:
-
-- `owner`
-- `read-only`
-- `read-write`
-
-<a id="cloud9servicename"></a>
-
+```python title="Definition"
+PermissionsType = Literal[
+    "owner",
+    "read-only",
+    "read-write",
+]
+```
 ## Cloud9ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import Cloud9ServiceName
+
+def get_value() -> Cloud9ServiceName:
+    return "cloud9"
 ```
 
-Values:
-
-- `cloud9`
-
-<a id="servicename"></a>
-
+```python title="Definition"
+Cloud9ServiceName = Literal[
+    "cloud9",
+]
+```
 ## ServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ServiceName
+
+def get_value() -> ServiceName:
+    return "accessanalyzer"
 ```
 
-Values:
-
-- `accessanalyzer`
-- `account`
-- `acm`
-- `acm-pca`
-- `alexaforbusiness`
-- `amp`
-- `amplify`
-- `amplifybackend`
-- `amplifyuibuilder`
-- `apigateway`
-- `apigatewaymanagementapi`
-- `apigatewayv2`
-- `appconfig`
-- `appconfigdata`
-- `appflow`
-- `appintegrations`
-- `application-autoscaling`
-- `application-insights`
-- `applicationcostprofiler`
-- `appmesh`
-- `apprunner`
-- `appstream`
-- `appsync`
-- `athena`
-- `auditmanager`
-- `autoscaling`
-- `autoscaling-plans`
-- `backup`
-- `backup-gateway`
-- `batch`
-- `billingconductor`
-- `braket`
-- `budgets`
-- `ce`
-- `chime`
-- `chime-sdk-identity`
-- `chime-sdk-meetings`
-- `chime-sdk-messaging`
-- `cloud9`
-- `cloudcontrol`
-- `clouddirectory`
-- `cloudformation`
-- `cloudfront`
-- `cloudhsm`
-- `cloudhsmv2`
-- `cloudsearch`
-- `cloudsearchdomain`
-- `cloudtrail`
-- `cloudwatch`
-- `codeartifact`
-- `codebuild`
-- `codecommit`
-- `codedeploy`
-- `codeguru-reviewer`
-- `codeguruprofiler`
-- `codepipeline`
-- `codestar`
-- `codestar-connections`
-- `codestar-notifications`
-- `cognito-identity`
-- `cognito-idp`
-- `cognito-sync`
-- `comprehend`
-- `comprehendmedical`
-- `compute-optimizer`
-- `config`
-- `connect`
-- `connect-contact-lens`
-- `connectparticipant`
-- `cur`
-- `customer-profiles`
-- `databrew`
-- `dataexchange`
-- `datapipeline`
-- `datasync`
-- `dax`
-- `detective`
-- `devicefarm`
-- `devops-guru`
-- `directconnect`
-- `discovery`
-- `dlm`
-- `dms`
-- `docdb`
-- `drs`
-- `ds`
-- `dynamodb`
-- `dynamodbstreams`
-- `ebs`
-- `ec2`
-- `ec2-instance-connect`
-- `ecr`
-- `ecr-public`
-- `ecs`
-- `efs`
-- `eks`
-- `elastic-inference`
-- `elasticache`
-- `elasticbeanstalk`
-- `elastictranscoder`
-- `elb`
-- `elbv2`
-- `emr`
-- `emr-containers`
-- `es`
-- `events`
-- `evidently`
-- `finspace`
-- `finspace-data`
-- `firehose`
-- `fis`
-- `fms`
-- `forecast`
-- `forecastquery`
-- `frauddetector`
-- `fsx`
-- `gamelift`
-- `gamesparks`
-- `glacier`
-- `globalaccelerator`
-- `glue`
-- `grafana`
-- `greengrass`
-- `greengrassv2`
-- `groundstation`
-- `guardduty`
-- `health`
-- `healthlake`
-- `honeycode`
-- `iam`
-- `identitystore`
-- `imagebuilder`
-- `importexport`
-- `inspector`
-- `inspector2`
-- `iot`
-- `iot-data`
-- `iot-jobs-data`
-- `iot1click-devices`
-- `iot1click-projects`
-- `iotanalytics`
-- `iotdeviceadvisor`
-- `iotevents`
-- `iotevents-data`
-- `iotfleethub`
-- `iotsecuretunneling`
-- `iotsitewise`
-- `iotthingsgraph`
-- `iottwinmaker`
-- `iotwireless`
-- `ivs`
-- `kafka`
-- `kafkaconnect`
-- `kendra`
-- `keyspaces`
-- `kinesis`
-- `kinesis-video-archived-media`
-- `kinesis-video-media`
-- `kinesis-video-signaling`
-- `kinesisanalytics`
-- `kinesisanalyticsv2`
-- `kinesisvideo`
-- `kms`
-- `lakeformation`
-- `lambda`
-- `lex-models`
-- `lex-runtime`
-- `lexv2-models`
-- `lexv2-runtime`
-- `license-manager`
-- `lightsail`
-- `location`
-- `logs`
-- `lookoutequipment`
-- `lookoutmetrics`
-- `lookoutvision`
-- `machinelearning`
-- `macie`
-- `macie2`
-- `managedblockchain`
-- `marketplace-catalog`
-- `marketplace-entitlement`
-- `marketplacecommerceanalytics`
-- `mediaconnect`
-- `mediaconvert`
-- `medialive`
-- `mediapackage`
-- `mediapackage-vod`
-- `mediastore`
-- `mediastore-data`
-- `mediatailor`
-- `memorydb`
-- `meteringmarketplace`
-- `mgh`
-- `mgn`
-- `migration-hub-refactor-spaces`
-- `migrationhub-config`
-- `migrationhubstrategy`
-- `mobile`
-- `mq`
-- `mturk`
-- `mwaa`
-- `neptune`
-- `network-firewall`
-- `networkmanager`
-- `nimble`
-- `opensearch`
-- `opsworks`
-- `opsworkscm`
-- `organizations`
-- `outposts`
-- `panorama`
-- `personalize`
-- `personalize-events`
-- `personalize-runtime`
-- `pi`
-- `pinpoint`
-- `pinpoint-email`
-- `pinpoint-sms-voice`
-- `polly`
-- `pricing`
-- `proton`
-- `qldb`
-- `qldb-session`
-- `quicksight`
-- `ram`
-- `rbin`
-- `rds`
-- `rds-data`
-- `redshift`
-- `redshift-data`
-- `rekognition`
-- `resiliencehub`
-- `resource-groups`
-- `resourcegroupstaggingapi`
-- `robomaker`
-- `route53`
-- `route53-recovery-cluster`
-- `route53-recovery-control-config`
-- `route53-recovery-readiness`
-- `route53domains`
-- `route53resolver`
-- `rum`
-- `s3`
-- `s3control`
-- `s3outposts`
-- `sagemaker`
-- `sagemaker-a2i-runtime`
-- `sagemaker-edge`
-- `sagemaker-featurestore-runtime`
-- `sagemaker-runtime`
-- `savingsplans`
-- `schemas`
-- `sdb`
-- `secretsmanager`
-- `securityhub`
-- `serverlessrepo`
-- `service-quotas`
-- `servicecatalog`
-- `servicecatalog-appregistry`
-- `servicediscovery`
-- `ses`
-- `sesv2`
-- `shield`
-- `signer`
-- `sms`
-- `sms-voice`
-- `snow-device-management`
-- `snowball`
-- `sns`
-- `sqs`
-- `ssm`
-- `ssm-contacts`
-- `ssm-incidents`
-- `sso`
-- `sso-admin`
-- `sso-oidc`
-- `stepfunctions`
-- `storagegateway`
-- `sts`
-- `support`
-- `swf`
-- `synthetics`
-- `textract`
-- `timestream-query`
-- `timestream-write`
-- `transcribe`
-- `transfer`
-- `translate`
-- `voice-id`
-- `waf`
-- `waf-regional`
-- `wafv2`
-- `wellarchitected`
-- `wisdom`
-- `workdocs`
-- `worklink`
-- `workmail`
-- `workmailmessageflow`
-- `workspaces`
-- `workspaces-web`
-- `xray`
-
-<a id="resourceservicename"></a>
-
+```python title="Definition"
+ServiceName = Literal[
+    "accessanalyzer",
+    "account",
+    "acm",
+    "acm-pca",
+    "alexaforbusiness",
+    "amp",
+    "amplify",
+    "amplifybackend",
+    "amplifyuibuilder",
+    "apigateway",
+    "apigatewaymanagementapi",
+    "apigatewayv2",
+    "appconfig",
+    "appconfigdata",
+    "appflow",
+    "appintegrations",
+    "application-autoscaling",
+    "application-insights",
+    "applicationcostprofiler",
+    "appmesh",
+    "apprunner",
+    "appstream",
+    "appsync",
+    "athena",
+    "auditmanager",
+    "autoscaling",
+    "autoscaling-plans",
+    "backup",
+    "backup-gateway",
+    "batch",
+    "billingconductor",
+    "braket",
+    "budgets",
+    "ce",
+    "chime",
+    "chime-sdk-identity",
+    "chime-sdk-meetings",
+    "chime-sdk-messaging",
+    "cloud9",
+    "cloudcontrol",
+    "clouddirectory",
+    "cloudformation",
+    "cloudfront",
+    "cloudhsm",
+    "cloudhsmv2",
+    "cloudsearch",
+    "cloudsearchdomain",
+    "cloudtrail",
+    "cloudwatch",
+    "codeartifact",
+    "codebuild",
+    "codecommit",
+    "codedeploy",
+    "codeguru-reviewer",
+    "codeguruprofiler",
+    "codepipeline",
+    "codestar",
+    "codestar-connections",
+    "codestar-notifications",
+    "cognito-identity",
+    "cognito-idp",
+    "cognito-sync",
+    "comprehend",
+    "comprehendmedical",
+    "compute-optimizer",
+    "config",
+    "connect",
+    "connect-contact-lens",
+    "connectparticipant",
+    "cur",
+    "customer-profiles",
+    "databrew",
+    "dataexchange",
+    "datapipeline",
+    "datasync",
+    "dax",
+    "detective",
+    "devicefarm",
+    "devops-guru",
+    "directconnect",
+    "discovery",
+    "dlm",
+    "dms",
+    "docdb",
+    "drs",
+    "ds",
+    "dynamodb",
+    "dynamodbstreams",
+    "ebs",
+    "ec2",
+    "ec2-instance-connect",
+    "ecr",
+    "ecr-public",
+    "ecs",
+    "efs",
+    "eks",
+    "elastic-inference",
+    "elasticache",
+    "elasticbeanstalk",
+    "elastictranscoder",
+    "elb",
+    "elbv2",
+    "emr",
+    "emr-containers",
+    "es",
+    "events",
+    "evidently",
+    "finspace",
+    "finspace-data",
+    "firehose",
+    "fis",
+    "fms",
+    "forecast",
+    "forecastquery",
+    "frauddetector",
+    "fsx",
+    "gamelift",
+    "gamesparks",
+    "glacier",
+    "globalaccelerator",
+    "glue",
+    "grafana",
+    "greengrass",
+    "greengrassv2",
+    "groundstation",
+    "guardduty",
+    "health",
+    "healthlake",
+    "honeycode",
+    "iam",
+    "identitystore",
+    "imagebuilder",
+    "importexport",
+    "inspector",
+    "inspector2",
+    "iot",
+    "iot-data",
+    "iot-jobs-data",
+    "iot1click-devices",
+    "iot1click-projects",
+    "iotanalytics",
+    "iotdeviceadvisor",
+    "iotevents",
+    "iotevents-data",
+    "iotfleethub",
+    "iotsecuretunneling",
+    "iotsitewise",
+    "iotthingsgraph",
+    "iottwinmaker",
+    "iotwireless",
+    "ivs",
+    "kafka",
+    "kafkaconnect",
+    "kendra",
+    "keyspaces",
+    "kinesis",
+    "kinesis-video-archived-media",
+    "kinesis-video-media",
+    "kinesis-video-signaling",
+    "kinesisanalytics",
+    "kinesisanalyticsv2",
+    "kinesisvideo",
+    "kms",
+    "lakeformation",
+    "lambda",
+    "lex-models",
+    "lex-runtime",
+    "lexv2-models",
+    "lexv2-runtime",
+    "license-manager",
+    "lightsail",
+    "location",
+    "logs",
+    "lookoutequipment",
+    "lookoutmetrics",
+    "lookoutvision",
+    "machinelearning",
+    "macie",
+    "macie2",
+    "managedblockchain",
+    "marketplace-catalog",
+    "marketplace-entitlement",
+    "marketplacecommerceanalytics",
+    "mediaconnect",
+    "mediaconvert",
+    "medialive",
+    "mediapackage",
+    "mediapackage-vod",
+    "mediastore",
+    "mediastore-data",
+    "mediatailor",
+    "memorydb",
+    "meteringmarketplace",
+    "mgh",
+    "mgn",
+    "migration-hub-refactor-spaces",
+    "migrationhub-config",
+    "migrationhubstrategy",
+    "mobile",
+    "mq",
+    "mturk",
+    "mwaa",
+    "neptune",
+    "network-firewall",
+    "networkmanager",
+    "nimble",
+    "opensearch",
+    "opsworks",
+    "opsworkscm",
+    "organizations",
+    "outposts",
+    "panorama",
+    "personalize",
+    "personalize-events",
+    "personalize-runtime",
+    "pi",
+    "pinpoint",
+    "pinpoint-email",
+    "pinpoint-sms-voice",
+    "polly",
+    "pricing",
+    "proton",
+    "qldb",
+    "qldb-session",
+    "quicksight",
+    "ram",
+    "rbin",
+    "rds",
+    "rds-data",
+    "redshift",
+    "redshift-data",
+    "rekognition",
+    "resiliencehub",
+    "resource-groups",
+    "resourcegroupstaggingapi",
+    "robomaker",
+    "route53",
+    "route53-recovery-cluster",
+    "route53-recovery-control-config",
+    "route53-recovery-readiness",
+    "route53domains",
+    "route53resolver",
+    "rum",
+    "s3",
+    "s3control",
+    "s3outposts",
+    "sagemaker",
+    "sagemaker-a2i-runtime",
+    "sagemaker-edge",
+    "sagemaker-featurestore-runtime",
+    "sagemaker-runtime",
+    "savingsplans",
+    "schemas",
+    "sdb",
+    "secretsmanager",
+    "securityhub",
+    "serverlessrepo",
+    "service-quotas",
+    "servicecatalog",
+    "servicecatalog-appregistry",
+    "servicediscovery",
+    "ses",
+    "sesv2",
+    "shield",
+    "signer",
+    "sms",
+    "sms-voice",
+    "snow-device-management",
+    "snowball",
+    "sns",
+    "sqs",
+    "ssm",
+    "ssm-contacts",
+    "ssm-incidents",
+    "sso",
+    "sso-admin",
+    "sso-oidc",
+    "stepfunctions",
+    "storagegateway",
+    "sts",
+    "support",
+    "swf",
+    "synthetics",
+    "textract",
+    "timestream-query",
+    "timestream-write",
+    "transcribe",
+    "transfer",
+    "translate",
+    "voice-id",
+    "waf",
+    "waf-regional",
+    "wafv2",
+    "wellarchitected",
+    "wisdom",
+    "workdocs",
+    "worklink",
+    "workmail",
+    "workmailmessageflow",
+    "workspaces",
+    "workspaces-web",
+    "xray",
+]
+```
 ## ResourceServiceName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import ResourceServiceName
+
+def get_value() -> ResourceServiceName:
+    return "cloudformation"
 ```
 
-Values:
-
-- `cloudformation`
-- `cloudwatch`
-- `dynamodb`
-- `ec2`
-- `glacier`
-- `iam`
-- `opsworks`
-- `s3`
-- `sns`
-- `sqs`
-
-<a id="paginatorname"></a>
-
+```python title="Definition"
+ResourceServiceName = Literal[
+    "cloudformation",
+    "cloudwatch",
+    "dynamodb",
+    "ec2",
+    "glacier",
+    "iam",
+    "opsworks",
+    "s3",
+    "sns",
+    "sqs",
+]
+```
 ## PaginatorName
 
-```python
+```python title="Usage Example"
 from mypy_boto3_cloud9.literals import PaginatorName
+
+def get_value() -> PaginatorName:
+    return "describe_environment_memberships"
 ```
 
-Values:
+```python title="Definition"
+PaginatorName = Literal[
+    "describe_environment_memberships",
+    "list_environments",
+]
+```
+## RegionName
 
-- `describe_environment_memberships`
-- `list_environments`
+```python title="Usage Example"
+from mypy_boto3_cloud9.literals import RegionName
+
+def get_value() -> RegionName:
+    return "af-south-1"
+```
+
+```python title="Definition"
+RegionName = Literal[
+    "af-south-1",
+    "ap-east-1",
+    "ap-northeast-1",
+    "ap-northeast-2",
+    "ap-northeast-3",
+    "ap-south-1",
+    "ap-southeast-1",
+    "ap-southeast-2",
+    "ca-central-1",
+    "eu-central-1",
+    "eu-north-1",
+    "eu-south-1",
+    "eu-west-1",
+    "eu-west-2",
+    "eu-west-3",
+    "me-south-1",
+    "sa-east-1",
+    "us-east-1",
+    "us-east-2",
+    "us-west-1",
+    "us-west-2",
+]
+```

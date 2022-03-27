@@ -1,39 +1,18 @@
-<a id="paginators-for-boto3-databasemigrationservice-module"></a>
-
-# Paginators for boto3 DatabaseMigrationService module
+# Paginators
 
 > [Index](../README.md) > [DatabaseMigrationService](./README.md) > Paginators
 
-Auto-generated documentation for
-[DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
-type annotations stubs module
-[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
+!!! note ""
 
-- [Paginators for boto3 DatabaseMigrationService module](#paginators-for-boto3-databasemigrationservice-module)
-  - [DescribeCertificatesPaginator](#describecertificatespaginator)
-  - [DescribeConnectionsPaginator](#describeconnectionspaginator)
-  - [DescribeEndpointTypesPaginator](#describeendpointtypespaginator)
-  - [DescribeEndpointsPaginator](#describeendpointspaginator)
-  - [DescribeEventSubscriptionsPaginator](#describeeventsubscriptionspaginator)
-  - [DescribeEventsPaginator](#describeeventspaginator)
-  - [DescribeOrderableReplicationInstancesPaginator](#describeorderablereplicationinstancespaginator)
-  - [DescribeReplicationInstancesPaginator](#describereplicationinstancespaginator)
-  - [DescribeReplicationSubnetGroupsPaginator](#describereplicationsubnetgroupspaginator)
-  - [DescribeReplicationTaskAssessmentResultsPaginator](#describereplicationtaskassessmentresultspaginator)
-  - [DescribeReplicationTasksPaginator](#describereplicationtaskspaginator)
-  - [DescribeSchemasPaginator](#describeschemaspaginator)
-  - [DescribeTableStatisticsPaginator](#describetablestatisticspaginator)
-
-<a id="describecertificatespaginator"></a>
+    Auto-generated documentation for [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
+    type annotations stubs module [mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ## DescribeCertificatesPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_certificates")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_certificates")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeCertificatesPaginator
@@ -42,28 +21,41 @@ def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
     return Session().client("dms").get_paginator("describe_certificates")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeCertificates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeCertificates)
 
-Arguments for `DescribeCertificatesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeCertificatesPaginator.paginate` method.
 
-`DescribeCertificatesPaginator.paginate` returns
-`_PageIterator`\[[DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeCertificatesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeconnectionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeCertificatesMessageDescribeCertificatesPaginateTypeDef](./type_defs.md#describecertificatesmessagedescribecertificatespaginatetypedef) 
 ## DescribeConnectionsPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_connections")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_connections")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeConnectionsPaginator
@@ -72,28 +64,41 @@ def get_describe_connections_paginator() -> DescribeConnectionsPaginator:
     return Session().client("dms").get_paginator("describe_connections")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeConnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeConnections)
 
-Arguments for `DescribeConnectionsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeConnectionsPaginator.paginate` method.
 
-`DescribeConnectionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeConnectionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeendpointtypespaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionsMessageDescribeConnectionsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeConnectionsMessageDescribeConnectionsPaginateTypeDef](./type_defs.md#describeconnectionsmessagedescribeconnectionspaginatetypedef) 
 ## DescribeEndpointTypesPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_endpoint_types")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_endpoint_types")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeEndpointTypesPaginator
@@ -102,27 +107,41 @@ def get_describe_endpoint_types_paginator() -> DescribeEndpointTypesPaginator:
     return Session().client("dms").get_paginator("describe_endpoint_types")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEndpointTypes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpointTypes)
 
-Arguments for `DescribeEndpointTypesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEndpointTypesPaginator.paginate` method.
 
-`DescribeEndpointTypesPaginator.paginate` returns
-`_PageIterator`\[[DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEndpointTypesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeendpointspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointTypesMessageDescribeEndpointTypesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointTypesMessageDescribeEndpointTypesPaginateTypeDef](./type_defs.md#describeendpointtypesmessagedescribeendpointtypespaginatetypedef) 
 ## DescribeEndpointsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_endpoints")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_endpoints")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeEndpointsPaginator
@@ -131,28 +150,41 @@ def get_describe_endpoints_paginator() -> DescribeEndpointsPaginator:
     return Session().client("dms").get_paginator("describe_endpoints")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEndpoints)
 
-Arguments for `DescribeEndpointsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEndpointsPaginator.paginate` method.
 
-`DescribeEndpointsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEndpointsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventsubscriptionspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointsMessageDescribeEndpointsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointsMessageDescribeEndpointsPaginateTypeDef](./type_defs.md#describeendpointsmessagedescribeendpointspaginatetypedef) 
 ## DescribeEventSubscriptionsPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_event_subscriptions")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_event_subscriptions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeEventSubscriptionsPaginator
@@ -161,28 +193,42 @@ def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPa
     return Session().client("dms").get_paginator("describe_event_subscriptions")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEventSubscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEventSubscriptions)
 
-Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
+### paginate
 
-- `SubscriptionName`: `str`
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventSubscriptionsPaginator.paginate` method.
 
-`DescribeEventSubscriptionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SubscriptionName: str = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeEventSubscriptionsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeventspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef = {  # (1)
+    "SubscriptionName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventSubscriptionsMessageDescribeEventSubscriptionsPaginateTypeDef](./type_defs.md#describeeventsubscriptionsmessagedescribeeventsubscriptionspaginatetypedef) 
 ## DescribeEventsPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_events")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeEventsPaginator
@@ -191,35 +237,48 @@ def get_describe_events_paginator() -> DescribeEventsPaginator:
     return Session().client("dms").get_paginator("describe_events")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeEvents)
 
-Arguments for `DescribeEventsPaginator.paginate` method:
+### paginate
 
-- `SourceIdentifier`: `str`
-- `SourceType`: `Literal['replication-instance']` (see
-  [SourceTypeType](./literals.md#sourcetypetype))
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Duration`: `int`
-- `EventCategories`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEventsPaginator.paginate` method.
 
-`DescribeEventsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SourceIdentifier: str = ...,
+    SourceType: SourceTypeType = ...,  # (1)
+    StartTime: Union[datetime, str] = ...,
+    EndTime: Union[datetime, str] = ...,
+    Duration: int = ...,
+    EventCategories: Sequence[str] = ...,
+    Filters: Sequence[FilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeEventsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeorderablereplicationinstancespaginator"></a>
+1. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
+2. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEventsMessageDescribeEventsPaginateTypeDef = {  # (1)
+    "SourceIdentifier": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEventsMessageDescribeEventsPaginateTypeDef](./type_defs.md#describeeventsmessagedescribeeventspaginatetypedef) 
 ## DescribeOrderableReplicationInstancesPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_orderable_replication_instances")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_orderable_replication_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeOrderableReplicationInstancesPaginator
@@ -228,27 +287,39 @@ def get_describe_orderable_replication_instances_paginator() -> DescribeOrderabl
     return Session().client("dms").get_paginator("describe_orderable_replication_instances")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeOrderableReplicationInstances)
 
-Arguments for `DescribeOrderableReplicationInstancesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOrderableReplicationInstancesPaginator.paginate` method.
 
-`DescribeOrderableReplicationInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeOrderableReplicationInstancesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereplicationinstancespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOrderableReplicationInstancesMessageDescribeOrderableReplicationInstancesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOrderableReplicationInstancesMessageDescribeOrderableReplicationInstancesPaginateTypeDef](./type_defs.md#describeorderablereplicationinstancesmessagedescribeorderablereplicationinstancespaginatetypedef) 
 ## DescribeReplicationInstancesPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_replication_instances")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_replication_instances")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeReplicationInstancesPaginator
@@ -257,28 +328,41 @@ def get_describe_replication_instances_paginator() -> DescribeReplicationInstanc
     return Session().client("dms").get_paginator("describe_replication_instances")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationInstances](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationInstances)
 
-Arguments for `DescribeReplicationInstancesPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplicationInstancesPaginator.paginate` method.
 
-`DescribeReplicationInstancesPaginator.paginate` returns
-`_PageIterator`\[[DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeReplicationInstancesResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describereplicationsubnetgroupspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationInstancesMessageDescribeReplicationInstancesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationInstancesMessageDescribeReplicationInstancesPaginateTypeDef](./type_defs.md#describereplicationinstancesmessagedescribereplicationinstancespaginatetypedef) 
 ## DescribeReplicationSubnetGroupsPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_replication_subnet_groups")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_replication_subnet_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeReplicationSubnetGroupsPaginator
@@ -287,28 +371,41 @@ def get_describe_replication_subnet_groups_paginator() -> DescribeReplicationSub
     return Session().client("dms").get_paginator("describe_replication_subnet_groups")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationSubnetGroups)
 
-Arguments for `DescribeReplicationSubnetGroupsPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplicationSubnetGroupsPaginator.paginate` method.
 
-`DescribeReplicationSubnetGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeReplicationSubnetGroupsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describereplicationtaskassessmentresultspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationSubnetGroupsMessageDescribeReplicationSubnetGroupsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationSubnetGroupsMessageDescribeReplicationSubnetGroupsPaginateTypeDef](./type_defs.md#describereplicationsubnetgroupsmessagedescribereplicationsubnetgroupspaginatetypedef) 
 ## DescribeReplicationTaskAssessmentResultsPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_replication_task_assessment_results")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_replication_task_assessment_results")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeReplicationTaskAssessmentResultsPaginator
@@ -317,29 +414,40 @@ def get_describe_replication_task_assessment_results_paginator() -> DescribeRepl
     return Session().client("dms").get_paginator("describe_replication_task_assessment_results")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTaskAssessmentResults)
 
-Arguments for `DescribeReplicationTaskAssessmentResultsPaginator.paginate`
-method:
+### paginate
 
-- `ReplicationTaskArn`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplicationTaskAssessmentResultsPaginator.paginate` method.
 
-`DescribeReplicationTaskAssessmentResultsPaginator.paginate` returns
-`_PageIterator`\[[DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReplicationTaskArn: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeReplicationTaskAssessmentResultsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describereplicationtaskspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTaskAssessmentResultsMessageDescribeReplicationTaskAssessmentResultsPaginateTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTaskAssessmentResultsMessageDescribeReplicationTaskAssessmentResultsPaginateTypeDef](./type_defs.md#describereplicationtaskassessmentresultsmessagedescribereplicationtaskassessmentresultspaginatetypedef) 
 ## DescribeReplicationTasksPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_replication_tasks")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_replication_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeReplicationTasksPaginator
@@ -348,28 +456,42 @@ def get_describe_replication_tasks_paginator() -> DescribeReplicationTasksPagina
     return Session().client("dms").get_paginator("describe_replication_tasks")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeReplicationTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeReplicationTasks)
 
-Arguments for `DescribeReplicationTasksPaginator.paginate` method:
+### paginate
 
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `WithoutSettings`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeReplicationTasksPaginator.paginate` method.
 
-`DescribeReplicationTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    WithoutSettings: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeReplicationTasksResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeschemaspaginator"></a>
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeReplicationTasksMessageDescribeReplicationTasksPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeReplicationTasksMessageDescribeReplicationTasksPaginateTypeDef](./type_defs.md#describereplicationtasksmessagedescribereplicationtaskspaginatetypedef) 
 ## DescribeSchemasPaginator
 
-Type annotations for `boto3.client("dms").get_paginator("describe_schemas")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_schemas")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeSchemasPaginator
@@ -378,28 +500,40 @@ def get_describe_schemas_paginator() -> DescribeSchemasPaginator:
     return Session().client("dms").get_paginator("describe_schemas")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeSchemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeSchemas)
 
-Arguments for `DescribeSchemasPaginator.paginate` method:
+### paginate
 
-- `EndpointArn`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSchemasPaginator.paginate` method.
 
-`DescribeSchemasPaginator.paginate` returns
-`_PageIterator`\[[DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    EndpointArn: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeSchemasResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="describetablestatisticspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSchemasMessageDescribeSchemasPaginateTypeDef = {  # (1)
+    "EndpointArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSchemasMessageDescribeSchemasPaginateTypeDef](./type_defs.md#describeschemasmessagedescribeschemaspaginatetypedef) 
 ## DescribeTableStatisticsPaginator
 
-Type annotations for
-`boto3.client("dms").get_paginator("describe_table_statistics")`.
+Type annotations and code completion for `#!python boto3.client("dms").get_paginator("describe_table_statistics")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_dms.paginator import DescribeTableStatisticsPaginator
@@ -408,15 +542,33 @@ def get_describe_table_statistics_paginator() -> DescribeTableStatisticsPaginato
     return Session().client("dms").get_paginator("describe_table_statistics")
 ```
 
-Boto3 documentation:
-[DatabaseMigrationService.Paginator.DescribeTableStatistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Paginator.DescribeTableStatistics)
 
-Arguments for `DescribeTableStatisticsPaginator.paginate` method:
+### paginate
 
-- `ReplicationTaskArn`: `str` *(required)*
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeTableStatisticsPaginator.paginate` method.
 
-`DescribeTableStatisticsPaginator.paginate` returns
-`_PageIterator`\[[DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    ReplicationTaskArn: str,
+    Filters: Sequence[FilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeTableStatisticsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: FilterTypeDef](./type_defs.md#filtertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTableStatisticsMessageDescribeTableStatisticsPaginateTypeDef = {  # (1)
+    "ReplicationTaskArn": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTableStatisticsMessageDescribeTableStatisticsPaginateTypeDef](./type_defs.md#describetablestatisticsmessagedescribetablestatisticspaginatetypedef) 

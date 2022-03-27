@@ -1,84 +1,108 @@
-<a id="examples-for-boto3-serverlessapplicationrepository-module"></a>
+# Examples
 
-# Examples for boto3 ServerlessApplicationRepository module
+> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) > Examples
 
-> [Index](../README.md) > [ServerlessApplicationRepository](./README.md) >
-> Examples
+!!! note ""
 
-- [Examples for boto3 ServerlessApplicationRepository module](#examples-for-boto3-serverlessapplicationrepository-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
-
-<a id="client"></a>
+    Auto-generated documentation for [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
+    type annotations stubs module [mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[serverlessrepo]` package installed.
 
-Write your `ServerlessApplicationRepository` code as usual, type checking and
-code completion should work out of the box.
-
-```python
-import boto3
+Write your `ServerlessApplicationRepository` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type ServerlessApplicationRepositoryClient
-# and provides type checking and code completion
-client = session.client("serverlessrepo")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListApplicationDependenciesPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_application_dependencies")
-for item in paginator.paginate(...):
-    # item has type ListApplicationDependenciesResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("serverlessrepo")  # (1)
+    result = client.create_application()  # (2)
+    ```
+
+    1. client: [ServerlessApplicationRepositoryClient](./client.md)
+    2. result: [:material-code-braces: CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("serverlessrepo")  # (1)
+
+    paginator = client.get_paginator("list_application_dependencies")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [ServerlessApplicationRepositoryClient](./client.md)
+    2. paginator: [ListApplicationDependenciesPaginator](./paginators.md#listapplicationdependenciespaginator)
+    3. item: [:material-code-braces: ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[serverlessrepo]` or a standalone
-`mypy_boto3_serverlessrepo` package, you have to explicitly specify
-`client: ServerlessApplicationRepositoryClient` type annotation.
+With `boto3-stubs-lite[serverlessrepo]`
+or a standalone `mypy_boto3_serverlessrepo` package, you have to explicitly specify `client: ServerlessApplicationRepositoryClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
-from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
-
-from mypy_boto3_serverlessrepo.literals import PaginatorName
-
-from mypy_boto3_serverlessrepo.type_defs import bool
-from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: ServerlessApplicationRepositoryClient = session.client("serverlessrepo")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
+    from mypy_boto3_serverlessrepo.type_defs import CreateApplicationResponseTypeDef
+    from mypy_boto3_serverlessrepo.type_defs import CreateApplicationRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_application_dependencies"
-paginator: ListApplicationDependenciesPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListApplicationDependenciesResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: ServerlessApplicationRepositoryClient = session.client("serverlessrepo")
+
+    kwargs: CreateApplicationRequestRequestTypeDef = {...}
+    result: CreateApplicationResponseTypeDef = client.create_application(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
+    from mypy_boto3_serverlessrepo.paginator import ListApplicationDependenciesPaginator
+    from mypy_boto3_serverlessrepo.type_defs import ListApplicationDependenciesResponseTypeDef
+
+
+    session = Session()
+    client: ServerlessApplicationRepositoryClient = session.client("serverlessrepo")
+
+    paginator: ListApplicationDependenciesPaginator = client.get_paginator("list_application_dependencies")
+    for item in paginator.paginate(...):
+        item: ListApplicationDependenciesResponseTypeDef
+        print(item)
+    ```
+
+
+
+

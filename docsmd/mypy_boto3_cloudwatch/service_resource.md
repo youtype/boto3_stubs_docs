@@ -1,195 +1,170 @@
-<a id="cloudwatchserviceresource-for-boto3-cloudwatch-module"></a>
-
-# CloudWatchServiceResource for boto3 CloudWatch module
+# CloudWatchServiceResource
 
 > [Index](../README.md) > [CloudWatch](./README.md) > CloudWatchServiceResource
 
-Auto-generated documentation for
-[CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
-type annotations stubs module
-[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+!!! note ""
 
-- [CloudWatchServiceResource for boto3 CloudWatch module](#cloudwatchserviceresource-for-boto3-cloudwatch-module)
-  - [CloudWatchServiceResource](#cloudwatchserviceresource)
-  - [Attributes](#attributes)
-  - [Collections](#collections)
-    - [ServiceResourceAlarmsCollection](#serviceresourcealarmscollection)
-    - [ServiceResourceMetricsCollection](#serviceresourcemetricscollection)
-  - [Methods](#methods)
-    - [CloudWatchServiceResource.Alarm method](#cloudwatchserviceresourcealarm-method)
-    - [CloudWatchServiceResource.Metric method](#cloudwatchserviceresourcemetric-method)
-    - [CloudWatchServiceResource.get_available_subresources method](#cloudwatchserviceresourceget_available_subresources-method)
-  - [Alarm](#alarm)
-    - [Alarm attributes](#alarm-attributes)
-    - [Alarm methods](#alarm-methods)
-  - [Metric](#metric)
-    - [Metric attributes](#metric-attributes)
-    - [Metric collections](#metric-collections)
-    - [Metric methods](#metric-methods)
-
-<a id="cloudwatchserviceresource"></a>
+    Auto-generated documentation for [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
+    type annotations stubs module [mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ## CloudWatchServiceResource
 
-Type annotations for `boto3.resource("cloudwatch")`, included resources and
-collections.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch")`, included resources and collections.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
 
 def get_cloudwatch_resource() -> CloudWatchServiceResource:
     return boto3.resource("cloudwatch")
 ```
 
-Boto3 documentation:
-[CloudWatch.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource)
-
-<a id="attributes"></a>
 
 ## Attributes
+
 
 - `meta`: [CloudWatchResourceMeta](#cloudwatchresourcemeta)
 
 - `alarms`: [ServiceResourceAlarmsCollection](#serviceresourcealarmscollection)
 
-- `metrics`:
-  [ServiceResourceMetricsCollection](#serviceresourcemetricscollection)
+- `metrics`: [ServiceResourceMetricsCollection](#serviceresourcemetricscollection)
 
-<a id="collections"></a>
+
+
 
 ## Collections
 
-<a id="serviceresourcealarmscollection"></a>
-
 ### ServiceResourceAlarmsCollection
 
-Type annotations for `boto3.resource("cloudwatch").alarms` collection.
+Provides access to [Alarm](#alarm) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").alarms` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.alarms)
 
-```python
-from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection,
+```python title="Usage example"
+from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollection
 
 def get_collection() -> ServiceResourceAlarmsCollection:
     return boto3.resource("cloudwatch").alarms
 ```
 
-Provides access to [Alarm](#alarm) resource.
-
-Boto3 documentation:
-[CloudWatch.ServiceResource.alarms](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.alarms)
-
-<a id="serviceresourcemetricscollection"></a>
 
 ### ServiceResourceMetricsCollection
 
-Type annotations for `boto3.resource("cloudwatch").metrics` collection.
+Provides access to [Metric](#metric) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").metrics` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.metrics)
 
-```python
-from mypy_boto3_cloudwatch.service_resource import ServiceResourceMetricsCollection,
+```python title="Usage example"
+from mypy_boto3_cloudwatch.service_resource import ServiceResourceMetricsCollection
 
 def get_collection() -> ServiceResourceMetricsCollection:
     return boto3.resource("cloudwatch").metrics
 ```
 
-Provides access to [Metric](#metric) resource.
 
-Boto3 documentation:
-[CloudWatch.ServiceResource.metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.metrics)
 
-<a id="methods"></a>
 
 ## Methods
-
-<a id="cloudwatchserviceresourcealarm-method"></a>
 
 ### CloudWatchServiceResource.Alarm method
 
 Creates a Alarm resource.
 
-Type annotations for `boto3.resource("cloudwatch").Alarm` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").Alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
 
-Boto3 documentation:
-[CloudWatch.ServiceResource.Alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
+```python title="Method definition"
+def Alarm(
+    self,
+    name: str,
+) -> Alarm:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceAlarmRequestTypeDef](./type_defs.md#serviceresourcealarmrequesttypedef).
 
-Arguments:
 
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceAlarmRequestTypeDef = {  # (1)
+    "name": ...,
+}
 
-Returns [Alarm](#alarm).
+parent.Alarm(**kwargs)
+```
 
-<a id="cloudwatchserviceresourcemetric-method"></a>
+1. See [:material-code-braces: ServiceResourceAlarmRequestTypeDef](./type_defs.md#serviceresourcealarmrequesttypedef) 
 
 ### CloudWatchServiceResource.Metric method
 
 Creates a Metric resource.
 
-Type annotations for `boto3.resource("cloudwatch").Metric` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").Metric` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
 
-Boto3 documentation:
-[CloudWatch.ServiceResource.Metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
+```python title="Method definition"
+def Metric(
+    self,
+    namespace: str,
+    name: str,
+) -> Metric:
+    ...
+```
 
-Arguments mapping described in
-[ServiceResourceMetricRequestTypeDef](./type_defs.md#serviceresourcemetricrequesttypedef).
 
-Arguments:
 
-- `namespace`: `str` *(required)*
-- `name`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: ServiceResourceMetricRequestTypeDef = {  # (1)
+    "namespace": ...,
+    "name": ...,
+}
 
-Returns [Metric](#metric).
+parent.Metric(**kwargs)
+```
 
-<a id="cloudwatchserviceresourceget\_available\_subresources-method"></a>
+1. See [:material-code-braces: ServiceResourceMetricRequestTypeDef](./type_defs.md#serviceresourcemetricrequesttypedef) 
 
-### CloudWatchServiceResource.get_available_subresources method
+### CloudWatchServiceResource.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("cloudwatch").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.get_available_subresources)
 
-Boto3 documentation:
-[CloudWatch.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="alarm"></a>
+
 
 ## Alarm
 
-Type annotations for `boto3.resource("cloudwatch").Alarm` class.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").Alarm` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudwatch.service_resource import Alarm
 
 def get_resource() -> Alarm:
     return boto3.resource("cloudwatch").Alarm(...)
 ```
 
-Boto3 documentation:
-[CloudWatch.Alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Alarm)
-
-<a id="alarm-attributes"></a>
 
 ### Alarm attributes
+
 
 - `alarm_name`: `str`
 - `alarm_arn`: `str`
 - `alarm_description`: `str`
 - `alarm_configuration_updated_timestamp`: `datetime`
 - `actions_enabled`: `bool`
-- `ok_actions`: `List`\[`str`\]
-- `alarm_actions`: `List`\[`str`\]
-- `insufficient_data_actions`: `List`\[`str`\]
+- `ok_actions`: `List`[`str`]
+- `alarm_actions`: `List`[`str`]
+- `insufficient_data_actions`: `List`[`str`]
 - `state_value`: [StateValueType](./literals.md#statevaluetype)
 - `state_reason`: `str`
 - `state_reason_data`: `str`
@@ -198,318 +173,397 @@ Boto3 documentation:
 - `namespace`: `str`
 - `statistic`: [StatisticType](./literals.md#statistictype)
 - `extended_statistic`: `str`
-- `dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `dimensions`: `List`[[DimensionTypeDef](./type_defs.md#dimensiontypedef)]
 - `period`: `int`
 - `unit`: [StandardUnitType](./literals.md#standardunittype)
 - `evaluation_periods`: `int`
 - `datapoints_to_alarm`: `int`
 - `threshold`: `float`
-- `comparison_operator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype)
+- `comparison_operator`: [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `treat_missing_data`: `str`
 - `evaluate_low_sample_count_percentile`: `str`
-- `metrics`:
-  `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+- `metrics`: `List`[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)]
 - `threshold_metric_id`: `str`
 - `name`: `str`
 - `metric`: [Metric](#metric)
 
-<a id="alarm-methods"></a>
+
+
+
 
 ### Alarm methods
 
-<a id="alarmdelete-method"></a>
 
 #### Alarm.delete method
 
 Deletes the specified alarms.
 
-Type annotations for `boto3.resource("cloudwatch").delete` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").delete` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.delete)
 
-Boto3 documentation:
-[CloudWatch.Alarm.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.delete)
+```python title="Method definition"
+def delete(
+    self,
+) -> None:
+    ...
+```
 
-<a id="alarmdescribe\_history-method"></a>
 
-#### Alarm.describe_history method
+#### Alarm.describe\_history method
 
 Retrieves the history for the specified alarm.
 
-Type annotations for `boto3.resource("cloudwatch").describe_history` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").describe_history` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.describe_history)
 
-Boto3 documentation:
-[CloudWatch.Alarm.describe_history](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.describe_history)
+```python title="Method definition"
+def describe_history(
+    self,
+    *,
+    AlarmTypes: Sequence[AlarmTypeType] = ...,  # (1)
+    HistoryItemType: HistoryItemTypeType = ...,  # (2)
+    StartDate: Union[datetime, str] = ...,
+    EndDate: Union[datetime, str] = ...,
+    MaxRecords: int = ...,
+    NextToken: str = ...,
+    ScanBy: ScanByType = ...,  # (3)
+) -> DescribeAlarmHistoryOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[DescribeAlarmHistoryInputAlarmDescribeHistoryTypeDef](./type_defs.md#describealarmhistoryinputalarmdescribehistorytypedef).
+1. See [:material-code-brackets: AlarmTypeType](./literals.md#alarmtypetype) 
+2. See [:material-code-brackets: HistoryItemTypeType](./literals.md#historyitemtypetype) 
+3. See [:material-code-brackets: ScanByType](./literals.md#scanbytype) 
+4. See [:material-code-braces: DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmTypes`: `Sequence`\[[AlarmTypeType](./literals.md#alarmtypetype)\]
-- `HistoryItemType`: [HistoryItemTypeType](./literals.md#historyitemtypetype)
-- `StartDate`: `Union`\[`datetime`, `str`\]
-- `EndDate`: `Union`\[`datetime`, `str`\]
-- `MaxRecords`: `int`
-- `NextToken`: `str`
-- `ScanBy`: [ScanByType](./literals.md#scanbytype)
+```python title="Usage example with kwargs"
+kwargs: DescribeAlarmHistoryInputAlarmDescribeHistoryTypeDef = {  # (1)
+    "AlarmTypes": ...,
+}
 
-Returns
-[DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
+parent.describe_history(**kwargs)
+```
 
-<a id="alarmdisable\_actions-method"></a>
+1. See [:material-code-braces: DescribeAlarmHistoryInputAlarmDescribeHistoryTypeDef](./type_defs.md#describealarmhistoryinputalarmdescribehistorytypedef) 
 
-#### Alarm.disable_actions method
+#### Alarm.disable\_actions method
 
 Disables the actions for the specified alarms.
 
-Type annotations for `boto3.resource("cloudwatch").disable_actions` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").disable_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.disable_actions)
 
-Boto3 documentation:
-[CloudWatch.Alarm.disable_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.disable_actions)
+```python title="Method definition"
+def disable_actions(
+    self,
+) -> None:
+    ...
+```
 
-<a id="alarmenable\_actions-method"></a>
 
-#### Alarm.enable_actions method
+#### Alarm.enable\_actions method
 
 Enables the actions for the specified alarms.
 
-Type annotations for `boto3.resource("cloudwatch").enable_actions` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").enable_actions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.enable_actions)
 
-Boto3 documentation:
-[CloudWatch.Alarm.enable_actions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.enable_actions)
+```python title="Method definition"
+def enable_actions(
+    self,
+) -> None:
+    ...
+```
 
-<a id="alarmget\_available\_subresources-method"></a>
 
-#### Alarm.get_available_subresources method
+#### Alarm.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("cloudwatch").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.get_available_subresources)
 
-Boto3 documentation:
-[CloudWatch.Alarm.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
-
-<a id="alarmload-method"></a>
 
 #### Alarm.load method
 
 Calls :py:meth:`CloudWatch.Client.describe_alarms` to update the attributes of
 the Alarm resource.
 
-Type annotations for `boto3.resource("cloudwatch").load` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.load)
 
-Boto3 documentation:
-[CloudWatch.Alarm.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="alarmreload-method"></a>
 
 #### Alarm.reload method
 
 Calls :py:meth:`CloudWatch.Client.describe_alarms` to update the attributes of
 the Alarm resource.
 
-Type annotations for `boto3.resource("cloudwatch").reload` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.reload)
 
-Boto3 documentation:
-[CloudWatch.Alarm.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
 
-<a id="alarmset\_state-method"></a>
 
-#### Alarm.set_state method
+#### Alarm.set\_state method
 
 Temporarily sets the state of an alarm for testing purposes.
 
-Type annotations for `boto3.resource("cloudwatch").set_state` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").set_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.set_state)
 
-Boto3 documentation:
-[CloudWatch.Alarm.set_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Alarm.set_state)
+```python title="Method definition"
+def set_state(
+    self,
+    *,
+    StateValue: StateValueType,  # (1)
+    StateReason: str,
+    StateReasonData: str = ...,
+) -> None:
+    ...
+```
 
-Arguments mapping described in
-[SetAlarmStateInputAlarmSetStateTypeDef](./type_defs.md#setalarmstateinputalarmsetstatetypedef).
+1. See [:material-code-brackets: StateValueType](./literals.md#statevaluetype) 
 
-Keyword-only arguments:
 
-- `StateValue`: [StateValueType](./literals.md#statevaluetype) *(required)*
-- `StateReason`: `str` *(required)*
-- `StateReasonData`: `str`
+```python title="Usage example with kwargs"
+kwargs: SetAlarmStateInputAlarmSetStateTypeDef = {  # (1)
+    "StateValue": ...,
+    "StateReason": ...,
+}
 
-<a id="metric"></a>
+parent.set_state(**kwargs)
+```
+
+1. See [:material-code-braces: SetAlarmStateInputAlarmSetStateTypeDef](./type_defs.md#setalarmstateinputalarmsetstatetypedef) 
+
+
+
 
 ## Metric
 
-Type annotations for `boto3.resource("cloudwatch").Metric` class.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").Metric` class.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from mypy_boto3_cloudwatch.service_resource import Metric
 
 def get_resource() -> Metric:
     return boto3.resource("cloudwatch").Metric(...)
 ```
 
-Boto3 documentation:
-[CloudWatch.Metric](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.ServiceResource.Metric)
-
-<a id="metric-attributes"></a>
 
 ### Metric attributes
 
+
 - `metric_name`: `str`
-- `dimensions`: `List`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
+- `dimensions`: `List`[[DimensionTypeDef](./type_defs.md#dimensiontypedef)]
 - `namespace`: `str`
 - `name`: `str`
 - `alarms`: [MetricAlarmsCollection](#metricalarmscollection)
 
-<a id="metric-collections"></a>
+
 
 ### Metric collections
 
-<a id="metricalarms"></a>
 
 #### Metric.alarms
 
-Type annotations for `boto3.resource("cloudwatch").Metric(...).alarms`
-collection.
+Provides access to [Alarm](#alarm) resource.
 
-Can be used directly:
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").Metric(...).alarms` collection.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.alarms)
 
-```python
-from mypy_boto3_cloudwatch.service_resource import MetricAlarmsCollection,
+```python title="Usage example"
+from mypy_boto3_cloudwatch.service_resource import MetricAlarmsCollection
 
 def get_collection() -> MetricAlarmsCollection:
     resource = boto3.resource("cloudwatch").Metric(...)
     return resource.alarms
 ```
 
-Provides access to [Alarm](#alarm) resource.
 
-Boto3 documentation:
-[CloudWatch.Metric.MetricAlarmsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.alarms)
 
-<a id="metric-methods"></a>
 
 ### Metric methods
 
-<a id="metricget\_available\_subresources-method"></a>
 
-#### Metric.get_available_subresources method
+#### Metric.get\_available\_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
 
-Type annotations for `boto3.resource("cloudwatch").get_available_subresources`
-method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").get_available_subresources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_available_subresources)
 
-Boto3 documentation:
-[CloudWatch.Metric.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_available_subresources)
+```python title="Method definition"
+def get_available_subresources(
+    self,
+) -> Sequence[str]:
+    ...
+```
 
-Returns `Sequence`\[`str`\].
 
-<a id="metricget\_statistics-method"></a>
-
-#### Metric.get_statistics method
+#### Metric.get\_statistics method
 
 Gets statistics for the specified metric.
 
-Type annotations for `boto3.resource("cloudwatch").get_statistics` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").get_statistics` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_statistics)
 
-Boto3 documentation:
-[CloudWatch.Metric.get_statistics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.get_statistics)
+```python title="Method definition"
+def get_statistics(
+    self,
+    *,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Period: int,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (1)
+    Statistics: Sequence[StatisticType] = ...,  # (2)
+    ExtendedStatistics: Sequence[str] = ...,
+    Unit: StandardUnitType = ...,  # (3)
+) -> GetMetricStatisticsOutputTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetMetricStatisticsInputMetricGetStatisticsTypeDef](./type_defs.md#getmetricstatisticsinputmetricgetstatisticstypedef).
+1. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+4. See [:material-code-braces: GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef) 
 
-Keyword-only arguments:
 
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `Period`: `int` *(required)*
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
-- `ExtendedStatistics`: `Sequence`\[`str`\]
-- `Unit`: [StandardUnitType](./literals.md#standardunittype)
+```python title="Usage example with kwargs"
+kwargs: GetMetricStatisticsInputMetricGetStatisticsTypeDef = {  # (1)
+    "StartTime": ...,
+    "EndTime": ...,
+    "Period": ...,
+}
 
-Returns
-[GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
+parent.get_statistics(**kwargs)
+```
 
-<a id="metricload-method"></a>
+1. See [:material-code-braces: GetMetricStatisticsInputMetricGetStatisticsTypeDef](./type_defs.md#getmetricstatisticsinputmetricgetstatisticstypedef) 
 
 #### Metric.load method
 
 Calls :py:meth:`CloudWatch.Client.list_metrics` to update the attributes of the
 Metric resource.
 
-Type annotations for `boto3.resource("cloudwatch").load` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").load` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.load)
 
-Boto3 documentation:
-[CloudWatch.Metric.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.load)
+```python title="Method definition"
+def load(
+    self,
+) -> None:
+    ...
+```
 
-<a id="metricput\_alarm-method"></a>
 
-#### Metric.put_alarm method
+#### Metric.put\_alarm method
 
 Creates or updates an alarm and associates it with the specified metric, metric
 math expression, or anomaly detection model.
 
-Type annotations for `boto3.resource("cloudwatch").put_alarm` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").put_alarm` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm)
 
-Boto3 documentation:
-[CloudWatch.Metric.put_alarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_alarm)
+```python title="Method definition"
+def put_alarm(
+    self,
+    *,
+    AlarmName: str,
+    EvaluationPeriods: int,
+    ComparisonOperator: ComparisonOperatorType,  # (1)
+    AlarmDescription: str = ...,
+    ActionsEnabled: bool = ...,
+    OKActions: Sequence[str] = ...,
+    AlarmActions: Sequence[str] = ...,
+    InsufficientDataActions: Sequence[str] = ...,
+    Statistic: StatisticType = ...,  # (2)
+    ExtendedStatistic: str = ...,
+    Dimensions: Sequence[DimensionTypeDef] = ...,  # (3)
+    Period: int = ...,
+    Unit: StandardUnitType = ...,  # (4)
+    DatapointsToAlarm: int = ...,
+    Threshold: float = ...,
+    TreatMissingData: str = ...,
+    EvaluateLowSampleCountPercentile: str = ...,
+    Metrics: Sequence[MetricDataQueryTypeDef] = ...,  # (5)
+    Tags: Sequence[TagTypeDef] = ...,  # (6)
+    ThresholdMetricId: str = ...,
+) -> Alarm:
+    ...
+```
 
-Arguments mapping described in
-[PutMetricAlarmInputMetricPutAlarmTypeDef](./type_defs.md#putmetricalarminputmetricputalarmtypedef).
+1. See [:material-code-brackets: ComparisonOperatorType](./literals.md#comparisonoperatortype) 
+2. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+3. See [:material-code-braces: DimensionTypeDef](./type_defs.md#dimensiontypedef) 
+4. See [:material-code-brackets: StandardUnitType](./literals.md#standardunittype) 
+5. See [:material-code-braces: MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef) 
+6. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `AlarmName`: `str` *(required)*
-- `EvaluationPeriods`: `int` *(required)*
-- `ComparisonOperator`:
-  [ComparisonOperatorType](./literals.md#comparisonoperatortype) *(required)*
-- `AlarmDescription`: `str`
-- `ActionsEnabled`: `bool`
-- `OKActions`: `Sequence`\[`str`\]
-- `AlarmActions`: `Sequence`\[`str`\]
-- `InsufficientDataActions`: `Sequence`\[`str`\]
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-- `ExtendedStatistic`: `str`
-- `Dimensions`:
-  `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
-- `Period`: `int`
-- `Unit`: [StandardUnitType](./literals.md#standardunittype)
-- `DatapointsToAlarm`: `int`
-- `Threshold`: `float`
-- `TreatMissingData`: `str`
-- `EvaluateLowSampleCountPercentile`: `str`
-- `Metrics`:
-  `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `ThresholdMetricId`: `str`
+```python title="Usage example with kwargs"
+kwargs: PutMetricAlarmInputMetricPutAlarmTypeDef = {  # (1)
+    "AlarmName": ...,
+    "EvaluationPeriods": ...,
+    "ComparisonOperator": ...,
+}
 
-Returns [Alarm](#alarm).
+parent.put_alarm(**kwargs)
+```
 
-<a id="metricput\_data-method"></a>
+1. See [:material-code-braces: PutMetricAlarmInputMetricPutAlarmTypeDef](./type_defs.md#putmetricalarminputmetricputalarmtypedef) 
 
-#### Metric.put_data method
+#### Metric.put\_data method
 
 Publishes metric data points to Amazon CloudWatch.
 
-Type annotations for `boto3.resource("cloudwatch").put_data` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").put_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_data)
 
-Boto3 documentation:
-[CloudWatch.Metric.put_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.put_data)
+```python title="Method definition"
+def put_data(
+    self,
+) -> None:
+    ...
+```
 
-<a id="metricreload-method"></a>
 
 #### Metric.reload method
 
 Calls :py:meth:`CloudWatch.Client.list_metrics` to update the attributes of the
 Metric resource.
 
-Type annotations for `boto3.resource("cloudwatch").reload` method.
+Type annotations and code completion for `#!python boto3.resource("cloudwatch").reload` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.reload)
 
-Boto3 documentation:
-[CloudWatch.Metric.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch.Metric.reload)
+```python title="Method definition"
+def reload(
+    self,
+) -> None:
+    ...
+```
+
+
+
+

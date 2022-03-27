@@ -1,39 +1,18 @@
-<a id="autoscalingplansclient-for-boto3-autoscalingplans-module"></a>
+# AutoScalingPlansClient
 
-# AutoScalingPlansClient for boto3 AutoScalingPlans module
+> [Index](../README.md) > [AutoScalingPlans](./README.md) > AutoScalingPlansClient
 
-> [Index](../README.md) > [AutoScalingPlans](./README.md) >
-> AutoScalingPlansClient
+!!! note ""
 
-Auto-generated documentation for
-[AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
-type annotations stubs module
-[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
-
-- [AutoScalingPlansClient for boto3 AutoScalingPlans module](#autoscalingplansclient-for-boto3-autoscalingplans-module)
-  - [AutoScalingPlansClient](#autoscalingplansclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [can_paginate](#can_paginate)
-    - [create_scaling_plan](#create_scaling_plan)
-    - [delete_scaling_plan](#delete_scaling_plan)
-    - [describe_scaling_plan_resources](#describe_scaling_plan_resources)
-    - [describe_scaling_plans](#describe_scaling_plans)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [get_scaling_plan_resource_forecast_data](#get_scaling_plan_resource_forecast_data)
-    - [update_scaling_plan](#update_scaling_plan)
-    - [get_paginator](#get_paginator)
-
-<a id="autoscalingplansclient"></a>
+    Auto-generated documentation for [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
+    type annotations stubs module [mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 ## AutoScalingPlansClient
 
-Type annotations for `boto3.client("autoscaling-plans")`
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 
@@ -41,257 +20,295 @@ def get_autoscaling-plans_client() -> AutoScalingPlansClient:
     return Session().client("autoscaling-plans")
 ```
 
-Boto3 documentation:
-[AutoScalingPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("autoscaling-plans").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("autoscaling-plans")
+
+try:
+    do_something(client)
+except (
+    client.ClientError,
+    client.ConcurrentUpdateException,
+    client.InternalServiceException,
+    client.InvalidNextTokenException,
+    client.LimitExceededException,
+    client.ObjectNotFoundException,
+    client.ValidationException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_autoscaling_plans.client import Exceptions
 
 def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.ClientError`
-- `Exceptions.ConcurrentUpdateException`
-- `Exceptions.InternalServiceException`
-- `Exceptions.InvalidNextTokenException`
-- `Exceptions.LimitExceededException`
-- `Exceptions.ObjectNotFoundException`
-- `Exceptions.ValidationException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
-
-AutoScalingPlansClient exceptions.
-
-Type annotations for `boto3.client("autoscaling-plans").exceptions` method.
-
-Boto3 documentation:
-[AutoScalingPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.exceptions)
-
-Returns [Exceptions](#exceptions).
-
-<a id="can\_paginate"></a>
-
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("autoscaling-plans").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="create\_scaling\_plan"></a>
-
-### create_scaling_plan
+### create\_scaling\_plan
 
 Creates a scaling plan.
 
-Type annotations for `boto3.client("autoscaling-plans").create_scaling_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").create_scaling_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.create_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.create_scaling_plan)
+```python title="Method definition"
+def create_scaling_plan(
+    self,
+    *,
+    ScalingPlanName: str,
+    ApplicationSource: ApplicationSourceTypeDef,  # (1)
+    ScalingInstructions: Sequence[ScalingInstructionTypeDef],  # (2)
+) -> CreateScalingPlanResponseTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateScalingPlanRequestRequestTypeDef](./type_defs.md#createscalingplanrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
+3. See [:material-code-braces: CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ScalingPlanName`: `str` *(required)*
-- `ApplicationSource`:
-  [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
-  *(required)*
-- `ScalingInstructions`:
-  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateScalingPlanRequestRequestTypeDef = {  # (1)
+    "ScalingPlanName": ...,
+    "ApplicationSource": ...,
+    "ScalingInstructions": ...,
+}
 
-Returns
-[CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef).
+parent.create_scaling_plan(**kwargs)
+```
 
-<a id="delete\_scaling\_plan"></a>
+1. See [:material-code-braces: CreateScalingPlanRequestRequestTypeDef](./type_defs.md#createscalingplanrequestrequesttypedef) 
 
-### delete_scaling_plan
+### delete\_scaling\_plan
 
 Deletes the specified scaling plan.
 
-Type annotations for `boto3.client("autoscaling-plans").delete_scaling_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").delete_scaling_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.delete_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.delete_scaling_plan)
+```python title="Method definition"
+def delete_scaling_plan(
+    self,
+    *,
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ScalingPlanName`: `str` *(required)*
-- `ScalingPlanVersion`: `int` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteScalingPlanRequestRequestTypeDef = {  # (1)
+    "ScalingPlanName": ...,
+    "ScalingPlanVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_scaling_plan(**kwargs)
+```
 
-<a id="describe\_scaling\_plan\_resources"></a>
+1. See [:material-code-braces: DeleteScalingPlanRequestRequestTypeDef](./type_defs.md#deletescalingplanrequestrequesttypedef) 
 
-### describe_scaling_plan_resources
+### describe\_scaling\_plan\_resources
 
 Describes the scalable resources in the specified scaling plan.
 
-Type annotations for
-`boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").describe_scaling_plan_resources` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.describe_scaling_plan_resources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plan_resources)
+```python title="Method definition"
+def describe_scaling_plan_resources(
+    self,
+    *,
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScalingPlanResourcesResponseTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ScalingPlanName`: `str` *(required)*
-- `ScalingPlanVersion`: `int` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPlanResourcesRequestRequestTypeDef = {  # (1)
+    "ScalingPlanName": ...,
+    "ScalingPlanVersion": ...,
+}
 
-Returns
-[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef).
+parent.describe_scaling_plan_resources(**kwargs)
+```
 
-<a id="describe\_scaling\_plans"></a>
+1. See [:material-code-braces: DescribeScalingPlanResourcesRequestRequestTypeDef](./type_defs.md#describescalingplanresourcesrequestrequesttypedef) 
 
-### describe_scaling_plans
+### describe\_scaling\_plans
 
 Describes one or more of your scaling plans.
 
-Type annotations for `boto3.client("autoscaling-plans").describe_scaling_plans`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").describe_scaling_plans` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.describe_scaling_plans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.describe_scaling_plans)
+```python title="Method definition"
+def describe_scaling_plans(
+    self,
+    *,
+    ScalingPlanNames: Sequence[str] = ...,
+    ScalingPlanVersion: int = ...,
+    ApplicationSources: Sequence[ApplicationSourceTypeDef] = ...,  # (1)
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> DescribeScalingPlansResponseTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeScalingPlansRequestRequestTypeDef](./type_defs.md#describescalingplansrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ScalingPlanNames`: `Sequence`\[`str`\]
-- `ScalingPlanVersion`: `int`
-- `ApplicationSources`:
-  `Sequence`\[[ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)\]
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeScalingPlansRequestRequestTypeDef = {  # (1)
+    "ScalingPlanNames": ...,
+}
 
-Returns
-[DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef).
+parent.describe_scaling_plans(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DescribeScalingPlansRequestRequestTypeDef](./type_defs.md#describescalingplansrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("autoscaling-plans").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
-
-Returns `str`.
-
-<a id="get\_scaling\_plan\_resource\_forecast\_data"></a>
-
-### get_scaling_plan_resource_forecast_data
+### get\_scaling\_plan\_resource\_forecast\_data
 
 Retrieves the forecast data for a scalable resource.
 
-Type annotations for
-`boto3.client("autoscaling-plans").get_scaling_plan_resource_forecast_data`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").get_scaling_plan_resource_forecast_data` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.get_scaling_plan_resource_forecast_data)
+```python title="Method definition"
+def get_scaling_plan_resource_forecast_data(
+    self,
+    *,
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    ServiceNamespace: ServiceNamespaceType,  # (1)
+    ResourceId: str,
+    ScalableDimension: ScalableDimensionType,  # (2)
+    ForecastDataType: ForecastDataTypeType,  # (3)
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+) -> GetScalingPlanResourceForecastDataResponseTypeDef:  # (4)
+    ...
+```
 
-Arguments mapping described in
-[GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef).
+1. See [:material-code-brackets: ServiceNamespaceType](./literals.md#servicenamespacetype) 
+2. See [:material-code-brackets: ScalableDimensionType](./literals.md#scalabledimensiontype) 
+3. See [:material-code-brackets: ForecastDataTypeType](./literals.md#forecastdatatypetype) 
+4. See [:material-code-braces: GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef) 
 
-Keyword-only arguments:
 
-- `ScalingPlanName`: `str` *(required)*
-- `ScalingPlanVersion`: `int` *(required)*
-- `ServiceNamespace`:
-  [ServiceNamespaceType](./literals.md#servicenamespacetype) *(required)*
-- `ResourceId`: `str` *(required)*
-- `ScalableDimension`:
-  [ScalableDimensionType](./literals.md#scalabledimensiontype) *(required)*
-- `ForecastDataType`:
-  [ForecastDataTypeType](./literals.md#forecastdatatypetype) *(required)*
-- `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
-- `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: GetScalingPlanResourceForecastDataRequestRequestTypeDef = {  # (1)
+    "ScalingPlanName": ...,
+    "ScalingPlanVersion": ...,
+    "ServiceNamespace": ...,
+    "ResourceId": ...,
+    "ScalableDimension": ...,
+    "ForecastDataType": ...,
+    "StartTime": ...,
+    "EndTime": ...,
+}
 
-Returns
-[GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef).
+parent.get_scaling_plan_resource_forecast_data(**kwargs)
+```
 
-<a id="update\_scaling\_plan"></a>
+1. See [:material-code-braces: GetScalingPlanResourceForecastDataRequestRequestTypeDef](./type_defs.md#getscalingplanresourceforecastdatarequestrequesttypedef) 
 
-### update_scaling_plan
+### update\_scaling\_plan
 
 Updates the specified scaling plan.
 
-Type annotations for `boto3.client("autoscaling-plans").update_scaling_plan`
-method.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").update_scaling_plan` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
 
-Boto3 documentation:
-[AutoScalingPlans.Client.update_scaling_plan](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.update_scaling_plan)
+```python title="Method definition"
+def update_scaling_plan(
+    self,
+    *,
+    ScalingPlanName: str,
+    ScalingPlanVersion: int,
+    ApplicationSource: ApplicationSourceTypeDef = ...,  # (1)
+    ScalingInstructions: Sequence[ScalingInstructionTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateScalingPlanRequestRequestTypeDef](./type_defs.md#updatescalingplanrequestrequesttypedef).
+1. See [:material-code-braces: ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef) 
+2. See [:material-code-braces: ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef) 
 
-Keyword-only arguments:
 
-- `ScalingPlanName`: `str` *(required)*
-- `ScalingPlanVersion`: `int` *(required)*
-- `ApplicationSource`:
-  [ApplicationSourceTypeDef](./type_defs.md#applicationsourcetypedef)
-- `ScalingInstructions`:
-  `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
+```python title="Usage example with kwargs"
+kwargs: UpdateScalingPlanRequestRequestTypeDef = {  # (1)
+    "ScalingPlanName": ...,
+    "ScalingPlanVersion": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_scaling_plan(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateScalingPlanRequestRequestTypeDef](./type_defs.md#updatescalingplanrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("autoscaling-plans").get_paginator` method
-with overloads.
+Type annotations and code completion for `#!python boto3.client("autoscaling-plans").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_scaling_plan_resources")` ->
-  [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
-- `client.get_paginator("describe_scaling_plans")` ->
-  [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
+- `client.get_paginator("describe_scaling_plan_resources")` -> [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
+- `client.get_paginator("describe_scaling_plans")` -> [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
+
+
+

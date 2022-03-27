@@ -1,39 +1,18 @@
-<a id="waiters-for-boto3-sagemaker-module"></a>
-
-# Waiters for boto3 SageMaker module
+# Waiters
 
 > [Index](../README.md) > [SageMaker](./README.md) > Waiters
 
-Auto-generated documentation for
-[SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
-type annotations stubs module
-[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+!!! note ""
 
-- [Waiters for boto3 SageMaker module](#waiters-for-boto3-sagemaker-module)
-  - [EndpointDeletedWaiter](#endpointdeletedwaiter)
-  - [EndpointInServiceWaiter](#endpointinservicewaiter)
-  - [ImageCreatedWaiter](#imagecreatedwaiter)
-  - [ImageDeletedWaiter](#imagedeletedwaiter)
-  - [ImageUpdatedWaiter](#imageupdatedwaiter)
-  - [ImageVersionCreatedWaiter](#imageversioncreatedwaiter)
-  - [ImageVersionDeletedWaiter](#imageversiondeletedwaiter)
-  - [NotebookInstanceDeletedWaiter](#notebookinstancedeletedwaiter)
-  - [NotebookInstanceInServiceWaiter](#notebookinstanceinservicewaiter)
-  - [NotebookInstanceStoppedWaiter](#notebookinstancestoppedwaiter)
-  - [ProcessingJobCompletedOrStoppedWaiter](#processingjobcompletedorstoppedwaiter)
-  - [TrainingJobCompletedOrStoppedWaiter](#trainingjobcompletedorstoppedwaiter)
-  - [TransformJobCompletedOrStoppedWaiter](#transformjobcompletedorstoppedwaiter)
-
-<a id="endpointdeletedwaiter"></a>
+    Auto-generated documentation for [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
+    type annotations stubs module [mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 ## EndpointDeletedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("endpoint_deleted")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("endpoint_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter
@@ -42,24 +21,39 @@ def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
     return Session().client("sagemaker").get_waiter("endpoint_deleted")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.endpoint_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointDeleted)
 
-Arguments for `EndpointDeletedWaiter.wait` method:
+### wait
 
-- `EndpointName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EndpointDeletedWaiter.wait` method.
 
-<a id="endpointinservicewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    EndpointName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointInputEndpointDeletedWaitTypeDef = {  # (1)
+    "EndpointName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointInputEndpointDeletedWaitTypeDef](./type_defs.md#describeendpointinputendpointdeletedwaittypedef) 
 ## EndpointInServiceWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("endpoint_in_service")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("endpoint_in_service")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointInService)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import EndpointInServiceWaiter
@@ -68,23 +62,39 @@ def get_endpoint_in_service_waiter() -> EndpointInServiceWaiter:
     return Session().client("sagemaker").get_waiter("endpoint_in_service")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.endpoint_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.EndpointInService)
 
-Arguments for `EndpointInServiceWaiter.wait` method:
+### wait
 
-- `EndpointName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python EndpointInServiceWaiter.wait` method.
 
-<a id="imagecreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    EndpointName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEndpointInputEndpointInServiceWaitTypeDef = {  # (1)
+    "EndpointName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEndpointInputEndpointInServiceWaitTypeDef](./type_defs.md#describeendpointinputendpointinservicewaittypedef) 
 ## ImageCreatedWaiter
 
-Type annotations for `boto3.client("sagemaker").get_waiter("image_created")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("image_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ImageCreatedWaiter
@@ -93,23 +103,39 @@ def get_image_created_waiter() -> ImageCreatedWaiter:
     return Session().client("sagemaker").get_waiter("image_created")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.image_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageCreated)
 
-Arguments for `ImageCreatedWaiter.wait` method:
+### wait
 
-- `ImageName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageCreatedWaiter.wait` method.
 
-<a id="imagedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ImageName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageRequestImageCreatedWaitTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageRequestImageCreatedWaitTypeDef](./type_defs.md#describeimagerequestimagecreatedwaittypedef) 
 ## ImageDeletedWaiter
 
-Type annotations for `boto3.client("sagemaker").get_waiter("image_deleted")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("image_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ImageDeletedWaiter
@@ -118,23 +144,39 @@ def get_image_deleted_waiter() -> ImageDeletedWaiter:
     return Session().client("sagemaker").get_waiter("image_deleted")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.image_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageDeleted)
 
-Arguments for `ImageDeletedWaiter.wait` method:
+### wait
 
-- `ImageName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageDeletedWaiter.wait` method.
 
-<a id="imageupdatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ImageName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageRequestImageDeletedWaitTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageRequestImageDeletedWaitTypeDef](./type_defs.md#describeimagerequestimagedeletedwaittypedef) 
 ## ImageUpdatedWaiter
 
-Type annotations for `boto3.client("sagemaker").get_waiter("image_updated")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("image_updated")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageUpdated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ImageUpdatedWaiter
@@ -143,24 +185,39 @@ def get_image_updated_waiter() -> ImageUpdatedWaiter:
     return Session().client("sagemaker").get_waiter("image_updated")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.image_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageUpdated)
 
-Arguments for `ImageUpdatedWaiter.wait` method:
+### wait
 
-- `ImageName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageUpdatedWaiter.wait` method.
 
-<a id="imageversioncreatedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ImageName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageRequestImageUpdatedWaitTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageRequestImageUpdatedWaitTypeDef](./type_defs.md#describeimagerequestimageupdatedwaittypedef) 
 ## ImageVersionCreatedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("image_version_created")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("image_version_created")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionCreated)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ImageVersionCreatedWaiter
@@ -169,25 +226,40 @@ def get_image_version_created_waiter() -> ImageVersionCreatedWaiter:
     return Session().client("sagemaker").get_waiter("image_version_created")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.image_version_created](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionCreated)
 
-Arguments for `ImageVersionCreatedWaiter.wait` method:
+### wait
 
-- `ImageName`: `str` *(required)*
-- `Version`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageVersionCreatedWaiter.wait` method.
 
-<a id="imageversiondeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ImageName: str,
+    Version: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageVersionRequestImageVersionCreatedWaitTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageVersionRequestImageVersionCreatedWaitTypeDef](./type_defs.md#describeimageversionrequestimageversioncreatedwaittypedef) 
 ## ImageVersionDeletedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("image_version_deleted")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("image_version_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ImageVersionDeletedWaiter
@@ -196,25 +268,40 @@ def get_image_version_deleted_waiter() -> ImageVersionDeletedWaiter:
     return Session().client("sagemaker").get_waiter("image_version_deleted")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.image_version_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ImageVersionDeleted)
 
-Arguments for `ImageVersionDeletedWaiter.wait` method:
+### wait
 
-- `ImageName`: `str` *(required)*
-- `Version`: `int`
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ImageVersionDeletedWaiter.wait` method.
 
-<a id="notebookinstancedeletedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ImageName: str,
+    Version: int = ...,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeImageVersionRequestImageVersionDeletedWaitTypeDef = {  # (1)
+    "ImageName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeImageVersionRequestImageVersionDeletedWaitTypeDef](./type_defs.md#describeimageversionrequestimageversiondeletedwaittypedef) 
 ## NotebookInstanceDeletedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("notebook_instance_deleted")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("notebook_instance_deleted")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceDeleted)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import NotebookInstanceDeletedWaiter
@@ -223,24 +310,39 @@ def get_notebook_instance_deleted_waiter() -> NotebookInstanceDeletedWaiter:
     return Session().client("sagemaker").get_waiter("notebook_instance_deleted")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_deleted](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceDeleted)
 
-Arguments for `NotebookInstanceDeletedWaiter.wait` method:
+### wait
 
-- `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NotebookInstanceDeletedWaiter.wait` method.
 
-<a id="notebookinstanceinservicewaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    NotebookInstanceName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNotebookInstanceInputNotebookInstanceDeletedWaitTypeDef = {  # (1)
+    "NotebookInstanceName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNotebookInstanceInputNotebookInstanceDeletedWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstancedeletedwaittypedef) 
 ## NotebookInstanceInServiceWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("notebook_instance_in_service")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("notebook_instance_in_service")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceInService)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import NotebookInstanceInServiceWaiter
@@ -249,24 +351,39 @@ def get_notebook_instance_in_service_waiter() -> NotebookInstanceInServiceWaiter
     return Session().client("sagemaker").get_waiter("notebook_instance_in_service")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_in_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceInService)
 
-Arguments for `NotebookInstanceInServiceWaiter.wait` method:
+### wait
 
-- `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NotebookInstanceInServiceWaiter.wait` method.
 
-<a id="notebookinstancestoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    NotebookInstanceName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNotebookInstanceInputNotebookInstanceInServiceWaitTypeDef = {  # (1)
+    "NotebookInstanceName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNotebookInstanceInputNotebookInstanceInServiceWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstanceinservicewaittypedef) 
 ## NotebookInstanceStoppedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("notebook_instance_stopped")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("notebook_instance_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import NotebookInstanceStoppedWaiter
@@ -275,24 +392,39 @@ def get_notebook_instance_stopped_waiter() -> NotebookInstanceStoppedWaiter:
     return Session().client("sagemaker").get_waiter("notebook_instance_stopped")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.notebook_instance_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.NotebookInstanceStopped)
 
-Arguments for `NotebookInstanceStoppedWaiter.wait` method:
+### wait
 
-- `NotebookInstanceName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python NotebookInstanceStoppedWaiter.wait` method.
 
-<a id="processingjobcompletedorstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    NotebookInstanceName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeNotebookInstanceInputNotebookInstanceStoppedWaitTypeDef = {  # (1)
+    "NotebookInstanceName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeNotebookInstanceInputNotebookInstanceStoppedWaitTypeDef](./type_defs.md#describenotebookinstanceinputnotebookinstancestoppedwaittypedef) 
 ## ProcessingJobCompletedOrStoppedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ProcessingJobCompletedOrStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import ProcessingJobCompletedOrStoppedWaiter
@@ -301,24 +433,39 @@ def get_processing_job_completed_or_stopped_waiter() -> ProcessingJobCompletedOr
     return Session().client("sagemaker").get_waiter("processing_job_completed_or_stopped")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.processing_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.ProcessingJobCompletedOrStopped)
 
-Arguments for `ProcessingJobCompletedOrStoppedWaiter.wait` method:
+### wait
 
-- `ProcessingJobName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python ProcessingJobCompletedOrStoppedWaiter.wait` method.
 
-<a id="trainingjobcompletedorstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    ProcessingJobName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeProcessingJobRequestProcessingJobCompletedOrStoppedWaitTypeDef = {  # (1)
+    "ProcessingJobName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeProcessingJobRequestProcessingJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describeprocessingjobrequestprocessingjobcompletedorstoppedwaittypedef) 
 ## TrainingJobCompletedOrStoppedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TrainingJobCompletedOrStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import TrainingJobCompletedOrStoppedWaiter
@@ -327,24 +474,39 @@ def get_training_job_completed_or_stopped_waiter() -> TrainingJobCompletedOrStop
     return Session().client("sagemaker").get_waiter("training_job_completed_or_stopped")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.training_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TrainingJobCompletedOrStopped)
 
-Arguments for `TrainingJobCompletedOrStoppedWaiter.wait` method:
+### wait
 
-- `TrainingJobName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TrainingJobCompletedOrStoppedWaiter.wait` method.
 
-<a id="transformjobcompletedorstoppedwaiter"></a>
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    TrainingJobName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
 
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTrainingJobRequestTrainingJobCompletedOrStoppedWaitTypeDef = {  # (1)
+    "TrainingJobName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTrainingJobRequestTrainingJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describetrainingjobrequesttrainingjobcompletedorstoppedwaittypedef) 
 ## TransformJobCompletedOrStoppedWaiter
 
-Type annotations for
-`boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")`.
+Type annotations and code completion for `#!python boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TransformJobCompletedOrStopped)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_sagemaker.waiter import TransformJobCompletedOrStoppedWaiter
@@ -353,10 +515,30 @@ def get_transform_job_completed_or_stopped_waiter() -> TransformJobCompletedOrSt
     return Session().client("sagemaker").get_waiter("transform_job_completed_or_stopped")
 ```
 
-Boto3 documentation:
-[SageMaker.Waiter.transform_job_completed_or_stopped](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Waiter.TransformJobCompletedOrStopped)
 
-Arguments for `TransformJobCompletedOrStoppedWaiter.wait` method:
+### wait
 
-- `TransformJobName`: `str` *(required)*
-- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+Type annotations and code completion for `#!python TransformJobCompletedOrStoppedWaiter.wait` method.
+
+```python title="Method definition"
+def wait(
+    self,
+    *,
+    TransformJobName: str,
+    WaiterConfig: WaiterConfigTypeDef = ...,  # (1)
+) -> None:
+    ...
+```
+
+1. See [:material-code-braces: WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: DescribeTransformJobRequestTransformJobCompletedOrStoppedWaitTypeDef = {  # (1)
+    "TransformJobName": ...,
+}
+
+parent.wait(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeTransformJobRequestTransformJobCompletedOrStoppedWaitTypeDef](./type_defs.md#describetransformjobrequesttransformjobcompletedorstoppedwaittypedef) 

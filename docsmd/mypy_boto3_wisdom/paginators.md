@@ -1,33 +1,18 @@
-<a id="paginators-for-boto3-connectwisdomservice-module"></a>
-
-# Paginators for boto3 ConnectWisdomService module
+# Paginators
 
 > [Index](../README.md) > [ConnectWisdomService](./README.md) > Paginators
 
-Auto-generated documentation for
-[ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
-type annotations stubs module
-[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+!!! note ""
 
-- [Paginators for boto3 ConnectWisdomService module](#paginators-for-boto3-connectwisdomservice-module)
-  - [ListAssistantAssociationsPaginator](#listassistantassociationspaginator)
-  - [ListAssistantsPaginator](#listassistantspaginator)
-  - [ListContentsPaginator](#listcontentspaginator)
-  - [ListKnowledgeBasesPaginator](#listknowledgebasespaginator)
-  - [QueryAssistantPaginator](#queryassistantpaginator)
-  - [SearchContentPaginator](#searchcontentpaginator)
-  - [SearchSessionsPaginator](#searchsessionspaginator)
-
-<a id="listassistantassociationspaginator"></a>
+    Auto-generated documentation for [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
+    type annotations stubs module [mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ## ListAssistantAssociationsPaginator
 
-Type annotations for
-`boto3.client("wisdom").get_paginator("list_assistant_associations")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("list_assistant_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListAssistantAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator
@@ -36,27 +21,40 @@ def get_list_assistant_associations_paginator() -> ListAssistantAssociationsPagi
     return Session().client("wisdom").get_paginator("list_assistant_associations")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.ListAssistantAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListAssistantAssociations)
 
-Arguments for `ListAssistantAssociationsPaginator.paginate` method:
+### paginate
 
-- `assistantId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssistantAssociationsPaginator.paginate` method.
 
-`ListAssistantAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assistantId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssistantAssociationsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listassistantspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef = {  # (1)
+    "assistantId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssistantAssociationsRequestListAssistantAssociationsPaginateTypeDef](./type_defs.md#listassistantassociationsrequestlistassistantassociationspaginatetypedef) 
 ## ListAssistantsPaginator
 
-Type annotations for `boto3.client("wisdom").get_paginator("list_assistants")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("list_assistants")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListAssistants)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import ListAssistantsPaginator
@@ -65,26 +63,39 @@ def get_list_assistants_paginator() -> ListAssistantsPaginator:
     return Session().client("wisdom").get_paginator("list_assistants")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.ListAssistants](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListAssistants)
 
-Arguments for `ListAssistantsPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssistantsPaginator.paginate` method.
 
-`ListAssistantsPaginator.paginate` returns
-`_PageIterator`\[[ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssistantsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listcontentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssistantsRequestListAssistantsPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssistantsRequestListAssistantsPaginateTypeDef](./type_defs.md#listassistantsrequestlistassistantspaginatetypedef) 
 ## ListContentsPaginator
 
-Type annotations for `boto3.client("wisdom").get_paginator("list_contents")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("list_contents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListContents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import ListContentsPaginator
@@ -93,28 +104,40 @@ def get_list_contents_paginator() -> ListContentsPaginator:
     return Session().client("wisdom").get_paginator("list_contents")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.ListContents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListContents)
 
-Arguments for `ListContentsPaginator.paginate` method:
+### paginate
 
-- `knowledgeBaseId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListContentsPaginator.paginate` method.
 
-`ListContentsPaginator.paginate` returns
-`_PageIterator`\[[ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    knowledgeBaseId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListContentsResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="listknowledgebasespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListContentsRequestListContentsPaginateTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListContentsRequestListContentsPaginateTypeDef](./type_defs.md#listcontentsrequestlistcontentspaginatetypedef) 
 ## ListKnowledgeBasesPaginator
 
-Type annotations for
-`boto3.client("wisdom").get_paginator("list_knowledge_bases")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("list_knowledge_bases")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListKnowledgeBases)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import ListKnowledgeBasesPaginator
@@ -123,26 +146,39 @@ def get_list_knowledge_bases_paginator() -> ListKnowledgeBasesPaginator:
     return Session().client("wisdom").get_paginator("list_knowledge_bases")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.ListKnowledgeBases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.ListKnowledgeBases)
 
-Arguments for `ListKnowledgeBasesPaginator.paginate` method:
+### paginate
 
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListKnowledgeBasesPaginator.paginate` method.
 
-`ListKnowledgeBasesPaginator.paginate` returns
-`_PageIterator`\[[ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListKnowledgeBasesResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="queryassistantpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef = {  # (1)
+    "PaginationConfig": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListKnowledgeBasesRequestListKnowledgeBasesPaginateTypeDef](./type_defs.md#listknowledgebasesrequestlistknowledgebasespaginatetypedef) 
 ## QueryAssistantPaginator
 
-Type annotations for `boto3.client("wisdom").get_paginator("query_assistant")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("query_assistant")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.QueryAssistant)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import QueryAssistantPaginator
@@ -151,28 +187,42 @@ def get_query_assistant_paginator() -> QueryAssistantPaginator:
     return Session().client("wisdom").get_paginator("query_assistant")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.QueryAssistant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.QueryAssistant)
 
-Arguments for `QueryAssistantPaginator.paginate` method:
+### paginate
 
-- `assistantId`: `str` *(required)*
-- `queryText`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python QueryAssistantPaginator.paginate` method.
 
-`QueryAssistantPaginator.paginate` returns
-`_PageIterator`\[[QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assistantId: str,
+    queryText: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[QueryAssistantResponseTypeDef]:  # (2)
+    ...
+```
 
-<a id="searchcontentpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: QueryAssistantRequestQueryAssistantPaginateTypeDef = {  # (1)
+    "assistantId": ...,
+    "queryText": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: QueryAssistantRequestQueryAssistantPaginateTypeDef](./type_defs.md#queryassistantrequestqueryassistantpaginatetypedef) 
 ## SearchContentPaginator
 
-Type annotations for `boto3.client("wisdom").get_paginator("search_content")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("search_content")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.SearchContent)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import SearchContentPaginator
@@ -181,30 +231,43 @@ def get_search_content_paginator() -> SearchContentPaginator:
     return Session().client("wisdom").get_paginator("search_content")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.SearchContent](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.SearchContent)
 
-Arguments for `SearchContentPaginator.paginate` method:
+### paginate
 
-- `knowledgeBaseId`: `str` *(required)*
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchContentPaginator.paginate` method.
 
-`SearchContentPaginator.paginate` returns
-`_PageIterator`\[[SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    knowledgeBaseId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchContentResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="searchsessionspaginator"></a>
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: SearchContentRequestSearchContentPaginateTypeDef = {  # (1)
+    "knowledgeBaseId": ...,
+    "searchExpression": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchContentRequestSearchContentPaginateTypeDef](./type_defs.md#searchcontentrequestsearchcontentpaginatetypedef) 
 ## SearchSessionsPaginator
 
-Type annotations for `boto3.client("wisdom").get_paginator("search_sessions")`.
+Type annotations and code completion for `#!python boto3.client("wisdom").get_paginator("search_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.SearchSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_wisdom.paginator import SearchSessionsPaginator
@@ -213,17 +276,34 @@ def get_search_sessions_paginator() -> SearchSessionsPaginator:
     return Session().client("wisdom").get_paginator("search_sessions")
 ```
 
-Boto3 documentation:
-[ConnectWisdomService.Paginator.SearchSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Paginator.SearchSessions)
 
-Arguments for `SearchSessionsPaginator.paginate` method:
+### paginate
 
-- `assistantId`: `str` *(required)*
-- `searchExpression`:
-  [SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python SearchSessionsPaginator.paginate` method.
 
-`SearchSessionsPaginator.paginate` returns
-`_PageIterator`\[[SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    assistantId: str,
+    searchExpression: SearchExpressionTypeDef,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[SearchSessionsResponseTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-braces: SearchExpressionTypeDef](./type_defs.md#searchexpressiontypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: SearchSessionsRequestSearchSessionsPaginateTypeDef = {  # (1)
+    "assistantId": ...,
+    "searchExpression": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: SearchSessionsRequestSearchSessionsPaginateTypeDef](./type_defs.md#searchsessionsrequestsearchsessionspaginatetypedef) 

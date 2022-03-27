@@ -1,4845 +1,6492 @@
-<a id="typed-dictionaries-for-boto3-connect-module"></a>
-
-# Typed dictionaries for boto3 Connect module
+# Typed dictionaries
 
 > [Index](../README.md) > [Connect](./README.md) > Typed dictionaries
 
-Auto-generated documentation for
-[Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
-type annotations stubs module
-[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
+!!! note ""
 
-- [Typed dictionaries for boto3 Connect module](#typed-dictionaries-for-boto3-connect-module)
-  - [AgentInfoTypeDef](#agentinfotypedef)
-  - [AgentStatusSummaryTypeDef](#agentstatussummarytypedef)
-  - [AgentStatusTypeDef](#agentstatustypedef)
-  - [AnswerMachineDetectionConfigTypeDef](#answermachinedetectionconfigtypedef)
-  - [AssociateApprovedOriginRequestRequestTypeDef](#associateapprovedoriginrequestrequesttypedef)
-  - [AssociateBotRequestRequestTypeDef](#associatebotrequestrequesttypedef)
-  - [AssociateDefaultVocabularyRequestRequestTypeDef](#associatedefaultvocabularyrequestrequesttypedef)
-  - [AssociateInstanceStorageConfigRequestRequestTypeDef](#associateinstancestorageconfigrequestrequesttypedef)
-  - [AssociateInstanceStorageConfigResponseTypeDef](#associateinstancestorageconfigresponsetypedef)
-  - [AssociateLambdaFunctionRequestRequestTypeDef](#associatelambdafunctionrequestrequesttypedef)
-  - [AssociateLexBotRequestRequestTypeDef](#associatelexbotrequestrequesttypedef)
-  - [AssociateQueueQuickConnectsRequestRequestTypeDef](#associatequeuequickconnectsrequestrequesttypedef)
-  - [AssociateRoutingProfileQueuesRequestRequestTypeDef](#associateroutingprofilequeuesrequestrequesttypedef)
-  - [AssociateSecurityKeyRequestRequestTypeDef](#associatesecuritykeyrequestrequesttypedef)
-  - [AssociateSecurityKeyResponseTypeDef](#associatesecuritykeyresponsetypedef)
-  - [AttachmentReferenceTypeDef](#attachmentreferencetypedef)
-  - [AttributeTypeDef](#attributetypedef)
-  - [ChatMessageTypeDef](#chatmessagetypedef)
-  - [ChatStreamingConfigurationTypeDef](#chatstreamingconfigurationtypedef)
-  - [ContactFlowModuleSummaryTypeDef](#contactflowmodulesummarytypedef)
-  - [ContactFlowModuleTypeDef](#contactflowmoduletypedef)
-  - [ContactFlowSummaryTypeDef](#contactflowsummarytypedef)
-  - [ContactFlowTypeDef](#contactflowtypedef)
-  - [ContactTypeDef](#contacttypedef)
-  - [CreateAgentStatusRequestRequestTypeDef](#createagentstatusrequestrequesttypedef)
-  - [CreateAgentStatusResponseTypeDef](#createagentstatusresponsetypedef)
-  - [CreateContactFlowModuleRequestRequestTypeDef](#createcontactflowmodulerequestrequesttypedef)
-  - [CreateContactFlowModuleResponseTypeDef](#createcontactflowmoduleresponsetypedef)
-  - [CreateContactFlowRequestRequestTypeDef](#createcontactflowrequestrequesttypedef)
-  - [CreateContactFlowResponseTypeDef](#createcontactflowresponsetypedef)
-  - [CreateHoursOfOperationRequestRequestTypeDef](#createhoursofoperationrequestrequesttypedef)
-  - [CreateHoursOfOperationResponseTypeDef](#createhoursofoperationresponsetypedef)
-  - [CreateInstanceRequestRequestTypeDef](#createinstancerequestrequesttypedef)
-  - [CreateInstanceResponseTypeDef](#createinstanceresponsetypedef)
-  - [CreateIntegrationAssociationRequestRequestTypeDef](#createintegrationassociationrequestrequesttypedef)
-  - [CreateIntegrationAssociationResponseTypeDef](#createintegrationassociationresponsetypedef)
-  - [CreateQueueRequestRequestTypeDef](#createqueuerequestrequesttypedef)
-  - [CreateQueueResponseTypeDef](#createqueueresponsetypedef)
-  - [CreateQuickConnectRequestRequestTypeDef](#createquickconnectrequestrequesttypedef)
-  - [CreateQuickConnectResponseTypeDef](#createquickconnectresponsetypedef)
-  - [CreateRoutingProfileRequestRequestTypeDef](#createroutingprofilerequestrequesttypedef)
-  - [CreateRoutingProfileResponseTypeDef](#createroutingprofileresponsetypedef)
-  - [CreateSecurityProfileRequestRequestTypeDef](#createsecurityprofilerequestrequesttypedef)
-  - [CreateSecurityProfileResponseTypeDef](#createsecurityprofileresponsetypedef)
-  - [CreateUseCaseRequestRequestTypeDef](#createusecaserequestrequesttypedef)
-  - [CreateUseCaseResponseTypeDef](#createusecaseresponsetypedef)
-  - [CreateUserHierarchyGroupRequestRequestTypeDef](#createuserhierarchygrouprequestrequesttypedef)
-  - [CreateUserHierarchyGroupResponseTypeDef](#createuserhierarchygroupresponsetypedef)
-  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
-  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
-  - [CreateVocabularyRequestRequestTypeDef](#createvocabularyrequestrequesttypedef)
-  - [CreateVocabularyResponseTypeDef](#createvocabularyresponsetypedef)
-  - [CredentialsTypeDef](#credentialstypedef)
-  - [CurrentMetricDataTypeDef](#currentmetricdatatypedef)
-  - [CurrentMetricResultTypeDef](#currentmetricresulttypedef)
-  - [CurrentMetricTypeDef](#currentmetrictypedef)
-  - [DefaultVocabularyTypeDef](#defaultvocabularytypedef)
-  - [DeleteContactFlowModuleRequestRequestTypeDef](#deletecontactflowmodulerequestrequesttypedef)
-  - [DeleteContactFlowRequestRequestTypeDef](#deletecontactflowrequestrequesttypedef)
-  - [DeleteHoursOfOperationRequestRequestTypeDef](#deletehoursofoperationrequestrequesttypedef)
-  - [DeleteInstanceRequestRequestTypeDef](#deleteinstancerequestrequesttypedef)
-  - [DeleteIntegrationAssociationRequestRequestTypeDef](#deleteintegrationassociationrequestrequesttypedef)
-  - [DeleteQuickConnectRequestRequestTypeDef](#deletequickconnectrequestrequesttypedef)
-  - [DeleteSecurityProfileRequestRequestTypeDef](#deletesecurityprofilerequestrequesttypedef)
-  - [DeleteUseCaseRequestRequestTypeDef](#deleteusecaserequestrequesttypedef)
-  - [DeleteUserHierarchyGroupRequestRequestTypeDef](#deleteuserhierarchygrouprequestrequesttypedef)
-  - [DeleteUserRequestRequestTypeDef](#deleteuserrequestrequesttypedef)
-  - [DeleteVocabularyRequestRequestTypeDef](#deletevocabularyrequestrequesttypedef)
-  - [DeleteVocabularyResponseTypeDef](#deletevocabularyresponsetypedef)
-  - [DescribeAgentStatusRequestRequestTypeDef](#describeagentstatusrequestrequesttypedef)
-  - [DescribeAgentStatusResponseTypeDef](#describeagentstatusresponsetypedef)
-  - [DescribeContactFlowModuleRequestRequestTypeDef](#describecontactflowmodulerequestrequesttypedef)
-  - [DescribeContactFlowModuleResponseTypeDef](#describecontactflowmoduleresponsetypedef)
-  - [DescribeContactFlowRequestRequestTypeDef](#describecontactflowrequestrequesttypedef)
-  - [DescribeContactFlowResponseTypeDef](#describecontactflowresponsetypedef)
-  - [DescribeContactRequestRequestTypeDef](#describecontactrequestrequesttypedef)
-  - [DescribeContactResponseTypeDef](#describecontactresponsetypedef)
-  - [DescribeHoursOfOperationRequestRequestTypeDef](#describehoursofoperationrequestrequesttypedef)
-  - [DescribeHoursOfOperationResponseTypeDef](#describehoursofoperationresponsetypedef)
-  - [DescribeInstanceAttributeRequestRequestTypeDef](#describeinstanceattributerequestrequesttypedef)
-  - [DescribeInstanceAttributeResponseTypeDef](#describeinstanceattributeresponsetypedef)
-  - [DescribeInstanceRequestRequestTypeDef](#describeinstancerequestrequesttypedef)
-  - [DescribeInstanceResponseTypeDef](#describeinstanceresponsetypedef)
-  - [DescribeInstanceStorageConfigRequestRequestTypeDef](#describeinstancestorageconfigrequestrequesttypedef)
-  - [DescribeInstanceStorageConfigResponseTypeDef](#describeinstancestorageconfigresponsetypedef)
-  - [DescribeQueueRequestRequestTypeDef](#describequeuerequestrequesttypedef)
-  - [DescribeQueueResponseTypeDef](#describequeueresponsetypedef)
-  - [DescribeQuickConnectRequestRequestTypeDef](#describequickconnectrequestrequesttypedef)
-  - [DescribeQuickConnectResponseTypeDef](#describequickconnectresponsetypedef)
-  - [DescribeRoutingProfileRequestRequestTypeDef](#describeroutingprofilerequestrequesttypedef)
-  - [DescribeRoutingProfileResponseTypeDef](#describeroutingprofileresponsetypedef)
-  - [DescribeSecurityProfileRequestRequestTypeDef](#describesecurityprofilerequestrequesttypedef)
-  - [DescribeSecurityProfileResponseTypeDef](#describesecurityprofileresponsetypedef)
-  - [DescribeUserHierarchyGroupRequestRequestTypeDef](#describeuserhierarchygrouprequestrequesttypedef)
-  - [DescribeUserHierarchyGroupResponseTypeDef](#describeuserhierarchygroupresponsetypedef)
-  - [DescribeUserHierarchyStructureRequestRequestTypeDef](#describeuserhierarchystructurerequestrequesttypedef)
-  - [DescribeUserHierarchyStructureResponseTypeDef](#describeuserhierarchystructureresponsetypedef)
-  - [DescribeUserRequestRequestTypeDef](#describeuserrequestrequesttypedef)
-  - [DescribeUserResponseTypeDef](#describeuserresponsetypedef)
-  - [DescribeVocabularyRequestRequestTypeDef](#describevocabularyrequestrequesttypedef)
-  - [DescribeVocabularyResponseTypeDef](#describevocabularyresponsetypedef)
-  - [DimensionsTypeDef](#dimensionstypedef)
-  - [DisassociateApprovedOriginRequestRequestTypeDef](#disassociateapprovedoriginrequestrequesttypedef)
-  - [DisassociateBotRequestRequestTypeDef](#disassociatebotrequestrequesttypedef)
-  - [DisassociateInstanceStorageConfigRequestRequestTypeDef](#disassociateinstancestorageconfigrequestrequesttypedef)
-  - [DisassociateLambdaFunctionRequestRequestTypeDef](#disassociatelambdafunctionrequestrequesttypedef)
-  - [DisassociateLexBotRequestRequestTypeDef](#disassociatelexbotrequestrequesttypedef)
-  - [DisassociateQueueQuickConnectsRequestRequestTypeDef](#disassociatequeuequickconnectsrequestrequesttypedef)
-  - [DisassociateRoutingProfileQueuesRequestRequestTypeDef](#disassociateroutingprofilequeuesrequestrequesttypedef)
-  - [DisassociateSecurityKeyRequestRequestTypeDef](#disassociatesecuritykeyrequestrequesttypedef)
-  - [EncryptionConfigTypeDef](#encryptionconfigtypedef)
-  - [FiltersTypeDef](#filterstypedef)
-  - [GetContactAttributesRequestRequestTypeDef](#getcontactattributesrequestrequesttypedef)
-  - [GetContactAttributesResponseTypeDef](#getcontactattributesresponsetypedef)
-  - [GetCurrentMetricDataRequestRequestTypeDef](#getcurrentmetricdatarequestrequesttypedef)
-  - [GetCurrentMetricDataResponseTypeDef](#getcurrentmetricdataresponsetypedef)
-  - [GetFederationTokenRequestRequestTypeDef](#getfederationtokenrequestrequesttypedef)
-  - [GetFederationTokenResponseTypeDef](#getfederationtokenresponsetypedef)
-  - [GetMetricDataRequestRequestTypeDef](#getmetricdatarequestrequesttypedef)
-  - [GetMetricDataResponseTypeDef](#getmetricdataresponsetypedef)
-  - [HierarchyGroupSummaryTypeDef](#hierarchygroupsummarytypedef)
-  - [HierarchyGroupTypeDef](#hierarchygrouptypedef)
-  - [HierarchyLevelTypeDef](#hierarchyleveltypedef)
-  - [HierarchyLevelUpdateTypeDef](#hierarchylevelupdatetypedef)
-  - [HierarchyPathTypeDef](#hierarchypathtypedef)
-  - [HierarchyStructureTypeDef](#hierarchystructuretypedef)
-  - [HierarchyStructureUpdateTypeDef](#hierarchystructureupdatetypedef)
-  - [HistoricalMetricDataTypeDef](#historicalmetricdatatypedef)
-  - [HistoricalMetricResultTypeDef](#historicalmetricresulttypedef)
-  - [HistoricalMetricTypeDef](#historicalmetrictypedef)
-  - [HoursOfOperationConfigTypeDef](#hoursofoperationconfigtypedef)
-  - [HoursOfOperationSummaryTypeDef](#hoursofoperationsummarytypedef)
-  - [HoursOfOperationTimeSliceTypeDef](#hoursofoperationtimeslicetypedef)
-  - [HoursOfOperationTypeDef](#hoursofoperationtypedef)
-  - [InstanceStatusReasonTypeDef](#instancestatusreasontypedef)
-  - [InstanceStorageConfigTypeDef](#instancestorageconfigtypedef)
-  - [InstanceSummaryTypeDef](#instancesummarytypedef)
-  - [InstanceTypeDef](#instancetypedef)
-  - [IntegrationAssociationSummaryTypeDef](#integrationassociationsummarytypedef)
-  - [KinesisFirehoseConfigTypeDef](#kinesisfirehoseconfigtypedef)
-  - [KinesisStreamConfigTypeDef](#kinesisstreamconfigtypedef)
-  - [KinesisVideoStreamConfigTypeDef](#kinesisvideostreamconfigtypedef)
-  - [LexBotConfigTypeDef](#lexbotconfigtypedef)
-  - [LexBotTypeDef](#lexbottypedef)
-  - [LexV2BotTypeDef](#lexv2bottypedef)
-  - [ListAgentStatusRequestRequestTypeDef](#listagentstatusrequestrequesttypedef)
-  - [ListAgentStatusResponseTypeDef](#listagentstatusresponsetypedef)
-  - [ListApprovedOriginsRequestRequestTypeDef](#listapprovedoriginsrequestrequesttypedef)
-  - [ListApprovedOriginsResponseTypeDef](#listapprovedoriginsresponsetypedef)
-  - [ListBotsRequestRequestTypeDef](#listbotsrequestrequesttypedef)
-  - [ListBotsResponseTypeDef](#listbotsresponsetypedef)
-  - [ListContactFlowModulesRequestRequestTypeDef](#listcontactflowmodulesrequestrequesttypedef)
-  - [ListContactFlowModulesResponseTypeDef](#listcontactflowmodulesresponsetypedef)
-  - [ListContactFlowsRequestRequestTypeDef](#listcontactflowsrequestrequesttypedef)
-  - [ListContactFlowsResponseTypeDef](#listcontactflowsresponsetypedef)
-  - [ListContactReferencesRequestRequestTypeDef](#listcontactreferencesrequestrequesttypedef)
-  - [ListContactReferencesResponseTypeDef](#listcontactreferencesresponsetypedef)
-  - [ListDefaultVocabulariesRequestRequestTypeDef](#listdefaultvocabulariesrequestrequesttypedef)
-  - [ListDefaultVocabulariesResponseTypeDef](#listdefaultvocabulariesresponsetypedef)
-  - [ListHoursOfOperationsRequestRequestTypeDef](#listhoursofoperationsrequestrequesttypedef)
-  - [ListHoursOfOperationsResponseTypeDef](#listhoursofoperationsresponsetypedef)
-  - [ListInstanceAttributesRequestRequestTypeDef](#listinstanceattributesrequestrequesttypedef)
-  - [ListInstanceAttributesResponseTypeDef](#listinstanceattributesresponsetypedef)
-  - [ListInstanceStorageConfigsRequestRequestTypeDef](#listinstancestorageconfigsrequestrequesttypedef)
-  - [ListInstanceStorageConfigsResponseTypeDef](#listinstancestorageconfigsresponsetypedef)
-  - [ListInstancesRequestRequestTypeDef](#listinstancesrequestrequesttypedef)
-  - [ListInstancesResponseTypeDef](#listinstancesresponsetypedef)
-  - [ListIntegrationAssociationsRequestRequestTypeDef](#listintegrationassociationsrequestrequesttypedef)
-  - [ListIntegrationAssociationsResponseTypeDef](#listintegrationassociationsresponsetypedef)
-  - [ListLambdaFunctionsRequestRequestTypeDef](#listlambdafunctionsrequestrequesttypedef)
-  - [ListLambdaFunctionsResponseTypeDef](#listlambdafunctionsresponsetypedef)
-  - [ListLexBotsRequestRequestTypeDef](#listlexbotsrequestrequesttypedef)
-  - [ListLexBotsResponseTypeDef](#listlexbotsresponsetypedef)
-  - [ListPhoneNumbersRequestRequestTypeDef](#listphonenumbersrequestrequesttypedef)
-  - [ListPhoneNumbersResponseTypeDef](#listphonenumbersresponsetypedef)
-  - [ListPromptsRequestRequestTypeDef](#listpromptsrequestrequesttypedef)
-  - [ListPromptsResponseTypeDef](#listpromptsresponsetypedef)
-  - [ListQueueQuickConnectsRequestRequestTypeDef](#listqueuequickconnectsrequestrequesttypedef)
-  - [ListQueueQuickConnectsResponseTypeDef](#listqueuequickconnectsresponsetypedef)
-  - [ListQueuesRequestRequestTypeDef](#listqueuesrequestrequesttypedef)
-  - [ListQueuesResponseTypeDef](#listqueuesresponsetypedef)
-  - [ListQuickConnectsRequestRequestTypeDef](#listquickconnectsrequestrequesttypedef)
-  - [ListQuickConnectsResponseTypeDef](#listquickconnectsresponsetypedef)
-  - [ListRoutingProfileQueuesRequestRequestTypeDef](#listroutingprofilequeuesrequestrequesttypedef)
-  - [ListRoutingProfileQueuesResponseTypeDef](#listroutingprofilequeuesresponsetypedef)
-  - [ListRoutingProfilesRequestRequestTypeDef](#listroutingprofilesrequestrequesttypedef)
-  - [ListRoutingProfilesResponseTypeDef](#listroutingprofilesresponsetypedef)
-  - [ListSecurityKeysRequestRequestTypeDef](#listsecuritykeysrequestrequesttypedef)
-  - [ListSecurityKeysResponseTypeDef](#listsecuritykeysresponsetypedef)
-  - [ListSecurityProfilePermissionsRequestRequestTypeDef](#listsecurityprofilepermissionsrequestrequesttypedef)
-  - [ListSecurityProfilePermissionsResponseTypeDef](#listsecurityprofilepermissionsresponsetypedef)
-  - [ListSecurityProfilesRequestRequestTypeDef](#listsecurityprofilesrequestrequesttypedef)
-  - [ListSecurityProfilesResponseTypeDef](#listsecurityprofilesresponsetypedef)
-  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
-  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListUseCasesRequestRequestTypeDef](#listusecasesrequestrequesttypedef)
-  - [ListUseCasesResponseTypeDef](#listusecasesresponsetypedef)
-  - [ListUserHierarchyGroupsRequestRequestTypeDef](#listuserhierarchygroupsrequestrequesttypedef)
-  - [ListUserHierarchyGroupsResponseTypeDef](#listuserhierarchygroupsresponsetypedef)
-  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
-  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
-  - [MediaConcurrencyTypeDef](#mediaconcurrencytypedef)
-  - [OutboundCallerConfigTypeDef](#outboundcallerconfigtypedef)
-  - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
-  - [ParticipantDetailsTypeDef](#participantdetailstypedef)
-  - [PhoneNumberQuickConnectConfigTypeDef](#phonenumberquickconnectconfigtypedef)
-  - [PhoneNumberSummaryTypeDef](#phonenumbersummarytypedef)
-  - [PromptSummaryTypeDef](#promptsummarytypedef)
-  - [QueueInfoTypeDef](#queueinfotypedef)
-  - [QueueQuickConnectConfigTypeDef](#queuequickconnectconfigtypedef)
-  - [QueueReferenceTypeDef](#queuereferencetypedef)
-  - [QueueSummaryTypeDef](#queuesummarytypedef)
-  - [QueueTypeDef](#queuetypedef)
-  - [QuickConnectConfigTypeDef](#quickconnectconfigtypedef)
-  - [QuickConnectSummaryTypeDef](#quickconnectsummarytypedef)
-  - [QuickConnectTypeDef](#quickconnecttypedef)
-  - [ReferenceSummaryTypeDef](#referencesummarytypedef)
-  - [ReferenceTypeDef](#referencetypedef)
-  - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [ResumeContactRecordingRequestRequestTypeDef](#resumecontactrecordingrequestrequesttypedef)
-  - [RoutingProfileQueueConfigSummaryTypeDef](#routingprofilequeueconfigsummarytypedef)
-  - [RoutingProfileQueueConfigTypeDef](#routingprofilequeueconfigtypedef)
-  - [RoutingProfileQueueReferenceTypeDef](#routingprofilequeuereferencetypedef)
-  - [RoutingProfileSummaryTypeDef](#routingprofilesummarytypedef)
-  - [RoutingProfileTypeDef](#routingprofiletypedef)
-  - [S3ConfigTypeDef](#s3configtypedef)
-  - [SearchVocabulariesRequestRequestTypeDef](#searchvocabulariesrequestrequesttypedef)
-  - [SearchVocabulariesResponseTypeDef](#searchvocabulariesresponsetypedef)
-  - [SecurityKeyTypeDef](#securitykeytypedef)
-  - [SecurityProfileSummaryTypeDef](#securityprofilesummarytypedef)
-  - [SecurityProfileTypeDef](#securityprofiletypedef)
-  - [StartChatContactRequestRequestTypeDef](#startchatcontactrequestrequesttypedef)
-  - [StartChatContactResponseTypeDef](#startchatcontactresponsetypedef)
-  - [StartContactRecordingRequestRequestTypeDef](#startcontactrecordingrequestrequesttypedef)
-  - [StartContactStreamingRequestRequestTypeDef](#startcontactstreamingrequestrequesttypedef)
-  - [StartContactStreamingResponseTypeDef](#startcontactstreamingresponsetypedef)
-  - [StartOutboundVoiceContactRequestRequestTypeDef](#startoutboundvoicecontactrequestrequesttypedef)
-  - [StartOutboundVoiceContactResponseTypeDef](#startoutboundvoicecontactresponsetypedef)
-  - [StartTaskContactRequestRequestTypeDef](#starttaskcontactrequestrequesttypedef)
-  - [StartTaskContactResponseTypeDef](#starttaskcontactresponsetypedef)
-  - [StopContactRecordingRequestRequestTypeDef](#stopcontactrecordingrequestrequesttypedef)
-  - [StopContactRequestRequestTypeDef](#stopcontactrequestrequesttypedef)
-  - [StopContactStreamingRequestRequestTypeDef](#stopcontactstreamingrequestrequesttypedef)
-  - [SuspendContactRecordingRequestRequestTypeDef](#suspendcontactrecordingrequestrequesttypedef)
-  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
-  - [ThresholdTypeDef](#thresholdtypedef)
-  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
-  - [UpdateAgentStatusRequestRequestTypeDef](#updateagentstatusrequestrequesttypedef)
-  - [UpdateContactAttributesRequestRequestTypeDef](#updatecontactattributesrequestrequesttypedef)
-  - [UpdateContactFlowContentRequestRequestTypeDef](#updatecontactflowcontentrequestrequesttypedef)
-  - [UpdateContactFlowMetadataRequestRequestTypeDef](#updatecontactflowmetadatarequestrequesttypedef)
-  - [UpdateContactFlowModuleContentRequestRequestTypeDef](#updatecontactflowmodulecontentrequestrequesttypedef)
-  - [UpdateContactFlowModuleMetadataRequestRequestTypeDef](#updatecontactflowmodulemetadatarequestrequesttypedef)
-  - [UpdateContactFlowNameRequestRequestTypeDef](#updatecontactflownamerequestrequesttypedef)
-  - [UpdateContactRequestRequestTypeDef](#updatecontactrequestrequesttypedef)
-  - [UpdateContactScheduleRequestRequestTypeDef](#updatecontactschedulerequestrequesttypedef)
-  - [UpdateHoursOfOperationRequestRequestTypeDef](#updatehoursofoperationrequestrequesttypedef)
-  - [UpdateInstanceAttributeRequestRequestTypeDef](#updateinstanceattributerequestrequesttypedef)
-  - [UpdateInstanceStorageConfigRequestRequestTypeDef](#updateinstancestorageconfigrequestrequesttypedef)
-  - [UpdateQueueHoursOfOperationRequestRequestTypeDef](#updatequeuehoursofoperationrequestrequesttypedef)
-  - [UpdateQueueMaxContactsRequestRequestTypeDef](#updatequeuemaxcontactsrequestrequesttypedef)
-  - [UpdateQueueNameRequestRequestTypeDef](#updatequeuenamerequestrequesttypedef)
-  - [UpdateQueueOutboundCallerConfigRequestRequestTypeDef](#updatequeueoutboundcallerconfigrequestrequesttypedef)
-  - [UpdateQueueStatusRequestRequestTypeDef](#updatequeuestatusrequestrequesttypedef)
-  - [UpdateQuickConnectConfigRequestRequestTypeDef](#updatequickconnectconfigrequestrequesttypedef)
-  - [UpdateQuickConnectNameRequestRequestTypeDef](#updatequickconnectnamerequestrequesttypedef)
-  - [UpdateRoutingProfileConcurrencyRequestRequestTypeDef](#updateroutingprofileconcurrencyrequestrequesttypedef)
-  - [UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef](#updateroutingprofiledefaultoutboundqueuerequestrequesttypedef)
-  - [UpdateRoutingProfileNameRequestRequestTypeDef](#updateroutingprofilenamerequestrequesttypedef)
-  - [UpdateRoutingProfileQueuesRequestRequestTypeDef](#updateroutingprofilequeuesrequestrequesttypedef)
-  - [UpdateSecurityProfileRequestRequestTypeDef](#updatesecurityprofilerequestrequesttypedef)
-  - [UpdateUserHierarchyGroupNameRequestRequestTypeDef](#updateuserhierarchygroupnamerequestrequesttypedef)
-  - [UpdateUserHierarchyRequestRequestTypeDef](#updateuserhierarchyrequestrequesttypedef)
-  - [UpdateUserHierarchyStructureRequestRequestTypeDef](#updateuserhierarchystructurerequestrequesttypedef)
-  - [UpdateUserIdentityInfoRequestRequestTypeDef](#updateuseridentityinforequestrequesttypedef)
-  - [UpdateUserPhoneConfigRequestRequestTypeDef](#updateuserphoneconfigrequestrequesttypedef)
-  - [UpdateUserRoutingProfileRequestRequestTypeDef](#updateuserroutingprofilerequestrequesttypedef)
-  - [UpdateUserSecurityProfilesRequestRequestTypeDef](#updateusersecurityprofilesrequestrequesttypedef)
-  - [UrlReferenceTypeDef](#urlreferencetypedef)
-  - [UseCaseTypeDef](#usecasetypedef)
-  - [UserIdentityInfoTypeDef](#useridentityinfotypedef)
-  - [UserPhoneConfigTypeDef](#userphoneconfigtypedef)
-  - [UserQuickConnectConfigTypeDef](#userquickconnectconfigtypedef)
-  - [UserSummaryTypeDef](#usersummarytypedef)
-  - [UserTypeDef](#usertypedef)
-  - [VocabularySummaryTypeDef](#vocabularysummarytypedef)
-  - [VocabularyTypeDef](#vocabularytypedef)
-  - [VoiceRecordingConfigurationTypeDef](#voicerecordingconfigurationtypedef)
-
-<a id="agentinfotypedef"></a>
+    Auto-generated documentation for [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
+    type annotations stubs module [mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ## AgentInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AgentInfoTypeDef
+
+def get_value() -> AgentInfoTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `ConnectedToAgentTimestamp`: `datetime`
-
-<a id="agentstatussummarytypedef"></a>
+```python title="Definition"
+class AgentInfoTypeDef(TypedDict):
+    Id: NotRequired[str],
+    ConnectedToAgentTimestamp: NotRequired[datetime],
+```
 
 ## AgentStatusSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AgentStatusSummaryTypeDef
+
+def get_value() -> AgentStatusSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AgentStatusSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[AgentStatusTypeType],  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
-
-<a id="agentstatustypedef"></a>
-
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
 ## AgentStatusTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AgentStatusTypeDef
+
+def get_value() -> AgentStatusTypeDef:
+    return {
+        "AgentStatusARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AgentStatusTypeDef(TypedDict):
+    AgentStatusARN: NotRequired[str],
+    AgentStatusId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Type: NotRequired[AgentStatusTypeType],  # (1)
+    DisplayOrder: NotRequired[int],
+    State: NotRequired[AgentStatusStateType],  # (2)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `AgentStatusARN`: `str`
-- `AgentStatusId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `Type`: [AgentStatusTypeType](./literals.md#agentstatustypetype)
-- `DisplayOrder`: `int`
-- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="answermachinedetectionconfigtypedef"></a>
-
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
+2. See [:material-code-brackets: AgentStatusStateType](./literals.md#agentstatusstatetype) 
 ## AnswerMachineDetectionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AnswerMachineDetectionConfigTypeDef
+
+def get_value() -> AnswerMachineDetectionConfigTypeDef:
+    return {
+        "EnableAnswerMachineDetection": ...,
+    }
 ```
 
-Optional fields:
-
-- `EnableAnswerMachineDetection`: `bool`
-- `AwaitAnswerMachinePrompt`: `bool`
-
-<a id="associateapprovedoriginrequestrequesttypedef"></a>
+```python title="Definition"
+class AnswerMachineDetectionConfigTypeDef(TypedDict):
+    EnableAnswerMachineDetection: NotRequired[bool],
+    AwaitAnswerMachinePrompt: NotRequired[bool],
+```
 
 ## AssociateApprovedOriginRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateApprovedOriginRequestRequestTypeDef
+
+def get_value() -> AssociateApprovedOriginRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Origin": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `Origin`: `str`
-
-<a id="associatebotrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateApprovedOriginRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Origin: str,
+```
 
 ## AssociateBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateBotRequestRequestTypeDef
+
+def get_value() -> AssociateBotRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateBotRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LexBot: NotRequired[LexBotTypeDef],  # (1)
+    LexV2Bot: NotRequired[LexV2BotTypeDef],  # (2)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
-
-<a id="associatedefaultvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: LexV2BotTypeDef](./type_defs.md#lexv2bottypedef) 
 ## AssociateDefaultVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateDefaultVocabularyRequestRequestTypeDef
+
+def get_value() -> AssociateDefaultVocabularyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "LanguageCode": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateDefaultVocabularyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    VocabularyId: NotRequired[str],
+```
 
-- `InstanceId`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-
-Optional fields:
-
-- `VocabularyId`: `str`
-
-<a id="associateinstancestorageconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 ## AssociateInstanceStorageConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigRequestRequestTypeDef
+
+def get_value() -> AssociateInstanceStorageConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ResourceType": ...,
+        "StorageConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateInstanceStorageConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    StorageConfig: InstanceStorageConfigTypeDef,  # (2)
+```
 
-- `InstanceId`: `str`
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-- `StorageConfig`:
-  [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
-
-<a id="associateinstancestorageconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
 ## AssociateInstanceStorageConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateInstanceStorageConfigResponseTypeDef
+
+def get_value() -> AssociateInstanceStorageConfigResponseTypeDef:
+    return {
+        "AssociationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateInstanceStorageConfigResponseTypeDef(TypedDict):
+    AssociationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AssociationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="associatelambdafunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AssociateLambdaFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateLambdaFunctionRequestRequestTypeDef
+
+def get_value() -> AssociateLambdaFunctionRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "FunctionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `FunctionArn`: `str`
-
-<a id="associatelexbotrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateLambdaFunctionRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    FunctionArn: str,
+```
 
 ## AssociateLexBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateLexBotRequestRequestTypeDef
+
+def get_value() -> AssociateLexBotRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "LexBot": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateLexBotRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LexBot: LexBotTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-
-<a id="associatequeuequickconnectsrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
 ## AssociateQueueQuickConnectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateQueueQuickConnectsRequestRequestTypeDef
+
+def get_value() -> AssociateQueueQuickConnectsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+        "QuickConnectIds": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-- `QuickConnectIds`: `Sequence`\[`str`\]
-
-<a id="associateroutingprofilequeuesrequestrequesttypedef"></a>
+```python title="Definition"
+class AssociateQueueQuickConnectsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    QuickConnectIds: Sequence[str],
+```
 
 ## AssociateRoutingProfileQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateRoutingProfileQueuesRequestRequestTypeDef
+
+def get_value() -> AssociateRoutingProfileQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+        "QueueConfigs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateRoutingProfileQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueConfigs: Sequence[RoutingProfileQueueConfigTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-
-<a id="associatesecuritykeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
 ## AssociateSecurityKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateSecurityKeyRequestRequestTypeDef
+
+def get_value() -> AssociateSecurityKeyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Key": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `Key`: `str`
-
-<a id="associatesecuritykeyresponsetypedef"></a>
+```python title="Definition"
+class AssociateSecurityKeyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Key: str,
+```
 
 ## AssociateSecurityKeyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AssociateSecurityKeyResponseTypeDef
+
+def get_value() -> AssociateSecurityKeyResponseTypeDef:
+    return {
+        "AssociationId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class AssociateSecurityKeyResponseTypeDef(TypedDict):
+    AssociationId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AssociationId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="attachmentreferencetypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## AttachmentReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AttachmentReferenceTypeDef
+
+def get_value() -> AttachmentReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttachmentReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+    Status: NotRequired[ReferenceStatusType],  # (1)
+```
 
-- `Name`: `str`
-- `Value`: `str`
-- `Status`: [ReferenceStatusType](./literals.md#referencestatustype)
-
-<a id="attributetypedef"></a>
-
+1. See [:material-code-brackets: ReferenceStatusType](./literals.md#referencestatustype) 
 ## AttributeTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import AttributeTypeDef
+
+def get_value() -> AttributeTypeDef:
+    return {
+        "AttributeType": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class AttributeTypeDef(TypedDict):
+    AttributeType: NotRequired[InstanceAttributeTypeType],  # (1)
+    Value: NotRequired[str],
+```
 
-- `AttributeType`:
-  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
-- `Value`: `str`
-
-<a id="chatmessagetypedef"></a>
-
+1. See [:material-code-brackets: InstanceAttributeTypeType](./literals.md#instanceattributetypetype) 
 ## ChatMessageTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ChatMessageTypeDef
+
+def get_value() -> ChatMessageTypeDef:
+    return {
+        "ContentType": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `ContentType`: `str`
-- `Content`: `str`
-
-<a id="chatstreamingconfigurationtypedef"></a>
+```python title="Definition"
+class ChatMessageTypeDef(TypedDict):
+    ContentType: str,
+    Content: str,
+```
 
 ## ChatStreamingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ChatStreamingConfigurationTypeDef
+
+def get_value() -> ChatStreamingConfigurationTypeDef:
+    return {
+        "StreamingEndpointArn": ...,
+    }
 ```
 
-Required fields:
-
-- `StreamingEndpointArn`: `str`
-
-<a id="contactflowmodulesummarytypedef"></a>
+```python title="Definition"
+class ChatStreamingConfigurationTypeDef(TypedDict):
+    StreamingEndpointArn: str,
+```
 
 ## ContactFlowModuleSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ContactFlowModuleSummaryTypeDef
+
+def get_value() -> ContactFlowModuleSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactFlowModuleSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    State: NotRequired[ContactFlowModuleStateType],  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `State`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
-
-<a id="contactflowmoduletypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
 ## ContactFlowModuleTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ContactFlowModuleTypeDef
+
+def get_value() -> ContactFlowModuleTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactFlowModuleTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Content: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[ContactFlowModuleStateType],  # (1)
+    Status: NotRequired[ContactFlowModuleStatusType],  # (2)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Content`: `str`
-- `Description`: `str`
-- `State`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
-- `Status`:
-  [ContactFlowModuleStatusType](./literals.md#contactflowmodulestatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="contactflowsummarytypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
+2. See [:material-code-brackets: ContactFlowModuleStatusType](./literals.md#contactflowmodulestatustype) 
 ## ContactFlowSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ContactFlowSummaryTypeDef
+
+def get_value() -> ContactFlowSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactFlowSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    ContactFlowType: NotRequired[ContactFlowTypeType],  # (1)
+    ContactFlowState: NotRequired[ContactFlowStateType],  # (2)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `ContactFlowType`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
-- `ContactFlowState`:
-  [ContactFlowStateType](./literals.md#contactflowstatetype)
-
-<a id="contactflowtypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-brackets: ContactFlowStateType](./literals.md#contactflowstatetype) 
 ## ContactFlowTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ContactFlowTypeDef
+
+def get_value() -> ContactFlowTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactFlowTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    Name: NotRequired[str],
+    Type: NotRequired[ContactFlowTypeType],  # (1)
+    State: NotRequired[ContactFlowStateType],  # (2)
+    Description: NotRequired[str],
+    Content: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `Name`: `str`
-- `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
-- `State`: [ContactFlowStateType](./literals.md#contactflowstatetype)
-- `Description`: `str`
-- `Content`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="contacttypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-brackets: ContactFlowStateType](./literals.md#contactflowstatetype) 
 ## ContactTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ContactTypeDef
+
+def get_value() -> ContactTypeDef:
+    return {
+        "Arn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ContactTypeDef(TypedDict):
+    Arn: NotRequired[str],
+    Id: NotRequired[str],
+    InitialContactId: NotRequired[str],
+    PreviousContactId: NotRequired[str],
+    InitiationMethod: NotRequired[ContactInitiationMethodType],  # (1)
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    Channel: NotRequired[ChannelType],  # (2)
+    QueueInfo: NotRequired[QueueInfoTypeDef],  # (3)
+    AgentInfo: NotRequired[AgentInfoTypeDef],  # (4)
+    InitiationTimestamp: NotRequired[datetime],
+    DisconnectTimestamp: NotRequired[datetime],
+    LastUpdateTimestamp: NotRequired[datetime],
+    ScheduledTimestamp: NotRequired[datetime],
+```
 
-- `Arn`: `str`
-- `Id`: `str`
-- `InitialContactId`: `str`
-- `PreviousContactId`: `str`
-- `InitiationMethod`:
-  [ContactInitiationMethodType](./literals.md#contactinitiationmethodtype)
-- `Name`: `str`
-- `Description`: `str`
-- `Channel`: [ChannelType](./literals.md#channeltype)
-- `QueueInfo`: [QueueInfoTypeDef](./type_defs.md#queueinfotypedef)
-- `AgentInfo`: [AgentInfoTypeDef](./type_defs.md#agentinfotypedef)
-- `InitiationTimestamp`: `datetime`
-- `DisconnectTimestamp`: `datetime`
-- `LastUpdateTimestamp`: `datetime`
-- `ScheduledTimestamp`: `datetime`
-
-<a id="createagentstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContactInitiationMethodType](./literals.md#contactinitiationmethodtype) 
+2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
+3. See [:material-code-braces: QueueInfoTypeDef](./type_defs.md#queueinfotypedef) 
+4. See [:material-code-braces: AgentInfoTypeDef](./type_defs.md#agentinfotypedef) 
 ## CreateAgentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateAgentStatusRequestRequestTypeDef
+
+def get_value() -> CreateAgentStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "State": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAgentStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    State: AgentStatusStateType,  # (1)
+    Description: NotRequired[str],
+    DisplayOrder: NotRequired[int],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
-
-Optional fields:
-
-- `Description`: `str`
-- `DisplayOrder`: `int`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createagentstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: AgentStatusStateType](./literals.md#agentstatusstatetype) 
 ## CreateAgentStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateAgentStatusResponseTypeDef
+
+def get_value() -> CreateAgentStatusResponseTypeDef:
+    return {
+        "AgentStatusARN": ...,
+        "AgentStatusId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateAgentStatusResponseTypeDef(TypedDict):
+    AgentStatusARN: str,
+    AgentStatusId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `AgentStatusARN`: `str`
-- `AgentStatusId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontactflowmodulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateContactFlowModuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateContactFlowModuleRequestRequestTypeDef
+
+def get_value() -> CreateContactFlowModuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `Name`: `str`
-- `Content`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-- `ClientToken`: `str`
-
-<a id="createcontactflowmoduleresponsetypedef"></a>
+```python title="Definition"
+class CreateContactFlowModuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    Content: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+    ClientToken: NotRequired[str],
+```
 
 ## CreateContactFlowModuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateContactFlowModuleResponseTypeDef
+
+def get_value() -> CreateContactFlowModuleResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactFlowModuleResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createcontactflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateContactFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateContactFlowRequestRequestTypeDef
+
+def get_value() -> CreateContactFlowRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "Type": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactFlowRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    Type: ContactFlowTypeType,  # (1)
+    Content: str,
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `Type`: [ContactFlowTypeType](./literals.md#contactflowtypetype)
-- `Content`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createcontactflowresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
 ## CreateContactFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateContactFlowResponseTypeDef
+
+def get_value() -> CreateContactFlowResponseTypeDef:
+    return {
+        "ContactFlowId": ...,
+        "ContactFlowArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateContactFlowResponseTypeDef(TypedDict):
+    ContactFlowId: str,
+    ContactFlowArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactFlowId`: `str`
-- `ContactFlowArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createhoursofoperationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateHoursOfOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateHoursOfOperationRequestRequestTypeDef
+
+def get_value() -> CreateHoursOfOperationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "TimeZone": ...,
+        "Config": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHoursOfOperationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    TimeZone: str,
+    Config: Sequence[HoursOfOperationConfigTypeDef],  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `TimeZone`: `str`
-- `Config`:
-  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createhoursofoperationresponsetypedef"></a>
-
+1. See [:material-code-braces: HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef) 
 ## CreateHoursOfOperationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateHoursOfOperationResponseTypeDef
+
+def get_value() -> CreateHoursOfOperationResponseTypeDef:
+    return {
+        "HoursOfOperationId": ...,
+        "HoursOfOperationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateHoursOfOperationResponseTypeDef(TypedDict):
+    HoursOfOperationId: str,
+    HoursOfOperationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HoursOfOperationId`: `str`
-- `HoursOfOperationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateInstanceRequestRequestTypeDef
+
+def get_value() -> CreateInstanceRequestRequestTypeDef:
+    return {
+        "IdentityManagementType": ...,
+        "InboundCallsEnabled": ...,
+        "OutboundCallsEnabled": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceRequestRequestTypeDef(TypedDict):
+    IdentityManagementType: DirectoryTypeType,  # (1)
+    InboundCallsEnabled: bool,
+    OutboundCallsEnabled: bool,
+    ClientToken: NotRequired[str],
+    InstanceAlias: NotRequired[str],
+    DirectoryId: NotRequired[str],
+```
 
-- `IdentityManagementType`:
-  [DirectoryTypeType](./literals.md#directorytypetype)
-- `InboundCallsEnabled`: `bool`
-- `OutboundCallsEnabled`: `bool`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `InstanceAlias`: `str`
-- `DirectoryId`: `str`
-
-<a id="createinstanceresponsetypedef"></a>
-
+1. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
 ## CreateInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateInstanceResponseTypeDef
+
+def get_value() -> CreateInstanceResponseTypeDef:
+    return {
+        "Id": ...,
+        "Arn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateInstanceResponseTypeDef(TypedDict):
+    Id: str,
+    Arn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createintegrationassociationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateIntegrationAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateIntegrationAssociationRequestRequestTypeDef
+
+def get_value() -> CreateIntegrationAssociationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationType": ...,
+        "IntegrationArn": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntegrationAssociationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationType: IntegrationTypeType,  # (1)
+    IntegrationArn: str,
+    SourceApplicationUrl: NotRequired[str],
+    SourceApplicationName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-- `IntegrationArn`: `str`
-
-Optional fields:
-
-- `SourceApplicationUrl`: `str`
-- `SourceApplicationName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createintegrationassociationresponsetypedef"></a>
-
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## CreateIntegrationAssociationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateIntegrationAssociationResponseTypeDef
+
+def get_value() -> CreateIntegrationAssociationResponseTypeDef:
+    return {
+        "IntegrationAssociationId": ...,
+        "IntegrationAssociationArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateIntegrationAssociationResponseTypeDef(TypedDict):
+    IntegrationAssociationId: str,
+    IntegrationAssociationArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `IntegrationAssociationId`: `str`
-- `IntegrationAssociationArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createqueuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateQueueRequestRequestTypeDef
+
+def get_value() -> CreateQueueRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQueueRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    HoursOfOperationId: str,
+    Description: NotRequired[str],
+    OutboundCallerConfig: NotRequired[OutboundCallerConfigTypeDef],  # (1)
+    MaxContacts: NotRequired[int],
+    QuickConnectIds: NotRequired[Sequence[str]],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `HoursOfOperationId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `OutboundCallerConfig`:
-  [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
-- `MaxContacts`: `int`
-- `QuickConnectIds`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createqueueresponsetypedef"></a>
-
+1. See [:material-code-braces: OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef) 
 ## CreateQueueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateQueueResponseTypeDef
+
+def get_value() -> CreateQueueResponseTypeDef:
+    return {
+        "QueueArn": ...,
+        "QueueId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQueueResponseTypeDef(TypedDict):
+    QueueArn: str,
+    QueueId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `QueueArn`: `str`
-- `QueueId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createquickconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateQuickConnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateQuickConnectRequestRequestTypeDef
+
+def get_value() -> CreateQuickConnectRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "QuickConnectConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQuickConnectRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    QuickConnectConfig: QuickConnectConfigTypeDef,  # (1)
+    Description: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `QuickConnectConfig`:
-  [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
-
-Optional fields:
-
-- `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createquickconnectresponsetypedef"></a>
-
+1. See [:material-code-braces: QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef) 
 ## CreateQuickConnectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateQuickConnectResponseTypeDef
+
+def get_value() -> CreateQuickConnectResponseTypeDef:
+    return {
+        "QuickConnectARN": ...,
+        "QuickConnectId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateQuickConnectResponseTypeDef(TypedDict):
+    QuickConnectARN: str,
+    QuickConnectId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `QuickConnectARN`: `str`
-- `QuickConnectId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createroutingprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateRoutingProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateRoutingProfileRequestRequestTypeDef
+
+def get_value() -> CreateRoutingProfileRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Name": ...,
+        "Description": ...,
+        "DefaultOutboundQueueId": ...,
+        "MediaConcurrencies": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoutingProfileRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Name: str,
+    Description: str,
+    DefaultOutboundQueueId: str,
+    MediaConcurrencies: Sequence[MediaConcurrencyTypeDef],  # (1)
+    QueueConfigs: NotRequired[Sequence[RoutingProfileQueueConfigTypeDef]],  # (2)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `DefaultOutboundQueueId`: `str`
-- `MediaConcurrencies`:
-  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
-
-Optional fields:
-
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createroutingprofileresponsetypedef"></a>
-
+1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
+2. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
 ## CreateRoutingProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateRoutingProfileResponseTypeDef
+
+def get_value() -> CreateRoutingProfileResponseTypeDef:
+    return {
+        "RoutingProfileArn": ...,
+        "RoutingProfileId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateRoutingProfileResponseTypeDef(TypedDict):
+    RoutingProfileArn: str,
+    RoutingProfileId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `RoutingProfileArn`: `str`
-- `RoutingProfileId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createsecurityprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateSecurityProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateSecurityProfileRequestRequestTypeDef
+
+def get_value() -> CreateSecurityProfileRequestRequestTypeDef:
+    return {
+        "SecurityProfileName": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecurityProfileName`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Permissions`: `Sequence`\[`str`\]
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createsecurityprofileresponsetypedef"></a>
+```python title="Definition"
+class CreateSecurityProfileRequestRequestTypeDef(TypedDict):
+    SecurityProfileName: str,
+    InstanceId: str,
+    Description: NotRequired[str],
+    Permissions: NotRequired[Sequence[str]],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateSecurityProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateSecurityProfileResponseTypeDef
+
+def get_value() -> CreateSecurityProfileResponseTypeDef:
+    return {
+        "SecurityProfileId": ...,
+        "SecurityProfileArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateSecurityProfileResponseTypeDef(TypedDict):
+    SecurityProfileId: str,
+    SecurityProfileArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `SecurityProfileId`: `str`
-- `SecurityProfileArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createusecaserequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUseCaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUseCaseRequestRequestTypeDef
+
+def get_value() -> CreateUseCaseRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationAssociationId": ...,
+        "UseCaseType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUseCaseRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    UseCaseType: UseCaseTypeType,  # (1)
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `IntegrationAssociationId`: `str`
-- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createusecaseresponsetypedef"></a>
-
+1. See [:material-code-brackets: UseCaseTypeType](./literals.md#usecasetypetype) 
 ## CreateUseCaseResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUseCaseResponseTypeDef
+
+def get_value() -> CreateUseCaseResponseTypeDef:
+    return {
+        "UseCaseId": ...,
+        "UseCaseArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUseCaseResponseTypeDef(TypedDict):
+    UseCaseId: str,
+    UseCaseArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UseCaseId`: `str`
-- `UseCaseArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserhierarchygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserHierarchyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupRequestRequestTypeDef
+
+def get_value() -> CreateUserHierarchyGroupRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `ParentGroupId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createuserhierarchygroupresponsetypedef"></a>
+```python title="Definition"
+class CreateUserHierarchyGroupRequestRequestTypeDef(TypedDict):
+    Name: str,
+    InstanceId: str,
+    ParentGroupId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
 ## CreateUserHierarchyGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUserHierarchyGroupResponseTypeDef
+
+def get_value() -> CreateUserHierarchyGroupResponseTypeDef:
+    return {
+        "HierarchyGroupId": ...,
+        "HierarchyGroupArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserHierarchyGroupResponseTypeDef(TypedDict):
+    HierarchyGroupId: str,
+    HierarchyGroupArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `HierarchyGroupId`: `str`
-- `HierarchyGroupArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUserRequestRequestTypeDef
+
+def get_value() -> CreateUserRequestRequestTypeDef:
+    return {
+        "Username": ...,
+        "PhoneConfig": ...,
+        "SecurityProfileIds": ...,
+        "RoutingProfileId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserRequestRequestTypeDef(TypedDict):
+    Username: str,
+    PhoneConfig: UserPhoneConfigTypeDef,  # (1)
+    SecurityProfileIds: Sequence[str],
+    RoutingProfileId: str,
+    InstanceId: str,
+    Password: NotRequired[str],
+    IdentityInfo: NotRequired[UserIdentityInfoTypeDef],  # (2)
+    DirectoryUserId: NotRequired[str],
+    HierarchyGroupId: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `Username`: `str`
-- `PhoneConfig`:
-  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
-- `SecurityProfileIds`: `Sequence`\[`str`\]
-- `RoutingProfileId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `Password`: `str`
-- `IdentityInfo`:
-  [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-- `DirectoryUserId`: `str`
-- `HierarchyGroupId`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createuserresponsetypedef"></a>
-
+1. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
+2. See [:material-code-braces: UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef) 
 ## CreateUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateUserResponseTypeDef
+
+def get_value() -> CreateUserResponseTypeDef:
+    return {
+        "UserId": ...,
+        "UserArn": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateUserResponseTypeDef(TypedDict):
+    UserId: str,
+    UserArn: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `UserId`: `str`
-- `UserArn`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createvocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CreateVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateVocabularyRequestRequestTypeDef
+
+def get_value() -> CreateVocabularyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "VocabularyName": ...,
+        "LanguageCode": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    VocabularyName: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    Content: str,
+    ClientToken: NotRequired[str],
+    Tags: NotRequired[Mapping[str, str]],
+```
 
-- `InstanceId`: `str`
-- `VocabularyName`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `Content`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createvocabularyresponsetypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 ## CreateVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CreateVocabularyResponseTypeDef
+
+def get_value() -> CreateVocabularyResponseTypeDef:
+    return {
+        "VocabularyArn": ...,
+        "VocabularyId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class CreateVocabularyResponseTypeDef(TypedDict):
+    VocabularyArn: str,
+    VocabularyId: str,
+    State: VocabularyStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularyArn`: `str`
-- `VocabularyId`: `str`
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="credentialstypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## CredentialsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CredentialsTypeDef
+
+def get_value() -> CredentialsTypeDef:
+    return {
+        "AccessToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `AccessToken`: `str`
-- `AccessTokenExpiration`: `datetime`
-- `RefreshToken`: `str`
-- `RefreshTokenExpiration`: `datetime`
-
-<a id="currentmetricdatatypedef"></a>
+```python title="Definition"
+class CredentialsTypeDef(TypedDict):
+    AccessToken: NotRequired[str],
+    AccessTokenExpiration: NotRequired[datetime],
+    RefreshToken: NotRequired[str],
+    RefreshTokenExpiration: NotRequired[datetime],
+```
 
 ## CurrentMetricDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CurrentMetricDataTypeDef
+
+def get_value() -> CurrentMetricDataTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CurrentMetricDataTypeDef(TypedDict):
+    Metric: NotRequired[CurrentMetricTypeDef],  # (1)
+    Value: NotRequired[float],
+```
 
-- `Metric`: [CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)
-- `Value`: `float`
-
-<a id="currentmetricresulttypedef"></a>
-
+1. See [:material-code-braces: CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef) 
 ## CurrentMetricResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CurrentMetricResultTypeDef
+
+def get_value() -> CurrentMetricResultTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CurrentMetricResultTypeDef(TypedDict):
+    Dimensions: NotRequired[DimensionsTypeDef],  # (1)
+    Collections: NotRequired[List[CurrentMetricDataTypeDef]],  # (2)
+```
 
-- `Dimensions`: [DimensionsTypeDef](./type_defs.md#dimensionstypedef)
-- `Collections`:
-  `List`\[[CurrentMetricDataTypeDef](./type_defs.md#currentmetricdatatypedef)\]
-
-<a id="currentmetrictypedef"></a>
-
+1. See [:material-code-braces: DimensionsTypeDef](./type_defs.md#dimensionstypedef) 
+2. See [:material-code-braces: CurrentMetricDataTypeDef](./type_defs.md#currentmetricdatatypedef) 
 ## CurrentMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import CurrentMetricTypeDef
+
+def get_value() -> CurrentMetricTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class CurrentMetricTypeDef(TypedDict):
+    Name: NotRequired[CurrentMetricNameType],  # (1)
+    Unit: NotRequired[UnitType],  # (2)
+```
 
-- `Name`: [CurrentMetricNameType](./literals.md#currentmetricnametype)
-- `Unit`: [UnitType](./literals.md#unittype)
-
-<a id="defaultvocabularytypedef"></a>
-
+1. See [:material-code-brackets: CurrentMetricNameType](./literals.md#currentmetricnametype) 
+2. See [:material-code-brackets: UnitType](./literals.md#unittype) 
 ## DefaultVocabularyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DefaultVocabularyTypeDef
+
+def get_value() -> DefaultVocabularyTypeDef:
+    return {
+        "InstanceId": ...,
+        "LanguageCode": ...,
+        "VocabularyId": ...,
+        "VocabularyName": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DefaultVocabularyTypeDef(TypedDict):
+    InstanceId: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    VocabularyId: str,
+    VocabularyName: str,
+```
 
-- `InstanceId`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `VocabularyId`: `str`
-- `VocabularyName`: `str`
-
-<a id="deletecontactflowmodulerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 ## DeleteContactFlowModuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteContactFlowModuleRequestRequestTypeDef
+
+def get_value() -> DeleteContactFlowModuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowModuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowModuleId`: `str`
-
-<a id="deletecontactflowrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContactFlowModuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowModuleId: str,
+```
 
 ## DeleteContactFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteContactFlowRequestRequestTypeDef
+
+def get_value() -> DeleteContactFlowRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-
-<a id="deletehoursofoperationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteContactFlowRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+```
 
 ## DeleteHoursOfOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteHoursOfOperationRequestRequestTypeDef
+
+def get_value() -> DeleteHoursOfOperationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `HoursOfOperationId`: `str`
-
-<a id="deleteinstancerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteHoursOfOperationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    HoursOfOperationId: str,
+```
 
 ## DeleteInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteInstanceRequestRequestTypeDef
+
+def get_value() -> DeleteInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="deleteintegrationassociationrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## DeleteIntegrationAssociationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteIntegrationAssociationRequestRequestTypeDef
+
+def get_value() -> DeleteIntegrationAssociationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationAssociationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `IntegrationAssociationId`: `str`
-
-<a id="deletequickconnectrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteIntegrationAssociationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationAssociationId: str,
+```
 
 ## DeleteQuickConnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteQuickConnectRequestRequestTypeDef
+
+def get_value() -> DeleteQuickConnectRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QuickConnectId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QuickConnectId`: `str`
-
-<a id="deletesecurityprofilerequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteQuickConnectRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QuickConnectId: str,
+```
 
 ## DeleteSecurityProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteSecurityProfileRequestRequestTypeDef
+
+def get_value() -> DeleteSecurityProfileRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "SecurityProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `SecurityProfileId`: `str`
-
-<a id="deleteusecaserequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteSecurityProfileRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    SecurityProfileId: str,
+```
 
 ## DeleteUseCaseRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteUseCaseRequestRequestTypeDef
+
+def get_value() -> DeleteUseCaseRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationAssociationId": ...,
+        "UseCaseId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `IntegrationAssociationId`: `str`
-- `UseCaseId`: `str`
-
-<a id="deleteuserhierarchygrouprequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUseCaseRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    UseCaseId: str,
+```
 
 ## DeleteUserHierarchyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteUserHierarchyGroupRequestRequestTypeDef
+
+def get_value() -> DeleteUserHierarchyGroupRequestRequestTypeDef:
+    return {
+        "HierarchyGroupId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `HierarchyGroupId`: `str`
-- `InstanceId`: `str`
-
-<a id="deleteuserrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserHierarchyGroupRequestRequestTypeDef(TypedDict):
+    HierarchyGroupId: str,
+    InstanceId: str,
+```
 
 ## DeleteUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteUserRequestRequestTypeDef
+
+def get_value() -> DeleteUserRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "UserId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `UserId`: `str`
-
-<a id="deletevocabularyrequestrequesttypedef"></a>
+```python title="Definition"
+class DeleteUserRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    UserId: str,
+```
 
 ## DeleteVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteVocabularyRequestRequestTypeDef
+
+def get_value() -> DeleteVocabularyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "VocabularyId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `VocabularyId`: `str`
-
-<a id="deletevocabularyresponsetypedef"></a>
+```python title="Definition"
+class DeleteVocabularyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    VocabularyId: str,
+```
 
 ## DeleteVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DeleteVocabularyResponseTypeDef
+
+def get_value() -> DeleteVocabularyResponseTypeDef:
+    return {
+        "VocabularyArn": ...,
+        "VocabularyId": ...,
+        "State": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DeleteVocabularyResponseTypeDef(TypedDict):
+    VocabularyArn: str,
+    VocabularyId: str,
+    State: VocabularyStateType,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularyArn`: `str`
-- `VocabularyId`: `str`
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeagentstatusrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeAgentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeAgentStatusRequestRequestTypeDef
+
+def get_value() -> DescribeAgentStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AgentStatusId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `AgentStatusId`: `str`
-
-<a id="describeagentstatusresponsetypedef"></a>
+```python title="Definition"
+class DescribeAgentStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AgentStatusId: str,
+```
 
 ## DescribeAgentStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeAgentStatusResponseTypeDef
+
+def get_value() -> DescribeAgentStatusResponseTypeDef:
+    return {
+        "AgentStatus": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeAgentStatusResponseTypeDef(TypedDict):
+    AgentStatus: AgentStatusTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `AgentStatus`: [AgentStatusTypeDef](./type_defs.md#agentstatustypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontactflowmodulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AgentStatusTypeDef](./type_defs.md#agentstatustypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContactFlowModuleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactFlowModuleRequestRequestTypeDef
+
+def get_value() -> DescribeContactFlowModuleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowModuleId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowModuleId`: `str`
-
-<a id="describecontactflowmoduleresponsetypedef"></a>
+```python title="Definition"
+class DescribeContactFlowModuleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowModuleId: str,
+```
 
 ## DescribeContactFlowModuleResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactFlowModuleResponseTypeDef
+
+def get_value() -> DescribeContactFlowModuleResponseTypeDef:
+    return {
+        "ContactFlowModule": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContactFlowModuleResponseTypeDef(TypedDict):
+    ContactFlowModule: ContactFlowModuleTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContactFlowModule`:
-  [ContactFlowModuleTypeDef](./type_defs.md#contactflowmoduletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontactflowrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactFlowModuleTypeDef](./type_defs.md#contactflowmoduletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContactFlowRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactFlowRequestRequestTypeDef
+
+def get_value() -> DescribeContactFlowRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-
-<a id="describecontactflowresponsetypedef"></a>
+```python title="Definition"
+class DescribeContactFlowRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+```
 
 ## DescribeContactFlowResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactFlowResponseTypeDef
+
+def get_value() -> DescribeContactFlowResponseTypeDef:
+    return {
+        "ContactFlow": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContactFlowResponseTypeDef(TypedDict):
+    ContactFlow: ContactFlowTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContactFlow`: [ContactFlowTypeDef](./type_defs.md#contactflowtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactFlowTypeDef](./type_defs.md#contactflowtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactRequestRequestTypeDef
+
+def get_value() -> DescribeContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-
-<a id="describecontactresponsetypedef"></a>
+```python title="Definition"
+class DescribeContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+```
 
 ## DescribeContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeContactResponseTypeDef
+
+def get_value() -> DescribeContactResponseTypeDef:
+    return {
+        "Contact": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeContactResponseTypeDef(TypedDict):
+    Contact: ContactTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Contact`: [ContactTypeDef](./type_defs.md#contacttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describehoursofoperationrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ContactTypeDef](./type_defs.md#contacttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeHoursOfOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeHoursOfOperationRequestRequestTypeDef
+
+def get_value() -> DescribeHoursOfOperationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `HoursOfOperationId`: `str`
-
-<a id="describehoursofoperationresponsetypedef"></a>
+```python title="Definition"
+class DescribeHoursOfOperationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    HoursOfOperationId: str,
+```
 
 ## DescribeHoursOfOperationResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeHoursOfOperationResponseTypeDef
+
+def get_value() -> DescribeHoursOfOperationResponseTypeDef:
+    return {
+        "HoursOfOperation": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeHoursOfOperationResponseTypeDef(TypedDict):
+    HoursOfOperation: HoursOfOperationTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HoursOfOperation`:
-  [HoursOfOperationTypeDef](./type_defs.md#hoursofoperationtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinstanceattributerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HoursOfOperationTypeDef](./type_defs.md#hoursofoperationtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceAttributeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceAttributeRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceAttributeRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AttributeType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceAttributeRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AttributeType: InstanceAttributeTypeType,  # (1)
+```
 
-- `InstanceId`: `str`
-- `AttributeType`:
-  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
-
-<a id="describeinstanceattributeresponsetypedef"></a>
-
+1. See [:material-code-brackets: InstanceAttributeTypeType](./literals.md#instanceattributetypetype) 
 ## DescribeInstanceAttributeResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceAttributeResponseTypeDef
+
+def get_value() -> DescribeInstanceAttributeResponseTypeDef:
+    return {
+        "Attribute": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceAttributeResponseTypeDef(TypedDict):
+    Attribute: AttributeTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Attribute`: [AttributeTypeDef](./type_defs.md#attributetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinstancerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="describeinstanceresponsetypedef"></a>
+```python title="Definition"
+class DescribeInstanceRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## DescribeInstanceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceResponseTypeDef
+
+def get_value() -> DescribeInstanceResponseTypeDef:
+    return {
+        "Instance": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceResponseTypeDef(TypedDict):
+    Instance: InstanceTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Instance`: [InstanceTypeDef](./type_defs.md#instancetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeinstancestorageconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceTypeDef](./type_defs.md#instancetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeInstanceStorageConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigRequestRequestTypeDef
+
+def get_value() -> DescribeInstanceStorageConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AssociationId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceStorageConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+```
 
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-
-<a id="describeinstancestorageconfigresponsetypedef"></a>
-
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
 ## DescribeInstanceStorageConfigResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeInstanceStorageConfigResponseTypeDef
+
+def get_value() -> DescribeInstanceStorageConfigResponseTypeDef:
+    return {
+        "StorageConfig": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeInstanceStorageConfigResponseTypeDef(TypedDict):
+    StorageConfig: InstanceStorageConfigTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StorageConfig`:
-  [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describequeuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeQueueRequestRequestTypeDef
+
+def get_value() -> DescribeQueueRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-
-<a id="describequeueresponsetypedef"></a>
+```python title="Definition"
+class DescribeQueueRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+```
 
 ## DescribeQueueResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeQueueResponseTypeDef
+
+def get_value() -> DescribeQueueResponseTypeDef:
+    return {
+        "Queue": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeQueueResponseTypeDef(TypedDict):
+    Queue: QueueTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describequickconnectrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueueTypeDef](./type_defs.md#queuetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeQuickConnectRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeQuickConnectRequestRequestTypeDef
+
+def get_value() -> DescribeQuickConnectRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QuickConnectId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QuickConnectId`: `str`
-
-<a id="describequickconnectresponsetypedef"></a>
+```python title="Definition"
+class DescribeQuickConnectRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QuickConnectId: str,
+```
 
 ## DescribeQuickConnectResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeQuickConnectResponseTypeDef
+
+def get_value() -> DescribeQuickConnectResponseTypeDef:
+    return {
+        "QuickConnect": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeQuickConnectResponseTypeDef(TypedDict):
+    QuickConnect: QuickConnectTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QuickConnect`: [QuickConnectTypeDef](./type_defs.md#quickconnecttypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeroutingprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QuickConnectTypeDef](./type_defs.md#quickconnecttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeRoutingProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeRoutingProfileRequestRequestTypeDef
+
+def get_value() -> DescribeRoutingProfileRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-
-<a id="describeroutingprofileresponsetypedef"></a>
+```python title="Definition"
+class DescribeRoutingProfileRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+```
 
 ## DescribeRoutingProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeRoutingProfileResponseTypeDef
+
+def get_value() -> DescribeRoutingProfileResponseTypeDef:
+    return {
+        "RoutingProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeRoutingProfileResponseTypeDef(TypedDict):
+    RoutingProfile: RoutingProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RoutingProfile`:
-  [RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describesecurityprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoutingProfileTypeDef](./type_defs.md#routingprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeSecurityProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeSecurityProfileRequestRequestTypeDef
+
+def get_value() -> DescribeSecurityProfileRequestRequestTypeDef:
+    return {
+        "SecurityProfileId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecurityProfileId`: `str`
-- `InstanceId`: `str`
-
-<a id="describesecurityprofileresponsetypedef"></a>
+```python title="Definition"
+class DescribeSecurityProfileRequestRequestTypeDef(TypedDict):
+    SecurityProfileId: str,
+    InstanceId: str,
+```
 
 ## DescribeSecurityProfileResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeSecurityProfileResponseTypeDef
+
+def get_value() -> DescribeSecurityProfileResponseTypeDef:
+    return {
+        "SecurityProfile": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeSecurityProfileResponseTypeDef(TypedDict):
+    SecurityProfile: SecurityProfileTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityProfile`:
-  [SecurityProfileTypeDef](./type_defs.md#securityprofiletypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserhierarchygrouprequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SecurityProfileTypeDef](./type_defs.md#securityprofiletypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserHierarchyGroupRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupRequestRequestTypeDef
+
+def get_value() -> DescribeUserHierarchyGroupRequestRequestTypeDef:
+    return {
+        "HierarchyGroupId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `HierarchyGroupId`: `str`
-- `InstanceId`: `str`
-
-<a id="describeuserhierarchygroupresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserHierarchyGroupRequestRequestTypeDef(TypedDict):
+    HierarchyGroupId: str,
+    InstanceId: str,
+```
 
 ## DescribeUserHierarchyGroupResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyGroupResponseTypeDef
+
+def get_value() -> DescribeUserHierarchyGroupResponseTypeDef:
+    return {
+        "HierarchyGroup": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserHierarchyGroupResponseTypeDef(TypedDict):
+    HierarchyGroup: HierarchyGroupTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HierarchyGroup`:
-  [HierarchyGroupTypeDef](./type_defs.md#hierarchygrouptypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserhierarchystructurerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HierarchyGroupTypeDef](./type_defs.md#hierarchygrouptypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserHierarchyStructureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureRequestRequestTypeDef
+
+def get_value() -> DescribeUserHierarchyStructureRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="describeuserhierarchystructureresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserHierarchyStructureRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## DescribeUserHierarchyStructureResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserHierarchyStructureResponseTypeDef
+
+def get_value() -> DescribeUserHierarchyStructureResponseTypeDef:
+    return {
+        "HierarchyStructure": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserHierarchyStructureResponseTypeDef(TypedDict):
+    HierarchyStructure: HierarchyStructureTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HierarchyStructure`:
-  [HierarchyStructureTypeDef](./type_defs.md#hierarchystructuretypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeuserrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HierarchyStructureTypeDef](./type_defs.md#hierarchystructuretypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeUserRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserRequestRequestTypeDef
+
+def get_value() -> DescribeUserRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-<a id="describeuserresponsetypedef"></a>
+```python title="Definition"
+class DescribeUserRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    InstanceId: str,
+```
 
 ## DescribeUserResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeUserResponseTypeDef
+
+def get_value() -> DescribeUserResponseTypeDef:
+    return {
+        "User": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeUserResponseTypeDef(TypedDict):
+    User: UserTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `User`: [UserTypeDef](./type_defs.md#usertypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describevocabularyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserTypeDef](./type_defs.md#usertypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DescribeVocabularyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeVocabularyRequestRequestTypeDef
+
+def get_value() -> DescribeVocabularyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "VocabularyId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `VocabularyId`: `str`
-
-<a id="describevocabularyresponsetypedef"></a>
+```python title="Definition"
+class DescribeVocabularyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    VocabularyId: str,
+```
 
 ## DescribeVocabularyResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DescribeVocabularyResponseTypeDef
+
+def get_value() -> DescribeVocabularyResponseTypeDef:
+    return {
+        "Vocabulary": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DescribeVocabularyResponseTypeDef(TypedDict):
+    Vocabulary: VocabularyTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Vocabulary`: [VocabularyTypeDef](./type_defs.md#vocabularytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="dimensionstypedef"></a>
-
+1. See [:material-code-braces: VocabularyTypeDef](./type_defs.md#vocabularytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## DimensionsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DimensionsTypeDef
+
+def get_value() -> DimensionsTypeDef:
+    return {
+        "Queue": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class DimensionsTypeDef(TypedDict):
+    Queue: NotRequired[QueueReferenceTypeDef],  # (1)
+    Channel: NotRequired[ChannelType],  # (2)
+```
 
-- `Queue`: [QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef)
-- `Channel`: [ChannelType](./literals.md#channeltype)
-
-<a id="disassociateapprovedoriginrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QueueReferenceTypeDef](./type_defs.md#queuereferencetypedef) 
+2. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## DisassociateApprovedOriginRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateApprovedOriginRequestRequestTypeDef
+
+def get_value() -> DisassociateApprovedOriginRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Origin": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `Origin`: `str`
-
-<a id="disassociatebotrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateApprovedOriginRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Origin: str,
+```
 
 ## DisassociateBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateBotRequestRequestTypeDef
+
+def get_value() -> DisassociateBotRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateBotRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LexBot: NotRequired[LexBotTypeDef],  # (1)
+    LexV2Bot: NotRequired[LexV2BotTypeDef],  # (2)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
-
-<a id="disassociateinstancestorageconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: LexV2BotTypeDef](./type_defs.md#lexv2bottypedef) 
 ## DisassociateInstanceStorageConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateInstanceStorageConfigRequestRequestTypeDef
+
+def get_value() -> DisassociateInstanceStorageConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AssociationId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateInstanceStorageConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+```
 
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-
-<a id="disassociatelambdafunctionrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
 ## DisassociateLambdaFunctionRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateLambdaFunctionRequestRequestTypeDef
+
+def get_value() -> DisassociateLambdaFunctionRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "FunctionArn": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `FunctionArn`: `str`
-
-<a id="disassociatelexbotrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateLambdaFunctionRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    FunctionArn: str,
+```
 
 ## DisassociateLexBotRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateLexBotRequestRequestTypeDef
+
+def get_value() -> DisassociateLexBotRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "BotName": ...,
+        "LexRegion": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `BotName`: `str`
-- `LexRegion`: `str`
-
-<a id="disassociatequeuequickconnectsrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateLexBotRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    BotName: str,
+    LexRegion: str,
+```
 
 ## DisassociateQueueQuickConnectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateQueueQuickConnectsRequestRequestTypeDef
+
+def get_value() -> DisassociateQueueQuickConnectsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+        "QuickConnectIds": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-- `QuickConnectIds`: `Sequence`\[`str`\]
-
-<a id="disassociateroutingprofilequeuesrequestrequesttypedef"></a>
+```python title="Definition"
+class DisassociateQueueQuickConnectsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    QuickConnectIds: Sequence[str],
+```
 
 ## DisassociateRoutingProfileQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateRoutingProfileQueuesRequestRequestTypeDef
+
+def get_value() -> DisassociateRoutingProfileQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+        "QueueReferences": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class DisassociateRoutingProfileQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueReferences: Sequence[RoutingProfileQueueReferenceTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-- `QueueReferences`:
-  `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
-
-<a id="disassociatesecuritykeyrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef) 
 ## DisassociateSecurityKeyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import DisassociateSecurityKeyRequestRequestTypeDef
+
+def get_value() -> DisassociateSecurityKeyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AssociationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-
-<a id="encryptionconfigtypedef"></a>
+```python title="Definition"
+class DisassociateSecurityKeyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AssociationId: str,
+```
 
 ## EncryptionConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import EncryptionConfigTypeDef
+
+def get_value() -> EncryptionConfigTypeDef:
+    return {
+        "EncryptionType": ...,
+        "KeyId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class EncryptionConfigTypeDef(TypedDict):
+    EncryptionType: EncryptionTypeType,  # (1)
+    KeyId: str,
+```
 
-- `EncryptionType`: `Literal['KMS']` (see
-  [EncryptionTypeType](./literals.md#encryptiontypetype))
-- `KeyId`: `str`
-
-<a id="filterstypedef"></a>
-
+1. See [:material-code-brackets: EncryptionTypeType](./literals.md#encryptiontypetype) 
 ## FiltersTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import FiltersTypeDef
+
+def get_value() -> FiltersTypeDef:
+    return {
+        "Queues": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class FiltersTypeDef(TypedDict):
+    Queues: NotRequired[Sequence[str]],
+    Channels: NotRequired[Sequence[ChannelType]],  # (1)
+```
 
-- `Queues`: `Sequence`\[`str`\]
-- `Channels`: `Sequence`\[[ChannelType](./literals.md#channeltype)\]
-
-<a id="getcontactattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## GetContactAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetContactAttributesRequestRequestTypeDef
+
+def get_value() -> GetContactAttributesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "InitialContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `InitialContactId`: `str`
-
-<a id="getcontactattributesresponsetypedef"></a>
+```python title="Definition"
+class GetContactAttributesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    InitialContactId: str,
+```
 
 ## GetContactAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetContactAttributesResponseTypeDef
+
+def get_value() -> GetContactAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetContactAttributesResponseTypeDef(TypedDict):
+    Attributes: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Attributes`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getcurrentmetricdatarequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetCurrentMetricDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetCurrentMetricDataRequestRequestTypeDef
+
+def get_value() -> GetCurrentMetricDataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "Filters": ...,
+        "CurrentMetrics": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCurrentMetricDataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    Filters: FiltersTypeDef,  # (1)
+    CurrentMetrics: Sequence[CurrentMetricTypeDef],  # (2)
+    Groupings: NotRequired[Sequence[GroupingType]],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
-- `CurrentMetrics`:
-  `Sequence`\[[CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef)\]
-
-Optional fields:
-
-- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getcurrentmetricdataresponsetypedef"></a>
-
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: CurrentMetricTypeDef](./type_defs.md#currentmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
 ## GetCurrentMetricDataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetCurrentMetricDataResponseTypeDef
+
+def get_value() -> GetCurrentMetricDataResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MetricResults": ...,
+        "DataSnapshotTime": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetCurrentMetricDataResponseTypeDef(TypedDict):
+    NextToken: str,
+    MetricResults: List[CurrentMetricResultTypeDef],  # (1)
+    DataSnapshotTime: datetime,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MetricResults`:
-  `List`\[[CurrentMetricResultTypeDef](./type_defs.md#currentmetricresulttypedef)\]
-- `DataSnapshotTime`: `datetime`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getfederationtokenrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: CurrentMetricResultTypeDef](./type_defs.md#currentmetricresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## GetFederationTokenRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetFederationTokenRequestRequestTypeDef
+
+def get_value() -> GetFederationTokenRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-<a id="getfederationtokenresponsetypedef"></a>
+```python title="Definition"
+class GetFederationTokenRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+```
 
 ## GetFederationTokenResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetFederationTokenResponseTypeDef
+
+def get_value() -> GetFederationTokenResponseTypeDef:
+    return {
+        "Credentials": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetFederationTokenResponseTypeDef(TypedDict):
+    Credentials: CredentialsTypeDef,  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Credentials`: [CredentialsTypeDef](./type_defs.md#credentialstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: CredentialsTypeDef](./type_defs.md#credentialstypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## GetMetricDataRequestGetMetricDataPaginateTypeDef
 
-<a id="getmetricdatarequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import GetMetricDataRequestGetMetricDataPaginateTypeDef
 
+def get_value() -> GetMetricDataRequestGetMetricDataPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Filters": ...,
+        "HistoricalMetrics": ...,
+    }
+```
+
+```python title="Definition"
+class GetMetricDataRequestGetMetricDataPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: FiltersTypeDef,  # (1)
+    HistoricalMetrics: Sequence[HistoricalMetricTypeDef],  # (2)
+    Groupings: NotRequired[Sequence[GroupingType]],  # (3)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (4)
+```
+
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## GetMetricDataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetMetricDataRequestRequestTypeDef
+
+def get_value() -> GetMetricDataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+        "Filters": ...,
+        "HistoricalMetrics": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMetricDataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    StartTime: Union[datetime, str],
+    EndTime: Union[datetime, str],
+    Filters: FiltersTypeDef,  # (1)
+    HistoricalMetrics: Sequence[HistoricalMetricTypeDef],  # (2)
+    Groupings: NotRequired[Sequence[GroupingType]],  # (3)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
-- `Filters`: [FiltersTypeDef](./type_defs.md#filterstypedef)
-- `HistoricalMetrics`:
-  `Sequence`\[[HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)\]
-
-Optional fields:
-
-- `Groupings`: `Sequence`\[[GroupingType](./literals.md#groupingtype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getmetricdataresponsetypedef"></a>
-
+1. See [:material-code-braces: FiltersTypeDef](./type_defs.md#filterstypedef) 
+2. See [:material-code-braces: HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef) 
+3. See [:material-code-brackets: GroupingType](./literals.md#groupingtype) 
 ## GetMetricDataResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import GetMetricDataResponseTypeDef
+
+def get_value() -> GetMetricDataResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "MetricResults": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class GetMetricDataResponseTypeDef(TypedDict):
+    NextToken: str,
+    MetricResults: List[HistoricalMetricResultTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `MetricResults`:
-  `List`\[[HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="hierarchygroupsummarytypedef"></a>
-
+1. See [:material-code-braces: HistoricalMetricResultTypeDef](./type_defs.md#historicalmetricresulttypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## HierarchyGroupSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyGroupSummaryTypeDef
+
+def get_value() -> HierarchyGroupSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="hierarchygrouptypedef"></a>
+```python title="Definition"
+class HierarchyGroupSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## HierarchyGroupTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyGroupTypeDef
+
+def get_value() -> HierarchyGroupTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HierarchyGroupTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    LevelId: NotRequired[str],
+    HierarchyPath: NotRequired[HierarchyPathTypeDef],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `LevelId`: `str`
-- `HierarchyPath`: [HierarchyPathTypeDef](./type_defs.md#hierarchypathtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="hierarchyleveltypedef"></a>
-
+1. See [:material-code-braces: HierarchyPathTypeDef](./type_defs.md#hierarchypathtypedef) 
 ## HierarchyLevelTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyLevelTypeDef
+
+def get_value() -> HierarchyLevelTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="hierarchylevelupdatetypedef"></a>
+```python title="Definition"
+class HierarchyLevelTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## HierarchyLevelUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyLevelUpdateTypeDef
+
+def get_value() -> HierarchyLevelUpdateTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-
-<a id="hierarchypathtypedef"></a>
+```python title="Definition"
+class HierarchyLevelUpdateTypeDef(TypedDict):
+    Name: str,
+```
 
 ## HierarchyPathTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyPathTypeDef
+
+def get_value() -> HierarchyPathTypeDef:
+    return {
+        "LevelOne": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HierarchyPathTypeDef(TypedDict):
+    LevelOne: NotRequired[HierarchyGroupSummaryTypeDef],  # (1)
+    LevelTwo: NotRequired[HierarchyGroupSummaryTypeDef],  # (1)
+    LevelThree: NotRequired[HierarchyGroupSummaryTypeDef],  # (1)
+    LevelFour: NotRequired[HierarchyGroupSummaryTypeDef],  # (1)
+    LevelFive: NotRequired[HierarchyGroupSummaryTypeDef],  # (1)
+```
 
-- `LevelOne`:
-  [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
-- `LevelTwo`:
-  [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
-- `LevelThree`:
-  [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
-- `LevelFour`:
-  [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
-- `LevelFive`:
-  [HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)
-
-<a id="hierarchystructuretypedef"></a>
-
+1. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
+2. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
+3. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
+4. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
+5. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
 ## HierarchyStructureTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyStructureTypeDef
+
+def get_value() -> HierarchyStructureTypeDef:
+    return {
+        "LevelOne": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HierarchyStructureTypeDef(TypedDict):
+    LevelOne: NotRequired[HierarchyLevelTypeDef],  # (1)
+    LevelTwo: NotRequired[HierarchyLevelTypeDef],  # (1)
+    LevelThree: NotRequired[HierarchyLevelTypeDef],  # (1)
+    LevelFour: NotRequired[HierarchyLevelTypeDef],  # (1)
+    LevelFive: NotRequired[HierarchyLevelTypeDef],  # (1)
+```
 
-- `LevelOne`: [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
-- `LevelTwo`: [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
-- `LevelThree`: [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
-- `LevelFour`: [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
-- `LevelFive`: [HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef)
-
-<a id="hierarchystructureupdatetypedef"></a>
-
+1. See [:material-code-braces: HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef) 
+2. See [:material-code-braces: HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef) 
+3. See [:material-code-braces: HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef) 
+4. See [:material-code-braces: HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef) 
+5. See [:material-code-braces: HierarchyLevelTypeDef](./type_defs.md#hierarchyleveltypedef) 
 ## HierarchyStructureUpdateTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HierarchyStructureUpdateTypeDef
+
+def get_value() -> HierarchyStructureUpdateTypeDef:
+    return {
+        "LevelOne": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HierarchyStructureUpdateTypeDef(TypedDict):
+    LevelOne: NotRequired[HierarchyLevelUpdateTypeDef],  # (1)
+    LevelTwo: NotRequired[HierarchyLevelUpdateTypeDef],  # (1)
+    LevelThree: NotRequired[HierarchyLevelUpdateTypeDef],  # (1)
+    LevelFour: NotRequired[HierarchyLevelUpdateTypeDef],  # (1)
+    LevelFive: NotRequired[HierarchyLevelUpdateTypeDef],  # (1)
+```
 
-- `LevelOne`:
-  [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
-- `LevelTwo`:
-  [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
-- `LevelThree`:
-  [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
-- `LevelFour`:
-  [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
-- `LevelFive`:
-  [HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef)
-
-<a id="historicalmetricdatatypedef"></a>
-
+1. See [:material-code-braces: HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef) 
+2. See [:material-code-braces: HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef) 
+3. See [:material-code-braces: HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef) 
+4. See [:material-code-braces: HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef) 
+5. See [:material-code-braces: HierarchyLevelUpdateTypeDef](./type_defs.md#hierarchylevelupdatetypedef) 
 ## HistoricalMetricDataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HistoricalMetricDataTypeDef
+
+def get_value() -> HistoricalMetricDataTypeDef:
+    return {
+        "Metric": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HistoricalMetricDataTypeDef(TypedDict):
+    Metric: NotRequired[HistoricalMetricTypeDef],  # (1)
+    Value: NotRequired[float],
+```
 
-- `Metric`: [HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef)
-- `Value`: `float`
-
-<a id="historicalmetricresulttypedef"></a>
-
+1. See [:material-code-braces: HistoricalMetricTypeDef](./type_defs.md#historicalmetrictypedef) 
 ## HistoricalMetricResultTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HistoricalMetricResultTypeDef
+
+def get_value() -> HistoricalMetricResultTypeDef:
+    return {
+        "Dimensions": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HistoricalMetricResultTypeDef(TypedDict):
+    Dimensions: NotRequired[DimensionsTypeDef],  # (1)
+    Collections: NotRequired[List[HistoricalMetricDataTypeDef]],  # (2)
+```
 
-- `Dimensions`: [DimensionsTypeDef](./type_defs.md#dimensionstypedef)
-- `Collections`:
-  `List`\[[HistoricalMetricDataTypeDef](./type_defs.md#historicalmetricdatatypedef)\]
-
-<a id="historicalmetrictypedef"></a>
-
+1. See [:material-code-braces: DimensionsTypeDef](./type_defs.md#dimensionstypedef) 
+2. See [:material-code-braces: HistoricalMetricDataTypeDef](./type_defs.md#historicalmetricdatatypedef) 
 ## HistoricalMetricTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HistoricalMetricTypeDef
+
+def get_value() -> HistoricalMetricTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HistoricalMetricTypeDef(TypedDict):
+    Name: NotRequired[HistoricalMetricNameType],  # (1)
+    Threshold: NotRequired[ThresholdTypeDef],  # (2)
+    Statistic: NotRequired[StatisticType],  # (3)
+    Unit: NotRequired[UnitType],  # (4)
+```
 
-- `Name`: [HistoricalMetricNameType](./literals.md#historicalmetricnametype)
-- `Threshold`: [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
-- `Statistic`: [StatisticType](./literals.md#statistictype)
-- `Unit`: [UnitType](./literals.md#unittype)
-
-<a id="hoursofoperationconfigtypedef"></a>
-
+1. See [:material-code-brackets: HistoricalMetricNameType](./literals.md#historicalmetricnametype) 
+2. See [:material-code-braces: ThresholdTypeDef](./type_defs.md#thresholdtypedef) 
+3. See [:material-code-brackets: StatisticType](./literals.md#statistictype) 
+4. See [:material-code-brackets: UnitType](./literals.md#unittype) 
 ## HoursOfOperationConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HoursOfOperationConfigTypeDef
+
+def get_value() -> HoursOfOperationConfigTypeDef:
+    return {
+        "Day": ...,
+        "StartTime": ...,
+        "EndTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class HoursOfOperationConfigTypeDef(TypedDict):
+    Day: HoursOfOperationDaysType,  # (1)
+    StartTime: HoursOfOperationTimeSliceTypeDef,  # (2)
+    EndTime: HoursOfOperationTimeSliceTypeDef,  # (2)
+```
 
-- `Day`: [HoursOfOperationDaysType](./literals.md#hoursofoperationdaystype)
-- `StartTime`:
-  [HoursOfOperationTimeSliceTypeDef](./type_defs.md#hoursofoperationtimeslicetypedef)
-- `EndTime`:
-  [HoursOfOperationTimeSliceTypeDef](./type_defs.md#hoursofoperationtimeslicetypedef)
-
-<a id="hoursofoperationsummarytypedef"></a>
-
+1. See [:material-code-brackets: HoursOfOperationDaysType](./literals.md#hoursofoperationdaystype) 
+2. See [:material-code-braces: HoursOfOperationTimeSliceTypeDef](./type_defs.md#hoursofoperationtimeslicetypedef) 
+3. See [:material-code-braces: HoursOfOperationTimeSliceTypeDef](./type_defs.md#hoursofoperationtimeslicetypedef) 
 ## HoursOfOperationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HoursOfOperationSummaryTypeDef
+
+def get_value() -> HoursOfOperationSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="hoursofoperationtimeslicetypedef"></a>
+```python title="Definition"
+class HoursOfOperationSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## HoursOfOperationTimeSliceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HoursOfOperationTimeSliceTypeDef
+
+def get_value() -> HoursOfOperationTimeSliceTypeDef:
+    return {
+        "Hours": ...,
+        "Minutes": ...,
+    }
 ```
 
-Required fields:
-
-- `Hours`: `int`
-- `Minutes`: `int`
-
-<a id="hoursofoperationtypedef"></a>
+```python title="Definition"
+class HoursOfOperationTimeSliceTypeDef(TypedDict):
+    Hours: int,
+    Minutes: int,
+```
 
 ## HoursOfOperationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import HoursOfOperationTypeDef
+
+def get_value() -> HoursOfOperationTypeDef:
+    return {
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class HoursOfOperationTypeDef(TypedDict):
+    HoursOfOperationId: NotRequired[str],
+    HoursOfOperationArn: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    TimeZone: NotRequired[str],
+    Config: NotRequired[List[HoursOfOperationConfigTypeDef]],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `HoursOfOperationId`: `str`
-- `HoursOfOperationArn`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `TimeZone`: `str`
-- `Config`:
-  `List`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="instancestatusreasontypedef"></a>
-
+1. See [:material-code-braces: HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef) 
 ## InstanceStatusReasonTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import InstanceStatusReasonTypeDef
+
+def get_value() -> InstanceStatusReasonTypeDef:
+    return {
+        "Message": ...,
+    }
 ```
 
-Optional fields:
-
-- `Message`: `str`
-
-<a id="instancestorageconfigtypedef"></a>
+```python title="Definition"
+class InstanceStatusReasonTypeDef(TypedDict):
+    Message: NotRequired[str],
+```
 
 ## InstanceStorageConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import InstanceStorageConfigTypeDef
+
+def get_value() -> InstanceStorageConfigTypeDef:
+    return {
+        "StorageType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class InstanceStorageConfigTypeDef(TypedDict):
+    StorageType: StorageTypeType,  # (1)
+    AssociationId: NotRequired[str],
+    S3Config: NotRequired[S3ConfigTypeDef],  # (2)
+    KinesisVideoStreamConfig: NotRequired[KinesisVideoStreamConfigTypeDef],  # (3)
+    KinesisStreamConfig: NotRequired[KinesisStreamConfigTypeDef],  # (4)
+    KinesisFirehoseConfig: NotRequired[KinesisFirehoseConfigTypeDef],  # (5)
+```
 
-- `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
-
-Optional fields:
-
-- `AssociationId`: `str`
-- `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
-- `KinesisVideoStreamConfig`:
-  [KinesisVideoStreamConfigTypeDef](./type_defs.md#kinesisvideostreamconfigtypedef)
-- `KinesisStreamConfig`:
-  [KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef)
-- `KinesisFirehoseConfig`:
-  [KinesisFirehoseConfigTypeDef](./type_defs.md#kinesisfirehoseconfigtypedef)
-
-<a id="instancesummarytypedef"></a>
-
+1. See [:material-code-brackets: StorageTypeType](./literals.md#storagetypetype) 
+2. See [:material-code-braces: S3ConfigTypeDef](./type_defs.md#s3configtypedef) 
+3. See [:material-code-braces: KinesisVideoStreamConfigTypeDef](./type_defs.md#kinesisvideostreamconfigtypedef) 
+4. See [:material-code-braces: KinesisStreamConfigTypeDef](./type_defs.md#kinesisstreamconfigtypedef) 
+5. See [:material-code-braces: KinesisFirehoseConfigTypeDef](./type_defs.md#kinesisfirehoseconfigtypedef) 
 ## InstanceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import InstanceSummaryTypeDef
+
+def get_value() -> InstanceSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    IdentityManagementType: NotRequired[DirectoryTypeType],  # (1)
+    InstanceAlias: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    ServiceRole: NotRequired[str],
+    InstanceStatus: NotRequired[InstanceStatusType],  # (2)
+    InboundCallsEnabled: NotRequired[bool],
+    OutboundCallsEnabled: NotRequired[bool],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `IdentityManagementType`:
-  [DirectoryTypeType](./literals.md#directorytypetype)
-- `InstanceAlias`: `str`
-- `CreatedTime`: `datetime`
-- `ServiceRole`: `str`
-- `InstanceStatus`: [InstanceStatusType](./literals.md#instancestatustype)
-- `InboundCallsEnabled`: `bool`
-- `OutboundCallsEnabled`: `bool`
-
-<a id="instancetypedef"></a>
-
+1. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
+2. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
 ## InstanceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import InstanceTypeDef
+
+def get_value() -> InstanceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class InstanceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    IdentityManagementType: NotRequired[DirectoryTypeType],  # (1)
+    InstanceAlias: NotRequired[str],
+    CreatedTime: NotRequired[datetime],
+    ServiceRole: NotRequired[str],
+    InstanceStatus: NotRequired[InstanceStatusType],  # (2)
+    StatusReason: NotRequired[InstanceStatusReasonTypeDef],  # (3)
+    InboundCallsEnabled: NotRequired[bool],
+    OutboundCallsEnabled: NotRequired[bool],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `IdentityManagementType`:
-  [DirectoryTypeType](./literals.md#directorytypetype)
-- `InstanceAlias`: `str`
-- `CreatedTime`: `datetime`
-- `ServiceRole`: `str`
-- `InstanceStatus`: [InstanceStatusType](./literals.md#instancestatustype)
-- `StatusReason`:
-  [InstanceStatusReasonTypeDef](./type_defs.md#instancestatusreasontypedef)
-- `InboundCallsEnabled`: `bool`
-- `OutboundCallsEnabled`: `bool`
-
-<a id="integrationassociationsummarytypedef"></a>
-
+1. See [:material-code-brackets: DirectoryTypeType](./literals.md#directorytypetype) 
+2. See [:material-code-brackets: InstanceStatusType](./literals.md#instancestatustype) 
+3. See [:material-code-braces: InstanceStatusReasonTypeDef](./type_defs.md#instancestatusreasontypedef) 
 ## IntegrationAssociationSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import IntegrationAssociationSummaryTypeDef
+
+def get_value() -> IntegrationAssociationSummaryTypeDef:
+    return {
+        "IntegrationAssociationId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class IntegrationAssociationSummaryTypeDef(TypedDict):
+    IntegrationAssociationId: NotRequired[str],
+    IntegrationAssociationArn: NotRequired[str],
+    InstanceId: NotRequired[str],
+    IntegrationType: NotRequired[IntegrationTypeType],  # (1)
+    IntegrationArn: NotRequired[str],
+    SourceApplicationUrl: NotRequired[str],
+    SourceApplicationName: NotRequired[str],
+    SourceType: NotRequired[SourceTypeType],  # (2)
+```
 
-- `IntegrationAssociationId`: `str`
-- `IntegrationAssociationArn`: `str`
-- `InstanceId`: `str`
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-- `IntegrationArn`: `str`
-- `SourceApplicationUrl`: `str`
-- `SourceApplicationName`: `str`
-- `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
-
-<a id="kinesisfirehoseconfigtypedef"></a>
-
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-brackets: SourceTypeType](./literals.md#sourcetypetype) 
 ## KinesisFirehoseConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import KinesisFirehoseConfigTypeDef
+
+def get_value() -> KinesisFirehoseConfigTypeDef:
+    return {
+        "FirehoseArn": ...,
+    }
 ```
 
-Required fields:
-
-- `FirehoseArn`: `str`
-
-<a id="kinesisstreamconfigtypedef"></a>
+```python title="Definition"
+class KinesisFirehoseConfigTypeDef(TypedDict):
+    FirehoseArn: str,
+```
 
 ## KinesisStreamConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import KinesisStreamConfigTypeDef
+
+def get_value() -> KinesisStreamConfigTypeDef:
+    return {
+        "StreamArn": ...,
+    }
 ```
 
-Required fields:
-
-- `StreamArn`: `str`
-
-<a id="kinesisvideostreamconfigtypedef"></a>
+```python title="Definition"
+class KinesisStreamConfigTypeDef(TypedDict):
+    StreamArn: str,
+```
 
 ## KinesisVideoStreamConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import KinesisVideoStreamConfigTypeDef
+
+def get_value() -> KinesisVideoStreamConfigTypeDef:
+    return {
+        "Prefix": ...,
+        "RetentionPeriodHours": ...,
+        "EncryptionConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class KinesisVideoStreamConfigTypeDef(TypedDict):
+    Prefix: str,
+    RetentionPeriodHours: int,
+    EncryptionConfig: EncryptionConfigTypeDef,  # (1)
+```
 
-- `Prefix`: `str`
-- `RetentionPeriodHours`: `int`
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-
-<a id="lexbotconfigtypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
 ## LexBotConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import LexBotConfigTypeDef
+
+def get_value() -> LexBotConfigTypeDef:
+    return {
+        "LexBot": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexBotConfigTypeDef(TypedDict):
+    LexBot: NotRequired[LexBotTypeDef],  # (1)
+    LexV2Bot: NotRequired[LexV2BotTypeDef],  # (2)
+```
 
-- `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
-- `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
-
-<a id="lexbottypedef"></a>
-
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: LexV2BotTypeDef](./type_defs.md#lexv2bottypedef) 
 ## LexBotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import LexBotTypeDef
+
+def get_value() -> LexBotTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `LexRegion`: `str`
-
-<a id="lexv2bottypedef"></a>
+```python title="Definition"
+class LexBotTypeDef(TypedDict):
+    Name: NotRequired[str],
+    LexRegion: NotRequired[str],
+```
 
 ## LexV2BotTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import LexV2BotTypeDef
+
+def get_value() -> LexV2BotTypeDef:
+    return {
+        "AliasArn": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class LexV2BotTypeDef(TypedDict):
+    AliasArn: NotRequired[str],
+```
 
-- `AliasArn`: `str`
+## ListAgentStatusRequestListAgentStatusesPaginateTypeDef
 
-<a id="listagentstatusrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListAgentStatusRequestListAgentStatusesPaginateTypeDef
 
+def get_value() -> ListAgentStatusRequestListAgentStatusesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListAgentStatusRequestListAgentStatusesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    AgentStatusTypes: NotRequired[Sequence[AgentStatusTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListAgentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListAgentStatusRequestRequestTypeDef
+
+def get_value() -> ListAgentStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAgentStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    AgentStatusTypes: NotRequired[Sequence[AgentStatusTypeType]],  # (1)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `AgentStatusTypes`:
-  `Sequence`\[[AgentStatusTypeType](./literals.md#agentstatustypetype)\]
-
-<a id="listagentstatusresponsetypedef"></a>
-
+1. See [:material-code-brackets: AgentStatusTypeType](./literals.md#agentstatustypetype) 
 ## ListAgentStatusResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListAgentStatusResponseTypeDef
+
+def get_value() -> ListAgentStatusResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "AgentStatusSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListAgentStatusResponseTypeDef(TypedDict):
+    NextToken: str,
+    AgentStatusSummaryList: List[AgentStatusSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `AgentStatusSummaryList`:
-  `List`\[[AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AgentStatusSummaryTypeDef](./type_defs.md#agentstatussummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef
 
-<a id="listapprovedoriginsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef
 
+def get_value() -> ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListApprovedOriginsRequestListApprovedOriginsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListApprovedOriginsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListApprovedOriginsRequestRequestTypeDef
+
+def get_value() -> ListApprovedOriginsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listapprovedoriginsresponsetypedef"></a>
+```python title="Definition"
+class ListApprovedOriginsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListApprovedOriginsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListApprovedOriginsResponseTypeDef
+
+def get_value() -> ListApprovedOriginsResponseTypeDef:
+    return {
+        "Origins": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListApprovedOriginsResponseTypeDef(TypedDict):
+    Origins: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Origins`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListBotsRequestListBotsPaginateTypeDef
 
-<a id="listbotsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListBotsRequestListBotsPaginateTypeDef
 
+def get_value() -> ListBotsRequestListBotsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "LexVersion": ...,
+    }
+```
+
+```python title="Definition"
+class ListBotsRequestListBotsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    LexVersion: LexVersionType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: LexVersionType](./literals.md#lexversiontype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListBotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListBotsRequestRequestTypeDef
+
+def get_value() -> ListBotsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "LexVersion": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LexVersion: LexVersionType,  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `LexVersion`: [LexVersionType](./literals.md#lexversiontype)
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listbotsresponsetypedef"></a>
-
+1. See [:material-code-brackets: LexVersionType](./literals.md#lexversiontype) 
 ## ListBotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListBotsResponseTypeDef
+
+def get_value() -> ListBotsResponseTypeDef:
+    return {
+        "LexBots": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListBotsResponseTypeDef(TypedDict):
+    LexBots: List[LexBotConfigTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LexBots`:
-  `List`\[[LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LexBotConfigTypeDef](./type_defs.md#lexbotconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef
 
-<a id="listcontactflowmodulesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef
 
+def get_value() -> ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactFlowModulesRequestListContactFlowModulesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowModuleState: NotRequired[ContactFlowModuleStateType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContactFlowModulesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactFlowModulesRequestRequestTypeDef
+
+def get_value() -> ListContactFlowModulesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactFlowModulesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    ContactFlowModuleState: NotRequired[ContactFlowModuleStateType],  # (1)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `ContactFlowModuleState`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
-
-<a id="listcontactflowmodulesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
 ## ListContactFlowModulesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactFlowModulesResponseTypeDef
+
+def get_value() -> ListContactFlowModulesResponseTypeDef:
+    return {
+        "ContactFlowModulesSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactFlowModulesResponseTypeDef(TypedDict):
+    ContactFlowModulesSummaryList: List[ContactFlowModuleSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContactFlowModulesSummaryList`:
-  `List`\[[ContactFlowModuleSummaryTypeDef](./type_defs.md#contactflowmodulesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContactFlowModuleSummaryTypeDef](./type_defs.md#contactflowmodulesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactFlowsRequestListContactFlowsPaginateTypeDef
 
-<a id="listcontactflowsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListContactFlowsRequestListContactFlowsPaginateTypeDef
 
+def get_value() -> ListContactFlowsRequestListContactFlowsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactFlowsRequestListContactFlowsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowTypes: NotRequired[Sequence[ContactFlowTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContactFlowsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactFlowsRequestRequestTypeDef
+
+def get_value() -> ListContactFlowsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactFlowsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowTypes: NotRequired[Sequence[ContactFlowTypeType]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `ContactFlowTypes`:
-  `Sequence`\[[ContactFlowTypeType](./literals.md#contactflowtypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listcontactflowsresponsetypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowTypeType](./literals.md#contactflowtypetype) 
 ## ListContactFlowsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactFlowsResponseTypeDef
+
+def get_value() -> ListContactFlowsResponseTypeDef:
+    return {
+        "ContactFlowSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactFlowsResponseTypeDef(TypedDict):
+    ContactFlowSummaryList: List[ContactFlowSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ContactFlowSummaryList`:
-  `List`\[[ContactFlowSummaryTypeDef](./type_defs.md#contactflowsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ContactFlowSummaryTypeDef](./type_defs.md#contactflowsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListContactReferencesRequestListContactReferencesPaginateTypeDef
 
-<a id="listcontactreferencesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListContactReferencesRequestListContactReferencesPaginateTypeDef
 
+def get_value() -> ListContactReferencesRequestListContactReferencesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ReferenceTypes": ...,
+    }
+```
+
+```python title="Definition"
+class ListContactReferencesRequestListContactReferencesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ReferenceTypes: Sequence[ReferenceTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: ReferenceTypeType](./literals.md#referencetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListContactReferencesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactReferencesRequestRequestTypeDef
+
+def get_value() -> ListContactReferencesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ReferenceTypes": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactReferencesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ReferenceTypes: Sequence[ReferenceTypeType],  # (1)
+    NextToken: NotRequired[str],
+```
 
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `ReferenceTypes`:
-  `Sequence`\[[ReferenceTypeType](./literals.md#referencetypetype)\]
-
-Optional fields:
-
-- `NextToken`: `str`
-
-<a id="listcontactreferencesresponsetypedef"></a>
-
+1. See [:material-code-brackets: ReferenceTypeType](./literals.md#referencetypetype) 
 ## ListContactReferencesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListContactReferencesResponseTypeDef
+
+def get_value() -> ListContactReferencesResponseTypeDef:
+    return {
+        "ReferenceSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListContactReferencesResponseTypeDef(TypedDict):
+    ReferenceSummaryList: List[ReferenceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `ReferenceSummaryList`:
-  `List`\[[ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ReferenceSummaryTypeDef](./type_defs.md#referencesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef
 
-<a id="listdefaultvocabulariesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef
 
+def get_value() -> ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListDefaultVocabulariesRequestListDefaultVocabulariesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    LanguageCode: NotRequired[VocabularyLanguageCodeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListDefaultVocabulariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListDefaultVocabulariesRequestRequestTypeDef
+
+def get_value() -> ListDefaultVocabulariesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDefaultVocabulariesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    LanguageCode: NotRequired[VocabularyLanguageCodeType],  # (1)
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-<a id="listdefaultvocabulariesresponsetypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
 ## ListDefaultVocabulariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListDefaultVocabulariesResponseTypeDef
+
+def get_value() -> ListDefaultVocabulariesResponseTypeDef:
+    return {
+        "DefaultVocabularyList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListDefaultVocabulariesResponseTypeDef(TypedDict):
+    DefaultVocabularyList: List[DefaultVocabularyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `DefaultVocabularyList`:
-  `List`\[[DefaultVocabularyTypeDef](./type_defs.md#defaultvocabularytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: DefaultVocabularyTypeDef](./type_defs.md#defaultvocabularytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef
 
-<a id="listhoursofoperationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef
 
+def get_value() -> ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListHoursOfOperationsRequestListHoursOfOperationsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListHoursOfOperationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListHoursOfOperationsRequestRequestTypeDef
+
+def get_value() -> ListHoursOfOperationsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listhoursofoperationsresponsetypedef"></a>
+```python title="Definition"
+class ListHoursOfOperationsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListHoursOfOperationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListHoursOfOperationsResponseTypeDef
+
+def get_value() -> ListHoursOfOperationsResponseTypeDef:
+    return {
+        "HoursOfOperationSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListHoursOfOperationsResponseTypeDef(TypedDict):
+    HoursOfOperationSummaryList: List[HoursOfOperationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `HoursOfOperationSummaryList`:
-  `List`\[[HoursOfOperationSummaryTypeDef](./type_defs.md#hoursofoperationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HoursOfOperationSummaryTypeDef](./type_defs.md#hoursofoperationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef
 
-<a id="listinstanceattributesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef
 
+def get_value() -> ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceAttributesRequestListInstanceAttributesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstanceAttributesRequestRequestTypeDef
+
+def get_value() -> ListInstanceAttributesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinstanceattributesresponsetypedef"></a>
+```python title="Definition"
+class ListInstanceAttributesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListInstanceAttributesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstanceAttributesResponseTypeDef
+
+def get_value() -> ListInstanceAttributesResponseTypeDef:
+    return {
+        "Attributes": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceAttributesResponseTypeDef(TypedDict):
+    Attributes: List[AttributeTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `Attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: AttributeTypeDef](./type_defs.md#attributetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef
 
-<a id="listinstancestorageconfigsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef
 
+def get_value() -> ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "ResourceType": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstanceStorageConfigsRequestListInstanceStorageConfigsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstanceStorageConfigsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsRequestRequestTypeDef
+
+def get_value() -> ListInstanceStorageConfigsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ResourceType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceStorageConfigsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinstancestorageconfigsresponsetypedef"></a>
-
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
 ## ListInstanceStorageConfigsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstanceStorageConfigsResponseTypeDef
+
+def get_value() -> ListInstanceStorageConfigsResponseTypeDef:
+    return {
+        "StorageConfigs": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstanceStorageConfigsResponseTypeDef(TypedDict):
+    StorageConfigs: List[InstanceStorageConfigTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `StorageConfigs`:
-  `List`\[[InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListInstancesRequestListInstancesPaginateTypeDef
 
-<a id="listinstancesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListInstancesRequestListInstancesPaginateTypeDef
 
+def get_value() -> ListInstancesRequestListInstancesPaginateTypeDef:
+    return {
+        "PaginationConfig": ...,
+    }
+```
+
+```python title="Definition"
+class ListInstancesRequestListInstancesPaginateTypeDef(TypedDict):
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListInstancesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstancesRequestRequestTypeDef
+
+def get_value() -> ListInstancesRequestRequestTypeDef:
+    return {
+        "NextToken": ...,
+    }
 ```
 
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listinstancesresponsetypedef"></a>
+```python title="Definition"
+class ListInstancesRequestRequestTypeDef(TypedDict):
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListInstancesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListInstancesResponseTypeDef
+
+def get_value() -> ListInstancesResponseTypeDef:
+    return {
+        "InstanceSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListInstancesResponseTypeDef(TypedDict):
+    InstanceSummaryList: List[InstanceSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `InstanceSummaryList`:
-  `List`\[[InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: InstanceSummaryTypeDef](./type_defs.md#instancesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef
 
-<a id="listintegrationassociationsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef
 
+def get_value() -> ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListIntegrationAssociationsRequestListIntegrationAssociationsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationType: NotRequired[IntegrationTypeType],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListIntegrationAssociationsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListIntegrationAssociationsRequestRequestTypeDef
+
+def get_value() -> ListIntegrationAssociationsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIntegrationAssociationsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationType: NotRequired[IntegrationTypeType],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `IntegrationType`: [IntegrationTypeType](./literals.md#integrationtypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listintegrationassociationsresponsetypedef"></a>
-
+1. See [:material-code-brackets: IntegrationTypeType](./literals.md#integrationtypetype) 
 ## ListIntegrationAssociationsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListIntegrationAssociationsResponseTypeDef
+
+def get_value() -> ListIntegrationAssociationsResponseTypeDef:
+    return {
+        "IntegrationAssociationSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListIntegrationAssociationsResponseTypeDef(TypedDict):
+    IntegrationAssociationSummaryList: List[IntegrationAssociationSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `IntegrationAssociationSummaryList`:
-  `List`\[[IntegrationAssociationSummaryTypeDef](./type_defs.md#integrationassociationsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: IntegrationAssociationSummaryTypeDef](./type_defs.md#integrationassociationsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef
 
-<a id="listlambdafunctionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef
 
+def get_value() -> ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListLambdaFunctionsRequestListLambdaFunctionsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLambdaFunctionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListLambdaFunctionsRequestRequestTypeDef
+
+def get_value() -> ListLambdaFunctionsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlambdafunctionsresponsetypedef"></a>
+```python title="Definition"
+class ListLambdaFunctionsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListLambdaFunctionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListLambdaFunctionsResponseTypeDef
+
+def get_value() -> ListLambdaFunctionsResponseTypeDef:
+    return {
+        "LambdaFunctions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLambdaFunctionsResponseTypeDef(TypedDict):
+    LambdaFunctions: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `LambdaFunctions`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListLexBotsRequestListLexBotsPaginateTypeDef
 
-<a id="listlexbotsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListLexBotsRequestListLexBotsPaginateTypeDef
 
+def get_value() -> ListLexBotsRequestListLexBotsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListLexBotsRequestListLexBotsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListLexBotsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListLexBotsRequestRequestTypeDef
+
+def get_value() -> ListLexBotsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listlexbotsresponsetypedef"></a>
+```python title="Definition"
+class ListLexBotsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListLexBotsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListLexBotsResponseTypeDef
+
+def get_value() -> ListLexBotsResponseTypeDef:
+    return {
+        "LexBots": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListLexBotsResponseTypeDef(TypedDict):
+    LexBots: List[LexBotTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `LexBots`: `List`\[[LexBotTypeDef](./type_defs.md#lexbottypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: LexBotTypeDef](./type_defs.md#lexbottypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef
 
-<a id="listphonenumbersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef
 
+def get_value() -> ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPhoneNumbersRequestListPhoneNumbersPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PhoneNumberTypes: NotRequired[Sequence[PhoneNumberTypeType]],  # (1)
+    PhoneNumberCountryCodes: NotRequired[Sequence[PhoneNumberCountryCodeType]],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
+
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPhoneNumbersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListPhoneNumbersRequestRequestTypeDef
+
+def get_value() -> ListPhoneNumbersRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPhoneNumbersRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    PhoneNumberTypes: NotRequired[Sequence[PhoneNumberTypeType]],  # (1)
+    PhoneNumberCountryCodes: NotRequired[Sequence[PhoneNumberCountryCodeType]],  # (2)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `PhoneNumberTypes`:
-  `Sequence`\[[PhoneNumberTypeType](./literals.md#phonenumbertypetype)\]
-- `PhoneNumberCountryCodes`:
-  `Sequence`\[[PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listphonenumbersresponsetypedef"></a>
-
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
 ## ListPhoneNumbersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListPhoneNumbersResponseTypeDef
+
+def get_value() -> ListPhoneNumbersResponseTypeDef:
+    return {
+        "PhoneNumberSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPhoneNumbersResponseTypeDef(TypedDict):
+    PhoneNumberSummaryList: List[PhoneNumberSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PhoneNumberSummaryList`:
-  `List`\[[PhoneNumberSummaryTypeDef](./type_defs.md#phonenumbersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PhoneNumberSummaryTypeDef](./type_defs.md#phonenumbersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListPromptsRequestListPromptsPaginateTypeDef
 
-<a id="listpromptsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListPromptsRequestListPromptsPaginateTypeDef
 
+def get_value() -> ListPromptsRequestListPromptsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListPromptsRequestListPromptsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListPromptsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListPromptsRequestRequestTypeDef
+
+def get_value() -> ListPromptsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listpromptsresponsetypedef"></a>
+```python title="Definition"
+class ListPromptsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListPromptsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListPromptsResponseTypeDef
+
+def get_value() -> ListPromptsResponseTypeDef:
+    return {
+        "PromptSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListPromptsResponseTypeDef(TypedDict):
+    PromptSummaryList: List[PromptSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `PromptSummaryList`:
-  `List`\[[PromptSummaryTypeDef](./type_defs.md#promptsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: PromptSummaryTypeDef](./type_defs.md#promptsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef
 
-<a id="listqueuequickconnectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef
 
+def get_value() -> ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueueQuickConnectsRequestListQueueQuickConnectsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQueueQuickConnectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQueueQuickConnectsRequestRequestTypeDef
+
+def get_value() -> ListQueueQuickConnectsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listqueuequickconnectsresponsetypedef"></a>
+```python title="Definition"
+class ListQueueQuickConnectsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListQueueQuickConnectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQueueQuickConnectsResponseTypeDef
+
+def get_value() -> ListQueueQuickConnectsResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "QuickConnectSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueueQuickConnectsResponseTypeDef(TypedDict):
+    NextToken: str,
+    QuickConnectSummaryList: List[QuickConnectSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `QuickConnectSummaryList`:
-  `List`\[[QuickConnectSummaryTypeDef](./type_defs.md#quickconnectsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QuickConnectSummaryTypeDef](./type_defs.md#quickconnectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQueuesRequestListQueuesPaginateTypeDef
 
-<a id="listqueuesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListQueuesRequestListQueuesPaginateTypeDef
 
+def get_value() -> ListQueuesRequestListQueuesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListQueuesRequestListQueuesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    QueueTypes: NotRequired[Sequence[QueueTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: QueueTypeType](./literals.md#queuetypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQueuesRequestRequestTypeDef
+
+def get_value() -> ListQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueTypes: NotRequired[Sequence[QueueTypeType]],  # (1)
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `QueueTypes`: `Sequence`\[[QueueTypeType](./literals.md#queuetypetype)\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listqueuesresponsetypedef"></a>
-
+1. See [:material-code-brackets: QueueTypeType](./literals.md#queuetypetype) 
 ## ListQueuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQueuesResponseTypeDef
+
+def get_value() -> ListQueuesResponseTypeDef:
+    return {
+        "QueueSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQueuesResponseTypeDef(TypedDict):
+    QueueSummaryList: List[QueueSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QueueSummaryList`:
-  `List`\[[QueueSummaryTypeDef](./type_defs.md#queuesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QueueSummaryTypeDef](./type_defs.md#queuesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListQuickConnectsRequestListQuickConnectsPaginateTypeDef
 
-<a id="listquickconnectsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListQuickConnectsRequestListQuickConnectsPaginateTypeDef
 
+def get_value() -> ListQuickConnectsRequestListQuickConnectsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListQuickConnectsRequestListQuickConnectsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    QuickConnectTypes: NotRequired[Sequence[QuickConnectTypeType]],  # (1)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (2)
+```
+
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListQuickConnectsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQuickConnectsRequestRequestTypeDef
+
+def get_value() -> ListQuickConnectsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQuickConnectsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+    QuickConnectTypes: NotRequired[Sequence[QuickConnectTypeType]],  # (1)
+```
 
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `QuickConnectTypes`:
-  `Sequence`\[[QuickConnectTypeType](./literals.md#quickconnecttypetype)\]
-
-<a id="listquickconnectsresponsetypedef"></a>
-
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
 ## ListQuickConnectsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListQuickConnectsResponseTypeDef
+
+def get_value() -> ListQuickConnectsResponseTypeDef:
+    return {
+        "QuickConnectSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListQuickConnectsResponseTypeDef(TypedDict):
+    QuickConnectSummaryList: List[QuickConnectSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `QuickConnectSummaryList`:
-  `List`\[[QuickConnectSummaryTypeDef](./type_defs.md#quickconnectsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: QuickConnectSummaryTypeDef](./type_defs.md#quickconnectsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef
 
-<a id="listroutingprofilequeuesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef
 
+def get_value() -> ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingProfileQueuesRequestListRoutingProfileQueuesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRoutingProfileQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesRequestRequestTypeDef
+
+def get_value() -> ListRoutingProfileQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listroutingprofilequeuesresponsetypedef"></a>
+```python title="Definition"
+class ListRoutingProfileQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListRoutingProfileQueuesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListRoutingProfileQueuesResponseTypeDef
+
+def get_value() -> ListRoutingProfileQueuesResponseTypeDef:
+    return {
+        "NextToken": ...,
+        "RoutingProfileQueueConfigSummaryList": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRoutingProfileQueuesResponseTypeDef(TypedDict):
+    NextToken: str,
+    RoutingProfileQueueConfigSummaryList: List[RoutingProfileQueueConfigSummaryTypeDef],  # (1)
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `NextToken`: `str`
-- `RoutingProfileQueueConfigSummaryList`:
-  `List`\[[RoutingProfileQueueConfigSummaryTypeDef](./type_defs.md#routingprofilequeueconfigsummarytypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RoutingProfileQueueConfigSummaryTypeDef](./type_defs.md#routingprofilequeueconfigsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef
 
-<a id="listroutingprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef
 
+def get_value() -> ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListRoutingProfilesRequestListRoutingProfilesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListRoutingProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListRoutingProfilesRequestRequestTypeDef
+
+def get_value() -> ListRoutingProfilesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listroutingprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListRoutingProfilesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListRoutingProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListRoutingProfilesResponseTypeDef
+
+def get_value() -> ListRoutingProfilesResponseTypeDef:
+    return {
+        "RoutingProfileSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListRoutingProfilesResponseTypeDef(TypedDict):
+    RoutingProfileSummaryList: List[RoutingProfileSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `RoutingProfileSummaryList`:
-  `List`\[[RoutingProfileSummaryTypeDef](./type_defs.md#routingprofilesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: RoutingProfileSummaryTypeDef](./type_defs.md#routingprofilesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityKeysRequestListSecurityKeysPaginateTypeDef
 
-<a id="listsecuritykeysrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListSecurityKeysRequestListSecurityKeysPaginateTypeDef
 
+def get_value() -> ListSecurityKeysRequestListSecurityKeysPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityKeysRequestListSecurityKeysPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityKeysRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityKeysRequestRequestTypeDef
+
+def get_value() -> ListSecurityKeysRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listsecuritykeysresponsetypedef"></a>
+```python title="Definition"
+class ListSecurityKeysRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSecurityKeysResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityKeysResponseTypeDef
+
+def get_value() -> ListSecurityKeysResponseTypeDef:
+    return {
+        "SecurityKeys": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecurityKeysResponseTypeDef(TypedDict):
+    SecurityKeys: List[SecurityKeyTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityKeys`:
-  `List`\[[SecurityKeyTypeDef](./type_defs.md#securitykeytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: SecurityKeyTypeDef](./type_defs.md#securitykeytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef
 
-<a id="listsecurityprofilepermissionsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef
 
+def get_value() -> ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef:
+    return {
+        "SecurityProfileId": ...,
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilePermissionsRequestListSecurityProfilePermissionsPaginateTypeDef(TypedDict):
+    SecurityProfileId: str,
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityProfilePermissionsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityProfilePermissionsRequestRequestTypeDef
+
+def get_value() -> ListSecurityProfilePermissionsRequestRequestTypeDef:
+    return {
+        "SecurityProfileId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecurityProfileId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listsecurityprofilepermissionsresponsetypedef"></a>
+```python title="Definition"
+class ListSecurityProfilePermissionsRequestRequestTypeDef(TypedDict):
+    SecurityProfileId: str,
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSecurityProfilePermissionsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityProfilePermissionsResponseTypeDef
+
+def get_value() -> ListSecurityProfilePermissionsResponseTypeDef:
+    return {
+        "Permissions": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecurityProfilePermissionsResponseTypeDef(TypedDict):
+    Permissions: List[str],
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `Permissions`: `List`\[`str`\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
 
-<a id="listsecurityprofilesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef
 
+def get_value() -> ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListSecurityProfilesRequestListSecurityProfilesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListSecurityProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityProfilesRequestRequestTypeDef
+
+def get_value() -> ListSecurityProfilesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listsecurityprofilesresponsetypedef"></a>
+```python title="Definition"
+class ListSecurityProfilesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListSecurityProfilesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListSecurityProfilesResponseTypeDef
+
+def get_value() -> ListSecurityProfilesResponseTypeDef:
+    return {
+        "SecurityProfileSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListSecurityProfilesResponseTypeDef(TypedDict):
+    SecurityProfileSummaryList: List[SecurityProfileSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `SecurityProfileSummaryList`:
-  `List`\[[SecurityProfileSummaryTypeDef](./type_defs.md#securityprofilesummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listtagsforresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: SecurityProfileSummaryTypeDef](./type_defs.md#securityprofilesummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## ListTagsForResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListTagsForResourceRequestRequestTypeDef
+
+def get_value() -> ListTagsForResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-
-<a id="listtagsforresourceresponsetypedef"></a>
+```python title="Definition"
+class ListTagsForResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+```
 
 ## ListTagsForResourceResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListTagsForResourceResponseTypeDef
+
+def get_value() -> ListTagsForResourceResponseTypeDef:
+    return {
+        "tags": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListTagsForResourceResponseTypeDef(TypedDict):
+    tags: Dict[str, str],
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUseCasesRequestListUseCasesPaginateTypeDef
 
-<a id="listusecasesrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListUseCasesRequestListUseCasesPaginateTypeDef
 
+def get_value() -> ListUseCasesRequestListUseCasesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationAssociationId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUseCasesRequestListUseCasesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUseCasesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUseCasesRequestRequestTypeDef
+
+def get_value() -> ListUseCasesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "IntegrationAssociationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `IntegrationAssociationId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listusecasesresponsetypedef"></a>
+```python title="Definition"
+class ListUseCasesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    IntegrationAssociationId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListUseCasesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUseCasesResponseTypeDef
+
+def get_value() -> ListUseCasesResponseTypeDef:
+    return {
+        "UseCaseSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUseCasesResponseTypeDef(TypedDict):
+    UseCaseSummaryList: List[UseCaseTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UseCaseSummaryList`:
-  `List`\[[UseCaseTypeDef](./type_defs.md#usecasetypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: UseCaseTypeDef](./type_defs.md#usecasetypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef
 
-<a id="listuserhierarchygroupsrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef
 
+def get_value() -> ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUserHierarchyGroupsRequestListUserHierarchyGroupsPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUserHierarchyGroupsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsRequestRequestTypeDef
+
+def get_value() -> ListUserHierarchyGroupsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listuserhierarchygroupsresponsetypedef"></a>
+```python title="Definition"
+class ListUserHierarchyGroupsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListUserHierarchyGroupsResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUserHierarchyGroupsResponseTypeDef
+
+def get_value() -> ListUserHierarchyGroupsResponseTypeDef:
+    return {
+        "UserHierarchyGroupSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUserHierarchyGroupsResponseTypeDef(TypedDict):
+    UserHierarchyGroupSummaryList: List[HierarchyGroupSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserHierarchyGroupSummaryList`:
-  `List`\[[HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+1. See [:material-code-braces: HierarchyGroupSummaryTypeDef](./type_defs.md#hierarchygroupsummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
+## ListUsersRequestListUsersPaginateTypeDef
 
-<a id="listusersrequestrequesttypedef"></a>
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import ListUsersRequestListUsersPaginateTypeDef
 
+def get_value() -> ListUsersRequestListUsersPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
+
+```python title="Definition"
+class ListUsersRequestListUsersPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (1)
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## ListUsersRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUsersRequestRequestTypeDef
+
+def get_value() -> ListUsersRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listusersresponsetypedef"></a>
+```python title="Definition"
+class ListUsersRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    NextToken: NotRequired[str],
+    MaxResults: NotRequired[int],
+```
 
 ## ListUsersResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ListUsersResponseTypeDef
+
+def get_value() -> ListUsersResponseTypeDef:
+    return {
+        "UserSummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ListUsersResponseTypeDef(TypedDict):
+    UserSummaryList: List[UserSummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `UserSummaryList`:
-  `List`\[[UserSummaryTypeDef](./type_defs.md#usersummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mediaconcurrencytypedef"></a>
-
+1. See [:material-code-braces: UserSummaryTypeDef](./type_defs.md#usersummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## MediaConcurrencyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import MediaConcurrencyTypeDef
+
+def get_value() -> MediaConcurrencyTypeDef:
+    return {
+        "Channel": ...,
+        "Concurrency": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class MediaConcurrencyTypeDef(TypedDict):
+    Channel: ChannelType,  # (1)
+    Concurrency: int,
+```
 
-- `Channel`: [ChannelType](./literals.md#channeltype)
-- `Concurrency`: `int`
-
-<a id="outboundcallerconfigtypedef"></a>
-
+1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## OutboundCallerConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import OutboundCallerConfigTypeDef
+
+def get_value() -> OutboundCallerConfigTypeDef:
+    return {
+        "OutboundCallerIdName": ...,
+    }
 ```
 
-Optional fields:
-
-- `OutboundCallerIdName`: `str`
-- `OutboundCallerIdNumberId`: `str`
-- `OutboundFlowId`: `str`
-
-<a id="paginatorconfigtypedef"></a>
+```python title="Definition"
+class OutboundCallerConfigTypeDef(TypedDict):
+    OutboundCallerIdName: NotRequired[str],
+    OutboundCallerIdNumberId: NotRequired[str],
+    OutboundFlowId: NotRequired[str],
+```
 
 ## PaginatorConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import PaginatorConfigTypeDef
+
+def get_value() -> PaginatorConfigTypeDef:
+    return {
+        "MaxItems": ...,
+    }
 ```
 
-Optional fields:
-
-- `MaxItems`: `int`
-- `PageSize`: `int`
-- `StartingToken`: `str`
-
-<a id="participantdetailstypedef"></a>
+```python title="Definition"
+class PaginatorConfigTypeDef(TypedDict):
+    MaxItems: NotRequired[int],
+    PageSize: NotRequired[int],
+    StartingToken: NotRequired[str],
+```
 
 ## ParticipantDetailsTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ParticipantDetailsTypeDef
+
+def get_value() -> ParticipantDetailsTypeDef:
+    return {
+        "DisplayName": ...,
+    }
 ```
 
-Required fields:
-
-- `DisplayName`: `str`
-
-<a id="phonenumberquickconnectconfigtypedef"></a>
+```python title="Definition"
+class ParticipantDetailsTypeDef(TypedDict):
+    DisplayName: str,
+```
 
 ## PhoneNumberQuickConnectConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import PhoneNumberQuickConnectConfigTypeDef
+
+def get_value() -> PhoneNumberQuickConnectConfigTypeDef:
+    return {
+        "PhoneNumber": ...,
+    }
 ```
 
-Required fields:
-
-- `PhoneNumber`: `str`
-
-<a id="phonenumbersummarytypedef"></a>
+```python title="Definition"
+class PhoneNumberQuickConnectConfigTypeDef(TypedDict):
+    PhoneNumber: str,
+```
 
 ## PhoneNumberSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import PhoneNumberSummaryTypeDef
+
+def get_value() -> PhoneNumberSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class PhoneNumberSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    PhoneNumber: NotRequired[str],
+    PhoneNumberType: NotRequired[PhoneNumberTypeType],  # (1)
+    PhoneNumberCountryCode: NotRequired[PhoneNumberCountryCodeType],  # (2)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `PhoneNumber`: `str`
-- `PhoneNumberType`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
-- `PhoneNumberCountryCode`:
-  [PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype)
-
-<a id="promptsummarytypedef"></a>
-
+1. See [:material-code-brackets: PhoneNumberTypeType](./literals.md#phonenumbertypetype) 
+2. See [:material-code-brackets: PhoneNumberCountryCodeType](./literals.md#phonenumbercountrycodetype) 
 ## PromptSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import PromptSummaryTypeDef
+
+def get_value() -> PromptSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="queueinfotypedef"></a>
+```python title="Definition"
+class PromptSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## QueueInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QueueInfoTypeDef
+
+def get_value() -> QueueInfoTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `EnqueueTimestamp`: `datetime`
-
-<a id="queuequickconnectconfigtypedef"></a>
+```python title="Definition"
+class QueueInfoTypeDef(TypedDict):
+    Id: NotRequired[str],
+    EnqueueTimestamp: NotRequired[datetime],
+```
 
 ## QueueQuickConnectConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QueueQuickConnectConfigTypeDef
+
+def get_value() -> QueueQuickConnectConfigTypeDef:
+    return {
+        "QueueId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
-
-- `QueueId`: `str`
-- `ContactFlowId`: `str`
-
-<a id="queuereferencetypedef"></a>
+```python title="Definition"
+class QueueQuickConnectConfigTypeDef(TypedDict):
+    QueueId: str,
+    ContactFlowId: str,
+```
 
 ## QueueReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QueueReferenceTypeDef
+
+def get_value() -> QueueReferenceTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-
-<a id="queuesummarytypedef"></a>
+```python title="Definition"
+class QueueReferenceTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+```
 
 ## QueueSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QueueSummaryTypeDef
+
+def get_value() -> QueueSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueueSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    QueueType: NotRequired[QueueTypeType],  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `QueueType`: [QueueTypeType](./literals.md#queuetypetype)
-
-<a id="queuetypedef"></a>
-
+1. See [:material-code-brackets: QueueTypeType](./literals.md#queuetypetype) 
 ## QueueTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QueueTypeDef
+
+def get_value() -> QueueTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QueueTypeDef(TypedDict):
+    Name: NotRequired[str],
+    QueueArn: NotRequired[str],
+    QueueId: NotRequired[str],
+    Description: NotRequired[str],
+    OutboundCallerConfig: NotRequired[OutboundCallerConfigTypeDef],  # (1)
+    HoursOfOperationId: NotRequired[str],
+    MaxContacts: NotRequired[int],
+    Status: NotRequired[QueueStatusType],  # (2)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Name`: `str`
-- `QueueArn`: `str`
-- `QueueId`: `str`
-- `Description`: `str`
-- `OutboundCallerConfig`:
-  [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
-- `HoursOfOperationId`: `str`
-- `MaxContacts`: `int`
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="quickconnectconfigtypedef"></a>
-
+1. See [:material-code-braces: OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef) 
+2. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
 ## QuickConnectConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QuickConnectConfigTypeDef
+
+def get_value() -> QuickConnectConfigTypeDef:
+    return {
+        "QuickConnectType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class QuickConnectConfigTypeDef(TypedDict):
+    QuickConnectType: QuickConnectTypeType,  # (1)
+    UserConfig: NotRequired[UserQuickConnectConfigTypeDef],  # (2)
+    QueueConfig: NotRequired[QueueQuickConnectConfigTypeDef],  # (3)
+    PhoneConfig: NotRequired[PhoneNumberQuickConnectConfigTypeDef],  # (4)
+```
 
-- `QuickConnectType`:
-  [QuickConnectTypeType](./literals.md#quickconnecttypetype)
-
-Optional fields:
-
-- `UserConfig`:
-  [UserQuickConnectConfigTypeDef](./type_defs.md#userquickconnectconfigtypedef)
-- `QueueConfig`:
-  [QueueQuickConnectConfigTypeDef](./type_defs.md#queuequickconnectconfigtypedef)
-- `PhoneConfig`:
-  [PhoneNumberQuickConnectConfigTypeDef](./type_defs.md#phonenumberquickconnectconfigtypedef)
-
-<a id="quickconnectsummarytypedef"></a>
-
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
+2. See [:material-code-braces: UserQuickConnectConfigTypeDef](./type_defs.md#userquickconnectconfigtypedef) 
+3. See [:material-code-braces: QueueQuickConnectConfigTypeDef](./type_defs.md#queuequickconnectconfigtypedef) 
+4. See [:material-code-braces: PhoneNumberQuickConnectConfigTypeDef](./type_defs.md#phonenumberquickconnectconfigtypedef) 
 ## QuickConnectSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QuickConnectSummaryTypeDef
+
+def get_value() -> QuickConnectSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QuickConnectSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+    QuickConnectType: NotRequired[QuickConnectTypeType],  # (1)
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-- `QuickConnectType`:
-  [QuickConnectTypeType](./literals.md#quickconnecttypetype)
-
-<a id="quickconnecttypedef"></a>
-
+1. See [:material-code-brackets: QuickConnectTypeType](./literals.md#quickconnecttypetype) 
 ## QuickConnectTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import QuickConnectTypeDef
+
+def get_value() -> QuickConnectTypeDef:
+    return {
+        "QuickConnectARN": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class QuickConnectTypeDef(TypedDict):
+    QuickConnectARN: NotRequired[str],
+    QuickConnectId: NotRequired[str],
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    QuickConnectConfig: NotRequired[QuickConnectConfigTypeDef],  # (1)
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `QuickConnectARN`: `str`
-- `QuickConnectId`: `str`
-- `Name`: `str`
-- `Description`: `str`
-- `QuickConnectConfig`:
-  [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="referencesummarytypedef"></a>
-
+1. See [:material-code-braces: QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef) 
 ## ReferenceSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ReferenceSummaryTypeDef
+
+def get_value() -> ReferenceSummaryTypeDef:
+    return {
+        "Url": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ReferenceSummaryTypeDef(TypedDict):
+    Url: NotRequired[UrlReferenceTypeDef],  # (1)
+    Attachment: NotRequired[AttachmentReferenceTypeDef],  # (2)
+```
 
-- `Url`: [UrlReferenceTypeDef](./type_defs.md#urlreferencetypedef)
-- `Attachment`:
-  [AttachmentReferenceTypeDef](./type_defs.md#attachmentreferencetypedef)
-
-<a id="referencetypedef"></a>
-
+1. See [:material-code-braces: UrlReferenceTypeDef](./type_defs.md#urlreferencetypedef) 
+2. See [:material-code-braces: AttachmentReferenceTypeDef](./type_defs.md#attachmentreferencetypedef) 
 ## ReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ReferenceTypeDef
+
+def get_value() -> ReferenceTypeDef:
+    return {
+        "Value": ...,
+        "Type": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class ReferenceTypeDef(TypedDict):
+    Value: str,
+    Type: ReferenceTypeType,  # (1)
+```
 
-- `Value`: `str`
-- `Type`: [ReferenceTypeType](./literals.md#referencetypetype)
-
-<a id="responsemetadatatypedef"></a>
-
+1. See [:material-code-brackets: ReferenceTypeType](./literals.md#referencetypetype) 
 ## ResponseMetadataTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ResponseMetadataTypeDef
+
+def get_value() -> ResponseMetadataTypeDef:
+    return {
+        "RequestId": ...,
+        "HostId": ...,
+        "HTTPStatusCode": ...,
+        "HTTPHeaders": ...,
+        "RetryAttempts": ...,
+    }
 ```
 
-Required fields:
-
-- `RequestId`: `str`
-- `HostId`: `str`
-- `HTTPStatusCode`: `int`
-- `HTTPHeaders`: `Dict`\[`str`, `str`\]
-- `RetryAttempts`: `int`
-
-<a id="resumecontactrecordingrequestrequesttypedef"></a>
+```python title="Definition"
+class ResponseMetadataTypeDef(TypedDict):
+    RequestId: str,
+    HostId: str,
+    HTTPStatusCode: int,
+    HTTPHeaders: Dict[str, str],
+    RetryAttempts: int,
+```
 
 ## ResumeContactRecordingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ResumeContactRecordingRequestRequestTypeDef
+
+def get_value() -> ResumeContactRecordingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "InitialContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `InitialContactId`: `str`
-
-<a id="routingprofilequeueconfigsummarytypedef"></a>
+```python title="Definition"
+class ResumeContactRecordingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+```
 
 ## RoutingProfileQueueConfigSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import RoutingProfileQueueConfigSummaryTypeDef
+
+def get_value() -> RoutingProfileQueueConfigSummaryTypeDef:
+    return {
+        "QueueId": ...,
+        "QueueArn": ...,
+        "QueueName": ...,
+        "Priority": ...,
+        "Delay": ...,
+        "Channel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoutingProfileQueueConfigSummaryTypeDef(TypedDict):
+    QueueId: str,
+    QueueArn: str,
+    QueueName: str,
+    Priority: int,
+    Delay: int,
+    Channel: ChannelType,  # (1)
+```
 
-- `QueueId`: `str`
-- `QueueArn`: `str`
-- `QueueName`: `str`
-- `Priority`: `int`
-- `Delay`: `int`
-- `Channel`: [ChannelType](./literals.md#channeltype)
-
-<a id="routingprofilequeueconfigtypedef"></a>
-
+1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## RoutingProfileQueueConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import RoutingProfileQueueConfigTypeDef
+
+def get_value() -> RoutingProfileQueueConfigTypeDef:
+    return {
+        "QueueReference": ...,
+        "Priority": ...,
+        "Delay": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoutingProfileQueueConfigTypeDef(TypedDict):
+    QueueReference: RoutingProfileQueueReferenceTypeDef,  # (1)
+    Priority: int,
+    Delay: int,
+```
 
-- `QueueReference`:
-  [RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)
-- `Priority`: `int`
-- `Delay`: `int`
-
-<a id="routingprofilequeuereferencetypedef"></a>
-
+1. See [:material-code-braces: RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef) 
 ## RoutingProfileQueueReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import RoutingProfileQueueReferenceTypeDef
+
+def get_value() -> RoutingProfileQueueReferenceTypeDef:
+    return {
+        "QueueId": ...,
+        "Channel": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class RoutingProfileQueueReferenceTypeDef(TypedDict):
+    QueueId: str,
+    Channel: ChannelType,  # (1)
+```
 
-- `QueueId`: `str`
-- `Channel`: [ChannelType](./literals.md#channeltype)
-
-<a id="routingprofilesummarytypedef"></a>
-
+1. See [:material-code-brackets: ChannelType](./literals.md#channeltype) 
 ## RoutingProfileSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import RoutingProfileSummaryTypeDef
+
+def get_value() -> RoutingProfileSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="routingprofiletypedef"></a>
+```python title="Definition"
+class RoutingProfileSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## RoutingProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import RoutingProfileTypeDef
+
+def get_value() -> RoutingProfileTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class RoutingProfileTypeDef(TypedDict):
+    InstanceId: NotRequired[str],
+    Name: NotRequired[str],
+    RoutingProfileArn: NotRequired[str],
+    RoutingProfileId: NotRequired[str],
+    Description: NotRequired[str],
+    MediaConcurrencies: NotRequired[List[MediaConcurrencyTypeDef]],  # (1)
+    DefaultOutboundQueueId: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `InstanceId`: `str`
-- `Name`: `str`
-- `RoutingProfileArn`: `str`
-- `RoutingProfileId`: `str`
-- `Description`: `str`
-- `MediaConcurrencies`:
-  `List`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
-- `DefaultOutboundQueueId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="s3configtypedef"></a>
-
+1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
 ## S3ConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import S3ConfigTypeDef
+
+def get_value() -> S3ConfigTypeDef:
+    return {
+        "BucketName": ...,
+        "BucketPrefix": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class S3ConfigTypeDef(TypedDict):
+    BucketName: str,
+    BucketPrefix: str,
+    EncryptionConfig: NotRequired[EncryptionConfigTypeDef],  # (1)
+```
 
-- `BucketName`: `str`
-- `BucketPrefix`: `str`
-
-Optional fields:
-
-- `EncryptionConfig`:
-  [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
-
-<a id="searchvocabulariesrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef) 
 ## SearchVocabulariesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SearchVocabulariesRequestRequestTypeDef
+
+def get_value() -> SearchVocabulariesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchVocabulariesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    MaxResults: NotRequired[int],
+    NextToken: NotRequired[str],
+    State: NotRequired[VocabularyStateType],  # (1)
+    NameStartsWith: NotRequired[str],
+    LanguageCode: NotRequired[VocabularyLanguageCodeType],  # (2)
+```
 
-- `InstanceId`: `str`
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+## SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef
 
-Optional fields:
+```python title="Usage Example"
+from mypy_boto3_connect.type_defs import SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef
 
-- `MaxResults`: `int`
-- `NextToken`: `str`
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `NameStartsWith`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+def get_value() -> SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef:
+    return {
+        "InstanceId": ...,
+    }
+```
 
-<a id="searchvocabulariesresponsetypedef"></a>
+```python title="Definition"
+class SearchVocabulariesRequestSearchVocabulariesPaginateTypeDef(TypedDict):
+    InstanceId: str,
+    State: NotRequired[VocabularyStateType],  # (1)
+    NameStartsWith: NotRequired[str],
+    LanguageCode: NotRequired[VocabularyLanguageCodeType],  # (2)
+    PaginationConfig: NotRequired[PaginatorConfigTypeDef],  # (3)
+```
 
+1. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
+2. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
 ## SearchVocabulariesResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SearchVocabulariesResponseTypeDef
+
+def get_value() -> SearchVocabulariesResponseTypeDef:
+    return {
+        "VocabularySummaryList": ...,
+        "NextToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class SearchVocabulariesResponseTypeDef(TypedDict):
+    VocabularySummaryList: List[VocabularySummaryTypeDef],  # (1)
+    NextToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (2)
+```
 
-- `VocabularySummaryList`:
-  `List`\[[VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="securitykeytypedef"></a>
-
+1. See [:material-code-braces: VocabularySummaryTypeDef](./type_defs.md#vocabularysummarytypedef) 
+2. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## SecurityKeyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SecurityKeyTypeDef
+
+def get_value() -> SecurityKeyTypeDef:
+    return {
+        "AssociationId": ...,
+    }
 ```
 
-Optional fields:
-
-- `AssociationId`: `str`
-- `Key`: `str`
-- `CreationTime`: `datetime`
-
-<a id="securityprofilesummarytypedef"></a>
+```python title="Definition"
+class SecurityKeyTypeDef(TypedDict):
+    AssociationId: NotRequired[str],
+    Key: NotRequired[str],
+    CreationTime: NotRequired[datetime],
+```
 
 ## SecurityProfileSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SecurityProfileSummaryTypeDef
+
+def get_value() -> SecurityProfileSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Name`: `str`
-
-<a id="securityprofiletypedef"></a>
+```python title="Definition"
+class SecurityProfileSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Name: NotRequired[str],
+```
 
 ## SecurityProfileTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SecurityProfileTypeDef
+
+def get_value() -> SecurityProfileTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `OrganizationResourceId`: `str`
-- `Arn`: `str`
-- `SecurityProfileName`: `str`
-- `Description`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="startchatcontactrequestrequesttypedef"></a>
+```python title="Definition"
+class SecurityProfileTypeDef(TypedDict):
+    Id: NotRequired[str],
+    OrganizationResourceId: NotRequired[str],
+    Arn: NotRequired[str],
+    SecurityProfileName: NotRequired[str],
+    Description: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
 ## StartChatContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartChatContactRequestRequestTypeDef
+
+def get_value() -> StartChatContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+        "ParticipantDetails": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChatContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    ParticipantDetails: ParticipantDetailsTypeDef,  # (1)
+    Attributes: NotRequired[Mapping[str, str]],
+    InitialMessage: NotRequired[ChatMessageTypeDef],  # (2)
+    ClientToken: NotRequired[str],
+    ChatDurationInMinutes: NotRequired[int],
+    SupportedMessagingContentTypes: NotRequired[Sequence[str]],
+```
 
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-- `ParticipantDetails`:
-  [ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef)
-
-Optional fields:
-
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
-- `ClientToken`: `str`
-- `ChatDurationInMinutes`: `int`
-- `SupportedMessagingContentTypes`: `Sequence`\[`str`\]
-
-<a id="startchatcontactresponsetypedef"></a>
-
+1. See [:material-code-braces: ParticipantDetailsTypeDef](./type_defs.md#participantdetailstypedef) 
+2. See [:material-code-braces: ChatMessageTypeDef](./type_defs.md#chatmessagetypedef) 
 ## StartChatContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartChatContactResponseTypeDef
+
+def get_value() -> StartChatContactResponseTypeDef:
+    return {
+        "ContactId": ...,
+        "ParticipantId": ...,
+        "ParticipantToken": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartChatContactResponseTypeDef(TypedDict):
+    ContactId: str,
+    ParticipantId: str,
+    ParticipantToken: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactId`: `str`
-- `ParticipantId`: `str`
-- `ParticipantToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startcontactrecordingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartContactRecordingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartContactRecordingRequestRequestTypeDef
+
+def get_value() -> StartContactRecordingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "InitialContactId": ...,
+        "VoiceRecordingConfiguration": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContactRecordingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+    VoiceRecordingConfiguration: VoiceRecordingConfigurationTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `InitialContactId`: `str`
-- `VoiceRecordingConfiguration`:
-  [VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef)
-
-<a id="startcontactstreamingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: VoiceRecordingConfigurationTypeDef](./type_defs.md#voicerecordingconfigurationtypedef) 
 ## StartContactStreamingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartContactStreamingRequestRequestTypeDef
+
+def get_value() -> StartContactStreamingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ChatStreamingConfiguration": ...,
+        "ClientToken": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContactStreamingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ChatStreamingConfiguration: ChatStreamingConfigurationTypeDef,  # (1)
+    ClientToken: str,
+```
 
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `ChatStreamingConfiguration`:
-  [ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef)
-- `ClientToken`: `str`
-
-<a id="startcontactstreamingresponsetypedef"></a>
-
+1. See [:material-code-braces: ChatStreamingConfigurationTypeDef](./type_defs.md#chatstreamingconfigurationtypedef) 
 ## StartContactStreamingResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartContactStreamingResponseTypeDef
+
+def get_value() -> StartContactStreamingResponseTypeDef:
+    return {
+        "StreamingId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartContactStreamingResponseTypeDef(TypedDict):
+    StreamingId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `StreamingId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="startoutboundvoicecontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartOutboundVoiceContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartOutboundVoiceContactRequestRequestTypeDef
+
+def get_value() -> StartOutboundVoiceContactRequestRequestTypeDef:
+    return {
+        "DestinationPhoneNumber": ...,
+        "ContactFlowId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartOutboundVoiceContactRequestRequestTypeDef(TypedDict):
+    DestinationPhoneNumber: str,
+    ContactFlowId: str,
+    InstanceId: str,
+    ClientToken: NotRequired[str],
+    SourcePhoneNumber: NotRequired[str],
+    QueueId: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+    AnswerMachineDetectionConfig: NotRequired[AnswerMachineDetectionConfigTypeDef],  # (1)
+    CampaignId: NotRequired[str],
+    TrafficType: NotRequired[TrafficTypeType],  # (2)
+```
 
-- `DestinationPhoneNumber`: `str`
-- `ContactFlowId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `ClientToken`: `str`
-- `SourcePhoneNumber`: `str`
-- `QueueId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `AnswerMachineDetectionConfig`:
-  [AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef)
-- `CampaignId`: `str`
-- `TrafficType`: [TrafficTypeType](./literals.md#traffictypetype)
-
-<a id="startoutboundvoicecontactresponsetypedef"></a>
-
+1. See [:material-code-braces: AnswerMachineDetectionConfigTypeDef](./type_defs.md#answermachinedetectionconfigtypedef) 
+2. See [:material-code-brackets: TrafficTypeType](./literals.md#traffictypetype) 
 ## StartOutboundVoiceContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartOutboundVoiceContactResponseTypeDef
+
+def get_value() -> StartOutboundVoiceContactResponseTypeDef:
+    return {
+        "ContactId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartOutboundVoiceContactResponseTypeDef(TypedDict):
+    ContactId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="starttaskcontactrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StartTaskContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartTaskContactRequestRequestTypeDef
+
+def get_value() -> StartTaskContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+        "Name": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTaskContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: str,
+    PreviousContactId: NotRequired[str],
+    Attributes: NotRequired[Mapping[str, str]],
+    References: NotRequired[Mapping[str, ReferenceTypeDef]],  # (1)
+    Description: NotRequired[str],
+    ClientToken: NotRequired[str],
+    ScheduledTime: NotRequired[Union[datetime, str]],
+```
 
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-- `Name`: `str`
-
-Optional fields:
-
-- `PreviousContactId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-- `References`: `Mapping`\[`str`,
-  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
-- `Description`: `str`
-- `ClientToken`: `str`
-- `ScheduledTime`: `Union`\[`datetime`, `str`\]
-
-<a id="starttaskcontactresponsetypedef"></a>
-
+1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
 ## StartTaskContactResponseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StartTaskContactResponseTypeDef
+
+def get_value() -> StartTaskContactResponseTypeDef:
+    return {
+        "ContactId": ...,
+        "ResponseMetadata": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class StartTaskContactResponseTypeDef(TypedDict):
+    ContactId: str,
+    ResponseMetadata: ResponseMetadataTypeDef,  # (1)
+```
 
-- `ContactId`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="stopcontactrecordingrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef) 
 ## StopContactRecordingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StopContactRecordingRequestRequestTypeDef
+
+def get_value() -> StopContactRecordingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "InitialContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `InitialContactId`: `str`
-
-<a id="stopcontactrequestrequesttypedef"></a>
+```python title="Definition"
+class StopContactRecordingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+```
 
 ## StopContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StopContactRequestRequestTypeDef
+
+def get_value() -> StopContactRequestRequestTypeDef:
+    return {
+        "ContactId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `ContactId`: `str`
-- `InstanceId`: `str`
-
-<a id="stopcontactstreamingrequestrequesttypedef"></a>
+```python title="Definition"
+class StopContactRequestRequestTypeDef(TypedDict):
+    ContactId: str,
+    InstanceId: str,
+```
 
 ## StopContactStreamingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import StopContactStreamingRequestRequestTypeDef
+
+def get_value() -> StopContactStreamingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "StreamingId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `StreamingId`: `str`
-
-<a id="suspendcontactrecordingrequestrequesttypedef"></a>
+```python title="Definition"
+class StopContactStreamingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    StreamingId: str,
+```
 
 ## SuspendContactRecordingRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import SuspendContactRecordingRequestRequestTypeDef
+
+def get_value() -> SuspendContactRecordingRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "InitialContactId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `InitialContactId`: `str`
-
-<a id="tagresourcerequestrequesttypedef"></a>
+```python title="Definition"
+class SuspendContactRecordingRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    InitialContactId: str,
+```
 
 ## TagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import TagResourceRequestRequestTypeDef
+
+def get_value() -> TagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tags": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tags`: `Mapping`\[`str`, `str`\]
-
-<a id="thresholdtypedef"></a>
+```python title="Definition"
+class TagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tags: Mapping[str, str],
+```
 
 ## ThresholdTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import ThresholdTypeDef
+
+def get_value() -> ThresholdTypeDef:
+    return {
+        "Comparison": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class ThresholdTypeDef(TypedDict):
+    Comparison: NotRequired[ComparisonType],  # (1)
+    ThresholdValue: NotRequired[float],
+```
 
-- `Comparison`: `Literal['LT']` (see
-  [ComparisonType](./literals.md#comparisontype))
-- `ThresholdValue`: `float`
-
-<a id="untagresourcerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ComparisonType](./literals.md#comparisontype) 
 ## UntagResourceRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UntagResourceRequestRequestTypeDef
+
+def get_value() -> UntagResourceRequestRequestTypeDef:
+    return {
+        "resourceArn": ...,
+        "tagKeys": ...,
+    }
 ```
 
-Required fields:
-
-- `resourceArn`: `str`
-- `tagKeys`: `Sequence`\[`str`\]
-
-<a id="updateagentstatusrequestrequesttypedef"></a>
+```python title="Definition"
+class UntagResourceRequestRequestTypeDef(TypedDict):
+    resourceArn: str,
+    tagKeys: Sequence[str],
+```
 
 ## UpdateAgentStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateAgentStatusRequestRequestTypeDef
+
+def get_value() -> UpdateAgentStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AgentStatusId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateAgentStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AgentStatusId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[AgentStatusStateType],  # (1)
+    DisplayOrder: NotRequired[int],
+    ResetOrderNumber: NotRequired[bool],
+```
 
-- `InstanceId`: `str`
-- `AgentStatusId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
-- `DisplayOrder`: `int`
-- `ResetOrderNumber`: `bool`
-
-<a id="updatecontactattributesrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: AgentStatusStateType](./literals.md#agentstatusstatetype) 
 ## UpdateContactAttributesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactAttributesRequestRequestTypeDef
+
+def get_value() -> UpdateContactAttributesRequestRequestTypeDef:
+    return {
+        "InitialContactId": ...,
+        "InstanceId": ...,
+        "Attributes": ...,
+    }
 ```
 
-Required fields:
-
-- `InitialContactId`: `str`
-- `InstanceId`: `str`
-- `Attributes`: `Mapping`\[`str`, `str`\]
-
-<a id="updatecontactflowcontentrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateContactAttributesRequestRequestTypeDef(TypedDict):
+    InitialContactId: str,
+    InstanceId: str,
+    Attributes: Mapping[str, str],
+```
 
 ## UpdateContactFlowContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactFlowContentRequestRequestTypeDef
+
+def get_value() -> UpdateContactFlowContentRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-- `Content`: `str`
-
-<a id="updatecontactflowmetadatarequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateContactFlowContentRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    Content: str,
+```
 
 ## UpdateContactFlowMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactFlowMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateContactFlowMetadataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactFlowMetadataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    ContactFlowState: NotRequired[ContactFlowStateType],  # (1)
+```
 
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `ContactFlowState`:
-  [ContactFlowStateType](./literals.md#contactflowstatetype)
-
-<a id="updatecontactflowmodulecontentrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowStateType](./literals.md#contactflowstatetype) 
 ## UpdateContactFlowModuleContentRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactFlowModuleContentRequestRequestTypeDef
+
+def get_value() -> UpdateContactFlowModuleContentRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowModuleId": ...,
+        "Content": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowModuleId`: `str`
-- `Content`: `str`
-
-<a id="updatecontactflowmodulemetadatarequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateContactFlowModuleContentRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowModuleId: str,
+    Content: str,
+```
 
 ## UpdateContactFlowModuleMetadataRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactFlowModuleMetadataRequestRequestTypeDef
+
+def get_value() -> UpdateContactFlowModuleMetadataRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowModuleId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactFlowModuleMetadataRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowModuleId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    State: NotRequired[ContactFlowModuleStateType],  # (1)
+```
 
-- `InstanceId`: `str`
-- `ContactFlowModuleId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `State`:
-  [ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype)
-
-<a id="updatecontactflownamerequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: ContactFlowModuleStateType](./literals.md#contactflowmodulestatetype) 
 ## UpdateContactFlowNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactFlowNameRequestRequestTypeDef
+
+def get_value() -> UpdateContactFlowNameRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactFlowId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updatecontactrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateContactFlowNameRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactFlowId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateContactRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactRequestRequestTypeDef
+
+def get_value() -> UpdateContactRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateContactRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    References: NotRequired[Mapping[str, ReferenceTypeDef]],  # (1)
+```
 
-- `InstanceId`: `str`
-- `ContactId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `References`: `Mapping`\[`str`,
-  [ReferenceTypeDef](./type_defs.md#referencetypedef)\]
-
-<a id="updatecontactschedulerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: ReferenceTypeDef](./type_defs.md#referencetypedef) 
 ## UpdateContactScheduleRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateContactScheduleRequestRequestTypeDef
+
+def get_value() -> UpdateContactScheduleRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "ContactId": ...,
+        "ScheduledTime": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `ContactId`: `str`
-- `ScheduledTime`: `Union`\[`datetime`, `str`\]
-
-<a id="updatehoursofoperationrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateContactScheduleRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    ContactId: str,
+    ScheduledTime: Union[datetime, str],
+```
 
 ## UpdateHoursOfOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateHoursOfOperationRequestRequestTypeDef
+
+def get_value() -> UpdateHoursOfOperationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateHoursOfOperationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    HoursOfOperationId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+    TimeZone: NotRequired[str],
+    Config: NotRequired[Sequence[HoursOfOperationConfigTypeDef]],  # (1)
+```
 
-- `InstanceId`: `str`
-- `HoursOfOperationId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-- `TimeZone`: `str`
-- `Config`:
-  `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
-
-<a id="updateinstanceattributerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef) 
 ## UpdateInstanceAttributeRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateInstanceAttributeRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceAttributeRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AttributeType": ...,
+        "Value": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceAttributeRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AttributeType: InstanceAttributeTypeType,  # (1)
+    Value: str,
+```
 
-- `InstanceId`: `str`
-- `AttributeType`:
-  [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
-- `Value`: `str`
-
-<a id="updateinstancestorageconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InstanceAttributeTypeType](./literals.md#instanceattributetypetype) 
 ## UpdateInstanceStorageConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateInstanceStorageConfigRequestRequestTypeDef
+
+def get_value() -> UpdateInstanceStorageConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "AssociationId": ...,
+        "ResourceType": ...,
+        "StorageConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateInstanceStorageConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    AssociationId: str,
+    ResourceType: InstanceStorageResourceTypeType,  # (1)
+    StorageConfig: InstanceStorageConfigTypeDef,  # (2)
+```
 
-- `InstanceId`: `str`
-- `AssociationId`: `str`
-- `ResourceType`:
-  [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
-- `StorageConfig`:
-  [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
-
-<a id="updatequeuehoursofoperationrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype) 
+2. See [:material-code-braces: InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef) 
 ## UpdateQueueHoursOfOperationRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQueueHoursOfOperationRequestRequestTypeDef
+
+def get_value() -> UpdateQueueHoursOfOperationRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+        "HoursOfOperationId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-- `HoursOfOperationId`: `str`
-
-<a id="updatequeuemaxcontactsrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateQueueHoursOfOperationRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    HoursOfOperationId: str,
+```
 
 ## UpdateQueueMaxContactsRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQueueMaxContactsRequestRequestTypeDef
+
+def get_value() -> UpdateQueueMaxContactsRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-
-Optional fields:
-
-- `MaxContacts`: `int`
-
-<a id="updatequeuenamerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateQueueMaxContactsRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    MaxContacts: NotRequired[int],
+```
 
 ## UpdateQueueNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQueueNameRequestRequestTypeDef
+
+def get_value() -> UpdateQueueNameRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QueueId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updatequeueoutboundcallerconfigrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateQueueNameRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateQueueOutboundCallerConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQueueOutboundCallerConfigRequestRequestTypeDef
+
+def get_value() -> UpdateQueueOutboundCallerConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+        "OutboundCallerConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQueueOutboundCallerConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    OutboundCallerConfig: OutboundCallerConfigTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `QueueId`: `str`
-- `OutboundCallerConfig`:
-  [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
-
-<a id="updatequeuestatusrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef) 
 ## UpdateQueueStatusRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQueueStatusRequestRequestTypeDef
+
+def get_value() -> UpdateQueueStatusRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QueueId": ...,
+        "Status": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQueueStatusRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QueueId: str,
+    Status: QueueStatusType,  # (1)
+```
 
-- `InstanceId`: `str`
-- `QueueId`: `str`
-- `Status`: [QueueStatusType](./literals.md#queuestatustype)
-
-<a id="updatequickconnectconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-brackets: QueueStatusType](./literals.md#queuestatustype) 
 ## UpdateQuickConnectConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQuickConnectConfigRequestRequestTypeDef
+
+def get_value() -> UpdateQuickConnectConfigRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QuickConnectId": ...,
+        "QuickConnectConfig": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateQuickConnectConfigRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QuickConnectId: str,
+    QuickConnectConfig: QuickConnectConfigTypeDef,  # (1)
+```
 
-- `InstanceId`: `str`
-- `QuickConnectId`: `str`
-- `QuickConnectConfig`:
-  [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
-
-<a id="updatequickconnectnamerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef) 
 ## UpdateQuickConnectNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateQuickConnectNameRequestRequestTypeDef
+
+def get_value() -> UpdateQuickConnectNameRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "QuickConnectId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `QuickConnectId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updateroutingprofileconcurrencyrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateQuickConnectNameRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    QuickConnectId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateRoutingProfileConcurrencyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateRoutingProfileConcurrencyRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingProfileConcurrencyRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+        "MediaConcurrencies": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoutingProfileConcurrencyRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    MediaConcurrencies: Sequence[MediaConcurrencyTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-- `MediaConcurrencies`:
-  `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
-
-<a id="updateroutingprofiledefaultoutboundqueuerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef) 
 ## UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+        "DefaultOutboundQueueId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-- `DefaultOutboundQueueId`: `str`
-
-<a id="updateroutingprofilenamerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRoutingProfileDefaultOutboundQueueRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    DefaultOutboundQueueId: str,
+```
 
 ## UpdateRoutingProfileNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateRoutingProfileNameRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingProfileNameRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+    }
 ```
 
-Required fields:
-
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-
-Optional fields:
-
-- `Name`: `str`
-- `Description`: `str`
-
-<a id="updateroutingprofilequeuesrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateRoutingProfileNameRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    Name: NotRequired[str],
+    Description: NotRequired[str],
+```
 
 ## UpdateRoutingProfileQueuesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateRoutingProfileQueuesRequestRequestTypeDef
+
+def get_value() -> UpdateRoutingProfileQueuesRequestRequestTypeDef:
+    return {
+        "InstanceId": ...,
+        "RoutingProfileId": ...,
+        "QueueConfigs": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateRoutingProfileQueuesRequestRequestTypeDef(TypedDict):
+    InstanceId: str,
+    RoutingProfileId: str,
+    QueueConfigs: Sequence[RoutingProfileQueueConfigTypeDef],  # (1)
+```
 
-- `InstanceId`: `str`
-- `RoutingProfileId`: `str`
-- `QueueConfigs`:
-  `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
-
-<a id="updatesecurityprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef) 
 ## UpdateSecurityProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateSecurityProfileRequestRequestTypeDef
+
+def get_value() -> UpdateSecurityProfileRequestRequestTypeDef:
+    return {
+        "SecurityProfileId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecurityProfileId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `Description`: `str`
-- `Permissions`: `Sequence`\[`str`\]
-
-<a id="updateuserhierarchygroupnamerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateSecurityProfileRequestRequestTypeDef(TypedDict):
+    SecurityProfileId: str,
+    InstanceId: str,
+    Description: NotRequired[str],
+    Permissions: NotRequired[Sequence[str]],
+```
 
 ## UpdateUserHierarchyGroupNameRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserHierarchyGroupNameRequestRequestTypeDef
+
+def get_value() -> UpdateUserHierarchyGroupNameRequestRequestTypeDef:
+    return {
+        "Name": ...,
+        "HierarchyGroupId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `Name`: `str`
-- `HierarchyGroupId`: `str`
-- `InstanceId`: `str`
-
-<a id="updateuserhierarchyrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateUserHierarchyGroupNameRequestRequestTypeDef(TypedDict):
+    Name: str,
+    HierarchyGroupId: str,
+    InstanceId: str,
+```
 
 ## UpdateUserHierarchyRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserHierarchyRequestRequestTypeDef
+
+def get_value() -> UpdateUserHierarchyRequestRequestTypeDef:
+    return {
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-Optional fields:
-
-- `HierarchyGroupId`: `str`
-
-<a id="updateuserhierarchystructurerequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateUserHierarchyRequestRequestTypeDef(TypedDict):
+    UserId: str,
+    InstanceId: str,
+    HierarchyGroupId: NotRequired[str],
+```
 
 ## UpdateUserHierarchyStructureRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserHierarchyStructureRequestRequestTypeDef
+
+def get_value() -> UpdateUserHierarchyStructureRequestRequestTypeDef:
+    return {
+        "HierarchyStructure": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserHierarchyStructureRequestRequestTypeDef(TypedDict):
+    HierarchyStructure: HierarchyStructureUpdateTypeDef,  # (1)
+    InstanceId: str,
+```
 
-- `HierarchyStructure`:
-  [HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef)
-- `InstanceId`: `str`
-
-<a id="updateuseridentityinforequestrequesttypedef"></a>
-
+1. See [:material-code-braces: HierarchyStructureUpdateTypeDef](./type_defs.md#hierarchystructureupdatetypedef) 
 ## UpdateUserIdentityInfoRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserIdentityInfoRequestRequestTypeDef
+
+def get_value() -> UpdateUserIdentityInfoRequestRequestTypeDef:
+    return {
+        "IdentityInfo": ...,
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserIdentityInfoRequestRequestTypeDef(TypedDict):
+    IdentityInfo: UserIdentityInfoTypeDef,  # (1)
+    UserId: str,
+    InstanceId: str,
+```
 
-- `IdentityInfo`:
-  [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-<a id="updateuserphoneconfigrequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef) 
 ## UpdateUserPhoneConfigRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserPhoneConfigRequestRequestTypeDef
+
+def get_value() -> UpdateUserPhoneConfigRequestRequestTypeDef:
+    return {
+        "PhoneConfig": ...,
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UpdateUserPhoneConfigRequestRequestTypeDef(TypedDict):
+    PhoneConfig: UserPhoneConfigTypeDef,  # (1)
+    UserId: str,
+    InstanceId: str,
+```
 
-- `PhoneConfig`:
-  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-<a id="updateuserroutingprofilerequestrequesttypedef"></a>
-
+1. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
 ## UpdateUserRoutingProfileRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserRoutingProfileRequestRequestTypeDef
+
+def get_value() -> UpdateUserRoutingProfileRequestRequestTypeDef:
+    return {
+        "RoutingProfileId": ...,
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `RoutingProfileId`: `str`
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-<a id="updateusersecurityprofilesrequestrequesttypedef"></a>
+```python title="Definition"
+class UpdateUserRoutingProfileRequestRequestTypeDef(TypedDict):
+    RoutingProfileId: str,
+    UserId: str,
+    InstanceId: str,
+```
 
 ## UpdateUserSecurityProfilesRequestRequestTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UpdateUserSecurityProfilesRequestRequestTypeDef
+
+def get_value() -> UpdateUserSecurityProfilesRequestRequestTypeDef:
+    return {
+        "SecurityProfileIds": ...,
+        "UserId": ...,
+        "InstanceId": ...,
+    }
 ```
 
-Required fields:
-
-- `SecurityProfileIds`: `Sequence`\[`str`\]
-- `UserId`: `str`
-- `InstanceId`: `str`
-
-<a id="urlreferencetypedef"></a>
+```python title="Definition"
+class UpdateUserSecurityProfilesRequestRequestTypeDef(TypedDict):
+    SecurityProfileIds: Sequence[str],
+    UserId: str,
+    InstanceId: str,
+```
 
 ## UrlReferenceTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UrlReferenceTypeDef
+
+def get_value() -> UrlReferenceTypeDef:
+    return {
+        "Name": ...,
+    }
 ```
 
-Optional fields:
-
-- `Name`: `str`
-- `Value`: `str`
-
-<a id="usecasetypedef"></a>
+```python title="Definition"
+class UrlReferenceTypeDef(TypedDict):
+    Name: NotRequired[str],
+    Value: NotRequired[str],
+```
 
 ## UseCaseTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UseCaseTypeDef
+
+def get_value() -> UseCaseTypeDef:
+    return {
+        "UseCaseId": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UseCaseTypeDef(TypedDict):
+    UseCaseId: NotRequired[str],
+    UseCaseArn: NotRequired[str],
+    UseCaseType: NotRequired[UseCaseTypeType],  # (1)
+```
 
-- `UseCaseId`: `str`
-- `UseCaseArn`: `str`
-- `UseCaseType`: [UseCaseTypeType](./literals.md#usecasetypetype)
-
-<a id="useridentityinfotypedef"></a>
-
+1. See [:material-code-brackets: UseCaseTypeType](./literals.md#usecasetypetype) 
 ## UserIdentityInfoTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UserIdentityInfoTypeDef
+
+def get_value() -> UserIdentityInfoTypeDef:
+    return {
+        "FirstName": ...,
+    }
 ```
 
-Optional fields:
-
-- `FirstName`: `str`
-- `LastName`: `str`
-- `Email`: `str`
-
-<a id="userphoneconfigtypedef"></a>
+```python title="Definition"
+class UserIdentityInfoTypeDef(TypedDict):
+    FirstName: NotRequired[str],
+    LastName: NotRequired[str],
+    Email: NotRequired[str],
+```
 
 ## UserPhoneConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UserPhoneConfigTypeDef
+
+def get_value() -> UserPhoneConfigTypeDef:
+    return {
+        "PhoneType": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class UserPhoneConfigTypeDef(TypedDict):
+    PhoneType: PhoneTypeType,  # (1)
+    AutoAccept: NotRequired[bool],
+    AfterContactWorkTimeLimit: NotRequired[int],
+    DeskPhoneNumber: NotRequired[str],
+```
 
-- `PhoneType`: [PhoneTypeType](./literals.md#phonetypetype)
-
-Optional fields:
-
-- `AutoAccept`: `bool`
-- `AfterContactWorkTimeLimit`: `int`
-- `DeskPhoneNumber`: `str`
-
-<a id="userquickconnectconfigtypedef"></a>
-
+1. See [:material-code-brackets: PhoneTypeType](./literals.md#phonetypetype) 
 ## UserQuickConnectConfigTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UserQuickConnectConfigTypeDef
+
+def get_value() -> UserQuickConnectConfigTypeDef:
+    return {
+        "UserId": ...,
+        "ContactFlowId": ...,
+    }
 ```
 
-Required fields:
-
-- `UserId`: `str`
-- `ContactFlowId`: `str`
-
-<a id="usersummarytypedef"></a>
+```python title="Definition"
+class UserQuickConnectConfigTypeDef(TypedDict):
+    UserId: str,
+    ContactFlowId: str,
+```
 
 ## UserSummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UserSummaryTypeDef
+
+def get_value() -> UserSummaryTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
-
-- `Id`: `str`
-- `Arn`: `str`
-- `Username`: `str`
-
-<a id="usertypedef"></a>
+```python title="Definition"
+class UserSummaryTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Username: NotRequired[str],
+```
 
 ## UserTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import UserTypeDef
+
+def get_value() -> UserTypeDef:
+    return {
+        "Id": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class UserTypeDef(TypedDict):
+    Id: NotRequired[str],
+    Arn: NotRequired[str],
+    Username: NotRequired[str],
+    IdentityInfo: NotRequired[UserIdentityInfoTypeDef],  # (1)
+    PhoneConfig: NotRequired[UserPhoneConfigTypeDef],  # (2)
+    DirectoryUserId: NotRequired[str],
+    SecurityProfileIds: NotRequired[List[str]],
+    RoutingProfileId: NotRequired[str],
+    HierarchyGroupId: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Id`: `str`
-- `Arn`: `str`
-- `Username`: `str`
-- `IdentityInfo`:
-  [UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef)
-- `PhoneConfig`:
-  [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef)
-- `DirectoryUserId`: `str`
-- `SecurityProfileIds`: `List`\[`str`\]
-- `RoutingProfileId`: `str`
-- `HierarchyGroupId`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="vocabularysummarytypedef"></a>
-
+1. See [:material-code-braces: UserIdentityInfoTypeDef](./type_defs.md#useridentityinfotypedef) 
+2. See [:material-code-braces: UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) 
 ## VocabularySummaryTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import VocabularySummaryTypeDef
+
+def get_value() -> VocabularySummaryTypeDef:
+    return {
+        "Name": ...,
+        "Id": ...,
+        "Arn": ...,
+        "LanguageCode": ...,
+        "State": ...,
+        "LastModifiedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VocabularySummaryTypeDef(TypedDict):
+    Name: str,
+    Id: str,
+    Arn: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    State: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: NotRequired[str],
+```
 
-- `Name`: `str`
-- `Id`: `str`
-- `Arn`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-
-Optional fields:
-
-- `FailureReason`: `str`
-
-<a id="vocabularytypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
 ## VocabularyTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import VocabularyTypeDef
+
+def get_value() -> VocabularyTypeDef:
+    return {
+        "Name": ...,
+        "Id": ...,
+        "Arn": ...,
+        "LanguageCode": ...,
+        "State": ...,
+        "LastModifiedTime": ...,
+    }
 ```
 
-Required fields:
+```python title="Definition"
+class VocabularyTypeDef(TypedDict):
+    Name: str,
+    Id: str,
+    Arn: str,
+    LanguageCode: VocabularyLanguageCodeType,  # (1)
+    State: VocabularyStateType,  # (2)
+    LastModifiedTime: datetime,
+    FailureReason: NotRequired[str],
+    Content: NotRequired[str],
+    Tags: NotRequired[Dict[str, str]],
+```
 
-- `Name`: `str`
-- `Id`: `str`
-- `Arn`: `str`
-- `LanguageCode`:
-  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
-- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
-- `LastModifiedTime`: `datetime`
-
-Optional fields:
-
-- `FailureReason`: `str`
-- `Content`: `str`
-- `Tags`: `Dict`\[`str`, `str`\]
-
-<a id="voicerecordingconfigurationtypedef"></a>
-
+1. See [:material-code-brackets: VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype) 
+2. See [:material-code-brackets: VocabularyStateType](./literals.md#vocabularystatetype) 
 ## VoiceRecordingConfigurationTypeDef
 
-```python
+```python title="Usage Example"
 from mypy_boto3_connect.type_defs import VoiceRecordingConfigurationTypeDef
+
+def get_value() -> VoiceRecordingConfigurationTypeDef:
+    return {
+        "VoiceRecordingTrack": ...,
+    }
 ```
 
-Optional fields:
+```python title="Definition"
+class VoiceRecordingConfigurationTypeDef(TypedDict):
+    VoiceRecordingTrack: NotRequired[VoiceRecordingTrackType],  # (1)
+```
 
-- `VoiceRecordingTrack`:
-  [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)
+1. See [:material-code-brackets: VoiceRecordingTrackType](./literals.md#voicerecordingtracktype) 

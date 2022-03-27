@@ -1,90 +1,18 @@
-<a id="workspacesclient-for-boto3-workspaces-module"></a>
-
-# WorkSpacesClient for boto3 WorkSpaces module
+# WorkSpacesClient
 
 > [Index](../README.md) > [WorkSpaces](./README.md) > WorkSpacesClient
 
-Auto-generated documentation for
-[WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
-type annotations stubs module
-[mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
+!!! note ""
 
-- [WorkSpacesClient for boto3 WorkSpaces module](#workspacesclient-for-boto3-workspaces-module)
-  - [WorkSpacesClient](#workspacesclient)
-  - [Exceptions](#exceptions)
-  - [Methods](#methods)
-    - [exceptions](#exceptions)
-    - [associate_connection_alias](#associate_connection_alias)
-    - [associate_ip_groups](#associate_ip_groups)
-    - [authorize_ip_rules](#authorize_ip_rules)
-    - [can_paginate](#can_paginate)
-    - [copy_workspace_image](#copy_workspace_image)
-    - [create_connect_client_add_in](#create_connect_client_add_in)
-    - [create_connection_alias](#create_connection_alias)
-    - [create_ip_group](#create_ip_group)
-    - [create_tags](#create_tags)
-    - [create_updated_workspace_image](#create_updated_workspace_image)
-    - [create_workspace_bundle](#create_workspace_bundle)
-    - [create_workspaces](#create_workspaces)
-    - [delete_connect_client_add_in](#delete_connect_client_add_in)
-    - [delete_connection_alias](#delete_connection_alias)
-    - [delete_ip_group](#delete_ip_group)
-    - [delete_tags](#delete_tags)
-    - [delete_workspace_bundle](#delete_workspace_bundle)
-    - [delete_workspace_image](#delete_workspace_image)
-    - [deregister_workspace_directory](#deregister_workspace_directory)
-    - [describe_account](#describe_account)
-    - [describe_account_modifications](#describe_account_modifications)
-    - [describe_client_properties](#describe_client_properties)
-    - [describe_connect_client_add_ins](#describe_connect_client_add_ins)
-    - [describe_connection_alias_permissions](#describe_connection_alias_permissions)
-    - [describe_connection_aliases](#describe_connection_aliases)
-    - [describe_ip_groups](#describe_ip_groups)
-    - [describe_tags](#describe_tags)
-    - [describe_workspace_bundles](#describe_workspace_bundles)
-    - [describe_workspace_directories](#describe_workspace_directories)
-    - [describe_workspace_image_permissions](#describe_workspace_image_permissions)
-    - [describe_workspace_images](#describe_workspace_images)
-    - [describe_workspace_snapshots](#describe_workspace_snapshots)
-    - [describe_workspaces](#describe_workspaces)
-    - [describe_workspaces_connection_status](#describe_workspaces_connection_status)
-    - [disassociate_connection_alias](#disassociate_connection_alias)
-    - [disassociate_ip_groups](#disassociate_ip_groups)
-    - [generate_presigned_url](#generate_presigned_url)
-    - [import_workspace_image](#import_workspace_image)
-    - [list_available_management_cidr_ranges](#list_available_management_cidr_ranges)
-    - [migrate_workspace](#migrate_workspace)
-    - [modify_account](#modify_account)
-    - [modify_client_properties](#modify_client_properties)
-    - [modify_selfservice_permissions](#modify_selfservice_permissions)
-    - [modify_workspace_access_properties](#modify_workspace_access_properties)
-    - [modify_workspace_creation_properties](#modify_workspace_creation_properties)
-    - [modify_workspace_properties](#modify_workspace_properties)
-    - [modify_workspace_state](#modify_workspace_state)
-    - [reboot_workspaces](#reboot_workspaces)
-    - [rebuild_workspaces](#rebuild_workspaces)
-    - [register_workspace_directory](#register_workspace_directory)
-    - [restore_workspace](#restore_workspace)
-    - [revoke_ip_rules](#revoke_ip_rules)
-    - [start_workspaces](#start_workspaces)
-    - [stop_workspaces](#stop_workspaces)
-    - [terminate_workspaces](#terminate_workspaces)
-    - [update_connect_client_add_in](#update_connect_client_add_in)
-    - [update_connection_alias_permission](#update_connection_alias_permission)
-    - [update_rules_of_ip_group](#update_rules_of_ip_group)
-    - [update_workspace_bundle](#update_workspace_bundle)
-    - [update_workspace_image_permission](#update_workspace_image_permission)
-    - [get_paginator](#get_paginator)
-
-<a id="workspacesclient"></a>
+    Auto-generated documentation for [WorkSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces)
+    type annotations stubs module [mypy-boto3-workspaces](https://pypi.org/project/mypy-boto3-workspaces/).
 
 ## WorkSpacesClient
 
-Type annotations for `boto3.client("workspaces")`
+Type annotations and code completion for `#!python boto3.client("workspaces")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 from mypy_boto3_workspaces.client import WorkSpacesClient
 
@@ -92,1471 +20,1902 @@ def get_workspaces_client() -> WorkSpacesClient:
     return Session().client("workspaces")
 ```
 
-Boto3 documentation:
-[WorkSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client)
-
-<a id="exceptions"></a>
-
 ## Exceptions
 
-`boto3` client exceptions are generated in runtime. This class can be used for
-static analysis directly:
 
-```python
+`boto3` client exceptions are generated in runtime.
+This class provides code completion for `#!python boto3.client("workspaces").exceptions` structure.
+
+```python title="Usage example"
+client = boto3.client("workspaces")
+
+try:
+    do_something(client)
+except (
+    client.AccessDeniedException,
+    client.ClientError,
+    client.InvalidParameterValuesException,
+    client.InvalidResourceStateException,
+    client.OperationInProgressException,
+    client.OperationNotSupportedException,
+    client.ResourceAlreadyExistsException,
+    client.ResourceAssociatedException,
+    client.ResourceCreationFailedException,
+    client.ResourceLimitExceededException,
+    client.ResourceNotFoundException,
+    client.ResourceUnavailableException,
+    client.UnsupportedNetworkConfigurationException,
+    client.UnsupportedWorkspaceConfigurationException,
+    client.WorkspacesDefaultRoleNotFoundException,
+) as e:
+    print(e)
+```
+
+```python title="Type checking example"
 from mypy_boto3_workspaces.client import Exceptions
 
 def handle_error(exc: Exceptions.AccessDeniedException) -> None:
     ...
 ```
 
-Exceptions:
-
-- `Exceptions.AccessDeniedException`
-- `Exceptions.ClientError`
-- `Exceptions.InvalidParameterValuesException`
-- `Exceptions.InvalidResourceStateException`
-- `Exceptions.OperationInProgressException`
-- `Exceptions.OperationNotSupportedException`
-- `Exceptions.ResourceAlreadyExistsException`
-- `Exceptions.ResourceAssociatedException`
-- `Exceptions.ResourceCreationFailedException`
-- `Exceptions.ResourceLimitExceededException`
-- `Exceptions.ResourceNotFoundException`
-- `Exceptions.ResourceUnavailableException`
-- `Exceptions.UnsupportedNetworkConfigurationException`
-- `Exceptions.UnsupportedWorkspaceConfigurationException`
-- `Exceptions.WorkspacesDefaultRoleNotFoundException`
-
-<a id="methods"></a>
 
 ## Methods
 
-<a id="exceptions"></a>
 
-### exceptions
+### associate\_connection\_alias
 
-WorkSpacesClient exceptions.
+Associates the specified connection alias with the specified directory to enable
+cross-Region redirection.
 
-Type annotations for `boto3.client("workspaces").exceptions` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").associate_connection_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
 
-Boto3 documentation:
-[WorkSpaces.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.exceptions)
+```python title="Method definition"
+def associate_connection_alias(
+    self,
+    *,
+    AliasId: str,
+    ResourceId: str,
+) -> AssociateConnectionAliasResultTypeDef:  # (1)
+    ...
+```
 
-Returns [Exceptions](#exceptions).
+1. See [:material-code-braces: AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef) 
 
-<a id="associate\_connection\_alias"></a>
 
-### associate_connection_alias
+```python title="Usage example with kwargs"
+kwargs: AssociateConnectionAliasRequestRequestTypeDef = {  # (1)
+    "AliasId": ...,
+    "ResourceId": ...,
+}
 
-Associates the specified connection alias with the specified directory to
-enable cross-Region redirection.
+parent.associate_connection_alias(**kwargs)
+```
 
-Type annotations for `boto3.client("workspaces").associate_connection_alias`
-method.
+1. See [:material-code-braces: AssociateConnectionAliasRequestRequestTypeDef](./type_defs.md#associateconnectionaliasrequestrequesttypedef) 
 
-Boto3 documentation:
-[WorkSpaces.Client.associate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_connection_alias)
-
-Arguments mapping described in
-[AssociateConnectionAliasRequestRequestTypeDef](./type_defs.md#associateconnectionaliasrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AliasId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-
-Returns
-[AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
-
-<a id="associate\_ip\_groups"></a>
-
-### associate_ip_groups
+### associate\_ip\_groups
 
 Associates the specified IP access control group with the specified directory.
 
-Type annotations for `boto3.client("workspaces").associate_ip_groups` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").associate_ip_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
 
-Boto3 documentation:
-[WorkSpaces.Client.associate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.associate_ip_groups)
+```python title="Method definition"
+def associate_ip_groups(
+    self,
+    *,
+    DirectoryId: str,
+    GroupIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AssociateIpGroupsRequestRequestTypeDef](./type_defs.md#associateipgroupsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `GroupIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: AssociateIpGroupsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "GroupIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.associate_ip_groups(**kwargs)
+```
 
-<a id="authorize\_ip\_rules"></a>
+1. See [:material-code-braces: AssociateIpGroupsRequestRequestTypeDef](./type_defs.md#associateipgroupsrequestrequesttypedef) 
 
-### authorize_ip_rules
+### authorize\_ip\_rules
 
 Adds one or more rules to the specified IP access control group.
 
-Type annotations for `boto3.client("workspaces").authorize_ip_rules` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").authorize_ip_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
 
-Boto3 documentation:
-[WorkSpaces.Client.authorize_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.authorize_ip_rules)
+```python title="Method definition"
+def authorize_ip_rules(
+    self,
+    *,
+    GroupId: str,
+    UserRules: Sequence[IpRuleItemTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[AuthorizeIpRulesRequestRequestTypeDef](./type_defs.md#authorizeiprulesrequestrequesttypedef).
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: AuthorizeIpRulesRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+    "UserRules": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.authorize_ip_rules(**kwargs)
+```
 
-<a id="can\_paginate"></a>
+1. See [:material-code-braces: AuthorizeIpRulesRequestRequestTypeDef](./type_defs.md#authorizeiprulesrequestrequesttypedef) 
 
-### can_paginate
+### can\_paginate
 
 Check if an operation can be paginated.
 
-Type annotations for `boto3.client("workspaces").can_paginate` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").can_paginate` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
 
-Boto3 documentation:
-[WorkSpaces.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.can_paginate)
+```python title="Method definition"
+def can_paginate(
+    self,
+    operation_name: str,
+) -> bool:
+    ...
+```
 
-Arguments:
 
-- `operation_name`: `str` *(required)*
-
-Returns `bool`.
-
-<a id="copy\_workspace\_image"></a>
-
-### copy_workspace_image
+### copy\_workspace\_image
 
 Copies the specified image from the specified Region to the current Region.
 
-Type annotations for `boto3.client("workspaces").copy_workspace_image` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").copy_workspace_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
 
-Boto3 documentation:
-[WorkSpaces.Client.copy_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.copy_workspace_image)
+```python title="Method definition"
+def copy_workspace_image(
+    self,
+    *,
+    Name: str,
+    SourceImageId: str,
+    SourceRegion: str,
+    Description: str = ...,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CopyWorkspaceImageResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CopyWorkspaceImageRequestRequestTypeDef](./type_defs.md#copyworkspaceimagerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `SourceImageId`: `str` *(required)*
-- `SourceRegion`: `str` *(required)*
-- `Description`: `str`
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CopyWorkspaceImageRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "SourceImageId": ...,
+    "SourceRegion": ...,
+}
 
-Returns
-[CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
+parent.copy_workspace_image(**kwargs)
+```
 
-<a id="create\_connect\_client\_add\_in"></a>
+1. See [:material-code-braces: CopyWorkspaceImageRequestRequestTypeDef](./type_defs.md#copyworkspaceimagerequestrequesttypedef) 
 
-### create_connect_client_add_in
+### create\_connect\_client\_add\_in
 
 Creates a client-add-in for Amazon Connect within a directory.
 
-Type annotations for `boto3.client("workspaces").create_connect_client_add_in`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_connect_client_add_in` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connect_client_add_in)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connect_client_add_in)
+```python title="Method definition"
+def create_connect_client_add_in(
+    self,
+    *,
+    ResourceId: str,
+    Name: str,
+    URL: str,
+) -> CreateConnectClientAddInResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectClientAddInRequestRequestTypeDef](./type_defs.md#createconnectclientaddinrequestrequesttypedef).
+1. See [:material-code-braces: CreateConnectClientAddInResultTypeDef](./type_defs.md#createconnectclientaddinresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `URL`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateConnectClientAddInRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Name": ...,
+    "URL": ...,
+}
 
-Returns
-[CreateConnectClientAddInResultTypeDef](./type_defs.md#createconnectclientaddinresulttypedef).
+parent.create_connect_client_add_in(**kwargs)
+```
 
-<a id="create\_connection\_alias"></a>
+1. See [:material-code-braces: CreateConnectClientAddInRequestRequestTypeDef](./type_defs.md#createconnectclientaddinrequestrequesttypedef) 
 
-### create_connection_alias
+### create\_connection\_alias
 
 Creates the specified connection alias for use with cross-Region redirection.
 
-Type annotations for `boto3.client("workspaces").create_connection_alias`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_connection_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connection_alias)
+```python title="Method definition"
+def create_connection_alias(
+    self,
+    *,
+    ConnectionString: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateConnectionAliasResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateConnectionAliasRequestRequestTypeDef](./type_defs.md#createconnectionaliasrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef) 
 
-Keyword-only arguments:
 
-- `ConnectionString`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateConnectionAliasRequestRequestTypeDef = {  # (1)
+    "ConnectionString": ...,
+}
 
-Returns
-[CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
+parent.create_connection_alias(**kwargs)
+```
 
-<a id="create\_ip\_group"></a>
+1. See [:material-code-braces: CreateConnectionAliasRequestRequestTypeDef](./type_defs.md#createconnectionaliasrequestrequesttypedef) 
 
-### create_ip_group
+### create\_ip\_group
 
 Creates an IP access control group.
 
-Type annotations for `boto3.client("workspaces").create_ip_group` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_ip_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_ip_group)
+```python title="Method definition"
+def create_ip_group(
+    self,
+    *,
+    GroupName: str,
+    GroupDesc: str = ...,
+    UserRules: Sequence[IpRuleItemTypeDef] = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> CreateIpGroupResultTypeDef:  # (3)
+    ...
+```
 
-Arguments mapping described in
-[CreateIpGroupRequestRequestTypeDef](./type_defs.md#createipgrouprequestrequesttypedef).
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-braces: CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef) 
 
-Keyword-only arguments:
 
-- `GroupName`: `str` *(required)*
-- `GroupDesc`: `str`
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateIpGroupRequestRequestTypeDef = {  # (1)
+    "GroupName": ...,
+}
 
-Returns
-[CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
+parent.create_ip_group(**kwargs)
+```
 
-<a id="create\_tags"></a>
+1. See [:material-code-braces: CreateIpGroupRequestRequestTypeDef](./type_defs.md#createipgrouprequestrequesttypedef) 
 
-### create_tags
+### create\_tags
 
 Creates the specified tags for the specified WorkSpaces resource.
 
-Type annotations for `boto3.client("workspaces").create_tags` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_tags)
+```python title="Method definition"
+def create_tags(
+    self,
+    *,
+    ResourceId: str,
+    Tags: Sequence[TagTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateTagsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "Tags": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.create_tags(**kwargs)
+```
 
-<a id="create\_updated\_workspace\_image"></a>
+1. See [:material-code-braces: CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef) 
 
-### create_updated_workspace_image
+### create\_updated\_workspace\_image
 
 Creates a new updated WorkSpace image based on the specified source image.
 
-Type annotations for
-`boto3.client("workspaces").create_updated_workspace_image` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_updated_workspace_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_updated_workspace_image)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_updated_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_updated_workspace_image)
+```python title="Method definition"
+def create_updated_workspace_image(
+    self,
+    *,
+    Name: str,
+    Description: str,
+    SourceImageId: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (1)
+) -> CreateUpdatedWorkspaceImageResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateUpdatedWorkspaceImageRequestRequestTypeDef](./type_defs.md#createupdatedworkspaceimagerequestrequesttypedef).
+1. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+2. See [:material-code-braces: CreateUpdatedWorkspaceImageResultTypeDef](./type_defs.md#createupdatedworkspaceimageresulttypedef) 
 
-Keyword-only arguments:
 
-- `Name`: `str` *(required)*
-- `Description`: `str` *(required)*
-- `SourceImageId`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateUpdatedWorkspaceImageRequestRequestTypeDef = {  # (1)
+    "Name": ...,
+    "Description": ...,
+    "SourceImageId": ...,
+}
 
-Returns
-[CreateUpdatedWorkspaceImageResultTypeDef](./type_defs.md#createupdatedworkspaceimageresulttypedef).
+parent.create_updated_workspace_image(**kwargs)
+```
 
-<a id="create\_workspace\_bundle"></a>
+1. See [:material-code-braces: CreateUpdatedWorkspaceImageRequestRequestTypeDef](./type_defs.md#createupdatedworkspaceimagerequestrequesttypedef) 
 
-### create_workspace_bundle
+### create\_workspace\_bundle
 
 Creates the specified WorkSpace bundle.
 
-Type annotations for `boto3.client("workspaces").create_workspace_bundle`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_workspace_bundle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspace_bundle)
+```python title="Method definition"
+def create_workspace_bundle(
+    self,
+    *,
+    BundleName: str,
+    BundleDescription: str,
+    ImageId: str,
+    ComputeType: ComputeTypeTypeDef,  # (1)
+    UserStorage: UserStorageTypeDef,  # (2)
+    RootStorage: RootStorageTypeDef = ...,  # (3)
+    Tags: Sequence[TagTypeDef] = ...,  # (4)
+) -> CreateWorkspaceBundleResultTypeDef:  # (5)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#createworkspacebundlerequestrequesttypedef).
+1. See [:material-code-braces: ComputeTypeTypeDef](./type_defs.md#computetypetypedef) 
+2. See [:material-code-braces: UserStorageTypeDef](./type_defs.md#userstoragetypedef) 
+3. See [:material-code-braces: RootStorageTypeDef](./type_defs.md#rootstoragetypedef) 
+4. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+5. See [:material-code-braces: CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef) 
 
-Keyword-only arguments:
 
-- `BundleName`: `str` *(required)*
-- `BundleDescription`: `str` *(required)*
-- `ImageId`: `str` *(required)*
-- `ComputeType`: [ComputeTypeTypeDef](./type_defs.md#computetypetypedef)
-  *(required)*
-- `UserStorage`: [UserStorageTypeDef](./type_defs.md#userstoragetypedef)
-  *(required)*
-- `RootStorage`: [RootStorageTypeDef](./type_defs.md#rootstoragetypedef)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspaceBundleRequestRequestTypeDef = {  # (1)
+    "BundleName": ...,
+    "BundleDescription": ...,
+    "ImageId": ...,
+    "ComputeType": ...,
+    "UserStorage": ...,
+}
 
-Returns
-[CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
+parent.create_workspace_bundle(**kwargs)
+```
 
-<a id="create\_workspaces"></a>
+1. See [:material-code-braces: CreateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#createworkspacebundlerequestrequesttypedef) 
 
-### create_workspaces
+### create\_workspaces
 
 Creates one or more WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").create_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").create_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.create_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_workspaces)
+```python title="Method definition"
+def create_workspaces(
+    self,
+    *,
+    Workspaces: Sequence[WorkspaceRequestTypeDef],  # (1)
+) -> CreateWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[CreateWorkspacesRequestRequestTypeDef](./type_defs.md#createworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef) 
+2. See [:material-code-braces: CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `Workspaces`:
-  `Sequence`\[[WorkspaceRequestTypeDef](./type_defs.md#workspacerequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: CreateWorkspacesRequestRequestTypeDef = {  # (1)
+    "Workspaces": ...,
+}
 
-Returns
-[CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
+parent.create_workspaces(**kwargs)
+```
 
-<a id="delete\_connect\_client\_add\_in"></a>
+1. See [:material-code-braces: CreateWorkspacesRequestRequestTypeDef](./type_defs.md#createworkspacesrequestrequesttypedef) 
 
-### delete_connect_client_add_in
+### delete\_connect\_client\_add\_in
 
 Deletes a client-add-in for Amazon Connect that is configured within a
 directory.
 
-Type annotations for `boto3.client("workspaces").delete_connect_client_add_in`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_connect_client_add_in` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connect_client_add_in)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connect_client_add_in)
+```python title="Method definition"
+def delete_connect_client_add_in(
+    self,
+    *,
+    AddInId: str,
+    ResourceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectClientAddInRequestRequestTypeDef](./type_defs.md#deleteconnectclientaddinrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AddInId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectClientAddInRequestRequestTypeDef = {  # (1)
+    "AddInId": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connect_client_add_in(**kwargs)
+```
 
-<a id="delete\_connection\_alias"></a>
+1. See [:material-code-braces: DeleteConnectClientAddInRequestRequestTypeDef](./type_defs.md#deleteconnectclientaddinrequestrequesttypedef) 
 
-### delete_connection_alias
+### delete\_connection\_alias
 
 Deletes the specified connection alias.
 
-Type annotations for `boto3.client("workspaces").delete_connection_alias`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_connection_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connection_alias)
+```python title="Method definition"
+def delete_connection_alias(
+    self,
+    *,
+    AliasId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteConnectionAliasRequestRequestTypeDef](./type_defs.md#deleteconnectionaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteConnectionAliasRequestRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_connection_alias(**kwargs)
+```
 
-<a id="delete\_ip\_group"></a>
+1. See [:material-code-braces: DeleteConnectionAliasRequestRequestTypeDef](./type_defs.md#deleteconnectionaliasrequestrequesttypedef) 
 
-### delete_ip_group
+### delete\_ip\_group
 
 Deletes the specified IP access control group.
 
-Type annotations for `boto3.client("workspaces").delete_ip_group` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_ip_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_ip_group)
+```python title="Method definition"
+def delete_ip_group(
+    self,
+    *,
+    GroupId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteIpGroupRequestRequestTypeDef](./type_defs.md#deleteipgrouprequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteIpGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_ip_group(**kwargs)
+```
 
-<a id="delete\_tags"></a>
+1. See [:material-code-braces: DeleteIpGroupRequestRequestTypeDef](./type_defs.md#deleteipgrouprequestrequesttypedef) 
 
-### delete_tags
+### delete\_tags
 
 Deletes the specified tags from the specified WorkSpaces resource.
 
-Type annotations for `boto3.client("workspaces").delete_tags` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_tags)
+```python title="Method definition"
+def delete_tags(
+    self,
+    *,
+    ResourceId: str,
+    TagKeys: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `TagKeys`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteTagsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "TagKeys": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_tags(**kwargs)
+```
 
-<a id="delete\_workspace\_bundle"></a>
+1. See [:material-code-braces: DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef) 
 
-### delete_workspace_bundle
+### delete\_workspace\_bundle
 
 Deletes the specified WorkSpace bundle.
 
-Type annotations for `boto3.client("workspaces").delete_workspace_bundle`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_workspace_bundle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_bundle)
+```python title="Method definition"
+def delete_workspace_bundle(
+    self,
+    *,
+    BundleId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkspaceBundleRequestRequestTypeDef](./type_defs.md#deleteworkspacebundlerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BundleId`: `str`
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceBundleRequestRequestTypeDef = {  # (1)
+    "BundleId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_workspace_bundle(**kwargs)
+```
 
-<a id="delete\_workspace\_image"></a>
+1. See [:material-code-braces: DeleteWorkspaceBundleRequestRequestTypeDef](./type_defs.md#deleteworkspacebundlerequestrequesttypedef) 
 
-### delete_workspace_image
+### delete\_workspace\_image
 
 Deletes the specified image from your account.
 
-Type annotations for `boto3.client("workspaces").delete_workspace_image`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").delete_workspace_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
 
-Boto3 documentation:
-[WorkSpaces.Client.delete_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_workspace_image)
+```python title="Method definition"
+def delete_workspace_image(
+    self,
+    *,
+    ImageId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeleteWorkspaceImageRequestRequestTypeDef](./type_defs.md#deleteworkspaceimagerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ImageId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeleteWorkspaceImageRequestRequestTypeDef = {  # (1)
+    "ImageId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.delete_workspace_image(**kwargs)
+```
 
-<a id="deregister\_workspace\_directory"></a>
+1. See [:material-code-braces: DeleteWorkspaceImageRequestRequestTypeDef](./type_defs.md#deleteworkspaceimagerequestrequesttypedef) 
 
-### deregister_workspace_directory
+### deregister\_workspace\_directory
 
 Deregisters the specified directory.
 
-Type annotations for
-`boto3.client("workspaces").deregister_workspace_directory` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").deregister_workspace_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
 
-Boto3 documentation:
-[WorkSpaces.Client.deregister_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.deregister_workspace_directory)
+```python title="Method definition"
+def deregister_workspace_directory(
+    self,
+    *,
+    DirectoryId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DeregisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DeregisterWorkspaceDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.deregister_workspace_directory(**kwargs)
+```
 
-<a id="describe\_account"></a>
+1. See [:material-code-braces: DeregisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#deregisterworkspacedirectoryrequestrequesttypedef) 
 
-### describe_account
+### describe\_account
 
 Retrieves a list that describes the configuration of Bring Your Own License
 (BYOL) for the specified account.
 
-Type annotations for `boto3.client("workspaces").describe_account` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account)
+```python title="Method definition"
+def describe_account(
+    self,
+) -> DescribeAccountResultTypeDef:  # (1)
+    ...
+```
 
-Returns
-[DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
+1. See [:material-code-braces: DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef) 
 
-<a id="describe\_account\_modifications"></a>
+### describe\_account\_modifications
 
-### describe_account_modifications
+Retrieves a list that describes modifications to the configuration of Bring Your
+Own License (BYOL) for the specified account.
 
-Retrieves a list that describes modifications to the configuration of Bring
-Your Own License (BYOL) for the specified account.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_account_modifications` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
 
-Type annotations for
-`boto3.client("workspaces").describe_account_modifications` method.
+```python title="Method definition"
+def describe_account_modifications(
+    self,
+    *,
+    NextToken: str = ...,
+) -> DescribeAccountModificationsResultTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_account_modifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_account_modifications)
+1. See [:material-code-braces: DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef) 
 
-Arguments mapping described in
-[DescribeAccountModificationsRequestRequestTypeDef](./type_defs.md#describeaccountmodificationsrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DescribeAccountModificationsRequestRequestTypeDef = {  # (1)
+    "NextToken": ...,
+}
 
-- `NextToken`: `str`
+parent.describe_account_modifications(**kwargs)
+```
 
-Returns
-[DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
+1. See [:material-code-braces: DescribeAccountModificationsRequestRequestTypeDef](./type_defs.md#describeaccountmodificationsrequestrequesttypedef) 
 
-<a id="describe\_client\_properties"></a>
+### describe\_client\_properties
 
-### describe_client_properties
+Retrieves a list that describes one or more specified Amazon WorkSpaces clients.
 
-Retrieves a list that describes one or more specified Amazon WorkSpaces
-clients.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_client_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
 
-Type annotations for `boto3.client("workspaces").describe_client_properties`
-method.
+```python title="Method definition"
+def describe_client_properties(
+    self,
+    *,
+    ResourceIds: Sequence[str],
+) -> DescribeClientPropertiesResultTypeDef:  # (1)
+    ...
+```
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_client_properties)
+1. See [:material-code-braces: DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef) 
 
-Arguments mapping described in
-[DescribeClientPropertiesRequestRequestTypeDef](./type_defs.md#describeclientpropertiesrequestrequesttypedef).
 
-Keyword-only arguments:
+```python title="Usage example with kwargs"
+kwargs: DescribeClientPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceIds": ...,
+}
 
-- `ResourceIds`: `Sequence`\[`str`\] *(required)*
+parent.describe_client_properties(**kwargs)
+```
 
-Returns
-[DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
+1. See [:material-code-braces: DescribeClientPropertiesRequestRequestTypeDef](./type_defs.md#describeclientpropertiesrequestrequesttypedef) 
 
-<a id="describe\_connect\_client\_add\_ins"></a>
-
-### describe_connect_client_add_ins
+### describe\_connect\_client\_add\_ins
 
 Retrieves a list of Amazon Connect client add-ins that have been created.
 
-Type annotations for
-`boto3.client("workspaces").describe_connect_client_add_ins` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_connect_client_add_ins` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connect_client_add_ins)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_connect_client_add_ins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connect_client_add_ins)
+```python title="Method definition"
+def describe_connect_client_add_ins(
+    self,
+    *,
+    ResourceId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeConnectClientAddInsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectClientAddInsRequestRequestTypeDef](./type_defs.md#describeconnectclientaddinsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConnectClientAddInsResultTypeDef](./type_defs.md#describeconnectclientaddinsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectClientAddInsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns
-[DescribeConnectClientAddInsResultTypeDef](./type_defs.md#describeconnectclientaddinsresulttypedef).
+parent.describe_connect_client_add_ins(**kwargs)
+```
 
-<a id="describe\_connection\_alias\_permissions"></a>
+1. See [:material-code-braces: DescribeConnectClientAddInsRequestRequestTypeDef](./type_defs.md#describeconnectclientaddinsrequestrequesttypedef) 
 
-### describe_connection_alias_permissions
+### describe\_connection\_alias\_permissions
 
 Describes the permissions that the owner of a connection alias has granted to
 another Amazon Web Services account for the specified connection alias.
 
-Type annotations for
-`boto3.client("workspaces").describe_connection_alias_permissions` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_connection_alias_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_connection_alias_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_alias_permissions)
+```python title="Method definition"
+def describe_connection_alias_permissions(
+    self,
+    *,
+    AliasId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeConnectionAliasPermissionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectionAliasPermissionsRequestRequestTypeDef](./type_defs.md#describeconnectionaliaspermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionAliasPermissionsRequestRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns
-[DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
+parent.describe_connection_alias_permissions(**kwargs)
+```
 
-<a id="describe\_connection\_aliases"></a>
+1. See [:material-code-braces: DescribeConnectionAliasPermissionsRequestRequestTypeDef](./type_defs.md#describeconnectionaliaspermissionsrequestrequesttypedef) 
 
-### describe_connection_aliases
+### describe\_connection\_aliases
 
 Retrieves a list that describes the connection aliases used for cross-Region
 redirection.
 
-Type annotations for `boto3.client("workspaces").describe_connection_aliases`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_connection_aliases` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_connection_aliases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connection_aliases)
+```python title="Method definition"
+def describe_connection_aliases(
+    self,
+    *,
+    AliasIds: Sequence[str] = ...,
+    ResourceId: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeConnectionAliasesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeConnectionAliasesRequestRequestTypeDef](./type_defs.md#describeconnectionaliasesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef) 
 
-Keyword-only arguments:
 
-- `AliasIds`: `Sequence`\[`str`\]
-- `ResourceId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeConnectionAliasesRequestRequestTypeDef = {  # (1)
+    "AliasIds": ...,
+}
 
-Returns
-[DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
+parent.describe_connection_aliases(**kwargs)
+```
 
-<a id="describe\_ip\_groups"></a>
+1. See [:material-code-braces: DescribeConnectionAliasesRequestRequestTypeDef](./type_defs.md#describeconnectionaliasesrequestrequesttypedef) 
 
-### describe_ip_groups
+### describe\_ip\_groups
 
 Describes one or more of your IP access control groups.
 
-Type annotations for `boto3.client("workspaces").describe_ip_groups` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_ip_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_ip_groups)
+```python title="Method definition"
+def describe_ip_groups(
+    self,
+    *,
+    GroupIds: Sequence[str] = ...,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeIpGroupsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeIpGroupsRequestRequestTypeDef](./type_defs.md#describeipgroupsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef) 
 
-Keyword-only arguments:
 
-- `GroupIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeIpGroupsRequestRequestTypeDef = {  # (1)
+    "GroupIds": ...,
+}
 
-Returns
-[DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
+parent.describe_ip_groups(**kwargs)
+```
 
-<a id="describe\_tags"></a>
+1. See [:material-code-braces: DescribeIpGroupsRequestRequestTypeDef](./type_defs.md#describeipgroupsrequestrequesttypedef) 
 
-### describe_tags
+### describe\_tags
 
 Describes the specified tags for the specified WorkSpaces resource.
 
-Type annotations for `boto3.client("workspaces").describe_tags` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_tags` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_tags)
+```python title="Method definition"
+def describe_tags(
+    self,
+    *,
+    ResourceId: str,
+) -> DescribeTagsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeTagsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+}
 
-Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
+parent.describe_tags(**kwargs)
+```
 
-<a id="describe\_workspace\_bundles"></a>
+1. See [:material-code-braces: DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef) 
 
-### describe_workspace_bundles
+### describe\_workspace\_bundles
 
 Retrieves a list that describes the available WorkSpace bundles.
 
-Type annotations for `boto3.client("workspaces").describe_workspace_bundles`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspace_bundles` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_bundles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_bundles)
+```python title="Method definition"
+def describe_workspace_bundles(
+    self,
+    *,
+    BundleIds: Sequence[str] = ...,
+    Owner: str = ...,
+    NextToken: str = ...,
+) -> DescribeWorkspaceBundlesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceBundlesRequestRequestTypeDef](./type_defs.md#describeworkspacebundlesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef) 
 
-Keyword-only arguments:
 
-- `BundleIds`: `Sequence`\[`str`\]
-- `Owner`: `str`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceBundlesRequestRequestTypeDef = {  # (1)
+    "BundleIds": ...,
+}
 
-Returns
-[DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
+parent.describe_workspace_bundles(**kwargs)
+```
 
-<a id="describe\_workspace\_directories"></a>
+1. See [:material-code-braces: DescribeWorkspaceBundlesRequestRequestTypeDef](./type_defs.md#describeworkspacebundlesrequestrequesttypedef) 
 
-### describe_workspace_directories
+### describe\_workspace\_directories
 
 Describes the available directories that are registered with Amazon WorkSpaces.
 
-Type annotations for
-`boto3.client("workspaces").describe_workspace_directories` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspace_directories` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_directories](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_directories)
+```python title="Method definition"
+def describe_workspace_directories(
+    self,
+    *,
+    DirectoryIds: Sequence[str] = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeWorkspaceDirectoriesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceDirectoriesRequestRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryIds`: `Sequence`\[`str`\]
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceDirectoriesRequestRequestTypeDef = {  # (1)
+    "DirectoryIds": ...,
+}
 
-Returns
-[DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
+parent.describe_workspace_directories(**kwargs)
+```
 
-<a id="describe\_workspace\_image\_permissions"></a>
+1. See [:material-code-braces: DescribeWorkspaceDirectoriesRequestRequestTypeDef](./type_defs.md#describeworkspacedirectoriesrequestrequesttypedef) 
 
-### describe_workspace_image_permissions
+### describe\_workspace\_image\_permissions
 
-Describes the permissions that the owner of an image has granted to other
-Amazon Web Services accounts for an image.
+Describes the permissions that the owner of an image has granted to other Amazon
+Web Services accounts for an image.
 
-Type annotations for
-`boto3.client("workspaces").describe_workspace_image_permissions` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspace_image_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_image_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_image_permissions)
+```python title="Method definition"
+def describe_workspace_image_permissions(
+    self,
+    *,
+    ImageId: str,
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeWorkspaceImagePermissionsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceImagePermissionsRequestRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef) 
 
-Keyword-only arguments:
 
-- `ImageId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceImagePermissionsRequestRequestTypeDef = {  # (1)
+    "ImageId": ...,
+}
 
-Returns
-[DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
+parent.describe_workspace_image_permissions(**kwargs)
+```
 
-<a id="describe\_workspace\_images"></a>
+1. See [:material-code-braces: DescribeWorkspaceImagePermissionsRequestRequestTypeDef](./type_defs.md#describeworkspaceimagepermissionsrequestrequesttypedef) 
 
-### describe_workspace_images
+### describe\_workspace\_images
 
 Retrieves a list that describes one or more specified images, if the image
 identifiers are provided.
 
-Type annotations for `boto3.client("workspaces").describe_workspace_images`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspace_images` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_images](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_images)
+```python title="Method definition"
+def describe_workspace_images(
+    self,
+    *,
+    ImageIds: Sequence[str] = ...,
+    ImageType: ImageTypeType = ...,  # (1)
+    NextToken: str = ...,
+    MaxResults: int = ...,
+) -> DescribeWorkspaceImagesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceImagesRequestRequestTypeDef](./type_defs.md#describeworkspaceimagesrequestrequesttypedef).
+1. See [:material-code-brackets: ImageTypeType](./literals.md#imagetypetype) 
+2. See [:material-code-braces: DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef) 
 
-Keyword-only arguments:
 
-- `ImageIds`: `Sequence`\[`str`\]
-- `ImageType`: [ImageTypeType](./literals.md#imagetypetype)
-- `NextToken`: `str`
-- `MaxResults`: `int`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceImagesRequestRequestTypeDef = {  # (1)
+    "ImageIds": ...,
+}
 
-Returns
-[DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
+parent.describe_workspace_images(**kwargs)
+```
 
-<a id="describe\_workspace\_snapshots"></a>
+1. See [:material-code-braces: DescribeWorkspaceImagesRequestRequestTypeDef](./type_defs.md#describeworkspaceimagesrequestrequesttypedef) 
 
-### describe_workspace_snapshots
+### describe\_workspace\_snapshots
 
 Describes the snapshots for the specified WorkSpace.
 
-Type annotations for `boto3.client("workspaces").describe_workspace_snapshots`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspace_snapshots` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspace_snapshots](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspace_snapshots)
+```python title="Method definition"
+def describe_workspace_snapshots(
+    self,
+    *,
+    WorkspaceId: str,
+) -> DescribeWorkspaceSnapshotsResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspaceSnapshotsRequestRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef) 
 
-Keyword-only arguments:
 
-- `WorkspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspaceSnapshotsRequestRequestTypeDef = {  # (1)
+    "WorkspaceId": ...,
+}
 
-Returns
-[DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
+parent.describe_workspace_snapshots(**kwargs)
+```
 
-<a id="describe\_workspaces"></a>
+1. See [:material-code-braces: DescribeWorkspaceSnapshotsRequestRequestTypeDef](./type_defs.md#describeworkspacesnapshotsrequestrequesttypedef) 
 
-### describe_workspaces
+### describe\_workspaces
 
 Describes the specified WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").describe_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces)
+```python title="Method definition"
+def describe_workspaces(
+    self,
+    *,
+    WorkspaceIds: Sequence[str] = ...,
+    DirectoryId: str = ...,
+    UserName: str = ...,
+    BundleId: str = ...,
+    Limit: int = ...,
+    NextToken: str = ...,
+) -> DescribeWorkspacesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspacesRequestRequestTypeDef](./type_defs.md#describeworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `DirectoryId`: `str`
-- `UserName`: `str`
-- `BundleId`: `str`
-- `Limit`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspacesRequestRequestTypeDef = {  # (1)
+    "WorkspaceIds": ...,
+}
 
-Returns
-[DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
+parent.describe_workspaces(**kwargs)
+```
 
-<a id="describe\_workspaces\_connection\_status"></a>
+1. See [:material-code-braces: DescribeWorkspacesRequestRequestTypeDef](./type_defs.md#describeworkspacesrequestrequesttypedef) 
 
-### describe_workspaces_connection_status
+### describe\_workspaces\_connection\_status
 
 Describes the connection status of the specified WorkSpaces.
 
-Type annotations for
-`boto3.client("workspaces").describe_workspaces_connection_status` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").describe_workspaces_connection_status` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
 
-Boto3 documentation:
-[WorkSpaces.Client.describe_workspaces_connection_status](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_workspaces_connection_status)
+```python title="Method definition"
+def describe_workspaces_connection_status(
+    self,
+    *,
+    WorkspaceIds: Sequence[str] = ...,
+    NextToken: str = ...,
+) -> DescribeWorkspacesConnectionStatusResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[DescribeWorkspacesConnectionStatusRequestRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestrequesttypedef).
+1. See [:material-code-braces: DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef) 
 
-Keyword-only arguments:
 
-- `WorkspaceIds`: `Sequence`\[`str`\]
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: DescribeWorkspacesConnectionStatusRequestRequestTypeDef = {  # (1)
+    "WorkspaceIds": ...,
+}
 
-Returns
-[DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
+parent.describe_workspaces_connection_status(**kwargs)
+```
 
-<a id="disassociate\_connection\_alias"></a>
+1. See [:material-code-braces: DescribeWorkspacesConnectionStatusRequestRequestTypeDef](./type_defs.md#describeworkspacesconnectionstatusrequestrequesttypedef) 
 
-### disassociate_connection_alias
+### disassociate\_connection\_alias
 
 Disassociates a connection alias from a directory.
 
-Type annotations for `boto3.client("workspaces").disassociate_connection_alias`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").disassociate_connection_alias` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
 
-Boto3 documentation:
-[WorkSpaces.Client.disassociate_connection_alias](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_connection_alias)
+```python title="Method definition"
+def disassociate_connection_alias(
+    self,
+    *,
+    AliasId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateConnectionAliasRequestRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateConnectionAliasRequestRequestTypeDef = {  # (1)
+    "AliasId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_connection_alias(**kwargs)
+```
 
-<a id="disassociate\_ip\_groups"></a>
+1. See [:material-code-braces: DisassociateConnectionAliasRequestRequestTypeDef](./type_defs.md#disassociateconnectionaliasrequestrequesttypedef) 
 
-### disassociate_ip_groups
+### disassociate\_ip\_groups
 
 Disassociates the specified IP access control group from the specified
 directory.
 
-Type annotations for `boto3.client("workspaces").disassociate_ip_groups`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").disassociate_ip_groups` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
 
-Boto3 documentation:
-[WorkSpaces.Client.disassociate_ip_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.disassociate_ip_groups)
+```python title="Method definition"
+def disassociate_ip_groups(
+    self,
+    *,
+    DirectoryId: str,
+    GroupIds: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[DisassociateIpGroupsRequestRequestTypeDef](./type_defs.md#disassociateipgroupsrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `GroupIds`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: DisassociateIpGroupsRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "GroupIds": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.disassociate_ip_groups(**kwargs)
+```
 
-<a id="generate\_presigned\_url"></a>
+1. See [:material-code-braces: DisassociateIpGroupsRequestRequestTypeDef](./type_defs.md#disassociateipgroupsrequestrequesttypedef) 
 
-### generate_presigned_url
+### generate\_presigned\_url
 
 Generate a presigned url given a client, its method, and arguments.
 
-Type annotations for `boto3.client("workspaces").generate_presigned_url`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").generate_presigned_url` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
 
-Boto3 documentation:
-[WorkSpaces.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.generate_presigned_url)
+```python title="Method definition"
+def generate_presigned_url(
+    self,
+    ClientMethod: str,
+    Params: Mapping[str, Any] = ...,
+    ExpiresIn: int = 3600,
+    HttpMethod: str = ...,
+) -> str:
+    ...
+```
 
-Arguments:
 
-- `ClientMethod`: `str` *(required)*
-- `Params`: `Mapping`\[`str`, `Any`\]
-- `ExpiresIn`: `int`
-- `HttpMethod`: `str`
+### import\_workspace\_image
 
-Returns `str`.
+Imports the specified Windows 10 Bring Your Own License (BYOL) image into Amazon
+WorkSpaces.
 
-<a id="import\_workspace\_image"></a>
+Type annotations and code completion for `#!python boto3.client("workspaces").import_workspace_image` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
 
-### import_workspace_image
+```python title="Method definition"
+def import_workspace_image(
+    self,
+    *,
+    Ec2ImageId: str,
+    IngestionProcess: WorkspaceImageIngestionProcessType,  # (1)
+    ImageName: str,
+    ImageDescription: str,
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+    Applications: Sequence[ApplicationType] = ...,  # (3)
+) -> ImportWorkspaceImageResultTypeDef:  # (4)
+    ...
+```
 
-Imports the specified Windows 10 Bring Your Own License (BYOL) image into
-Amazon WorkSpaces.
+1. See [:material-code-brackets: WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
+3. See [:material-code-brackets: ApplicationType](./literals.md#applicationtype) 
+4. See [:material-code-braces: ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef) 
 
-Type annotations for `boto3.client("workspaces").import_workspace_image`
-method.
 
-Boto3 documentation:
-[WorkSpaces.Client.import_workspace_image](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.import_workspace_image)
+```python title="Usage example with kwargs"
+kwargs: ImportWorkspaceImageRequestRequestTypeDef = {  # (1)
+    "Ec2ImageId": ...,
+    "IngestionProcess": ...,
+    "ImageName": ...,
+    "ImageDescription": ...,
+}
 
-Arguments mapping described in
-[ImportWorkspaceImageRequestRequestTypeDef](./type_defs.md#importworkspaceimagerequestrequesttypedef).
+parent.import_workspace_image(**kwargs)
+```
 
-Keyword-only arguments:
+1. See [:material-code-braces: ImportWorkspaceImageRequestRequestTypeDef](./type_defs.md#importworkspaceimagerequestrequesttypedef) 
 
-- `Ec2ImageId`: `str` *(required)*
-- `IngestionProcess`:
-  [WorkspaceImageIngestionProcessType](./literals.md#workspaceimageingestionprocesstype)
-  *(required)*
-- `ImageName`: `str` *(required)*
-- `ImageDescription`: `str` *(required)*
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `Applications`:
-  `Sequence`\[[ApplicationType](./literals.md#applicationtype)\]
-
-Returns
-[ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
-
-<a id="list\_available\_management\_cidr\_ranges"></a>
-
-### list_available_management_cidr_ranges
+### list\_available\_management\_cidr\_ranges
 
 Retrieves a list of IP address ranges, specified as IPv4 CIDR blocks, that you
 can use for the network management interface when you enable Bring Your Own
 License (BYOL).
 
-Type annotations for
-`boto3.client("workspaces").list_available_management_cidr_ranges` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").list_available_management_cidr_ranges` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
 
-Boto3 documentation:
-[WorkSpaces.Client.list_available_management_cidr_ranges](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.list_available_management_cidr_ranges)
+```python title="Method definition"
+def list_available_management_cidr_ranges(
+    self,
+    *,
+    ManagementCidrRangeConstraint: str,
+    MaxResults: int = ...,
+    NextToken: str = ...,
+) -> ListAvailableManagementCidrRangesResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[ListAvailableManagementCidrRangesRequestRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestrequesttypedef).
+1. See [:material-code-braces: ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef) 
 
-Keyword-only arguments:
 
-- `ManagementCidrRangeConstraint`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
+```python title="Usage example with kwargs"
+kwargs: ListAvailableManagementCidrRangesRequestRequestTypeDef = {  # (1)
+    "ManagementCidrRangeConstraint": ...,
+}
 
-Returns
-[ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
+parent.list_available_management_cidr_ranges(**kwargs)
+```
 
-<a id="migrate\_workspace"></a>
+1. See [:material-code-braces: ListAvailableManagementCidrRangesRequestRequestTypeDef](./type_defs.md#listavailablemanagementcidrrangesrequestrequesttypedef) 
 
-### migrate_workspace
+### migrate\_workspace
 
 Migrates a WorkSpace from one operating system or bundle type to another, while
 retaining the data on the user volume.
 
-Type annotations for `boto3.client("workspaces").migrate_workspace` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").migrate_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
 
-Boto3 documentation:
-[WorkSpaces.Client.migrate_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.migrate_workspace)
+```python title="Method definition"
+def migrate_workspace(
+    self,
+    *,
+    SourceWorkspaceId: str,
+    BundleId: str,
+) -> MigrateWorkspaceResultTypeDef:  # (1)
+    ...
+```
 
-Arguments mapping described in
-[MigrateWorkspaceRequestRequestTypeDef](./type_defs.md#migrateworkspacerequestrequesttypedef).
+1. See [:material-code-braces: MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef) 
 
-Keyword-only arguments:
 
-- `SourceWorkspaceId`: `str` *(required)*
-- `BundleId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: MigrateWorkspaceRequestRequestTypeDef = {  # (1)
+    "SourceWorkspaceId": ...,
+    "BundleId": ...,
+}
 
-Returns
-[MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
+parent.migrate_workspace(**kwargs)
+```
 
-<a id="modify\_account"></a>
+1. See [:material-code-braces: MigrateWorkspaceRequestRequestTypeDef](./type_defs.md#migrateworkspacerequestrequesttypedef) 
 
-### modify_account
+### modify\_account
 
 Modifies the configuration of Bring Your Own License (BYOL) for the specified
 account.
 
-Type annotations for `boto3.client("workspaces").modify_account` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_account` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_account)
+```python title="Method definition"
+def modify_account(
+    self,
+    *,
+    DedicatedTenancySupport: DedicatedTenancySupportEnumType = ...,  # (1)
+    DedicatedTenancyManagementCidrRange: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyAccountRequestRequestTypeDef](./type_defs.md#modifyaccountrequestrequesttypedef).
+1. See [:material-code-brackets: DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype) 
 
-Keyword-only arguments:
 
-- `DedicatedTenancySupport`: `Literal['ENABLED']` (see
-  [DedicatedTenancySupportEnumType](./literals.md#dedicatedtenancysupportenumtype))
-- `DedicatedTenancyManagementCidrRange`: `str`
+```python title="Usage example with kwargs"
+kwargs: ModifyAccountRequestRequestTypeDef = {  # (1)
+    "DedicatedTenancySupport": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_account(**kwargs)
+```
 
-<a id="modify\_client\_properties"></a>
+1. See [:material-code-braces: ModifyAccountRequestRequestTypeDef](./type_defs.md#modifyaccountrequestrequesttypedef) 
 
-### modify_client_properties
+### modify\_client\_properties
 
 Modifies the properties of the specified Amazon WorkSpaces clients.
 
-Type annotations for `boto3.client("workspaces").modify_client_properties`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_client_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_client_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_client_properties)
+```python title="Method definition"
+def modify_client_properties(
+    self,
+    *,
+    ResourceId: str,
+    ClientProperties: ClientPropertiesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyClientPropertiesRequestRequestTypeDef](./type_defs.md#modifyclientpropertiesrequestrequesttypedef).
+1. See [:material-code-braces: ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `ClientProperties`:
-  [ClientPropertiesTypeDef](./type_defs.md#clientpropertiestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyClientPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "ClientProperties": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_client_properties(**kwargs)
+```
 
-<a id="modify\_selfservice\_permissions"></a>
+1. See [:material-code-braces: ModifyClientPropertiesRequestRequestTypeDef](./type_defs.md#modifyclientpropertiesrequestrequesttypedef) 
 
-### modify_selfservice_permissions
+### modify\_selfservice\_permissions
 
 Modifies the self-service WorkSpace management capabilities for your users.
 
-Type annotations for
-`boto3.client("workspaces").modify_selfservice_permissions` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_selfservice_permissions` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_selfservice_permissions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_selfservice_permissions)
+```python title="Method definition"
+def modify_selfservice_permissions(
+    self,
+    *,
+    ResourceId: str,
+    SelfservicePermissions: SelfservicePermissionsTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifySelfservicePermissionsRequestRequestTypeDef](./type_defs.md#modifyselfservicepermissionsrequestrequesttypedef).
+1. See [:material-code-braces: SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `SelfservicePermissions`:
-  [SelfservicePermissionsTypeDef](./type_defs.md#selfservicepermissionstypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifySelfservicePermissionsRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "SelfservicePermissions": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_selfservice_permissions(**kwargs)
+```
 
-<a id="modify\_workspace\_access\_properties"></a>
+1. See [:material-code-braces: ModifySelfservicePermissionsRequestRequestTypeDef](./type_defs.md#modifyselfservicepermissionsrequestrequesttypedef) 
 
-### modify_workspace_access_properties
+### modify\_workspace\_access\_properties
 
 Specifies which devices and operating systems users can use to access their
 WorkSpaces.
 
-Type annotations for
-`boto3.client("workspaces").modify_workspace_access_properties` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_workspace_access_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_access_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_access_properties)
+```python title="Method definition"
+def modify_workspace_access_properties(
+    self,
+    *,
+    ResourceId: str,
+    WorkspaceAccessProperties: WorkspaceAccessPropertiesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyWorkspaceAccessPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspaceaccesspropertiesrequestrequesttypedef).
+1. See [:material-code-braces: WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `WorkspaceAccessProperties`:
-  [WorkspaceAccessPropertiesTypeDef](./type_defs.md#workspaceaccesspropertiestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyWorkspaceAccessPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "WorkspaceAccessProperties": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_workspace_access_properties(**kwargs)
+```
 
-<a id="modify\_workspace\_creation\_properties"></a>
+1. See [:material-code-braces: ModifyWorkspaceAccessPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspaceaccesspropertiesrequestrequesttypedef) 
 
-### modify_workspace_creation_properties
+### modify\_workspace\_creation\_properties
 
 Modify the default properties used to create WorkSpaces.
 
-Type annotations for
-`boto3.client("workspaces").modify_workspace_creation_properties` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_workspace_creation_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_creation_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_creation_properties)
+```python title="Method definition"
+def modify_workspace_creation_properties(
+    self,
+    *,
+    ResourceId: str,
+    WorkspaceCreationProperties: WorkspaceCreationPropertiesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyWorkspaceCreationPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacecreationpropertiesrequestrequesttypedef).
+1. See [:material-code-braces: WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef) 
 
-Keyword-only arguments:
 
-- `ResourceId`: `str` *(required)*
-- `WorkspaceCreationProperties`:
-  [WorkspaceCreationPropertiesTypeDef](./type_defs.md#workspacecreationpropertiestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyWorkspaceCreationPropertiesRequestRequestTypeDef = {  # (1)
+    "ResourceId": ...,
+    "WorkspaceCreationProperties": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_workspace_creation_properties(**kwargs)
+```
 
-<a id="modify\_workspace\_properties"></a>
+1. See [:material-code-braces: ModifyWorkspaceCreationPropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacecreationpropertiesrequestrequesttypedef) 
 
-### modify_workspace_properties
+### modify\_workspace\_properties
 
 Modifies the specified WorkSpace properties.
 
-Type annotations for `boto3.client("workspaces").modify_workspace_properties`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_workspace_properties` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_properties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_properties)
+```python title="Method definition"
+def modify_workspace_properties(
+    self,
+    *,
+    WorkspaceId: str,
+    WorkspaceProperties: WorkspacePropertiesTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyWorkspacePropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacepropertiesrequestrequesttypedef).
+1. See [:material-code-braces: WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef) 
 
-Keyword-only arguments:
 
-- `WorkspaceId`: `str` *(required)*
-- `WorkspaceProperties`:
-  [WorkspacePropertiesTypeDef](./type_defs.md#workspacepropertiestypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyWorkspacePropertiesRequestRequestTypeDef = {  # (1)
+    "WorkspaceId": ...,
+    "WorkspaceProperties": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_workspace_properties(**kwargs)
+```
 
-<a id="modify\_workspace\_state"></a>
+1. See [:material-code-braces: ModifyWorkspacePropertiesRequestRequestTypeDef](./type_defs.md#modifyworkspacepropertiesrequestrequesttypedef) 
 
-### modify_workspace_state
+### modify\_workspace\_state
 
 Sets the state of the specified WorkSpace.
 
-Type annotations for `boto3.client("workspaces").modify_workspace_state`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").modify_workspace_state` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
 
-Boto3 documentation:
-[WorkSpaces.Client.modify_workspace_state](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.modify_workspace_state)
+```python title="Method definition"
+def modify_workspace_state(
+    self,
+    *,
+    WorkspaceId: str,
+    WorkspaceState: TargetWorkspaceStateType,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[ModifyWorkspaceStateRequestRequestTypeDef](./type_defs.md#modifyworkspacestaterequestrequesttypedef).
+1. See [:material-code-brackets: TargetWorkspaceStateType](./literals.md#targetworkspacestatetype) 
 
-Keyword-only arguments:
 
-- `WorkspaceId`: `str` *(required)*
-- `WorkspaceState`:
-  [TargetWorkspaceStateType](./literals.md#targetworkspacestatetype)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: ModifyWorkspaceStateRequestRequestTypeDef = {  # (1)
+    "WorkspaceId": ...,
+    "WorkspaceState": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.modify_workspace_state(**kwargs)
+```
 
-<a id="reboot\_workspaces"></a>
+1. See [:material-code-braces: ModifyWorkspaceStateRequestRequestTypeDef](./type_defs.md#modifyworkspacestaterequestrequesttypedef) 
 
-### reboot_workspaces
+### reboot\_workspaces
 
 Reboots the specified WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").reboot_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").reboot_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.reboot_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.reboot_workspaces)
+```python title="Method definition"
+def reboot_workspaces(
+    self,
+    *,
+    RebootWorkspaceRequests: Sequence[RebootRequestTypeDef],  # (1)
+) -> RebootWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RebootWorkspacesRequestRequestTypeDef](./type_defs.md#rebootworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef) 
+2. See [:material-code-braces: RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `RebootWorkspaceRequests`:
-  `Sequence`\[[RebootRequestTypeDef](./type_defs.md#rebootrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RebootWorkspacesRequestRequestTypeDef = {  # (1)
+    "RebootWorkspaceRequests": ...,
+}
 
-Returns
-[RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
+parent.reboot_workspaces(**kwargs)
+```
 
-<a id="rebuild\_workspaces"></a>
+1. See [:material-code-braces: RebootWorkspacesRequestRequestTypeDef](./type_defs.md#rebootworkspacesrequestrequesttypedef) 
 
-### rebuild_workspaces
+### rebuild\_workspaces
 
 Rebuilds the specified WorkSpace.
 
-Type annotations for `boto3.client("workspaces").rebuild_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").rebuild_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.rebuild_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.rebuild_workspaces)
+```python title="Method definition"
+def rebuild_workspaces(
+    self,
+    *,
+    RebuildWorkspaceRequests: Sequence[RebuildRequestTypeDef],  # (1)
+) -> RebuildWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[RebuildWorkspacesRequestRequestTypeDef](./type_defs.md#rebuildworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef) 
+2. See [:material-code-braces: RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `RebuildWorkspaceRequests`:
-  `Sequence`\[[RebuildRequestTypeDef](./type_defs.md#rebuildrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: RebuildWorkspacesRequestRequestTypeDef = {  # (1)
+    "RebuildWorkspaceRequests": ...,
+}
 
-Returns
-[RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
+parent.rebuild_workspaces(**kwargs)
+```
 
-<a id="register\_workspace\_directory"></a>
+1. See [:material-code-braces: RebuildWorkspacesRequestRequestTypeDef](./type_defs.md#rebuildworkspacesrequestrequesttypedef) 
 
-### register_workspace_directory
+### register\_workspace\_directory
 
 Registers the specified directory.
 
-Type annotations for `boto3.client("workspaces").register_workspace_directory`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").register_workspace_directory` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
 
-Boto3 documentation:
-[WorkSpaces.Client.register_workspace_directory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.register_workspace_directory)
+```python title="Method definition"
+def register_workspace_directory(
+    self,
+    *,
+    DirectoryId: str,
+    EnableWorkDocs: bool,
+    SubnetIds: Sequence[str] = ...,
+    EnableSelfService: bool = ...,
+    Tenancy: TenancyType = ...,  # (1)
+    Tags: Sequence[TagTypeDef] = ...,  # (2)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RegisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#registerworkspacedirectoryrequestrequesttypedef).
+1. See [:material-code-brackets: TenancyType](./literals.md#tenancytype) 
+2. See [:material-code-braces: TagTypeDef](./type_defs.md#tagtypedef) 
 
-Keyword-only arguments:
 
-- `DirectoryId`: `str` *(required)*
-- `EnableWorkDocs`: `bool` *(required)*
-- `SubnetIds`: `Sequence`\[`str`\]
-- `EnableSelfService`: `bool`
-- `Tenancy`: [TenancyType](./literals.md#tenancytype)
-- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+```python title="Usage example with kwargs"
+kwargs: RegisterWorkspaceDirectoryRequestRequestTypeDef = {  # (1)
+    "DirectoryId": ...,
+    "EnableWorkDocs": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.register_workspace_directory(**kwargs)
+```
 
-<a id="restore\_workspace"></a>
+1. See [:material-code-braces: RegisterWorkspaceDirectoryRequestRequestTypeDef](./type_defs.md#registerworkspacedirectoryrequestrequesttypedef) 
 
-### restore_workspace
+### restore\_workspace
 
 Restores the specified WorkSpace to its last known healthy state.
 
-Type annotations for `boto3.client("workspaces").restore_workspace` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").restore_workspace` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
 
-Boto3 documentation:
-[WorkSpaces.Client.restore_workspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.restore_workspace)
+```python title="Method definition"
+def restore_workspace(
+    self,
+    *,
+    WorkspaceId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RestoreWorkspaceRequestRequestTypeDef](./type_defs.md#restoreworkspacerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `WorkspaceId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: RestoreWorkspaceRequestRequestTypeDef = {  # (1)
+    "WorkspaceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.restore_workspace(**kwargs)
+```
 
-<a id="revoke\_ip\_rules"></a>
+1. See [:material-code-braces: RestoreWorkspaceRequestRequestTypeDef](./type_defs.md#restoreworkspacerequestrequesttypedef) 
 
-### revoke_ip_rules
+### revoke\_ip\_rules
 
 Removes one or more rules from the specified IP access control group.
 
-Type annotations for `boto3.client("workspaces").revoke_ip_rules` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").revoke_ip_rules` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
 
-Boto3 documentation:
-[WorkSpaces.Client.revoke_ip_rules](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.revoke_ip_rules)
+```python title="Method definition"
+def revoke_ip_rules(
+    self,
+    *,
+    GroupId: str,
+    UserRules: Sequence[str],
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[RevokeIpRulesRequestRequestTypeDef](./type_defs.md#revokeiprulesrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `UserRules`: `Sequence`\[`str`\] *(required)*
+```python title="Usage example with kwargs"
+kwargs: RevokeIpRulesRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+    "UserRules": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.revoke_ip_rules(**kwargs)
+```
 
-<a id="start\_workspaces"></a>
+1. See [:material-code-braces: RevokeIpRulesRequestRequestTypeDef](./type_defs.md#revokeiprulesrequestrequesttypedef) 
 
-### start_workspaces
+### start\_workspaces
 
 Starts the specified WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").start_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").start_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.start_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.start_workspaces)
+```python title="Method definition"
+def start_workspaces(
+    self,
+    *,
+    StartWorkspaceRequests: Sequence[StartRequestTypeDef],  # (1)
+) -> StartWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StartWorkspacesRequestRequestTypeDef](./type_defs.md#startworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: StartRequestTypeDef](./type_defs.md#startrequesttypedef) 
+2. See [:material-code-braces: StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `StartWorkspaceRequests`:
-  `Sequence`\[[StartRequestTypeDef](./type_defs.md#startrequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StartWorkspacesRequestRequestTypeDef = {  # (1)
+    "StartWorkspaceRequests": ...,
+}
 
-Returns
-[StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
+parent.start_workspaces(**kwargs)
+```
 
-<a id="stop\_workspaces"></a>
+1. See [:material-code-braces: StartWorkspacesRequestRequestTypeDef](./type_defs.md#startworkspacesrequestrequesttypedef) 
 
-### stop_workspaces
+### stop\_workspaces
 
 Stops the specified WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").stop_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").stop_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.stop_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.stop_workspaces)
+```python title="Method definition"
+def stop_workspaces(
+    self,
+    *,
+    StopWorkspaceRequests: Sequence[StopRequestTypeDef],  # (1)
+) -> StopWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[StopWorkspacesRequestRequestTypeDef](./type_defs.md#stopworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: StopRequestTypeDef](./type_defs.md#stoprequesttypedef) 
+2. See [:material-code-braces: StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `StopWorkspaceRequests`:
-  `Sequence`\[[StopRequestTypeDef](./type_defs.md#stoprequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: StopWorkspacesRequestRequestTypeDef = {  # (1)
+    "StopWorkspaceRequests": ...,
+}
 
-Returns
-[StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
+parent.stop_workspaces(**kwargs)
+```
 
-<a id="terminate\_workspaces"></a>
+1. See [:material-code-braces: StopWorkspacesRequestRequestTypeDef](./type_defs.md#stopworkspacesrequestrequesttypedef) 
 
-### terminate_workspaces
+### terminate\_workspaces
 
 Terminates the specified WorkSpaces.
 
-Type annotations for `boto3.client("workspaces").terminate_workspaces` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").terminate_workspaces` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
 
-Boto3 documentation:
-[WorkSpaces.Client.terminate_workspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.terminate_workspaces)
+```python title="Method definition"
+def terminate_workspaces(
+    self,
+    *,
+    TerminateWorkspaceRequests: Sequence[TerminateRequestTypeDef],  # (1)
+) -> TerminateWorkspacesResultTypeDef:  # (2)
+    ...
+```
 
-Arguments mapping described in
-[TerminateWorkspacesRequestRequestTypeDef](./type_defs.md#terminateworkspacesrequestrequesttypedef).
+1. See [:material-code-braces: TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef) 
+2. See [:material-code-braces: TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef) 
 
-Keyword-only arguments:
 
-- `TerminateWorkspaceRequests`:
-  `Sequence`\[[TerminateRequestTypeDef](./type_defs.md#terminaterequesttypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: TerminateWorkspacesRequestRequestTypeDef = {  # (1)
+    "TerminateWorkspaceRequests": ...,
+}
 
-Returns
-[TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
+parent.terminate_workspaces(**kwargs)
+```
 
-<a id="update\_connect\_client\_add\_in"></a>
+1. See [:material-code-braces: TerminateWorkspacesRequestRequestTypeDef](./type_defs.md#terminateworkspacesrequestrequesttypedef) 
 
-### update_connect_client_add_in
+### update\_connect\_client\_add\_in
 
 Updates a Amazon Connect client add-in.
 
-Type annotations for `boto3.client("workspaces").update_connect_client_add_in`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").update_connect_client_add_in` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connect_client_add_in)
 
-Boto3 documentation:
-[WorkSpaces.Client.update_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connect_client_add_in)
+```python title="Method definition"
+def update_connect_client_add_in(
+    self,
+    *,
+    AddInId: str,
+    ResourceId: str,
+    Name: str = ...,
+    URL: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectClientAddInRequestRequestTypeDef](./type_defs.md#updateconnectclientaddinrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `AddInId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `Name`: `str`
-- `URL`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectClientAddInRequestRequestTypeDef = {  # (1)
+    "AddInId": ...,
+    "ResourceId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_connect_client_add_in(**kwargs)
+```
 
-<a id="update\_connection\_alias\_permission"></a>
+1. See [:material-code-braces: UpdateConnectClientAddInRequestRequestTypeDef](./type_defs.md#updateconnectclientaddinrequestrequesttypedef) 
 
-### update_connection_alias_permission
+### update\_connection\_alias\_permission
 
 Shares or unshares a connection alias with one account by specifying whether
 that account has permission to associate the connection alias with a directory.
 
-Type annotations for
-`boto3.client("workspaces").update_connection_alias_permission` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").update_connection_alias_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
 
-Boto3 documentation:
-[WorkSpaces.Client.update_connection_alias_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connection_alias_permission)
+```python title="Method definition"
+def update_connection_alias_permission(
+    self,
+    *,
+    AliasId: str,
+    ConnectionAliasPermission: ConnectionAliasPermissionTypeDef,  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateConnectionAliasPermissionRequestRequestTypeDef](./type_defs.md#updateconnectionaliaspermissionrequestrequesttypedef).
+1. See [:material-code-braces: ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef) 
 
-Keyword-only arguments:
 
-- `AliasId`: `str` *(required)*
-- `ConnectionAliasPermission`:
-  [ConnectionAliasPermissionTypeDef](./type_defs.md#connectionaliaspermissiontypedef)
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateConnectionAliasPermissionRequestRequestTypeDef = {  # (1)
+    "AliasId": ...,
+    "ConnectionAliasPermission": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_connection_alias_permission(**kwargs)
+```
 
-<a id="update\_rules\_of\_ip\_group"></a>
+1. See [:material-code-braces: UpdateConnectionAliasPermissionRequestRequestTypeDef](./type_defs.md#updateconnectionaliaspermissionrequestrequesttypedef) 
 
-### update_rules_of_ip_group
+### update\_rules\_of\_ip\_group
 
 Replaces the current rules of the specified IP access control group with the
 specified rules.
 
-Type annotations for `boto3.client("workspaces").update_rules_of_ip_group`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").update_rules_of_ip_group` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
 
-Boto3 documentation:
-[WorkSpaces.Client.update_rules_of_ip_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_rules_of_ip_group)
+```python title="Method definition"
+def update_rules_of_ip_group(
+    self,
+    *,
+    GroupId: str,
+    UserRules: Sequence[IpRuleItemTypeDef],  # (1)
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateRulesOfIpGroupRequestRequestTypeDef](./type_defs.md#updaterulesofipgrouprequestrequesttypedef).
+1. See [:material-code-braces: IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef) 
 
-Keyword-only arguments:
 
-- `GroupId`: `str` *(required)*
-- `UserRules`:
-  `Sequence`\[[IpRuleItemTypeDef](./type_defs.md#ipruleitemtypedef)\]
-  *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateRulesOfIpGroupRequestRequestTypeDef = {  # (1)
+    "GroupId": ...,
+    "UserRules": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_rules_of_ip_group(**kwargs)
+```
 
-<a id="update\_workspace\_bundle"></a>
+1. See [:material-code-braces: UpdateRulesOfIpGroupRequestRequestTypeDef](./type_defs.md#updaterulesofipgrouprequestrequesttypedef) 
 
-### update_workspace_bundle
+### update\_workspace\_bundle
 
 Updates a WorkSpace bundle with a new image.
 
-Type annotations for `boto3.client("workspaces").update_workspace_bundle`
-method.
+Type annotations and code completion for `#!python boto3.client("workspaces").update_workspace_bundle` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
 
-Boto3 documentation:
-[WorkSpaces.Client.update_workspace_bundle](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_bundle)
+```python title="Method definition"
+def update_workspace_bundle(
+    self,
+    *,
+    BundleId: str = ...,
+    ImageId: str = ...,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#updateworkspacebundlerequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `BundleId`: `str`
-- `ImageId`: `str`
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceBundleRequestRequestTypeDef = {  # (1)
+    "BundleId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_workspace_bundle(**kwargs)
+```
 
-<a id="update\_workspace\_image\_permission"></a>
+1. See [:material-code-braces: UpdateWorkspaceBundleRequestRequestTypeDef](./type_defs.md#updateworkspacebundlerequestrequesttypedef) 
 
-### update_workspace_image_permission
+### update\_workspace\_image\_permission
 
 Shares or unshares an image with one account in the same Amazon Web Services
 Region by specifying whether that account has permission to copy the image.
 
-Type annotations for
-`boto3.client("workspaces").update_workspace_image_permission` method.
+Type annotations and code completion for `#!python boto3.client("workspaces").update_workspace_image_permission` method.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
 
-Boto3 documentation:
-[WorkSpaces.Client.update_workspace_image_permission](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_workspace_image_permission)
+```python title="Method definition"
+def update_workspace_image_permission(
+    self,
+    *,
+    ImageId: str,
+    AllowCopyImage: bool,
+    SharedAccountId: str,
+) -> Dict[str, Any]:
+    ...
+```
 
-Arguments mapping described in
-[UpdateWorkspaceImagePermissionRequestRequestTypeDef](./type_defs.md#updateworkspaceimagepermissionrequestrequesttypedef).
 
-Keyword-only arguments:
 
-- `ImageId`: `str` *(required)*
-- `AllowCopyImage`: `bool` *(required)*
-- `SharedAccountId`: `str` *(required)*
+```python title="Usage example with kwargs"
+kwargs: UpdateWorkspaceImagePermissionRequestRequestTypeDef = {  # (1)
+    "ImageId": ...,
+    "AllowCopyImage": ...,
+    "SharedAccountId": ...,
+}
 
-Returns `Dict`\[`str`, `Any`\].
+parent.update_workspace_image_permission(**kwargs)
+```
 
-<a id="get_paginator"></a>
+1. See [:material-code-braces: UpdateWorkspaceImagePermissionRequestRequestTypeDef](./type_defs.md#updateworkspaceimagepermissionrequestrequesttypedef) 
+
+
 
 ### get_paginator
 
-Type annotations for `boto3.client("workspaces").get_paginator` method with
-overloads.
+Type annotations and code completion for `#!python boto3.client("workspaces").get_paginator` method with overloads.
 
-- `client.get_paginator("describe_account_modifications")` ->
-  [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
-- `client.get_paginator("describe_ip_groups")` ->
-  [DescribeIpGroupsPaginator](./paginators.md#describeipgroupspaginator)
-- `client.get_paginator("describe_workspace_bundles")` ->
-  [DescribeWorkspaceBundlesPaginator](./paginators.md#describeworkspacebundlespaginator)
-- `client.get_paginator("describe_workspace_directories")` ->
-  [DescribeWorkspaceDirectoriesPaginator](./paginators.md#describeworkspacedirectoriespaginator)
-- `client.get_paginator("describe_workspace_images")` ->
-  [DescribeWorkspaceImagesPaginator](./paginators.md#describeworkspaceimagespaginator)
-- `client.get_paginator("describe_workspaces")` ->
-  [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
-- `client.get_paginator("describe_workspaces_connection_status")` ->
-  [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
-- `client.get_paginator("list_available_management_cidr_ranges")` ->
-  [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
+- `client.get_paginator("describe_account_modifications")` -> [DescribeAccountModificationsPaginator](./paginators.md#describeaccountmodificationspaginator)
+- `client.get_paginator("describe_ip_groups")` -> [DescribeIpGroupsPaginator](./paginators.md#describeipgroupspaginator)
+- `client.get_paginator("describe_workspace_bundles")` -> [DescribeWorkspaceBundlesPaginator](./paginators.md#describeworkspacebundlespaginator)
+- `client.get_paginator("describe_workspace_directories")` -> [DescribeWorkspaceDirectoriesPaginator](./paginators.md#describeworkspacedirectoriespaginator)
+- `client.get_paginator("describe_workspace_images")` -> [DescribeWorkspaceImagesPaginator](./paginators.md#describeworkspaceimagespaginator)
+- `client.get_paginator("describe_workspaces")` -> [DescribeWorkspacesPaginator](./paginators.md#describeworkspacespaginator)
+- `client.get_paginator("describe_workspaces_connection_status")` -> [DescribeWorkspacesConnectionStatusPaginator](./paginators.md#describeworkspacesconnectionstatuspaginator)
+- `client.get_paginator("list_available_management_cidr_ranges")` -> [ListAvailableManagementCidrRangesPaginator](./paginators.md#listavailablemanagementcidrrangespaginator)
+
+
+

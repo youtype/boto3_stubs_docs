@@ -1,30 +1,18 @@
-<a id="paginators-for-boto3-snowdevicemanagement-module"></a>
-
-# Paginators for boto3 SnowDeviceManagement module
+# Paginators
 
 > [Index](../README.md) > [SnowDeviceManagement](./README.md) > Paginators
 
-Auto-generated documentation for
-[SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
-type annotations stubs module
-[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+!!! note ""
 
-- [Paginators for boto3 SnowDeviceManagement module](#paginators-for-boto3-snowdevicemanagement-module)
-  - [ListDeviceResourcesPaginator](#listdeviceresourcespaginator)
-  - [ListDevicesPaginator](#listdevicespaginator)
-  - [ListExecutionsPaginator](#listexecutionspaginator)
-  - [ListTasksPaginator](#listtaskspaginator)
-
-<a id="listdeviceresourcespaginator"></a>
+    Auto-generated documentation for [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
+    type annotations stubs module [mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 ## ListDeviceResourcesPaginator
 
-Type annotations for
-`boto3.client("snow-device-management").get_paginator("list_device_resources")`.
+Type annotations and code completion for `#!python boto3.client("snow-device-management").get_paginator("list_device_resources")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListDeviceResources)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPaginator
@@ -33,29 +21,41 @@ def get_list_device_resources_paginator() -> ListDeviceResourcesPaginator:
     return Session().client("snow-device-management").get_paginator("list_device_resources")
 ```
 
-Boto3 documentation:
-[SnowDeviceManagement.Paginator.ListDeviceResources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListDeviceResources)
 
-Arguments for `ListDeviceResourcesPaginator.paginate` method:
+### paginate
 
-- `managedDeviceId`: `str` *(required)*
-- `type`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDeviceResourcesPaginator.paginate` method.
 
-`ListDeviceResourcesPaginator.paginate` returns
-`_PageIterator`\[[ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    managedDeviceId: str,
+    type: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDeviceResourcesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdevicespaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef = {  # (1)
+    "managedDeviceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDeviceResourcesInputListDeviceResourcesPaginateTypeDef](./type_defs.md#listdeviceresourcesinputlistdeviceresourcespaginatetypedef) 
 ## ListDevicesPaginator
 
-Type annotations for
-`boto3.client("snow-device-management").get_paginator("list_devices")`.
+Type annotations and code completion for `#!python boto3.client("snow-device-management").get_paginator("list_devices")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListDevices)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_snow_device_management.paginator import ListDevicesPaginator
@@ -64,28 +64,40 @@ def get_list_devices_paginator() -> ListDevicesPaginator:
     return Session().client("snow-device-management").get_paginator("list_devices")
 ```
 
-Boto3 documentation:
-[SnowDeviceManagement.Paginator.ListDevices](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListDevices)
 
-Arguments for `ListDevicesPaginator.paginate` method:
+### paginate
 
-- `jobId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDevicesPaginator.paginate` method.
 
-`ListDevicesPaginator.paginate` returns
-`_PageIterator`\[[ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    jobId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDevicesOutputTypeDef]:  # (2)
+    ...
+```
 
-<a id="listexecutionspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDevicesInputListDevicesPaginateTypeDef = {  # (1)
+    "jobId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDevicesInputListDevicesPaginateTypeDef](./type_defs.md#listdevicesinputlistdevicespaginatetypedef) 
 ## ListExecutionsPaginator
 
-Type annotations for
-`boto3.client("snow-device-management").get_paginator("list_executions")`.
+Type annotations and code completion for `#!python boto3.client("snow-device-management").get_paginator("list_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_snow_device_management.paginator import ListExecutionsPaginator
@@ -94,29 +106,42 @@ def get_list_executions_paginator() -> ListExecutionsPaginator:
     return Session().client("snow-device-management").get_paginator("list_executions")
 ```
 
-Boto3 documentation:
-[SnowDeviceManagement.Paginator.ListExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListExecutions)
 
-Arguments for `ListExecutionsPaginator.paginate` method:
+### paginate
 
-- `taskId`: `str` *(required)*
-- `state`: [ExecutionStateType](./literals.md#executionstatetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListExecutionsPaginator.paginate` method.
 
-`ListExecutionsPaginator.paginate` returns
-`_PageIterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    taskId: str,
+    state: ExecutionStateType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListExecutionsOutputTypeDef]:  # (3)
+    ...
+```
 
-<a id="listtaskspaginator"></a>
+1. See [:material-code-brackets: ExecutionStateType](./literals.md#executionstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListExecutionsInputListExecutionsPaginateTypeDef = {  # (1)
+    "taskId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListExecutionsInputListExecutionsPaginateTypeDef](./type_defs.md#listexecutionsinputlistexecutionspaginatetypedef) 
 ## ListTasksPaginator
 
-Type annotations for
-`boto3.client("snow-device-management").get_paginator("list_tasks")`.
+Type annotations and code completion for `#!python boto3.client("snow-device-management").get_paginator("list_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_snow_device_management.paginator import ListTasksPaginator
@@ -125,14 +150,32 @@ def get_list_tasks_paginator() -> ListTasksPaginator:
     return Session().client("snow-device-management").get_paginator("list_tasks")
 ```
 
-Boto3 documentation:
-[SnowDeviceManagement.Paginator.ListTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Paginator.ListTasks)
 
-Arguments for `ListTasksPaginator.paginate` method:
+### paginate
 
-- `state`: [TaskStateType](./literals.md#taskstatetype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListTasksPaginator.paginate` method.
 
-`ListTasksPaginator.paginate` returns
-`_PageIterator`\[[ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    state: TaskStateType = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListTasksOutputTypeDef]:  # (3)
+    ...
+```
+
+1. See [:material-code-brackets: TaskStateType](./literals.md#taskstatetype) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListTasksInputListTasksPaginateTypeDef = {  # (1)
+    "state": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListTasksInputListTasksPaginateTypeDef](./type_defs.md#listtasksinputlisttaskspaginatetypedef) 

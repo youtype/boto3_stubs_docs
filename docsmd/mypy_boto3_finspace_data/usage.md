@@ -1,83 +1,108 @@
-<a id="examples-for-boto3-finspacedata-module"></a>
-
-# Examples for boto3 FinSpaceData module
+# Examples
 
 > [Index](../README.md) > [FinSpaceData](./README.md) > Examples
 
-- [Examples for boto3 FinSpaceData module](#examples-for-boto3-finspacedata-module)
-  - [Client](#client)
-    - [Implicit type annotations](#implicit-type-annotations)
-    - [Explicit type annotations](#explicit-type-annotations)
+!!! note ""
 
-<a id="client"></a>
+    Auto-generated documentation for [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
+    type annotations stubs module [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ## Client
-
-<a id="implicit-type-annotations"></a>
 
 ### Implicit type annotations
 
 Can be used with `boto3-stubs[finspace-data]` package installed.
 
-Write your `FinSpaceData` code as usual, type checking and code completion
-should work out of the box.
-
-```python
-import boto3
+Write your `FinSpaceData` code as usual,
+type checking and code completion should work out of the box.
 
 
-session = boto3.Session()
+=== "Client"
 
-# client has type FinSpaceDataClient
-# and provides type checking and code completion
-client = session.client("finspace-data")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-# result has type bool
-# and provides type checking and code completion
-# IDE should show a hint with argument names and types
-result = client.can_paginate()
 
-# paginator has type ListChangesetsPaginator and provides type checking
-# and code completion for paginate method
-paginator = client.get_paginator("list_changesets")
-for item in paginator.paginate(...):
-    # item has type ListChangesetsResponseTypeDef
-    print(item)
-```
+    session = Session()
 
-<a id="explicit-type-annotations"></a>
+    client = session.client("finspace-data")  # (1)
+    result = client.create_changeset()  # (2)
+    ```
+
+    1. client: [FinSpaceDataClient](./client.md)
+    2. result: [:material-code-braces: CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef) 
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+
+    session = Session()
+    client = session.client("finspace-data")  # (1)
+
+    paginator = client.get_paginator("list_changesets")  # (2)
+    for item in paginator.paginate(...):
+        print(item)  # (3)
+    ```
+
+    1. client: [FinSpaceDataClient](./client.md)
+    2. paginator: [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
+    3. item: [:material-code-braces: ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef) 
+
+
+
 
 ### Explicit type annotations
 
-With `boto3-stubs-lite[finspace-data]` or a standalone
-`mypy_boto3_finspace_data` package, you have to explicitly specify
-`client: FinSpaceDataClient` type annotation.
+With `boto3-stubs-lite[finspace-data]`
+or a standalone `mypy_boto3_finspace_data` package, you have to explicitly specify `client: FinSpaceDataClient` type annotation.
 
-All other type annotations are optional, as types should be discovered
-automatically. However, these type annotations can be helpful in your functions
-and methods.
-
-```python
-import boto3
-
-from mypy_boto3_finspace_data.client import FinSpaceDataClient
-from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
-
-from mypy_boto3_finspace_data.literals import PaginatorName
-
-from mypy_boto3_finspace_data.type_defs import bool
-from mypy_boto3_finspace_data.type_defs import ListChangesetsResponseTypeDef
+All other type annotations are optional, as types should be discovered automatically.
+However, these type annotations can be helpful in your functions and methods.
 
 
-session = boto3.Session()
+=== "Client"
 
-client: FinSpaceDataClient = session.client("finspace-data")
+    ```python title="Client usage example"
+    from boto3.session import Session
 
-result: bool = client.can_paginate()
+    from mypy_boto3_finspace_data.client import FinSpaceDataClient
+    from mypy_boto3_finspace_data.type_defs import CreateChangesetResponseTypeDef
+    from mypy_boto3_finspace_data.type_defs import CreateChangesetRequestRequestTypeDef
 
-paginator_name: PaginatorName = "list_changesets"
-paginator: ListChangesetsPaginator = client.get_paginator(paginator_name)
-for item in paginator.paginate(...):
-    item: ListChangesetsResponseTypeDef
-    print(item)
-```
+
+    session = Session()
+
+    client: FinSpaceDataClient = session.client("finspace-data")
+
+    kwargs: CreateChangesetRequestRequestTypeDef = {...}
+    result: CreateChangesetResponseTypeDef = client.create_changeset(**kwargs)
+    ```
+
+
+
+=== "Paginators"
+
+    ```python title="Paginator usage example"
+    from boto3.session import Session
+
+    from mypy_boto3_finspace_data.client import FinSpaceDataClient
+    from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator
+    from mypy_boto3_finspace_data.type_defs import ListChangesetsResponseTypeDef
+
+
+    session = Session()
+    client: FinSpaceDataClient = session.client("finspace-data")
+
+    paginator: ListChangesetsPaginator = client.get_paginator("list_changesets")
+    for item in paginator.paginate(...):
+        item: ListChangesetsResponseTypeDef
+        print(item)
+    ```
+
+
+
+

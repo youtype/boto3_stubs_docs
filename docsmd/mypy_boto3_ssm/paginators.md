@@ -1,72 +1,18 @@
-<a id="paginators-for-boto3-ssm-module"></a>
-
-# Paginators for boto3 SSM module
+# Paginators
 
 > [Index](../README.md) > [SSM](./README.md) > Paginators
 
-Auto-generated documentation for
-[SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
-type annotations stubs module
-[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
+!!! note ""
 
-- [Paginators for boto3 SSM module](#paginators-for-boto3-ssm-module)
-  - [DescribeActivationsPaginator](#describeactivationspaginator)
-  - [DescribeAssociationExecutionTargetsPaginator](#describeassociationexecutiontargetspaginator)
-  - [DescribeAssociationExecutionsPaginator](#describeassociationexecutionspaginator)
-  - [DescribeAutomationExecutionsPaginator](#describeautomationexecutionspaginator)
-  - [DescribeAutomationStepExecutionsPaginator](#describeautomationstepexecutionspaginator)
-  - [DescribeAvailablePatchesPaginator](#describeavailablepatchespaginator)
-  - [DescribeEffectiveInstanceAssociationsPaginator](#describeeffectiveinstanceassociationspaginator)
-  - [DescribeEffectivePatchesForPatchBaselinePaginator](#describeeffectivepatchesforpatchbaselinepaginator)
-  - [DescribeInstanceAssociationsStatusPaginator](#describeinstanceassociationsstatuspaginator)
-  - [DescribeInstanceInformationPaginator](#describeinstanceinformationpaginator)
-  - [DescribeInstancePatchStatesPaginator](#describeinstancepatchstatespaginator)
-  - [DescribeInstancePatchStatesForPatchGroupPaginator](#describeinstancepatchstatesforpatchgrouppaginator)
-  - [DescribeInstancePatchesPaginator](#describeinstancepatchespaginator)
-  - [DescribeInventoryDeletionsPaginator](#describeinventorydeletionspaginator)
-  - [DescribeMaintenanceWindowExecutionTaskInvocationsPaginator](#describemaintenancewindowexecutiontaskinvocationspaginator)
-  - [DescribeMaintenanceWindowExecutionTasksPaginator](#describemaintenancewindowexecutiontaskspaginator)
-  - [DescribeMaintenanceWindowExecutionsPaginator](#describemaintenancewindowexecutionspaginator)
-  - [DescribeMaintenanceWindowSchedulePaginator](#describemaintenancewindowschedulepaginator)
-  - [DescribeMaintenanceWindowTargetsPaginator](#describemaintenancewindowtargetspaginator)
-  - [DescribeMaintenanceWindowTasksPaginator](#describemaintenancewindowtaskspaginator)
-  - [DescribeMaintenanceWindowsPaginator](#describemaintenancewindowspaginator)
-  - [DescribeMaintenanceWindowsForTargetPaginator](#describemaintenancewindowsfortargetpaginator)
-  - [DescribeOpsItemsPaginator](#describeopsitemspaginator)
-  - [DescribeParametersPaginator](#describeparameterspaginator)
-  - [DescribePatchBaselinesPaginator](#describepatchbaselinespaginator)
-  - [DescribePatchGroupsPaginator](#describepatchgroupspaginator)
-  - [DescribePatchPropertiesPaginator](#describepatchpropertiespaginator)
-  - [DescribeSessionsPaginator](#describesessionspaginator)
-  - [GetInventoryPaginator](#getinventorypaginator)
-  - [GetInventorySchemaPaginator](#getinventoryschemapaginator)
-  - [GetOpsSummaryPaginator](#getopssummarypaginator)
-  - [GetParameterHistoryPaginator](#getparameterhistorypaginator)
-  - [GetParametersByPathPaginator](#getparametersbypathpaginator)
-  - [ListAssociationVersionsPaginator](#listassociationversionspaginator)
-  - [ListAssociationsPaginator](#listassociationspaginator)
-  - [ListCommandInvocationsPaginator](#listcommandinvocationspaginator)
-  - [ListCommandsPaginator](#listcommandspaginator)
-  - [ListComplianceItemsPaginator](#listcomplianceitemspaginator)
-  - [ListComplianceSummariesPaginator](#listcompliancesummariespaginator)
-  - [ListDocumentVersionsPaginator](#listdocumentversionspaginator)
-  - [ListDocumentsPaginator](#listdocumentspaginator)
-  - [ListOpsItemEventsPaginator](#listopsitemeventspaginator)
-  - [ListOpsItemRelatedItemsPaginator](#listopsitemrelateditemspaginator)
-  - [ListOpsMetadataPaginator](#listopsmetadatapaginator)
-  - [ListResourceComplianceSummariesPaginator](#listresourcecompliancesummariespaginator)
-  - [ListResourceDataSyncPaginator](#listresourcedatasyncpaginator)
-
-<a id="describeactivationspaginator"></a>
+    Auto-generated documentation for [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
+    type annotations stubs module [mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ## DescribeActivationsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_activations")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_activations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeActivationsPaginator
@@ -75,29 +21,41 @@ def get_describe_activations_paginator() -> DescribeActivationsPaginator:
     return Session().client("ssm").get_paginator("describe_activations")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeActivations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeActivations)
 
-Arguments for `DescribeActivationsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeActivationsPaginator.paginate` method.
 
-`DescribeActivationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[DescribeActivationsFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeActivationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeassociationexecutiontargetspaginator"></a>
+1. See [:material-code-braces: DescribeActivationsFilterTypeDef](./type_defs.md#describeactivationsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeActivationsRequestDescribeActivationsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeActivationsRequestDescribeActivationsPaginateTypeDef](./type_defs.md#describeactivationsrequestdescribeactivationspaginatetypedef) 
 ## DescribeAssociationExecutionTargetsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_association_execution_targets")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_association_execution_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeAssociationExecutionTargetsPaginator
@@ -106,31 +64,44 @@ def get_describe_association_execution_targets_paginator() -> DescribeAssociatio
     return Session().client("ssm").get_paginator("describe_association_execution_targets")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeAssociationExecutionTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutionTargets)
 
-Arguments for `DescribeAssociationExecutionTargetsPaginator.paginate` method:
+### paginate
 
-- `AssociationId`: `str` *(required)*
-- `ExecutionId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAssociationExecutionTargetsPaginator.paginate` method.
 
-`DescribeAssociationExecutionTargetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationId: str,
+    ExecutionId: str,
+    Filters: Sequence[AssociationExecutionTargetsFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAssociationExecutionTargetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeassociationexecutionspaginator"></a>
+1. See [:material-code-braces: AssociationExecutionTargetsFilterTypeDef](./type_defs.md#associationexecutiontargetsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef = {  # (1)
+    "AssociationId": ...,
+    "ExecutionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssociationExecutionTargetsRequestDescribeAssociationExecutionTargetsPaginateTypeDef](./type_defs.md#describeassociationexecutiontargetsrequestdescribeassociationexecutiontargetspaginatetypedef) 
 ## DescribeAssociationExecutionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_association_executions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_association_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeAssociationExecutionsPaginator
@@ -139,30 +110,42 @@ def get_describe_association_executions_paginator() -> DescribeAssociationExecut
     return Session().client("ssm").get_paginator("describe_association_executions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeAssociationExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAssociationExecutions)
 
-Arguments for `DescribeAssociationExecutionsPaginator.paginate` method:
+### paginate
 
-- `AssociationId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAssociationExecutionsPaginator.paginate` method.
 
-`DescribeAssociationExecutionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationId: str,
+    Filters: Sequence[AssociationExecutionFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAssociationExecutionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeautomationexecutionspaginator"></a>
+1. See [:material-code-braces: AssociationExecutionFilterTypeDef](./type_defs.md#associationexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef = {  # (1)
+    "AssociationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAssociationExecutionsRequestDescribeAssociationExecutionsPaginateTypeDef](./type_defs.md#describeassociationexecutionsrequestdescribeassociationexecutionspaginatetypedef) 
 ## DescribeAutomationExecutionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_automation_executions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_automation_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeAutomationExecutionsPaginator
@@ -171,29 +154,41 @@ def get_describe_automation_executions_paginator() -> DescribeAutomationExecutio
     return Session().client("ssm").get_paginator("describe_automation_executions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeAutomationExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationExecutions)
 
-Arguments for `DescribeAutomationExecutionsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAutomationExecutionsPaginator.paginate` method.
 
-`DescribeAutomationExecutionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[AutomationExecutionFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAutomationExecutionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeautomationstepexecutionspaginator"></a>
+1. See [:material-code-braces: AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAutomationExecutionsRequestDescribeAutomationExecutionsPaginateTypeDef](./type_defs.md#describeautomationexecutionsrequestdescribeautomationexecutionspaginatetypedef) 
 ## DescribeAutomationStepExecutionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_automation_step_executions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_automation_step_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeAutomationStepExecutionsPaginator
@@ -202,31 +197,43 @@ def get_describe_automation_step_executions_paginator() -> DescribeAutomationSte
     return Session().client("ssm").get_paginator("describe_automation_step_executions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeAutomationStepExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAutomationStepExecutions)
 
-Arguments for `DescribeAutomationStepExecutionsPaginator.paginate` method:
+### paginate
 
-- `AutomationExecutionId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef)\]
-- `ReverseOrder`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAutomationStepExecutionsPaginator.paginate` method.
 
-`DescribeAutomationStepExecutionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AutomationExecutionId: str,
+    Filters: Sequence[StepExecutionFilterTypeDef] = ...,  # (1)
+    ReverseOrder: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAutomationStepExecutionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeavailablepatchespaginator"></a>
+1. See [:material-code-braces: StepExecutionFilterTypeDef](./type_defs.md#stepexecutionfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef = {  # (1)
+    "AutomationExecutionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAutomationStepExecutionsRequestDescribeAutomationStepExecutionsPaginateTypeDef](./type_defs.md#describeautomationstepexecutionsrequestdescribeautomationstepexecutionspaginatetypedef) 
 ## DescribeAvailablePatchesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_available_patches")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_available_patches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeAvailablePatchesPaginator
@@ -235,29 +242,41 @@ def get_describe_available_patches_paginator() -> DescribeAvailablePatchesPagina
     return Session().client("ssm").get_paginator("describe_available_patches")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeAvailablePatches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeAvailablePatches)
 
-Arguments for `DescribeAvailablePatchesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeAvailablePatchesPaginator.paginate` method.
 
-`DescribeAvailablePatchesPaginator.paginate` returns
-`_PageIterator`\[[DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[PatchOrchestratorFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeAvailablePatchesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeeffectiveinstanceassociationspaginator"></a>
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeAvailablePatchesRequestDescribeAvailablePatchesPaginateTypeDef](./type_defs.md#describeavailablepatchesrequestdescribeavailablepatchespaginatetypedef) 
 ## DescribeEffectiveInstanceAssociationsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_effective_instance_associations")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_effective_instance_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeEffectiveInstanceAssociationsPaginator
@@ -266,28 +285,40 @@ def get_describe_effective_instance_associations_paginator() -> DescribeEffectiv
     return Session().client("ssm").get_paginator("describe_effective_instance_associations")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeEffectiveInstanceAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectiveInstanceAssociations)
 
-Arguments for `DescribeEffectiveInstanceAssociationsPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEffectiveInstanceAssociationsPaginator.paginate` method.
 
-`DescribeEffectiveInstanceAssociationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeEffectiveInstanceAssociationsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeeffectivepatchesforpatchbaselinepaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEffectiveInstanceAssociationsRequestDescribeEffectiveInstanceAssociationsPaginateTypeDef](./type_defs.md#describeeffectiveinstanceassociationsrequestdescribeeffectiveinstanceassociationspaginatetypedef) 
 ## DescribeEffectivePatchesForPatchBaselinePaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeEffectivePatchesForPatchBaselinePaginator
@@ -296,29 +327,40 @@ def get_describe_effective_patches_for_patch_baseline_paginator() -> DescribeEff
     return Session().client("ssm").get_paginator("describe_effective_patches_for_patch_baseline")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeEffectivePatchesForPatchBaseline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeEffectivePatchesForPatchBaseline)
 
-Arguments for `DescribeEffectivePatchesForPatchBaselinePaginator.paginate`
-method:
+### paginate
 
-- `BaselineId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeEffectivePatchesForPatchBaselinePaginator.paginate` method.
 
-`DescribeEffectivePatchesForPatchBaselinePaginator.paginate` returns
-`_PageIterator`\[[DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    BaselineId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeEffectivePatchesForPatchBaselineResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeinstanceassociationsstatuspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef = {  # (1)
+    "BaselineId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeEffectivePatchesForPatchBaselineRequestDescribeEffectivePatchesForPatchBaselinePaginateTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselinerequestdescribeeffectivepatchesforpatchbaselinepaginatetypedef) 
 ## DescribeInstanceAssociationsStatusPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_instance_associations_status")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_instance_associations_status")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInstanceAssociationsStatusPaginator
@@ -327,28 +369,40 @@ def get_describe_instance_associations_status_paginator() -> DescribeInstanceAss
     return Session().client("ssm").get_paginator("describe_instance_associations_status")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInstanceAssociationsStatus](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceAssociationsStatus)
 
-Arguments for `DescribeInstanceAssociationsStatusPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceAssociationsStatusPaginator.paginate` method.
 
-`DescribeInstanceAssociationsStatusPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeInstanceAssociationsStatusResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeinstanceinformationpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceAssociationsStatusRequestDescribeInstanceAssociationsStatusPaginateTypeDef](./type_defs.md#describeinstanceassociationsstatusrequestdescribeinstanceassociationsstatuspaginatetypedef) 
 ## DescribeInstanceInformationPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_instance_information")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_instance_information")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInstanceInformationPaginator
@@ -357,31 +411,43 @@ def get_describe_instance_information_paginator() -> DescribeInstanceInformation
     return Session().client("ssm").get_paginator("describe_instance_information")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInstanceInformation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstanceInformation)
 
-Arguments for `DescribeInstanceInformationPaginator.paginate` method:
+### paginate
 
-- `InstanceInformationFilterList`:
-  `Sequence`\[[InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef)\]
-- `Filters`:
-  `Sequence`\[[InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstanceInformationPaginator.paginate` method.
 
-`DescribeInstanceInformationPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceInformationFilterList: Sequence[InstanceInformationFilterTypeDef] = ...,  # (1)
+    Filters: Sequence[InstanceInformationStringFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeInstanceInformationResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeinstancepatchstatespaginator"></a>
+1. See [:material-code-braces: InstanceInformationFilterTypeDef](./type_defs.md#instanceinformationfiltertypedef) 
+2. See [:material-code-braces: InstanceInformationStringFilterTypeDef](./type_defs.md#instanceinformationstringfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef = {  # (1)
+    "InstanceInformationFilterList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstanceInformationRequestDescribeInstanceInformationPaginateTypeDef](./type_defs.md#describeinstanceinformationrequestdescribeinstanceinformationpaginatetypedef) 
 ## DescribeInstancePatchStatesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_instance_patch_states")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_instance_patch_states")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesPaginator
@@ -390,28 +456,40 @@ def get_describe_instance_patch_states_paginator() -> DescribeInstancePatchState
     return Session().client("ssm").get_paginator("describe_instance_patch_states")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatchStates](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStates)
 
-Arguments for `DescribeInstancePatchStatesPaginator.paginate` method:
+### paginate
 
-- `InstanceIds`: `Sequence`\[`str`\] *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstancePatchStatesPaginator.paginate` method.
 
-`DescribeInstancePatchStatesPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceIds: Sequence[str],
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeInstancePatchStatesResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describeinstancepatchstatesforpatchgrouppaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef = {  # (1)
+    "InstanceIds": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancePatchStatesRequestDescribeInstancePatchStatesPaginateTypeDef](./type_defs.md#describeinstancepatchstatesrequestdescribeinstancepatchstatespaginatetypedef) 
 ## DescribeInstancePatchStatesForPatchGroupPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInstancePatchStatesForPatchGroupPaginator
@@ -420,31 +498,42 @@ def get_describe_instance_patch_states_for_patch_group_paginator() -> DescribeIn
     return Session().client("ssm").get_paginator("describe_instance_patch_states_for_patch_group")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatchStatesForPatchGroup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatchStatesForPatchGroup)
 
-Arguments for `DescribeInstancePatchStatesForPatchGroupPaginator.paginate`
-method:
+### paginate
 
-- `PatchGroup`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstancePatchStatesForPatchGroupPaginator.paginate` method.
 
-`DescribeInstancePatchStatesForPatchGroupPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    PatchGroup: str,
+    Filters: Sequence[InstancePatchStateFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstancePatchStatesForPatchGroupResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinstancepatchespaginator"></a>
+1. See [:material-code-braces: InstancePatchStateFilterTypeDef](./type_defs.md#instancepatchstatefiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef = {  # (1)
+    "PatchGroup": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancePatchStatesForPatchGroupRequestDescribeInstancePatchStatesForPatchGroupPaginateTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgrouprequestdescribeinstancepatchstatesforpatchgrouppaginatetypedef) 
 ## DescribeInstancePatchesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_instance_patches")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_instance_patches")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInstancePatchesPaginator
@@ -453,30 +542,42 @@ def get_describe_instance_patches_paginator() -> DescribeInstancePatchesPaginato
     return Session().client("ssm").get_paginator("describe_instance_patches")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInstancePatches](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInstancePatches)
 
-Arguments for `DescribeInstancePatchesPaginator.paginate` method:
+### paginate
 
-- `InstanceId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInstancePatchesPaginator.paginate` method.
 
-`DescribeInstancePatchesPaginator.paginate` returns
-`_PageIterator`\[[DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    InstanceId: str,
+    Filters: Sequence[PatchOrchestratorFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeInstancePatchesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeinventorydeletionspaginator"></a>
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef = {  # (1)
+    "InstanceId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInstancePatchesRequestDescribeInstancePatchesPaginateTypeDef](./type_defs.md#describeinstancepatchesrequestdescribeinstancepatchespaginatetypedef) 
 ## DescribeInventoryDeletionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_inventory_deletions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_inventory_deletions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeInventoryDeletionsPaginator
@@ -485,28 +586,40 @@ def get_describe_inventory_deletions_paginator() -> DescribeInventoryDeletionsPa
     return Session().client("ssm").get_paginator("describe_inventory_deletions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeInventoryDeletions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeInventoryDeletions)
 
-Arguments for `DescribeInventoryDeletionsPaginator.paginate` method:
+### paginate
 
-- `DeletionId`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeInventoryDeletionsPaginator.paginate` method.
 
-`DescribeInventoryDeletionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DeletionId: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[DescribeInventoryDeletionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="describemaintenancewindowexecutiontaskinvocationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef = {  # (1)
+    "DeletionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeInventoryDeletionsRequestDescribeInventoryDeletionsPaginateTypeDef](./type_defs.md#describeinventorydeletionsrequestdescribeinventorydeletionspaginatetypedef) 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTaskInvocationsPaginator
@@ -515,32 +628,44 @@ def get_describe_maintenance_window_execution_task_invocations_paginator() -> De
     return Session().client("ssm").get_paginator("describe_maintenance_window_execution_task_invocations")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTaskInvocations)
 
-Arguments for
-`DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` method:
+### paginate
 
-- `WindowExecutionId`: `str` *(required)*
-- `TaskId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` method.
 
-`DescribeMaintenanceWindowExecutionTaskInvocationsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowExecutionId: str,
+    TaskId: str,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowexecutiontaskspaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef = {  # (1)
+    "WindowExecutionId": ...,
+    "TaskId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowExecutionTaskInvocationsRequestDescribeMaintenanceWindowExecutionTaskInvocationsPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsrequestdescribemaintenancewindowexecutiontaskinvocationspaginatetypedef) 
 ## DescribeMaintenanceWindowExecutionTasksPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_execution_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_execution_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionTasksPaginator
@@ -549,31 +674,42 @@ def get_describe_maintenance_window_execution_tasks_paginator() -> DescribeMaint
     return Session().client("ssm").get_paginator("describe_maintenance_window_execution_tasks")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutionTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutionTasks)
 
-Arguments for `DescribeMaintenanceWindowExecutionTasksPaginator.paginate`
-method:
+### paginate
 
-- `WindowExecutionId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowExecutionTasksPaginator.paginate` method.
 
-`DescribeMaintenanceWindowExecutionTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowExecutionId: str,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowExecutionTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowexecutionspaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef = {  # (1)
+    "WindowExecutionId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowExecutionTasksRequestDescribeMaintenanceWindowExecutionTasksPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksrequestdescribemaintenancewindowexecutiontaskspaginatetypedef) 
 ## DescribeMaintenanceWindowExecutionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_executions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_executions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowExecutionsPaginator
@@ -582,30 +718,42 @@ def get_describe_maintenance_window_executions_paginator() -> DescribeMaintenanc
     return Session().client("ssm").get_paginator("describe_maintenance_window_executions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowExecutions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowExecutions)
 
-Arguments for `DescribeMaintenanceWindowExecutionsPaginator.paginate` method:
+### paginate
 
-- `WindowId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowExecutionsPaginator.paginate` method.
 
-`DescribeMaintenanceWindowExecutionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowId: str,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowExecutionsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowschedulepaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef = {  # (1)
+    "WindowId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowExecutionsRequestDescribeMaintenanceWindowExecutionsPaginateTypeDef](./type_defs.md#describemaintenancewindowexecutionsrequestdescribemaintenancewindowexecutionspaginatetypedef) 
 ## DescribeMaintenanceWindowSchedulePaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_schedule")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_schedule")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowSchedulePaginator
@@ -614,33 +762,46 @@ def get_describe_maintenance_window_schedule_paginator() -> DescribeMaintenanceW
     return Session().client("ssm").get_paginator("describe_maintenance_window_schedule")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowSchedule](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowSchedule)
 
-Arguments for `DescribeMaintenanceWindowSchedulePaginator.paginate` method:
+### paginate
 
-- `WindowId`: `str`
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowSchedulePaginator.paginate` method.
 
-`DescribeMaintenanceWindowSchedulePaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowId: str = ...,
+    Targets: Sequence[TargetTypeDef] = ...,  # (1)
+    ResourceType: MaintenanceWindowResourceTypeType = ...,  # (2)
+    Filters: Sequence[PatchOrchestratorFilterTypeDef] = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[DescribeMaintenanceWindowScheduleResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="describemaintenancewindowtargetspaginator"></a>
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+3. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef = {  # (1)
+    "WindowId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowScheduleRequestDescribeMaintenanceWindowSchedulePaginateTypeDef](./type_defs.md#describemaintenancewindowschedulerequestdescribemaintenancewindowschedulepaginatetypedef) 
 ## DescribeMaintenanceWindowTargetsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_targets")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_targets")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTargetsPaginator
@@ -649,30 +810,42 @@ def get_describe_maintenance_window_targets_paginator() -> DescribeMaintenanceWi
     return Session().client("ssm").get_paginator("describe_maintenance_window_targets")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowTargets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTargets)
 
-Arguments for `DescribeMaintenanceWindowTargetsPaginator.paginate` method:
+### paginate
 
-- `WindowId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowTargetsPaginator.paginate` method.
 
-`DescribeMaintenanceWindowTargetsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowId: str,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowTargetsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowtaskspaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef = {  # (1)
+    "WindowId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowTargetsRequestDescribeMaintenanceWindowTargetsPaginateTypeDef](./type_defs.md#describemaintenancewindowtargetsrequestdescribemaintenancewindowtargetspaginatetypedef) 
 ## DescribeMaintenanceWindowTasksPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_window_tasks")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_window_tasks")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowTasksPaginator
@@ -681,30 +854,42 @@ def get_describe_maintenance_window_tasks_paginator() -> DescribeMaintenanceWind
     return Session().client("ssm").get_paginator("describe_maintenance_window_tasks")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowTasks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowTasks)
 
-Arguments for `DescribeMaintenanceWindowTasksPaginator.paginate` method:
+### paginate
 
-- `WindowId`: `str` *(required)*
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowTasksPaginator.paginate` method.
 
-`DescribeMaintenanceWindowTasksPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    WindowId: str,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowTasksResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowspaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef = {  # (1)
+    "WindowId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowTasksRequestDescribeMaintenanceWindowTasksPaginateTypeDef](./type_defs.md#describemaintenancewindowtasksrequestdescribemaintenancewindowtaskspaginatetypedef) 
 ## DescribeMaintenanceWindowsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_windows")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_windows")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsPaginator
@@ -713,29 +898,41 @@ def get_describe_maintenance_windows_paginator() -> DescribeMaintenanceWindowsPa
     return Session().client("ssm").get_paginator("describe_maintenance_windows")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindows)
 
-Arguments for `DescribeMaintenanceWindowsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowsPaginator.paginate` method.
 
-`DescribeMaintenanceWindowsPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[MaintenanceWindowFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeMaintenanceWindowsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describemaintenancewindowsfortargetpaginator"></a>
+1. See [:material-code-braces: MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowsRequestDescribeMaintenanceWindowsPaginateTypeDef](./type_defs.md#describemaintenancewindowsrequestdescribemaintenancewindowspaginatetypedef) 
 ## DescribeMaintenanceWindowsForTargetPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_maintenance_windows_for_target")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_maintenance_windows_for_target")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeMaintenanceWindowsForTargetPaginator
@@ -744,31 +941,44 @@ def get_describe_maintenance_windows_for_target_paginator() -> DescribeMaintenan
     return Session().client("ssm").get_paginator("describe_maintenance_windows_for_target")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeMaintenanceWindowsForTarget](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeMaintenanceWindowsForTarget)
 
-Arguments for `DescribeMaintenanceWindowsForTargetPaginator.paginate` method:
+### paginate
 
-- `Targets`: `Sequence`\[[TargetTypeDef](./type_defs.md#targettypedef)\]
-  *(required)*
-- `ResourceType`:
-  [MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype)
-  *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeMaintenanceWindowsForTargetPaginator.paginate` method.
 
-`DescribeMaintenanceWindowsForTargetPaginator.paginate` returns
-`_PageIterator`\[[DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Targets: Sequence[TargetTypeDef],  # (1)
+    ResourceType: MaintenanceWindowResourceTypeType,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeMaintenanceWindowsForTargetResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describeopsitemspaginator"></a>
+1. See [:material-code-braces: TargetTypeDef](./type_defs.md#targettypedef) 
+2. See [:material-code-brackets: MaintenanceWindowResourceTypeType](./literals.md#maintenancewindowresourcetypetype) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef = {  # (1)
+    "Targets": ...,
+    "ResourceType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeMaintenanceWindowsForTargetRequestDescribeMaintenanceWindowsForTargetPaginateTypeDef](./type_defs.md#describemaintenancewindowsfortargetrequestdescribemaintenancewindowsfortargetpaginatetypedef) 
 ## DescribeOpsItemsPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("describe_ops_items")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_ops_items")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeOpsItemsPaginator
@@ -777,29 +987,41 @@ def get_describe_ops_items_paginator() -> DescribeOpsItemsPaginator:
     return Session().client("ssm").get_paginator("describe_ops_items")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeOpsItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeOpsItems)
 
-Arguments for `DescribeOpsItemsPaginator.paginate` method:
+### paginate
 
-- `OpsItemFilters`:
-  `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeOpsItemsPaginator.paginate` method.
 
-`DescribeOpsItemsPaginator.paginate` returns
-`_PageIterator`\[[DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OpsItemFilters: Sequence[OpsItemFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribeOpsItemsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="describeparameterspaginator"></a>
+1. See [:material-code-braces: OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef = {  # (1)
+    "OpsItemFilters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeOpsItemsRequestDescribeOpsItemsPaginateTypeDef](./type_defs.md#describeopsitemsrequestdescribeopsitemspaginatetypedef) 
 ## DescribeParametersPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_parameters")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_parameters")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeParametersPaginator
@@ -808,31 +1030,43 @@ def get_describe_parameters_paginator() -> DescribeParametersPaginator:
     return Session().client("ssm").get_paginator("describe_parameters")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeParameters](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeParameters)
 
-Arguments for `DescribeParametersPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef)\]
-- `ParameterFilters`:
-  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeParametersPaginator.paginate` method.
 
-`DescribeParametersPaginator.paginate` returns
-`_PageIterator`\[[DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[ParametersFilterTypeDef] = ...,  # (1)
+    ParameterFilters: Sequence[ParameterStringFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeParametersResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="describepatchbaselinespaginator"></a>
+1. See [:material-code-braces: ParametersFilterTypeDef](./type_defs.md#parametersfiltertypedef) 
+2. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeParametersRequestDescribeParametersPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeParametersRequestDescribeParametersPaginateTypeDef](./type_defs.md#describeparametersrequestdescribeparameterspaginatetypedef) 
 ## DescribePatchBaselinesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_patch_baselines")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_patch_baselines")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribePatchBaselinesPaginator
@@ -841,29 +1075,41 @@ def get_describe_patch_baselines_paginator() -> DescribePatchBaselinesPaginator:
     return Session().client("ssm").get_paginator("describe_patch_baselines")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribePatchBaselines](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchBaselines)
 
-Arguments for `DescribePatchBaselinesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePatchBaselinesPaginator.paginate` method.
 
-`DescribePatchBaselinesPaginator.paginate` returns
-`_PageIterator`\[[DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[PatchOrchestratorFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribePatchBaselinesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describepatchgroupspaginator"></a>
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePatchBaselinesRequestDescribePatchBaselinesPaginateTypeDef](./type_defs.md#describepatchbaselinesrequestdescribepatchbaselinespaginatetypedef) 
 ## DescribePatchGroupsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_patch_groups")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_patch_groups")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribePatchGroupsPaginator
@@ -872,29 +1118,41 @@ def get_describe_patch_groups_paginator() -> DescribePatchGroupsPaginator:
     return Session().client("ssm").get_paginator("describe_patch_groups")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribePatchGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchGroups)
 
-Arguments for `DescribePatchGroupsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePatchGroupsPaginator.paginate` method.
 
-`DescribePatchGroupsPaginator.paginate` returns
-`_PageIterator`\[[DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[PatchOrchestratorFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[DescribePatchGroupsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="describepatchpropertiespaginator"></a>
+1. See [:material-code-braces: PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePatchGroupsRequestDescribePatchGroupsPaginateTypeDef](./type_defs.md#describepatchgroupsrequestdescribepatchgroupspaginatetypedef) 
 ## DescribePatchPropertiesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("describe_patch_properties")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_patch_properties")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribePatchPropertiesPaginator
@@ -903,30 +1161,46 @@ def get_describe_patch_properties_paginator() -> DescribePatchPropertiesPaginato
     return Session().client("ssm").get_paginator("describe_patch_properties")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribePatchProperties](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribePatchProperties)
 
-Arguments for `DescribePatchPropertiesPaginator.paginate` method:
+### paginate
 
-- `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
-  *(required)*
-- `Property`: [PatchPropertyType](./literals.md#patchpropertytype) *(required)*
-- `PatchSet`: [PatchSetType](./literals.md#patchsettype)
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribePatchPropertiesPaginator.paginate` method.
 
-`DescribePatchPropertiesPaginator.paginate` returns
-`_PageIterator`\[[DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OperatingSystem: OperatingSystemType,  # (1)
+    Property: PatchPropertyType,  # (2)
+    PatchSet: PatchSetType = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[DescribePatchPropertiesResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="describesessionspaginator"></a>
+1. See [:material-code-brackets: OperatingSystemType](./literals.md#operatingsystemtype) 
+2. See [:material-code-brackets: PatchPropertyType](./literals.md#patchpropertytype) 
+3. See [:material-code-brackets: PatchSetType](./literals.md#patchsettype) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef = {  # (1)
+    "OperatingSystem": ...,
+    "Property": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribePatchPropertiesRequestDescribePatchPropertiesPaginateTypeDef](./type_defs.md#describepatchpropertiesrequestdescribepatchpropertiespaginatetypedef) 
 ## DescribeSessionsPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("describe_sessions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("describe_sessions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import DescribeSessionsPaginator
@@ -935,29 +1209,43 @@ def get_describe_sessions_paginator() -> DescribeSessionsPaginator:
     return Session().client("ssm").get_paginator("describe_sessions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.DescribeSessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.DescribeSessions)
 
-Arguments for `DescribeSessionsPaginator.paginate` method:
+### paginate
 
-- `State`: [SessionStateType](./literals.md#sessionstatetype) *(required)*
-- `Filters`:
-  `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python DescribeSessionsPaginator.paginate` method.
 
-`DescribeSessionsPaginator.paginate` returns
-`_PageIterator`\[[DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    State: SessionStateType,  # (1)
+    Filters: Sequence[SessionFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[DescribeSessionsResponseTypeDef]:  # (4)
+    ...
+```
 
-<a id="getinventorypaginator"></a>
+1. See [:material-code-brackets: SessionStateType](./literals.md#sessionstatetype) 
+2. See [:material-code-braces: SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: DescribeSessionsRequestDescribeSessionsPaginateTypeDef = {  # (1)
+    "State": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: DescribeSessionsRequestDescribeSessionsPaginateTypeDef](./type_defs.md#describesessionsrequestdescribesessionspaginatetypedef) 
 ## GetInventoryPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("get_inventory")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_inventory")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import GetInventoryPaginator
@@ -966,33 +1254,45 @@ def get_get_inventory_paginator() -> GetInventoryPaginator:
     return Session().client("ssm").get_paginator("get_inventory")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.GetInventory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventory)
 
-Arguments for `GetInventoryPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
-- `Aggregators`:
-  `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
-- `ResultAttributes`:
-  `Sequence`\[[ResultAttributeTypeDef](./type_defs.md#resultattributetypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInventoryPaginator.paginate` method.
 
-`GetInventoryPaginator.paginate` returns
-`_PageIterator`\[[GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[InventoryFilterTypeDef] = ...,  # (1)
+    Aggregators: Sequence[InventoryAggregatorTypeDef] = ...,  # (2)
+    ResultAttributes: Sequence[ResultAttributeTypeDef] = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetInventoryResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="getinventoryschemapaginator"></a>
+1. See [:material-code-braces: InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef) 
+2. See [:material-code-braces: InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef) 
+3. See [:material-code-braces: ResultAttributeTypeDef](./type_defs.md#resultattributetypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInventoryRequestGetInventoryPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInventoryRequestGetInventoryPaginateTypeDef](./type_defs.md#getinventoryrequestgetinventorypaginatetypedef) 
 ## GetInventorySchemaPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("get_inventory_schema")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_inventory_schema")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import GetInventorySchemaPaginator
@@ -1001,29 +1301,42 @@ def get_get_inventory_schema_paginator() -> GetInventorySchemaPaginator:
     return Session().client("ssm").get_paginator("get_inventory_schema")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.GetInventorySchema](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetInventorySchema)
 
-Arguments for `GetInventorySchemaPaginator.paginate` method:
+### paginate
 
-- `TypeName`: `str`
-- `Aggregator`: `bool`
-- `SubType`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetInventorySchemaPaginator.paginate` method.
 
-`GetInventorySchemaPaginator.paginate` returns
-`_PageIterator`\[[GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    TypeName: str = ...,
+    Aggregator: bool = ...,
+    SubType: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetInventorySchemaResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getopssummarypaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef = {  # (1)
+    "TypeName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetInventorySchemaRequestGetInventorySchemaPaginateTypeDef](./type_defs.md#getinventoryschemarequestgetinventoryschemapaginatetypedef) 
 ## GetOpsSummaryPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("get_ops_summary")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_ops_summary")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import GetOpsSummaryPaginator
@@ -1032,33 +1345,46 @@ def get_get_ops_summary_paginator() -> GetOpsSummaryPaginator:
     return Session().client("ssm").get_paginator("get_ops_summary")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.GetOpsSummary](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetOpsSummary)
 
-Arguments for `GetOpsSummaryPaginator.paginate` method:
+### paginate
 
-- `SyncName`: `str`
-- `Filters`: `Sequence`\[[OpsFilterTypeDef](./type_defs.md#opsfiltertypedef)\]
-- `Aggregators`:
-  `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
-- `ResultAttributes`:
-  `Sequence`\[[OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetOpsSummaryPaginator.paginate` method.
 
-`GetOpsSummaryPaginator.paginate` returns
-`_PageIterator`\[[GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SyncName: str = ...,
+    Filters: Sequence[OpsFilterTypeDef] = ...,  # (1)
+    Aggregators: Sequence[OpsAggregatorTypeDef] = ...,  # (2)
+    ResultAttributes: Sequence[OpsResultAttributeTypeDef] = ...,  # (3)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (4)
+) -> _PageIterator[GetOpsSummaryResultTypeDef]:  # (5)
+    ...
+```
 
-<a id="getparameterhistorypaginator"></a>
+1. See [:material-code-braces: OpsFilterTypeDef](./type_defs.md#opsfiltertypedef) 
+2. See [:material-code-braces: OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef) 
+3. See [:material-code-braces: OpsResultAttributeTypeDef](./type_defs.md#opsresultattributetypedef) 
+4. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+5. See [:material-code-braces: GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef = {  # (1)
+    "SyncName": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetOpsSummaryRequestGetOpsSummaryPaginateTypeDef](./type_defs.md#getopssummaryrequestgetopssummarypaginatetypedef) 
 ## GetParameterHistoryPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("get_parameter_history")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_parameter_history")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import GetParameterHistoryPaginator
@@ -1067,29 +1393,41 @@ def get_get_parameter_history_paginator() -> GetParameterHistoryPaginator:
     return Session().client("ssm").get_paginator("get_parameter_history")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.GetParameterHistory](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParameterHistory)
 
-Arguments for `GetParameterHistoryPaginator.paginate` method:
+### paginate
 
-- `Name`: `str` *(required)*
-- `WithDecryption`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetParameterHistoryPaginator.paginate` method.
 
-`GetParameterHistoryPaginator.paginate` returns
-`_PageIterator`\[[GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str,
+    WithDecryption: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[GetParameterHistoryResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="getparametersbypathpaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetParameterHistoryRequestGetParameterHistoryPaginateTypeDef](./type_defs.md#getparameterhistoryrequestgetparameterhistorypaginatetypedef) 
 ## GetParametersByPathPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("get_parameters_by_path")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("get_parameters_by_path")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import GetParametersByPathPaginator
@@ -1098,32 +1436,44 @@ def get_get_parameters_by_path_paginator() -> GetParametersByPathPaginator:
     return Session().client("ssm").get_paginator("get_parameters_by_path")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.GetParametersByPath](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.GetParametersByPath)
 
-Arguments for `GetParametersByPathPaginator.paginate` method:
+### paginate
 
-- `Path`: `str` *(required)*
-- `Recursive`: `bool`
-- `ParameterFilters`:
-  `Sequence`\[[ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef)\]
-- `WithDecryption`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python GetParametersByPathPaginator.paginate` method.
 
-`GetParametersByPathPaginator.paginate` returns
-`_PageIterator`\[[GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Path: str,
+    Recursive: bool = ...,
+    ParameterFilters: Sequence[ParameterStringFilterTypeDef] = ...,  # (1)
+    WithDecryption: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[GetParametersByPathResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listassociationversionspaginator"></a>
+1. See [:material-code-braces: ParameterStringFilterTypeDef](./type_defs.md#parameterstringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: GetParametersByPathRequestGetParametersByPathPaginateTypeDef = {  # (1)
+    "Path": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: GetParametersByPathRequestGetParametersByPathPaginateTypeDef](./type_defs.md#getparametersbypathrequestgetparametersbypathpaginatetypedef) 
 ## ListAssociationVersionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_association_versions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_association_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListAssociationVersionsPaginator
@@ -1132,27 +1482,40 @@ def get_list_association_versions_paginator() -> ListAssociationVersionsPaginato
     return Session().client("ssm").get_paginator("list_association_versions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListAssociationVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociationVersions)
 
-Arguments for `ListAssociationVersionsPaginator.paginate` method:
+### paginate
 
-- `AssociationId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociationVersionsPaginator.paginate` method.
 
-`ListAssociationVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationId: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListAssociationVersionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listassociationspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef = {  # (1)
+    "AssociationId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociationVersionsRequestListAssociationVersionsPaginateTypeDef](./type_defs.md#listassociationversionsrequestlistassociationversionspaginatetypedef) 
 ## ListAssociationsPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("list_associations")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_associations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListAssociationsPaginator
@@ -1161,29 +1524,41 @@ def get_list_associations_paginator() -> ListAssociationsPaginator:
     return Session().client("ssm").get_paginator("list_associations")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListAssociations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListAssociations)
 
-Arguments for `ListAssociationsPaginator.paginate` method:
+### paginate
 
-- `AssociationFilterList`:
-  `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListAssociationsPaginator.paginate` method.
 
-`ListAssociationsPaginator.paginate` returns
-`_PageIterator`\[[ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    AssociationFilterList: Sequence[AssociationFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListAssociationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcommandinvocationspaginator"></a>
+1. See [:material-code-braces: AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListAssociationsRequestListAssociationsPaginateTypeDef = {  # (1)
+    "AssociationFilterList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListAssociationsRequestListAssociationsPaginateTypeDef](./type_defs.md#listassociationsrequestlistassociationspaginatetypedef) 
 ## ListCommandInvocationsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_command_invocations")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_command_invocations")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListCommandInvocationsPaginator
@@ -1192,31 +1567,44 @@ def get_list_command_invocations_paginator() -> ListCommandInvocationsPaginator:
     return Session().client("ssm").get_paginator("list_command_invocations")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListCommandInvocations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommandInvocations)
 
-Arguments for `ListCommandInvocationsPaginator.paginate` method:
+### paginate
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `Filters`:
-  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
-- `Details`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCommandInvocationsPaginator.paginate` method.
 
-`ListCommandInvocationsPaginator.paginate` returns
-`_PageIterator`\[[ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CommandId: str = ...,
+    InstanceId: str = ...,
+    Filters: Sequence[CommandFilterTypeDef] = ...,  # (1)
+    Details: bool = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCommandInvocationsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcommandspaginator"></a>
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef = {  # (1)
+    "CommandId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCommandInvocationsRequestListCommandInvocationsPaginateTypeDef](./type_defs.md#listcommandinvocationsrequestlistcommandinvocationspaginatetypedef) 
 ## ListCommandsPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("list_commands")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_commands")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommands)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListCommandsPaginator
@@ -1225,31 +1613,43 @@ def get_list_commands_paginator() -> ListCommandsPaginator:
     return Session().client("ssm").get_paginator("list_commands")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListCommands](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListCommands)
 
-Arguments for `ListCommandsPaginator.paginate` method:
+### paginate
 
-- `CommandId`: `str`
-- `InstanceId`: `str`
-- `Filters`:
-  `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListCommandsPaginator.paginate` method.
 
-`ListCommandsPaginator.paginate` returns
-`_PageIterator`\[[ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    CommandId: str = ...,
+    InstanceId: str = ...,
+    Filters: Sequence[CommandFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListCommandsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcomplianceitemspaginator"></a>
+1. See [:material-code-braces: CommandFilterTypeDef](./type_defs.md#commandfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListCommandsRequestListCommandsPaginateTypeDef = {  # (1)
+    "CommandId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListCommandsRequestListCommandsPaginateTypeDef](./type_defs.md#listcommandsrequestlistcommandspaginatetypedef) 
 ## ListComplianceItemsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_compliance_items")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_compliance_items")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListComplianceItemsPaginator
@@ -1258,31 +1658,43 @@ def get_list_compliance_items_paginator() -> ListComplianceItemsPaginator:
     return Session().client("ssm").get_paginator("list_compliance_items")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListComplianceItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceItems)
 
-Arguments for `ListComplianceItemsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `ResourceIds`: `Sequence`\[`str`\]
-- `ResourceTypes`: `Sequence`\[`str`\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListComplianceItemsPaginator.paginate` method.
 
-`ListComplianceItemsPaginator.paginate` returns
-`_PageIterator`\[[ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[ComplianceStringFilterTypeDef] = ...,  # (1)
+    ResourceIds: Sequence[str] = ...,
+    ResourceTypes: Sequence[str] = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListComplianceItemsResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listcompliancesummariespaginator"></a>
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListComplianceItemsRequestListComplianceItemsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListComplianceItemsRequestListComplianceItemsPaginateTypeDef](./type_defs.md#listcomplianceitemsrequestlistcomplianceitemspaginatetypedef) 
 ## ListComplianceSummariesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_compliance_summaries")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_compliance_summaries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListComplianceSummariesPaginator
@@ -1291,29 +1703,41 @@ def get_list_compliance_summaries_paginator() -> ListComplianceSummariesPaginato
     return Session().client("ssm").get_paginator("list_compliance_summaries")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListComplianceSummaries)
 
-Arguments for `ListComplianceSummariesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListComplianceSummariesPaginator.paginate` method.
 
-`ListComplianceSummariesPaginator.paginate` returns
-`_PageIterator`\[[ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[ComplianceStringFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListComplianceSummariesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listdocumentversionspaginator"></a>
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListComplianceSummariesRequestListComplianceSummariesPaginateTypeDef](./type_defs.md#listcompliancesummariesrequestlistcompliancesummariespaginatetypedef) 
 ## ListDocumentVersionsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_document_versions")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_document_versions")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListDocumentVersionsPaginator
@@ -1322,27 +1746,40 @@ def get_list_document_versions_paginator() -> ListDocumentVersionsPaginator:
     return Session().client("ssm").get_paginator("list_document_versions")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListDocumentVersions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocumentVersions)
 
-Arguments for `ListDocumentVersionsPaginator.paginate` method:
+### paginate
 
-- `Name`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDocumentVersionsPaginator.paginate` method.
 
-`ListDocumentVersionsPaginator.paginate` returns
-`_PageIterator`\[[ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Name: str,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListDocumentVersionsResultTypeDef]:  # (2)
+    ...
+```
 
-<a id="listdocumentspaginator"></a>
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef = {  # (1)
+    "Name": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDocumentVersionsRequestListDocumentVersionsPaginateTypeDef](./type_defs.md#listdocumentversionsrequestlistdocumentversionspaginatetypedef) 
 ## ListDocumentsPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("list_documents")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_documents")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocuments)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListDocumentsPaginator
@@ -1351,31 +1788,43 @@ def get_list_documents_paginator() -> ListDocumentsPaginator:
     return Session().client("ssm").get_paginator("list_documents")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListDocuments](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListDocuments)
 
-Arguments for `ListDocumentsPaginator.paginate` method:
+### paginate
 
-- `DocumentFilterList`:
-  `Sequence`\[[DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef)\]
-- `Filters`:
-  `Sequence`\[[DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListDocumentsPaginator.paginate` method.
 
-`ListDocumentsPaginator.paginate` returns
-`_PageIterator`\[[ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    DocumentFilterList: Sequence[DocumentFilterTypeDef] = ...,  # (1)
+    Filters: Sequence[DocumentKeyValuesFilterTypeDef] = ...,  # (2)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (3)
+) -> _PageIterator[ListDocumentsResultTypeDef]:  # (4)
+    ...
+```
 
-<a id="listopsitemeventspaginator"></a>
+1. See [:material-code-braces: DocumentFilterTypeDef](./type_defs.md#documentfiltertypedef) 
+2. See [:material-code-braces: DocumentKeyValuesFilterTypeDef](./type_defs.md#documentkeyvaluesfiltertypedef) 
+3. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+4. See [:material-code-braces: ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListDocumentsRequestListDocumentsPaginateTypeDef = {  # (1)
+    "DocumentFilterList": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListDocumentsRequestListDocumentsPaginateTypeDef](./type_defs.md#listdocumentsrequestlistdocumentspaginatetypedef) 
 ## ListOpsItemEventsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_ops_item_events")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_ops_item_events")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListOpsItemEventsPaginator
@@ -1384,29 +1833,41 @@ def get_list_ops_item_events_paginator() -> ListOpsItemEventsPaginator:
     return Session().client("ssm").get_paginator("list_ops_item_events")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListOpsItemEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemEvents)
 
-Arguments for `ListOpsItemEventsPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOpsItemEventsPaginator.paginate` method.
 
-`ListOpsItemEventsPaginator.paginate` returns
-`_PageIterator`\[[ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[OpsItemEventFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOpsItemEventsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listopsitemrelateditemspaginator"></a>
+1. See [:material-code-braces: OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOpsItemEventsRequestListOpsItemEventsPaginateTypeDef](./type_defs.md#listopsitemeventsrequestlistopsitemeventspaginatetypedef) 
 ## ListOpsItemRelatedItemsPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_ops_item_related_items")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_ops_item_related_items")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemRelatedItems)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListOpsItemRelatedItemsPaginator
@@ -1415,29 +1876,42 @@ def get_list_ops_item_related_items_paginator() -> ListOpsItemRelatedItemsPagina
     return Session().client("ssm").get_paginator("list_ops_item_related_items")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListOpsItemRelatedItems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsItemRelatedItems)
 
-Arguments for `ListOpsItemRelatedItemsPaginator.paginate` method:
+### paginate
 
-- `OpsItemId`: `str`
-- `Filters`:
-  `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOpsItemRelatedItemsPaginator.paginate` method.
 
-`ListOpsItemRelatedItemsPaginator.paginate` returns
-`_PageIterator`\[[ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    OpsItemId: str = ...,
+    Filters: Sequence[OpsItemRelatedItemsFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOpsItemRelatedItemsResponseTypeDef]:  # (3)
+    ...
+```
 
-<a id="listopsmetadatapaginator"></a>
+1. See [:material-code-braces: OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef = {  # (1)
+    "OpsItemId": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOpsItemRelatedItemsRequestListOpsItemRelatedItemsPaginateTypeDef](./type_defs.md#listopsitemrelateditemsrequestlistopsitemrelateditemspaginatetypedef) 
 ## ListOpsMetadataPaginator
 
-Type annotations for `boto3.client("ssm").get_paginator("list_ops_metadata")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_ops_metadata")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListOpsMetadataPaginator
@@ -1446,29 +1920,41 @@ def get_list_ops_metadata_paginator() -> ListOpsMetadataPaginator:
     return Session().client("ssm").get_paginator("list_ops_metadata")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListOpsMetadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListOpsMetadata)
 
-Arguments for `ListOpsMetadataPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListOpsMetadataPaginator.paginate` method.
 
-`ListOpsMetadataPaginator.paginate` returns
-`_PageIterator`\[[ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[OpsMetadataFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListOpsMetadataResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresourcecompliancesummariespaginator"></a>
+1. See [:material-code-braces: OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListOpsMetadataRequestListOpsMetadataPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListOpsMetadataRequestListOpsMetadataPaginateTypeDef](./type_defs.md#listopsmetadatarequestlistopsmetadatapaginatetypedef) 
 ## ListResourceComplianceSummariesPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_resource_compliance_summaries")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_resource_compliance_summaries")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListResourceComplianceSummariesPaginator
@@ -1477,29 +1963,41 @@ def get_list_resource_compliance_summaries_paginator() -> ListResourceCompliance
     return Session().client("ssm").get_paginator("list_resource_compliance_summaries")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListResourceComplianceSummaries](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceComplianceSummaries)
 
-Arguments for `ListResourceComplianceSummariesPaginator.paginate` method:
+### paginate
 
-- `Filters`:
-  `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceComplianceSummariesPaginator.paginate` method.
 
-`ListResourceComplianceSummariesPaginator.paginate` returns
-`_PageIterator`\[[ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    Filters: Sequence[ComplianceStringFilterTypeDef] = ...,  # (1)
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (2)
+) -> _PageIterator[ListResourceComplianceSummariesResultTypeDef]:  # (3)
+    ...
+```
 
-<a id="listresourcedatasyncpaginator"></a>
+1. See [:material-code-braces: ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef) 
+2. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+3. See [:material-code-braces: ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef) 
 
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef = {  # (1)
+    "Filters": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceComplianceSummariesRequestListResourceComplianceSummariesPaginateTypeDef](./type_defs.md#listresourcecompliancesummariesrequestlistresourcecompliancesummariespaginatetypedef) 
 ## ListResourceDataSyncPaginator
 
-Type annotations for
-`boto3.client("ssm").get_paginator("list_resource_data_sync")`.
+Type annotations and code completion for `#!python boto3.client("ssm").get_paginator("list_resource_data_sync")`.
+[:material-aws: boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
 
-Can be used directly:
-
-```python
+```python title="Usage example"
 from boto3.session import Session
 
 from mypy_boto3_ssm.paginator import ListResourceDataSyncPaginator
@@ -1508,14 +2006,31 @@ def get_list_resource_data_sync_paginator() -> ListResourceDataSyncPaginator:
     return Session().client("ssm").get_paginator("list_resource_data_sync")
 ```
 
-Boto3 documentation:
-[SSM.Paginator.ListResourceDataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Paginator.ListResourceDataSync)
 
-Arguments for `ListResourceDataSyncPaginator.paginate` method:
+### paginate
 
-- `SyncType`: `str`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+Type annotations and code completion for `#!python ListResourceDataSyncPaginator.paginate` method.
 
-`ListResourceDataSyncPaginator.paginate` returns
-`_PageIterator`\[[ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef)\].
+```python title="Method definition"
+def paginate(
+    self,
+    *,
+    SyncType: str = ...,
+    PaginationConfig: PaginatorConfigTypeDef = ...,  # (1)
+) -> _PageIterator[ListResourceDataSyncResultTypeDef]:  # (2)
+    ...
+```
+
+1. See [:material-code-braces: PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef) 
+2. See [:material-code-braces: ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef) 
+
+
+```python title="Usage example with kwargs"
+kwargs: ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef = {  # (1)
+    "SyncType": ...,
+}
+
+parent.paginate(**kwargs)
+```
+
+1. See [:material-code-braces: ListResourceDataSyncRequestListResourceDataSyncPaginateTypeDef](./type_defs.md#listresourcedatasyncrequestlistresourcedatasyncpaginatetypedef) 
